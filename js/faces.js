@@ -34,6 +34,7 @@ function bust(o){
   if(o.hairKind==='red')hair='#A24A24';else if(o.hairKind==='gray'||age==='old')hair=pick(R,['#C9C9D0','#E3E3E8','#B2B2BB']);
   else if(tone<=1&&R()<.3)hair=pick(R,['#C9A25B','#8A5A2B','#6b4528']);
   else if(tone===4)hair='#120C09';
+  if(o.hair)hair=o.hair;
   const hairD=mix(hair,'#000',.35),hairL=mix(hair,'#fff',.28);
   const style=o.hairKind==='bald'?'bald':o.hairKind==='curly'?'curly':(o.style||(g==='f'?pick(R,['long','long','wavy','bun','bob']):pick(R,['short','short','side','curly','short'])));
   const beard=o.beard!=null?o.beard:(g==='m'&&age!=='kid'&&R()<.28);

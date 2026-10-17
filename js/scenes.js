@@ -264,26 +264,65 @@ function interior(v,raw,R,T,tm){
   return{svg:s,horizon};
 }
 
+/* ---------- elenco da história (cursos regulares) ---------- */
+const FEM=new Set(('mia ana anna ann marta lia rosa zoe mary mei lily liz alice rita nina eve emma lucia lucía grace sofia sofía maria maría julia laura carla elena clara paula lola sara sarah emily olivia lucy kate katie amy jane anne eva lena lea lara chloe camille léa manon jeanne marie sophie claire inès ines giulia chiara francesca martina elisa luisa beatriz bia carol camila fernanda joana helena isabel isabela nora ida mila vera hana yuki mika sakura aiko lisa jenny anita carmen pilar mercedes rocío rocio silvia susana teresa tere monica mónica andrea paola valentina gabriela daniela natalia noemi irene ingrid greta heidi katja anja petra monika sabine laila lina amelie charlotte alina nadia lucie mathilde yasmin fatima aisha leila').split(' '));
+const MAL=new Set(('tom sam leo ben max dan kai kenji diego jack joe peter mark paul john david james mike jim bob tim luke pedro juan carlos luis luís miguel jorge pablo mario marco luca matteo paolo giovanni jean pierre louis hugo lucas nico nick andré andre antonio antónio joão joao josé jose rafael rui felipe gabriel bruno ricardo hans jan lukas felix klaus karl tobias ryo taro hiro ken tomás tomas diogo thiago tiago eduardo fernando manuel alberto enrique ramón ramon sergio javier óscar oscar hector héctor alejandro daniel adrián adrian dani paco pepe ahmed omar ali youssef mohamed').split(' '));
+const STOP=new Set(('the this what you she can how let yes every there monday where mom please that and friday her each but saturday dad they could may good your look take don new some our are his sunday not who have york june london would many excuse paris these one give maybe read put here when which welcome listen then rome why boss today sorry everything just july thank choose turn street spain make first qué english italian american french portuguese spanish german japan tokyo france earth sarcasm people never state find all life shall come sure keep tuesday wednesday thursday el la los las un una le les des der die das ein eine il lo gli o os as um uma hoy ayer mañana hola bonjour bonsoir hallo ciao olá oi buenos buenas bom boa guten gute salut').split(' '));
+const OLD=/\b(grandma|grandpa|grandmother|grandfather|abuela|abuelo|avó|avô|nonna|nonno|oma|opa|grand-mère|grand-père|mamie|papy)\b/i;
+const PRON_F=/\b(she|her|hers|ella|elle|sie|lei|ela|dela)\b/gi,PRON_M=/\b(he|his|him|él|il|er|lui|ele|dele)\b/gi;
+const AB={sam:1};
+function storyTexts(e){
+  const fr=(e&&e.fr)||[],st=fr.find&&fr.find(f=>f&&Array.isArray(f.s)&&f.s.length&&Array.isArray(f.s[0]));
+  const sents=st?st.s.slice(0,10).map(x=>String(x[0]||'')):[];
+  return {sents,all:sents.join(' ')+' '+((e&&e.p)||'')+' '+((e&&e.s)||'')};
+}
+function castOf(e){
+  const {sents,all}=storyTexts(e),found=[],seen={};
+  const toks=all.match(/[A-ZÀ-Ý][a-zà-ÿ]{1,}/g)||[];
+  const freq={};toks.forEach(t=>{freq[t]=(freq[t]||0)+1});
+  toks.forEach(t=>{const l=t.toLowerCase();if(seen[l])return;
+    if(FEM.has(l)||MAL.has(l)||(freq[t]>=3&&!STOP.has(l)&&l.length>2&&/^[A-ZÀ-Ý]/.test(t)&&!/^(A[sn]|In|On|At|To|It|Is|If|We|Do|My|No|So|Up|Of|Or|By|Be)$/.test(t))){seen[l]=1;found.push(t)}});
+  const f=(all.match(PRON_F)||[]).length,m=(all.match(PRON_M)||[]).length;
+  const gender=n=>{const l=n.toLowerCase();if(FEM.has(l))return 'f';if(MAL.has(l))return 'm';if(f>m)return 'f';if(m>f)return 'm';return /[ai]$/.test(l)?'f':'m'};
+  const out=found.slice(0,2).map(n=>({name:n,g:gender(n)}));
+  if(!out.length){const fr=(e&&e.fr)||[],props=((fr.find&&fr.find(x=>x&&Array.isArray(x.props)))||{}).props||[];
+    const em=props.join('');if(/[👩👧👵]/u.test(em))out.push({name:'',g:'f'});else if(/[👨👦👴]/u.test(em))out.push({name:'',g:'m'});
+    else if(f||m)out.push({name:'',g:f>=m?'f':'m'})}
+  out.old=OLD.test(all);
+  return out;
+}
+const ASIAN=new Set('kenji mei kai yuki hiro taro ryo mika aiko ken lee kim sakura hana'.split(' '));
+function faceFor(name,g,seed,old){
+  const R=rng(hash(name||('x'+seed)));
+  const o={g,seed:hash((name||'x'+seed)+'f'),age:old?'old':'adult'};
+  const l=(name||'').toLowerCase();
+  o.tone=ASIAN.has(l)?1:[0,1,1,2,2,3,4][Math.floor(R()*7)];
+  if(ASIAN.has(l))o.hair='#14100E';
+  return o;
+}
 /* ---------- personagem principal (retrato) ---------- */
 const TINT={night:'0.56 0 0 0 0  0 0.62 0 0 0  0 0 0.92 0 0  0 0 0 1 0',dusk:'0.98 0 0 0 0  0 0.78 0 0 0  0 0 0.74 0 0  0 0 0 1 0',golden:'1 0 0 0 0  0 0.9 0 0 0  0 0 0.74 0 0  0 0 0 1 0',dawn:'0.97 0 0 0 0  0 0.9 0 0 0  0 0 0.96 0 0  0 0 0 1 0'};
-function charOpts(e){
+function charList(e){
   const hero=(e&&e.fr||[]).find&&(e.fr||[]).find(f=>f&&f.k==='nbhero');
-  const o=hero&&hero.face&&window.PogFace?PogFace.fromEmoji(hero.face):{};
-  o.seed=hash((e&&e.t||'')+(hero&&hero.name||'')+(hero&&hero.city||''));
-  if(hero&&hero.g&&hero.g[0]&&/^#[0-9a-f]{6}$/i.test(hero.g[0]))o.shirt=hero.g[0];
-  if(o.age==='kid')o.age='adult';
-  return o;
+  if(hero&&hero.face&&window.PogFace){
+    const o=PogFace.fromEmoji(hero.face);o.seed=hash((e&&e.t||'')+(hero.name||'')+(hero.city||''));
+    if(hero.g&&hero.g[0]&&/^#[0-9a-f]{6}$/i.test(hero.g[0]))o.shirt=hero.g[0];
+    if(o.age==='kid')o.age='adult';
+    return [o];
+  }
+  const cast=castOf(e),seed=hash((e&&e.t||'')+(e&&e.n||''));
+  if(!cast.length)return [{seed}];
+  return cast.map((c,i)=>{const o=faceFor(c.name,c.g,seed+i,cast.old&&i===0);o.shirt=window.PogFace?PogFace.SHIRTS[hash(c.name||('s'+seed+i))%PogFace.SHIRTS.length]:undefined;return o});
 }
 function character(e,tm,id,sc,xPos,yBase){
   if(!window.PogFace)return '';
-  const o=charOpts(e),R=rng(o.seed+7);
-  const left=R()<.5,s0=sc||1,x=xPos!=null?xPos:(left?18:W-18-100*s0),y=yBase!=null?yBase:H-117*s0;
-  const mt=TINT[tm];
+  const list=charList(e),R=rng(hash((e&&e.t)||'')+7),s0=sc||1,mt=TINT[tm];
   const flt=mt?`<filter id="${id}ct" x="0" y="0" width="1" height="1"><feColorMatrix type="matrix" values="${mt}"/></filter>`:'';
-  const cx=x+50*s0;
-  return `<defs>${flt}<radialGradient id="${id}cs"><stop offset="0" stop-color="#000" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
-   <ellipse cx="${n1(cx)}" cy="${H-2}" rx="${n1(62*s0)}" ry="${n1(12*s0)}" fill="url(#${id}cs)"/>
-   <g transform="translate(${n1(x)} ${n1(y)}) scale(${s0})"${mt?` filter="url(#${id}ct)"`:''}>${PogFace.bust(o)}</g>`;
+  let out=`<defs>${flt}<radialGradient id="${id}cs"><stop offset="0" stop-color="#000" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>`;
+  const put=(o,x,y,k)=>{out+=`<ellipse cx="${n1(x+50*k)}" cy="${H-2}" rx="${n1(62*k)}" ry="${n1(12*k)}" fill="url(#${id}cs)"/><g transform="translate(${n1(x)} ${n1(y)}) scale(${k})"${mt?` filter="url(#${id}ct)"`:''}>${PogFace.bust(o)}</g>`};
+  if(list.length===2){const k=s0*.86;put(list[1],W-14-100*k,H-117*k,k);put(list[0],12,H-117*k+6,k)}
+  else{const left=R()<.5,x=xPos!=null?xPos:(left?18:W-18-100*s0),y=yBase!=null?yBase:H-117*s0;put(list[0],x,y,s0)}
+  return out;
 }
 /* ---------- montagem ---------- */
 function timeOf(R,cl){
