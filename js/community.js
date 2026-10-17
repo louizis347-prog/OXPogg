@@ -11,7 +11,7 @@ const C={
   search:'Buscar por nome',speaks:'Fala',learns:'Aprende',any:'Qualquer idioma',match:'✨ Combinam comigo',talk:'Conversar',noMem:'Nenhum membro encontrado com esses filtros.',
   rank:'Ranking',all:'Todos os idiomas',xp:'XP',streak:'Sequência',eps:'Episódios',pts:'pts',days:'dias',epsU:'eps',yourPos:'Sua posição',noRank:'Ninguém no ranking ainda. Estude um episódio e apareça aqui!',
   logged:'Conectado como',out:'Sair',loading:'Carregando…',errNet:'Sem conexão. Tente de novo.',fixOf:'Em resposta a',
-  general:'Geral',lg:'Liga',groups:'Grupos de idioma',today:'Hoje',yday:'Ontem',copy:'Copiar',copied:'Copiado!',listen:'Ouvir',reply:'Responder',emoji:'Emojis',orig:'Original',corrected:'Corrigido',fixedBy:'corrigiu',newChat:'Nova conversa',findP:'Encontrar parceiros',noMsgsDm:'Diga olá! Escreva na língua que você está aprendendo — seu parceiro pode corrigir.',tapHint:'Toque numa mensagem para corrigir, ouvir ou copiar.',members:'Membros',exchange:'Intercâmbio',view:'Ver perfil'},
+  general:'Geral',lg:'Liga',groups:'Grupos de idioma',today:'Hoje',yday:'Ontem',copy:'Copiar',copied:'Copiado!',listen:'Ouvir',reply:'Responder',emoji:'Emojis',orig:'Original',corrected:'Corrigido',fixedBy:'corrigiu',newChat:'Nova conversa',findP:'Encontrar parceiros',noMsgsDm:'Diga olá! Escreva na língua que você está aprendendo — seu parceiro pode corrigir.',tapHint:'Toque numa mensagem para corrigir, ouvir ou copiar.',members:'Membros',exchange:'Intercâmbio',view:'Ver perfil',tr:'Traduzir',trHide:'Ocultar tradução',trBusy:'Traduzindo…',trErr:'Não consegui traduzir agora.',typ:'digitando',typN:'estão digitando'},
  es:{signin:'Entrar',signup:'Crear cuenta',title:'Área de miembros',sub:'Conversa con otros alumnos, encuentra compañeros de idioma y entra en el ranking.',
   email:'Correo',pass:'Contraseña (mín. 6 caracteres)',name:'Tu nombre',avatar:'Elige un avatar',speak:'Hablo',learn:'Quiero aprender',go1:'Entrar',go2:'Crear mi cuenta',
   forgot:'Olvidé mi contraseña',sent:'Si el correo existe, enviamos un enlace para restablecer la contraseña.',demo:'Modo demostración: las cuentas y los mensajes se guardan solo en este navegador y los miembros de ejemplo son ficticios. Para activar la comunidad real, configura el backend (mira backend/README.md).',
@@ -21,19 +21,19 @@ const C={
   search:'Buscar por nombre',speaks:'Habla',learns:'Aprende',any:'Cualquier idioma',match:'✨ Hacen match conmigo',talk:'Conversar',noMem:'No se encontraron miembros con esos filtros.',
   rank:'Ranking',all:'Todos los idiomas',xp:'XP',streak:'Racha',eps:'Episodios',pts:'pts',days:'días',epsU:'eps',yourPos:'Tu posición',noRank:'Aún no hay nadie en el ranking. ¡Estudia un episodio y aparece aquí!',
   logged:'Sesión iniciada como',out:'Salir',loading:'Cargando…',errNet:'Sin conexión. Inténtalo de nuevo.',fixOf:'En respuesta a',
-  general:'General',lg:'Liga',groups:'Grupos de idioma',today:'Hoy',yday:'Ayer',copy:'Copiar',copied:'¡Copiado!',listen:'Escuchar',reply:'Responder',emoji:'Emojis',orig:'Original',corrected:'Corregido',fixedBy:'corrigió',newChat:'Nueva conversación',findP:'Encontrar compañeros',noMsgsDm:'¡Di hola! Escribe en el idioma que aprendes: tu compañero puede corregirte.',tapHint:'Toca un mensaje para corregir, escuchar o copiar.',members:'Miembros',exchange:'Intercambio',view:'Ver perfil'}
+  general:'General',lg:'Liga',groups:'Grupos de idioma',today:'Hoy',yday:'Ayer',copy:'Copiar',copied:'¡Copiado!',listen:'Escuchar',reply:'Responder',emoji:'Emojis',orig:'Original',corrected:'Corregido',fixedBy:'corrigió',newChat:'Nueva conversación',findP:'Encontrar compañeros',noMsgsDm:'¡Di hola! Escribe en el idioma que aprendes: tu compañero puede corregirte.',tapHint:'Toca un mensaje para corregir, escuchar o copiar.',members:'Miembros',exchange:'Intercambio',view:'Ver perfil',tr:'Traducir',trHide:'Ocultar traducción',trBusy:'Traduciendo…',trErr:'No pude traducir ahora.',typ:'escribiendo',typN:'están escribiendo'}
 };
 const U=()=>window.PogUI,k=key=>{const L=U().L0();return (C[L][key]!=null?C[L][key]:C.pt[key])},esc=s=>U().esc(s);
 const LN={pt:{pt:'Português',es:'Espanhol',en:'Inglês',fr:'Francês',de:'Alemão',it:'Italiano'},es:{pt:'Portugués',es:'Español',en:'Inglés',fr:'Francés',de:'Alemán',it:'Italiano'}};
 const lname=id=>(LN[U().L0()]||LN.pt)[id]||id;
 const AVS=['🙂','😎','🤓','🦊','🐼','🐯','🦉','🐙','🌻','🚀','🎧','📚'];
 const LIDS=['en','es','pt','fr','de','it'];
-const state={tab:'chat',room:null,unsub:null,init:null,fixing:null,msgs:[],peer:null};
+const state={tab:'chat',room:null,unsub:null,poll:null,rx:{},tr:{},rxSig:'',init:null,fixing:null,msgs:[],peer:null};
 const $=(s,r)=>(r||document).querySelector(s);
 const cloud=()=>window.PogCloud;
 const user=()=>cloud()&&cloud().user();
 function ready(){if(!state.init)state.init=cloud().init().catch(e=>console.warn('PogCloud.init',e));return state.init}
-function stopSub(){if(state.unsub){try{state.unsub()}catch(e){}state.unsub=null}}
+function stopSub(){if(state.poll){clearInterval(state.poll);state.poll=null}if(state.unsub){try{state.unsub()}catch(e){}state.unsub=null}}
 function shell(inner,tab){
   const L=U().L0();
   app.innerHTML=topbar(L)+`<main class="pg">${cloud().mode==='demo'?`<div class="pg-demo">🧪 <span>${esc(k('demo'))}</span></div>`:''}${inner}</main>`;
@@ -159,7 +159,7 @@ async function chatPage(roomArg){
 function wireTabs(){const s=$('.pg-subtabs');if(s)s.onclick=e=>{const b=e.target.closest('[data-ct]');if(b)open(b.dataset.ct)}}
 
 async function openRoom(room,focus){
-  stopSub();state.room=room;state.fixing=null;state.msgs=[];
+  stopSub();state.room=room;state.fixing=null;state.msgs=[];state.rx={};state.rxSig='';
   const chat=$('#pgchat');if(!chat)return;if(focus)chat.classList.add('in-conv');
   chat.querySelectorAll('.hx-row').forEach(b=>b.setAttribute('aria-current',b.dataset.room===room));
   const conv=$('#pgconv'),me=user();let title='',isDm=room.startsWith('dm:'),peerId=null;
@@ -170,10 +170,11 @@ async function openRoom(room,focus){
   }else{const r=cloud().rooms.find(x=>x.id===room)||{id:room,name:room,emoji:'💬'},l=roomLabel(r);title=`<span class="hx-av sm room">${l.ic}</span><span class="hx-ttl"><b>${esc(l.name)}</b><small>${esc(k('groups'))}</small></span>`}
   conv.innerHTML=`<div class="hd hx-hd"><button class="bk hx-bk" id="c-back" aria-label="${k('back')}">‹</button>${title}${isDm?`<button class="hx-more" id="c-block" title="${esc(k('block'))}" aria-label="${esc(k('block'))}">🚫</button>`:''}</div>
    <div class="pg-msgs hx-msgs" id="pgmsgs" aria-live="polite"><p class="pg-empty">${k('loading')}</p></div>
-   <div id="c-fixbar"></div><div class="hx-emo" id="c-emo" hidden>${EMO.map(e=>`<button type="button" data-e="${e}">${e}</button>`).join('')}</div>
+   <div class="hx-typing" id="hx-typing" hidden></div><div id="c-fixbar"></div><div class="hx-emo" id="c-emo" hidden>${EMO.map(e=>`<button type="button" data-e="${e}">${e}</button>`).join('')}</div>
    <form class="pg-compose hx-compose" id="c-form"><button type="button" class="hx-ic" id="c-emobtn" aria-label="${esc(k('emoji'))}">😊</button><input class="pg-in" id="c-in" maxlength="1000" placeholder="${esc(k('write'))}" autocomplete="off" enterkeyhint="send">${window.PogExtras?PogExtras.micBtn():''}<button class="hx-send" id="c-send" aria-label="${esc(k('send'))}">➤</button></form>`;
   $('#c-back').onclick=()=>{stopSub();chat.classList.remove('in-conv')};
   const bl=$('#c-block');if(bl)bl.onclick=async()=>{if(!confirm(k('block')+'?'))return;try{await cloud().block(peerId);alert(k('blocked'));open('chat','geral')}catch(e){alert(e.message)}};
+  $('#c-in').addEventListener('input',()=>{if(window.PogHello&&$('#c-in').value)PogHello.ping(room)});
   $('#c-emobtn').onclick=()=>{const t=$('#c-emo');t.hidden=!t.hidden};
   $('#c-emo').onclick=e=>{const b=e.target.closest('[data-e]');if(!b)return;const i=$('#c-in'),p=i.selectionStart==null?i.value.length:i.selectionStart;i.value=i.value.slice(0,p)+b.dataset.e+i.value.slice(p);i.focus();const q=p+b.dataset.e.length;i.setSelectionRange(q,q)};
   const box=$('#pgmsgs');
@@ -186,6 +187,7 @@ async function openRoom(room,focus){
       const have=new Set(state.msgs.map(m=>m.id)),add=news.filter(m=>!have.has(m.id));
       if(add.length){state.msgs.push(...add);renderMsgs(false)}
     },{after:last});
+    startPoll(room);
   }catch(e){box.innerHTML=`<p class="pg-empty">${esc(e.message||k('errNet'))}</p>`}
   $('#c-form').onsubmit=async ev=>{ev.preventDefault();const inp=$('#c-in'),txt=inp.value.trim();if(!txt)return;
     const fx=state.fixing;$('#c-send').disabled=true;$('#c-emo').hidden=true;
@@ -193,36 +195,81 @@ async function openRoom(room,focus){
       if(!state.msgs.some(x=>x.id===m.id))state.msgs.push(m);
       state.fixing=null;fixBar();renderMsgs(true);
       U().bump('msgs');if(fx&&fx.uid!==user().id)U().bump('fixes');
+      if(window.PogHello){PogHello.demoTyping(room);PogHello.demoBotReact(m,'u-demo')}
     }catch(x){alert(x.message||k('errNet'))}
     finally{const b=$('#c-send');if(b)b.disabled=false;inp.focus()}};
   const mic=$('[data-mic]');if(mic)mic.onclick=()=>PogExtras.record($('#c-form').parentNode,async(blob)=>{
     const path=await cloud().uploadVoice(blob);const m=await cloud().send(room,'🎤',{audio:path});
     if(!state.msgs.some(x=>x.id===m.id))state.msgs.push(m);renderMsgs(true);U().bump('msgs')});
   box.onclick=e=>{
+    const rc=e.target.closest('[data-rx]');if(rc){e.stopPropagation();const m=state.msgs.find(x=>String(x.id)===rc.dataset.mid);if(m)toggleRx(m,rc.dataset.rx,myRx(m.id));return}
     if(e.target.closest('[data-prof],.pg-voice,audio'))return;
     const bb=e.target.closest('.hx-m');if(!bb){closeSheet();return}
     const m=state.msgs.find(x=>String(x.id)===bb.dataset.id);if(m)showSheet(m,bb);
   };
 }
+function myRx(id){const me=user().id;const r=state.rx[id]||{};for(const e in r)if(r[e].includes(me))return e;return null}
+async function refreshRx(){
+  if(!window.PogHello||!state.msgs.length)return;
+  const rx=await PogHello.reactions(state.msgs.map(m=>m.id));
+  const sig=JSON.stringify(rx);if(sig===state.rxSig)return;state.rxSig=sig;state.rx=rx;renderMsgs(false);
+}
+async function pollTyping(room){
+  const el=$('#hx-typing');if(!el||state.room!==room)return;
+  const t=await PogHello.typers(room);
+  if(!document.getElementById('hx-typing')||state.room!==room)return;
+  if(!t.length){el.hidden=true;el.innerHTML='';return}
+  const dm=room.startsWith('dm:'),nm=dm&&state.peer?state.peer.name:(t.length>1?'':(state.msgs.slice().reverse().find(m=>t[0].uid==='demo'?m.uid!==user().id:m.uid===t[0].uid)||{}).name||'');
+  el.innerHTML=`<span class="dots"><i></i><i></i><i></i></span><span>${esc(nm?nm+' '+k('typ')+'…':k('typN')+'…')}</span>`;
+  const near=true;el.hidden=false;const box=$('#pgmsgs');if(box&&near&&box.scrollHeight-box.scrollTop-box.clientHeight<140)box.scrollTop=box.scrollHeight;
+}
+function startPoll(room){
+  if(!window.PogHello)return;
+  const tick=()=>{if(document.hidden||state.room!==room){return}pollTyping(room).catch(()=>{});refreshRx().catch(()=>{})};
+  tick();state.poll=setInterval(tick,2500);
+}
+async function doTranslate(m){
+  if(state.tr[m.id]&&state.tr[m.id].text){delete state.tr[m.id];renderMsgs(false);return}
+  const me=user(),mine=m.uid===me.id;
+  const to=mine?((me.learning||[])[0]||'en'):(me.native||'pt'),from=mine?me.native:((state.peer&&state.peer.uid===m.uid||state.room.startsWith('dm:'))&&state.peer?state.peer.native:null);
+  state.tr[m.id]={busy:1};renderMsgs(false);
+  try{state.tr[m.id]={text:await PogHello.translate(m.text,from,to),to}}
+  catch(e){state.tr[m.id]={err:1}}
+  renderMsgs(false);
+}
 function closeSheet(){const o=document.getElementById('hx-sheet');if(o)o.remove();document.querySelectorAll('.hx-m.sel').forEach(x=>x.classList.remove('sel'))}
 function showSheet(m,el){
   closeSheet();el.classList.add('sel');const mine=m.uid===user().id;
   const o=document.createElement('div');o.id='hx-sheet';o.className='hx-sheet';
-  o.innerHTML=`<div class="hx-sheet-bd" data-x></div><div class="hx-sheet-card" role="menu"><p class="hx-sheet-q">${esc((m.text||'').slice(0,90))}</p><div class="hx-sheet-btns">
+  o.innerHTML=`<div class="hx-sheet-bd" data-x></div><div class="hx-sheet-card" role="menu"><div class="hx-rxrow">${(window.PogHello&&!PogHello.state.react?PogHello.RX:[]).map(e=>`<button data-r="${e}" class="${myRx(m.id)===e?'on':''}">${e}</button>`).join('')}</div><p class="hx-sheet-q">${esc((m.text||'').slice(0,90))}</p><div class="hx-sheet-btns">${m.audio?'':`<button data-a="tr"><i>🌐</i>${esc(state.tr[m.id]&&state.tr[m.id].text?k('trHide'):k('tr'))}</button>`}
     ${mine?'':`<button data-a="fix"><i>✏️</i>${esc(k('fix'))}</button>`}<button data-a="listen"><i>🔊</i>${esc(k('listen'))}</button><button data-a="copy"><i>📋</i>${esc(k('copy'))}</button>${mine?'':`<button data-a="rep" class="dn"><i>🚩</i>${esc(k('report'))}</button>`}</div></div>`;
   document.body.appendChild(o);
   o.onclick=async e=>{
     if(e.target.closest('[data-x]')){closeSheet();return}
+    const rb=e.target.closest('[data-r]');if(rb){const em=rb.dataset.r,cur=myRx(m.id);closeSheet();toggleRx(m,em,cur);return}
     const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a;
+    if(a==='tr'){closeSheet();doTranslate(m);return}
     if(a==='fix'){closeSheet();state.fixing=m;fixBar();const inp=$('#c-in');inp.value=m.text;inp.focus();inp.setSelectionRange(inp.value.length,inp.value.length);return}
     if(a==='copy'){try{await navigator.clipboard.writeText(m.text)}catch(x){}b.querySelector('i').textContent='✅';setTimeout(closeSheet,500);return}
     if(a==='listen'){try{const u=new SpeechSynthesisUtterance(m.text);const cand=(state.peer&&state.peer.native)||(state.msgs.find(x=>x.uid===m.uid)||{}).native;if(cand)u.lang={pt:'pt-BR',es:'es-ES',en:'en-US',fr:'fr-FR',de:'de-DE',it:'it-IT'}[cand]||'';speechSynthesis.cancel();speechSynthesis.speak(u)}catch(x){}closeSheet();return}
     if(a==='rep'){closeSheet();const why=prompt(k('report')+'?','');if(why===null)return;cloud().report(m.id,why||'').then(()=>alert(k('reported'))).catch(x=>alert(x.message))}
   };
 }
+async function toggleRx(m,em,cur){
+  const me=user().id,r=state.rx[m.id]=state.rx[m.id]||{};
+  if(cur&&r[cur])r[cur]=r[cur].filter(u=>u!==me);if(r[cur]&&!r[cur].length)delete r[cur];
+  if(cur!==em)(r[em]=r[em]||[]).push(me);
+  state.rxSig=JSON.stringify(state.rx);renderMsgs(false);
+  try{await PogHello.react(m.id,em,cur)}catch(e){state.rxSig='';refreshRx()}
+}
 function fixBar(){const b=$('#c-fixbar');if(!b)return;const f=state.fixing;
   b.innerHTML=f?`<div class="hx-fixbar"><span class="ic">✏️</span><div><b>${k('fixing')} ${esc(f.name)}</b><small>${esc(f.text.slice(0,80))}</small></div><button id="c-fixno" aria-label="${esc(k('cancel'))}">✕</button></div>`:'';
   const n=$('#c-fixno');if(n)n.onclick=()=>{state.fixing=null;fixBar();$('#c-in').value=''}}
+function trHTML(m){const t=state.tr[m.id];if(!t)return '';
+  return t.busy?`<div class="hx-tr busy">🌐 ${esc(k('trBusy'))}</div>`:t.err?`<div class="hx-tr err">⚠️ ${esc(k('trErr'))}</div>`:`<div class="hx-tr">🌐 ${esc(t.text)}</div>`}
+function rxHTML(m){const r=state.rx[m.id];if(!r)return '';const me=user().id;
+  const chips=Object.keys(r).filter(e=>r[e].length).map(e=>`<button class="hx-rx ${r[e].includes(me)?'on':''}" data-rx="${esc(e)}" data-mid="${esc(m.id)}">${e}${r[e].length>1?`<b>${r[e].length}</b>`:''}</button>`).join('');
+  return chips?`<div class="hx-rxs">${chips}</div>`:''}
 function renderMsgs(stick){
   const box=$('#pgmsgs');if(!box)return;const me=user().id;
   const near=box.scrollHeight-box.scrollTop-box.clientHeight<90;
@@ -236,7 +283,7 @@ function renderMsgs(stick){
     if(m.audio)body=window.PogExtras?PogExtras.voiceHTML(m.audio):'';
     else if(m.fixOf!=null&&orig)body=`<div class="hx-fixhd">${esc(k("fixTag"))}</div><div class="hx-diff">${wordDiff(orig.text,m.text)}</div><div class="hx-fixed"><small>${esc(k('corrected'))}</small>${esc(m.text)}</div>`;
     else body=esc(m.text);
-    html+=`<div class="pg-msg hx-m ${mine?'me':''} ${m.fixOf!=null?'fix':''} ${lastOfGroup?'tail':''}" data-id="${esc(m.id)}">${mine?'':`<span class="av ${lastOfGroup?'':'ghost'}" data-prof="${esc(m.uid)}">${lastOfGroup?esc(m.avatar||'🙂'):''}</span>`}<div class="hx-col">${!mine&&firstOfGroup&&!state.room.startsWith('dm:')?`<span class="who">${esc(m.name||'?')}</span>`:''}<div class="bb">${body}<time>${hhmm(m.ts)}</time></div></div></div>`;
+    html+=`<div class="pg-msg hx-m ${mine?'me':''} ${m.fixOf!=null?'fix':''} ${lastOfGroup?'tail':''}" data-id="${esc(m.id)}">${mine?'':`<span class="av ${lastOfGroup?'':'ghost'}" data-prof="${esc(m.uid)}">${lastOfGroup?esc(m.avatar||'🙂'):''}</span>`}<div class="hx-col">${!mine&&firstOfGroup&&!state.room.startsWith('dm:')?`<span class="who">${esc(m.name||'?')}</span>`:''}<div class="bb">${body}${trHTML(m)}<time>${hhmm(m.ts)}</time></div>${rxHTML(m)}</div></div>`;
   });
   if(!state.hinted){state.hinted=1;html+=`<p class="hx-hint">${esc(k('tapHint'))}</p>`}
   box.innerHTML=html;

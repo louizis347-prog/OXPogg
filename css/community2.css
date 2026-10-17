@@ -87,3 +87,23 @@
 .hx-acts{display:flex;gap:8px}.hx-acts .pg-btn:first-child{flex:1}
 .pg-filters{background:#fff;border:1.5px solid var(--pg-line);border-radius:20px;padding:10px}
 .pg-filters .pg-in{border-radius:999px}
+
+/* reações, tradução e "digitando…" */
+.hx-rxs{display:flex;gap:4px;flex-wrap:wrap;margin:-4px 8px 2px;position:relative;z-index:1}
+.hx-m.me .hx-rxs{justify-content:flex-end}
+.hx-rx{display:inline-flex;align-items:center;gap:3px;padding:1px 8px;border-radius:99px;background:#fff;border:1.5px solid var(--pg-line);box-shadow:0 2px 5px -2px rgba(36,48,73,.3);font-size:14px;line-height:1.5}
+.hx-rx b{font-size:11.5px;color:var(--pg-mute)}.hx-rx.on{background:#EFE9FF;border-color:#7C4DFF}.hx-rx.on b{color:#4B26B8}
+.hx-rx:active{transform:scale(.9)}
+.hx-rxrow{display:flex;justify-content:space-between;gap:4px;margin:0 0 12px;padding:6px 8px;background:#F7F5FF;border-radius:999px}
+.hx-rxrow:empty{display:none}
+.hx-rxrow button{font-size:26px;width:46px;height:46px;border-radius:50%;transition:transform .12s}
+.hx-rxrow button:hover,.hx-rxrow button:active{transform:scale(1.25)}.hx-rxrow button.on{background:#EFE9FF;box-shadow:inset 0 0 0 2px #7C4DFF}
+.hx-tr{margin:6px -4px 2px;padding:6px 10px;border-radius:12px;background:rgba(124,77,255,.1);color:var(--pg-ink);font-size:14px;font-weight:700;line-height:1.35}
+.hx-m.me .hx-tr{background:rgba(255,255,255,.2);color:#fff}
+.hx-tr.busy{opacity:.7;font-style:italic}.hx-tr.err{background:#FFF1F1;color:#B42318}
+.hx-typing{display:flex;align-items:center;gap:8px;padding:4px 16px 8px;color:var(--pg-mute);font-weight:800;font-size:12.5px;background:#FAF8FF}
+.hx-typing[hidden]{display:none}
+.hx-typing .dots{display:inline-flex;gap:3px;padding:7px 10px;background:#fff;border-radius:14px;box-shadow:0 1px 2px rgba(36,48,73,.12)}
+.hx-typing .dots i{width:6px;height:6px;border-radius:50%;background:#9A86E8;animation:hxd 1.2s infinite}
+.hx-typing .dots i:nth-child(2){animation-delay:.18s}.hx-typing .dots i:nth-child(3){animation-delay:.36s}
+@keyframes hxd{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
