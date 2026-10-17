@@ -170,6 +170,7 @@ window.topbar=function(){
     <span class="pgstat fire" title="${E(t('days'))}">${IC.flame()}<span data-pgstreak>${n}</span><span class="dw"> ${E(t('days'))}</span></span>
     <span class="pgstat xp hide-s" title="XP">${IC.bolt()}<span data-pgxp>${nf(ST.xp)}</span><span class="dw"> XP</span></span>
     ${due?`<button class="pgstat rev hide-s" data-go="review" title="${E(t('review2'))}">🔁 ${due}</button>`:''}
+    <button class="pgstat gear theme" data-act="theme" aria-label="Tema">${window.PogTheme&&PogTheme.eff()==='dark'?'🌙':'☀️'}</button>
     <button class="pgstat gear hide-s" data-act="settings" aria-label="Ajustes" title="Ajustes">${IC.gear()}</button>
     ${u?`<button class="pgme" data-go="profile" title="${E(u.name)}"><span class="av">${E(u.avatar||'🙂')}</span><span class="nm">${E((u.name||'').split(' ')[0])}</span></button>`
        :`<button class="pgme guest" data-go="profile">${IC.me()}<span class="nm">${E(t('navPanel'))}</span></button>`}
