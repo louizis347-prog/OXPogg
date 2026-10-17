@@ -222,25 +222,34 @@ window.home=function(){
   let got={},ACH=[];try{got=store.get('ach',{});ACH=PU().ACH||[]}catch(e){}
   const nextA=ACH.filter(a=>!got[a.id]).sort((a,b)=>b.cur(s)/b.goal-a.cur(s)/a.goal).slice(0,4);
   const showA=nextA.length?nextA:ACH.slice(0,4);
-  const tile=(cls,ic,v,l)=>`<div class="p3st ${cls}"><i>${ic}</i><b>${v}</b><small>${E(l)}</small></div>`;
-  const steps=[['🎬','1'],['🔤','2'],['🎮','3'],['🎤','4']];
-  const mets=[['🗣️','1'],['🌍','2'],['📐','3'],['🔁','4']];
-  const feats=[['🎧','1','#e9f3ff'],['🧩','2','#fff0e0'],['🔁','3','#e8f8ee'],['🎯','4','#ffe9ef'],['🏆','5','#fff6d9'],['💬','6','#eee8ff'],['📚','7','#e4f6f6'],['🌎','8','#fdebff']];
-  const lv=['A1','A2','B1','B2','C1','C2'];
+  const lv=['A1','A2','B1','B2','C1','C2'],steps=[['🎬','1'],['🔤','2'],['🎮','3'],['🎤','4']];
+  const res=(()=>{try{return resumeTarget()}catch(e){return null}})(),u=me();
+  let goal=null;try{goal=window.PogSettings&&PogSettings.goalState?PogSettings.goalState():null}catch(e){}
+  const due=(()=>{try{return srsDueCount()}catch(e){return 0}})();
+  const ls0=PU().LANGS,order=['nb','nbes','en','es','fr','de','it','pt','enes'],ls=ls0.slice().sort((x,y)=>(order.indexOf(x.id)<0?99:order.indexOf(x.id))-(order.indexOf(y.id)<0?99:order.indexOf(y.id)));
+  const first=u&&u.name?String(u.name).split(' ')[0]:'';
+  const rc=res?COURSES[res.cid]:null,rlv=res?lvlOf(res.cid):'';
+  const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b>${v}</b><small>${E(l)}</small></span>`;
+  const quick=[['review',due?'🔁':'🔁',t('review2'),due||''],['shelf','📚',t('navShelf'),''],['comm','💬',t('navComm'),''],['rank','🏆',t('rank'),''],['ach','🎖️',t('achHd'),`${(()=>{try{return Object.keys(got).length}catch(e){return ''}})()||''}`],['profile','👤',t('navPanel'),'']];
+  const langPill=l=>{let n=0,d=0;l.sub.forEach(cid=>{n+=nOf(cid);d+=doneCountFor(cid)});const g=GROUPS[l.id]||COURSES[l.id]||{},p=n?d/n:0,multi=l.sub.length>1,hd=multi?`data-lang="${l.id}"`:`data-course="${l.sub[0]}"`;
+    return `<button class="px-lang" ${hd} style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};--p:${(p*100).toFixed(0)}"><span class="fl">${typeof flagPair==='function'?flagPair(g.flag||''):E(g.flag||'')}</span><span class="mono">${E(l.mono)}</span><b>${E(l.n[L0()])}</b><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small><span class="rg"><i></i><em>${Math.round(p*100)}%</em></span></button>`};
   shell(`
-  <section class="p3hero"><div class="tx"><span class="pill">${E(t('heroPill'))}</span><h1>${E(t('h1a'))} <em>${E(t('h1b'))}</em></h1><p>${E(t('lead'))}</p>
-    <div class="p3acts"><button class="p2btn light" data-go="courses">${E(t('viewCourses'))}${IC.arrow()}</button></div></div>
-   <div class="mascot"><div class="p3pg">${poggie({cls:'',scarf:'#FFE58A'})}</div><span class="b b1">🎬</span><span class="b b2">📚</span><span class="b b3">🎧</span><span class="b b4">🎤</span></div></section>
-  <div class="hr" id="p2resume">${resumeHTML()}</div>
-  <section class="p3stats">${tile('s1',IC.flame(),nf(ST.streak.n||0),t('sStreak'))}${tile('s2',IC.bolt(),nf(ST.xp||0),t('sXp'))}${tile('s3',IC.check(),nf(s.eps),t('sEps'))}${tile('s4',IC.target(),acc+'%',t('sAcc'))}</section>
+  <section class="px-hero ${res?'has':''}">
+   <div class="px-hl"><span class="px-eyebrow">${first?E(t('hello'))+', '+E(first)+' 👋':E(t('heroPill'))}</span>
+    ${res?`<h1>${E(res.e.t)}</h1><p>${E(langOf(res.cid).n[L0()])}${rlv?' · '+E(rlv):''} · ${E(t('ep'))} ${String(res.e.en||res.idx+1).padStart(2,'0')}${(res.e.a&&res.e.a.w)?' · '+E(res.e.a.w):''}</p>`
+         :`<h1>${E(t('h1a'))} <em>${E(t('h1b'))}</em></h1><p>${E(t('lead'))}</p>`}
+    <div class="px-acts">${res?`<button class="px-cta" data-ep="${res.cid}:${res.idx}">${IC.arrow()}<span>${E(t('contBtn'))}</span></button>`:`<button class="px-cta" data-course="${firstCourse()}">${IC.arrow()}<span>${E(t('startBtn'))}</span></button>`}<button class="px-ghost" data-go="courses">${E(t('viewCourses'))}</button></div>
+    <div class="px-pills">${pill('🔥',nf(ST.streak.n||0),t('sStreak'))}${pill('⚡',nf(ST.xp||0),'XP')}${pill('✅',nf(s.eps),t('sEps'))}${ST.totalAnswered?pill('🎯',acc+'%',t('sAcc')):''}</div></div>
+   <div class="px-hr">${res?`<div class="px-cover" data-ep="${res.cid}:${res.idx}">${PC().svg(res.e,{num:res.e.en||res.idx+1})}<span class="px-play">▶</span></div>`:`<div class="mascot"><div class="p3pg">${poggie({cls:'',scarf:'#FFE58A'})}</div><span class="b b1">🎬</span><span class="b b2">📚</span><span class="b b3">🎧</span><span class="b b4">🎤</span></div>`}
+    ${goal?`<div class="px-goal"><div class="rg">${PogSettings.ringHTML(goal.pct,54,7)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)}/${nf(goal.goal)} XP</b></div></div>`:''}</div>
+  </section>
+  <section class="px-quick" aria-label="Atalhos">${quick.map(([id,ic,l,bd])=>`<button data-go="${id}"><i>${ic}${bd?`<em>${bd}</em>`:''}</i><span>${E(l)}</span></button>`).join('')}</section>
   <div class="pt-today-slot"></div>
   ${(()=>{try{return srsBanner()||''}catch(e){return ''}})()}
-  <section class="p3sec">${sectionHead(t('howT'),t('howSub'))}<div class="p3steps">${steps.map(([ic,i])=>`<div class="p3stp"><span class="n">${i}</span><i>${ic}</i><div><h3>${E(t('h'+i+'t'))}</h3><p>${E(t('h'+i+'d'))}</p></div></div>`).join('')}</div></section>
-  <section class="p3sec">${sectionHead(t('metT'),t('metSub'))}<div class="p3mg">${mets.map(([ic,i],k)=>`<div class="p3mc m${k}"><i>${ic}</i><h3>${E(t('me'+i+'t'))}</h3><p>${E(t('me'+i+'d'))}</p></div>`).join('')}</div></section>
-  <section class="p3sec">${sectionHead(t('cefrT'),t('cefrSub'))}<div class="p3cefr">${lv.map((x,i)=>`<div class="lv l${i}"><b>${x}</b><small>${E(t('l'+(i+1)))}</small></div>`).join('')}</div></section>
-  <section class="p3sec">${sectionHead(t('fnT'),t('fnSub'))}<div class="p3fg">${feats.map(([ic,i,bg])=>`<div class="p3fc"><i style="background:${bg}">${ic}</i><h3>${E(t('f'+i+'t'))}</h3><p>${E(t('f'+i+'d'))}</p></div>`).join('')}</div></section>
-  <section class="p3sec">${sectionHead(t('commHd'))}<div class="p3two2"><div class="p3cm c1"><i>💬</i><h3>${E(t('commT'))}</h3><p>${E(t('commTx'))}</p><button class="p2btn light sm" data-go="comm">${E(t('openComm'))}</button></div><div class="p3cm c2"><i>🏆</i><h3>${E(t('rank'))}</h3><p>${E(t('rankTx'))}</p><button class="p2btn light sm" data-go="rank">${E(t('openRank'))}</button></div></div></section>
-  ${showA.length?`<section class="p3sec">${sectionHead(t('achHd'),'',`<button class="p2link" data-go="ach">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="p3ach">${showA.map(a=>`<div class="a ${got[a.id]?'':'lock'}"><i>${a.ic}</i><b>${E(a.n[L])}</b><small>${got[a.id]?'✓':Math.min(a.cur(s),a.goal)+'/'+a.goal}</small></div>`).join('')}</div></section>`:''}`,'home');
+  <section class="px-sec">${sectionHead(t('courses'),t('coursesSub'),`<button class="p2link" data-go="courses">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-langs">${ls.map(langPill).join('')}</div></section>
+  <section class="px-sec">${sectionHead(t('howT'))}<div class="px-steps">${steps.map(([ic,i])=>`<div class="st"><span class="n">${i}</span><i>${ic}</i><b>${E(t('h'+i+'t'))}</b><small>${E(t('h'+i+'d'))}</small></div>`).join('')}</div></section>
+  <section class="px-sec">${sectionHead(t('cefrT'))}<div class="px-cefr">${lv.map((x,i)=>`<div class="l l${i}"><b>${x}</b><small>${E(t('l'+(i+1)))}</small></div>`).join('')}</div></section>
+  ${showA.length?`<section class="px-sec">${sectionHead(t('achHd'),'',`<button class="p2link" data-go="ach">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-achrow">${showA.map(a=>`<div class="a ${got[a.id]?'':'lock'}" style="--p:${got[a.id]?100:Math.min(100,Math.round(a.cur(s)/a.goal*100))}"><span class="rg"><i>${a.ic}</i></span><b>${E(a.n[L])}</b><small>${got[a.id]?'✓':Math.min(a.cur(s),a.goal)+'/'+a.goal}</small></div>`).join('')}</div></section>`:''}`,'home');
   try{
     const host=document.querySelector('.pt-today-slot');
     if(host&&window.PogPath&&PogPath.renderCard){const sec=document.createElement('section');sec.className='pt-today';host.replaceWith(sec);PogPath.renderCard()}
@@ -443,21 +452,28 @@ window.profile=function(){
   const ach=a=>{const cur=Math.min(a.cur(s),a.goal),on=!!earned[a.id];
     return `<div class="p2ach ${on?'on':''}"><i class="ic">${a.ic}</i><div class="tx"><b>${E(a.n[L])}</b><small>${E(a.d[L])}</small>${on?`<span class="when">${IC.check()}${new Date(earned[a.id]).toLocaleDateString(L==='es'?'es':'pt-BR')}</span>`:`<div class="p2bar-p"><i style="width:${(cur/a.goal*100).toFixed(1)}%"></i></div><span class="cnt">${nf(cur)}/${nf(a.goal)}</span>`}</div></div>`};
   const stat=(cls,ic,v,l)=>`<div class="p2stat ${cls}"><i>${ic}</i><div><b>${v}</b><small>${E(l)}</small></div></div>`;
+  const px=(cls,ic,v,l)=>`<div class="px-stat ${cls}"><i>${ic}</i><b>${v}</b><small>${E(l)}</small></div>`;
+  const todoS=todo.slice().sort((x,y)=>Math.min(y.cur(s),y.goal)/y.goal-Math.min(x.cur(s),x.goal)/x.goal);
+  const bd=(a,on)=>{const cur=Math.min(a.cur(s),a.goal);return `<div class="px-badge ${on?'on':''}" title="${E(a.d[L])}" style="--p:${on?100:Math.round(cur/a.goal*100)}"><span class="rg"><i>${a.ic}</i></span><b>${E(a.n[L])}</b><small>${on?'✓ '+new Date(earned[a.id]).toLocaleDateString(L==='es'?'es':'pt-BR'):nf(cur)+'/'+nf(a.goal)}</small></div>`};
   shell(`
-  <header class="p2eph"><div class="tx"><span class="p2eyebrow">${E(t('panel').toUpperCase())}</span><h1>${E(u?u.name:t('student'))}</h1><p>${E(t('panelSub'))}</p></div></header>
-  <section class="p2me"><div class="who"><span class="av">${u?E(u.avatar||'🙂'):poggie({scarf:'#7C4DFF'})}</span><div><b>${E(t('lg'))} ${E(lg.name)}</b><small>${nxt?`${nf(nxt-(ST.xp||0))} XP ${E(t('toNext'))}`:E(t('top'))}</small></div></div>
-    <div class="p2bar-p inv" style="--lc:${lg.color}"><i style="width:${(Math.max(0,Math.min(1,lgp))*100).toFixed(1)}%"></i></div></section>
-  <section class="p2stats six">${stat('s1',IC.flame(),nf(s.streak),t('sBest'))}${stat('s2',IC.bolt(),nf(ST.xp||0),t('sXp'))}${stat('s3',IC.check(),nf(s.eps),t('sEps'))}${stat('s4',IC.target(),acc+'%',t('sAcc'))}${stat('s5',IC.book(),nf(ST.shelf.length),t('sBooks'))}${stat('s6',IC.trophy(),`${done.length}/${ACH.length}`,t('ach'))}</section>
+  <section class="px-me" style="--lc:${lg.color}">
+   <div class="top"><div class="px-av" style="--p:${(Math.max(0,Math.min(1,lgp))*100).toFixed(0)}"><span>${u?E(u.avatar||'🙂'):poggie({scarf:'#7C4DFF'})}</span></div>
+    <div class="tx"><span class="px-eyebrow">${E(t('panel'))}</span><h1>${E(u?u.name:t('student'))}</h1><span class="px-lg">${E(t('lg'))} ${E(lg.name)}</span></div>
+    <button class="px-gear" data-act="settings" aria-label="Ajustes">${IC.gear()}</button></div>
+   <div class="px-lgbar"><div class="p2bar-p inv"><i style="width:${(Math.max(0,Math.min(1,lgp))*100).toFixed(1)}%"></i></div><small>${nxt?`${nf(nxt-(ST.xp||0))} XP ${E(t('toNext'))}`:E(t('top'))}</small></div>
+   <div class="px-key"><div><b>${nf(s.streak)}</b><small>${E(t('sBest'))}</small></div><div><b>${nf(ST.xp||0)}</b><small>XP</small></div><div><b>${nf(s.eps)}</b><small>${E(t('sEps'))}</small></div></div></section>
+  <section class="px-stats">${px('s4',IC.target(),acc+'%',t('sAcc'))}${px('s5',IC.book(),nf(ST.shelf.length),t('sBooks'))}${px('s6',IC.trophy(),`${done.length}/${ACH.length}`,t('ach'))}</section>
   <section class="p2duo">
    ${goal?`<div class="p2card goal"><div class="ring">${PogSettings.ringHTML(goal.pct,72,9)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)} / ${nf(goal.goal)} XP</b>${goal.met?`<em>${E(t('goalDone'))}</em>`:''}</div></div>`:''}
    <div class="p2card srs"><div><small>${E(t('review2'))}</small><b>${due?`${due} ${E(t('review2Sub'))}`:E(t('review2None'))}</b></div>${due?`<button class="p2btn pri sm" data-go="review">${E(t('review2Go'))}</button>`:''}</div></section>
-  <section>${sectionHead(t('myCourses'),t('myCoursesSub'))}${rows.length?`<div class="p2crs">${rows.map(({c,n,d})=>{const l=langOf(c.id),p=n?d/n:0,lv=lvlOf(c.id);return `<button class="p2crow" data-course="${c.id}" style="--c:${l.c};--cd:${l.cd}"><span class="mono">${E(l.mono)}</span><span class="tx"><b>${E(l.n[L])}${lv?' · '+E(lv):''}</b><small>${nf(d)} ${E(t('of'))} ${nf(n)} ${E(t('lessons'))}</small>${bar(p)}</span><em>${Math.round(p*100)}%</em></button>`}).join('')}</div>`:`<div class="p2shelf-empty"><span>${E(t('noCourses'))}</span><button class="p2btn pri sm" data-go="home">${E(t('pick'))}</button></div>`}</section>
-  <section id="p2ach">${sectionHead(t('ach'),`${done.length} ${E(t('of'))} ${ACH.length} · ${E(t('achSub'))}`)}
-   ${done.length?`<h3 class="p2h3">${E(t('unlocked'))}</h3><div class="p2achs">${done.map(ach).join('')}</div>`:''}
-   <h3 class="p2h3">${E(t('inProg'))}</h3><div class="p2achs">${todo.map(ach).join('')}</div></section>
-  <section>${sectionHead(t('acc'))}<div class="p2card acct">${u?`<span class="av">${E(u.avatar||'🙂')}</span><div class="tx"><small>${E(t('accIn'))}</small><b>${E(u.name)}</b><small>${E(u.email||'')}</small></div><button class="p2btn ghost sm" data-go="logout">${E(t('out'))}</button>`
+  <section class="px-sec">${sectionHead(t('myCourses'),t('myCoursesSub'))}${rows.length?`<div class="p2crs">${rows.map(({c,n,d})=>{const l=langOf(c.id),p=n?d/n:0,lv=lvlOf(c.id);return `<button class="p2crow" data-course="${c.id}" style="--c:${l.c};--cd:${l.cd}"><span class="mono">${E(l.mono)}</span><span class="tx"><b>${E(l.n[L])}${lv?' · '+E(lv):''}</b><small>${nf(d)} ${E(t('of'))} ${nf(n)} ${E(t('lessons'))}</small>${bar(p)}</span><em>${Math.round(p*100)}%</em></button>`}).join('')}</div>`:`<div class="p2sh-empty"><p>${E(t('noCourses'))}</p><button class="p2btn pri sm" data-go="courses">${E(t('pick'))}</button></div>`}</section>
+  <section class="px-sec" id="p2ach">${sectionHead(t('ach'),`${done.length} ${E(t('of'))} ${ACH.length} · ${E(t('achSub'))}`)}
+   <div class="px-badges">${done.map(a=>bd(a,true)).join('')}${todoS.map((a,i)=>`<div class="px-bw ${i>=8?'more':''}">${bd(a,false)}</div>`).join('')}</div>
+   ${todoS.length>8?`<button class="px-more" data-pxmore>${E(L==='es'?'Ver todos':'Ver todas')} (${todoS.length-8})</button>`:''}</section>
+  <section class="px-sec">${sectionHead(t('acc'))}<div class="p2card acct">${u?`<span class="av">${E(u.avatar||'🙂')}</span><div class="tx"><small>${E(t('accIn'))}</small><b>${E(u.name)}</b><small>${E(u.email||'')}</small></div><button class="p2btn ghost sm" data-go="logout">${E(t('out'))}</button>`
      :`<div class="tx"><b>${E(t('acc2'))}</b></div><button class="p2btn pri sm" data-go="auth">${E(t('signin'))}</button>`}</div></section>`,'panel');
 };
+document.addEventListener('click',e=>{const m=e.target.closest&&e.target.closest('[data-pxmore]');if(!m)return;const g=document.querySelector('.px-badges');if(g){g.classList.toggle('all');m.style.display='none'}});
 
 
 /* ================= PÁGINA CURSOS (menu superior) ================= */
