@@ -85,7 +85,7 @@ FXR.nbchat=function(f,st,n){
   const after=()=>{if(k>=L.length){cta('Continuar',true,true);q('#nbhn',st).textContent='Toque em qualquer bolha para ouvir de novo.'}else cta('Próxima fala ▶',true)};
   const reveal=i=>{q('#nbsp',st).innerHTML='';add(i,true);k=i+1;P.fx.cta=()=>{if(k<L.length){next();return true}return false};after()};
   const speakTurn=i=>{const l=L[i],w=l[1].split(' ');
-    q('#nbsp',st).innerHTML=`<div class="nb-sp"><div class="nb-hint">🎭 Sua vez! Diga em inglês:</div><div class="nb-big-line" style="min-height:0">${H(l[2])}<em>Começa com: “${H(w.slice(0,2).join(' '))}…”</em></div><div id="nbmic"></div><div class="nb-tools" style="justify-content:center"><button class="nb-chip" id="nbshow">👀 Ver a frase</button></div></div>`;
+    q('#nbsp',st).innerHTML=`<div class="nb-sp"><div class="nb-hint">🎭 Sua vez! Diga em ${fxLang()}:</div><div class="nb-big-line" style="min-height:0">${H(l[2])}<em>Começa com: “${H(w.slice(0,2).join(' '))}…”</em></div><div id="nbmic"></div><div class="nb-tools" style="justify-content:center"><button class="nb-chip" id="nbshow">👀 Ver a frase</button></div></div>`;
     q('#nbhn',st).textContent='';P.fx.cta=()=>true;cta('Fale sua parte 🎤',false);
     q('#nbshow',st).onclick=()=>reveal(i);
     if(PogVoice.supported())PogVoice.mount(q('#nbmic',st),{target:l[1],onDone:r=>{if(r.score>=50){setTimeout(()=>reveal(i),900)}},onFail:c=>{if(c==='unsupported'){role=false;q('#nbmic',st).innerHTML='<div class="nb-hint">Seu navegador não tem microfone: diga em voz alta e toque em “Ver a frase”.</div>'}}});
@@ -143,7 +143,7 @@ FXR.nbswap=function(f,st,n){
 FXR.nbmatch=function(f,st,n){
   const W=f.items.slice(0,6);lock();let cards=[];W.forEach((w,i)=>{cards.push({i,t:'e',h:`<b>${w[1]}</b>${H(w[2])}`,s:w[0]});cards.push({i,t:'w',h:`<b>🔊</b>${H(w[0])}`,s:w[0]})});cards=fxShuffle(cards);
   let open=[],found=0,tries=0,lk=false;
-  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Memória de palavras')}<div class="nb-hint">Ache o par: figura em português + palavra em inglês. Toque para ouvir.</div><div class="nb-mem">${cards.map((c,i)=>`<button class="nb-mc" data-i="${i}">?</button>`).join('')}</div><div class="nb-streak" id="nbst"></div></div>`;
+  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Memória de palavras')}<div class="nb-hint">Ache o par: figura em português + palavra em ${fxLang()}. Toque para ouvir.</div><div class="nb-mem">${cards.map((c,i)=>`<button class="nb-mc" data-i="${i}">?</button>`).join('')}</div><div class="nb-streak" id="nbst"></div></div>`;
   const bs=[...st.querySelectorAll('.nb-mc')];
   bs.forEach((b,i)=>b.onclick=()=>{if(lk||b.classList.contains('up')||b.classList.contains('done'))return;const c=cards[i];b.classList.add('up');b.innerHTML=c.h;say2(c.s,null);open.push(i);
     if(open.length===2){tries++;const[x,y]=open;if(cards[x].i===cards[y].i&&cards[x].t!==cards[y].t){bs[x].classList.add('done');bs[y].classList.add('done');found++;sfx('burst');open=[];q('#nbst',st).textContent=found>=W.length?`Perfeito em ${tries} jogadas!`:'🔥 Par!';if(found>=W.length)setTimeout(()=>win(),600)}
@@ -169,7 +169,7 @@ FXR.nbshadow=function(f,st,n){
   let ri=0;lock();
   const mask=t=>{const w=t.split(' ');const sc=w.map((x,i)=>[x.replace(/[^A-Za-z']/g,'').length,i]).sort((a,b)=>b[0]-a[0]).slice(0,Math.max(1,Math.round(w.length/3))).map(x=>x[1]);return w.map((x,i)=>sc.includes(i)?x.replace(/[A-Za-z']+/,m=>'_'.repeat(Math.min(7,m.length))):x).join(' ')};
   const draw=()=>{const it=R[ri],fw=it.t.split(' ').slice(0,2).join(' ');
-    const lab={repeat:'1 · Ouça e repita',cloze:'2 · Complete e fale a frase inteira',recall:'3 · Sem olhar: diga em inglês',real:'🗣️ Como falam de verdade'}[it.tier];
+    const lab={repeat:'1 · Ouça e repita',cloze:'2 · Complete e fale a frase inteira',recall:'3 · Sem olhar: diga em '+fxLang(),real:'🗣️ Como falam de verdade'}[it.tier];
     let body;
     if(it.tier==='repeat')body=`<div class="nb-big-line">${H(it.t)}<em>${H(it.p)}</em></div>`;
     else if(it.tier==='cloze')body=`<div class="nb-big-line">${H(mask(it.t))}<em>${H(it.p)}</em></div>`;
@@ -242,7 +242,7 @@ FXR.nbfind=function(f,st,n){
       if(!done){ok=false;break}}
     if(ok)break}
   const AB='abcdefghijklmnopqrstuvwxyz';G.forEach(r=>r.forEach((v,i)=>{if(!v)r[i]=AB[Math.random()*26|0]}));
-  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Caça-palavras')}<div class="nb-hint">Ache em inglês: toque na primeira e na última letra de cada palavra.</div>
+  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Caça-palavras')}<div class="nb-hint">Ache em ${fxLang()}: toque na primeira e na última letra de cada palavra.</div>
   <div class="nb-clues" id="nbcl">${W.map((x,i)=>`<span data-i="${i}">${x.e} ${H(x.pt)}</span>`).join('')}</div>
   <div class="nb-ws" id="nbw" style="grid-template-columns:repeat(${N},1fr)">${G.map((r,i)=>r.map((v,j)=>`<button data-r="${i}" data-c="${j}">${v}</button>`).join('')).join('')}</div></div>`;
   const cell=(r,c)=>q(`#nbw [data-r="${r}"][data-c="${c}"]`,st);let a=null,found=0;
@@ -254,5 +254,5 @@ FXR.nbfind=function(f,st,n){
     const cells=Array.from({length:len},(_,i)=>[r0+dr*i,c0+dc*i]),str=cells.map(x=>G[x[0]][x[1]]).join(''),rev=[...str].reverse().join('');
     const hit=W.findIndex(x=>(x.w===str||x.w===rev)&&!x.fd);
     if(hit>=0){W[hit].fd=true;found++;cells.forEach(x=>cell(x[0],x[1]).classList.add('fd'));q(`#nbcl [data-i="${hit}"]`,st).classList.add('fd');sfx('burst');say2(W[hit].w,null);if(found>=W.length)setTimeout(()=>win(),900)}else sfx('oops')});
-  cta('Ache as palavras',false);say('Procure as palavras em inglês na grade.')};
+  cta('Ache as palavras',false);say('Procure as palavras em '+fxLang()+' na grade.')};
 })();
