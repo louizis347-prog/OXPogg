@@ -393,19 +393,34 @@ function shelfBooks(){
   l=SH.sort==='az'?l.sort((x,y)=>norm(x.b.w).localeCompare(norm(y.b.w))):l.reverse();
   return l;
 }
+const workPal=w=>{try{const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:w.k||''}};return PC().palette(PC().analyse(e).seed)}catch(x){return{c1:'#7C4DFF',c2:'#4B26B8'}}};
+function workCard(b,i,lock){const pal=workPal(b);
+  return `<button class="px-work ${lock?'lock':''}" ${lock?'':`data-bk="${i}"`} style="--wc:${pal.c1};--wd:${pal.c2}" title="${E(b.w)}"><div class="cv">${workCover(b)}${lock?`<span class="lk">${IC.lock()}</span>`:`<span class="pl">▶</span>`}</div><b>${E(b.w)}</b><small>${E(b.au||'')}</small></button>`;
+}
 function shelfRowsHTML(){
   const l=shelfBooks();if(!l.length)return `<p class="p2empty">${E(t('shNone'))}</p>`;
-  const per=window.innerWidth<560?3:window.innerWidth<900?4:6,rows=[];
-  for(let k=0;k<l.length;k+=per)rows.push(l.slice(k,k+per));
-  return rows.map(r=>`<div class="p4row"><div class="bks">${r.map(({b,i})=>`<button class="p4bk" data-bk="${i}" style="--tilt:${((i*37)%7-3)*.7}deg" title="${E(b.w)}"><div class="cv">${workCover(b)}</div><span>${E(b.w)}</span></button>`).join('')}</div><div class="board"></div></div>`).join('');
+  return `<div class="px-wgrid">${l.map(({b,i})=>workCard(b,i)).join('')}</div>`;
+}
+function workEpisodes(w){
+  const key=norm(w.w),out=[];
+  Object.keys(EP||{}).forEach(cid=>{(EP[cid]||[]).forEach((e,i)=>{if(out.length<10&&e.a&&e.a.w&&norm(e.a.w)===key&&!e.pl)out.push({cid,i,e})})});
+  return out;
 }
 function shelfSheet(i){
   const b=ST.shelf[i];if(!b)return;
   let d=document.getElementById('p4sheet');if(d)d.remove();
-  d=document.createElement('div');d.id='p4sheet';d.className='p4sheet';
-  d.innerHTML=`<div class="bg" data-x></div><div class="card" role="dialog" aria-label="${E(b.w)}"><div class="cv">${workCover(b)}</div><h3>${E(b.w)}</h3>${b.au?`<p>${E(t('shBy'))} ${E(b.au)}</p>`:''}<button class="p2btn pri" data-x>${E(t('shClose'))}</button></div>`;
-  document.body.appendChild(d);requestAnimationFrame(()=>d.classList.add('on'));
-  d.addEventListener('click',e=>{if(e.target.closest('[data-x]')){d.classList.remove('on');setTimeout(()=>d.remove(),220)}});
+  const pal=workPal(b),eps=workEpisodes(b),L=L0();
+  d=document.createElement('div');d.id='p4sheet';d.className='px-wp';d.style.setProperty('--wc',pal.c1);d.style.setProperty('--wd',pal.c2);
+  d.innerHTML=`<div class="bg" data-x></div><div class="sheet" role="dialog" aria-label="${E(b.w)}"><button class="x" data-x aria-label="${E(t('shClose'))}">✕</button>
+   <div class="hd"><div class="cv">${workCover(b)}</div><div class="tx"><small>${E(t('shWorks').toUpperCase())}</small><h2>${E(b.w)}</h2>${b.au?`<p>${E(t('shBy'))} <b>${E(b.au)}</b></p>`:''}
+    <div class="acts">${eps[0]?`<button class="px-play-btn" data-x data-ep="${eps[0].cid}:${eps[0].i}">▶ <span>${E(L==='es'?'Abrir episodio':'Abrir episódio')}</span></button>`:''}<button class="px-share" data-share="${E(b.w)}" aria-label="Compartilhar">⤴</button></div></div></div>
+   ${eps.length?`<h3>${E(L==='es'?'Aparece en':'Aparece em')}</h3><div class="eps">${eps.map(({cid,i,e},k)=>`<button class="ep" data-x data-ep="${cid}:${i}"><span class="n">${k+1}</span><span class="t"><b>${E(e.t)}</b><small>${E(langOf(cid).n[L])}${lvlOf(cid)?' '+E(lvlOf(cid)):''} · ${E(t('ep'))} ${String(e.en||i+1).padStart(2,'0')}</small></span><span class="go">▶</span></button>`).join('')}</div>`:`<p class="none">${E(L==='es'?'Abre un curso para ver los episodios donde aparece esta obra.':'Abra um curso para ver os episódios em que esta obra aparece.')}</p>`}</div>`;
+  document.body.appendChild(d);document.body.classList.add('px-lockscroll');requestAnimationFrame(()=>d.classList.add('on'));
+  const close=()=>{d.classList.remove('on');document.body.classList.remove('px-lockscroll');setTimeout(()=>d.remove(),240)};
+  d.addEventListener('click',e=>{
+    const sh=e.target.closest('[data-share]');if(sh){const txt=`${b.w}${b.au?' — '+b.au:''} · Pogglot`;try{if(navigator.share)navigator.share({title:'Pogglot',text:txt,url:location.origin+location.pathname});else navigator.clipboard.writeText(txt)}catch(x){}return}
+    if(e.target.closest('[data-x]'))close();
+  });
 }
 function shelf(){
   PU().cur='shelf';setHash('#/shelf');
@@ -414,9 +429,13 @@ function shelf(){
   shell(`<section class="p4hero"><div class="tx"><span class="p2eyebrow on">${E(t('shMy').toUpperCase())}</span><h1>${E(t('shelfT'))}</h1><p>${E(t('shelfP'))}</p>
     <div class="nums"><div><b>${nf(n)}</b><small>${E(t('shWorks'))}</small></div><div><b>${nf(au)}</b><small>${E(t('shAuth'))}</small></div></div></div>
     <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92"><circle cx="46" cy="46" r="34" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="9"/><circle cx="46" cy="46" r="34" fill="none" stroke="#ffe58a" stroke-width="9" stroke-linecap="round" stroke-dasharray="${R}" stroke-dashoffset="${R*(1-pc)}" transform="rotate(-90 46 46)"/></svg><span>${n}/${nx}</span><small>${E(t('shMile'))}</small></div></section>
-   ${n?`<div class="p4tools"><label class="p2search">${IC.search()}<input id="p4q" type="search" placeholder="${E(t('shSearch'))}" aria-label="${E(t('shSearch'))}"></label>
+   ${n?`${(()=>{const rec=ST.shelf.map((x,i)=>({b:x,i})).reverse().slice(0,12);const cnt={};ST.shelf.forEach(x=>{if(x.au)cnt[x.au]=(cnt[x.au]||0)+1});const top=Object.entries(cnt).sort((x,y)=>y[1]-x[1])[0];
+       return `<section class="px-sec"><div class="p2sh"><div><h2>${E(L0()==='es'?'Añadidas recientemente':'Adicionadas recentemente')}</h2></div></div><div class="px-rail">${rec.map(({b,i})=>workCard(b,i)).join('')}</div></section>
+       ${top?`<section class="px-recap"><span class="e">📖</span><div><small>${E(L0()==='es'?'TU AÑO EN OBRAS':'SEU ANO EM OBRAS')}</small><b>${n} ${E(t('shWorks'))} · ${au} ${E(t('shAuth'))}</b><p>${E(L0()==='es'?'Autor más frecuente':'Autor mais frequente')}: <em>${E(top[0])}</em> (${top[1]})</p></div></section>`:''}`})()}
+     <section class="px-sec"><div class="p2sh"><div><h2>${E(L0()==='es'?'Toda la colección':'Toda a coleção')}</h2></div></div>
+     <div class="p4tools"><label class="p2search">${IC.search()}<input id="p4q" type="search" placeholder="${E(t('shSearch'))}" aria-label="${E(t('shSearch'))}"></label>
      <div class="seg" role="group"><button data-p4s="new" aria-pressed="${SH.sort==='new'}">${E(t('shSort1'))}</button><button data-p4s="az" aria-pressed="${SH.sort==='az'}">${E(t('shSort2'))}</button></div></div>
-     <div class="p4case" id="p4case">${shelfRowsHTML()}</div>
+     <div class="p4case" id="p4case">${shelfRowsHTML()}</div></section>
      <div class="p4ms">${MS.map(m=>`<span class="${n>=m?'on':''}"><i>${n>=m?'★':'☆'}</i>${m}</span>`).join('')}</div>`
     :`<div class="p4empty"><div class="gh">${[0,1,2].map(k=>`<i style="--k:${k}"></i>`).join('')}</div><h3>${E(t('shEmptyT'))}</h3><p>${E(t('shEmptyP'))}</p><button class="p2btn pri" data-go="courses">${E(t('shGo'))}${IC.arrow()}</button></div>`}
    <section id="p2next"></section>`,'shelfpg');
@@ -428,7 +447,7 @@ function shelf(){
     const have=new Set(ST.shelf.map(b=>norm(b.w))),seen=new Set(),out=[];
     for(const e of (EP[cid]||[])){if(e.pl||isDone(cid,e))continue;const w=(e.a||{}).w;if(!w)continue;const key=norm(w);if(have.has(key)||seen.has(key))continue;seen.add(key);out.push(e);if(out.length>=12)break}
     if(!out.length)return;
-    host.innerHTML=`<div class="p4q">${sectionHead(t('shQueue'))}<div class="p2strip">${out.map(e=>`<figure class="p2book ghostb"><div class="cv">${PC().work(e)}</div><figcaption>${E(e.a.w)}</figcaption></figure>`).join('')}</div></div>`;
+    host.innerHTML=`<section class="px-sec">${sectionHead(t('shQueue'),L0()==='es'?'Se desbloquean al terminar los episodios.':'Desbloqueiam quando você concluir os episódios.')}<div class="px-rail">${out.map(e=>workCard({w:e.a.w,au:'',k:e.a.k},0,true)).join('')}</div></section>`;
   }).catch(()=>{});
 }
 document.addEventListener('click',ev=>{
