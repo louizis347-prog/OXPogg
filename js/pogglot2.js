@@ -245,6 +245,7 @@ window.home=function(){
     ${goal?`<div class="px-goal"><div class="rg">${PogSettings.ringHTML(goal.pct,54,7)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)}/${nf(goal.goal)} XP</b></div></div>`:''}</div>
   </section>
   <section class="px-quick" aria-label="Atalhos">${quick.map(([id,ic,l,bd])=>`<button data-go="${id}"><i>${ic}${bd?`<em>${bd}</em>`:''}</i><span>${E(l)}</span></button>`).join('')}</section>
+  ${window.PogMissions?PogMissions.cardHTML():''}
   <div class="pt-today-slot"></div>
   ${(()=>{try{return srsBanner()||''}catch(e){return ''}})()}
   <section class="px-sec">${sectionHead(t('courses'),t('coursesSub'),`<button class="p2link" data-go="courses">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-langs">${ls.map(langPill).join('')}</div></section>
