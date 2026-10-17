@@ -313,3 +313,4 @@ main.p2.lang,.p2.lang{background:transparent!important;box-shadow:none!important
 .az-hero .az-scene{position:relative;width:calc(100% + 36px);margin:-16px -18px 12px;aspect-ratio:320/172;overflow:hidden;border-radius:0 0 28px 28px;box-shadow:0 22px 34px -20px rgba(0,0,0,.45)}
 .az-hero .az-scene svg{display:block;width:100%;height:100%}
 .az-hero .az-scene::after{content:"";position:absolute;inset:auto 0 0 0;height:36%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.22))}
+@media(max-width:560px){.p2banner{flex-wrap:wrap!important}.p2banner .cv{width:100%!important}.p2banner .tx{flex:1 1 60%}.p2banner b{display:block;-webkit-line-clamp:unset!important}.p2banner .p2btn{width:100%!important}}
