@@ -411,10 +411,13 @@
       var rows = await this.api('GET', '/rest/v1/profiles?select=' + PCOLS + '&id=eq.' + enc(id) + '&limit=1');
       if (!rows.length) {
         var m = this.meta(u);
-        rows = await this.api('POST', '/rest/v1/profiles?on_conflict=id', {
-          headers: { Prefer: 'resolution=merge-duplicates,return=representation' },
+        try { rows = await this.api('POST', '/rest/v1/profiles', {
+          headers: { Prefer: 'return=representation' },
           body: Object.assign({ id: id, name: m.name || (email || 'Aluno').split('@')[0], avatar: m.avatar, native: m.native, learning: m.learning, bio: '' }, /^[0-9a-f-]{36}$/.test(((u.user_metadata || {}).ref) || '') ? { ref_by: u.user_metadata.ref } : {})
-        });
+        }); } catch (e) {
+          rows = await this.api('GET', '/rest/v1/profiles?select=' + PCOLS + '&id=eq.' + enc(id) + '&limit=1');
+          if (!rows.length) throw e;
+        }
       }
       this.me = pubUser(rows[0], email); this.persist();
       return this.me;
