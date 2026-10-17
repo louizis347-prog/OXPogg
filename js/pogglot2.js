@@ -231,7 +231,7 @@ window.home=function(){
   const first=u&&u.name?String(u.name).split(' ')[0]:'';
   const rc=res?COURSES[res.cid]:null,rlv=res?lvlOf(res.cid):'';
   const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b>${v}</b><small>${E(l)}</small></span>`;
-  const quick=[['review',due?'🔁':'🔁',t('review2'),due||''],['shelf','📚',t('navShelf'),''],['comm','💬',t('navComm'),''],['rank','🏆',t('rank'),''],['ach','🎖️',t('achHd'),`${(()=>{try{return Object.keys(got).length}catch(e){return ''}})()||''}`],['profile','👤',t('navPanel'),'']];
+  const quick=[['listen','🎧',L0()==='es'?'Escuchar':'Ouvir',''],['review',due?'🔁':'🔁',t('review2'),due||''],['shelf','📚',t('navShelf'),''],['comm','💬',t('navComm'),''],['rank','🏆',t('rank'),''],['ach','🎖️',t('achHd'),`${(()=>{try{return Object.keys(got).length}catch(e){return ''}})()||''}`],['profile','👤',t('navPanel'),'']];
   const langPill=l=>{let n=0,d=0;l.sub.forEach(cid=>{n+=nOf(cid);d+=doneCountFor(cid)});const g=GROUPS[l.id]||COURSES[l.id]||{},p=n?d/n:0,multi=l.sub.length>1,hd=multi?`data-lang="${l.id}"`:`data-course="${l.sub[0]}"`;
     return `<button class="px-lang" ${hd} style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};--p:${(p*100).toFixed(0)}"><span class="fl">${typeof flagPair==='function'?flagPair(g.flag||''):E(g.flag||'')}</span><span class="mono">${E(l.mono)}</span><b>${E(l.n[L0()])}</b><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small><span class="rg"><i></i><em>${Math.round(p*100)}%</em></span></button>`};
   shell(`
@@ -244,7 +244,7 @@ window.home=function(){
    <div class="px-hr">${res?`<div class="px-cover" data-ep="${res.cid}:${res.idx}">${PC().svg(res.e,{num:res.e.en||res.idx+1})}<span class="px-play">▶</span></div>`:`<div class="mascot"><div class="p3pg">${poggie({cls:'',scarf:'#FFE58A'})}</div><span class="b b1">🎬</span><span class="b b2">📚</span><span class="b b3">🎧</span><span class="b b4">🎤</span></div>`}
     ${goal?`<div class="px-goal"><div class="rg">${PogSettings.ringHTML(goal.pct,54,7)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)}/${nf(goal.goal)} XP</b></div></div>`:''}</div>
   </section>
-  <section class="px-quick" aria-label="Atalhos">${quick.map(([id,ic,l,bd])=>`<button data-go="${id}"><i>${ic}${bd?`<em>${bd}</em>`:''}</i><span>${E(l)}</span></button>`).join('')}</section>
+  <section class="px-quick" aria-label="Atalhos">${quick.map(([id,ic,l,bd])=>`<button ${id==='listen'?`data-listen="${ST.lastCourse||''}"`:`data-go="${id}"`}><i>${ic}${bd?`<em>${bd}</em>`:''}</i><span>${E(l)}</span></button>`).join('')}</section>
   ${window.PogMissions?PogMissions.cardHTML():''}
   <div class="pt-today-slot"></div>
   ${(()=>{try{return srsBanner()||''}catch(e){return ''}})()}
