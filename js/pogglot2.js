@@ -230,7 +230,7 @@ window.home=function(){
   const ls0=PU().LANGS,order=['nb','nbes','en','es','fr','de','it','pt','enes'],ls=ls0.slice().sort((x,y)=>(order.indexOf(x.id)<0?99:order.indexOf(x.id))-(order.indexOf(y.id)<0?99:order.indexOf(y.id)));
   const first=u&&u.name?String(u.name).split(' ')[0]:'';
   const rc=res?COURSES[res.cid]:null,rlv=res?lvlOf(res.cid):'';
-  const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b>${v}</b><small>${E(l)}</small></span>`;
+  const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b data-cu>${v}</b><small>${E(l)}</small></span>`;
   const quick=[['listen','🎧',L0()==='es'?'Escuchar':'Ouvir',''],['review',due?'🔁':'🔁',t('review2'),due||''],['shelf','📚',t('navShelf'),''],['comm','💬',t('navComm'),''],['rank','🏆',t('rank'),''],['ach','🎖️',t('achHd'),`${(()=>{try{return Object.keys(got).length}catch(e){return ''}})()||''}`],['profile','👤',t('navPanel'),'']];
   const langPill=l=>{let n=0,d=0;l.sub.forEach(cid=>{n+=nOf(cid);d+=doneCountFor(cid)});const g=GROUPS[l.id]||COURSES[l.id]||{},p=n?d/n:0,multi=l.sub.length>1,hd=multi?`data-lang="${l.id}"`:`data-course="${l.sub[0]}"`;
     return `<button class="px-lang" ${hd} style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};--p:${(p*100).toFixed(0)}"><span class="fl">${typeof flagPair==='function'?flagPair(g.flag||''):E(g.flag||'')}</span><span class="mono">${E(l.mono)}</span><b>${E(l.n[L0()])}</b><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small><span class="rg"><i></i><em>${Math.round(p*100)}%</em></span></button>`};
@@ -246,6 +246,7 @@ window.home=function(){
   </section>
   <section class="px-quick" aria-label="Atalhos">${quick.map(([id,ic,l,bd])=>`<button ${id==='listen'?`data-listen="${ST.lastCourse||''}"`:`data-go="${id}"`}><i>${ic}${bd?`<em>${bd}</em>`:''}</i><span>${E(l)}</span></button>`).join('')}</section>
   ${window.PogMissions?PogMissions.cardHTML():''}
+  ${window.PogRecap?PogRecap.recapHTML():''}
   <div class="pt-today-slot"></div>
   ${(()=>{try{return srsBanner()||''}catch(e){return ''}})()}
   <section class="px-sec">${sectionHead(t('courses'),t('coursesSub'),`<button class="p2link" data-go="courses">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-langs">${ls.map(langPill).join('')}</div></section>
@@ -482,7 +483,8 @@ window.profile=function(){
     <div class="tx"><span class="px-eyebrow">${E(t('panel'))}</span><h1>${E(u?u.name:t('student'))}</h1><span class="px-lg">${E(t('lg'))} ${E(lg.name)}</span></div>
     <button class="px-gear" data-act="settings" aria-label="Ajustes">${IC.gear()}</button></div>
    <div class="px-lgbar"><div class="p2bar-p inv"><i style="width:${(Math.max(0,Math.min(1,lgp))*100).toFixed(1)}%"></i></div><small>${nxt?`${nf(nxt-(ST.xp||0))} XP ${E(t('toNext'))}`:E(t('top'))}</small></div>
-   <div class="px-key"><div><b>${nf(s.streak)}</b><small>${E(t('sBest'))}</small></div><div><b>${nf(ST.xp||0)}</b><small>XP</small></div><div><b>${nf(s.eps)}</b><small>${E(t('sEps'))}</small></div></div></section>
+   <div class="px-key"><div><b data-cu>${nf(s.streak)}</b><small>${E(t('sBest'))}</small></div><div><b data-cu>${nf(ST.xp||0)}</b><small>XP</small></div><div><b data-cu>${nf(s.eps)}</b><small>${E(t('sEps'))}</small></div></div></section>
+  ${window.PogRecap?PogRecap.cardHTML():''}
   <section class="px-stats">${px('s4',IC.target(),acc+'%',t('sAcc'))}${px('s5',IC.book(),nf(ST.shelf.length),t('sBooks'))}${px('s6',IC.trophy(),`${done.length}/${ACH.length}`,t('ach'))}</section>
   <section class="p2duo">
    ${goal?`<div class="p2card goal"><div class="ring">${PogSettings.ringHTML(goal.pct,72,9)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)} / ${nf(goal.goal)} XP</b>${goal.met?`<em>${E(t('goalDone'))}</em>`:''}</div></div>`:''}
