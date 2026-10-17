@@ -191,6 +191,9 @@ function sectionHead(h,p,right){return `<div class="p2sh"><div><h2>${E(h)}</h2>$
 function langArt(l,iconId,sub){
   return `<div class="art" style="--c:${l.c};--cd:${l.cd}"><b class="wm">${E(l.mono)}</b><i class="tile">${PC().icon(iconId||LANG_ICON[l.id]||'globe',58,l.cd)}</i>${sub?`<span class="sub">${E(sub)}</span>`:''}</div>`;
 }
+const LANG_SC={en:'street',es:'plaza',fr:'paris',de:'station',it:'lisboa',pt:'ipanema',nb:'plaza',nbes:'plaza',enes:'street'};
+const LV_SC={A1:'cafe',A2:'street',B1:'office',B2:'station',C1:'library',C2:'ballroom'};
+const sceneArt=(key,sc)=>{try{return PC().svg({t:String(key),sc,a:{w:String(key),k:'Cidade'},n:0},{noChar:true})}catch(e){return ''}};
 function workCover(w,k){const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:k||w.k||''}};return PC().work(e)}
 
 /* ================= INÍCIO ================= */
@@ -233,7 +236,7 @@ window.home=function(){
   const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b data-cu>${v}</b><small>${E(l)}</small></span>`;
   const quick=[['listen','🎧',L0()==='es'?'Escuchar':'Ouvir',''],['review',due?'🔁':'🔁',t('review2'),due||''],['shelf','📚',t('navShelf'),''],['comm','💬',t('navComm'),''],['rank','🏆',t('rank'),''],['ach','🎖️',t('achHd'),`${(()=>{try{return Object.keys(got).length}catch(e){return ''}})()||''}`],['profile','👤',t('navPanel'),'']];
   const langPill=l=>{let n=0,d=0;l.sub.forEach(cid=>{n+=nOf(cid);d+=doneCountFor(cid)});const g=GROUPS[l.id]||COURSES[l.id]||{},p=n?d/n:0,multi=l.sub.length>1,hd=multi?`data-lang="${l.id}"`:`data-course="${l.sub[0]}"`;
-    return `<button class="px-lang" ${hd} style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};--p:${(p*100).toFixed(0)}"><span class="fl">${typeof flagPair==='function'?flagPair(g.flag||''):E(g.flag||'')}</span><span class="mono">${E(l.mono)}</span><b>${E(l.n[L0()])}</b><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small><span class="rg"><i></i><em>${Math.round(p*100)}%</em></span></button>`};
+    return `<button class="px-lang" ${hd} style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};--p:${(p*100).toFixed(0)}"><span class="bgart">${sceneArt(l.id,LANG_SC[l.id]||'plaza')}</span><span class="fl">${typeof flagPair==='function'?flagPair(g.flag||''):E(g.flag||'')}</span><span class="mono">${E(l.mono)}</span><b>${E(l.n[L0()])}</b><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small><span class="rg"><i></i><em>${Math.round(p*100)}%</em></span></button>`};
   shell(`
   <section class="px-hero ${res?'has':''}">
    <div class="px-hl"><span class="px-eyebrow">${first?E(t('hello'))+', '+E(first)+' 👋':E(t('heroPill'))}</span>
@@ -272,11 +275,11 @@ window.hub=function(id){
   const g=GROUPS[l.id]||{},L=L0();
   let n=0,d=0;l.sub.forEach(cid=>{n+=nOf(cid);d+=doneCountFor(cid)});const p=n?d/n:0;
   shell(`<button class="p2back" data-go="home">${IC.arrow()}<span>${E(t('back'))}</span></button>
-  <section class="p2lhead" style="--c:${l.c};--cd:${l.cd}"><div class="tx"><span class="p2eyebrow on">${typeof flagPair==='function'?flagPair(g.flag||''):''}</span><h1>${E(l.n[L])}</h1><p>${E(g.desc?g.desc[L]:'')}</p>
+  <section class="p2lhead px-hero2" style="--c:${l.c};--cd:${l.cd}"><div class="bgart">${sceneArt(l.id,LANG_SC[l.id]||'plaza')}</div><div class="tx"><span class="p2eyebrow on">${typeof flagPair==='function'?flagPair(g.flag||''):''}</span><h1>${E(l.n[L])}</h1><p>${E(g.desc?g.desc[L]:'')}</p>
    <div class="pr"><div class="p2bar-p inv"><i style="width:${(p*100).toFixed(1)}%"></i></div><span>${nf(d)} ${E(t('of'))} ${nf(n)} · ${Math.round(p*100)}%</span></div></div>${langArt(l,LANG_ICON[l.id])}</section>
   ${sectionHead(t('pickLevel'),t('pickLevelSub'))}
   <div class="p2levels">${l.sub.map((cid,i)=>{const c=COURSES[cid],lv=lvlOf(cid),cn=nOf(cid),cd=doneCountFor(cid),cp=cn?cd/cn:0,pal=PC().palette(cid);
-    return `<article class="p2level" style="--c1:${pal.c1};--c2:${pal.c2};animation-delay:${i*45}ms"><button class="hd" data-course="${cid}"><b class="big">${E(lv||'•')}</b><i class="tile">${PC().icon(LV_ICON[lv]||'star',54,pal.a)}</i></button>
+    return `<article class="p2level" style="--c1:${pal.c1};--c2:${pal.c2};animation-delay:${i*45}ms"><button class="hd" data-course="${cid}"><b class="big">${E(lv||'•')}</b><span class="bgart">${sceneArt(cid,LV_SC[lv]||'plaza')}</span></button>
      <div class="bd"><h3>${E(t('level'))} ${E(lv)}</h3><p>${E(c.desc[L])}</p>${bar(cp)}<div class="mt"><span>${nf(cd)} ${E(t('of'))} ${nf(cn)} ${E(t('lessons'))}</span><b>${Math.round(cp*100)}%</b></div>
      <button class="p2btn ${cd?'pri':'soft'} sm" data-course="${cid}">${E(cd?(cd>=cn&&cn?t('review'):t('continue')):t('begin'))}${IC.arrow()}</button></div></article>`}).join('')}</div>`,'lang');
 };
@@ -336,7 +339,7 @@ function listHTML(){
   return V.arcs.map((o,k)=>{
     const eps=list.slice(o.s,o.e).filter(e=>!e.pl),d=eps.filter(e=>isDone(cid,e)).length,p=eps.length?d/eps.length:0,open=V.open.has(k);
     return `<section class="p2arc ${open?'open':''} ${p>=1&&eps.length?'complete':''}" data-k="${k}"><button class="ah" data-p2arc="${k}" aria-expanded="${open}">
-      <span class="num">${p>=1&&eps.length?IC.check():k+1}</span><span class="tt"><b>${E(o.title)}</b><small>${nf(d)}/${nf(eps.length)} ${E(t('lessons'))}</small></span>
+      <span class="num">${p>=1&&eps.length?IC.check():k+1}</span>${(list[o.s]&&!list[o.s].pl)?`<span class="th">${PC().svg(list[o.s],{noChar:false})}</span>`:''}<span class="tt"><b>${E(o.title)}</b><small>${nf(d)}/${nf(eps.length)} ${E(t('lessons'))}</small></span>
       <span class="mini">${bar(p)}</span><span class="cv">${IC.chev()}</span></button><div class="ab">${open?arcBodyHTML(o,nextI):''}</div></section>`}).join('');
 }
 function chipsHTML(){
@@ -362,8 +365,8 @@ window.course=function(id){
   const g=GROUPS[c.group];const sibs=g&&g.sub.length>1?g.sub:null;
   const RG=2*Math.PI*36;
   shell(`<button class="p2back" data-go="courses">${IC.arrow()}<span>${E(t('navCourses'))}</span></button>
-   <section class="p5h" style="--c:${l.c};--cd:${l.cd}"><div class="tx"><span class="p2eyebrow on">${E(l.n[L].toUpperCase())}${lv?' · '+E(t('level').toUpperCase())+' '+E(lv):''}</span><h1>${E(c.name[L])}</h1><p>${E(c.desc[L])}</p>
-     <div class="st"><span><b>${nf(d)}</b> ${E(t('of'))} ${nf(n)} ${E(t('done'))}</span></div></div>
+   <section class="p5h px-hero2" style="--c:${l.c};--cd:${l.cd}"><div class="bgart">${(()=>{const ni0=nextIdx(id),e0=list[ni0>=0?ni0:0];return e0?PC().svg(e0,{noChar:true}):sceneArt(id,LANG_SC[c.group]||'plaza')})()}</div><div class="tx"><span class="p2eyebrow on">${E(l.n[L].toUpperCase())}${lv?' · '+E(t('level').toUpperCase())+' '+E(lv):''}</span><h1>${E(c.name[L])}</h1><p>${E(c.desc[L])}</p>
+     <div class="st"><span class="chip"><b>${nf(d)}</b> ${E(t('of'))} ${nf(n)} ${E(t('done'))}</span>${lv?`<span class="chip">${E(t('level'))} ${E(lv)}</span>`:''}<span class="chip">⏱ 10 ${E(t('min').toLowerCase())}</span></div></div>
      <div class="rg"><svg width="86" height="86" viewBox="0 0 86 86"><circle cx="43" cy="43" r="36" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="8"/><circle cx="43" cy="43" r="36" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-dasharray="${RG}" stroke-dashoffset="${RG*(1-p)}" transform="rotate(-90 43 43)"/></svg><span>${Math.round(p*100)}%</span></div></section>
    ${sibs?`<div class="p2levelsw" role="tablist">${sibs.map(cid=>`<button class="p2chip lvl" data-course="${cid}" aria-pressed="${cid===id}">${E(lvlOf(cid))}</button>`).join('')}</div>`:''}
    ${bannerHTML(id)}
@@ -506,6 +509,7 @@ function card5(l,i,big){
   const chips=multi?`<div class="lvs">${l.sub.map(cid=>`<button class="lv ${doneCountFor(cid)?'on':''}" data-course="${cid}" title="${E(COURSES[cid].name[L0()])}">${E(lvlOf(cid))}</button>`).join('')}</div>`
     :`<button class="p2btn soft sm go" data-course="${l.sub[0]}">${E(d?t('continue'):t('begin'))}${IC.arrow()}</button>`;
   return `<article class="p5c ${big?'big':''}" style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};animation-delay:${i*50}ms">
+   <button class="ban" ${hd} tabindex="-1" aria-hidden="true">${sceneArt(l.id+(big?'b':''),LANG_SC[l.id]||'plaza')}<span class="sh"></span></button>
    <button class="top" ${hd}><span class="mk">${E(l.mono)}</span><span class="nm"><h3>${E(l.n[L0()])}</h3><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small></span><span class="ar">${IC.arrow()}</span></button>
    <p>${E(g.desc?g.desc[L0()]:'')}</p>
    <div class="pr"><div class="p2bar-p">${''}<i style="width:${(p*100).toFixed(1)}%"></i></div><b>${Math.round(p*100)}%</b></div>${chips}</article>`;

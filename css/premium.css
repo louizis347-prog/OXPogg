@@ -243,3 +243,60 @@ body.px-lockscroll{overflow:hidden}
  .p2btn:active,.px-cta:active,.px-quick button:active,.px-work:active{transform:scale(.97)}
 }
 @keyframes pxin{from{opacity:0;transform:translateY(14px)}}
+
+/* ===== páginas de cursos: topo cinematográfico, arcos e cartões com cena ===== */
+.px-hero2{position:relative;overflow:hidden;isolation:isolate;background:var(--cd)!important;min-height:210px;box-shadow:0 40px 70px -42px var(--cd)}
+.px-hero2 .bgart{position:absolute;top:0;bottom:0;right:0;left:30%;z-index:-2;-webkit-mask-image:linear-gradient(90deg,transparent,#000 42%);mask-image:linear-gradient(90deg,transparent,#000 42%)}
+.px-hero2 .bgart svg{display:block;width:100%;height:100%}
+.px-hero2::before{content:"";position:absolute;inset:0;right:0;top:0;left:0;bottom:0;width:auto;height:auto;border-radius:0;z-index:-1;background:linear-gradient(95deg,color-mix(in srgb,var(--c) 70%,#000) 0%,color-mix(in srgb,var(--cd) 55%,transparent) 36%,transparent 70%),linear-gradient(180deg,transparent 60%,rgba(0,0,0,.28))}
+.px-hero2{min-height:230px}
+@media(max-width:700px){.px-hero2 .bgart{left:0;opacity:.55}.px-hero2{min-height:200px}}
+.px-hero2 .tx{position:relative}
+.px-hero2 h1{text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.p2lhead.px-hero2 .art{display:none}
+.p5h .st{display:flex;gap:8px;flex-wrap:wrap}.p5h .st .chip{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:99px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-weight:700;font-size:13px;color:#fff}
+.p5h .st .chip b{font-weight:800}
+.p5h .rg{background:rgba(0,0,0,.22);border-radius:50%;padding:6px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+/* "continuar" estilo cinema */
+.p2banner{position:relative;overflow:hidden;border-radius:28px;padding:14px 18px 14px 14px;background:linear-gradient(120deg,#1B1450,#3A2A78 60%,#5B2FE0);box-shadow:0 30px 50px -30px #3A2A78}
+.p2banner .cv{position:relative;width:200px;height:auto;aspect-ratio:320/172;align-self:center;border-radius:18px;box-shadow:0 20px 30px -14px rgba(0,0,0,.6)}
+.p2banner .cv::after{content:"▶";position:absolute;right:10px;bottom:10px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#5B2FE0;font-size:13px;padding-left:2px;box-shadow:0 8px 16px -6px rgba(0,0,0,.5)}
+.p2banner b{font-size:22px;letter-spacing:-.02em}
+/* arcos com miniatura */
+.p2arc{border-radius:24px;transition:box-shadow .2s,transform .2s}.p2arc:hover{box-shadow:0 22px 40px -26px rgba(60,40,140,.5)}
+.p2arc .ah{padding:12px 16px 12px 12px;gap:14px}
+.p2arc .ah .th{flex:none;width:92px;aspect-ratio:320/172;border-radius:14px;overflow:hidden;box-shadow:0 12px 18px -10px rgba(40,20,110,.5)}
+.p2arc .ah .th svg{display:block;width:100%;height:100%}
+.p2arc .ah{position:relative}.p2arc .ah .num{position:absolute;left:18px;top:18px;z-index:2;width:26px;height:26px;border-radius:9px;font-size:13px;box-shadow:0 6px 12px -4px rgba(0,0,0,.45);border:2px solid #fff}
+.p2arc.complete .ah .th{filter:saturate(.85)}
+@media(max-width:560px){.p2arc .ah .th{width:64px}.p2arc .ah .mini{display:none}}
+/* cartões de episódio */
+.p2ep{border-radius:24px;transition:transform .22s,box-shadow .22s}.p2ep .cv{overflow:hidden}.p2ep .cv>svg{transition:transform .5s cubic-bezier(.2,.9,.3,1)}
+.p2ep:hover .cv>svg{transform:scale(1.07)}
+.p2ep .cv::after{content:"▶";position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#5B2FE0;font-size:14px;padding-left:2px;opacity:0;transform:translateY(8px);transition:all .22s;box-shadow:0 10px 18px -6px rgba(0,0,0,.5);z-index:2}
+.p2ep:hover .cv::after{opacity:1;transform:none}.p2ep.soon .cv::after{display:none}
+@media(hover:none){.p2ep .cv::after{opacity:.95;transform:none;width:34px;height:34px}}
+.p2ep.done .cv>svg{filter:saturate(.85) brightness(.92)}
+/* níveis do idioma */
+.p2level .hd{height:136px;background:var(--c1)}
+.p2level .hd .bgart{position:absolute;inset:0;z-index:0}.p2level .hd .bgart svg{display:block;width:100%;height:100%}
+.p2level .hd::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,color-mix(in srgb,var(--c1) 88%,#000),color-mix(in srgb,var(--c2) 40%,transparent) 60%,transparent)}
+.p2level .hd .big{position:relative;z-index:2;text-shadow:0 4px 20px rgba(0,0,0,.35)}
+.p2level{transition:transform .22s,box-shadow .22s}.p2level:hover{transform:translateY(-4px);box-shadow:0 26px 44px -26px rgba(60,40,140,.55)}
+/* grade de cursos */
+.p5c{padding:0!important;overflow:hidden;gap:0!important}
+.p5c>.ban{display:block;position:relative;width:100%;height:112px;padding:0;border:0;background:var(--cd);cursor:pointer;overflow:hidden}
+.p5c.big>.ban{height:150px}
+.p5c>.ban svg{display:block;width:100%;height:100%;transition:transform .6s cubic-bezier(.2,.9,.3,1)}.p5c:hover>.ban svg{transform:scale(1.07)}
+.p5c>.ban .sh{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.42)),linear-gradient(120deg,color-mix(in srgb,var(--c) 40%,transparent),transparent 60%)}
+.p5c>.top{padding:14px 18px 0}.p5c>.top .mk{margin-top:-34px;border:3px solid #fff;box-shadow:0 12px 20px -10px rgba(0,0,0,.45)}
+.p5c>p,.p5c>.pr,.p5c>.lvs,.p5c>.go{margin-left:18px;margin-right:18px}.p5c>p{margin-top:10px}.p5c>.pr{margin-top:12px}.p5c>.lvs,.p5c>.go{margin-top:12px}.p5c>:last-child{margin-bottom:18px}
+.p5c.big>.top .mk{width:58px;height:58px}
+/* carrossel da home com cena */
+.px-lang{background:var(--cd)}
+.px-lang .bgart{position:absolute;inset:0;z-index:0}.px-lang .bgart svg{display:block;width:100%;height:100%;object-fit:cover}
+.px-lang::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,color-mix(in srgb,var(--c) 30%,transparent) 0%,transparent 35%,rgba(8,4,30,.78) 100%)}
+.px-lang>*:not(.bgart){position:relative;z-index:2}.px-lang .mono{position:absolute;z-index:2}.px-lang .rg{position:absolute}
+.px-lang{min-height:196px}
+main.p2.lang,.p2.lang{background:transparent!important;box-shadow:none!important;border:0!important}
+.p5c>.top{position:relative;z-index:2}
