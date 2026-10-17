@@ -37,7 +37,8 @@ function hero(f,e,st){
   const em=emojis(e);
   const bubs=em.map((m,i)=>`<span class="az-bub" style="left:${POS[i][0]}%;top:${POS[i][1]}%;animation-delay:-${i*.8}s">${/^(flag|svg):/.test(m)&&typeof fxIcon==='function'?fxIcon(m,34):esc(m)}</span>`).join('');
   const h=document.createElement('section');h.className='az-hero';
-  h.innerHTML=`<div class="az-orbit"><div class="az-blob"></div><div class="az-pg">${poggie({cls:'',scarf:'#FFE58A'})}</div>${bubs}</div>
+  const art=(()=>{try{if(window.PogCover)return `<div class="az-scene">${PogCover.svg(e)}</div>`}catch(x){}return ''})();
+  h.innerHTML=`${art||`<div class="az-orbit"><div class="az-blob"></div><div class="az-pg">${poggie({cls:'',scarf:'#FFE58A'})}</div>${bubs}</div>`}
    <span class="az-ep">${esc((tb.querySelector('.fx-ep')||{}).textContent||'')}</span><h1>${esc(e.t)}</h1><p>${esc(f.sub||'')}</p>`;
   old.replaceWith(h);tb.remove();
 }

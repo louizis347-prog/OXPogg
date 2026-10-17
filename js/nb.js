@@ -61,13 +61,14 @@ const css=document.createElement('style');css.textContent=`
 .nb-sp{background:#fff;border-radius:22px;padding:10px 12px;margin:8px 0;box-shadow:0 6px 16px rgba(40,30,90,.12)}
 .nb-rep{display:inline-block;background:#fff1d6;color:#7a4a00;border-radius:99px;padding:3px 10px;font:800 11px system-ui;margin-bottom:4px}
 `;document.head.appendChild(css);
+const av=(em,nm,col)=>{try{return window.PogFace?PogFace.avatar(em,nm,col):em}catch(e){return em}};
 const theme=f=>`style="--g1:${(f.g||['#6C5CE7','#FF7AA8'])[0]};--g2:${(f.g||['#6C5CE7','#FF7AA8'])[1]}"`;
 const head=(f,n,t)=>`${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||t)}</h2>`;
 
 /* 1 · pôster do vizinho */
 FXR.nbhero=function(f,st,n){
   const fl=(f.emo||[]).map((e,i)=>`<span class="nb-float" style="top:${14+i*32}px;right:${14+(i%2)*40}px;animation-delay:${i*.5}s">${e}</span>`).join('');
-  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${fxKindBar(f,n)}<div class="nb-poster">${fl}<span class="nb-no">VIZINHO Nº ${f.num} · ${H(f.lvl)}</span><div class="nb-big">${f.face}</div><h2>${H(f.name)}</h2><p>${H(f.city)} · ${H(f.sub)}</p><div class="nb-mis"><small>SUA MISSÃO</small>${H(f.mission)}</div><button class="nb-hook" id="nbh">🔊 “${H(f.hook[0])}”</button></div><div class="nb-hint">${H(f.hook[1])}</div></div>`;
+  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${fxKindBar(f,n)}<div class="nb-poster">${fl}<span class="nb-no">VIZINHO Nº ${f.num} · ${H(f.lvl)}</span>${(()=>{try{const e=(typeof P!=='undefined'&&P)?P.e:null;if(e&&window.PogCover)return `<div class="nb-scene">${PogCover.svg(e)}</div>`}catch(x){}return `<div class="nb-big">${f.face}</div>`})()}<h2>${H(f.name)}</h2><p>${H(f.city)} · ${H(f.sub)}</p><div class="nb-mis"><small>SUA MISSÃO</small>${H(f.mission)}</div><button class="nb-hook" id="nbh">🔊 “${H(f.hook[0])}”</button></div><div class="nb-hint">${H(f.hook[1])}</div></div>`;
   q('#nbh',st).onclick=()=>say2(f.hook[0],f.name);
   cta('Conhecer o vizinho',true);say('Esse é seu novo vizinho!')};
 
@@ -79,7 +80,7 @@ FXR.nbchat=function(f,st,n){
   const box=q('#nbc',st);let seq=0;
   const add=(i,speak)=>{const l=L[i],me=isMe(l),c=cast[l[0]]||['🙂','#999'];
     const r=document.createElement('div');r.className='nb-row'+(me?' me':'');
-    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${c[0]}</span><div class="nb-b"><span class="nb-who">${H(l[0]==='You'?'VOCÊ':l[0])}</span>${H(l[1])}<small>${H(l[2])}</small></div>`;
+    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${av(c[0],l[0],c[1])}</span><div class="nb-b"><span class="nb-who">${H(l[0]==='You'?'VOCÊ':l[0])}</span>${H(l[1])}<small>${H(l[2])}</small></div>`;
     r.querySelector('.nb-b').onclick=()=>say2(l[1],l[0]);box.appendChild(r);r.scrollIntoView({block:'nearest',behavior:'smooth'});if(speak)say2(l[1],l[0])};
   const after=()=>{if(k>=L.length){cta('Continuar',true,true);q('#nbhn',st).textContent='Toque em qualquer bolha para ouvir de novo.'}else cta('Próxima fala ▶',true)};
   const reveal=i=>{q('#nbsp',st).innerHTML='';add(i,true);k=i+1;P.fx.cta=()=>{if(k<L.length){next();return true}return false};after()};
@@ -154,7 +155,7 @@ FXR.nbreply=function(f,st,n){
   const T=f.turns;let ti=0,combo=0;lock();
   const draw=()=>{const t=T[ti];
     st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Resposta rápida')}<div class="nb-streak">${combo>1?'🔥 combo x'+combo:' '}</div>
-    <div class="nb-chat"><div class="nb-row"><span class="nb-av" style="background:${f.npc[1]}22">${f.npc[0]}</span><div class="nb-b" id="nbn"><span class="nb-who">${H(f.npc[2])}</span>${H(t.n[0])}<small>${H(t.n[1])}</small></div></div></div>
+    <div class="nb-chat"><div class="nb-row"><span class="nb-av" style="background:${f.npc[1]}22">${av(f.npc[0],f.npc[2],f.npc[1])}</span><div class="nb-b" id="nbn"><span class="nb-who">${H(f.npc[2])}</span>${H(t.n[0])}<small>${H(t.n[1])}</small></div></div></div>
     <div class="nb-hint">Como você responde?</div><div class="nb-chat" id="nbo">${t.o.map((o,i)=>`<div class="nb-row me"><div class="nb-b" data-i="${i}">${H(o[0])}</div></div>`).join('')}</div></div>`;
     q('#nbn',st).onclick=()=>say2(t.n[0],f.npc[2]);setTimeout(()=>say2(t.n[0],f.npc[2]),400);let lk=false;
     st.querySelectorAll('#nbo .nb-b').forEach(b=>b.onclick=()=>{if(lk)return;const i=+b.dataset.i;say2(t.o[i][0],'You');
@@ -197,7 +198,7 @@ FXR.nbslang=function(f,st,n){
   const mk=t=>H(t).replace(/\*\*(.+?)\*\*/g,(m,a)=>`<mark class="${tg(a)}" data-k="${a}">${a}</mark>`);
   const plain=t=>t.replace(/\*\*/g,'');
   const add=i=>{const l=L[i],me=l[0]==='You',c=cast[l[0]]||['🙂','#999'];const r=document.createElement('div');r.className='nb-row'+(me?' me':'');
-    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${c[0]}</span><div class="nb-b"><span class="nb-who">${H(me?'VOCÊ':l[0])}</span>${mk(l[1])}<small>${H(l[2])}</small></div>`;
+    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${av(c[0],l[0],c[1])}</span><div class="nb-b"><span class="nb-who">${H(me?'VOCÊ':l[0])}</span>${mk(l[1])}<small>${H(l[2])}</small></div>`;
     r.querySelector('.nb-b').onclick=ev=>{const m=ev.target.closest('mark');if(m){const key=m.dataset.k;seen.add(key);gbox.innerHTML=`<div class="nb-gl"><span class="nb-tag ${tg(key)}">${tg(key)==='e'?'⭐ Essencial':'🎈 Curiosidade'}</span>💡 <b>${H(key)}</b> = ${H(GL[key]||'')} <button class="nb-chip" style="margin-left:6px">🔊</button></div>`;gbox.querySelector('button').onclick=()=>say2(key,null);say2(key,null)}else say2(plain(l[1]),l[0])};
     box.appendChild(r);r.scrollIntoView({block:'nearest',behavior:'smooth'});say2(plain(l[1]),l[0])};
   const next=()=>{if(k<L.length){add(k);k++;if(k>=L.length){cta('Continuar',true,true);q('#nbhn',st).innerHTML='Revise: <b>'+Object.keys(GL).map(k=>(ES.has(k.toLowerCase())?'⭐ ':'')+H(k)).join(' · ')+'</b>'}else cta('Próxima mensagem ▶',true)}};

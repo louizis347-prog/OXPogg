@@ -108,5 +108,13 @@ function bust(o){
   if(o.hat==='cap')s+=`<path d="M28 33 C28 10 72 10 72 33Z" fill="${o.hatColor||'#2F6BE8'}"/><path d="M66 31 L86 35 Q84 39 64 36Z" fill="${mix(o.hatColor||'#2F6BE8','#000',.25)}"/>`;
   return s+'</g>';
 }
-window.PogFace={bust,fromEmoji,SHIRTS};
+/* avatar redondo (só o rosto) a partir do emoji do personagem; usado nos chats */
+function avatar(em,name,color){
+  const o=fromEmoji(em);o.seed=hash(String(name||em));
+  if(!o.g||o.g==='n')o.g=(/^(you|voc)/i.test(String(name))?'m':(o.g||undefined));
+  if(color&&/^#[0-9a-f]{6}$/i.test(color))o.shirt=color;
+  if(em==='🙂'||em==='😀'||!/[\u{1F466}-\u{1F469}\u{1F9D1}-\u{1F9D4}\u{1F474}\u{1F475}]/u.test(em||''))o.g=o.g||undefined;
+  return '<svg viewBox="16 8 68 68" width="100%" height="100%" aria-hidden="true">'+bust(o)+'</svg>';
+}
+window.PogFace={bust,fromEmoji,avatar,SHIRTS};
 })();
