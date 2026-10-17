@@ -11,7 +11,7 @@ const C={
   search:'Buscar por nome',speaks:'Fala',learns:'Aprende',any:'Qualquer idioma',match:'✨ Combinam comigo',talk:'Conversar',noMem:'Nenhum membro encontrado com esses filtros.',
   rank:'Ranking',all:'Todos os idiomas',xp:'XP',streak:'Sequência',eps:'Episódios',pts:'pts',days:'dias',epsU:'eps',yourPos:'Sua posição',noRank:'Ninguém no ranking ainda. Estude um episódio e apareça aqui!',
   logged:'Conectado como',out:'Sair',loading:'Carregando…',errNet:'Sem conexão. Tente de novo.',fixOf:'Em resposta a',
-  general:'Geral',lg:'Liga'},
+  general:'Geral',lg:'Liga',groups:'Grupos de idioma',today:'Hoje',yday:'Ontem',copy:'Copiar',copied:'Copiado!',listen:'Ouvir',reply:'Responder',emoji:'Emojis',orig:'Original',corrected:'Corrigido',fixedBy:'corrigiu',newChat:'Nova conversa',findP:'Encontrar parceiros',noMsgsDm:'Diga olá! Escreva na língua que você está aprendendo — seu parceiro pode corrigir.',tapHint:'Toque numa mensagem para corrigir, ouvir ou copiar.',members:'Membros',exchange:'Intercâmbio',view:'Ver perfil'},
  es:{signin:'Entrar',signup:'Crear cuenta',title:'Área de miembros',sub:'Conversa con otros alumnos, encuentra compañeros de idioma y entra en el ranking.',
   email:'Correo',pass:'Contraseña (mín. 6 caracteres)',name:'Tu nombre',avatar:'Elige un avatar',speak:'Hablo',learn:'Quiero aprender',go1:'Entrar',go2:'Crear mi cuenta',
   forgot:'Olvidé mi contraseña',sent:'Si el correo existe, enviamos un enlace para restablecer la contraseña.',demo:'Modo demostración: las cuentas y los mensajes se guardan solo en este navegador y los miembros de ejemplo son ficticios. Para activar la comunidad real, configura el backend (mira backend/README.md).',
@@ -21,7 +21,7 @@ const C={
   search:'Buscar por nombre',speaks:'Habla',learns:'Aprende',any:'Cualquier idioma',match:'✨ Hacen match conmigo',talk:'Conversar',noMem:'No se encontraron miembros con esos filtros.',
   rank:'Ranking',all:'Todos los idiomas',xp:'XP',streak:'Racha',eps:'Episodios',pts:'pts',days:'días',epsU:'eps',yourPos:'Tu posición',noRank:'Aún no hay nadie en el ranking. ¡Estudia un episodio y aparece aquí!',
   logged:'Sesión iniciada como',out:'Salir',loading:'Cargando…',errNet:'Sin conexión. Inténtalo de nuevo.',fixOf:'En respuesta a',
-  general:'General',lg:'Liga'}
+  general:'General',lg:'Liga',groups:'Grupos de idioma',today:'Hoy',yday:'Ayer',copy:'Copiar',copied:'¡Copiado!',listen:'Escuchar',reply:'Responder',emoji:'Emojis',orig:'Original',corrected:'Corregido',fixedBy:'corrigió',newChat:'Nueva conversación',findP:'Encontrar compañeros',noMsgsDm:'¡Di hola! Escribe en el idioma que aprendes: tu compañero puede corregirte.',tapHint:'Toca un mensaje para corregir, escuchar o copiar.',members:'Miembros',exchange:'Intercambio',view:'Ver perfil'}
 };
 const U=()=>window.PogUI,k=key=>{const L=U().L0();return (C[L][key]!=null?C[L][key]:C.pt[key])},esc=s=>U().esc(s);
 const LN={pt:{pt:'Português',es:'Espanhol',en:'Inglês',fr:'Francês',de:'Alemão',it:'Italiano'},es:{pt:'Portugués',es:'Español',en:'Inglés',fr:'Francés',de:'Alemán',it:'Italiano'}};
@@ -41,7 +41,8 @@ function shell(inner,tab){
 }
 function subtabs(active){
   const T=U().T2||(x=>x);
-  return `<div class="pg-subtabs" role="tablist"><button data-ct="rank" aria-pressed="${active==='rank'}">🏆 ${esc(T('rank'))}</button><button data-ct="chat" aria-pressed="${active==='chat'}">💬 ${k('chat')}</button><button data-ct="ask" aria-pressed="${active==='ask'}">❓ ${(window.PogForum?'':'')}${k('askTab')}</button><button data-ct="partners" aria-pressed="${active==='partners'}">🤝 ${k('partners')}</button><button data-ct="profile" aria-pressed="${active==='profile'}">👤</button>${state.admin?`<button data-ct="admin" aria-pressed="${active==='admin'}">🛡️ ${k('adminTab')}</button>`:''}</div>`;
+  const tab=(id,ic,lb)=>`<button data-ct="${id}" aria-pressed="${active===id}"><i>${ic}</i><span>${lb}</span></button>`;
+  return `<nav class="pg-subtabs hx-tabs" role="tablist">${tab('chat','💬',k('chat'))}${tab('partners','🤝',k('partners'))}${tab('ask','❓',k('askTab'))}${tab('rank','🏆',esc(T('rank')))}${tab('profile','👤',k('you'))}${state.admin?tab('admin','🛡️',k('adminTab')):''}</nav>`;
 }
 function timeFmt(ts){const d=new Date(ts),n=new Date(),hh=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
   return d.toDateString()===n.toDateString()?hh:d.toLocaleDateString(U().L0()==='es'?'es':'pt-BR',{day:'2-digit',month:'short'})+' '+hh}
@@ -109,7 +110,31 @@ function authPage(next,arg,mode){
     }catch(x){er.textContent=x.message||k('errNet');go.disabled=false}};
 }
 
-/* ---------- chat ---------- */
+/* ---------- chat (estilo HelloTalk) ---------- */
+const EMO=['😀','😂','😍','🥰','😎','🤔','😅','🙏','👍','👏','🎉','🔥','❤️','😢','😮','🤝','🌎','☕','🍕','⚽','🎵','📚','✈️','💪'];
+function dayLabel(ts){const d=new Date(ts),n=new Date(),y=new Date(n.getTime()-864e5);
+  if(d.toDateString()===n.toDateString())return k('today');
+  if(d.toDateString()===y.toDateString())return k('yday');
+  return d.toLocaleDateString(U().L0()==='es'?'es':'pt-BR',{day:'numeric',month:'long'})}
+function hhmm(ts){return new Date(ts).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}
+function langPair(m){return `<span class="hx-pair"><b>${esc(lname(m.native||'pt'))}</b><i>⇄</i>${(m.learning||[]).slice(0,2).map(i=>`<b>${esc(lname(i))}</b>`).join('')}</span>`}
+/* diferença por palavras: o que saiu (vermelho) e o que entrou (verde) — a assinatura de correção do HelloTalk */
+function wordDiff(a,b){
+  const A=a.split(/\s+/).filter(Boolean),B=b.split(/\s+/).filter(Boolean),n=A.length,m=B.length;
+  if(n*m>9000)return `<span class="hx-del">${esc(a)}</span> <span class="hx-add">${esc(b)}</span>`;
+  const norm=w=>w.toLowerCase().replace(/[.,!?¡¿;:"']/g,'');
+  const L=Array.from({length:n+1},()=>new Array(m+1).fill(0));
+  for(let i=n-1;i>=0;i--)for(let j=m-1;j>=0;j--)L[i][j]=norm(A[i])===norm(B[j])?L[i+1][j+1]+1:Math.max(L[i+1][j],L[i][j+1]);
+  const out=[];let i=0,j=0;
+  while(i<n&&j<m){
+    if(norm(A[i])===norm(B[j])){out.push(esc(B[j]));i++;j++}
+    else if(L[i+1][j]>=L[i][j+1]){out.push(`<span class="hx-del">${esc(A[i])}</span>`);i++}
+    else{out.push(`<span class="hx-add">${esc(B[j])}</span>`);j++}
+  }
+  while(i<n)out.push(`<span class="hx-del">${esc(A[i++])}</span>`);
+  while(j<m)out.push(`<span class="hx-add">${esc(B[j++])}</span>`);
+  return out.join(' ');
+}
 async function chatPage(roomArg){
   const me=user(),rooms=cloud().rooms.slice();
   const mine=new Set([me.native,...(me.learning||[])]);
@@ -117,13 +142,18 @@ async function chatPage(roomArg){
   const g=rooms.findIndex(r=>r.id==='geral');if(g>0){rooms.unshift(rooms.splice(g,1)[0])}
   let dms=[];try{dms=await cloud().dmList()}catch(e){}
   const room=roomArg||state.room||'geral';state.room=room;
-  shell(`${subtabs('chat')}<section class="pg-chat ${roomArg?'in-conv':''}" id="pgchat">
-    <aside class="pg-card pg-rooms"><h4>${k('rooms')}</h4>${rooms.map(r=>{const l=roomLabel(r);return `<button class="pg-room" data-room="${r.id}" aria-current="${room===r.id}"><span class="ic">${l.ic}</span><span class="tx">${esc(l.name)}</span></button>`}).join('')}
-     ${notifBtn()}<h4>${k('dms')}</h4>${dms.length?dms.map(d=>`<button class="pg-room" data-room="${esc(d.room)}" aria-current="${room===d.room}"><span class="ic">${esc(d.peer.avatar||'🙂')}</span><span class="tx">${esc(d.peer.name)}<small>${esc(d.last?d.last.text:'')}</small></span></button>`).join(''):`<p class="pg-empty" style="padding:8px;font-size:13px">${k('noDm')}</p>`}</aside>
-    <div class="pg-card pg-conv" id="pgconv"></div></section>`);
+  const dmRow=d=>`<button class="hx-row" data-room="${esc(d.room)}" aria-current="${room===d.room}"><span class="hx-av">${esc(d.peer.avatar||'🙂')}</span><span class="hx-tx"><b>${esc(d.peer.name)}</b><small>${esc(d.last?d.last.text:'')}</small></span>${d.last&&d.last.ts?`<time>${esc(timeFmt(d.last.ts))}</time>`:''}</button>`;
+  const roomRow=r=>{const l=roomLabel(r);return `<button class="hx-row" data-room="${r.id}" aria-current="${room===r.id}"><span class="hx-av room">${l.ic}</span><span class="hx-tx"><b>${esc(l.name)}</b></span></button>`};
+  shell(`${subtabs('chat')}<section class="pg-chat hx-chat ${roomArg?'in-conv':''}" id="pgchat">
+    <aside class="pg-card pg-rooms hx-list"><div class="hx-listhd"><h3>${k('chat')}</h3><button class="hx-new" id="c-new" title="${esc(k('findP'))}" aria-label="${esc(k('findP'))}">＋</button></div>
+     ${notifBtn()}
+     <h4>${k('dms')}</h4>${dms.length?dms.map(dmRow).join(''):`<div class="hx-nodm"><span>💌</span><p>${k('noDm')}</p><button class="pg-btn sm" id="c-find">🤝 ${k('findP')}</button></div>`}
+     <h4>${k('groups')}</h4>${rooms.map(roomRow).join('')}</aside>
+    <div class="pg-card pg-conv hx-conv" id="pgconv"></div></section>`);
   wireTabs();
   const nb=$('#c-notif');if(nb)nb.onclick=e=>{e.stopPropagation();Notification.requestPermission().then(()=>{nb.remove();startInbox()})};
-  $('#pgchat').onclick=e=>{const b=e.target.closest('.pg-room[data-room]');if(!b)return;e.stopPropagation();openRoom(b.dataset.room,true)};
+  const go=()=>open('partners');const nw=$('#c-new');if(nw)nw.onclick=go;const fd=$('#c-find');if(fd)fd.onclick=go;
+  $('#pgchat').onclick=e=>{const b=e.target.closest('.hx-row[data-room]');if(!b)return;e.stopPropagation();openRoom(b.dataset.room,true)};
   openRoom(room,!!roomArg);
 }
 function wireTabs(){const s=$('.pg-subtabs');if(s)s.onclick=e=>{const b=e.target.closest('[data-ct]');if(b)open(b.dataset.ct)}}
@@ -131,18 +161,21 @@ function wireTabs(){const s=$('.pg-subtabs');if(s)s.onclick=e=>{const b=e.target
 async function openRoom(room,focus){
   stopSub();state.room=room;state.fixing=null;state.msgs=[];
   const chat=$('#pgchat');if(!chat)return;if(focus)chat.classList.add('in-conv');
-  chat.querySelectorAll('.pg-room').forEach(b=>b.setAttribute('aria-current',b.dataset.room===room));
-  const conv=$('#pgconv'),me=user();let title='',sub='',isDm=room.startsWith('dm:'),peerId=null;
+  chat.querySelectorAll('.hx-row').forEach(b=>b.setAttribute('aria-current',b.dataset.room===room));
+  const conv=$('#pgconv'),me=user();let title='',isDm=room.startsWith('dm:'),peerId=null;
   if(isDm){peerId=room.split(':').filter(x=>x!=='dm'&&x!==me.id)[0];
     try{state.peer=await cloud().getProfile(peerId)}catch(e){state.peer=null}
-    const p=state.peer||{name:'?',avatar:'🙂'};title=`<span class="av" style="font-size:24px">${esc(p.avatar||'🙂')}</span> ${esc(p.name)}`;
-  }else{const r=cloud().rooms.find(x=>x.id===room)||{id:room,name:room,emoji:'💬'},l=roomLabel(r);title=`${l.ic} ${esc(l.name)}`}
-  conv.innerHTML=`<div class="hd"><button class="bk pg-btn ghost sm" id="c-back" aria-label="${k('back')}">←</button><span style="display:flex;align-items:center;gap:8px;flex:1;min-width:0">${title}</span>${isDm?`<button class="pg-btn ghost sm" id="c-block">${k('block')}</button>`:''}</div>
-   <div class="pg-msgs" id="pgmsgs" aria-live="polite"><p class="pg-empty">${k('loading')}</p></div>
-   <div id="c-fixbar"></div>
-   <form class="pg-compose" id="c-form"><input class="pg-in" id="c-in" maxlength="1000" placeholder="${esc(k('write'))}" autocomplete="off">${window.PogExtras?PogExtras.micBtn():''}<button class="pg-btn" id="c-send">${k('send')}</button></form>`;
+    const p=state.peer||{name:'?',avatar:'🙂'};
+    title=`<span class="hx-av sm" data-prof="${esc(peerId)}">${esc(p.avatar||'🙂')}</span><span class="hx-ttl"><b>${esc(p.name)}</b>${state.peer?langPair(p):''}</span>`;
+  }else{const r=cloud().rooms.find(x=>x.id===room)||{id:room,name:room,emoji:'💬'},l=roomLabel(r);title=`<span class="hx-av sm room">${l.ic}</span><span class="hx-ttl"><b>${esc(l.name)}</b><small>${esc(k('groups'))}</small></span>`}
+  conv.innerHTML=`<div class="hd hx-hd"><button class="bk hx-bk" id="c-back" aria-label="${k('back')}">‹</button>${title}${isDm?`<button class="hx-more" id="c-block" title="${esc(k('block'))}" aria-label="${esc(k('block'))}">🚫</button>`:''}</div>
+   <div class="pg-msgs hx-msgs" id="pgmsgs" aria-live="polite"><p class="pg-empty">${k('loading')}</p></div>
+   <div id="c-fixbar"></div><div class="hx-emo" id="c-emo" hidden>${EMO.map(e=>`<button type="button" data-e="${e}">${e}</button>`).join('')}</div>
+   <form class="pg-compose hx-compose" id="c-form"><button type="button" class="hx-ic" id="c-emobtn" aria-label="${esc(k('emoji'))}">😊</button><input class="pg-in" id="c-in" maxlength="1000" placeholder="${esc(k('write'))}" autocomplete="off" enterkeyhint="send">${window.PogExtras?PogExtras.micBtn():''}<button class="hx-send" id="c-send" aria-label="${esc(k('send'))}">➤</button></form>`;
   $('#c-back').onclick=()=>{stopSub();chat.classList.remove('in-conv')};
   const bl=$('#c-block');if(bl)bl.onclick=async()=>{if(!confirm(k('block')+'?'))return;try{await cloud().block(peerId);alert(k('blocked'));open('chat','geral')}catch(e){alert(e.message)}};
+  $('#c-emobtn').onclick=()=>{const t=$('#c-emo');t.hidden=!t.hidden};
+  $('#c-emo').onclick=e=>{const b=e.target.closest('[data-e]');if(!b)return;const i=$('#c-in'),p=i.selectionStart==null?i.value.length:i.selectionStart;i.value=i.value.slice(0,p)+b.dataset.e+i.value.slice(p);i.focus();const q=p+b.dataset.e.length;i.setSelectionRange(q,q)};
   const box=$('#pgmsgs');
   try{
     state.msgs=await cloud().messages(room,{limit:60});
@@ -155,7 +188,7 @@ async function openRoom(room,focus){
     },{after:last});
   }catch(e){box.innerHTML=`<p class="pg-empty">${esc(e.message||k('errNet'))}</p>`}
   $('#c-form').onsubmit=async ev=>{ev.preventDefault();const inp=$('#c-in'),txt=inp.value.trim();if(!txt)return;
-    const fx=state.fixing;$('#c-send').disabled=true;
+    const fx=state.fixing;$('#c-send').disabled=true;$('#c-emo').hidden=true;
     try{const m=await cloud().send(room,txt,{fixOf:fx?fx.id:null});inp.value='';
       if(!state.msgs.some(x=>x.id===m.id))state.msgs.push(m);
       state.fixing=null;fixBar();renderMsgs(true);
@@ -166,21 +199,47 @@ async function openRoom(room,focus){
     const path=await cloud().uploadVoice(blob);const m=await cloud().send(room,'🎤',{audio:path});
     if(!state.msgs.some(x=>x.id===m.id))state.msgs.push(m);renderMsgs(true);U().bump('msgs')});
   box.onclick=e=>{
-    const f=e.target.closest('[data-fix]');if(f){const m=state.msgs.find(x=>String(x.id)===f.dataset.fix);if(m){state.fixing=m;fixBar();const inp=$('#c-in');inp.value=m.text;inp.focus();inp.setSelectionRange(inp.value.length,inp.value.length)}return}
-    const r=e.target.closest('[data-rep]');if(r){const why=prompt(k('report')+'?','');if(why===null)return;cloud().report(r.dataset.rep,why||'').then(()=>alert(k('reported'))).catch(x=>alert(x.message))}
+    if(e.target.closest('[data-prof],.pg-voice,audio'))return;
+    const bb=e.target.closest('.hx-m');if(!bb){closeSheet();return}
+    const m=state.msgs.find(x=>String(x.id)===bb.dataset.id);if(m)showSheet(m,bb);
+  };
+}
+function closeSheet(){const o=document.getElementById('hx-sheet');if(o)o.remove();document.querySelectorAll('.hx-m.sel').forEach(x=>x.classList.remove('sel'))}
+function showSheet(m,el){
+  closeSheet();el.classList.add('sel');const mine=m.uid===user().id;
+  const o=document.createElement('div');o.id='hx-sheet';o.className='hx-sheet';
+  o.innerHTML=`<div class="hx-sheet-bd" data-x></div><div class="hx-sheet-card" role="menu"><p class="hx-sheet-q">${esc((m.text||'').slice(0,90))}</p><div class="hx-sheet-btns">
+    ${mine?'':`<button data-a="fix"><i>✏️</i>${esc(k('fix'))}</button>`}<button data-a="listen"><i>🔊</i>${esc(k('listen'))}</button><button data-a="copy"><i>📋</i>${esc(k('copy'))}</button>${mine?'':`<button data-a="rep" class="dn"><i>🚩</i>${esc(k('report'))}</button>`}</div></div>`;
+  document.body.appendChild(o);
+  o.onclick=async e=>{
+    if(e.target.closest('[data-x]')){closeSheet();return}
+    const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a;
+    if(a==='fix'){closeSheet();state.fixing=m;fixBar();const inp=$('#c-in');inp.value=m.text;inp.focus();inp.setSelectionRange(inp.value.length,inp.value.length);return}
+    if(a==='copy'){try{await navigator.clipboard.writeText(m.text)}catch(x){}b.querySelector('i').textContent='✅';setTimeout(closeSheet,500);return}
+    if(a==='listen'){try{const u=new SpeechSynthesisUtterance(m.text);const cand=(state.peer&&state.peer.native)||(state.msgs.find(x=>x.uid===m.uid)||{}).native;if(cand)u.lang={pt:'pt-BR',es:'es-ES',en:'en-US',fr:'fr-FR',de:'de-DE',it:'it-IT'}[cand]||'';speechSynthesis.cancel();speechSynthesis.speak(u)}catch(x){}closeSheet();return}
+    if(a==='rep'){closeSheet();const why=prompt(k('report')+'?','');if(why===null)return;cloud().report(m.id,why||'').then(()=>alert(k('reported'))).catch(x=>alert(x.message))}
   };
 }
 function fixBar(){const b=$('#c-fixbar');if(!b)return;const f=state.fixing;
-  b.innerHTML=f?`<div class="pg-demo" style="margin:0;border-radius:0;border-width:2px 0;background:#EAFBF2;border-color:#9FE0BE;color:#14573A">✏️ <span>${k('fixing')} <b>${esc(f.name)}</b>: “${esc(f.text.slice(0,60))}”</span><button style="margin-left:auto;font-weight:900" id="c-fixno">${k('cancel')}</button></div>`:'';
+  b.innerHTML=f?`<div class="hx-fixbar"><span class="ic">✏️</span><div><b>${k('fixing')} ${esc(f.name)}</b><small>${esc(f.text.slice(0,80))}</small></div><button id="c-fixno" aria-label="${esc(k('cancel'))}">✕</button></div>`:'';
   const n=$('#c-fixno');if(n)n.onclick=()=>{state.fixing=null;fixBar();$('#c-in').value=''}}
 function renderMsgs(stick){
   const box=$('#pgmsgs');if(!box)return;const me=user().id;
   const near=box.scrollHeight-box.scrollTop-box.clientHeight<90;
-  if(!state.msgs.length){box.innerHTML=`<p class="pg-empty">${k('noMsgs')}</p>`;return}
-  const byId=new Map(state.msgs.map(m=>[m.id,m]));
-  box.innerHTML=state.msgs.map(m=>{const mine=m.uid===me,orig=m.fixOf!=null?byId.get(m.fixOf):null;
-    return `<div class="pg-msg ${mine?'me':''} ${m.fixOf!=null?'fix':''}"><span class="av">${esc(m.avatar||'🙂')}</span><div><div class="bb">${mine?'':`<span class="who">${esc(m.name||'?')}</span>`}${m.fixOf!=null?`<span class="pg-fixtag">${k('fixTag')}</span>${orig?`<span class="pg-quote">${esc(orig.text)}</span>`:''}`:''}${m.audio?(window.PogExtras?PogExtras.voiceHTML(m.audio):''):esc(m.text)}</div>
-     <div class="meta"><span>${timeFmt(m.ts)}</span>${mine?'':`<button data-fix="${esc(m.id)}">✏️ ${k('fix')}</button><button data-rep="${esc(m.id)}">🚩 ${k('report')}</button>`}</div></div></div>`}).join('');
+  if(!state.msgs.length){box.innerHTML=`<div class="hx-empty"><span>👋</span><p>${state.room&&state.room.startsWith('dm:')?k('noMsgsDm'):k('noMsgs')}</p></div>`;return}
+  const byId=new Map(state.msgs.map(m=>[m.id,m]));let lastDay='',html='';
+  state.msgs.forEach((m,i)=>{
+    const day=new Date(m.ts).toDateString();if(day!==lastDay){html+=`<div class="hx-day"><span>${esc(dayLabel(m.ts))}</span></div>`;lastDay=day}
+    const mine=m.uid===me,orig=m.fixOf!=null?byId.get(m.fixOf):null,nx=state.msgs[i+1],pv=state.msgs[i-1];
+    const lastOfGroup=!nx||nx.uid!==m.uid||new Date(nx.ts).toDateString()!==day,firstOfGroup=!pv||pv.uid!==m.uid||new Date(pv.ts).toDateString()!==day;
+    let body;
+    if(m.audio)body=window.PogExtras?PogExtras.voiceHTML(m.audio):'';
+    else if(m.fixOf!=null&&orig)body=`<div class="hx-fixhd">${esc(k("fixTag"))}</div><div class="hx-diff">${wordDiff(orig.text,m.text)}</div><div class="hx-fixed"><small>${esc(k('corrected'))}</small>${esc(m.text)}</div>`;
+    else body=esc(m.text);
+    html+=`<div class="pg-msg hx-m ${mine?'me':''} ${m.fixOf!=null?'fix':''} ${lastOfGroup?'tail':''}" data-id="${esc(m.id)}">${mine?'':`<span class="av ${lastOfGroup?'':'ghost'}" data-prof="${esc(m.uid)}">${lastOfGroup?esc(m.avatar||'🙂'):''}</span>`}<div class="hx-col">${!mine&&firstOfGroup&&!state.room.startsWith('dm:')?`<span class="who">${esc(m.name||'?')}</span>`:''}<div class="bb">${body}<time>${hhmm(m.ts)}</time></div></div></div>`;
+  });
+  if(!state.hinted){state.hinted=1;html+=`<p class="hx-hint">${esc(k('tapHint'))}</p>`}
+  box.innerHTML=html;
   if(stick||near)box.scrollTop=box.scrollHeight;
 }
 
@@ -203,10 +262,10 @@ async function partnersPage(){
     const box=$('#pgmem');
     try{const list=await cloud().members({q:pf.q,native:pf.native||null,learning:pf.learning||null,limit:60});
       if(!document.getElementById('pgmem'))return;
-      box.innerHTML=list.length?list.map(m=>`<article class="pg-card pg-mem"><div class="top" data-prof="${esc(m.id)}" style="cursor:pointer"><span class="av">${esc(m.avatar||'🙂')}</span><div><b>${esc(m.name)}${m.demo?'<span class="pg-badge-demo">demo</span>':''}</b><small>${esc(U().league(m.xp||0).name)} · ${m.xp||0} XP</small></div></div>
+      box.innerHTML=list.length?list.map(m=>{const lg=U().league(m.xp||0);return `<article class="pg-card pg-mem hx-mem"><div class="top" data-prof="${esc(m.id)}"><span class="av">${esc(m.avatar||'🙂')}</span><div><b>${esc(m.name)}${m.demo?'<span class="pg-badge-demo">demo</span>':''}</b><small><span class="hx-lg" style="--lc:${lg.color}">${esc(lg.name)}</span> ${m.xp||0} XP</small></div></div>
         ${m.bio?`<p class="bio">${esc(m.bio)}</p>`:''}
-        <div class="pg-exch"><span class="sp">${k('speaks')}: ${esc(lname(m.native))}</span>${(m.learning||[]).map(i=>`<span class="le">${k('learns')}: ${esc(lname(i))}</span>`).join('')}</div>
-        <button class="pg-btn sm" data-dm="${esc(m.id)}">💬 ${k('talk')}</button></article>`).join(''):`<p class="pg-empty" style="grid-column:1/-1">${k('noMem')}</p>`;
+        <div class="hx-exch"><span class="sp"><small>${k('speaks')}</small>${esc(lname(m.native))}</span><i>⇄</i><span class="le"><small>${k('learns')}</small>${(m.learning||[]).map(i=>esc(lname(i))).join(', ')||'—'}</span></div>
+        <div class="hx-acts"><button class="pg-btn sm" data-dm="${esc(m.id)}">💬 ${k('talk')}</button><button class="pg-btn ghost sm" data-prof="${esc(m.id)}">${k('view')}</button></div></article>`}).join(''):`<p class="pg-empty" style="grid-column:1/-1">${k('noMem')}</p>`;
     }catch(e){box.innerHTML=`<p class="pg-empty" style="grid-column:1/-1">${esc(e.message||k('errNet'))}</p>`}
   };
   let tm;$('#p-q').oninput=()=>{clearTimeout(tm);tm=setTimeout(run,300)};$('#p-n').onchange=run;$('#p-l').onchange=run;
