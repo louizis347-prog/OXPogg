@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=136').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=137').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -1548,7 +1548,7 @@ const GROUPS={
   nbja:{id:'nbja',ui:'pt',scarf:'#D6336C',scene:'cv_it',
       name:{pt:'Neighbors · Japonês',es:'Neighbors · Japonés'},flag:'JA → PT-BR',
       desc:{pt:'Aprenda japonês do zero: primeiro os alfabetos (hiragana e katakana, com módulos de leitura, escrita e escuta), depois conversas com vizinhos do Japão. Alinhado ao MCER A1 e ao JLPT N5.',es:'Aprende japonés desde cero: primero los silabarios (hiragana y katakana) y luego conversaciones con vecinos de Japón. Alineado con el MCER A1 y el JLPT N5.'},
-      sub:['nbja-kana']},
+      sub:['nbja-kana','nbja-a1']},
   nbeng:{id:'nbeng',ui:'es',scarf:'#2E6F95',scene:'cv_usa',
       name:{pt:'Neighbors · Inglês (p/ hispanofalantes)',es:'Neighbors · English'},flag:'EN → ES',
       desc:{pt:'Inglês para falantes de espanhol conversando com vizinhos de todo o mundo anglófono. Alinhado ao MCER A1.',es:'Aprende inglés conversando con vecinos de todo el mundo anglófono: una persona, una ciudad y una situación real por episodio, con falsos amigos y notas para hispanohablantes. Alineado con el MCER A1 y Cambridge A1 Movers.'},
@@ -1638,6 +1638,9 @@ const COURSES={
   'nbes-a2':{id:'nbes-a2',group:'nbes',ui:'pt',tts:'es-MX',scene:'cv_es',scarf:'#E0703A',
       name:{pt:'Neighbors · Espanhol A2',es:'Neighbors · Español A2'},flag:'ES → PT-BR · A2',
       desc:{pt:'Passado, planos, compras, saúde, trabalho e viagens com vizinhos de todo o mundo hispânico. Alinhado ao MCER A2 e ao DELE A2.',es:'Pasado, planes, compras, salud, trabajo y viajes con vecinos del mundo hispano. Alineado con el MCER A2 y el DELE A2.'}},
+  'nbja-a1':{id:'nbja-a1',group:'nbja',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',
+      name:{pt:'Neighbors · Japonês A1',es:'Neighbors · Japonés A1'},flag:'JA → PT-BR · A1',
+      desc:{pt:'Konbini, estações e vizinhos de Tóquio a Okinawa — fala primeiro, com romaji que some aos poucos. Faça antes o módulo de alfabetização. Alinhado ao MCER A1, ao JLPT N5 e ao JF Standard A1.',es:'Konbini, estaciones y vecinos de Tokio a Okinawa, con romaji opcional. Haz antes el módulo de alfabetización. Alineado con el MCER A1 y el JLPT N5.'}},
   'nbpt-a1':{id:'nbpt-a1',group:'nbpt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#1FA35C',
       name:{pt:'Neighbors · Português A1',es:'Neighbors · Portugués A1'},flag:'PT-BR → ES · A1',
       desc:{pt:'Cafés, praias e vizinhos de São Paulo a Fernando de Noronha. Alinhado ao MCER A1.',es:'Cafés, playas y vecinos de São Paulo a Fernando de Noronha: habla primero, con falsos amigos. Alineado con el MCER A1.'}},
@@ -1763,6 +1766,7 @@ const ARCS={"en-a1": [[9801, "Arco A1·1 · Nova York, dia 1"], [9803, "Arco A1�
  'nbeng-a1':[[95001,'Arco 1 · Hello & identity'],[95011,'Arco 2 · Numbers, time & days'],[95021,'Arco 3 · Family & friends'],[95031,'Arco 4 · Food & drink'],[95041,'Arco 5 · Shopping & money'],[95051,'Arco 6 · Places & directions'],[95061,'Arco 7 · Transport & travel'],[95071,'Arco 8 · Home & daily routine'],[95081,'Arco 9 · Health & body'],[95091,'Arco 10 · Weather & seasons'],[95101,'Arco 11 · Hobbies & free time'],[95111,'Arco 12 · Work & study'],[95121,'Arco 13 · Phone, email & plans'],[95131,'Arco 14 · Festivals & culture'],[95141,'Arco 15 · A1 in action']],
  'nbit-a1':[[96001,'Arco 1 · Saluti e identità'],[96011,'Arco 2 · Numeri, orario e gusti'],[96021,'Arco 3 · Mangiare e bere'],[96031,'Arco 4 · Città e trasporti'],[96041,'Arco 5 · Casa, famiglia e preparazione']],
  'nbes-a2':[[90401,'Arco 1 · Rutina y hábitos'],[90411,'Arco 2 · Pasado: ayer y el fin de semana'],[90421,'Arco 3 · Experiencias y planes'],[90431,'Arco 4 · Compras, ropa y comparaciones'],[90441,'Arco 5 · Salud y bienestar'],[90451,'Arco 6 · Trabajo y estudios'],[90461,'Arco 7 · Viajes y alojamiento'],[90471,'Arco 8 · Ciudad, trámites y servicios'],[90481,'Arco 9 · Fiestas, tradiciones y descripciones'],[90491,'Arco 10 · Preparación DELE A2 / SIELE']],
+ 'nbja-a1':[[97101,'Arco 1 · Cumprimentos e apresentação'],[97111,'Arco 2 · Números, horas e compras'],[97121,'Arco 3 · Comer e beber'],[97131,'Arco 4 · Cidade e transporte'],[97141,'Arco 5 · Casa, família e preparação'],[97151,'Arco 6 · Viagens pelo Japão'],[97161,'Arco 7 · Família, lazer e roupas'],[97171,'Arco 8 · Vida diária e serviços'],[97181,'Arco 9 · Festas e tradições'],[97191,'Arco 10 · Preparação JLPT N5']],
  'nbpt-a1':[[93001,'Arco 1 · Saludos e identidad'],[93011,'Arco 2 · Tiempo, números y gustos'],[93021,'Arco 3 · Comer, beber y comprar'],[93031,'Arco 4 · Ciudad, transporte y servicios'],[93041,'Arco 5 · Casa, salud y planes'],[93051,'Arco 6 · Viajes por Brasil'],[93061,'Arco 7 · Familia, ocio y ropa'],[93071,'Arco 8 · Variedades y falsos amigos'],[93081,'Arco 9 · Fiestas y vida cotidiana'],[93091,'Arco 10 · A1 en práctica']],
  'nbde-a1':[[92001,'Arco 1 · Hallo und Identität'],[92011,'Arco 2 · Zahlen, Zeit und Vorlieben'],[92021,'Arco 3 · Essen, Trinken und Einkaufen'],[92031,'Arco 4 · Stadt, Verkehr und Dienste'],[92041,'Arco 5 · Wohnung, Gesundheit und Pläne'],[92051,'Arco 6 · Reisen durch Deutschland'],[92061,'Arco 7 · Familie, Freizeit und Kleidung'],[92071,'Arco 8 · Österreich und die Schweiz'],[92081,'Arco 9 · Feste, Regionen und Alltag'],[92091,'Arco 10 · Start Deutsch 1: Vorbereitung']],
  'nbfr-a1':[[91001,'Arco 1 · Salut et identité'],[91011,'Arco 2 · Chiffres, temps et goûts'],[91021,'Arco 3 · Manger, boire et acheter'],[91031,'Arco 4 · Ville, transport et services'],[91041,'Arco 5 · Maison, santé et projets'],[91051,'Arco 6 · Voyages dans l\'Hexagone'],[91061,'Arco 7 · Famille, loisirs et vêtements'],[91071,'Arco 8 · Québec, Belgique et Suisse'],[91081,'Arco 9 · Afrique, Caraïbes et océans'],[91091,'Arco 10 · DELF A1 : se préparer']],
@@ -4294,8 +4298,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=50',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=51',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=51',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=52',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';

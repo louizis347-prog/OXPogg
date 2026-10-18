@@ -40,7 +40,7 @@ const LANGS=[
  {id:'nb',mono:'NB',c:'#E0703A',cd:'#B5521F',cl:'#FFE0CE',n:{pt:'Neighbors · Inglês',es:'Neighbors · Inglés'},sub:['nb-a1','nb-a2','nb-b1','nb-b2','nb-c1','nb-c2']},
  {id:'nbes',mono:'NB',c:'#D9467A',cd:'#A82D5C',cl:'#FFDCE8',n:{pt:'Neighbors · Espanhol',es:'Neighbors · Español'},sub:['nbes-a1','nbes-a2']},
  {id:'nbde',mono:'NB',c:'#D4A017',cd:'#9A7410',cl:'#FFF0BF',n:{pt:'Neighbors · Alemão',es:'Neighbors · Alemán'},sub:['nbde-a1']},
- {id:'nbja',mono:'NB',c:'#D6336C',cd:'#A02351',cl:'#FFD9E6',n:{pt:'Neighbors · Japonês',es:'Neighbors · Japonés'},sub:['nbja-kana']},
+ {id:'nbja',mono:'NB',c:'#D6336C',cd:'#A02351',cl:'#FFD9E6',n:{pt:'Neighbors · Japonês',es:'Neighbors · Japonés'},sub:['nbja-kana','nbja-a1']},
  {id:'nbeng',mono:'NB',c:'#2E6F95',cd:'#1F4D6B',cl:'#D5E8F5',n:{pt:'Neighbors · Inglês (p/ hispanofalantes)',es:'Neighbors · English'},sub:['nbeng-a1']},
  {id:'nbit',mono:'NB',c:'#2E9E6A',cd:'#1F7249',cl:'#D7F3E3',n:{pt:'Neighbors · Italiano',es:'Neighbors · Italiano'},sub:['nbit-a1']},
  {id:'nbpt',mono:'NB',c:'#1FA35C',cd:'#13763F',cl:'#D3F5E1',n:{pt:'Neighbors · Português',es:'Neighbors · Portugués'},sub:['nbpt-a1']},
