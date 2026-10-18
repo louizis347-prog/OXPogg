@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=144').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=145').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -1764,7 +1764,7 @@ const ARCS={"en-a1": [[9801, "Arco A1·1 · Nova York, dia 1"], [9803, "Arco A1�
  'enes-a1':[[40001,'Arco 1 · Nueva York, día 1']],
  'nbja-kana':[],
  'nbeng-a1':[[95001,'Arco 1 · Hello & identity'],[95011,'Arco 2 · Numbers, time & days'],[95021,'Arco 3 · Family & friends'],[95031,'Arco 4 · Food & drink'],[95041,'Arco 5 · Shopping & money'],[95051,'Arco 6 · Places & directions'],[95061,'Arco 7 · Transport & travel'],[95071,'Arco 8 · Home & daily routine'],[95081,'Arco 9 · Health & body'],[95091,'Arco 10 · Weather & seasons'],[95101,'Arco 11 · Hobbies & free time'],[95111,'Arco 12 · Work & study'],[95121,'Arco 13 · Phone, email & plans'],[95131,'Arco 14 · Festivals & culture'],[95141,'Arco 15 · A1 in action']],
- 'nbit-a1':[[96001,'Arco 1 · Saluti e identità'],[96011,'Arco 2 · Numeri, orario e gusti'],[96021,'Arco 3 · Mangiare e bere'],[96031,'Arco 4 · Città e trasporti'],[96041,'Arco 5 · Casa, famiglia e preparazione']],
+ 'nbit-a1':[[96001,'Arco 1 · Saluti e identità'],[96011,'Arco 2 · Numeri, orario e gusti'],[96021,'Arco 3 · Mangiare e bere'],[96031,'Arco 4 · Città e trasporti'],[96041,'Arco 5 · Casa, famiglia e preparazione'],[96051,'Arco 6 · Lavoro e ufficio'],[96061,'Arco 7 · Salute, corpo e natura'],[96071,'Arco 8 · Tecnologia, tempo libero e bilancio']],
  'nbes-a2':[[90401,'Arco 1 · Rutina y hábitos'],[90411,'Arco 2 · Pasado: ayer y el fin de semana'],[90421,'Arco 3 · Experiencias y planes'],[90431,'Arco 4 · Compras, ropa y comparaciones'],[90441,'Arco 5 · Salud y bienestar'],[90451,'Arco 6 · Trabajo y estudios'],[90461,'Arco 7 · Viajes y alojamiento'],[90471,'Arco 8 · Ciudad, trámites y servicios'],[90481,'Arco 9 · Fiestas, tradiciones y descripciones'],[90491,'Arco 10 · Preparación DELE A2 / SIELE']],
  'nbja-a1':[[97101,'Arco 1 · Cumprimentos e apresentação'],[97111,'Arco 2 · Números, horas e compras'],[97121,'Arco 3 · Comer e beber'],[97131,'Arco 4 · Cidade e transporte'],[97141,'Arco 5 · Casa, família e preparação'],[97151,'Arco 6 · Viagens pelo Japão'],[97161,'Arco 7 · Família, lazer e roupas'],[97171,'Arco 8 · Vida diária e serviços'],[97181,'Arco 9 · Festas e tradições'],[97191,'Arco 10 · Preparação JLPT N5'],[97201,'Arco 11 · Escola e trabalho'],[97211,'Arco 12 · Saúde e corpo'],[97221,'Arco 13 · Natureza e clima'],[97231,'Arco 14 · Tecnologia e cultura pop'],[97241,'Arco 15 · Desafio A1+'],[97251,'Arco 16 · Rotina e hobbies'],[97261,'Arco 17 · Cidade e comunidade'],[97271,'Arco 18 · Regiões do Japão'],[97281,'Arco 19 · Cozinha e comida em casa'],[97291,'Arco 20 · Meu Japão: revisão do A1']],
  'nbpt-a1':[[93001,'Arco 1 · Saludos e identidad'],[93011,'Arco 2 · Tiempo, números y gustos'],[93021,'Arco 3 · Comer, beber y comprar'],[93031,'Arco 4 · Ciudad, transporte y servicios'],[93041,'Arco 5 · Casa, salud y planes'],[93051,'Arco 6 · Viajes por Brasil'],[93061,'Arco 7 · Familia, ocio y ropa'],[93071,'Arco 8 · Variedades y falsos amigos'],[93081,'Arco 9 · Fiestas y vida cotidiana'],[93091,'Arco 10 · A1 en práctica'],[93101,'Arco 11 · Trabajo y oficina'],[93111,'Arco 12 · Salud y cuerpo'],[93121,'Arco 13 · Naturaleza y clima'],[93131,'Arco 14 · Tecnología y redes'],[93141,'Arco 15 · Balance del A1: 150 ítems']],
@@ -4331,8 +4331,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=58',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=59',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=59',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=60',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';
