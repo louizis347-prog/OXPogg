@@ -234,7 +234,8 @@ FXR.nbvocab=function(f,st,n){
   draw();cta('Monte as palavras',false);say('Ouça a palavra e toque nas letras.')};
 /* 9 · caça-palavras (vocabulário em inglês a partir de pistas em português) */
 FXR.nbfind=function(f,st,n){
-  const W=f.items.map(x=>({w:x[0].toLowerCase(),e:x[1],pt:x[2]})).filter(x=>x.w.length<=8).slice(0,5);const N=8;lock();
+  const W_len=()=>f.items.map(x=>x[0]).filter(w=>w.length<=10).slice(0,5).map(w=>w.length);
+  const W=f.items.map(x=>({w:x[0].toLowerCase(),e:x[1],pt:x[2]})).filter(x=>x.w.length<=10).slice(0,5);const N=Math.max(8,...W_len());lock();
   let G,place;
   for(let tries=0;tries<80;tries++){G=Array.from({length:N},()=>Array(N).fill(''));place=[];let ok=true;
     for(const it of W){let done=false;for(let a=0;a<60&&!done;a++){const d=[[0,1],[1,0],[1,1]][Math.random()*3|0],r=Math.random()*N|0,c=Math.random()*N|0,er=r+d[0]*(it.w.length-1),ec=c+d[1]*(it.w.length-1);if(er>=N||ec>=N)continue;
