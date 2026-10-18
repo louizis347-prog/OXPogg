@@ -14,9 +14,10 @@ const ACCENTS={
  pt:[['BR','pt-BR','Brasil'],['PT','pt-PT','Portugal']],
  fr:[['FR','fr-FR','França'],['CA','fr-CA','Canadá']],
  de:[['DE','de-DE','Alemanha'],['AT','de-AT','Áustria']],
- it:[['IT','it-IT','Itália']]
+ it:[['IT','it-IT','Itália']],
+ ja:[['JP','ja-JP','Japão']]
 };
-const DEF={accent:{en:'US',es:'ES',pt:'BR',fr:'FR',de:'DE',it:'IT'},voice:{},rate:1,cloud:true};
+const DEF={accent:{en:'US',es:'ES',pt:'BR',fr:'FR',de:'DE',it:'IT',ja:'JP'},voice:{},rate:1,cloud:true};
 let S=Object.assign({},DEF,store.get('tts',{}));S.accent=Object.assign({},DEF.accent,S.accent||{});S.voice=S.voice||{};
 const save=()=>store.set('tts',S);
 

@@ -5,6 +5,10 @@ const L={nbhero:'Seu vizinho',nbchat:'Papo no chat',nbtap:'Ouça e toque',nbswap
 Object.keys(L).forEach(k=>{FX_KIND[k]='practice';FX_LABEL[k]=L[k]});
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const RJ=()=>{try{return localStorage.getItem('pogglot:romaji')!=='0'}catch(e){return true}};
+const rjh=l=>l&&l[3]?`<em class="nb-rj">${H(l[3])}</em>`:'';
+const isJa=()=>{try{return /japon/.test(fxLang())}catch(e){return false}};
+const rjInit=(st,L)=>{const root=q('.nbx',st);if(root)root.classList.toggle('nb-nor',!RJ());const b=q('#nbrj',st);if(b){b.classList.toggle('on',RJ());b.onclick=()=>{const on=!RJ();try{localStorage.setItem('pogglot:romaji',on?'1':'0')}catch(_){}root.classList.toggle('nb-nor',!on);b.classList.toggle('on',on)}}};
 const say2=(t,who,slow)=>{try{fxSay(String(t),who,slow)}catch(e){}};
 const win=(label)=>{P.fx.done=true;P.score++;try{sfx('tada');confetti(60)}catch(e){}cta(label||'Continuar',true,true)};
 const lock=()=>{P.fx.done=false;P.fx.cta=()=>!P.fx.done};
@@ -26,6 +30,7 @@ const css=document.createElement('style');css.textContent=`
 .nb-av{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:20px;box-shadow:0 3px 8px rgba(0,0,0,.15)}
 .nb-b{max-width:78%;border-radius:20px 20px 20px 6px;padding:10px 13px;background:#fff;box-shadow:0 4px 14px rgba(40,30,90,.1);cursor:pointer;font-weight:700;font-size:16px;line-height:1.35;color:#25203f}
 .nb-row.me .nb-b{border-radius:20px 20px 6px 20px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff}
+.nb-rj{display:block;font:600 12px system-ui;opacity:.75;font-style:normal;margin-top:2px;letter-spacing:.02em}.nb-nor .nb-rj{display:none}.nb-rj2{display:block;font:600 14px system-ui;opacity:.7;font-style:normal;margin-top:4px}.nb-nor .nb-rj2{display:none}
 .nb-b small{display:none;margin-top:4px;font-weight:600;opacity:.85;font-size:12.5px}.nb-pt .nb-b small{display:block}
 .nb-b .nb-who{display:block;font:800 10px system-ui;letter-spacing:.08em;opacity:.6;margin-bottom:2px}
 @keyframes nbin{from{opacity:0;transform:translateY(10px) scale(.96)}}
@@ -76,11 +81,11 @@ FXR.nbhero=function(f,st,n){
 FXR.nbchat=function(f,st,n){
   const cast=f.cast,L=f.lines;let k=0,pt=false,role=!!f.role&&!!(window.PogVoice);
   const isMe=l=>l[0]==='You'||l[0]===f.me;
-  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Papo no chat')}<div class="nb-tools"><button class="nb-chip" id="nbpt">🇧🇷 Tradução</button><button class="nb-chip" id="nbal">🔊 Ouvir tudo</button>${f.role?'<button class="nb-chip on" id="nbrl">🎭 Eu falo minhas falas</button>':''}<button class="nb-chip" id="nbrp">🚩 Algo errado?</button></div><div class="nb-chat" id="nbc"></div><div id="nbsp"></div><div class="nb-hint" id="nbhn">${H(f.intro||'Toque em “Próxima fala” para abrir cada mensagem.')}</div></div>`;
-  const box=q('#nbc',st);let seq=0;
+  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Papo no chat')}<div class="nb-tools"><button class="nb-chip" id="nbpt">🇧🇷 Tradução</button><button class="nb-chip" id="nbal">🔊 Ouvir tudo</button>${L.some(l=>l[3])?'<button class="nb-chip on" id="nbrj">あ/a Romaji</button>':''}${f.role?'<button class="nb-chip on" id="nbrl">🎭 Eu falo minhas falas</button>':''}<button class="nb-chip" id="nbrp">🚩 Algo errado?</button></div><div class="nb-chat" id="nbc"></div><div id="nbsp"></div><div class="nb-hint" id="nbhn">${H(f.intro||'Toque em “Próxima fala” para abrir cada mensagem.')}</div></div>`;
+  const box=q('#nbc',st);let seq=0;rjInit(st,L);
   const add=(i,speak)=>{const l=L[i],me=isMe(l),c=cast[l[0]]||['🙂','#999'];
     const r=document.createElement('div');r.className='nb-row'+(me?' me':'');
-    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${av(c[0],l[0],c[1])}</span><div class="nb-b"><span class="nb-who">${H(l[0]==='You'?'VOCÊ':l[0])}</span>${H(l[1])}<small>${H(l[2])}</small></div>`;
+    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${av(c[0],l[0],c[1])}</span><div class="nb-b"><span class="nb-who">${H(l[0]==='You'?'VOCÊ':l[0])}</span>${H(l[1])}${rjh(l)}<small>${H(l[2])}</small></div>`;
     r.querySelector('.nb-b').onclick=()=>say2(l[1],l[0]);box.appendChild(r);r.scrollIntoView({block:'nearest',behavior:'smooth'});if(speak)say2(l[1],l[0])};
   const after=()=>{if(k>=L.length){cta('Continuar',true,true);q('#nbhn',st).textContent='Toque em qualquer bolha para ouvir de novo.'}else cta('Próxima fala ▶',true)};
   const reveal=i=>{q('#nbsp',st).innerHTML='';add(i,true);k=i+1;P.fx.cta=()=>{if(k<L.length){next();return true}return false};after()};
@@ -164,14 +169,15 @@ FXR.nbreply=function(f,st,n){
 
 /* 8 · fale em voz alta: repita -> complete -> lembre; + "como falam de verdade" */
 FXR.nbshadow=function(f,st,n){
-  const R=f.items.map((it,i)=>({t:it[0],p:it[1],tier:['repeat','cloze','recall'][Math.min(i,2)]}));
+  const R=f.items.map((it,i)=>({t:it[0],p:it[1],r:it[2],tier:['repeat','cloze','recall'][Math.min(i,2)]}));
   if(f.real)R.push({t:f.real[0],p:f.real[2],tier:'real',sp:f.real[1]});
   let ri=0;lock();
-  const mask=t=>{const w=t.split(' ');const sc=w.map((x,i)=>[x.replace(/[^A-Za-z']/g,'').length,i]).sort((a,b)=>b[0]-a[0]).slice(0,Math.max(1,Math.round(w.length/3))).map(x=>x[1]);return w.map((x,i)=>sc.includes(i)?x.replace(/[A-Za-z']+/,m=>'_'.repeat(Math.min(7,m.length))):x).join(' ')};
-  const draw=()=>{const it=R[ri],fw=it.t.split(' ').slice(0,2).join(' ');
+  const jmask=t=>{const a=[...t],k=Math.max(2,Math.ceil(a.length/3));return a.slice(0,Math.max(1,a.length-k-1)).join('')+'＿'.repeat(k)+(/[。！？!?]/.test(a[a.length-1])?a[a.length-1]:'')};
+  const mask=t=>{if(isJa())return jmask(t);const w=t.split(' ');const sc=w.map((x,i)=>[x.replace(/[^A-Za-z']/g,'').length,i]).sort((a,b)=>b[0]-a[0]).slice(0,Math.max(1,Math.round(w.length/3))).map(x=>x[1]);return w.map((x,i)=>sc.includes(i)?x.replace(/[A-Za-z']+/,m=>'_'.repeat(Math.min(7,m.length))):x).join(' ')};
+  const draw=()=>{const it=R[ri],fw=isJa()?[...it.t].slice(0,3).join(''):it.t.split(' ').slice(0,2).join(' ');
     const lab={repeat:'1 · Ouça e repita',cloze:'2 · Complete e fale a frase inteira',recall:'3 · Sem olhar: diga em '+fxLang(),real:'🗣️ Como falam de verdade'}[it.tier];
     let body;
-    if(it.tier==='repeat')body=`<div class="nb-big-line">${H(it.t)}<em>${H(it.p)}</em></div>`;
+    if(it.tier==='repeat')body=`<div class="nb-big-line">${H(it.t)}${it.r?`<em class="nb-rj2">${H(it.r)}</em>`:''}<em>${H(it.p)}</em></div>`;
     else if(it.tier==='cloze')body=`<div class="nb-big-line">${H(mask(it.t))}<em>${H(it.p)}</em></div>`;
     else if(it.tier==='recall')body=`<div class="nb-big-line">${H(it.p)}<em>Começa com: “${H(fw)}…”</em></div>`;
     else body=`<div class="nb-real"><div class="w">${H(it.t)}</div><div class="s">${H(it.sp)}</div><small>${H(it.p)}</small></div>`;
@@ -192,13 +198,13 @@ FXR.nbshadow=function(f,st,n){
 /* 6 · chat de gírias, expressões e ditados */
 FXR.nbslang=function(f,st,n){
   const cast=f.cast,L=f.lines,GL=f.gl;let k=0,pt=false;
-  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Chat de gírias')}<div class="nb-tools"><button class="nb-chip" id="nbpt">🇧🇷 Tradução</button></div><div class="nb-chat" id="nbc"></div><div id="nbg"></div><div class="nb-hint" id="nbhn">Toque nas palavras coloridas: <b>amarelo = essencial ⭐</b>, azul = curiosidade 🎈.</div></div>`;
-  const box=q('#nbc',st),gbox=q('#nbg',st);const seen=new Set();
+  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Chat de gírias')}<div class="nb-tools"><button class="nb-chip" id="nbpt">🇧🇷 Tradução</button>${L.some(l=>l[3])?'<button class="nb-chip on" id="nbrj">あ/a Romaji</button>':''}</div><div class="nb-chat" id="nbc"></div><div id="nbg"></div><div class="nb-hint" id="nbhn">Toque nas palavras coloridas: <b>amarelo = essencial ⭐</b>, azul = curiosidade 🎈.</div></div>`;
+  const box=q('#nbc',st),gbox=q('#nbg',st);const seen=new Set();rjInit(st,L);
   const ES=new Set((f.ess||[]).map(x=>x.toLowerCase()));const tg=a=>ES.has(a.toLowerCase())?'e':'x';
   const mk=t=>H(t).replace(/\*\*(.+?)\*\*/g,(m,a)=>`<mark class="${tg(a)}" data-k="${a}">${a}</mark>`);
   const plain=t=>t.replace(/\*\*/g,'');
   const add=i=>{const l=L[i],me=l[0]==='You',c=cast[l[0]]||['🙂','#999'];const r=document.createElement('div');r.className='nb-row'+(me?' me':'');
-    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${av(c[0],l[0],c[1])}</span><div class="nb-b"><span class="nb-who">${H(me?'VOCÊ':l[0])}</span>${mk(l[1])}<small>${H(l[2])}</small></div>`;
+    r.innerHTML=`<span class="nb-av" style="background:${c[1]}22">${av(c[0],l[0],c[1])}</span><div class="nb-b"><span class="nb-who">${H(me?'VOCÊ':l[0])}</span>${mk(l[1])}${rjh(l)}<small>${H(l[2])}</small></div>`;
     r.querySelector('.nb-b').onclick=ev=>{const m=ev.target.closest('mark');if(m){const key=m.dataset.k;seen.add(key);gbox.innerHTML=`<div class="nb-gl"><span class="nb-tag ${tg(key)}">${tg(key)==='e'?'⭐ Essencial':'🎈 Curiosidade'}</span>💡 <b>${H(key)}</b> = ${H(GL[key]||'')} <button class="nb-chip" style="margin-left:6px">🔊</button></div>`;gbox.querySelector('button').onclick=()=>say2(key,null);say2(key,null)}else say2(plain(l[1]),l[0])};
     box.appendChild(r);r.scrollIntoView({block:'nearest',behavior:'smooth'});say2(plain(l[1]),l[0])};
   const next=()=>{if(k<L.length){add(k);k++;if(k>=L.length){cta('Continuar',true,true);q('#nbhn',st).innerHTML='Revise: <b>'+Object.keys(GL).map(k=>(ES.has(k.toLowerCase())?'⭐ ':'')+H(k)).join(' · ')+'</b>'}else cta('Próxima mensagem ▶',true)}};
@@ -242,7 +248,7 @@ FXR.nbfind=function(f,st,n){
       const cells=[...it.w].map((ch,i)=>[r+d[0]*i,c+d[1]*i,ch]);if(cells.every(x=>!G[x[0]][x[1]]||G[x[0]][x[1]]===x[2])){cells.forEach(x=>G[x[0]][x[1]]=x[2]);place.push({it,cells});done=true}}
       if(!done){ok=false;break}}
     if(ok)break}
-  const AB='abcdefghijklmnopqrstuvwxyz';G.forEach(r=>r.forEach((v,i)=>{if(!v)r[i]=AB[Math.random()*26|0]}));
+  const JAW=W.some(x=>/[\u3040-\u30ff]/.test(x.w)),AB=[...(JAW?'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわん':'abcdefghijklmnopqrstuvwxyz')];G.forEach(r=>r.forEach((v,i)=>{if(!v)r[i]=AB[Math.random()*AB.length|0]}));
   st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${head(f,n,'Caça-palavras')}<div class="nb-hint">Ache em ${fxLang()}: toque na primeira e na última letra de cada palavra.</div>
   <div class="nb-clues" id="nbcl">${W.map((x,i)=>`<span data-i="${i}">${x.e} ${H(x.pt)}</span>`).join('')}</div>
   <div class="nb-ws" id="nbw" style="grid-template-columns:repeat(${N},1fr)">${G.map((r,i)=>r.map((v,j)=>`<button data-r="${i}" data-c="${j}">${v}</button>`).join('')).join('')}</div></div>`;

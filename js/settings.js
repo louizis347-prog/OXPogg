@@ -36,7 +36,7 @@ const K={
 };
 const k=key=>(K[L0()][key]!=null?K[L0()][key]:K.pt[key]);
 const LNAMES={en:'Inglês',es:'Espanhol',fr:'Francês',de:'Alemão',it:'Italiano',pt:'Português'};
-const LCODE={en:'en-US',es:'es-ES',fr:'fr-FR',de:'de-DE',it:'it-IT',pt:'pt-BR'};
+const LCODE={en:'en-US',es:'es-ES',fr:'fr-FR',de:'de-DE',it:'it-IT',ja:'ja-JP',pt:'pt-BR'};
 const GOALS=[[10,'gLight'],[20,'gNorm'],[40,'gSerious'],[80,'gIntense']];
 
 /* ---------- meta diária: XP de hoje a partir da diferença do XP total ---------- */

@@ -1502,7 +1502,7 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],fr:[],de:[],it:[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],fr:[],de:[],it:[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=132').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=136').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -1536,7 +1536,7 @@ const GROUPS={
   nbes:{id:'nbes',ui:'pt',scarf:'#E0703A',scene:'cv_es',
       name:{pt:'Neighbors · Espanhol',es:'Neighbors · Español'},flag:'ES → PT-BR',
       desc:{pt:'Aprenda espanhol conversando com vizinhos do mundo hispânico: uma pessoa, uma cidade e uma situação real por episódio. Alinhado ao MCER A1 e ao DELE A1.',es:'Aprende español conversando con vecinos del mundo hispano: una persona, una ciudad y una situación real por episodio. Alineado con el MCER A1 y el DELE A1.'},
-      sub:['nbes-a1']},
+      sub:['nbes-a1','nbes-a2']},
   nbfr:{id:'nbfr',ui:'pt',scarf:'#2F5FD0',scene:'cv_fr',
       name:{pt:'Neighbors · Francês',es:'Neighbors · Francés'},flag:'FR → PT-BR',
       desc:{pt:'Aprenda francês conversando com vizinhos do mundo francófono: uma pessoa, uma cidade e uma situação real por episódio. Alinhado ao MCER A1 e ao DELF A1.',es:'Aprende francés conversando con vecinos del mundo francófono: una persona, una ciudad y una situación real por episodio. Alineado con el MCER A1 y el DELF A1.'},
@@ -1545,6 +1545,18 @@ const GROUPS={
       name:{pt:'Neighbors · Alemão',es:'Neighbors · Alemán'},flag:'DE → PT-BR',
       desc:{pt:'Aprenda alemão conversando com vizinhos da Alemanha, da Áustria e da Suíça: uma pessoa, uma cidade e uma situação real por episódio. Alinhado ao MCER A1 e ao Goethe-Zertifikat Start Deutsch 1.',es:'Aprende alemán conversando con vecinos de Alemania, Austria y Suiza: una persona, una ciudad y una situación real por episodio. Alineado con el MCER A1 y el Goethe-Zertifikat Start Deutsch 1.'},
       sub:['nbde-a1']},
+  nbja:{id:'nbja',ui:'pt',scarf:'#D6336C',scene:'cv_it',
+      name:{pt:'Neighbors · Japonês',es:'Neighbors · Japonés'},flag:'JA → PT-BR',
+      desc:{pt:'Aprenda japonês do zero: primeiro os alfabetos (hiragana e katakana, com módulos de leitura, escrita e escuta), depois conversas com vizinhos do Japão. Alinhado ao MCER A1 e ao JLPT N5.',es:'Aprende japonés desde cero: primero los silabarios (hiragana y katakana) y luego conversaciones con vecinos de Japón. Alineado con el MCER A1 y el JLPT N5.'},
+      sub:['nbja-kana']},
+  nbeng:{id:'nbeng',ui:'es',scarf:'#2E6F95',scene:'cv_usa',
+      name:{pt:'Neighbors · Inglês (p/ hispanofalantes)',es:'Neighbors · English'},flag:'EN → ES',
+      desc:{pt:'Inglês para falantes de espanhol conversando com vizinhos de todo o mundo anglófono. Alinhado ao MCER A1.',es:'Aprende inglés conversando con vecinos de todo el mundo anglófono: una persona, una ciudad y una situación real por episodio, con falsos amigos y notas para hispanohablantes. Alineado con el MCER A1 y Cambridge A1 Movers.'},
+      sub:['nbeng-a1']},
+  nbit:{id:'nbit',ui:'pt',scarf:'#2E9E6A',scene:'cv_it',
+      name:{pt:'Neighbors · Italiano',es:'Neighbors · Italiano'},flag:'IT → PT-BR',
+      desc:{pt:'Aprenda italiano conversando com vizinhos da Itália: uma pessoa, uma cidade e uma situação real por episódio. Alinhado ao MCER A1, ao CILS A1 e ao CELI 1.',es:'Aprende italiano conversando con vecinos de Italia. Alineado con el MCER A1, CILS A1 y CELI 1.'},
+      sub:['nbit-a1']},
   nbpt:{id:'nbpt',ui:'es',scarf:'#1FA35C',scene:'cv_br',
       name:{pt:'Neighbors · Português',es:'Neighbors · Portugués'},flag:'PT-BR → ES',
       desc:{pt:'Aprenda português do Brasil conversando com vizinhos de todo o país (para falantes de espanhol). Alinhado ao MCER A1.',es:'Aprende portugués de Brasil conversando con vecinos de todo el país: una persona, una ciudad y una situación real por episodio. Con falsos amigos y notas para hispanohablantes. Alineado con el MCER A1.'},
@@ -1614,6 +1626,18 @@ const COURSES={
   'nbes-a1':{id:'nbes-a1',group:'nbes',ui:'pt',tts:'es-MX',scene:'cv_es',scarf:'#E0703A',
       name:{pt:'Neighbors · Espanhol A1',es:'Neighbors · Español A1'},flag:'ES → PT-BR · A1',
       desc:{pt:'Cafés, feiras e vizinhos de todo o mundo hispânico — fala primeiro. Alinhado ao MCER A1 e ao DELE A1 (Instituto Cervantes).',es:'Cafés, ferias y vecinos de todo el mundo hispano. Alineado con el MCER A1 y el DELE A1.'}},
+  'nbja-kana':{id:'nbja-kana',group:'nbja',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',
+      name:{pt:'Neighbors · Japonês · Alfabetização',es:'Neighbors · Japonés · Alfabetización'},flag:'JA → PT-BR · Kana',
+      desc:{pt:'16 módulos para aprender a ler e escrever hiragana e katakana, com som, traçado e jogos de leitura. Faça este módulo antes do A1.',es:'16 módulos para aprender a leer y escribir hiragana y katakana, con sonido, trazo y juegos de lectura. Hazlo antes del A1.'}},
+  'nbeng-a1':{id:'nbeng-a1',group:'nbeng',ui:'es',tts:'en-US',scene:'cv_usa',scarf:'#2E6F95',
+      name:{pt:'Neighbors · Inglês A1 (p/ hispanofalantes)',es:'Neighbors · English A1'},flag:'EN → ES · A1',
+      desc:{pt:'Cafés, ruas e vizinhos do mundo anglófono. Alinhado ao MCER A1.',es:'Cafés, calles y vecinos del mundo anglófono: habla primero. Alineado con el MCER A1 y Cambridge A1 Movers.'}},
+  'nbit-a1':{id:'nbit-a1',group:'nbit',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E9E6A',
+      name:{pt:'Neighbors · Italiano A1',es:'Neighbors · Italiano A1'},flag:'IT → PT-BR · A1',
+      desc:{pt:'Bares, praças e vizinhos de Roma a Palermo — fala primeiro. Alinhado ao MCER A1.',es:'Bares, plazas y vecinos de Roma a Palermo. Alineado con el MCER A1.'}},
+  'nbes-a2':{id:'nbes-a2',group:'nbes',ui:'pt',tts:'es-MX',scene:'cv_es',scarf:'#E0703A',
+      name:{pt:'Neighbors · Espanhol A2',es:'Neighbors · Español A2'},flag:'ES → PT-BR · A2',
+      desc:{pt:'Passado, planos, compras, saúde, trabalho e viagens com vizinhos de todo o mundo hispânico. Alinhado ao MCER A2 e ao DELE A2.',es:'Pasado, planes, compras, salud, trabajo y viajes con vecinos del mundo hispano. Alineado con el MCER A2 y el DELE A2.'}},
   'nbpt-a1':{id:'nbpt-a1',group:'nbpt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#1FA35C',
       name:{pt:'Neighbors · Português A1',es:'Neighbors · Portugués A1'},flag:'PT-BR → ES · A1',
       desc:{pt:'Cafés, praias e vizinhos de São Paulo a Fernando de Noronha. Alinhado ao MCER A1.',es:'Cafés, playas y vecinos de São Paulo a Fernando de Noronha: habla primero, con falsos amigos. Alineado con el MCER A1.'}},
@@ -1735,6 +1759,10 @@ const ARCS={"en-a1": [[9801, "Arco A1·1 · Nova York, dia 1"], [9803, "Arco A1�
  "es-c2":[[1801, "Arco 1 · Matizes do subjuntivo e do indicativo"], [1811, "Arco 2 · Tempos literários e narrativos"], [1821, "Arco 3 · Estilística: ordem marcada, hipérbato e elipse"], [1831, "Arco 4 · Gramática do discurso: coesão e coerência"], [1841, "Arco 5 · Recursos retóricos: metáfora, ironia, hipérbole"], [1851, "Arco 6 · Ambiguidade, polissemia e sentido figurado"], [1861, "Arco 7 · Registro culto e arcaísmos: Século de Ouro"], [1871, "Arco 8 · Humor e sátira: caricatura, piada, paródia"], [1881, "Arco 9 · Linguagem jurídica, administrativa e científica"], [1891, "Arco 10 · Linguagem jornalística e editorial"], [1901, "Arco 11 · Pragmática avançada: implicaturas e cortesia"], [1911, "Arco 12 · Variação dialetal profunda: fonética a léxico"], [1921, "Arco 13 · Mudança linguística: do latim aos indigenismos"], [1931, "Arco 14 · Lexicografia: dicionários, neologismos e empréstimos"], [1941, "Arco 15 · Tradução e mediação pt-es"], [1951, "Arco 16 · Literatura medieval e Século de Ouro"], [1961, "Arco 17 · Literatura do século XIX: romantismo e realismo"], [1971, "Arco 18 · Literatura do século XX na Península"], [1981, "Arco 19 · Boom latino-americano e realismo mágico"], [1991, "Arco 20 · Literatura contemporânea: microconto e poesia"], [2001, "Arco 21 · Ensaio e pensamento hispânico"], [2011, "Arco 22 · Cinema e TV em análise"], [2021, "Arco 23 · Arte, música e performance em análise"], [2031, "Arco 24 · História, memória e retórica política"], [2041, "Arco 25 · Economia, ciência e filosofia avançadas"], [2051, "Arco 26 · Debate, mesa-redonda e exposição oral"], [2061, "Arco 27 · Escrita profissional e acadêmica"], [2071, "Arco 28 · Fala rápida, sotaques e gírias"], [2081, "Arco 29 · Mediação e interculturalidade"], [2091, "Arco 30 · Maestría: síntese final e DELE C2"]],
  enes:[[1,'Arco 1 · Perdidos y encontrados'],[4,'Arco 2 · Contar lo que pasó']],
  'enes-a1':[[40001,'Arco 1 · Nueva York, día 1']],
+ 'nbja-kana':[],
+ 'nbeng-a1':[[95001,'Arco 1 · Hello & identity'],[95011,'Arco 2 · Numbers, time & days'],[95021,'Arco 3 · Family & friends'],[95031,'Arco 4 · Food & drink'],[95041,'Arco 5 · Shopping & money'],[95051,'Arco 6 · Places & directions'],[95061,'Arco 7 · Transport & travel'],[95071,'Arco 8 · Home & daily routine'],[95081,'Arco 9 · Health & body'],[95091,'Arco 10 · Weather & seasons'],[95101,'Arco 11 · Hobbies & free time'],[95111,'Arco 12 · Work & study'],[95121,'Arco 13 · Phone, email & plans'],[95131,'Arco 14 · Festivals & culture'],[95141,'Arco 15 · A1 in action']],
+ 'nbit-a1':[[96001,'Arco 1 · Saluti e identità'],[96011,'Arco 2 · Numeri, orario e gusti'],[96021,'Arco 3 · Mangiare e bere'],[96031,'Arco 4 · Città e trasporti'],[96041,'Arco 5 · Casa, famiglia e preparazione']],
+ 'nbes-a2':[[90401,'Arco 1 · Rutina y hábitos'],[90411,'Arco 2 · Pasado: ayer y el fin de semana'],[90421,'Arco 3 · Experiencias y planes'],[90431,'Arco 4 · Compras, ropa y comparaciones'],[90441,'Arco 5 · Salud y bienestar'],[90451,'Arco 6 · Trabajo y estudios'],[90461,'Arco 7 · Viajes y alojamiento'],[90471,'Arco 8 · Ciudad, trámites y servicios'],[90481,'Arco 9 · Fiestas, tradiciones y descripciones'],[90491,'Arco 10 · Preparación DELE A2 / SIELE']],
  'nbpt-a1':[[93001,'Arco 1 · Saludos e identidad'],[93011,'Arco 2 · Tiempo, números y gustos'],[93021,'Arco 3 · Comer, beber y comprar'],[93031,'Arco 4 · Ciudad, transporte y servicios'],[93041,'Arco 5 · Casa, salud y planes'],[93051,'Arco 6 · Viajes por Brasil'],[93061,'Arco 7 · Familia, ocio y ropa'],[93071,'Arco 8 · Variedades y falsos amigos'],[93081,'Arco 9 · Fiestas y vida cotidiana'],[93091,'Arco 10 · A1 en práctica']],
  'nbde-a1':[[92001,'Arco 1 · Hallo und Identität'],[92011,'Arco 2 · Zahlen, Zeit und Vorlieben'],[92021,'Arco 3 · Essen, Trinken und Einkaufen'],[92031,'Arco 4 · Stadt, Verkehr und Dienste'],[92041,'Arco 5 · Wohnung, Gesundheit und Pläne'],[92051,'Arco 6 · Reisen durch Deutschland'],[92061,'Arco 7 · Familie, Freizeit und Kleidung'],[92071,'Arco 8 · Österreich und die Schweiz'],[92081,'Arco 9 · Feste, Regionen und Alltag'],[92091,'Arco 10 · Start Deutsch 1: Vorbereitung']],
  'nbfr-a1':[[91001,'Arco 1 · Salut et identité'],[91011,'Arco 2 · Chiffres, temps et goûts'],[91021,'Arco 3 · Manger, boire et acheter'],[91031,'Arco 4 · Ville, transport et services'],[91041,'Arco 5 · Maison, santé et projets'],[91051,'Arco 6 · Voyages dans l\'Hexagone'],[91061,'Arco 7 · Famille, loisirs et vêtements'],[91071,'Arco 8 · Québec, Belgique et Suisse'],[91081,'Arco 9 · Afrique, Caraïbes et océans'],[91091,'Arco 10 · DELF A1 : se préparer']],
@@ -2155,7 +2183,7 @@ function homeCards(){
 function homeLangs(L,t){
   const ids=Object.keys(COURSES),by=re=>ids.filter(i=>re.test(i));
   const LANGS=[
-   {id:'nb',flag:'🏘️',name:'Neighbors',note:'Aprenda conversando com vizinhos',rows:[{t:'🇺🇸 Neighbors Inglês · A1 a C2',ids:by(/^nb-/)},{t:'🇪🇸 Neighbors Espanhol · A1',ids:by(/^nbes-/),lab:1},{t:'🇫🇷 Neighbors Francês · A1',ids:by(/^nbfr-/),lab:1},{t:'🇩🇪 Neighbors Alemão · A1',ids:by(/^nbde-/),lab:1},{t:'🇧🇷 Neighbors Português (p/ hispanofalantes) · A1',ids:by(/^nbpt-/),lab:1}]},
+   {id:'nb',flag:'🏘️',name:'Neighbors',note:'Aprenda conversando com vizinhos',rows:[{t:'🇺🇸 Neighbors Inglês · A1 a C2',ids:by(/^nb-/)},{t:'🇪🇸 Neighbors Espanhol · A1',ids:by(/^nbes-/),lab:1},{t:'🇫🇷 Neighbors Francês · A1',ids:by(/^nbfr-/),lab:1},{t:'🇩🇪 Neighbors Alemão · A1',ids:by(/^nbde-/),lab:1},{t:'🇧🇷 Neighbors Português (p/ hispanofalantes) · A1',ids:by(/^nbpt-/),lab:1},{t:'🇮🇹 Neighbors Italiano · A1',ids:by(/^nbit-/),lab:1},{t:'🇺🇸 Neighbors English (p/ hispanofalantes) · A1',ids:by(/^nbeng-/),lab:1},{t:'🇯🇵 Neighbors Japonês · Kana e A1',ids:by(/^nbja-/),lab:1}]},
    {id:'en',flag:'🇺🇸',name:'Inglês',rows:[{t:'Clássico · do cinema aos livros',ids:by(/^en-/)},{t:'Para hispanofalantes',ids:by(/^enes/)}]},
    {id:'es',flag:'🇪🇸',name:'Espanhol',rows:[{t:'Clássico · do Quixote ao Chaves',ids:by(/^es-/)}]},
    {id:'pt',flag:'🇧🇷',name:'Português',rows:[{t:'Para hispanofalantes',ids:['pt']}]},
@@ -3429,7 +3457,7 @@ function fxEn(ic,label,html,play){return `<div class="fx-en${play?' has-play':''
 function fxStopAudio(){clearTimeout(fxSeq.t);clearTimeout(fxSeq.t2);window.__speakEnd=null;try{if(window.PogTTS)PogTTS.stop()}catch(e){}try{speechSynthesis.cancel()}catch(e){}}
 function fxTotal(e){let n=0;(e.fr||[]).forEach(f=>{if(['tapimg','sound','soundlab','choose','trap','gap','cquiz','vquiz'].includes(f.k))n+=f.rounds.length;else if(f.k==='ctx')n+=f.items.length;else if(f.k==='build')n+=f.items.length;else if(f.k==='dictate')n+=f.lines.length;else if(f.k==='convo')n+=f.turns.length;else if(f.k==='match'||f.k==='order')n+=1});return n}
 function fxSay(en,who,slow){speak(en,(P&&P.c&&P.c.tts)||'en-US',null,who,slow)}
-function fxLang(){const t=(P&&P.c&&P.c.tts)||'';return /^pt/.test(t)?'português':/^es/.test(t)?'espanhol':/^fr/.test(t)?'francês':/^de/.test(t)?'alemão':/^it/.test(t)?'italiano':'inglês'}
+function fxLang(){const t=(P&&P.c&&P.c.tts)||'';return /^pt/.test(t)?'português':/^es/.test(t)?'espanhol':/^fr/.test(t)?'francês':/^de/.test(t)?'alemão':/^it/.test(t)?'italiano':/^ja/.test(t)?'japonês':'inglês'}
 function fxShuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
 function fxGrade(ok,why,right){P.streak=ok?(P.streak||0)+1:0;beep(ok);if(ok){confetti(P.streak>=3?90:30)}
   const fb=$('#fb');if(fb)fb.innerHTML=`<div class="feedback ${ok?'ok':'no'}"><div><b>${ok?pickRight(P.t):P.t.wrong}</b>${ok||!right?'':`${P.t.correctIs} <i>${esc(right)}</i><br>`}${why?mk(why):''}</div></div>`;
@@ -4266,8 +4294,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=46',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=47',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=50',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=51',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';
@@ -4320,6 +4348,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/audio_guard.js"></script>
 <script src="js/covers.js"></script><script src="js/faces.js"></script><script src="js/scenes.js"></script>
 <script src="js/nb.js"></script>
+<script src="js/kana.js"></script>
 <script src="js/nbtrip.js"></script>
 <script src="js/pogglot2.js"></script>
 <script>window.__pgres()</script>
