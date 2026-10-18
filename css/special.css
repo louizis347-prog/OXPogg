@@ -123,3 +123,12 @@
 .fx-bridge .br-words div{display:flex;gap:6px;flex-wrap:wrap}
 .fx-bridge .br-words span{background:#fff;border:2px solid #12B3A8;border-radius:999px;padding:4px 10px;font-weight:700;font-size:.88rem}
 @media (prefers-reduced-motion:reduce){.fx-bridge .br-arrow{animation:none}}
+
+/* metas do curso e episódios planejados */
+.goalcard{margin:14px 0;padding:16px;border-radius:20px;background:var(--paper,#fff);border:1px solid rgba(80,60,140,.15);box-shadow:0 6px 20px rgba(60,40,120,.08)}
+.goalcard h3{margin:0 0 6px;font:800 18px var(--f-display,system-ui)}.goalcard p{margin:0 0 10px;font-size:14px;line-height:1.45}
+.gc-bars{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.gc-bars span{font-weight:700;font-size:13px}
+.gc-bar{height:10px;border-radius:99px;background:rgba(80,60,140,.12);overflow:hidden;margin:4px 0}.gc-bar i{display:block;height:100%;background:linear-gradient(90deg,#4F7CFF,#7C4DFF);border-radius:99px}.gc-bar.x i{background:linear-gradient(90deg,#FF8A3D,#E6447A)}
+.goalcard details{margin-top:10px}.goalcard summary{cursor:pointer;font-weight:700;font-size:13px}.gc-t{width:100%;border-collapse:collapse;margin:8px 0;font-size:13px}.gc-t th,.gc-t td{padding:6px 8px;text-align:left;border-bottom:1px solid rgba(80,60,140,.1)}
+.cv-desc{margin:10px 0 0;font-size:14px;line-height:1.5;opacity:.9}.cv-pe{margin-top:8px;font-size:13px;opacity:.85}.cv-pf{font-size:20px;margin-right:6px}
+.cv-m{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.cv-m span{padding:4px 10px;border-radius:99px;background:rgba(79,124,255,.12);font-size:12px;font-weight:700}.cv-cum{display:block;margin-top:6px;opacity:.7}

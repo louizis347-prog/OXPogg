@@ -277,11 +277,13 @@ window.hub=function(id){
   shell(`<button class="p2back" data-go="home">${IC.arrow()}<span>${E(t('back'))}</span></button>
   <section class="p2lhead px-hero2" style="--c:${l.c};--cd:${l.cd}"><div class="bgart">${sceneArt(l.id,LANG_SC[l.id]||'plaza')}</div><div class="tx"><span class="p2eyebrow on">${typeof flagPair==='function'?flagPair(g.flag||''):''}</span><h1>${E(l.n[L])}</h1><p>${E(g.desc?g.desc[L]:'')}</p>
    <div class="pr"><div class="p2bar-p inv"><i style="width:${(p*100).toFixed(1)}%"></i></div><span>${nf(d)} ${E(t('of'))} ${nf(n)} · ${Math.round(p*100)}%</span></div></div>${langArt(l,LANG_ICON[l.id])}</section>
+  ${(l.id==='nbes'||l.id==='nbfr')?'<div id="goalcard" class="goalcard"></div>':''}
   ${sectionHead(t('pickLevel'),t('pickLevelSub'))}
   <div class="p2levels">${l.sub.map((cid,i)=>{const c=COURSES[cid],lv=lvlOf(cid),cn=nOf(cid),cd=doneCountFor(cid),cp=cn?cd/cn:0,pal=PC().palette(cid);
     return `<article class="p2level" style="--c1:${pal.c1};--c2:${pal.c2};animation-delay:${i*45}ms"><button class="hd" data-course="${cid}"><b class="big">${E(lv||'•')}</b><span class="bgart">${sceneArt(cid,LV_SC[lv]||'plaza')}</span></button>
      <div class="bd"><h3>${E(t('level'))} ${E(lv)}</h3><p>${E(c.desc[L])}</p>${bar(cp)}<div class="mt"><span>${nf(cd)} ${E(t('of'))} ${nf(cn)} ${E(t('lessons'))}</span><b>${Math.round(cp*100)}%</b></div>
      <button class="p2btn ${cd?'pri':'soft'} sm" data-course="${cid}">${E(cd?(cd>=cn&&cn?t('review'):t('continue')):t('begin'))}${IC.arrow()}</button></div></article>`}).join('')}</div>`,'lang');
+  if(document.getElementById('goalcard')&&typeof goalCard==='function')goalCard(l.id);
 };
 
 /* ================= EPISÓDIOS ================= */
@@ -350,6 +352,7 @@ function chipsHTML(){
 }
 function bannerHTML(cid){
   const list=EP[cid]||[],ni=nextIdx(cid);
+  if(ni<0&&list.some(x=>x.pl)){const e=list.find(x=>!x.pl),all=!e;return `<div class="p2banner done"><div class="tx"><small>${all?'Trilha planejada':'Você concluiu os episódios disponíveis'}</small><b>${all?'Os episódios deste nível chegam em breve. Veja o plano abaixo: títulos, descrições e metas.':'Os próximos episódios já estão planejados na trilha abaixo.'}</b></div>${e?`<button class="p2btn light" data-ep="${cid}:${list.indexOf(e)}">${E(t('review'))}</button>`:''}</div>`}
   if(ni<0){const e=list.find(x=>!x.pl);return `<div class="p2banner done"><div class="tx"><small>${E(t('finished'))}</small><b>${E(t('finishedSub'))}</b></div>${e?`<button class="p2btn light" data-ep="${cid}:${list.indexOf(e)}">${E(t('review'))}</button>`:''}</div>`}
   const e=list[ni];
   return `<div class="p2banner"><div class="cv">${PC().svg(e,{num:e.en||ni+1})}</div><div class="tx"><small>${E(t('resumeT'))}</small><b>${E(e.t)}</b><span>${E(t('ep'))} ${String(e.en||ni+1).padStart(2,'0')}${e.a&&e.a.w?' · '+E(e.a.w):''}</span></div><button class="p2btn light" data-ep="${cid}:${ni}">${E(t('continue'))}${IC.play()}</button></div>`;
