@@ -257,3 +257,19 @@ FXR.nbfind=function(f,st,n){
     if(hit>=0){W[hit].fd=true;found++;cells.forEach(x=>cell(x[0],x[1]).classList.add('fd'));q(`#nbcl [data-i="${hit}"]`,st).classList.add('fd');sfx('burst');say2(W[hit].w,null);if(found>=W.length)setTimeout(()=>win(),900)}else sfx('oops')});
   cta('Ache as palavras',false);say('Procure as palavras em '+fxLang()+' na grade.')};
 })();
+/* textos fixos do Neighbors → espanhol (cursos com ui:'es') */
+if(typeof FXES_MAP!=='undefined')Object.assign(FXES_MAP,{
+'Caça-níveis de frases':'Niveles de frases','Memória de palavras':'Memoria de palabras','Resposta rápida':'Respuesta rápida','Chat de gírias':'Chat de jergas','Caça-palavras':'Sopa de letras',
+'SUA MISSÃO':'TU MISIÓN','Esse é seu novo vizinho!':'¡Este es tu nuevo vecino!','Conhecer o vizinho':'Conocer al vecino','🇧🇷 Tradução':'🇪🇸 Traducción','🎭 Eu falo minhas falas':'🎭 Yo digo mis líneas','🚩 Algo errado?':'🚩 ¿Algo mal?',
+'Toque em “Próxima fala” para abrir cada mensagem.':'Toca «Siguiente frase» para abrir cada mensaje.','VOCÊ':'TÚ','Próxima fala ▶':'Siguiente frase ▶','Fale sua parte 🎤':'Di tu parte 🎤',
+'Seu navegador não tem microfone: diga em voz alta e toque em “Ver a frase”.':'Tu navegador no tiene micrófono: dilo en voz alta y toca «Ver la frase».','Diga em voz alta e toque em “Ver a frase”.':'Dilo en voz alta y toca «Ver la frase».',
+'O que está estranho nessa fala? (opcional)':'¿Qué hay de raro en esta frase? (opcional)','🔁 revisão':'🔁 repaso','Ouça a cena e toque na resposta certa':'Escucha la escena y toca la respuesta correcta','Escute a fala e escolha o que combina.':'Escucha la frase y elige la que encaja.',
+'Troque as peças':'Cambia las piezas','1 · escolha o começo':'1 · elige el comienzo','Troque as peças e ouça cada frase nova.':'Cambia las piezas y escucha cada frase nueva.',
+'Ache os pares':'Encuentra los pares','Vire as cartas e junte figura e palavra.':'Voltea las cartas y une imagen y palabra.','Como você responde?':'¿Cómo respondes?','Responda como um local!':'¡Responde como un local!','Escolha a resposta':'Elige la respuesta',
+'1 · Ouça e repita':'1 · Escucha y repite','🗣️ Como falam de verdade':'🗣️ Cómo se habla de verdad','🔊 Rápido (real)':'🔊 Rápido (real)','Próxima ▶':'Siguiente ▶','Fale em voz alta e se avalie.':'Dilo en voz alta y evalúate.','Fale a frase 🎤':'Di la frase 🎤',
+'Repita, complete e depois lembre sem olhar!':'¡Repite, completa y luego recuerda sin mirar!','Pular':'Saltar','Toque nas palavras coloridas:':'Toca las palabras de color:','amarelo = essencial ⭐':'amarillo = esencial ⭐','⭐ Essencial':'⭐ Esencial','Próxima mensagem ▶':'Siguiente mensaje ▶',
+'O que você diria?':'¿Qué dirías?','Escolha a melhor frase':'Elige la mejor frase','Use o que você viu no chat.':'Usa lo que viste en el chat.','💡 Dica':'💡 Pista','↩︎ Apagar':'↩︎ Borrar','Monte as palavras':'Arma las palabras','Ouça a palavra e toque nas letras.':'Escucha la palabra y toca las letras.',
+'Ache as palavras':'Encuentra las palabras','Visite as paradas':'Visita las paradas','Visite cada parada: toque no cartão para ouvir a frase e carimbar seu passaporte.':'Visita cada parada: toca la tarjeta para escuchar la frase y sellar tu pasaporte.','Vamos passear pelos lugares que você já conhece!':'¡Vamos a pasear por los lugares que ya conoces!',
+'🔊 Ouvir tudo':'🔊 Escuchar todo','🔊 Ouvir a fala':'🔊 Escuchar la frase','🔊 Ouvir':'🔊 Escuchar',
+'Passaporte do arco':'Pasaporte del arco','Para levar na mochila':'Para llevar en la mochila'
+});

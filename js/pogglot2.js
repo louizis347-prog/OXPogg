@@ -191,7 +191,7 @@ function sectionHead(h,p,right){return `<div class="p2sh"><div><h2>${E(h)}</h2>$
 function langArt(l,iconId,sub){
   return `<div class="art" style="--c:${l.c};--cd:${l.cd}"><b class="wm">${E(l.mono)}</b><i class="tile">${PC().icon(iconId||LANG_ICON[l.id]||'globe',58,l.cd)}</i>${sub?`<span class="sub">${E(sub)}</span>`:''}</div>`;
 }
-const LANG_SC={en:'street',es:'plaza',fr:'paris',de:'station',it:'lisboa',pt:'ipanema',nb:'plaza',nbes:'plaza',nbfr:'paris',nbde:'station',enes:'street'};
+const LANG_SC={en:'street',es:'plaza',fr:'paris',de:'station',it:'lisboa',pt:'ipanema',nb:'plaza',nbes:'plaza',nbfr:'paris',nbde:'station',nbpt:'ipanema',enes:'street'};
 const LV_SC={A1:'cafe',A2:'street',B1:'office',B2:'station',C1:'library',C2:'ballroom'};
 const sceneArt=(key,sc)=>{try{return PC().svg({t:String(key),sc,a:{w:String(key),k:'Cidade'},n:0},{noChar:true})}catch(e){return ''}};
 function workCover(w,k){const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:k||w.k||''}};return PC().work(e)}
@@ -230,7 +230,7 @@ window.home=function(){
   const res=(()=>{try{return resumeTarget()}catch(e){return null}})(),u=me();
   let goal=null;try{goal=window.PogSettings&&PogSettings.goalState?PogSettings.goalState():null}catch(e){}
   const due=(()=>{try{return srsDueCount()}catch(e){return 0}})();
-  const ls0=PU().LANGS,order=['nb','nbes','nbfr','nbde','en','es','fr','de','it','pt','enes'],ls=ls0.slice().sort((x,y)=>(order.indexOf(x.id)<0?99:order.indexOf(x.id))-(order.indexOf(y.id)<0?99:order.indexOf(y.id)));
+  const ls0=PU().LANGS,order=['nb','nbes','nbfr','nbde','nbpt','en','es','fr','de','it','pt','enes'],ls=ls0.slice().sort((x,y)=>(order.indexOf(x.id)<0?99:order.indexOf(x.id))-(order.indexOf(y.id)<0?99:order.indexOf(y.id)));
   const first=u&&u.name?String(u.name).split(' ')[0]:'';
   const rc=res?COURSES[res.cid]:null,rlv=res?lvlOf(res.cid):'';
   const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b data-cu>${v}</b><small>${E(l)}</small></span>`;
@@ -516,7 +516,7 @@ function card5(l,i,big){
 }
 window.coursesPage=function(){
   PU().cur='courses';setHash('#/courses');
-  const ls=PU().LANGS,nb=ls.filter(l=>/^nb(es|fr|de)?$/.test(l.id)),rest=ls.filter(l=>!/^nb(es|fr|de)?$/.test(l.id));
+  const ls=PU().LANGS,nb=ls.filter(l=>/^nb(es|fr|de|pt)?$/.test(l.id)),rest=ls.filter(l=>!/^nb(es|fr|de|pt)?$/.test(l.id));
   const order=['en','es','fr','de','it','pt','enes'];rest.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
   shell(`<header class="p3ch"><span class="p2eyebrow">${E(t('navCourses').toUpperCase())}</span><h1>${E(t('coursesPage'))}</h1><p>${E(t('coursesPageSub'))}</p></header>
   <section class="p3nbsec">${sectionHead(t('nbSec'),t('nbSecSub'))}<div class="p5grid two">${nb.map((l,i)=>card5(l,i,true)).join('')}</div></section>

@@ -40,6 +40,7 @@ const LANGS=[
  {id:'nb',mono:'NB',c:'#E0703A',cd:'#B5521F',cl:'#FFE0CE',n:{pt:'Neighbors · Inglês',es:'Neighbors · Inglés'},sub:['nb-a1','nb-a2','nb-b1','nb-b2','nb-c1','nb-c2']},
  {id:'nbes',mono:'NB',c:'#D9467A',cd:'#A82D5C',cl:'#FFDCE8',n:{pt:'Neighbors · Espanhol',es:'Neighbors · Español'},sub:['nbes-a1']},
  {id:'nbde',mono:'NB',c:'#D4A017',cd:'#9A7410',cl:'#FFF0BF',n:{pt:'Neighbors · Alemão',es:'Neighbors · Alemán'},sub:['nbde-a1']},
+ {id:'nbpt',mono:'NB',c:'#1FA35C',cd:'#13763F',cl:'#D3F5E1',n:{pt:'Neighbors · Português',es:'Neighbors · Portugués'},sub:['nbpt-a1']},
  {id:'nbfr',mono:'NB',c:'#2F6BE8',cd:'#1F4DB8',cl:'#D7E3FF',n:{pt:'Neighbors · Francês',es:'Neighbors · Francés'},sub:['nbfr-a1']},
  {id:'pt',mono:'PT',c:'#3FBF3F',cd:'#2A962A',cl:'#D2F2D2',n:{pt:'Português',es:'Portugués'},sub:['pt']}
 ];
