@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=143').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=144').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -1905,6 +1905,30 @@ function speechWarn(nVoices){const now=Date.now();if(now-SPEECH_WARNED<20000)ret
 function speak(text,lang,btn,speaker,slow){
   if(window.PogTTS&&PogTTS.cloudReady()){PogTTS.cloudSpeak(text,lang,btn,speaker,slow,()=>speakDevice(text,lang,btn,speaker,slow));return}
   return speakDevice(text,lang,btn,speaker,slow)}
+/* Divide a fala em frases e orações para respeitar ponto, vírgula, ? e !: cada trecho é falado
+   por vez, com pausa proporcional à pontuação (em vez de uma leitura corrida e mecânica). */
+function prosodySplit(text,lang){
+  const t=String(text||'').replace(/(\d)[.,](?=\d)/g,'$1\u0001').replace(/\s+/g,' ').trim();if(!t)return[{t:' ',pause:0}];
+  const ja=/^ja/i.test(lang||'');
+  const re=ja?/[^。！？!?、，,…]+[。！？!?、，,…]*/g:/[^.!?;:,…]+(?:\.{3}|[.!?;:,…]+|$)/g;
+  const out=[];let m;const parts=t.match(re)||[t];
+  for(const raw of parts){
+    const seg=raw.trim().replace(/\u0001/g,',');if(!seg)continue;
+    const end=(seg.match(/[。！？!?、，,;:….]+$/)||[''])[0];
+    const q=/[?？]/.test(end)||(ja&&/か[。？?]?$/.test(seg)),x=/[!！]/.test(end);
+    const strong=/[。.!?！？…]/.test(end)&&!/,$/.test(end);
+    const pause=q||x?430:strong?380:/[;:]/.test(end)?260:/[、，,]/.test(end)?170:0;
+    out.push({t:seg,q:q,x:x,pause:pause});
+  }
+  /* trechos muito curtos (ex.: "Ah,") se juntam ao seguinte para não soar picotado */
+  const merged=[];
+  for(let i=0;i<out.length;i++){
+    const o=out[i];
+    if(o.t.replace(/[^\p{L}\p{N}]/gu,'').length<3&&i<out.length-1&&!o.q&&!o.x){out[i+1].t=o.t+' '+out[i+1].t;continue}
+    merged.push(o);
+  }
+  return merged.length?merged:[{t:t,pause:0}];
+}
 function speakDevice(text,lang,btn,speaker,slow){try{
   if(window.PogTTS)PogTTS.stop();
   /* Android: a lista de vozes chega depois do primeiro toque; espera um instante, uma única vez, em vez de falar sem voz */
@@ -1925,14 +1949,14 @@ function speakDevice(text,lang,btn,speaker,slow){try{
   /* vozes locais (instaladas no aparelho) primeiro: as de rede falham/ficam mudas com sinal ruim ou dentro do artefato */
   pool=pool.slice().sort((a,b)=>(b.localService?1:0)-(a.localService?1:0));
   let chosen=pool.find(v=>v.lang.replace('_','-')===lang)||pool[0];
-  let pitch=1,rate=.82;
+  let pitch=1,rate=.9;
   if(speaker==='Poggie'){
     /* Poggie é um personagem masculino e ainda jovem/fofo: voz de menino, leve e animada, sem ser grave demais */
     const maleV=pool.filter(v=>MALE_VOICE_HINTS.test(v.name||'')&&!FEMALE_VOICE_HINTS.test(v.name||''));
     chosen=maleV[0]||pool.find(v=>!FEMALE_VOICE_HINTS.test(v.name||''))||chosen;
     pitch=1.18;rate=.97;
   }else if(speaker&&YOU_NAMES.includes(speaker)){
-    pitch=1;rate=.82;
+    pitch=1;rate=.9;
   }else if(speaker&&GENDER_MAP[speaker]){
     const[g,idx]=GENDER_MAP[speaker];
     const detected=pool.map(v=>({v,g:voiceGenderGuess(v)}));
@@ -1940,7 +1964,7 @@ function speakDevice(text,lang,btn,speaker,slow){try{
     const gp=sameG.length?sameG:pool;
     chosen=gp.length?gp[idx%gp.length]:chosen;
     pitch=(g==='f'?1.05:0.86)+idx*0.12;
-    rate=.78+idx*0.02;
+    rate=.86+idx*0.02;
   }
   if(window.PogTTS){const o=PogTTS.pick({lang,speaker,rate,gender:(speaker&&GENDER_MAP[speaker])?GENDER_MAP[speaker][0]:(speaker==='Poggie'?'m':null),gidx:(speaker&&GENDER_MAP[speaker])?GENDER_MAP[speaker][1]:0,guess:voiceGenderGuess});if(o){if(o.voice)chosen=o.voice;if(o.rate)rate=o.rate}}
   if(slow)rate=rate*(typeof slow==='number'?slow:.78);
@@ -1948,28 +1972,37 @@ function speakDevice(text,lang,btn,speaker,slow){try{
   if(btn)btn.classList.add('playing');
   const done=()=>{clearInterval(SPEAK_KEEPALIVE);if(btn)btn.classList.remove('playing');CURRENT_UTTER=null;if(__end&&!__endFired){__endFired=true;setTimeout(__end,0)}};
   let started=false,retried=false;
-  const go=(useVoice)=>{
-    const w=useVoice?u:Object.assign(new SpeechSynthesisUtterance(speechText),{lang:lang,pitch:pitch,rate:rate});
-    if(useVoice&&chosen){w.voice=chosen;if(chosen.lang)w.lang=chosen.lang.replace('_','-')}
-    CURRENT_UTTER=w;
-    w.onstart=()=>{started=true};
-    w.onend=()=>{if(CURRENT_UTTER===w)done()};
-    w.onerror=ev=>{
-      const er=ev&&ev.error;
-      if(er==='canceled'||er==='interrupted'){if(CURRENT_UTTER===w)done();return}
-      /* erro real (voz de rede indisponível, etc.): tenta uma vez com a voz padrão do aparelho */
-      if(!retried&&CURRENT_UTTER===w){retried=true;try{speechSynthesis.cancel()}catch(x){}setTimeout(()=>go(false),60)}else{done();speechWarn(allV.length)}
+  const segs=prosodySplit(speechText,lang),TOK=(speakDevice._tok=(speakDevice._tok||0)+1);
+  const go=(useVoice,from)=>{
+    const play=i=>{
+      if(speakDevice._tok!==TOK)return;
+      const sg=segs[i],last=i===segs.length-1;
+      const w=useVoice?new SpeechSynthesisUtterance(sg.t):Object.assign(new SpeechSynthesisUtterance(sg.t),{lang:lang});
+      w.lang=lang;
+      /* contorno de entonação: pergunta sobe no fim, exclamação ganha energia, afirmação desce e fecha */
+      w.pitch=Math.max(.5,Math.min(1.8,pitch+(sg.q?.14:sg.x?.09:last?-.03:.02)));
+      w.rate=Math.max(.45,Math.min(1.5,rate*(sg.x?1.05:1)*(last&&!sg.q?.97:1)));
+      if(useVoice&&chosen){w.voice=chosen;if(chosen.lang)w.lang=chosen.lang.replace('_','-')}
+      CURRENT_UTTER=w;
+      w.onstart=()=>{started=true};
+      w.onend=()=>{if(CURRENT_UTTER!==w||speakDevice._tok!==TOK)return;if(last)done();else setTimeout(()=>play(i+1),sg.pause)};
+      w.onerror=ev=>{
+        const er=ev&&ev.error;
+        if(er==='canceled'||er==='interrupted'){if(CURRENT_UTTER===w)done();return}
+        if(!retried&&CURRENT_UTTER===w){retried=true;try{speechSynthesis.cancel()}catch(x){}setTimeout(()=>go(false,0),60)}else{done();speechWarn(allV.length)}
+      };
+      try{speechSynthesis.resume()}catch(x){}
+      const busy=speechSynthesis.speaking||speechSynthesis.pending;
+      if(busy&&i===0)try{speechSynthesis.cancel()}catch(x){}
+      const fire=()=>{try{if(CURRENT_UTTER===w)speechSynthesis.speak(w)}catch(x){done()}};
+      /* sem fala em andamento: fala direto dentro do toque (iOS exige); senão espera o cancel assentar */
+      if(busy&&i===0)setTimeout(fire,60);else fire();
+      /* vigia: se em ~1,5 s nada começou, tenta de novo com a voz padrão */
+      if(i===0)setTimeout(()=>{if(CURRENT_UTTER===w&&!started&&!speechSynthesis.speaking){if(!retried){retried=true;try{speechSynthesis.cancel()}catch(x){}setTimeout(()=>go(false,0),60)}else{done();speechWarn(allV.length)}}},1500);
     };
-    try{speechSynthesis.resume()}catch(x){}
-    const busy=speechSynthesis.speaking||speechSynthesis.pending;
-    if(busy)try{speechSynthesis.cancel()}catch(x){}
-    const fire=()=>{try{if(CURRENT_UTTER===w)speechSynthesis.speak(w)}catch(x){done()}};
-    /* sem fala em andamento: fala direto dentro do toque (iOS exige); senão espera o cancel assentar */
-    if(busy)setTimeout(fire,60);else fire();
-    /* vigia: se em ~1,5 s nada começou, tenta de novo com a voz padrão */
-    setTimeout(()=>{if(CURRENT_UTTER===w&&!started&&!speechSynthesis.speaking){if(!retried){retried=true;try{speechSynthesis.cancel()}catch(x){}setTimeout(()=>go(false),60)}else{done();speechWarn(allV.length)}}},1500);
+    play(from||0);
   };
-  go(true);
+  go(true,0);
   /* Bug do Chrome desktop: fala longa trava. O pulso pause/resume quebra o Android, então só no desktop. */
   if(plainText.length>120&&!/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)){SPEAK_KEEPALIVE=setInterval(()=>{if(!speechSynthesis.speaking){clearInterval(SPEAK_KEEPALIVE);return}speechSynthesis.pause();speechSynthesis.resume()},8000)}
   }catch(e){}}
@@ -4298,8 +4331,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=57',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=58',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=58',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=59',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';

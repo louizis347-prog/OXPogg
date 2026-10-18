@@ -29,6 +29,8 @@ function quality(v){
   if(/siri/i.test(n))q+=3;
   if(/google/i.test(n))q+=2;
   if(/microsoft/i.test(n)&&/online/i.test(n))q+=3;
+  if(/online/i.test(n)&&/natural/i.test(n))q+=3;
+  if(/kyoko|otoya|hattori|o-ren|kanji|nanami|keita|google 日本語|google italiano|google deutsch|google français|google português/i.test(n))q+=1;
   if(v.localService)q+=1;
   if(BAD.test(n))q-=6;
   return q;
@@ -65,7 +67,7 @@ function pick(o){
       else if(sp==='Poggie'){const m=best.filter(v=>o.guess&&o.guess(v)==='m');voice=(m.length?m:best)[0]}
       else voice=best[0];
     }
-    return{voice,rate:(o.rate||.82)*(S.rate||1)};
+    return{voice,rate:(o.rate||.9)*(S.rate||1)};
   }catch(e){return null}
 }
 
