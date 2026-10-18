@@ -132,3 +132,14 @@
 .goalcard details{margin-top:10px}.goalcard summary{cursor:pointer;font-weight:700;font-size:13px}.gc-t{width:100%;border-collapse:collapse;margin:8px 0;font-size:13px}.gc-t th,.gc-t td{padding:6px 8px;text-align:left;border-bottom:1px solid rgba(80,60,140,.1)}
 .cv-desc{margin:10px 0 0;font-size:14px;line-height:1.5;opacity:.9}.cv-pe{margin-top:8px;font-size:13px;opacity:.85}.cv-pf{font-size:20px;margin-right:6px}
 .cv-m{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.cv-m span{padding:4px 10px;border-radius:99px;background:rgba(79,124,255,.12);font-size:12px;font-weight:700}.cv-cum{display:block;margin-top:6px;opacity:.7}
+
+/* Traduções e dicas sempre legíveis (antes ficavam cinza claro por causa de opacidade/cor fraca) */
+.nb-big-line em,.nb-hint,.nb-sp em{opacity:1!important;color:#3a3463!important;font-weight:700}
+.nb-big-line em{font-size:14.5px}
+.nb-hint{font-size:13.5px}
+.nb-b small,.nb-rj,.nb-rj2,.nb-real small,.nb-real .w{opacity:1!important}
+.nb-b .nb-who{opacity:.9!important}
+.nb-row:not(.me) .nb-b small,.nb-row:not(.me) .nb-rj,.nb-row:not(.me) .nb-rj2{color:#3a3463}
+#player.az .fx-rc small{color:#2c4843!important;font-weight:700}
+.quote .tr,.dline .tr{color:var(--ink2)!important;font-weight:700}
+html[data-theme="dark"] .quote .tr,html[data-theme="dark"] .dline .tr{color:#d8d3f5!important}
