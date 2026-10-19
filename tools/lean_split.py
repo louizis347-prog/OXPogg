@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import json,glob,sys,copy,os,re
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import reg3 as r
 A_MAIN=['cover','review','read','words','wsent','verbs','scene','dquiz','pat','sbuild','lplay','tdlg','convo','produce']
 B_MAIN=['cult1','cover','scene','words','tapimg','match','cquiz','build','grammar','convo','produce','wrap']

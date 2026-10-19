@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Cultura (original): "A obra" (cultob) + "Por dentro" (cultx) + "Missão da obra" (cultgame). Continuação: "Você sabia?" + linha do tempo (culttl).
 import json,glob,sys,os,re,random
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 HERE=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,os.path.join(HERE,'rdg'))
 import reg3 as r,cult_a1
 import importlib

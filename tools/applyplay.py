@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Aplica o formato lúdico (rdgplay) e a nova sequência aos episódios de regras listados em tools/rdg/play_a1.py
 import json,glob,sys,os
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'rdg'))
 import reg3 as r,play_a1 as pl
 cid='en-a1'
