@@ -148,7 +148,7 @@ window.topbar=function(L){
     <button class="pgstat rev hide-s" data-go="review" title="${k('review')}">🔁 ${srsDueCount()||''}</button>
     ${u?`<button class="pgme" data-go="profile" title="${esc2(u.name)}"><span class="av">${esc2(u.avatar||'🙂')}</span><span class="nm">${esc2((u.name||'').split(' ')[0])}</span></button>`
        :`<button class="pgme guest" data-go="auth">${k('login')}</button>`}
-    <div class="pglang" role="group" aria-label="Idioma"><button data-hl="pt" aria-pressed="${ST.homeLang!=='es'}">PT</button><button data-hl="es" aria-pressed="${ST.homeLang==='es'}">ES</button></div>
+    ${window.pgLangHTML?window.pgLangHTML():''}
    </div></div></header>`;
 };
 function mountNav(){

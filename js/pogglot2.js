@@ -62,6 +62,24 @@ const TX={
   rank:'Ranking',chat:'Conversas',partners:'Parceiros',commT:'Comunidade',commSub:'Veja quem está na frente, converse e ache parceiros de estudo.',
   join:'Entre para aparecer no ranking',joinSub:'Crie sua conta gratuita para entrar na disputa, conversar e corrigir mensagens.',
   yourPos:'Sua posição',all2:'Todos',pts:'XP',daysU:'dias',epsU:'eps'},
+ en:{shMy:'My shelf',shSort1:'Recent',shSearch:'Search work or author',shAuth:'authors',shWorks:'works',shEmptyT:'Your shelf is empty',shGo:'Start a course',shClose:'Close',
+  cefrT:'From A1 to C2',cefrSub:'The six levels of the European Framework (CEFR).',
+  l1:'Beginner',l2:'Basic',l3:'Intermediate',l4:'Upper intermediate',l5:'Advanced',l6:'Mastery',
+  commHd:'Study together',achHd:'Achievements',seeAll:'See all',openComm:'Open community',openRank:'See ranking',
+  commTx:'Chat with other learners, correct and get corrected, and find partners who speak the language you study.',rankTx:'Earn XP, keep your streak and climb leagues.',
+  heroPill:'10-minute episodes',viewCourses:'See courses',navCourses:'Courses',coursesPage:'All courses',
+  howT:'How it works',howSub:'Each episode lasts about 10 minutes and follows four steps.',
+  h1t:'Real scene',h1d:'You hear a short dialogue from a real situation, with subtitles and translation.',
+  h2t:'Vocabulary',h2d:'Six key words per episode, with sound, image and pronunciation tip.',
+  h3t:'Practice',h3d:'Boards and mini-games to lock in what you heard, without memorizing rules.',
+  h4t:'Voice',h4d:'You speak out loud and get feedback on your pronunciation.',
+  navHome:'Home',navEps:'Episodes',navShelf:'Shelf',navComm:'Community',navPanel:'Dashboard',days:'day streak',
+  hello:'Hi! Good to see you',h1a:'Learn languages',h1b:'through culture',lead:'Films, books, music and traditions from each country, in short episodes with voice, practice and a community to talk to.',
+  cont:'Continue',contSub:'Pick up where you left off',contBtn:'Continue',start:'Start now',startBtn:'Start',
+  sStreak:'day streak',sXp:'XP points',sEps:'episodes done',sAcc:'accuracy',
+  courses:'Your courses',coursesSub:'Each language has its own levels, paths and progress.',lessons:'episodes',open:'Open',levels:'levels',
+  shelf:'Cultural shelf',shelfAll:'See shelf',goal:'Today\'s goal',goalDone:'Goal reached!',review2:'Spaced review',review2Go:'Review now',rank:'Ranking',ach:'Achievements',
+  chat:'Chats',partners:'Partners',commT:'Community',review:'Review',continue:'Continue',begin:'Start',ep:'EPISODE',min:'MIN'},
  es:{shMy:'Mi estante',shSort1:'Recientes',shSort2:'A–Z',shSearch:'Buscar obra o autor',shMile:'Próxima meta',shAuth:'autores',shWorks:'obras',shQueue:'En cola para entrar en la estante',shEmptyT:'Tu estante está vacía',shEmptyP:'Termina un episodio y la obra que conociste gana su lugar aquí.',shGo:'Empezar un curso',shNone:'No se encontraron obras.',shClose:'Cerrar',shBy:'de',
   cefrT:'De A1 a C2',cefrSub:'Los seis niveles del Marco Europeo (MCER). En español, también alineado con el DELE.',
   l1:'Principiante',l2:'Básico',l3:'Intermedio',l4:'Intermedio alto',l5:'Avanzado',l6:'Dominio',
@@ -113,7 +131,8 @@ const TX={
   join:'Entra para aparecer en el ranking',joinSub:'Crea tu cuenta gratis para entrar en la competencia, conversar y corregir mensajes.',
   yourPos:'Tu posición',all2:'Todos',pts:'XP',daysU:'días',epsU:'eps'}
 };
-const t=k=>(TX[L0()][k]!=null?TX[L0()][k]:TX.pt[k]);
+const LT=()=>ST.uiEn?'en':L0();
+const t=k=>{const o=TX[LT()];return o&&o[k]!=null?o[k]:TX.pt[k]};
 
 /* ---------- ícones ---------- */
 const sv=p=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
@@ -174,9 +193,11 @@ window.topbar=function(){
     <button class="pgstat gear hide-s" data-act="settings" aria-label="Ajustes" title="Ajustes">${IC.gear()}</button>
     ${u?`<button class="pgme" data-go="profile" title="${E(u.name)}"><span class="av">${E(u.avatar||'🙂')}</span><span class="nm">${E((u.name||'').split(' ')[0])}</span></button>`
        :`<button class="pgme guest" data-go="profile">${IC.me()}<span class="nm">${E(t('navPanel'))}</span></button>`}
-    <div class="pglang" role="group" aria-label="Idioma"><button data-hl="pt" aria-pressed="${ST.homeLang!=='es'}">PT</button><button data-hl="es" aria-pressed="${ST.homeLang==='es'}">ES</button></div>
+    ${window.pgLangHTML()}
    </div></div></header>`;
 };
+window.pgLangHTML=()=>{const cur=ST.uiEn?'en':(ST.homeLang==='es'?'es':'pt'),fl=c=>{try{return fxIcon('flag:'+c,22)}catch(e){return c.toUpperCase()}};
+ return `<div class="pglang pgflags" role="group" aria-label="Idioma / Language">${[['pt','br','Português'],['es','es','Español'],['en','us','English']].map(([k,c,n])=>`<button data-hl="${k}" aria-pressed="${cur===k}" aria-label="${n}" title="${n}">${fl(c)}</button>`).join('')}</div>`};
 function mountNav(){
   let nav=document.getElementById('pgnav');
   if(!nav){nav=document.createElement('nav');nav.id='pgnav';nav.className='pgnav';nav.setAttribute('aria-label','Menu');document.body.appendChild(nav);document.body.classList.add('pg-has-nav')}
