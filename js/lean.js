@@ -50,6 +50,15 @@ if(_g)window.fxGrade=function(ok){
   }catch(e){}
   return r;
 };
+/* --- ilustração em toda tela: banner com a arte da obra do dia quando a tela não tem uma --- */
+const NEEDART=new Set(['rdg','rdgplay','pat','sbuild','wlat','soundlab','cexp','xpr','vplay','dquiz','verbs','wsent','lplay']);
+function addArt(stp,k){
+  if(!NEEDART.has(k)||typeof CULT_PROC!=='function'||stp.querySelector('.fx-banner,.cu2-art,.lean-art'))return;
+  let pa=null;for(const f of P.e.fr){if(f.pa){pa=f.pa;break}if(f.banner&&f.banner.pa){pa=f.banner.pa;break}}
+  if(!pa)return;
+  const d=document.createElement('div');d.className='lean-art';d.innerHTML=CULT_PROC(pa,1);
+  const sv=d.querySelector('svg');if(sv)sv.setAttribute('preserveAspectRatio','xMidYMid slice');
+  const eb=stp.querySelector('.eyebrow');if(eb)eb.after(d);else stp.insertBefore(d,stp.firstChild)}
 /* --- render --- */
 const _r=window.render;
 window.render=function(){
@@ -60,7 +69,7 @@ window.render=function(){
       const stp=$$('#pstage .step');
       if(stp){
         const f=P.e.fr[P.i];stp.dataset.fk=(f&&f.k)||'';
-        stp.classList.add('lean');
+        stp.classList.add('lean');addArt(stp,(f&&f.k)||'');
         const w=(stp.innerText||'').trim().split(/\s+/).length;
         if(w>46)stp.classList.add('lean-dense');
       }

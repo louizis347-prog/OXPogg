@@ -16,28 +16,13 @@
 @keyframes leanJump{30%{transform:translateY(-16px) rotate(-6deg)}60%{transform:translateY(0) rotate(4deg)}}
 @keyframes leanOops{25%{transform:translateX(-6px)}50%{transform:translateX(6px)}75%{transform:translateX(-3px)}}
 /* compactação: nada de rolagem nas telas de exercício */
-.step.lean .az-hero{max-height:150px;overflow:hidden}
-.step.lean .az-ill{max-height:120px;overflow:hidden}
-.step.lean .m2-hint,.step.lean .fx-tip{display:none}
-.step.lean[data-fk=cover] .m2w-fact{display:none}
-.step.lean[data-fk=read] .dp{display:none}
-.step.lean[data-fk=wsent] .m2-wl{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.step.lean[data-fk=wsent] .m2-wc{padding:8px}
-.step.lean[data-fk=verbs] .vb-card{padding:8px 10px}.step.lean[data-fk=verbs] .vb-head{max-height:70px;overflow:hidden}
-.step.lean[data-fk=pat] .m2-live,.step.lean[data-fk=pat] .m2-pg{display:none}
-.step.lean[data-fk=read] .m2-text{font-size:.95rem}.step.lean[data-fk=read] .m2-s{min-height:0;padding:4px 8px}
-.step.lean[data-fk=produce] .rw-goals,.step.lean[data-fk=produce] .fx-cul,.step.lean[data-fk=produce] .yt-game,.step.lean[data-fk=produce] .m2-ill{display:none}
-.step.lean[data-fk=tdlg] .td-coach{max-height:80px;overflow:hidden}
 .step.lean-dense{font-size:.95em}
-@media(max-height:760px){.step.lean .az-hero,.step.lean .az-ill{max-height:90px}}
 @media(prefers-color-scheme:dark){.lean-more{background:linear-gradient(135deg,#0f2a29,#14201f);color:#9fe3df;border-color:#2aa7a3}.lean-more-tag{background:#12302f;color:#9fe3df}.lean-streak{background:#3a2410;color:#ffbb70}}
 [data-theme=dark] .lean-more{background:linear-gradient(135deg,#0f2a29,#14201f);color:#9fe3df;border-color:#2aa7a3}
 @media(prefers-reduced-motion:reduce){.lean-star,.lean-pop,.lean-jump,.lean-oops{animation:none}}
-.step.lean[data-fk=read] .az-ill{display:none}.step.lean[data-fk=read] .m2-s{padding:2px 8px;line-height:1.25}
-.step.lean[data-fk=produce] .rw-sit{max-height:120px;overflow:hidden}
 .cu2-art{max-height:104px}.cu2-art svg{height:104px}
 .cu2 .rdg-o{gap:6px}.cu2 .rdg-o button{min-height:42px;padding:8px 12px}
 .cu2-fact{margin:6px 0;padding:9px 12px;font-size:14px}.cu2-q{margin:6px 0 4px;font-size:17px}
-.step.lean[data-fk=soundlab] .m2-exg>*:nth-child(n+3),.step.lean[data-fk=soundlab] .m2-prs>*:nth-child(n+3){display:none}
-.step.lean[data-fk=soundlab] .sl-hero{max-height:80px;overflow:hidden}
-.step.lean[data-fk=cexp] .xp-top,.step.lean[data-fk=xpr] .xp-top{padding-top:8px;padding-bottom:8px}
+
+.lean-art{height:78px;border-radius:18px;overflow:hidden;margin:6px 0;box-shadow:0 8px 18px -12px rgba(20,40,80,.5)}
+.lean-art svg{display:block;width:100%;height:100%}
