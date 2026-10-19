@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Cultura em 2 quadros no original ("Dentro da obra" + perguntas) e "Quem fez?" na continuação.
 import json,glob,sys,os,re,random,importlib
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 HERE=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,os.path.join(HERE,'rdg'))
 import reg3 as r,cult_a1
 ENTER={'🎬':"Procure o trailer ou uma cena curta com legendas em inglês. Depois, assista ao filme inteiro com pipoca!",'📺':"Assista ao primeiro episódio com legendas em inglês e anote 3 expressões que você ouviu.",'🎶':"Ouça a música lendo a letra e cante o refrão em voz alta.",'📖':"Leia a primeira página em voz alta, mesmo sem entender tudo: o ritmo já ensina.",'🖼️':"Olhe a imagem por um minuto e descreva três coisas que você vê, em inglês.",'🎨':"Olhe a imagem por um minuto e descreva três coisas que você vê, em inglês.",'🎭':"Procure um trecho encenado e preste atenção no ritmo das falas.",'📜':"Ouça o texto lido em voz alta e acompanhe com os olhos.",'🏛️':"Procure fotos e visitas virtuais e repare nos detalhes."}

@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 # Cultura (original): "A obra" (cultob) + "Por dentro" (cultx) + "Missão da obra" (cultgame). Continuação: "Você sabia?" + linha do tempo (culttl).
 import json,glob,sys,os,re,random
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 HERE=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,os.path.join(HERE,'rdg'))
 import reg3 as r,cult_a1
 import importlib
+for _f in sorted(glob.glob(os.path.join(HERE,'rdg','cult_a1_*.py'))): cult_a1.C.update(importlib.import_module(os.path.basename(_f)[:-3]).C)
 ENTER={'🎬':"Procure o trailer ou uma cena curta com legendas em inglês. Depois, assista ao filme inteiro com pipoca!",'📺':"Assista ao primeiro episódio com legendas em inglês e anote 3 expressões que você ouviu.",'🎶':"Ouça a música lendo a letra e cante o refrão em voz alta.",'📖':"Leia a primeira página em voz alta, mesmo sem entender tudo: o ritmo já ensina.",'🖼️':"Olhe a imagem por um minuto e descreva três coisas que você vê, em inglês.",'🎨':"Olhe a imagem por um minuto e descreva três coisas que você vê, em inglês.",'🎭':"Procure um trecho encenado e preste atenção no ritmo das falas.",'📜':"Ouça o texto lido em voz alta e acompanhe com os olhos.",'🏛️':"Procure fotos e visitas virtuais e repare nos detalhes."}
 STOP=set("the a an and or but of to in on at for with from by is are was were be been this that it its as not no so if then than your my our their his her you i we they he she me him them us do did does have has had will would can could may might must should".split())
 def emo(k): return str(k).split(' ')[0]
@@ -41,6 +42,12 @@ def run(cid):
             tiles+=[{'ic':'🗣️','l':'Uma frase da obra','en':A['quote'][0],'pt':A['quote'][1]},{'ic':'💡','l':'Curiosidade','t':A['curio']},{'ic':'🎯','l':'Como entrar','t':A['enter']}]
         else:
             tiles+=[{'ic':'💡','l':'Curiosidade','t':cw['fact'][2]},{'ic':'🎯','l':'Como entrar','t':ENTER.get(k,"Procure um trecho curto e curta os primeiros cinco minutos.")}]
+        wd=next((z for z in m['fr'] if z['k']=='words'),None)
+        if wd and wd.get('items'):
+            tema=str(cov.get('sub','')).split(':')[0].strip().rstrip('.')
+            ws=wd['items'][:3]
+            lst=', '.join('**%s** (%s)'%(i[0],str(i[2]).lower()) for i in ws[:-1])+(' e ' if len(ws)>1 else '')+'**%s** (%s)'%(ws[-1][0],str(ws[-1][2]).lower())
+            tiles.append({'ic':'🔗','l':'Ligação com a lição','t':'Na lição de hoje%s você vê %s. Para fixar, conte algo sobre a obra em voz alta usando uma dessas palavras.'%(' ('+tema+')' if tema else '',lst)})
         cx={'k':'cultx','title':'Por dentro da obra','pa':cw.get('pa'),'work':cw['work'],'tag':cw.get('kind'),'tiles':tiles,'say':'Abra cada cartão e descubra mais!'}
         rounds=[]
         if len(pan)>=2: rounds.append({'t':'order','items':pan})

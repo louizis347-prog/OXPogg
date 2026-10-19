@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Integra arcos novos dos cursos Neighbors e injeta os passos extras (ditado, acentos, der/die/das, escrita à mão).
 import json,glob,sys,re,random,unicodedata,os
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import reg3 as r
 R='/home/user/OXPogg/'
 G=['#2D98DA','#20BF6B']

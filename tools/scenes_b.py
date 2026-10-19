@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # "Monte a cena" para as continuações do B1 em diante (objetos e lugares sorteados por episódio; ordens no nível do curso).
 import json,glob,sys,random
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import reg3 as r
 O=[('☕','coffee','o café','it'),('🗺️','map','o mapa','it'),('🧳','bag','a mala','it'),('📱','phone','o celular','it'),('📕','book','o livro','it'),('🔑','key','a chave','it'),('🎒','backpack','a mochila','it'),('☂️','umbrella','o guarda-chuva','it'),('🎁','gift','o presente','it'),('💡','lamp','a luminária','it'),('📷','camera','a câmera','it'),('🧢','cap','o boné','it'),('🍎','apple','a maçã','it'),('🕰️','clock','o relógio','it'),('🔦','flashlight','a lanterna','it'),('🧸','toy','o brinquedo','it')]
 S=[('🪑','chair','on the chair','na cadeira'),('🚌','bus','on the bus','no ônibus'),('🚪','door','next to the door','ao lado da porta'),('🛏️','bed','under the bed','embaixo da cama'),('📦','box','in the box','na caixa'),('🪟','window','by the window','perto da janela'),('🛒','cart','in the cart','no carrinho'),('🌳','tree','under the tree','embaixo da árvore'),('🛋️','sofa','on the sofa','no sofá'),('🧺','basket','in the basket','na cesta'),('📚','shelf','on the shelf','na prateleira'),('🚕','taxi','in the taxi','no táxi')]

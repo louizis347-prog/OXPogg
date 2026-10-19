@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Divide a "Missão dos verbos" (16 passos) em 7 + 7: original (completar + ouvir) e continuação "Verbo em ação" (montar + forma com he/she).
 import json,glob,sys,copy
-sys.path.insert(0,'/tmp/claude-0/-home-user-OXPogg/097f2c11-a1d9-5802-aa7c-396fb7b01940/scratchpad')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import reg3 as r
 def plan(k,steps):
     out=[]
