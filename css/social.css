@@ -34,3 +34,9 @@
 .pr-fb{display:grid;gap:4px}.pr-words{display:flex;flex-wrap:wrap;gap:4px}
 .pr-w{padding:2px 8px;border-radius:8px;font-weight:700;color:#0a0820}.pr-w.ok{background:#b2f2bb}.pr-w.near{background:#ffec99}.pr-w.bad{background:#ffc9c9}
 html[data-theme=dark] .pr-b{background:#2a2750}
+/* vocabulário */
+.vc-h{margin:14px 0 6px}.vc-line{margin:8px 0}.vc-line>div{display:flex;justify-content:space-between;font-size:14px}.vc-line span{color:var(--ink2,#4a4670);font-weight:700}
+.vc-bar{height:10px;border-radius:99px;background:rgba(120,110,200,.18);overflow:hidden;margin-top:4px}.vc-bar i{display:block;height:100%;border-radius:99px;min-width:2px}
+.vc-lv{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:start;padding:8px 0;border-top:1px solid rgba(120,110,200,.15)}.vc-lv b{font-size:18px;color:#6c4cf0}.vc-lv small{display:block;margin-top:4px;color:var(--ink2,#4a4670);font-weight:700}
+.vc-tabs{display:flex;gap:8px;margin:14px 0 8px}.vc-q{width:100%;padding:10px 12px;border-radius:12px;border:1.5px solid rgba(120,110,200,.4);font:inherit;background:var(--bg,#fff);color:inherit;margin-bottom:6px;box-sizing:border-box}
+.vc-list{list-style:none;margin:0;padding:0}.vc-list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid rgba(120,110,200,.15)}.vc-list span{color:var(--ink2,#4a4670);text-align:right;font-weight:600}
