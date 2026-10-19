@@ -13,7 +13,7 @@ function track(){
 }
 function logExit(){
   if(!P||!P.e||!P.e.fr||P.isTest)return;
-  const done=P.steps[P.i]==='done',m=ld(),k=P.cid+(P.e.ex?':x':'');
+  const done=P.steps[P.i]==='done',m=ld(),k=P.cid+('');
   const r=m[k]||(m[k]={n:0,fin:0,at:{}});r.n++;
   if(done)r.fin++;else{const a=(P.lastK||'?')+'@'+(P.lastI||0);r.at[a]=(r.at[a]||0)+1}
   sv(m);
@@ -21,25 +21,7 @@ function logExit(){
 }
 window.pogDropStats=()=>ld();
 const _c=window.closePlayer;
-window.closePlayer=function(){logExit();const x=P&&P.extraPop;const r=_c.apply(this,arguments);if(x)x();return r};
-/* --- Mais treino --- */
-const companion=(cid,n)=>((typeof EPX!=='undefined'&&EPX[cid])||[]).find(x=>x.xof===n);
-function playExtra(cid,x){
-  const arr=EP[cid];arr.push(x);const idx=arr.length-1;
-  const pop=()=>{const i=arr.indexOf(x);if(i>=0)arr.splice(i,1)};
-  try{play(cid,idx)}catch(e){pop();throw e}
-  if(P)P.extraPop=pop;else pop();
-}
-window.playExtra=playExtra;
-function addDone(){
-  if(!P||!P.e||P.isTest||P.steps[P.i]!=='done'||P.e.ex)return;
-  const st=$$('#pstage .step');if(!st||st.querySelector('.lean-more'))return;
-  const x=companion(P.cid,P.e.n);if(!x)return;
-  const b=document.createElement('button');b.type='button';b.className='lean-more';
-  b.innerHTML='<span class="lm-ic">🎯</span><span><b>Mais treino</b><small>Sons, expressões e uma 2ª cena · ~4 min</small></span>';
-  b.onclick=()=>{const cid=P.cid;closePlayer();setTimeout(()=>playExtra(cid,x),60)};
-  st.appendChild(b);
-}
+window.closePlayer=function(){logExit();return _c.apply(this,arguments)};
 /* --- recompensas: sequência de acertos, estrelas, mascote --- */
 function pop(txt){
   const p=$$('#player');if(!p)return;
@@ -73,7 +55,7 @@ const _r=window.render;
 window.render=function(){
   const out=_r.apply(this,arguments);
   try{
-    track();addDone();
+    track();
     if(P&&P.e&&P.e.fr&&!P.isTest){
       const stp=$$('#pstage .step');
       if(stp){
@@ -87,16 +69,4 @@ window.render=function(){
   }catch(e){}
   return out;
 };
-/* --- "Mais treino" nos itens do mapa --- */
-function decorate(){
-  document.querySelectorAll('button.node[data-ep]').forEach(b=>{
-    if(b.querySelector('.lean-more-tag'))return;
-    const [cid,i]=b.dataset.ep.split(':');const e=(EP[cid]||[])[+i];
-    if(!e||!e.xn||!companion(cid,e.n))return;
-    const t=document.createElement('span');t.className='lean-more-tag';t.textContent='＋ treino';t.setAttribute('role','button');
-    t.onclick=ev=>{ev.stopPropagation();ev.preventDefault();playExtra(cid,companion(cid,e.n))};
-    (b.querySelector('.info small')||b).appendChild(t);
-  });
-}
-new MutationObserver(()=>{clearTimeout(decorate.t);decorate.t=setTimeout(decorate,80)}).observe(document.body,{childList:true,subtree:true});
 })();
