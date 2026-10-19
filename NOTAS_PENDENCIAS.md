@@ -16,3 +16,6 @@
 
 ## Regras de trabalho
 Commit + push em main e claude/nifty-mendel-y3nbxt a cada mudança; sem PR; uma coisa por vez; relatórios em português.
+
+## Deploy
+Cloudflare Pages ligado ao GitHub (branch main); cada push em main publica automaticamente.
