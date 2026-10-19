@@ -101,7 +101,7 @@ FXR.nbwrite=function(f,st,n){
       say('Veja a ordem dos traços antes de escrever.');return}
     const draw=(alpha,color,nums)=>{cx.clearRect(0,0,CW,CH);if(alpha>0)paint(cx,text,color||'#bdb5e0',alpha,0,{numbers:!!nums})};
     draw(mode==='trace'?1:0,'#bdb5e0',mode==='trace');
-    ix.lineWidth=20;ix.lineCap='round';ix.lineJoin='round';ix.strokeStyle=(f.g||['#6C5CE7'])[0];
+    ix.lineWidth=15;ix.lineCap='round';ix.lineJoin='round';ix.strokeStyle='#6C3FEF';ix.shadowColor='rgba(108,63,239,.35)';ix.shadowBlur=8;
     let strokes=[],cur=null,on=false,checked=false,hint=false;
     const pos=e=>{const r=ci.getBoundingClientRect();return[(e.clientX-r.left)*CW/r.width,(e.clientY-r.top)*CH/r.height]};
     ci.onpointerdown=e=>{if(checked)return;on=true;const p=pos(e);cur=[p];strokes.push(cur);ci.setPointerCapture&&ci.setPointerCapture(e.pointerId);ix.beginPath();ix.moveTo(p[0],p[1]);ix.lineTo(p[0]+.1,p[1]+.1);ix.stroke();cta('Verificar',true,true)};
@@ -114,11 +114,11 @@ FXR.nbwrite=function(f,st,n){
       if(!strokes.length)return true;
       const r=score(strokes,text),s=stars(r),fb=q('#kwfb',st),pass=mode==='trace'?s>=1:true;
       if(!pass&&tries<1){tries++;fb.className='kw-fb no';fb.textContent=r.cov<.4?'Quase! Faltou cobrir parte do modelo. Apague e tente de novo.':'Seus traços saíram do modelo. Apague e tente de novo, com calma.';cta('Verificar',true,true);return true}
-      checked=true;if(mode==='recall'){const km=store('kw')||{};[...text].forEach(c=>{km[c]=Math.max(km[c]||0,s)});store('kw',km);draw(.8,'#2cc673',false)}
+      checked=true;if(mode==='recall'){const km=store('kw')||{};[...text].forEach(c=>{km[c]=Math.max(km[c]||0,s)});store('kw',km);draw(.55,'#2cc673',false)}
       try{sfx(s>0?'burst':'oops')}catch(e){}
       fb.className='kw-fb '+(s>=2?'ok':'no');
       fb.innerHTML=`<div class="kw-stars">${'★'.repeat(s)}${'☆'.repeat(3-s)}</div>`+(r.ordBad?'Atenção à ordem dos traços: veja de novo os números. ':'')+(s>=3?'Perfeito!':s===2?'Muito bom!':s===1?'Bom começo. Pratique mais.':'Vamos praticar: o modelo ficou visível para comparar.');
-      if(mode==='recall'&&s===0)draw(.8,'#2cc673',true);
+      if(mode==='recall'&&s===0)draw(.55,'#2cc673',true);
       cta(phase===1?'Agora de memória ▶':(wi<items.length-1?'Próxima palavra ▶':'Concluir'),true,true);P.fx.cta=()=>{next();return true};return true};
     cta('Escreva',false);P.fx.cta=()=>!P.fx.done&&verify();
     say(mode==='trace'?'Trace sobre o modelo seguindo os números.':'Agora escreva de memória.')};

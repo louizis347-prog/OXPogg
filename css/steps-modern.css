@@ -1,0 +1,72 @@
+/* Pogglot · visual moderno dos exercícios de escrita (Escreva à mão, Kanji, Ditado, Der·Die·Das, Acentos).
+   Cabeçalho em gradiente com ícone, "papel" para escrever, botões com profundidade, feedback animado. */
+.step.kw,.step.kd,.step.ka,.step.kc,.step.kj{--a:var(--g1,#6C5CE7);--b:var(--g2,#A29BFE);position:relative;animation:sxrise .45s cubic-bezier(.2,.9,.3,1) both}
+@keyframes sxrise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes sxpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+@keyframes sxshake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.step.kw{--a:#7C4DFF;--b:#FF6FB5}.step.kj{--a:#FF7A45;--b:#FFC145}.step.kd{--a:#2F80ED;--b:#22D3EE}.step.ka{--a:#2F80ED;--b:#2CB67D}.step.kc{--a:#F59E0B;--b:#FF7A45}
+/* eyebrow pequena */
+.step.kw .eyebrow,.step.kd .eyebrow,.step.ka .eyebrow,.step.kc .eyebrow,.step.kj .eyebrow{display:inline-flex;margin:0 0 8px;padding:5px 12px;border-radius:999px;background:linear-gradient(135deg,color-mix(in srgb,var(--a) 14%,#fff),color-mix(in srgb,var(--b) 14%,#fff));color:var(--a);font-weight:800;font-size:11px;letter-spacing:.06em;border:1px solid color-mix(in srgb,var(--a) 22%,#fff)}
+/* cabeçalho-herói */
+.step.kw .fx-h,.step.kd .fx-h,.step.ka .fx-h,.step.kc .fx-h,.step.kj .fx-h{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:88px;margin:4px 0 14px;padding:16px 18px 16px 84px;border-radius:26px;color:#fff!important;text-shadow:0 2px 10px rgba(0,0,0,.18);font:900 24px/1.1 "Plus Jakarta Sans",system-ui,sans-serif;letter-spacing:-.01em;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 16px 30px -18px var(--a);overflow:hidden}
+.step.kw .fx-h::before,.step.kd .fx-h::before,.step.ka .fx-h::before,.step.kc .fx-h::before,.step.kj .fx-h::before{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:56px;height:56px;display:grid;place-items:center;border-radius:20px;background:rgba(255,255,255,.22);backdrop-filter:blur(6px);font-size:30px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.step.kw .fx-h::after,.step.kd .fx-h::after,.step.ka .fx-h::after,.step.kc .fx-h::after,.step.kj .fx-h::after{content:attr(data-sub);position:absolute;right:-26px;top:-26px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.3),transparent 70%)}
+.step.kw .fx-h::before{content:"✍️"}.step.kd .fx-h::before{content:"🎧"}.step.ka .fx-h::before{content:"🏷️"}.step.kc .fx-h::before{content:"Aa";font:900 24px system-ui}.step.kj .fx-h::before{content:"漢";font:900 30px "Noto Sans JP","Hiragino Sans","Yu Gothic",IPAGothic,system-ui,sans-serif}
+/* progresso em barras */
+.kw-st,.kd-st,.ka-st,.kc-st{gap:5px;margin:2px 0 14px}.kw-st i,.kd-st i,.ka-st i,.kc-st i{flex:1;height:10px;max-width:none;border-radius:8px;background:#ECE9F6;transition:background .3s,transform .3s}
+.kw-st i.on,.kd-st i.on,.ka-st i.on,.kc-st i.on{background:linear-gradient(90deg,var(--a),var(--b));transform:scaleY(1.15)}
+/* pílulas de modo */
+.kw-mode{background:linear-gradient(135deg,var(--a),var(--b))!important;color:#fff!important;box-shadow:0 8px 18px -10px var(--a);letter-spacing:.01em;padding:6px 14px!important;font-size:12.5px!important}
+.kw-info b{font-size:22px!important}.kw-info small{font-weight:700!important;color:#7a7396!important}
+/* papel de escrita */
+.kw-cv{border-radius:28px!important;max-width:440px!important;background:
+  radial-gradient(circle at 20% 15%,rgba(255,255,255,.9),transparent 55%),
+  repeating-linear-gradient(0deg,#0000 0 31px,rgba(124,77,255,.08) 31px 32px),#FBFAFF!important;
+  border:2px solid #fff!important;box-shadow:0 22px 40px -26px var(--a),0 0 0 1px #E9E3FF inset!important}
+.kw-cv .gd{background:linear-gradient(#0000 49.2%,rgba(124,77,255,.22) 49.2% 50.8%,#0000 50.8%)!important;background-size:100% 100%}
+.kw-cv::after{content:"";position:absolute;inset:0;border-radius:28px;pointer-events:none;box-shadow:inset 0 0 40px rgba(124,77,255,.07)}
+/* feedback */
+.kw-fb,.kd-fb,.kc-fb,.ka-fb{margin:10px 0;padding:12px 14px;border-radius:18px;background:#F6F4FF;font-weight:800;color:#3b3560;transition:background .25s}
+.kw-fb:empty,.kd-fb:empty,.kc-fb:empty{display:none}
+.kw-fb.ok,.kd-fb.ok,.kc-fb.ok,.ka-fb.ok{background:linear-gradient(135deg,#E3FBEF,#D2F6E4);color:#157a4a;animation:sxpop .4s both}
+.kw-fb.no,.kd-fb.no,.kc-fb.no,.ka-fb.no{background:linear-gradient(135deg,#FFF1E6,#FFE3D6);color:#c2410c;animation:sxshake .35s}
+.kw-stars,.kd-stars{font-size:32px!important;letter-spacing:6px!important;background:linear-gradient(180deg,#FFD666,#FF9F1C);-webkit-background-clip:text;background-clip:text;color:transparent!important;filter:drop-shadow(0 3px 4px rgba(255,159,28,.35));animation:sxpop .5s both}
+/* botões de resposta com profundidade */
+.kc-opts button,.kj-opts button,.ka-opts button{border:0!important;border-radius:20px!important;box-shadow:0 5px 0 rgba(30,20,80,.14),0 12px 20px -14px rgba(30,20,80,.45)!important;transition:transform .12s,box-shadow .12s,background .2s;position:relative}
+.kc-opts button:active,.kj-opts button:active,.ka-opts button:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(30,20,80,.14)!important}
+.kc-opts button{background:linear-gradient(180deg,#fff,#FFF8EE)!important;border:2px solid #FBE3C4!important}.kj-opts button{background:linear-gradient(180deg,#fff,#FFF5EC)!important;border:2px solid #FFE0C8!important}
+.kc-opts button.ok,.kj-opts button.ok{background:linear-gradient(180deg,#e9fff3,#cdf6df)!important;border-color:#2cc673!important;outline:none!important;animation:sxpop .35s both}
+.kc-opts button.no,.kj-opts button.no{background:linear-gradient(180deg,#fff2ef,#ffe0da)!important;border-color:#ff6b6b!important;outline:none!important;animation:sxshake .3s}
+.ka-opts button{border-radius:22px!important;min-height:72px!important;font-size:26px!important;text-transform:lowercase}
+.ka-opts button[data-a=der]{background:linear-gradient(180deg,#5AA2FF,#2F80ED)!important;box-shadow:0 5px 0 #1d5bb3,0 14px 22px -14px #2F80ED!important}
+.ka-opts button[data-a=die]{background:linear-gradient(180deg,#FF7B80,#E5484D)!important;box-shadow:0 5px 0 #a82a2f,0 14px 22px -14px #E5484D!important}
+.ka-opts button[data-a=das]{background:linear-gradient(180deg,#4FD9A2,#2CB67D)!important;box-shadow:0 5px 0 #1b8059,0 14px 22px -14px #2CB67D!important}
+.ka-opts button:active{transform:translateY(4px)}.ka-opts button.dim{opacity:.3;filter:saturate(.4)}
+.ka-w{padding:18px 10px;border-radius:26px;background:linear-gradient(180deg,#F5F9FF,#fff);box-shadow:0 0 0 1px #E4EEFF inset}
+.ka-w b{font-size:42px!important}.ka-w .art{font-size:40px!important}
+/* ditado */
+.kd-in{border-radius:22px!important;border:2px solid #D7E6FF!important;background:linear-gradient(180deg,#fff,#F8FBFF)!important;box-shadow:0 14px 26px -20px #2F80ED!important;font-size:21px!important}
+.kd-in:focus{border-color:#2F80ED!important;box-shadow:0 0 0 4px rgba(47,128,237,.15),0 14px 26px -20px #2F80ED!important}
+.kd-keys button{background:linear-gradient(180deg,#fff,#EAF3FF)!important;border:1px solid #CFE1FB!important;box-shadow:0 3px 0 #bcd4f5!important;border-radius:14px!important}.kd-keys button:active{transform:translateY(2px);box-shadow:none!important}
+.kd-ans{border-radius:22px!important;background:linear-gradient(180deg,#F7FAFF,#fff)!important;box-shadow:0 0 0 1px #E1ECFD inset}
+.kd-ans .w{border-radius:10px!important;padding:1px 6px!important}
+/* kanji */
+.kj-big{background:radial-gradient(circle at 30% 20%,#fff,#FFEEDD 60%,#FFD9BD)!important;border-radius:30px!important;box-shadow:0 22px 40px -26px #FF7A45!important;position:relative;overflow:hidden}
+.kj-big::before{content:"";position:absolute;inset:auto -20px -30px auto;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(255,193,69,.5),transparent 70%)}
+.kj-big .ch{text-shadow:0 8px 20px rgba(214,73,42,.3)}
+.kj-rd div{border-radius:18px!important;border:1px solid #FFE3CF!important;background:linear-gradient(180deg,#fff,#FFF9F3)!important}
+.kj-w button{border-radius:18px!important;border:1px solid #F4E6DA!important;box-shadow:0 4px 0 #f1dfd0,0 12px 18px -16px rgba(120,60,20,.5)!important}.kj-w button:active{transform:translateY(2px)}
+/* dicas e estatísticas */
+.kc-tip,.ka-tip{border-radius:18px!important;border:1px dashed color-mix(in srgb,var(--a) 35%,#fff);animation:sxpop .35s both}
+.kc-w{padding:18px 10px;border-radius:26px;background:linear-gradient(180deg,#FFF9F0,#fff);box-shadow:0 0 0 1px #FBE9CE inset}.kc-w b{font-size:42px!important}
+/* chips de ferramentas */
+.step.kw .nb-chip,.step.kd .nb-chip,.step.kc .nb-chip,.step.kj .nb-chip,.step.ka .nb-chip{border:0;border-radius:16px;min-height:44px;padding:0 16px;background:linear-gradient(180deg,#fff,#F6F3FF);box-shadow:0 3px 0 #dcd5f2,0 10px 16px -12px rgba(60,40,160,.5);font-weight:800;color:#4b36b8}
+.step.kw .nb-chip:active,.step.kd .nb-chip:active,.step.kc .nb-chip:active,.step.kj .nb-chip:active{transform:translateY(2px);box-shadow:none}
+.kw-attr{opacity:.8}
+/* tema escuro */
+html[data-theme="dark"] .kw-st i,html[data-theme="dark"] .kd-st i,html[data-theme="dark"] .ka-st i,html[data-theme="dark"] .kc-st i{background:#2A2560}
+html[data-theme="dark"] .kw-cv{background:radial-gradient(circle at 20% 15%,#2b2560,transparent 60%),repeating-linear-gradient(0deg,#0000 0 31px,rgba(162,155,254,.12) 31px 32px),#1B1740!important;border-color:#2D2760!important}
+html[data-theme="dark"] .kw-fb,html[data-theme="dark"] .kd-fb,html[data-theme="dark"] .kc-fb,html[data-theme="dark"] .ka-fb{background:#1B1740;color:#EDEAFF}
+html[data-theme="dark"] .kc-opts button,html[data-theme="dark"] .kj-opts button,html[data-theme="dark"] .kd-in,html[data-theme="dark"] .ka-w,html[data-theme="dark"] .kc-w,html[data-theme="dark"] .kd-ans,html[data-theme="dark"] .kj-rd div,html[data-theme="dark"] .kj-w button{background:#1B1740!important;color:#EDEAFF!important;border-color:#2D2760!important}
+html[data-theme="dark"] .step.kw .nb-chip,html[data-theme="dark"] .step.kd .nb-chip,html[data-theme="dark"] .step.kc .nb-chip,html[data-theme="dark"] .step.kj .nb-chip,html[data-theme="dark"] .step.ka .nb-chip{background:#2A2560;color:#CFC2FF;box-shadow:0 3px 0 #1B1740}
+@media(prefers-reduced-motion:reduce){.step.kw,.step.kd,.step.ka,.step.kc,.step.kj,.kw-fb.ok,.kc-opts button.ok{animation:none!important}}

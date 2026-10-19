@@ -30,7 +30,7 @@ FXR.nbkanji=function(f,st,n){
     const ex=d.w[0];
     st.innerHTML=`<div class="step fx nbx kj" ${theme}>${fxKindBar(f,n)}<h2 class="fx-h">Kanji do dia</h2>
     <div class="kj-big"><div class="ch">${H(ch)}</div><div class="mn">${H(d.m)}</div></div>
-    <div class="kj-rd"><div><small>Leitura on</small>${d.on.length?d.on.map(r=>`<span>${H(r[0])}</span><em>${H(r[1])}</em>`).join(' '):'<em>—</em>'}</div>
+    <div class="kj-rd" data-norj="1"><div><small>Leitura on</small>${d.on.length?d.on.map(r=>`<span>${H(r[0])}</span><em>${H(r[1])}</em>`).join(' '):'<em>—</em>'}</div>
     <div><small>Leitura kun</small>${d.kun.length?d.kun.map(r=>`<span>${H(r[0])}</span><em>${H(r[1])}</em>`).join(' '):'<em>—</em>'}</div></div>
     <div class="nb-hint" style="text-align:center">Toque nas palavras para ouvir</div>
     <div class="kj-w">${d.w.map((w,i)=>`<button data-i="${i}"><b>${H(w[0])}</b><span>${H(w[1])}</span><i>${H(w[2])}</i> 🔊</button>`).join('')}</div></div>`;
