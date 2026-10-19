@@ -468,7 +468,7 @@ FXR.vplay=function(f,st,n){
   const lev=(a,b)=>{const m=[];for(let i=0;i<=a.length;i++){m[i]=[i];for(let j=1;j<=b.length;j++)m[i][j]=i?0:j}for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)m[i][j]=Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return m[a.length][b.length]};
   const look=(v,ban)=>{v=String(v).toLowerCase();if(/\s/.test(v))return null;let best=null,bd=9;LK.forEach(w=>{if(w===v||ban.includes(w)||w.length<2)return;const d=lev(v,w)+(w[0]===v[0]?-0.6:0);if(d<bd){bd=d;best=w}});return bd<=3.2?best:null};
   const thirdOf=w=>/(s|x|ch|sh|z|o)$/.test(w)?w+'es':/[^aeiou]y$/.test(w)?w.slice(0,-1)+'ies':w+'s';
-  let tasks=[];const mk=()=>{const a=[];for(let s=0;s<4;s++)V.forEach((x,i)=>{if(s===2&&!third(x))return;a.push({v:i,s})});
+  let tasks=[];const mk=()=>{const a=[];if(Array.isArray(f.plan))f.plan.forEach(p=>{if(V[p[0]]&&!(p[1]===2&&!third(V[p[0]])))a.push({v:p[0],s:p[1]})});else for(let s=0;s<4;s++)V.forEach((x,i)=>{if(s===2&&!third(x))return;a.push({v:i,s})});
     const okp=l=>l.every((t,i)=>!i||t.v!==l[i-1].v&&t.s!==l[i-1].s);
     let best=null;for(let k=0;k<400;k++){const c=fxShuffle(a.slice());if(okp(c)){best=c;break}if(!best)best=c}
     return best};
