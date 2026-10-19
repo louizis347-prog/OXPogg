@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em 1 toque';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -17,6 +17,13 @@ const css=document.createElement('style');css.textContent=`
 .rdg-q{font:800 19px/1.3 system-ui;color:#25203f;margin:10px 0}
 .rdg-o{display:grid;gap:8px}.rdg-o button{border:2px solid #e6e1f7;background:#fff;border-radius:16px;padding:12px 14px;min-height:48px;font:700 17px system-ui;color:#25203f;text-align:left;cursor:pointer}
 .rdg-o button.ok{border-color:#2cc673;background:#e7f9ef}.rdg-o button.no{border-color:#ef6a4c;background:#fff0ec}
+.cu2{padding-bottom:12px}
+.cu2-art{border-radius:22px;overflow:hidden;box-shadow:0 12px 24px -14px rgba(20,40,80,.5);margin:6px 0;max-height:150px}
+.cu2-art svg{display:block;width:100%;height:150px;object-fit:cover}
+.cu2-work{display:flex;gap:8px;align-items:center;margin:8px 0 2px;font:900 19px/1.2 system-ui;color:#25203f}
+.cu2-work small{font:700 12px system-ui;color:#0b5f5d;background:#e3f4f3;border-radius:99px;padding:3px 10px}
+.cu2-fact{margin:8px 0;padding:12px 14px;border-radius:16px;background:linear-gradient(135deg,#fff7e0,#fff);border:2px solid #ffd978;color:#7a5200;font:600 15px/1.4 system-ui}
+.cu2-q{font:800 18px/1.3 system-ui;color:#25203f;margin:10px 0 6px}
 .rp{padding-bottom:12px}
 .rp-chat{display:grid;gap:8px;margin:6px 0}
 .rp-b{display:flex;gap:8px;align-items:flex-end;animation:rpIn .35s both}
@@ -83,6 +90,20 @@ FXR.rdg=function(f,st,n){
         fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
     }};
   view()};
+/* ---------- cultura: cartão ilustrado + pergunta (cultq: toque único · cult: curiosidade + pergunta) ---------- */
+function cultStep(kind){return function(f,st,n){
+  const Q=f.q;let done=false;
+  const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
+  st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
+  ${f.work?`<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>`:''}
+  ${f.fact?`<div class="cu2-fact">${mk(f.fact)}</div>`:''}
+  <div class="cu2-q">${H(Q.q)}</div><div class="rdg-o">${Q.o.map((o,i)=>`<button type="button" data-i="${i}">${H(o)}</button>`).join('')}</div><div id="fb"></div></div>`;
+  P.fx.cta=null;cta('Escolha uma resposta',false);
+  st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const i=+b.dataset.i,ok=i===Q.a;
+    b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[Q.a].classList.add('ok');if(ok)P.score++;
+    fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
+  say(f.say||'Uma curiosidade cultural! Toque na resposta.')}}
+FXR.cultq=cultStep('q');FXR.cult=cultStep('c');
 /* ---------- leitura lúdica: conversa com lacunas ---------- */
 FXR.rdgplay=function(f,st,n){
   const T=f.turns,cast=f.cast;let ti=0,hits=0,gaps=0,tries=0,tm=0;
