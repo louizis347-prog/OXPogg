@@ -18,3 +18,6 @@ Commit + push em main e claude/nifty-mendel-y3nbxt a cada mudança; sem PR; uma 
 
 ## Deploy
 Cloudflare (Workers com arquivos estáticos, wrangler.jsonc) ligado ao GitHub (branch main); cada push em main publica automaticamente.
+
+## Menu
+Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
