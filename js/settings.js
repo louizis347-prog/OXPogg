@@ -18,7 +18,8 @@ const K={
   installBtn:'Instalar no celular',ios:'No iPhone/iPad: toque em Compartilhar e depois em “Adicionar à Tela de Início”.',installed:'App instalado',
   swOn:'Modo offline ativo',swOff:'O modo offline precisa que o app esteja hospedado em https (no seu site). Aqui na prévia ele fica desligado.',
   dlCourse:'Baixar este curso para offline',dlDone:'Curso pronto para usar offline',dlProg:'Baixando…',
-  prac:'Pratique hoje!',goalDone:'Meta batida! 🎉',of:'de'},
+  prac:'Pratique hoje!',goalDone:'Meta batida! 🎉',of:'de',
+  acc:'Acessibilidade',accSub:'Ajuste o tamanho do texto, o contraste e os movimentos da tela.',accSize:'Tamanho do texto',accHC:'Alto contraste',accRM:'Reduzir movimento e animações',accReset:'Restaurar padrão'},
  es:{title:'Ajustes',close:'Cerrar',voice:'Voz y audio',lang:'Idioma de la voz',accent:'Acento',vname:'Voz del dispositivo',auto:'Automática (la mejor disponible)',speed:'Velocidad',preview:'Escuchar',
   vq:'Calidad',noV:'Este dispositivo no tiene voz instalada para este idioma. En Android: Ajustes › Texto a voz (instala Google TTS y la voz del idioma). En iPhone: Ajustes › Accesibilidad › Contenido hablado › Voces. En Windows usa Edge: trae voces “Natural” de alta calidad.',
   tipV:'Consejo: las voces marcadas como Alta (neuronales, Premium, Enhanced, Natural) suenan mucho más humanas.',
@@ -32,7 +33,8 @@ const K={
   installBtn:'Instalar en el móvil',ios:'En iPhone/iPad: toca Compartir y luego “Añadir a pantalla de inicio”.',installed:'App instalada',
   swOn:'Modo sin conexión activo',swOff:'El modo sin conexión necesita que la app esté alojada en https (en tu sitio). En esta vista previa queda desactivado.',
   dlCourse:'Descargar este curso para uso sin conexión',dlDone:'Curso listo para usar sin conexión',dlProg:'Descargando…',
-  prac:'¡Practica hoy!',goalDone:'¡Meta cumplida! 🎉',of:'de'}
+  prac:'¡Practica hoy!',goalDone:'¡Meta cumplida! 🎉',of:'de',
+  acc:'Accesibilidad',accSub:'Ajusta el tamaño del texto, el contraste y los movimientos de la pantalla.',accSize:'Tamaño del texto',accHC:'Alto contraste',accRM:'Reducir movimiento y animaciones',accReset:'Restablecer'}
 };
 const k=key=>(K[L0()][key]!=null?K[L0()][key]:K.pt[key]);
 const LNAMES={en:'Inglês',es:'Espanhol',fr:'Francês',de:'Alemão',it:'Italiano',pt:'Português'};
@@ -138,7 +140,7 @@ function open(){
   const draw=async()=>{
     const code=LCODE[lang],vs=PogTTS.voicesFor(code).slice().sort((a,b)=>PogTTS.quality(b)-PogTTS.quality(a));
     const acc=PogTTS.ACCENTS[lang]||[],cs=PogTTS.settings();
-    const g=goalState(),rem=R0(),cnt=await PogTTS.cacheCount();
+    const g=goalState(),rem=R0(),cnt=await PogTTS.cacheCount(),A=window.PogA11y?PogA11y.get():{zoom:100,contrast:false,motion:false};
     const swOn=!!(navigator.serviceWorker&&navigator.serviceWorker.controller);
     const best=vs[0],ql=best?PogTTS.qualityLabel(best):'';
     el.innerHTML=`<div class="pgs-card"><div class="pgs-head"><h2>⚙️ ${esc(k('title'))}</h2><button class="pgs-x" aria-label="${esc(k('close'))}">×</button></div>
@@ -163,12 +165,24 @@ function open(){
       <p class="pgs-note warn" id="s-rmsg" hidden></p>
       <button class="pgs-btn ghost" id="s-ics">📅 ${esc(k('ics'))}</button>
      </section>
+     <section><h3>♿ ${esc(k('acc'))}</h3><p class="pgs-note">${esc(k('accSub'))}</p>
+      <label>${esc(k('accSize'))}: <b id="a-zv">${A.zoom}%</b></label>
+      <div class="pgs-a11y"><button class="pgs-btn ghost" id="a-dn" aria-label="A−">A−</button><input type="range" id="a-z" min="90" max="150" step="10" value="${A.zoom}" aria-label="${esc(k('accSize'))}" style="flex:1"><button class="pgs-btn ghost" id="a-up" aria-label="A+">A+</button></div>
+      <label class="pgs-chk"><input type="checkbox" id="a-hc" ${A.contrast?'checked':''}> ${esc(k('accHC'))}</label>
+      <label class="pgs-chk"><input type="checkbox" id="a-rm" ${A.motion?'checked':''}> ${esc(k('accRM'))}</label>
+      <button class="pgs-btn ghost" id="a-rs">${esc(k('accReset'))}</button>
+     </section>
      <section><h3>📲 ${esc(k('install'))}</h3><p class="pgs-note">${esc(k('installSub'))}</p>
       ${isStandalone()?`<p class="pgs-note ok">✓ ${esc(k('installed'))}</p>`:`<button class="pgs-btn" id="pgs-inst" ${deferredInstall?'':'hidden'}>${esc(k('installBtn'))}</button><p class="pgs-note" ${deferredInstall?'hidden':''}>${esc(k('ios'))}</p>`}
       <p class="pgs-note ${swOn?'ok':''}">${esc(swOn?k('swOn'):k('swOff'))}</p>
       ${swOn?`<button class="pgs-btn ghost" id="s-offl">${esc(k('dlCourse'))}</button><div class="pgs-prog" id="s-op" hidden><i></i></div>`:''}
      </section></div>`;
     const q=s=>el.querySelector(s);
+    if(window.PogA11y){const az=q('#a-z');
+      const setZ=v=>{v=Math.max(90,Math.min(150,v));PogA11y.set({zoom:v});az.value=v;q('#a-zv').textContent=v+'%'};
+      az.oninput=e=>setZ(+e.target.value);q('#a-dn').onclick=()=>setZ(+az.value-10);q('#a-up').onclick=()=>setZ(+az.value+10);
+      q('#a-hc').onchange=e=>PogA11y.set({contrast:e.target.checked});q('#a-rm').onchange=e=>PogA11y.set({motion:e.target.checked});
+      q('#a-rs').onclick=()=>{PogA11y.reset();draw()}}
     q('.pgs-x').onclick=end;
     q('#s-lang').onchange=e=>{lang=e.target.value;store.set('setlang',lang);draw()};
     const sa=q('#s-acc');if(sa)sa.onchange=e=>{PogTTS.setAccent(lang,e.target.value);draw()};

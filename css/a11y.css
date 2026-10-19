@@ -1,0 +1,13 @@
+/* Pogglot · acessibilidade */
+html[data-zoomed] body{zoom:var(--pg-zoom)}
+html[data-motion=reduce] *,html[data-motion=reduce] *::before,html[data-motion=reduce] *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+html[data-contrast=high] body{color:#000}
+html[data-contrast=high]:not([data-theme=dark]) :is(p,li,span,em,small,label,h1,h2,h3,h4,.nb-big-line em,.nb-hint,.nb-b small,.tr,.sub,.muted){color:#0a0820!important;opacity:1!important}
+html[data-contrast=high][data-theme=dark] :is(p,li,span,em,small,label,h1,h2,h3,h4,.sub,.muted){color:#fff!important;opacity:1!important}
+html[data-contrast=high][data-theme=dark] :is(.nb-big-line em,.nb-hint,.nb-b small,.nb-b span,.nb-rj,.nb-rj2){color:#0a0820!important}
+html[data-contrast=high] :is(button,a,input,select,textarea):focus-visible,html[data-contrast=high] [tabindex]:focus-visible{outline:3px solid #ffbf00!important;outline-offset:2px}
+html[data-contrast=high] :is(button,.card,.pgs-goal,input,select){border:2px solid currentColor!important}
+html[data-contrast=high] a{text-decoration:underline!important}
+:focus-visible{outline:3px solid #7a5cff;outline-offset:2px}
+.pgs-a11y{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pgs-a11y .pgs-btn{min-width:44px}

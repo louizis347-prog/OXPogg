@@ -1,7 +1,7 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 
 <title>Pogglot</title>
-<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#4F7CFF"><script src="js/theme.js"></script><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#4F7CFF"><script src="js/theme.js"></script><script src="js/a11y.js"></script><link rel="stylesheet" href="css/a11y.css"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400;1,7..72,500&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Nunito:wght@500;600;700;800;900&display=swap">
 <style>
 :root{
@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=150').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=151').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -4382,8 +4382,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=64',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=65',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=65',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=66',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';
