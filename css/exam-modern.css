@@ -1,0 +1,34 @@
+/* Layout moderno dos simulados (DELE, DELF, Goethe, CELI, JLPT, Cambridge, Celpe-Bras...) */
+.exam-modern{background:linear-gradient(180deg,#F3F0FF 0%,#EAF3FF 55%,#F7FBFF 100%)}
+.exam-modern .p-head{backdrop-filter:blur(14px);background:rgba(255,255,255,.7);border-bottom:1px solid rgba(110,90,220,.12)}
+.exam-modern .timer{background:#fff;border:1px solid #E1DAFF;border-radius:999px;padding:6px 12px;font-weight:800;color:#5a46c8;font-variant-numeric:tabular-nums}
+.exam-modern .timer.warn{background:#FFF1EC;color:#D9480F;border-color:#FFD4C2}
+.exam-modern .step{display:flex;flex-direction:column;gap:14px}
+.xm-hero{position:relative;height:132px;border-radius:24px;overflow:hidden;box-shadow:0 16px 34px -18px rgba(60,40,160,.55);isolation:isolate;background:#5a46c8}
+.xm-art,.xm-art svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.xm-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,60,.05) 20%,rgba(20,10,60,.62) 100%)}
+.xm-top{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.xm-tag{max-width:70%;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.92);color:#3b2a98;font-weight:800;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 6px 14px -8px rgba(0,0,0,.4)}
+.xm-count{color:#fff;font-weight:700;font-size:13px;text-shadow:0 1px 6px rgba(0,0,0,.4)}.xm-count b{font-size:22px;font-weight:900}
+.xm-bar{position:absolute;left:0;right:0;bottom:0;height:5px;background:rgba(255,255,255,.28)}.xm-bar i{display:block;height:100%;background:linear-gradient(90deg,#FFD166,#FF8FB8);border-radius:0 4px 4px 0}
+.exam-modern .eyebrow{display:none}
+.exam-modern .qcard{border-radius:26px;padding:20px 18px;background:#fff;box-shadow:0 18px 40px -26px rgba(60,40,160,.5);border:1px solid #ECE7FF}
+.exam-modern .qcard .q{font-size:21px;line-height:1.3}
+.exam-modern .opts{display:grid;gap:10px}
+.exam-modern .opt{display:flex;align-items:center;gap:12px;min-height:56px;padding:12px 14px;border-radius:18px;border:2px solid #E7E2FA;background:#fff;text-align:left;font-weight:700;transition:transform .15s,border-color .15s,background .15s}
+.exam-modern .opt:active{transform:scale(.985)}
+.exam-modern .opt.sel{border-color:#7A5BE6;background:#F3EEFF;box-shadow:0 8px 18px -12px rgba(122,91,230,.8)}
+.xm-l{flex:none;width:32px;height:32px;border-radius:11px;display:grid;place-items:center;background:#EFEAFF;color:#5a46c8;font-weight:900;font-size:14px}
+.exam-modern .opt.sel .xm-l{background:#7A5BE6;color:#fff}
+.exam-modern .opt.good .xm-l{background:#2FB67C;color:#fff}.exam-modern .opt.bad .xm-l{background:#E5484D;color:#fff}
+/* cartão de entrada do simulado na tela do curso */
+.exam-card{position:relative;display:flex;align-items:center;gap:14px;padding:16px;border-radius:24px;color:#fff;overflow:hidden;background:linear-gradient(135deg,#5B3FE0,#8E5BF0 60%,#D86CC9);box-shadow:0 18px 36px -22px rgba(91,63,224,.9);margin:12px 0}
+.exam-card::after{content:"";position:absolute;right:-30px;top:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 65%)}
+.exam-card .ex-i{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:rgba(255,255,255,.2);font-size:26px}
+.exam-card .ex-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.exam-card .ex-t b{font-size:16px}.exam-card .ex-t small{opacity:.88;font-size:12.5px}
+.exam-card .ex-b{flex:none;min-height:44px;padding:0 18px;border-radius:999px;background:#fff;color:#4A2FC6;font-weight:800;border:0;box-shadow:0 8px 18px -10px rgba(0,0,0,.45)}
+html[data-theme="dark"] .exam-modern{background:linear-gradient(180deg,#14112F,#0E0C25)}
+html[data-theme="dark"] .exam-modern .p-head{background:rgba(20,17,47,.7)}
+html[data-theme="dark"] .exam-modern .qcard,html[data-theme="dark"] .exam-modern .opt{background:#1B1740;border-color:#2D2760;color:#EDEAFF}
+html[data-theme="dark"] .exam-modern .opt.sel{background:#2A2360;border-color:#8E75F2}
+html[data-theme="dark"] .xm-l{background:#2A2360;color:#CFC2FF}

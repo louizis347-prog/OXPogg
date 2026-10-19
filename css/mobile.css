@@ -32,7 +32,7 @@ body.pg-playing{padding-bottom:0}
   /* cartões de ação rápida: tamanho que cabe, rolagem suave */
   .px-quick{margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
   .px-quick button{flex:0 0 88px;padding:12px 4px 10px;font-size:12.5px;white-space:normal;line-height:1.15}
-  .px-quick button,.px-quick button *{text-overflow:clip!important;white-space:normal!important;overflow:visible!important;max-width:100%;word-break:break-word}
+  .px-quick button,.px-quick button *{text-overflow:clip!important;white-space:normal!important;overflow:visible!important;max-width:100%;word-break:normal;overflow-wrap:anywhere;font-size:12px}
   /* lição: respiro nas bordas e mensagens que não bloqueiam toques */
   #player .stage,#player .p-body{padding-inline:max(12px,env(safe-area-inset-left))}
   #player .card,#player .nb-card{max-width:100%;box-sizing:border-box}
