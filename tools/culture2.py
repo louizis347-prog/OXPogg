@@ -5,6 +5,7 @@ sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 HERE=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,os.path.join(HERE,'rdg'))
 import reg3 as r,cult_a1
 import importlib
+for _f in sorted(glob.glob(os.path.join(HERE,'rdg','cult_a1_*.py'))): cult_a1.C.update(importlib.import_module(os.path.basename(_f)[:-3]).C)
 ENTER={'🎬':"Procure o trailer ou uma cena curta com legendas em inglês. Depois, assista ao filme inteiro com pipoca!",'📺':"Assista ao primeiro episódio com legendas em inglês e anote 3 expressões que você ouviu.",'🎶':"Ouça a música lendo a letra e cante o refrão em voz alta.",'📖':"Leia a primeira página em voz alta, mesmo sem entender tudo: o ritmo já ensina.",'🖼️':"Olhe a imagem por um minuto e descreva três coisas que você vê, em inglês.",'🎨':"Olhe a imagem por um minuto e descreva três coisas que você vê, em inglês.",'🎭':"Procure um trecho encenado e preste atenção no ritmo das falas.",'📜':"Ouça o texto lido em voz alta e acompanhe com os olhos.",'🏛️':"Procure fotos e visitas virtuais e repare nos detalhes."}
 STOP=set("the a an and or but of to in on at for with from by is are was were be been this that it its as not no so if then than your my our their his her you i we they he she me him them us do did does have has had will would can could may might must should".split())
 def emo(k): return str(k).split(' ')[0]
