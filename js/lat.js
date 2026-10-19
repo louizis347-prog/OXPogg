@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em 1 toque';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultx='story';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -17,6 +17,14 @@ const css=document.createElement('style');css.textContent=`
 .rdg-q{font:800 19px/1.3 system-ui;color:#25203f;margin:10px 0}
 .rdg-o{display:grid;gap:8px}.rdg-o button{border:2px solid #e6e1f7;background:#fff;border-radius:16px;padding:12px 14px;min-height:48px;font:700 17px system-ui;color:#25203f;text-align:left;cursor:pointer}
 .rdg-o button.ok{border-color:#2cc673;background:#e7f9ef}.rdg-o button.no{border-color:#ef6a4c;background:#fff0ec}
+.cx{padding-bottom:12px}
+.cx-t{display:block;width:100%;text-align:left;border:0;border-radius:18px;padding:0;margin:8px 0;background:#fff;box-shadow:0 8px 20px -14px rgba(40,30,90,.6);overflow:hidden;cursor:pointer;font:inherit}
+.cx-h{display:flex;align-items:center;gap:10px;padding:11px 14px;min-height:50px;font:800 16px system-ui;color:#25203f}
+.cx-h em{font-style:normal;font-size:22px}.cx-h i{margin-left:auto;font-style:normal;color:#0C7A78;font-size:20px}
+.cx-b{display:none;padding:0 14px 12px;font:500 15px/1.4 system-ui;color:#3b3558}
+.cx-t.on .cx-b{display:block;animation:rpIn .3s both}.cx-t.on .cx-h i{transform:rotate(45deg)}
+.cx-q{font:800 17px/1.3 system-ui;color:#0b5f5d}.cx-q small{display:block;font:500 13px system-ui;color:#6b6591;margin-top:3px}
+.cx-st{text-align:center;font:800 14px system-ui;color:#F29B34;margin:2px 0}
 .cu2{padding-bottom:12px}
 .cu2-art{border-radius:22px;overflow:hidden;box-shadow:0 12px 24px -14px rgba(20,40,80,.5);margin:6px 0;max-height:150px}
 .cu2-art svg{display:block;width:100%;height:150px;object-fit:cover}
@@ -90,19 +98,35 @@ FXR.rdg=function(f,st,n){
         fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
     }};
   view()};
+/* ---------- "Dentro da obra": cartões que o aluno abre (história, frase, curiosidade, como entrar) ---------- */
+FXR.cultx=function(f,st,n){
+  const T=f.tiles,seen=new Set();P.fx.done=false;P.fx.cta=null;
+  const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
+  st.innerHTML=`<div class="step fx cx">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
+  <div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div><div class="cx-st" id="cxs">Toque nos cartões · 0/${T.length}</div>
+  ${T.map((t,i)=>`<button type="button" class="cx-t" data-i="${i}"><div class="cx-h"><em>${t.ic}</em><span>${H(t.l)}</span><i>＋</i></div><div class="cx-b">${t.en?`<div class="cx-q">“${H(t.en)}”<small>${H(t.pt)}</small></div>`:mk(t.t)}</div></button>`).join('')}</div>`;
+  cta('Abra os cartões',false);
+  st.querySelectorAll('.cx-t').forEach(b=>b.onclick=()=>{const i=+b.dataset.i,t=T[i];b.classList.toggle('on');
+    if(b.classList.contains('on')){try{sfx('pop')}catch(e){}if(t.en)say2(t.en)}
+    seen.add(i);q('#cxs',st).textContent=seen.size>=T.length?'Tudo aberto! 🎉':'Toque nos cartões · '+seen.size+'/'+T.length;
+    if(seen.size>=T.length)cta(P.t.cont,true,true)});
+  say(f.say||'Vamos conhecer a obra por dentro? Abra cada cartão!')};
 /* ---------- cultura: cartão ilustrado + pergunta (cultq: toque único · cult: curiosidade + pergunta) ---------- */
 function cultStep(kind){return function(f,st,n){
-  const Q=f.q;let done=false;
+  const QS=f.qs||[f.q];let qi=0;
   const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
-  st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
-  ${f.work?`<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>`:''}
-  ${f.fact?`<div class="cu2-fact">${mk(f.fact)}</div>`:''}
-  <div class="cu2-q">${H(Q.q)}</div><div class="rdg-o">${Q.o.map((o,i)=>`<button type="button" data-i="${i}">${H(o)}</button>`).join('')}</div><div id="fb"></div></div>`;
-  P.fx.cta=null;cta('Escolha uma resposta',false);
-  st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const i=+b.dataset.i,ok=i===Q.a;
-    b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[Q.a].classList.add('ok');if(ok)P.score++;
-    fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
-  say(f.say||'Uma curiosidade cultural! Toque na resposta.')}}
+  const draw=()=>{const Q=QS[qi];let done=false;
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}${QS.length>1?` <small>${qi+1}/${QS.length}</small>`:''}</h2>${qi===0?art:''}
+    ${f.work&&qi===0?`<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>`:''}
+    ${f.fact&&qi===0?`<div class="cu2-fact">${mk(f.fact)}</div>`:''}
+    <div class="cu2-q">${H(Q.q)}</div><div class="rdg-o">${Q.o.map((o,i)=>`<button type="button" data-i="${i}">${H(o)}</button>`).join('')}</div><div id="fb"></div></div>`;
+    P.fx.cta=null;cta('Escolha uma resposta',false);
+    st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const i=+b.dataset.i,ok=i===Q.a;
+      b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[Q.a].classList.add('ok');if(ok)P.score++;
+      fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;
+      if(qi<QS.length-1){P.fx.cta=()=>{qi++;draw();return true};cta('Próxima pergunta ▶',true,true)}else cta(P.t.cont,true,true)});
+    say(f.say||'Uma curiosidade cultural! Toque na resposta.')};
+  draw()}}
 FXR.cultq=cultStep('q');FXR.cult=cultStep('c');
 /* ---------- leitura lúdica: conversa com lacunas ---------- */
 FXR.rdgplay=function(f,st,n){
