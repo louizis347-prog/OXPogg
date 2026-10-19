@@ -143,3 +143,11 @@
 #player.az .fx-rc small{color:#2c4843!important;font-weight:700}
 .quote .tr,.dline .tr{color:var(--ink2)!important;font-weight:700}
 html[data-theme="dark"] .quote .tr,html[data-theme="dark"] .dline .tr{color:#d8d3f5!important}
+/* Romaji em cor viva (episódios de japonês) */
+.nb-rj,.nb-rj2,.nb-auto{color:#d6187e!important;font-weight:700!important;opacity:1!important;font-style:normal;font-family:system-ui,sans-serif}
+.nb-auto{display:block;font-size:12.5px;line-height:1.25;margin-top:2px;letter-spacing:.02em}
+.nb-row:not(.me) .nb-rj,.nb-row:not(.me) .nb-rj2{color:#d6187e!important}
+.nb-row.me .nb-rj,.nb-row.me .nb-rj2,.nb-row.me .nb-auto{color:#fff!important}
+button.on .nb-auto,.opt.sel .nb-auto,.nb-tile.sel .nb-auto,.ok .nb-auto{color:inherit!important}
+.nb-big-line em.nb-rj,.nb-big-line em.nb-rj2,.nb-hint em.nb-rj,.nb-sp em.nb-rj,.nb-b em.nb-rj{color:#d6187e!important;font-weight:700!important;font-size:14px}
+.nb-row.me .nb-b em.nb-rj,.nb-row.me .nb-b em.nb-rj2{color:#fff!important}

@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=156').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=157').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -4383,8 +4383,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=70',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=71',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=71',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=72',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';
@@ -4439,7 +4439,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/nb.js"></script>
 <script src="js/kana.js"></script>
 <script src="js/nbtrip.js"></script>
-<script src="js/pogglot2.js"></script><script src="js/exams.js"></script><script src="js/sync.js"></script><script src="js/social.js"></script><script src="js/pron.js"></script><script src="js/vocab.js"></script><link rel="stylesheet" href="css/social.css">
+<script src="js/pogglot2.js"></script><script src="js/exams.js"></script><script src="js/sync.js"></script><script src="js/social.js"></script><script src="js/pron.js"></script><script src="js/vocab.js"></script><script src="js/romaji.js"></script><link rel="stylesheet" href="css/social.css">
 <script>window.__pgres()</script>
 <button id="pgDl" type="button" hidden style="display:none;margin:0 0 4px;padding:8px 14px;border:0;border-radius:999px;background:#7C4DFF;color:#fff;font:700 13px system-ui,sans-serif;box-shadow:0 6px 18px rgba(51,36,82,.35);cursor:pointer;grid-column:1/-1;justify-self:start;order:-1;position:relative;z-index:5">⬇ Baixar Pogglot (.zip)</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
