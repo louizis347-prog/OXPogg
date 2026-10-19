@@ -792,7 +792,7 @@ body{padding-bottom:68px}
 <link rel="stylesheet" href="css/novos.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="css/pogglot2.css">
-<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1">
+<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=1">
 <script>window.PogUIReady=new Promise(function(r){window.__pgres=r});setTimeout(function(){window.__pgres()},5000)</script>
 <canvas id="confetti"></canvas>
 <div id="app"></div>
@@ -1937,10 +1937,10 @@ let CURRENT_UTTER=null;
 let SPEECH_WARNED=0;
 function speechWarn(nVoices){const now=Date.now();if(now-SPEECH_WARNED<20000)return;SPEECH_WARNED=now;
   const d=document.createElement('div');d.setAttribute('role','alert');
-  d.style.cssText='position:fixed;left:12px;right:12px;bottom:84px;z-index:99999;background:#332452;color:#fff;padding:12px 14px;border-radius:14px;font:700 14px/1.35 Nunito,system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.35);text-align:center';
+  d.style.cssText='position:fixed;left:12px;right:12px;bottom:calc(96px + env(safe-area-inset-bottom,0px));z-index:99999;background:#332452;color:#fff;padding:9px 12px;pointer-events:none;max-width:420px;margin:0 auto;border-radius:14px;font:700 13px/1.3 Nunito,system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.35);text-align:center';
   const ES_=(typeof ST!=='undefined'&&ST&&ST.homeLang==='es');
-  if(ES_)d.textContent=nVoices?'No pude reproducir la voz ahora. Toca el 🔊 otra vez; si sigue mudo, revisa el volumen multimedia y que el dispositivo tenga instalada la voz en inglés (Ajustes › Texto a voz).':'Este dispositivo o navegador no tiene voz de texto a voz disponible. En Android: Ajustes › Texto a voz (instala Google TTS y la voz English US). En iPhone: usa Safari.';
-  else d.textContent=nVoices?'Não consegui tocar a voz agora. Toque no 🔊 de novo; se continuar mudo, confira o volume de mídia e se o aparelho tem a voz em inglês instalada (Configurações › Texto para fala).':'Este aparelho/navegador não tem voz de texto-para-fala disponível. No Android: Configurações › Texto para fala (instale o Google TTS e a voz '+((typeof P!=='undefined'&&P&&P.c&&/^es/.test(P.c.tts||''))?'Español':(typeof P!=='undefined'&&P&&P.c&&/^fr/.test(P.c.tts||''))?'Français':(typeof P!=='undefined'&&P&&P.c&&/^de/.test(P.c.tts||''))?'Deutsch':(typeof P!=='undefined'&&P&&P.c&&/^it/.test(P.c.tts||''))?'Italiano':'English US')+'). No iPhone: use o Safari.';
+  if(ES_)d.textContent=nVoices?'No pude reproducir la voz. Toca el 🔊 otra vez y revisa el volumen.':'Sin voz de texto a voz en este dispositivo. Android: Ajustes › Texto a voz. iPhone: usa Safari.';
+  else d.textContent=nVoices?'Não consegui tocar a voz. Toque no 🔊 de novo e confira o volume de mídia.':'Sem voz de texto-para-fala neste aparelho. Android: Configurações › Texto para fala. iPhone: use o Safari.';
   document.body.appendChild(d);setTimeout(()=>d.remove(),6500);}
 function speak(text,lang,btn,speaker,slow){
   if(window.PogTTS&&PogTTS.cloudReady()){PogTTS.cloudSpeak(text,lang,btn,speaker,slow,()=>speakDevice(text,lang,btn,speaker,slow));return}

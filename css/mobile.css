@@ -1,0 +1,39 @@
+/* Ajustes para celular: sem corte lateral, alvos de toque >=44px, textos legíveis,
+   home mais curta e rodapé livre para o menu (e para qualquer botão flutuante do Netlify). */
+html,body{max-width:100%;overflow-x:clip}
+/* Netlify Drawer / badges flutuantes não devem cobrir o menu */
+netlify-drawer,#netlify-drawer,[id^="netlify-drawer"],[class^="netlify-drawer"],[data-netlify-drawer],iframe[src*="netlify"][style*="fixed"]{display:none!important}
+body{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+body.pg-playing{padding-bottom:0}
+@media(max-width:700px){
+  /* cabeçalho: nada passa da largura da tela */
+  .pgbar .in,.p2bar .in{min-width:0;gap:6px}
+  .pgbar .logo{min-width:0;flex:0 1 auto}.pgbar .logo span:last-child{font-size:20px}
+  .pgright{min-width:0;flex:0 1 auto;gap:5px}
+  .p2bar .pgstat{padding:6px 9px;font-size:13px}
+  .pglang button,.p2bar .pglang button{padding:6px 9px;min-height:36px}
+  /* alvos de toque */
+  .pgnav button,.pgright button,.px-quick button,.pt-link,.pill,.p2link,.sh,.nb-chip,.pgstat,.pgme,.logo{min-height:44px;min-width:44px}
+  .pgnav button{min-height:52px}
+  .pgme.guest{min-width:44px;justify-content:center}
+  #player .x,#player .p-top button{min-width:44px;min-height:44px}
+  /* textos pequenos demais */
+  small,em,.nb-no,.nb-who,.pgnav button span{font-size:max(12px,1em)!important}
+  small,em{min-height:0}
+  .p2bar .pglang button,.pglang button{min-height:40px;font-size:13px!important}
+  .nb-chip{min-height:46px}
+  .pgnav button{font-size:11.5px}
+  /* home: cartão inicial mais curto */
+  .px-hero{padding:18px 16px;gap:10px;border-radius:24px}
+  .px-hero h1{font-size:clamp(26px,8vw,32px);line-height:1.08;margin:6px 0}
+  .px-hero p{font-size:14.5px;line-height:1.4;margin:0 0 12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .px-cover,.px-hr img{max-width:84px}
+  .px-hero .px-stats,.px-hero .px-chips{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none}
+  /* cartões de ação rápida: tamanho que cabe, rolagem suave */
+  .px-quick{margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
+  .px-quick button{flex:0 0 88px;padding:12px 4px 10px;font-size:12.5px;white-space:normal;line-height:1.15}
+  .px-quick button,.px-quick button *{text-overflow:clip!important;white-space:normal!important;overflow:visible!important;max-width:100%;word-break:break-word}
+  /* lição: respiro nas bordas e mensagens que não bloqueiam toques */
+  #player .stage,#player .p-body{padding-inline:max(12px,env(safe-area-inset-left))}
+  #player .card,#player .nb-card{max-width:100%;box-sizing:border-box}
+}
