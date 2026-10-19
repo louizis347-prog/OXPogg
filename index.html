@@ -792,7 +792,7 @@ body{padding-bottom:68px}
 <link rel="stylesheet" href="css/novos.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="css/pogglot2.css">
-<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=2"><link rel="stylesheet" href="css/exam-modern.css?v=1"><link rel="stylesheet" href="css/steps-modern.css?v=1">
+<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=2"><link rel="stylesheet" href="css/exam-modern.css?v=1"><link rel="stylesheet" href="css/steps-modern.css?v=1"><link rel="stylesheet" href="css/lean.css?v=2">
 <script>window.PogUIReady=new Promise(function(r){window.__pgres=r});setTimeout(function(){window.__pgres()},5000)</script>
 <canvas id="confetti"></canvas>
 <div id="app"></div>
@@ -1503,6 +1503,7 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
 
 /* ================= DATA REGISTRY ================= */
 const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
+const EPX={};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1515,8 +1516,9 @@ async function ensureLangLoaded(lang){
     await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=174').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
+    const exs=arr2.filter(e=>e.ex);EPX[lang]=exs;
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
-    EP[lang]=arr2;
+    EP[lang]=exs.length?arr2.filter(e=>!e.ex):arr2;
   })();
   try{await EP_LOADING[lang];}finally{delete EP_LOADING[lang];}
 }
@@ -4387,8 +4389,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=88',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=83',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=89',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=84',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';
@@ -4443,7 +4445,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/nb.js"></script>
 <script src="js/kana.js"></script>
 <script src="js/nbtrip.js"></script>
-<script src="js/pogglot2.js"></script><script src="js/exams.js"></script><script src="js/exam-modern.js"></script><script src="js/write.js"></script><script src="js/kanji.js"></script><script src="js/dict.js"></script><script src="js/art.js"></script><script src="js/acc.js"></script><script src="js/sync.js"></script><script src="js/social.js"></script><script src="js/pron.js"></script><script src="js/vocab.js"></script><script src="js/romaji.js"></script><script src="js/review.js"></script><link rel="stylesheet" href="css/social.css">
+<script src="js/pogglot2.js"></script><script src="js/exams.js"></script><script src="js/exam-modern.js"></script><script src="js/write.js"></script><script src="js/kanji.js"></script><script src="js/dict.js"></script><script src="js/art.js"></script><script src="js/acc.js"></script><script src="js/lean.js"></script><script src="js/sync.js"></script><script src="js/social.js"></script><script src="js/pron.js"></script><script src="js/vocab.js"></script><script src="js/romaji.js"></script><script src="js/review.js"></script><link rel="stylesheet" href="css/social.css">
 <script>window.__pgres()</script>
 <button id="pgDl" type="button" hidden style="display:none;margin:0 0 4px;padding:8px 14px;border:0;border-radius:999px;background:#7C4DFF;color:#fff;font:700 13px system-ui,sans-serif;box-shadow:0 6px 18px rgba(51,36,82,.35);cursor:pointer;grid-column:1/-1;justify-self:start;order:-1;position:relative;z-index:5">⬇ Baixar Pogglot (.zip)</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>

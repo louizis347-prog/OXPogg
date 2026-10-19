@@ -1,0 +1,37 @@
+/* Episódio enxuto — recompensas, Mais treino, compactação das telas */
+.lean-more{display:flex;align-items:center;gap:12px;width:100%;margin:18px 0 0;padding:14px 16px;border:2px dashed #0C7A78;border-radius:18px;background:linear-gradient(135deg,#e8f6f5,#fff);color:#0b5f5d;text-align:left;font:inherit;cursor:pointer;min-height:56px;animation:leanIn .5s .3s both}
+.lean-more b{display:block;font-size:1.02rem}.lean-more small{display:block;opacity:.75}
+.lean-more .lm-ic{font-size:1.6rem}
+.lean-more:active{transform:scale(.98)}
+.lean-more-tag{display:inline-block;margin-left:6px;padding:4px 10px;border-radius:99px;background:#e8f6f5;color:#0b5f5d;font-size:.78rem;font-weight:700;min-height:28px;line-height:20px;cursor:pointer}
+.lean-streak{margin-left:8px;padding:4px 10px;border-radius:99px;background:#fff1e0;color:#b4560a;font-weight:800;font-size:.9rem}
+.lean-streak.bump{animation:leanBump .4s}
+.lean-pop{position:absolute;left:50%;top:22%;transform:translateX(-50%);z-index:50;padding:12px 22px;border-radius:99px;background:linear-gradient(135deg,#F29B34,#E85D75);color:#fff;font-weight:800;font-size:1.1rem;box-shadow:0 10px 30px rgba(232,93,117,.4);animation:leanPop 1.3s both;pointer-events:none}
+.lean-star{position:absolute;left:50%;top:48%;z-index:49;color:#F2C94C;font-size:1.4rem;pointer-events:none;animation:leanStar 1.2s ease-out both;text-shadow:0 2px 6px rgba(0,0,0,.2)}
+.lean-jump{animation:leanJump .55s}.lean-oops{animation:leanOops .45s}
+@keyframes leanIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes leanBump{50%{transform:scale(1.35)}}
+@keyframes leanPop{0%{opacity:0;transform:translate(-50%,20px) scale(.6)}20%{opacity:1;transform:translate(-50%,0) scale(1.1)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-30px)}}
+@keyframes leanStar{0%{opacity:0;transform:translate(0,0) scale(.3)}25%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.2) rotate(120deg)}}
+@keyframes leanJump{30%{transform:translateY(-16px) rotate(-6deg)}60%{transform:translateY(0) rotate(4deg)}}
+@keyframes leanOops{25%{transform:translateX(-6px)}50%{transform:translateX(6px)}75%{transform:translateX(-3px)}}
+/* compactação: nada de rolagem nas telas de exercício */
+.step.lean .az-hero{max-height:150px;overflow:hidden}
+.step.lean .az-ill{max-height:120px;overflow:hidden}
+.step.lean .m2-hint,.step.lean .fx-tip{display:none}
+.step.lean[data-fk=cover] .m2w-fact{display:none}
+.step.lean[data-fk=read] .dp{display:none}
+.step.lean[data-fk=wsent] .m2-wl{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.step.lean[data-fk=wsent] .m2-wc{padding:8px}
+.step.lean[data-fk=verbs] .vb-card{padding:8px 10px}.step.lean[data-fk=verbs] .vb-head{max-height:70px;overflow:hidden}
+.step.lean[data-fk=pat] .m2-live,.step.lean[data-fk=pat] .m2-pg{display:none}
+.step.lean[data-fk=read] .m2-text{font-size:.95rem}.step.lean[data-fk=read] .m2-s{min-height:0;padding:4px 8px}
+.step.lean[data-fk=produce] .rw-goals,.step.lean[data-fk=produce] .fx-cul,.step.lean[data-fk=produce] .yt-game,.step.lean[data-fk=produce] .m2-ill{display:none}
+.step.lean[data-fk=tdlg] .td-coach{max-height:80px;overflow:hidden}
+.step.lean-dense{font-size:.95em}
+@media(max-height:760px){.step.lean .az-hero,.step.lean .az-ill{max-height:90px}}
+@media(prefers-color-scheme:dark){.lean-more{background:linear-gradient(135deg,#0f2a29,#14201f);color:#9fe3df;border-color:#2aa7a3}.lean-more-tag{background:#12302f;color:#9fe3df}.lean-streak{background:#3a2410;color:#ffbb70}}
+[data-theme=dark] .lean-more{background:linear-gradient(135deg,#0f2a29,#14201f);color:#9fe3df;border-color:#2aa7a3}
+@media(prefers-reduced-motion:reduce){.lean-star,.lean-pop,.lean-jump,.lean-oops{animation:none}}
+.step.lean[data-fk=read] .az-ill{display:none}.step.lean[data-fk=read] .m2-s{padding:2px 8px;line-height:1.25}
+.step.lean[data-fk=produce] .rw-sit{max-height:120px;overflow:hidden}

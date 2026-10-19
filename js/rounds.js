@@ -2,7 +2,7 @@
 (function(){
 if(typeof render!=='function'||typeof play!=='function')return;
 const NAMES=[['Entender','🧭','história, palavras e verbos'],['Treinar','🎯','padrões, jogos e sons'],['Usar','🗣️','cenas, diálogo e produção']];
-const act=()=>P&&!P.isTest&&(P.cid==='en-a1'||P.cid==='en-a2'||P.cid==='en-b1'||P.cid==='en-b2'||P.cid==='en-c1'||P.cid==='en-c2'||P.cid==='es-a1')&&P.e&&P.e.fr&&P.e.fr.length>12&&P.e.fr.some(f=>f.k==='pat')&&P.e.fr.some(f=>f.k==='cexp');
+const act=()=>false; /* rodadas desativadas: episódio enxuto, sem telas de “Rodada concluída” */
 const starts=e=>{const k=e.fr.map(f=>f.k);return [0,k.indexOf('pat'),k.indexOf('cexp')]};
 const roundOf=i=>{const s=starts(P.e);return i>=s[2]?2:i>=s[1]?1:0};
 const sizes=()=>{const s=starts(P.e),n=P.e.fr.length;return [s[1]-s[0],s[2]-s[1],n-s[2]]};
