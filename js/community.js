@@ -42,7 +42,7 @@ function shell(inner,tab){
 function subtabs(active){
   const T=U().T2||(x=>x);
   const tab=(id,ic,lb)=>`<button data-ct="${id}" aria-pressed="${active===id}"><i>${ic}</i><span>${lb}</span></button>`;
-  return `<nav class="pg-subtabs hx-tabs" role="tablist">${tab('chat','💬',k('chat'))}${tab('partners','🤝',k('partners'))}${tab('ask','❓',k('askTab'))}${tab('rank','🏆',esc(T('rank')))}${tab('profile','👤',k('you'))}${state.admin?tab('admin','🛡️',k('adminTab')):''}</nav>`;
+  return `<nav class="pg-subtabs hx-tabs" role="tablist">${tab('chat','💬',k('chat'))}${tab('partners','🤝',k('partners'))}${tab('ask','❓',k('askTab'))}${tab('class','🎓',U().L0()==='es'?'Clases':'Turmas')}${tab('rank','🏆',esc(T('rank')))}${tab('profile','👤',k('you'))}${state.admin?tab('admin','🛡️',k('adminTab')):''}</nav>`;
 }
 function timeFmt(ts){const d=new Date(ts),n=new Date(),hh=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
   return d.toDateString()===n.toDateString()?hh:d.toLocaleDateString(U().L0()==='es'?'es':'pt-BR',{day:'2-digit',month:'short'})+' '+hh}
@@ -58,13 +58,14 @@ async function open(tab,arg){
   stopSub();state.tab=tab;
   await ready();
   U().cur=tab==='rank'?'rank':'comm';
-  try{history.pushState(null,'',tab==='rank'?'#/rank':tab==='partners'?'#/comm/partners':tab==='ask'?'#/comm/ask':tab==='profile'?'#/comm/profile':tab==='admin'?'#/comm/admin':'#/comm')}catch(e){}
+  try{history.pushState(null,'',tab==='rank'?'#/rank':tab==='partners'?'#/comm/partners':tab==='ask'?'#/comm/ask':tab==='class'?'#/comm/class':tab==='profile'?'#/comm/profile':tab==='admin'?'#/comm/admin':'#/comm')}catch(e){}
   if(tab==='rank'){if(user())U().syncNow();return rankPage()}
   if(tab==='auth'||!user())return authPage(tab==='auth'?'chat':tab,arg);
   U().syncNow();
   if(tab==='partners')return partnersPage();
   if(state.admin==null&&window.PogExtras)state.admin=await PogExtras.isAdmin();
   if(tab==='ask'&&window.PogForum)return PogForum.page(arg);
+  if(tab==='class'&&window.PogSocial)return PogSocial.page(arg);
   if(tab==='profile'&&window.PogExtras)return PogExtras.profile(arg);
   if(tab==='admin'&&window.PogExtras)return PogExtras.admin();
   return chatPage(arg);

@@ -167,7 +167,7 @@ function route(h){
     const p=(h||'').replace(/^#\/?/,'').split('/');
     if(p[0]==='lang'&&LANGS.some(l=>l.id===p[1]))hub(p[1]);
     else if(p[0]==='course'&&COURSES[p[1]])navLoading(()=>ensureLangLoaded(p[1]).then(()=>course(p[1])));
-    else if(p[0]==='comm')PogUI.go(p[1]==='partners'?'comm:partners':'comm');
+    else if(p[0]==='comm')PogUI.go(p[1]==='partners'?'comm:partners':p[1]==='class'?'comm:class':'comm');
     else if(p[0]==='rank')PogUI.go('rank');
     else if(p[0]==='ach')PogUI.go('ach');
     else if(p[0]==='profile')PogUI.go('profile');
