@@ -79,5 +79,5 @@ function mount(cid){
   if(any)compute(cid).then(function(d){cache[groupOf(cid)]=d;var s=document.getElementById('vc-sub');if(s)s.textContent=t('cardSub')(fmt(d.W.length),fmt(d.X.length))}).catch(function(){})}
 var _c=window.course;
 if(typeof _c==='function')window.course=function(id){var r=_c.apply(this,arguments);try{mount(id)}catch(e){console.error('vocab',e)}return r};
-window.PogVocab={open:open,compute:compute,collect:collect};
+window.PogVocab={open:open,compute:compute,collect:collect,extract:extract};
 })();
