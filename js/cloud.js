@@ -504,6 +504,14 @@
       var rows = await this.api('GET', q);
       return rows.filter(function (r) { return bl.indexOf(r.id) < 0; }).slice(0, o.limit).map(pubProfile);
     },
+    // estado do aluno (progresso completo) — tabela user_state (backend/sync.sql)
+    stateGet: async function () {
+      var rows = await this.api('GET', '/rest/v1/user_state?select=data,updated_at&limit=1');
+      return rows && rows[0] ? rows[0] : null;
+    },
+    statePut: async function (data) {
+      await this.api('POST', '/rest/v1/user_state?on_conflict=uid', { headers: { Prefer: 'resolution=merge-duplicates,return=minimal' }, body: { data: data, updated_at: new Date().toISOString() } });
+    },
     getProfile: async function (id) {
       var rows = await this.api('GET', '/rest/v1/profiles?select=' + PCOLS + '&id=eq.' + enc(id) + '&limit=1');
       if (!rows.length) throw fail('Perfil não encontrado.', 'not_found');
@@ -686,6 +694,9 @@
       if (!timer) timer = setTimeout(function () { timer = null; flush().catch(noop); }, P.statsDelay); // a última chamada vence
     },
     flush: flush,
+    syncAvailable: function () { return P === sb && !!P.user(); },
+    stateGet: async function () { return P.stateGet ? P.stateGet() : null; },
+    statePut: async function (d) { if (P.statePut) return P.statePut(d); },
     leaderboard: async function (o) {
       o = o || {};
       var by = ['xp', 'streak', 'eps'].indexOf(o.by) >= 0 ? o.by : 'xp';
