@@ -100,3 +100,13 @@ def integrate(cid,newjson,lang,drop):
     tmp='/tmp/_int_%s.json'%cid;json.dump(it,open(tmp,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
     n=r.data(cid,tmp);print(cid,'itens',n,'novos',len(new))
     return n
+def add_arcs(cid,lst):
+    s=open(R+'index.html',encoding='utf-8').read()
+    m=re.search(r" '%s':\[(\[.*?\])\],\n"%re.escape(cid),s)
+    assert m,cid
+    have=set(re.findall(r"\[(\d+),'",m.group(1)))
+    add=",".join("[%d,'%s']"%(n,t.replace("'","\\'")) for n,t in lst if str(n) not in have)
+    if not add: return
+    new=m.group(0).replace("]],\n","],"+add+"],\n") if m.group(0).endswith("]],\n") else None
+    assert new
+    open(R+'index.html','w',encoding='utf-8').write(s.replace(m.group(0),new,1))
