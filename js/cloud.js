@@ -523,7 +523,7 @@
     },
     messages: async function (room, o) {
       this.need();
-      var bl = await this.blocked(false), q = '/rest/v1/messages?select=' + enc('*,profiles(name,avatar)') + '&room=' + enc('eq.' + room);
+      var bl = await this.blocked(false), q = '/rest/v1/messages?select=' + enc('*,profiles!uid(name,avatar)') + '&room=' + enc('eq.' + room);
       q += o.after == null ? '&order=id.desc&limit=' + o.limit : '&id=gt.' + enc(o.after) + '&order=id.asc&limit=' + o.limit;
       var rows = await this.api('GET', q);
       if (o.after == null) rows.reverse();
@@ -533,7 +533,7 @@
     send: async function (room, text, fixOf, audio) {
       var u = this.need(), body = { room: room, uid: u.id, text: text, fix_of: fixOf || null };
       if (audio) body.audio = audio;
-      var rows = await this.api('POST', '/rest/v1/messages?select=' + enc('*,profiles(name,avatar)'), {
+      var rows = await this.api('POST', '/rest/v1/messages?select=' + enc('*,profiles!uid(name,avatar)'), {
         headers: { Prefer: 'return=representation' }, body: body
       });
       return this.msgOut(rows[0]);
@@ -609,7 +609,7 @@
         var l = await this.api('GET', '/rest/v1/messages?select=id&room=' + enc('like.dm:*') + '&order=id.desc&limit=1');
         return { last: l.length ? l[0].id : 0, items: [] };
       }
-      var rows = await this.api('GET', '/rest/v1/messages?select=' + enc('*,profiles(name,avatar)') + '&room=' + enc('like.dm:*') + '&id=gt.' + enc(after) + '&order=id.asc&limit=50');
+      var rows = await this.api('GET', '/rest/v1/messages?select=' + enc('*,profiles!uid(name,avatar)') + '&room=' + enc('like.dm:*') + '&id=gt.' + enc(after) + '&order=id.asc&limit=50');
       var bl = await this.blocked(false), last = after;
       rows.forEach(function (r) { if (r.id > last) last = r.id; });
       return { last: last, items: rows.filter(function (r) { return r.uid !== u.id && bl.indexOf(r.uid) < 0 && r.room.split(':').slice(1, 3).indexOf(u.id) >= 0; }).map(function (r) { return self.msgOut(r); }) };
