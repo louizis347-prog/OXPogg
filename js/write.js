@@ -26,7 +26,8 @@ const css=document.createElement('style');css.textContent=`
 `;document.head.appendChild(css);
 /* ---- dados de traços (KanjiVG) ---- */
 let KS=null,KSP=null;
-const loadKS=()=>KSP||(KSP=fetch('data/kana-strokes.json?v=1').then(r=>r.json()).then(j=>{KS=j;return j}).catch(()=>{KS={};return KS}));
+const jget=u=>fetch(u).then(r=>r.json()).catch(()=>({}));
+const loadKS=()=>KSP||(KSP=Promise.all([jget('data/kana-strokes.json?v=1'),jget('data/kanji-strokes.json?v=1')]).then(a=>{KS=Object.assign({},a[0],a[1]);return KS}));
 const hasKS=t=>!!KS&&[...t].every(c=>KS[c]);
 const meta={};/* cache: char -> [{d,p2d,len,pts,start}] */
 function strokesOf(c){
@@ -143,12 +144,12 @@ html[data-theme="dark"] .kw-map{background:#1B1740;border-color:#2D2760}html[dat
 function card(){
   const km=(function(){try{return JSON.parse(localStorage.getItem('pogglot:kw')||'null')||{}}catch(e){return {}}})();
   const sec=document.createElement('section');sec.className='kw-map';sec.setAttribute('aria-label','Mapa de escrita');
-  const paint=set=>{const L=set==='k'?KATA:HIRA,n3=[...L].filter(c=>km[c]>=3).length;
-    sec.innerHTML=`<h3>✍️ Mapa de escrita</h3><p>${n3}/46 caracteres dominados (★★★). Escreva nos episódios para colorir o mapa.</p>
-    <div class="kw-tabs"><button data-s="h" class="${set==='h'?'on':''}">Hiragana</button><button data-s="k" class="${set==='k'?'on':''}">Katakana</button></div>
+  let KJ='';const paint=set=>{const L=set==='k'?KATA:set==='j'?KJ:HIRA,n3=[...L].filter(c=>km[c]>=3).length;
+    sec.innerHTML=`<h3>✍️ Mapa de escrita</h3><p>${n3}/${[...L].length||46} caracteres dominados (★★★). Escreva nos episódios para colorir o mapa.</p>
+    <div class="kw-tabs"><button data-s="h" class="${set==='h'?'on':''}">Hiragana</button><button data-s="k" class="${set==='k'?'on':''}">Katakana</button><button data-s="j" class="${set==='j'?'on':''}">Kanji</button></div>
     <div class="kw-g">${[...L].map(c=>`<span class="${km[c]?'s'+km[c]:''}">${c}</span>`).join('')}</div>
     <div class="kw-leg"><span><i style="background:#F4F2FA"></i>novo</span><span><i style="background:#FFF1C9"></i>★</span><span><i style="background:#DDF6E8"></i>★★</span><span><i style="background:#2CC673"></i>★★★</span></div>`;
-    sec.querySelectorAll('.kw-tabs button').forEach(b=>b.onclick=()=>paint(b.dataset.s))};
+    sec.querySelectorAll('.kw-tabs button').forEach(b=>b.onclick=()=>{if(b.dataset.s==='j'&&!KJ&&window.PogKanji){PogKanji.load().then(d=>{KJ=Object.keys(d).join('');paint('j')})}else paint(b.dataset.s)})};
   paint('h');return sec}
 function mount(cid){
   if(!/^nbja/.test(cid||'')||document.querySelector('.kw-map'))return;
