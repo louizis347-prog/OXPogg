@@ -1,6 +1,6 @@
 /* Pogglot · service worker: app offline, dados e áudio em cache */
-const V='pogglot-shell-v40',DATA='pogglot-data-v29';
-const SHELL=['./','index.html','css/modern.css','config.js','js/cloud.js','js/voice.js','js/tts.js','js/a11y.js','css/a11y.css','js/ui.js','js/know.js','js/community.js','js/hello.js','js/missions.js','js/listen.js','js/recap.js','js/theme.js','css/dark.css','css/premium.css','js/forum.js','js/extras.js','js/billing.js','css/forum.css','css/community2.css','js/settings.js','js/path.js','js/ai.js','manifest.webmanifest','icons/icon-192.png'];
+const V='pogglot-shell-v41',DATA='pogglot-data-v30';
+const SHELL=['./','index.html','css/modern.css','config.js','js/cloud.js','js/voice.js','js/tts.js','js/a11y.js','js/exams.js','css/a11y.css','js/ui.js','js/know.js','js/community.js','js/hello.js','js/missions.js','js/listen.js','js/recap.js','js/theme.js','css/dark.css','css/premium.css','js/forum.js','js/extras.js','js/billing.js','css/forum.css','css/community2.css','js/settings.js','js/path.js','js/ai.js','manifest.webmanifest','icons/icon-192.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>Promise.all(SHELL.map(u=>c.add(u).catch(()=>0)))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>(k.startsWith('pogglot-shell-')&&k!==V)||k.startsWith('pogglot-data-')).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{

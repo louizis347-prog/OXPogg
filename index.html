@@ -1512,7 +1512,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=151').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=152').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -2446,7 +2446,8 @@ function simPick(correct,cands,k,fn,maxJac){const seen=new Set(),sc=[];cands.for
   sc.sort((a,b)=>b[0]-a[0]);const top=sc.slice(0,6).map(x=>x[1]);if(top.length<=k)return top;return [top[0]].concat(shufArr(top.slice(1)).slice(0,k-1));}
 function buildArcTest(cid,tid){
   const arcs=ARCS[cid]||[];let ai=arcs.findIndex(a=>'mt'+a[0]===tid),eps,qs=[],mult=1,cp=null;
-  if(ai<0){cp=cpTests(cid).find(x=>x.id===tid);if(!cp)return null;ai=cp.arcIdx;eps=[];for(let k=cp.a0;k<=cp.arcIdx;k++)eps.push(...arcSlice(cid,k));mult=2;}
+  if(tid==='exam'){eps=(EP[cid]||[]).filter(e=>!e.pl&&!e.rev);mult=4;if(eps.length<8)return null}
+  else if(ai<0){cp=cpTests(cid).find(x=>x.id===tid);if(!cp)return null;ai=cp.arcIdx;eps=[];for(let k=cp.a0;k<=cp.arcIdx;k++)eps.push(...arcSlice(cid,k));mult=2;}
   else eps=arcSlice(cid,ai);
   const mcs=[];eps.forEach(e=>(e.fr||[]).forEach(f=>{if(f.k==='nbctx')(f.items||[]).forEach(it=>{if(it&&it.opts&&it.opts.length>=2&&it.opts.length<=4&&typeof it.a==='number')mcs.push([String(it.sit).replace(/_{3,}/g,'____'),it.opts.slice(),it.a,String(it.why||'')]);});if(f.k==='nbtap')(f.items||[]).forEach(it=>{if(it&&it.opts&&it.opts.length>=2&&it.opts.length<=4&&typeof it.a==='number')mcs.push([String(it.pt),it.opts.map(o=>Array.isArray(o)?o[1]:o),it.a,'']);});}));eps.forEach(e=>(e.q||[]).forEach(q=>{if(q&&q[1]&&q[1].length>=2&&q[1].length<=4)mcs.push(q);}));
   eps.forEach(e=>(e.fr||[]).forEach(f=>{if(f.k==='gap'||f.k==='choose'||f.k==='cquiz')(f.rounds||[]).forEach(r=>{if(r.q&&r.opts&&r.opts.length>=2&&r.opts.length<=4&&typeof r.a==='number')mcs.push([String(r.q).replace(/___/g,'____'),r.opts.map(o=>Array.isArray(o)?o[1]:o),r.a,r.why||'']);});if(f.k==='trap')(f.rounds||[]).forEach(r=>{if(r.opts&&typeof r.a==='number')mcs.push(['Qual frase está certa?',r.opts,r.a,r.why||'']);});}));
@@ -2459,10 +2460,10 @@ function buildArcTest(cid,tid){
   let nl=0;for(const l of shufArr(lines)){if(nl>=2*mult)break;const others=simPick(l[2],lines.filter(x=>x[2]!==l[2]).map(x=>({t:x[2],same:false})),2,simLine,.5);if(others.length<2)continue;
     const opts=shufArr([l[2],...others]);qs.push({type:'listen',audio:plain(l[1]),instr:'Ouça a frase e escolha a tradução correta.',opts,correct:opts.indexOf(l[2]),exp:`O áudio diz “${plain(l[1])}” — ${l[2]}`});nl++;}
   const bs=[];eps.forEach(e=>(e.fr||[]).forEach(f=>{if(f.k==='nbswap')(f.pages||[]).forEach(pg=>(pg.S||[]).forEach(s=>{if(s[0]&&s[1])bs.push([plain(s[0]),String(s[1])]);}));}));eps.forEach(e=>(e.fr||[]).forEach(f=>{if(f.k==='build')(f.items||[]).forEach(b=>{if(b[0]&&b[1])bs.push([plain(b[0]),String(b[1]).replace(/[.!?]+$/,'')]);});}));eps.forEach(e=>{const arr=e.b?(Array.isArray(e.b[0])?e.b:[e.b]):[];arr.forEach(b=>{const m=/Monte:\s*['‘"“](.+?)['’"”]\.?\s*$/.exec(b[1]||'');if(m&&b[0])bs.push([plain(b[0]),m[1]]);});});
-  shufArr(bs).slice(0,2*mult).forEach(b=>qs.push({type:'write',instr:`Escreva em inglês: '${b[1]}'`,accept:[b[0],b[0].replace(/[.!?]+$/,'')],exp:`Resposta: ${b[0]}`}));
+  shufArr(bs).slice(0,2*mult).forEach(b=>qs.push({type:'write',instr:`Escreva em ${({en:'inglês',es:'espanhol',fr:'francês',de:'alemão',it:'italiano',ja:'japonês',pt:'português'})[String((COURSES[cid]||{}).tts||'en').slice(0,2)]||'inglês'}: '${b[1]}'`,accept:[b[0],b[0].replace(/[.!?]+$/,'')],exp:`Resposta: ${b[0]}`}));
   if(qs.length<4)return null;
-  const test=cp||arcTests(cid).find(x=>x.id===tid)||{t:'Mini-teste',sub:'',pass:70};
-  return {id:tid,t:test.t,sub:test.sub,pass:70,qs:shufArr(qs).slice(0,11*mult)};
+  const test=cp||(tid==='exam'?{t:'Simulado',sub:'',pass:60}:arcTests(cid).find(x=>x.id===tid))||{t:'Mini-teste',sub:'',pass:70};
+  return {id:tid,t:test.t,sub:test.sub,pass:tid==='exam'?60:70,qs:shufArr(qs).slice(0,(tid==='exam'?40:11*mult))};
 }
 
 /* ================= COURSE MAP ================= */
@@ -4279,7 +4280,7 @@ function fxEsDom(root){if(!root)return;const w=document.createTreeWalker(root,No
 function fxEsHook(st){if(!fxEsOn()||!st)return;fxEsDom(st);if(!st._fxo){st._fxo=new MutationObserver(()=>{st._fxo.disconnect();try{fxEsDom(st)}finally{st._fxo.observe(st,{childList:true,subtree:true,characterData:true})}});st._fxo.observe(st,{childList:true,subtree:true,characterData:true})}}
 {const _cta=cta,_say=say;cta=function(l,en,am){return _cta(fxEsOn()?fxEs(l):l,en,am)};say=function(txt,mood){return _say(fxEsOn()?fxEs(txt):txt,mood)};Object.keys(_say).forEach(k=>{say[k]=_say[k]})}
 /* ================= CHECKPOINT TESTS ================= */
-function playTest(cid,id){const test=/^(mt|cp)\d+$/.test(id)?buildArcTest(cid,id):(TESTS[cid]||[]).find(x=>x.id===id);if(!test)return;const c=COURSES[cid];
+function playTest(cid,id){const test=/^(mt|cp)\d+$|^exam$/.test(id)?buildArcTest(cid,id):(TESTS[cid]||[]).find(x=>x.id===id);if(!test)return;const c=COURSES[cid];
   P={cid,isTest:true,test,i:0,score:0,total:test.qs.length,answered:false,sel:null,c,L:c.ui,t:T[c.ui],steps:Array(test.qs.length+1).fill('t'),t0:Date.now()};
   const el=document.createElement('div');el.className='player';el.id='player';el.setAttribute('role','dialog');el.setAttribute('aria-label',test.t);
   el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar">×</button><div class="prog"><i id="pbar" style="width:0"></i></div><span class="timer" id="ptime">0:00</span></div>
@@ -4382,8 +4383,8 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=65',{cache:'no-store'}).then(r=>r.json());
-    try{ EP_COUNT = await fetch('data/counts.json?v=66',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    MANIFEST = await fetch('data/manifest.json?v=66',{cache:'no-store'}).then(r=>r.json());
+    try{ EP_COUNT = await fetch('data/counts.json?v=67',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
     if(app) app.innerHTML='<div style="padding:60px 20px;text-align:center;font:700 15px \'Nunito\',sans-serif;color:#D2404F">Não foi possível carregar os dados do curso. Recarregue a página.</div>';
@@ -4438,7 +4439,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/nb.js"></script>
 <script src="js/kana.js"></script>
 <script src="js/nbtrip.js"></script>
-<script src="js/pogglot2.js"></script>
+<script src="js/pogglot2.js"></script><script src="js/exams.js"></script>
 <script>window.__pgres()</script>
 <button id="pgDl" type="button" hidden style="display:none;margin:0 0 4px;padding:8px 14px;border:0;border-radius:999px;background:#7C4DFF;color:#fff;font:700 13px system-ui,sans-serif;box-shadow:0 6px 18px rgba(51,36,82,.35);cursor:pointer;grid-column:1/-1;justify-self:start;order:-1;position:relative;z-index:5">⬇ Baixar Pogglot (.zip)</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
