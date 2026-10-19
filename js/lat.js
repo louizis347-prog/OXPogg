@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -17,6 +17,27 @@ const css=document.createElement('style');css.textContent=`
 .rdg-q{font:800 19px/1.3 system-ui;color:#25203f;margin:10px 0}
 .rdg-o{display:grid;gap:8px}.rdg-o button{border:2px solid #e6e1f7;background:#fff;border-radius:16px;padding:12px 14px;min-height:48px;font:700 17px system-ui;color:#25203f;text-align:left;cursor:pointer}
 .rdg-o button.ok{border-color:#2cc673;background:#e7f9ef}.rdg-o button.no{border-color:#ef6a4c;background:#fff0ec}
+.rp{padding-bottom:12px}
+.rp-chat{display:grid;gap:8px;margin:6px 0}
+.rp-b{display:flex;gap:8px;align-items:flex-end;animation:rpIn .35s both}
+.rp-b.r{flex-direction:row-reverse}
+.rp-av{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:20px;box-shadow:0 4px 10px -4px rgba(0,0,0,.4)}
+.rp-bb{max-width:78%;padding:9px 13px;border-radius:18px 18px 18px 4px;background:#fff;box-shadow:0 6px 16px -12px rgba(40,30,90,.6);font:600 17px/1.35 system-ui;color:#25203f}
+.rp-b.r .rp-bb{border-radius:18px 18px 4px 18px;background:#e6f6f5}
+.rp-bb small{display:none;margin-top:3px;font:500 13px system-ui;color:#6b6591}.rp-bb.on small{display:block}
+.rp-gap{display:inline-block;min-width:64px;padding:0 8px;border-bottom:3px dashed #F29B34;color:#F29B34;text-align:center;animation:rpPulse 1.2s infinite}
+.rp-gap.ok{border-bottom:3px solid #2cc673;color:#1b7a4b;background:#e7f9ef;border-radius:8px;animation:rpPop .4s}
+.rp-opts{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0 4px}
+.rp-opts button{border:0;border-radius:16px;padding:12px 18px;min-height:48px;font:800 17px system-ui;color:#fff;background:linear-gradient(135deg,#0C7A78,#3fc1bd);box-shadow:0 6px 0 #095a58;cursor:pointer}
+.rp-opts button:active{transform:translateY(3px);box-shadow:0 3px 0 #095a58}
+.rp-opts button.no{background:#e9e4f5;color:#a59cc0;box-shadow:none;animation:rpShake .4s}
+.rp-hint{min-height:22px;text-align:center;font:700 14px/1.3 system-ui;color:#b4560a}
+.rp-rule{display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:12px 14px;border-radius:16px;background:linear-gradient(135deg,#fff7e0,#fff);border:2px solid #ffd978;color:#7a5200;font:600 15px/1.35 system-ui;animation:rpIn .4s both}
+.rp-res{text-align:center;font:900 22px system-ui;color:#F29B34;letter-spacing:4px;margin-top:6px}
+@keyframes rpIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes rpPulse{50%{opacity:.5}}
+@keyframes rpPop{50%{transform:scale(1.2)}}
+@keyframes rpShake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 .wl{--g1:#0C7A78;--g2:#3fc1bd;padding-bottom:12px}
 .wl-st{display:flex;gap:6px;justify-content:center;margin:6px 0}.wl-st i{width:26px;height:8px;border-radius:6px;background:#dcefee}.wl-st i.on{background:linear-gradient(90deg,var(--g1),var(--g2))}
 .wl-info{text-align:center;margin:4px 0}.wl-info b{display:block;font:900 20px system-ui;color:#25203f}.wl-info small{display:block;font:600 14px system-ui;color:#5b5578}
@@ -62,6 +83,37 @@ FXR.rdg=function(f,st,n){
         fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
     }};
   view()};
+/* ---------- leitura lúdica: conversa com lacunas ---------- */
+FXR.rdgplay=function(f,st,n){
+  const T=f.turns,cast=f.cast;let ti=0,hits=0,gaps=0,tries=0,tm=0;
+  P.fx.done=false;P.fx.cta=()=>false;
+  st.innerHTML=`<div class="step fx rp">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2><div class="rp-chat" id="rpc"></div><div class="rp-opts" id="rpo"></div><div class="rp-hint" id="rph"></div><div id="rpe"></div><div id="fb"></div></div>`;
+  const chat=q('#rpc',st),opts=q('#rpo',st),hint=q('#rph',st);
+  const plain=t=>t.replace(/\[\[|\]\]/g,'');
+  const mkB=(t,gap)=>{const c=cast[t.w],r=t.w%2?'r':'';const txt=H(t.t).replace(/\[\[(.+?)\]\]/,gap?'<span class="rp-gap" id="rpg">＿＿＿</span>':'<span class="rp-gap ok">$1</span>');
+    const d=document.createElement('div');d.className='rp-b '+r;d.innerHTML=`<span class="rp-av" style="background:${c[1]}22">${c[0]}</span><div class="rp-bb"><p>${txt}</p><small>${H(t.pt)}</small></div>`;
+    d.querySelector('.rp-bb').onclick=e=>{e.currentTarget.classList.toggle('on');say2(plain(t.t))};chat.appendChild(d);return d};
+  const show=()=>{
+    if(!P||!chat.isConnected)return;if(ti>=T.length)return finish();
+    const t=T[ti];tries=0;hint.textContent='';opts.innerHTML='';
+    if(!t.o){mkB(t,false);say2(plain(t.t));ti++;tm=setTimeout(show,1500);return}
+    mkB(t,true);gaps++;const ans=t.o[0];
+    cta('Toque na resposta certa',false);
+    fxShuffle(t.o).forEach(o=>{const b=document.createElement('button');b.type='button';b.textContent=o;
+      b.onclick=()=>{
+        if(o===ans){const g=q('#rpg',st);g.textContent=o;g.classList.add('ok');g.removeAttribute('id');opts.innerHTML='';hint.textContent='';
+          if(tries===0)hits++;P.streak=tries===0?(P.streak||0)+1:0;fxGrade(true,'',ans);
+          say2(plain(t.t));ti++;tm=setTimeout(show,1500)}
+        else{tries++;b.classList.add('no');b.disabled=true;hint.textContent='💡 '+t.h;P.streak=0;try{sfx('oops')}catch(e){}}};
+      opts.appendChild(b)})};
+  const finish=()=>{
+    opts.innerHTML='';hint.textContent='';P.score+=hits;P.fx.done=true;
+    const sc=gaps?hits/gaps:1,stars=sc>=.8?3:sc>=.5?2:1;
+    q('#rpe',st).innerHTML=`<div class="rp-res">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</div><div class="rp-rule"><span>📌</span><span><b>Você descobriu a regra!</b><br>${mk(f.rule)}</span></div>`;
+    try{sfx('tada');confetti(50)}catch(e){}
+    P.fx.cta=null;cta(P.t.cont,true,true);say('Regra descoberta jogando! 🎉');setTimeout(()=>{const b=document.querySelector('#pbody');if(b)b.scrollTop=b.scrollHeight},60)};
+  say(f.say||'Complete a conversa tocando na resposta certa!');show();
+  return()=>clearTimeout(tm)};
 /* ---------- escrever na tela ---------- */
 FXR.wlat=function(f,st,n){
   const items=f.items||[];let wi=0,phase=0,tries=0;const total=items.length*2;
