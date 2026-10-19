@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultx='story';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -25,6 +25,23 @@ const css=document.createElement('style');css.textContent=`
 .cx-t.on .cx-b{display:block;animation:rpIn .3s both}.cx-t.on .cx-h i{transform:rotate(45deg)}
 .cx-q{font:800 17px/1.3 system-ui;color:#0b5f5d}.cx-q small{display:block;font:500 13px system-ui;color:#6b6591;margin-top:3px}
 .cx-st{text-align:center;font:800 14px system-ui;color:#F29B34;margin:2px 0}
+.cb-chips{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 6px}.cb-chips span{font:700 12px system-ui;color:#0b5f5d;background:#e3f4f3;border-radius:99px;padding:4px 10px}
+.cb-hook{font:italic 700 16px/1.35 Georgia,serif;color:#7a5200;margin:6px 0 10px;padding-left:10px;border-left:4px solid #F29B34}
+.cb-p{display:flex;gap:10px;align-items:flex-start;margin:7px 0;padding:11px 13px;border-radius:16px;background:#fff;box-shadow:0 8px 18px -14px rgba(40,30,90,.6);font:600 15px/1.4 system-ui;color:#25203f;animation:rpIn .4s both}
+.cb-p b{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#F29B34,#E85D75);color:#fff;font:900 14px system-ui}
+.cg-c{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 13px;border:2px solid #e6e1f7;border-radius:16px;background:#fff;font:600 15px/1.35 system-ui;color:#25203f;cursor:pointer;min-height:48px;position:relative}
+.cg-c.pick{border-color:#2cc673;background:#e7f9ef}.cg-c.no{animation:rpShake .4s;border-color:#ef6a4c}
+.cg-c i{position:absolute;right:10px;top:10px;font-style:normal;font:900 14px system-ui;color:#fff;background:#2cc673;border-radius:50%;width:24px;height:24px;display:none;place-items:center}.cg-c.pick i{display:grid}
+.cg-q{font:800 18px/1.35 system-ui;color:#25203f;margin:8px 0}.cg-en{font:800 20px/1.35 system-ui;color:#0b5f5d;margin:8px 0 2px}.cg-pt{font:500 14px system-ui;color:#6b6591;margin-bottom:8px}
+.cg-tf{display:flex;gap:10px;margin:10px 0}.cg-tf button{flex:1;border:0;border-radius:16px;padding:14px;min-height:52px;font:900 17px system-ui;color:#fff;cursor:pointer;box-shadow:0 5px 0 rgba(0,0,0,.2)}
+.cg-tf .t{background:linear-gradient(135deg,#0C7A78,#3fc1bd)}.cg-tf .f{background:linear-gradient(135deg,#E85D75,#f38aa0)}
+.cg-yr{display:none;margin-left:6px;font:900 13px system-ui;color:#0b5f5d}.cg-c.rev .cg-yr{display:inline}
+.vw-bar{height:8px;border-radius:6px;background:#e1f1f0;overflow:hidden;margin:6px 0 10px}.vw-bar i{display:block;height:100%;background:linear-gradient(90deg,#0C7A78,#3fc1bd);transition:width .3s}
+.vw-g{display:inline-block;min-width:74px;border-bottom:3px dashed #F29B34;color:#F29B34;text-align:center}.vw-g.ok{border-bottom:3px solid #2cc673;color:#1b7a4b;background:#e7f9ef;border-radius:8px}
+.vw-o{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:14px 0 4px}
+.vw-o button{border:0;border-radius:16px;padding:12px 16px;min-height:48px;font:800 17px system-ui;color:#fff;background:linear-gradient(135deg,#6C3FEF,#9a7bff);box-shadow:0 6px 0 #4a28b3;cursor:pointer}
+.vw-o button.no{background:#e9e4f5;color:#a59cc0;box-shadow:none;animation:rpShake .4s}
+.vw-h{min-height:22px;text-align:center;font:700 14px/1.3 system-ui;color:#b4560a;margin-top:6px}
 .cu2{padding-bottom:12px}
 .cu2-art{border-radius:22px;overflow:hidden;box-shadow:0 12px 24px -14px rgba(20,40,80,.5);margin:6px 0;max-height:150px}
 .cu2-art svg{display:block;width:100%;height:150px;object-fit:cover}
@@ -111,6 +128,62 @@ FXR.cultx=function(f,st,n){
     seen.add(i);q('#cxs',st).textContent=seen.size>=T.length?'Tudo aberto! 🎉':'Toque nos cartões · '+seen.size+'/'+T.length;
     if(seen.size>=T.length)cta(P.t.cont,true,true)});
   say(f.say||'Vamos conhecer a obra por dentro? Abra cada cartão!')};
+/* ---------- cultura: apresentação (cultob) · atividade (cultgame) · linha do tempo (culttl) ---------- */
+FXR.cultob=function(f,st,n){
+  P.fx.done=false;P.fx.cta=null;
+  const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
+  st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
+  <div class="cu2-work"><span>${H(f.work)}</span></div><div class="cb-chips">${(f.chips||[]).map(c=>`<span>${H(c)}</span>`).join('')}</div>
+  ${f.hook?`<div class="cb-hook">${mk(f.hook)}</div>`:''}
+  ${(f.panels||[]).map((t,i)=>`<div class="cb-p" style="animation-delay:${i*120}ms"><b>${i+1}</b><span>${mk(t)}</span></div>`).join('')}</div>`;
+  cta(P.t.cont,true,true);say(f.say||'Conheça a obra de hoje!')};
+FXR.cultgame=function(f,st,n){
+  const R=f.rounds;let ri=0,hits=0;P.fx.done=false;P.fx.cta=null;
+  const head=()=>`${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)} <small>${ri+1}/${R.length}</small></h2><div class="vw-bar"><i style="width:${ri/R.length*100}%"></i></div>`;
+  const next=ok=>{if(ok)hits++;P.fx.cta=()=>{ri++;draw();return true};cta(ri<R.length-1?'Próximo desafio ▶':'Ver resultado ▶',true,true)};
+  const finish=()=>{P.score+=hits;P.fx.done=true;const sc=R.length?hits/R.length:1,stars=sc>=.8?3:sc>=.5?2:1;
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2><div class="rp-res">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</div><div class="rp-rule"><span>🎉</span><span><b>Você conhece a obra!</b><br>${H(f.work||'')} agora faz parte do seu repertório em inglês.</span></div></div>`;
+    try{sfx('tada');confetti(50)}catch(e){}P.fx.cta=null;cta(P.t.cont,true,true);say('Missão da obra cumprida!')};
+  const draw=()=>{
+    if(ri>=R.length)return finish();const r=R[ri];let done=false;
+    if(r.t==='order'){
+      const items=r.items.map((t,i)=>({t,i}));let need=0,miss=0;
+      st.innerHTML=`<div class="step fx cu2">${head()}<div class="cg-q">${H(r.q||'Ponha a história na ordem: toque do início ao fim.')}</div>${fxShuffle(items).map(o=>`<button type="button" class="cg-c" data-i="${o.i}">${mk(o.t)}<i></i></button>`).join('')}<div id="fb"></div></div>`;
+      cta('Toque na ordem certa',false);
+      st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
+        if(i===need){b.classList.add('pick');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
+          if(need>=items.length){done=true;P.streak=miss?0:(P.streak||0)+1;fxGrade(true,'',null);next(!miss)}}
+        else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
+    }else if(r.t==='gap'){
+      st.innerHTML=`<div class="step fx cu2">${head()}<div class="cg-q">Complete a frase famosa:</div><div class="cg-en">“${H(r.en).replace('___','<span class="vw-g" id="cgg">＿＿＿</span>')}”</div><div class="cg-pt">${H(r.pt)}</div><div class="vw-o">${fxShuffle(r.o).map(o=>`<button type="button">${H(o)}</button>`).join('')}</div><div class="vw-h" id="cgh"></div><div id="fb"></div></div>`;
+      cta('Escolha a palavra',false);let tries=0;
+      st.querySelectorAll('.vw-o button').forEach(b=>b.onclick=()=>{if(done)return;
+        if(b.textContent===r.a){done=true;const g=q('#cgg',st);g.textContent=r.a;g.classList.add('ok');st.querySelectorAll('.vw-o button').forEach(x=>x.disabled=true);P.streak=tries?0:(P.streak||0)+1;fxGrade(true,'',r.a);say2(r.en.replace('___',r.a));next(!tries)}
+        else{tries++;b.classList.add('no');b.disabled=true;q('#cgh',st).textContent='💡 Ouça a frase de novo e pense no sentido.';P.streak=0;try{sfx('oops');say2(r.en.replace('___',''))}catch(e){}}});
+    }else if(r.t==='tf'){
+      st.innerHTML=`<div class="step fx cu2">${head()}<div class="cg-q">Verdade ou mito?</div><div class="cu2-fact">${mk(r.s)}</div><div class="cg-tf"><button type="button" class="t">✅ Verdade</button><button type="button" class="f">❌ Mito</button></div><div id="fb"></div></div>`;
+      cta('Verdade ou mito?',false);
+      st.querySelectorAll('.cg-tf button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const ok=(b.classList.contains('t'))===r.a;P.streak=ok?(P.streak||0)+1:0;fxGrade(ok,r.why||'',r.a?'Verdade':'Mito');next(ok)});
+    }else{
+      st.innerHTML=`<div class="step fx cu2">${head()}<div class="cu2-q">${H(r.q)}</div><div class="rdg-o">${r.o.map((o,i)=>`<button type="button" data-i="${i}">${H(o)}</button>`).join('')}</div><div id="fb"></div></div>`;
+      cta('Escolha uma resposta',false);
+      st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const ok=+b.dataset.i===r.a;b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[r.a].classList.add('ok');P.streak=ok?(P.streak||0)+1:0;fxGrade(ok,r.why||'',r.o[r.a]);next(ok)});
+    }
+    say(r.t==='order'?'Qual vem primeiro? Toque na ordem da história.':'Missão da obra!')};
+  draw()};
+FXR.culttl=function(f,st,n){
+  const W=f.works;let need=0,miss=0,done=false;P.fx.done=false;P.fx.cta=null;
+  const order=W.map((w,i)=>({w,i})).sort((a,b)=>a.w.y-b.w.y).map(o=>o.i);
+  const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
+  st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
+  ${f.fact?`<div class="cu2-fact">${mk(f.fact)}</div>`:''}<div class="cg-q">Linha do tempo: toque da obra mais ANTIGA para a mais NOVA.</div>
+  ${fxShuffle(W.map((w,i)=>({w,i}))).map(o=>`<button type="button" class="cg-c" data-i="${o.i}"><b>${H(o.w.k)}</b> ${H(o.w.n)}<span class="cg-yr">· ${o.w.y}</span><i></i></button>`).join('')}<div id="fb"></div></div>`;
+  cta('Toque na ordem do tempo',false);
+  st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
+    if(i===order[need]){b.classList.add('pick','rev');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
+      if(need>=W.length){done=true;st.querySelectorAll('.cg-c').forEach(x=>x.classList.add('rev'));P.streak=miss?0:(P.streak||0)+1;if(!miss)P.score++;fxGrade(!miss,'As datas apareceram: confira a ordem.',null);P.fx.done=true;cta(P.t.cont,true,true)}}
+    else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
+  say(f.say||'Qual obra veio primeiro? Monte a linha do tempo!')};
 /* ---------- cultura: cartão ilustrado + pergunta (cultq: toque único · cult: curiosidade + pergunta) ---------- */
 function cultStep(kind){return function(f,st,n){
   const QS=f.qs||[f.q];let qi=0;

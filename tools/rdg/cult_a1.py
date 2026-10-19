@@ -52,3 +52,32 @@ C={
  enter="Leia o primeiro verso em voz alta, bem devagar, letra por letra: ótimo treino para soletrar.",
  q=("O que há de especial nas palavras do poema?",["Muitas foram inventadas","Todas são japonesas","São só números"],"Carroll inventou palavras como brillig e slithy.")),
 }
+
+EXTRA={
+9801:("Já imaginou ser recebido por uma estátua gigante, com versos que dizem “entre, você é bem-vindo”?",("O poema foi escrito para arrecadar dinheiro para o pedestal da Estátua da Liberdade.",True,"Emma Lazarus o escreveu em 1883 com esse objetivo.")),
+70001:("Uma cantiga de quase 300 anos que ainda faz criança cantar — e rir de um rapaz com uma pena no chapéu.",("A cantiga Yankee Doodle foi criada para elogiar os soldados americanos.",False,"Ela nasceu para zombar dos colonos, que adoraram e passaram a cantá-la com orgulho.")),
+30001:("Duas irmãs, uma cabana na floresta, um urso à porta e roseiras que dão nome às meninas.",("Snow-White and Rose-Red é a mesma história da Branca de Neve do espelho mágico.",False,"É outro conto dos irmãos Grimm, com duas irmãs e um urso.")),
+70002:("O balanço do berço virou música — e a música acalma bebês há mais de 200 anos.",("Rock-a-Bye Baby é uma cantiga de ninar com mais de dois séculos.",True,"Ela circula há mais de duzentos anos.")),
+9802:("80 dias, um relógio implacável e uma aposta que levou um inglês ao outro lado do planeta.",("No livro, Phileas Fogg dá a volta ao mundo de balão.",False,"O balão aparece só no filme de 1956; no livro ele viaja de trem e de navio (e até de elefante).")),
+70003:("Um náufrago acorda amarrado por gente do tamanho de um dedo. E isso é só o começo.",("Gulliver's Travels foi escrito como uma sátira, para brincar com a política da época.",True,"Jonathan Swift usou terras imaginárias para criticar políticos de 1726.")),
+30002:("Uma história por noite, para adiar o fim: suspense que dura mil e uma noites.",("As histórias de Aladim e Sinbad já estavam no livro original, desde o começo.",False,"Elas foram acrescentadas séculos depois.")),
+70004:("Ele ataca gigantes. Os gigantes são moinhos de vento.",("Dom Quixote é considerado um dos primeiros romances modernos.",True,"O livro é de 1605.")),
+9803:("Um alfabeto que vira poema: cada letra faz uma travessura com uma torta de maçã.",("O abecedário “A was an apple pie” tem mais de três séculos.",True,"Há versões de mais de 300 anos.")),
+70005:("Um poema cheio de palavras que não existem — e que, mesmo assim, todo mundo entende.",("Jabberwocky usa só palavras do dicionário.",False,"Carroll inventou palavras como brillig e slithy; algumas entraram no dicionário depois.")),
+}
+for _k,(_h,_t) in EXTRA.items():
+    C[_k]['hook']=_h;C[_k]['tf']=_t
+
+PANELS={
+9801:["Imagine chegar de navio a Nova York, cansado depois de dias no mar.","Na entrada do porto, você vê uma estátua gigante com uma tocha na mão.","O poema, gravado no pedestal, fala com você: “aqui, você é bem-vindo”."],
+70001:["Um rapaz chega à cidade montado num pônei.","Ele espeta uma pena no chapéu e acha que é o mais elegante de todos.","A cantiga ri desse orgulho ingênuo — e acabou virando hino de soldados."],
+30001:["Duas irmãs vivem com a mãe numa cabana na floresta: uma calma, a outra alegre.","Numa noite de inverno, um urso bate à porta.","Em vez de fugir, elas o deixam entrar perto da lareira."],
+70002:["Um bebê dorme num berço pendurado no alto de uma árvore.","O vento sopra e o galho balança.","A canção termina com um susto, mas o ritmo calmo é o que faz o bebê dormir."],
+9802:["Phileas Fogg, um inglês pontual demais, faz uma aposta.","Ele garante que dá a volta ao mundo em 80 dias.","Entre trens, navios e até um elefante, conhece gente de muitos países, e o relógio não para."],
+70003:["Gulliver naufraga e acorda numa praia.","Está amarrado por gente minúscula: os lilliputianos!","Depois conhece gigantes e ilhas voadoras: cada viagem mostra como outros países parecem estranhos vistos de fora."],
+30002:["Sherazade precisa salvar a própria vida.","Então conta ao rei uma história por noite, parando no melhor momento.","Assim nascem viagens, mercadores, gênios e muitos países."],
+70004:["Um fidalgo lê tantos livros de cavaleiros que decide virar um.","Veste uma armadura enferrujada e monta num cavalo magro, com o escudeiro Sancho Pança.","Para ele, moinhos de vento são gigantes — e ele ataca!"],
+9803:["É um abecedário rimado, recitado há séculos.","Cada letra faz algo com uma torta de maçã: uma corta, outra morde, outra come.","É assim que crianças de língua inglesa aprendem o alfabeto brincando."],
+70005:["Um herói enfrenta o Jabberwock, um monstro de olhos de fogo.","Ele usa uma espada vorpal e vence a fera.","O poema está cheio de palavras inventadas (brillig, slithy, toves), mas dá para entender a ação pelo som e pelo ritmo."],
+}
+for _k,_p in PANELS.items(): C[_k]['panels']=_p
