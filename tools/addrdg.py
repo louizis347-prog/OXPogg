@@ -15,6 +15,11 @@ for x in it:
     d=D.get(x.get('xof'))
     if not d or x.get('play'): continue
     title,rule,lines,q,opts,a,why=d
+    if prefix!='a1':
+        # embaralha de forma determinística (semente = xof) para a resposta certa não ficar sempre na mesma posição
+        import random
+        idx=list(range(len(opts)));random.Random(x['xof']).shuffle(idx)
+        opts=[opts[i] for i in idx];a=idx.index(a)
     step={'k':'rdg','title':'Leitura: '+title,'s':[[e,p] for e,p in lines],'rule':rule,'q':{'q':q,'o':opts,'a':a,'why':why},'say':'Leia, toque nas frases para ouvir e ver a tradução. Depois, uma perguntinha!'}
     x['fr']=[s for s in x['fr'] if s['k']!='rdg']
     ks=[t['k'] for t in x['fr']]
