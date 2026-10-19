@@ -42,6 +42,12 @@ def run(cid):
             tiles+=[{'ic':'🗣️','l':'Uma frase da obra','en':A['quote'][0],'pt':A['quote'][1]},{'ic':'💡','l':'Curiosidade','t':A['curio']},{'ic':'🎯','l':'Como entrar','t':A['enter']}]
         else:
             tiles+=[{'ic':'💡','l':'Curiosidade','t':cw['fact'][2]},{'ic':'🎯','l':'Como entrar','t':ENTER.get(k,"Procure um trecho curto e curta os primeiros cinco minutos.")}]
+        wd=next((z for z in m['fr'] if z['k']=='words'),None)
+        if wd and wd.get('items'):
+            tema=str(cov.get('sub','')).split(':')[0].strip().rstrip('.')
+            ws=wd['items'][:3]
+            lst=', '.join('**%s** (%s)'%(i[0],str(i[2]).lower()) for i in ws[:-1])+(' e ' if len(ws)>1 else '')+'**%s** (%s)'%(ws[-1][0],str(ws[-1][2]).lower())
+            tiles.append({'ic':'🔗','l':'Ligação com a lição','t':'Na lição de hoje%s você vê %s. Para fixar, conte algo sobre a obra em voz alta usando uma dessas palavras.'%(' ('+tema+')' if tema else '',lst)})
         cx={'k':'cultx','title':'Por dentro da obra','pa':cw.get('pa'),'work':cw['work'],'tag':cw.get('kind'),'tiles':tiles,'say':'Abra cada cartão e descubra mais!'}
         rounds=[]
         if len(pan)>=2: rounds.append({'t':'order','items':pan})
