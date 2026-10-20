@@ -1502,7 +1502,7 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1548,7 +1548,7 @@ const GROUPS={
   nbja:{id:'nbja',ui:'pt',scarf:'#D6336C',scene:'cv_it',
       name:{pt:'Neighbors · Japonês',es:'Neighbors · Japonés'},flag:'JA → PT-BR',
       desc:{pt:'Aprenda japonês do zero: primeiro os alfabetos (hiragana e katakana, com módulos de leitura, escrita e escuta), depois conversas com vizinhos do Japão. Alinhado ao MCER A1 e ao JLPT N5.',es:'Aprende japonés desde cero: primero los silabarios (hiragana y katakana) y luego conversaciones con vecinos de Japón. Alineado con el MCER A1 y el JLPT N5.'},
-      sub:['nbja-kana','nbja-a1']},
+      sub:['nbja-kana','nbja-a1','nbja-a2']},
   nbeng:{id:'nbeng',ui:'es',scarf:'#2E6F95',scene:'cv_usa',
       name:{pt:'Neighbors · Inglês (p/ hispanofalantes)',es:'Neighbors · English'},flag:'EN → ES',
       desc:{pt:'Inglês para falantes de espanhol conversando com vizinhos de todo o mundo anglófono. Alinhado ao MCER A1.',es:'Aprende inglés conversando con vecinos de todo el mundo anglófono: una persona, una ciudad y una situación real por episodio, con falsos amigos y notas para hispanohablantes. Alineado con el MCER A1 y Cambridge A1 Movers.'},
@@ -1641,6 +1641,9 @@ const COURSES={
   'nbja-a1':{id:'nbja-a1',group:'nbja',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',
       name:{pt:'Neighbors · Japonês A1',es:'Neighbors · Japonés A1'},flag:'JA → PT-BR · A1',
       desc:{pt:'Konbini, estações e vizinhos de Tóquio a Okinawa — fala primeiro, com romaji que some aos poucos. Faça antes o módulo de alfabetização. Alinhado ao MCER A1, ao JLPT N5 e ao JF Standard A1.',es:'Konbini, estaciones y vecinos de Tokio a Okinawa, con romaji opcional. Haz antes el módulo de alfabetización. Alineado con el MCER A1 y el JLPT N5.'}},
+  'nbja-a2':{id:'nbja-a2',group:'nbja',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',
+      name:{pt:'Neighbors · Japonês A2',es:'Neighbors · Japonés A2'},flag:'JA → PT-BR · A2',
+      desc:{pt:'Conselhos, habilidades, favores, condições, boatos e primeiros passos no keigo com vizinhos de todo o Japão. Alinhado ao MCER A2, ao JLPT N4 e ao JF Standard A2.',es:'Consejos, habilidades, favores, condiciones, rumores y primeros pasos en keigo con vecinos de todo Japón. Alineado con el MCER A2 y el JLPT N4.'}},
   'nbes-b1':{id:'nbes-b1',group:'nbes',ui:'pt',tts:'es-MX',scene:'cv_es',scarf:'#E0703A',
       name:{pt:'Neighbors · Espanhol B1',es:'Neighbors · Español B1'},flag:'ES → PT-BR · B1',
       desc:{pt:'Subjuntivo, hipóteses, estilo indireto, conectores e debates do dia a dia com vizinhos de todo o mundo hispânico. Alinhado ao MCER B1 e ao DELE B1 / SIELE.',es:'Subjuntivo, hipótesis, estilo indirecto y debates cotidianos con vecinos del mundo hispano. Alineado con el MCER B1 y el DELE B1 / SIELE.'}},
