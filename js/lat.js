@@ -120,7 +120,7 @@ FXR.rdg=function(f,st,n){
     if(phase===0){
       st.innerHTML=`<div class="step fx rdg">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Leitura')}</h2>
       <div class="rdg-text">${lines.map((l,i)=>`<button type="button" class="rdg-s" data-i="${i}">${mkL(l[0])}<small>${H(l[1])}</small></button>`).join('')}</div>
-      ${f.rule?`<div class="rdg-rule"><span>📌</span><span>${mk(f.rule)}</span></div>`:''}</div>`;
+      ${f.rule?`<div class="rdg-rule"><span>📌</span><span>${mk(f.rule).replace(/\{\{(.+?)\}\}/g,'<mark>$1</mark>')}</span></div>`:''}</div>`;
       st.querySelectorAll('.rdg-s').forEach(b=>b.onclick=()=>{b.classList.toggle('open');say2(plainL(lines[+b.dataset.i][0]))});
       P.fx.cta=()=>{if(f.q){phase=1;view();return true}return false};cta(f.q?'Entendi — uma pergunta ▶':P.t.cont,true,true);say(f.say||'Toque nas frases para ouvir e ver a tradução.');
     }else{
@@ -171,7 +171,9 @@ FXR.cultgame=function(f,st,n){
       st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
         if(i===need){b.classList.add('pick');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
           if(need>=items.length){done=true;P.streak=miss?0:(P.streak||0)+1;fxGrade(true,'',null);next(!miss)}}
-        else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
+        else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}
+          if(miss>=4){done=true;const bs=[...st.querySelectorAll('.cg-c')];items.forEach((o,k)=>{const x=bs.find(y=>+y.dataset.i===o.i);x.classList.add('pick');x.classList.remove('no');x.querySelector('i').textContent=k+1});
+            P.streak=0;fxGrade(false,'Esta é a ordem da história.',null);next(false)}}});
     }else if(r.t==='gap'){
       st.innerHTML=`<div class="step fx cu2">${head()}<div class="cg-q">Complete a frase famosa:</div><div class="cg-en">“${H(r.en).replace('___','<span class="vw-g" id="cgg">＿＿＿</span>')}”</div><div class="cg-pt">${H(r.pt)}</div><div class="vw-o">${fxShuffle(r.o).map(o=>`<button type="button">${H(o)}</button>`).join('')}</div><div class="vw-h" id="cgh"></div><div id="fb"></div></div>`;
       cta('Escolha a palavra',false);let tries=0;
@@ -206,7 +208,10 @@ FXR.culttl=function(f,st,n){
     st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
       if(W[i].y===W[order[need]].y){b.classList.add('pick','rev');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
         if(need>=W.length){done=true;st.querySelectorAll('.cg-c').forEach(x=>x.classList.add('rev'));P.streak=miss?0:(P.streak||0)+1;if(!miss)P.score++;fxGrade(!miss,'As datas apareceram: confira a ordem.',null);P.fx.done=true;cta(P.t.cont,true,true)}}
-      else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
+      else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}
+        if(miss>=3){done=true;/* ajuda: mostra a ordem certa em vez de prender o aluno */
+          const bs=[...st.querySelectorAll('.cg-c')];order.forEach((wi,k)=>{const x=bs.find(y=>+y.dataset.i===wi);x.classList.add('pick','rev');x.classList.remove('no');x.querySelector('i').textContent=k+1});
+          fxGrade(false,'Esta é a ordem certa. Os anos apareceram para você conferir.',null);P.fx.done=true;cta(P.t.cont,true,true)}}});
     say(f.say||'Qual obra veio primeiro? Monte a linha do tempo!')};
   /* com descrição de cada obra: primeiro o aluno CONHECE as obras, depois ordena */
   if(W.every(w=>w.d)){

@@ -677,7 +677,7 @@ FXR.wrap=function(f,st,n){
     const step=st.querySelector('.step'),h=step&&step.querySelector('.fx-h');if(!step||!h)return;
     step.classList.add('m2-wrap');
     const fr=P.e.fr||[],g=k=>fr.find(x=>x.k===k)||{};
-    const rows=[['🔤','Palavras',(g('words').items||[]).map(w=>w[1])],['🏃','Verbos',(g('verbs').items||[]).map(v=>v.ic)],['🃏','Coringas',(g('xpr').items||[]).map(i=>i.ic)],['💬','Expressões',(g('cexp').items||[]).map(i=>i.ic)],['🎧','Sons',['🔬','👂']]];
+    const rows=[['🔤','Palavras',(g('words').items||[]).map(w=>w[1])],['🏃','Verbos',(g('verbs').items||[]).map(v=>v.ic)],['🃏','Coringas',(g('xpr').items||[]).map(i=>i.ic)],['💬','Expressões',(g('cexp').items||[]).map(i=>i.ic)],['🎧','Sons',fr.some(x=>x.k==='soundlab')?['🔬','👂']:[]]].filter(r=>r[2].length);
     let pg='';try{pg=poggie({scarf:(P.c&&P.c.scarf)||'#FFE58A'})}catch(e){}
     const sc=Math.max(0,P.score||0);
     h.insertAdjacentHTML('beforebegin',`<div class="m2-fin"><div class="m2-fin-sky"><span class="m2-fs s0">✨</span><span class="m2-fs s1">⭐</span><span class="m2-fs s2">🎉</span><span class="m2-fs s3">✨</span><span class="m2-fs s4">🎊</span></div>

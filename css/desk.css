@@ -20,7 +20,7 @@
 /* computador */
 @media (min-width:1100px){
   #player.az .stage,#player.az:has(.az-two) .stage,#player.az .p-head,#player.az .p-foot .in{max-width:1120px}
-  #player.az .stage{padding:clamp(14px,1.6vw,22px) clamp(24px,3vw,44px) 40px;font-size:17px}
+  #player.az .stage{padding:5px;font-size:17px}
 
   /* faixas de ilustração viram banner de largura total, mais alto */
   #player.az .step>.lean-art,#player.az .step>.cu2-art{width:min(100%,640px);height:auto!important;aspect-ratio:4/1;margin-inline:auto!important;border-radius:var(--t-r-lg)!important}
