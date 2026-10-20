@@ -33,7 +33,7 @@ for f in sorted(glob.glob('data/%s_*.json'%cid)):
                 for wk in x.get('works',[]):
                     w=kb.get(wk['n'])
                     if not w: st['culttl obra sem base']+=1;continue
-                    wk['y']=w['y1'];wk['d']=w['blurb'];wk['t']=(wk['k']+' '+w['kind'].capitalize())
+                    wk['y']=w['y1'];wk['d']=w['blurb'];wk['t']=w['kind'].capitalize()
                     L=w['cena'].get('lines') or []
                     if w['cena']['mode']!='scene' and L and len(L[0][0].split())<=14: wk['q']=L[0][0];wk['qp']=L[0][1]
                     else: wk.pop('q',None);wk.pop('qp',None)
