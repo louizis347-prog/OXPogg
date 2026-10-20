@@ -116,3 +116,10 @@
 #player.az .step.done .row>*{flex:1 1 0;min-width:0;padding:10px 6px}
 #player.az .step.done .row b,#player.az .step.done .row strong{font-size:22px}
 #player .pg-hide,#player.az .step .pg-hide,#player.az .step.done .row.pg-hide{display:none!important}
+
+/* ---- M) fechamento (Neighbors): frases para levar mais compactas para caber na tela ---- */
+#player.az .step.pg-compact .fx-recap{gap:8px}
+#player.az .step.pg-compact .fx-recap>*{padding:6px 10px!important;margin:0!important}
+#player.az .step.pg-compact .fx-recap *{font-size:13.5px!important;line-height:1.3!important}
+#player.az .step.pg-compact .fx-recap button{min-height:0!important}
+#player.az .step.pg-compact .fx-next{padding:10px 12px!important}
