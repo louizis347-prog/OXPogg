@@ -187,7 +187,7 @@ dict(n=90746, t="Expresión oral A2: diálogo", s="Dialogar em situação", city
   ("¿Qué le ofrecen?","O que lhe oferecem?",["Un taxi","Un mapa","Un paraguas"],2,6,"P: “le ofrezco mi paraguas”")],
  swap=("Pedir, oferecer e agradecer: «¿Podría decirme…?», «¿Le ofrezco…?». 🎓 DELE A2: expressão oral, diálogo em situação.",
   [("¿Podría decirme…?",[("¿Podría decirme","Poderia me dizer"),("¿Podría ayudarme","Poderia me ajudar"),("¿Podría repetir","Poderia repetir")],[("dónde está la farmacia","onde fica a farmácia"),("a qué hora cierra","a que horas fecha"),("cuánto cuesta","quanto custa")],"?"),
-   ("Le ofrezco…",[("Le ofrezco","Lhe ofereço"),("¿Le ofrezco","Ofereço-lhe"),("Gracias, acepto","Obrigado, aceito")],[("mi paraguas","meu guarda-chuva"),("un café","um café"),("mi ayuda","minha ajuda")],".")]),
+   ("Le ofrezco…",[("Le ofrezco","Lhe ofereço"),("Quiero ofrecerle","Quero lhe oferecer"),("Puedo ofrecerle","Posso lhe oferecer")],[("mi paraguas","meu guarda-chuva"),("un café","um café"),("mi ayuda","minha ajuda")],".")]),
  chat2=["Y: Disculpe, ¿hay un banco por aquí? | Desculpe, tem um banco por aqui?",
   "P: Sí, está en la esquina, junto al correo. | Sim, fica na esquina, junto ao correio.",
   "Y: ¿Puedo ir a pie o está lejos? | Posso ir a pé ou fica longe?",
