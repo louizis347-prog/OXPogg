@@ -255,7 +255,7 @@ dict(n=90768, t="Hace tiempo que…", s="Falar de há quanto tempo", city="Monte
   [("Hace… que…",[("Hace tres años que","Faz três anos que"),("Hace seis meses que","Faz seis meses que"),("Hace dos semanas que","Faz duas semanas que")],[("vivo aquí","moro aqui"),("estudio español","estudo espanhol"),("trabajo en esta oficina","trabalho neste escritório")],"."),
    ("Desde hace…",[("Vivo aquí desde hace","Moro aqui há"),("Estudio desde hace","Estudo há"),("Trabajo desde hace","Trabalho há")],[("tres años","três anos"),("seis meses","seis meses"),("una semana","uma semana")],".")]),
  chat2=["Y: ¿Cuánto hace que no vas al mercado del puerto? | Quanto tempo faz que você não vai ao mercado do porto?",
-  "P: Hace como un mes que no voy; estuve ocupada. | Faz uns um mês que não vou; estive ocupada.",
+  "P: Hace como un mes que no voy; estuve ocupada. | Faz mais ou menos um mês que não vou; estive ocupada.",
   "Y: Hace dos semanas que quiero comer un chivito. | Faz duas semanas que quero comer um chivito.",
   "P: Entonces vamos mañana; hace rato que no como uno. | Então vamos amanhã; faz tempo que não como um.",
   "Y: Perfecto, a las doce nos encontramos en la entrada. | Perfeito, ao meio-dia nos encontramos na entrada.",
