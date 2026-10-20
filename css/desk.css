@@ -11,6 +11,12 @@
   .fx-wgrid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))!important}
 }
 
+/* cena em duas colunas (>=900px): a ilustração ocupa 40 linhas da grade; o espaço entre linhas vazias somava ~800 px de vazio */
+@media (min-width:900px){
+  #player.az .step.az-two{row-gap:0!important}
+  #player.az .az-two>*:not(.az-media){margin-bottom:var(--t-s3)}
+}
+
 /* computador */
 @media (min-width:1100px){
   #player.az .stage,#player.az:has(.az-two) .stage,#player.az .p-head,#player.az .p-foot .in{max-width:1120px}
@@ -26,6 +32,10 @@
     grid-column:1;grid-row:1 / span 24;align-self:start;position:sticky;top:12px;
     height:auto!important;aspect-ratio:4/5!important;max-height:62vh;border-radius:var(--t-r-lg)!important;margin:0!important}
   #player.az .step:has(>.az-ill)>:not(.az-ill),#player.az .step:has(>.m2-ill)>:not(.m2-ill){grid-column:2;margin-bottom:var(--t-s3)}
+
+  /* cena (diálogo): ilustração 16:9 sem cortar as laterais, coluna mais larga */
+  #player.az .step.az-two{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+  #player.az .az-two>.az-media.fx-stagewrap{aspect-ratio:16/9}
 
   /* abertura: herói em largura total, frase do dia embaixo */
   #player.az .step>.az-hero{width:100%;max-width:none;margin-inline:0}
