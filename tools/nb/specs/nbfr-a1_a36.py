@@ -2,7 +2,7 @@
 # Neighbors · Francês A1 · Arco 36 · Le passé composé (91351-91359)
 EPS = [
 dict(n=91351, t="Hier, j'ai mangé", s="Contar ontem", city="Paris", sc="plaza", rs="street",
- desc="O passé composé com «avoir» conta ações concluídas: «j'ai mangé», «tu as regardé», «il a parlé». Forma-se com «avoir» no presente + particípio (verbos em -er: -é). Dica: não existe «comi» simples na fala; o francês usa «j'ai mangé» (literalmente «eu tenho comido»), então decore o par «avoir + -é».",
+ desc="O passé composé com «avoir» conta ações concluídas: «j'ai mangé», «tu as regardé», «il a parlé». Forma-se com «avoir» no presente + particípio (verbos em -er: -é). Dica: na conversa, o francês usa «j'ai mangé» (literalmente «eu tenho comido») para dizer «comi»; decore o par «avoir + -é».",
  name="Julien", face="👨🏻", emo=["🍽️","📺","📞","🌙"], mission="Hoje você conta o que fez ontem.",
  hook="Alors, hier, c'était bien ?|Então, ontem foi bom?", goal="Hier, j'ai mangé au restaurant",
  v=[("hier","ontem","Soa como “iér”.","📆"),("manger","comer","Soa como “mã-JÊ”.","🍽️"),("regarder","olhar, assistir","Soa como “re-gar-DÊ”.","📺"),("parler","falar","Soa como “par-LÊ”.","🗣️"),("un restaurant","um restaurante","Soa como “ẽ rés-to-RÃ”.","🍴"),("la journée","o dia","Soa como “la jur-NÊ”.","☀️")],
@@ -68,7 +68,7 @@ dict(n=91352, t="Qu'est-ce que tu as fait ?", s="Perguntar", city="Lyon", sc="pl
  recap_slang="un truc de ouf → uma coisa incrível"),
 
 dict(n=91353, t="J'ai visité", s="Falar de visitas", city="Paris", sc="plaza", rs="street",
- desc="«Visiter» serve para lugares (museus, cidades); para pessoas, o francês usa «rendre visite à». No passé composé: «j'ai visité le musée». Dica: falso amigo leve, «visiter» não é «visitar uma pessoa»; para amigos diga «j'ai vu mes amis» ou «je suis allé chez mes amis».",
+ desc="«Visiter» serve para lugares (museus, cidades); para pessoas, o francês usa «rendre visite à». No passé composé: «j'ai visité le musée». Dica: para pessoas, não use «visiter»; diga «je suis allé chez mes amis» (fui à casa dos meus amigos).",
  name="Mathieu", face="🧑🏻", emo=["🏛️","🗼","🥞","📸"], mission="Hoje você conta uma visita a um museu e a uma cidade.",
  hook="Tu as visité Paris, n'est-ce pas ?|Você visitou Paris, não é?", goal="J'ai visité le musée du Louvre",
  v=[("visiter","visitar (lugares)","Soa como “vi-zi-TÊ”.","🗺️"),("le musée","o museu","Soa como “le mi-ZÊ”.","🏛️"),("la ville","a cidade","Soa como “la VIL”.","🏙️"),("adorer","adorar","Soa como “a-do-RÊ”.","😍"),("marcher","caminhar","Soa como “mar-SHÊ”.","🚶"),("la photo","a foto","Soa como “la fo-TÔ”.","📸")],
@@ -134,7 +134,7 @@ dict(n=91354, t="J'ai acheté", s="Falar de compras", city="Montréal", sc="plaz
  recap_slang="magasiner → fazer compras (Quebec)"),
 
 dict(n=91355, t="Je suis allé", s="Introduzir «être»", city="Bruxelles", sc="plaza", rs="station",
- desc="Alguns verbos de movimento formam o passé composé com «être», não «avoir»: «je suis allé», «je suis parti», «je suis venu». Dica: no passado, «être» + particípio é o oposto do português «fui»; diga «je suis allé au marché» (e escreva «allée» se for mulher). Não diga «j'ai allé».",
+ desc="Alguns verbos de movimento formam o passé composé com «être», não «avoir»: «je suis allé», «je suis parti», «je suis venu». Dica: diga «je suis allé au marché» (e escreva «allée» se for mulher); nunca «j'ai allé».",
  name="Charlotte", face="👩🏻", emo=["🚉","🛒","🚶","☕"], mission="Hoje você conta aonde foi e quando saiu.",
  hook="Salut ! Tu es allé où ce matin ?|Oi! Aonde você foi esta manhã?", goal="Je suis allé au marché ce matin",
  v=[("aller","ir","Soa como “a-LÊ”.","🚶"),("allé","foi, ido","Soa como “a-LÊ”.","➡️"),("partir","partir, sair","Soa como “par-TIR”.","🛫"),("venir","vir","Soa como “ve-NIR”.","🔙"),("rentrer","voltar para casa","Soa como “rã-TRÊ”.","🏠"),("à pied","a pé","Soa como “a PIÊ”.","👟")],
@@ -266,7 +266,7 @@ dict(n=91358, t="Un week-end raconté", s="Narrar", city="Dakar", sc="plaza", rs
  recap_slang="la teranga → a hospitalidade senegalesa"),
 
 dict(n=91359, t="Mon plus beau voyage", s="Narrar", city="Québec", sc="plaza", rs="flags",
- desc="Para fechar o arco, você conta uma viagem inteira, misturando «avoir» e «être»: «j'ai visité», «j'ai acheté», «je suis arrivé», «je suis resté». Dica: «le plus beau voyage» é «a mais bela viagem»; em francês, «un souvenir» é uma lembrança (objeto ou memória), nunca «souvenir» de lembrança no plural sem artigo.",
+ desc="Para fechar o arco, você conta uma viagem inteira, misturando «avoir» e «être»: «j'ai visité», «j'ai acheté», «je suis arrivé», «je suis resté». Dica: «le plus beau voyage» é «a mais bela viagem»; «un souvenir» é tanto a lembrança na memória quanto o objeto que você traz da viagem.",
  name="Étienne", face="👨🏻", emo=["🧳","📸","🏰","❄️"], mission="Hoje você conta sua melhor viagem do começo ao fim.",
  hook="C'est quoi, ton plus beau voyage ?|Qual foi sua melhor viagem?", goal="J'ai visité Québec et j'ai adoré",
  v=[("le voyage","a viagem","Soa como “le vua-IAJ”.","🧳"),("le souvenir","a lembrança","Soa como “le suv-NIR”.","🎁"),("garder","guardar","Soa como “gar-DÊ”.","📦"),("rester","ficar","Soa como “rés-TÊ”.","🏨"),("le fleuve","o rio grande","Soa como “le FLÖV”.","🌊"),("une semaine","uma semana","Soa como “un se-MÉN”.","📆")],
