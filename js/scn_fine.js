@@ -7,7 +7,7 @@ window.RS = window.RS || {};
 var RS = window.RS;
 
 /* ---------- utilitários ---------- */
-function rng(s){return function(){s=(s*16807)%2147483647;return (s-1)/2147483646;};}
+function rng(s){s=(s|0)||1;return function(){s=(s*16807)%2147483647;return (s-1)/2147483646;};}
 function r1(n){return Math.round(n*10)/10;}
 function LG(u,id,x1,y1,x2,y2,st){var s='<linearGradient id="'+u+'-'+id+'" gradientUnits="userSpaceOnUse" x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'">';for(var i=0;i<st.length;i++)s+='<stop offset="'+st[i][0]+'" stop-color="'+st[i][1]+'"'+(st[i][2]!=null?' stop-opacity="'+st[i][2]+'"':'')+'/>';return s+'</linearGradient>';}
 function RG(u,id,cx,cy,r,st){var s='<radialGradient id="'+u+'-'+id+'" gradientUnits="userSpaceOnUse" cx="'+cx+'" cy="'+cy+'" r="'+r+'">';for(var i=0;i<st.length;i++)s+='<stop offset="'+st[i][0]+'" stop-color="'+st[i][1]+'"'+(st[i][2]!=null?' stop-opacity="'+st[i][2]+'"':'')+'/>';return s+'</radialGradient>';}
