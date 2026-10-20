@@ -1,0 +1,78 @@
+/* Pogglot · "Sua vez" v2 — cena de chat compacta. Escopo: .step.sv2. Só tokens (--t-*). */
+.step.sv2{display:flex;flex-direction:column;gap:var(--t-s3)}
+.step.sv2>*{margin:0}
+
+/* ordem da cena */
+.step.sv2>.fx-h{order:0}
+.step.sv2>.m2-ill{order:1}
+.step.sv2>.rw-sit{order:2}
+.step.sv2>.rw-goals{order:3}
+.step.sv2>.yt-game{order:4}
+.step.sv2>.tp-bub{order:5}
+.step.sv2>.tp-rep{order:5}
+.step.sv2>.sv-hint{order:6}
+.step.sv2>#fxta{order:7}
+.step.sv2>.rw-bar{order:8}
+.step.sv2>.sv-acts{order:9}
+.step.sv2>#fxmod{order:10}
+.step.sv2>.fx-chips{order:6}
+
+/* o que saiu: passos repetidos, rótulos longos e a caixa de cultura igual em todo episódio */
+.step.sv2>.rw-steps,.step.sv2>.rw-lab,.step.sv2>.fx-cul{display:none!important}
+
+/* título + ilustração enxutos (o título já aparece na arte e na barra do topo) */
+.step.sv2>.fx-h{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.step.sv2>.m2-ill{aspect-ratio:auto;height:84px;border-radius:var(--t-r-md)}
+.step.sv2>.m2-ill>*{max-height:100%}
+
+/* missão como balão do personagem */
+.step.sv2>.rw-sit{padding:var(--t-s3) var(--t-s4);border-radius:var(--t-r-md);gap:var(--t-s3);align-items:center;position:relative}
+.step.sv2>.rw-sit .rw-sit-ic{font-size:30px;flex:none}
+.step.sv2>.rw-sit small{display:inline}
+.step.sv2>.rw-sit p{font:700 var(--t-fs-md)/1.4 var(--t-font);margin-top:2px}
+
+/* objetivos: uma linha de marcadores que acendem (a missão já diz o que fazer) */
+.step.sv2>.rw-goals{display:flex;flex-wrap:wrap;gap:var(--t-s1) var(--t-s4);padding:0 var(--t-s1)}
+.step.sv2>.rw-goals li{display:inline-flex;align-items:center;flex:0 1 auto;padding:0;border:0;background:none;border-radius:0;font:800 var(--t-fs-sm) var(--t-font);gap:var(--t-s2);min-height:0;color:var(--t-mute)}
+.step.sv2>.rw-goals li .tp-key{display:none!important}
+.step.sv2>.rw-goals li.done{color:var(--t-ok);background:none;border:0}
+
+/* trilha de estrelas mais baixa */
+.step.sv2>.yt-game .yt-track{height:52px;margin:var(--t-s1) var(--t-s3)}
+.step.sv2>.tp-bub~.yt-game .yt-msg{display:none}
+
+/* reação do Poggie e resposta do personagem */
+.step.sv2>.tp-bub{padding:var(--t-s2) var(--t-s3);border-radius:var(--t-r-md)}
+.step.sv2>.tp-bub.idle{display:none}
+.step.sv2>.tp-bub>span{font-size:1.4rem}
+.step.sv2>.tp-bub p{font:700 var(--t-fs-sm)/1.35 var(--t-font)}
+.step.sv2>.tp-rep{border-radius:var(--t-r-md)}
+
+/* ajuda sob demanda */
+.sv-hint{display:grid;gap:var(--t-s2);padding:var(--t-s3);border-radius:var(--t-r-md);background:var(--t-primary-soft);border:1px dashed var(--t-line2)}
+.sv-hint[hidden]{display:none}
+.sv-hint small{color:var(--t-mute);font-weight:700;font-size:var(--t-fs-xs)}
+.sv-hint small b{color:var(--t-ink)}
+.sv-way{display:flex;gap:var(--t-s2);align-items:stretch}
+.sv-use{flex:1;text-align:left;padding:var(--t-s2) var(--t-s3);border-radius:var(--t-r-sm);background:var(--t-card);border:1px solid var(--t-line);cursor:pointer;font:700 var(--t-fs-sm)/1.3 var(--t-font);color:var(--t-ink);min-height:var(--t-hit)}
+.sv-use em{display:block;font-style:normal;font-weight:600;font-size:var(--t-fs-xs);color:var(--t-mute)}
+.sv-use:active{transform:scale(.99)}
+.sv-hear{flex:none;width:var(--t-hit);border:1px solid var(--t-line);background:var(--t-card);border-radius:var(--t-r-sm);cursor:pointer;font-size:16px}
+
+/* caixa de resposta no estilo de chat */
+.step.sv2>#fxta{min-height:76px;padding:var(--t-s3) var(--t-s4);border-radius:var(--t-r-md);font:600 var(--t-fs-md)/1.4 var(--t-font);resize:none;box-sizing:border-box;width:100%}
+.step.sv2>.rw-bar{gap:var(--t-s2);justify-content:flex-start}
+.step.sv2>.rw-bar .rw-count,.step.sv2>.rw-bar #rwcnt{margin-left:auto;font-weight:800;font-size:var(--t-fs-xs);color:var(--t-mute)}
+.step.sv2>.fx-chips{gap:var(--t-s2)}
+
+/* ações secundárias lado a lado (display:contents solta o botão e o resultado da IA) */
+.sv-acts{display:flex;flex-wrap:wrap;gap:var(--t-s2);align-items:center}
+.sv-acts .ai-box{display:contents}
+.sv-acts #airs{flex:1 1 100%;order:3}
+.sv-acts #fxm{margin:0!important}
+.sv-acts .pill{min-height:var(--t-hit)}
+
+@media (min-width:700px){
+  .step.sv2>.m2-ill{height:110px}
+  .step.sv2>.rw-goals li{flex:0 1 auto}
+}
