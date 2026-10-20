@@ -53,9 +53,10 @@ function reskin(f,st){
 
   /* ajuda sob demanda: 3 jeitos de dizer o próximo objetivo */
   const bar=step.querySelector('.rw-bar');
-  if(f.gp&&ul&&bar){
+  const hints=f.gp||f.tips;
+  if(hints&&ul&&bar){
     const help=document.createElement('button');
-    help.type='button';help.className='pill light sv-help';help.textContent='💡 Preciso de ajuda';
+    help.type='button';help.className='pill light sv-help';help.textContent='💡 Ajuda';
     bar.prepend(help);
     const panel=document.createElement('div');panel.className='sv-hint';panel.hidden=true;
     ta.before(panel);
@@ -65,18 +66,18 @@ function reskin(f,st){
       if(i<0){panel.hidden=true;help.hidden=true;return}
       const labs=[...ul.children].map(li=>li.textContent.replace(/\s+/g,' ').trim());
       panel.innerHTML=`<small>3 jeitos de dizer: <b>${esc(ul.children[i].dataset.lab||'')}</b></small>`
-        +(f.gp[i]||[]).map((p,k)=>`<div class="sv-way"><button type="button" class="sv-use" data-i="${i}" data-k="${k}"><span>${esc(p[0])}</span><em>${esc(p[1])}</em></button><button type="button" class="sv-hear" data-i="${i}" data-k="${k}" aria-label="Ouvir">🔊</button></div>`).join('');
+        +(hints[i]||[]).map((p,k)=>`<div class="sv-way"><button type="button" class="sv-use" data-i="${i}" data-k="${k}"><span>${esc(p[0])}</span><em>${esc(p[1])}</em></button><button type="button" class="sv-hear" data-i="${i}" data-k="${k}" aria-label="Ouvir">🔊</button></div>`).join('');
     };
     [...ul.children].forEach(li=>{li.dataset.lab=li.querySelector('span:not(.rw-box)')?li.querySelector('span:not(.rw-box)').textContent:''});
     help.onclick=()=>{
       if(panel.hidden){draw();panel.hidden=false;help.textContent='Esconder ajuda'}
-      else{panel.hidden=true;help.textContent='💡 Preciso de ajuda'}
+      else{panel.hidden=true;help.textContent='💡 Ajuda'}
       try{sfx('pop')}catch(e){}
     };
     panel.onclick=e=>{
       const hear=e.target.closest('.sv-hear'),use=e.target.closest('.sv-use');
-      if(hear){try{sfx('pop');fxSay(f.gp[+hear.dataset.i][+hear.dataset.k][0])}catch(x){}return}
-      if(use){const t=f.gp[+use.dataset.i][+use.dataset.k][0];
+      if(hear){try{sfx('pop');fxSay(hints[+hear.dataset.i][+hear.dataset.k][0])}catch(x){}return}
+      if(use){const t=hints[+use.dataset.i][+use.dataset.k][0];
         ta.value+=(ta.value&&!/\s$/.test(ta.value)?' ':'')+t;ta.dispatchEvent(new Event('input'));ta.focus();
         try{sfx('key');fxSay(t)}catch(x){}}
     };
@@ -90,7 +91,39 @@ function reskin(f,st){
     const row=document.createElement('div');row.className='sv-acts';
     const anchor=ai||mb;anchor.before(row);
     if(ai)row.appendChild(ai);
-    if(mb)row.appendChild(mb);
+    if(mb){mb.textContent='👀 Ver modelo';row.appendChild(mb)}
   }
+
+  /* sem gp (palavras-chave): o personagem também reage e responde quando todos os objetivos acendem */
+  if(!f.gp&&ul&&ul.children.length)freeMode(f,step,ul);
+}
+
+const OK_DEF=['Boa! ⭐','Isso mesmo! 🎯','Perfeito! 🚀','Muito bem! 👏'];
+function freeMode(f,step,ul){
+  const lis=[...ul.children],reacted=new Set();
+  let box=step.querySelector('.tp-bub');
+  if(!box){
+    box=document.createElement('div');box.className='tp-bub idle';box.innerHTML='<span>🦫</span><p></p>';
+    ul.after(box);
+  }
+  const bp=box.querySelector('p');
+  const say2=m=>{bp.textContent=m;box.classList.remove('idle','pop');void box.offsetWidth;box.classList.add('pop')};
+  const plain=t=>String(t||'').replace(/\*\*/g,'');
+  let rep=null;
+  const r=f.reply||[plain(f.model),'', 'Poggie · um jeito de dizer','🦫'];
+  new MutationObserver(()=>{
+    let newly=-1;
+    lis.forEach((li,i)=>{const d=li.classList.contains('done');
+      if(d&&!reacted.has(i)){reacted.add(i);newly=i}else if(!d&&reacted.has(i))reacted.delete(i)});
+    if(newly>=0)say2((f.ok&&f.ok[newly])||OK_DEF[newly%OK_DEF.length]);
+    const all=reacted.size===lis.length;
+    if(all&&!rep){
+      rep=document.createElement('div');rep.className='tp-rep';
+      rep.innerHTML=`<span>${esc(r[3]||'🧑')}</span><div><small>${esc(f.reply?(r[2]||'Seu amigo')+' responde:':(r[2]||'Poggie'))}</small><b>${esc(r[0])}</b>${r[1]?`<small>${esc(r[1])}</small>`:''}</div><button type="button" aria-label="Ouvir">🔊</button>`;
+      rep.querySelector('button').onclick=()=>{try{sfx('pop');fxSay(r[0])}catch(x){}};
+      ul.after(rep);
+      setTimeout(()=>{try{fxSay(r[0])}catch(x){}},900);
+    }else if(!all&&rep){rep.remove();rep=null}
+  }).observe(ul,{attributes:true,subtree:true,attributeFilter:['class']});
 }
 })();

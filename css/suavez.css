@@ -60,7 +60,7 @@
 .sv-hear{flex:none;width:var(--t-hit);border:1px solid var(--t-line);background:var(--t-card);border-radius:var(--t-r-sm);cursor:pointer;font-size:16px}
 
 /* caixa de resposta no estilo de chat */
-.step.sv2>#fxta{min-height:76px;padding:var(--t-s3) var(--t-s4);border-radius:var(--t-r-md);font:600 var(--t-fs-md)/1.4 var(--t-font);resize:none;box-sizing:border-box;width:100%}
+.step.sv2>#fxta,#player.az .step.sv2>#fxta{min-height:84px;height:auto;padding:var(--t-s3) var(--t-s4);border-radius:var(--t-r-md);font:600 var(--t-fs-md)/1.4 var(--t-font);resize:none;box-sizing:border-box;width:100%}
 .step.sv2>.rw-bar{gap:var(--t-s2);justify-content:flex-start}
 .step.sv2>.rw-bar .rw-count,.step.sv2>.rw-bar #rwcnt{margin-left:auto;font-weight:800;font-size:var(--t-fs-xs);color:var(--t-mute)}
 .step.sv2>.fx-chips{gap:var(--t-s2)}
@@ -76,3 +76,10 @@
   .step.sv2>.m2-ill{height:110px}
   .step.sv2>.rw-goals li{flex:0 1 auto}
 }
+
+/* a trilha "az" força caixa de 150 px e um rótulo sobre as peças: aqui ficam compactos */
+#player.az .step.sv2 .fx-chips::before{display:none}
+.step.sv2>.fx-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.step.sv2>.fx-chips::-webkit-scrollbar{display:none}
+.step.sv2>.fx-chips .fx-chip{flex:none}
+.step.sv2>.rw-bar .pill{padding:var(--t-s2) var(--t-s3);font-size:var(--t-fs-sm)}
