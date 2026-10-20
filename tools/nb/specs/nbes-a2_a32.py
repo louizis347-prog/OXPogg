@@ -35,10 +35,10 @@ dict(n=90711, t="Mi calle favorita", s="Descrever a rua preferida", city="Valpar
  recap_slang="al tiro → já, na hora"),
 
 dict(n=90712, t="El mercado del barrio", s="Conhecer o mercado", city="Valencia", sc="street", rs="market",
- desc="Para comparar e destacar, use «el más + adjetivo» e «el mejor»: «las naranjas más dulces», «el pescado más fresco». Para pedir, use medidas: «un kilo de», «medio kilo de», «una docena de». Dica: «fresa» é morango; «fresca» (sem «r» duplo) é fresca.",
+ desc="Para comparar e destacar, use «el más + adjetivo» e «el mejor»: «las naranjas más dulces», «el pescado más fresco». Para pedir, use medidas: «un kilo de», «medio kilo de», «una docena de». Dica: «fresa» é morango (não confunda com «fresca», que é «fresca»); «un kilo» é um quilo.",
  name="Javier", face="👨🏻", emo=["🍊","🐟","⚖️","🧺"], mission="Hoje você faz compras no mercado e conversa com o vendedor.",
  hook="¿Qué le pongo?|O que lhe sirvo?", goal="Quiero un kilo de las mejores naranjas",
- v=[("el puesto","a banca","Soa como “el PUES-to”.","🏪"),("la fruta","a fruta","Soa como “la FRU-ta”.","🍎"),("el pescado","o peixe (pronto/vendido)","Soa como “el pes-CA-do”.","🐟"),("el kilo","o quilo","Soa como “el KI-lo”.","⚖️"),("fresco","fresco","Soa como “FRES-co”.","🥬"),("barato","barato","Soa como “ba-RA-to”.","💶")],
+ v=[("el puesto","a banca","Soa como “el PUES-to”.","🏪"),("la fruta","a fruta","Soa como “la FRU-ta”.","🍎"),("el pescado","o peixe (para comer)","Soa como “el pes-CA-do”.","🐟"),("el kilo","o quilo","Soa como “el KI-lo”.","⚖️"),("fresco","fresco","Soa como “FRES-co”.","🥬"),("barato","barato","Soa como “ba-RA-to”.","💶")],
  chat=["P: ¡Buenos días! ¿Qué le pongo? | Bom dia! O que lhe sirvo?",
   "Y: Quiero un kilo de las mejores naranjas, por favor. | Quero um quilo das melhores laranjas, por favor.",
   "P: Son las más dulces de todo el mercado. ¿Algo más? | São as mais doces de todo o mercado. Mais alguma coisa?",
