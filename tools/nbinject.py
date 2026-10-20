@@ -101,7 +101,7 @@ def integrate(cid,newjson,lang,drop):
     n=r.data(cid,tmp);print(cid,'itens',n,'novos',len(new))
     return n
 def add_arcs(cid,lst):
-    s=open(R+'index.html',encoding='utf-8').read()
+    s=open(R+'app.html',encoding='utf-8').read()
     m=re.search(r" '%s':\[(\[.*?\])\],\n"%re.escape(cid),s)
     assert m,cid
     have=set(re.findall(r"\[(\d+),'",m.group(1)))
@@ -109,4 +109,4 @@ def add_arcs(cid,lst):
     if not add: return
     new=m.group(0).replace("]],\n","],"+add+"],\n") if m.group(0).endswith("]],\n") else None
     assert new
-    open(R+'index.html','w',encoding='utf-8').write(s.replace(m.group(0),new,1))
+    open(R+'app.html','w',encoding='utf-8').write(s.replace(m.group(0),new,1))

@@ -9,9 +9,9 @@ s=open('sw.js').read()
 s=re.sub(r"pogglot-shell-v(\d+)",lambda m:"pogglot-shell-v%d"%(int(m.group(1))+1),s,1)
 s=re.sub(r"pogglot-data-v(\d+)",lambda m:"pogglot-data-v%d"%(int(m.group(1))+1),s,1)
 open('sw.js','w').write(s)
-h=open('index.html').read()
+h=open("app.html").read()
 h=re.sub(r"(data/'\+file\+'\?v=)(\d+)",lambda m:m.group(1)+str(int(m.group(2))+1),h,1)
-open('index.html','w').write(h)
+open("app.html","w").write(h)
 P
 git add -A
 git commit -q -m "$1

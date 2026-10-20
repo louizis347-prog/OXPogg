@@ -1,6 +1,6 @@
 /* Pogglot · service worker: app offline, dados e áudio em cache */
-const V='pogglot-shell-v94',DATA='pogglot-data-v77';
-const SHELL=['./','index.html','css/modern.css','css/mobile.css','css/steps-modern.css','css/lean.css','css/sidenav.css','js/sidenav.js','js/lean.js','js/lat.js','js/write.js','js/acc.js','js/art.js','data/kanji-strokes.json','data/kanji.json','js/kanji.js','js/dict.js','data/kana-strokes.json','css/exam-modern.css','js/exam-modern.js','config.js','js/cloud.js','js/voice.js','js/tts.js','js/a11y.js','js/exams.js','js/sync.js','js/social.js','js/pron.js','js/vocab.js','js/romaji.js','js/review.js','css/social.css','css/a11y.css','js/ui.js','js/know.js','js/community.js','js/hello.js','js/missions.js','js/listen.js','js/recap.js','js/theme.js','css/dark.css','css/tokens.css','css/home2.css','css/premium.css','js/forum.js','js/extras.js','js/billing.js','css/forum.css','css/community2.css','js/settings.js','js/path.js','js/ai.js','manifest.webmanifest','icons/icon-192.png'];
+const V='pogglot-shell-v95',DATA='pogglot-data-v77';
+const SHELL=['./','index.html','app.html','css/landing.css','css/modern.css','css/mobile.css','css/steps-modern.css','css/lean.css','css/sidenav.css','js/sidenav.js','js/lean.js','js/lat.js','js/write.js','js/acc.js','js/art.js','data/kanji-strokes.json','data/kanji.json','js/kanji.js','js/dict.js','data/kana-strokes.json','css/exam-modern.css','js/exam-modern.js','config.js','js/cloud.js','js/voice.js','js/tts.js','js/a11y.js','js/exams.js','js/sync.js','js/social.js','js/pron.js','js/vocab.js','js/romaji.js','js/review.js','css/social.css','css/a11y.css','js/ui.js','js/know.js','js/community.js','js/hello.js','js/missions.js','js/listen.js','js/recap.js','js/theme.js','css/dark.css','css/tokens.css','css/home2.css','css/premium.css','js/forum.js','js/extras.js','js/billing.js','css/forum.css','css/community2.css','js/settings.js','js/path.js','js/ai.js','manifest.webmanifest','icons/icon-192.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>Promise.all(SHELL.map(u=>c.add(u).catch(()=>0)))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>(k.startsWith('pogglot-shell-')&&k!==V)||k.startsWith('pogglot-data-')).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{
@@ -12,6 +12,6 @@ self.addEventListener('fetch',e=>{
     return}
   if(u.pathname.includes('/data/')){ /* dados: rede primeiro (conteúdo novo aparece na hora); sem rede, usa a cópia guardada */
     e.respondWith(caches.open(DATA).then(c=>fetch(r,{cache:'no-cache'}).then(x=>{if(x.ok)c.put(r,x.clone());return x}).catch(()=>c.match(r))));return}
-  e.respondWith(fetch(r).then(n=>{if(n.ok)caches.open(V).then(c=>c.put(r,n.clone()));return n}).catch(()=>caches.match(r).then(h=>h||caches.match('index.html'))));
+  e.respondWith(fetch(r).then(n=>{if(n.ok)caches.open(V).then(c=>c.put(r,n.clone()));return n}).catch(()=>caches.match(r).then(h=>h||caches.match('app.html'))));
 });
-self.addEventListener('notificationclick',e=>{e.notification.close();e.waitUntil(self.clients.matchAll({type:'window'}).then(cs=>{for(const c of cs){if('focus' in c)return c.focus()}return self.clients.openWindow('./index.html')}))});
+self.addEventListener('notificationclick',e=>{e.notification.close();e.waitUntil(self.clients.matchAll({type:'window'}).then(cs=>{for(const c of cs){if('focus' in c)return c.focus()}return self.clients.openWindow('./app.html')}))});

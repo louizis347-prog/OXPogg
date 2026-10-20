@@ -19,5 +19,10 @@ Commit + push em main e claude/nifty-mendel-y3nbxt a cada mudança; sem PR; uma 
 ## Deploy
 Cloudflare (Workers com arquivos estáticos, wrangler.jsonc) ligado ao GitHub (branch main); cada push em main publica automaticamente.
 
+## Estrutura do site
+- `index.html` = landing de venda (porta de entrada). `app.html` = o aplicativo. Links antigos com `?ref=` ou `#/` na raiz são redirecionados ao app.
+- Planos e preços da landing vêm de `config.js` (checkoutUrl, checkoutUrlYear, priceMonth, priceYear). Pagamento previsto: Hotmart, liberando acesso por webhook.
+- Scripts em tools/ que editavam index.html agora editam app.html.
+
 ## Menu
 Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
