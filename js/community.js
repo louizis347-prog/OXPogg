@@ -77,7 +77,9 @@ function authPage(next,arg,mode){
   const native=L==='es'?'es':'pt';
   let av=AVS[0],learn=new Set([L==='es'?'pt':'en']);
   const learnChips=()=>LIDS.filter(i=>i!==$('#a-native')?.value).map(i=>{const l=U().LANG(i);return `<button type="button" class="pg-chip" data-learn="${i}" aria-pressed="${learn.has(i)}" style="--c:${l.c};--cd:${l.cd}">${esc(lname(i))}</button>`}).join('');
+  const BEN=L==='es'?[['💬','Conversa con otros alumnos'],['🤝','Encuentra compañeros de idioma'],['❓','Resuelve dudas con quien habla el idioma']]:[['💬','Converse com outros alunos'],['🤝','Encontre parceiros de idioma'],['❓','Tire dúvidas com quem fala o idioma']];
   shell(`<section class="pg-card pg-auth"><h2>${k('title')}</h2><p class="sub">${k('sub')}</p>
+   <ul class="pg-benefits">${BEN.map(b=>`<li><i>${b[0]}</i><span>${b[1]}</span></li>`).join('')}</ul>
    <div class="tabs"><button data-m="signin" aria-pressed="${mode==='signin'}">${k('signin')}</button><button data-m="signup" aria-pressed="${mode==='signup'}">${k('signup')}</button></div>
    <form id="authf" novalidate>
     ${mode==='signup'?`<label class="pg-field"><span>${k('name')}</span><input id="a-name" maxlength="40" autocomplete="nickname"></label>

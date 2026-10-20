@@ -1,0 +1,78 @@
+/* Pogglot · comunidade (chat, parceiros, perguntas, perfil): correções de celular e refinamento visual.
+   Só tokens (--t-*); carregado depois de community2.css e forum.css. */
+
+/* ---- caixa de entrada sem vazar do card (campos eram 100% + preenchimento) ---- */
+.pg-in,.pg-field input,.pg-field select,.pg-field textarea,.fq-reply textarea,.fq-form textarea{box-sizing:border-box;max-width:100%}
+.pg-filters{display:grid;grid-template-columns:1fr;gap:var(--t-s2)}
+.pg-filters .pg-in{width:100%;min-width:0}
+@media (min-width:700px){.pg-filters{grid-template-columns:2fr 1fr 1fr auto}}
+.pg-err:empty{display:none}
+
+/* ---- abas da comunidade: 6 rótulos cabem em 360 px sem se sobrepor ---- */
+.hx-tabs{border-radius:var(--t-r-lg);padding:var(--t-s1)}
+.hx-tabs button{padding:var(--t-s2) 2px;font-size:clamp(9.5px,2.6vw,10.5px);font-weight:800;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:var(--t-hit)}
+.hx-tabs button i{flex:none}
+.hx-tabs button[aria-pressed="true"]{background:var(--t-primary);color:#fff;box-shadow:0 8px 16px -10px var(--t-primary)}
+@media (min-width:700px){.hx-tabs button{font-size:var(--t-fs-sm);padding:10px 12px}}
+
+/* ---- perfil: números em grade que quebra, sem rolagem horizontal ---- */
+.pg-pstats{grid-template-columns:repeat(2,1fr)}
+@media (min-width:560px){.pg-pstats{grid-template-columns:repeat(4,1fr)}}
+/* mobile.css força small >= 1em do pai: o tamanho vai no pai */
+.pg-pstats>div{min-width:0;font-size:var(--t-fs-xs);background:var(--t-primary-soft);border-radius:var(--t-r-md)}
+.pg-pstats>div b{font-size:var(--t-fs-lg)}
+.pg-pstats small{line-height:1.25;display:block}
+
+/* ---- perguntas: título primeiro, autor depois ---- */
+.fq-card{border-radius:var(--t-r-md);gap:var(--t-s2);transition:transform .15s,box-shadow .15s,border-color .15s}
+.fq-card:not(.big):hover{transform:translateY(-2px);border-color:var(--t-line2);box-shadow:var(--t-sh-card)}
+.fq-card .fq-tags{order:1}
+.fq-card .fq-text{order:2;font-size:var(--t-fs-md);letter-spacing:-.01em}
+.fq-card .fq-ctx{order:3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.fq-card.big .fq-ctx{display:block;-webkit-line-clamp:unset}
+.fq-card .top{order:4;gap:var(--t-s2);padding-top:var(--t-s2);border-top:1px solid var(--t-line)}
+.fq-card .av{width:32px;height:32px;font-size:18px;background:var(--t-primary-soft)}
+.fq-card .who{gap:0 var(--t-s2);font-size:var(--t-fs-xs)}
+.fq-card .who b{font-size:var(--t-fs-sm)}
+.fq-card .who small{flex-basis:auto}
+.fq-card .fq-foot{order:5;align-self:flex-start;padding:4px var(--t-s3);border-radius:var(--t-r-pill);background:var(--t-primary-soft);color:var(--t-primary);font-size:var(--t-fs-xs)}
+.fq-card .fq-acts{order:6}
+.fq-k{background:var(--t-primary-soft);color:var(--t-primary)}
+.fq-h{font-size:var(--t-fs-lg);margin:var(--t-s5) 0 var(--t-s3)}
+.fq-ans{border-radius:var(--t-r-md)}
+.fq-ans.best{border-color:var(--t-ok)}
+
+/* ---- cabeçalho de perguntas: botão não quebra em duas linhas ---- */
+.fq-head .pg-btn{white-space:nowrap;flex:none;align-self:flex-start;min-height:var(--t-hit)}
+/* celular: o botão de perguntar ocupa a largura e não colide com o botão flutuante do menu */
+@media (max-width:640px){.fq-head{flex-direction:column}.fq-head .pg-btn{align-self:stretch}
+  .hx-listhd .hx-new{margin-right:44px}}
+
+/* ---- responder: sem vão sobrando entre o campo e o botão ---- */
+.fq-reply{border-radius:var(--t-r-md)}
+.fq-reply .pg-field{margin-bottom:0}
+.fq-reply textarea{display:block;min-height:96px}
+
+/* ---- estados vazios com mais presença ---- */
+.pg-empty,.hx-empty{border:1.5px dashed var(--t-line2);border-radius:var(--t-r-md);background:color-mix(in srgb,var(--t-card) 60%,transparent);margin:var(--t-s4) 0;padding:var(--t-s6) var(--t-s4)}
+.pg-empty::before{content:"💬";display:block;font-size:34px;margin-bottom:var(--t-s2)}
+.hx-empty{margin:var(--t-s4)}
+
+/* ---- tela de entrada: benefícios em vez de formulário nu ---- */
+.pg-benefits{list-style:none;margin:var(--t-s4) 0 var(--t-s2);padding:0;display:grid;gap:var(--t-s2)}
+.pg-benefits li{display:flex;align-items:center;gap:var(--t-s3);padding:var(--t-s3) var(--t-s4);border-radius:var(--t-r-md);background:var(--t-primary-soft);color:var(--t-ink);font-weight:700;font-size:var(--t-fs-sm)}
+.pg-benefits li i{font-style:normal;font-size:20px;flex:none}
+.pg-auth{border-radius:var(--t-r-lg)}
+@media (min-width:700px){.pg-benefits{grid-template-columns:repeat(3,1fr)}.pg-benefits li{flex-direction:column;text-align:center;padding:var(--t-s4) var(--t-s3)}}
+
+/* ---- balões do chat: usa o roxo da marca ---- */
+.hx-m .who{color:var(--t-primary)}
+.hx-m.me .bb{background:var(--t-grad)}
+.hx-m.sel .bb{outline-color:color-mix(in srgb,var(--t-primary) 35%,transparent)}
+.hx-row[aria-current="true"]{box-shadow:inset 3px 0 0 var(--t-primary);background:var(--t-primary-soft)}
+.hx-row:hover{background:var(--t-primary-soft)}
+
+/* escuro: etiqueta de idioma sem brilho excessivo */
+html[data-theme="dark"] .fq-l{background:rgba(79,124,255,.22);color:#C6D4FF}
+html[data-theme="dark"] .pg-benefits li{background:rgba(124,77,255,.16)}
+html[data-theme="dark"] .pg-empty,html[data-theme="dark"] .hx-empty{background:rgba(255,255,255,.03)}
