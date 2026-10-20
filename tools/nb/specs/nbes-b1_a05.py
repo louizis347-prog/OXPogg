@@ -101,7 +101,7 @@ dict(n=90793, t="Prohíben que fumemos", s="Entender proibições", city="Barcel
  recap_slang="menudo rollo → que chatice"),
 
 dict(n=90794, t="Quiero que me digas la verdad", s="Pedir sinceridade a um amigo", city="Buenos Aires", sc="office", rs="office",
- desc="Para pedir sinceridade: «querer / preferir / necesitar + que + subjuntivo». «Quiero que me digas la verdad». Dica: na Argentina se usa «vos» (vos tenés, vos sabés), mas o subjuntivo «que me digas» soa igual; «la verdad» e «la mentira» são falsos amigos fáceis: nada de «verdade/mentira» com artigo omitido.",
+ desc="Para pedir sinceridade: «querer / preferir / necesitar + que + subjuntivo». «Quiero que me digas la verdad». Dica: na Argentina se usa «vos» (vos tenés, vos sabés), mas o subjuntivo «que me digas» soa igual para «tú» e «vos»; na fala, «dejar en visto» é «deixar no vácuo» (visualizar e não responder).",
  name="Facundo", face="🧑🏻", emo=["🤝","💬","🤥","☕"], mission="Hoje você pede a um amigo que seja sincero.",
  hook="Te noto raro hoy, ¿pasó algo?|Noto você estranho hoje, aconteceu algo?", goal="Quiero que me digas la verdad",
  v=[("la verdad","a verdade","Soa como “la ber-DAD”.","✅"),("la mentira","a mentira","Soa como “la men-TI-ra”.","🤥"),("la confianza","a confiança","Soa como “la kon-FIAN-sa”.","🤝"),("sincero","sincero","Soa como “sin-SÉ-ro”.","💬"),("avisar","avisar","Soa como “a-bi-SAR”.","📱"),("tener razón","ter razão","Soa como “te-NER ra-SÓN”.","👍")],
@@ -134,7 +134,7 @@ dict(n=90794, t="Quiero que me digas la verdad", s="Pedir sinceridade a um amigo
  recap_slang="quilombo → bagunça, confusão"),
 
 dict(n=90795, t="Mi jefe quiere que…", s="Falar de exigências do trabalho", city="Bogotá", sc="office", rs="office",
- desc="Para contar o que esperam de você: «mi jefe quiere / exige / espera que + subjuntivo». «Mi jefe quiere que entregue el informe hoy». Dica: «entregar» é «entregar», mas «informe» é «relatório» (não «informe» como em português) e «plazo» é «prazo».",
+ desc="Para contar o que esperam de você: «mi jefe quiere / exige / espera que + subjuntivo». «Mi jefe quiere que entregue el informe hoy». Dica: «informe» é «relatório» (e não «informe» no sentido de aviso) e «plazo» é «prazo»; «exigir» pede subjuntivo como «querer».",
  name="Andrés", face="👨🏽", emo=["👔","📄","⏰","👥"], mission="Hoje você conta ao vizinho o que pedem de você no trabalho.",
  hook="Te veo con prisa esta mañana, ¿qué pasa?|Vejo você com pressa esta manhã, o que houve?", goal="Mi jefe quiere que entregue el informe hoy",
  v=[("el jefe","o chefe","Soa como “el HÉ-fe”, com «j» aspirado.","👔"),("el plazo","o prazo","Soa como “el PLA-so”.","⏰"),("el informe","o relatório","Soa como “el in-FOR-me”.","📄"),("la reunión","a reunião","Soa como “la reu-NIÓN”.","👥"),("exigir","exigir","Soa como “ek-si-HIR”.","☝️"),("entregar","entregar","Soa como “en-tre-GAR”.","📤")],
