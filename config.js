@@ -14,6 +14,9 @@
  *       }
  *   O servidor deve responder com áudio (audio/mpeg ou audio/wav). Nunca coloque a chave do provedor aqui: guarde-a no seu servidor.
  *
+ * checkoutUrl / checkoutUrlYear: links de pagamento mensal e anual. Preenchidos, ativam o paywall e os botões de assinar da landing.
+ * priceMonth / priceYear: (opcional) textos de preço exibidos na landing, ex.: 'R$ 29,90'. Vazios, a landing não mostra preço.
+ *
  * supportUrl: (opcional) link de apoio/doação (Pix, Apoia.se, Mercado Pago…); aparece no perfil do aluno.
  *
  * ai: correção do "Sua vez".
@@ -22,4 +25,4 @@
  *   teacher:  (opcional) endereço que recebe o mesmo JSON para correção humana; mostra o botão "Enviar ao professor".
  *   Sem endpoint, o app tenta o Claude da própria página (quando publicada como artefato) e, por último, uma conferência básica no aparelho.
  */
-window.POGGLOT_CONFIG={supabaseUrl:'https://mgvjxrmtatwachhtjfmm.supabase.co',supabaseAnonKey:'sb_publishable_VIRbeM3pO0f_71uY8HUCCA_rSToliuU',tts:null,ai:{endpoint:'',teacher:''},supportUrl:'',checkoutUrl:'',checkoutUrlYear:'',freeEpisodes:5};
+window.POGGLOT_CONFIG={supabaseUrl:'https://mgvjxrmtatwachhtjfmm.supabase.co',supabaseAnonKey:'sb_publishable_VIRbeM3pO0f_71uY8HUCCA_rSToliuU',tts:null,ai:{endpoint:'',teacher:''},supportUrl:'',checkoutUrl:'',checkoutUrlYear:'',priceMonth:'',priceYear:'',freeEpisodes:5};
