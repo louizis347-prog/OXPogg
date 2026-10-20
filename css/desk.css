@@ -1,0 +1,46 @@
+/* Pogglot · player no computador. Celular continua "quadradinho" (cartões empilhados); a partir de
+   1100 px os quadros ficam largos: ilustração em coluna lateral fixa e conteúdo ao lado, grades mais
+   densas. Só tokens (--t-*). Carregado depois de az.css, m2.css e suavez.css. */
+
+/* botão de IA do "Sua vez": o texto branco sumia sobre o cartão claro */
+.sv-acts .ai-btn{background:var(--t-primary-soft)!important;color:var(--t-primary)!important;border:1px solid var(--t-line2)!important}
+
+/* tablet: um pouco mais largo, grades com mais colunas */
+@media (min-width:760px) and (max-width:1099px){
+  #player.az .stage,#player.az .p-head,#player.az .p-foot .in{max-width:880px}
+  .fx-wgrid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))!important}
+}
+
+/* computador */
+@media (min-width:1100px){
+  #player.az .stage,#player.az:has(.az-two) .stage,#player.az .p-head,#player.az .p-foot .in{max-width:1120px}
+  #player.az .stage{padding:clamp(14px,1.6vw,22px) clamp(24px,3vw,44px) 40px;font-size:17px}
+
+  /* faixas de ilustração viram banner de largura total, mais alto */
+  #player.az .step>.lean-art,#player.az .step>.cu2-art{width:min(100%,640px);height:auto!important;aspect-ratio:4/1;margin-inline:auto!important;border-radius:var(--t-r-lg)!important}
+
+  /* ilustrações altas (Sua vez, situações, leitura): coluna à esquerda, fixa ao rolar; conteúdo à direita */
+  #player.az .step:has(>.az-ill),#player.az .step:has(>.m2-ill){
+    display:grid!important;grid-template-columns:minmax(300px,36%) minmax(0,1fr);column-gap:var(--t-s6);row-gap:0;align-content:start}
+  #player.az .step>.az-ill,#player.az .step>.m2-ill{
+    grid-column:1;grid-row:1 / span 24;align-self:start;position:sticky;top:12px;
+    height:auto!important;aspect-ratio:4/5!important;max-height:62vh;border-radius:var(--t-r-lg)!important;margin:0!important}
+  #player.az .step:has(>.az-ill)>:not(.az-ill),#player.az .step:has(>.m2-ill)>:not(.m2-ill){grid-column:2;margin-bottom:var(--t-s3)}
+
+  /* abertura: herói em largura total, frase do dia embaixo */
+  #player.az .step>.az-hero{width:100%;max-width:none;margin-inline:0}
+
+  /* grades de cartões mais largas */
+  .fx-wgrid{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))!important}
+  .vb-list,.xp-grid,.m2-wl{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--t-s3)}
+  .m2-dqo,.fx-opts{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--t-s3)}
+
+  /* "Sua vez": caixa de resposta maior */
+  .step.sv2>.rw-sit,.step.sv2>#fxta{font-size:var(--t-fs-md)}
+  .step.sv2>#fxta{min-height:120px}
+}
+
+/* telas muito largas */
+@media (min-width:1500px){
+  #player.az .stage,#player.az:has(.az-two) .stage,#player.az .p-head,#player.az .p-foot .in{max-width:1240px}
+}
