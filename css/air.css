@@ -1,0 +1,87 @@
+/* ===== v104 · respiro, menos saturação, capa nova (celular + PC) =====
+   Carregado por último. Regras com #player.az para vencer as camadas antigas (az, lean, m2, desk). */
+#player.az{--air:14px}
+
+/* ---- A) banner decorativo genérico (barco/emojis) some: poupa ~90px por quadro e tira a poluição visual ---- */
+#player.az .step>.lean-art{display:none}
+@media (max-width:759px){
+  #player.az .step>.cu2-art{max-height:84px;margin:0 0 var(--air)}
+  #player.az .step>.cu2-art svg{height:84px}
+}
+
+/* ---- B) ritmo vertical: elementos respiram, mas sem inflar o quadro ---- */
+#player.az .step.lean>*+*{margin-top:var(--air)}
+#player.az .step.lean>.fx-tip,#player.az .step.lean>.fx-hint{margin-top:10px}
+@media (max-width:759px){
+  #player.az .step{padding:16px 14px!important}
+  #player.az .step.lean-dense{padding-top:14px!important}
+}
+
+/* ---- C) expressões (cexp / xpr): cartões compactos no celular, 3 por linha no PC ---- */
+@media (max-width:759px){
+  #player.az .xp-grid{gap:10px}
+  #player.az .xp-top{padding:10px 12px 12px;gap:6px}
+  #player.az .xp-ic{font-size:30px}
+  #player.az .xp-blocks{gap:8px}
+  #player.az .xp-blocks i{padding:5px 11px;font-size:18px}
+  #player.az .vb-intro{margin:0}
+}
+@media (min-width:1000px){#player.az .xp-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* ---- D) laboratório de sons: cartões lado a lado no PC, pares em 2 colunas no celular ---- */
+@media (min-width:1000px){
+  #player.az .m2-lt{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+  #player.az .m2-prs{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #player.az .m2-exg{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:759px){#player.az .m2-prs{grid-template-columns:1fr 1fr}#player.az .m2-pr small{font-size:12px}}
+
+/* ---- E) prática de situação (ctxv): cabeçalho que não quebra letras, blocos separados ---- */
+#player.az .m2-sith{flex-wrap:wrap;row-gap:8px;padding:12px 14px;margin:0 0 var(--air)}
+#player.az .m2-sith>div{flex:1 1 150px}
+#player.az .m2-sith small{white-space:nowrap}
+#player.az .m2-sith .m2-kind{margin-left:auto}
+#player.az .m2-sit>*+*{margin-top:var(--air)}
+#player.az .m2-sit .m2-ill{margin-top:var(--air)}
+
+/* ---- F) capa nova: clara, com hierarquia, sem o "verdão" ---- */
+#player.az .step.fx-cover{background:transparent!important;box-shadow:none!important;padding:0!important}
+#player.az .step.fx-cover>.az-hero{background:#fff!important;color:var(--ink-az,#1B2F2B)!important;border:1px solid #DCEBE6!important;box-shadow:0 16px 34px -26px rgba(8,60,52,.5)!important;border-radius:26px;padding:12px 14px 20px;gap:10px}
+#player.az .step.fx-cover>.az-hero::before,#player.az .step.fx-cover>.az-hero::after{display:none!important}
+#player.az .step.fx-cover .az-scene{border-radius:18px;overflow:hidden;box-shadow:0 10px 24px -18px rgba(8,60,52,.6)}
+#player.az .step.fx-cover .az-ep{background:#E8F6F2!important;color:#0F6E62!important;border:0!important;padding:5px 12px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+#player.az .step.fx-cover .az-hero h1{color:#12312B!important;text-shadow:none!important;font-size:clamp(26px,7vw,36px);line-height:1.1;margin:2px 0 0}
+#player.az .step.fx-cover .az-hero p{color:#52666A!important;font-weight:600;font-size:15px;line-height:1.5;max-width:36ch;margin:0 auto}
+#player.az .step.fx-cover .fx-hook{margin-top:var(--air)!important;padding:14px 16px;border:1px solid #DCEBE6!important;border-left:5px solid var(--az1,#1FAE9B)!important;border-radius:18px;background:#fff!important;box-shadow:0 12px 26px -22px rgba(8,60,52,.5)!important;text-align:left}
+#player.az:has(.step.fx-cover) #pstage,#player.az:has(.step.fx-cover) .stage{background:transparent!important;box-shadow:none!important;padding-inline:0!important}
+#player.az:has(.step.fx-cover) .stage::before,#player.az:has(.step.fx-cover) .stage::after{display:none!important}
+@media (min-width:760px){
+  #player.az .step.fx-cover{max-width:720px;margin-inline:auto}
+  #player.az .step.fx-cover .az-scene{max-height:260px}
+  #player.az .step.fx-cover .az-scene svg{height:260px;width:100%}
+}
+/* capa no PC: coluna única centrada (o grid antigo deixava a metade esquerda vazia) */
+#player.az .step.fx-cover>.az-hero{display:flex!important;flex-direction:column!important;align-items:center;grid-template-columns:none!important}
+#player.az .step.fx-cover .az-scene{width:100%!important;flex:none}
+@media (min-width:760px){#player.az .step.fx-cover .az-hero{padding:16px 22px 26px}#player.az .step.fx-cover .az-hero h1{font-size:34px}}
+
+/* ---- G) menos saturação: caixas de enunciado claras (antes: bloco verde-água sólido com texto branco) ---- */
+#player.az .nv-ban{display:none}
+#player.az .fx-en,#player.az .fx-en.has-play,#player.az .sl-hero,#player.az .m2-lpb{background:#EEF8F5!important;color:#12312B!important;border:1px solid #CFE8E1!important;box-shadow:none!important}
+#player.az .fx-en::before,#player.az .fx-en::after,#player.az .sl-hero::before,#player.az .sl-hero::after,#player.az .m2-lpb::before,#player.az .m2-lpb::after{display:none!important}
+#player.az .fx-en *,#player.az .sl-hero *,#player.az .m2-lpb *{color:#12312B!important;text-shadow:none!important}
+#player.az .fx-en small,#player.az .fx-en .fx-en-t>:first-child,#player.az .sl-hero small,#player.az .m2-lpb small{color:#4F7A72!important}
+#player.az .fx-en .fx-en-t>:first-child:not(small){letter-spacing:.08em}
+#player.az .fx-en .fx-play,#player.az .fx-en .fx-en-ic{background:#fff!important;border:1px solid #CFE8E1!important}
+#player.az .fx-en .fx-play *{color:#0F6E62!important}
+
+/* ---- H) celular: listas de 3 cartões viram carrossel horizontal (some a rolagem vertical, o próximo cartão aparece na borda) ---- */
+@media (max-width:759px){
+  #player.az .m2-exg,#player.az .m2-prs,#player.az .xp-grid{display:grid!important;grid-auto-flow:column;grid-template-columns:none!important;grid-auto-columns:80%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-14px;padding:2px 14px 8px;scrollbar-width:none;align-items:start}
+  #player.az .m2-exg::-webkit-scrollbar,#player.az .m2-prs::-webkit-scrollbar,#player.az .xp-grid::-webkit-scrollbar{display:none}
+  #player.az .m2-exg>*,#player.az .m2-prs>*,#player.az .xp-grid>*{scroll-snap-align:center}
+  /* pistas do caso (mystery): cartões mais compactos */
+  #player.az .nv-clues li{padding:9px 12px;font-size:14.5px;line-height:1.4;gap:10px}
+  #player.az .nv-clues{gap:8px}
+  #player.az .nv-sent{padding:12px 14px}
+}

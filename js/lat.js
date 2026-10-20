@@ -48,6 +48,10 @@ const css=document.createElement('style');css.textContent=`
 .cc-l mark{background:#bfeee9;color:inherit;border-radius:4px;padding:0 2px}.cc-film mark{background:rgba(127,224,216,.3);color:#fff}
 .cc-src{margin-top:8px;font:600 12px system-ui;color:#a58b5a}.cc-film .cc-src{color:#b9b1e8}
 .cc-ctx{margin:10px 0;padding:11px 14px;border-radius:14px;background:#f1eefc;color:#3b3558;font:500 15px/1.45 system-ui}.cc-ctx b{color:#5a3fc0;margin-right:4px}
+.tl-ctx{display:flex;flex-direction:column;gap:4px;margin:var(--air,14px) 0;padding:12px 14px;border-radius:14px;background:#EEF8F5;border:1px solid #CFE8E1;color:#12312B;font:500 15px/1.5 system-ui}.tl-ctx b{font:800 11px system-ui;letter-spacing:.1em;text-transform:uppercase;color:#4F7A72}
+.tl-ex{display:grid;gap:10px;margin:var(--air,14px) 0 4px}.tl-e{display:block;width:100%;text-align:left;border:1px solid #E4E0F5;border-radius:14px;background:#fff;padding:10px 14px;cursor:pointer;min-height:48px;box-shadow:0 6px 14px -12px rgba(40,30,90,.5)}
+.tl-en{display:block;font:700 16px/1.4 system-ui;color:#25203f}.tl-en mark{background:#bfeee9;color:inherit;border-radius:4px;padding:0 2px}.tl-pt{display:block;margin-top:2px;font:500 13.5px/1.4 system-ui;color:#6b6591}
+@media (min-width:1000px){.tl-ex{grid-template-columns:repeat(3,1fr)}}
 .tl-card{margin:8px 0;padding:11px 13px;border-radius:16px;background:#fff;box-shadow:0 8px 20px -14px rgba(40,30,90,.6)}
 .tl-h span{flex:1;min-width:0}.tl-h small{white-space:nowrap}.tl-h{display:flex;align-items:center;gap:8px;font:800 16px system-ui;color:#25203f}.tl-h em{font-style:normal;font-size:22px}.tl-h small{margin-left:auto;font:700 11px system-ui;color:#0b5f5d;background:#e3f4f3;border-radius:99px;padding:3px 9px}
 .tl-d{margin-top:4px;font:500 14px/1.4 system-ui;color:#3b3558}
@@ -193,12 +197,20 @@ FXR.cultgame=function(f,st,n){
   draw()};
 FXR.culttl=function(f,st,n){
   const W=f.works||[];P.fx.done=false;P.fx.cta=null;
+  const mkL=s=>H(s).replace(/\{\{(.+?)\}\}/g,'<mark>$1</mark>'),plainL=s=>String(s).replace(/\{\{|\}\}/g,'');
   const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
   const fact=f.fact?`<div class="cu2-fact">${mk(f.fact)}</div>`:'';
-  /* sem obras: é só uma curiosidade, nunca um jogo (antes o quadro travava pedindo uma ordem impossível) */
-  if(!W.length){
-    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}${fact}</div>`;
-    P.fx.done=true;cta(P.t.cont,true,true);say(f.say||'Uma curiosidade para você!');return}
+  const EX=f.ex||[];
+  /* contexto da lição + exemplos reais: o "Você sabia?" deixa de ser uma curiosidade solta */
+  const info=()=>`${fact}${f.ctx?`<div class="tl-ctx"><b>Na prática</b><span>${mk(f.ctx).replace(/\{\{(.+?)\}\}/g,'<mark>$1</mark>')}</span></div>`:''}${EX.length?`<div class="tl-ex">${EX.map((x,i)=>`<button type="button" class="tl-e" data-i="${i}"><span class="tl-en">${mkL(x[0])}</span><span class="tl-pt">${H(x[1])}</span></button>`).join('')}</div>`:''}`;
+  const bindEx=()=>st.querySelectorAll('.tl-e').forEach(b=>b.onclick=()=>{try{sfx('pop')}catch(e){}say2(plainL(EX[+b.dataset.i][0]))});
+  const hasInfo=!!(f.ctx||EX.length);
+  const intro=()=>{
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>
+    <div class="cg-q">Conheça as ${W.length} obras antes de montar a linha do tempo:</div>
+    ${W.map(w=>`<div class="tl-card"><div class="tl-h"><em>${H(w.k)}</em><span>${H(w.n)}</span>${w.t?`<small>${H(w.t)}</small>`:''}</div><div class="tl-d">${H(w.d)}</div>${w.q?`<button type="button" class="tl-q" data-q="${H(w.q)}">“${H(w.q)}”<small>${H(w.qp||'')}</small></button>`:''}</div>`).join('')}</div>`;
+    st.querySelectorAll('.tl-q').forEach(b=>b.onclick=()=>say2(b.dataset.q));
+    P.fx.cta=()=>{game();return true};cta('Montar a linha do tempo ▶',true,true);say(f.say||'Conheça as obras. Toque nas frases para ouvir!')};
   const game=()=>{
     let need=0,miss=0,done=false;
     const order=W.map((w,i)=>({w,i})).sort((a,b)=>a.w.y-b.w.y).map(o=>o.i);
@@ -213,14 +225,15 @@ FXR.culttl=function(f,st,n){
           const bs=[...st.querySelectorAll('.cg-c')];order.forEach((wi,k)=>{const x=bs.find(y=>+y.dataset.i===wi);x.classList.add('pick','rev');x.classList.remove('no');x.querySelector('i').textContent=k+1});
           fxGrade(false,'Esta é a ordem certa. Os anos apareceram para você conferir.',null);P.fx.done=true;cta(P.t.cont,true,true)}}});
     say(f.say||'Qual obra veio primeiro? Monte a linha do tempo!')};
-  /* com descrição de cada obra: primeiro o aluno CONHECE as obras, depois ordena */
-  if(W.every(w=>w.d)){
-    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}${fact}
-    <div class="cg-q">Conheça as ${W.length} obras antes de montar a linha do tempo:</div>
-    ${W.map(w=>`<div class="tl-card"><div class="tl-h"><em>${H(w.k)}</em><span>${H(w.n)}</span>${w.t?`<small>${H(w.t)}</small>`:''}</div><div class="tl-d">${H(w.d)}</div>${w.q?`<button type="button" class="tl-q" data-q="${H(w.q)}">“${H(w.q)}”<small>${H(w.qp||'')}</small></button>`:''}</div>`).join('')}</div>`;
-    st.querySelectorAll('.tl-q').forEach(b=>b.onclick=()=>say2(b.dataset.q));
-    P.fx.cta=()=>{game();return true};cta('Montar a linha do tempo ▶',true,true);say(f.say||'Conheça as obras. Toque nas frases para ouvir!')
-  }else game()};
+  /* sem obras: só curiosidade (nunca um jogo impossível) */
+  if(!W.length){
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${hasInfo?'':art}${info()}</div>`;bindEx();
+    P.fx.done=true;cta(P.t.cont,true,true);say(f.say||'Uma curiosidade para você!');return}
+  const describe=W.every(w=>w.d);
+  if(hasInfo){
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${info()}</div>`;bindEx();
+    P.fx.cta=()=>{describe?intro():game();return true};cta(describe?'Conhecer as obras ▶':'Montar a linha do tempo ▶',true,true);say(f.say||'Veja onde isso aparece de verdade!');return}
+  describe?intro():game()};
 /* ---------- "Cena da obra": trecho real (domínio público) ou fala curta + cena contada, com ligação direta à lição ---------- */
 FXR.cultcena=function(f,st,n){
   const L=f.lines||[],mode=f.mode||'scene',Q=f.q;let phase=0;P.fx.done=false;P.fx.cta=null;
