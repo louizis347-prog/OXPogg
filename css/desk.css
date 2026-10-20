@@ -54,3 +54,6 @@
 @media (min-width:1500px){
   #player.az .stage,#player.az:has(.az-two) .stage,#player.az .p-head,#player.az .p-foot .in{max-width:1240px}
 }
+
+/* destaques (mark) longos quebram linha em vez de passar da borda no celular (ex.: cult1) */
+#player .step mark{white-space:normal;overflow-wrap:anywhere;-webkit-box-decoration-break:clone;box-decoration-break:clone}
