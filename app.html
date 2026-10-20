@@ -1829,7 +1829,7 @@ const ST={mig:store.get('mig',0),srs:store.get('srs',{}),homeLang:store.get('hom
 function save(){store.set('mig',ST.mig);store.set('srs',ST.srs);store.set('done',ST.done);store.set('xp',ST.xp);store.set('shelf',ST.shelf);store.set('uiEn',ST.uiEn);store.set('streak',ST.streak);store.set('homeLang',ST.homeLang);store.set('testDone',ST.testDone);store.set('writing',ST.writing);store.set('lastCourse',ST.lastCourse);store.set('lastEp',ST.lastEp);store.set('totalCorrect',ST.totalCorrect);store.set('totalAnswered',ST.totalAnswered)}
 const $=(s,r)=>(r||document).querySelector(s), app=$('#app');
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const mk=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<mark>$1</mark>');
+const mk=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<mark>$1</mark>').replace(/\*([^*\s][^*]*?)\*/g,'<em>$1</em>');
 const plain=s=>String(s).replace(/\*\*/g,'');
 
 /* ================= CORREÇÃO DE PRONÚNCIA PARA TTS =================

@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_KIND.cultcena='story';FX_LABEL.cultcena='Cena da obra';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -35,6 +35,24 @@ const css=document.createElement('style');css.textContent=`
 .cg-q{font:800 18px/1.35 system-ui;color:#25203f;margin:8px 0}.cg-en{font:800 20px/1.35 system-ui;color:#0b5f5d;margin:8px 0 2px}.cg-pt{font:500 14px system-ui;color:#6b6591;margin-bottom:8px}
 .cg-tf{display:flex;gap:10px;margin:10px 0}.cg-tf button{flex:1;border:0;border-radius:16px;padding:14px;min-height:52px;font:900 17px system-ui;color:#fff;cursor:pointer;box-shadow:0 5px 0 rgba(0,0,0,.2)}
 .cg-tf .t{background:linear-gradient(135deg,#0C7A78,#3fc1bd)}.cg-tf .f{background:linear-gradient(135deg,#E85D75,#f38aa0)}
+.cc-page{margin:10px 0;padding:14px 14px 10px;border-radius:6px 16px 16px 6px;background:#fffaf0;border-left:6px solid #c9a15a;box-shadow:0 10px 22px -16px rgba(80,50,10,.6)}
+.cc-pg-t{font:700 12px Georgia,serif;letter-spacing:.14em;text-transform:uppercase;color:#a07a35;margin-bottom:8px}
+.cc-film{margin:10px 0;padding:14px;border-radius:16px;background:linear-gradient(160deg,#241f45,#3b2f6b);box-shadow:0 12px 24px -16px rgba(30,20,80,.8);color:#fff}
+.cc-fh{font:800 12px system-ui;letter-spacing:.14em;text-transform:uppercase;color:#ffd978;margin-bottom:8px}
+.cc-l{display:block;width:100%;text-align:left;border:0;background:transparent;padding:6px 2px;margin:0;cursor:pointer;color:inherit;font:inherit;min-height:44px}
+.cc-en{display:block;font:500 19px/1.45 Georgia,serif;color:#3b2a10}
+.cc-film .cc-en{font:600 20px/1.35 system-ui;color:#fff}
+.cc-who{display:block;font:800 12px system-ui;letter-spacing:.08em;text-transform:uppercase;color:#7fe0d8;margin-bottom:2px}
+.cc-pt{display:none;margin-top:3px;font:italic 500 14px/1.35 system-ui;color:#6b5a3a}.cc-film .cc-pt{color:#cfc8f5}
+.cc-l.on .cc-pt{display:block;animation:rpIn .3s both}
+.cc-l mark{background:#bfeee9;color:inherit;border-radius:4px;padding:0 2px}.cc-film mark{background:rgba(127,224,216,.3);color:#fff}
+.cc-src{margin-top:8px;font:600 12px system-ui;color:#a58b5a}.cc-film .cc-src{color:#b9b1e8}
+.cc-ctx{margin:10px 0;padding:11px 14px;border-radius:14px;background:#f1eefc;color:#3b3558;font:500 15px/1.45 system-ui}.cc-ctx b{color:#5a3fc0;margin-right:4px}
+.tl-card{margin:8px 0;padding:11px 13px;border-radius:16px;background:#fff;box-shadow:0 8px 20px -14px rgba(40,30,90,.6)}
+.tl-h span{flex:1;min-width:0}.tl-h small{white-space:nowrap}.tl-h{display:flex;align-items:center;gap:8px;font:800 16px system-ui;color:#25203f}.tl-h em{font-style:normal;font-size:22px}.tl-h small{margin-left:auto;font:700 11px system-ui;color:#0b5f5d;background:#e3f4f3;border-radius:99px;padding:3px 9px}
+.tl-d{margin-top:4px;font:500 14px/1.4 system-ui;color:#3b3558}
+.tl-q{display:block;width:100%;text-align:left;margin-top:7px;padding:8px 10px;border:0;border-radius:12px;background:#fff7e0;color:#7a5200;font:700 15px/1.35 Georgia,serif;cursor:pointer;min-height:44px}.tl-q small{display:block;font:500 12px system-ui;color:#9a7a30;margin-top:2px}
+.cg-q small{font:500 12px system-ui;color:#6b6591}
 .cg-yr{display:none;margin-left:6px;font:900 13px system-ui;color:#0b5f5d}.cg-c.rev .cg-yr{display:inline}
 .vw-bar{height:8px;border-radius:6px;background:#e1f1f0;overflow:hidden;margin:6px 0 10px}.vw-bar i{display:block;height:100%;background:linear-gradient(90deg,#0C7A78,#3fc1bd);transition:width .3s}
 .vw-g{display:inline-block;min-width:74px;border-bottom:3px dashed #F29B34;color:#F29B34;text-align:center}.vw-g.ok{border-bottom:3px solid #2cc673;color:#1b7a4b;background:#e7f9ef;border-radius:8px}
@@ -172,18 +190,59 @@ FXR.cultgame=function(f,st,n){
     say(r.t==='order'?'Qual vem primeiro? Toque na ordem da história.':'Missão da obra!')};
   draw()};
 FXR.culttl=function(f,st,n){
-  const W=f.works;let need=0,miss=0,done=false;P.fx.done=false;P.fx.cta=null;
-  const order=W.map((w,i)=>({w,i})).sort((a,b)=>a.w.y-b.w.y).map(o=>o.i);
+  const W=f.works||[];P.fx.done=false;P.fx.cta=null;
   const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
-  st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
-  ${f.fact?`<div class="cu2-fact">${mk(f.fact)}</div>`:''}<div class="cg-q">Linha do tempo: toque da obra mais ANTIGA para a mais NOVA.</div>
-  ${fxShuffle(W.map((w,i)=>({w,i}))).map(o=>`<button type="button" class="cg-c" data-i="${o.i}"><b>${H(o.w.k)}</b> ${H(o.w.n)}<span class="cg-yr">· ${o.w.y}</span><i></i></button>`).join('')}<div id="fb"></div></div>`;
-  cta('Toque na ordem do tempo',false);
-  st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
-    if(i===order[need]){b.classList.add('pick','rev');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
-      if(need>=W.length){done=true;st.querySelectorAll('.cg-c').forEach(x=>x.classList.add('rev'));P.streak=miss?0:(P.streak||0)+1;if(!miss)P.score++;fxGrade(!miss,'As datas apareceram: confira a ordem.',null);P.fx.done=true;cta(P.t.cont,true,true)}}
-    else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
-  say(f.say||'Qual obra veio primeiro? Monte a linha do tempo!')};
+  const fact=f.fact?`<div class="cu2-fact">${mk(f.fact)}</div>`:'';
+  /* sem obras: é só uma curiosidade, nunca um jogo (antes o quadro travava pedindo uma ordem impossível) */
+  if(!W.length){
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}${fact}</div>`;
+    P.fx.done=true;cta(P.t.cont,true,true);say(f.say||'Uma curiosidade para você!');return}
+  const game=()=>{
+    let need=0,miss=0,done=false;
+    const order=W.map((w,i)=>({w,i})).sort((a,b)=>a.w.y-b.w.y).map(o=>o.i);
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${W.every(w=>w.d)?'':art+fact}<div class="cg-q">Linha do tempo: toque da obra mais ANTIGA para a mais NOVA <small>(ano da 1ª publicação ou estreia)</small>.</div>
+    ${fxShuffle(W.map((w,i)=>({w,i}))).map(o=>`<button type="button" class="cg-c" data-i="${o.i}"><b>${H(o.w.k)}</b> ${H(o.w.n)}<span class="cg-yr">· ${o.w.y}</span><i></i></button>`).join('')}<div id="fb"></div></div>`;
+    P.fx.cta=null;cta('Toque na ordem do tempo',false);
+    st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
+      if(i===order[need]){b.classList.add('pick','rev');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
+        if(need>=W.length){done=true;st.querySelectorAll('.cg-c').forEach(x=>x.classList.add('rev'));P.streak=miss?0:(P.streak||0)+1;if(!miss)P.score++;fxGrade(!miss,'As datas apareceram: confira a ordem.',null);P.fx.done=true;cta(P.t.cont,true,true)}}
+      else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
+    say(f.say||'Qual obra veio primeiro? Monte a linha do tempo!')};
+  /* com descrição de cada obra: primeiro o aluno CONHECE as obras, depois ordena */
+  if(W.every(w=>w.d)){
+    st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}${fact}
+    <div class="cg-q">Conheça as ${W.length} obras antes de montar a linha do tempo:</div>
+    ${W.map(w=>`<div class="tl-card"><div class="tl-h"><em>${H(w.k)}</em><span>${H(w.n)}</span>${w.t?`<small>${H(w.t)}</small>`:''}</div><div class="tl-d">${H(w.d)}</div>${w.q?`<button type="button" class="tl-q" data-q="${H(w.q)}">“${H(w.q)}”<small>${H(w.qp||'')}</small></button>`:''}</div>`).join('')}</div>`;
+    st.querySelectorAll('.tl-q').forEach(b=>b.onclick=()=>say2(b.dataset.q));
+    P.fx.cta=()=>{game();return true};cta('Montar a linha do tempo ▶',true,true);say(f.say||'Conheça as obras. Toque nas frases para ouvir!')
+  }else game()};
+/* ---------- "Cena da obra": trecho real (domínio público) ou fala curta + cena contada, com ligação direta à lição ---------- */
+FXR.cultcena=function(f,st,n){
+  const L=f.lines||[],mode=f.mode||'scene',Q=f.q;let phase=0;P.fx.done=false;P.fx.cta=null;
+  const hl=s=>{let t=H(s);(f.hl||[]).forEach(w=>{const e=H(w).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');t=t.replace(new RegExp('('+e+')','i'),'<mark>$1</mark>')});return t};
+  const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
+  const head=`${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Cena da obra')}</h2>`;
+  const view=()=>{
+    if(phase===0){
+      let body='';
+      if(mode==='page')body=`<div class="cc-page"><div class="cc-pg-t">${H(f.work)}</div>${L.map((l,i)=>`<button type="button" class="cc-l" data-i="${i}"><span class="cc-en">${hl(l[0])}</span><span class="cc-pt">${H(l[1])}</span></button>`).join('')}<div class="cc-src">${H(f.src||'')}${f.by?'':''}</div></div>`;
+      else if(mode==='quote')body=`<div class="cc-film"><div class="cc-fh">${H(f.work)}</div>${L.map((l,i)=>`<button type="button" class="cc-l" data-i="${i}">${l[2]?`<b class="cc-who">${H(l[2])}</b>`:''}<span class="cc-en">“${hl(l[0])}”</span><span class="cc-pt">${H(l[1])}</span></button>`).join('')}<div class="cc-src">${H(f.src||'')}</div></div>`;
+      else body=`<div class="cc-film cc-sc"><div class="cc-fh">${H(f.work)}</div><div class="cc-src">${H(f.src||'A cena')}</div></div>`;
+      st.innerHTML=`<div class="step fx cu2 cc">${head}<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>${body}
+      ${f.ctx?`<div class="cc-ctx"><b>${mode==='page'?'Contexto':'A cena'}</b> ${mk(f.ctx)}</div>`:''}
+      ${f.link?`<div class="rdg-rule"><span>🔗</span><span>${mk(f.link)}</span></div>`:''}
+      ${L.length?'<div class="cx-st">Toque numa fala para ouvir e ver a tradução</div>':''}</div>`;
+      st.querySelectorAll('.cc-l').forEach(b=>b.onclick=()=>{b.classList.toggle('on');try{sfx('pop')}catch(e){}say2(L[+b.dataset.i][0])});
+      P.fx.cta=()=>{if(Q){phase=1;view();return true}return false};cta(Q?'Entendi — uma pergunta ▶':P.t.cont,true,true);
+      say(L.length?L[0][0]:(f.say||'Veja a cena da obra!'));
+    }else{
+      st.innerHTML=`<div class="step fx cu2">${head}<div class="cu2-q">${H(Q.q)}</div><div class="rdg-o">${Q.o.map((o,i)=>`<button type="button" data-i="${i}">${H(o)}</button>`).join('')}</div><div id="fb"></div></div>`;
+      let done=false;P.fx.cta=null;cta('Escolha uma resposta',false);
+      st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const i=+b.dataset.i,ok=i===Q.a;
+        b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[Q.a].classList.add('ok');if(ok)P.score++;
+        fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
+    }};
+  view()};
 /* ---------- cultura: cartão ilustrado + pergunta (cultq: toque único · cult: curiosidade + pergunta) ---------- */
 function cultStep(kind){return function(f,st,n){
   const QS=f.qs||[f.q];let qi=0;
