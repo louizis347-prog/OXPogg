@@ -129,7 +129,7 @@ dict(n=97469, t="先輩に聞いてみたほうがいい", s="Aconselhar no trab
   "Y: ありがとうございます。助かりました。 | Muito obrigado. Ajudou muito. | arigatō gozaimasu. tasukarimashita.",
   "P: いつでも聞いてくださいね。 | Pergunte quando quiser. | itsu demo kiite kudasai ne."],
  slang=("Ryō",["💼","#AE3EC9"],["F: 初日どうだった？ | Como foi o primeiro dia? | shonichi dō datta?","Y: 正直、ついていけなかった。 | Sinceramente, não consegui acompanhar. | shōjiki, tsuite ikenakatta.","F: 最初はそんなもんだよ。 | No começo é assim mesmo. | saisho wa sonna mon da yo.","Y: 先輩に聞いてみたほうがいいかな。 | Será que é melhor perguntar a um veterano? | senpai ni kiite mita hō ga ii ka na.","F: もちろん！遠慮しなくていいよ。 | Claro! Não precisa ter cerimônia. | mochiron! enryo shinakute ii yo.","Y: うん、がんばってみる。 | Aham, vou tentar me esforçar. | un, ganbatte miru."],
-  {"正直":"sinceramente","ついていけない":"não conseguir acompanhar","そんなもんだよ":"é assim mesmo","遠慮しなくていい":"não precisa ter cerimônia","がんばってみる":"vou tentar me esforçar"},["ついていけない","遠慮しなくていい"]),
+  {"正直":"sinceramente","ついていけなかった":"não consegui acompanhar","そんなもんだよ":"é assim mesmo","遠慮しなくていい":"não precisa ter cerimônia","がんばってみる":"vou tentar me esforçar"},["ついていけなかった","遠慮しなくていい"]),
  real=("聞いてみたほうがいいです","聞いてみたほうがいいよ","entre colegas próximos cai o «です»; no escritório com superiores mantém-se a forma polida"),
  recap_slang="遠慮しなくていい → não precisa ter cerimônia"),
 
@@ -228,7 +228,7 @@ dict(n=97472, t="ゆっくり始めたほうがいいよ", s="Aconselhar sobre e
   "Y: いいですね。ストレッチもします。 | Boa. Vou fazer alongamento também. | ii desu ne. sutorecchi mo shimasu.",
   "P: そうしたほうがいいです。 | Sim, é melhor fazer isso. | sō shita hō ga ii desu."],
  slang=("Takumi",["💪","#AE3EC9"],["F: 最近、全然運動してないんだよね。 | Ultimamente não tenho feito exercício nenhum. | saikin, zenzen undō shitenai n da yo ne.","Y: じゃあ、ジムに行ってみたら？ | Então que tal tentar ir à academia? | jā, jimu ni itte mitara?","F: でも、三日坊主になりそう。 | Mas acho que vou desistir em três dias. | demo, mikka bōzu ni narisō.","Y: 最初から飛ばさないほうがいいよ。 | É melhor não ir com tudo no início. | saisho kara tobasanai hō ga ii yo.","F: そっか。週一から始めてみる。 | Verdade. Vou começar com uma vez por semana. | sokka. shūichi kara hajimete miru.","Y: いいね、その調子！ | Boa, é assim mesmo! | ii ne, sono chōshi!"],
-  {"三日坊主":"quem desiste em poucos dias","飛ばす":"ir com tudo, acelerar","そっか":"ah, entendi (casual)","その調子":"é isso aí, continue assim","週一":"uma vez por semana"},["三日坊主","その調子"]),
+  {"三日坊主":"quem desiste em poucos dias","飛ばさない":"não ir com tudo","そっか":"ah, entendi (casual)","その調子":"é isso aí, continue assim","週一":"uma vez por semana"},["三日坊主","その調子"]),
  real=("始めたほうがいいです","始めたほうがいいよ","entre amigos, «ほうがいい» costuma ser suavizado com «よ»"),
  recap_slang="三日坊主 → quem desiste em poucos dias"),
 
@@ -294,7 +294,7 @@ dict(n=97474, t="あなたに合うアドバイス", s="Fechar o arco: dar conse
   "Y: いいですね。やってみます。 | Boa ideia. Vou tentar. | ii desu ne. yatte mimasu.",
   "P: 手伝いますから、いつでも言ってください。 | Eu ajudo, então diga quando quiser. | tetsudaimasu kara, itsu demo itte kudasai."],
  slang=("Yūto",["📦","#AE3EC9"],["F: 来月引っ越しなんでしょ？ | Você vai se mudar mês que vem, né? | raigetsu hikkoshi nan desho?","Y: うん、荷造りが全然終わらない。 | Aham, não acabo de empacotar de jeito nenhum. | un, nizukuri ga zenzen owaranai.","F: 手伝おうか？ | Quer que eu ajude? | tetsudaou ka?","Y: マジで？神だわ。 | Sério? Você é um anjo. | maji de? kami da wa.","F: そのかわり、ご飯おごってよ。 | Em troca, me paga um almoço. | sono kawari, gohan ogotte yo.","Y: オッケー、まかせて！ | Beleza, pode deixar! | okkē, makasete!"],
-  {"荷造り":"empacotar a bagagem","神だわ":"você é um anjo (gíria)","おごる":"pagar para alguém","そのかわり":"em troca","まかせて":"pode deixar comigo"},["神だわ","おごる"]),
+  {"荷造り":"empacotar a bagagem","神だわ":"você é um anjo (gíria)","おごって":"paga para mim","そのかわり":"em troca","まかせて":"pode deixar comigo"},["神だわ","おごって"]),
  real=("手伝おうか","手伝おっか","na fala casual «おうか» vira «おっか»"),
  recap_slang="神だわ → você é um anjo"),
 ]

@@ -195,7 +195,7 @@ dict(n=91486, t="Deux appartements", s="Comparar apartamentos e decidir", city="
   "Y: C'est loin du centre ? | Fica longe do centro?",
   "P: Non, aussi près que l'autre, dix minutes en bus. | Não, tão perto quanto o outro, dez minutos de ônibus."],
  slang=("Julien",["🏠","#AE3EC9"],["F: Ton nouvel appart, il est canon ! | Seu novo apê é lindo!","Y: Merci, mais le loyer, c'est la galère. | Valeu, mas o aluguel é um sufoco.","F: À Marseille, tout est cher, que veux-tu ! | Em Marselha tudo é caro, fazer o quê!","Y: Heureusement, il y a la vue, ça compense. | Felizmente tem a vista, compensa.","F: On pend la crémaillère quand ? | Quando fazemos a inauguração?","Y: Samedi soir, ramène des copains ! | Sábado à noite, traga os amigos!"],
-  {"canon":"lindo, bonito","c'est la galère":"é um sufoco","que veux-tu":"fazer o quê","ça compense":"compensa","pendre la crémaillère":"fazer festa de inauguração"},["c'est la galère","pendre la crémaillère"]),
+  {"canon":"lindo, bonito","c'est la galère":"é um sufoco","que veux-tu":"fazer o quê","ça compense":"compensa","on pend la crémaillère":"fazer festa de inauguração"},["c'est la galère","on pend la crémaillère"]),
  real=("Il n'y a pas de balcon","Y a pas de balcon","na fala, «il n'y a pas» vira «y a pas»"),
  recap_slang="c'est la galère → é um sufoco"),
 
@@ -228,7 +228,7 @@ dict(n=91487, t="Deux voyages", s="Argumentar entre duas opções", city="Dakar"
   "Y: C'est vrai, mais la plage est moins chère. | É verdade, mas a praia é mais barata.",
   "P: Bon, tu as raison, on va à la mer. | Bom, você tem razão, vamos ao mar."],
  slang=("Moussa",["🏖️","#AE3EC9"],["F: Alors, les vacances, c'est la plage ou quoi ? | Então, as férias, é praia ou o quê?","Y: Évidemment, je veux me poser au soleil. | Claro, quero relaxar no sol.","F: Moi aussi, j'ai besoin de décompresser. | Eu também, preciso desestressar.","Y: Ça va être le paradis, je te le dis ! | Vai ser o paraíso, estou te dizendo!","F: Fais gaffe aux coups de soleil quand même. | Cuidado com as queimaduras de sol mesmo assim.","Y: T'inquiète, j'ai la crème, je gère. | Relaxa, tenho protetor, eu me viro."],
-  {"se poser":"relaxar, sossegar","décompresser":"desestressar","le paradis":"o paraíso","faire gaffe":"tomar cuidado","je gère":"eu me viro, está tudo sob controle"},["décompresser","je gère"]),
+  {"me poser":"relaxar, sossegar","décompresser":"desestressar","le paradis":"o paraíso","fais gaffe":"tomar cuidado","je gère":"eu me viro, está tudo sob controle"},["décompresser","je gère"]),
  real=("Il ne faut pas oublier la crème","Faut pas oublier la crème","na fala, «il» e «ne» somem: «faut pas oublier»"),
  recap_slang="je gère → eu me viro"),
 
@@ -269,7 +269,7 @@ dict(n=91489, t="Mon top trois", s="Ranquear com «premier, deuxième, troisièm
  desc="Os ordinais organizam um ranking: «premier», «deuxième», «troisième». Dica: «premier/première» é irregular; os demais se formam com o número + «-ième» (deux → deuxième) e, em geral, usa-se «numéro un, deux, trois» para dizer o lugar no top.",
  name="Imane", face="👩🏽", emo=["🥇","🥈","🥉","🏖️"], mission="Hoje você monta o seu top três de um tema.",
  hook="C'est quoi ton top trois des plages ?|Qual é o seu top três de praias?", goal="Mon numéro un, c'est la plage",
- v=[("premier","primeiro","Soa como “pre-MIÊ”.","🥇"),("deuxième","segundo","Soa como “dö-ZIÉM”.","🥈"),("troisième","terceiro","Soa como “truá-ZIÉM”.","🥉"),("un classement","um ranking","Soa como “ã cla-s-MÃ”.","📊"),("la plage","a praia","Soa como “la plaj”.","🏖️"),("enfin","por fim","Soa como “ã-FIÃ”.","🏁")],
+ v=[("premier","primeiro","Soa como “pre-MIÊ”.","🥇"),("deuxième","segundo","Soa como “dö-ZIÉM”.","🥈"),("troisième","terceiro","Soa como “truá-ZIÉM”.","🥉"),("un classement","um ranking","Soa como “ã cla-se-MÃ”.","📊"),("la plage","a praia","Soa como “la plaj”.","🏖️"),("enfin","por fim","Soa como “ã-FIÃ”.","🏁")],
  chat=["P: C'est quoi ton top trois des plages ? | Qual é o seu top três de praias?",
   "Y: Mon numéro un, c'est la plage d'Essaouira. | Meu número um é a praia de Essaouira.",
   "P: Pourquoi elle est la première ? | Por que ela é a primeira?",
