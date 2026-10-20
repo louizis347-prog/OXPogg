@@ -92,3 +92,19 @@
 /* variáveis declaradas em :root resolviam --az1 antes de existir (ficavam verdes): recalcula dentro do player */
 #player.az{--m2:var(--az1);--m2d:var(--azd);--m2l:var(--azl)}
 #player.az .fx-tip{background:var(--azl)!important;border:1px solid color-mix(in srgb,var(--az1) 22%,#fff)!important;color:#1B2433!important}
+
+/* ---- J) modo compacto (usado pelo paginador antes de dividir o quadro em partes) ---- */
+#player.az .step.pg-compact{padding:12px 12px!important;font-size:15px}
+#player.az .step.pg-compact>*+*{margin-top:8px!important}
+#player.az .step.pg-compact h2.fx-h{font-size:20px;line-height:1.2}
+#player.az .step.pg-compact .m2-pcard,#player.az .step.pg-compact .m2-pq,#player.az .step.pg-compact .cu2-fact,#player.az .step.pg-compact .tl-ctx{padding:10px 12px}
+#player.az .step.pg-compact .xp-tile .xp-ic{font-size:26px}
+#player.az .step.pg-compact .xp-top{padding:8px 10px 10px;gap:4px}
+#player.az .step.pg-compact .fx-hint{margin:2px 0}
+#player.az .step.pg-compact .m2-struct,#player.az .step.pg-compact .m2-swap{gap:8px}
+
+/* ---- K) PC: a ilustração lateral não pode ser mais alta que a tela (era ela que forçava rolagem) ---- */
+@media (min-width:1000px){
+  #player.az .az-two>.az-media{height:min(500px,calc(100dvh - 260px))!important;max-height:none;overflow:hidden;align-self:start;aspect-ratio:auto!important}
+  #player.az .az-two>.az-media .az-ill-bk,#player.az .az-two>.az-media svg{height:100%!important;width:100%}
+}
