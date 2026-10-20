@@ -12,7 +12,7 @@ def check(kb,chunk=None):
             if n not in names: err.append('obra desconhecida: '+n)
     for n,w in kb.items():
         p=lambda m:err.append('%s: %s'%(n,m))
-        for k in('kind','by','blurb','cena','q'):
+        for k in('kind','by','blurb','cena'):
             if k not in w: p('sem '+k)
         if not isinstance(w.get('y1'),int): p('y1 inteiro')
         if not isinstance(w.get('pd'),bool): p('pd booleano')
@@ -32,7 +32,9 @@ def check(kb,chunk=None):
         if m!='scene' and not c.get('src'): p('sem src')
         for h in c.get('hl') or []:
             if not any(h.lower() in l[0].lower() for l in L): p('hl fora das linhas: '+h)
-        q=w.get('q') or {}
+        q=w.get('q')
+        if q is None and m=='scene': continue
+        q=q or {}
         if not(q.get('q') and isinstance(q.get('o'),list) and len(q['o'])==3 and isinstance(q.get('a'),int) and 0<=q['a']<3 and q.get('why')): p('q malformada')
     return err
 if __name__=='__main__':
