@@ -24,5 +24,14 @@ Cloudflare (Workers com arquivos estáticos, wrangler.jsonc) ligado ao GitHub (b
 - Planos e preços da landing vêm de `config.js` (checkoutUrl, checkoutUrlYear, priceMonth, priceYear). Pagamento previsto: Hotmart, liberando acesso por webhook.
 - Scripts em tools/ que editavam index.html agora editam app.html.
 
+## Visual e conteúdo (outubro/2026)
+- Tokens de design: `css/tokens.css` (cor, fonte, raio, espaço, sombra). Variáveis antigas (--pg-, --p2-, --px-, --rw) apontam para ele. Fonte única Plus Jakarta Sans; Literata só no texto de leitura (`--t-font-read`).
+- Home: `css/home2.css`. Comunidade: `css/community3.css`. Landing de venda: `index.html` + `css/landing.css`.
+- Player no computador (>=1100px) e tablet: `css/desk.css`. Celular continua com cartões compactos.
+- "Sua vez" v2: `js/suavez.js` + `css/suavez.css` (camada sobre rework/m2/talk/ai; mantém IA, voz, estrelas, XP).
+- Cenários ilustrados refinados: `js/scn_fine.js` (biblioteca `window.SF` + lobby1/lobby2), `scn_fine2.js` (home1, school), `scn_fine3.js` (street, park2, yard), `scn_fine4.js` (shop, diner, cafe2, cafe3). Se um falhar, o cenário antigo é usado. Ainda no estilo antigo, pouco usados: kitchen, bedroom, bath, clinic, office, gym, hall, counter, tick, sub2, airport2, flags.
+- Continuações do inglês: `tools/cont_a1.py` (SPECS escritos à mão; testa as palavras-chave; parte do arquivo original no git). 12 de 2.500 reescritas (A1, arquivo 01).
+- Publicação em `main` foi bloqueada pelo ambiente (produção): precisa de pull request ou permissão do dono.
+
 ## Menu
 Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
