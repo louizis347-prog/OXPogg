@@ -362,7 +362,7 @@ function poster(e,o){
   const sb=sceneBody(fake,'poster'),T=sb.T,pal=window.PogCover&&PogCover.palette?PogCover.palette(title+'|p'):{c1:'#7C4DFF',c2:'#4B26B8'};
   const pw=240,ph=320,dfs=defs('a',T,sb.tm,108,pal);
   const lines=wrapLines(title.toUpperCase(),13),fs=lines.length>2?22:26,y0=ph-34-(lines.length-1)*(fs+4);
-  const txt=lines.map((l,i)=>`<text x="${pw/2}" y="${y0+i*(fs+4)}" text-anchor="middle" font-family="'Bricolage Grotesque','Plus Jakarta Sans',Georgia,serif" font-weight="800" font-size="${fs}" letter-spacing="1" fill="#fff" stroke="rgba(0,0,0,.28)" stroke-width="3" paint-order="stroke">${esc(l)}</text>`).join('');
+  const txt=lines.map((l,i)=>`<text x="${pw/2}" y="${y0+i*(fs+4)}" text-anchor="middle" font-family="'Plus Jakarta Sans','Plus Jakarta Sans',Georgia,serif" font-weight="800" font-size="${fs}" letter-spacing="1" fill="#fff" stroke="rgba(0,0,0,.28)" stroke-width="3" paint-order="stroke">${esc(l)}</text>`).join('');
   const au=a.au?`<text x="${pw/2}" y="${ph-14}" text-anchor="middle" font-family="'Plus Jakarta Sans',system-ui,sans-serif" font-weight="700" font-size="10" letter-spacing="2" fill="#fff" fill-opacity=".8">${esc(String(a.au).toUpperCase())}</text>`:'';
   const svg=`<svg viewBox="0 0 ${pw} ${ph}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(title)}">${dfs}<svg x="${-(30+sb.seed%130)}" y="0" width="${ph/H*W}" height="${ph}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">${sb.body}</svg>
    <rect width="${pw}" height="${ph}" fill="${pal.c1}" opacity=".22" style="mix-blend-mode:soft-light"/><rect width="${pw}" height="${ph}" fill="url(#vr)"/>

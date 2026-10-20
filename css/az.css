@@ -227,7 +227,7 @@
 .pgf .pgf-sea{top:56%;bottom:3%}
 
 /* ===== v21: moldura em degradê (como a intro), tom verde-água, fonte nova ===== */
-#player.az{--f-ui:"Plus Jakarta Sans","Nunito","Segoe UI",system-ui,sans-serif;
+#player.az{--f-ui:"Plus Jakarta Sans","Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
   background:linear-gradient(180deg,#F1FBF8 0%,#E6F6F1 100%)!important}
 #player.az .stage{position:relative;margin:6px auto 22px;width:calc(100% - 24px);max-width:760px;padding:clamp(10px,2vw,18px);border-radius:clamp(26px,4vw,38px);
   background:linear-gradient(135deg,var(--az1) 0%,var(--az2) 100%);box-shadow:0 28px 50px -28px var(--azd);overflow:hidden}
@@ -376,7 +376,7 @@
 .az-ill{margin-bottom:14px}@media(min-width:900px){#player.az .az-two>.az-media.az-ill{margin-bottom:0}}
 
 /* ===== v24: refinado — fonte sóbria, bordas finas, ar entre os elementos ===== */
-#player.az{--f-display:"Plus Jakarta Sans","Nunito","Segoe UI",system-ui,sans-serif}
+#player.az{--f-display:"Plus Jakarta Sans","Plus Jakarta Sans","Segoe UI",system-ui,sans-serif}
 #player.az .stage{padding:clamp(5px,.7vw,8px);border-radius:clamp(22px,3vw,30px);box-shadow:0 22px 44px -30px var(--azd)}
 #player.az .stage::before,#player.az .stage::after{opacity:.7}
 #player.az .step{border-radius:clamp(18px,2.4vw,24px)!important;padding:clamp(20px,2.8vw,34px)!important;box-shadow:0 1px 2px rgba(8,60,52,.08)!important;font-size:16px;line-height:1.55;color:#1B2F2B;letter-spacing:.005em}

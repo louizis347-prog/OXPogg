@@ -82,7 +82,7 @@ const css=document.createElement('style');css.textContent=`
 @media(prefers-color-scheme:dark){.rdg-s,.rdg-o button,.wl-cv{background:#1b2230;color:#eef;}.rdg-q,.wl-info b,.wl-fb{color:#eef}.rdg-rule{background:#10292a;color:#9fe3df;border-color:#1d5d5a}}
 `;document.head.appendChild(css);
 const CW=520,CH=260;
-const FONT='700 %spx "Nunito","Segoe UI",system-ui,sans-serif';
+const FONT='700 %spx "Plus Jakarta Sans","Segoe UI",system-ui,sans-serif';
 const fsFor=t=>Math.min(150,Math.floor(CW*.92/Math.max(2,[...t].length*.58)));
 function paintW(x,text,color,alpha,extra){const fs=fsFor(text);x.save();x.globalAlpha=alpha;x.font=FONT.replace('%s',fs);x.textAlign='center';x.textBaseline='alphabetic';x.fillStyle=color;const y=CH*.62+fs*.3;x.fillText(text,CW/2,y);if(extra){x.lineWidth=extra;x.lineJoin='round';x.strokeStyle=color;x.strokeText(text,CW/2,y)}x.restore()}
 function score(strokes,text){

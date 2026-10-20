@@ -1,0 +1,77 @@
+/* Pogglot · design tokens — fonte única de cor, fonte, raio, espaço e sombra.
+   Carregado depois das folhas antigas: as variáveis legadas (--pg-, --p2-, --px-, --rw, --ink...)
+   apontam para cá, então mudar um token muda o site inteiro. Código novo usa só --t-*. */
+
+:root{
+  /* marca */
+  --t-primary:#5B2FE0;
+  --t-primary-hover:#4A22C4;
+  --t-primary-soft:#F0EBFF;
+  --t-accent:#1FAE9B;          /* progresso e acerto, nunca botão */
+  --t-warm:#F08A24;            /* sequência de dias, urgência */
+  --t-ok:#12A87E;
+  --t-danger:#E5484D;
+  --t-grad:linear-gradient(120deg,#5B2FE0 0%,#8A3BF0 45%,#C13BD6 100%);  /* herói e botão de assinar */
+
+  /* neutros */
+  --t-bg:#F7F5FC;
+  --t-card:#FFFFFF;
+  --t-ink:#1B1740;
+  --t-ink2:#4A4668;
+  --t-mute:#6F6A96;
+  --t-line:#E9E5F5;
+  --t-line2:#DAD3EE;
+
+  /* tipografia */
+  --t-font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --t-fs-xs:12px;--t-fs-sm:14px;--t-fs-md:16px;--t-fs-lg:20px;--t-fs-xl:28px;--t-fs-2xl:40px;
+
+  /* forma */
+  --t-r-sm:8px;--t-r-md:16px;--t-r-lg:24px;--t-r-pill:999px;
+
+  /* espaço (múltiplos de 4) */
+  --t-s1:4px;--t-s2:8px;--t-s3:12px;--t-s4:16px;--t-s5:24px;--t-s6:32px;--t-s7:48px;
+
+  /* sombras */
+  --t-sh-card:0 1px 0 rgba(30,27,58,.04),0 12px 30px -16px rgba(60,40,140,.28);
+  --t-sh-lift:0 24px 48px -28px rgba(60,30,160,.45),0 2px 6px rgba(60,30,160,.06);
+
+  /* toque mínimo */
+  --t-hit:44px;
+}
+
+html[data-theme="dark"]{
+  --t-primary:#8B6BFF;          /* mais claro para manter contraste no escuro */
+  --t-primary-hover:#A58BFF;
+  --t-primary-soft:rgba(124,77,255,.18);
+  --t-bg:#0B0A1F;
+  --t-card:#15132F;
+  --t-ink:#F1EEFF;
+  --t-ink2:#CFC8F5;
+  --t-mute:#9F99C6;
+  --t-line:rgba(255,255,255,.09);
+  --t-line2:rgba(255,255,255,.14);
+  --t-sh-card:0 24px 44px -28px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+@media (max-width:640px){:root{--t-fs-2xl:30px}}
+
+/* ---- ponte: variáveis antigas -> tokens (em :root e no escuro, para vencer dark.css) ---- */
+:root,html[data-theme="dark"]{
+  --pg-bg:var(--t-bg);--pg-card:var(--t-card);--pg-line:var(--t-line);--pg-ink:var(--t-ink);--pg-mute:var(--t-mute);
+  --pg-r:var(--t-r-lg);--pg-shadow:var(--t-sh-card);
+  --paper:var(--t-bg);--ink:var(--t-ink);--ink2:var(--t-ink2);--muted:var(--t-mute);--line:var(--t-line);
+
+  --p2-bg:var(--t-bg);--p2-card:var(--t-card);--p2-ink:var(--t-ink);--p2-ink2:var(--t-ink2);--p2-mute:var(--t-mute);
+  --p2-line:var(--t-line);--p2-line2:var(--t-line2);
+  --p2-v:var(--t-primary);--p2-v2:var(--t-primary-hover);--p2-m:#C13BD6;--p2-soft:var(--t-primary-soft);
+  --p2-ok:var(--t-ok);--p2-warn:var(--t-warm);--p2-grad:var(--t-grad);
+  --p2-r:var(--t-r-lg);--p2-sh:var(--t-sh-card);--p2-f:var(--t-font);
+
+  --px-ink:var(--t-ink);--px-mute:var(--t-mute);--px-line:var(--t-line);--px-sh:var(--t-sh-lift);--px-grad:var(--t-grad);
+
+  --rw:var(--az1,var(--t-primary));--rw-d:var(--azd,var(--t-primary-hover));--rw-l:var(--azl,var(--t-primary-soft));
+
+  --f-ui:var(--t-font);--f-display:var(--t-font);
+}
+html[data-theme="dark"]{--px-sh:var(--t-sh-card)}

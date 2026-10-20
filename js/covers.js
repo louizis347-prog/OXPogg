@@ -9,7 +9,7 @@
 'use strict';
 const W='#fff',W6='rgba(255,255,255,.62)',W3='rgba(255,255,255,.34)',Y='#FFD35A';
 const f=(c,o)=>`fill="${c}" fill-opacity="${o}"`;
-const FF="'Plus Jakarta Sans','Bricolage Grotesque',system-ui,sans-serif";
+const FF="'Plus Jakarta Sans','Plus Jakarta Sans',system-ui,sans-serif";
 
 /* ---------------- utilidades ---------------- */
 const norm=s=>String(s==null?'':s).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
