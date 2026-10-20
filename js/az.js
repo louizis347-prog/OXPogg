@@ -16,6 +16,17 @@ window.fxBridge=function(e){if(e&&e.baked)return;_fb(e);try{
 }catch(x){}};
 /* paletas por episódio (sem roxo): [cor1, cor2, escura, clara] */
 const PAL=[['#1FAE9B','#52C98F','#0F6E62','#E3F6F0'],['#25B5A8','#4FC4D9','#0F6A67','#E2F6F5'],['#2DB87C','#7AD08A','#17714A','#E6F7EC'],['#1BA79A','#6FCB8E','#0E655B','#E1F5EF'],['#3BBF8A','#38B6C4','#146E57','#E4F7F0']];
+/* identidade por idioma (sem roxo): [cor1, cor2, escura, clara] × 4 variações que alternam de episódio em episódio */
+const PALS={
+ en:[['#2F6FED','#5B9BFF','#1B4DB3','#E7F0FF'],['#1E88C9','#4FB3E6','#0F5E8F','#E3F3FC'],['#3B5BDB','#6C8CFF','#2740A8','#E8EDFF'],['#0E7490','#38B2C9','#0B4F63','#E0F3F7']],
+ es:[['#E4572E','#FF8A5B','#A93A18','#FFEDE6'],['#D9483B','#F28B6B','#9C2F25','#FDECE8'],['#E07A1F','#F5A84F','#99510B','#FFF1DE'],['#C94C6E','#EE8BA3','#8E2C48','#FCE9EF']],
+ fr:[['#B02A4B','#DD6A87','#7E1932','#FBE9EE'],['#C0392B','#E4806F','#85241A','#FCEAE7'],['#A63D6F','#D683A8','#6F2347','#F9E8F1'],['#BF4A2B','#E88A62','#80301A','#FDECE4']],
+ de:[['#E8A317','#F7C948','#8F6208','#FFF6DA'],['#D98324','#F5B365','#8A4F0F','#FFF0DD'],['#B8860B','#E0B84D','#6F500A','#FBF3D9'],['#C2410C','#F28A55','#7C2A07','#FFEDE3']],
+ ja:[['#EC5F94','#FF9CC0','#B02E63','#FFE9F2'],['#E64980','#F78FB3','#A61E4D','#FFEAF2'],['#F06595','#FFA8C5','#B02A5C','#FFEBF3'],['#E8588A','#FF9BB9','#A82A55','#FFE8F0']],
+ it:PAL.slice(0,4),pt:PAL.slice(0,4)
+};
+const GROUP={nb:'en',nbeng:'en',nbes:'es',nbfr:'fr',nbde:'de',nbja:'ja',nbit:'it',nbpt:'pt',enes:'es',eng:'en'};
+function palFor(){const cid=String((P&&P.cid)||'');let g=(P&&P.c&&P.c.group)||cid.split('-')[0];g=GROUP[g]||g;const set=PALS[g]||PALS.en;return set[((((P.e&&P.e.o)||1)-1)>>1)%set.length]}
 const ICO=['🎟️','🎬','🌉','🎮','🏁'];
 function rail(f,n){
   const e=P.e,fr=e.fr,st=fr.map(x=>AZ.stageOf(x.k,e)),cnt=[0,0,0,0,0];st.forEach(s=>cnt[s]++);
@@ -77,7 +88,7 @@ window.renderFx=function(n,st,lang){
     const pl=document.getElementById('player');if(!pl)return;
     const on=AZ.on(P.e);pl.classList.toggle('az',on);
     if(!on)return;
-    const pal=PAL[(((P.e.o||1)-1)>>1)%PAL.length]||PAL[0];
+    const pal=palFor()||PAL[0];
     pl.style.setProperty('--az1',pal[0]);pl.style.setProperty('--az2',pal[1]);pl.style.setProperty('--azd',pal[2]);pl.style.setProperty('--azl',pal[3]);
     const step=st.querySelector('.step');if(!step)return;
     const f=P.e.fr[n];

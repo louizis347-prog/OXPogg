@@ -46,13 +46,13 @@
 
 /* ---- F) capa nova: clara, com hierarquia, sem o "verdão" ---- */
 #player.az .step.fx-cover{background:transparent!important;box-shadow:none!important;padding:0!important}
-#player.az .step.fx-cover>.az-hero{background:#fff!important;color:var(--ink-az,#1B2F2B)!important;border:1px solid #DCEBE6!important;box-shadow:0 16px 34px -26px rgba(8,60,52,.5)!important;border-radius:26px;padding:12px 14px 20px;gap:10px}
+#player.az .step.fx-cover>.az-hero{background:#fff!important;color:var(--ink-az,#1B2F2B)!important;border:1px solid color-mix(in srgb,var(--az1,#1FAE9B) 22%,#fff)!important;box-shadow:0 16px 34px -26px rgba(8,60,52,.5)!important;border-radius:26px;padding:12px 14px 20px;gap:10px}
 #player.az .step.fx-cover>.az-hero::before,#player.az .step.fx-cover>.az-hero::after{display:none!important}
 #player.az .step.fx-cover .az-scene{border-radius:18px;overflow:hidden;box-shadow:0 10px 24px -18px rgba(8,60,52,.6)}
-#player.az .step.fx-cover .az-ep{background:#E8F6F2!important;color:#0F6E62!important;border:0!important;padding:5px 12px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
-#player.az .step.fx-cover .az-hero h1{color:#12312B!important;text-shadow:none!important;font-size:clamp(26px,7vw,36px);line-height:1.1;margin:2px 0 0}
-#player.az .step.fx-cover .az-hero p{color:#52666A!important;font-weight:600;font-size:15px;line-height:1.5;max-width:36ch;margin:0 auto}
-#player.az .step.fx-cover .fx-hook{margin-top:var(--air)!important;padding:14px 16px;border:1px solid #DCEBE6!important;border-left:5px solid var(--az1,#1FAE9B)!important;border-radius:18px;background:#fff!important;box-shadow:0 12px 26px -22px rgba(8,60,52,.5)!important;text-align:left}
+#player.az .step.fx-cover .az-ep{background:var(--azl,#E8F6F2)!important;color:var(--azd,#0F6E62)!important;border:0!important;padding:5px 12px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+#player.az .step.fx-cover .az-hero h1{color:#1B2433!important;text-shadow:none!important;font-size:clamp(26px,7vw,36px);line-height:1.1;margin:2px 0 0}
+#player.az .step.fx-cover .az-hero p{color:#566074!important;font-weight:600;font-size:15px;line-height:1.5;max-width:36ch;margin:0 auto}
+#player.az .step.fx-cover .fx-hook{margin-top:var(--air)!important;padding:14px 16px;border:1px solid color-mix(in srgb,var(--az1,#1FAE9B) 22%,#fff)!important;border-left:5px solid var(--az1,#1FAE9B)!important;border-radius:18px;background:#fff!important;box-shadow:0 12px 26px -22px rgba(8,60,52,.5)!important;text-align:left}
 #player.az:has(.step.fx-cover) #pstage,#player.az:has(.step.fx-cover) .stage{background:transparent!important;box-shadow:none!important;padding-inline:0!important}
 #player.az:has(.step.fx-cover) .stage::before,#player.az:has(.step.fx-cover) .stage::after{display:none!important}
 @media (min-width:760px){
@@ -67,13 +67,13 @@
 
 /* ---- G) menos saturação: caixas de enunciado claras (antes: bloco verde-água sólido com texto branco) ---- */
 #player.az .nv-ban{display:none}
-#player.az .fx-en,#player.az .fx-en.has-play,#player.az .sl-hero,#player.az .m2-lpb{background:#EEF8F5!important;color:#12312B!important;border:1px solid #CFE8E1!important;box-shadow:none!important}
+#player.az .fx-en,#player.az .fx-en.has-play,#player.az .sl-hero,#player.az .m2-lpb{background:var(--azl,#EEF8F5)!important;color:#1B2433!important;border:1px solid color-mix(in srgb,var(--az1,#1FAE9B) 28%,#fff)!important;box-shadow:none!important}
 #player.az .fx-en::before,#player.az .fx-en::after,#player.az .sl-hero::before,#player.az .sl-hero::after,#player.az .m2-lpb::before,#player.az .m2-lpb::after{display:none!important}
-#player.az .fx-en *,#player.az .sl-hero *,#player.az .m2-lpb *{color:#12312B!important;text-shadow:none!important}
-#player.az .fx-en small,#player.az .fx-en .fx-en-t>:first-child,#player.az .sl-hero small,#player.az .m2-lpb small{color:#4F7A72!important}
+#player.az .fx-en *,#player.az .sl-hero *,#player.az .m2-lpb *{color:#1B2433!important;text-shadow:none!important}
+#player.az .fx-en small,#player.az .fx-en .fx-en-t>:first-child,#player.az .sl-hero small,#player.az .m2-lpb small{color:var(--azd,var(--azd,#0F6E62))!important}
 #player.az .fx-en .fx-en-t>:first-child:not(small){letter-spacing:.08em}
-#player.az .fx-en .fx-play,#player.az .fx-en .fx-en-ic{background:#fff!important;border:1px solid #CFE8E1!important}
-#player.az .fx-en .fx-play *{color:#0F6E62!important}
+#player.az .fx-en .fx-play,#player.az .fx-en .fx-en-ic{background:#fff!important;border:1px solid color-mix(in srgb,var(--az1,#1FAE9B) 28%,#fff)!important}
+#player.az .fx-en .fx-play *{color:var(--azd,#0F6E62)!important}
 
 /* ---- H) celular: listas de 3 cartões viram carrossel horizontal (some a rolagem vertical, o próximo cartão aparece na borda) ---- */
 @media (max-width:759px){
@@ -85,3 +85,10 @@
   #player.az .nv-clues{gap:8px}
   #player.az .nv-sent{padding:12px 14px}
 }
+
+/* ---- I) identidade por idioma: fundo e tinta neutros que seguem a cor do episódio (antes: tudo verde-água) ---- */
+#player.az{background:linear-gradient(180deg,color-mix(in srgb,var(--az1,#1FAE9B) 4%,#fff) 0%,color-mix(in srgb,var(--az1,#1FAE9B) 11%,#F6F7FB) 100%)!important}
+#player.az .step{color:#1B2433}
+/* variáveis declaradas em :root resolviam --az1 antes de existir (ficavam verdes): recalcula dentro do player */
+#player.az{--m2:var(--az1);--m2d:var(--azd);--m2l:var(--azl)}
+#player.az .fx-tip{background:var(--azl)!important;border:1px solid color-mix(in srgb,var(--az1) 22%,#fff)!important;color:#1B2433!important}
