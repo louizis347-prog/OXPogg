@@ -167,7 +167,7 @@ dict(n=91385, t="La Belgique", s="Conhecer", city="Bruxelles", sc="plaza", rs="d
  recap_slang="septante → setenta"),
 
 dict(n=91386, t="La Suisse", s="Conhecer", city="Genève", sc="plaza", rs="station",
- desc="Os adjetivos de nacionalidade e de descrição concordam com o substantivo: «le train suisse», «les montres suisses» (igual no feminino) e «ponctuel/ponctuelle». Dica: «Suisse» soa como “süis” e o «montre» (relógio de pulso) não tem relação com «mostrar» em português.",
+ desc="Os adjetivos de nacionalidade e de descrição concordam com o substantivo: «le train suisse», «les montres suisses» (igual no feminino) e «ponctuel/ponctuelle». Dica: «Suisse» soa como “süis” e «montre» é o relógio de pulso (o verbo «montrer» é que significa «mostrar»).",
  name="Anaïs", face="👩🏻", emo=["🚆","🏔️","⌚","🏞️"], mission="Hoje você descreve uma viagem de trem pela Suíça.",
  hook="Comment est le train suisse ?|Como é o trem suíço?", goal="Le train traverse les montagnes suisses",
  v=[("lac","lago","Soa como “lac”.","🏞️"),("montre","relógio de pulso","Soa como “mõtr”.","⌚"),("train","trem","Soa como “trã”.","🚆"),("montagne","montanha","Soa como “mõ-TAN-hi”.","🏔️"),("ponctuel","pontual","Soa como “põk-tu-ÉL”.","⏰"),("voyage","viagem","Soa como “vuá-IAJ”.","🧳")],
