@@ -108,3 +108,11 @@
   #player.az .az-two>.az-media{height:min(500px,calc(100dvh - 260px))!important;max-height:none;overflow:hidden;align-self:start;aspect-ratio:auto!important}
   #player.az .az-two>.az-media .az-ill-bk,#player.az .az-two>.az-media svg{height:100%!important;width:100%}
 }
+
+/* ---- L) tela de fechamento: mascote menor e pontuação em uma linha (cabe em 2 partes, sem cortar nada) ---- */
+#player.az .step.done .pgbig{height:112px!important}
+#player.az .step.done .pgbig svg{height:112px!important;max-height:112px;width:auto;margin-inline:auto;display:block}
+#player.az .step.done .row{display:flex!important;flex-wrap:nowrap!important;gap:8px!important}
+#player.az .step.done .row>*{flex:1 1 0;min-width:0;padding:10px 6px}
+#player.az .step.done .row b,#player.az .step.done .row strong{font-size:22px}
+#player .pg-hide,#player.az .step .pg-hide,#player.az .step.done .row.pg-hide{display:none!important}

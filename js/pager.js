@@ -27,6 +27,7 @@ function partTag(){
 function apply(i,anim){
   PG.idx=i;const st=PG.step;if(!st||!PG.pages)return;
   PG.pages.forEach((pg,k)=>pg.forEach(el=>el.classList.toggle('pg-hide',k!==i)));
+  document.querySelectorAll('#pstage .stage>.sc-open, #pstage>.sc-open').forEach(x=>x.classList.toggle('pg-hide',i<PG.pages.length-1));
   partTag();dots();const b=$b();if(b)b.scrollTop=0;
   if(anim)PG.pages[i].forEach(el=>{el.classList.remove('pg-in');void el.offsetWidth;el.classList.add('pg-in')});
   refreshCta();
@@ -34,7 +35,7 @@ function apply(i,anim){
 function refreshCta(){const c=PG.lastCta;if(!window.__pgCta||!c)return;window.__pgCta(c.l,c.en,c.am,true)}
 function reset(){
   const st=PG.step;if(st)[...st.children].forEach(k=>k.classList.remove('pg-hide','pg-in'));
-  PG.pages=null;PG.idx=0;partTag();dots();
+  PG.pages=null;PG.idx=0;partTag();dots();document.querySelectorAll('.sc-open.pg-hide').forEach(x=>x.classList.remove('pg-hide'));
 }
 function paginate(keepIdx,focus){
   const st=document.querySelector('#pstage .step'),b=$b();
@@ -49,6 +50,16 @@ function paginate(keepIdx,focus){
   let i=0;const header=[];while(i<kids.length&&isHeader(kids[i])){header.push(kids[i]);i++}
   const rest=kids.slice(i).filter(k=>k.getBoundingClientRect().height>0&&!k.classList.contains('az-media'));
   if(rest.length<2){PG.pages=null;return}
+  const closing=st.classList.contains('done')||st.classList.contains('m2-wrap')||st.classList.contains('fx-wrap');
+  if(closing&&rest.length>=2){
+    /* tela de fechamento: nunca em pedaços: no máximo 2 partes, divididas de forma equilibrada */
+    document.querySelectorAll('.sc-open.pg-hide').forEach(x=>x.classList.remove('pg-hide'));
+    const hs=rest.map(k=>k.getBoundingClientRect().height+8);const extra=[...document.querySelectorAll('#pstage .sc-open')].reduce((a,x)=>a+x.getBoundingClientRect().height+10,0);let best=1,bv=1e9;
+    for(let c=1;c<rest.length;c++){const a=hs.slice(0,c).reduce((x,y)=>x+y,0),b2=hs.slice(c).reduce((x,y)=>x+y,0);const v=Math.max(a,b2+extra);if(v<bv){bv=v;best=c}}
+    const rc=rest.findIndex(k=>k.classList.contains('recap')||k.classList.contains('m2-bagh2')||k.classList.contains('m2-bag'));if(rc>0)best=rc;  /* celebração e pontuação primeiro; frases e referências depois */
+    PG.pages=[rest.slice(0,best),rest.slice(best)];
+    let idx2=keepIdx?Math.min(PG.idx,1):0;apply(idx2,false);return;
+  }
   rest.forEach(k=>k.classList.add('pg-hide'));
   margin=26;                                          /* espaço para as bolinhas das partes */
   const pages=[];let shown=[];
