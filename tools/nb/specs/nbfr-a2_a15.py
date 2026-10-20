@@ -68,7 +68,7 @@ dict(n=91542, t="Une offre d'emploi", s="Ler", city="Lyon", sc="office", rs="off
  recap_slang="du boulot → trabalho (fam.)"),
 
 dict(n=91543, t="La lettre de motivation", s="Escrever", city="Montréal", sc="office", rs="office",
- desc="A lettre de motivation explica por que você quer a vaga e quais qualidades tem. Fórmulas úteis: «Je suis motivé(e)», «Je suis disponible immédiatement». Dica: «motivé» é só uma palavra (não existe «motivado» com esse hábito de dizer «estou motivado» sem adjetivo); lembre de fazer o feminino: «motivée», «disponible» não muda.",
+ desc="A lettre de motivation explica por que você quer a vaga e quais qualidades tem. Fórmulas úteis: «Je suis motivé(e)», «Je suis disponible immédiatement». Dica: os adjetivos concordam com quem fala: «motivé» (homem), «motivée» (mulher); «disponible» não muda. Em carta, abra com «Madame, Monsieur,» e feche com «Cordialement».",
  name="Chloé", face="👩🏻", emo=["✉️","✍️","⭐","📆"], mission="Hoje você escreve uma carta de motivação curta e clara.",
  hook="Tu as écrit ta lettre de motivation ?|Você escreveu sua carta de motivação?", goal="Je suis motivé et disponible immédiatement",
  v=[("la lettre","a carta","Soa como “la LÉ-tre”.","✉️"),("la motivation","a motivação","Soa como “la mo-ti-va-SIÕ”.","🔥"),("une qualité","uma qualidade","Soa como “ün ka-li-TÊ”.","⭐"),("disponible","disponível","Soa como “dis-po-NI-ble”.","📆"),("immédiatement","imediatamente","Soa como “i-mê-dia-t-MÃ”.","⚡"),("cordialement","cordialmente","Soa como “kor-dial-MÃ”.","🤝")],
