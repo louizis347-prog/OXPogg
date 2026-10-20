@@ -2185,6 +2185,7 @@ function topbar(L){const t=T[L];return `<header class="topbar"><div class="wrap"
   <button class="logo" data-go="home" aria-label="Pogglot, início"><span class="mini">${poggie({scarf:'#0C7A78'})}</span><span>Pogg<b>lot</b></span></button>
   <div class="stats"><span class="chip" title="Sequência"><i style="background:var(--bill)"></i>${ST.streak.n} ${t.streak}</span><span class="chip hide-s" title="Pontos"><i style="background:var(--river)"></i>${ST.xp} XP</span>
   <span class="chip hide-s" title="Livros"><i style="background:#E85D75"></i>${ST.shelf.length}</span>
+  <button class="chip" type="button" onclick="alert('TC')" title="TC">TC</button>
   <button class="chip" data-go="review" title="Revisão espaçada de vocabulário">🔁 ${srsDueCount()||'Revisar'}</button>
   <button class="chip profile-btn" data-go="profile">${t.profileT}</button>
   <div class="langswitch" role="group" aria-label="Idioma da interface"><button data-hl="pt" aria-pressed="${ST.homeLang==='pt'}">PT</button><button data-hl="es" aria-pressed="${ST.homeLang==='es'}">ES</button></div></div>
