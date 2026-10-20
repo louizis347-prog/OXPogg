@@ -27,10 +27,11 @@ function week(){
 }
 function recapHTML(){
   const W=week(),max=Math.max(1,...W.days.map(x=>x.xp)),dn=k('days');
+  /* sem atividade ainda: cartão enxuto, sem gráfico vazio */
+  if(!W.tot.xp)return `<section class="px-recapw empty"><div class="hd"><div><small>${esc(k('wkSub'))}</small><h2>${esc(k('wk'))}</h2></div></div><p class="em">${esc(k('empty'))}</p></section>`;
   return `<section class="px-recapw"><div class="hd"><div><small>${esc(k('wkSub'))}</small><h2>${esc(k('wk'))}</h2></div><button class="sh" data-recap="week" aria-label="${esc(k('share'))}">⤴ ${esc(k('share'))}</button></div>
    <div class="chart">${W.days.map(x=>`<div class="c ${x.today?'t':''}"><i style="height:${Math.max(6,Math.round(x.xp/max*100))}%" title="${x.xp} XP"></i><span>${dn[x.dow]}</span></div>`).join('')}</div>
-   <div class="tots"><div><b data-cu>${W.tot.xp}</b><small>${esc(k('xp'))}</small></div><div><b data-cu>${W.tot.eps}</b><small>${esc(k('eps'))}</small></div><div><b data-cu>${W.tot.ans}</b><small>${esc(k('ans'))}</small></div></div>
-   ${W.tot.xp?'':`<p class="em">${esc(k('empty'))}</p>`}</section>`;
+   <div class="tots"><div><b data-cu>${W.tot.xp}</b><small>${esc(k('xp'))}</small></div><div><b data-cu>${W.tot.eps}</b><small>${esc(k('eps'))}</small></div><div><b data-cu>${W.tot.ans}</b><small>${esc(k('ans'))}</small></div></div></section>`;
 }
 function user(){try{return PogCloud&&PogCloud.user&&PogCloud.user()}catch(e){return null}}
 function cardData(){

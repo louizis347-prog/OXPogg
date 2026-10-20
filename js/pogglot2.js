@@ -269,11 +269,11 @@ window.home=function(){
     ${goal?`<div class="px-goal"><div class="rg">${PogSettings.ringHTML(goal.pct,54,7)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)}/${nf(goal.goal)} XP</b></div></div>`:''}</div>
   </section>
   <section class="px-quick" aria-label="Atalhos">${quick.map(([id,ic,l,bd])=>`<button ${id==='listen'?`data-listen="${ST.lastCourse||''}"`:`data-go="${id}"`}><i>${ic}${bd?`<em>${bd}</em>`:''}</i><span>${E(l)}</span></button>`).join('')}</section>
-  ${window.PogMissions?PogMissions.cardHTML():''}
-  ${window.PogRecap?PogRecap.recapHTML():''}
   <div class="pt-today-slot"></div>
   ${(()=>{try{return srsBanner()||''}catch(e){return ''}})()}
   <section class="px-sec">${sectionHead(t('courses'),t('coursesSub'),`<button class="p2link" data-go="courses">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-langs">${ls.map(langPill).join('')}</div></section>
+  ${window.PogMissions?PogMissions.cardHTML():''}
+  ${window.PogRecap?PogRecap.recapHTML():''}
   <section class="px-sec">${sectionHead(t('howT'))}<div class="px-steps">${steps.map(([ic,i])=>`<div class="st"><span class="n">${i}</span><i>${ic}</i><b>${E(t('h'+i+'t'))}</b><small>${E(t('h'+i+'d'))}</small></div>`).join('')}</div></section>
   <section class="px-sec">${sectionHead(t('cefrT'))}<div class="px-cefr">${lv.map((x,i)=>`<div class="l l${i}"><b>${x}</b><small>${E(t('l'+(i+1)))}</small></div>`).join('')}</div></section>
   ${showA.length?`<section class="px-sec">${sectionHead(t('achHd'),'',`<button class="p2link" data-go="ach">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-achrow">${showA.map(a=>`<div class="a ${got[a.id]?'':'lock'}" style="--p:${got[a.id]?100:Math.min(100,Math.round(a.cur(s)/a.goal*100))}"><span class="rg"><i>${a.ic}</i></span><b>${E(a.n[L])}</b><small>${got[a.id]?'✓':Math.min(a.cur(s),a.goal)+'/'+a.goal}</small></div>`).join('')}</div></section>`:''}`,'home');

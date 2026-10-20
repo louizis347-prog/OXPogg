@@ -1,0 +1,55 @@
+/* Pogglot · home (etapa 2): ordem e densidade. Usa só tokens (--t-*). */
+
+/* ritmo vertical uniforme entre blocos da home */
+.p2.home>section,.p2.home>.pt-today,.p2.home>.srsb{margin-top:var(--t-s5)}
+.p2.home>.px-hero{margin-top:0}
+.p2.home>.px-sec{margin-top:var(--t-s6)}
+.p2.home .pt-today-slot:empty{display:none}
+
+/* atalhos: mais baixos, menos competição com o hero */
+.px-quick button{padding:var(--t-s3) var(--t-s1) var(--t-s2);border-radius:var(--t-r-md);gap:var(--t-s2)}
+.px-quick button i{width:44px;height:44px;border-radius:14px}
+
+/* missões: uma missão à vista, o resto sob demanda */
+.px-mis{padding:var(--t-s4) var(--t-s5);border-radius:var(--t-r-lg)}
+.px-mis .hd{margin-bottom:var(--t-s3);align-items:center}
+.px-mis h2{font-size:var(--t-fs-lg)}
+.px-mis p{font-size:var(--t-fs-sm)}
+.px-mis .more{margin-top:var(--t-s3)}
+.px-mis .more>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;min-height:var(--t-hit);padding:0 var(--t-s3);border-radius:var(--t-r-pill);font-weight:800;font-size:var(--t-fs-sm);color:var(--t-primary);background:var(--t-primary-soft)}
+.px-mis .more>summary::-webkit-details-marker{display:none}
+.px-mis .more>summary::after{content:"";width:8px;height:8px;margin-left:var(--t-s2);border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .15s}
+.px-mis .more[open]>summary::after{transform:rotate(225deg)}
+.px-mis .more>summary .c,.px-mis .more[open]>summary .o{display:none}
+.px-mis .more[open]>summary .c{display:inline}
+.px-mis .more>.rows{margin-top:var(--t-s3)}
+.px-mis .more>.ft{margin-top:var(--t-s3)}
+.px-mis .more>summary:focus-visible{outline:3px solid var(--t-primary);outline-offset:2px}
+
+/* semana: sem gráfico vazio para quem está começando */
+.px-recapw{padding:var(--t-s4) var(--t-s5);border-radius:var(--t-r-lg)}
+.px-recapw.empty{display:flex;align-items:center;justify-content:space-between;gap:var(--t-s4);flex-wrap:wrap}
+.px-recapw.empty .em{margin:0;text-align:left;font-size:var(--t-fs-sm)}
+.px-recapw h2{font-size:var(--t-fs-lg)}
+.px-recapw .chart{height:96px;margin:var(--t-s3) 0 var(--t-s2)}
+
+@media (max-width:640px){
+  .px-mis,.px-recapw{padding:var(--t-s4)}
+  .p2.home>section,.p2.home>.pt-today,.p2.home>.srsb{margin-top:var(--t-s4)}
+  .p2.home>.px-sec{margin-top:var(--t-s5)}
+}
+
+/* tablet (641–820): hero em duas colunas, "Para você hoje" em grade, rótulos sem corte */
+.px-quick button span{white-space:normal;text-align:center;line-height:1.2;overflow:visible;text-overflow:clip}
+@media (min-width:641px) and (max-width:820px){
+  .px-hero{grid-template-columns:1.2fr .8fr!important;padding:var(--t-s6) var(--t-s5)!important;gap:var(--t-s5)!important;border-radius:var(--t-r-lg)!important}
+  .px-hr{order:0!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;gap:var(--t-s3)!important}
+  .px-hr .mascot{min-height:150px!important}.px-hr .mascot .p3pg{width:140px!important}
+  .px-cover{width:170px!important}
+  .px-hero h1{font-size:clamp(28px,4.4vw,36px)!important}
+  .px-hero p{font-size:var(--t-fs-md)!important;-webkit-line-clamp:3!important}
+  .px-acts button{min-height:var(--t-hit)!important}
+  .px-goal small{display:block!important}
+  .pt-today .pt-grid{display:grid;grid-template-columns:repeat(2,1fr);margin:0;padding:2px 0 8px}
+  .pt-today .pt-c{flex:none;max-width:none}
+}
