@@ -2,7 +2,7 @@
 # Neighbors · Espanhol A2 · Arco 34 · Planear un viaje (90731-90739)
 EPS = [
 dict(n=90731, t="Elegir destino", s="Escolher o destino", city="Cádiz", sc="station", rs="station",
- desc="Para escolher um destino, comparamos com «más/menos + adjetivo + que»: «más barato que», «más lejos que». Para opinar, use «prefiero… porque…». Dica: em espanhol «mejor» e «peor» não levam «más» (não existe «más mejor»), e «que» nunca vira «do que» com «de».",
+ desc="Para escolher um destino, comparamos com «más/menos + adjetivo + que»: «más barato que», «más lejos que». Para opinar, use «prefiero… porque…». Dica: em espanhol «mejor» e «peor» não levam «más» (não existe «más mejor»); e «que» corresponde ao «do que» do português.",
  name="Carmen", face="👩🏽", emo=["🧭","🏖️","🚆","💶"], mission="Hoje você compara dois destinos e decide aonde viajar.",
  hook="¿Adónde vamos de viaje este fin de semana?|Aonde vamos viajar neste fim de semana?", goal="Prefiero la playa porque es más barata",
  v=[("destino","destino","Soa como “des-TI-no”.","📍"),("más barato","mais barato","Soa como “mas ba-RÁ-to”.","💶"),("lejos","longe","Soa como “LÊ-rros”, com o j como um R forte.","🗺️"),("clima","clima","Soa como “CLI-ma”.","🌤️"),("playa","praia","Soa como “PLA-ia”.","🏖️"),("elegir","escolher","Soa como “e-le-RRIR”, com o g como R forte.","✅")],
@@ -167,7 +167,7 @@ dict(n=90735, t="El plan del domingo", s="Planejar o terceiro dia", city="Cádiz
  recap_slang="un crack → um craque, o máximo"),
 
 dict(n=90736, t="Preparar la maleta", s="Fazer a mala", city="Cádiz", sc="station", rs="bedroom",
- desc="Para listar o que levar, use «hay que + infinitivo» e «hay que llevar + substantivo»: «hay que llevar el cargador». É uma obrigação geral e impessoal. Dica: «maleta» é a mala de viagem; «maletín» é a pasta. E «documento» (DNI, pasaporte) nunca se escreve com «u».",
+ desc="Para listar o que levar, use «hay que + infinitivo» e «hay que llevar + substantivo»: «hay que llevar el cargador». É uma obrigação geral e impessoal. Dica: «maleta» é a mala de viagem; «maletín» é a pasta. E o «DNI» é o documento de identidade espanhol, parecido com o RG.",
  name="Javier", face="👨🏻", emo=["🧳","🔌","☂️","🪪"], mission="Hoje você faz a lista do que levar na mala.",
  hook="¿Ya has hecho la maleta para Cartagena?|Você já fez a mala para Cartagena?", goal="Hay que llevar ropa de abrigo y paraguas",
  v=[("maleta","mala","Soa como “ma-LÊ-ta”.","🧳"),("ropa","roupa","Soa como “RRÔ-pa”.","👕"),("cargador","carregador","Soa como “car-ga-DÔR”.","🔌"),("documento","documento","Soa como “do-cu-MÊN-to”.","🪪"),("paraguas","guarda-chuva","Soa como “pa-RÁ-guas”.","☂️"),("bañador","roupa de banho","Soa como “ba-nha-DÔR”.","🩳")],
