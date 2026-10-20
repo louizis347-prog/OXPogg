@@ -64,7 +64,7 @@ const css=document.createElement('style');css.textContent=`
 .cu2-art{border-radius:22px;overflow:hidden;box-shadow:0 12px 24px -14px rgba(20,40,80,.5);margin:6px 0;max-height:150px}
 .cu2-art svg{display:block;width:100%;height:150px;object-fit:cover}
 .cu2-work{display:flex;gap:8px;align-items:center;margin:8px 0 2px;font:900 19px/1.2 system-ui;color:#25203f}
-.cu2-work small{font:700 12px system-ui;color:#0b5f5d;background:#e3f4f3;border-radius:99px;padding:3px 10px}
+.cu2-work{flex-wrap:wrap;row-gap:6px}.cu2-work span{min-width:0;flex:1 1 55%}.cu2-work small{white-space:nowrap;flex:none;font:700 12px system-ui;color:#0b5f5d;background:#e3f4f3;border-radius:99px;padding:3px 10px}
 .cu2-fact{margin:8px 0;padding:12px 14px;border-radius:16px;background:linear-gradient(135deg,#fff7e0,#fff);border:2px solid #ffd978;color:#7a5200;font:600 15px/1.4 system-ui}
 .cu2-q{font:800 18px/1.3 system-ui;color:#25203f;margin:10px 0 6px}
 .rp{padding-bottom:12px}
@@ -201,10 +201,10 @@ FXR.culttl=function(f,st,n){
     let need=0,miss=0,done=false;
     const order=W.map((w,i)=>({w,i})).sort((a,b)=>a.w.y-b.w.y).map(o=>o.i);
     st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${W.every(w=>w.d)?'':art+fact}<div class="cg-q">Linha do tempo: toque da obra mais ANTIGA para a mais NOVA <small>(ano da 1ª publicação ou estreia)</small>.</div>
-    ${fxShuffle(W.map((w,i)=>({w,i}))).map(o=>`<button type="button" class="cg-c" data-i="${o.i}"><b>${H(o.w.k)}</b> ${H(o.w.n)}<span class="cg-yr">· ${o.w.y}</span><i></i></button>`).join('')}<div id="fb"></div></div>`;
+    ${fxShuffle(W.map((w,i)=>({w,i}))).map(o=>`<button type="button" class="cg-c" data-i="${o.i}"><b>${H(o.w.k)}</b> ${H(o.w.n)}<span class="cg-yr">· ${o.w.y<0?(-o.w.y)+' a.C.':o.w.y}</span><i></i></button>`).join('')}<div id="fb"></div></div>`;
     P.fx.cta=null;cta('Toque na ordem do tempo',false);
     st.querySelectorAll('.cg-c').forEach(b=>b.onclick=()=>{if(b.classList.contains('pick')||done)return;const i=+b.dataset.i;
-      if(i===order[need]){b.classList.add('pick','rev');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
+      if(W[i].y===W[order[need]].y){b.classList.add('pick','rev');b.querySelector('i').textContent=need+1;need++;try{sfx('pop')}catch(e){}
         if(need>=W.length){done=true;st.querySelectorAll('.cg-c').forEach(x=>x.classList.add('rev'));P.streak=miss?0:(P.streak||0)+1;if(!miss)P.score++;fxGrade(!miss,'As datas apareceram: confira a ordem.',null);P.fx.done=true;cta(P.t.cont,true,true)}}
       else{miss++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450);P.streak=0;try{sfx('oops')}catch(e){}}});
     say(f.say||'Qual obra veio primeiro? Monte a linha do tempo!')};
@@ -227,11 +227,11 @@ FXR.cultcena=function(f,st,n){
       let body='';
       if(mode==='page')body=`<div class="cc-page"><div class="cc-pg-t">${H(f.work)}</div>${L.map((l,i)=>`<button type="button" class="cc-l" data-i="${i}"><span class="cc-en">${hl(l[0])}</span><span class="cc-pt">${H(l[1])}</span></button>`).join('')}<div class="cc-src">${H(f.src||'')}${f.by?'':''}</div></div>`;
       else if(mode==='quote')body=`<div class="cc-film"><div class="cc-fh">${H(f.work)}</div>${L.map((l,i)=>`<button type="button" class="cc-l" data-i="${i}">${l[2]?`<b class="cc-who">${H(l[2])}</b>`:''}<span class="cc-en">“${hl(l[0])}”</span><span class="cc-pt">${H(l[1])}</span></button>`).join('')}<div class="cc-src">${H(f.src||'')}</div></div>`;
-      else body=`<div class="cc-film cc-sc"><div class="cc-fh">${H(f.work)}</div><div class="cc-src">${H(f.src||'A cena')}</div></div>`;
+      else body='';
       st.innerHTML=`<div class="step fx cu2 cc">${head}<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>${body}
+      ${L.length?'<div class="cx-st">Toque numa fala para ouvir e ver a tradução</div>':''}
       ${f.ctx?`<div class="cc-ctx"><b>${mode==='page'?'Contexto':'A cena'}</b> ${mk(f.ctx)}</div>`:''}
-      ${f.link?`<div class="rdg-rule"><span>🔗</span><span>${mk(f.link)}</span></div>`:''}
-      ${L.length?'<div class="cx-st">Toque numa fala para ouvir e ver a tradução</div>':''}</div>`;
+      ${f.link?`<div class="rdg-rule"><span>🔗</span><span>${mk(f.link)}</span></div>`:''}</div>`;
       st.querySelectorAll('.cc-l').forEach(b=>b.onclick=()=>{b.classList.toggle('on');try{sfx('pop')}catch(e){}say2(L[+b.dataset.i][0])});
       P.fx.cta=()=>{if(Q){phase=1;view();return true}return false};cta(Q?'Entendi — uma pergunta ▶':P.t.cont,true,true);
       say(L.length?L[0][0]:(f.say||'Veja a cena da obra!'));

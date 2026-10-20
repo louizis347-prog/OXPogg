@@ -22,7 +22,8 @@ for f in sorted(glob.glob('data/%s_*.json'%cid)):
                     if t.get('l')=='Ligação com a lição': link=t.get('t');cx['tiles'].remove(t)
                     elif t.get('en') and c['mode']!='scene': cx['tiles'].remove(t)  # a fala agora tem quadro próprio
             fc={'k':'cultcena','title':'Cena da obra','work':ob['work'],'tag':(cx or {}).get('tag') or (ob['chips'][0] if ob.get('chips') else ''),
-                'mode':c['mode'],'src':c.get('src',''),'ctx':c['ctx'],'lines':c.get('lines',[]),'hl':c.get('hl',[]),'q':w['q']}
+                'mode':c['mode'],'src':c.get('src',''),'ctx':c['ctx'],'lines':c.get('lines',[]),'hl':c.get('hl',[])}
+            if w.get('q'): fc['q']=w['q']
             if link: fc['link']=link
             if ob.get('pa'): fc['pa']=ob['pa']
             i=fr.index(cx)+1 if cx else fr.index(ob)+1
