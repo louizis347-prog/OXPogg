@@ -4,7 +4,7 @@ const AZ=window.AZ={
   on(e){return !!e&&Array.isArray(e.fr)},
   first(e){return !!e&&(e.th==='az'||(e.n>=9801&&e.n<=9810)||(e.n>=30001&&e.n<=30010))},
   STAGES:[['capa','Capa'],['obra','Obra'],['ponte','Ponte'],['pratica','Prática'],['fim','Fechamento']],
-  stageOf(k,e){if(e&&e.mdl===2)return k==='cover'||k==='review'?0:k==='read'?1:k==='wrap'?4:/^(words|wsent|verbs|vplay|pat|scene|dquiz|xpr|grammar)$/.test(k)?2:3;return k==='cover'?((e&&e.fr&&e.fr.findIndex(f=>f.k==='cover')>0)?2:0):(k==='cult1'||k==='cwords'||k==='cquiz')?1:k==='bridge'?2:k==='wrap'?4:3},
+  stageOf(k,e){if(k==='hook')return AZ.stageOf('cover',e);if(e&&e.mdl===2)return k==='cover'||k==='review'?0:k==='read'?1:k==='wrap'?4:/^(words|wsent|verbs|vplay|pat|scene|dquiz|xpr|grammar)$/.test(k)?2:3;return k==='cover'?((e&&e.fr&&e.fr.findIndex(f=>f.k==='cover')>0)?2:0):(k==='cult1'||k==='cwords'||k==='cquiz')?1:k==='bridge'?2:k==='wrap'?4:3},
   TYPE:{regular:'Regular',extra:'Extra',revisao:'Revisão',teste:'Teste'}
 };
 /* esqueleto: capa primeiro, ponte entre obra e lição */

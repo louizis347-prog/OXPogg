@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_KIND.cultcena='story';FX_LABEL.cultcena='Cena da obra';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_KIND.hook='story';FX_LABEL.hook='Frase do dia';FX_KIND.cultcena='story';FX_LABEL.cultcena='Cena da obra';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -48,6 +48,11 @@ const css=document.createElement('style');css.textContent=`
 .cc-l mark{background:#bfeee9;color:inherit;border-radius:4px;padding:0 2px}.cc-film mark{background:rgba(127,224,216,.3);color:#fff}
 .cc-src{margin-top:8px;font:600 12px system-ui;color:#a58b5a}.cc-film .cc-src{color:#b9b1e8}
 .cc-ctx{margin:10px 0;padding:11px 14px;border-radius:14px;background:#f1eefc;color:#3b3558;font:500 15px/1.45 system-ui}.cc-ctx b{color:#5a3fc0;margin-right:4px}
+.hk-card{display:flex!important;align-items:center;gap:14px;padding:18px 18px!important;margin:6px 0 4px;text-align:left}
+.hk-card b{display:block;font:800 clamp(20px,5.6vw,26px)/1.3 system-ui}.hk-card em{display:block;margin-top:6px;font:500 15px/1.4 system-ui;font-style:normal;color:#6b6591}.hk-card small{display:block;font:700 12px system-ui;color:#8a82ad;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.hk-today{margin:var(--air,14px) 0;padding:12px 14px;border-radius:14px;background:var(--azl,#EEF8F5);display:flex;flex-direction:column;gap:2px;color:#1B2433;font:500 15px/1.45 system-ui}.hk-today b{font:800 11px system-ui;letter-spacing:.1em;text-transform:uppercase;color:var(--azd,#0F6E62)}
+.cc-read{margin:var(--air,14px) 0;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid color-mix(in srgb,var(--az1,#1FAE9B) 22%,#fff);box-shadow:0 10px 22px -18px rgba(20,30,70,.5)}.cc-read b{display:block;margin-bottom:6px;font:800 11px system-ui;letter-spacing:.1em;text-transform:uppercase;color:var(--azd,#0F6E62)}.cc-read p{margin:0 0 8px;font:500 15.5px/1.6 Georgia,'Times New Roman',serif;color:#2a2438}.cc-read p:last-child{margin:0}.cc-read2{margin-top:0;border-top:0;border-radius:16px}
+.cb-facts{margin:var(--air,14px) 0;padding:12px 14px;border-radius:14px;background:var(--azl,#EEF8F5);color:#1B2433}.cb-facts b{display:block;margin-bottom:4px;font:800 11px system-ui;letter-spacing:.1em;text-transform:uppercase;color:var(--azd,#0F6E62)}.cb-facts p{margin:0 0 6px;font:500 14.5px/1.5 system-ui;padding-left:14px;position:relative}.cb-facts p::before{content:'•';position:absolute;left:2px;color:var(--az1,#1FAE9B)}.cb-facts p:last-child{margin:0}
 .tl-ctx{display:flex;flex-direction:column;gap:4px;margin:var(--air,14px) 0;padding:12px 14px;border-radius:14px;background:var(--azl,#EEF8F5);border:1px solid color-mix(in srgb,var(--az1,#1FAE9B) 28%,#fff);color:#1B2433;font:500 15px/1.5 system-ui}.tl-ctx b{font:800 11px system-ui;letter-spacing:.1em;text-transform:uppercase;color:var(--azd,#0F6E62)}
 .tl-ex{display:grid;gap:10px;margin:var(--air,14px) 0 4px}.tl-e{display:block;width:100%;text-align:left;border:1px solid #E4E0F5;border-radius:14px;background:#fff;padding:10px 14px;cursor:pointer;min-height:48px;box-shadow:0 6px 14px -12px rgba(40,30,90,.5)}
 .tl-en{display:block;font:700 16px/1.4 system-ui;color:#25203f}.tl-en mark{background:#bfeee9;color:inherit;border-radius:4px;padding:0 2px}.tl-pt{display:block;margin-top:2px;font:500 13.5px/1.4 system-ui;color:#6b6591}
@@ -157,7 +162,8 @@ FXR.cultob=function(f,st,n){
   st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${art}
   <div class="cu2-work"><span>${H(f.work)}</span></div><div class="cb-chips">${(f.chips||[]).map(c=>`<span>${H(c)}</span>`).join('')}</div>
   ${f.hook?`<div class="cb-hook">${mk(f.hook)}</div>`:''}
-  ${(f.panels||[]).map((t,i)=>`<div class="cb-p" style="animation-delay:${i*120}ms"><b>${i+1}</b><span>${mk(t)}</span></div>`).join('')}</div>`;
+  ${(f.panels||[]).map((t,i)=>`<div class="cb-p" style="animation-delay:${i*120}ms"><b>${i+1}</b><span>${mk(t)}</span></div>`).join('')}
+  ${(f.facts||[]).length?`<div class="cb-facts"><b>Você sabia?</b>${f.facts.map(x=>`<p>${mk(x)}</p>`).join('')}</div>`:''}</div>`;
   cta(P.t.cont,true,true);say(f.say||'Conheça a obra de hoje!')};
 FXR.cultgame=function(f,st,n){
   const R=f.rounds;let ri=0,hits=0;P.fx.done=false;P.fx.cta=null;
@@ -234,6 +240,26 @@ FXR.culttl=function(f,st,n){
     st.innerHTML=`<div class="step fx cu2">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title)}</h2>${info()}</div>`;bindEx();
     P.fx.cta=()=>{describe?intro():game();return true};cta(describe?'Conhecer as obras ▶':'Montar a linha do tempo ▶',true,true);say(f.say||'Veja onde isso aparece de verdade!');return}
   describe?intro():game()};
+
+/* ---------- capa em 2 quadros: 1) capa (cena + título) · 2) "Frase do dia" (gancho + contexto) ---------- */
+window.pogSplitCover=function(arr){
+  (arr||[]).forEach(e=>{
+    const fr=e&&e.fr;if(!fr||fr.some(f=>f.k==='hook'))return;
+    const i=fr.findIndex(f=>f.k==='cover');if(i<0)return;const c=fr[i];if(!c.hook)return;
+    const h={k:'hook',hook:c.hook,say:c.say,sub:c.sub,badge:c.badge,cul:c.cul,chips:c.chips};
+    fr.splice(i+1,0,h);delete c.hook;delete c.cul;
+  })};
+FXR.hook=function(f,st,n){
+  P.fx.done=false;P.fx.cta=null;
+  const e=P.e;
+  st.innerHTML=`<div class="step fx hk">${fxKindBar(f,n)}<h2 class="fx-h">Frase do dia</h2>
+  <button type="button" class="fx-hook hk-card" id="fxh"><span class="say2">${spk}</span><div><small>Toque para ouvir</small><b>“${H(f.hook[0])}”</b><em>${H(f.hook[1])}</em></div></button>
+  <div class="hk-today"><b>Hoje no episódio</b><span>${H(e.t)}${f.sub?' — '+H(f.sub):''}</span></div>
+  ${(f.chips||[]).length?`<div class="fx-chips">${f.chips.map(c=>`<span class="badge-pill">${H(c)}</span>`).join('')}</div>`:''}
+  ${typeof fxCul==='function'?fxCul(f):''}</div>`;
+  const b=q('#fxh',st);if(b)b.onclick=()=>{try{fxSay(f.hook[0])}catch(x){}};
+  cta('Vamos lá!',true,true);say(f.say||'Bora começar?');
+  setTimeout(()=>{try{fxSay(f.hook[0])}catch(x){}},500)};
 /* ---------- "Cena da obra": trecho real (domínio público) ou fala curta + cena contada, com ligação direta à lição ---------- */
 FXR.cultcena=function(f,st,n){
   const L=f.lines||[],mode=f.mode||'scene',Q=f.q;let phase=0;P.fx.done=false;P.fx.cta=null;
@@ -246,7 +272,8 @@ FXR.cultcena=function(f,st,n){
       if(mode==='page')body=`<div class="cc-page"><div class="cc-pg-t">${H(f.work)}</div>${L.map((l,i)=>`<button type="button" class="cc-l" data-i="${i}"><span class="cc-en">${hl(l[0])}</span><span class="cc-pt">${H(l[1])}</span></button>`).join('')}<div class="cc-src">${H(f.src||'')}${f.by?'':''}</div></div>`;
       else if(mode==='quote')body=`<div class="cc-film"><div class="cc-fh">${H(f.work)}</div>${L.map((l,i)=>`<button type="button" class="cc-l" data-i="${i}">${l[2]?`<b class="cc-who">${H(l[2])}</b>`:''}<span class="cc-en">“${hl(l[0])}”</span><span class="cc-pt">${H(l[1])}</span></button>`).join('')}<div class="cc-src">${H(f.src||'')}</div></div>`;
       else body='';
-      st.innerHTML=`<div class="step fx cu2 cc">${head}<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>${body}
+      const rd=(f.leitura||[]).map((t,i)=>`<div class="cc-read${i?' cc-read2':''}">${i?'':'<b>Sobre a obra</b>'}<p>${mk(t)}</p></div>`).join('');
+      st.innerHTML=`<div class="step fx cu2 cc">${head}<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>${rd}${body}
       ${L.length?'<div class="cx-st">Toque numa fala para ouvir e ver a tradução</div>':''}
       ${f.ctx?`<div class="cc-ctx"><b>${mode==='page'?'Contexto':'A cena'}</b> ${mk(f.ctx)}</div>`:''}
       ${f.link?`<div class="rdg-rule"><span>🔗</span><span>${mk(f.link)}</span></div>`:''}</div>`;

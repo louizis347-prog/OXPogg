@@ -30,6 +30,7 @@ function apply(i,anim){
   document.querySelectorAll('#pstage .stage>.sc-open, #pstage>.sc-open').forEach(x=>x.classList.toggle('pg-hide',i<PG.pages.length-1));
   partTag();dots();const b=$b();if(b)b.scrollTop=0;
   if(anim)PG.pages[i].forEach(el=>{el.classList.remove('pg-in');void el.offsetWidth;el.classList.add('pg-in')});
+  if(anim&&window.POG_LIFE)POG_LIFE.turn();
   refreshCta();
 }
 function refreshCta(){const c=PG.lastCta;if(!window.__pgCta||!c)return;window.__pgCta(c.l,c.en,c.am,true);if(PG.pages&&window.FOOT){FOOT.off=true;FOOT.upd()}}

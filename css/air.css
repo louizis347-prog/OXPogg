@@ -123,3 +123,56 @@
 #player.az .step.pg-compact .fx-recap *{font-size:13.5px!important;line-height:1.3!important}
 #player.az .step.pg-compact .fx-recap button{min-height:0!important}
 #player.az .step.pg-compact .fx-next{padding:10px 12px!important}
+
+/* ---- N) Poggie de volta ao rodapé, com balão flutuante (aparece quando ele fala e some sozinho) ---- */
+#player.az .p-foot{position:relative}
+#player.az .pog-dock{display:block!important;flex:0 0 auto;width:54px;height:54px;margin:-16px 0 -4px;cursor:pointer;filter:drop-shadow(0 6px 8px rgba(30,40,80,.25));transition:transform .18s}
+#player.az .pog-dock:active{transform:scale(.92)}
+#player.az .p-foot .bubble{display:block!important;position:absolute;left:12px;right:12px;bottom:calc(100% + 4px);max-width:min(440px,calc(100% - 24px));min-height:0;max-height:none;overflow:visible;margin:0;padding:10px 14px;border-radius:16px 16px 16px 4px;background:#fff;color:#1B2433;font:700 14.5px/1.35 var(--f-ui,system-ui);box-shadow:0 12px 26px -14px rgba(20,30,70,.5),0 0 0 1.5px color-mix(in srgb,var(--az1,#1FAE9B) 30%,#fff);opacity:0;transform:translateY(8px) scale(.97);pointer-events:none;transition:opacity .22s,transform .22s;z-index:6}
+#player.az .p-foot .bubble.p2on{opacity:1;transform:none}
+#player.az .p-foot .bubble:empty{display:none!important}
+@media (min-width:1000px){#player.az .p-foot .bubble{left:max(12px,calc(50% - 560px + 70px));right:auto;max-width:420px}}
+
+/* ---- O) Monte a cena / Sua vez / Situação: enquadrar melhor, caber em UM quadro e continuar respirando ---- */
+@media (max-width:759px){
+  /* Monte a cena */
+  #player.az .step.nv-sb{gap:0}
+  #player.az .step.nv-sb .fx-en{padding:8px 12px!important;gap:10px!important;min-height:0!important}
+  #player.az .step.nv-sb .fx-en-ic{width:38px!important;height:38px!important;font-size:20px!important}
+  #player.az .step.nv-sb .fx-en-t{font-size:14px!important;line-height:1.35!important}
+  #player.az .step.nv-sb .nv-bar{margin-top:10px!important}
+  #player.az .step.nv-sb .nv-tiles:first-of-type .nv-tile{height:112px!important;min-height:0!important}
+  #player.az .step.nv-sb .nv-tiles .nv-spot{height:68px!important;min-height:0!important}
+  #player.az .step.nv-sb .nv-tiles{gap:10px!important}
+  /* Sua vez */
+  #player.az .step.sv2>.m2-ill{display:none!important}
+  #player.az .step.sv2 .rw-sit{padding:12px 14px!important;gap:10px!important}
+  #player.az .step.sv2 .rw-sit-ic{display:none!important}
+  #player.az .step.sv2 .rw-sit *{font-size:15px;line-height:1.45}
+  #player.az .step.sv2 .yt-game{padding:4px 8px!important}
+  #player.az .step.sv2 .yt-msg{margin:2px 0!important;font-size:13.5px}
+  #player.az .step.sv2>*+*{margin-top:12px!important}
+  /* Situação: a ilustração grande sai no celular (o ícone da situação fica no cabeçalho); o resto respira em um quadro só */
+  #player.az .step.m2-sit .m2-ill{display:none!important}
+  #player.az .step.m2-sit .m2-sith{padding:10px 12px!important;margin-bottom:0!important}
+  #player.az .step.m2-sit>*+*{margin-top:14px!important}
+  /* Sua vez: metas em linha, trilha e botões mais baixos */
+  #player.az .step.sv2 .rw-goals{display:flex!important;flex-direction:row!important;flex-wrap:wrap;gap:6px!important;padding:0!important;margin:0!important;list-style:none}
+  #player.az .step.sv2 .rw-goals li{width:auto!important;flex:0 0 auto!important;padding:4px 10px!important;border-radius:99px;font-size:12.5px!important;line-height:1.3}
+  #player.az .step.sv2 .yt-track{height:40px!important}
+  #player.az .step.sv2 .rw-sit{padding:10px 14px!important}
+  #player.az .step.sv2 .sv-acts{padding:0!important;margin-top:10px!important}
+}
+@media (max-width:759px){
+  /* Sua vez: as metas já estão destacadas na missão e acendem as estrelas — a lista repetida sai do celular */
+  #player.az .step.sv2>.rw-goals{display:none!important}
+  #player.az .step.sv2 .yt-msg{display:none!important}
+  #player.az .step.sv2 .yt-game{padding:2px 8px!important}
+  #player.az .step.sv2 .rw-bar{margin:0!important}
+  #player.az .step.sv2 .sv-acts{margin-top:8px!important;min-height:0!important;gap:8px}
+  #player.az .step.sv2 textarea{min-height:88px!important}
+}
+@media (max-width:759px){
+  #player.az .step.sv2{gap:10px!important}
+  #player.az .step.sv2>*+*{margin-top:0!important}
+}

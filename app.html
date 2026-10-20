@@ -792,7 +792,7 @@ body{padding-bottom:68px}
 <link rel="stylesheet" href="css/novos.css">
 
 <link rel="stylesheet" href="css/pogglot2.css">
-<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=2"><link rel="stylesheet" href="css/exam-modern.css?v=1"><link rel="stylesheet" href="css/steps-modern.css?v=1"><link rel="stylesheet" href="css/lean.css?v=5"><link rel="stylesheet" href="css/sidenav.css?v=5"><link rel="stylesheet" href="css/tokens.css?v=1"><link rel="stylesheet" href="css/home2.css?v=3"><link rel="stylesheet" href="css/community3.css?v=4"><link rel="stylesheet" href="css/suavez.css?v=5"><link rel="stylesheet" href="css/desk.css?v=8"><link rel="stylesheet" href="css/air.css?v=17">
+<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=2"><link rel="stylesheet" href="css/exam-modern.css?v=1"><link rel="stylesheet" href="css/steps-modern.css?v=1"><link rel="stylesheet" href="css/lean.css?v=5"><link rel="stylesheet" href="css/sidenav.css?v=5"><link rel="stylesheet" href="css/tokens.css?v=1"><link rel="stylesheet" href="css/home2.css?v=3"><link rel="stylesheet" href="css/community3.css?v=4"><link rel="stylesheet" href="css/suavez.css?v=5"><link rel="stylesheet" href="css/desk.css?v=8"><link rel="stylesheet" href="css/air.css?v=25">
 <script>window.PogUIReady=new Promise(function(r){window.__pgres=r});setTimeout(function(){window.__pgres()},5000)</script>
 <canvas id="confetti"></canvas>
 <div id="app"></div>
@@ -1516,6 +1516,7 @@ async function ensureLangLoaded(lang){
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
+    try{if(window.pogSplitCover)pogSplitCover(arr2)}catch(e){console.warn('splitCover',e)}
     EP[lang]=arr2;
   })();
   try{await EP_LOADING[lang];}finally{delete EP_LOADING[lang];}
@@ -3570,9 +3571,9 @@ const FXR={
 cover(f,st,n){const e=P.e;
   st.innerHTML=`<div class="step fx fx-cover">${fxKindBar(f,n)}<div class="fx-hero">${fxArt(f.art,.62)}</div>
   <div class="fx-titleblock"><span class="fx-ep">EP ${(P.e&&P.e.en)||P.idx+1} · ${esc(f.badge||'A1')}</span><h1>${esc(e.t)}</h1><p>${esc(f.sub||'')}</p></div>
-  <button class="fx-hook" id="fxh"><span class="say2">${spk}</span><div><small>Frase do dia · toque para ouvir</small><b>“${esc(f.hook[0])}”</b><em>${esc(f.hook[1])}</em></div></button>
-  <div class="fx-chips">${(f.chips||[]).map(c=>`<span class="badge-pill">${esc(c)}</span>`).join('')}</div>${fxCul(f)}</div>`;
-  $('#fxh').onclick=()=>fxSay(f.hook[0]);sfx(f.snd||'bell');say(f.say||'Bora começar?');cta('Começar o episódio',true,true)},
+  ${f.hook?`<button class="fx-hook" id="fxh"><span class="say2">${spk}</span><div><small>Frase do dia · toque para ouvir</small><b>“${esc(f.hook[0])}”</b><em>${esc(f.hook[1])}</em></div></button>`:''}
+  <div class="fx-chips">${(f.chips||[]).map(c=>`<span class="badge-pill">${esc(c)}</span>`).join('')}</div>${f.hook?'':fxCul(f)}</div>`;
+  if(f.hook)$('#fxh').onclick=()=>fxSay(f.hook[0]);sfx(f.snd||'bell');say(f.say||'Bora começar?');cta('Começar o episódio',true,true)},
 scene(f,st,n){const cast=f.cast||{};const names=Object.keys(cast).slice(0,2);let shown=0;
   st.innerHTML=`<div class="step fx">${fxKindBar(f,n)}<div class="fx-stagewrap">${fxArt(f.art,.48)}<div class="fx-cast">${names.map((nm,i)=>`<div class="fx-av ${i?'r':'l'}" data-n="${esc(nm)}"><span>${cast[nm][0]}</span></div>`).join('')}</div></div>${f.full?`<div class="fx-hearrow"><button class="fx-hear" id="fxfull" type="button"><span class="say2">🗣️</span><div><b>Ouvir natural</b><small>${f.full.length} falas · o mesmo áudio da prática</small></div></button><button class="fx-hear" id="fxfslow" type="button"><span class="say2">🐢</span><div><b>Ouvir devagar</b><small>velocidade de tartaruga</small></div></button></div>`:''}<div class="fx-lines" id="fxl"></div>${fxCul(f)}</div>`;
   let dlg=null,mode='';const box=$('#fxl');
@@ -4447,7 +4448,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/nb.js"></script>
 <script src="js/kana.js"></script>
 <script src="js/nbtrip.js"></script>
-<script src="js/pogglot2.js"></script><script src="js/exams.js"></script><script src="js/exam-modern.js"></script><script src="js/write.js"></script><script src="js/kanji.js"></script><script src="js/dict.js"></script><script src="js/art.js"></script><script src="js/acc.js"></script><script src="js/lat.js"></script><script src="js/lean.js"></script><script src="js/sidenav.js?v=1"></script><script src="js/sync.js"></script><script src="js/social.js"></script><script src="js/pron.js"></script><script src="js/vocab.js"></script><script src="js/romaji.js"></script><script src="js/review.js"></script><link rel="stylesheet" href="css/social.css">
+<script src="js/pogglot2.js"></script><script src="js/exams.js"></script><script src="js/exam-modern.js"></script><script src="js/write.js"></script><script src="js/kanji.js"></script><script src="js/dict.js"></script><script src="js/art.js"></script><script src="js/acc.js"></script><script src="js/lat.js?v=3"></script><script src="js/lean.js"></script><script src="js/sidenav.js?v=1"></script><script src="js/sync.js"></script><script src="js/social.js"></script><script src="js/pron.js"></script><script src="js/vocab.js"></script><script src="js/romaji.js"></script><script src="js/review.js"></script><link rel="stylesheet" href="css/social.css">
 <script>window.__pgres()</script>
 <button id="pgDl" type="button" hidden style="display:none;margin:0 0 4px;padding:8px 14px;border:0;border-radius:999px;background:#7C4DFF;color:#fff;font:700 13px system-ui,sans-serif;box-shadow:0 6px 18px rgba(51,36,82,.35);cursor:pointer;grid-column:1/-1;justify-self:start;order:-1;position:relative;z-index:5">⬇ Baixar Pogglot (.zip)</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -4492,5 +4493,6 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 
 <style id="pgchat-fit">@media(max-width:820px){.pg-chat.in-conv{height:calc(100vh - 150px);height:calc(100dvh - 150px);min-height:340px;scroll-margin-top:62px}.pg-chat.in-conv .pg-conv{height:100%}.pg-compose{padding-bottom:12px}}</style>
 <script>(function(){var f=function(){document.querySelectorAll('.pg-chat').forEach(function(c){if(c.classList.contains('in-conv')){if(!c._fit){c._fit=1;setTimeout(function(){try{c.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){}var m=c.querySelector('.pg-msgs');if(m)m.scrollTop=m.scrollHeight},80)}}else c._fit=0})};try{new MutationObserver(f).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class'],childList:true})}catch(e){}})();</script>
-<script src="js/pager.js?v=10"></script>
+<script src="js/pager.js?v=11"></script>
+<script src="js/life.js?v=2"></script>
 </body></html>
