@@ -150,8 +150,7 @@
   #player .step.clf-done .recap p,#player .step.clf-done .mission-report p{font-size:12px;margin-top:6px!important}
   #player .step.clf-done .recap .badge-strip,#player .step.clf-done .mission-report .badge-strip{margin-top:6px!important}
   #player #pstage:has(>.step.clf){gap:6px;justify-content:center}
-  #player #pstage:has(>.step.clf)>.sc-open{flex:0 0 auto;width:44px;height:44px;min-height:0;padding:0!important;border-radius:50%;font-size:0!important;display:inline-grid!important;place-items:center;overflow:hidden}
-  #player #pstage:has(>.step.clf)>.sc-open::first-letter{font-size:20px}
+  #player #pstage:has(>.step.clf)>.sc-open{flex:0 0 auto;width:44px;height:44px;min-height:0;padding:0 0 0 11px!important;border-radius:50%;font-size:20px!important;line-height:44px!important;text-align:left;white-space:nowrap;overflow:hidden;display:inline-block!important;letter-spacing:40px}
   #player .step.clf .m2-fin{padding:8px}
   #player .step.clf .fx-rc{padding:6px 8px!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-areas:"b s" "t s"!important;column-gap:8px!important}
   #player .step.clf .fx-rc .wr-n{display:none!important}
