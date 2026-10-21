@@ -7,8 +7,8 @@
 if(window.POG_NBOPEN===false)return;
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
 FX_KIND.nbopen1='story';FX_KIND.nbopen2='story';FX_KIND.nbopen3='practice';FX_KIND.nbscene='story';FX_KIND.nbreply='speak';FX_KIND.nbreview='practice';FX_KIND.nbchoice='practice';FX_KIND.nbprag='story';
-FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';FX_LABEL.nbscene='Fio da história';FX_LABEL.nbreply='Sua vez';FX_LABEL.nbreview='Revisão do Neighbors';FX_LABEL.nbchoice='Escolha o tom';FX_LABEL.nbprag='Como isso soa';FX_LABEL.nbmilestone='Marco do arco';
-FX_KIND.nbmilestone='reward';
+FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';FX_LABEL.nbscene='Fio da história';FX_LABEL.nbreply='Sua vez';FX_LABEL.nbreview='Revisão do Neighbors';FX_LABEL.nbchoice='Escolha o tom';FX_LABEL.nbprag='Como isso soa';FX_LABEL.nbmilestone='Marco do arco';FX_LABEL.nbreflection='Fechamento do arco';
+FX_KIND.nbmilestone='reward';FX_KIND.nbreflection='reward';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,who,slow)=>{try{fxSay(String(t),who,slow)}catch(e){}};
@@ -218,6 +218,7 @@ function buildPrag(e,d){
 function buildMilestone(e,d){
   try{const a=(ARCS[P.cid]||[]).find(x=>x[0]===e.n);if(!a)return null;return {k:'nbmilestone',g:d.hero.g||['#F2A900','#E85D75'],title:a[1],level:d.hero.lvl||e.lv||'',mission:d.hero.mission||e.p||'',city:d.hero.city||''}}catch(x){return null}
 }
+function buildReflection(e,d){if(!e.rev)return null;return {k:'nbreflection',g:d.hero.g||['#F2A900','#E85D75'],level:d.hero.lvl||e.lv||'',title:e.t||'Revisão do arco',mission:e.p||'Reveja as situações e escolha uma habilidade para levar adiante.'}}
 function build(e){
   const d=collect(e);if(!d||!d.lines.length)return null;
   const g=d.hero.g||['#6C5CE7','#FF7AA8'];const out=[];
@@ -245,6 +246,7 @@ function build(e){
      da explicação de tom, evitando que o curso pareça uma lista mecânica. */
   const extras=hash(e.n)%2?[reply,choice,prag,review]:[prag,reply,choice,review];extras.forEach(x=>{if(x)out.push(x)});
   const milestone=buildMilestone(e,d);if(milestone)out.unshift(milestone);
+  const reflection=buildReflection(e,d);if(reflection)out.push(reflection);
   return out.length?out:null}
 
 function inject(e){
@@ -397,6 +399,7 @@ FXR.nbreview=function(f,st,n){
 FXR.nbchoice=function(f,st,n){let picked=false;st.innerHTML='<div class="step fx nbo nbchoice" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Escolha o tom · '+H(f.level)+'</span><h2 class="nbo-q">Como você quer conduzir esta conversa?</h2><div class="nbo-quote"><b>Você ouviu:</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div><ul class="nbo-opts">'+f.opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o.label)+'<small style="display:block;opacity:.7">'+H(o.tone)+'</small></span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbchfb" aria-live="polite"></div></div></div>';cta('Escolha uma resposta',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(picked)return;picked=true;const o=f.opts[+b.dataset.i];try{ST.nbTone=o.tone;save()}catch(x){}b.classList.add('ok');st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbchfb',st).innerHTML='<p class="nbo-tr"><b>'+H(o.tone)+'</b> — '+H(o.out)+'</p><p class="nbo-why">A fala muda o tom, mas você continua no controle da situação.</p>';P.score++;P.fx.cta=()=>false;cta(tx().cont,true,true);say('Boa escolha. Em inglês, intenção e tom também comunicam.','happy')})};
 FXR.nbprag=function(f,st,n){st.innerHTML='<div class="step fx nbo nbprag" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Como isso soa · '+H(f.level)+'</span><h2 class="nbo-q">A mesma frase muda com a situação</h2><p class="nbo-topic">'+H(f.scene)+(f.city?' · '+H(f.city):'')+'</p><ul class="nbo-list">'+f.tips.map(x=>'<li>'+H(x)+'</li>').join('')+'</ul><p class="nbo-hint">Antes de responder, pergunte: estou sendo claro, natural e adequado para esta relação?</p></div></div>';cta(tx().cont,true,true);say('Não basta estar gramaticalmente correto. O contexto também importa.')};
 FXR.nbmilestone=function(f,st,n){st.innerHTML='<div class="step fx nbo nbmilestone" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Marco do arco · '+H(f.level)+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand"><small>O que você vai construir</small>'+H(f.mission)+'</p><p class="nbo-hint">Este arco reúne situações conectadas. Ao avançar, observe como as mesmas habilidades reaparecem em novos contextos.</p></div></div>';cta(tx().cont,true,true);say('Novo arco desbloqueado. Vamos construir essa habilidade passo a passo.','happy')};
+FXR.nbreflection=function(f,st,n){st.innerHTML='<div class="step fx nbo nbreflection" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Fechamento do arco · '+H(f.level)+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand"><small>Leve isto com você</small>'+H(f.mission)+'</p><div class="nbo-hint"><b>Faça uma pausa:</b> qual frase, estratégia ou tom você consegue usar sem olhar?</div></div></div>';cta(tx().cont,true,true);say('Arco revisado. Escolha uma habilidade para levar para as próximas situações.','happy')};
 
 /* ---------- ligação: fxBridge (inserção) e fxTotal (pontos) ---------- */
 function install(){
