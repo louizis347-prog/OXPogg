@@ -243,8 +243,6 @@ function inject(cid,idx){
     }
     e.__cfDone=true;
     if(e.fr.some(function(f){return f&&f.k==='cultfoco'}))return false;
-    /* o padrão regular do repositório (obra principal + cena da obra) já cobre a cultura: não repete */
-    if(e.fr.some(function(f){return f&&f.k==='cultob'})&&e.fr.some(function(f){return f&&f.k==='cultcena'}))return false;
     var fr=buildFrame(cid,idx,e);if(!fr)return false;
     /* posição: logo depois do bloco cultural inicial (cover + cult*), senão após a capa */
     var pos=1,lead=0;
