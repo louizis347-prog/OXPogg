@@ -94,6 +94,12 @@ function reskin(f,st){
     if(mb){mb.textContent='👀 Ver modelo';row.appendChild(mb)}
   }
 
+  /* o resultado da correção e o modelo mudam a altura do quadro: pede ao paginador para medir de novo */
+  const kick=()=>setTimeout(()=>window.dispatchEvent(new Event('resize')),80);
+  const rs=step.querySelector('#airs'),fm=step.querySelector('#fxmod');
+  if(rs)new MutationObserver(kick).observe(rs,{childList:true});
+  if(fm)new MutationObserver(kick).observe(fm,{attributes:true,attributeFilter:['hidden']});
+
   /* sem gp (palavras-chave): o personagem também reage e responde quando todos os objetivos acendem */
   if(!f.gp&&ul&&ul.children.length)freeMode(f,step,ul);
 }
