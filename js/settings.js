@@ -176,7 +176,7 @@ function open(){
       ${isStandalone()?`<p class="pgs-note ok">✓ ${esc(k('installed'))}</p>`:`<button class="pgs-btn" id="pgs-inst" ${deferredInstall?'':'hidden'}>${esc(k('installBtn'))}</button><p class="pgs-note" ${deferredInstall?'hidden':''}>${esc(k('ios'))}</p>`}
       <p class="pgs-note ${swOn?'ok':''}">${esc(swOn?k('swOn'):k('swOff'))}</p>
       ${swOn?`<button class="pgs-btn ghost" id="s-offl">${esc(k('dlCourse'))}</button><div class="pgs-prog" id="s-op" hidden><i></i></div>`:''}
-     <p class="pgs-note" style="opacity:.6;margin-top:10px">Versão do app: 21/10/2026 · v119</p>
+     <p class="pgs-note" style="opacity:.6;margin-top:10px">Versão do app: 21/10/2026 · v120</p>
      </section></div>`;
     const q=s=>el.querySelector(s);
     if(window.PogA11y){const az=q('#a-z');
