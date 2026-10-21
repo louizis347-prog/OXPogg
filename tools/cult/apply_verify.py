@@ -6,8 +6,12 @@ for f in sorted(glob.glob('tools/cult/kb/%s_[0-9].json'%cid)):
     k=f.split('_')[-1].split('.')[0];vf='tools/cult/kb/%s_%s_%s.json'%(PRE,cid,k)
     import os
     if not os.path.exists(vf) and PRE=='verify': vf='tools/cult/kb/verify_%s.json'%k
-    try: V=json.load(open(vf))
-    except Exception: print('sem verificação para',f);continue
+    if PRE!='verify':
+        V={}
+        for vf2 in sorted(glob.glob('tools/cult/kb/%s_%s_*.json'%(PRE,cid))): V.update(json.load(open(vf2)))
+    else:
+        try: V=json.load(open(vf))
+        except Exception: print('sem verificação para',f);continue
     kb=json.load(open(f))
     for n,w in kb.items():
         v=V.get(n)
