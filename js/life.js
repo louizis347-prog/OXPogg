@@ -60,7 +60,7 @@ if(typeof _render==='function')window.render=function(){
     const kind=typeof stepKind==='function'?stepKind(s):'story';
     if(f){
       if(f.k==='cover')setTimeout(()=>EX.reveal(),250);
-      else if(/^(cultob|cultx|cultcena|cult1)$/.test(f.k)){const w=kindOfWork(f);if(w)setTimeout(()=>EX[w](),300)}
+      else if(/^(cultob|cultx|cultcena|cultpg|cult1)$/.test(f.k)){const w=kindOfWork(f);if(w)setTimeout(()=>EX[w](),300)}
       else if(f.k==='culttl')setTimeout(()=>EX.reveal(),250);
     }
     if(s==='done'){

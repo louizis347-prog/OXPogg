@@ -2,7 +2,7 @@
    wlat: traçar sobre o modelo (nota automática) e escrever de memória (autoavaliação). Reaproveita o desenho do write.js. */
 (function(){
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_KIND.hook='story';FX_LABEL.hook='Frase do dia';FX_KIND.cultcena='story';FX_LABEL.cultcena='Cena da obra';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
+FX_KIND.rdg='story';FX_LABEL.rdg='Leitura';FX_KIND.cultob='story';FX_LABEL.cultob='A obra';FX_KIND.cultgame='practice';FX_LABEL.cultgame='Missão da obra';FX_KIND.culttl='practice';FX_LABEL.culttl='Linha do tempo';FX_KIND.cultx='story';FX_KIND.hook='story';FX_LABEL.hook='Frase do dia';FX_KIND.cultcena='story';FX_KIND.cultpg='story';FX_LABEL.cultpg='Página da obra';FX_LABEL.cultcena='Cena da obra';FX_LABEL.cultx='Dentro da obra';FX_KIND.cultq='practice';FX_LABEL.cultq='Cultura em jogo';FX_KIND.cult='story';FX_LABEL.cult='Você sabia?';FX_KIND.rdgplay='story';FX_LABEL.rdgplay='Missão da conversa';FX_KIND.wlat='practice';FX_LABEL.wlat='Escreva na tela';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
@@ -35,6 +35,7 @@ const css=document.createElement('style');css.textContent=`
 .cg-q{font:800 18px/1.35 system-ui;color:#25203f;margin:8px 0}.cg-en{font:800 20px/1.35 system-ui;color:var(--azd,#0b5f5d);margin:8px 0 2px}.cg-pt{font:500 14px system-ui;color:#6b6591;margin-bottom:8px}
 .cg-tf{display:flex;gap:10px;margin:10px 0}.cg-tf button{flex:1;border:0;border-radius:16px;padding:14px;min-height:52px;font:900 17px system-ui;color:#fff;cursor:pointer;box-shadow:0 5px 0 rgba(0,0,0,.2)}
 .cg-tf .t{background:linear-gradient(135deg,var(--az1,#0C7A78),var(--az2,#3fc1bd))}.cg-tf .f{background:linear-gradient(135deg,#E85D75,#f38aa0)}
+.cp-pg{margin:10px 0;padding:12px 12px 6px;border-radius:6px 16px 16px 6px;background:#fffaf0;border-left:6px solid #c9a15a;box-shadow:0 10px 22px -16px rgba(80,50,10,.6)}.cp-pg.dlg{background:#f4f7ff;border-left-color:#6b8cff}.cp-src{font:700 11px/1.3 system-ui;letter-spacing:.06em;text-transform:uppercase;color:#8a6d33;margin-bottom:4px}.cp-pg.dlg .cp-src{color:#4a63c9}.cp-ad{margin:6px 0;padding:8px 10px;border-radius:12px;background:#fff4d6;border:1px solid #f1d58a;font:600 12.5px/1.35 system-ui;color:#7a5a00}.cp .cp-l .cc-en{font:500 16px/1.45 Georgia,serif}.cp .cp-l .cc-who{display:block;font:800 11px/1.2 system-ui;color:#4a63c9;margin-bottom:1px}
 .cc-page{margin:10px 0;padding:14px 14px 10px;border-radius:6px 16px 16px 6px;background:#fffaf0;border-left:6px solid #c9a15a;box-shadow:0 10px 22px -16px rgba(80,50,10,.6)}
 .cc-pg-t{font:700 12px Georgia,serif;letter-spacing:.14em;text-transform:uppercase;color:#a07a35;margin-bottom:8px}
 .cc-film{margin:10px 0;padding:14px;border-radius:16px;background:linear-gradient(160deg,#241f45,#3b2f6b);box-shadow:0 12px 24px -16px rgba(30,20,80,.8);color:#fff}
@@ -286,6 +287,33 @@ FXR.cultcena=function(f,st,n){
       st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const i=+b.dataset.i,ok=i===Q.a;
         b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[Q.a].classList.add('ok');if(ok)P.score++;
         fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;cta(P.t.cont,true,true)});
+    }};
+  view()};
+/* ---------- Página da obra: trecho/diálogo literal (domínio público) ou diálogo adaptado + perguntas de compreensão ---------- */
+FXR.cultpg=function(f,st,n){
+  const L=f.lines||[],QS=f.qs||[],dlg=f.form==='dialogue'||f.form==='adapted';let phase=0,qi=0;P.fx.done=false;P.fx.cta=null;
+  const head=`${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Página da obra')}${f.part?` <small>parte ${f.part}</small>`:''}</h2>`;
+  const art=f.pa?`<div class="cu2-art">${CULT_PROC(f.pa,1)}</div>`:'';
+  const view=()=>{
+    if(phase===0){
+      const rows=L.map((l,i)=>`<button type="button" class="cc-l cp-l" data-i="${i}">${l[0]?`<b class="cc-who">${H(l[0])}</b>`:''}<span class="cc-en">${H(l[1])}</span><span class="cc-pt">${H(l[2]||'')}</span></button>`).join('');
+      st.innerHTML=`<div class="step fx cu2 cc cp">${head}${art}<div class="cu2-work"><span>${H(f.work)}</span>${f.tag?`<small>${H(f.tag)}</small>`:''}</div>
+      ${f.about?`<div class="cc-ctx">${mk(f.about)}</div>`:''}${f.ctx?`<div class="cc-ctx"><b>Por que esta página?</b> ${mk(f.ctx)}</div>`:''}
+      <div class="cp-pg${dlg?' dlg':''}">${f.src?`<div class="cp-src">${H(f.src)}</div>`:''}${rows}</div>
+      ${f.form==='adapted'?'<div class="cp-ad">✏️ Diálogo adaptado: escrito para o curso, inspirado na cena. Não é o texto original.</div>':''}
+      <div class="cx-st">Toque numa linha para ouvir e ver a tradução</div></div>`;
+      st.querySelectorAll('.cp-l').forEach(b=>b.onclick=()=>{b.classList.toggle('on');try{sfx('pop')}catch(e){}say2(L[+b.dataset.i][1])});
+      P.fx.cta=()=>{if(QS.length){phase=1;qi=0;view();return true}return false};
+      cta(QS.length?`Entendi — ${QS.length} perguntas ▶`:P.t.cont,true,true);
+      say(f.say||(L[0]?L[0][1]:'Vamos ler uma página da obra!'));
+    }else{
+      const Q=QS[qi];let done=false;
+      st.innerHTML=`<div class="step fx cu2">${head.replace('</h2>',` <small>${qi+1}/${QS.length}</small></h2>`)}<div class="cu2-q">${H(Q.q)}</div><div class="rdg-o">${Q.o.map((o,i)=>`<button type="button" data-i="${i}">${H(o)}</button>`).join('')}</div><div id="fb"></div></div>`;
+      P.fx.cta=null;cta('Escolha uma resposta',false);
+      st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(done)return;done=true;const i=+b.dataset.i,ok=i===Q.a;
+        b.classList.add(ok?'ok':'no');if(!ok)st.querySelectorAll('.rdg-o button')[Q.a].classList.add('ok');if(ok)P.score++;
+        fxGrade(ok,Q.why||'',Q.o[Q.a]);P.answered=true;
+        if(qi<QS.length-1){P.fx.cta=()=>{qi++;view();return true};cta('Próxima pergunta ▶',true,true)}else cta(P.t.cont,true,true)});
     }};
   view()};
 /* ---------- cultura: cartão ilustrado + pergunta (cultq: toque único · cult: curiosidade + pergunta) ---------- */
