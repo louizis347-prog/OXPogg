@@ -4,7 +4,7 @@
 (function(){
 'use strict';
 var PRE='pogglot:',TSK=PRE+'_ts';
-var SYNC=['done','testDone','xp','totalCorrect','totalAnswered','maxStreak','srs','writing','errs','xphist','ach','know','quiz','plan','wk','shelf','streak','homeLang','lastCourse','lastEp','wallet','mis','goal','remind','daily','since','placed','romaji','a11y','comm','pron','rv'];
+var SYNC=['done','testDone','xp','totalCorrect','totalAnswered','maxStreak','srs','writing','errs','xphist','ach','know','quiz','plan','wk','shelf','streak','homeLang','lastCourse','lastEp','wallet','mis','lg','goal','remind','daily','since','placed','romaji','a11y','comm','pron','rv'];
 var UNION_TRUE=['done','testDone'],MAXN=['xp','totalCorrect','totalAnswered','maxStreak'],MAPS=['pron','srs','writing','errs','xphist','ach','know','quiz','plan','wk'];
 var ls=window.localStorage,rawSet=Storage.prototype.setItem,rawRem=Storage.prototype.removeItem,off=false,timer=null,busy=false,tsCache=null;
 function syncable(k){if(k.indexOf(PRE)!==0)return false;var n=k.slice(PRE.length);return SYNC.indexOf(n)>=0||n.indexOf('exam:')===0}
