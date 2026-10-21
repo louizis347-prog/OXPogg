@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Aplica a verificação independente (kb/verify_K.json) sobre a base (kb/CURSO_K.json). Uso: apply_verify.py CURSO"""
 import json,glob,sys,collections
-cid=sys.argv[1];st=collections.Counter();log=[];kb2fix={}
+cid=sys.argv[1];PRE=sys.argv[2] if len(sys.argv)>2 else 'verify';st=collections.Counter();log=[];kb2fix={}
 for f in sorted(glob.glob('tools/cult/kb/%s_[0-9].json'%cid)):
-    k=f.split('_')[-1].split('.')[0];vf='tools/cult/kb/verify_%s_%s.json'%(cid,k)
+    k=f.split('_')[-1].split('.')[0];vf='tools/cult/kb/%s_%s_%s.json'%(PRE,cid,k)
     import os
-    if not os.path.exists(vf): vf='tools/cult/kb/verify_%s.json'%k
+    if not os.path.exists(vf) and PRE=='verify': vf='tools/cult/kb/verify_%s.json'%k
     try: V=json.load(open(vf))
     except Exception: print('sem verificação para',f);continue
     kb=json.load(open(f))
