@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Insere o quadro cultpg (Página da obra) nos episódios de um curso a partir de tools/cult/work/pg_CURSO_outK.json.
 Uso: inject_pg.py CURSO [--dry]   (ex.: en-a1). Originais: depois de cultcena. Continuações: depois de culttl. Idempotente."""
-import json,glob,sys,collections
+import json,glob,sys,collections,random,hashlib
 cid=sys.argv[1];dry='--dry' in sys.argv
 short=cid.replace('en-','')
 OUT={}
@@ -28,8 +28,12 @@ for f,d in raw.items():
         ob=next((x for x in par['fr'] if x['k']=='cultob'),{})
         cc=next((x for x in par['fr'] if x['k']=='cultcena'),{})
         e['fr']=[x for x in e['fr'] if x['k']!='cultpg']
+        qs=[]
+        for qi,q in enumerate(p['qs']):
+            rnd=random.Random(hashlib.md5((k+str(qi)).encode()).hexdigest());o=list(q['o']);right=o[q['a']];rnd.shuffle(o)
+            qs.append({**q,'o':o,'a':o.index(right)})
         fr={'k':'cultpg','title':'Página da obra','work':w,'tag':cc.get('tag') or (ob.get('chips') or [''])[0],'part':1 if e['o']%1==0 else 2,
-            'about':kb[w]['blurb'] if w in kb else '', 'form':p['form'],'src':p.get('src',''),'ctx':p.get('ctx',''),'lines':p['lines'],'qs':p['qs']}
+            'about':kb[w]['blurb'] if w in kb else '', 'form':p['form'],'src':p.get('src',''),'ctx':p.get('ctx',''),'lines':p['lines'],'qs':qs}
         if ob.get('pa'): fr['pa']=ob['pa']
         if fo and p['form'] in('page','dialogue'): fr['ref']=fo
         ks=[x['k'] for x in e['fr']]
