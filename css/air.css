@@ -141,7 +141,10 @@
   #player.az .step.nv-sb .fx-en-ic{width:38px!important;height:38px!important;font-size:20px!important}
   #player.az .step.nv-sb .fx-en-t{font-size:14px!important;line-height:1.35!important}
   #player.az .step.nv-sb .nv-bar{margin-top:10px!important}
-  #player.az .step.nv-sb .nv-tiles:first-of-type .nv-tile{height:112px!important;min-height:0!important}
+  #player.az .step.nv-sb #nvi .nv-tile{height:92px!important;min-height:0!important;padding:4px!important}
+  #player.az .step.nv-sb #nvi{grid-template-columns:repeat(auto-fit,minmax(84px,1fr))!important}
+  #player.az .step.nv-sb .nv-sent{margin:0!important;padding:6px 10px!important;font-size:14px;line-height:1.3}
+  #player.az .step.nv-sb #nvt{display:grid;gap:5px}
   #player.az .step.nv-sb .nv-tiles .nv-spot{height:68px!important;min-height:0!important}
   #player.az .step.nv-sb .nv-tiles{gap:10px!important}
   /* Sua vez */
@@ -175,4 +178,187 @@
 @media (max-width:759px){
   #player.az .step.sv2{gap:10px!important}
   #player.az .step.sv2>*+*{margin-top:0!important}
+}
+
+/* ---- P) Computador: Monte a cena e Sua vez em UM quadro, sem rolagem nem "Ver mais" ---- */
+@media (min-width:760px){
+  /* Monte a cena: título + botões de áudio na mesma linha; objetos à esquerda, lugares à direita, frases embaixo dos objetos */
+  #player.az .step.nv-sb{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:22px;row-gap:10px;align-content:start;padding:14px 18px!important}
+  #player.az .step.nv-sb>*{margin:0!important;grid-column:1 / -1}
+  #player.az .step.nv-sb>.fx-h{grid-column:1;grid-row:1;align-self:center;font-size:20px;line-height:1.2}
+  #player.az .step.nv-sb>.nv-bar{grid-column:2;grid-row:1;justify-self:end;margin:0!important}
+  #player.az .step.nv-sb>.fx-en{grid-row:2;padding:8px 14px!important;gap:12px!important;min-height:0!important}
+  #player.az .step.nv-sb .fx-en-ic{width:36px!important;height:36px!important;font-size:20px!important}
+  #player.az .step.nv-sb .fx-en-t{font-size:15px!important;line-height:1.35!important}
+  #player.az .step.nv-sb>#nvi{grid-column:1;grid-row:3;grid-template-columns:repeat(auto-fit,minmax(100px,1fr))}
+  #player.az .step.nv-sb>#nvp{grid-column:2;grid-row:3 / span 2;grid-template-columns:1fr 1fr}
+  #player.az .step.nv-sb>#nvt{grid-column:1;grid-row:4;display:grid;gap:6px;align-content:start}
+  #player.az .step.nv-sb>#fb{grid-row:5}
+  #player.az .step.nv-sb .nv-tiles{gap:10px!important}
+  #player.az .step.nv-sb #nvi .nv-tile{height:92px!important;min-height:0!important;padding:6px!important}
+  #player.az .step.nv-sb .nv-spot{height:72px!important;min-height:0!important;gap:8px!important}
+  #player.az .step.nv-sb .nv-spot .pl,#player.az .step.nv-sb .nv-spot .put{font-size:34px!important}
+  #player.az .step.nv-sb .nv-sent{margin:0!important;padding:7px 12px!important;font-size:15px;line-height:1.3}
+}
+@media (min-width:760px){
+  /* Sua vez: sem coluna de ilustração, conteúdo em largura total e blocos lado a lado */
+  #player.az .step.sv2,#player.az .step.sv2:has(>.m2-ill){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:18px;row-gap:8px;align-content:start;padding:12px 18px!important}
+  #player.az .step.sv2>*,#player.az .step.sv2:has(>.m2-ill)>*{grid-column:1 / -1!important;grid-row:auto;margin:0!important}
+  #player.az .step.sv2>.m2-ill{display:none!important}
+  #player.az .step.sv2>.rw-goals,#player.az .step.sv2 .yt-msg{display:none!important}
+  #player.az .step.sv2>.rw-sit{padding:8px 14px!important;gap:10px}
+  #player.az .step.sv2>.rw-sit .rw-sit-ic{font-size:26px}
+  #player.az .step.sv2>.rw-sit p{font-size:15px;line-height:1.35}
+  #player.az .step.sv2>.yt-game{padding:0 8px!important}
+  #player.az .step.sv2 .yt-track{height:40px!important;margin:0 var(--t-s3)!important}
+  #player.az .step.sv2 textarea{min-height:60px!important;height:60px;padding:8px 12px}
+  #player.az .step.sv2{grid-auto-flow:row dense}
+  #player.az .step.sv2>.rw-bar{grid-column:1!important;order:8!important;margin:0!important;align-self:center}
+  #player.az .step.sv2>.sv-acts{grid-column:2!important;order:8!important;min-height:0!important;margin:0!important;padding:0!important;justify-content:flex-end}
+  #player.az .step.sv2>.tp-rep{grid-column:1!important;order:5}
+  #player.az .step.sv2>.tp-bub{grid-column:2!important;order:5;align-self:stretch;display:flex;align-items:center}
+  #player.az .step.sv2 .tp-rep{padding:8px 12px}
+  #player.az .step.sv2 .tp-rep b{font-size:15px}
+  #player.az .step.sv2 .tp-rep small{font-size:12px}
+  /* correção e modelo lado a lado */
+  #player.az .step.sv2>#fxmod:not(:empty):not([hidden]){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 18px;align-items:start}
+  #player.az .step.sv2>#fxmod>*{margin:0!important}
+  #player.az .step.sv2>#fxmod .fx-check{grid-column:2;grid-row:1 / span 2}
+}
+
+/* ---- Q) Sua vez, depois de corrigir ou ver o modelo: só o que importa agora (celular e computador) ---- */
+#player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden]))) :is(.yt-game,.tp-bub,.fx-chips,.sv-hint,.rw-goals){display:none!important}
+#player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden]))) textarea{min-height:52px!important;height:52px}
+#player.az .step.sv2 #fxmod .rw-mine{display:none}
+#player.az .step.sv2 .ai-card .ai-src,#player.az .step.sv2 .ai-card .ai-list.good{display:none}
+#player.az .step.sv2 .ai-card{padding:10px 12px;gap:6px}
+#player.az .step.sv2 .ai-top{gap:10px}
+#player.az .step.sv2 .ai-score{width:48px;height:48px;font-size:.9em}
+#player.az .step.sv2 .ai-fixed{margin:0}
+#player.az .step.sv2 .ai-ok{margin:0;font-size:13.5px}
+#player.az .step.sv2 #fxmod .fx-model{padding:10px 12px}
+#player.az .step.sv2 #fxmod .fx-check{display:flex;flex-wrap:wrap;gap:4px 14px;margin:0;padding:0;list-style:none}
+#player.az .step.sv2 #fxmod .fx-check li{font-size:13px;margin:0}
+@media (min-width:760px){
+  #player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden])))>.rw-bar{display:none}
+  #player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden])))>.sv-acts{grid-column:1 / -1!important;justify-content:stretch}
+  #player.az .step.sv2>#fxmod:not(:empty):not([hidden]){grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+  #player.az .step.sv2>#fxmod .fx-check{grid-column:2;grid-row:1;align-self:center;flex-direction:column}
+}
+@media (max-width:759px){
+  #player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden]))) :is(.rw-sit,.rw-bar){display:none!important}
+  #player.az .step.sv2 .tp-rep{padding:8px 10px!important;gap:8px!important}
+  #player.az .step.sv2 .tp-rep>span{font-size:26px!important}
+  #player.az .step.sv2 .tp-rep b{font-size:14px!important;line-height:1.35!important}
+  #player.az .step.sv2 .tp-rep small{font-size:12px!important;line-height:1.3!important}
+  #player.az .step.sv2 .tp-rep>button{width:34px!important;height:34px!important}
+  #player.az .step.sv2 .sv-acts{display:grid!important;grid-template-columns:1fr 1fr;gap:8px}
+  #player.az .step.sv2 .sv-acts .ai-box{display:contents}
+  #player.az .step.sv2 .sv-acts #aibtn{grid-column:1;margin:0!important}
+  #player.az .step.sv2 .sv-acts #fxm{grid-column:2;margin:0!important}
+  #player.az .step.sv2 .sv-acts #airs{grid-column:1 / -1;order:3}
+  #player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden]))) .tp-rep small{display:none}
+  #player.az .step.sv2 #fxmod:not([hidden]){display:grid;gap:8px}
+  #player.az .step.sv2 #fxmod .fx-model b{font-size:14px;line-height:1.35}
+}
+@media (max-width:759px){
+  #player.az .step.sv2 .fx-chips{flex-wrap:wrap;gap:6px!important}
+  #player.az .step.sv2 .fx-chip{padding:6px 11px!important;font-size:13.5px!important;min-height:0!important;height:auto!important}
+}
+@media (max-width:759px) and (max-height:700px){
+  #player.az .step.sv2 .rw-sit small{display:none}
+  #player.az .step.sv2 .rw-sit *{font-size:14px!important;line-height:1.35!important}
+  #player.az .step.sv2 .yt-track{height:30px!important}
+  #player.az .step.sv2 textarea{min-height:64px!important;height:64px}
+  #player.az .step.sv2{gap:8px!important}
+}
+@media (min-width:760px) and (max-height:720px){
+  #player.az .step.sv2{row-gap:6px!important;padding:8px 16px!important}
+  #player.az .step.sv2>.rw-sit{padding:6px 12px!important}
+  #player.az .step.sv2 textarea{min-height:52px!important;height:52px}
+  #player.az .step.sv2 .ai-card{padding:8px 10px}
+}
+
+/* ---- R) Situação: depois de conferir, as fichas somem e a explicação ocupa o lugar (cabe em um quadro) ---- */
+#player.az .step.m2-sit:has(.m2-chp:disabled) .m2-sitc{display:none}
+@media (max-width:759px){
+  #player.az .step.m2-sit>.eyebrow{display:none}
+  #player.az .step.m2-sit .m2-sitic{width:44px;height:44px;border-radius:14px}
+  #player.az .step.m2-sit .m2-sith{padding:8px 12px!important;gap:10px}
+  #player.az .step.m2-sit .m2-sitp{margin-bottom:0}
+  #player.az .step.m2-sit .m2-sitp .pill{padding:8px 12px;min-height:0}
+  #player.az .step.m2-sit .m2-sitb{padding:8px;gap:6px;margin-bottom:0}
+  #player.az .step.m2-sit .m2-chp{padding:8px 14px;font-size:15px;box-shadow:0 3px 0 var(--m2)}
+  #player.az .step.m2-sit .m2-sitc{gap:8px;margin-bottom:0}
+}
+@media (min-width:760px) and (max-height:720px){
+  #player.az .step.m2-sit>.eyebrow{display:none}
+  #player.az .step.m2-sit .m2-sith{padding:6px 10px!important}
+  #player.az .step.m2-sit .m2-sitic{width:44px;height:44px}
+  #player.az .step.m2-sit .m2-sitp{margin-bottom:0}
+  #player.az .step.m2-sit .m2-sitp .pill{padding:6px 12px;min-height:0}
+  #player.az .step.m2-sit .m2-sitb{padding:8px;gap:6px;margin-bottom:0}
+  #player.az .step.m2-sit .m2-chp{padding:7px 14px;font-size:15px;box-shadow:0 3px 0 var(--m2)}
+  #player.az .step.m2-sit .m2-sitc{margin-bottom:0}
+}
+@media (max-width:759px){
+  #player.az .step.m2-sit>*+*{margin-top:8px!important}
+  #player.az .step.m2-sit .m2-sbb{font-size:16px;line-height:1.35}
+  #player.az .step.m2-sit .m2-hole{min-width:56px;padding:0 8px}
+  #player.az .step.m2-sit .m2-sav{width:28px;height:28px}
+}
+@media (max-width:759px) and (max-height:700px){
+  #player.az .step.m2-sit .m2-kind{display:none}
+}
+@media (max-width:759px) and (max-height:700px){
+  #player.az .step.m2-sit:has(.m2-chp:disabled) .m2-sitp{display:none}
+}
+
+/* Monte a cena: o rótulo "Quadro N/M" já está no título; feedback mais baixo */
+#player.az .step.nv-sb>.eyebrow{display:none}
+@media (min-width:760px){
+  #player.az .step.nv-sb>#fb>*{padding:8px 14px!important;margin:0!important}
+  #player.az .step.nv-sb>#fb *{line-height:1.3}
+}
+@media (max-width:759px){
+  #player.az .step.nv-sb>#fb>*{padding:8px 12px!important;margin:0!important}
+  #player.az .step.nv-sb>*+*{margin-top:8px}
+}
+#player.az .step.nv-sb .nv-tile small{font-size:13px!important;line-height:1.2!important;font-weight:800}
+@media (max-width:759px) and (max-height:700px){
+  #player.az .step.nv-sb>.fx-en{display:none}
+  #player.az .step.nv-sb>.nv-bar{margin-top:6px!important}
+  #player.az .step.nv-sb #nvi .nv-tile{height:78px!important}
+  #player.az .step.nv-sb .nv-tiles .nv-spot{height:58px!important}
+  #player.az .step.nv-sb .nv-spot .pl,#player.az .step.nv-sb .nv-spot .put{font-size:30px!important}
+  #player.az .step.nv-sb .nv-spot small{font-size:11px!important;bottom:2px}
+}
+@media (max-width:759px) and (max-height:700px){
+  #player.az .step.nv-sb .nv-sent{padding:4px 10px!important;font-size:13px}
+  #player.az .step.nv-sb .nv-sent small{font-size:11.5px}
+  #player.az .step.nv-sb>#fb>*{padding:6px 12px!important}
+}
+@media (min-width:760px){
+  #player.az .step.sv2:is(:has(#airs .ai-card),:has(#fxmod:not([hidden])))>.tp-rep{grid-column:1 / -1!important}
+  #player.az .step.sv2:has(#airs .ai-card)>.sv-acts{display:grid!important;grid-template-columns:auto minmax(0,1fr);gap:8px 14px;align-items:start}
+  #player.az .step.sv2:has(#airs .ai-card) .sv-acts .ai-box{display:contents}
+  #player.az .step.sv2:has(#airs .ai-card) .sv-acts #aibtn{grid-column:1;grid-row:1;margin:0!important}
+  #player.az .step.sv2:has(#airs .ai-card) .sv-acts #fxm{grid-column:1;grid-row:2;margin:0!important}
+  #player.az .step.sv2:has(#airs .ai-card) .sv-acts #airs{grid-column:2;grid-row:1 / span 2;min-width:0}
+  #player.az .step.sv2 .ai-card{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;align-items:center}
+  #player.az .step.sv2 .ai-card>.ai-top{grid-column:1;grid-row:1 / span 2}
+  #player.az .step.sv2 .ai-card>:not(.ai-top){grid-column:2}
+}
+/* correção e modelo abertos juntos: a missão já foi cumprida, libera espaço */
+#player.az .step.sv2:has(#airs .ai-card):has(#fxmod:not([hidden]))>.rw-sit{display:none!important}
+
+/* respiro: blocos compactados não podem ficar colados */
+@media (min-width:760px){
+  #player.az .step.sv2,#player.az .step.sv2:has(>.m2-ill){row-gap:12px!important}
+  #player.az .step.nv-sb{row-gap:12px!important}
+}
+@media (max-width:759px){
+  #player.az .step.m2-sit>*+*{margin-top:11px!important}
+  #player.az .step.nv-sb>*+*{margin-top:10px}
+  #player.az .step.sv2{gap:11px!important}
 }

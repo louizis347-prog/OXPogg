@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PogIllus demo</title>
+<style>
+:root{color-scheme:light dark;--bg:#f3f1ec;--fg:#1c1b19;--mut:#6b675f}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1118;--fg:#ecebe6;--mut:#8f93a0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 system-ui,sans-serif;padding:24px}
+h1{font-size:22px;margin:0 0 4px}p.s{color:var(--mut);margin:0 0 18px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.bar button{font:inherit;padding:6px 14px;border-radius:999px;border:1px solid var(--mut);background:transparent;color:var(--fg);cursor:pointer}
+.bar button.on{background:var(--fg);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:22px}
+.grid h3{margin:8px 2px 0;font-size:13px;font-weight:600;color:var(--mut)}
+.grid.big{grid-template-columns:1fr}
+.pk{margin:26px 0 0;font:13px/1.6 ui-monospace,monospace;color:var(--mut)}
+</style></head><body>
+<h1>PogIllus &mdash; cenas SVG</h1>
+<p class="s">Todas as cenas &times; humores. Use <code>?kind=cafe-interior&amp;mood=night&amp;big=1</code> para ver uma so.</p>
+<div class="bar" id="bar"></div>
+<div class="grid" id="g"></div>
+<div class="pk"><input id="pi" placeholder="testar pick(): ex. Chicago, museu, Tokyo..." style="font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--mut);background:transparent;color:var(--fg);width:min(420px,100%)"> <b id="po"></b></div><div class="pk" id="pk"></div>
+<script src="../js/illus.js"></script>
+<script>
+(function(){
+var q=new URLSearchParams(location.search),moods=['day','dawn','sunset','night'],cur=q.get('mood')||'all',g=document.getElementById('g'),bar=document.getElementById('bar');
+var kinds=q.get('kind')?[q.get('kind')]:PogIllus.kinds.concat(['fallback']);
+if(q.get('big'))g.className='grid big';
+function draw(){
+ var h='';
+ kinds.forEach(function(k){
+  (cur==='all'?moods:[cur]).forEach(function(m){
+   h+='<div>'+PogIllus.frame(k,{mood:m,motion:!!q.get('motion')})+'<h3>'+k+' &middot; '+m+'</h3></div>'});
+ });
+ g.innerHTML=h}
+['all'].concat(moods).forEach(function(m){var b=document.createElement('button');b.textContent=m;b.className=m===cur?'on':'';b.onclick=function(){cur=m;[].forEach.call(bar.children,function(x){x.className=x.textContent===m?'on':''});draw()};bar.appendChild(b)});
+draw();
+document.getElementById('pi').oninput=function(){document.getElementById('po').textContent=this.value?'→ '+PogIllus.pick(this.value):''};
+var tests=['Chicago','café','museu','aeroporto','London','Madrid','Tokyo','Mexico City','Miami','Seattle','Yellowstone','biblioteca','Brooklyn','Bogota','Boise'];
+document.getElementById('pk').innerHTML='<b>pick()</b><br>'+tests.map(function(t){return t+' &rarr; '+PogIllus.pick(t)}).join('<br>');
+})();
+</script></body></html>
