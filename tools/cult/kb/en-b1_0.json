@@ -45,10 +45,29 @@
   "pd": false,
   "blurb": "Romance distópico de Orwell sobre vigilância, propaganda e o controle do pensamento.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "No romance, o Ministério da Verdade altera registros e reescreve o passado para servir ao Partido. Por isso a obra é muito citada em debates sobre propaganda e notícias falsas."
+   "mode": "quote",
+   "lines": [
+    [
+     "Who controls the past controls the future: who controls the present controls the past.",
+     "Quem controla o passado controla o futuro; quem controla o presente controla o passado.",
+     "Slogan do Partido"
+    ]
+   ],
+   "src": "Nineteen Eighty-Four, George Orwell, 1949",
+   "ctx": "No romance, o Partido repete esse slogan para justificar a reescrita dos registros. Winston trabalha justamente nisso, no Ministério da Verdade.",
+   "hl": [
+    "controls the past"
+   ]
+  },
+  "q": {
+   "q": "O que o slogan do Partido quer dizer?",
+   "o": [
+    "Que o passado não importa",
+    "Que quem manda na versão da história manda no futuro",
+    "Que o presente é sempre melhor que o passado"
+   ],
+   "a": 1,
+   "why": "Quem controla o registro do passado controla como as pessoas pensam e agem no futuro."
   }
  },
  "84, Charing Cross Road": {
@@ -97,10 +116,34 @@
   "pd": true,
   "blurb": "Novela de Dickens: o avarento Scrooge é visitado por três espíritos na véspera de Natal.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Depois de ver seu futuro, Scrooge promete mudar de vida. A novela termina com ele determinado a ser generoso."
+   "mode": "quote",
+   "lines": [
+    [
+     "I will live in the Past, the Present, and the Future.",
+     "Viverei no Passado, no Presente e no Futuro.",
+     "Scrooge"
+    ],
+    [
+     "The Spirits of all Three shall strive within me.",
+     "Os Espíritos de todos os Três lutarão dentro de mim.",
+     "Scrooge"
+    ]
+   ],
+   "src": "Stave 4 · Charles Dickens, 1843",
+   "ctx": "Depois de ver o próprio futuro, Scrooge promete ao Espírito mudar de vida e aprender com tudo o que viu.",
+   "hl": [
+    "I will live in the Past"
+   ]
+  },
+  "q": {
+   "q": "O que Scrooge promete?",
+   "o": [
+    "Viver no Passado, no Presente e no Futuro",
+    "Voltar ao antigo escritório",
+    "Esquecer os Espíritos"
+   ],
+   "a": 0,
+   "why": "Ele diz 'I will live in the Past, the Present, and the Future', prometendo guardar as lições dos três Espíritos."
   }
  },
  "A Midsummer Night's Dream: The Plan": {
@@ -110,10 +153,29 @@
   "pd": true,
   "blurb": "Comédia de Shakespeare: casais, fadas e uma floresta onde os planos de amor se complicam.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Na floresta encantada, os planos dos casais de amor se complicam por causa da magia das fadas. A confusão acaba por se resolver no final da peça."
+   "mode": "quote",
+   "lines": [
+    [
+     "The course of true love never did run smooth.",
+     "O caminho do amor verdadeiro nunca foi tranquilo.",
+     "Lysander"
+    ]
+   ],
+   "src": "Ato 1, cena 1 · Shakespeare",
+   "ctx": "Hermia está proibida pelo pai de se casar com Lysander; ele a consola e propõe um plano: fugir juntos para a casa de uma tia.",
+   "hl": [
+    "true love never did run smooth"
+   ]
+  },
+  "q": {
+   "q": "O que Lysander diz sobre o amor verdadeiro?",
+   "o": [
+    "Que costuma enfrentar obstáculos",
+    "Que é sempre fácil",
+    "Que não existe"
+   ],
+   "a": 0,
+   "why": "Ele consola Hermia dizendo que o amor verdadeiro sempre encontrou dificuldades."
   }
  },
  "A Tale of Two Cities": {
@@ -205,12 +267,36 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: Alice cai numa toca e encontra um mundo sem lógica.",
+  "blurb": "Clássico de Lewis Carroll: a charada do corvo e da escrivaninha, que o autor deixou sem resposta.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "No Chá Maluco, o Chapeleiro faz a Alice uma charada sobre um corvo e uma escrivaninha. No livro, a charada não tem resposta definida."
+   "mode": "quote",
+   "lines": [
+    [
+     "\"Have you guessed the riddle yet?\" the Hatter said,",
+     "\"Já adivinhou a charada?\", disse o Chapeleiro,",
+     "Narrador"
+    ],
+    [
+     "turning to Alice again.",
+     "virando-se para Alice de novo.",
+     "Narrador"
+    ]
+   ],
+   "src": "Capítulo 7 · Lewis Carroll, 1865",
+   "ctx": "Depois de perguntar por que um corvo se parece com uma escrivaninha, o Chapeleiro cobra a resposta de Alice.",
+   "hl": [
+    "guessed the riddle"
+   ]
+  },
+  "q": {
+   "q": "O que o Chapeleiro quer saber?",
+   "o": [
+    "Se Alice adivinhou a charada",
+    "Se Alice quer mais chá",
+    "Se Alice sabe as horas"
+   ],
+   "a": 0,
+   "why": "Ele pergunta se ela já adivinhou a charada."
   }
  },
  "Alice: The Mad Hatter": {
@@ -218,12 +304,36 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: Alice cai numa toca e encontra um mundo sem lógica.",
+  "blurb": "Clássico de Lewis Carroll: o Chapeleiro manda todos mudarem de lugar à mesa do chá.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Alice chega a um chá que parece nunca terminar, com o Chapeleiro e a Lebre de Março. A conversa é cheia de jogos de palavras sem sentido."
+   "mode": "quote",
+   "lines": [
+    [
+     "\"I want a clean cup,\" interrupted the Hatter:",
+     "\"Quero uma xícara limpa\", interrompeu o Chapeleiro:",
+     "Narrador"
+    ],
+    [
+     "\"let's all move one place on.\"",
+     "\"vamos todos nos mudar um lugar adiante.\"",
+     "Chapeleiro"
+    ]
+   ],
+   "src": "Capítulo 7 · Lewis Carroll, 1865",
+   "ctx": "Na mesa do chá sem fim, o Chapeleiro quer uma xícara limpa e manda todos mudarem de lugar.",
+   "hl": [
+    "move one place on"
+   ]
+  },
+  "q": {
+   "q": "O que o Chapeleiro manda fazer?",
+   "o": [
+    "Que todos mudem um lugar adiante",
+    "Que todos saiam da mesa",
+    "Que todos fiquem quietos"
+   ],
+   "a": 0,
+   "why": "Ele diz let's all move one place on."
   }
  },
  "All the President's Men": {
@@ -376,10 +486,29 @@
   "pd": false,
   "blurb": "Filme sobre a missão lunar de 1970 em que uma explosão põe a tripulação em risco.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "No centro de controle, Gene Kranz lidera a equipe que busca uma solução para trazer a tripulação de volta."
+   "mode": "quote",
+   "lines": [
+    [
+     "Failure is not an option.",
+     "Fracassar não é uma opção.",
+     "Gene Kranz"
+    ]
+   ],
+   "src": "Apollo 13, filme de 1995",
+   "ctx": "No centro de controle, depois da explosão, o diretor de voo Gene Kranz diz à equipe que não há margem para desistir. A frase foi escrita para o filme.",
+   "hl": [
+    "Failure is not an option"
+   ]
+  },
+  "q": {
+   "q": "O que a frase de Kranz transmite à equipe?",
+   "o": [
+    "Que a missão deve ser cancelada",
+    "Que a equipe precisa achar uma solução e trazer a tripulação de volta",
+    "Que a falha é inevitável"
+   ],
+   "a": 1,
+   "why": "'Failure is not an option' diz que desistir não existe: a equipe precisa resolver."
   }
  },
  "Apollo 13: Running Low": {
@@ -536,7 +665,7 @@
   "by": "Richard Linklater",
   "y1": 2013,
   "pd": false,
-  "blurb": "Jesse e Céline, agora casados, passam as férias na Grécia e enfrentam uma crise.",
+  "blurb": "Filme de Linklater (2013): Jesse e Céline, com os filhos, passam o verão na Grécia e enfrentam uma crise.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -549,7 +678,7 @@
   "by": "Richard Linklater",
   "y1": 1995,
   "pd": false,
-  "blurb": "Dois jovens se conhecem num trem e passam a noite em Viena; Linklater ganhou o Urso de Prata em Berlim.",
+  "blurb": "Filme de Linklater (1995): uma caminhada por Viena em que cada um se interessa pelo outro.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -603,10 +732,29 @@
   "pd": false,
   "blurb": "Romance de Huxley sobre um futuro de conforto, condicionamento e a droga soma.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "No romance, as pessoas são condicionadas desde o nascimento e vivem em uma sociedade que valoriza o conforto acima da liberdade. A droga soma ajuda a manter todos satisfeitos."
+   "mode": "quote",
+   "lines": [
+    [
+     "Community, Identity, Stability.",
+     "Comunidade, Identidade, Estabilidade.",
+     "Lema do Estado Mundial"
+    ]
+   ],
+   "src": "Brave New World, cap. 1 · Aldous Huxley, 1932",
+   "ctx": "No primeiro capítulo, o lema do Estado Mundial aparece num escudo sobre a entrada do Centro de Incubação e Condicionamento de Londres. Ele resume os valores dessa sociedade.",
+   "hl": [
+    "Community, Identity, Stability"
+   ]
+  },
+  "q": {
+   "q": "O que o lema do Estado Mundial diz?",
+   "o": [
+    "Liberdade, Igualdade, Fraternidade",
+    "Comunidade, Identidade, Estabilidade",
+    "Trabalho, Descanso, Diversão"
+   ],
+   "a": 1,
+   "why": "O lema é 'Community, Identity, Stability', isto é, comunidade, identidade e estabilidade."
   }
  },
  "Breakfast at Tiffany's: The Party": {

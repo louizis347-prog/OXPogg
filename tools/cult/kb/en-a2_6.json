@@ -162,10 +162,34 @@
   "pd": false,
   "blurb": "Novela de Hemingway: a meta de Santiago é pescar um peixe grande.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Depois de muitos dias sem pegar peixe, Santiago decide ir mais longe no mar com um objetivo claro: fisgar um peixe realmente grande.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "But man is not made for defeat.",
+     "Mas o homem não foi feito para a derrota.",
+     "Santiago"
+    ],
+    [
+     "A man can be destroyed but not defeated.",
+     "Um homem pode ser destruído, mas não derrotado.",
+     "Santiago"
+    ]
+   ],
+   "src": "Ernest Hemingway, The Old Man and the Sea (1952)",
+   "ctx": "Santiago continua lutando com o grande marlim mesmo exausto e fala consigo mesmo sobre não aceitar a derrota.",
+   "hl": [
+    "A man can be destroyed but not defeated."
+   ]
+  },
+  "q": {
+   "q": "O que Santiago quer dizer com essa frase?",
+   "o": [
+    "Que ele desistiu da pesca.",
+    "Que uma pessoa pode perder tudo, mas não aceita ser derrotada por dentro.",
+    "Que o peixe é mais forte que o homem."
+   ],
+   "a": 1,
+   "why": "Ele separa 'destruído' (perder coisas, força) de 'derrotado' (desistir de si): mesmo ferido, ele não se rende."
   }
  },
  "The Persistence of Memory": {
@@ -214,10 +238,29 @@
   "pd": true,
   "blurb": "Poema de Browning: o flautista de Hamelin, os ratos e a promessa quebrada.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Depois de livrar a cidade dos ratos, o flautista pede o pagamento combinado, mas o prefeito e os cidadãos tentam pagar menos.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "A thousand guilders! Come, take fifty!",
+     "Mil guilders! Vamos, aceite cinquenta!",
+     "Prefeito"
+    ]
+   ],
+   "src": "The Pied Piper of Hamelin · Robert Browning, 1842",
+   "ctx": "Livre dos ratos, o prefeito de Hamelin tenta pagar ao flautista bem menos do que prometeu, e por isso a cena fala de preços.",
+   "hl": [
+    "take fifty"
+   ]
+  },
+  "q": {
+   "q": "Quanto o prefeito oferece ao flautista no fim?",
+   "o": [
+    "Cinquenta guilders",
+    "Mil guilders",
+    "Nenhum guilder"
+   ],
+   "a": 0,
+   "why": "Ele diz 'Come, take fifty!', oferecendo cinquenta em vez dos mil combinados."
   }
  },
  "The Pied Piper: The Question": {
@@ -264,7 +307,7 @@
   "by": "Edgar Allan Poe",
   "y1": 1844,
   "pd": true,
-  "blurb": "Conto de Poe: Dupin recupera uma carta roubada escondida à vista de todos.",
+  "blurb": "Conto de Poe (1844): Dupin recupera uma carta roubada escondida à vista de todos.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -292,10 +335,29 @@
   "pd": true,
   "blurb": "Romance de Hawthorne: Hester Prynne é obrigada a usar um A vermelho.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Na Boston puritana do século XVII, Hester Prynne é punida e obrigada a usar uma letra A escarlate no peito.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "Be true! Be true! Be true!",
+     "Seja verdadeiro! Seja verdadeiro! Seja verdadeiro!",
+     "Narrador"
+    ]
+   ],
+   "src": "Capítulo final · Nathaniel Hawthorne, 1850",
+   "ctx": "No fim do romance, o narrador resume a moral da história com um conselho de sinceridade. Serve para refletir sobre mostrar-se com honestidade, inclusive na internet.",
+   "hl": [
+    "Be true"
+   ]
+  },
+  "q": {
+   "q": "Qual é o conselho do narrador?",
+   "o": [
+    "Ser verdadeiro",
+    "Ser rico",
+    "Ser calado"
+   ],
+   "a": 0,
+   "why": "Be true quer dizer 'seja verdadeiro'."
   }
  },
  "The Secret Garden": {
@@ -303,7 +365,7 @@
   "by": "Agnieszka Holland",
   "y1": 1993,
   "pd": false,
-  "blurb": "Filme de 1993 baseado no livro de Frances Hodgson Burnett (1911).",
+  "blurb": "Filme de 1993 de Agnieszka Holland, baseado no livro de Frances Hodgson Burnett (1911).",
   "cena": {
    "mode": "scene",
    "lines": [],

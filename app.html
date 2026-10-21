@@ -184,6 +184,7 @@ body{padding-bottom:68px}
 .prog{flex:1;height:14px;background:var(--line);border-radius:99px;overflow:hidden;position:relative}
 .prog i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--river),#18A6A3);border-radius:99px;transition:width .6s cubic-bezier(.2,.8,.2,1)}
 .prog i::after{content:"";position:absolute;top:3px;left:8px;right:8px;height:4px;border-radius:99px;background:rgba(255,255,255,.4)}
+.pstep{font-weight:900;font-size:12px;color:var(--river-d);font-variant-numeric:tabular-nums;min-width:38px;text-align:center}
 .timer{font-weight:900;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:44px;text-align:right}
 .p-body{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
 .stage{max-width:760px;margin:0 auto;padding:4px 16px 24px}
@@ -562,6 +563,12 @@ body{padding-bottom:68px}
 .cv-sample{display:flex;gap:12px;align-items:center;text-align:left;background:var(--card);border:2px dashed var(--kind-c,var(--river));border-radius:var(--r);padding:12px 14px;margin-top:12px}
 .cv-sample small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;font-size:11px;letter-spacing:.08em}
 .cv-sample b{font:700 17px var(--f-read)}
+.cv-route{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:14px;padding:10px 12px;border-radius:999px;background:var(--river-l);color:var(--river-d);font-size:12px;font-weight:900;letter-spacing:.02em}
+.cv-route i{font-style:normal;color:var(--bill-d)}
+.review-step{max-width:560px;margin:0 auto;text-align:center;padding:18px 4px}
+.review-word{display:flex;align-items:center;justify-content:center;gap:10px;margin:24px 0 18px;font:800 clamp(30px,8vw,48px)/1.1 var(--f-display);color:var(--river-d)}
+.review-word .say2{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--river-l);color:var(--river-d);border:0;cursor:pointer}
+.review-win{margin:18px auto;padding:16px;border-radius:18px;background:var(--good-l);color:#115C39;font-weight:700;line-height:1.5}
 
 .planov{position:fixed;inset:0;z-index:80;background:rgba(20,16,40,.55);overflow:auto;-webkit-overflow-scrolling:touch;padding:16px}.planbox{max-width:560px;margin:0 auto;background:var(--paper,#fff);border-radius:24px;padding:14px}.node.locked{cursor:pointer;opacity:.92}.node.locked .disc{background:var(--card)}
 /* scene animations */
@@ -792,7 +799,7 @@ body{padding-bottom:68px}
 <link rel="stylesheet" href="css/novos.css">
 
 <link rel="stylesheet" href="css/pogglot2.css">
-<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=2"><link rel="stylesheet" href="css/exam-modern.css?v=1"><link rel="stylesheet" href="css/steps-modern.css?v=1"><link rel="stylesheet" href="css/lean.css?v=5"><link rel="stylesheet" href="css/sidenav.css?v=5"><link rel="stylesheet" href="css/tokens.css?v=1"><link rel="stylesheet" href="css/home2.css?v=3"><link rel="stylesheet" href="css/community3.css?v=4"><link rel="stylesheet" href="css/suavez.css?v=5"><link rel="stylesheet" href="css/desk.css?v=8"><link rel="stylesheet" href="css/air.css?v=25"><link rel="stylesheet" href="css/nbfit.css?v=1"><link rel="stylesheet" href="css/nbopen.css?v=2"><link rel="stylesheet" href="css/closefit.css?v=4">
+<link rel="stylesheet" href="css/pogglot3.css"><link rel="stylesheet" href="css/premium.css?v=1"><link rel="stylesheet" href="css/dark.css?v=1"><link rel="stylesheet" href="css/mobile.css?v=2"><link rel="stylesheet" href="css/exam-modern.css?v=1"><link rel="stylesheet" href="css/steps-modern.css?v=1"><link rel="stylesheet" href="css/lean.css?v=5"><link rel="stylesheet" href="css/sidenav.css?v=5"><link rel="stylesheet" href="css/tokens.css?v=1"><link rel="stylesheet" href="css/home2.css?v=3"><link rel="stylesheet" href="css/community3.css?v=4"><link rel="stylesheet" href="css/suavez.css?v=5"><link rel="stylesheet" href="css/desk.css?v=8"><link rel="stylesheet" href="css/air.css?v=27"><link rel="stylesheet" href="css/nbfit.css?v=1"><link rel="stylesheet" href="css/nbopen.css?v=3"><link rel="stylesheet" href="css/closefit.css?v=4">
 <script>window.PogUIReady=new Promise(function(r){window.__pgres=r});setTimeout(function(){window.__pgres()},5000)</script>
 <canvas id="confetti"></canvas>
 <div id="app"></div>
@@ -1502,7 +1509,7 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1512,7 +1519,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=199').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=201').then(r=>r.json()).then(arr=>{results[idx]=arr;})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
@@ -1600,8 +1607,18 @@ const COURSES={
   'es-c2':{id:'es-c2',group:'es',ui:'pt',tts:'es-ES',scene:'cv_es',scarf:'#D2404F',
       name:{pt:'Curso de Espanhol para Brasileiros C2',es:'Español para brasileños C2'},flag:'ES → PT-BR · C2',
       desc:{pt:'Maestria: literatura, retórica, variação e tradução entre português e espanhol.',es:'Maestría: literatura, retórica, variación y traducción entre portugués y español.'}},
+  'pt-a1':{id:'pt-a1',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',
+      name:{pt:'Português A1 para hispanofalantes',es:'Portugués A1 para hispanohablantes'},flag:'PT-BR → ES · A1',
+      desc:{pt:'400 episódios para começar no português brasileiro com cultura, voz e prática.',es:'400 episodios para empezar en portugués brasileño con cultura, voz y práctica.'}},
+  'pt-b1':{id:'pt-b1',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',name:{pt:'Português B1 para hispanofalantes',es:'Portugués B1 para hispanohablantes'},flag:'PT-BR → ES · B1',desc:{pt:'350 episódios para narrar, argumentar e conversar com mais autonomia.',es:'350 episodios para narrar, argumentar y conversar con más autonomía.'}},
+  'pt-b2':{id:'pt-b2',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',name:{pt:'Português B2 para hispanofalantes',es:'Portugués B2 para hispanohablantes'},flag:'PT-BR → ES · B2',desc:{pt:'350 episódios para debater, matizar e compreender o português real.',es:'350 episodios para debatir, matizar y comprender el portugués real.'}},
+  'pt-c1':{id:'pt-c1',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',name:{pt:'Português C1 para hispanofalantes',es:'Portugués C1 para hispanohablantes'},flag:'PT-BR → ES · C1',desc:{pt:'300 episódios de registro, estilo, literatura e comunicação profissional.',es:'300 episodios de registro, estilo, literatura y comunicación profesional.'}},
+  'pt-c2':{id:'pt-c2',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',name:{pt:'Português C2 para hispanofalantes',es:'Portugués C2 para hispanohablantes'},flag:'PT-BR → ES · C2',desc:{pt:'300 episódios de maestria, retórica, variação e interpretação.',es:'300 episodios de maestría, retórica, variación e interpretación.'}},
+  'pt-a2':{id:'pt-a2',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',
+      name:{pt:'Português A2 para hispanofalantes',es:'Portugués A2 para hispanohablantes'},flag:'PT-BR → ES · A2',
+      desc:{pt:'400 episódios para ampliar fluência, vocabulário e compreensão cultural.',es:'400 episodios para ampliar fluidez, vocabulario y comprensión cultural.'}},
   pt:{id:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',
-      name:{pt:'Português p/ hispanofalantes',es:'Portugués de Brasil'},flag:'PT-BR → ES',
+      name:{pt:'Português p/ hispanofalantes',es:'Portugués de Brasil'},flag:'PT-BR → ES',sub:['pt-a1','pt-a2','pt-b1','pt-b2','pt-c1','pt-c2'],
       desc:{pt:'De Machado a Macunaíma, para quem fala espanhol.',es:'De Machado de Assis a Macunaíma: portugués brasileño para hispanohablantes.'}},
   'enes-a1':{id:'enes-a1',group:'enes',ui:'es',tts:'en-US',scene:'cv_usa',scarf:'#2E6F95',
       name:{pt:'Inglês americano A1 para hispanofalantes',es:'Inglés americano A1 para hispanohablantes'},flag:'EN-US → ES · A1',
@@ -1687,9 +1704,15 @@ const COURSES={
   enes:{id:'enes',ui:'es',tts:'en-US',scene:'cv_usa',scarf:'#2E6F95',
       name:{pt:'Inglês p/ hispanofalantes',es:'Inglés para hispanohablantes'},flag:'EN-US → ES',
       desc:{pt:'Cultura, inglês jovem e história em trios de episódios.',es:'Cultura pop, inglés joven e historia: tres formas de aprender en cada trío de episodios.'}},
+  'fr-a1':{id:'fr-a1',group:'fr',ui:'es',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',name:{pt:'Francês A1 para hispanofalantes',es:'Francés A1 para hispanohablantes'},flag:'FR → ES · A1',desc:{pt:'400 episódios para começar no francês com cultura, voz e prática.',es:'400 episodios para empezar en francés con cultura, voz y práctica.'}},
+  'fr-a2':{id:'fr-a2',group:'fr',ui:'es',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',name:{pt:'Francês A2 para hispanofalantes',es:'Francés A2 para hispanohablantes'},flag:'FR → ES · A2',desc:{pt:'400 episódios para ampliar vocabulário e compreensão cultural.',es:'400 episodios para ampliar vocabulario y comprensión cultural.'}},
+  'fr-b1':{id:'fr-b1',group:'fr',ui:'es',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',name:{pt:'Francês B1 para hispanofalantes',es:'Francés B1 para hispanohablantes'},flag:'FR → ES · B1',desc:{pt:'350 episódios para narrar, opinar e conversar com autonomia.',es:'350 episodios para narrar, opinar y conversar con autonomía.'}},
+  'fr-b2':{id:'fr-b2',group:'fr',ui:'es',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',name:{pt:'Francês B2 para hispanofalantes',es:'Francés B2 para hispanohablantes'},flag:'FR → ES · B2',desc:{pt:'350 episódios para argumentar e compreender o francês real.',es:'350 episodios para argumentar y comprender el francés real.'}},
+  'fr-c1':{id:'fr-c1',group:'fr',ui:'es',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',name:{pt:'Francês C1 para hispanofalantes',es:'Francés C1 para hispanohablantes'},flag:'FR → ES · C1',desc:{pt:'300 episódios de registro, estilo, literatura e comunicação profissional.',es:'300 episodios de registro, estilo, literatura y comunicación profesional.'}},
+  'fr-c2':{id:'fr-c2',group:'fr',ui:'es',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',name:{pt:'Francês C2 para hispanofalantes',es:'Francés C2 para hispanohablantes'},flag:'FR → ES · C2',desc:{pt:'300 episódios de maestria, retórica, variação e interpretação.',es:'300 episodios de maestría, retórica, variación e interpretación.'}},
   fr:{id:'fr',ui:'pt',tts:'fr-FR',scene:'cv_fr',scarf:'#3E5FA0',
       name:{pt:'Francês',es:'Francés'},flag:'FR → PT-BR',
-      desc:{pt:'Do Petit Prince a Amélie: o francês que se aprende lendo e ouvindo Paris.',es:'De Le Petit Prince a Amélie: el francés que se aprende leyendo y escuchando París.'}},
+      desc:{pt:'Francês regular para hispanofalantes.',es:'Francés regular para hispanohablantes.'},sub:['fr-a1','fr-a2','fr-b1','fr-b2','fr-c1','fr-c2']},
   de:{id:'de',ui:'pt',tts:'de-DE',scene:'cv_de',scarf:'#D32F2F',
       name:{pt:'Alemão',es:'Alemán'},flag:'DE → PT-BR',
       desc:{pt:'De Heidi a Good Bye, Lenin!: o alemão que se aprende com contos, filmes e música.',es:'De Heidi a Good Bye, Lenin!: el alemán que se aprende con cuentos, cine y música.'}},
@@ -2255,7 +2278,7 @@ function homeCards(){
   // One tile per family: en / es / nb open a level hub; other courses open directly.
   const out=[];const seen={};
   Object.values(COURSES).forEach(c=>{
-    if(['nb','en','es'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
+    if(['nb','en','es','pt','fr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
       out.push({id:g.id,hub:true,feat:g.id==='nb',scene:g.scene,flag:g.flag,name:g.name,desc:g.desc,n:g.sub.reduce((a,x)=>a+(EP_COUNT[x]||0),0),d:g.sub.reduce((a,x)=>a+doneCountFor(x),0),metaR:g.id==='nb'?{pt:'Inglês A1–C2 · Espanhol A1',es:'Inglés A1–C2 · Español A1'}:{pt:'6 níveis · A1–C2',es:'6 niveles · A1–C2'}});return}
     out.push({id:c.id,hub:false,scene:c.scene,flag:c.flag,name:c.name,desc:c.desc,n:EP_COUNT[c.id]||0,d:doneCountFor(c.id)})});
   out.sort((x,y)=>(y.feat?1:0)-(x.feat?1:0));
@@ -2503,7 +2526,7 @@ function course(id){const c=COURSES[id],L=c.ui,t=T[L];let nextN=(EP[id].find(e=>
   <div class="ep-search"><input type="text" id="epsearch" placeholder="${t.searchPh}" aria-label="${t.searchPh}"></div>
   <div id="noresults" class="road-f" hidden><span>${t.noResults}</span></div>
   <div class="trail" id="trail"><svg class="path"><path id="trailpath" fill="none" stroke="#B8C9C6" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 14"/></svg>
-  ${EP[id].map((e,i)=>`${testAnchors.filter(a=>a.anchorN===e.n).map(a=>testNodeHTML(id,a.ts,i,t)).join('')}${(ARCS[id].find(x=>x[0]===e.n)||[])[1]?`<div class="arc ${arcComplete(id,e.n)?'arc-done':''}">${arcComplete(id,e.n)?arcStampSvg(e.n):''}<span>${(ARCS[id].find(x=>x[0]===e.n))[1]}</span><small>${cl(id)||(e.lv||lvl(e.n))}</small></div>`:''}${e.pl?`<button class="node locked" data-plan="${id}:${i}" data-search="${i+1} ${esc(e.t.toLowerCase())}" style="--i:${i}" title="Ver a capa deste episódio">
+  ${EP[id].map((e,i)=>`${testAnchors.filter(a=>a.anchorN===e.n).map(a=>testNodeHTML(id,a.ts,i,t)).join('')}${(ARCS[id].find(x=>x[0]===e.n)||[])[1]?`<div class="arc ${arcComplete(id,e.n)?'arc-done':''}">${arcComplete(id,e.n)?arcStampSvg(e.n):''}<span>${(ARCS[id].find(x=>x[0]===e.n))[1]}</span><small>${cl(id)||(e.lv||lvl(e.n))}</small></div>`:''}${e.pl&&!['en','es','pt','fr'].includes(c.group)?`<button class="node locked" data-plan="${id}:${i}" data-search="${i+1} ${esc(e.t.toLowerCase())}" style="--i:${i}" title="Ver a capa deste episódio">
     <span class="disc">🚧</span><span class="info"><b>${esc(e.t)}</b><small><span class="tag">${t.kind[(e.a||{}).k]||(e.a||{}).k}: ${esc((e.a||{}).w)}</span><span class="tag t3">Em breve</span></small></span></button>`:`<button class="node p${i%4} ${ST.done[id+'-'+e.n]?'done':''} ${e.n===nextN?'next':''}" data-ep="${id}:${i}" data-search="${i+1} ${esc(e.t.toLowerCase())}" style="--i:${i}">
     <span class="disc">${ST.done[id+'-'+e.n]?'✓':(e.en||i+1)}</span><span class="info"><b>${esc(e.t)}</b><small><span class="tag">${t.kind[(e.a||{}).k]||(e.a||{}).k}: ${esc((e.a||{}).w)}</span><span class="tag t2">${esc(e.s)}</span>${e.rf?'<span class="tag t3">Reforço</span>':''}${e.mod?'<span class="tag">Novo</span>':''}${e.mv?'<span class="tag t3">Veio do A1</span>':''}<span>~5 ${t.min}</span></small></span></button>`}`).join('')}${testAnchors.filter(a=>a.anchorN==='__end').map(a=>testNodeHTML(id,a.ts,EP[id].length,t)).join('')}
   </div></main>`;scrollTo(0,0);
@@ -2536,14 +2559,27 @@ function interleavePractice(mid){
   while(pi<practice.length)result.push(...practice[pi++]);
   return result;
 }
+/* Revisão cumulativa curta: recupera três palavras do episódio anterior,
+   sem apagar nem duplicar o conteúdo principal da aula atual. */
+function buildEpisodeReview(cid,idx){
+  if(!/^en-(a1|a2|b1|b2|c1|c2)$/.test(cid)||idx<1)return null;
+  const prev=EP[cid]&&EP[cid][idx-1],items=(prev&&prev.v||[]).filter(x=>Array.isArray(x)&&x[0]&&x[1]).slice(0,3);
+  if(!items.length)return null;
+  const rows=items.map((x,i)=>{const wrong=items[(i+1)%items.length][1];return {word:String(x[0]),answer:String(x[1]),options:[String(x[1]),String(wrong)].filter((v,j,a)=>a.indexOf(v)===j)};});
+  return {title:'Revisão-relâmpago',rows};
+}
 function play(cid,idx){if(window.PogBilling&&!PogBilling.allow(cid,idx))return;const e=EP[cid][idx],c=COURSES[cid];
   try{if(window.PogCloud)PogCloud.logEpisode('start',cid,e.n,0)}catch(_){}
   fxBridge(e);
   ST.lastCourse=cid;ST.lastEp=e.n;save();
   const mid=[...(e.dl?['dialog']:[]),...(e.v?(vocabPages(e)[1].length?['vocab','vocab2']:['vocab']):[]),...(e.ff?['ff']:[]),...(e.rd?['reading']:[]),...(e.rd2?['reading2']:[]),...(e.rd3?['reading3']:[]),...(e.cq?['comp']:[]),...noticeChunks(e).map((_,i)=>'notice'+i),...(e.gpr?['noticepr']:[]),...(e.pron?['pron']:[]),...(e.pronSpeak?['pronspeak']:[]),...(e.vb?['verbs']:[]),...(e.vbd?['vbdialog']:[]),...(e.pv?['phrasal']:[]),...(e.ex?['expr']:[]),...(e.reg?['register']:[]),...(e.nu?['nuance']:[]),...(e.exg?['exprg']:[]),...(e.ctx?e.ctx.flatMap((c,i)=>['ctx'+i,'ctxq'+i,...(c.q2?['ctxq2_'+i]:[])]):[]),...(e.shadow?['shadow0','shadow1']:[]),...(e.ask?e.ask.map((_,i)=>'ask'+i):(e.cp?['convo']:[])),...(e.choice?['choice']:[]),...(e.dm?['discourse']:[]),...(e.q&&e.q[0]?['q0']:[]),...(e.b?buildItems(e).map((_,i)=>'build'+i):[]),...(e.x?['gap']:[]),...(e.q&&e.q[1]?['q1']:[]),...(e.fg?['fill']:[]),...(e.pg?['pg0','pg1','pg2','pg3']:[]),...(e.hm?['hangman']:[])];
-  P={cid,idx,e,c,L:c.ui,t:T[c.ui],steps:e.fr?[...e.fr.map((_,i)=>'fx'+i),'done']:[...(/^en-/.test(cid)?['cover']:[]),'scene',...interleavePractice(mid),'done'],i:0,score:0,total:e.fr?fxTotal(e):(e.q&&e.q[0]?1:0)+(e.q&&e.q[1]?1:0)+(e.x?1:0)+(e.b?buildItems(e).length:0)+(e.fg?1:0)+(e.cq?1:0)+(e.exg?1:0)+(e.gpr?1:0)+(e.ask?e.ask.length:0)+(e.ctx?e.ctx.length:0)+(e.ctx?e.ctx.filter(c=>c.q2).length:0)+(e.shadow?2:0)+(e.pg?4:0)+(e.hm?1:0),t0:Date.now(),answered:false,convoRevealed:{},scored:{},mission:e.m||null,badges:[],streak:0};
+  const reviewData=buildEpisodeReview(cid,idx);
+  const baseSteps=e.fr?[...e.fr.map((_,i)=>'fx'+i),'done']:[...(/^en-/.test(cid)?['cover']:[]),'scene',...interleavePractice(mid),'done'];
+  if(reviewData)baseSteps.splice(baseSteps.length-1,0,'review');
+  P={cid,idx,e,c,L:c.ui,t:T[c.ui],steps:baseSteps,i:0,score:0,total:e.fr?fxTotal(e):(e.q&&e.q[0]?1:0)+(e.q&&e.q[1]?1:0)+(e.x?1:0)+(e.b?buildItems(e).length:0)+(e.fg?1:0)+(e.cq?1:0)+(e.exg?1:0)+(e.gpr?1:0)+(e.ask?e.ask.length:0)+(e.ctx?e.ctx.length:0)+(e.ctx?e.ctx.filter(c=>c.q2).length:0)+(e.shadow?2:0)+(e.pg?4:0)+(e.hm?1:0),t0:Date.now(),answered:false,convoRevealed:{},scored:{},mission:e.m||null,badges:[],streak:0,review:reviewData};
+  if(reviewData)P.total+=reviewData.rows.length;
   const el=document.createElement('div');el.className='player';el.id='player';el.setAttribute('role','dialog');el.setAttribute('aria-label',e.t);
-  el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar">×</button><div class="prog"><i id="pbar" style="width:0"></i></div><span class="timer" id="ptime">0:00</span></div>
+  el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar">×</button><div class="prog" role="progressbar" aria-label="Progresso do episódio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="pbar" style="width:0"></i></div><span class="pstep" id="pstep" aria-live="polite"></span><span class="timer" id="ptime">0:00</span></div>
    <div class="p-body" id="pbody"><div class="badge-strip" id="badges" hidden></div><div class="stage" id="pstage"></div></div>
    <div class="p-foot"><div class="in"><button class="pback" id="pback" aria-label="${T[c.ui].backStep}"><svg class="speak-ic"><use href="#i-back"/></svg></button><div class="pog-dock" id="pdock">${poggie({scarf:c.scarf})}</div><div class="bubble" id="pbub" aria-live="polite"></div><button class="cta" id="pcta"></button><button class="pskip" id="pskip" aria-label="${T[c.ui].skipStep}" title="${T[c.ui].skipStep}"><svg class="speak-ic"><use href="#i-fwd"/></svg></button></div></div>`;
   document.body.appendChild(el);document.body.style.overflow='hidden';
@@ -2555,7 +2591,7 @@ function closePlayer(){if(window.PogTTS)PogTTS.stop();clearInterval(P&&P.timer);
 const HOME_TTS={pt:'pt-BR',es:'es-MX'};
 function say(txt,mood){txt=txt||'';const b=$('#pbub'),pg=$('#pdock .pog');clearInterval(say.t);b.textContent='';pg.classList.remove('happy','happy2','happy3','sad');void pg.offsetWidth;if(mood)pg.classList.add(mood);pg.classList.add('talk');let i=0;say.t=setInterval(()=>{b.textContent=txt.slice(0,++i);if(i>=txt.length){clearInterval(say.t);pg.classList.remove('talk')}},14);if(txt)speak(txt,HOME_TTS[ST.homeLang]||'pt-BR',null,'Poggie');}
 function cta(label,en,amber){const b=$('#pcta');b.textContent=label;b.disabled=!en;b.classList.toggle('amber',!!amber);}
-function setProg(){$('#pbar').style.width=(P.i/(P.steps.length-1)*100)+'%';}
+function setProg(){const pct=Math.round(P.i/Math.max(1,P.steps.length-1)*100),bar=$('#pbar'),box=bar&&bar.parentElement;if(bar)bar.style.width=pct+'%';if(box){box.setAttribute('aria-valuenow',pct);box.setAttribute('aria-valuetext',`${P.i+1} de ${P.steps.length}`)}const lab=$('#pstep');if(lab)lab.textContent=`${P.i+1}/${P.steps.length}`;}
 function awardBadge(stepName){if(!P||!P.mission)return;let key=stepName;const nm=/^notice(\d+)$/.exec(stepName);if(nm){const chunks=noticeChunks(P.e);key=(+nm[1]===chunks.length-1)?'notice':null;}if(!key)return;const b=(P.mission.badges||[]).find(x=>x.after===key);if(b&&!P.badges.some(y=>y.label===b.label)){P.badges.push(b);beep(true);}}
 function renderBadges(){const bs=$('#badges');if(!bs)return;if(!P.mission||!P.badges.length){bs.hidden=true;bs.innerHTML='';return;}bs.hidden=false;
   bs.innerHTML=P.badges.map((b,i)=>`<span class="badge-pill" style="--i:${i}">✓ ${esc(b.label)}</span>`).join('');}
@@ -2574,6 +2610,7 @@ function stepKind(s){
   if(/^fx\d+$/.test(s)){const ff=P.e.fr[+s.slice(2)];return FX_KIND[ff.k]||'story'}
   if(s==='cover')return 'story';
   if(s==='scene')return 'story';
+  if(s==='review')return 'practice';
   if(s==='dialog'||s==='vbdialog'||s==='convo'||/^ctx\d+$/.test(s))return 'dialog';
   if(s==='vocab'||s==='vocab2'||s==='ff'||s==='verbs'||s==='phrasal'||s==='expr'||s==='register'||s==='discourse')return 'vocab';
   if(s==='reading'||s==='reading2'||s==='reading3'||s==='comp')return 'reading';
@@ -2606,6 +2643,7 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
     h=`<div class="step epcover"><div class="cv-hero"><div class="cv-pg">${poggie({cls:'happy',scarf:P.c.scarf})}</div><span class="eyebrow">EP ${(P.e&&P.e.en)||P.idx+1} · ${cl(P.cid)||(e.lv||lvl(e.n))}${an?' · '+esc(an):''}</span><h1 class="cv-title">${esc(e.t)}</h1><p class="cv-sub">${esc(clean(e.s))}</p></div>
     <div class="row cv-stats"><div class="stat" style="--i:0"><b>~5</b><small>min</small></div><div class="stat" style="--i:1"><b>${nW}</b><small>palavras</small></div><div class="stat" style="--i:2"><b>${nAct}</b><small>atividades</small></div></div>
     <div class="recap cv-learn"><b style="font-family:var(--f-display);font-size:17px">O que você vai aprender</b><ul class="cv-list">${shown.map((x,k)=>`<li style="--i:${k}"><span class="cv-ic">${x[0]}</span><span>${esc(x[1])}</span></li>`).join('')}</ul></div>
+    <div class="cv-route" aria-label="Roteiro do episódio"><span>① descobrir</span><i>→</i><span>② praticar</span><i>→</i><span>③ usar</span><i>→</i><span>④ revisar</span></div>
     ${sample?`<div class="cv-sample"><button class="say2" id="cvsay" aria-label="${t.listen}">${spk}</button><div><small>Uma prévia</small><b>“${esc(sample)}”</b></div></div>`:''}
     ${chips?`<div class="badge-strip on">${chips}</div>`:''}</div>`;
     st.innerHTML=h;const cb=$('#cvsay');if(cb)cb.onclick=()=>speak(sample,lang,cb);
@@ -2866,6 +2904,7 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
     if(!won&&!lost){st.querySelectorAll('.hm-key').forEach(b=>b.onclick=()=>{if(P.answered)return;const l=b.dataset.l;if(P.hmGuessed.includes(l))return;P.hmGuessed.push(l);render();});}
     else{P.answered=true;}
     say(won?pickRight(t):(lost?t.wrong+' '+t.hmWordWas+' '+word:t.pHangman));cta(t.cont,won||lost);}
+  else if(s==='review'){const R=P.review&&P.review.rows||[];let ri=0,hits=0,tries=0;const draw=()=>{const r=R[ri];if(!r){P.score+=hits;P.reviewDone=true;st.innerHTML=`<div class="step review-step"><span class="eyebrow">REVISÃO CUMULATIVA</span><h2>Você recuperou o conteúdo anterior</h2><p class="review-win">${hits}/${R.length} respostas de primeira. Esse resgate ajuda a levar as palavras para a memória de longo prazo.</p></div>`;say('Revisão concluída! Agora o conteúdo novo encontra o que você já aprendeu.');cta(t.cont,true,true);P.fx={cta:null};return;}const opts=[...r.options].sort(()=>Math.random()-.5);st.innerHTML=`<div class="step review-step"><span class="eyebrow">REVISÃO CUMULATIVA · ${ri+1}/${R.length}</span><h2>Você lembra o significado?</h2><div class="review-word"><b>${esc(r.word)}</b><button class="say2" id="revsay" aria-label="Ouvir">${spk}</button></div><div class="rdg-o">${opts.map(o=>`<button type="button" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div><div id="revfb" class="feedback" hidden></div></div>`;const rb=$('#revsay');if(rb)rb.onclick=()=>speak(r.word,P.c.tts,rb);cta('Escolha uma resposta',false);st.querySelectorAll('.rdg-o button').forEach(b=>b.onclick=()=>{if(b.disabled)return;const ok=b.dataset.v===r.answer;tries++;b.classList.add(ok?'ok':'no');if(!ok){const good=[...st.querySelectorAll('.rdg-o button')].find(x=>x.dataset.v===r.answer);if(good)good.classList.add('ok');}else if(tries===1)hits++;st.querySelectorAll('.rdg-o button').forEach(x=>x.disabled=true);const fb=$('#revfb');fb.hidden=false;fb.className='feedback '+(ok?'ok':'no');fb.innerHTML=ok?'<b>Boa!</b><span>Você recuperou essa palavra.</span>':`<b>Quase!</b><span>A resposta era <strong>${esc(r.answer)}</strong>. Agora ela ficou mais acessível para a próxima vez.</span>`;cta(ri<R.length-1?'Próxima palavra ▶':t.cont,true,true);P.fx={cta:()=>{ri++;tries=0;draw();return true}};});};draw();}
   else if(s==='done'){const key=P.cid+'-'+e.n,first=!ST.done[key];const xp=10+P.score*5;if(first){ST.done[key]=true;ST.xp+=xp;bumpStreak();}P.srsAdded=srsAddEp(P.cid,e);
     ST.totalCorrect+=P.score;ST.totalAnswered+=P.total;save();
     try{if(window.PogCloud)PogCloud.logEpisode('done',P.cid,e.n,P.total?P.score/P.total:0)}catch(_){}
@@ -2895,6 +2934,7 @@ function ctaClick(){if(P.isTest)return testCta();const s=P.steps[P.i],e=P.e,t=P.
   if(/^fx\d+$/.test(s))return fxCta(s);
   const isQ=s==='q0'||s==='q1'||s==='gap'||/^build\d+$/.test(s)||/^ask\d+$/.test(s)||/^ctxq\d+$/.test(s)||/^ctxq2_\d+$/.test(s)||s==='fill'||s==='comp'||s==='exprg'||s==='noticepr'||/^shadow[01]$/.test(s)||/^pg\d$/.test(s);
   if(s==='done'){const ni=nextPlayIdx(P.cid,P.idx);const cid=P.cid;$('#player').remove();document.body.style.overflow='';clearInterval(P.timer);P=null;if(ni>=0)play(cid,ni);else course(cid);return;}
+  if(s==='review'&&P.fx&&typeof P.fx.cta==='function'){if(P.fx.cta()!==false)return;}
   if(isQ&&!P.answered){let ok,right,why='';
     if(/^build\d+$/.test(s)){const bItem=buildItems(e)[+s.slice(5)];ok=P.built.join(' ')===bItem[0];right=bItem[0];const sl=$('#slot');sl.classList.add(ok?'ok':'no');}
     else if(/^ask\d+$/.test(s)){const it=e.ask[+s.slice(3)];ok=P.built.join(' ')===it.a;right=it.a;const sl=$('#slot');sl.classList.add(ok?'ok':'no');const lang=P.c.tts;speak(it.a,lang);}
@@ -4392,7 +4432,7 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
     const st=document.createElement('style');st.id='boot-spin-kf';st.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(st);
   }
   try{
-    MANIFEST = await fetch('data/manifest.json?v=100',{cache:'no-store'}).then(r=>r.json());
+    MANIFEST = await fetch('data/manifest.json?v=102',{cache:'no-store'}).then(r=>r.json());
     try{ EP_COUNT = await fetch('data/counts.json?v=95',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
   }catch(e){
     console.error('Pogglot data load failed', e);
@@ -4494,6 +4534,6 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <style id="pgchat-fit">@media(max-width:820px){.pg-chat.in-conv{height:calc(100vh - 150px);height:calc(100dvh - 150px);min-height:340px;scroll-margin-top:62px}.pg-chat.in-conv .pg-conv{height:100%}.pg-compose{padding-bottom:12px}}</style>
 <script>(function(){var f=function(){document.querySelectorAll('.pg-chat').forEach(function(c){if(c.classList.contains('in-conv')){if(!c._fit){c._fit=1;setTimeout(function(){try{c.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){}var m=c.querySelector('.pg-msgs');if(m)m.scrollTop=m.scrollHeight},80)}}else c._fit=0})};try{new MutationObserver(f).observe(document.body,{subtree:true,attributes:true,attributeFilter:['class'],childList:true})}catch(e){}})();</script>
 <script src="js/pager.js?v=11"></script>
-<script src="js/life.js?v=2"></script><script src="js/onboard.js?v=1"></script><script src="js/album.js?v=1"></script><link rel="stylesheet" href="css/livexp.css?v=1"><script src="js/livexp.js?v=1"></script><link rel="stylesheet" href="css/cultfoco.css?v=1"><script src="js/cultfoco-data.js?v=1"></script><script src="js/cultfoco.js?v=1"></script><script src="js/nbopen.js?v=2"></script><script src="js/closefit.js?v=1"></script><link rel="stylesheet" href="css/streakleague.css?v=4"><script src="js/streakleague.js?v=1"></script>
+<script src="js/life.js?v=2"></script><script src="js/onboard.js?v=1"></script><script src="js/album.js?v=1"></script><link rel="stylesheet" href="css/livexp.css?v=1"><script src="js/livexp.js?v=1"></script><link rel="stylesheet" href="css/cultfoco.css?v=1"><script src="js/cultfoco-data.js?v=1"></script><script src="js/cultfoco.js?v=1"></script><script src="js/nbopen.js?v=3"></script><script src="js/closefit.js?v=1"></script><link rel="stylesheet" href="css/streakleague.css?v=4"><script src="js/streakleague.js?v=1"></script>
 <script src="js/illus.js?v=1"></script>
 </body></html>

@@ -4,7 +4,7 @@
   "by": "Westinghouse (Feira Mundial de Nova York)",
   "y1": 1939,
   "pd": false,
-  "blurb": "Cápsula enterrada em 1939 na Feira Mundial de Nova York, para ser aberta no ano 6939.",
+  "blurb": "Cápsula da Westinghouse ligada à Feira Mundial de Nova York de 1939, para ser aberta no ano 6939.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -160,7 +160,7 @@
   "by": "Ridley Scott",
   "y1": 1991,
   "pd": false,
-  "blurb": "Filme de Ridley Scott (1991) sobre duas amigas em fuga pelo sudoeste dos EUA.",
+  "blurb": "Filme de Ridley Scott (1991): duas amigas em fuga pelo sudoeste dos EUA.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -318,10 +318,35 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau conta como construiu, ele mesmo, uma cabana perto do lago Walden e como cuidou dela."
+   "mode": "quote",
+   "lines": [
+    [
+     "Near the end of March, 1845, I borrowed an axe",
+     "No fim de março de 1845, peguei um machado emprestado",
+     "Thoreau"
+    ],
+    [
+     "and went down to the woods by Walden Pond",
+     "e fui até o bosque junto ao lago Walden",
+     "Thoreau"
+    ]
+   ],
+   "src": "Economy · Walden, 1854",
+   "ctx": "Thoreau conta como começou a construir a cabana: pegou um machado emprestado e foi cortar madeira perto do lago.",
+   "hl": [
+    "borrowed an axe",
+    "woods by Walden Pond"
+   ]
+  },
+  "q": {
+   "q": "O que Thoreau pegou emprestado?",
+   "o": [
+    "Um machado",
+    "Um barco",
+    "Um cavalo"
+   ],
+   "a": 0,
+   "why": "Ele diz 'I borrowed an axe', ou seja, pegou um machado emprestado."
   }
  },
  "Walden: Economy": {
@@ -331,10 +356,29 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "No capítulo Economia, Thoreau calcula quanto gastou e defende uma vida com menos gastos."
+   "mode": "quote",
+   "lines": [
+    [
+     "The mass of men lead lives of quiet desperation.",
+     "A maioria dos homens leva uma vida de silenciosa desesperação.",
+     "Thoreau"
+    ]
+   ],
+   "src": "Economy · Walden, 1854",
+   "ctx": "No capítulo Economy, Thoreau critica quem trabalha sem parar para sustentar gastos de que não precisa. É a frase mais citada do capítulo.",
+   "hl": [
+    "lives of quiet desperation"
+   ]
+  },
+  "q": {
+   "q": "O que Thoreau diz sobre a maioria dos homens?",
+   "o": [
+    "Vivem em silenciosa desesperação",
+    "Vivem muito felizes",
+    "Ganham muito dinheiro"
+   ],
+   "a": 0,
+   "why": "A frase diz 'lead lives of quiet desperation'."
   }
  },
  "Walden: Living Simply": {
@@ -344,10 +388,35 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau defende uma vida simples, em que viver com pouco traz mais liberdade."
+   "mode": "quote",
+   "lines": [
+    [
+     "I say, let your affairs be as two or three,",
+     "Eu digo: que seus assuntos sejam dois ou três,",
+     "Thoreau"
+    ],
+    [
+     "and not a hundred or a thousand",
+     "e não cem ou mil",
+     "Thoreau"
+    ]
+   ],
+   "src": "Where I Lived, and What I Lived For · Walden, 1854",
+   "ctx": "Thoreau pede uma vida com poucos assuntos e compromissos, para ter mais liberdade.",
+   "hl": [
+    "two or three",
+    "hundred or a thousand"
+   ]
+  },
+  "q": {
+   "q": "Quantos assuntos Thoreau recomenda ter?",
+   "o": [
+    "Dois ou três",
+    "Cem",
+    "Mil"
+   ],
+   "a": 0,
+   "why": "Ele diz 'as two or three, and not a hundred or a thousand'."
   }
  },
  "Walden: Living With Less": {
@@ -357,10 +426,35 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau mostra que se pode viver bem com menos coisas, usando só o que a natureza e o trabalho oferecem."
+   "mode": "quote",
+   "lines": [
+    [
+     "A man is rich in proportion to the number of things",
+     "Um homem é rico na proporção das coisas",
+     "Thoreau"
+    ],
+    [
+     "which he can afford to let alone.",
+     "de que pode abrir mão.",
+     "Thoreau"
+    ]
+   ],
+   "src": "Where I Lived, and What I Lived For · Walden, 1854",
+   "ctx": "Thoreau diz que a riqueza está em poder dispensar coisas, não em acumulá-las.",
+   "hl": [
+    "rich in proportion",
+    "afford to let alone"
+   ]
+  },
+  "q": {
+   "q": "Segundo Thoreau, quem é rico?",
+   "o": [
+    "Quem pode abrir mão de muitas coisas",
+    "Quem tem mais dinheiro",
+    "Quem tem a casa maior"
+   ],
+   "a": 0,
+   "why": "A frase diz que a riqueza é proporcional ao que a pessoa pode deixar de lado."
   }
  },
  "Walden: Needs": {
@@ -370,10 +464,35 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau separa as necessidades reais, como abrigo e comida, do que é apenas desejo."
+   "mode": "quote",
+   "lines": [
+    [
+     "Most of the luxuries, and many of the so-called comforts of life,",
+     "A maioria dos luxos, e muitos dos chamados confortos da vida,",
+     "Thoreau"
+    ],
+    [
+     "are not only not indispensable, but positive hindrances to the elevation of mankind.",
+     "não só não são indispensáveis, como são obstáculos ao progresso da humanidade.",
+     "Thoreau"
+    ]
+   ],
+   "src": "Economy · Walden, 1854",
+   "ctx": "Thoreau separa o que é necessário do que é só luxo, e diz que muitos confortos atrapalham.",
+   "hl": [
+    "not indispensable",
+    "positive hindrances"
+   ]
+  },
+  "q": {
+   "q": "O que Thoreau diz sobre muitos luxos e confortos?",
+   "o": [
+    "Atrapalham as pessoas",
+    "São indispensáveis",
+    "Deixam todos felizes"
+   ],
+   "a": 0,
+   "why": "A frase diz que são 'positive hindrances', ou seja, obstáculos."
   }
  },
  "Walden: Slow Living": {
@@ -383,10 +502,29 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Perto do lago, Thoreau passa o tempo observando a natureza, sem pressa e com atenção ao ritmo de cada dia."
+   "mode": "quote",
+   "lines": [
+    [
+     "Time is but the stream I go a-fishing in.",
+     "O tempo é apenas o riacho em que vou pescar.",
+     "Thoreau"
+    ]
+   ],
+   "src": "Where I Lived, and What I Lived For · Walden, 1854",
+   "ctx": "Thoreau compara o tempo a um riacho em que ele vai pescar, sem pressa e com atenção.",
+   "hl": [
+    "stream I go a-fishing in"
+   ]
+  },
+  "q": {
+   "q": "Com o que Thoreau compara o tempo?",
+   "o": [
+    "Com um riacho",
+    "Com um relógio",
+    "Com um livro"
+   ],
+   "a": 0,
+   "why": "Ele diz que o tempo é 'the stream I go a-fishing in'."
   }
  },
  "Walden: The Method": {
@@ -396,10 +534,29 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau descreve passo a passo o que fez, e por onde começou, para viver na cabana."
+   "mode": "quote",
+   "lines": [
+    [
+     "In the long run men hit only what they aim at.",
+     "No longo prazo, os homens só acertam aquilo que visam.",
+     "Thoreau"
+    ]
+   ],
+   "src": "Walden, 1854",
+   "ctx": "Thoreau defende ter um objetivo alto e um plano, porque no fim só se alcança o que se mira.",
+   "hl": [
+    "hit only what they aim at"
+   ]
+  },
+  "q": {
+   "q": "Segundo a frase, os homens acertam só o quê?",
+   "o": [
+    "Aquilo que visam",
+    "O que está perto",
+    "O que o vizinho quer"
+   ],
+   "a": 0,
+   "why": "A frase diz 'hit only what they aim at'."
   }
  },
  "Walden: Why I Went": {
@@ -409,10 +566,35 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau explica por que foi viver no bosque: queria encarar apenas os fatos essenciais da vida."
+   "mode": "quote",
+   "lines": [
+    [
+     "I went to the woods because I wished to live deliberately,",
+     "Fui para o bosque porque queria viver de modo deliberado,",
+     "Thoreau"
+    ],
+    [
+     "to front only the essential facts of life",
+     "encarar apenas os fatos essenciais da vida",
+     "Thoreau"
+    ]
+   ],
+   "src": "Where I Lived, and What I Lived For · Walden, 1854",
+   "ctx": "Thoreau explica por que foi viver no bosque: queria encarar apenas os fatos essenciais da vida.",
+   "hl": [
+    "live deliberately",
+    "essential facts of life"
+   ]
+  },
+  "q": {
+   "q": "Por que Thoreau foi para o bosque?",
+   "o": [
+    "Para viver de modo deliberado",
+    "Para fugir da polícia",
+    "Para ganhar dinheiro"
+   ],
+   "a": 0,
+   "why": "Ele diz que queria 'live deliberately', viver com intenção."
   }
  },
  "Walden: Working for Yourself": {
@@ -422,10 +604,35 @@
   "pd": true,
   "blurb": "Livro de Thoreau (1854) sobre dois anos numa cabana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Thoreau trabalhou por conta própria, só o suficiente para se sustentar, e guardou o resto do tempo para si."
+   "mode": "quote",
+   "lines": [
+    [
+     "by working about six weeks in a year,",
+     "trabalhando cerca de seis semanas por ano,",
+     "Thoreau"
+    ],
+    [
+     "I could meet all the expenses of living.",
+     "eu podia cobrir todas as despesas de viver.",
+     "Thoreau"
+    ]
+   ],
+   "src": "Economy · Walden, 1854",
+   "ctx": "Thoreau conta que trabalhava por conta própria só o suficiente para se sustentar, e guardava o resto do tempo para si.",
+   "hl": [
+    "six weeks in a year",
+    "expenses of living"
+   ]
+  },
+  "q": {
+   "q": "Quantas semanas por ano Thoreau precisava trabalhar?",
+   "o": [
+    "Cerca de seis",
+    "Cerca de vinte",
+    "Todas as semanas"
+   ],
+   "a": 0,
+   "why": "Ele diz 'about six weeks in a year'."
   }
  },
  "WALL·E: The Trash": {
@@ -433,7 +640,7 @@
   "by": "Andrew Stanton",
   "y1": 2008,
   "pd": false,
-  "blurb": "Animação da Pixar (2008), dirigida por Andrew Stanton.",
+  "blurb": "Animação da Pixar (2008): um robô solitário limpa uma Terra coberta de lixo.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -448,10 +655,30 @@
   "pd": false,
   "blurb": "Rádio-teatro de Orson Welles (1938) sobre uma invasão marciana.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Os ouvintes de 1938 acompanham, só pelo som, boletins sobre uma invasão de marcianos, o que exige atenção ao ouvir."
+   "mode": "quote",
+   "lines": [
+    [
+     "We interrupt our program of dance music to bring you a special bulletin.",
+     "Interrompemos nossa programação de música de dança para trazer um boletim especial.",
+     "Locutor"
+    ]
+   ],
+   "src": "Rádio · CBS, 30/10/1938",
+   "ctx": "Na transmissão de 1938, a música de baile é interrompida por boletins falsos sobre uma invasão marciana. Alguns ouvintes acharam que era real.",
+   "hl": [
+    "interrupt our program",
+    "special bulletin"
+   ]
+  },
+  "q": {
+   "q": "O que interrompe a música?",
+   "o": [
+    "Um boletim especial",
+    "Um comercial",
+    "Um telefonema"
+   ],
+   "a": 0,
+   "why": "Special bulletin quer dizer 'boletim especial'."
   }
  },
  "War of the Worlds: The News": {
@@ -487,10 +714,29 @@
   "pd": false,
   "blurb": "Livro infantil de Maurice Sendak (1963) sobre o menino Max.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Max, de fantasia de lobo, vai de barco a uma ilha de criaturas e vira rei delas, antes de voltar para casa."
+   "mode": "quote",
+   "lines": [
+    [
+     "Let the wild rumpus start!",
+     "Que comece a farra selvagem!",
+     "Max"
+    ]
+   ],
+   "src": "Where the Wild Things Are · Maurice Sendak, 1963",
+   "ctx": "Já coroado rei das criaturas, Max manda começar a festa. Rumpus é uma palavra para barulho e bagunça animada.",
+   "hl": [
+    "wild rumpus"
+   ]
+  },
+  "q": {
+   "q": "O que Max quer que aconteça?",
+   "o": [
+    "Que a festa barulhenta comece",
+    "Que todos vão dormir",
+    "Que o jantar chegue"
+   ],
+   "a": 0,
+   "why": "Ele diz 'Let the wild rumpus start!', ou seja, que a farra selvagem comece."
   }
  },
  "Whiplash: The Review": {
@@ -500,10 +746,34 @@
   "pd": false,
   "blurb": "Filme de Damien Chazelle (2014) sobre um baterista e seu professor.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Um jovem baterista é avaliado e criticado por um professor exigente, que raramente elogia."
+   "mode": "quote",
+   "lines": [
+    [
+     "There are no two words in the English language more harmful than",
+     "Não há duas palavras em inglês mais prejudiciais do que",
+     "Fletcher"
+    ],
+    [
+     "'good job.'",
+     "'bom trabalho.'",
+     "Fletcher"
+    ]
+   ],
+   "src": "Whiplash · Damien Chazelle, 2014",
+   "ctx": "Fletcher defende seu método duro com esta frase, dita numa conversa com Andrew. A redação exata varia um pouco entre as transcrições.",
+   "hl": [
+    "good job"
+   ]
+  },
+  "q": {
+   "q": "O que Fletcher diz sobre 'good job'?",
+   "o": [
+    "Que são as palavras mais úteis",
+    "Que são as duas palavras mais prejudiciais",
+    "Que ele nunca as ouviu"
+   ],
+   "a": 1,
+   "why": "Ele afirma que não há duas palavras mais prejudiciais em inglês do que 'good job'."
   }
  },
  "Winnie-the-Pooh: A Hug": {
@@ -537,7 +807,7 @@
   "by": "Mike Nichols",
   "y1": 1988,
   "pd": false,
-  "blurb": "Comédia de Mike Nichols (1988) com Melanie Griffith.",
+  "blurb": "Comédia de Mike Nichols (1988): uma secretária ambiciosa de Staten Island tenta subir em Wall Street.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -552,10 +822,29 @@
   "pd": true,
   "blurb": "Romance de Emily Brontë (1847) nos pântanos de Yorkshire.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "hl": [],
-   "ctx": "Nos pântanos de Yorkshire, o tempo muda de repente, e as tempestades acompanham os conflitos da história."
+   "mode": "quote",
+   "lines": [
+    [
+     "descriptive of the atmospheric tumult to which its station is exposed in stormy weather",
+     "que descreve o tumulto atmosférico a que a casa fica exposta em tempo de tempestade",
+     "Lockwood"
+    ]
+   ],
+   "src": "Wuthering Heights, cap. 1 · Emily Brontë",
+   "ctx": "Lockwood explica o nome da casa: wuthering é um adjetivo local para o tumulto do tempo quando há tempestade.",
+   "hl": [
+    "atmospheric tumult"
+   ]
+  },
+  "q": {
+   "q": "O que a palavra wuthering descreve?",
+   "o": [
+    "O tumulto do tempo em dias de tempestade",
+    "Uma festa de aldeia",
+    "Um jardim bem cuidado"
+   ],
+   "a": 0,
+   "why": "Lockwood diz que o adjetivo descreve o tumulto atmosférico em tempo de tempestade."
   }
  },
  "You've Got Mail": {

@@ -149,10 +149,34 @@
   "pd": true,
   "blurb": "Conto de Natal: um casal pobre descobre que os presentes não podem ser usados.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Cena resumida: Della ganha pentes para o cabelo que acabou de vender, e Jim ganha uma corrente para um relógio que vendeu.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "Dell, let's put our Christmas presents away and keep 'em a while.",
+     "Dell, vamos guardar nossos presentes de Natal e ficar com eles por um tempo.",
+     "Jim"
+    ],
+    [
+     "They're too nice to use just at present.",
+     "São bons demais para usar agora.",
+     "Jim"
+    ]
+   ],
+   "src": "O. Henry, 1905",
+   "ctx": "Depois de abrirem os presentes, Jim vê que o pente e a corrente ficaram inúteis e propõe guardar tudo por um tempo.",
+   "hl": [
+    "keep 'em a while"
+   ]
+  },
+  "q": {
+   "q": "O que Jim propõe fazer com os presentes?",
+   "o": [
+    "Guardá-los por um tempo",
+    "Devolvê-los hoje",
+    "Dá-los a um vizinho"
+   ],
+   "a": 0,
+   "why": "Ele diz que os presentes são bons demais para usar agora."
   }
  },
  "The Gift of the Magi: The Presents": {
@@ -162,10 +186,29 @@
   "pd": true,
   "blurb": "Conto de Natal: um casal pobre troca presentes vendendo o que mais ama.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Cena resumida: Della corta e vende o cabelo para comprar uma corrente de relógio, enquanto Jim vende o relógio para comprar pentes.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "One dollar and eighty-seven cents. That was all.",
+     "Um dólar e oitenta e sete centavos. Era tudo.",
+     "Narrador"
+    ]
+   ],
+   "src": "Abertura do conto · O. Henry",
+   "ctx": "É a frase de abertura do conto: Della conta o dinheiro que juntou para comprar o presente de Natal de Jim.",
+   "hl": [
+    "One dollar and eighty-seven cents"
+   ]
+  },
+  "q": {
+   "q": "O que a frase mostra sobre Della?",
+   "o": [
+    "Que ela tem pouco dinheiro",
+    "Que ela é rica",
+    "Que ela perdeu o relógio"
+   ],
+   "a": 0,
+   "why": "Um dólar e oitenta e sete centavos é todo o dinheiro dela para o presente."
   }
  },
  "The Gingerbread Man: The Chase": {
@@ -257,7 +300,7 @@
   "by": "Jornais da época",
   "y1": 1871,
   "pd": true,
-  "blurb": "Incêndio de outubro de 1871 que destruiu grande parte de Chicago.",
+  "blurb": "Incêndio de outubro de 1871 que destruiu grande parte de Chicago, quando ainda não havia o 911.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -272,10 +315,34 @@
   "pd": true,
   "blurb": "Romance de Fitzgerald: Nick recebe um convite para as festas do misterioso vizinho Gatsby.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Cena resumida: Nick recebe um convite formal de Gatsby para uma de suas festas luxuosas em West Egg.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "I believe that on the first night I went to Gatsby's house",
+     "Acho que na primeira noite em que fui à casa de Gatsby",
+     "Nick Carraway"
+    ],
+    [
+     "I was one of the few guests who had actually been invited.",
+     "fui um dos poucos convidados que realmente tinham sido convidados.",
+     "Nick Carraway"
+    ]
+   ],
+   "src": "Cap. 3 · F. Scott Fitzgerald, 1925",
+   "ctx": "No capítulo 3, Nick vai à primeira festa de Gatsby e comenta que quase ninguém ali tinha recebido um convite de verdade.",
+   "hl": [
+    "actually been invited"
+   ]
+  },
+  "q": {
+   "q": "O que Nick diz sobre os convidados da festa?",
+   "o": [
+    "Que todos tinham recebido convite formal",
+    "Que ele foi um dos poucos realmente convidados",
+    "Que ninguém quis ir à festa"
+   ],
+   "a": 1,
+   "why": "Ele afirma ser um dos poucos convidados que haviam recebido convite de verdade."
   }
  },
  "The Great Gatsby: The Newspaper": {
@@ -298,10 +365,34 @@
   "pd": false,
   "blurb": "Filme de Baz Luhrmann sobre as festas luxuosas de Gatsby, baseado no romance de Fitzgerald.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Cena de festa: música, fogos, champanhe e multidões na mansão de Gatsby, vistos pelos olhos de Nick Carraway.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "I like large parties. They're so intimate.",
+     "Gosto de festas grandes. São tão íntimas.",
+     "Jordan Baker"
+    ],
+    [
+     "At small parties there isn't any privacy.",
+     "Em festas pequenas não existe privacidade.",
+     "Jordan Baker"
+    ]
+   ],
+   "src": "Cap. 3 · F. Scott Fitzgerald, 1925",
+   "ctx": "Na festa de Gatsby, Jordan Baker explica a Nick por que prefere eventos grandes. A fala está no livro e foi levada ao cinema na versão de 2013.",
+   "hl": [
+    "large parties"
+   ]
+  },
+  "q": {
+   "q": "Por que Jordan gosta de festas grandes?",
+   "o": [
+    "Porque são mais barulhentas",
+    "Porque, para ela, são mais íntimas e há mais privacidade",
+    "Porque a comida é melhor"
+   ],
+   "a": 1,
+   "why": "Ela diz que festas grandes são íntimas e que nas pequenas não há privacidade."
   }
  },
  "The Great Gatsby: West Egg": {
@@ -311,34 +402,10 @@
   "pd": true,
   "blurb": "Nick Carraway se muda para West Egg, ao lado da mansão de Gatsby.",
   "cena": {
-   "mode": "page",
-   "lines": [
-    [
-     "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
-     "Nos meus anos mais jovens e vulneráveis, meu pai me deu um conselho que venho remoendo desde então.",
-     "Nick Carraway"
-    ],
-    [
-     "'Whenever you feel like criticizing any one,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'",
-     "'Sempre que sentir vontade de criticar alguém', disse ele, 'lembre-se de que nem todos neste mundo tiveram as vantagens que você teve.'",
-     "o pai de Nick"
-    ]
-   ],
-   "src": "Capítulo 1 · F. Scott Fitzgerald, 1925",
+   "mode": "scene",
+   "lines": [],
    "ctx": "Abertura do romance: Nick lembra o conselho que o pai lhe deu antes de contar a história de Gatsby.",
-   "hl": [
-    "advice"
-   ]
-  },
-  "q": {
-   "q": "O que o pai de Nick aconselha?",
-   "o": [
-    "Lembrar que nem todos tiveram as mesmas vantagens",
-    "Evitar as festas ricas",
-    "Escrever um diário"
-   ],
-   "a": 0,
-   "why": "Ele pede cautela antes de criticar os outros."
+   "hl": []
   }
  },
  "The Guinness Book of Records": {
@@ -361,10 +428,29 @@
   "pd": false,
   "blurb": "Longa entrevista de Truffaut com Hitchcock, base do livro Hitchcock/Truffaut (1966).",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Cena geral: durante uma semana de agosto de 1962, o cineasta francês François Truffaut entrevista Alfred Hitchcock, com a ajuda de uma intérprete.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "Drama is life with the dull bits cut out.",
+     "Drama é a vida com as partes chatas cortadas.",
+     "Hitchcock"
+    ]
+   ],
+   "src": "Frase atribuída a Alfred Hitchcock, 1956",
+   "ctx": "Esta é uma frase famosa de Hitchcock sobre cinema, registrada em 1956; ela não vem da entrevista com Truffaut, mas resume o que ele diz sobre contar histórias.",
+   "hl": [
+    "dull bits"
+   ]
+  },
+  "q": {
+   "q": "O que Hitchcock diz sobre o drama?",
+   "o": [
+    "Que é a vida sem as partes chatas",
+    "Que é sempre muito longo",
+    "Que só serve para o cinema"
+   ],
+   "a": 0,
+   "why": "Ele diz que drama é a vida com as partes chatas cortadas."
   }
  },
  "The Hitchhiker's Guide to the Galaxy": {
@@ -374,10 +460,29 @@
   "pd": false,
   "blurb": "Comédia de ficção científica: Arthur Dent escapa da destruição da Terra com um guia galáctico.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Cena resumida: logo depois da demolição da Terra, Arthur e Ford Prefect viajam pela galáxia com um guia na mão.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "It has the words DON'T PANIC inscribed in large friendly letters on its cover.",
+     "Tem as palavras DON'T PANIC escritas em letras grandes e amigáveis na capa.",
+     "Narrador"
+    ]
+   ],
+   "src": "Douglas Adams, 1979",
+   "ctx": "O narrador explica por que o Guia vende mais que a concorrência: além de ser mais barato, traz na capa um aviso que acalma o leitor.",
+   "hl": [
+    "DON'T PANIC"
+   ]
+  },
+  "q": {
+   "q": "O que está escrito na capa do Guia?",
+   "o": [
+    "DON'T PANIC",
+    "KEEP OUT",
+    "NO ENTRY"
+   ],
+   "a": 0,
+   "why": "A capa traz 'DON'T PANIC' em letras grandes e amigáveis."
   }
  },
  "The Hound of the Baskervilles": {

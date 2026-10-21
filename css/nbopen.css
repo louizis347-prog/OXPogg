@@ -122,3 +122,9 @@
 /* nível extra de compactação (revisões em celular pequeno) */
 .nbo-t6 .nbo-fb,.nbo-t6 .nbo-fb .feedback>div{font-size:11.5px!important;line-height:1.25!important}.nbo-t6 .nbo-fb .feedback b,.nbo-t6 .nbo-fb .feedback h4{font-size:13px!important}
 .nbo-t6 .nbo-card{padding:6px 8px!important;gap:4px!important}.nbo-t6 .nbo-gap{font-size:13.5px!important;line-height:1.3!important}.nbo-t6 .nbo-opt{padding:2px 6px!important;font-size:12px!important}.nbo-t6 .nbo-opt i{width:18px!important;height:18px!important;font-size:11px!important}.nbo-t6.nbo{gap:5px!important}.nbo-t6 .nbo-grid{gap:5px!important}
+.nbprag .nbo-list{margin:2px 0 0;padding-left:22px;display:grid;gap:9px;font:600 15px/1.4 system-ui;color:#3f385e}.nbprag .nbo-list li::marker{color:var(--g1)}
+.nbprag .nbo-hint,.nbscene .nbo-hint{padding:10px 12px;border-radius:12px;background:#f1eeff;color:#4a3fb0}
+.nbreply textarea:focus{outline:3px solid color-mix(in srgb,var(--g1) 35%,transparent);outline-offset:2px;border-color:var(--g1)!important}
+.nbchoice .nbo-opt small{font-size:12px;color:#6a6488;font-weight:600}.nbchoice .nbo-opt:focus-visible,.nbreply textarea:focus-visible{outline:3px solid #f0a500;outline-offset:2px}
+.nbreview .nbo-quote{margin:4px 0}.nbreview .nbo-fb{min-height:40px}
+@media(max-width:560px){.nbprag .nbo-list{font-size:14px;gap:7px}.nbchoice .nbo-opt span{line-height:1.3}.nbreply .nbo-grid{gap:7px}}

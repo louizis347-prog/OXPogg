@@ -6,8 +6,9 @@
 (function(){
 if(window.POG_NBOPEN===false)return;
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
-FX_KIND.nbopen1='story';FX_KIND.nbopen2='story';FX_KIND.nbopen3='practice';
-FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';
+FX_KIND.nbopen1='story';FX_KIND.nbopen2='story';FX_KIND.nbopen3='practice';FX_KIND.nbscene='story';FX_KIND.nbreply='speak';FX_KIND.nbreview='practice';FX_KIND.nbchoice='practice';FX_KIND.nbprag='story';
+FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';FX_LABEL.nbscene='Fio da história';FX_LABEL.nbreply='Sua vez';FX_LABEL.nbreview='Revisão do Neighbors';FX_LABEL.nbchoice='Escolha o tom';FX_LABEL.nbprag='Como isso soa';FX_LABEL.nbmilestone='Marco do arco';FX_LABEL.nbreflection='Fechamento do arco';
+FX_KIND.nbmilestone='reward';FX_KIND.nbreflection='reward';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,who,slow)=>{try{fxSay(String(t),who,slow)}catch(e){}};
@@ -186,6 +187,39 @@ function gapQ(e,d,lines,t,seed){
   const before=sent.slice(0,c.idx),after=sent.slice(c.idx+surf.length);
   return {before,after,opts,a:opts.indexOf(right),sent,tr:c.l[2]||'',who:c.l[0],why:sent+(c.l[2]?' — '+c.l[2]:'')}}
 
+function priorEpisode(e){try{const all=EP[P.cid]||[],i=all.findIndex(x=>x.n===e.n);return i>0?all[i-1]:null}catch(x){return null}}
+function buildThread(e,d){
+  const prev=priorEpisode(e),hero=d.hero||{};if(!hero||!d.lines.length)return null;
+  const next=d.lines.find(l=>l[0]==='You')||d.lines[1]||d.lines[0];
+  let memory='';try{memory=ST&&ST.nbTone?ST.nbTone:''}catch(x){}
+  let arc='';try{const a=(ARCS[P.cid]||[]).filter(x=>EP[P.cid].findIndex(y=>y.n===x[0])<=P.idx).slice(-1)[0];arc=a?a[1]:''}catch(x){}
+  let skill='';try{skill=ST&&ST.nbSkill?ST.nbSkill:''}catch(x){}
+  return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,skill,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||''};
+}
+function buildReply(e,d){
+  const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],answer=d.lines.find(l=>l[0]==='You')||d.lines[1];
+  if(!line||!answer||!answer[1])return null;
+  return {k:'nbreply',g:d.hero.g||['#6C3FEF','#9a7bff'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4)};
+}
+function buildReview(e){
+  const prev=priorEpisode(e);if(!prev)return null;const pf=(prev.fr||[]).find(f=>f&&f.k==='nbchat');if(!pf||!pf.lines)return null;
+  const rows=pf.lines.filter(l=>l&&l[1]&&l[2]).slice(0,2);if(!rows.length)return null;const current=(e.fr||[]).find(f=>f&&f.k==='nbchat');const wrong=(current&&current.lines||[]).map(l=>l[2]).filter(Boolean);if(!wrong.length)(e.fr||[]).filter(f=>f&&f.k==='nbtap').forEach(f=>(f.items||[]).forEach(i=>(i.opts||[]).forEach(o=>{if(o&&o[1])wrong.push(o[1])})));
+  return {k:'nbreview',g:['#00B894','#0984E3'],from:prev.t,rows:rows.map((l,i)=>{const opts=[l[2],...(wrong.filter(x=>x!==l[2]).slice(i,i+2))];return {en:l[1],pt:l[2],opts:[...new Set(opts)].slice(0,3)}})};
+}
+function buildChoice(e,d){
+  const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],model=d.lines.find(l=>l[0]==='You')||d.lines[1];if(!line||!model)return null;
+  const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),formal=/B2|C1|C2/.test(lv);
+  const opts=[{label:model[1],tone:formal?'claro e profissional':'natural',out:'Você mantém o objetivo da conversa.'},{label:line[1].replace(/[.!?]+$/,'')+'?',tone:'pedir esclarecimento',out:'Você ganha tempo e confirma o que entendeu.'},{label:'I am not sure. Could we come back to this?',tone:'mais cauteloso',out:'Você sinaliza dúvida e abre espaço para continuar.'}];
+  return {k:'nbchoice',g:d.hero.g||['#E17055','#6C5CE7'],heard:line[1],heardTr:line[2]||'',opts,level:lv};
+}
+function buildPrag(e,d){
+  const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),advanced=/B2|C1|C2/.test(lv),city=d.hero.city||'';
+  return {k:'nbprag',g:d.hero.g||['#00B894','#0984E3'],city,level:lv,scene:e.s||d.hero.sub||'',tips:advanced?['Escolha o registro: direto, diplomático ou formal.','Observe o que fica implícito e o que precisa ser dito.','Uma frase correta pode soar brusca dependendo do contexto.']:['Ouça a situação antes de responder.','Use “please”, “thanks” e perguntas curtas para soar natural.','A mesma ideia pode ter mais de uma forma correta.']};
+}
+function buildMilestone(e,d){
+  try{const a=(ARCS[P.cid]||[]).find(x=>x[0]===e.n);if(!a)return null;return {k:'nbmilestone',g:d.hero.g||['#F2A900','#E85D75'],title:a[1],level:d.hero.lvl||e.lv||'',mission:d.hero.mission||e.p||'',city:d.hero.city||''}}catch(x){return null}
+}
+function buildReflection(e,d){if(!e.rev)return null;const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),opts=/B2|C1|C2/.test(lv)?['ser mais preciso','ajustar o registro','sustentar minha opinião']:['responder com mais naturalidade','pedir esclarecimento','usar uma frase-chave sem traduzir'];return {k:'nbreflection',g:d.hero.g||['#F2A900','#E85D75'],level:lv,title:e.t||'Revisão do arco',mission:e.p||'Reveja as situações e escolha uma habilidade para levar adiante.',opts}}
 function build(e){
   const d=collect(e);if(!d||!d.lines.length)return null;
   const g=d.hero.g||['#6C5CE7','#FF7AA8'];const out=[];
@@ -207,6 +241,13 @@ function build(e){
   const gq=gapQ(e,d,rl||[],t0,seed)||(rv?gapTok(e,d,rl||[],seed):null);
   if(cq)subs.push({t:'q',d:cq});if(gq)subs.push({t:'g',d:gq});
   if(subs.length)out.push({k:'nbopen3',g,subs,cnt:subs.length,name:d.hero.name,reading:rl?1:0});
+  const thread=buildThread(e,d);if(thread)out.push(thread);
+  const reply=buildReply(e,d),choice=buildChoice(e,d),prag=buildPrag(e,d),review=buildReview(e);
+  /* O percurso varia levemente entre episódios: a conversa pode vir antes
+     da explicação de tom, evitando que o curso pareça uma lista mecânica. */
+  const extras=hash(e.n)%2?[reply,choice,prag,review]:[prag,reply,choice,review];extras.forEach(x=>{if(x)out.push(x)});
+  const milestone=buildMilestone(e,d);if(milestone)out.unshift(milestone);
+  const reflection=buildReflection(e,d);if(reflection)out.push(reflection);
   return out.length?out:null}
 
 function inject(e){
@@ -336,13 +377,38 @@ FXR.nbopen3=function(f,st,n){
       fbx.id='fbx'+i;fit(root)})});
   cta(t.answer,false);say(t.sayComp);fitSoon(root)};
 
+/* ---------- 4 · continuidade narrativa ---------- */
+FXR.nbscene=function(f,st,n){
+  const t=tx(),prev=f.previous?'<p class="nb-thread"><b>Antes:</b> '+H(f.previous)+'</p>':'';
+  const arc=f.arc?'<p class="nbo-hint"><b>Arco atual:</b> '+H(f.arc)+'</p>':'';
+  const mem=f.memory?'<p class="nbo-hint"><b>Você vem praticando:</b> '+H(f.memory)+'. Tente perceber se esse tom também funciona aqui.</p>':'';const skill=f.skill?'<p class="nbo-hint"><b>Habilidade escolhida antes:</b> '+H(f.skill)+'.</p>':'';
+  st.innerHTML='<div class="step fx nbo nbscene" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card nb-thread-card"><span class="nbo-sec">Fio da história</span><h2 class="nbo-q">'+H(f.current)+'</h2>'+arc+prev+mem+skill+'<p class="nbo-hand"><small>'+t.today+'</small>'+H(f.mission||'Resolva a situação usando o inglês da conversa.')+'</p><div class="nbo-quote"><b>Agora você entra na conversa:</b><em>“'+H(f.prompt)+'”</em><small>'+H(f.translation||'Ouça, pense na intenção e responda com suas palavras.')+'</small></div><p class="nbo-hint">Preste atenção em quem fala, no objetivo e no tom. A próxima atividade é sua.</p></div></div>';
+  cta(t.cont,true,true);say('A história continua. Agora observe a situação antes de responder.');fitSoon(q('.nbscene',st))};
+
+/* ---------- 5 · produção livre guiada ---------- */
+FXR.nbreply=function(f,st,n){
+  const t=tx();let checked=false;
+  st.innerHTML='<div class="step fx nbo nbreply" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-grid"><div class="nbo-l"><span class="nbo-sec">Sua vez</span><h2 class="nbo-q">Responda sem copiar</h2><p class="nbo-topic">'+H(f.situation)+'</p><div class="nbo-quote"><b>'+H(f.name||'A outra pessoa')+'</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div></div><div class="nbo-r"><section class="nbo-card"><label class="nbo-sec" for="nbreplyin">O que você diria?</label><textarea id="nbreplyin" rows="4" placeholder="Escreva ou fale em inglês…" style="display:block;width:100%;box-sizing:border-box;margin:10px 0;padding:12px;border:2px solid #e6e1f7;border-radius:14px;font:600 16px/1.4 system-ui;resize:vertical"></textarea><p class="nbo-hint">Inclua pelo menos uma ideia da situação. Depois compare com um modelo possível.</p><div class="nbo-fb" id="nbreplyfb" aria-live="polite"></div></section></div></div></div>';
+  const root=q('.nbreply',st),inp=q('#nbreplyin',st);const ready=()=>cta(checked?t.cont:'Ver meu modelo',checked||!!String(inp.value||'').trim(),true);
+  inp.oninput=()=>{if(!checked)ready()};
+  P.fx.cta=()=>{if(!checked){checked=true;const val=String(inp.value||'').toLowerCase();const hits=(f.tokens||[]).filter(x=>val.includes(String(x).toLowerCase())).length;const fb=q('#nbreplyfb',st);fb.innerHTML='<p class="nbo-tr"><b>Modelo possível:</b> '+H(f.model)+'</p><p class="nbo-why">'+H(f.modelTr)+'<br>Você retomou '+hits+' palavra(s)-chave. A resposta pode ser diferente: o objetivo é comunicar a intenção.</p>';fb.className='nbo-fb';inp.disabled=true;P.score++;say('Muito bem. Compare sua intenção com o modelo e tente dizer a sua resposta em voz alta.','happy');ready();fit(root);return true}return false};
+  ready();say('Agora é você quem conduz a conversa.');fitSoon(root)};
+
+/* ---------- 6 · revisão espaçada ---------- */
+FXR.nbreview=function(f,st,n){
+  const t=tx();let ri=0,hits=0,done=false;const draw=()=>{const r=f.rows[ri];if(!r){done=true;P.score+=hits;st.innerHTML='<div class="step fx nbo nbreview" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Revisão do Neighbors</span><h2 class="nbo-q">Você trouxe a conversa de volta</h2><p class="nbo-hand">'+hits+'/'+f.rows.length+' frases recuperadas de primeira. Esse resgate prepara você para a situação atual.</p></div></div>';cta(t.cont,true,true);say('Revisão concluída! O que você aprendeu antes continua disponível.');P.fx.cta=null;return}const opts=shuf(r.opts,hash(f.from+ri));st.innerHTML='<div class="step fx nbo nbreview" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Revisão · '+(ri+1)+'/'+f.rows.length+'</span><h2 class="nbo-q">O que esta fala quer dizer?</h2><div class="nbo-quote"><b>'+H(r.en)+'</b><small>Toque na melhor tradução.</small></div><ul class="nbo-opts">'+opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o)+'</span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbrfb"></div></div></div>';cta('Escolha uma resposta',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(b.disabled)return;const ok=b.textContent.includes(r.pt);if(ok){hits++;b.classList.add('ok')}else{b.classList.add('no');st.querySelectorAll('.nbo-opt').forEach(x=>{if(x.textContent.includes(r.pt))x.classList.add('ok')})}st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbrfb',st).innerHTML=ok?'<p class="nbo-tr"><b>Boa!</b> Você recuperou a fala.</p>':'<p class="nbo-why">A tradução era: '+H(r.pt)+'</p>';cta(ri<f.rows.length-1?'Próxima fala ▶':t.cont,true,true);P.fx.cta=()=>{ri++;draw();return true}})};P.fx.cta=null;draw()};
+FXR.nbchoice=function(f,st,n){let picked=false;st.innerHTML='<div class="step fx nbo nbchoice" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Escolha o tom · '+H(f.level)+'</span><h2 class="nbo-q">Como você quer conduzir esta conversa?</h2><div class="nbo-quote"><b>Você ouviu:</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div><ul class="nbo-opts">'+f.opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o.label)+'<small style="display:block;opacity:.7">'+H(o.tone)+'</small></span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbchfb" aria-live="polite"></div></div></div>';cta('Escolha uma resposta',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(picked)return;picked=true;const o=f.opts[+b.dataset.i];try{ST.nbTone=o.tone;save()}catch(x){}b.classList.add('ok');st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbchfb',st).innerHTML='<p class="nbo-tr"><b>'+H(o.tone)+'</b> — '+H(o.out)+'</p><p class="nbo-why">A fala muda o tom, mas você continua no controle da situação.</p>';P.score++;P.fx.cta=()=>false;cta(tx().cont,true,true);say('Boa escolha. Em inglês, intenção e tom também comunicam.','happy')})};
+FXR.nbprag=function(f,st,n){st.innerHTML='<div class="step fx nbo nbprag" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Como isso soa · '+H(f.level)+'</span><h2 class="nbo-q">A mesma frase muda com a situação</h2><p class="nbo-topic">'+H(f.scene)+(f.city?' · '+H(f.city):'')+'</p><ul class="nbo-list">'+f.tips.map(x=>'<li>'+H(x)+'</li>').join('')+'</ul><p class="nbo-hint">Antes de responder, pergunte: estou sendo claro, natural e adequado para esta relação?</p></div></div>';cta(tx().cont,true,true);say('Não basta estar gramaticalmente correto. O contexto também importa.')};
+FXR.nbmilestone=function(f,st,n){st.innerHTML='<div class="step fx nbo nbmilestone" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Marco do arco · '+H(f.level)+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand"><small>O que você vai construir</small>'+H(f.mission)+'</p><p class="nbo-hint">Este arco reúne situações conectadas. Ao avançar, observe como as mesmas habilidades reaparecem em novos contextos.</p></div></div>';cta(tx().cont,true,true);say('Novo arco desbloqueado. Vamos construir essa habilidade passo a passo.','happy')};
+FXR.nbreflection=function(f,st,n){let picked=false;st.innerHTML='<div class="step fx nbo nbreflection" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Fechamento do arco · '+H(f.level)+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand"><small>Leve isto com você</small>'+H(f.mission)+'</p><div class="nbo-hint"><b>Escolha uma habilidade:</b> o que você quer levar para as próximas situações?</div><ul class="nbo-opts">'+f.opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o)+'</span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbrefb"></div></div></div>';cta('Escolha uma habilidade',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(picked)return;picked=true;const o=f.opts[+b.dataset.i];try{ST.nbSkill=o;save()}catch(x){}b.classList.add('ok');st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbrefb',st).innerHTML='<p class="nbo-tr"><b>Registrado:</b> '+H(o)+'</p><p class="nbo-why">Na próxima sequência, procure uma oportunidade de usar essa habilidade.</p>';cta(tx().cont,true,true);say('Escolha registrada. Leve essa habilidade com você.','happy')})};
+
 /* ---------- ligação: fxBridge (inserção) e fxTotal (pontos) ---------- */
 function install(){
   try{
     const ob=window.fxBridge;
     if(typeof ob==='function'&&!ob._nbo){const nf=function(e){const r=ob.apply(this,arguments);try{inject(e)}catch(x){try{console.warn('nbopen',x)}catch(_){}}return r};nf._nbo=1;window.fxBridge=nf}
     const ot=window.fxTotal;
-    if(typeof ot==='function'&&!ot._nbo){const nt=function(e){let n=ot.apply(this,arguments);try{const NB=['nbtap','nbswap','nbmatch','nbreply','nbshadow','nbctx','nbvocab','nbfind','nbtrip'];const nb=(e.fr||[]).some(f=>f&&(f.k==='nbhero'||f.k==='nbtrip'||(e.rev&&f.k==='nbtap')));(e.fr||[]).forEach(f=>{if(!f)return;if(f.k==='nbopen3')n+=f.cnt||0;else if(nb&&NB.indexOf(f.k)>=0&&!window.__NB_TOTAL_OK)n+=1})}catch(x){}return n};nt._nbo=1;window.fxTotal=nt}
+    if(typeof ot==='function'&&!ot._nbo){const nt=function(e){let n=ot.apply(this,arguments);try{const NB=['nbtap','nbswap','nbmatch','nbreply','nbchoice','nbshadow','nbctx','nbvocab','nbfind','nbtrip','nbreview'];const nb=(e.fr||[]).some(f=>f&&(f.k==='nbhero'||f.k==='nbtrip'||(e.rev&&f.k==='nbtap')));(e.fr||[]).forEach(f=>{if(!f)return;if(f.k==='nbopen3')n+=f.cnt||0;else if(f.k==='nbreply'||f.k==='nbchoice')n+=1;else if(f.k==='nbreview')n+=f.rows?f.rows.length:1;else if(nb&&NB.indexOf(f.k)>=0&&!window.__NB_TOTAL_OK)n+=1})}catch(x){}return n};nt._nbo=1;window.fxTotal=nt}
   }catch(x){}
 }
 install();

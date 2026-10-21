@@ -132,7 +132,7 @@
   "by": "Dr. Seuss",
   "y1": 1960,
   "pd": false,
-  "blurb": "Livro infantil de 1960 em que um personagem insiste para o outro provar ovos verdes com presunto.",
+  "blurb": "Livro de Dr. Seuss (1960): Sam-I-am insiste para o outro provar ovos verdes com presunto.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -199,10 +199,29 @@
   "pd": true,
   "blurb": "Tragédia de Shakespeare, escrita por volta de 1600, sobre um príncipe dinamarquês em busca de vingança.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "O príncipe Hamlet vive tenso e dividido depois da morte do pai e do novo casamento da mãe, e convive com a pressão de agir.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "Something is rotten in the state of Denmark.",
+     "Algo está podre no estado da Dinamarca.",
+     "Marcellus"
+    ]
+   ],
+   "src": "Ato 1, cena 4 · Shakespeare",
+   "ctx": "Hamlet acaba de seguir o fantasma do pai pela escuridão, e Marcellus, nervoso, diz que algo vai mal na corte.",
+   "hl": [
+    "Something is rotten"
+   ]
+  },
+  "q": {
+   "q": "O que Marcellus sente ao dizer essa frase?",
+   "o": [
+    "Que algo está errado na corte",
+    "Que a festa está ótima",
+    "Que o rei vai viajar"
+   ],
+   "a": 0,
+   "why": "Marcellus sente que há corrupção e perigo no reino."
   }
  },
  "Hamlet: To Be": {
@@ -576,7 +595,7 @@
   "by": "Fred M. Wilcox",
   "y1": 1943,
   "pd": false,
-  "blurb": "Filme de 1943 sobre uma cadela collie que atravessa o país para voltar ao seu dono.",
+  "blurb": "Filme de 1943 sobre uma collie que atravessa o país para voltar ao menino Joe.",
   "cena": {
    "mode": "scene",
    "lines": [],
@@ -719,11 +738,12 @@
   "by": "P. L. Travers",
   "y1": 1934,
   "pd": false,
-  "blurb": "Livro infantil de 1934 sobre uma babá mágica que chega voando com seu guarda-chuva.",
+  "blurb": "Livro infantil de 1934 sobre uma babá mágica trazida pelo vento leste até uma família de Londres.",
   "cena": {
    "mode": "scene",
    "lines": [],
-   "ctx": "Mary Poppins chega à casa da família Banks com seu guarda-chuva e transforma tarefas comuns em aventuras.",
+   "src": "",
+   "ctx": "Mary Poppins chega à casa da família Banks, no número 17 da Cherry Tree Lane, trazida pelo vento leste, e transforma tarefas comuns em aventuras.",
    "hl": []
   }
  }
