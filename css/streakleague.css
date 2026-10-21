@@ -1,0 +1,33 @@
+/* Pogglot · proteção de sequência e liga semanal (usa tokens.css) */
+.sl-chip{font-weight:800;display:inline-flex;align-items:center;gap:4px;font-size:var(--t-fs-sm);padding:0 8px;white-space:nowrap}
+.sl-lg,.sl-fz{margin-top:var(--t-s5);padding:var(--t-s4) var(--t-s5);border-radius:var(--t-r-lg);background:var(--t-card);color:var(--t-ink);border:1px solid var(--t-line);box-shadow:var(--t-sh-card);max-width:100%;box-sizing:border-box;overflow:hidden}
+.sl-lg .hd{display:flex;align-items:center;gap:var(--t-s3)}
+.sl-lg .gem{flex:0 0 40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--sl-c),color-mix(in srgb,var(--sl-c) 55%,#000));transform:rotate(45deg) scale(.75);box-shadow:0 4px 12px -4px var(--sl-c)}
+.sl-lg h2{font-size:var(--t-fs-lg);margin:0;line-height:1.2}
+.sl-lg .hd p{margin:2px 0 0;font-size:var(--t-fs-sm);color:var(--t-ink2)}
+.sl-rows{list-style:none;margin:var(--t-s3) 0 0;padding:0;display:grid;gap:var(--t-s1)}
+.sl-rows li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:var(--t-s2);align-items:center;padding:8px 10px;border-radius:var(--t-r-md);font-size:var(--t-fs-sm)}
+.sl-rows li.up{box-shadow:inset 3px 0 0 var(--t-ok)}
+.sl-rows li.dn{box-shadow:inset 3px 0 0 var(--t-danger)}
+.sl-rows li.me{background:var(--t-primary-soft);font-weight:800}
+.sl-rows .p{font-weight:800;color:var(--t-mute);text-align:center}
+.sl-rows .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sl-rows em{font-style:normal;font-size:var(--t-fs-xs);color:var(--t-mute);border:1px solid var(--t-line2);border-radius:var(--t-r-pill);padding:0 6px;margin-left:4px}
+.sl-lg .ft{display:flex;flex-wrap:wrap;gap:var(--t-s2) var(--t-s3);align-items:center;justify-content:space-between;margin-top:var(--t-s3)}
+.sl-lg .tg{min-height:var(--t-hit);padding:0 var(--t-s4);border-radius:var(--t-r-pill);border:1px solid var(--t-line2);background:transparent;color:var(--t-primary);font:800 var(--t-fs-sm) var(--t-font);cursor:pointer}
+.sl-lg .ft small,.sl-lg .sl-tip{color:var(--t-mute);font-size:var(--t-fs-xs)}
+.sl-lg .sl-tip{display:block;margin-top:var(--t-s2)}
+.sl-res{margin:var(--t-s3) 0 0;padding:8px 12px;border-radius:var(--t-r-md);background:var(--t-primary-soft);font-weight:800;font-size:var(--t-fs-sm)}
+.sl-res.up{color:var(--t-ok)}.sl-res.down{color:var(--t-danger)}
+.sl-fz{display:flex;align-items:center;gap:var(--t-s4)}
+.sl-fz .ic{display:flex;gap:6px;font-size:26px;flex:0 0 auto}
+.sl-fz .ic i{font-style:normal;filter:grayscale(1);opacity:.35}
+.sl-fz .ic i.on{filter:none;opacity:1}
+.sl-fz b{display:block;font-size:var(--t-fs-md)}
+.sl-fz small{color:var(--t-ink2);font-size:var(--t-fs-sm)}
+.sl-toast{width:max-content;max-width:min(92vw,420px);border-radius:18px!important;text-align:center;box-sizing:border-box}
+@media (max-width:640px){.sl-lg,.sl-fz{padding:var(--t-s4)}.sl-fz{align-items:flex-start}}
+
+/* a barra do topo já está cheia em telas até 1500px: o estoque de 🧊 fica na home e no Painel */
+@media (max-width:1499px){.sl-chip{display:none!important}}
+@media (max-width:1320px) and (min-width:1000px){.pgbar .in{gap:4px}}
