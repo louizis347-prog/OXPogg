@@ -191,7 +191,8 @@ function buildThread(e,d){
   const prev=priorEpisode(e),hero=d.hero||{};if(!hero||!d.lines.length)return null;
   const next=d.lines.find(l=>l[0]==='You')||d.lines[1]||d.lines[0];
   let memory='';try{memory=ST&&ST.nbTone?ST.nbTone:''}catch(x){}
-  return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||''};
+  let arc='';try{const a=(ARCS[P.cid]||[]).filter(x=>EP[P.cid].findIndex(y=>y.n===x[0])<=P.idx).slice(-1)[0];arc=a?a[1]:''}catch(x){}
+  return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||''};
 }
 function buildReply(e,d){
   const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],answer=d.lines.find(l=>l[0]==='You')||d.lines[1];
@@ -371,8 +372,9 @@ FXR.nbopen3=function(f,st,n){
 /* ---------- 4 · continuidade narrativa ---------- */
 FXR.nbscene=function(f,st,n){
   const t=tx(),prev=f.previous?'<p class="nb-thread"><b>Antes:</b> '+H(f.previous)+'</p>':'';
+  const arc=f.arc?'<p class="nbo-hint"><b>Arco atual:</b> '+H(f.arc)+'</p>':'';
   const mem=f.memory?'<p class="nbo-hint"><b>Você vem praticando:</b> '+H(f.memory)+'. Tente perceber se esse tom também funciona aqui.</p>':'';
-  st.innerHTML='<div class="step fx nbo nbscene" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card nb-thread-card"><span class="nbo-sec">Fio da história</span><h2 class="nbo-q">'+H(f.current)+'</h2>'+prev+mem+'<p class="nbo-hand"><small>'+t.today+'</small>'+H(f.mission||'Resolva a situação usando o inglês da conversa.')+'</p><div class="nbo-quote"><b>Agora você entra na conversa:</b><em>“'+H(f.prompt)+'”</em><small>'+H(f.translation||'Ouça, pense na intenção e responda com suas palavras.')+'</small></div><p class="nbo-hint">Preste atenção em quem fala, no objetivo e no tom. A próxima atividade é sua.</p></div></div>';
+  st.innerHTML='<div class="step fx nbo nbscene" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card nb-thread-card"><span class="nbo-sec">Fio da história</span><h2 class="nbo-q">'+H(f.current)+'</h2>'+arc+prev+mem+'<p class="nbo-hand"><small>'+t.today+'</small>'+H(f.mission||'Resolva a situação usando o inglês da conversa.')+'</p><div class="nbo-quote"><b>Agora você entra na conversa:</b><em>“'+H(f.prompt)+'”</em><small>'+H(f.translation||'Ouça, pense na intenção e responda com suas palavras.')+'</small></div><p class="nbo-hint">Preste atenção em quem fala, no objetivo e no tom. A próxima atividade é sua.</p></div></div>';
   cta(t.cont,true,true);say('A história continua. Agora observe a situação antes de responder.');fitSoon(q('.nbscene',st))};
 
 /* ---------- 5 · produção livre guiada ---------- */
