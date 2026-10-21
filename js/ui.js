@@ -33,7 +33,7 @@ const k=key=>(K[L0()][key]!=null?K[L0()][key]:K.pt[key]);
 const LANGS=[
  {id:'en',mono:'EN',c:'#1CB0F6',cd:'#0E86C2',cl:'#CDEFFD',n:{pt:'Inglês',es:'Inglés'},sub:['en-a1','en-a2','en-b1','en-b2','en-c1','en-c2']},
  {id:'es',mono:'ES',c:'#FF6B4A',cd:'#D44A2C',cl:'#FFD9D0',n:{pt:'Espanhol',es:'Español'},sub:['es-a1','es-a2','es-b1','es-b2','es-c1','es-c2']},
- {id:'fr',mono:'FR',c:'#7B61FF',cd:'#5A41D9',cl:'#DDD6FF',n:{pt:'Francês',es:'Francés'},sub:['fr']},
+ {id:'fr',mono:'FR',c:'#7B61FF',cd:'#5A41D9',cl:'#DDD6FF',n:{pt:'Francês',es:'Francés'},sub:['fr-a1','fr-a2','fr-b1','fr-b2','fr-c1','fr-c2']},
  {id:'de',mono:'DE',c:'#F5A400',cd:'#C28000',cl:'#FFEBB8',n:{pt:'Alemão',es:'Alemán'},sub:['de']},
  {id:'it',mono:'IT',c:'#F0508B',cd:'#C73068',cl:'#FFD5E4',n:{pt:'Italiano',es:'Italiano'},sub:['it']},
  {id:'enes',mono:'EN',c:'#2E9E6A',cd:'#1F7A4F',cl:'#D2F2E0',n:{pt:'Inglês p/ hispanofalantes',es:'Inglés para hispanohablantes'},sub:['enes-a1']},
@@ -45,7 +45,7 @@ const LANGS=[
  {id:'nbit',mono:'NB',c:'#2E9E6A',cd:'#1F7249',cl:'#D7F3E3',n:{pt:'Neighbors · Italiano',es:'Neighbors · Italiano'},sub:['nbit-a1']},
  {id:'nbpt',mono:'NB',c:'#1FA35C',cd:'#13763F',cl:'#D3F5E1',n:{pt:'Neighbors · Português',es:'Neighbors · Portugués'},sub:['nbpt-a1','nbpten-a1']},
  {id:'nbfr',mono:'NB',c:'#2F6BE8',cd:'#1F4DB8',cl:'#D7E3FF',n:{pt:'Neighbors · Francês',es:'Neighbors · Francés'},sub:['nbfr-a1','nbfr-a2','nbfr-b1','nbfr-b2','nbfr-c1','nbfr-c2']},
- {id:'pt',mono:'PT',c:'#3FBF3F',cd:'#2A962A',cl:'#D2F2D2',n:{pt:'Português',es:'Portugués'},sub:['pt']}
+ {id:'pt',mono:'PT',c:'#3FBF3F',cd:'#2A962A',cl:'#D2F2D2',n:{pt:'Português',es:'Portugués'},sub:['pt-a1','pt-a2','pt-b1','pt-b2','pt-c1','pt-c2']}
 ];
 const LANG=id=>LANGS.find(l=>l.id===id)||LANGS[0];
 const langOfCourse=cid=>{const c=COURSES[cid];return (c&&(c.group||c.id))||cid.split('-')[0]};
