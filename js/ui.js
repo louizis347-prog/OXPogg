@@ -45,7 +45,7 @@ const LANGS=[
  {id:'nbit',mono:'NB',c:'#2E9E6A',cd:'#1F7249',cl:'#D7F3E3',n:{pt:'Neighbors · Italiano',es:'Neighbors · Italiano'},sub:['nbit-a1']},
  {id:'nbpt',mono:'NB',c:'#1FA35C',cd:'#13763F',cl:'#D3F5E1',n:{pt:'Neighbors · Português',es:'Neighbors · Portugués'},sub:['nbpt-a1','nbpten-a1']},
  {id:'nbfr',mono:'NB',c:'#2F6BE8',cd:'#1F4DB8',cl:'#D7E3FF',n:{pt:'Neighbors · Francês',es:'Neighbors · Francés'},sub:['nbfr-a1','nbfr-a2','nbfr-b1','nbfr-b2','nbfr-c1','nbfr-c2']},
- {id:'pt',mono:'PT',c:'#3FBF3F',cd:'#2A962A',cl:'#D2F2D2',n:{pt:'Português',es:'Portugués'},sub:['pt']}
+ {id:'pt',mono:'PT',c:'#3FBF3F',cd:'#2A962A',cl:'#D2F2D2',n:{pt:'Português',es:'Portugués'},sub:['pt-a1','pt-a2','pt-b1','pt-b2','pt-c1','pt-c2']}
 ];
 const LANG=id=>LANGS.find(l=>l.id===id)||LANGS[0];
 const langOfCourse=cid=>{const c=COURSES[cid];return (c&&(c.group||c.id))||cid.split('-')[0]};

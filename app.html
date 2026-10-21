@@ -1509,7 +1509,7 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],pt:[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],fr:[],de:[],it:[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1537,6 +1537,10 @@ const GROUPS={
       name:{pt:'Espanhol para brasileiros',es:'Español para brasileños'},flag:'ES → PT-BR',
       desc:{pt:'Do Quixote ao Chaves: espanhol sem cair nos falsos amigos — escolha seu nível.',es:'Del Quijote al Chavo: español sin caer en los falsos amigos — elige tu nivel.'},
       sub:['es-a1','es-a2','es-b1','es-b2','es-c1','es-c2']},
+  pt:{id:'pt',ui:'es',scarf:'#2E9E6A',scene:'cv_br',
+      name:{pt:'Português para hispanofalantes',es:'Portugués para hispanohablantes'},flag:'PT-BR → ES',
+      desc:{pt:'De Machado a Macunaíma: português do Brasil com cultura, do A1 ao C2 — escolha seu nível.',es:'De Machado a Macunaíma: portugués de Brasil con cultura, de A1 a C2 — elige tu nivel.'},
+      sub:['pt-a1','pt-a2','pt-b1','pt-b2','pt-c1','pt-c2']},
   nb:{id:'nb',ui:'pt',scarf:'#E0703A',scene:'cv_usa',
       name:{pt:'Neighbors',es:'Neighbors'},flag:'EN-US → PT-BR',
       desc:{pt:'Aprenda conversando com vizinhos: cada episódio é uma pessoa, uma cidade e uma situação real. Fala primeiro, sem gramática explícita.',es:'Aprende conversando con vecinos: cada episodio es una persona, una ciudad y una situación real.'},
@@ -1617,9 +1621,6 @@ const COURSES={
   'pt-a2':{id:'pt-a2',group:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',
       name:{pt:'Português A2 para hispanofalantes',es:'Portugués A2 para hispanohablantes'},flag:'PT-BR → ES · A2',
       desc:{pt:'400 episódios para ampliar fluência, vocabulário e compreensão cultural.',es:'400 episodios para ampliar fluidez, vocabulario y comprensión cultural.'}},
-  pt:{id:'pt',ui:'es',tts:'pt-BR',scene:'cv_br',scarf:'#2E9E6A',
-      name:{pt:'Português p/ hispanofalantes',es:'Portugués de Brasil'},flag:'PT-BR → ES',sub:['pt-a1','pt-a2','pt-b1','pt-b2','pt-c1','pt-c2'],
-      desc:{pt:'De Machado a Macunaíma, para quem fala espanhol.',es:'De Machado de Assis a Macunaíma: portugués brasileño para hispanohablantes.'}},
   'enes-a1':{id:'enes-a1',group:'enes',ui:'es',tts:'en-US',scene:'cv_usa',scarf:'#2E6F95',
       name:{pt:'Inglês americano A1 para hispanofalantes',es:'Inglés americano A1 para hispanohablantes'},flag:'EN-US → ES · A1',
       desc:{pt:'Os primeiros passos em inglês, com cultura e voz latino-americana: nível A1 (MCER).',es:'Los primeros pasos en inglés, con cultura de ambos mundos: nivel A1 (MCER).'}},
@@ -2272,6 +2273,7 @@ function migrateSpanishSplit(){
   remap(ST.done,rest=>{const n=parseInt(rest,10);if(String(n)!==rest)return null;const l=lvN(n);return l?'es-'+l+'-'+n:null});
   remap(ST.testDone,rest=>{const m=/(\d+)$/.exec(rest);const l=m&&lvN(+m[1]);return l?'es-'+l+'-'+rest:null});
   if(ST.lastCourse==='es'){const l=lvN(+ST.lastEp||1)||'a1';ST.lastCourse='es-'+l;changed=true}
+  if(ST.lastCourse==='pt'){ST.lastCourse='pt-a1';ST.lastEp=null;changed=true}
   if(changed)save();
 }
 function homeCards(){
@@ -2291,7 +2293,7 @@ function homeLangs(L,t){
    {id:'nb',flag:'🏘️',name:'Neighbors',note:'Aprenda conversando com vizinhos',rows:[{t:'🇺🇸 Neighbors Inglês · A1 a C2',ids:by(/^nb-/)},{t:'🇪🇸 Neighbors Espanhol · A1 a C2',ids:by(/^nbes-/),lab:1},{t:'🇫🇷 Neighbors Francês · A1 a C2',ids:by(/^nbfr-/),lab:1},{t:'🇩🇪 Neighbors Alemão · A1',ids:by(/^nbde-/),lab:1},{t:'🇧🇷 Neighbors Português (p/ hispanofalantes) · A1',ids:by(/^nbpt-/),lab:1},{t:'🇧🇷 Neighbors Português (p/ falantes de inglês) · A1',ids:by(/^nbpten-/),lab:1},{t:'🇮🇹 Neighbors Italiano · A1',ids:by(/^nbit-/),lab:1},{t:'🇺🇸 Neighbors English (p/ hispanofalantes) · A1',ids:by(/^nbeng-/),lab:1},{t:'🇯🇵 Neighbors Japonês · Kana e A1',ids:by(/^nbja-/),lab:1}]},
    {id:'en',flag:'🇺🇸',name:'Inglês',rows:[{t:'Clássico · do cinema aos livros',ids:by(/^en-/)},{t:'Para hispanofalantes',ids:by(/^enes/)}]},
    {id:'es',flag:'🇪🇸',name:'Espanhol',rows:[{t:'Clássico · do Quixote ao Chaves',ids:by(/^es-/)}]},
-   {id:'pt',flag:'🇧🇷',name:'Português',rows:[{t:'Para hispanofalantes',ids:['pt']}]},
+   {id:'pt',flag:'🇧🇷',name:'Português',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^pt-/)}]},
    {id:'fr',flag:'🇫🇷',name:'Francês',rows:[{t:'Clássico',ids:['fr']}]},
    {id:'de',flag:'🇩🇪',name:'Alemão',rows:[{t:'Clássico',ids:['de']}]},
    {id:'it',flag:'🇮🇹',name:'Italiano',rows:[{t:'Clássico',ids:['it']}]}];
