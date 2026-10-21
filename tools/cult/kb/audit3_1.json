@@ -130,7 +130,7 @@
  },
  "en-a2|Alice: The Queen's Job": {
   "v": "fix",
-  "why": "kb2 reescrito (tema Dream Job: a Rainha de Copas como governante, croqué, jardineiros, execuções nunca cumpridas). 'Off with her head!' NÃO reconfirmada por busca (limite de buscas esgotado), mantida como conhecimento do texto; sinalizar para revisão.",
+  "why": "kb2 reescrito (tema Dream Job: a Rainha de Copas como governante, croqué, jardineiros, execuções nunca cumpridas). 'Off with her head!' reconfirmada de forma parcial: busca achou o cap. 8 (gutenberg.org, victorianweb.org legenda de Tenniel, litcharts.com, readifyai.com) mas sem exibir a frase literal; mantida quote com essa ressalva.",
   "blurb": "Clássico de Lewis Carroll: a Rainha de Copas manda cortar cabeças, mas ninguém é de fato executado.",
   "kb2": {
    "intro": "Alice's Adventures in Wonderland, de Lewis Carroll (Charles Dodgson), publicado em 1865, tem como grande autoridade a Rainha de Copas, que governa um baralho vivo. No capítulo 8, Alice a encontra no campo de croqué, onde os jogadores usam flamingos como tacos e ouriços como bolas. O trabalho da rainha parece ser dar ordens: grita sentenças de morte por qualquer motivo, a favor ou contra quem passa.",
@@ -187,7 +187,7 @@
  },
  "en-a2|Alice: The White Rabbit": {
   "v": "fix",
-  "why": "kb2 reescrito (tema Being Late: o coelho atrasado, relógio de bolso); removido trecho duplicado sobre Appleton. Fala 'Oh dear! Oh dear! I shall be late!' NÃO reconfirmada por busca (limite de buscas esgotado); [NAO-RECONFIRMADA] sinalizar para revisão.",
+  "why": "kb2 reescrito (tema Being Late: o coelho atrasado, relógio de bolso); removido trecho duplicado sobre Appleton. Fala 'Oh dear! Oh dear! I shall be late!' reconfirmada: cap. 1 em gutenberg.org e ubalt.edu, com a mesma redação.",
   "blurb": "Clássico de Lewis Carroll: um coelho de colete e relógio de bolso corre dizendo que está atrasado.",
   "kb2": {
    "intro": "Alice's Adventures in Wonderland, de Lewis Carroll (pseudônimo do matemático Charles Dodgson), começa com uma menina entediada na beira de um rio, até que um Coelho Branco de olhos cor-de-rosa passa correndo. Ele tira um relógio do bolso do colete, murmura que vai se atrasar e entra numa toca. É a primeira vez que o livro mostra o tempo como assunto: o atraso do coelho leva Alice ao País das Maravilhas.",
@@ -203,8 +203,33 @@
  },
  "en-a2|Alice: Unbirthday": {
   "v": "fix",
-  "why": "kb2 reescrito (tema Birthday Party: contas de 365 menos 1 = 364 dias; Jabberwocky; Disney 1951). Humpty Dumpty 'And only one for birthday presents' NÃO confirmada literalmente (resultado de busca apenas resumiu: wikipedia.org/Unbirthday, sparknotes.com, victorianweb.org); mantida scene. Corrigido 'data 1872' (datada de 1872, publicada em dez/1871).",
+  "why": "kb2 reescrito (tema Birthday Party: contas de 365 menos 1 = 364 dias; Jabberwocky; Disney 1951). Fala de Humpty Dumpty confirmada (cap. 6) em owleyes.org, sparknotes.com, victorianweb.org, standardebooks.org. Cena virou quote. Corrigido 'data 1872' (datada de 1872, publicada em dez/1871).",
   "blurb": "Continuação de Alice: Humpty Dumpty calcula 364 dias de presentes de 'não aniversário'.",
+  "cena": {
+   "mode": "quote",
+   "lines": [
+    [
+     "And only one for birthday presents, you know.",
+     "E só um para presentes de aniversário, sabe.",
+     "Humpty Dumpty"
+    ]
+   ],
+   "src": "Capítulo 6 · Lewis Carroll, 1871",
+   "ctx": "Humpty Dumpty acabou de contar 364 dias de presentes de não aniversário e conclui com o único dia de aniversário.",
+   "hl": [
+    "birthday presents"
+   ]
+  },
+  "q": {
+   "q": "Quantos dias de aniversário Humpty Dumpty conta por ano?",
+   "o": [
+    "Um",
+    "Trezentos e sessenta e quatro",
+    "Sete"
+   ],
+   "a": 0,
+   "why": "Ele diz que só um dia é de presentes de aniversário."
+  },
   "kb2": {
    "intro": "Through the Looking-Glass, and What Alice Found There é a continuação de Alice no País das Maravilhas, lançada em dezembro de 1871 por Lewis Carroll (Charles Dodgson) e datada de 1872. Alice atravessa o espelho da sala e entra num mundo montado como um tabuleiro de xadrez. No capítulo 6 ela encontra Humpty Dumpty, sentado num muro, que lhe explica uma conta de datas: 365 dias menos um aniversário.",
    "leitura": [
@@ -581,6 +606,248 @@
    "facts": [
     "Linklater ganhou o Urso de Prata de melhor direção no Festival de Berlim de 1995.",
     "Hawke e Delpy dividem o crédito de roteiro com Linklater em Before Sunset e Before Midnight."
+   ]
+  }
+ },
+ "en-a2|I Have a Dream": {
+  "v": "fix",
+  "why": "kb2 reescrito (sonhos concretos, Nobel 1964, feriado 1983/1986); removido Mahalia Jackson daqui (fica só na outra variante) e frase 'improvisada'. Fala existente 'I have a dream today!' reconfirmada: transcrições do discurso em npr.org, opb.org, stlpr.org, wfae.org mostram o refrão 'I have a dream today' (npr.org: após o trecho do Alabama).",
+  "kb2": {
+   "intro": "I Have a Dream é o discurso mais famoso de Martin Luther King Jr., feito em 28 de agosto de 1963 diante do Lincoln Memorial, em Washington, na Marcha sobre Washington por Empregos e Liberdade. Cerca de 250 mil pessoas estavam presentes, segundo as estimativas mais comuns, e o discurso dura uns dezessete minutos. A parte dos sonhos, com a repetição de I have a dream, é a mais lembrada.",
+   "leitura": [
+    "King descreve sonhos concretos para o futuro dos Estados Unidos: que seus quatro filhos sejam julgados pelo caráter e não pela cor da pele, que meninos e meninas negros e brancos deem as mãos no Alabama, e que a liberdade ressoe de cada colina do país. A repetição de I have a dream a cada trecho dá ritmo e ajuda a treinar o presente e as frases com that one day, sobre o futuro.",
+    "No ano seguinte, em 1964, os EUA aprovaram a Lei dos Direitos Civis e King recebeu o Prêmio Nobel da Paz. O feriado em sua homenagem foi sancionado pelo presidente Ronald Reagan em 1983 e celebrado pela primeira vez em 1986. O discurso é estudado como exemplo de retórica, e seu inglês falado, claro e pausado, serve bem de treino para ouvir e ler em voz alta, com tom de esperança."
+   ],
+   "facts": [
+    "King recebeu o Nobel da Paz em 1964, um ano depois do discurso.",
+    "O feriado nacional em homenagem a King foi sancionado em 1983 e celebrado pela primeira vez em 1986."
+   ]
+  }
+ },
+ "en-b1|I Have a Dream: The Appeal": {
+  "v": "fix",
+  "why": "kb2 reescrito (apelo/persuasão: cheque sem fundos, anáfora Now is the time, improviso). Fala 'Now is the time to make real the promises of democracy' confirmada em ~10 reproduções do texto completo (abcnews4.com, wjla.com, katv.com, kutv.com, etc.). Cena virou quote. Mahalia Jackson tratada como relato debatido.",
+  "blurb": "Discurso de King na Marcha sobre Washington (1963): o apelo urgente por direitos iguais.",
+  "cena": {
+   "mode": "quote",
+   "lines": [
+    [
+     "Now is the time to make real the promises of democracy.",
+     "Agora é hora de tornar reais as promessas da democracia.",
+     "Martin Luther King Jr."
+    ]
+   ],
+   "src": "Discurso em Washington, 1963",
+   "ctx": "King lembra que o país prometeu igualdade a todos e pede ação imediata, sem esperar mais.",
+   "hl": [
+    "make real the promises"
+   ]
+  },
+  "q": {
+   "q": "O que King diz que é hora de fazer?",
+   "o": [
+    "Tornar reais as promessas da democracia",
+    "Voltar para casa",
+    "Esperar mais tempo"
+   ],
+   "a": 0,
+   "why": "A frase pede que as promessas da democracia sejam cumpridas agora."
+  },
+  "kb2": {
+   "intro": "No discurso de 28 de agosto de 1963, Martin Luther King Jr. não só descreve um sonho: antes disso, faz um apelo para convencer os ouvintes a agir sem demora. A palavra-chave é urgência, e a forma é a repetição de Now is the time, que abre frases seguidas. O episódio sobre persuasão mostra como King combina apelo, metáfora e ritmo para mover quem escuta.",
+   "leitura": [
+    "Ele diz que os Estados Unidos deram aos cidadãos negros um cheque sem fundos, devolvido com a marca insufficient funds, e que veio a Washington trocar esse cheque. A imagem de banco mostra uma dívida de promessas não cumpridas. Em seguida repete Now is the time e avisa que não haverá descanso nem tranquilidade no país enquanto a justiça e o direito de voto não forem garantidos.",
+    "King era o último orador do dia, e a parte final foi improvisada: o texto distribuído à imprensa não trazia a seção do sonho. Alguns relatos dizem que Mahalia Jackson, atrás dele, pediu que contasse o sonho, mas o peso dessa influência é discutido. A multidão ficou entre 200 mil e 250 mil pessoas, e a fala foi transmitida pela televisão para o país inteiro."
+   ],
+   "facts": [
+    "King compara a promessa de igualdade a um cheque devolvido por falta de fundos.",
+    "A parte do sonho foi improvisada e não estava no texto distribuído à imprensa."
+   ]
+  }
+ },
+ "en-a2|The Declaration of Independence": {
+  "v": "fix",
+  "why": "kb2 reescrito (datas: junho, 2 de julho, 4 de julho, 8 de julho, 2 de agosto, 1826). Cena page reconfirmada: preâmbulo 'We hold these truths... unalienable Rights' em lumenlearning.com, battlefields.org, louis.pressbooks.pub, fee.org, pressbooks.online.ucf.edu. Datas por conhecimento prévio.",
+  "blurb": "Documento de 1776 em que as treze colônias declaram independência da Grã-Bretanha.",
+  "kb2": {
+   "intro": "A Declaração de Independência dos Estados Unidos foi adotada pelo Congresso Continental em 4 de julho de 1776. Redigida principalmente por Thomas Jefferson, então com 33 anos, ela anuncia que as treze colônias se separam da Grã-Bretanha e explica as razões. O episódio sobre datas no passado combina com o texto: junho de 1776 para o comitê, 2 de julho para o voto e 4 de julho para a adoção.",
+   "leitura": [
+    "O Congresso votou pela independência em 2 de julho e só dois dias depois adotou o texto da Declaração. O comitê de cinco membros, escolhido em junho, tinha Jefferson, John Adams, Benjamin Franklin, Roger Sherman e Robert Livingston. A primeira leitura pública foi em 8 de julho, na Filadélfia, e a maioria dos delegados assinou o pergaminho em 2 de agosto de 1776.",
+    "O preâmbulo, que aparece aqui, afirma ideias de direitos naturais e de governo com o consentimento dos governados, em linha com o pensamento de John Locke. Depois vem a lista de queixas contra o rei George III. O inglês é do século 18, formal e de frases longas, mas truths, equal e rights continuam em uso. Verbos no passado, como was adopted e were signed, contam bem essas datas."
+   ],
+   "facts": [
+    "O Congresso votou a independência em 2 de julho de 1776 e adotou o texto da Declaração em 4 de julho.",
+    "John Adams e Thomas Jefferson morreram no mesmo dia, 4 de julho de 1826, cinquenta anos depois."
+   ]
+  }
+ },
+ "en-b1|The Declaration of Independence: Conclusion": {
+  "v": "fix",
+  "why": "kb2 reescrito (fecho: Providência, Hancock, Dunlap). Fala final 'we mutually pledge to each other our Lives, our Fortunes and our sacred Honor' confirmada em avalon.law.yale.edu, aclu.org, louis.pressbooks.pub, leaderu.com, pressbooks.online.ucf.edu. Cena virou quote. Dunlap (26 exemplares) e Hancock por conhecimento prévio.",
+  "blurb": "Texto de 1776, de Jefferson: a promessa final dos signatários de arriscar vidas, fortunas e honra.",
+  "cena": {
+   "mode": "quote",
+   "lines": [
+    [
+     "we mutually pledge to each other our Lives, our Fortunes and our sacred Honor.",
+     "prometemos uns aos outros, mutuamente, nossas vidas, nossas fortunas e nossa sagrada honra.",
+     "Signatários"
+    ]
+   ],
+   "src": "Declaration of Independence · Thomas Jefferson, 1776",
+   "ctx": "No último parágrafo, os signatários confiam na Providência e prometem arriscar tudo pela causa.",
+   "hl": [
+    "mutually pledge",
+    "sacred Honor"
+   ]
+  },
+  "q": {
+   "q": "O que os signatários prometem?",
+   "o": [
+    "Suas vidas, fortunas e honra",
+    "Apenas dinheiro",
+    "Obediência ao rei"
+   ],
+   "a": 0,
+   "why": "A frase lista Lives, Fortunes e sacred Honor."
+  },
+  "kb2": {
+   "intro": "A última frase da Declaração de Independência, de 1776, fecha o texto com um compromisso: depois de listar as queixas contra o rei e declarar as colônias livres, os signatários dizem confiar na proteção da divina Providência e prometem empenhar vidas, fortunas e honra. É um fecho formal e solene, ideal para o tema de resumir e concluir um argumento.",
+   "leitura": [
+    "O documento tem 56 signatários, que sabiam que assinar era um ato de rebeldia contra a coroa britânica. John Hancock, presidente do Congresso, assinou primeiro e em letras grandes. No século XVIII a honra era vista como algo que não se recupera depois de perdida, e por isso o juramento pesava tanto. A frase vem depois da lista de queixas e fecha o argumento do texto.",
+    "O texto foi impresso na noite de 4 de julho pelo gráfico John Dunlap, em folhas avulsas das quais restam 26 exemplares. A versão manuscrita assinada está guardada nos Arquivos Nacionais, em Washington. Todo 4 de julho os americanos celebram a data com festas e fogos, e o documento é lido em aulas de história, de política e de língua inglesa, como modelo de linguagem formal."
+   ],
+   "facts": [
+    "John Hancock foi o primeiro a assinar, com letras grandes.",
+    "O gráfico John Dunlap imprimiu o texto na noite de 4 de julho de 1776; restam 26 folhas dessa tiragem."
+   ]
+  }
+ },
+ "en-a2|Thelma & Louise": {
+  "v": "fix",
+  "why": "kb2 reescrito (aluguel de carro/viagem; Thunderbird 1966; indicações). Fatos por conhecimento prévio; sem busca de fatos (limite). Removida a afirmação de que Scott comprou os direitos em 1989. Fala de filme não procurada com sucesso: mantida scene.",
+  "blurb": "Filme de 1991: duas amigas fogem num Thunderbird conversível e a viagem muda tudo.",
+  "kb2": {
+   "intro": "Thelma & Louise é um filme americano de 1991 dirigido por Ridley Scott, com Susan Sarandon (Louise) e Geena Davis (Thelma). O roteiro é de Callie Khouri. As duas amigas saem para um fim de semana de folga num Ford Thunderbird conversível de 1966, e um incidente muda o rumo da viagem. A estrada é um bom cenário para aprender vocabulário de aluguel de carro e de viagem.",
+   "leitura": [
+    "O filme recebeu seis indicações ao Oscar, entre elas direção, melhor atriz para Davis e Sarandon, fotografia e montagem, e Callie Khouri ganhou o de roteiro original. Foi o primeiro roteiro de Khouri a ser filmado. Brad Pitt, no papel do caroneiro J.D., teve ali um de seus primeiros papéis de destaque, e Harvey Keitel faz o policial Hal, que investiga o caso.",
+    "O carro das duas é um Thunderbird, e não um alugado, mas as perguntas do aluguel combinam com a viagem: How much is it per day?, Is insurance included?, Where do I return the car? As paisagens do Oeste, filmadas em grande parte no Utah e na Califórnia, são uma marca visual do filme, e a trilha sonora foi composta por Hans Zimmer, que mistura rock e country."
+   ],
+   "facts": [
+    "O filme teve seis indicações ao Oscar, e Callie Khouri ganhou o de melhor roteiro original.",
+    "O carro de Louise é um Ford Thunderbird conversível de 1966."
+   ]
+  }
+ },
+ "en-b1|Thelma & Louise": {
+  "v": "fix",
+  "why": "kb2 reescrito (phrasal verbs pull over/pull out; cena do policial rodoviário; Globo de Ouro); removida compra de direitos em 1989 (não confirmada) e 'foi um sucesso de crítica e público' (genérico). Fatos por conhecimento prévio; sem busca (limite). Mantida scene.",
+  "blurb": "Filme de Ridley Scott (1991): duas amigas em fuga pelo sudoeste dos EUA.",
+  "kb2": {
+   "intro": "Thelma & Louise (1991), de Ridley Scott, tem roteiro de Callie Khouri e Geena Davis e Susan Sarandon nos papéis principais. Duas amigas saem de carro para um fim de semana e acabam fugindo da polícia pelo sudoeste dos Estados Unidos. As cenas de estrada e de polícia usam phrasal verbs como pull over, encostar o carro, e pull out, sair de um lugar, que são o assunto do episódio.",
+   "leitura": [
+    "Uma cena lembrada é a do policial rodoviário que manda Thelma encostar, pull over, e acaba trancado no porta-malas da própria viatura. Em inglês, pull over serve tanto ao policial que ordena parar quanto ao motorista que obedece. Pull out descreve sair com o carro de um lugar, como o acostamento, e também desistir de um trato, como em pull out of a deal.",
+    "Khouri ganhou o Oscar e o Globo de Ouro de roteiro por sua estreia no cinema. Michael Madsen faz Jimmy, namorado de Louise, e Harvey Keitel é o policial Hal; Brad Pitt aparece no começo da carreira. Davis e Sarandon foram as duas indicadas ao Oscar de melhor atriz, algo raro num filme sobre duas mulheres, e o final continua sendo um dos mais debatidos do cinema americano."
+   ],
+   "facts": [
+    "Khouri ganhou o Oscar e o Globo de Ouro de melhor roteiro pelo seu primeiro filme.",
+    "Geena Davis e Susan Sarandon foram indicadas ao Oscar de melhor atriz pelo mesmo filme."
+   ]
+  }
+ },
+ "en-b1|The Da Vinci Code": {
+  "v": "fix",
+  "why": "kb2 reescrito (perguntas no passivo: Saunière, Silas, Opus Dei, filme); removida a cifra '12 milhões em out/2004' (não confirmada) e o trecho do processo (movido para a outra variante). Fatos por conhecimento prévio; sem busca (limite).",
+  "blurb": "Thriller de Dan Brown (2003): um curador é morto no Louvre e começa uma caçada a segredos.",
+  "kb2": {
+   "intro": "O Código Da Vinci, romance de suspense do americano Dan Brown, foi publicado em 2003 pela Doubleday. Começa com um assassinato no Louvre: o curador Jacques Saunière é baleado e deixa mensagens codificadas antes de morrer. O professor de simbologia Robert Langdon e a criptógrafa Sophie Neveu buscam respostas, e o tema do episódio, perguntas no passivo, cabe bem: Who was killed? Where was the message hidden?",
+   "leitura": [
+    "A narrativa usa capítulos curtos que terminam em suspense, e a ação acontece em cerca de um dia, entre Paris e Londres. No romance, Saunière é morto por Silas, um monge albino ligado à Opus Dei. As perguntas no passivo aparecem o tempo todo na trama: Who was the curator killed by? What was written on the floor? Why were the paintings moved?",
+    "O livro virou fenômeno editorial, com mais de 80 milhões de exemplares vendidos e tradução para dezenas de idiomas, segundo as editoras. Críticos e historiadores contestaram a afirmação do autor de que as descrições de obras e documentos eram reais. O filme de 2006, de Ron Howard, com Tom Hanks como Langdon, foi grande sucesso de bilheteria, mas recebeu críticas mistas."
+   ],
+   "facts": [
+    "O romance começa no Louvre, com o curador Jacques Saunière morto na Grande Galeria.",
+    "Foi adaptado ao cinema em 2006 por Ron Howard, com Tom Hanks no papel de Robert Langdon."
+   ]
+  }
+ },
+ "en-b1|The Da Vinci Code: A Clue": {
+  "v": "fix",
+  "why": "kb2 reescrito (pistas: anagrama, Fibonacci, processo Baigent/Leigh, juiz Peter Smith); removidas cifras não confirmadas. Fatos por conhecimento prévio; sem busca (limite).",
+  "blurb": "Thriller de Dan Brown (2003): anagramas e números guiam a investigação.",
+  "kb2": {
+   "intro": "Em O Código Da Vinci (2003), de Dan Brown, as pistas deixadas pelo curador Jacques Saunière estão ligadas a obras de arte e a números. Robert Langdon e Sophie Neveu precisam chegar a cada nova pista, o que combina com os phrasal verbs come across, encontrar por acaso, e come up with, ter uma ideia. Na trama, uma sequência numérica embaralhada e um anagrama abrem o caminho.",
+   "leitura": [
+    "O primeiro enigma é um anagrama escrito no chão: O, Draconian devil! Oh, lame saint!, que, reorganizado, vira Leonardo da Vinci! The Mona Lisa! Há também a sequência 13-3-2-21-1-1-8-5, que é a de Fibonacci fora de ordem. Quem come across esses sinais precisa come up with uma solução, e é isso que o episódio treina: encontrar pistas por acaso e inventar ideias para decifrá-las.",
+    "Michael Baigent e Richard Leigh, autores de Holy Blood, Holy Grail, processaram a Random House alegando plágio e perderam em Londres em 2006; o recurso foi negado em 2007. O juiz Peter Smith escondeu um código na própria sentença, o que gerou risos e debates. O caso aumentou a fama do romance, e Dan Brown seguiu escrevendo livros com Langdon como protagonista, entre eles O Símbolo Perdido."
+   ],
+   "facts": [
+    "O anagrama O, Draconian devil! Oh, lame saint! esconde Leonardo da Vinci! The Mona Lisa!",
+    "O juiz Peter Smith escondeu um código na sentença do processo de plágio contra Dan Brown, que o escritor ganhou em 2006."
+   ]
+  }
+ },
+ "en-a2|Beauty and the Beast": {
+  "v": "fix",
+  "why": "kb2 reescrito; removidas generalidades ('Ganhou inúmeras versões') e o tema 'treinar can' (não sustentado). Datas 1740/1756, Cocteau 1946, Disney 1991 (primeiro longa de animação indicado a melhor filme) e Broadway 1994 por conhecimento prévio; sem busca (limite).",
+  "blurb": "Conto de fadas em que uma jovem vive num castelo com uma fera de bom coração.",
+  "kb2": {
+   "intro": "A Bela e a Fera é um conto de fadas publicado pela primeira vez pela francesa Gabrielle-Suzanne de Villeneuve, em 1740, numa longa coletânea de novelas. Uma jovem aceita viver no castelo de uma fera para salvar o pai e acaba descobrindo a bondade dela. A versão mais conhecida é a resumida de Jeanne-Marie Leprince de Beaumont, de 1756, escrita para a educação de meninas.",
+   "leitura": [
+    "O conto de Beaumont começa como as histórias clássicas: era uma vez um mercador que perdeu a fortuna e tinha filhas, entre elas Bela, a mais nova, que não pediu joias, só uma rosa. Ao colher a flor no jardim da Fera, o pai a ofende e promete entregar a filha. No castelo, Bela se acostuma ao dono, que todas as noites lhe pergunta se aceita casar.",
+    "A versão de Villeneuve tem centenas de páginas e explica a maldição: a Fera é um príncipe transformado por uma fada má. Beaumont cortou essas partes e deu à história uma lição sobre valor interior. O conto inspirou o filme de Jean Cocteau, de 1946, o desenho da Disney, de 1991, e um musical da Broadway, de 1994, que também falam de aparência e bondade."
+   ],
+   "facts": [
+    "A versão de Villeneuve é de 1740, e a resumida de Beaumont, a mais conhecida, saiu em 1756.",
+    "O desenho da Disney de 1991 foi o primeiro longa de animação indicado ao Oscar de melhor filme."
+   ]
+  }
+ },
+ "en-a2|Cyrano de Bergerac": {
+  "v": "fix",
+  "why": "kb2 reescrito (tirada do nariz, varanda, panache, Coquelin, Roxanne); fala não procurada: traduções variam, mantida scene. Estreia 28/12/1897 (Porte Saint-Martin) e Coquelin por conhecimento prévio; sem busca (limite).",
+  "blurb": "Peça em verso de Rostand (1897): o poeta de nariz enorme que escreve cartas de amor em nome de outro.",
+  "kb2": {
+   "intro": "Cyrano de Bergerac é uma peça em versos do francês Edmond Rostand, estreada em Paris em 28 de dezembro de 1897. Cyrano é um espadachim e poeta brilhante, mas tem um nariz enorme e acha que ninguém o amará. Apaixonado por Roxane, ele ajuda o belo Christian a conquistá-la, escrevendo por ele as cartas e os elogios que ela tanto ama, tema que combina com o dos elogios.",
+   "leitura": [
+    "O papel principal foi de Constant Coquelin, e a peça foi sucesso imediato, misturando comédia, aventura e tragédia romântica. No primeiro ato, Cyrano mostra a um rival sem graça como zombar de um nariz com muita imaginação, numa tirada famosa. A habilidade com palavras, mais que a espada, é o que define Cyrano e também o que o faz sofrer por amor.",
+    "Na cena da varanda, escondido na sombra, Cyrano sopra frases apaixonadas a Christian, e Roxane se encanta sem saber de quem são. O filme Roxanne, com Steve Martin, de 1987, leva a história para uma cidadezinha americana. A última palavra da peça é panache, o ânimo elegante com que Cyrano enfrenta a vida. Em inglês, a cena serve bem para treinar elogios, como You look lovely today."
+   ],
+   "facts": [
+    "Cyrano foi inspirado num escritor e espadachim real do século XVII, Savinien de Cyrano de Bergerac, autor de histórias de viagens à Lua.",
+    "A peça estreou em 28 de dezembro de 1897, com o ator Constant Coquelin no papel principal."
+   ]
+  }
+ },
+ "en-a2|Green Eggs and Ham": {
+  "v": "fix",
+  "why": "kb2 reescrito; corrigido Bennett Cerf (era presidente/fundador da Random House, não 'editor') e a aposta (50 dólares, 50 palavras). Netflix 2019 mantido. Fatos por conhecimento prévio; sem busca (limite). Não procurei fala (texto sob direitos autorais, fit fraco com 'Grocery List').",
+  "blurb": "Livro de Dr. Seuss (1960): Sam-I-am insiste para o outro provar ovos verdes com presunto.",
+  "kb2": {
+   "intro": "Green Eggs and Ham é um livro infantil ilustrado de Dr. Seuss, nome artístico de Theodor Seuss Geisel, publicado em 1960. Sam-I-am insiste, em versos rimados, que um sujeito rabugento experimente um prato de ovos verdes com presunto, numa casa, num carro, num barco, num trem e em muitos outros lugares, até que ele finalmente prova e descobre que gosta. É um bom ponto de partida para falar de comida.",
+   "leitura": [
+    "O livro nasceu de uma aposta de 50 dólares: Bennett Cerf, da Random House, desafiou Geisel a escrever uma história com apenas 50 palavras diferentes. Ele ganhou, e o resultado é um dos livros infantis mais vendidos em inglês. Quase todas as palavras têm uma sílaba, e o vocabulário inclui ham, eggs, box, fox, goat e boat, que servem de apoio para listas de compras.",
+    "A repetição e a rima deixam o texto leve para quem está começando no inglês. A mensagem é simples: vale a pena provar antes de dizer que não gosta. Em 2019, a Netflix estreou uma série animada baseada no livro, e a frase I do not like them, Sam-I-am virou brincadeira popular. Para uma lista de compras, os pratos e os lugares do livro rendem muitas frases curtas e rimadas."
+   ],
+   "facts": [
+    "O livro usa só 50 palavras diferentes, resultado de uma aposta de 50 dólares com Bennett Cerf, da Random House.",
+    "Uma série animada baseada no livro estreou na Netflix em 2019."
+   ]
+  }
+ },
+ "en-a2|Lassie Come Home": {
+  "v": "fix",
+  "why": "kb2 reescrito (romance de Eric Knight 1940, MGM, Pal, Technicolor, Yorkshire/Escócia); removido 'clássico de lealdade' genérico. Fatos por conhecimento prévio; sem busca (limite).",
+  "blurb": "Filme de 1943 sobre uma collie que atravessa o país para voltar ao menino Joe.",
+  "kb2": {
+   "intro": "Lassie Come Home é um filme da MGM dirigido por Fred M. Wilcox, lançado em 1943, baseado no romance de Eric Knight, de 1940. Conta a viagem de uma cadela collie que, vendida pela família do menino Joe, que passa por dificuldades, foge do novo dono, um duque, e atravessa o Reino Unido para voltar para casa. A história é um bom ponto de partida para falar de animais de estimação.",
+   "leitura": [
+    "Roddy McDowall faz o menino Joe, Donald Crisp é o pai e Elizabeth Taylor aparece como a jovem Priscilla. A cadela Lassie foi interpretada por Pal, um cão macho, e seus descendentes mantiveram o papel por décadas, inclusive na série de TV exibida de 1954 a 1973. Cães machos eram preferidos por serem maiores e terem pelagem mais cheia, o que ficava melhor na tela.",
+    "O filme foi feito em Technicolor e mostra o campo de Yorkshire e a Escócia. Eric Knight, nascido em Yorkshire, morreu em janeiro de 1943 num acidente aéreo, durante o serviço militar nos Estados Unidos. A palavra home aparece o tempo todo, e a viagem de Lassie ajuda a treinar direções e lugares, como north, south e far from home, além de vocabulário de cuidar de um cão, como feed, walk e take care of."
+   ],
+   "facts": [
+    "Lassie foi interpretada por Pal, um cão macho, e seus descendentes seguiram no papel por décadas.",
+    "O filme de 1943 foi feito em Technicolor e baseado no romance de Eric Knight, de 1940."
    ]
   }
  }
