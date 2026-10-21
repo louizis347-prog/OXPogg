@@ -73,7 +73,7 @@ const head=(f,n,t)=>`${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||t)}</h2>`;
 /* 1 · pôster do vizinho */
 FXR.nbhero=function(f,st,n){
   const fl=(f.emo||[]).map((e,i)=>`<span class="nb-float" style="top:${14+i*32}px;right:${14+(i%2)*40}px;animation-delay:${i*.5}s">${e}</span>`).join('');
-  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${fxKindBar(f,n)}<div class="nb-poster">${fl}<span class="nb-no">VIZINHO Nº ${f.num} · ${H(f.lvl)}</span>${(()=>{try{const e=(typeof P!=='undefined'&&P)?P.e:null;if(e&&window.PogCover)return `<div class="nb-scene">${PogCover.svg(e)}</div>`}catch(x){}return `<div class="nb-big">${f.face}</div>`})()}<h2>${H(f.name)}</h2><p>${H(f.city)} · ${H(f.sub)}</p><div class="nb-mis"><small>SUA MISSÃO</small>${H(f.mission)}</div><button class="nb-hook" id="nbh">🔊 “${H(f.hook[0])}”</button></div><div class="nb-hint">${H(f.hook[1])}</div></div>`;
+  st.innerHTML=`<div class="step fx nbx" ${theme(f)}>${fxKindBar(f,n)}<div class="nb-poster">${fl}<span class="nb-no">VIZINHO Nº ${f.num} · ${H(f.lvl)}</span>${(()=>{try{const e=(typeof P!=='undefined'&&P)?P.e:null;if(e&&window.PogCover)return `<div class="nb-scene">${PogCover.svg(e,{full:true})}</div>`}catch(x){}return `<div class="nb-big">${f.face}</div>`})()}<h2>${H(f.name)}</h2><p>${H(f.city)} · ${H(f.sub)}</p><div class="nb-mis"><small>SUA MISSÃO</small>${H(f.mission)}</div><button class="nb-hook" id="nbh">🔊 “${H(f.hook[0])}”</button></div><div class="nb-hint">${H(f.hook[1])}</div></div>`;
   q('#nbh',st).onclick=()=>say2(f.hook[0],f.name);
   cta('Conhecer o vizinho',true);say('Esse é seu novo vizinho!')};
 
