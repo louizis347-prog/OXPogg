@@ -1,0 +1,27 @@
+/* HUD de XP ao vivo (js/livexp.js) */
+.p-head{position:relative}
+.lx-hud{position:absolute;left:50%;bottom:-12px;transform:translateX(-50%);z-index:5;display:flex;gap:6px;align-items:center;pointer-events:none;font:800 12px/1 var(--f-ui,system-ui,sans-serif);white-space:nowrap;opacity:0;transition:opacity .25s}
+.lx-hud.on{opacity:1}
+.lx-hud>span{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:99px;background:#fff;color:#2b3a4a;border:1px solid rgba(20,40,70,.14);box-shadow:0 2px 8px -3px rgba(20,40,70,.3)}
+.lx-xp b{color:#C77512;font-variant-numeric:tabular-nums;display:inline-block;min-width:1ch}
+.lx-combo{display:none!important}
+.lx-combo.on{display:inline-flex!important;color:#B8420B}
+.lx-combo.hot{background:linear-gradient(135deg,#fff3e0,#ffd9a8)}
+.lx-acc b{font-variant-numeric:tabular-nums}
+.lx-hud .pop{animation:lxPop .5s ease-out}
+.lx-xp.glow{animation:lxGlow .7s ease-out}
+.lx-hud.shake{animation:lxShake .4s}
+.lx-float{position:absolute;left:50%;bottom:12px;z-index:6;pointer-events:none;font:900 18px var(--f-ui,system-ui,sans-serif);color:#C77512;text-shadow:0 1px 0 #fff,0 0 8px rgba(255,200,90,.8);animation:lxFloat 1.1s ease-out forwards}
+.lx-float.c{color:#B8420B}
+@keyframes lxPop{0%{transform:scale(1)}40%{transform:scale(1.35)}100%{transform:scale(1)}}
+@keyframes lxGlow{0%{box-shadow:0 0 0 0 rgba(242,155,52,.7)}100%{box-shadow:0 0 0 12px rgba(242,155,52,0)}}
+@keyframes lxShake{0%,100%{translate:0}20%{translate:-4px}40%{translate:4px}60%{translate:-3px}80%{translate:2px}}
+@keyframes lxFloat{0%{transform:translate(-50%,0) scale(.7);opacity:0}15%{opacity:1;transform:translate(-50%,-6px) scale(1.15)}100%{transform:translate(-50%,-44px) scale(1);opacity:0}}
+:root[data-theme=dark] .lx-hud>span{background:#1d2733;color:#e6edf5;border-color:rgba(255,255,255,.14)}
+:root[data-theme=dark] .lx-xp b{color:#ffb74d}
+:root[data-theme=dark] .lx-combo.on{color:#ff9a62}
+:root[data-theme=dark] .lx-combo.hot{background:linear-gradient(135deg,#3a2a1c,#4d3118)}
+:root[data-theme=dark] .lx-float{color:#ffc266;text-shadow:0 0 8px rgba(0,0,0,.6)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .lx-hud>span{background:#1d2733;color:#e6edf5;border-color:rgba(255,255,255,.14)}:root:not([data-theme=light]) .lx-xp b{color:#ffb74d}:root:not([data-theme=light]) .lx-combo.on{color:#ff9a62}}
+@media (max-width:420px){.lx-hud{gap:4px;font-size:11px}.lx-hud>span{padding:3px 7px}}
+@media (prefers-reduced-motion:reduce){.lx-hud .pop,.lx-xp.glow,.lx-hud.shake{animation:none}.lx-float{animation:lxFade 1s forwards}@keyframes lxFade{0%{opacity:0;transform:translateX(-50%)}20%,70%{opacity:1;transform:translateX(-50%)}100%{opacity:0;transform:translateX(-50%)}}}
