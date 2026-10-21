@@ -362,3 +362,8 @@
   #player.az .step.nv-sb>*+*{margin-top:10px}
   #player.az .step.sv2{gap:11px!important}
 }
+
+/* P · Página da obra: a ilustração aparece inteira (sem faixa cortada) */
+#player.az .step.cp>.cu2-art{max-height:none!important;height:auto!important;aspect-ratio:320/200!important;width:min(100%,300px)!important;margin:0 auto var(--air,10px)!important;border-radius:18px!important}
+#player.az .step.cp>.cu2-art svg{width:100%!important;height:100%!important;object-fit:contain}
+@media (min-width:760px){#player.az .step.cp>.cu2-art{width:min(100%,360px)!important}}
