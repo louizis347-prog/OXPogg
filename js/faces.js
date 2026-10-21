@@ -45,8 +45,10 @@ function bust(o){
   const mood=o.mood||pick(R,['smile','smile','grin','soft']);
   const lipC=mix(tone>=3?'#7B3B34':'#C46A6E',skin,.15),lipD=mix(lipC,'#000',.25);
   const fem=g==='f';
+  o.skinOut=skin;o.shirtOut=shirt;o.hairOut=hair;
+  const rich=o.rich|0,Lt=o.light||null,ld=Lt?Lt.d:-1,lc=Lt?Lt.c:'#fff',lk=Lt?Lt.k:.6;
   let s=`<g>`;
-  s+=`<defs><radialGradient id="${u}fc" cx=".4" cy=".32" r=".85"><stop offset="0" stop-color="${skinL}"/><stop offset=".55" stop-color="${skin}"/><stop offset="1" stop-color="${skinD}"/></radialGradient>
+  s+=`<defs><radialGradient id="${u}fc" cx="${Lt?(ld<0?.33:.67):.4}" cy=".32" r=".85"><stop offset="0" stop-color="${skinL}"/><stop offset=".55" stop-color="${skin}"/><stop offset="1" stop-color="${skinD}"/></radialGradient>
    <linearGradient id="${u}nk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${skinDD}"/><stop offset=".45" stop-color="${skinD}"/><stop offset="1" stop-color="${skin}"/></linearGradient>
    <linearGradient id="${u}sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${shirtL}"/><stop offset="1" stop-color="${shirtD}"/></linearGradient>
    <linearGradient id="${u}hr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${hairL}"/><stop offset=".5" stop-color="${hair}"/><stop offset="1" stop-color="${hairD}"/></linearGradient>
@@ -59,6 +61,12 @@ function bust(o){
   /* tronco */
   s+=`<g transform="translate(0 -5)"><path d="M4 240 L4 130 C4 104 20 92 37 88 L63 88 C80 92 96 104 96 130 L96 240Z" fill="url(#${u}sh)"/><path d="M4 240 L4 130 C4 104 20 92 37 88 L63 88 C80 92 96 104 96 130 L96 240Z" fill="url(#${u}sd)"/>`;
   s+=`<path d="M22 112 C28 100 38 94 50 100" stroke="${shirtL}" stroke-opacity=".35" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M78 110 C72 100 62 94 56 100" stroke="${shirtD}" stroke-opacity=".35" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  if(rich>1){const sx=ld<0?1:-1;
+    s+=`<defs><pattern id="${u}wv" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="2.6" height="1.1" fill="#000" fill-opacity=".08"/></pattern></defs><path d="M4 240 L4 130 C4 104 20 92 37 88 L63 88 C80 92 96 104 96 130 L96 240Z" fill="url(#${u}wv)"/>`;
+    s+=`<g fill="none" stroke-linecap="round"><path d="M${50+sx*-22} 118 C${50+sx*-18} 132 ${50+sx*-24} 150 ${50+sx*-20} 170" stroke="${shirtD}" stroke-opacity=".3" stroke-width="2.4"/><path d="M${50+sx*14} 112 C${50+sx*20} 128 ${50+sx*16} 150 ${50+sx*22} 172" stroke="${shirtD}" stroke-opacity=".26" stroke-width="2"/><path d="M${50+sx*-30} 108 C${50+sx*-34} 118 ${50+sx*-36} 130 ${50+sx*-34} 142" stroke="${shirtL}" stroke-opacity=".38" stroke-width="2.2"/><path d="M${50+sx*-8} 124 C${50+sx*-4} 140 ${50+sx*-6} 156 ${50+sx*-2} 176" stroke="${shirtD}" stroke-opacity=".18" stroke-width="1.6"/></g>`;
+    }
+  if(rich){
+    s+=`<path d="M${ld<0?4:96} 130 C${ld<0?4:96} 108 ${ld<0?16:84} 96 ${ld<0?34:66} 90" stroke="${lc}" stroke-opacity="${(.5*lk).toFixed(2)}" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="${ld<0?24:76}" cy="108" rx="14" ry="9" fill="${lc}" fill-opacity="${(.12*lk).toFixed(2)}"/>`}
   s+=`</g>`;
   /* pescoço + sombra do queixo */
   s+=`<path d="M40.5 56 L40.5 84 Q50 93 59.5 84 L59.5 56Z" fill="url(#${u}nk)"/>`;
@@ -72,6 +80,9 @@ function bust(o){
   /* rosto */
   s+=`<path d="M31 38 C31 17 69 17 69 38 C69 53 61 67 50 67.5 C39 67 31 53 31 38Z" fill="url(#${u}fc)"/>`;
   s+=`<ellipse cx="37.5" cy="53" rx="5.4" ry="3.2" fill="${tone>=3?'#C46A5A':'#F0707C'}" fill-opacity="${tone>=3?.16:.22}"/><ellipse cx="62.5" cy="53" rx="5.4" ry="3.2" fill="${tone>=3?'#C46A5A':'#F0707C'}" fill-opacity="${tone>=3?.16:.22}"/>`;
+  if(rich){const sx=ld<0?1:-1,fx=50+sx*19;
+    s+=`<path d="M${50+sx*19} 38 C${50+sx*19} 53 ${50+sx*11} 67 50 67.5 C${50+sx*7} 60 ${50+sx*12} 50 ${50+sx*12} 40 C${50+sx*12} 30 ${50+sx*8} 23 ${50+sx*2} 19.4 C${50+sx*14} 20.4 ${50+sx*19} 28 ${50+sx*19} 38Z" fill="${skinDD}" fill-opacity=".24"/>`;
+    if(rich>1)s+=`<ellipse cx="${50-sx*6}" cy="27" rx="9" ry="3.6" fill="${lc}" fill-opacity="${(.2*lk).toFixed(2)}"/><ellipse cx="${50-sx*12}" cy="52" rx="4.6" ry="3" fill="#fff" fill-opacity=".12"/>`}
   /* barba */
   if(beard)s+=`<path d="M30.5 44 C30.5 62 38 71 50 71.5 C62 71 69.5 62 69.5 44 C66.5 53 62 57.5 55.5 58 L44.5 58 C38 57.5 33.5 53 30.5 44Z" fill="url(#${u}hr)" fill-opacity=".96"/><path d="M42 56.6 Q50 54.4 58 56.6 Q50 57.6 42 56.6Z" fill="${hairD}"/>`;
   /* olhos */
@@ -90,6 +101,9 @@ function bust(o){
   if(glasses)s+=`<g fill="#fff" fill-opacity=".1" stroke="${pick(R,['#2a2a33','#6b3d1e','#c0392b'])}" stroke-width="1.5"><circle cx="41" cy="${ey}" r="6.6"/><circle cx="59" cy="${ey}" r="6.6"/><path d="M47.6 ${ey} Q50 ${ey-1.8} 52.4 ${ey}" fill="none"/><path d="M34.4 ${ey-.4} L31.6 ${ey-1.4} M65.6 ${ey-.4} L68.4 ${ey-1.4}" fill="none"/></g>`;
   /* nariz */
   s+=`<path d="M50.2 44.4 C49.2 49 48.2 52.4 47.6 54 Q50 56 52.4 54" stroke="${skinD}" stroke-opacity=".75" stroke-width="1.15" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="48.2" cy="54.4" rx="1" ry=".7" fill="${skinDD}" fill-opacity=".55"/><ellipse cx="51.8" cy="54.4" rx="1" ry=".7" fill="${skinDD}" fill-opacity=".55"/><ellipse cx="49.6" cy="49.6" rx="1.1" ry="3.4" fill="#fff" fill-opacity=".2"/>`;
+  if(rich>1){const sx=ld<0?1:-1;
+    [[41,-1],[59,1]].forEach(([x,d])=>{s+=`<ellipse cx="${x}" cy="${ey+3.6}" rx="4.8" ry="1.5" fill="${skinDD}" fill-opacity=".16"/><path d="M${x-5.4} ${ey-1.6} Q${x} ${ey-6.6} ${x+5.4} ${ey-1.6}" stroke="${skinD}" stroke-opacity=".5" stroke-width=".7" fill="none"/><circle cx="${x+d*.3}" cy="${ey+.1}" r="2.55" fill="none" stroke="#000" stroke-opacity=".35" stroke-width=".45"/><path d="M${x-2} ${ey+1.2} Q${x+d*.3} ${ey+2.5} ${x+2} ${ey+1.2}" stroke="#fff" stroke-opacity=".22" stroke-width=".6" fill="none"/>`});
+    s+=`<path d="M${50-sx*1.4} 40 C${50-sx*1.6} 45 ${50-sx*2} 49 ${50-sx*2.4} 52" stroke="#fff" stroke-opacity=".2" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M${50+sx*2.4} 46 C${50+sx*3.4} 50 ${50+sx*3.8} 53 ${50+sx*2.6} 55" stroke="${skinDD}" stroke-opacity=".22" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M48.6 56.4 Q50 57.4 51.4 56.4" stroke="${skinDD}" stroke-opacity=".28" stroke-width=".6" fill="none"/>`}
   /* boca */
   const my=60.4;
   if(mood==='grin'){s+=`<path d="M43.2 ${my-1} Q50 ${my+7.6} 56.8 ${my-1} Q50 ${my-.6} 43.2 ${my-1}Z" fill="#7a2228"/><path d="M44.6 ${my-.3} Q50 ${my+2.2} 55.4 ${my-.3} L55.4 ${my-1} Q50 ${my-.4} 44.6 ${my-1}Z" fill="#fff"/>`}
@@ -104,9 +118,15 @@ function bust(o){
   else if(style==='long'||style==='wavy'||style==='bun'||style==='bob')s+=`<path d="M30 44 C24 12 76 8 70 44 C69 33 64 25 52 24 C44 31 36 30 34 38 C32 40 31 42 30 44Z" fill="url(#${u}hr)"/><path d="M52 24 C48 29 42 33 34 36" stroke="${hairD}" stroke-opacity=".5" stroke-width="1" fill="none"/>${shine}`;
   else if(style==='curly'){let c='';for(let i=0;i<13;i++){const a=Math.PI*(1.05+i*.083),r=20+R()*3,x=50+Math.cos(a)*r*1.18,y=40+Math.sin(a)*r*1.1;c+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(6+R()*2.4).toFixed(1)}" fill="${i%3?hair:hairD}"/>`}s+=c+`<path d="M33 34 Q50 20 67 34 C64 27 58 24 50 24 C42 24 36 27 33 34Z" fill="url(#${u}hr)"/>`+shine}
   else if(style==='bald')s+=`<path d="M32 36 C34 22 66 22 68 36" stroke="${hairL}" stroke-opacity=".28" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="44" cy="26" rx="6" ry="2.2" fill="#fff" fill-opacity=".18"/>`;
+  if(rich&&style!=='bald'){let st='';if(rich>1){const hs=rng(seed+3);
+    if(rich>1)for(let i=0;i<9;i++){const a=-.35+i*.09+hs()*.05,x0=33+i*4.2,y0=24+Math.abs(i-4)*1.4;st+=`M${x0.toFixed(1)} ${(y0+7).toFixed(1)}Q${(x0+2+hs()*3).toFixed(1)} ${(y0-2).toFixed(1)} ${(x0+9+i*.4).toFixed(1)} ${(y0-3+hs()*3).toFixed(1)}`}
+    s+=`<path d="${st}" stroke="${hairL}" stroke-opacity=".34" stroke-width=".55" fill="none" stroke-linecap="round"/>`}
+    s+=`<path d="M${ld<0?31.2:68.8} 36 C${ld<0?31:69} 26 ${ld<0?38:62} 18.6 50 17.6" stroke="${lc}" stroke-opacity="${(.55*lk).toFixed(2)}" stroke-width="1.1" fill="none" stroke-linecap="round"/>`}
   if(age==='kid')s=s.replace('<g>','<g>');
   if(o.hat==='cap')s+=`<path d="M28 33 C28 10 72 10 72 33Z" fill="${o.hatColor||'#2F6BE8'}"/><path d="M66 31 L86 35 Q84 39 64 36Z" fill="${mix(o.hatColor||'#2F6BE8','#000',.25)}"/>`;
-  return s+'</g>';
+  s+='</g>';
+  if(o.grade){const G=o.grade,cache={};s=s.replace(/#[0-9a-fA-F]{6}\b/g,c=>cache[c]||(cache[c]=mix(c,G.c,G.k)))}
+  return s;
 }
 /* avatar redondo (só o rosto) a partir do emoji do personagem; usado nos chats */
 function avatar(em,name,color){
