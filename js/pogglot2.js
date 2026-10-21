@@ -251,7 +251,7 @@ window.home=function(){
   const res=(()=>{try{return resumeTarget()}catch(e){return null}})(),u=me();
   let goal=null;try{goal=window.PogSettings&&PogSettings.goalState?PogSettings.goalState():null}catch(e){}
   const due=(()=>{try{return srsDueCount()}catch(e){return 0}})();
-  const ls0=PU().LANGS,order=['nb','nbes','nbfr','nbde','nbpt','nbja','en','es','fr','de','it','pt','enes'],ls=ls0.slice().sort((x,y)=>(order.indexOf(x.id)<0?99:order.indexOf(x.id))-(order.indexOf(y.id)<0?99:order.indexOf(y.id)));
+  const ls0=PU().LANGS,order=['en','es','nb','fr','de','it','nbes','nbfr','nbde','nbpt','nbja','pt','enes'],started=l=>{let d=0;try{l.sub.forEach(c=>{d+=doneCountFor(c)})}catch(e){}return d>0?0:1},ls=ls0.slice().sort((x,y)=>(started(x)-started(y))||((order.indexOf(x.id)<0?99:order.indexOf(x.id))-(order.indexOf(y.id)<0?99:order.indexOf(y.id))));
   const first=u&&u.name?String(u.name).split(' ')[0]:'';
   const rc=res?COURSES[res.cid]:null,rlv=res?lvlOf(res.cid):'';
   const pill=(ic,v,l)=>`<span class="px-pill"><i>${ic}</i><b data-cu>${v}</b><small>${E(l)}</small></span>`;
@@ -274,8 +274,8 @@ window.home=function(){
   <section class="px-sec">${sectionHead(t('courses'),t('coursesSub'),`<button class="p2link" data-go="courses">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-langs">${ls.map(langPill).join('')}</div></section>
   ${window.PogMissions?PogMissions.cardHTML():''}
   ${window.PogRecap?PogRecap.recapHTML():''}
-  <section class="px-sec">${sectionHead(t('howT'))}<div class="px-steps">${steps.map(([ic,i])=>`<div class="st"><span class="n">${i}</span><i>${ic}</i><b>${E(t('h'+i+'t'))}</b><small>${E(t('h'+i+'d'))}</small></div>`).join('')}</div></section>
-  <section class="px-sec">${sectionHead(t('cefrT'))}<div class="px-cefr">${lv.map((x,i)=>`<div class="l l${i}"><b>${x}</b><small>${E(t('l'+(i+1)))}</small></div>`).join('')}</div></section>
+  ${res||ST.xp>0?'':`<section class="px-sec">${sectionHead(t('howT'))}<div class="px-steps">${steps.map(([ic,i])=>`<div class="st"><span class="n">${i}</span><i>${ic}</i><b>${E(t('h'+i+'t'))}</b><small>${E(t('h'+i+'d'))}</small></div>`).join('')}</div></section>`}
+  ${res||ST.xp>0?'':`<section class="px-sec">${sectionHead(t('cefrT'))}<div class="px-cefr">${lv.map((x,i)=>`<div class="l l${i}"><b>${x}</b><small>${E(t('l'+(i+1)))}</small></div>`).join('')}</div></section>`}
   ${showA.length?`<section class="px-sec">${sectionHead(t('achHd'),'',`<button class="p2link" data-go="ach">${E(t('seeAll'))}${IC.arrow()}</button>`)}<div class="px-achrow">${showA.map(a=>`<div class="a ${got[a.id]?'':'lock'}" style="--p:${got[a.id]?100:Math.min(100,Math.round(a.cur(s)/a.goal*100))}"><span class="rg"><i>${a.ic}</i></span><b>${E(a.n[L])}</b><small>${got[a.id]?'✓':Math.min(a.cur(s),a.goal)+'/'+a.goal}</small></div>`).join('')}</div></section>`:''}`,'home');
   try{
     const host=document.querySelector('.pt-today-slot');
