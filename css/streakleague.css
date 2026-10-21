@@ -27,3 +27,7 @@
 .sl-fz small{color:var(--t-ink2);font-size:var(--t-fs-sm)}
 .sl-toast{width:max-content;max-width:min(92vw,420px);border-radius:18px!important;text-align:center;box-sizing:border-box}
 @media (max-width:640px){.sl-lg,.sl-fz{padding:var(--t-s4)}.sl-fz{align-items:flex-start}}
+
+/* a barra do topo já está cheia em telas até 1500px: o estoque de 🧊 fica na home e no Painel */
+@media (max-width:1499px){.sl-chip{display:none!important}}
+@media (max-width:1320px) and (min-width:1000px){.pgbar .in{gap:4px}}
