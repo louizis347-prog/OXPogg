@@ -1,0 +1,19 @@
+{
+  "model": "neighbors",
+  "required": ["hero", "chat", "comprehension", "swap", "context", "vocabulary", "production", "review", "wrap"],
+  "runtime_layers": ["story_thread", "free_reply", "tone_choice", "pragmatics", "spaced_review", "arc_milestone", "arc_reflection"],
+  "level_focus": {
+    "A1-A2": ["survival language", "natural short replies", "politeness", "listening confidence"],
+    "B1-B2": ["negotiation", "register", "clarification", "opinion and disagreement"],
+    "C1-C2": ["subtext", "precision", "diplomacy", "rhetorical strategy", "professional nuance"]
+  },
+  "episode": {
+    "title": "<situation title>",
+    "mission": "<what the learner must accomplish>",
+    "location": "<place and social context>",
+    "dialogue": [["Character", "English line", "Translation"]],
+    "target_phrases": ["<reusable phrase>"],
+    "open_task": "<learner speaks or writes a response>",
+    "review": "<retrieval from a previous episode>"
+  }
+}
