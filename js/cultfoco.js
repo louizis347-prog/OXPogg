@@ -54,8 +54,7 @@ function art(tp){
     var I=window.PogIllus;
     if(I){
       var r=null;
-      if(typeof I.scene==='function')r=I.scene(tp.id,{emoji:tp.em,colors:tp.c});
-      if(!r&&typeof I.pick==='function')r=I.pick(tp.id);
+      if(typeof I.auto==='function')r=I.auto([tp.id,tp.t,tp.em].filter(Boolean),{mood:'day'});
       if(typeof r==='string'&&r.indexOf('<')>=0)return r;
     }
   }catch(e){}
