@@ -89,7 +89,7 @@ function ctx(kind,o){
 
  /* ceu + sol/lua + nuvens */
  c.sky=function(hy,sx,sy,noclouds){
-  var s=R(0,0,W,hy+70,c.lg([[0,m.sk[0]],[.55,m.sk[1]],[.85,m.sk[2]],[1,m.sk[2]]],'v'));
+  var mot=o.motion,s=R(0,0,W,hy+70,c.lg([[0,m.sk[0]],[.55,m.sk[1]],[.85,m.sk[2]],[1,m.sk[2]]],'v'));
   sx=sx==null?m.sx*W:sx;sy=sy==null?m.sy*H:sy;c.sun=[sx,sy];
   if(mk==='night'){
    var st='';for(var i=0;i<9;i++)st+=Ci(c.rn(4,196),c.rn(4,116),c.rn(.5,1.2),'#fff',' opacity="'+n1(c.rn(.3,.9))+'"');
@@ -100,11 +100,11 @@ function ctx(kind,o){
    s+=Ci(sx,sy,big,c.rg(m.sun,mk==='day'?.55:.9))+Ci(sx,sy,big*.28,c.rg('#fff',.8))+Ci(sx,sy,mk==='day'?16:24,mk==='day'?'#fffbe8':'#fff1d2',' opacity=".95"'+c.bl(1.5))
   }
   if(!noclouds){
-   var cs=c.bl(7),k,j,x,y,g;
+   var cs=c.bl(7),k,j,x,y,g;if(mot)s+='<g class="'+id+'a">';
    for(k=0;k<3;k++){x=c.rn(100,W-100);y=c.rn(40,hy*.6);g='<g'+cs+'>';
     for(j=0;j<3;j++)g+=El(x+c.rn(-60,60),y+c.rn(-6,8),c.rn(44,84),c.rn(11,20),m.cl,' opacity="'+n1(c.rn(.5,.85))+'"');
     g+=El(x,y+13,90,8,m.cs,' opacity=".35"')+'</g>';s+=g}
-   s+='<g'+c.bl(12)+' opacity=".4">'+El(W*.3,hy*.5,260,7,m.cl)+El(W*.7,hy*.7,300,8,m.cl)+'</g>'
+   s+='<g'+c.bl(12)+' opacity=".4">'+El(W*.3,hy*.5,260,7,m.cl)+El(W*.7,hy*.7,300,8,m.cl)+'</g>';if(mot)s+='</g>'
   }
   return s};
 
@@ -150,7 +150,7 @@ function ctx(kind,o){
  /* feixe de luz (janela -> chao) */
  c.beam=function(x,y,w,h,dx,dy,op){
   var sl=m.sl;if(sl<.1)return'';op=(op==null?.2:op)*sl;var yb=y+h;
-  return'<g'+SCR+c.bl(5)+'>'+Pa('M'+x+' '+y+'L'+(x+w)+' '+y+'L'+(x+w+dx)+' '+(yb+dy)+'L'+(x+dx*.9)+' '+(yb+dy)+'Z',c.lg([[0,m.key,op*1.1],[1,m.key,op*.3]],'v'))+'</g>'};
+  return(o.motion?'<g class="'+id+'b">':'')+'<g'+SCR+c.bl(5)+'>'+Pa('M'+x+' '+y+'L'+(x+w)+' '+y+'L'+(x+w+dx)+' '+(yb+dy)+'L'+(x+dx*.9)+' '+(yb+dy)+'Z',c.lg([[0,m.key,op*1.1],[1,m.key,op*.3]],'v'))+'</g>'+(o.motion?'</g>':'')};
  c.patch=function(pts,op){var sl=m.sl;return'<g'+SCR+c.bl(3)+'>'+Pa(pts,m.key,' opacity="'+n1((op||.35)*sl)+'"')+'</g>'};
  c.lamp=function(x,y,r,col,op){return c.glow(x,y,r,col||'#ffcf8a',(op==null?.6:op)*Math.max(m.lamp,.12))};
  c.fin=function(){
@@ -165,6 +165,7 @@ function ctx(kind,o){
   var mo=o.motion?'<style>@media (prefers-reduced-motion:no-preference){.'+id+'a{animation:'+id+'d 14s ease-in-out infinite alternate}.'+id+'b{animation:'+id+'s 7s ease-in-out infinite alternate}}@keyframes '+id+'d{to{transform:translateX(-9px)}}@keyframes '+id+'s{from{opacity:.55}to{opacity:1}}</style>':'';
   var defs='<defs>'+D.join('')+'<radialGradient id="'+id+'vg" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient><filter id="'+id+'mt" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".035 .05" numOctaves="3" seed="'+(hs(kind)%50+3)+'"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.7 -.5"/></filter><filter id="'+id+'gr" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="'+(hs(kind)%90)+'" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>';
   body=body.split(SCR).join(' class="s"').split(MUL).join(' class="u"');
+  var mn=function(t){return t.replace(/ offset="0"/g,'').replace(/([ ,"(:\-L])0\.(\d)/g,'$1.$2')};
   return'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid slice" class="pogillus" role="img" aria-label="'+(label||'').replace(/"/g,'')+'" style="display:block;width:100%;height:auto;aspect-ratio:16/9">'+mo+defs+body+'</svg>'};
  return c}
 
@@ -856,10 +857,11 @@ S['hotel-lobby']=function(c,m){
  var mb='';for(i=-8;i<9;i++)mb+='M'+(480+i*40)+' '+hy+'L'+(480+i*180)+' '+H;s+=Ln(mb,'#000',1,' opacity=".13"')+Ln('M0 380H960M0 430H960M0 500H960','#000',1,' opacity=".1"');
  s+=Ln('M80 350Q200 440 120 540M830 360Q700 450 840 540M400 345Q520 400 430 470','#fff',2,' opacity=".25"'+c.bl(1));
  /* balcao */
+ s+=c.p(480,352,168,'W',{t:'#1f2a44',l:'#1f2a44',noshadow:1,h:'#2a1c14',d:0});
  s+=c.shadow(480,444,260,18,.5)+R(250,300,460,140,c.lg([[0,c.C('#7a5538')],[1,c.C('#4a3220')]],'v'));
  for(i=0;i<9;i++)s+=R(262+i*50,312,34,116,'none',' stroke="'+c.C('#2f1f13')+'" stroke-width="1.6"');
  s+=R(236,288,488,16,c.lg([[0,c.C('#e9e0d0')],[1,c.C('#a89c86')]],'v'))+R(236,288,488,2,'#fff',' opacity=".6"')+c.glow(480,300,260,'#ffd9a0',.3*Math.max(m.lamp,.3));
- s+=c.p(480,300,128,'W',{t:'#1f2a44',l:'#1f2a44',noshadow:1,h:'#2a1c14',d:0})+Ci(300,284,7,c.C('#f2efe6'))+R(640,278,28,10,c.C('#d9a45a'))+Pa('M610 288Q620 262 640 288Z',c.C('#2f6b4b'))+c.lamp(610,272,60,'#ffd98a',.6);
+ s+=Ci(300,284,7,c.C('#f2efe6'))+R(640,278,28,10,c.C('#d9a45a'))+Pa('M610 288Q620 262 640 288Z',c.C('#2f6b4b'))+c.lamp(610,272,60,'#ffd98a',.6);
  /* colunas */
  function col(x,wd){return R(x-wd/2-6,hy-20,wd+12,18,c.C('#d9c28a'))+R(x-wd/2,0,wd,hy-20,c.lg([[0,c.C('#e2dacb')],[.35,c.C('#fbf7ee')],[1,c.C('#8f8574')]],'h'))+R(x-wd/2-6,0,wd+12,16,c.C('#d9c28a'))+R(x-wd/2-6,hy,wd+12,8,c.C('#d9c28a'))}
  s+=col(120,60)+col(840,60);
@@ -980,5 +982,6 @@ function frame(kind,o){
   '<span style="position:absolute;inset:0;border-radius:'+r+'px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),inset 0 -60px 70px -40px rgba(0,0,0,.45);pointer-events:none"></span>'+
   (cap?'<figcaption style="position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;font:600 13px/1.3 system-ui,-apple-system,Segoe UI,sans-serif;color:#fff;letter-spacing:.01em;background:linear-gradient(to top,rgba(0,0,0,.62),rgba(0,0,0,0));text-shadow:0 1px 3px rgba(0,0,0,.6)">'+String(cap).replace(/</g,'&lt;')+'</figcaption>':'')+'</figure>'}
 
-w.PogIllus={scene:scene,pick:pick,frame:frame,kinds:KINDS.slice(),auto:function(t,o){return scene(pick(t),o)},moods:['dawn','day','sunset','night'],_S:S};
+function uri(kind,o){return'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(scene(kind,o))}
+w.PogIllus={uri:uri,scene:scene,pick:pick,frame:frame,kinds:KINDS.slice(),auto:function(t,o){return scene(pick(t),o)},moods:['dawn','day','sunset','night'],_S:S};
 })(window);
