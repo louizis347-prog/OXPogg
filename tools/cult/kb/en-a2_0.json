@@ -43,10 +43,29 @@
   "pd": true,
   "blurb": "Novela de Dickens: o Natal é festa e mesa farta, em contraste com a avareza de Scrooge.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "O Espírito do Natal Presente leva Scrooge por casas de Londres, mostrando mesas postas e famílias celebrando, mesmo as mais pobres, como a de Bob Cratchit.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "I'll give you Mr. Scrooge, the Founder of the Feast!",
+     "Eu lhes proponho o Sr. Scrooge, o Fundador da Festa!",
+     "Bob Cratchit"
+    ]
+   ],
+   "src": "Stave 3 · Charles Dickens, 1843",
+   "ctx": "Na ceia dos Cratchit, Bob ergue o copo e propõe um brinde ao patrão, mesmo ele pagando tão mal. A Sra. Cratchit reluta em beber.",
+   "hl": [
+    "Founder of the Feast"
+   ]
+  },
+  "q": {
+   "q": "A quem Bob propõe o brinde na ceia?",
+   "o": [
+    "A Scrooge, o patrão",
+    "A Marley, o fantasma",
+    "A Tiny Tim, o filho"
+   ],
+   "a": 0,
+   "why": "Bob diz 'I'll give you Mr. Scrooge, the Founder of the Feast!'."
   }
  },
  "A Christmas Carol: Gratitude": {
@@ -133,10 +152,29 @@
   "pd": true,
   "blurb": "Novela de Dickens: o velho Scrooge conta moedas e fecha o livro-caixa na noite de Natal.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "No escritório frio, Scrooge cuida de seus negócios e recusa pedir ou dar dinheiro para ajudar os pobres no Natal.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "Are there no prisons?",
+     "Não há prisões?",
+     "Scrooge"
+    ]
+   ],
+   "src": "Stave 1 · Charles Dickens, 1843",
+   "ctx": "No escritório da firma, dois cavalheiros pedem a Scrooge uma doação para os pobres. Ele responde com esta pergunta, recusando-se a pagar.",
+   "hl": [
+    "Are there no prisons?"
+   ]
+  },
+  "q": {
+   "q": "O que Scrooge pergunta aos homens que pedem ajuda?",
+   "o": [
+    "Se não há prisões",
+    "Se não há escolas",
+    "Se não há hospitais"
+   ],
+   "a": 0,
+   "why": "Scrooge diz 'Are there no prisons?', isto é, pergunta se não há prisões para cuidar dos pobres."
   }
  },
  "A Raisin in the Sun": {
@@ -246,12 +284,37 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: Alice bebe de um frasco e encolhe.",
+  "blurb": "Clássico de Lewis Carroll: Alice confere o rótulo de um frasco antes de beber e encolher.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Alice encontra um frasco com o rótulo DRINK ME. Ela bebe e encolhe até ficar pequena o bastante para passar por uma portinha para o jardim.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "if you drink much from a bottle marked 'poison,'",
+     "se você bebe muito de uma garrafa marcada com 'veneno',",
+     "Narrador"
+    ],
+    [
+     "it is almost certain to disagree with you, sooner or later.",
+     "é quase certo que isso lhe fará mal, mais cedo ou mais tarde.",
+     "Narrador"
+    ]
+   ],
+   "src": "Capítulo 1 · Lewis Carroll, 1865",
+   "ctx": "Antes de provar o frasco com o rótulo DRINK ME, Alice lembra que garrafas marcadas com a palavra poison fazem mal.",
+   "hl": [
+    "bottle marked",
+    "disagree with you"
+   ]
+  },
+  "q": {
+   "q": "O que o rótulo 'poison' avisa?",
+   "o": [
+    "Que o conteúdo pode fazer mal",
+    "Que o conteúdo é doce",
+    "Que o frasco está vazio"
+   ],
+   "a": 0,
+   "why": "Garrafa marcada com 'poison' costuma fazer mal a quem bebe."
   }
  },
  "Alice: Eat Me": {
@@ -259,12 +322,31 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: um bolinho com o rótulo EAT ME faz Alice crescer.",
+  "blurb": "Clássico de Lewis Carroll: um bolinho com EAT ME em passas faz Alice crescer e inventar um comparativo.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Dentro de uma caixinha, Alice encontra um bolo com as palavras EAT ME escritas em passas. Ao comê-lo, ela cresce demais.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "Curiouser and curiouser!",
+     "Cada vez mais curioso!",
+     "Alice"
+    ]
+   ],
+   "src": "Capítulo 2 · Lewis Carroll, 1865",
+   "ctx": "Depois de comer o bolo marcado EAT ME, Alice cresce tanto que se espanta e erra a gramática de propósito.",
+   "hl": [
+    "Curiouser"
+   ]
+  },
+  "q": {
+   "q": "Por que Alice diz essa frase?",
+   "o": [
+    "Porque está espantada com o que acontece",
+    "Porque quer ir embora",
+    "Porque está com sono"
+   ],
+   "a": 0,
+   "why": "Ela acaba de crescer depois de comer o bolo e fica surpresa."
   }
  },
  "Alice: The Mad Tea Party": {
@@ -272,7 +354,7 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: um chá sem hora com o Chapeleiro Maluco e a Lebre de Março.",
+  "blurb": "Clássico de Lewis Carroll: um chá sem hora com o Chapeleiro e a Lebre de Março, só com pão e manteiga.",
   "cena": {
    "mode": "quote",
    "lines": [
@@ -304,7 +386,7 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: a Rainha de Copas condena todos com um grito.",
+  "blurb": "Clássico de Lewis Carroll: a Rainha de Copas manda cortar cabeças, mas ninguém é de fato executado.",
   "cena": {
    "mode": "quote",
    "lines": [
@@ -336,12 +418,31 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: Alice se senta à mesa do chá com personagens estranhos.",
+  "blurb": "Clássico de Lewis Carroll: Alice recebe ofertas estranhas à mesa do chá: vinho que não existe e chá a mais.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Alice chega a uma mesa grande onde o Chapeleiro, a Lebre de Março e o Leirão tomam chá e a recebem de modo pouco educado, dizendo 'No room!'.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "\"Have some wine,\" the March Hare said in an encouraging tone.",
+     "\"Aceite um pouco de vinho\", disse a Lebre de Março em tom encorajador.",
+     "Narrador"
+    ]
+   ],
+   "src": "Capítulo 7 · Lewis Carroll, 1865",
+   "ctx": "Alice acaba de se sentar à mesa do chá, e a Lebre de Março lhe oferece vinho. Ela olha em volta e vê que só há chá.",
+   "hl": [
+    "Have some wine"
+   ]
+  },
+  "q": {
+   "q": "Que bebida a Lebre de Março oferece?",
+   "o": [
+    "Vinho",
+    "Suco",
+    "Leite"
+   ],
+   "a": 0,
+   "why": "Ela diz Have some wine, mas na mesa só há chá."
   }
  },
  "Alice: The White Rabbit": {
@@ -349,7 +450,7 @@
   "by": "Lewis Carroll",
   "y1": 1865,
   "pd": true,
-  "blurb": "Clássico de Lewis Carroll: um coelho com relógio de bolso corre dizendo que está atrasado.",
+  "blurb": "Clássico de Lewis Carroll: um coelho de colete e relógio de bolso corre dizendo que está atrasado.",
   "cena": {
    "mode": "quote",
    "lines": [
@@ -381,12 +482,31 @@
   "by": "Lewis Carroll",
   "y1": 1871,
   "pd": true,
-  "blurb": "Continuação de Alice: Humpty Dumpty explica os 'não aniversários' do ano.",
+  "blurb": "Continuação de Alice: Humpty Dumpty calcula 364 dias de presentes de 'não aniversário'.",
   "cena": {
-   "mode": "scene",
-   "lines": [],
-   "ctx": "Em Através do Espelho (cap. 6), Humpty Dumpty explica a Alice que há 364 dias para presentes de 'não aniversário' e só um para presentes de aniversário.",
-   "hl": []
+   "mode": "quote",
+   "lines": [
+    [
+     "And only one for birthday presents, you know.",
+     "E só um para presentes de aniversário, sabe.",
+     "Humpty Dumpty"
+    ]
+   ],
+   "src": "Capítulo 6 · Lewis Carroll, 1871",
+   "ctx": "Humpty Dumpty acabou de contar 364 dias de presentes de não aniversário e conclui com o único dia de aniversário.",
+   "hl": [
+    "birthday presents"
+   ]
+  },
+  "q": {
+   "q": "Quantos dias de aniversário Humpty Dumpty conta por ano?",
+   "o": [
+    "Um",
+    "Trezentos e sessenta e quatro",
+    "Sete"
+   ],
+   "a": 0,
+   "why": "Ele diz que só um dia é de presentes de aniversário."
   }
  },
  "American Graffiti": {
@@ -724,7 +844,7 @@
   "by": "Richard Linklater",
   "y1": 1995,
   "pd": false,
-  "blurb": "Filme em que dois jovens passam uma noite conversando por Viena.",
+  "blurb": "Filme de Linklater (1995): Jesse e Céline passam uma noite conversando por Viena.",
   "cena": {
    "mode": "scene",
    "lines": [],
