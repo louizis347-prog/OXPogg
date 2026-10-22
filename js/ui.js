@@ -46,7 +46,7 @@ const LANGS=[
  {id:'nbde',mono:'NB',c:'#D4A017',cd:'#9A7410',cl:'#FFF0BF',n:{pt:'Neighbors · Alemão e comunidades germanófonas',es:'Neighbors · Alemán y comunidades germanófonas'},sub:['nbde-a1','nbde-a2','nbde-b1','nbde-b2','nbde-c1','nbde-c2']},
  {id:'nbja',mono:'NB',c:'#D6336C',cd:'#A02351',cl:'#FFD9E6',n:{pt:'Neighbors · Japonês',es:'Neighbors · Japonés'},sub:['nbja-kana','nbja-a1','nbja-a2']},
  {id:'nbeng',mono:'NB',c:'#2E6F95',cd:'#1F4D6B',cl:'#D5E8F5',n:{pt:'Neighbors · Inglês (p/ hispanofalantes)',es:'Neighbors · English'},sub:['nbeng-a1']},
- {id:'nbit',mono:'NB',c:'#2E9E6A',cd:'#1F7249',cl:'#D7F3E3',n:{pt:'Neighbors · Italiano',es:'Neighbors · Italiano'},sub:['nbit-a1']},
+ {id:'nbit',mono:'NB',c:'#2E9E6A',cd:'#1F7249',cl:'#D7F3E3',n:{pt:'Neighbors · Italiano e comunidades italianófonas',es:'Neighbors · Italiano y comunidades italófonas'},sub:['nbit-a1','nbit-a2','nbit-b1','nbit-b2','nbit-c1','nbit-c2']},
  {id:'nbpt',mono:'NB',c:'#1FA35C',cd:'#13763F',cl:'#D3F5E1',n:{pt:'Neighbors · Português brasileiro para falantes de espanhol',es:'Neighbors · Portugués brasileño para hispanohablantes'},sub:['nbpt-a1','nbpt-a2','nbpt-b1','nbpt-b2','nbpt-c1','nbpt-c2','nbpten-a1']},
  {id:'nbfr',mono:'NB',c:'#2F6BE8',cd:'#1F4DB8',cl:'#D7E3FF',n:{pt:'Neighbors · Francês para brasileiros',es:'Neighbors · Francés para brasileños'},sub:['nbfr-a1','nbfr-a2','nbfr-b1','nbfr-b2','nbfr-c1','nbfr-c2']},
  {id:'pt',mono:'PT',c:'#3FBF3F',cd:'#2A962A',cl:'#D2F2D2',n:{pt:'Português',es:'Portugués'},sub:['pt-a1','pt-a2','pt-b1','pt-b2','pt-c1','pt-c2']}
