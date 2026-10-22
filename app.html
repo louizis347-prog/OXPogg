@@ -1554,7 +1554,7 @@ add('cv_ko',()=>{const r=R(57),g=uid(),gs=uid(),gm=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],'ja-a1':[],'ja-a2':[],'ja-b1':[],'ja-b2':[],'ja-c1':[],'ja-c2':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],'enesh-a1':[],'enesh-a2':[],'enesh-b1':[],'enesh-b2':[],'enesh-c1':[],'enesh-c2':[],'ko-a1':[],'ko-a2':[],'ko-b1':[],'ko-b2':[],'ko-c1':[],'ko-c2':[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],'ja-a1':[],'ja-a2':[],'ja-b1':[],'ja-b2':[],'ja-c1':[],'ja-c2':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],'enesh-a1':[],'enesh-a2':[],'enesh-b1':[],'enesh-b2':[],'enesh-c1':[],'enesh-c2':[],'ko-a1':[],'ko-a2':[],'ko-b1':[],'ko-b2':[],'ko-c1':[],'ko-c2':[],'frbr-a1':[],'frbr-a2':[],'frbr-b1':[],'frbr-b2':[],'frbr-c1':[],'frbr-c2':[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -2362,7 +2362,7 @@ function homeCards(){
   // One tile per family: en / es / nb open a level hub; other courses open directly.
   const out=[];const seen={};
   Object.values(COURSES).forEach(c=>{
-    if(['nb','en','es','pt','fr','enes','debr','itbr','jabr','kobr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
+    if(['nb','en','es','pt','fr','frbr','enes','debr','itbr','jabr','kobr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
       out.push({id:g.id,hub:true,feat:g.id==='nb',scene:g.scene,flag:g.flag,name:g.name,desc:g.desc,n:g.sub.reduce((a,x)=>a+(EP_COUNT[x]||0),0),d:g.sub.reduce((a,x)=>a+doneCountFor(x),0),metaR:g.id==='nb'?{pt:'Inglês A1–C2 · Espanhol A1',es:'Inglés A1–C2 · Español A1'}:{pt:'6 níveis · A1–C2',es:'6 niveles · A1–C2'}});return}
     out.push({id:c.id,hub:false,scene:c.scene,flag:c.flag,name:c.name,desc:c.desc,n:EP_COUNT[c.id]||0,d:doneCountFor(c.id)})});
   out.sort((x,y)=>(y.feat?1:0)-(x.feat?1:0));

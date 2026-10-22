@@ -212,7 +212,7 @@ function sectionHead(h,p,right){return `<div class="p2sh"><div><h2>${E(h)}</h2>$
 function langArt(l,iconId,sub){
   return `<div class="art" style="--c:${l.c};--cd:${l.cd}"><b class="wm">${E(l.mono)}</b><i class="tile">${PC().icon(iconId||LANG_ICON[l.id]||'globe',58,l.cd)}</i>${sub?`<span class="sub">${E(sub)}</span>`:''}</div>`;
 }
-const LANG_SC={en:'street',es:'plaza',fr:'paris',de:'station',it:'lisboa',ja:'japan',ko:'seoul',pt:'ipanema',nb:'plaza',nbes:'plaza',nbfr:'paris',nbde:'station',nbpt:'ipanema',nbit:'lisboa',nbeng:'street',nbja:'station',enes:'street'};
+const LANG_SC={en:'street',es:'plaza',fr:'paris',frbr:'paris',de:'station',it:'lisboa',ja:'japan',ko:'seoul',pt:'ipanema',nb:'plaza',nbes:'plaza',nbfr:'paris',nbde:'station',nbpt:'ipanema',nbit:'lisboa',nbeng:'street',nbja:'station',enes:'street'};
 const LV_SC={A1:'cafe',A2:'street',B1:'office',B2:'station',C1:'library',C2:'ballroom'};
 const sceneArt=(key,sc)=>{try{return PC().svg({t:String(key),sc,a:{w:String(key),k:'Cidade'},n:0},{noChar:true})}catch(e){return ''}};
 function workCover(w,k){const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:k||w.k||''}};return PC().work(e)}
