@@ -312,7 +312,7 @@ FXR.xpr=function(f,st,n){
 function renumber(cid){
   try{
     const L=EP&&EP[cid];if(!L||!L.length||L._rn===L.length)return;
-    let k=0;L.forEach(e=>{if(typeof e.en==='number'||e.en==null){if(!e.mv&&!e.pl&&!(e.sp)&&!(e.n>20000&&e.n<21000)){k++;e.en=k}}});
+    let k=0;L.forEach(e=>{if(typeof e.en==='number'||e.en==null){if(!e.mv&&!isPlannedEpisode(e)&&!(e.sp)&&!(e.n>20000&&e.n<21000)){k++;e.en=k}}});
     L._rn=L.length;
   }catch(x){}
 }

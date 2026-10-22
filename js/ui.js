@@ -232,7 +232,7 @@ window.hub=function(id){
     PogUI.cur='home';setHash('#/lang/'+l.id);
     const I=langInfo(l),RING=2*Math.PI*40;
     // próximo episódio
-    let tgt=null;for(const cid of l.sub){const eps=EP[cid]||[];const nx=eps.find(e=>!ST.done[cid+'-'+e.n]&&!e.pl);if(nx){tgt={cid,idx:eps.indexOf(nx)};break}}
+    let tgt=null;for(const cid of l.sub){const eps=EP[cid]||[];const nx=eps.find(e=>!ST.done[cid+'-'+e.n]&&!isPlannedEpisode(e));if(nx){tgt={cid,idx:eps.indexOf(nx)};break}}
     const started=I.d>0;
     app.innerHTML=topbar(L)+`<main class="pg" style="${lstyle(l)}">
     <button class="pg-back" data-go="home">← ${k('back')}</button>
@@ -257,7 +257,7 @@ function arcsHTML(cid,L){
 }
 /* explorador de arcos: abre o arco e entra direto em qualquer episódio, sem passar pela trilha */
 function arcExplorer(subs,L,tgt){
-  const first=(subs.find(c=>(EP[c]||[]).some(e=>!ST.done[c+'-'+e.n]&&!e.pl))||subs[0]);
+  const first=(subs.find(c=>(EP[c]||[]).some(e=>!ST.done[c+'-'+e.n]&&!isPlannedEpisode(e)))||subs[0]);
   const cur=(tgt&&tgt.cid)||first;
   const chips=subs.length>1?`<div class="pg-lv-chips">${subs.map(c=>`<button class="pg-chip ${c===cur?'on':''}" data-arclv="${c}">${c.split('-')[1].toUpperCase()}</button>`).join('')}</div>`:'';
   return `<div class="pg-sec"><div><h2>${k('arcs')}</h2><p>${L==='es'?'Toca un arco y entra directo en cualquier episodio.':'Toque num arco e entre direto em qualquer episódio.'}</p></div></div>${chips}<section class="pg-arcs" id="pgarcs" data-subs="${subs.join(',')}" data-cur="${cur}"></section>`;
@@ -266,7 +266,7 @@ function arcExplorer(subs,L,tgt){
 function arcPos(eps,arcs,i){const st=x=>{const k=eps.findIndex(e=>e.n===arcs[x][0]);return k};const s=st(i);if(s<0)return[];const nx=i+1<arcs.length?st(i+1):-1;return eps.slice(s,nx<0?eps.length:nx)}
 function drawArcs(cid){
   const host=document.getElementById('pgarcs');if(!host)return;host.dataset.cur=cid;
-  const L=L0(),arcs=ARCS[cid]||[],eps=(EP[cid]||[]).filter(e=>!e.pl);
+  const L=L0(),arcs=ARCS[cid]||[],eps=(EP[cid]||[]).filter(e=>!isPlannedEpisode(e));
   const nx=eps.find(e=>!ST.done[cid+'-'+e.n]);
   const rows=arcs.map((a,i)=>{const lo=a[0];const inA=arcPos(eps,arcs,i),d=inA.filter(e=>ST.done[cid+'-'+e.n]).length;
     if(!inA.length)return '';const open=nx&&inA.includes(nx);
@@ -290,7 +290,7 @@ function mountArcs(){
     const w=h.parentNode,cid=host.dataset.cur,lo=+h.dataset.arc;
     const opening=!w.classList.contains('open');w.classList.toggle('open',opening);h.setAttribute('aria-expanded',opening);
     const box=w.querySelector('.pg-arc-eps');
-    if(opening&&!box.innerHTML){const arcs=ARCS[cid]||[],i=arcs.findIndex(a=>a[0]===lo);box.innerHTML=arcEps(cid,arcPos((EP[cid]||[]).filter(e=>!e.pl),arcs,i))}
+    if(opening&&!box.innerHTML){const arcs=ARCS[cid]||[],i=arcs.findIndex(a=>a[0]===lo);box.innerHTML=arcEps(cid,arcPos((EP[cid]||[]).filter(e=>!isPlannedEpisode(e)),arcs,i))}
   };
 }
 

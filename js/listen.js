@@ -18,7 +18,7 @@ function linesOf(e){
   if(e.h&&e.h.l)return [{who:'A',text:clean(e.h.l),tr:clean(e.h.tr)}];
   return [];
 }
-function playable(cid){return (EP[cid]||[]).map((e,i)=>({e,i})).filter(x=>!x.e.pl&&linesOf(x.e).length)}
+function playable(cid){return (EP[cid]||[]).map((e,i)=>({e,i})).filter(x=>!x.isPlannedEpisode(e)&&linesOf(x.e).length)}
 function voice(lang){
   try{const vs=speechSynthesis.getVoices()||[],p=String(lang||'en').slice(0,2).toLowerCase(),
     c=vs.filter(v=>String(v.lang).toLowerCase().startsWith(p)),good=c.filter(v=>!/compact|espeak/i.test(v.name));

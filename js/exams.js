@@ -8,7 +8,7 @@ var MIN={a1:30,a2:40,b1:60,b2:80,c1:100,c2:120};
 var store;
 function info(cid){var m=/^(?:nb)?([a-z]{2})(?:-(a1|a2|b1|b2|c1|c2))?/.exec(cid||'')||[],lg=m[1]||'en',lv=m[2]||'a1';
   var nm=lg==='ja'?EXAM.ja+' '+JLPT[lv]:EXAM[lg]+' '+lv.toUpperCase();return{name:nm,min:MIN[lv]||30,lv:lv}}
-function realCount(cid){return((typeof EP!=='undefined'&&EP[cid])||[]).filter(function(e){return!e.pl&&!e.rev}).length}
+function realCount(cid){return((typeof EP!=='undefined'&&EP[cid])||[]).filter(function(e){return!isPlannedEpisode(e)&&!e.rev}).length}
 function card(cid){var i=info(cid),b=store('exam:'+cid);
   var best=b?'<small>Melhor nota: <b>'+b.pct+'%</b> · '+esc(b.date)+'</small>':'<small>'+i.min+' min · 40 questões · aprovação 60%</small>';
   return '<section class="exam-card" role="region" aria-label="Simulado"><div class="ex-i">🎓</div><div class="ex-t"><b>Simulado '+esc(i.name)+'</b>'+best+'</div><button class="ex-b" id="ex-go">Começar</button></section>'}

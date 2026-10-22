@@ -33,7 +33,7 @@ var NEWQ={i:0};
 function backfillExpr(){NEWQ.i=0;var n=0;try{
   var pend=Object.keys(ST.srs).filter(function(k){return ST.srs[k].t==='x'&&ST.srs[k].due>srsToday()}).length;NEWQ.i=pend;
   Object.keys(COURSES).forEach(function(cid){var eps=EP[cid];if(!eps||!eps.length)return;
-    eps.forEach(function(e){if(e.pl||e.rev||!ST.done[cid+'-'+e.n])return;n+=addExpr(cid,e)})});
+    eps.forEach(function(e){if(isPlannedEpisode(e)||e.rev||!ST.done[cid+'-'+e.n])return;n+=addExpr(cid,e)})});
   if(n)save()}catch(err){}return n}
 async function prepare(){
   var cs=Object.keys(COURSES).filter(function(c){return doneCountFor(c)>0});

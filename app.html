@@ -1554,6 +1554,9 @@ add('cv_ko',()=>{const r=R(57),g=uid(),gs=uid(),gm=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
+// A propriedade pl aparece em dados antigos também como código de idioma (por exemplo, 'es').
+// Só valores explícitos representam episódio planejado; isso mantém o avanço e o roadmap consistentes.
+function isPlannedEpisode(e){return !!e&&(e.pl===true||e.pl===1||e.pl==='1'||e.pl==='planned');}
 const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],'ja-a1':[],'ja-a2':[],'ja-b1':[],'ja-b2':[],'ja-c1':[],'ja-c2':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbde-a2':[],'nbde-b1':[],'nbde-b2':[],'nbde-c1':[],'nbde-c2':[],'nbpt-a1':[],'nbpt-a2':[],'nbpt-b1':[],'nbpt-b2':[],'nbpt-c1':[],'nbpt-c2':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbja-b1':[],'nbja-b2':[],'nbja-c1':[],'nbja-c2':[],'nbeng-a1':[],'nbeng-a2':[],'nbeng-b1':[],'nbeng-b2':[],'nbeng-c1':[],'nbeng-c2':[],'nbit-a1':[],'nbit-a2':[],'nbit-b1':[],'nbit-b2':[],'nbit-c1':[],'nbit-c2':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],'enesh-a1':[],'enesh-a2':[],'enesh-b1':[],'enesh-b2':[],'enesh-c1':[],'enesh-c2':[],'ko-a1':[],'ko-a2':[],'ko-b1':[],'ko-b2':[],'ko-c1':[],'ko-c2':[],'frbr-a1':[],'frbr-a2':[],'frbr-b1':[],'frbr-b2':[],'frbr-c1':[],'frbr-c2':[],'zhbr-a1':[],'zhbr-a2':[],'zhbr-b1':[],'zhbr-b2':[],'zhbr-c1':[],'zhbr-c2':[]};
 let EP_COUNT={},EP_AVAILABLE={},MANIFEST=null;const EP_LOADING={};
 /* Registra automaticamente o gênero dos personagens dos cursos regulares a partir do avatar
@@ -2385,7 +2388,7 @@ function topbar(L){const t=T[L];return `<header class="topbar"><div class="wrap"
 /* ================= RESUME ================= */
 function resumeTarget(){if(!ST.lastCourse||!COURSES[ST.lastCourse])return null;const eps=EP[ST.lastCourse];
   if(!eps||!eps.length)return null;
-  const e=eps.find(x=>!ST.done[ST.lastCourse+'-'+x.n]&&!x.pl)||eps.find(x=>x.n===ST.lastEp);
+  const e=eps.find(x=>!ST.done[ST.lastCourse+'-'+x.n]&&!isPlannedEpisode(x))||eps.find(x=>x.n===ST.lastEp);
   if(!e)return null;return{cid:ST.lastCourse,idx:eps.findIndex(x=>x.n===e.n),e};}
 const MOVED_A1_A2={"258": 5258, "259": 5259, "360": 5360, "361": 5361, "27": 5027, "284": 5284, "29": 5029, "285": 5285, "362": 5362, "290": 5290, "291": 5291, "363": 5363, "364": 5364, "45": 5045, "306": 5306, "307": 5307, "332": 5332, "333": 5333, "334": 5334, "335": 5335, "338": 5338, "339": 5339, "348": 5348, "349": 5349, "100": 5100, "101": 5101, "102": 5102, "103": 5103, "104": 5104, "105": 5105, "106": 5106, "107": 5107, "108": 5108, "109": 5109, "110": 5110, "111": 5111, "112": 5112, "113": 5113, "114": 5114, "115": 5115, "116": 5116, "117": 5117, "365": 5365, "374": 5374, "120": 5120, "121": 5121, "375": 5375, "376": 5376, "124": 5124, "125": 5125, "126": 5126, "127": 5127, "128": 5128, "129": 5129, "377": 5377, "134": 5134, "135": 5135, "137": 5137, "139": 5139, "143": 5143, "172": 5172, "173": 5173, "179": 5179, "180": 5180, "181": 5181, "440": 5440, "441": 5441, "451": 5451, "452": 5452, "453": 5453, "454": 5454, "455": 5455, "456": 5456, "457": 5457, "224": 5224, "225": 5225, "228": 5228, "229": 5229, "230": 5230, "231": 5231, "236": 5236, "237": 5237};
 const MOVED_A2_B1={"583": 583, "587": 587, "589": 589, "597": 597, "602": 602, "610": 610, "614": 614, "616": 616, "620": 620, "623": 623, "627": 627, "631": 631, "636": 636, "641": 641, "661": 661, "662": 662, "663": 663, "668": 668, "671": 671, "682": 682, "685": 685, "686": 686, "687": 687, "689": 689, "694": 694, "695": 695, "698": 698, "699": 699, "700": 700, "701": 701, "702": 702, "703": 703, "704": 704, "706": 706, "707": 707, "708": 708, "709": 709, "710": 710, "712": 712, "713": 713, "714": 714, "715": 715, "716": 716, "719": 719, "720": 720, "721": 721, "723": 723, "725": 725, "726": 726, "727": 727, "728": 728, "729": 729, "732": 732, "733": 733, "734": 734, "737": 737, "738": 738, "739": 739, "740": 740, "741": 741, "743": 743, "744": 744, "745": 745, "746": 746, "747": 747, "748": 748, "749": 749, "750": 750, "751": 751, "752": 752, "753": 753, "754": 754, "755": 755, "758": 758, "760": 760, "761": 761, "762": 762, "763": 763, "765": 765, "767": 767, "768": 768, "769": 769, "770": 770, "771": 771, "772": 772, "773": 773, "774": 774, "775": 775, "776": 776, "777": 777, "778": 778, "779": 779, "780": 780, "781": 781, "782": 782, "783": 783, "784": 784, "785": 785, "786": 786, "787": 787, "788": 788, "789": 789, "790": 790, "791": 791, "792": 792, "793": 793, "794": 794, "795": 795, "796": 796, "798": 798, "799": 799, "800": 800, "801": 801, "808": 808, "809": 809, "810": 810, "812": 812, "813": 813, "814": 814, "815": 815, "816": 816, "817": 817, "828": 828, "830": 830, "831": 831, "832": 832, "833": 833, "847": 847, "850": 850, "852": 852, "856": 856, "865": 865, "867": 867, "869": 869, "870": 870, "917": 917, "1005": 1005, "1006": 1006, "1007": 1007, "1010": 1010, "1012": 1012, "1013": 1013, "1014": 1014, "1015": 1015, "1016": 1016, "1017": 1017, "1018": 1018, "1019": 1019, "1020": 1020, "1026": 1026, "1029": 1029, "1030": 1030, "1031": 1031, "1032": 1032, "1033": 1033, "1034": 1034, "1037": 1037, "1038": 1038, "1040": 1040, "1041": 1041, "1042": 1042, "1043": 1043, "1044": 1044, "1045": 1045, "1046": 1046, "1047": 1047, "1048": 1048, "1050": 1050, "1051": 1051, "1053": 1053, "1054": 1054, "1055": 1055, "1056": 1056, "1058": 1058, "1059": 1059, "1060": 1060, "1061": 1061, "1062": 1062, "1063": 1063, "1064": 1064, "1065": 1065, "1066": 1066, "1067": 1067, "1068": 1068, "1069": 1069, "1070": 1070, "1071": 1071, "1072": 1072, "1073": 1073, "1074": 1074, "1075": 1075, "1076": 1076, "1077": 1077, "1078": 1078, "1079": 1079, "1080": 1080, "1081": 1081, "1082": 1082, "1083": 1083, "1084": 1084, "1085": 1085, "1086": 1086, "1088": 1088, "1089": 1089, "1090": 1090, "1098": 1098, "1099": 1099, "1100": 1100, "1104": 1104, "1107": 1107, "1108": 1108, "1109": 1109, "1110": 1110, "1112": 1112, "1113": 1113, "1114": 1114, "1115": 1115, "1123": 1123, "1124": 1124, "1125": 1125, "1129": 1129, "5045": 5045, "5100": 5100, "5101": 5101, "5103": 5103, "5110": 5110, "5111": 5111, "5113": 5113, "5116": 5116, "5117": 5117, "5124": 5124, "5125": 5125, "5128": 5128, "5129": 5129, "5134": 5134, "5135": 5135, "5137": 5137, "5139": 5139, "5172": 5172, "5173": 5173, "5290": 5290, "5291": 5291, "5348": 5348, "5349": 5349, "5364": 5364, "5365": 5365, "5451": 5451, "5455": 5455, "5456": 5456, "5457": 5457};
@@ -2509,7 +2512,7 @@ async function goalCard(gid){const el=document.getElementById('goalcard');if(!el
   let P;try{P=await fetch('data/plan_'+gid+'.json?v=1').then(r=>r.json())}catch(e){return}
   const subs=GROUPS[gid].sub;try{await Promise.all(subs.filter(c=>doneCountFor(c)>0).map(ensureLangLoaded))}catch(e){}
   const W=new Set(),X=new Set(),norm=w=>String(w).toLowerCase().trim().replace(/^(el|la|los|las|un|una|le|les|l'|une|des|der|die|das)\s+/,'');
-  subs.forEach(cid=>(EP[cid]||[]).forEach(e=>{if(e.pl||e.rev||!ST.done[cid+'-'+e.n])return;(e.v||[]).forEach(v=>v&&v[0]&&W.add(norm(v[0])));(e.fr||[]).forEach(f=>{if(f&&f.k==='nbslang'&&f.gl)Object.keys(f.gl).forEach(k=>X.add(k.toLowerCase()))})}));
+  subs.forEach(cid=>(EP[cid]||[]).forEach(e=>{if(isPlannedEpisode(e)||e.rev||!ST.done[cid+'-'+e.n])return;(e.v||[]).forEach(v=>v&&v[0]&&W.add(norm(v[0])));(e.fr||[]).forEach(f=>{if(f&&f.k==='nbslang'&&f.gl)Object.keys(f.gl).forEach(k=>X.add(k.toLowerCase()))})}));
   const gw=P.goals.words,gx=P.goals.expr,nf=n=>n.toLocaleString('pt-BR'),pc=(a,b)=>Math.min(100,a/b*100).toFixed(1);
   const rows=Object.keys(P.levels).map(lv=>{const l=P.levels[lv];return `<tr><td><b>${lv.toUpperCase()}</b> <small>${l.exam}</small></td><td>${l.episodes}</td><td>${nf(l.cum_words_end)}</td><td>${nf(l.cum_expr_end)}</td></tr>`}).join('');
   el.innerHTML=`<h3>🎯 Metas do curso, de A1 a C2</h3><p>Ao terminar os 2.000 episódios você terá visto <b>mais de ${nf(gw)} palavras diferentes</b> e <b>mais de ${nf(gx)} expressões</b> (locuções, frases feitas e gírias).</p>
@@ -2557,8 +2560,8 @@ function profile(){const L=ST.homeLang,t=T[L];
   </section>
   <div class="sec-h"><h2>${t.dashCourses}</h2></div>
   <section class="dash-courses">${Object.values(COURSES).map((c,i)=>{
-    const eps=EP[c.id],n=eps.filter(e=>!e.pl).length,d=eps.filter(e=>ST.done[c.id+'-'+e.n]).length,pct=n?d/n:0;
-    const next=eps.find(e=>!ST.done[c.id+'-'+e.n]&&!e.pl);
+    const eps=EP[c.id],n=eps.filter(e=>!isPlannedEpisode(e)).length,d=eps.filter(e=>ST.done[c.id+'-'+e.n]).length,pct=n?d/n:0;
+    const next=eps.find(e=>!ST.done[c.id+'-'+e.n]&&!isPlannedEpisode(e));
     const off=RING_C*(1-pct);
     const nextLabel=next?`${t.ep} ${eps.indexOf(next)+1} — ${esc(next.t)}`:t.courseComplete;
     const btnLabel=!d?t.startCourse:(next?t.continueBtn:t.reviewCourse);
@@ -2674,7 +2677,7 @@ function simPick(correct,cands,k,fn,maxJac){const seen=new Set(),sc=[];cands.for
   sc.sort((a,b)=>b[0]-a[0]);const top=sc.slice(0,6).map(x=>x[1]);if(top.length<=k)return top;return [top[0]].concat(shufArr(top.slice(1)).slice(0,k-1));}
 function buildArcTest(cid,tid){
   const arcs=ARCS[cid]||[];let ai=arcs.findIndex(a=>'mt'+a[0]===tid),eps,qs=[],mult=1,cp=null;
-  if(tid==='exam'){eps=(EP[cid]||[]).filter(e=>!e.pl&&!e.rev);mult=4;if(eps.length<8)return null}
+  if(tid==='exam'){eps=(EP[cid]||[]).filter(e=>!isPlannedEpisode(e)&&!e.rev);mult=4;if(eps.length<8)return null}
   else if(ai<0){cp=cpTests(cid).find(x=>x.id===tid);if(!cp)return null;ai=cp.arcIdx;eps=[];for(let k=cp.a0;k<=cp.arcIdx;k++)eps.push(...arcSlice(cid,k));mult=2;}
   else eps=arcSlice(cid,ai);
   const mcs=[];eps.forEach(e=>(e.fr||[]).forEach(f=>{if(f.k==='nbctx')(f.items||[]).forEach(it=>{if(it&&it.opts&&it.opts.length>=2&&it.opts.length<=4&&typeof it.a==='number')mcs.push([String(it.sit).replace(/_{3,}/g,'____'),it.opts.slice(),it.a,String(it.why||'')]);});if(f.k==='nbtap')(f.items||[]).forEach(it=>{if(it&&it.opts&&it.opts.length>=2&&it.opts.length<=4&&typeof it.a==='number')mcs.push([String(it.pt),it.opts.map(o=>Array.isArray(o)?o[1]:o),it.a,'']);});}));eps.forEach(e=>(e.q||[]).forEach(q=>{if(q&&q[1]&&q[1].length>=2&&q[1].length<=4)mcs.push(q);}));
@@ -2697,7 +2700,7 @@ function buildArcTest(cid,tid){
 /* ================= COURSE MAP ================= */
 /* selo de arco completo: reaproveita a arte da cena (pilha de livros) num medalhão */
 function cl(cid){const m=/^(?:en|es)-(a1|a2|b1|b2|c1|c2)$/.exec(cid||'');return m?m[1].toUpperCase():'';}
-function arcSlice(id,ai){const arcs=ARCS[id]||[],list=EP[id]||[];if(!arcs[ai])return[];const s=list.findIndex(e=>e.n===arcs[ai][0]);if(s<0)return[];const nb=arcs[ai+1]?list.findIndex(e=>e.n===arcs[ai+1][0]):-1;return list.slice(s,nb<0?list.length:nb).filter(e=>!e.pl);}
+function arcSlice(id,ai){const arcs=ARCS[id]||[],list=EP[id]||[];if(!arcs[ai])return[];const s=list.findIndex(e=>e.n===arcs[ai][0]);if(s<0)return[];const nb=arcs[ai+1]?list.findIndex(e=>e.n===arcs[ai+1][0]):-1;return list.slice(s,nb<0?list.length:nb).filter(e=>!isPlannedEpisode(e));}
 function arcComplete(id,startN){
   const arcs=ARCS[id]||[];const idx=arcs.findIndex(x=>x[0]===startN);if(idx<0)return false;
   const eps=arcSlice(id,idx);
@@ -2711,7 +2714,7 @@ function arcStampSvg(seed){
     <path d="M29 29l5 14-8-3.4-4 5.6-4-11z" fill="var(--plum)"/>
   </svg>`;
 }
-function course(id){const c=COURSES[id],L=c.ui,t=T[L];let nextN=(EP[id].find(e=>!ST.done[id+'-'+e.n]&&!e.pl)||{}).n;
+function course(id){const c=COURSES[id],L=c.ui,t=T[L];let nextN=(EP[id].find(e=>!ST.done[id+'-'+e.n]&&!isPlannedEpisode(e))||{}).n;
   const testAnchors=(TESTS[id]||[]).map(ts=>({ts,anchorN:ts.afterId!=null?((EP[id][EP[id].findIndex(x=>x.n===ts.afterId)+1]||{}).n||'__end'):(EP[id].find(e=>e.n>ts.afterN&&!e.mv)||{}).n}));
   arcTests(id).concat(cpTests(id)).forEach(mt=>{const ai=mt.arcIdx,nx=(ARCS[id]||[])[ai+1];const skipCk=false;testAnchors.push({ts:mt,anchorN:nx?nx[0]:'__end',mini:true});});
   app.innerHTML=topbar(ST.homeLang)+`<main class="wrap">
@@ -2722,7 +2725,7 @@ function course(id){const c=COURSES[id],L=c.ui,t=T[L];let nextN=(EP[id].find(e=>
   <div class="ep-search"><input type="text" id="epsearch" placeholder="${t.searchPh}" aria-label="${t.searchPh}"></div>
   <div id="noresults" class="road-f" hidden><span>${t.noResults}</span></div>
   <div class="trail" id="trail"><svg class="path"><path id="trailpath" fill="none" stroke="#B8C9C6" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 14"/></svg>
-  ${EP[id].map((e,i)=>`${testAnchors.filter(a=>a.anchorN===e.n).map(a=>testNodeHTML(id,a.ts,i,t)).join('')}${(ARCS[id].find(x=>x[0]===e.n)||[])[1]?`<div class="arc ${arcComplete(id,e.n)?'arc-done':''}">${arcComplete(id,e.n)?arcStampSvg(e.n):''}<span>${(ARCS[id].find(x=>x[0]===e.n))[1]}</span><small>${cl(id)||(e.lv||lvl(e.n))}</small></div>`:''}${e.pl&&!['en','es','pt','fr'].includes(c.group)?`<button class="node locked" data-plan="${id}:${i}" data-search="${i+1} ${esc(e.t.toLowerCase())}" style="--i:${i}" title="Ver a capa deste episódio">
+  ${EP[id].map((e,i)=>`${testAnchors.filter(a=>a.anchorN===e.n).map(a=>testNodeHTML(id,a.ts,i,t)).join('')}${(ARCS[id].find(x=>x[0]===e.n)||[])[1]?`<div class="arc ${arcComplete(id,e.n)?'arc-done':''}">${arcComplete(id,e.n)?arcStampSvg(e.n):''}<span>${(ARCS[id].find(x=>x[0]===e.n))[1]}</span><small>${cl(id)||(e.lv||lvl(e.n))}</small></div>`:''}${isPlannedEpisode(e)&&!['en','es','pt','fr'].includes(c.group)?`<button class="node locked" data-plan="${id}:${i}" data-search="${i+1} ${esc(e.t.toLowerCase())}" style="--i:${i}" title="Ver a capa deste episódio">
     <span class="disc">🚧</span><span class="info"><b>${esc(e.t)}</b><small><span class="tag">${t.kind[(e.a||{}).k]||(e.a||{}).k}: ${esc((e.a||{}).w)}</span><span class="tag t3">Em breve</span></small></span></button>`:`<button class="node p${i%4} ${ST.done[id+'-'+e.n]?'done':''} ${e.n===nextN?'next':''}" data-ep="${id}:${i}" data-search="${i+1} ${esc(e.t.toLowerCase())}" style="--i:${i}">
     <span class="disc">${ST.done[id+'-'+e.n]?'✓':(e.en||i+1)}</span><span class="info"><b>${esc(e.t)}</b><small><span class="tag">${t.kind[(e.a||{}).k]||(e.a||{}).k}: ${esc((e.a||{}).w)}</span><span class="tag t2">${esc(e.s)}</span>${e.rf?'<span class="tag t3">Reforço</span>':''}${e.mod?'<span class="tag">Novo</span>':''}${e.mv?'<span class="tag t3">Veio do A1</span>':''}<span>~5 ${t.min}</span></small></span></button>`}`).join('')}${testAnchors.filter(a=>a.anchorN==='__end').map(a=>testNodeHTML(id,a.ts,EP[id].length,t)).join('')}
   </div></main>`;scrollTo(0,0);
@@ -2735,9 +2738,9 @@ function course(id){const c=COURSES[id],L=c.ui,t=T[L];let nextN=(EP[id].find(e=>
     $('#noresults').hidden=!q||shown>0;
   };}
 
-function roadmap(id,t,nextN){const eps=EP[id],n=eps.filter(e=>!e.pl).length;
+function roadmap(id,t,nextN){const eps=EP[id],n=eps.filter(e=>!isPlannedEpisode(e)).length;
   const L0=cl(id)||lvl((eps[0]||{}).n||1);
-  const done=eps.filter(e=>!e.pl&&ST.done[id+'-'+e.n]).length,fill=n?done/n:0;
+  const done=eps.filter(e=>!isPlannedEpisode(e)&&ST.done[id+'-'+e.n]).length,fill=n?done/n:0;
   const ci=Math.max(0,eps.findIndex(e=>e.n===nextN));const pos=Math.max(0,Math.min(100,(ci/Math.max(1,eps.length-1))*100));
   return `<section class="road"><div class="road-h"><b>${t.level} ${L0}</b><span>${t.road}</span></div>
   <div class="road-bar"><div class="seg" style="flex:1"><i style="width:${(fill*100).toFixed(1)}%"></i><span>${L0}</span><small>1–${eps.length}</small></div>
@@ -3133,8 +3136,8 @@ function nextPlayIdx(cid,idx){
   const l=EP[cid]||[];
   for(let k=idx+1;k<l.length;k++){
     // Dados antigos podem trazer pl como 0/1 ou como texto; somente 1/true bloqueia.
-    const planned=l[k].pl===true||l[k].pl===1||l[k].pl==='1';
-    if(!planned)return k;
+    const candidate=l[k];
+    if(candidate && !isPlannedEpisode(candidate) && Array.isArray(candidate.fr) && candidate.fr.length)return k;
   }
   return -1;
 }

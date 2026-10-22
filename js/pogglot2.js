@@ -175,7 +175,7 @@ const firstCourse=()=>{
   try{const p=JSON.parse(localStorage.getItem('pogglot:learningProfile')||'null');if(p&&p.preference==='Conversação'&&COURSES['nbeng-a1'])return'nbeng-a1';}catch(e){}
   return'en-a1';
 };
-function nextIdx(cid){const eps=EP[cid]||[];return eps.findIndex(e=>!e.pl&&!isDone(cid,e))}
+function nextIdx(cid){const eps=EP[cid]||[];return eps.findIndex(e=>!isPlannedEpisode(e)&&!isDone(cid,e))}
 function loadCourse(cid,fn){return navLoading(()=>ensureLangLoaded(cid).then(fn))}
 
 /* ---------- barra superior e navegação inferior ---------- */
@@ -329,7 +329,7 @@ function buildArcs(cid){
 }
 function epCard(cid,e,i,nextI){
   const num=e.en||i+1,numS=String(num).padStart(2,'0'),L=L0();
-  if(e.pl){
+  if(isPlannedEpisode(e)){
     return `<article class="p2ep soon"><button class="cv" data-plan="${cid}:${i}" aria-label="${E(e.t)}">${PC().locked(e,{num})}<span class="kd">${IC.lock()}${E(t('soon'))}</span></button>
      <div class="bd"><small class="meta">${E(t('ep'))} ${numS}</small><h3>${E(e.t)}</h3><p class="src">${E(kindLabel(e))}${(e.a&&e.a.w)?' · '+E(e.a.w):''}</p><button class="p2btn ghost sm" data-plan="${cid}:${i}">${E(t('seeCover'))}</button></div></article>`;
   }
@@ -364,21 +364,21 @@ function listHTML(){
     return `<div class="p2grid">${hit.slice(0,V.lim).map(i=>epCard(cid,list[i],i,nextI)).join('')}</div>${hit.length>V.lim?`<div class="p2morewrap"><button class="p2btn soft" data-p2more>${E(t('more'))} (${hit.length-V.lim})</button></div>`:''}`;
   }
   return V.arcs.map((o,k)=>{
-    const eps=list.slice(o.s,o.e).filter(e=>!e.pl),d=eps.filter(e=>isDone(cid,e)).length,p=eps.length?d/eps.length:0,open=V.open.has(k);
+    const eps=list.slice(o.s,o.e).filter(e=>!isPlannedEpisode(e)),d=eps.filter(e=>isDone(cid,e)).length,p=eps.length?d/eps.length:0,open=V.open.has(k);
     return `<section class="p2arc ${open?'open':''} ${p>=1&&eps.length?'complete':''}" data-k="${k}"><button class="ah" data-p2arc="${k}" aria-expanded="${open}">
-      <span class="num">${p>=1&&eps.length?IC.check():k+1}</span>${(list[o.s]&&!list[o.s].pl)?`<span class="th">${PC().svg(list[o.s],{noChar:false})}</span>`:''}<span class="tt"><b>${E(o.title)}</b><small>${nf(d)}/${nf(eps.length)} ${E(t('lessons'))}</small></span>
+      <span class="num">${p>=1&&eps.length?IC.check():k+1}</span>${(list[o.s]&&!isPlannedEpisode(list[o.s]))?`<span class="th">${PC().svg(list[o.s],{noChar:false})}</span>`:''}<span class="tt"><b>${E(o.title)}</b><small>${nf(d)}/${nf(eps.length)} ${E(t('lessons'))}</small></span>
       <span class="mini">${bar(p)}</span><span class="cv">${IC.chev()}</span></button><div class="ab">${open?arcBodyHTML(o,nextI):''}</div></section>`}).join('');
 }
 function chipsHTML(){
   const cid=V.cid,list=EP[cid]||[],cnt={};
-  list.forEach(e=>{if(e.pl)return;const g=kindOf(e).g;cnt[g]=(cnt[g]||0)+1});
+  list.forEach(e=>{if(isPlannedEpisode(e))return;const g=kindOf(e).g;cnt[g]=(cnt[g]||0)+1});
   const ids=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]).slice(0,7);
   return `<button class="p2chip" data-p2f="all" aria-pressed="${V.filter==='all'}">${E(t('all'))}</button>`+ids.map(g=>`<button class="p2chip" data-p2f="${g}" aria-pressed="${V.filter===g}">${E(PC().GROUPS[g][L0()])}<small>${cnt[g]}</small></button>`).join('');
 }
 function bannerHTML(cid){
   const list=EP[cid]||[],ni=nextIdx(cid);
-  if(ni<0&&list.some(x=>x.pl)){const e=list.find(x=>!x.pl),all=!e;return `<div class="p2banner done"><div class="tx"><small>${all?'Trilha planejada':'Você concluiu os episódios disponíveis'}</small><b>${all?'Os episódios deste nível chegam em breve. Veja o plano abaixo: títulos, descrições e metas.':'Os próximos episódios já estão planejados na trilha abaixo.'}</b></div>${e?`<button class="p2btn light" data-ep="${cid}:${list.indexOf(e)}">${E(t('review'))}</button>`:''}</div>`}
-  if(ni<0){const e=list.find(x=>!x.pl);return `<div class="p2banner done"><div class="tx"><small>${E(t('finished'))}</small><b>${E(t('finishedSub'))}</b></div>${e?`<button class="p2btn light" data-ep="${cid}:${list.indexOf(e)}">${E(t('review'))}</button>`:''}</div>`}
+  if(ni<0&&list.some(x=>isPlannedEpisode(x))){const e=list.find(x=>!isPlannedEpisode(x)),all=!e;return `<div class="p2banner done"><div class="tx"><small>${all?'Trilha planejada':'Você concluiu os episódios disponíveis'}</small><b>${all?'Os episódios deste nível chegam em breve. Veja o plano abaixo: títulos, descrições e metas.':'Os próximos episódios já estão planejados na trilha abaixo.'}</b></div>${e?`<button class="p2btn light" data-ep="${cid}:${list.indexOf(e)}">${E(t('review'))}</button>`:''}</div>`}
+  if(ni<0){const e=list.find(x=>!isPlannedEpisode(x));return `<div class="p2banner done"><div class="tx"><small>${E(t('finished'))}</small><b>${E(t('finishedSub'))}</b></div>${e?`<button class="p2btn light" data-ep="${cid}:${list.indexOf(e)}">${E(t('review'))}</button>`:''}</div>`}
   const e=list[ni];
   return `<div class="p2banner"><div class="cv">${PC().svg(e,{num:e.en||ni+1})}</div><div class="tx"><small>${E(t('resumeT'))}</small><b>${E(e.t)}</b><span>${E(t('ep'))} ${String(e.en||ni+1).padStart(2,'0')}${e.a&&e.a.w?' · '+E(e.a.w):''}</span></div><button class="p2btn light" data-ep="${cid}:${ni}">${E(t('continue'))}${IC.play()}</button></div>`;
 }
@@ -436,7 +436,7 @@ function shelfRowsHTML(){
 }
 function workEpisodes(w){
   const key=norm(w.w),out=[];
-  Object.keys(EP||{}).forEach(cid=>{(EP[cid]||[]).forEach((e,i)=>{if(out.length<10&&e.a&&e.a.w&&norm(e.a.w)===key&&!e.pl)out.push({cid,i,e})})});
+  Object.keys(EP||{}).forEach(cid=>{(EP[cid]||[]).forEach((e,i)=>{if(out.length<10&&e.a&&e.a.w&&norm(e.a.w)===key&&!isPlannedEpisode(e))out.push({cid,i,e})})});
   return out;
 }
 function shelfSheet(i){
@@ -478,7 +478,7 @@ function shelf(){
   if(cid)ensureLangLoaded(cid).then(()=>{
     const host=document.getElementById('p2next');if(!host||PU().cur!=='shelf')return;
     const have=new Set(ST.shelf.map(b=>norm(b.w))),seen=new Set(),out=[];
-    for(const e of (EP[cid]||[])){if(e.pl||isDone(cid,e))continue;const w=(e.a||{}).w;if(!w)continue;const key=norm(w);if(have.has(key)||seen.has(key))continue;seen.add(key);out.push(e);if(out.length>=12)break}
+    for(const e of (EP[cid]||[])){if(isPlannedEpisode(e)||isDone(cid,e))continue;const w=(e.a||{}).w;if(!w)continue;const key=norm(w);if(have.has(key)||seen.has(key))continue;seen.add(key);out.push(e);if(out.length>=12)break}
     if(!out.length)return;
     host.innerHTML=`<section class="px-sec">${sectionHead(t('shQueue'),L0()==='es'?'Se desbloquean al terminar los episodios.':'Desbloqueiam quando você concluir os episódios.')}<div class="px-rail">${out.map(e=>workCard({w:e.a.w,au:'',k:e.a.k},0,true)).join('')}</div></section>`;
   }).catch(()=>{});

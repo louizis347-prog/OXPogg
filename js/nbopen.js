@@ -8,7 +8,7 @@ if(window.POG_NBOPEN===false)return;
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
 FX_KIND.nbopen1='story';FX_KIND.nbopen2='story';FX_KIND.nbopen3='practice';FX_KIND.nbfluency='story';FX_KIND.nbscene='story';FX_KIND.nbreply='speak';FX_KIND.nbreview='practice';FX_KIND.nbchoice='practice';FX_KIND.nbprag='story';
 FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';FX_LABEL.nbfluency='Linguagem natural';FX_LABEL.nbscene='Fio da história';FX_LABEL.nbreply='Sua vez';FX_LABEL.nbreview='Revisão do Neighbors';FX_LABEL.nbchoice='Escolha o tom';FX_LABEL.nbprag='Como isso soa';FX_LABEL.nbmilestone='Marco do arco';FX_LABEL.nbreflection='Fechamento do arco';
-FX_KIND.nbmilestone='reward';FX_KIND.nbreflection='reward';
+FX_KIND.nbmilestone='reward';FX_KIND.nbreflection='reward';FX_KIND.nbbridge='story';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say2=(t,who,slow)=>{try{fxSay(String(t),who,slow)}catch(e){}};
@@ -220,12 +220,24 @@ function buildPrag(e,d){
   return {k:'nbprag',g:d.hero.g||['#00B894','#0984E3'],city,level:lv,scene:e.s||d.hero.sub||'',tips:advanced?['Escolha o registro: direto, diplomático ou formal.','Observe o que fica implícito e o que precisa ser dito.','Uma frase correta pode soar brusca dependendo do contexto.']:['Ouça a situação antes de responder.','Use “please”, “thanks” e perguntas curtas para soar natural.','A mesma ideia pode ter mais de uma forma correta.']};
 }
 function buildFluency(e,d){
-  if(d.rev)return null;
+  if(d.rev){
+    const rows=d.lines.filter(l=>l&&l[1]).slice(0,3);
+    return {k:'nbfluency',g:d.hero.g||['#2D98DA','#20BF6B'],level:String(d.hero.lvl||e.lv||'A1').toUpperCase(),scene:e.s||d.hero.sub||'Revisão do arco',chunks:d.vocab.slice(0,6).map(v=>[forms(v[0])[0]||v[0],v[1]||'']),lines:rows,repair:'Could you say that another way?',ladder:['recupere a ideia principal','compare as frases do arco','responda com naturalidade']};
+  }
   const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase();
   const advanced=/B2|C1|C2/.test(lv),chunks=d.vocab.slice(0,6).map(v=>[forms(v[0])[0]||v[0],v[1]||'']);
   const lines=d.lines.filter(l=>l&&l[1]&&l[1].length>18).slice(0,3);
   const repair=advanced?'Could you clarify what you mean?':'Sorry, could you say that again?';
   return {k:'nbfluency',g:d.hero.g||['#2D98DA','#20BF6B'],level:lv,scene:e.s||d.hero.sub||'',chunks,lines,repair,ladder:advanced?['ouça o sentido geral','perceba o registro e o subtexto','responda com precisão e diplomacia']:['ouça a frase inteira','repita o bloco de palavras','responda com naturalidade']};
+}
+function buildBridges(e,d){
+  if(!d.rev)return [];
+  const first=(d.lines||[]).filter(l=>l&&l[1]).slice(0,3), vocab=(d.vocab||[]).slice(0,4);
+  return [
+    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'context',title:'O contexto do arco',body:e.s||d.hero.sub||'Reveja onde a conversa acontece e qual era o objetivo.',items:first.map(l=>l[1])},
+    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'bridge',title:'Ponte de linguagem',body:'Relacione a intenção, o registro e a resposta que você escolheria.',items:vocab.map(v=>String(v[0])+(v[1]?' · '+v[1]:''))},
+    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'transfer',title:'Transferência para a vida real',body:'Use uma das frases do arco em uma situação nova e explique sua escolha.',items:first.map(l=>l[2]||l[1])}
+  ];
 }
 function buildMilestone(e,d){
   try{const a=(ARCS[P.cid]||[]).find(x=>x[0]===e.n);if(!a)return null;return {k:'nbmilestone',g:d.hero.g||['#F2A900','#E85D75'],title:a[1],level:d.hero.lvl||e.lv||'',mission:d.hero.mission||e.p||'',city:d.hero.city||''}}catch(x){return null}
@@ -254,12 +266,14 @@ function build(e){
   if(subs.length)out.push({k:'nbopen3',g,subs,cnt:subs.length,name:d.hero.name,reading:rl?1:0});
   const thread=buildThread(e,d);if(thread)out.push(thread);
   const reply=buildReply(e,d),choice=buildChoice(e,d),prag=buildPrag(e,d),fluency=buildFluency(e,d),review=buildReview(e);
+  const bridges=buildBridges(e,d);
   /* O percurso varia levemente entre episódios: a conversa pode vir antes
      da explicação de tom, evitando que o curso pareça uma lista mecânica. */
   const englishNeighbors=typeof P!=='undefined'&&P&&/^nb(?:-|es-|fr-|pt-|de-|it-|eng-|ja-)/.test(String(P.cid||''));
   const extras=hash(e.n)%2?[reply,choice,prag,englishNeighbors?fluency:null,review]:[prag,englishNeighbors?fluency:null,reply,choice,review];extras.forEach(x=>{if(x)out.push(x)});
   const milestone=buildMilestone(e,d);if(milestone)out.unshift(milestone);
   const reflection=buildReflection(e,d);if(reflection)out.push(reflection);
+  bridges.forEach(x=>out.push(x));
   return out.length?out:null}
 
 function inject(e){
@@ -269,7 +283,20 @@ function inject(e){
   let hi=e.fr.findIndex(f=>f&&f.k==='nbhero');
   if(hi>=0)hi++;
   else{if(!e.rev)return;hi=e.fr.findIndex(f=>f&&(f.k==='nbtrip'||f.k==='nbchat'));if(hi<0)return}
-  const fr=build(e);if(!fr)return;
+  let fr=build(e);if(!fr)return;
+  const target=20;
+  // Cursos com um quadro-base extra (nbacc) mantêm esse conteúdo e ajustam só o bloco automático.
+  if(e.fr.length+fr.length>target){
+    const keep=target-e.fr.length;
+    if(keep>0){
+      const removable=['nbchoice','nbprag'];
+      while(fr.length>keep){const ri=fr.findIndex(x=>removable.includes(x.k));if(ri>=0)fr.splice(ri,1);else fr.pop()}
+    }else fr=[];
+  }else if(e.fr.length+fr.length<target){
+    // buildBridges + fluency completam as revisões de arco até o mesmo percurso de 20 quadros.
+    const seed=fr.find(x=>x.k==='nbbridge')||fr.find(x=>x.k==='nbprag');
+    while(e.fr.length+fr.length<target&&seed)fr.push(Object.assign({},seed,{mode:'practice',title:'Prática de recuperação',body:'Recupere uma frase do arco e diga como ela mudaria em outra situação.'}));
+  }
   e.fr.splice(hi,0,...fr)}
 
 /* ---------- CSS ---------- */
@@ -419,6 +446,10 @@ FXR.nbfluency=function(f,st,n){
   cta(tx().cont,true,true);say('Agora observe os blocos de linguagem e o ritmo da fala.');fitSoon(q('.nbfluency',st));
 };
 
+FXR.nbbridge=function(f,st,n){
+  st.innerHTML='<div class="step fx nbo nbbridge" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">'+H(f.mode==='context'?'Contexto':f.mode==='bridge'?'Ponte de linguagem':'Transferência')+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand">'+H(f.body)+'</p><ul class="nbo-list">'+(f.items||[]).map(x=>'<li>'+H(x)+'</li>').join('')+'</ul><p class="nbo-hint">Escolha uma frase, diga-a em voz alta e adapte a intenção à situação.</p></div></div>';
+  cta(tx().cont,true,true);say('Agora leve o que você recuperou para uma situação nova.');fitSoon(q('.nbbridge',st));
+};
 FXR.nbmilestone=function(f,st,n){st.innerHTML='<div class="step fx nbo nbmilestone" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Marco do arco · '+H(f.level)+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand"><small>O que você vai construir</small>'+H(f.mission)+'</p><p class="nbo-hint">Este arco reúne situações conectadas. Ao avançar, observe como as mesmas habilidades reaparecem em novos contextos.</p></div></div>';cta(tx().cont,true,true);say('Novo arco desbloqueado. Vamos construir essa habilidade passo a passo.','happy')};
 FXR.nbreflection=function(f,st,n){let picked=false;st.innerHTML='<div class="step fx nbo nbreflection" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Fechamento do arco · '+H(f.level)+'</span><h2 class="nbo-q">'+H(f.title)+'</h2><p class="nbo-hand"><small>Leve isto com você</small>'+H(f.mission)+'</p><div class="nbo-hint"><b>Escolha uma habilidade:</b> o que você quer levar para as próximas situações?</div><ul class="nbo-opts">'+f.opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o)+'</span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbrefb"></div></div></div>';cta('Escolha uma habilidade',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(picked)return;picked=true;const o=f.opts[+b.dataset.i];try{ST.nbSkill=o;save()}catch(x){}b.classList.add('ok');st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbrefb',st).innerHTML='<p class="nbo-tr"><b>Registrado:</b> '+H(o)+'</p><p class="nbo-why">Na próxima sequência, procure uma oportunidade de usar essa habilidade.</p>';cta(tx().cont,true,true);say('Escolha registrada. Leve essa habilidade com você.','happy')})};
 

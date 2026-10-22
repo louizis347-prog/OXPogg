@@ -189,7 +189,7 @@ function compute(l){
   for(const cid of l.sub){
     const eps=EP[cid];if(!eps)continue;
     for(const e of eps){
-      if(e.pl||!ST.done[cid+'-'+e.n])continue;
+      if(isPlannedEpisode(e)||!ST.done[cid+'-'+e.n])continue;
       doneEps++;
       (e.v||[]).forEach(v=>{
         if(!v||!v[0])return;
@@ -211,9 +211,9 @@ function compute(l){
   items.forEach(x=>{if(x.b>=4)tiers.s++;else if(x.b>=2)tiers.f++;else tiers.n++});
   // próximas estruturas na trilha atual
   const next=[];
-  const cur=(ST.lastCourse&&l.sub.includes(ST.lastCourse))?ST.lastCourse:(l.sub.find(cid=>EP[cid]&&EP[cid].some(e=>!e.pl&&!ST.done[cid+'-'+e.n]))||l.sub[0]);
+  const cur=(ST.lastCourse&&l.sub.includes(ST.lastCourse))?ST.lastCourse:(l.sub.find(cid=>EP[cid]&&EP[cid].some(e=>!isPlannedEpisode(e)&&!ST.done[cid+'-'+e.n]))||l.sub[0]);
   const ceps=EP[cur]||[];
-  for(const e of ceps){if(next.length>=4)break;if(e.pl||ST.done[cur+'-'+e.n])continue;if(e.g&&e.g.t){const t=shortStruct(e.g.t);if(!next.includes(t))next.push(t)}}
+  for(const e of ceps){if(next.length>=4)break;if(isPlannedEpisode(e)||ST.done[cur+'-'+e.n])continue;if(e.g&&e.g.t){const t=shortStruct(e.g.t);if(!next.includes(t))next.push(t)}}
   return{l,isEn,words:words.size,exprs:exprs.size,structs:[...structs.values()],tiers,total:items.length,known,doneEps,
     recent:recent.slice(-14).reverse().map(k=>words.get(k)),next};
 }

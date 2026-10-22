@@ -56,7 +56,7 @@ function run(){
       try{
         const c=COURSES[cid]?cid:pick.l[3];
         await ensureLangLoaded(c);
-        const idx=Math.max(0,(EP[c]||[]).findIndex(e=>!e.pl&&!(e.fr&&e.fr.length===0)));
+        const idx=Math.max(0,(EP[c]||[]).findIndex(e=>!isPlannedEpisode(e)&&!(e.fr&&e.fr.length===0)));
         play(c,idx);
       }catch(e){}
     };

@@ -6,10 +6,10 @@ window.course=function(id){
   try{cmBuild(id)}catch(e){console.warn('menu',e)}
 };
 function cmBuild(id){
-  const c=COURSES[id],eps=EP[id]||[],real=eps.filter(e=>!e.pl),
+  const c=COURSES[id],eps=EP[id]||[],real=eps.filter(e=>!isPlannedEpisode(e)),
     done=real.filter(e=>ST.done[id+'-'+e.n]).length,total=real.length,all=eps.length;
   const pct=total?Math.round(done/total*100):0;
-  const nextI=eps.findIndex(e=>!e.pl&&!ST.done[id+'-'+e.n]);
+  const nextI=eps.findIndex(e=>!isPlannedEpisode(e)&&!ST.done[id+'-'+e.n]);
   const nxt=nextI>=0?eps[nextI]:null;
   const es=c.ui==='es';
   const tx={cont:es?'Continuar':'Continuar',start:es?'Empezar':'Começar',

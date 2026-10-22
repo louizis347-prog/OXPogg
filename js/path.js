@@ -68,7 +68,7 @@ function nextEp(){
     const pl=placed();
     if(!cid||!COURSES[cid]){const g=Object.keys(pl)[0];cid=g?pl[g].cid:'en-a1'}
     const eps=EP[cid];if(!eps||!eps.length)return{cid,idx:0,e:null};
-    const p=pl[grp(cid)],start=p&&p.cid===cid?p.start||0:0,done=x=>ST.done[cid+'-'+x.n]||x.pl;
+    const p=pl[grp(cid)],start=p&&p.cid===cid?p.start||0:0,done=x=>ST.done[cid+'-'+x.n]||isPlannedEpisode(x);
     let idx=eps.findIndex((x,i)=>i>=start&&!done(x));if(idx<0)idx=eps.findIndex(x=>!done(x));
     return idx<0?null:{cid,idx,e:eps[idx]};
   }catch(e){return null}
