@@ -65,7 +65,8 @@ function collect(e){
   fr.filter(f=>f.k==='nbchat'&&f.lines).forEach(f=>{if(!cast)cast=f.cast;if(!me)me=f.me;f.lines.forEach(l=>{if(l&&l[1]&&!seen.has(l[1])){seen.add(l[1]);lines.push(l)}})});
   const hook=hero.hook||(e.h&&e.h.l?[e.h.l,e.h.tr||'']:null);
   const shadow=fr.find(f=>f.k==='nbshadow');
-  return {hero,lines,cast:cast||{},me:me||hero.name,hook,key:(e.g&&e.g.t)||(hero.hook&&hero.hook[0])||'',vocab:(e.v||[]).filter(v=>v&&v[0]),shadow};
+  const character=e.character||{};
+  return {hero,lines,cast:cast||{},me:me||hero.name,hook,key:(e.g&&e.g.t)||(hero.hook&&hero.hook[0])||'',vocab:(e.v||[]).filter(v=>v&&v[0]),shadow,character,community:e.community||{}};
 }
 /* ----- revisões de arco (sem nbhero): começam com nbtrip ou nbchat "Mapa do arco" ----- */
 function parsePlace(l){
@@ -234,7 +235,7 @@ function build(e){
   else if(d.key)tags.push(['gram',d.key]);
   if(!rv){const vs=d.vocab.slice(0,3).map(v=>forms(v[0]).slice(-1)[0]).filter(Boolean);if(vs.length)tags.push(['voc',vs.join(' · ')]);
   const pr=pronTag(d);if(pr)tags.push(['pron',pr])}
-  if(opts)out.push({k:'nbopen1',g,lvl:d.hero.lvl||e.lv||'',num:d.hero.num||e.o||'',name:d.hero.name,hook:d.hook,title:titleHtml(e,d),topic:e.s||d.hero.sub||'',mission:d.hero.mission||'',tags,opts,keyPhrase:d.key,face:d.hero.face,rev:rv});
+  if(opts)out.push({k:'nbopen1',g,lvl:d.hero.lvl||e.lv||'',num:d.hero.num||e.o||'',name:d.hero.name,hook:d.hook,title:titleHtml(e,d),topic:e.s||d.hero.sub||'',mission:d.hero.mission||'',tags,opts,keyPhrase:d.key,face:d.hero.face,rev:rv,community:!rv&&d.community?d.community:null,characterRole:!rv&&d.character?d.character.role:''});
   const rl=readingText(d);
   if(rl){out.push({k:'nbopen2',g,lines:rl,vocab:d.vocab,hook:d.hook,name:d.hero.name,face:d.hero.face,emo:d.hero.emo||[],lvl:d.hero.lvl||'',topic:e.s||''})}
   const seed=hash((rv?(P&&P.cid||''):'')+e.n+'c');const t0=TX.pt;
@@ -285,6 +286,7 @@ FXR.nbopen1=function(f,st,n){
   '<div class="nbo-grid"><div class="nbo-l">'+
    '<header class="nbo-strip"><span class="nbo-letter">'+H(lt)+'</span><div class="nbo-st"><small>'+(f.rev?t.rev:t.unit+' '+H(f.num))+' · '+H(f.lvl)+'</small><h1 class="nbo-title">'+f.title+'</h1><p class="nbo-topic">'+H(f.topic)+'</p></div></header>'+
    '<div class="nbo-tags">'+f.tags.map(x=>'<span class="nbo-tag nbo-'+x[0]+'"><b>'+t[x[0]]+'</b>'+H(x[1])+'</span>').join('')+'</div>'+
+   (f.community?'<p class="nbo-character"><b>Personagem recorrente</b> · '+H(f.community.name||'')+(f.characterRole?' · '+H(f.characterRole):'')+'</p>':'')+
    (f.hook?'<button type="button" class="nbo-quote" id="nboq"><span class="nbo-qm">“</span><div><b>'+H(f.hook[0])+'</b><em>'+H(f.hook[1]||'')+'</em><small>— '+H(f.name)+' · '+t.quote+'</small></div></button>':'')+
    (f.mission?'<p class="nbo-hand"><small>'+t.today+'</small>'+H(f.mission)+'</p>':'')+
   '</div><div class="nbo-r"><section class="nbo-card"><span class="nbo-sec">'+(f.rev?t.secR:t.sec1)+'</span><h3 class="nbo-q">'+(f.rev?t.qR:t.q1)+'</h3>'+

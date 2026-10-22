@@ -29,7 +29,14 @@ function say(text,who,done){
   try{
     speechSynthesis.cancel();
     const u=new SpeechSynthesisUtterance(text),lang=(COURSES[S.cid]&&COURSES[S.cid].tts)||'en-US';
-    u.lang=lang;const v=voice(lang);if(v)u.voice=v;u.rate=S.rate;u.pitch=(String(who).toLowerCase()==='you'||who==='B')?1.12:.92;
+    u.lang=lang;
+    /* O modo ouvir usa a mesma escalação do player: gênero e índice do personagem. */
+    let v=voice(lang), rate=S.rate, pitch=(String(who).toLowerCase()==='you'||who==='B')?1.12:.92;
+    try{
+      const gm=(typeof GENDER_MAP!=='undefined')?GENDER_MAP:{}; const meta=gm[who];
+      if(window.PogTTS){const picked=PogTTS.pick({lang,speaker:who,gender:meta&&meta[0],gidx:meta?meta[1]:0,guess:window.voiceGenderGuess});if(picked){if(picked.voice)v=picked.voice;if(picked.rate)rate=picked.rate;if(meta)pitch=meta[0]==='f'?1.06:.94}}
+    }catch(_e){}
+    if(v)u.voice=v;u.rate=rate;u.pitch=pitch;
     let fin=false;const end=()=>{if(fin)return;fin=true;if(my===S.tok)setTimeout(()=>{if(my===S.tok)done()},320)};
     u.onend=end;u.onerror=end;speechSynthesis.speak(u);
     /* segurança: alguns navegadores não disparam onend */
