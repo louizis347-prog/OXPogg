@@ -117,6 +117,17 @@ section{scroll-margin-top:76px}
 .lang h3{font-size:var(--t-fs-md)}
 .lang small{color:var(--t-mute);font-weight:700;font-size:var(--t-fs-sm);line-height:1.35}
 
+/* duas trilhas com posicionamento editorial claro */
+.paths{display:grid;gap:var(--t-s4);grid-template-columns:repeat(2,1fr)}
+.path{position:relative;overflow:hidden;padding:var(--t-s6);border-radius:24px;border:1px solid var(--t-line);background:var(--t-card);box-shadow:var(--t-sh-card)}
+.path::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-110px;top:-120px;background:var(--path-glow);opacity:.22;pointer-events:none}
+.path.regular{--path-glow:#6654D9}.path.neighbors{--path-glow:#C05A9C}
+.path-kicker{display:inline-flex;padding:5px 10px;border-radius:999px;background:color-mix(in srgb,var(--path-glow) 12%,#fff);color:var(--path-glow);font-size:11px;font-weight:800;letter-spacing:.12em}
+.path h3{margin:16px 0 8px;font-size:clamp(21px,3vw,29px)}
+.path p{max-width:46ch;color:var(--t-ink2);font-size:15px;line-height:1.55;min-height:72px}
+.path .btn{position:relative;z-index:1;margin-top:22px;border-color:color-mix(in srgb,var(--path-glow) 28%,var(--t-line2));color:var(--path-glow)}
+.path .btn:hover{background:color-mix(in srgb,var(--path-glow) 10%,#fff)}
+
 .levels{display:grid;grid-template-columns:repeat(3,1fr);border-radius:var(--t-r-md);overflow:hidden;margin-top:var(--t-s5)}
 .levels div{padding:var(--t-s4) var(--t-s2);text-align:center;color:#fff;font-weight:800}
 .levels b{display:block;font-size:var(--t-fs-lg)}
@@ -186,6 +197,7 @@ footer a{color:var(--t-mute)}footer a:hover{color:var(--t-primary)}
   .sec{padding:80px 0}
 }
 @media (max-width:640px){:root{--t-fs-xl:26px}}
+@media (max-width:640px){.paths{grid-template-columns:1fr}.path{padding:var(--t-s5)}.path p{min-height:0}}
 @media (max-width:420px){.hero-phones{min-height:340px}.hero-phones .phone{width:min(42vw,178px);border-width:5px;border-radius:26px}.hero-phones .phone img{border-radius:20px}.hero-phones .phone-front{margin-left:-34px;margin-top:38px}.phone-note{font-size:11px;padding:7px 10px}.note-top{right:0}.note-bottom{left:0}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
