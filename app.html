@@ -1506,6 +1506,30 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
  s+=bird(230,52,1.3,'#2A2358')+bird(262,64,1,'#2A2358')+bird(420,42,1.2,'#2A2358');
  s+=finish();
  return svg(s,'Paris ao entardecer: telhados de zinco de Montmartre, a basílica do Sacré-Cœur, um gato sobre as chaminés e um pequeno planeta com uma rosa no céu')});
+/* ---- Japão: Monte Fuji ao amanhecer, pagode, torii, lago e cerejeiras ---- */
+add('cv_jp',()=>{const r=R(41),g=uid(),gs=uid(),gf=uid(),gl=uid(),hz=292;
+ let s=`<defs>${grad(g,[[0,'#2B2F6B'],[.35,'#8A5FA8'],[.68,'#F59A8B'],[1,'#FFE0A8']])}${rad(gs,[[0,'#FFF4D0',1],[1,'#FFC48A',0]])}${grad(gf,[[0,'#3E4A8A'],[1,'#26306A']])}${grad(gl,[[0,'#F6B79A'],[1,'#6A5AA8']])}</defs>`;
+ s+=`<rect width="800" height="400" fill="url(#${g})"/>`+stars(40,17,120,'#FFF1E0');
+ s+=`<circle cx="560" cy="170" r="150" fill="url(#${gs})"/><circle cx="560" cy="170" r="44" fill="#FFF0C8"/>`;
+ [[120,86,150,8],[420,60,200,7],[680,104,130,6]].forEach(([x,y,w,h])=>{s+=`<ellipse cx="${x}" cy="${y}" rx="${w}" ry="${h}" fill="#FFD9C0" opacity=".4"/>`});
+ /* Monte Fuji com neve */
+ s+=`<path d="M120 ${hz} L330 ${hz-170} Q360 ${hz-190} 390 ${hz-170} L600 ${hz}Z" fill="url(#${gf})"/><path d="M296 ${hz-142} L330 ${hz-170} Q360 ${hz-190} 390 ${hz-170} L424 ${hz-142} L404 ${hz-130} L388 ${hz-146} L372 ${hz-126} L356 ${hz-148} L338 ${hz-124} L322 ${hz-146} L312 ${hz-130}Z" fill="#FFF6EE"/>`;
+ s+=`<path d="M-20 ${hz-20} Q120 ${hz-70} 240 ${hz-30} T520 ${hz-36} T820 ${hz-24} V${hz+10} H-20Z" fill="#3A3A7A" opacity=".75"/>`;
+ /* lago */
+ s+=`<rect x="0" y="${hz}" width="800" height="${400-hz}" fill="url(#${gl})"/>`;
+ s+=`<g opacity=".28" transform="translate(0 ${2*hz}) scale(1 -1)"><path d="M120 ${hz} L330 ${hz-170} Q360 ${hz-190} 390 ${hz-170} L600 ${hz}Z" fill="#3E4A8A"/></g>`;
+ for(let i=0;i<14;i++)s+=`<path d="M${60+i*52} ${hz+14+(i%4)*18} h${22+(i%3)*10}" stroke="#FFE7D0" stroke-width="1.4" opacity=".4" stroke-linecap="round"/>`;
+ /* pagode */
+ const pg=(cx,y)=>{let t='';for(let i=0;i<4;i++){const w=70-i*12,yy=y-i*26;t+=`<rect x="${cx-w/2+6}" y="${yy-18}" width="${w-12}" height="18" fill="#7A2E3A"/><path d="M${cx-w/2-12} ${yy-18} Q${cx} ${yy-30} ${cx+w/2+12} ${yy-18} L${cx+w/2+4} ${yy-12} H${cx-w/2-4}Z" fill="#2E2A52"/>`}return t+`<path d="M${cx} ${y-110} V${y-132}" stroke="#2E2A52" stroke-width="3"/>`};
+ s+=`<g transform="translate(0 0)">${pg(170,hz-6)}</g>`;
+ /* torii vermelho no lago */
+ s+=`<g fill="#D8392B"><rect x="640" y="${hz-6}" width="9" height="62"/><rect x="706" y="${hz-6}" width="9" height="62"/><path d="M622 ${hz-8} Q677 ${hz-30} 732 ${hz-8} V${hz-20} Q677 ${hz-42} 622 ${hz-20}Z"/><rect x="636" y="${hz+10}" width="82" height="7"/></g><g fill="#D8392B" opacity=".3" transform="translate(0 ${2*(hz+56)-hz+2}) scale(1 -1) translate(0 ${-0})"></g>`;
+ /* cerejeiras */
+ const tree=(x,y,k)=>{let t=`<path d="M${x} ${y} q-4 -40 ${6*k} -70 M${x} ${y-36} q22 -12 34 -34" stroke="#4A2F3F" stroke-width="${4*k}" fill="none" stroke-linecap="round"/>`;for(let i=0;i<14;i++){const a=r()*6.28,d=r()*38*k;t+=`<circle cx="${n(x+10+Math.cos(a)*d)}" cy="${n(y-72*k+Math.sin(a)*d*.7)}" r="${n(14*k+r()*8)}" fill="${i%3?'#F7B8CB':'#FFDCE6'}" opacity=".9"/>`}return t};
+ s+=tree(60,400,1.5)+tree(420,356,1)+tree(750,400,1.4);
+ for(let i=0;i<26;i++)s+=`<ellipse cx="${(r()*800)|0}" cy="${(r()*400)|0}" rx="3.4" ry="2" fill="#FFD5E1" opacity="${(.5+r()*.5).toFixed(2)}" transform="rotate(${(r()*180)|0} 0 0)"/>`;
+ s+=finish();
+ return svg(s,'Japão ao amanhecer: Monte Fuji nevado, pagode, portal torii vermelho no lago e cerejeiras em flor')});
 })();
 
 /* ================= DATA REGISTRY ================= */
@@ -1550,7 +1574,7 @@ const GROUPS={
       desc:{pt:'De Goethe aos filmes e à vida cotidiana: alemão com cultura, do A1 ao C2.',es:'De Goethe al cine y la vida cotidiana: alemán con cultura, de A1 a C2.'},
       sub:['de-a1','de-a2','de-b1','de-b2','de-c1','de-c2']},
   itbr:{id:'itbr',ui:'pt',scarf:'#2E7D32',scene:'cv_it',name:{pt:'Italiano para brasileiros',es:'Italiano para brasileños'},flag:'IT → PT-BR',desc:{pt:'De Dante ao cinema italiano: italiano com cultura, do A1 ao C2.',es:'De Dante al cine italiano: italiano con cultura, de A1 a C2.'},sub:['it-a1','it-a2','it-b1','it-b2','it-c1','it-c2']},
-  jabr:{id:'jabr',ui:'pt',scarf:'#D6336C',scene:'cv_it',name:{pt:'Japonês para brasileiros',es:'Japonés para brasileños'},flag:'JA → PT-BR',desc:{pt:'Do Genji ao anime: japonês com cultura, do A1 ao C2.',es:'Del Genji al anime: japonés con cultura, de A1 a C2.'},sub:['ja-a1','ja-a2','ja-b1','ja-b2','ja-c1','ja-c2']},
+  jabr:{id:'jabr',ui:'pt',scarf:'#D6336C',scene:'cv_jp',name:{pt:'Japonês para brasileiros',es:'Japonés para brasileños'},flag:'JA → PT-BR',desc:{pt:'Do Genji ao anime: japonês com cultura, do A1 ao C2.',es:'Del Genji al anime: japonés con cultura, de A1 a C2.'},sub:['ja-a1','ja-a2','ja-b1','ja-b2','ja-c1','ja-c2']},
   nb:{id:'nb',ui:'pt',scarf:'#E0703A',scene:'cv_usa',
       name:{pt:'Neighbors',es:'Neighbors'},flag:'EN-US → PT-BR',
       desc:{pt:'Aprenda conversando com vizinhos: cada episódio é uma pessoa, uma cidade e uma situação real. Fala primeiro, sem gramática explícita.',es:'Aprende conversando con vecinos: cada episodio es una persona, una ciudad y una situación real.'},
@@ -1733,12 +1757,12 @@ const COURSES={
   'it-b2':{id:'it-b2',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano B2 para brasileiros',es:'Italiano B2 para brasileños'},flag:'IT → PT-BR · B2',desc:{pt:'500 episódios de italiano B2 com cultura e situações reais.',es:'500 episodios de italiano B2 con cultura y situaciones reales.'}},
   'it-c1':{id:'it-c1',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano C1 para brasileiros',es:'Italiano C1 para brasileños'},flag:'IT → PT-BR · C1',desc:{pt:'500 episódios de italiano C1 com cultura e situações reais.',es:'500 episodios de italiano C1 con cultura y situaciones reales.'}},
   'it-c2':{id:'it-c2',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano C2 para brasileiros',es:'Italiano C2 para brasileños'},flag:'IT → PT-BR · C2',desc:{pt:'500 episódios de italiano C2 com cultura e situações reais.',es:'500 episodios de italiano C2 con cultura y situaciones reales.'}},
-  'ja-a1':{id:'ja-a1',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',name:{pt:'Japonês A1 para brasileiros',es:'Japonés A1 para brasileños'},flag:'JA → PT-BR · A1',desc:{pt:'500 episódios de japonês A1 com cultura e situações reais.',es:'500 episodios de japonés A1 con cultura y situaciones reales.'}},
-  'ja-a2':{id:'ja-a2',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',name:{pt:'Japonês A2 para brasileiros',es:'Japonés A2 para brasileños'},flag:'JA → PT-BR · A2',desc:{pt:'500 episódios de japonês A2 com cultura e situações reais.',es:'500 episodios de japonés A2 con cultura y situaciones reales.'}},
-  'ja-b1':{id:'ja-b1',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',name:{pt:'Japonês B1 para brasileiros',es:'Japonés B1 para brasileños'},flag:'JA → PT-BR · B1',desc:{pt:'500 episódios de japonês B1 com cultura e situações reais.',es:'500 episodios de japonés B1 con cultura y situaciones reales.'}},
-  'ja-b2':{id:'ja-b2',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',name:{pt:'Japonês B2 para brasileiros',es:'Japonés B2 para brasileños'},flag:'JA → PT-BR · B2',desc:{pt:'500 episódios de japonês B2 com cultura e situações reais.',es:'500 episodios de japonés B2 con cultura y situaciones reales.'}},
-  'ja-c1':{id:'ja-c1',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',name:{pt:'Japonês C1 para brasileiros',es:'Japonés C1 para brasileños'},flag:'JA → PT-BR · C1',desc:{pt:'500 episódios de japonês C1 com cultura e situações reais.',es:'500 episodios de japonés C1 con cultura y situaciones reales.'}},
-  'ja-c2':{id:'ja-c2',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_it',scarf:'#D6336C',name:{pt:'Japonês C2 para brasileiros',es:'Japonés C2 para brasileños'},flag:'JA → PT-BR · C2',desc:{pt:'500 episódios de japonês C2 com cultura e situações reais.',es:'500 episodios de japonés C2 con cultura y situaciones reales.'}}
+  'ja-a1':{id:'ja-a1',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_jp',scarf:'#D6336C',name:{pt:'Japonês A1 para brasileiros',es:'Japonés A1 para brasileños'},flag:'JA → PT-BR · A1',desc:{pt:'500 episódios de japonês A1 com cultura e situações reais.',es:'500 episodios de japonés A1 con cultura y situaciones reales.'}},
+  'ja-a2':{id:'ja-a2',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_jp',scarf:'#D6336C',name:{pt:'Japonês A2 para brasileiros',es:'Japonés A2 para brasileños'},flag:'JA → PT-BR · A2',desc:{pt:'500 episódios de japonês A2 com cultura e situações reais.',es:'500 episodios de japonés A2 con cultura y situaciones reales.'}},
+  'ja-b1':{id:'ja-b1',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_jp',scarf:'#D6336C',name:{pt:'Japonês B1 para brasileiros',es:'Japonés B1 para brasileños'},flag:'JA → PT-BR · B1',desc:{pt:'500 episódios de japonês B1 com cultura e situações reais.',es:'500 episodios de japonés B1 con cultura y situaciones reales.'}},
+  'ja-b2':{id:'ja-b2',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_jp',scarf:'#D6336C',name:{pt:'Japonês B2 para brasileiros',es:'Japonés B2 para brasileños'},flag:'JA → PT-BR · B2',desc:{pt:'500 episódios de japonês B2 com cultura e situações reais.',es:'500 episodios de japonés B2 con cultura y situaciones reales.'}},
+  'ja-c1':{id:'ja-c1',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_jp',scarf:'#D6336C',name:{pt:'Japonês C1 para brasileiros',es:'Japonés C1 para brasileños'},flag:'JA → PT-BR · C1',desc:{pt:'500 episódios de japonês C1 com cultura e situações reais.',es:'500 episodios de japonés C1 con cultura y situaciones reales.'}},
+  'ja-c2':{id:'ja-c2',group:'jabr',ui:'pt',tts:'ja-JP',scene:'cv_jp',scarf:'#D6336C',name:{pt:'Japonês C2 para brasileiros',es:'Japonés C2 para brasileños'},flag:'JA → PT-BR · C2',desc:{pt:'500 episódios de japonês C2 com cultura e situações reais.',es:'500 episodios de japonés C2 con cultura y situaciones reales.'}}
 };
 const TESTS={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[]};
 
@@ -4524,7 +4548,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/es_m2.js"></script>
 <script src="js/m2.js"></script><script src="js/novos.js"></script><script src="js/talk.js"></script><script src="js/rounds.js"></script><script src="js/suavez.js?v=5"></script>
 <script src="js/audio_guard.js"></script>
-<script src="js/covers.js"></script><script src="js/faces.js?v=2"></script><script src="js/scenes.js?v=3"></script><script src="js/scenefx.js?v=1"></script>
+<script src="js/covers.js"></script><script src="js/faces.js?v=2"></script><script src="js/scenes.js?v=4"></script><script src="js/scenefx.js?v=1"></script>
 <script src="js/nb.js"></script>
 <script src="js/kana.js"></script>
 <script src="js/nbtrip.js"></script>

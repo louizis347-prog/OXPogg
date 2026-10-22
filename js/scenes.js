@@ -25,11 +25,11 @@ const TM={
  night:{t:'#060C2C',m:'#1A2966',b:'#44579C',sun:'#F6F3DC',amb:'#7FA0FF',far:'#34437C',near:'#222C5C',lit:1,wall:.35}
 };
 const DAYPICK=['day','day','golden','dawn','golden','day','dusk'];
-const NIGHTY={party:1,ballroom:1,boteco:1,cinema:1,carnaval:'dusk',junina:'dusk',diner:'golden',stadium:'golden',paris:'golden'};
+const NIGHTY={party:1,ballroom:1,boteco:1,cinema:1,carnaval:'dusk',junina:'dusk',diner:'golden',stadium:'golden',paris:'golden',japan:'golden'};
 /* ---------- classificação do cenário ---------- */
 const INT=new Set('cafe counter diner restaurant boteco pizzeria kitchen cocina living home bedroom bath vecindad office studio classroom school library clinic hospital hall lobby ballroom party gym shop cinema museum subwaycar'.split(' '));
 const ALIAS={counter:'cafe',pizzeria:'restaurant',diner:'restaurant',boteco:'restaurant',cocina:'kitchen',home:'living',vecindad:'living',bedroom:'living',bath:'living',studio:'office',school:'classroom',hospital:'clinic',lobby:'hall',party:'ballroom'};
-const EXTV=new Set('plaza street city sampa brasilia rioantigo pelourinho lisboa madrid paris station railway airport bridge rainycity stadium road yard market harbor beach ipanema carnaval outdoors park sitio sertao amazonia snowy junina vila'.split(' '));
+const EXTV=new Set('plaza street city sampa brasilia rioantigo pelourinho lisboa madrid paris japan station railway airport bridge rainycity stadium road yard market harbor beach ipanema carnaval outdoors park sitio sertao amazonia snowy junina vila'.split(' '));
 const EXALIAS={city:'street',rainycity:'street',road:'street',yard:'plaza',bridge:'harbor',railway:'station',outdoors:'park',sitio:'park',vila:'plaza',carnaval:'plaza',junina:'plaza',rioantigo:'pelourinho'};
 function classify(sc,R){
   sc=String(sc||'').toLowerCase();
@@ -131,7 +131,7 @@ const PASTEL=['#F4C26B','#E8795A','#6FB7C9','#E9A0B4','#9CCB86','#F0DFA2','#C99B
 const CREAM=['#E8D9B9','#D9C49B','#EBDDC7','#C9B188','#E2CDA6'];
 const COOL=['#9AA9C6','#8294B6','#B4BED6','#7487AD'];
 function exterior(v,raw,R,T,tm,hint){
-  const horizon=v==='beach'||v==='harbor'||v==='ipanema'?96:(v==='paris'?90:108);
+  const horizon=v==='beach'||v==='harbor'||v==='ipanema'?96:(v==='paris'?90:(v==='japan'?100:108));
   let s=skyBlock(R,T,tm,'a',horizon);
   const far=T.far,near=T.near;
   const hills=(y,amp,col,op)=>{let d=`M0 ${H} L0 ${y}`;for(let x=0;x<=W;x+=20)d+=` L${x} ${n1(y-Math.abs(Math.sin(x*.03+R()*2))*amp-R()*amp*.3)}`;return path(d+` L${W} ${H}Z`,col,op?` fill-opacity="${op}"`:'')};
@@ -232,6 +232,29 @@ function exterior(v,raw,R,T,tm,hint){
     /* café com mesas e cadeiras */
     [[252,H-14],[286,H-10]].forEach(([tx,ty])=>{s+=ell(tx,ty+11,13,2.4,'#000',' fill-opacity=".2"')+rect(tx-.8,ty-1,1.6,12,'#2a2f45')+ell(tx,ty-1,9,2.6,mix('#F3EFE6',T.near,.2))+rect(tx-14,ty+2,5,9,'#3a3f55')+rect(tx+9,ty+2,5,9,'#3a3f55')});
     s+=person(R,242,H-12,1.05,'#E8795A',T)+person(R,196,H-9,1,'#4C7FD6',T)+person(R,166,H-8,.95,'#F4C26B',T)+tree(R,22,H-8,1.15,'#4E8F4A',T)+tree(R,306,H-6,1.3,'#4E8F4A',T)+lamp(180,H-4,46,T,R)+lamp(278,H-4,46,T,R);
+  }else if(v==='japan'){ /* Japão: Monte Fuji nevado, lago com reflexo, torii, pagode e cerejeiras em flor */
+    const fx=206,fy=horizon-58,fb=horizon+2,uidj='jp'+Math.floor(R()*1e6)+'_';
+    const mtn=mix('#5d6a9a',T.far,.4),snow=mix('#ffffff',T.sun,.18),lake=mix('#7fa9c4',T.amb,.35),red=mix('#d8392b',T.near,.12),dark=mix('#2e2a52',T.far,.25);
+    s+=`<defs><radialGradient id="${uidj}g" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${T.sun}" stop-opacity=".85"/><stop offset="1" stop-color="${T.amb}" stop-opacity="0"/></radialGradient><linearGradient id="${uidj}w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${mix(lake,T.sun,.4)}"/><stop offset="1" stop-color="${mix(lake,T.far,.5)}"/></linearGradient></defs>`;
+    s+=circ(236,horizon-36,52,`url(#${uidj}g)`);
+    s+=hills(horizon-4,10,mix(mtn,T.far,.5));
+    s+=path(`M${fx-118} ${fb} L${fx-14} ${fy+6} Q${fx} ${fy-6} ${fx+14} ${fy+6} L${fx+118} ${fb}Z`,mtn);
+    s+=path(`M${fx-22} ${fy+14} L${fx-14} ${fy+6} Q${fx} ${fy-6} ${fx+14} ${fy+6} L${fx+22} ${fy+14} L${fx+15} ${fy+10} L${fx+9} ${fy+18} L${fx+2} ${fy+9} L${fx-5} ${fy+19} L${fx-11} ${fy+10}Z`,snow);
+    s+=rect(0,horizon,W,H-horizon,`url(#${uidj}w)`);
+    s+=`<g opacity=".22" transform="translate(0 ${2*horizon}) scale(1 -1)">${path(`M${fx-118} ${fb} L${fx-14} ${fy+6} Q${fx} ${fy-6} ${fx+14} ${fy+6} L${fx+118} ${fb}Z`,mtn)}</g>`;
+    for(let i=0;i<10;i++)s+=rect(14+i*32+R()*8,horizon+8+(i%4)*9,16+R()*14,.8,'#ffffff',' fill-opacity=".35"');
+    /* pagode */
+    const px=52,py=horizon+2;let pg='';
+    for(let i=0;i<4;i++){const w2=26-i*4.4,yy=py-i*11;pg+=rect(px-w2/2+2,yy-8,w2-4,8,mix('#7a2e3a',T.near,.15))+path(`M${px-w2/2-5} ${yy-8} Q${px} ${yy-13} ${px+w2/2+5} ${yy-8} L${px+w2/2+2} ${yy-5} H${px-w2/2-2}Z`,dark)}
+    s+=pg+rect(px-.7,py-58,1.4,10,dark);
+    /* torii no lago */
+    const tx=262,ty=horizon+22;
+    s+=ell(tx,ty+19,26,2.6,'#000',' fill-opacity=".16"')+rect(tx-17,ty-14,3.2,32,red)+rect(tx+14,ty-14,3.2,32,red)+path(`M${tx-26} ${ty-14} Q${tx} ${ty-24} ${tx+26} ${ty-14} L${tx+24} ${ty-9} Q${tx} ${ty-18} ${tx-24} ${ty-9}Z`,red)+rect(tx-20,ty-6,40,2.6,red);
+    /* margem e cerejeiras */
+    s+=path(`M0 ${H-24} Q70 ${H-34} 150 ${H-22} T320 ${H-26} V${H} H0Z`,mix('#8fb06a',T.near,.45));
+    const sak=(x,y,k)=>{let t=path(`M${x} ${y} q-2 -16 ${3*k} -28 M${x} ${y-14} q9 -5 14 -14`,'none',` stroke="${mix('#4a2f3f',T.near,.2)}" stroke-width="${(2.4*k).toFixed(1)}" stroke-linecap="round"`);for(let i=0;i<12;i++){const a=R()*6.28,d=R()*16*k;t+=circ(x+4+Math.cos(a)*d,y-30*k+Math.sin(a)*d*.7,5.6*k+R()*3,i%3?mix('#f7b8cb',T.near,.15):mix('#ffdce6',T.near,.1),' fill-opacity=".92"')}return t};
+    s+=sak(30,H-6,1.3)+sak(292,H-4,1.15)+sak(158,H+2,.9);
+    for(let i=0;i<22;i++)s+=ell(R()*W,R()*H,1.6,.9,mix('#ffd5e1',T.sun,.2),` fill-opacity="${(.45+R()*.5).toFixed(2)}"`);
   }else{ /* cidade: plaza, street, madrid, paris, lisboa, sampa, brasília, pelourinho, market */
     const tall=v==='sampa'||v==='brasilia'||v==='street';
     if(hint&&hint.mount)s+=mountains(horizon-6,mix(far,'#000',.12),58)+(hint.volcano?path(`M180 ${horizon} L214 ${horizon-70} L222 ${horizon-70} L256 ${horizon}Z`,mix(far,'#000',.2)):'');
