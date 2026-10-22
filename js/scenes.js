@@ -25,11 +25,11 @@ const TM={
  night:{t:'#060C2C',m:'#1A2966',b:'#44579C',sun:'#F6F3DC',amb:'#7FA0FF',far:'#34437C',near:'#222C5C',lit:1,wall:.35}
 };
 const DAYPICK=['day','day','golden','dawn','golden','day','dusk'];
-const NIGHTY={party:1,ballroom:1,boteco:1,cinema:1,carnaval:'dusk',junina:'dusk',diner:'golden',stadium:'golden',paris:'golden',japan:'golden'};
+const NIGHTY={party:1,ballroom:1,boteco:1,cinema:1,carnaval:'dusk',junina:'dusk',diner:'golden',stadium:'golden',paris:'golden',japan:'golden',seoul:'dusk'};
 /* ---------- classificação do cenário ---------- */
 const INT=new Set('cafe counter diner restaurant boteco pizzeria kitchen cocina living home bedroom bath vecindad office studio classroom school library clinic hospital hall lobby ballroom party gym shop cinema museum subwaycar'.split(' '));
 const ALIAS={counter:'cafe',pizzeria:'restaurant',diner:'restaurant',boteco:'restaurant',cocina:'kitchen',home:'living',vecindad:'living',bedroom:'living',bath:'living',studio:'office',school:'classroom',hospital:'clinic',lobby:'hall',party:'ballroom'};
-const EXTV=new Set('plaza street city sampa brasilia rioantigo pelourinho lisboa madrid paris japan station railway airport bridge rainycity stadium road yard market harbor beach ipanema carnaval outdoors park sitio sertao amazonia snowy junina vila'.split(' '));
+const EXTV=new Set('plaza street city sampa brasilia rioantigo pelourinho lisboa madrid paris japan seoul station railway airport bridge rainycity stadium road yard market harbor beach ipanema carnaval outdoors park sitio sertao amazonia snowy junina vila'.split(' '));
 const EXALIAS={city:'street',rainycity:'street',road:'street',yard:'plaza',bridge:'harbor',railway:'station',outdoors:'park',sitio:'park',vila:'plaza',carnaval:'plaza',junina:'plaza',rioantigo:'pelourinho'};
 function classify(sc,R){
   sc=String(sc||'').toLowerCase();
@@ -255,6 +255,19 @@ function exterior(v,raw,R,T,tm,hint){
     const sak=(x,y,k)=>{let t=path(`M${x} ${y} q-2 -16 ${3*k} -28 M${x} ${y-14} q9 -5 14 -14`,'none',` stroke="${mix('#4a2f3f',T.near,.2)}" stroke-width="${(2.4*k).toFixed(1)}" stroke-linecap="round"`);for(let i=0;i<12;i++){const a=R()*6.28,d=R()*16*k;t+=circ(x+4+Math.cos(a)*d,y-30*k+Math.sin(a)*d*.7,5.6*k+R()*3,i%3?mix('#f7b8cb',T.near,.15):mix('#ffdce6',T.near,.1),' fill-opacity=".92"')}return t};
     s+=sak(30,H-6,1.3)+sak(292,H-4,1.15)+sak(158,H+2,.9);
     for(let i=0;i<22;i++)s+=ell(R()*W,R()*H,1.6,.9,mix('#ffd5e1',T.sun,.2),` fill-opacity="${(.45+R()*.5).toFixed(2)}"`);
+  }else if(v==='seoul'){ /* Seul: Torre Namsan, skyline, telhados de hanok e lanternas */
+    const uids='sl'+Math.floor(R()*1e6)+'_',nx=232,nb=horizon-4;
+    const mtn=mix('#5d6a9a',T.far,.45),tw=mix('#3a3f6a',T.far,.3),ro=mix('#2e2a52',T.near,.2),wall=mix('#8a4a44',T.near,.25);
+    s+=`<defs><radialGradient id="${uids}g" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${T.sun}" stop-opacity=".85"/><stop offset="1" stop-color="${T.amb}" stop-opacity="0"/></radialGradient></defs>`;
+    s+=circ(250,horizon-34,48,`url(#${uids}g)`);
+    s+=hills(horizon-6,18,mtn);
+    s+=path(`M${nx-3} ${nb-6} L${nx-1.6} ${nb-62} L${nx+1.6} ${nb-62} L${nx+3} ${nb-6}Z`,tw)+ell(nx,nb-46,7,3,tw)+ell(nx,nb-46,7,3,T.sun,' fill-opacity=".4"')+rect(nx-.5,nb-76,1,14,tw);
+    s+=skylineRow(R,horizon+8,18,52,12,24,[mix('#4a5a86',T.far,.4),mix('#3d4c78',T.far,.4),mix('#5a6a96',T.far,.4)],T,{});
+    s+=rect(0,horizon+14,W,H-horizon-14,mix('#4a3a6a',T.near,.45));
+    const hk=(cx,y,w)=>rect(cx-w*.38,y,w*.76,16,wall)+rect(cx-w*.38,y+3,w*.76,2,mix('#d8a860',T.near,.2))+path(`M${cx-w/2-7} ${y+1} Q${cx-w*.3} ${y-1} ${cx} ${y-10} Q${cx+w*.3} ${y-1} ${cx+w/2+7} ${y+1} Q${cx+w*.36} ${y+5} ${cx} ${y+2} Q${cx-w*.36} ${y+5} ${cx-w/2-7} ${y+1}Z`,ro);
+    s+=hk(62,horizon+16,90)+hk(190,horizon+22,104)+hk(292,horizon+14,70);
+    [[28,12],[112,18],[160,10],[250,16],[300,20]].forEach(([x,y],i)=>{const c=i%2?'#f25c54':'#ffb347';s+=rect(x-.3,0,.6,y-6,'#4a3a6a')+ell(x,y,4,5,c)+ell(x,y,9,10,'#ffb347',' fill-opacity=".16"')});
+    s+=person(R,126,H-10,1,'#E8795A',T)+person(R,214,H-8,1.05,'#4C7FD6',T);
   }else{ /* cidade: plaza, street, madrid, paris, lisboa, sampa, brasília, pelourinho, market */
     const tall=v==='sampa'||v==='brasilia'||v==='street';
     if(hint&&hint.mount)s+=mountains(horizon-6,mix(far,'#000',.12),58)+(hint.volcano?path(`M180 ${horizon} L214 ${horizon-70} L222 ${horizon-70} L256 ${horizon}Z`,mix(far,'#000',.2)):'');
