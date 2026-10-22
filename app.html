@@ -2930,7 +2930,15 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
 }catch(err){console.error('Pogglot: erro ao renderizar o quadro',s,err);st.innerHTML='<div class="step"><h2>😅</h2><p>Esse quadro não carregou direito. Toque para continuar.</p></div>';const pcta=$('#pcta');if(pcta){pcta.disabled=false;pcta.textContent=(t&&t.cont)||'Continuar';pcta.onclick=()=>{P.i++;render()};}}
 }
 function vIcon(i){const c=['#0C7A78','#F29B34','#E85D75','#6B3FA0'][i%4];const p=['<path d="M8 6h16v20H8z" fill="none" stroke="C" stroke-width="2.5"/><path d="M12 11h8M12 16h8M12 21h5" stroke="C" stroke-width="2"/>','<circle cx="16" cy="16" r="10" fill="none" stroke="C" stroke-width="2.5"/><path d="M16 10v6l4 3" stroke="C" stroke-width="2.5" fill="none"/>','<path d="M6 22 q10 -18 20 0" fill="none" stroke="C" stroke-width="2.5"/><circle cx="16" cy="10" r="4" fill="C"/>','<path d="M16 5l3 7h7l-6 5 2 8-6-4-6 4 2-8-6-5h7z" fill="none" stroke="C" stroke-width="2.3"/>'][i%4].replace(/C/g,c);return `<svg viewBox="0 0 32 32" width="32" height="32">${p}</svg>`;}
-function nextPlayIdx(cid,idx){const l=EP[cid]||[];for(let k=idx+1;k<l.length;k++)if(!l[k].pl)return k;return -1}
+function nextPlayIdx(cid,idx){
+  const l=EP[cid]||[];
+  for(let k=idx+1;k<l.length;k++){
+    // Dados antigos podem trazer pl como 0/1 ou como texto; somente 1/true bloqueia.
+    const planned=l[k].pl===true||l[k].pl===1||l[k].pl==='1';
+    if(!planned)return k;
+  }
+  return -1;
+}
 function isPracticeStep(s){return s==='choice'||s==='q0'||s==='q1'||s==='gap'||/^ask\d+$/.test(s)||/^build\d+$/.test(s)}
 function practiceLabel(s){const idx=P.steps.slice(0,P.i+1).filter(isPracticeStep).length,total=P.steps.filter(isPracticeStep).length;return `${P.t.s_practice} ${idx}/${total}`}
 
