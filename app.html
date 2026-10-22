@@ -1509,7 +1509,7 @@ add('cv_fr',()=>{const r=R(27),g=uid(),gd=uid(),gm=uid(),gp=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],de:[],it:[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],enes:[],'enes-a1':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],de:[],it:[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1549,6 +1549,7 @@ const GROUPS={
       name:{pt:'Alemão para brasileiros',es:'Alemán para brasileños'},flag:'DE → PT-BR',
       desc:{pt:'De Goethe aos filmes e à vida cotidiana: alemão com cultura, do A1 ao C2.',es:'De Goethe al cine y la vida cotidiana: alemán con cultura, de A1 a C2.'},
       sub:['de-a1','de-a2','de-b1','de-b2','de-c1','de-c2']},
+  itbr:{id:'itbr',ui:'pt',scarf:'#2E7D32',scene:'cv_it',name:{pt:'Italiano para brasileiros',es:'Italiano para brasileños'},flag:'IT → PT-BR',desc:{pt:'De Dante ao cinema italiano: italiano com cultura, do A1 ao C2.',es:'De Dante al cine italiano: italiano con cultura, de A1 a C2.'},sub:['it-a1','it-a2','it-b1','it-b2','it-c1','it-c2']},
   nb:{id:'nb',ui:'pt',scarf:'#E0703A',scene:'cv_usa',
       name:{pt:'Neighbors',es:'Neighbors'},flag:'EN-US → PT-BR',
       desc:{pt:'Aprenda conversando com vizinhos: cada episódio é uma pessoa, uma cidade e uma situação real. Fala primeiro, sem gramática explícita.',es:'Aprende conversando con vecinos: cada episodio es una persona, una ciudad y una situación real.'},
@@ -1728,6 +1729,12 @@ const COURSES={
   de:{id:'de',ui:'pt',tts:'de-DE',scene:'cv_de',scarf:'#D32F2F',
       name:{pt:'Alemão',es:'Alemán'},flag:'DE → PT-BR',
       desc:{pt:'De Heidi a Good Bye, Lenin!: o alemão que se aprende com contos, filmes e música.',es:'De Heidi a Good Bye, Lenin!: el alemán que se aprende con cuentos, cine y música.'}},
+  'it-a1':{id:'it-a1',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano A1 para brasileiros',es:'Italiano A1 para brasileños'},flag:'IT → PT-BR · A1',desc:{pt:'500 episódios de italiano A1 com cultura e situações reais.',es:'500 episodios de italiano A1 con cultura y situaciones reales.'}},
+  'it-a2':{id:'it-a2',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano A2 para brasileiros',es:'Italiano A2 para brasileños'},flag:'IT → PT-BR · A2',desc:{pt:'500 episódios de italiano A2 com cultura e situações reais.',es:'500 episodios de italiano A2 con cultura y situaciones reales.'}},
+  'it-b1':{id:'it-b1',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano B1 para brasileiros',es:'Italiano B1 para brasileños'},flag:'IT → PT-BR · B1',desc:{pt:'500 episódios de italiano B1 com cultura e situações reais.',es:'500 episodios de italiano B1 con cultura y situaciones reales.'}},
+  'it-b2':{id:'it-b2',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano B2 para brasileiros',es:'Italiano B2 para brasileños'},flag:'IT → PT-BR · B2',desc:{pt:'500 episódios de italiano B2 com cultura e situações reais.',es:'500 episodios de italiano B2 con cultura y situaciones reales.'}},
+  'it-c1':{id:'it-c1',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano C1 para brasileiros',es:'Italiano C1 para brasileños'},flag:'IT → PT-BR · C1',desc:{pt:'500 episódios de italiano C1 com cultura e situações reais.',es:'500 episodios de italiano C1 con cultura y situaciones reales.'}},
+  'it-c2':{id:'it-c2',group:'itbr',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',name:{pt:'Italiano C2 para brasileiros',es:'Italiano C2 para brasileños'},flag:'IT → PT-BR · C2',desc:{pt:'500 episódios de italiano C2 com cultura e situações reais.',es:'500 episodios de italiano C2 con cultura y situaciones reales.'}},
   it:{id:'it',ui:'pt',tts:'it-IT',scene:'cv_it',scarf:'#2E7D32',
       name:{pt:'Italiano',es:'Italiano'},flag:'IT → PT-BR',
       desc:{pt:'De Pinocchio a Cinema Paradiso: o italiano que se aprende pela cultura, do café à ópera.',es:'De Pinocchio a Cinema Paradiso: el italiano que se aprende con la cultura, del café a la ópera.'}}
@@ -2292,7 +2299,7 @@ function homeCards(){
   // One tile per family: en / es / nb open a level hub; other courses open directly.
   const out=[];const seen={};
   Object.values(COURSES).forEach(c=>{
-    if(['nb','en','es','pt','fr','debr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
+    if(['nb','en','es','pt','fr','debr','itbr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
       out.push({id:g.id,hub:true,feat:g.id==='nb',scene:g.scene,flag:g.flag,name:g.name,desc:g.desc,n:g.sub.reduce((a,x)=>a+(EP_COUNT[x]||0),0),d:g.sub.reduce((a,x)=>a+doneCountFor(x),0),metaR:g.id==='nb'?{pt:'Inglês A1–C2 · Espanhol A1',es:'Inglés A1–C2 · Español A1'}:{pt:'6 níveis · A1–C2',es:'6 niveles · A1–C2'}});return}
     out.push({id:c.id,hub:false,scene:c.scene,flag:c.flag,name:c.name,desc:c.desc,n:EP_COUNT[c.id]||0,d:doneCountFor(c.id)})});
   out.sort((x,y)=>(y.feat?1:0)-(x.feat?1:0));
@@ -2308,7 +2315,7 @@ function homeLangs(L,t){
    {id:'pt',flag:'🇧🇷',name:'Português',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^pt-/)}]},
    {id:'fr',flag:'🇫🇷',name:'Francês',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^fr-/)}]},
    {id:'de',flag:'🇩🇪',name:'Alemão',rows:[{t:'Regular · A1 a C2',ids:by(/^de-/)},{t:'Clássico',ids:['de']}]},
-   {id:'it',flag:'🇮🇹',name:'Italiano',rows:[{t:'Clássico',ids:['it']}]}];
+   {id:'it',flag:'🇮🇹',name:'Italiano',rows:[{t:'Regular · A1 a C2',ids:by(/^it-/)},{t:'Clássico',ids:['it']}]}];
   const tile=(cid,wideAll)=>{const c=COURSES[cid];if(!c)return'';const n=EP_COUNT[cid]||0,d=doneCountFor(cid),m=cid.match(/([abc][12])$/i);const lv=m?m[1].toUpperCase():'';
     return `<button class="ltile${lv&&!wideAll?'':' wide'}" data-course="${cid}"><b>${wideAll?esc(c.name[L]):(lv||esc(c.name[L]))}</b><small>${d}/${n}</small><i style="width:${n?d/n*100:0}%"></i></button>`};
   return `<nav class="langidx">${LANGS.map(g=>`<a href="#" data-jump2="L-${g.id}">${g.flag} ${g.name}</a>`).join('')}</nav><div class="langs">${LANGS.map(g=>{const rows=g.rows.filter(r=>r.ids.some(i=>COURSES[i]));if(!rows.length)return'';const tot=rows.reduce((a,r)=>a+r.ids.reduce((x,i)=>x+(EP_COUNT[i]||0),0),0);
