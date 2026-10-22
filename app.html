@@ -1555,7 +1555,7 @@ add('cv_ko',()=>{const r=R(57),g=uid(),gs=uid(),gm=uid(),hz=300;
 
 /* ================= DATA REGISTRY ================= */
 const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],'ja-a1':[],'ja-a2':[],'ja-b1':[],'ja-b2':[],'ja-c1':[],'ja-c2':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbde-a2':[],'nbde-b1':[],'nbde-b2':[],'nbde-c1':[],'nbde-c2':[],'nbpt-a1':[],'nbpt-a2':[],'nbpt-b1':[],'nbpt-b2':[],'nbpt-c1':[],'nbpt-c2':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbja-b1':[],'nbja-b2':[],'nbja-c1':[],'nbja-c2':[],'nbeng-a1':[],'nbeng-a2':[],'nbeng-b1':[],'nbeng-b2':[],'nbeng-c1':[],'nbeng-c2':[],'nbit-a1':[],'nbit-a2':[],'nbit-b1':[],'nbit-b2':[],'nbit-c1':[],'nbit-c2':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],'enesh-a1':[],'enesh-a2':[],'enesh-b1':[],'enesh-b2':[],'enesh-c1':[],'enesh-c2':[],'ko-a1':[],'ko-a2':[],'ko-b1':[],'ko-b2':[],'ko-c1':[],'ko-c2':[],'frbr-a1':[],'frbr-a2':[],'frbr-b1':[],'frbr-b2':[],'frbr-c1':[],'frbr-c2':[],'zhbr-a1':[],'zhbr-a2':[],'zhbr-b1':[],'zhbr-b2':[],'zhbr-c1':[],'zhbr-c2':[]};
-let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
+let EP_COUNT={},EP_AVAILABLE={},MANIFEST=null;const EP_LOADING={};
 /* Registra automaticamente o gênero dos personagens dos cursos regulares a partir do avatar
    do elenco. Assim, o mesmo personagem recebe uma voz coerente no navegador e no TTS em nuvem. */
 const FACE_F=/👩|👧|♀|woman|girl|female|femin/i;
@@ -4656,6 +4656,7 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
   try{
     MANIFEST = await fetch('data/manifest.json?v=102',{cache:'no-store'}).then(r=>r.json());
     try{ EP_COUNT = await fetch('data/counts.json?v=95',{cache:'no-store'}).then(r=>r.json()); }catch(e2){ EP_COUNT={}; }
+    try{ EP_AVAILABLE = await fetch('data/availability.json?v=1',{cache:'no-store'}).then(r=>r.json()); }catch(e3){ EP_AVAILABLE={}; }
     for(const k in EP_COUNT){if(!MANIFEST[k])delete EP_COUNT[k]}
   }catch(e){
     console.error('Pogglot data load failed', e);

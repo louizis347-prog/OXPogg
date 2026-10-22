@@ -46,7 +46,7 @@ const TX={
   m1:'Cena real',m2:'Vocabulário',m3:'Prática',m4:'Voz',
   cont:'Continuar',contSub:'Continue de onde parou',contBtn:'Continuar',start:'Começar agora',startSub:'Escolha um idioma e abra o primeiro episódio.',startBtn:'Começar',
   sStreak:'dias seguidos',sXp:'pontos XP',sEps:'episódios feitos',sAcc:'de acerto',
-  courses:'Seus cursos',coursesSub:'Cada idioma tem os próprios níveis, trilhas e progresso.',lessons:'episódios',open:'Abrir',levels:'níveis',regular:'Regular',neighbors:'Neighbors',
+  courses:'Seus cursos',coursesSub:'Cada idioma tem os próprios níveis, trilhas e progresso.',lessons:'episódios',available:'disponíveis',planned:'planejados',open:'Abrir',levels:'níveis',regular:'Regular',neighbors:'Neighbors',
   shelf:'Estante cultural',shelfSub:'Obras que você já conheceu nos episódios.',shelfAll:'Ver estante',shelfEmpty:'Conclua um episódio para ganhar o primeiro livro.',
   level:'Nível',epsT:'Episódios',of:'de',done:'concluídos',all:'Todos',search:'Buscar episódio ou obra',noRes:'Nenhum episódio encontrado.',more:'Mostrar mais',
   review:'Rever',continue:'Continuar',begin:'Começar',soon:'Em breve',seeCover:'Ver capa',ep:'EPISÓDIO',min:'MIN',arc:'Arco',
@@ -78,7 +78,7 @@ const TX={
   cont:'Continue',contSub:'Pick up where you left off',contBtn:'Continue',start:'Start now',startBtn:'Start',
   sStreak:'day streak',sXp:'XP points',sEps:'episodes done',sAcc:'accuracy',
   courses:'Your courses',coursesSub:'Each language has its own levels, paths and progress.',lessons:'episodes',open:'Open',levels:'levels',
-  shelf:'Cultural shelf',shelfAll:'See shelf',goal:'Today\'s goal',goalDone:'Goal reached!',review2:'Spaced review',review2Go:'Review now',rank:'Ranking',ach:'Achievements',regular:'Regular',neighbors:'Neighbors',
+  shelf:'Cultural shelf',shelfAll:'See shelf',goal:'Today\'s goal',goalDone:'Goal reached!',review2:'Spaced review',review2Go:'Review now',rank:'Ranking',ach:'Achievements',available:'available',planned:'planned',regular:'Regular',neighbors:'Neighbors',
   chat:'Chats',partners:'Partners',commT:'Community',review:'Review',continue:'Continue',begin:'Start',ep:'EPISODE',min:'MIN'},
  es:{shMy:'Mi estante',shSort1:'Recientes',shSort2:'A–Z',shSearch:'Buscar obra o autor',shMile:'Próxima meta',shAuth:'autores',shWorks:'obras',shQueue:'En cola para entrar en la estante',shEmptyT:'Tu estante está vacía',shEmptyP:'Termina un episodio y la obra que conociste gana su lugar aquí.',shGo:'Empezar un curso',shNone:'No se encontraron obras.',shClose:'Cerrar',shBy:'de',
   cefrT:'De A1 a C2',cefrSub:'Los seis niveles del Marco Europeo (MCER). En español, también alineado con el DELE.',
@@ -114,7 +114,7 @@ const TX={
   m1:'Escena real',m2:'Vocabulario',m3:'Práctica',m4:'Voz',
   cont:'Continuar',contSub:'Sigue donde lo dejaste',contBtn:'Continuar',start:'Empezar ahora',startSub:'Elige un idioma y abre el primer episodio.',startBtn:'Empezar',
   sStreak:'días seguidos',sXp:'puntos XP',sEps:'episodios hechos',sAcc:'de acierto',
-  courses:'Tus cursos',coursesSub:'Cada idioma tiene sus propios niveles, rutas y progreso.',lessons:'episodios',open:'Abrir',levels:'niveles',regular:'Regular',neighbors:'Neighbors',
+  courses:'Tus cursos',coursesSub:'Cada idioma tiene sus propios niveles, rutas y progreso.',lessons:'episodios',available:'disponibles',planned:'planificados',open:'Abrir',levels:'niveles',regular:'Regular',neighbors:'Neighbors',
   shelf:'Estante cultural',shelfSub:'Obras que ya conociste en los episodios.',shelfAll:'Ver estante',shelfEmpty:'Termina un episodio para ganar el primer libro.',
   level:'Nivel',epsT:'Episodios',of:'de',done:'completados',all:'Todos',search:'Buscar episodio u obra',noRes:'No se encontraron episodios.',more:'Mostrar más',
   review:'Repasar',continue:'Continuar',begin:'Empezar',soon:'Próximamente',seeCover:'Ver portada',ep:'EPISODIO',min:'MIN',arc:'Arco',
@@ -532,14 +532,14 @@ document.addEventListener('click',e=>{const m=e.target.closest&&e.target.closest
 
 /* ================= PÁGINA CURSOS (menu superior) ================= */
 function card5(l,i,big){
-  let n=0,d=0;l.sub.forEach(c=>{n+=nOf(c);d+=doneCountFor(c)});
+  let n=0,d=0,av=0;l.sub.forEach(c=>{n+=nOf(c);d+=doneCountFor(c);av+=(window.EP_AVAILABLE&&EP_AVAILABLE[c]&&EP_AVAILABLE[c].available!=null)?EP_AVAILABLE[c].available:nOf(c)});
   const g=GROUPS[l.id]||COURSES[l.id]||{},p=n?d/n:0,multi=l.sub.length>1,hd=multi?`data-lang="${l.id}"`:`data-course="${l.sub[0]}"`;
   const neighbors=/^nb/.test(l.id),mode=neighbors?t('neighbors'):t('regular');
   const chips=multi?`<div class="lvs">${l.sub.map(cid=>`<button class="lv ${doneCountFor(cid)?'on':''}" data-course="${cid}" title="${E(COURSES[cid].name[L0()])}">${E(lvlOf(cid))}</button>`).join('')}</div>`
     :`<button class="p2btn soft sm go" data-course="${l.sub[0]}">${E(d?t('continue'):t('begin'))}${IC.arrow()}</button>`;
   return `<article class="p5c ${big?'big':''} ${neighbors?'is-neighbors':'is-regular'}" style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};animation-delay:${i*50}ms">
    <button class="ban" ${hd} tabindex="-1" aria-hidden="true">${sceneArt(l.id+(big?'b':''),LANG_SC[l.id]||'plaza')}<span class="sh"></span></button>
-   <button class="top" ${hd}><span class="mk">${E(l.mono)}</span><span class="nm"><span class="p5mode">${E(mode)}</span><h3>${E(l.n[L0()])}</h3><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(n)} ${E(t('lessons'))}</small></span><span class="ar">${IC.arrow()}</span></button>
+   <button class="top" ${hd}><span class="mk">${E(l.mono)}</span><span class="nm"><span class="p5mode">${E(mode)}</span><h3>${E(l.n[L0()])}</h3><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(av)} ${E(t('available'))||'disponíveis'}${av<n?' · '+nf(n)+' '+E(t('planned')):''}</small></span><span class="ar">${IC.arrow()}</span></button>
    <p>${E(g.desc?g.desc[L0()]:'')}</p>
    <div class="pr"><div class="p2bar-p">${''}<i style="width:${(p*100).toFixed(1)}%"></i></div><b>${Math.round(p*100)}%</b></div>${chips}</article>`;
 }
