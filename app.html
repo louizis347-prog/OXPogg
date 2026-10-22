@@ -1554,7 +1554,7 @@ add('cv_ko',()=>{const r=R(57),g=uid(),gs=uid(),gm=uid(),hz=300;
 })();
 
 /* ================= DATA REGISTRY ================= */
-const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],'ja-a1':[],'ja-a2':[],'ja-b1':[],'ja-b2':[],'ja-c1':[],'ja-c2':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],'enesh-a1':[],'enesh-a2':[],'enesh-b1':[],'enesh-b2':[],'enesh-c1':[],'enesh-c2':[],'ko-a1':[],'ko-a2':[],'ko-b1':[],'ko-b2':[],'ko-c1':[],'ko-c2':[],'frbr-a1':[],'frbr-a2':[],'frbr-b1':[],'frbr-b2':[],'frbr-c1':[],'frbr-c2':[]};
+const EP={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[],'es-a1':[],'es-a2':[],'es-b1':[],'es-b2':[],'es-c1':[],'es-c2':[],'pt-a1':[],'pt-a2':[],'pt-b1':[],'pt-b2':[],'pt-c1':[],'pt-c2':[],'fr-a1':[],'fr-a2':[],'fr-b1':[],'fr-b2':[],'fr-c1':[],'fr-c2':[],'de-a1':[],'de-a2':[],'de-b1':[],'de-b2':[],'de-c1':[],'de-c2':[],'it-a1':[],'it-a2':[],'it-b1':[],'it-b2':[],'it-c1':[],'it-c2':[],'ja-a1':[],'ja-a2':[],'ja-b1':[],'ja-b2':[],'ja-c1':[],'ja-c2':[],'nb-a1':[],'nb-a2':[],'nb-b1':[],'nb-b2':[],'nb-c1':[],'nb-c2':[],'nbes-a1':[],'nbfr-a1':[],'nbde-a1':[],'nbpt-a1':[],'nbja-kana':[],'nbja-a1':[],'nbja-a2':[],'nbeng-a1':[],'nbit-a1':[],'nbes-a2':[],'nbes-b1':[],'nbes-b2':[],'nbes-c1':[],'nbes-c2':[],'nbfr-a2':[],'nbfr-b1':[],'nbfr-b2':[],'nbfr-c1':[],'nbfr-c2':[],'nbpten-a1':[],'enesh-a1':[],'enesh-a2':[],'enesh-b1':[],'enesh-b2':[],'enesh-c1':[],'enesh-c2':[],'ko-a1':[],'ko-a2':[],'ko-b1':[],'ko-b2':[],'ko-c1':[],'ko-c2':[],'frbr-a1':[],'frbr-a2':[],'frbr-b1':[],'frbr-b2':[],'frbr-c1':[],'frbr-c2':[],'zhbr-a1':[],'zhbr-a2':[],'zhbr-b1':[],'zhbr-b2':[],'zhbr-c1':[],'zhbr-c2':[]};
 let EP_COUNT={},MANIFEST=null;const EP_LOADING={};
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
 async function ensureLangLoaded(lang){
@@ -1602,6 +1602,7 @@ const GROUPS={
       desc:{pt:'Do Friends ao cinema: inglês americano com cultura, do A1 ao C2 — escolha seu nível.',es:'De Friends al cine: inglés americano con cultura, de A1 a C2 — elige tu nivel.'},
       sub:['enesh-a1','enesh-a2','enesh-b1','enesh-b2','enesh-c1','enesh-c2']},
   kobr:{id:'kobr',ui:'pt',scarf:'#D6336C',scene:'cv_ko',name:{pt:'Coreano para brasileiros',es:'Coreano para brasileños'},flag:'KO → PT-BR',desc:{pt:'Do Hangul ao K-pop: coreano com cultura, do A1 ao C2.',es:'Del hangul al K-pop: coreano con cultura, de A1 a C2.'},sub:['ko-a1','ko-a2','ko-b1','ko-b2','ko-c1','ko-c2']},
+  zhbr:{id:'zhbr',ui:'pt',scarf:'#C62828',scene:'cv_ko',name:{pt:'Mandarim para brasileiros',es:'Chino mandarín para brasileños'},flag:'ZH → PT-BR',desc:{pt:'Do pinyin aos hanzi: mandarim lúdico para brasileiros, do A1 ao C2.',es:'Del pinyin a los hanzi: chino mandarín lúdico para brasileños, de A1 a C2.'},sub:['zhbr-a1','zhbr-a2','zhbr-b1','zhbr-b2','zhbr-c1','zhbr-c2']},
   nb:{id:'nb',ui:'pt',scarf:'#E0703A',scene:'cv_usa',
       name:{pt:'Neighbors',es:'Neighbors'},flag:'EN-US → PT-BR',
       desc:{pt:'Aprenda conversando com vizinhos: cada episódio é uma pessoa, uma cidade e uma situação real. Fala primeiro, sem gramática explícita.',es:'Aprende conversando con vecinos: cada episodio es una persona, una ciudad y una situación real.'},
@@ -1802,6 +1803,12 @@ const COURSES={
   'ko-b2':{id:'ko-b2',group:'kobr',ui:'pt',tts:'ko-KR',scene:'cv_ko',scarf:'#D6336C',name:{pt:'Coreano B2 para brasileiros',es:'Coreano B2 para brasileños'},flag:'KO → PT-BR · B2',desc:{pt:'500 episódios de coreano B2. Debater e entender mídia e trabalho.',es:'500 episodios de coreano B2. Debater e entender mídia e trabalho.'}},
   'ko-c1':{id:'ko-c1',group:'kobr',ui:'pt',tts:'ko-KR',scene:'cv_ko',scarf:'#D6336C',name:{pt:'Coreano C1 para brasileiros',es:'Coreano C1 para brasileños'},flag:'KO → PT-BR · C1',desc:{pt:'500 episódios de coreano C1. Nuances, estilo e comunicação profissional.',es:'500 episodios de coreano C1. Nuances, estilo e comunicação profissional.'}},
   'ko-c2':{id:'ko-c2',group:'kobr',ui:'pt',tts:'ko-KR',scene:'cv_ko',scarf:'#D6336C',name:{pt:'Coreano C2 para brasileiros',es:'Coreano C2 para brasileños'},flag:'KO → PT-BR · C2',desc:{pt:'500 episódios de coreano C2. Maestria, retórica e interpretação.',es:'500 episodios de coreano C2. Maestria, retórica e interpretação.'}},
+  'zhbr-a1':{id:'zhbr-a1',group:'zhbr',ui:'pt',tts:'zh-CN',scene:'cv_ko',scarf:'#C62828',name:{pt:'Mandarim A1 para brasileiros',es:'Chino mandarín A1 para brasileños'},flag:'ZH → PT-BR · A1',desc:{pt:'500 episódios de mandarim A1 com pinyin, tons, hanzi, escrita e cultura.',es:'500 episodios de chino mandarín A1 con pinyin, tonos, hanzi, escritura y cultura.'}},
+  'zhbr-a2':{id:'zhbr-a2',group:'zhbr',ui:'pt',tts:'zh-CN',scene:'cv_ko',scarf:'#C62828',name:{pt:'Mandarim A2 para brasileiros',es:'Chino mandarín A2 para brasileños'},flag:'ZH → PT-BR · A2',desc:{pt:'500 episódios de mandarim A2 com pinyin, tons, hanzi, escrita e cultura.',es:'500 episodios de chino mandarín A2 con pinyin, tonos, hanzi, escritura y cultura.'}},
+  'zhbr-b1':{id:'zhbr-b1',group:'zhbr',ui:'pt',tts:'zh-CN',scene:'cv_ko',scarf:'#C62828',name:{pt:'Mandarim B1 para brasileiros',es:'Chino mandarín B1 para brasileños'},flag:'ZH → PT-BR · B1',desc:{pt:'500 episódios de mandarim B1 com pinyin, tons, hanzi, escrita e cultura.',es:'500 episodios de chino mandarín B1 con pinyin, tonos, hanzi, escritura y cultura.'}},
+  'zhbr-b2':{id:'zhbr-b2',group:'zhbr',ui:'pt',tts:'zh-CN',scene:'cv_ko',scarf:'#C62828',name:{pt:'Mandarim B2 para brasileiros',es:'Chino mandarín B2 para brasileños'},flag:'ZH → PT-BR · B2',desc:{pt:'500 episódios de mandarim B2 com pinyin, tons, hanzi, escrita e cultura.',es:'500 episodios de chino mandarín B2 con pinyin, tonos, hanzi, escritura y cultura.'}},
+  'zhbr-c1':{id:'zhbr-c1',group:'zhbr',ui:'pt',tts:'zh-CN',scene:'cv_ko',scarf:'#C62828',name:{pt:'Mandarim C1 para brasileiros',es:'Chino mandarín C1 para brasileños'},flag:'ZH → PT-BR · C1',desc:{pt:'500 episódios de mandarim C1 com pinyin, tons, hanzi, escrita e cultura.',es:'500 episodios de chino mandarín C1 con pinyin, tonos, hanzi, escritura y cultura.'}},
+  'zhbr-c2':{id:'zhbr-c2',group:'zhbr',ui:'pt',tts:'zh-CN',scene:'cv_ko',scarf:'#C62828',name:{pt:'Mandarim C2 para brasileiros',es:'Chino mandarín C2 para brasileños'},flag:'ZH → PT-BR · C2',desc:{pt:'500 episódios de mandarim C2 com pinyin, tons, hanzi, escrita e cultura.',es:'500 episodios de chino mandarín C2 con pinyin, tonos, hanzi, escritura y cultura.'}},
 };
 const TESTS={'en-a1':[],'en-a2':[],'en-b1':[],'en-b2':[],'en-c1':[],'en-c2':[]};
 
@@ -2362,7 +2369,7 @@ function homeCards(){
   // One tile per family: en / es / nb open a level hub; other courses open directly.
   const out=[];const seen={};
   Object.values(COURSES).forEach(c=>{
-    if(['nb','en','es','pt','fr','frbr','enes','debr','itbr','jabr','kobr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
+    if(['nb','en','es','pt','fr','frbr','zhbr','enes','debr','itbr','jabr','kobr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
       out.push({id:g.id,hub:true,feat:g.id==='nb',scene:g.scene,flag:g.flag,name:g.name,desc:g.desc,n:g.sub.reduce((a,x)=>a+(EP_COUNT[x]||0),0),d:g.sub.reduce((a,x)=>a+doneCountFor(x),0),metaR:g.id==='nb'?{pt:'Inglês A1–C2 · Espanhol A1',es:'Inglés A1–C2 · Español A1'}:{pt:'6 níveis · A1–C2',es:'6 niveles · A1–C2'}});return}
     out.push({id:c.id,hub:false,scene:c.scene,flag:c.flag,name:c.name,desc:c.desc,n:EP_COUNT[c.id]||0,d:doneCountFor(c.id)})});
   out.sort((x,y)=>(y.feat?1:0)-(x.feat?1:0));
@@ -2377,6 +2384,7 @@ function homeLangs(L,t){
    {id:'es',flag:'🇪🇸',name:'Espanhol',rows:[{t:'Clássico · do Quixote ao Chaves',ids:by(/^es-/)}]},
    {id:'pt',flag:'🇧🇷',name:'Português',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^pt-/)}]},
    {id:'fr',flag:'🇫🇷',name:'Francês',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^fr-/)},{t:'Para brasileiros · A1 a C2',ids:by(/^frbr-/)}]},
+   {id:'zh',flag:'🇨🇳',name:'Mandarim',rows:[{t:'Para brasileiros · Pinyin, hanzi e A1 a C2',ids:by(/^zhbr-/)}]},
    {id:'de',flag:'🇩🇪',name:'Alemão',rows:[{t:'Regular · A1 a C2',ids:by(/^de-/)}]},
    {id:'it',flag:'🇮🇹',name:'Italiano',rows:[{t:'Regular · A1 a C2',ids:by(/^it-/)}]},{id:'ja',flag:'🇯🇵',name:'Japonês',rows:[{t:'Regular · A1 a C2',ids:by(/^ja-/)},{t:'Neighbors · Kana e A1',ids:by(/^nbja-/),lab:1}]},{id:'ko',flag:'🇰🇷',name:'Coreano',rows:[{t:'Regular · A1 a C2',ids:by(/^ko-/)}]}];
   const tile=(cid,wideAll)=>{const c=COURSES[cid];if(!c)return'';const n=EP_COUNT[cid]||0,d=doneCountFor(cid),m=cid.match(/([abc][12])$/i);const lv=m?m[1].toUpperCase():'';
@@ -2696,7 +2704,7 @@ function skipClick(){if(!P||P.isTest)return;const s=P.steps[P.i];if(s==='done')r
 function closePlayer(){if(window.PogTTS)PogTTS.stop();clearInterval(P&&P.timer);clearInterval(SPEAK_KEEPALIVE);try{speechSynthesis.cancel()}catch(e){}const el=$('#player');if(el)el.remove();document.body.style.overflow='';const cid=P.cid;P=null;course(cid);}
 const HOME_TTS={pt:'pt-BR',es:'es-MX'};
 function say(txt,mood){txt=txt||'';const b=$('#pbub'),pg=$('#pdock .pog');clearInterval(say.t);b.textContent='';pg.classList.remove('happy','happy2','happy3','sad');void pg.offsetWidth;if(mood)pg.classList.add(mood);pg.classList.add('talk');let i=0;say.t=setInterval(()=>{b.textContent=txt.slice(0,++i);if(i>=txt.length){clearInterval(say.t);pg.classList.remove('talk')}},14);if(txt)speak(txt,HOME_TTS[ST.homeLang]||'pt-BR',null,'Poggie');}
-function isRegularCourse(cid){return /^(en|es|pt|fr|frbr|de|it|ja|ko|enesh)-/.test(String(cid||''));}
+function isRegularCourse(cid){return /^(en|es|pt|fr|frbr|zhbr|de|it|ja|ko|enesh)-/.test(String(cid||''));}
 function openTeacherLesson(){
   const e=P&&P.e,cid=P&&P.cid;if(!e||!isRegularCourse(cid))return;
   const modal=document.createElement('div');modal.className='teacher-modal';modal.innerHTML=`<div class="teacher-box"><button class="teacher-close" aria-label="Fechar">×</button><h2>🔒 Modelo de aula ao vivo</h2><p>Plano exclusivo para este episódio · ${esc(e.t)}</p><div id="teacherGate"><p>Digite a senha do professor para liberar o roteiro.</p><div class="teacher-lock"><input id="teacherPass" type="password" placeholder="Senha do professor"><button class="pill" id="teacherUnlock">Desbloquear</button></div><div class="teacher-error" id="teacherErr" hidden>Senha incorreta.</div></div></div>`;document.body.appendChild(modal);
