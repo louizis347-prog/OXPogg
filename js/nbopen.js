@@ -256,7 +256,7 @@ function build(e){
   const reply=buildReply(e,d),choice=buildChoice(e,d),prag=buildPrag(e,d),fluency=buildFluency(e,d),review=buildReview(e);
   /* O percurso varia levemente entre episódios: a conversa pode vir antes
      da explicação de tom, evitando que o curso pareça uma lista mecânica. */
-  const englishNeighbors=typeof P!=='undefined'&&P&&/^nb(?:-|es-)/.test(String(P.cid||''));
+  const englishNeighbors=typeof P!=='undefined'&&P&&/^nb(?:-|es-|fr-)/.test(String(P.cid||''));
   const extras=hash(e.n)%2?[reply,choice,prag,englishNeighbors?fluency:null,review]:[prag,englishNeighbors?fluency:null,reply,choice,review];extras.forEach(x=>{if(x)out.push(x)});
   const milestone=buildMilestone(e,d);if(milestone)out.unshift(milestone);
   const reflection=buildReflection(e,d);if(reflection)out.push(reflection);
