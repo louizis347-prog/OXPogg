@@ -34,6 +34,7 @@ const LANGS=[
  {id:'en',mono:'EN',c:'#1CB0F6',cd:'#0E86C2',cl:'#CDEFFD',n:{pt:'Inglês',es:'Inglés'},sub:['en-a1','en-a2','en-b1','en-b2','en-c1','en-c2']},
  {id:'es',mono:'ES',c:'#FF6B4A',cd:'#D44A2C',cl:'#FFD9D0',n:{pt:'Espanhol',es:'Español'},sub:['es-a1','es-a2','es-b1','es-b2','es-c1','es-c2']},
  {id:'fr',mono:'FR',c:'#7B61FF',cd:'#5A41D9',cl:'#DDD6FF',n:{pt:'Francês p/ hispanofalantes',es:'Francés'},sub:['fr-a1','fr-a2','fr-b1','fr-b2','fr-c1','fr-c2']},
+ {id:'frbr',mono:'FR',c:'#3E5FA0',cd:'#2B4478',cl:'#D6E0F5',n:{pt:'Francês p/ brasileiros',es:'Francés para brasileños'},sub:['frbr-a1','frbr-a2','frbr-b1','frbr-b2','frbr-c1','frbr-c2']},
  {id:'de',mono:'DE',c:'#F5A400',cd:'#C28000',cl:'#FFEBB8',n:{pt:'Alemão',es:'Alemán'},sub:['de-a1','de-a2','de-b1','de-b2','de-c1','de-c2']},
  {id:'it',mono:'IT',c:'#F0508B',cd:'#C73068',cl:'#FFD5E4',n:{pt:'Italiano',es:'Italiano'},sub:['it-a1','it-a2','it-b1','it-b2','it-c1','it-c2']},
  {id:'ja',mono:'JA',c:'#D6336C',cd:'#A02351',cl:'#FFD9E6',n:{pt:'Japonês',es:'Japonés'},sub:['ja-a1','ja-a2','ja-b1','ja-b2','ja-c1','ja-c2']},
