@@ -1575,6 +1575,7 @@ const GROUPS={
       sub:['de-a1','de-a2','de-b1','de-b2','de-c1','de-c2']},
   itbr:{id:'itbr',ui:'pt',scarf:'#2E7D32',scene:'cv_it',name:{pt:'Italiano para brasileiros',es:'Italiano para brasileños'},flag:'IT → PT-BR',desc:{pt:'De Dante ao cinema italiano: italiano com cultura, do A1 ao C2.',es:'De Dante al cine italiano: italiano con cultura, de A1 a C2.'},sub:['it-a1','it-a2','it-b1','it-b2','it-c1','it-c2']},
   jabr:{id:'jabr',ui:'pt',scarf:'#D6336C',scene:'cv_jp',name:{pt:'Japonês para brasileiros',es:'Japonés para brasileños'},flag:'JA → PT-BR',desc:{pt:'Do Genji ao anime: japonês com cultura, do A1 ao C2.',es:'Del Genji al anime: japonés con cultura, de A1 a C2.'},sub:['ja-a1','ja-a2','ja-b1','ja-b2','ja-c1','ja-c2']},
+  kobr:{id:'kobr',ui:'pt',scarf:'#D6336C',scene:'cv_it',name:{pt:'Coreano para brasileiros',es:'Coreano para brasileños'},flag:'KO → PT-BR',desc:{pt:'Do Hangul ao K-pop: coreano com cultura, do A1 ao C2.',es:'Del hangul al K-pop: coreano con cultura, de A1 a C2.'},sub:['ko-a1','ko-a2','ko-b1','ko-b2','ko-c1','ko-c2']},
   nb:{id:'nb',ui:'pt',scarf:'#E0703A',scene:'cv_usa',
       name:{pt:'Neighbors',es:'Neighbors'},flag:'EN-US → PT-BR',
       desc:{pt:'Aprenda conversando com vizinhos: cada episódio é uma pessoa, uma cidade e uma situação real. Fala primeiro, sem gramática explícita.',es:'Aprende conversando con vecinos: cada episodio es una persona, una ciudad y una situación real.'},
@@ -2340,7 +2341,7 @@ function homeLangs(L,t){
    {id:'pt',flag:'🇧🇷',name:'Português',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^pt-/)}]},
    {id:'fr',flag:'🇫🇷',name:'Francês',rows:[{t:'Para hispanofalantes · A1 a C2',ids:by(/^fr-/)}]},
    {id:'de',flag:'🇩🇪',name:'Alemão',rows:[{t:'Regular · A1 a C2',ids:by(/^de-/)}]},
-   {id:'it',flag:'🇮🇹',name:'Italiano',rows:[{t:'Regular · A1 a C2',ids:by(/^it-/)}]},{id:'ja',flag:'🇯🇵',name:'Japonês',rows:[{t:'Regular · A1 a C2',ids:by(/^ja-/)},{t:'Neighbors · Kana e A1',ids:by(/^nbja-/),lab:1}]}];
+   {id:'it',flag:'🇮🇹',name:'Italiano',rows:[{t:'Regular · A1 a C2',ids:by(/^it-/)}]},{id:'ja',flag:'🇯🇵',name:'Japonês',rows:[{t:'Regular · A1 a C2',ids:by(/^ja-/)},{t:'Neighbors · Kana e A1',ids:by(/^nbja-/),lab:1}]},{id:'ko',flag:'🇰🇷',name:'Coreano',rows:[{t:'Regular · A1 a C2',ids:by(/^ko-/)}]}];
   const tile=(cid,wideAll)=>{const c=COURSES[cid];if(!c)return'';const n=EP_COUNT[cid]||0,d=doneCountFor(cid),m=cid.match(/([abc][12])$/i);const lv=m?m[1].toUpperCase():'';
     return `<button class="ltile${lv&&!wideAll?'':' wide'}" data-course="${cid}"><b>${wideAll?esc(c.name[L]):(lv||esc(c.name[L]))}</b><small>${d}/${n}</small><i style="width:${n?d/n*100:0}%"></i></button>`};
   return `<nav class="langidx">${LANGS.map(g=>`<a href="#" data-jump2="L-${g.id}">${g.flag} ${g.name}</a>`).join('')}</nav><div class="langs">${LANGS.map(g=>{const rows=g.rows.filter(r=>r.ids.some(i=>COURSES[i]));if(!rows.length)return'';const tot=rows.reduce((a,r)=>a+r.ids.reduce((x,i)=>x+(EP_COUNT[i]||0),0),0);
