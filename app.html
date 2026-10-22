@@ -3589,8 +3589,8 @@ function sfx(name){try{AC=AC||new (window.AudioContext||window.webkitAudioContex
 }catch(e){}}
 
 /* ================= QUADROS (17 por episódio) ================= */
-const FX_KIND={bridge:'story',vquiz:'practice',cult1:'story',cwords:'vocab',cquiz:'practice',cover:'story',scene:'dialog',words:'vocab',chunk:'vocab',grammar:'grammar',sound:'practice',soundlab:'practice',ctx:'practice',tapimg:'practice',build:'practice',choose:'practice',gap:'practice',trap:'practice',match:'practice',dictate:'speak',convo:'dialog',order:'practice',produce:'practice',wrap:'reward'};
-const FX_LABEL={bridge:'Da obra para a lição',vquiz:'Quiz de vocabulário',cult1:'Obra em cena',cwords:'Palavras da obra',cquiz:'Cultura em jogo',cover:'Abertura',scene:'Cena',words:'Palavras-imagem',chunk:'Frase pronta',grammar:'Regra em 10 segundos',sound:'Laboratório de sons',soundlab:'Laboratório de sons',ctx:'Contextos em áudio',tapimg:'Ouça e toque',build:'Monte a frase',choose:'Na conversa',gap:'Complete',trap:'Detetive de erros',match:'Jogo relâmpago',dictate:'Ouça e escreva',convo:'Continue a conversa',order:'Ordene o diálogo',produce:'Sua vez',wrap:'Revisão e próxima parada'};
+const FX_KIND={bridge:'story',fio:'story',vquiz:'practice',cult1:'story',cwords:'vocab',cquiz:'practice',cover:'story',scene:'dialog',words:'vocab',chunk:'vocab',grammar:'grammar',sound:'practice',soundlab:'practice',ctx:'practice',tapimg:'practice',build:'practice',choose:'practice',gap:'practice',trap:'practice',match:'practice',dictate:'speak',convo:'dialog',order:'practice',produce:'practice',wrap:'reward'};
+const FX_LABEL={bridge:'Da obra para a lição',fio:'Fio da história',vquiz:'Quiz de vocabulário',cult1:'Obra em cena',cwords:'Palavras da obra',cquiz:'Cultura em jogo',cover:'Abertura',scene:'Cena',words:'Palavras-imagem',chunk:'Frase pronta',grammar:'Regra em 10 segundos',sound:'Laboratório de sons',soundlab:'Laboratório de sons',ctx:'Contextos em áudio',tapimg:'Ouça e toque',build:'Monte a frase',choose:'Na conversa',gap:'Complete',trap:'Detetive de erros',match:'Jogo relâmpago',dictate:'Ouça e escreva',convo:'Continue a conversa',order:'Ordene o diálogo',produce:'Sua vez',wrap:'Revisão e próxima parada'};
 function fxBanLight(b){b=b||{};const k=b.sky||({times:'night',bridge:'dusk'})[b.s];return /^(night|night2|dusk)$/.test(k||'')?Object.assign({},b,{sky:'dawn'}):b}
 function fxKindBar(f,n){return `<span class="eyebrow">QUADRO ${n+1}/${P.e.fr.length} · ${FX_LABEL[f.k]||''}</span>`}
 function fxCul(f){if(!f.cul)return '';return `<div class="fx-cul"><span class="fx-cul-ic">${f.cul[0]}</span><div><small>Cultura em cena · ${esc(f.cul[1])}</small><span>${mk(f.cul[2])}</span></div></div>`}
@@ -3612,6 +3612,16 @@ function renderFx(n,st,lang){const f=P.e.fr[n];P.fx={n,cta:null};clearTimeout(fx
 function fxCta(s){const fx=P.fx;if(fx&&fx.cta){const r=fx.cta();if(r)return}
   if(P.steps[P.i]==='done')return;clearTimeout(fxSeq.t);const cur=$('#pstage .step');const advance=()=>{chime('step');P.i++;render()};if(cur){cur.classList.add('out');setTimeout(advance,260)}else advance()}
 const FXR={
+fio(f,st,n){
+  const e=P.e, tones=f.tones||[
+    ['natural','Natural','soa próximo e mantém a conversa fluida'],
+    ['clear','Esclarecedora','torna a intenção mais explícita'],
+    ['cautious','Cautelosa','reduz o risco de parecer brusco ou presumido']
+  ];
+  st.innerHTML=`<div class="step fx"><span class="eyebrow">QUADRO ${n+1}/${P.e.fr.length} · Fio da história</span><h2 class="fx-h">${esc(f.title||'Fio da história')}</h2><div class="recap cv-learn"><p><b>Arco atual:</b> ${esc(f.arc||e.s||'Prática de comunicação')}</p><p><b>Episódio anterior:</b> ${esc(f.previous||'A situação que trouxe você até aqui.')}</p><p><b>Situação atual:</b> ${esc(f.situation||e.t)}</p><p><b>Próxima fala:</b> ${esc(f.nextLine||'Escolha como responder.')}</p></div><h3 class="fx-h">Escolha o tom</h3><div class="fx-var">${tones.map((t,i)=>`<button class="fx-vr" data-tone="${i}"><div><b>${esc(t[1])}</b><small>${esc(t[2])}</small></div></button>`).join('')}</div><div id="fioback" class="recap cv-learn" hidden></div><div class="recap cv-learn"><b>Contexto pragmático</b><p>${esc(f.pragmatics||'Observe clareza, formalidade, diplomacia, intenção e adequação à situação.')}</p></div></div>`;
+  st.querySelectorAll('[data-tone]').forEach(b=>b.onclick=()=>{const t=tones[+b.dataset.tone],out=$('#fioback');out.hidden=false;out.innerHTML=`<b>Consequência comunicativa</b><p>${esc(t[2])}. Repare em como a escolha muda a interação antes de continuar.</p>`;st.querySelectorAll('[data-tone]').forEach(x=>x.classList.remove('on'));b.classList.add('on');sfx('pop');cta('Continuar',true,true)});
+  cta('Escolha uma resposta',false);say('Escolha o tom que você quer praticar.')
+},
 cover(f,st,n){const e=P.e;
   st.innerHTML=`<div class="step fx fx-cover">${fxKindBar(f,n)}<div class="fx-hero">${fxArt(f.art,.62)}</div>
   <div class="fx-titleblock"><span class="fx-ep">EP ${(P.e&&P.e.en)||P.idx+1} · ${esc(f.badge||'A1')}</span><h1>${esc(e.t)}</h1><p>${esc(f.sub||'')}</p></div>
