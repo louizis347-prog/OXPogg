@@ -5,12 +5,12 @@ const K='pogglot:onb';
 const seen=()=>{try{return !!localStorage.getItem(K)}catch(e){return true}};
 const mark=()=>{try{localStorage.setItem(K,'1')}catch(e){}};
 const LANGS=[
- ['en','🇺🇸','Inglês','en-a1','en-a2'],
- ['es','🇪🇸','Espanhol','es-a1','es-a2'],
- ['fr','🇫🇷','Francês','fr','fr'],
- ['de','🇩🇪','Alemão','de','de'],
- ['it','🇮🇹','Italiano','it','it'],
- ['ja','🇯🇵','Japonês','nbja-a1','nbja-a2']];
+ ['en','🇺🇸','Inglês','en-a1','en-a2','nbeng-a1'],
+ ['es','🇪🇸','Espanhol','es-a1','es-a2','nbes-a1'],
+ ['fr','🇫🇷','Francês','fr-a1','fr-a2','nbfr-a1'],
+ ['de','🇩🇪','Alemão','de-a1','de-a2','nbde-a1'],
+ ['it','🇮🇹','Italiano','it-a1','it-a2','nbit-a1'],
+ ['ja','🇯🇵','Japonês','ja-a1','ja-a2','nbja-a1']];
 const LEVELS=[['zero','🌱','Do zero','Nunca estudei ou quase nada'],['pouco','🌿','Já sei um pouco','Entendo frases simples']];
 const GOALS=[[10,'☕','5 min por dia','Leve, para criar o hábito'],[20,'🚶','10 min por dia','Um episódio por dia'],[40,'🏃','20 min por dia','Ritmo de quem quer fluência']];
 const OBJECTIVES=[['💬','Conversar','Quero me virar em situações reais'],['🧭','Viajar','Quero viajar com mais confiança'],['🎓','Estudar ou trabalhar','Quero alcançar uma meta acadêmica ou profissional'],['🎬','Cultura','Quero aprender por filmes, livros e histórias']];
@@ -49,7 +49,7 @@ function run(){
   function s5(){box.innerHTML=dots(5)+'<h2>Como você prefere aprender?</h2><p>Você poderá mudar essa escolha depois.</p><div class="ob-opts">'+STYLES.map((g,i)=>`<button class="ob-opt" data-i="${i}"><i>${g[0]}</i><span><b>${g[1]}</b><small>${g[2]}</small></span></button>`).join('')+'</div>'+skip;bind(i=>{pick.f=STYLES[i];start()})}
   function start(){
     try{localStorage.setItem('pogglot:goal',JSON.stringify({xp:pick.g[0]}));localStorage.setItem('pogglot:learningProfile',JSON.stringify({language:pick.l[0],level:pick.v?'A2':'A1',objective:pick.o[1],dailyMinutes:pick.g[0]===10?5:pick.g[0],preference:pick.f[1]}))}catch(e){}
-    const cid=pick.v?pick.l[4]:pick.l[3];
+    const cid=pick.f&&pick.f[1]==='Conversação'&&pick.l[5]?pick.l[5]:(pick.v?pick.l[4]:pick.l[3]);
     box.innerHTML=dots(3)+'<h2>Tudo pronto! 🎉</h2><p>Seu primeiro episódio é curto e já conta para a sua sequência.</p><button class="ob-go" data-go1>Começar agora</button>';
     box.querySelector('[data-go1]').onclick=async()=>{
       close();

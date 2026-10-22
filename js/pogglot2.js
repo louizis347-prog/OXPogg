@@ -170,7 +170,11 @@ const LV_ICON={A1:'abc',A2:'chat',B1:'map',B2:'bulb',C1:'scroll',C2:'crown'};
 const kindCache=new WeakMap();
 function kindOf(e){let k=kindCache.get(e);if(!k){k=PC().kindInfo((e.a||{}).k);kindCache.set(e,k)}return k}
 function kindLabel(e){const k=kindOf(e),g=PC().GROUPS[k.g];return g?g[L0()]:k.label}
-const firstCourse=()=>ST.lastCourse&&COURSES[ST.lastCourse]?ST.lastCourse:'en-a1';
+const firstCourse=()=>{
+  if(ST.lastCourse&&COURSES[ST.lastCourse])return ST.lastCourse;
+  try{const p=JSON.parse(localStorage.getItem('pogglot:learningProfile')||'null');if(p&&p.preference==='Conversação'&&COURSES['nbeng-a1'])return'nbeng-a1';}catch(e){}
+  return'en-a1';
+};
 function nextIdx(cid){const eps=EP[cid]||[];return eps.findIndex(e=>!e.pl&&!isDone(cid,e))}
 function loadCourse(cid,fn){return navLoading(()=>ensureLangLoaded(cid).then(fn))}
 
