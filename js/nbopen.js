@@ -197,9 +197,11 @@ function buildThread(e,d){
   return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,skill,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||''};
 }
 function buildReply(e,d){
-  const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],answer=d.lines.find(l=>l[0]==='You')||d.lines[1];
+  const li=d.lines.findIndex((l,i)=>i>0&&l[0]&&l[0]!=='You');
+  const line=li>=0?d.lines[li]:d.lines[0],ai=d.lines.findIndex(l=>l[0]==='You'),answer=ai>=0?d.lines[ai]:d.lines[1];
   if(!line||!answer||!answer[1])return null;
-  return {k:'nbreply',g:d.hero.g||['#6C3FEF','#9a7bff'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4)};
+  const reaction=d.lines.slice(Math.max(ai+1,0)).find(l=>l[0]&&l[0]!=='You')||null;
+  return {k:'nbreply',g:d.hero.g||['#6C3FEF','#9a7bff'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4),reaction:reaction?reaction[1]:'',reactionTr:reaction?reaction[2]||'':'',reactionWho:reaction?reaction[0]:'',consequence:'A resposta muda o próximo turno: observe se o interlocutor confirma, pergunta, aceita ou pede outra coisa.'};
 }
 function buildReview(e){
   const prev=priorEpisode(e);if(!prev)return null;const pf=(prev.fr||[]).find(f=>f&&f.k==='nbchat');if(!pf||!pf.lines)return null;
@@ -391,7 +393,7 @@ FXR.nbreply=function(f,st,n){
   st.innerHTML='<div class="step fx nbo nbreply" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-grid"><div class="nbo-l"><span class="nbo-sec">Sua vez</span><h2 class="nbo-q">Responda sem copiar</h2><p class="nbo-topic">'+H(f.situation)+'</p><div class="nbo-quote"><b>'+H(f.name||'A outra pessoa')+'</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div></div><div class="nbo-r"><section class="nbo-card"><label class="nbo-sec" for="nbreplyin">O que você diria?</label><textarea id="nbreplyin" rows="4" placeholder="Escreva ou fale em inglês…" style="display:block;width:100%;box-sizing:border-box;margin:10px 0;padding:12px;border:2px solid #e6e1f7;border-radius:14px;font:600 16px/1.4 system-ui;resize:vertical"></textarea><p class="nbo-hint">Inclua pelo menos uma ideia da situação. Depois compare com um modelo possível.</p><div class="nbo-fb" id="nbreplyfb" aria-live="polite"></div></section></div></div></div>';
   const root=q('.nbreply',st),inp=q('#nbreplyin',st);const ready=()=>cta(checked?t.cont:'Ver meu modelo',checked||!!String(inp.value||'').trim(),true);
   inp.oninput=()=>{if(!checked)ready()};
-  P.fx.cta=()=>{if(!checked){checked=true;const val=String(inp.value||'').toLowerCase();const hits=(f.tokens||[]).filter(x=>val.includes(String(x).toLowerCase())).length;const fb=q('#nbreplyfb',st);fb.innerHTML='<p class="nbo-tr"><b>Modelo possível:</b> '+H(f.model)+'</p><p class="nbo-why">'+H(f.modelTr)+'<br>Você retomou '+hits+' palavra(s)-chave. A resposta pode ser diferente: o objetivo é comunicar a intenção.</p>';fb.className='nbo-fb';inp.disabled=true;P.score++;say('Muito bem. Compare sua intenção com o modelo e tente dizer a sua resposta em voz alta.','happy');ready();fit(root);return true}return false};
+  P.fx.cta=()=>{if(!checked){checked=true;const val=String(inp.value||'').toLowerCase();const hits=(f.tokens||[]).filter(x=>val.includes(String(x).toLowerCase())).length;const fb=q('#nbreplyfb',st);fb.innerHTML='<p class="nbo-tr"><b>Modelo possível:</b> '+H(f.model)+'</p><p class="nbo-why">'+H(f.modelTr)+'<br>Você retomou '+hits+' palavra(s)-chave. A resposta pode ser diferente: o objetivo é comunicar a intenção.</p>'+(f.reaction?'<div class="nbo-reaction"><b>Consequência comunicativa · '+H(f.reactionWho||'interlocutor')+':</b><br>'+H(f.reaction)+'<small>'+H(f.reactionTr||'')+'</small><p>'+H(f.consequence||'A próxima fala depende da sua intenção.')+'</p></div>':'');fb.className='nbo-fb';inp.disabled=true;P.score++;say('Muito bem. Compare sua intenção com o modelo e tente dizer a sua resposta em voz alta.','happy');ready();fit(root);return true}return false};
   ready();say('Agora é você quem conduz a conversa.');fitSoon(root)};
 
 /* ---------- 6 · revisão espaçada ---------- */
