@@ -2767,8 +2767,12 @@ function buildEpisodeReview(cid,idx){
   const rows=items.map((x,i)=>{const wrong=items[(i+1)%items.length][1];return {word:String(x[0]),answer:String(x[1]),options:[String(x[1]),String(wrong)].filter((v,j,a)=>a.indexOf(v)===j)};});
   return {title:'Revisão-relâmpago',rows};
 }
-function play(cid,idx){if(window.PogBilling&&!PogBilling.allow(cid,idx))return;const e=EP[cid][idx],c=COURSES[cid];
+function play(cid,idx){if(window.PogBilling&&!PogBilling.allow(cid,idx))return;const e=EP[cid]&&EP[cid][idx],c=COURSES[cid];
+  if(!e||!c){if(cid&&COURSES[cid])course(cid);return;}
   try{if(window.PogCloud)PogCloud.logEpisode('start',cid,e.n,0)}catch(_){}
+  // Alguns bridges montam quadros em tempo de execução e precisam do curso atual já definido.
+  // O contexto provisório evita que o primeiro episódio perca esses quadros por P ainda estar nulo.
+  P={cid,idx,e,c};
   fxBridge(e);
   ST.lastCourse=cid;ST.lastEp=e.n;save();
   const mid=[...(e.dl?['dialog']:[]),...(e.v?(vocabPages(e)[1].length?['vocab','vocab2']:['vocab']):[]),...(e.ff?['ff']:[]),...(e.rd?['reading']:[]),...(e.rd2?['reading2']:[]),...(e.rd3?['reading3']:[]),...(e.cq?['comp']:[]),...noticeChunks(e).map((_,i)=>'notice'+i),...(e.gpr?['noticepr']:[]),...(e.pron?['pron']:[]),...(e.pronSpeak?['pronspeak']:[]),...(e.vb?['verbs']:[]),...(e.vbd?['vbdialog']:[]),...(e.pv?['phrasal']:[]),...(e.ex?['expr']:[]),...(e.reg?['register']:[]),...(e.nu?['nuance']:[]),...(e.exg?['exprg']:[]),...(e.ctx?e.ctx.flatMap((c,i)=>['ctx'+i,'ctxq'+i,...(c.q2?['ctxq2_'+i]:[])]):[]),...(e.shadow?['shadow0','shadow1']:[]),...(e.ask?e.ask.map((_,i)=>'ask'+i):(e.cp?['convo']:[])),...(e.choice?['choice']:[]),...(e.dm?['discourse']:[]),...(e.q&&e.q[0]?['q0']:[]),...(e.b?buildItems(e).map((_,i)=>'build'+i):[]),...(e.x?['gap']:[]),...(e.q&&e.q[1]?['q1']:[]),...(e.fg?['fill']:[]),...(e.pg?['pg0','pg1','pg2','pg3']:[]),...(e.hm?['hangman']:[])];
