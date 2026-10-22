@@ -3838,14 +3838,14 @@ function fxCta(s){const fx=P.fx;if(fx&&fx.cta){const r=fx.cta();if(r)return}
   if(P.steps[P.i]==='done')return;clearTimeout(fxSeq.t);const cur=$('#pstage .step');const advance=()=>{chime('step');P.i++;render()};if(cur){cur.classList.add('out');setTimeout(advance,260)}else advance()}
 const FXR={
 fio(f,st,n){
-  const e=P.e, tones=f.tones||[
+  const e=P.e, tones=f.choices||f.tones||[
     ['natural','Natural','soa próximo e mantém a conversa fluida'],
     ['clear','Esclarecedora','torna a intenção mais explícita'],
     ['cautious','Cautelosa','reduz o risco de parecer brusco ou presumido']
   ];
-  st.innerHTML=`<div class="step fx">${fxKindBar(f,n)}<h2 class="fx-h">${esc(f.title||'Fio da história')}</h2><div class="recap cv-learn"><p><b>Arco atual:</b> ${esc(f.arc||e.s||'Prática de comunicação')}</p><p><b>Episódio anterior:</b> ${esc(f.previous||'A situação que trouxe você até aqui.')}</p><p><b>Situação atual:</b> ${esc(f.situation||e.t)}</p><p><b>Próxima fala:</b> ${esc(f.nextLine||'Escolha como responder.')}</p></div><h3 class="fx-h">Escolha o tom</h3><div class="fx-var">${tones.map((t,i)=>`<button class="fx-vr" data-tone="${i}"><div><b>${esc(t[1])}</b><small>${esc(t[2])}</small></div></button>`).join('')}</div><div id="fioback" class="recap cv-learn" hidden></div><div class="recap cv-learn"><b>Contexto pragmático</b><p>${esc(f.pragmatics||'Observe clareza, formalidade, diplomacia, intenção e adequação à situação.')}</p></div></div>`;
-  st.querySelectorAll('[data-tone]').forEach(b=>b.onclick=()=>{const t=tones[+b.dataset.tone],out=$('#fioback');out.hidden=false;out.innerHTML=`<b>Consequência comunicativa</b><p>${esc(t[2])}. Repare em como a escolha muda a interação antes de continuar.</p>`;st.querySelectorAll('[data-tone]').forEach(x=>x.classList.remove('on'));b.classList.add('on');sfx('pop');cta('Continuar',true,true)});
-  cta('Escolha uma resposta',false);say('Escolha o tom que você quer praticar.')
+  st.innerHTML=`<div class="step fx">${fxKindBar(f,n)}<h2 class="fx-h">${esc(f.title||'Fio da história')}</h2><div class="recap cv-learn"><p><b>Arco atual:</b> ${esc(f.arc||e.s||'Prática de comunicação')}</p><p><b>Episódio anterior:</b> ${esc(f.previous||'A situação que trouxe você até aqui.')}</p><p><b>Situação atual:</b> ${esc(f.situation||e.t)}</p><p><b>Próxima fala:</b> ${esc(f.nextLine||'Escolha como responder.')}</p></div><h3 class="fx-h">Sua jogada nesta situação</h3><p class="fx-hint">Escolha uma resposta e observe o que ela provoca na conversa.</p><div class="fx-var">${tones.map((t,i)=>`<button class="fx-vr" data-tone="${i}"><div><b>${esc(t[1])}</b><small>${esc(t[2])}</small></div></button>`).join('')}</div><div id="fioback" class="recap cv-learn" hidden></div><div class="recap cv-learn"><b>Contexto pragmático</b><p>${esc(f.pragmatics||'Observe clareza, formalidade, diplomacia, intenção e adequação à situação.')}</p></div></div>`;
+  st.querySelectorAll('[data-tone]').forEach(b=>b.onclick=()=>{const t=tones[+b.dataset.tone],out=$('#fioback');out.hidden=false;out.innerHTML=`<b>O que muda na conversa</b><p>${esc(t[2])} Repare na reação seguinte antes de continuar.</p>`;st.querySelectorAll('[data-tone]').forEach(x=>x.classList.remove('on'));b.classList.add('on');sfx('pop');cta('Continuar',true,true)});
+  cta('Teste uma resposta',false);say('Escolha uma resposta para esta situação e observe a consequência.')
 },
 cover(f,st,n){const e=P.e;
   st.innerHTML=`<div class="step fx fx-cover">${fxKindBar(f,n)}<div class="fx-hero">${fxArt(f.art,.62)}</div>
