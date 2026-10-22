@@ -276,8 +276,47 @@ function build(e){
   bridges.forEach(x=>out.push(x));
   return out.length?out:null}
 
+/* ---------- contrato de densidade por quadro ----------
+   O inglês de referência usa 11 falas, 6 entradas de linguagem e 5 itens
+   nas atividades principais. Os cursos podem ter conteúdo próprio, mas não
+   devem perder oportunidades de prática quando um bloco antigo veio curto. */
+function normalizeNeighborContent(e){
+  if(!e||!Array.isArray(e.fr))return;
+  const frames=e.fr, chats=frames.filter(f=>f&&f.k==='nbchat'&&Array.isArray(f.lines));
+  const lines=chats.flatMap(f=>f.lines||[]).filter(l=>l&&l[1]);
+  const vf=frames.find(f=>f&&f.k==='nbvocab'), ff=frames.find(f=>f&&f.k==='nbfind');
+  const vocab=[];const seenV=new Set();
+  const addV=v=>{if(!v)return;let w,tr,ic;if(Array.isArray(v)){w=v[0];ic=v[1]||'💬';tr=v[2]||''}else{w=v.w||v.word;ic=v.ic||'💬';tr=v.pt||v.tr||v.s||''}w=String(w||'').trim();if(!w||seenV.has(w.toLowerCase()))return;seenV.add(w.toLowerCase());vocab.push([w,ic,tr])};
+  (vf&&vf.items||[]).forEach(addV);(e.v||[]).forEach(addV);(ff&&ff.items||[]).forEach(addV);
+  // Quando a ficha antiga tem só quatro palavras, recuperamos um quinto termo
+  // do diálogo do próprio episódio, mantendo a língua-alvo e a tradução disponível.
+  lines.forEach(l=>{String(l[1]).split(/\s+/).map(x=>x.replace(/^[^\p{L}]+|[^\p{L}À-ÿ'-]+$/gu,'')).filter(x=>x.length>=4).slice(0,4).forEach(w=>addV([w,'💬',l[2]||'']))});
+  const altWords=()=>vocab.map(v=>v[0]).filter(Boolean);
+  const optsFor=(right)=>{const pool=[...new Set(altWords().filter(x=>x!==right))];while(pool.length<2)pool.push(pool.length?'outra opção':'uma opção');return [right,pool[0],pool[1]]};
+  frames.forEach(f=>{
+    if(!f||!Array.isArray(f.items))return;
+    if((f.k==='nbvocab'||f.k==='nbfind')&&f.items.length<5){
+      for(const v of vocab){if(f.items.length>=5)break;const w=v[0];if(f.items.some(x=>String(Array.isArray(x)?x[0]:(x&&x.w)||'').toLowerCase()===w.toLowerCase()))continue;f.items.push(f.k==='nbfind'?[w,v[1]||'💬',v[2]||'']: [w,v[1]||'💬',v[2]||'']);}
+    }
+    if(f.k==='nbctx'&&f.items.length<5){
+      const base=f.items[0]||{ic:'🎯',sit:'Complete a fala: “____”',opts:['A','B','C'],a:0,why:''};
+      let i=0;while(f.items.length<5&&i<vocab.length){const w=vocab[i++][0],oo=optsFor(w);f.items.push({ic:base.ic||'🎯',sit:String(base.sit||'').replace(/“[^”]*”|"[^"]*"/,'“'+w+'”'),opts:oo,a:0,why:(w+' · '+(vocab.find(v=>v[0]===w)||[])[2]||'')});}
+      while(f.items.length<5){const n=f.items.length+1;f.items.push({ic:base.ic||'🎯',sit:String(base.sit||'Complete a fala')+' · '+n,opts:(base.opts||['A','B','C']).slice(0,3),a:base.a||0,why:base.why||''});}
+    }
+    if(f.k==='nbtap'){
+      const target=e.rev?12:6;
+      const pool=[];const addQ=x=>{if(!x||!x[1])return;const key=String(x[1]).toLowerCase();if(pool.some(y=>String(y[1]).toLowerCase()===key))return;pool.push(x)};
+      lines.forEach(addQ);(frames.find(x=>x&&x.k==='nbtrip')?.stops||[]).forEach(x=>{if(x&&x.ln)addQ([x.nm||'',x.ln[0],x.ln[1]||''])});
+      const existing=f.items.slice();let i=0;
+      while(f.items.length<target&&i<pool.length){const l=pool[i++],right=l[1],old=existing[f.items.length%Math.max(1,existing.length)]||{};const oo=(old.opts||[]).map(x=>Array.isArray(x)?x:x).filter(Boolean);const choices=[];const addO=x=>{const val=Array.isArray(x)?x[1]:x;if(val&&!choices.some(y=>String(y[1]||y)===String(val)))choices.push(Array.isArray(x)?x:["💬",String(val)])};addO(["💬",right]);oo.forEach(addO);for(const z of pool){if(choices.length>=3)break;if(z[1]!==right)addO(["💬",z[1]])}while(choices.length<3)choices.push(["💬",'…']);f.items.push({q:l[1],pt:l[2]||'',opts:choices.slice(0,3),a:0,line:i-1,why:l[1]});}
+      while(f.items.length<target&&existing.length){const old=existing[f.items.length%existing.length];f.items.push(Object.assign({},old,{q:String(old.q||'Pergunta')+' · '+(f.items.length+1)}));}
+    }
+  });
+}
 function inject(e){
-  if(!e||!e.fr||e._nbo)return;e._nbo=1;
+  if(!e||!e.fr||e._nbo)return;
+  normalizeNeighborContent(e);
+  e._nbo=1;
   if(window.POG_NBOPEN===false)return;
   if(e.fr.some(f=>f&&/^nbopen/.test(f.k)))return;
   let hi=e.fr.findIndex(f=>f&&f.k==='nbhero');
