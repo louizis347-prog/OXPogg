@@ -23,7 +23,7 @@
 
   /* Pôster do vizinho: cena à esquerda, texto à direita */
   #player .step.nbx .nb-poster{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:22px;row-gap:10px;align-content:center;align-items:center;min-height:0;padding:16px 20px;border-radius:26px}
-  #player .step.nbx .nb-poster>.nb-scene{grid-column:1;grid-row:1 / span 5;margin:0;aspect-ratio:320/172;max-height:calc(100dvh - 190px);width:100%;border-radius:20px}
+  #player .step.nbx .nb-poster>.nb-scene{grid-column:1;grid-row:1 / span 5;margin:0;aspect-ratio:320/172;max-height:calc(100dvh - 140px);width:100%;border-radius:20px;overflow:hidden}
   #player .step.nbx .nb-poster>.nb-big{grid-column:1;grid-row:1 / span 5;margin:0}
   #player .step.nbx .nb-poster>:not(.nb-scene):not(.nb-big):not(.nb-no):not(.nb-float){grid-column:2;margin:0}
   #player .step.nbx .nb-poster>.nb-no{left:30px;top:28px}
@@ -77,7 +77,7 @@
 }
 @media (max-width:759px) and (max-height:760px){
   /* a cena do pôster é só enfeite: some e o selo "Vizinho nº" vai para o fluxo */
-  #player .step.nbx .nb-poster>.nb-scene{display:none}
+  #player .step.nbx .nb-poster>.nb-scene{display:block;min-height:110px;max-height:150px;overflow:hidden}
   #player .step.nbx .nb-poster>.nb-no{position:static;display:inline-block;margin-bottom:8px}
   #player .step.nbx .nb-poster>.nb-big{font-size:60px;margin:4px 0}
 }

@@ -45,8 +45,8 @@
 .nbo-fb .feedback>div{font-size:13.5px;line-height:1.35}
 /* leitura */
 .nbo-fig{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 8px 22px rgba(40,30,90,.12)}
-.nbo-art{aspect-ratio:16/9;max-height:calc(100dvh - 330px);width:100%;overflow:hidden;background:linear-gradient(135deg,var(--g1),var(--g2));display:grid}
-.nbo-art svg,.nbo-art img{width:100%;height:100%;display:block;object-fit:cover}
+.nbo-art{aspect-ratio:4/3;min-height:190px;max-height:calc(100dvh - 250px);width:100%;overflow:hidden;background:linear-gradient(135deg,var(--g1),var(--g2));display:grid}
+.nbo-art svg,.nbo-art img{width:100%;height:100%;min-height:190px;display:block;object-fit:contain}
 .nbo-fig figcaption{padding:6px 12px;font:700 12px/1.3 system-ui;color:#6a6488}
 .nbo-pull{border-left:5px solid #f0a500;background:#fff8dc;border-radius:0 14px 14px 0;padding:9px 13px;color:#3a2f00}
 .nbo-pull b{display:block;font:800 16px/1.25 Georgia,serif}.nbo-pull em{display:block;font:600 12.5px/1.3 system-ui;font-style:normal;opacity:.75;margin-top:2px}.nbo-pull small{display:block;font:800 10.5px/1 system-ui;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-top:5px}
@@ -87,7 +87,7 @@
   .nbo-opts{gap:5px}.nbo-opt{padding:6px 9px;font-size:13.5px;border-radius:12px}.nbo-opt i{width:22px;height:22px;font-size:12px}
   .nbo1 .nbo-opts li:nth-child(n+5){display:none}
   .nbo-fb{min-height:40px;font-size:12.5px}
-  .nbo-art{aspect-ratio:auto;height:78px;max-height:none}
+  .nbo-art{aspect-ratio:4/3;height:150px;min-height:150px;max-height:none}.nbo-art svg,.nbo-art img{min-height:150px}
   .nbo-fig figcaption{display:none}
   .nbo-pull{padding:7px 11px}.nbo-pull b{font-size:14px}.nbo-pull em,.nbo-pull small{display:none}
   .nbo-text{font-size:15px;line-height:1.5}.nbo-hint{display:none}
@@ -101,7 +101,7 @@
   .nbo-art{max-height:calc(100dvh - 300px)}
 }
 
-.nbo-t4 .nbo-fig,.nbo-t4 .nbo-pull{display:none}
+.nbo-t4 .nbo-fig{display:block}.nbo-t4 .nbo-pull{display:none}.nbo-t4 .nbo-art{min-height:150px}
 .nbo-tag{white-space:nowrap;overflow:hidden}
 @media (max-width:759px){
   .nbo-tags{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
