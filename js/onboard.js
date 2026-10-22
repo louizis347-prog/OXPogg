@@ -13,6 +13,8 @@ const LANGS=[
  ['ja','🇯🇵','Japonês','nbja-a1','nbja-a2']];
 const LEVELS=[['zero','🌱','Do zero','Nunca estudei ou quase nada'],['pouco','🌿','Já sei um pouco','Entendo frases simples']];
 const GOALS=[[10,'☕','5 min por dia','Leve, para criar o hábito'],[20,'🚶','10 min por dia','Um episódio por dia'],[40,'🏃','20 min por dia','Ritmo de quem quer fluência']];
+const OBJECTIVES=[['💬','Conversar','Quero me virar em situações reais'],['🧭','Viajar','Quero viajar com mais confiança'],['🎓','Estudar ou trabalhar','Quero alcançar uma meta acadêmica ou profissional'],['🎬','Cultura','Quero aprender por filmes, livros e histórias']];
+const STYLES=[['🗣️','Conversação','Priorize o curso Neighbors'],['📚','Estrutura','Priorize o curso Regular'],['🌎','Uma combinação','Comece pelo Regular e experimente o Neighbors']];
 const css=`#onb{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(30,20,70,.55);backdrop-filter:blur(6px);font-family:var(--f-body,system-ui,sans-serif)}
 #onb .ob{width:min(460px,100%);max-height:100%;overflow:auto;background:#fff;border-radius:24px;padding:22px 20px 18px;box-shadow:0 24px 60px rgba(30,20,70,.35);text-align:center}
 #onb .ob-dots{display:flex;justify-content:center;gap:6px;margin-bottom:12px}
@@ -36,15 +38,17 @@ function run(){
   const st=document.createElement('style');st.textContent=css;root.appendChild(st);
   const box=document.createElement('div');box.className='ob';root.appendChild(box);
   document.body.appendChild(root);
-  const dots=n=>`<div class="ob-dots">${[1,2,3].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</div>`;
+  const dots=n=>`<div class="ob-dots">${[1,2,3,4,5].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</div>`;
   const skip='<button class="ob-skip" data-skip>Agora não, quero explorar sozinho</button>';
   const close=()=>{mark();root.remove()};
   const bind=fn=>{box.querySelectorAll('[data-i]').forEach(b=>b.onclick=()=>fn(+b.dataset.i));const s=box.querySelector('[data-skip]');if(s)s.onclick=close};
   function s1(){box.innerHTML=dots(1)+'<h2>O que você quer aprender?</h2><p>Você pode mudar quando quiser.</p><div class="ob-opts two">'+LANGS.map((l,i)=>`<button class="ob-opt" data-i="${i}"><i>${l[1]}</i><b>${l[2]}</b></button>`).join('')+'</div>'+skip;bind(i=>{pick.l=LANGS[i];s2()})}
   function s2(){box.innerHTML=dots(2)+`<h2>Qual é o seu nível em ${pick.l[2]}?</h2><p>Sem prova. É só para começar no ponto certo.</p><div class="ob-opts">`+LEVELS.map((l,i)=>`<button class="ob-opt" data-i="${i}"><i>${l[1]}</i><span><b>${l[2]}</b><small>${l[3]}</small></span></button>`).join('')+'</div>'+skip;bind(i=>{pick.v=i;s3()})}
-  function s3(){box.innerHTML=dots(3)+'<h2>Quanto tempo por dia?</h2><p>Combinamos uma meta e começamos a sua sequência hoje.</p><div class="ob-opts">'+GOALS.map((g,i)=>`<button class="ob-opt" data-i="${i}"><i>${g[1]}</i><span><b>${g[2]}</b><small>${g[3]}</small></span></button>`).join('')+'</div>'+skip;bind(i=>{pick.g=GOALS[i];start()})}
+  function s3(){box.innerHTML=dots(3)+'<h2>Qual é o seu objetivo?</h2><p>Isso ajusta as recomendações da sua trilha.</p><div class="ob-opts">'+OBJECTIVES.map((g,i)=>`<button class="ob-opt" data-i="${i}"><i>${g[0]}</i><span><b>${g[1]}</b><small>${g[2]}</small></span></button>`).join('')+'</div>'+skip;bind(i=>{pick.o=OBJECTIVES[i];s4()})}
+  function s4(){box.innerHTML=dots(4)+'<h2>Quanto tempo por dia?</h2><p>Combinamos uma meta realista para começar.</p><div class="ob-opts">'+GOALS.map((g,i)=>`<button class="ob-opt" data-i="${i}"><i>${g[1]}</i><span><b>${g[2]}</b><small>${g[3]}</small></span></button>`).join('')+'</div>'+skip;bind(i=>{pick.g=GOALS[i];s5()})}
+  function s5(){box.innerHTML=dots(5)+'<h2>Como você prefere aprender?</h2><p>Você poderá mudar essa escolha depois.</p><div class="ob-opts">'+STYLES.map((g,i)=>`<button class="ob-opt" data-i="${i}"><i>${g[0]}</i><span><b>${g[1]}</b><small>${g[2]}</small></span></button>`).join('')+'</div>'+skip;bind(i=>{pick.f=STYLES[i];start()})}
   function start(){
-    try{localStorage.setItem('pogglot:goal',JSON.stringify({xp:pick.g[0]}))}catch(e){}
+    try{localStorage.setItem('pogglot:goal',JSON.stringify({xp:pick.g[0]}));localStorage.setItem('pogglot:learningProfile',JSON.stringify({language:pick.l[0],level:pick.v?'A2':'A1',objective:pick.o[1],dailyMinutes:pick.g[0]===10?5:pick.g[0],preference:pick.f[1]}))}catch(e){}
     const cid=pick.v?pick.l[4]:pick.l[3];
     box.innerHTML=dots(3)+'<h2>Tudo pronto! 🎉</h2><p>Seu primeiro episódio é curto e já conta para a sua sequência.</p><button class="ob-go" data-go1>Começar agora</button>';
     box.querySelector('[data-go1]').onclick=async()=>{
