@@ -39,6 +39,7 @@ const LANGS=[
  {id:'it',mono:'IT',c:'#F0508B',cd:'#C73068',cl:'#FFD5E4',n:{pt:'Italiano',es:'Italiano'},sub:['it-a1','it-a2','it-b1','it-b2','it-c1','it-c2']},
  {id:'ja',mono:'JA',c:'#D6336C',cd:'#A02351',cl:'#FFD9E6',n:{pt:'Japonês',es:'Japonés'},sub:['ja-a1','ja-a2','ja-b1','ja-b2','ja-c1','ja-c2']},
  {id:'ko',mono:'KO',c:'#4F7CFF',cd:'#2F58D6',cl:'#D9E4FF',n:{pt:'Coreano',es:'Coreano'},sub:['ko-a1','ko-a2','ko-b1','ko-b2','ko-c1','ko-c2']},
+ {id:'zh',mono:'ZH',c:'#C62828',cd:'#8E1B1B',cl:'#FFD9D6',n:{pt:'Mandarim',es:'Chino mandarín'},sub:['zhbr-a1','zhbr-a2','zhbr-b1','zhbr-b2','zhbr-c1','zhbr-c2']},
  {id:'enes',mono:'EN',c:'#2E9E6A',cd:'#1F7A4F',cl:'#D2F2E0',n:{pt:'Inglês p/ hispanofalantes',es:'Inglés para hispanohablantes'},sub:['enesh-a1','enesh-a2','enesh-b1','enesh-b2','enesh-c1','enesh-c2']},
  {id:'nb',mono:'NB',c:'#E0703A',cd:'#B5521F',cl:'#FFE0CE',n:{pt:'Neighbors · Inglês',es:'Neighbors · Inglés'},sub:['nb-a1','nb-a2','nb-b1','nb-b2','nb-c1','nb-c2']},
  {id:'nbes',mono:'NB',c:'#D9467A',cd:'#A82D5C',cl:'#FFDCE8',n:{pt:'Neighbors · Espanhol',es:'Neighbors · Español'},sub:['nbes-a1','nbes-a2','nbes-b1','nbes-b2','nbes-c1','nbes-c2']},
