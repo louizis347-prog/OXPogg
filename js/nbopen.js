@@ -7,7 +7,7 @@
 if(window.POG_NBOPEN===false)return;
 if(typeof FXR==='undefined'||typeof FX_KIND==='undefined')return;
 FX_KIND.nbopen1='story';FX_KIND.nbopen2='story';FX_KIND.nbopen3='practice';FX_KIND.nbfluency='story';FX_KIND.nbscene='story';FX_KIND.nbreply='speak';FX_KIND.nbreview='practice';FX_KIND.nbchoice='practice';FX_KIND.nbprag='story';
-FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';FX_LABEL.nbfluency='Linguagem natural';FX_LABEL.nbscene='Fio da história';FX_LABEL.nbreply='Sua vez';FX_LABEL.nbreview='Revisão do Neighbors';FX_LABEL.nbchoice='Escolha o tom';FX_LABEL.nbprag='Como isso soa';FX_LABEL.nbmilestone='Marco do arco';FX_LABEL.nbreflection='Fechamento do arco';
+FX_LABEL.nbopen1='Abertura';FX_LABEL.nbopen2='Leitura';FX_LABEL.nbopen3='Compreensão e palavra certa';FX_LABEL.nbfluency='Linguagem natural';FX_LABEL.nbscene='Fio da história';FX_LABEL.nbreply='Sua vez';FX_LABEL.nbreview='Revisão do Neighbors';FX_LABEL.nbchoice='Jogada da conversa';FX_LABEL.nbprag='Como isso soa';FX_LABEL.nbmilestone='Marco do arco';FX_LABEL.nbreflection='Fechamento do arco';
 FX_KIND.nbmilestone='reward';FX_KIND.nbreflection='reward';FX_KIND.nbbridge='story';
 const q=(s,r)=>(r||document).querySelector(s);
 const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -210,10 +210,16 @@ function buildReview(e){
   return {k:'nbreview',g:['#00B894','#0984E3'],from:prev.t,episode:e.n||'',rows:rows.map((l,i)=>{const opts=[l[2],...(wrong.filter(x=>x!==l[2]).slice(i,i+2))];return {en:l[1],pt:l[2],opts:[...new Set(opts)].slice(0,3)}})};
 }
 function buildChoice(e,d){
-  const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],model=d.lines.find(l=>l[0]==='You')||d.lines[1];if(!line||!model)return null;
+  const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],model=d.lines.find(l=>l[0]==='You')||d.lines[1];
+  if(!line||!model)return null;
   const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),formal=/B2|C1|C2/.test(lv);
   const cautious=d.lines.find(l=>l[0]==='You'&&l[1]!==model[1])||d.lines[d.lines.length-1]||model;
-  const opts=[{label:model[1],tone:formal?'claro e profissional':'natural',out:'Você mantém o objetivo desta conversa.'},{label:line[1].replace(/[.!?]+$/,'')+'?',tone:'pedir esclarecimento',out:'Você ganha tempo e confirma o que entendeu.'},{label:cautious[1],tone:'mais cauteloso',out:'Você sinaliza dúvida e abre espaço para continuar.'}];
+  const clear= d.lines.find(l=>l[0]==='You'&&l[1]!==model[1]&&l[1]!==cautious[1]) || model;
+  const opts=[
+    {label:model[1],tone:'natural',out:'Você mantém o objetivo e o ritmo desta conversa.',kind:'natural'},
+    {label:clear[1],tone:formal?'esclarecedora e profissional':'esclarecedora',out:'Você explicita a intenção e reduz a chance de mal-entendido.',kind:'clear'},
+    {label:cautious[1],tone:'cautelosa',out:'Você sinaliza cuidado, confirma o contexto e abre espaço para o próximo turno.',kind:'cautious'}
+  ];
   return {k:'nbchoice',g:d.hero.g||['#E17055','#6C5CE7'],heard:line[1],heardTr:line[2]||'',opts,level:lv,episode:e.n||'',situation:e.s||d.hero.sub||''};
 }
 function buildPrag(e,d){
@@ -478,7 +484,18 @@ FXR.nbreply=function(f,st,n){
 /* ---------- 6 · revisão espaçada ---------- */
 FXR.nbreview=function(f,st,n){
   const t=tx();let ri=0,hits=0,done=false;const draw=()=>{const r=f.rows[ri];if(!r){done=true;P.score+=hits;st.innerHTML='<div class="step fx nbo nbreview" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Revisão do Neighbors</span><h2 class="nbo-q">Você trouxe a conversa de volta</h2><p class="nbo-hand">'+hits+'/'+f.rows.length+' frases recuperadas de primeira. Esse resgate prepara você para a situação atual.</p></div></div>';cta(t.cont,true,true);say('Revisão concluída! O que você aprendeu antes continua disponível.');P.fx.cta=null;return}const opts=shuf(r.opts,hash(f.from+ri));st.innerHTML='<div class="step fx nbo nbreview" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Revisão · '+(ri+1)+'/'+f.rows.length+'</span><h2 class="nbo-q">O que esta fala quer dizer?</h2><div class="nbo-quote"><b>'+H(r.en)+'</b><small>Toque na melhor tradução.</small></div><ul class="nbo-opts">'+opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o)+'</span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbrfb"></div></div></div>';cta('Escolha uma resposta',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(b.disabled)return;const ok=b.textContent.includes(r.pt);if(ok){hits++;b.classList.add('ok')}else{b.classList.add('no');st.querySelectorAll('.nbo-opt').forEach(x=>{if(x.textContent.includes(r.pt))x.classList.add('ok')})}st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbrfb',st).innerHTML=ok?'<p class="nbo-tr"><b>Boa!</b> Você recuperou a fala.</p>':'<p class="nbo-why">A tradução era: '+H(r.pt)+'</p>';cta(ri<f.rows.length-1?'Próxima fala ▶':t.cont,true,true);P.fx.cta=()=>{ri++;draw();return true}})};P.fx.cta=null;draw()};
-FXR.nbchoice=function(f,st,n){let picked=false;st.innerHTML='<div class="step fx nbo nbchoice" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Escolha o tom · '+H(f.level)+'</span><h2 class="nbo-q">Como você quer conduzir esta conversa?</h2><div class="nbo-quote"><b>Você ouviu:</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div><ul class="nbo-opts">'+f.opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+L3[i]+'</i><span>'+H(o.label)+'<small style="display:block;opacity:.7">'+H(o.tone)+'</small></span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbchfb" aria-live="polite"></div></div></div>';cta('Escolha uma resposta',false);st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{if(picked)return;picked=true;const o=f.opts[+b.dataset.i];try{ST.nbTone=o.tone;save()}catch(x){}b.classList.add('ok');st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);q('#nbchfb',st).innerHTML='<p class="nbo-tr"><b>'+H(o.tone)+'</b> — '+H(o.out)+'</p><p class="nbo-why">A fala muda o tom, mas você continua no controle da situação.</p>';P.score++;P.fx.cta=()=>false;cta(tx().cont,true,true);say('Boa escolha. Em inglês, intenção e tom também comunicam.','happy')})};
+FXR.nbchoice=function(f,st,n){
+  let picked=false;const icons=['🌿','🔎','🛟'],labels=['Natural','Esclarecedora','Cautelosa'];
+  st.innerHTML='<div class="step fx nbo nbchoice" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">JOGADA DA CONVERSA · '+H(f.level)+'</span><h2 class="nbo-q">Qual caminho você quer testar?</h2><p class="nbo-hand">Escolha uma resposta e veja, como num jogo de cena, o que ela provoca no próximo turno.</p><div class="nbo-quote"><b>Você ouviu:</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div><ul class="nbo-opts nbchoice-opts">'+f.opts.map((o,i)=>'<li><button type="button" class="nbo-opt" data-i="'+i+'"><i>'+icons[i]+'</i><span><b>'+H(labels[i])+'</b><small>'+H(o.tone)+'</small><em>Depois: '+H(o.out)+'</em></span></button></li>').join('')+'</ul><div class="nbo-fb" id="nbchfb" aria-live="polite"></div></div></div>';
+  cta('Escolha uma jogada',false);
+  st.querySelectorAll('.nbo-opt').forEach(b=>b.onclick=()=>{
+    if(picked)return; picked=true; const o=f.opts[+b.dataset.i];
+    try{ST.nbTone=o.tone;save()}catch(x){}
+    b.classList.add('ok'); st.querySelectorAll('.nbo-opt').forEach(x=>x.disabled=true);
+    q('#nbchfb',st).innerHTML='<p class="nbo-tr"><b>'+H(o.tone)+'</b> — '+H(o.out)+'</p><p class="nbo-why">Agora observe a reação seguinte: a escolha altera clareza, proximidade e espaço para negociação.</p>';
+    P.score++; P.fx.cta=null; cta(tx().cont,true,true); say('Jogada registrada. Veja como a intenção muda a conversa.','happy');
+  });
+};
 FXR.nbprag=function(f,st,n){st.innerHTML='<div class="step fx nbo nbprag" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-card"><span class="nbo-sec">Como isso soa · '+H(f.level)+'</span><h2 class="nbo-q">A mesma frase muda com a situação</h2><p class="nbo-topic">'+H(f.scene)+(f.city?' · '+H(f.city):'')+'</p><ul class="nbo-list">'+f.tips.map(x=>'<li>'+H(x)+'</li>').join('')+'</ul><p class="nbo-hint">Antes de responder, pergunte: estou sendo claro, natural e adequado para esta relação?</p></div></div>';cta(tx().cont,true,true);say('Não basta estar gramaticalmente correto. O contexto também importa.')};
 FXR.nbfluency=function(f,st,n){
   const chunks=f.chunks||[], lines=f.lines||[];
