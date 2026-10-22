@@ -1576,6 +1576,32 @@ function registerEpisodeGenders(e){
   });
 }
 function doneCountFor(cid){let n=0;for(const k in ST.done){if(ST.done[k]&&k.indexOf(cid+'-')===0)n++;}return n;}
+/* Identidade e títulos: o número legado continua estável para preservar progresso;
+   uid separa cursos e os títulos ganham contexto quando uma geração em massa repetiu a base. */
+function diversifyEpisodeTitles(cid,list){
+  const groups=new Map(),used=new Set();
+  list.forEach((e,i)=>{e.uid=cid+':'+String(e.n==null?i:e.n);const key=String(e.t||'').trim();if(!groups.has(key))groups.set(key,[]);groups.get(key).push(i)});
+  const raw=String(cid||''),lang=raw.indexOf('nbeng-')===0?'en':raw.replace(/^nb/,'').split('-')[0],join={de:'in',en:'in',es:'en',fr:'à',it:'a',ja:'em',ko:'em',zhbr:'em',pt:'em'}[lang]||'em';
+  const clean=v=>String(v||'').replace(/\s+/g,' ').trim().replace(/[.!?]+$/,'');
+  groups.forEach((idxs,base)=>{if(base&&idxs.length===1)used.add(base)});
+  groups.forEach((idxs,base)=>{
+    if(!base||idxs.length<2)return;
+    idxs.forEach((i,rank)=>{
+      const e=list[i],ch=e.character||{},a=e.a||{},city=clean(ch.city||a.w||(e.community||{}).city),name=clean(ch.name),role=clean(ch.role),action=clean(e.s);
+      const contextual=city?(name?`${name} ${join} ${city}`:`${city}`):role;
+      const variants=[
+        contextual?`${base} · ${contextual}`:'',
+        action?`${base} — ${action}`:'',
+        role&&city?`${base} · ${role} ${join} ${city}`:'',
+        `${base} · episódio ${String(e.en||i+1).padStart(3,'0')}`
+      ].filter(Boolean);
+      let title=variants[rank%variants.length]||`${base} · ${String(e.en||i+1).padStart(3,'0')}`;
+      if(used.has(title))title=`${base} · ${String(e.en||i+1).padStart(3,'0')}`;
+      while(used.has(title))title+=` · ${rank+1}`;
+      e.t=title;used.add(title);
+    });
+  });
+}
 async function ensureLangLoaded(lang){
   if(!lang)return;
   if(EP[lang]&&EP[lang].length)return;
@@ -1588,6 +1614,7 @@ async function ensureLangLoaded(lang){
     arr2.forEach(registerEpisodeGenders);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
     if(String(lang).indexOf('nb')===0){let cn=0;arr2.forEach(e=>{e.en=e.rev?'↻':++cn});}
+    diversifyEpisodeTitles(lang,arr2);
     try{if(window.pogSplitCover)pogSplitCover(arr2)}catch(e){console.warn('splitCover',e)}
     EP[lang]=arr2;
   })();
