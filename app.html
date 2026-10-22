@@ -2355,7 +2355,7 @@ function homeCards(){
   // One tile per family: en / es / nb open a level hub; other courses open directly.
   const out=[];const seen={};
   Object.values(COURSES).forEach(c=>{
-    if(['nb','en','es','pt','fr','debr','itbr','jabr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
+    if(['nb','en','es','pt','fr','enes','debr','itbr','jabr','kobr'].includes(c.group)){if(seen[c.group])return;seen[c.group]=1;const g=GROUPS[c.group];
       out.push({id:g.id,hub:true,feat:g.id==='nb',scene:g.scene,flag:g.flag,name:g.name,desc:g.desc,n:g.sub.reduce((a,x)=>a+(EP_COUNT[x]||0),0),d:g.sub.reduce((a,x)=>a+doneCountFor(x),0),metaR:g.id==='nb'?{pt:'Inglês A1–C2 · Espanhol A1',es:'Inglés A1–C2 · Español A1'}:{pt:'6 níveis · A1–C2',es:'6 niveles · A1–C2'}});return}
     out.push({id:c.id,hub:false,scene:c.scene,flag:c.flag,name:c.name,desc:c.desc,n:EP_COUNT[c.id]||0,d:doneCountFor(c.id)})});
   out.sort((x,y)=>(y.feat?1:0)-(x.feat?1:0));
