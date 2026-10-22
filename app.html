@@ -4681,7 +4681,7 @@ document.addEventListener('keydown',ev=>{if(!P)return;if(ev.key==='Escape')close
 var jobs=[];if(navigator.serviceWorker&&navigator.serviceWorker.getRegistrations)jobs.push(navigator.serviceWorker.getRegistrations().then(function(r){return Promise.all(r.map(function(x){return x.unregister()}))}));
 if(window.caches)jobs.push(caches.keys().then(function(k){return Promise.all(k.filter(function(n){return /^pogglot-(shell|data)/.test(n)}).map(function(n){return caches.delete(n)}))}));
 Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(e){}})();</script>
-<script src="config.js"></script>
+<script src="config.js"></script><script src="js/telemetry.js?v=1"></script>
 <script src="js/cloud.js"></script>
 <script src="js/voice.js"></script>
 <script src="js/tts.js"></script>

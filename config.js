@@ -25,4 +25,4 @@
  *   teacher:  (opcional) endereço que recebe o mesmo JSON para correção humana; mostra o botão "Enviar ao professor".
  *   Sem endpoint, o app tenta o Claude da própria página (quando publicada como artefato) e, por último, uma conferência básica no aparelho.
  */
-window.POGGLOT_CONFIG={supabaseUrl:'https://mgvjxrmtatwachhtjfmm.supabase.co',supabaseAnonKey:'sb_publishable_VIRbeM3pO0f_71uY8HUCCA_rSToliuU',tts:null,ai:{endpoint:'',teacher:''},supportUrl:'',checkoutUrl:'',checkoutUrlYear:'',priceMonth:'',priceYear:'',freeEpisodes:5};
+window.POGGLOT_CONFIG={supabaseUrl:'https://mgvjxrmtatwachhtjfmm.supabase.co',supabaseAnonKey:'sb_publishable_VIRbeM3pO0f_71uY8HUCCA_rSToliuU',tts:null,ai:{endpoint:'',teacher:''},analyticsEndpoint:'',supportUrl:'',checkoutUrl:'',checkoutUrlYear:'',priceMonth:'',priceYear:'',freeEpisodes:5};
