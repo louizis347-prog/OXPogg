@@ -113,7 +113,10 @@ function cloudSpeak(text,lang,btn,speaker,slow,fallback){
 function episodeTexts(e){
   const out=[],add=(t,sp)=>{t=String(t||'').replace(/\*\*/g,'').trim();if(t&&t.length<400)out.push({text:t,speaker:sp||null})};
   (e.fr||[]).forEach(f=>{
-    if(f.k==='scene')(f.lines||[]).forEach(l=>add(l[1],l[0]));
+    if(f.k==='scene'){
+      const cast=f.cast&&typeof f.cast==='object'?Object.keys(f.cast):[];
+      (f.lines||[]).forEach((l,i)=>{const named=cast.includes(String(l[0]||''));add(named?l[1]:l[0],named?l[0]:(cast[i%Math.max(1,cast.length)]||null))});
+    }
     if(f.k==='words'||f.k==='cwords')(f.items||[]).forEach(w=>add(w[0]));
     if(f.k==='cult1')(f.lines||[]).forEach(l=>add(l[0]));
     if(f.k==='chunk'){add((f.blocks||[]).map(b=>b[0]).join(' '));(f.variants||[]).forEach(v=>add(v[0]))}
@@ -121,9 +124,8 @@ function episodeTexts(e){
     if(f.k==='tapimg'||f.k==='sound'||f.k==='vquiz')(f.rounds||[]).forEach(r=>add(r.say));
     if(f.k==='ctx')(f.items||[]).forEach(it=>{let k=0;const L=it.lines.map(l=>[l[0],l[1].replace(/___/g,()=>it.ans[k++])]);L.forEach(l=>add(l[1],l[0]||null))});
     if(f.k==='dictate')(f.lines||[]).forEach(l=>add(l[0]));
-    if(f.k==='order')(f.lines||[]).forEach(l=>add(l[1],l[0]));
-    if(f.k==='order')(f.extra||[]).forEach(l=>add(l[1],l[0]));
-    if(f.k==='scene'&&f.full)f.full.forEach(l=>add(l[1],l[0]));
+    if(f.k==='order'){const cast=f.cast&&typeof f.cast==='object'?Object.keys(f.cast):[];[...(f.lines||[]),...(f.extra||[])].forEach((l,i)=>{const named=cast.includes(String(l[0]||''));add(named?l[1]:l[0],named?l[0]:(cast[i%Math.max(1,cast.length)]||null))})}
+    if(f.k==='scene'&&f.full){const cast=f.cast&&typeof f.cast==='object'?Object.keys(f.cast):[];f.full.forEach((l,i)=>{const named=cast.includes(String(l[0]||''));add(named?l[1]:l[0],named?l[0]:(cast[i%Math.max(1,cast.length)]||null))})}
     if(f.k==='wrap')(f.recap||[]).forEach(r=>add(r[0]));
     if(f.k==='convo')(f.turns||[]).forEach(t=>add(t.npc&&t.npc[0]));
   });

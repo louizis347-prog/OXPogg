@@ -3799,7 +3799,18 @@ function sfx(name){try{AC=AC||new (window.AudioContext||window.webkitAudioContex
 const FX_KIND={bridge:'story',fio:'story',vquiz:'practice',cult1:'story',cwords:'vocab',cquiz:'practice',cover:'story',scene:'dialog',words:'vocab',chunk:'vocab',grammar:'grammar',sound:'practice',soundlab:'practice',ctx:'practice',tapimg:'practice',build:'practice',choose:'practice',gap:'practice',trap:'practice',match:'practice',dictate:'speak',convo:'dialog',order:'practice',produce:'practice',wrap:'reward'};
 const FX_LABEL={bridge:'Da obra para a lição',fio:'Fio da história',vquiz:'Quiz de vocabulário',cult1:'Obra em cena',cwords:'Palavras da obra',cquiz:'Cultura em jogo',cover:'Abertura',scene:'Cena',words:'Palavras-imagem',chunk:'Frase pronta',grammar:'Regra em 10 segundos',sound:'Laboratório de sons',soundlab:'Laboratório de sons',ctx:'Contextos em áudio',tapimg:'Ouça e toque',build:'Monte a frase',choose:'Na conversa',gap:'Complete',trap:'Detetive de erros',match:'Jogo relâmpago',dictate:'Ouça e escreva',convo:'Continue a conversa',order:'Ordene o diálogo',produce:'Sua vez',wrap:'Revisão e próxima parada'};
 function fxBanLight(b){b=b||{};const k=b.sky||({times:'night',bridge:'dusk'})[b.s];return /^(night|night2|dusk)$/.test(k||'')?Object.assign({},b,{sky:'dawn'}):b}
-function fxKindBar(f,n){return `<span class="eyebrow">QUADRO ${n+1}/${P.e.fr.length} · ${FX_LABEL[f.k]||''}</span>`}
+function fxKindBar(f,n){return `<span class="eyebrow fx-kind">${FX_LABEL[f.k]||''}</span>`}
+/* Linhas antigas usam [personagem, idioma-alvo, tradução]; episódios multilíngues
+   compactos usam [idioma-alvo, tradução]. O player nunca deve falar a tradução
+   com a voz do idioma estudado. */
+function fxLineParts(line,cast,index,names){
+  const a=Array.isArray(line)?line:[], keys=cast&&typeof cast==='object'?Object.keys(cast):[];
+  const first=String(a[0]||'');
+  const hasSpeaker=keys.includes(first)||/^(you|você|tú|vous|du|sie|tu|あなた|あなたは)$/i.test(first);
+  if(hasSpeaker)return {speaker:first,target:String(a[1]||''),translation:String(a[2]||'')};
+  const fallback=(names&&names.length)?names[index%names.length]:'';
+  return {speaker:fallback,target:String(a[0]||''),translation:String(a[1]||'')};
+}
 function fxCul(f){if(!f.cul)return '';return `<div class="fx-cul"><span class="fx-cul-ic">${f.cul[0]}</span><div><small>Cultura em cena · ${esc(f.cul[1])}</small><span>${mk(f.cul[2])}</span></div></div>`}
 /* enunciado: bloco de instrução em destaque (selo + rótulo + texto), igual em todas as práticas */
 function fxEn(ic,label,html,play){return `<div class="fx-en${play?' has-play':''}">${play?`<button class="fx-play" id="fxp" aria-label="Ouvir">${spk}</button>`:`<span class="fx-en-ic" aria-hidden="true">${ic}</span>`}<div class="fx-en-t"><small>${label}</small><p>${html}</p></div></div>`}
@@ -3825,7 +3836,7 @@ fio(f,st,n){
     ['clear','Esclarecedora','torna a intenção mais explícita'],
     ['cautious','Cautelosa','reduz o risco de parecer brusco ou presumido']
   ];
-  st.innerHTML=`<div class="step fx"><span class="eyebrow">QUADRO ${n+1}/${P.e.fr.length} · Fio da história</span><h2 class="fx-h">${esc(f.title||'Fio da história')}</h2><div class="recap cv-learn"><p><b>Arco atual:</b> ${esc(f.arc||e.s||'Prática de comunicação')}</p><p><b>Episódio anterior:</b> ${esc(f.previous||'A situação que trouxe você até aqui.')}</p><p><b>Situação atual:</b> ${esc(f.situation||e.t)}</p><p><b>Próxima fala:</b> ${esc(f.nextLine||'Escolha como responder.')}</p></div><h3 class="fx-h">Escolha o tom</h3><div class="fx-var">${tones.map((t,i)=>`<button class="fx-vr" data-tone="${i}"><div><b>${esc(t[1])}</b><small>${esc(t[2])}</small></div></button>`).join('')}</div><div id="fioback" class="recap cv-learn" hidden></div><div class="recap cv-learn"><b>Contexto pragmático</b><p>${esc(f.pragmatics||'Observe clareza, formalidade, diplomacia, intenção e adequação à situação.')}</p></div></div>`;
+  st.innerHTML=`<div class="step fx">${fxKindBar(f,n)}<h2 class="fx-h">${esc(f.title||'Fio da história')}</h2><div class="recap cv-learn"><p><b>Arco atual:</b> ${esc(f.arc||e.s||'Prática de comunicação')}</p><p><b>Episódio anterior:</b> ${esc(f.previous||'A situação que trouxe você até aqui.')}</p><p><b>Situação atual:</b> ${esc(f.situation||e.t)}</p><p><b>Próxima fala:</b> ${esc(f.nextLine||'Escolha como responder.')}</p></div><h3 class="fx-h">Escolha o tom</h3><div class="fx-var">${tones.map((t,i)=>`<button class="fx-vr" data-tone="${i}"><div><b>${esc(t[1])}</b><small>${esc(t[2])}</small></div></button>`).join('')}</div><div id="fioback" class="recap cv-learn" hidden></div><div class="recap cv-learn"><b>Contexto pragmático</b><p>${esc(f.pragmatics||'Observe clareza, formalidade, diplomacia, intenção e adequação à situação.')}</p></div></div>`;
   st.querySelectorAll('[data-tone]').forEach(b=>b.onclick=()=>{const t=tones[+b.dataset.tone],out=$('#fioback');out.hidden=false;out.innerHTML=`<b>Consequência comunicativa</b><p>${esc(t[2])}. Repare em como a escolha muda a interação antes de continuar.</p>`;st.querySelectorAll('[data-tone]').forEach(x=>x.classList.remove('on'));b.classList.add('on');sfx('pop');cta('Continuar',true,true)});
   cta('Escolha uma resposta',false);say('Escolha o tom que você quer praticar.')
 },
@@ -3838,18 +3849,18 @@ cover(f,st,n){const e=P.e;
 scene(f,st,n){const cast=f.cast||{};const names=Object.keys(cast).slice(0,2);let shown=0;
   st.innerHTML=`<div class="step fx">${fxKindBar(f,n)}<div class="fx-stagewrap">${fxArt(f.art,.48)}<div class="fx-cast">${names.map((nm,i)=>`<div class="fx-av ${i?'r':'l'}" data-n="${esc(nm)}"><span>${cast[nm][0]}</span></div>`).join('')}</div></div>${f.full?`<div class="fx-hearrow"><button class="fx-hear" id="fxfull" type="button"><span class="say2">🗣️</span><div><b>Ouvir natural</b><small>${f.full.length} falas · o mesmo áudio da prática</small></div></button><button class="fx-hear" id="fxfslow" type="button"><span class="say2">🐢</span><div><b>Ouvir devagar</b><small>velocidade de tartaruga</small></div></button></div>`:''}<div class="fx-lines" id="fxl"></div>${fxCul(f)}</div>`;
   let dlg=null,mode='';const box=$('#fxl');
-  if(f.full){const hn=$('#fxfull'),hs=$('#fxfslow'),fl=f.full.map(l=>[l[0],l[1]]);
+  if(f.full){const hn=$('#fxfull'),hs=$('#fxfslow'),fl=f.full.map((l,i)=>{const p=fxLineParts(l,cast,i,names);return [p.speaker,p.target,p.translation]});
     const hl=i=>st.querySelectorAll('.fx-av').forEach(a=>a.classList.toggle('talk',i>=0&&a.dataset.n===fl[i][0]));
     const ui=()=>{[[hn,'n','natural',`${fl.length} falas · o mesmo áudio da prática`],[hs,'s','devagar','velocidade de tartaruga']].forEach(([b,m,t,s])=>{const on=mode===m;b.classList.toggle('on',on);b.querySelector('b').textContent=on?'Tocando… toque para parar':'Ouvir '+t;b.querySelector('small').textContent=on?(m==='s'?'velocidade de tartaruga':'velocidade natural'):s})};
     const stopF=()=>{if(dlg){const d=dlg;dlg=null;d.stop()}mode='';ui();hl(-1)};
     const play=m=>{stopF();mode=m;ui();dlg=fxDlgPlay(fl,i=>{if(i<0){dlg=null;mode='';ui();hl(-1)}else hl(i)},m==='s'?FX_TURTLE:false)};
     hn.onclick=()=>{mode==='n'?stopF():play('n')};hs.onclick=()=>{mode==='s'?stopF():play('s')}}
-  const next=()=>{if(dlg){const d=dlg;dlg=null;d.stop()}if(shown>=f.lines.length)return false;const L=f.lines[shown++];const c=cast[L[0]]||['🙂','#888'];
-    const d=document.createElement('div');d.className='fx-line '+(names.indexOf(L[0])===1?'r':'l');d.style.setProperty('--c',c[1]);
-    d.innerHTML=`<span class="fx-lav">${c[0]}</span><div class="fx-bub"><b>${esc(L[0])}</b><p>${mk(L[1])}</p><small class="fx-tr">${esc(L[2])}</small></div>`;
-    d.onclick=()=>{if(dlg){const x=dlg;dlg=null;x.stop()}d.classList.toggle('tr');fxSay(plain(L[1]),L[0])};box.appendChild(d);
-    st.querySelectorAll('.fx-av').forEach(a=>a.classList.toggle('talk',a.dataset.n===L[0]));
-    if(L[3])sfx(L[3]);fxSay(plain(L[1]),L[0]);d.scrollIntoView({behavior:'smooth',block:'nearest'});
+  const next=()=>{if(dlg){const d=dlg;dlg=null;d.stop()}if(shown>=f.lines.length)return false;const raw=f.lines[shown],L=fxLineParts(raw,cast,shown,names);shown++;const c=cast[L.speaker]||['🙂','#888'];
+    const d=document.createElement('div');d.className='fx-line '+(names.indexOf(L.speaker)===1?'r':'l');d.style.setProperty('--c',c[1]);
+    d.innerHTML=`<span class="fx-lav">${c[0]}</span><div class="fx-bub"><b>${esc(L.speaker||'Fala')}</b><p>${mk(L.target)}</p><small class="fx-tr">${esc(L.translation)}</small></div>`;
+    d.onclick=()=>{if(dlg){const x=dlg;dlg=null;x.stop()}d.classList.toggle('tr');fxSay(plain(L.target),L.speaker)};box.appendChild(d);
+    st.querySelectorAll('.fx-av').forEach(a=>a.classList.toggle('talk',a.dataset.n===L.speaker));
+    if(raw[3])sfx(raw[3]);fxSay(plain(L.target),L.speaker);d.scrollIntoView({behavior:'smooth',block:'nearest'});
     if(shown>=f.lines.length){cta('Continuar',true,false)}else cta('Próxima fala ▶',true,true);return true};
   P.fx.cta=()=>next();next();say('Toque nas falas para ouvir de novo e ver a tradução.')},
 words(f,st,n){const seen=new Set();
@@ -4486,8 +4497,8 @@ function fxDlgPlay(full,on,slow){let alive=true,tok=0;
   go(0);return{stop(){if(!alive)return;alive=false;window.__speakEnd=null;fxStopAudio();on(-1)}}}
 const FX_TURTLE=.6;
 /* ordene o diálogo */
-FXR.order=function(f,st,n){const L=f.lines,X=f.extra||[],A=L.concat(X),cast=f.cast||{},names=Object.keys(cast).slice(0,2);let seq=[],checked=false,dlg=null,mode='';const idx=fxShuffle(A.map((_,i)=>i));
-  const full=(f.audio&&f.audio.length?f.audio:L).map(l=>[l[0],l[1]]);
+FXR.order=function(f,st,n){const L=f.lines,X=f.extra||[],cast=f.cast||{},names=Object.keys(cast).slice(0,2),Araw=L.concat(X),A=Araw.map((l,i)=>{const p=fxLineParts(l,cast,i,names);return [p.speaker,p.target,p.translation]});let seq=[],checked=false,dlg=null,mode='';const idx=fxShuffle(A.map((_,i)=>i));
+  const full=(f.audio&&f.audio.length?f.audio:L).map((l,i)=>{const p=fxLineParts(l,cast,i,names);return [p.speaker,p.target,p.translation]});
   const col=nm=>(cast[nm]&&cast[nm][1])||'#1FAE9B',av=nm=>(cast[nm]&&cast[nm][0])||'';
   const piece=(i,cls,extra)=>`<button class="fx-ol ${cls||''}" ${extra||''} style="--c:${col(A[i][0])}"><b>${av(A[i][0])} ${esc(A[i][0])}</b><span>${mk(A[i][1])}</span></button>`;
   const intro=f.intro||(X.length?'Ouça a conversa e monte o diálogo na ordem certa. Cuidado: algumas falas combinam com a cena, mas não fazem parte dela!':'Ouça a conversa completa e toque nas falas na ordem em que ela acontece.');
