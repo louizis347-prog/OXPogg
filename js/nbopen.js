@@ -195,48 +195,51 @@ function buildThread(e,d){
   let memory='';try{memory=ST&&ST.nbTone?ST.nbTone:''}catch(x){}
   let arc='';try{const a=(ARCS[P.cid]||[]).filter(x=>EP[P.cid].findIndex(y=>y.n===x[0])<=P.idx).slice(-1)[0];arc=a?a[1]:''}catch(x){}
   let skill='';try{skill=ST&&ST.nbSkill?ST.nbSkill:''}catch(x){}
-  return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,skill,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||''};
+  return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,skill,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||'',episode:e.n||''};
 }
 function buildReply(e,d){
   const li=d.lines.findIndex((l,i)=>i>0&&l[0]&&l[0]!=='You');
   const line=li>=0?d.lines[li]:d.lines[0],ai=d.lines.findIndex(l=>l[0]==='You'),answer=ai>=0?d.lines[ai]:d.lines[1];
   if(!line||!answer||!answer[1])return null;
   const reaction=d.lines.slice(Math.max(ai+1,0)).find(l=>l[0]&&l[0]!=='You')||null;
-  return {k:'nbreply',g:d.hero.g||['#6C3FEF','#9a7bff'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4),reaction:reaction?reaction[1]:'',reactionTr:reaction?reaction[2]||'':'',reactionWho:reaction?reaction[0]:'',consequence:'A resposta muda o próximo turno: observe se o interlocutor confirma, pergunta, aceita ou pede outra coisa.'};
+  return {k:'nbreply',g:d.hero.g||['#6C3FEF','#9a7bff'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4),reaction:reaction?reaction[1]:'',reactionTr:reaction?reaction[2]||'':'',reactionWho:reaction?reaction[0]:'',episode:e.n||'',consequence:'A resposta muda o próximo turno nesta situação: observe se o interlocutor confirma, pergunta, aceita ou pede outra coisa.'};
 }
 function buildReview(e){
   const prev=priorEpisode(e);if(!prev)return null;const pf=(prev.fr||[]).find(f=>f&&f.k==='nbchat');if(!pf||!pf.lines)return null;
   const rows=pf.lines.filter(l=>l&&l[1]&&l[2]).slice(0,2);if(!rows.length)return null;const current=(e.fr||[]).find(f=>f&&f.k==='nbchat');const wrong=(current&&current.lines||[]).map(l=>l[2]).filter(Boolean);if(!wrong.length)(e.fr||[]).filter(f=>f&&f.k==='nbtap').forEach(f=>(f.items||[]).forEach(i=>(i.opts||[]).forEach(o=>{if(o&&o[1])wrong.push(o[1])})));
-  return {k:'nbreview',g:['#00B894','#0984E3'],from:prev.t,rows:rows.map((l,i)=>{const opts=[l[2],...(wrong.filter(x=>x!==l[2]).slice(i,i+2))];return {en:l[1],pt:l[2],opts:[...new Set(opts)].slice(0,3)}})};
+  return {k:'nbreview',g:['#00B894','#0984E3'],from:prev.t,episode:e.n||'',rows:rows.map((l,i)=>{const opts=[l[2],...(wrong.filter(x=>x!==l[2]).slice(i,i+2))];return {en:l[1],pt:l[2],opts:[...new Set(opts)].slice(0,3)}})};
 }
 function buildChoice(e,d){
   const line=d.lines.find((l,i)=>i>0&&l[0]&&l[0]!=='You')||d.lines[0],model=d.lines.find(l=>l[0]==='You')||d.lines[1];if(!line||!model)return null;
   const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),formal=/B2|C1|C2/.test(lv);
-  const opts=[{label:model[1],tone:formal?'claro e profissional':'natural',out:'Você mantém o objetivo da conversa.'},{label:line[1].replace(/[.!?]+$/,'')+'?',tone:'pedir esclarecimento',out:'Você ganha tempo e confirma o que entendeu.'},{label:'I am not sure. Could we come back to this?',tone:'mais cauteloso',out:'Você sinaliza dúvida e abre espaço para continuar.'}];
-  return {k:'nbchoice',g:d.hero.g||['#E17055','#6C5CE7'],heard:line[1],heardTr:line[2]||'',opts,level:lv};
+  const cautious=d.lines.find(l=>l[0]==='You'&&l[1]!==model[1])||d.lines[d.lines.length-1]||model;
+  const opts=[{label:model[1],tone:formal?'claro e profissional':'natural',out:'Você mantém o objetivo desta conversa.'},{label:line[1].replace(/[.!?]+$/,'')+'?',tone:'pedir esclarecimento',out:'Você ganha tempo e confirma o que entendeu.'},{label:cautious[1],tone:'mais cauteloso',out:'Você sinaliza dúvida e abre espaço para continuar.'}];
+  return {k:'nbchoice',g:d.hero.g||['#E17055','#6C5CE7'],heard:line[1],heardTr:line[2]||'',opts,level:lv,episode:e.n||'',situation:e.s||d.hero.sub||''};
 }
 function buildPrag(e,d){
   const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),advanced=/B2|C1|C2/.test(lv),city=d.hero.city||'';
-  return {k:'nbprag',g:d.hero.g||['#00B894','#0984E3'],city,level:lv,scene:e.s||d.hero.sub||'',tips:advanced?['Escolha o registro: direto, diplomático ou formal.','Observe o que fica implícito e o que precisa ser dito.','Uma frase correta pode soar brusca dependendo do contexto.']:['Ouça a situação antes de responder.','Use “please”, “thanks” e perguntas curtas para soar natural.','A mesma ideia pode ter mais de uma forma correta.']};
+  const l=d.lines.filter(x=>x&&x[1]).slice(0,2).map(x=>x[1]);
+  const tips=advanced?['Escolha o registro adequado para '+(e.s||d.hero.sub||'esta situação')+'.','Observe o que fica implícito entre “'+(l[0]||'a primeira fala')+'” e a resposta seguinte.','Uma frase correta pode soar brusca; teste uma alternativa diplomática deste episódio.']:['Ouça a situação antes de responder em '+(city||'este contexto')+'.','Compare “'+(l[0]||'a fala inicial')+'” com a resposta e observe a fórmula social.','A mesma ideia pode ter mais de uma forma correta nesta cena.'];
+  return {k:'nbprag',g:d.hero.g||['#00B894','#0984E3'],city,level:lv,scene:e.s||d.hero.sub||'',tips,episode:e.n||''};
 }
 function buildFluency(e,d){
   if(d.rev){
     const rows=d.lines.filter(l=>l&&l[1]).slice(0,3);
-    return {k:'nbfluency',g:d.hero.g||['#2D98DA','#20BF6B'],level:String(d.hero.lvl||e.lv||'A1').toUpperCase(),scene:e.s||d.hero.sub||'Revisão do arco',chunks:d.vocab.slice(0,6).map(v=>[forms(v[0])[0]||v[0],v[1]||'']),lines:rows,repair:'Could you say that another way?',ladder:['recupere a ideia principal','compare as frases do arco','responda com naturalidade']};
+    return {k:'nbfluency',g:d.hero.g||['#2D98DA','#20BF6B'],level:String(d.hero.lvl||e.lv||'A1').toUpperCase(),scene:e.s||d.hero.sub||'Revisão do arco',chunks:d.vocab.slice(0,6).map(v=>[forms(v[0])[0]||v[0],v[1]||'']),lines:rows,repair:'Could you say that another way?',ladder:['recupere a ideia principal','compare as frases do arco','responda com naturalidade'],episode:e.n||''};
   }
   const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase();
   const advanced=/B2|C1|C2/.test(lv),chunks=d.vocab.slice(0,6).map(v=>[forms(v[0])[0]||v[0],v[1]||'']);
   const lines=d.lines.filter(l=>l&&l[1]&&l[1].length>18).slice(0,3);
   const repair=advanced?'Could you clarify what you mean?':'Sorry, could you say that again?';
-  return {k:'nbfluency',g:d.hero.g||['#2D98DA','#20BF6B'],level:lv,scene:e.s||d.hero.sub||'',chunks,lines,repair,ladder:advanced?['ouça o sentido geral','perceba o registro e o subtexto','responda com precisão e diplomacia']:['ouça a frase inteira','repita o bloco de palavras','responda com naturalidade']};
+  return {k:'nbfluency',g:d.hero.g||['#2D98DA','#20BF6B'],level:lv,scene:e.s||d.hero.sub||'',chunks,lines,repair,ladder:advanced?['ouça o sentido geral','perceba o registro e o subtexto','responda com precisão e diplomacia']:['ouça a frase inteira','repita o bloco de palavras','responda com naturalidade'],episode:e.n||''};
 }
 function buildBridges(e,d){
   if(!d.rev)return [];
   const first=(d.lines||[]).filter(l=>l&&l[1]).slice(0,3), vocab=(d.vocab||[]).slice(0,4);
   return [
-    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'context',title:'O contexto do arco',body:e.s||d.hero.sub||'Reveja onde a conversa acontece e qual era o objetivo.',items:first.map(l=>l[1])},
-    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'bridge',title:'Ponte de linguagem',body:'Relacione a intenção, o registro e a resposta que você escolheria.',items:vocab.map(v=>String(v[0])+(v[1]?' · '+v[1]:''))},
-    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'transfer',title:'Transferência para a vida real',body:'Use uma das frases do arco em uma situação nova e explique sua escolha.',items:first.map(l=>l[2]||l[1])}
+    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'context',title:'O contexto do arco',body:(e.s||d.hero.sub||'Reveja onde a conversa acontece')+' · episódio '+(e.n||''),items:first.map(l=>l[1])},
+    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'bridge',title:'Ponte de linguagem',body:'Relacione a intenção, o registro e a resposta que você escolheria no episódio '+(e.n||'')+'.',items:vocab.map(v=>String(v[0])+(v[1]?' · '+v[1]:''))},
+    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'transfer',title:'Transferência para a vida real',body:'Use uma das frases do arco em uma situação nova e explique sua escolha no episódio '+(e.n||'')+'.',items:first.map(l=>l[2]||l[1])}
   ];
 }
 function buildMilestone(e,d){
@@ -257,13 +260,13 @@ function build(e){
   const pr=pronTag(d);if(pr)tags.push(['pron',pr])}
   if(opts)out.push({k:'nbopen1',g,lvl:d.hero.lvl||e.lv||'',num:d.hero.num||e.o||'',name:d.hero.name,hook:d.hook,title:titleHtml(e,d),topic:e.s||d.hero.sub||'',mission:d.hero.mission||'',tags,opts,keyPhrase:d.key,face:d.hero.face,rev:rv,community:!rv&&d.community?d.community:null,characterRole:!rv&&d.character?d.character.role:''});
   const rl=readingText(d);
-  if(rl){out.push({k:'nbopen2',g,lines:rl,vocab:d.vocab,hook:d.hook,name:d.hero.name,face:d.hero.face,emo:d.hero.emo||[],lvl:d.hero.lvl||'',topic:e.s||''})}
+  if(rl){out.push({k:'nbopen2',g,lines:rl,vocab:d.vocab,hook:d.hook,name:d.hero.name,face:d.hero.face,emo:d.hero.emo||[],lvl:d.hero.lvl||'',topic:e.s||'',episode:e.n||''})}
   const seed=hash((rv?(P&&P.cid||''):'')+e.n+'c');const t0=TX.pt;
   const subs=[];
   const cq=rv?whereQ(e,d,seed):(hash(e.n)%2?firstQ(e,d,t0,seed)||topicQ(e,t0,seed):topicQ(e,t0,seed)||firstQ(e,d,t0,seed));
   const gq=gapQ(e,d,rl||[],t0,seed)||(rv?gapTok(e,d,rl||[],seed):null);
   if(cq)subs.push({t:'q',d:cq});if(gq)subs.push({t:'g',d:gq});
-  if(subs.length)out.push({k:'nbopen3',g,subs,cnt:subs.length,name:d.hero.name,reading:rl?1:0});
+  if(subs.length)out.push({k:'nbopen3',g,subs,cnt:subs.length,name:d.hero.name,reading:rl?1:0,episode:e.n||''});
   const thread=buildThread(e,d);if(thread)out.push(thread);
   const reply=buildReply(e,d),choice=buildChoice(e,d),prag=buildPrag(e,d),fluency=buildFluency(e,d),review=buildReview(e);
   const bridges=buildBridges(e,d);
@@ -292,7 +295,7 @@ function normalizeNeighborContent(e){
   // do diálogo do próprio episódio, mantendo a língua-alvo e a tradução disponível.
   lines.forEach(l=>{String(l[1]).split(/\s+/).map(x=>x.replace(/^[^\p{L}]+|[^\p{L}À-ÿ'-]+$/gu,'')).filter(x=>x.length>=4).slice(0,4).forEach(w=>addV([w,'💬',l[2]||'']))});
   const altWords=()=>vocab.map(v=>v[0]).filter(Boolean);
-  const optsFor=(right)=>{const pool=[...new Set(altWords().filter(x=>x!==right))];while(pool.length<2)pool.push(pool.length?'outra opção':'uma opção');return [right,pool[0],pool[1]]};
+  const optsFor=(right)=>{const pool=[...new Set(altWords().filter(x=>x!==right))];if(pool.length<2)return null;return [right,pool[0],pool[1]]};
   frames.forEach(f=>{
     if(!f||!Array.isArray(f.items))return;
     if((f.k==='nbvocab'||f.k==='nbfind')&&f.items.length<5){
@@ -300,8 +303,7 @@ function normalizeNeighborContent(e){
     }
     if(f.k==='nbctx'&&f.items.length<5){
       const base=f.items[0]||{ic:'🎯',sit:'Complete a fala: “____”',opts:['A','B','C'],a:0,why:''};
-      let i=0;while(f.items.length<5&&i<vocab.length){const w=vocab[i++][0],oo=optsFor(w);f.items.push({ic:base.ic||'🎯',sit:String(base.sit||'').replace(/“[^”]*”|"[^"]*"/,'“'+w+'”'),opts:oo,a:0,why:(w+' · '+(vocab.find(v=>v[0]===w)||[])[2]||'')});}
-      while(f.items.length<5){const n=f.items.length+1;f.items.push({ic:base.ic||'🎯',sit:String(base.sit||'Complete a fala')+' · '+n,opts:(base.opts||['A','B','C']).slice(0,3),a:base.a||0,why:base.why||''});}
+      let i=0;while(f.items.length<5&&i<vocab.length){const w=vocab[i++][0],oo=optsFor(w);if(!oo)continue;f.items.push({ic:base.ic||'🎯',sit:String(base.sit||'').replace(/“[^”]*”|"[^"]*"/,'“'+w+'”'),opts:oo,a:0,why:(w+' · '+(vocab.find(v=>v[0]===w)||[])[2]||'')});}
     }
     if(f.k==='nbtap'){
       const target=e.rev?12:6;
@@ -309,7 +311,7 @@ function normalizeNeighborContent(e){
       lines.forEach(addQ);(frames.find(x=>x&&x.k==='nbtrip')?.stops||[]).forEach(x=>{if(x&&x.ln)addQ([x.nm||'',x.ln[0],x.ln[1]||''])});
       const existing=f.items.slice();let i=0;
       while(f.items.length<target&&i<pool.length){const l=pool[i++],right=l[1],old=existing[f.items.length%Math.max(1,existing.length)]||{};const oo=(old.opts||[]).map(x=>Array.isArray(x)?x:x).filter(Boolean);const choices=[];const addO=x=>{const val=Array.isArray(x)?x[1]:x;if(val&&!choices.some(y=>String(y[1]||y)===String(val)))choices.push(Array.isArray(x)?x:["💬",String(val)])};addO(["💬",right]);oo.forEach(addO);for(const z of pool){if(choices.length>=3)break;if(z[1]!==right)addO(["💬",z[1]])}while(choices.length<3)choices.push(["💬",'…']);f.items.push({q:l[1],pt:l[2]||'',opts:choices.slice(0,3),a:0,line:i-1,why:l[1]});}
-      while(f.items.length<target&&existing.length){const old=existing[f.items.length%existing.length];f.items.push(Object.assign({},old,{q:String(old.q||'Pergunta')+' · '+(f.items.length+1)}));}
+      while(f.items.length<target&&existing.length){const old=existing[f.items.length%existing.length];const alt=pool[f.items.length%Math.max(1,pool.length)];if(!alt)break;f.items.push(Object.assign({},old,{q:alt[1],pt:alt[2]||old.pt||'',why:alt[1]}));}
     }
   });
 }
