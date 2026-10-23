@@ -71,3 +71,19 @@ def ep(n, title, sub, pattern, why, review, names, cast_ids, stage_rs, stage_cha
     vb = dict(title=verbs_title, tip=verbs_tip, items=verbs)
     more = dict(mold=mold, speak=speak, trap=mtrap, gap=mgap, expq=expq, missions=missions)
     return dict(n=n, v2=v2, extra=extra, verbs=vb, more=more)
+
+
+def OB(n, line_en, line_pt, p='b', text=None, year=None):
+    """Obra do episódio reaproveitada do episódio antigo (tools/v3/obras_old_121_160.json): nome, tipo, ano, texto e arte da capa."""
+    import json, os, re
+    o = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras_old_121_160.json'), encoding='utf-8'))[str(n)]
+    a = o['a']
+    if text is None:
+        t = o['panel'].strip()
+        if len(t) > 340:
+            t = t[:340]
+            t = t[:max(t.rfind('. '), t.rfind('.')) + 1]
+        text = t
+    pa = o['pa'] or {}
+    y = year or a['y']
+    return dict(name=a['w'], kind='%s · %s' % (a['k'], y), year=y, text=text, line=[line_en, line_pt], pa=dict(t=pa.get('t', 'toyshop'), e=pa.get('e', ['📖', '✨', '🎈']), p=p, v=0))
