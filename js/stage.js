@@ -67,11 +67,13 @@ FXR.hotscene=function(f,st,n){
   st.innerHTML=`<div class="step fx ps-hs">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Explore a cena')} <small id="pghc">0/${hot.length}</small></h2>
   ${stage({rs:f.rs||main.rs,chars:f.chars||main.chars,h:'hot',over:btns})}
   <div class="ps-hot-info" id="pghi"><b>${H(f.hint||'Toque nos objetos brilhantes para ouvir o nome em inglês.')}</b></div>
+  <div class="ps-hot-bank" id="pghb">${hot.map((o,i)=>`<button type="button" class="ps-hb" data-i="${i}"><span>${o.e}</span><b>${H(o.en)}</b><i>?</i></button>`).join('')}</div>
+  <div class="ps-obralock" id="pglock">🔒 Descubra os ${hot.length} objetos para abrir a obra do dia</div>
   <div class="ps-obracard" id="pgobra" hidden></div></div>`;
-  const info=q('#pghi',st),cnt=q('#pghc',st),obra=q('#pgobra',st);
+  const info=q('#pghi',st),cnt=q('#pghc',st),obra=q('#pgobra',st),bank=q('#pghb',st),lock=q('#pglock',st);
   const reveal=()=>{
     const o=f.obra||{};
-    obra.hidden=false;
+    obra.hidden=false;if(lock)lock.hidden=true;
     obra.innerHTML=`${o.pa&&typeof CULT_PROC==='function'?`<div class="ps-obra-art">${CULT_PROC(o.pa)}</div>`:''}
     <div class="ps-obra-t"><small>A obra de hoje · ${H(o.kind||'')}</small><h3>${H(o.name||'')}</h3><p>${H(o.text||'')}</p>
     ${o.line?`<button type="button" class="ps-line" data-say="${H(o.line[0])}"><span>🔊</span><div><b>${H(o.line[0])}</b><small>${H(o.line[1]||'')}</small></div></button>`:''}</div>`;
@@ -80,8 +82,8 @@ FXR.hotscene=function(f,st,n){
     cta('Continuar',true,true);
   };
   st.querySelectorAll('.ps-hot').forEach(b=>b.onclick=()=>{
-    const i=+b.dataset.i,o=hot[i];seen.add(i);b.classList.add('seen');last=i;
-    info.innerHTML=`<span class="ps-hot-e">${o.e}</span><div><b>${H(o.en)}</b><small>${H(o.pt)}</small>${o.say?`<em>${H(o.say)}</em>`:''}</div><button type="button" class="ps-hot-sp" aria-label="Ouvir">🔊</button>`;
+    const i=+b.dataset.i,o=hot[i];seen.add(i);b.classList.add('seen');last=i;const hb=bank&&bank.querySelector('[data-i="'+i+'"]');if(hb){hb.classList.add('seen');hb.querySelector('i').textContent='✓'}
+    info.innerHTML=`<span class="ps-hot-e">${o.e}</span><div><b>${H(o.en)}</b><small>${H(o.pt)}</small>${o.say?`<em>${H(o.say)}</em>`:''}${o.sayPt?`<small class="ps-hot-spt">${H(o.sayPt)}</small>`:''}</div><button type="button" class="ps-hot-sp" aria-label="Ouvir">🔊</button>`;
     info.classList.remove('pop');void info.offsetWidth;info.classList.add('pop');
     const sp=q('.ps-hot-sp',info);if(sp)sp.onclick=()=>tts(o.say||o.en);
     tts(o.say||o.en);cnt.textContent=seen.size+'/'+hot.length;

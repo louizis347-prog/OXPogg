@@ -64,6 +64,22 @@ def bag_of(prev):
             dict(ic='💬', l='Expressões', items=exps), dict(ic='🎧', l='Sons', items=snd)]
 
 
+HOTPT = {
+    "It's late. I'm tired.": 'É tarde. Estou cansado.', "I'm at the station.": 'Estou na estação.', "I'm from Peru.": 'Eu sou do Peru.',
+    "I'm Paddington. This is my bag.": 'Eu sou o Paddington. Esta é a minha mala.', "I'm hungry. I want a sandwich.": 'Estou com fome. Quero um sanduíche.',
+    "Oh dear! I'm late!": 'Meu Deus! Estou atrasado!', 'Are you in a hurry?': 'Você está com pressa?', 'Are you lost?': 'Você está perdida?',
+    'Are you new here?': 'Você é nova aqui?', 'Are you a hat? No, I am not!': 'Você é um chapéu? Não, não sou!',
+    "She's Glinda. She's a good witch.": 'Ela é a Glinda. Ela é uma bruxa boa.', "He's the Wizard of Oz.": 'Ele é o Mágico de Oz.',
+    "He's kind. She's kind.": 'Ele é gentil. Ela é gentil.', "She's far from home.": 'Ela está longe de casa.',
+    "She's from Kansas, over the rainbow.": 'Ela é do Kansas, além do arco-íris.',
+    'Is she a fairy? Yes, she is.': 'Ela é uma fada? Sim, é.', "Is it Captain Hook's ship?": 'É o navio do Capitão Gancho?',
+    "Is it a bird? No, it isn't.": 'É um pássaro? Não, não é.', 'Is he angry? Yes, he is!': 'Ele está bravo? Sim, está!',
+    'Is it a star? Yes, it is.': 'É uma estrela? Sim, é.',
+    'I see two toys.': 'Vejo dois brinquedos.', 'I see three balloons.': 'Vejo três balões.', 'Andy loves puppies.': 'O Andy adora cachorrinhos.',
+    'I love stories about planets.': 'Eu adoro histórias sobre planetas.', 'Parties are fun!': 'Festas são divertidas!',
+}
+
+
 def build(old, X, XT, VB, prev):
     B = X['base']
     a, b = X['names']
@@ -94,7 +110,7 @@ def build(old, X, XT, VB, prev):
                          next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
                          rs=rs['review'], chars=mc))
     frames.append(fr('hotscene', title='Explore a cena', hint='Toque nos objetos brilhantes para ouvir o nome em inglês.',
-                     rs=st['rs'], chars=st['chars'], hot=X['hot'], say='Toque nos objetos brilhantes!',
+                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
                      obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
     frames.append(fr('pgscene', cast=B['cast'], lines=B['lines'], speakers=X['speakers'], rs=st['rs'], chars=st['chars'],
                      say='Ouça a cena e leia junto.'))
