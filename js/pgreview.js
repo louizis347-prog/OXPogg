@@ -15,7 +15,11 @@ function collect(cid,idx){
     const sheets=e.fr.filter(f=>f.k==='pgsheet');
     const words=[];sheets.forEach(f=>(f.items||[]).forEach(it=>{if(it.fig&&it.fig!=='🎧'&&it.say&&!words.some(w=>w.say===it.say))words.push({fig:it.fig,say:it.say,pt:it.ptWord||''})}));
     const items=[];sheets.forEach(f=>{if(f.review===false)return;(f.items||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})))});
-    return {e,i,rule,words,items,stage:e.stage||{}};
+    const vf=e.fr.find(f=>f.k==='verbs')||{};
+    (vf.quiz||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})));
+    const exps=((e.fr.find(f=>f.k==='pgexp')||{}).items)||[];
+    const lab=e.fr.find(f=>f.k==='pglab')||null;
+    return {e,i,rule,words,items,verbs:vf.items||[],exps,lab,stage:e.stage||{}};
   });
 }
 
@@ -32,11 +36,18 @@ function open(cid,idx){
     ${(R.pairs||[]).slice(0,3).map(p=>`<button type="button" class="ps-pair mini" data-say="${H(p.a.replace(/<[^>]+>/g,''))}, ${H(p.b.replace(/<[^>]+>/g,''))}"><div class="ps-pc one"><span class="ps-big">${p.ico}</span><b>${p.a}</b></div><span class="ps-arrow">➜</span><div class="ps-pc many"><span class="ps-big">${p.ico.repeat(p.n||2)}</span><b>${p.b}</b></div></button>`).join('')}
     <button type="button" class="ps-btn" data-ep="${d.i}">↩ Rever o episódio</button></div></article>`}).join('');
   const words=[];data.forEach(d=>d.words.forEach(w=>{if(!words.some(x=>x.say===w.say))words.push(w)}));
-  const pool=shuffle(data.flatMap(d=>d.items)).slice(0,Math.min(8,data.flatMap(d=>d.items).length));
+  const verbs=[];data.forEach(d=>d.verbs.forEach(v=>{if(!verbs.some(x=>x.v===v.v))verbs.push(v)}));
+  const exps=[];data.forEach(d=>d.exps.forEach(x=>{if(!exps.some(y=>y.en===x.en))exps.push(x)}));
+  const sounds=data.map(d=>d.lab).filter(Boolean);
+  const HL=t=>H(String(t)).replace(/\*\*(.+?)\*\*/g,'<mark>$1</mark>');
+  const pool=shuffle(data.flatMap(d=>d.items)).slice(0,Math.min(10,data.flatMap(d=>d.items).length));
   el.innerHTML=`<div class="ps-rv-top"><button type="button" class="ps-hbtn" id="pgrx" aria-label="Fechar">×</button><div><small>Revisão do arco</small><h2>Do episódio 1 ao ${last.i+1}</h2></div></div>
   <div class="ps-rv-body">
-   <section class="ps-rv-hero">${S.stage({rs:last.stage.rs||'street',chars:last.stage.chars||[],h:'scene'})}<p>Você já viu <b>${data.length}</b> ${data.length>1?'padrões':'padrão'} e <b>${words.length}</b> palavras com figura. Rever é o que fixa!</p></section>
+   <section class="ps-rv-hero">${S.stage({rs:last.stage.rs||'street',chars:last.stage.chars||[],h:'scene'})}<p>Você já viu <b>${data.length}</b> ${data.length>1?'padrões':'padrão'}, <b>${verbs.length}</b> verbos, <b>${exps.length}</b> expressões e <b>${words.length}</b> palavras com figura. Rever é o que fixa!</p></section>
    <section><h3 class="ps-rv-h">📌 Padrões que você já viu</h3><div class="ps-rv-cards">${patterns}</div></section>
+   <section><h3 class="ps-rv-h">🏃 Verbos <small>toque para ouvir</small></h3><div class="ps-rv-verbs">${verbs.map(v=>`<button type="button" class="ps-rv-v" data-say="${H(v.ex[0])}"><span class="ps-rv-vi">${v.ic}</span><div><b>${H(v.v)} <em>${H(v.pt)}</em></b><small>${HL(v.f[0][1])}</small><small>${HL(v.f[1][1])}</small></div><i>🔊</i></button>`).join('')}</div></section>
+   <section><h3 class="ps-rv-h">💬 Expressões e gírias <small>toque para ouvir</small></h3><div class="ps-rv-exps">${exps.map(x=>`<button type="button" class="ps-rv-x" data-say="${H(x.en)}"><span class="ps-ico">${x.ic}</span><div><b>${H(x.en)}</b><small>${H(x.pt)}</small></div><em class="ps-extag ${x.tag==='Gíria'?'g':x.tag==='Informal'?'i':'e'}">${H(x.tag)}</em></button>`).join('')}</div></section>
+   <section><h3 class="ps-rv-h">🎧 Sons que você treinou</h3><div class="ps-rv-snd">${sounds.map(l=>`<div class="ps-rv-sn"><b>🔬 ${H(l.short)}</b><div>${(l.ex||[]).map(x=>`<button type="button" class="ps-btn" data-say="${H(x[0])}">🔊 ${H(x[0])}</button>`).join('')}</div></div>`).join('')}</div></section>
    <section><h3 class="ps-rv-h">🖼️ Palavras com figura <small>toque para ouvir</small></h3><div class="ps-rv-words">${words.map(w=>`<button type="button" class="ps-rv-w" data-say="${H(w.say)}"><span>${w.fig}</span><b>${H(w.say)}</b></button>`).join('')}</div></section>
    <section><h3 class="ps-rv-h">🎯 Pratique tudo <span class="ps-count" id="pgrvc">0/${pool.length}</span></h3><div class="ps-qs" id="pgrvq">${pool.map(S.cardHTML).join('')}</div><div class="ps-rv-sum" id="pgrvs" hidden></div></section>
   </div>`;

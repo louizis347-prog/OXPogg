@@ -201,3 +201,41 @@ EXTRA = [
               hunt_p('puppies', [('🐶', 'puppies'), ('🐱', 'cats'), ('📦', 'boxes')], 0, 'cachorrinhos'),
               hunt_w('balloons', ['balloon', 'balloons'], 1, '**balloons** termina com o som /z/.')]),
 ]
+
+
+def verb(v, ic, pt, eu, eu_pt, he, note_extra=''):
+    """he: frase com a terminação em **negrito** (ex.: 'He eat**s** a sandwich.')."""
+    import re
+    m = re.search(r'(\w+)\*\*(\w+)\*\*', he)
+    form = (m.group(1) + m.group(2)) if m else v
+    return dict(v=v, ic=ic, pt=pt, f=[['eu', eu], ['ele/ela', he]], ex=[eu, eu_pt],
+                note='**%s** = %s. Com he/she: **%s**.%s' % (v, pt, form, note_extra))
+
+
+VERBS = [
+    dict(title='Verbos para viver como o Paddington', tip='Quatro verbos: eat, drink, sleep e love.', items=[
+        verb('eat', '🥪', 'comer', 'I eat marmalade sandwiches.', 'Eu como sanduíches de geleia de laranja.', 'He eat**s** a sandwich.'),
+        verb('drink', '🫖', 'beber', 'I drink tea every day.', 'Eu bebo chá todo dia.', 'She drink**s** tea.'),
+        verb('sleep', '😴', 'dormir', 'I sleep in a small bed.', 'Eu durmo numa cama pequena.', 'He sleep**s** a lot.'),
+        verb('love', '❤️', 'amar, adorar', 'I love my new home.', 'Eu adoro minha casa nova.', 'She love**s** Paddington.')]),
+    dict(title='Verbos para seguir o Coelho', tip='Quatro verbos: run, ask, follow e fall.', items=[
+        verb('run', '🏃', 'correr', 'I run to the tea party.', 'Eu corro para a festa do chá.', 'The Rabbit run**s** fast.'),
+        verb('ask', '❓', 'perguntar', 'I ask a question.', 'Eu faço uma pergunta.', 'Alice ask**s** many questions.'),
+        verb('follow', '👣', 'seguir', 'I follow the White Rabbit.', 'Eu sigo o Coelho Branco.', 'She follow**s** the rabbit.'),
+        verb('fall', '⬇️', 'cair', 'I fall down the hole.', 'Eu caio na toca.', 'Alice fall**s** slowly.')]),
+    dict(title='Verbos para a estrada de tijolos amarelos', tip='Quatro verbos: walk, help, sing e need.', items=[
+        verb('walk', '🚶', 'andar, caminhar', 'I walk on the yellow road.', 'Eu ando pela estrada amarela.', 'Dorothy walk**s** with her friends.'),
+        verb('help', '🤝', 'ajudar', 'I help my friends.', 'Eu ajudo meus amigos.', 'He help**s** Dorothy.'),
+        verb('sing', '🎵', 'cantar', 'I sing a song.', 'Eu canto uma música.', 'She sing**s** very well.'),
+        verb('need', '🙏', 'precisar', 'I need a friend.', 'Eu preciso de um amigo.', 'The Scarecrow need**s** a brain.')]),
+    dict(title='Verbos para a Terra do Nunca', tip='Quatro verbos: fly, play, live e find.', items=[
+        verb('fly', '🕊️', 'voar', 'I fly over the sea.', 'Eu voo sobre o mar.', 'Peter fl**ies** every night.'),
+        verb('play', '🎮', 'brincar, jogar', 'I play with the fairy.', 'Eu brinco com a fada.', 'He play**s** all day.'),
+        verb('live', '🏝️', 'morar', 'I live in Neverland.', 'Eu moro na Terra do Nunca.', 'Peter live**s** in Neverland.'),
+        verb('find', '🔍', 'achar, encontrar', 'I find the ship.', 'Eu encontro o navio.', 'She find**s** a star.')]),
+    dict(title='Verbos para a festa do Andy', tip='Quatro verbos: play, watch, carry e tell.', items=[
+        verb('play', '🎮', 'brincar, jogar', 'I play with my friends.', 'Eu brinco com meus amigos.', 'Woody play**s** with Andy.'),
+        verb('watch', '👀', 'assistir, observar', 'I watch the party.', 'Eu assisto à festa.', 'He watch**es** the toys.'),
+        verb('carry', '📦', 'carregar', 'I carry a box.', 'Eu carrego uma caixa.', 'She carr**ies** the balloons.'),
+        verb('tell', '🗣️', 'contar', 'I tell a story.', 'Eu conto uma história.', 'Buzz tell**s** stories.')]),
+]

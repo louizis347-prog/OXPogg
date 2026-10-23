@@ -355,3 +355,17 @@
 #player.ps .ps-q.pic{flex-direction:column;align-items:stretch}
 #player.ps .ps-q.pic .ps-fig{width:100%;height:72px;font-size:44px}
 #player.ps .ps-q.pic .ps-o{flex:1 1 0;min-width:0}
+
+/* revisão: verbos, expressões e sons */
+.ps-rv-verbs,.ps-rv-exps{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.ps-rv-v,.ps-rv-x{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;border-radius:18px;border:2px solid #dce7fb;background:#fff;text-align:left;cursor:pointer}
+.ps-rv-v div,.ps-rv-x div{flex:1;min-width:0}
+.ps-rv-vi{flex:none;width:56px;height:56px;border-radius:50%;background:#eef4ff;display:grid;place-items:center;font-size:32px}
+.ps-rv-v b,.ps-rv-x b{display:block;font:900 21px/1.2 system-ui;color:#12315a}.ps-rv-v b em{font:700 15px system-ui;font-style:normal;color:#4f6a86;margin-left:6px}
+.ps-rv-v small,.ps-rv-x small{display:block;font:600 15px/1.4 system-ui;color:#5b6b86}
+.ps-rv-v small mark{background:#e1f8ea;color:#0f6b36;border-radius:4px;padding:0 3px}
+.ps-rv-v i{font-style:normal;font-size:18px;opacity:.7}
+.ps-rv-x .ps-extag{flex:none}
+.ps-rv-snd{display:grid;gap:10px}
+.ps-rv-sn{padding:12px;border-radius:18px;background:#fff;border:2px solid #dce7fb;display:grid;gap:8px}
+.ps-rv-sn>b{font:800 18px system-ui;color:#12315a}.ps-rv-sn>div{display:flex;flex-wrap:wrap;gap:8px}

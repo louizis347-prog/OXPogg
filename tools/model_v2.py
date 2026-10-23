@@ -11,7 +11,7 @@ import json, os, sys, copy
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from model_v2_data import V2  # noqa: E402
-from model_v2_extra import EXTRA  # noqa: E402
+from model_v2_extra import EXTRA, VERBS  # noqa: E402
 
 
 def main_chars(st):
@@ -25,7 +25,46 @@ def strip_tags(s):
     return re.sub(r'<[^>]+>', '', s)
 
 
-def build(old, X, XT):
+def third(it):
+    import re
+    m = re.search(r'(\w+)\*\*(\w+)\*\*', it['f'][1][1])
+    return (m.group(1) + m.group(2)) if m else it['v']
+
+
+def ing(v):
+    return (v[:-1] if v.endswith('e') and not v.endswith('ee') else v) + 'ing'
+
+
+def verb_quiz(vb):
+    """Perguntas de revisão dos verbos: a forma certa com he/she."""
+    out = []
+    for it in vb['items']:
+        sent = it['f'][1][1].replace('**', '')
+        form = third(it)
+        opts = [it['v'], form, ing(it['v'])]
+        out.append(dict(text=sent.replace(form, '___', 1), pt='Verbo **%s** (%s) com he/she.' % (it['v'], it['pt']), opts=opts,
+                        a=1, say=sent, why='Com he/she o verbo ganha o final: **%s**.' % form))
+    return out
+
+
+def bag_of(prev):
+    """Mochila do episódio anterior: palavras, verbos, expressões, padrão e sons."""
+    Xp, XTp, VBp = prev
+    Bp = Xp['base']
+    pt = {w.lower(): p for w, p, _ in Bp['vocab']}
+    for h in Xp['hot']:
+        pt.setdefault(h['en'].lower(), h['pt'])
+    words = [dict(ic=e, t=w, pt=pt.get(w.lower(), '')) for e, w in Bp['balloons']]
+    verbs = [dict(ic=v['ic'], t=v['v'], pt=v['pt'], s=v['f'][0][1].rstrip('.')) for v in VBp['items']]
+    exps = [dict(ic=x['ic'], t=x['en'], pt=x['pt']) for x in XTp['exp']]
+    R = Xp['rule']
+    pat = [dict(ic='📌', t=R['head'], pt=R['sub'])] + [dict(ic=u['ico'], t=u['en'], pt=u['pt']) for u in R.get('uses', [])[:3]]
+    snd = [dict(ic='🔬', t=XTp['lab']['short'], pt='', s=', '.join(e[0] for e in XTp['lab']['ex']))]
+    return [dict(ic='📌', l='Padrão', items=pat), dict(ic='🔤', l='Palavras', items=words), dict(ic='🏃', l='Verbos', items=verbs),
+            dict(ic='💬', l='Expressões', items=exps), dict(ic='🎧', l='Sons', items=snd)]
+
+
+def build(old, X, XT, VB, prev):
     B = X['base']
     a, b = X['names']
     st = X['stage']
@@ -47,9 +86,10 @@ def build(old, X, XT):
     frames.append(fr('cover', art=B['cover_art'], sub=B['cover_sub'], badge='A1', snd=old['fr'][0].get('snd', 'bell'),
                      say=B['cover_say'], gancho=X['gancho'], obra='%s · %s' % (ob['name'], ob['year']),
                      stage=dict(rs=st['rs'], chars=st['chars'])))
-    if X['review']:  # revisão do episódio anterior fica no INÍCIO deste episódio
-        R = B['review']
-        frames.append(fr('review', prev=R['prev'], work=R['work'], recap=R['recap'], bag=R['bag'],
+    if X['review'] and prev:  # revisão do episódio anterior fica no INÍCIO deste episódio
+        Bp = prev[0]['base']
+        frames.append(fr('review', prev=Bp['title'], work=prev[0]['obra']['name'],
+                         recap=[list(x) for x in Bp['wrap_recap']], bag=bag_of(prev),
                          lead='Abra cada bolso da mochila e relembre o episódio anterior!',
                          next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
                          rs=rs['review'], chars=mc))
@@ -83,6 +123,12 @@ def build(old, X, XT):
                           why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
     frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
                      bubble=[a, 'Listen and choose the word!', 'Ouça e escolha a palavra da figura!']))
+    # verbos (4) + missão dos verbos
+    frames.append(fr('verbs', title=VB['title'], items=VB['items'], tip=VB['tip'], say='Vamos ver os verbos de hoje!', rs=rs['build'], chars=mc,
+                     quiz=verb_quiz(VB), bubble=[b, "These are today's verbs!", 'Estes são os verbos de hoje!']))
+    frames.append(fr('vplay', title='Missão dos verbos', items=VB['items'], plan=[[0, 0], [1, 0], [2, 0], [3, 0], [0, 3], [1, 3], [2, 3]],
+                     say='Missão dos verbos: 7 passos. Eu ajudo você!', rs=rs['build'], chars=mc,
+                     bubble=[a, 'Verb mission! I will help you.', 'Missão dos verbos! Eu ajudo você.']))
     # expressões comuns e gírias + cena com as expressões
     frames.append(fr('pgexp', title='Expressões e gírias', items=XT['exp'], rs=rs['vplay'], chars=mc,
                      say='Toque para ouvir cada expressão.', bubble=[a, 'This is how people really talk!', 'É assim que as pessoas falam de verdade!']))
@@ -134,7 +180,9 @@ def main():
         for f, d in files.items():
             for i, e in enumerate(d):
                 if e['n'] == X['n']:
-                    d[i] = build(e, X, EXTRA[V2.index(X)])
+                    k = V2.index(X)
+                    prev = (V2[k - 1], EXTRA[k - 1], VERBS[k - 1]) if k else None
+                    d[i] = build(e, X, EXTRA[k], VERBS[k], prev)
                     done += 1
     for f, d in files.items():
         with open(f, 'w', encoding='utf-8') as fh:
