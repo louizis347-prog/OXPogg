@@ -4436,7 +4436,7 @@ FXR.bridge=function(f,st,n){
   st.innerHTML=`<div class="step fx fx-cult fx-bridge" style="--c1:${fc[0]};--c2:${fc[1]}">${fxKindBar(f,n)}
   <h2 class="fx-h">Da obra para a lição</h2>
   <div class="br-path"><span class="br-from" style="color:${chipTx}">${esc(f.kind||'')} ${wk}</span><i class="br-arrow" aria-hidden="true">➜</i><span class="br-to">${tp}</span></div>
-  <p class="cu-why">Você acabou de ver palavras do universo de <b>${wk}</b>. Elas são diferentes das palavras do dia a dia de propósito: ampliam o seu repertório. Agora vamos usar o <b>mesmo molde de frase</b> em situações comuns.</p>
+  <p class="cu-why">${f.why?mk(f.why):`Você acabou de ver palavras do universo de <b>${wk}</b>. Elas são diferentes das palavras do dia a dia de propósito: ampliam o seu repertório. Agora vamos usar o <b>mesmo molde de frase</b> em situações comuns.`}</p>
   <div class="br-pair">
    ${f.from?`<button class="br-card br-a" data-s="${esc(plain(f.from[0]))}"><small>Na obra</small><b>${mk(f.from[0])}</b><span>${esc(f.from[1])}</span></button>`:''}
    ${f.to?`<button class="br-card br-b" data-s="${esc(plain(f.to[0]))}"><small>Na vida real · lição de hoje</small><b>${mk(f.to[0])}</b><span>${esc(f.to[1]||'')}</span></button>`:''}
