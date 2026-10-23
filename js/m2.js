@@ -780,7 +780,7 @@ FXR.produce=function(f,st,n){
       const b=document.querySelector('#pcta'),body=document.querySelector('#pbody');if(!body)return;
       const isDone=P.steps&&P.steps[P.i]==='done';
       const atB=body.scrollHeight-body.scrollTop-body.clientHeight<56;
-      const show=isDone||(!b.disabled&&(FOOT.off||atB));
+      const show=isDone||(!b.disabled&&(FOOT.off||atB||(P.e&&P.e.pilot)));
       b.classList.toggle('foot-hid',!show);
     }catch(e){}
   };

@@ -71,7 +71,7 @@ window.render=function(){
         const f=P.e.fr[P.i];stp.dataset.fk=(f&&f.k)||'';
         stp.classList.add('lean');addArt(stp,(f&&f.k)||'');
         const w=(stp.innerText||'').trim().split(/\s+/).length;
-        if(w>46)stp.classList.add('lean-dense');
+        if(w>46&&!(P.e&&P.e.pilot))stp.classList.add('lean-dense');
       }
       chip();
     }

@@ -7,7 +7,7 @@ const eye=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r||3.2}" fill="#2a2230"/><c
 const cheek=(x,y)=>`<ellipse cx="${x}" cy="${y}" rx="4.2" ry="2.6" fill="#ff8aa0" opacity=".45"/>`;
 const smile=(x,y,w)=>`<path d="M${x-w} ${y} Q${x} ${y+w*.9} ${x+w} ${y}" stroke="#7a3b2e" stroke-width="2" fill="none" stroke-linecap="round"/>`;
 const shadow='<ellipse cx="50" cy="146" rx="26" ry="3.6" fill="#000" opacity=".16"/>';
-const wrap=b=>`<svg class="pg-ch" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">${shadow}${b}</svg>`;
+const wrap=b=>`<svg class="ps-ch" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">${shadow}${b}</svg>`;
 const hand=(x,y,c)=>`<circle cx="${x}" cy="${y}" r="5.5" fill="${c||SK}"/>`;
 const head=(c,r)=>`<circle cx="50" cy="48" r="${r||24}" fill="${c||SK}"/>`;
 
@@ -147,5 +147,5 @@ ranger:()=>wrap(`
  <path d="M34 36 Q40 26 52 25" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
  <path d="M36 68 L40 62 M64 68 L60 62" stroke="#5bd05b" stroke-width="3" stroke-linecap="round"/>`)
 };
-window.PogChars={ids:Object.keys(C),svg:id=>C[id]?C[id]():''};
+window.PogChars={ids:Object.keys(C),svg:id=>C[id]?C[id]():'',face:id=>C[id]?C[id]().replace('viewBox="0 0 100 150"','viewBox="14 2 72 72"').replace(shadow,''):''};
 })();

@@ -9,7 +9,7 @@ if(window.POG_CLOSEFIT===false)return;
 const MIN=.56;
 const $=(s,r)=>(r||document).querySelector(s);
 function kindOf(st){
-  if(typeof P!=='undefined'&&P&&P.isTest)return '';
+  if(typeof P!=='undefined'&&P&&(P.isTest||(P.e&&P.e.pilot)))return '';
   if(st.classList.contains('done'))return 'done';
   if(st.classList.contains('m2-wrap'))return 'm2';
   if(st.querySelector(':scope>.fx-recap,:scope>.clf-cols .fx-recap'))return 'wr';
