@@ -61,8 +61,8 @@ def bag_of(prev):
     R = Xp['rule']
     pat = [dict(ic='📌', t=R['head'], pt=R['sub'])] + [dict(ic=u['ico'], t=u['en'], pt=u['pt']) for u in R.get('uses', [])[:3]]
     snd = [dict(ic='🔬', t=XTp['lab']['short'], pt='', s=', '.join(e[0] for e in XTp['lab']['ex']))]
-    return [dict(ic='📌', l='Padrão', items=pat), dict(ic='🔤', l='Palavras', items=words), dict(ic='🏃', l='Verbos', items=verbs),
-            dict(ic='💬', l='Expressões', items=exps), dict(ic='🎧', l='Sons', items=snd)]
+    return [dict(ic='📌', l=u('Padrão'), items=pat), dict(ic='🔤', l=u('Palavras'), items=words), dict(ic='🏃', l=u('Verbos'), items=verbs),
+            dict(ic='💬', l=u('Expressões'), items=exps), dict(ic='🎧', l=u('Sons'), items=snd)]
 
 
 HOTPT = {
@@ -80,7 +80,7 @@ HOTPT = {
     'I love stories about planets.': 'Eu adoro histórias sobre planetas.', 'Parties are fun!': 'Festas são divertidas!',
 }
 
-LG = dict(
+LG = dict(ui={}, 
     hint='Toque nos objetos brilhantes para ouvir o nome em inglês.', badge='A1',
     remember=('What do you remember?', 'De que você se lembra?'), swap=('Swap the pieces and build sentences!', 'Troque as peças e monte frases!'),
     words=('Listen and choose the word!', 'Ouça e escolha a palavra da figura!'), verbs=("These are today's verbs!", 'Estes são os verbos de hoje!'),
@@ -88,6 +88,10 @@ LG = dict(
     complete=('Complete the sentences!', 'Complete as frases!'), careful=('Careful! Only one is right.', 'Cuidado! Só uma está certa.'),
     lab=("Let's train our ears!", 'Vamos treinar o ouvido!'), hunt=('Listen and hunt the sound!', 'Ouça e cace o som certo!'),
     pick=('Pick a mission! Which one do you want?', 'Escolha uma missão! Qual você quer?'), wrong=lambda v, form: ing(v), vq='Verbo **%s** (%s) com he/she.')
+
+
+def u(t):
+    return LG['ui'].get(t, t)
 
 
 def build(old, X, XT, VB, prev, MR=None):
@@ -116,24 +120,24 @@ def build(old, X, XT, VB, prev, MR=None):
         Bp = prev[0]['base']
         frames.append(fr('review', prev=Bp['title'], work=prev[0]['obra']['name'],
                          recap=[list(x) for x in Bp['wrap_recap']], bag=bag_of(prev),
-                         lead='Abra cada bolso da mochila e relembre o episódio anterior!',
-                         next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
+                         lead=u('Abra cada bolso da mochila e relembre o episódio anterior!'),
+                         next=u('Hoje: **%s**') % B['pattern_label'], say=u('Bora relembrar o episódio anterior antes de seguir!'),
                          rs=rs['review'], chars=mc))
-    frames.append(fr('hotscene', title='Explore a cena', hint=LG['hint'],
-                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
+    frames.append(fr('hotscene', title=u('Explore a cena'), hint=LG['hint'],
+                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=HOTPT.get(h['say'], '')) for h in X['hot']], say=u('Toque nos objetos brilhantes!'),
                      obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
     frames.append(fr('pgscene', cast=B['cast'], lines=B['lines'], speakers=X['speakers'], rs=st['rs'], chars=st['chars'],
-                     say='Ouça a cena e leia junto.'))
+                     say=u('Ouça a cena e leia junto.')))
     # você entendeu?
     quiz = [dict(ask=it['q'], speak=it['q'], pt=it['pt'], opts=it['opts'], a=it['a'], why=it['why']) for it in B['quiz']]
-    frames.append(fr('pgsheet', title='Você entendeu?', items=quiz, rs=rs['dquiz'], chars=mc, review=False,
+    frames.append(fr('pgsheet', title=u('Você entendeu?'), items=quiz, rs=rs['dquiz'], chars=mc, review=False,
                      bubble=[b, *LG['remember']]))
     # padrão com ilustração
     R = dict(X['rule'])
     R['formula'] = [{'from': r['from_'], 'to': r['to'], 'say': r.get('say'), 'note': r.get('note')} for r in R.get('formula', [])]
-    frames.append(fr('pgrule', rule=R, q=B['rdg_q'], rs=rs['rdg'], say='Veja o padrão com figuras e ouça os exemplos.'))
-    frames.append(fr('pgmold', title='Molde de frases', pages=MR['mold'], rs=rs['pat'], chars=mc,
-                     say='Toque nas peças e veja várias frases.', bubble=[a, *LG['swap']]))
+    frames.append(fr('pgrule', rule=R, q=B['rdg_q'], rs=rs['rdg'], say=u('Veja o padrão com figuras e ouça os exemplos.')))
+    frames.append(fr('pgmold', title=u('Molde de frases'), pages=MR['mold'], rs=rs['pat'], chars=mc,
+                     say=u('Toque nas peças e veja várias frases.'), bubble=[a, *LG['swap']]))
     # palavras com figura (todas de uma vez)
     pt = {}
     for w, p, note in B['vocab']:
@@ -147,46 +151,46 @@ def build(old, X, XT, VB, prev, MR=None):
         opts = [w, others[(i + 1) % len(others)], others[(i + 3) % len(others)]]
         opts = [opts[(k + i) % 3] for k in range(3)]
         p, note = pt.get(w.lower(), ('', ''))
-        items.append(dict(fig=emo, say=w, ask='Qual é a palavra?', opts=opts, a=opts.index(w), ptWord=p,
+        items.append(dict(fig=emo, say=w, ask=u('Qual é a palavra?'), opts=opts, a=opts.index(w), ptWord=p,
                           why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
-    frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
+    frames.append(fr('pgsheet', title=u('Palavras da cena'), layout='grid', items=items, rs=rs['vplay'], chars=mc,
                      bubble=[a, *LG['words']]))
     # verbos (4) + missão dos verbos
-    frames.append(fr('verbs', title=VB['title'], items=VB['items'], tip=VB['tip'], say='Vamos ver os verbos de hoje!', rs=rs['build'], chars=mc,
+    frames.append(fr('verbs', title=VB['title'], items=VB['items'], tip=VB['tip'], say=u('Vamos ver os verbos de hoje!'), rs=rs['build'], chars=mc,
                      quiz=verb_quiz(VB), bubble=[b, *LG['verbs']]))
-    frames.append(fr('vplay', title='Missão dos verbos', items=VB['items'], plan=[[0, 0], [1, 0], [2, 0], [3, 0], [0, 3], [1, 3], [2, 3]],
-                     say='Missão dos verbos: 7 passos. Eu ajudo você!', rs=rs['build'], chars=mc,
+    frames.append(fr('vplay', title=u('Missão dos verbos'), items=VB['items'], plan=[[0, 0], [1, 0], [2, 0], [3, 0], [0, 3], [1, 3], [2, 3]],
+                     say=u('Missão dos verbos: 7 passos. Eu ajudo você!'), rs=rs['build'], chars=mc,
                      bubble=[a, *LG['vmission']]))
     # expressões comuns e gírias + cena com as expressões
-    frames.append(fr('pgexp', title='Expressões e gírias', items=XT['exp'], quiz=MR['expq'], rs=rs['vplay'], chars=mc,
-                     say='Toque para ouvir cada expressão.', bubble=[a, *LG['exps']]))
+    frames.append(fr('pgexp', title=u('Expressões e gírias'), items=XT['exp'], quiz=MR['expq'], rs=rs['vplay'], chars=mc,
+                     say=u('Toque para ouvir cada expressão.'), bubble=[a, *LG['exps']]))
     es = XT['exp_scene']
-    frames.append(fr('pgscene', title='Na conversa de verdade', cast=B['cast'], lines=es['lines'], speakers=X['speakers'], rs=es['rs'],
-                     chars=st['chars'], say='Veja as expressões em uso. Elas estão destacadas.'))
+    frames.append(fr('pgscene', title=u('Na conversa de verdade'), cast=B['cast'], lines=es['lines'], speakers=X['speakers'], rs=es['rs'],
+                     chars=st['chars'], say=u('Veja as expressões em uso. Elas estão destacadas.')))
     gap = [dict(text=r['q'], pt=r['pt'], opts=r['opts'], a=r['a'], why=r['why'],
                 say=r['q'].replace('___', r['opts'][r['a']])) for r in X['gap']]
     gap = gap + MR['gap']
-    frames.append(fr('pgsheet', title='Complete as falas', items=gap, rs=rs['build'], chars=mc,
+    frames.append(fr('pgsheet', title=u('Complete as falas'), items=gap, rs=rs['build'], chars=mc,
                      bubble=[b, *LG['complete']]))
     trap = [dict(ask=r['q'], opts=r['opts'], a=r['a'], why=r['why'], say=strip_tags(r['opts'][r['a']])) for r in X['trap']]
     trap = trap + [dict(ask=r['ask'], opts=r['opts'], a=r['a'], why=r['why'], say=r.get('say') or strip_tags(r['opts'][r['a']])) for r in MR['trap']]
-    frames.append(fr('pgsheet', title='Qual está certa?', items=trap, rs=rs['order'], chars=mc,
+    frames.append(fr('pgsheet', title=u('Qual está certa?'), items=trap, rs=rs['order'], chars=mc,
                      bubble=[b, *LG['careful']]))
     # laboratório de sons + caça-sons (só se o episódio ainda não tiver o laboratório)
     if not any(f['k'] in ('soundlab', 'pglab') for f in frames):
         lab = dict(XT['lab'])
         frames.append(fr('pglab', rs=rs['soundlab'], chars=mc, bubble=[a, *LG['lab']], **lab))
-        frames.append(fr('pgsheet', title='Caça-sons', items=XT['hunt'], rs=rs['soundlab'], chars=mc,
+        frames.append(fr('pgsheet', title=u('Caça-sons'), items=XT['hunt'], rs=rs['soundlab'], chars=mc,
                          bubble=[b, *LG['hunt']]))
-    frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]] + [list(x) for x in MR['speak']], who=mc[0][0],
-                     say='Ouça cada frase e repita em voz alta.', rs=rs['dictate'], chars=mc))
+    frames.append(fr('pgspeak', title=u('Sua vez de falar'), items=[list(x) for x in B['dictate'][:3]] + [list(x) for x in MR['speak']], who=mc[0][0],
+                     say=u('Ouça cada frase e repita em voz alta.'), rs=rs['dictate'], chars=mc))
     pr = dict(B['produce'])
-    m1 = dict(ic=X['mission_ic'], name='Cena da obra', desc='Fale como os personagens.',
-              data=dict(prompt=pr['prompt'], ph='Escreva a sua resposta aqui…', chips=[pr['chips'][0]], model=pr['model'], check=pr['check'],
+    m1 = dict(ic=X['mission_ic'], name=u('Cena da obra'), desc=u('Fale como os personagens.'),
+              data=dict(prompt=pr['prompt'], ph=u('Escreva a sua resposta aqui…'), chips=[pr['chips'][0]], model=pr['model'], check=pr['check'],
                         kw=pr['kw'], tips=pr['tips'], ok=pr['ok'], reply=pr['reply']))
-    frames.append(fr('pgmission', title='Missão: sua vez!', missions=[m1] + MR['missions'], rs=rs['produce'], chars=mc,
-                     say='Escolha uma missão e mostre o que você aprendeu!', bubble=[a, *LG['pick']]))
-    frames.append(fr('wrap', title='Para levar', recap=B['wrap_recap'], teaser=B['teaser'], sticker=X['sticker'], rs=rs['wrap'], chars=mc))
+    frames.append(fr('pgmission', title=u('Missão: sua vez!'), missions=[m1] + MR['missions'], rs=rs['produce'], chars=mc,
+                     say=u('Escolha uma missão e mostre o que você aprendeu!'), bubble=[a, *LG['pick']]))
+    frames.append(fr('wrap', title=u('Para levar'), recap=B['wrap_recap'], teaser=B['teaser'], sticker=X['sticker'], rs=rs['wrap'], chars=mc))
 
     e = copy.deepcopy(old)
     e['t'] = B['title']

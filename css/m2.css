@@ -328,11 +328,11 @@
 .m2-vpi{font-size:72px;line-height:1}.m2-vpk>span{font-size:36px;line-height:1}.m2-lpc>span{font-size:60px;line-height:1}
 
 /* ---------- v49: mochila (revisão) ---------- */
-.m2-bagrow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:4px 0 12px}
-.m2-bt{position:relative;display:grid;justify-items:center;gap:2px;padding:12px 4px 8px;border-radius:20px;background:#fff;border:2.5px solid var(--bc,var(--m2));box-shadow:0 4px 0 var(--bc,var(--m2));animation:m2in .45s both;animation-delay:calc(var(--i)*70ms)}
+.m2-bagrow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:4px 0 12px}
+.m2-bt{min-width:0;position:relative;display:grid;justify-items:center;gap:2px;padding:12px 4px 8px;border-radius:20px;background:#fff;border:2.5px solid var(--bc,var(--m2));box-shadow:0 4px 0 var(--bc,var(--m2));animation:m2in .45s both;animation-delay:calc(var(--i)*70ms)}
 .m2-bt.c0{--bc:#7C4DFF}.m2-bt.c1{--bc:#12B3A8}.m2-bt.c2{--bc:#FF6F59}.m2-bt.c3{--bc:#E0499D}.m2-bt.c4{--bc:#F0B429}
 .m2-bti{font-size:30px;line-height:1;animation:m2bob 2.4s ease-in-out infinite;animation-delay:calc(var(--i)*.2s)}
-.m2-bt b{font:800 11px/1.1 var(--f-ui);color:var(--ink);text-align:center}
+.m2-bt b{font:800 11px/1.1 var(--f-ui);color:var(--ink);text-align:center;max-width:100%;overflow-wrap:anywhere}
 .m2-bt small{font:800 10px var(--f-ui);color:var(--muted)}
 .m2-btk{position:absolute;right:-5px;top:-7px;display:none;place-items:center;width:20px;height:20px;border-radius:50%;background:#1FAE6B;color:#fff;font:900 12px/1 var(--f-ui);font-style:normal}
 .m2-bt.open .m2-btk{display:grid}.m2-bt.cur{transform:translateY(3px);box-shadow:0 1px 0 var(--bc);background:color-mix(in srgb,var(--bc) 10%,#fff)}
@@ -343,7 +343,7 @@
 .m2-bi{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:16px;background:#fff;box-shadow:0 3px 0 rgba(0,0,0,.09);animation:m2pop .35s both;animation-delay:calc(var(--j)*60ms);text-align:left}
 .m2-bi>span{font-size:26px;line-height:1}.m2-bi b{font:800 15px var(--f-ui);color:var(--ink)}.m2-bi small{display:block;font:600 11.5px var(--f-ui);color:var(--muted)}
 .m2-bi:active{transform:translateY(2px)}
-@media(max-width:380px){.m2-bagrow{gap:5px}.m2-bt b{font-size:10px}}
+@media(max-width:380px){.m2-bagrow{gap:5px}.m2-bt b{font-size:10px}.m2-bt{padding:10px 2px 7px}.m2-bti{font-size:26px}}
 
 /* ---------- v49: Sua vez ilustrado ---------- */
 .m2-yt{margin:8px 0 12px}
