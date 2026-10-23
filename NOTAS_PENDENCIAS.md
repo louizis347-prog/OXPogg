@@ -40,3 +40,8 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Itens 1–5 (outra sessão) e 86–110 (esta sessão, tools/model_v3.py + tools/v3/ep_*.py + js/chars2.js com 25 personagens novos).
 - Para refazer: `python3 tools/model_v3.py` e conferir com `python3 tools/v3/check.py`.
 - Curso regular de inglês reduzido de 5.000 para 3.000 episódios (A1 466, A2 474, B1 530, B2 510, C1 510, C2 510), por pares, proporcional por arco, mantendo todos os arcos, os 30 episódios piloto e ≥70% do vocabulário único (ferramenta: tools/audit/en_reduce.py). Revisões do 'episódio anterior' refeitas pela cadeia original (18 do A1 ficaram sem quadro de revisão). Conversão ao modelo piloto vale só para os itens restantes (fora os 30 já feitos).
+
+## Programa gramatical do inglês regular (3.000 episódios)
+- Programa por nível em `tools/gram/syllabus.py` (A1 31 estruturas, A2 26, B1 26, B2 25, C1 22, C2 20), cada uma com janela de progressão e mínimo de pares.
+- `tools/gram/assign.py --apply` reatribuiu g.t/gs/fn de pares sem estrutura (marcados `regram:1`: 488 itens) para cobrir as estruturas faltantes na ordem certa. Pilotos e abertura/fechamento de nível intactos; vocabulário e títulos preservados.
+- Pendência: os quadros já assados dos itens `regram` ainda trazem o conteúdo antigo; ao converter ao modelo piloto, escrever a lição na nova estrutura (g.t).
