@@ -99,13 +99,17 @@ def repair_level(lv, eps):
                         if cw.get('kind'): w['k'] = cw['kind']
                         if cw.get('year'): w['y'] = cw['year']
                         if cob and cob.get('panels'): w['d'] = cob['panels'][0]
-            for o in olds:
-                for k in ('cultob', 'culttl', 'bridge', 'wrap', 'cultgame', 'cultx'):
+            for o in olds:                      # troca o nome antigo só nos textos de apoio (coach) e em rótulos exatos;
+                for k in ('cultob', 'culttl', 'bridge', 'wrap', 'cultgame', 'cultx'):   # nunca no meio de frases normais
                     for x in fr:
                         if x['k'] == k:
                             for q, v in list(x.items()):
-                                if q not in ('art', 'c', 'seed', 'cam', 'scene'):
-                                    x[q] = strings(v, lambda t, o=o: t.replace(o, canon))
+                                if q in ('art', 'c', 'seed', 'cam', 'scene'):
+                                    continue
+                                if q == 'coach' and isinstance(v, str):
+                                    x[q] = v.replace(o, canon)
+                                else:
+                                    x[q] = strings(v, lambda t, o=o: canon if t == o else t)
             for x in fr:
                 if x['k'] == 'bridge': x['work'] = canon
             if cob and cob.get('facts') and olds:
