@@ -64,18 +64,15 @@ def build(cid):
     ep=0
     for x in items:
         ep+=1
-        if cid=='en':
-            if 'xof' in x: continue   # continuação: fica na linha do principal
         rows_by[x['_lv']].append((ep,x))
     # en: ep range (pares)
     def eprange(ep,x):
-        return f'{ep}–{ep+1}' if cid=='en' else str(ep)
+        return str(ep)
     # numeração em pares para en
     if cid=='en':
         rows_by={lv:[] for lv in LV}; k=0
         for x in items:
-            if 'xof' in x: continue
-            rows_by[x['_lv']].append((k*2+1,x)); k+=1
+            k+=1; rows_by[x['_lv']].append((k,x))
     show_rt=(cid=='en')
     css=f'''<style>
 @page{{size:A4 landscape;margin:9mm 8mm}}@page cover{{size:A4 portrait;margin:0}}
@@ -111,7 +108,7 @@ small{{color:#6a6580}}.lvhead{{display:flex;justify-content:space-between;align-
     h.append('</table>')
     h.append(f'<div class="note"><b>Exame de referência:</b> {esc(exam)}. A correspondência entre nível CEFR e exame é aproximada (cada banca publica a sua própria equivalência).</div>')
     notes=[]
-    if cid=='en': notes.append('Cada linha é um <b>par de episódios</b> (principal + continuação, que dividem vocabulário e gramática). As colunas de verbos, expressões e gírias são o roteiro por episódio.')
+    if cid=='en': notes.append('Cada linha é um episódio, com conteúdo próprio. As colunas de verbos, expressões e gírias são o roteiro do episódio; onde aparece <i>(em elaboração)</i>, o roteiro próprio ainda será escrito.')
     else: notes.append('Cada linha é um episódio, na ordem em que aparece no curso.')
     notes.append('O vocabulário mostrado é o das primeiras palavras do episódio; a coluna de gramática fica em branco (—) quando o episódio ainda não tem uma estrutura gramatical definida nos dados.')
     h.append('<div class="note">'+' '.join(notes)+'</div></section>')
@@ -122,10 +119,17 @@ small{{color:#6a6580}}.lvhead{{display:flex;justify-content:space-between;align-
         rows=rows_by[lv]
         h.append(f'<section class="pg"><div class="lvhead"><h2>{lv.upper()} · {CEFR[lv]}</h2><small>{esc(exmap[lv])} · {sum(1 for x in items if x["_lv"]==lv)} episódios</small></div><table>{cols}')
         for ep,x in rows:
-            r=f'<tr><td>{eprange(ep,x)}<td><b>{esc(title(x))}</b><td>{esc(strip(x.get("s")))}<td>{esc(gram(x)) or "—"}<td>{esc(vocab(x))}'
+            sk=skel.get(x['n']) if cid=='en' else None
+            if sk and sk.get('status')=='roteiro':
+                r=f'<tr><td>{eprange(ep,x)}<td><b>{esc(sk["titulo"])}</b><td>{esc(sk["tema"])}<td>{esc(sk["gramatica"].get("estrutura") or "—")}<td>{esc(", ".join(a+" ("+b+")" if b else a for a,b in sk["vocabulario_pt"]))}'
+            else:
+                r=f'<tr><td>{eprange(ep,x)}<td><b>{esc(title(x))}</b><td>{esc(strip(x.get("s")))}<td>{esc(gram(x)) or "—"}<td>{esc(vocab(x))}'
             if show_rt:
                 s=skel.get(x['n'])
-                if s and s.get('status')=='roteiro':
+                if s and s.get('status')=='pendente':
+                    r=r.replace('<td>'+esc(vocab(x))+'</tr>','') if False else r
+                    r+='<td colspan=3><i>(em elaboração)</i>'
+                elif s and s.get('status')=='roteiro':
                     vb=', '.join(a for a,b in s['verbos']); ex='<br>'.join(f'{esc(a)} <small>{esc(b)}</small>' for a,b in s['expressoes']); gi='<br>'.join(f'{esc(a)} <small>{esc(b)}</small>' for a,b in (s.get('girias') or []))
                     g2=s['gramatica'].get('estrutura') or ''
                     r=r.replace('<td>—<td>','<td>'+esc(g2 or '—')+'<td>',1) if not gram(x) else r
