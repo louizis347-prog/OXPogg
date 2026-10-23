@@ -207,7 +207,8 @@ FXR.pgspeak=function(f,st,n){
     q('[data-a=m]',c).onclick=ev=>{
       if(!hasV){sc[i]=-1;c.classList.add('ok');ev.currentTarget.disabled=true;count();return}
       const host=q('.ps-mic',c);host.hidden=false;if(host.dataset.m)return;host.dataset.m=1;
-      PogVoice.mount(host,{target:it[0],lang,onDone:r=>{sc[i]=r.score;const s=q('.ps-score',c);s.hidden=false;s.textContent=r.score>=85?'🌟 Pronúncia ótima! '+r.score+'%':r.score>=65?'👍 Muito bem! '+r.score+'%':'🔁 Ouça o modelo e tente de novo. '+r.score+'%';c.classList.toggle('ok',r.score>=65);if(r.score>=65)P.score++;count()},onFail:()=>{}});
+      const v=PogVoice.mount(host,{force:true,target:it[0],lang,onDone:r=>{sc[i]=r.score;const s=q('.ps-score',c);s.hidden=false;s.textContent=r.score>=85?'🌟 Pronúncia ótima! '+r.score+'%':r.score>=65?'👍 Muito bem! '+r.score+'%':'🔁 Ouça o modelo e tente de novo. '+r.score+'%';c.classList.toggle('ok',r.score>=65);if(r.score>=65)P.score++;count()},onFail:()=>{}});
+      if(v&&v.start)v.start();
     }});
   P.fx.cta=null;cta('Continuar',true,true);
   say(f.say||'Ouça cada frase e repita em voz alta.');
