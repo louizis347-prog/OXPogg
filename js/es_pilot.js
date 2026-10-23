@@ -8,7 +8,7 @@ Object.assign(FXES_MAP,{
 'Padrão do dia':'Patrón del día','🧩 Como funciona':'🧩 Cómo funciona','💬 Quando usar':'💬 Cuándo usar','📌 Regra':'📌 Regla','🎯 Teste rápido':'🎯 Prueba rápida',
 'Molde de frases':'Moldes de frases','toque nas peças':'toca las piezas',
 'Cada peça colorida pode ser trocada. Toque nela e veja (e ouça) uma frase nova. O 🎲 sorteia tudo de uma vez.':'Cada pieza de color se puede cambiar. Tócala y mira (y escucha) una frase nueva. El 🎲 sortea todo de una vez.',
-'Palavras da cena':'Palabras de la escena','Qual é a palavra?':'¿Cuál es la palabra?','ele/ela':'él/ella',
+'Palavras da cena':'Palabras de la escena','Qual é a palavra?':'¿Cuál es la palabra?','ele/ela':'él/ella','eu':'yo',
 'Passo 1: leia a frase e escolha o verbo que completa.':'Paso 1: lee la frase y elige el verbo que la completa.',
 'Expressões e gírias':'Expresiones y jergas','Expressões e gírias não se traduzem palavra por palavra. Aprenda cada uma como um':'Las expresiones y jergas no se traducen palabra por palabra. Aprende cada una como un','bloco inteiro':'bloque entero',
 'Expressão':'Expresión','Gíria':'Jerga','🎯 Qual expressão usar?':'🎯 ¿Qué expresión usar?','Na conversa de verdade':'En la conversación de verdad',

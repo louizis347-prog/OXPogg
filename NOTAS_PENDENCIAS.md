@@ -56,3 +56,9 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 ## Francês A1 para brasileiros (frbr-a1) no modelo piloto
 - Episódios 1–5 (1000000–1000004) refeitos: `tools/fr/ep_*.py` + `python3 tools/model_fr.py`. Obras do próprio esqueleto (Le Petit Prince, Astérix, Ratatouille), personagens novos em `js/chars3.js` (Pequeno Príncipe, piloto, Astérix, Obélix, Linguini, Rémy). Vocabulário mantido (4 palavras do esqueleto + 2) e títulos placeholder ("A1 · Épisode N…") trocados por títulos reais. O `regular-pilot-v1` vale também para frbr-a1.
 - Atenção: nesse curso o pareamento xn/xof dos itens iniciais está bagunçado no esqueleto (ep. 1,3,5 principais; 2,4 continuações); não mexi.
+
+## Português (ES→PT), Italiano e Alemão: 5 primeiros episódios no modelo piloto
+- pt-a1 (810000–810004, interface em espanhol), it-a1 (950000–950004), de-a1 (940000–940004). Montadores: `tools/model_pt.py`, `model_it.py`, `model_de.py`; episódios em `tools/pt|it|de/ep_*.py`. Cada episódio tem cenários próprios do tema (escritório, bar, sala, estação, mercado, cozinha, lago…), personagens novos em `js/chars4.js` (28) e `PogPerson` exposto por `js/chars3.js`.
+- `model_v2.build` agora traduz os rótulos fixos via `LG['ui']` (usado em pt-a1) e `js/es_pilot.js` traduz os rótulos dos renderizadores para cursos com interface em espanhol (FXES_MAP).
+- Correção de estouro de margem: `.ps-hb` (chips do vocabulário), `.m2-bagrow`/`.m2-bt` (mochila), `.ps-pair`, `.ps-rt`, `.ps-hot-info` agora quebram linha em telas ≤ 360px. Teste: `node ovf.js <curso> <largura> <n…>` (em /tmp) varre os quadros e toca os objetos da cena.
+- Os esqueletos de it-a1/de-a1 tinham só placeholders ("A1 · Episodio 1: salutare al lavoro", vocabulário genérico): temas mantidos, vocabulário e obras escritos agora. O pt-a1 manteve vocabulário e gramática do esqueleto (tudo×todo, apelido≠apellido, meu/minha) com 2 palavras novas por par.
