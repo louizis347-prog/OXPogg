@@ -1,0 +1,4069 @@
+[
+ {
+  "n": 7009801,
+  "dquiz": [
+   {
+    "q": "Where is Mia from?",
+    "pt": "De onde a Mia é?",
+    "opts": [
+     [
+      "🇧🇷",
+      "Brazil"
+     ],
+     [
+      "🇲🇽",
+      "Mexico"
+     ],
+     [
+      "🇮🇹",
+      "Italy"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Mia diz: “I'm from Brazil.”"
+   },
+   {
+    "q": "What is ready?",
+    "pt": "O que está pronto?",
+    "opts": [
+     [
+      "🛏️",
+      "The room"
+     ],
+     [
+      "☕",
+      "The coffee"
+     ],
+     [
+      "🚕",
+      "The taxi"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Dan diz: “Your room is ready.”"
+   },
+   {
+    "q": "How does Mia feel?",
+    "pt": "Como a Mia se sente?",
+    "opts": [
+     [
+      "😴",
+      "Tired"
+     ],
+     [
+      "🍽️",
+      "Hungry"
+     ],
+     [
+      "😄",
+      "Happy"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Mia diz: “I'm a little tired.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você chega a um hotel e a recepção quer saber quem você é. **Diga seu nome, de onde você é e como você está, usando I'm.**",
+   "ph": "Ex.: I'm Ana. I'm from Brazil. I'm tired.",
+   "chips": [
+    "I'm",
+    "I'm from",
+    "I'm tired"
+   ],
+   "model": "Hi! I'm Ana. I'm from Brazil. I'm tired.",
+   "check": [
+    "Disse meu nome?",
+    "Disse de onde eu sou?",
+    "Disse como eu estava?"
+   ]
+  }
+ },
+ {
+  "n": 7009802,
+  "dquiz": [
+   {
+    "q": "Where is Sam from?",
+    "pt": "De onde o Sam é?",
+    "opts": [
+     [
+      "🇲🇽",
+      "Mexico"
+     ],
+     [
+      "🇧🇷",
+      "Brazil"
+     ],
+     [
+      "🇺🇸",
+      "The U.S."
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Sam diz: “I'm from Mexico.”"
+   },
+   {
+    "q": "Who asks if the other is a teacher?",
+    "pt": "Quem pergunta se o outro é professor(a)?",
+    "opts": [
+     [
+      "🧑",
+      "Sam"
+     ],
+     [
+      "👩",
+      "Ana"
+     ],
+     [
+      "🧑‍✈️",
+      "The agent"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Sam diz: “Are you a teacher?”"
+   },
+   {
+    "q": "What is Ana?",
+    "pt": "O que a Ana é?",
+    "opts": [
+     [
+      "🎓",
+      "A student"
+     ],
+     [
+      "👩‍🏫",
+      "A teacher"
+     ],
+     [
+      "🧑‍💼",
+      "A clerk"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Ana diz: “I'm a student too!”"
+   }
+  ],
+  "produce": {
+   "prompt": "Na fila do embarque, você puxa conversa com alguém. **Faça uma pergunta com Are you… e responda com Yes, I am ou No, I'm not.**",
+   "ph": "Ex.: Are you a teacher? No, I'm not. I'm a student.",
+   "chips": [
+    "Are you",
+    "Yes, I am",
+    "No, I'm not"
+   ],
+   "model": "Are you a teacher? Yes, I am. Are you a student? No, I'm not.",
+   "check": [
+    "Fiz uma pergunta com Are you?",
+    "Usei Yes, I am em uma resposta?",
+    "Usei No, I'm not em uma resposta?"
+   ]
+  }
+ },
+ {
+  "n": 7009803,
+  "dquiz": [
+   {
+    "q": "What is Mei's last name?",
+    "pt": "Qual é o sobrenome da Mei?",
+    "opts": [
+     [
+      "🧾",
+      "Chen"
+     ],
+     [
+      "🧾",
+      "Chan"
+     ],
+     [
+      "🧾",
+      "Chu"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Mei diz: “It's Chen.”"
+   },
+   {
+    "q": "How does Mei spell her name?",
+    "pt": "Como a Mei soletra o nome dela?",
+    "opts": [
+     [
+      "🔤",
+      "M-E-I"
+     ],
+     [
+      "🔤",
+      "M-I-E"
+     ],
+     [
+      "🔤",
+      "N-E-I"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Mei diz: “It's M-E-I.”"
+   },
+   {
+    "q": "What is Mei's city?",
+    "pt": "Qual é a cidade da Mei?",
+    "opts": [
+     [
+      "🏙️",
+      "Shanghai"
+     ],
+     [
+      "🌆",
+      "Beijing"
+     ],
+     [
+      "🌃",
+      "Tokyo"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Mei diz: “It's Shanghai.”"
+   }
+  ],
+  "produce": {
+   "prompt": "No balcão do aeroporto, o atendente pede seus dados. **Diga seu nome, soletre-o letra por letra e diga sua cidade.**",
+   "ph": "Ex.: My name is Leo. It's L-E-O. My city is Recife.",
+   "chips": [
+    "My name is",
+    "It's",
+    "My city is"
+   ],
+   "model": "My name is Leo. It's L-E-O. My city is Recife.",
+   "check": [
+    "Disse meu nome?",
+    "Soletrei meu nome?",
+    "Disse minha cidade?"
+   ]
+  }
+ },
+ {
+  "n": 7009804,
+  "dquiz": [
+   {
+    "q": "How many tickets does Mei need?",
+    "pt": "De quantos bilhetes a Mei precisa?",
+    "opts": [
+     [
+      "3️⃣",
+      "Three"
+     ],
+     [
+      "2️⃣",
+      "Two"
+     ],
+     [
+      "4️⃣",
+      "Four"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Mei diz: “I need three tickets.”"
+   },
+   {
+    "q": "How much is one ticket?",
+    "pt": "Quanto custa um bilhete?",
+    "opts": [
+     [
+      "💵",
+      "Two dollars"
+     ],
+     [
+      "💰",
+      "Three dollars"
+     ],
+     [
+      "🪙",
+      "Five dollars"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Mei diz: “It's two dollars.”"
+   },
+   {
+    "q": "Who holds the door?",
+    "pt": "Quem segura a porta?",
+    "opts": [
+     [
+      "🧔",
+      "Tom"
+     ],
+     [
+      "🧑",
+      "Mei"
+     ],
+     [
+      "👩‍💼",
+      "The clerk"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Mei diz: “You hold the door.”"
+   }
+  ],
+  "produce": {
+   "prompt": "No museu, você compra entradas. **Diga que precisa de quatro bilhetes e pergunte quanto custa um.** Depois agradeça.",
+   "ph": "Ex.: I need four tickets. How much is one?",
+   "chips": [
+    "I need",
+    "How much is",
+    "Thank you"
+   ],
+   "model": "I need four tickets, please. How much is one ticket? Thank you!",
+   "check": [
+    "Pedi os bilhetes?",
+    "Perguntei o preço?",
+    "Agradeci?"
+   ]
+  }
+ },
+ {
+  "n": 7009805,
+  "dquiz": [
+   {
+    "q": "What does Mei want?",
+    "pt": "O que a Mei quer?",
+    "opts": [
+     [
+      "🍵",
+      "A hot tea"
+     ],
+     [
+      "🧃",
+      "Orange juice"
+     ],
+     [
+      "💧",
+      "Water"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Mei diz: “I'd like a hot tea, please.”"
+   },
+   {
+    "q": "What does Tom want?",
+    "pt": "O que o Tom quer?",
+    "opts": [
+     [
+      "🧃",
+      "Orange juice"
+     ],
+     [
+      "🍵",
+      "Hot tea"
+     ],
+     [
+      "☕",
+      "A latte"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Tom diz: “I want orange juice.”"
+   },
+   {
+    "q": "When does Tom eat the cookie?",
+    "pt": "Quando o Tom come o biscoito?",
+    "opts": [
+     [
+      "🍽️",
+      "At lunch"
+     ],
+     [
+      "🌙",
+      "At dinner"
+     ],
+     [
+      "🌅",
+      "At breakfast"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Tom diz: “I eat it at lunch.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está num café e vai fazer seu pedido. **Peça um suco com I'd like e pergunte se pode ter água com Can I have.** Seja educado.",
+   "ph": "Ex.: I'd like a juice, please. Can I have water?",
+   "chips": [
+    "I'd like",
+    "Can I have",
+    "please"
+   ],
+   "model": "I'd like a juice, please. Can I have water?",
+   "check": [
+    "Pedi uma bebida com I'd like?",
+    "Perguntei com Can I have?",
+    "Disse please?"
+   ]
+  }
+ },
+ {
+  "n": 7009806,
+  "dquiz": [
+   {
+    "q": "Who knows Lia's sister?",
+    "pt": "Quem conhece a irmã da Lia?",
+    "opts": [
+     [
+      "🧔",
+      "Dan"
+     ],
+     [
+      "👩",
+      "Lia"
+     ],
+     [
+      "👵",
+      "The grandma"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Dan diz: “I know your sister.”"
+   },
+   {
+    "q": "Who are Lia's parents in the scene?",
+    "pt": "Quem a Lia apresenta com “These are…”?",
+    "opts": [
+     [
+      "👨‍👩",
+      "Her parents"
+     ],
+     [
+      "👫",
+      "Her friends"
+     ],
+     [
+      "👩‍🏫",
+      "Her teachers"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Lia diz: “These are my parents.”"
+   },
+   {
+    "q": "Whose photo does Dan show?",
+    "pt": "De quem é a foto que o Dan mostra?",
+    "opts": [
+     [
+      "👵",
+      "His grandma"
+     ],
+     [
+      "👧",
+      "His sister"
+     ],
+     [
+      "🐶",
+      "His dog"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Dan diz: “Look at this photo of my grandma!”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um amigo visita sua casa. **Apresente uma pessoa com This is my… e duas pessoas com These are my…** Depois convide-o a sentar.",
+   "ph": "Ex.: This is my sister. These are my parents.",
+   "chips": [
+    "This is my",
+    "These are my",
+    "Please, sit down"
+   ],
+   "model": "This is my brother. These are my parents. Please, sit down.",
+   "check": [
+    "Apresentei uma pessoa com This is my?",
+    "Apresentei duas pessoas com These are my?",
+    "Convidei meu amigo a sentar?"
+   ]
+  }
+ },
+ {
+  "n": 7009807,
+  "dquiz": [
+   {
+    "q": "What color are her eyes?",
+    "pt": "De que cor são os olhos dela?",
+    "opts": [
+     [
+      "💚",
+      "Green"
+     ],
+     [
+      "💙",
+      "Blue"
+     ],
+     [
+      "🤎",
+      "Brown"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “Green eyes.”"
+   },
+   {
+    "q": "How is her hair?",
+    "pt": "Como é o cabelo dela?",
+    "opts": [
+     [
+      "💇‍♀️",
+      "Long"
+     ],
+     [
+      "✂️",
+      "Short"
+     ],
+     [
+      "🧢",
+      "Hidden"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “She has long hair.”"
+   },
+   {
+    "q": "Who describes her well?",
+    "pt": "Quem descreve bem a irmã?",
+    "opts": [
+     [
+      "👩",
+      "Mia"
+     ],
+     [
+      "🧑",
+      "Jack"
+     ],
+     [
+      "👧",
+      "His sister"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “You describe her well.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você mostra a foto de uma amiga. **Descreva-a: diga se ela é alta ou baixa, como é o cabelo e que ela é engraçada.**",
+   "ph": "Ex.: She's tall. She has long hair. She's funny.",
+   "chips": [
+    "She's",
+    "She has",
+    "funny"
+   ],
+   "model": "She's tall. She has long hair. She's funny.",
+   "check": [
+    "Disse se ela é alta ou baixa?",
+    "Falei do cabelo dela?",
+    "Disse que ela é engraçada?"
+   ]
+  }
+ },
+ {
+  "n": 7009808,
+  "dquiz": [
+   {
+    "q": "What color is the hat?",
+    "pt": "De que cor é o chapéu?",
+    "opts": [
+     [
+      "🟢",
+      "Green"
+     ],
+     [
+      "🔴",
+      "Red"
+     ],
+     [
+      "🟡",
+      "Yellow"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Nia diz: “I see a green hat.”"
+   },
+   {
+    "q": "What color does Lee ask for?",
+    "pt": "Que cor o Lee pede?",
+    "opts": [
+     [
+      "🟡",
+      "Yellow"
+     ],
+     [
+      "🔵",
+      "Blue"
+     ],
+     [
+      "⚪",
+      "White"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Lee diz: “Do you have it in yellow?”"
+   },
+   {
+    "q": "What is on sale?",
+    "pt": "O que está em promoção?",
+    "opts": [
+     [
+      "🟡",
+      "The yellow one"
+     ],
+     [
+      "👜",
+      "The blue bag"
+     ],
+     [
+      "🎩",
+      "The green hat"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Nia diz: “It's on sale!”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está numa loja de roupas. **Pergunte o que é um objeto com What's this? e peça outra cor com Do you have it in…?**",
+   "ph": "Ex.: What's this? It's a bag. Do you have it in red?",
+   "chips": [
+    "What's this",
+    "It's",
+    "Do you have it in"
+   ],
+   "model": "What's this? It's a bag. Do you have it in red?",
+   "check": [
+    "Perguntei o que é o objeto?",
+    "Disse o que é com It's?",
+    "Pedi outra cor?"
+   ]
+  }
+ },
+ {
+  "n": 7009809,
+  "dquiz": [
+   {
+    "q": "What does Pat look for?",
+    "pt": "O que o Pat procura?",
+    "opts": [
+     [
+      "🛗",
+      "The elevator"
+     ],
+     [
+      "🚻",
+      "The restroom"
+     ],
+     [
+      "🪜",
+      "The stairs"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Pat diz: “where's the elevator?”"
+   },
+   {
+    "q": "Which way does Zoe say to go?",
+    "pt": "Que caminho a Zoe diz para seguir?",
+    "opts": [
+     [
+      "⬆️",
+      "Straight ahead"
+     ],
+     [
+      "⬅️",
+      "To the left"
+     ],
+     [
+      "⬇️",
+      "Down the stairs"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Zoe diz: “Go straight ahead.”"
+   },
+   {
+    "q": "What does Pat follow?",
+    "pt": "O que o Pat deve seguir?",
+    "opts": [
+     [
+      "🪧",
+      "The sign"
+     ],
+     [
+      "🗺️",
+      "The map"
+     ],
+     [
+      "🧑",
+      "Zoe"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Zoe diz: “Follow the sign.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Num hotel grande, você procura o banheiro. **Pergunte onde fica o banheiro com Where's… e onde ficam as escadas com Where are…** Depois agradeça.",
+   "ph": "Ex.: Where's the restroom? Where are the stairs?",
+   "chips": [
+    "Where's",
+    "Where are",
+    "Thank you"
+   ],
+   "model": "Where's the restroom? Where are the stairs? Thank you!",
+   "check": [
+    "Perguntei onde fica o banheiro?",
+    "Perguntei onde ficam as escadas?",
+    "Agradeci?"
+   ]
+  }
+ },
+ {
+  "n": 7009810,
+  "dquiz": [
+   {
+    "q": "What time is it?",
+    "pt": "Que horas são?",
+    "opts": [
+     [
+      "🕑",
+      "A quarter past two"
+     ],
+     [
+      "🕒",
+      "Three o'clock"
+     ],
+     [
+      "🕛",
+      "Noon"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “It's a quarter past two.”"
+   },
+   {
+    "q": "When does the class start?",
+    "pt": "Quando a aula começa?",
+    "opts": [
+     [
+      "🕒",
+      "At three"
+     ],
+     [
+      "🕑",
+      "At two"
+     ],
+     [
+      "🕓",
+      "At four"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Mia diz: “The class starts at three.”"
+   },
+   {
+    "q": "What does Mia check?",
+    "pt": "O que a Mia olha?",
+    "opts": [
+     [
+      "📱",
+      "Her phone"
+     ],
+     [
+      "⌚",
+      "Her watch"
+     ],
+     [
+      "🎒",
+      "Her bag"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Mia diz: “I check my phone.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está esperando na rua e não tem relógio. **Pergunte as horas e diga a que horas sua aula começa.**",
+   "ph": "Ex.: Do you have the time? My class starts at nine.",
+   "chips": [
+    "Do you have the time",
+    "It's",
+    "starts at"
+   ],
+   "model": "Do you have the time? It's ten o'clock. My class starts at eleven.",
+   "check": [
+    "Perguntei as horas?",
+    "Disse a hora com It's?",
+    "Disse quando minha aula começa?"
+   ]
+  }
+ },
+ {
+  "n": 7009811,
+  "dquiz": [
+   {
+    "q": "What kind of day is it?",
+    "pt": "Que tipo de dia é hoje?",
+    "opts": [
+     [
+      "☀️",
+      "A beautiful day"
+     ],
+     [
+      "🌧️",
+      "A rainy day"
+     ],
+     [
+      "🌨️",
+      "A snowy day"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “What a beautiful day!”"
+   },
+   {
+    "q": "How was the weather yesterday?",
+    "pt": "Como estava o tempo ontem?",
+    "opts": [
+     [
+      "☁️",
+      "Cloudy and windy"
+     ],
+     [
+      "☀️",
+      "Hot and sunny"
+     ],
+     [
+      "❄️",
+      "Cold and snowy"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “It was so cloudy and windy.”"
+   },
+   {
+    "q": "How is the weather tonight?",
+    "pt": "Como está o tempo hoje à noite?",
+    "opts": [
+     [
+      "🥶",
+      "Freezing"
+     ],
+     [
+      "🥵",
+      "Hot"
+     ],
+     [
+      "🌞",
+      "Sunny"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “Tonight it's freezing.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você encontra um vizinho no elevador. **Comente que o tempo está bom hoje e diga como estava o tempo ontem.**",
+   "ph": "Ex.: Nice weather, isn't it? Yesterday it was cloudy.",
+   "chips": [
+    "Nice weather",
+    "What a beautiful day",
+    "Yesterday it was"
+   ],
+   "model": "Nice weather, isn't it? What a beautiful day! Yesterday it was cloudy.",
+   "check": [
+    "Comentei o tempo de hoje?",
+    "Usei What a… numa exclamação?",
+    "Falei do tempo de ontem?"
+   ]
+  }
+ },
+ {
+  "n": 7009812,
+  "dquiz": [
+   {
+    "q": "What is bad?",
+    "pt": "O que está ruim?",
+    "opts": [
+     [
+      "📶",
+      "The signal"
+     ],
+     [
+      "📱",
+      "The phone"
+     ],
+     [
+      "🔋",
+      "The battery"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “The signal is bad.”"
+   },
+   {
+    "q": "Where does Pat move?",
+    "pt": "Para onde o Pat vai?",
+    "opts": [
+     [
+      "🚪",
+      "Outside"
+     ],
+     [
+      "🏠",
+      "Home"
+     ],
+     [
+      "🛗",
+      "To the elevator"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “I'll move outside.”"
+   },
+   {
+    "q": "What does Jack want Pat to text?",
+    "pt": "O que o Jack quer que o Pat envie por mensagem?",
+    "opts": [
+     [
+      "🔢",
+      "The number"
+     ],
+     [
+      "📷",
+      "A photo"
+     ],
+     [
+      "🗺️",
+      "A map"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “Can you text me your number?”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você fala com um amigo e a ligação está ruim. **Pergunte se ele ouve você e peça que ele mande uma mensagem.** Depois agradeça.",
+   "ph": "Ex.: Can you hear me? Can you text me?",
+   "chips": [
+    "Can you hear me",
+    "Can you text me",
+    "Thank you"
+   ],
+   "model": "Can you hear me? Can you text me your number? Thank you!",
+   "check": [
+    "Perguntei se ele me ouvia?",
+    "Pedi uma mensagem?",
+    "Agradeci?"
+   ]
+  }
+ },
+ {
+  "n": 7009813,
+  "dquiz": [
+   {
+    "q": "What does Pat like?",
+    "pt": "Do que o Pat gosta?",
+    "opts": [
+     [
+      "🧥",
+      "Jack's jacket"
+     ],
+     [
+      "👖",
+      "Jack's pants"
+     ],
+     [
+      "👟",
+      "Jack's shoes"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Pat diz: “I like your jacket!”"
+   },
+   {
+    "q": "Who made the jacket?",
+    "pt": "Quem fez a jaqueta?",
+    "opts": [
+     [
+      "🧑‍🤝‍🧑",
+      "A friend"
+     ],
+     [
+      "🧔",
+      "Pat"
+     ],
+     [
+      "🏬",
+      "A shop"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “A friend made it for me.”"
+   },
+   {
+    "q": "What does Pat say is great?",
+    "pt": "O que o Pat diz que ficou ótimo?",
+    "opts": [
+     [
+      "💪",
+      "The sleeves"
+     ],
+     [
+      "👔",
+      "The collar"
+     ],
+     [
+      "🤐",
+      "The zipper"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “He did a great job on the sleeves.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu colega chega com uma roupa nova. **Elogie a roupa, diga que ela fica bem nele e pergunte onde ele a comprou.**",
+   "ph": "Ex.: I like your shirt! Where did you get it?",
+   "chips": [
+    "I like your",
+    "It looks great on you",
+    "Where did you get it"
+   ],
+   "model": "I like your jacket! It looks great on you. Where did you get it?",
+   "check": [
+    "Elogiei a roupa?",
+    "Disse que fica bem nele?",
+    "Perguntei onde ele a comprou?"
+   ]
+  }
+ },
+ {
+  "n": 7009814,
+  "dquiz": [
+   {
+    "q": "What is ready?",
+    "pt": "O que está pronto?",
+    "opts": [
+     [
+      "🍝",
+      "Dinner"
+     ],
+     [
+      "🥪",
+      "Lunch"
+     ],
+     [
+      "🎂",
+      "The cake"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Pat diz: “dinner is ready!”"
+   },
+   {
+    "q": "What does Pat cook?",
+    "pt": "O que o Pat cozinha?",
+    "opts": [
+     [
+      "🍅",
+      "The sauce"
+     ],
+     [
+      "🥗",
+      "The salad"
+     ],
+     [
+      "🍞",
+      "The bread"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I cook the sauce.”"
+   },
+   {
+    "q": "What does Jack mix?",
+    "pt": "O que o Jack mistura?",
+    "opts": [
+     [
+      "🥗",
+      "The salad"
+     ],
+     [
+      "🍅",
+      "The sauce"
+     ],
+     [
+      "🍲",
+      "The soup"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “I mix the salad.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está na cozinha com um amigo. **Diga o que você cozinha e pergunte se ele gosta de macarrão.** Comente o cheiro da comida.",
+   "ph": "Ex.: I cook the rice. Do you like noodles?",
+   "chips": [
+    "I cook",
+    "Do you like",
+    "It smells so good"
+   ],
+   "model": "I cook the sauce. Do you like noodles? It smells so good!",
+   "check": [
+    "Disse o que eu cozinho?",
+    "Perguntei se ele gosta de macarrão?",
+    "Comentei o cheiro da comida?"
+   ]
+  }
+ },
+ {
+  "n": 7009815,
+  "dquiz": [
+   {
+    "q": "What is there plenty of?",
+    "pt": "De que há bastante?",
+    "opts": [
+     [
+      "🍚",
+      "Rice"
+     ],
+     [
+      "🥛",
+      "Milk"
+     ],
+     [
+      "🍞",
+      "Bread"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “There's plenty.”"
+   },
+   {
+    "q": "What did they run out of?",
+    "pt": "O que acabou?",
+    "opts": [
+     [
+      "🥛",
+      "Milk"
+     ],
+     [
+      "🍚",
+      "Rice"
+     ],
+     [
+      "🍬",
+      "Sugar"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “we ran out.”"
+   },
+   {
+    "q": "Where does Jack add the milk?",
+    "pt": "Onde o Jack anota o leite?",
+    "opts": [
+     [
+      "📝",
+      "To the list"
+     ],
+     [
+      "🗄️",
+      "To the pantry"
+     ],
+     [
+      "📦",
+      "To the box"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “I'll add it to the list.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você olha a despensa de casa com um amigo. **Pergunte se sobrou leite, diga que tem bastante arroz e que os ovos acabaram.**",
+   "ph": "Ex.: Is there any milk left? There's plenty of rice.",
+   "chips": [
+    "Is there any",
+    "There's plenty",
+    "We ran out"
+   ],
+   "model": "Is there any milk left? There's plenty of rice. We ran out of eggs.",
+   "check": [
+    "Perguntei se sobrou algo?",
+    "Disse que tem bastante de algo?",
+    "Disse que algo acabou?"
+   ]
+  }
+ },
+ {
+  "n": 7009816,
+  "dquiz": [
+   {
+    "q": "What is Jack's job?",
+    "pt": "Qual é o trabalho do Jack?",
+    "opts": [
+     [
+      "🥖",
+      "A baker"
+     ],
+     [
+      "🌾",
+      "A farmer"
+     ],
+     [
+      "🎤",
+      "A singer"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “I am a baker.”"
+   },
+   {
+    "q": "What is Pat's job?",
+    "pt": "Qual é o trabalho do Pat?",
+    "opts": [
+     [
+      "🦷",
+      "A dentist"
+     ],
+     [
+      "🎤",
+      "A singer"
+     ],
+     [
+      "🌾",
+      "A farmer"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I am a dentist.”"
+   },
+   {
+    "q": "What is Jack's wife?",
+    "pt": "O que a esposa do Jack é?",
+    "opts": [
+     [
+      "👩‍🏫",
+      "A teacher"
+     ],
+     [
+      "🎤",
+      "A singer"
+     ],
+     [
+      "🌾",
+      "A farmer"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “My wife is a teacher.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Numa festa, você conhece alguém novo. **Diga qual é a sua profissão e pergunte qual é a do outro.** Diga que gosta do seu trabalho.",
+   "ph": "Ex.: I am a nurse. What's your job?",
+   "chips": [
+    "I am a",
+    "What's your job",
+    "I love my job"
+   ],
+   "model": "I am a baker. What's your job? I love my job.",
+   "check": [
+    "Disse minha profissão?",
+    "Perguntei a profissão do outro?",
+    "Disse que gosto do meu trabalho?"
+   ]
+  }
+ },
+ {
+  "n": 7009817,
+  "dquiz": [
+   {
+    "q": "What nationality is Pat?",
+    "pt": "Qual é a nacionalidade do Pat?",
+    "opts": [
+     [
+      "🇲🇽",
+      "Mexican"
+     ],
+     [
+      "🇺🇸",
+      "American"
+     ],
+     [
+      "🇮🇹",
+      "Italian"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “I'm Mexican.”"
+   },
+   {
+    "q": "What nationality is Jack's wife?",
+    "pt": "Qual é a nacionalidade da esposa do Jack?",
+    "opts": [
+     [
+      "🇮🇹",
+      "Italian"
+     ],
+     [
+      "🇲🇽",
+      "Mexican"
+     ],
+     [
+      "🇨🇳",
+      "Chinese"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “My wife is Italian.”"
+   },
+   {
+    "q": "Where does she come from?",
+    "pt": "De onde ela vem?",
+    "opts": [
+     [
+      "🏛️",
+      "Rome"
+     ],
+     [
+      "🗼",
+      "Paris"
+     ],
+     [
+      "🏰",
+      "Madrid"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “She comes from Rome.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Num evento, você conhece um estrangeiro. **Diga sua nacionalidade, pergunte se ele é americano e pergunte a nacionalidade dele.**",
+   "ph": "Ex.: I'm Brazilian. Are you American?",
+   "chips": [
+    "I'm",
+    "Are you",
+    "What's your nationality"
+   ],
+   "model": "Hi! I'm Brazilian. Are you American? What's your nationality?",
+   "check": [
+    "Disse minha nacionalidade?",
+    "Perguntei se ele é americano?",
+    "Perguntei a nacionalidade dele?"
+   ]
+  }
+ },
+ {
+  "n": 7009818,
+  "dquiz": [
+   {
+    "q": "What does Jack love?",
+    "pt": "O que o Jack adora fazer?",
+    "opts": [
+     [
+      "🏊",
+      "Swimming"
+     ],
+     [
+      "🎵",
+      "Singing"
+     ],
+     [
+      "💃",
+      "Dancing"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “I love swimming.”"
+   },
+   {
+    "q": "What is Pat into?",
+    "pt": "Do que o Pat gosta muito?",
+    "opts": [
+     [
+      "🎵",
+      "Music"
+     ],
+     [
+      "🏊",
+      "Swimming"
+     ],
+     [
+      "📚",
+      "Reading"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “I'm into music.”"
+   },
+   {
+    "q": "What does Jack like, too?",
+    "pt": "De que mais o Jack gosta?",
+    "opts": [
+     [
+      "🍳",
+      "Cooking"
+     ],
+     [
+      "💃",
+      "Dancing"
+     ],
+     [
+      "📖",
+      "Reading"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “I like cooking, too.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um novo amigo quer saber do seu tempo livre. **Diga o que você adora e do que você gosta, e pergunte se ele gosta de dançar.**",
+   "ph": "Ex.: I love reading. I like cooking. Do you like dancing?",
+   "chips": [
+    "I love",
+    "I like",
+    "Do you like"
+   ],
+   "model": "I love swimming. I like cooking. Do you like dancing?",
+   "check": [
+    "Disse o que eu adoro fazer?",
+    "Disse do que eu gosto?",
+    "Perguntei do que o amigo gosta?"
+   ]
+  }
+ },
+ {
+  "n": 7010151,
+  "dquiz": [
+   {
+    "q": "Who studies here now?",
+    "pt": "Quem estuda aqui agora?",
+    "opts": [
+     [
+      "🧑",
+      "Sam"
+     ],
+     [
+      "👩",
+      "Zoe"
+     ],
+     [
+      "👨‍🏫",
+      "The teacher"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Sam diz: “I study here now.”"
+   },
+   {
+    "q": "What does Sam speak?",
+    "pt": "Que língua o Sam fala?",
+    "opts": [
+     [
+      "🇲🇽",
+      "Spanish"
+     ],
+     [
+      "🇧🇷",
+      "Portuguese"
+     ],
+     [
+      "🇫🇷",
+      "French"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Sam diz: “I speak Spanish.”"
+   },
+   {
+    "q": "What does Zoe ask Sam?",
+    "pt": "O que a Zoe pergunta ao Sam?",
+    "opts": [
+     [
+      "🌍",
+      "Where he is from"
+     ],
+     [
+      "🎂",
+      "His age"
+     ],
+     [
+      "💼",
+      "His job"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Zoe diz: “Where are you from?”"
+   }
+  ],
+  "produce": {
+   "prompt": "É seu primeiro dia numa escola de inglês. **Diga seu nome e de onde você é, e pergunte de onde o colega é.**",
+   "ph": "Ex.: My name is Ana. I'm from Brazil. Where are you from?",
+   "chips": [
+    "My name is",
+    "I'm from",
+    "Where are you from"
+   ],
+   "model": "Hello! My name is Ana. I'm from Brazil. Where are you from?",
+   "check": [
+    "Disse meu nome?",
+    "Disse de onde eu sou?",
+    "Perguntei de onde o colega é?"
+   ]
+  }
+ },
+ {
+  "n": 7010152,
+  "dquiz": [
+   {
+    "q": "What is she?",
+    "pt": "Qual é a profissão dela?",
+    "opts": [
+     [
+      "🚚",
+      "A driver"
+     ],
+     [
+      "🌾",
+      "A farmer"
+     ],
+     [
+      "🎤",
+      "A singer"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “She is a driver.”"
+   },
+   {
+    "q": "What does he sell?",
+    "pt": "O que ele vende?",
+    "opts": [
+     [
+      "🚗",
+      "Cars"
+     ],
+     [
+      "🍎",
+      "Food"
+     ],
+     [
+      "🌱",
+      "Grass"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “he sells cars.”"
+   },
+   {
+    "q": "Where does he cut the grass?",
+    "pt": "Onde ele corta a grama?",
+    "opts": [
+     [
+      "🏠",
+      "At the garage"
+     ],
+     [
+      "🏫",
+      "At the school"
+     ],
+     [
+      "🏖️",
+      "At the beach"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “He cuts the grass at the garage.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você mostra fotos de pessoas do seu bairro. **Diga a profissão de uma mulher com She is… e de um homem com He is…, e descreva um objeto com It's…**",
+   "ph": "Ex.: She is a teacher. He is a driver. It's a big truck.",
+   "chips": [
+    "She is",
+    "He is",
+    "It's"
+   ],
+   "model": "She is a teacher. He is a driver. It's a big truck.",
+   "check": [
+    "Disse a profissão de uma mulher?",
+    "Disse a profissão de um homem?",
+    "Descrevi um objeto?"
+   ]
+  }
+ },
+ {
+  "n": 7010153,
+  "dquiz": [
+   {
+    "q": "Who is late?",
+    "pt": "Quem está atrasado?",
+    "opts": [
+     [
+      "⏰",
+      "The other team"
+     ],
+     [
+      "🧑‍🤝‍🧑",
+      "Sam and Mei"
+     ],
+     [
+      "📣",
+      "The fans"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Mei diz: “They are late, but we are ready.”"
+   },
+   {
+    "q": "When does the other team arrive?",
+    "pt": "Quando o outro time chega?",
+    "opts": [
+     [
+      "🕓",
+      "At four"
+     ],
+     [
+      "🕒",
+      "At three"
+     ],
+     [
+      "🕔",
+      "At five"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Mei diz: “The other team arrives at four.”"
+   },
+   {
+    "q": "Who cheers and claps?",
+    "pt": "Quem torce e bate palmas?",
+    "opts": [
+     [
+      "📣",
+      "The fans"
+     ],
+     [
+      "🧑‍⚖️",
+      "The referee"
+     ],
+     [
+      "🧑‍🏫",
+      "The coach"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Mei diz: “The fans cheer and clap!”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu time vai jogar e o outro time ainda não chegou. **Diga que vocês estão prontos com We are… e que o outro time está atrasado com They are…** Anime o grupo.",
+   "ph": "Ex.: We are ready. They are late.",
+   "chips": [
+    "We are",
+    "They are",
+    "Let's go, team"
+   ],
+   "model": "We are ready. They are late. Let's go, team!",
+   "check": [
+    "Disse que nós estamos prontos?",
+    "Disse que eles estão atrasados?",
+    "Animei o time?"
+   ]
+  }
+ },
+ {
+  "n": 7010154,
+  "dquiz": [
+   {
+    "q": "Who is the driver?",
+    "pt": "Quem é o motorista?",
+    "opts": [
+     [
+      "🚕",
+      "Pat"
+     ],
+     [
+      "🧳",
+      "Jack"
+     ],
+     [
+      "🛂",
+      "The agent"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “Are you the driver?”"
+   },
+   {
+    "q": "Where does Jack go?",
+    "pt": "Para onde o Jack vai?",
+    "opts": [
+     [
+      "✈️",
+      "The airport"
+     ],
+     [
+      "🏨",
+      "The hotel"
+     ],
+     [
+      "🚉",
+      "The station"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “The airport.”"
+   },
+   {
+    "q": "How long is the trip?",
+    "pt": "Quanto tempo dura a viagem?",
+    "opts": [
+     [
+      "⏱️",
+      "Twenty minutes"
+     ],
+     [
+      "🕐",
+      "One hour"
+     ],
+     [
+      "⏳",
+      "Ten minutes"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “Twenty minutes.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você pega um táxi na rua. **Diga para onde vai, pergunte quanto tempo leva e pergunte se vocês estão atrasados com Are we…?**",
+   "ph": "Ex.: The airport, please. How long will it take? Are we late?",
+   "chips": [
+    "The airport",
+    "How long will it take",
+    "Are we late"
+   ],
+   "model": "The airport, please. How long will it take? Are we late?",
+   "check": [
+    "Disse para onde vou?",
+    "Perguntei quanto tempo leva?",
+    "Perguntei se estamos atrasados?"
+   ]
+  }
+ },
+ {
+  "n": 7010155,
+  "dquiz": [
+   {
+    "q": "What does Jack crave?",
+    "pt": "Do que o Jack está com vontade?",
+    "opts": [
+     [
+      "🍕",
+      "Pizza"
+     ],
+     [
+      "🥗",
+      "Salad"
+     ],
+     [
+      "🍰",
+      "Cake"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “I crave pizza.”"
+   },
+   {
+    "q": "Is Jack thirsty?",
+    "pt": "O Jack está com sede?",
+    "opts": [
+     [
+      "🙅",
+      "No, he isn't"
+     ],
+     [
+      "🙋",
+      "Yes, he is"
+     ],
+     [
+      "🤷",
+      "We don't know"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “No, I'm not.”"
+   },
+   {
+    "q": "What does Jack do all day?",
+    "pt": "O que o Jack faz o dia todo?",
+    "opts": [
+     [
+      "🥱",
+      "He yawns"
+     ],
+     [
+      "🏃",
+      "He runs"
+     ],
+     [
+      "🎶",
+      "He sings"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “I yawn all day.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um amigo pergunta como você está. **Responda com Yes, I am ou No, I'm not a três perguntas: está com fome? Com sede? Cansado(a)?**",
+   "ph": "Ex.: Yes, I am. I'm hungry. No, I'm not thirsty.",
+   "chips": [
+    "Yes, I am",
+    "No, I'm not",
+    "I'm tired"
+   ],
+   "model": "Yes, I am. I'm hungry. No, I'm not thirsty. I'm tired.",
+   "check": [
+    "Respondi se eu estava com fome?",
+    "Respondi se eu estava com sede?",
+    "Respondi se eu estava cansado(a)?"
+   ]
+  }
+ },
+ {
+  "n": 7010156,
+  "dquiz": [
+   {
+    "q": "Is the place far?",
+    "pt": "O lugar é longe?",
+    "opts": [
+     [
+      "📍",
+      "No, it isn't"
+     ],
+     [
+      "🛣️",
+      "Yes, it is"
+     ],
+     [
+      "🚀",
+      "It is very far"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “It isn't far.”"
+   },
+   {
+    "q": "What does Jack search?",
+    "pt": "O que o Jack procura com os olhos?",
+    "opts": [
+     [
+      "🛣️",
+      "The street"
+     ],
+     [
+      "🏦",
+      "The bank"
+     ],
+     [
+      "🗺️",
+      "The map"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “I search the street.”"
+   },
+   {
+    "q": "What is closed now?",
+    "pt": "O que está fechado agora?",
+    "opts": [
+     [
+      "🏦",
+      "The bank"
+     ],
+     [
+      "🛣️",
+      "The street"
+     ],
+     [
+      "🏪",
+      "The shop"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “The bank is closed now.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está perdido numa cidade nova. **Diga que não é daqui com I'm not…, que o lugar não é longe com It isn't… e que você não tem certeza.**",
+   "ph": "Ex.: I'm not from here. It isn't far. I'm not sure.",
+   "chips": [
+    "I'm not from here",
+    "It isn't",
+    "I'm not sure"
+   ],
+   "model": "I'm not from here. It isn't far. I'm not sure.",
+   "check": [
+    "Disse que não sou daqui?",
+    "Disse que não é longe?",
+    "Disse que não tenho certeza?"
+   ]
+  }
+ },
+ {
+  "n": 7010157,
+  "dquiz": [
+   {
+    "q": "What is this?",
+    "pt": "O que é isto?",
+    "opts": [
+     [
+      "🖍️",
+      "A marker"
+     ],
+     [
+      "🖊️",
+      "A pen"
+     ],
+     [
+      "✏️",
+      "A pencil"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “This is a marker.”"
+   },
+   {
+    "q": "What is it called?",
+    "pt": "Como se chama o objeto?",
+    "opts": [
+     [
+      "📎",
+      "A stapler"
+     ],
+     [
+      "✂️",
+      "Scissors"
+     ],
+     [
+      "🧽",
+      "An eraser"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “It's called a stapler.”"
+   },
+   {
+    "q": "What does Pat want to use?",
+    "pt": "O que o Pat quer usar?",
+    "opts": [
+     [
+      "✂️",
+      "The scissors"
+     ],
+     [
+      "📎",
+      "The stapler"
+     ],
+     [
+      "🖍️",
+      "The marker"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “Can I use the scissors?”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está numa papelaria. **Pergunte o que é um objeto com What's this? e responda com This is… e That is…**",
+   "ph": "Ex.: What's this? This is a pen. That is a marker.",
+   "chips": [
+    "What's this",
+    "This is",
+    "That is"
+   ],
+   "model": "What's this? This is a pen. That is a marker.",
+   "check": [
+    "Perguntei o que é o objeto?",
+    "Usei This is para algo perto?",
+    "Usei That is para algo longe?"
+   ]
+  }
+ },
+ {
+  "n": 7010158,
+  "dquiz": [
+   {
+    "q": "What are those?",
+    "pt": "O que são aquilo?",
+    "opts": [
+     [
+      "🍒",
+      "Cherries"
+     ],
+     [
+      "🍑",
+      "Peaches"
+     ],
+     [
+      "🍎",
+      "Apples"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “Those are cherries.”"
+   },
+   {
+    "q": "How do the fruits look?",
+    "pt": "Como as frutas parecem?",
+    "opts": [
+     [
+      "✨",
+      "Fresh"
+     ],
+     [
+      "🤢",
+      "Old"
+     ],
+     [
+      "🥶",
+      "Cold"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “They look fresh.”"
+   },
+   {
+    "q": "What does Pat squeeze?",
+    "pt": "O que o Pat aperta?",
+    "opts": [
+     [
+      "🟣",
+      "A plum"
+     ],
+     [
+      "🍒",
+      "A cherry"
+     ],
+     [
+      "🍑",
+      "A peach"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I squeeze the plum.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está numa feira de frutas. **Aponte para frutas perto com These are… e longe com Those are…, e peça para provar.**",
+   "ph": "Ex.: These are apples. Those are plums. Can I try one?",
+   "chips": [
+    "These are",
+    "Those are",
+    "Can I try one"
+   ],
+   "model": "These are apples. Those are peaches. Can I try one?",
+   "check": [
+    "Falei das frutas perto com These are?",
+    "Falei das frutas longe com Those are?",
+    "Pedi para provar?"
+   ]
+  }
+ },
+ {
+  "n": 7010159,
+  "dquiz": [
+   {
+    "q": "Who is at the door?",
+    "pt": "Quem está na porta?",
+    "opts": [
+     [
+      "🧍",
+      "A stranger"
+     ],
+     [
+      "👨‍👩‍👧",
+      "A friend"
+     ],
+     [
+      "🐕",
+      "A dog"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “A stranger!”"
+   },
+   {
+    "q": "Who is the package for?",
+    "pt": "Para quem é o pacote?",
+    "opts": [
+     [
+      "🧑",
+      "Pat"
+     ],
+     [
+      "🧔",
+      "Jack"
+     ],
+     [
+      "🧍",
+      "The stranger"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “It's for you.”"
+   },
+   {
+    "q": "What does Pat expect?",
+    "pt": "O que o Pat espera?",
+    "opts": [
+     [
+      "🎁",
+      "A gift"
+     ],
+     [
+      "📬",
+      "A letter"
+     ],
+     [
+      "🍕",
+      "A pizza"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I expect a gift.”"
+   }
+  ],
+  "produce": {
+   "prompt": "A campainha toca em sua casa. **Pergunte quem é com Who is it? e o que a pessoa tem na mão com What is…?** Diga que é para a pessoa.",
+   "ph": "Ex.: Who is it? What is in your hand? It's for you.",
+   "chips": [
+    "Who is it",
+    "What is in",
+    "It's for you"
+   ],
+   "model": "Who is it? What is in your hand? It's for you!",
+   "check": [
+    "Perguntei quem é?",
+    "Perguntei o que a pessoa tem na mão?",
+    "Disse que é para a pessoa?"
+   ]
+  }
+ },
+ {
+  "n": 7010160,
+  "dquiz": [
+   {
+    "q": "What does Jack say to read?",
+    "pt": "O que o Jack diz para ler?",
+    "opts": [
+     [
+      "🏷️",
+      "The tag"
+     ],
+     [
+      "🗺️",
+      "The map"
+     ],
+     [
+      "📦",
+      "The box"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “Read the tag.”"
+   },
+   {
+    "q": "Where does the owner keep the key?",
+    "pt": "Onde o dono guarda a chave?",
+    "opts": [
+     [
+      "👖",
+      "In his pocket"
+     ],
+     [
+      "👜",
+      "In the bag"
+     ],
+     [
+      "🗄️",
+      "In the locker"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “He keeps the key in his pocket.”"
+   },
+   {
+    "q": "Where can he claim the bag?",
+    "pt": "Onde ele pode pegar a bolsa?",
+    "opts": [
+     [
+      "🔐",
+      "At the locker"
+     ],
+     [
+      "🛂",
+      "At the gate"
+     ],
+     [
+      "🏨",
+      "At the desk"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “He can claim it at the locker.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você acha uma bolsa no aeroporto. **Diga que uma coisa é sua com mine, pergunte se é do outro com yours e diga que é dele com his.**",
+   "ph": "Ex.: That's mine. Is this yours? No, it's his.",
+   "chips": [
+    "That's mine",
+    "Is this yours",
+    "it's his"
+   ],
+   "model": "That's mine. Is this yours? No, it's his.",
+   "check": [
+    "Disse que algo é meu?",
+    "Perguntei se algo é do outro?",
+    "Disse que algo é dele?"
+   ]
+  }
+ },
+ {
+  "n": 7010161,
+  "dquiz": [
+   {
+    "q": "How does Jack feel?",
+    "pt": "Como o Jack se sente?",
+    "opts": [
+     [
+      "😬",
+      "Nervous"
+     ],
+     [
+      "😌",
+      "Calm"
+     ],
+     [
+      "😡",
+      "Angry"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “I'm a little nervous.”"
+   },
+   {
+    "q": "What does Jack revise?",
+    "pt": "O que o Jack revisa?",
+    "opts": [
+     [
+      "🧮",
+      "The formula"
+     ],
+     [
+      "📝",
+      "The essay"
+     ],
+     [
+      "📖",
+      "The book"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “I revise the formula.”"
+   },
+   {
+    "q": "What does Pat prepare?",
+    "pt": "O que o Pat prepara?",
+    "opts": [
+     [
+      "📝",
+      "An essay"
+     ],
+     [
+      "🧮",
+      "A formula"
+     ],
+     [
+      "📚",
+      "A quiz"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I prepare an essay for the subject.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Hoje é dia de prova e você fala com um colega. **Diga que está um pouco nervoso(a), pergunte se vocês estão atrasados e deseje boa sorte.**",
+   "ph": "Ex.: I'm a little nervous. Are we late? Good luck!",
+   "chips": [
+    "I'm a little nervous",
+    "Are we late",
+    "Good luck"
+   ],
+   "model": "I'm a little nervous. Are we late? No, we aren't. Good luck!",
+   "check": [
+    "Disse como eu me sentia?",
+    "Perguntei se estávamos atrasados?",
+    "Desejei boa sorte?"
+   ]
+  }
+ },
+ {
+  "n": 7010162,
+  "dquiz": [
+   {
+    "q": "What animal is it?",
+    "pt": "Que animal é?",
+    "opts": [
+     [
+      "🐘",
+      "An elephant"
+     ],
+     [
+      "🐱",
+      "A cat"
+     ],
+     [
+      "🐶",
+      "A dog"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “it's an elephant.”"
+   },
+   {
+    "q": "What does Pat have?",
+    "pt": "O que o Pat tem?",
+    "opts": [
+     [
+      "🥚",
+      "An egg and an onion"
+     ],
+     [
+      "🍎",
+      "An apple and a pear"
+     ],
+     [
+      "🐱",
+      "A cat and a dog"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “I have an egg and an onion.”"
+   },
+   {
+    "q": "What does the boy climb?",
+    "pt": "O que o menino sobe?",
+    "opts": [
+     [
+      "🌳",
+      "A tree"
+     ],
+     [
+      "🏠",
+      "A house"
+     ],
+     [
+      "🪜",
+      "A ladder"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “The boy climbs a tree.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está num parque e conta o que vê. **Diga uma coisa que você vê com a e outra com an.**",
+   "ph": "Ex.: I see a tree. I see an apple.",
+   "chips": [
+    "I see a",
+    "I see an",
+    "It's an"
+   ],
+   "model": "I see a tree. I see an elephant. It's an animal.",
+   "check": [
+    "Usei a com uma palavra?",
+    "Usei an com uma palavra que começa com vogal?",
+    "Disse o que é uma das coisas?"
+   ]
+  }
+ },
+ {
+  "n": 7010163,
+  "dquiz": [
+   {
+    "q": "What does Nia ask about Noah's mother?",
+    "pt": "O que a Nia pergunta sobre a mãe do Noah?",
+    "opts": [
+     [
+      "🥖",
+      "If she is a baker"
+     ],
+     [
+      "🎨",
+      "If she is an artist"
+     ],
+     [
+      "🧑‍✈️",
+      "If she is a pilot"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Nia diz: “is your mother a baker?”"
+   },
+   {
+    "q": "What is Nia's dad?",
+    "pt": "Qual é a profissão do pai da Nia?",
+    "opts": [
+     [
+      "🎨",
+      "An artist"
+     ],
+     [
+      "🥖",
+      "A baker"
+     ],
+     [
+      "🎤",
+      "A singer"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Nia diz: “My dad is an artist.”"
+   },
+   {
+    "q": "What does he paint?",
+    "pt": "O que ele pinta?",
+    "opts": [
+     [
+      "🐦",
+      "Big blue birds"
+     ],
+     [
+      "🌳",
+      "Green trees"
+     ],
+     [
+      "🏠",
+      "Red houses"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Nia diz: “Big blue birds.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você fala da sua família com um colega. **Diga a profissão da sua mãe e do seu pai e diga o que ele pinta ou faz, com uma palavra no plural (-s).**",
+   "ph": "Ex.: My mother is a nurse. My dad is a pilot.",
+   "chips": [
+    "My mother is a",
+    "My dad is an",
+    "He paints"
+   ],
+   "model": "My mother is a baker. My dad is an artist. He paints birds.",
+   "check": [
+    "Disse a profissão da minha mãe?",
+    "Disse a profissão do meu pai?",
+    "Usei uma palavra no plural?"
+   ]
+  }
+ },
+ {
+  "n": 7010164,
+  "dquiz": [
+   {
+    "q": "When is the photo from?",
+    "pt": "De quando é a foto?",
+    "opts": [
+     [
+      "❄️",
+      "Last winter"
+     ],
+     [
+      "☀️",
+      "Last summer"
+     ],
+     [
+      "🌸",
+      "Last spring"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Kenji diz: “It's from last winter.”"
+   },
+   {
+    "q": "Who are the people in the photo?",
+    "pt": "Quem são as pessoas na foto?",
+    "opts": [
+     [
+      "🏠",
+      "His neighbors"
+     ],
+     [
+      "👨‍👩‍👦",
+      "His parents"
+     ],
+     [
+      "🎓",
+      "His teachers"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Kenji diz: “They're my neighbors.”"
+   },
+   {
+    "q": "How many coats does Kenji wear?",
+    "pt": "Quantos casacos o Kenji usa?",
+    "opts": [
+     [
+      "🧥",
+      "Three"
+     ],
+     [
+      "🧥",
+      "Two"
+     ],
+     [
+      "🧥",
+      "Four"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Kenji diz: “I wear three coats!”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você mostra uma foto a um amigo. **Diga que é sua foto, diga quem são as pessoas com They're my… e quantas crianças ou mulheres aparecem.**",
+   "ph": "Ex.: This is my photo. They're my friends.",
+   "chips": [
+    "This is my",
+    "They're my",
+    "three"
+   ],
+   "model": "This is my photo. They're my friends. I see three children.",
+   "check": [
+    "Disse que é minha foto?",
+    "Disse quem são as pessoas?",
+    "Disse quantas pessoas vejo?"
+   ]
+  }
+ },
+ {
+  "n": 7010165,
+  "dquiz": [
+   {
+    "q": "Where is Kim?",
+    "pt": "Onde a Kim está?",
+    "opts": [
+     [
+      "🏋️",
+      "At the gym"
+     ],
+     [
+      "🏫",
+      "At school"
+     ],
+     [
+      "🏠",
+      "At home"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Leo diz: “are you at the gym?”"
+   },
+   {
+    "q": "When do they play?",
+    "pt": "Quando eles jogam?",
+    "opts": [
+     [
+      "🕓",
+      "At four"
+     ],
+     [
+      "🕒",
+      "At three"
+     ],
+     [
+      "🕕",
+      "At six"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Kim diz: “We play at four.”"
+   },
+   {
+    "q": "How many are they now?",
+    "pt": "Quantos eles são agora?",
+    "opts": [
+     [
+      "6️⃣",
+      "Six"
+     ],
+     [
+      "5️⃣",
+      "Five"
+     ],
+     [
+      "4️⃣",
+      "Four"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Kim diz: “We are six now.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você combina um jogo com amigos. **Diga onde você está com I'm at…, a que horas vocês jogam e quantos vocês são.**",
+   "ph": "Ex.: I'm at the gym. We play at four. We are six.",
+   "chips": [
+    "I'm at",
+    "We play at",
+    "We are"
+   ],
+   "model": "I'm at the gym. We play at four. We are six.",
+   "check": [
+    "Disse onde estou?",
+    "Disse a que horas jogamos?",
+    "Disse quantos somos?"
+   ]
+  }
+ },
+ {
+  "n": 7010166,
+  "dquiz": [
+   {
+    "q": "What day is it today?",
+    "pt": "Que dia é hoje?",
+    "opts": [
+     [
+      "📅",
+      "Tuesday"
+     ],
+     [
+      "📅",
+      "Monday"
+     ],
+     [
+      "📅",
+      "Friday"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Lena diz: “It's Tuesday.”"
+   },
+   {
+    "q": "What time is the class on Thursday?",
+    "pt": "A que horas é a aula na quinta?",
+    "opts": [
+     [
+      "🕙",
+      "From ten to noon"
+     ],
+     [
+      "🕑",
+      "From two to four"
+     ],
+     [
+      "🕘",
+      "From nine to ten"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Lena diz: “from ten to noon.”"
+   },
+   {
+    "q": "Where do they go on Saturday?",
+    "pt": "Aonde eles vão no sábado?",
+    "opts": [
+     [
+      "🏖️",
+      "The beach"
+     ],
+     [
+      "🏋️",
+      "The gym"
+     ],
+     [
+      "🏫",
+      "School"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Lena diz: “Let's go to the beach.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você combina a semana com um amigo. **Diga que dia é hoje, em que dia é sua aula e aonde vocês vão no sábado.**",
+   "ph": "Ex.: It's Monday. My class is on Friday.",
+   "chips": [
+    "It's",
+    "on Thursday",
+    "Let's go to"
+   ],
+   "model": "It's Tuesday. My class is on Thursday. Let's go to the beach on Saturday.",
+   "check": [
+    "Disse que dia é hoje?",
+    "Disse o dia da minha aula?",
+    "Combinei aonde ir no sábado?"
+   ]
+  }
+ },
+ {
+  "n": 7010167,
+  "dquiz": [
+   {
+    "q": "What is flat?",
+    "pt": "O que está furado (murcho)?",
+    "opts": [
+     [
+      "🛞",
+      "A tire"
+     ],
+     [
+      "🚪",
+      "The door"
+     ],
+     [
+      "💺",
+      "The seat"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Kate diz: “A tire is flat.”"
+   },
+   {
+    "q": "What does Kate do later?",
+    "pt": "O que a Kate faz mais tarde?",
+    "opts": [
+     [
+      "📞",
+      "She calls a friend"
+     ],
+     [
+      "🚗",
+      "She buys a car"
+     ],
+     [
+      "🏠",
+      "She drives home"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Kate diz: “I call a friend later.”"
+   },
+   {
+    "q": "What do they stop for first?",
+    "pt": "Para que eles param primeiro?",
+    "opts": [
+     [
+      "⛽",
+      "Gas"
+     ],
+     [
+      "☕",
+      "Coffee"
+     ],
+     [
+      "🍔",
+      "Lunch"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Dan diz: “We stop for gas first.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu carro quebrou e você precisa chegar ao trabalho. **Peça a um amigo para levar você ao trabalho com Can you…? e diga que seu carro está quebrado.** Depois agradeça.",
+   "ph": "Ex.: Can you drive me to work? My car is broken.",
+   "chips": [
+    "Can you",
+    "My car is",
+    "Thank you"
+   ],
+   "model": "Can you drive me to work? My car is broken. Thank you!",
+   "check": [
+    "Pedi ajuda com Can you?",
+    "Disse que meu carro está quebrado?",
+    "Agradeci?"
+   ]
+  }
+ },
+ {
+  "n": 7010168,
+  "dquiz": [
+   {
+    "q": "What is too big?",
+    "pt": "O que está grande demais?",
+    "opts": [
+     [
+      "🧥",
+      "The jacket"
+     ],
+     [
+      "👖",
+      "The pants"
+     ],
+     [
+      "👟",
+      "The shoes"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Max diz: “It's too big.”"
+   },
+   {
+    "q": "What does Lena say to try?",
+    "pt": "O que a Lena diz para experimentar?",
+    "opts": [
+     [
+      "📏",
+      "The smaller one"
+     ],
+     [
+      "📐",
+      "The bigger one"
+     ],
+     [
+      "🎨",
+      "The blue one"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Lena diz: “Try the smaller one.”"
+   },
+   {
+    "q": "How much is the jacket?",
+    "pt": "Quanto custa a jaqueta?",
+    "opts": [
+     [
+      "💵",
+      "Forty dollars"
+     ],
+     [
+      "💰",
+      "Fifty dollars"
+     ],
+     [
+      "🪙",
+      "Ten dollars"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Lena diz: “Forty dollars.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você prova uma blusa numa loja. **Diga que ela é grande demais, pergunte se tem uma menor e pergunte o preço.**",
+   "ph": "Ex.: It's too big. Do you have a smaller one?",
+   "chips": [
+    "It's too big",
+    "Do you have a smaller one",
+    "How much is it"
+   ],
+   "model": "It's too big. Do you have a smaller one? How much is it?",
+   "check": [
+    "Disse que é grande demais?",
+    "Pedi um tamanho menor?",
+    "Perguntei o preço?"
+   ]
+  }
+ },
+ {
+  "n": 7010169,
+  "dquiz": [
+   {
+    "q": "How old are the twins?",
+    "pt": "Quantos anos os gêmeos têm?",
+    "opts": [
+     [
+      "🔟",
+      "Ten"
+     ],
+     [
+      "9️⃣",
+      "Nine"
+     ],
+     [
+      "8️⃣",
+      "Eight"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Mom diz: “the twins are ten today.”"
+   },
+   {
+    "q": "What does Mom plan?",
+    "pt": "O que a mãe planeja?",
+    "opts": [
+     [
+      "🎉",
+      "A small party"
+     ],
+     [
+      "✈️",
+      "A trip"
+     ],
+     [
+      "🏫",
+      "A class"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Mom diz: “I plan a small party.”"
+   },
+   {
+    "q": "What does Dad buy?",
+    "pt": "O que o pai compra?",
+    "opts": [
+     [
+      "🎂",
+      "The cake"
+     ],
+     [
+      "🎁",
+      "The gifts"
+     ],
+     [
+      "🎈",
+      "The balloons"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Dad diz: “I buy the cake.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você conhece uma pessoa nova numa festa de aniversário. **Pergunte a idade dela com How old are you?, diga a sua e a idade de um sobrinho ou sobrinha.**",
+   "ph": "Ex.: How old are you? I am thirty. My niece is ten.",
+   "chips": [
+    "How old are you",
+    "I am",
+    "is ten"
+   ],
+   "model": "How old are you? I am thirty. My niece is ten.",
+   "check": [
+    "Perguntei a idade dela?",
+    "Disse a minha idade?",
+    "Disse a idade de um sobrinho(a)?"
+   ]
+  }
+ },
+ {
+  "n": 7010170,
+  "dquiz": [
+   {
+    "q": "Where is north on the map?",
+    "pt": "Onde fica o norte no mapa?",
+    "opts": [
+     [
+      "⬆️",
+      "Up"
+     ],
+     [
+      "⬇️",
+      "Down"
+     ],
+     [
+      "⬅️",
+      "Left"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Rita diz: “It's up.”"
+   },
+   {
+    "q": "Where is the river?",
+    "pt": "Onde fica o rio?",
+    "opts": [
+     [
+      "🌊",
+      "To the east of the bridge"
+     ],
+     [
+      "🌉",
+      "To the west of the bridge"
+     ],
+     [
+      "🏔️",
+      "To the north of the hill"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Rita diz: “To the east of the bridge.”"
+   },
+   {
+    "q": "Who leads the group?",
+    "pt": "Quem guia o grupo?",
+    "opts": [
+     [
+      "🧭",
+      "Jack"
+     ],
+     [
+      "🗺️",
+      "Rita"
+     ],
+     [
+      "🧑‍✈️",
+      "The guide"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Jack diz: “I lead the group.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você guia amigos numa trilha. **Pergunte onde fica o norte, diga que o rio fica a leste da ponte e chame o grupo para segui-lo.**",
+   "ph": "Ex.: Where is north? The river is to the east.",
+   "chips": [
+    "Where is",
+    "to the east of",
+    "Follow me"
+   ],
+   "model": "Where is north? The river is to the east of the bridge. Follow me!",
+   "check": [
+    "Perguntei onde fica o norte?",
+    "Disse onde fica o rio?",
+    "Chamei o grupo?"
+   ]
+  }
+ },
+ {
+  "n": 7010171,
+  "dquiz": [
+   {
+    "q": "Where was Mei last night?",
+    "pt": "Onde a Mei estava ontem à noite?",
+    "opts": [
+     [
+      "🎉",
+      "At a party"
+     ],
+     [
+      "🏫",
+      "At school"
+     ],
+     [
+      "🏋️",
+      "At the gym"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Mei diz: “I was at my cousin's party.”"
+   },
+   {
+    "q": "How was the music?",
+    "pt": "Como estava a música?",
+    "opts": [
+     [
+      "🎶",
+      "Great"
+     ],
+     [
+      "🔇",
+      "Bad"
+     ],
+     [
+      "😴",
+      "Boring"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Mei diz: “The music was great.”"
+   },
+   {
+    "q": "Where was Pat?",
+    "pt": "Onde o Pat estava?",
+    "opts": [
+     [
+      "🚪",
+      "Next door"
+     ],
+     [
+      "🏠",
+      "At home"
+     ],
+     [
+      "🏖️",
+      "At the beach"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I was next door.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você encontra um amigo e fala da noite passada. **Pergunte onde ele estava ontem à noite, diga onde você estava e como foi.**",
+   "ph": "Ex.: Where were you last night? I was at a party.",
+   "chips": [
+    "Where were you",
+    "I was",
+    "It was"
+   ],
+   "model": "Where were you last night? I was at a party. It was great!",
+   "check": [
+    "Perguntei onde ele estava?",
+    "Disse onde eu estava?",
+    "Disse como foi?"
+   ]
+  }
+ },
+ {
+  "n": 7010172,
+  "dquiz": [
+   {
+    "q": "What does Jack think?",
+    "pt": "O que o Jack pensa?",
+    "opts": [
+     [
+      "💪",
+      "We work for luck"
+     ],
+     [
+      "🍀",
+      "Luck is everything"
+     ],
+     [
+      "😴",
+      "We sleep for luck"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “I think we work for it.”"
+   },
+   {
+    "q": "What helps?",
+    "pt": "O que ajuda?",
+    "opts": [
+     [
+      "🍀",
+      "A little luck"
+     ],
+     [
+      "💰",
+      "Money"
+     ],
+     [
+      "⏰",
+      "Time"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “a little luck helps.”"
+   },
+   {
+    "q": "Who agrees with that?",
+    "pt": "Quem concorda com isso?",
+    "opts": [
+     [
+      "🙋",
+      "Kim"
+     ],
+     [
+      "🧔",
+      "Jack"
+     ],
+     [
+      "👩‍🏫",
+      "A teacher"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Kim diz: “I agree with that.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um amigo pede sua opinião sobre música. **Dê sua opinião com In my opinion… e I think…, e diga que concorda com ele.**",
+   "ph": "Ex.: In my opinion, music is fun. I agree.",
+   "chips": [
+    "In my opinion",
+    "I think",
+    "I agree"
+   ],
+   "model": "In my opinion, music is fun. I think it helps. I agree with you.",
+   "check": [
+    "Dei minha opinião com In my opinion?",
+    "Usei I think?",
+    "Disse que concordo?"
+   ]
+  }
+ },
+ {
+  "n": 7010173,
+  "dquiz": [
+   {
+    "q": "Who is the tallest?",
+    "pt": "Quem é o mais alto?",
+    "opts": [
+     [
+      "📏",
+      "Sam"
+     ],
+     [
+      "🧑",
+      "Tom"
+     ],
+     [
+      "🧑‍🏫",
+      "Kim"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “Sam is the tallest.”"
+   },
+   {
+    "q": "Who is the oldest and the best?",
+    "pt": "Quem é o mais velho e o melhor?",
+    "opts": [
+     [
+      "🏆",
+      "Tom"
+     ],
+     [
+      "🧑",
+      "Sam"
+     ],
+     [
+      "🧔",
+      "Jack"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “He's the oldest and the best.”"
+   },
+   {
+    "q": "What place do they rank?",
+    "pt": "Em que lugar eles ficam?",
+    "opts": [
+     [
+      "🥇",
+      "First"
+     ],
+     [
+      "🥈",
+      "Second"
+     ],
+     [
+      "🥉",
+      "Third"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “We rank first.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você fala do seu grupo de amigos. **Diga quem é o mais alto e quem é o mais velho, usando the -est. Depois elogie um amigo.**",
+   "ph": "Ex.: Sam is the tallest. Tom is the oldest.",
+   "chips": [
+    "the tallest",
+    "the oldest",
+    "the best"
+   ],
+   "model": "Sam is the tallest. Tom is the oldest. You're the best!",
+   "check": [
+    "Disse quem é o mais alto?",
+    "Disse quem é o mais velho?",
+    "Elogiei um amigo?"
+   ]
+  }
+ },
+ {
+  "n": 7010174,
+  "dquiz": [
+   {
+    "q": "What is today?",
+    "pt": "O que é hoje?",
+    "opts": [
+     [
+      "🎊",
+      "A holiday"
+     ],
+     [
+      "📚",
+      "A class day"
+     ],
+     [
+      "🏢",
+      "A work day"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Mei diz: “today is a holiday!”"
+   },
+   {
+    "q": "Who do they celebrate with?",
+    "pt": "Com quem eles comemoram?",
+    "opts": [
+     [
+      "👨‍👩‍👧",
+      "With the family"
+     ],
+     [
+      "🧑‍🤝‍🧑",
+      "With the team"
+     ],
+     [
+      "🏫",
+      "With the class"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Leo diz: “We celebrate with the family.”"
+   },
+   {
+    "q": "What does Mei light at night?",
+    "pt": "O que a Mei acende à noite?",
+    "opts": [
+     [
+      "🕯️",
+      "A candle"
+     ],
+     [
+      "🎆",
+      "Fireworks"
+     ],
+     [
+      "🔥",
+      "A fire"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Mei diz: “I light a candle at night.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você convida um amigo para a festa de Ano Novo. **Deseje Feliz Ano Novo, diga a que horas é a festa (hora cheia ou meia) e responda ao desejo dele.**",
+   "ph": "Ex.: Happy New Year! The party is at eight o'clock.",
+   "chips": [
+    "Happy New Year",
+    "The party is at",
+    "Same to you"
+   ],
+   "model": "Happy New Year! The party is at nine thirty. Same to you!",
+   "check": [
+    "Desejei Feliz Ano Novo?",
+    "Disse a hora da festa?",
+    "Respondi ao desejo do amigo?"
+   ]
+  }
+ },
+ {
+  "n": 7010175,
+  "dquiz": [
+   {
+    "q": "What is on Leo's arm?",
+    "pt": "O que está no braço do Leo?",
+    "opts": [
+     [
+      "🐜",
+      "An ant"
+     ],
+     [
+      "🐝",
+      "A bee"
+     ],
+     [
+      "🦋",
+      "A butterfly"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Kim diz: “An ant is on your arm.”"
+   },
+   {
+    "q": "What stings?",
+    "pt": "O que pica?",
+    "opts": [
+     [
+      "🐝",
+      "A bee"
+     ],
+     [
+      "🐜",
+      "An ant"
+     ],
+     [
+      "🦋",
+      "A butterfly"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Kim diz: “a bee stings.”"
+   },
+   {
+    "q": "What does the butterfly do?",
+    "pt": "O que a borboleta faz?",
+    "opts": [
+     [
+      "🌸",
+      "It hops from flower to flower"
+     ],
+     [
+      "🌊",
+      "It swims in the river"
+     ],
+     [
+      "🌳",
+      "It sleeps in a tree"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Kim diz: “It hops from flower to flower.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você passeia num jardim. **Diga que animal você vê, que ele é pequeno e que você tem medo de abelhas.**",
+   "ph": "Ex.: I see a butterfly. It's small.",
+   "chips": [
+    "I see a",
+    "It's small",
+    "I'm afraid of"
+   ],
+   "model": "I see a butterfly. It's small. I'm afraid of bees.",
+   "check": [
+    "Disse que animal eu vejo?",
+    "Disse que ele é pequeno?",
+    "Disse de que tenho medo?"
+   ]
+  }
+ },
+ {
+  "n": 7010176,
+  "dquiz": [
+   {
+    "q": "What does Ana have?",
+    "pt": "O que a Ana tem?",
+    "opts": [
+     [
+      "💼",
+      "A job interview"
+     ],
+     [
+      "🎓",
+      "An exam"
+     ],
+     [
+      "🏖️",
+      "A holiday"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Ana diz: “I have a job interview.”"
+   },
+   {
+    "q": "What should Ana bring?",
+    "pt": "O que a Ana deve levar?",
+    "opts": [
+     [
+      "📄",
+      "Her resume"
+     ],
+     [
+      "📚",
+      "A book"
+     ],
+     [
+      "🎁",
+      "A gift"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Leo diz: “Bring your resume.”"
+   },
+   {
+    "q": "When does Ana's colleague graduate?",
+    "pt": "Quando o colega da Ana se forma?",
+    "opts": [
+     [
+      "📅",
+      "In June"
+     ],
+     [
+      "📅",
+      "In May"
+     ],
+     [
+      "📅",
+      "In July"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Ana diz: “My colleague graduates in June.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você e um amigo vão a uma entrevista. **Diga que você tem uma entrevista, lembre o amigo de trazer o currículo e diga em que mês vocês começam, com in + mês.**",
+   "ph": "Ex.: I have a job interview. We start in July.",
+   "chips": [
+    "I have a",
+    "Bring your",
+    "in July"
+   ],
+   "model": "I have a job interview. Bring your resume. We start in July.",
+   "check": [
+    "Disse que tenho uma entrevista?",
+    "Pedi para trazer o currículo?",
+    "Disse um mês com in?"
+   ]
+  }
+ },
+ {
+  "n": 7010177,
+  "dquiz": [
+   {
+    "q": "What is the date today?",
+    "pt": "Qual é a data de hoje?",
+    "opts": [
+     [
+      "📅",
+      "July fourth"
+     ],
+     [
+      "📅",
+      "June first"
+     ],
+     [
+      "📅",
+      "May tenth"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “It's July fourth.”"
+   },
+   {
+    "q": "What is soon?",
+    "pt": "O que vai acontecer em breve?",
+    "opts": [
+     [
+      "🎺",
+      "The parade"
+     ],
+     [
+      "🎆",
+      "The dinner"
+     ],
+     [
+      "🏫",
+      "The class"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “The parade is soon.”"
+   },
+   {
+    "q": "What does Pat always salute?",
+    "pt": "O que o Pat sempre saúda?",
+    "opts": [
+     [
+      "🚩",
+      "The flag"
+     ],
+     [
+      "🧑‍✈️",
+      "The captain"
+     ],
+     [
+      "🎖️",
+      "The teacher"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “I always salute the flag.”"
+   }
+  ],
+  "produce": {
+   "prompt": "É dia de festa no seu bairro. **Pergunte a data de hoje, responda com mês e dia e deseje um feliz feriado.**",
+   "ph": "Ex.: What's the date today? It's May first.",
+   "chips": [
+    "What's the date today",
+    "It's",
+    "Happy"
+   ],
+   "model": "What's the date today? It's July fourth. Happy Fourth of July!",
+   "check": [
+    "Perguntei a data?",
+    "Respondi com mês e dia?",
+    "Desejei um feliz feriado?"
+   ]
+  }
+ },
+ {
+  "n": 7010178,
+  "dquiz": [
+   {
+    "q": "What does Jack need to budget?",
+    "pt": "O que o Jack precisa controlar?",
+    "opts": [
+     [
+      "💰",
+      "His money"
+     ],
+     [
+      "⏰",
+      "His time"
+     ],
+     [
+      "🍔",
+      "His food"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “I need to budget my money.”"
+   },
+   {
+    "q": "What does Pat tell Jack to try?",
+    "pt": "O que o Pat diz ao Jack para tentar?",
+    "opts": [
+     [
+      "🤝",
+      "To haggle"
+     ],
+     [
+      "🛍️",
+      "To splurge"
+     ],
+     [
+      "🏃",
+      "To run"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “Try to haggle.”"
+   },
+   {
+    "q": "What is the price?",
+    "pt": "Qual é o preço?",
+    "opts": [
+     [
+      "💵",
+      "Thirty dollars and fifty cents"
+     ],
+     [
+      "💵",
+      "Thirty dollars"
+     ],
+     [
+      "🪙",
+      "Fifty cents"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Jack diz: “The price is thirty dollars and fifty cents.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você olha um produto numa loja. **Diga o preço em dólares e centavos e diga que precisa economizar seu dinheiro.**",
+   "ph": "Ex.: The price is ten dollars and fifty cents.",
+   "chips": [
+    "The price is",
+    "dollars and",
+    "I need to"
+   ],
+   "model": "The price is ten dollars and fifty cents. I need to budget my money.",
+   "check": [
+    "Disse o preço com The price is?",
+    "Falei de dólares e centavos?",
+    "Disse que preciso economizar?"
+   ]
+  }
+ },
+ {
+  "n": 7010179,
+  "dquiz": [
+   {
+    "q": "What does Pat want?",
+    "pt": "O que o Pat quer?",
+    "opts": [
+     [
+      "🥚",
+      "A dozen eggs and some milk"
+     ],
+     [
+      "🍞",
+      "Bread and butter"
+     ],
+     [
+      "🍎",
+      "Apples and rice"
+     ]
+    ],
+    "a": 0,
+    "line": 2,
+    "why": "Pat diz: “I'd like a dozen eggs and some milk.”"
+   },
+   {
+    "q": "Where is the dairy section?",
+    "pt": "Onde fica a seção de laticínios?",
+    "opts": [
+     [
+      "⬅️",
+      "On the left"
+     ],
+     [
+      "➡️",
+      "On the right"
+     ],
+     [
+      "⬆️",
+      "Upstairs"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Jack diz: “The dairy section is on the left.”"
+   },
+   {
+    "q": "What do they sample?",
+    "pt": "O que eles provam?",
+    "opts": [
+     [
+      "🧀",
+      "The cheese"
+     ],
+     [
+      "🍎",
+      "The apples"
+     ],
+     [
+      "🍪",
+      "The cookies"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “Let's sample the cheese.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você faz compras num mercado. **Peça uma dúzia de ovos e um pouco de leite com I'd like… e pergunte onde fica a seção de laticínios.**",
+   "ph": "Ex.: I'd like a dozen eggs, please.",
+   "chips": [
+    "I'd like",
+    "some milk",
+    "Where is"
+   ],
+   "model": "I'd like a dozen eggs and some milk, please. Where is the dairy section?",
+   "check": [
+    "Pedi algo com I'd like?",
+    "Pedi leite?",
+    "Perguntei onde fica a seção?"
+   ]
+  }
+ },
+ {
+  "n": 7010180,
+  "dquiz": [
+   {
+    "q": "Whose house is it?",
+    "pt": "De quem é a casa?",
+    "opts": [
+     [
+      "🏠",
+      "His grandparents'"
+     ],
+     [
+      "🏡",
+      "His parents'"
+     ],
+     [
+      "🏢",
+      "His teacher's"
+     ]
+    ],
+    "a": 0,
+    "line": 0,
+    "why": "Pat diz: “is that your grandparents' house?”"
+   },
+   {
+    "q": "How many grandchildren do they raise?",
+    "pt": "Quantos netos eles criam?",
+    "opts": [
+     [
+      "👧",
+      "Two"
+     ],
+     [
+      "👧",
+      "Three"
+     ],
+     [
+      "👧",
+      "Four"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Jack diz: “They raise two grandchildren there.”"
+   },
+   {
+    "q": "Who does Jack look like?",
+    "pt": "Com quem o Jack se parece?",
+    "opts": [
+     [
+      "👨",
+      "His father"
+     ],
+     [
+      "👩",
+      "His mother"
+     ],
+     [
+      "👵",
+      "His grandma"
+     ]
+    ],
+    "a": 0,
+    "line": 4,
+    "why": "Pat diz: “Do you resemble your father?”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você mostra fotos da sua família. **Diga de quem é uma casa e de quem é um cachorro, usando 's, e diga com quem você se parece.**",
+   "ph": "Ex.: This is my grandma's house. It's my brother's dog.",
+   "chips": [
+    "This is my grandma's",
+    "It's my",
+    "I look like"
+   ],
+   "model": "This is my grandma's house. It's my brother's dog. I look like my father.",
+   "check": [
+    "Disse de quem é a casa?",
+    "Disse de quem é o cachorro?",
+    "Disse com quem me pareço?"
+   ]
+  }
+ },
+ {
+  "n": 7030001,
+  "dquiz": [
+   {
+    "q": "Who is Ana?",
+    "pt": "Quem é a Ana?",
+    "opts": [
+     [
+      "👩",
+      "Mia's sister"
+     ],
+     [
+      "👵",
+      "Mia's mother"
+     ],
+     [
+      "👩‍🏫",
+      "Sam's sister"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Mia diz: “She's my sister, Ana.”"
+   },
+   {
+    "q": "What is Leo?",
+    "pt": "O que o Leo é?",
+    "opts": [
+     [
+      "🎓",
+      "A student"
+     ],
+     [
+      "👨‍🏫",
+      "A teacher"
+     ],
+     [
+      "🧑‍⚕️",
+      "A doctor"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Mia diz: “He's a student.”"
+   },
+   {
+    "q": "What is the dog's name?",
+    "pt": "Qual é o nome do cachorro?",
+    "opts": [
+     [
+      "🐕",
+      "Max"
+     ],
+     [
+      "🐕",
+      "Leo"
+     ],
+     [
+      "🐕",
+      "Sam"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Mia diz: “It's Max.”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você mostra uma foto de família a um amigo. **Diga quem é a mulher com She's my…, quem é o homem com He's my… e fale do cachorro com It's…**",
+   "ph": "Ex.: She's my mother. He's my father. It's a small dog.",
+   "chips": [
+    "She's my",
+    "He's my",
+    "It's"
+   ],
+   "model": "She's my sister. He's my brother. It's a big dog.",
+   "check": [
+    "Disse quem é a mulher?",
+    "Disse quem é o homem?",
+    "Falei do cachorro?"
+   ]
+  }
+ }
+]
