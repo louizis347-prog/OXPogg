@@ -186,3 +186,8 @@ V2[4]['rule'] = dict(
            dict(tag='y → ies', c=1, text='Terminou em **consoante + y**: tire o **y** e ponha **-ies**.', ex='puppy → puppies · story → stories · party → parties')],
     tips=['Depois de **two, three, many…** a palavra vai para o plural: two **toys**, three **balloons**.'],
 )
+V2[0]['mission_ic'] = '🙋'
+V2[1]['mission_ic'] = '👋'
+V2[2]['mission_ic'] = '🧙'
+V2[3]['mission_ic'] = '🧚'
+V2[4]['mission_ic'] = '🧸'

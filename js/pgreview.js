@@ -17,7 +17,8 @@ function collect(cid,idx){
     const items=[];sheets.forEach(f=>{if(f.review===false)return;(f.items||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})))});
     const vf=e.fr.find(f=>f.k==='verbs')||{};
     (vf.quiz||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})));
-    const exps=((e.fr.find(f=>f.k==='pgexp')||{}).items)||[];
+    const ef=e.fr.find(f=>f.k==='pgexp')||{};const exps=ef.items||[];
+    (ef.quiz||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})));
     const lab=e.fr.find(f=>f.k==='pglab')||null;
     return {e,i,rule,words,items,verbs:vf.items||[],exps,lab,stage:e.stage||{}};
   });

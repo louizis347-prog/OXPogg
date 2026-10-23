@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from model_v2_data import V2  # noqa: E402
 from model_v2_extra import EXTRA, VERBS  # noqa: E402
+from model_v2_more import MORE  # noqa: E402
 
 
 def main_chars(st):
@@ -80,7 +81,7 @@ HOTPT = {
 }
 
 
-def build(old, X, XT, VB, prev):
+def build(old, X, XT, VB, prev, MR=None):
     B = X['base']
     a, b = X['names']
     st = X['stage']
@@ -122,6 +123,8 @@ def build(old, X, XT, VB, prev):
     R = dict(X['rule'])
     R['formula'] = [{'from': r['from_'], 'to': r['to'], 'say': r.get('say'), 'note': r.get('note')} for r in R.get('formula', [])]
     frames.append(fr('pgrule', rule=R, q=B['rdg_q'], rs=rs['rdg'], say='Veja o padrão com figuras e ouça os exemplos.'))
+    frames.append(fr('pgmold', title='Molde de frases', pages=MR['mold'], rs=rs['pat'], chars=mc,
+                     say='Toque nas peças e veja várias frases.', bubble=[a, 'Swap the pieces and build sentences!', 'Troque as peças e monte frases!']))
     # palavras com figura (todas de uma vez)
     pt = {}
     for w, p, note in B['vocab']:
@@ -146,16 +149,18 @@ def build(old, X, XT, VB, prev):
                      say='Missão dos verbos: 7 passos. Eu ajudo você!', rs=rs['build'], chars=mc,
                      bubble=[a, 'Verb mission! I will help you.', 'Missão dos verbos! Eu ajudo você.']))
     # expressões comuns e gírias + cena com as expressões
-    frames.append(fr('pgexp', title='Expressões e gírias', items=XT['exp'], rs=rs['vplay'], chars=mc,
+    frames.append(fr('pgexp', title='Expressões e gírias', items=XT['exp'], quiz=MR['expq'], rs=rs['vplay'], chars=mc,
                      say='Toque para ouvir cada expressão.', bubble=[a, 'This is how people really talk!', 'É assim que as pessoas falam de verdade!']))
     es = XT['exp_scene']
     frames.append(fr('pgscene', title='Na conversa de verdade', cast=B['cast'], lines=es['lines'], speakers=X['speakers'], rs=es['rs'],
                      chars=st['chars'], say='Veja as expressões em uso. Elas estão destacadas.'))
     gap = [dict(text=r['q'], pt=r['pt'], opts=r['opts'], a=r['a'], why=r['why'],
                 say=r['q'].replace('___', r['opts'][r['a']])) for r in X['gap']]
+    gap = gap + MR['gap']
     frames.append(fr('pgsheet', title='Complete as falas', items=gap, rs=rs['build'], chars=mc,
                      bubble=[b, 'Complete the sentences!', 'Complete as frases!']))
     trap = [dict(ask=r['q'], opts=r['opts'], a=r['a'], why=r['why'], say=strip_tags(r['opts'][r['a']])) for r in X['trap']]
+    trap = trap + [dict(ask=r['ask'], opts=r['opts'], a=r['a'], why=r['why'], say=r.get('say') or strip_tags(r['opts'][r['a']])) for r in MR['trap']]
     frames.append(fr('pgsheet', title='Qual está certa?', items=trap, rs=rs['order'], chars=mc,
                      bubble=[b, 'Careful! Only one is right.', 'Cuidado! Só uma está certa.']))
     # laboratório de sons + caça-sons (só se o episódio ainda não tiver o laboratório)
@@ -164,11 +169,14 @@ def build(old, X, XT, VB, prev):
         frames.append(fr('pglab', rs=rs['soundlab'], chars=mc, bubble=[a, "Let's train our ears!", 'Vamos treinar o ouvido!'], **lab))
         frames.append(fr('pgsheet', title='Caça-sons', items=XT['hunt'], rs=rs['soundlab'], chars=mc,
                          bubble=[b, 'Listen and hunt the sound!', 'Ouça e cace o som certo!']))
-    frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]], who=mc[0][0],
+    frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]] + [list(x) for x in MR['speak']], who=mc[0][0],
                      say='Ouça cada frase e repita em voz alta.', rs=rs['dictate'], chars=mc))
     pr = dict(B['produce'])
-    frames.append(fr('produce', title='Missão: sua vez!', rs=rs['produce'], chars=mc,
-                     bubble=[a, 'Now tell me about you!', 'Agora me conte sobre você!'], **pr))
+    m1 = dict(ic=X['mission_ic'], name='Cena da obra', desc='Fale como os personagens.',
+              data=dict(prompt=pr['prompt'], ph='Escreva a sua resposta aqui…', chips=[pr['chips'][0]], model=pr['model'], check=pr['check'],
+                        kw=pr['kw'], tips=pr['tips'], ok=pr['ok'], reply=pr['reply']))
+    frames.append(fr('pgmission', title='Missão: sua vez!', missions=[m1] + MR['missions'], rs=rs['produce'], chars=mc,
+                     say='Escolha uma missão e mostre o que você aprendeu!', bubble=[a, 'Pick a mission! Which one do you want?', 'Escolha uma missão! Qual você quer?']))
     frames.append(fr('wrap', title='Para levar', recap=B['wrap_recap'], teaser=B['teaser'], sticker=X['sticker'], rs=rs['wrap'], chars=mc))
 
     e = copy.deepcopy(old)
@@ -198,7 +206,7 @@ def main():
                 if e['n'] == X['n']:
                     k = V2.index(X)
                     prev = (V2[k - 1], EXTRA[k - 1], VERBS[k - 1]) if k else None
-                    d[i] = build(e, X, EXTRA[k], VERBS[k], prev)
+                    d[i] = build(e, X, EXTRA[k], VERBS[k], prev, MORE[k])
                     done += 1
     for f, d in files.items():
         with open(f, 'w', encoding='utf-8') as fh:

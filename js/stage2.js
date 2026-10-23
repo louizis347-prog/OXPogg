@@ -95,10 +95,53 @@ FXR.pgexp=function(f,st,n){
     <p class="ps-exuse">${MK(it.use)}</p>
     <button type="button" class="ps-exex" data-say="${H(it.ex[0])}"><span>🗣️</span><div><b>${H(it.ex[0])}</b><small>${H(it.ex[1])}</small></div><i>🔊</i></button></article>`;
   st.innerHTML=`<div class="step fx ps-ex">${fxKindBar(f,n)}<div class="ps-sh-h"><h2 class="fx-h">${H(f.title||'Expressões e gírias')}</h2><span class="ps-count">${items.length} para levar</span></div>
-    <p class="ps-note">${MK(f.intro||'Expressões e gírias não se traduzem palavra por palavra. Aprenda cada uma como um **bloco inteiro**.')}</p><div class="ps-exl">${items.map(card).join('')}</div></div>`;
-  qa('[data-say]',st).forEach(b=>b.onclick=()=>tts(b.dataset.say));
+    <p class="ps-note">${MK(f.intro||'Expressões e gírias não se traduzem palavra por palavra. Aprenda cada uma como um **bloco inteiro**.')}</p><div class="ps-exl">${items.map(card).join('')}</div>
+    ${(f.quiz||[]).length?`<section class="ps-sec"><h3>🎯 Qual expressão usar? <span class="ps-count" id="psxc">0/${f.quiz.length}</span></h3><div class="ps-qs" id="psxq">${f.quiz.map(cardHTML).join('')}</div></section>`:''}</div>`;
+  qa('[data-say]',st).forEach(b=>{if(!b.classList.contains('ps-fig')&&!b.classList.contains('ps-mini'))b.onclick=()=>tts(b.dataset.say)});
+  if((f.quiz||[]).length){let k=0;bindCards(q('#psxq',st),f.quiz,(i,ok)=>{k++;if(ok)P.score++;q('#psxc',st).textContent=k+'/'+f.quiz.length})}
   P.fx.cta=null;cta('Continuar',true,true);
   say(f.say||'Toque para ouvir cada expressão.');
+};
+
+/* ---------------- molde de frases: troque as peças ---------------- */
+FX_KIND.pgmold='practice';FX_LABEL.pgmold='Molde de frases';
+FXR.pgmold=function(f,st,n){
+  const pages=f.pages||[];const state=pages.map(p=>p.slots.map(()=>0));
+  const pick=(pi)=>pages[pi].slots.map((sl,i)=>sl.opts[state[pi][i]]);
+  const en=pi=>{const t=pick(pi).map(o=>o[0]).join(' ').replace(/\s+([,.!?])/g,'$1');return t+(pages[pi].end[0]||'')};
+  const pt=pi=>{const t=pick(pi).map(o=>o[1]).join(' ').replace(/\s+([,.!?])/g,'$1').replace(/^./,c=>c.toUpperCase());return t+(pages[pi].end[1]||'')};
+  const card=(p,pi)=>`<section class="ps-sec ps-md" data-p="${pi}"><h3>🧩 ${H(p.label)}</h3>
+    <div class="ps-md-row">${p.slots.map((sl,i)=>`<button type="button" class="ps-slot ${CC[i%4]}" data-s="${i}"><small>${H(sl.cat)}</small><b>${H(sl.opts[0][0])}</b>${sl.opts.length>1?'<i>⟳</i>':''}</button>`).join('')}${p.end[0]?`<span class="ps-md-end">${H(p.end[0])}</span>`:''}</div>
+    <div class="ps-md-out"><div><b class="en">${H(en(pi))}</b><small class="pt">${H(pt(pi))}</small></div><button type="button" class="ps-mini" data-a="p" aria-label="Ouvir">🔊</button><button type="button" class="ps-mini" data-a="r" aria-label="Sortear">🎲</button></div></section>`;
+  st.innerHTML=`<div class="step fx ps-mold">${fxKindBar(f,n)}<div class="ps-sh-h"><h2 class="fx-h">${H(f.title||'Molde de frases')}</h2><span class="ps-count" id="psmc">toque nas peças</span></div>
+    <p class="ps-note">Cada peça colorida pode ser trocada. Toque nela e veja (e ouça) uma frase nova. O 🎲 sorteia tudo de uma vez.</p>${pages.map(card).join('')}</div>`;
+  let moves=0;
+  const refresh=(c,pi)=>{
+    qa('.ps-slot',c).forEach((b,i)=>{const o=pages[pi].slots[i].opts[state[pi][i]];q('b',b).textContent=o[0]});
+    q('.en',c).textContent=en(pi);q('.pt',c).textContent=pt(pi);
+    const out=q('.ps-md-out',c);out.classList.remove('pop');void out.offsetWidth;out.classList.add('pop');
+    moves++;q('#psmc',st).textContent=moves+' frases vistas';
+  };
+  qa('.ps-md',st).forEach(c=>{const pi=+c.dataset.p;
+    qa('.ps-slot',c).forEach(b=>b.onclick=()=>{const i=+b.dataset.s,N=pages[pi].slots[i].opts.length;if(N<2){tts(en(pi));return}
+      state[pi][i]=(state[pi][i]+1)%N;b.classList.remove('flip');void b.offsetWidth;b.classList.add('flip');refresh(c,pi);tts(en(pi))});
+    q('[data-a=p]',c).onclick=()=>tts(en(pi));
+    q('[data-a=r]',c).onclick=()=>{pages[pi].slots.forEach((sl,i)=>{state[pi][i]=Math.floor(Math.random()*sl.opts.length)});refresh(c,pi);tts(en(pi))};
+  });
+  P.fx.cta=null;cta('Continuar',true,true);
+  say(f.say||'Toque nas peças para trocar as palavras.');
+};
+
+/* ---------------- escolha sua missão (Sua vez) ---------------- */
+FX_KIND.pgmission='practice';FX_LABEL.pgmission='Sua vez';
+FXR.pgmission=function(f,st,n){
+  const M=f.missions||[];
+  st.innerHTML=`<div class="step fx ps-ms">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Missão: sua vez!')}</h2>
+    <p class="ps-note">Escolha <b>uma</b> missão e use o que você aprendeu. Cada uma pede algo diferente!</p>
+    <div class="ps-msl">${M.map((m,i)=>`<button type="button" class="ps-mc" data-i="${i}"><span class="ps-ico big">${m.ic}</span><div><b>${H(m.name)}</b><small>${H(m.desc)}</small><span class="ps-mstars">${'⭐'.repeat(i+1)}</span></div><i>▶</i></button>`).join('')}</div></div>`;
+  qa('.ps-mc',st).forEach(b=>b.onclick=()=>{const m=M[+b.dataset.i];P.fx.cta=null;st._pgf=Object.assign({},f,{bubble:[(f.bubble||['Poggie'])[0],'Your turn! Show what you know.','Sua vez! Mostre o que você sabe.']});FXR.produce(Object.assign({k:'produce',title:'Missão: '+m.name},m.data),st,n)});
+  P.fx.cta=null;cta('Escolha uma missão',false);
+  say(f.say||'Escolha uma missão!');
 };
 
 /* ---------------- laboratório de sons (tudo em um quadro) ---------------- */

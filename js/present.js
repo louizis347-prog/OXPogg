@@ -14,7 +14,7 @@ function toast(t){
   const d=document.createElement('div');d.className='ps-ztoast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1100);
 }
 function setWide(on){
-  const p=pl();if(!p)return;p.classList.toggle('ps-wide',!!on);
+  const p=pl();if(!p)return;p.classList.toggle('ps-wide',!!on);fitSoon();
   const b=document.getElementById('ps-full');if(b){b.classList.toggle('on',!!on);b.textContent=on?'⤡':'⛶';b.title=on?'Sair da tela expandida':'Expandir a tela'}
   try{
     if(on&&p.requestFullscreen&&!document.fullscreenElement)p.requestFullscreen({navigationUI:'hide'}).catch(()=>{});
@@ -24,14 +24,31 @@ function setWide(on){
 function ensure(){
   const p=pl();if(!p)return;const h=p.querySelector('.p-head');if(!h||h.querySelector('.ps-hbtns'))return;
   h.insertAdjacentHTML('beforeend','<div class="ps-hbtns"><button type="button" id="ps-zoom" class="ps-hbtn z" aria-label="Ampliar o conteúdo (lupa)" title="Ampliar o conteúdo">🔍<b>100%</b></button><button type="button" id="ps-full" class="ps-hbtn" aria-label="Expandir a tela" title="Expandir a tela">⛶</button></div>');
-  h.querySelector('#ps-zoom').onclick=()=>{zi=(zi+1)%ZL.length;try{localStorage.setItem('pg:zi',zi)}catch(e){}apply();toast('🔍 '+Math.round(ZL[zi]*100)+'%')};
+  h.querySelector('#ps-zoom').onclick=()=>{zi=(zi+1)%ZL.length;try{localStorage.setItem('pg:zi',zi)}catch(e){}apply();fitSoon();toast('🔍 '+Math.round(ZL[zi]*100)+'%')};
   h.querySelector('#ps-full').onclick=()=>setWide(!p.classList.contains('ps-wide'));
 }
+/* encaixe automático: em tela larga, quadros curtos são ampliados para preencher a altura (sem sobrar espaço vazio) */
+const FITMAX=1.55;let fitT=0;
+function contentH(step){const t=step.getBoundingClientRect().top;let h=0;[...step.children].forEach(c=>{const r=c.getBoundingClientRect();if(r.height)h=Math.max(h,r.bottom-t)});return h}
+function fit(){
+  const p=pl();if(!p||!p.classList.contains('ps'))return;
+  const body=document.getElementById('pbody'),step=document.querySelector('#pstage .step');if(!body||!step)return;
+  p.style.setProperty('--psfit',1);
+  if(window.innerWidth<820)return;
+  const avail=body.clientHeight-40,h1=contentH(step);
+  if(!h1||h1>=avail)return;
+  let s=Math.min(FITMAX,avail/h1);p.style.setProperty('--psfit',s);
+  const h2=contentH(step);
+  if(h2>avail){s=Math.max(1,s*avail/h2);p.style.setProperty('--psfit',s)}
+}
+const fitSoon=()=>{clearTimeout(fitT);fitT=setTimeout(fit,140)};
+window.addEventListener('resize',fitSoon);
 const _r=window.render;
 window.render=function(){
   /* ao trocar de quadro nos episódios piloto, corta o áudio do quadro anterior (ex.: diálogo ainda falando) */
   try{if(typeof P!=='undefined'&&P&&P.e&&P.e.pilot){if(window.speechSynthesis)speechSynthesis.cancel();if(window.PogTTS&&PogTTS.stop)PogTTS.stop()}}catch(e){}
-  const o=_r.apply(this,arguments);try{ensure();apply()}catch(e){}return o};
+  const o=_r.apply(this,arguments);try{ensure();apply();fitSoon();setTimeout(fit,700)}catch(e){}return o};
+new MutationObserver(()=>{if(document.getElementById('player'))fitSoon()}).observe(document.body,{childList:true,subtree:true});
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement){const p=pl();if(p&&p.classList.contains('ps-wide'))setWide(false)}});
 const _c=window.closePlayer;
 window.closePlayer=function(){try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}return _c.apply(this,arguments)};
