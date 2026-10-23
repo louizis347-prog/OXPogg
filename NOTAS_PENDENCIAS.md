@@ -74,3 +74,9 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Fonte editável: `tools/roteiro/<nivel>_NN.txt` (linha `n|verbos|exp=pt;…|giria=pt;…`). Regerar: `python3 tools/roteiro/build.py`.
 - IMPORTANTE: `tools/skel/build.py` sobrescreve o enriquecimento; sempre rodar `tools/roteiro/build.py` depois.
 - Limites: ~30% dos pares ainda têm só um tema em "estrutura gramatical"; gírias do A1 são leves; 488 temas de regram divergentes não corrigidos.
+
+## Roteiro por episódio (atualização)
+- Não existe mais "episódio-continuação": cada episódio (3.000 por curso) tem roteiro próprio.
+- Inglês: `tools/roteiro/<nivel>_NN.txt` (principais) e `<nivel>_x_NN.txt` (segundos) → `python3 tools/roteiro/build.py` (deve mostrar faltando 0 em todos os níveis). Rodar sempre depois de `tools/skel/build.py`.
+- Demais cursos regulares: `tools/plan/<cid>/<nivel>_NN.txt` → `python3 tools/plan/build.py` → `data/plan/<cid>.json` (lido pela telinha pré-episódio). Só ja A1 eps 1–50 feito.
+- PDFs: `python3 tools/pdfplan/build.py <cid>` → `docs/planos/<cid>.pdf`.
