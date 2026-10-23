@@ -57,7 +57,7 @@ function hero(f,e,st){
 const ILL={read:{tag:'📖'},gap:{tag:'✏️',pen:1},choose:{tag:'💬'},trap:{tag:'🔍',lens:1},order:{tag:'🔀'}};
 /* modelo "padrão do dia": todo quadro de prática ganha a faixa ilustrada (cena pintada + personagens + Poggie) */
 const PILL={rdg:{tag:'🔍',lens:1},pat:{tag:'🧩'},vplay:{tag:'🔊'},sbuild:{tag:'🚂'},build:{tag:'🧩'},order:{tag:'🔀'},balloons:{tag:'🎈'},dictate:{tag:'🎧',pen:1},soundlab:{tag:'🔬'},dquiz:{tag:'❓'},scenebuild:{tag:'🧸'},produce:{tag:'🗣️',pen:1},review:{tag:'🎒'},wrap:{tag:'🎁'},hook:{tag:'💬'}};
-function illK(e,f){return ILL[f.k]||(e&&e.pilot&&PILL[f.k])||null}
+function illK(e,f){return (e&&e.pilot)?null:(ILL[f.k]||null)}
 function castOf(e){
   const out=[];const add=(n,em,c)=>{if(n&&em&&!out.some(x=>x.n===n))out.push({n,em,c})};
   e.fr.forEach(f=>{
@@ -97,8 +97,9 @@ window.renderFx=function(n,st,lang){
     const f=P.e.fr[n];
     step.querySelectorAll('.fx-cul,.fx-banner,.fx-mini').forEach(x=>x.remove());
     if(illK(P.e,f)&&!step.querySelector('.az-ill'))illus(step,f);
-    else if(P.e.pilot&&step.classList.contains('hk')&&!step.querySelector('.az-ill')){const sc=P.e.fr.find(x=>x.k==='scene');illus(step,{k:'hook',rs:sc&&sc.rs})}
     st._azn=n;
+    pl.classList.toggle('pg',!!P.e.pilot);
+    if(P.e.pilot&&window.PogStage)PogStage.decorate(step,f,P.e);
     if(!st._azo){st._azo=new MutationObserver(()=>{try{
       const fr=P.e&&P.e.fr&&P.e.fr[st._azn];if(!fr||!illK(P.e,fr)||!AZ.on(P.e))return;
       const sp=st.querySelector('.step');if(!sp||sp.querySelector('.az-ill'))return;
