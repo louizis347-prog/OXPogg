@@ -304,14 +304,25 @@ function normalizeNeighborContent(e){
   const optsFor=(right)=>{const pool=[...new Set(altWords().filter(x=>x!==right))];if(pool.length<2)return null;return [right,pool[0],pool[1]]};
   frames.forEach(f=>{
     if(!f||!Array.isArray(f.items))return;
-    if((f.k==='nbvocab'||f.k==='nbfind')&&f.items.length<5){
-      for(const v of vocab){if(f.items.length>=5)break;const w=v[0];if(f.items.some(x=>String(Array.isArray(x)?x[0]:(x&&x.w)||'').toLowerCase()===w.toLowerCase()))continue;f.items.push(f.k==='nbfind'?[w,v[1]||'💬',v[2]||'']: [w,v[1]||'💬',v[2]||'']);}
+    /* Cada episódio fornece seu próprio léxico. A montagem antiga apenas
+       preenchia listas curtas e deixava blocos de 31 itens ou cartões
+       repetidos. Normalizamos os dois quadros com seis entradas atuais. */
+    if(f.k==='nbvocab'||f.k==='nbfind'){
+      const seen=new Set(),fresh=[];
+      vocab.forEach(v=>{const w=String(v[0]||'').trim(), key=w.toLowerCase();if(!w||seen.has(key)||fresh.length>=6)return;seen.add(key);fresh.push(f.k==='nbfind'?[w,v[1]||'💬',v[2]||'']:[w,v[1]||'💬',v[2]||''])});
+      if(fresh.length>=5)f.items=fresh;
+      else f.items=f.items.filter((x,i,a)=>{const w=String(Array.isArray(x)?x[0]:(x&&x.w)||'').toLowerCase();return w&&a.findIndex(y=>String(Array.isArray(y)?y[0]:(y&&y.w)||'').toLowerCase()===w)===i}).slice(0,6);
     }
-    if(f.k==='nbctx'&&f.items.length<5){
+    if(f.k==='nbctx'){
+      const pool=vocab.map(v=>String(v[0]||'')).filter(Boolean);
+      f.items.forEach((it,ii)=>{if(!it||!Array.isArray(it.opts))return;const right=it.opts[it.a>=0?it.a:0]||pool[ii%Math.max(1,pool.length)]||'';const opts=[];[right,...it.opts,...pool].forEach(x=>{const s=String(x||'').trim();if(s&&!opts.some(y=>y.toLowerCase()===s.toLowerCase()))opts.push(s)});it.opts=opts.slice(0,Math.max(3,Math.min(4,opts.length)));it.a=0;if(it.sit)it.sit=String(it.sit).replace(/outra opção|otra opción|another option|autre option/gi,'uma resposta contextual')});
+      if(f.items.length<5){
       const base=f.items[0]||{ic:'🎯',sit:'Complete a fala: “____”',opts:['A','B','C'],a:0,why:''};
       let i=0;while(f.items.length<5&&i<vocab.length){const w=vocab[i++][0],oo=optsFor(w);if(!oo)continue;f.items.push({ic:base.ic||'🎯',sit:String(base.sit||'').replace(/“[^”]*”|"[^"]*"/,'“'+w+'”'),opts:oo,a:0,why:(w+' · '+(vocab.find(v=>v[0]===w)||[])[2]||'')});}
+      }
     }
     if(f.k==='nbtap'){
+      f.items.forEach(it=>{if(!it||!Array.isArray(it.opts))return;const a=[];it.opts.forEach(x=>{const s=Array.isArray(x)?x[1]:x;if(s&&!a.some(y=>String(y[1]||y).toLowerCase()===String(s).toLowerCase()))a.push(Array.isArray(x)?x:['💬',String(s)])});if(a.length)it.opts=a.slice(0,4)});
       const target=e.rev?12:6;
       const pool=[];const addQ=x=>{if(!x||!x[1])return;const key=String(x[1]).toLowerCase();if(pool.some(y=>String(y[1]).toLowerCase()===key))return;pool.push(x)};
       lines.forEach(addQ);(frames.find(x=>x&&x.k==='nbtrip')?.stops||[]).forEach(x=>{if(x&&x.ln)addQ([x.nm||'',x.ln[0],x.ln[1]||''])});
@@ -342,7 +353,11 @@ function inject(e){
   }else if(e.fr.length+fr.length<target){
     // buildBridges + fluency completam as revisões de arco até o mesmo percurso de 20 quadros.
     const seed=fr.find(x=>x.k==='nbbridge')||fr.find(x=>x.k==='nbprag');
-    while(e.fr.length+fr.length<target&&seed)fr.push(Object.assign({},seed,{mode:'practice',title:'Prática de recuperação',body:'Recupere uma frase do arco e diga como ela mudaria em outra situação.'}));
+    const pair=e.pair||{},topic=e.s||e.t||'a situação';
+    while(e.fr.length+fr.length<target&&seed){
+      const rec=pair.recycle&&pair.recycle.line&&pair.recycle.line[1]?pair.recycle.line[1]:'';
+      fr.push(Object.assign({},seed,{mode:'practice',title:'Prática de recuperação · '+topic+' · '+(fr.length+1),body:'Recupere '+(rec?'“'+rec+'” e ':'')+'uma frase de '+topic+' e diga como ela mudaria em outra situação.',lesson:{mission:topic,newContent:true,pairPosition:pair.position||1,recycle:pair.recycle||null}}));
+    }
   }
   e.fr.splice(hi,0,...fr)}
 
