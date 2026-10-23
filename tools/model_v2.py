@@ -83,14 +83,14 @@ HOTPT = {
 LG = dict(
     hint='Toque nos objetos brilhantes para ouvir o nome em inglês.', badge='A1',
     remember=('What do you remember?', 'De que você se lembra?'), swap=('Swap the pieces and build sentences!', 'Troque as peças e monte frases!'),
-    words=('Listen and choose the word!', 'Ouça e escolha a palavra da figura!'), verbs=("These are today's verbs!", 'Estes são os verbos de hoje!'),
+    words=('Listen and choose the word!', 'Ouça e escolha a palavra da figura!'), ctx=('Which word fits the sentence?', 'Qual palavra completa a frase?'), verbs=("These are today's verbs!", 'Estes são os verbos de hoje!'),
     vmission=('Verb mission! I will help you.', 'Missão dos verbos! Eu ajudo você.'), exps=('This is how people really talk!', 'É assim que as pessoas falam de verdade!'),
     complete=('Complete the sentences!', 'Complete as frases!'), careful=('Careful! Only one is right.', 'Cuidado! Só uma está certa.'),
     lab=("Let's train our ears!", 'Vamos treinar o ouvido!'), hunt=('Listen and hunt the sound!', 'Ouça e cace o som certo!'),
     pick=('Pick a mission! Which one do you want?', 'Escolha uma missão! Qual você quer?'), wrong=lambda v, form: ing(v), vq='Verbo **%s** (%s) com he/she.')
 
 
-def build(old, X, XT, VB, prev, MR=None):
+def build(old, X, XT, VB, prev, MR=None, CX=None):
     B = X['base']
     a, b = X['names']
     st = X['stage']
@@ -120,7 +120,7 @@ def build(old, X, XT, VB, prev, MR=None):
                          next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
                          rs=rs['review'], chars=mc))
     frames.append(fr('hotscene', title='Explore a cena', hint=LG['hint'],
-                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
+                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=h.get('sayPt') or HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
                      obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
     frames.append(fr('pgscene', cast=B['cast'], lines=B['lines'], speakers=X['speakers'], rs=st['rs'], chars=st['chars'],
                      say='Ouça a cena e leia junto.'))
@@ -142,15 +142,28 @@ def build(old, X, XT, VB, prev, MR=None):
         pt.setdefault(h['en'].lower(), (h['pt'], ''))
     words = [(e, w) for e, w in B['balloons']]
     items = []
-    for i, (emo, w) in enumerate(words):
+    if CX:  # vocabulário por contexto: frases com lacuna (a tradução só aparece depois de responder)
+        for i, c in enumerate(CX):
+            right = c['opts'][c['a']]
+            k = (i * 2 + 1) % 3  # a resposta muda de posição de uma frase para a outra
+            opts = c['opts'][1:]
+            opts.insert(k, right)
+            p, note = pt.get(right.lower(), ('', ''))
+            items.append(dict(text=c['text'], opts=opts, a=opts.index(right), say=c['text'].replace('___', right),
+                              why='**%s** = %s.%s 🇧🇷 %s' % (right, p, (' ' + note) if note else '', c['pt'])))
+        wl = [dict(fig=e, say=w, pt=pt.get(w.lower(), ('', ''))[0]) for e, w in words]
+        frames.append(fr('pgsheet', title='Palavras em contexto', items=items, words=wl, rs=rs['vplay'], chars=mc,
+                         bubble=[a, *LG['ctx']]))
+    for i, (emo, w) in enumerate(words if not CX else []):
         others = [x[1] for x in words if x[1] != w]
         opts = [w, others[(i + 1) % len(others)], others[(i + 3) % len(others)]]
         opts = [opts[(k + i) % 3] for k in range(3)]
         p, note = pt.get(w.lower(), ('', ''))
         items.append(dict(fig=emo, say=w, ask='Qual é a palavra?', opts=opts, a=opts.index(w), ptWord=p,
                           why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
-    frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
-                     bubble=[a, *LG['words']]))
+    if not CX:
+        frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
+                         bubble=[a, *LG['words']]))
     # verbos (4) + missão dos verbos
     frames.append(fr('verbs', title=VB['title'], items=VB['items'], tip=VB['tip'], say='Vamos ver os verbos de hoje!', rs=rs['build'], chars=mc,
                      quiz=verb_quiz(VB), bubble=[b, *LG['verbs']]))

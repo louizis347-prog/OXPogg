@@ -5,7 +5,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 KINDS = ['cover', 'review', 'hotscene', 'pgscene', 'pgsheet', 'pgrule', 'pgmold', 'pgsheet', 'verbs', 'vplay', 'pgexp', 'pgscene', 'pgsheet', 'pgsheet', 'pglab', 'pgsheet', 'pgspeak', 'pgmission', 'wrap']
 WANT = {'hotscene': ('hot', 5), 'pgmold': ('pages', 3), 'verbs': ('items', 4), 'vplay': ('plan', 7), 'pgexp': ('items', 4), 'pgmission': ('missions', 3), 'wrap': ('recap', 4), 'pgspeak': ('items', 5)}
-SHEETS = {'Você entendeu?': 3, 'Palavras da cena': 6, 'Complete as falas': 6, 'Qual está certa?': 4, 'Caça-sons': 5}
+SHEETS = {'Você entendeu?': 3, 'Palavras da cena': 6, 'Palavras em contexto': 6, 'Complete as falas': 6, 'Qual está certa?': 4, 'Caça-sons': 5}
 
 
 def load():
