@@ -335,10 +335,10 @@ function epCard(cid,e,i,nextI){
   }
   const done=isDone(cid,e),isNext=i===nextI,k=kindOf(e);
   const btn=done?['ghost',t('review')]:isNext?['pri',t('continue')]:['soft',t('begin')];
-  return `<article class="p2ep ${done?'done':''} ${isNext?'next':''}"><button class="cv" data-ep="${cid}:${i}" aria-label="${E(e.t)}">${PC().svg(e,{num})}
+  return `<article class="p2ep ${done?'done':''} ${isNext?'next':''}"><button class="cv" data-ep="${cid}:${i}" aria-label="${E(e.t)}">${(e.pilot&&window.PogStage&&e.stage)?PogStage.stage({rs:e.stage.rs,chars:(e.stage.chars||[]).slice(0,1).map(c=>[c[0],50,0,.95]),h:'card'}):PC().svg(e,{num})}
     <span class="kd"><i>${PC().icon(k.ic,14,'#fff')}</i>${E(kindLabel(e))}</span>${done?`<span class="ck">${IC.check()}</span>`:''}</button>
    <div class="bd"><small class="meta">${E(t('ep'))} ${numS} · 10 ${E(t('min'))}</small><h3>${E(e.t)}</h3>${e.s?`<p class="sub">${E(e.s)}</p>`:''}<p class="src">${(e.a&&e.a.w)?E(e.a.w):''}</p>
-    <button class="p2btn ${btn[0]} sm" data-ep="${cid}:${i}">${E(btn[1])}</button></div></article>`;
+    <button class="p2btn ${btn[0]} sm" data-ep="${cid}:${i}">${E(btn[1])}</button>${e.pilot?`<button type="button" class="p2btn ghost sm ps-revbtn" data-rev="${cid}:${i}">🔁 ${E(L==='es'?'Repaso':'Revisão')}</button>`:''}</div></article>`;
 }
 function testCard(cid,ts){
   const done=!!ST.testDone[cid+'-'+ts.id];

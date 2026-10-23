@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Modelo de 12 quadros ("padrão do dia em uma obra") aplicado aos 5 primeiros episódios do A1 de inglês.
+"""Modelo de quadros completos ("padrão do dia em uma obra") para os 5 primeiros episódios do A1 de inglês.
 
-Quadros: capa com personagens · cena clicável (obra) · cena (diálogo) · quiz · padrão · palavras com figura ·
-complete a fala · qual está certa · fale · missão · revisão (ep. 2 em diante) · fechamento com figurinha.
+Ordem: capa · revisão do episódio anterior (ep. 2 em diante) · cena clicável com a obra · diálogo · você entendeu ·
+padrão ilustrado · palavras com figura · complete as falas · qual está certa · fale · missão · fechamento.
+Cada quadro mostra todas as suas perguntas de uma vez (nada de uma pergunta por tela).
 Uso: python3 tools/model_v2.py
 """
-import json, os, sys, copy, subprocess
+import json, os, sys, copy
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -16,6 +17,11 @@ def main_chars(st):
     ids = [c[0] for c in st['chars']][:2]
     pos = [(32, 0), (68, 1)] if len(ids) > 1 else [(50, 0)]
     return [[i, x, fl, 1.0] for i, (x, fl) in zip(ids, pos)]
+
+
+def strip_tags(s):
+    import re
+    return re.sub(r'<[^>]+>', '', s)
 
 
 def build(old, X):
@@ -40,49 +46,60 @@ def build(old, X):
     frames.append(fr('cover', art=B['cover_art'], sub=B['cover_sub'], badge='A1', snd=old['fr'][0].get('snd', 'bell'),
                      say=B['cover_say'], gancho=X['gancho'], obra='%s · %s' % (ob['name'], ob['year']),
                      stage=dict(rs=st['rs'], chars=st['chars'])))
-    frames.append(fr('hotscene', title='Explore a cena', hint='Toque nos objetos brilhantes para ouvir o nome em inglês.',
-                     rs=st['rs'], chars=st['chars'], hot=X['hot'], say='Toque nos objetos brilhantes!',
-                     obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
-    frames.append(fr('scene', art=B['scene_art'], cast=B['cast'], lines=B['lines'], rs=st['rs']))
-    frames.append(fr('dquiz', title='Você entendeu?', items=B['quiz'], cast=B['cast'], lines=B['lines'], rs=rs['dquiz'], chars=mc,
-                     bubble=[b, 'What do you remember?', 'De que você se lembra?']))
-    frames.append(fr('rdg', title='Descubra o padrão', s=B['rdg_s'], rule=B['rule'], q=B['rdg_q'],
-                     say='Toque nas frases da cena. O que se repete? Depois, uma perguntinha!', rs=rs['rdg'], chars=mc,
-                     bubble=[a, 'Look at my sentences. What repeats?', 'Olhe as minhas frases. O que se repete?']))
-    # palavras com figura: alvo + 3 distratores da lista de balões
-    pool = [(e, w) for e, w in B['balloons']]
-    rounds = []
-    for i, it in enumerate(B['vplay']):
-        tgt = (it['ic'], it['v'])
-        others = [p for p in pool if p[1].lower() != it['v'].lower()][:3]
-        opts = others[:]
-        opts.insert((i * 3 + 1) % 4, tgt)
-        rounds.append({'q': 'Ouça e toque na imagem certa', 'say': it['v'], 'opts': [list(o) for o in opts],
-                       'a': opts.index(tgt), 'why': '%s — %s. %s' % (it['v'], it['pt'], it.get('note', ''))})
-    frames.append(fr('tapimg', title='Palavras da cena', rounds=rounds, say='Ouça a palavra e toque na figura certa.',
-                     rs=rs['vplay'], chars=mc, bubble=[a, 'Help me find the words!', 'Me ajude a achar as palavras!']))
-    frames.append(fr('gap', title='Complete a fala', rounds=[dict(r, en='Escolha a palavra que completa a frase.', say=r['q'].replace('___', r['opts'][r['a']])) for r in X['gap']],
-                     say='Escolha a palavra que completa a fala.', rs=rs['build'], chars=mc,
-                     bubble=[b, 'Complete the sentence!', 'Complete a frase!']))
-    frames.append(fr('trap', title='Qual está certa?', rounds=[dict(r, say=r['opts'][r['a']]) for r in X['trap']],
-                     say='Só uma frase está certa.', rs=rs['order'], chars=mc,
-                     bubble=[b, 'Careful! Only one is right.', 'Cuidado! Só uma está certa.']))
-    frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]], say='Ouça, toque no microfone e repita.',
-                     rs=rs['dictate'], chars=mc, bubble=[a, 'Say it with me!', 'Diga comigo!']))
-    pr = dict(B['produce'])
-    frames.append(fr('produce', title='Missão: sua vez!', rs=rs['produce'], chars=mc,
-                     bubble=[a, 'Now tell me about you!', 'Agora me conte sobre você!'], **pr))
-    if X['review']:
+    if X['review']:  # revisão do episódio anterior fica no INÍCIO deste episódio
         R = B['review']
         frames.append(fr('review', prev=R['prev'], work=R['work'], recap=R['recap'], bag=R['bag'],
                          lead='Abra cada bolso da mochila e relembre o episódio anterior!',
                          next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
                          rs=rs['review'], chars=mc))
+    frames.append(fr('hotscene', title='Explore a cena', hint='Toque nos objetos brilhantes para ouvir o nome em inglês.',
+                     rs=st['rs'], chars=st['chars'], hot=X['hot'], say='Toque nos objetos brilhantes!',
+                     obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
+    frames.append(fr('pgscene', cast=B['cast'], lines=B['lines'], speakers=X['speakers'], rs=st['rs'], chars=st['chars'],
+                     say='Ouça a cena e leia junto.'))
+    # você entendeu?
+    quiz = [dict(ask=it['q'], speak=it['q'], pt=it['pt'], opts=it['opts'], a=it['a'], why=it['why']) for it in B['quiz']]
+    frames.append(fr('pgsheet', title='Você entendeu?', items=quiz, rs=rs['dquiz'], chars=mc, review=False,
+                     bubble=[b, 'What do you remember?', 'De que você se lembra?']))
+    # padrão com ilustração
+    R = dict(X['rule'])
+    R['formula'] = [{'from': r['from_'], 'to': r['to'], 'say': r.get('say'), 'note': r.get('note')} for r in R.get('formula', [])]
+    frames.append(fr('pgrule', rule=R, q=B['rdg_q'], rs=rs['rdg'], say='Veja o padrão com figuras e ouça os exemplos.'))
+    # palavras com figura (todas de uma vez)
+    pt = {}
+    for w, p, note in B['vocab']:
+        pt[w.lower()] = (p, note)
+    for h in X['hot']:
+        pt.setdefault(h['en'].lower(), (h['pt'], ''))
+    words = [(e, w) for e, w in B['balloons']]
+    items = []
+    for i, (emo, w) in enumerate(words):
+        others = [x[1] for x in words if x[1] != w]
+        opts = [w, others[(i + 1) % len(others)], others[(i + 3) % len(others)]]
+        opts = [opts[(k + i) % 3] for k in range(3)]
+        p, note = pt.get(w.lower(), ('', ''))
+        items.append(dict(fig=emo, say=w, ask='Qual é a palavra?', opts=opts, a=opts.index(w), ptWord=p,
+                          why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
+    frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
+                     bubble=[a, 'Listen and choose the word!', 'Ouça e escolha a palavra da figura!']))
+    gap = [dict(text=r['q'], pt=r['pt'], opts=r['opts'], a=r['a'], why=r['why'],
+                say=r['q'].replace('___', r['opts'][r['a']])) for r in X['gap']]
+    frames.append(fr('pgsheet', title='Complete as falas', items=gap, rs=rs['build'], chars=mc,
+                     bubble=[b, 'Complete the sentences!', 'Complete as frases!']))
+    trap = [dict(ask=r['q'], opts=r['opts'], a=r['a'], why=r['why'], say=strip_tags(r['opts'][r['a']])) for r in X['trap']]
+    frames.append(fr('pgsheet', title='Qual está certa?', items=trap, rs=rs['order'], chars=mc,
+                     bubble=[b, 'Careful! Only one is right.', 'Cuidado! Só uma está certa.']))
+    frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]], who=mc[0][0],
+                     say='Ouça cada frase e repita em voz alta.', rs=rs['dictate'], chars=mc))
+    pr = dict(B['produce'])
+    frames.append(fr('produce', title='Missão: sua vez!', rs=rs['produce'], chars=mc,
+                     bubble=[a, 'Now tell me about you!', 'Agora me conte sobre você!'], **pr))
     frames.append(fr('wrap', title='Para levar', recap=B['wrap_recap'], teaser=B['teaser'], sticker=X['sticker'], rs=rs['wrap'], chars=mc))
 
     e = copy.deepcopy(old)
     e['t'] = B['title']
     e['s'] = B['sub']
+    e['pattern'] = B['pattern_label']
     e['a'] = {'k': ob['kind'].split(' ·')[0], 'w': ob['name'], 'y': ob['year'], 'd': ob['text']}
     e['h'] = {'l': X['gancho'][1], 'src': ob['name'], 'tr': X['gancho'][2]}
     e['p'] = B['why']

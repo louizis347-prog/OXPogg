@@ -42,6 +42,7 @@ function paginate(keepIdx,focus){
   const st=document.querySelector('#pstage .step'),b=$b();
   if(!st||!b||typeof P==='undefined'||!P||P.isTest)return;
   if(st!==PG.step){PG.step=st;PG.pages=null;PG.idx=0;PG.lastCta=PG.lastCta}
+  if(P.e&&P.e.pilot){PG.pages=null;PG.idx=0;st.classList.remove('pg-compact');[...st.children].forEach(k=>k.classList.remove('pg-hide','pg-in'));partTag();dots();return}
   const kids=[...st.children];kids.forEach(k=>k.classList.remove('pg-hide'));
   let margin=0;b.scrollTop=0;const fits=()=>{if(!margin)return b.scrollHeight<=b.clientHeight+1;const sr=document.querySelector('#pstage').getBoundingClientRect(),br=b.getBoundingClientRect();return sr.bottom<=br.bottom-margin+1};
   st.classList.remove('pg-compact');

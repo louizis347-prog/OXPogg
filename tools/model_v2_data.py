@@ -113,3 +113,76 @@ V2 = [
                dict(q='Qual frase está certa?', opts=['I love storys.', 'I love stories.', "I love story's."], a=1, why='story → **stories**.')],
          sticker=dict(title='Woody e Buzz', sub='Toy Story · 1995', rs='bedroom', chars=[['cowboy', 36, 0, 1.0], ['ranger', 66, 1, 1.0]])),
 ]
+
+
+# ---- padrão ilustrado (quadro pgrule) e mapa de falantes (quadro pgscene) ----
+V2[0]['speakers'] = {'Mrs. Brown': 'mrs', 'Paddington': 'bear'}
+V2[0]['rule'] = dict(
+    who='bear', head="I am → I'm", sub='A forma curta que os americanos usam ao falar.',
+    say=["I'm Paddington. I'm from Peru.", 'Eu sou o Paddington. Sou do Peru.'],
+    formula=[dict(from_=[['I', 0], ['am', 1]], to=[["I'm", 2]], say="I'm", note="O apóstrofo (') ocupa o lugar da letra **a** de *am*: I + am = **I'm**.")],
+    uses=[dict(ico='🙋', tag='Nome', en="I'm Paddington.", pt='Eu sou o Paddington.'),
+          dict(ico='🇵🇪', tag='Origem', en="I'm from Peru.", pt='Eu sou do Peru.'),
+          dict(ico='😋', tag='Como estou', en="I'm hungry.", pt='Estou com fome.'),
+          dict(ico='😴', tag='Como estou', en="I'm tired.", pt='Estou cansado.')],
+    rules=[dict(tag="I'm", c=0, text='Use para falar de **você mesmo**: nome, origem, como você está.', ex="I'm Ana. I'm from Brazil. I'm happy."),
+           dict(tag='I + verbo', c=1, text='Em inglês a frase **precisa do verbo**: não existe "I from Brazil".', ex="✗ I from Brazil  →  ✓ I'm from Brazil")],
+    tips=["Falando, os americanos quase sempre dizem **I'm**. Na escrita formal também aparece **I am**."],
+)
+V2[1]['speakers'] = {'Alice': 'alice', 'Rabbit': 'rabbit', 'Cat': 'cat'}
+V2[1]['rule'] = dict(
+    who='alice', head='Are you…?', sub='Para perguntar, o verbo vem primeiro.',
+    say=['Wait! Are you in a hurry?', 'Espere! Você está com pressa?'],
+    formula=[dict(from_=[['You', 0], ['are', 1], ['tired.', 3]], to=[['Are', 1], ['you', 0], ['tired?', 3]], say='Are you tired?', note='Na pergunta, **are** passa para a frente de **you**.')],
+    uses=[dict(ico='❓', tag='Perguntar', en='Are you lost?', pt='Você está perdida?'),
+          dict(ico='✅', tag='Responder sim', en='Yes, I am.', pt='Sim, estou.'),
+          dict(ico='❌', tag='Responder não', en="No, I'm not.", pt='Não, não estou.')],
+    rules=[dict(tag='Are you', c=0, text='Pergunta com **você**: Are you late? Are you new here?', ex='Are + you + palavra?'),
+           dict(tag='Yes, I am', c=2, text='Resposta curta **sim**: repita o verbo. Não se contrai.', ex="✗ Yes, I'm  →  ✓ Yes, I am"),
+           dict(tag="No, I'm not", c=1, text='Resposta curta **não**: contrai com I\'m + not.', ex="No, I'm not.")],
+    tips=['Em português a pergunta só muda a entonação. Em inglês, **troque a ordem**: You are → Are you.'],
+)
+V2[2]['speakers'] = {'Dorothy': 'dorothy', 'Scarecrow': 'scarecrow'}
+V2[2]['rule'] = dict(
+    who='dorothy', head="He's · She's", sub='Para falar de outras pessoas: ele e ela.',
+    say=["She's Glinda. She's the Good Witch.", 'Ela é a Glinda. Ela é a Bruxa Boa.'],
+    formula=[dict(from_=[['He', 0], ['is', 1]], to=[["He's", 2]], say="He's the Wizard.", note='**He** = ele (homem, menino).'),
+             dict(from_=[['She', 3], ['is', 1]], to=[["She's", 2]], say="She's Glinda.", note='**She** = ela (mulher, menina).')],
+    uses=[dict(ico='🧙', tag='Ele', en="He's the Wizard.", pt='Ele é o Mágico.'),
+          dict(ico='🧙‍♀️', tag='Ela', en="She's Glinda.", pt='Ela é a Glinda.'),
+          dict(ico='🦁', tag='Como ele é', en="He's a little scared.", pt='Ele está um pouco assustado.'),
+          dict(ico='💚', tag='Como ela é', en="She's kind.", pt='Ela é gentil.')],
+    rules=[dict(tag="He's", c=0, text='Falando de **um homem ou menino**.', ex="He's the Scarecrow."),
+           dict(tag="She's", c=3, text='Falando de **uma mulher ou menina**.', ex="She's Dorothy.")],
+    tips=["**He's** e **She's** servem para dizer **quem é** e **como é** (ou onde está)."],
+)
+V2[3]['speakers'] = {'Wendy': 'wendy', 'Peter': 'peter'}
+V2[3]['rule'] = dict(
+    who='wendy', head='Is he…? Is she…? Is it…?', sub='Perguntas sobre ele, ela e coisas.',
+    say=['Is she a fairy? Yes, she is.', 'Ela é uma fada? Sim, é.'],
+    formula=[dict(from_=[['She', 3], ['is', 1], ['a fairy.', 2]], to=[['Is', 1], ['she', 3], ['a fairy?', 2]], say='Is she a fairy?', note='O verbo **is** vem **antes** de he / she / it.')],
+    uses=[dict(ico='🧒', tag='Ele', en='Is he angry? Yes, he is.', pt='Ele está bravo? Sim, está.'),
+          dict(ico='🧚', tag='Ela', en='Is she a fairy? Yes, she is.', pt='Ela é uma fada? Sim, é.'),
+          dict(ico='🚢', tag='Coisa', en="Is it a ship? No, it isn't.", pt='É um navio? Não, não é.')],
+    rules=[dict(tag='Is he', c=0, text='Pergunta sobre **ele**.', ex='Is he angry?'),
+           dict(tag='Is she', c=3, text='Pergunta sobre **ela**.', ex='Is she a fairy?'),
+           dict(tag='Is it', c=2, text='Pergunta sobre **coisa ou animal**.', ex='Is it a bird?'),
+           dict(tag='Yes / No', c=1, text='Resposta curta: **Yes, he is.** / **No, it isn\'t.**', ex="No, it isn't.")],
+    tips=['**It** é para coisas, animais e situações. Não existe "it" para pessoas.'],
+)
+V2[4]['speakers'] = {'Woody': 'cowboy', 'Buzz': 'ranger'}
+V2[4]['rule'] = dict(
+    who='cowboy', head='Plural: ‑s e ‑ies', sub='Um → vários: como falar de mais de uma coisa.',
+    say=['I see two toys and three balloons.', 'Vejo dois brinquedos e três balões.'],
+    pairsHead='👀 Um → vários',
+    pairs=[dict(ico='🧸', a='toy', b='toy<u>s</u>', pta='um brinquedo', ptb='brinquedos', n=2),
+           dict(ico='🎈', a='balloon', b='balloon<u>s</u>', pta='um balão', ptb='balões', n=3),
+           dict(ico='🐶', a='pupp<u>y</u>', b='pupp<u>ies</u>', pta='um cachorrinho', ptb='cachorrinhos', n=2),
+           dict(ico='📖', a='stor<u>y</u>', b='stor<u>ies</u>', pta='uma história', ptb='histórias', n=3),
+           dict(ico='🎉', a='part<u>y</u>', b='part<u>ies</u>', pta='uma festa', ptb='festas', n=2)],
+    uses=[dict(ico='👀', tag='Contar', en='I see two toys.', pt='Vejo dois brinquedos.'),
+          dict(ico='❤️', tag='Gostar', en='Andy loves puppies.', pt='O Andy adora cachorrinhos.')],
+    rules=[dict(tag='+ s', c=2, text='A maioria das palavras: **junte -s**.', ex='toy → toys · balloon → balloons'),
+           dict(tag='y → ies', c=1, text='Terminou em **consoante + y**: tire o **y** e ponha **-ies**.', ex='puppy → puppies · story → stories · party → parties')],
+    tips=['Depois de **two, three, many…** a palavra vai para o plural: two **toys**, three **balloons**.'],
+)

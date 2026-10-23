@@ -98,8 +98,7 @@ window.renderFx=function(n,st,lang){
     step.querySelectorAll('.fx-cul,.fx-banner,.fx-mini').forEach(x=>x.remove());
     if(illK(P.e,f)&&!step.querySelector('.az-ill'))illus(step,f);
     st._azn=n;
-    pl.classList.toggle('pg',!!P.e.pilot);
-    if(P.e.pilot&&window.PogStage)PogStage.decorate(step,f,P.e);
+    pl.classList.toggle('ps',!!P.e.pilot);
     if(!st._azo){st._azo=new MutationObserver(()=>{try{
       const fr=P.e&&P.e.fr&&P.e.fr[st._azn];if(!fr||!illK(P.e,fr)||!AZ.on(P.e))return;
       const sp=st.querySelector('.step');if(!sp||sp.querySelector('.az-ill'))return;
@@ -131,6 +130,7 @@ window.renderFx=function(n,st,lang){
     step.querySelectorAll('.eyebrow').forEach(x=>x.remove());
     twoCol(step,f);
     if(f.k==='cover')hero(f,P.e,st);
+    if(P.e.pilot&&window.PogStage)PogStage.decorate(step,f,P.e);
     let bar=document.getElementById('azbar');if(!bar){bar=document.createElement('div');bar.id='azbar';bar.className='az-bar';const pr=pl.querySelector('.p-head .prog');pr&&pr.after(bar)}
     bar.innerHTML=rail(f,n);
   }catch(x){console.warn('az',x)}
