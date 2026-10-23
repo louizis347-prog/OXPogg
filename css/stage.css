@@ -112,7 +112,6 @@
 #player.ps .stage::before,#player.ps .stage::after{display:none!important}
 #player.ps .step{background:#fff!important;border:1px solid #dbe6fb!important;border-radius:26px!important;box-shadow:0 18px 36px -26px rgba(20,50,110,.55)!important;padding:16px!important}
 #player.ps .p-foot{background:rgba(255,255,255,.96)!important}
-#player.ps #pbub{display:none!important}
 #player.ps .p-head,#player.ps .p-foot .in{max-width:880px}
 /* zoom (lupa): vale para qualquer quadro */
 #player #pstage .step{zoom:var(--pgz,1)}
@@ -369,3 +368,20 @@
 .ps-rv-snd{display:grid;gap:10px}
 .ps-rv-sn{padding:12px;border-radius:18px;background:#fff;border:2px solid #dce7fb;display:grid;gap:8px}
 .ps-rv-sn>b{font:800 18px system-ui;color:#12315a}.ps-rv-sn>div{display:flex;flex-wrap:wrap;gap:8px}
+
+/* fala do Poggie no rodapé */
+#player.ps .p-foot .bubble{display:block!important;z-index:5}
+/* cena clicável: tradução, banco de palavras e obra bloqueada */
+.ps-hot-spt{display:block;margin-top:2px;font:600 15px/1.35 system-ui;color:#4f6a86}
+.ps-hot-bank{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:8px}
+.ps-hb{white-space:nowrap;display:flex;align-items:center;gap:6px;padding:8px 10px;border-radius:14px;border:2px dashed #cfdcf6;background:#f6f9ff;font:800 15px system-ui;color:#5b6b86;cursor:default}
+.ps-hb span{font-size:22px;filter:grayscale(1);opacity:.55}.ps-hb i{margin-left:auto;font-style:normal;color:#9aa9c4}
+.ps-hb.seen{border-style:solid;border-color:#2cc673;background:#eafaf1;color:#0f6b36}.ps-hb.seen span{filter:none;opacity:1}.ps-hb.seen i{color:#1a8a4a}
+.ps-obralock{padding:14px;border-radius:18px;background:#fff8e1;border:2px dashed #ffc83d;text-align:center;font:800 16px/1.4 system-ui;color:#7a5600}
+.ps-obralock[hidden]{display:none}
+/* distribuição do espaço: o quadro preenche a altura útil da tela (celular) */
+#player.ps:not(.ps-wide) .step{min-height:calc(100dvh - 186px)}
+#player.ps:not(.ps-wide) .step.ps-hs{justify-content:space-between}
+#player.ps:not(.ps-wide) .ps-hs .ps-hot-info{min-height:110px}
+#player.ps:not(.ps-wide) .step.fx-cover>.az-hero{min-height:calc(100dvh - 190px);justify-content:space-evenly}
+#player.ps .stage{padding-bottom:14px!important}

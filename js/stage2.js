@@ -25,14 +25,16 @@ FXR.pgscene=function(f,st,n){
   <div class="ps-sc-main"><div class="ps-sc-bar"><button type="button" class="ps-btn main" id="pgall">▶ Ouvir a cena</button><button type="button" class="ps-btn" id="pgslow">🐢 Devagar</button><button type="button" class="ps-btn tog" id="pgtr" aria-pressed="true">🇧🇷 Tradução</button></div>
   <div class="ps-lines" id="pgl">${lines.map(ln).join('')}</div></div></div>`;
   const wrap=q('.ps-sc',st),box=q('#pgl',st);let timer=null,run=0;
+  const alive=()=>!!(P&&P.steps[P.i]==='fx'+n&&document.body.contains(wrap));
   const talk=(who,on)=>{const id=sp[who];qa('.ps-c',st).forEach(c=>c.classList.toggle('talk',!!on&&c.dataset.c===id))};
   const mark=i=>{qa('.ps-ln',box).forEach((b,j)=>b.classList.toggle('on',j===i));const b=qa('.ps-ln',box)[i];if(b&&b.scrollIntoView)b.scrollIntoView({block:'nearest',behavior:'smooth'})};
   const stop=()=>{clearTimeout(timer);run++;talk('',false);qa('.ps-ln',box).forEach(b=>b.classList.remove('on'))};
-  const play=slow=>{stop();const my=run;let i=0;const step=()=>{if(my!==run)return;if(i>=lines.length){talk('',false);qa('.ps-ln',box).forEach(b=>b.classList.remove('on'));return}
+  const play=slow=>{stop();const my=run;let i=0;const step=()=>{if(my!==run||!alive())return;if(i>=lines.length){talk('',false);qa('.ps-ln',box).forEach(b=>b.classList.remove('on'));return}
     const l=lines[i];mark(i);talk(l[0],true);tts(clean(l[1]),slow);const ms=Math.max(1500,clean(l[1]).length*(slow?140:85)+500);i++;timer=setTimeout(step,ms)};step()};
   q('#pgall',st).onclick=()=>play(false);q('#pgslow',st).onclick=()=>play(true);
   q('#pgtr',st).onclick=ev=>{const b=ev.currentTarget,on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);wrap.classList.toggle('no-pt',!on)};
   qa('.ps-ln',box).forEach(b=>b.onclick=()=>{stop();const l=lines[+b.dataset.i];mark(+b.dataset.i);talk(l[0],true);tts(clean(l[1]));setTimeout(()=>talk('',false),1600)});
+  const watch=setInterval(()=>{if(!alive()){clearInterval(watch);stop()}},300);
   P.fx.cta=null;cta('Continuar',true,true);
   setTimeout(()=>{if(P&&P.steps[P.i]==='fx'+n)play(false)},500);
   say(f.say||'Ouça a cena e leia junto.');

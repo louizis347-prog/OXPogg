@@ -2193,7 +2193,7 @@ function speakDevice(text,lang,btn,speaker,slow){try{
     /* Poggie é um personagem masculino e ainda jovem/fofo: voz de menino, leve e animada, sem ser grave demais */
     const maleV=pool.filter(v=>MALE_VOICE_HINTS.test(v.name||'')&&!FEMALE_VOICE_HINTS.test(v.name||''));
     chosen=maleV[0]||pool.find(v=>!FEMALE_VOICE_HINTS.test(v.name||''))||chosen;
-    pitch=1.18;rate=.97;
+    pitch=.95;rate=.97;
   }else if(speaker&&YOU_NAMES.includes(speaker)){
     pitch=1;rate=.9;
   }else if(speaker&&GENDER_MAP[speaker]){
@@ -2206,6 +2206,8 @@ function speakDevice(text,lang,btn,speaker,slow){try{
     rate=.86+idx*0.02;
   }
   if(window.PogTTS){const o=PogTTS.pick({lang,speaker,rate,gender:(speaker&&GENDER_MAP[speaker])?GENDER_MAP[speaker][0]:(speaker==='Poggie'?'m':null),gidx:(speaker&&GENDER_MAP[speaker])?GENDER_MAP[speaker][1]:0,guess:voiceGenderGuess});if(o){if(o.voice)chosen=o.voice;if(o.rate)rate=o.rate}}
+  /* Poggie é homem: se o aparelho não tem voz masculina, abaixa o tom da voz disponível */
+  if(speaker==='Poggie')pitch=(chosen&&voiceGenderGuess(chosen)==='m')?.95:.72;
   if(slow)rate=rate*(typeof slow==='number'?slow:.78);
   u.pitch=pitch;u.rate=rate;
   if(btn)btn.classList.add('playing');

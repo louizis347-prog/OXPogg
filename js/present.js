@@ -28,7 +28,10 @@ function ensure(){
   h.querySelector('#ps-full').onclick=()=>setWide(!p.classList.contains('ps-wide'));
 }
 const _r=window.render;
-window.render=function(){const o=_r.apply(this,arguments);try{ensure();apply()}catch(e){}return o};
+window.render=function(){
+  /* ao trocar de quadro nos episódios piloto, corta o áudio do quadro anterior (ex.: diálogo ainda falando) */
+  try{if(typeof P!=='undefined'&&P&&P.e&&P.e.pilot){if(window.speechSynthesis)speechSynthesis.cancel();if(window.PogTTS&&PogTTS.stop)PogTTS.stop()}}catch(e){}
+  const o=_r.apply(this,arguments);try{ensure();apply()}catch(e){}return o};
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement){const p=pl();if(p&&p.classList.contains('ps-wide'))setWide(false)}});
 const _c=window.closePlayer;
 window.closePlayer=function(){try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}return _c.apply(this,arguments)};
