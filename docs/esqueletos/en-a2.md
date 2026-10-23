@@ -1,478 +1,480 @@
 # Esqueletos — en-a2 (474 episódios)
 
-| ep | título | gramática | vocabulário | obra |
-|---|---|---|---|---|
-| 467 | Family Tree | possessivo 's | Cousin, Aunt, Uncle, Grandparents, Niece, Relative | The Family of Charles I (🖼️ Pintura, 1637) |
-| 468 | Posse | possessivo 's | Cousin, Aunt, Uncle, Grandparents, Niece, Relative | The Family of Charles I (Cidade, 20th century) |
-| 469 | Birthday Party Plans | be going to para plano | Cake, Invitation, Decoration, Guest, Gift, Playlist | Cakes (🖼️ Pintura, 1963) |
-| 470 | Planos | be going to para plano | Cake, Invitation, Decoration, Guest, Gift, Playlist | Cakes (Cidade, 20th century) |
-| 471 | Born in… | was/were born | Parents, Hometown, Hospital, Born, Year, Country | The Birth of Venus (🖼️ Pintura, 1486) |
-| 472 | Nasci em… | was/were born | Parents, Hometown, Hospital, Born, Year, Country | The Birth of Venus (Cidade, 20th century) |
-| 473 | A Weekend to Remember | passado simples regular | sightseeing, souvenir shop, tour guide, ticket booth, excursion, outing | Ferris Bueller's Day Off (🎬 Filme, 1986) |
-| 474 | O que você fez | passado simples regular | sightseeing, souvenir shop, tour guide, ticket booth, excursion, outing | Ferris Bueller's Day Off (📝 Sátira, 1729) |
-| 475 | Where I Grew Up | grew up, moved to | Small town, Farm, Neighbor, Quiet, Big city, Childhood | Anne of Green Gables: Avonlea (👧 Romance, 1908) |
-| 476 | Passado | grew up, moved to | Small town, Farm, Neighbor, Quiet, Big city, Childhood | Anne of Green Gables: Avonlea (👧 Romance, 1908) |
-| 477 | Languages I Speak | good at, fluent in | Languages, Fluent, Native, Learn, Translate, Accent | The Tower of Babel (🗼 Mito, c. 1000 a.C.) |
-| 478 | Falar e saber | good at, fluent in | Languages, Fluent, Native, Learn, Translate, Accent | The Tower of Babel (🎬 Filme, 2007) |
-| 479 | Hobbies I Love | like/love + -ing | Hobby, Painting, Cooking, Hiking, Reading, Gardening | The Sower (🖼️ Pintura, 1888) |
-| 480 | Gostar de… | like/love + -ing | Hobby, Painting, Cooking, Hiking, Reading, Gardening | The Sower (🌌 Série, 1980) |
-| 481 | Join a Club | want to + verbo | Club, Member, Fee, Meeting, Free, Form | The Pickwick Papers (📖 Romance, 1837) |
-| 482 | Querer | want to + verbo | Club, Member, Fee, Meeting, Free, Form | The Pickwick Papers (🎬 Filme, 2016) |
-| 483 | Where Did You Go? | passado simples irregular | hamlet, fortress, ruins, lookout, scenery, valley | The Wizard of Oz (🎬 Filme, 1939) |
-| 484 | Uma viagem | passado simples irregular | hamlet, fortress, ruins, lookout, scenery, valley | The Wizard of Oz (Livro, s. XX) |
-| 485 | Describing Appearance | ordem dos adjetivos | Tall, Short, Thin, Beautiful, Young, Earring | Girl with a Pearl Earring (🖼️ Pintura, 1665) |
-| 486 | Aparência | ordem dos adjetivos | Tall, Short, Thin, Beautiful, Young, Earring | Girl with a Pearl Earring (Livro, s. XX) |
-| 487 | Find My Friend | have + hair/olhos | Glasses, Hat, Stripes, Crowd, Next to, Hair | Where's Waldo? (Livro, 1987) |
-| 488 | Como ele é? | have + hair/olhos | Glasses, Hat, Stripes, Crowd, Next to, Hair | Where's Waldo? (Filme, s. XX) |
-| 489 | Easy to Live With | adjetivo + to + verbo | Roommate, Messy, Tidy, Noisy, Easy, Chore | The Odd Couple (🎭 Peça, 1965) |
-| 490 | Fácil de… | adjetivo + to + verbo | Roommate, Messy, Tidy, Noisy, Easy, Chore | The Odd Couple (Filme, s. XX) |
-| 491 | Moving to a New City | there is/there are | Neighborhood, Shop, Market, Bus stop, Near, Corner | Oliver Twist: Arrival in London (🥣 Romance, 1838) |
-| 492 | Há… | there is/there are | Neighborhood, Shop, Market, Bus stop, Near, Corner | Oliver Twist: Arrival in London (Filme, s. XX) |
-| 493 | I Used to Be Shy | used to | nickname, habit, scrapbook, timid, bashful, blush | Boyhood (🎬 Filme, 2014) |
-| 494 | Antes eu fazia | used to | nickname, habit, scrapbook, timid, bashful, blush | Boyhood (Filme, s. XX) |
-| 495 | Where Were You Last Night? | perguntas com was/were | Last night, Alone, Dark, Strange, Alibi, Truth | The Hound of the Baskervilles (🔍 Romance, 1902) |
-| 496 | Perguntas no passado | perguntas com was/were | Last night, Alone, Dark, Strange, Alibi, Truth | The Hound of the Baskervilles (Filme, s. XX) |
-| 497 | Weekend Stories | went, saw, ate | Umbrella, Kite, Sky, Adventure, Magic, Nanny | Mary Poppins (Filme, 1934) |
-| 498 | Passado irregular | went, saw, ate | Umbrella, Kite, Sky, Adventure, Magic, Nanny | Mary Poppins (Livro, s. XX) |
-| 499 | Irregular Verbs | passado irregular | Bought, Came, Got, Had, Gave, Made | The Verb Song (🎵 Canção, 1950) |
-| 500 | Mais irregulares | passado irregular | Bought, Came, Got, Had, Gave, Made | The Verb Song (🎵 Canção, 1950) |
-| 501 | Vacation Story | for + duração | Trip, Stayed, Ticket, Days, Weeks, How long | Around the World in Eighty Days: Passepartout (📖 Romance, 1872) |
-| 502 | Por quanto tempo | for + duração | Trip, Stayed, Ticket, Days, Weeks, How long | Around the World in Eighty Days: Passepartout (📖 Romance, 1872) |
-| 503 | Once Upon a Time | there was/there were | Once upon a time, Stranger, Castle, One day, Rose, Beast | Beauty and the Beast (📚 Livro, 1740) |
-| 504 | Abrir uma história | there was/there were | Once upon a time, Stranger, Castle, One day, Rose, Beast | Beauty and the Beast (🖥️ Série, 2006) |
-| 505 | Bigger, Better, Faster | comparativos | bigger, smaller, faster, slower, stronger, smarter | Zootopia (🎬 Filme, 2016) |
-| 506 | Comparar | comparativos | bigger, smaller, faster, slower, stronger, smarter | Zootopia (🎬 Filme, 1996) |
-| 507 | Around the Neighborhood | Comparar com -er than | laundry, barber, florist, butcher, bookstore, grocery | The Wind in the Willows (🏙️ Filme, 1908) |
-| 508 | Comparar com -er than | Comparar com -er than | laundry, barber, florist, butcher, bookstore, grocery | The Wind in the Willows (🏙️ Filme, 1908) |
-| 509 | When We Were Kids | used to + verbo base | Used to be, Downtown, Changed, Empty, Crowded, Now | The Little Prince's Planet (🪐 Desenho, 1943) |
-| 510 | Antes e agora | used to + verbo base | Used to be, Downtown, Changed, Empty, Crowded, Now | The Little Prince's Planet (🐋 Livro, 1851) |
-| 511 | First Day | sequência: first, then, after | First, Then, After that, Finally, Classmate, Nervous | David Copperfield: The New School (📖 Romance, 1850) |
-| 512 | Sequência | sequência: first, then, after | First, Then, After that, Finally, Classmate, Nervous | David Copperfield: The New School (🎄 Filme, 1946) |
-| 513 | New Colleagues | past simple + conectores | Colleague, Desk, Boss, Meeting, Office, Coffee break | Bartleby's Office (📖 Conto, 1853) |
-| 514 | No trabalho | past simple + conectores | Colleague, Desk, Boss, Meeting, Office, Coffee break | Bartleby's Office (📖 Conto, 1853) |
-| 515 | The Best of All | superlativos | chef, gourmet, sizzle, flavor, delicacy, critic | Ratatouille (🎬 Filme, 2007) |
-| 516 | O melhor de todos | superlativos | chef, gourmet, sizzle, flavor, delicacy, critic | Ratatouille (Casa-museu, Século XVI) |
-| 517 | Renting an Apartment | is/are included | Rent, Included, Deposit, Lease, Furnished, Move in | The Yellow Wallpaper (📖 Conto, 1892) |
-| 518 | Está incluído? | is/are included | Rent, Included, Deposit, Lease, Furnished, Move in | The Yellow Wallpaper (Tradição, Palavra taína) |
-| 519 | Landlord and Tenant | could you + pedido | Landlord, Tenant, Bill, Repair, Leak, Problem | Bleak House: The Lodger (📖 Romance, 1853) |
-| 520 | Could you…? | could you + pedido | Landlord, Tenant, Bill, Repair, Leak, Problem | Bleak House: The Lodger (📖 Romance, 1853) |
-| 521 | Every Week, Every Month | once, twice, three times | Once, Twice, Times, Week, Month, Every | Clair de Lune (🎹 Música, 1905) |
-| 522 | Quantas vezes | once, twice, three times | Once, Twice, Times, Week, Month, Every | Clair de Lune (Arquitetura popular, Século XIX) |
-| 523 | I Used to Live There | used to + lugar | Cabin, Lake, Different, Prairie, Horse, Candle | Little House on the Prairie (🏡 Romance, 1935) |
-| 524 | Costumava morar | used to + lugar | Cabin, Lake, Different, Prairie, Horse, Candle | Little House on the Prairie (Banho árabe, Século XI) |
-| 525 | I Will, I Won't | futuro com will | fortune teller, robot, prediction, vow, flying car, planet | The Jetsons (📺 Série, 1962) |
-| 526 | O futuro | futuro com will | fortune teller, robot, prediction, vow, flying car, planet | The Jetsons (Prato típico, Tradição) |
-| 527 | If It Rains… | if + will | If, Will, Stay in, Umbrella, Rain, Sunny | Singin' in the Rain (🎬 Filme, 1952) |
-| 528 | Se… | if + will | If, Will, Stay in, Umbrella, Rain, Sunny | Singin' in the Rain (Costa, Galícia) |
-| 529 | If You Heat Ice | if + present, present | Heat, Melt, Boil, Freeze, Ice, Water | The Frost Fair (🖼️ Pintura, 1684) |
-| 530 | Fatos com if | if + present, present | Heat, Melt, Boil, Freeze, Ice, Water | The Frost Fair (🖼️ Pintura, 1684) |
-| 531 | Too Much, Too Many | too much / too many | Chocolate, Popcorn, Donut, Waffle, Crumb, Raisin | King Midas (👑 Mito grego, 8 d.C.) |
-| 532 | Demais: too much ou too many? | too much / too many | Chocolate, Popcorn, Donut, Waffle, Crumb, Raisin | King Midas (Artesanato, 2019) |
-| 533 | My Big Family | O mais … de todos | nephew, grandson, granddaughter, babysit, tease, bicker | The Swiss Family Robinson (🏝️ Romance de aventura, 1812) |
-| 534 | O mais … de todos | O mais … de todos | nephew, grandson, granddaughter, babysit, tease, bicker | The Swiss Family Robinson (🏝️ Romance de aventura, 1812) |
-| 535 | You're One of Us Now | O mais … de todos | in-laws, newborn, toddler, reunite, cuddle | Little Men (🏫 Romance, 1871) |
-| 536 | O mais … de todos | O mais … de todos | in-laws, newborn, toddler, reunite, cuddle | Little Men (🏫 Romance, 1871) |
-| 537 | I'm Going to Travel | there was / there were | hostel, hot-air balloon, hiking boots, rainforest, safari, raft | Up (🎬 Filme, 2009) |
-| 538 | Meus planos | there was / there were | hostel, hot-air balloon, hiking boots, rainforest, safari, raft | Up (Festa, Julho) |
-| 539 | A Darker, Brighter Shirt | comparativo | Darker, Brighter, Lighter, Color, Shade, Match | The Tale of Jemima Puddle-Duck (Festa, 1908) |
-| 540 | Comparar cores | comparativo | Darker, Brighter, Lighter, Color, Shade, Match | The Tale of Jemima Puddle-Duck (Festa, 1908) |
-| 541 | Some, Any, No | some / any / no | Some, Any, No, Pot, Vegetable, Stone | Stone Soup: The Pot (Cidade, 1720) |
-| 542 | Some, any, no | some / any / no | Some, Any, No, Pot, Vegetable, Stone | Stone Soup: The Pot (Cidade, 1720) |
-| 543 | Much, Many, A Lot Of | past continuous: I was cooking when… | How many, How much, A lot of, Many, Much, Hungry | The Very Hungry Caterpillar (Cidade, 1969) |
-| 544 | Quanto? | past continuous: I was cooking when… | How many, How much, A lot of, Many, Much, Hungry | The Very Hungry Caterpillar (Cidade, 1969) |
-| 545 | A Few, A Little | a few / a little | A few, A little, Add, Flour, Salt, Wheat | The Little Red Hen: The Wheat (Cidade, 1874) |
-| 546 | Poucos e pouco | a few / a little | A few, A little, Add, Flour, Salt, Wheat | The Little Red Hen: The Wheat (Cidade, 1874) |
-| 547 | I Enjoy Cooking | past continuous + past simple: when / while | Enjoy, Finish, Keep, Run, Cookie, Catch | The Gingerbread Man: The Chase (🍪 Conto, 1875) |
-| 548 | Verbo + -ing | past continuous + past simple: when / while | Enjoy, Finish, Keep, Run, Cookie, Catch | The Gingerbread Man: The Chase (Cidade, 20th century) |
-| 549 | I Want to Go | verbo + to | Wish, Want to, Need to, Decide to, Coin, Well | The Wishing Well (🪙 Conto, 1812) |
-| 550 | Verbo + to | verbo + to | Wish, Want to, Need to, Decide to, Coin, Well | The Wishing Well (🪙 Conto, 1812) |
-| 551 | Have to, Must, Should | have to, must, should | cape, villain, superhero, secret agent, spy, advice | The Incredibles (🎬 Filme, 2004) |
-| 552 | Regras e conselhos | have to, must, should | cape, villain, superhero, secret agent, spy, advice | The Incredibles (Tradição, Folclore) |
-| 553 | I'd Rather Have Tea | would rather | Rather, Tea, Coffee, Kettle, Sugar, Cup | Polly Put the Kettle On (Filme de animação, 1797) |
-| 554 | Preferências | would rather | Rather, Tea, Coffee, Kettle, Sugar, Cup | Polly Put the Kettle On (Avião histórico, 1976–2003) |
-| 555 | Mine, Yours, Ours | mine / yours / his / hers | Mine, Yours, His, Hers, Ours, Theirs | Finding Nemo (Trem de alta velocidade, 2003) |
-| 556 | De quem é? | mine / yours / his / hers | Mine, Yours, His, Hers, Ours, Theirs | Finding Nemo (Trem de alta velocidade, 2003) |
-| 557 | Do It Yourself | myself, yourself | Myself, Yourself, Himself, Herself, Help yourself, Ourselves | The Little Red Hen: Do It Myself (🐔 Conto, 1874) |
-| 558 | Reflexivos | myself, yourself | Myself, Yourself, Himself, Herself, Help yourself, Ourselves | The Little Red Hen: Do It Myself (🐔 Conto, 1874) |
-| 559 | Someone, Anyone, Nobody | someone / anyone / nobody | Someone, Anyone, Nobody, Everyone, Island, Mystery | And Then There Were None (🔍 Romance, 1939) |
-| 560 | Alguém, ninguém | someone / anyone / nobody | Someone, Anyone, Nobody, Everyone, Island, Mystery | And Then There Were None (Expressão popular, expressão de uso comum) |
-| 561 | Both, Either, Neither | both / either / neither | Both, Either, Neither, Door, Choice, Tiger | The Lady, or the Tiger? (🐅 Conto, 1882) |
-| 562 | Duas opções | both / either / neither | Both, Either, Neither, Door, Choice, Tiger | The Lady, or the Tiger? (Curiosidade histórica, 1793) |
-| 563 | Could You, May I? | pedidos educados com could e may | considerate, mannerly, obliging, please, accommodating, request | Downton Abbey (📺 Série, 2010) |
-| 564 | Pedidos educados | pedidos educados com could e may | considerate, mannerly, obliging, please, accommodating, request | Downton Abbey (Cerimônia histórica, século XVII) |
-| 565 | Through, Across, Along | preposições de movimento | Through, Across, Along, Over, Under, Sea | The Odyssey: The Wine-Dark Sea (⚓ Poema, c. 700 a.C.) |
-| 566 | Movimento | preposições de movimento | Through, Across, Along, Over, Under, Sea | The Odyssey: The Wine-Dark Sea (Monumento, 1879–1912) |
-| 567 | Get Up, Get Ready | get up / get ready | Get up, Get ready, Get home, Alarm, Shower, Routine | Groundhog Day (🎬 Filme, 1993) |
-| 568 | Rotina com get | get up / get ready | Get up, Get ready, Get home, Alarm, Shower, Routine | Groundhog Day (Pintura, 1884–1886) |
-| 569 | Have You Ever? | present perfect de experiência | experience, bucket list, ocean, scuba, skydive, bungee | The Bucket List (🎬 Filme, 2007) |
-| 570 | Já fiz | present perfect de experiência | experience, bucket list, ocean, scuba, skydive, bungee | The Bucket List (Tradição comercial, duas vezes por ano) |
-| 571 | Go On, Come Back | go / come + particle | Come in, Come back, Go out, Go away, Welcome, Home | The Odyssey: The Return (⚓ Poema, c. 700 a.C.) |
-| 572 | Go e come | go / come + particle | Come in, Come back, Go out, Go away, Welcome, Home | The Odyssey: The Return (Estilista de sapatos, marca criada em 1991) |
-| 573 | Happy, Sad, Angry | feel + adjetivo | Happy, Sad, Angry, Scared, Excited, Feeling | Inside Out (Peça de roupa, 2015) |
-| 574 | Sentir | feel + adjetivo | Happy, Sad, Angry, Scared, Excited, Feeling | Inside Out (Cidade, 20th century) |
-| 575 | Furniture | in / on / under / next to | Table, Bed, Closet, Shelf, Lamp, Mirror | The Bedroom in Arles (🖼️ Pintura, 1888) |
-| 576 | Onde está? | in / on / under / next to | Table, Bed, Closet, Shelf, Lamp, Mirror | The Bedroom in Arles (Livro, 20th century) |
-| 577 | Fixing Things | present continuous | Fix, Sink, Plumber, Tool, Pipe, Water | Bob the Builder (📺 Desenho, 1998) |
-| 578 | Agora | present continuous | Fix, Sink, Plumber, Tool, Pipe, Water | Bob the Builder (Peça de teatro, 20th century) |
-| 579 | Wait For Me | verbo + preposição: wait for, listen to, look for, talk about | avenue, boulevard, plaza, kiosk, pigeon, stroller | Forrest Gump (Livro de contos, 1994) |
-| 580 | Verbo e preposição | verbo + preposição: wait for, listen to, look for, talk about | avenue, boulevard, plaza, kiosk, pigeon, stroller | Forrest Gump (Livro, 20th century) |
-| 581 | Moving Out | will para decisões | Pack, Truck, Boxes, Move, Address, Goodbye | The Grapes of Wrath (📖 Romance, 1939) |
-| 582 | Decisões | will para decisões | Pack, Truck, Boxes, Move, Address, Goodbye | The Grapes of Wrath (Livro, 20th century) |
-| 583 | Decorating My Room | look + adjetivo | Looks, Cozy, Wall, Curtain, Carpet, Colorful | The Arnolfini Portrait (🖼️ Pintura, 1434) |
-| 584 | Parece… | look + adjetivo | Looks, Cozy, Wall, Curtain, Carpet, Colorful | The Arnolfini Portrait (🖼️ Pintura, 1434) |
-| 585 | Clothes Shopping | past continuous + past simple: when / while | Size, Tight, Try on, Fitting room, Small, Large | The Emperor's New Clothes: The Tailors (👑 Conto, 1837) |
-| 586 | Roupa e tamanho | past continuous + past simple: when / while | Size, Tight, Try on, Fitting room, Small, Large | The Emperor's New Clothes: The Tailors (👑 Conto, 1837) |
-| 587 | Sizes and Fit | enough | Fit, Perfectly, Next, Enough, Slipper, Half size | Cinderella: The Glass Slipper (👠 Conto, 1697) |
-| 588 | Serve ou não | enough | Fit, Perfectly, Next, Enough, Slipper, Half size | Cinderella: The Glass Slipper (Livro, 20th century) |
-| 589 | Cheaper or More Expensive? | Comparar com more … than | clearance, markdown, overpriced, afford, charge, compare | The Fisherman and His Wife (🐟 Conto de fadas, 1812) |
-| 590 | Comparar com more … than | Comparar com more … than | clearance, markdown, overpriced, afford, charge, compare | The Fisherman and His Wife (🐟 Conto de fadas, 1812) |
-| 591 | Out of My Price Range | Comparar com more … than | affordable, pricey, freebie, undercut, slash | The Dog and His Reflection (🐕 Fábula de Esopo, séc. VI a.C.) |
-| 592 | Comparar com more … than | Comparar com more … than | affordable, pricey, freebie, undercut, slash | The Dog and His Reflection (Peça de teatro, 20th century) |
-| 593 | Wait Until It's Ready | until, while e during | mixing bowl, baking tray, timer, oven mitt, cookbook, measuring cup | MasterChef (🎬 Programa, 2010) |
-| 594 | Até quando? | until, while e during | mixing bowl, baking tray, timer, oven mitt, cookbook, measuring cup | MasterChef (Peça de teatro, 20th century) |
-| 595 | Returning Items | I'd like to | Return, Receipt, Refund, Exchange, Broken, Wrong | The Gift of the Magi: The Exchange (🎁 Conto, 1905) |
-| 596 | Devolver | I'd like to | Return, Receipt, Refund, Exchange, Broken, Wrong | The Gift of the Magi: The Exchange (🎁 Conto, 1905) |
-| 597 | Online Shopping | should arrive | Package, Order, Delivery, Arrive, Track, Free shipping | Moby-Dick: The Delivery (🐋 Romance, 1851) |
-| 598 | Deve chegar | should arrive | Package, Order, Delivery, Arrive, Track, Free shipping | Moby-Dick: The Delivery (🐋 Romance, 1851) |
-| 599 | Gift Shopping | object pronouns | Gift, Wrap, Her, Him, Flower, Birthday | The Little Prince: The Rose (🌹 Livro, 1943) |
-| 600 | Para quem? | object pronouns | Gift, Wrap, Her, Him, Flower, Birthday | The Little Prince: The Rose (🌹 Livro, 1943) |
-| 601 | Give Up, Carry On | phrasal verbs: give up, carry on, keep going | champion, trainer, boxer, fight, punching bag, determination | Rocky (🎬 Filme, 1976) |
-| 602 | Não desista | phrasal verbs: give up, carry on, keep going | champion, trainer, boxer, fight, punching bag, determination | Rocky (Cidade, 20th century) |
-| 603 | Following a Recipe | imperativos | Mix, Bake, Oven, Add, Flour, Stir | Julie & Julia (Cidade, 2009) |
-| 604 | Receita é ordem | imperativos | Mix, Bake, Oven, Add, Flour, Stir | Julie & Julia (Cidade, 20th century) |
-| 605 | Cooking Verbs | then, after, until | Chop, Fry, Boil, Then, After, Until | Like Water for Chocolate (📖 Romance, 1989) |
-| 606 | Passo a passo | then, after, until | Chop, Fry, Boil, Then, After, Until | Like Water for Chocolate (Cidade, 20th century) |
-| 607 | Grocery List | containers | Bottle, Box, Can, Bag, List, Ham | Green Eggs and Ham (🥚 Livro ilustrado, 1960) |
-| 608 | Embalagens | containers | Bottle, Box, Can, Bag, List, Ham | Green Eggs and Ham (Cidade, 20th century) |
-| 609 | Ordering a Meal | I'll have / I'd like | Have, Drink, Chicken, Menu, More, Soup | Oliver! (🎭 Musical, 1960) |
-| 610 | Fazendo o pedido | I'll have / I'd like | Have, Drink, Chicken, Menu, More, Soup | Oliver! (Cidade, 20th century) |
-| 611 | Sing Better, Dance Faster | advérbios comparativos: better, faster, more carefully | choir, duet, tap dance, rhythm, talent show, performer | Singin' in the Rain (Cidade, 1952) |
-| 612 | Mais rápido, mais devagar | advérbios comparativos: better, faster, more carefully | choir, duet, tap dance, rhythm, talent show, performer | Singin' in the Rain (Cidade, 20th century) |
-| 613 | Special Diets | contáveis e incontáveis: some / any / much / many | Vegan, Allergic, Nuts, Any, Without, Cheese | The Farmer in the Dell (🎵 Cantiga, 1826) |
-| 614 | Sem nada disso | contáveis e incontáveis: some / any / much / many | Vegan, Allergic, Nuts, Any, Without, Cheese | The Farmer in the Dell (Cidade, 20th century) |
-| 615 | Tipping | should | Tip, Owe, Percent, Service, Total, Leave | Reservoir Dogs (🎬 Filme, 1992) |
-| 616 | O que devo fazer | should | Tip, Owe, Percent, Service, Total, Leave | Reservoir Dogs (Cidade, 20th century) |
-| 617 | Symptoms | have / hurt / feel | Headache, Fever, Hurt, Feel, Cough, Sick | The Imaginary Invalid (🎭 Peça, 1673) |
-| 618 | Sintomas | have / hurt / feel | Headache, Fever, Hurt, Feel, Cough, Sick | The Imaginary Invalid (🎭 Peça, 1673) |
-| 619 | At the Pharmacy | need / how often | Cough, Pill, Cream, Pharmacy, Often, Need | The Alchemist (📖 Romance, 1988) |
-| 620 | Na farmácia | need / how often | Cough, Pill, Cream, Pharmacy, Often, Need | The Alchemist (📖 Romance, 1988) |
-| 621 | I'm Meeting Friends Tonight | presente contínuo para combinados | meet-up, hangout, get-together, double-booked, rain check, rsvp | The Big Bang Theory (📺 Série, 2007) |
-| 622 | Combinados | presente contínuo para combinados | meet-up, hangout, get-together, double-booked, rain check, rsvp | The Big Bang Theory (Cidade, 20th century) |
-| 623 | Healthy Habits | frequency adverbs | Often, Rarely, Skip, Usually, Always, Never | The Old Man and the Sea (🎣 Novela, 1952) |
-| 624 | Frequência | frequency adverbs | Often, Rarely, Skip, Usually, Always, Never | The Old Man and the Sea (🎣 Novela, 1952) |
-| 625 | Sports Injury | during × for | During, Knee, Broke, Hurt, Game, Ankle | Casey at the Bat: The Strike (⚾ Poema, 1888) |
-| 626 | Durante × por | during × for | During, Knee, Broke, Hurt, Game, Ankle | Casey at the Bat: The Strike (⚾ Poema, 1888) |
-| 627 | At the Dentist | plurais irregulares | Teeth, Cavity, Brush, Floss, Mouth, Smile | The Tooth Fairy (🦷 Cena, 1927) |
-| 628 | Um dente, dois dentes | plurais irregulares | Teeth, Cavity, Brush, Floss, Mouth, Smile | The Tooth Fairy (Livro, 20th century) |
-| 629 | Medicine Labels | had better (not) | Label, Food, Away, Dose, Children, Warning | Alice: Drink Me (🐰 Livro, 1865) |
-| 630 | É melhor não | had better (not) | Label, Food, Away, Dose, Children, Warning | Alice: Drink Me (🐰 Livro, 1865) |
-| 631 | Job Ad | required / optional | Required, Optional, Resume, Apply, Skills, Salary | Bartleby: The Wanted Ad (📖 Conto, 1853) |
-| 632 | Exigido ou opcional | required / optional | Required, Optional, Resume, Apply, Skills, Salary | Bartleby: The Wanted Ad (📖 Conto, 1853) |
-| 633 | Why Don't We? | sugestões | magnifying glass, clue, secret passage, eerie, suggestion, trapdoor | Scooby-Doo (📺 Série, 1969) |
-| 634 | Sugestões | sugestões | magnifying glass, clue, secret passage, eerie, suggestion, trapdoor | Scooby-Doo (Filme, 20th century) |
-| 635 | Job Interview | present perfect | Worked, Team, Interview, Learn, Strength, Hire | Death of a Salesman (🎭 Peça, 1949) |
-| 636 | Já fiz | present perfect | Worked, Team, Interview, Learn, Strength, Hire | Death of a Salesman (🎭 Peça, 1949) |
-| 637 | Work Routine | present simple + horário | Start, Finish, Noon, Lunch, Shift, Break | Modern Times (🎬 Filme, 1936) |
-| 638 | Horário | present simple + horário | Start, Finish, Noon, Lunch, Shift, Break | Modern Times (🎬 Filme, 1936) |
-| 639 | Work Emails | email phrases | Dear, Attached, Regards, Send, Subject, Reply | Dear Theo (✉️ Cartas, 1890) |
-| 640 | E-mail simples | email phrases | Dear, Attached, Regards, Send, Subject, Reply | Dear Theo (✉️ Cartas, 1890) |
-| 641 | Some, Any, A Lot | quantificadores | licorice, jelly beans, conveyor belt, vat, cocoa bean, lollipop | Charlie and the Chocolate Factory (🎬 Filme, 2005) |
-| 642 | Quanto tem | quantificadores | licorice, jelly beans, conveyor belt, vat, cocoa bean, lollipop | Charlie and the Chocolate Factory (Livro, 20th century) |
-| 643 | Taking a Day Off | Can I / May I | Day off, Leave early, Beach, Ask, Appointment, Tomorrow | Ferris Bueller's Day Off (Ensaio, 1986) |
-| 644 | Posso? | Can I / May I | Day off, Leave early, Beach, Ask, Appointment, Tomorrow | Ferris Bueller's Day Off (Livro, 20th century) |
-| 645 | Booking a Flight | datas e preposições de tempo | Flight, Round trip, Direct, Book, Seat, Ticket | Flight of the Bumblebee (🎻 Música, 1900) |
-| 646 | Datas | datas e preposições de tempo | Flight, Round trip, Direct, Book, Seat, Ticket | Flight of the Bumblebee (🎻 Música, 1900) |
-| 647 | Airport Check-in | Would you like | Check in, Boarding pass, Gate, Passport, Suitcase, Window | The Terminal (🎬 Filme, 2004) |
-| 648 | Você gostaria? | Would you like | Check in, Boarding pass, Gate, Passport, Suitcase, Window | The Terminal (Livro, 20th century) |
-| 649 | Lost Luggage | passado: lost / left | Luggage, Form, Left, Lost, Describe, Claim | Paddington (🐻 Livro, 1958) |
-| 650 | Passado irregular | passado: lost / left | Luggage, Form, Left, Lost, Describe, Claim | Paddington (Livro, 20th century) |
-| 651 | Security and Boarding | phrasal verbs | Take off, Turn off, Belt, Security, Board, Pocket | Casablanca (Livro, 1942) |
-| 652 | Verbos com partículas | phrasal verbs | Take off, Turn off, Belt, Security, Board, Pocket | Casablanca (Livro, 20th century) |
-| 653 | Delayed Flight | present perfect com just / already / yet | Delayed, Wait, Apologize, Hour, Weather, Update | The Little Prince: The Pilot (🪐 Livro, 1943) |
-| 654 | Vai ser atrasado | present perfect com just / already / yet | Delayed, Wait, Apologize, Hour, Weather, Update | The Little Prince: The Pilot (Livro, 20th century) |
-| 655 | Hold On, Call Back | phrasal verbs e frases ao telefone | dial tone, answering machine, busy signal, receiver, area code, redial | Ghostbusters (🎬 Filme, 1984) |
-| 656 | Ao telefone | phrasal verbs e frases ao telefone | dial tone, answering machine, busy signal, receiver, area code, redial | Ghostbusters (Evento, 20th century) |
-| 657 | Hotel Reservation | for + nights | Nights, Single, Double, Check out, Room, Price | The Grand Budapest Hotel (🎸 Álbum, 2014) |
-| 658 | Por quantas noites | for + nights | Nights, Single, Double, Check out, Room, Price | The Grand Budapest Hotel (🎬 Filme, 1984) |
-| 659 | Front Desk Questions | could you / is there | Front desk, Elevator, Taxi, Breakfast, Wi-Fi, Key | Fawlty Towers (📺 Seriado, 1975) |
-| 660 | Perguntas úteis | could you / is there | Front desk, Elevator, Taxi, Breakfast, Wi-Fi, Key | Fawlty Towers (📜 Poema, 1855) |
-| 661 | Renting a Car | how many / how much | Per day, Insurance, Tank, License, Return, Full | Thelma & Louise (🎬 Filme, 1991) |
-| 662 | Quanto e quantos | how many / how much | Per day, Insurance, Tank, License, Return, Full | Thelma & Louise (Canção, 1988) |
-| 663 | So Fetch! | gírias de adolescentes | slang, trend, outfit, gossip, squad, vibe | Mean Girls (🎬 Filme, 2004) |
-| 664 | Gírias | gírias de adolescentes | slang, trend, outfit, gossip, squad, vibe | Mean Girls (Tradição, 1945) |
-| 665 | Public Transport | get on / get off | Get on, Get off, Stop, Fare, Line, Transfer | Subway Station (🖼️ Pintura, 1930) |
-| 666 | Subir e descer | get on / get off | Get on, Get off, Stop, Fare, Line, Transfer | Subway Station (Poema, 1981) |
-| 667 | Souvenirs | this / that / these / those | Souvenir, Handmade, Gift shop, This, Those, Pretty | The Maltese Falcon (🎬 Filme, 1941) |
-| 668 | Este, esse, aquele | this / that / these / those | Souvenir, Handmade, Gift shop, This, Those, Pretty | The Maltese Falcon (🎬 Filme, 1941) |
-| 669 | Road Trip Plans | let's / why don't we | Hit the road, Drive, Pick, Route, Gas, Snack | Easy Rider (🎬 Filme, 1969) |
-| 670 | Vamos! | let's / why don't we | Hit the road, Drive, Pick, Route, Gas, Snack | Easy Rider (Tradição, 1930–1945) |
-| 671 | Camping Gear | need to / don't need to | Tent, Flashlight, Sleeping bag, Backpack, Fire, Water | Into the Wild (🎬 Filme, 2007) |
-| 672 | Preciso ou não | need to / don't need to | Tent, Flashlight, Sleeping bag, Backpack, Fire, Water | Into the Wild (🎬 Filme, 2007) |
-| 673 | Spill the Beans | idioms de segredo | classified, gift wrap, guest of honor, invention, truth, deceit | Wallace and Gromit (📺 Série, 1989) |
-| 674 | Segredos | idioms de segredo | classified, gift wrap, guest of honor, invention, truth, deceit | Wallace and Gromit (Poema, 1572) |
-| 675 | Have You Ever…? | present perfect experience | Have you ever, Never, Snow, Tried, Seen, Visited | Ulysses (📖 Romance, 1922) |
-| 676 | Você já...? | present perfect experience | Have you ever, Never, Snow, Tried, Seen, Visited | Ulysses (Tradição, 2012) |
-| 677 | Life Experiences | been to / gone to | Been to, Gone to, Tried, Climbed, Swum, Lived | The Odyssey of Pi (🐯 Romance, 2001) |
-| 678 | Esteve × foi | been to / gone to | Been to, Gone to, Tried, Climbed, Swum, Lived | The Odyssey of Pi (🐯 Romance, 2001) |
-| 679 | Too Hot, Too Cold | too e enough | gruel, picnic basket, wilderness, snooze, bear cub, breakfast table | Goldilocks and the Three Bears (Livro, 1837) |
-| 680 | Demais e suficiente | too e enough | gruel, picnic basket, wilderness, snooze, bear cub, breakfast table | Goldilocks and the Three Bears (Tradição, Século XIX) |
-| 681 | For and Since | for / since | For, Since, Long time, Years, Sleep, Wake | Rip Van Winkle: Twenty Years (😴 Conto, 1819) |
-| 682 | Há quanto tempo | for / since | For, Since, Long time, Years, Sleep, Wake | Rip Van Winkle: Twenty Years (😴 Conto, 1819) |
-| 683 | Recent News | present perfect news | News, Prize, Happened, Guess, Great, Tell | The Telegram (✉️ Cena, 1844) |
-| 684 | Novidades | present perfect news | News, Prize, Happened, Guess, Great, Tell | The Telegram (Filme, 1962) |
-| 685 | Life Changes | get + adjetivo/particípio | Get married, Get better, Get cold, Get tired, Change, Grow | The Metamorphosis (🪲 Novela, 1915) |
-| 686 | Ficar e virar | get + adjetivo/particípio | Get married, Get better, Get cold, Get tired, Change, Grow | The Metamorphosis (Filme, 2000) |
-| 687 | Used To | used to | Used to, Every summer, When I was, Bike, Street, Play | The Wonderful Years (⏮️ Livro, 1988) |
-| 688 | Costumava | used to | Used to, Every summer, When I was, Bike, Street, Play | O boteco carioca (Tradição, Río de Janeiro) |
-| 689 | Superlatives | superlativos | The best, The worst, The biggest, The fastest, The oldest, Record | Guinness Book (📖 Livro, 1955) |
-| 690 | O mais... | superlativos | The best, The worst, The biggest, The fastest, The oldest, Record | Aeroporto do Galeão (Tradição, Río de Janeiro) |
-| 691 | Did You? I Didn't | passado simples: perguntas e negativas | crime scene, trench coat, witness, latch, windowsill, footprint | The Adventures of Sherlock Holmes (Cidade, 1892) |
-| 692 | Você viu? | passado simples: perguntas e negativas | crime scene, trench coat, witness, latch, windowsill, footprint | The Adventures of Sherlock Holmes (Cidade, 20th century) |
-| 693 | The Tallest Building | first conditional: If it rains, I will stay | Tallest, Floor, View, Elevator, Stairs, Top | King Kong (🏢 Filme, 1933) |
-| 694 | Mais alto | first conditional: If it rains, I will stay | Tallest, Floor, View, Elevator, Stairs, Top | King Kong (Cidade, 20th century) |
-| 695 | Too Much, Too Little | too / enough | Too big, Too small, Enough, Chair, Just right, Comfortable | Goldilocks: The Chairs (🐻 Conto, 1837) |
-| 696 | Demais e suficiente | too / enough | Too big, Too small, Enough, Chair, Just right, Comfortable | Goldilocks: The Chairs (Cidade, 20th century) |
-| 697 | While I Was Walking | passado contínuo | treasure chest, shipwreck, cove, parrot, rum, crew | Pirates of the Caribbean (🎬 Filme, 2003) |
-| 698 | Eu estava... | passado contínuo | treasure chest, shipwreck, cove, parrot, rum, crew | Pirates of the Caribbean (Cidade, 20th century) |
-| 699 | Dream Job | would like to be | Pilot, Chef, Artist, Doctor, Teacher, Job | Alice: The Queen's Job (👑 Livro, 1865) |
-| 700 | Eu gostaria de ser | would like to be | Pilot, Chef, Artist, Doctor, Teacher, Job | Alice: The Queen's Job (👑 Livro, 1865) |
-| 701 | Through the Tunnel | preposições de movimento | hole, cavern, footbridge, creek, dirt road, courtyard | Alice's Adventures in Wonderland (Arte rupestre, 1865) |
-| 702 | Caminhos | preposições de movimento | hole, cavern, footbridge, creek, dirt road, courtyard | Alice's Adventures in Wonderland (Explorador, 1950) |
-| 703 | Invitations | would you like to | Invite, Party, Come, Sorry, Music, Guest | The Great Gatsby: The Party (🎉 Livro, 1925) |
-| 704 | Você gostaria de...? | would you like to | Invite, Party, Come, Sorry, Music, Guest | The Great Gatsby: The Party (🎉 Livro, 1925) |
-| 705 | Refusing Politely | present perfect com just / already / yet | Prefer, Busy, Maybe, Another, Time, Offer | Bartleby: I Prefer Not (📋 Livro, 1853) |
-| 706 | Recusar com educação | present perfect com just / already / yet | Prefer, Busy, Maybe, Another, Time, Offer | Bartleby: I Prefer Not (📋 Livro, 1853) |
-| 707 | Making Excuses | because / so | Because, Late, Lie, Wolf, Sheep, Truth | The Boy Who Cried Wolf (Tradição, c. 600 a.C.) |
-| 708 | Porque / Então | because / so | Because, Late, Lie, Wolf, Sheep, Truth | The Boy Who Cried Wolf (Festival, século XIII) |
-| 709 | Compliments | adjetivos de elogio | Lovely, Amazing, Smart, Beautiful, Brave, Voice | Cyrano de Bergerac (🌹 Peça, 1897) |
-| 710 | Elogios | adjetivos de elogio | Lovely, Amazing, Smart, Beautiful, Brave, Voice | Cyrano de Bergerac (Festival, desde 1992) |
-| 711 | Enjoy Swimming, Want to Swim | gerúndio e infinitivo | panda, noodles, master, sensei, bamboo, meditate | Kung Fu Panda (🎬 Filme, 2008) |
-| 712 | Gosto e quero | gerúndio e infinitivo | panda, noodles, master, sensei, bamboo, meditate | Kung Fu Panda (Festival, desde 1852) |
-| 713 | Describing People | have / has + traços | Tall, Short, Curly, Beard, Eyes, Young | The Picture of Dorian Gray (Tradição, 1890) |
-| 714 | Como ele é? | have / has + traços | Tall, Short, Curly, Beard, Eyes, Young | The Picture of Dorian Gray (Tradição, 1890) |
-| 715 | Character Traits | adjetivos de caráter | Kind, Shy, Funny, Serious, Lazy, Friendly | Pride and Prejudice: Elizabeth (👭 Livro, 1813) |
-| 716 | Como ela é? | adjetivos de caráter | Kind, Shy, Funny, Serious, Lazy, Friendly | Pride and Prejudice: Elizabeth (Festival, desde 1974) |
-| 717 | Clothes and Style | wearing | Wear, Suit, Hat, Coat, Shoes, Style | The Emperor's New Clothes (Festival, 1837) |
-| 718 | Ele está vestindo | wearing | Wear, Suit, Hat, Coat, Shoes, Style | The Emperor's New Clothes (Invenção, 1982) |
-| 719 | Colors and Patterns | adjetivos de cor | Bright, Dark, Striped, Plain, Yellow, Blue | Starry Night (🌌 Livro, 1889) |
-| 720 | Cores e estampas | adjetivos de cor | Bright, Dark, Striped, Plain, Yellow, Blue | Starry Night (Filme / comédia, 2012) |
-| 721 | Friends | best friend | Friend, Best friend, Met, Since, Honey, Share | Winnie-the-Pooh (Literatura, 1926) |
-| 722 | Meu melhor amigo | best friend | Friend, Best friend, Met, Since, Honey, Share | Winnie-the-Pooh (Língua, século XVIII) |
-| 723 | Always and Never | advérbios de frequência | nine-to-five, punctual, yearly, occasionally, frequently, generally | Groundhog Day (Livro, 1993) |
-| 724 | Com que frequência | advérbios de frequência | nine-to-five, punctual, yearly, occasionally, frequently, generally | Groundhog Day (Livro, 1929) |
-| 725 | Pets | have / has | Pet, Dog, Cat, Feed, Walk, Bone | Lassie Come Home (🐕 Filme, 1940) |
-| 726 | Eu tenho um... | have / has | Pet, Dog, Cat, Feed, Walk, Bone | Lassie Come Home (Livro, 2001) |
-| 727 | Seasons | in + estação | Spring, Summer, Autumn, Winter, Snow, Season | The Four Seasons (Livro, 1725) |
-| 728 | Em qual estação? | in + estação | Spring, Summer, Autumn, Winter, Snow, Season | The Four Seasons (Livro, 1949) |
-| 729 | Environment | should / must | Tree, Recycle, Save, Pollution, Clean, Earth | The Lorax (🌳 Livro, 1971) |
-| 730 | Devemos | should / must | Tree, Recycle, Save, Pollution, Clean, Earth | The Lorax (Livro, 1998) |
-| 731 | At, On, In | preposições de tempo | wristwatch, millennium, leap year, fortnight, calendar date, planner | Doctor Who (📺 Série, 1963) |
-| 732 | Quando acontece | preposições de tempo | wristwatch, millennium, leap year, fortnight, calendar date, planner | Doctor Who (Filme, 1968) |
-| 733 | Recycling | imperativos | Bin, Plastic, Reuse, Trash, Glass, Paper | WALL-E (🤖 Filme, 2008) |
-| 734 | Faça isso! / Não faça! | imperativos | Bin, Plastic, Reuse, Trash, Glass, Paper | WALL-E (Filme, 2014) |
-| 735 | Cooking Dinner | going to | Cook, Recipe, Taste, Dinner, Onion, Soup | Ratatouille (Filme, 2007) |
-| 736 | Vou fazer | going to | Cook, Recipe, Taste, Dinner, Onion, Soup | Ratatouille (Filme, 2013) |
-| 737 | Local Markets | quantidade | Fresh, Stall, Bargain, Kilo, Bread, Apples | Les Misérables: The Market (🏪 Livro, 1862) |
-| 738 | Quanto? Quantos? | quantidade | Fresh, Stall, Bargain, Kilo, Bread, Apples | Les Misérables: The Market (🏪 Livro, 1862) |
-| 739 | Birthday Party | going to | Cake, Candles, Surprise, Balloon, Guests, Gift | Alice: Unbirthday (🎂 Livro, 1865) |
-| 740 | Planos de festa | going to | Cake, Candles, Surprise, Balloon, Guests, Gift | Alice: Unbirthday (🎂 Livro, 1865) |
-| 741 | Holidays | on + data | Holiday, Celebrate, Tradition, Feast, December, Family | A Christmas Carol: Feast (🎄 Conto, 1843) |
-| 742 | Em que dia? | on + data | Holiday, Celebrate, Tradition, Feast, December, Family | A Christmas Carol: Feast (Livro, 20th century) |
-| 743 | Turn Left, Go Straight | direções | crossroad, zebra crossing, crossing, overpass, opposite, dead end | Dora the Explorer (📺 Série, 2000) |
-| 744 | Direções | direções | crossroad, zebra crossing, crossing, overpass, opposite, dead end | Dora the Explorer (🎓 Filme, 1997) |
-| 745 | Wedding | will / going to | Bride, Groom, Ring, Toast, Wedding, Church | Romeo and Juliet: The Wedding (💒 Livro, 1597) |
-| 746 | Vai acontecer | will / going to | Bride, Groom, Ring, Toast, Wedding, Church | Romeo and Juliet: The Wedding (💒 Livro, 1597) |
-| 747 | Housework | have to | Wash, Sweep, Iron, Dishes, Floor, Laundry | Cinderella: Chores (🧹 Livro, 1697) |
-| 748 | Tenho que | have to | Wash, Sweep, Iron, Dishes, Floor, Laundry | Cinderella: Chores (🧹 Livro, 1697) |
-| 749 | Quick Repairs | can you | Broken, Tools, Repair, Hammer, Fence, Help | The Little Red Hen (⚽ Filme, 1874) |
-| 750 | Você pode...? | can you | Broken, Tools, Repair, Hammer, Fence, Help | The Little Red Hen (🥇 Filme, 1981) |
-| 751 | Electronics | this / that | Charger, Screen, Battery, Laptop, Cable, Camera | Metropolis (🤖 Filme, 1927) |
-| 752 | Este e aquele | this / that | Charger, Screen, Battery, Laptop, Cable, Camera | Metropolis (🤖 Filme, 1927) |
-| 753 | I'd Like... | first conditional: If it rains, I will stay | wine list, sirloin, starter, main course, entree, cutlery | Lady and the Tramp (📖 Livro, 1955) |
-| 754 | No restaurante | first conditional: If it rains, I will stay | wine list, sirloin, starter, main course, entree, cutlery | Lady and the Tramp (🎬 Filme, 1973) |
-| 755 | Smartphone | orações relativas: who, which, that | App, Message, Signal, Call, Phone, Text | Her (📱 Filme, 2013) |
-| 756 | Agora mesmo | orações relativas: who, which, that | App, Message, Signal, Call, Phone, Text | Her (🎬 Filme, 1983) |
-| 757 | Social Media | past simple | Post, Follow, Share, Photo, Like, Profile | The Social Network (📖 Livro, 2010) |
-| 758 | O que fez | past simple | Post, Follow, Share, Photo, Like, Profile | The Social Network (📖 Livro, 2010) |
-| 759 | Reviews | adjetivos | Rating, Recommend, Worth, Funny, Boring, Excellent | Don Quixote: The Critics (🛡️ Livro, 1605) |
-| 760 | Minha avaliação | adjetivos | Rating, Recommend, Worth, Funny, Boring, Excellent | Don Quixote: The Critics (🛡️ Livro, 1605) |
-| 761 | What Does It Cost? | compras e preços | price tag, barcode, shopping cart, boutique, bargain hunter, flea market | Pretty Woman (🎬 Filme, 1990) |
-| 762 | Preços | compras e preços | price tag, barcode, shopping cart, boutique, bargain hunter, flea market | Pretty Woman (Cidade, s. XX) |
-| 763 | School Subjects | like / love | Math, History, Science, English, Art, Subject | Dead Poets Society (📖 Filme, 1989) |
-| 764 | Gosto e amo | like / love | Math, History, Science, English, Art, Subject | Dead Poets Society (📖 Filme, 1989) |
-| 765 | Study Habits | frequência | Homework, Exam, Notes, Always, Never, Sometimes | The Tortoise: Study (🐢 Conto, c. 600 a.C.) |
-| 766 | Com que frequência? | frequência | Homework, Exam, Notes, Always, Never, Sometimes | Corpus Christi (Cidade, s. XX) |
-| 767 | University Life | present perfect | Course, Degree, Campus, Lecture, Professor, Studied | Good Will Hunting (🎬 Filme, 1997) |
-| 768 | Já fiz | present perfect | Course, Degree, Campus, Lecture, Professor, Studied | Good Will Hunting (🎬 Filme, 2019) |
-| 769 | Books | past simple | Novel, Author, Chapter, Story, Finished, Loved | Matilda: The Reader (🎬 Filme, 1988) |
-| 770 | O que li | past simple | Novel, Author, Chapter, Story, Finished, Loved | Matilda: The Reader (📖 Romance, 1948) |
-| 771 | Movies | like / liked | Movie, Scene, Actor, Ending, Popcorn, Ticket | Cinema Paradiso (📖 Romance, 1988) |
-| 772 | Gostei / Não gostei | like / liked | Movie, Scene, Actor, Ending, Popcorn, Ticket | Cinema Paradiso (🎬 Filme, 2018) |
-| 773 | What's the Matter? | saúde e conselhos | symptom, bruise, stomachache, throat, cramp, stretcher | Patch Adams (🎬 Filme, 1998) |
-| 774 | Saúde | saúde e conselhos | symptom, bruise, stomachache, throat, cramp, stretcher | Patch Adams (🎬 Filme, 2010) |
-| 775 | Music | like / love | Song, Band, Concert, Sing, Guitar, Favorite | The Sound of Music (Cidade, 1965) |
-| 776 | Gosto e amo | like / love | Song, Band, Concert, Sing, Guitar, Favorite | The Sound of Music (Cidade, 20th century) |
-| 777 | Hobbies | like + ing | Garden, Paint, Collect, Hobby, Plant, Draw | The Secret Garden (Cidade, 1911) |
-| 778 | Gosto de fazer | like + ing | Garden, Paint, Collect, Hobby, Plant, Draw | The Secret Garden (Cidade, 1911) |
-| 779 | Soccer | past simple | Goal, Referee, Fans, Score, Ball, Match | Escape to Victory (Cidade, 1981) |
-| 780 | O que aconteceu | past simple | Goal, Referee, Fans, Score, Ball, Match | Escape to Victory (Cidade, 1981) |
-| 781 | Olympics | superlativos | Medal, Record, Champion, Fastest, Strongest, Best | Chariots of Fire (Plataforma, 1981) |
-| 782 | O mais... | superlativos | Medal, Record, Champion, Fastest, Strongest, Best | Chariots of Fire (Pessoa, 20th century) |
-| 783 | He's Tall, She Has Long Hair | descrição física e de personalidade | ponytail, blond, slim, mustache, outgoing, bald | Shrek (Instituição, 2001) |
-| 784 | Como ele é | descrição física e de personalidade | ponytail, blond, slim, mustache, outgoing, bald | Shrek (Lugar, 20th century) |
-| 785 | Fitness | frequency | Stretch, Jog, Weights, Gym, Twice, Tired | Rocky: Training (🏋️ Livro, 1976) |
-| 786 | Com que frequência? | frequency | Stretch, Jog, Weights, Gym, Twice, Tired | Rocky: Training (🏋️ Livro, 1976) |
-| 787 | Stress | have to | Stress, Deadline, Relax, Worry, Busy, Break | Hamlet (Documento, 1603) |
-| 788 | Tenho que | have to | Stress, Deadline, Relax, Worry, Busy, Break | Hamlet (Evento, 20th century) |
-| 789 | Good News, Bad News | reactions | Lucky, Sorry, Wonderful, News, Terrible, Congratulations | Romeo and Juliet: The News (📰 Livro, 1597) |
-| 790 | Reagir a notícias | reactions | Lucky, Sorry, Wonderful, News, Terrible, Congratulations | Romeo and Juliet: The News (Movimento, 20th century) |
-| 791 | Friendship Problems | past continuous | Argue, Forgive, Friend, Sorry, Angry, Hug | Anne of Green Gables (Instituição, 1908) |
-| 792 | Estava fazendo | past continuous | Argue, Forgive, Friend, Sorry, Angry, Hug | Anne of Green Gables (Instituição, 1908) |
-| 793 | Friendly Advice | should / why don't | Advice, Try, Listen, Idea, Brave, Path | The Wizard of Oz: Advice (🌈 Livro, 1900) |
-| 794 | Conselhos | should / why don't | Advice, Try, Listen, Idea, Brave, Path | The Wizard of Oz: Advice (🌈 Livro, 1900) |
-| 795 | Cold Winters, Warm Summers | clima e estações | mild, scorching, polar, tropical, equator, weather report | Frozen (🎬 Filme, 2013) |
-| 796 | O tempo | clima e estações | mild, scorching, polar, tropical, equator, weather report | Frozen (Filme, 20th century) |
-| 797 | Past Events | past simple irregular | Went, Saw, Had, Weekend, Park, Flowers | Mrs Dalloway (💐 Livro, 1925) |
-| 798 | Verbos irregulares | past simple irregular | Went, Saw, Had, Weekend, Park, Flowers | Mrs Dalloway (Álbum, 20th century) |
-| 799 | Last Year | last / ago | Last year, Start, Remember, Old friend, Song, Midnight | Auld Lang Syne (🥂 Livro, 1788) |
-| 800 | Ano passado | last / ago | Last year, Start, Remember, Old friend, Song, Midnight | Auld Lang Syne (Álbum, 20th century) |
-| 801 | There Is a Problem | there is / there are para problemas | crack, jammed, squeaky, clogged, rattling, shower head | Fawlty Towers (Filme, 1975) |
-| 802 | Reclamações | there is / there are para problemas | crack, jammed, squeaky, clogged, rattling, shower head | Fawlty Towers (Festival, 20th century) |
-| 803 | Money Matters | enough | Afford, Budget, Save, Expensive, Cheap, Enough | A Christmas Carol: Money (💰 Conto, 1843) |
-| 804 | Dinheiro | enough | Afford, Budget, Save, Expensive, Cheap, Enough | A Christmas Carol: Money (💰 Conto, 1843) |
-| 805 | Shopping Mall | there is | Escalator, Floor, Food court, Toy, Store, Piano | Big: The Toy Store (🎹 Filme, 1988) |
-| 806 | Onde fica? | there is | Escalator, Floor, Food court, Toy, Store, Piano | Barcelona 92 (🏅 Evento esportivo, 1992) |
-| 807 | Returning to Basics | present simple | Wake up, Repeat, Again, Breakfast, Every day, Routine | Groundhog Day (🎸 Músico, 1993) |
-| 808 | Rotina | present simple | Wake up, Repeat, Again, Breakfast, Every day, Routine | Groundhog Day (Pintura, 1884–1886) |
-| 809 | Review: Travel | revisão | Ticket, Hotel, Map, Train, Passport, Journey | Around the World in 80 Days (🌍 Livro, 1872) |
-| 810 | Revisão: viagem | revisão | Ticket, Hotel, Map, Train, Passport, Journey | Around the World in 80 Days (🥅 Artista, anos 1990) |
-| 811 | Would You Like To...? | orações relativas: who, which, that | plus one, guest list, catering, prior engagement, available, tied up | Bridget Jones's Diary (🎬 Filme, 2001) |
-| 812 | Convites | orações relativas: who, which, that | plus one, guest list, catering, prior engagement, available, tied up | Bridget Jones's Diary (👗 Tradição, tradição) |
-| 813 | Favorite Series | present perfect com ever | Series, Episode, Season, Character, Ever, Never | Game of Thrones (🐉 Série, 2011) |
-| 814 | Já viu? | present perfect com ever | Series, Episode, Season, Character, Ever, Never | Game of Thrones (🎬 Filme, 2000) |
-| 815 | Podcasts and Radio | should | Podcast, Radio, Station, Listen, Host, Story | The War of the Worlds Broadcast (📻 Livro, 1938) |
-| 816 | Conselhos | should | Podcast, Radio, Station, Listen, Host, Story | The War of the Worlds Broadcast (📻 Livro, 1938) |
-| 817 | Look After, Run Out Of | phrasal verbs: look after, run out of, get along | babysitter, infant, nursery, manners, quarrel, bath time | Nanny McPhee (🎬 Filme, 2005) |
-| 818 | Cuidar e conviver | phrasal verbs: look after, run out of, get along | babysitter, infant, nursery, manners, quarrel, bath time | Nanny McPhee (Cidade, 20th century) |
-| 819 | Photography | going to | Camera, Photo, Light, Zoom, Album, Portrait | Migrant Mother (📷 Livro, 1936) |
-| 820 | Planos | going to | Camera, Photo, Light, Zoom, Album, Portrait | Migrant Mother (📷 Livro, 1936) |
-| 821 | Crafts and DIY | past continuous | Quilt, Thread, Needle, Fabric, Glue, Paint | Quilts of Gee's Bend (🛏️ Livro, 1930) |
-| 822 | Estava fazendo | past continuous | Quilt, Thread, Needle, Fabric, Glue, Paint | Quilts of Gee's Bend (Cidade, 20th century) |
-| 823 | Team Sports Talk | adverbs of manner | Team, Coach, Win, Quickly, Carefully, Loudly | Remember the Titans (🏈 Filme, 2000) |
-| 824 | Como? | adverbs of manner | Team, Coach, Win, Quickly, Carefully, Loudly | Remember the Titans (Cidade, 20th century) |
-| 825 | Writing a CV | present perfect com for | Experience, Skill, Degree, Reference, For, Since | The Autobiography of Malcolm X (📖 Livro, 1965) |
-| 826 | Há quanto tempo? | present perfect com for | Experience, Skill, Degree, Reference, For, Since | The Autobiography of Malcolm X (📖 Livro, 1965) |
-| 827 | After the Interview | thank you for + -ing | Interview, Email, Position, Opportunity, Soon, Thank | The Great Gatsby: The Invitation (🥂 Livro, 1925) |
-| 828 | Agradecendo | thank you for + -ing | Interview, Email, Position, Opportunity, Soon, Thank | The Great Gatsby: The Invitation (🥂 Livro, 1925) |
-| 829 | Find Out, Work Out | phrasal verbs: find out, work out, figure out | inscription, tomb, cave, hieroglyph, excavate, secret | The Goonies (🎬 Filme, 1985) |
-| 830 | Descobrir | phrasal verbs: find out, work out, figure out | inscription, tomb, cave, hieroglyph, excavate, secret | The Goonies (Tradição, Primavera) |
-| 831 | Who Do You Work For? | What do you do? | Company, Manager, Employee, Department, Customer, Office | Mad Men (📺 Série, 2007) |
-| 832 | O que você faz? | What do you do? | Company, Manager, Employee, Department, Customer, Office | Mad Men (Livro de receitas, 1950) |
-| 833 | Giving Feedback | quite / a bit | Feedback, Quite, Bit, Improve, Practice, Rhythm | Whiplash (🥁 Filme, 2014) |
-| 834 | Um pouco ou bastante | quite / a bit | Feedback, Quite, Bit, Improve, Practice, Rhythm | Whiplash (Design, 1985) |
-| 835 | Study Abroad | already / yet | Abroad, Visa, Passport, Already, Yet, Suitcase | The Namesake (História, 2003) |
-| 836 | Já e ainda | already / yet | Abroad, Visa, Passport, Already, Yet, Suitcase | The Namesake (Sítio arqueológico, 79 d.C.) |
-| 837 | Charity Fundraiser | a lot of / a few | Charity, Donate, Volunteer, Fundraiser, Few, Lot | Les Misérables: Charity (❤️ Livro, 1862) |
-| 838 | Muito e poucos | a lot of / a few | Charity, Donate, Volunteer, Fundraiser, Few, Lot | Les Misérables: Charity (❤️ Livro, 1862) |
-| 839 | No Biggie! | gírias comuns | biggie, bummer, hyped, mellow, whatever, laid-back | Spider-Man: Into the Spider-Verse (🎬 Filme, 2018) |
-| 840 | Gírias do dia | gírias comuns | biggie, bummer, hyped, mellow, whatever, laid-back | Spider-Man: Into the Spider-Verse (Barco, Século XI) |
-| 841 | Music Genres | as + adjetivo + as | Genre, Jazz, Rock, Classical, Melody, Concert | Rhapsody in Blue (Templo, 1924) |
-| 842 | Tão... quanto | as + adjetivo + as | Genre, Jazz, Rock, Classical, Melody, Concert | Rhapsody in Blue (Bandeira, 1797) |
-| 843 | Weather Forecast | is coming / will | Forecast, Storm, Cloudy, Windy, Thunder, Umbrella | The Tempest (Carro, 1611) |
-| 844 | Vai acontecer | is coming / will | Forecast, Storm, Cloudy, Windy, Thunder, Umbrella | The Tempest (Túnel, 1965) |
-| 845 | Weather Around the World | as hot as | Hot, Cold, Wet, Dry, Desert, Snow | Around the World with Willy Fog (Café histórico, 1981) |
-| 846 | Tão quente quanto | as hot as | Hot, Cold, Wet, Dry, Desert, Snow | Around the World with Willy Fog (Hino, 1847) |
-| 847 | Break the Ice | idiom: break the ice; small talk | greeting, topic, pastime, weather, smile, awkward | The Breakfast Club (🎬 Filme, 1985) |
-| 848 | Quebrar o gelo | idiom: break the ice; small talk | greeting, topic, pastime, weather, smile, awkward | The Breakfast Club (Festival, 1932) |
-| 849 | Life Story Timeline | passado e anos | Timeline, Childhood, Grew, Moved, Married, Retired | Roots (Tradição, 1976) |
-| 850 | Contar a vida | passado e anos | Timeline, Childhood, Grew, Moved, Married, Retired | Roots (Tradição, Brasil) |
-| 851 | By Boat, With a Rope | preposições with, without, by, for | palm tree, coconut, driftwood, lifejacket, signal fire, hut | Cast Away (Livro, 2000) |
-| 852 | Com ou sem | preposições with, without, by, for | palm tree, coconut, driftwood, lifejacket, signal fire, hut | Cast Away (Tradição, 1940–2022) |
-| 853 | Fractions and Percentages | fractions | Half, Quarter, Third, Percent, Whole, Number | Flatland (🔢 Livro, 1884) |
-| 854 | Frações | fractions | Half, Quarter, Third, Percent, Whole, Number | Flatland (Cidade, XXe siècle) |
-| 855 | Measurements | how + adjetivo | Tall, Long, Wide, Heavy, Deep, Meter | Vitruvian Man (📏 Livro, 1490) |
-| 856 | Qual o tamanho? | how + adjetivo | Tall, Long, Wide, Heavy, Deep, Meter | Vitruvian Man (📏 Livro, 1490) |
-| 857 | Long Ago, Just Now | recently / lately | Recently, Lately, Ago, Just, Moment, Past | The Time Traveler's Wife (⏳ Livro, 2003) |
-| 858 | Quando foi | recently / lately | Recently, Lately, Ago, Just, Moment, Past | The Time Traveler's Wife (Lenda, lenda) |
-| 859 | Dear Sam, Best Regards | escrever e-mails simples | cc, outbox, unread, font, cordially, junk mail | You've Got Mail (Contos, 1998) |
-| 860 | Escrever e-mails | escrever e-mails simples | cc, outbox, unread, font, cordially, junk mail | You've Got Mail (Batalha, 1862) |
-| 861 | Street Food Stall | would like / can I have | Vendor, Taco, Napkin, Spicy, Fresh, Tasty | Anthony Bourdain: Parts Unknown (🌮 Série, 2013) |
-| 862 | Pedindo | would like / can I have | Vendor, Taco, Napkin, Spicy, Fresh, Tasty | Anthony Bourdain: Parts Unknown (Lenda, lenda) |
-| 863 | Healthy Eating | more / less / fewer | Healthy, Sugar, Vegetables, More, Less, Fewer | Supersize Me (🥗 Livro, 2004) |
-| 864 | Mais, menos | more / less / fewer | Healthy, Sugar, Vegetables, More, Less, Fewer | Supersize Me (Peça, 20th century) |
-| 865 | Food from Around the World | nacionalidades | Italian, Japanese, Mexican, Indian, Brazilian, French | Eat Pray Love (🍝 Filme, 2006) |
-| 866 | De onde é? | nacionalidades | Italian, Japanese, Mexican, Indian, Brazilian, French | Eat Pray Love (Artista, 20th century) |
-| 867 | I Think, In My Opinion | dar opinião: I think, I agree, I disagree | opinion, jury, biased, idea, agree, disagree | 12 Angry Men (🎬 Filme, 1957) |
-| 868 | Opiniões | dar opinião: I think, I agree, I disagree | opinion, jury, biased, idea, agree, disagree | 12 Angry Men (Peça, 20th century) |
-| 869 | Booking a Tour | how long / how far | Tour, Guide, Book, Distance, Hour, Kilometer | Indiana Jones (🧭 Filme, 1981) |
-| 870 | Quanto tempo e quanto longe | how long / how far | Tour, Guide, Book, Distance, Hour, Kilometer | Indiana Jones (Peça, 20th century) |
-| 871 | Big Cities of the World | comparativos | Bigger, Cheaper, Noisier, Busier, Safer, Older | Tales of the City (🌉 Série, 1978) |
-| 872 | Comparando | comparativos | Bigger, Cheaper, Noisier, Busier, Safer, Older | Tales of the City (Peça, 20th century) |
-| 873 | School in the USA | mustn't | Principal, Classroom, Homework, Locker, Bell, Phone | Ferris Bueller: The Principal (🏫 Filme, 1986) |
-| 874 | Proibido | mustn't | Principal, Classroom, Homework, Locker, Bell, Phone | Ferris Bueller: The Principal (Filme, 20th century) |
-| 875 | Can I Help You? | shall I, can I, let me (ofertas) | security guard, display case, badge, corridor, alarm system, lock up | Night at the Museum (Artista, 2006) |
-| 876 | Oferecer ajuda | shall I, can I, let me (ofertas) | security guard, display case, badge, corridor, alarm system, lock up | Night at the Museum (Artista, 20th century) |
-| 877 | Could You Repeat That? | clarifying | Repeat, Slowly, Mean, Understand, Spell, Again | Rain Man (🚗 Filme, 1988) |
-| 878 | Não entendi | clarifying | Repeat, Slowly, Mean, Understand, Spell, Again | Rain Man (Livro, 20th century) |
-| 879 | Cancelling Plans | have just + particípio | Cancel, Reschedule, Unfortunately, Just, Sorry, Message | Waiting for Godot: No Show (⏳ Peça, 1953) |
-| 880 | Acabei de | have just + particípio | Cancel, Reschedule, Unfortunately, Just, Sorry, Message | Waiting for Godot: No Show (⏳ Peça, 1953) |
-| 881 | Signs and Notices | No + -ing | Sign, Smoking, Parking, Entrance, Exit, Notice | The Hitchhiker's Guide to the Galaxy (🪧 Série, 1979) |
-| 882 | Proibido | No + -ing | Sign, Smoking, Parking, Entrance, Exit, Notice | The Hitchhiker's Guide to the Galaxy (🪧 Série, 1979) |
-| 883 | Been or Gone? | been / gone | Been, Gone, Back, Away, Trip, Return | The Lion in Winter (👑 Filme, 1966) |
-| 884 | Been ou gone | been / gone | Been, Gone, Back, Away, Trip, Return | The Lion in Winter (Livro, 20th century) |
-| 885 | Gate Twelve, Please | vocabulário e frases de aeroporto | arrival, check-in desk, security check, aisle seat, window seat, duty-free | The Terminal (Livro, 2004) |
-| 886 | No aeroporto | vocabulário e frases de aeroporto | arrival, check-in desk, security check, aisle seat, window seat, duty-free | The Terminal (Instituição, 20th century) |
-| 887 | Farmers Market | quantities | Farmer, Basket, Pound, Dozen, Fruit, Fair | Charlotte's Web: The Fair (🕷️ Livro, 1952) |
-| 888 | Quantidades | quantities | Farmer, Basket, Pound, Dozen, Fruit, Fair | Charlotte's Web: The Fair (Livro, 20th century) |
-| 889 | Drive-Thru | one / ones | Order, Window, Burger, Fries, Straw, Sauce | American Graffiti (🚗 Filme, 1973) |
-| 890 | Um ou o outro | one / ones | Order, Window, Burger, Fries, Straw, Sauce | American Graffiti (Ciudad, s. XX) |
-| 891 | Neighborhood Tour | between / behind / in front of | Between, Behind, Corner, Block, Street, Opposite | Sesame Street (Escrita, 1969) |
-| 892 | Onde fica | between / behind / in front of | Between, Behind, Corner, Block, Street, Opposite | Sesame Street (Escrita, s. XX) |
-| 893 | I'm Worried About… | worried about | Worried, Afraid, Nervous, Safe, Hope, Calm | Anne Frank's Diary (📔 Livro, 1947) |
-| 894 | Preocupado com | worried about | Worried, Afraid, Nervous, Safe, Hope, Calm | Anne Frank's Diary (🏨 Edifício, hotel) |
-| 895 | Ago, Last, In | expressões de tempo: ago, last, in, next | last week, a while ago, currently, formerly, instantly, shortly | Midnight in Paris (🎬 Filme, 2011) |
-| 896 | Quando? | expressões de tempo: ago, last, in, next | last week, a while ago, currently, formerly, instantly, shortly | Midnight in Paris (🚌 Tradição, tradição) |
-| 897 | Driving Rules | must / mustn't | Speed, Limit, Seatbelt, Lane, License, Light | Mad Max (🛣️ Filme, 1979) |
-| 898 | Deve e não deve | must / mustn't | Speed, Limit, Seatbelt, Lane, License, Light | Mad Max (🗣️ Tradição, idioma) |
-| 899 | Road Signs | can't + ordens | Stop, Yield, Turn, Highway, Straight, Detour | Route 66 (👨‍🌾 Artista, 1946) |
-| 900 | Ordens e proibições | can't + ordens | Stop, Yield, Turn, Highway, Straight, Detour | Route 66 (🎸 Tradição, tradição) |
-| 901 | Passing the Test | if + present, will | Test, Pass, Fail, Instructor, Practice, Luck | The Italian Job (🚗 Filme, 1969) |
-| 902 | Se... então | if + present, will | Test, Pass, Fail, Instructor, Practice, Luck | The Italian Job (⏰ Tradição, tradição) |
-| 903 | Think Before You Post | can / could em pedidos | Post, Privacy, Share, Delete, Comment, Follower | The Scarlet Letter (📝 Livro, 1850) |
-| 904 | Pedidos educados | can / could em pedidos | Post, Privacy, Share, Delete, Comment, Follower | The Scarlet Letter (📝 Livro, 1850) |
-| 905 | What a Robot! | exclamações com What a / How | robotic, mechanical, metallic, incredible, spectacular, tiny | WALL-E (⛰️ Lugar, 2008) |
-| 906 | Que surpresa! | exclamações com What a / How | robotic, mechanical, metallic, incredible, spectacular, tiny | WALL-E (🛣️ Lugar, rota) |
-| 907 | Smile, Everyone! | going to | Smile, Pose, Selfie, Together, Ready, Click | Mona Lisa (Cidade, 1503) |
-| 908 | Vamos fazer | going to | Smile, Pose, Selfie, Together, Ready, Click | Mona Lisa (Cidade, 20th century) |
-| 909 | Made by Hand | past continuous | Pottery, Clay, Wheel, Vase, Handmade, Shape | Pottery Wheel (🏺 Livro, 1900) |
-| 910 | Estava fazendo | past continuous | Pottery, Clay, Wheel, Vase, Handmade, Shape | Pottery Wheel (🏺 Livro, 1900) |
-| 911 | Sweat It Out | How often e frequência | Boxing, Gloves, Ring, Daily, Weekly, Monthly | Million Dollar Baby (🥊 Filme, 2004) |
-| 912 | Com que frequência | How often e frequência | Boxing, Gloves, Ring, Daily, Weekly, Monthly | Million Dollar Baby (Cidade, 20th century) |
-| 913 | Help Wanted | look for / apply for | Job, Apply, Ranch, Worker, Wanted, Experience | Of Mice and Men (🪧 Livro, 1937) |
-| 914 | Procurar emprego | look for / apply for | Job, Apply, Ranch, Worker, Wanted, Experience | Of Mice and Men (Cidade, 20th century) |
-| 915 | Reading the Ad | must have / be able to | Advertisement, Requirement, Able, Salary, Hours, Apply | The Great Gatsby: The Newspaper (📰 Livro, 1925) |
-| 916 | Requisitos | must have / be able to | Advertisement, Requirement, Able, Salary, Hours, Apply | The Great Gatsby: The Newspaper (Cidade, 20th century) |
-| 917 | A Cup of Sugar | how much / how many; recipes | tablespoon, teaspoon, ounce, gram, serving, leftover | Chef (🎬 Filme, 2014) |
-| 918 | Quantidades | how much / how many; recipes | tablespoon, teaspoon, ounce, gram, serving, leftover | Chef (Cidade, 20th century) |
-| 919 | A Taste of the World | superlativos | Dish, Spicy, Sweet, Popular, Delicious, Favorite | Chef's Table (🌍 Livro, 2015) |
-| 920 | O mais... | superlativos | Dish, Spicy, Sweet, Popular, Delicious, Favorite | Chef's Table (🌍 Livro, 2015) |
-| 921 | A Balanced Plate | a little / a few | Plate, Vegetable, Fruit, Protein, Rice, Healthy | Alice: The Mad Tea Party (🥗 Livro, 1865) |
-| 922 | Um pouco / alguns | a little / a few | Plate, Vegetable, Fruit, Protein, Rice, Healthy | Alice: The Mad Tea Party (🥗 Livro, 1865) |
-| 923 | Tell Me About Your Job | profissões e perguntas de entrevista | paycheck, part-time, full-time, workplace, qualification, experience | The Pursuit of Happyness (🎬 Filme, 2006) |
-| 924 | Trabalho | profissões e perguntas de entrevista | paycheck, part-time, full-time, workplace, qualification, experience | The Pursuit of Happyness (Livro, século XIX) |
-| 925 | Physical Therapy | present perfect para progresso | Therapy, Exercise, Knee, Stronger, Pain, Recover | The Waterdance (💆 Livro, 1992) |
-| 926 | Já fiz | present perfect para progresso | Therapy, Exercise, Knee, Stronger, Pain, Recover | The Waterdance (Pintura, c. 1820) |
-| 927 | Review: Past | passado simples e used to | Yesterday, Ago, Used, Remember, Rainbow, Dream | The Wizard of Oz: Over the Rainbow (🌈 Livro, 1939) |
-| 928 | Passado | passado simples e used to | Yesterday, Ago, Used, Remember, Rainbow, Dream | The Wizard of Oz: Over the Rainbow (🌈 Livro, 1939) |
-| 929 | You Should Try It | recomendar com should e dar avaliações | stars, overrated, underrated, must-see, thrilling, gem | Paddington 2 (🎬 Filme, 2017) |
-| 930 | Recomendações | recomendar com should e dar avaliações | stars, overrated, underrated, must-see, thrilling, gem | Paddington 2 (Edifício, 1938) |
-| 931 | Review: Questions | do, does, did | Question, Answer, Interview, Director, Often, Why | The Hitchcock Interview (🎬 Livro, 1962) |
-| 932 | Perguntas | do, does, did | Question, Answer, Interview, Director, Often, Why | The Hitchcock Interview (Personagem, 1919) |
-| 933 | Full Conversation | tudo junto | Conversation, Night, Street, Story, Laugh, Together | Before Sunrise (Edifício, 1995) |
-| 934 | Tudo junto | tudo junto | Conversation, Night, Street, Story, Laugh, Together | Before Sunrise (Edifício, 1995) |
-| 935 | Keep It Going | perguntas de continuação | Really, Interesting, Tell, More, Wonderful, Too | Before Sunset (🗼 Filme, 2004) |
-| 936 | Continue | perguntas de continuação | Really, Interesting, Tell, More, Wonderful, Too | Before Sunset (🗼 Filme, 2004) |
-| 937 | A2 Farewell | look forward to + -ing | Graduation, Congratulations, Journey, Forward, Next, Level | The Wizard of Oz: Follow the Yellow Brick Road (🎓 Livro, 1939) |
-| 938 | Ansioso por | look forward to + -ing | Graduation, Congratulations, Journey, Forward, Next, Level | The Wizard of Oz: Follow the Yellow Brick Road (🎓 Livro, 1939) |
-| 939 | I Can Do It Now | revisão: passado, futuro, can, should | accomplishment, lesson, progress, goal, proud, destiny | Toy Story 4 (🎬 Filme, 2019) |
-| 940 | O que aprendi | revisão: passado, futuro, can, should | accomplishment, lesson, progress, goal, proud, destiny | Toy Story 4 (Canção, 1992) |
+Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
+
+| ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
+|---|---|---|---|---|---|
+| 467 | Family Tree | possessivo 's | Cousin, Aunt, Uncle, Grandparents, Niece, Relative | look, visit, share, live | This is my mother's cousin.; It is my grandparents' house.; Whose house is this? |
+| 468 | Posse | possessivo 's | Cousin, Aunt, Uncle, Grandparents, Niece, Relative | Cousin, Aunt, Uncle, Grandparents | This is my mother's cousin.; It is my grandparents' house.; Whose house is this? |
+| 469 | Birthday Party Plans | be going to para plano | Cake, Invitation, Decoration, Guest, Gift, Playlist | bake, invite, buy, plan | I'm going to bake a cake.; Mia is going to send it.; We are going to buy gifts. |
+| 470 | Planos | be going to para plano | Cake, Invitation, Decoration, Guest, Gift, Playlist | Cake, Invitation, Decoration, Guest | I'm going to bake a cake.; Mia is going to send it.; We are going to buy gifts. |
+| 471 | Born in… | was/were born | Parents, Hometown, Hospital, Born, Year, Country | ask, say, live, remember | I was born in Recife.; My parents were born in Chile.; Where were you born? |
+| 472 | Nasci em… | was/were born | Parents, Hometown, Hospital, Born, Year, Country | Parents, Hometown, Hospital, Born | I was born in Recife.; My parents were born in Chile.; Where were you born? |
+| 473 | A Weekend to Remember | passado simples regular | sightseeing, souvenir shop, tour guide, ticket booth, excursion, outing | visit, watch, cook, travel | I visited a museum.; Did you enjoy it?; We stayed home.; spend the weekend |
+| 474 | O que você fez | passado simples regular | sightseeing, souvenir shop, tour guide, ticket booth, excursion, outing | sightseeing, souvenir shop, tour guide, ticket booth | I visited a museum.; Did you enjoy it?; We stayed home.; spend the weekend |
+| 475 | Where I Grew Up | grew up, moved to | Small town, Farm, Neighbor, Quiet, Big city, Childhood | grow, move, talk, love | I grew up in a small town.; We moved to a big city.; Where did you grow up? |
+| 476 | Passado | grew up, moved to | Small town, Farm, Neighbor, Quiet, Big city, Childhood | Small town, Farm, Neighbor, Quiet | I grew up in a small town.; We moved to a big city.; Where did you grow up? |
+| 477 | Languages I Speak | good at, fluent in | Languages, Fluent, Native, Learn, Translate, Accent | speak, ask, study, practice | I speak two languages.; He speaks French.; She is good at English. |
+| 478 | Falar e saber | good at, fluent in | Languages, Fluent, Native, Learn, Translate, Accent | Languages, Fluent, Native, Learn | I speak two languages.; He speaks French.; She is good at English. |
+| 479 | Hobbies I Love | like/love + -ing | Hobby, Painting, Cooking, Hiking, Reading, Gardening | love, enjoy, like, cook | I love painting.; She enjoys cooking.; He likes hiking. |
+| 480 | Gostar de… | like/love + -ing | Hobby, Painting, Cooking, Hiking, Reading, Gardening | Hobby, Painting, Cooking, Hiking | I love painting.; She enjoys cooking.; He likes hiking. |
+| 481 | Join a Club | want to + verbo | Club, Member, Fee, Meeting, Free, Form | want, join, meet, fill | I want to join.; She wants to meet friends.; I want to join the club. |
+| 482 | Querer | want to + verbo | Club, Member, Fee, Meeting, Free, Form | Club, Member, Fee, Meeting | I want to join.; She wants to meet friends.; I want to join the club. |
+| 483 | Where Did You Go? | passado simples irregular | hamlet, fortress, ruins, lookout, scenery, valley | go, see, eat, buy | I went to the beach.; I saw a castle.; We ate bread.; go on a trip |
+| 484 | Uma viagem | passado simples irregular | hamlet, fortress, ruins, lookout, scenery, valley | hamlet, fortress, ruins, lookout | I went to the beach.; I saw a castle.; We ate bread.; go on a trip |
+| 485 | Describing Appearance | ordem dos adjetivos | Tall, Short, Thin, Beautiful, Young, Earring | look, wear, have, love | She is tall.; She has big eyes.; She wears a pearl earring. |
+| 486 | Aparência | ordem dos adjetivos | Tall, Short, Thin, Beautiful, Young, Earring | Tall, Short, Thin, Beautiful | She is tall.; She has big eyes.; She wears a pearl earring. |
+| 487 | Find My Friend | have + hair/olhos | Glasses, Hat, Stripes, Crowd, Next to, Hair | look, wear, see, run | He wears a hat.; He has short hair.; He is next to the tree. |
+| 488 | Como ele é? | have + hair/olhos | Glasses, Hat, Stripes, Crowd, Next to, Hair | Glasses, Hat, Stripes, Crowd | He wears a hat.; He has short hair.; He is next to the tree. |
+| 489 | Easy to Live With | adjetivo + to + verbo | Roommate, Messy, Tidy, Noisy, Easy, Chore | live, share, clean, wash | He is easy to live with.; My room is tidy.; He washes the dishes. |
+| 490 | Fácil de… | adjetivo + to + verbo | Roommate, Messy, Tidy, Noisy, Easy, Chore | Roommate, Messy, Tidy, Noisy | He is easy to live with.; My room is tidy.; He washes the dishes. |
+| 491 | Moving to a New City | there is/there are | Neighborhood, Shop, Market, Bus stop, Near, Corner | arrive, ask, walk, find | There is a shop on the corner.; There are two shops here.; Is there a market? |
+| 492 | Há… | there is/there are | Neighborhood, Shop, Market, Bus stop, Near, Corner | Neighborhood, Shop, Market, Bus stop | There is a shop on the corner.; There are two shops here.; Is there a market? |
+| 493 | I Used to Be Shy | used to | nickname, habit, scrapbook, timid, bashful, blush | live, play, remember, change | I used to live there.; Did you use to play?; I didn't use to like fish.; used to |
+| 494 | Antes eu fazia | used to | nickname, habit, scrapbook, timid, bashful, blush | nickname, habit, scrapbook, timid | I used to live there.; Did you use to play?; I didn't use to like fish.; used to |
+| 495 | Where Were You Last Night? | perguntas com was/were | Last night, Alone, Dark, Strange, Alibi, Truth | ask, call, tell, stay | Where were you last night?; Were you alone?; Yes, I was. |
+| 496 | Perguntas no passado | perguntas com was/were | Last night, Alone, Dark, Strange, Alibi, Truth | Last night, Alone, Dark, Strange | Where were you last night?; Were you alone?; Yes, I was. |
+| 497 | Weekend Stories | went, saw, ate | Umbrella, Kite, Sky, Adventure, Magic, Nanny | go, take, see, eat | We went to the park.; She took her umbrella.; We saw a kite. |
+| 498 | Passado irregular | went, saw, ate | Umbrella, Kite, Sky, Adventure, Magic, Nanny | Umbrella, Kite, Sky, Adventure | We went to the park.; She took her umbrella.; We saw a kite. |
+| 499 | Irregular Verbs | passado irregular | Bought, Came, Got, Had, Gave, Made | buy, come, give, make | I bought a pen.; She came early.; He gave me a gift. |
+| 500 | Mais irregulares | passado irregular | Bought, Came, Got, Had, Gave, Made | Bought, Came, Got, Had | I bought a pen.; She came early.; He gave me a gift. |
+| 501 | Vacation Story | for + duração | Trip, Stayed, Ticket, Days, Weeks, How long | stay, buy, travel, visit | I stayed for five days.; How long did you stay?; We stayed for two weeks. |
+| 502 | Por quanto tempo | for + duração | Trip, Stayed, Ticket, Days, Weeks, How long | Trip, Stayed, Ticket, Days | I stayed for five days.; How long did you stay?; We stayed for two weeks. |
+| 503 | Once Upon a Time | there was/there were | Once upon a time, Stranger, Castle, One day, Rose, Beast | tell, knock, take, live | Once upon a time, there was a girl.; One day, a stranger came.; There was a castle. |
+| 504 | Abrir uma história | there was/there were | Once upon a time, Stranger, Castle, One day, Rose, Beast | Once upon a time, Stranger, Castle, One day | Once upon a time, there was a girl.; One day, a stranger came.; There was a castle. |
+| 505 | Bigger, Better, Faster | comparativos | bigger, smaller, faster, slower, stronger, smarter | compare, win, lift, grow | An elephant is bigger than a dog.; A rabbit is faster than a turtle.; It is more patient than a fox.; bigger than |
+| 506 | Comparar | comparativos | bigger, smaller, faster, slower, stronger, smarter | bigger, smaller, faster, slower | An elephant is bigger than a dog.; A rabbit is faster than a turtle.; It is more patient than a fox.; bigger than |
+| 507 | Around the Neighborhood | Comparar com -er than | laundry, barber, florist, butcher, bookstore, grocery | pick up, drop off, deliver, trim | What are your hours?; We're closing soon.; Ready in an hour. |
+| 508 | Comparar com -er than | Comparar com -er than | laundry, barber, florist, butcher, bookstore, grocery | laundry, barber, florist, butcher | What are your hours?; We're closing soon.; Ready in an hour. |
+| 509 | When We Were Kids | used to + verbo base | Used to be, Downtown, Changed, Empty, Crowded, Now | walk, change, live, like | This street used to be quiet.; Now it is crowded.; We lived downtown. |
+| 510 | Antes e agora | used to + verbo base | Used to be, Downtown, Changed, Empty, Crowded, Now | Used to be, Downtown, Changed, Empty | This street used to be quiet.; Now it is crowded.; We lived downtown. |
+| 511 | First Day | sequência: first, then, after | First, Then, After that, Finally, Classmate, Nervous | meet, sit, read, play | First, I met the teacher.; Then, I sat down.; Finally, I made a friend. |
+| 512 | Sequência | sequência: first, then, after | First, Then, After that, Finally, Classmate, Nervous | First, Then, After that, Finally | First, I met the teacher.; Then, I sat down.; Finally, I made a friend. |
+| 513 | New Colleagues | past simple + conectores | Colleague, Desk, Boss, Meeting, Office, Coffee break | meet, work, arrive, welcome | This is my colleague.; We had a meeting yesterday.; Leo came late. |
+| 514 | No trabalho | past simple + conectores | Colleague, Desk, Boss, Meeting, Office, Coffee break | Colleague, Desk, Boss, Meeting | This is my colleague.; We had a meeting yesterday.; Leo came late. |
+| 515 | The Best of All | superlativos | chef, gourmet, sizzle, flavor, delicacy, critic | taste, cook, dream, prove | It is the best dish.; She is the smallest.; It is the most expensive.; the best of all |
+| 516 | O melhor de todos | superlativos | chef, gourmet, sizzle, flavor, delicacy, critic | chef, gourmet, sizzle, flavor | It is the best dish.; She is the smallest.; It is the most expensive.; the best of all |
+| 517 | Renting an Apartment | is/are included | Rent, Included, Deposit, Lease, Furnished, Move in | rent, pay, sign, include | Is water included?; Are utilities included?; Please sign the lease. |
+| 518 | Está incluído? | is/are included | Rent, Included, Deposit, Lease, Furnished, Move in | Rent, Included, Deposit, Lease | Is water included?; Are utilities included?; Please sign the lease. |
+| 519 | Landlord and Tenant | could you + pedido | Landlord, Tenant, Bill, Repair, Leak, Problem | call, send, check, fix | Could you send someone?; Could you check the bill?; There is a leak. |
+| 520 | Could you…? | could you + pedido | Landlord, Tenant, Bill, Repair, Leak, Problem | Landlord, Tenant, Bill, Repair | Could you send someone?; Could you check the bill?; There is a leak. |
+| 521 | Every Week, Every Month | once, twice, three times | Once, Twice, Times, Week, Month, Every | go, swim, run, practice | I go once a week.; She swims twice a week.; We run three times a week. |
+| 522 | Quantas vezes | once, twice, three times | Once, Twice, Times, Week, Month, Every | Once, Twice, Times, Week | I go once a week.; She swims twice a week.; We run three times a week. |
+| 523 | I Used to Live There | used to + lugar | Cabin, Lake, Different, Prairie, Horse, Candle | live, use, have, love | We used to live in a cabin.; There was a lake.; We had one horse. |
+| 524 | Costumava morar | used to + lugar | Cabin, Lake, Different, Prairie, Horse, Candle | Cabin, Lake, Different, Prairie | We used to live in a cabin.; There was a lake.; We had one horse. |
+| 525 | I Will, I Won't | futuro com will | fortune teller, robot, prediction, vow, flying car, planet | predict, promise, invent, travel | Robots will clean houses.; It won't rain.; Will you visit Mars?; make a promise |
+| 526 | O futuro | futuro com will | fortune teller, robot, prediction, vow, flying car, planet | fortune teller, robot, prediction, vow | Robots will clean houses.; It won't rain.; Will you visit Mars?; make a promise |
+| 527 | If It Rains… | if + will | If, Will, Stay in, Umbrella, Rain, Sunny | look, take, dance, stay | If it rains, I will stay home.; If it rains, I will stay. |
+| 528 | Se… | if + will | If, Will, Stay in, Umbrella, Rain, Sunny | If, Will, Stay in, Umbrella | If it rains, I will stay home.; If it rains, I will stay. |
+| 529 | If You Heat Ice | if + present, present | Heat, Melt, Boil, Freeze, Ice, Water | heat, melt, freeze, boil | If you heat ice, it melts.; Water boils at 100 degrees.; If you freeze water, it turns to ice. |
+| 530 | Fatos com if | if + present, present | Heat, Melt, Boil, Freeze, Ice, Water | Heat, Melt, Boil, Freeze | If you heat ice, it melts.; Water boils at 100 degrees.; If you freeze water, it turns to ice. |
+| 531 | Too Much, Too Many | too much / too many | Chocolate, Popcorn, Donut, Waffle, Crumb, Raisin | crunch, waste, stuff, gobble | That's too much!; I'm stuffed!; Slow down! |
+| 532 | Demais: too much ou too many? | too much / too many | Chocolate, Popcorn, Donut, Waffle, Crumb, Raisin | Chocolate, Popcorn, Donut, Waffle | That's too much!; I'm stuffed!; Slow down! |
+| 533 | My Big Family | O mais … de todos | nephew, grandson, granddaughter, babysit, tease, bicker | babysit, tease, bicker, nephew | Pull up a chair.; Save room for dessert.; It runs in the family. |
+| 534 | O mais … de todos | O mais … de todos | nephew, grandson, granddaughter, babysit, tease, bicker | nephew, grandson, granddaughter, babysit | Pull up a chair.; Save room for dessert.; It runs in the family. |
+| 535 | You're One of Us Now | O mais … de todos | in-laws, newborn, toddler, reunite, cuddle | reunite, cuddle, in-laws, newborn | You're one of us now.; We're one big family. |
+| 536 | O mais … de todos | O mais … de todos | in-laws, newborn, toddler, reunite, cuddle | in-laws, newborn, toddler, reunite | You're one of us now.; We're one big family. |
+| 537 | I'm Going to Travel | there was / there were | hostel, hot-air balloon, hiking boots, rainforest, safari, raft | plan, pack, fly, follow | I'm going to travel.; I am going to fly.; He isn't going to come.; be going to |
+| 538 | Meus planos | there was / there were | hostel, hot-air balloon, hiking boots, rainforest, safari, raft | hostel, hot-air balloon, hiking boots, rainforest | I'm going to travel.; I am going to fly.; He isn't going to come.; be going to |
+| 539 | A Darker, Brighter Shirt | comparativo | Darker, Brighter, Lighter, Color, Shade, Match | want, compare, match, look | I want a darker shirt.; This is brighter than that.; What color do you like? |
+| 540 | Comparar cores | comparativo | Darker, Brighter, Lighter, Color, Shade, Match | Darker, Brighter, Lighter, Color | I want a darker shirt.; This is brighter than that.; What color do you like? |
+| 541 | Some, Any, No | some / any / no | Some, Any, No, Pot, Vegetable, Stone | make, add, cook, eat | I have some carrots.; Do you have any potatoes?; We have no bread. |
+| 542 | Some, any, no | some / any / no | Some, Any, No, Pot, Vegetable, Stone | Some, Any, No, Pot | I have some carrots.; Do you have any potatoes?; We have no bread. |
+| 543 | Much, Many, A Lot Of | past continuous: I was cooking when… | How many, How much, A lot of, Many, Much, Hungry | want, ask, eat, laugh | How many apples do you want?; How much milk do you need?; I eat a lot of fruit. |
+| 544 | Quanto? | past continuous: I was cooking when… | How many, How much, A lot of, Many, Much, Hungry | How many, How much, A lot of, Many | How many apples do you want?; How much milk do you need?; I eat a lot of fruit. |
+| 545 | A Few, A Little | a few / a little | A few, A little, Add, Flour, Salt, Wheat | bake, add, need, plant | I need a few eggs.; Add a little water.; Put in a little salt. |
+| 546 | Poucos e pouco | a few / a little | A few, A little, Add, Flour, Salt, Wheat | A few, A little, Add, Flour | I need a few eggs.; Add a little water.; Put in a little salt. |
+| 547 | I Enjoy Cooking | past continuous + past simple: when / while | Enjoy, Finish, Keep, Run, Cookie, Catch | enjoy, finish, keep, catch | I enjoy running.; She finishes reading.; Keep going! |
+| 548 | Verbo + -ing | past continuous + past simple: when / while | Enjoy, Finish, Keep, Run, Cookie, Catch | Enjoy, Finish, Keep, Run | I enjoy running.; She finishes reading.; Keep going! |
+| 549 | I Want to Go | verbo + to | Wish, Want to, Need to, Decide to, Coin, Well | want, need, throw, decide | I want to travel.; I need to save money.; She decided to go. |
+| 550 | Verbo + to | verbo + to | Wish, Want to, Need to, Decide to, Coin, Well | Wish, Want to, Need to, Decide to | I want to travel.; I need to save money.; She decided to go. |
+| 551 | Have to, Must, Should | have to, must, should | cape, villain, superhero, secret agent, spy, advice | hide, obey, protect, warn | You must hide your powers.; You should rest.; I have to go.; have to |
+| 552 | Regras e conselhos | have to, must, should | cape, villain, superhero, secret agent, spy, advice | cape, villain, superhero, secret agent | You must hide your powers.; You should rest.; I have to go.; have to |
+| 553 | I'd Rather Have Tea | would rather | Rather, Tea, Coffee, Kettle, Sugar, Cup | prefer, boil, pour, stir | I'd rather have tea.; Tea or coffee?; No sugar, please. |
+| 554 | Preferências | would rather | Rather, Tea, Coffee, Kettle, Sugar, Cup | Rather, Tea, Coffee, Kettle | I'd rather have tea.; Tea or coffee?; No sugar, please. |
+| 555 | Mine, Yours, Ours | mine / yours / his / hers | Mine, Yours, His, Hers, Ours, Theirs | find, ask, put, thank | This bag is mine.; Is this phone yours?; The coat is his. |
+| 556 | De quem é? | mine / yours / his / hers | Mine, Yours, His, Hers, Ours, Theirs | Mine, Yours, His, Hers | This bag is mine.; Is this phone yours?; The coat is his. |
+| 557 | Do It Yourself | myself, yourself | Myself, Yourself, Himself, Herself, Help yourself, Ourselves | bake, teach, build, help | I did it by myself.; She taught herself.; He built it himself. |
+| 558 | Reflexivos | myself, yourself | Myself, Yourself, Himself, Herself, Help yourself, Ourselves | Myself, Yourself, Himself, Herself | I did it by myself.; She taught herself.; He built it himself. |
+| 559 | Someone, Anyone, Nobody | someone / anyone / nobody | Someone, Anyone, Nobody, Everyone, Island, Mystery | arrive, ask, know, love | Someone is in the hall.; Is there anyone here?; Nobody knows the answer. |
+| 560 | Alguém, ninguém | someone / anyone / nobody | Someone, Anyone, Nobody, Everyone, Island, Mystery | Someone, Anyone, Nobody, Everyone | Someone is in the hall.; Is there anyone here?; Nobody knows the answer. |
+| 561 | Both, Either, Neither | both / either / neither | Both, Either, Neither, Door, Choice, Tiger | choose, open, explain, joke | Both doors are closed.; You can open either door.; Neither door is safe. |
+| 562 | Duas opções | both / either / neither | Both, Either, Neither, Door, Choice, Tiger | Both, Either, Neither, Door | Both doors are closed.; You can open either door.; Neither door is safe. |
+| 563 | Could You, May I? | pedidos educados com could e may | considerate, mannerly, obliging, please, accommodating, request | bring, ask, open, pass | Could you bring the tea?; May I ask a favor?; Would you mind waiting?; could you |
+| 564 | Pedidos educados | pedidos educados com could e may | considerate, mannerly, obliging, please, accommodating, request | considerate, mannerly, obliging, please | Could you bring the tea?; May I ask a favor?; Would you mind waiting?; could you |
+| 565 | Through, Across, Along | preposições de movimento | Through, Across, Along, Over, Under, Sea | walk, sail, swim, fly | We sail through the storm.; He swims across the river.; We walk along the beach. |
+| 566 | Movimento | preposições de movimento | Through, Across, Along, Over, Under, Sea | Through, Across, Along, Over | We sail through the storm.; He swims across the river.; We walk along the beach. |
+| 567 | Get Up, Get Ready | get up / get ready | Get up, Get ready, Get home, Alarm, Shower, Routine | get up, take, cook, ring | I get up at seven.; I get ready for work.; I get home at six. |
+| 568 | Rotina com get | get up / get ready | Get up, Get ready, Get home, Alarm, Shower, Routine | Get up, Get ready, Get home, Alarm | I get up at seven.; I get ready for work.; I get home at six. |
+| 569 | Have You Ever? | present perfect de experiência | experience, bucket list, ocean, scuba, skydive, bungee | climb, swim, try, jump | Have you ever seen the ocean?; I have never tried it.; She has climbed a mountain.; have you ever |
+| 570 | Já fiz | present perfect de experiência | experience, bucket list, ocean, scuba, skydive, bungee | experience, bucket list, ocean, scuba | Have you ever seen the ocean?; I have never tried it.; She has climbed a mountain.; have you ever |
+| 571 | Go On, Come Back | go / come + particle | Come in, Come back, Go out, Go away, Welcome, Home | come, shout, stay, laugh | Please come in.; When will you come back?; Let's go out tonight. |
+| 572 | Go e come | go / come + particle | Come in, Come back, Go out, Go away, Welcome, Home | Come in, Come back, Go out, Go away | Please come in.; When will you come back?; Let's go out tonight. |
+| 573 | Happy, Sad, Angry | feel + adjetivo | Happy, Sad, Angry, Scared, Excited, Feeling | feel, lose, ask, talk | I feel happy.; She feels sad.; He is angry at me. |
+| 574 | Sentir | feel + adjetivo | Happy, Sad, Angry, Scared, Excited, Feeling | Happy, Sad, Angry, Scared | I feel happy.; She feels sad.; He is angry at me. |
+| 575 | Furniture | in / on / under / next to | Table, Bed, Closet, Shelf, Lamp, Mirror | show, put, sleep, look | The lamp is on the table.; The bed is under the window.; My clothes are in the closet. |
+| 576 | Onde está? | in / on / under / next to | Table, Bed, Closet, Shelf, Lamp, Mirror | Table, Bed, Closet, Shelf | The lamp is on the table.; The bed is under the window.; My clothes are in the closet. |
+| 577 | Fixing Things | present continuous | Fix, Sink, Plumber, Tool, Pipe, Water | leak, call, use, help | The sink is leaking.; We are calling the plumber.; He is using a tool. |
+| 578 | Agora | present continuous | Fix, Sink, Plumber, Tool, Pipe, Water | Fix, Sink, Plumber, Tool | The sink is leaking.; We are calling the plumber.; He is using a tool. |
+| 579 | Wait For Me | verbo + preposição: wait for, listen to, look for, talk about | avenue, boulevard, plaza, kiosk, pigeon, stroller | wait for, listen to, look for, talk about | Wait for me.; I listen to music.; We talk about the story.; wait for |
+| 580 | Verbo e preposição | verbo + preposição: wait for, listen to, look for, talk about | avenue, boulevard, plaza, kiosk, pigeon, stroller | avenue, boulevard, plaza, kiosk | Wait for me.; I listen to music.; We talk about the story.; wait for |
+| 581 | Moving Out | will para decisões | Pack, Truck, Boxes, Move, Address, Goodbye | pack, arrive, say, miss | We will pack tonight.; I will tell you soon.; I won't forget. |
+| 582 | Decisões | will para decisões | Pack, Truck, Boxes, Move, Address, Goodbye | Pack, Truck, Boxes, Move | We will pack tonight.; I will tell you soon.; I won't forget. |
+| 583 | Decorating My Room | look + adjetivo | Looks, Cozy, Wall, Curtain, Carpet, Colorful | show, look, feel, add | The room looks nice.; It feels very cozy.; The wall is yellow. |
+| 584 | Parece… | look + adjetivo | Looks, Cozy, Wall, Curtain, Carpet, Colorful | Looks, Cozy, Wall, Curtain | The room looks nice.; It feels very cozy.; The wall is yellow. |
+| 585 | Clothes Shopping | past continuous + past simple: when / while | Size, Tight, Try on, Fitting room, Small, Large | try, ask, fit, take | This shirt is too small.; Can I try on this shirt?; Do you have a large? |
+| 586 | Roupa e tamanho | past continuous + past simple: when / while | Size, Tight, Try on, Fitting room, Small, Large | Size, Tight, Try on, Fitting room | This shirt is too small.; Can I try on this shirt?; Do you have a large? |
+| 587 | Sizes and Fit | enough | Fit, Perfectly, Next, Enough, Slipper, Half size | try, fit, buy, walk | This shoe doesn't fit.; It is big enough.; Try the next size. |
+| 588 | Serve ou não | enough | Fit, Perfectly, Next, Enough, Slipper, Half size | Fit, Perfectly, Next, Enough | This shoe doesn't fit.; It is big enough.; Try the next size. |
+| 589 | Cheaper or More Expensive? | Comparar com more … than | clearance, markdown, overpriced, afford, charge, compare | afford, charge, compare, clearance | That's a rip-off!; You get what you pay for.; Shop around. |
+| 590 | Comparar com more … than | Comparar com more … than | clearance, markdown, overpriced, afford, charge, compare | clearance, markdown, overpriced, afford | That's a rip-off!; You get what you pay for.; Shop around. |
+| 591 | Out of My Price Range | Comparar com more … than | affordable, pricey, freebie, undercut, slash | undercut, slash, affordable, pricey | It's on the house.; It's out of my price range. |
+| 592 | Comparar com more … than | Comparar com more … than | affordable, pricey, freebie, undercut, slash | affordable, pricey, freebie, undercut | It's on the house.; It's out of my price range. |
+| 593 | Wait Until It's Ready | until, while e during | mixing bowl, baking tray, timer, oven mitt, cookbook, measuring cup | wait, bake, taste, stir | Wait until the oven is hot.; While the sauce cooks, cut the bread.; Don't talk during the show.; until |
+| 594 | Até quando? | until, while e during | mixing bowl, baking tray, timer, oven mitt, cookbook, measuring cup | mixing bowl, baking tray, timer, oven mitt | Wait until the oven is hot.; While the sauce cooks, cut the bread.; Don't talk during the show.; until |
+| 595 | Returning Items | I'd like to | Return, Receipt, Refund, Exchange, Broken, Wrong | return, show, want, help | I'd like to return this.; Do you have the receipt?; The cup is broken. |
+| 596 | Devolver | I'd like to | Return, Receipt, Refund, Exchange, Broken, Wrong | Return, Receipt, Refund, Exchange | I'd like to return this.; Do you have the receipt?; The cup is broken. |
+| 597 | Online Shopping | should arrive | Package, Order, Delivery, Arrive, Track, Free shipping | order, track, arrive, open | It should arrive on Monday.; I can track my order.; They offer free shipping. |
+| 598 | Deve chegar | should arrive | Package, Order, Delivery, Arrive, Track, Free shipping | Package, Order, Delivery, Arrive | It should arrive on Monday.; I can track my order.; They offer free shipping. |
+| 599 | Gift Shopping | object pronouns | Gift, Wrap, Her, Him, Flower, Birthday | buy, wrap, love, give | This gift is for her.; I bought a book for him.; Can you wrap it? |
+| 600 | Para quem? | object pronouns | Gift, Wrap, Her, Him, Flower, Birthday | Gift, Wrap, Her, Him | This gift is for her.; I bought a book for him.; Can you wrap it? |
+| 601 | Give Up, Carry On | phrasal verbs: give up, carry on, keep going | champion, trainer, boxer, fight, punching bag, determination | give up, carry on, keep going, work out | Don't give up!; Carry on!; I work out every day.; give up |
+| 602 | Não desista | phrasal verbs: give up, carry on, keep going | champion, trainer, boxer, fight, punching bag, determination | champion, trainer, boxer, fight | Don't give up!; Carry on!; I work out every day.; give up |
+| 603 | Following a Recipe | imperativos | Mix, Bake, Oven, Add, Flour, Stir | mix, add, bake, stir | Mix the eggs and sugar.; Turn on the oven.; Add two cups of flour. |
+| 604 | Receita é ordem | imperativos | Mix, Bake, Oven, Add, Flour, Stir | Mix, Bake, Oven, Add | Mix the eggs and sugar.; Turn on the oven.; Add two cups of flour. |
+| 605 | Cooking Verbs | then, after, until | Chop, Fry, Boil, Then, After, Until | chop, fry, boil, taste | First, chop the onion.; Then fry it in oil.; Boil the beans until they are soft. |
+| 606 | Passo a passo | then, after, until | Chop, Fry, Boil, Then, After, Until | Chop, Fry, Boil, Then | First, chop the onion.; Then fry it in oil.; Boil the beans until they are soft. |
+| 607 | Grocery List | containers | Bottle, Box, Can, Bag, List, Ham | write, buy, carry, need | I need a bottle of water.; Buy a box of cereal.; A can of beans. |
+| 608 | Embalagens | containers | Bottle, Box, Can, Bag, List, Ham | Bottle, Box, Can, Bag | I need a bottle of water.; Buy a box of cereal.; A can of beans. |
+| 609 | Ordering a Meal | I'll have / I'd like | Have, Drink, Chicken, Menu, More, Soup | order, bring, drink, eat | I'll have the chicken.; I'd like a soup.; What would you like to drink? |
+| 610 | Fazendo o pedido | I'll have / I'd like | Have, Drink, Chicken, Menu, More, Soup | Have, Drink, Chicken, Menu | I'll have the chicken.; I'd like a soup.; What would you like to drink? |
+| 611 | Sing Better, Dance Faster | advérbios comparativos: better, faster, more carefully | choir, duet, tap dance, rhythm, talent show, performer | sing, dance, practice, run | Don runs faster than Kathy.; Please speak more slowly.; You dance better than me.; better than |
+| 612 | Mais rápido, mais devagar | advérbios comparativos: better, faster, more carefully | choir, duet, tap dance, rhythm, talent show, performer | choir, duet, tap dance, rhythm | Don runs faster than Kathy.; Please speak more slowly.; You dance better than me.; better than |
+| 613 | Special Diets | contáveis e incontáveis: some / any / much / many | Vegan, Allergic, Nuts, Any, Without, Cheese | eat, ask, avoid, order | I am vegan.; Do you have any vegan dishes?; I am allergic to nuts. |
+| 614 | Sem nada disso | contáveis e incontáveis: some / any / much / many | Vegan, Allergic, Nuts, Any, Without, Cheese | Vegan, Allergic, Nuts, Any | I am vegan.; Do you have any vegan dishes?; I am allergic to nuts. |
+| 615 | Tipping | should | Tip, Owe, Percent, Service, Total, Leave | leave, owe, pay, thank | You should leave a tip.; How much do I owe you?; Twenty percent is common. |
+| 616 | O que devo fazer | should | Tip, Owe, Percent, Service, Total, Leave | Tip, Owe, Percent, Service | You should leave a tip.; How much do I owe you?; Twenty percent is common. |
+| 617 | Symptoms | have / hurt / feel | Headache, Fever, Hurt, Feel, Cough, Sick | have, hurt, feel, rest | I have a headache.; She has a fever.; My throat hurts. |
+| 618 | Sintomas | have / hurt / feel | Headache, Fever, Hurt, Feel, Cough, Sick | Headache, Fever, Hurt, Feel | I have a headache.; She has a fever.; My throat hurts. |
+| 619 | At the Pharmacy | need / how often | Cough, Pill, Cream, Pharmacy, Often, Need | need, take, put, ask | I need something for a cough.; Take one pill.; How often do I take it? |
+| 620 | Na farmácia | need / how often | Cough, Pill, Cream, Pharmacy, Often, Need | Cough, Pill, Cream, Pharmacy | I need something for a cough.; Take one pill.; How often do I take it? |
+| 621 | I'm Meeting Friends Tonight | presente contínuo para combinados | meet-up, hangout, get-together, double-booked, rain check, rsvp | meet, have, see, visit | I'm meeting a friend tonight.; What are you doing tonight?; I'm busy on Monday.; make plans |
+| 622 | Combinados | presente contínuo para combinados | meet-up, hangout, get-together, double-booked, rain check, rsvp | meet-up, hangout, get-together, double-booked | I'm meeting a friend tonight.; What are you doing tonight?; I'm busy on Monday.; make plans |
+| 623 | Healthy Habits | frequency adverbs | Often, Rarely, Skip, Usually, Always, Never | walk, swim, skip, drink | I often walk in the park.; She always drinks water.; He never eats fast food. |
+| 624 | Frequência | frequency adverbs | Often, Rarely, Skip, Usually, Always, Never | Often, Rarely, Skip, Usually | I often walk in the park.; She always drinks water.; He never eats fast food. |
+| 625 | Sports Injury | during × for | During, Knee, Broke, Hurt, Game, Ankle | play, fall, break, rest | I got hurt during the game.; I rested for two weeks.; He broke his arm. |
+| 626 | Durante × por | during × for | During, Knee, Broke, Hurt, Game, Ankle | During, Knee, Broke, Hurt | I got hurt during the game.; I rested for two weeks.; He broke his arm. |
+| 627 | At the Dentist | plurais irregulares | Teeth, Cavity, Brush, Floss, Mouth, Smile | brush, open, use, smile | Brush your teeth.; You have one cavity.; Use floss every night. |
+| 628 | Um dente, dois dentes | plurais irregulares | Teeth, Cavity, Brush, Floss, Mouth, Smile | Teeth, Cavity, Brush, Floss | Brush your teeth.; You have one cavity.; Use floss every night. |
+| 629 | Medicine Labels | had better (not) | Label, Food, Away, Dose, Children, Warning | read, keep, take, walk | Read the label first.; Take it with food.; Keep it away from children. |
+| 630 | É melhor não | had better (not) | Label, Food, Away, Dose, Children, Warning | Label, Food, Away, Dose | Read the label first.; Take it with food.; Keep it away from children. |
+| 631 | Job Ad | required / optional | Required, Optional, Resume, Apply, Skills, Salary | read, apply, send, need | A degree is required.; Experience is optional.; Please apply online. |
+| 632 | Exigido ou opcional | required / optional | Required, Optional, Resume, Apply, Skills, Salary | Required, Optional, Resume, Apply | A degree is required.; Experience is optional.; Please apply online. |
+| 633 | Why Don't We? | sugestões | magnifying glass, clue, secret passage, eerie, suggestion, trapdoor | suggest, search, solve, hide | Why don't we split up?; Let's take a flashlight.; How about looking there?; why don't we |
+| 634 | Sugestões | sugestões | magnifying glass, clue, secret passage, eerie, suggestion, trapdoor | magnifying glass, clue, secret passage, eerie | Why don't we split up?; Let's take a flashlight.; How about looking there?; why don't we |
+| 635 | Job Interview | present perfect | Worked, Team, Interview, Learn, Strength, Hire | work, learn, shake, hire | I have worked in sales.; I work well in a team.; I learn quickly. |
+| 636 | Já fiz | present perfect | Worked, Team, Interview, Learn, Strength, Hire | Worked, Team, Interview, Learn | I have worked in sales.; I work well in a team.; I learn quickly. |
+| 637 | Work Routine | present simple + horário | Start, Finish, Noon, Lunch, Shift, Break | start, finish, eat, take | I start work at eight.; He finishes at five.; We eat at noon. |
+| 638 | Horário | present simple + horário | Start, Finish, Noon, Lunch, Shift, Break | Start, Finish, Noon, Lunch | I start work at eight.; He finishes at five.; We eat at noon. |
+| 639 | Work Emails | email phrases | Dear, Attached, Regards, Send, Subject, Reply | write, attach, send, reply | Dear Theo,; The file is attached.; Best regards, Vincent |
+| 640 | E-mail simples | email phrases | Dear, Attached, Regards, Send, Subject, Reply | Dear, Attached, Regards, Send | Dear Theo,; The file is attached.; Best regards, Vincent |
+| 641 | Some, Any, A Lot | quantificadores | licorice, jelly beans, conveyor belt, vat, cocoa bean, lollipop | eat, share, count, want | Is there any chocolate?; I have some candy.; There are many sweets.; a lot of |
+| 642 | Quanto tem | quantificadores | licorice, jelly beans, conveyor belt, vat, cocoa bean, lollipop | licorice, jelly beans, conveyor belt, vat | Is there any chocolate?; I have some candy.; There are many sweets.; a lot of |
+| 643 | Taking a Day Off | Can I / May I | Day off, Leave early, Beach, Ask, Appointment, Tomorrow | ask, leave, go, have | Can I have a day off?; May I leave early?; I have an appointment. |
+| 644 | Posso? | Can I / May I | Day off, Leave early, Beach, Ask, Appointment, Tomorrow | Day off, Leave early, Beach, Ask | Can I have a day off?; May I leave early?; I have an appointment. |
+| 645 | Booking a Flight | datas e preposições de tempo | Flight, Round trip, Direct, Book, Seat, Ticket | book, fly, pay, choose | I want to book a flight.; I want a round trip ticket.; Is it a direct flight? |
+| 646 | Datas | datas e preposições de tempo | Flight, Round trip, Direct, Book, Seat, Ticket | Flight, Round trip, Direct, Book | I want to book a flight.; I want a round trip ticket.; Is it a direct flight? |
+| 647 | Airport Check-in | Would you like | Check in, Boarding pass, Gate, Passport, Suitcase, Window | check, show, put, walk | I'd like to check in.; Here is your boarding pass.; Your gate is B12. |
+| 648 | Você gostaria? | Would you like | Check in, Boarding pass, Gate, Passport, Suitcase, Window | Check in, Boarding pass, Gate, Passport | I'd like to check in.; Here is your boarding pass.; Your gate is B12. |
+| 649 | Lost Luggage | passado: lost / left | Luggage, Form, Left, Lost, Describe, Claim | lose, fill, describe, find | I lost my suitcase.; I left it on the plane.; Please fill out this form. |
+| 650 | Passado irregular | passado: lost / left | Luggage, Form, Left, Lost, Describe, Claim | Luggage, Form, Left, Lost | I lost my suitcase.; I left it on the plane.; Please fill out this form. |
+| 651 | Security and Boarding | phrasal verbs | Take off, Turn off, Belt, Security, Board, Pocket | take, turn, board, wave | Please take off your shoes.; Turn off your phone.; Fasten your seat belt. |
+| 652 | Verbos com partículas | phrasal verbs | Take off, Turn off, Belt, Security, Board, Pocket | Take off, Turn off, Belt, Security | Please take off your shoes.; Turn off your phone.; Fasten your seat belt. |
+| 653 | Delayed Flight | present perfect com just / already / yet | Delayed, Wait, Apologize, Hour, Weather, Update | wait, apologize, read, update | Your flight will be delayed.; Please wait at the gate.; We apologize for the delay. |
+| 654 | Vai ser atrasado | present perfect com just / already / yet | Delayed, Wait, Apologize, Hour, Weather, Update | Delayed, Wait, Apologize, Hour | Your flight will be delayed.; Please wait at the gate.; We apologize for the delay. |
+| 655 | Hold On, Call Back | phrasal verbs e frases ao telefone | dial tone, answering machine, busy signal, receiver, area code, redial | hang up, hold on, call back, pick up | Please hold on.; Can I take a message?; Please call me back.; hold on |
+| 656 | Ao telefone | phrasal verbs e frases ao telefone | dial tone, answering machine, busy signal, receiver, area code, redial | dial tone, answering machine, busy signal, receiver | Please hold on.; Can I take a message?; Please call me back.; hold on |
+| 657 | Hotel Reservation | for + nights | Nights, Single, Double, Check out, Room, Price | book, pay, take, check | I want a room for two nights.; I'd like a single room.; When do I check out? |
+| 658 | Por quantas noites | for + nights | Nights, Single, Double, Check out, Room, Price | Nights, Single, Double, Check out | I want a room for two nights.; I'd like a single room.; When do I check out? |
+| 659 | Front Desk Questions | could you / is there | Front desk, Elevator, Taxi, Breakfast, Wi-Fi, Key | ask, call, give, eat | Please call the front desk.; Is breakfast included?; Could you call a taxi? |
+| 660 | Perguntas úteis | could you / is there | Front desk, Elevator, Taxi, Breakfast, Wi-Fi, Key | Front desk, Elevator, Taxi, Breakfast | Please call the front desk.; Is breakfast included?; Could you call a taxi? |
+| 661 | Renting a Car | how many / how much | Per day, Insurance, Tank, License, Return, Full | rent, show, return, drive | How much is the car?; How many days do you need?; Fifty dollars per day. |
+| 662 | Quanto e quantos | how many / how much | Per day, Insurance, Tank, License, Return, Full | Per day, Insurance, Tank, License | How much is the car?; How many days do you need?; Fifty dollars per day. |
+| 663 | So Fetch! | gírias de adolescentes | slang, trend, outfit, gossip, squad, vibe | hang out, chill, text, brag | That is so cool!; It is such a fun trend.; No way!; no way |
+| 664 | Gírias | gírias de adolescentes | slang, trend, outfit, gossip, squad, vibe | slang, trend, outfit, gossip | That is so cool!; It is such a fun trend.; No way!; no way |
+| 665 | Public Transport | get on / get off | Get on, Get off, Stop, Fare, Line, Transfer | get, pay, transfer, Get on | Where do I get on?; Where do I get off?; The fare is two dollars. |
+| 666 | Subir e descer | get on / get off | Get on, Get off, Stop, Fare, Line, Transfer | Get on, Get off, Stop, Fare | Where do I get on?; Where do I get off?; The fare is two dollars. |
+| 667 | Souvenirs | this / that / these / those | Souvenir, Handmade, Gift shop, This, Those, Pretty | buy, ask, point, pay | This bag is handmade.; How much are those cups?; I want a souvenir. |
+| 668 | Este, esse, aquele | this / that / these / those | Souvenir, Handmade, Gift shop, This, Those, Pretty | Souvenir, Handmade, Gift shop, This | This bag is handmade.; How much are those cups?; I want a souvenir. |
+| 669 | Road Trip Plans | let's / why don't we | Hit the road, Drive, Pick, Route, Gas, Snack | plan, drive, buy, pick | Let's hit the road!; Why don't we drive tonight?; Let's pick a route. |
+| 670 | Vamos! | let's / why don't we | Hit the road, Drive, Pick, Route, Gas, Snack | Hit the road, Drive, Pick, Route | Let's hit the road!; Why don't we drive tonight?; Let's pick a route. |
+| 671 | Camping Gear | need to / don't need to | Tent, Flashlight, Sleeping bag, Backpack, Fire, Water | pack, need, make, carry | We need a tent.; I don't need a flashlight.; Put it in your backpack. |
+| 672 | Preciso ou não | need to / don't need to | Tent, Flashlight, Sleeping bag, Backpack, Fire, Water | Tent, Flashlight, Sleeping bag, Backpack | We need a tent.; I don't need a flashlight.; Put it in your backpack. |
+| 673 | Spill the Beans | idioms de segredo | classified, gift wrap, guest of honor, invention, truth, deceit | spill the beans, keep, invent, surprise | Don't spill the beans!; I can keep a secret.; It is a surprise.; spill the beans |
+| 674 | Segredos | idioms de segredo | classified, gift wrap, guest of honor, invention, truth, deceit | classified, gift wrap, guest of honor, invention | Don't spill the beans!; I can keep a secret.; It is a surprise.; spill the beans |
+| 675 | Have You Ever…? | present perfect experience | Have you ever, Never, Snow, Tried, Seen, Visited | try, visit, see, ask | Have you ever seen snow?; I have never seen snow.; She has visited Tokyo. |
+| 676 | Você já...? | present perfect experience | Have you ever, Never, Snow, Tried, Seen, Visited | Have you ever, Never, Snow, Tried | Have you ever seen snow?; I have never seen snow.; She has visited Tokyo. |
+| 677 | Life Experiences | been to / gone to | Been to, Gone to, Tried, Climbed, Swum, Lived | travel, climb, swim, live | I have been to Japan.; She has gone to the store.; I have swum in the sea. |
+| 678 | Esteve × foi | been to / gone to | Been to, Gone to, Tried, Climbed, Swum, Lived | Been to, Gone to, Tried, Climbed | I have been to Japan.; She has gone to the store.; I have swum in the sea. |
+| 679 | Too Hot, Too Cold | too e enough | gruel, picnic basket, wilderness, snooze, bear cub, breakfast table | taste, sit, sleep, break | It is too hot!; This chair is big enough.; It is just right.; too much |
+| 680 | Demais e suficiente | too e enough | gruel, picnic basket, wilderness, snooze, bear cub, breakfast table | gruel, picnic basket, wilderness, snooze | It is too hot!; This chair is big enough.; It is just right.; too much |
+| 681 | For and Since | for / since | For, Since, Long time, Years, Sleep, Wake | sleep, wake, live, walk | I slept for twenty years.; I have lived here since 1990.; It has been twenty years. |
+| 682 | Há quanto tempo | for / since | For, Since, Long time, Years, Sleep, Wake | For, Since, Long time, Years | I slept for twenty years.; I have lived here since 1990.; It has been twenty years. |
+| 683 | Recent News | present perfect news | News, Prize, Happened, Guess, Great, Tell | win, tell, clap, run | I have good news.; Sam has won a prize.; What has happened? |
+| 684 | Novidades | present perfect news | News, Prize, Happened, Guess, Great, Tell | News, Prize, Happened, Guess | I have good news.; Sam has won a prize.; What has happened? |
+| 685 | Life Changes | get + adjetivo/particípio | Get married, Get better, Get cold, Get tired, Change, Grow | change, grow, marry, rest | It will get cold.; I get tired after work.; They will get married. |
+| 686 | Ficar e virar | get + adjetivo/particípio | Get married, Get better, Get cold, Get tired, Change, Grow | Get married, Get better, Get cold, Get tired | It will get cold.; I get tired after work.; They will get married. |
+| 687 | Used To | used to | Used to, Every summer, When I was, Bike, Street, Play | ride, play, remember, smile | I used to play outside.; Every summer we went to the lake.; When I was ten, I had a bike. |
+| 688 | Costumava | used to | Used to, Every summer, When I was, Bike, Street, Play | Used to, Every summer, When I was, Bike | I used to play outside.; Every summer we went to the lake.; When I was ten, I had a bike. |
+| 689 | Superlatives | superlativos | The best, The worst, The biggest, The fastest, The oldest, Record | read, break, win, run | This is the best book.; The cheetah is the fastest animal.; She is the oldest person here. |
+| 690 | O mais... | superlativos | The best, The worst, The biggest, The fastest, The oldest, Record | The best, The worst, The biggest, The fastest | This is the best book.; The cheetah is the fastest animal.; She is the oldest person here. |
+| 691 | Did You? I Didn't | passado simples: perguntas e negativas | crime scene, trench coat, witness, latch, windowsill, footprint | see, hear, open, find | Did you see him?; I didn't go out.; Did you hear anything?; did you |
+| 692 | Você viu? | passado simples: perguntas e negativas | crime scene, trench coat, witness, latch, windowsill, footprint | crime scene, trench coat, witness, latch | Did you see him?; I didn't go out.; Did you hear anything?; did you |
+| 693 | The Tallest Building | first conditional: If it rains, I will stay | Tallest, Floor, View, Elevator, Stairs, Top | take, climb, visit, Tallest | This is the tallest building.; We live on the tenth floor.; Take the elevator. |
+| 694 | Mais alto | first conditional: If it rains, I will stay | Tallest, Floor, View, Elevator, Stairs, Top | Tallest, Floor, View, Elevator | This is the tallest building.; We live on the tenth floor.; Take the elevator. |
+| 695 | Too Much, Too Little | too / enough | Too big, Too small, Enough, Chair, Just right, Comfortable | sit, try, run, smile | This chair is too big.; It is not big enough.; This one is just right. |
+| 696 | Demais e suficiente | too / enough | Too big, Too small, Enough, Chair, Just right, Comfortable | Too big, Too small, Enough, Chair | This chair is too big.; It is not big enough.; This one is just right. |
+| 697 | While I Was Walking | passado contínuo | treasure chest, shipwreck, cove, parrot, rum, crew | sail, search, sleep, shout | I was sailing near the island.; They were sleeping.; I was sleeping when the storm came.; while |
+| 698 | Eu estava... | passado contínuo | treasure chest, shipwreck, cove, parrot, rum, crew | treasure chest, shipwreck, cove, parrot | I was sailing near the island.; They were sleeping.; I was sleeping when the storm came.; while |
+| 699 | Dream Job | would like to be | Pilot, Chef, Artist, Doctor, Teacher, Job | fly, cook, paint, teach | I would like to be a pilot.; She is a doctor.; He is an artist. |
+| 700 | Eu gostaria de ser | would like to be | Pilot, Chef, Artist, Doctor, Teacher, Job | Pilot, Chef, Artist, Doctor | I would like to be a pilot.; She is a doctor.; He is an artist. |
+| 701 | Through the Tunnel | preposições de movimento | hole, cavern, footbridge, creek, dirt road, courtyard | fall, cross, climb, follow | He ran across the bridge.; She walked through the tunnel.; He went into the garden.; across |
+| 702 | Caminhos | preposições de movimento | hole, cavern, footbridge, creek, dirt road, courtyard | hole, cavern, footbridge, creek | He ran across the bridge.; She walked through the tunnel.; He went into the garden.; across |
+| 703 | Invitations | would you like to | Invite, Party, Come, Sorry, Music, Guest | invite, come, dance, stay | Would you like to come?; I'd love to.; I'm sorry. |
+| 704 | Você gostaria de...? | would you like to | Invite, Party, Come, Sorry, Music, Guest | Invite, Party, Come, Sorry | Would you like to come?; I'd love to.; I'm sorry. |
+| 705 | Refusing Politely | present perfect com just / already / yet | Prefer, Busy, Maybe, Another, Time, Offer | prefer, refuse, work, ask | I'd love to, but I'm busy.; I would prefer not to.; Maybe next time. |
+| 706 | Recusar com educação | present perfect com just / already / yet | Prefer, Busy, Maybe, Another, Time, Offer | Prefer, Busy, Maybe, Another | I'd love to, but I'm busy.; I would prefer not to.; Maybe next time. |
+| 707 | Making Excuses | because / so | Because, Late, Lie, Wolf, Sheep, Truth | shout, lie, watch, believe | I'm late because I was lost.; I was lost, so I'm late.; There is a wolf! |
+| 708 | Porque / Então | because / so | Because, Late, Lie, Wolf, Sheep, Truth | Because, Late, Lie, Wolf | I'm late because I was lost.; I was lost, so I'm late.; There is a wolf! |
+| 709 | Compliments | adjetivos de elogio | Lovely, Amazing, Smart, Beautiful, Brave, Voice | write, look, smile, love | You look lovely.; What a beautiful letter!; He is brave. |
+| 710 | Elogios | adjetivos de elogio | Lovely, Amazing, Smart, Beautiful, Brave, Voice | Lovely, Amazing, Smart, Beautiful | You look lovely.; What a beautiful letter!; He is brave. |
+| 711 | Enjoy Swimming, Want to Swim | gerúndio e infinitivo | panda, noodles, master, sensei, bamboo, meditate | enjoy, want, practice, dream | I enjoy eating noodles.; I want to learn kung fu.; I decided to try.; enjoy doing |
+| 712 | Gosto e quero | gerúndio e infinitivo | panda, noodles, master, sensei, bamboo, meditate | panda, noodles, master, sensei | I enjoy eating noodles.; I want to learn kung fu.; I decided to try.; enjoy doing |
+| 713 | Describing People | have / has + traços | Tall, Short, Curly, Beard, Eyes, Young | have, paint, look, laugh | He is tall.; She has curly hair.; Basil has a beard. |
+| 714 | Como ele é? | have / has + traços | Tall, Short, Curly, Beard, Eyes, Young | Tall, Short, Curly, Beard | He is tall.; She has curly hair.; Basil has a beard. |
+| 715 | Character Traits | adjetivos de caráter | Kind, Shy, Funny, Serious, Lazy, Friendly | read, laugh, talk, help | She is kind.; He isn't lazy.; Mary is shy. |
+| 716 | Como ela é? | adjetivos de caráter | Kind, Shy, Funny, Serious, Lazy, Friendly | Kind, Shy, Funny, Serious | She is kind.; He isn't lazy.; Mary is shy. |
+| 717 | Clothes and Style | wearing | Wear, Suit, Hat, Coat, Shoes, Style | wear, sew, shout, like | He is wearing a suit.; I wear a hat.; My shoes are new. |
+| 718 | Ele está vestindo | wearing | Wear, Suit, Hat, Coat, Shoes, Style | Wear, Suit, Hat, Coat | He is wearing a suit.; I wear a hat.; My shoes are new. |
+| 719 | Colors and Patterns | adjetivos de cor | Bright, Dark, Striped, Plain, Yellow, Blue | paint, look, shine, like | A bright star.; The night is dark.; I like striped shirts. |
+| 720 | Cores e estampas | adjetivos de cor | Bright, Dark, Striped, Plain, Yellow, Blue | Bright, Dark, Striped, Plain | A bright star.; The night is dark.; I like striped shirts. |
+| 721 | Friends | best friend | Friend, Best friend, Met, Since, Honey, Share | walk, share, meet, smile | He is my best friend.; I met him in spring.; We are friends since 2020. |
+| 722 | Meu melhor amigo | best friend | Friend, Best friend, Met, Since, Honey, Share | Friend, Best friend, Met, Since | He is my best friend.; I met him in spring.; We are friends since 2020. |
+| 723 | Always and Never | advérbios de frequência | nine-to-five, punctual, yearly, occasionally, frequently, generally | wake up, repeat, drink, exercise | I always wake up at six.; I usually drink coffee.; I sometimes run.; always |
+| 724 | Com que frequência | advérbios de frequência | nine-to-five, punctual, yearly, occasionally, frequently, generally | nine-to-five, punctual, yearly, occasionally | I always wake up at six.; I usually drink coffee.; I sometimes run.; always |
+| 725 | Pets | have / has | Pet, Dog, Cat, Feed, Walk, Bone | have, feed, walk, sleep | I have a dog.; She has a cat.; I feed him every day. |
+| 726 | Eu tenho um... | have / has | Pet, Dog, Cat, Feed, Walk, Bone | Pet, Dog, Cat, Feed | I have a dog.; She has a cat.; I feed him every day. |
+| 727 | Seasons | in + estação | Spring, Summer, Autumn, Winter, Snow, Season | grow, fall, play, love | It is hot in summer.; Flowers grow in spring.; Leaves fall in autumn. |
+| 728 | Em qual estação? | in + estação | Spring, Summer, Autumn, Winter, Snow, Season | Spring, Summer, Autumn, Winter | It is hot in summer.; Flowers grow in spring.; Leaves fall in autumn. |
+| 729 | Environment | should / must | Tree, Recycle, Save, Pollution, Clean, Earth | plant, recycle, save, protect | We should plant a tree.; You must recycle.; We should save water. |
+| 730 | Devemos | should / must | Tree, Recycle, Save, Pollution, Clean, Earth | Tree, Recycle, Save, Pollution | We should plant a tree.; You must recycle.; We should save water. |
+| 731 | At, On, In | preposições de tempo | wristwatch, millennium, leap year, fortnight, calendar date, planner | start, end, arrive, happen | It starts at nine.; We meet on Saturday.; It ends in June.; at night |
+| 732 | Quando acontece | preposições de tempo | wristwatch, millennium, leap year, fortnight, calendar date, planner | wristwatch, millennium, leap year, fortnight | It starts at nine.; We meet on Saturday.; It ends in June.; at night |
+| 733 | Recycling | imperativos | Bin, Plastic, Reuse, Trash, Glass, Paper | pick, put, reuse, clean | Put it in the bin.; Don't leave trash.; Please reuse bags. |
+| 734 | Faça isso! / Não faça! | imperativos | Bin, Plastic, Reuse, Trash, Glass, Paper | Bin, Plastic, Reuse, Trash | Put it in the bin.; Don't leave trash.; Please reuse bags. |
+| 735 | Cooking Dinner | going to | Cook, Recipe, Taste, Dinner, Onion, Soup | cook, cut, taste, make | I'm going to cook.; Remy is going to cook.; They are going to make soup. |
+| 736 | Vou fazer | going to | Cook, Recipe, Taste, Dinner, Onion, Soup | Cook, Recipe, Taste, Dinner | I'm going to cook.; Remy is going to cook.; They are going to make soup. |
+| 737 | Local Markets | quantidade | Fresh, Stall, Bargain, Kilo, Bread, Apples | buy, ask, sell, carry | How much is the bread?; How many apples?; The apples are fresh. |
+| 738 | Quanto? Quantos? | quantidade | Fresh, Stall, Bargain, Kilo, Bread, Apples | Fresh, Stall, Bargain, Kilo | How much is the bread?; How many apples?; The apples are fresh. |
+| 739 | Birthday Party | going to | Cake, Candles, Surprise, Balloon, Guests, Gift | bake, light, bring, open | I'm going to bake a cake.; She's going to buy a balloon.; Ten guests are coming. |
+| 740 | Planos de festa | going to | Cake, Candles, Surprise, Balloon, Guests, Gift | Cake, Candles, Surprise, Balloon | I'm going to bake a cake.; She's going to buy a balloon.; Ten guests are coming. |
+| 741 | Holidays | on + data | Holiday, Celebrate, Tradition, Feast, December, Family | celebrate, eat, visit, sing | Christmas is on 25 December.; It is cold in December.; We celebrate with family. |
+| 742 | Em que dia? | on + data | Holiday, Celebrate, Tradition, Feast, December, Family | Holiday, Celebrate, Tradition, Feast | Christmas is on 25 December.; It is cold in December.; We celebrate with family. |
+| 743 | Turn Left, Go Straight | direções | crossroad, zebra crossing, crossing, overpass, opposite, dead end | turn, cross, follow, ask | Go straight ahead.; Turn left at the corner.; It is opposite the park.; go straight |
+| 744 | Direções | direções | crossroad, zebra crossing, crossing, overpass, opposite, dead end | crossroad, zebra crossing, crossing, overpass | Go straight ahead.; Turn left at the corner.; It is opposite the park.; go straight |
+| 745 | Wedding | will / going to | Bride, Groom, Ring, Toast, Wedding, Church | marry, give, wear, toast | The wedding will be tomorrow.; The bride will wear white.; Romeo is going to give a ring. |
+| 746 | Vai acontecer | will / going to | Bride, Groom, Ring, Toast, Wedding, Church | Bride, Groom, Ring, Toast | The wedding will be tomorrow.; The bride will wear white.; Romeo is going to give a ring. |
+| 747 | Housework | have to | Wash, Sweep, Iron, Dishes, Floor, Laundry | wash, sweep, iron, work | I have to wash.; She has to sweep.; Do you have to iron? |
+| 748 | Tenho que | have to | Wash, Sweep, Iron, Dishes, Floor, Laundry | Wash, Sweep, Iron, Dishes | I have to wash.; She has to sweep.; Do you have to iron? |
+| 749 | Quick Repairs | can you | Broken, Tools, Repair, Hammer, Fence, Help | repair, ask, find, pass | Can you help me?; I can't find the tools.; The fence is broken. |
+| 750 | Você pode...? | can you | Broken, Tools, Repair, Hammer, Fence, Help | Broken, Tools, Repair, Hammer | Can you help me?; I can't find the tools.; The fence is broken. |
+| 751 | Electronics | this / that | Charger, Screen, Battery, Laptop, Cable, Camera | charge, use, turn on, take | This is my laptop.; That screen is big.; This battery is low. |
+| 752 | Este e aquele | this / that | Charger, Screen, Battery, Laptop, Cable, Camera | Charger, Screen, Battery, Laptop | This is my laptop.; That screen is big.; This battery is low. |
+| 753 | I'd Like... | first conditional: If it rains, I will stay | wine list, sirloin, starter, main course, entree, cutlery | order, share, pay, recommend | I'd like the spaghetti.; Can I have a salad?; Would you like a dessert?; I'd like |
+| 754 | No restaurante | first conditional: If it rains, I will stay | wine list, sirloin, starter, main course, entree, cutlery | wine list, sirloin, starter, main course | I'd like the spaghetti.; Can I have a salad?; Would you like a dessert?; I'd like |
+| 755 | Smartphone | orações relativas: who, which, that | App, Message, Signal, Call, Phone, Text | write, send, call, use | I'm writing a message.; She is making a call.; The signal is weak. |
+| 756 | Agora mesmo | orações relativas: who, which, that | App, Message, Signal, Call, Phone, Text | App, Message, Signal, Call | I'm writing a message.; She is making a call.; The signal is weak. |
+| 757 | Social Media | past simple | Post, Follow, Share, Photo, Like, Profile | write, make, post, share | I posted a photo.; He made a profile.; She wrote a post. |
+| 758 | O que fez | past simple | Post, Follow, Share, Photo, Like, Profile | Post, Follow, Share, Photo | I posted a photo.; He made a profile.; She wrote a post. |
+| 759 | Reviews | adjetivos | Rating, Recommend, Worth, Funny, Boring, Excellent | write, recommend, give, read | It is excellent.; The story is funny.; I recommend it. |
+| 760 | Minha avaliação | adjetivos | Rating, Recommend, Worth, Funny, Boring, Excellent | Rating, Recommend, Worth, Funny | It is excellent.; The story is funny.; I recommend it. |
+| 761 | What Does It Cost? | compras e preços | price tag, barcode, shopping cart, boutique, bargain hunter, flea market | cost, try on, pay, return | How much is this dress?; These shoes are nice.; That dress is far.; how much is it |
+| 762 | Preços | compras e preços | price tag, barcode, shopping cart, boutique, bargain hunter, flea market | price tag, barcode, shopping cart, boutique | How much is this dress?; These shoes are nice.; That dress is far.; how much is it |
+| 763 | School Subjects | like / love | Math, History, Science, English, Art, Subject | love, like, study, teach | I love math.; She likes history.; He doesn't like science. |
+| 764 | Gosto e amo | like / love | Math, History, Science, English, Art, Subject | Math, History, Science, English | I love math.; She likes history.; He doesn't like science. |
+| 765 | Study Habits | frequência | Homework, Exam, Notes, Always, Never, Sometimes | study, take, do, win | I always do my homework.; He never studies.; She sometimes reads late. |
+| 766 | Com que frequência? | frequência | Homework, Exam, Notes, Always, Never, Sometimes | Homework, Exam, Notes, Always | I always do my homework.; He never studies.; She sometimes reads late. |
+| 767 | University Life | present perfect | Course, Degree, Campus, Lecture, Professor, Studied | study, meet, learn, finish | I have taken a course.; He has met a professor.; Have you ever been there? |
+| 768 | Já fiz | present perfect | Course, Degree, Campus, Lecture, Professor, Studied | Course, Degree, Campus, Lecture | I have taken a course.; He has met a professor.; Have you ever been there? |
+| 769 | Books | past simple | Novel, Author, Chapter, Story, Finished, Loved | read, love, finish, tell | I read a novel.; She finished the book.; I loved the end. |
+| 770 | O que li | past simple | Novel, Author, Chapter, Story, Finished, Loved | Novel, Author, Chapter, Story | I read a novel.; She finished the book.; I loved the end. |
+| 771 | Movies | like / liked | Movie, Scene, Actor, Ending, Popcorn, Ticket | watch, buy, like, cry | I liked the movie.; I didn't like the end.; The actor was great. |
+| 772 | Gostei / Não gostei | like / liked | Movie, Scene, Actor, Ending, Popcorn, Ticket | Movie, Scene, Actor, Ending | I liked the movie.; I didn't like the end.; The actor was great. |
+| 773 | What's the Matter? | saúde e conselhos | symptom, bruise, stomachache, throat, cramp, stretcher | hurt, feel, rest, recover | What's the matter?; You should rest.; You shouldn't go to work.; what's the matter |
+| 774 | Saúde | saúde e conselhos | symptom, bruise, stomachache, throat, cramp, stretcher | symptom, bruise, stomachache, throat | What's the matter?; You should rest.; You shouldn't go to work.; what's the matter |
+| 775 | Music | like / love | Song, Band, Concert, Sing, Guitar, Favorite | sing, play, teach, love | I love this song.; She likes to sing.; He plays the guitar. |
+| 776 | Gosto e amo | like / love | Song, Band, Concert, Sing, Guitar, Favorite | Song, Band, Concert, Sing | I love this song.; She likes to sing.; He plays the guitar. |
+| 777 | Hobbies | like + ing | Garden, Paint, Collect, Hobby, Plant, Draw | grow, paint, draw, collect | I like painting.; She likes drawing.; He collects seeds. |
+| 778 | Gosto de fazer | like + ing | Garden, Paint, Collect, Hobby, Plant, Draw | Garden, Paint, Collect, Hobby | I like painting.; She likes drawing.; He collects seeds. |
+| 779 | Soccer | past simple | Goal, Referee, Fans, Score, Ball, Match | kick, score, cheer, win | He kicked the ball.; We won the match.; The fans cheered loudly. |
+| 780 | O que aconteceu | past simple | Goal, Referee, Fans, Score, Ball, Match | Goal, Referee, Fans, Score | He kicked the ball.; We won the match.; The fans cheered loudly. |
+| 781 | Olympics | superlativos | Medal, Record, Champion, Fastest, Strongest, Best | run, win, break, train | Eric is the fastest runner.; Harold is the strongest.; This is the best race. |
+| 782 | O mais... | superlativos | Medal, Record, Champion, Fastest, Strongest, Best | Medal, Record, Champion, Fastest | Eric is the fastest runner.; Harold is the strongest.; This is the best race. |
+| 783 | He's Tall, She Has Long Hair | descrição física e de personalidade | ponytail, blond, slim, mustache, outgoing, bald | look like, wear, have, describe | What does he look like?; She has long hair.; He is tall.; what does he look like |
+| 784 | Como ele é | descrição física e de personalidade | ponytail, blond, slim, mustache, outgoing, bald | ponytail, blond, slim, mustache | What does he look like?; She has long hair.; He is tall.; what does he look like |
+| 785 | Fitness | frequency | Stretch, Jog, Weights, Gym, Twice, Tired | stretch, lift, jog, rest | I stretch every morning.; He lifts weights.; I run twice a week. |
+| 786 | Com que frequência? | frequency | Stretch, Jog, Weights, Gym, Twice, Tired | Stretch, Jog, Weights, Gym | I stretch every morning.; He lifts weights.; I run twice a week. |
+| 787 | Stress | have to | Stress, Deadline, Relax, Worry, Busy, Break | have, worry, relax, take | I have to relax.; He has to rest.; You don't have to worry. |
+| 788 | Tenho que | have to | Stress, Deadline, Relax, Worry, Busy, Break | Stress, Deadline, Relax, Worry | I have to relax.; He has to rest.; You don't have to worry. |
+| 789 | Good News, Bad News | reactions | Lucky, Sorry, Wonderful, News, Terrible, Congratulations | bring, hear, run, say | That's wonderful news!; I'm sorry to hear that.; You are very lucky. |
+| 790 | Reagir a notícias | reactions | Lucky, Sorry, Wonderful, News, Terrible, Congratulations | Lucky, Sorry, Wonderful, News | That's wonderful news!; I'm sorry to hear that.; You are very lucky. |
+| 791 | Friendship Problems | past continuous | Argue, Forgive, Friend, Sorry, Angry, Hug | argue, cry, forgive, hug | I was crying.; They were arguing.; What were you doing? |
+| 792 | Estava fazendo | past continuous | Argue, Forgive, Friend, Sorry, Angry, Hug | Argue, Forgive, Friend, Sorry | I was crying.; They were arguing.; What were you doing? |
+| 793 | Friendly Advice | should / why don't | Advice, Try, Listen, Idea, Brave, Path | need, try, listen, follow | You should listen.; Why don't you try again?; I need some advice. |
+| 794 | Conselhos | should / why don't | Advice, Try, Listen, Idea, Brave, Path | Advice, Try, Listen, Idea | You should listen.; Why don't you try again?; I need some advice. |
+| 795 | Cold Winters, Warm Summers | clima e estações | mild, scorching, polar, tropical, equator, weather report | snow, freeze, melt, blow | It is freezing outside.; The wind is very strong.; It will snow tomorrow.; what's the weather like |
+| 796 | O tempo | clima e estações | mild, scorching, polar, tropical, equator, weather report | mild, scorching, polar, tropical | It is freezing outside.; The wind is very strong.; It will snow tomorrow.; what's the weather like |
+| 797 | Past Events | past simple irregular | Went, Saw, Had, Weekend, Park, Flowers | go, see, have, buy | I went to the park.; I saw my friend.; We had lunch. |
+| 798 | Verbos irregulares | past simple irregular | Went, Saw, Had, Weekend, Park, Flowers | Went, Saw, Had, Weekend | I went to the park.; I saw my friend.; We had lunch. |
+| 799 | Last Year | last / ago | Last year, Start, Remember, Old friend, Song, Midnight | remember, start, move, sing | I moved last year.; We met two years ago.; I started a new job. |
+| 800 | Ano passado | last / ago | Last year, Start, Remember, Old friend, Song, Midnight | Last year, Start, Remember, Old friend | I moved last year.; We met two years ago.; I started a new job. |
+| 801 | There Is a Problem | there is / there are para problemas | crack, jammed, squeaky, clogged, rattling, shower head | complain, fix, change, apologize | There is a problem.; There are dirty towels.; The shower isn't working.; there is a problem |
+| 802 | Reclamações | there is / there are para problemas | crack, jammed, squeaky, clogged, rattling, shower head | crack, jammed, squeaky, clogged | There is a problem.; There are dirty towels.; The shower isn't working.; there is a problem |
+| 803 | Money Matters | enough | Afford, Budget, Save, Expensive, Cheap, Enough | save, spend, pay, afford | I can't afford this.; It is too expensive.; I don't have enough money. |
+| 804 | Dinheiro | enough | Afford, Budget, Save, Expensive, Cheap, Enough | Afford, Budget, Save, Expensive | I can't afford this.; It is too expensive.; I don't have enough money. |
+| 805 | Shopping Mall | there is | Escalator, Floor, Food court, Toy, Store, Piano | take, play, look, laugh | There is a food court.; There are many toys.; The toys are on the third floor. |
+| 806 | Onde fica? | there is | Escalator, Floor, Food court, Toy, Store, Piano | Escalator, Floor, Food court, Toy | There is a food court.; There are many toys.; The toys are on the third floor. |
+| 807 | Returning to Basics | present simple | Wake up, Repeat, Again, Breakfast, Every day, Routine | wake up, have, walk, repeat | I wake up at six.; He has breakfast.; The day repeats. |
+| 808 | Rotina | present simple | Wake up, Repeat, Again, Breakfast, Every day, Routine | Wake up, Repeat, Again, Breakfast | I wake up at six.; He has breakfast.; The day repeats. |
+| 809 | Review: Travel | revisão | Ticket, Hotel, Map, Train, Passport, Journey | travel, buy, leave, stay | I need a ticket.; The train leaves at nine.; We stay at a hotel. |
+| 810 | Revisão: viagem | revisão | Ticket, Hotel, Map, Train, Passport, Journey | Ticket, Hotel, Map, Train | I need a ticket.; The train leaves at nine.; We stay at a hotel. |
+| 811 | Would You Like To...? | orações relativas: who, which, that | plus one, guest list, catering, prior engagement, available, tied up | invite, accept, refuse, bring | Would you like to come?; I'd love to!; I'm afraid I can't.; would you like to |
+| 812 | Convites | orações relativas: who, which, that | plus one, guest list, catering, prior engagement, available, tied up | plus one, guest list, catering, prior engagement | Would you like to come?; I'd love to!; I'm afraid I can't.; would you like to |
+| 813 | Favorite Series | present perfect com ever | Series, Episode, Season, Character, Ever, Never | watch, love, finish, recommend | Have you ever seen it?; I have never seen it.; She has seen it. |
+| 814 | Já viu? | present perfect com ever | Series, Episode, Season, Character, Ever, Never | Series, Episode, Season, Character | Have you ever seen it?; I have never seen it.; She has seen it. |
+| 815 | Podcasts and Radio | should | Podcast, Radio, Station, Listen, Host, Story | listen, tell, turn on, sound | You should listen.; You shouldn't stay up.; Should I listen? |
+| 816 | Conselhos | should | Podcast, Radio, Station, Listen, Host, Story | Podcast, Radio, Station, Listen | You should listen.; You shouldn't stay up.; Should I listen? |
+| 817 | Look After, Run Out Of | phrasal verbs: look after, run out of, get along | babysitter, infant, nursery, manners, quarrel, bath time | look after, run out of, get along, clean up | She looks after the children.; We ran out of milk.; They get along well.; look after |
+| 818 | Cuidar e conviver | phrasal verbs: look after, run out of, get along | babysitter, infant, nursery, manners, quarrel, bath time | babysitter, infant, nursery, manners | She looks after the children.; We ran out of milk.; They get along well.; look after |
+| 819 | Photography | going to | Camera, Photo, Light, Zoom, Album, Portrait | take, show, look, print | I am going to take a photo.; She is going to print it.; Are you going to zoom in? |
+| 820 | Planos | going to | Camera, Photo, Light, Zoom, Album, Portrait | Camera, Photo, Light, Zoom | I am going to take a photo.; She is going to print it.; Are you going to zoom in? |
+| 821 | Crafts and DIY | past continuous | Quilt, Thread, Needle, Fabric, Glue, Paint | sew, cut, paint, make | She was sewing.; They were laughing.; I was cutting fabric. |
+| 822 | Estava fazendo | past continuous | Quilt, Thread, Needle, Fabric, Glue, Paint | Quilt, Thread, Needle, Fabric | She was sewing.; They were laughing.; I was cutting fabric. |
+| 823 | Team Sports Talk | adverbs of manner | Team, Coach, Win, Quickly, Carefully, Loudly | run, pass, shout, play | He runs quickly.; She passes carefully.; They play well. |
+| 824 | Como? | adverbs of manner | Team, Coach, Win, Quickly, Carefully, Loudly | Team, Coach, Win, Quickly | He runs quickly.; She passes carefully.; They play well. |
+| 825 | Writing a CV | present perfect com for | Experience, Skill, Degree, Reference, For, Since | write, study, work, add | I have worked here for two years.; He has lived here since 2020.; How long have you studied? |
+| 826 | Há quanto tempo? | present perfect com for | Experience, Skill, Degree, Reference, For, Since | Experience, Skill, Degree, Reference | I have worked here for two years.; He has lived here since 2020.; How long have you studied? |
+| 827 | After the Interview | thank you for + -ing | Interview, Email, Position, Opportunity, Soon, Thank | thank, send, hope, wait | Thank you for seeing me.; Thank you for calling me.; I hope to hear from you. |
+| 828 | Agradecendo | thank you for + -ing | Interview, Email, Position, Opportunity, Soon, Thank | Interview, Email, Position, Opportunity | Thank you for seeing me.; Thank you for calling me.; I hope to hear from you. |
+| 829 | Find Out, Work Out | phrasal verbs: find out, work out, figure out | inscription, tomb, cave, hieroglyph, excavate, secret | find out, work out, figure out, set off | Let's find out the truth.; I can't work out this clue.; We must set off now.; find out |
+| 830 | Descobrir | phrasal verbs: find out, work out, figure out | inscription, tomb, cave, hieroglyph, excavate, secret | inscription, tomb, cave, hieroglyph | Let's find out the truth.; I can't work out this clue.; We must set off now.; find out |
+| 831 | Who Do You Work For? | What do you do? | Company, Manager, Employee, Department, Customer, Office | work, manage, help, write | What do you do?; She works in sales.; I work for a big company. |
+| 832 | O que você faz? | What do you do? | Company, Manager, Employee, Department, Customer, Office | Company, Manager, Employee, Department | What do you do?; She works in sales.; I work for a big company. |
+| 833 | Giving Feedback | quite / a bit | Feedback, Quite, Bit, Improve, Practice, Rhythm | play, listen, improve, practice | It is quite good.; It is a bit fast.; Can I give you some feedback? |
+| 834 | Um pouco ou bastante | quite / a bit | Feedback, Quite, Bit, Improve, Practice, Rhythm | Feedback, Quite, Bit, Improve | It is quite good.; It is a bit fast.; Can I give you some feedback? |
+| 835 | Study Abroad | already / yet | Abroad, Visa, Passport, Already, Yet, Suitcase | pack, study, get, call | I have already packed.; I haven't packed yet.; Have you packed yet? |
+| 836 | Já e ainda | already / yet | Abroad, Visa, Passport, Already, Yet, Suitcase | Abroad, Visa, Passport, Already | I have already packed.; I haven't packed yet.; Have you packed yet? |
+| 837 | Charity Fundraiser | a lot of / a few | Charity, Donate, Volunteer, Fundraiser, Few, Lot | help, donate, give, collect | We have a lot of food.; A few families need help.; I have a little money. |
+| 838 | Muito e poucos | a lot of / a few | Charity, Donate, Volunteer, Fundraiser, Few, Lot | Charity, Donate, Volunteer, Fundraiser | We have a lot of food.; A few families need help.; I have a little money. |
+| 839 | No Biggie! | gírias comuns | biggie, bummer, hyped, mellow, whatever, laid-back | chill, hang out, text, freak out | No biggie!; That is sweet!; Chill out!; no biggie |
+| 840 | Gírias do dia | gírias comuns | biggie, bummer, hyped, mellow, whatever, laid-back | biggie, bummer, hyped, mellow | No biggie!; That is sweet!; Chill out!; no biggie |
+| 841 | Music Genres | as + adjetivo + as | Genre, Jazz, Rock, Classical, Melody, Concert | play, listen, write, sing | Jazz is as exciting as rock.; Classical is not as loud as rock.; It is as sweet as honey. |
+| 842 | Tão... quanto | as + adjetivo + as | Genre, Jazz, Rock, Classical, Melody, Concert | Genre, Jazz, Rock, Classical | Jazz is as exciting as rock.; Classical is not as loud as rock.; It is as sweet as honey. |
+| 843 | Weather Forecast | is coming / will | Forecast, Storm, Cloudy, Windy, Thunder, Umbrella | listen, take, rain, wait | It will rain tomorrow.; A storm is coming.; Will it snow? |
+| 844 | Vai acontecer | is coming / will | Forecast, Storm, Cloudy, Windy, Thunder, Umbrella | Forecast, Storm, Cloudy, Windy | It will rain tomorrow.; A storm is coming.; Will it snow? |
+| 845 | Weather Around the World | as hot as | Hot, Cold, Wet, Dry, Desert, Snow | travel, wear, carry, drink | The desert is as hot as an oven.; The jungle is wet.; There is a lot of snow. |
+| 846 | Tão quente quanto | as hot as | Hot, Cold, Wet, Dry, Desert, Snow | Hot, Cold, Wet, Dry | The desert is as hot as an oven.; The jungle is wet.; There is a lot of snow. |
+| 847 | Break the Ice | idiom: break the ice; small talk | greeting, topic, pastime, weather, smile, awkward | break the ice, introduce, chat, smile | Let's break the ice.; Nice to meet you.; What's your hobby?; break the ice |
+| 848 | Quebrar o gelo | idiom: break the ice; small talk | greeting, topic, pastime, weather, smile, awkward | greeting, topic, pastime, weather | Let's break the ice.; Nice to meet you.; What's your hobby?; break the ice |
+| 849 | Life Story Timeline | passado e anos | Timeline, Childhood, Grew, Moved, Married, Retired | grow, move, marry, retire | I grew up in a town.; We moved in 1990.; They married in 1995. |
+| 850 | Contar a vida | passado e anos | Timeline, Childhood, Grew, Moved, Married, Retired | Timeline, Childhood, Grew, Moved | I grew up in a town.; We moved in 1990.; They married in 1995. |
+| 851 | By Boat, With a Rope | preposições with, without, by, for | palm tree, coconut, driftwood, lifejacket, signal fire, hut | cut, build, fish, travel | I cut it with a knife.; I live without a phone.; I go home by boat.; with |
+| 852 | Com ou sem | preposições with, without, by, for | palm tree, coconut, driftwood, lifejacket, signal fire, hut | palm tree, coconut, driftwood, lifejacket | I cut it with a knife.; I live without a phone.; I go home by boat.; with |
+| 853 | Fractions and Percentages | fractions | Half, Quarter, Third, Percent, Whole, Number | cut, eat, count, share | I ate half of it.; A quarter is twenty-five percent.; Fifty percent is half. |
+| 854 | Frações | fractions | Half, Quarter, Third, Percent, Whole, Number | Half, Quarter, Third, Percent | I ate half of it.; A quarter is twenty-five percent.; Fifty percent is half. |
+| 855 | Measurements | how + adjetivo | Tall, Long, Wide, Heavy, Deep, Meter | measure, draw, ask, weigh | How tall are you?; How long is the table?; It is two meters long. |
+| 856 | Qual o tamanho? | how + adjetivo | Tall, Long, Wide, Heavy, Deep, Meter | Tall, Long, Wide, Heavy | How tall are you?; How long is the table?; It is two meters long. |
+| 857 | Long Ago, Just Now | recently / lately | Recently, Lately, Ago, Just, Moment, Past | meet, arrive, remember, wait | I met her ten years ago.; I have just arrived.; I have been busy lately. |
+| 858 | Quando foi | recently / lately | Recently, Lately, Ago, Just, Moment, Past | Recently, Lately, Ago, Just | I met her ten years ago.; I have just arrived.; I have been busy lately. |
+| 859 | Dear Sam, Best Regards | escrever e-mails simples | cc, outbox, unread, font, cordially, junk mail | write, send, reply, attach | Dear Sam,; Best regards; Please see the attachment.; dear sir or madam |
+| 860 | Escrever e-mails | escrever e-mails simples | cc, outbox, unread, font, cordially, junk mail | cc, outbox, unread, font | Dear Sam,; Best regards; Please see the attachment.; dear sir or madam |
+| 861 | Street Food Stall | would like / can I have | Vendor, Taco, Napkin, Spicy, Fresh, Tasty | order, taste, pay, thank | I would like a taco.; Can I have a napkin?; The vegetables are fresh. |
+| 862 | Pedindo | would like / can I have | Vendor, Taco, Napkin, Spicy, Fresh, Tasty | Vendor, Taco, Napkin, Spicy | I would like a taco.; Can I have a napkin?; The vegetables are fresh. |
+| 863 | Healthy Eating | more / less / fewer | Healthy, Sugar, Vegetables, More, Less, Fewer | eat, drink, choose, cook | Eat more vegetables.; Eat less sugar.; Eat fewer burgers. |
+| 864 | Mais, menos | more / less / fewer | Healthy, Sugar, Vegetables, More, Less, Fewer | Healthy, Sugar, Vegetables, More | Eat more vegetables.; Eat less sugar.; Eat fewer burgers. |
+| 865 | Food from Around the World | nacionalidades | Italian, Japanese, Mexican, Indian, Brazilian, French | travel, try, love, cook | I love Italian pasta.; I am Brazilian.; Mexican tacos are spicy. |
+| 866 | De onde é? | nacionalidades | Italian, Japanese, Mexican, Indian, Brazilian, French | Italian, Japanese, Mexican, Indian | I love Italian pasta.; I am Brazilian.; Mexican tacos are spicy. |
+| 867 | I Think, In My Opinion | dar opinião: I think, I agree, I disagree | opinion, jury, biased, idea, agree, disagree | think, agree, decide, explain | I think he is right.; I agree with you.; I disagree with him.; in my opinion |
+| 868 | Opiniões | dar opinião: I think, I agree, I disagree | opinion, jury, biased, idea, agree, disagree | opinion, jury, biased, idea | I think he is right.; I agree with you.; I disagree with him.; in my opinion |
+| 869 | Booking a Tour | how long / how far | Tour, Guide, Book, Distance, Hour, Kilometer | book, ask, take, walk | How long does it take?; How far is the temple?; It takes two hours. |
+| 870 | Quanto tempo e quanto longe | how long / how far | Tour, Guide, Book, Distance, Hour, Kilometer | Tour, Guide, Book, Distance | How long does it take?; How far is the temple?; It takes two hours. |
+| 871 | Big Cities of the World | comparativos | Bigger, Cheaper, Noisier, Busier, Safer, Older | move, compare, live, walk | New York is bigger than Boston.; Downtown is noisier than my street.; This area is safer than that one. |
+| 872 | Comparando | comparativos | Bigger, Cheaper, Noisier, Busier, Safer, Older | Bigger, Cheaper, Noisier, Busier | New York is bigger than Boston.; Downtown is noisier than my street.; This area is safer than that one. |
+| 873 | School in the USA | mustn't | Principal, Classroom, Homework, Locker, Bell, Phone | study, listen, run, forget | You mustn't be late.; Students mustn't use phones.; The bell rings at eight. |
+| 874 | Proibido | mustn't | Principal, Classroom, Homework, Locker, Bell, Phone | Principal, Classroom, Homework, Locker | You mustn't be late.; Students mustn't use phones.; The bell rings at eight. |
+| 875 | Can I Help You? | shall I, can I, let me (ofertas) | security guard, display case, badge, corridor, alarm system, lock up | help, carry, open, show | Can I help you?; Shall I carry it?; Let me open the door.; can I help you |
+| 876 | Oferecer ajuda | shall I, can I, let me (ofertas) | security guard, display case, badge, corridor, alarm system, lock up | security guard, display case, badge, corridor | Can I help you?; Shall I carry it?; Let me open the door.; can I help you |
+| 877 | Could You Repeat That? | clarifying | Repeat, Slowly, Mean, Understand, Spell, Again | repeat, speak, understand, spell | Could you repeat that?; Please speak slowly.; I don't understand. |
+| 878 | Não entendi | clarifying | Repeat, Slowly, Mean, Understand, Spell, Again | Repeat, Slowly, Mean, Understand | Could you repeat that?; Please speak slowly.; I don't understand. |
+| 879 | Cancelling Plans | have just + particípio | Cancel, Reschedule, Unfortunately, Just, Sorry, Message | cancel, send, call, wait | I have just read it.; Unfortunately, I can't come.; Can we reschedule? |
+| 880 | Acabei de | have just + particípio | Cancel, Reschedule, Unfortunately, Just, Sorry, Message | Cancel, Reschedule, Unfortunately, Just | I have just read it.; Unfortunately, I can't come.; Can we reschedule? |
+| 881 | Signs and Notices | No + -ing | Sign, Smoking, Parking, Entrance, Exit, Notice | read, follow, park, enter | No smoking.; No parking.; The exit is on the right. |
+| 882 | Proibido | No + -ing | Sign, Smoking, Parking, Entrance, Exit, Notice | Sign, Smoking, Parking, Entrance | No smoking.; No parking.; The exit is on the right. |
+| 883 | Been or Gone? | been / gone | Been, Gone, Back, Away, Trip, Return | go, return, visit, wait | I have been to Paris.; She has gone to Paris.; She will be back on Friday. |
+| 884 | Been ou gone | been / gone | Been, Gone, Back, Away, Trip, Return | Been, Gone, Back, Away | I have been to Paris.; She has gone to Paris.; She will be back on Friday. |
+| 885 | Gate Twelve, Please | vocabulário e frases de aeroporto | arrival, check-in desk, security check, aisle seat, window seat, duty-free | check in, board, land, wait | Where is the gate?; Show your passport.; There is a delay.; check in |
+| 886 | No aeroporto | vocabulário e frases de aeroporto | arrival, check-in desk, security check, aisle seat, window seat, duty-free | arrival, check-in desk, security check, aisle seat | Where is the gate?; Show your passport.; There is a delay.; check in |
+| 887 | Farmers Market | quantities | Farmer, Basket, Pound, Dozen, Fruit, Fair | sell, buy, weigh, carry | A dozen eggs, please.; A pound of apples.; How much fruit do you want? |
+| 888 | Quantidades | quantities | Farmer, Basket, Pound, Dozen, Fruit, Fair | Farmer, Basket, Pound, Dozen | A dozen eggs, please.; A pound of apples.; How much fruit do you want? |
+| 889 | Drive-Thru | one / ones | Order, Window, Burger, Fries, Straw, Sauce | order, drive, pay, take | The big one.; The large ones.; Which one do you want? |
+| 890 | Um ou o outro | one / ones | Order, Window, Burger, Fries, Straw, Sauce | Order, Window, Burger, Fries | The big one.; The large ones.; Which one do you want? |
+| 891 | Neighborhood Tour | between / behind / in front of | Between, Behind, Corner, Block, Street, Opposite | walk, show, live, wave | The bakery is between the bank and the shop.; The park is behind the school.; The cafe is on the corner. |
+| 892 | Onde fica | between / behind / in front of | Between, Behind, Corner, Block, Street, Opposite | Between, Behind, Corner, Block | The bakery is between the bank and the shop.; The park is behind the school.; The cafe is on the corner. |
+| 893 | I'm Worried About… | worried about | Worried, Afraid, Nervous, Safe, Hope, Calm | write, worry, hope, talk | I am worried about the exam.; He is afraid of the dark.; Please stay calm. |
+| 894 | Preocupado com | worried about | Worried, Afraid, Nervous, Safe, Hope, Calm | Worried, Afraid, Nervous, Safe | I am worried about the exam.; He is afraid of the dark.; Please stay calm. |
+| 895 | Ago, Last, In | expressões de tempo: ago, last, in, next | last week, a while ago, currently, formerly, instantly, shortly | arrive, visit, travel, remember | I came two years ago.; Last year I wrote a book.; Next month I will go home.; two years ago |
+| 896 | Quando? | expressões de tempo: ago, last, in, next | last week, a while ago, currently, formerly, instantly, shortly | last week, a while ago, currently, formerly | I came two years ago.; Last year I wrote a book.; Next month I will go home.; two years ago |
+| 897 | Driving Rules | must / mustn't | Speed, Limit, Seatbelt, Lane, License, Light | drive, stop, wear, follow | You must wear a seatbelt.; You mustn't drive too fast.; Stay in your lane. |
+| 898 | Deve e não deve | must / mustn't | Speed, Limit, Seatbelt, Lane, License, Light | Speed, Limit, Seatbelt, Lane | You must wear a seatbelt.; You mustn't drive too fast.; Stay in your lane. |
+| 899 | Road Signs | can't + ordens | Stop, Yield, Turn, Highway, Straight, Detour | drive, turn, stop, read | Stop at the sign.; You can't turn left here.; Go straight on the highway. |
+| 900 | Ordens e proibições | can't + ordens | Stop, Yield, Turn, Highway, Straight, Detour | Stop, Yield, Turn, Highway | Stop at the sign.; You can't turn left here.; Go straight on the highway. |
+| 901 | Passing the Test | if + present, will | Test, Pass, Fail, Instructor, Practice, Luck | practice, pass, fail, drive | If I practice, I will pass.; If I don't practice, I'll fail.; If you're calm, you'll do well. |
+| 902 | Se... então | if + present, will | Test, Pass, Fail, Instructor, Practice, Luck | Test, Pass, Fail, Instructor | If I practice, I will pass.; If I don't practice, I'll fail.; If you're calm, you'll do well. |
+| 903 | Think Before You Post | can / could em pedidos | Post, Privacy, Share, Delete, Comment, Follower | post, share, delete, ask | Can I share your photo?; Could you delete that post?; Think before you post. |
+| 904 | Pedidos educados | can / could em pedidos | Post, Privacy, Share, Delete, Comment, Follower | Post, Privacy, Share, Delete | Can I share your photo?; Could you delete that post?; Think before you post. |
+| 905 | What a Robot! | exclamações com What a / How | robotic, mechanical, metallic, incredible, spectacular, tiny | find, look at, love, clean | What a surprise!; How beautiful!; What a tiny plant!; what a surprise |
+| 906 | Que surpresa! | exclamações com What a / How | robotic, mechanical, metallic, incredible, spectacular, tiny | robotic, mechanical, metallic, incredible | What a surprise!; How beautiful!; What a tiny plant!; what a surprise |
+| 907 | Smile, Everyone! | going to | Smile, Pose, Selfie, Together, Ready, Click | take, smile, stand, click | I'm going to take a selfie.; We are going to pose.; Are you ready? |
+| 908 | Vamos fazer | going to | Smile, Pose, Selfie, Together, Ready, Click | Smile, Pose, Selfie, Together | I'm going to take a selfie.; We are going to pose.; Are you ready? |
+| 909 | Made by Hand | past continuous | Pottery, Clay, Wheel, Vase, Handmade, Shape | make, turn, shape, paint | She was making a vase.; They were laughing.; He was shaping the clay. |
+| 910 | Estava fazendo | past continuous | Pottery, Clay, Wheel, Vase, Handmade, Shape | Pottery, Clay, Wheel, Vase | She was making a vase.; They were laughing.; He was shaping the clay. |
+| 911 | Sweat It Out | How often e frequência | Boxing, Gloves, Ring, Daily, Weekly, Monthly | train, put on, step, work | How often do you train?; I train daily.; We have a weekly class. |
+| 912 | Com que frequência | How often e frequência | Boxing, Gloves, Ring, Daily, Weekly, Monthly | Boxing, Gloves, Ring, Daily | How often do you train?; I train daily.; We have a weekly class. |
+| 913 | Help Wanted | look for / apply for | Job, Apply, Ranch, Worker, Wanted, Experience | look for, apply, work, meet | I'm looking for a job.; I want to apply for the job.; Do you have experience? |
+| 914 | Procurar emprego | look for / apply for | Job, Apply, Ranch, Worker, Wanted, Experience | Job, Apply, Ranch, Worker | I'm looking for a job.; I want to apply for the job.; Do you have experience? |
+| 915 | Reading the Ad | must have / be able to | Advertisement, Requirement, Able, Salary, Hours, Apply | read, apply, drive, write | You must have a license.; You must be able to drive.; The salary is good. |
+| 916 | Requisitos | must have / be able to | Advertisement, Requirement, Able, Salary, Hours, Apply | Advertisement, Requirement, Able, Salary | You must have a license.; You must be able to drive.; The salary is good. |
+| 917 | A Cup of Sugar | how much / how many; recipes | tablespoon, teaspoon, ounce, gram, serving, leftover | cook, mix, cut, add | How much sugar do we need?; How many eggs do we need?; A pinch of salt.; a pinch of |
+| 918 | Quantidades | how much / how many; recipes | tablespoon, teaspoon, ounce, gram, serving, leftover | tablespoon, teaspoon, ounce, gram | How much sugar do we need?; How many eggs do we need?; A pinch of salt.; a pinch of |
+| 919 | A Taste of the World | superlativos | Dish, Spicy, Sweet, Popular, Delicious, Favorite | taste, cook, compare, love | Pizza is the most popular food.; Tacos are more spicy than pizza.; This is the best dish. |
+| 920 | O mais... | superlativos | Dish, Spicy, Sweet, Popular, Delicious, Favorite | Dish, Spicy, Sweet, Popular | Pizza is the most popular food.; Tacos are more spicy than pizza.; This is the best dish. |
+| 921 | A Balanced Plate | a little / a few | Plate, Vegetable, Fruit, Protein, Rice, Healthy | eat, put, drink, choose | I want a little rice.; She eats a few carrots.; How much rice do you want? |
+| 922 | Um pouco / alguns | a little / a few | Plate, Vegetable, Fruit, Protein, Rice, Healthy | Plate, Vegetable, Fruit, Protein | I want a little rice.; She eats a few carrots.; How much rice do you want? |
+| 923 | Tell Me About Your Job | profissões e perguntas de entrevista | paycheck, part-time, full-time, workplace, qualification, experience | work, apply, earn, sell | What do you do?; I work as a salesman.; I have three years of experience.; what do you do |
+| 924 | Trabalho | profissões e perguntas de entrevista | paycheck, part-time, full-time, workplace, qualification, experience | paycheck, part-time, full-time, workplace | What do you do?; I work as a salesman.; I have three years of experience.; what do you do |
+| 925 | Physical Therapy | present perfect para progresso | Therapy, Exercise, Knee, Stronger, Pain, Recover | exercise, stretch, improve, walk | I have done therapy.; She has improved.; Have you felt pain? |
+| 926 | Já fiz | present perfect para progresso | Therapy, Exercise, Knee, Stronger, Pain, Recover | Therapy, Exercise, Knee, Stronger | I have done therapy.; She has improved.; Have you felt pain? |
+| 927 | Review: Past | passado simples e used to | Yesterday, Ago, Used, Remember, Rainbow, Dream | live, see, have, hear | I visited my aunt yesterday.; She saw a rainbow.; Did you remember it? |
+| 928 | Passado | passado simples e used to | Yesterday, Ago, Used, Remember, Rainbow, Dream | Yesterday, Ago, Used, Remember | I visited my aunt yesterday.; She saw a rainbow.; Did you remember it? |
+| 929 | You Should Try It | recomendar com should e dar avaliações | stars, overrated, underrated, must-see, thrilling, gem | recommend, try, enjoy, visit | You should try the cake.; It was amazing.; It was boring.; you should try |
+| 930 | Recomendações | recomendar com should e dar avaliações | stars, overrated, underrated, must-see, thrilling, gem | stars, overrated, underrated, must-see | You should try the cake.; It was amazing.; It was boring.; you should try |
+| 931 | Review: Questions | do, does, did | Question, Answer, Interview, Director, Often, Why | ask, answer, make, smile | Do you like films?; Does he make films?; Did you see the film? |
+| 932 | Perguntas | do, does, did | Question, Answer, Interview, Director, Often, Why | Question, Answer, Interview, Director | Do you like films?; Does he make films?; Did you see the film? |
+| 933 | Full Conversation | tudo junto | Conversation, Night, Street, Story, Laugh, Together | talk, walk, tell, laugh | We walk all night.; She laughs a lot.; I walked down the street yesterday. |
+| 934 | Tudo junto | tudo junto | Conversation, Night, Street, Story, Laugh, Together | Conversation, Night, Street, Story | We walk all night.; She laughs a lot.; I walked down the street yesterday. |
+| 935 | Keep It Going | perguntas de continuação | Really, Interesting, Tell, More, Wonderful, Too | ask, listen, share, smile | Can you tell me more?; What about you?; That sounds wonderful. |
+| 936 | Continue | perguntas de continuação | Really, Interesting, Tell, More, Wonderful, Too | Really, Interesting, Tell, More | Can you tell me more?; What about you?; That sounds wonderful. |
+| 937 | A2 Farewell | look forward to + -ing | Graduation, Congratulations, Journey, Forward, Next, Level | graduate, celebrate, finish, continue | I look forward to learning more.; Congratulations on finishing!; This was a long journey. |
+| 938 | Ansioso por | look forward to + -ing | Graduation, Congratulations, Journey, Forward, Next, Level | Graduation, Congratulations, Journey, Forward | I look forward to learning more.; Congratulations on finishing!; This was a long journey. |
+| 939 | I Can Do It Now | revisão: passado, futuro, can, should | accomplishment, lesson, progress, goal, proud, destiny | learn, improve, reach, remember | Last year I could not speak English.; Next year I will go to London.; You should be proud.; make progress |
+| 940 | O que aprendi | revisão: passado, futuro, can, should | accomplishment, lesson, progress, goal, proud, destiny | accomplishment, lesson, progress, goal | Last year I could not speak English.; Next year I will go to London.; You should be proud.; make progress |

@@ -62,3 +62,8 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - `model_v2.build` agora traduz os rótulos fixos via `LG['ui']` (usado em pt-a1) e `js/es_pilot.js` traduz os rótulos dos renderizadores para cursos com interface em espanhol (FXES_MAP).
 - Correção de estouro de margem: `.ps-hb` (chips do vocabulário), `.m2-bagrow`/`.m2-bt` (mochila), `.ps-pair`, `.ps-rt`, `.ps-hot-info` agora quebram linha em telas ≤ 360px. Teste: `node ovf.js <curso> <largura> <n…>` (em /tmp) varre os quadros e toca os objetos da cena.
 - Os esqueletos de it-a1/de-a1 tinham só placeholders ("A1 · Episodio 1: salutare al lavoro", vocabulário genérico): temas mantidos, vocabulário e obras escritos agora. O pt-a1 manteve vocabulário e gramática do esqueleto (tudo×todo, apelido≠apellido, meu/minha) com 2 palavras novas por par.
+
+## Esqueletos com escolhas identificadas (inglês regular)
+- `python3 tools/skel/build.py` regenera `data/skel/en-*.json` e `docs/esqueletos/*.md` (tabelas + `SITUACAO.md`). Cada esqueleto agora registra: estrutura gramatical, vocabulário da cena (6 palavras), 4 verbos e até 4 expressões, tudo vindo dos dados do próprio episódio (nada foi escrito). Esses campos aparecem nos quadros: palavras da cena, verbos (e missão dos verbos), expressões (e cena de conversa).
+- Ficam de fora (não mexidos): episódios prontos (1–5, 52–76, 116–120 do A1) e os de formato antigo 6–51 e 77–115. Total com esqueleto: 2.880.
+- Limites: as «expressões» vêm do quadro cexp (frases-modelo do episódio), não são necessariamente idioms; 6 pares do A1/A2 têm só 3 expressões; ~30% dos pares ainda só têm tema (sem estrutura gramatical própria).
