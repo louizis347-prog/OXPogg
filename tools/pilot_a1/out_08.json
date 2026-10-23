@@ -1,0 +1,3737 @@
+[
+ {
+  "n": 7910006,
+  "dquiz": [
+   {
+    "q": "What does “and” do?",
+    "pt": "O que o “and” faz?",
+    "opts": [
+     [
+      "🔗",
+      "It joins ideas"
+     ],
+     [
+      "↔️",
+      "It shows a difference"
+     ],
+     [
+      "🔀",
+      "It gives a choice"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “It joins two ideas”"
+   },
+   {
+    "q": "Which word shows a difference?",
+    "pt": "Qual palavra mostra uma diferença?",
+    "opts": [
+     [
+      "↔️",
+      "But"
+     ],
+     [
+      "🔗",
+      "And"
+     ],
+     [
+      "🔀",
+      "Or"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “It shows a difference”"
+   },
+   {
+    "q": "What is the choice in the lesson?",
+    "pt": "Qual é a escolha na aula?",
+    "opts": [
+     [
+      "☕",
+      "Tea or coffee"
+     ],
+     [
+      "🧃",
+      "Juice or milk"
+     ],
+     [
+      "🍰",
+      "Cake or bread"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “tea or coffee”"
+   }
+  ],
+  "produce": {
+   "prompt": "Num café, você fala do que gosta. **Diga que gosta de dois itens com and, faça uma frase com but e ofereça uma escolha com or.**",
+   "ph": "Ex.: I like tea and cake. Tea or coffee?",
+   "chips": [
+    "I like tea and",
+    "but",
+    "Tea or coffee"
+   ],
+   "model": "I like tea and cake. The cake is small, but nice. Tea or coffee?",
+   "check": [
+    "Juntei duas ideias com and?",
+    "Mostrei uma diferença com but?",
+    "Ofereci uma escolha com or?"
+   ]
+  }
+ },
+ {
+  "n": 7910007,
+  "dquiz": [
+   {
+    "q": "What does “because” give?",
+    "pt": "O que o “because” dá?",
+    "opts": [
+     [
+      "💡",
+      "The reason"
+     ],
+     [
+      "✅",
+      "The result"
+     ],
+     [
+      "🎁",
+      "A present"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “It gives the reason”"
+   },
+   {
+    "q": "What does “so” give?",
+    "pt": "O que o “so” dá?",
+    "opts": [
+     [
+      "✅",
+      "The result"
+     ],
+     [
+      "💡",
+      "The reason"
+     ],
+     [
+      "❓",
+      "A question"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “It gives the result”"
+   },
+   {
+    "q": "Why does the teacher wear a coat?",
+    "pt": "Por que a professora usa um casaco?",
+    "opts": [
+     [
+      "🥶",
+      "She is cold"
+     ],
+     [
+      "🌧️",
+      "It is raining"
+     ],
+     [
+      "😴",
+      "She is tired"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “I am cold”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu amigo pergunta por que você está em casa. **Explique o motivo com because e o resultado com so.** Use o clima como exemplo.",
+   "ph": "Ex.: It is raining, so I stay home.",
+   "chips": [
+    "Because it is",
+    "so I",
+    "I stay home"
+   ],
+   "model": "I am happy because it is sunny. It is hot, so I wear a hat. I stay home.",
+   "check": [
+    "Dei um motivo com because?",
+    "Dei um resultado com so?",
+    "Disse o que eu faço?"
+   ]
+  }
+ },
+ {
+  "n": 7910008,
+  "dquiz": [
+   {
+    "q": "Which is more common: eat breakfast or have breakfast?",
+    "pt": "Qual é mais comum: eat breakfast ou have breakfast?",
+    "opts": [
+     [
+      "🍳",
+      "Have breakfast"
+     ],
+     [
+      "🥣",
+      "Eat breakfast"
+     ],
+     [
+      "🍽️",
+      "Do breakfast"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “have is more common”"
+   },
+   {
+    "q": "Can Jack say “do breakfast”?",
+    "pt": "Jack pode dizer “do breakfast”?",
+    "opts": [
+     [
+      "❌",
+      "No, he can't"
+     ],
+     [
+      "✅",
+      "Yes, he can"
+     ],
+     [
+      "🤷",
+      "Maybe"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “No. Say have breakfast”"
+   },
+   {
+    "q": "What does the teacher say for a drink?",
+    "pt": "O que a professora diz para uma bebida?",
+    "opts": [
+     [
+      "🥤",
+      "Have a drink"
+     ],
+     [
+      "🥤",
+      "Make a drink"
+     ],
+     [
+      "🥤",
+      "Do a drink"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say have a drink”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você conta sua rotina de manhã. **Diga a que horas você tem o café da manhã e convide alguém para ter o almoço.**",
+   "ph": "Ex.: I have breakfast at seven. Let's have lunch.",
+   "chips": [
+    "I have breakfast at",
+    "Let's have lunch",
+    "Do you have"
+   ],
+   "model": "I have breakfast at seven. Let's have lunch at noon. Do you have a snack?",
+   "check": [
+    "Disse minha hora do café da manhã?",
+    "Convidei alguém para o almoço?",
+    "Perguntei sobre um lanche?"
+   ]
+  }
+ },
+ {
+  "n": 7910009,
+  "dquiz": [
+   {
+    "q": "Which verb goes with “shower”?",
+    "pt": "Qual verbo combina com “shower”?",
+    "opts": [
+     [
+      "🚿",
+      "Take"
+     ],
+     [
+      "🛠️",
+      "Make"
+     ],
+     [
+      "⚽",
+      "Play"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “We say take a shower”"
+   },
+   {
+    "q": "What do we take for transport?",
+    "pt": "O que “pegamos” como transporte?",
+    "opts": [
+     [
+      "🚌",
+      "The bus"
+     ],
+     [
+      "🚗",
+      "The shower"
+     ],
+     [
+      "📷",
+      "A photo"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say take the bus”"
+   },
+   {
+    "q": "What else do we take?",
+    "pt": "O que mais usamos com take?",
+    "opts": [
+     [
+      "📷",
+      "A photo"
+     ],
+     [
+      "🍰",
+      "A cake"
+     ],
+     [
+      "📞",
+      "A call"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say take a photo”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você fala da sua manhã. **Diga a que horas você toma banho e como você vai ao trabalho.** Depois peça uma pausa.",
+   "ph": "Ex.: I take a shower at six. I take the bus.",
+   "chips": [
+    "I take a shower",
+    "I take the bus",
+    "Take a break"
+   ],
+   "model": "I take a shower at six. I take the bus to work. Take a break, please!",
+   "check": [
+    "Disse quando tomo banho?",
+    "Disse como vou ao trabalho?",
+    "Pedi uma pausa?"
+   ]
+  }
+ },
+ {
+  "n": 7910010,
+  "dquiz": [
+   {
+    "q": "What do we make?",
+    "pt": "O que dizemos com make na primeira resposta?",
+    "opts": [
+     [
+      "🎂",
+      "A cake"
+     ],
+     [
+      "📚",
+      "Homework"
+     ],
+     [
+      "🚿",
+      "A shower"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “We say make a cake”"
+   },
+   {
+    "q": "What do people make by accident?",
+    "pt": "O que as pessoas fazem sem querer?",
+    "opts": [
+     [
+      "😬",
+      "A mistake"
+     ],
+     [
+      "📞",
+      "A call"
+     ],
+     [
+      "🎂",
+      "A cake"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say make a mistake”"
+   },
+   {
+    "q": "What does the teacher say for a phone call?",
+    "pt": "O que a professora diz para uma ligação?",
+    "opts": [
+     [
+      "📞",
+      "Make a call"
+     ],
+     [
+      "📞",
+      "Do a call"
+     ],
+     [
+      "📞",
+      "Take a call"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say make a call”"
+   }
+  ],
+  "produce": {
+   "prompt": "É domingo e você está em casa. **Diga o que você faz aos domingos e proponha um plano para o grupo.** Use make.",
+   "ph": "Ex.: I make a cake on Sundays. Let's make a plan.",
+   "chips": [
+    "I make a cake",
+    "Let's make a plan",
+    "make a call"
+   ],
+   "model": "I make a cake on Sundays. Let's make a plan. I make a call to my friend.",
+   "check": [
+    "Disse o que eu faço aos domingos?",
+    "Propus um plano?",
+    "Falei de uma ligação?"
+   ]
+  }
+ },
+ {
+  "n": 7910011,
+  "dquiz": [
+   {
+    "q": "Do we say “make homework”?",
+    "pt": "Dizemos “make homework”?",
+    "opts": [
+     [
+      "❌",
+      "No, we say do homework"
+     ],
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "🤷",
+      "Both are fine"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “We say do homework”"
+   },
+   {
+    "q": "What do we do for the dishes?",
+    "pt": "O que dizemos para a louça?",
+    "opts": [
+     [
+      "🍽️",
+      "Do the dishes"
+     ],
+     [
+      "🍽️",
+      "Make the dishes"
+     ],
+     [
+      "🍽️",
+      "Take the dishes"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say do the dishes”"
+   },
+   {
+    "q": "Which word goes with “exercise”?",
+    "pt": "Qual verbo combina com “exercise”?",
+    "opts": [
+     [
+      "🏃",
+      "Do"
+     ],
+     [
+      "🛠️",
+      "Make"
+     ],
+     [
+      "📷",
+      "Take"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say do exercise”"
+   }
+  ],
+  "produce": {
+   "prompt": "Na sua casa, cada um tem uma tarefa. **Diga a que horas você faz a lição de casa e pergunte quem lava a louça.** Peça um favor.",
+   "ph": "Ex.: I do my homework at five. Who does the dishes?",
+   "chips": [
+    "I do my homework",
+    "Who does the dishes",
+    "do me a favor"
+   ],
+   "model": "I do my homework at five. Who does the dishes? Can you do me a favor?",
+   "check": [
+    "Disse quando faço a lição?",
+    "Perguntei quem lava a louça?",
+    "Pedi um favor?"
+   ]
+  }
+ },
+ {
+  "n": 7910012,
+  "dquiz": [
+   {
+    "q": "Is “go to home” correct?",
+    "pt": "“Go to home” está correto?",
+    "opts": [
+     [
+      "❌",
+      "No, say go home"
+     ],
+     [
+      "✅",
+      "Yes, it is"
+     ],
+     [
+      "🤷",
+      "Only at night"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “No. We say go home”"
+   },
+   {
+    "q": "What do we say for work?",
+    "pt": "O que dizemos para trabalho?",
+    "opts": [
+     [
+      "💼",
+      "Go to work"
+     ],
+     [
+      "🏠",
+      "Go work"
+     ],
+     [
+      "🛒",
+      "Go shopping"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say go to work”"
+   },
+   {
+    "q": "What do we say for shopping?",
+    "pt": "O que dizemos para compras?",
+    "opts": [
+     [
+      "🛒",
+      "Go shopping"
+     ],
+     [
+      "🛒",
+      "Go to shopping"
+     ],
+     [
+      "🛒",
+      "Go the shopping"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say go shopping”"
+   }
+  ],
+  "produce": {
+   "prompt": "No fim do dia, você fala com um colega. **Diga que você vai para casa e convide o colega para ir às compras.** Use go.",
+   "ph": "Ex.: I go home. Let's go shopping.",
+   "chips": [
+    "I go home",
+    "Let's go shopping",
+    "go for a walk"
+   ],
+   "model": "I go home at six. Let's go shopping on Saturday. Let's go for a walk too.",
+   "check": [
+    "Disse que vou para casa?",
+    "Convidei para ir às compras?",
+    "Sugeri uma caminhada?"
+   ]
+  }
+ },
+ {
+  "n": 7910013,
+  "dquiz": [
+   {
+    "q": "What does the teacher say for “acordar”?",
+    "pt": "O que a professora diz para “acordar”?",
+    "opts": [
+     [
+      "⏰",
+      "Wake up"
+     ],
+     [
+      "🛏️",
+      "Get up"
+     ],
+     [
+      "👕",
+      "Get dressed"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say wake up”"
+   },
+   {
+    "q": "What do we say for leaving the bed?",
+    "pt": "O que dizemos para sair da cama?",
+    "opts": [
+     [
+      "🛏️",
+      "Get up"
+     ],
+     [
+      "⏰",
+      "Wake up"
+     ],
+     [
+      "👕",
+      "Get dressed"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say get up”"
+   },
+   {
+    "q": "Which phrase means “vestir-se”?",
+    "pt": "Qual expressão significa “vestir-se”?",
+    "opts": [
+     [
+      "👕",
+      "Get dressed"
+     ],
+     [
+      "🛏️",
+      "Get up"
+     ],
+     [
+      "⏰",
+      "Wake up"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say get dressed”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você conta como é a sua manhã. **Diga a que horas você acorda e depois que você se veste rápido.** Mande alguém se levantar.",
+   "ph": "Ex.: I wake up at six. I get dressed quickly.",
+   "chips": [
+    "I wake up at",
+    "I get dressed",
+    "Get up"
+   ],
+   "model": "I wake up at six. I get dressed quickly. Get up, sleepyhead!",
+   "check": [
+    "Disse a hora em que acordo?",
+    "Disse que me visto rápido?",
+    "Mandei alguém se levantar?"
+   ]
+  }
+ },
+ {
+  "n": 7910014,
+  "dquiz": [
+   {
+    "q": "What does the teacher say for “ligar a luz”?",
+    "pt": "O que a professora diz para “ligar a luz”?",
+    "opts": [
+     [
+      "💡",
+      "Turn on the light"
+     ],
+     [
+      "🌑",
+      "Turn off the light"
+     ],
+     [
+      "🔊",
+      "Turn up the light"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say turn on the light”"
+   },
+   {
+    "q": "What do we say to stop the light?",
+    "pt": "O que dizemos para desligar a luz?",
+    "opts": [
+     [
+      "🌑",
+      "Turn off the light"
+     ],
+     [
+      "💡",
+      "Turn on the light"
+     ],
+     [
+      "🔉",
+      "Turn down the light"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say turn off the light”"
+   },
+   {
+    "q": "What do we do to make music louder?",
+    "pt": "O que fazemos para a música ficar mais alta?",
+    "opts": [
+     [
+      "🔊",
+      "Turn up the music"
+     ],
+     [
+      "🔇",
+      "Turn off the music"
+     ],
+     [
+      "🔉",
+      "Turn down the music"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say turn up the music”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está na sala com um amigo. **Peça para ligar a luz, desligar a TV e abaixar a música.** Seja educado.",
+   "ph": "Ex.: Turn on the light, please.",
+   "chips": [
+    "Turn on the light",
+    "turn off the TV",
+    "Turn down the music"
+   ],
+   "model": "Turn on the light, please. Please turn off the TV. Turn down the music, please.",
+   "check": [
+    "Pedi para ligar a luz?",
+    "Pedi para desligar a TV?",
+    "Pedi para abaixar a música?"
+   ]
+  }
+ },
+ {
+  "n": 7910015,
+  "dquiz": [
+   {
+    "q": "What do we say for “vestir a jaqueta”?",
+    "pt": "O que dizemos para “vestir a jaqueta”?",
+    "opts": [
+     [
+      "🧥",
+      "Put on your jacket"
+     ],
+     [
+      "🧥",
+      "Take off your jacket"
+     ],
+     [
+      "🧥",
+      "Hang up your jacket"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say put on your jacket”"
+   },
+   {
+    "q": "What do we say to remove a jacket?",
+    "pt": "O que dizemos para tirar a jaqueta?",
+    "opts": [
+     [
+      "🧥",
+      "Take off your jacket"
+     ],
+     [
+      "🧥",
+      "Put on your jacket"
+     ],
+     [
+      "🧥",
+      "Look at your jacket"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say take off your jacket”"
+   },
+   {
+    "q": "What do we hang up?",
+    "pt": "O que penduramos?",
+    "opts": [
+     [
+      "🧥",
+      "A coat"
+     ],
+     [
+      "👟",
+      "Shoes"
+     ],
+     [
+      "🍰",
+      "Cake"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “hang up your coat”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você chega na casa de um amigo. **Diga para ele pendurar o casaco e tirar os sapatos.** Depois diga para vestir a jaqueta.",
+   "ph": "Ex.: Hang up your coat. Take off your shoes.",
+   "chips": [
+    "Hang up your coat",
+    "Take off your shoes",
+    "Put on your jacket"
+   ],
+   "model": "Hang up your coat. Take off your shoes, please. Put on your jacket, it is cold.",
+   "check": [
+    "Falei para pendurar o casaco?",
+    "Falei para tirar os sapatos?",
+    "Falei para vestir a jaqueta?"
+   ]
+  }
+ },
+ {
+  "n": 7910016,
+  "dquiz": [
+   {
+    "q": "What is “look at”?",
+    "pt": "O que é “look at”?",
+    "opts": [
+     [
+      "👀",
+      "To see something"
+     ],
+     [
+      "🔎",
+      "To search"
+     ],
+     [
+      "📖",
+      "To read a book"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Look at is to see something”"
+   },
+   {
+    "q": "What is “look for”?",
+    "pt": "O que é “look for”?",
+    "opts": [
+     [
+      "🔎",
+      "To search"
+     ],
+     [
+      "👀",
+      "To see something"
+     ],
+     [
+      "📖",
+      "To study"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Look for is to search”"
+   },
+   {
+    "q": "When do we use “look up”?",
+    "pt": "Quando usamos “look up”?",
+    "opts": [
+     [
+      "📖",
+      "To search in a book"
+     ],
+     [
+      "🔑",
+      "To find keys"
+     ],
+     [
+      "🗺️",
+      "To see a map"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “search in a book”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você perdeu suas chaves. **Diga que está procurando as chaves e peça para olhar o mapa.** Diga que procura uma palavra.",
+   "ph": "Ex.: I am looking for my keys. Look at the map.",
+   "chips": [
+    "I am looking for",
+    "Look at the map",
+    "I look up"
+   ],
+   "model": "I am looking for my keys. Look at the map, please. I look up the word.",
+   "check": [
+    "Disse que procuro algo?",
+    "Pedi para olhar o mapa?",
+    "Disse que procuro uma palavra?"
+   ]
+  }
+ },
+ {
+  "n": 7910017,
+  "dquiz": [
+   {
+    "q": "Which words explain the steps?",
+    "pt": "Quais palavras explicam os passos?",
+    "opts": [
+     [
+      "🪜",
+      "First, next, then, finally"
+     ],
+     [
+      "🍰",
+      "Cake, tea, juice"
+     ],
+     [
+      "🏠",
+      "Home, work, bed"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Use first, next, then, finally”"
+   },
+   {
+    "q": "Which word is the last step?",
+    "pt": "Qual palavra é o último passo?",
+    "opts": [
+     [
+      "🏁",
+      "Finally"
+     ],
+     [
+      "1️⃣",
+      "First"
+     ],
+     [
+      "➡️",
+      "Next"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Finally is the last step”"
+   },
+   {
+    "q": "Which word is the first step?",
+    "pt": "Qual palavra é o primeiro passo?",
+    "opts": [
+     [
+      "1️⃣",
+      "First"
+     ],
+     [
+      "🏁",
+      "Finally"
+     ],
+     [
+      "➡️",
+      "Then"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “First is the first step”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você ensina uma receita simples a um amigo. **Explique três passos usando first, next e finally.**",
+   "ph": "Ex.: First, wash your hands. Next, add the cheese.",
+   "chips": [
+    "First, wash",
+    "Next, add",
+    "Finally"
+   ],
+   "model": "First, wash your hands. Next, add the cheese. Finally, eat it!",
+   "check": [
+    "Disse o primeiro passo com first?",
+    "Disse outro passo com next?",
+    "Terminei com finally?"
+   ]
+  }
+ },
+ {
+  "n": 7910018,
+  "dquiz": [
+   {
+    "q": "What does the teacher say for “legal”?",
+    "pt": "O que a professora diz para “legal”?",
+    "opts": [
+     [
+      "😎",
+      "Cool"
+     ],
+     [
+      "😴",
+      "Boring"
+     ],
+     [
+      "😢",
+      "Sad"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say cool”"
+   },
+   {
+    "q": "Which words mean very good?",
+    "pt": "Quais palavras querem dizer muito bom?",
+    "opts": [
+     [
+      "🤩",
+      "Awesome or amazing"
+     ],
+     [
+      "😐",
+      "Small or old"
+     ],
+     [
+      "😠",
+      "Bad or angry"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say awesome or amazing”"
+   },
+   {
+    "q": "Is “great” the same?",
+    "pt": "“Great” é a mesma coisa?",
+    "opts": [
+     [
+      "✅",
+      "Yes, it is very good"
+     ],
+     [
+      "❌",
+      "No, it is bad"
+     ],
+     [
+      "🤷",
+      "No, it is a question"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Great is very good”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu amigo mostra um chapéu novo. **Elogie o chapéu com cool e diga que é awesome.** Diga que ele tem sorte.",
+   "ph": "Ex.: Your hat is cool. That is awesome!",
+   "chips": [
+    "Your hat is cool",
+    "That is awesome",
+    "You are so lucky"
+   ],
+   "model": "Your hat is cool. That is awesome! You are so lucky!",
+   "check": [
+    "Elogiei com cool?",
+    "Usei awesome?",
+    "Disse que ele tem sorte?"
+   ]
+  }
+ },
+ {
+  "n": 7910019,
+  "dquiz": [
+   {
+    "q": "Is “a piece of cake” really cake?",
+    "pt": "“A piece of cake” é bolo de verdade?",
+    "opts": [
+     [
+      "❌",
+      "No, it means very easy"
+     ],
+     [
+      "✅",
+      "Yes, it is food"
+     ],
+     [
+      "🤷",
+      "It means very hard"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “It means very easy”"
+   },
+   {
+    "q": "Which is more fun: easy or a piece of cake?",
+    "pt": "O que é mais divertido: easy ou a piece of cake?",
+    "opts": [
+     [
+      "🍰",
+      "A piece of cake"
+     ],
+     [
+      "📝",
+      "Easy"
+     ],
+     [
+      "📚",
+      "Hard"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “a piece of cake is more fun”"
+   },
+   {
+    "q": "Can Jack use it with friends?",
+    "pt": "Jack pode usar com amigos?",
+    "opts": [
+     [
+      "✅",
+      "Yes, it is informal"
+     ],
+     [
+      "❌",
+      "No, it is formal"
+     ],
+     [
+      "🤷",
+      "Only at work"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “It is informal”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você acabou uma prova. **Diga ao seu amigo que a prova foi muito fácil, com a piece of cake.** Diga também que outra coisa é difícil para você.",
+   "ph": "Ex.: It is a piece of cake. It is hard for me.",
+   "chips": [
+    "It is a piece of cake",
+    "This test is easy",
+    "It is hard for me"
+   ],
+   "model": "It is a piece of cake. This test is easy. English is fun, but it is hard for me.",
+   "check": [
+    "Usei a piece of cake?",
+    "Disse que a prova é fácil?",
+    "Falei de algo difícil?"
+   ]
+  }
+ },
+ {
+  "n": 7910020,
+  "dquiz": [
+   {
+    "q": "Where does “too” go?",
+    "pt": "Onde vai o “too”?",
+    "opts": [
+     [
+      "🔚",
+      "At the end"
+     ],
+     [
+      "▶️",
+      "Before the verb"
+     ],
+     [
+      "🔝",
+      "At the start"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “At the end of the sentence”"
+   },
+   {
+    "q": "Where does “also” go?",
+    "pt": "Onde vai o “also”?",
+    "opts": [
+     [
+      "▶️",
+      "Before the verb"
+     ],
+     [
+      "🔚",
+      "At the end"
+     ],
+     [
+      "🔝",
+      "At the start"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Before the verb”"
+   },
+   {
+    "q": "Where does “as well” go?",
+    "pt": "Onde vai o “as well”?",
+    "opts": [
+     [
+      "🔚",
+      "At the end, like too"
+     ],
+     [
+      "▶️",
+      "Before the verb"
+     ],
+     [
+      "🔝",
+      "At the start"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “At the end, like too”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu amigo diz que gosta de chá. **Diga que você também gosta, e acrescente outra coisa que você faz com also.** Termine com as well.",
+   "ph": "Ex.: I like tea too. I also play soccer.",
+   "chips": [
+    "I like tea too",
+    "I also play",
+    "as well"
+   ],
+   "model": "I like tea too. I also play soccer. I like music as well.",
+   "check": [
+    "Disse que também gosto com too?",
+    "Acrescentei algo com also?",
+    "Usei as well no fim?"
+   ]
+  }
+ },
+ {
+  "n": 7910021,
+  "dquiz": [
+   {
+    "q": "Do we say “play the soccer”?",
+    "pt": "Dizemos “play the soccer”?",
+    "opts": [
+     [
+      "❌",
+      "No, say play soccer"
+     ],
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "🤷",
+      "Only on Sundays"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say play soccer”"
+   },
+   {
+    "q": "What do we play with “the”?",
+    "pt": "O que tocamos com “the”?",
+    "opts": [
+     [
+      "🎹",
+      "The piano"
+     ],
+     [
+      "⚽",
+      "Soccer"
+     ],
+     [
+      "♟️",
+      "Chess"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “play the piano”"
+   },
+   {
+    "q": "Which two things can we play?",
+    "pt": "Quais duas coisas podemos jogar?",
+    "opts": [
+     [
+      "♟️",
+      "Games or chess"
+     ],
+     [
+      "🎹",
+      "Piano or soccer"
+     ],
+     [
+      "📺",
+      "TV or music"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “play games or play chess”"
+   }
+  ],
+  "produce": {
+   "prompt": "Num clube, o instrutor pergunta o que você faz. **Diga que joga futebol, que toca piano e convide alguém para jogar xadrez.**",
+   "ph": "Ex.: I play soccer. I play the piano.",
+   "chips": [
+    "I play soccer",
+    "I play the piano",
+    "play chess"
+   ],
+   "model": "I play soccer on Sundays. I play the piano at home. Let's play chess!",
+   "check": [
+    "Disse que jogo futebol?",
+    "Disse que toco piano?",
+    "Convidei para jogar xadrez?"
+   ]
+  }
+ },
+ {
+  "n": 7910022,
+  "dquiz": [
+   {
+    "q": "Do we say “see TV”?",
+    "pt": "Dizemos “see TV”?",
+    "opts": [
+     [
+      "❌",
+      "No, say watch TV"
+     ],
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "🤷",
+      "Only at night"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “No. Say watch TV”"
+   },
+   {
+    "q": "What do we say for music?",
+    "pt": "O que dizemos para música?",
+    "opts": [
+     [
+      "🎧",
+      "Listen to music"
+     ],
+     [
+      "📺",
+      "Watch music"
+     ],
+     [
+      "📖",
+      "Read music"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say listen to music”"
+   },
+   {
+    "q": "Do we need “to” with listen?",
+    "pt": "Precisamos de “to” com listen?",
+    "opts": [
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "❌",
+      "No, we don't"
+     ],
+     [
+      "🤷",
+      "Only with music"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Yes. Listen to music”"
+   }
+  ],
+  "produce": {
+   "prompt": "É sábado à noite e você fala do seu tempo livre. **Diga que você assiste TV e escuta música.** Pergunte o que o amigo faz.",
+   "ph": "Ex.: I watch TV. I listen to music.",
+   "chips": [
+    "I watch TV",
+    "I listen to music",
+    "What do you do"
+   ],
+   "model": "I watch TV at night. I listen to music too. What do you do?",
+   "check": [
+    "Disse que assisto TV?",
+    "Disse que escuto música?",
+    "Perguntei o que o amigo faz?"
+   ]
+  }
+ },
+ {
+  "n": 7910023,
+  "dquiz": [
+   {
+    "q": "What do we write?",
+    "pt": "O que escrevemos, segundo a resposta?",
+    "opts": [
+     [
+      "✉️",
+      "A letter"
+     ],
+     [
+      "📚",
+      "A book"
+     ],
+     [
+      "💬",
+      "A message"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say write a letter”"
+   },
+   {
+    "q": "What do we read?",
+    "pt": "O que lemos?",
+    "opts": [
+     [
+      "📚",
+      "A book"
+     ],
+     [
+      "✉️",
+      "A letter"
+     ],
+     [
+      "📱",
+      "A phone"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say read a book”"
+   },
+   {
+    "q": "What do we send?",
+    "pt": "O que enviamos?",
+    "opts": [
+     [
+      "💬",
+      "A message"
+     ],
+     [
+      "📚",
+      "A book"
+     ],
+     [
+      "🧾",
+      "A bill"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say send a message”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu amigo mora em outra cidade. **Diga que você escreve uma carta, lê um livro e envia uma mensagem.**",
+   "ph": "Ex.: I write a letter. I read a book.",
+   "chips": [
+    "I write a letter",
+    "I read a book",
+    "send a message"
+   ],
+   "model": "I write a letter to my friend. I read a book at night. I send a message every day.",
+   "check": [
+    "Disse que escrevo uma carta?",
+    "Disse que leio um livro?",
+    "Disse que envio uma mensagem?"
+   ]
+  }
+ },
+ {
+  "n": 7910024,
+  "dquiz": [
+   {
+    "q": "Is “make dinner” fine?",
+    "pt": "“Make dinner” está certo?",
+    "opts": [
+     [
+      "✅",
+      "Yes, both are fine"
+     ],
+     [
+      "❌",
+      "No, never"
+     ],
+     [
+      "🤷",
+      "Only at lunch"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Both are fine”"
+   },
+   {
+    "q": "What do we say for clothes?",
+    "pt": "O que dizemos para roupas?",
+    "opts": [
+     [
+      "👕",
+      "Wash clothes"
+     ],
+     [
+      "🍳",
+      "Cook clothes"
+     ],
+     [
+      "🗑️",
+      "Take out clothes"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say wash clothes or do laundry”"
+   },
+   {
+    "q": "What do we take out?",
+    "pt": "O que levamos para fora?",
+    "opts": [
+     [
+      "🗑️",
+      "The trash"
+     ],
+     [
+      "👕",
+      "The laundry"
+     ],
+     [
+      "🍲",
+      "The dinner"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “take out the trash”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você divide a casa com um colega. **Diga que você cozinha o jantar e lava as roupas.** Peça para ele levar o lixo para fora.",
+   "ph": "Ex.: I cook dinner. Please take out the trash.",
+   "chips": [
+    "I cook dinner",
+    "I wash clothes",
+    "take out the trash"
+   ],
+   "model": "I cook dinner at seven. I wash clothes on Sundays. Please take out the trash.",
+   "check": [
+    "Disse que cozinho o jantar?",
+    "Disse que lavo roupa?",
+    "Pedi para levar o lixo para fora?"
+   ]
+  }
+ },
+ {
+  "n": 7910025,
+  "dquiz": [
+   {
+    "q": "What is “pick up”?",
+    "pt": "O que é “pick up”?",
+    "opts": [
+     [
+      "⬆️",
+      "To take from the floor"
+     ],
+     [
+      "⬇️",
+      "To put on the floor"
+     ],
+     [
+      "💥",
+      "To fall by accident"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “to take from the floor”"
+   },
+   {
+    "q": "What is “put down”?",
+    "pt": "O que é “put down”?",
+    "opts": [
+     [
+      "⬇️",
+      "To put on the floor"
+     ],
+     [
+      "⬆️",
+      "To take from the floor"
+     ],
+     [
+      "🗑️",
+      "To throw away"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Put on the floor”"
+   },
+   {
+    "q": "When do we say “drop”?",
+    "pt": "Quando dizemos “drop”?",
+    "opts": [
+     [
+      "💥",
+      "When it falls by accident"
+     ],
+     [
+      "⬆️",
+      "When we take it"
+     ],
+     [
+      "⬇️",
+      "When we put it down"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Drop is when it falls by accident”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você derrubou sua chave no chão. **Diga que você deixa cair a chave, pega a chave e coloca a bolsa no chão.**",
+   "ph": "Ex.: I drop my keys. I pick up my keys.",
+   "chips": [
+    "I drop my keys",
+    "I pick up",
+    "put down"
+   ],
+   "model": "I drop my keys. I pick up my keys. Then I put down my bag.",
+   "check": [
+    "Disse que derrubei a chave?",
+    "Disse que peguei a chave?",
+    "Disse que coloquei a sacola no chão?"
+   ]
+  }
+ },
+ {
+  "n": 7910026,
+  "dquiz": [
+   {
+    "q": "Which word is earlier?",
+    "pt": "Qual palavra é mais cedo?",
+    "opts": [
+     [
+      "⏪",
+      "Before"
+     ],
+     [
+      "⏩",
+      "After"
+     ],
+     [
+      "❓",
+      "When"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Before is earlier”"
+   },
+   {
+    "q": "Which word is later?",
+    "pt": "Qual palavra é mais tarde?",
+    "opts": [
+     [
+      "⏩",
+      "After"
+     ],
+     [
+      "⏪",
+      "Before"
+     ],
+     [
+      "❓",
+      "When"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “After is later”"
+   },
+   {
+    "q": "What should we do before lunch?",
+    "pt": "O que devemos fazer antes do almoço?",
+    "opts": [
+     [
+      "🧼",
+      "Wash our hands"
+     ],
+     [
+      "📚",
+      "Read a book"
+     ],
+     [
+      "📺",
+      "Watch TV"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Before lunch, wash your hands”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você explica sua rotina de almoço. **Diga o que você faz before lunch e o que faz after lunch.** Pergunte when o amigo almoça.",
+   "ph": "Ex.: Before lunch, wash your hands.",
+   "chips": [
+    "Before lunch",
+    "After lunch",
+    "When do you"
+   ],
+   "model": "Before lunch, I wash my hands. After lunch, I drink tea. When do you have lunch?",
+   "check": [
+    "Disse algo para antes do almoço?",
+    "Disse algo para depois do almoço?",
+    "Perguntei quando o amigo almoça?"
+   ]
+  }
+ },
+ {
+  "n": 7910027,
+  "dquiz": [
+   {
+    "q": "What is “come back”?",
+    "pt": "O que é “come back”?",
+    "opts": [
+     [
+      "📍",
+      "To return here"
+     ],
+     [
+      "🚪",
+      "To return there"
+     ],
+     [
+      "👋",
+      "To say goodbye"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Come back is to return here”"
+   },
+   {
+    "q": "What is “go back”?",
+    "pt": "O que é “go back”?",
+    "opts": [
+     [
+      "🚪",
+      "To return there"
+     ],
+     [
+      "📍",
+      "To return here"
+     ],
+     [
+      "🏠",
+      "To stay home"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Go back is to return there”"
+   },
+   {
+    "q": "How do we say “já volto”?",
+    "pt": "Como dizemos “já volto”?",
+    "opts": [
+     [
+      "⏱️",
+      "I'll be right back"
+     ],
+     [
+      "🚪",
+      "I go home"
+     ],
+     [
+      "👋",
+      "See you later"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “I'll be right back”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você sai da sala por um minuto. **Diga que já volta e peça para o amigo voltar mais tarde.** Diga a que horas você volta para casa.",
+   "ph": "Ex.: I'll be right back. Come back at six.",
+   "chips": [
+    "I'll be right back",
+    "Come back",
+    "get back"
+   ],
+   "model": "I'll be right back. Come back at six, please. I get back home at seven.",
+   "check": [
+    "Disse que já volto?",
+    "Pedi para o amigo voltar?",
+    "Disse quando volto para casa?"
+   ]
+  }
+ },
+ {
+  "n": 7910028,
+  "dquiz": [
+   {
+    "q": "How do we say “foi mal”?",
+    "pt": "Como dizemos “foi mal”?",
+    "opts": [
+     [
+      "🙏",
+      "My bad"
+     ],
+     [
+      "🎩",
+      "I apologize"
+     ],
+     [
+      "👋",
+      "Bye"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say my bad”"
+   },
+   {
+    "q": "Is “my bad” formal?",
+    "pt": "“My bad” é formal?",
+    "opts": [
+     [
+      "❌",
+      "No, use it with friends"
+     ],
+     [
+      "✅",
+      "Yes, use it at work"
+     ],
+     [
+      "🤷",
+      "Yes, with a teacher"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Use it with friends”"
+   },
+   {
+    "q": "What do we say in a formal situation?",
+    "pt": "O que dizemos numa situação formal?",
+    "opts": [
+     [
+      "🎩",
+      "I apologize"
+     ],
+     [
+      "🙏",
+      "My bad"
+     ],
+     [
+      "😎",
+      "Cool"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say I apologize”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você esbarrou em um amigo. **Peça desculpas com my bad.** Depois peça desculpas formalmente a um chefe, com I apologize.",
+   "ph": "Ex.: Sorry, my bad!",
+   "chips": [
+    "Sorry",
+    "my bad",
+    "I apologize"
+   ],
+   "model": "Sorry, my bad! I apologize, I am late.",
+   "check": [
+    "Pedi desculpas ao amigo?",
+    "Usei my bad?",
+    "Pedi desculpas formalmente?"
+   ]
+  }
+ },
+ {
+  "n": 7910029,
+  "dquiz": [
+   {
+    "q": "How do we ask about feelings?",
+    "pt": "Como perguntamos sobre sentimentos?",
+    "opts": [
+     [
+      "❓",
+      "How do you feel?"
+     ],
+     [
+      "❓",
+      "Where are you?"
+     ],
+     [
+      "❓",
+      "What is it?"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say how do you feel”"
+   },
+   {
+    "q": "How can we answer?",
+    "pt": "Como podemos responder?",
+    "opts": [
+     [
+      "😊",
+      "I feel happy"
+     ],
+     [
+      "😢",
+      "I feel the bus"
+     ],
+     [
+      "😴",
+      "I feel a cake"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say I feel happy”"
+   },
+   {
+    "q": "Can we say “I am happy”?",
+    "pt": "Podemos dizer “I am happy”?",
+    "opts": [
+     [
+      "✅",
+      "Yes, both are fine"
+     ],
+     [
+      "❌",
+      "No, never"
+     ],
+     [
+      "🤷",
+      "Only on Monday"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Both are fine”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu colega parece cansado. **Pergunte como ele se sente e diga como você se sente.** Use feel e um adjetivo.",
+   "ph": "Ex.: How do you feel? I feel happy.",
+   "chips": [
+    "How do you feel",
+    "I feel",
+    "I am"
+   ],
+   "model": "How do you feel today? I feel good. I am happy.",
+   "check": [
+    "Perguntei como ele se sente?",
+    "Disse como eu me sinto?",
+    "Usei I am com um adjetivo?"
+   ]
+  }
+ },
+ {
+  "n": 7910030,
+  "dquiz": [
+   {
+    "q": "What does “I am cold” mean?",
+    "pt": "O que significa “I am cold”?",
+    "opts": [
+     [
+      "🥶",
+      "You feel cold"
+     ],
+     [
+      "🤧",
+      "You have a cold"
+     ],
+     [
+      "🤕",
+      "You have a headache"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “você está com frio”"
+   },
+   {
+    "q": "How do we say “resfriado”?",
+    "pt": "Como dizemos “resfriado”?",
+    "opts": [
+     [
+      "🤧",
+      "I have a cold"
+     ],
+     [
+      "🥶",
+      "I am cold"
+     ],
+     [
+      "🤕",
+      "I have a headache"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say I have a cold”"
+   },
+   {
+    "q": "How do we say “dor de cabeça”?",
+    "pt": "Como dizemos “dor de cabeça”?",
+    "opts": [
+     [
+      "🤕",
+      "I have a headache"
+     ],
+     [
+      "🤧",
+      "I have a cold"
+     ],
+     [
+      "🥶",
+      "I am cold"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say I have a headache”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você liga para o trabalho porque não está bem. **Diga que você está resfriado e que tem dor de cabeça.** Diga que vai ficar em casa.",
+   "ph": "Ex.: I have a cold. I have a headache.",
+   "chips": [
+    "I have a cold",
+    "I have a headache",
+    "stay home"
+   ],
+   "model": "Sorry, I have a cold. I have a headache too. I stay home today.",
+   "check": [
+    "Disse que estou resfriado?",
+    "Disse que tenho dor de cabeça?",
+    "Disse que fico em casa?"
+   ]
+  }
+ },
+ {
+  "n": 7910031,
+  "dquiz": [
+   {
+    "q": "What is “clean up”?",
+    "pt": "O que é “clean up”?",
+    "opts": [
+     [
+      "🧹",
+      "To make a place tidy"
+     ],
+     [
+      "🧼",
+      "An adjective"
+     ],
+     [
+      "📖",
+      "To read a book"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “to make a place tidy”"
+   },
+   {
+    "q": "What is “clean” in the lesson?",
+    "pt": "O que é “clean” na aula?",
+    "opts": [
+     [
+      "🧼",
+      "An adjective or verb"
+     ],
+     [
+      "🏠",
+      "A place"
+     ],
+     [
+      "🧹",
+      "Only tidy up"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Clean is an adjective or verb”"
+   },
+   {
+    "q": "Is “tidy up” different from “clean up”?",
+    "pt": "“Tidy up” é diferente de “clean up”?",
+    "opts": [
+     [
+      "🟰",
+      "It is almost the same"
+     ],
+     [
+      "↔️",
+      "It is the opposite"
+     ],
+     [
+      "❌",
+      "It is very different"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “almost the same”"
+   }
+  ],
+  "produce": {
+   "prompt": "Sua sala está bagunçada. **Diga a um amigo que vocês vão arrumar o quarto e limpar a mesa.** Use clean up e tidy up.",
+   "ph": "Ex.: Let's tidy up the room.",
+   "chips": [
+    "Let's clean up",
+    "tidy up",
+    "wipe off"
+   ],
+   "model": "Let's clean up the kitchen. Please tidy up your room. Wipe off the table.",
+   "check": [
+    "Convidei para limpar?",
+    "Pedi para arrumar o quarto?",
+    "Pedi para limpar a mesa?"
+   ]
+  }
+ },
+ {
+  "n": 7910032,
+  "dquiz": [
+   {
+    "q": "How do we ask to try something on?",
+    "pt": "Como pedimos para experimentar algo?",
+    "opts": [
+     [
+      "👗",
+      "Can I try it on?"
+     ],
+     [
+      "💳",
+      "Can I pay by card?"
+     ],
+     [
+      "💰",
+      "How much is it?"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say can I try it on”"
+   },
+   {
+    "q": "How do we ask the price?",
+    "pt": "Como perguntamos o preço?",
+    "opts": [
+     [
+      "💰",
+      "How much is it?"
+     ],
+     [
+      "👗",
+      "Can I try it on?"
+     ],
+     [
+      "💳",
+      "Can I pay by card?"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say how much is it”"
+   },
+   {
+    "q": "How do we ask to pay with a card?",
+    "pt": "Como pedimos para pagar com cartão?",
+    "opts": [
+     [
+      "💳",
+      "Can I pay by card?"
+     ],
+     [
+      "💰",
+      "How much is it?"
+     ],
+     [
+      "👗",
+      "Can I try it on?"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say can I pay by card”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está numa loja de roupas. **Peça para experimentar uma camisa, pergunte o preço e pergunte se pode pagar com cartão.**",
+   "ph": "Ex.: Can I try it on? How much is it?",
+   "chips": [
+    "Can I try it on",
+    "How much is it",
+    "Can I pay by card"
+   ],
+   "model": "Can I try it on, please? How much is it? Can I pay by card?",
+   "check": [
+    "Pedi para experimentar?",
+    "Perguntei o preço?",
+    "Perguntei se posso pagar com cartão?"
+   ]
+  }
+ },
+ {
+  "n": 7910033,
+  "dquiz": [
+   {
+    "q": "Do we say “do a photo”?",
+    "pt": "Dizemos “do a photo”?",
+    "opts": [
+     [
+      "❌",
+      "No, say take a photo"
+     ],
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "🤷",
+      "Only with a phone"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say take a photo”"
+   },
+   {
+    "q": "What do we say for a call?",
+    "pt": "O que dizemos para uma ligação?",
+    "opts": [
+     [
+      "📞",
+      "Make a call"
+     ],
+     [
+      "📞",
+      "Take a call"
+     ],
+     [
+      "📞",
+      "Do a call"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say make a call”"
+   },
+   {
+    "q": "What do we say for a selfie?",
+    "pt": "O que dizemos para uma selfie?",
+    "opts": [
+     [
+      "🤳",
+      "Take a selfie"
+     ],
+     [
+      "🤳",
+      "Make a selfie"
+     ],
+     [
+      "🤳",
+      "Do a selfie"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say take a selfie”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está de férias na praia. **Diga que você tira fotos e faz uma ligação para a sua mãe.** Convide um amigo para uma selfie.",
+   "ph": "Ex.: I take photos. I make a call.",
+   "chips": [
+    "I take photos",
+    "I make a call",
+    "Let's take a selfie"
+   ],
+   "model": "I take photos of the beach. I make a call to my mom. Let's take a selfie!",
+   "check": [
+    "Disse que tiro fotos?",
+    "Disse que faço uma ligação?",
+    "Convidei para uma selfie?"
+   ]
+  }
+ },
+ {
+  "n": 7910034,
+  "dquiz": [
+   {
+    "q": "How do we ask for help?",
+    "pt": "Como pedimos ajuda?",
+    "opts": [
+     [
+      "🆘",
+      "Can you help me?"
+     ],
+     [
+      "❓",
+      "Can I ask a question?"
+     ],
+     [
+      "🚫",
+      "Do a question"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say can you help me”"
+   },
+   {
+    "q": "How do we ask a question politely?",
+    "pt": "Como fazemos uma pergunta com educação?",
+    "opts": [
+     [
+      "🙋",
+      "Can I ask a question?"
+     ],
+     [
+      "🆘",
+      "Can you help me?"
+     ],
+     [
+      "🚫",
+      "Do a question"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say can I ask a question”"
+   },
+   {
+    "q": "Is “do a question” correct?",
+    "pt": "“Do a question” está certo?",
+    "opts": [
+     [
+      "❌",
+      "No, say ask a question"
+     ],
+     [
+      "✅",
+      "Yes, it is"
+     ],
+     [
+      "🤷",
+      "Only in class"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say ask a question”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você está perdido num prédio novo. **Peça ajuda a uma pessoa e pergunte se pode fazer uma pergunta.** Agradeça pela resposta.",
+   "ph": "Ex.: Can you help me? Can I ask a question?",
+   "chips": [
+    "Can you help me",
+    "Can I ask a question",
+    "Thank you"
+   ],
+   "model": "Excuse me, can you help me? Can I ask a question? Thank you for the answer.",
+   "check": [
+    "Pedi ajuda?",
+    "Pedi para fazer uma pergunta?",
+    "Agradeci a resposta?"
+   ]
+  }
+ },
+ {
+  "n": 7910035,
+  "dquiz": [
+   {
+    "q": "What does “hard” mean?",
+    "pt": "O que significa “hard”?",
+    "opts": [
+     [
+      "💪",
+      "With effort"
+     ],
+     [
+      "🚫",
+      "Almost not"
+     ],
+     [
+      "⚡",
+      "Very quick"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Hard is with effort”"
+   },
+   {
+    "q": "What is the adverb of “good”?",
+    "pt": "Qual é o advérbio de “good”?",
+    "opts": [
+     [
+      "👍",
+      "Well"
+     ],
+     [
+      "💪",
+      "Hard"
+     ],
+     [
+      "⚡",
+      "Fast"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “It is well”"
+   },
+   {
+    "q": "Which word is also an adverb?",
+    "pt": "Qual palavra também é um advérbio?",
+    "opts": [
+     [
+      "⚡",
+      "Fast"
+     ],
+     [
+      "🏠",
+      "Home"
+     ],
+     [
+      "🍰",
+      "Cake"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Fast is also an adverb”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu professor pergunta como você estuda. **Diga que você trabalha duro, que fala inglês bem e que corre rápido.**",
+   "ph": "Ex.: I work hard. I speak English well.",
+   "chips": [
+    "I work hard",
+    "I speak English well",
+    "I run fast"
+   ],
+   "model": "I work hard every day. I speak English well. I run fast too.",
+   "check": [
+    "Disse que trabalho duro?",
+    "Disse que falo bem?",
+    "Disse que corro rápido?"
+   ]
+  }
+ },
+ {
+  "n": 7910036,
+  "dquiz": [
+   {
+    "q": "How do we say “pegar no sono”?",
+    "pt": "Como dizemos “pegar no sono”?",
+    "opts": [
+     [
+      "😴",
+      "Fall asleep"
+     ],
+     [
+      "🌙",
+      "Stay up"
+     ],
+     [
+      "🛏️",
+      "Go to bed"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say fall asleep”"
+   },
+   {
+    "q": "How do we say “ficar acordado”?",
+    "pt": "Como dizemos “ficar acordado”?",
+    "opts": [
+     [
+      "🌙",
+      "Stay up"
+     ],
+     [
+      "😴",
+      "Fall asleep"
+     ],
+     [
+      "🛏️",
+      "Go to bed"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say stay up”"
+   },
+   {
+    "q": "How do we say “ir dormir”?",
+    "pt": "Como dizemos “ir dormir”?",
+    "opts": [
+     [
+      "🛏️",
+      "Go to bed"
+     ],
+     [
+      "🌙",
+      "Stay up"
+     ],
+     [
+      "😴",
+      "Fall asleep"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say go to bed”"
+   }
+  ],
+  "produce": {
+   "prompt": "Hoje é sexta à noite. **Diga a que horas você vai dormir e peça a um amigo para não ficar acordado até tarde.** Diga que você pega no sono rápido.",
+   "ph": "Ex.: I go to bed at ten. I fall asleep quickly.",
+   "chips": [
+    "I go to bed",
+    "Don't stay up",
+    "I fall asleep"
+   ],
+   "model": "I go to bed at ten. Don't stay up late, please. I fall asleep quickly.",
+   "check": [
+    "Disse quando vou dormir?",
+    "Pedi para não ficar acordado até tarde?",
+    "Disse que pego no sono?"
+   ]
+  }
+ },
+ {
+  "n": 7910037,
+  "dquiz": [
+   {
+    "q": "How do we say “fazer check-in”?",
+    "pt": "Como dizemos “fazer check-in”?",
+    "opts": [
+     [
+      "🏨",
+      "Check in"
+     ],
+     [
+      "🚪",
+      "Check out"
+     ],
+     [
+      "🛏️",
+      "Go to bed"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say check in”"
+   },
+   {
+    "q": "How do we say “fazer check-out”?",
+    "pt": "Como dizemos “fazer check-out”?",
+    "opts": [
+     [
+      "🚪",
+      "Check out"
+     ],
+     [
+      "🏨",
+      "Check in"
+     ],
+     [
+      "🧳",
+      "Get on"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say check out”"
+   },
+   {
+    "q": "How do we write the noun?",
+    "pt": "Como escrevemos o substantivo?",
+    "opts": [
+     [
+      "✍️",
+      "Check-in with a hyphen"
+     ],
+     [
+      "✍️",
+      "Checkin with no space"
+     ],
+     [
+      "✍️",
+      "Check in with two words"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Check-in with a hyphen”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você chega a um hotel. **Diga à recepcionista que quer fazer o check in e pergunte a que horas é o check out.**",
+   "ph": "Ex.: I want to check in. What time is check out?",
+   "chips": [
+    "I want to check in",
+    "What time is check out",
+    "Thank you"
+   ],
+   "model": "Hello, I want to check in. What time is check out? Thank you!",
+   "check": [
+    "Disse que quero fazer o check in?",
+    "Perguntei a hora do check out?",
+    "Agradeci?"
+   ]
+  }
+ },
+ {
+  "n": 7910038,
+  "dquiz": [
+   {
+    "q": "When do we say “get on”?",
+    "pt": "Quando dizemos “get on”?",
+    "opts": [
+     [
+      "🚌",
+      "For bus, train, plane"
+     ],
+     [
+      "🚗",
+      "For car and taxi"
+     ],
+     [
+      "🏠",
+      "For a house"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “For bus, train, plane”"
+   },
+   {
+    "q": "When do we say “get in”?",
+    "pt": "Quando dizemos “get in”?",
+    "opts": [
+     [
+      "🚕",
+      "For car and taxi"
+     ],
+     [
+      "🚆",
+      "For train and plane"
+     ],
+     [
+      "🚌",
+      "For bus only"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “For car and taxi”"
+   },
+   {
+    "q": "How do we leave a bus?",
+    "pt": "Como saímos de um ônibus?",
+    "opts": [
+     [
+      "🛑",
+      "Get off"
+     ],
+     [
+      "🚌",
+      "Get on"
+     ],
+     [
+      "🚕",
+      "Get in"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say get off”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você anda de ônibus todos os dias. **Diga onde você sobe no ônibus e onde você desce.** Diga que sobe num táxi com get in.",
+   "ph": "Ex.: I get on the bus. I get off at the park.",
+   "chips": [
+    "I get on the bus",
+    "I get off",
+    "get in the taxi"
+   ],
+   "model": "I get on the bus at the school. I get off at the park. Then I get in the taxi.",
+   "check": [
+    "Disse onde subo no ônibus?",
+    "Disse onde desço?",
+    "Falei do táxi com get in?"
+   ]
+  }
+ },
+ {
+  "n": 7910039,
+  "dquiz": [
+   {
+    "q": "Does “break a leg” mean break a leg?",
+    "pt": "“Break a leg” quer dizer quebrar a perna?",
+    "opts": [
+     [
+      "❌",
+      "No, it means good luck"
+     ],
+     [
+      "✅",
+      "Yes, it does"
+     ],
+     [
+      "🤷",
+      "It means goodbye"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “It means good luck”"
+   },
+   {
+    "q": "When do we say it?",
+    "pt": "Quando dizemos isso?",
+    "opts": [
+     [
+      "🎭",
+      "Before a show"
+     ],
+     [
+      "🛏️",
+      "Before bed"
+     ],
+     [
+      "🍽️",
+      "Before lunch"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Before a show”"
+   },
+   {
+    "q": "Is “good luck” more neutral?",
+    "pt": "“Good luck” é mais neutro?",
+    "opts": [
+     [
+      "✅",
+      "Yes, it is"
+     ],
+     [
+      "❌",
+      "No, it is not"
+     ],
+     [
+      "🤷",
+      "Only at home"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “It is more neutral”"
+   }
+  ],
+  "produce": {
+   "prompt": "Sua amiga vai cantar num show hoje. **Deseje boa sorte a ela com break a leg.** Diga que vai ver o show e deseje good luck de forma neutra.",
+   "ph": "Ex.: Break a leg! Good luck!",
+   "chips": [
+    "Break a leg",
+    "Good luck",
+    "I see the show"
+   ],
+   "model": "Break a leg! Good luck! I see the show tonight.",
+   "check": [
+    "Usei break a leg?",
+    "Desejei good luck?",
+    "Disse que vou ver o show?"
+   ]
+  }
+ },
+ {
+  "n": 7910040,
+  "dquiz": [
+   {
+    "q": "How do we get attention?",
+    "pt": "Como chamamos a atenção de alguém?",
+    "opts": [
+     [
+      "🙋",
+      "Excuse me"
+     ],
+     [
+      "🙏",
+      "Pardon"
+     ],
+     [
+      "😎",
+      "Cool"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say excuse me”"
+   },
+   {
+    "q": "How do we ask for repetition?",
+    "pt": "Como pedimos para repetir?",
+    "opts": [
+     [
+      "🔁",
+      "Pardon? or sorry?"
+     ],
+     [
+      "🙋",
+      "Excuse me"
+     ],
+     [
+      "👋",
+      "Goodbye"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say pardon? or sorry”"
+   },
+   {
+    "q": "How do we say we don't understand?",
+    "pt": "Como dizemos que não entendemos?",
+    "opts": [
+     [
+      "🤔",
+      "I don't understand"
+     ],
+     [
+      "🔁",
+      "Excuse me"
+     ],
+     [
+      "😊",
+      "I feel happy"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say I don't understand”"
+   }
+  ],
+  "produce": {
+   "prompt": "Alguém fala rápido demais com você na rua. **Chame a atenção da pessoa, peça para repetir e diga que você não entende.**",
+   "ph": "Ex.: Excuse me. Pardon?",
+   "chips": [
+    "Excuse me",
+    "Pardon",
+    "I don't understand"
+   ],
+   "model": "Excuse me. Pardon? Sorry, I don't understand.",
+   "check": [
+    "Chamei a atenção da pessoa?",
+    "Pedi para repetir?",
+    "Disse que não entendo?"
+   ]
+  }
+ },
+ {
+  "n": 7910041,
+  "dquiz": [
+   {
+    "q": "How do we say “it rains a lot”?",
+    "pt": "Como dizemos que “chove muito”?",
+    "opts": [
+     [
+      "🌧️",
+      "It's pouring"
+     ],
+     [
+      "☀️",
+      "It's sunny"
+     ],
+     [
+      "❄️",
+      "It's snowing"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say it's pouring”"
+   },
+   {
+    "q": "Which idiom means rain a lot?",
+    "pt": "Qual expressão idiomática quer dizer chover muito?",
+    "opts": [
+     [
+      "🐱",
+      "It's raining cats and dogs"
+     ],
+     [
+      "🐶",
+      "It's cats and dogs"
+     ],
+     [
+      "🌧️",
+      "It's raining a cat"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “it's raining cats and dogs”"
+   },
+   {
+    "q": "Are there really cats in the rain?",
+    "pt": "Há mesmo gatos na chuva?",
+    "opts": [
+     [
+      "❌",
+      "No, it is an expression"
+     ],
+     [
+      "✅",
+      "Yes, there are"
+     ],
+     [
+      "🤷",
+      "Only in winter"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “only an expression”"
+   }
+  ],
+  "produce": {
+   "prompt": "Está chovendo forte e você liga para um amigo. **Diga que está chovendo muito, usando it's pouring e a expressão com cats and dogs.** Diga que fica em casa.",
+   "ph": "Ex.: It's pouring! It's raining cats and dogs!",
+   "chips": [
+    "It's pouring",
+    "It's raining cats and dogs",
+    "I stay home"
+   ],
+   "model": "It's pouring! It's raining cats and dogs! I stay home today.",
+   "check": [
+    "Disse que chove muito com pouring?",
+    "Usei a expressão com cats and dogs?",
+    "Disse que fico em casa?"
+   ]
+  }
+ },
+ {
+  "n": 7910042,
+  "dquiz": [
+   {
+    "q": "What do we say on a birthday?",
+    "pt": "O que dizemos no aniversário?",
+    "opts": [
+     [
+      "🎂",
+      "Happy birthday"
+     ],
+     [
+      "🎓",
+      "Congratulations"
+     ],
+     [
+      "🤝",
+      "Same to you"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say happy birthday”"
+   },
+   {
+    "q": "What do we say when someone passes a test?",
+    "pt": "O que dizemos quando alguém passa numa prova?",
+    "opts": [
+     [
+      "🎓",
+      "Congratulations"
+     ],
+     [
+      "🎂",
+      "Happy birthday"
+     ],
+     [
+      "🤝",
+      "Same to you"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say congratulations”"
+   },
+   {
+    "q": "How do we answer best wishes?",
+    "pt": "Como respondemos a votos?",
+    "opts": [
+     [
+      "🤝",
+      "Same to you"
+     ],
+     [
+      "🎓",
+      "Congratulations"
+     ],
+     [
+      "🎂",
+      "Happy birthday"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say same to you”"
+   }
+  ],
+  "produce": {
+   "prompt": "Sua colega faz aniversário e passou numa prova. **Deseje feliz aniversário a ela e dê os parabéns pela prova.** Responda a best wishes com same to you.",
+   "ph": "Ex.: Happy birthday! Congratulations!",
+   "chips": [
+    "Happy birthday",
+    "Congratulations",
+    "Same to you"
+   ],
+   "model": "Happy birthday! Congratulations on the test! Best wishes! Same to you!",
+   "check": [
+    "Desejei feliz aniversário?",
+    "Dei os parabéns?",
+    "Respondi com same to you?"
+   ]
+  }
+ },
+ {
+  "n": 7910043,
+  "dquiz": [
+   {
+    "q": "What does “How are you really?” mean?",
+    "pt": "O que significa “How are you really?”",
+    "opts": [
+     [
+      "🗣️",
+      "Tell me the truth"
+     ],
+     [
+      "👋",
+      "Say goodbye"
+     ],
+     [
+      "🍽️",
+      "Eat something"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “tell me the truth”"
+   },
+   {
+    "q": "How do people usually answer?",
+    "pt": "Como as pessoas costumam responder?",
+    "opts": [
+     [
+      "🙂",
+      "Fine, thanks"
+     ],
+     [
+      "😭",
+      "Very bad"
+     ],
+     [
+      "🤐",
+      "No answer"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “fine, thanks”"
+   },
+   {
+    "q": "Is “fine” always true?",
+    "pt": "“Fine” é sempre verdade?",
+    "opts": [
+     [
+      "❌",
+      "No, it is polite"
+     ],
+     [
+      "✅",
+      "Yes, always"
+     ],
+     [
+      "🤷",
+      "Only on Monday"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Fine is a polite answer”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um amigo vê você triste. **Responda How are you really? com sinceridade e diga como você se sente.** Depois pergunte como ele está.",
+   "ph": "Ex.: I am tired, but fine. And you?",
+   "chips": [
+    "How are you",
+    "I am",
+    "And you"
+   ],
+   "model": "Thanks. How are you really? I am tired today. And you?",
+   "check": [
+    "Respondi com sinceridade?",
+    "Disse como me sinto?",
+    "Perguntei como ele está?"
+   ]
+  }
+ },
+ {
+  "n": 7910044,
+  "dquiz": [
+   {
+    "q": "What do we say when someone says sorry?",
+    "pt": "O que dizemos quando alguém pede desculpas?",
+    "opts": [
+     [
+      "😌",
+      "No worries"
+     ],
+     [
+      "😠",
+      "Go away"
+     ],
+     [
+      "🎂",
+      "Happy birthday"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say no worries”"
+   },
+   {
+    "q": "Is “no worries” formal?",
+    "pt": "“No worries” é formal?",
+    "opts": [
+     [
+      "❌",
+      "No, it is not"
+     ],
+     [
+      "✅",
+      "Yes, it is"
+     ],
+     [
+      "🤷",
+      "Only at work"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “No. Say it's okay in a formal place”"
+   },
+   {
+    "q": "What does “hakuna matata” mean?",
+    "pt": "O que significa “hakuna matata”?",
+    "opts": [
+     [
+      "😌",
+      "No worries"
+     ],
+     [
+      "🍽️",
+      "Good food"
+     ],
+     [
+      "👋",
+      "Goodbye"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “It means no worries”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um colega derrubou seu café e pede desculpas. **Diga no worries a ele.** Em um lugar formal, diga it's okay e agradeça.",
+   "ph": "Ex.: No worries! It's okay.",
+   "chips": [
+    "No worries",
+    "It's okay",
+    "Thank you"
+   ],
+   "model": "No worries! It's okay. Thank you for the help.",
+   "check": [
+    "Disse no worries?",
+    "Disse it's okay?",
+    "Agradeci?"
+   ]
+  }
+ },
+ {
+  "n": 7910045,
+  "dquiz": [
+   {
+    "q": "How do we accept a plan?",
+    "pt": "Como aceitamos um plano?",
+    "opts": [
+     [
+      "👍",
+      "Sounds good"
+     ],
+     [
+      "🤝",
+      "It's a deal"
+     ],
+     [
+      "🤷",
+      "Maybe"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say sounds good”"
+   },
+   {
+    "q": "What do we say to close a deal?",
+    "pt": "O que dizemos para fechar um acordo?",
+    "opts": [
+     [
+      "🤝",
+      "It's a deal"
+     ],
+     [
+      "👍",
+      "Sounds good"
+     ],
+     [
+      "🤷",
+      "I'm not sure"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say it's a deal”"
+   },
+   {
+    "q": "How do we say “talvez”?",
+    "pt": "Como dizemos “talvez”?",
+    "opts": [
+     [
+      "🤷",
+      "Maybe"
+     ],
+     [
+      "🤝",
+      "It's a deal"
+     ],
+     [
+      "👍",
+      "Sounds good"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say maybe or I'm not sure”"
+   }
+  ],
+  "produce": {
+   "prompt": "Um amigo convida você para o cinema no sábado. **Aceite o plano com sounds good e feche o combinado com it's a deal.** Diga maybe para outro convite.",
+   "ph": "Ex.: Sounds good! It's a deal!",
+   "chips": [
+    "Sounds good",
+    "It's a deal",
+    "Maybe"
+   ],
+   "model": "Sounds good! It's a deal. Maybe on Sunday, I'm not sure.",
+   "check": [
+    "Aceitei o plano?",
+    "Fechei o combinado?",
+    "Disse maybe para o outro convite?"
+   ]
+  }
+ },
+ {
+  "n": 7910046,
+  "dquiz": [
+   {
+    "q": "What do we write on a test?",
+    "pt": "O que escrevemos numa prova?",
+    "opts": [
+     [
+      "📝",
+      "Going to"
+     ],
+     [
+      "🗣️",
+      "Gonna"
+     ],
+     [
+      "🗣️",
+      "Wanna"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Write going to”"
+   },
+   {
+    "q": "When do we say “gonna”?",
+    "pt": "Quando dizemos “gonna”?",
+    "opts": [
+     [
+      "👫",
+      "With friends"
+     ],
+     [
+      "📝",
+      "On a test"
+     ],
+     [
+      "🎓",
+      "With a boss"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “When you talk with friends”"
+   },
+   {
+    "q": "What is “wanna” in casual speech?",
+    "pt": "O que é “wanna” na fala informal?",
+    "opts": [
+     [
+      "💭",
+      "Want to"
+     ],
+     [
+      "💭",
+      "Going to"
+     ],
+     [
+      "💭",
+      "Have to"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “want to in casual speech”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você combina um passeio com um amigo, falando de modo informal. **Diga o que você vai fazer com gonna e o que você quer fazer com wanna.**",
+   "ph": "Ex.: I'm gonna eat. I wanna go home.",
+   "chips": [
+    "I'm gonna",
+    "I wanna",
+    "going to"
+   ],
+   "model": "I'm gonna watch a movie. I wanna eat pizza. On a test, I write going to.",
+   "check": [
+    "Usei gonna?",
+    "Usei wanna?",
+    "Lembrei de going to para a prova?"
+   ]
+  }
+ },
+ {
+  "n": 7910047,
+  "dquiz": [
+   {
+    "q": "Do we really hit a book?",
+    "pt": "Batemos mesmo num livro?",
+    "opts": [
+     [
+      "❌",
+      "No, it means study hard"
+     ],
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "🤷",
+      "It means read a menu"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Hit the books means study hard”"
+   },
+   {
+    "q": "When do we use it?",
+    "pt": "Quando usamos?",
+    "opts": [
+     [
+      "📅",
+      "Before an exam"
+     ],
+     [
+      "🍽️",
+      "Before dinner"
+     ],
+     [
+      "🛏️",
+      "Before bed"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Before an exam”"
+   },
+   {
+    "q": "Is “study” correct too?",
+    "pt": "“Study” também está certo?",
+    "opts": [
+     [
+      "✅",
+      "Yes, hit the books is more fun"
+     ],
+     [
+      "❌",
+      "No, it is wrong"
+     ],
+     [
+      "🤷",
+      "Only at school"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Hit the books is more fun”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você tem uma prova na sexta. **Diga que precisa estudar muito usando hit the books.** Convide um amigo para estudar com você.",
+   "ph": "Ex.: I have an exam. I need to hit the books.",
+   "chips": [
+    "I have an exam",
+    "hit the books",
+    "Let's study"
+   ],
+   "model": "I have an exam on Friday. I need to hit the books. Let's study together!",
+   "check": [
+    "Disse que tenho uma prova?",
+    "Usei hit the books?",
+    "Convidei o amigo para estudar?"
+   ]
+  }
+ },
+ {
+  "n": 7910048,
+  "dquiz": [
+   {
+    "q": "Do we pay with our body?",
+    "pt": "Pagamos com o corpo?",
+    "opts": [
+     [
+      "❌",
+      "No, it means very expensive"
+     ],
+     [
+      "✅",
+      "Yes, we do"
+     ],
+     [
+      "🤷",
+      "It means very cheap"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “It means very expensive”"
+   },
+   {
+    "q": "Who do we say it to?",
+    "pt": "Com quem usamos essa expressão?",
+    "opts": [
+     [
+      "👫",
+      "Friends"
+     ],
+     [
+      "🎩",
+      "A boss"
+     ],
+     [
+      "🏛️",
+      "A judge"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “It is for friends”"
+   },
+   {
+    "q": "What is the opposite?",
+    "pt": "Qual é o oposto?",
+    "opts": [
+     [
+      "🏷️",
+      "It's a bargain"
+     ],
+     [
+      "💸",
+      "It's expensive"
+     ],
+     [
+      "🤷",
+      "It's an arm"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “it's a bargain”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você vê um relógio muito caro na loja. **Diga a um amigo que o relógio custa a arm and a leg.** Depois diga que outro produto é a bargain.",
+   "ph": "Ex.: This watch costs an arm and a leg.",
+   "chips": [
+    "costs an arm and a leg",
+    "It's a bargain",
+    "How much is"
+   ],
+   "model": "This watch costs an arm and a leg. How much is the hat? It's a bargain!",
+   "check": [
+    "Disse que o relógio é muito caro?",
+    "Disse que outro produto é barato?",
+    "Perguntei o preço de algo?"
+   ]
+  }
+ },
+ {
+  "n": 7910049,
+  "dquiz": [
+   {
+    "q": "How do we say “keep in touch”?",
+    "pt": "Como dizemos “manter contato”?",
+    "opts": [
+     [
+      "📲",
+      "Keep in touch"
+     ],
+     [
+      "💔",
+      "Lose touch"
+     ],
+     [
+      "🤗",
+      "I miss you"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say keep in touch”"
+   },
+   {
+    "q": "How do we say “lose contact”?",
+    "pt": "Como dizemos “perder contato”?",
+    "opts": [
+     [
+      "💔",
+      "Lose touch"
+     ],
+     [
+      "📲",
+      "Keep in touch"
+     ],
+     [
+      "🤗",
+      "I miss you"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “Say lose touch”"
+   },
+   {
+    "q": "How do we say “I miss you”?",
+    "pt": "Como dizemos “sinto sua falta”?",
+    "opts": [
+     [
+      "🤗",
+      "I miss you"
+     ],
+     [
+      "💔",
+      "Lose touch"
+     ],
+     [
+      "📲",
+      "Keep in touch"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “Say I miss you”"
+   }
+  ],
+  "produce": {
+   "prompt": "Seu amigo vai morar em outra cidade. **Peça a ele para manter contato e diga que vai sentir saudade.** Diga que não quer perder contato.",
+   "ph": "Ex.: Keep in touch! I miss you.",
+   "chips": [
+    "Keep in touch",
+    "I miss you",
+    "lose touch"
+   ],
+   "model": "Keep in touch, please! I miss you. I don't want to lose touch.",
+   "check": [
+    "Pedi para manter contato?",
+    "Disse que sinto saudade?",
+    "Disse que não quero perder contato?"
+   ]
+  }
+ },
+ {
+  "n": 7910050,
+  "dquiz": [
+   {
+    "q": "How do we say goodbye with friends?",
+    "pt": "Como nos despedimos de amigos?",
+    "opts": [
+     [
+      "👋",
+      "Bye or see you later"
+     ],
+     [
+      "🎩",
+      "I apologize"
+     ],
+     [
+      "🤝",
+      "It's a deal"
+     ]
+    ],
+    "a": 0,
+    "line": 1,
+    "why": "Teacher diz: “Say bye or see you later”"
+   },
+   {
+    "q": "What does “see you around” mean?",
+    "pt": "O que significa “see you around”?",
+    "opts": [
+     [
+      "🌍",
+      "We see each other somewhere"
+     ],
+     [
+      "📅",
+      "See you next year"
+     ],
+     [
+      "🚫",
+      "Do not come back"
+     ]
+    ],
+    "a": 0,
+    "line": 3,
+    "why": "Teacher diz: “a gente se vê por aí”"
+   },
+   {
+    "q": "When do we say “take care”?",
+    "pt": "Quando dizemos “take care”?",
+    "opts": [
+     [
+      "🚶",
+      "When a friend is leaving"
+     ],
+     [
+      "🛏️",
+      "When we sleep"
+     ],
+     [
+      "🍽️",
+      "When we eat"
+     ]
+    ],
+    "a": 0,
+    "line": 5,
+    "why": "Teacher diz: “When a friend is leaving”"
+   }
+  ],
+  "produce": {
+   "prompt": "Você se despede de um grupo de amigos no fim da festa. **Diga bye ou see you later e use see you around.** Peça que um amigo se cuide com take care.",
+   "ph": "Ex.: Bye! See you around!",
+   "chips": [
+    "See you around",
+    "see you later",
+    "Take care"
+   ],
+   "model": "Bye, see you later! See you around. Take care!",
+   "check": [
+    "Me despedi dos amigos?",
+    "Usei see you around?",
+    "Disse take care?"
+   ]
+  }
+ }
+]
