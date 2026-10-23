@@ -8,7 +8,7 @@ const L={pt:{eye:'Pré-episódio · Roteiro do episódio',gram:'Estrutura gramat
 function load(cid){
  if(!cache[cid]){
   const en=/^en-/.test(cid);
-  cache[cid]=fetch((en?'data/skel/':'data/plan/')+cid+'.json?v=2').then(r=>r.ok?r.json():(en?[]:{})).then(a=>{
+  cache[cid]=fetch((en?'data/skel/':'data/plan/')+cid+'.json?v=3').then(r=>r.ok?r.json():(en?[]:{})).then(a=>{
    if(!en)return a;
    const m={};a.forEach(x=>{if(x.status==='roteiro')m[x.n]={t:x.titulo,tema:x.tema,gram:(x.gramatica||{}).estrutura||x.tema,vocab:(x.vocabulario_pt&&x.vocabulario_pt.length?x.vocabulario_pt:(x.vocabulario||[]).map(w=>[w,''])),verbos:x.verbos,exp:x.expressoes,gir:x.girias,obra:x.obra}});
    return m;}).catch(()=>({}));

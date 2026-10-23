@@ -1,49 +1,9 @@
-# Esqueletos — en-a1 (346 episódios)
+# Esqueletos — en-a1 (306 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 121 | Is There a Slide? | Como formar o plural com -ies e -es? | kite, swing, rope, slide, bench, grass | jump, throw, catch, run | Come on!; My turn!; Good catch! |
-| 122 | Plural -ies / -es | Como formar o plural com -ies e -es? | kite, swing, rope, slide, bench, grass | kite, swing, rope, slide | Come on!; My turn!; Good catch! |
-| 123 | Do Homework, Do the Dishes | collocations com do | faucet, laundry, chore, exercise, allowance, favor | do, wash, sweep, take out | I do my homework at five.; Can you do me a favor?; Who does the dishes?; do homework |
-| 124 | Do homework | collocations com do | faucet, laundry, chore, exercise, allowance, favor | faucet, laundry, chore, exercise | I do my homework at five.; Can you do me a favor?; Who does the dishes?; do homework |
-| 125 | A Wedding Photo | Quais são os plurais irregulares? | wedding, bride, groom, suit, tie, band | marry, hug, cry, laugh | Congratulations!; How lovely!; Cheers to you! |
-| 126 | Plurais irregulares | Quais são os plurais irregulares? | wedding, bride, groom, suit, tie, band | wedding, bride, groom, suit | Congratulations!; How lovely!; Cheers to you! |
-| 127 | Pets at the Farm | Que plurais não mudam? | rabbit, turtle, horse, cow, duck, sheep | feed, pet, wash, play | Aw, so cute!; Be gentle.; Look out! |
-| 128 | Plural que não muda | Que plurais não mudam? | rabbit, turtle, horse, cow, duck, sheep | rabbit, turtle, horse, cow | Aw, so cute!; Be gentle.; Look out! |
-| 129 | We Are a Team | On, in ou under? | football, basketball, volleyball, stadium, gym, match | win, lose, kick, score | Let's do this!; Good game!; Better luck next time. |
-| 130 | On, in, under | On, in ou under? | football, basketball, volleyball, stadium, gym, match | football, basketball, volleyball, stadium | Let's do this!; Good game!; Better luck next time. |
-| 131 | Four Seasons | On, in ou under? | winter, summer, spring, autumn, weekend, season | snow, shine, wear, wait | What a nice day!; It's freezing!; See you on the weekend. |
-| 132 | In + estação | On, in ou under? | winter, summer, spring, autumn, weekend, season | winter, summer, spring, autumn | What a nice day!; It's freezing!; See you on the weekend. |
-| 133 | Play the Guitar! | Where is… ou Where are…? | guitar, piano, drum, violin, concert, musician | play, listen, practice, learn | Come in!; Turn it up!; Keep going! |
-| 134 | Where is / are | Where is… ou Where are…? | guitar, piano, drum, violin, concert, musician | guitar, piano, drum, violin | Come in!; Turn it up!; Keep going! |
-| 135 | Go Home, Go to Work | collocations com go | concert hall, shopping, circus, playground, swimming pool, aquarium | go, walk, run, leave | I go home.; Let's go shopping.; Let's go for a walk.; go home |
-| 136 | Go home, go to work | collocations com go | concert hall, shopping, circus, playground, swimming pool, aquarium | concert hall, shopping, circus, playground | I go home.; Let's go shopping.; Let's go for a walk.; go home |
-| 137 | Meet on Monday | Onde está? Quatro palavras-chave | Monday, Wednesday, Friday, Sunday, calendar, month | start, finish, arrive, meet | I'm early.; Better late than never.; That works for me. |
-| 138 | Dias da semana | Onde está? Quatro palavras-chave | Monday, Wednesday, Friday, Sunday, calendar, month | Monday, Wednesday, Friday, Sunday | I'm early.; Better late than never.; That works for me. |
-| 139 | At the Supermarket | Perto, longe, esquerda, direita | supermarket, cart, tomato, carrot, cereal, chicken | buy, choose, pay, carry | Anything else?; That's all.; Keep the change. |
-| 140 | Pedir no mercado | Perto, longe, esquerda, direita | supermarket, cart, tomato, carrot, cereal, chicken | supermarket, cart, tomato, carrot | Anything else?; That's all.; Keep the change. |
-| 141 | A Table at the Cafe | Perto, longe, esquerda, direita | cafe, tray, straw, cream, waitress, croissant | order, sit, drink, bring | What can I get you?; It's on me.; Is this seat taken? |
-| 142 | Near, far, next to | Perto, longe, esquerda, direita | cafe, tray, straw, cream, waitress, croissant | cafe, tray, straw, cream | What can I get you?; It's on me.; Is this seat taken? |
-| 143 | Can You Open the Trunk? | Descrever com adjetivos | trunk, seatbelt, tunnel, gas, tire, engine | drive, stop, hurry, turn on | Where to?; Keep the meter running.; Buckle up! |
-| 144 | Pedir ajuda: Can you…? | Descrever com adjetivos | trunk, seatbelt, tunnel, gas, tire, engine | trunk, seatbelt, tunnel, gas | Where to?; Keep the meter running.; Buckle up! |
-| 145 | Wake Up, Get Up | phrasal verbs: wake up, get up, get dressed | wake-up call, yawning, daylight, bedhead, rooster, sunbeam | wake up, get up, get dressed, brush | I wake up at six.; Get up, sleepyhead!; I get dressed quickly.; wake up |
-| 146 | Wake up, get up | phrasal verbs: wake up, get up, get dressed | wake-up call, yawning, daylight, bedhead, rooster, sunbeam | wake-up call, yawning, daylight, bedhead | I wake up at six.; Get up, sleepyhead!; I get dressed quickly.; wake up |
-| 147 | Is This My Size? | Pedir e oferecer | size, button, sleeve, customer, clerk, label | try on, fit, cost, return | Just looking.; It looks good on you.; I'll take it. |
-| 148 | This size, that size | Pedir e oferecer | size, button, sleeve, customer, clerk, label | size, button, sleeve, customer | Just looking.; It looks good on you.; I'll take it. |
-| 149 | What's Your Job? | There is / There are | engineer, lawyer, manager, mechanic, actor, reporter | work, earn, repair, ask | What do you do for a living?; I'm between jobs.; It pays well. |
-| 150 | Profissões | There is / There are | engineer, lawyer, manager, mechanic, actor, reporter | engineer, lawyer, manager, mechanic | What do you do for a living?; I'm between jobs.; It pays well. |
-| 151 | How Old Are You? | Ordens com o imperativo | age, twins, niece, nephew, grandson, granddaughter | look after, tell, send, call | You look young!; Time goes by fast.; Just like her mom. |
-| 152 | How old are you? | Ordens com o imperativo | age, twins, niece, nephew, grandson, granddaughter | age, twins, niece, nephew | You look young!; Time goes by fast.; Just like her mom. |
-| 153 | Big or Small? | O que você está fazendo agora? | heavy, empty, loud, quiet, wet, dry | lift, drop, push, wipe | Hold on!; Give me a hand.; Keep it down! |
-| 154 | Antônimos | O que você está fazendo agora? | heavy, empty, loud, quiet, wet, dry | heavy, empty, loud, quiet | Hold on!; Give me a hand.; Keep it down! |
-| 155 | Turn On, Turn Off | phrasal verbs: turn on, turn off, turn up, turn down | dial, heater, switch, knob, thermostat, volume | turn on, turn off, turn up, turn down | Turn on the light, please.; Please turn off the TV.; Turn down the music.; turn on |
-| 156 | Turn on, turn off | phrasal verbs: turn on, turn off, turn up, turn down | dial, heater, switch, knob, thermostat, volume | dial, heater, switch, knob | Turn on the light, please.; Please turn off the TV.; Turn down the music.; turn on |
-| 157 | Which Way? | De onze a dezesseis | north, south, east, west, compass, direction | follow, find, point, lead | Which way?; I'm lost.; Follow me. |
-| 158 | Pontos cardeais | De onze a dezesseis | north, south, east, west, compass, direction | north, south, east, west | Which way?; I'm lost.; Follow me. |
-| 159 | Let's Cook! | De onze a dezesseis | pot, pan, stove, recipe, ingredient, apron | boil, fry, slice, pour | Be careful! It's hot.; Taste it.; It needs more salt. |
-| 160 | Ingredientes e utensílios | De onze a dezesseis | pot, pan, stove, recipe, ingredient, apron | pot, pan, stove, recipe | Be careful! It's hot.; Taste it.; It needs more salt. |
 | 161 | I Can, I Can't | advérbios de frequência: always, usually, never | skill, talent, trick, secret, hero, power | speak, skate, type, perform | You're a natural!; Show me how.; I'm a fast learner. |
 | 162 | I can, I can't | advérbios de frequência: always, usually, never | skill, talent, trick, secret, hero, power | skill, talent, trick, secret | You're a natural!; Show me how.; I'm a fast learner. |
 | 163 | Where Were You? | Dezenas e distâncias | yesterday, tomorrow, tonight, ago, moment, past | go, come, miss, hope | Long time no see!; I missed you!; What a coincidence! |

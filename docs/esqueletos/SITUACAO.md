@@ -2,7 +2,7 @@
 
 | nível | episódios | prontos (modelo piloto) | em produção (formato antigo) | esqueleto (a fazer) |
 |---|---|---|---|---|
-| en-a1 | 466 | 35 | 85 (eps 6–51 e 77–115, formato antigo, não mexidos) | 346 |
+| en-a1 | 466 | 75 | 85 (eps 6–51 e 77–115, formato antigo, não mexidos) | 306 |
 | en-a2 | 474 | 0 | 0 | 474 |
 | en-b1 | 530 | 0 | 0 | 530 |
 | en-b2 | 510 | 0 | 0 | 510 |

@@ -17,3 +17,8 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'data', 'en-a1_*.json'))):
     if ch:
         open(f, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, separators=(',', ':')))
 print('marcados:', len(PAT))
+# Tira dos esqueletos, do roteiro (HTML) e dos docs os episódios que já foram remodelados.
+import subprocess
+subprocess.run([sys.executable, os.path.join(ROOT, 'tools/skel/build.py')], check=True, stdout=subprocess.DEVNULL)
+subprocess.run([sys.executable, os.path.join(ROOT, 'tools/roteiro/build.py')], check=True, stdout=subprocess.DEVNULL)
+print('esqueletos e roteiro atualizados')
