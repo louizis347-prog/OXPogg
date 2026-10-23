@@ -11,6 +11,7 @@ import json, os, sys, copy
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from model_v2_data import V2  # noqa: E402
+from model_v2_extra import EXTRA  # noqa: E402
 
 
 def main_chars(st):
@@ -24,7 +25,7 @@ def strip_tags(s):
     return re.sub(r'<[^>]+>', '', s)
 
 
-def build(old, X):
+def build(old, X, XT):
     B = X['base']
     a, b = X['names']
     st = X['stage']
@@ -82,6 +83,12 @@ def build(old, X):
                           why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
     frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
                      bubble=[a, 'Listen and choose the word!', 'Ouça e escolha a palavra da figura!']))
+    # expressões comuns e gírias + cena com as expressões
+    frames.append(fr('pgexp', title='Expressões e gírias', items=XT['exp'], rs=rs['vplay'], chars=mc,
+                     say='Toque para ouvir cada expressão.', bubble=[a, 'This is how people really talk!', 'É assim que as pessoas falam de verdade!']))
+    es = XT['exp_scene']
+    frames.append(fr('pgscene', title='Na conversa de verdade', cast=B['cast'], lines=es['lines'], speakers=X['speakers'], rs=es['rs'],
+                     chars=st['chars'], say='Veja as expressões em uso. Elas estão destacadas.'))
     gap = [dict(text=r['q'], pt=r['pt'], opts=r['opts'], a=r['a'], why=r['why'],
                 say=r['q'].replace('___', r['opts'][r['a']])) for r in X['gap']]
     frames.append(fr('pgsheet', title='Complete as falas', items=gap, rs=rs['build'], chars=mc,
@@ -89,6 +96,12 @@ def build(old, X):
     trap = [dict(ask=r['q'], opts=r['opts'], a=r['a'], why=r['why'], say=strip_tags(r['opts'][r['a']])) for r in X['trap']]
     frames.append(fr('pgsheet', title='Qual está certa?', items=trap, rs=rs['order'], chars=mc,
                      bubble=[b, 'Careful! Only one is right.', 'Cuidado! Só uma está certa.']))
+    # laboratório de sons + caça-sons (só se o episódio ainda não tiver o laboratório)
+    if not any(f['k'] in ('soundlab', 'pglab') for f in frames):
+        lab = dict(XT['lab'])
+        frames.append(fr('pglab', rs=rs['soundlab'], chars=mc, bubble=[a, "Let's train our ears!", 'Vamos treinar o ouvido!'], **lab))
+        frames.append(fr('pgsheet', title='Caça-sons', items=XT['hunt'], rs=rs['soundlab'], chars=mc,
+                         bubble=[b, 'Listen and hunt the sound!', 'Ouça e cace o som certo!']))
     frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]], who=mc[0][0],
                      say='Ouça cada frase e repita em voz alta.', rs=rs['dictate'], chars=mc))
     pr = dict(B['produce'])
@@ -121,7 +134,7 @@ def main():
         for f, d in files.items():
             for i, e in enumerate(d):
                 if e['n'] == X['n']:
-                    d[i] = build(e, X)
+                    d[i] = build(e, X, EXTRA[V2.index(X)])
                     done += 1
     for f, d in files.items():
         with open(f, 'w', encoding='utf-8') as fh:

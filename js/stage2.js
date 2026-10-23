@@ -18,8 +18,10 @@ FX_KIND.pgscene='story';FX_LABEL.pgscene='A cena';
 FXR.pgscene=function(f,st,n){
   const lines=f.lines||[],sp=f.speakers||{},cast=f.cast||{};
   const col=nm=>(cast[nm]&&cast[nm][1])||'#2b6cb0';
-  const ln=(l,i)=>`<button type="button" class="ps-ln ${i%2?'r':''}" data-i="${i}" style="--c:${col(l[0])}"><span class="ps-face">${face(sp[l[0]])||`<b>${(cast[l[0]]||[''])[0]}</b>`}</span><div><b class="who">${H(l[0])}</b><span class="en">${H(l[1])}</span><small class="pt">${H(l[2]||'')}</small></div><i aria-hidden="true">🔊</i></button>`;
-  st.innerHTML=`<div class="step fx ps-sc">${fxKindBar(f,n)}${S.stage({rs:f.rs,chars:f.chars,h:'scene'})}
+  const clean=t=>String(t).replace(/\*\*/g,'');
+  const hl=t=>H(t).replace(/\*\*(.+?)\*\*/g,'<mark>$1</mark>');
+  const ln=(l,i)=>`<button type="button" class="ps-ln ${i%2?'r':''}" data-i="${i}" style="--c:${col(l[0])}"><span class="ps-face">${face(sp[l[0]])||`<b>${(cast[l[0]]||[''])[0]}</b>`}</span><div><b class="who">${H(l[0])}</b><span class="en">${hl(l[1])}</span><small class="pt">${H(l[2]||'')}</small></div><i aria-hidden="true">🔊</i></button>`;
+  st.innerHTML=`<div class="step fx ps-sc">${fxKindBar(f,n)}${f.title?`<h2 class="fx-h ps-sc-t">${H(f.title)}</h2>`:''}${S.stage({rs:f.rs,chars:f.chars,h:'scene'})}
   <div class="ps-sc-main"><div class="ps-sc-bar"><button type="button" class="ps-btn main" id="pgall">▶ Ouvir a cena</button><button type="button" class="ps-btn" id="pgslow">🐢 Devagar</button><button type="button" class="ps-btn tog" id="pgtr" aria-pressed="true">🇧🇷 Tradução</button></div>
   <div class="ps-lines" id="pgl">${lines.map(ln).join('')}</div></div></div>`;
   const wrap=q('.ps-sc',st),box=q('#pgl',st);let timer=null,run=0;
@@ -27,10 +29,10 @@ FXR.pgscene=function(f,st,n){
   const mark=i=>{qa('.ps-ln',box).forEach((b,j)=>b.classList.toggle('on',j===i));const b=qa('.ps-ln',box)[i];if(b&&b.scrollIntoView)b.scrollIntoView({block:'nearest',behavior:'smooth'})};
   const stop=()=>{clearTimeout(timer);run++;talk('',false);qa('.ps-ln',box).forEach(b=>b.classList.remove('on'))};
   const play=slow=>{stop();const my=run;let i=0;const step=()=>{if(my!==run)return;if(i>=lines.length){talk('',false);qa('.ps-ln',box).forEach(b=>b.classList.remove('on'));return}
-    const l=lines[i];mark(i);talk(l[0],true);tts(l[1],slow);const ms=Math.max(1500,String(l[1]).length*(slow?140:85)+500);i++;timer=setTimeout(step,ms)};step()};
+    const l=lines[i];mark(i);talk(l[0],true);tts(clean(l[1]),slow);const ms=Math.max(1500,clean(l[1]).length*(slow?140:85)+500);i++;timer=setTimeout(step,ms)};step()};
   q('#pgall',st).onclick=()=>play(false);q('#pgslow',st).onclick=()=>play(true);
   q('#pgtr',st).onclick=ev=>{const b=ev.currentTarget,on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);wrap.classList.toggle('no-pt',!on)};
-  qa('.ps-ln',box).forEach(b=>b.onclick=()=>{stop();const l=lines[+b.dataset.i];mark(+b.dataset.i);talk(l[0],true);tts(l[1]);setTimeout(()=>talk('',false),1600)});
+  qa('.ps-ln',box).forEach(b=>b.onclick=()=>{stop();const l=lines[+b.dataset.i];mark(+b.dataset.i);talk(l[0],true);tts(clean(l[1]));setTimeout(()=>talk('',false),1600)});
   P.fx.cta=null;cta('Continuar',true,true);
   setTimeout(()=>{if(P&&P.steps[P.i]==='fx'+n)play(false)},500);
   say(f.say||'Ouça a cena e leia junto.');
@@ -42,7 +44,7 @@ const optHTML=o=>Array.isArray(o)?`<em>${o[0]}</em><span>${H(o[1])}</span>`:`<sp
 function cardHTML(it,i){
   const blank='<span class="ps-blank">&nbsp;</span>';
   const text=it.text?H(it.text).replace(/___/g,blank).replace(/\*\*(.+?)\*\*/g,'<mark>$1</mark>'):'';
-  return `<div class="ps-q" data-i="${i}">
+  return `<div class="ps-q${it.pic?' pic':''}" data-i="${i}">
     ${it.fig?`<button type="button" class="ps-fig" data-say="${H(it.say||'')}" aria-label="Ouvir"><span>${it.fig}</span><i>🔊</i></button>`:''}
     <div class="ps-q-b">
       ${it.tag?`<small class="ps-q-tag">${H(it.tag)}</small>`:''}
@@ -79,6 +81,45 @@ FXR.pgsheet=function(f,st,n){
     else cta('Faltam '+(N-answered),false)});
   P.fx.cta=null;cta('Responda tudo: '+N+' perguntas',false);
   say(f.say||'Responda todas as perguntas.');
+};
+
+
+/* ---------------- expressões comuns e gírias ---------------- */
+FX_KIND.pgexp='story';FX_LABEL.pgexp='Expressões e gírias';
+FXR.pgexp=function(f,st,n){
+  const items=f.items||[];
+  const card=it=>`<article class="ps-exc"><div class="ps-exh"><span class="ps-ico big">${it.ic}</span><div class="ps-exm"><span class="ps-extag ${it.tag==='Gíria'?'g':it.tag==='Informal'?'i':'e'}">${H(it.tag)}</span>
+    <button type="button" class="ps-exen" data-say="${H(it.en)}"><b>${H(it.en)}</b><i>🔊</i></button><span class="ps-expt">${H(it.pt)}</span></div></div>
+    <p class="ps-exuse">${MK(it.use)}</p>
+    <button type="button" class="ps-exex" data-say="${H(it.ex[0])}"><span>🗣️</span><div><b>${H(it.ex[0])}</b><small>${H(it.ex[1])}</small></div><i>🔊</i></button></article>`;
+  st.innerHTML=`<div class="step fx ps-ex">${fxKindBar(f,n)}<div class="ps-sh-h"><h2 class="fx-h">${H(f.title||'Expressões e gírias')}</h2><span class="ps-count">${items.length} para levar</span></div>
+    <p class="ps-note">${MK(f.intro||'Expressões e gírias não se traduzem palavra por palavra. Aprenda cada uma como um **bloco inteiro**.')}</p><div class="ps-exl">${items.map(card).join('')}</div></div>`;
+  qa('[data-say]',st).forEach(b=>b.onclick=()=>tts(b.dataset.say));
+  P.fx.cta=null;cta('Continuar',true,true);
+  say(f.say||'Toque para ouvir cada expressão.');
+};
+
+/* ---------------- laboratório de sons (tudo em um quadro) ---------------- */
+FX_KIND.pglab='practice';FX_LABEL.pglab='Laboratório de sons';
+FXR.pglab=function(f,st,n){
+  const I=f.intro||{},rounds=f.rounds||[];
+  const sec=(ic,h,t)=>t?`<section class="ps-sec"><h3>${ic} ${H(h)}</h3><p class="ps-lp">${MK(t)}</p></section>`:'';
+  const ex=(f.ex||[]).map(x=>`<button type="button" class="ps-lx" data-say="${H(x[0])}"><span class="ps-ico">🔊</span><div><b>${H(x[0])} <em>${H(x[1]||'')}</em></b><small>${H(x[2]||'')}${x[3]?' · '+H(x[3]):''}</small></div></button>`).join('');
+  const pr=(f.pairs||[]).map(p=>`<div class="ps-pr"><div class="ps-pr-b"><button type="button" class="ps-btn" data-say="${H(p[0])}">🔊 ${H(p[0])}</button><span>×</span><button type="button" class="ps-btn" data-say="${H(p[1])}">🔊 ${H(p[1])}</button></div><small>${H(p[2]||'')}</small></div>`).join('');
+  const ph=f.phrase?`<section class="ps-sec"><h3>🗣️ Frase de treino</h3><div class="ps-spt"><div><b>${H(f.phrase[0])}</b><small>${H(f.phrase[1]||'')}</small></div></div>
+    <div class="ps-sp-tools"><button type="button" class="ps-btn main" id="pslph">🔊 Ouvir</button><button type="button" class="ps-btn" id="pslsl">🐢 Devagar</button></div><div id="pslmic" class="pv-host"></div></section>`:'';
+  const items=rounds.map(r=>Object.assign({},r));
+  st.innerHTML=`<div class="step fx ps-lab">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Laboratório de sons')}</h2>
+    ${sec('🎧','O som',I.what)}${sec('👄','Como fazer',I.how)}${sec('🇧🇷','Comparando com o português',I.pt)}
+    ${ex?`<section class="ps-sec"><h3>🔊 Ouça os exemplos</h3><div class="ps-lxl">${ex}</div></section>`:''}
+    ${pr?`<section class="ps-sec"><h3>↔️ Ouça a diferença</h3><div class="ps-prl">${pr}</div></section>`:''}
+    ${ph}${f.tip?`<div class="ps-tip">💡 <span>${MK(f.tip)}</span></div>`:''}
+    ${items.length?`<section class="ps-sec"><h3>👂 Treino do ouvido <span class="ps-count" id="pslc">0/${items.length}</span></h3><div class="ps-qs" id="pslq">${items.map(cardHTML).join('')}</div></section>`:''}</div>`;
+  qa('[data-say]',st).forEach(b=>{if(!b.classList.contains('ps-fig')&&!b.classList.contains('ps-mini'))b.onclick=()=>tts(b.dataset.say)});
+  if(f.phrase){const pl=String(f.phrase[0]);q('#pslph',st).onclick=()=>tts(pl);q('#pslsl',st).onclick=()=>tts(pl,true);if(window.PogVoice){try{PogVoice.mount(q('#pslmic',st),{target:pl,lang:(P.c&&P.c.tts)||'en-US'})}catch(e){}}}
+  let k=0;if(items.length)bindCards(q('#pslq',st),items,(i,ok)=>{k++;if(ok)P.score++;q('#pslc',st).textContent=k+'/'+items.length});
+  P.fx.cta=null;cta('Continuar',true,true);
+  say(f.say||'Primeiro entenda o som, depois treine o ouvido.');
 };
 
 /* ---------------- padrão com ilustração ---------------- */
