@@ -74,6 +74,9 @@ def main(only=None):
             prev = prev_from_old(pit) if not pit.get('pilot') else None
         M.HOTPT.update(lib.SAYPT)
         chunks[f][i] = M.build(old, E['v2'], E['extra'], E['verbs'], prev, E['more'])
+        for fr in chunks[f][i]['fr']:
+            if fr['k'] == 'review':
+                fr['bag'] = [g for g in fr['bag'] if g['items']]  # sem bolsos vazios (episódio anterior ainda no formato antigo)
         done += 1
     for f, d in chunks.items():
         with open(f, 'w', encoding='utf-8') as fh:

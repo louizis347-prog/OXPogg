@@ -35,3 +35,8 @@ Cloudflare (Workers com arquivos estáticos, wrangler.jsonc) ligado ao GitHub (b
 
 ## Menu
 Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
+
+## Modelo piloto (18 quadros) no inglês A1
+- Itens 1–5 (outra sessão) e 86–110 (esta sessão, tools/model_v3.py + tools/v3/ep_*.py + js/chars2.js com 25 personagens novos).
+- Para refazer: `python3 tools/model_v3.py` e conferir com `python3 tools/v3/check.py`.
+- Faltam os itens 6–85 e 111–776 do en-a1 (e A2–C2) no modelo piloto.
