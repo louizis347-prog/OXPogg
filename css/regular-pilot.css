@@ -68,3 +68,15 @@
 #player.regular-pilot .ps-say{border:1px solid #dce4e8;border-radius:16px;box-shadow:none}
 #player.regular-pilot .ps-ln{border-radius:14px}
 #player.regular-pilot .ps-face{overflow:hidden;border-radius:14px;background:#edf2f2}
+
+/* Pré-episódio: roteiro */
+.rt{display:grid;gap:10px}
+.rt h2{margin:2px 0}
+.rt-sub{margin:0;color:var(--muted);font-weight:700}
+.rt-row{display:flex;gap:10px;padding:10px 12px;border-radius:14px;background:var(--card,#fff);border:1px solid rgba(0,0,0,.08);min-width:0}
+.rt-row>div{min-width:0;overflow-wrap:anywhere}
+.rt-row p{margin:2px 0 0}
+.rt-ic{font-size:20px;line-height:1.2}
+.rt-ul{margin:4px 0 0;padding-left:18px}
+.rt-ul li{margin:2px 0}
+.rt-ul small,.rt-row small{color:var(--muted)}

@@ -2779,7 +2779,7 @@ function play(cid,idx){if(window.PogBilling&&!PogBilling.allow(cid,idx))return;c
   ST.lastCourse=cid;ST.lastEp=e.n;save();
   const mid=[...(e.dl?['dialog']:[]),...(e.v?(vocabPages(e)[1].length?['vocab','vocab2']:['vocab']):[]),...(e.ff?['ff']:[]),...(e.rd?['reading']:[]),...(e.rd2?['reading2']:[]),...(e.rd3?['reading3']:[]),...(e.cq?['comp']:[]),...noticeChunks(e).map((_,i)=>'notice'+i),...(e.gpr?['noticepr']:[]),...(e.pron?['pron']:[]),...(e.pronSpeak?['pronspeak']:[]),...(e.vb?['verbs']:[]),...(e.vbd?['vbdialog']:[]),...(e.pv?['phrasal']:[]),...(e.ex?['expr']:[]),...(e.reg?['register']:[]),...(e.nu?['nuance']:[]),...(e.exg?['exprg']:[]),...(e.ctx?e.ctx.flatMap((c,i)=>['ctx'+i,'ctxq'+i,...(c.q2?['ctxq2_'+i]:[])]):[]),...(e.shadow?['shadow0','shadow1']:[]),...(e.ask?e.ask.map((_,i)=>'ask'+i):(e.cp?['convo']:[])),...(e.choice?['choice']:[]),...(e.dm?['discourse']:[]),...(e.q&&e.q[0]?['q0']:[]),...(e.b?buildItems(e).map((_,i)=>'build'+i):[]),...(e.x?['gap']:[]),...(e.q&&e.q[1]?['q1']:[]),...(e.fg?['fill']:[]),...(e.pg?['pg0','pg1','pg2','pg3']:[]),...(e.hm?['hangman']:[])];
   const reviewData=e.pilot?null:buildEpisodeReview(cid,idx);
-  const baseSteps=e.fr?[...e.fr.map((_,i)=>'fx'+i),'done']:[...(/^en-/.test(cid)?['cover']:[]),'scene',...interleavePractice(mid),'done'];
+  const baseSteps=e.fr?[...(/^en-/.test(cid)&&!e.pilot?['roteiro']:[]),...e.fr.map((_,i)=>'fx'+i),'done']:[...(/^en-/.test(cid)?['roteiro','cover']:[]),'scene',...interleavePractice(mid),'done'];
   if(reviewData)baseSteps.splice(baseSteps.length-1,0,'review');
   P={cid,idx,e,c,L:c.ui,t:T[c.ui],steps:baseSteps,i:0,score:0,total:e.fr?fxTotal(e):(e.q&&e.q[0]?1:0)+(e.q&&e.q[1]?1:0)+(e.x?1:0)+(e.b?buildItems(e).length:0)+(e.fg?1:0)+(e.cq?1:0)+(e.exg?1:0)+(e.gpr?1:0)+(e.ask?e.ask.length:0)+(e.ctx?e.ctx.length:0)+(e.ctx?e.ctx.filter(c=>c.q2).length:0)+(e.shadow?2:0)+(e.pg?4:0)+(e.hm?1:0),t0:Date.now(),answered:false,convoRevealed:{},scored:{},mission:e.m||null,badges:[],streak:0,review:reviewData};
   if(reviewData)P.total+=reviewData.rows.length;
@@ -2820,7 +2820,7 @@ const KIND_COLORS={
 };
 function stepKind(s){
   if(/^fx\d+$/.test(s)){const ff=P.e.fr[+s.slice(2)];return FX_KIND[ff.k]||'story'}
-  if(s==='cover')return 'story';
+  if(s==='cover'||s==='roteiro')return 'story';
   if(s==='scene')return 'story';
   if(s==='review')return 'practice';
   if(s==='dialog'||s==='vbdialog'||s==='convo'||/^ctx\d+$/.test(s))return 'dialog';
@@ -2836,7 +2836,7 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
   const kind=stepKind(s);st.dataset.kind=kind;const kc=KIND_COLORS[kind]||KIND_COLORS.story;if(st.style&&typeof st.style.setProperty==='function'){st.style.setProperty('--kind-c',kc[0]);st.style.setProperty('--kind-l',kc[1]);}
   const pb=$('#pback');if(pb)pb.disabled=P.i<=0;
   const psk=$('#pskip');if(psk)psk.disabled=s==='done';
-  const lang=P.c.tts;let h='';if(/^fx\d+$/.test(s)){renderFx(+s.slice(2),st,lang);return}
+  const lang=P.c.tts;let h='';if(/^fx\d+$/.test(s)){renderFx(+s.slice(2),st,lang);return}if(s==='roteiro'){renderRoteiro(st);return}
   if(s==='cover'){const arcs=ARCS[P.cid]||[];let an='';for(const a of arcs){if(a[0]===e.n||EP[P.cid].findIndex(x=>x.n===a[0])<=P.idx)an=a[1];}an=String(an).replace(/^Arco\s+[A-C][12]·\d+\s*·\s*/,'');
     const clean=x=>String(x||'').replace(/\s*—\s*tema do arco:.*$/,'').replace(/^Revisão do Arco \d+ — /,'Revisão: ');
     const nW=(e.v||[]).length,nAct=P.steps.filter(isPracticeStep).length;
@@ -4782,6 +4782,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/life.js?v=2"></script><script src="js/onboard.js?v=2"></script><script src="js/album.js?v=1"></script><link rel="stylesheet" href="css/livexp.css?v=1"><script src="js/livexp.js?v=1"></script><link rel="stylesheet" href="css/cultfoco.css?v=1"><script src="js/cultfoco-data.js?v=1"></script><script src="js/cultfoco.js?v=1"></script><script src="js/nbopen.js?v=3"></script><script src="js/closefit.js?v=1"></script><link rel="stylesheet" href="css/streakleague.css?v=4">
 <link rel="stylesheet" href="css/premium.css?v=4"><link rel="stylesheet" href="css/stage.css?v=4"><script src="js/streakleague.js?v=1"></script>
 <script src="js/illus.js?v=1"></script>
-<link rel="stylesheet" href="css/regular-pilot.css">
+<link rel="stylesheet" href="css/regular-pilot.css?v=2">
 <script src="js/regular-pilot.js?v=4"></script>
+<script src="js/roteiro-screen.js?v=1"></script>
 </body></html>
