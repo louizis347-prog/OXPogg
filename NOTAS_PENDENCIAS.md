@@ -39,4 +39,4 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 ## Modelo piloto (18 quadros) no inglês A1
 - Itens 1–5 (outra sessão) e 86–110 (esta sessão, tools/model_v3.py + tools/v3/ep_*.py + js/chars2.js com 25 personagens novos).
 - Para refazer: `python3 tools/model_v3.py` e conferir com `python3 tools/v3/check.py`.
-- Faltam os itens 6–85 e 111–776 do en-a1 (e A2–C2) no modelo piloto.
+- Curso regular de inglês reduzido de 5.000 para 3.000 episódios (A1 466, A2 474, B1 530, B2 510, C1 510, C2 510), por pares, proporcional por arco, mantendo todos os arcos, os 30 episódios piloto e ≥70% do vocabulário único (ferramenta: tools/audit/en_reduce.py). Revisões do 'episódio anterior' refeitas pela cadeia original (18 do A1 ficaram sem quadro de revisão). Conversão ao modelo piloto vale só para os itens restantes (fora os 30 já feitos).
