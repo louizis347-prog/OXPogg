@@ -4429,10 +4429,11 @@ function fxBridge(e){try{
     say:'Agora vamos levar isso para o dia a dia.'});
 }catch(err){}}
 FXR.bridge=function(f,st,n){
+  const fc=(Array.isArray(f.c)&&f.c.length>1)?f.c:['#7C4DFF','#12B3A8'];
   const wk=esc(f.work),tp=esc(f.topic||'');
   const _lm=h=>{h=String(h||'').replace('#','');if(h.length!==6)return .2;const f=i=>{const c=parseInt(h.substr(i,2),16)/255;return c<=.03928?c/12.92:Math.pow((c+.055)/1.055,2.4)};return .2126*f(0)+.7152*f(2)+.0722*f(4)};
-  const chipTx=_lm(f.c[0])>.3?'#1f1a2b':'#fff';
-  st.innerHTML=`<div class="step fx fx-cult fx-bridge" style="--c1:${f.c[0]};--c2:${f.c[1]}">${fxKindBar(f,n)}
+  const chipTx=_lm(fc[0])>.3?'#1f1a2b':'#fff';
+  st.innerHTML=`<div class="step fx fx-cult fx-bridge" style="--c1:${fc[0]};--c2:${fc[1]}">${fxKindBar(f,n)}
   <h2 class="fx-h">Da obra para a lição</h2>
   <div class="br-path"><span class="br-from" style="color:${chipTx}">${esc(f.kind||'')} ${wk}</span><i class="br-arrow" aria-hidden="true">➜</i><span class="br-to">${tp}</span></div>
   <p class="cu-why">Você acabou de ver palavras do universo de <b>${wk}</b>. Elas são diferentes das palavras do dia a dia de propósito: ampliam o seu repertório. Agora vamos usar o <b>mesmo molde de frase</b> em situações comuns.</p>
