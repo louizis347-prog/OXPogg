@@ -111,7 +111,7 @@ def build(old, X, XT, VB, prev, MR=None, CX=None):
                          next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
                          rs=rs['review'], chars=mc))
     frames.append(fr('hotscene', title='Explore a cena', hint='Toque nos objetos brilhantes para ouvir o nome em inglês.',
-                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
+                     rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=h.get('sayPt') or HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
                      obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
     frames.append(fr('pgscene', cast=B['cast'], lines=B['lines'], speakers=X['speakers'], rs=st['rs'], chars=st['chars'],
                      say='Ouça a cena e leia junto.'))
