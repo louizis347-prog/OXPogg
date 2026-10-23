@@ -13,7 +13,8 @@ function collect(cid,idx){
   return L.map(({e,i})=>{
     const rule=(e.fr.find(f=>f.k==='pgrule')||{}).rule||{};
     const sheets=e.fr.filter(f=>f.k==='pgsheet');
-    const words=[];sheets.forEach(f=>(f.items||[]).forEach(it=>{if(it.fig&&it.fig!=='🎧'&&it.say&&!words.some(w=>w.say===it.say))words.push({fig:it.fig,say:it.say,pt:it.ptWord||''})}));
+    const words=[];sheets.forEach(f=>(f.words||[]).forEach(w=>{if(w.fig&&w.say&&!words.some(x=>x.say===w.say))words.push({fig:w.fig,say:w.say,pt:w.pt||''})}));
+    sheets.forEach(f=>(f.items||[]).forEach(it=>{if(it.fig&&it.fig!=='🎧'&&it.say&&!words.some(w=>w.say===it.say))words.push({fig:it.fig,say:it.say,pt:it.ptWord||''})}));
     const items=[];sheets.forEach(f=>{if(f.review===false)return;(f.items||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})))});
     const vf=e.fr.find(f=>f.k==='verbs')||{};
     (vf.quiz||[]).forEach(it=>items.push(Object.assign({},it,{tag:e.pattern||e.t,ep:i})));

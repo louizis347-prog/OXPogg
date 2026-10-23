@@ -421,3 +421,8 @@
   #player.ps-wide .step.ps-2col:has(>.ps-top,>.ps-stage)>.ps-top,#player.ps-wide .step.ps-2col:has(>.ps-top,>.ps-stage)>.ps-stage{grid-column:1!important;grid-row:1/span 40!important}
   #player.ps-wide .step.ps-2col:has(>.ps-top,>.ps-stage)>*:not(.ps-top):not(.ps-stage){grid-column:2!important}
 }
+
+/* fala do Poggie por cima do conteúdo (antes ficava escondida atrás do cartão) */
+#player.ps .p-foot{position:relative;z-index:40}
+#player.ps .p-foot .bubble{z-index:41}
+#player.ps .stage{padding-bottom:72px!important}

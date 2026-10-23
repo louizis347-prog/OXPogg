@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from model_v2_data import V2  # noqa: E402
 from model_v2_extra import EXTRA, VERBS  # noqa: E402
-from model_v2_more import MORE  # noqa: E402
+from model_v2_more import MORE, CONTEXT  # noqa: E402
 
 
 def main_chars(st):
@@ -81,7 +81,7 @@ HOTPT = {
 }
 
 
-def build(old, X, XT, VB, prev, MR=None):
+def build(old, X, XT, VB, prev, MR=None, CX=None):
     B = X['base']
     a, b = X['names']
     st = X['stage']
@@ -133,15 +133,20 @@ def build(old, X, XT, VB, prev, MR=None):
         pt.setdefault(h['en'].lower(), (h['pt'], ''))
     words = [(e, w) for e, w in B['balloons']]
     items = []
-    for i, (emo, w) in enumerate(words):
-        others = [x[1] for x in words if x[1] != w]
-        opts = [w, others[(i + 1) % len(others)], others[(i + 3) % len(others)]]
-        opts = [opts[(k + i) % 3] for k in range(3)]
-        p, note = pt.get(w.lower(), ('', ''))
-        items.append(dict(fig=emo, say=w, ask='Qual é a palavra?', opts=opts, a=opts.index(w), ptWord=p,
-                          why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
-    frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
-                     bubble=[a, 'Listen and choose the word!', 'Ouça e escolha a palavra da figura!']))
+    for i, c in enumerate(CX):
+        right = c['opts'][c['a']]
+        # embaralha de forma determinística: a resposta muda de posição de uma frase para a outra
+        k = (i * 2 + 1) % 3
+        opts = c['opts'][1:]
+        opts.insert(k, right)
+        p, note = pt.get(right.lower(), ('', ''))
+        # a tradução só aparece depois de responder (senão ela entrega a resposta)
+        items.append(dict(text=c['text'], opts=opts, a=opts.index(right),
+                          say=c['text'].replace('___', right),
+                          why='**%s** = %s.%s 🇧🇷 %s' % (right, p, (' ' + note) if note else '', c['pt'])))
+    wl = [dict(fig=e, say=w, pt=pt.get(w.lower(), ('', ''))[0]) for e, w in words]
+    frames.append(fr('pgsheet', title='Palavras em contexto', items=items, words=wl, rs=rs['vplay'], chars=mc,
+                     bubble=[a, 'Which word fits the sentence?', 'Qual palavra completa a frase?']))
     # verbos (4) + missão dos verbos
     frames.append(fr('verbs', title=VB['title'], items=VB['items'], tip=VB['tip'], say='Vamos ver os verbos de hoje!', rs=rs['build'], chars=mc,
                      quiz=verb_quiz(VB), bubble=[b, "These are today's verbs!", 'Estes são os verbos de hoje!']))
@@ -206,7 +211,7 @@ def main():
                 if e['n'] == X['n']:
                     k = V2.index(X)
                     prev = (V2[k - 1], EXTRA[k - 1], VERBS[k - 1]) if k else None
-                    d[i] = build(e, X, EXTRA[k], VERBS[k], prev, MORE[k])
+                    d[i] = build(e, X, EXTRA[k], VERBS[k], prev, MORE[k], CONTEXT[k])
                     done += 1
     for f, d in files.items():
         with open(f, 'w', encoding='utf-8') as fh:
