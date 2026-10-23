@@ -2779,7 +2779,7 @@ function play(cid,idx){if(window.PogBilling&&!PogBilling.allow(cid,idx))return;c
   ST.lastCourse=cid;ST.lastEp=e.n;save();
   const mid=[...(e.dl?['dialog']:[]),...(e.v?(vocabPages(e)[1].length?['vocab','vocab2']:['vocab']):[]),...(e.ff?['ff']:[]),...(e.rd?['reading']:[]),...(e.rd2?['reading2']:[]),...(e.rd3?['reading3']:[]),...(e.cq?['comp']:[]),...noticeChunks(e).map((_,i)=>'notice'+i),...(e.gpr?['noticepr']:[]),...(e.pron?['pron']:[]),...(e.pronSpeak?['pronspeak']:[]),...(e.vb?['verbs']:[]),...(e.vbd?['vbdialog']:[]),...(e.pv?['phrasal']:[]),...(e.ex?['expr']:[]),...(e.reg?['register']:[]),...(e.nu?['nuance']:[]),...(e.exg?['exprg']:[]),...(e.ctx?e.ctx.flatMap((c,i)=>['ctx'+i,'ctxq'+i,...(c.q2?['ctxq2_'+i]:[])]):[]),...(e.shadow?['shadow0','shadow1']:[]),...(e.ask?e.ask.map((_,i)=>'ask'+i):(e.cp?['convo']:[])),...(e.choice?['choice']:[]),...(e.dm?['discourse']:[]),...(e.q&&e.q[0]?['q0']:[]),...(e.b?buildItems(e).map((_,i)=>'build'+i):[]),...(e.x?['gap']:[]),...(e.q&&e.q[1]?['q1']:[]),...(e.fg?['fill']:[]),...(e.pg?['pg0','pg1','pg2','pg3']:[]),...(e.hm?['hangman']:[])];
   const reviewData=e.pilot?null:buildEpisodeReview(cid,idx);
-  const baseSteps=e.fr?[...(/^en-/.test(cid)&&!e.pilot?['roteiro']:[]),...e.fr.map((_,i)=>'fx'+i),'done']:[...(/^en-/.test(cid)?['roteiro','cover']:[]),'scene',...interleavePractice(mid),'done'];
+  const baseSteps=e.fr?[...(isRegularCourse(cid)&&!e.pilot?['roteiro']:[]),...e.fr.map((_,i)=>'fx'+i),'done']:[...(isRegularCourse(cid)&&!e.pilot?['roteiro']:[]),...(/^en-/.test(cid)?['cover']:[]),'scene',...interleavePractice(mid),'done'];
   if(reviewData)baseSteps.splice(baseSteps.length-1,0,'review');
   P={cid,idx,e,c,L:c.ui,t:T[c.ui],steps:baseSteps,i:0,score:0,total:e.fr?fxTotal(e):(e.q&&e.q[0]?1:0)+(e.q&&e.q[1]?1:0)+(e.x?1:0)+(e.b?buildItems(e).length:0)+(e.fg?1:0)+(e.cq?1:0)+(e.exg?1:0)+(e.gpr?1:0)+(e.ask?e.ask.length:0)+(e.ctx?e.ctx.length:0)+(e.ctx?e.ctx.filter(c=>c.q2).length:0)+(e.shadow?2:0)+(e.pg?4:0)+(e.hm?1:0),t0:Date.now(),answered:false,convoRevealed:{},scored:{},mission:e.m||null,badges:[],streak:0,review:reviewData};
   if(reviewData)P.total+=reviewData.rows.length;
@@ -4784,5 +4784,5 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/illus.js?v=1"></script>
 <link rel="stylesheet" href="css/regular-pilot.css?v=2">
 <script src="js/regular-pilot.js?v=4"></script>
-<script src="js/roteiro-screen.js?v=1"></script>
+<script src="js/roteiro-screen.js?v=2"></script>
 </body></html>

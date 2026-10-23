@@ -73,7 +73,9 @@ def build(cid):
         rows_by={lv:[] for lv in LV}; k=0
         for x in items:
             k+=1; rows_by[x['_lv']].append((k,x))
-    show_rt=(cid=='en')
+    plan={}
+    if cid!='en' and os.path.exists(f'data/plan/{cid}.json'): plan={int(k):v for k,v in json.load(open(f'data/plan/{cid}.json')).items()}
+    show_rt=True
     css=f'''<style>
 @page{{size:A4 landscape;margin:9mm 8mm}}@page cover{{size:A4 portrait;margin:0}}
 *{{box-sizing:border-box}}body{{font:8.6px/1.28 system-ui,"Noto Sans",sans-serif;color:#1d1a2e;margin:0}}
@@ -109,7 +111,7 @@ small{{color:#6a6580}}.lvhead{{display:flex;justify-content:space-between;align-
     h.append(f'<div class="note"><b>Exame de referência:</b> {esc(exam)}. A correspondência entre nível CEFR e exame é aproximada (cada banca publica a sua própria equivalência).</div>')
     notes=[]
     if cid=='en': notes.append('Cada linha é um episódio, com conteúdo próprio. As colunas de verbos, expressões e gírias são o roteiro do episódio; onde aparece <i>(em elaboração)</i>, o roteiro próprio ainda será escrito.')
-    else: notes.append('Cada linha é um episódio, na ordem em que aparece no curso.')
+    else: notes.append('Cada linha é um episódio, com conteúdo próprio. Onde aparece <i>(em elaboração)</i>, o planejamento próprio do episódio ainda será escrito (o conteúdo antigo repetia vocabulário entre episódios e foi retirado do PDF).')
     notes.append('O vocabulário mostrado é o das primeiras palavras do episódio; a coluna de gramática fica em branco (—) quando o episódio ainda não tem uma estrutura gramatical definida nos dados.')
     h.append('<div class="note">'+' '.join(notes)+'</div></section>')
     cols='<tr><th style="width:5%">Ep<th style="width:15%">Título<th style="width:16%">Tema / objetivo<th style="width:14%">Estrutura gramatical<th style="width:'+str(18 if show_rt else 48)+'%">Vocabulário'
@@ -120,6 +122,14 @@ small{{color:#6a6580}}.lvhead{{display:flex;justify-content:space-between;align-
         h.append(f'<section class="pg"><div class="lvhead"><h2>{lv.upper()} · {CEFR[lv]}</h2><small>{esc(exmap[lv])} · {sum(1 for x in items if x["_lv"]==lv)} episódios</small></div><table>{cols}')
         for ep,x in rows:
             sk=skel.get(x['n']) if cid=='en' else None
+            pl=plan.get(x['n']) if cid!='en' else None
+            if cid!='en':
+                li=lambda L:'<br>'.join(f'{esc(a)} <small>{esc(b)}</small>' for a,b in L)
+                if pl:
+                    h.append(f'<tr><td>{eprange(ep,x)}<td><b>{esc(pl["t"])}</b><td>{esc(pl["tema"])}<td>{esc(pl["gram"])}<td>{li(pl["vocab"])}<td>{esc(", ".join(a+" ("+b+")" if b else a for a,b in pl["verbos"]))}<td>{li(pl["exp"])}<td>{li(pl["gir"])}</tr>')
+                else:
+                    h.append(f'<tr><td>{eprange(ep,x)}<td><b>{esc(title(x))}</b><td colspan=6><i>(em elaboração)</i></tr>')
+                continue
             if sk and sk.get('status')=='roteiro':
                 r=f'<tr><td>{eprange(ep,x)}<td><b>{esc(sk["titulo"])}</b><td>{esc(sk["tema"])}<td>{esc(sk["gramatica"].get("estrutura") or "—")}<td>{esc(", ".join(a+" ("+b+")" if b else a for a,b in sk["vocabulario_pt"]))}'
             else:
