@@ -67,3 +67,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - `python3 tools/skel/build.py` regenera `data/skel/en-*.json` e `docs/esqueletos/*.md` (tabelas + `SITUACAO.md`). Cada esqueleto agora registra: estrutura gramatical, vocabulário da cena (6 palavras), 4 verbos e até 4 expressões, tudo vindo dos dados do próprio episódio (nada foi escrito). Esses campos aparecem nos quadros: palavras da cena, verbos (e missão dos verbos), expressões (e cena de conversa).
 - Ficam de fora (não mexidos): episódios prontos (1–5, 52–76, 116–120 do A1) e os de formato antigo 6–51 e 77–115. Total com esqueleto: 2.880.
 - Limites: as «expressões» vêm do quadro cexp (frases-modelo do episódio), não são necessariamente idioms; 6 pares do A1/A2 têm só 3 expressões; ~30% dos pares ainda só têm tema (sem estrutura gramatical própria).
+
+## Roteiro simples dos episódios de inglês (tarefa #31) — CONCLUÍDO
+- Páginas: `roteiro/index.html` + `roteiro/en-a1.html` … `en-c2.html` (tabela simples: episódio, título, estrutura gramatical, vocabulário, 4 verbos, 4 expressões comuns, 2 gírias, obra).
+- Cobertura: 1.440 pares (A1 173, A2 237, B1 265, B2 255, C1 255, C2 255). Fora: episódios prontos (pilotos 1–120).
+- Fonte editável: `tools/roteiro/<nivel>_NN.txt` (linha `n|verbos|exp=pt;…|giria=pt;…`). Regerar: `python3 tools/roteiro/build.py`.
+- IMPORTANTE: `tools/skel/build.py` sobrescreve o enriquecimento; sempre rodar `tools/roteiro/build.py` depois.
+- Limites: ~30% dos pares ainda têm só um tema em "estrutura gramatical"; gírias do A1 são leves; 488 temas de regram divergentes não corrigidos.
