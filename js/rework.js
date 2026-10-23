@@ -138,6 +138,7 @@ FXR.scene=function(f,st,n){
   const reveal=upto=>{while(revealed<=upto&&revealed<N){addBubble(revealed);revealed++}};
   const setCta=()=>{if(revealed>=N)cta('Continuar',true,false);else cta('Próxima fala ▶',true,true)};
   const pl=makePlayer(L.map(l=>[l[0],l[1]]),(i,playing,slow,ended)=>{
+    if(!root.isConnected)return;
     reveal(i);
     segs.forEach((s,k)=>{s.classList.toggle('done',k<i||(ended&&k===i));s.classList.toggle('cur',k===i&&!ended)});
     playBtn.innerHTML=playing?ico.pause:ico.play;playBtn.setAttribute('aria-label',playing?'Pausar':'Tocar');

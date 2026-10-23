@@ -47,6 +47,7 @@ function bust(o){
   const fem=g==='f';
   o.skinOut=skin;o.shirtOut=shirt;o.hairOut=hair;
   const rich=o.rich|0,Lt=o.light||null,ld=Lt?Lt.d:-1,lc=Lt?Lt.c:'#fff',lk=Lt?Lt.k:.6;
+  const refined=!!o.refined,irisR=refined?1.95:2.55;
   let s=`<g>`;
   s+=`<defs><radialGradient id="${u}fc" cx="${Lt?(ld<0?.33:.67):.4}" cy=".32" r=".85"><stop offset="0" stop-color="${skinL}"/><stop offset=".55" stop-color="${skin}"/><stop offset="1" stop-color="${skinD}"/></radialGradient>
    <linearGradient id="${u}nk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${skinDD}"/><stop offset=".45" stop-color="${skinD}"/><stop offset="1" stop-color="${skin}"/></linearGradient>
@@ -78,7 +79,7 @@ function bust(o){
   /* orelhas */
   [[31.2,1],[68.8,-1]].forEach(([x,d])=>{s+=`<ellipse cx="${x}" cy="45" rx="3.4" ry="5.2" fill="${skin}"/><ellipse cx="${x+d*.4}" cy="45.4" rx="1.5" ry="3" fill="${skinD}" fill-opacity=".55"/>`});
   /* rosto */
-  s+=`<path d="M31 38 C31 17 69 17 69 38 C69 53 61 67 50 67.5 C39 67 31 53 31 38Z" fill="url(#${u}fc)"/>`;
+  s+=`<path d="${refined?'M31 38 C30 16 69 16 69 38 C69 49 64 59 58 64 Q50 71 42 64 C35 59 31 49 31 38Z':'M31 38 C31 17 69 17 69 38 C69 53 61 67 50 67.5 C39 67 31 53 31 38Z'}" fill="url(#${u}fc)"/>`;
   s+=`<ellipse cx="37.5" cy="53" rx="5.4" ry="3.2" fill="${tone>=3?'#C46A5A':'#F0707C'}" fill-opacity="${tone>=3?.16:.22}"/><ellipse cx="62.5" cy="53" rx="5.4" ry="3.2" fill="${tone>=3?'#C46A5A':'#F0707C'}" fill-opacity="${tone>=3?.16:.22}"/>`;
   if(rich){const sx=ld<0?1:-1,fx=50+sx*19;
     s+=`<path d="M${50+sx*19} 38 C${50+sx*19} 53 ${50+sx*11} 67 50 67.5 C${50+sx*7} 60 ${50+sx*12} 50 ${50+sx*12} 40 C${50+sx*12} 30 ${50+sx*8} 23 ${50+sx*2} 19.4 C${50+sx*14} 20.4 ${50+sx*19} 28 ${50+sx*19} 38Z" fill="${skinDD}" fill-opacity=".24"/>`;
@@ -88,8 +89,8 @@ function bust(o){
   /* olhos */
   const ey=43.2;
   [[41,-1],[59,1]].forEach(([x,d])=>{
-    s+=`<ellipse cx="${x}" cy="${ey}" rx="4.9" ry="3" fill="#fff"/><ellipse cx="${x}" cy="${ey+.1}" rx="4.9" ry="3" fill="${skinD}" fill-opacity=".14"/>`;
-    s+=`<circle cx="${x+d*.3}" cy="${ey+.1}" r="2.55" fill="${iris}"/><circle cx="${x+d*.3}" cy="${ey+.1}" r="1.15" fill="#0b0706"/><circle cx="${x+d*.3+.9}" cy="${ey-.8}" r=".8" fill="#fff"/>`;
+    s+=refined?`<path d="M${x-4.8} ${ey+.2} Q${x} ${ey-3.5} ${x+4.8} ${ey+.2} Q${x} ${ey+2.8} ${x-4.8} ${ey+.2}Z" fill="#f8f4ee"/>`:`<ellipse cx="${x}" cy="${ey}" rx="4.9" ry="3" fill="#fff"/><ellipse cx="${x}" cy="${ey+.1}" rx="4.9" ry="3" fill="${skinD}" fill-opacity=".14"/>`;
+    s+=`<circle cx="${x+d*.3}" cy="${ey+.1}" r="${irisR}" fill="${iris}"/><circle cx="${x+d*.3}" cy="${ey+.1}" r="${refined?.88:1.15}" fill="#0b0706"/><circle cx="${x+d*.3+.7}" cy="${ey-.7}" r="${refined?.48:.8}" fill="#fff"/>`;
     s+=`<path d="M${x-5.2} ${ey+.2} Q${x} ${ey-4.8} ${x+5.2} ${ey+.2}" stroke="${mix(hairD,'#000',.3)}" stroke-width="${fem?1.7:1.4}" fill="none" stroke-linecap="round"/><path d="M${x-4.2} ${ey+1.8} Q${x} ${ey+3.6} ${x+4.2} ${ey+1.8}" stroke="${skinD}" stroke-opacity=".5" stroke-width=".9" fill="none" stroke-linecap="round"/>`;
     if(fem)s+=`<path d="M${x+d*4.6} ${ey-.4} l${d*1.9} -1.4 M${x+d*3.4} ${ey-1.9} l${d*1.4} -1.7" stroke="${hairD}" stroke-width=".9" stroke-linecap="round"/>`;
     /* sobrancelhas */
@@ -102,7 +103,7 @@ function bust(o){
   /* nariz */
   s+=`<path d="M50.2 44.4 C49.2 49 48.2 52.4 47.6 54 Q50 56 52.4 54" stroke="${skinD}" stroke-opacity=".75" stroke-width="1.15" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="48.2" cy="54.4" rx="1" ry=".7" fill="${skinDD}" fill-opacity=".55"/><ellipse cx="51.8" cy="54.4" rx="1" ry=".7" fill="${skinDD}" fill-opacity=".55"/><ellipse cx="49.6" cy="49.6" rx="1.1" ry="3.4" fill="#fff" fill-opacity=".2"/>`;
   if(rich>1){const sx=ld<0?1:-1;
-    [[41,-1],[59,1]].forEach(([x,d])=>{s+=`<ellipse cx="${x}" cy="${ey+3.6}" rx="4.8" ry="1.5" fill="${skinDD}" fill-opacity=".16"/><path d="M${x-5.4} ${ey-1.6} Q${x} ${ey-6.6} ${x+5.4} ${ey-1.6}" stroke="${skinD}" stroke-opacity=".5" stroke-width=".7" fill="none"/><circle cx="${x+d*.3}" cy="${ey+.1}" r="2.55" fill="none" stroke="#000" stroke-opacity=".35" stroke-width=".45"/><path d="M${x-2} ${ey+1.2} Q${x+d*.3} ${ey+2.5} ${x+2} ${ey+1.2}" stroke="#fff" stroke-opacity=".22" stroke-width=".6" fill="none"/>`});
+    [[41,-1],[59,1]].forEach(([x,d])=>{s+=`<ellipse cx="${x}" cy="${ey+3.6}" rx="4.8" ry="1.5" fill="${skinDD}" fill-opacity=".16"/><path d="M${x-5.4} ${ey-1.6} Q${x} ${ey-6.6} ${x+5.4} ${ey-1.6}" stroke="${skinD}" stroke-opacity=".5" stroke-width=".7" fill="none"/><circle cx="${x+d*.3}" cy="${ey+.1}" r="${irisR}" fill="none" stroke="#000" stroke-opacity=".35" stroke-width=".45"/><path d="M${x-2} ${ey+1.2} Q${x+d*.3} ${ey+2.5} ${x+2} ${ey+1.2}" stroke="#fff" stroke-opacity=".22" stroke-width=".6" fill="none"/>`});
     s+=`<path d="M${50-sx*1.4} 40 C${50-sx*1.6} 45 ${50-sx*2} 49 ${50-sx*2.4} 52" stroke="#fff" stroke-opacity=".2" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M${50+sx*2.4} 46 C${50+sx*3.4} 50 ${50+sx*3.8} 53 ${50+sx*2.6} 55" stroke="${skinDD}" stroke-opacity=".22" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M48.6 56.4 Q50 57.4 51.4 56.4" stroke="${skinDD}" stroke-opacity=".28" stroke-width=".6" fill="none"/>`}
   /* boca */
   const my=60.4;
@@ -136,5 +137,25 @@ function avatar(em,name,color){
   if(em==='🙂'||em==='😀'||!/[\u{1F466}-\u{1F469}\u{1F9D1}-\u{1F9D4}\u{1F474}\u{1F475}]/u.test(em||''))o.g=o.g||undefined;
   return '<svg viewBox="16 8 68 68" width="100%" height="100%" aria-hidden="true">'+bust(o)+'</svg>';
 }
-window.PogFace={bust,fromEmoji,avatar,SHIRTS};
+// Explicit cast direction for the five-episode visual pilot. No changes to other courses.
+const DESIGNS={
+ Mia:{g:'f',tone:2,style:'curly',hair:'#30241e',shirt:'#a85849',glasses:false,beard:false,seed:101},
+ Sam:{g:'m',tone:0,style:'side',hair:'#985432',shirt:'#356d70',glasses:false,beard:false,seed:102},
+ Rosa:{g:'f',tone:3,style:'bun',hair:'#251b18',shirt:'#a56b36',glasses:false,beard:false,seed:103},
+ Dan:{g:'m',tone:1,style:'short',hair:'#382d29',shirt:'#495f7a',glasses:true,beard:false,seed:104},
+ Tom:{g:'m',tone:2,style:'curly',hair:'#34251f',shirt:'#626d4e',glasses:false,beard:false,seed:105},
+ Lily:{g:'f',tone:0,style:'wavy',hair:'#a35130',shirt:'#687391',glasses:false,beard:false,seed:106},
+ Ben:{g:'m',tone:0,style:'short',hair:'#965237',shirt:'#3f7974',glasses:false,beard:false,seed:107},
+ Rita:{g:'f',tone:1,age:'old',style:'bob',hair:'#a6a29d',shirt:'#91745e',glasses:true,beard:false,seed:108},
+ Leo:{g:'m',tone:2,style:'side',hair:'#3c3026',shirt:'#747b57',glasses:false,beard:true,seed:109}
+};
+function designFor(e,name){
+  if(!e||e.presentation!=='regular-pilot-v1'||!DESIGNS[name])return null;
+  return Object.assign({refined:true,rich:2,mood:'soft'},DESIGNS[name]);
+}
+function portrait(e,name){
+  const o=designFor(e,name);if(!o)return '';
+  return '<svg viewBox="19 6 62 88" width="100%" height="100%" aria-hidden="true" focusable="false">'+bust(o)+'</svg>';
+}
+window.PogFace={bust,fromEmoji,avatar,SHIRTS,designFor,portrait};
 })();

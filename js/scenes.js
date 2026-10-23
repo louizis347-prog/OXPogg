@@ -433,7 +433,7 @@ function charList(e){
   }
   const cast=castOf(e),seed=hash((e&&e.t||'')+(e&&e.n||''));
   if(!cast.length)return [{seed}];
-  return cast.map((c,i)=>{const o=faceFor(c.name,c.g,seed+i,cast.old&&i===0);o.shirt=window.PogFace?PogFace.SHIRTS[hash(c.name||('s'+seed+i))%PogFace.SHIRTS.length]:undefined;return o});
+  return cast.map((c,i)=>{const design=window.PogFace&&PogFace.designFor&&PogFace.designFor(e,c.name);if(design)return design;const o=faceFor(c.name,c.g,seed+i,cast.old&&i===0);o.shirt=window.PogFace?PogFace.SHIRTS[hash(c.name||('s'+seed+i))%PogFace.SHIRTS.length]:undefined;return o});
 }
 const GRADE={night:{c:'#3d4fa8',k:.34},dusk:{c:'#ff8a66',k:.2},golden:{c:'#ffb062',k:.14},dawn:{c:'#ff9fae',k:.1}};
 function character(e,tm,id,sc,xPos,yBase,ctx){

@@ -1,0 +1,70 @@
+/* The coach has its own layout space. It never floats over the lesson. */
+#player .p-body{min-height:0;flex:1 1 0}
+#player .p-foot{flex:0 0 auto;position:relative;z-index:20;isolation:isolate}
+#player.az .p-foot .in{
+ display:grid;grid-template-columns:40px 48px minmax(0,1fr) minmax(160px,230px) 40px;
+ grid-template-areas:"back pog message action skip";align-items:center;gap:12px;
+}
+#player.az #pback{grid-area:back}
+#player.az #pskip{grid-area:skip}
+#player.az #pcta{grid-area:action;width:100%;min-width:0}
+#player.az #pdock{grid-area:pog;width:48px;height:48px;margin:0;align-self:center}
+#player.az #pbub{
+ grid-area:message;position:relative;inset:auto;width:auto;max-width:none;min-width:0;
+ margin:0;min-height:38px;max-height:min(140px,22dvh);overflow-y:auto;overscroll-behavior:contain;
+ padding:10px 14px;border:1px solid #dce3e9;border-radius:14px;background:var(--card,#fff);
+ color:var(--ink,#24374a);box-shadow:none;font:500 14px/1.5 var(--f-ui,system-ui);
+ transform:none;pointer-events:auto;overflow-wrap:anywhere;scrollbar-width:thin;
+}
+#player.az #pbub::before{display:none}
+#player.az #pbub:not(.p2on){visibility:hidden}
+#player.az #pbub.p2on{visibility:visible;opacity:1}
+#player.az #pbub:focus-visible{outline:2px solid var(--az1,#386c83);outline-offset:2px}
+@media(max-width:759px){
+ #player.az .p-foot .in{grid-template-columns:44px minmax(0,1fr) 44px;grid-template-areas:"pog message message" "back action skip";gap:8px 10px}
+ #player.az #pdock{width:42px;height:42px}
+ #player.az #pbub{font-size:13px;max-height:min(112px,21dvh);padding:8px 12px}
+ #player.az .p-foot{padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px))}
+ #player.az #pcta{padding-block:11px}
+}
+/* Visual direction restricted to the first five English regular episodes. */
+#player.regular-pilot{background:#eef2f4;--az1:#346c7d!important;--az2:#81a6af!important;--azd:#244a58!important;--azl:#edf4f4!important}
+#player.regular-pilot .stage{max-width:1120px;padding:12px 20px 28px}
+#player.regular-pilot .step{
+ border:1px solid #dce4e8;border-radius:24px;background:#fff;color:#253744;
+ box-shadow:0 12px 36px -24px #1e37465c;padding:clamp(20px,3vw,36px);
+}
+#player.regular-pilot .fx-h{color:#243e4d;letter-spacing:-.035em;font-weight:750;line-height:1.2}
+#player.regular-pilot .p-foot{background:#f9fbfc;box-shadow:none;border-top:1px solid #dce4e8}
+#player.regular-pilot .p-foot .cta{background:#315f70;box-shadow:0 3px 0 #204452;border-radius:12px}
+#player.regular-pilot .fx-stagewrap{border-radius:18px;overflow:hidden;border:1px solid #dce4e8}
+#player.regular-pilot .fx-bub{background:#f4f7f8;border:1px solid #dce4e8;box-shadow:none;border-radius:16px}
+#player.regular-pilot .dp{background:#f6f8fa;border:1px solid #dee6ea;border-radius:14px}
+#player.regular-pilot .fx-av{width:72px;height:88px;border-radius:20px;background:#f6f4ef;bottom:12px;overflow:hidden;box-shadow:0 3px 12px #172e3426}
+#player.regular-pilot .pilot-portrait{display:block;overflow:hidden;flex-shrink:0;background:#e9eeed;border-radius:14px;line-height:0}
+#player.regular-pilot .pilot-portrait svg{display:block;width:100%;height:100%;transform:none!important}
+#player.regular-pilot .fx-av .pilot-portrait{width:100%;height:100%;border-radius:0}
+#player.regular-pilot .fx-lav.pilot-portrait,#player.regular-pilot .vb-av.pilot-portrait{width:48px;height:60px;border-radius:13px;padding:0}
+#player.regular-pilot .td-av.pilot-portrait,#player.regular-pilot .td-h>.pilot-portrait{width:54px;height:68px;padding:0}
+#player.regular-pilot .az-av>.pilot-portrait{width:72px;height:92px}
+#player.regular-pilot .cu2-work,#player.regular-pilot .m2-wh{letter-spacing:-.02em}
+@media(max-width:759px){
+ #player.regular-pilot .stage{padding:8px 10px 20px}
+ #player.regular-pilot .step{border-radius:18px;padding:18px 16px}
+ #player.regular-pilot .fx-av{width:56px;height:68px;bottom:8px}
+}
+@media(prefers-reduced-motion:reduce){#player.regular-pilot .step,#player.regular-pilot .pilot-portrait{animation:none!important}}
+
+/* Override the older player skin only inside the visual pilot. */
+#player.az.regular-pilot{background:#eef2f4!important}
+#player.az.regular-pilot .stage{background:transparent!important;box-shadow:none!important}
+#player.az.regular-pilot .step:not(.fx-cover){border:1px solid #dce4e8!important;box-shadow:0 12px 36px -24px #1e37465c!important}
+#player.az.regular-pilot .p-foot .cta{background:#315f70!important;box-shadow:0 3px 0 #204452!important}
+
+/* Current illustrated-stage model: preserve complete silhouettes and quiet the motion. */
+#player.regular-pilot .ps-stage{border:1px solid #dce4e8;border-radius:18px;box-shadow:0 8px 24px -16px #243e4d}
+#player.regular-pilot .ps-c{animation:none;filter:drop-shadow(0 3px 3px #20333d38)}
+#player.regular-pilot .ps-c svg{shape-rendering:geometricPrecision}
+#player.regular-pilot .ps-say{border:1px solid #dce4e8;border-radius:16px;box-shadow:none}
+#player.regular-pilot .ps-ln{border-radius:14px}
+#player.regular-pilot .ps-face{overflow:hidden;border-radius:14px;background:#edf2f2}
