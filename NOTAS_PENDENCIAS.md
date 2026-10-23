@@ -52,3 +52,7 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 
 ## Espanhol A1 no modelo piloto
 - Episódios 1–5 (71001, 7071001, 71002, 7071002, 71003) reescritos no modelo/visual do inglês: `tools/es/ep_*.py` + `python3 tools/model_es.py` (usa `model_v2.LG` com textos em espanhol). Personagens novos em `js/chars3.js` (Tokio, Río, Dom Quixote, Sancho, Chavo, Dona Florinda). O visual `regular-pilot-v1` agora vale para en-a1 e es-a1. Vocabulário e títulos do esqueleto mantidos; obras trocadas por obras em espanhol coerentes com o tema.
+
+## Francês A1 para brasileiros (frbr-a1) no modelo piloto
+- Episódios 1–5 (1000000–1000004) refeitos: `tools/fr/ep_*.py` + `python3 tools/model_fr.py`. Obras do próprio esqueleto (Le Petit Prince, Astérix, Ratatouille), personagens novos em `js/chars3.js` (Pequeno Príncipe, piloto, Astérix, Obélix, Linguini, Rémy). Vocabulário mantido (4 palavras do esqueleto + 2) e títulos placeholder ("A1 · Épisode N…") trocados por títulos reais. O `regular-pilot-v1` vale também para frbr-a1.
+- Atenção: nesse curso o pareamento xn/xof dos itens iniciais está bagunçado no esqueleto (ep. 1,3,5 principais; 2,4 continuações); não mexi.
