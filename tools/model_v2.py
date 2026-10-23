@@ -42,8 +42,8 @@ def verb_quiz(vb):
     for it in vb['items']:
         sent = it['f'][1][1].replace('**', '')
         form = third(it)
-        opts = [it['v'], form, ing(it['v'])]
-        out.append(dict(text=sent.replace(form, '___', 1), pt='Verbo **%s** (%s) com he/she.' % (it['v'], it['pt']), opts=opts,
+        opts = [it['v'], form, LG['wrong'](it['v'], form)]
+        out.append(dict(text=sent.replace(form, '___', 1), pt=LG['vq'] % (it['v'], it['pt']), opts=opts,
                         a=1, say=sent, why='Com he/she o verbo ganha o final: **%s**.' % form))
     return out
 
@@ -80,6 +80,15 @@ HOTPT = {
     'I love stories about planets.': 'Eu adoro histórias sobre planetas.', 'Parties are fun!': 'Festas são divertidas!',
 }
 
+LG = dict(
+    hint='Toque nos objetos brilhantes para ouvir o nome em inglês.', badge='A1',
+    remember=('What do you remember?', 'De que você se lembra?'), swap=('Swap the pieces and build sentences!', 'Troque as peças e monte frases!'),
+    words=('Listen and choose the word!', 'Ouça e escolha a palavra da figura!'), verbs=("These are today's verbs!", 'Estes são os verbos de hoje!'),
+    vmission=('Verb mission! I will help you.', 'Missão dos verbos! Eu ajudo você.'), exps=('This is how people really talk!', 'É assim que as pessoas falam de verdade!'),
+    complete=('Complete the sentences!', 'Complete as frases!'), careful=('Careful! Only one is right.', 'Cuidado! Só uma está certa.'),
+    lab=("Let's train our ears!", 'Vamos treinar o ouvido!'), hunt=('Listen and hunt the sound!', 'Ouça e cace o som certo!'),
+    pick=('Pick a mission! Which one do you want?', 'Escolha uma missão! Qual você quer?'), wrong=lambda v, form: ing(v), vq='Verbo **%s** (%s) com he/she.')
+
 
 def build(old, X, XT, VB, prev, MR=None):
     B = X['base']
@@ -100,7 +109,7 @@ def build(old, X, XT, VB, prev, MR=None):
         return d
 
     frames = []
-    frames.append(fr('cover', art=B['cover_art'], sub=B['cover_sub'], badge='A1', snd=old['fr'][0].get('snd', 'bell'),
+    frames.append(fr('cover', art=B['cover_art'], sub=B['cover_sub'], badge=LG['badge'], snd=old['fr'][0].get('snd', 'bell'),
                      say=B['cover_say'], gancho=X['gancho'], obra='%s · %s' % (ob['name'], ob['year']),
                      stage=dict(rs=st['rs'], chars=st['chars'])))
     if X['review'] and prev:  # revisão do episódio anterior fica no INÍCIO deste episódio
@@ -110,7 +119,7 @@ def build(old, X, XT, VB, prev, MR=None):
                          lead='Abra cada bolso da mochila e relembre o episódio anterior!',
                          next='Hoje: **%s**' % B['pattern_label'], say='Bora relembrar o episódio anterior antes de seguir!',
                          rs=rs['review'], chars=mc))
-    frames.append(fr('hotscene', title='Explore a cena', hint='Toque nos objetos brilhantes para ouvir o nome em inglês.',
+    frames.append(fr('hotscene', title='Explore a cena', hint=LG['hint'],
                      rs=st['rs'], chars=st['chars'], hot=[dict(h, sayPt=HOTPT.get(h['say'], '')) for h in X['hot']], say='Toque nos objetos brilhantes!',
                      obra=dict(name=ob['name'], kind=ob['kind'], text=ob['text'], line=ob['line'], pa=ob['pa'])))
     frames.append(fr('pgscene', cast=B['cast'], lines=B['lines'], speakers=X['speakers'], rs=st['rs'], chars=st['chars'],
@@ -118,13 +127,13 @@ def build(old, X, XT, VB, prev, MR=None):
     # você entendeu?
     quiz = [dict(ask=it['q'], speak=it['q'], pt=it['pt'], opts=it['opts'], a=it['a'], why=it['why']) for it in B['quiz']]
     frames.append(fr('pgsheet', title='Você entendeu?', items=quiz, rs=rs['dquiz'], chars=mc, review=False,
-                     bubble=[b, 'What do you remember?', 'De que você se lembra?']))
+                     bubble=[b, *LG['remember']]))
     # padrão com ilustração
     R = dict(X['rule'])
     R['formula'] = [{'from': r['from_'], 'to': r['to'], 'say': r.get('say'), 'note': r.get('note')} for r in R.get('formula', [])]
     frames.append(fr('pgrule', rule=R, q=B['rdg_q'], rs=rs['rdg'], say='Veja o padrão com figuras e ouça os exemplos.'))
     frames.append(fr('pgmold', title='Molde de frases', pages=MR['mold'], rs=rs['pat'], chars=mc,
-                     say='Toque nas peças e veja várias frases.', bubble=[a, 'Swap the pieces and build sentences!', 'Troque as peças e monte frases!']))
+                     say='Toque nas peças e veja várias frases.', bubble=[a, *LG['swap']]))
     # palavras com figura (todas de uma vez)
     pt = {}
     for w, p, note in B['vocab']:
@@ -141,16 +150,16 @@ def build(old, X, XT, VB, prev, MR=None):
         items.append(dict(fig=emo, say=w, ask='Qual é a palavra?', opts=opts, a=opts.index(w), ptWord=p,
                           why='**%s** = %s.%s' % (w, p, (' ' + note) if note else '')))
     frames.append(fr('pgsheet', title='Palavras da cena', layout='grid', items=items, rs=rs['vplay'], chars=mc,
-                     bubble=[a, 'Listen and choose the word!', 'Ouça e escolha a palavra da figura!']))
+                     bubble=[a, *LG['words']]))
     # verbos (4) + missão dos verbos
     frames.append(fr('verbs', title=VB['title'], items=VB['items'], tip=VB['tip'], say='Vamos ver os verbos de hoje!', rs=rs['build'], chars=mc,
-                     quiz=verb_quiz(VB), bubble=[b, "These are today's verbs!", 'Estes são os verbos de hoje!']))
+                     quiz=verb_quiz(VB), bubble=[b, *LG['verbs']]))
     frames.append(fr('vplay', title='Missão dos verbos', items=VB['items'], plan=[[0, 0], [1, 0], [2, 0], [3, 0], [0, 3], [1, 3], [2, 3]],
                      say='Missão dos verbos: 7 passos. Eu ajudo você!', rs=rs['build'], chars=mc,
-                     bubble=[a, 'Verb mission! I will help you.', 'Missão dos verbos! Eu ajudo você.']))
+                     bubble=[a, *LG['vmission']]))
     # expressões comuns e gírias + cena com as expressões
     frames.append(fr('pgexp', title='Expressões e gírias', items=XT['exp'], quiz=MR['expq'], rs=rs['vplay'], chars=mc,
-                     say='Toque para ouvir cada expressão.', bubble=[a, 'This is how people really talk!', 'É assim que as pessoas falam de verdade!']))
+                     say='Toque para ouvir cada expressão.', bubble=[a, *LG['exps']]))
     es = XT['exp_scene']
     frames.append(fr('pgscene', title='Na conversa de verdade', cast=B['cast'], lines=es['lines'], speakers=X['speakers'], rs=es['rs'],
                      chars=st['chars'], say='Veja as expressões em uso. Elas estão destacadas.'))
@@ -158,17 +167,17 @@ def build(old, X, XT, VB, prev, MR=None):
                 say=r['q'].replace('___', r['opts'][r['a']])) for r in X['gap']]
     gap = gap + MR['gap']
     frames.append(fr('pgsheet', title='Complete as falas', items=gap, rs=rs['build'], chars=mc,
-                     bubble=[b, 'Complete the sentences!', 'Complete as frases!']))
+                     bubble=[b, *LG['complete']]))
     trap = [dict(ask=r['q'], opts=r['opts'], a=r['a'], why=r['why'], say=strip_tags(r['opts'][r['a']])) for r in X['trap']]
     trap = trap + [dict(ask=r['ask'], opts=r['opts'], a=r['a'], why=r['why'], say=r.get('say') or strip_tags(r['opts'][r['a']])) for r in MR['trap']]
     frames.append(fr('pgsheet', title='Qual está certa?', items=trap, rs=rs['order'], chars=mc,
-                     bubble=[b, 'Careful! Only one is right.', 'Cuidado! Só uma está certa.']))
+                     bubble=[b, *LG['careful']]))
     # laboratório de sons + caça-sons (só se o episódio ainda não tiver o laboratório)
     if not any(f['k'] in ('soundlab', 'pglab') for f in frames):
         lab = dict(XT['lab'])
-        frames.append(fr('pglab', rs=rs['soundlab'], chars=mc, bubble=[a, "Let's train our ears!", 'Vamos treinar o ouvido!'], **lab))
+        frames.append(fr('pglab', rs=rs['soundlab'], chars=mc, bubble=[a, *LG['lab']], **lab))
         frames.append(fr('pgsheet', title='Caça-sons', items=XT['hunt'], rs=rs['soundlab'], chars=mc,
-                         bubble=[b, 'Listen and hunt the sound!', 'Ouça e cace o som certo!']))
+                         bubble=[b, *LG['hunt']]))
     frames.append(fr('pgspeak', title='Sua vez de falar', items=[list(x) for x in B['dictate'][:3]] + [list(x) for x in MR['speak']], who=mc[0][0],
                      say='Ouça cada frase e repita em voz alta.', rs=rs['dictate'], chars=mc))
     pr = dict(B['produce'])
@@ -176,7 +185,7 @@ def build(old, X, XT, VB, prev, MR=None):
               data=dict(prompt=pr['prompt'], ph='Escreva a sua resposta aqui…', chips=[pr['chips'][0]], model=pr['model'], check=pr['check'],
                         kw=pr['kw'], tips=pr['tips'], ok=pr['ok'], reply=pr['reply']))
     frames.append(fr('pgmission', title='Missão: sua vez!', missions=[m1] + MR['missions'], rs=rs['produce'], chars=mc,
-                     say='Escolha uma missão e mostre o que você aprendeu!', bubble=[a, 'Pick a mission! Which one do you want?', 'Escolha uma missão! Qual você quer?']))
+                     say='Escolha uma missão e mostre o que você aprendeu!', bubble=[a, *LG['pick']]))
     frames.append(fr('wrap', title='Para levar', recap=B['wrap_recap'], teaser=B['teaser'], sticker=X['sticker'], rs=rs['wrap'], chars=mc))
 
     e = copy.deepcopy(old)

@@ -49,3 +49,6 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 ## Esqueletos do inglês regular (episódios não piloto)
 - `python3 tools/skel/build.py` gera `data/skel/en-<nível>.json` (o app não lê) e `docs/esqueletos/en-<nível>.md`: 2.924 episódios (A1 390 a partir do 77º; A2 474; B1 530; B2 510; C1 510; C2 510). Cada um traz título, tema, obra, cenário, gramática, vocabulário, frase-gancho e o plano dos 19 quadros do modelo piloto.
 - Limite: o plano dos quadros é derivado dos dados do episódio, não escrito um a um. Nos itens `regram` (488) o tema do episódio nem sempre combina com a gramática nova: revisar tema/obra ao escrever a aula.
+
+## Espanhol A1 no modelo piloto
+- Episódios 1–5 (71001, 7071001, 71002, 7071002, 71003) reescritos no modelo/visual do inglês: `tools/es/ep_*.py` + `python3 tools/model_es.py` (usa `model_v2.LG` com textos em espanhol). Personagens novos em `js/chars3.js` (Tokio, Río, Dom Quixote, Sancho, Chavo, Dona Florinda). O visual `regular-pilot-v1` agora vale para en-a1 e es-a1. Vocabulário e títulos do esqueleto mantidos; obras trocadas por obras em espanhol coerentes com o tema.
