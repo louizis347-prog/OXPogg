@@ -55,6 +55,9 @@ function hero(f,e,st){
 }
 
 const ILL={read:{tag:'📖'},gap:{tag:'✏️',pen:1},choose:{tag:'💬'},trap:{tag:'🔍',lens:1},order:{tag:'🔀'}};
+/* modelo "padrão do dia": todo quadro de prática ganha a faixa ilustrada (cena pintada + personagens + Poggie) */
+const PILL={rdg:{tag:'🔍',lens:1},pat:{tag:'🧩'},vplay:{tag:'🔊'},sbuild:{tag:'🚂'},build:{tag:'🧩'},order:{tag:'🔀'},balloons:{tag:'🎈'},dictate:{tag:'🎧',pen:1},soundlab:{tag:'🔬'},dquiz:{tag:'❓'},scenebuild:{tag:'🧸'},produce:{tag:'🗣️',pen:1},review:{tag:'🎒'},wrap:{tag:'🎁'},hook:{tag:'💬'}};
+function illK(e,f){return ILL[f.k]||(e&&e.pilot&&PILL[f.k])||null}
 function castOf(e){
   const out=[];const add=(n,em,c)=>{if(n&&em&&!out.some(x=>x.n===n))out.push({n,em,c})};
   e.fr.forEach(f=>{
@@ -65,11 +68,11 @@ function castOf(e){
 }
 function illus(step,f){
   try{
-    const e=P.e,I=ILL[f.k],cast=f.k==='read'?(f.props||[]).slice(0,3).map(em=>({n:'',em,c:'#2BB3A6'})):castOf(e);
+    const e=P.e,I=illK(e,f),cast=f.k==='read'?(f.props||[]).slice(0,3).map(em=>({n:'',em,c:'#2BB3A6'})):castOf(e);
     const key=f.rs||AZ.scn(e,'scene');let bk='';
     if(key&&window.RS&&RS[key])bk=`<div class="az-ill-bk">${AZ.svg(key)}</div>`;
     const av=cast.map((c,i)=>`<span class="az-av ${i?'r':'l'}" style="--c:${c.c||'#2BB3A6'}"><b>${/^(flag|svg):/.test(c.em)&&typeof fxIcon==='function'?fxIcon(c.em,34):c.em}</b></span>`).join('');
-    const d=document.createElement('div');d.className='az-ill';
+    const d=document.createElement('div');d.className='az-ill'+(e&&e.pilot?' az-ill-s':'');
     d.innerHTML=`${bk}${av}<div class="az-ill-pg">${poggie({scarf:(P.c&&P.c.scarf)||'#FFE58A',lens:I.lens,pen:I.pen})}</div><span class="az-ill-tag">${I.tag}</span>`;
     const anchor=step.querySelector('.fx-h')||step.firstElementChild;
     if(anchor&&anchor.parentNode===step)anchor.before(d);else step.prepend(d);
@@ -93,10 +96,11 @@ window.renderFx=function(n,st,lang){
     const step=st.querySelector('.step');if(!step)return;
     const f=P.e.fr[n];
     step.querySelectorAll('.fx-cul,.fx-banner,.fx-mini').forEach(x=>x.remove());
-    if(ILL[f.k]&&!step.querySelector('.az-ill'))illus(step,f);
+    if(illK(P.e,f)&&!step.querySelector('.az-ill'))illus(step,f);
+    else if(P.e.pilot&&step.classList.contains('hk')&&!step.querySelector('.az-ill')){const sc=P.e.fr.find(x=>x.k==='scene');illus(step,{k:'hook',rs:sc&&sc.rs})}
     st._azn=n;
     if(!st._azo){st._azo=new MutationObserver(()=>{try{
-      const fr=P.e&&P.e.fr&&P.e.fr[st._azn];if(!fr||!ILL[fr.k]||!AZ.on(P.e))return;
+      const fr=P.e&&P.e.fr&&P.e.fr[st._azn];if(!fr||!illK(P.e,fr)||!AZ.on(P.e))return;
       const sp=st.querySelector('.step');if(!sp||sp.querySelector('.az-ill'))return;
       sp.querySelectorAll('.eyebrow,.fx-cul,.fx-banner,.fx-mini').forEach(x=>x.remove());
       illus(sp,fr);twoCol(sp,fr);

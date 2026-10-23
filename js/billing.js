@@ -20,8 +20,10 @@ function cached(){ // resposta imediata; a verificação real roda em segundo pl
     if(c&&u&&c.uid===u.id&&c.p&&(!c.until||new Date(c.until)>new Date()))return true}catch(_){}
   return false;
 }
+/* Liberação temporária para testes: todos os episódios abertos. Volte para false para reativar o limite gratuito. */
+const OPEN_ALL=true;
 function allow(cid,idx){
-  if(!on()||idx<free()||cached())return true;
+  if(OPEN_ALL||!on()||idx<free()||cached())return true;
   refresh().then(p=>{if(p.premium&&document.getElementById('pg-pay'))document.getElementById('pg-pay').remove()});
   paywall();return false;
 }
