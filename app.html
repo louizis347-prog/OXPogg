@@ -1612,7 +1612,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=201').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=202').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.forEach(registerEpisodeGenders);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
@@ -4724,7 +4724,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/scn_b.js"></script>
 <script src="js/scn_c.js"></script>
 <script src="js/scn_m2.js"></script><script src="js/scn_fine.js?v=4"></script><script src="js/scn_fine2.js?v=2"></script><script src="js/scn_fine3.js?v=2"></script><script src="js/scn_fine4.js?v=2"></script>
-<script src="js/az.js"></script><script src="js/chars.js?v=1"></script><script src="js/stage.js?v=2"></script><script src="js/stage2.js?v=1"></script><script src="js/present.js?v=1"></script><script src="js/pgreview.js?v=1"></script>
+<script src="js/az.js"></script><script src="js/chars.js?v=1"></script><script src="js/chars2.js?v=1"></script><script src="js/stage.js?v=2"></script><script src="js/stage2.js?v=1"></script><script src="js/present.js?v=1"></script><script src="js/pgreview.js?v=1"></script>
 <script src="js/rework.js"></script>
 <script src="js/es_m2.js"></script>
 <script src="js/m2.js"></script><script src="js/novos.js"></script><script src="js/talk.js"></script><script src="js/rounds.js"></script><script src="js/suavez.js?v=5"></script>
