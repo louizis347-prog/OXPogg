@@ -1,14 +1,9 @@
-# Esqueletos — en-a1 (306 episódios)
+# Esqueletos — en-a1 (301 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 161 | I Can, I Can't | advérbios de frequência: always, usually, never | skill, talent, trick, secret, hero, power | speak, skate, type, perform | You're a natural!; Show me how.; I'm a fast learner. |
-| 162 | I can, I can't | advérbios de frequência: always, usually, never | skill, talent, trick, secret, hero, power | skill, talent, trick, secret | You're a natural!; Show me how.; I'm a fast learner. |
-| 163 | Where Were You? | Dezenas e distâncias | yesterday, tomorrow, tonight, ago, moment, past | go, come, miss, hope | Long time no see!; I missed you!; What a coincidence! |
-| 164 | Passado de be: was, were | Dezenas e distâncias | yesterday, tomorrow, tonight, ago, moment, past | yesterday, tomorrow, tonight, ago | Long time no see!; I missed you!; What a coincidence! |
-| 165 | A Camping Weekend | Oferecer e pedir: Would you like…? I'd like… | picnic, camping, sunset, campfire, flashlight, trail | pack, explore, set up, relax | Sounds like a plan.; Let's hit the road.; Get some rest. |
 | 166 | Would you like…? | Oferecer e pedir: Would you like…? I'd like… | picnic, camping, sunset, campfire, flashlight, trail | picnic, camping, sunset, campfire | Sounds like a plan.; Let's hit the road.; Get some rest. |
 | 167 | Put On, Take Off | phrasal verbs: put on, take off, hang up | mittens, tracksuit, vest, sandals, socks, buckle | put on, put away, hang up, zip up | Put on your jacket.; Take off your shoes.; Hang up your coat.; put on |
 | 168 | Put on, take off | phrasal verbs: put on, take off, hang up | mittens, tracksuit, vest, sandals, socks, buckle | mittens, tracksuit, vest, sandals | Put on your jacket.; Take off your shoes.; Hang up your coat.; put on |
