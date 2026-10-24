@@ -13,7 +13,7 @@ c = collections.defaultdict(list)
 for i, e in enumerate(items):
     ep = i + 1
     if e.get('pilot') or ep <= 175: s = e.get('pattern') or (e.get('g') or {}).get('t') or ''
-    else: s = ov.get(str(e['n'])) or sk[e['n']]['gramatica']['estrutura']
+    else: s = ov.get(str(e['n'])) or (sk[e['n']]['gramatica']['estrutura'] if e['n'] in sk else (e.get('g') or {}).get('t') or '')
     c[norm(s)].append(ep)
 d = {k: v for k, v in c.items() if len(v) > 1}
 for k, v in sorted(d.items(), key=lambda x: x[1][0]): print(v, '|', k[:70])

@@ -97,3 +97,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Fontes: `tools/v3/ep_006_010.py` … `ep_112_115.py` (escritos com `tools/v3/short.py`, que deriva do texto escrito à mão as perguntas de revisão, o caça-sons e as missões). A obra e o cenário de cada episódio vêm de `tools/v3/obras_old_006_115.json` (guardados do quadro `cultob` antigo).
 - `tools/model_v3.py` agora ordena os episódios pela posição no curso, monta a revisão do episódio anterior (inclusive dos 5 primeiros) e só reescreve arquivos de dados que mudaram, para não pisar em outros fluxos (episódios 179+).
 - Próximo: episódio 176 em diante (outro fluxo já refez 179–184 em `tools/editorial/browser_english_N.py`).
+
+## Inglês A1 até o episódio 200
+
+- Remodelados no modelo piloto: 181–191 e 196–200 (`tools/v3/ep_181_185.py`, `ep_186_191.py`, `ep_196_200.py`). Os episódios 176–180 e 192–195 já tinham sido refeitos por outro fluxo.
+- Os 200 primeiros episódios estão no modelo piloto, com rótulos de gramática únicos (nenhum repetido nem vizinho igual).
+- `tools/gram/check_unique.py` não quebra mais quando o episódio já saiu do esqueleto; `tools/model_v3.py` monta a revisão também a partir de episódios feitos por outro fluxo.
+- Próximo: episódio 201 em diante.

@@ -1,14 +1,9 @@
-# Esqueletos — en-a1 (271 episódios)
+# Esqueletos — en-a1 (266 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 196 | On + dia | Dias da semana: on + dia | Tuesday, Wednesday, Thursday, unwind, lounge, loaf | Tuesday, Wednesday, Thursday, unwind | What day is it today?; Thank goodness it's Friday!; Have a nice weekend! |
-| 197 | Awesome! Cool! Great! | gírias de aprovação | awesome, cool, great, amazing, fun, lucky | love, enjoy, win, smile | That is awesome!; Your hat is cool.; You are so lucky!; awesome |
-| 198 | Awesome! Cool! Great! | gírias de aprovação | awesome, cool, great, amazing, fun, lucky | awesome, cool, great, amazing | That is awesome!; Your hat is cool.; You are so lucky!; awesome |
-| 199 | Dollars and Cents | Dólares e centavos | penny, nickel, dime, budget, haggle, splurge | budget, haggle, splurge, penny | A penny for your thoughts?; Money doesn't grow on trees.; That's a steal! |
-| 200 | Dólares e centavos | Dólares e centavos | penny, nickel, dime, budget, haggle, splurge | penny, nickel, dime, budget | A penny for your thoughts?; Money doesn't grow on trees.; That's a steal! |
 | 201 | Buy It, Pay for It | Pedir com I'd like | groceries, produce, dairy, browse, sample, select | browse, sample, select, groceries | Paper or plastic?; Is that everything?; Who's next? |
 | 202 | I'd like… | Pedir com I'd like | groceries, produce, dairy, browse, sample, select | groceries, produce, dairy, browse | Paper or plastic?; Is that everything?; Who's next? |
 | 203 | Can I Pay by Card? | Pedir permissão com Can I | invoice, subscription, installment, renew, cancel, authorize | renew, cancel, authorize, invoice | Can I pay by card?; Is there a fee?; Tap your card here. |

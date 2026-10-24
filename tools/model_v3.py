@@ -49,7 +49,11 @@ def prev_from_pilot(it):
     F = {}
     for f in it['fr']:
         F.setdefault(f['k'], []).append(f)
-    words = [(f_['fig'], f_['say'], f_.get('ptWord', '')) for f_ in next(f for f in F['pgsheet'] if f.get('title') == 'Palavras da cena')['items']]
+    grid = next((f for f in F['pgsheet'] if f.get('title') == 'Palavras da cena'), None)
+    if grid:
+        words = [(f_['fig'], f_['say'], f_.get('ptWord', '')) for f_ in grid['items']]
+    else:  # episódios feitos por outro fluxo: usa os objetos da cena clicável
+        words = [(h['e'], h['en'], h.get('pt', '')) for h in F['hotscene'][0]['hot']]
     rule = F['pgrule'][0]['rule']
     base = dict(title=it['t'], wrap_recap=F['wrap'][0]['recap'], vocab=[[w, p, ''] for _e, w, p in words], balloons=[(e, w) for e, w, _p in words])
     X = dict(base=base, hot=[], rule=dict(head=rule['head'], sub=rule['sub'], uses=rule.get('uses', [])), obra=dict(name=''))
