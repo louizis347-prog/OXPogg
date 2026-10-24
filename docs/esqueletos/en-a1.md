@@ -1,28 +1,9 @@
-# Esqueletos — en-a1 (291 episódios)
+# Esqueletos — en-a1 (272 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 176 | Pedir ajuda: Call… | Ordinais de 7 a 10 | police, ambulance, accident, firefighter, emergency, injury | police, ambulance, accident, firefighter | What's your emergency?; Help is on the way.; Be careful! |
-| 177 | Look At, Look For | phrasal verbs: look at, look for, look up, find | magnifier, torch, keys, lost and found, poster, framed photo | look at, look for, look up, find | Look at the map.; I am looking for my keys.; I look up the word.; look at |
-| 178 | Look at, look for | phrasal verbs: look at, look for, look up, find | magnifier, torch, keys, lost and found, poster, framed photo | magnifier, torch, keys, lost and found | Look at the map.; I am looking for my keys.; I look up the word.; look at |
-| 179 | Storm Warning | Rotina: present simple | thunder, lightning, rainbow, fog, storm, flood | shake, hear, shout, whisper | It's pouring!; Thank goodness!; Better safe than sorry. |
-| 180 | Presente simples | Rotina: present simple | thunder, lightning, rainbow, fog, storm, flood | thunder, lightning, rainbow, fog | It's pouring!; Thank goodness!; Better safe than sorry. |
-| 181 | Tiny Creatures | Quinze minutos: past e to | spider, butterfly, frog, ant, bee, octopus | crawl, hop, sting, hide | I'm scared stiff!; It's harmless.; Busy as a bee. |
-| 182 | Quinze minutos | Quinze minutos: past e to | spider, butterfly, frog, ant, bee, octopus | spider, butterfly, frog, ant | I'm scared stiff!; It's harmless.; Busy as a bee. |
-| 183 | My New Apartment | Minutos: past e to | apartment, landlord, rent, roof, attic, basement | rent, dust, park, move | Make yourself at home.; Welcome to the neighborhood!; I'll take it. |
-| 184 | Minutos: past e to | Minutos: past e to | apartment, landlord, rent, roof, attic, basement | apartment, landlord, rent, roof | Make yourself at home.; Welcome to the neighborhood!; I'll take it. |
-| 185 | First, Next, Then, Finally | conectores de sequência | sift, stir-fry, marinade, simple, quick, prepared | wash, mix, finish, start | First, wash your hands.; Next, add the cheese.; Then mix it.; first |
-| 186 | First, next, then, finally | conectores de sequência | sift, stir-fry, marinade, simple, quick, prepared | sift, stir-fry, marinade, simple | First, wash your hands.; Next, add the cheese.; Then mix it.; first |
-| 187 | The Job Interview | Meses: in + mês | interview, resume, career, salary, colleague, deadline | apply, hire, retire, graduate | Nice to meet you.; Tell me about yourself.; When can you start? |
-| 188 | Meses: in + mês | Meses: in + mês | interview, resume, career, salary, colleague, deadline | interview, resume, career, salary | Nice to meet you.; Tell me about yourself.; When can you start? |
-| 189 | At the Art Gallery | Meses: in + mês | gallery, painting, sculpture, poem, novel, magazine | publish, sculpt, admire, exhibit | It's a work of art.; It's not my cup of tea.; I couldn't put it down. |
-| 190 | In + mês, in + ano | Meses: in + mês | gallery, painting, sculpture, poem, novel, magazine | gallery, painting, sculpture, poem | It's a work of art.; It's not my cup of tea.; I couldn't put it down. |
-| 191 | Every Month, Every Season | Estações: in + estação | July, August, September, harvest, rake, shiver | harvest, rake, shiver, July | Trick or treat!; Happy Thanksgiving!; Merry Christmas! |
-| 192 | In + estação | Estações: in + estação | July, August, September, harvest, rake, shiver | July, August, September, harvest | Trick or treat!; Happy Thanksgiving!; Merry Christmas! |
-| 193 | Today's Date | A data completa | date, anniversary, holiday, declare, proclaim, salute | declare, proclaim, salute, date | What's the date today?; Happy Fourth of July!; Fly the flag! |
-| 194 | A data completa | A data completa | date, anniversary, holiday, declare, proclaim, salute | date, anniversary, holiday, declare | What's the date today?; Happy Fourth of July!; Fly the flag! |
 | 195 | What Day Is It? | Dias da semana: on + dia | Tuesday, Wednesday, Thursday, unwind, lounge, loaf | unwind, lounge, loaf, Tuesday | What day is it today?; Thank goodness it's Friday!; Have a nice weekend! |
 | 196 | On + dia | Dias da semana: on + dia | Tuesday, Wednesday, Thursday, unwind, lounge, loaf | Tuesday, Wednesday, Thursday, unwind | What day is it today?; Thank goodness it's Friday!; Have a nice weekend! |
 | 197 | Awesome! Cool! Great! | gírias de aprovação | awesome, cool, great, amazing, fun, lucky | love, enjoy, win, smile | That is awesome!; Your hat is cool.; You are so lucky!; awesome |
