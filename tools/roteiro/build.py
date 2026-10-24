@@ -7,6 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 LV = ['en-a1', 'en-a2', 'en-b1', 'en-b2', 'en-c1', 'en-c2']
 NAME = {'en-a1': 'A1', 'en-a2': 'A2', 'en-b1': 'B1', 'en-b2': 'B2', 'en-c1': 'C1', 'en-c2': 'C2'}
 KINDS = ['pgexp', 'pgscene']
+UNIQ = json.load(open(os.path.join(ROOT, 'tools/gram/unique_a1.json'), encoding='utf-8'))
 
 
 def pairs(txt):
@@ -50,6 +51,9 @@ def build():
     summary = {}
     for c in LV:
         sk = json.load(open(os.path.join(ROOT, 'data/skel/%s.json' % c), encoding='utf-8'))
+        for e in sk:  # estrutura única por episódio (tools/gram/unique_a1.json)
+            if c == 'en-a1' and str(e['n']) in UNIQ:
+                e['gramatica'] = dict(e['gramatica'], estrutura=UNIQ[str(e['n'])])
         by = {e['n']: e for e in sk}
         au = read(c)
         rows, miss = [], []
