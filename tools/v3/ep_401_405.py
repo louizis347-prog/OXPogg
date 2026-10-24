@@ -60,7 +60,7 @@ EPS.append(E(
              what='**tape** soa **“TÊIP”**. **rewind** soa **“ri-UÁIND”**. **card** soa **“KÁRD”**.',
              how='Diga “TÊIP”, “ri-UÁIND”, “KÁRD”.', pt='A com e mudo soa êi; i com nd soa ái.',
              ex=[('tape', 'TÊIP', 'fita', 'a_e = êi'), ('rewind', 'ri-UÁIND', 'rebobinar', 'i = ái'), ('card', 'KÁRD', 'cartão', 'ar = ár')],
-             pairs=[('tape', 'tap', 'têip × téip'), ('card', 'cord', 'kárd × kórd'), ('shelf', 'self', 'shélf × sélf')],
+             pairs=[('tape', 'tap', 'têip × tép'), ('card', 'cord', 'kárd × kórd'), ('shelf', 'self', 'shélf × sélf')],
              tip='Shelf começa com sh, como “xi”.', phrase=['I want to return this tape.', 'Quero devolver esta fita.'],
              rounds=[('tape', ['tape', 'tap'], 0, '**tape** soa TÊIP.'), ('card', ['card', 'cord'], 0, '**card** soa KÁRD.'), ('shelf', ['shelf', 'self'], 0, '**shelf** começa com sh.')]),
     verbs=('Verbos de devolução', 'Quatro verbos: return, give back, rewind e take.',
