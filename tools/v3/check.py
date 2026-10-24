@@ -10,7 +10,7 @@ SHEETS = {'Você entendeu?': 3, 'Palavras da cena': 6, 'Complete as falas': 6, '
 
 def load():
     it = {}
-    for f in sorted(glob.glob(os.path.join(ROOT, 'data', 'en-a1_*.json'))):
+    for f in sorted(glob.glob(os.path.join(ROOT, 'data', os.environ.get('COURSE', 'en-a1') + '_*.json'))):
         for x in json.load(open(f, encoding='utf-8')):
             it[x['n']] = x
     return it

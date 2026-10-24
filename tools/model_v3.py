@@ -13,9 +13,13 @@ import model_v2 as M  # noqa: E402
 from v3 import lib  # noqa: E402
 
 
+COURSE = os.environ.get('COURSE', 'en-a1')
+PREFIX = 'a2_' if COURSE == 'en-a2' else 'ep_'
+
+
 def load_eps():
     eps = []
-    for f in sorted(glob.glob(os.path.join(HERE, 'v3', 'ep_*.py'))):
+    for f in sorted(glob.glob(os.path.join(HERE, 'v3', PREFIX + '*.py'))):
         m = importlib.import_module('v3.' + os.path.basename(f)[:-3])
         eps += m.EPS
     last = {}
@@ -67,7 +71,7 @@ def prev_from_pilot(it):
 def main(only=None):
     chunks = {}
     where = {}
-    for f in sorted(glob.glob(os.path.join(ROOT, 'data', 'en-a1_*.json'))):
+    for f in sorted(glob.glob(os.path.join(ROOT, 'data', COURSE + '_*.json'))):
         d = json.load(open(f, encoding='utf-8'))
         chunks[f] = d
         for i, e in enumerate(d):
