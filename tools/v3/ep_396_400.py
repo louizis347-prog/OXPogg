@@ -306,7 +306,7 @@ EPS.append(E(
              what='**stopped** soa **“STÓPT”**. **dropped** soa **“DRÓPT”**. **clapped** soa **“KLÉPT”**.',
              how='Diga “STÓPT”, “DRÓPT”, “KLÉPT”.', pt='Pp dobrado soa um p só; o ed soa t.',
              ex=[('stopped', 'STÓPT', 'parou', 'pp = p'), ('dropped', 'DRÓPT', 'deixou cair', 'pp = p'), ('clapped', 'KLÉPT', 'aplaudiu', 'pp = p')],
-             pairs=[('stopped', 'stop', 'stópt × stóp'), ('dropped', 'drop', 'dRópt × dróp'), ('clapped', 'clap', 'klépt × klép')],
+             pairs=[('stopped', 'stop', 'stópt × stóp'), ('dropped', 'drop', 'drópt × dróp'), ('clapped', 'clap', 'klépt × klép')],
              tip='A letra dobra na escrita, mas o som é um só.', phrase=['Everyone clapped.', 'Todos aplaudiram.'],
              rounds=[('stopped', ['stopped', 'stop'], 0, '**stopped** termina em t.'), ('dropped', ['dropped', 'drop'], 0, '**dropped** termina em t.'), ('clapped', ['clapped', 'clap'], 0, '**clapped** termina em t.')]),
     verbs=('Verbos que dobram', 'Quatro verbos: stop, plan, drop e clap.',
