@@ -89,3 +89,11 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 ## Cobertura gramatical do A1 (auditoria após o 175)
 - Nos episódios 121–175 troquei algumas estruturas do roteiro antigo pelas que combinavam com título e vocabulário. Ficaram sem episódio dedicado: advérbios de frequência (planejado no 161), numerais (11–16, dezenas, números grandes, ordinais) e reforço de there is/are, preposições de lugar e conectores (and/but/because/so).
 - Esses itens foram transferidos para episódios pendentes em `tools/gram/plan_a1.py` (lista de episódio → estrutura que PRECISA aparecer). Rodar `python3 tools/gram/plan_a1.py` ao fechar cada lote: mostra OK / FALTA / pendente.
+
+## Inglês A1: remodelagem dos 85 episódios antigos (6–51 e 77–115)
+
+- Todos os 175 primeiros episódios do A1 de inglês estão no modelo piloto (`presentation: regular-pilot-v1`): 19 quadros (o episódio 1 tem 18, sem revisão), sem `cultob`, `cultx`, `read`, `lplay` ou `tdlg`.
+- Cada episódio tem rótulo de gramática próprio (`g.t`), sem repetição entre vizinhos nem no bloco inteiro (os episódios 1–4 também foram corrigidos).
+- Fontes: `tools/v3/ep_006_010.py` … `ep_112_115.py` (escritos com `tools/v3/short.py`, que deriva do texto escrito à mão as perguntas de revisão, o caça-sons e as missões). A obra e o cenário de cada episódio vêm de `tools/v3/obras_old_006_115.json` (guardados do quadro `cultob` antigo).
+- `tools/model_v3.py` agora ordena os episódios pela posição no curso, monta a revisão do episódio anterior (inclusive dos 5 primeiros) e só reescreve arquivos de dados que mudaram, para não pisar em outros fluxos (episódios 179+).
+- Próximo: episódio 176 em diante (outro fluxo já refez 179–184 em `tools/editorial/browser_english_N.py`).
