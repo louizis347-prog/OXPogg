@@ -1,10 +1,9 @@
-# Esqueletos — en-a1 (272 episódios)
+# Esqueletos — en-a1 (271 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 195 | What Day Is It? | Dias da semana: on + dia | Tuesday, Wednesday, Thursday, unwind, lounge, loaf | unwind, lounge, loaf, Tuesday | What day is it today?; Thank goodness it's Friday!; Have a nice weekend! |
 | 196 | On + dia | Dias da semana: on + dia | Tuesday, Wednesday, Thursday, unwind, lounge, loaf | Tuesday, Wednesday, Thursday, unwind | What day is it today?; Thank goodness it's Friday!; Have a nice weekend! |
 | 197 | Awesome! Cool! Great! | gírias de aprovação | awesome, cool, great, amazing, fun, lucky | love, enjoy, win, smile | That is awesome!; Your hat is cool.; You are so lucky!; awesome |
 | 198 | Awesome! Cool! Great! | gírias de aprovação | awesome, cool, great, amazing, fun, lucky | awesome, cool, great, amazing | That is awesome!; Your hat is cool.; You are so lucky!; awesome |
