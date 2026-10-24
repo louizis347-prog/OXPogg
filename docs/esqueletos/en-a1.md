@@ -1,29 +1,9 @@
-# Esqueletos — en-a1 (236 episódios)
+# Esqueletos — en-a1 (216 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 231 | I'm Brazilian | Nacionalidade | Brazilian, American, Mexican, Chinese, French, Italian, live, come, visit, move, know | live, come, visit, move | What's your nationality?; I'm Brazilian.; Are you American? |
-| 232 | Nacionalidades | Nacionalidade | Brazilian, American, Mexican, Chinese, French, Italian, live, come, visit, move, know | Brazilian, American, Mexican, Chinese | What's your nationality?; I'm Brazilian.; Are you American? |
-| 233 | Do You Speak English? | Falar idiomas | English, Spanish, Portuguese, German, Japanese, language, speak, understand, learn, say, repeat | speak, understand, learn, say | Do you speak English?; Yes, a little.; How do you say it? |
-| 234 | Falar idiomas | Falar idiomas | English, Spanish, Portuguese, German, Japanese, language, speak, understand, learn, say, repeat | English, Spanish, Portuguese, German | Do you speak English?; Yes, a little.; How do you say it? |
-| 235 | What Do You Do for Fun? | Gostar de fazer | reading, swimming, dancing, cooking, singing, drawing, play, watch, listen, run, go | play, watch, listen, run | What do you do for fun?; I'm into music.; I love dancing. |
-| 236 | Gostar de fazer | Gostar de fazer | reading, swimming, dancing, cooking, singing, drawing, play, watch, listen, run, go | reading, swimming, dancing, cooking | What do you do for fun?; I'm into music.; I love dancing. |
-| 237 | He Watches, She Studies | he/she/it + verbo com -s/-es | Watches, Studies, Goes, Has, Does, Washes | watch, study, go, have | He watches TV every day.; She studies English at night.; My dog goes to the park. |
-| 238 | He watches, she studies | he/she/it + verbo com -s/-es | Watches, Studies, Goes, Has, Does, Washes | Watches, Studies, Goes, Has | He watches TV every day.; She studies English at night.; My dog goes to the park. |
-| 239 | Every Day, Every Morning | presente simples + every day | Wake up, Get up, Shower, Brush, Breakfast, Coffee | wake up, get up, brush, eat | I wake up at six.; Then I get up and brush my teeth.; I have breakfast at seven. |
-| 240 | Every day | presente simples + every day | Wake up, Get up, Shower, Brush, Breakfast, Coffee | Wake up, Get up, Shower, Brush | I wake up at six.; Then I get up and brush my teeth.; I have breakfast at seven. |
-| 241 | Usually, Often, Rarely | advérbio antes do verbo | Always, Usually, Often, Sometimes, Rarely, Never | walk, play, cheer, miss | I usually walk to work.; We always cheer for our team.; She rarely eats candy. |
-| 242 | Always, usually, often | advérbio antes do verbo | Always, Usually, Often, Sometimes, Rarely, Never | Always, Usually, Often, Sometimes | I usually walk to work.; We always cheer for our team.; She rarely eats candy. |
-| 243 | Wash Your Face! | imperativo | Face, Hands, Hair, Towel, Soap, Mirror | wash, comb, dry, brush | Wash your face, please.; Dry your hands with a towel.; Look in the mirror. |
-| 244 | Imperativo | imperativo | Face, Hands, Hair, Towel, Soap, Mirror | Face, Hands, Hair, Towel | Wash your face, please.; Dry your hands with a towel.; Look in the mirror. |
-| 245 | Once a Week, Twice a Month | past simple de be: was / were | Once a week, Twice a month, Every day, Weekend, Monday, Week | call, visit, walk, play | I call my mom once a week.; We eat out twice a month.; I walk my dog every day. |
-| 246 | Quantas vezes? | past simple de be: was / were | Once a week, Twice a month, Every day, Weekend, Monday, Week | Once a week, Twice a month, Every day, Weekend | I call my mom once a week.; We eat out twice a month.; I walk my dog every day. |
-| 247 | Quarter Past Seven | horas com past e to | Quarter past, Half past, Quarter to, O'clock, Clock, Mouse | strike, run, tell, wait | It's quarter past seven.; The class starts at half past eight.; I wait for the bus at quarter to eight. |
-| 248 | Horas fracionadas | horas com past e to | Quarter past, Half past, Quarter to, O'clock, Clock, Mouse | Quarter past, Half past, Quarter to, O'clock | It's quarter past seven.; The class starts at half past eight.; I wait for the bus at quarter to eight. |
-| 249 | What Time Does the Movie Start? | does + horário | Movie, Start, End, Ticket, Theater, Show | start, end, open, close | What time does the movie start?; It starts at eight.; Two tickets, please. |
-| 250 | What time does…? | does + horário | Movie, Start, End, Ticket, Theater, Show | Movie, Start, End, Ticket | What time does the movie start?; It starts at eight.; Two tickets, please. |
 | 251 | Read a Book, Write a Message | collocations com read e write | comic, title, fountain pen, typewriter, text message, sticky note | read, write, send, draw | I read a book every night.; She writes a letter.; I send a message.; read a book |
 | 252 | Read, write | collocations com read e write | comic, title, fountain pen, typewriter, text message, sticky note | comic, title, fountain pen, typewriter | I read a book every night.; She writes a letter.; I send a message.; read a book |
 | 253 | I Don't Eat Broccoli | don't + verbo | Broccoli, Meat, Fish, Rice, Vegetables, Dessert | eat, like, want, taste | I don't eat broccoli.; We don't like meat.; They don't eat fish. |

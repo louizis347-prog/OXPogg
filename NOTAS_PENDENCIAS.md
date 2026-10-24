@@ -114,3 +114,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Todos os rótulos de gramática de 1 a 230 são únicos e nenhum par de vizinhos divide 3 ou mais palavras de vocabulário.
 - `tools/gram/plan_a1.py` foi atualizado: estruturas que ficaram sem episódio dedicado foram reatribuídas a episódios pendentes (247–250, 239–240) e as já cobertas apontam para o episódio onde aparecem. Resultado: faltando 0.
 - Próximo: episódio 231 em diante (ainda no formato antigo). Obs.: o 195 e o 196 repetem `weekday`/`weekend` (2 de 6 palavras); se incomodar, trocar no 195 por Friday e Sunday.
+
+## Inglês A1 até o episódio 250
+
+- Episódios 231–250 refeitos no modelo piloto: `tools/v3/ep_231_235.py` … `ep_246_250.py`. Obras em `tools/v3/obras_old_231_250.json` (lidas por `OB()`).
+- Gramática (rótulos únicos): from … to, It takes, Do you speak, learn/study/practice, enjoy + -ing, want to, -s/-es/-ies, Does he…?, always/never, often/rarely, How often, once/twice/three times, wash/brush/comb, Please don’t, at home/school/work, partes do dia, -teen, minutos past/to, hundred/thousand/million, graus (30–100).
+- `tools/gram/plan_a1.py` agora aponta as estruturas para os episódios onde de fato aparecem; faltando 0. Nenhum rótulo repetido de 1 a 250, nenhum par de vizinhos com 3 ou mais palavras iguais, nenhuma fala seguida do mesmo personagem.
+- Próximo: episódio 251 em diante (ainda no formato antigo).
