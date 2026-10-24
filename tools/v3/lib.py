@@ -76,7 +76,12 @@ def ep(n, title, sub, pattern, why, review, names, cast_ids, stage_rs, stage_cha
 def OB(n, line_en, line_pt, p='b', text=None, year=None):
     """Obra do episódio reaproveitada do episódio antigo (tools/v3/obras_old_121_160.json): nome, tipo, ano, texto e arte da capa."""
     import json, os, re
-    o = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras_old_121_160.json'), encoding='utf-8'))[str(n)]
+    here = os.path.dirname(os.path.abspath(__file__))
+    o = json.load(open(os.path.join(here, 'obras_old_121_160.json'), encoding='utf-8')).get(str(n))
+    if o is None:  # episódios 6–115, guardados do quadro cultob antigo
+        o = json.load(open(os.path.join(here, 'obras_old_006_115.json'), encoding='utf-8'))[str(n)]
+        ch = o['chips'] or []
+        o = dict(a=dict(w=o['work'], k=ch[0] if ch else '📖', y=(ch[1] if len(ch) > 1 else '')), panel=o['panel'], pa=o['pa'])
     a = o['a']
     if text is None:
         t = o['panel'].strip()
