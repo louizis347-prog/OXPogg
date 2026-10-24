@@ -385,8 +385,7 @@ EPS.append(ep(
         ['Phin', 'Again? **It is a chore!**', 'De novo? É uma tarefa chata!'],
         ['Mom', 'I know. But **do your best**.', 'Eu sei. Mas faça o seu melhor.'],
         ['Phin', 'Okay. Ferb dries the dishes.', 'Tá. O Ferb seca a louça.'],
-        ['Mom', 'And you do the laundry later.', 'E você lava a roupa depois.'],
-        ['Mom', 'Thank you, boys. Turn off the faucet.', 'Obrigada, meninos. Fechem a torneira.'],
+        ['Mom', 'And you do the laundry later. Thank you, boys. Turn off the faucet.', 'E você lava a roupa depois. Obrigada, meninos. Fechem a torneira.'],
         ['Phin', 'Done! Now my homework.', 'Pronto! Agora a minha lição.'],
         ['Mom', 'Good. Friday is allowance day!', 'Bom. Sexta é dia de mesada!']],
     lab=dict(
