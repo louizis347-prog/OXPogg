@@ -88,8 +88,10 @@ def main(only=None):
                 fr['bag'] = [g for g in fr['bag'] if g['items']]  # sem bolsos vazios (episódio anterior ainda no formato antigo)
         done += 1
     for f, d in chunks.items():
-        with open(f, 'w', encoding='utf-8') as fh:
-            fh.write(json.dumps(d, ensure_ascii=False, separators=(',', ':')))
+        out = json.dumps(d, ensure_ascii=False, separators=(',', ':'))
+        if d != json.load(open(f, encoding='utf-8')):  # só reescreve o que mudou (outros fluxos editam os arquivos seguintes)
+            with open(f, 'w', encoding='utf-8') as fh:
+                fh.write(out)
     print('episódios montados:', done)
 
 
