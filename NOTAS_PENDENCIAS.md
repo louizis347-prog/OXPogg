@@ -85,3 +85,7 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Escritos em `tools/v3/ep_121_125.py` … `ep_156_160.py` (mesmo `ep()` de `tools/v3/lib.py`). Obra, cenário e capa vêm dos episódios antigos (`tools/v3/obras_old_121_160.json`, via `OB()`); título, vocabulário, verbos, expressões e gírias vêm do roteiro.
 - Montar: `python3 tools/model_v3.py <n…>`; conferir: `python3 tools/v3/check.py`; marcar padrão/apresentação: `python3 tools/v3/mark_pilot2.py`.
 - Em vários itens a gramática do roteiro antigo não casava com o título (itens `regram`); a estrutura escolhida está em `pattern` de cada episódio. Pilotos até o episódio 175 (30033). Próximo: 176 (`7030033`, "Dial 911").
+
+## Cobertura gramatical do A1 (auditoria após o 175)
+- Nos episódios 121–175 troquei algumas estruturas do roteiro antigo pelas que combinavam com título e vocabulário. Ficaram sem episódio dedicado: advérbios de frequência (planejado no 161), numerais (11–16, dezenas, números grandes, ordinais) e reforço de there is/are, preposições de lugar e conectores (and/but/because/so).
+- Esses itens foram transferidos para episódios pendentes em `tools/gram/plan_a1.py` (lista de episódio → estrutura que PRECISA aparecer). Rodar `python3 tools/gram/plan_a1.py` ao fechar cada lote: mostra OK / FALTA / pendente.
