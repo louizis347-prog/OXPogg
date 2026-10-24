@@ -121,3 +121,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Gramática (rótulos únicos): from … to, It takes, Do you speak, learn/study/practice, enjoy + -ing, want to, -s/-es/-ies, Does he…?, always/never, often/rarely, How often, once/twice/three times, wash/brush/comb, Please don’t, at home/school/work, partes do dia, -teen, minutos past/to, hundred/thousand/million, graus (30–100).
 - `tools/gram/plan_a1.py` agora aponta as estruturas para os episódios onde de fato aparecem; faltando 0. Nenhum rótulo repetido de 1 a 250, nenhum par de vizinhos com 3 ou mais palavras iguais, nenhuma fala seguida do mesmo personagem.
 - Próximo: episódio 251 em diante (ainda no formato antigo).
+
+## Inglês A1 até o episódio 466 (fim do A1)
+
+- Episódios 251–466 refeitos no modelo piloto (19 quadros cada): `tools/v3/ep_251_255.py` … `ep_461_466.py`. Obras dos episódios 351–466 em `tools/v3/obras_old_351_466.json` (lidas por `OB()`). `tools/v3/fixmold.py` remove opções de molde com um único elemento.
+- O curso A1 tem 466 itens; o pedido “até o 500” não pôde ser cumprido: 467–500 exigiriam 34 itens novos (o `model_v3.py` só reescreve itens que já existem em `data/en-a1_NN.json`). Decidir se vira um bloco extra de revisão do A1 ou o início do A2.
+- Rótulos de gramática únicos em todo o A1 (`tools/gram/check_unique.py`: 0 repetidos); `check.py`: 0 problemas.
+- `plan_a1.py` ainda aponta 3 itens FALTA: ep 312 (because), ep 347 (so/but com too) e ep 440 (often/sometimes no jardim).
