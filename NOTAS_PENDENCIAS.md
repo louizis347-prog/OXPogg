@@ -84,4 +84,4 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 ## Inglês A1: episódios 121–160 no modelo piloto
 - Escritos em `tools/v3/ep_121_125.py` … `ep_156_160.py` (mesmo `ep()` de `tools/v3/lib.py`). Obra, cenário e capa vêm dos episódios antigos (`tools/v3/obras_old_121_160.json`, via `OB()`); título, vocabulário, verbos, expressões e gírias vêm do roteiro.
 - Montar: `python3 tools/model_v3.py <n…>`; conferir: `python3 tools/v3/check.py`; marcar padrão/apresentação: `python3 tools/v3/mark_pilot2.py`.
-- Em vários itens a gramática do roteiro antigo não casava com o título (itens `regram`); a estrutura escolhida está em `pattern` de cada episódio. Próximo: 161 (`70060`, advérbios de frequência).
+- Em vários itens a gramática do roteiro antigo não casava com o título (itens `regram`); a estrutura escolhida está em `pattern` de cada episódio. Pilotos até o episódio 175 (30033). Próximo: 176 (`7030033`, "Dial 911").

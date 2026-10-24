@@ -1,14 +1,9 @@
-# Esqueletos — en-a1 (296 episódios)
+# Esqueletos — en-a1 (291 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 171 | The Biggest and the Best | Números ordinais | biggest, smallest, tallest, oldest, newest, best | win, choose, vote, rank | You're the best!; Best of luck!; Hands down. |
-| 172 | Superlativo: the -est | Números ordinais | biggest, smallest, tallest, oldest, newest, best | biggest, smallest, tallest, oldest | You're the best!; Best of luck!; Hands down. |
-| 173 | How Do You Feel Today? | Números ordinais | worried, grateful, lonely, homesick, jealous, thrilled | worry, thank, miss, cheer | I can't thank you enough.; I'm over the moon!; Cheer up! |
-| 174 | Números ordinais | Números ordinais | worried, grateful, lonely, homesick, jealous, thrilled | worried, grateful, lonely, homesick | I can't thank you enough.; I'm over the moon!; Cheer up! |
-| 175 | Call for Help! | Ordinais de 7 a 10 | police, ambulance, accident, firefighter, emergency, injury | rescue, hurry, report, warn | What's your emergency?; Help is on the way.; Be careful! |
 | 176 | Pedir ajuda: Call… | Ordinais de 7 a 10 | police, ambulance, accident, firefighter, emergency, injury | police, ambulance, accident, firefighter | What's your emergency?; Help is on the way.; Be careful! |
 | 177 | Look At, Look For | phrasal verbs: look at, look for, look up, find | magnifier, torch, keys, lost and found, poster, framed photo | look at, look for, look up, find | Look at the map.; I am looking for my keys.; I look up the word.; look at |
 | 178 | Look at, look for | phrasal verbs: look at, look for, look up, find | magnifier, torch, keys, lost and found, poster, framed photo | magnifier, torch, keys, lost and found | Look at the map.; I am looking for my keys.; I look up the word.; look at |
