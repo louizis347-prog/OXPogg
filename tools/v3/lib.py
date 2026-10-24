@@ -77,9 +77,16 @@ def OB(n, line_en, line_pt, p='b', text=None, year=None):
     """Obra do episódio reaproveitada do episódio antigo (tools/v3/obras_old_121_160.json): nome, tipo, ano, texto e arte da capa."""
     import json, os, re
     here = os.path.dirname(os.path.abspath(__file__))
+    redo = json.load(open(os.path.join(here, 'obras_redo.json'), encoding='utf-8'))
+    if str(n) in redo:  # episódio refeito: obra vem do quadro da cena clicável anterior
+        r = dict(redo[str(n)])
+        r['year'] = r['kind'].split('· ')[-1]
+        r['line'] = [line_en, line_pt]
+        r['pa'] = dict(r['pa'], p=p)
+        return r
     o = json.load(open(os.path.join(here, 'obras_old_121_160.json'), encoding='utf-8')).get(str(n))
     if o is None:  # episódios 6–115, guardados do quadro cultob antigo
-        o = {**json.load(open(os.path.join(here, 'obras_old_006_115.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_181_200.json'), encoding='utf-8'))}[str(n)]
+        o = {**json.load(open(os.path.join(here, 'obras_old_006_115.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_181_200.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_201_230.json'), encoding='utf-8'))}[str(n)]
         ch = o['chips'] or []
         o = dict(a=dict(w=o['work'], k=ch[0] if ch else '📖', y=(ch[1] if len(ch) > 1 else '')), panel=o['panel'], pa=o['pa'])
     a = o['a']

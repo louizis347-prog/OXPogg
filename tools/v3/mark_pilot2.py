@@ -5,7 +5,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.dirname(HERE))
 PAT = {}
-for f in sorted(glob.glob(os.path.join(HERE, 'ep_[01][0-9][0-9]_*.py'))):
+for f in sorted(glob.glob(os.path.join(HERE, 'ep_[0-9f][0-9i][0-9x]_*.py'))):
     m = importlib.import_module('v3.' + os.path.basename(f)[:-3])
     for E in m.EPS:
         PAT[E['n']] = E['v2']['base']['pattern_label']

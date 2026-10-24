@@ -18,7 +18,10 @@ def load_eps():
     for f in sorted(glob.glob(os.path.join(HERE, 'v3', 'ep_*.py'))):
         m = importlib.import_module('v3.' + os.path.basename(f)[:-3])
         eps += m.EPS
-    return eps
+    last = {}
+    for e in eps:  # arquivos ep_fix_* (depois dos numerados) substituem o episódio de mesmo n
+        last[e['n']] = e
+    return list(last.values())
 
 
 def prev_from_old(it):
