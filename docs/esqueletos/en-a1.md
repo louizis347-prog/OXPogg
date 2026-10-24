@@ -1,14 +1,9 @@
-# Esqueletos — en-a1 (301 episódios)
+# Esqueletos — en-a1 (296 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 166 | Would you like…? | Oferecer e pedir: Would you like…? I'd like… | picnic, camping, sunset, campfire, flashlight, trail | picnic, camping, sunset, campfire | Sounds like a plan.; Let's hit the road.; Get some rest. |
-| 167 | Put On, Take Off | phrasal verbs: put on, take off, hang up | mittens, tracksuit, vest, sandals, socks, buckle | put on, put away, hang up, zip up | Put on your jacket.; Take off your shoes.; Hang up your coat.; put on |
-| 168 | Put on, take off | phrasal verbs: put on, take off, hang up | mittens, tracksuit, vest, sandals, socks, buckle | mittens, tracksuit, vest, sandals | Put on your jacket.; Take off your shoes.; Hang up your coat.; put on |
-| 169 | What Do You Think? | Números grandes | opinion, reason, problem, solution, advice, argument | think, agree, believe, explain | In my opinion...; That's a good point.; I see what you mean. |
-| 170 | What do you think? | Números grandes | opinion, reason, problem, solution, advice, argument | opinion, reason, problem, solution | In my opinion...; That's a good point.; I see what you mean. |
 | 171 | The Biggest and the Best | Números ordinais | biggest, smallest, tallest, oldest, newest, best | win, choose, vote, rank | You're the best!; Best of luck!; Hands down. |
 | 172 | Superlativo: the -est | Números ordinais | biggest, smallest, tallest, oldest, newest, best | biggest, smallest, tallest, oldest | You're the best!; Best of luck!; Hands down. |
 | 173 | How Do You Feel Today? | Números ordinais | worried, grateful, lonely, homesick, jealous, thrilled | worry, thank, miss, cheer | I can't thank you enough.; I'm over the moon!; Cheer up! |
