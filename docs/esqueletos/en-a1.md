@@ -1,39 +1,9 @@
-# Esqueletos — en-a1 (266 episódios)
+# Esqueletos — en-a1 (236 episódios)
 
 Só identificação das escolhas (nada foi escrito): estrutura gramatical, vocabulário da cena, 4 verbos e expressões vindos dos dados do episódio.
 
 | ep | título | estrutura gramatical | vocabulário (palavras da cena) | 4 verbos | expressões |
 |---|---|---|---|---|---|
-| 201 | Buy It, Pay for It | Pedir com I'd like | groceries, produce, dairy, browse, sample, select | browse, sample, select, groceries | Paper or plastic?; Is that everything?; Who's next? |
-| 202 | I'd like… | Pedir com I'd like | groceries, produce, dairy, browse, sample, select | groceries, produce, dairy, browse | Paper or plastic?; Is that everything?; Who's next? |
-| 203 | Can I Pay by Card? | Pedir permissão com Can I | invoice, subscription, installment, renew, cancel, authorize | renew, cancel, authorize, invoice | Can I pay by card?; Is there a fee?; Tap your card here. |
-| 204 | Can I…? | Pedir permissão com Can I | invoice, subscription, installment, renew, cancel, authorize | invoice, subscription, installment, renew | Can I pay by card?; Is there a fee?; Tap your card here. |
-| 205 | Sign Here, Please | Pedir permissão com Can I | contactless, statement, signature, approve, decline | approve, decline, contactless, statement | Sign here, please.; Your card was declined. |
-| 206 | Can I / May I | Pedir permissão com Can I | contactless, statement, signature, approve, decline | contactless, statement, signature, approve | Sign here, please.; Your card was declined. |
-| 207 | A Piece of Cake | idiom: a piece of cake | easy, hard, brain teaser, cinch, piece, tough | pass, study, solve, bake | It is a piece of cake.; This test is easy.; It is hard for me.; a piece of cake |
-| 208 | A piece of cake | idiom: a piece of cake | easy, hard, brain teaser, cinch, piece, tough | easy, hard, brain teaser, cinch | It is a piece of cake.; This test is easy.; It is hard for me.; a piece of cake |
-| 209 | Mother, Father, Parents | Posse com 's | grandparents, twin, sibling, raise, resemble, inherit | raise, resemble, inherit, grandparents | Like father, like son.; She takes after her mother.; Home is where the heart is. |
-| 210 | Posse com 's | Posse com 's | grandparents, twin, sibling, raise, resemble, inherit | grandparents, twin, sibling, raise | Like father, like son.; She takes after her mother.; Home is where the heart is. |
-| 211 | Say Hi to Your Parents | Posse com 's | relative, guardian, stepmother, spoil, nurture | spoil, nurture, relative, guardian | Blood is thicker than water.; Say hi to your parents. |
-| 212 | Posse com 's | Posse com 's | relative, guardian, stepmother, spoil, nurture | relative, guardian, stepmother, spoil | Blood is thicker than water.; Say hi to your parents. |
-| 213 | What's the Weather Like? | Como está o tempo? | sunny, rainy, cloudy, wear, bring, stay | wear, bring, stay, sunny | Nice weather, isn't it?; What a beautiful day!; It's raining cats and dogs. |
-| 214 | Como está o tempo? | Como está o tempo? | sunny, rainy, cloudy, wear, bring, stay | sunny, rainy, cloudy, wear | Nice weather, isn't it?; What a beautiful day!; It's raining cats and dogs. |
-| 215 | Also, Too, As Well | conectores de adição | also, too, both, same, together, different | share, agree, like, join | I like tea too.; I also play soccer.; We both like music.; too |
-| 216 | Also, too, as well | conectores de adição | also, too, both, same, together, different | also, too, both, same | I like tea too.; I also play soccer.; We both like music.; too |
-| 217 | Call Me Later | Enviar e responder | inbox, attachment, subject, reply, delete, send | reply, delete, send, inbox | Did you get my email?; Check your inbox.; Keep me posted. |
-| 218 | Enviar e responder | Enviar e responder | inbox, attachment, subject, reply, delete, send | inbox, attachment, subject, reply | Did you get my email?; Check your inbox.; Keep me posted. |
-| 219 | I Like Your Jacket! | Elogios | sleeve, collar, zipper, try, fit, match | try, fit, match, sleeve | I like your jacket!; It looks great on you.; Where did you get it? |
-| 220 | Elogios | Elogios | sleeve, collar, zipper, try, fit, match | sleeve, collar, zipper, try | I like your jacket!; It looks great on you.; Where did you get it? |
-| 221 | Spicy or Sweet? | Gostar e não gostar | spicy, salty, crunchy, tasty, juicy, creamy, enjoy, hate, prefer, choose, try | enjoy, hate, prefer, choose | I'm a big fan.; It's not my thing.; I'm crazy about it. |
-| 222 | Spicy or sweet? | Gostar e não gostar | spicy, salty, crunchy, tasty, juicy, creamy, enjoy, hate, prefer, choose, try | spicy, salty, crunchy, tasty | I'm a big fan.; It's not my thing.; I'm crazy about it. |
-| 223 | Noodles and Sauce | Gostar de comidas | noodle, sauce, meatball, garlic, onion, pepper, cook, cut, mix, add, boil | cook, cut, mix, add | Dinner is ready!; It smells so good!; Careful, it's hot! |
-| 224 | Cozinhar: verbos | Gostar de comidas | noodle, sauce, meatball, garlic, onion, pepper, cook, cut, mix, add, boil | noodle, sauce, meatball, garlic | Dinner is ready!; It smells so good!; Careful, it's hot! |
-| 225 | Meals of the Day | Refeições do dia | brunch, leftovers, appetizer, buffet, picnic, takeout, order, eat, share, plan, invite | order, eat, share, plan | What's for dinner?; Let's eat out.; Let's get takeout. |
-| 226 | Refeições | Refeições do dia | brunch, leftovers, appetizer, buffet, picnic, takeout, order, eat, share, plan, invite | brunch, leftovers, appetizer, buffet | What's for dinner?; Let's eat out.; Let's get takeout. |
-| 227 | What's in the Cupboard? | Some e any | cupboard, pantry, carton, crate, jug, tray, buy, empty, need, finish, keep | buy, empty, need, finish | Is there any left?; There's plenty.; We ran out. |
-| 228 | Some e any | Some e any | cupboard, pantry, carton, crate, jug, tray, buy, empty, need, finish, keep | cupboard, pantry, carton, crate | Is there any left?; There's plenty.; We ran out. |
-| 229 | A Table for Two | Pedir com educação | menu, waiter, napkin, reservation, special, booth, reserve, recommend, ask, pay, thank | reserve, recommend, ask, pay | A table for two, please.; Can I see the menu?; What do you recommend? |
-| 230 | Pedir com educação | Pedir com educação | menu, waiter, napkin, reservation, special, booth, reserve, recommend, ask, pay, thank | menu, waiter, napkin, reservation | A table for two, please.; Can I see the menu?; What do you recommend? |
 | 231 | I'm Brazilian | Nacionalidade | Brazilian, American, Mexican, Chinese, French, Italian, live, come, visit, move, know | live, come, visit, move | What's your nationality?; I'm Brazilian.; Are you American? |
 | 232 | Nacionalidades | Nacionalidade | Brazilian, American, Mexican, Chinese, French, Italian, live, come, visit, move, know | Brazilian, American, Mexican, Chinese | What's your nationality?; I'm Brazilian.; Are you American? |
 | 233 | Do You Speak English? | Falar idiomas | English, Spanish, Portuguese, German, Japanese, language, speak, understand, learn, say, repeat | speak, understand, learn, say | Do you speak English?; Yes, a little.; How do you say it? |

@@ -104,3 +104,13 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Os 200 primeiros episódios estão no modelo piloto, com rótulos de gramática únicos (nenhum repetido nem vizinho igual).
 - `tools/gram/check_unique.py` não quebra mais quando o episódio já saiu do esqueleto; `tools/model_v3.py` monta a revisão também a partir de episódios feitos por outro fluxo.
 - Próximo: episódio 201 em diante.
+
+## Inglês A1 até o episódio 230 (correções + 201–230)
+
+- Segundos episódios dos pares que repetiam as mesmas 6 palavras do primeiro foram refeitos com vocabulário, cena e frases próprios: 54–76 e 118–120 em `tools/v3/ep_fix_a.py` … `ep_fix_d.py` (usam `tools/v3/oldn.py` só para reaproveitar elenco e obra). O episódio 52 (7030010), que repetia 5 das 6 palavras do 51, foi refeito em `ep_fix_g.py`.
+- Falas seguidas do mesmo personagem corrigidas nos episódios 44 (7030008), 53 (70020) e 123 (910011). Varredura de todos os quadros de 1 a 230: 0 repetições.
+- Episódios 176–180 e 192–195 (Maya e Luis, de outro fluxo) reconstruídos no modelo: `ep_fix_e.py` e `ep_fix_f.py`, com 5 objetos, só dois falantes (a voz do gerente, da bibliotecária e do balcão virou fala reportada), opções de escuta sem repetição e cenários padrão. A obra continua em `tools/v3/obras_redo.json`.
+- Episódios 201–230 novos: `tools/v3/ep_201_205.py` … `ep_226_230.py`. Cada um com gramática A1 própria (embalagens, fatias, Can I, May I, Show me, pagar, easy/hard, very/really, família ampliada, older/younger, lembranças, How is, tempo, o que vestir, also/too, both, cartas, e-mail, elogios, caimento, gostos, love/hate/prefer, cozinha, quantidades de receita, refeições, for here/to go, a lot of/a few/a little, empty/full/enough, mesa para dois, recomendação). As obras vêm de `tools/v3/obras_old_201_230.json`.
+- Todos os rótulos de gramática de 1 a 230 são únicos e nenhum par de vizinhos divide 3 ou mais palavras de vocabulário.
+- `tools/gram/plan_a1.py` foi atualizado: estruturas que ficaram sem episódio dedicado foram reatribuídas a episódios pendentes (247–250, 239–240) e as já cobertas apontam para o episódio onde aparecem. Resultado: faltando 0.
+- Próximo: episódio 231 em diante (ainda no formato antigo). Obs.: o 195 e o 196 repetem `weekday`/`weekend` (2 de 6 palavras); se incomodar, trocar no 195 por Friday e Sunday.
