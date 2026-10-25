@@ -323,6 +323,6 @@ function renumber(cid){
 }
 if(typeof window.ensureLangLoaded==='function'){
   const _el=window.ensureLangLoaded;
-  window.ensureLangLoaded=async function(lang){const r=await _el.apply(this,arguments);if(lang==='en-a1'||lang==='en-a2')renumber(lang);return r};
+  window.ensureLangLoaded=async function(lang){const r=await _el.apply(this,arguments);if(lang==='en-a1'||lang==='en-a2'||lang==='en-b1')renumber(lang);return r};
 }
 })();
