@@ -193,7 +193,7 @@ EPS.append(E(
            [('How long far', 1, 'Use How far.', 'How far'), ('ten kilometer away', 2, 'Plural.', 'kilometers away')],
            ['Em português “fica a dez km”. Em inglês: **it is ten kilometers away**.']),
     cover=('How far, away: em 10 minutos você pergunta distâncias', 'Na rua, a mulher pergunta distâncias à agente do aluguel.'),
-    vocab=[('📏', 'How far', 'quão longe', 'Soa como “RÁU FÁR”.'), ('🛣️', 'kilometers', 'quilômetros', 'Soa como “ki-LÓ-mi-ters”.'), ('⛽', 'tank', 'tanque', 'Soa como “TÉNK”.'),
+    vocab=[('📏', 'How far', 'quão longe', 'Soa como “HÁU FÁR”.'), ('🛣️', 'kilometers', 'quilômetros', 'Soa como “ki-LÓ-mi-ters”.'), ('⛽', 'tank', 'tanque', 'Soa como “TÉNK”.'),
            ('🔙', 'return', 'devolver', 'Soa como “ri-TÂRN”.'), ('🚗', 'per day', 'por dia', 'Soa como “PÂR DÊI”.'), ('🏁', 'away', 'distante', 'Soa como “a-UÊI”.')],
     lines=[['Woman', 'How far is the airport?', 'A que distância fica o aeroporto?'],
            ['Agent', 'It is ten kilometers away.', 'Fica a dez quilômetros.'],
