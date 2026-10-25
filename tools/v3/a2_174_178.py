@@ -170,7 +170,7 @@ EPS.append(E(
 # ---------------------------------------------------------------- A2 176 · a few · a little
 EPS.append(E(
     n=7920017, title='Quanto tem', sub='falar de pouca quantidade com a few e a little (licorice, jelly beans, conveyor belt, vat, cocoa bean, lollipop)',
-    pattern='a few + contável · a little + incontável', why='Hoje você aprende quantidade pequena: I have a few lollipops. I have a little licorice. Only a few beans are left.',
+    pattern='only a few · only a little · not many · not much', why='Hoje você aprende quantidade pequena e sobra: I have a few lollipops. I have a little licorice. Only a few beans are left.',
     names=('Man', 'Girl'), ids=['tom', 'polly'], rs='shop',
     obra=OB(7920017, 'Willy Wonka & the Chocolate Factory.', 'A Fantástica Fábrica de Chocolate.', p='b'),
     hot=[('🍭', 'lollipop', 'pirulito', 'I have a few lollipops.', 'Tenho alguns pirulitos.'),
