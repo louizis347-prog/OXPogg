@@ -137,8 +137,8 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - A2 completo. Falta apenas uma checagem de cobertura do plano A2 (não existe `plan_a2`). Teste no navegador 243→474 sem erros.
 - Decisão pendente com o usuário: A1 tem só 466 itens; 467–500 viraria bloco extra de revisão ou início do A2.
 
-## Inglês B1: primeiros 250 episódios
-- Os 250 primeiros itens do B1 (`data/en-b1_*`, 530 no total) estão no modelo piloto (19 quadros, mesma identidade visual), cada um com seu rótulo de gramática próprio (`tools/gram/check_unique_b1.py`: 0 repetidos de 250).
-- Fontes: `tools/v3/b1_001_005.py` … `b1_245_250.py` (de 101 em diante os arquivos usam o atalho `tools/v3/b1h.py`, função `S`, que gera R, lab, mold, produce, mission2 e exp_scene a partir de dados compactos). Obras dos itens 1–250 em `tools/v3/obras_old_b1.json` (para os itens 101+ rodar antes `python3 /tmp/obras_b1.py <lo> <hi>`; o script gera a partir dos itens antigos).
+## Inglês B1: primeiros 300 episódios
+- Os 300 primeiros itens do B1 (`data/en-b1_*`, 530 no total) estão no modelo piloto (19 quadros, mesma identidade visual), cada um com seu rótulo de gramática próprio (`tools/gram/check_unique_b1.py`: 0 repetidos de 300).
+- Fontes: `tools/v3/b1_001_005.py` … `b1_293_300.py` (de 101 em diante os arquivos usam o atalho `tools/v3/b1h.py`, função `S`, que gera R, lab, mold, produce, mission2 e exp_scene a partir de dados compactos). Obras dos itens 1–300 em `tools/v3/obras_old_b1.json` (para os itens 101+ rodar antes `python3 /tmp/obras_b1.py <lo> <hi>`; o script gera a partir dos itens antigos).
 - Para refazer: `python3 tools/v3/fixmold.py`, `COURSE=en-b1 python3 tools/model_v3.py`, `COURSE=en-b1 python3 tools/v3/check.py`, `COURSE=en-b1 python3 tools/v3/mark_pilot2.py`.
-- Faltam os itens 251–530 do B1 e a checagem de cobertura do plano B1.
+- Faltam os itens 301–530 do B1 e a checagem de cobertura do plano B1.
