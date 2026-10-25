@@ -129,10 +129,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Rótulos de gramática únicos em todo o A1 (`tools/gram/check_unique.py`: 0 repetidos); `check.py`: 0 problemas.
 - `plan_a1.py` ainda aponta 3 itens FALTA: ep 312 (because), ep 347 (so/but com too) e ep 440 (often/sometimes no jardim).
 
-## Inglês A2 até o episódio 243
-- Os 243 primeiros itens do A2 (`data/en-a2_*`) estão no modelo piloto (19 quadros, mesma identidade visual), cada um com seu rótulo de gramática próprio (`tools/gram/check_unique_a2.py`: 0 repetidos).
-- A2 201–243: as obras faltavam em `obras_old_a2.json`; foram geradas a partir dos itens antigos (`a`), com arte padrão.
+## Inglês A2 até o episódio 299
+- Os 299 primeiros itens do A2 (`data/en-a2_*`) estão no modelo piloto (19 quadros, mesma identidade visual), cada um com seu rótulo de gramática próprio (`tools/gram/check_unique_a2.py`: 0 repetidos).
+- A2 201–299: as obras faltavam em `obras_old_a2.json`; foram geradas a partir dos itens antigos (`a`), com arte padrão.
 - Reaproveitado dos itens antigos: tema, obra/cena cultural, vocabulário e elenco; todo o resto foi reescrito no formato atual.
 - Fontes: `tools/v3/a2_001_005.py` … `a2_091_093.py`; para refazer: `python3 tools/v3/fixmold.py <arq>`, `COURSE=en-a2 python3 tools/model_v3.py`, `COURSE=en-a2 python3 tools/v3/check.py`, `COURSE=en-a2 python3 tools/v3/mark_pilot2.py`.
-- Falta: A2 do 244 em diante (itens antigos ainda no formato anterior) e checagem de cobertura do plano A2 (não existe `plan_a2`).
+- Falta: A2 do 300 em diante (itens antigos ainda no formato anterior) e checagem de cobertura do plano A2 (não existe `plan_a2`).
 - Decisão pendente com o usuário: A1 tem só 466 itens; 467–500 viraria bloco extra de revisão ou início do A2.
