@@ -1,5 +1,7 @@
 # A2 · episódios 322–326: have to, good/bad news, glad that, argue/forgive, past continuous.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

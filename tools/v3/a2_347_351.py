@@ -1,5 +1,7 @@
 # A2 · episódios 347–351: binge-watch, short answers have, tune in, recommend -ing, bring up/put up with.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

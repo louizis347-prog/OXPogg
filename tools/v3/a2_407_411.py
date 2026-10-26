@@ -1,5 +1,7 @@
 # A2 · episódios 407–411: at school, must not, May I, Would you like me to, spell/repeat.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

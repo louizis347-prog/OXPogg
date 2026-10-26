@@ -1,5 +1,7 @@
 # A2 · episódios 472–474: can't wait to, could/couldn't then can now, what I have learned.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

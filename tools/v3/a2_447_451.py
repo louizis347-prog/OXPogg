@@ -1,5 +1,7 @@
 # A2 · episódios 447–451: hiring, job application, pay, requirements, recipe steps.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- A2 144 · What would you like? · I'd like… · Anything else?
 EPS.append(E(

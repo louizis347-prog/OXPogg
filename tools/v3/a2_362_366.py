@@ -1,5 +1,7 @@
 # A2 · episódios 362–366: appreciate, find out/work out, it turns out, work for, work as.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

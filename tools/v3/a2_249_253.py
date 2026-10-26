@@ -1,5 +1,7 @@
 # A2 · episódios 249–253: the kind of person who, not only… but also, put on/wear/get dressed, What is he wearing, light blue/dark green.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

@@ -1,5 +1,7 @@
 # A2 · episódios 305–311: kind of movie, didn't like, What's the matter, should, listen to/play, big fan, hobbies.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

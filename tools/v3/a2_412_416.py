@@ -1,5 +1,7 @@
 # A2 · episódios 412–416: I don't get it, cancel/reschedule, about to, No + -ing, visitors must.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

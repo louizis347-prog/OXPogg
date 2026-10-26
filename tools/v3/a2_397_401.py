@@ -1,5 +1,7 @@
 # A2 · episódios 397–401: good/bad for you, more/less/fewer, famous for, come from, in my opinion.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

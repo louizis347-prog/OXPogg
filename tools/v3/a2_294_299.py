@@ -1,5 +1,7 @@
 # A2 · episódios 294–299: boring × bored, How much is it, cheaper than, good at, like + -ing, How often.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

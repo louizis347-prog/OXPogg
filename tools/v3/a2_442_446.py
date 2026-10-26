@@ -1,5 +1,7 @@
 # A2 · episódios 442–446: let's get started, passive process, all day, warm up, every other day.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

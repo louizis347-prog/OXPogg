@@ -1,5 +1,7 @@
 # A2 · episódios 437–441: think twice, would it be possible, be able to, surprise, photo.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

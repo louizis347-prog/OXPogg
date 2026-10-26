@@ -1,5 +1,7 @@
 # A2 · episódios 254–258: estampas, get along with/make friends, lend × borrow, every single day/over and over, on Mondays/in the mornings.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

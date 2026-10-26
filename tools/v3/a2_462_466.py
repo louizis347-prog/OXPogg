@@ -1,5 +1,7 @@
 # A2 · episódios 462–466: irregular past, worth -ing, if you like, wh-review, question tags.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

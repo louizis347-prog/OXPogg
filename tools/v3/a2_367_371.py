@@ -1,5 +1,7 @@
 # A2 · episódios 367–371: quite/a bit/really, much better, apply for, still/yet/no longer, raise money.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

@@ -1,5 +1,7 @@
 # A2 · episódios 427–431: worried about, adjective+preposition, ago/last/in, when did, driving rules.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

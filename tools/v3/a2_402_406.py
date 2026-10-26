@@ -1,5 +1,7 @@
 # A2 · episódios 402–406: if you ask me, tour, how far, noisier than, same as.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

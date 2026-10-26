@@ -1,5 +1,7 @@
 # A2 · episódios 327–331: Why don't you, If I were you, clima, degrees, What did you do.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 
