@@ -187,3 +187,6 @@ Obra própria, sem colisão no curso. A2: obra repetida em vizinhos 145. Ainda d
 
 ## Inglês A2 — lote 5 publicado (15 episódios): 7081138 7920020 7081145 7920021 7081148 7081149 7081150 7081151 7081154 7920022 7081155 7081158 7081164 7920024 7081170
 Fim dos candidatos sem colisão da camada ova2 (itens 1–240). Faltam 17 deles (colidem com obra de outro episódio: 7081024, 7081041, 7081045, 7920008, 7081059, 7081076, 7920011, 7081082, 7920013, 7081093, 7920014, 7920016, 7081122, 7081128, 7081146 e outros): trocar a obra. Próximo: camada ova2b (241–474, ~120 episódios; colisões listadas no relatório do agente). A2: obra repetida em vizinhos 132.
+
+## Inglês A2 — lote 6 publicado (20 episódios da camada ova2b, itens 241+): 7081178 7081179 7081195 7081197 7081205 7081212 7081214 7081218 7081221 7081223 81224 7081224 7081228 7920033 7081235 7081240 7081242 7081244 7920035 7081251
+Obra própria, sem colisão no curso. Dos 60 candidatos só 20 passaram no filtro de colisão (nome normalizado). Os demais precisam trocar de obra. A2: obra repetida em vizinhos 114.
