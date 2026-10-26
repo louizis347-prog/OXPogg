@@ -1,5 +1,6 @@
 # B1 · episódios 81–85: relacionamentos, pessoas, más notícias, dinheiro recente.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

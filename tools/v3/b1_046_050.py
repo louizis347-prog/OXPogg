@@ -1,5 +1,6 @@
 # B1 · episódios 46–50: conectores de tempo, finais irônicos, marcadores de conversa.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

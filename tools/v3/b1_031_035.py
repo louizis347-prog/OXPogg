@@ -1,5 +1,6 @@
 # B1 · episódios 31–35: partida, passiva no passado, viagem em etapas.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

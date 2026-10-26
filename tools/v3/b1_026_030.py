@@ -1,5 +1,6 @@
 # B1 · episódios 26–30: revelar mistério, sonhos, linguagem vaga, preferências.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

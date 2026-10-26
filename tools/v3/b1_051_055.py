@@ -1,5 +1,6 @@
 # B1 · episódios 51–55: present perfect continuous, how long, recently/lately.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

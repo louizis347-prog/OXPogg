@@ -1,5 +1,6 @@
 # B1 · episódios 66–70: perfect × past, phrasal verbs com call, never have I ever.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

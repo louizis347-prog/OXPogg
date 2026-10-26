@@ -1,5 +1,6 @@
 # B1 · episódios 61–65: acabou de acontecer, sumiu, present perfect × passado.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

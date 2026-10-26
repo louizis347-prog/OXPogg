@@ -1,5 +1,6 @@
 # B1 · episódios 71–75: could / was able to / managed to, quantas vezes, idioms de trabalho novo, experiência profissional.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

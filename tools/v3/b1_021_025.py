@@ -1,5 +1,6 @@
 # B1 · episódios 21–25: idioms de trabalho, recontar conto, mistério.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

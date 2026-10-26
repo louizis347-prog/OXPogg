@@ -1,5 +1,6 @@
 # B1 · episódios 56–60: recentemente, collocations com take, already/yet/still.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

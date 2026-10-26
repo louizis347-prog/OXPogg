@@ -1,5 +1,6 @@
 # B1 · episódios 36–40: etapas, phrasal verbs com make, o tempo mudou.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

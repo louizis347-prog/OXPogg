@@ -1,5 +1,6 @@
 # B1 · episódios 11–15: história de medo, suspense, collocations com make, perder-se.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

@@ -153,3 +153,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Ferramenta: `python3 tools/audit/regular_model_audit.py` (critérios K1–K12; relatório em `tools/audit/regular_model_audit.json`). Corrige o mecânico: `python3 tools/audit/fix_mechanical.py` (teaser do fechamento e revisão do anterior; rodar SEMPRE depois de `model_v3.py`, que recria o teaser dos arquivos-fonte).
 - Resolvido: teasers que apontavam para episódios removidos na redução do curso (89) e 1 revisão fora de ordem.
 - Pendente (precisa de escrita): continuações que repetem obra/palavras/verbos/sons/objetos do original (A1 ≈226, A2 ≈233, B1 ≈165), falas de enchimento (B1 259, A2 3) e elenco/arte genéricos em vez dos personagens da obra (A1 429, A2 474, B1 370).
+
+## B1 itens 1–85 (módulos b1_001_005 … b1_081_085): continuações e enchimento refeitos (outubro/2026)
+- Camada `tools/v3/b1fix.py` (E com sobrescritas por episódio) + dados em `tools/v3/b1fix_data_a/b/c.py`; as obras novas saem em `tools/v3/obras_new_b1_001_085.json` (gerado ao importar). Cada módulo importa `E` de `v3.b1fix`.
+- 54 episódios: 42 continuações com obra própria (real, ano e autor/diretor conferidos de memória; sem números não verificados), elenco com personagens da obra (ids existentes; Hermione/Harry, Tin Man/Glinda, Sherlock, Mulan, Peter/Hook via chars5), capa nova; vocabulário/verbos novos onde repetiam; 12 originais (e várias continuações) com falas próprias na segunda cena (sem 'Good./Coffee?/Please./Here.').
+- Reconstruir só estes: `COURSE=en-b1 python3 tools/model_v3.py <n…>` (lista de n = chaves de `FIX`), depois `python3 tools/audit/fix_mechanical.py`.
+- Pendente: K3/K4 (elenco/arte genéricos) nos demais episódios; os itens 86+ estão em outra frente (`ovrb1*.py`). Elenco com arte genérica (polly/tom/tommy/misshoney) quando não há ficha da obra: só o nome mudou.
+- Verificação: dryrun/check.py sem problemas, auditoria sem K8/K9 nos módulos 1–85; fatos das obras NÃO checados por fonte externa (sem acesso à web nesta sessão).

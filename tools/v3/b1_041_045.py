@@ -1,5 +1,6 @@
 # B1 · episódios 41–45: reencontro, gírias, conectores de tempo.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

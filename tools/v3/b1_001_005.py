@@ -1,5 +1,6 @@
 # B1 · episódios 1–5: abrir narrativa, simples × contínuo, viradas, hábitos do passado.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

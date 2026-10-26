@@ -1,5 +1,6 @@
 # B1 · episódios 16–20: sequência, past perfect, passado × presente.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

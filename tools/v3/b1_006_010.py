@@ -1,5 +1,6 @@
 # B1 · episódios 6–10: did you use to, get phrasal verbs, perguntas no passado contínuo.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 

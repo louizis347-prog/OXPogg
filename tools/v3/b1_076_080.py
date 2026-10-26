@@ -1,5 +1,6 @@
 # B1 · episódios 76–80: experiência na carreira, saúde recente, mudança para o exterior.
 from v3.short import *
+from v3.b1fix import E
 
 EPS = []
 
