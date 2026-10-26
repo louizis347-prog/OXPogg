@@ -5,6 +5,8 @@
 import re, glob, os, importlib
 
 OVR = {}
+OLD = {}  # n -> argumentos originais do episódio (para conferir se algum quadro ainda cita a obra antiga)
+GX = {}   # n -> (gp, ex): especificação de gaps/traps/regra/molde/missões/expressões
 
 
 def W(name, kind, year, desc, topic, t, e, line_en, line_pt):
@@ -33,6 +35,75 @@ def X(n, names=None, ids=None, ob=None, vocab=None, hot=None, lines=None, quiz=N
     OVR[n] = dict(names=names, ids=ids, ob=ob, vocab=vocab, hot=hot, lines=lines, quiz=quiz, verbs=verbs, lab=lab, rs=rs, cv=cv, scene2=scene2, more=more)
 
 
+def G(n, gp, ex):
+    """gp = 4 x (índice do objeto quente, palavra-chave, errada1, errada2): gaps, traps, regra, molde e missão 1 saem das falas dos objetos quentes.
+    ex = 4 x (emoji, expressão, tradução, uso, exemplo en, exemplo pt): expressões, cena das expressões e missão 2 (a expressão deve aparecer no exemplo)."""
+    GX[n] = (gp, ex)
+
+
+def _rx(text):
+    out = []
+    for w in re.findall(r"[\w’']+", text.lower()):
+        out.append(re.escape(w).replace('’', "[’']").replace("'", "[’']"))
+    return r'\b' + r'\s+'.join(out) + r'\b'
+
+
+def _derive(k, gp, ex):
+    from v3.lib import mission
+    from v3.short import R
+    hot = k['hot']; a, b = k['names']
+    def sp(i):
+        h = hot[gp[i][0]]; return h[3], h[4]
+    gaps = []; fit = []
+    for i, (hi, key, w1, w2) in enumerate(gp):
+        en, pt = sp(i)
+        assert key in en, (k['n'], key, en)
+        gaps.append((en.replace(key, '___', 1), pt, [key, w1, w2], 0, 'Aqui o padrão pede **%s**.' % key))
+    traps = []
+    for i in (2, 3):
+        hi, key, w1, w2 = gp[i]; en, _ = sp(i)
+        traps.append(('Qual frase está certa?', [en, en.replace(key, w1, 1), en.replace(key, w2, 1)], 0, 'Aqui o padrão pede **%s**.' % key))
+    e0, p0 = sp(0)
+    toks = lambda s_: [[t, 3] for t in s_.split()]
+    formula = []
+    for i in (0, 1):
+        en, pt = sp(i)
+        formula.append(([['Exemplo %d' % (i + 1), 2]], toks(en), en, '**%s** é a peça do padrão.' % gp[i][1]))
+    uses = [(hot[gp[i][0]][0], gp[i][1], sp(i)[0], sp(i)[1]) for i in range(4)]
+    rules = []
+    for i in (2, 3):
+        en, _ = sp(i); rules.append((en.replace(gp[i][1], gp[i][2], 1), 1, 'Use **%s**.' % gp[i][1], en))
+    rule = R(k['ids'][0], k['pattern'].split(' · ')[0], 'Veja o padrão na cena da obra.', [e0, p0], formula, uses, rules,
+             ['Em português “%s”. Em inglês: **%s**' % (p0.rstrip('.!?'), e0)])
+    k['gaps'] = gaps; k['traps'] = traps; k['rule'] = rule
+    pages = []
+    for j in range(3):
+        opts = [[sp(i)[0].rstrip('.!?'), sp(i)[1].rstrip('.!?')] for i in [(j + t) % 4 for t in range(3)]]
+        pages.append((hot[gp[j][0]][1], [('frase', opts)], '.'))
+    k['mold'] = pages
+    says = [sp(i)[0] for i in range(3)]
+    k['produce'] = dict(ic=hot[gp[0][0]][0], name='Fale da cena', desc='Use o padrão do episódio',
+                        prompt='Fale como na obra. **Diga: %s**' % ' '.join(sp(i)[1] if sp(i)[1].endswith(('.', '!', '?')) else sp(i)[1] + '.' for i in range(3)),
+                        ph='Ex.: ' + ' '.join(says), chips=[gp[0][1]], model=' '.join(says), check=['Usei “%s”?' % gp[i][1] for i in range(3)],
+                        kw=[_rx(s_) for s_ in says], tips=[[[sp(i)[0], sp(i)[1]]] for i in range(3)],
+                        ok=['%s!' % hot[gp[i][0]][0] for i in range(3)], reply=['Nice!', 'Legal!'])
+    exps = [(e, x, 'Expressão', pt, '**Fala** de %s.' % use, en, ept) for (e, x, pt, use, en, ept) in ex]
+    for (e, x, pt, use, en, ept) in ex:
+        assert x.lower() in en.lower(), (k['n'], x, en)
+    k['exps'] = exps
+    sc = []
+    for i, (e, x, pt, use, en, ept) in enumerate(ex):
+        bold = re.sub('(' + re.escape(x) + ')', r'**\1**', en, count=1, flags=re.I)
+        ex_line = [bold, ept]; hot_line = [sp(i)[0], sp(i)[1]]
+        pair = (ex_line, hot_line) if i % 2 == 0 else (hot_line, ex_line)
+        sc += [[a] + pair[0], [b] + pair[1]]
+    k['exp_scene'] = sc
+    k['mission2'] = dict(ic=ex[0][0], name='Reagir à cena', desc='Use ' + ', '.join(x[1] for x in ex[:3]),
+                         prompt='Reaja. **Diga: %s**' % ' '.join(x[5] if x[5].endswith(('.', '!', '?')) else x[5] + '.' for x in ex[:3]),
+                         chips=[ex[0][1]], model=' '.join(x[4] for x in ex[:3]), check=['Disse “%s”?' % x[1] for x in ex[:3]],
+                         kw=[_rx(x[1]) for x in ex[:3]], tips=[[[x[4], x[5]]] for x in ex[:3]], ok=['%s!' % x[0] for x in ex[:3]], reply=['Great!', 'Ótimo!'])
+
+
 def install(g):
     base = g['E']
 
@@ -40,6 +111,8 @@ def install(g):
         o = OVR.get(k.get('n'))
         if o is None:
             return base(**k)
+        OLD[k['n']] = dict(names=k['names'], obra=k['obra']['name'], vocab=[v[1] for v in k['vocab']], hot=[h[1] for h in k['hot']], lines=k['lines'],
+                           verbs=[v[0] for v in k['verbs'][2]])
         old = k['names']; mp = {}
         if o['names']:
             new = tuple(o['names']); mp = dict(zip(old, new))
@@ -69,6 +142,7 @@ def install(g):
         if o['lab']: k['lab'] = o['lab']
         if o['cv']: k['cover'] = (k['cover'][0], o['cv'])
         k.update(o['more'])
+        if k['n'] in GX: _derive(k, *GX[k['n']])
         return base(**k)
 
     g['E'] = E2
