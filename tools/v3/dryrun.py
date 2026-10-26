@@ -17,7 +17,7 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'data', COURSE + '_*.json'))):
     for i, e in enumerate(d): where[e['n']] = (f, i)
 order = sorted(where, key=lambda n: chunks[where[n][0]][where[n][1]]['o'])
 eps = sorted(mod.EPS, key=lambda e: order.index(e['n']))
-bad = 0; gs = []
+bad = 0; gs = []; built_all = []
 for k, E in enumerate(eps):
     f, i = where[E['n']]; old = chunks[f][i]
     P = eps[k - 1] if k else None
@@ -31,5 +31,20 @@ for k, E in enumerate(eps):
     pr = check(built)
     print(('OK ' if not pr else 'XX '), E['n'], built['t'], len(built['fr']), 'quadros', '| gs:', built.get('gs'))
     for q in pr: print('    -', q)
-    bad += len(pr); gs.append(built.get('gs'))
+    bad += len(pr); gs.append(built.get('gs')); built_all.append(built)
 print('problemas:', bad, '| rótulos gs:', len(gs), 'únicos:', len(set(gs)))
+
+# --- cada episódio tem conteúdo próprio: palavras, verbos, laboratório de sons e obra não podem repetir entre episódios vizinhos ---
+def _sets(e):
+    F = {}
+    for f in e['fr']: F.setdefault(f['k'], []).append(f)
+    return dict(vocab={w[0].lower() for w in (e.get('v') or [])}, verbos={v['v'].lower() for v in F.get('verbs', [{}])[0].get('items', [])},
+                lab={x[0].lower() for x in F.get('pglab', [{}])[0].get('ex', [])}, obra={(e.get('a') or {}).get('w', '')})
+rep = 0
+for a, b in zip(built_all, built_all[1:]):
+    A, B = _sets(a), _sets(b)
+    for k in A:
+        com = A[k] & B[k]
+        if com:
+            rep += 1; print('REPETIDO entre', a['n'], 'e', b['n'], k, sorted(com))
+print('repetições entre episódios vizinhos:', rep)
