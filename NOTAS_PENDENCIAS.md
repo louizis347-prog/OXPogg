@@ -147,3 +147,9 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 
 - REGRA DE CONTEÚDO (B1 331–370 e seguintes): cada episódio, inclusive a continuação do par, tem obra, 6 palavras, 4 verbos, 3 sons do laboratório, cena e falas PRÓPRIOS (como nos 5 primeiros do A1); só o quadro de revisão (mochila) retoma o episódio anterior. A segunda cena ('Na conversa de verdade') usa `fill=` com 4 falas específicas, nunca as falas-padrão. `COURSE=en-b1 python3 tools/v3/dryrun.py b1_NNN_MMM` acusa repetição entre episódios vizinhos e enchimento. Obras das continuações ficam em `tools/v3/obras_new_b1_*.json`.
 - Atenção: os itens 1–330 do B1 (outra sessão) ainda compartilham palavras, verbos e laboratório dentro do par (100%); não foram refeitos.
+
+## Auditoria do inglês regular contra o modelo dos episódios 2–5 do A1 (outubro/2026)
+- Modelo de referência (definido pelo dono): A1 7009801, 70001, 7070001 e 30001. Cada episódio tem obra, elenco, palavras, verbos, laboratório de sons, cena e falas PRÓPRIOS; só a revisão (mochila) retoma o anterior.
+- Ferramenta: `python3 tools/audit/regular_model_audit.py` (critérios K1–K12; relatório em `tools/audit/regular_model_audit.json`). Corrige o mecânico: `python3 tools/audit/fix_mechanical.py` (teaser do fechamento e revisão do anterior; rodar SEMPRE depois de `model_v3.py`, que recria o teaser dos arquivos-fonte).
+- Resolvido: teasers que apontavam para episódios removidos na redução do curso (89) e 1 revisão fora de ordem.
+- Pendente (precisa de escrita): continuações que repetem obra/palavras/verbos/sons/objetos do original (A1 ≈226, A2 ≈233, B1 ≈165), falas de enchimento (B1 259, A2 3) e elenco/arte genéricos em vez dos personagens da obra (A1 429, A2 474, B1 370).
