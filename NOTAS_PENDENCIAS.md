@@ -165,3 +165,8 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Continuações dos itens 1–172 com obra, palavras, verbos, sons e falas próprios (camadas `tools/v3/b1fix*.py` e `ovrb1*.py`). Fatos das obras vieram de memória: revisar `obras_new_b1_001_085.json` e `obras_new_b1_086_170_*.json`.
 - Auditoria B1 depois do lote: obra repetida 165→79, enchimento 259→158. Falta itens 173–330 (e 371–530), A2 e A1; elenco/arte genéricos (K3/K4) seguem altos.
 - Sempre rodar `fix_mechanical.py` depois de `model_v3.py`.
+
+## Auditoria do modelo — B1 itens 173–330 (publicado)
+- Continuações e originais dos itens 173–330 reescritos (camadas `ovrb1_*.py`, obras em `obras_new_b1_173_250_*.json` e `obras_new_b1_251_330_a.json`). B1 inteiro (370): K8 obra/vocab/verbos/lab e K9 enchimento zerados; sobra K8 hot 3.
+- Fatos das obras vieram de memória: revisar (em especial Mil e Uma Noites, Romeu e Julieta, Cachinhos Dourados). Em 7082121, 7081271, 7082140, 7082141 e 7082196 algumas falas de objeto quente padrão não combinam totalmente com a obra nova. 7082016 e 7082021: troca de texto antigo não encontrada.
+- Próximo: elenco/arte genéricos (K3 54%, K4 89%), A2, A1, B1 371–530.
