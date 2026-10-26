@@ -144,3 +144,6 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Faltam os itens 371–530 do B1 e a checagem de cobertura do plano B1.
 
 - B1 331–370 (20 pares): escritos por tools/v3/b1_331_340.py … b1_361_370.py; montagem e checagens em um passo só (`COURSE=en-b1 python3 tools/model_v3.py`, `check.py`, `mark_pilot2.py`, `tools/gram/check_unique_b1.py`) e teste sem gravar com `COURSE=en-b1 python3 tools/v3/dryrun.py b1_NNN_MMM`. A frase 'I have jet lag.' ganhou tradução mais precisa no ep. 82168 (dicionário de falas compartilhado: frases iguais devem ter a mesma tradução em todos os episódios).
+
+- REGRA DE CONTEÚDO (B1 331–370 e seguintes): cada episódio, inclusive a continuação do par, tem obra, 6 palavras, 4 verbos, 3 sons do laboratório, cena e falas PRÓPRIOS (como nos 5 primeiros do A1); só o quadro de revisão (mochila) retoma o episódio anterior. A segunda cena ('Na conversa de verdade') usa `fill=` com 4 falas específicas, nunca as falas-padrão. `COURSE=en-b1 python3 tools/v3/dryrun.py b1_NNN_MMM` acusa repetição entre episódios vizinhos e enchimento. Obras das continuações ficam em `tools/v3/obras_new_b1_*.json`.
+- Atenção: os itens 1–330 do B1 (outra sessão) ainda compartilham palavras, verbos e laboratório dentro do par (100%); não foram refeitos.
