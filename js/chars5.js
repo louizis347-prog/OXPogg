@@ -25,9 +25,9 @@ const K={
   whiterabbit:{top:'#4a6fa5',bot:'#3a4a7a',hair:'#f4f4f6',hairStyle:'none',skin:'#f4f4f6',extra:ears,front:'<circle cx="50" cy="96" r="6" fill="#f2c94c"/>',shoe:'#8a929c'},
   captainhook:{top:'#8b1e2d',bot:'#2a2230',hair:'#2a2230',hairStyle:'long',hat:'feather',stache:'#2a2230',shoe:'#2a2230',extra:'<path d="M80 108 Q92 100 88 92" stroke="#cfd6de" stroke-width="4" fill="none" stroke-linecap="round"/>'},
   /* Harry Potter */
-  harry:{top:'#2a2230',bot:'#2a2230',hair:'#1a1420',hairStyle:'short',extra:gl+wand+cape('#4a3a62'),shoe:'#2a2230',front:'<path d="M50 78 V126" stroke="#c0392b" stroke-width="3"/>'},
+  harry:{top:'#2a2230',bot:'#2a2230',hair:'#1a1420',hairStyle:'short',extra:wand+cape('#4a3a62'),over:gl+'<path d="M30 36 L40 30 L44 38Z" fill="#1a1420"/><path d="M46 26 L50 32 L54 26" stroke="#c0392b" stroke-width="2" fill="none"/>',shoe:'#2a2230',front:'<path d="M50 78 V126" stroke="#c0392b" stroke-width="3"/>'},
   hermione:{top:'#2a2230',bot:'#2a2230',hair:'#8a5a2b',hairStyle:'long',extra:wand,shoe:'#2a2230',front:'<path d="M42 78 L58 100" stroke="#c0392b" stroke-width="4"/>'},
-  dumbledore:{top:'#5b3d9a',bot:'#4a2f82',hair:'#e6e6e6',hairStyle:'long',beard:'#e6e6e6',extra:gl,shoe:'#2a2230'},
+  dumbledore:{top:'#5b3d9a',bot:'#4a2f82',hair:'#e6e6e6',hairStyle:'long',beard:'#e6e6e6',over:gl,shoe:'#2a2230'},
   /* clássicos */
   sherlock:{top:'#6b5a45',bot:'#4a4033',hair:'#3a2a22',hairStyle:'short',hat:'fedora',hatc:'#6b5a45',extra:'<circle cx="86" cy="104" r="7" fill="none" stroke="#2a2230" stroke-width="2"/><path d="M82 110 L74 120" stroke="#2a2230" stroke-width="2"/>',shoe:'#2a2230'},
   watson:{top:'#4a6fa5',bot:'#3a4a7a',hair:'#8a5a2b',hairStyle:'short',stache:'#8a5a2b',shoe:'#2a2230'},
@@ -49,7 +49,7 @@ const K={
 };
 HATS.funnel=o=>`<path d="M36 34 L50 6 L64 34Z" fill="#b8c0cc" stroke="#8a929c" stroke-width="1.2"/>`;
 const C={};
-Object.keys(K).forEach(k=>{C[k]=()=>person(Object.assign({},K[k]))});
+Object.keys(K).forEach(k=>{C[k]=()=>{const o=Object.assign({},K[k]),ov=o.over||'';delete o.over;return person(o).replace('</svg>',ov+'</svg>')}});
 window.POG_WORKCAST={ids:Object.keys(K)};
 const SH='<ellipse cx="50" cy="146" rx="26" ry="3.6" fill="#000" opacity=".16"/>';
 const old=window.PogChars;
