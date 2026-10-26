@@ -13,7 +13,7 @@ def _bold(s, expr):
 
 
 def S(n, title, sub, pattern, why, names, ids, rs, obra, hot, gaps, traps, rule, fm, cover, vocab, lines, quiz,
-      teaser, exps, lab, verbs, mold, prod, m2, scenes):
+      teaser, exps, lab, verbs, mold, prod, m2, scenes, fill=None):
     A, B = names
     who = ids[0]
     en_all = ' '.join(h[3] for h in hot[:4])
@@ -43,7 +43,7 @@ def S(n, title, sub, pattern, why, names, ids, rs, obra, hot, gaps, traps, rule,
     sc = []
     for k, e in enumerate(exps):
         sc.append([A if k % 2 == 0 else B, _bold(e[4], e[1]), e[5]])
-    for k, f in enumerate(FILL):
+    for k, f in enumerate(fill or FILL):
         sc.append([A if k % 2 == 0 else B] + f)
     return E(n=n, title=title, sub=sub, pattern=pattern, why=why, names=names, ids=ids, rs=rs,
              obra=OB(n, obra[0], obra[1], p='b'), hot=hot, gaps=gaps, traps=traps, rule=R_, cover=cover,

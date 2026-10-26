@@ -3,6 +3,55 @@ from v3.b1h import *
 
 EPS = []
 
+def _L(short, title, pt, tip, words):
+    return dict(short=short, title=title, pt=pt, tip=tip, words=words)
+
+IQ2 = dict(obra='The Pursuit of Happyness',
+  vocab=[('🧑‍💼', 'interviewer', 'entrevistador', 'Soa como “ÍN-ter-viu-er”.'), ('🙋', 'candidate', 'candidato', 'Soa como “KÉN-di-dêit”.'), ('🧗', 'challenge', 'desafio', 'Soa como “TCHÁ-lendj”.'),
+         ('👥', 'team', 'equipe', 'Soa como “TIM”.'), ('📁', 'project', 'projeto', 'Soa como “PRÓ-djekt”.'), ('⏰', 'deadline', 'prazo', 'Soa como “DÉD-láin”.')],
+  lab=_L('iq2', 'Laboratório de sons: team, challenge e deadline', 'ea soa i em team; ch soa tch; ea soa é em deadline.', 'Em team, o ea soa i longo.',
+         [('team', 'TIM', 'equipe', 'ea = i', 'time', 'TÁIM'), ('challenge', 'TCHÁ-lendj', 'desafio', 'ch = tch', 'change', 'TCHÊINDJ'), ('deadline', 'DÉD-láin', 'prazo', 'ea = é', 'headline', 'HÉD-láin')]),
+  verbs=[('lead', '🧭', 'liderar', 'I led a team of five.', 'I leaded a team of five.', 'I lead.', 'Lidero.', 'lead → **led**.'),
+         ('solve', '🧩', 'resolver', 'I solved a problem.', 'I solved a problem to.', 'I solve.', 'Resolvo.', '**solved** + objeto.'),
+         ('meet', '✅', 'cumprir', 'I met every deadline.', 'I meeted every deadline.', 'I meet.', 'Cumpro.', 'meet → **met**.'),
+         ('enjoy', '😊', 'gostar de', 'I enjoy challenges.', 'I enjoy of challenges.', 'I enjoyed.', 'Gostei.', 'enjoy **+ objeto**.')])
+SP2 = dict(obra='Remember the Titans',
+  vocab=[('🏆', 'champion', 'campeão', 'Soa como “TCHÉM-pi-on”.'), ('🧑‍✈️', 'captain', 'capitão', 'Soa como “KÉP-ten”.'), ('📋', 'coach', 'treinador', 'Soa como “KÔUTCH”.'),
+         ('🧤', 'goalkeeper', 'goleiro', 'Soa como “GÔUL-ki-per”.'), ('🏅', 'trophy', 'troféu', 'Soa como “TRÔU-fi”.'), ('🔢', 'score', 'placar', 'Soa como “SKÓR”.')],
+  lab=_L('sp2', 'Laboratório de sons: champion, coach e trophy', 'ch soa tch; oa soa ou; ph soa f.', 'Em coach, o oa soa ou.',
+         [('champion', 'TCHÉM-pi-on', 'campeão', 'ch = tch', 'champagne', 'shém-PÊIN'), ('coach', 'KÔUTCH', 'treinador', 'oa = ou', 'couch', 'KÁUTCH'), ('trophy', 'TRÔU-fi', 'troféu', 'ph = f', 'trough', 'TRÓF')]),
+  verbs=[('beat', '💪', 'vencer', 'We beat them three to one.', 'We beaten them three to one.', 'I beat him.', 'Venci ele.', 'beat → **beat**.'),
+         ('play', '⚽', 'jogar', 'We played well.', 'We played good.', 'I played.', 'Joguei.', 'played **well**.'),
+         ('train', '🏋️', 'treinar', 'We train every day.', 'We trains every day.', 'I trained.', 'Treinei.', 'we **train**.'),
+         ('cheer', '📣', 'torcer', 'Fans cheer for the team.', 'Fans cheer to the team.', 'I cheered.', 'Torci.', 'cheer **for**.')])
+WP2 = dict(obra='The Intern',
+  vocab=[('📅', 'meeting', 'reunião', 'Soa como “MI-ting”.'), ('🗓️', 'schedule', 'horário', 'Soa como “SKÉ-djul”.'), ('☕', 'break', 'pausa', 'Soa como “BRÊIK”.'),
+         ('💭', 'idea', 'ideia', 'Soa como “ai-DÍ-a”.'), ('⚖️', 'fair', 'justo', 'Soa como “FÉR”.'), ('📝', 'plan', 'plano', 'Soa como “PLÉN”.')],
+  lab=_L('wp2', 'Laboratório de sons: fair, meeting e schedule', 'ai soa é; ee soa i; sch soa sk.', 'Em fair, o ai soa é.',
+         [('fair', 'FÉR', 'justo', 'ai = é', 'fear', 'FÍR'), ('meeting', 'MI-ting', 'reunião', 'ee = i', 'melting', 'MÉL-ting'), ('schedule', 'SKÉ-djul', 'horário', 'sch = sk', 'shed', 'SHÉD')]),
+  verbs=[('suggest', '📅', 'sugerir', 'I suggest a meeting.', 'I suggest to have a meeting.', 'I suggested.', 'Sugeri.', 'suggest **+ nome**.'),
+         ('share', '🤝', 'dividir', 'We can share the work.', 'We can to share the work.', 'I shared.', 'Dividi.', 'can + **share**.'),
+         ('agree', '✅', 'concordar', 'I agree with you.', 'I agree you.', 'I agreed.', 'Concordei.', 'agree **with**.'),
+         ('understand', '🙂', 'entender', 'I understand.', 'I understanded.', 'I understood.', 'Entendi.', 'understand → **understood**.')])
+PR2 = dict(obra="The King's Speech",
+  vocab=[('🎙️', 'speech', 'discurso', 'Soa como “SPÍTCH”.'), ('🔊', 'voice', 'voz', 'Soa como “VÓIS”.'), ('📊', 'chart', 'gráfico', 'Soa como “TCHÁRT”.'),
+         ('🎤', 'microphone', 'microfone', 'Soa como “MÁI-kro-fôn”.'), ('💎', 'clear', 'claro', 'Soa como “KLÍR”.'), ('⏸️', 'pause', 'pausa', 'Soa como “PÓZ”.')],
+  lab=_L('pr2', 'Laboratório de sons: speech, voice e microphone', 'ee soa i; oi soa ói; ph soa f.', 'Em voice, o oi soa ói.',
+         [('speech', 'SPÍTCH', 'discurso', 'ee = i', 'speed', 'SPÍD'), ('voice', 'VÓIS', 'voz', 'oi = ói', 'vice', 'VÁIS'), ('microphone', 'MÁI-kro-fôn', 'microfone', 'ph = f', 'microwave', 'MÁI-kro-uêiv')]),
+  verbs=[('explain', '🧾', 'explicar', 'Let me explain the chart.', 'Let me explaining the chart.', 'I explained.', 'Expliquei.', 'let me + **explain**.'),
+         ('ask', '❓', 'perguntar', 'You can ask me anything.', 'You can ask to me anything.', 'I asked.', 'Perguntei.', 'ask **me**.'),
+         ('speak', '🗣️', 'falar', 'Speak slowly and clearly.', 'Speak slow and clear.', 'I spoke.', 'Falei.', 'speak → **spoke**.'),
+         ('answer', '💬', 'responder', 'I will answer your question.', 'I will answer to your question.', 'I answered.', 'Respondi.', 'answer **+ objeto**.')])
+TR2 = dict(obra='Pretty Woman',
+  vocab=[('📏', 'size', 'tamanho', 'Soa como “SÁIZ”.'), ('🤏', 'tight', 'apertado', 'Soa como “TÁIT”.'), ('📦', 'stock', 'estoque', 'Soa como “STÓK”.'),
+         ('🧴', 'perfume', 'perfume', 'Soa como “PÉR-fium”.'), ('🏷️', 'discount', 'desconto', 'Soa como “DÍS-káunt”.'), ('🧾', 'receipt', 'recibo', 'Soa como “ri-SÍT”.')],
+  lab=_L('tr2', 'Laboratório de sons: size, tight e perfume', 'i soa ai; igh soa ai; u soa iu.', 'Em tight, o igh soa ai.',
+         [('size', 'SÁIZ', 'tamanho', 'i = ai', 'seize', 'SÍZ'), ('tight', 'TÁIT', 'apertado', 'igh = ai', 'tide', 'TÁID'), ('perfume', 'PÉR-fium', 'perfume', 'u = iu', 'perform', 'per-FÓRM')]),
+  verbs=[('fit', '👗', 'servir', 'Does it fit you?', 'Does it fits you?', 'It fit.', 'Serviu.', 'does it + **fit**.'),
+         ('suit', '✨', 'ficar bem', 'It suits you.', 'It suit you.', 'It suited.', 'Ficou bem.', 'it **suits** you.'),
+         ('take', '🛍️', 'levar', 'I will take it.', 'I will taking it.', 'I took it.', 'Levei.', 'will + **take**.'),
+         ('wear', '👚', 'vestir', 'I will wear it today.', 'I will wearing it today.', 'I wore.', 'Vesti.', 'will + **wear**.')])
+
 def mk(n, title, sub, pat, why, names, ids, rs, obra, scenes, cover, teaser, rule, fm, vocab, lab, verbs, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return S(n=n, title=title, sub=sub, pattern=pat, why=why, names=names, ids=ids, rs=rs, obra=(obra, obra),
              hot=hot, gaps=gaps, traps=traps, rule=rule, fm=fm, cover=cover, vocab=vocab, lines=lines, quiz=quiz,
@@ -18,8 +67,8 @@ IQ_VERBS = [('wish', '🌠', 'desejar', 'I wish I had more experience.', 'I wish
             ('tell', '📢', 'contar', 'Tell me about yourself.', 'Tell me of yourself.', 'I told.', 'Contei.', 'tell me **about**.'),
             ('learn', '📚', 'aprender', 'I learned a lot there.', 'I learned many there.', 'I learn.', 'Aprendo.', 'learned **a lot**.')]
 
-def iq(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
-    return mk(n, title, sub, pat, why, names, ids, rs, 'Mad Men: The Pitch', scenes, cover, teaser, rule, fm, IQ_VOCAB, IQ_LAB, IQ_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+def iq(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps, X={}):
+    return mk(n, title, sub, pat, why, names, ids, rs, X.get('obra', 'Mad Men: The Pitch'), scenes, cover, teaser, rule, fm, X.get('vocab', IQ_VOCAB), X.get('lab', IQ_LAB), X.get('verbs', IQ_VERBS), mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
 EPS.append(iq(82214, 'Interview Questions', "perguntas de entrevista e desejos: I wish I had, if only I had, I wish I could, I regret",
     "desejos e arrependimentos: I wish I had · if only I had · I wish I could", "Hoje você aprende a falar de desejos: I wish I had more experience. If only I had studied. I wish I could start today.",
@@ -59,7 +108,7 @@ EPS.append(iq(7082214, 'Perguntas de entrevista', "responder perguntas de entrev
      ['Man', 'Why do you want this job?', 'Por que você quer esta vaga?'], ['Girl', 'I enjoy challenges and I am good at planning.', 'Gosto de desafios e sou boa em planejar.'], ['Man', 'Can you describe your last project?', 'Pode descrever seu último projeto?'], ['Girl', 'Yes, it was a big pitch.', 'Sim, foi uma grande apresentação.']],
     [('What is she like?', 'Como ela é?', [('🗓️', 'A planner'), ('🎨', 'A painter'), ('🍳', 'A cook')], 0, 1, 'Diz: “I am a planner.”'), ('How big was her team?', 'Qual o tamanho da equipe?', [('5️⃣', 'Five'), ('2️⃣', 'Two'), ('9️⃣', 'Nine')], 0, 3, 'Diz: “a team of five.”'),
      ('What was her last project?', 'Qual foi o último projeto?', [('📣', 'A big pitch'), ('🏠', 'A house'), ('🚗', 'A car')], 0, 7, 'Diz: “a big pitch.”')],
-    [('😊', 'I enjoy', 'Gosto de', 'preferência', 'I enjoy challenges.', 'Gosto de desafios.'), ('👍', 'I am good at', 'Sou boa em', 'qualidade', 'I am good at planning.', 'Sou boa em planejar.'), ('🗣️', 'I can describe', 'Posso descrever', 'oferecer detalhes', 'I can describe my last project.', 'Posso descrever meu último projeto.'), ('📌', 'For instance', 'Por exemplo', 'exemplificar', 'For instance, I led a team.', 'Por exemplo, liderei uma equipe.')]))
+    [('😊', 'I enjoy', 'Gosto de', 'preferência', 'I enjoy challenges.', 'Gosto de desafios.'), ('👍', 'I am good at', 'Sou boa em', 'qualidade', 'I am good at planning.', 'Sou boa em planejar.'), ('🗣️', 'I can describe', 'Posso descrever', 'oferecer detalhes', 'I can describe my last project.', 'Posso descrever meu último projeto.'), ('📌', 'For instance', 'Por exemplo', 'exemplificar', 'For instance, I led a team.', 'Por exemplo, liderei uma equipe.')], X=IQ2))
 
 # ---------- esportes ----------
 SP_VOCAB = [('🏆', 'playoffs', 'fase eliminatória', 'Soa como “PLÊI-ofs”.'), ('🥈', 'semi-final', 'semifinal', 'Soa como “SÉ-mi-FÁI-nal”.'), ('🥅', 'penalty shootout', 'disputa de pênaltis', 'Soa como “PÉ-nal-ti SHUT-áut”.'),
@@ -71,8 +120,8 @@ SP_VERBS = [('win', '🏆', 'ganhar', 'We won the semi-final.', 'We winned the s
             ('draw', '🤝', 'empatar', 'The game ended in a draw.', 'The game ended on a draw.', 'I drew.', 'Empatei.', 'ended **in** a draw.'),
             ('score', '⚽', 'marcar', 'He scored in the last minute.', 'He scored at the last minute.', 'I scored.', 'Marquei.', 'scored **in** the last minute.')]
 
-def sp(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
-    return mk(n, title, sub, pat, why, names, ids, rs, 'Cool Runnings', scenes, cover, teaser, rule, fm, SP_VOCAB, SP_LAB, SP_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+def sp(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps, X={}):
+    return mk(n, title, sub, pat, why, names, ids, rs, X.get('obra', 'Cool Runnings'), scenes, cover, teaser, rule, fm, X.get('vocab', SP_VOCAB), X.get('lab', SP_LAB), X.get('verbs', SP_VERBS), mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
 EPS.append(sp(930047, 'Win, Lose or Draw', "vocabulário de esporte: playoffs, semi-final, penalty shootout, tie-break, linesman, supporter",
     "esportes e competição: playoffs · semi-final · penalty shootout · supporter", "Hoje você aprende o vocabulário do esporte: the playoffs, the semi-final, a penalty shootout, a tie-break, the linesman and the supporters.",
@@ -112,7 +161,7 @@ EPS.append(sp(7930047, 'Esportes', "contar resultados de jogos: we beat, we lost
      ['Man', 'Last week we lost to the champions.', 'Semana passada perdemos para os campeões.'], ['Girl', 'And the game before?', 'E o jogo antes?'], ['Man', 'It ended in a draw.', 'Terminou empatado.'], ['Girl', 'Good game anyway.', 'Foi bom jogo de qualquer forma.']],
     [('What was the score?', 'Qual foi o placar?', [('3️⃣', 'Three to one'), ('2️⃣', 'Two to two'), ('0️⃣', 'Zero to zero')], 0, 1, 'Diz: “three to one.”'), ('Who scored twice?', 'Quem marcou duas vezes?', [('🧑‍✈️', 'The captain'), ('🧤', 'The keeper'), ('🚩', 'The linesman')], 0, 3, 'Diz: “Our captain.”'),
      ('How did the older game end?', 'Como terminou o outro jogo?', [('🤝', 'In a draw'), ('🏆', 'A win'), ('😞', 'A loss')], 0, 6, 'Diz: “ended in a draw.”')],
-    [('⚽', 'Who scored', 'Quem marcou', 'perguntar', 'Who scored?', 'Quem marcou?'), ('🥅', 'What a goal', 'Que gol', 'elogiar', 'What a goal!', 'Que gol!'), ('👏', 'Good game', 'Bom jogo', 'cumprimentar', 'Good game.', 'Bom jogo.'), ('🏁', 'Full time', 'Fim de jogo', 'apito final', 'It is full time.', 'É o fim do jogo.')]))
+    [('⚽', 'Who scored', 'Quem marcou', 'perguntar', 'Who scored?', 'Quem marcou?'), ('🥅', 'What a goal', 'Que gol', 'elogiar', 'What a goal!', 'Que gol!'), ('👏', 'Good game', 'Bom jogo', 'cumprimentar', 'Good game.', 'Bom jogo.'), ('🏁', 'Full time', 'Fim de jogo', 'apito final', 'It is full time.', 'É o fim do jogo.')], X=SP2))
 
 # ---------- problemas no trabalho ----------
 WP_VOCAB = [('😟', 'concern', 'preocupação', 'Soa como “kon-SÉRN”.'), ('😤', 'complain', 'reclamar', 'Soa como “kom-PLÊIN”.'), ('💡', 'solution', 'solução', 'Soa como “so-LU-shon”.'),
@@ -124,8 +173,8 @@ WP_VERBS = [('say', '💬', 'dizer', 'She said that she was tired.', 'She said m
             ('explain', '🧾', 'explicar', 'They explained that the system was slow.', 'They explained me that the system was slow.', 'I explain.', 'Explico.', 'explained **that**.'),
             ('complain', '😤', 'reclamar', 'He complained about the workload.', 'He complained for the workload.', 'I complain.', 'Reclamo.', 'complain **about**.')]
 
-def wp(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
-    return mk(n, title, sub, pat, why, names, ids, rs, 'Office Space', scenes, cover, teaser, rule, fm, WP_VOCAB, WP_LAB, WP_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+def wp(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps, X={}):
+    return mk(n, title, sub, pat, why, names, ids, rs, X.get('obra', 'Office Space'), scenes, cover, teaser, rule, fm, X.get('vocab', WP_VOCAB), X.get('lab', WP_LAB), X.get('verbs', WP_VERBS), mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
 EPS.append(wp(82217, 'Workplace Problems', "problemas no trabalho e discurso indireto: she said that, he told me that, they explained that",
     "discurso indireto: she said that · he told me that · they explained that", "Hoje você aprende a relatar o que disseram: She said that she was tired. He told me that it was late. They explained that the system was slow.",
@@ -165,7 +214,7 @@ EPS.append(wp(7082217, 'Problemas no trabalho', "resolver conflitos no trabalho:
      ['Girl', 'When can we meet?', 'Quando podemos nos reunir?'], ['Man', 'Tomorrow morning. Let\'s sort it out.', 'Amanhã de manhã. Vamos resolver isso.'], ['Girl', 'We need a fair solution.', 'Precisamos de uma solução justa.'], ['Man', 'Agreed.', 'Combinado.']],
     [('What is the problem?', 'Qual é o problema?', [('📚', 'Too much work'), ('💰', 'Low pay'), ('🚌', 'The bus')], 0, 0, 'Diz: “too much work.”'), ('Who do they meet?', 'Com quem se reúnem?', [('🧑‍💼', 'The boss'), ('👨‍🏫', 'A teacher'), ('👮', 'A guard')], 0, 3, 'Diz: “with the boss.”'),
      ('When is the meeting?', 'Quando é a reunião?', [('🌅', 'Tomorrow morning'), ('🌙', 'Tonight'), ('📆', 'Next year')], 0, 5, 'Diz: “Tomorrow morning.”')],
-    [('🙂', 'I understand', 'Eu entendo', 'empatia', 'I understand.', 'Eu entendo.'), ('⚖️', 'It is not fair', 'Não é justo', 'queixa', 'It is not fair.', 'Não é justo.'), ('🤝', 'Meet halfway', 'Chegar a um meio-termo', 'negociar', 'Let us meet halfway.', 'Vamos chegar a um meio-termo.'), ('✅', 'Agreed', 'Combinado', 'concordar', 'Agreed.', 'Combinado.')]))
+    [('🙂', 'I understand', 'Eu entendo', 'empatia', 'I understand.', 'Eu entendo.'), ('⚖️', 'It is not fair', 'Não é justo', 'queixa', 'It is not fair.', 'Não é justo.'), ('🤝', 'Meet halfway', 'Chegar a um meio-termo', 'negociar', 'Let us meet halfway.', 'Vamos chegar a um meio-termo.'), ('✅', 'Agreed', 'Combinado', 'concordar', 'Agreed.', 'Combinado.')], X=WP2))
 
 # ---------- apresentação ----------
 PR_VOCAB = [('🖼️', 'slide', 'slide', 'Soa como “SLÁID”.'), ('👥', 'audience', 'plateia', 'Soa como “Ó-di-ens”.'), ('📋', 'topic', 'tema', 'Soa como “TÓ-pik”.'),
@@ -177,8 +226,8 @@ PR_VERBS = [('start', '🚦', 'começar', 'First, I will start with the topic.',
             ('show', '🖼️', 'mostrar', 'Let me show you the chart.', 'Let me to show you the chart.', 'I showed.', 'Mostrei.', 'let me + **show**.'),
             ('sum', '🏁', 'resumir', 'To sum up, we can win.', 'To sum, we can win.', 'I summed.', 'Resumi.', 'to sum **up**.')]
 
-def pr(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
-    return mk(n, title, sub, pat, why, names, ids, rs, 'TED Talks', scenes, cover, teaser, rule, fm, PR_VOCAB, PR_LAB, PR_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+def pr(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps, X={}):
+    return mk(n, title, sub, pat, why, names, ids, rs, X.get('obra', 'TED Talks'), scenes, cover, teaser, rule, fm, X.get('vocab', PR_VOCAB), X.get('lab', PR_LAB), X.get('verbs', PR_VERBS), mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
 EPS.append(pr(82218, 'Giving a Presentation', "fazer uma apresentação com sinalização: first, next, finally, to sum up",
     "sinalizar a fala: first · next · finally · to sum up", "Hoje você aprende a organizar a fala: First, I will talk about the topic. Next, the results. Finally, a question. To sum up, we can win.",
@@ -218,7 +267,7 @@ EPS.append(pr(7082218, 'Fazer uma apresentação', "fazer uma apresentação int
      ['Man', 'Good question about the cost.', 'Boa pergunta sobre o custo.'], ['Girl', 'I will come back to that.', 'Volto a isso depois.'], ['Man', 'Keep eye contact with the audience.', 'Mantenha contato visual com a plateia.'], ['Girl', 'I will.', 'Vou manter.']],
     [('What grew?', 'O que cresceu?', [('📈', 'Sales'), ('🌳', 'Trees'), ('🧒', 'Kids')], 0, 0, 'Diz: “sales grew.”'), ('What did he ask?', 'O que ele perguntou?', [('🤔', 'Does that make sense'), ('🍕', 'Want pizza'), ('🕐', 'What time')], 0, 2, 'Diz: “make sense?”'),
      ('What should she keep?', 'O que deve manter?', [('👀', 'Eye contact'), ('🎧', 'Music'), ('☕', 'Coffee')], 0, 6, 'Diz: “eye contact.”')],
-    [('🤔', 'Does that make sense', 'Isso faz sentido', 'checar', 'Does that make sense?', 'Isso faz sentido?'), ('👍', 'Good question', 'Boa pergunta', 'elogiar', 'Good question.', 'Boa pergunta.'), ('🔁', 'Come back to that', 'Voltar a isso', 'adiar', 'I will come back to that.', 'Volto a isso depois.'), ('🖼️', 'Next slide', 'Próximo slide', 'transição', 'Next slide, please.', 'Próximo slide, por favor.')]))
+    [('🤔', 'Does that make sense', 'Isso faz sentido', 'checar', 'Does that make sense?', 'Isso faz sentido?'), ('👍', 'Good question', 'Boa pergunta', 'elogiar', 'Good question.', 'Boa pergunta.'), ('🔁', 'Come back to that', 'Voltar a isso', 'adiar', 'I will come back to that.', 'Volto a isso depois.'), ('🖼️', 'Next slide', 'Próximo slide', 'transição', 'Next slide, please.', 'Próximo slide, por favor.')], X=PR2))
 
 # ---------- phrasal verbs com try ----------
 TR_VOCAB = [('👗', 'fitting', 'prova de roupa', 'Soa como “FÍ-ting”.'), ('✂️', 'alteration', 'ajuste (de roupa)', 'Soa como “ól-te-RÊI-shon”.'), ('🎨', 'swatch', 'amostra de tecido', 'Soa como “SUÓTCH”.'),
@@ -230,8 +279,8 @@ TR_VERBS = [('try on', '👗', 'provar', 'Can I try on this dress?', 'Can I try 
             ('try for', '🏅', 'tentar uma vaga', 'She will try for the team.', 'She will try to the team.', 'I tried for.', 'Tentei.', 'try **for** a vaga.'),
             ('try again', '🔁', 'tentar de novo', 'Do not give up. Try again.', 'Do not give up. Try again to.', 'I tried again.', 'Tentei de novo.', 'try **again**.')]
 
-def tr(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
-    return mk(n, title, sub, pat, why, names, ids, rs, 'Legally Blonde', scenes, cover, teaser, rule, fm, TR_VOCAB, TR_LAB, TR_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+def tr(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps, X={}):
+    return mk(n, title, sub, pat, why, names, ids, rs, X.get('obra', 'Legally Blonde'), scenes, cover, teaser, rule, fm, X.get('vocab', TR_VOCAB), X.get('lab', TR_LAB), X.get('verbs', TR_VERBS), mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
 EPS.append(tr(930048, 'Try Out, Try On', "phrasal verbs com try: try on, try out, try for, try again",
     "phrasal verbs com try: try on · try out · try for · try again", "Hoje você aprende os phrasal verbs com try: Can I try on this dress? I will try out the gym. She will try for the team. Try again!",
@@ -271,4 +320,4 @@ EPS.append(tr(7930048, 'Experimentar', "experimentar roupas e fazer testes: does
      ['Girl', 'Good luck. Take a free sample of perfume.', 'Boa sorte. Leve uma amostra grátis de perfume.'], ['Man', 'Thank you. Is the blue one in stock?', 'Obrigado. O azul tem em estoque?'], ['Girl', 'Yes. It suits you.', 'Sim. Fica bem em você.'], ['Man', 'I will take it.', 'Vou levar.']],
     [('What is tight?', 'O que está apertado?', [('👖', 'The waist'), ('👟', 'The shoes'), ('🧤', 'The gloves')], 0, 0, 'Diz: “the waist is tight.”'), ('What does he have today?', 'O que ele tem hoje?', [('🎭', 'An audition'), ('🦷', 'A dentist'), ('🏖️', 'A holiday')], 0, 3, 'Diz: “an audition.”'),
      ('What does he do?', 'O que ele faz no fim?', [('🛍️', 'Takes it'), ('🚪', 'Leaves'), ('😠', 'Complains')], 0, 7, 'Diz: “I will take it.”')],
-    [('🛍️', 'I will take it', 'Vou levar', 'comprar', 'I will take it.', 'Vou levar.'), ('👗', 'It suits you', 'Fica bem em você', 'elogiar', 'It suits you.', 'Fica bem em você.'), ('📏', 'Too tight', 'Muito apertado', 'reclamar', 'It is too tight.', 'Está muito apertado.'), ('🍀', 'Good luck', 'Boa sorte', 'desejar', 'Good luck at the audition.', 'Boa sorte no teste.')]))
+    [('🛍️', 'I will take it', 'Vou levar', 'comprar', 'I will take it.', 'Vou levar.'), ('👗', 'It suits you', 'Fica bem em você', 'elogiar', 'It suits you.', 'Fica bem em você.'), ('📏', 'Too tight', 'Muito apertado', 'reclamar', 'It is too tight.', 'Está muito apertado.'), ('🍀', 'Good luck', 'Boa sorte', 'desejar', 'Good luck at the audition.', 'Boa sorte no teste.')], X=TR2))

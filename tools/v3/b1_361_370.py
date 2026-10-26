@@ -21,6 +21,74 @@ TP_VERBS = [('miss', '😰', 'perder', 'I missed my connection.', 'I lost my con
 def tp(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return mk(n, title, sub, pat, why, names, ids, rs, 'Planes, Trains and Automobiles: Disaster', scenes, cover, teaser, rule, fm, TP_VOCAB, TP_LAB, TP_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
+
+# ---------- constantes próprias das continuações ----------
+def _w(n, title, sub, pat, why, names, ids, rs, obra, V, L, VB):
+    def f(scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+        return mk(n, title, sub, pat, why, names, ids, rs, obra, scenes, cover, teaser, rule, fm, V, L, VB, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+    return f
+
+TP2 = dict(obra='Airplane!',
+  V=[('💶', 'refund', 'reembolso', 'Soa como “RI-fând”.'), ('🎟️', 'voucher', 'voucher', 'Soa como “VÁU-tcher”.'), ('🧘', 'patience', 'paciência', 'Soa como “PÊI-shens”.'),
+     ('🤝', 'offer', 'oferta', 'Soa como “Ó-fer”.'), ('😠', 'complaint', 'reclamação', 'Soa como “kom-PLÊINT”.'), ('🧑‍💼', 'manager', 'gerente', 'Soa como “MÉ-ni-djer”.')],
+  L=dict(short='tq', title='Laboratório de sons: refund, voucher e patience', pt='u soa i; ou soa au; tie soa shi.', tip='Em voucher, ou soa au.',
+         words=[('refund', 'RI-fând', 'reembolso', 'u = â', 'refine', 'ri-FÁIN'), ('voucher', 'VÁU-tcher', 'voucher', 'ou = au', 'vouch', 'VÁUTCH'), ('patience', 'PÊI-shens', 'paciência', 'tie = shi', 'patients', 'PÊI-shents')]),
+  VB=[('offer', '🤝', 'oferecer', 'I can offer a voucher.', 'I can offering a voucher.', 'I offered.', 'Ofereci.', 'can + **offer**.'),
+      ('complain', '😠', 'reclamar', 'I want to complain.', 'I want complain.', 'I complained.', 'Reclamei.', 'want **to** complain.'),
+      ('apologize', '🙏', 'pedir desculpas', 'We apologize for the delay.', 'We apologize of the delay.', 'We apologized.', 'Pedimos desculpas.', 'apologize **for**.'),
+      ('refund', '💶', 'reembolsar', 'Can you refund my ticket?', 'Can you refunding my ticket?', 'They refunded.', 'Reembolsaram.', 'can you + **refund**.')])
+HT2 = dict(obra='Coco',
+  V=[('📜', 'recipe', 'receita', 'Soa como “RÉ-si-pi”.'), ('👪', 'family', 'família', 'Soa como “FÉ-mi-li”.'), ('🍽️', 'dinner', 'jantar', 'Soa como “DÍ-ner”.'),
+     ('🎶', 'song', 'canção', 'Soa como “SÓNG”.'), ('🎁', 'gift', 'presente', 'Soa como “GÍFT”.'), ('🌃', 'midnight', 'meia-noite', 'Soa como “MÍD-náit”.')],
+  L=dict(short='hu', title='Laboratório de sons: recipe, family e midnight', pt='ci soa si; a soa é; ni soa n.', tip='Em recipe, o e final soa i.',
+         words=[('recipe', 'RÉ-si-pi', 'receita', 'e final = i', 'receipt', 'ri-SIT'), ('family', 'FÉ-mi-li', 'família', 'a = é', 'famine', 'FÉ-min'), ('midnight', 'MÍD-náit', 'meia-noite', 'igh = ai', 'mid-night', 'MÍD-nit')]),
+  VB=[('cook', '🍳', 'cozinhar', 'We cook together the night before.', 'We cooking together the night before.', 'We cooked.', 'Cozinhamos.', 'we **cook**.'),
+      ('sing', '🎤', 'cantar', 'We sing old songs.', 'We sing old songs to.', 'We sang.', 'Cantamos.', 'we **sing**.'),
+      ('share', '🍲', 'dividir', 'We share the food.', 'We share of the food.', 'We shared.', 'Dividimos.', 'share **the** food.'),
+      ('wrap', '🎁', 'embrulhar', 'We wrap gifts at night.', 'We wrapping gifts at night.', 'We wrapped.', 'Embrulhamos.', 'we **wrap**.')])
+ST2 = dict(obra='Ferris Bueller’s Day Off',
+  V=[('🪟', 'window', 'janela', 'Soa como “UÍN-dou”.'), ('🙊', 'excuse', 'desculpa', 'Soa como “iks-KIÚS”.'), ('💡', 'idea', 'ideia', 'Soa como “ai-DÍ-a”.'),
+     ('👉', 'fault', 'culpa', 'Soa como “FÓLT”.'), ('😬', 'trouble', 'encrenca', 'Soa como “TRÂ-bol”.'), ('🔍', 'truth', 'verdade', 'Soa como “TRÚTH”.')],
+  L=dict(short='sw', title='Laboratório de sons: window, excuse e trouble', pt='w soa u; x soa ks; ou soa â.', tip='Em trouble, ou soa â.',
+         words=[('window', 'UÍN-dou', 'janela', 'w = u', 'widow', 'UÍ-dou'), ('excuse', 'iks-KIÚS', 'desculpa', 'x = ks', 'extra', 'ÉK-stra'), ('trouble', 'TRÂ-bol', 'encrenca', 'ou = â', 'treble', 'TRÉ-bol')]),
+  VB=[('swear', '🤞', 'jurar', 'I swear it was not me.', 'I swear to it was not me.', 'I swore.', 'Jurei.', 'swear + frase.'),
+      ('break', '💥', 'quebrar', 'Who broke the window?', 'Who breaked the window?', 'It broke.', 'Quebrou.', 'broke (irregular).'),
+      ('blame', '👉', 'culpar', 'Do not blame me.', 'Do not blaming me.', 'They blamed.', 'Culparam.', 'do not + **blame**.'),
+      ('admit', '🙋', 'admitir', 'I admit it was my idea.', 'I admit to was my idea.', 'I admitted.', 'Admiti.', 'admit + frase.')])
+NW2 = dict(obra='Planet Earth',
+  V=[('🗼', 'tower', 'torre', 'Soa como “TÁU-er”.'), ('🏞️', 'lake', 'lago', 'Soa como “LÊIK”.'), ('🌊', 'river', 'rio', 'Soa como “RÍ-ver”.'),
+     ('⛰️', 'mountain', 'montanha', 'Soa como “MÁUN-ten”.'), ('🌄', 'valley', 'vale', 'Soa como “VÉ-li”.'), ('🌍', 'ocean', 'oceano', 'Soa como “ÔU-shen”.')],
+  L=dict(short='pe', title='Laboratório de sons: tower, mountain e river', pt='ow soa au; ou soa au; i soa i curto.', tip='Em tower, ow soa au.',
+         words=[('tower', 'TÁU-er', 'torre', 'ow = au', 'tore', 'TÓR'), ('mountain', 'MÁUN-ten', 'montanha', 'ou = au', 'maiden', 'MÊI-den'), ('river', 'RÍ-ver', 'rio', 'i curto', 'rival', 'RÁI-vel')]),
+  VB=[('compare', '⚖️', 'comparar', 'We compare the lake and the canyon.', 'We compare the lake with to the canyon.', 'We compared.', 'Comparamos.', 'compare **the**.'),
+      ('measure', '📏', 'medir', 'They measure the depth.', 'They measuring the depth.', 'They measured.', 'Mediram.', 'they **measure**.'),
+      ('climb', '🧗', 'escalar', 'We climb the cliff.', 'We climbing the cliff.', 'We climbed.', 'Escalamos.', 'we **climb**.'),
+      ('cross', '🌉', 'atravessar', 'We cross the river.', 'We cross over the river by.', 'We crossed.', 'Atravessamos.', 'we **cross**.')])
+TZ2 = dict(obra='Inception',
+  V=[('🤝', 'meeting', 'reunião', 'Soa como “MI-ting”.'), ('🗓️', 'calendar', 'calendário', 'Soa como “KÉ-len-der”.'), ('🛌', 'rest', 'descansar', 'Soa como “RÉST”.'),
+     ('🌅', 'morning', 'manhã', 'Soa como “MÓR-ning”.'), ('🛬', 'arrival', 'chegada', 'Soa como “a-RÁI-vol”.'), ('🔔', 'reminder', 'lembrete', 'Soa como “ri-MÁIN-der”.')],
+  L=dict(short='in', title='Laboratório de sons: calendar, morning e reminder', pt='a soa é; or soa ór; i soa ai.', tip='Em reminder, o i soa ai.',
+         words=[('calendar', 'KÉ-len-der', 'calendário', 'a = é', 'colander', 'KÓ-len-der'), ('morning', 'MÓR-ning', 'manhã', 'or = ór', 'mourning', 'MÓR-ning'), ('reminder', 'ri-MÁIN-der', 'lembrete', 'i = ai', 'remainder', 'ri-MÊIN-der')]),
+  VB=[('arrive', '🛬', 'chegar', 'I just arrived.', 'I just arrive yesterday.', 'I arrived.', 'Cheguei.', 'just **arrived**.'),
+      ('rest', '🛌', 'descansar', 'You need to rest.', 'You need rest to.', 'I rested.', 'Descansei.', 'need to **rest**.'),
+      ('sleep', '😴', 'dormir', 'I will sleep in tomorrow.', 'I will sleeping in tomorrow.', 'I slept.', 'Dormi.', 'will + **sleep**.'),
+      ('remind', '🔔', 'lembrar', 'Please remind me at ten.', 'Please remember me at ten.', 'I reminded.', 'Lembrei.', 'remind **me**.')])
+
+def tp2(n, title, sub, pat, why, names, ids, rs, *a):
+    return _w(n, title, sub, pat, why, names, ids, rs, TP2['obra'], TP2['V'], TP2['L'], TP2['VB'])(*a)
+
+def ht2(n, title, sub, pat, why, names, ids, rs, *a):
+    return _w(n, title, sub, pat, why, names, ids, rs, HT2['obra'], HT2['V'], HT2['L'], HT2['VB'])(*a)
+
+def st2(n, title, sub, pat, why, names, ids, rs, *a):
+    return _w(n, title, sub, pat, why, names, ids, rs, ST2['obra'], ST2['V'], ST2['L'], ST2['VB'])(*a)
+
+def nw2(n, title, sub, pat, why, names, ids, rs, *a):
+    return _w(n, title, sub, pat, why, names, ids, rs, NW2['obra'], NW2['V'], NW2['L'], NW2['VB'])(*a)
+
+def tz2(n, title, sub, pat, why, names, ids, rs, *a):
+    return _w(n, title, sub, pat, why, names, ids, rs, TZ2['obra'], TZ2['V'], TZ2['L'], TZ2['VB'])(*a)
+
 EPS.append(tp(82236, 'Travel Problems', "resolver imprevistos de viagem: my flight was canceled, I missed my connection, could you rebook me",
     "problema e solução: was canceled · I missed · could you rebook me", "Hoje você aprende a resolver imprevistos: My flight was canceled. I missed my connection. Could you rebook me?",
     ('Woman', 'Man'), ['polly', 'tom'], 'street', ['street', 'hall', 'lobby1', 'cafe2', 'living', 'park'],
@@ -41,7 +109,7 @@ EPS.append(tp(82236, 'Travel Problems', "resolver imprevistos de viagem: my flig
      ('How long is the wait?', 'Quanto é a espera?', [('4️⃣', 'Four hours'), ('2️⃣', 'Two hours'), ('1️⃣', 'One hour')], 0, 7, 'Diz: “about four hours.”')],
     [('🤷', 'What should I do', 'O que devo fazer', 'pedir conselho', 'What should I do?', 'O que devo fazer?'), ('✈️', 'Is there another', 'Há outro', 'perguntar opções', 'Is there another flight?', 'Há outro voo?'), ('⏳', 'How long', 'Quanto tempo', 'perguntar duração', 'How long is the wait?', 'Quanto tempo é a espera?'), ('🙏', 'I appreciate it', 'Agradeço', 'agradecer', 'I appreciate your help.', 'Agradeço sua ajuda.')]))
 
-EPS.append(tp(7082236, 'Imprevistos de viagem', "reclamar e pedir compensação: I have been waiting, I would like a refund, this is not acceptable",
+EPS.append(tp2(7082236, 'Imprevistos de viagem', "reclamar e pedir compensação: I have been waiting, I would like a refund, this is not acceptable",
     "reclamar com educação: I have been waiting · I would like a refund · compensation", "Hoje você aprende a reclamar com educação: I have been waiting for hours. I would like a refund. Is there any compensation?",
     ('Man', 'Girl'), ['tom', 'polly'], 'hall', ['hall', 'street', 'lobby1', 'cafe2', 'living', 'park'],
     ('Imprevistos de viagem: em 10 minutos você pede reembolso e compensação com educação', 'No saguão, o homem e a menina reclamam de um atraso.'), ('Mais viagem', 'Próximo: Holidays and Traditions'),
@@ -94,7 +162,7 @@ EPS.append(ht(82239, 'Holidays and Traditions', "falar de tradições: we always
      ('What do they light?', 'O que acendem?', [('🕯️', 'Candles'), ('🔥', 'A fire'), ('💡', 'Lamps')], 0, 3, 'Diz: “light candles.”')],
     [('📅', 'Every year', 'Todo ano', 'frequência', 'Every year we sing.', 'Todo ano cantamos.'), ('🧒', 'As a child', 'Quando criança', 'lembrança', 'As a child, I loved it.', 'Quando criança, eu adorava.'), ('🎅', 'Merry Christmas', 'Feliz Natal', 'desejo', 'Merry Christmas!', 'Feliz Natal!'), ('🎁', 'Open presents', 'Abrir presentes', 'costume', 'We open presents at night.', 'Abrimos presentes à noite.')]))
 
-EPS.append(ht(7082239, 'Tradições e festas', "descrever uma festa: it is held on, the night before, we celebrate by, families get together",
+EPS.append(ht2(7082239, 'Tradições e festas', "descrever uma festa: it is held on, the night before, we celebrate by, families get together",
     "descrever festas: it is held on · the night before · we celebrate by", "Hoje você aprende a descrever festas: It is held on December 24th. The night before, we cook. We celebrate by singing.",
     ('Girl', 'Boy'), ['polly', 'tommy'], 'living', ['living', 'home1', 'kitchen', 'yard', 'park2', 'street'],
     ('Tradições e festas: em 10 minutos você descreve uma festa passo a passo', 'Na sala, a menina e o menino contam como é a festa de Natal.'), ('Mais festas', 'Próximo: Busted!'),
@@ -109,7 +177,7 @@ EPS.append(ht(7082239, 'Tradições e festas', "descrever uma festa: it is held 
     [('It is ___ on December 24th.', 'Acontece em 24 de dezembro.', ['held', 'hold', 'holding'], 0, 'is **held**.'), ('The night ___, we cook.', 'Na noite anterior, cozinhamos.', ['before', 'ago', 'last'], 0, 'the night **before**.'), ('We celebrate ___ singing.', 'Comemoramos cantando.', ['by', 'for', 'to'], 0, 'celebrate **by**.'), ('Families get ___.', 'As famílias se reúnem.', ['together', 'gather', 'along'], 0, 'get **together**.')],
     [('Qual frase está certa?', ['We celebrate by singing.', 'We celebrate by to sing.', 'We celebrate for singing.'], 0, 'by + -ing.'), ('Qual está certa?', ['It is held on December 24th.', 'It holds on December 24th.', 'It is hold on December 24th.'], 0, 'is held.')],
     [['Girl', 'Our festival is held on December 24th.', 'Nossa festa acontece em 24 de dezembro.'], ['Boy', 'What do you do the night before?', 'O que vocês fazem na noite anterior?'], ['Girl', 'The night before, we cook together.', 'Na noite anterior, cozinhamos juntos.'], ['Boy', 'And during the party?', 'E durante a festa?'],
-     ['Girl', 'We celebrate by singing.', 'Comemoramos cantando.'], ['Boy', 'Does everyone take part?', 'Todos participam?'], ['Girl', 'Yes. Families get together.', 'Sim. As famílias se reúnem.'], ['Boy', 'We hand down recipes too.', 'Também passamos receitas adiante.']],
+     ['Girl', 'We celebrate by singing.', 'Comemoramos cantando.'], ['Boy', 'Does everyone take part?', 'Todos participam?'], ['Girl', 'Yes. Families get together.', 'Sim. As famílias se reúnem.'], ['Boy', 'We open a gift at midnight.', 'Abrimos um presente à meia-noite.']],
     [('When is the festival?', 'Quando é a festa?', [('📅', 'December 24th'), ('📅', 'July 4th'), ('📅', 'May 1st')], 0, 0, 'Diz: “December 24th.”'), ('What do they do the night before?', 'O que fazem na véspera?', [('🍳', 'Cook'), ('🏊', 'Swim'), ('🎮', 'Play games')], 0, 2, 'Diz: “we cook together.”'),
      ('How do they celebrate?', 'Como comemoram?', [('🎤', 'By singing'), ('🏃', 'By running'), ('📺', 'By watching TV')], 0, 4, 'Diz: “by singing.”')],
     [('👨‍👩‍👧', 'Get together', 'Reunir-se', 'encontro', 'Families get together.', 'As famílias se reúnem.'), ('📜', 'Hand down', 'Passar adiante', 'herança', 'We hand down recipes.', 'Passamos receitas adiante.'), ('🙌', 'Take part', 'Participar', 'envolvimento', 'Everyone takes part.', 'Todos participam.'), ('🥂', 'Cheers', 'Saúde', 'brindar', 'Cheers, everyone!', 'Saúde, pessoal!')]))
@@ -147,7 +215,7 @@ EPS.append(st(930052, 'Busted!', "gírias de pegar no flagra: busted, grounded, 
      ('How long is she grounded?', 'Por quanto tempo?', [('7️⃣', 'A week'), ('1️⃣', 'A day'), ('3️⃣', 'A month')], 0, 4, 'Diz: “for a week.”')],
     [('😱', 'Freak out', 'Surtar', 'reagir', 'Do not freak out.', 'Não surte.'), ('😎', 'No biggie', 'Sem problema', 'minimizar', 'No biggie.', 'Sem problema.'), ('🧊', 'Chill', 'Relaxar', 'acalmar', 'Just chill.', 'Só relaxa.'), ('🙈', 'My bad', 'Foi mal', 'pedir desculpas', 'My bad!', 'Foi mal!')]))
 
-EPS.append(st(7930052, 'Pego no flagra', "desculpas e castigo: it was not me, I swear, you are in trouble, cover story, caught red-handed",
+EPS.append(st2(7930052, 'Pego no flagra', "desculpas e castigo: it was not me, I swear, you are in trouble, cover story, caught red-handed",
     "desculpas e bronca: I swear · you are in trouble · caught red-handed", "Hoje você aprende a se defender e a levar bronca: It was not me. I swear! You are in trouble. You were caught red-handed.",
     ('Boy', 'Girl'), ['tommy', 'polly'], 'school', ['school', 'hall', 'yard', 'park', 'living', 'street'],
     ('Pego no flagra: em 10 minutos você dá desculpas e entende a bronca como em Stranger Things', 'Na escola, o menino tenta uma história para encobrir.'), ('Mais gírias', 'Próximo: Natural Wonders'),
@@ -200,7 +268,7 @@ EPS.append(nw(82241, 'Natural Wonders', "falar de maravilhas naturais com superl
      ('What must they do?', 'O que devem fazer?', [('🛡️', 'Protect it'), ('🗑️', 'Leave trash'), ('🏃', 'Run away')], 0, 7, 'Diz: “protect it.”')],
     [('😍', 'Breathtaking', 'De tirar o fôlego', 'elogiar', 'It is breathtaking.', 'É de tirar o fôlego.'), ('👀', 'Never seen', 'Nunca vi', 'espanto', 'I have never seen anything like it.', 'Nunca vi nada igual.'), ('🌄', 'What a view', 'Que vista', 'admirar', 'What a view!', 'Que vista!'), ('🛡️', 'Protect', 'Proteger', 'cuidar', 'We must protect nature.', 'Temos de proteger a natureza.')]))
 
-EPS.append(nw(7082241, 'Maravilhas naturais', "comparar maravilhas naturais: bigger than, as tall as, not as old as, much deeper",
+EPS.append(nw2(7082241, 'Maravilhas naturais', "comparar maravilhas naturais: bigger than, as tall as, not as old as, much deeper",
     "comparar lugares: bigger than · as tall as · not as old as · much deeper", "Hoje você aprende a comparar: The canyon is bigger than the lake. The cliff is as tall as a tower. It is much deeper.",
     ('Girl', 'Boy'), ['polly', 'tommy'], 'park', ['park', 'park2', 'lake', 'pier', 'yard', 'street'],
     ('Maravilhas naturais: em 10 minutos você compara lugares incríveis como o Grand Canyon', 'No parque, a menina e o menino comparam o cânion com outros lugares.'), ('Mais natureza', 'Próximo: Time Zones'),
@@ -253,7 +321,7 @@ EPS.append(tz(82242, 'Time Zones', "lidar com fusos horários: what time is it i
      ('How does their team work?', 'Como a equipe deles trabalha?', [('⏰', 'Around the clock'), ('😴', 'Only at night'), ('🏖️', 'On holiday')], 0, 6, 'Diz: “around the clock.”')],
     [('🌐', 'Time difference', 'Diferença de horário', 'comparar', 'The time difference is big.', 'A diferença de horário é grande.'), ('🌙', 'Late there', 'Tarde lá', 'situar', 'It is late there.', 'Lá é tarde.'), ('⏰', 'Around the clock', 'O dia todo', 'tempo contínuo', 'We work around the clock.', 'Trabalhamos o dia todo.'), ('🕐', 'On the dot', 'Em ponto', 'precisão', 'Call me at nine on the dot.', 'Ligue-me às nove em ponto.')]))
 
-EPS.append(tz(7082242, 'Fusos horários', "ajustar e agendar entre fusos: jet lag, can we schedule, does it work in your time zone, let us adjust",
+EPS.append(tz2(7082242, 'Fusos horários', "ajustar e agendar entre fusos: jet lag, can we schedule, does it work in your time zone, let us adjust",
     "agendar entre fusos: can we schedule · does it work in your time zone · jet lag", "Hoje você aprende a agendar entre fusos: Can we schedule a call? Does ten work in your time zone? I have jet lag.",
     ('Man', 'Girl'), ['tom', 'polly'], 'cafe2', ['cafe2', 'office', 'hall', 'lobby1', 'living', 'street'],
     ('Fusos horários: em 10 minutos você agenda uma ligação e fala do jet lag', 'No café, o homem e a menina marcam uma ligação entre países.'), ('Mais episódios', 'Próximo: novo tema'),

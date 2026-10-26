@@ -18,6 +18,13 @@ EM_VERBS = [('write', '✍️', 'escrever', 'I am writing about the invoice.', '
             ('attach', '📎', 'anexar', 'Please find the file attached.', 'Please find the file attach.', 'I attached.', 'Anexei.', 'file **attached**.'),
             ('follow', '📬', 'dar seguimento', 'I am following up on my email.', 'I am following up of my email.', 'I followed.', 'Segui.', 'follow up **on**.')]
 
+def em2(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'Sleepless in Seattle', scenes, cover, teaser, rule, fm, EM2_VOCAB, EM2_LAB, EM2_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
+EM2_VOCAB = [('⏰', 'deadline', 'prazo', 'Soa como “DÉD-láin”.'), ('📅', 'meeting', 'reunião', 'Soa como “MI-ting”.'), ('📝', 'draft', 'rascunho', 'Soa como “DRÉFT”.'), ('✅', 'confirm', 'confirmar', 'Soa como “kon-FÂRM”.'), ('❗', 'urgent', 'urgente', 'Soa como “Â-djent”.'), ('🔔', 'reminder', 'lembrete', 'Soa como “ri-MÁIN-der”.')]
+EM2_LAB = dict(short='em2', title='Laboratório de sons: deadline, confirm e urgent', pt='ea soa é em deadline; o é fraco em confirm; ur soa â.', tip='Em urgent, o ur soa â.', words=[('deadline', 'DÉD-láin', 'prazo', 'ea = é', 'headline', 'HÉD-láin'), ('confirm', 'kon-FÂRM', 'confirmar', 'o fraco', 'conform', 'kon-FÓRM'), ('urgent', 'Â-djent', 'urgente', 'ur = â', 'argent', 'AR-djent')])
+EM2_VERBS = [('send', '📤', 'enviar', 'I will send it today.', 'I will sent it today.', 'I sent.', 'Enviei.', 'will **send**.'), ('check', '🔍', 'conferir', 'Please check the file.', 'Please checking the file.', 'I checked.', 'Conferi.', 'please **check**.'), ('confirm', '✅', 'confirmar', 'Could you confirm the time?', 'Could you confirming the time?', 'I confirmed.', 'Confirmei.', 'could you **confirm**.'), ('forward', '↪️', 'encaminhar', 'I will forward the email.', 'I will forwarding the email.', 'I forwarded.', 'Encaminhei.', 'will **forward**.')]
+
 def em(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return mk(n, title, sub, pat, why, names, ids, rs, '84, Charing Cross Road', scenes, cover, teaser, rule, fm, EM_VOCAB, EM_LAB, EM_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
@@ -41,7 +48,7 @@ EPS.append(em(82221, 'Email Etiquette', "e-mail formal e informal: Dear Mr Smith
      ('How does she end a formal email?', 'Como termina um formal?', [('✍️', 'Best regards'), ('🥂', 'Cheers'), ('👋', 'Bye')], 0, 6, 'Diz: “Best regards.”')],
     [('🎩', 'Dear Sir or Madam', 'Prezados senhores', 'abertura formal', 'Dear Sir or Madam,', 'Prezados senhores,'), ('🥂', 'Cheers', 'Valeu', 'despedida informal', 'Cheers, Tom', 'Valeu, Tom'), ('⏰', 'Speak soon', 'Falamos em breve', 'despedida', 'Speak soon.', 'Falamos em breve.'), ('🙏', 'Many thanks', 'Muito obrigado', 'agradecer', 'Many thanks.', 'Muito obrigado.')]))
 
-EPS.append(em(7082221, 'E-mail profissional', "e-mail profissional: subject line, please find attached, I am following up, as discussed",
+EPS.append(em2(7082221, 'E-mail profissional', "e-mail profissional: subject line, please find attached, I am following up, as discussed",
     "assunto e anexo: the subject is · please find attached · I am following up · as discussed", "Hoje você aprende a organizar o e-mail: The subject is the invoice. Please find it attached. I am following up. As discussed, I will reply today.",
     ('Man', 'Girl'), ['tom', 'polly'], 'office', ['office', 'hall', 'cafe2', 'lobby1', 'living', 'street'],
     ('E-mail profissional: em 10 minutos você escreve assunto, anexo e cobrança educada', 'No escritório, o homem e a menina preparam um e-mail com anexo.'), ('Mais e-mail', 'Próximo: Freelance Life'),
@@ -71,6 +78,13 @@ FL_VERBS = [('work', '💻', 'trabalhar', 'I work for myself.', 'I work to mysel
             ('earn', '💰', 'ganhar', 'I earn less in winter.', 'I earn less at winter.', 'I earned.', 'Ganhei.', 'in **winter**.'),
             ('depend', '🎲', 'depender', 'It depends on my clients.', 'It depends of my clients.', 'It depended.', 'Dependeu.', 'depends **on**.')]
 
+FL2_VOCAB = [('🕊️', 'freedom', 'liberdade', 'Soa como “FRI-dom”.'), ('😰', 'stress', 'estresse', 'Soa como “STRÉS”.'), ('🏖️', 'holiday', 'férias', 'Soa como “HÓ-li-dêi”.'), ('⚠️', 'risky', 'arriscado', 'Soa como “RÍS-ki”.'), ('🐷', 'savings', 'economias', 'Soa como “SÊI-vingz”.'), ('⚖️', 'balance', 'equilíbrio', 'Soa como “BÉ-lans”.')]
+FL2_LAB = dict(short='fl2', title='Laboratório de sons: freedom, stress e holiday', pt='ee soa i; ss soa s; ay soa êi.', tip='Em holiday, o ay soa êi.', words=[('freedom', 'FRI-dom', 'liberdade', 'ee = i', 'wisdom', 'UÍZ-dom'), ('stress', 'STRÉS', 'estresse', 'ss = s', 'stretch', 'STRÉTCH'), ('holiday', 'HÓ-li-dêi', 'férias', 'ay = êi', 'holy day', 'HÔU-li DÊI')])
+FL2_VERBS = [('afford', '💸', 'poder pagar', 'I can afford a holiday.', 'I can to afford a holiday.', 'I afforded.', 'Paguei.', 'can **afford**.'), ('enjoy', '😊', 'curtir', 'I enjoy my freedom.', 'I enjoy of my freedom.', 'I enjoyed.', 'Curti.', 'enjoy **my**.'), ('save', '🐷', 'economizar', 'I save money every month.', 'I save money in every month.', 'I saved.', 'Economizei.', 'save **money**.'), ('choose', '🤔', 'escolher', 'I choose to work alone.', 'I choose work alone.', 'I chose.', 'Escolhi.', 'choose **to** work.')]
+
+def fl2(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'Jerry Maguire', scenes, cover, teaser, rule, fm, FL2_VOCAB, FL2_LAB, FL2_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
 def fl(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return mk(n, title, sub, pat, why, names, ids, rs, 'Walden: Working for Yourself', scenes, cover, teaser, rule, fm, FL_VOCAB, FL_LAB, FL_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
@@ -94,7 +108,7 @@ EPS.append(fl(82224, 'Freelance Life', "falar de trabalho autônomo: I work free
      ('What varies?', 'O que varia?', [('💰', 'Her income'), ('🌡️', 'The weather'), ('🚌', 'The bus')], 0, 7, 'Diz: “My income varies.”')],
     [('🕐', 'Be your own boss', 'Ser seu próprio chefe', 'liberdade', 'I am my own boss.', 'Sou meu próprio chefe.'), ('📞', 'Get in touch', 'Entrar em contato', 'clientes', 'Get in touch.', 'Entre em contato.'), ('📅', 'Meet a deadline', 'Cumprir um prazo', 'trabalho', 'I meet every deadline.', 'Cumpro todo prazo.'), ('🏠', 'Work from home', 'Trabalhar de casa', 'rotina', 'I work from home.', 'Trabalho de casa.')]))
 
-EPS.append(fl(7082224, 'Vida de freelancer', "vantagens e desvantagens do trabalho autônomo: the good thing is, the downside is, it depends on",
+EPS.append(fl2(7082224, 'Vida de freelancer', "vantagens e desvantagens do trabalho autônomo: the good thing is, the downside is, it depends on",
     "prós e contras: the good thing is · the downside is · it depends on · I can afford", "Hoje você aprende a pesar prós e contras: The good thing is freedom. The downside is stress. It depends on the month. I can afford a holiday.",
     ('Man', 'Woman'), ['tom', 'polly'], 'lobby1', ['lobby1', 'office', 'cafe2', 'hall', 'living', 'park'],
     ('Vida de freelancer: em 10 minutos você fala dos prós e contras de trabalhar por conta própria', 'No saguão, o homem e a mulher pesam vantagens e desvantagens.'), ('Mais trabalho', 'Próximo: Resigning'),
@@ -124,6 +138,13 @@ RS_VERBS = [('resign', '📄', 'demitir-se', 'I would like to resign.', 'I would
             ('hand', '🔁', 'passar', 'I will hand over my tasks.', 'I will hand my tasks over to.', 'I handed.', 'Passei.', 'hand **over**.'),
             ('thank', '🙏', 'agradecer', 'I want to thank you.', 'I want thank you.', 'I thanked.', 'Agradeci.', 'want **to** thank.')]
 
+RS2_VOCAB = [('👥', 'colleague', 'colega', 'Soa como “KÓ-lig”.'), ('👋', 'farewell', 'despedida', 'Soa como “fér-UÉL”.'), ('🍀', 'chance', 'chance', 'Soa como “TCHÉNS”.'), ('🔮', 'future', 'futuro', 'Soa como “FIU-tcher”.'), ('💭', 'memory', 'lembrança', 'Soa como “MÉ-mo-ri”.'), ('📈', 'career', 'carreira', 'Soa como “ka-RIR”.')]
+RS2_LAB = dict(short='rs2', title='Laboratório de sons: colleague, farewell e career', pt='gue final é mudo; ar soa ér; ee soa i.', tip='Em colleague, o gue final é mudo.', words=[('colleague', 'KÓ-lig', 'colega', 'gue mudo', 'college', 'KÓ-lij'), ('farewell', 'fér-UÉL', 'despedida', 'ar = ér', 'fair well', 'FÉR UÉL'), ('career', 'ka-RIR', 'carreira', 'ee = ir', 'carrier', 'KÉ-ri-er')])
+RS2_VERBS = [('decide', '🤔', 'decidir', 'I have decided to leave.', 'I have decided leave.', 'I decided.', 'Decidi.', 'decided **to**.'), ('leave', '🚪', 'sair', 'My last day is when I leave.', 'My last day is when I leaving.', 'I left.', 'Saí.', 'when I **leave**.'), ('keep', '📱', 'manter', 'Let us keep in touch.', 'Let us keeping in touch.', 'I kept.', 'Mantive.', 'let us **keep**.'), ('wish', '🍀', 'desejar', 'I wish you luck.', 'I wish you to luck.', 'I wished.', 'Desejei.', 'wish **you** luck.')]
+
+def rs_2(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'Goodbye, Mr. Chips', scenes, cover, teaser, rule, fm, RS2_VOCAB, RS2_LAB, RS2_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
 def rs_(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return mk(n, title, sub, pat, why, names, ids, rs, 'Bartleby: The Resignation', scenes, cover, teaser, rule, fm, RS_VOCAB, RS_LAB, RS_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
@@ -147,7 +168,7 @@ EPS.append(rs_(82225, 'Resigning', "pedir demissão com perguntas indiretas e ta
      ('Where is HR?', 'Onde fica o RH?', [('2️⃣', 'Second floor'), ('1️⃣', 'First floor'), ('3️⃣', 'Third floor')], 0, 5, 'Diz: “Second floor.”')],
     [('🙏', 'Would it be possible', 'Seria possível', 'pedir', 'Would it be possible to leave early?', 'Seria possível sair mais cedo?'), ('🧐', 'I wonder if', 'Fico me perguntando se', 'suavizar', 'I wonder if it is okay.', 'Fico me perguntando se está bem.'), ('🏷️', "Don't you?", 'Não é?', 'confirmar', "You understand, don't you?", 'Você entende, não é?'), ('🤝', 'No hard feelings', 'Sem ressentimentos', 'despedida', 'No hard feelings.', 'Sem ressentimentos.')]))
 
-EPS.append(rs_(7082225, 'Pedir demissão', "pedir demissão com elegância: I am grateful for, my last day is, I will hand over, it has been a pleasure",
+EPS.append(rs_2(7082225, 'Pedir demissão', "pedir demissão com elegância: I am grateful for, my last day is, I will hand over, it has been a pleasure",
     "despedida gentil: I am grateful for · my last day is · I will hand over · it has been a pleasure", "Hoje você aprende a se despedir bem: I am grateful for the chance. My last day is Friday. I will hand over my tasks. It has been a pleasure.",
     ('Man', 'Girl'), ['tom', 'polly'], 'office', ['office', 'hall', 'lobby1', 'cafe2', 'living', 'street'],
     ('Pedir demissão: em 10 minutos você se despede do trabalho com elegância', 'No escritório, o homem e a menina combinam a saída e a passagem de tarefas.'), ('Mais trabalho', 'Próximo: A Blessing in Disguise'),
@@ -177,6 +198,13 @@ BL_VERBS = [('look', '🌞', 'olhar', 'Look on the bright side.', 'Look at the b
             ('cheer', '😄', 'animar', 'Cheer up!', 'Cheer on!', 'I cheered.', 'Animei.', 'cheer **up**.'),
             ('miss', '😅', 'perder', 'I almost missed the bus.', 'I almost missed to the bus.', 'I missed.', 'Perdi.', 'missed **the** bus.')]
 
+BL2_VOCAB = [('🛟', 'safe', 'seguro', 'Soa como “SÊIF”.'), ('🔍', 'reason', 'motivo', 'Soa como “RI-zon”.'), ('🍫', 'chocolate', 'chocolate', 'Soa como “TCHÓK-let”.'), ('😮', 'worse', 'pior', 'Soa como “UÂRS”.'), ('🌅', 'tomorrow', 'amanhã', 'Soa como “tu-MÓ-rou”.'), ('🤗', 'friend', 'amigo', 'Soa como “FRÉND”.')]
+BL2_LAB = dict(short='bl2', title='Laboratório de sons: safe, reason e tomorrow', pt='a soa êi em safe; ea soa i; s soa z em reason.', tip='Em safe, o a soa êi.', words=[('safe', 'SÊIF', 'seguro', 'a = êi', 'sap', 'SÉP'), ('reason', 'RI-zon', 'motivo', 'ea = i', 'raisin', 'RÊI-zin'), ('tomorrow', 'tu-MÓ-rou', 'amanhã', 'ow = ou', 'tomato', 'tu-MÊI-tou')])
+BL2_VERBS = [('hang', '💪', 'aguentar', 'Hang in there.', 'Hang on there.', 'I hung.', 'Aguentei.', 'hang **in**.'), ('happen', '🎲', 'acontecer', 'Things happen for a reason.', 'Things happens for a reason.', 'It happened.', 'Aconteceu.', 'things **happen**.'), ('break', '🔧', 'quebrar', 'My car broke down.', 'My car broken down.', 'It broke.', 'Quebrou.', '**broke** down.'), ('hope', '🙏', 'esperar', 'I hope you feel better.', 'I hope you to feel better.', 'I hoped.', 'Esperei.', 'hope **you** feel.')]
+
+def bl2(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'A Charlie Brown Christmas', scenes, cover, teaser, rule, fm, BL2_VOCAB, BL2_LAB, BL2_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
 def bl(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return mk(n, title, sub, pat, why, names, ids, rs, 'Forrest Gump', scenes, cover, teaser, rule, fm, BL_VOCAB, BL_LAB, BL_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
@@ -200,7 +228,7 @@ EPS.append(bl(930049, 'A Blessing in Disguise', "idioms do lado bom: a blessing 
      ('How does he feel now?', 'Como se sente agora?', [('😊', 'Better'), ('😢', 'Worse'), ('😴', 'Sleepy')], 0, 7, 'Diz: “I feel better.”')],
     [('😮', 'It could be worse', 'Podia ser pior', 'consolar', 'It could be worse.', 'Podia ser pior.'), ('😄', 'Cheer up', 'Anime-se', 'animar', 'Cheer up!', 'Anime-se!'), ('📈', 'Things will get better', 'As coisas vão melhorar', 'esperança', 'Things will get better.', 'As coisas vão melhorar.'), ('🍀', 'Lucky break', 'Sorte inesperada', 'sorte', 'It was a lucky break.', 'Foi uma sorte inesperada.')]))
 
-EPS.append(bl(7930049, 'O lado bom', "consolar e animar alguém: at least, it could be worse, things happen for a reason, cheer up",
+EPS.append(bl2(7930049, 'O lado bom', "consolar e animar alguém: at least, it could be worse, things happen for a reason, cheer up",
     "consolar: at least · things happen for a reason · it could have been worse · hang in there", "Hoje você aprende a consolar: At least you are safe. Things happen for a reason. It could have been worse. Hang in there!",
     ('Man', 'Girl'), ['tom', 'polly'], 'living', ['living', 'cafe2', 'park', 'hall', 'street', 'office'],
     ('O lado bom: em 10 minutos você consola e anima quem está mal', 'Na sala, o homem e a menina falam de Forrest Gump e animam um ao outro.'), ('Mais idioms', 'Próximo: Office Conflicts'),
@@ -230,6 +258,13 @@ OC_VERBS = [('disagree', '🙅', 'discordar', 'I disagree with you.', 'I am disa
             ('understand', '🤝', 'entender', 'I understand your point.', 'I understand to your point.', 'I understood.', 'Entendi.', 'understand **your** point.'),
             ('find', '⚖️', 'achar', 'Let us find a compromise.', 'Let us to find a compromise.', 'We found.', 'Achamos.', 'let us **find**.')]
 
+OC2_VOCAB = [('😞', 'upset', 'chateado', 'Soa como “âp-SÉT”.'), ('😠', 'rude', 'rude', 'Soa como “RUD”.'), ('📣', 'shout', 'gritar', 'Soa como “SHÁUT”.'), ('🙏', 'sorry', 'desculpe', 'Soa como “SÓ-ri”.'), ('😴', 'tired', 'cansado', 'Soa como “TÁI-erd”.'), ('🍽️', 'lunch', 'almoço', 'Soa como “LÂNCH”.')]
+OC2_LAB = dict(short='oc2', title='Laboratório de sons: rude, shout e lunch', pt='u soa u em rude; ou soa au; u soa â em lunch.', tip='Em lunch, o u soa â.', words=[('rude', 'RUD', 'rude', 'u = u', 'road', 'RÔUD'), ('shout', 'SHÁUT', 'gritar', 'ou = au', 'shot', 'SHÓT'), ('lunch', 'LÂNCH', 'almoço', 'u = â', 'launch', 'LÓNCH')])
+OC2_VERBS = [('shout', '📣', 'gritar', 'I should not shout.', 'I should not to shout.', 'I shouted.', 'Gritei.', 'should not **shout**.'), ('mean', '💬', 'querer dizer', 'What do you mean?', 'What you mean?', 'I meant.', 'Quis dizer.', 'what **do** you mean.'), ('talk', '🗣️', 'conversar', 'Can we talk over lunch?', 'Can we to talk over lunch?', 'We talked.', 'Conversamos.', 'can we **talk**.'), ('stay', '😌', 'ficar', 'Let us stay calm.', 'Let us to stay calm.', 'I stayed.', 'Fiquei.', 'let us **stay**.')]
+
+def oc2(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'Much Ado About Nothing', scenes, cover, teaser, rule, fm, OC2_VOCAB, OC2_LAB, OC2_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
 def oc(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return mk(n, title, sub, pat, why, names, ids, rs, 'The Office: Dealing with Michael', scenes, cover, teaser, rule, fm, OC_VOCAB, OC_LAB, OC_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
 
@@ -253,7 +288,7 @@ EPS.append(oc(82227, 'Office Conflicts', "lidar com colegas difíceis com firmez
      ('What does she suggest?', 'O que sugere?', [('⚖️', 'A compromise'), ('🚪', 'Leaving'), ('🏆', 'A prize')], 0, 6, 'Diz: “find a compromise.”')],
     [('🤝', 'With respect', 'Com respeito', 'discordar', 'With respect, I disagree.', 'Com respeito, discordo.'), ('💬', 'I would rather', 'Prefiro', 'preferir', 'I would rather talk.', 'Prefiro conversar.'), ('😌', 'Stay calm', 'Mantenha a calma', 'acalmar', 'Stay calm.', 'Mantenha a calma.'), ('🚫', 'I am afraid not', 'Receio que não', 'recusar', 'I am afraid not.', 'Receio que não.')]))
 
-EPS.append(oc(7082227, 'Colegas difíceis', "lidar com colegas difíceis: calm down, I did not mean, there was a misunderstanding, can we talk",
+EPS.append(oc2(7082227, 'Colegas difíceis', "lidar com colegas difíceis: calm down, I did not mean, there was a misunderstanding, can we talk",
     "esclarecer mal-entendidos: there was a misunderstanding · I did not mean · can we talk · let us stay calm", "Hoje você aprende a acalmar o clima: There was a misunderstanding. I did not mean to upset you. Can we talk? Let us stay calm.",
     ('Man', 'Girl'), ['tom', 'polly'], 'office', ['office', 'lobby1', 'hall', 'cafe2', 'living', 'street'],
     ('Colegas difíceis: em 10 minutos você desfaz um mal-entendido com um colega', 'No escritório, o homem e a menina conversam depois de uma discussão.'), ('Mais trabalho', 'Próximo: Planning a Trip'),

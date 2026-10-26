@@ -6,9 +6,55 @@ EPS = []
 def mk(n, title, sub, pat, why, names, ids, rs, obra, scenes, cover, teaser, rule, fm, vocab, lab, verbs, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return S(n=n, title=title, sub=sub, pattern=pat, why=why, names=names, ids=ids, rs=rs, obra=(obra, obra),
              hot=hot, gaps=gaps, traps=traps, rule=rule, fm=fm, cover=cover, vocab=vocab, lines=lines, quiz=quiz,
-             teaser=teaser, exps=exps, lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes)
+             teaser=teaser, exps=exps, fill=FILL_BY[n], lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes)
+
+
+FILL_BY = {
+ 82228: [['Which country first?', 'Qual país primeiro?'], ['France, then Egypt.', 'França, depois Egito.'], ['Do we have maps?', 'Temos mapas?'], ['Yes, two big ones.', 'Sim, dois grandes.']],
+ 7082228: [['Is the room big?', 'O quarto é grande?'], ['Yes, with a view.', 'Sim, com vista.'], ['Any discount?', 'Algum desconto?'], ['Ten percent off.', 'Dez por cento.']],
+ 82229: [['Next in line, please.', 'Próximo da fila, por favor.'], ['Sorry, I am lost.', 'Desculpe, estou perdido.'], ['Gate B is there.', 'O portão B é ali.'], ['Thank you, officer.', 'Obrigado, oficial.']],
+ 7082229: [['Do you need a visa?', 'Precisa de visto?'], ['I already have one.', 'Já tenho um.'], ['Welcome to the country.', 'Bem-vinda ao país.'], ['Thanks, have a nice day.', 'Obrigada, bom dia.']],
+ 930050: [['Any fever today?', 'Febre hoje?'], ['A little, last night.', 'Um pouco, ontem à noite.'], ['Open your mouth.', 'Abra a boca.'], ['Is it red?', 'Está vermelha?']],
+ 7930050: [['Are you still tired?', 'Ainda está cansada?'], ['A bit, but better.', 'Um pouco, mas melhor.'], ['Go home and sleep.', 'Vá para casa dormir.'], ['I will, thank you.', 'Vou, obrigada.']],
+ 82231: [['Table for two?', 'Mesa para dois?'], ['Yes, near the window.', 'Sim, perto da janela.'], ['Still or sparkling?', 'Sem gás ou com gás?'], ['Still, please.', 'Sem gás, por favor.']],
+ 7082231: [['Was everything fine?', 'Tudo bem com a comida?'], ['Delicious, thanks.', 'Deliciosa, obrigada.'], ['Any dessert today?', 'Sobremesa hoje?'], ['Not today, thanks.', 'Hoje não, obrigada.']],
+ 930051: [['Where is the gym?', 'Onde fica a academia?'], ['Down the stairs.', 'Descendo as escadas.'], ['Is it open now?', 'Está aberta agora?'], ['Until ten tonight.', 'Até as dez da noite.']],
+ 7930051: [['Water break now?', 'Pausa para água?'], ['Yes, one minute.', 'Sim, um minuto.'], ['Ready for the next set?', 'Pronto para a próxima série?'], ['Ready, coach!', 'Pronto, treinadora!']],
+}
 
 SC = ['lobby1', 'hall', 'cafe2', 'street', 'office', 'living']
+
+# ---- conteúdo próprio das continuações (obra, vocabulário, verbos e laboratório) ----
+def _own(helper_obra, vocab, lab, verbs):
+    def f(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+        return mk(n, title, sub, pat, why, names, ids, rs, helper_obra, scenes, cover, teaser, rule, fm, vocab, lab, verbs, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+    return f
+
+pt2 = _own('The Grand Budapest Hotel',
+    [('🏨', 'hotel', 'hotel', 'Soa como “rou-TÉL”.'), ('🏷️', 'price', 'preço', 'Soa como “PRAIS”.'), ('💳', 'deposit', 'sinal', 'Soa como “di-PÓ-zit”.'), ('🎁', 'discount', 'desconto', 'Soa como “DÍS-kaunt”.'), ('🥐', 'breakfast', 'café da manhã', 'Soa como “BRÉK-fast”.'), ('🧮', 'total', 'total', 'Soa como “TÔU-tal”.')],
+    dict(short='pt2_28', title='Laboratório de sons: hotel, breakfast e total', pt='h soa suave em hotel; ea soa é; o soa ôu.', tip='Em hotel, a força vai na última sílaba.',
+         words=[('hotel', 'rou-TÉL', 'hotel', 'força no fim', 'hostel', 'RÓS-tel'), ('breakfast', 'BRÉK-fast', 'café da manhã', 'ea = é', 'break fast', 'BRÊIK fést'), ('total', 'TÔU-tal', 'total', 'o = ôu', 'tonal', 'TÔU-nal')]),
+    [('cost', '💸', 'custar', 'It costs a lot.', 'It cost a lot today.', 'It cost.', 'Custou.', 'it **costs**.'), ('afford', '👍', 'poder pagar', 'We can afford it.', 'We can to afford it.', 'We afforded.', 'Pudemos pagar.', 'can **afford**.'), ('include', '🥐', 'incluir', 'Breakfast is included.', 'Breakfast is include.', 'It included.', 'Incluiu.', 'is **included**.'), ('save', '🏦', 'economizar', 'We want to save money.', 'We want save money.', 'We saved.', 'Economizamos.', 'want **to** save.')])
+ac2 = _own('Argo',
+    [('🎫', 'ticket', 'passagem', 'Soa como “TÍ-kit”.'), ('🤝', 'friend', 'amigo', 'Soa como “FRÉND”.'), ('🏖️', 'holiday', 'férias', 'Soa como “RÓ-li-dêi”.'), ('📅', 'meeting', 'reunião', 'Soa como “MÍ-ting”.'), ('📄', 'visa', 'visto', 'Soa como “VÍ-za”.'), ('🔙', 'return', 'volta', 'Soa como “ri-TÂRN”.')],
+    dict(short='ac2_29', title='Laboratório de sons: work, week e ticket', pt='or soa âr; ee soa i longo; ck soa k.', tip='Em work, o o soa â.',
+         words=[('work', 'UÂRK', 'trabalho', 'or = âr', 'walk', 'UÓK'), ('week', 'UÍK', 'semana', 'ee = i', 'wick', 'UÍK curto'), ('ticket', 'TÍ-kit', 'passagem', 'ck = k', 'thicket', 'THÍ-kit')]),
+    [('show', '🛂', 'mostrar', 'Here, I will show my passport.', 'Here, I will showing my passport.', 'I showed.', 'Mostrei.', 'will **show**.'), ('answer', '💬', 'responder', 'I answer every question.', 'I answers every question.', 'I answered.', 'Respondi.', 'I **answer**.'), ('arrive', '🛬', 'chegar', 'I arrived this morning.', 'I arrive this morning yesterday.', 'I arrived.', 'Cheguei.', '**arrived** é passado.'), ('return', '🔙', 'voltar', 'I return on Friday.', 'I returns on Friday.', 'I returned.', 'Voltei.', 'I **return**.')])
+cc2 = _own('Catch-22',
+    [('😮‍💨', 'breath', 'fôlego', 'Soa como “BRÉTH”.'), ('😴', 'sleep', 'sono', 'Soa como “SLÍP”.'), ('🪜', 'stairs', 'escadas', 'Soa como “STÉRZ”.'), ('😫', 'tired', 'cansado', 'Soa como “TAI-erd”.'), ('👀', 'sight', 'visão', 'Soa como “SAIT”.'), ('😲', 'guard', 'guarda', 'Soa como “GÁRD”.')],
+    dict(short='cc2_30', title='Laboratório de sons: breath, sleep e sight', pt='ea soa é em breath; ee soa i; igh soa ai.', tip='Em sight, o gh é mudo.',
+         words=[('breath', 'BRÉTH', 'fôlego', 'ea = é', 'breathe', 'BRÍTH'), ('sleep', 'SLÍP', 'sono', 'ee = i', 'slip', 'SLÍP curto'), ('sight', 'SAIT', 'visão', 'gh mudo', 'sit', 'SÍT')]),
+    [('run', '🏃', 'correr', 'I ran up the stairs.', 'I runned up the stairs.', 'I ran.', 'Corri.', 'passado: **ran**.'), ('sit', '🪑', 'sentar', 'Sit down, please.', 'Sits down, please.', 'I sat.', 'Sentei.', '**Sit** down.'), ('see', '👀', 'ver', 'I caught sight of you.', 'I caught see of you.', 'I saw.', 'Vi.', 'sight **of**.'), ('need', '🙏', 'precisar', 'I need to catch up on sleep.', 'I need catch up on sleep.', 'I needed.', 'Precisei.', 'need **to**.')])
+ea2 = _own('Ratatouille',
+    [('🥜', 'nuts', 'nozes', 'Soa como “NÂTS”.'), ('🧀', 'cheese', 'queijo', 'Soa como “TCHÍZ”.'), ('🧾', 'receipt', 'recibo', 'Soa como “ri-SÍT”.'), ('💳', 'card', 'cartão', 'Soa como “KÁRD”.'), ('🪙', 'change', 'troco', 'Soa como “TCHÊINDJ”.'), ('🙏', 'tip', 'gorjeta', 'Soa como “TÍP”.')],
+    dict(short='ea2_31', title='Laboratório de sons: nuts, cheese e receipt', pt='u soa â; ch soa tch; p é mudo em receipt.', tip='Em receipt, o p é mudo.',
+         words=[('nuts', 'NÂTS', 'nozes', 'u = â', 'notes', 'NÔUTS'), ('cheese', 'TCHÍZ', 'queijo', 'ch = tch', 'chase', 'TCHÊIS'), ('receipt', 'ri-SÍT', 'recibo', 'p mudo', 'recipe', 'RÉ-si-pi')]),
+    [('split', '✂️', 'dividir a conta', 'Can we split the bill?', 'Can we to split the bill?', 'We split.', 'Dividimos.', 'can we **split**.'), ('ask', '🙋', 'pedir', 'I ask for the bill.', 'I asks for the bill.', 'I asked.', 'Pedi.', 'I **ask**.'), ('keep', '🪙', 'ficar com', 'Keep the change.', 'Keeps the change.', 'I kept.', 'Fiquei com.', '**Keep** (imperativo).'), ('share', '🤝', 'compartilhar', 'We can share a dessert.', 'We can to share a dessert.', 'We shared.', 'Compartilhamos.', 'can **share**.')])
+wk2 = _own('Million Dollar Baby',
+    [('🏢', 'gym', 'academia', 'Soa como “DJÍM”.'), ('🔁', 'set', 'série', 'Soa como “SÉT”.'), ('💦', 'sweat', 'suor', 'Soa como “SUÉT”.'), ('🧑‍🏫', 'trainer', 'treinador', 'Soa como “TRÊI-ner”.'), ('✅', 'ready', 'pronto', 'Soa como “RÉ-di”.'), ('🛑', 'stop', 'parar', 'Soa como “STÓP”.')],
+    dict(short='wk2_32', title='Laboratório de sons: sweat, trainer e set', pt='ea soa é; ai soa êi; s inicial soa s.', tip='Em sweat, o ea soa é.',
+         words=[('sweat', 'SUÉT', 'suor', 'ea = é', 'sweet', 'SUÍT'), ('trainer', 'TRÊI-ner', 'treinador', 'ai = êi', 'tenor', 'TÉ-ner'), ('set', 'SÉT', 'série', 'e = é', 'sit', 'SÍT')]),
+    [('count', '🔢', 'contar', 'Count your reps.', 'Counts your reps.', 'I counted.', 'Contei.', '**Count** (imperativo).'), ('push', '🤸', 'empurrar', 'Push harder!', 'Pushing harder!', 'I pushed.', 'Empurrei.', '**Push** (imperativo).'), ('rest', '🛌', 'descansar', 'Rest for a minute.', 'Rests for a minute.', 'I rested.', 'Descansei.', '**Rest** (imperativo).'), ('finish', '🏁', 'terminar', 'You can finish one more.', 'You can to finish one more.', 'I finished.', 'Terminei.', 'can **finish**.')])
 
 # ======================= 10 · Planning a Trip =======================
 PT_OBRA = 'Around the World in Eighty Days: The Itinerary'
@@ -44,7 +90,7 @@ EPS.append(pt(82228, 'Planning a Trip', "planejar uma viagem em detalhes: we are
      ('What will he do tonight?', 'O que ele fará hoje à noite?', [('🎫', 'Book tickets'), ('🍳', 'Cook dinner'), ('📺', 'Watch TV')], 0, 3, 'Diz: “book the tickets tonight.”')],
     [('💰', 'Budget', 'Orçamento', 'dinheiro', 'We need a small budget.', 'Precisamos de um orçamento pequeno.'), ('🛂', 'Passport', 'Passaporte', 'documento', 'I have my passport.', 'Estou com meu passaporte.'), ('🗺️', 'Itinerary', 'Roteiro', 'plano', 'The itinerary is ready.', 'O roteiro está pronto.'), ('🧳', 'Pack light', 'Levar pouca bagagem', 'mala', 'I will pack light.', 'Vou levar pouca bagagem.')]))
 
-EPS.append(pt(7082228, 'Planejar viagem', "orçamento e reservas da viagem: it costs, we can afford, I have booked, it is included",
+EPS.append(pt2(7082228, 'Planejar viagem', "orçamento e reservas da viagem: it costs, we can afford, I have booked, it is included",
     "orçamento e reserva: it costs · we can afford · I have booked · it is included", "Hoje você aprende a falar de orçamento: It costs a lot. We can afford it. I have booked the hotel. Breakfast is included.",
     ('Girl', 'Man'), ['polly', 'tom'], 'lobby1', SC,
     ('Planejar viagem: em 10 minutos você fala de custos e reservas em inglês', 'No saguão, a menina e o homem conferem o orçamento e as reservas.'), ('Mais viagem', 'Próximo: At Customs'),
@@ -98,7 +144,7 @@ EPS.append(ac(82229, 'At Customs', "passar pela alfândega: what is the purpose,
      ('Where is he staying?', 'Onde vai ficar?', [('🏨', 'At a small hotel'), ('🏠', 'At home'), ('⛺', 'In a tent')], 0, 7, 'Diz: “at a small hotel.”')],
     [('📢', 'Anything to declare', 'Algo a declarar', 'pergunta', 'Anything to declare?', 'Algo a declarar?'), ('🎯', 'The purpose of your visit', 'O motivo da visita', 'pergunta', 'What is the purpose of your visit?', 'Qual é o motivo da sua visita?'), ('🛂', 'Here you are', 'Aqui está', 'entregar', 'Here you are.', 'Aqui está.'), ('🧳', 'Open your bag', 'Abra a mala', 'pedido', 'Open your bag, please.', 'Abra sua mala, por favor.')]))
 
-EPS.append(ac(7082229, 'Na alfândega', "responder ao oficial: I am here for, I will stay, I have nothing to declare, I am visiting",
+EPS.append(ac2(7082229, 'Na alfândega', "responder ao oficial: I am here for, I will stay, I have nothing to declare, I am visiting",
     "responder ao oficial: I am here for · I will stay · I have nothing to declare · I am visiting", "Hoje você aprende a responder na alfândega: I am here for work. I will stay for a week. I have nothing to declare. I am visiting a friend.",
     ('Woman', 'Officer'), ['polly', 'tom'], 'lobby1', ['lobby1', 'hall', 'street', 'office', 'cafe2', 'living'],
     ('Na alfândega: em 10 minutos você responde ao oficial com segurança em inglês', 'No terminal, a mulher responde às perguntas do oficial.'), ('Mais viagem', 'Próximo: Catch a Cold'),
@@ -152,7 +198,7 @@ EPS.append(cc(930050, 'Catch a Cold', "collocations com catch: catch a cold, cat
      ('What should she drink?', 'O que deve beber?', [('🍵', 'Herbal tea'), ('🥤', 'Soda'), ('🍺', 'Beer')], 0, 7, 'Diz: “drink herbal tea.”')],
     [('🤧', 'Catch a cold', 'Pegar um resfriado', 'doença', 'I caught a cold.', 'Peguei um resfriado.'), ('🚌', 'Catch the bus', 'Pegar o ônibus', 'transporte', 'I caught the bus.', 'Peguei o ônibus.'), ('🔥', 'Catch fire', 'Pegar fogo', 'perigo', 'It caught fire.', 'Pegou fogo.'), ('👀', 'Catch my eye', 'Chamar minha atenção', 'atenção', 'It caught my eye.', 'Chamou minha atenção.')]))
 
-EPS.append(cc(7930050, 'Pegar um resfriado', "catch em outras frases: catch up on, catch my breath, catch sight of, you caught me",
+EPS.append(cc2(7930050, 'Pegar um resfriado', "catch em outras frases: catch up on, catch my breath, catch sight of, you caught me",
     "catch em frases: catch up on · catch my breath · catch sight of · you caught me", "Hoje você aprende mais frases com catch: catch up on sleep, catch my breath, catch sight of, you caught me.",
     ('Girl', 'Man'), ['polly', 'tom'], 'lobby1', SC,
     ('Pegar um resfriado: em 10 minutos você usa mais frases com catch em inglês', 'No saguão da clínica, a menina e o médico falam de descanso e recuperação.'), ('Mais saúde', 'Próximo: Eating Abroad'),
@@ -206,7 +252,7 @@ EPS.append(ea(82231, 'Eating Abroad', "pedir comida num país novo: could I have
      ('What will she drink?', 'O que ela vai beber?', [('💧', 'Water'), ('☕', 'Coffee'), ('🍷', 'Wine')], 0, 6, 'Diz: “some water.”')],
     [('📋', 'Could I have', 'Poderia me trazer', 'pedido', 'Could I have a menu?', 'Poderia me trazer um cardápio?'), ('👍', 'What do you recommend', 'O que recomenda', 'pergunta', 'What do you recommend?', 'O que você recomenda?'), ('🌶️', 'Is it spicy', 'É picante', 'pergunta', 'Is it spicy?', 'É picante?'), ('🍕', 'Coming right up', 'Já saindo', 'garçom', 'Coming right up.', 'Já saindo.')]))
 
-EPS.append(ea(7082231, 'Pedir comida fora', "alergia e conta: I am allergic to, without, can we have the bill, is service included",
+EPS.append(ea2(7082231, 'Pedir comida fora', "alergia e conta: I am allergic to, without, can we have the bill, is service included",
     "alergias e conta: I am allergic to · without · can we have the bill · is service included", "Hoje você aprende a falar de alergia e pagar: I am allergic to nuts. Without cheese, please. Can we have the bill? Is service included?",
     ('Girl', 'Waiter'), ['polly', 'tom'], 'diner', ['diner', 'street', 'cafe2', 'hall', 'lobby1', 'living'],
     ('Pedir comida fora: em 10 minutos você fala de alergias e da conta em inglês', 'Na lanchonete, a menina avisa da alergia e pede a conta.'), ('Mais viagem', 'Próximo: Work On, Work Out'),
@@ -260,7 +306,7 @@ EPS.append(wk(930051, 'Work On, Work Out', "phrasal verbs com work: work out, wo
      ('What does he want to work off?', 'O que ele quer queimar?', [('🍕', 'Pizza'), ('🍰', 'Cake'), ('🍟', 'Fries')], 0, 4, 'Diz: “work off this pizza.”')],
     [('🏋️', 'Work out', 'Malhar', 'treino', 'I work out at six.', 'Eu malho às seis.'), ('🦵', 'Work on', 'Trabalhar em', 'foco', 'I work on my legs.', 'Trabalho minhas pernas.'), ('💦', 'Work up a sweat', 'Suar bastante', 'esforço', 'It works up a sweat.', 'Faz suar bastante.'), ('📝', 'Work out a plan', 'Montar um plano', 'plano', 'Let us work out a plan.', 'Vamos montar um plano.')]))
 
-EPS.append(wk(7930051, 'Malhar e melhorar', "treino na academia: warm up, how many reps, one more, keep going",
+EPS.append(wk2(7930051, 'Malhar e melhorar', "treino na academia: warm up, how many reps, one more, keep going",
     "treino: warm up · how many reps · one more · keep going", "Hoje você aprende falas de treino: Warm up first. How many reps? One more! Keep going!",
     ('Boy', 'Woman'), ['tommy', 'polly'], 'lobby1', SC,
     ('Malhar e melhorar: em 10 minutos você incentiva e treina em inglês', 'Na academia, o menino e a treinadora fazem um treino puxado.'), ('Mais treino', 'Próximo: Travel Problems'),

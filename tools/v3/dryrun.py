@@ -48,3 +48,13 @@ for a, b in zip(built_all, built_all[1:]):
         if com:
             rep += 1; print('REPETIDO entre', a['n'], 'e', b['n'], k, sorted(com))
 print('repetições entre episódios vizinhos:', rep)
+
+# --- a segunda cena ("Na conversa de verdade") não pode usar as 4 falas de enchimento padrão ---
+FILLS = {'Good.', 'Coffee?', 'Please.', 'Here.'}
+fl = 0
+for b in built_all:
+    for f in b['fr']:
+        if f['k'] == 'pgscene' and f.get('title') == 'Na conversa de verdade':
+            if sum(1 for l in f['lines'] if l[1] in FILLS) >= 2:
+                fl += 1; print('ENCHIMENTO na segunda cena de', b['n'], '- passe fill=[[en, pt], ...] com 4 falas próprias')
+print('episódios com falas de enchimento:', fl)
