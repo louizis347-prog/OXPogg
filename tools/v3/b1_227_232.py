@@ -1,7 +1,9 @@
 # B1 · episódios 227–232: omitir pronome relativo, collocations com pay, however/nevertheless.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 def ep227(n, title, sub, why, names, ids, rs, scenes, teaser, cover, pat):
     return S(

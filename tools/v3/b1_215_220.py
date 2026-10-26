@@ -1,7 +1,9 @@
 # B1 · episódios 215–220: verbos que reportam, recados, pedir que repita.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82139, title='Reporting Verbs', sub="verbos que reportam com -ing: admitted, denied, suggested e apologised for (admitted, denied, suggested, promised, warned, refused)",

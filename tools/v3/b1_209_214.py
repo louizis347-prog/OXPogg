@@ -1,7 +1,9 @@
 # B1 · episódios 209–214: perguntas reportadas, say × tell, surpresa.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82134, title='She Asked Me If…', sub="reportar perguntas sim/não: asked me if, wondered whether e wanted to know if (asked, wondered, whether, orphan, curious, answered)",

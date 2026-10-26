@@ -1,7 +1,9 @@
 # B1 · episódios 203–208: passiva em manuais, discurso indireto, idioms de esforço.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82129, title='Passive in Instructions', sub="ler instruções na passiva: must be attached, should be unplugged, can be tightened e is included (attached, batteries, unplugged, tightened, assembled, instructions)",

@@ -1,7 +1,9 @@
 # B1 · episódios 197–202: have something done, exame de vista, gírias de sair.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82127, title='Have Something Done', sub="mandar fazer um serviço: have my suit made, have it repaired, have my hair cut e have my nails done (tailor, repaired, haircut, nails, measured, delivered)",

@@ -1,7 +1,9 @@
 # B1 · episódios 179–184: conselho no passado, revisão de modais, presente passivo.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82118, title='Advice in the Past', sub="conselho sobre o que passou: should have, should not have, ought to have e could have (asked, taxi, lied, stayed, phoned, wiser)",

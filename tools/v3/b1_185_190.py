@@ -1,7 +1,9 @@
 # B1 · episódios 185–190: passado passivo, collocations com give, invenções.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82121, title='Who Built It?', sub="passado passivo: was designed, was built, was finished e by + agente (designed, architect, employed, palace, marble, finished)",

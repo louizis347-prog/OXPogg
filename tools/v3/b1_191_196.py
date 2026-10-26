@@ -1,7 +1,9 @@
 # B1 · episódios 191–196: passiva com agente, phrasal verbs com let, passivo futuro.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82123, title='Passive with Agent', sub="quem fez, na passiva: was written by, was painted by, was composed by e was directed by (written, broken, recommended, artist, sky, famous)",

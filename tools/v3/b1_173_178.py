@@ -1,7 +1,9 @@
 # B1 · episódios 173–178: be able to, adjetivos de personalidade, probabilidade com modais.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82115, title='Be Able To', sub="capacidade em vários tempos: am able to, was able to, will be able to e have been able to (able, attend, lift, train, stairs, round)",

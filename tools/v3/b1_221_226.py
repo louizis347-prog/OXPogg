@@ -1,7 +1,9 @@
 # B1 · episódios 221–226: phrasal verbs com pass, relativas, conectores de contraste.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=930031, title='Pass It On, Pass Out', sub="phrasal verbs com pass: pass on, pass out, pass round e pass up (paramedic, bedside manner, discharge, pulse, faint, visiting hours)",
