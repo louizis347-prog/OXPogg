@@ -3,10 +3,24 @@ from v3.b1h import *
 
 EPS = []
 
+
+FILLS = {
+ 82236: [['The gate is closed.', 'O portão está fechado.'], ['Try the next desk.', 'Tente o próximo balcão.'], ['Where is it?', 'Onde fica?'], ['Past the shops, on the left.', 'Depois das lojas, à esquerda.']],
+ 7082236: [['Please sit down, sir.', 'Sente-se, por favor, senhor.'], ['I will wait in the lounge.', 'Vou esperar na sala de espera.'], ['Here is your voucher.', 'Aqui está o seu voucher.'], ['Finally, some good news.', 'Finalmente, uma boa notícia.']],
+ 82239: [['The tree looks lovely.', 'A árvore está linda.'], ['Thank you. We worked all day.', 'Obrigada. Trabalhamos o dia todo.'], ['Is it time for dinner?', 'Já é hora do jantar?'], ['Almost. Please set the table.', 'Quase. Ponha a mesa, por favor.']],
+ 7082239: [['Who sings the loudest?', 'Quem canta mais alto?'], ['My uncle, always.', 'Meu tio, sempre.'], ['Save me a seat at the table.', 'Guarde-me um lugar à mesa.'], ['Of course. Come here.', 'Claro. Venha cá.']],
+ 930052: [['Shh, someone is coming.', 'Psiu, vem alguém.'], ['Quick, hide behind the door.', 'Rápido, esconda-se atrás da porta.'], ['Was that the teacher?', 'Era o professor?'], ['No, just the wind.', 'Não, só o vento.']],
+ 7930052: [['Who told you that?', 'Quem lhe disse isso?'], ['Nobody. I just guessed.', 'Ninguém. Só adivinhei.'], ['Tell the truth next time.', 'Diga a verdade da próxima vez.'], ['Okay. I promise.', 'Certo. Prometo.']],
+ 82241: [['Be careful near the edge.', 'Cuidado perto da beirada.'], ['Do not worry. I am holding the rail.', 'Não se preocupe. Estou segurando o corrimão.'], ['Take a photo of me here.', 'Tire uma foto minha aqui.'], ['Smile! One, two, three.', 'Sorria! Um, dois, três.']],
+ 7082241: [['Which one is warmer?', 'Qual é mais quente?'], ['The valley, probably.', 'O vale, provavelmente.'], ['Let us read the sign.', 'Vamos ler a placa.'], ['It says the river is longer.', 'Diz que o rio é mais longo.']],
+ 82242: [['Is it morning there?', 'Lá é de manhã?'], ['Yes, just after sunrise.', 'Sim, logo depois do amanhecer.'], ['Check the clock on the wall.', 'Veja o relógio na parede.'], ['It says half past three.', 'Marca três e meia.']],
+ 7082242: [['Did you sleep well?', 'Você dormiu bem?'], ['Only four hours.', 'Só quatro horas.'], ['Set a reminder for the call.', 'Programe um lembrete para a ligação.'], ['Done. Now drink some water.', 'Pronto. Agora beba água.']],
+}
+
 def mk(n, title, sub, pat, why, names, ids, rs, obra, scenes, cover, teaser, rule, fm, vocab, lab, verbs, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return S(n=n, title=title, sub=sub, pattern=pat, why=why, names=names, ids=ids, rs=rs, obra=(obra, obra),
              hot=hot, gaps=gaps, traps=traps, rule=rule, fm=fm, cover=cover, vocab=vocab, lines=lines, quiz=quiz,
-             teaser=teaser, exps=exps, lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes)
+             teaser=teaser, exps=exps, lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes, fill=FILLS[n])
 
 # ---------- imprevistos de viagem ----------
 TP_VOCAB = [('❌', 'canceled', 'cancelado', 'Soa como “KÉN-seld”.'), ('🔗', 'connection', 'conexão', 'Soa como “ko-NÉK-shon”.'), ('🔁', 'rebook', 'remarcar', 'Soa como “ri-BÚK”.'),

@@ -3,10 +3,24 @@ from v3.b1h import *
 
 EPS = []
 
+FILLS = {
+82221: [['Is it too formal?', 'Será que está formal demais?'], ['No, it suits a stranger.', 'Não, serve para um desconhecido.'], ['And the last line?', 'E a última linha?'], ['Best regards, then my name.', 'Atenciosamente, e depois meu nome.']],
+7082221: [['Did you set a deadline?', 'Você definiu um prazo?'], ['Yes, next Tuesday.', 'Sim, na próxima terça.'], ['Is it urgent?', 'É urgente?'], ['A little. Add a reminder.', 'Um pouco. Coloque um lembrete.']],
+82224: [['Do you miss an office?', 'Sente falta de um escritório?'], ['Not really. I like my desk.', 'Na verdade não. Gosto da minha mesa.'], ['Is it lonely?', 'É solitário?'], ['Sometimes, but I am free.', 'Às vezes, mas sou livre.']],
+7082224: [['Is the balance hard?', 'O equilíbrio é difícil?'], ['A bit, but I save money.', 'Um pouco, mas economizo.'], ['Would you go back?', 'Você voltaria?'], ['No. I choose freedom.', 'Não. Escolho a liberdade.']],
+82225: [['Will your boss be surprised?', 'Seu chefe vai se surpreender?'], ['Maybe. He is busy, isn\'t he?', 'Talvez. Ele é ocupado, não é?'], ['Do you know where he is?', 'Você sabe onde ele está?'], ['In his office, I think.', 'No escritório dele, acho.']],
+7082225: [['Will you miss your colleagues?', 'Vai sentir falta dos colegas?'], ['Yes, very much.', 'Sim, muito.'], ['What is next for your career?', 'Qual é o próximo passo da carreira?'], ['A new chance, a new city.', 'Uma nova chance, uma cidade nova.']],
+930049: [['Do you feel lucky now?', 'Você se sente com sorte agora?'], ['A little. It was a narrow escape.', 'Um pouco. Foi por pouco.'], ['So what is the plan?', 'Então qual é o plano?'], ['Find a better job.', 'Achar um emprego melhor.']],
+7930049: [['Do you want some chocolate?', 'Quer um chocolate?'], ['Yes, please. It helps.', 'Sim, por favor. Ajuda.'], ['Is the car safe?', 'O carro está seguro?'], ['The garage will fix it tomorrow.', 'A oficina conserta amanhã.']],
+82227: [['Did he listen to you?', 'Ele ouviu você?'], ['Not at first.', 'No começo não.'], ['And now?', 'E agora?'], ['He is calmer. We will talk again.', 'Ele está mais calmo. Vamos conversar de novo.']],
+7082227: [['Are you still upset?', 'Você ainda está chateada?'], ['Less than before.', 'Menos que antes.'], ['I was tired, that is all.', 'Eu estava cansado, só isso.'], ['I understand. Let us eat.', 'Entendo. Vamos comer.']],
+}
+
+
 def mk(n, title, sub, pat, why, names, ids, rs, obra, scenes, cover, teaser, rule, fm, vocab, lab, verbs, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
     return S(n=n, title=title, sub=sub, pattern=pat, why=why, names=names, ids=ids, rs=rs, obra=(obra, obra),
              hot=hot, gaps=gaps, traps=traps, rule=rule, fm=fm, cover=cover, vocab=vocab, lines=lines, quiz=quiz,
-             teaser=teaser, exps=exps, lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes)
+             teaser=teaser, exps=exps, lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes, fill=FILLS[n])
 
 # ---------- e-mail profissional ----------
 EM_VOCAB = [('📧', 'subject', 'assunto', 'Soa como “SÂB-djikt”.'), ('📎', 'attached', 'em anexo', 'Soa como “a-TÉCHT”.'), ('✍️', 'regards', 'atenciosamente', 'Soa como “ri-GÁRDZ”.'),
