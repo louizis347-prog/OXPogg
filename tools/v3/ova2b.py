@@ -30,6 +30,14 @@ def Q(q, pt, idx, *opts):
     return [q, pt, list(opts), 0, idx]
 
 
+def VL(n, verbs=None, lab=None, vocab=None):
+    """Troca só os verbos e/ou o laboratório de um episódio já declarado com X."""
+    o = OVR.setdefault(n, dict(names=None, ids=None, ob=None, vocab=None, hot=None, lines=None, quiz=None, verbs=None, lab=None, rs=None, cv=None, scene2=None, more={}))
+    if verbs: o['verbs'] = verbs
+    if lab: o['lab'] = lab
+    if vocab: o['vocab'] = vocab
+
+
 def X(n, names=None, ids=None, ob=None, vocab=None, hot=None, lines=None, quiz=None, verbs=None, lab=None, rs=None, cv=None, scene2=None, **more):
     """Campos omitidos ficam como no módulo (as falas e as perguntas só trocam os nomes quando names é dado)."""
     OVR[n] = dict(names=names, ids=ids, ob=ob, vocab=vocab, hot=hot, lines=lines, quiz=quiz, verbs=verbs, lab=lab, rs=rs, cv=cv, scene2=scene2, more=more)
@@ -73,7 +81,7 @@ def _derive(k, gp, ex):
     rules = []
     for i in (2, 3):
         en, _ = sp(i); rules.append((en.replace(gp[i][1], gp[i][2], 1), 1, 'Use **%s**.' % gp[i][1], en))
-    rule = R(k['ids'][0], k['pattern'].split(' · ')[0], 'Veja o padrão na cena da obra.', [e0, p0], formula, uses, rules,
+    rule = R(k['ids'][0], re.split(r'[:(]', k['pattern'].split(' · ')[0])[0].strip(), 'Veja o padrão na cena da obra.', [e0, p0], formula, uses, rules,
              ['Em português “%s”. Em inglês: **%s**' % (p0.rstrip('.!?'), e0)])
     k['gaps'] = gaps; k['traps'] = traps; k['rule'] = rule
     pages = []
@@ -135,7 +143,13 @@ def install(g):
             k['quiz'] = [tuple(q[:5]) + ('%s diz: “%s”' % (o['lines'][q[4]][0], o['lines'][q[4]][1]),) for q in o['quiz']]
         elif mp:
             k['lines'] = [[mp.get(x[0], x[0])] + list(x[1:]) for x in k['lines']]
-            k['quiz'] = [tuple(q[:5]) + (re.sub(r'^(%s) diz' % '|'.join(re.escape(x) for x in mp), lambda m: mp[m.group(1)] + ' diz', q[5]),) for q in k['quiz']]
+            def _q(t):
+                for a_, b_ in mp.items():
+                    t = re.sub(r'\b[Tt]he ' + re.escape(a_.lower()) + r'\b', b_, t)
+                    t = re.sub(r'\b' + re.escape(a_.lower()) + r'\b', b_, t)
+                    t = re.sub(r'\b' + re.escape(a_) + r'\b', b_, t)
+                return t
+            k['quiz'] = [(_q(q[0]),) + tuple(q[1:5]) + (re.sub(r'^(%s) diz' % '|'.join(re.escape(x) for x in mp), lambda m: mp[m.group(1)] + ' diz', q[5]),) for q in k['quiz']]
         if o['verbs']:
             vb = o['verbs']
             k['verbs'] = ('Verbos do episódio', 'Quatro verbos: ' + ', '.join(v[0] for v in vb[:3]) + ' e ' + vb[3][0] + '.', vb)

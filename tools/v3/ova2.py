@@ -66,6 +66,11 @@ def install(g, style='E'):
         if o is None:
             return base(**k)
         a, b = k['names']
+        if o.get('swap') and not o.get('vocab'):  # troca pontual de verbos que se repetem com o vizinho
+            t, tip, items = k['verbs']
+            items = [o['swap'].get(v[0], v) for v in items]
+            k['verbs'] = (t, tip, items)
+            return base(**k)
         if o.get('fill') and not o.get('vocab'):  # só enchimento
             k['exp_scene'] = list(k['exp_scene'][:4]) + [[a if i % 2 == 0 else b] + list(f) for i, f in enumerate(o['fill'])]
             return base(**k)
@@ -92,3 +97,8 @@ def install(g, style='E'):
     here = os.path.dirname(os.path.abspath(__file__))
     for f in sorted(glob.glob(os.path.join(here, 'ova2_*.py'))):
         importlib.import_module('v3.' + os.path.basename(f)[:-3])
+
+
+def SW(n, **sw):
+    """Troca pontual: SW(n, velho=VB(...)) substitui o verbo 'velho' do episódio n."""
+    OVR[n] = dict(swap=sw)
