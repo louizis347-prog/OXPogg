@@ -137,8 +137,10 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - A2 completo. Falta apenas uma checagem de cobertura do plano A2 (não existe `plan_a2`). Teste no navegador 243→474 sem erros.
 - Decisão pendente com o usuário: A1 tem só 466 itens; 467–500 viraria bloco extra de revisão ou início do A2.
 
-## Inglês B1: primeiros 330 episódios
-- Os 330 primeiros itens do B1 (`data/en-b1_*`, 530 no total) estão no modelo piloto (19 quadros, mesma identidade visual), cada um com seu rótulo de gramática próprio (`tools/gram/check_unique_b1.py`: 0 repetidos de 330).
-- Fontes: `tools/v3/b1_001_005.py` … `b1_325_330.py` (de 101 em diante os arquivos usam o atalho `tools/v3/b1h.py`, função `S`, que gera R, lab, mold, produce, mission2 e exp_scene a partir de dados compactos). Obras dos itens 1–330 em `tools/v3/obras_old_b1.json` (para os itens 101+ rodar antes `python3 /tmp/obras_b1.py <lo> <hi>`; o script gera a partir dos itens antigos).
+## Inglês B1: primeiros 370 episódios
+- Os 370 primeiros itens do B1 (`data/en-b1_*`, 530 no total) estão no modelo piloto (19 quadros, mesma identidade visual), cada um com seu rótulo de gramática próprio (`tools/gram/check_unique_b1.py`: 0 repetidos de 370).
+- Fontes: `tools/v3/b1_001_005.py` … `b1_361_370.py` (de 101 em diante os arquivos usam o atalho `tools/v3/b1h.py`, função `S`, que gera R, lab, mold, produce, mission2 e exp_scene a partir de dados compactos). Obras dos itens 1–370 em `tools/v3/obras_old_b1.json` (para os itens 101+ rodar antes `python3 /tmp/obras_b1.py <lo> <hi>`; o script gera a partir dos itens antigos).
 - Para refazer: `python3 tools/v3/fixmold.py`, `COURSE=en-b1 python3 tools/model_v3.py`, `COURSE=en-b1 python3 tools/v3/check.py`, `COURSE=en-b1 python3 tools/v3/mark_pilot2.py`.
-- Faltam os itens 331–530 do B1 e a checagem de cobertura do plano B1.
+- Faltam os itens 371–530 do B1 e a checagem de cobertura do plano B1.
+
+- B1 331–370 (20 pares): escritos por tools/v3/b1_331_340.py … b1_361_370.py; montagem e checagens em um passo só (`COURSE=en-b1 python3 tools/model_v3.py`, `check.py`, `mark_pilot2.py`, `tools/gram/check_unique_b1.py`) e teste sem gravar com `COURSE=en-b1 python3 tools/v3/dryrun.py b1_NNN_MMM`. A frase 'I have jet lag.' ganhou tradução mais precisa no ep. 82168 (dicionário de falas compartilhado: frases iguais devem ter a mesma tradução em todos os episódios).
