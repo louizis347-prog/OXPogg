@@ -160,3 +160,8 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Reconstruir só estes: `COURSE=en-b1 python3 tools/model_v3.py <n…>` (lista de n = chaves de `FIX`), depois `python3 tools/audit/fix_mechanical.py`.
 - Pendente: K3/K4 (elenco/arte genéricos) nos demais episódios; os itens 86+ estão em outra frente (`ovrb1*.py`). Elenco com arte genérica (polly/tom/tommy/misshoney) quando não há ficha da obra: só o nome mudou.
 - Verificação: dryrun/check.py sem problemas, auditoria sem K8/K9 nos módulos 1–85; fatos das obras NÃO checados por fonte externa (sem acesso à web nesta sessão).
+
+## Auditoria do modelo — B1 itens 1–172 (publicado)
+- Continuações dos itens 1–172 com obra, palavras, verbos, sons e falas próprios (camadas `tools/v3/b1fix*.py` e `ovrb1*.py`). Fatos das obras vieram de memória: revisar `obras_new_b1_001_085.json` e `obras_new_b1_086_170_*.json`.
+- Auditoria B1 depois do lote: obra repetida 165→79, enchimento 259→158. Falta itens 173–330 (e 371–530), A2 e A1; elenco/arte genéricos (K3/K4) seguem altos.
+- Sempre rodar `fix_mechanical.py` depois de `model_v3.py`.
