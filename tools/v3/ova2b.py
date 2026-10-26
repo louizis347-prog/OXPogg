@@ -44,8 +44,8 @@ def G(n, gp, ex):
 def _rx(text):
     out = []
     for w in re.findall(r"[\w’']+", text.lower()):
-        out.append(re.escape(w).replace('’', "[’']").replace("'", "[’']"))
-    return r'\b' + r'\s+'.join(out) + r'\b'
+        out.append("[’']".join(re.escape(x) for x in re.split(r"[’']", w)))
+    return r'\b' + r'[^\w]+'.join(out) + r'\b'
 
 
 def _derive(k, gp, ex):
