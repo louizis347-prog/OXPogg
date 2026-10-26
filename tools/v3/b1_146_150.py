@@ -1,7 +1,9 @@
 # B1 · episódios 146–150: primeira condicional com modais, collocations com have, empatia.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=7082092, title='Zero ou primeiro', sub="primeira condicional com modais: if + presente, can, may, should e must (mix, get, flood, clue, method, detective)",

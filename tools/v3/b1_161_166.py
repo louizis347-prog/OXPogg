@@ -1,7 +1,9 @@
 # B1 · episódios 161–165: idioms de eficiência, pedidos, sugestões e ofertas.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=930023, title='Kill Two Birds', sub="idioms de eficiência: kill two birds with one stone, work smarter, make headway e get ahead (blog, blog post, multitask, side project, benefit, meal prep)",

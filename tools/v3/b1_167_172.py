@@ -1,7 +1,9 @@
 # B1 · episódios 167–172: proibições, phrasal verbs com keep, graus de certeza.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82111, title='Prohibition', sub="dizer o que é proibido: is forbidden, is not allowed, is prohibited e is banned (forbidden, permitted, prohibited, banned, illegal, burn)",

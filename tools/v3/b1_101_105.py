@@ -1,7 +1,9 @@
 # B1 · episódios 101–105: sentimentos, compromissos, phrasal verbs com cut.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=930014, title='How Do You Really Feel?', sub="sentimentos em detalhe: relieved, thrilled, embarrassed e anxious (relief, disappointment, embarrassment, anxiety, pride, gratitude)",

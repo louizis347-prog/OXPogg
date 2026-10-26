@@ -1,7 +1,9 @@
 # B1 · episódios 131–135: condicionais mistas, wish, arrependimentos.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82085, title='Mixed Conditionals', sub="passado que muda o presente: if I had been braver, I would be happier now (braver, trouble, different, rich, doctor, happier)",

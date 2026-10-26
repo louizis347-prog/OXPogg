@@ -1,7 +1,9 @@
 # B1 · episódios 96–100: revisão do perfect, planos, will × going to, future continuous.
 from v3.short import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- B1 96 · have been × have gone · perfect × passado · for × since
 EPS.append(E(

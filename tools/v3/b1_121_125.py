@@ -1,7 +1,9 @@
 # B1 · episódios 121–125: gírias de cansaço, zero conditional, second conditional.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=930017, title="I'm Beat!", sub="gírias de cansaço: beat, wiped out, fried e zonked (power nap, caffeine, drained, oversleep, siesta, sluggish)",

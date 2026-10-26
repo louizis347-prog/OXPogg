@@ -1,7 +1,9 @@
 # B1 · episódios 111–115: idioms de equipe, orações de tempo, previsões.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=930016, title='In the Same Boat', sub="idioms de equipe: in the same boat, on the same page, team player e back each other up (teammate, musher, teamwork, finish line, dog team, camaraderie)",

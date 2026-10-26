@@ -1,7 +1,9 @@
 # B1 · episódios 91–95: collocations com do, quase pronto, revisão do present perfect.
 from v3.short import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- B1 91 · do research · do business · do damage · do justice
 EPS.append(E(

@@ -1,7 +1,9 @@
 # B1 · episódios 116–120: opiniões sobre o futuro, combinar planos, revisão do futuro.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=7082077, title='Previsões com will', sub="opinar sobre o futuro: I think it will, I do not think, I doubt e I bet (robot, doubt, longer, network, technology, predict)",

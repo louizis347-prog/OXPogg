@@ -1,7 +1,9 @@
 # B1 · episódios 86–90: dinheiro (borrow/lend), dar notícias, phrasal verbs com carry.
 from v3.short import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- B1 86 · borrow × lend · owe · invest in · worth it
 EPS.append(E(

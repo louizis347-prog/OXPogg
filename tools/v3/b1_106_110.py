@@ -1,7 +1,9 @@
 # B1 · episódios 106–110: cut, possibilidades, in case.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=7930015, title='Cortar hábitos', sub="mais phrasal verbs com cut: cut back on, cut short, cut across e cut in (craving, carbohydrate, calorie, snacking, diet, health)",

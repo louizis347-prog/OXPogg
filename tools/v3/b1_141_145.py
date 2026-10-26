@@ -1,7 +1,9 @@
 # B1 · episódios 141–145: condições, perguntas hipotéticas, zero × first.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82090, title='As Long As', sub="impor condições: as long as, on one condition, only if e as long as you promise (condition, long, provided, deal, agree, allow)",

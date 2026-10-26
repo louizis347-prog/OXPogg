@@ -1,0 +1,330 @@
+# Reescrita dos episódios B1 86–110 (ver ovrb1.py): obra, elenco, palavras e cena próprios; fill = 4 falas próprias na cena de conversa.
+from v3.ovrb1 import OVR, L
+
+OVR[7082054] = dict(
+    names=('Oliver', 'Mr Bumble'), ids=['oliver', 'bumble'], rs='hall',
+    cv='Num salão de asilo, Oliver e o Sr. Bumble falam de moedas e de pão.',
+    obra=('Can I borrow a penny, sir?', 'Posso pegar um centavo emprestado, senhor?'),
+    vocab=[('🪙', 'coin', 'moeda', 'Soa como “KÓIN”.'), ('🍞', 'loaf', 'broa de pão', 'Soa como “LÔUF”.'), ('🥣', 'soup', 'sopa', 'Soa como “SÚP”.'),
+           ('🏚️', 'workhouse', 'asilo de pobres', 'Soa como “UÔRK-háus”.'), ('👦', 'orphan', 'órfão', 'Soa como “ÓR-fan”.'), ('🎩', 'master', 'diretor', 'Soa como “MÁS-ter”.')],
+    lines=[['Oliver', 'Can I borrow a penny, sir?', 'Posso pegar um centavo emprestado, senhor?'],
+           ['Mr Bumble', 'I cannot lend you one. You already owe the parish for your supper.', 'Não posso lhe emprestar. Você já deve à paróquia pela ceia.'],
+           ['Oliver', 'I would invest it in a loaf of bread.', 'Eu investiria numa broa de pão.'],
+           ['Mr Bumble', 'Is it worth it for a hungry boy?', 'Vale a pena para um menino faminto?'],
+           ['Oliver', 'Yes, it is worth it. I will save half for tomorrow.', 'Sim, vale a pena. Guardo metade para amanhã.'],
+           ['Mr Bumble', 'Your budget is a strange one, Oliver.', 'Seu orçamento é estranho, Oliver.'],
+           ['Oliver', 'I cannot afford to wait, sir.', 'Não posso me dar ao luxo de esperar, senhor.'],
+           ['Mr Bumble', 'Then ask the master. I owe you no favours.', 'Então peça ao diretor. Não lhe devo favores.']],
+    quiz=[('What does Oliver want to borrow?', 'O que Oliver quer pegar emprestado?', [('🪙', 'A penny'), ('💷', 'Ten pounds'), ('🧥', 'A coat')], 0, 0, 'Oliver diz: “a penny.”'),
+          ('What would he buy?', 'O que ele compraria?', [('🍞', 'A loaf of bread'), ('📚', 'A book'), ('🚲', 'A bike')], 0, 2, 'Oliver diz: “a loaf of bread.”'),
+          ('What can he not afford?', 'O que ele não pode?', [('⏳', 'To wait'), ('🍞', 'To eat'), ('🏠', 'To sleep')], 0, 6, 'Oliver diz: “cannot afford to wait.”')],
+    fill=[['May I have a little more soup, sir?', 'Posso ter um pouco mais de sopa, senhor?'], ['Soup costs money, boy.', 'Sopa custa dinheiro, menino.'],
+          ['Then I will work for it.', 'Então trabalho por ela.'], ['We shall see about that.', 'Veremos isso.']])
+
+OVR[7082056] = dict(
+    names=('Dorothy', 'Scarecrow'), ids=['dorothy', 'scarecrow'], rs='hall',
+    cv='No portão do palácio, Dorothy e o Espantalho espalham novidades, como numa cena de O Mágico de Oz.',
+    obra=('Guess what! The Wizard wants to see us.', 'Adivinha! O Mágico quer nos ver.'),
+    vocab=[('🏰', 'palace', 'palácio', 'Soa como “PÁ-lis”.'), ('🚪', 'gate', 'portão', 'Soa como “GÊIT”.'), ('👓', 'spectacles', 'óculos', 'Soa como “SPÉK-ta-kols”.'),
+           ('🤫', 'secret', 'segredo', 'Soa como “SÍ-kret”.'), ('📣', 'gossip', 'fofoca', 'Soa como “GÓ-sip”.'), ('🔍', 'reveal', 'revelar', 'Soa como “ri-VÍL”.')],
+    lines=[['Dorothy', 'Guess what! The Wizard wants to see us.', 'Adivinha! O Mágico quer nos ver.'],
+           ['Scarecrow', 'No way! How did you hear?', 'Não acredito! Como você soube?'],
+           ['Dorothy', 'I just found out at the palace gate.', 'Acabei de descobrir no portão do palácio.'],
+           ['Scarecrow', 'Apparently, the guard keeps it a secret.', 'Pelo visto, o guarda guarda segredo.'],
+           ['Dorothy', 'You will never believe it. Everyone wears green spectacles.', 'Você nunca vai acreditar. Todos usam óculos verdes.'],
+           ['Scarecrow', 'Is that only a rumor?', 'Isso é só um boato?'],
+           ['Dorothy', 'Maybe. But gossip travels fast in this city.', 'Talvez. Mas fofoca corre rápido nesta cidade.'],
+           ['Scarecrow', 'Then let us go and see for ourselves.', 'Então vamos ver com nossos próprios olhos.']],
+    quiz=[('Who wants to see them?', 'Quem quer ver os dois?', [('🧙', 'The Wizard'), ('👸', 'The queen'), ('🐱', 'The cat')], 0, 0, 'Dorothy diz: “The Wizard wants to see us.”'),
+          ('Where did Dorothy find out?', 'Onde Dorothy descobriu?', [('🚪', 'At the palace gate'), ('🏠', 'At home'), ('🌽', 'In a field')], 0, 2, 'Dorothy diz: “at the palace gate.”'),
+          ('What does everyone wear?', 'O que todos usam?', [('👓', 'Green spectacles'), ('🎩', 'Tall hats'), ('🧤', 'Gloves')], 0, 4, 'Dorothy diz: “green spectacles.”')],
+    fill=[['Wait. Who told you that?', 'Espere. Quem lhe contou isso?'], ['The gatekeeper. He talks too much.', 'O porteiro. Ele fala demais.'],
+          ['Then keep it quiet until we meet him.', 'Então fique quieta até o encontrarmos.'], ['I will. Let us go now.', 'Fico. Vamos agora.']])
+
+OVR[930012] = dict(fill=[['The crew needs an answer tonight.', 'A tripulação precisa de uma resposta esta noite.'], ['Then we follow the list step by step.', 'Então seguimos a lista passo a passo.'],
+                         ['Check the oxygen once more.', 'Confira o oxigênio mais uma vez.'], ['Checked. We are ready.', 'Conferido. Estamos prontos.']])
+
+OVR[7930012] = dict(
+    names=('Pam', 'Michael'), ids=['polly', 'tom'], rs='office',
+    cv='No escritório da Dunder Mifflin, Pam e Michael planejam os testes da semana.',
+    obra=('How often do we carry out a test?', 'Com que frequência fazemos um teste?'),
+    hot4=('📞', 'client', 'cliente', 'The client is on the phone.', 'O cliente está ao telefone.'),
+    vocab=[('📄', 'paper', 'papel', 'Soa como “PÊI-per”.'), ('📊', 'sales', 'vendas', 'Soa como “SÊILZ”.'), ('🧾', 'invoice', 'fatura', 'Soa como “ÍN-vóis”.'),
+           ('📈', 'quarter', 'trimestre', 'Soa como “KUÓR-ter”.'), ('👔', 'manager', 'gerente', 'Soa como “MÉ-ni-djer”.'), ('📞', 'client', 'cliente', 'Soa como “KLÁI-ent”.')],
+    verbs=[('talk', '🗣️', 'falar', 'Please carry on talking.', 'Please carry on to talk.', 'She talked.', 'Ela falou.', 'carry on **+ ing**.'),
+           ('test', '🧪', 'testar', 'We test it every day.', 'We tests it every day.', 'I tested it.', 'Testei.', 'we **test**.'),
+           ('budget', '💰', 'orçar', 'We budget for next month.', 'We budget to next month.', 'I budgeted.', 'Orcei.', 'budget **for**.'),
+           ('manage', '🏆', 'conseguir', 'She managed it well.', 'She managed it good.', 'I managed.', 'Consegui.', 'managed **+ it well**.')],
+    lines=[['Michael', 'How often do you carry out a test?', 'Com que frequência você faz um teste?'],
+           ['Pam', 'We carry out a test every day.', 'Fazemos um teste todo dia.'],
+           ['Michael', 'Sorry to interrupt.', 'Desculpe interromper.'],
+           ['Pam', 'No, please carry on talking.', 'Não, por favor continue falando.'],
+           ['Michael', 'Last week the client gave a speech.', 'Semana passada o cliente fez um discurso.'],
+           ['Pam', 'He carried it off very well.', 'Ele se saiu muito bem.'],
+           ['Michael', 'Can we carry the budget over to next month?', 'Podemos passar o orçamento para o mês que vem?'],
+           ['Pam', 'Yes, we can. Sales are fine this quarter.', 'Sim, podemos. As vendas vão bem neste trimestre.']],
+    quiz=[('How often do they run a test?', 'Com que frequência fazem um teste?', [('📅', 'Every day'), ('🗓️', 'Every week'), ('🌙', 'Never')], 0, 1, 'Pam diz: “every day.”'),
+          ('What should he carry on doing?', 'O que ele deve continuar fazendo?', [('🗣️', 'Talking'), ('🏃', 'Running'), ('🍕', 'Eating')], 0, 3, 'Pam diz: “carry on talking.”'),
+          ('What can they carry over?', 'O que podem passar para o mês seguinte?', [('💰', 'The budget'), ('📞', 'The phone'), ('🧪', 'The test')], 0, 6, 'Michael diz: “carry the budget over.”')],
+    fill=[['Did the test go well today?', 'O teste correu bem hoje?'], ['Yes. Nobody made a mistake.', 'Sim. Ninguém errou.'],
+          ['Then let us tell the client.', 'Então vamos avisar o cliente.'], ['I will send the report now.', 'Vou enviar o relatório agora.']])
+
+# ---------------------------------------------------------------- 91–95
+OVR[930013] = dict(fill=[['Which lab do you work in?', 'Em qual laboratório você trabalha?'], ['The one near the library.', 'No que fica perto da biblioteca.'],
+                         ['Then I will visit you soon.', 'Então te visito em breve.'], ['Bring the new data with you.', 'Traga os novos dados com você.']])
+
+OVR[7930013] = dict(
+    names=('Matilda', 'Miss Honey'), ids=['matilda', 'misshoney'], rs='kitchen',
+    cv='Na cozinha da casinha de Miss Honey, Matilda e a professora dividem as tarefas.',
+    obra=('Who does the dishes tonight?', 'Quem lava a louça hoje à noite?'),
+    hot4=('📚', 'library', 'biblioteca', 'I read in the library.', 'Eu leio na biblioteca.'),
+    vocab=[('📚', 'library', 'biblioteca', 'Soa como “LÁI-bre-ri”.'), ('📖', 'novel', 'romance', 'Soa como “NÓ-vel”.'), ('🏫', 'classroom', 'sala de aula', 'Soa como “KLÉS-rum”.'),
+           ('🧹', 'chores', 'tarefas domésticas', 'Soa como “TCHÓRZ”.'), ('✏️', 'pencil', 'lápis', 'Soa como “PÉN-sil”.'), ('🍵', 'kettle', 'chaleira', 'Soa como “KÉ-tol”.')],
+    verbs=[('wash', '🍽️', 'lavar', 'I wash the dishes.', 'I washing the dishes.', 'I washed them.', 'Lavei.', 'I **wash**.'),
+           ('help', '🤝', 'ajudar', 'Help the new girl.', 'Help to the new girl.', 'I helped.', 'Ajudei.', 'help **+ pessoa**.'),
+           ('try', '💪', 'tentar', 'Just try your best.', 'Just try to your best.', 'I tried.', 'Tentei.', 'try **your best**.'),
+           ('read', '📖', 'ler', 'She reads every day.', 'She readed every day.', 'I read it.', 'Li.', 'read → **read**.')],
+    lines=[['Miss Honey', 'Who does the dishes tonight?', 'Quem lava a louça hoje à noite?'],
+           ['Matilda', 'I do the dishes after dinner.', 'Eu lavo a louça depois do jantar.'],
+           ['Miss Honey', 'Can you do me a favour?', 'Pode me fazer um favor?'],
+           ['Matilda', 'Sure. What is it?', 'Claro. O que é?'],
+           ['Miss Honey', 'Help the new girl with her homework.', 'Ajude a aluna nova com a lição de casa.'],
+           ['Matilda', 'She does her homework alone, but I can check it.', 'Ela faz a lição sozinha, mas posso conferir.'],
+           ['Miss Honey', 'Then just do your best.', 'Então apenas dê o seu melhor.'],
+           ['Matilda', 'I always do.', 'Eu sempre dou.']],
+    quiz=[('When does she do the dishes?', 'Quando ela lava a louça?', [('🍽️', 'After dinner'), ('🌅', 'At breakfast'), ('🌙', 'At midnight')], 0, 1, 'Matilda diz: “after dinner.”'),
+          ('What favour does Miss Honey ask?', 'Que favor Miss Honey pede?', [('📚', 'Help with homework'), ('🛒', 'Go shopping'), ('🚗', 'Drive her')], 0, 4, 'Miss Honey diz: “Help the new girl with her homework.”'),
+          ('What does Miss Honey tell her to do?', 'O que Miss Honey manda fazer?', [('💪', 'Her best'), ('😴', 'Sleep'), ('🏃', 'Run')], 0, 6, 'Miss Honey diz: “do your best.”')],
+    fill=[['Did you finish your book?', 'Você terminou seu livro?'], ['Almost. It is very long.', 'Quase. Ele é muito longo.'],
+          ['Then read a chapter tonight.', 'Então leia um capítulo esta noite.'], ['I will, after the dishes.', 'Leio, depois da louça.']])
+
+OVR[82063] = dict(fill=[['The report needs another hour.', 'O relatório precisa de mais uma hora.'], ['Then take a short break first.', 'Então faça uma pausa curta antes.'],
+                        ['I think I can finish tonight.', 'Acho que consigo terminar hoje à noite.'], ['I know you can.', 'Eu sei que consegue.']])
+
+OVR[7082063] = dict(
+    names=('White Rabbit', 'Alice'), ids=['whiterabbit', 'alice'], rs='hall',
+    cv='Num corredor do País das Maravilhas, Alice e o Coelho Branco falam do que ainda falta fazer.',
+    obra=('I have hardly started. I am late!', 'Mal comecei. Estou atrasado!'),
+    hot4=('⌚', 'watch', 'relógio de bolso', 'I am late. Look at my watch!', 'Estou atrasado. Olhe meu relógio!'),
+    vocab=[('⌚', 'watch', 'relógio de bolso', 'Soa como “UÓTCH”.'), ('🕳️', 'rabbit hole', 'toca do coelho', 'Soa como “RÉ-bit HÔUL”.'), ('💌', 'invitation', 'convite', 'Soa como “in-vi-TÊI-chon”.'),
+           ('🫖', 'tea party', 'chá da tarde', 'Soa como “TÍ PÁR-ti”.'), ('🏃', 'hurry', 'pressa', 'Soa como “RÂ-ri”.'), ('👑', 'queen', 'rainha', 'Soa como “KUÍN”.')],
+    verbs=[('check', '⌚', 'conferir', 'I check my watch.', 'I checks my watch.', 'I checked.', 'Conferi.', 'I **check**.'),
+           ('work', '🛠️', 'trabalhar', 'I am still working.', 'I am still work.', 'I worked.', 'Trabalhei.', 'still + **-ing**.'),
+           ('start', '▶️', 'começar', 'I have hardly started.', 'I have hardly start.', 'I started.', 'Comecei.', 'have + **started**.'),
+           ('make', '🏁', 'conseguir', 'I barely made it.', 'I barely maked it.', 'I made it.', 'Consegui.', 'make → **made**.')],
+    lines=[['Alice', 'Have you finished your errands?', 'Você terminou seus recados?'],
+           ['White Rabbit', 'Not yet. I am still working.', 'Ainda não. Ainda estou trabalhando.'],
+           ['Alice', 'Have you written the invitations?', 'Você escreveu os convites?'],
+           ['White Rabbit', 'I have hardly started.', 'Mal comecei.'],
+           ['Alice', 'Did you get here on time?', 'Você chegou a tempo?'],
+           ['White Rabbit', 'I barely made it.', 'Cheguei por pouco.'],
+           ['Alice', 'Take another look at your watch.', 'Olhe seu relógio de novo.'],
+           ['White Rabbit', 'I will. I am late already.', 'Olharei. Já estou atrasado.']],
+    quiz=[('Has he finished his errands?', 'Ele terminou os recados?', [('⏳', 'Not yet'), ('✅', 'Yes'), ('🚫', 'Never')], 0, 1, 'White Rabbit diz: “Not yet.”'),
+          ('How much of the invitations has he done?', 'Quanto dos convites ele fez?', [('🤏', 'Hardly any'), ('✅', 'All'), ('🔟', 'Half')], 0, 3, 'White Rabbit diz: “hardly started.”'),
+          ('Did he arrive on time?', 'Ele chegou a tempo?', [('😅', 'Barely'), ('✅', 'Early'), ('🐢', 'Late')], 0, 5, 'White Rabbit diz: “I barely made it.”')],
+    fill=[['Which way is the garden?', 'Qual é o caminho para o jardim?'], ['Down the long hall, past the little door.', 'Pelo corredor longo, depois da portinha.'],
+          ['Then I will follow you.', 'Então vou seguir você.'], ['Hurry. The Queen will not wait.', 'Depressa. A Rainha não vai esperar.']])
+
+# ---------------------------------------------------------------- 96–100
+OVR[7082064] = dict(
+    names=('Wendy', 'Peter'), ids=['wendy', 'peter'], rs='bedroom',
+    cv='No quarto das crianças, Wendy e Peter falam de quem já foi à ilha e de quem ainda está lá.',
+    obra=('Where is John? He has gone to the island.', 'Onde está o John? Ele foi para a ilha.'),
+    vocab=[('🧚', 'fairy', 'fada', 'Soa como “FÉ-ri”.'), ('🏴‍☠️', 'pirate', 'pirata', 'Soa como “PÁI-rit”.'), ('👤', 'shadow', 'sombra', 'Soa como “SHÉ-dou”.'),
+           ('🛏️', 'nursery', 'quarto de crianças', 'Soa como “NÂR-se-ri”.'), ('🌊', 'lagoon', 'lagoa', 'Soa como “la-GÚN”.'), ('🗺️', 'adventure', 'aventura', 'Soa como “ad-VÉN-tcher”.')],
+    verbs=[('be', '📍', 'estar', 'He has been there twice.', 'He has be there twice.', 'I was there.', 'Estive lá.', 'has + **been**.'),
+           ('go', '🏃', 'ir', 'He has gone to the island.', 'He has went to the island.', 'He went.', 'Ele foi.', 'go → **gone**.'),
+           ('fly', '🧚', 'voar', 'She has flown there.', 'She has flied there.', 'She flew.', 'Ela voou.', 'fly → **flown**.'),
+           ('return', '🔙', 'voltar', 'He has not returned yet.', 'He has not return yet.', 'He returned.', 'Ele voltou.', 'has + **returned**.')],
+    lines=[['Wendy', 'Where is John?', 'Onde está o John?'],
+           ['Peter', 'He has gone to the island.', 'Ele foi para a ilha.'],
+           ['Wendy', 'Has he been there before?', 'Ele já foi lá antes?'],
+           ['Peter', 'Yes. He has been there twice.', 'Sim. Ele já foi duas vezes.'],
+           ['Wendy', 'When did he leave?', 'Quando ele saiu?'],
+           ['Peter', 'He left in May.', 'Ele saiu em maio.'],
+           ['Wendy', 'So he has lived there since May.', 'Então ele mora lá desde maio.'],
+           ['Peter', 'Exactly. The fairy showed him the way.', 'Exato. A fada mostrou o caminho a ele.']],
+    quiz=[('Where is John now?', 'Onde John está agora?', [('🏝️', 'On the island'), ('🏠', 'At home'), ('🏫', 'At school')], 0, 1, 'Peter diz: “He has gone to the island.”'),
+          ('How many times has he been there?', 'Quantas vezes ele já foi lá?', [('2️⃣', 'Twice'), ('1️⃣', 'Once'), ('5️⃣', 'Five times')], 0, 3, 'Peter diz: “twice.”'),
+          ('When did he leave?', 'Quando ele saiu?', [('📅', 'In May'), ('🌙', 'Last night'), ('🗓️', 'In June')], 0, 5, 'Peter diz: “He left in May.”')],
+    fill=[['The window is open again.', 'A janela está aberta de novo.'], ['Then the fairy has been here.', 'Então a fada esteve aqui.'],
+          ['Shut it before Mother comes.', 'Feche antes que a mamãe chegue.'], ['Not yet. I want one more story.', 'Ainda não. Quero mais uma história.']])
+
+OVR[82065] = dict(fill=[['I will call the bakery The Blue Oven.', 'Vou chamar a padaria de Forno Azul.'], ['Nice name. Who will bake the bread?', 'Bom nome. Quem vai assar o pão?'],
+                        ['I will, at five every morning.', 'Eu, às cinco todas as manhãs.'], ['Then I will be your first customer.', 'Então serei seu primeiro cliente.']])
+
+OVR[7082065] = dict(
+    names=('Don', 'Kathy'), ids=['tom', 'polly'], rs='living',
+    cv='Num estúdio de cinema, Don e Kathy decidem o que fazer enquanto o telefone toca.',
+    obra=('The phone is ringing! I will answer it.', 'O telefone está tocando! Eu atendo.'),
+    vocab=[('☔', 'umbrella', 'guarda-chuva', 'Soa como “am-BRÉ-la”.'), ('🎬', 'studio', 'estúdio', 'Soa como “STIÚ-di-ou”.'), ('💦', 'puddle', 'poça', 'Soa como “PÂ-dol”.'),
+           ('🔦', 'lamppost', 'poste de luz', 'Soa como “LÉMP-pôust”.'), ('⛈️', 'thunder', 'trovão', 'Soa como “THÂN-der”.'), ('🌦️', 'forecast', 'previsão do tempo', 'Soa como “FÓR-kést”.')],
+    hot4=('☔', 'umbrella', 'guarda-chuva', 'I will bring an umbrella.', 'Vou levar um guarda-chuva.'),
+    quiz=[('Who will answer the phone?', 'Quem vai atender o telefone?', [('🎬', 'Don'), ('🎤', 'Kathy'), ('👵', 'The grandmother')], 0, 1, 'Don diz: “I will answer it.”'),
+          ('What is he going to do tonight?', 'O que ele vai fazer esta noite?', [('📞', 'Call his grandmother'), ('🎬', 'Watch a film'), ('🍕', 'Cook')], 0, 3, 'Don diz: “call my grandmother.”'),
+          ('What is going to happen?', 'O que vai acontecer?', [('🌧️', 'It will rain'), ('☀️', 'It will be sunny'), ('❄️', 'It will snow')], 0, 5, 'Don diz: “It is going to rain.”')],
+    fill=[['The rain is getting heavier.', 'A chuva está ficando mais forte.'], ['Then we will wait inside.', 'Então esperamos aqui dentro.'],
+          ['Look at the puddle by the studio gate.', 'Olhe a poça no portão do estúdio.'], ['Tomorrow I am going to dance in it.', 'Amanhã vou dançar nela.']])
+
+OVR[82066] = dict(fill=[['Our flight leaves at nine tomorrow.', 'Nosso voo sai às nove amanhã.'], ['Then we will be flying by noon.', 'Então estaremos voando ao meio-dia.'],
+                        ['I will pack tonight.', 'Vou fazer as malas hoje à noite.'], ['Do not forget your passport.', 'Não esqueça o passaporte.']])
+
+OVR[7082066] = dict(
+    names=('Jasmine', 'Aladdin'), ids=['jasmine', 'aladdin'], rs='street',
+    cv='No mercado de Agrabah, Jasmine e Aladdin combinam o que estarão fazendo na semana que vem.',
+    obra=('Will you be flying on Monday?', 'Você estará voando na segunda?'),
+    vocab=[('🧞', 'genie', 'gênio', 'Soa como “DJÍ-ni”.'), ('🪔', 'lamp', 'lâmpada', 'Soa como “LÉMP”.'), ('🧺', 'carpet', 'tapete', 'Soa como “KÁR-pit”.'),
+           ('🏜️', 'desert', 'deserto', 'Soa como “DÉ-zert”.'), ('🛒', 'market', 'mercado', 'Soa como “MÁR-kit”.'), ('💎', 'treasure', 'tesouro', 'Soa como “TRÉ-jer”.')],
+    verbs=[('ride', '🧞', 'andar', 'He will be riding a carpet.', 'He will be ride a carpet.', 'I rode.', 'Andei.', 'will be **riding**.'),
+           ('rest', '😴', 'descansar', 'I will be resting.', 'I will be rest.', 'I rested.', 'Descansei.', 'will be **resting**.'),
+           ('explore', '🧭', 'explorar', 'We will be exploring.', 'We will be explore.', 'We explored.', 'Exploramos.', 'will be **exploring**.'),
+           ('shop', '🛍️', 'fazer compras', 'She will be shopping.', 'She will be shop.', 'She shopped.', 'Ela fez compras.', 'will be **shopping**.')],
+    hot4=('🧺', 'carpet', 'tapete', 'He will be riding a carpet.', 'Ele estará andando de tapete.'),
+    lines=[['Jasmine', 'Will you be working on Sunday?', 'Você estará trabalhando no domingo?'],
+           ['Aladdin', 'No, I will not be working.', 'Não, não estarei trabalhando.'],
+           ['Jasmine', 'Will you be flying on Monday?', 'Você estará voando na segunda?'],
+           ['Aladdin', 'Yes, I will. On the carpet.', 'Sim, estarei. No tapete.'],
+           ['Jasmine', 'Where will you be next week?', 'Onde você estará semana que vem?'],
+           ['Aladdin', 'At this time next week, I will be traveling.', 'Semana que vem a esta hora, estarei viajando.'],
+           ['Jasmine', 'Lucky you.', 'Que sorte a sua.'],
+           ['Aladdin', 'Come with me.', 'Venha comigo.']],
+    quiz=[('Will he be working on Sunday?', 'Ele estará trabalhando no domingo?', [('🚫', 'No'), ('✅', 'Yes'), ('🤷', 'Maybe')], 0, 1, 'Aladdin diz: “No, I will not be working.”'),
+          ('Will he be flying on Monday?', 'Ele estará voando na segunda?', [('✅', 'Yes'), ('🚫', 'No'), ('🤷', 'Maybe')], 0, 3, 'Aladdin diz: “Yes, I will.”'),
+          ('What will he be doing next week?', 'O que ele estará fazendo semana que vem?', [('🌍', 'Traveling'), ('💼', 'Working'), ('😴', 'Sleeping')], 0, 5, 'Aladdin diz: “I will be traveling.”')],
+    fill=[['Will you be home for dinner on Friday?', 'Você estará em casa para o jantar na sexta?'], ['No, I will be crossing the desert.', 'Não, estarei cruzando o deserto.'],
+          ['Then take a lamp and some water.', 'Então leve uma lâmpada e água.'], ['I will. See you next week.', 'Levo. Até semana que vem.']])
+
+# ---------------------------------------------------------------- 101–105
+OVR[930014] = dict(fill=[['Do you feel better now?', 'Você se sente melhor agora?'], ['Yes. The applause helped a lot.', 'Sim. Os aplausos ajudaram muito.'],
+                         ['Then let us celebrate tonight.', 'Então vamos comemorar hoje à noite.'], ['I would love that.', 'Eu adoraria.']])
+
+OVR[7930014] = dict(
+    names=('Hermione', 'Harry'), ids=['hermione', 'harry'], rs='hall',
+    cv='Num corredor de Hogwarts, Hermione e Harry desabafam sobre o dia.',
+    obra=('I feel disappointed. We lost the match.', 'Estou decepcionado. Perdemos a partida.'),
+    vocab=[('🧹', 'broomstick', 'vassoura', 'Soa como “BRÚM-stik”.'), ('🏆', 'match', 'partida', 'Soa como “MÉTCH”.'), ('🏰', 'castle', 'castelo', 'Soa como “KÉ-sol”.'),
+           ('🛋️', 'common room', 'salão comunal', 'Soa como “KÓ-mon RUM”.'), ('🦉', 'owl', 'coruja', 'Soa como “ÁUL”.'), ('✉️', 'letter', 'carta', 'Soa como “LÉ-ter”.')],
+    verbs=[('cheer', '📣', 'torcer', 'We cheer for our team.', 'We cheer to our team.', 'We cheered.', 'Torcemos.', 'cheer **for**.'),
+           ('make', '😰', 'fazer sentir', 'That makes me feel anxious.', 'That makes me to feel anxious.', 'It made me.', 'Isso me fez.', 'make me **+ base**.'),
+           ('lose', '😞', 'perder', 'We lost the match.', 'We losed the match.', 'We lose.', 'Perdemos.', 'lose → **lost**.'),
+           ('thank', '🙏', 'agradecer', 'I thank you for your honesty.', 'I thank to you for your honesty.', 'I thanked him.', 'Agradeci a ele.', 'thank **+ pessoa**.')],
+    lab=L('fe2', 'Laboratório de sons: feel, noise e grateful', 'ee soa í longo; oi soa ói; a soa êi.', 'Em noise, o oi soa ói.',
+          [('feel', 'FÍIL', 'sentir', 'ee = í', 'fill', 'FÍL'), ('noise', 'NÓIZ', 'barulho', 'oi = ói', 'nose', 'NÔUZ'), ('grateful', 'GRÊIT-ful', 'grato', 'a = êi', 'grapefruit', 'GRÊIP-frut')]),
+    lines=[['Hermione', 'You look upset. What is wrong?', 'Você parece chateado. O que houve?'],
+           ['Harry', 'I feel disappointed. We lost the match.', 'Estou decepcionado. Perdemos a partida.'],
+           ['Hermione', 'Waiting makes me feel anxious too.', 'Esperar também me deixa ansiosa.'],
+           ['Harry', 'But I am proud of my team.', 'Mas tenho orgulho do meu time.'],
+           ['Hermione', 'And the noise in the common room?', 'E o barulho no salão comunal?'],
+           ['Harry', 'I am fed up with the noise.', 'Estou farto do barulho.'],
+           ['Hermione', 'I am grateful for your honesty.', 'Sou grata pela sua sinceridade.'],
+           ['Harry', 'Thanks. Let us write a letter home.', 'Obrigado. Vamos escrever uma carta para casa.']],
+    quiz=[('How does he feel?', 'Como ele se sente?', [('😞', 'Disappointed'), ('🤩', 'Thrilled'), ('😴', 'Sleepy')], 0, 1, 'Harry diz: “I feel disappointed.”'),
+          ('What is he proud of?', 'Do que ele tem orgulho?', [('👥', 'His team'), ('🏠', 'His house'), ('🚗', 'His car')], 0, 3, 'Harry diz: “proud of my team.”'),
+          ('What is he fed up with?', 'De que ele está farto?', [('🔊', 'The noise'), ('🍕', 'The food'), ('🌧️', 'The rain')], 0, 5, 'Harry diz: “fed up with the noise.”')],
+    fill=[['Do you want to talk about it?', 'Quer falar sobre isso?'], ['Not now. I need some fresh air.', 'Agora não. Preciso de ar fresco.'],
+          ['Then let us walk to the owlery.', 'Então vamos até a coruja.'], ['Good idea. I will send it tonight.', 'Boa ideia. Eu envio hoje à noite.']])
+
+OVR[82068] = dict(fill=[['The meeting starts at ten sharp.', 'A reunião começa às dez em ponto.'], ['Then I will pick up the tickets.', 'Então eu pego as passagens.'],
+                        ['Do not forget your passport.', 'Não esqueça o passaporte.'], ['It is already in my bag.', 'Já está na minha bolsa.']])
+
+OVR[7082068] = dict(
+    names=('Sherlock', 'Watson'), ids=['sherlock', 'watson'], rs='living',
+    cv='Na sala de Baker Street, Sherlock e Watson acertam o horário de uma visita.',
+    obra=('What time is the meeting? Are you free?', 'Que horas é a reunião? Você está livre?'),
+    vocab=[('🔎', 'detective', 'detetive', 'Soa como “di-TÉK-tiv”.'), ('📁', 'case', 'caso', 'Soa como “KÊIS”.'), ('🧩', 'clue', 'pista', 'Soa como “KLÚ”.'),
+           ('📓', 'notebook', 'caderno', 'Soa como “NÔUT-buk”.'), ('🏠', 'landlady', 'senhoria', 'Soa como “LÉND-lêi-di”.'), ('🚪', 'visitor', 'visitante', 'Soa como “VÍ-zi-ter”.')],
+    lines=[['Watson', 'What time is the meeting with the visitor?', 'Que horas é a reunião com o visitante?'],
+           ['Sherlock', 'Monday at ten. Are you free?', 'Segunda às dez. Você está livre?'],
+           ['Watson', 'I am busy on Monday.', 'Estou ocupado na segunda.'],
+           ['Sherlock', 'Can we move it to Tuesday?', 'Podemos remarcar para terça?'],
+           ['Watson', 'Tuesday at ten suits me.', 'Terça às dez serve para mim.'],
+           ['Sherlock', 'Great. I will tell our landlady.', 'Ótimo. Aviso a nossa senhoria.'],
+           ['Watson', 'Thanks. I will bring my notebook.', 'Obrigado. Levo meu caderno.'],
+           ['Sherlock', 'See you then.', 'Até lá.']],
+    quiz=[('When was the meeting first?', 'Quando era a reunião no início?', [('📅', 'Monday at ten'), ('📆', 'Friday at two'), ('🌙', 'Sunday')], 0, 1, 'Sherlock diz: “Monday at ten.”'),
+          ('Why can Watson not come?', 'Por que Watson não pode ir?', [('🚫', 'He is busy'), ('🤒', 'He is sick'), ('✈️', 'He is away')], 0, 2, 'Watson diz: “I am busy on Monday.”'),
+          ('What is the new day?', 'Qual é o novo dia?', [('📆', 'Tuesday'), ('🌙', 'Wednesday'), ('🗓️', 'Friday')], 0, 4, 'Watson diz: “Tuesday at ten suits me.”')],
+    fill=[['Do you have the visitor’s address?', 'Você tem o endereço do visitante?'], ['It is on the desk, next to my notebook.', 'Está na mesa, ao lado do meu caderno.'],
+          ['Then I will send a note this evening.', 'Então envio um bilhete esta noite.'], ['Send it before dinner, please.', 'Envie antes do jantar, por favor.']])
+
+OVR[930015] = dict(fill=[['I made a list of healthy snacks.', 'Fiz uma lista de lanches saudáveis.'], ['Show me. I will buy them tomorrow.', 'Mostre. Eu compro amanhã.'],
+                         ['Nuts, fruit and plain yoghurt.', 'Castanhas, fruta e iogurte natural.'], ['That list is a great start.', 'Essa lista é um ótimo começo.']])
+
+# ---------------------------------------------------------------- 106–110
+OVR[7930015] = dict(
+    names=('Forrest', 'Jenny'), ids=['tom', 'polly'], rs='park',
+    cv='No parque, Forrest e Jenny falam de rotina e de atalhos.',
+    obra=('I cut back on snacks.', 'Diminuí os lanches.'),
+    vocab=[('🏃', 'jogging', 'corrida leve', 'Soa como “DJÓ-ging”.'), ('🛣️', 'route', 'rota', 'Soa como “RÚT”.'), ('👟', 'sneakers', 'tênis', 'Soa como “SNÍ-kers”.'),
+           ('🍫', 'chocolate', 'chocolate', 'Soa como “TCHÓK-let”.'), ('🪑', 'bench', 'banco', 'Soa como “BÉNTCH”.'), ('🏅', 'marathon', 'maratona', 'Soa como “MÉ-ra-thon”.')],
+    hot4=('👟', 'sneakers', 'tênis', 'I run in my sneakers.', 'Eu corro de tênis.'),
+    verbs=[('run', '🏃', 'correr', 'I run across the park.', 'I runs across the park.', 'I ran.', 'Corri.', 'run → **ran**.'),
+           ('walk', '🚶', 'andar', 'We walk every day.', 'We walks every day.', 'We walked.', 'Andamos.', 'we **walk**.'),
+           ('come', '🚪', 'vir', 'Come with me.', 'Come with I.', 'He came.', 'Ele veio.', 'come → **came**.'),
+           ('change', '🔄', 'mudar', 'I changed my habits.', 'I changed of habits.', 'I change.', 'Mudo.', 'change **+ objeto**.')],
+    lines=[['Jenny', 'You look healthier. What changed?', 'Você parece mais saudável. O que mudou?'],
+           ['Forrest', 'I cut back on snacks.', 'Diminuí os lanches.'],
+           ['Jenny', 'And the trip to the lake?', 'E a viagem ao lago?'],
+           ['Forrest', 'The storm cut it short.', 'A tempestade a encurtou.'],
+           ['Jenny', 'Pity. Did you run much?', 'Pena. Você correu muito?'],
+           ['Forrest', 'I cut across the park every day.', 'Eu cortava caminho pelo parque todo dia.'],
+           ['Jenny', 'Good for you. Health comes first.', 'Muito bem. A saúde vem primeiro.'],
+           ['Forrest', 'Yes. And I do not cut in line anymore.', 'Sim. E não furo mais fila.']],
+    quiz=[('What did he cut back on?', 'No que ele pegou leve?', [('🍪', 'Snacks'), ('🍬', 'Sugar'), ('☕', 'Coffee')], 0, 1, 'Forrest diz: “I cut back on snacks.”'),
+          ('What cut the trip short?', 'O que encurtou a viagem?', [('⛈️', 'The storm'), ('🚗', 'The car'), ('💸', 'No money')], 0, 3, 'Forrest diz: “The storm cut it short.”'),
+          ('Where does he cut across?', 'Por onde ele corta caminho?', [('🌳', 'The park'), ('🏫', 'The school'), ('🏢', 'The office')], 0, 5, 'Forrest diz: “cut across the park.”')],
+    fill=[['Do you want to jog with me tomorrow?', 'Quer correr comigo amanhã?'], ['At what time? I start at six.', 'A que horas? Eu começo às seis.'],
+          ['Six is fine. I will bring water.', 'Seis horas está bom. Levo água.'], ['Then wear your sneakers.', 'Então calce o tênis.']])
+
+OVR[82072] = dict(fill=[['The king is waiting for the choice.', 'O rei espera pela escolha.'], ['I would pick the right door.', 'Eu escolheria a porta da direita.'],
+                        ['Why the right one?', 'Por que a da direita?'], ['It is only a feeling.', 'É só uma sensação.']])
+
+OVR[7082072] = dict(
+    names=('Ratty', 'Mole'), ids=['tom', 'tommy'], rs='street',
+    cv='À beira do rio, Ratty e Mole avaliam se vai chover no piquenique.',
+    obra=('It is likely to rain.', 'É provável que chova.'),
+    vocab=[('🧺', 'picnic', 'piquenique', 'Soa como “PÍK-nik”.'), ('🌊', 'river', 'rio', 'Soa como “RÍ-ver”.'), ('🚣', 'boat', 'barco', 'Soa como “BÔUT”.'),
+           ('🌱', 'meadow', 'campo', 'Soa como “MÉ-dou”.'), ('☁️', 'cloud', 'nuvem', 'Soa como “KLÁUD”.'), ('🐸', 'toad', 'sapo', 'Soa como “TÔUD”.')],
+    verbs=[('row', '🚣', 'remar', 'We row on the river.', 'We rows on the river.', 'We rowed.', 'Remamos.', 'we **row**.'),
+           ('come', '🐸', 'vir', 'Will Toad come?', 'Will Toad comes?', 'He came.', 'Ele veio.', 'will + **come**.'),
+           ('happen', '🧺', 'acontecer', 'Will the picnic happen?', 'Will the picnic happens?', 'It happened.', 'Aconteceu.', 'will + **happen**.'),
+           ('hope', '🤞', 'esperar', 'I hope it is sunny.', 'I hope it will sunny.', 'I hoped.', 'Esperei.', 'hope **+ oração**.')],
+    lab=L('li2', 'Laboratório de sons: likely, cloud e odds', 'i soa ai; ou soa áu; o soa ó.', 'Em cloud, o ou soa áu.',
+          [('likely', 'LÁIK-li', 'provável', 'i = ai', 'lucky', 'LÂ-ki'), ('cloud', 'KLÁUD', 'nuvem', 'ou = áu', 'clown', 'KLÁUN'), ('odds', 'ÓDZ', 'chances', 'o = ó', 'ads', 'ÉDZ')]),
+    lines=[['Mole', 'Will the picnic happen?', 'O piquenique vai acontecer?'],
+           ['Ratty', 'It is likely to rain.', 'É provável que chova.'],
+           ['Mole', 'Will Toad come?', 'O Sapo vem?'],
+           ['Ratty', 'It is unlikely that he comes.', 'É improvável que ele venha.'],
+           ['Mole', 'Is there any chance of sun?', 'Há alguma chance de sol?'],
+           ['Ratty', 'There is no chance today.', 'Hoje não há chance.'],
+           ['Mole', 'And tomorrow?', 'E amanhã?'],
+           ['Ratty', 'There is a good chance.', 'Há uma boa chance.']],
+    quiz=[('What is likely?', 'O que é provável?', [('🌧️', 'Rain'), ('☀️', 'Sun'), ('❄️', 'Snow')], 0, 1, 'Ratty diz: “likely to rain.”'),
+          ('Will Toad come?', 'O Sapo vem?', [('🤔', 'Unlikely'), ('✅', 'Certainly'), ('🚫', 'Never')], 0, 3, 'Ratty diz: “unlikely that he comes.”'),
+          ('What about tomorrow?', 'E amanhã?', [('👍', 'A good chance'), ('🚫', 'No chance'), ('🌧️', 'Rain')], 0, 7, 'Ratty diz: “a good chance.”')],
+    fill=[['The clouds are getting darker.', 'As nuvens estão ficando mais escuras.'], ['Then we should eat early.', 'Então devemos comer cedo.'],
+          ['I will row us back to the bank.', 'Eu remo de volta até a margem.'], ['Fine. The basket is heavy.', 'Certo. A cesta está pesada.']])
+
+OVR[82074] = dict(fill=[['Did you pack the first-aid kit?', 'Você colocou o kit de primeiros socorros?'], ['Yes, and a torch as well.', 'Sim, e uma lanterna também.'],
+                        ['Then lock the door twice.', 'Então tranque a porta duas vezes.'], ['I always do.', 'Eu sempre faço isso.']])
+
+OVR[7082074] = dict(
+    names=('Kevin', 'Kate'), ids=['tommy', 'polly'], rs='lobby1',
+    cv='No saguão, Kevin e a mãe leem os avisos de segurança.',
+    obra=('In case of fire, use the stairs.', 'Em caso de incêndio, use a escada.'),
+    vocab=[('🚨', 'alarm', 'alarme', 'Soa como “a-LÁRM”.'), ('🔒', 'lock', 'trancar', 'Soa como “LÓK”.'), ('🔥', 'fire', 'fogo', 'Soa como “FÁI-er”.'),
+           ('🦹', 'burglar', 'ladrão', 'Soa como “BÂR-gler”.'), ('🩹', 'bandage', 'curativo', 'Soa como “BÉN-didj”.'), ('🚪', 'exit', 'saída', 'Soa como “ÉG-zit”.')],
+    lines=[['Kate', 'Why do you carry a first-aid kit?', 'Por que você carrega um kit de primeiros socorros?'],
+           ['Kevin', 'I take it in case I need it.', 'Levo caso eu precise.'],
+           ['Kate', 'And when do you use it?', 'E quando você usa?'],
+           ['Kevin', 'I will use it if somebody gets hurt.', 'Uso se alguém se machucar.'],
+           ['Kate', 'What does the sign say?', 'O que diz o aviso?'],
+           ['Kevin', 'In case of fire, use the stairs.', 'Em caso de incêndio, use a escada.'],
+           ['Kate', 'Safe advice.', 'Conselho seguro.'],
+           ['Kevin', 'Yes. I checked the alarm too.', 'Sim. Conferi o alarme também.']],
+    quiz=[('Why does he carry the kit?', 'Por que ele carrega o kit?', [('🎒', 'In case he needs it'), ('🎁', 'It is a gift'), ('🏠', 'It is heavy')], 0, 1, 'Kevin diz: “in case I need it.”'),
+          ('When will he use it?', 'Quando ele vai usar?', [('🤕', 'If somebody gets hurt'), ('🌙', 'Every night'), ('☀️', 'At noon')], 0, 3, 'Kevin diz: “if somebody gets hurt.”'),
+          ('What should you use in a fire?', 'O que usar num incêndio?', [('🪜', 'The stairs'), ('🛗', 'The lift'), ('🪟', 'The window')], 0, 5, 'Kevin diz: “use the stairs.”')],
+    fill=[['Mum, did you lock the back door?', 'Mãe, você trancou a porta dos fundos?'], ['Yes, and I set the alarm.', 'Sim, e liguei o alarme.'],
+          ['Then nobody gets in tonight.', 'Então ninguém entra esta noite.'], ['Sleep well, Kevin.', 'Durma bem, Kevin.']])

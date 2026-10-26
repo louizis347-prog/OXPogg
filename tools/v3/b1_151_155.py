@@ -1,7 +1,9 @@
 # B1 · episódios 151–155: negociar, avisar, deduções.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=82098, title='Negotiating', sub="negociar com condicionais: if you buy two, I will give; I can offer; meet halfway; counteroffer (discount, lower, halfway, offer, deal, counter)",

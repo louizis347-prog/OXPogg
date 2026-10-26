@@ -1,7 +1,9 @@
 # B1 · episódios 156–160: deduções no passado, phrasal verbs com hold, não é necessário.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=7082101, title='Deduções', sub="deduzir o passado: must have, cannot have, might have e could have (must, cannot, already, clue, obvious, conclude)",

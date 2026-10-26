@@ -1,7 +1,9 @@
 # B1 · episódios 136–140: arrependimento do que se fez, conectores de ênfase, unless e otherwise.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=7082087, title='Wish + past perfect', sub="arrepender-se do que fez: I wish I had not, I should not have e if only I had known (regret, only, abroad, opportunity, silent, served)",

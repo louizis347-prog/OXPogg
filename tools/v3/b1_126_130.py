@@ -1,7 +1,9 @@
 # B1 · episódios 126–130: second conditional (perguntas, conselhos, se eu fosse), phrasal verbs com fill.
 from v3.b1h import *
 
+from v3.ovrb1 import install
 EPS = []
+install(globals(), 'S')
 
 EPS.append(S(
     n=7082083, title='Second conditional', sub="perguntar no second conditional: what would you do if, would you e I would not (lottery, apologize, would, angel, wonderful, imagine)",
