@@ -1,7 +1,11 @@
 # A2 · episódios 239–243: No thank you/I'd rather not, Thanks for -ing but, That is why, although, I love your…
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- A2 239 · No, thank you · I’d rather not · maybe next time
 EPS.append(E(

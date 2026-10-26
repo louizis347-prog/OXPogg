@@ -1,5 +1,7 @@
 # A2 · episódios 392–396: When did you, formal email, I am writing to, can I have, extras.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

@@ -1,5 +1,7 @@
 # A2 · episódios 289–293: send/make/download, right now, post/share/follow, past -ed, worth + -ing.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

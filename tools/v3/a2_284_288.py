@@ -1,5 +1,7 @@
 # A2 · episódios 284–288: Could you…?, run out of/charge, this × that, I'd like, I'll have.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

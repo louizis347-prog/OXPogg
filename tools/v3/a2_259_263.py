@@ -1,5 +1,7 @@
 # A2 · episódios 259–263: take care of, called/named, My favorite…, chilly/mild, It is important to.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

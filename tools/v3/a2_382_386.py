@@ -1,5 +1,7 @@
 # A2 · episódios 382–386: Do you mind, was born, used to, by/with, with/without.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

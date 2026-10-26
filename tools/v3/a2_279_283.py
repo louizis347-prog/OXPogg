@@ -1,5 +1,7 @@
 # A2 · episódios 279–283: brindes, I hope/I wish you, do × make, tell/ask + pessoa + to, needs fixing.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

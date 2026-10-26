@@ -1,5 +1,7 @@
 # A2 · episódios 417–421: been/gone, gate, airport check-in, farmers market.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

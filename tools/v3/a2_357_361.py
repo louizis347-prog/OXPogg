@@ -1,5 +1,7 @@
 # A2 · episódios 357–361: team talk, adverbs -ly, CV, for × since, thank-you.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

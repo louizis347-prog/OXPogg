@@ -1,5 +1,7 @@
 # A2 · episódios 452–456: fractions, taste adjectives, one of the most, rich in/low in, several/a couple of.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

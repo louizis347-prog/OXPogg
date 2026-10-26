@@ -1,5 +1,7 @@
 # A2 · episódios 372–376: plenty of, slang, genres/as…as, forecast will, so… that.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

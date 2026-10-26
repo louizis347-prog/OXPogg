@@ -170,3 +170,8 @@ Menu inferior virou botão flutuante lateral (css/sidenav.css, js/sidenav.js).
 - Continuações e originais dos itens 173–330 reescritos (camadas `ovrb1_*.py`, obras em `obras_new_b1_173_250_*.json` e `obras_new_b1_251_330_a.json`). B1 inteiro (370): K8 obra/vocab/verbos/lab e K9 enchimento zerados; sobra K8 hot 3.
 - Fatos das obras vieram de memória: revisar (em especial Mil e Uma Noites, Romeu e Julieta, Cachinhos Dourados). Em 7082121, 7081271, 7082140, 7082141 e 7082196 algumas falas de objeto quente padrão não combinam totalmente com a obra nova. 7082016 e 7082021: troca de texto antigo não encontrada.
 - Próximo: elenco/arte genéricos (K3 54%, K4 89%), A2, A1, B1 371–530.
+
+## Inglês A2 — 15 episódios publicados no modelo (7081001, 7081006, 7081007, 7920001, 7081008, 7081009, 7081011, 7081012, 7920002, 7081015, 7081016, 7081018, 7081019, 7920003, 7081022)
+- Cada um com obra própria (Peter Rabbit, Peter Pan, Matilda, O Senhor dos Anéis, Heidi, Mulan, Aladdin, Dom Quixote, Harry Potter, Pinóquio, Hansel e Gretel, Mulherzinhas, Robinson Crusoé, Toy Story, Assassinato no Expresso do Oriente), sem repetir obra no curso. A2: obra repetida em vizinhos 233→218.
+- O resto do trabalho A2 (≈226 episódios 1–240 e 241–474) está nos módulos (`ova2*.py`, `ova2b*.py`) mas NÃO foi reconstruído em data/. Lista de obras do 241–474 que colidem com 1–240: ver relatório do agente (Hound of the Baskervilles, Mary Poppins, Singin' in the Rain, Forrest Gump etc.). Fatos das obras vêm de memória.
+- `fix_mechanical.py` sem argumento falha em B1 82258+ (hotscene sem `hot`): rodar com `en-a2` ou corrigir. 

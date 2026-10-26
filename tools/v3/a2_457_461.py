@@ -1,5 +1,7 @@
 # A2 · episódios 457–461: job duties, workplace relations, recovery, present perfect continuous, past review.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

@@ -1,5 +1,7 @@
 # A2 · episódios 387–391: fractions, most of/all of, How tall, height/length, ago/just now.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

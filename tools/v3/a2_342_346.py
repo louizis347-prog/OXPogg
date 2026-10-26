@@ -1,5 +1,7 @@
 # A2 · episódios 342–346: he wakes/she goes, single/return, how long, Would you like to, Shall we.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

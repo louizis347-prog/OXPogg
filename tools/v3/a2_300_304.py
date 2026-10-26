@@ -1,5 +1,7 @@
 # A2 · episódios 300–304: always/usually/never, university, already/yet, What is it about, have you ever.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 

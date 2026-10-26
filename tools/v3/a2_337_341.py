@@ -1,5 +1,7 @@
 # A2 · episódios 337–341: afford, too/enough, Where can I find, floors, first/then/finally.
 from v3.short import *
+from v3.ova2b import install as install_b
+install_b(globals())
 
 EPS = []
 
