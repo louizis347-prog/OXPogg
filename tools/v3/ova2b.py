@@ -30,6 +30,12 @@ def Q(q, pt, idx, *opts):
     return [q, pt, list(opts), 0, idx]
 
 
+def RP(n, verbs=None, vocab=None):
+    """Troca verbos/palavras repetidas com o episódio vizinho: verbs = {velho: tupla}, vocab = {velha: tupla}."""
+    o = OVR.setdefault(n, dict(names=None, ids=None, ob=None, vocab=None, hot=None, lines=None, quiz=None, verbs=None, lab=None, rs=None, cv=None, scene2=None, more={}))
+    o['rv'] = verbs or {}; o['rw'] = vocab or {}
+
+
 def VL(n, verbs=None, lab=None, vocab=None):
     """Troca só os verbos e/ou o laboratório de um episódio já declarado com X."""
     o = OVR.setdefault(n, dict(names=None, ids=None, ob=None, vocab=None, hot=None, lines=None, quiz=None, verbs=None, lab=None, rs=None, cv=None, scene2=None, more={}))
@@ -154,6 +160,12 @@ def install(g):
             vb = o['verbs']
             k['verbs'] = ('Verbos do episódio', 'Quatro verbos: ' + ', '.join(v[0] for v in vb[:3]) + ' e ' + vb[3][0] + '.', vb)
         if o['lab']: k['lab'] = o['lab']
+        if o.get('rv'):
+            vb = [o['rv'].get(v[0], v) for v in k['verbs'][2]]
+            k['verbs'] = ('Verbos do episódio', 'Quatro verbos: ' + ', '.join(v[0] for v in vb[:3]) + ' e ' + vb[3][0] + '.', vb)
+        if o.get('rw'):
+            k['vocab'] = [o['rw'].get(v[1], v) for v in k['vocab']]
+            k['sub'] = re.sub(r'\([^()]*\)\s*$', '(' + ', '.join(v[1] for v in k['vocab']) + ')', k['sub'])
         if o['cv']: k['cover'] = (k['cover'][0], o['cv'])
         k.update(o['more'])
         if k['n'] in GX: _derive(k, *GX[k['n']])

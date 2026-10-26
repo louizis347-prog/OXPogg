@@ -52,4 +52,51 @@ for p, b in built:
     for f in b['fr']:
         if f['k'] == 'pgscene' and f.get('title') == 'Na conversa de verdade' and sum(1 for l in f['lines'] if l[1] in FILL) >= 2:
             fl += 1; print('K9', p, b['n'])
+# --- nenhum quadro (exceto a revisão) pode citar a obra, o elenco ou as palavras antigas de um episódio reescrito ---
+from v3.ova2b import OLD, OVR, GX
+STOP = set('the and with from that this have what when your you are for not but can will was were all its his her they them their who how where which there here some more most very just about into over than then also only each other every'.split())
+tk = lambda t: set(w for w in re.findall(r"[a-zà-ú']+", t.lower()) if len(w) > 3 and w not in STOP)
+leaks = 0
+for p_, b in built:
+    o = OLD.get(b['n'])
+    if not o: continue
+    texts = {}
+    for f in b['fr']:
+        if f['k'] == 'review': continue
+        texts.setdefault(f['k'], '')
+        texts[f['k']] += ' ' + json.dumps(f, ensure_ascii=False)
+    new = tk(' '.join(texts.values()) if False else '')
+    allnew = set()
+    for f in b['fr']:
+        if f['k'] in ('pgscene', 'hotscene', 'cover'): allnew |= tk(json.dumps(f, ensure_ascii=False))
+    old = tk(o['obra']) | set(w for n_ in o['names'] for w in tk(n_)) | set(w for v in o['vocab'] for w in tk(v)) | set(w for h in o['hot'] for w in tk(h))
+    cur_names = tk(' '.join(set(x[0] for f in b['fr'] if f['k'] == 'pgscene' for x in f['lines'])))
+    old -= cur_names
+    allnew |= tk(repr(OVR.get(b['n']))) | tk(repr(GX.get(b['n'])))
+    old -= allnew | tk(' '.join(w[0] for w in (b.get('v') or [])))
+    for kind, t in texts.items():
+        hit = sorted(w for w in old if w in tk(t))
+        if hit: leaks += 1; print('CITA-ANTIGO', p_, b['n'], kind, hit)
+        if hit and os.environ.get('LEAKDBG') == str(b['n']):
+            for f in b['fr']:
+                if f['k'] == kind and not f['k'] == 'review':
+                    tt = json.dumps(f, ensure_ascii=False)
+                    for w in hit:
+                        m = re.search(r'\b' + w + r'\b', tt, re.I)
+                        if m: print('    >>', f.get('title'), tt[max(0, m.start() - 120):m.start() + 80])
+print('quadros citando a obra/palavras antigas:', leaks)
 print('problemas:', bad, '| K8:', rep, '| 1 palavra:', strict, '| K9:', fl, '| episódios:', len(built))
+# --- obras repetidas dentro do curso (e contra o A1 e o B1 já gravados) ---
+import collections
+seen = collections.defaultdict(list)
+for p_, b in built:
+    if p_ >= 241: seen[(b.get('a') or {}).get('w', '')].append(p_)
+for p_, e in enumerate(sorted([x for f in glob.glob(os.path.join(ROOT, 'data', 'en-a2_*.json')) for x in json.load(open(f, encoding='utf-8'))], key=lambda e: e['o']), 1):
+    if p_ < 241 or p_ > 474: seen[(e.get('a') or {}).get('w', '')].append(p_) if p_ < 241 else None
+other = collections.defaultdict(list)
+for c in ('en-a1', 'en-b1'):
+    for f in glob.glob(os.path.join(ROOT, 'data', c + '_*.json')):
+        for x in json.load(open(f, encoding='utf-8')): other[(x.get('a') or {}).get('w', '')].append(c + '#' + str(x['n']))
+dups = {w: v for w, v in seen.items() if w and len(v) > 1}
+print('obras repetidas dentro do A2:', {w: v for w, v in dups.items()})
+print('obras do A2 241–474 também no A1/B1:', {w: other[w][:3] for w in seen if w in other and any(p >= 241 for p in seen[w])})
