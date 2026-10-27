@@ -1,5 +1,7 @@
 # B1 · episódios 361–370: imprevistos de viagem, tradições, gírias de flagra, maravilhas naturais, fusos horários.
 from v3.b1h import *
+from v3.ovrb1 import install
+install(globals(), 'S')
 
 EPS = []
 
