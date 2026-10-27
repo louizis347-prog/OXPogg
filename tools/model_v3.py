@@ -60,9 +60,11 @@ def prev_from_pilot(it):
     if grid:
         words = [(f_['fig'], f_['say'], f_.get('ptWord', '')) for f_ in grid['items']]
     else:  # episódios feitos por outro fluxo: usa os objetos da cena clicável
-        words = [(h['e'], h['en'], h.get('pt', '')) for h in F['hotscene'][0]['hot']]
+        words = [(h.get('e') or '🔤', h.get('en') or h.get('label', ''), h.get('pt', '')) for h in F['hotscene'][0]['hot']]
     rule = F['pgrule'][0]['rule']
     base = dict(title=it['t'], wrap_recap=F['wrap'][0]['recap'], vocab=[[w, p, ''] for _e, w, p in words], balloons=[(e, w) for e, w, _p in words])
+    if isinstance(rule, str):  # episódios escritos por outro fluxo trazem a regra como texto corrido
+        rule = dict(head=it.get('pattern') or it['t'], sub=rule, uses=[])
     X = dict(base=base, hot=[], rule=dict(head=rule['head'], sub=rule['sub'], uses=rule.get('uses', [])), obra=dict(name=''))
     XT = dict(exp=F['pgexp'][0]['items'], lab=dict(short=F['pglab'][0]['short'], ex=F['pglab'][0]['ex']))
     return (X, XT, F['verbs'][0])
@@ -87,6 +89,8 @@ def main(only=None):
         P = eps[k - 1] if k else None
         if P and order.index(P['n']) == order.index(E['n']) - 1:
             prev = (P['v2'], P['extra'], P['verbs'])
+        elif order.index(E['n']) == 0:
+            prev = None
         else:
             pi = order[order.index(E['n']) - 1]
             pf, pj = where[pi]
