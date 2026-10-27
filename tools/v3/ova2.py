@@ -91,6 +91,7 @@ def install(g, style='E'):
         k['verbs'] = ('Verbos do episódio', 'Quatro verbos: ' + ', '.join(v[0] for v in vb[:3]) + ' e ' + vb[3][0] + '.', vb)
         x, y = o['names']
         k['exp_scene'] = list(k['exp_scene'][:4]) + [[x if i % 2 == 0 else y] + list(f) for i, f in enumerate(o['fill'])]
+        if o.get('post'): o['post'](k)  # gancho opcional: reescreve por completo os quadros derivados (gaps, regra, molde, missões, expressões)
         return base(**k)
 
     g['E'] = E2
