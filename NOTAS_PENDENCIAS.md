@@ -194,3 +194,6 @@ Obra própria, sem colisão no curso. Dos 60 candidatos só 20 passaram no filtr
 ## Inglês A2 — lote 7 publicado (60 episódios, troca de obras repetidas)
 7081024 7081041 7081045 7920008 7081059 81060 81071 7081076 7920011 7081082 7920013 7081093 7920014 7920016 7081122 81126 7081128 7081146 7920023 81164 7081169 81170 7081172 7081175 7920025 7081176 81177 7081177 81178 7081181 920026 7920026 7081183 7081187 7081189 7920027 7081190 81191 7081191 81194 7081194 81195 81196 7081196 7920028 81197 81201 7081201 81202 7081202 7081203 7920029 7081204 81209 7081209 7920030 7081211 81216 7081216 7081217
 Camadas: ova2_zz_a/ova2b_241_zz_a|b|c (novas obras de literatura, cinema, séries/teatro/jogos/mitos). A2: obra repetida em vizinhos 71; 386 obras distintas em 474 episódios (faltam lotes 2 e 3 de 148 trocas).
+
+## Inglês A2 — fim da troca de obras repetidas (88 episódios, lotes 8–9)
+Agora o A2 tem 474 obras distintas em 474 episódios (checagem com nome normalizado nos dados). Auditoria A2: K8 obra/vocab/lab/hot e K9 zerados; resta 1 repetição de verbos (7081241 com o vizinho). Falta: elenco/arte genéricos (K3/K4), revisão dos fatos das obras (memória), teste no navegador. Próximos: A1 (226 obras repetidas) e B1 371–530.
