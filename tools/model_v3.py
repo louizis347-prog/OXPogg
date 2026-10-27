@@ -14,7 +14,7 @@ from v3 import lib  # noqa: E402
 
 
 COURSE = os.environ.get('COURSE', 'en-a1')
-PREFIX = {'en-a2': 'a2_', 'en-b1': 'b1_'}.get(COURSE, 'ep_')
+PREFIX = {'en-a2': 'a2_', 'en-b1': 'b1_', 'en-b2': 'b2_'}.get(COURSE, 'ep_')
 
 
 def load_eps():
