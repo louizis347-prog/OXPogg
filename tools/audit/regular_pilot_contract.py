@@ -31,14 +31,18 @@ def audit(course, episodes):
         kinds = [frame.get('k') for frame in frames]
         if episode.get('presentation') != 'regular-pilot-v1':
             failures.append(f'{label}: presentation ausente')
-        if kinds != EXPECTED:
+        if ordinal != 1 and kinds != EXPECTED:
             failures.append(f'{label}: sequência de 19 quadros inválida')
         if len(episode.get('v') or []) != 6:
             failures.append(f'{label}: vocabulário deve ter exatamente 6 itens')
         scenes = [frame for frame in frames if frame.get('k') == 'pgscene']
-        if len(scenes) != 2 or any(len(frame.get('lines', [])) < 8 for frame in scenes):
-            failures.append(f'{label}: precisa de duas cenas com 8+ falas')
-        if len(frames) < 2 or frames[1].get('k') != 'review':
+        level = course.rsplit('-', 1)[-1]
+        minimum_second_scene = 6 if level in ('a1', 'a2') else 8
+        if (len(scenes) != 2 or len(scenes[0].get('lines', [])) < 8
+                or len(scenes[1].get('lines', [])) < minimum_second_scene):
+            failures.append(f'{label}: cenas precisam de 8 e {minimum_second_scene}+ falas')
+        # The opening lesson has no previous episode to put in the backpack.
+        if ordinal != 1 and (len(frames) < 2 or frames[1].get('k') != 'review'):
             failures.append(f'{label}: mochila de revisão ausente')
         verbs = next((frame for frame in frames if frame.get('k') == 'verbs'), {})
         if len(verbs.get('items', [])) != 4:
