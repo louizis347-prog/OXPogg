@@ -11,6 +11,23 @@ import model_v2 as M, model_v3 as V
 from v3 import lib
 import regular_pilot_contract as C
 
+import unicodedata
+_STOP = {'the', 'a', 'an', 'of', 'o', 'a', 'os', 'as', 'de', 'do', 'da', 'dos', 'das', 'e', 'and', 'la', 'le', 'el', 'torre', 'tower', 'museum', 'museu', 'filme', 'film'}
+
+
+def _toks(n):
+    n = unicodedata.normalize('NFKD', n.casefold()).encode('ascii', 'ignore').decode()
+    return {t for t in re.findall(r'[a-z0-9]+', n) if t not in _STOP}
+
+
+def similar(a, b):
+    """Mesma obra com grafia diferente (ex.: Torre Eiffel × Eiffel Tower): um nome contém o outro ou os termos coincidem."""
+    ta, tb = _toks(a), _toks(b)
+    if not ta or not tb:
+        return a.casefold() == b.casefold()
+    return ta <= tb or tb <= ta
+
+
 RS = set('cafe living market airport lobby station subway park pier lake nyc flags cafe2 airport2 lobby1 lobby2 sub2 tick cafe3 diner home1 yard park2 school shop office clinic kitchen bedroom bath counter gym hall street beach zoo farm playground busstop bakery supermarket bookshop postoffice bank pharmacy restaurant hotelroom mountain forest snow stage library museum castlehall garden fair pool stadium harbor chefkitchen musicroom traincar soccerfield fishing artroom nightcity meetingroom christmas pilotlibrary pilotelevator pilotsearch pilotstorm pilotmorning pilotautumn'.split())
 NAMED = set(re.findall(r"^\s*([A-Za-z0-9_]+):\s*\(\)\s*=>", ''.join(open(os.path.join(ROOT, 'js', f), encoding='utf-8').read() for f in ('chars.js', 'chars2.js', 'chars3.js', 'chars5.js')), re.M))
 NAMED |= set('bear mrs alice rabbit cat dorothy scarecrow lion wendy peter tinker hook cowboy ranger'.split())
@@ -60,6 +77,7 @@ def main(names):
         if n not in ns:
             datawork.setdefault(((e.get('a') or {}).get('w', '')).strip().casefold(), []).append(n)
     seen = {}
+    seen_names = set()
     built = []
     for k, (nm, E) in enumerate(mine):
         n = E['n']
@@ -84,6 +102,14 @@ def main(names):
             problems.append('%s ep%s: obra “%s” já é usada no B2 (episódios %s) — escolha outra' % (nm, n, E['v2']['obra']['name'], datawork[w][:4]))
         if w in other:
             problems.append('%s ep%s: obra “%s” já usada em outro módulo (%s)' % (nm, n, E['v2']['obra']['name'], other[w]))
+        for ow in list(datawork) + list(other):
+            if ow != w and similar(w, ow):
+                problems.append('%s ep%s: obra “%s” parece a mesma de “%s” (outro episódio) — escolha outra' % (nm, n, E['v2']['obra']['name'], ow))
+                break
+        for ow in list(seen_names):
+            if ow != w and similar(w, ow):
+                problems.append('%s ep%s: obra “%s” parece repetida no mesmo módulo (“%s”)' % (nm, n, E['v2']['obra']['name'], ow))
+        seen_names.add(w)
         if w in seen:
             problems.append('%s ep%s: obra “%s” repetida no mesmo módulo (ep%s)' % (nm, n, E['v2']['obra']['name'], seen[w]))
         seen[w] = n
