@@ -23,3 +23,11 @@ Você escreve um módulo `tools/v3/b2_NNN_MMM.py` com um episódio por chamada `
 
 ## Antes de entregar
 `python3 tools/b2gen/try.py b2_NNN_MMM` → `problemas: 0`. Releia: nenhuma obra repetida, fatos corretos, nenhuma tradução estranha, nenhuma resposta duvidosa, cenários variados, personagens coerentes com a obra.
+
+## Lote B2 52–99 (regras adicionais)
+- Briefs deste lote: `tools/b2gen/briefs_52_99.json` (`alvo` com o campo **`foco`**: o padrão/foco OBRIGATÓRIO de cada episódio — escrito para que nenhum episódio repita o de outro; `titulo_atual` é só referência e deve ser substituído por um título novo coerente com o foco; `todos` = os 510 B2 e as obras já usadas).
+- **Título, `pattern`, `sub` e `why` descrevem o `foco`.** Não ensine o foco do episódio vizinho.
+- `cover[0]` (subtítulo da capa) DEVE conter "Em 10 minutos" (ex.: "…. Em 10 minutos você …").
+- O vocabulário (6), os verbos (4), os `hot` (5) e os sons do laboratório de um episódio **não podem repetir** os do episódio imediatamente anterior ou seguinte (veja os módulos vizinhos; o do lote vizinho pode ainda não existir: escolha palavras específicas do SEU tema e som próprio).
+- Cada episódio tem a sua própria obra, mesmo quando o `titulo_atual` ou `obra_atual` do brief repete a do vizinho: **escolha obra nova** (só mantenha a atual se ela for única no B2 inteiro e combinar com o foco).
+- A obra e as cenas combinam com o foco (ex.: inversão formal → texto dramático/jurídico; gírias → série jovem).
