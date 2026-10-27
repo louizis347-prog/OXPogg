@@ -197,3 +197,6 @@ Camadas: ova2_zz_a/ova2b_241_zz_a|b|c (novas obras de literatura, cinema, série
 
 ## Inglês A2 — fim da troca de obras repetidas (88 episódios, lotes 8–9)
 Agora o A2 tem 474 obras distintas em 474 episódios (checagem com nome normalizado nos dados). Auditoria A2: K8 obra/vocab/lab/hot e K9 zerados; resta 1 repetição de verbos (7081241 com o vizinho). Falta: elenco/arte genéricos (K3/K4), revisão dos fatos das obras (memória), teste no navegador. Próximos: A1 (226 obras repetidas) e B1 371–530.
+
+## Inglês A1 — troca de obras repetidas (263 episódios, publicado)
+A1 passa a ter 466 obras distintas em 466 episódios (checagem com nome normalizado nos dados). Auditoria A1: K8 obra zerado; sobram repetições pontuais de hot (3), lab (1), verbos (3), vocab (4) entre vizinhos. Camadas: `ova1_zz_a/b/c`, dados `zz1_*`, `zz_b_*`, `zzc1_*`; 31 episódios dos módulos ep() longos trocados direto por `zz1_full`. Os 4 episódios de referência (2–5) intocados. Pendente: arte genérica (K4 94%), K12 (25), fatos das obras (memória), revisão no navegador. Obras que repetem com o A2 (ex.: The Martian, Tarzan) e outros níveis: ver relatórios dos agentes.

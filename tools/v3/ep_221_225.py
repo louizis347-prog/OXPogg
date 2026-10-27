@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 221 · I like · I don’t like + comida
 EPS.append(E(

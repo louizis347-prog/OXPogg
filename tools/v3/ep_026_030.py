@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 26 · total · tip · change · The Queen of Hearts
 EPS.append(E(

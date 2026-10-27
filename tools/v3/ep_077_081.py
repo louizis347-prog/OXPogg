@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 77 · early · late · on time · The Tortoise and the Hare
 EPS.append(E(

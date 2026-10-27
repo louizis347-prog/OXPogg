@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 246 · in the morning · at night
 EPS.append(E(

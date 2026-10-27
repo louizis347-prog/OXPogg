@@ -79,7 +79,7 @@ def OB(n, line_en, line_pt, p='b', text=None, year=None):
     here = os.path.dirname(os.path.abspath(__file__))
     redo = json.load(open(os.path.join(here, 'obras_redo.json'), encoding='utf-8'))
     import glob as _g
-    for _f in sorted(_g.glob(os.path.join(here, 'obras_new_b1_*.json')) + _g.glob(os.path.join(here, 'obras_new_a2_*.json'))):  # obras próprias das continuações do B1 (uma por episódio)
+    for _f in sorted(_g.glob(os.path.join(here, 'obras_new_b1_*.json')) + _g.glob(os.path.join(here, 'obras_new_a2_*.json')) + _g.glob(os.path.join(here, 'obras_new_a1_*.json'))):  # obras próprias das continuações do B1 (uma por episódio)
         redo.update(json.load(open(_f, encoding='utf-8')))
     if str(n) in redo:  # episódio refeito: obra vem do quadro da cena clicável anterior
         r = dict(redo[str(n)])

@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 OBRA = dict(name='The Nutcracker and the Mouse King', kind='🥜 Conto · 1816', year='1816',
             text='Conto de fadas do escritor alemão E. T. A. Hoffmann, publicado em 1816. Na véspera de Natal, uma menina ganha um quebra-nozes de madeira, que durante a noite ganha vida e lidera os brinquedos numa batalha contra o Rei dos Ratos. O balé de Tchaikovsky, de 1892, nasceu desse conto.',

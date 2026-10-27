@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 92 · have a drink · have a snack · have fun · The Very Hungry Caterpillar
 EPS.append(E(

@@ -59,6 +59,8 @@ def _labd(lab, hot0):
 
 
 def install(g, style='E'):
+    if 'E' not in g:  # módulos do A1 escritos com ep() (lib): sem camada, reescrever o episódio no próprio módulo
+        return
     base = g['E']
 
     def E2(**k):
@@ -96,7 +98,7 @@ def install(g, style='E'):
 
     g['E'] = E2
     here = os.path.dirname(os.path.abspath(__file__))
-    for f in sorted(glob.glob(os.path.join(here, 'ova2_*.py'))):
+    for f in sorted(glob.glob(os.path.join(here, 'ova2_*.py')) + glob.glob(os.path.join(here, 'ova1_*.py'))):
         importlib.import_module('v3.' + os.path.basename(f)[:-3])
 
 

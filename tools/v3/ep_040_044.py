@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 40 · What color is it? · The Wonderful Wizard of Oz
 EPS.append(E(

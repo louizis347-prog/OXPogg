@@ -2,6 +2,8 @@
 from v3.short import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 102 · Who? What? Which? · Who Killed Cock Robin?
 EPS.append(E(
