@@ -9,6 +9,10 @@ const smile=(x,y,w)=>`<path d="M${x-w} ${y} Q${x} ${y+w*.9} ${x+w} ${y}" stroke=
 const cheek=(x,y)=>`<ellipse cx="${x}" cy="${y}" rx="4.2" ry="2.6" fill="#ff8aa0" opacity=".4"/>`;
 const wrap=b=>`<svg class="ps-ch" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><ellipse cx="50" cy="146" rx="26" ry="3.6" fill="#000" opacity=".16"/>${b}</svg>`;
 const SHADOW_RE='<ellipse cx="50" cy="146" rx="26" ry="3.6" fill="#000" opacity=".16"/>';
+const HATS={cap:o=>`<path d="M27 38 Q28 16 50 16 Q72 16 73 38 Q50 30 27 38Z" fill="${o.hatc||'#c0392b'}"/><path d="M62 33 Q86 30 90 38 Q76 40 62 38Z" fill="${o.hatc||'#c0392b'}"/>`,
+    helmet:o=>`<ellipse cx="50" cy="34" rx="30" ry="6" fill="#b8bec7"/><path d="M26 34 Q28 12 50 12 Q72 12 74 34Z" fill="#cfd6de"/><rect x="48" y="12" width="4" height="10" fill="#e8434d"/>`,
+    beret:o=>`<ellipse cx="50" cy="24" rx="26" ry="9" fill="#2b2531"/>`,
+    chavo:o=>`<path d="M28 36 Q30 12 50 12 Q70 12 72 36Z" fill="#e8c25a"/><path d="M26 36 Q50 30 74 36" stroke="#b5902f" stroke-width="3" fill="none"/>`};
 function person(o){
   o=Object.assign({skin:SK,top:'#5b8def',bot:'#3a4a7a',shoe:'#4a3320',hair:'#3a2a22',hairStyle:'short',skirt:0,hat:'',beard:'',stache:'',front:'',extra:'',bare:0,arm:null},o);
   const sk=o.skin;
@@ -22,10 +26,7 @@ function person(o){
     bob:`<path d="M23 58 Q20 20 50 19 Q80 20 77 58 Q72 66 66 56 L34 56 Q28 66 23 58Z" fill="${o.hair}"/>`,
     bald:`<path d="M30 40 Q30 28 50 27 Q70 28 70 40 Q60 32 50 33 Q40 32 30 40Z" fill="${o.hair}"/>`,
     none:''};
-  const hat={cap:`<path d="M27 38 Q28 16 50 16 Q72 16 73 38 Q50 30 27 38Z" fill="${o.hatc||'#c0392b'}"/><path d="M62 33 Q86 30 90 38 Q76 40 62 38Z" fill="${o.hatc||'#c0392b'}"/>`,
-    helmet:`<ellipse cx="50" cy="34" rx="30" ry="6" fill="#b8bec7"/><path d="M26 34 Q28 12 50 12 Q72 12 74 34Z" fill="#cfd6de"/><rect x="48" y="12" width="4" height="10" fill="#e8434d"/>`,
-    beret:`<ellipse cx="50" cy="24" rx="26" ry="9" fill="#2b2531"/>`,
-    chavo:`<path d="M28 36 Q30 12 50 12 Q70 12 72 36Z" fill="#e8c25a"/><path d="M26 36 Q50 30 74 36" stroke="#b5902f" stroke-width="3" fill="none"/>`}[o.hat]||'';
+  const hat=(HATS[o.hat]?HATS[o.hat](o):'');
   const beard=o.beard?`<path d="M36 60 Q40 78 50 80 Q60 78 64 60 Q56 70 50 68 Q44 70 36 60Z" fill="${o.beard}"/>`:'';
   const stache=o.stache?`<path d="M38 60 Q50 54 62 60 Q56 66 50 62 Q44 66 38 60Z" fill="${o.stache}"/>`:'';
   return wrap(`${legs}${shoes}${body}${o.front}${arms}${o.extra}<circle cx="50" cy="48" r="24" fill="${sk}"/>${H[o.hairStyle]||H.short}${hat}${eye(41,48)}${eye(59,48)}${cheek(34,56)}${cheek(66,56)}${smile(50,58,6)}${stache}${beard}`);
@@ -54,6 +55,7 @@ const C={
   linguini:()=>person({top:'#e8e0cf',bot:'#4a4a55',hair:'#d9a441',hairStyle:'short',skin:'#f4c7a1',hat:'chavo',hatc:'#fff',shoe:'#2b1b12',extra:toque.replace('M30 36','M30 38')}),
   remy:()=>old.svg('townmouse').split('#9aa3b5').join('#8a7c70').split('#b8352f').join('#f4f4f6')
 };
+window.PogPerson={person,HATS,eye,smile,cheek,wrap,SK};
 const old=window.PogChars;
 window.PogChars={
   ids:old.ids.concat(Object.keys(C)),

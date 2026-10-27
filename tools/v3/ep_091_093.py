@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 91 · I'm New Here · The Town Mouse and the Country Mouse
 EPS.append(ep(

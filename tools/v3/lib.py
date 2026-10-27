@@ -71,3 +71,34 @@ def ep(n, title, sub, pattern, why, review, names, cast_ids, stage_rs, stage_cha
     vb = dict(title=verbs_title, tip=verbs_tip, items=verbs)
     more = dict(mold=mold, speak=speak, trap=mtrap, gap=mgap, expq=expq, missions=missions)
     return dict(n=n, v2=v2, extra=extra, verbs=vb, more=more)
+
+
+def OB(n, line_en, line_pt, p='b', text=None, year=None):
+    """Obra do episódio reaproveitada do episódio antigo (tools/v3/obras_old_121_160.json): nome, tipo, ano, texto e arte da capa."""
+    import json, os, re
+    here = os.path.dirname(os.path.abspath(__file__))
+    redo = json.load(open(os.path.join(here, 'obras_redo.json'), encoding='utf-8'))
+    import glob as _g
+    for _f in sorted(_g.glob(os.path.join(here, 'obras_new_b1_*.json')) + _g.glob(os.path.join(here, 'obras_new_a2_*.json')) + _g.glob(os.path.join(here, 'obras_new_a1_*.json'))):  # obras próprias das continuações do B1 (uma por episódio)
+        redo.update(json.load(open(_f, encoding='utf-8')))
+    if str(n) in redo:  # episódio refeito: obra vem do quadro da cena clicável anterior
+        r = dict(redo[str(n)])
+        r['year'] = r['kind'].split('· ')[-1]
+        r['line'] = [line_en, line_pt]
+        r['pa'] = dict(r['pa'], p=p)
+        return r
+    o = json.load(open(os.path.join(here, 'obras_old_121_160.json'), encoding='utf-8')).get(str(n))
+    if o is None:  # episódios 6–115, guardados do quadro cultob antigo
+        o = {**json.load(open(os.path.join(here, 'obras_old_006_115.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_181_200.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_201_230.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_231_250.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_251_350.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_351_466.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_a2.json'), encoding='utf-8')), **json.load(open(os.path.join(here, 'obras_old_b1.json'), encoding='utf-8'))}[str(n)]
+        ch = o['chips'] or []
+        o = dict(a=dict(w=o['work'], k=ch[0] if ch else '📖', y=(ch[1] if len(ch) > 1 else '')), panel=o['panel'], pa=o['pa'])
+    a = o['a']
+    if text is None:
+        t = o['panel'].strip()
+        if len(t) > 340:
+            t = t[:340]
+            t = t[:max(t.rfind('. '), t.rfind('.')) + 1]
+        text = t
+    pa = o['pa'] or {}
+    y = year or a['y']
+    return dict(name=a['w'], kind='%s · %s' % (a['k'], y), year=y, text=text, line=[line_en, line_pt], pa=dict(t=pa.get('t', 'toyshop'), e=pa.get('e', ['📖', '✨', '🎈']), p=p, v=0))

@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 86 · Rotina: at + hora · Pease Porridge Hot
 EPS.append(ep(
@@ -243,8 +245,7 @@ EPS.append(ep(
         ['Oliver', 'What time do we get up?', 'A que horas nos levantamos?'],
         ['Mr. Bumble', 'At six. I set the alarm.', 'Às seis. Eu programo o alarme.'],
         ['Oliver', 'Good night, sir.', 'Boa noite, senhor.'],
-        ['Mr. Bumble', '**Sleep tight**, Oliver!', 'Durma bem, Oliver!'],
-        ['Mr. Bumble', '(in the morning) **Rise and shine**!', '(de manhã) Acorde, é um novo dia!'],
+        ['Mr. Bumble', '**Sleep tight**, Oliver! (in the morning) **Rise and shine**!', 'Durma bem, Oliver! (de manhã) Acorde, é um novo dia!'],
         ['Oliver', 'Good morning! I want a snack.', 'Bom dia! Quero um lanche.']],
     lab=dict(
         short='i longo × i curto', title='Laboratório de sons: sleep × slip', say='Sleep ou slip? O “i” faz toda a diferença. Vamos treinar!',

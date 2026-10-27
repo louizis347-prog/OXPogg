@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 94 · This / That · Mary Had a Little Lamb
 EPS.append(ep(

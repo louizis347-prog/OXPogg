@@ -1,50 +1,65 @@
-/* Pogglot · personagens paramétricos (parte 4): qualquer personagem novo sem desenhar um SVG à mão.
-   "p:<cabelo>:<corCabelo>:<pele>:<corRoupa>:<acessório>:<traje>"  ex.: p:long:6b3f26:f4c7a1:c0392b:crown:dress
-   cabelo: short|long|bun|curly|bald|cap · acessório: none|glasses|hat|crown|scarf|beard|bow · traje: shirt|dress|suit
-   "e:<emoji>" = bicho/objeto como personagem (um emoji grande). Estende window.PogChars. */
+/* Pogglot · personagens ilustrados (parte 4): elenco dos primeiros episódios do A1 de português (para hispanofalantes), italiano e alemão.
+   Usa o mesmo desenho de js/chars3.js (PogPerson) e estende window.PogChars. */
 (function(){
 'use strict';
-if(!window.PogChars)return;
-const SK='#f4c7a1';
-const eye=(x,y,r)=>`<circle cx="${x}" cy="${y}" r="${r||3.2}" fill="#2a2230"/><circle cx="${x+1}" cy="${y-1.1}" r="${(r||3.2)*.38}" fill="#fff"/>`;
-const cheek=(x,y)=>`<ellipse cx="${x}" cy="${y}" rx="4.2" ry="2.6" fill="#ff8aa0" opacity=".45"/>`;
-const smile=(x,y,w)=>`<path d="M${x-w} ${y} Q${x} ${y+w*.9} ${x+w} ${y}" stroke="#7a3b2e" stroke-width="2" fill="none" stroke-linecap="round"/>`;
-const shadow='<ellipse cx="50" cy="146" rx="26" ry="3.6" fill="#000" opacity=".16"/>';
-const wrap=b=>`<svg class="ps-ch" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">${shadow}${b}</svg>`;
-const hand=(x,y,c)=>`<circle cx="${x}" cy="${y}" r="5.5" fill="${c||SK}"/>`;
-function param(id){
-  const [,hs='short',hc='3b2a20',sk='f4c7a1',top='2f5fa8',acc='none',out='shirt']=id.split(':');
-  const H='#'+hc,S='#'+sk,T='#'+top;
-  let body;
-  if(out==='dress')body=`<path d="M50 74 L24 132 Q50 142 76 132 Z" fill="${T}"/><rect x="40" y="74" width="20" height="10" rx="4" fill="${T}"/>`;
-  else if(out==='suit')body=`<path d="M28 130 Q24 86 38 76 L62 76 Q76 86 72 130 Z" fill="${T}"/><path d="M50 78 L44 100 L50 130 L56 100Z" fill="#fff"/><path d="M50 80 L47 92 L50 120 L53 92Z" fill="#c0392b"/>`;
-  else body=`<path d="M28 130 Q24 86 38 76 L62 76 Q76 86 72 130 Z" fill="${T}"/><path d="M50 76 V130" stroke="#00000022" stroke-width="2"/>`;
-  const legs=out==='dress'?'':`<rect x="37" y="126" width="10" height="18" rx="4" fill="#33415c"/><rect x="53" y="126" width="10" height="18" rx="4" fill="#33415c"/>`;
-  const shoes=`<ellipse cx="42" cy="144" rx="8" ry="3.4" fill="#2a2230"/><ellipse cx="58" cy="144" rx="8" ry="3.4" fill="#2a2230"/>`;
-  let back='',front='';
-  if(hs==='long')back=`<path d="M24 56 Q18 24 50 22 Q82 24 76 56 Q80 84 68 90 Q70 60 62 40 L38 40 Q30 60 32 90 Q20 84 24 56Z" fill="${H}"/>`;
-  if(hs==='bun')back=`<circle cx="50" cy="20" r="10" fill="${H}"/>`;
-  if(hs==='curly')back=`<circle cx="30" cy="40" r="11" fill="${H}"/><circle cx="70" cy="40" r="11" fill="${H}"/><circle cx="36" cy="28" r="12" fill="${H}"/><circle cx="64" cy="28" r="12" fill="${H}"/><circle cx="50" cy="24" r="13" fill="${H}"/>`;
-  if(hs!=='bald')front=`<path d="M26 46 Q26 22 50 22 Q74 22 74 46 Q66 34 50 34 Q34 34 26 46Z" fill="${H}"/>`;
-  if(hs==='cap')front=`<path d="M25 44 Q26 20 50 20 Q74 20 75 44 Z" fill="${T}"/><path d="M60 42 H84 Q84 46 78 47 H60Z" fill="${T}"/>`;
-  let ac='';
-  if(acc==='glasses')ac=`<circle cx="41" cy="50" r="7" fill="none" stroke="#2a2230" stroke-width="2"/><circle cx="59" cy="50" r="7" fill="none" stroke="#2a2230" stroke-width="2"/><path d="M48 50 H52" stroke="#2a2230" stroke-width="2"/>`;
-  if(acc==='hat')ac=`<ellipse cx="50" cy="32" rx="32" ry="6" fill="#7a4a24"/><path d="M32 32 Q34 12 50 12 Q66 12 68 32Z" fill="#9a5f30"/>`;
-  if(acc==='crown')ac=`<path d="M32 30 L36 12 L44 24 L50 10 L56 24 L64 12 L68 30Z" fill="#f2c94c" stroke="#b8891a" stroke-width="1.6"/>`;
-  if(acc==='scarf')ac=`<path d="M34 72 Q50 84 66 72 L68 82 Q50 94 32 82Z" fill="#c0392b"/>`;
-  if(acc==='beard')ac=`<path d="M30 56 Q50 92 70 56 Q62 72 50 72 Q38 72 30 56Z" fill="${H}"/>`;
-  if(acc==='bow')ac=`<path d="M50 24 L38 16 L38 32Z M50 24 L62 16 L62 32Z" fill="#e6568c"/><circle cx="50" cy="24" r="4" fill="#c2306b"/>`;
-  return wrap(`${legs}${shoes}${body}${hand(26,106,S)}${hand(74,106,S)}${back}<circle cx="50" cy="48" r="24" fill="${S}"/>${front}${eye(41,50)}${eye(59,50)}${cheek(35,58)}${cheek(65,58)}${acc==='beard'?'':smile(50,61,6)}${ac}`);
-}
-function emo(id){
-  const g=Array.from(id.slice(2))[0]||'🐾';
-  return wrap(`<ellipse cx="50" cy="118" rx="30" ry="22" fill="#00000012"/><text x="50" y="100" font-size="82" text-anchor="middle" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${g}</text>`);
-}
+if(!window.PogChars||!window.PogPerson)return;
+const {person,HATS}=window.PogPerson;
+HATS.tophat=o=>`<ellipse cx="50" cy="33" rx="26" ry="5" fill="#1c1722"/><rect x="35" y="8" width="30" height="26" rx="3" fill="#2b2531"/><rect x="35" y="24" width="30" height="5" fill="${o.hatc||'#8b1e2d'}"/>`;
+HATS.fedora=o=>`<ellipse cx="50" cy="34" rx="30" ry="6" fill="${o.hatc||'#4a3a30'}"/><path d="M32 34 Q34 14 50 15 Q66 14 68 34Z" fill="${o.hatc||'#4a3a30'}"/><path d="M33 31 Q50 36 67 31" stroke="#c9a064" stroke-width="3" fill="none"/>`;
+HATS.crown=o=>`<path d="M34 28 L38 14 L44 24 L50 12 L56 24 L62 14 L66 28Z" fill="#f2c94c" stroke="#b5902f" stroke-width="1.2"/>`;
+HATS.alpine=o=>`<ellipse cx="50" cy="32" rx="26" ry="5" fill="${o.hatc||'#5a6b3a'}"/><path d="M33 32 Q36 12 52 14 Q64 14 67 32Z" fill="${o.hatc||'#5a6b3a'}"/><path d="M60 22 L74 6" stroke="#e8434d" stroke-width="3" stroke-linecap="round"/>`;
+HATS.pointed=o=>`<path d="M30 34 L50 -2 L70 34Q50 28 30 34Z" fill="${o.hatc||'#f4f4f6'}" stroke="#d6d6d6" stroke-width="1.2"/>`;
+HATS.feather=o=>`<path d="M32 30 Q50 22 68 30" stroke="#d9a441" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M62 28 Q70 6 78 12 Q74 22 66 30Z" fill="#e8434d"/><path d="M58 28 Q62 8 70 6 Q68 18 62 30Z" fill="#2f9e6a"/>`;
+const glasses='<g fill="none" stroke="#3a3340" stroke-width="1.6"><circle cx="41" cy="48" r="6"/><circle cx="59" cy="48" r="6"/><path d="M47 48 H53"/></g>';
+const briefcase='<rect x="66" y="110" width="26" height="20" rx="3" fill="#6b4f2a"/><rect x="74" y="106" width="10" height="5" rx="2" fill="none" stroke="#6b4f2a" stroke-width="2"/>';
+const horn='<path d="M70 104 L92 96 L92 114Z" fill="#f2c94c" stroke="#b5902f" stroke-width="1.2"/><ellipse cx="70" cy="106" rx="4" ry="6" fill="#b5902f"/>';
+const nose='<path d="M54 50 L84 58 L54 58Z" fill="#c98a4a"/>';
+const cart='<path d="M62 100 H92 L88 124 H66Z" fill="none" stroke="#6b7280" stroke-width="2.4"/><circle cx="70" cy="130" r="3.6" fill="#6b7280"/><circle cx="84" cy="130" r="3.6" fill="#6b7280"/><path d="M62 100 L58 92" stroke="#6b7280" stroke-width="2.4"/>';
+const strands='<path d="M42 24 L40 8 M46 22 L45 4 M50 21 L50 2 M54 22 L55 4 M58 24 L60 8" stroke="#2a2230" stroke-width="2.4" stroke-linecap="round"/>';
+const apron='<path d="M38 92 H62 L66 126 H34Z" fill="#fff" opacity=".85"/>';
+const sash='<path d="M32 84 L68 120" stroke="#c0392b" stroke-width="7"/>';
+const scarf='<path d="M38 78 Q50 90 62 78 L64 84 Q50 96 36 84Z" fill="#c0392b"/>';
+const bag='<path d="M30 100 H48 L46 122 H32Z" fill="#6b4f2a"/><path d="M33 100 Q39 90 45 100" stroke="#4a3a28" stroke-width="2" fill="none"/>';
+const suspend='<path d="M40 80 V124 M60 80 V124" stroke="#8a5a2b" stroke-width="5"/>';
+const P=(o)=>()=>person(o);
+const C={
+  // português (Brasil)
+  monica:P({skirt:1,top:'#d9342b',hair:'#2a2230',hairStyle:'bob',shoe:'#d9342b',skin:'#f4c7a1'}),
+  cebolinha:P({top:'#3f9a5a',bot:'#3f9a5a',hair:'#2a2230',hairStyle:'bald',front:strands,shoe:'#f4f4f6'}),
+  benta:P({skirt:1,top:'#8a5a9a',hair:'#d4d4d4',hairStyle:'bob',extra:glasses,skin:'#f0c29b',shoe:'#4a3320'}),
+  pedrinho:P({top:'#c0392b',bot:'#3a4a7a',hair:'#4b3320',hairStyle:'short',hat:'cap',hatc:'#f2c94c'}),
+  bentinho:P({top:'#2b2531',bot:'#2b2531',hair:'#3a2a22',hairStyle:'short',hat:'tophat',hatc:'#5a5a62',skin:'#ecb790',shoe:'#1c1722',front:scarf}),
+  capitu:P({skirt:1,top:'#6a8fc0',hair:'#1c1722',hairStyle:'long',skin:'#e8b894',shoe:'#4a3320'}),
+  macunaima:P({top:'#d9a441',bot:'#6b4f2a',hair:'#1c1722',hairStyle:'short',hat:'feather',skin:'#b9764a',bare:1}),
+  mae:P({skirt:1,top:'#7a9a5a',hair:'#2a2230',hairStyle:'bob',skin:'#b9764a',front:apron,shoe:'#4a3320'}),
+  // italiano
+  pinocchio:P({top:'#d6453d',bot:'#f2c94c',hair:'#8a5a2b',hairStyle:'short',hat:'pointed',extra:nose,shoe:'#6b3a2a',skin:'#e8c08a'}),
+  geppetto:P({top:'#8a6a3b',bot:'#5a4a35',hair:'#e8e8e8',hairStyle:'bald',stache:'#e8e8e8',extra:glasses,front:apron,skin:'#e8b894',shoe:'#4a3320'}),
+  postino:P({top:'#4a6a8a',bot:'#4a6a8a',hair:'#3a2a22',hairStyle:'short',hat:'cap',hatc:'#2b4a7a',extra:bag,skin:'#e8b894'}),
+  neruda:P({top:'#4a4a55',bot:'#33333b',hair:'#cfcfcf',hairStyle:'bald',hat:'fedora',hatc:'#33333b',front:scarf,skin:'#e8b894',shoe:'#1c1722'}),
+  tancredi:P({top:'#c0392b',bot:'#2b2531',hair:'#3a2a22',hairStyle:'short',stache:'#3a2a22',skin:'#ecb790',shoe:'#1c1722'}),
+  principe:P({top:'#26386a',bot:'#1d2b4a',hair:'#5b4a3a',hairStyle:'bald',beard:'#5b4a3a',hat:'tophat',hatc:'#26386a',skin:'#e0aa84',shoe:'#1c1722'}),
+  anna:P({skirt:1,top:'#f4f4f6',hair:'#a8602a',hairStyle:'bob',hat:'crown',skin:'#f4c7a1',shoe:'#c9a064'}),
+  joe:P({top:'#8a7a6a',bot:'#4a4a55',hair:'#5b3b1c',hairStyle:'short',hat:'fedora',hatc:'#6b5a45',front:'<path d="M50 80 V126" stroke="#5a4a3a" stroke-width="2"/>',skin:'#ecb790'}),
+  marcovaldo:P({top:'#4a6aa0',bot:'#3a5a90',hair:'#3a2a22',hairStyle:'short',hat:'cap',hatc:'#4a5a7a',extra:cart,skin:'#e8b894'}),
+  domitilla:P({skirt:1,top:'#d9a441',hair:'#5b3b1c',hairStyle:'bob',front:apron,skin:'#f0c29b',shoe:'#6b3a2a'}),
+  // alemão
+  gregor:P({top:'#6b6b73',bot:'#4a4a52',hair:'#3a2a22',hairStyle:'short',extra:briefcase,front:'<path d="M46 80 L50 96 L54 80Z" fill="#c0392b"/>',skin:'#ecb790',shoe:'#1c1722'}),
+  prokurist:P({top:'#2b2531',bot:'#2b2531',hair:'#2a2230',hairStyle:'bald',stache:'#2a2230',hat:'tophat',hatc:'#2b2531',skin:'#e0aa84',shoe:'#1c1722'}),
+  sissi:P({skirt:1,top:'#5b8def',hair:'#6b3f26',hairStyle:'long',hat:'crown',skin:'#f4c7a1',shoe:'#c9a064'}),
+  franz:P({top:'#f4f4f6',bot:'#c0392b',hair:'#a8602a',hairStyle:'short',front:sash,stache:'#a8602a',skin:'#f0c29b',shoe:'#1c1722'}),
+  heidi:P({skirt:1,top:'#d86aa0',hair:'#6b3f26',hairStyle:'long',front:apron,skin:'#f4c7a1',shoe:'#6b3a2a'}),
+  grossvater:P({top:'#5a4a35',bot:'#6b5a45',hair:'#e8e8e8',hairStyle:'bald',beard:'#e8e8e8',stache:'#e8e8e8',hat:'alpine',skin:'#e0aa84',shoe:'#4a3320'}),
+  emil:P({top:'#4a6aa0',bot:'#3a4a7a',hair:'#3a2a22',hairStyle:'short',hat:'cap',hatc:'#3a4a7a',skin:'#f0c29b',shoe:'#4a3320'}),
+  gustav:P({top:'#d9a441',bot:'#5a4a35',hair:'#5b3b1c',hairStyle:'short',hat:'cap',hatc:'#c0392b',extra:horn,skin:'#ecb790'}),
+  hansel:P({top:'#f4f4f6',bot:'#8a5a2b',hair:'#d9a441',hairStyle:'short',front:suspend,skin:'#f4c7a1',shoe:'#4a3320'}),
+  gretel:P({skirt:1,top:'#e8c25a',hair:'#d9a441',hairStyle:'long',front:apron,skin:'#f4c7a1',shoe:'#6b3a2a'})
+};
 const old=window.PogChars;
-const mine=id=>id.startsWith('p:')?param(id):id.startsWith('e:')?emo(id):'';
+const SH='<ellipse cx="50" cy="146" rx="26" ry="3.6" fill="#000" opacity=".16"/>';
 window.PogChars={
-  ids:old.ids,
-  svg:id=>mine(id)||old.svg(id),
-  face:id=>{const s=mine(id);return s?s.replace('viewBox="0 0 100 150"',id.startsWith('e:')?'viewBox="8 28 84 84"':'viewBox="14 2 72 72"').replace(shadow,''):old.face(id)}
+  ids:old.ids.concat(Object.keys(C)),
+  svg:id=>C[id]?C[id]():old.svg(id),
+  face:id=>C[id]?C[id]().replace('viewBox="0 0 100 150"','viewBox="14 2 72 72"').replace(SH,''):old.face(id)
 };
 })();

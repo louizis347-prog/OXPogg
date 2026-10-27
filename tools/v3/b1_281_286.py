@@ -1,0 +1,170 @@
+# B1 · episódios 281–286: phrasal verbs com come e go, gírias de mensagens.
+from v3.b1h import *
+
+from v3.ovrb1 import install
+EPS = []
+install(globals(), 'S')
+
+def mk(n, title, sub, pat, why, names, ids, rs, obra, scenes, cover, teaser, rule, fm, vocab, lab, verbs, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return S(n=n, title=title, sub=sub, pattern=pat, why=why, names=names, ids=ids, rs=rs, obra=(obra, obra),
+             hot=hot, gaps=gaps, traps=traps, rule=rule, fm=fm, cover=cover, vocab=vocab, lines=lines, quiz=quiz,
+             teaser=teaser, exps=exps, lab=lab, verbs=verbs, mold=mold, prod=prod, m2=m2, scenes=scenes)
+
+# ---------- come ----------
+CM_VOCAB = [('🔍', 'come across', 'encontrar por acaso', 'Soa como “KÂM a-KRÓS”.'), ('💡', 'come up with', 'ter uma ideia', 'Soa como “KÂM âp uíth”.'), ('🤧', 'come down with', 'pegar (doença)', 'Soa como “KÂM dáun uíth”.'),
+            ('🔙', 'come back', 'voltar', 'Soa como “KÂM BÉK”.'), ('🚪', 'come in', 'entrar', 'Soa como “KÂM IN”.'), ('🏃', 'come on', 'vamos!', 'Soa como “KÂM ÓN”.')]
+CM_LAB = dict(short='cm', title='Laboratório de sons: come, across e clue', pt='o soa â em come; ue soa u; ss soa s.', tip='Em come, o o soa â.',
+              words=[('come', 'KÂM', 'vir', 'o = â', 'calm', 'KÁM'), ('across', 'a-KRÓS', 'através', 'o = ó', 'a cross', 'a-KRÓS-s'), ('clue', 'KLUU', 'pista', 'ue = u', 'claw', 'KLÓ')])
+CM_VERBS = [('come', '🔍', 'encontrar', 'I came across an old photo.', 'I came across to an old photo.', 'I came.', 'Vim.', 'come **across**.'),
+            ('come', '💡', 'ter ideia', 'She came up with a plan.', 'She came with up a plan.', 'I came up.', 'Surgiu.', 'come **up with**.'),
+            ('come', '🤧', 'adoecer', 'He came down with flu.', 'He came down of flu.', 'I came down.', 'Adoeci.', 'come **down with**.'),
+            ('come', '🔙', 'voltar', 'Come back soon.', 'Come back to soon.', 'I came back.', 'Voltei.', 'come **back**.')]
+
+def cm(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'The Da Vinci Code', scenes, cover, teaser, rule, fm, CM_VOCAB, CM_LAB, CM_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
+EPS.append(cm(82180, 'Come Across, Come Up With', "aprender phrasal verbs com come: come across, come up with, come down with, come back",
+    "phrasal verbs: come across · come up with · come down with · come back", "Hoje você aprende phrasal verbs com come: I came across an old photo. She came up with a plan. He came down with flu.",
+    ('Woman', 'Man'), ['polly', 'tom'], 'cafe2', ['cafe2', 'hall', 'living', 'street', 'office', 'park'],
+    ('Come Across, Come Up With: em 10 minutos você acha pistas e tem ideias em inglês', 'No café, a mulher e o homem seguem uma pista numa foto antiga.'), ('Mais com come', 'Próximo: Phrasal verbs com come'),
+    ('Come', 'Quatro sentidos novos.', 'Em português “achei por acaso”. Em inglês: **I came across**.'),
+    [('Come across', 'I', 'came across an old photo.', 'I came across an old photo.', 'come across.'), ('Come up with', 'She', 'came up with a plan.', 'She came up with a plan.', 'come up with.')],
+    [('Come across', 'I came across', 'encontrei por acaso', [(' an old photo.', ' uma foto antiga.'), (' a clue.', ' uma pista.'), (' your letter.', ' sua carta.')]), ('Come up with', 'She came up with', 'ela teve a ideia de', [(' a plan.', ' um plano.'), (' an idea.', ' uma ideia.'), (' a story.', ' uma história.')]), ('Come down with', 'He came down with', 'ele pegou', [(' flu.', ' gripe.'), (' a cold.', ' um resfriado.'), (' a fever.', ' febre.')])],
+    ('🔍', 'Come', 'Use come across, come up with e come down with', 'Fale. **Diga encontrei uma foto antiga, ela teve um plano e ele pegou gripe.**', 'come up with', 'I came across an old photo. She came up with a plan. He came down with flu.',
+     [('Usei come across?', r"\bcame\s+across\b", 'I came across an old photo.', 'Encontrei uma foto antiga.', 'Across! 🔍'), ('Usei come up with?', r"\bcame\s+up\s+with\b", 'She came up with a plan.', 'Ela teve um plano.', 'Up with! 💡'), ('Usei come down with?', r"\bcame\s+down\s+with\b", 'He came down with flu.', 'Ele pegou gripe.', 'Down! 🤧')]),
+    ('🏃', 'Fixas', 'Use come on, come to think of it e come what may', 'Fale. **Diga vamos, pensando bem e aconteça o que acontecer.**', 'come what may', 'Come on! Come to think of it, yes. Come what may.',
+     [('Disse come on?', r"\bcome\s+on\b", 'Come on!', 'Vamos!', 'On! 🏃'), ('Disse come to think of it?', r"\bcome\s+to\s+think\s+of\s+it\b", 'Come to think of it, yes.', 'Pensando bem, sim.', 'Think! 🤔'), ('Disse come what may?', r"\bcome\s+what\s+may\b", 'Come what may.', 'Aconteça o que acontecer.', 'May! 🌪️')]),
+    [('🔍', 'come across', 'encontrar', 'I came across an old photo.', 'Encontrei uma foto antiga.'), ('💡', 'come up with', 'ter ideia', 'She came up with a plan.', 'Ela teve um plano.'), ('🤧', 'come down with', 'pegar doença', 'He came down with flu.', 'Ele pegou gripe.'), ('🔙', 'come back', 'voltar', 'Come back soon.', 'Volte logo.'), ('🚪', 'come in', 'entrar', 'Come in, please.', 'Entre, por favor.')],
+    [('I came ___ an old photo.', 'Encontrei uma foto antiga.', ['across', 'out', 'at'], 0, 'came **across**.'), ('She came up ___ a plan.', 'Ela teve um plano.', ['with', 'to', 'for'], 0, 'came up **with**.'), ('He came down ___ flu.', 'Ele pegou gripe.', ['with', 'of', 'by'], 0, 'came down **with**.'), ('Come ___ soon.', 'Volte logo.', ['back', 'on to', 'by'], 0, 'come **back**.')],
+    [('Qual frase está certa?', ['She came up with a plan.', 'She came up a plan with.', 'She come up with a plan.'], 0, 'came up with.'), ('Qual está certa?', ['I came across an old photo.', 'I came across to an old photo.', 'I come across an old photo yesterday.'], 0, 'came across.')],
+    [['Woman', 'I came across an old photo yesterday.', 'Encontrei uma foto antiga ontem.'], ['Man', 'Is there a clue in it?', 'Há uma pista nela?'], ['Woman', 'Yes! I came up with a plan.', 'Sim! Tive um plano.'], ['Man', 'Come on, tell me.', 'Vamos, conte-me.'],
+     ['Woman', 'First we visit the museum.', 'Primeiro visitamos o museu.'], ['Man', 'Wait. Our guide came down with flu.', 'Espere. Nosso guia pegou gripe.'], ['Woman', 'Then we go alone. Come what may.', 'Então vamos sozinhos. Aconteça o que acontecer.'], ['Man', 'Okay.', 'Certo.']],
+    [('What did she find?', 'O que ela achou?', [('📷', 'An old photo'), ('🔑', 'A key'), ('💰', 'Money')], 0, 0, 'Diz: “an old photo.”'), ('What did she come up with?', 'O que ela teve?', [('📋', 'A plan'), ('🍰', 'A cake'), ('🎵', 'A song')], 0, 2, 'Diz: “came up with a plan.”'),
+     ('What happened to the guide?', 'O que houve com o guia?', [('🤧', 'He got flu'), ('✈️', 'He left'), ('😴', 'He slept')], 0, 5, 'Diz: “came down with flu.”')],
+    [('🏃', 'Come on', 'Vamos', 'incentivar', 'Come on!', 'Vamos!'), ('🤔', 'Come to think of it', 'Pensando bem', 'lembrar', 'Come to think of it, yes.', 'Pensando bem, sim.'), ('🌪️', 'Come what may', 'Aconteça o que acontecer', 'persistir', 'Come what may.', 'Aconteça o que acontecer.'), ('🎯', 'Come true', 'Virar realidade', 'realizar', 'Dreams come true.', 'Sonhos viram realidade.')]))
+
+EPS.append(cm(7082180, 'Phrasal verbs com come', "mais phrasal verbs com come: come out, come over, come round, come along (come in, come back)",
+    "phrasal verbs: come out · come over · come round · come along", "Hoje você aprende mais quatro com come: The book came out. Come over tonight. She came round. Come along!",
+    ('Girl', 'Boy'), ['polly', 'tommy'], 'living', ['living', 'home1', 'kitchen', 'cafe2', 'yard', 'school'],
+    ('Phrasal verbs com come: em 10 minutos você convida e acompanha em inglês', 'Em casa, a menina e o menino convidam amigos para ver um livro novo.'), ('Mais com come', 'Próximo: Phrasal verbs com go'),
+    ('Come', 'Mais quatro sentidos.', 'Em português “venha aqui hoje”. Em inglês: **come over tonight**.'),
+    [('Come over', 'Come over', 'tonight.', 'Come over tonight.', 'come over.'), ('Come out', 'The book', 'came out today.', 'The book came out today.', 'come out.')],
+    [('Come over', 'Come over', 'venha', [(' tonight.', ' hoje à noite.'), (' to my place.', ' até a minha casa.'), (' for dinner.', ' para jantar.')]), ('Come out', 'The book came out', 'o livro saiu', [(' today.', ' hoje.'), (' in May.', ' em maio.'), (' last year.', ' no ano passado.')]), ('Come along', 'Come along', 'venha junto', [(' with us.', ' conosco.'), (' now.', ' agora.'), (' quickly.', ' rápido.')])],
+    ('🏠', 'Come', 'Use come over, come out e come along', 'Fale. **Diga venha hoje à noite, o livro saiu hoje e venha junto.**', 'come along', 'Come over tonight. The book came out today. Come along!',
+     [('Usei come over?', r"\bcome\s+over\b", 'Come over tonight.', 'Venha hoje à noite.', 'Over! 🏠'), ('Usei come out?', r"\bcame\s+out\b", 'The book came out today.', 'O livro saiu hoje.', 'Out! 📖'), ('Usei come along?', r"\bcome\s+along\b", 'Come along!', 'Venha junto!', 'Along! 🚶')]),
+    ('🏃', 'Fixas', 'Use come round, come clean e come in handy', 'Fale. **Diga voltar a si, confessar e ser útil.**', 'come clean', 'She came round. He came clean. It will come in handy.',
+     [('Disse come round?', r"\bcame\s+round\b", 'She came round.', 'Ela voltou a si.', 'Round! 😵'), ('Disse come clean?', r"\bcame\s+clean\b", 'He came clean.', 'Ele confessou.', 'Clean! 🧼'), ('Disse come in handy?', r"\bcome\s+in\s+handy\b", 'It will come in handy.', 'Vai ser útil.', 'Handy! 🧰')]),
+    [('🏠', 'come over', 'vir à casa', 'Come over tonight.', 'Venha hoje à noite.'), ('📖', 'come out', 'sair (livro)', 'The book came out today.', 'O livro saiu hoje.'), ('🚶', 'come along', 'vir junto', 'Come along!', 'Venha junto!'), ('😵', 'come round', 'voltar a si', 'She came round.', 'Ela voltou a si.'), ('🧼', 'come clean', 'confessar', 'He came clean.', 'Ele confessou.')],
+    [('Come ___ tonight.', 'Venha hoje à noite.', ['over', 'in to', 'with'], 0, 'come **over**.'), ('The book came ___ today.', 'O livro saiu hoje.', ['out', 'up', 'on'], 0, 'came **out**.'), ('Come ___!', 'Venha junto!', ['along', 'with to', 'at'], 0, 'come **along**.'), ('She came ___.', 'Ela voltou a si.', ['round', 'down', 'by'], 0, 'came **round**.')],
+    [('Qual frase está certa?', ['Come over tonight.', 'Come to over tonight.', 'Comes over tonight.'], 0, 'come over.'), ('Qual está certa?', ['The book came out today.', 'The book came out to today.', 'The book come out today.'], 0, 'came out.')],
+    [['Girl', 'My favourite book came out today.', 'Meu livro favorito saiu hoje.'], ['Boy', 'Great! Can I come over tonight?', 'Ótimo! Posso ir aí hoje à noite?'], ['Girl', 'Yes. Come along with Sam too.', 'Sim. Venha junto com o Sam.'], ['Boy', 'He fainted yesterday, but he came round.', 'Ele desmaiou ontem, mas voltou a si.'],
+     ['Girl', 'Poor Sam!', 'Pobre Sam!'], ['Boy', 'He came clean about the prank.', 'Ele confessou a pegadinha.'], ['Girl', 'Ha! It will come in handy.', 'Ha! Vai ser útil.'], ['Boy', 'See you tonight.', 'Até hoje à noite.']],
+    [('What came out today?', 'O que saiu hoje?', [('📖', 'A book'), ('🎬', 'A film'), ('🎵', 'A song')], 0, 0, 'Diz: “book came out today.”'), ('Who can come along?', 'Quem pode vir junto?', [('🧑', 'Sam'), ('🐶', 'A dog'), ('👵', 'Grandma')], 0, 2, 'Diz: “come along with Sam.”'),
+     ('What did Sam do about the prank?', 'O que Sam fez sobre a pegadinha?', [('🧼', 'Came clean'), ('🏃', 'Ran away'), ('😴', 'Slept')], 0, 5, 'Diz: “came clean.”')],
+    [('😵', 'Come round', 'Voltar a si', 'recuperar', 'She came round.', 'Ela voltou a si.'), ('🧼', 'Come clean', 'Confessar', 'dizer a verdade', 'He came clean.', 'Ele confessou.'), ('🧰', 'Come in handy', 'Ser útil', 'servir', 'It will come in handy.', 'Vai ser útil.'), ('🌅', 'Come to', 'Recobrar a consciência', 'acordar', 'He came to.', 'Ele recobrou a consciência.')]))
+
+# ---------- go ----------
+GO_VOCAB = [('➡️', 'go on', 'continuar', 'Soa como “GÔU ÓN”.'), ('🧩', 'go through', 'passar por', 'Soa como “GÔU THRUU”.'), ('📝', 'go over', 'revisar', 'Soa como “GÔU ÔU-ver”.'),
+            ('🚶', 'go out', 'sair', 'Soa como “GÔU ÁUT”.'), ('✅', 'go ahead', 'pode ir', 'Soa como “GÔU a-RÉD”.'), ('🔙', 'go back', 'voltar', 'Soa como “GÔU BÉK”.')]
+GO_LAB = dict(short='go', title='Laboratório de sons: go, through e ahead', pt='o soa ôu; ough soa u; h inicial soa r.', tip='Em through, o th soa com a língua.',
+              words=[('go', 'GÔU', 'ir', 'o = ôu', 'got', 'GÓT'), ('through', 'THRUU', 'através', 'ough = uu', 'threw', 'THRUU-s'), ('ahead', 'a-RÉD', 'à frente', 'h = r', 'a head', 'a-RÉD-s')])
+GO_VERBS = [('go', '➡️', 'continuar', 'Please go on.', 'Please go in.', 'I went on.', 'Continuei.', 'go **on**.'),
+            ('go', '🧩', 'passar por', 'She went through a lot.', 'She went by a lot.', 'I went through.', 'Passei por.', 'go **through**.'),
+            ('go', '📝', 'revisar', 'Let us go over it.', 'Let us go up it.', 'I went over.', 'Revisei.', 'go **over**.'),
+            ('go', '🚶', 'sair', 'They go out on Friday.', 'They go in on Friday.', 'I went out.', 'Saí.', 'go **out**.')]
+
+def go(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'The Shawshank Redemption', scenes, cover, teaser, rule, fm, GO_VOCAB, GO_LAB, GO_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
+EPS.append(go(82181, 'Go On, Go Through', "aprender phrasal verbs com go: go on, go through, go over, go out, go ahead, go back",
+    "phrasal verbs: go on · go through · go over · go out", "Hoje você aprende phrasal verbs com go: Please go on with your story. She went through a lot. Let us go over it.",
+    ('Man', 'Woman'), ['tom', 'polly'], 'cafe2', ['cafe2', 'hall', 'office', 'street', 'park', 'living'],
+    ('Go On, Go Through: em 10 minutos você continua, revisa e atravessa em inglês', 'No café, o homem conta sua história de prisão e a mulher ouve.'), ('Mais com go', 'Próximo: Phrasal verbs com go'),
+    ('Go', 'Quatro sentidos novos.', 'Em português “continue sua história”. Em inglês: **go on with your story**.'),
+    [('Go on', 'Please', 'go on with your story.', 'Please go on with your story.', 'go on.'), ('Go through', 'She', 'went through a lot.', 'She went through a lot.', 'go through.')],
+    [('Go on', 'Please go on', 'por favor, continue', [(' with your story.', ' sua história.'), (' with the plan.', ' com o plano.'), (' talking.', ' falando.')]), ('Go through', 'She went through', 'ela passou por', [(' a lot.', ' muita coisa.'), (' hard times.', ' tempos difíceis.'), (' the door.', ' a porta.')]), ('Go over', 'Let us go over', 'vamos revisar', [(' it again.', ' de novo.'), (' the plan.', ' o plano.'), (' the notes.', ' as notas.')])],
+    ('➡️', 'Go', 'Use go on, go through e go over', 'Fale. **Diga continue sua história, ela passou por muita coisa e vamos revisar de novo.**', 'go over', 'Please go on with your story. She went through a lot. Let us go over it again.',
+     [('Usei go on?', r"\bgo\s+on\b", 'Please go on with your story.', 'Continue sua história.', 'On! ➡️'), ('Usei go through?', r"\bwent\s+through\b", 'She went through a lot.', 'Ela passou por muita coisa.', 'Through! 🧩'), ('Usei go over?', r"\bgo\s+over\b", 'Let us go over it again.', 'Vamos revisar de novo.', 'Over! 📝')]),
+    ('✅', 'Fixas', 'Use go ahead, go for it e go without saying', 'Fale. **Diga pode ir, vá em frente e nem precisa dizer.**', 'go without saying', 'Go ahead. Go for it! It goes without saying.',
+     [('Disse go ahead?', r"\bgo\s+ahead\b", 'Go ahead.', 'Pode ir.', 'Ahead! ✅'), ('Disse go for it?', r"\bgo\s+for\s+it\b", 'Go for it!', 'Vá em frente!', 'For! 🎯'), ('Disse go without saying?', r"\bgoes\s+without\s+saying\b", 'It goes without saying.', 'Nem precisa dizer.', 'Saying! 💬')]),
+    [('➡️', 'go on', 'continuar', 'Please go on with your story.', 'Continue sua história.'), ('🧩', 'go through', 'passar por', 'She went through a lot.', 'Ela passou por muita coisa.'), ('📝', 'go over', 'revisar', 'Let us go over it again.', 'Vamos revisar de novo.'), ('🚶', 'go out', 'sair', 'They go out on Friday.', 'Eles saem na sexta.'), ('✅', 'go ahead', 'pode ir', 'Go ahead.', 'Pode ir.')],
+    [('Please go ___ with your story.', 'Continue sua história.', ['on', 'in', 'to'], 0, 'go **on**.'), ('She went ___ a lot.', 'Ela passou por muita coisa.', ['through', 'across to', 'by'], 0, 'went **through**.'), ('Let us go ___ it again.', 'Vamos revisar de novo.', ['over', 'by to', 'at'], 0, 'go **over**.'), ('Go ___.', 'Pode ir.', ['ahead', 'before', 'ahed'], 0, 'go **ahead**.')],
+    [('Qual frase está certa?', ['Please go on with your story.', 'Please go in with your story.', 'Please goes on with your story.'], 0, 'go on.'), ('Qual está certa?', ['She went through a lot.', 'She went by a lot.', 'She go through a lot.'], 0, 'went through.')],
+    [['Woman', 'Tell me about the prison.', 'Conte-me sobre a prisão.'], ['Man', 'I went through hard times there.', 'Passei por tempos difíceis lá.'], ['Woman', 'Please go on with your story.', 'Por favor, continue sua história.'], ['Man', 'Every day I went over my plan.', 'Todo dia eu revisava meu plano.'],
+     ['Woman', 'And then?', 'E então?'], ['Man', 'One night I went out through a tunnel.', 'Uma noite saí por um túnel.'], ['Woman', 'Go for it, I thought!', 'Vá em frente, pensei!'], ['Man', 'It goes without saying: I never went back.', 'Nem precisa dizer: nunca voltei.']],
+    [('What did he go through?', 'Pelo que passou?', [('😔', 'Hard times'), ('🎉', 'A party'), ('🏖️', 'A holiday')], 0, 1, 'Diz: “hard times.”'), ('What did he go over daily?', 'O que revisava diariamente?', [('📋', 'His plan'), ('📚', 'A book'), ('🍽️', 'Menus')], 0, 3, 'Diz: “went over my plan.”'),
+     ('Did he go back?', 'Ele voltou?', [('🚫', 'Never'), ('✅', 'Yes'), ('🤷', 'Maybe')], 0, 7, 'Diz: “never went back.”')],
+    [('🎯', 'Go for it', 'Vá em frente', 'incentivar', 'Go for it!', 'Vá em frente!'), ('💬', 'Go without saying', 'Nem precisa dizer', 'óbvio', 'It goes without saying.', 'Nem precisa dizer.'), ('🚀', 'Go all out', 'Dar tudo', 'esforçar-se', 'We went all out.', 'Demos tudo.'), ('🍃', 'Go with the flow', 'Ir com a maré', 'adaptar-se', 'I go with the flow.', 'Vou com a maré.')]))
+
+EPS.append(go(7082181, 'Phrasal verbs com go', "mais phrasal verbs com go: go off, go away, go down, go up (go out, go back)",
+    "phrasal verbs: go off · go away · go down · go up", "Hoje você aprende mais quatro com go: The alarm went off. Go away! Prices go up. The sun goes down.",
+    ('Girl', 'Boy'), ['polly', 'tommy'], 'bedroom', ['bedroom', 'home1', 'living', 'kitchen', 'yard', 'school'],
+    ('Phrasal verbs com go: em 10 minutos você fala de alarme, preço e pôr do sol', 'No quarto, a menina e o menino acordam com o alarme.'), ('Mais com go', 'Próximo: Gírias de mensagens'),
+    ('Go', 'Mais quatro sentidos.', 'Em português “o alarme tocou”. Em inglês: **the alarm went off**.'),
+    [('Go off', 'The alarm', 'went off.', 'The alarm went off.', 'go off.'), ('Go away', '', 'Go away!', 'Go away!', 'go away.')][:1] + [('Go away', 'Please', 'go away!', 'Please go away!', 'go away.')],
+    [('Go off', 'The alarm', 'o alarme', [(' went off.', ' tocou.'), (' goes off at six.', ' toca às seis.'), (' went off twice.', ' tocou duas vezes.')]), ('Go up/down', 'Prices go', 'os preços', [(' up.', ' sobem.'), (' down.', ' caem.'), (' up every year.', ' sobem todo ano.')]), ('Go away', 'Please go', 'por favor, vá', [(' away!', ' embora!'), (' away now.', ' embora agora.'), (' away, noise.', ' embora, barulho.')])],
+    ('⏰', 'Go', 'Use go off, go up e go away', 'Fale. **Diga o alarme tocou, os preços sobem e vá embora.**', 'go away', 'The alarm went off. Prices go up. Please go away!',
+     [('Usei go off?', r"\bwent\s+off\b", 'The alarm went off.', 'O alarme tocou.', 'Off! ⏰'), ('Usei go up?', r"\bgo\s+up\b", 'Prices go up.', 'Os preços sobem.', 'Up! 📈'), ('Usei go away?', r"\bgo\s+away\b", 'Please go away!', 'Por favor, vá embora!', 'Away! 🚫')]),
+    ('🌅', 'Fixas', 'Use go bad, go wrong e go missing', 'Fale. **Diga estragar, dar errado e desaparecer.**', 'go missing', 'The milk went bad. Things go wrong. My keys went missing.',
+     [('Disse go bad?', r"\bwent\s+bad\b", 'The milk went bad.', 'O leite estragou.', 'Bad! 🥛'), ('Disse go wrong?', r"\bgo\s+wrong\b", 'Things go wrong.', 'As coisas dão errado.', 'Wrong! ❌'), ('Disse go missing?', r"\bwent\s+missing\b", 'My keys went missing.', 'Minhas chaves sumiram.', 'Missing! 🔑')]),
+    [('⏰', 'go off', 'tocar', 'The alarm went off.', 'O alarme tocou.'), ('📈', 'go up', 'subir', 'Prices go up.', 'Os preços sobem.'), ('📉', 'go down', 'cair', 'The sun goes down.', 'O sol se põe.'), ('🚫', 'go away', 'ir embora', 'Please go away!', 'Por favor, vá embora!'), ('🥛', 'go bad', 'estragar', 'The milk went bad.', 'O leite estragou.')],
+    [('The alarm went ___.', 'O alarme tocou.', ['off', 'out to', 'on'], 0, 'went **off**.'), ('Prices go ___.', 'Os preços sobem.', ['up', 'over', 'in'], 0, 'go **up**.'), ('The sun goes ___.', 'O sol se põe.', ['down', 'out', 'on'], 0, 'goes **down**.'), ('Please go ___!', 'Por favor, vá embora!', ['away', 'for', 'of'], 0, 'go **away**.')],
+    [('Qual frase está certa?', ['The alarm went off.', 'The alarm went of.', 'The alarm go off.'], 0, 'went off.'), ('Qual está certa?', ['Please go away!', 'Please go way!', 'Please goes away!'], 0, 'go away.')],
+    [['Girl', 'The alarm went off at six.', 'O alarme tocou às seis.'], ['Boy', 'Go away, noise!', 'Vá embora, barulho!'], ['Girl', 'The milk went bad too.', 'O leite também estragou.'], ['Boy', 'Prices go up every year.', 'Os preços sobem todo ano.'],
+     ['Girl', 'My keys went missing.', 'Minhas chaves sumiram.'], ['Boy', 'Things go wrong sometimes.', 'Às vezes as coisas dão errado.'], ['Girl', 'The sun goes down at seven.', 'O sol se põe às sete.'], ['Boy', 'Then we go out.', 'Então saímos.']],
+    [('When did the alarm go off?', 'Quando o alarme tocou?', [('6️⃣', 'At six'), ('7️⃣', 'At seven'), ('8️⃣', 'At eight')], 0, 0, 'Diz: “at six.”'), ('What went bad?', 'O que estragou?', [('🥛', 'The milk'), ('🍞', 'The bread'), ('🍎', 'The apple')], 0, 2, 'Diz: “The milk went bad.”'),
+     ('What went missing?', 'O que sumiu?', [('🔑', 'The keys'), ('📱', 'The phone'), ('👟', 'A shoe')], 0, 4, 'Diz: “keys went missing.”')],
+    [('🥛', 'Go bad', 'Estragar', 'perder a validade', 'The milk went bad.', 'O leite estragou.'), ('❌', 'Go wrong', 'Dar errado', 'falhar', 'Things go wrong.', 'As coisas dão errado.'), ('🔑', 'Go missing', 'Desaparecer', 'sumir', 'My keys went missing.', 'Minhas chaves sumiram.'), ('🌅', 'Go down', 'Pôr-se', 'anoitecer', 'The sun goes down.', 'O sol se põe.')]))
+
+# ---------- gírias de mensagens ----------
+MS_VOCAB = [('💬', 'DM', 'mensagem direta', 'Soa como “DI-ÉM”.'), ('📇', 'contact list', 'lista de contatos', 'Soa como “KÓN-tékt LÍST”.'), ('✔️', 'read receipt', 'confirmação de leitura', 'Soa como “RID ri-SIT”.'),
+            ('📶', 'data plan', 'plano de dados', 'Soa como “DÊI-ta PLÉN”.'), ('👥', 'group chat', 'grupo de mensagens', 'Soa como “GRUUP TCHÉT”.'), ('🔋', 'power bank', 'carregador portátil', 'Soa como “PÁU-er BÉNK”.')]
+MS_LAB = dict(short='ms', title='Laboratório de sons: text, chat e dude', pt='x soa ks; ch soa tch; u soa iu.', tip='Em dude, o u soa iu.',
+              words=[('text', 'TÉKST', 'mensagem', 'x = ks', 'tax', 'TÉKS'), ('chat', 'TCHÉT', 'conversa', 'ch = tch', 'cat', 'KÉT'), ('dude', 'DIUD', 'cara', 'u = iu', 'dud', 'DÂD')])
+MS_VERBS = [('hit', '👋', 'chamar', 'Hit me up later!', 'Hit up me later!', 'I hit.', 'Chamei.', 'hit me **up**.'),
+            ('text', '💬', 'mandar mensagem', 'Text me when you arrive.', 'Text to me when you arrive.', 'I texted.', 'Mandei mensagem.', 'text **me**.'),
+            ('chill', '😎', 'relaxar', 'Let us chill.', 'Let us chilling.', 'I chilled.', 'Relaxei.', 'let us **chill**.'),
+            ('charge', '🔋', 'carregar', 'I need to charge my phone.', 'I need charging my phone.', 'I charged.', 'Carreguei.', 'need to **charge**.')]
+
+def ms(n, title, sub, pat, why, names, ids, rs, scenes, cover, teaser, rule, fm, mold, prod, m2, hot, gaps, traps, lines, quiz, exps):
+    return mk(n, title, sub, pat, why, names, ids, rs, 'Mean Girls', scenes, cover, teaser, rule, fm, MS_VOCAB, MS_LAB, MS_VERBS, mold, prod, m2, hot, gaps, traps, lines, quiz, exps)
+
+EPS.append(ms(930040, 'Hit Me Up', "gírias de mensagens: hit me up, text me, chill, dude, legit (DM, group chat, read receipt)",
+    "gírias de mensagem: hit me up · text me · chill · legit", "Hoje você aprende gírias de mensagem: Hit me up later! Text me. Let us chill. That is legit.",
+    ('Girl', 'Boy'), ['polly', 'tommy'], 'school', ['school', 'hall', 'yard', 'cafe2', 'park', 'street'],
+    ('Hit Me Up: em 10 minutos você conversa por mensagem como um jovem americano', 'Na escola, a menina e o menino combinam um encontro por mensagem.'), ('Mais gírias', 'Próximo: Papo de mensagem'),
+    ('Gírias', 'Informal, só entre amigos.', 'Em português “me chama depois”. Em inglês: **hit me up later**.'),
+    [('Hit me up', 'Hit me up', 'later!', 'Hit me up later!', 'hit me up.'), ('Text me', 'Text me', 'when you arrive.', 'Text me when you arrive.', 'text me.')],
+    [('Hit me up', 'Hit me up', 'me chama', [(' later!', ' depois!'), (' tonight.', ' hoje à noite.'), (' on Friday.', ' na sexta.')]), ('Text me', 'Text me', 'mande mensagem', [(' when you arrive.', ' quando chegar.'), (' the address.', ' o endereço.'), (' a photo.', ' uma foto.')]), ('Let us chill', 'Let us chill', 'vamos relaxar', [(' at my place.', ' na minha casa.'), (' after class.', ' depois da aula.'), (' tonight.', ' hoje à noite.')])],
+    ('💬', 'Mensagem', 'Use hit me up, text me e let us chill', 'Fale. **Diga me chama depois, me mande mensagem quando chegar e vamos relaxar.**', 'let us chill', 'Hit me up later! Text me when you arrive. Let us chill.',
+     [('Usei hit me up?', r"\bhit\s+me\s+up\b", 'Hit me up later!', 'Me chama depois!', 'Hit! 👋'), ('Usei text me?', r"\btext\s+me\b", 'Text me when you arrive.', 'Me mande mensagem quando chegar.', 'Text! 💬'), ('Usei let us chill?', r"\blet\s+us\s+chill\b", 'Let us chill.', 'Vamos relaxar.', 'Chill! 😎')]),
+    ('🔋', 'Fixas', 'Use no cap, low-key e for real', 'Fale. **Diga sem mentira, discretamente e de verdade.**', 'no cap', 'No cap, it is great. I low-key love it. For real?',
+     [('Disse no cap?', r"\bno\s+cap\b", 'No cap, it is great.', 'Sem mentira, é ótimo.', 'Cap! 🧢'), ('Disse low-key?', r"\blow-key\b", 'I low-key love it.', 'Eu discretamente adoro.', 'Key! 🔑'), ('Disse for real?', r"\bfor\s+real\b", 'For real?', 'De verdade?', 'Real! ✅')]),
+    [('👋', 'hit me up', 'me chama', 'Hit me up later!', 'Me chama depois!'), ('💬', 'text me', 'me mande mensagem', 'Text me.', 'Me mande mensagem.'), ('😎', 'chill', 'relaxar', 'Let us chill.', 'Vamos relaxar.'), ('👥', 'group chat', 'grupo', 'Check the group chat.', 'Veja o grupo.'), ('🔋', 'power bank', 'carregador portátil', 'I have a power bank.', 'Tenho um carregador portátil.')],
+    [('___ me up later!', 'Me chama depois!', ['Hit', 'Hits', 'Hitting'], 0, '**Hit** me up.'), ('___ me when you arrive.', 'Me mande mensagem quando chegar.', ['Text', 'Texting to', 'Texts to'], 0, '**Text** me.'), ('Let us ___.', 'Vamos relaxar.', ['chill', 'chilling', 'chills'], 0, 'let us **chill**.'), ('I need to ___ my phone.', 'Preciso carregar meu celular.', ['charge', 'charging', 'charged'], 0, 'need to **charge**.')],
+    [('Qual frase está certa?', ['Hit me up later!', 'Hit up me later!', 'Hits me up later!'], 0, 'hit me up.'), ('Qual está certa?', ['Text me when you arrive.', 'Text to me when you arrive.', 'Texting me when you arrive.'], 0, 'text me.')],
+    [['Girl', 'Hit me up later!', 'Me chama depois!'], ['Boy', 'Sure. I will DM you.', 'Claro. Mando DM.'], ['Girl', 'Text me when you arrive.', 'Me mande mensagem quando chegar.'], ['Boy', 'My phone is low. I need a power bank.', 'Meu celular está fraco. Preciso de carregador.'],
+     ['Girl', 'No cap, I have one.', 'Sem mentira, eu tenho um.'], ['Boy', 'Let us chill after class.', 'Vamos relaxar depois da aula.'], ['Girl', 'Check the group chat.', 'Veja o grupo.'], ['Boy', 'Okay.', 'Certo.']],
+    [('What will he send?', 'O que ele vai mandar?', [('💬', 'A DM'), ('📧', 'An email'), ('📞', 'A call')], 0, 1, 'Diz: “I will DM you.”'), ('What does he need?', 'O que ele precisa?', [('🔋', 'A power bank'), ('🍕', 'Pizza'), ('🎧', 'Headphones')], 0, 3, 'Diz: “I need a power bank.”'),
+     ('Where is the plan?', 'Onde está o combinado?', [('👥', 'The group chat'), ('📄', 'A note'), ('📺', 'TV')], 0, 6, 'Diz: “group chat.”')],
+    [('🧢', 'No cap', 'Sem mentira', 'sinceridade', 'No cap, it is great.', 'Sem mentira, é ótimo.'), ('🔑', 'Low-key', 'Discretamente', 'moderado', 'I low-key love it.', 'Eu discretamente adoro.'), ('✅', 'For real', 'De verdade', 'confirmação', 'For real?', 'De verdade?'), ('🔥', 'That is lit', 'Isso é demais', 'elogio', 'That is lit!', 'Isso é demais!')]))
+
+EPS.append(ms(7930040, 'Papo de mensagem', "gírias de mensagens: dude, legit, bro, lol, brb, ttyl (contact list, data plan, read receipt)",
+    "abreviações: lol · brb · ttyl · omg · idk", "Hoje você aprende abreviações: lol, brb, ttyl, omg e idk. Dude, that is legit!",
+    ('Boy', 'Girl'), ['tommy', 'polly'], 'school', ['school', 'hall', 'yard', 'cafe2', 'park', 'street'],
+    ('Papo de mensagem: em 10 minutos você lê e escreve abreviações de chat', 'Na escola, o menino e a menina trocam mensagens cheias de siglas.'), ('Mais gírias', 'Próximo: Phrasal verbs com break'),
+    ('Siglas', 'Escritas, mas também faladas.', 'Em português “volto já”. Em inglês: **brb** (be right back).'),
+    [('BRB', 'I will', 'brb.', 'I will brb.', 'brb = be right back.'), ('TTYL', 'Okay,', 'ttyl.', 'Okay, ttyl.', 'ttyl = talk to you later.')],
+    [('LOL', 'That was so funny,', 'foi tão engraçado,', [(' lol.', ' kkk.'), (' lol!', ' kkk!'), (' lol, dude.', ' kkk, cara.')]), ('BRB', 'I will be right back,', 'volto já,', [(' brb.', ' brb.'), (' brb, dude.', ' brb, cara.'), (' brb, mom.', ' brb, mãe.')]), ('TTYL', 'Talk to you later,', 'falo com você depois,', [(' ttyl.', ' ttyl.'), (' ttyl, bro.', ' ttyl, mano.'), (' ttyl, friend.', ' ttyl, amigo.')])],
+    ('📱', 'Siglas', 'Use lol, brb e ttyl', 'Fale. **Diga kkk, volto já e falo com você depois.**', 'ttyl', 'That was funny, lol. I will be right back. Talk to you later.',
+     [('Usei lol?', r"\blol\b", 'That was funny, lol.', 'Foi engraçado, kkk.', 'LOL! 😂'), ('Usei be right back?', r"\bbe\s+right\s+back\b", 'I will be right back.', 'Volto já.', 'BRB! ⏳'), ('Usei talk to you later?', r"\btalk\s+to\s+you\s+later\b", 'Talk to you later.', 'Falo com você depois.', 'TTYL! 👋')]),
+    ('🔋', 'Fixas', 'Use I do not know, oh my god e by the way', 'Fale. **Diga não sei, meu deus e a propósito.**', 'oh my god', 'I do not know. Oh my god! By the way, who is it?',
+     [('Disse idk?', r"\bI\s+do\s+not\s+know\b", 'I do not know.', 'Não sei.', 'IDK! 🤷'), ('Disse omg?', r"\boh\s+my\s+god\b", 'Oh my god!', 'Meu deus!', 'OMG! 😱'), ('Disse btw?', r"\bby\s+the\s+way\b", 'By the way, who is it?', 'A propósito, quem é?', 'BTW! ❓')]),
+    [('😂', 'lol', 'kkk', 'That was funny, lol.', 'Foi engraçado, kkk.'), ('⏳', 'brb', 'volto já', 'I will brb.', 'Volto já.'), ('👋', 'ttyl', 'falo depois', 'Okay, ttyl.', 'Certo, falo depois.'), ('📇', 'contact list', 'lista de contatos', 'Check my contact list.', 'Veja minha lista de contatos.'), ('✔️', 'read receipt', 'confirmação de leitura', 'I turned off read receipt.', 'Desativei a confirmação de leitura.')],
+    [('That was funny, ___.', 'Foi engraçado, kkk.', ['lol', 'brb', 'ttyl'], 0, '**lol**.'), ('I will ___.', 'Volto já.', ['brb', 'lol', 'omg'], 0, '**brb**.'), ('Okay, ___.', 'Certo, falo depois.', ['ttyl', 'lol', 'brb'], 0, '**ttyl**.'), ('Check my ___ list.', 'Veja minha lista de contatos.', ['contact', 'contacting', 'contacts is'], 0, '**contact** list.')],
+    [('O que BRB quer dizer?', ['Be right back', 'Be real brave', 'Bring red books'], 0, 'brb = be right back.'), ('O que TTYL quer dizer?', ['Talk to you later', 'Take two yellow lemons', 'Tell them yours later'], 0, 'ttyl = talk to you later.')],
+    [['Boy', 'Dude, that video was so funny, lol.', 'Cara, aquele vídeo foi tão engraçado, kkk.'], ['Girl', 'OMG, send it!', 'Meu deus, manda!'], ['Boy', 'One sec, brb.', 'Um segundo, volto já.'], ['Girl', 'Did you see my message? I have read receipt on.', 'Você viu minha mensagem? Estou com confirmação de leitura.'],
+     ['Boy', 'I do not know. Check your data plan.', 'Não sei. Veja seu plano de dados.'], ['Girl', 'By the way, add me to the group chat.', 'A propósito, me adicione ao grupo.'], ['Boy', 'Done. ttyl!', 'Feito. Falo depois!'], ['Girl', 'Bye!', 'Tchau!']],
+    [('How was the video?', 'Como foi o vídeo?', [('😂', 'Funny'), ('😴', 'Boring'), ('😢', 'Sad')], 0, 0, 'Diz: “so funny, lol.”'), ('What does she ask?', 'O que ela pede?', [('➕', 'To be added'), ('🍕', 'Pizza'), ('🔋', 'A charger')], 0, 5, 'Diz: “add me to the group chat.”'),
+     ('How does he say goodbye?', 'Como ele se despede?', [('👋', 'ttyl'), ('😡', 'Go away'), ('🤐', 'Silence')], 0, 6, 'Diz: “ttyl!”')],
+    [('😱', 'OMG', 'Meu deus', 'surpresa', 'Oh my god!', 'Meu deus!'), ('🤷', 'IDK', 'Não sei', 'incerteza', 'I do not know.', 'Não sei.'), ('❓', 'BTW', 'A propósito', 'mudar de assunto', 'By the way, who is it?', 'A propósito, quem é?'), ('🙏', 'TBH', 'Para ser honesto', 'sinceridade', 'To be honest, it is great.', 'Para ser honesto, é ótimo.')]))

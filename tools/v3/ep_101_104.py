@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 101 · The Boy Next Door · Tom Sawyer
 EPS.append(ep(

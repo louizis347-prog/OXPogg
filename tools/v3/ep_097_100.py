@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 97 · Open the Book, Close the Door · Matilda
 EPS.append(ep(
