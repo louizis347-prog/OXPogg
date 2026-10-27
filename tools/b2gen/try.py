@@ -19,6 +19,12 @@ PARAM = re.compile(r'p:(short|long|bun|curly|bald|cap):[0-9a-fA-F]{6}:[0-9a-fA-F
 
 def mods_works(skip):
     w = {}
+    fixed = set()  # episódios substituídos por módulos b2_fix_*: a versão antiga não conta
+    for f in glob.glob(os.path.join(ROOT, 'tools', 'v3', 'b2_fix_*.py')):
+        try:
+            fixed |= {e['n'] for e in importlib.import_module('v3.' + os.path.basename(f)[:-3]).EPS}
+        except Exception:
+            pass
     for f in glob.glob(os.path.join(ROOT, 'tools', 'v3', 'b2_*.py')):
         name = os.path.basename(f)[:-3]
         if name in skip or name == 'b2lib':
@@ -28,6 +34,8 @@ def mods_works(skip):
         except Exception:
             continue
         for e in getattr(m, 'EPS', []):
+            if e['n'] in fixed and not name.startswith('b2_fix_'):
+                continue
             w.setdefault(e['v2']['obra']['name'].casefold(), []).append(e['n'])
     return w
 
