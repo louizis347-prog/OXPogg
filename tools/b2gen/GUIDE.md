@@ -37,3 +37,6 @@ Mesmas regras do lote 52–99; briefs em `tools/b2gen/briefs_100_147.json` (camp
 
 ## Expressões únicas (regra nova, vale para todos os lotes)
 Nenhuma expressão/phrasal verb/colocação ensinada em `exps` pode ser ensinada em OUTRO episódio do B2 (o validador compara com todos os episódios já prontos que vêm ANTES na trilha e com os outros módulos). Escolha expressões específicas do tema do episódio; a lista das já usadas está em `tools/b2gen/exp_dedup.json` (campo `used`).
+
+## Lote B2 148–195
+Mesmas regras (focos únicos em `tools/b2gen/briefs_148_195.json`; títulos curtos em inglês). O validador exige **expressão única** em todo o B2 e **obra única** (inclusive grafia/idioma diferentes). Evite repetir vocabulário, verbos, `hot` e sons do episódio vizinho (o 147 é `tools/v3/b2_142_147.py`). Para expressões, prefira as específicas do foco; `exp_dedup.json` (`used`) lista as já ensinadas.
