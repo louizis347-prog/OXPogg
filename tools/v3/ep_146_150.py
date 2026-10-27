@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 146 · Get Up, Get Dressed · Sleeping Beauty
 OBJ = OB(7910013, 'A dream is a wish your heart makes.', 'Um sonho é um desejo que o coração faz.', p='c', year='1959')

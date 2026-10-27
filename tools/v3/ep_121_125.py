@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 121 · Is There a Slide? · Jack and the Beanstalk
 OBJ = OB(30023, 'Fee-fi-fo-fum!', 'Fi-fi-fo-fum!', year='1807')

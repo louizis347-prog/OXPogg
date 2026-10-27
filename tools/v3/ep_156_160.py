@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 156 · Turn It Up, Turn It Down · Toy Story
 OBJ = OB(7910014, 'You’ve got a friend in me.', 'Você tem um amigo em mim.', p='c', year='1995')

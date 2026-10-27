@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 126 · Say Cheese! · London Bridge Is Falling Down
 OBJ = OB(7070047, 'Build it up with silver and gold.', 'Reconstrua com prata e ouro.', p='c', year='1744')

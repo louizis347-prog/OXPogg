@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 136 · Go Shopping, Go Swimming · The Magic School Bus
 OBJ = OB(7910012, 'Take chances, make mistakes, get messy!', 'Arrisque, erre, se suje!', p='c', year='1994')

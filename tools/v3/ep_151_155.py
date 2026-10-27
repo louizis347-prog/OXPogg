@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 151 · How Old Are You? · The Little Mermaid
 OBJ = OB(10169, 'Part of your world.', 'Parte do seu mundo.', p='b', year='1837')

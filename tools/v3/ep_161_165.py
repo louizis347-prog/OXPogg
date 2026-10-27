@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 161 · I Can, I Can't · When I Was One-and-Twenty
 OBJ = OB(70060, 'Give crowns and pounds and guineas, but not your heart away.', 'Dê coroas, libras e guinéus, mas não entregue o coração.', p='b', year='1896')

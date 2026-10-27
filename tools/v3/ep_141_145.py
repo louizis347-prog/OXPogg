@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 141 · A Table at the Cafe · The Lamplighter
 OBJ = OB(70052, 'My tea is nearly ready and the sun has left the sky.', 'Meu chá está quase pronto e o sol deixou o céu.', p='b', year='1885')

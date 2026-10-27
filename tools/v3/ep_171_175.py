@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 171 · The Biggest and the Best · Ben-Hur
 OBJ = OB(10173, 'The chariot race begins!', 'A corrida de bigas começa!', p='b', year='1880')

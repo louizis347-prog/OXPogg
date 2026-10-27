@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 166 · At the Campsite · Pop Goes the Weasel
 OBJ = OB(7070062, 'Up and down the city road, in and out the Eagle.', 'Para cima e para baixo na estrada da cidade.', p='c', year='1850')

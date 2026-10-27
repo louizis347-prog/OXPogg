@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 131 · Four Seasons · Little Bo-Peep
 OBJ = OB(70049, 'Little Bo-Peep has lost her sheep.', 'A pequena Bo-Peep perdeu suas ovelhas.', p='b', year='1805')

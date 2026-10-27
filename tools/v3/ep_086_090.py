@@ -2,6 +2,8 @@
 from v3.lib import *
 
 EPS = []
+from v3.ova2 import install
+install(globals(), 'E')
 
 # ---------------------------------------------------------------- 86 · Rotina: at + hora · Pease Porridge Hot
 EPS.append(ep(
