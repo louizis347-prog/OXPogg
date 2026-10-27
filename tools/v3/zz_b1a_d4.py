@@ -1,4 +1,4 @@
-# Lote ZZ-A B1, dados 4: Little Red Hen, Happy Prince, Boy Who Cried Wolf, Emperor's New Clothes, Town Mouse and Country Mouse, The Outsiders, Lion and the Mouse, Call of the Wild, David Copperfield.
+# Lote ZZ-A B1, dados 4: Little Red Hen, Happy Prince, Wolf and the Seven Little Goats, Emperor's New Clothes, Town Mouse and Country Mouse, The Outsiders, Lion and the Mouse, Call of the Wild, David Copperfield.
 from v3.zz_b1a_lib import EP
 
 # 7082120 · is it made? · is not produced · are they ground · by + agente
@@ -52,29 +52,29 @@ EP(7082121, 'street', ('Swallow', 'Happy Prince'), ['tommy', 'tom'],
     ('🙏', 'With pleasure', 'Com prazer', 'aceitar', 'With pleasure, I will help.', 'Com prazer, vou ajudar.'), ('💪', 'Be brave', 'Seja corajoso', 'incentivo', 'Be brave, little swallow.', 'Seja corajosa, andorinha.')])
 
 # 930027 · let down · let in · let out · let go
-EP(930027, 'park', ('Shepherd Boy', 'Old Farmer'), ['tommy', 'tom'],
-   ('The Boy Who Cried Wolf', '📖 Fábula', 'Esopo', 'uma fábula atribuída a Esopo sobre um pastor que grita lobo de brincadeira até que ninguém mais acredita nele.', 'falar de confiança e de decepcionar alguém com phrasal verbs de let', 'jungle', ['🐺', '🐑', '🔔']),
-   'Na colina, o menino pastor e o velho fazendeiro falam de deixar entrar, deixar sair, soltar e decepcionar.',
-   [('🐺', 'wolf', 'lobo', 'UÚLF'), ('🐑', 'flock', 'rebanho', 'FLÓK'), ('⛰️', 'hill', 'colina', 'HÍL'), ('🧑‍🌾', 'shepherd', 'pastor', 'SHÉ-perd'), ('🏘️', 'village', 'vila', 'VÍ-lidj'), ('🚪', 'gate', 'portão', 'GÊIT')],
-   [('😞', 'let down', 'decepcionar', 'Do not let the village down again.', 'Não decepcione a vila de novo.'),
-    ('🚪', 'let in', 'deixar entrar', 'Please let the sheep in before dark.', 'Por favor, deixe as ovelhas entrarem antes de escurecer.'),
-    ('🐑', 'let out', 'deixar sair', 'I let the flock out at dawn.', 'Eu deixei o rebanho sair ao amanhecer.'),
-    ('🪢', 'let go', 'soltar', 'Let go of the rope, boy!', 'Solte a corda, menino!'),
-    ('🐺', 'let me in', 'deixe-me entrar', 'Let me in, the wolf is here!', 'Deixe-me entrar, o lobo está aqui!')],
-   [('I let the flock out at dawn.', 'Eu deixei o rebanho sair ao amanhecer.'), ('Please let the sheep in before dark.', 'Por favor, deixe as ovelhas entrarem antes de escurecer.'),
-    ('Last week I shouted wolf just for fun.', 'Semana passada gritei lobo só por diversão.'), ('Do not let the village down again.', 'Não decepcione a vila de novo.'),
-    ('Let me in, the wolf is here!', 'Deixe-me entrar, o lobo está aqui!'), ('Let go of the rope, boy! Is it a joke again?', 'Solte a corda, menino! É outra brincadeira?'),
-    ('No, the wolf is real. The flock is lost!', 'Não, o lobo é de verdade. O rebanho está perdido!'), ('I am coming. Stay close to me.', 'Estou indo. Fique perto de mim.')],
-   [('When did the boy let the flock out?', 'Quando o menino soltou o rebanho?', 0, ('🌅', 'At dawn'), ('🌙', 'At night'), ('☀️', 'At noon')),
-    ('What must be let in before dark?', 'O que deve entrar antes de escurecer?', 1, ('🐑', 'The sheep'), ('🐺', 'The wolf'), ('🐔', 'The hens')),
-    ('What must the boy let go of?', 'Do que o menino deve soltar?', 5, ('🪢', 'The rope'), ('🐑', 'A sheep'), ('🚪', 'The gate'))],
-   [('shout', '📢', 'gritar', 'I shout from the hill.', 'He shouts from the hill.', 'He shouted all night.', 'Ele gritou a noite toda.'), ('watch', '👀', 'vigiar', 'I watch the flock.', 'She watches the flock.', 'We watched the hill.', 'Vigiamos a colina.'),
-    ('ring', '🔔', 'tocar o sino', 'I ring the bell.', 'He rings the bell.', 'He rang it twice.', 'Ele o tocou duas vezes.'), ('lose', '😢', 'perder', 'I lose a sheep.', 'He loses a sheep.', 'We lost the flock.', 'Perdemos o rebanho.')],
-   ('wo', 'Laboratório de sons: wolf, flock e village', 'o em wolf soa ú; fl junta f e l; age em village soa idj.', 'Em wolf, o soa ú: UÚLF.',
-    [('wolf', 'UÚLF', 'lobo', 'o = ú', 'wool', 'UÚL'), ('flock', 'FLÓK', 'rebanho', 'fl = fl', 'block', 'BLÓK'), ('village', 'VÍ-lidj', 'vila', 'age = idj', 'pillage', 'PÍ-lidj')]),
+EP(930027, 'home1', ('Mother Goat', 'Little Kid'), ['polly', 'tommy'],
+   ('The Wolf and the Seven Little Goats', '📖 Conto', 'Irmãos Grimm', 'um conto dos irmãos Grimm sobre uma cabra que manda os filhotes não abrirem a porta a ninguém enquanto um lobo tenta enganá-los.', 'falar de confiança e de deixar ou não deixar alguém entrar', 'jungle', ['🐐', '🐺', '🚪']),
+   'Em casa, a mãe cabra e o filhote falam de deixar entrar, deixar sair, soltar e decepcionar.',
+   [('🐐', 'goat', 'cabra', 'GÔUT'), ('🚪', 'door', 'porta', 'DÓR'), ('🐺', 'wolf', 'lobo', 'UÚLF'), ('🐾', 'paw', 'pata', 'PÓ'), ('🖍️', 'chalk', 'giz', 'TCHÓK'), ('🌲', 'forest', 'floresta', 'FÓ-rist')],
+   [('😞', 'let down', 'decepcionar', 'Do not let me down, my little ones.', 'Não me decepcionem, meus pequenos.'),
+    ('🚪', 'let in', 'deixar entrar', 'Do not let anyone in.', 'Não deixem ninguém entrar.'),
+    ('🐐', 'let out', 'deixar sair', 'I will let the kids out after lunch.', 'Vou deixar os filhotes saírem depois do almoço.'),
+    ('🐾', 'let go', 'soltar', 'Let go of the door, wolf!', 'Solte a porta, lobo!'),
+    ('🐺', 'let me in', 'deixe-me entrar', 'Let me in, I am your mother!', 'Deixe-me entrar, sou a sua mãe!')],
+   [('I am going to the forest. Do not let anyone in.', 'Vou à floresta. Não deixem ninguém entrar.'), ('We will not let anyone in, Mother.', 'Não vamos deixar ninguém entrar, mamãe.'),
+    ('Do not let me down, my little ones.', 'Não me decepcionem, meus pequenos.'), ('Mother, a voice says: Let me in, I am your mother!', 'Mamãe, uma voz diz: Deixe-me entrar, sou a sua mãe!'),
+    ('That voice is rough. It is the wolf. Hold the door.', 'Essa voz é rouca. É o lobo. Segure a porta.'), ('Let go of the door, wolf! Go away!', 'Solte a porta, lobo! Vá embora!'),
+    ('Good. I will let the kids out after lunch.', 'Bom. Vou deixar os filhotes saírem depois do almoço.'), ('Thank you, Mother. The wolf ran to the forest.', 'Obrigado, mamãe. O lobo correu para a floresta.')],
+   [('Where is Mother going?', 'Para onde a mamãe vai?', 0, ('🌲', 'To the forest'), ('🏖️', 'To the beach'), ('🏫', 'To school')),
+    ('Who is at the door, in the end?', 'Quem está na porta, no fim?', 4, ('🐺', 'The wolf'), ('🐐', 'Mother'), ('🐔', 'A hen')),
+    ('When will the kids go out?', 'Quando os filhotes vão sair?', 6, ('🍽️', 'After lunch'), ('🌅', 'At dawn'), ('🌙', 'At night'))],
+   [('knock', '🚪', 'bater à porta', 'I knock on the door.', 'He knocks on the door.', 'The wolf knocked twice.', 'O lobo bateu duas vezes.'), ('listen', '👂', 'escutar', 'I listen to the voice.', 'She listens to the voice.', 'We listened carefully.', 'Escutamos com atenção.'),
+    ('protect', '🛡️', 'proteger', 'I protect my kids.', 'She protects her kids.', 'They protected the house.', 'Eles protegeram a casa.'), ('run', '🏃', 'correr', 'I run home.', 'She runs home.', 'The wolf ran away.', 'O lobo fugiu.')],
+   ('go', 'Laboratório de sons: goat, door e chalk', 'oa em goat soa ôu; oor soa ór; em chalk o l é mudo e ch soa tch.', 'Em chalk, o l não soa: TCHÓK.',
+    [('goat', 'GÔUT', 'cabra', 'oa = ôu', 'got', 'GÓT'), ('door', 'DÓR', 'porta', 'oor = ór', 'dear', 'DÍR'), ('chalk', 'TCHÓK', 'giz', 'l é mudo', 'check', 'TCHÉK')]),
    [(0, 'down', 'up', 'off'), (1, 'in', 'on', 'at'), (2, 'out', 'in', 'off'), (3, 'go', 'on', 'up')],
-   [('😟', 'Be careful', 'Tenha cuidado', 'alerta', 'Be careful, the hill is steep.', 'Tenha cuidado, a colina é íngreme.'), ('😌', 'Calm down', 'Acalme-se', 'tranquilizar', 'Calm down and tell me the truth.', 'Acalme-se e diga a verdade.'),
-    ('⏳', 'Wait for me', 'Espere por mim', 'pedido', 'Wait for me at the gate.', 'Espere por mim no portão.'), ('🏃', 'Come quickly', 'Venha rápido', 'urgência', 'Come quickly, the flock is running.', 'Venha rápido, o rebanho está correndo.')])
+   [('🚫', 'Go away', 'Vá embora', 'recusar', 'Go away, wolf!', 'Vá embora, lobo!'), ('😨', 'Stay inside', 'Fiquem dentro', 'orientar', 'Stay inside until I come back.', 'Fiquem dentro até eu voltar.'),
+    ('🙌', 'Well done', 'Muito bem', 'elogio', 'Well done, my little ones.', 'Muito bem, meus pequenos.'), ('✋', 'Hold on', 'Segure firme', 'incentivo', 'Hold on to the door.', 'Segure firme a porta.')])
 
 # 7081341 · am having it done · had it made · will have it fixed · have already had
 EP(7081341, 'hall', ('Emperor', 'Weaver'), ['tom', 'tommy'],

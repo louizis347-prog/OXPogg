@@ -21,4 +21,9 @@ for f in glob.glob(os.path.join(H, 'obras_new_*.json')):
             print('colide', os.path.basename(f), k, v['name']); bad += 1
 for k, v in mine.items():
     if ':' in v['name']: print('dois-pontos', k); bad += 1
+for f in glob.glob(os.path.join(H, '..', '..', 'data', 'en-b1_*.json')):
+    for e in json.load(open(f, encoding='utf-8')):
+        m = re.search(r'"sticker": ?\{[^}]*?"sub": "([^"]*?) · ', json.dumps(e, ensure_ascii=False))
+        if m and N(m.group(1)) in names.values() and str(e['n']) not in mine:
+            print('colide data', e['n'], m.group(1)); bad += 1
 print('alvos', len(mine), 'problemas', bad)
