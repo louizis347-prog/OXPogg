@@ -34,3 +34,6 @@ Você escreve um módulo `tools/v3/b2_NNN_MMM.py` com um episódio por chamada `
 
 ## Lote B2 100–147
 Mesmas regras do lote 52–99; briefs em `tools/b2gen/briefs_100_147.json` (campo `foco` obrigatório; `todos` mostra as obras já usadas). A checagem de obra agora também detecta a **mesma obra com outra grafia ou idioma** (ex.: "Torre Eiffel" × "Eiffel Tower"): escolha obras claramente diferentes. Os episódios 1–99 já estão prontos: não repita palavras, verbos, expressões nem sons do episódio 99 no episódio 100 (veja `tools/v3/b2_094_099.py`).
+
+## Expressões únicas (regra nova, vale para todos os lotes)
+Nenhuma expressão/phrasal verb/colocação ensinada em `exps` pode ser ensinada em OUTRO episódio do B2 (o validador compara com todos os episódios já prontos que vêm ANTES na trilha e com os outros módulos). Escolha expressões específicas do tema do episódio; a lista das já usadas está em `tools/b2gen/exp_dedup.json` (campo `used`).

@@ -140,6 +140,27 @@ def main(names):
                     for r in d['kw']:
                         if not re.search(r, d['model'], re.I):
                             problems.append('ep%s missão %s: o modelo não casa com %s' % (n, ms['name'], r))
+    # expressões únicas no B2: nenhuma expressão de um episódio pode aparecer em outro episódio já pronto
+    usedx = {}
+    for n2, (f2, e2) in where.items():
+        if n2 in ns or e2.get('presentation') != 'regular-pilot-v1':
+            continue
+        for fr2 in e2['fr']:
+            if fr2['k'] == 'pgexp':
+                for x in fr2['items']:
+                    usedx.setdefault(x['en'].casefold().strip(), n2)
+    mine_x = {}
+    for nm, n, b in built:
+        for fr2 in b['fr']:
+            if fr2['k'] == 'pgexp':
+                for x in fr2['items']:
+                    k2 = x['en'].casefold().strip()
+                    if k2 in usedx and order.index(usedx[k2]) < order.index(n):
+                        problemas_x = '%s ep%s: expressão “%s” já é ensinada no episódio %s — troque por outra' % (nm, n, x['en'], usedx[k2])
+                        problems.append(problemas_x)
+                    elif k2 in mine_x and mine_x[k2] != n:
+                        problems.append('%s ep%s: expressão “%s” repetida no episódio %s do módulo — troque' % (nm, n, x['en'], mine_x[k2]))
+                    mine_x.setdefault(k2, n)
     for nm, n, b in built:
         for p in C.audit('en-b2', [(nm, b)]):
             if 'obra repetida' in p:
