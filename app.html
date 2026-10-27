@@ -1612,7 +1612,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=259').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=260').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.forEach(registerEpisodeGenders);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
