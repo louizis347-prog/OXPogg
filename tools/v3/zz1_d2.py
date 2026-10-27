@@ -49,30 +49,6 @@ EP(7070010, 'shop', ('Simon', 'Pieman'), ['tommy', 'tom'],
     ('👌', 'Sounds good', 'Combinado', 'aceitar', 'Sounds good. Here is the bill.', 'Combinado. Aqui está a nota.'),
     ('😋', 'Enjoy', 'Aproveite', 'desejar bom proveito', 'Enjoy the pie!', 'Aproveite a torta!')])
 
-# 7009806 · my + plural
-EP(7009806, 'living', ('Stuart', 'George'), ['tommy', 'tom'],
-   ('Stuart Little', '📖 Livro infantil', 1945, 'um livro infantil do americano E. B. White sobre um ratinho que nasce numa família de pessoas e vive aventuras na cidade de Nova York.', 'falar das pessoas da sua vida: my parents, my friends', 'toyshop', ['🐭', '⛵', '🏙️'], 'These are my parents.', 'Estes são os meus pais.'),
-   'Plural: pai e mãe', 'my + plural: my parents, my friends (parents, brothers, friends, cousins, pets, toys)',
-   'Hoje você aprende a falar de várias pessoas com my + plural: my parents, my friends, na casa do ratinho Stuart.',
-   'my + plural: em 10 minutos você fala dos seus pais e amigos',
-   'O Stuart apresenta os pais, os amigos e os primos ao George. Como se diz my parents e my friends?',
-   [('👨‍👩‍👦', 'parents', 'pais', 'PÉ-rents'), ('👦', 'brothers', 'irmãos', 'BRÂ-dherz'), ('🧑‍🤝‍🧑', 'friends', 'amigos', 'FRÉNDZ'), ('👫', 'cousins', 'primos', 'KÂ-zenz'), ('🐦', 'pets', 'bichos de estimação', 'PÉTS'), ('🧸', 'toys', 'brinquedos', 'TÓIZ')],
-   [('My parents are nice.', 'Os meus pais são legais.'), ('My brothers are at school.', 'Os meus irmãos estão na escola.'), ('My friends are in the park.', 'Os meus amigos estão no parque.'), ('My cousins are here.', 'Os meus primos estão aqui.'), ('My pets are small.', 'Os meus bichos de estimação são pequenos.')],
-   [('Hello, George! These are my parents.', 'Olá, George! Estes são os meus pais.'), ('Nice to meet you. My parents are at work.', 'Prazer em conhecer. Os meus pais estão no trabalho.'), ('My brothers and my friends are in the park.', 'Os meus irmãos e os meus amigos estão no parque.'), ('Your friends are small like you!', 'Os seus amigos são pequenos como você!'),
-    ('Yes. My cousins are small too.', 'Sim. Os meus primos também são pequenos.'), ('My cousins are big. They are tall.', 'Os meus primos são grandes. Eles são altos.'), ('My pets are two birds.', 'Os meus bichos de estimação são dois pássaros.'), ('Great! Your family is fun.', 'Que legal! A sua família é divertida.')],
-   [('Where are George’s parents?', 'Onde estão os pais do George?', 1, ('💼', 'At work'), ('🏞️', 'In the park'), ('🏫', 'At school')),
-    ('Where are Stuart’s friends?', 'Onde estão os amigos do Stuart?', 2, ('🏞️', 'In the park'), ('🏫', 'At school'), ('💼', 'At work')),
-    ('What are Stuart’s pets?', 'Quais são os bichos do Stuart?', 6, ('🐦', 'Two birds'), ('🐱', 'Two cats'), ('🐶', 'Two dogs'))],
-   [('play', '🎲', 'brincar', 'I play with my friends.', 'Stuart plays with his friends.', 'We play in the park.', 'Nós brincamos no parque.'), ('talk', '💬', 'conversar', 'I talk to my parents.', 'George talks to his parents.', 'We talk after school.', 'Nós conversamos depois da escola.'),
-    ('share', '🤝', 'dividir', 'I share my toys.', 'Stuart shares his toys.', 'Share the toys, please.', 'Divida os brinquedos, por favor.'), ('laugh', '😄', 'rir', 'I laugh with my cousins.', 'George laughs with his cousins.', 'We laugh a lot.', 'Nós rimos muito.')],
-   ('pa, br e ou', 'Laboratório de sons: parents, brothers e cousins', 'Em parents, o a soa “é”. Em brothers e cousins, o “o” e o “ou” soam “â”.', 'Em parents, a = é: PÉ-rents. Em brothers e cousins, o som é “â”: BRÂ-dherz, KÂ-zenz.',
-    [('parents', 'PÉ-rents', 'pais', 'a = é', 'parrots', 'PÁ-rots'), ('brothers', 'BRÂ-dherz', 'irmãos', 'o = â', 'bothers', 'BÓ-dherz'), ('cousins', 'KÂ-zenz', 'primos', 'ou = â', 'cause', 'KÓZ')]),
-   [(0, 'My', 'Me', 'Mine'), (1, 'brothers', 'brother', 'brotheres'), (2, 'are', 'is', 'am'), (3, 'My', 'Our', 'Me')],
-   [('🏠', 'Come and meet', 'Venha conhecer', 'convidar', 'Come and meet my parents.', 'Venha conhecer os meus pais.'),
-    ('😄', 'That’s great', 'Que ótimo', 'reagir', 'That’s great! My friends are here.', 'Que ótimo! Os meus amigos estão aqui.'),
-    ('🍀', 'You’re lucky', 'Você tem sorte', 'comentar', 'You’re lucky, your parents are nice.', 'Você tem sorte, os seus pais são legais.'),
-    ('👪', 'Big family', 'Família grande', 'comentar', 'A big family! My cousins are here.', 'Uma família grande! Os meus primos estão aqui.')])
-
 # 7070011 · He’s my… · She’s my…
 EP(7070011, 'park', ('Henry', 'Jessie'), ['tom', 'polly'],
    ('The Boxcar Children', '📖 Livro infantil', 1924, 'um livro infantil da americana Gertrude Chandler Warner sobre quatro irmãos que moram num vagão de trem abandonado na floresta.', 'dizer quem é cada pessoa da família: He’s my brother, She’s my sister', 'viaduct', ['🚃', '🌲', '🐕'], 'He’s my brother.', 'Ele é o meu irmão.'),
