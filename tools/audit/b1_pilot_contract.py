@@ -32,6 +32,18 @@ for position, (path, episode) in enumerate(target, 371):
         errors.append(f'{label}: cenas precisam de 8+ falas cada')
     if len((episode.get('v') or [])) != 6:
         errors.append(f'{label}: vocabulário deve ter exatamente seis itens')
+    verbs = next((frame for frame in frames if frame.get('k') == 'verbs'), {})
+    if len(verbs.get('items', [])) != 4:
+        errors.append(f'{label}: quadro de verbos deve ter exatamente quatro itens')
+    expressions = next((frame for frame in frames if frame.get('k') == 'pgexp'), {})
+    if len(expressions.get('items', [])) != 4:
+        errors.append(f'{label}: quadro de expressões deve ter exatamente quatro itens')
+    lab = next((frame for frame in frames if frame.get('k') == 'pglab'), {})
+    if len(lab.get('ex', [])) != 3 or len(lab.get('rounds', [])) != 3:
+        errors.append(f'{label}: laboratório precisa de três sons e três desafios')
+    missions = next((frame for frame in frames if frame.get('k') == 'pgmission'), {})
+    if len(missions.get('missions', [])) != 3:
+        errors.append(f'{label}: produção precisa de exatamente três missões')
     if not (episode.get('a') or {}).get('w'):
         errors.append(f'{label}: obra cultural ausente')
     review = frames[1] if len(frames) > 1 else {}
