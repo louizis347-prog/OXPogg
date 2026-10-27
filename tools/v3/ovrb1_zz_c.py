@@ -37,7 +37,14 @@ def _hook(base, k):
         H.E = real
     e = cap
     e['names'], e['ids'], e['rs'] = s['names'], s['ids'], s['rs']
+    old = e.get('obra')
+    ko = k.get('obra')
+    old_name = ko[0] if isinstance(ko, (tuple, list)) and ko and isinstance(ko[0], str) else (old.get('name') or (old.get('a') or {}).get('w') if isinstance(old, dict) else None)
     e['obra'] = work(k['n'])
+    if old_name:  # o subtítulo/teaser do episódio antigo pode citar a obra antiga
+        for f in ('sub', 'why', 'teaser'):
+            if isinstance(e.get(f), str) and old_name in e[f]:
+                e[f] = e[f].replace(old_name, s['w'][0])
     e['vocab'] = [(a, b, c, 'Soa como “%s”.' % d) for a, b, c, d in s['voc']]
     e['sub'] = re.sub(r'\([^()]*\)\s*$', '(' + ', '.join(v[1] for v in s['voc']) + ')', e['sub'])
     e['hot'] = [(v[0], v[1], v[2], h[0], h[1]) for v, h in zip(s['voc'], s['hot'])]
@@ -51,7 +58,7 @@ def _hook(base, k):
     vbs = [vb(*v) for v in s['verbs']]
     e['verbs'] = ('Verbos do episódio', 'Quatro verbos: ' + ', '.join(v[0] for v in vbs[:3]) + ' e ' + vbs[3][0] + '.', vbs)
     e['lab'] = L(s['lab'][0], s['lab'][1], s['lab'][2], s['lab'][3], s['lab'][4], list(s['hot'][0]))
-    e['cover'] = (e['cover'][0], s['cv'])
+    e['cover'] = (e['cover'][0].replace(old_name, s['w'][0]) if old_name else e['cover'][0], s['cv'])
     e['scenes'] = [s['rs']] + [x for x in (e.get('scenes') or []) if x != s['rs']][:5]
     r = dict(e['rule']); r['who'] = s['ids'][0]; e['rule'] = r
     _derive(e, s['gp'], s['ex'])
