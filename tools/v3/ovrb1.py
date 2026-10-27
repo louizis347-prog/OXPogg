@@ -4,6 +4,7 @@
 import re, glob, os, importlib
 
 OVR = {}
+HOOK = {}  # n -> f(base, k): substituição completa do episódio (camadas ovrb1_zz_*.py)
 
 
 def L(short, title, pt, tip, words):
@@ -50,6 +51,8 @@ def install(g, style):
     base = g['E'] if style == 'E' else g['S']
 
     def S2(**k):
+        if k.get('n') in HOOK:
+            return HOOK[k['n']](base, k)
         o = {} if k.get('n') in _fix() else OVR.get(k.get('n'), {})
         if o:
             _pre(k, o)
@@ -66,6 +69,8 @@ def install(g, style):
         return base(**k)
 
     def E2(**k):
+        if k.get('n') in HOOK:
+            return HOOK[k['n']](base, k)
         o = None if k.get('n') in _fix() else OVR.get(k.get('n'))
         if o is None:
             return base(**k)

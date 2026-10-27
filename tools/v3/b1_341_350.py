@@ -1,5 +1,7 @@
 # B1 · episódios 341–350: e-mail, freelancer, demissão, idioms do lado bom, conflitos no trabalho.
 from v3.b1h import *
+from v3.ovrb1 import install
+install(globals(), 'S')
 
 EPS = []
 
