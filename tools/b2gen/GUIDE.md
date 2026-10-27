@@ -40,3 +40,6 @@ Nenhuma expressão/phrasal verb/colocação ensinada em `exps` pode ser ensinada
 
 ## Lote B2 148–195
 Mesmas regras (focos únicos em `tools/b2gen/briefs_148_195.json`; títulos curtos em inglês). O validador exige **expressão única** em todo o B2 e **obra única** (inclusive grafia/idioma diferentes). Evite repetir vocabulário, verbos, `hot` e sons do episódio vizinho (o 147 é `tools/v3/b2_142_147.py`). Para expressões, prefira as específicas do foco; `exp_dedup.json` (`used`) lista as já ensinadas.
+
+## Lote B2 196–215
+Mesmas regras (focos únicos em `tools/b2gen/briefs_196_215.json`). Expressão única e obra única continuam obrigatórias; não repita vocabulário, verbos, `hot` ou som do episódio vizinho (o 195 é `tools/v3/b2_190_195.py`).
