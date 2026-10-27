@@ -30,8 +30,8 @@ for position, (path, episode) in enumerate(target, 371):
     scenes = [frame for frame in frames if frame.get('k') == 'pgscene']
     if len(scenes) != 2 or any(len(frame.get('lines', [])) < 8 for frame in scenes):
         errors.append(f'{label}: cenas precisam de 8+ falas cada')
-    if len((episode.get('v') or [])) < 6:
-        errors.append(f'{label}: menos de seis itens de vocabulário')
+    if len((episode.get('v') or [])) != 6:
+        errors.append(f'{label}: vocabulário deve ter exatamente seis itens')
     if not (episode.get('a') or {}).get('w'):
         errors.append(f'{label}: obra cultural ausente')
     review = frames[1] if len(frames) > 1 else {}
