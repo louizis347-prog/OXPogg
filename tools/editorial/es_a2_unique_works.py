@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 changes={
   169:('Coco','Los tres huastecos','1948','filme de Ismael Rodríguez','O filme mexicano acompanha três irmãos e a cultura musical popular; esta aula usa a serenata como situação autoral.'),
-  193:('Cien años de soledad','La historia oficial','1985','filme de Luis Puenzo','O filme argentino acompanha uma professora que revisita memórias e silêncios; esta aula usa a passagem do tempo numa situação autoral.'),
+  193:('Cien años de soledad','Machuca','2004','filme de Andrés Wood','O filme chileno acompanha dois meninos em uma escola dividida por tensões sociais; esta aula usa a passagem do tempo numa situação autoral.'),
   194:('La lengua de las mariposas','Conducta','2014','filme de Ernesto Daranas','O filme cubano acompanha um estudante e seu professor; esta aula usa estudo, esforço e apoio numa situação autoral.'),
   197:('La casa de Bernarda Alba','Arrugas','2011','filme de Ignacio Ferreras','A animação espanhola acompanha amizades e memória na velhice; esta aula usa a letra eñe em uma situação autoral.'),
 }
