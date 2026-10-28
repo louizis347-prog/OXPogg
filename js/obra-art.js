@@ -146,7 +146,7 @@ function svg(e,mode){const m=meta(e),id='obra-'+(++uid),view=mode==='sticker'?(V
  return `<svg class="obra-art obra-${esc(mode||'cover')}" data-obra="${esc(m.key)}" viewBox="${view}" width="800" height="450" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${esc(m.title)}"><defs><filter id="${id}-paper"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="${hash(m.w)%99}"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .16 0"/></filter><radialGradient id="${id}-v"><stop offset="55%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#2b1d3a" stop-opacity=".22"/></radialGradient></defs>${body(e,mode)}<rect width="800" height="450" filter="url(#${id}-paper)" opacity=".22" pointer-events="none"/><rect width="800" height="450" fill="url(#${id}-v)" pointer-events="none"/></svg>`;
 }
 function face(e){return svg(e,'face');}
-function playerState(){try{return window.P||((typeof P!=='undefined')?P:null)}catch(_){return null}}
+function playerState(){try{return window.P||(0,eval)('typeof P!=="undefined"&&typeof P==="object"?P:null')}catch(_){return null}}
 function coverFix(step,e){
  if(!step||!has(e))return;
  const host=step.querySelector('.ps-stage')||step.querySelector('.az-scene');
