@@ -1,7 +1,8 @@
 name: Trava de qualidade dos cursos regulares
 
 # Todo episódio dos cursos regulares marcado como regular-pilot-v1 precisa passar o contrato
-# (tools/audit/regular_pilot_contract.py): a densidade dos episódios 2–5 do inglês. Falha nova = checagem vermelha.
+# (tools/audit/regular_pilot_contract.py): a densidade dos episódios 2–5 do inglês, mais a ponte obra↔episódio e as expressões únicas
+# (nenhuma expressão ensinada em dois episódios do mesmo curso; só a mochila repete). Falha nova = checagem vermelha.
 # Para BLOQUEAR o merge, marque esta checagem como obrigatória em Settings > Branches (regra da main).
 on:
   pull_request:
@@ -20,6 +21,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Trava dos episódios (contrato + obra única + aderência ao plano)
         run: python3 tools/audit/regular_gate.py
+      - name: Autoteste da trava (cada defeito conhecido precisa reprovar)
+        run: python3 tools/audit/test_gate.py
       - name: Valida a ponte cultural do inglês regular
         run: python3 tools/audit/english_bridge_gate.py
       - name: Valida o mapeamento por episódio (obras, verbos, expressões únicos)
