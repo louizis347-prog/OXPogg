@@ -33,7 +33,7 @@ function rail(f,n){
   const cur=st[n],before=st.slice(0,n).filter(s=>s===cur).length;
   const es=typeof fxEsOn==='function'&&fxEsOn();const names=es?['Portada','Obra','Puente','Práctica','Final']:['Capa','Obra','Ponte','Prática','Final'];
   const seg=names.map((nm,i)=>{if(!cnt[i])return '';const fill=i<cur?100:i>cur?0:Math.round((before+1)/cnt[i]*100);
-    return `<div class="az-s ${i<cur?'done':i===cur?'on':''}" title="${nm}" style="flex:${cnt[i]>3?11:5}"><i style="width:${fill}%"></i></div>`}).join('');
+    return `<div class="az-s ${i<cur?'done':i===cur?'on':''}" title="${nm}" style="flex:1 1 0"><i style="width:${fill}%"></i></div>`}).join('');
   return `<div class="az-seg" role="progressbar" aria-label="${es?'Etapas del episodio':'Etapas do episódio'}" aria-valuemin="1" aria-valuemax="${fr.length}" aria-valuenow="${n+1}">${seg}</div><span class="az-pos"><b>${names[cur]}</b> ${n+1}/${fr.length}</span>`;
 }
 AZ.rail=rail;
@@ -51,6 +51,8 @@ function hero(f,e,st){
   const art=(()=>{try{if(window.PogCover)return `<div class="az-scene">${PogCover.svg(e,{full:true})}</div>`}catch(x){}return ''})();
   h.innerHTML=`${art||`<div class="az-orbit"><div class="az-blob"></div><div class="az-pg">${poggie({cls:'',scarf:'#FFE58A'})}</div>${bubs}</div>`}
    <span class="az-ep">${esc((tb.querySelector('.fx-ep')||{}).textContent||'')}</span><h1>${esc(e.t)}</h1><p>${esc(f.sub||'')}</p>`;
+  const coverSvg=h.querySelector('.az-scene svg');
+  if(coverSvg){coverSvg.setAttribute('preserveAspectRatio','xMidYMid meet');coverSvg.setAttribute('focusable','false');}
   old.replaceWith(h);tb.remove();
 }
 
