@@ -6,6 +6,11 @@ import glob
 import json
 import re
 from collections import Counter
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bridge_rules import bridge_failures  # noqa: E402
 
 COURSES = ("en-a1", "en-a2", "en-b1", "en-b2", "en-c1", "en-c2")
 MARKER = re.compile(
@@ -44,26 +49,15 @@ def main():
                     if work in cultural_works[course]:
                         failures.append(f"{course}:{e.get('n')}: obra cultural repetida")
                     cultural_works[course].add(work)
-                    if len(e.get("fr", [])) != 19:
-                        failures.append(f"{course}:{e.get('n')}: quantidade de quadros diferente de 19")
-                    if len(bridges) != 1:
-                        failures.append(f"{course}:{e.get('n')}: quadro bridge ausente/duplicado")
-                        continue
-                    b = bridges[0]
-                    text = " ".join(str(b.get(k) or "") for k in ("text", "coach", "topic"))
-                    if work.lower() not in text.lower():
-                        failures.append(f"{course}:{e.get('n')}: bridge sem obra")
-                    topic = str(b.get("topic") or "").strip()
-                    if not topic or topic.lower() not in text.lower():
-                        failures.append(f"{course}:{e.get('n')}: bridge sem foco")
-                    if str(b.get("text") or "").startswith("Connect ") and "today’s goal" in str(b.get("text")):
-                        failures.append(f"{course}:{e.get('n')}: bridge genérica")
-                    cult = next((x for x in e.get("fr", []) if x.get("k") == "cultcena"), None)
-                    link = str((cult or {}).get("link") or "")
-                    if work.lower() not in link.lower() or (topic and topic.lower() not in link.lower()):
-                        failures.append(f"{course}:{e.get('n')}: cultcena sem ponte completa")
-                    if str((cult or {}).get("src") or "").strip() != work:
-                        failures.append(f"{course}:{e.get('n')}: fonte cultural ausente ou desalinhada")
+                    if len(e.get("fr", [])) not in (18, 19):
+                        failures.append(f"{course}:{e.get('n')}: quantidade de quadros diferente de 18/19")
+                    if e.get("presentation") != "regular-pilot-v1":
+                        failures.append(f"{course}:{e.get('n')}: C1/C2 fora do modelo regular-pilot-v1")
+                    old_culture = {"cultob", "cultx", "cultcena", "cultgame"} & {x.get("k") for x in e.get("fr", [])}
+                    if old_culture:
+                        failures.append(f"{course}:{e.get('n')}: quadros culturais antigos ainda presentes")
+                    for message in bridge_failures(e):
+                        failures.append(f"{course}:{e.get('n')}: {message}")
                     words = next((x for x in e.get("fr", []) if x.get("k") == "words"), None)
                     verbs = next((x for x in e.get("fr", []) if x.get("k") == "verbs"), None)
                     if words is not None and len(words.get("items", [])) != 6:
