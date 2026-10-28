@@ -46,8 +46,8 @@ const ICON=['📖','🎧','🗣️','💬','⭐'],LAB=['Leia','Ouça','Repita','
 function top(n){return `<div class="sp-top"><span class="eyebrow">PÁGINA ${n+1}/5 · ${LAB[n].toUpperCase()}</span><div class="sp-dots">${ICON.map((x,i)=>(i?'<u></u>':'')+`<i class="${i<n?'done':i===n?'now':''}">${x}</i>`).join('')}</div></div>`}
 
 /* ---------- mini-ilustrações (SVG leve, nada cortado, sem texto sobre a imagem) ---------- */
-const SKY={sky:['#7fd0ff','#e6f7ff'],dawn:['#ffd0a6','#fff0d4'],dusk:['#ff9a76','#6b5bbf'],night:['#1b2559','#5a46a8'],warm:['#ffe3a6','#ffc27a'],sea:['#7fe0ea','#d6f6ff'],snow:['#cfe6ff','#f6fbff'],rose:['#ffc6dd','#fff0f6'],lime:['#c8f0a0','#f2ffd9'],lav:['#cdb8ff','#f0e9ff'],fire:['#ff8a5c','#ffd36e'],mint:['#a8f0d8','#eafff7']};
-const GND={grass:['#7ac36a','#5aa650'],sand:['#f0cf8a','#e0b768'],snow:['#ffffff','#e3eefc'],sea:['#3aa6c9','#2688b0'],stone:['#b8b2c4','#9a93aa'],dirt:['#c98f5a','#a8703f'],city:['#6f6a8f','#59547a'],none:null};
+const SKY={sky:['#7fd0ff','#e6f7ff'],dawn:['#ffd0a6','#fff0d4'],dusk:['#ff9a76','#66AAB4'],night:['#1b2559','#51939D'],warm:['#ffe3a6','#ffc27a'],sea:['#7fe0ea','#d6f6ff'],snow:['#cfe6ff','#f6fbff'],rose:['#ffc6dd','#fff0f6'],lime:['#c8f0a0','#f2ffd9'],lav:['#C3F4F3','#ECFCFB'],fire:['#ff8a5c','#ffd36e'],mint:['#a8f0d8','#eafff7']};
+const GND={grass:['#7ac36a','#5aa650'],sand:['#f0cf8a','#e0b768'],snow:['#ffffff','#e3eefc'],sea:['#3aa6c9','#2688b0'],stone:['#B3BFC3','#95A3A8'],dirt:['#c98f5a','#a8703f'],city:['#6D848C','#576F77'],none:null};
 const LAY=[
  [[160,62,60],[68,80,38],[252,80,38],[112,28,24]],
  [[88,66,54],[170,74,44],[244,80,36],[130,26,22]],
@@ -64,8 +64,8 @@ function spArt(a){
   if(D.includes('stars'))for(let i=0;i<12;i++)o+=`<circle class="sp-tw" style="animation-delay:-${(i%5)*.45}s" cx="${(14+rnd()*292).toFixed(0)}" cy="${(8+rnd()*46).toFixed(0)}" r="${(1+rnd()*1.3).toFixed(1)}" fill="#fff"/>`;
   if(D.includes('clouds'))o+=`<g fill="#fff" opacity=".85"><ellipse cx="${sunX>100?70:250}" cy="22" rx="26" ry="8"/><ellipse cx="${sunX>100?92:272}" cy="17" rx="16" ry="7"/></g><g fill="#fff" opacity=".6"><ellipse cx="${sunX>100?170:150}" cy="40" rx="20" ry="6"/></g>`;
   if(D.includes('snow'))for(let i=0;i<22;i++)o+=`<circle cx="${(8+rnd()*304).toFixed(0)}" cy="${(6+rnd()*100).toFixed(0)}" r="${(1.2+rnd()*1.6).toFixed(1)}" fill="#fff" opacity=".9"/>`;
-  if(D.includes('confetti')){const C=['#ff6f59','#ffd23f','#2fbf9b','#7c4dff','#f0508b'];for(let i=0;i<22;i++)o+=`<rect x="${(8+rnd()*300).toFixed(0)}" y="${(6+rnd()*70).toFixed(0)}" width="5" height="3" rx="1" fill="${C[i%5]}" transform="rotate(${(rnd()*180).toFixed(0)} ${(8+rnd()*300).toFixed(0)} 20)" opacity=".9"/>`}
-  if(D.includes('bunting')){const C=['#ff6f59','#ffd23f','#2fbf9b','#7c4dff','#f0508b'];o+=`<path d="M0 6 Q160 28 320 6" fill="none" stroke="#7a5a3a" stroke-width="1.5"/>`;for(let i=0;i<12;i++){const t=(i+.5)/12,x=t*320,y=6+Math.sin(Math.PI*t)*17;o+=`<path d="M${(x-9).toFixed(0)} ${(y-1).toFixed(0)} L${(x+9).toFixed(0)} ${(y-1).toFixed(0)} L${x.toFixed(0)} ${(y+15).toFixed(0)}Z" fill="${C[i%5]}"/>`}}
+  if(D.includes('confetti')){const C=['#ff6f59','#ffd23f','#2fbf9b','#6DDFDB','#f0508b'];for(let i=0;i<22;i++)o+=`<rect x="${(8+rnd()*300).toFixed(0)}" y="${(6+rnd()*70).toFixed(0)}" width="5" height="3" rx="1" fill="${C[i%5]}" transform="rotate(${(rnd()*180).toFixed(0)} ${(8+rnd()*300).toFixed(0)} 20)" opacity=".9"/>`}
+  if(D.includes('bunting')){const C=['#ff6f59','#ffd23f','#2fbf9b','#6DDFDB','#f0508b'];o+=`<path d="M0 6 Q160 28 320 6" fill="none" stroke="#7a5a3a" stroke-width="1.5"/>`;for(let i=0;i<12;i++){const t=(i+.5)/12,x=t*320,y=6+Math.sin(Math.PI*t)*17;o+=`<path d="M${(x-9).toFixed(0)} ${(y-1).toFixed(0)} L${(x+9).toFixed(0)} ${(y-1).toFixed(0)} L${x.toFixed(0)} ${(y+15).toFixed(0)}Z" fill="${C[i%5]}"/>`}}
   if(D.includes('leaves')){const C=['#e8741c','#c8412b','#f0b030'];for(let i=0;i<9;i++)o+=`<ellipse cx="${(10+rnd()*300).toFixed(0)}" cy="${(8+rnd()*80).toFixed(0)}" rx="5" ry="2.6" fill="${C[i%3]}" transform="rotate(${(rnd()*180).toFixed(0)} ${(10+rnd()*300).toFixed(0)} 40)" opacity=".85"/>`}
   if(D.includes('sparkle'))for(let i=0;i<6;i++)o+=`<text class="sp-tw" style="animation-delay:-${i*.4}s" x="${(16+rnd()*288).toFixed(0)}" y="${(14+rnd()*50).toFixed(0)}" font-size="${(9+rnd()*7).toFixed(0)}" fill="#fff" text-anchor="middle">✦</text>`;
   if(gn){

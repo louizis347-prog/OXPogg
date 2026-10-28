@@ -12,7 +12,7 @@ const shk=el=>{if(!el)return;el.classList.remove('no');void el.offsetWidth;el.cl
 const wait=(st,f)=>{P.fx.done=false;P.fx.cta=()=>{if(!P.fx.done)return true;return false}};
 const finish=(label)=>{P.fx.done=true;cta(label||'Continuar',true,true);try{sfx('cheer')}catch(e){}};
 const fb=(ok,why,right)=>fxGrade(ok,why,right);
-const TONE={balloons:['#d9f3ff','#ffe0f1'],puzzle:['#ffe9b8','#ffd0e0'],mystery:['#d9d4ff','#ffe3b8'],paraphrase:['#c9f1ff','#e6f9d8'],voices:['#ffd9c9','#e3d4ff'],chain:['#cdf3e6','#d7e6ff'],upgrade:['#fff0b8','#ffd6d6'],rhetoric:['#d9e4ff','#ffe0f1'],editor:['#e6dcff','#fff0c9'],ctxword:['#d2f5ea','#fff2c2'],form:['#ffe9b8','#d9f3ff']};
+const TONE={balloons:['#d9f3ff','#ffe0f1'],puzzle:['#ffe9b8','#ffd0e0'],mystery:['#DAF9F8','#ffe3b8'],paraphrase:['#c9f1ff','#e6f9d8'],voices:['#ffd9c9','#DAF9F8'],chain:['#cdf3e6','#d7e6ff'],upgrade:['#fff0b8','#ffd6d6'],rhetoric:['#d9e4ff','#ffe0f1'],editor:['#E1FAF9','#fff0c9'],ctxword:['#d2f5ea','#fff2c2'],form:['#ffe9b8','#d9f3ff']};
 const ban=f=>f.ban&&f.ban.length?`<div class="nv-ban" style="--a:${(TONE[f.k]||['#d9f3ff','#fff'])[0]};--b:${(TONE[f.k]||['#d9f3ff','#fff'])[1]}">${f.ban.map((e,i)=>`<span style="--i:${i}">${e}</span>`).join('')}</div>`:'';
 const pt=t=>t?`<small class="nv-pt">🇧🇷 ${H(t)}</small>`:'';
 const shell=(f,n,cls,head,body)=>`<div class="step fx nv ${cls}">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||L[f.k])}${head||''}</h2>${ban(f)}${body}<div id="fb"></div></div>`;
@@ -118,7 +118,7 @@ FXR.paraphrase=function(f,st,n){
 
 /* ---------- A2 · Estoure os balões (ouça a pista, estoure a palavra) ---------- */
 FXR.balloons=function(f,st,n){
-  const K=f.clues,N=K.length;let ci=0,miss=0;const COL=['#ff8fab','#ffb703','#8ecae6','#95d5b2','#c8b6ff','#ffd6a5'];
+  const K=f.clues,N=K.length;let ci=0,miss=0;const COL=['#ff8fab','#ffb703','#8ecae6','#95d5b2','#C1F4F2','#ffd6a5'];
   const order=fxShuffle(f.balloons.map((_,i)=>i));
   const draw=()=>{
     const c=K[ci];let tries=0,shown=false;

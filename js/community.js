@@ -90,7 +90,7 @@ function authPage(next,arg,mode){
     <label class="pg-field"><span>${k('pass')}</span><input id="a-pass" type="password" autocomplete="${mode==='signup'?'new-password':'current-password'}"></label>
     <div class="pg-err" id="a-err" role="alert"></div>
     <button class="pg-btn" style="width:100%" id="a-go">${mode==='signup'?k('go2'):k('go1')}</button>
-    ${mode==='signin'?`<p style="text-align:center;margin:12px 0 0"><button type="button" id="a-forgot" style="color:#5B2FE0;font-weight:800">${k('forgot')}</button></p>`:''}
+    ${mode==='signin'?`<p style="text-align:center;margin:12px 0 0"><button type="button" id="a-forgot" style="color:#42BACD;font-weight:800">${k('forgot')}</button></p>`:''}
    </form></section>`);
   const f=$('#authf');
   $('.pg-auth .tabs').onclick=e=>{const b=e.target.closest('[data-m]');if(b)authPage(next,arg,b.dataset.m)};

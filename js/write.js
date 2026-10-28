@@ -12,17 +12,17 @@ const CW=520,CH=260,NS='http://www.w3.org/2000/svg';
 const say2=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
 const store=(k,v)=>{try{if(v===undefined)return JSON.parse(localStorage.getItem('pogglot:'+k)||'null');localStorage.setItem('pogglot:'+k,JSON.stringify(v))}catch(e){return null}};
 const css=document.createElement('style');css.textContent=`
-.kw{--g1:#6C5CE7;--g2:#A29BFE;padding-bottom:12px}
-.kw-st{display:flex;gap:6px;justify-content:center;margin:6px 0}.kw-st i{width:26px;height:8px;border-radius:6px;background:#e4e0f5}.kw-st i.on{background:linear-gradient(90deg,var(--g1),var(--g2))}
-.kw-info{text-align:center;margin:4px 0}.kw-info b{display:block;font:900 20px system-ui;color:#25203f}.kw-info small{display:block;font:600 14px system-ui;color:#5b5578}
-.kw-mode{display:table;margin:0 auto 8px;border-radius:999px;padding:4px 12px;font:800 12px system-ui;background:#EFEAFF;color:#5a46c8}
-.kw-cv{position:relative;width:100%;max-width:420px;aspect-ratio:2/1;margin:8px auto;border-radius:22px;background:#fff;box-shadow:0 10px 26px rgba(40,30,90,.14);touch-action:none;overflow:hidden}
+.kw{--g1:#6BD8D4;--g2:#A9F0ED;padding-bottom:12px}
+.kw-st{display:flex;gap:6px;justify-content:center;margin:6px 0}.kw-st i{width:26px;height:8px;border-radius:6px;background:#E1F4F3}.kw-st i.on{background:linear-gradient(90deg,var(--g1),var(--g2))}
+.kw-info{text-align:center;margin:4px 0}.kw-info b{display:block;font:900 20px system-ui;color:#23383C}.kw-info small{display:block;font:600 14px system-ui;color:#586D75}
+.kw-mode{display:table;margin:0 auto 8px;border-radius:999px;padding:4px 12px;font:800 12px system-ui;background:#EDFCFB;color:#54ACBA}
+.kw-cv{position:relative;width:100%;max-width:420px;aspect-ratio:2/1;margin:8px auto;border-radius:22px;background:#fff;box-shadow:0 10px 26px rgba(37,77,83,.14);touch-action:none;overflow:hidden}
 .kw-cv canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
-.kw-cv .gd{position:absolute;inset:0;pointer-events:none;background:linear-gradient(#0000 49.4%,#ece8f7 49.4% 50.6%,#0000 50.6%)}
-.kw-fb{min-height:44px;text-align:center;font:800 15px/1.35 system-ui;color:#25203f;margin:6px 0}
+.kw-cv .gd{position:absolute;inset:0;pointer-events:none;background:linear-gradient(#0000 49.4%,#E9F6F6 49.4% 50.6%,#0000 50.6%)}
+.kw-fb{min-height:44px;text-align:center;font:800 15px/1.35 system-ui;color:#23383C;margin:6px 0}
 .kw-fb.ok{color:#1f9d5c}.kw-fb.no{color:#d9480f}
 .kw-stars{font-size:26px;letter-spacing:4px}
-.kw-attr{margin-top:6px;text-align:center;font:600 11px system-ui;color:#8a84a8}
+.kw-attr{margin-top:6px;text-align:center;font:600 11px system-ui;color:#879DA5}
 `;document.head.appendChild(css);
 /* ---- dados de traços (KanjiVG) ---- */
 let KS=null,KSP=null;
@@ -56,8 +56,8 @@ function animate(cv,text,done){
   const frame=(now)=>{if(!alive)return;if(!t0)t0=now;const cur=all[idx];if(!cur){done&&done();return}
     const pr=Math.min(1,(now-t0)/dur(cur.st));x.clearRect(0,0,CW,CH);
     all.forEach((a,i)=>{if(i>idx)return;x.save();x.translate(a.L.x,a.L.y);x.scale(a.L.s,a.L.s);x.lineCap='round';x.lineJoin='round';x.lineWidth=8.5;
-      x.strokeStyle=i<idx?'#6C5CE7':'#ff6b6b';if(i===idx){x.setLineDash([a.st.len+2,a.st.len+2]);x.lineDashOffset=a.st.len*(1-pr)}x.stroke(a.st.p2d);x.restore();
-      const r=Math.max(9,a.L.s*8),px=a.L.x+a.st.start[0]*a.L.s,py=a.L.y+a.st.start[1]*a.L.s;x.fillStyle=i<idx?'#a79df0':'#ff6b6b';x.beginPath();x.arc(px,py,r,0,7);x.fill();x.fillStyle='#fff';x.font='800 '+Math.round(r*1.3)+'px system-ui';x.textAlign='center';x.textBaseline='middle';x.fillText(String(a.n),px,py+1)});
+      x.strokeStyle=i<idx?'#6BD8D4':'#ff6b6b';if(i===idx){x.setLineDash([a.st.len+2,a.st.len+2]);x.lineDashOffset=a.st.len*(1-pr)}x.stroke(a.st.p2d);x.restore();
+      const r=Math.max(9,a.L.s*8),px=a.L.x+a.st.start[0]*a.L.s,py=a.L.y+a.st.start[1]*a.L.s;x.fillStyle=i<idx?'#A6E7E5':'#ff6b6b';x.beginPath();x.arc(px,py,r,0,7);x.fill();x.fillStyle='#fff';x.font='800 '+Math.round(r*1.3)+'px system-ui';x.textAlign='center';x.textBaseline='middle';x.fillText(String(a.n),px,py+1)});
     if(pr>=1){idx++;t0=0;if(idx>=all.length){alive=false;setTimeout(()=>{if(done)done()},350);return}}
     raf=requestAnimationFrame(frame)};
   raf=requestAnimationFrame(frame);return()=>{alive=false;cancelAnimationFrame(raf)}}
@@ -85,7 +85,7 @@ FXR.nbwrite=function(f,st,n){
     if(phase===0&&!ks)phase=1;
     const mode=phase===0?'order':phase===1?'trace':'recall',step=wi*3+phase;
     const title={order:'1 · Veja a ordem dos traços',trace:'2 · Trace sobre o modelo',recall:'3 · Escreva de memória'}[mode];
-    st.innerHTML=`<div class="step fx nbx kw" style="--g1:${(f.g||['#6C5CE7','#A29BFE'])[0]};--g2:${(f.g||['#6C5CE7','#A29BFE'])[1]}">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Escreva')}</h2>
+    st.innerHTML=`<div class="step fx nbx kw" style="--g1:${(f.g||['#6BD8D4','#A9F0ED'])[0]};--g2:${(f.g||['#6BD8D4','#A9F0ED'])[1]}">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Escreva')}</h2>
     <div class="kw-st">${Array.from({length:total},(_,i)=>`<i class="${i<step?'on':''}"></i>`).join('')}</div>
     <div class="kw-info"><span class="kw-mode">${title}</span><b>${H(it.m||'')}</b><small>${H(it.r||'')}</small></div>
     <div class="kw-cv" id="kwcv"><canvas id="kwm" width="${CW}" height="${CH}"></canvas><div class="gd"></div><canvas id="kwi" width="${CW}" height="${CH}"></canvas></div>
@@ -99,16 +99,16 @@ FXR.nbwrite=function(f,st,n){
       const play=()=>{if(stop)stop();stop=animate(cm,text,()=>{cta('Entendi, vou traçar ▶',true,true)})};
       q('#kwr',st).onclick=play;play();cta('Veja a ordem...',false);P.fx.cta=()=>{if(P.fx.done)return false;next();return true};cta('Pular animação ▶',true,true);
       say('Veja a ordem dos traços antes de escrever.');return}
-    const draw=(alpha,color,nums)=>{cx.clearRect(0,0,CW,CH);if(alpha>0)paint(cx,text,color||'#bdb5e0',alpha,0,{numbers:!!nums})};
-    draw(mode==='trace'?1:0,'#bdb5e0',mode==='trace');
-    ix.lineWidth=15;ix.lineCap='round';ix.lineJoin='round';ix.strokeStyle='#6C3FEF';ix.shadowColor='rgba(108,63,239,.35)';ix.shadowBlur=8;
+    const draw=(alpha,color,nums)=>{cx.clearRect(0,0,CW,CH);if(alpha>0)paint(cx,text,color||'#BADBDA',alpha,0,{numbers:!!nums})};
+    draw(mode==='trace'?1:0,'#BADBDA',mode==='trace');
+    ix.lineWidth=15;ix.lineCap='round';ix.lineJoin='round';ix.strokeStyle='#54C8DA';ix.shadowColor='rgba(84,200,218,.35)';ix.shadowBlur=8;
     let strokes=[],cur=null,on=false,checked=false,hint=false;
     const pos=e=>{const r=ci.getBoundingClientRect();return[(e.clientX-r.left)*CW/r.width,(e.clientY-r.top)*CH/r.height]};
     ci.onpointerdown=e=>{if(checked)return;on=true;const p=pos(e);cur=[p];strokes.push(cur);ci.setPointerCapture&&ci.setPointerCapture(e.pointerId);ix.beginPath();ix.moveTo(p[0],p[1]);ix.lineTo(p[0]+.1,p[1]+.1);ix.stroke();cta('Verificar',true,true)};
     ci.onpointermove=e=>{if(!on)return;const p=pos(e),l=cur[cur.length-1];ix.beginPath();ix.moveTo(l[0],l[1]);ix.lineTo(p[0],p[1]);ix.stroke();cur.push(p)};
     ci.onpointerup=ci.onpointercancel=()=>{on=false};
     q('#kwc',st).onclick=()=>{if(checked)return;ix.clearRect(0,0,CW,CH);strokes=[];cta('Escreva',false);P.fx.cta=()=>!P.fx.done&&verify()};
-    q('#kwh',st).onclick=()=>{hint=!hint;if(mode==='trace')draw(1,'#bdb5e0',hint?false:true);else draw(hint?.3:0,'#bdb5e0',false)};
+    q('#kwh',st).onclick=()=>{hint=!hint;if(mode==='trace')draw(1,'#BADBDA',hint?false:true);else draw(hint?.3:0,'#BADBDA',false)};
     const verify=()=>{
       if(checked){next();return true}
       if(!strokes.length)return true;
@@ -122,7 +122,7 @@ FXR.nbwrite=function(f,st,n){
       cta(phase===1?'Agora de memória ▶':(wi<items.length-1?'Próxima palavra ▶':'Concluir'),true,true);P.fx.cta=()=>{next();return true};return true};
     cta('Escreva',false);P.fx.cta=()=>!P.fx.done&&verify();
     say(mode==='trace'?'Trace sobre o modelo seguindo os números.':'Agora escreva de memória.')};
-  const finish=()=>{if(stop){stop();stop=null}P.fx.done=true;P.score++;try{sfx('tada');confetti(60)}catch(e){}st.innerHTML=`<div class="step fx nbx kw" style="--g1:${(f.g||['#6C5CE7'])[0]}">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Escreva')}</h2><div class="kw-info"><b>Palavras escritas!</b><small>${items.map(i=>H(i.w)).join(' · ')}</small></div><div class="kw-fb ok">Você escreveu ${items.length} palavras à mão, na ordem certa dos traços. Quanto mais treinar, mais firme fica o traço.</div></div>`;cta('Continuar',true,true);P.fx.cta=null};
+  const finish=()=>{if(stop){stop();stop=null}P.fx.done=true;P.score++;try{sfx('tada');confetti(60)}catch(e){}st.innerHTML=`<div class="step fx nbx kw" style="--g1:${(f.g||['#6BD8D4'])[0]}">${fxKindBar(f,n)}<h2 class="fx-h">${H(f.title||'Escreva')}</h2><div class="kw-info"><b>Palavras escritas!</b><small>${items.map(i=>H(i.w)).join(' · ')}</small></div><div class="kw-fb ok">Você escreveu ${items.length} palavras à mão, na ordem certa dos traços. Quanto mais treinar, mais firme fica o traço.</div></div>`;cta('Continuar',true,true);P.fx.cta=null};
   loadKS().then(render)};
 })();
 
@@ -132,14 +132,14 @@ const HIRA='あいうえおかきくけこさしすせそたちつてとなに�
 const toKata=s=>[...s].map(c=>String.fromCharCode(c.charCodeAt(0)+96)).join('');
 const KATA=toKata(HIRA);
 const css=document.createElement('style');css.textContent=`
-.kw-map{margin:14px 0;padding:16px;border-radius:24px;background:#fff;border:1px solid #ECE7FF;box-shadow:0 14px 30px -22px rgba(60,40,160,.6)}
-.kw-map h3{margin:0 0 2px;font:900 17px system-ui;color:#25203f}.kw-map p{margin:0 0 10px;font:600 13px system-ui;color:#6b6591}
-.kw-tabs{display:flex;gap:6px;margin-bottom:10px}.kw-tabs button{border:0;border-radius:999px;padding:8px 14px;min-height:40px;font:800 13px system-ui;background:#F1EDFF;color:#5a46c8}.kw-tabs button.on{background:#6C5CE7;color:#fff}
+.kw-map{margin:14px 0;padding:16px;border-radius:24px;background:#fff;border:1px solid #EBFBFB;box-shadow:0 14px 30px -22px rgba(53,134,147,.6)}
+.kw-map h3{margin:0 0 2px;font:900 17px system-ui;color:#23383C}.kw-map p{margin:0 0 10px;font:600 13px system-ui;color:#68848E}
+.kw-tabs{display:flex;gap:6px;margin-bottom:10px}.kw-tabs button{border:0;border-radius:999px;padding:8px 14px;min-height:40px;font:800 13px system-ui;background:#F0FCFC;color:#54ACBA}.kw-tabs button.on{background:#6BD8D4;color:#fff}
 .kw-g{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.kw-g span{aspect-ratio:1.35;display:grid;place-items:center;border-radius:12px;background:#F4F2FA;color:#b9b3d3;font:700 22px "Noto Sans JP","Hiragino Sans","Yu Gothic",IPAGothic,system-ui,sans-serif}
+.kw-g span{aspect-ratio:1.35;display:grid;place-items:center;border-radius:12px;background:#F2FAF9;color:#B7CFCF;font:700 22px "Noto Sans JP","Hiragino Sans","Yu Gothic",IPAGothic,system-ui,sans-serif}
 .kw-g span.s1{background:#FFF1C9;color:#9a6b00}.kw-g span.s2{background:#DDF6E8;color:#1b7a4b}.kw-g span.s3{background:#2CC673;color:#fff}
-.kw-leg{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;font:700 12px system-ui;color:#6b6591}.kw-leg i{display:inline-block;width:12px;height:12px;border-radius:4px;vertical-align:-2px;margin-right:4px}
-html[data-theme="dark"] .kw-map{background:#1B1740;border-color:#2D2760}html[data-theme="dark"] .kw-map h3{color:#EDEAFF}html[data-theme="dark"] .kw-g span{background:#2A2360;color:#6f679f}
+.kw-leg{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;font:700 12px system-ui;color:#68848E}.kw-leg i{display:inline-block;width:12px;height:12px;border-radius:4px;vertical-align:-2px;margin-right:4px}
+html[data-theme="dark"] .kw-map{background:#1C373B;border-color:#2D545A}html[data-theme="dark"] .kw-map h3{color:#EDFCFB}html[data-theme="dark"] .kw-g span{background:#2A5359;color:#6D9399}
 `;document.head.appendChild(css);
 function card(){
   const km=(function(){try{return JSON.parse(localStorage.getItem('pogglot:kw')||'null')||{}}catch(e){return {}}})();
@@ -148,7 +148,7 @@ function card(){
     sec.innerHTML=`<h3>✍️ Mapa de escrita</h3><p>${n3}/${[...L].length||46} caracteres dominados (★★★). Escreva nos episódios para colorir o mapa.</p>
     <div class="kw-tabs"><button data-s="h" class="${set==='h'?'on':''}">Hiragana</button><button data-s="k" class="${set==='k'?'on':''}">Katakana</button><button data-s="j" class="${set==='j'?'on':''}">Kanji</button></div>
     <div class="kw-g">${[...L].map(c=>`<span class="${km[c]?'s'+km[c]:''}">${c}</span>`).join('')}</div>
-    <div class="kw-leg"><span><i style="background:#F4F2FA"></i>novo</span><span><i style="background:#FFF1C9"></i>★</span><span><i style="background:#DDF6E8"></i>★★</span><span><i style="background:#2CC673"></i>★★★</span></div>`;
+    <div class="kw-leg"><span><i style="background:#F2FAF9"></i>novo</span><span><i style="background:#FFF1C9"></i>★</span><span><i style="background:#DDF6E8"></i>★★</span><span><i style="background:#2CC673"></i>★★★</span></div>`;
     sec.querySelectorAll('.kw-tabs button').forEach(b=>b.onclick=()=>{if(b.dataset.s==='j'&&!KJ&&window.PogKanji){PogKanji.load().then(d=>{KJ=Object.keys(d).join('');paint('j')})}else paint(b.dataset.s)})};
   paint('h');return sec}
 function mount(cid){

@@ -244,9 +244,9 @@ function injectCss(){
 .kn-head p{margin:6px 0 0;color:var(--pg-mute);font-weight:700}
 .kn-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
 .kn-tab{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:2px solid var(--pg-line);background:#fff;font-weight:900;font-size:14px;color:var(--pg-ink)}
-.kn-tab i{width:10px;height:10px;border-radius:50%;background:var(--c,#7C4DFF)}
-.kn-tab[aria-pressed="true"]{border-color:var(--c,#7C4DFF);background:var(--cl,#F0EAFF)}
-.kn-hero{position:relative;border-radius:28px;padding:24px;color:#fff;overflow:hidden;background:linear-gradient(135deg,var(--c,#7C4DFF) 0%,var(--c2,#A66BFF) 55%,#FF7AB6 130%);box-shadow:0 18px 40px -22px rgba(36,48,73,.7)}
+.kn-tab i{width:10px;height:10px;border-radius:50%;background:var(--c,#6DDFDB)}
+.kn-tab[aria-pressed="true"]{border-color:var(--c,#6DDFDB);background:var(--cl,#EDFCFB)}
+.kn-hero{position:relative;border-radius:28px;padding:24px;color:#fff;overflow:hidden;background:linear-gradient(135deg,var(--c,#6DDFDB) 0%,var(--c2,#86E4E1) 55%,#FF7AB6 130%);box-shadow:0 18px 40px -22px rgba(36,48,73,.7)}
 .kn-hero::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.12)}
 .kn-nums{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .kn-n b{display:block;font:800 clamp(38px,8vw,64px)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
@@ -259,7 +259,7 @@ function injectCss(){
 .kn-card{background:#fff;border:2px solid var(--pg-line);border-radius:20px;box-shadow:var(--pg-shadow);padding:18px}
 .kn-media{display:grid;gap:12px}
 .kn-row{display:grid;grid-template-columns:auto 1fr auto;gap:6px 14px;align-items:center}
-.kn-row .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:28px;background:var(--tint,#F0EAFF)}
+.kn-row .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:28px;background:var(--tint,#EDFCFB)}
 .kn-row h3{margin:0;font:800 17px/1.2 var(--f-display)}
 .kn-row .sb{display:block;color:var(--pg-mute);font-weight:700;font-size:12.5px;margin-top:2px}
 .kn-row .pc{font:800 34px/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--sc,#243049);text-align:right}
@@ -268,13 +268,13 @@ function injectCss(){
 .kn-row.big h3{font-size:21px}
 .kn-row.big .pc{font-size:52px}
 .kn-bar{grid-column:1/-1;position:relative;height:16px;border-radius:99px;background:#EDF0F7;margin:8px 0 22px}
-.kn-bar i{position:absolute;inset:0 auto 0 0;width:0;border-radius:99px;background:var(--sc,#7C4DFF);transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.kn-bar i{position:absolute;inset:0 auto 0 0;width:0;border-radius:99px;background:var(--sc,#6DDFDB);transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
 .kn-bar i::after{content:"";position:absolute;left:8px;right:8px;top:3px;height:4px;border-radius:99px;background:rgba(255,255,255,.4)}
 .kn-bar u{position:absolute;top:-4px;bottom:-4px;width:3px;border-radius:2px;background:#243049;opacity:.55;text-decoration:none}
 .kn-bar u span{position:absolute;top:26px;right:-1px;white-space:nowrap;font:800 11px var(--f-ui);color:var(--pg-mute)}
 .kn-bar u.t95 span{right:auto;left:-1px}
 .kn-row .ft{grid-column:1/-1;display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;font-weight:800;font-size:13px}
-.kn-row .stt{padding:3px 10px;border-radius:99px;background:var(--stl,#F0EAFF);color:var(--sc,#5B2FE0)}
+.kn-row .stt{padding:3px 10px;border-radius:99px;background:var(--stl,#EDFCFB);color:var(--sc,#42BACD)}
 .kn-row .nd{color:var(--pg-mute)}
 .kn-hr{height:2px;background:var(--pg-line);border:0;margin:6px 0}
 .kn-tiers{display:flex;height:22px;border-radius:99px;overflow:hidden;background:#EDF0F7;margin:4px 0 14px}
@@ -290,7 +290,7 @@ function injectCss(){
 .kn-w{display:inline-flex;flex-direction:column;padding:7px 12px;border-radius:14px;background:#F3F6FC;border:2px solid var(--pg-line);line-height:1.2}
 .kn-w b{font-weight:900;font-size:14.5px}
 .kn-w small{color:var(--pg-mute);font-weight:700;font-size:12px}
-.kn-s{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:var(--cl,#F0EAFF);color:var(--cd,#5B2FE0);font-weight:800;font-size:13.5px}
+.kn-s{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:var(--cl,#EDFCFB);color:var(--cd,#42BACD);font-weight:800;font-size:13.5px}
 .kn-s::before{content:"✓";font-weight:900}
 .kn-s.nx{background:#fff;border:2px dashed var(--pg-line);color:var(--pg-mute)}
 .kn-s.nx::before{content:"🔒";font-size:12px}
@@ -313,11 +313,11 @@ function injectCss(){
 .kn-back{display:inline-flex;align-items:center;gap:6px;font-weight:800;color:var(--pg-mute);padding:6px 4px}
 .kn-back:hover{color:var(--pg-ink)}
 .kn-cta{display:flex;align-items:center;gap:14px;width:100%;text-align:left;margin-top:16px;padding:14px 16px;border-radius:20px;background:#fff;border:2px solid var(--pg-line);box-shadow:var(--pg-shadow);transition:transform .15s,border-color .2s}
-.kn-cta:hover{transform:translateY(-2px);border-color:#7C4DFF}
-.kn-cta .ic{flex:none;width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-size:26px;background:linear-gradient(135deg,#F0EAFF,#FDE6F3)}
+.kn-cta:hover{transform:translateY(-2px);border-color:#6DDFDB}
+.kn-cta .ic{flex:none;width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-size:26px;background:linear-gradient(135deg,#EDFCFB,#FDE6F3)}
 .kn-cta b{display:block;font:800 17px var(--f-display)}
 .kn-cta small{display:block;color:var(--pg-mute);font-weight:700;font-size:13px;margin-top:2px}
-.kn-cta .go{margin-left:auto;flex:none;font-weight:900;color:#7C4DFF;white-space:nowrap}
+.kn-cta .go{margin-left:auto;flex:none;font-weight:900;color:#6DDFDB;white-space:nowrap}
 @media(max-width:620px){
  .kn-hero{padding:18px;border-radius:24px}
  .kn-row{grid-template-columns:auto 1fr}
@@ -333,7 +333,7 @@ function injectCss(){
 
 /* ---------- tela ---------- */
 const MEDIA_ORDER=['tv','alice','emma','moby'];
-const STATE_COL=['#7C4DFF','#E39A00','#1FAE6B'],STATE_BG=['#F0EAFF','#FFF1CC','#DEF7EA'];
+const STATE_COL=['#6DDFDB','#E39A00','#1FAE6B'],STATE_BG=['#EDFCFB','#FFF1CC','#DEF7EA'];
 let FROM='home',CUR=null,EXPANDED={},LOADING_LANG=null;
 
 function langsWithProgress(){
@@ -362,7 +362,7 @@ function mediaRowHtml(r,i){
   const shown=pct>0&&pct<1?'<1':String(Math.round(pct));
   const need=r.need[.95];
   const needTxt=need===0?k('needDone'):(need>0?k('need')(need):k('needMany'));
-  const tint={tv:'#F0EAFF',alice:'#FDE6F3',emma:'#FFF1CC',moby:'#DDF1FD'}[r.id]||'#F0EAFF';
+  const tint={tv:'#EDFCFB',alice:'#FDE6F3',emma:'#FFF1CC',moby:'#DDF1FD'}[r.id]||'#EDFCFB';
   return `<div class="kn-card"><div class="kn-row${big?' big':''}" style="--sc:${STATE_COL[st]};--stl:${STATE_BG[st]};--tint:${tint}">
     <div class="ic" aria-hidden="true">${r.ico}</div>
     <div><h3>${esc(k(r.id))}</h3><span class="sb">${esc(k(r.id+'Sub'))}</span></div>
@@ -409,11 +409,11 @@ function render(data,cov,covErr,delta){
     const t=data.tiers,tot=Math.max(1,data.total),due=(function(){try{return srsDueCount()}catch(e){return 0}})();
     body+=`<div class="kn-sec"><div><h2>${esc(k('memH'))}</h2><p>${esc(k('memP'))}</p></div></div>
      <div class="kn-card"><div class="kn-tiers" role="img" aria-label="${esc(k('tNew'))} ${t.n}, ${esc(k('tFix'))} ${t.f}, ${esc(k('tFirm'))} ${t.s}">
-       <i data-w="${(t.s/tot*100).toFixed(2)}" style="background:#1FAE6B"></i><i data-w="${(t.f/tot*100).toFixed(2)}" style="background:#F5A400"></i><i data-w="${(t.n/tot*100).toFixed(2)}" style="background:#7C4DFF"></i></div>
+       <i data-w="${(t.s/tot*100).toFixed(2)}" style="background:#1FAE6B"></i><i data-w="${(t.f/tot*100).toFixed(2)}" style="background:#F5A400"></i><i data-w="${(t.n/tot*100).toFixed(2)}" style="background:#6DDFDB"></i></div>
        <div class="kn-leg">
         <div style="--lb:#DEF7EA"><b data-to="${t.s}">0</b><span>${esc(k('tFirm'))}</span><small>${esc(k('tFirmD'))}</small></div>
         <div style="--lb:#FFF1CC"><b data-to="${t.f}">0</b><span>${esc(k('tFix'))}</span><small>${esc(k('tFixD'))}</small></div>
-        <div style="--lb:#F0EAFF"><b data-to="${t.n}">0</b><span>${esc(k('tNew'))}</span><small>${esc(k('tNewD'))}</small></div></div>
+        <div style="--lb:#EDFCFB"><b data-to="${t.n}">0</b><span>${esc(k('tNew'))}</span><small>${esc(k('tNewD'))}</small></div></div>
        <div class="kn-mem"><div class="tx">${esc(due?'':k('allSet'))}</div><button class="pg-btn sm" data-go="review">🔁 ${esc(due?k('review')(due):k('deck'))}</button></div>
        ${data.recent.length?`<hr class="kn-hr" style="margin:16px 0 12px"><div style="font-weight:900;font-size:13px;color:var(--pg-mute);margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em">${esc(k('recentH'))}</div>
        <div class="kn-chips">${data.recent.map(w=>`<span class="kn-w"><b>${esc(w.w)}</b><small>${esc(w.m)}</small></span>`).join('')}</div>`:''}

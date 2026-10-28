@@ -187,7 +187,7 @@ function ddCourses(cur){
 window.topbar=function(){
   const u=me(),cur=curOf(),n=ST.streak.n||0,due=(()=>{try{return srsDueCount()}catch(e){return 0}})();
   return `<header class="pgbar p2bar"><div class="in">
-   <button class="logo" data-go="home" aria-label="Pogglot"><span class="mini">${poggie({scarf:'#7C4DFF'})}</span><span>Pogg<b>lot</b></span></button>
+   <button class="logo" data-go="home" aria-label="Pogglot"><span class="mini">${poggie({scarf:'#6DDFDB'})}</span><span>Pogg<b>lot</b></span></button>
    <nav class="pgtabs p2tabs" aria-label="Menu">${NAV.map(([id,key,ic])=>id==='courses'?ddCourses(cur):`<button data-go="${id}" ${cur===id?'aria-current="page"':''}>${IC[ic]()}${E(t(key))}</button>`).join('')}</nav>
    <div class="pgright">
     <span class="pgstat fire" title="${E(t('days'))}">${IC.flame()}<span data-pgstreak>${n}</span><span class="dw"> ${E(t('days'))}</span></span>
@@ -426,7 +426,7 @@ function shelfBooks(){
   l=SH.sort==='az'?l.sort((x,y)=>norm(x.b.w).localeCompare(norm(y.b.w))):l.reverse();
   return l;
 }
-const workPal=w=>{try{const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:w.k||''}};return PC().palette(PC().analyse(e).seed)}catch(x){return{c1:'#7C4DFF',c2:'#4B26B8'}}};
+const workPal=w=>{try{const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:w.k||''}};return PC().palette(PC().analyse(e).seed)}catch(x){return{c1:'#6DDFDB',c2:'#3699A8'}}};
 function workCard(b,i,lock){const pal=workPal(b);
   return `<button class="px-work ${lock?'lock':''}" ${lock?'':`data-bk="${i}"`} style="--wc:${pal.c1};--wd:${pal.c2}" title="${E(b.w)}"><div class="cv">${workCover(b)}${lock?`<span class="lk">${IC.lock()}</span>`:`<span class="pl">▶</span>`}</div><b>${E(b.w)}</b><small>${E(b.au||'')}</small></button>`;
 }
@@ -510,7 +510,7 @@ window.profile=function(){
   const bd=(a,on)=>{const cur=Math.min(a.cur(s),a.goal);return `<div class="px-badge ${on?'on':''}" title="${E(a.d[L])}" style="--p:${on?100:Math.round(cur/a.goal*100)}"><span class="rg"><i>${a.ic}</i></span><b>${E(a.n[L])}</b><small>${on?'✓ '+new Date(earned[a.id]).toLocaleDateString(L==='es'?'es':'pt-BR'):nf(cur)+'/'+nf(a.goal)}</small></div>`};
   shell(`
   <section class="px-me" style="--lc:${lg.color}">
-   <div class="top"><div class="px-av" style="--p:${(Math.max(0,Math.min(1,lgp))*100).toFixed(0)}"><span>${u?E(u.avatar||'🙂'):poggie({scarf:'#7C4DFF'})}</span></div>
+   <div class="top"><div class="px-av" style="--p:${(Math.max(0,Math.min(1,lgp))*100).toFixed(0)}"><span>${u?E(u.avatar||'🙂'):poggie({scarf:'#6DDFDB'})}</span></div>
     <div class="tx"><span class="px-eyebrow">${E(t('panel'))}</span><h1>${E(u?u.name:t('student'))}</h1><span class="px-lg">${E(t('lg'))} ${E(lg.name)}</span></div>
     <button class="px-gear" data-act="settings" aria-label="Ajustes">${IC.gear()}</button></div>
    <div class="px-lgbar"><div class="p2bar-p inv"><i style="width:${(Math.max(0,Math.min(1,lgp))*100).toFixed(1)}%"></i></div><small>${nxt?`${nf(nxt-(ST.xp||0))} XP ${E(t('toNext'))}`:E(t('top'))}</small></div>

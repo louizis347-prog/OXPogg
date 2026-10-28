@@ -22,7 +22,7 @@ if(!document.getElementById('tk-css')){const s=document.createElement('style');s
 .tk-sl{margin:10px 0}.tk-sl h4{margin:0 0 4px;font-size:.85rem;opacity:.8}
 .tk-ch{display:flex;flex-wrap:wrap;gap:6px}
 .tk-c{padding:7px 12px;border-radius:99px;border:2px solid #7C4DFF55;background:transparent;color:inherit;font:inherit;cursor:pointer}
-.tk-c.on{background:#7C4DFF;color:#fff;border-color:#7C4DFF}.tk-c.sw{outline:2px solid #12B3A8}
+.tk-c.on{background:#6DDFDB;color:#fff;border-color:#6DDFDB}.tk-c.sw{outline:2px solid #12B3A8}
 .tk-ops{display:flex;flex-direction:column;gap:8px;margin:10px 0}
 .tk-o{padding:10px 12px;border-radius:14px;border:2px solid #7C4DFF55;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
 .tk-o small{display:block;opacity:.65}.tk-o.bad{border-color:#e5484d;animation:tkshake .4s}.tk-o.hint{border-color:#12B3A8;box-shadow:0 0 0 3px #12B3A855}
@@ -94,7 +94,7 @@ FXR.tchat=function(f,st,n){
      <div class="tk-prog">${[...Array(T.length*2)].map(()=>'<i></i>').join('')}</div>
      <div class="tk-chat"></div><div class="tk-ops"></div><p class="tk-end"></p></div>`;
     const chat=st.querySelector('.tk-chat'),ops=st.querySelector('.tk-ops'),end=st.querySelector('.tk-end'),prog=[...st.querySelectorAll('.tk-prog i')];
-    const bub=(who,en,pt,mic)=>{const b=document.createElement('div');b.className='tk-b '+(who?'r':'l')+' pop';b.style.setProperty('--c',who?'#7C4DFF':'#12B3A8');
+    const bub=(who,en,pt,mic)=>{const b=document.createElement('div');b.className='tk-b '+(who?'r':'l')+' pop';b.style.setProperty('--c',who?'#6DDFDB':'#12B3A8');
       b.innerHTML=`<b class="nm">${who?'👤 Você':'🦫 Poggie'}</b>${E(en)}<small>${E(pt)}</small>`;
       b.onclick=()=>{sfx('pop');fxSay(en)};chat.appendChild(b);
       if(who&&mic&&window.PogVoice&&PogVoice.supported&&PogVoice.supported()){const m=document.createElement('button');m.type='button';m.className='tk-mic';m.textContent='🎤 Repetir em voz alta';
@@ -158,7 +158,7 @@ FXR.tfill=function(f,st,n){
         fxSay(en);li++;setTimeout(step,900);return;
       }
       const bl=l[3],vals=bl.map(()=>null);mist=0;
-      const b=document.createElement('div');b.className='tk-b r pop';b.style.setProperty('--c','#7C4DFF');
+      const b=document.createElement('div');b.className='tk-b r pop';b.style.setProperty('--c','#6DDFDB');
       const parts=l[1].split(/(\{\d+\})/);
       const lineHtml=()=>parts.map(p=>{const m=p.match(/^\{(\d+)\}$/);if(!m)return E(p);const k=+m[1];return vals[k]?`<u>${E(vals[k][0])}</u>`:'<span class="tk-gap">＿＿＿</span>'}).join('');
       const ptHtml=()=>l[2].replace(/\{(\d+)\}/g,(m,k)=>vals[+k]?vals[+k][1]:'…');
@@ -212,7 +212,7 @@ if(!document.getElementById('td-css')){const s=document.createElement('style');s
 .td-q{font-size:.85rem;opacity:.8;margin:8px 0 4px}
 .td-ops{display:flex;flex-direction:column;gap:10px;margin:6px 0 14px}
 .td-o{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;border:2px solid #7C4DFF55;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer;width:100%}
-.td-o i{font-style:normal;flex:none;width:26px;height:26px;border-radius:50%;background:#7C4DFF;color:#fff;display:grid;place-items:center;font-size:.8rem;font-weight:700}
+.td-o i{font-style:normal;flex:none;width:26px;height:26px;border-radius:50%;background:#6DDFDB;color:#fff;display:grid;place-items:center;font-size:.8rem;font-weight:700}
 .td-o span{flex:1}.td-o em{font-style:normal;flex:none;border:1px solid #8886;border-radius:99px;padding:3px 9px;font-size:.95rem}
 .td-o.bad{border-color:#e5484d;animation:tkshake .4s}.td-o.hint{border-color:#12B3A8;box-shadow:0 0 0 3px #12B3A855}`;document.head.appendChild(s)}
 FXR.tdlg=function(f,st,n){

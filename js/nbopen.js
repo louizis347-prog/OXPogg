@@ -94,7 +94,7 @@ function collectRev(e,fr){
     else if(f.k==='nbvocab'||f.k==='nbfind')(f.items||[]).forEach(i=>addV(i[0],i[2]))});
   lines.sort((a,b)=>(b[0]?1:0)-(a[0]?1:0));
   const tr0=(e.h&&e.h.tr)||'';
-  const g=(trip&&trip.g)||(chat&&chat.g)||['#6C5CE7','#FF7AA8'];
+  const g=(trip&&trip.g)||(chat&&chat.g)||['#6BD8D4','#FF7AA8'];
   const emo=places.map(p=>p.fc).filter(Boolean).slice(0,4);
   const hero={g,num:'',lvl:e.lv||'',name:'Poggie',face:'🧭',emo:emo.length?emo:['🧭','🗺️','📍','🎒'],mission:e.p||'',sub:e.s||'',hook:(e.h&&e.h.l)?[e.h.l,tr0]:null,rev:1};
   return {rev:1,hero,lines,cast:{},me:'Poggie',hook:hero.hook,key:'',vocab,shadow:null,places,nSent:lines.length};
@@ -195,14 +195,14 @@ function buildThread(e,d){
   let memory='';try{memory=ST&&ST.nbTone?ST.nbTone:''}catch(x){}
   let arc='';try{const a=(ARCS[P.cid]||[]).filter(x=>EP[P.cid].findIndex(y=>y.n===x[0])<=P.idx).slice(-1)[0];arc=a?a[1]:''}catch(x){}
   let skill='';try{skill=ST&&ST.nbSkill?ST.nbSkill:''}catch(x){}
-  return {k:'nbscene',g:hero.g||['#6C5CE7','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,skill,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||'',episode:e.n||''};
+  return {k:'nbscene',g:hero.g||['#6BD8D4','#FF7AA8'],name:hero.name||'Neighbors',city:hero.city||'',mission:hero.mission||e.p||'',hook:d.hook,previous:prev?prev.t:'',memory,skill,arc,current:e.t||hero.sub||'',prompt:next&&next[1]||'',translation:next&&next[2]||'',episode:e.n||''};
 }
 function buildReply(e,d){
   const li=d.lines.findIndex((l,i)=>i>0&&l[0]&&l[0]!=='You');
   const line=li>=0?d.lines[li]:d.lines[0],ai=d.lines.findIndex(l=>l[0]==='You'),answer=ai>=0?d.lines[ai]:d.lines[1];
   if(!line||!answer||!answer[1])return null;
   const reaction=d.lines.slice(Math.max(ai+1,0)).find(l=>l[0]&&l[0]!=='You')||null;
-  return {k:'nbreply',g:d.hero.g||['#6C3FEF','#9a7bff'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4),reaction:reaction?reaction[1]:'',reactionTr:reaction?reaction[2]||'':'',reactionWho:reaction?reaction[0]:'',episode:e.n||'',consequence:'A resposta muda o próximo turno nesta situação: observe se o interlocutor confirma, pergunta, aceita ou pede outra coisa.'};
+  return {k:'nbreply',g:d.hero.g||['#54C8DA','#93E7E4'],name:d.hero.name||'',heard:line[1],heardTr:line[2]||'',situation:d.hero.mission||e.p||'',model:answer[1],modelTr:answer[2]||'',tokens:forms(answer[1]).filter(x=>x.length>2).slice(0,4),reaction:reaction?reaction[1]:'',reactionTr:reaction?reaction[2]||'':'',reactionWho:reaction?reaction[0]:'',episode:e.n||'',consequence:'A resposta muda o próximo turno nesta situação: observe se o interlocutor confirma, pergunta, aceita ou pede outra coisa.'};
 }
 function buildReview(e){
   const prev=priorEpisode(e);if(!prev)return null;const pf=(prev.fr||[]).find(f=>f&&f.k==='nbchat');if(!pf||!pf.lines)return null;
@@ -220,7 +220,7 @@ function buildChoice(e,d){
     {label:clear[1],tone:formal?'esclarecedora e profissional':'esclarecedora',out:'Você explicita a intenção e reduz a chance de mal-entendido.',kind:'clear'},
     {label:cautious[1],tone:'cautelosa',out:'Você sinaliza cuidado, confirma o contexto e abre espaço para o próximo turno.',kind:'cautious'}
   ];
-  return {k:'nbchoice',g:d.hero.g||['#E17055','#6C5CE7'],heard:line[1],heardTr:line[2]||'',opts,level:lv,episode:e.n||'',situation:e.s||d.hero.sub||''};
+  return {k:'nbchoice',g:d.hero.g||['#E17055','#6BD8D4'],heard:line[1],heardTr:line[2]||'',opts,level:lv,episode:e.n||'',situation:e.s||d.hero.sub||''};
 }
 function buildPrag(e,d){
   const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),advanced=/B2|C1|C2/.test(lv),city=d.hero.city||'';
@@ -243,9 +243,9 @@ function buildBridges(e,d){
   if(!d.rev)return [];
   const first=(d.lines||[]).filter(l=>l&&l[1]).slice(0,3), vocab=(d.vocab||[]).slice(0,4);
   return [
-    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'context',title:'O contexto do arco',body:(e.s||d.hero.sub||'Reveja onde a conversa acontece')+' · episódio '+(e.n||''),items:first.map(l=>l[1])},
-    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'bridge',title:'Ponte de linguagem',body:'Relacione a intenção, o registro e a resposta que você escolheria no episódio '+(e.n||'')+'.',items:vocab.map(v=>String(v[0])+(v[1]?' · '+v[1]:''))},
-    {k:'nbbridge',g:d.hero.g||['#6C5CE7','#FF7AA8'],mode:'transfer',title:'Transferência para a vida real',body:'Use uma das frases do arco em uma situação nova e explique sua escolha no episódio '+(e.n||'')+'.',items:first.map(l=>l[2]||l[1])}
+    {k:'nbbridge',g:d.hero.g||['#6BD8D4','#FF7AA8'],mode:'context',title:'O contexto do arco',body:(e.s||d.hero.sub||'Reveja onde a conversa acontece')+' · episódio '+(e.n||''),items:first.map(l=>l[1])},
+    {k:'nbbridge',g:d.hero.g||['#6BD8D4','#FF7AA8'],mode:'bridge',title:'Ponte de linguagem',body:'Relacione a intenção, o registro e a resposta que você escolheria no episódio '+(e.n||'')+'.',items:vocab.map(v=>String(v[0])+(v[1]?' · '+v[1]:''))},
+    {k:'nbbridge',g:d.hero.g||['#6BD8D4','#FF7AA8'],mode:'transfer',title:'Transferência para a vida real',body:'Use uma das frases do arco em uma situação nova e explique sua escolha no episódio '+(e.n||'')+'.',items:first.map(l=>l[2]||l[1])}
   ];
 }
 function buildMilestone(e,d){
@@ -254,7 +254,7 @@ function buildMilestone(e,d){
 function buildReflection(e,d){if(!e.rev)return null;const lv=String(d.hero.lvl||e.lv||'A1').toUpperCase(),opts=/B2|C1|C2/.test(lv)?['ser mais preciso','ajustar o registro','sustentar minha opinião']:['responder com mais naturalidade','pedir esclarecimento','usar uma frase-chave sem traduzir'];return {k:'nbreflection',g:d.hero.g||['#F2A900','#E85D75'],level:lv,title:e.t||'Revisão do arco',mission:e.p||'Reveja as situações e escolha uma habilidade para levar adiante.',opts}}
 function build(e){
   const d=collect(e);if(!d||!d.lines.length)return null;
-  const g=d.hero.g||['#6C5CE7','#FF7AA8'];const out=[];
+  const g=d.hero.g||['#6BD8D4','#FF7AA8'];const out=[];
   const rv=!!d.rev;
   const opts=rv?revOpts(e,d):opinionOpts(e,d);
   const tags=[];
@@ -358,7 +358,7 @@ function fit(st){try{
 }catch(e){}}
 function fitSoon(st){fit(st);requestAnimationFrame(()=>fit(st));[120,400,900].forEach(ms=>setTimeout(()=>fit(st),ms))}
 if(!window._nboRz){window._nboRz=1;window.addEventListener('resize',()=>{const s=document.querySelector('#pstage .step.nbo');if(s)fit(s)})}
-const theme=f=>{const g=f.g||['#6C5CE7','#FF7AA8'];return 'style="--g1:'+g[0]+';--g2:'+g[1]+'"'};
+const theme=f=>{const g=f.g||['#6BD8D4','#FF7AA8'];return 'style="--g1:'+g[0]+';--g2:'+g[1]+'"'};
 const L3=['a','b','c','d','e','f'];
 
 /* ---------- 1 · Abertura ---------- */
@@ -396,7 +396,7 @@ function artHtml(f){
       if(r&&r.nodeType===1)return r.outerHTML}
   }catch(x){}
   try{if(window.PogCover&&PogCover.svg)return PogCover.svg(P.e)}catch(x){}
-  const g=f.g||['#6C5CE7','#FF7AA8'];
+  const g=f.g||['#6BD8D4','#FF7AA8'];
   return '<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="img"><defs><linearGradient id="nbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+g[0]+'"/><stop offset="1" stop-color="'+g[1]+'"/></linearGradient></defs><rect width="320" height="180" fill="url(#nbg)"/><circle cx="250" cy="50" r="26" fill="#fff" opacity=".25"/><text x="160" y="112" font-size="64" text-anchor="middle">'+H(f.face||'🙂')+'</text>'+(f.emo||[]).slice(0,4).map((m,i)=>'<text x="'+(34+i*84)+'" y="160" font-size="24" text-anchor="middle">'+H(m)+'</text>').join('')+'</svg>'}
 function paragraph(f,t){
   const hits=f.vocab.map((v,i)=>({i,fs:forms(v[0])})).filter(h=>h.fs.length);
@@ -475,7 +475,7 @@ FXR.nbscene=function(f,st,n){
 /* ---------- 5 · produção livre guiada ---------- */
 FXR.nbreply=function(f,st,n){
   const t=tx();let checked=false;
-  st.innerHTML='<div class="step fx nbo nbreply" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-grid"><div class="nbo-l"><span class="nbo-sec">Sua vez</span><h2 class="nbo-q">Responda sem copiar</h2><p class="nbo-topic">'+H(f.situation)+'</p><div class="nbo-quote"><b>'+H(f.name||'A outra pessoa')+'</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div></div><div class="nbo-r"><section class="nbo-card"><label class="nbo-sec" for="nbreplyin">O que você diria?</label><textarea id="nbreplyin" rows="4" placeholder="Escreva ou fale em inglês…" style="display:block;width:100%;box-sizing:border-box;margin:10px 0;padding:12px;border:2px solid #e6e1f7;border-radius:14px;font:600 16px/1.4 system-ui;resize:vertical"></textarea><p class="nbo-hint">Inclua pelo menos uma ideia da situação. Depois compare com um modelo possível.</p><div class="nbo-fb" id="nbreplyfb" aria-live="polite"></div></section></div></div></div>';
+  st.innerHTML='<div class="step fx nbo nbreply" '+theme(f)+'>'+fxKindBar(f,n)+'<div class="nbo-grid"><div class="nbo-l"><span class="nbo-sec">Sua vez</span><h2 class="nbo-q">Responda sem copiar</h2><p class="nbo-topic">'+H(f.situation)+'</p><div class="nbo-quote"><b>'+H(f.name||'A outra pessoa')+'</b><em>“'+H(f.heard)+'”</em><small>'+H(f.heardTr)+'</small></div></div><div class="nbo-r"><section class="nbo-card"><label class="nbo-sec" for="nbreplyin">O que você diria?</label><textarea id="nbreplyin" rows="4" placeholder="Escreva ou fale em inglês…" style="display:block;width:100%;box-sizing:border-box;margin:10px 0;padding:12px;border:2px solid #E2F6F5;border-radius:14px;font:600 16px/1.4 system-ui;resize:vertical"></textarea><p class="nbo-hint">Inclua pelo menos uma ideia da situação. Depois compare com um modelo possível.</p><div class="nbo-fb" id="nbreplyfb" aria-live="polite"></div></section></div></div></div>';
   const root=q('.nbreply',st),inp=q('#nbreplyin',st);const ready=()=>cta(checked?t.cont:'Ver meu modelo',checked||!!String(inp.value||'').trim(),true);
   inp.oninput=()=>{if(!checked)ready()};
   P.fx.cta=()=>{if(!checked){checked=true;const val=String(inp.value||'').toLowerCase();const hits=(f.tokens||[]).filter(x=>val.includes(String(x).toLowerCase())).length;const fb=q('#nbreplyfb',st);fb.innerHTML='<p class="nbo-tr"><b>Modelo possível:</b> '+H(f.model)+'</p><p class="nbo-why">'+H(f.modelTr)+'<br>Você retomou '+hits+' palavra(s)-chave. A resposta pode ser diferente: o objetivo é comunicar a intenção.</p>'+(f.reaction?'<div class="nbo-reaction"><b>Consequência comunicativa · '+H(f.reactionWho||'interlocutor')+':</b><br>'+H(f.reaction)+'<small>'+H(f.reactionTr||'')+'</small><p>'+H(f.consequence||'A próxima fala depende da sua intenção.')+'</p></div>':'');fb.className='nbo-fb';inp.disabled=true;P.score++;say('Muito bem. Compare sua intenção com o modelo e tente dizer a sua resposta em voz alta.','happy');ready();fit(root);return true}return false};

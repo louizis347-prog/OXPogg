@@ -61,7 +61,7 @@
 .sp-script{margin-top:10px}
 .sp-bub{display:flex;gap:8px;align-items:flex-end;max-width:92%;margin:8px 0;animation:rise .4s both}
 .sp-bub.me{margin-left:auto;flex-direction:row-reverse}
-.sp-av{flex:0 0 auto;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:22px;background:var(--plum-l);box-shadow:0 0 0 2px var(--card),0 1px 3px rgba(51,36,82,.25)}
+.sp-av{flex:0 0 auto;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:22px;background:var(--plum-l);box-shadow:0 0 0 2px var(--card),0 1px 3px rgba(41,72,77,.25)}
 .sp-bub.me .sp-av{background:var(--river-l)}
 .sp-msg{background:var(--paper);border-radius:14px;padding:8px 12px;font-weight:700;font-size:15px;color:var(--ink2);cursor:pointer}
 .sp-bub.me .sp-msg{background:var(--river-l);color:var(--river-d)}
@@ -99,7 +99,7 @@
 .sp-key em{display:block;font-style:normal;font-weight:600;font-size:13px;color:var(--ink2)}
 .sp-note{padding:10px 12px;border-radius:12px;background:var(--bill-l);color:#6B3D0A;font-weight:700;font-size:13.5px;margin:8px 0}
 /* trilha: parada cultural */
-.node.sp-node .disc{background:linear-gradient(135deg,#F0508B,#7C4DFF);box-shadow:0 6px 0 #5B2FE0,0 12px 20px -8px rgba(0,0,0,.35);font-size:24px}
+.node.sp-node .disc{background:linear-gradient(135deg,#F0508B,#6DDFDB);box-shadow:0 6px 0 #42BACD,0 12px 20px -8px rgba(0,0,0,.35);font-size:24px}
 .node.sp-node.done .disc{background:var(--bill);box-shadow:0 6px 0 var(--bill-d),0 12px 20px -8px rgba(0,0,0,.35)}
 .node.sp-node .info{border:2px dashed #F0508B}
 .tag.t4{background:var(--speak-l);color:#b0245b}
@@ -125,24 +125,24 @@
 @media (prefers-reduced-motion:reduce){.fx-bridge .br-arrow{animation:none}}
 
 /* metas do curso e episódios planejados */
-.goalcard{margin:14px 0;padding:16px;border-radius:20px;background:var(--paper,#fff);border:1px solid rgba(80,60,140,.15);box-shadow:0 6px 20px rgba(60,40,120,.08)}
+.goalcard{margin:14px 0;padding:16px;border-radius:20px;background:var(--paper,#fff);border:1px solid rgba(69,123,131,.15);box-shadow:0 6px 20px rgba(49,103,111,.08)}
 .goalcard h3{margin:0 0 6px;font:800 18px var(--f-display,system-ui)}.goalcard p{margin:0 0 10px;font-size:14px;line-height:1.45}
 .gc-bars{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.gc-bars span{font-weight:700;font-size:13px}
-.gc-bar{height:10px;border-radius:99px;background:rgba(80,60,140,.12);overflow:hidden;margin:4px 0}.gc-bar i{display:block;height:100%;background:linear-gradient(90deg,#4F7CFF,#7C4DFF);border-radius:99px}.gc-bar.x i{background:linear-gradient(90deg,#FF8A3D,#E6447A)}
-.goalcard details{margin-top:10px}.goalcard summary{cursor:pointer;font-weight:700;font-size:13px}.gc-t{width:100%;border-collapse:collapse;margin:8px 0;font-size:13px}.gc-t th,.gc-t td{padding:6px 8px;text-align:left;border-bottom:1px solid rgba(80,60,140,.1)}
+.gc-bar{height:10px;border-radius:99px;background:rgba(69,123,131,.12);overflow:hidden;margin:4px 0}.gc-bar i{display:block;height:100%;background:linear-gradient(90deg,#4F7CFF,#6DDFDB);border-radius:99px}.gc-bar.x i{background:linear-gradient(90deg,#FF8A3D,#E6447A)}
+.goalcard details{margin-top:10px}.goalcard summary{cursor:pointer;font-weight:700;font-size:13px}.gc-t{width:100%;border-collapse:collapse;margin:8px 0;font-size:13px}.gc-t th,.gc-t td{padding:6px 8px;text-align:left;border-bottom:1px solid rgba(69,123,131,.1)}
 .cv-desc{margin:10px 0 0;font-size:14px;line-height:1.5;opacity:.9}.cv-pe{margin-top:8px;font-size:13px;opacity:.85}.cv-pf{font-size:20px;margin-right:6px}
 .cv-m{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.cv-m span{padding:4px 10px;border-radius:99px;background:rgba(79,124,255,.12);font-size:12px;font-weight:700}.cv-cum{display:block;margin-top:6px;opacity:.7}
 
 /* Traduções e dicas sempre legíveis (antes ficavam cinza claro por causa de opacidade/cor fraca) */
-.nb-big-line em,.nb-hint,.nb-sp em{opacity:1!important;color:#3a3463!important;font-weight:700}
+.nb-big-line em,.nb-hint,.nb-sp em{opacity:1!important;color:#39595E!important;font-weight:700}
 .nb-big-line em{font-size:14.5px}
 .nb-hint{font-size:13.5px}
 .nb-b small,.nb-rj,.nb-rj2,.nb-real small,.nb-real .w{opacity:1!important}
 .nb-b .nb-who{opacity:.9!important}
-.nb-row:not(.me) .nb-b small,.nb-row:not(.me) .nb-rj,.nb-row:not(.me) .nb-rj2{color:#3a3463}
+.nb-row:not(.me) .nb-b small,.nb-row:not(.me) .nb-rj,.nb-row:not(.me) .nb-rj2{color:#39595E}
 #player.az .fx-rc small{color:#2c4843!important;font-weight:700}
 .quote .tr,.dline .tr{color:var(--ink2)!important;font-weight:700}
-html[data-theme="dark"] .quote .tr,html[data-theme="dark"] .dline .tr{color:#d8d3f5!important}
+html[data-theme="dark"] .quote .tr,html[data-theme="dark"] .dline .tr{color:#D5F3F2!important}
 /* Romaji em cor viva (episódios de japonês) */
 .nb-rj,.nb-rj2,.nb-auto{color:#d6187e!important;font-weight:700!important;opacity:1!important;font-style:normal;font-family:system-ui,sans-serif}
 .nb-auto{display:block;font-size:12.5px;line-height:1.25;margin-top:2px;letter-spacing:.02em}

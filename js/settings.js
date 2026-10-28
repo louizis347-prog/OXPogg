@@ -61,7 +61,7 @@ function goalStreak(){
 }
 function goalState(){const g=goalXp(),x=todayXp();return{goal:g,xp:x,pct:Math.min(1,x/g),met:x>=g,streak:goalStreak()}}
 function ringHTML(pct,size,sw,col){const R=(size-sw)/2,C=2*Math.PI*R;
-  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${size/2}" cy="${size/2}" r="${R}" fill="none" stroke="rgba(124,77,255,.15)" stroke-width="${sw}"/><circle cx="${size/2}" cy="${size/2}" r="${R}" fill="none" stroke="${col||'#7C4DFF'}" stroke-width="${sw}" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}" transform="rotate(-90 ${size/2} ${size/2})"/></svg>`}
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${size/2}" cy="${size/2}" r="${R}" fill="none" stroke="rgba(109,223,219,.15)" stroke-width="${sw}"/><circle cx="${size/2}" cy="${size/2}" r="${R}" fill="none" stroke="${col||'#6DDFDB'}" stroke-width="${sw}" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}" transform="rotate(-90 ${size/2} ${size/2})"/></svg>`}
 
 /* ---------- lembretes ---------- */
 const R0=()=>store.get('remind',{on:false,time:'19:00',last:''});
