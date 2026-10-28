@@ -262,7 +262,7 @@ const SCN={
 const KEY={9801:'paddington',7009801:'alice',70001:'oz',7070001:'peterpan',30001:'toystory',7030001:'snow',9802:'around',7009802:'kim',30002:'nights',7030002:'madeline'};
 const keyOf=x=>{if(!x)return null;const n=typeof x==='object'?(x.n!=null?x.n:(x.e&&x.e.n)):x;return KEY[n]||null};
 const VB={paddington:'250 26 480 424',alice:'190 26 480 424',oz:'180 26 480 424',peterpan:'130 26 480 424',toystory:'160 26 480 424',snow:'130 26 480 424',around:'200 26 480 424',kim:'200 26 480 424',nights:'180 26 480 424',madeline:'60 26 480 424'};
-const svg=(k,cls)=>{const f=SCN[k];if(!f)return '';const vb=/sticker/.test(cls||'')?VB[k]:'0 0 800 450';return `<svg class="obra-svg ${cls||''}" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">${f()}</svg>`};
+const svg=(k,cls)=>{const f=SCN[k];if(!f)return '';const vb=/sticker/.test(cls||'')?VB[k]:/strip/.test(cls||'')?'0 205 800 120':'0 0 800 450';return `<svg class="obra-svg ${cls||''}" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">${f()}</svg>`};
 
 /* troca a cena + personagens da capa pelo cartaz ilustrado */
 function coverFix(sc,e){
@@ -270,5 +270,6 @@ function coverFix(sc,e){
   const bk=sc.querySelector('.ps-stage-bk'),ch=sc.querySelector('.ps-chars');
   if(!bk)return;bk.innerHTML=svg(k,'obra-cover');if(ch)ch.style.display='none';sc.classList.add('has-obra');
 }
-window.PogObra={has:x=>!!keyOf(x),key:keyOf,svg:(x,cls)=>svg(keyOf(x),cls),coverFix};
+const face=(id)=>CH[id]?`<svg class="obra-face" viewBox="-52 -214 104 104" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">${CH[id]()}</svg>`:'';
+window.PogObra={has:x=>!!keyOf(x),key:keyOf,svg:(x,cls)=>svg(keyOf(x),cls),face,coverFix};
 })();

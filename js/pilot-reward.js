@@ -8,7 +8,7 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;',
 const rd=()=>{try{return matchMedia('(prefers-reduced-motion:reduce)').matches}catch(e){return false}};
 const isOff=()=>{try{return localStorage.getItem(K_OFF)==='1'}catch(e){return false}};
 const calm=()=>rd()||isOff();
-function active(){return typeof P!=='undefined'&&!!P&&P.cid==='en-a1'&&P.idx<5&&!!P.e&&P.e.presentation==='regular-pilot-v1'&&!P.isTest}
+function active(){return typeof P!=='undefined'&&!!P&&P.cid==='en-a1'&&P.idx<10&&!!P.e&&P.e.presentation==='regular-pilot-v1'&&!P.isTest}
 function $q(s,r){return (r||document).querySelector(s)}
 
 /* ---------- trilha de progresso ---------- */
@@ -55,6 +55,7 @@ function answer(ok,el){
   const pilot=active();
   if(!pilot&&!figOn())return;
   P.prTries=(P.prTries||0)+1;
+  try{if(window.PogTheme)PogTheme.react(ok)}catch(e){}
   const r=el&&el.getBoundingClientRect?el.getBoundingClientRect():{left:innerWidth/2,top:innerHeight/2,width:0,height:0};
   const x=r.left+Math.min(r.width,260)/2,y=r.top+Math.min(r.height,80)/2;
   if(ok){
