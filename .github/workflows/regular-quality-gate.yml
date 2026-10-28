@@ -6,10 +6,10 @@ name: Trava de qualidade dos cursos regulares
 # Para BLOQUEAR o merge, marque esta checagem como obrigatória em Settings > Branches (regra da main).
 on:
   pull_request:
-    paths: ['data/**', 'plano/**', 'tools/plan/**', 'tools/audit/**']
+    paths: ['data/**', 'plano/**', 'tools/plan/**', 'tools/audit/**', 'js/obra-art.js']
   push:
     branches: [main]
-    paths: ['data/**', 'plano/**', 'tools/plan/**', 'tools/audit/**']
+    paths: ['data/**', 'plano/**', 'tools/plan/**', 'tools/audit/**', 'js/obra-art.js']
 
 permissions:
   contents: read
@@ -25,6 +25,12 @@ jobs:
         run: python3 tools/audit/test_gate.py
       - name: Valida a ponte cultural do inglês regular
         run: python3 tools/audit/english_bridge_gate.py
+      - name: Trava de referências culturais e capas (3.000 obras e capas distintas)
+        run: |
+          npm install --no-save playwright@1 >/dev/null && npx playwright install --with-deps chromium >/dev/null
+          python3 -m http.server 8123 >/dev/null 2>&1 &
+          sleep 2
+          PLAYWRIGHT="$PWD/node_modules/playwright" node tools/audit/trava_referencias_capas.js
       - name: Valida o mapeamento por episódio (obras, verbos, expressões únicos)
         run: |
           for f in plano/*.json; do
