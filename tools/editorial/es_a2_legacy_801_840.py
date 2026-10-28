@@ -27,7 +27,7 @@ def make_episode(e, idx):
   wwords=[v[0] for v in vocab]
   verbs=VERBSETS[idx%len(VERBSETS)]
   exps=EXPS[idx%len(EXPS)]
-  names=[('Lucía','polly'),('Mateo','tom')]
+  names=['Lucía','Mateo']
   a,b=names
   line_text=[
     f'{a}: Hoy necesitamos {verbs[0]} la situación con calma.',
