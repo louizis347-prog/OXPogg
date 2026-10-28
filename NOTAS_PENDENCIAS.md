@@ -209,3 +209,6 @@ B1 completo: 530 episódios no modelo piloto, 530 obras distintas (contrato `too
 
 ## Trava de qualidade + plano por episódio (inglês C1 e C2 mapeados)
 Ver `docs/PLANO_E_TRAVA.md`. en-c1 e en-c2: 1.020 episódios mapeados (foco, gs, obra, 4 verbos, 4 expressões), validação conjunta 0 erros (obra única entre C1+C2 e fora das 1.360 já em uso no inglês; expressões e gs únicos). Pendente: revisar naturalidade das expressões, fatos/anos das obras (memória), ligação frouxa obra×foco (`plano/REVISAR_C1_C2.md`). Próximo: espanhol (es-a1…es-c2).
+
+## Plano por episódio — espanhol A1 mapeado
+es-a1: 495 episódios mapeados (foco, gs, obra do mundo hispânico, 4 verbos e 4 expressões em espanhol), validação conjunta 0 erros (obra, expressão e padrão únicos; vizinhos sem 2+ verbos iguais). 108 obras sem ano (memória). Detalhes em `plano/REVISAR_ES_A1.md`. Próximo: es-a2, es-b1, es-b2, es-c1, es-c2 (2.500 episódios).
