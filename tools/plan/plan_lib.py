@@ -71,10 +71,14 @@ def load_course(course):
 
 
 def obra_of(e):
+    """Nome da obra: campo `a.w` (o mesmo que o contrato usa); se faltar, o título da figurinha do fechamento."""
+    w = ((e.get('a') or {}).get('w') or '').strip()
+    if w:
+        return w
     for fr in e.get('fr', []):
         if fr.get('k') == 'wrap' and fr.get('sticker'):
-            return fr['sticker']['sub'].split(' · ')[0].strip()
-    return (e.get('a') or {}).get('w')
+            return fr['sticker'].get('sub', '').split(' · ')[0].strip() or None
+    return None
 
 
 def read_maps(course):
