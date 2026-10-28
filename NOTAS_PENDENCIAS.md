@@ -215,3 +215,6 @@ es-a1: 495 episódios mapeados (foco, gs, obra do mundo hispânico, 4 verbos e 4
 
 ## Inglês B2 — episódios 416–510 (95) no modelo piloto
 B2: 510/510 no contrato (`regular_pilot_contract.py --course en-b2`: 0 falhas). Autoria por três agentes com letras de obra distintas, briefs com foco único em `tools/b2gen/briefs_416_447|448_479|480_510.json`, validação conjunta `try.py` 0 problemas. Pendente: refazer 940001 e 7083006 (obra do campo `a.w` diferente da capa/figurinha; módulo `b2_fix_05`), teaser do 447 ("Next Lesson") para o título real do 448, fatos das obras (memória), ligação frouxa obra×foco em alguns, resíduo de expressão trocada em falas isoladas (418, 421, 444). `mark_pilot2.py` agora aceita en-b2 (mas reescreve g/gs de episódios já prontos: usar só com cuidado).
+
+## Inglês B2 — fechamento
+940001 (The Winslow Boy) e 7083006 (The Conversation) refeitos em `tools/v3/b2_fix_05.py`; teaser do 447 corrigido. B2: 510 episódios, 510 obras distintas, contrato 0 falhas, trava sem falhas no en-b2. Pendente: fatos das obras (memória), ligação frouxa obra×foco, resíduo de expressão trocada em 418/421/444, arte genérica, teste no navegador.
