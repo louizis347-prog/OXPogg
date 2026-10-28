@@ -55,7 +55,7 @@ function answer(ok,el){
   const pilot=active();
   if(!pilot&&!figOn())return;
   P.prTries=(P.prTries||0)+1;
-  try{if(window.PogTheme)PogTheme.react(ok)}catch(e){}
+  try{if(window.PogObraTheme)PogObraTheme.react(ok)}catch(e){}
   const r=el&&el.getBoundingClientRect?el.getBoundingClientRect():{left:innerWidth/2,top:innerHeight/2,width:0,height:0};
   const x=r.left+Math.min(r.width,260)/2,y=r.top+Math.min(r.height,80)/2;
   if(ok){
