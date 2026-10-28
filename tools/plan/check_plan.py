@@ -8,7 +8,7 @@ import plan_lib as P
 
 args = [a for a in sys.argv[1:] if not a.startswith('--')]
 estrito = '--estrito' in sys.argv
-nx = lambda s: re.sub(r'[^a-z0-9]+', ' ', (s or '').lower()).strip()
+nx = P.fold
 erros, avisos = [], []
 
 # obras já em uso nos cursos prontos do mesmo idioma (dados reais)

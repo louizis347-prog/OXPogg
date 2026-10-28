@@ -14,7 +14,7 @@ while i < len(a):
     elif a[i] == '--evitar': evitar = json.load(open(a[i + 1])); i += 2
     elif a[i] == '--ancoras': anc.append(a[i + 1]); i += 2
     else: i += 1
-nx = lambda s: re.sub(r'[^a-z0-9]+', ' ', (s or '').lower()).strip()
+nx = P.fold
 rows = json.load(open(f, encoding='utf-8'))
 erros = []
 need = set()
@@ -48,7 +48,7 @@ for r in sorted(rows, key=lambda r: need and sorted(need).index(r['n']) if r['n'
     if k in ev: erros.append(lab + ': obra já em uso: ' + nome)
     if k in outras_obras: erros.append(lab + ': obra já mapeada em ' + outras_obras[k] + ': ' + nome)
     if pool:
-        first = (re.sub(r'^(the|a|an|el|la|los|las|le|les|il|der|die|das|o|os|as)\s+', '', nome.strip().lower()) or ' ')[0].upper()
+        first = ((P.fold(nome.split(':')[0]) and re.sub(r'^(the|a|an|el|la|los|las|un|una|le|les|il|der|die|das|o|os|as) ', '', P.fold(nome.split(':')[0]))) or ' ')[0].upper()
         if first not in pool: erros.append(lab + ': inicial %s fora do pool %s: %s' % (first, sorted(pool), nome))
     if not r.get('foco') or not r.get('gs'): erros.append(lab + ': foco/gs ausente')
     g = nx(r.get('gs'))

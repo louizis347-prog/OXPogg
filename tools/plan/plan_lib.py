@@ -3,7 +3,7 @@
 Cada entrada guarda foco/padrão (gs), obra cultural, 4 verbos, 4 expressões e os 19 quadros já formatados (vazios), de acordo com o contrato
 `tools/audit/regular_pilot_contract.py`. Os dados vêm de `tools/plan/map/<curso>_*.json` (escritos à mão) e a âncora (n, ordem, título atual) vem de data/.
 """
-import glob, json, os, re
+import glob, json, os, re, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 EXPECTED = ['cover', 'review', 'hotscene', 'pgscene', 'pgsheet', 'pgrule', 'pgmold', 'pgsheet', 'verbs', 'vplay', 'pgexp', 'pgscene',
@@ -33,10 +33,17 @@ QUADROS = [
 ]
 
 
+def fold(s):
+    """minúsculas sem acento (á→a, ñ→n) e só letras/números separados por espaço."""
+    s = unicodedata.normalize('NFKD', (s or '').lower())
+    s = ''.join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r'[^a-z0-9]+', ' ', s).strip()
+
+
 def norm(s):
-    s = (s or '').lower().split(':')[0]
-    s = re.sub(r'^(the|a|an|el|la|los|las|le|les|il|der|die|das|o|os|as)\s+', '', s.strip())
-    return re.sub(r'[^a-z0-9]+', '', s)
+    s = fold((s or '').split(':')[0])
+    s = re.sub(r'^(the|a|an|el|la|los|las|un|una|le|les|il|der|die|das|o|os|as)\s+', '', s)
+    return s.replace(' ', '')
 
 
 def quadros_vazios(verbos=None, expressoes=None, obra=None):

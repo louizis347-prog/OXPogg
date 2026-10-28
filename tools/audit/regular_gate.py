@@ -27,7 +27,7 @@ courses = sel or regular
 enforced = json.load(open(os.path.join(HERE, 'gate_enforced.json')))['cursos']
 bpath = os.path.join(HERE, 'gate_baseline.json')
 baseline = set(json.load(open(bpath))['falhas']) if os.path.exists(bpath) else set()
-nx = lambda s: re.sub(r'[^a-z0-9]+', ' ', (s or '').lower()).strip()
+nx = P.fold
 
 found = set()      # (chave, texto)
 for c in courses:
