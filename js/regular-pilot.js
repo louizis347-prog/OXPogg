@@ -25,7 +25,7 @@ function apply(){
  queued=false;
  const player=document.getElementById('player');
  if(!player||typeof P==='undefined'||!P)return;
- const active=(P.cid==='en-a1'||P.cid==='en-a2'||P.cid==='en-b1'||P.cid==='es-a1'||P.cid==='frbr-a1'||P.cid==='pt-a1'||P.cid==='it-a1'||P.cid==='de-a1')&&P.e&&P.e.presentation==='regular-pilot-v1';
+ const active=/^en-/.test(String(P.cid||''))&&P.e&&P.e.presentation==='regular-pilot-v1';
  player.classList.toggle('regular-pilot',active);
  const bubble=document.getElementById('pbub');
  if(bubble){bubble.tabIndex=0;bubble.setAttribute('aria-label','Orientação do Pog');}

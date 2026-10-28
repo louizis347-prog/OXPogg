@@ -1,0 +1,28 @@
+/* Identidade visual editorial das obras culturais. As quatro cores finais vêm de obra-theme.js. */
+#player.ot-on .obra-stage{position:relative;overflow:hidden;background:var(--azl,#edf4f4);isolation:isolate}
+#player.ot-on .obra-stage .obra-art{display:block;width:100%;height:100%;min-height:100%;object-fit:contain;transform:none!important}
+#player.ot-on .obra-strip{display:flex;align-items:center;gap:12px;min-height:56px;margin:0 0 14px;padding:7px 12px;border:1px solid var(--az2,#81a6af);border-radius:14px;background:var(--azl,#edf4f4);color:var(--azd,#244a58)}
+#player.ot-on .obra-strip-art{width:170px;height:56px;overflow:hidden;border-radius:10px;flex:0 0 170px;background:var(--az2,#81a6af)}
+#player.ot-on .obra-strip-art svg{display:block;width:100%;height:100%;object-fit:cover}
+#player.ot-on .obra-strip-copy{display:grid;gap:2px;min-width:0}
+#player.ot-on .obra-strip-copy span{font:700 11px/1.1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;opacity:.72}
+#player.ot-on .obra-strip-copy b{font:800 15px/1.2 system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#player.ot-on .obra-reaction{position:absolute;left:50%;bottom:calc(100% + 10px);z-index:25;display:flex;align-items:center;gap:9px;width:min(460px,calc(100% - 28px));padding:8px 12px;border:1px solid var(--az2,#81a6af);border-radius:15px;background:#fff;box-shadow:0 10px 26px -16px #20333d66;transform:translate(-50%,8px);opacity:0;pointer-events:none}
+#player.ot-on .obra-reaction.show{animation:obra-pop .22s ease-out forwards}
+#player.ot-on .obra-reaction.no-motion{animation:none;transform:translate(-50%,0);opacity:1}
+#player.ot-on .obra-reaction[hidden]{display:none}
+#player.ot-on .obra-reaction-face{width:42px;height:42px;flex:0 0 42px;overflow:hidden;border-radius:12px;background:var(--azl,#edf4f4)}
+#player.ot-on .obra-reaction-face svg{width:100%;height:100%;display:block}
+#player.ot-on .obra-reaction-copy{display:grid;gap:2px;min-width:0;color:var(--azd,#244a58)}
+#player.ot-on .obra-reaction-who{font:700 11px/1.1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;opacity:.7}
+#player.ot-on .obra-reaction-copy b{font:650 13px/1.35 system-ui,sans-serif}
+#player.ot-on .rx-pop{display:none!important}
+#player.ot-on .ps-sticker .obra-stage{height:100%;min-height:220px;border-radius:15px}
+@keyframes obra-pop{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+@media(max-width:759px){
+ #player.ot-on .obra-strip{gap:8px;padding:6px 9px}
+ #player.ot-on .obra-strip-art{width:118px;flex-basis:118px;height:52px}
+ #player.ot-on .obra-strip-copy b{font-size:13px}
+ #player.ot-on .obra-reaction{bottom:calc(100% + 7px);width:calc(100% - 20px)}
+}
+@media(prefers-reduced-motion:reduce){#player.ot-on .obra-reaction.show{animation:none;transform:translate(-50%,0);opacity:1}}
