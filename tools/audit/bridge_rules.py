@@ -5,7 +5,7 @@ import json, os, re, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'tools', 'plan'))
 import plan_lib as P
 
-REF = {7009801, 70001, 7070001, 30001}
+REF = set()  # os 4 episódios de referência do A1 também seguem a ponte (atualizados)
 GEN = {'woman', 'man', 'girl', 'boy', 'mother', 'father', 'teacher', 'student', 'friend', 'customer', 'waiter', 'clerk', 'lady', 'guy', 'person',
        'mulher', 'homem', 'mujer', 'hombre', 'chica', 'chico', 'femme', 'homme'}
 STOP = {'the', 'and', 'with', 'from', 'that', 'this', 'filme', 'livro', 'série', 'serie', 'peça', 'poema', 'música', 'musica', 'quadro', 'jogo', 'uma', 'esta', 'este',
