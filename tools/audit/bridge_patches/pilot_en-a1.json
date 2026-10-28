@@ -1,0 +1,365 @@
+[
+ {
+  "n": 70022,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 3,
+    "en": "Blue! Do we have homework about the boy who cried wolf?",
+    "pt": "Azul! Temos lição de casa sobre o menino que gritou lobo?"
+   },
+   {
+    "cena": 1,
+    "i": 7,
+    "en": "I have an idea! Is there a test on the wolf story?",
+    "pt": "Tenho uma ideia! Tem prova sobre a história do lobo?"
+   }
+  ],
+  "missao": {
+   "prompt": "Você é o pastorzinho da fábula do menino que gritou lobo e termina a aula. **Pergunte se vocês têm lição de casa sobre o lobo (Do we have…?) e se há prova (Is there…?).**",
+   "model": "Do we have homework about the wolf? Is there a test on the boy who cried wolf?",
+   "chips": [
+    "Do we have homework about the wolf? Is there a test on the boy who cried wolf?."
+   ],
+   "check": [
+    "Usei Do we have… para a lição?",
+    "Falei do lobo ou do menino da fábula?",
+    "Usei Is there… para a prova?"
+   ],
+   "kw": [
+    "\\bdo\\s+we\\s+have\\b",
+    "\\b(wolf|boy|shepherd)\\b",
+    "\\bis\\s+there\\b"
+   ],
+   "tips": [
+    [
+     [
+      "Do we have homework?",
+      "Temos lição de casa?"
+     ],
+     [
+      "Do we have a story?",
+      "Temos uma história?"
+     ]
+    ],
+    [
+     [
+      "The wolf is in the story.",
+      "O lobo está na história."
+     ],
+     [
+      "the boy who cried wolf",
+      "o menino que gritou lobo"
+     ]
+    ],
+    [
+     [
+      "Is there a test?",
+      "Tem prova?"
+     ],
+     [
+      "Is there a page about the wolf?",
+      "Tem uma página sobre o lobo?"
+     ]
+    ]
+   ],
+   "ok": [
+    "Lição! 📚",
+    "Lobo! 🐺",
+    "Prova! 📝"
+   ],
+   "reply": [
+    "Good questions! No more jokes.",
+    "Boas perguntas! Chega de brincadeiras."
+   ]
+  }
+ },
+ {
+  "n": 70065,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 6,
+    "en": "Hans and Gretel skate in the book. I feel a bit jealous of them.",
+    "pt": "Hans e Gretel patinam no livro. Sinto um pouco de ciúme deles."
+   },
+   {
+    "cena": 2,
+    "i": 6,
+    "en": "Let’s invite her to skate, like Hans and Gretel.",
+    "pt": "Vamos convidá-la para patinar, como Hans e Gretel."
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Hans Brinker, na véspera da corrida de patinação no gelo. **Pergunte à sua irmã Gretel como ela se sente, diga que você se sente preocupado e diga que ela se sente animada.**",
+   "model": "Gretel, how do you feel? I feel worried about the skate race. She feels thrilled.",
+   "chips": [
+    "Gretel, how do you feel? I feel worried about the skate race."
+   ],
+   "check": [
+    "Usei How do you feel?",
+    "Citei Hans, Gretel ou a corrida de patinação?",
+    "Usei feels com she / Gretel?"
+   ],
+   "kw": [
+    "\\bhow\\s+do\\s+you\\s+feel\\b|\\bi\\s+feel\\s+\\w+",
+    "\\b(hans|gretel|skates?|race)\\b",
+    "\\b(?:he|she|gretel|hans)\\s+feels\\s+\\w+"
+   ],
+   "tips": [
+    [
+     [
+      "Gretel, how do you feel?",
+      "Gretel, como você se sente?"
+     ],
+     [
+      "I feel worried.",
+      "Eu me sinto preocupado."
+     ]
+    ],
+    [
+     [
+      "Hans and Gretel skate.",
+      "Hans e Gretel patinam."
+     ],
+     [
+      "the skate race",
+      "a corrida de patinação"
+     ]
+    ],
+    [
+     [
+      "She feels thrilled.",
+      "Ela se sente muito animada."
+     ],
+     [
+      "Gretel feels grateful.",
+      "Gretel se sente grata."
+     ]
+    ]
+   ],
+   "ok": [
+    "Pergunta! ❓",
+    "Hans! ⛸️",
+    "Feels! 😃"
+   ],
+   "reply": [
+    "Good luck in the race!",
+    "Boa sorte na corrida!"
+   ]
+  }
+ },
+ {
+  "n": 80181,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 3,
+    "en": "Mom is right. In the story, a girl in a red hood carries food to Grandma.",
+    "pt": "A mamãe tem razão. Na história, uma menina de capuz vermelho leva comida para a vovó."
+   },
+   {
+    "cena": 1,
+    "i": 7,
+    "en": "Yes, he is a good dad. But in the story, the wolf talks to Red and he tricks her.",
+    "pt": "Sim, ele é um bom pai. Mas na história, o lobo fala com a Chapeuzinho e a engana."
+   }
+  ],
+  "missao": {
+   "prompt": "Você conta o conto da Chapeuzinho Vermelho. **Diga que a menina leva comida para a vovó, que o lobo vigia a trilha e que ele anda muito rápido.**",
+   "model": "Red carries food to Grandma. The wolf watches the path. He goes very fast.",
+   "chips": [
+    "Red carries food to Grandma."
+   ],
+   "check": [
+    "Usei -s / -es / -ies com he, she ou it?",
+    "Citei a Chapeuzinho (Red), a vovó ou o lobo?",
+    "Falei da trilha, da comida ou da velocidade?"
+   ],
+   "kw": [
+    "\\b(carries|watches|goes|studies|washes|has)\\b",
+    "\\b(red|wolf|grandma|hood)\\b",
+    "\\b(path|forest|cottage|food|fast)\\b"
+   ],
+   "tips": [
+    [
+     [
+      "Red carries food.",
+      "A Chapeuzinho leva comida."
+     ],
+     [
+      "The wolf watches the path.",
+      "O lobo vigia a trilha."
+     ]
+    ],
+    [
+     [
+      "Grandma lives in the cottage.",
+      "A vovó mora na casinha."
+     ],
+     [
+      "The wolf lives in the forest.",
+      "O lobo mora na floresta."
+     ]
+    ],
+    [
+     [
+      "He goes very fast.",
+      "Ele anda muito rápido."
+     ],
+     [
+      "The path is near the bridge.",
+      "A trilha fica perto da ponte."
+     ]
+    ]
+   ],
+   "ok": [
+    "Verbo! 🧺",
+    "Conto! 🐺",
+    "Detalhe! 🌲"
+   ],
+   "reply": [
+    "Help yourself!",
+    "Sirva-se!"
+   ]
+  }
+ },
+ {
+  "n": 7910029,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 7,
+    "en": "I am your nurse robot, Hiro. Does your elbow hurt?",
+    "pt": "Eu sou o seu robô enfermeiro, Hiro. Seu cotovelo dói?"
+   }
+  ],
+  "missao": {
+   "prompt": "Hiro conversa com Baymax, o robô enfermeiro. **Diga a Baymax que seu cotovelo dói e que sua cabeça dói; depois, como Baymax, pergunte onde dói.**",
+   "model": "Baymax, my elbow hurts. My head hurts, too. Where does it hurt, Hiro?",
+   "chips": [
+    "Baymax, my elbow hurts."
+   ],
+   "check": [
+    "Usei My … hurts?",
+    "Citei Baymax ou Hiro?",
+    "Usei Where does it hurt?"
+   ],
+   "kw": [
+    "\\bmy\\s+\\w+\\s+hurts\\b",
+    "\\b(baymax|hiro)\\b",
+    "\\bwhere\\s+does\\s+it\\s+hurt\\b"
+   ],
+   "tips": [
+    [
+     [
+      "My elbow hurts.",
+      "Meu cotovelo dói."
+     ],
+     [
+      "My head hurts.",
+      "Minha cabeça dói."
+     ]
+    ],
+    [
+     [
+      "Baymax, my knee hurts.",
+      "Baymax, meu joelho dói."
+     ],
+     [
+      "Hiro, take a bandage.",
+      "Hiro, pegue um curativo."
+     ]
+    ],
+    [
+     [
+      "Where does it hurt?",
+      "Onde dói?"
+     ],
+     [
+      "Where does it hurt, Hiro?",
+      "Onde dói, Hiro?"
+     ]
+    ]
+   ],
+   "ok": [
+    "Dói! 💪",
+    "Baymax! 🤖",
+    "Onde? 🩹"
+   ],
+   "reply": [
+    "I am satisfied with your care.",
+    "Estou satisfeito com o seu cuidado."
+   ]
+  }
+ },
+ {
+  "n": 7080309,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 6,
+    "en": "Prometheus, Zeus is angry. You gave the fire to the people!",
+    "pt": "Prometeu, Zeus está zangado. Você deu o fogo às pessoas!"
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Prometeu e fala com seu irmão Epimeteu. **Diga que você pegou o fogo dos deuses, que subiu a montanha e que deu o fogo às pessoas.**",
+   "model": "Epimetheus, I took the fire from the gods. I went up the mountain. I gave the fire to the people.",
+   "chips": [
+    "Epimetheus, I took the fire from the gods."
+   ],
+   "check": [
+    "Usei took?",
+    "Citei Prometheus, Epimetheus, os deuses ou Zeus?",
+    "Usei gave?"
+   ],
+   "kw": [
+    "\\btook\\b",
+    "\\b(prometheus|epimetheus|gods?|zeus)\\b",
+    "\\bgave\\b"
+   ],
+   "tips": [
+    [
+     [
+      "I took the fire.",
+      "Eu peguei o fogo."
+     ],
+     [
+      "I took a torch.",
+      "Eu peguei uma tocha."
+     ]
+    ],
+    [
+     [
+      "from the gods",
+      "dos deuses"
+     ],
+     [
+      "Brother, I am Prometheus.",
+      "Irmão, eu sou Prometeu."
+     ]
+    ],
+    [
+     [
+      "I gave the people a gift.",
+      "Eu dei um presente às pessoas."
+     ],
+     [
+      "I gave them hope.",
+      "Eu dei esperança a elas."
+     ]
+    ]
+   ],
+   "ok": [
+    "Took! 🔥",
+    "Mito! 🏛️",
+    "Gave! 🎁"
+   ],
+   "reply": [
+    "Zeus is angry, but the people are warm.",
+    "Zeus está zangado, mas as pessoas estão aquecidas."
+   ]
+  }
+ }
+]

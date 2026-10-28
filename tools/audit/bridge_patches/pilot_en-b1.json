@@ -1,0 +1,308 @@
+[
+ {
+  "n": 7082038,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 4,
+    "en": "So fewer people visit small bookshops like yours, Kathleen, and Fox Books has got bigger.",
+    "pt": "Então menos pessoas visitam livrarias pequenas como a sua, Kathleen, e a Fox Books ficou maior."
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Kathleen, dona da livrariazinha em *You've Got Mail*. **Diga que a vida ficou mais difícil para a sua livraria, que cada vez mais gente compra online e que a Fox Books ficou maior.**",
+   "model": "Life has become harder for my little bookshop. More and more people shop online, and Fox Books has got bigger.",
+   "chips": [
+    "has become",
+    "more and more",
+    "has got bigger"
+   ],
+   "check": [
+    "Usei has become?",
+    "Citei Kathleen, a livraria ou a Fox Books?",
+    "Usei more and more ou has got + comparativo?"
+   ],
+   "kw": [
+    "\\bhas\\s+become\\b",
+    "\\b(Kathleen|Joe|Fox\\s+Books|bookshop|bookstore)\\b",
+    "\\bmore\\s+and\\s+more\\b|\\bhas\\s+got\\s+(bigger|better|worse)\\b"
+   ],
+   "tips": [
+    [
+     [
+      "Life has become harder.",
+      "A vida ficou mais difícil."
+     ]
+    ],
+    [
+     [
+      "Fox Books has got bigger.",
+      "A Fox Books ficou maior."
+     ]
+    ],
+    [
+     [
+      "More and more people shop online.",
+      "Cada vez mais pessoas compram online."
+     ]
+    ]
+   ],
+   "ok": [
+    "Become! 🔄",
+    "Livraria! 📚",
+    "Mais e mais! 🛒"
+   ],
+   "reply": [
+    "True!",
+    "Verdade!"
+   ]
+  }
+ },
+ {
+  "n": 82106,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 6,
+    "en": "Like Thoreau at Walden Pond: a simple life, then.",
+    "pt": "Como Thoreau na Lagoa de Walden: uma vida simples, então."
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Thoreau na cabana de Walden. **Diga que você não precisa ter pressa, que não tem que ter muitas coisas e que não precisa comprar nada extra.**",
+   "model": "I need not hurry at Walden Pond. I do not have to own much. I do not need to buy anything extra.",
+   "chips": [
+    "need not",
+    "do not have to",
+    "do not need to"
+   ],
+   "check": [
+    "Usei need not?",
+    "Citei Walden ou Thoreau?",
+    "Usei do not have to ou do not need to?"
+   ],
+   "kw": [
+    "\\bneed\\s+not\\b",
+    "\\b(Walden|Thoreau|cabin|pond)\\b",
+    "\\bdo\\s+not\\s+(have|need)\\s+to\\b"
+   ],
+   "tips": [
+    [
+     [
+      "I need not hurry.",
+      "Não preciso ter pressa."
+     ]
+    ],
+    [
+     [
+      "Thoreau lived in a cabin at Walden.",
+      "Thoreau viveu numa cabana em Walden."
+     ]
+    ],
+    [
+     [
+      "I do not have to own much.",
+      "Não tenho que ter muita coisa."
+     ]
+    ]
+   ],
+   "ok": [
+    "Need not! 😌",
+    "Walden! 🌿",
+    "Have to! 🐢"
+   ],
+   "reply": [
+    "Good!",
+    "Bom!"
+   ]
+  }
+ },
+ {
+  "n": 82177,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 6,
+    "en": "In Tony Scott's film Top Gun, the jets take off from a ship, right?",
+    "pt": "No filme Top Gun, de Tony Scott, os jatos decolam de um navio, certo?"
+   }
+  ],
+  "missao": {
+   "prompt": "Você é um instrutor no filme *Top Gun*, de Tony Scott. **Diga que o jato do Maverick vai decolar, que Maverick aceitou o desafio da escola de pilotos e que outro piloto vai assumir depois do pouso.**",
+   "model": "Maverick's jet will take off soon. Maverick took up the challenge of Top Gun. Another pilot will take over after landing.",
+   "chips": [
+    "take off",
+    "take up",
+    "take over"
+   ],
+   "check": [
+    "Usei take off?",
+    "Citei Top Gun, Maverick, Goose ou Iceman?",
+    "Usei took up ou take over?"
+   ],
+   "kw": [
+    "\\btake\\s+off\\b",
+    "\\b(Top\\s+Gun|Maverick|Goose|Iceman)\\b",
+    "\\btook\\s+up\\b|\\btake\\s+over\\b"
+   ],
+   "tips": [
+    [
+     [
+      "The jet will take off.",
+      "O jato vai decolar."
+     ]
+    ],
+    [
+     [
+      "Maverick is a pilot in Top Gun.",
+      "Maverick é piloto em Top Gun."
+     ]
+    ],
+    [
+     [
+      "Another pilot will take over.",
+      "Outro piloto vai assumir."
+     ]
+    ]
+   ],
+   "ok": [
+    "Off! 🛫",
+    "Maverick! 😎",
+    "Over! ✈️"
+   ],
+   "reply": [
+    "Good!",
+    "Bom!"
+   ]
+  }
+ },
+ {
+  "n": 82253,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 2,
+    "en": "Is it only dust, Miss Muffet? What about your curds and whey?",
+    "pt": "É só a poeira, Srta. Muffet? E a sua coalhada com soro de leite?"
+   },
+   {
+    "cena": 1,
+    "i": 7,
+    "en": "I take a pill in spring. But you make me jump, Spider, when you sit down beside me!",
+    "pt": "Tomo um comprimido na primavera. Mas você me faz pular, Aranha, quando senta ao meu lado!"
+   }
+  ],
+  "missao": {
+   "prompt": "Você é a Srta. Muffet, assustada com a aranha que se senta ao seu lado. **Diga que a poeira te faz espirrar, que queijo te dá uma erupção e que a aranha te faz pular.**",
+   "model": "Dust makes me sneeze. Cheese gives me a rash. The spider makes me jump.",
+   "chips": [
+    "makes me",
+    "gives me"
+   ],
+   "check": [
+    "Usei makes me?",
+    "Citei a aranha ou a Srta. Muffet?",
+    "Usei gives me?"
+   ],
+   "kw": [
+    "\\bmakes\\s+me\\b",
+    "\\b(spider|Muffet|tuffet|curds|whey)\\b",
+    "\\bgives\\s+me\\b"
+   ],
+   "tips": [
+    [
+     [
+      "Dust makes me sneeze.",
+      "A poeira me faz espirrar."
+     ]
+    ],
+    [
+     [
+      "The spider makes me jump.",
+      "A aranha me faz pular."
+     ]
+    ],
+    [
+     [
+      "Cheese gives me a rash.",
+      "Queijo me dá uma erupção."
+     ]
+    ]
+   ],
+   "ok": [
+    "Makes! 🤧",
+    "Aranha! 🕷️",
+    "Gives! 🧀"
+   ],
+   "reply": [
+    "Good!",
+    "Bom!"
+   ]
+  }
+ },
+ {
+  "n": 7082319,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 2,
+    "en": "Will the insurance company pay, Linda? I am only a salesman.",
+    "pt": "A seguradora vai pagar, Linda? Sou só um vendedor."
+   },
+   {
+    "cena": 1,
+    "i": 6,
+    "en": "Linda, I want to settle our debts quickly. What do I need to do today?",
+    "pt": "Linda, quero resolver nossas dívidas rápido. O que preciso fazer hoje?"
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Linda Loman, em *Death of a Salesman*, acalmando Willy, o caixeiro-viajante endividado. **Diga que Willy tem direito a uma indenização, que a seguradora vai compensar o dano e que o outro motorista é responsável pelo acidente.**",
+   "model": "Willy, you are entitled to compensation. The insurance company will compensate for the damage. The other driver is liable for the accident.",
+   "chips": [
+    "entitled to",
+    "compensate for",
+    "liable for"
+   ],
+   "check": [
+    "Usei “entitled to”?",
+    "Citei Willy, Linda ou a seguradora?",
+    "Usei “compensate for” ou “liable for”?"
+   ],
+   "kw": [
+    "\\bentitled\\s+to\\b",
+    "\\b(Willy|Linda|salesman|insurance)\\b",
+    "\\bcompensate\\s+for\\b|\\bliable\\s+for\\b"
+   ],
+   "tips": [
+    [
+     [
+      "You are entitled to compensation.",
+      "Você tem direito a indenização."
+     ]
+    ],
+    [
+     [
+      "The insurance company will pay.",
+      "A seguradora vai pagar."
+     ]
+    ],
+    [
+     [
+      "The driver is liable for the accident.",
+      "O motorista é responsável pelo acidente."
+     ]
+    ]
+   ],
+   "ok": [
+    "⚖️!",
+    "Willy! 🧳",
+    "🚧!"
+   ],
+   "reply": [
+    "Nice!",
+    "Legal!"
+   ]
+  }
+ }
+]

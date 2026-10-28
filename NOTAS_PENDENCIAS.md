@@ -218,3 +218,6 @@ B2: 510/510 no contrato (`regular_pilot_contract.py --course en-b2`: 0 falhas). 
 
 ## Inglês B2 — fechamento
 940001 (The Winslow Boy) e 7083006 (The Conversation) refeitos em `tools/v3/b2_fix_05.py`; teaser do 447 corrigido. B2: 510 episódios, 510 obras distintas, contrato 0 falhas, trava sem falhas no en-b2. Pendente: fatos das obras (memória), ligação frouxa obra×foco, resíduo de expressão trocada em 418/421/444, arte genérica, teste no navegador.
+
+## Ponte obra↔episódio — piloto (20 episódios) e padrão
+Padrão `docs/PADRAO_PONTE_OBRA.md`; aplicador `tools/audit/apply_bridge_patches.py` (idempotente); auditoria `tools/audit/regular_bridge_audit.py`; relatório `docs/AUDITORIA_PADRAO_E_PONTE.md`; antes/depois `docs/PILOTO_PONTE_ANTES_DEPOIS.md`. Falta replicar nos ~1.240 episódios restantes (cena + missão) e tratar os defeitos achados (elenco genérico, cena 2 incoerente) por reconstrução. Depois de reconstruir dados de um episódio já com patch, rodar `python3 tools/audit/apply_bridge_patches.py`.

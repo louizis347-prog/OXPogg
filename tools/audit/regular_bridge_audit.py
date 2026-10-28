@@ -49,7 +49,8 @@ def check(e, prev, nxt):
     castn = {fold(c) for c in cast}
     obra_txt = fold(w + ' ' + a.get('d', '') + ' ' + (e.get('h') or {}).get('src', '') + ' ' + json.dumps(((fr.get('wrap') or [{}])[0].get('sticker') or {}), ensure_ascii=False))
     r['P1'] = bool(castn) and any(c and c in obra_txt for c in castn) and not (castn & GEN)
-    r['P2'] = any(t in lines_f.split() or t in lines_f for t in work_words if len(t) >= 4)
+    cast_obra = {c for c in castn if c and c in obra_txt}
+    r['P2'] = any(t in lines_f.split() or t in lines_f for t in (work_words | cast_obra) if len(t) >= 4)
     ms = (fr.get('pgmission') or [{}])[0].get('missions') or [{}]
     m_txt = fold(json.dumps([m.get('data', {}) for m in ms], ensure_ascii=False))
     r['P3'] = fold((ms[0] if ms else {}).get('name', '')) == 'cena da obra' and (any(c in m_txt for c in castn if c) or any(t in m_txt for t in work_words))
