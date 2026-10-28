@@ -30,6 +30,7 @@ def walk(x):
 def main():
     failures = []
     totals = Counter()
+    cultural_works = {"en-c1": set(), "en-c2": set()}
     for course in COURSES:
         for path in sorted(glob.glob(f"data/{course}_*.json")):
             for e in json.load(open(path, encoding="utf-8")):
@@ -40,6 +41,9 @@ def main():
                     failures.append(f"{course}:{e.get('n')}: descrição sem ponte obra–foco")
                 bridges = [x for x in e.get("fr", []) if x.get("k") == "bridge"]
                 if course in ("en-c1", "en-c2"):
+                    if work in cultural_works[course]:
+                        failures.append(f"{course}:{e.get('n')}: obra cultural repetida")
+                    cultural_works[course].add(work)
                     if len(e.get("fr", [])) != 19:
                         failures.append(f"{course}:{e.get('n')}: quantidade de quadros diferente de 19")
                     if len(bridges) != 1:
@@ -58,6 +62,8 @@ def main():
                     link = str((cult or {}).get("link") or "")
                     if work.lower() not in link.lower() or (topic and topic.lower() not in link.lower()):
                         failures.append(f"{course}:{e.get('n')}: cultcena sem ponte completa")
+                    if str((cult or {}).get("src") or "").strip() != work:
+                        failures.append(f"{course}:{e.get('n')}: fonte cultural ausente ou desalinhada")
                     words = next((x for x in e.get("fr", []) if x.get("k") == "words"), None)
                     verbs = next((x for x in e.get("fr", []) if x.get("k") == "verbs"), None)
                     if words is not None and len(words.get("items", [])) != 6:
