@@ -31,7 +31,6 @@ def pron(w):
 def art(seed,work):
  return {'s':['plaza','cafe','market','street','gallery'][seed%5],'items':[['🗺️',25,35,14,'bob'],['☕',50,55,13,'bob'],['🧑',75,38,14,'bob'],['🎒',88,72,12,'bob']],'seed':f'a1-{seed}-{work[:4]}'}
 def linepairs(topic, vocab, verbs, expr, region):
- a,b= v= vocab[:]
  lines=[['Persona local',f'En {region}, estamos en una situación real.',f'Em {region}, estamos em uma situação real.'],['Tú',f'Quisiera hablar de {topic}.',f'Eu gostaria de falar sobre {topic}.'],['Persona local',f'Primero, podemos {verbs[0]} y observar el contexto.',f'Primeiro, podemos {VERBPT[verbs[0]]} e observar o contexto.'],['Tú',f'Claro. {expr[0]}',f'Claro. {expr[0]}'],['Persona local',f'También necesitamos {verbs[1]} con calma.',f'Também precisamos {VERBPT[verbs[1]]} com calma.'],['Tú',f'{expr[1]}.',f'{expr[1]}.'],['Persona local',f'¿Puedes {verbs[2]} una opción?',f'Você pode {VERBPT[verbs[2]]} uma opção?'],['Tú',f'{expr[2]}.',f'{expr[2]}.']]
  return lines
 def secondpairs(topic,vocab,verbs,expr):
