@@ -1,0 +1,65 @@
+[
+{"n": 7940007,
+ "cena": [
+  {"cena": 1, "i": 3, "en": "They say Route 66 stopped being a federal highway in 1985, but you can still follow the old signs.", "pt": "Dizem que a Route 66 deixou de ser rodovia federal em 1985, mas ainda se pode seguir as placas antigas."},
+  {"cena": 1, "i": 5, "en": "True. On the Mother Road, you never know who you’ll sit next to at the counter.", "pt": "Verdade. Na Mother Road, nunca se sabe ao lado de quem se vai sentar no balcão."}],
+ "missao": {"prompt": "Você está contando a um amigo sobre a **Route 66**. **Diga o que dizem sobre a Mother Road e o que se pode fazer nela**, usando they, you ou people, sem apontar ninguém.",
+  "model": "They say the Mother Road runs from Chicago to Santa Monica, and you can still drive parts of it.",
+  "chips": ["They say the Mother Road runs from Chicago to Santa Monica, and you can still drive parts of it."],
+  "check": ["Usei they, you ou people de forma geral?", "Citei a Route 66 ou a Mother Road?", "Falei de Chicago, Santa Monica ou de dirigir?"],
+  "kw": ["\\b(they say|you can|people|one can)\\b", "\\b(Route 66|Mother Road)\\b", "\\b(Chicago|Santa Monica|drive|diner|motel)\\b"],
+  "tips": [[["They say …", "Use they say ou you can para generalizar."]], [["the Mother Road", "Cite a Route 66 ou a Mother Road."]], [["from Chicago to Santa Monica", "Fale do trajeto ou de dirigir um trecho."]]],
+  "ok": ["Generalização: ótimo. 🗣️", "Route 66: ótimo. 🛣️", "Trajeto: ótimo. 🚗"],
+  "reply": ["Ótimo: você falou da Mother Road sem apontar ninguém.", "Cite a Route 66 e use they ou you."]}},
+
+{"n": 7083089,
+ "cena": [
+  {"cena": 1, "i": 2, "en": "I could have sung the last note like Sinatra in My Way, though.", "pt": "Eu poderia ter cantado a última nota como o Sinatra em My Way, porém."},
+  {"cena": 2, "i": 4, "en": "Like Sinatra in My Way, I think back on the show and see so many regrets.", "pt": "Como o Sinatra em My Way, eu relembro o show e vejo tantos arrependimentos."}],
+ "missao": {"prompt": "Depois de ouvir **My Way**, que Sinatra gravou em 1969, fale de um arrependimento seu: **o que você devia ter feito e o que poderia ter feito** diferente.",
+  "model": "After hearing My Way, I know I should have called my brother, and I could have written a message too.",
+  "chips": ["After hearing My Way, I know I should have called my brother, and I could have written a message too."],
+  "check": ["Usei should have + particípio?", "Citei My Way, Sinatra ou a canção?", "Usei could have + particípio?"],
+  "kw": ["\\b(should|ought to|shouldn.?t) have (called|written|said|done|gone|asked)\\b", "\\b(My Way|Sinatra|song|singer)\\b", "\\b(could|needn.?t|might) have (called|written|said|done|gone|asked)\\b"],
+  "tips": [[["I should have called", "Use should have + particípio para o arrependimento."]], [["After hearing My Way", "Cite My Way, Sinatra ou a canção."]], [["I could have written", "Inclua could have + particípio."]]],
+  "ok": ["Arrependimento: ótimo. 😔", "Canção: ótimo. 🎤", "Possibilidade perdida: ótimo. ✨"],
+  "reply": ["Ótimo: você olhou para trás como o narrador de My Way.", "Use should have e could have, e cite My Way."]}},
+
+{"n": 940029,
+ "cena": [
+  {"cena": 1, "i": 2, "en": "I’m reading Bridget Jones’s Diary. She’s gutted every time Daniel lets her down.", "pt": "Estou lendo O Diário de Bridget Jones. Ela fica arrasada toda vez que o Daniel a decepciona."},
+  {"cena": 2, "i": 4, "en": "Bridget Jones would be knackered by now, but she’d still fancy a pint.", "pt": "A Bridget Jones já estaria exausta a essa hora, mas ainda toparia uma cerveja."}],
+ "missao": {"prompt": "Você é **Bridget Jones** escrevendo no diário, em Londres. **Conte como você está: exausta do trabalho, arrasada com um homem ou contente com algo**, usando knackered, gutted, chuffed ou skint.",
+  "model": "Dear diary, I’m knackered after work, gutted about Daniel, and skint until payday, but I’m chuffed about my little flat.",
+  "chips": ["Dear diary, I’m knackered after work, gutted about Daniel, and skint until payday, but I’m chuffed about my little flat."],
+  "check": ["Usei uma gíria de estado (knackered, gutted, chuffed, skint)?", "Citei o diário, Bridget ou o Daniel?", "Falei de trabalho, dinheiro ou do apê?"],
+  "kw": ["\\b(knackered|gutted|chuffed|skint)\\b", "\\b(diary|Bridget|Daniel|Mark Darcy|London)\\b", "\\b(flat|work|payday|pub|mate)\\b"],
+  "tips": [[["I’m knackered", "Use I’m + knackered, gutted, chuffed ou skint."]], [["Dear diary", "Cite o diário, a Bridget ou o Daniel."]], [["until payday", "Fale de trabalho, dinheiro ou do apê (flat)."]]],
+  "ok": ["Gíria: ótimo. 🇬🇧", "Obra: ótimo. 📔", "Detalhe: ótimo. 🏠"],
+  "reply": ["Ótimo: soou como uma página do diário da Bridget.", "Use uma gíria britânica e cite o diário."]}},
+
+{"n": 7083186,
+ "cena": [
+  {"cena": 1, "i": 1, "en": "Sure. I feel like a dancer at the audition in A Chorus Line.", "pt": "Claro. Me sinto um dançarino na audição de A Chorus Line."},
+  {"cena": 2, "i": 6, "en": "Zach in A Chorus Line judges every dancer, but I like to end on a high note.", "pt": "O Zach, em A Chorus Line, avalia cada dançarino, mas eu gosto de terminar de forma positiva."}],
+ "missao": {"prompt": "Você é a coreógrafa de um ensaio como o de **A Chorus Line**. **Dê feedback a um dançarino: diga o que funcionou bem e uma área para melhorar**, com I’d suggest.",
+  "model": "Like Zach in A Chorus Line, I watch every dancer. What worked well was your energy; one area for improvement is your timing, so I’d suggest counting out loud.",
+  "chips": ["What worked well was your energy; one area for improvement is your timing, so I’d suggest counting out loud."],
+  "check": ["Usei what worked well e an area for improvement?", "Citei A Chorus Line, o Zach ou o dançarino?", "Usei I’d suggest ou build on?"],
+  "kw": ["\\b(what worked well|area for improvement)\\b", "\\b(Chorus Line|dancer|audition|Zach)\\b", "\\b(I.?d suggest|I would suggest|build on)\\b"],
+  "tips": [[["What worked well was …", "Comece pelo positivo e depois cite an area for improvement."]], [["A Chorus Line", "Cite a peça, o Zach ou o dançarino."]], [["I’d suggest counting", "Feche com I’d suggest + -ing."]]],
+  "ok": ["Feedback em duas partes: ótimo. 👏", "Obra: ótimo. 🎭", "Sugestão: ótimo. 💡"],
+  "reply": ["Ótimo: feedback construtivo, no estilo do ensaio.", "Use what worked well, an area for improvement e I’d suggest."]}},
+
+{"n": 7083241,
+ "cena": [
+  {"cena": 2, "i": 0, "en": "**It seems that** the superforecasters in Superforecasting beat many experts.", "pt": "Parece que os superprevisores de Superforecasting superaram muitos especialistas."}],
+ "missao": {"prompt": "Você leu **Superforecasting**. **Faça uma previsão cuidadosa sobre um projeto**, como os superprevisores de Tetlock, com it seems that, tend to e give or take.",
+  "model": "It seems that our launch will slip, give or take a week, because forecasters tend to be overconfident, as Superforecasting says.",
+  "chips": ["It seems that our launch will slip, give or take a week, because forecasters tend to be overconfident."],
+  "check": ["Usei it seems that ou apparently?", "Citei Superforecasting ou os previsores?", "Usei tend to ou give or take?"],
+  "kw": ["\\b(it seems that|apparently)\\b", "\\b(Superforecasting|forecast\\w*|Tetlock|probabilit\\w+)\\b", "\\b(tend to|give or take|more or less)\\b"],
+  "tips": [[["It seems that …", "Suavize o palpite com it seems that ou apparently."]], [["as Superforecasting says", "Cite o livro ou os forecasters."]], [["tend to be overconfident", "Use tend to + verbo ou give or take."]]],
+  "ok": ["Palpite suave: ótimo. 🔮", "Obra: ótimo. 📘", "Tendência: ótimo. 📈"],
+  "reply": ["Ótimo: previsão cuidadosa, sem prometer certezas.", "Use it seems that, tend to e cite o livro."]}}
+]
