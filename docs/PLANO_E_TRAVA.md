@@ -25,3 +25,8 @@
 - Baseline: as 4.622 falhas existentes (a ponte falta em ~80% dos episódios A1–B2 e nos cursos de outros idiomas já convertidos) ficam toleradas; só falha nova reprova. À medida que a ponte é aplicada (`apply_bridge_patches.py`), reduzir o baseline com `python3 tools/audit/regular_gate.py --shrink` (só remove o que foi corrigido; nunca adiciona).
 - Autoteste: `python3 tools/audit/test_gate.py` (11 casos em memória: um episódio bom passa e cada defeito conhecido reprova).
 - Painel `docs/ACOMPANHAMENTO_INGLES_REGULAR.md` agora mostra estrutura e ponte.
+
+## Atualização — expressões únicas em todo curso regular
+- Regra 6 da trava (`tools/audit/expr_rules.py`, usada por `regular_gate.py` e testada em `test_gate.py`): a expressão ensinada no quadro de expressões (`pgexp`) de um episódio não pode ser ensinada em outro episódio do mesmo curso, nem duas vezes no mesmo episódio. A comparação ignora caixa, pontuação e espaços (“Let’s go!” = “let's go”).
+- Única repetição oficial: a **mochila de revisão** (quadro `review`), que retoma o conteúdo do episódio anterior. Ela não é lida por esta regra.
+- Antes a regra valia só para o C1 e o C2; agora vale para todos os cursos regulares marcados `regular-pilot-v1`. As repetições que já existiam (4.885, a maioria no espanhol e no inglês A1/A2/B1) entram no baseline e saem dele com `regular_gate.py --shrink` conforme forem trocadas; repetição nova bloqueia.

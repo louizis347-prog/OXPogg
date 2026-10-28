@@ -106,6 +106,7 @@ Todo quadro tem `k` (tipo). A maioria leva também `rs` (cenário), `chars` (per
 
 - [ ] 19 quadros na ordem; 6 palavras, 4 verbos, 4 expressões, 3 sons + 3 desafios, 3 missões (1ª “Cena da obra”).
 - [ ] Obra, `gs`, 4 verbos e 4 expressões **iguais ao plano**.
+- [ ] **Expressões únicas:** as 4 expressões do quadro de expressões não aparecem em nenhum outro episódio do curso (a trava confere); só a mochila de revisão retoma o episódio anterior.
 - [ ] **Ponte:** uma fala das cenas fala da obra; a missão “Cena da obra” cita a obra/personagem; gancho e figurinha são da obra; descrição da obra com 90+ caracteres; elenco da obra (sem Woman/Man).
 - [ ] Obra única no curso; fatos conferidos; sem “:” no título.
 - [ ] Cenas: 8 falas + (6 ou 8) com as expressões em negrito; sem enchimento.

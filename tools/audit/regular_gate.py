@@ -9,7 +9,9 @@ Regras:
  4. Episódio que já tem mapeamento em tools/plan/map/ e está marcado precisa usar a obra, os 4 verbos e as 4 expressões mapeados.
  5. A PONTE obra↔episódio (tools/audit/bridge_rules.py, docs/PADRAO_PONTE_OBRA.md) é regra de todo episódio marcado: obra nas cenas, missão
     “Cena da obra” ligada à obra, gancho e figurinha da obra, descrição da obra, elenco não genérico, cenário sem 3 repetições seguidas.
- 6. Falhas que já existiam (tools/audit/gate_baseline.json) são toleradas; falha nova bloqueia. `--shrink` tira do baseline o que já foi corrigido.
+ 6. EXPRESSÕES ÚNICAS em todo curso regular: a expressão ensinada no quadro de expressões (pgexp) de um episódio não pode ser ensinada em outro
+    episódio do mesmo curso (comparação sem pontuação/caixa). A única repetição oficial é a mochila de revisão (quadro `review`), que retoma o episódio anterior.
+ 7. Falhas que já existiam (tools/audit/gate_baseline.json) são toleradas; falha nova bloqueia. `--shrink` tira do baseline o que já foi corrigido.
 Uso: python3 tools/audit/regular_gate.py [--update-baseline] [--course en-b1 ...]"""
 import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -17,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(ROOT, 'tools', 'plan'))
 import regular_pilot_contract as C
 import plan_lib as P
+from expr_rules import expr_repetidas
 
 os.chdir(ROOT)
 manifest = json.load(open('data/manifest.json', encoding='utf-8'))
@@ -51,8 +54,6 @@ for c in courses:
             if k and k in seen:
                 found.add('%s|%s|obra repetida com %s: %s' % (c, e['n'], seen[k], o))
             seen.setdefault(k, e['n'])
-            # Expressions are reusable chunks, so punctuation/spacing variants
-            # must still count as the same expression across episodes.
             if c in ('en-c1', 'en-c2'):
                 verb_frame = next((q for q in e.get('fr', []) if q.get('k') == 'verbs'), {})
                 verb_key = tuple(sorted(C._norm_phrase(item.get('v')) for item in verb_frame.get('items', []) if isinstance(item, dict)))
@@ -61,13 +62,8 @@ for c in courses:
                         found.add('%s|%s|conjunto de verbos repetido com %s: %s' % (c, e['n'], seen_verbs[verb_key], ', '.join(verb_key)))
                     else:
                         seen_verbs[verb_key] = e['n']
-                exp = next((q for q in e.get('fr', []) if q.get('k') == 'pgexp'), {})
-                for item in exp.get('items', []):
-                    phrase = C._norm_phrase(item.get('en') or item.get('x'))
-                    if phrase and phrase in seen_expr:
-                        found.add('%s|%s|expressão repetida com %s: %s' % (c, e['n'], seen_expr[phrase], phrase))
-                    elif phrase:
-                        seen_expr[phrase] = e['n']
+    for n_, ant, phrase in expr_repetidas([e for _, e in eps if e.get('presentation') == 'regular-pilot-v1']):
+        found.add('%s|%s|expressão repetida com %s: %s' % (c, n_, ant, phrase))
     if c in enforced:
         for _, e in eps:
             if e.get('presentation') != 'regular-pilot-v1':
