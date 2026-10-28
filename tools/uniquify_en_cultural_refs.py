@@ -39,6 +39,49 @@ def walk_replace(value, old: str, new: str):
     return value
 
 
+COMMON_SINGLE_WORDS = {"up", "her", "er", "speed", "friends", "elf", "roots", "chef", "cars"}
+
+
+def clear_old_cultural_mentions(value, old: str, new: str, path=""):
+    """Remove the old work from cultural prose without corrupting vocabulary.
+
+    Common one-word titles (for example ``speed`` and ``friends``) can also be
+    ordinary lesson vocabulary, so they are left in lowercase language
+    examples. Proper multi-word titles are replaced everywhere in prose. Old
+    character ids are replaced with the neutral cast used by the rebuilt
+    cultural scene.
+    """
+    if isinstance(value, str):
+        if path.endswith(".chars") or ".chars[" in path or path.endswith(".speakers"):
+            return value
+        old_norm = norm(old)
+        if " " not in old_norm and old_norm in COMMON_SINGLE_WORDS:
+            return value
+        return re.sub(re.escape(old), new, value, flags=re.IGNORECASE)
+    if isinstance(value, list):
+        return [clear_old_cultural_mentions(v, old, new, f"{path}[{i}]") for i, v in enumerate(value)]
+    if isinstance(value, dict):
+        out = {}
+        for key, item in value.items():
+            child = f"{path}.{key}"
+            if key == "chars" and isinstance(item, list):
+                # The previous work's named characters no longer belong in
+                # this episode's new cultural scene.
+                clean = []
+                for i, char in enumerate(item):
+                    if isinstance(char, list) and char:
+                        char = list(char)
+                        char[0] = "tom" if i % 2 == 0 else "polly"
+                    clean.append(char)
+                out[key] = clean
+            elif key == "who" and isinstance(item, str):
+                out[key] = "Alex"
+            else:
+                out[key] = clear_old_cultural_mentions(item, old, new, child)
+        return out
+    return value
+
+
 def kind_label(kind: str) -> str:
     low = norm(kind)
     if any(x in low for x in ("filme", "film", "obra", "cinema")):
@@ -62,6 +105,7 @@ def cultural_candidates(used: set[str]):
     # Keep a first source record for each title. Exclude city/place-only cards;
     # they are useful as settings but are not a cultural work for this contract.
     records = {}
+    all_kinds = {}
     allow = (
         "livro", "book", "romance", "novel", "poema", "poetry", "poem",
         "filme", "film", "obra", "série", "serie", "canç", "canción",
@@ -84,6 +128,8 @@ def cultural_candidates(used: set[str]):
             title = str(a.get("w") or "").strip()
             key = norm(title)
             kind = str(a.get("k") or "")
+            if title:
+                all_kinds.setdefault(key, set()).add(kind)
             if not title or key in used or key in records:
                 continue
             if not any(token in norm(kind) for token in allow):
@@ -94,7 +140,19 @@ def cultural_candidates(used: set[str]):
                 "y": str(a.get("y") or "").strip(),
                 "source": copy.deepcopy(a),
             }
-    return list(records.values())
+    place_markers = (
+        "cidade", "city", "ciudad", "lugar", "place", "região", "region",
+        "localização", "location", "província", "province", "bairro",
+        "neighborhood", "städt", "stadt", "地域",
+    )
+    # A title sometimes appears as a generic cultural card in one course and
+    # as a city/place card in another. Exclude it when the catalogue confirms
+    # that it is fundamentally a location; a place can be a setting, but it is
+    # not the cultural work required by this contract.
+    return [
+        record for key, record in records.items()
+        if not any(any(marker in norm(kind) for marker in place_markers) for kind in all_kinds.get(key, ()))
+    ]
 
 
 def focus_text(episode: dict) -> str:
@@ -182,6 +240,12 @@ def rebuild_cultural_frames(episode: dict, work: dict, old: str):
             frame["obra"] = f"{title}{year_suffix}"
         elif isinstance(frame.get("obra"), dict):
             frame["obra"].update({"name": title, "kind": f"{work['k']} · {year}".strip(" ·"), "text": description})
+    # A few older frames contain a proper work title or named character in a
+    # recap/mission. Remove those leftovers while retaining ordinary lesson
+    # vocabulary when a title is also a common word.
+    clean = clear_old_cultural_mentions(episode, old, title)
+    episode.clear()
+    episode.update(clean)
 
 
 def main():
