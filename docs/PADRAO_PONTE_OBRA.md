@@ -33,3 +33,13 @@
 ## Exemplo antes/depois (A1, episódio 7010178, *It’s a Wonderful Life*, padrão save · spend · earn)
 Antes: cena genérica de banco (“I work at the bank. I earn money.”) e missão “Fale como na obra. Diga: Eu trabalho no banco…” sem citar a obra.
 Depois (modelo): fala — *“George: At the Building and Loan, I earn a little and I save a little.”* (George Bailey dirige a cooperativa de crédito Bailey Building and Loan); missão — *“Você é George Bailey. **Diga que você ganha pouco, que guarda dinheiro todo mês e que não gasta muito.**”*, `model` “I earn a little. I save money every month. I do not spend much.”
+
+## Como a trava confere a ponte (`tools/audit/bridge_rules.py`)
+Para todo episódio marcado `regular-pilot-v1` (exceto os 4 de referência):
+1. alguma fala das cenas contém uma palavra do título/descrição da obra ou o nome de um personagem da obra;
+2. a 1ª missão se chama “Cena da obra” e o enunciado ou o modelo cita a obra ou um personagem;
+3. o gancho da capa vem da obra do episódio (`h.src`) e a figurinha do fechamento mostra a obra;
+4. a descrição da obra (`a.d`) tem 90+ caracteres;
+5. o elenco não é genérico (Woman, Man, Girl, Boy, Mulher, Homem…);
+6. o mesmo cenário não aparece em 3 quadros seguidos.
+Falha nova = checagem vermelha no PR; falhas antigas ficam no baseline e saem dele com `regular_gate.py --shrink` conforme a ponte é aplicada.

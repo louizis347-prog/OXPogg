@@ -52,7 +52,7 @@ def check(e, prev, nxt):
     cast_obra = {c for c in castn if c and c in obra_txt}
     r['P2'] = any(t in lines_f.split() or t in lines_f for t in (work_words | cast_obra) if len(t) >= 4)
     ms = (fr.get('pgmission') or [{}])[0].get('missions') or [{}]
-    m_txt = fold(json.dumps([m.get('data', {}) for m in ms], ensure_ascii=False))
+    m_txt = fold(str((ms[0].get('data', {}) if ms else {}).get('prompt', '')) + ' ' + str((ms[0].get('data', {}) if ms else {}).get('model', '')))
     r['P3'] = fold((ms[0] if ms else {}).get('name', '')) == 'cena da obra' and (any(c in m_txt for c in castn if c) or any(t in m_txt for t in work_words))
     g = (fr.get('cover') or [{}])[0].get('gancho') or []
     l0 = (sc[0].get('lines') or [[]])[0] if sc else []

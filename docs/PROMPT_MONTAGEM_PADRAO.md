@@ -15,6 +15,8 @@ Como usar: copie o **PROMPT-MESTRE** (seção 11) e preencha os campos `{…}` c
 5. **Fatos só se verdadeiros.** Ano, autor, enredo da obra: só o que você tem certeza. Sem número inventado.
 6. **Língua natural.** Idioma-alvo correto e falado de verdade; português do Brasil natural; tradução fiel.
 
+7. **Ponte obra↔episódio (obrigatória).** A obra não fica só na capa e na figurinha: pelo menos uma fala das cenas fala da obra (personagem, lugar ou fato verdadeiro do enredo) usando o padrão do dia, e a 1ª missão — “Cena da obra” — pede uma frase que liga a obra ao padrão (o enunciado e o modelo citam a obra ou um personagem). Detalhes e formato de patch: `docs/PADRAO_PONTE_OBRA.md`; a trava (`tools/audit/bridge_rules.py`) reprova o que faltar.
+
 ## 2. Entradas do episódio (vêm do plano)
 
 | Campo | Descrição |
@@ -48,7 +50,7 @@ Todo quadro tem `k` (tipo). A maioria leva também `rs` (cenário), `chars` (per
 15. **`pglab` — Laboratório de sons.** `short`, `title`, `say`, `intro {what, how, pt}`, **3 sons** (`ex`: palavra, pronúncia, tradução, dica), **3 pares mínimos** (`pairs`), `tip`, `phrase[2]`, **3 desafios** (`rounds`: `fig 🎧`, `say`, `ask`, `opts`, `a`, `why`). O som é **difícil para brasileiros**, ligado às palavras do episódio, e **diferente do som do episódio anterior**.
 16. **`pgsheet` “Caça-sons”** — **5** itens de escuta (`fig 🎧`): ouvir e tocar a palavra ou a figura (`pic`).
 17. **`pgspeak` — Sua vez de falar.** **5 frases** `[língua-alvo, tradução]` crescentes (1ª curta, 5ª combina duas), `who`, `say`.
-18. **`pgmission` — Missão: sua vez!** **3 missões**: a **primeira se chama “Cena da obra”** (fala como os personagens), as outras duas são situações reais do aluno. Cada uma tem `data`: `prompt` (com a tarefa em negrito), `ph`, `chips`, `model` (resposta-modelo), `check[3]`, `kw[3]` (**regex que casam com o `model`** e não deixam passar qualquer frase), `tips[3]`, `ok[3]`, `reply[2]`.
+18. **`pgmission` — Missão: sua vez!** **3 missões**: a **primeira se chama “Cena da obra” e o enunciado/modelo citam a obra ou um personagem dela** (a ponte; a trava confere), as outras duas são situações reais do aluno. Cada uma tem `data`: `prompt` (com a tarefa em negrito), `ph`, `chips`, `model` (resposta-modelo), `check[3]`, `kw[3]` (**regex que casam com o `model`** e não deixam passar qualquer frase), `tips[3]`, `ok[3]`, `reply[2]`.
 19. **`wrap` — Para levar.** `recap` (4 pares), `teaser {t (título do PRÓXIMO episódio), d (“Próximo padrão: …”)}`, `sticker {title, sub (“Obra · ano”), rs, chars}`, `rs`, `chars`.
 
 **Campos de topo do episódio:** `n`, `t` (título), `s` (subtítulo curto), `sc` (cenário base), `a` (obra: `k` “🎬 Filme”, `w` nome, `y` ano, `d` descrição de 1–2 frases em português), `h` (`l` fala-gancho, `src` obra, `tr` tradução), `p` (“Hoje você aprende…”), `v` (**6** palavras `[palavra, tradução, “Soa como…”]`), `g {t}` e `gs` (o padrão), `presentation: "regular-pilot-v1"`, `stage`.
@@ -56,7 +58,7 @@ Todo quadro tem `k` (tipo). A maioria leva também `rs` (cenário), `chars` (per
 ## 4. Visual: cenários e personagens
 
 - **Cenários (`rs`)**: variedade obrigatória. Os quadros de um mesmo episódio não repetem o cenário em sequência, e o `rs` principal difere do dos episódios vizinhos. Preferir cenários novos (`beach zoo farm playground busstop bakery supermarket bookshop postoffice bank pharmacy restaurant hotelroom mountain forest snow stage library museum castlehall garden fair pool stadium harbor chefkitchen musicroom traincar soccerfield fishing artroom nightcity meetingroom christmas`) além dos clássicos (`cafe living market airport lobby station subway park pier lake nyc cafe2 airport2 lobby1 lobby2 cafe3 diner home1 yard park2 school shop office clinic kitchen bedroom bath counter gym hall street`). Os objetos de `hotscene` têm de existir no cenário escolhido.
-- **Personagens**: sempre os **personagens da obra do episódio**, com o nome da obra (nunca “Woman”/“Man”/“Girl”/“Boy”). Arte: usar um id existente em `js/chars*.js` só se for exatamente aquele personagem (ex.: `dorothy`, `scarecrow`, `lion`, `wendy`, `peter`, `cowboy`, `ranger`; `chars5`: `glinda`, `harry`, `gandalf`…). Senão, desenhar o personagem com ficha própria (figurino, adereço, cor) para que o aluno **reconheça a obra**. Variar rostos, idades e cores entre episódios.
+- **Personagens**: sempre os **personagens da obra do episódio** (a trava reprova elenco genérico), com o nome da obra (nunca “Woman”/“Man”/“Girl”/“Boy”). Arte: usar um id existente em `js/chars*.js` só se for exatamente aquele personagem (ex.: `dorothy`, `scarecrow`, `lion`, `wendy`, `peter`, `cowboy`, `ranger`; `chars5`: `glinda`, `harry`, `gandalf`…). Senão, desenhar o personagem com ficha própria (figurino, adereço, cor) para que o aluno **reconheça a obra**. Variar rostos, idades e cores entre episódios.
 - **Posição na cena**: `chars` = `[id, x (0–100), olha (0 esquerda/1 direita), escala]`; dois personagens em lados opostos, olhando para o centro; `hot` com `x,y` espalhados sem sobrepor os personagens.
 - **Layout**: cabe sem rolar, com respiro; o guia (`say`, `bubble`, `avatar`) abre cada quadro; capa e figurinha (`sticker`) mostram a obra com identidade visual própria.
 
@@ -79,7 +81,7 @@ Todo quadro tem `k` (tipo). A maioria leva também `rs` (cenário), `chars` (per
 
 ## 7. Contrato automático (o que reprova)
 
-`tools/audit/regular_pilot_contract.py`: 19 quadros na ordem; `presentation` presente; 6 palavras; 4 verbos; 4 expressões; laboratório 3+3; duas cenas (1ª ≥ 8 falas, 2ª ≥ 6 ou 8 conforme o nível); 3 missões; mochila no quadro 2; obra presente e sem repetir no curso. A **trava** (`tools/audit/regular_gate.py`, workflow `regular-quality-gate.yml`) roda isso em todo PR, exige obra única entre episódios prontos, exige que cursos fechados estejam 100% no padrão e exige **aderência ao plano** (obra, 4 verbos e 4 expressões iguais ao mapeado).
+`tools/audit/regular_pilot_contract.py` (+ `bridge_rules.py` para a ponte): 19 quadros na ordem; `presentation` presente; 6 palavras; 4 verbos; 4 expressões; laboratório 3+3; duas cenas (1ª ≥ 8 falas, 2ª ≥ 6 ou 8 conforme o nível); 3 missões; mochila no quadro 2; obra presente e sem repetir no curso. A **trava** (`tools/audit/regular_gate.py`, que inclui a ponte e tem autoteste em `tools/audit/test_gate.py`, workflow `regular-quality-gate.yml`) roda isso em todo PR, exige obra única entre episódios prontos, exige que cursos fechados estejam 100% no padrão e exige **aderência ao plano** (obra, 4 verbos e 4 expressões iguais ao mapeado).
 
 ## 8. Montagem (comandos)
 
@@ -104,6 +106,7 @@ Todo quadro tem `k` (tipo). A maioria leva também `rs` (cenário), `chars` (per
 
 - [ ] 19 quadros na ordem; 6 palavras, 4 verbos, 4 expressões, 3 sons + 3 desafios, 3 missões (1ª “Cena da obra”).
 - [ ] Obra, `gs`, 4 verbos e 4 expressões **iguais ao plano**.
+- [ ] **Ponte:** uma fala das cenas fala da obra; a missão “Cena da obra” cita a obra/personagem; gancho e figurinha são da obra; descrição da obra com 90+ caracteres; elenco da obra (sem Woman/Man).
 - [ ] Obra única no curso; fatos conferidos; sem “:” no título.
 - [ ] Cenas: 8 falas + (6 ou 8) com as expressões em negrito; sem enchimento.
 - [ ] Nada repete o episódio vizinho (palavras, verbos, sons, objetos), exceto a mochila.
@@ -119,6 +122,6 @@ Todo quadro tem `k` (tipo). A maioria leva também `rs` (cenário), `chars` (per
 >
 > **Entregue** os 19 quadros, na ordem e com as contagens do contrato: capa com “em 10 minutos você …”; mochila gerada do anterior; cena clicável com 5 objetos; cena 1 com 8 falas; 3 perguntas de compreensão; regra com fórmula, usos, regras e pergunta; molde de 3 páginas; 6 palavras (com “Soa como…”); 4 verbos com formas e quiz de 4; missão dos verbos com plano de 7 passos; 4 expressões com quiz de 4; cena 2 ({6 ou 8}+ falas) encenando as 4 expressões em negrito, sem fala de enchimento; 6 lacunas; 4 “qual está certa”; laboratório com 1 som difícil para brasileiros (3 palavras, 3 pares mínimos, 3 desafios, diferente do anterior); 5 caça-sons; 5 frases para falar; 3 missões (a 1ª “Cena da obra”, `kw` que casam com o `model`); fechamento com recap de 4, teaser do próximo e figurinha da obra.
 >
-> **Regras:** conteúdo 100% próprio deste episódio; nada repetido do vizinho exceto a mochila; personagens = personagens da obra (arte existente só se for exatamente aquele personagem; senão ficha própria); cenários variados e diferentes dos vizinhos; tradução para português do Brasil natural e consistente; só fatos que você tem certeza; uma única resposta defensável por pergunta; distratores = erros reais de brasileiros.
+> **Regras:** conteúdo 100% próprio deste episódio; **ponte obra↔episódio** (uma fala das cenas que fala da obra e a missão “Cena da obra” ligada à obra, conforme `docs/PADRAO_PONTE_OBRA.md`); nada repetido do vizinho exceto a mochila; personagens = personagens da obra (arte existente só se for exatamente aquele personagem; senão ficha própria); cenários variados e diferentes dos vizinhos; tradução para português do Brasil natural e consistente; só fatos que você tem certeza; uma única resposta defensável por pergunta; distratores = erros reais de brasileiros.
 >
 > **Antes de entregar** rode `dryrun.py` do módulo (0 problemas), grave com `model_v3.py` + `mark_pilot2.py` + `fix_mechanical.py` e confira `regular_pilot_contract.py` e `regular_gate.py`. Relate em português o que verificou e o que veio de memória sem checagem.

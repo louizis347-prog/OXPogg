@@ -7,7 +7,9 @@ Regras:
  2. Obra única entre os episódios marcados do mesmo curso (nome normalizado).
  3. Cursos listados em tools/audit/gate_enforced.json precisam ter 100% dos episódios marcados.
  4. Episódio que já tem mapeamento em tools/plan/map/ e está marcado precisa usar a obra, os 4 verbos e as 4 expressões mapeados.
- 5. Falhas que já existiam (tools/audit/gate_baseline.json) são toleradas; falha nova bloqueia.
+ 5. A PONTE obra↔episódio (tools/audit/bridge_rules.py, docs/PADRAO_PONTE_OBRA.md) é regra de todo episódio marcado: obra nas cenas, missão
+    “Cena da obra” ligada à obra, gancho e figurinha da obra, descrição da obra, elenco não genérico, cenário sem 3 repetições seguidas.
+ 6. Falhas que já existiam (tools/audit/gate_baseline.json) são toleradas; falha nova bloqueia. `--shrink` tira do baseline o que já foi corrigido.
 Uso: python3 tools/audit/regular_gate.py [--update-baseline] [--course en-b1 ...]"""
 import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -68,6 +70,12 @@ for c in courses:
             if sorted(x) != sorted(nx(y) for y in m.get('expressoes', [])):
                 found.add('%s|%s|fora do plano: expressões' % (c, e['n']))
 
+if '--shrink' in sys.argv:  # só remove do baseline o que já foi corrigido; nunca adiciona falha nova
+    keep = sorted(baseline & found)
+    json.dump({'nota': 'Falhas já existentes toleradas pela trava; só falhas novas bloqueiam. Gerado por regular_gate.py (--update-baseline ou --shrink).', 'falhas': keep},
+              open(bpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print('baseline reduzido de', len(baseline), 'para', len(keep), '(', len(baseline) - len(keep), 'falhas corrigidas )')
+    sys.exit(0)
 if '--update-baseline' in sys.argv:
     json.dump({'nota': 'Falhas já existentes tolerados pela trava; só falhas novas bloqueiam. Gerado por regular_gate.py --update-baseline.', 'falhas': sorted(found)},
               open(bpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
