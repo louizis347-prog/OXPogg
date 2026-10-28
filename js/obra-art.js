@@ -9,6 +9,11 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const hash=s=>{let h=2166136261;for(const c of String(s||'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0};
 const pick=(a,h)=>a[h%a.length];
+const hsl=(h,sa,l)=>{h=((h%360)+360)%360;sa/=100;l/=100;const a=sa*Math.min(l,1-l),f=n=>{const k=(n+h/30)%12,c=l-a*Math.max(-1,Math.min(k-3,9-k,1));return Math.round(255*c).toString(16).padStart(2,'0')};return '#'+f(0)+f(8)+f(4)};
+/* paleta própria da obra: matiz do hash, harmonia escolhida pelo hash (análoga, complementar, tríade, quente/fria) */
+function palOf(h){const hue=h%360,mode=(h>>>9)%5,off=[35,180,120,-40,150][mode],sa=48+(h>>>12)%22,lt=80+(h>>>15)%6;
+ return [hsl(hue,sa,lt),hsl(hue+off,sa-6,56+(h>>>17)%8),hsl(hue+off/2,38,24+(h>>>19)%8),hsl(hue,62,94+(h>>>21)%3)];}
+const SCENE_LIST=['city','water','forest','stage','lab','library','museum','kitchen','mountain','night'];
 const PALETTES=[
  ['#f7d6a5','#6d8fbd','#203b66','#f8efe1'],['#d8e9c5','#d46f58','#3c5545','#f6f4df'],
  ['#efd0de','#6c73b8','#342b5d','#fff3f4'],['#c8e7e8','#e28b42','#355b63','#eff9f5'],
@@ -50,7 +55,7 @@ function keyOf(e){
  return 'w-'+base+'-'+hash(w).toString(36).slice(0,5);
 }
 function motifOf(e,w){const text=`${w} ${(e&&e.a&&e.a.k)||(e&&e.k)||''} ${(e&&e.s)||''}`;return MOTIFS.find(x=>x.re.test(text))||null;}
-function sceneOf(e,w){const text=`${w} ${(e&&e.sc)||''} ${(e&&e.rs)||''} ${(e&&e.s)||''}`,motif=motifOf(e,w);if(motif)return motif.scene;for(const [k,re] of Object.entries(SCENE_WORDS))if(re.test(text))return k;return 'city';}
+function sceneOf(e,w){const text=`${w} ${(e&&e.sc)||''} ${(e&&e.rs)||''} ${(e&&e.s)||''}`,motif=motifOf(e,w);if(motif)return motif.scene;for(const [k,re] of Object.entries(SCENE_WORDS))if(re.test(text))return k;return SCENE_LIST[(hash(w)>>>5)%SCENE_LIST.length];}
 function castIds(e,m){const motif=motifOf(e,m.w);if(motif)return motif.ids;const ids=[];const add=x=>{if(x&&!ids.includes(x))ids.push(x)};for(const f of (e&&e.fr)||[]){for(const c of (f.chars||[]))add(c[0]);for(const c of Object.values(f.cast||{})){if(Array.isArray(c))add(c[0]);}}return ids.length?ids.slice(0,3):['tom','polly'];}
 const AUTO_OBJECTS=[
  [/train|railway|subway|metro|station/i,'train'],[/camera|photograph|photo|film/i,'camera'],[/newspaper|journal|press|report/i,'paper'],[/map|journey|travel|voyage|road/i,'map'],
@@ -58,10 +63,10 @@ const AUTO_OBJECTS=[
  [/school|classroom|teacher|student|university/i,'chalk'],[/market|shop|store|money|bank/i,'ticket'],[/ship|boat|harbor|sea|ocean/i,'anchor'],[/city|street|avenue|new york|london|paris/i,'streetlamp'],
  [/war|battle|soldier|army|king|queen|castle/i,'crown'],[/space|moon|star|planet|astronaut/i,'rocket'],[/science|laboratory|research|medicine|doctor/i,'flask'],[/painting|portrait|museum|artist|sculpture/i,'frame']
 ];
-function objectOf(e,w,scene){const text=`${w} ${(e&&e.a&&e.a.k)||''} ${(e&&e.a&&e.a.d)||''} ${(e&&e.s)||''}`;for(const [re,obj] of AUTO_OBJECTS)if(re.test(text))return obj;return OBJECTS[scene]||'window';}
+function objectOf(e,w,scene){const text=`${w} ${(e&&e.a&&e.a.k)||''} ${(e&&e.a&&e.a.d)||''} ${(e&&e.s)||''}`;for(const [re,obj] of AUTO_OBJECTS)if(re.test(text))return obj;const pool=['window','map','ribbon','trophy','flower','chalk','ticket','anchor','streetlamp','crown','rocket','flask','cup','paper','camera','book','frame'];return pool[(hash(w)>>>7)%pool.length];}
 
 function meta(e){
- const w=workOf(e),h=hash(w),key=keyOf(e),pal=pick(PALETTES,h),motif=motifOf(e,w),scene=sceneOf(e,w);
+ const w=workOf(e),h=hash(w),key=keyOf(e),pal=palOf(h),motif=motifOf(e,w),scene=sceneOf(e,w);
  KEY[e&&e.n||key]=key;VB[key]='120 45 560 370';SCN[key]=scene;
  const title=w.split(/[:·–—]/)[0].trim();
  const who=(e&&e.fr||[]).flatMap(f=>Object.keys(f.cast||{})).find(Boolean)||'Pog';
@@ -74,13 +79,13 @@ function E(x,y,rx,ry,fill){return `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="$
 function L(x1,y1,x2,y2,stroke,sw){return `<path d="M${x1} ${y1}L${x2} ${y2}" fill="none" stroke="${stroke||INK}" stroke-width="${sw||4}" stroke-linecap="round"/>`;}
 function cloud(x,y,s,c){return `<g transform="translate(${x} ${y}) scale(${s})" fill="${c}" stroke="${INK}" stroke-width="3"><ellipse cx="0" cy="8" rx="36" ry="13"/><ellipse cx="26" cy="1" rx="25" ry="18"/><ellipse cx="-22" cy="2" rx="22" ry="16"/></g>`;}
 function star(x,y,s,c){return `<path d="M${x} ${y-s}l${s*.28} ${s*.62} ${s*.72} ${s*.1}-${s*.55} ${s*.48} ${s*.18} ${s*.7}-${s*.63}-${s*.38}-${s*.58} ${s*.42} ${s*.18}-${s*.7}z" fill="${c}" stroke="${INK}" stroke-width="2"/>`;}
-function kid(x,y,s,skin,hair,shirt,flip){
+function kid(x,y,s,skin,hair,shirt,flip,look){look=look|0;const hr=look%4;
  const tr=`translate(${x} ${y}) scale(${flip?-s:s} ${s})`;
- return `<g transform="${tr}" stroke="${INK}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-28 90L-38 150M28 90L38 150" fill="none"/><path d="M-43 150h18M25 150h18" fill="none"/><path d="M-48 72Q-48 36 0 30Q48 36 48 72v54h-96z" fill="${shirt}"/><circle cx="0" cy="0" r="40" fill="${skin}"/><path d="M-40-8Q-34-49 0-48Q36-48 42-6Q23-24 0-20Q-22-26-40-8z" fill="${hair}"/><circle cx="-14" cy="2" r="4" fill="${INK}" stroke="none"/><circle cx="14" cy="2" r="4" fill="${INK}" stroke="none"/><path d="M-12 20Q0 29 12 20" fill="none"/></g>`;
+ return `<g transform="${tr}" stroke="${INK}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-28 90L-38 150M28 90L38 150" fill="none"/><path d="M-43 150h18M25 150h18" fill="none"/><path d="M-48 72Q-48 36 0 30Q48 36 48 72v54h-96z" fill="${shirt}"/><circle cx="0" cy="0" r="40" fill="${skin}"/>${hr===1?`<path d="M-44 10Q-52-50 0-52Q52-50 44 10L40 48Q34 20 30-10Q0-24-30-10Q-34 20-40 48z" fill="${hair}"/>`:hr===2?`<circle cx="0" cy="-58" r="20" fill="${hair}"/><path d="M-40-8Q-34-49 0-48Q36-48 42-6Q23-24 0-20Q-22-26-40-8z" fill="${hair}"/>`:hr===3?`<path d="M-44-6Q-40-52 0-50Q40-52 44-6z" fill="${hair}"/><path d="M-44-6H70" fill="none"/>`:`<path d="M-40-8Q-34-49 0-48Q36-48 42-6Q23-24 0-20Q-22-26-40-8z" fill="${hair}"/>`}<circle cx="-14" cy="2" r="4" fill="${INK}" stroke="none"/><circle cx="14" cy="2" r="4" fill="${INK}" stroke="none"/><path d="M-12 20Q0 29 12 20" fill="none"/>${look&4?`<circle cx="-14" cy="2" r="11" fill="none"/><circle cx="14" cy="2" r="11" fill="none"/><path d="M-3 2h6" fill="none"/>`:''}</g>`;
 }
-function charFor(id,x,y,s,flip,fall){
+function charFor(id,x,y,s,flip,fall,look){
  try{if(window.PogChars&&PogChars.svg){const raw=PogChars.svg(id);if(raw){const inner=raw.replace(/^<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'');return `<g transform="translate(${x-50*s} ${y}) scale(${flip?-s:s} ${s})" filter="drop-shadow(0 5px 5px rgba(43,29,58,.2))">${inner}</g>`;}}}catch(e){}
- return kid(x,y,s,fall.skin,fall.hair,fall.shirt,flip);
+ return kid(x,y,s,fall.skin,fall.hair,fall.shirt,flip,look);
 }
 function object(kind,x,y,s,c){
  const z=s||1;
@@ -132,13 +137,16 @@ function body(e,mode){
  else if(scene==='library'){s+=P(40,55,720,300,'#f4e4c8',8);for(let r=0;r<3;r++)for(let i=0;i<10;i++)s+=P(65+i*68,80+r*78,46,56,pick([accent,light,dark,'#d88970'],(h+i+r)%4),3);s+=P(0,355,800,95,light,0);}
  else if(scene==='museum'){s+=P(40,55,720,300,'#eee4d4',8);for(let i=0;i<4;i++)s+=object('frame',76+i*185,95+(i%2)*28,.8,pick([accent,light,dark],(h+i)%3));s+=P(0,355,800,95,light,0);}
  else if(scene==='kitchen'){s+=P(0,280,800,170,light,0)+P(60,84,680,210,'#f4e9d7',8)+object('cup',630,150,1,accent);}
- else {s+=P(0,275,800,175,light,0);for(let i=0;i<6;i++){const x=40+i*135;s+=P(x,125-(i%2)*35,98,150+(i%2)*35,accent,5)+P(x+18,147-(i%2)*35,28,42,bg,2)+P(x+57,147-(i%2)*35,28,42,bg,2);}}
+ else if(scene==='mountain'){s+=`<path d="M0 330L150 150L250 250L390 90L560 280L670 190L800 320V450H0z" fill="${light}" stroke="${INK}" stroke-width="4"/><path d="M390 90l-34 52 34-16 28 22zM150 150l-26 38 26-12 22 18z" fill="#fff" stroke="${INK}" stroke-width="3"/><path d="M0 345Q200 310 400 345T800 340V450H0z" fill="${accent}" fill-opacity=".55" stroke="${INK}" stroke-width="4"/>`+cloud(640,70,.7,'#fff');}
+ else if(scene==='night'){s+=`<rect width="800" height="450" fill="${dark}"/><circle cx="${120+(h%5)*120}" cy="92" r="38" fill="#fff6d6" stroke="${INK}" stroke-width="4"/>`;for(let i=0;i<14;i++)s+=star(40+((h>>>i)%7)*115+i*5,30+((i*37+h)%150),5+(i%3)*3,'#fff6d6');s+=P(0,300,800,150,light,0);for(let i=0;i<5;i++){const w=90+((h>>>i)%4)*22,x=i*160+8;s+=P(x,200-((h>>>(i+3))%4)*28,w,110+((h>>>(i+3))%4)*28,accent,4);}}
+ else {s+=P(0,275,800,175,light,0);const n=4+(h>>>3)%4,wd=Math.floor(780/n);for(let i=0;i<n;i++){const x=10+i*wd,t=(h>>>(i+2))%4,hh=130+t*28,y=275-hh+30,bw=wd-18;s+=P(x,y,bw,hh,pick([accent,dark,light,'#e0a07c'],(h>>>(i+1))+i),5);const cols=bw>100?3:2,rows=Math.max(1,Math.floor((hh-50)/52));for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)s+=P(x+14+c*((bw-28)/cols),y+18+r*52,(bw-28)/cols-10,36,bg,2);}
+ if((h>>>6)%2)s+=`<circle cx="${620+(h%120)}" cy="70" r="34" fill="#f7d77b" stroke="${INK}" stroke-width="4"/>`;}
  s+=object(m.motif||OBJECTS[scene]||'window',575,188,.85,accent);
- const skins=['#f1c7a8','#c88e67','#8b5a3c','#f5d3ba'],hairs=['#2b1d3a','#5a3425','#a65d2f','#243b53'],shirts=[accent,light,dark,'#c65b6f'],fallback={skin:skins[h%4],hair:hairs[(h>>>2)%4],shirt:shirts[(h>>>3)%4]};
+ const skins=['#f1c7a8','#c88e67','#8b5a3c','#f5d3ba'],hairs=['#2b1d3a','#5a3425','#a65d2f','#243b53'],shirts=[accent,light,dark,'#c65b6f'],fallback={skin:skins[h%4],hair:hairs[(h>>>2)%4],shirt:shirts[(h>>>3)%4]},fall2={skin:skins[(h>>>5)%4],hair:hairs[(h>>>7)%4],shirt:shirts[((h>>>3)+2)%4]};
  const ids=m.ids&&m.ids.length?m.ids:['tom','polly'];
  s+=`<g class="obra-shadow"><ellipse cx="303" cy="374" rx="96" ry="15" fill="#2b1d3a" opacity=".14"/><ellipse cx="525" cy="374" rx="96" ry="15" fill="#2b1d3a" opacity=".14"/></g>`;
- s+=charFor(ids[0],300,220,.95,false,fallback);
- s+=charFor(ids[1]||ids[0],525,226,.9,true,fallback);
+ s+=charFor(ids[0],300,220,.95,false,fallback,(h>>>10)%8);
+ s+=charFor(ids[1]||ids[0],525,226,.9,true,fall2,(h>>>13)%8);
  s+=`<rect x="6" y="6" width="788" height="438" rx="26" fill="none" stroke="${INK}" stroke-width="6" opacity=".75"/>`;
  return s;
 }

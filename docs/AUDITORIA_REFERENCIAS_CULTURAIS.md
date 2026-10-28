@@ -32,3 +32,10 @@ Falta ainda: zerar as 25 repetições e decidir a política dos 394 títulos em 
 3. Adaptar landing, home, figurinhas e tema à API nova.
 4. Substituir as 25 obras repetidas e definir política para os 394 títulos não ingleses.
 5. Capas à mão para as próximas centenas de episódios por lote (ex.: 5 por nível).
+
+## 4. Correções aplicadas (após esta auditoria)
+- 25 obras repetidas trocadas + 9 colisões que a normalização com subtítulo revelou → **3.000 obras distintas** (`tools/audit/fix_dup_works.py`; plano `tools/plan/map` sincronizado).
+- Gerador de capas reescrito: paleta por hash (3.000 distintas, antes 6), 10 cenas (cena dominante 17%, antes 64% “city”), skyline variável, personagens com visuais diferentes → **3.000 capas distintas**.
+- Nova trava `tools/audit/trava_referencias_capas.js` (também no workflow). Prompt de replicação: `docs/PROMPT_REFERENCIAS_E_CAPAS.md`.
+- **Os 394 “não ingleses” eram heurística** (acentos e artigos), com falsos positivos (Amélie, Sagrada Família, Teatro Colón são nomes próprios). Ainda é decisão de política; não foram alteradas.
+- Pendente: restaurar os 10 desenhos à mão como camada premium; adaptar landing/home/figurinhas à API nova.
