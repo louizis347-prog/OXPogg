@@ -70,6 +70,7 @@ function bindCards(root,items,onAnswer){
       const w=q('.ps-why',c);w.hidden=false;w.innerHTML=(ok?'✅ ':'❌ ')+MK(it.why||'');
       try{beep(ok)}catch(e){}
       tts(it.say||(it.text&&it.text.replace(/___/g,right))||'');
+      try{if(window.PogReward)PogReward.answer(ok,c)}catch(e){}
       onAnswer(i,ok)})});
 }
 S.cardHTML=cardHTML;S.bindCards=bindCards;

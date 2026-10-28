@@ -3125,7 +3125,7 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
     const practiceN=P.steps.filter(isPracticeStep).length;
     const culturalChips=[e.a?`<span class="badge-pill">${t.kind[(e.a||{}).k]||(e.a||{}).k}: ${esc((e.a||{}).w)}${(e.a||{}).y?` (${esc((e.a||{}).y)})`:''}</span>`:'',e.h&&e.h.src?`<span class="badge-pill">💬 ${esc(e.h.src)}</span>`:'',e.r?`<span class="badge-pill">📖 ${esc(e.r.w)} (${esc(e.r.au)})</span>`:''].filter(Boolean).join('');
     const r=e.r,has=r?ST.shelf.some(b=>b.w===r.w):false;
-    h=`<div class="step done"><div class="pgbig">${poggie({cls:pickMood(true),scarf:P.c.scarf})}</div><span class="eyebrow">EP ${(P.e&&P.e.en)||P.idx+1} · ${cl(P.cid)||(e.lv||lvl(e.n))}</span><div class="big">${t.doneT}</div>
+    h=`<div class="step done"><div class="pgbig">${poggie({cls:pickMood(true),scarf:P.c.scarf})}</div><span class="eyebrow">EP ${(P.e&&P.e.en)||P.idx+1} · ${cl(P.cid)||(e.lv||lvl(e.n))}</span><div class="big">${t.doneT}</div>${window.PogFig&&PogFig.active()?PogFig.revealHTML():(window.PogReward?PogReward.medalHTML():'')}
     <div class="row"><div class="stat" style="--i:0"><b>+${xp}</b><small>${t.xp}</small></div><div class="stat" style="--i:1"><b>${P.score}/${P.total}</b><small>${t.acc}</small></div><div class="stat" style="--i:2"><b>${sec/60|0}:${String(sec%60).padStart(2,'0')}</b><small>${t.time}</small></div>${practiceN?`<div class="stat" style="--i:3"><b>${practiceN}</b><small>${t.practicesCount}</small></div>`:''}</div>
     <div class="recap"><b style="font-family:var(--f-display);font-size:17px">${t.learned}</b><ul>${e.v.map(v=>`<li><b>${esc(v[0])}</b> — ${esc(v[1])}</li>`).join('')}${e.vb?e.vb.items.map(v=>`<li>🏃 <b>${esc(v[0])}</b> — ${esc(v[1])}</li>`).join(''):''}${e.ex?e.ex.map(v=>`<li>💬 <b>${esc(v[0])}</b> — ${esc(v[1])}</li>`).join(''):''}${e.g?`<li>📐 <b>${esc(e.g.t)}</b></li>`:''}</ul>${P.srsAdded?`<p style="margin:10px 0 0;font-weight:700;color:var(--river-d)">${fxEsOn()?fxEs('🔁 +'+P.srsAdded+' palavras no seu baralho de revisão espaçada.'):'🔁 +'+P.srsAdded+' palavras no seu baralho de revisão espaçada.'}</p>`:''}</div>
     ${culturalChips?`<div class="recap"><b style="font-family:var(--f-display);font-size:17px">${t.culturalRefs}</b><div class="badge-strip on" style="margin-top:8px">${culturalChips}</div></div>`:''}
@@ -3134,7 +3134,7 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
     <div><h3>${esc(r.w)}</h3><div style="color:#C9B39A;font-weight:700;font-size:14px">${esc(r.au)} · ${esc(r.y)}</div><p>${esc(r.synopsis||r.why)}</p>
     <button class="pill" id="addb" style="margin-top:10px;background:${has?'#23955F':'#F29B34'}">${has?t.added:'＋ '+t.add}</button></div></div>`:''}
     ${isRegularCourse(P.cid)?`<div class="teacher-card"><span class="lock">🔒</span><div><b>Modelo de aula ao vivo</b><small>Plano exclusivo para professores · desbloqueio protegido</small></div><button class="pill" id="teacherOpen">Abrir com senha</button></div>`:''}</div>`;
-    st.innerHTML=h;clearInterval(P.timer);confetti(160);beep(true);say(t.pDone,pickMood(true));cta(nxt?t.next:t.home,true,!!nxt);
+    st.innerHTML=h;clearInterval(P.timer);if(!(window.PogReward&&PogReward.celebrate()))confetti(160);beep(true);say(t.pDone,pickMood(true));cta(nxt?t.next:t.home,true,!!nxt);
     const teacherOpen=$('#teacherOpen');if(teacherOpen)teacherOpen.onclick=openTeacherLesson;const addb=$('#addb');if(addb)addb.onclick=ev=>{if(r&&!ST.shelf.some(b=>b.w===r.w)){ST.shelf.push({w:r.w,au:r.au,c:r.c});save();ev.currentTarget.textContent=t.added;ev.currentTarget.style.background='#23955F';beep(true);confetti(40)}};}
 }catch(err){console.error('Pogglot: erro ao renderizar o quadro',s,err);st.innerHTML='<div class="step"><h2>😅</h2><p>Esse quadro não carregou direito. Toque para continuar.</p></div>';const pcta=$('#pcta');if(pcta){pcta.disabled=false;pcta.textContent=(t&&t.cont)||'Continuar';pcta.onclick=()=>{P.i++;render()};}}
 }
@@ -3830,6 +3830,7 @@ function fxSay(en,who,slow){speak(en,(P&&P.c&&P.c.tts)||'en-US',null,who,slow)}
 function fxLang(){const t=(P&&P.c&&P.c.tts)||'';return /^pt/.test(t)?'português':/^es/.test(t)?'espanhol':/^fr/.test(t)?'francês':/^de/.test(t)?'alemão':/^it/.test(t)?'italiano':/^ja/.test(t)?'japonês':'inglês'}
 function fxShuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
 function fxGrade(ok,why,right){P.streak=ok?(P.streak||0)+1:0;beep(ok);if(ok){confetti(P.streak>=3?90:30)}
+  try{if(window.PogReward)PogReward.answer(ok,$('#fb')||document.body)}catch(_){}
   const fb=$('#fb');if(fb)fb.innerHTML=`<div class="feedback ${ok?'ok':'no'}"><div><b>${ok?pickRight(P.t):P.t.wrong}</b>${ok||!right?'':`${P.t.correctIs} <i>${esc(right)}</i><br>`}${why?mk(why):''}</div></div>`;
   say(ok?pickRight(P.t):P.t.wrong+(right?' '+P.t.correctIs+' '+right:''),pickMood(ok))}
 function fxSeq(lines,i){i=i||0;if(!P||i>=lines.length)return;fxSay(plain(lines[i][1]),lines[i][0]);const ms=Math.max(1500,plain(lines[i][1]).length*85+500);clearTimeout(fxSeq.t);fxSeq.t=setTimeout(()=>fxSeq(lines,i+1),ms)}
@@ -4725,7 +4726,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/scn_b.js"></script>
 <script src="js/scn_c.js"></script>
 <script src="js/scn_m2.js"></script><script src="js/scn_fine.js?v=4"></script><script src="js/scn_fine2.js?v=2"></script><script src="js/scn_fine3.js?v=2"></script><script src="js/scn_fine4.js?v=2"></script><script src="js/scn_new.js?v=1"></script>
-<script src="js/az.js"></script><script src="js/chars.js?v=1"></script><script src="js/chars2.js?v=1"></script><script src="js/chars3.js?v=3"></script><script src="js/chars4.js?v=1"></script><script src="js/chars5.js?v=1"></script><script src="js/chars6.js?v=1"></script><script src="js/stage.js?v=2"></script><script src="js/stage2.js?v=2"></script><script src="js/present.js?v=1"></script><script src="js/pgreview.js?v=1"></script>
+<script src="js/az.js"></script><script src="js/chars.js?v=1"></script><script src="js/chars2.js?v=1"></script><script src="js/chars3.js?v=3"></script><script src="js/chars4.js?v=1"></script><script src="js/chars5.js?v=1"></script><script src="js/chars6.js?v=1"></script><script src="js/stage.js?v=2"></script><script src="js/stage2.js?v=3"></script><script src="js/present.js?v=1"></script><script src="js/pgreview.js?v=1"></script>
 <script src="js/rework.js"></script>
 <script src="js/es_m2.js"></script><script src="js/es_pilot.js?v=1"></script>
 <script src="js/m2.js"></script><script src="js/novos.js"></script><script src="js/talk.js"></script><script src="js/rounds.js"></script><script src="js/suavez.js?v=5"></script>
@@ -4783,9 +4784,9 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/life.js?v=2"></script><script src="js/onboard.js?v=2"></script><script src="js/album.js?v=1"></script><link rel="stylesheet" href="css/livexp.css?v=1"><script src="js/livexp.js?v=1"></script><link rel="stylesheet" href="css/cultfoco.css?v=1"><script src="js/cultfoco-data.js?v=1"></script><script src="js/cultfoco.js?v=1"></script><script src="js/nbopen.js?v=3"></script><script src="js/closefit.js?v=1"></script><link rel="stylesheet" href="css/streakleague.css?v=4">
 <link rel="stylesheet" href="css/premium.css?v=4"><link rel="stylesheet" href="css/stage.css?v=4"><script src="js/streakleague.js?v=1"></script>
 <script src="js/illus.js?v=1"></script>
-<link rel="stylesheet" href="css/regular-pilot.css?v=2">
+<link rel="stylesheet" href="css/regular-pilot.css?v=2"><link rel="stylesheet" href="css/pilot-reward.css?v=2">
 <script src="js/english-pilot-cast.js"></script>
-<script src="js/regular-pilot.js?v=5"></script>
+<script src="js/regular-pilot.js?v=5"></script><script src="js/pilot-reward.js?v=3"></script><link rel="stylesheet" href="css/figurinhas.css?v=4"><script src="js/figurinhas.js?v=7"></script>
 <script src="js/roteiro-screen.js?v=3"></script>
 <link rel="stylesheet" href="css/player-polish.css?v=1">
 </body></html>
