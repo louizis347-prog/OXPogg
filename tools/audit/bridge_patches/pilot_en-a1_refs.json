@@ -1,0 +1,246 @@
+[
+ {
+  "n": 7009801,
+  "missao": {
+   "prompt": "Você está no País das Maravilhas e a Alice pergunta: *Are you tired? Are you from Brazil?* **Responda com Yes, I am ou No, I'm not, diga algo sobre você com I'm e faça uma pergunta para ela com Are you…?**",
+   "model": "Yes, I am. I'm a little tired. No, I'm not from Portugal. I'm from Brazil. Are you lost, Alice?",
+   "chips": [
+    "Yes, I am."
+   ],
+   "check": [
+    "Respondi com Yes, I am ou No, I'm not?",
+    "Disse algo sobre mim com I'm?",
+    "Fiz uma pergunta com Are you…?"
+   ],
+   "kw": [
+    "\\b(?:yes,?\\s*i am|no,?\\s*i(?:['’]m| am) not)\\b",
+    "\\bI(?:['’]m| am)\\s+(?!not\\b)\\w+",
+    "\\bare you\\b[^.!?]*\\?"
+   ],
+   "tips": [
+    [
+     [
+      "Yes, I am.",
+      "Sim, estou."
+     ],
+     [
+      "No, I'm not.",
+      "Não, não estou."
+     ]
+    ],
+    [
+     [
+      "I'm from Brazil.",
+      "Eu sou do Brasil."
+     ],
+     [
+      "I'm a little tired.",
+      "Estou um pouco cansada."
+     ]
+    ],
+    [
+     [
+      "Are you lost?",
+      "Você está perdida?"
+     ],
+     [
+      "Are you new here?",
+      "Você é nova aqui?"
+     ]
+    ]
+   ],
+   "ok": [
+    "Resposta curta certa! ✅",
+    "Você falou de si! 🙋",
+    "Boa pergunta! ❓"
+   ],
+   "reply": [
+    "Oh, nice! I'm not lost. I'm just late! See you later!",
+    "Que bom! Eu não estou perdido. Só atrasado! Até mais!"
+   ]
+  }
+ },
+ {
+  "n": 70001,
+  "missao": {
+   "prompt": "Você está em Oz, com a Dorothy, e mostra uma foto da sua família ou de amigos. **Fale de duas pessoas: use He's e She's para dizer quem são e como são, como a Dorothy faz com o Mágico e a Glinda.**",
+   "model": "Dorothy, he's Leo. He's my brother. He's funny. She's Ana. She's my friend. She's from Brazil.",
+   "chips": [
+    "He's"
+   ],
+   "check": [
+    "Falei de um homem com He's?",
+    "Falei de uma mulher com She's?",
+    "Disse quem é ou como é?"
+   ],
+   "kw": [
+    "\\bhe(?:['’]s| is)\\b",
+    "\\bshe(?:['’]s| is)\\b",
+    "\\b(?:he|she)(?:['’]s| is)\\s+(?:my|from|a|an|the|kind|nice|funny|brave|tall|happy|tired|smart|friendly)\\b"
+   ],
+   "tips": [
+    [
+     [
+      "He's Leo.",
+      "Ele é o Leo."
+     ],
+     [
+      "He's my friend.",
+      "Ele é meu amigo."
+     ]
+    ],
+    [
+     [
+      "She's Ana.",
+      "Ela é a Ana."
+     ],
+     [
+      "She's my sister.",
+      "Ela é minha irmã."
+     ]
+    ],
+    [
+     [
+      "He's kind.",
+      "Ele é gentil."
+     ],
+     [
+      "She's from Brazil.",
+      "Ela é do Brasil."
+     ]
+    ]
+   ],
+   "ok": [
+    "Falou dele! 👨",
+    "Falou dela! 👩",
+    "Ótimo: quem e como! 🌟"
+   ],
+   "reply": [
+    "Nice! They're your friends. They're lucky to have you!",
+    "Legal! São seus amigos. Eles têm sorte de ter você!"
+   ]
+  }
+ },
+ {
+  "n": 7070001,
+  "missao": {
+   "prompt": "Você está na Terra do Nunca, com Wendy e Peter, e vê uma foto misteriosa. **Faça três perguntas curtas: uma com Is he…?, uma com Is she…? e uma com Is it…?**",
+   "model": "Peter, is he a pirate? Is she a fairy? Is it Hook's big ship? Yes, it is!",
+   "chips": [
+    "Is he…?"
+   ],
+   "check": [
+    "Fiz uma pergunta com Is he…?",
+    "Fiz uma pergunta com Is she…?",
+    "Fiz uma pergunta com Is it…?"
+   ],
+   "kw": [
+    "\\bis he\\b[^.!?]*\\?",
+    "\\bis she\\b[^.!?]*\\?",
+    "\\bis it\\b[^.!?]*\\?"
+   ],
+   "tips": [
+    [
+     [
+      "Is he a pirate?",
+      "Ele é um pirata?"
+     ],
+     [
+      "Is he angry?",
+      "Ele está bravo?"
+     ]
+    ],
+    [
+     [
+      "Is she a fairy?",
+      "Ela é uma fada?"
+     ],
+     [
+      "Is she nice?",
+      "Ela é legal?"
+     ]
+    ],
+    [
+     [
+      "Is it a bird?",
+      "É um pássaro?"
+     ],
+     [
+      "Is it a big ship?",
+      "É um navio grande?"
+     ]
+    ]
+   ],
+   "ok": [
+    "Pergunta sobre ele! 🧒",
+    "Pergunta sobre ela! 👧",
+    "Pergunta sobre a coisa! 🚢"
+   ],
+   "reply": [
+    "Good questions! The answers are: yes, he is; yes, she is; and yes, it is!",
+    "Boas perguntas! As respostas são: sim, ele é; sim, ela é; e sim, é!"
+   ]
+  }
+ },
+ {
+  "n": 30001,
+  "missao": {
+   "prompt": "Você está na festa do Andy, com o Woody e o Buzz, e fala do que vê. **Use pelo menos um plural com -s e um plural com -ies.**",
+   "model": "Woody, I see two books and three balloons. I love stories and puppies. I have three parties this month!",
+   "chips": [
+    "I see two"
+   ],
+   "check": [
+    "Usei um número com plural?",
+    "Usei um plural com -ies?",
+    "Disse o que vejo ou adoro?"
+   ],
+   "kw": [
+    "\\b(?:two|three|four|five|six|seven|eight|nine|ten|many|some)\\s+\\w+s\\b",
+    "\\b\\w+ies\\b",
+    "\\bI\\s+(?:see|love|have|like)\\b"
+   ],
+   "tips": [
+    [
+     [
+      "I see two books.",
+      "Vejo dois livros."
+     ],
+     [
+      "I have three toys.",
+      "Tenho três brinquedos."
+     ]
+    ],
+    [
+     [
+      "I love puppies.",
+      "Eu adoro cachorrinhos."
+     ],
+     [
+      "I love stories.",
+      "Eu adoro histórias."
+     ]
+    ],
+    [
+     [
+      "I see balloons.",
+      "Vejo balões."
+     ],
+     [
+      "I love parties.",
+      "Eu adoro festas."
+     ]
+    ]
+   ],
+   "ok": [
+    "Plural com número! 🔢",
+    "Plural com -ies! 🐶",
+    "Frase completa! 🎈"
+   ],
+   "reply": [
+    "Wow! Your room is full of fun things. I'm jealous!",
+    "Uau! Seu quarto está cheio de coisas divertidas. Estou com inveja!"
+   ]
+  }
+ }
+]
