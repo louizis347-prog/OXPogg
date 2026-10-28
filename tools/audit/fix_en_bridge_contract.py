@@ -113,6 +113,11 @@ def fix_cover_and_wrap(e):
     h = e.setdefault("h", {})
     h["src"] = title
     cover = frame(e, "cover")
+    cast_names = []
+    for sc in [x for x in e.get("fr", []) if x.get("k") == "pgscene"]:
+        for name in (sc.get("cast") or {}):
+            if name not in cast_names:
+                cast_names.append(name)
     if cover is not None:
         cast = next((x.get("cast") for x in e.get("fr", []) if x.get("k") == "pgscene" and x.get("cast")), {})
         actor = next(iter(cast), "Narrator")
@@ -120,7 +125,7 @@ def fix_cover_and_wrap(e):
     wrap = frame(e, "wrap")
     if wrap is not None:
         sticker = wrap.setdefault("sticker", {})
-        sticker["title"] = title
+        sticker["title"] = f"{title} — {' e '.join(cast_names[:3])}" if cast_names else title
         sticker["sub"] = f"{title} · {year}".strip(" ·")
         if not sticker.get("chars"):
             sticker["chars"] = [["narrator", 50, 0, 1.0]]
