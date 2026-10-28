@@ -94,10 +94,31 @@ function splash(done){
     sessionStorage.setItem('pogglot:intro','1');
   }catch(e){done&&done();return}
   const d=document.createElement('div');d.id='hnSplash';d.setAttribute('role','presentation');
-  d.innerHTML=`<div class="sp-bg">${scene()}</div><div class="sp-in"><div class="sp-pog">${mascot()}</div><div class="sp-word" aria-label="Pogglot"><span>P</span><span>o</span><span>g</span><span>g</span><span class="l">l</span><span class="l">o</span><span class="l">t</span></div><p>Aprenda idiomas pela cultura</p></div>`;
+  d.innerHTML=`<div class="sp-bg">${scene()}</div><div class="sp-in"><div class="sp-pog">${mascot()}</div><div class="sp-word" aria-label="Pogglot"><span>P</span><span>o</span><span>g</span><span>g</span><span class="l">l</span><span class="l">o</span><span class="l">t</span></div><svg class="sp-sw" viewBox="0 0 220 14" aria-hidden="true"><path d="M4,8 Q50,0 110,7 T216,6" fill="none" stroke="#FFB627" stroke-width="5" stroke-linecap="round" pathLength="1"/></svg><p>Aprenda idiomas pela cultura</p></div>`;
   document.body.appendChild(d);
   let fin=false;const end=()=>{if(fin)return;fin=true;d.classList.add('out');setTimeout(()=>{d.remove();done&&done()},520)};
   d.addEventListener('click',end);setTimeout(end,2300);
 }
-window.HomeArt={mascot,scene,splash,badge,ICO};
+
+/* marca: emblema redondo com a cabeça do Poggie + palavra "Pogglot" com traço de sol */
+function emblem(o){
+  o=o||{};const id='em'+(++UID),size=o.size||44;
+  return `<svg class="ha-emb" width="${size}" height="${size}" viewBox="0 0 64 64" role="img" aria-label="Pogglot">
+  <defs><linearGradient id="${id}g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A39A"/><stop offset="1" stop-color="#0A6A78"/></linearGradient>
+  <linearGradient id="${id}f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B0794F"/><stop offset="1" stop-color="#6E4429"/></linearGradient>
+  <linearGradient id="${id}b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC06A"/><stop offset="1" stop-color="#E08421"/></linearGradient>
+  <clipPath id="${id}c"><circle cx="32" cy="32" r="29"/></clipPath></defs>
+  <circle cx="32" cy="32" r="31" fill="#FFB627"/><circle cx="32" cy="32" r="28.6" fill="url(#${id}g)"/>
+  <g clip-path="url(#${id}c)"><circle cx="50" cy="14" r="8" fill="#FFD25E" opacity=".95"/><path d="M0,52 Q20,44 36,50 Q52,44 64,50 L64,64 L0,64Z" fill="#0E8A72" opacity=".8"/>
+   <ellipse cx="32" cy="50" rx="19" ry="17" fill="url(#${id}f)"/>
+   <circle cx="24" cy="30" r="7" fill="#fff"/><circle cx="40" cy="30" r="7" fill="#fff"/><circle cx="25" cy="31" r="3.6" fill="#15233B"/><circle cx="39" cy="31" r="3.6" fill="#15233B"/><circle cx="26.2" cy="29.6" r="1.2" fill="#fff"/><circle cx="40.2" cy="29.6" r="1.2" fill="#fff"/>
+   <path d="M20,36 C20,33 44,33 44,36 C52,37 56,42 52,46 C47,49 17,49 12,46 C8,42 12,37 20,36Z" fill="url(#${id}b)"/><ellipse cx="28" cy="39" rx="1.5" ry="1" fill="#9A5A12"/><ellipse cx="36" cy="39" rx="1.5" ry="1" fill="#9A5A12"/>
+   <path d="M14,49 Q32,58 50,49 L52,56 Q32,64 12,56Z" fill="#FF7A45"/></g>
+  <circle cx="32" cy="32" r="28.6" fill="none" stroke="#fff" stroke-width="1.6" opacity=".55"/></svg>`;
+}
+function logo(o){
+  o=o||{};
+  return `<span class="ha-logo">${emblem({size:o.size||44})}<span class="ha-word"><span class="w1">Pogg</span><span class="w2">lot</span><svg class="ha-sw" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2,6 Q30,1 52,5 T98,4" fill="none" stroke="#FFB627" stroke-width="3.4" stroke-linecap="round"/></svg></span></span>`;
+}
+window.HomeArt={mascot,scene,splash,badge,ICO,emblem,logo};
 })();

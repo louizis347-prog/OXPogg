@@ -147,7 +147,7 @@ window.topbar=function(L){
    <button class="logo" data-go="home" aria-label="Pogglot"><span class="mini">${poggie({scarf:'#6DDFDB'})}</span><span>Pogg<b>lot</b></span></button>
    <nav class="pgtabs" aria-label="Menu">${TABS.filter(t=>t[0]!=='profile').map(([id,key,ic])=>`<button data-go="${id}" ${cur===id?'aria-current="page"':''}>${IC[ic]}${k(key)}</button>`).join('')}</nav>
    <div class="pgright">
-    <span class="pgstat fire" title="${k('streak')}">🔥 <span data-pgstreak>${ST.streak.n}</span></span>
+    <span class="pgstat coin" title="Pogcoins">🪙 <span data-pgcoins>${window.PogCoins?PogCoins.balance():0}</span></span>
     <span class="pgstat xp hide-s" title="XP">⚡ <span data-pgxp>${ST.xp}</span></span>
     <button class="pgstat rev hide-s" data-go="review" title="${k('review')}">🔁 ${srsDueCount()||''}</button>
     ${u?`<button class="pgme" data-go="profile" title="${esc2(u.name)}"><span class="av">${esc2(u.avatar||'🙂')}</span><span class="nm">${esc2((u.name||'').split(' ')[0])}</span></button>`

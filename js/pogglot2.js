@@ -187,10 +187,10 @@ function ddCourses(cur){
 window.topbar=function(){
   const u=me(),cur=curOf(),n=ST.streak.n||0,due=(()=>{try{return srsDueCount()}catch(e){return 0}})();
   return `<header class="pgbar p2bar"><div class="in">
-   <button class="logo" data-go="home" aria-label="Pogglot"><span class="mini">${poggie({scarf:'#6DDFDB'})}</span><span>Pogg<b>lot</b></span></button>
+   <button class="logo" data-go="home" aria-label="Pogglot">${window.HomeArt?HomeArt.logo({size:40}):`<span class="mini">${poggie({scarf:'#6DDFDB'})}</span><span>Pogg<b>lot</b></span>`}</button>
    <nav class="pgtabs p2tabs" aria-label="Menu">${NAV.map(([id,key,ic])=>id==='courses'?ddCourses(cur):`<button data-go="${id}" ${cur===id?'aria-current="page"':''}>${IC[ic]()}${E(t(key))}</button>`).join('')}</nav>
    <div class="pgright">
-    <span class="pgstat fire" title="${E(t('days'))}">${IC.flame()}<span data-pgstreak>${n}</span><span class="dw"> ${E(t('days'))}</span></span>
+    <span class="pgstat coin" title="Pogcoins">${window.PogCoins?PogCoins.icon(20):'🪙'}<span data-pgcoins>${window.PogCoins?PogCoins.balance():0}</span><span class="dw"> Pogcoins</span></span>
     <span class="pgstat xp hide-s" title="XP">${IC.bolt()}<span data-pgxp>${nf(ST.xp)}</span><span class="dw"> XP</span></span>
     ${due?`<button class="pgstat rev hide-s" data-go="review" title="${E(t('review2'))}">🔁 ${due}</button>`:''}
     <button class="pgstat gear theme" data-act="theme" aria-label="Tema">${window.PogTheme&&PogTheme.eff()==='dark'?'🌙':'☀️'}</button>
@@ -268,7 +268,7 @@ window.home=function(){
     ${res?`<h1>${E(res.e.t)}</h1><p>${E(langOf(res.cid).n[L0()])}${rlv?' · '+E(rlv):''} · ${E(t('ep'))} ${String(res.e.en||res.idx+1).padStart(2,'0')}${(res.e.a&&res.e.a.w)?' · '+E(res.e.a.w):''}</p>`
          :`<h1>${E(t('h1a'))} <em>${E(t('h1b'))}</em></h1><p>${E(t('lead'))}</p>`}
     <div class="px-acts">${res?`<button class="px-cta" data-ep="${res.cid}:${res.idx}">${IC.arrow()}<span>${E(t('contBtn'))}</span></button>`:`<button class="px-cta" data-course="${firstCourse()}">${IC.arrow()}<span>${E(t('startBtn'))}</span></button>`}<button class="px-ghost" data-go="courses">${E(t('viewCourses'))}</button></div>
-    <div class="px-pills">${pill('🔥',nf(ST.streak.n||0),t('sStreak'))}${pill('⚡',nf(ST.xp||0),'XP')}${pill('✅',nf(s.eps),t('sEps'))}${ST.totalAnswered?pill('🎯',acc+'%',t('sAcc')):''}</div></div>
+    <div class="px-pills">${pill('🪙',nf(window.PogCoins?PogCoins.balance():0),'Pogcoins')}${pill('⚡',nf(ST.xp||0),'XP')}${pill('✅',nf(s.eps),t('sEps'))}${ST.totalAnswered?pill('🎯',acc+'%',t('sAcc')):''}</div></div>
    <div class="px-hr">${res?`<div class="px-cover" data-ep="${res.cid}:${res.idx}">${PC().svg(res.e,{num:res.e.en||res.idx+1,full:true})}<span class="px-play">▶</span></div>`:`<div class="p2-course-showcase"><img src="img/course-showcase.webp" alt="Cenas de estudo em diferentes cidades e idiomas" loading="eager"><div class="p2-course-caption"><b>${E(L0()==='es'?'Un idioma abre nuevos lugares':'Um idioma abre novos lugares')}</b><span>${E(L0()==='es'?'Cursos regulares y Neighbors':'Cursos regulares e Neighbors')}</span></div></div>`}
     ${goal?`<div class="px-goal"><div class="rg">${PogSettings.ringHTML(goal.pct,54,7)}<span>${Math.round(goal.pct*100)}%</span></div><div><small>${E(t('goal'))}</small><b>${nf(goal.xp)}/${nf(goal.goal)} XP</b></div></div>`:''}</div>
   </section>
