@@ -23,6 +23,8 @@ jobs:
         run: python3 tools/audit/regular_gate.py
       - name: Autoteste da trava (cada defeito conhecido precisa reprovar)
         run: python3 tools/audit/test_gate.py
+      - name: Capas por ficha (obra com ficha válida, capas distintas, SVG saudável)
+        run: python3 tools/audit/ficha_gate.py
       - name: Valida a ponte cultural do inglês regular
         run: python3 tools/audit/english_bridge_gate.py
       - name: Trava de referências culturais e capas (3.000 obras e capas distintas)
