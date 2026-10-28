@@ -6,6 +6,9 @@ import os
 import sys
 from collections import Counter
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bridge_rules import bridge_failures  # noqa: E402
+
 EXPECTED = [
     'cover', 'review', 'hotscene', 'pgscene', 'pgsheet', 'pgrule',
     'pgmold', 'pgsheet', 'verbs', 'vplay', 'pgexp', 'pgscene',
@@ -22,7 +25,8 @@ def load_course(manifest, course):
     return episodes
 
 
-def audit(course, episodes):
+def audit(course, episodes, ponte=True):
+    """ponte=True inclui as regras da ponte obra↔episódio (bridge_rules.py) nos episódios marcados regular-pilot-v1."""
     failures = []
     works = Counter()
     for ordinal, (path, episode) in enumerate(episodes, 1):
@@ -56,6 +60,9 @@ def audit(course, episodes):
         mission = next((frame for frame in frames if frame.get('k') == 'pgmission'), {})
         if len(mission.get('missions', [])) != 3:
             failures.append(f'{label}: precisa de exatamente 3 missões')
+        if ponte:
+            for msg in bridge_failures(episode):
+                failures.append(f'{label}: {msg}')
         work = (episode.get('a') or {}).get('w', '').strip()
         if not work:
             failures.append(f'{label}: obra cultural ausente')
