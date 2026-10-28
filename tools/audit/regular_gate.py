@@ -42,6 +42,8 @@ for c in courses:
             found.add('%s|%s|%s' % (c, m.group(1), f.split(': ', 1)[1]))
     # obra única entre marcados
     seen = {}
+    seen_expr = {}
+    seen_verbs = {}
     for _, e in eps:
         if e.get('presentation') == 'regular-pilot-v1':
             o = P.obra_of(e)
@@ -49,6 +51,23 @@ for c in courses:
             if k and k in seen:
                 found.add('%s|%s|obra repetida com %s: %s' % (c, e['n'], seen[k], o))
             seen.setdefault(k, e['n'])
+            # Expressions are reusable chunks, so punctuation/spacing variants
+            # must still count as the same expression across episodes.
+            if c in ('en-c1', 'en-c2'):
+                verb_frame = next((q for q in e.get('fr', []) if q.get('k') == 'verbs'), {})
+                verb_key = tuple(sorted(C._norm_phrase(item.get('v')) for item in verb_frame.get('items', []) if isinstance(item, dict)))
+                if len(verb_key) == 4:
+                    if verb_key in seen_verbs:
+                        found.add('%s|%s|conjunto de verbos repetido com %s: %s' % (c, e['n'], seen_verbs[verb_key], ', '.join(verb_key)))
+                    else:
+                        seen_verbs[verb_key] = e['n']
+                exp = next((q for q in e.get('fr', []) if q.get('k') == 'pgexp'), {})
+                for item in exp.get('items', []):
+                    phrase = C._norm_phrase(item.get('en') or item.get('x'))
+                    if phrase and phrase in seen_expr:
+                        found.add('%s|%s|expressão repetida com %s: %s' % (c, e['n'], seen_expr[phrase], phrase))
+                    elif phrase:
+                        seen_expr[phrase] = e['n']
     if c in enforced:
         for _, e in eps:
             if e.get('presentation') != 'regular-pilot-v1':
