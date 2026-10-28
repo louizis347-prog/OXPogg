@@ -1,29 +1,34 @@
-/* Tema por obra: base clara e limpa, com cor, faixa e reação do personagem da obra. */
-#player.ot-on .p-head{border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--az1),var(--az2)) 1}
-.ot-strip{position:relative;height:56px;margin:0 0 12px;border-radius:16px;overflow:hidden;box-shadow:0 10px 18px -14px rgba(20,20,60,.6)}
-.ot-strip svg{position:absolute;inset:0;width:100%;height:100%;display:block}
-.ot-cap{position:absolute;left:8px;bottom:6px;padding:3px 10px;border-radius:99px;background:rgba(255,255,255,.92);color:var(--azd,#1b2b4a);font:800 11px/1.2 var(--f-display,system-ui);letter-spacing:.02em}
-.ot-react{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 150px);z-index:96;display:flex;align-items:center;gap:10px;max-width:min(92vw,370px);padding:7px 16px 7px 7px;border-radius:99px;background:#fff;border:2px solid var(--az1,#0C7A78);box-shadow:0 12px 22px -12px rgba(20,20,60,.55);transform:translateX(-50%);animation:otin .35s ease both,otout .3s 2.05s ease forwards;pointer-events:none}
-.ot-react.no{border-color:#e0a24a}
-.ot-face{flex:none;width:44px;height:44px;border-radius:50%;overflow:hidden;background:var(--azl,#eef8f5);border:2px solid var(--az1,#0C7A78)}
-.ot-react.no .ot-face{border-color:#e0a24a}
-.ot-face svg{display:block;width:100%;height:100%}
-.ot-say{font:700 14px/1.25 var(--f-display,system-ui);color:#2b2118}
-@keyframes otin{from{opacity:0;transform:translate(-50%,12px) scale(.96)}to{opacity:1;transform:translate(-50%,0) scale(1)}}
-@keyframes otout{to{opacity:0;transform:translate(-50%,-6px)}}
-@media(prefers-reduced-motion:reduce){.ot-react{animation:none}}
+/* Identidade visual editorial das obras culturais. As quatro cores finais vêm de obra-theme.js. */
+#player.ot-on .obra-stage{position:relative;overflow:hidden;background:var(--azl,#edf4f4);isolation:isolate}
+#player.ot-on .obra-stage .obra-art{display:block;width:100%;height:100%;min-height:100%;object-fit:contain;transform:none!important}
+#player.ot-on .obra-strip{display:flex;align-items:center;gap:12px;min-height:56px;margin:0 0 14px;padding:7px 12px;border:1px solid var(--az2,#81a6af);border-radius:14px;background:var(--azl,#edf4f4);color:var(--azd,#244a58)}
+#player.ot-on .obra-strip-art{width:170px;height:56px;overflow:hidden;border-radius:10px;flex:0 0 170px;background:var(--az2,#81a6af)}
+#player.ot-on .obra-strip-art svg{display:block;width:100%;height:100%;object-fit:cover}
+#player.ot-on .obra-strip-copy{display:grid;gap:2px;min-width:0}
+#player.ot-on .obra-strip-copy span{font:700 11px/1.1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;opacity:.72}
+#player.ot-on .obra-strip-copy b{font:800 15px/1.2 system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#player.ot-on .obra-reaction{position:absolute;left:50%;bottom:calc(100% + 10px);z-index:25;display:flex;align-items:center;gap:9px;width:min(460px,calc(100% - 28px));padding:8px 12px;border:1px solid var(--az2,#81a6af);border-radius:15px;background:#fff;box-shadow:0 10px 26px -16px #20333d66;transform:translate(-50%,8px);opacity:0;pointer-events:none}
+#player.ot-on .obra-reaction.show{animation:obra-pop .22s ease-out forwards}
+#player.ot-on .obra-reaction.no-motion{animation:none;transform:translate(-50%,0);opacity:1}
+#player.ot-on .obra-reaction[hidden]{display:none}
+#player.ot-on .obra-reaction-face{width:42px;height:42px;flex:0 0 42px;overflow:hidden;border-radius:12px;background:var(--azl,#edf4f4)}
+#player.ot-on .obra-reaction-face svg{width:100%;height:100%;display:block}
+#player.ot-on .obra-reaction-copy{display:grid;gap:2px;min-width:0;color:var(--azd,#244a58)}
+#player.ot-on .obra-reaction-who{font:700 11px/1.1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;opacity:.7}
+#player.ot-on .obra-reaction-copy b{font:650 13px/1.35 system-ui,sans-serif}
 #player.ot-on .rx-pop{display:none!important}
-
-/* paleta de cada obra (vence a paleta fixa do modelo piloto) */
-#player.regular-pilot.ot-k-paddington{--az1:#2F5FB8!important;--az2:#6C97E6!important;--azd:#1F4584!important;--azl:#E8F0FC!important;background:color-mix(in srgb,#2F5FB8 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-alice{--az1:#1FA39A!important;--az2:#6ED0C8!important;--azd:#127068!important;--azl:#E5F6F4!important;background:color-mix(in srgb,#1FA39A 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-oz{--az1:#2FAE6C!important;--az2:#7BD26B!important;--azd:#17703F!important;--azl:#E6F7EE!important;background:color-mix(in srgb,#2FAE6C 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-peterpan{--az1:#4A5BC4!important;--az2:#8E9CF0!important;--azd:#2A3580!important;--azl:#ECEEFB!important;background:color-mix(in srgb,#4A5BC4 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-toystory{--az1:#E5A11C!important;--az2:#F6CB62!important;--azd:#A56E0A!important;--azl:#FDF4DE!important;background:color-mix(in srgb,#E5A11C 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-snow{--az1:#B83A6B!important;--az2:#E687A8!important;--azd:#7E234A!important;--azl:#FBE9F0!important;background:color-mix(in srgb,#B83A6B 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-around{--az1:#7B4CC2!important;--az2:#A98AE8!important;--azd:#4A2A86!important;--azl:#F0EAFB!important;background:color-mix(in srgb,#7B4CC2 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-kim{--az1:#E07B2A!important;--az2:#F5B05C!important;--azd:#9A4E14!important;--azl:#FDEFE2!important;background:color-mix(in srgb,#E07B2A 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-nights{--az1:#B5832A!important;--az2:#E0B25A!important;--azd:#7A5512!important;--azl:#FBF3E2!important;background:color-mix(in srgb,#B5832A 7%,#f4f6f8)}
-#player.regular-pilot.ot-k-madeline{--az1:#E0707A!important;--az2:#F4A3A8!important;--azd:#A0414B!important;--azl:#FDEBEC!important;background:color-mix(in srgb,#E0707A 7%,#f4f6f8)}
-#player.az.regular-pilot.ot-on .p-foot .cta:not(:disabled){background:var(--azd)!important;box-shadow:0 3px 0 color-mix(in srgb,var(--azd) 70%,#000)!important}
-#player.ot-on .pstep{color:var(--azd)}
+#player.ot-on .ps-sticker .obra-stage{height:100%;min-height:220px;border-radius:15px}
+@keyframes obra-pop{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+@media(max-width:759px){
+ #player.ot-on .obra-strip{gap:8px;padding:6px 9px}
+ #player.ot-on .obra-strip-art{width:118px;flex-basis:118px;height:52px}
+ #player.ot-on .obra-strip-copy b{font-size:13px}
+ #player.ot-on .obra-reaction{bottom:calc(100% + 7px);width:calc(100% - 20px)}
+}
+@media(prefers-reduced-motion:reduce){#player.ot-on .obra-reaction.show{animation:none;transform:translate(-50%,0);opacity:1}}
+/* A capa editorial usa o palco como cartão de obra; a arte permanece inteira em qualquer largura. */
+#player.ot-on .az-hero .az-scene.obra-stage{width:min(100%,760px);aspect-ratio:16/9;min-height:0;border:2px solid rgba(255,255,255,.42);border-radius:20px;background:var(--azl);box-shadow:0 16px 30px -18px rgba(43,29,58,.42)}
+#player.ot-on .az-hero .az-scene.obra-stage .obra-art{aspect-ratio:16/9;object-fit:contain}
+#player.ot-on .ps-sticker-in{transform:rotate(-.8deg);border:1px solid rgba(43,29,58,.16)}
+#player.ot-on .ps-sticker-in .obra-stage{border:2px solid rgba(43,29,58,.12);box-shadow:none}
+@media(max-width:759px){#player.ot-on .az-hero .az-scene.obra-stage{border-radius:15px}}

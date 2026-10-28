@@ -1,84 +1,20 @@
-/* Tema por obra (piloto: 10 primeiros episódios do inglês A1): cor própria no episódio, faixa com a cena da obra,
-   personagem que reage às respostas e textos mais calorosos. Mantém a base clara e limpa do player. */
+/* Pogglot · tema, reações e textos calorosos por obra. */
 (function(){
 'use strict';
-const TH={
- paddington:{c:['#2F5FB8','#6C97E6','#1F4584','#E8F0FC'],who:'paddington',title:'A Bear Called Paddington',
-  ok:['Que ótimo! Isso merece um sanduíche de geleia.','Certo! Você está se saindo muito bem.'],no:['Ops! Acontece até com ursos. Veja a dica.','Quase! Respire e leia a dica com calma.']},
- alice:{c:['#1FA39A','#6ED0C8','#127068','#E5F6F4'],who:'alice',title:"Alice's Adventures in Wonderland",
-  ok:['Curiosíssimo… e certo!','Que resposta maravilhosa!'],no:['Hmm, a toca é mais funda. Veja a dica.','Quase! Nem tudo é o que parece aqui.']},
- oz:{c:['#2FAE6C','#7BD26B','#17703F','#E6F7EE'],who:'dorothy',title:'The Wizard of Oz',
-  ok:['Acertou! Siga a estrada amarela.','Não há lugar como o lar… e você acertou!'],no:['Quase! A dica mostra o caminho.','Tudo bem, até o Espantalho erra. Veja a dica.']},
- peterpan:{c:['#4A5BC4','#8E9CF0','#2A3580','#ECEEFB'],who:'peter',title:'Peter Pan',
-  ok:['Maravilha! Você está voando alto!','Isso! Pensamentos felizes funcionam.'],no:['Pense em algo feliz e leia a dica.','Quase! A Terra do Nunca ensina com calma.']},
- toystory:{c:['#E5A11C','#F6CB62','#A56E0A','#FDF4DE'],who:'woody',title:'Toy Story',
-  ok:['Boa, parceiro!','Isso aí! Até o infinito e além.'],no:['Calma, xerife. Dá para aprender com essa.','Quase! Veja a dica e tente o próximo.']},
- snow:{c:['#B83A6B','#E687A8','#7E234A','#FBE9F0'],who:'snowwhite',title:'Snow-White and Rose-Red',
-  ok:['Que flor de resposta!','Certo! Florescendo como a roseira.'],no:['Quase! Toda rosa tem seu espinho.','Sem pressa. A dica ajuda.']},
- around:{c:['#7B4CC2','#A98AE8','#4A2A86','#F0EAFB'],who:'fogg',title:'Around the World in 80 Days',
-  ok:['Pontual e correto!','Excelente! Estamos no horário.'],no:['Um pequeno atraso. Veja a dica.','Quase! Ajuste a rota e siga.']},
- kim:{c:['#E07B2A','#F5B05C','#9A4E14','#FDEFE2'],who:'kim',title:'Kim',
-  ok:['Esperto como o Kim!','Certo! O caminho está ficando claro.'],no:['Sem pressa, o caminho ensina.','Quase! Olhe a dica e siga em frente.']},
- nights:{c:['#B5832A','#E0B25A','#7A5512','#FBF3E2'],who:'scheherazade',title:'One Thousand and One Nights',
-  ok:['Mais uma história bem contada!','Certo! Vamos para a próxima noite.'],no:['Há outra versão da história. Veja a dica.','Quase! Toda noite tem uma segunda chance.']},
- madeline:{c:['#E0707A','#F4A3A8','#A0414B','#FDEBEC'],who:'madeline',title:'Madeline',
-  ok:['Sem medo de nada!','Muito bem! Em fila e acertando.'],no:['Tudo bem errar. Veja a dica.','Quase! Pas de problème.']}
-};
-const WARM=[
- [/^Responda todas as perguntas\.?$/,'Bora responder? Uma de cada vez.'],
- [/^Tudo certo! Muito bem!$/,'Mandou bem! Tudo certo por aqui.'],
- [/^Bom trabalho! Revise o que errou\.$/,'Boa! Dê uma olhada no que errou e fixe com calma.'],
- [/^Ouça a cena e leia junto\.$/,'Ouça a cena e vá lendo junto. Sem pressa.'],
- [/^Toque nas peças para trocar as palavras\.$/,'Brinque com as peças e invente frases novas.'],
- [/^Toque para ouvir cada expressão\.$/,'Toque para ouvir. Quanto mais ouvir, mais natural fica.'],
- [/^Você fechou mais um episódio!$/,'Mais um episódio no bolso! Que orgulho.']
-];
-const STRIP_OK=/^(pgsheet|pgrule|pgmold|verbs|vplay|pgexp|pglab|pgspeak|pgmission)$/;
-const th=()=>{try{if(typeof P==='undefined'||!P||!P.e||P.isTest||!window.PogObra)return null;return TH[PogObra.key(P.e)]||null}catch(e){return null}};
-const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const calm=()=>{try{return matchMedia('(prefers-reduced-motion:reduce)').matches||localStorage.getItem('pogglot:fxoff')==='1'}catch(e){return false}};
-
-function paint(){
-  const pl=document.getElementById('player');if(!pl)return;
-  const t=th();pl.classList.toggle('ot-on',!!t);if(!t)return;
-  [...pl.classList].filter(c=>c.indexOf('ot-k-')===0).forEach(c=>pl.classList.remove(c));pl.classList.add('ot-k-'+PogObra.key(P.e));
-}
-function strip(n,st){
-  const t=th();if(!t)return;
-  const f=P.e.fr&&P.e.fr[n];if(!f||!STRIP_OK.test(f.k))return;
-  const step=st.querySelector('.step');if(!step||step.querySelector('.ot-strip'))return;
-  const d=document.createElement('div');d.className='ot-strip';d.setAttribute('aria-hidden','true');
-  d.innerHTML=`${PogObra.svg(P.e,'strip')}<span class="ot-cap">📖 ${esc(t.title)}</span>`;
-  step.prepend(d);
-}
-/* o personagem da obra reage às respostas */
-function react(ok){
-  const t=th();if(!t||calm())return;
-  const pl=document.getElementById('player');if(!pl)return;
-  let r=document.getElementById('otreact');if(r)r.remove();
-  r=document.createElement('div');r.id='otreact';r.className='ot-react '+(ok?'ok':'no');
-  const lines=ok?t.ok:t.no;
-  r.innerHTML=`<span class="ot-face">${PogObra.face(t.who)}</span><span class="ot-say">${esc(lines[Math.random()*lines.length|0])}</span>`;
-  pl.appendChild(r);setTimeout(()=>{if(r.parentNode)r.remove()},2400);
-}
-const prevR=window.renderFx;
-if(typeof prevR==='function')window.renderFx=function(n,st,lang){
-  const r=prevR.apply(this,arguments);
-  try{paint();strip(n,st)}catch(e){}
-  return r;
-};
-/* textos do Poggie e do botão, mais calorosos */
-const prevSay=window.say;
-if(typeof prevSay==='function')window.say=function(txt,mood){
-  if(th()&&typeof txt==='string'){for(const [re,to] of WARM){if(re.test(txt)){txt=to;break}}}
-  return prevSay.call(this,txt,mood);
-};
-const prevCta=window.cta;
-if(typeof prevCta==='function')window.cta=function(label,en,amber){
-  if(th()&&typeof label==='string'){
-    label=label.replace(/^Faltam (\d+)$/,'Faltam $1 · você consegue').replace(/^Responda tudo: (\d+) perguntas$/,'Responda as $1 perguntas');
-  }
-  return prevCta.call(this,label,en,amber);
-};
-window.PogObraTheme={react,theme:th};
+if(!window.PogObra)return;
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const style=document.createElement('style');style.id='obra-theme-rules';document.head.appendChild(style);
+const cssKey=k=>String(k||'obra').replace(/[^a-z0-9_-]/gi,'-');
+const TH=Object.create(null),classes=new Set();
+const phrases=(m)=>({ok:[`${m.title} abriu uma boa pista. Continue assim!`,`Você encontrou o detalhe de ${m.title}. Muito bem!`,`A cena de ${m.title} ficou clara na sua resposta.`,`Boa leitura: o objeto da cena ajudou você a decidir.`],bad:[`Quase: volte à cena de ${m.title} e tente de novo.`,`Sem pressa. O personagem de ${m.title} ainda pode dar uma pista.`,`Essa pista pede outra escuta; observe o detalhe de ${m.title}.`,`Ainda não: compare a fala com o objeto da cena e tente outra vez.`]});
+function theme(e){const m=PogObra.meta(e),k=cssKey(m.key);if(!TH[k]){const p=phrases(m);TH[k]={key:k,az1:m.pal[0],az2:m.pal[1],azd:m.pal[2],azl:m.pal[3],title:m.title,who:m.who,ok:p.ok,bad:p.bad};}if(!classes.has(k)){style.textContent+=`#player.az.regular-pilot.ot-on.ot-k-${k}{--az1:${TH[k].az1}!important;--az2:${TH[k].az2}!important;--azd:${TH[k].azd}!important;--azl:${TH[k].azl}!important;background:var(--azl)!important}#player.az.regular-pilot.ot-on.ot-k-${k} .p-foot .cta:not(:disabled){background:var(--az1)!important;box-shadow:0 3px 0 var(--azd)!important}#player.az.regular-pilot.ot-on.ot-k-${k} .obra-strip{border-color:var(--az2)!important;background:color-mix(in srgb,var(--azl) 78%,white)!important}`;classes.add(k)}return TH[k];}
+function apply(){const pl=document.getElementById('player'),e=window.P&&P.e;if(!pl||!PogObra.has(e))return;const t=theme(e);[...pl.classList].filter(x=>x.indexOf('ot-k-')===0).forEach(x=>pl.classList.remove(x));pl.classList.add('ot-on','ot-k-'+t.key);pl.dataset.obraTitle=t.title;}
+function off(){try{return localStorage.getItem('pogglot:fxoff')==='1'}catch(e){return false}}
+function reaction(ok){const pl=document.getElementById('player'),e=window.P&&P.e;if(!pl||!PogObra.has(e))return;apply();let b=pl.querySelector('.obra-reaction');if(!b){b=document.createElement('div');b.className='obra-reaction';const foot=pl.querySelector('.p-foot');if(foot)foot.insertBefore(b,foot.firstElementChild);}
+ const t=theme(e),msg=(ok?t.ok:t.bad)[(((P&&P.i)||0)+((P&&P.score)||0))%(ok?t.ok.length:t.bad.length)];b.innerHTML=`<span class="obra-reaction-face">${PogObra.face(e)}</span><span class="obra-reaction-copy"><span class="obra-reaction-who">${esc(t.who||t.title)}</span><b>${esc(msg)}</b></span>`;b.hidden=false;b.classList.toggle('no-motion',off());b.classList.remove('show');void b.offsetWidth;b.classList.add('show');}
+window.PogReward=window.PogReward||{};window.PogReward.answer=reaction;window.ObraTheme={TH,apply,reaction};
+if(typeof window.fxGrade==='function'&&!window.fxGrade._obra){const old=window.fxGrade;const wrap=function(ok,why,right){try{reaction(!!ok)}catch(e){}return old.apply(this,arguments)};wrap._obra=true;window.fxGrade=wrap;}
+if(typeof window.say==='function'&&!window.say._obra){const oldSay=window.say;const wrap=function(text){const e=window.P&&P.e;if(PogObra.has(e)&&typeof text==='string'){const m=theme(e);if(text==='Tudo certo! Muito bem!')text=m.title+' ajudou você a perceber a pista.';else if(text==='Bom trabalho! Revise o que errou.')text='Volte à cena de '+m.title+' e leve a pista para a próxima tentativa.';else if(text==='Responda todas as perguntas.')text='Ouça a cena de '+m.title+' e responda com calma.'}return oldSay.call(this,text)};wrap._obra=true;window.say=wrap;}
+if(typeof window.cta==='function'&&!window.cta._obra){const oldCta=window.cta;const wrap=function(text){const e=window.P&&P.e;if(PogObra.has(e)&&text==='Continuar')text='Seguir com a cena';return oldCta.apply(this,[text,...Array.prototype.slice.call(arguments,1)])};wrap._obra=true;window.cta=wrap;}
+const mo=new MutationObserver(()=>{try{apply()}catch(e){}});mo.observe(document.body,{childList:true,subtree:true});setTimeout(apply,0);
 })();
