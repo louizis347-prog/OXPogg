@@ -40,3 +40,21 @@ Nenhuma expressão/phrasal verb/colocação ensinada em `exps` pode ser ensinada
 
 ## Lote B2 148–195
 Mesmas regras (focos únicos em `tools/b2gen/briefs_148_195.json`; títulos curtos em inglês). O validador exige **expressão única** em todo o B2 e **obra única** (inclusive grafia/idioma diferentes). Evite repetir vocabulário, verbos, `hot` e sons do episódio vizinho (o 147 é `tools/v3/b2_142_147.py`). Para expressões, prefira as específicas do foco; `exp_dedup.json` (`used`) lista as já ensinadas.
+
+## Lote B2 196–215
+Mesmas regras (focos únicos em `tools/b2gen/briefs_196_215.json`). Expressão única e obra única continuam obrigatórias; não repita vocabulário, verbos, `hot` ou som do episódio vizinho (o 195 é `tools/v3/b2_190_195.py`).
+
+## Lote B2 216–255
+Mesmas regras (focos únicos em `tools/b2gen/briefs_216_255.json`). Obra única (inclusive em outro idioma: "O Apanhador…" = "The Catcher…") e expressão única em todo o B2. Antes de entregar, rode o validador com TODOS os seus módulos e confira você mesmo que as obras e as expressões não coincidem com as de episódios vizinhos de outros lotes (o 215 é `tools/v3/b2_211_215.py`).
+
+## Lote B2 256–295
+Mesmas regras (focos únicos em `tools/b2gen/briefs_256_295.json`). Obra única (inclusive em outro idioma) e expressão única em todo o B2. O vocabulário, os verbos, os `hot` e o som não podem repetir os do vizinho (o 255 é `tools/v3/b2_251_255.py`). Evite repetir em `hot` objetos genéricos que outros episódios do B2 já usam (chart, notes, laptop, coffee, calendar): escolha objetos do tema e do cenário do seu episódio.
+
+## Lote B2 296–335
+Mesmas regras (focos únicos em `tools/b2gen/briefs_296_335.json`). Obra única (inclusive em outro idioma) e expressão única em todo o B2 — o validador compara com os 295 anteriores. O vocabulário, os verbos, os `hot` e o som não podem repetir os do vizinho (o 295 é `tools/v3/b2_291_295.py`). Evite objetos genéricos já muito usados em `hot` (chart, notes, laptop, coffee, calendar) e escolha objetos que existam de fato no cenário `rs` do episódio. Não deixe a expressão-título do foco fora de `exps` só para passar no validador: se ela já foi ensinada, mude o foco/título para outra expressão do mesmo tema. A capa deve conter “Em 10 minutos”.
+
+## Lote B2 336–375
+Mesmas regras (focos únicos em `tools/b2gen/briefs_336_375.json`). Obra única (inclusive em outro idioma) e expressão única em todo o B2, comparadas com os 335 anteriores e com os outros módulos. O vocabulário, os verbos, os `hot` e o som não podem repetir os do vizinho (o 335 é `tools/v3/b2_331_335.py`). Dois cuidados novos de qualidade: (1) a obra do episódio deve aparecer DENTRO da aula, não só na capa: pelo menos uma fala da cena principal e uma missão devem se conectar ao enredo, ao personagem ou ao tema da obra; (2) a segunda cena ("Na conversa de verdade") não deve só repetir as frases-exemplo: escreva um diálogo novo, com um pequeno conflito ou surpresa, usando as expressões. Escolha objetos `hot` que existam no cenário `rs`. Se a expressão-título do foco já foi ensinada, mude o foco/título, não esconda a expressão fora de `exps`.
+
+## Lote B2 376–415
+Mesmas regras do lote 336–375 (focos únicos em `tools/b2gen/briefs_376_415.json`), incluindo os dois cuidados de qualidade: (1) a obra aparece DENTRO da aula (uma fala da cena principal e uma missão ligadas ao enredo/tema/personagem da obra); (2) a segunda cena é um diálogo novo, com pequeno conflito ou surpresa, e não repete as frases-exemplo. Obra única (inclusive em outro idioma) e expressão única em todo o B2, comparadas com os 375 anteriores e os outros módulos. Vocabulário, verbos, `hot` e som não podem repetir os do vizinho (o 375 é `tools/v3/b2_371_375.py`). Se a expressão-título do foco já foi ensinada, mude o foco/título, não deixe a expressão ensinada fora de `exps` em regra/moldes. Modelo de formato: `tools/v3/b2_371_375.py`.
