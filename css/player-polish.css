@@ -1,0 +1,86 @@
+/* Acabamento do player: controles alinhados, arte inteira e leitura confortável. */
+#player .p-head{min-height:68px;padding:10px 16px;gap:10px;align-items:center}
+#player .p-head .x,
+#player .p-head .pback,
+#player .p-head .pskip{width:44px;height:44px;min-width:44px;min-height:44px}
+#player .p-head .x{display:grid;place-items:center;padding:0;font-size:0;line-height:0}
+#player .p-head .x .close-ic{width:22px;height:22px;display:block}
+#player .p-head .x:hover{transform:rotate(90deg) scale(1.03)}
+
+/* Cada etapa ocupa o mesmo espaço; a posição atual é indicada pelo preenchimento. */
+#player.az .az-seg{display:flex;gap:6px;width:100%}
+#player.az .az-s{flex:1 1 0!important;min-width:0}
+#player.az .az-s::before,#player.az .az-s i{height:9px}
+#player.az .az-s.on i{box-shadow:0 0 0 2px #fff,0 0 0 3px var(--az1)}
+
+/* A capa usa a proporção da cena, sem inclinação nem corte lateral. */
+#player.az .step.fx-cover>.az-hero{width:100%;max-width:100%;overflow:hidden}
+#player.az .step.fx-cover .az-scene{width:100%;height:auto;aspect-ratio:16/9;max-height:none;overflow:hidden;background:var(--azl,#edf4f4)}
+#player.az .step.fx-cover .az-scene svg{display:block;width:100%;height:100%!important;max-height:none!important;object-fit:contain;transform:none!important}
+#player.az .step.fx-cover .az-hero h1,
+#player.az .step.fx-cover .az-hero p{width:100%;text-align:center;margin-inline:auto}
+
+/* O quadro instrui antes de pedir uma ação: texto pequeno ganha contraste e espaço. */
+#player.az .fx-en-t small{font-size:12px;line-height:1.2;letter-spacing:.1em}
+#player.az .fx-en-t p{font-size:clamp(17px,2.2vw,21px);line-height:1.38}
+#player.az .fx-hint{font-size:15px;line-height:1.45;color:#536579}
+
+/* Controles de escuta compartilham o mesmo tamanho e não quebram no meio da ação. */
+#player.az .m2-sitp,
+#player.az .pgx-ctl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+#player.az .m2-lpq{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;align-items:stretch}
+#player.az .m2-sitp .pill,
+#player.az .pgx-ctl .pill,
+#player.az .m2-lpq .pill{min-height:44px;padding:9px 10px;justify-content:center;white-space:nowrap;font-size:13px;line-height:1.2}
+#player.az .m2-sitp .pill:first-child,
+#player.az .pgx-ctl .pill:first-child{grid-column:span 1}
+#player.az .fx-hearrow .fx-hear{min-height:62px;align-items:center}
+
+/* A miniatura que acompanha uma atividade deve contextualizar a cena. */
+#player.az .scenebox.mini,
+#player.az .fx-mini{height:clamp(132px,22vw,190px);aspect-ratio:auto;margin-bottom:14px}
+#player.az .scenebox.mini svg.scene,
+#player.az .fx-mini svg{width:100%;height:100%;object-fit:cover}
+#player.az .fx-stagewrap{min-height:clamp(230px,30vw,360px);aspect-ratio:16/9}
+
+/* O rodapé é uma faixa própria: o balão do Pog não fica sob o quadro. */
+#player .p-foot{position:relative;z-index:30;isolation:isolate}
+#player.az .p-foot .in{min-height:58px}
+#player.az #pdock,#player.az #pbub,#player.az #pcta,#player.az #pback,#player.az #pskip{position:relative;z-index:1}
+#player.az #pbub{font-size:15px;line-height:1.4}
+
+/* Confete nunca cobre a leitura; no fechamento fica atrás do cartão. */
+#confetti{z-index:59!important}
+#player:has(.step.done){background:transparent!important}
+#player:has(.step.done) .step.done{position:relative;z-index:1}
+#player .step.done{padding-bottom:28px!important;overflow:visible!important}
+#player .step.done .pgbig,
+#player.az .step.done .pgbig{margin-bottom:10px!important;overflow:visible!important}
+#player .step.done .pgbig svg{overflow:visible!important}
+
+@media(max-width:759px){
+  #player .p-head{min-height:60px;padding:8px 12px}
+  #player .p-head .x,
+  #player .p-head .pback,
+  #player .p-head .pskip{width:44px;height:44px;min-width:44px;min-height:44px}
+  #player.az .p-head{padding:8px 12px 6px}
+  #player.az .m2-sitp,
+  #player.az .pgx-ctl{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  #player.az .m2-lpq{grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:6px}
+  #player.az .m2-sitp .pill,
+  #player.az .pgx-ctl .pill,
+  #player.az .m2-lpq .pill{padding-inline:6px;font-size:12px;letter-spacing:-.01em}
+  #player.az .scenebox.mini,
+  #player.az .fx-mini{height:128px}
+  #player.az .fx-stagewrap{min-height:210px}
+}
+
+@media(max-width:390px){
+  #player.az .m2-sitp .pill,
+  #player.az .pgx-ctl .pill,
+  #player.az .m2-lpq .pill{font-size:11px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  #player .p-head .x:hover{transform:none}
+}
