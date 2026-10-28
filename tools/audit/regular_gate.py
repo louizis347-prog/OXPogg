@@ -25,6 +25,7 @@ while '--course' in a:
     i = a.index('--course'); sel.append(a[i + 1]); del a[i:i + 2]
 courses = sel or regular
 enforced = json.load(open(os.path.join(HERE, 'gate_enforced.json')))['cursos']
+plano_ativo = json.load(open(os.path.join(HERE, 'gate_plan_ativo.json')))['cursos']
 bpath = os.path.join(HERE, 'gate_baseline.json')
 baseline = set(json.load(open(bpath))['falhas']) if os.path.exists(bpath) else set()
 nx = P.fold
@@ -51,7 +52,7 @@ for c in courses:
             if e.get('presentation') != 'regular-pilot-v1':
                 found.add('%s|%s|curso fechado: episódio fora do modelo piloto' % (c, e['n']))
     # aderência ao plano
-    maps = P.read_maps(c)
+    maps = P.read_maps(c) if c in plano_ativo else {}
     for _, e in eps:
         m = maps.get(e['n'])
         if m and e.get('presentation') == 'regular-pilot-v1':

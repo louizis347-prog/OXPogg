@@ -13,3 +13,8 @@
 - Regras: obra única no curso (e nos cursos mapeados juntos), expressão única, padrão único, 4 verbos/expressões distintos, vizinhos sem 2+ verbos em comum.
 - Mapeados: en-c1 e en-c2 (510 cada). Revisão humana pendente: `plano/REVISAR_C1_C2.md`.
 - Mapeado também: **es-a1** (495 episódios + 5 já prontos). Revisão humana pendente: `plano/REVISAR_ES_A1.md`. Os validadores comparam sem acento (espanhol).
+
+## Atualização (28/10)
+- A aderência ao plano só vale para cursos listados em `tools/audit/gate_plan_ativo.json` (hoje en-c1 e en-c2, cujo conteúdo ainda será escrito a partir do plano). O es-a1 foi convertido por outra frente sem seguir o plano de `tools/plan/map/es-a1_*.json`, que ficou apenas como registro.
+- O nome da obra vem de `a.w` (mesmo campo do contrato); o rótulo `sticker.sub` varia entre cursos.
+- Baseline atual (toleradas, a corrigir): es-a1 71132/71143/71152 e es-a2 212 com obra repetida.
