@@ -12,3 +12,4 @@
 - Autoria do mapeamento: `tools/plan/map/<curso>_<parte>.json`. Validar: `python3 tools/plan/check_map.py <arquivo> ...` e `python3 tools/plan/check_plan.py <cursos> [--estrito]`. Gerar o plano: `python3 tools/plan/build_plan.py <cursos>`.
 - Regras: obra única no curso (e nos cursos mapeados juntos), expressão única, padrão único, 4 verbos/expressões distintos, vizinhos sem 2+ verbos em comum.
 - Mapeados: en-c1 e en-c2 (510 cada). Revisão humana pendente: `plano/REVISAR_C1_C2.md`.
+- Mapeado também: **es-a1** (495 episódios + 5 já prontos). Revisão humana pendente: `plano/REVISAR_ES_A1.md`. Os validadores comparam sem acento (espanhol).

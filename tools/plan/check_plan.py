@@ -8,7 +8,7 @@ import plan_lib as P
 
 args = [a for a in sys.argv[1:] if not a.startswith('--')]
 estrito = '--estrito' in sys.argv
-nx = lambda s: re.sub(r'[^a-z0-9]+', ' ', (s or '').lower()).strip()
+nx = P.fold
 erros, avisos = [], []
 
 # obras já em uso nos cursos prontos do mesmo idioma (dados reais)
@@ -22,6 +22,7 @@ for c in manifest:
         if e.get('presentation') == 'regular-pilot-v1' and P.obra_of(e):
             usadas[P.norm(P.obra_of(e))].append(c)
 
+prontos = set()
 obras = collections.defaultdict(list)
 gss = collections.defaultdict(list)
 exps = collections.defaultdict(list)
@@ -33,6 +34,8 @@ for c in args:
     prev = None
     for e in ents:
         lab = '%s #%d (n=%s)' % (c, e['pos'], e['n'])
+        if e['estado'] == 'pronto':
+            prontos.add(lab)
         if e['estado'] == 'a mapear':
             if estrito:
                 erros.append(lab + ': não mapeado')
@@ -65,17 +68,17 @@ for c in args:
                 erros.append(lab + ': gs/foco ausente')
             else:
                 gss[(c, nx(e['gs']))].append(lab)
-        if prev and len({nx(a) for a in v} & {nx(a) for a in prev}) >= 2:
+        if prev and e['estado'] == 'mapeado' and len({nx(a) for a in v} & {nx(a) for a in prev}) >= 2:
             erros.append(lab + ': 2+ verbos iguais aos do episódio anterior')
         prev = v if len(v) == 4 else None
 for k, v in obras.items():
-    if len(v) > 1:
+    if len(v) > 1 and not all(x in prontos for x in v):
         erros.append('obra repetida: ' + ' | '.join(v))
 for k, v in gss.items():
     if len(v) > 1:
         erros.append('gs repetido (%s): ' % k[1] + ' | '.join(v))
 for k, v in exps.items():
-    if len(v) > 1:
+    if len(v) > 1 and not all(x in prontos for x in v):
         erros.append('expressão repetida "%s": ' % k[1] + ' | '.join(v))
 for c, (m, t) in total.items():
     print('%s: %d de %d mapeados' % (c, m, t))
@@ -83,6 +86,6 @@ print('avisos (obra já usada em outro nível):', len(avisos))
 for a in avisos[:5]:
     print('  aviso:', a)
 print('erros:', len(erros))
-for e in erros[:60]:
+for e in (erros if '--tudo' in sys.argv else erros[:60]):
     print('  ERRO', e)
 sys.exit(1 if erros else 0)
