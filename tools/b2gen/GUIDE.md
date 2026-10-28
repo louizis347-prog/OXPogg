@@ -43,3 +43,6 @@ Mesmas regras (focos únicos em `tools/b2gen/briefs_148_195.json`; títulos curt
 
 ## Lote B2 196–215
 Mesmas regras (focos únicos em `tools/b2gen/briefs_196_215.json`). Expressão única e obra única continuam obrigatórias; não repita vocabulário, verbos, `hot` ou som do episódio vizinho (o 195 é `tools/v3/b2_190_195.py`).
+
+## Lote B2 216–255
+Mesmas regras (focos únicos em `tools/b2gen/briefs_216_255.json`). Obra única (inclusive em outro idioma: "O Apanhador…" = "The Catcher…") e expressão única em todo o B2. Antes de entregar, rode o validador com TODOS os seus módulos e confira você mesmo que as obras e as expressões não coincidem com as de episódios vizinhos de outros lotes (o 215 é `tools/v3/b2_211_215.py`).
