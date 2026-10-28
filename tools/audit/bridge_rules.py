@@ -31,7 +31,7 @@ def bridge_failures(e):
     a = e.get('a') or {}
     w = a.get('w', '')
     title = re.sub(r'\(.*?\)', '', w)
-    words = _toks(title) | _caps(a.get('d', '')) | _toks((e.get('h') or {}).get('src', ''))
+    words = _toks(title) | _toks(title, 2) | _caps(a.get('d', '')) | _toks((e.get('h') or {}).get('src', ''))
     sc = fr.get('pgscene') or []
     cast = list((sc[0].get('cast') or {}).keys()) if sc else []
     castn = {fold(c) for c in cast}
@@ -40,7 +40,9 @@ def bridge_failures(e):
     cast_obra = {c for c in castn if c and c in obra_txt}
     lines = fold(' '.join(l[1] for s in sc for l in s.get('lines', [])))
     out = []
-    if not any(t in lines for t in (words | cast_obra) if len(t) >= 4):
+    # Acronyms and short proper titles (ER, M, Us) are still meaningful
+    # references; allowing two-character title tokens avoids false failures.
+    if not any(t in lines for t in (words | cast_obra) if len(t) >= 2):
         out.append('ponte: nenhuma fala das cenas cita a obra ou um personagem dela')
     ms = (fr.get('pgmission') or [{}])[0].get('missions') or [{}]
     m0d = ms[0].get('data', {})

@@ -27,7 +27,7 @@ function enhance(){
   const goal=q('.px-goal span',hero);
   let art='';
   const ep=ref?epOf(ref):null;
-  if(ep&&ep.e&&window.PogObra&&PogObra.has(ep.e))art=PogObra.svg(ep.e,'obra-cover');
+  if(ep&&ep.e&&window.PogObra&&PogObra.has(ep.e,ep.cid))art=PogObra.svg(ep.e,'obra-cover');
   else if(cover){const s=cover.querySelector('svg');art=s?s.outerHTML:cover.innerHTML}
   const pr=ep?progress(ep.cid):null;
   const hi=ref?{h:'Que bom te ver de volta',s:'Seu próximo passo está pronto. Vamos continuar a história?'}:{h:'Aprenda idiomas <em>pela cultura</em>',s:sub};
