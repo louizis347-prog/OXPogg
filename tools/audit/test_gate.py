@@ -31,6 +31,20 @@ caso('obra sem descrição', lambda e: e['a'].update(d='curta'), 'ponte: descri�
 caso('cenário 3× seguido', lambda e: [f.update(rs='cafe') for f in e['fr'][2:6]], 'ponte: o mesmo cenário')
 caso('só 3 verbos (estrutura)', lambda e: fr(e, 'verbs')[0].update(items=fr(e, 'verbs')[0]['items'][:3]), 'precisa de exatamente 4 verbos')
 caso('sem a mochila (estrutura)', lambda e: e['fr'].pop(1), 'mochila')
+# expressões únicas (tools/audit/expr_rules.py)
+from expr_rules import expr_repetidas
+def exp_casos():
+    out = []
+    a = copy.deepcopy(bom); b = copy.deepcopy(anterior)
+    out.append(('expressões distintas passam', not expr_repetidas([b, a])))
+    ia = fr(a, 'pgexp')[0]['items']; ib = fr(b, 'pgexp')[0]['items']
+    ib[0]['en'] = ia[0]['en'].upper().rstrip('.!?') + ' !'   # mesma expressão, outra caixa/pontuação, em outro episódio
+    out.append(('expressão repetida em outro episódio reprova', any(r[0] == a['n'] for r in expr_repetidas([b, a]))))
+    a2 = copy.deepcopy(bom); it = fr(a2, 'pgexp')[0]['items']; it[1]['en'] = it[0]['en'] + ' '
+    out.append(('expressão duplicada no mesmo episódio reprova', bool(expr_repetidas([a2]))))
+    return out
+for nome, res in exp_casos():
+    casos.append((nome, 'x', res, [] if res else ['falhou']))
 ruim = 0
 for nome, esp, ok, falhas in casos:
     if esp is None:
