@@ -17,11 +17,13 @@ Você vai criar/revisar episódios do curso regular de inglês do Pogglot (model
 3. Dois personagens **diferentes** (cabelo, acessório, cor); objeto-símbolo ligado à obra ou escolhido por hash.
 4. Obras de referência (10 primeiros do A1) podem ter arte desenhada à mão como camada premium por cima do gerador.
 5. Nenhuma capa pode ser visualmente idêntica a outra.
+6. **Nível de detalhe = capas desenhadas à mão** (medido nas 10 referências): ≥110 elementos SVG, ≥18 cores de preenchimento, ≥30 paths, ≥2 gradientes (céu e chão), 3 figuras com rosto (2 crianças com cabelo, roupa, blush e olhos com brilho + 1 bichinho), ≥6 itens de cenário (flores gigantes, cogumelos, brilhos, borboleta, balão, tufos de grama), traço de nanquim e SVG XML válido.
+7. Os recortes usados dentro do episódio (`sticker`, `strip` da faixa “Obra em foco”, `face`) vêm do mesmo SVG e precisam mostrar os rostos (≥2 em cover/sticker/strip, ≥1 em face).
 
 ## Trava (obrigatória antes de publicar)
 ```
 python3 -m http.server 8123 &
-node tools/audit/trava_referencias_capas.js      # 3.000 obras e capas distintas, cena dominante ≤ 25%, ≥ 600 paletas
+node tools/audit/trava_referencias_capas.js      # 3.000 obras e capas distintas, cena dominante ≤ 25%, ≥ 600 paletas, detalhe mínimo e rostos visíveis em cada recorte
 python3 tools/audit/regular_gate.py && python3 tools/audit/english_bridge_gate.py && python3 tools/build_data_index.py --check
 ```
 Falhou = não publica. A mesma trava roda no GitHub Actions (`regular-quality-gate.yml`).
