@@ -44,12 +44,12 @@ const MOTIFS=[
 ];
 const KEY=Object.create(null),VB=Object.create(null),SCN=Object.create(null),THEME=Object.create(null);
 let uid=0;
-function workOf(e){return (e&&e.a&&e.a.w)||((e&&e.fr||[]).find(f=>f.k==='cover')||{}).obra||e&&e.t||'Pogglot';}
+function workOf(e){return (e&&e.a&&e.a.w)||e&&e.w||((e&&e.fr||[]).find(f=>f.k==='cover')||{}).obra||e&&e.title||e&&e.t||'Pogglot';}
 function keyOf(e){
  const w=workOf(e), base=norm(w).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,28)||'obra';
  return 'w-'+base+'-'+hash(w).toString(36).slice(0,5);
 }
-function motifOf(e,w){const text=`${w} ${(e&&e.a&&e.a.k)||''} ${(e&&e.s)||''}`;return MOTIFS.find(x=>x.re.test(text))||null;}
+function motifOf(e,w){const text=`${w} ${(e&&e.a&&e.a.k)||(e&&e.k)||''} ${(e&&e.s)||''}`;return MOTIFS.find(x=>x.re.test(text))||null;}
 function sceneOf(e,w){const text=`${w} ${(e&&e.sc)||''} ${(e&&e.rs)||''} ${(e&&e.s)||''}`,motif=motifOf(e,w);if(motif)return motif.scene;for(const [k,re] of Object.entries(SCENE_WORDS))if(re.test(text))return k;return 'city';}
 function castIds(e,m){const motif=motifOf(e,m.w);if(motif)return motif.ids;const ids=[];const add=x=>{if(x&&!ids.includes(x))ids.push(x)};for(const f of (e&&e.fr)||[]){for(const c of (f.chars||[]))add(c[0]);for(const c of Object.values(f.cast||{})){if(Array.isArray(c))add(c[0]);}}return ids.length?ids.slice(0,3):['tom','polly'];}
 const AUTO_OBJECTS=[
@@ -66,7 +66,7 @@ function meta(e){
  const title=w.split(/[:·–—]/)[0].trim();
  const who=(e&&e.fr||[]).flatMap(f=>Object.keys(f.cast||{})).find(Boolean)||'Pog';
  const names=['Mina','Theo','Lena','Sam','Noah','Ari'];
- const out={key,w,title,year:(e&&e.a&&e.a.y)||'',scene,pal,motif:motif&&motif.obj||objectOf(e,w,scene),ids:castIds(e,{w}),who,names:[names[h%names.length],names[(h>>>4)%names.length]]};
+ const out={key,w,title,year:(e&&e.a&&e.a.y)||(e&&e.y)||'',scene,pal,motif:motif&&motif.obj||objectOf(e,w,scene),ids:castIds(e,{w}),who,names:[names[h%names.length],names[(h>>>4)%names.length]]};
  THEME[key]=out;return out;
 }
 function P(x,y,w,h,fill,rx){return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx||0}" fill="${fill}" stroke="${INK}" stroke-width="4"/>`;}
@@ -146,17 +146,29 @@ function svg(e,mode){const m=meta(e),id='obra-'+(++uid),view=mode==='sticker'?(V
  return `<svg class="obra-art obra-${esc(mode||'cover')}" data-obra="${esc(m.key)}" viewBox="${view}" width="800" height="450" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${esc(m.title)}"><defs><filter id="${id}-paper"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="${hash(m.w)%99}"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .16 0"/></filter><radialGradient id="${id}-v"><stop offset="55%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#2b1d3a" stop-opacity=".22"/></radialGradient></defs>${body(e,mode)}<rect width="800" height="450" filter="url(#${id}-paper)" opacity=".22" pointer-events="none"/><rect width="800" height="450" fill="url(#${id}-v)" pointer-events="none"/></svg>`;
 }
 function face(e){return svg(e,'face');}
+function playerState(){try{return window.P||((typeof P!=='undefined')?P:null)}catch(_){return null}}
 function coverFix(step,e){
  if(!step||!has(e))return;
  const host=step.querySelector('.ps-stage')||step.querySelector('.az-scene');
- if(host){host.classList.add('obra-stage');host.dataset.obraKey=key(e);host.innerHTML=svg(e,'cover');}
+ if(host){
+  host.classList.add('obra-stage');host.dataset.obraKey=key(e);
+  /* Preserve only an explicitly authored hand-drawn layer. The regular
+     player also places a generic backdrop in .ps-stage; treating that as
+     authored made the work-specific illustration disappear. */
+  const authored=host.querySelector('.obra-art,.obra-cover-hand,[data-hand-art]');
+  if(!authored)host.innerHTML=svg(e,'cover');
+ }
  const hero=step.querySelector('.az-hero,.fx-hero');if(hero)hero.classList.add('obra-hero');
 }
 const PRACTICE=new Set(['pgsheet','pgrule','pgmold','verbs','vplay','pgexp','pglab','pgspeak','pgmission']);
 function strip(step,e,f){if(!PRACTICE.has(f.k)||step.querySelector('.obra-strip'))return;const m=meta(e),d=document.createElement('div');d.className='obra-strip';d.innerHTML=`<div class="obra-strip-art">${svg(e,'strip')}</div><div class="obra-strip-copy"><span>Obra em foco</span><b>${esc(m.title)}</b></div>`;const a=step.querySelector('.fx-h,.sl-hero,.wr-hero')||step.firstElementChild;if(a&&a.parentNode===step)a.before(d);else step.prepend(d);}
 function sticker(step,e,f){if(f.k!=='wrap')return;const host=step.querySelector('.ps-sticker .ps-stage');if(host&&!host.dataset.obraSticker){host.classList.add('obra-stage');host.dataset.obraSticker='1';host.innerHTML=svg(e,'sticker');}}
 function decorate(step,f,e){if(!has(e)||!step)return;const k=f&&f.k;if(k==='cover')coverFix(step,e);else if(k==='wrap')sticker(step,e,f);else if(PRACTICE.has(k))strip(step,e,f);}
-function has(e){return !!(e&&/^en-/.test(String(window.P&&P.cid||''))&&e.presentation==='regular-pilot-v1'&&workOf(e));}
+function has(e,cid){
+ const p=playerState(),course=String(cid||(p&&p.cid)||e&&e.cid||'');
+ const regular=!!(e&&(/^en-/.test(course))&&(e.presentation==='regular-pilot-v1'||!e.presentation));
+ return !!(regular&&workOf(e));
+}
 function key(e){return meta(e).key;}
 window.PogObra={has,key,svg,face,coverFix,decorate,meta,THEME,KEY,VB,SCN,palette:e=>meta(e).pal,work:workOf};
 const install=()=>{if(!window.PogStage||window.PogStage._obraPatch)return;const orig=window.PogStage.decorate;window.PogStage.decorate=function(step,f,e){orig.call(this,step,f,e);try{decorate(step,f,e)}catch(x){console.warn('obra-art',x)}};window.PogStage._obraPatch=1};
