@@ -40,6 +40,8 @@ def main():
                     failures.append(f"{course}:{e.get('n')}: descrição sem ponte obra–foco")
                 bridges = [x for x in e.get("fr", []) if x.get("k") == "bridge"]
                 if course in ("en-c1", "en-c2"):
+                    if len(e.get("fr", [])) != 19:
+                        failures.append(f"{course}:{e.get('n')}: quantidade de quadros diferente de 19")
                     if len(bridges) != 1:
                         failures.append(f"{course}:{e.get('n')}: quadro bridge ausente/duplicado")
                         continue
@@ -56,6 +58,22 @@ def main():
                     link = str((cult or {}).get("link") or "")
                     if work.lower() not in link.lower() or (topic and topic.lower() not in link.lower()):
                         failures.append(f"{course}:{e.get('n')}: cultcena sem ponte completa")
+                    words = next((x for x in e.get("fr", []) if x.get("k") == "words"), None)
+                    verbs = next((x for x in e.get("fr", []) if x.get("k") == "verbs"), None)
+                    if words is not None and len(words.get("items", [])) != 6:
+                        failures.append(f"{course}:{e.get('n')}: vocabulário ativo não tem seis itens")
+                    if verbs is not None and len(verbs.get("items", [])) != 4:
+                        failures.append(f"{course}:{e.get('n')}: quadro de verbos não tem quatro itens")
+                    tdlg = next((x for x in e.get("fr", []) if x.get("k") == "tdlg"), None)
+                    if tdlg is not None:
+                        for turn in tdlg.get("turns", []):
+                            if len(turn.get("o", [])) != 3 or not 0 <= turn.get("a", -1) < len(turn.get("o", [])):
+                                failures.append(f"{course}:{e.get('n')}: alternativa inválida no diálogo")
+                    dquiz = next((x for x in e.get("fr", []) if x.get("k") == "dquiz"), None)
+                    if dquiz is not None:
+                        for item in dquiz.get("items", []):
+                            if isinstance(item, dict) and not 0 <= item.get("a", -1) < len(item.get("opts", [])):
+                                failures.append(f"{course}:{e.get('n')}: gabarito inválido no quiz")
     print("episódios:", dict(totals), "falhas:", len(failures))
     for failure in failures[:100]:
         print("FALHA", failure)
