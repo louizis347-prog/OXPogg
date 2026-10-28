@@ -160,11 +160,27 @@ function stage(f,seed){
   g+=decor(f.decor,c,rnd);
   return {g,id,c};
 }
+const countEl=g=>(g.match(/<(path|ellipse|circle|rect|line|polygon|g)\b/g)||[]).length;
+/* enriquece cenas esparsas com enfeites discretos (nunca sobre o elenco: vêm antes dele) até o detalhe mínimo das capas desenhadas */
+function enrich(g,S,f,body){
+  const rnd=rngOf(hash('enr'+(f.scene||'')+(f.tod||'')+g.length)),T=S.c.T,indoor=S.c.indoorFloor,night=S.c.night;
+  let add='',i=0;
+  while(countEl(g+add+body)<122&&i++<8){
+    if(indoor){add+=[...Array(3)].map(()=>sparkle(40+rnd()*720,40+rnd()*260,6+rnd()*7)).join('')+[...Array(2)].map(()=>starD(40+rnd()*720,40+rnd()*200,5+rnd()*5)).join('')}
+    else{
+      add+=[...Array(3)].map(()=>flower(20+rnd()*760,380+rnd()*60,1+rnd()*.5,['#e8473b','#f6a23a','#e8709f','#8a5ac8','#fff'][Math.floor(rnd()*5)])).join('')+[...Array(3)].map(()=>tuft(rnd()*800,375+rnd()*70,.9+rnd()*.4)).join('');
+      add+=night?[...Array(3)].map(()=>firefly(rnd()*800,140+rnd()*240)).join(''):butterfly(80+rnd()*640,100+rnd()*150,['#e8709f','#f6a23a','#7ec8f2'][Math.floor(rnd()*3)])+sparkle(60+rnd()*680,50+rnd()*200,6+rnd()*6);
+    }
+  }
+  return add;
+}
 function compose(f,seed,mode){
   const S=stage(f,seed),cast=(f.cast||[]).slice(0,5);
   let g=S.g;
-  g+=propSvg(f.prop&&f.prop.at!=='held'?f.prop:null,cast);
-  g+=castSvg(cast,S.c);
+  const bodyProp=propSvg(f.prop&&f.prop.at!=='held'?f.prop:null,cast),bodyCast=castSvg(cast,S.c);
+  g+=enrich(g,S,f,bodyProp+bodyCast);
+  g+=bodyProp;
+  g+=bodyCast;
   if(f.prop&&f.prop.at==='front'&&f.propOver)g+=propSvg(f.prop,cast);
   g+=`<rect width="800" height="450" filter="url(#gr${S.id})"/><rect width="800" height="450" fill="url(#vg${S.id})"/>`;
   return g;
