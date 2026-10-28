@@ -34,7 +34,7 @@ function decorate(step,f,e){
       const sc=step.querySelector('.az-scene');
       const st=stage({rs:f.stage&&f.stage.rs||main.rs,chars:f.stage&&f.stage.chars||main.chars,h:'cover',
         over:f.obra?`<span class="ps-obra">📖 ${H(f.obra)}</span>`:''});
-      if(sc){sc.innerHTML=st;sc.classList.add('ps-cover')}
+      if(sc){sc.innerHTML=st;sc.classList.add('ps-cover');try{if(window.PogObra)PogObra.coverFix(sc,e)}catch(_){}}
       const hero=step.querySelector('.az-hero');
       if(hero&&f.gancho&&!hero.querySelector('.ps-say')){hero.insertAdjacentHTML('beforeend',bubble(f.gancho));bindBubble(hero)}
       return;
