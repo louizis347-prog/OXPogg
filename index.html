@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="css/tokens.css?v=1">
-<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5">
+<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5"><link rel="stylesheet" href="css/landing-pro.css?v=5">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -59,34 +59,28 @@
         <div><b>10 min</b><small>por episódio</small></div>
       </div>
     </div>
-    <div class="stage" aria-label="Prévia do Pogglot no celular">
-      <div class="phone2 back" id="phoneBack"></div>
-      <div class="phone2 front" id="phoneFront"></div>
-      <div class="hero-pog" id="heroPog" aria-hidden="true"></div>
-      <span class="chip2 c-top">Aprenda pela cultura <b>✦</b></span>
-      <span class="chip2 c-bot"><b>10 min</b> por episódio</span>
-    </div>
+    <div class="stage" aria-label="Prévia do Pogglot no celular"></div>
   </div>
 </section>
 
 <!-- TUTORIAL -->
 <section class="sec tut" id="tutorial" aria-labelledby="tut-h">
   <div class="wrap">
-    <div class="sh"><h2 id="tut-h">Veja um episódio por dentro</h2><p>Cada episódio do curso regular segue 6 passos, do filme ao seu primeiro diálogo. Toque em um passo para ver a tela.</p></div>
+    <div class="tut-head">
+      <span class="tut-eye"><i></i>Passo a passo</span>
+      <h2 id="tut-h">Veja um episódio <em>por dentro</em></h2>
+      <p>Cada episódio do curso regular segue 6 passos, da obra de verdade até a figurinha no seu álbum. Toque em um passo e veja a tela de perto.</p>
+    </div>
     <div class="tut-grid">
       <ol class="tut-steps" id="tutSteps">
-        <li><button type="button" class="on" data-i="0"><span class="n">1</span><span><b>Conheça a obra</b><small>Cada episódio parte de um filme, livro, poema ou música de verdade.</small></span></button></li>
-        <li><button type="button" data-i="1"><span class="n">2</span><span><b>Ouça a cena</b><small>Um diálogo com voz, legenda e tradução, com os personagens da obra.</small></span></button></li>
-        <li><button type="button" data-i="2"><span class="n">3</span><span><b>Entenda o padrão</b><small>Uma regra curta e um molde de frases em que você troca as peças.</small></span></button></li>
-        <li><button type="button" data-i="3"><span class="n">4</span><span><b>Pratique e ganhe moedas</b><small>Perguntas rápidas: acertou, ganha Pogcoins; errou, o personagem dá a dica.</small></span></button></li>
-        <li><button type="button" data-i="4"><span class="n">5</span><span><b>Fale e ouça os sons</b><small>Laboratório de sons e exercício de fala, direto no microfone.</small></span></button></li>
-        <li><button type="button" data-i="5"><span class="n">6</span><span><b>Ganhe a figurinha</b><small>Medalha, Pogcoins e a figurinha da obra para o seu álbum cultural.</small></span></button></li>
+        <li><button type="button" class="on" data-i="0" style="--c:#0B7C88"><span class="n">1</span><span class="ti" aria-hidden="true">🎬</span><span><b>Conheça a obra</b><small>Cada episódio parte de um filme, livro, poema ou música de verdade.</small></span></button></li>
+        <li><button type="button" data-i="1" style="--c:#3E7BE0"><span class="n">2</span><span class="ti" aria-hidden="true">🎧</span><span><b>Ouça a cena</b><small>Diálogo com voz, legenda e tradução, com os personagens da obra.</small></span></button></li>
+        <li><button type="button" data-i="2" style="--c:#E0647E"><span class="n">3</span><span class="ti" aria-hidden="true">🧩</span><span><b>Entenda o padrão</b><small>Uma regra curta e um molde em que você troca as peças.</small></span></button></li>
+        <li><button type="button" data-i="3" style="--c:#16B58F"><span class="n">4</span><span class="ti" aria-hidden="true">⚡</span><span><b>Pratique e ganhe moedas</b><small>Acertou, ganha Pogcoins; errou, o personagem dá a dica.</small></span></button></li>
+        <li><button type="button" data-i="4" style="--c:#FF7A45"><span class="n">5</span><span class="ti" aria-hidden="true">🎤</span><span><b>Fale e ouça os sons</b><small>Laboratório de sons e fala, direto no microfone.</small></span></button></li>
+        <li><button type="button" data-i="5" style="--c:#D9901A"><span class="n">6</span><span class="ti" aria-hidden="true">🥇</span><span><b>Ganhe a figurinha</b><small>Medalha, Pogcoins e a figurinha da obra no seu álbum cultural.</small></span></button></li>
       </ol>
-      <div class="tut-stage">
-        <div class="tut-phone"><div class="tut-screen" id="tutScreen" aria-live="polite"></div></div>
-        <div class="tut-bar" aria-hidden="true"><i id="tutBar"></i></div>
-        <div class="acts"><a class="btn primary lg sun" href="app.html">Experimentar um episódio <i aria-hidden="true">→</i></a></div>
-      </div>
+      <div class="tut-stage"></div>
     </div>
   </div>
 </section>
@@ -269,40 +263,10 @@
   var q=function(s){return document.querySelector(s)};
   try{
     q('.hero-sky').innerHTML=HomeArt.scene();
-    q('#heroPog').innerHTML=HomeArt.mascot({scarf:'#FF7A45'});
     var lg=q('.logo-fb');if(lg)lg.outerHTML=HomeArt.logo({size:42});
-    var ep=PogObra.svg(7009801,'obra-cover'),pd=PogObra.svg(9801,'obra-cover');
-    q('#phoneFront').innerHTML='<div class="ph-top"><i></i><b>Capa 1/19</b></div><div class="ph-cover">'+ep+'<span class="ph-work">📖 Alice\'s Adventures in Wonderland · 1865</span></div><div class="ph-body"><small>EP 2 · A1</small><h3>Quem está aí? · Are you…?</h3><p>Em 10 minutos você faz perguntas como a Alice.</p><div class="ph-bubble"><b>Alice</b>Wait! Are you in a hurry?</div></div><div class="ph-cta">Começar o episódio</div>';
-    q('#phoneBack').innerHTML='<div class="ph-top"><i></i><b>Pogglot</b><span>🔥 3</span></div><div class="ph-hero"><div>'+HomeArt.scene()+'</div><strong>Que bom te ver de volta</strong></div><div class="ph-cont"><div class="ph-th">'+pd+'</div><div><small>CONTINUE DE ONDE PAROU</small><b>Quem é você? · I\'m</b><em><i style="width:38%"></i></em></div></div><div class="ph-row"><span>🎧</span><span>🔁</span><span>📚</span><span>💬</span></div>';
   }catch(e){}
 })();
 </script>
-<script>
-(function(){
-  var scr=document.getElementById('tutScreen'),bar=document.getElementById('tutBar'),btns=[].slice.call(document.querySelectorAll('#tutSteps button'));
-  if(!scr||!window.PogObra)return;
-  var art=PogObra.svg(7009801,'obra-cover'),face=function(id){return PogObra.face(id)};
-  var S=[
-   '<div class="ts ts-cover"><div class="ts-art">'+art+'<span class="ts-tag">📖 Alice\'s Adventures in Wonderland · 1865</span></div><small class="ts-pill">EP 2 · A1</small><h4>Quem está aí? · Are you…?</h4><p>Em 10 minutos você faz perguntas como a Alice.</p><div class="ts-cta">Começar o episódio</div></div>',
-   '<div class="ts"><div class="ts-strip">'+art+'</div><div class="ts-chat"><div class="ts-b l"><span class="ts-av">'+face('alice')+'</span><div><b>Alice</b>Wait! Are you in a hurry?<em>Espere! Você está com pressa?</em></div><i>🔊</i></div><div class="ts-b r"><span class="ts-av">'+face('rabbit')+'</span><div><b>Coelho</b>Yes, I am. I\'m late!<em>Sim, estou. Estou atrasado!</em></div><i>🔊</i></div></div></div>',
-   '<div class="ts"><h4 class="ts-h">Perguntar com Are you…?</h4><div class="ts-rule"><span class="b1">Are you</span><span class="b2">in a hurry</span><span>?</span></div><div class="ts-mold"><div class="blk b1">Are you <i>⟳</i></div><div class="blk b2">tired <i>⟳</i></div></div><p class="ts-out"><b>Are you tired?</b><em>Você está cansado?</em></p></div>',
-   '<div class="ts"><div class="ts-top"><b>Pratique</b><span class="ts-xp">🪙 +10</span></div><div class="ts-q"><p>Who is late?</p><div class="ts-o ok">🐰 The Rabbit <i>✓</i></div><div class="ts-o">🐱 The Cat</div></div><div class="ts-react"><span class="ts-av">'+face('alice')+'</span><b>Curiosíssimo… e certo!</b></div><div class="ts-combo">🔥 Sequência ×3</div></div>',
-   '<div class="ts"><h4 class="ts-h">Laboratório de sons</h4><div class="ts-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class="ts-say">“Are you in a hurry?”</p><div class="ts-mic">🎤<span>Toque e fale</span></div><p class="ts-ok">Boa pronúncia! 92%</p></div>',
-   '<div class="ts ts-end"><div class="ts-medal">🥇<b>Medalha de ouro</b><small>14 de 15 respostas de primeira</small></div><div class="ts-coins">🪙 +14 Pogcoins</div><div class="ts-sticker"><div class="ts-sa">'+art+'</div><b>Alice\'s Adventures in Wonderland</b><small>Figurinha dourada · Nº 002</small></div></div>'
-  ];
-  var cur=0,timer=null,t0=0,DUR=5200,raf=0,paused=false;
-  function show(i){
-    cur=i;btns.forEach(function(b,k){b.classList.toggle('on',k===i);b.setAttribute('aria-current',k===i?'step':'false')});
-    scr.classList.remove('in');scr.innerHTML=S[i];void scr.offsetWidth;scr.classList.add('in');t0=performance.now();
-  }
-  function loop(t){ if(!paused){var p=Math.min(1,(t-t0)/DUR);bar.style.width=(p*100)+'%';if(p>=1)show((cur+1)%S.length)} raf=requestAnimationFrame(loop)}
-  btns.forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i)})});
-  var box=document.querySelector('.tut-grid');box.addEventListener('mouseenter',function(){paused=true});box.addEventListener('mouseleave',function(){paused=false;t0=performance.now()-(parseFloat(bar.style.width)||0)/100*DUR});
-  box.addEventListener('focusin',function(){paused=true});box.addEventListener('focusout',function(){paused=false});
-  show(0);
-  if(matchMedia('(prefers-reduced-motion:reduce)').matches){paused=true;bar.style.width='100%'}
-  var vis=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!raf)raf=requestAnimationFrame(loop)}else{cancelAnimationFrame(raf);raf=0}})},{threshold:.25});vis.observe(box);
-})();
-</script>
+<script src="js/landing-pro.js?v=2"></script>
 </body>
 </html>

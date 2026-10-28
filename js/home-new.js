@@ -7,18 +7,7 @@ const q=(s,r)=>(r||document).querySelector(s);
 function epOf(ref){try{const [cid,i]=ref.split(':');return {cid,idx:+i,e:(EP[cid]||[])[+i]}}catch(e){return null}}
 function progress(cid){try{const n=(EP[cid]||[]).length;const d=typeof doneCountFor==='function'?doneCountFor(cid):0;return n?{d,n,p:Math.round(d/n*100)}:null}catch(e){return null}}
 
-const INK='#0E2F3A';
-const S=(w)=>`stroke="${INK}" stroke-width="${w||2.4}" stroke-linejoin="round" stroke-linecap="round"`;
-const QI={
- listen:`<path d="M9,30 Q9,10 24,10 Q39,10 39,30" fill="none" ${S(3)}/><rect x="6" y="28" width="9" height="13" rx="4" fill="#FF7A45" ${S()}/><rect x="33" y="28" width="9" height="13" rx="4" fill="#FF7A45" ${S()}/><path d="M20,24 Q24,20 28,24 M18,28 Q24,22 30,28" fill="none" stroke="#0B7C88" stroke-width="2.4" stroke-linecap="round" class="qi-w"/>`,
- review:`<path d="M12,22 A12,12 0 0 1 34,15" fill="none" stroke="#0B7C88" stroke-width="4.4" stroke-linecap="round"/><path d="M36,26 A12,12 0 0 1 14,33" fill="none" stroke="#FFB627" stroke-width="4.4" stroke-linecap="round"/><path d="M34,8 L36,17 L27,16Z" fill="#0B7C88" ${S(1.6)}/><path d="M14,40 L12,31 L21,32Z" fill="#FFB627" ${S(1.6)}/><rect x="19" y="19" width="10" height="10" rx="2.4" fill="#fff" ${S(2)} class="qi-c"/>`,
- shelf:`<rect x="7" y="14" width="9" height="26" rx="2" fill="#0B7C88" ${S()}/><rect x="17" y="10" width="9" height="30" rx="2" fill="#FFB627" ${S()}/><path d="M28,18 L36,15 L42,38 L34,41Z" fill="#FF7A45" ${S()}/><path d="M10,20 L13,20 M20,16 L23,16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>`,
- comm:`<path d="M6,10 H30 Q34,10 34,14 V24 Q34,28 30,28 H17 L10,34 V28 H10 Q6,28 6,24Z" fill="#fff" ${S()}/><path d="M20,20 H38 Q42,20 42,24 V33 Q42,37 38,37 H38 V42 L32,37 H26 Q22,37 22,33Z" fill="#FFB627" ${S()}/><circle cx="13" cy="19" r="1.8" fill="${INK}"/><circle cx="20" cy="19" r="1.8" fill="${INK}"/><circle cx="27" cy="19" r="1.8" fill="${INK}"/>`,
- rank:`<path d="M14,8 H34 V20 Q34,31 24,31 Q14,31 14,20Z" fill="#FFB627" ${S()}/><path d="M14,12 H8 Q8,22 15,24 M34,12 H40 Q40,22 33,24" fill="none" ${S()}/><rect x="21" y="31" width="6" height="6" fill="#E58E10" ${S(2)}/><rect x="15" y="37" width="18" height="5" rx="2" fill="#0B7C88" ${S(2)}/><path d="M24,13 L26,18 L31,18 L27,21 L29,26 L24,23 L19,26 L21,21 L17,18 L22,18Z" fill="#fff6c8" stroke="none"/>`,
- ach:`<path d="M15,6 L22,22 L26,22 L33,6Z" fill="#FF7A45" ${S()}/><circle cx="24" cy="30" r="12" fill="#FFB627" ${S()}/><circle cx="24" cy="30" r="7.6" fill="none" stroke="#fff3b8" stroke-width="2"/><path d="M24,24 L26,28.4 L30.8,28.8 L27.2,32 L28.3,36.6 L24,34.2 L19.7,36.6 L20.8,32 L17.2,28.8 L22,28.4Z" fill="#fff" stroke="${INK}" stroke-width="1.6" stroke-linejoin="round"/>`,
- profile:`<circle cx="24" cy="17" r="9" fill="#FFD9B5" ${S()}/><path d="M6,42 Q8,28 24,28 Q40,28 42,42Z" fill="#0B7C88" ${S()}/><path d="M16,15 Q18,7 24,8 Q31,7 33,15 Q28,11 24,12 Q19,11 16,15Z" fill="#6B3F22" ${S(1.8)}/><circle cx="20.5" cy="17" r="1.4" fill="${INK}"/><circle cx="27.5" cy="17" r="1.4" fill="${INK}"/><path d="M21,21 Q24,23.4 27,21" fill="none" stroke="${INK}" stroke-width="1.8" stroke-linecap="round"/>`
-};
-const QT={listen:['#FFE3D6','#FFC9B0'],review:['#DDF3EF','#B7E6DE'],shelf:['#FFF0C9','#FFE08A'],comm:['#FFE6EA','#FFC8D2'],rank:['#FFF2CC','#FFDD83'],ach:['#FFE7D9','#FFC6A6'],profile:['#DFF1F6','#BDE3EE']};
+const QI=HomeArt.QI,QT=HomeArt.QT;
 function quick(){
   const row=q('.px-quick');if(!row||row.dataset.hn)return;row.dataset.hn='1';
   row.querySelectorAll('button').forEach(b=>{
