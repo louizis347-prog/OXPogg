@@ -80,5 +80,5 @@ if(typeof prevCta==='function')window.cta=function(label,en,amber){
   }
   return prevCta.call(this,label,en,amber);
 };
-window.PogTheme={react,theme:th};
+window.PogObraTheme={react,theme:th};
 })();
