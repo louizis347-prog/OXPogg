@@ -38,14 +38,23 @@ function kid(o){
   g+=C(hands[0][0],hands[0][1],7,sk,2.6)+C(hands[1][0],hands[1][1],7,sk,2.6);
   if(o.dress)g+=C(-24,-108,12,o.sleeve||top,2.8)+C(24,-108,12,o.sleeve||top,2.8);
   if(o.ears)g+=[-1,1].map(s=>P(`M${s*30},-146 L${s*50},-166 L${s*36},-132Z`,sk)).join('');
+  if(o.extra)g+=o.extra;
   g+=C(0,-140,34,sk);
-  if(o.hairStyle==='long')g+=P('M-35,-146 Q-31,-178 0,-176 Q31,-178 35,-146 Q14,-162 0,-160 Q-14,-162 -35,-146Z',hair);
+  if(o.hairStyle==='long'&&!o.bald)g+=P('M-35,-146 Q-31,-178 0,-176 Q31,-178 35,-146 Q14,-162 0,-160 Q-14,-162 -35,-146Z',hair);
   if(o.hairStyle==='braids')g+=P('M-35,-144 Q-32,-178 0,-177 Q32,-178 35,-144 Q12,-158 0,-156 Q-12,-158 -35,-144Z',hair);
   if(o.hairStyle==='short')g+=P('M-35,-144 Q-36,-180 0,-178 Q36,-180 35,-144 Q20,-166 6,-158 Q-10,-170 -35,-144Z',hair);
   if(o.band)g+=`<path d="M-36,-150 Q0,-184 36,-150" fill="none" stroke="${o.band}" stroke-width="7" stroke-linecap="round"/>`+P('M-36,-152 L-50,-162 L-48,-144Z M-36,-152 L-26,-164 L-24,-146Z',o.band,2.4);
   g+=eyes(0,-140,13)+blush(0,-128,22)+smile(0,-125,9);
+  if(o.stache)g+=P('M-14,-131 Q-6,-136 0,-131 Q6,-136 14,-131 Q8,-126 0,-129 Q-8,-126 -14,-131Z',o.stache,2.2);
+  if(o.whisk)g+=[-1,1].map(s=>P(`M${s*30},-148 Q${s*40},-126 ${s*26},-112 Q${s*24},-128 ${s*28},-146Z`,o.whisk,2)).join('');
+  if(o.beard)g+=P('M-24,-124 Q0,-92 24,-124 Q16,-112 0,-110 Q-16,-112 -24,-124Z',o.beard,2.4);
   if(o.hat==='cowboy')g+=P('M-52,-168 Q-30,-176 -20,-182 Q0,-212 20,-182 Q30,-176 52,-168 Q30,-158 0,-160 Q-30,-158 -52,-168Z',o.hatColor||'#8a5a2b');
   if(o.hat==='cap')g+=P('M-34,-166 Q-6,-196 38,-168 Q8,-164 -34,-166Z',o.hatColor||'#2f9d5b')+P('M14,-176 Q40,-212 52,-196 Q40,-190 24,-172Z','#e8473b',2.4);
+  if(o.hat==='top')g+=R(-30,-196,60,40,'#2b2538',6,3)+E(0,-158,44,9,'#2b2538',3)+R(-30,-170,60,9,'#d9503f',0,2.4);
+  if(o.hat==='turban')g+=P('M-36,-156 Q-34,-196 0,-196 Q34,-196 36,-156 Q0,-170 -36,-156Z',o.hatColor||'#e8473b')+P('M-34,-166 Q0,-182 34,-166','none',2.4)+C(0,-174,5,'#f6c84c',2);
+  if(o.hat==='veil')g+=`<path d="M-34,-150 Q0,-186 34,-150" fill="none" stroke="#f6c84c" stroke-width="6" stroke-linecap="round"/>`+C(0,-166,6,'#e8473b',2.2)+P('M-30,-120 Q0,-100 30,-120 L24,-98 Q0,-88 -24,-98Z','rgba(255,255,255,.55)',2);
+  if(o.hat==='bonnet')g+=P('M-38,-156 Q-30,-190 0,-190 Q30,-190 38,-156 Q20,-148 0,-150 Q-20,-148 -38,-156Z',o.hatColor||'#f6d35c')+P('M-40,-158 Q0,-146 40,-158 L36,-150 Q0,-140 -36,-150Z',o.hatColor||'#f6d35c',2.4);
+  if(o.hat==='wimple')g+=P('M-40,-130 Q-42,-190 0,-190 Q42,-190 40,-130 Q40,-98 24,-90 L-24,-90 Q-40,-98 -40,-130Z','#1f1f2e')+C(0,-138,28,sk,2.6)+P('M-30,-120 Q0,-92 30,-120 L26,-96 Q0,-84 -26,-96Z','#fff',2.4)+eyes(0,-140,10,4)+smile(0,-126,7);
   return g;
 }
 
@@ -109,6 +118,23 @@ const CH={
   g+=C(0,-148,31,'#e8a24a')+[-1,1].map(s=>C(s*28,-174,10,'#e8a24a',2.8)+C(s*28,-174,5,'#f3a6a0',0)).join('');
   g+=E(0,-136,17,13,'#f6d9a0')+P('M-7,-142 Q0,-148 7,-142 Q4,-134 0,-134 Q-4,-134 -7,-142Z','#5a2f22',2)+eyes(0,-153,12,4)+`<path d="M0,-134 L0,-128 M-8,-126 Q0,-120 8,-126" stroke="${INK}" stroke-width="2.2" fill="none"/>`;
   return g},
+ snowwhite(){return kid({hair:'#caa46a',hairStyle:'braids',ribbon:'#fff',top:'#f4f4fa',dress:true,legs:'#fff',shoe:'#3a3550',arms:'out',extra:C(-34,-70,9,'#fff',2.4)+C(-34,-70,4,'#f6d35c',0)})},
+ rosered(){return kid({hair:'#3a2218',hairStyle:'braids',ribbon:'#e8473b',top:'#d9304a',dress:true,legs:'#fff',shoe:'#3a3550',arms:'out',extra:C(34,-70,9,'#e8473b',2.4)+C(34,-70,4,'#f6d35c',0)})},
+ bear(){let g=shadow(48);
+  g+=L(-18,-44,-20,-8,24,'#7a4a2a')+L(18,-44,20,-8,24,'#7a4a2a')+E(-22,-6,20,9,'#5a3418',2.8)+E(22,-6,20,9,'#5a3418',2.8);
+  g+=E(0,-84,50,50,'#8a5a32')+E(0,-70,28,30,'#d9a15a',0);
+  g+=L(-40,-96,-58,-60,18,'#8a5a32')+L(40,-96,58,-60,18,'#8a5a32');
+  g+=[-1,1].map(s=>C(s*34,-146,14,'#8a5a32')+C(s*34,-146,7,'#d9a15a',0)).join('')+C(0,-128,40,'#8a5a32')+E(0,-118,20,15,'#e8c58f')+P('M-7,-124 Q0,-130 7,-124 Q4,-117 0,-117 Q-4,-117 -7,-124Z','#1b1224',2)+eyes(0,-136,15,4.4)+smile(0,-108,6);
+  return g},
+ fogg(){return kid({skin:'#f2c9a4',hair:'#a6a6ae',hairStyle:'short',top:'#3a3550',bot:'#3a3550',hat:'top',stache:'#a6a6ae',whisk:'#a6a6ae',shoe:'#1b1224',arms:'down',extra:P('M-9,-114 L0,-96 L9,-114Z','#fff',2)+`<path d="M-14,-96 Q0,-88 14,-96" fill="none" stroke="#f6c84c" stroke-width="3"/>`+C(14,-96,4,'#f6c84c',1.6)})},
+ passepartout(){return kid({skin:'#f2c9a4',hair:'#2b1d1d',hairStyle:'short',top:'#d9503f',bot:'#4a6fa5',hat:'cap',hatColor:'#3a3550',stache:'#2b1d1d',shoe:'#5a3418',arms:'wave',extra:[0,1,2].map(i=>`<path d="M-24,${-104+i*16} L24,${-104+i*16}" stroke="#fff" stroke-width="4" opacity=".7"/>`).join('')})},
+ kim(){return kid({skin:'#c98d5a',hair:'#1f1818',hairStyle:'short',top:'#f0e0b8',bot:'#c4a46a',shoe:'#c98d5a',arms:'point'})},
+ lama(){return kid({skin:'#d9a066',bald:true,beard:'#d8d8d8',top:'#8e2a2a',dress:true,legs:'#8e2a2a',shoe:'#6b3f22',arms:'down',sleeve:'#e0a030',extra:`<path d="M-22,-110 Q0,-84 22,-110" fill="none" stroke="#e0a030" stroke-width="6"/>`+[...Array(7)].map((_,i)=>C(-18+i*6,-100+Math.sin(i/6*Math.PI)*14,3,'#5a3418',1.4)).join('')})},
+ scheherazade(){return kid({skin:'#e0b080',hair:'#1f1830',hairStyle:'long',top:'#7b4cc2',dress:true,legs:'#e0b080',shoe:'#e0b080',hat:'veil',arms:'out',sleeve:'#f6c84c',extra:`<path d="M-22,-76 L22,-76" stroke="#f6c84c" stroke-width="5"/>`+P('M-22,-112 L22,-112 L26,-100 L-26,-100Z','#f6c84c',2.4)})},
+ madeline(){return kid({hair:'#e0602a',hairStyle:'short',top:'#2e66c8',dress:true,legs:'#fff',shoe:'#2b1d3a',hat:'bonnet',hatColor:'#f6d35c',arms:'up'})},
+ clavel(){return kid({skin:'#f2c9a4',top:'#1f1f2e',dress:true,legs:'#1f1f2e',shoe:'#111',hat:'wimple',arms:'down',sleeve:'#1f1f2e'})},
+ lamp(){let g='';g+=P('M-30,-14 Q-34,-30 -10,-34 L10,-34 Q34,-30 30,-14 Q0,-4 -30,-14Z','#f2c63d')+P('M-10,-34 Q0,-46 10,-34','none',3)+P('M30,-22 Q50,-30 46,-44 Q36,-36 30,-30Z','#f2c63d')+P('M-30,-20 L-46,-30 L-34,-14Z','#f2c63d')+`<path d="M0,-46 Q-14,-70 6,-90 Q26,-110 0,-130" fill="none" stroke="#b58cf0" stroke-width="10" stroke-linecap="round" opacity=".8"/>`;return g}
+ ,
  tinker(){let g='';
   g+=P('M-4,-26 Q-36,-62 -16,-86 Q-10,-62 -2,-34Z M4,-26 Q36,-62 16,-86 Q10,-62 2,-34Z','rgba(190,240,255,.8)',2.2);
   g+=P('M-8,-40 L8,-40 L12,-8 L-12,-8Z','#7fe08f',2.4)+L(-4,-8,-5,12,5,'#ffd7b5')+L(5,-8,6,12,5,'#ffd7b5')+L(-8,-36,-18,-20,5,'#ffd7b5')+L(8,-36,18,-26,5,'#ffd7b5');
@@ -185,10 +211,57 @@ const SCN={
   <g transform="translate(690 352)">${E(0,-30,44,16,'#e8473b',3)}${R(-44,-30,88,30,'#e8473b',0,3)}${C(-26,-2,16,'#2b1d3a',3)}${C(26,-2,16,'#2b1d3a',3)}${C(-26,-2,6,'#c9c9d4',0)}${C(26,-2,6,'#c9c9d4',0)}${R(-14,-66,28,36,'#f2c63d',4)}</g>
   ${star(400,38,10,'#ffe27a')}${star(720,40,8,'#ffe27a')}${star(60,160,7,'#ffe27a')}
   ${place('woody',290,418,1.2)}${place('buzz',510,418,1.2,true)}${finish(i)}`}
+ ,snow(){const i=++UID;
+  return `<defs>${defsCommon(i)}<linearGradient id="sk${i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17234f"/><stop offset=".7" stop-color="#2f5a9a"/><stop offset="1" stop-color="#9cc6e8"/></linearGradient><radialGradient id="gl${i}"><stop offset="0" stop-color="#ffd58a" stop-opacity=".9"/><stop offset="1" stop-color="#ffd58a" stop-opacity="0"/></radialGradient></defs>
+  <rect width="800" height="450" fill="url(#sk${i})"/>${[...Array(30)].map((_,k)=>star((k*83)%790+8,(k*47)%200+8,k%4===0?6:3)).join('')}
+  ${[0,1,2,3,4,5,6].map(k=>grp(`translate(${30+k*120} ${290+(k%2)*20}) scale(${1+(k%3)*.15})`,`<path d="M0,0 L-34,70 L34,70Z M0,-34 L-28,30 L28,30Z M0,-66 L-22,-6 L22,-6Z" fill="#245a4a" ${stk(2.6)}/><path d="M-12,-34 L0,-66 L12,-34Z M-18,10 L0,-34 L18,10Z" fill="#fff" opacity=".85"/>`)).join('')}
+  <g transform="translate(560 252)">${R(-90,0,180,110,'#8a5a32',4)}${P('M-110,2 L0,-80 L110,2Z','#f4f4fa')}${P('M-100,2 L0,-72 L100,2Z','#a8502f',2.6,'opacity=".0"')}${R(-70,26,52,48,'#ffd58a',3)}<circle cx="-44" cy="50" r="80" fill="url(#gl${i})" opacity=".55"/>${R(20,34,44,76,'#5a3418',4)}${R(40,-90,24,50,'#6b4a2a',3)}${P('M36,-92 L68,-92 L64,-100 L40,-100Z','#f4f4fa')}<path d="M52,-104 Q40,-130 58,-150 Q74,-170 52,-190" stroke="#d9d9ea" stroke-width="9" fill="none" stroke-linecap="round" opacity=".7"/></g>
+  <path d="M0,380 Q200,360 400,382 Q600,402 800,372 L800,450 L0,450Z" fill="#eef4fb" ${stk(3)}/><path d="M0,420 Q300,404 600,424 Q720,432 800,418 L800,450 L0,450Z" fill="#dce8f5"/>
+  ${[[70,360],[330,372],[740,366]].map(([x,y],k)=>grp(`translate(${x} ${y})`,`<path d="M0,0 L0,-40" stroke="#2f8f6a" stroke-width="5"/>${[[-14,-38],[12,-50],[-4,-64],[16,-30]].map(([dx,dy],j)=>C(dx,dy,10,j%2?'#e8473b':'#fff',2.6)+C(dx,dy,3.4,'#f6c84c',0)).join('')}`)).join('')}
+  ${place('bear',650,438,.84,true)}${place('snowwhite',230,420,1.08)}${place('rosered',370,424,1.08,true)}
+  <g opacity=".9">${[...Array(46)].map((_,k)=>C((k*61)%800,(k*37)%440,k%3?2:3,'#fff',0)).join('')}</g>${finish(i)}`}
+ ,around(){const i=++UID;
+  return `<defs>${defsCommon(i)}<linearGradient id="sk${i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3f9a"/><stop offset=".55" stop-color="#e8708a"/><stop offset="1" stop-color="#ffd58a"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#sk${i})"/>${C(210,250,70,'#fff1b0',0,'opacity=".8"')}
+  <g transform="translate(110 130)"><circle r="62" fill="#fff8e6" ${stk(4)}/>${[...Array(12)].map((_,k)=>{const a=k/12*Math.PI*2;return `<path d="M${Math.cos(a)*50},${Math.sin(a)*50} L${Math.cos(a)*56},${Math.sin(a)*56}" stroke="${INK}" stroke-width="3"/>`}).join('')}<path d="M0,0 L0,-40 M0,0 L28,16" stroke="${INK}" stroke-width="5" stroke-linecap="round"/><text y="26" text-anchor="middle" font-family="Georgia,serif" font-weight="900" font-size="22" fill="#d9503f">80</text></g>
+  <g transform="translate(650 110) scale(.78)"><path d="M-70,0 Q-72,-90 0,-96 Q72,-90 70,0 Q40,50 0,60 Q-40,50 -70,0Z" fill="#e8473b" ${stk(3.4)}/>${[-46,-18,18,46].map((x,k)=>`<path d="M${x*0.1},-94 Q${x*1.35},-10 ${x*.5},58" fill="none" stroke="${k%2?'#f6d35c':'#fff'}" stroke-width="12" opacity=".9"/>`).join('')}<path d="M-26,56 L-20,96 M26,56 L20,96" stroke="${INK}" stroke-width="3"/>${R(-30,92,60,36,'#a8702f',6)}<path d="M-30,72 Q0,86 30,72" fill="none" stroke="#fff" stroke-width="0"/></g>
+  <path d="M0,300 L180,230 L340,300Z" fill="#c4944a" ${stk(3)}/><path d="M250,300 L400,210 L560,300Z" fill="#d9a15a" ${stk(3)}/><path d="M400,210 L338,256 L400,300Z" fill="rgba(0,0,0,.14)"/>
+  <rect y="300" width="800" height="150" fill="#3a6aa8"/><path d="M0,300 L800,300" stroke="${INK}" stroke-width="3"/>${[0,1,2,3,4,5].map(k=>`<path d="M${k*150},${330+k%3*26} q20,-8 40,0 q20,8 40,0" stroke="#bfe0ff" stroke-width="3" fill="none" opacity=".7"/>`).join('')}
+  <g transform="translate(610 340)">${P('M-130,0 L130,0 L100,48 L-100,48Z','#2b3a5c')}${R(-60,-46,120,46,'#f4f4f8',4)}${R(-10,-84,32,38,'#d9503f',4)}${R(-4,-104,20,22,'#2b3a5c',3)}${[-40,-16,8,32].map(x=>C(x,-24,7,'#7ec8f2',2.4)).join('')}<path d="M10,-110 Q-10,-136 14,-156 Q40,-176 8,-200" stroke="#d9d9ea" stroke-width="12" fill="none" stroke-linecap="round" opacity=".65"/></g>
+  <rect y="388" width="800" height="62" fill="#8a6a4a"/><path d="M0,388 L800,388" stroke="${INK}" stroke-width="3"/>${[...Array(14)].map((_,k)=>`<path d="M${k*60},388 L${k*60-10},450" stroke="#5a3f28" stroke-width="3" opacity=".6"/>`).join('')}
+  <g transform="translate(510 410)">${R(-34,-44,68,44,'#a8502f',6)}${R(-34,-30,68,6,'#f6c84c',0)}${R(-6,-48,12,6,'#5a3418',2,2)}</g>
+  <g transform="translate(150 392)"><circle cx="0" cy="-66" r="46" fill="#3e8fd8" ${stk(3.2)}/><path d="M-46,-66 Q0,-86 46,-66 M-46,-66 Q0,-46 46,-66 M0,-112 Q-22,-66 0,-20 M0,-112 Q22,-66 0,-20" fill="none" stroke="#7bd26b" stroke-width="6"/>${R(-6,-20,12,16,'#7a4a22',2,2.4)}${E(0,-2,22,6,'#7a4a22',2.6)}</g>
+  ${place('fogg',300,418,1.1)}${place('passepartout',430,424,1.04,true)}${finish(i)}`}
+ ,kim(){const i=++UID;
+  return `<defs>${defsCommon(i)}<linearGradient id="sk${i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f08a4a"/><stop offset=".6" stop-color="#f8c878"/><stop offset="1" stop-color="#fde9b4"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#sk${i})"/>${C(640,130,66,'#fff2c0',0)}${C(640,130,48,'#fff9e0',0)}
+  <g transform="translate(520 300)">${R(-20,-40,40,40,'#fff',0,3)}${P('M-70,-40 Q-70,-150 0,-170 Q70,-150 70,-40Z','#fff')}${P('M-12,-170 L0,-200 L12,-170Z','#f6c84c',2.6)}${R(-100,-120,28,120,'#fff',4)}${R(72,-120,28,120,'#fff',4)}${P('M-100,-120 L-86,-146 L-72,-120Z M72,-120 L86,-146 L100,-120Z','#e8473b',2.6)}${P('M-34,0 L-34,-66 Q0,-96 34,-66 L34,0Z','#e8c58f')}${[...Array(6)].map((_,k)=>R(-120+k*40,0,0,0,'#fff',0,0)).join('')}</g>
+  <g transform="translate(120 330)">${R(-14,-170,28,170,'#7a4a2a',4)}${[[-70,-170,80],[0,-210,100],[74,-170,80],[-40,-130,60],[44,-130,60]].map(([x,y,r],k)=>C(x,y,r,['#3f9457','#4ea866','#3f9457','#58b872','#4ea866'][k],3)).join('')}${[[-50,-100],[50,-84]].map(([x,y])=>`<path d="M${x},${y} L${x},0" stroke="#7a4a2a" stroke-width="8"/>`).join('')}</g>
+  <path d="M0,340 Q300,320 600,350 Q720,362 800,346 L800,450 L0,450Z" fill="#d9a15a" ${stk(3)}/><path d="M0,400 Q300,384 600,406 Q720,412 800,400 L800,450 L0,450Z" fill="#c4883f"/>
+  <g>${[...Array(12)].map((_,k)=>`<path d="M${k*80},60 Q${k*80+40},84 ${k*80+80},60" fill="none" stroke="${INK}" stroke-width="2.4"/>${P(`M${k*80+10},66 L${k*80+34},72 L${k*80+22},96Z`,['#e8473b','#f6c84c','#3fb86b','#3e8fd8','#fff'][k%5],2)}`).join('')}</g>
+  ${place('kim',300,420,1.1)}${place('lama',480,424,1.1,true)}${finish(i)}`}
+ ,nights(){const i=++UID;
+  return `<defs>${defsCommon(i)}<linearGradient id="sk${i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#150f3a"/><stop offset=".7" stop-color="#3a2a7a"/><stop offset="1" stop-color="#8a5ab8"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#sk${i})"/>${[...Array(40)].map((_,k)=>star((k*89)%790+8,(k*43)%260+8,k%5===0?8:3)).join('')}
+  <g transform="translate(120 110)"><circle r="64" fill="#fff4b8" ${stk(3)}/><circle cx="26" cy="-8" r="58" fill="#3a2a7a"/></g>
+  ${[[40,300,70,150],[150,300,60,200],[280,300,80,120],[420,300,56,210],[560,300,84,140],[700,300,60,190]].map(([x,y,w,h],k)=>grp(`translate(${x} ${y})`,`${R(0,-h,w,h,'#2a1f5e',0,3)}${P(`M${-4},${-h} Q${w/2},${-h-w*.9} ${w+4},${-h}Z`,k%2?'#4a3a9a':'#3a2a7a')}${R(w/2-2,-h-w*.45-22,4,22,'#f6c84c',0,2)}${[0,1,2].map(j=>R(10+j*(w/3),-h+24+(k%3)*10,10,16,'#ffd35c',2,0)).join('')}`)).join('')}
+  <rect y="300" width="800" height="150" fill="#1b1445"/><path d="M0,300 L800,300" stroke="${INK}" stroke-width="3"/>
+  <g transform="translate(430 340) rotate(-5)">${P('M-170,0 Q0,16 170,0 L160,30 Q0,48 -160,30Z','#c0392b')}${P('M-160,6 Q0,22 160,6','none',0)}${[...Array(9)].map((_,k)=>`<path d="M${-140+k*35},12 l8,14 l8,-14" stroke="#f6c84c" stroke-width="3" fill="none"/>`).join('')}${[...Array(22)].map((_,k)=>`<path d="M${-166+k*15},${28+Math.sin(k)*2} L${-166+k*15},${44}" stroke="#f6c84c" stroke-width="3" stroke-linecap="round"/>`).join('')}</g>
+  <g transform="translate(560 346)">${CH.lamp()}</g>${place('scheherazade',330,350,1.1)}
+  <path d="M120,140 Q220,100 300,150" fill="none" stroke="#b58cf0" stroke-width="3" opacity=".0"/>${finish(i)}`}
+ ,madeline(){const i=++UID;
+  return `<defs>${defsCommon(i)}<linearGradient id="sk${i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ccdf0"/><stop offset=".7" stop-color="#f8d4d8"/><stop offset="1" stop-color="#fdecc8"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#sk${i})"/>${cloud(120,90,.9)}${cloud(660,70,1)}${cloud(420,60,.7)}
+  ${[0,1,2,3,4,5].map(k=>grp(`translate(${k*140-20} 300)`,`${R(0,-130,124,130,k%2?'#f2e2c0':'#e8d4a8',0,3)}${P(`M-6,-130 L22,-170 L102,-170 L130,-130Z`,'#6a7aa0')}${[0,1].map(j=>R(18+j*50,-104,26,38,'#8fb8e0',2,2.4)+R(18+j*50,-50,26,34,'#8fb8e0',2,2.4)).join('')}`)).join('')}
+  <g transform="translate(560 300)">${P('M-40,0 L-18,-200 L-6,-200 L-2,-290 L2,-290 L6,-200 L18,-200 L40,0Z','#5a4a6a')}${P('M-30,-60 L30,-60 M-24,-110 L24,-110 M-14,-170 L14,-170','none',3)}${R(-44,-62,88,10,'#5a4a6a',2,3)}${R(-24,-114,48,8,'#5a4a6a',2,3)}<path d="M-18,0 Q0,-50 18,0" fill="#f8d4d8" stroke="${INK}" stroke-width="3"/></g>
+  <rect y="388" width="800" height="62" fill="#b8a58a"/><path d="M0,388 L800,388" stroke="${INK}" stroke-width="3"/>${[...Array(40)].map((_,k)=>E((k*53)%800,400+(k*17)%46,12,5,k%2?'#a8957a':'#c4b198',0)).join('')}
+  ${[0,1].map(r=>[0,1,2,3,4,5].map(k=>grp(`translate(${520-k*58-r*14} ${410+r*14}) scale(.34)`,`${L(-12,-52,-12,-8,14,'#fff')}${L(12,-52,12,-8,14,'#fff')}${E(-14,-4,18,8,'#2b1d3a',3)}${E(14,-4,18,8,'#2b1d3a',3)}${P('M-34,-124 L34,-124 L40,-48 Q0,-38 -40,-48Z','#2e66c8')}${L(-34,-116,-44,-70,12,'#2e66c8')}${L(34,-116,44,-70,12,'#2e66c8')}${C(0,-150,34,'#ffd7b5')}${P('M-38,-158 Q-30,-196 0,-196 Q30,-196 38,-158 Q20,-150 0,-152 Q-20,-150 -38,-158Z','#f6d35c')}${eyes(0,-148,13)}${smile(0,-130,9)}`)).join('')).join('')}
+  ${place('clavel',590,430,.9,true)}${place('madeline',150,424,1.0)}${finish(i)}`}
+
 };
-const KEY={9801:'paddington',7009801:'alice',70001:'oz',7070001:'peterpan',30001:'toystory'};
+const KEY={9801:'paddington',7009801:'alice',70001:'oz',7070001:'peterpan',30001:'toystory',7030001:'snow',9802:'around',7009802:'kim',30002:'nights',7030002:'madeline'};
 const keyOf=x=>{if(!x)return null;const n=typeof x==='object'?(x.n!=null?x.n:(x.e&&x.e.n)):x;return KEY[n]||null};
-const VB={paddington:'250 26 480 424',alice:'190 26 480 424',oz:'180 26 480 424',peterpan:'130 26 480 424',toystory:'160 26 480 424'};
+const VB={paddington:'250 26 480 424',alice:'190 26 480 424',oz:'180 26 480 424',peterpan:'130 26 480 424',toystory:'160 26 480 424',snow:'130 26 480 424',around:'200 26 480 424',kim:'200 26 480 424',nights:'180 26 480 424',madeline:'60 26 480 424'};
 const svg=(k,cls)=>{const f=SCN[k];if(!f)return '';const vb=/sticker/.test(cls||'')?VB[k]:'0 0 800 450';return `<svg class="obra-svg ${cls||''}" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img">${f()}</svg>`};
 
 /* troca a cena + personagens da capa pelo cartaz ilustrado */
