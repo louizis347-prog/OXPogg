@@ -39,7 +39,7 @@ def _text(item):
 
 
 def _norm_phrase(value):
-    value = str(value or '').lower()
+    value = str(value or '').replace('’', "'").replace('‘', "'").replace('`', "'").lower()
     value = re.sub(r"[^a-z0-9']+", ' ', value)
     return re.sub(r'\s+', ' ', value).strip()
 

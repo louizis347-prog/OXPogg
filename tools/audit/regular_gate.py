@@ -61,6 +61,7 @@ for c in courses:
                         found.add('%s|%s|conjunto de verbos repetido com %s: %s' % (c, e['n'], seen_verbs[verb_key], ', '.join(verb_key)))
                     else:
                         seen_verbs[verb_key] = e['n']
+            if c.startswith('en-'):
                 exp = next((q for q in e.get('fr', []) if q.get('k') == 'pgexp'), {})
                 for item in exp.get('items', []):
                     phrase = C._norm_phrase(item.get('en') or item.get('x'))
