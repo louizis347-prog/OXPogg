@@ -50,16 +50,19 @@ function sparks(x,y,n){
   }
 }
 /* ---------- reação a cada resposta ---------- */
+function figOn(){return !!(window.PogFig&&PogFig.active())}
 function answer(ok,el){
-  if(!active())return;
+  const pilot=active();
+  if(!pilot&&!figOn())return;
   P.prTries=(P.prTries||0)+1;
   const r=el&&el.getBoundingClientRect?el.getBoundingClientRect():{left:innerWidth/2,top:innerHeight/2,width:0,height:0};
   const x=r.left+Math.min(r.width,260)/2,y=r.top+Math.min(r.height,80)/2;
   if(ok){
     P.prHits=(P.prHits||0)+1;P.prCombo=(P.prCombo||0)+1;
-    if(!calm())sparks(x,y,P.prCombo>=3?12:7);
+    if(pilot&&!calm())sparks(x,y,P.prCombo>=3?12:7);
   }else{
     P.prCombo=0;
+    if(!pilot)return;
     if(!calm()&&el&&el.classList){el.classList.remove('pr-shake');void el.offsetWidth;el.classList.add('pr-shake')}
     const bub=$q('#pbub');if(bub)bub.textContent='Quase! Leia a dica abaixo e siga em frente: errar faz parte.';
   }
@@ -86,7 +89,7 @@ function medalHTML(){
   <div class="pr-sticker ${res.key}"><div class="pr-st-face"><small>FIGURINHA ${esc(T.rar.toUpperCase())}</small><b>${esc(a.w||P.e.t)}</b><span>${esc(a.k||'')}${a.y?' · '+esc(a.y):''}</span></div></div>`;
 }
 function celebrate(){
-  if(!active())return false;
+  if(!active()&&!figOn())return false;
   if(calm())return true;
   const c=$q('#confetti');if(!c)return true;
   const x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;

@@ -3124,7 +3124,7 @@ function render(){if(P.isTest)return renderTest();const s=P.steps[P.i],e=P.e,t=P
     const practiceN=P.steps.filter(isPracticeStep).length;
     const culturalChips=[e.a?`<span class="badge-pill">${t.kind[(e.a||{}).k]||(e.a||{}).k}: ${esc((e.a||{}).w)}${(e.a||{}).y?` (${esc((e.a||{}).y)})`:''}</span>`:'',e.h&&e.h.src?`<span class="badge-pill">💬 ${esc(e.h.src)}</span>`:'',e.r?`<span class="badge-pill">📖 ${esc(e.r.w)} (${esc(e.r.au)})</span>`:''].filter(Boolean).join('');
     const r=e.r,has=r?ST.shelf.some(b=>b.w===r.w):false;
-    h=`<div class="step done"><div class="pgbig">${poggie({cls:pickMood(true),scarf:P.c.scarf})}</div><span class="eyebrow">EP ${(P.e&&P.e.en)||P.idx+1} · ${cl(P.cid)||(e.lv||lvl(e.n))}</span><div class="big">${t.doneT}</div>${window.PogReward?PogReward.medalHTML():''}
+    h=`<div class="step done"><div class="pgbig">${poggie({cls:pickMood(true),scarf:P.c.scarf})}</div><span class="eyebrow">EP ${(P.e&&P.e.en)||P.idx+1} · ${cl(P.cid)||(e.lv||lvl(e.n))}</span><div class="big">${t.doneT}</div>${window.PogFig&&PogFig.active()?PogFig.revealHTML():(window.PogReward?PogReward.medalHTML():'')}
     <div class="row"><div class="stat" style="--i:0"><b>+${xp}</b><small>${t.xp}</small></div><div class="stat" style="--i:1"><b>${P.score}/${P.total}</b><small>${t.acc}</small></div><div class="stat" style="--i:2"><b>${sec/60|0}:${String(sec%60).padStart(2,'0')}</b><small>${t.time}</small></div>${practiceN?`<div class="stat" style="--i:3"><b>${practiceN}</b><small>${t.practicesCount}</small></div>`:''}</div>
     <div class="recap"><b style="font-family:var(--f-display);font-size:17px">${t.learned}</b><ul>${e.v.map(v=>`<li><b>${esc(v[0])}</b> — ${esc(v[1])}</li>`).join('')}${e.vb?e.vb.items.map(v=>`<li>🏃 <b>${esc(v[0])}</b> — ${esc(v[1])}</li>`).join(''):''}${e.ex?e.ex.map(v=>`<li>💬 <b>${esc(v[0])}</b> — ${esc(v[1])}</li>`).join(''):''}${e.g?`<li>📐 <b>${esc(e.g.t)}</b></li>`:''}</ul>${P.srsAdded?`<p style="margin:10px 0 0;font-weight:700;color:var(--river-d)">${fxEsOn()?fxEs('🔁 +'+P.srsAdded+' palavras no seu baralho de revisão espaçada.'):'🔁 +'+P.srsAdded+' palavras no seu baralho de revisão espaçada.'}</p>`:''}</div>
     ${culturalChips?`<div class="recap"><b style="font-family:var(--f-display);font-size:17px">${t.culturalRefs}</b><div class="badge-strip on" style="margin-top:8px">${culturalChips}</div></div>`:''}
@@ -4785,6 +4785,6 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/illus.js?v=1"></script>
 <link rel="stylesheet" href="css/regular-pilot.css?v=2"><link rel="stylesheet" href="css/pilot-reward.css?v=2">
 <script src="js/english-pilot-cast.js"></script>
-<script src="js/regular-pilot.js?v=5"></script><script src="js/pilot-reward.js?v=2"></script>
+<script src="js/regular-pilot.js?v=5"></script><script src="js/pilot-reward.js?v=3"></script><link rel="stylesheet" href="css/figurinhas.css?v=4"><script src="js/figurinhas.js?v=7"></script>
 <script src="js/roteiro-screen.js?v=3"></script>
 </body></html>
