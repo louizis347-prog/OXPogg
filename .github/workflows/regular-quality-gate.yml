@@ -1,0 +1,30 @@
+name: Trava de qualidade dos cursos regulares
+
+# Todo episódio dos cursos regulares marcado como regular-pilot-v1 precisa passar o contrato
+# (tools/audit/regular_pilot_contract.py): a densidade dos episódios 2–5 do inglês. Falha nova = checagem vermelha.
+# Para BLOQUEAR o merge, marque esta checagem como obrigatória em Settings > Branches (regra da main).
+on:
+  pull_request:
+    paths: ['data/**', 'plano/**', 'tools/plan/**', 'tools/audit/**']
+  push:
+    branches: [main]
+    paths: ['data/**', 'plano/**', 'tools/plan/**', 'tools/audit/**']
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trava dos episódios (contrato + obra única + aderência ao plano)
+        run: python3 tools/audit/regular_gate.py
+      - name: Valida o mapeamento por episódio (obras, verbos, expressões únicos)
+        run: |
+          for f in plano/*.json; do
+            c=$(basename "$f" .json)
+            if ls tools/plan/map/${c}_*.json >/dev/null 2>&1; then
+              echo "== $c"; python3 tools/plan/check_plan.py "$c"
+            fi
+          done
