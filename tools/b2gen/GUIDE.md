@@ -49,3 +49,6 @@ Mesmas regras (focos únicos em `tools/b2gen/briefs_216_255.json`). Obra única 
 
 ## Lote B2 256–295
 Mesmas regras (focos únicos em `tools/b2gen/briefs_256_295.json`). Obra única (inclusive em outro idioma) e expressão única em todo o B2. O vocabulário, os verbos, os `hot` e o som não podem repetir os do vizinho (o 255 é `tools/v3/b2_251_255.py`). Evite repetir em `hot` objetos genéricos que outros episódios do B2 já usam (chart, notes, laptop, coffee, calendar): escolha objetos do tema e do cenário do seu episódio.
+
+## Lote B2 296–335
+Mesmas regras (focos únicos em `tools/b2gen/briefs_296_335.json`). Obra única (inclusive em outro idioma) e expressão única em todo o B2 — o validador compara com os 295 anteriores. O vocabulário, os verbos, os `hot` e o som não podem repetir os do vizinho (o 295 é `tools/v3/b2_291_295.py`). Evite objetos genéricos já muito usados em `hot` (chart, notes, laptop, coffee, calendar) e escolha objetos que existam de fato no cenário `rs` do episódio. Não deixe a expressão-título do foco fora de `exps` só para passar no validador: se ela já foi ensinada, mude o foco/título para outra expressão do mesmo tema. A capa deve conter “Em 10 minutos”.
