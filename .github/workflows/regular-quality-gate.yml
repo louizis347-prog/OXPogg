@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Trava dos episódios (contrato + obra única + aderência ao plano)
         run: python3 tools/audit/regular_gate.py
+      - name: Valida a ponte cultural do inglês regular
+        run: python3 tools/audit/english_bridge_gate.py
       - name: Valida o mapeamento por episódio (obras, verbos, expressões únicos)
         run: |
           for f in plano/*.json; do
