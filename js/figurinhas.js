@@ -46,7 +46,7 @@ function infoFromEp(e,cid){
   const main=e.stage||{};
   const title=(a&&a.w)||st.title||e.t||'';
   if(!title)return null;
-  return {key:cid+'-'+e.n,cid,n:e.n,ep:e.en||'',title,sub:st.sub||(a?(a.w+(a.y?' · '+a.y:'')):''),
+  return {key:cid+'-'+e.n,cid,n:e.n,ep:e.en||'',no:(()=>{try{return (EP[cid]||[]).indexOf(e)+1}catch(x){return 0}})(),title,sub:st.sub||(a?(a.w+(a.y?' · '+a.y:'')):''),
     rs:st.rs||main.rs||e.rs||'street',chars:st.chars||main.chars||[],
     cat:categorize(a),k:(a&&a.k)||'',w:(a&&a.w)||title,y:(a&&a.y)||'',d:(a&&a.d)||'',t:e.t||''};
 }
@@ -68,10 +68,10 @@ function art(info){
 function cardHTML(info,o){
   o=o||{};const c=CAT[info.cat]||CAT.history,tier=o.lock?'lock':(info.tier||'bronze');
   const seed=hash(info.title),rot=((seed%5)-2)*0.35;
-  if(o.lock)return `<div class="fg fg-lock ${o.cls||''}" style="--c1:${c.c1};--c2:${c.c2}" data-fkey="${esc(info.key||'')}"><div class="fg-top"><span class="fg-kind">${c.ico}</span><span class="fg-no">${esc(info.ep?'EP '+info.ep:'')}</span></div><div class="fg-win"><span class="fg-q">?</span><i>${c.ico}</i></div><div class="fg-name"><b>Figurinha escondida</b><span class="fg-sub">${esc(c.name)}</span></div></div>`;
+  if(o.lock)return `<div class="fg fg-lock ${o.cls||''}" style="--c1:${c.c1};--c2:${c.c2}" data-fkey="${esc(info.key||'')}"><div class="fg-top"><span class="fg-kind">${c.ico}</span><span class="fg-no">${info.no?'Nº '+String(info.no).padStart(3,'0'):(info.ep?'EP '+esc(info.ep):'')}</span></div><div class="fg-win"><span class="fg-q">?</span><i>${c.ico}</i></div><div class="fg-name"><b>Figurinha escondida</b><span class="fg-sub">${esc(c.name)}</span></div></div>`;
   return `<div class="fg fg-${tier} ${o.cls||''}" style="--c1:${c.c1};--c2:${c.c2};--rot:${rot}deg" data-fkey="${esc(info.key||'')}">
     <span class="fg-shine"></span>
-    <div class="fg-top"><span class="fg-kind">${c.ico} <span class="fg-em">${esc(c.name.split(' ')[0])}</span></span><span class="fg-no">${esc(info.ep?'EP '+info.ep:'')}</span></div>
+    <div class="fg-top"><span class="fg-kind">${c.ico} <span class="fg-em">${esc(c.name.split(' ')[0])}</span></span><span class="fg-no">${info.no?'Nº '+String(info.no).padStart(3,'0'):(info.ep?'EP '+esc(info.ep):'')}</span></div>
     <div class="fg-win">${art(info)}<span class="fg-rar">${tier==='gold'?'★★★':tier==='silver'?'★★':'★'}</span></div>
     <div class="fg-name"><b>${esc(info.title)}</b><span class="fg-sub">${esc(info.y?info.y:(info.sub||''))}</span></div>
     <div class="fg-foot"><span>${TIER[tier].rar}</span><span>${esc(c.name)}</span></div></div>`;
@@ -116,11 +116,11 @@ function courseLabel(id){
 async function ensure(cid){try{if(typeof ensureLangLoaded==='function')await ensureLangLoaded(cid)}catch(e){}}
 function slots(cid){
   const eps=(typeof EP!=="undefined"&&EP[cid])||[],all=load(),out=[];
-  eps.forEach(e=>{
-    const info=infoFromEp(e,cid);if(!info)return;
+  eps.forEach((e,ix)=>{
+    const info=infoFromEp(e,cid);if(!info)return;info.no=ix+1;
     const done=typeof ST!=='undefined'&&ST.done&&ST.done[cid+'-'+e.n];
     const rec=all[info.key];
-    if(rec)out.push({info:rec,got:true});
+    if(rec){rec.no=ix+1;out.push({info:rec,got:true})}
     else if(done){out.push({info:Object.assign({},info,{tier:'bronze',acc:0}),got:true,legacy:true})}
     else out.push({info,got:false});
   });
@@ -135,8 +135,8 @@ function paint(root){
   const shown=list.slice(0,AL.shown);
   const gold=sl.filter(s=>s.got&&s.info.tier==='gold').length;
   root.querySelector('.fa-body').innerHTML=`
-   <div class="fa-hero"><div class="fa-ring" style="--p:${pct}"><b>${got}</b><small>de ${sl.length}</small></div>
-    <div class="fa-hero-t"><h2>Álbum cultural</h2><p>Filmes, séries, músicas, livros e mais. Conclua episódios para colecionar as figurinhas das obras.</p><div class="fa-chips"><span>🎴 ${got} coletadas</span><span>🥇 ${gold} douradas</span><span>${pct}% completo</span></div></div></div>
+   <div class="fa-hero"><div class="fa-ring" role="img" aria-label="${got} de ${sl.length} figurinhas coletadas"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="12"/><circle class="fa-arc" cx="60" cy="60" r="52" fill="none" stroke="#FFB627" stroke-width="12" stroke-linecap="round" stroke-dasharray="${(2*Math.PI*52).toFixed(1)}" stroke-dashoffset="${(2*Math.PI*52*(1-Math.max(pct,got?2:0)/100)).toFixed(1)}" transform="rotate(-90 60 60)"/></svg><div class="fa-rn"><b>${got}</b><i></i><small>${sl.length}</small></div></div>
+    <div class="fa-hero-t"><h2>Álbum cultural</h2><p>Filmes, séries, músicas, livros e mais. Conclua episódios para colecionar as figurinhas das obras.</p><div class="fa-chips"><span>🎴 ${got} de ${sl.length} coletadas</span><span>🥇 ${gold} douradas</span><span>${pct}% completo</span></div></div></div>
    <label class="fa-sel"><span>Curso</span><select id="faCourse">${courseList().map(id=>`<option value="${esc(id)}" ${id===cid?'selected':''}>${esc(courseLabel(id))}</option>`).join('')}</select></label>
    <div class="fa-tabs" role="tablist"><button type="button" class="${AL.cat==='all'?'on':''}" data-cat="all">Todas <i>${got}/${sl.length}</i></button>${CATS.map(c=>{const b=by(c.id);if(!b.length)return '';return `<button type="button" class="${AL.cat===c.id?'on':''}" data-cat="${c.id}" style="--c1:${c.c1}">${c.ico} ${esc(c.name)} <i>${b.filter(s=>s.got).length}/${b.length}</i></button>`}).join('')}</div>
    <div class="fa-grid">${shown.length?shown.map((s,i)=>`<button type="button" class="fa-cell" data-i="${sl.indexOf(s)}" style="--d:${Math.min(i,12)*30}ms" aria-label="${s.got?esc(s.info.title):'Figurinha escondida'}">${cardHTML(s.info,{lock:!s.got})}</button>`).join(''):'<p class="fa-empty">Nada por aqui ainda.</p>'}</div>

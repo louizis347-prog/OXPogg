@@ -60,3 +60,38 @@
 .pgme,.pgme.guest{background:var(--t-primary)!important;background-image:none!important;color:#fff!important}
 .pgtabs button[aria-current="page"],.p2tabs button[aria-current="page"]{background:var(--t-primary)!important;color:#fff!important}
 @media(max-width:520px){.hn-bg .ha-float{display:none}}
+
+/* ===== atalhos ilustrados com movimento ===== */
+.px-quick{gap:14px!important}
+.px-quick button{position:relative;overflow:hidden;border:0!important;border-radius:26px!important;background:#fff!important;box-shadow:0 1px 0 rgba(14,47,58,.04),0 16px 26px -20px rgba(8,80,90,.55),0 0 0 1px var(--t-line)!important;transition:transform .28s cubic-bezier(.2,.9,.3,1.3),box-shadow .28s!important;cursor:pointer}
+.px-quick button::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.85) 50%,transparent 65%);transform:translateX(-130%);transition:transform .7s;pointer-events:none}
+.px-quick button:hover,.px-quick button:focus-visible{transform:translateY(-8px) rotate(-1.2deg) scale(1.03)!important;box-shadow:0 28px 36px -22px rgba(8,80,90,.65),0 0 0 2px var(--t2,#7FD1D6)!important}
+.px-quick button:hover::before{transform:translateX(130%)}
+.px-quick button:active{transform:translateY(-2px) scale(.98)!important}
+.px-quick button i{position:relative;display:grid!important;place-items:center;width:64px!important;height:64px!important;border-radius:22px!important;background:linear-gradient(145deg,var(--t1,#E3F4F5),var(--t2,#C8E9EC))!important;transition:transform .4s cubic-bezier(.3,1.7,.5,1)}
+.px-quick button:hover i,.px-quick button:focus-visible i{transform:rotate(-9deg) scale(1.14) translateY(-2px)}
+.px-quick button i svg{display:block;filter:drop-shadow(0 3px 2px rgba(14,47,58,.22))}
+.px-quick button i em{position:absolute;right:-6px;top:-6px;min-width:22px;padding:2px 6px;border-radius:99px;background:#FF7A45;color:#fff;font:800 11px/1.3 var(--t-font);font-style:normal;box-shadow:0 4px 8px -3px rgba(255,122,69,.8)}
+.px-quick button span{margin-top:2px;font-weight:800;color:var(--t-ink)}
+.px-quick button:hover .qi-w{animation:qiw .8s ease-in-out infinite}
+.px-quick button:hover .qi-c{animation:qic 1.2s ease-in-out infinite;transform-origin:24px 24px}
+@keyframes qiw{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes qic{0%,100%{transform:rotate(0)}50%{transform:rotate(14deg)}}
+@media(prefers-reduced-motion:reduce){.px-quick button,.px-quick button i,.px-quick button::before{transition:none!important}.px-quick button:hover .qi-w,.px-quick button:hover .qi-c{animation:none}}
+
+/* ===== polimento do restante da home ===== */
+.p2sh h2,.pt-h h2,.px-sec h2{font-family:var(--t-font);font-weight:800;letter-spacing:-.025em;color:var(--t-ink)}
+.p2sh h2::after,.pt-h h2::after{content:"";display:block;width:44px;height:5px;margin-top:6px;border-radius:9px;background:linear-gradient(90deg,#FFB627,#FF7A45)}
+.pt-c{border:0!important;border-radius:22px!important;background:#fff!important;box-shadow:0 1px 0 rgba(14,47,58,.04),0 16px 26px -22px rgba(8,80,90,.55),0 0 0 1px var(--t-line)!important;transition:transform .25s cubic-bezier(.2,.9,.3,1.3),box-shadow .25s}
+.pt-c:hover{transform:translateY(-5px);box-shadow:0 26px 32px -24px rgba(8,80,90,.6),0 0 0 2px #BFE8E4!important}
+.pt-c .pill,.pt-c button.pill{background:var(--t-sun,#FFB627)!important;color:#2B1B00!important;border:0!important;box-shadow:0 4px 0 #D9901A;font-weight:800;border-radius:99px}
+.pt-goal .ring circle:last-child{stroke:#16B58F!important}
+.px-langs .px-lang{transition:transform .3s cubic-bezier(.2,.9,.3,1.3),box-shadow .3s!important}
+.px-langs .px-lang:hover{transform:translateY(-8px) rotate(-1deg) scale(1.02)!important}
+.px-mis{border-radius:26px!important;background:linear-gradient(180deg,#fff,#FFFBEF)!important}
+.px-mis .cl,.px-mis button.cl{background:linear-gradient(135deg,#FFC24A,#FF9B43)!important;box-shadow:0 5px 0 #D9901A!important;transition:transform .2s}
+.px-mis .cl:hover:not(:disabled){transform:translateY(-3px) rotate(-2deg)}
+.px-achrow .a{border:0!important;border-radius:22px!important;box-shadow:0 14px 24px -20px rgba(8,80,90,.55),0 0 0 1px var(--t-line)!important;transition:transform .25s cubic-bezier(.2,.9,.3,1.3)}
+.px-achrow .a:hover{transform:translateY(-6px) rotate(1deg)}
+.px-achrow .a .rg i{transition:transform .3s}.px-achrow .a:hover .rg i{transform:scale(1.2) rotate(-8deg)}
+@media(prefers-reduced-motion:reduce){.pt-c,.px-langs .px-lang,.px-achrow .a{transition:none!important}}

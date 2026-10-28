@@ -10,7 +10,7 @@ var HL=function(){return ST.homeLang==='es'?'es':'pt'};
 var TX={pt:{
  saved:function(n,d){return 'Sua proteção salvou sua sequência de '+n+' dias 🧊'+(d>1?' (usou '+d+')':'')},
  earn:'Você ganhou uma proteção de sequência 🧊 (a cada 7 dias seguidos)',full:'Estoque de proteções cheio (máx. 2)',
- chip:'Proteções de sequência',chipD:function(n){return n+' de 2 proteções'},how:'Ganhe 1 🧊 a cada 7 dias seguidos ou compre com 💎. Ela cobre 1 dia sem estudar.',
+ chip:'Proteções de sequência',chipD:function(n){return n+' de 2 proteções'},how:'Ganhe 1 🧊 a cada 7 dias seguidos ou compre com 🪙. Ela cobre 1 dia sem estudar.',
  lost:'Sua sequência recomeçou. Estude hoje para começar outra!',
  lg:'Liga semanal',train:'liga de treino · rivais simulados',tiers:['Bronze','Prata','Ouro','Safira','Rubi','Ametista','Diamante'],
  left:function(d){return d<=1?'termina hoje':'faltam '+d+' dias'},you:'Você',pts:'XP',up:'Zona de promoção',down:'Zona de rebaixamento',
@@ -19,7 +19,7 @@ var TX={pt:{
 es:{
  saved:function(n,d){return 'Tu protección salvó tu racha de '+n+' días 🧊'+(d>1?' (usó '+d+')':'')},
  earn:'Ganaste una protección de racha 🧊 (cada 7 días seguidos)',full:'Almacén de protecciones lleno (máx. 2)',
- chip:'Protecciones de racha',chipD:function(n){return n+' de 2 protecciones'},how:'Gana 1 🧊 cada 7 días seguidos o cómprala con 💎. Cubre 1 día sin estudiar.',
+ chip:'Protecciones de racha',chipD:function(n){return n+' de 2 protecciones'},how:'Gana 1 🧊 cada 7 días seguidos o cómprala con 🪙. Cubre 1 día sin estudiar.',
  lost:'Tu racha se reinició. ¡Estudia hoy para empezar otra!',
  lg:'Liga semanal',train:'liga de entrenamiento · rivales simulados',tiers:['Bronce','Plata','Oro','Zafiro','Rubí','Amatista','Diamante'],
  left:function(d){return d<=1?'termina hoy':'faltan '+d+' días'},you:'Tú',pts:'XP',up:'Zona de ascenso',down:'Zona de descenso',
@@ -81,7 +81,7 @@ window.bumpStreak=function(){
   setTimeout(function(){try{paint()}catch(e){}},50);
 };
 
-/* limite de 2 também na compra com 💎 (a loja de missions.js cobra gemas) */
+/* limite de 2 também na compra com 🪙 (a loja de missions.js cobra gemas) */
 document.addEventListener('click',function(e){
   try{var b=e.target.closest&&e.target.closest('[data-ms="buy"]');if(!b)return;
     if(wallet().freeze>=MAXF){e.stopImmediatePropagation();e.preventDefault();toast(T().full)}
