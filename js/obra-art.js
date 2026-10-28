@@ -24,9 +24,24 @@ const SCENE_WORDS={
  museum:/painting|museum|art|artist|sculpt|sculpture|monet|picasso|van gogh|chapel|parthenon|building/i,
  kitchen:/food|cook|kitchen|restaurant|chocolate|tea|bread|chef|recipe|ratatouille|pizza/i
 };
-const OBJECTS={
- water:'wave',city:'window',forest:'leaf',stage:'mask',lab:'atom',library:'book',museum:'frame',kitchen:'cup'
-};
+const OBJECTS={water:'wave',city:'window',forest:'leaf',stage:'mask',lab:'atom',library:'book',museum:'frame',kitchen:'cup'};
+const MOTIFS=[
+ {re:/paddington|bear called/i,scene:'city',ids:['bear','mrs'],obj:'suitcase'},
+ {re:/alice|wonderland|looking glass/i,scene:'forest',ids:['alice','rabbit','cat'],obj:'clock'},
+ {re:/wizard of oz|oz|dorothy/i,scene:'forest',ids:['dorothy','scarecrow','lion'],obj:'rainbow'},
+ {re:/peter pan|neverland/i,scene:'forest',ids:['wendy','peter','tinker'],obj:'starburst'},
+ {re:/three musketeers|musketeer/i,scene:'stage',ids:['dartagnan','athos'],obj:'swords'},
+ {re:/don quixote|quixote/i,scene:'city',ids:['quijote','sancho'],obj:'windmill'},
+ {re:/little prince|petit prince/i,scene:'lab',ids:['petitprince'],obj:'planet'},
+ {re:/asterix/i,scene:'forest',ids:['asterix','obelix'],obj:'shield'},
+ {re:/ratatouille/i,scene:'kitchen',ids:['remy','linguini'],obj:'chef'},
+ {re:/lion king/i,scene:'forest',ids:['lion'],obj:'sunrise'},
+ {re:/mozart|beethoven|symphony|sonata|music|opera/i,scene:'stage',ids:['tom','polly'],obj:'notes'},
+ {re:/parthenon|notre-dame|chapel|building|house|architecture/i,scene:'museum',ids:['tommy','oliver'],obj:'columns'},
+ {re:/black mirror|robot|space|planet|dispossessed/i,scene:'lab',ids:['pilote','tokio'],obj:'orbit'},
+ {re:/dracula|frankenstein|horror|ghost/i,scene:'stage',ids:['huck','ahab'],obj:'moon'},
+ {re:/little red hen|peter rabbit|rabbit/i,scene:'forest',ids:['peterrabbit','mcgregor'],obj:'wheat'}
+];
 const KEY=Object.create(null),VB=Object.create(null),SCN=Object.create(null),THEME=Object.create(null);
 let uid=0;
 function workOf(e){return (e&&e.a&&e.a.w)||((e&&e.fr||[]).find(f=>f.k==='cover')||{}).obra||e&&e.t||'Pogglot';}
@@ -34,18 +49,24 @@ function keyOf(e){
  const w=workOf(e), base=norm(w).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,28)||'obra';
  return 'w-'+base+'-'+hash(w).toString(36).slice(0,5);
 }
-function sceneOf(e,w){
- const text=`${w} ${(e&&e.sc)||''} ${(e&&e.rs)||''} ${(e&&e.s)||''}`;
- for(const [k,re] of Object.entries(SCENE_WORDS))if(re.test(text))return k;
- return 'city';
-}
+function motifOf(e,w){const text=`${w} ${(e&&e.a&&e.a.k)||''} ${(e&&e.s)||''}`;return MOTIFS.find(x=>x.re.test(text))||null;}
+function sceneOf(e,w){const text=`${w} ${(e&&e.sc)||''} ${(e&&e.rs)||''} ${(e&&e.s)||''}`,motif=motifOf(e,w);if(motif)return motif.scene;for(const [k,re] of Object.entries(SCENE_WORDS))if(re.test(text))return k;return 'city';}
+function castIds(e,m){const motif=motifOf(e,m.w);if(motif)return motif.ids;const ids=[];const add=x=>{if(x&&!ids.includes(x))ids.push(x)};for(const f of (e&&e.fr)||[]){for(const c of (f.chars||[]))add(c[0]);for(const c of Object.values(f.cast||{})){if(Array.isArray(c))add(c[0]);}}return ids.length?ids.slice(0,3):['tom','polly'];}
+const AUTO_OBJECTS=[
+ [/train|railway|subway|metro|station/i,'train'],[/camera|photograph|photo|film/i,'camera'],[/newspaper|journal|press|report/i,'paper'],[/map|journey|travel|voyage|road/i,'map'],
+ [/tea|coffee|cafe|café|restaurant|dinner|meal/i,'cup'],[/dance|ballerina|ballet/i,'ribbon'],[/sport|tennis|football|soccer|baseball|game/i,'trophy'],[/garden|flower|rose|spring/i,'flower'],
+ [/school|classroom|teacher|student|university/i,'chalk'],[/market|shop|store|money|bank/i,'ticket'],[/ship|boat|harbor|sea|ocean/i,'anchor'],[/city|street|avenue|new york|london|paris/i,'streetlamp'],
+ [/war|battle|soldier|army|king|queen|castle/i,'crown'],[/space|moon|star|planet|astronaut/i,'rocket'],[/science|laboratory|research|medicine|doctor/i,'flask'],[/painting|portrait|museum|artist|sculpture/i,'frame']
+];
+function objectOf(e,w,scene){const text=`${w} ${(e&&e.a&&e.a.k)||''} ${(e&&e.a&&e.a.d)||''} ${(e&&e.s)||''}`;for(const [re,obj] of AUTO_OBJECTS)if(re.test(text))return obj;return OBJECTS[scene]||'window';}
+
 function meta(e){
- const w=workOf(e),h=hash(w),key=keyOf(e),pal=pick(PALETTES,h),scene=sceneOf(e,w);
- KEY[e&&e.n||key]=key;VB[key]='155 58 490 355';SCN[key]=scene;
+ const w=workOf(e),h=hash(w),key=keyOf(e),pal=pick(PALETTES,h),motif=motifOf(e,w),scene=sceneOf(e,w);
+ KEY[e&&e.n||key]=key;VB[key]='120 45 560 370';SCN[key]=scene;
  const title=w.split(/[:·–—]/)[0].trim();
  const who=(e&&e.fr||[]).flatMap(f=>Object.keys(f.cast||{})).find(Boolean)||'Pog';
  const names=['Mina','Theo','Lena','Sam','Noah','Ari'];
- const out={key,w,title,year:(e&&e.a&&e.a.y)||'',scene,pal,who,names:[names[h%names.length],names[(h>>>4)%names.length]]};
+ const out={key,w,title,year:(e&&e.a&&e.a.y)||'',scene,pal,motif:motif&&motif.obj||objectOf(e,w,scene),ids:castIds(e,{w}),who,names:[names[h%names.length],names[(h>>>4)%names.length]]};
  THEME[key]=out;return out;
 }
 function P(x,y,w,h,fill,rx){return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx||0}" fill="${fill}" stroke="${INK}" stroke-width="4"/>`;}
@@ -57,6 +78,10 @@ function kid(x,y,s,skin,hair,shirt,flip){
  const tr=`translate(${x} ${y}) scale(${flip?-s:s} ${s})`;
  return `<g transform="${tr}" stroke="${INK}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-28 90L-38 150M28 90L38 150" fill="none"/><path d="M-43 150h18M25 150h18" fill="none"/><path d="M-48 72Q-48 36 0 30Q48 36 48 72v54h-96z" fill="${shirt}"/><circle cx="0" cy="0" r="40" fill="${skin}"/><path d="M-40-8Q-34-49 0-48Q36-48 42-6Q23-24 0-20Q-22-26-40-8z" fill="${hair}"/><circle cx="-14" cy="2" r="4" fill="${INK}" stroke="none"/><circle cx="14" cy="2" r="4" fill="${INK}" stroke="none"/><path d="M-12 20Q0 29 12 20" fill="none"/></g>`;
 }
+function charFor(id,x,y,s,flip,fall){
+ try{if(window.PogChars&&PogChars.svg){const raw=PogChars.svg(id);if(raw){const inner=raw.replace(/^<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'');return `<g transform="translate(${x-50*s} ${y}) scale(${flip?-s:s} ${s})" filter="drop-shadow(0 5px 5px rgba(43,29,58,.2))">${inner}</g>`;}}}catch(e){}
+ return kid(x,y,s,fall.skin,fall.hair,fall.shirt,flip);
+}
 function object(kind,x,y,s,c){
  const z=s||1;
  if(kind==='wave')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M0 32q25-30 50 0t50 0" fill="none" stroke="${c}" stroke-width="18" stroke-linecap="round"/><path d="M22 62q25-30 50 0t50 0" fill="none" stroke="${c}" stroke-width="12" stroke-linecap="round"/></g>`;
@@ -66,6 +91,35 @@ function object(kind,x,y,s,c){
  if(kind==='atom')return `<g transform="translate(${x} ${y}) scale(${z})" fill="none" stroke="${c}" stroke-width="6"><ellipse cx="50" cy="50" rx="44" ry="18"/><ellipse cx="50" cy="50" rx="44" ry="18" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="44" ry="18" transform="rotate(120 50 50)"/><circle cx="50" cy="50" r="9" fill="${c}" stroke="${INK}" stroke-width="3"/></g>`;
  if(kind==='book')return `<g transform="translate(${x} ${y}) scale(${z})">${P(0,8,82,62,'#fff',6)}<path d="M41 8v62" stroke="${c}" stroke-width="5"/><path d="M13 24h18M13 38h18M51 24h18M51 38h18" stroke="${c}" stroke-width="4" stroke-linecap="round"/></g>`;
  if(kind==='frame')return `<g transform="translate(${x} ${y}) scale(${z})">${P(0,0,100,84,'#f0bd65',4)}${P(12,12,76,60,c,2)}<path d="M20 60l18-22 12 12 10-13 20 23" fill="none" stroke="${PAPER}" stroke-width="4"/></g>`;
+ if(kind==='clock')return `<g transform="translate(${x} ${y}) scale(${z})"><circle cx="50" cy="50" r="42" fill="#fff" stroke="${INK}" stroke-width="5"/><path d="M50 50V24M50 50l18 12" stroke="${c}" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="50" r="5" fill="${c}"/></g>`;
+ if(kind==='rainbow')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M5 82a45 45 0 0 1 90 0" fill="none" stroke="${c}" stroke-width="12" stroke-linecap="round"/><path d="M20 82a30 30 0 0 1 60 0" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round"/><path d="M35 82a15 15 0 0 1 30 0" fill="none" stroke="${PAPER}" stroke-width="10" stroke-linecap="round"/><circle cx="9" cy="82" r="9" fill="#fff" stroke="${INK}" stroke-width="3"/><circle cx="91" cy="82" r="9" fill="#fff" stroke="${INK}" stroke-width="3"/></g>`;
+ if(kind==='sunrise')return `<g transform="translate(${x} ${y}) scale(${z})"><circle cx="50" cy="50" r="28" fill="#f5c84f" stroke="${INK}" stroke-width="4"/>${[0,45,90,135,180,225,270,315].map(a=>`<path d="M50 8v-18M50 92v18M8 50h-18M92 50h18M20 20L7 7M80 20L93 7M20 80L7 93M80 80L93 93" transform="rotate(${a} 50 50)" stroke="${c}" stroke-width="5" stroke-linecap="round"/>`).join('')}</g>`;
+ if(kind==='starburst')return `<g transform="translate(${x} ${y}) scale(${z})">${star(50,50,42,c)}${star(50,50,20,'#fff')}</g>`;
+ if(kind==='swords')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M18 84L78 12M22 24l56 60" stroke="#fff" stroke-width="10" stroke-linecap="round"/><path d="M18 84L78 12M22 24l56 60" stroke="${c}" stroke-width="3"/><path d="M30 56l16 14M54 42l16 14" stroke="${INK}" stroke-width="6"/></g>`;
+ if(kind==='windmill')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M38 90l8-60h18l8 60z" fill="#f1cf9b" stroke="${INK}" stroke-width="4"/><circle cx="55" cy="30" r="8" fill="${c}" stroke="${INK}" stroke-width="3"/>${[0,90,180,270].map(a=>`<path d="M55 30l${55+Math.cos(a*Math.PI/180)*38} ${30+Math.sin(a*Math.PI/180)*38}" stroke="${c}" stroke-width="9" stroke-linecap="round"/>`).join('')}</g>`;
+ if(kind==='planet')return `<g transform="translate(${x} ${y}) scale(${z})"><circle cx="50" cy="50" r="34" fill="${c}" stroke="${INK}" stroke-width="4"/><ellipse cx="50" cy="50" rx="58" ry="14" fill="none" stroke="${INK}" stroke-width="5" transform="rotate(-18 50 50)"/><circle cx="36" cy="39" r="5" fill="${PAPER}"/><circle cx="67" cy="61" r="7" fill="${PAPER}"/></g>`;
+ if(kind==='shield')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M50 5l38 14v29c0 24-16 40-38 48C28 88 12 72 12 48V19z" fill="${c}" stroke="${INK}" stroke-width="5"/><path d="M50 20v58M24 48h52" stroke="${PAPER}" stroke-width="5"/></g>`;
+ if(kind==='chef')return `<g transform="translate(${x} ${y}) scale(${z})">${P(8,36,84,52,'#fff',10)}<path d="M20 38q-8-34 14-32 16-16 32 0 22-2 14 32" fill="${c}" stroke="${INK}" stroke-width="4"/></g>`;
+ if(kind==='notes')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M30 16v54M68 8v54M30 16l38-8" stroke="${c}" stroke-width="7" stroke-linecap="round"/><ellipse cx="22" cy="74" rx="14" ry="10" fill="${c}"/><ellipse cx="60" cy="66" rx="14" ry="10" fill="${c}"/></g>`;
+ if(kind==='columns')return `<g transform="translate(${x} ${y}) scale(${z})">${P(8,76,84,10,'#e8cfad',2)}${[16,39,62,85].map(xx=>`<path d="M${xx} 76V20" stroke="${c}" stroke-width="10" stroke-linecap="round"/>`).join('')}<path d="M8 18h84" stroke="${INK}" stroke-width="6"/></g>`;
+ if(kind==='orbit')return `<g transform="translate(${x} ${y}) scale(${z})"><circle cx="50" cy="50" r="12" fill="${c}" stroke="${INK}" stroke-width="3"/><ellipse cx="50" cy="50" rx="44" ry="17" fill="none" stroke="${c}" stroke-width="6"/><circle cx="90" cy="50" r="6" fill="${c}" stroke="${INK}" stroke-width="3"/></g>`;
+ if(kind==='moon')return `<g transform="translate(${x} ${y}) scale(${z})"><circle cx="50" cy="50" r="38" fill="#f7d77b" stroke="${INK}" stroke-width="4"/><circle cx="66" cy="37" r="38" fill="${PAPER}"/><circle cx="30" cy="25" r="3" fill="${c}"/><circle cx="18" cy="76" r="3" fill="${c}"/></g>`;
+ if(kind==='wheat')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M20 90L50 12M50 90L50 12M80 90L50 12" stroke="${c}" stroke-width="5"/><path d="M20 28l-14-8M28 42l-16-6M72 31l16-8M72 47l17-5M43 28L30 17M57 29l14-13" stroke="${c}" stroke-width="6" stroke-linecap="round"/></g>`;
+ if(kind==='suitcase')return `<g transform="translate(${x} ${y}) scale(${z})">${P(8,26,86,60,'#c96c4b',8)}${P(38,10,26,20,'none',5)}<path d="M16 47h70M50 26v60" stroke="#f7d6a5" stroke-width="4"/></g>`;
+ if(kind==='train')return `<g transform="translate(${x} ${y}) scale(${z})">${P(4,28,94,52,c,8)}${P(16,40,24,20,'#dff4f5',3)}${P(54,40,24,20,'#dff4f5',3)}<circle cx="25" cy="88" r="9" fill="${INK}"/><circle cx="76" cy="88" r="9" fill="${INK}"/><path d="M0 100h108" stroke="${INK}" stroke-width="4"/></g>`;
+ if(kind==='camera')return `<g transform="translate(${x} ${y}) scale(${z})">${P(8,28,90,58,c,8)}${P(33,16,30,16,'#fff',4)}<circle cx="53" cy="57" r="21" fill="#fff" stroke="${INK}" stroke-width="4"/><circle cx="53" cy="57" r="10" fill="${c}"/><circle cx="82" cy="39" r="4" fill="#f7d77b"/></g>`;
+ if(kind==='paper')return `<g transform="translate(${x} ${y}) scale(${z})">${P(10,5,80,88,'#fff',4)}<path d="M22 25h54M22 40h54M22 55h40M22 70h48" stroke="${c}" stroke-width="4" stroke-linecap="round"/></g>`;
+ if(kind==='map')return `<g transform="translate(${x} ${y}) scale(${z})">${P(5,12,96,72,'#fff3c8',4)}<path d="M14 67Q34 20 55 55T92 24" fill="none" stroke="${c}" stroke-width="6"/><circle cx="14" cy="67" r="5" fill="${c}"/><circle cx="92" cy="24" r="5" fill="${c}"/></g>`;
+ if(kind==='ribbon')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M18 86q25-56 50-56t22 40q-8 27-36 7" fill="none" stroke="${c}" stroke-width="12" stroke-linecap="round"/><path d="M54 28l-8-16M54 28l14-12" stroke="${INK}" stroke-width="4"/></g>`;
+ if(kind==='trophy')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M26 12h58v30a29 29 0 0 1-58 0z" fill="#f6c84b" stroke="${INK}" stroke-width="4"/><path d="M26 20H8q0 28 20 30M84 20h18q0 28-20 30" fill="none" stroke="${INK}" stroke-width="5"/><path d="M55 71v17M35 94h40" stroke="${INK}" stroke-width="6" stroke-linecap="round"/></g>`;
+ if(kind==='flower')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M50 42v56" stroke="${c}" stroke-width="6"/><circle cx="50" cy="28" r="14" fill="#f2bd52" stroke="${INK}" stroke-width="3"/>${[[50,6],[72,28],[50,50],[28,28]].map(q=>`<circle cx="${q[0]}" cy="${q[1]}" r="14" fill="${c}" stroke="${INK}" stroke-width="3"/>`).join('')}</g>`;
+ if(kind==='chalk')return `<g transform="translate(${x} ${y}) scale(${z})">${P(8,12,94,70,'#456a64',4)}<path d="M20 33h46M20 50h66M20 67h36" stroke="#fffaf0" stroke-width="4" stroke-linecap="round"/></g>`;
+ if(kind==='ticket')return `<g transform="translate(${x} ${y}) scale(${z})">${P(8,26,94,48,'#f4c26b',5)}<path d="M35 26v48M74 26v48" stroke="${INK}" stroke-width="3" stroke-dasharray="6 5"/><circle cx="20" cy="50" r="7" fill="${c}"/><circle cx="91" cy="50" r="7" fill="${c}"/></g>`;
+ if(kind==='anchor')return `<g transform="translate(${x} ${y}) scale(${z})"><circle cx="50" cy="18" r="9" fill="none" stroke="${c}" stroke-width="7"/><path d="M50 28v56M28 44h44M14 68q8 22 36 22t36-22" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/></g>`;
+ if(kind==='streetlamp')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M50 88V18q0-12 14-12h18" fill="none" stroke="${INK}" stroke-width="7"/><path d="M70 8h24v14H70z" fill="#f7d77b" stroke="${INK}" stroke-width="3"/><path d="M30 92h42" stroke="${INK}" stroke-width="7" stroke-linecap="round"/></g>`;
+ if(kind==='crown')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M10 76l9-54 26 27 14-40 16 40 26-27 9 54z" fill="#f2c94c" stroke="${INK}" stroke-width="4"/><path d="M10 76h100v14H10z" fill="#f2c94c" stroke="${INK}" stroke-width="4"/></g>`;
+ if(kind==='rocket')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M55 4q38 26 26 76H29Q17 30 55 4z" fill="#fff" stroke="${INK}" stroke-width="4"/><circle cx="55" cy="37" r="9" fill="${c}" stroke="${INK}" stroke-width="3"/><path d="M30 58L10 78l25-5M80 58l20 20-25-5" fill="${c}" stroke="${INK}" stroke-width="3"/></g>`;
+ if(kind==='flask')return `<g transform="translate(${x} ${y}) scale(${z})"><path d="M37 8h30M45 8v30L18 82q-6 12 12 12h44q18 0 12-12L55 38V8" fill="${c}" fill-opacity=".7" stroke="${INK}" stroke-width="4"/><path d="M28 75h52" stroke="#fff" stroke-width="4"/></g>`;
  return `<g transform="translate(${x} ${y}) scale(${z})">${P(10,25,68,45,'#fff',12)}<path d="M78 35q20 0 20 14t-20 14" fill="none" stroke="${INK}" stroke-width="4"/><path d="M22 16q-4-14 8-20M42 16Q38 2 50-4" fill="none" stroke="${c}" stroke-width="4" stroke-linecap="round"/></g>`;
 }
 function body(e,mode){
@@ -79,10 +133,12 @@ function body(e,mode){
  else if(scene==='museum'){s+=P(40,55,720,300,'#eee4d4',8);for(let i=0;i<4;i++)s+=object('frame',76+i*185,95+(i%2)*28,.8,pick([accent,light,dark],(h+i)%3));s+=P(0,355,800,95,light,0);}
  else if(scene==='kitchen'){s+=P(0,280,800,170,light,0)+P(60,84,680,210,'#f4e9d7',8)+object('cup',630,150,1,accent);}
  else {s+=P(0,275,800,175,light,0);for(let i=0;i<6;i++){const x=40+i*135;s+=P(x,125-(i%2)*35,98,150+(i%2)*35,accent,5)+P(x+18,147-(i%2)*35,28,42,bg,2)+P(x+57,147-(i%2)*35,28,42,bg,2);}}
- s+=object(OBJECTS[scene]||'window',575,188,.85,accent);
- const skins=['#f1c7a8','#c88e67','#8b5a3c','#f5d3ba'],hairs=['#2b1d3a','#5a3425','#a65d2f','#243b53'],shirts=[accent,light,dark,'#c65b6f'];
+ s+=object(m.motif||OBJECTS[scene]||'window',575,188,.85,accent);
+ const skins=['#f1c7a8','#c88e67','#8b5a3c','#f5d3ba'],hairs=['#2b1d3a','#5a3425','#a65d2f','#243b53'],shirts=[accent,light,dark,'#c65b6f'],fallback={skin:skins[h%4],hair:hairs[(h>>>2)%4],shirt:shirts[(h>>>3)%4]};
+ const ids=m.ids&&m.ids.length?m.ids:['tom','polly'];
  s+=`<g class="obra-shadow"><ellipse cx="303" cy="374" rx="96" ry="15" fill="#2b1d3a" opacity=".14"/><ellipse cx="525" cy="374" rx="96" ry="15" fill="#2b1d3a" opacity=".14"/></g>`;
- s+=kid(300,220,.95,skins[h%4],hairs[(h>>>2)%4],shirts[(h>>>3)%4],false)+kid(525,226,.9,skins[(h>>>5)%4],hairs[(h>>>7)%4],shirts[(h>>>9)%4],true);
+ s+=charFor(ids[0],300,220,.95,false,fallback);
+ s+=charFor(ids[1]||ids[0],525,226,.9,true,fallback);
  s+=`<rect x="6" y="6" width="788" height="438" rx="26" fill="none" stroke="${INK}" stroke-width="6" opacity=".75"/>`;
  return s;
 }

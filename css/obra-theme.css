@@ -26,3 +26,9 @@
  #player.ot-on .obra-reaction{bottom:calc(100% + 7px);width:calc(100% - 20px)}
 }
 @media(prefers-reduced-motion:reduce){#player.ot-on .obra-reaction.show{animation:none;transform:translate(-50%,0);opacity:1}}
+/* A capa editorial usa o palco como cartão de obra; a arte permanece inteira em qualquer largura. */
+#player.ot-on .az-hero .az-scene.obra-stage{width:min(100%,760px);aspect-ratio:16/9;min-height:0;border:2px solid rgba(255,255,255,.42);border-radius:20px;background:var(--azl);box-shadow:0 16px 30px -18px rgba(43,29,58,.42)}
+#player.ot-on .az-hero .az-scene.obra-stage .obra-art{aspect-ratio:16/9;object-fit:contain}
+#player.ot-on .ps-sticker-in{transform:rotate(-.8deg);border:1px solid rgba(43,29,58,.16)}
+#player.ot-on .ps-sticker-in .obra-stage{border:2px solid rgba(43,29,58,.12);box-shadow:none}
+@media(max-width:759px){#player.ot-on .az-hero .az-scene.obra-stage{border-radius:15px}}
