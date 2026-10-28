@@ -48,7 +48,7 @@ function cardHTML(){
 function rr(x,a,b,w,h,r){x.beginPath();x.moveTo(a+r,b);x.arcTo(a+w,b,a+w,b+h,r);x.arcTo(a+w,b+h,a,b+h,r);x.arcTo(a,b+h,a,b,r);x.arcTo(a,b,a+w,b,r);x.closePath()}
 function draw(kind){
   const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;const x=cv.getContext('2d');
-  const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#2A1670');g.addColorStop(.55,'#6B3BF0');g.addColorStop(1,'#C13BD6');x.fillStyle=g;x.fillRect(0,0,W,H);
+  const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#205D66');g.addColorStop(.55,'#52C7D9');g.addColorStop(1,'#4CB5C5');x.fillStyle=g;x.fillRect(0,0,W,H);
   const r1=x.createRadialGradient(W,0,0,W,0,700);r1.addColorStop(0,'rgba(255,120,210,.55)');r1.addColorStop(1,'rgba(255,120,210,0)');x.fillStyle=r1;x.fillRect(0,0,W,H);
   const r2=x.createRadialGradient(0,H,0,0,H,700);r2.addColorStop(0,'rgba(60,190,255,.4)');r2.addColorStop(1,'rgba(60,190,255,0)');x.fillStyle=r2;x.fillRect(0,0,W,H);
   const F='"Plus Jakarta Sans","Plus Jakarta Sans",system-ui,sans-serif';x.fillStyle='#fff';x.textBaseline='alphabetic';

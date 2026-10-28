@@ -58,9 +58,9 @@ async function open(cid){
   var tw=d.W.length,tx=d.X.length,tab='w',q='',lim=60;
   function draw(){var list=(tab==='w'?d.W:d.X).filter(function(v){return!q||(v.a+' '+v.b).toLowerCase().indexOf(q)>=0});
     el.querySelector('.pr-card').innerHTML='<div class="pr-h"><h3>'+esc(t('title'))+'</h3><button class="pr-x" aria-label="'+esc(t('close'))+'">×</button></div>'+
-     '<p class="pr-sub">'+esc(t('goal'))+'</p>'+lineOf(t('words'),tw,GOAL.words,'#7a5cff')+lineOf(t('expr'),tx,GOAL.expr,'#12b886')+
+     '<p class="pr-sub">'+esc(t('goal'))+'</p>'+lineOf(t('words'),tw,GOAL.words,'#79E2DE')+lineOf(t('expr'),tx,GOAL.expr,'#12b886')+
      '<h4 class="vc-h">'+esc(t('levels'))+'</h4>'+d.levels.filter(function(l){return l.w||l.x||l.wt}).map(function(l){return '<div class="vc-lv"><b>'+esc(l.lv||'')+'</b><div>'+
-        '<small>'+esc(t('words'))+': '+fmt(l.w)+(l.wt?' / '+fmt(l.wt):'')+'</small>'+bar(l.wt?l.w/l.wt:Math.min(1,l.w/GOAL.words*6),'#7a5cff')+
+        '<small>'+esc(t('words'))+': '+fmt(l.w)+(l.wt?' / '+fmt(l.wt):'')+'</small>'+bar(l.wt?l.w/l.wt:Math.min(1,l.w/GOAL.words*6),'#79E2DE')+
         '<small>'+esc(t('expr'))+': '+fmt(l.x)+(l.xt?' / '+fmt(l.xt):'')+'</small>'+bar(l.xt?l.x/l.xt:Math.min(1,l.x/GOAL.expr*6),'#12b886')+'</div></div>'}).join('')+
      '<div class="vc-tabs"><button class="pg-chip" data-t="w" aria-pressed="'+(tab==='w')+'">'+esc(t('words'))+' ('+fmt(tw)+')</button><button class="pg-chip" data-t="x" aria-pressed="'+(tab==='x')+'">'+esc(t('expr'))+' ('+fmt(tx)+')</button></div>'+
      '<input class="vc-q" type="search" placeholder="'+esc(t('search'))+'" aria-label="'+esc(t('search'))+'" value="'+esc(q)+'">'+

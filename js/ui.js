@@ -33,7 +33,7 @@ const k=key=>(K[L0()][key]!=null?K[L0()][key]:K.pt[key]);
 const LANGS=[
  {id:'en',mono:'EN',c:'#1CB0F6',cd:'#0E86C2',cl:'#CDEFFD',n:{pt:'Inglês',es:'Inglés'},sub:['en-a1','en-a2','en-b1','en-b2','en-c1','en-c2']},
  {id:'es',mono:'ES',c:'#FF6B4A',cd:'#D44A2C',cl:'#FFD9D0',n:{pt:'Espanhol',es:'Español'},sub:['es-a1','es-a2','es-b1','es-b2','es-c1','es-c2']},
- {id:'fr',mono:'FR',c:'#7B61FF',cd:'#5A41D9',cl:'#DDD6FF',n:{pt:'Francês p/ hispanofalantes',es:'Francés'},sub:['fr-a1','fr-a2','fr-b1','fr-b2','fr-c1','fr-c2']},
+ {id:'fr',mono:'FR',c:'#7DE3DF',cd:'#52B8C8',cl:'#DCF9F8',n:{pt:'Francês p/ hispanofalantes',es:'Francés'},sub:['fr-a1','fr-a2','fr-b1','fr-b2','fr-c1','fr-c2']},
  {id:'frbr',mono:'FR',c:'#3E5FA0',cd:'#2B4478',cl:'#D6E0F5',n:{pt:'Francês p/ brasileiros',es:'Francés para brasileños'},sub:['frbr-a1','frbr-a2','frbr-b1','frbr-b2','frbr-c1','frbr-c2']},
  {id:'de',mono:'DE',c:'#F5A400',cd:'#C28000',cl:'#FFEBB8',n:{pt:'Alemão',es:'Alemán'},sub:['de-a1','de-a2','de-b1','de-b2','de-c1','de-c2']},
  {id:'it',mono:'IT',c:'#F0508B',cd:'#C73068',cl:'#FFD5E4',n:{pt:'Italiano',es:'Italiano'},sub:['it-a1','it-a2','it-b1','it-b2','it-c1','it-c2']},
@@ -144,7 +144,7 @@ function me(){return window.PogCloud&&PogCloud.user?PogCloud.user():null}
 window.topbar=function(L){
   const u=me(),cur=PogUI.cur;
   return `<header class="pgbar"><div class="in">
-   <button class="logo" data-go="home" aria-label="Pogglot"><span class="mini">${poggie({scarf:'#7C4DFF'})}</span><span>Pogg<b>lot</b></span></button>
+   <button class="logo" data-go="home" aria-label="Pogglot"><span class="mini">${poggie({scarf:'#6DDFDB'})}</span><span>Pogg<b>lot</b></span></button>
    <nav class="pgtabs" aria-label="Menu">${TABS.filter(t=>t[0]!=='profile').map(([id,key,ic])=>`<button data-go="${id}" ${cur===id?'aria-current="page"':''}>${IC[ic]}${k(key)}</button>`).join('')}</nav>
    <div class="pgright">
     <span class="pgstat fire" title="${k('streak')}">🔥 <span data-pgstreak>${ST.streak.n}</span></span>
@@ -204,7 +204,7 @@ window.home=function(){
    ${BUBS.map(([m,x,y],i)=>{const l=LANG(m.toLowerCase());return `<span class="pg-bub" style="${lstyle(l)};left:${x}%;top:${y}%;animation-delay:-${i*.8}s">${monoFlag(m)}</span>`}).join('')}</div></section>
   <section class="pg-stats" aria-label="Resumo">
    <div class="pg-stat" style="--tint:#FFF0E2"><span class="ic">🔥</span><div><b data-pgstreak>${ST.streak.n}</b><small>${k('streak')}</small></div></div>
-   <div class="pg-stat" style="--tint:#F0EAFF"><span class="ic">⚡</span><div><b data-pgxp>${ST.xp}</b><small>${k('xp')}</small></div></div>
+   <div class="pg-stat" style="--tint:#EDFCFB"><span class="ic">⚡</span><div><b data-pgxp>${ST.xp}</b><small>${k('xp')}</small></div></div>
    <div class="pg-stat" style="--tint:#E1F7EA"><span class="ic">📚</span><div><b>${doneEp}</b><small>${k('eps')}</small></div></div>
    <div class="pg-stat" style="--tint:${lg.color}33"><span class="ic">🛡️</span><div><b style="color:${lg.color}">${lg.name}</b><small>${k('league')}</small></div></div>
   </section>

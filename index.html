@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Pogglot — Aprenda idiomas pela cultura</title>
 <meta name="description" content="Aprenda inglês, espanhol, francês e outros idiomas com episódios de 10 minutos baseados em poemas, filmes, músicas e tradições de cada país. Com voz, prática e comunidade. Comece grátis.">
-<meta name="theme-color" content="#5B2FE0">
+<meta name="theme-color" content="#0B7C88">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pogglot — Aprenda idiomas pela cultura">
 <meta property="og:description" content="Episódios de 10 minutos com cultura de verdade, voz e prática. Comece grátis.">
@@ -19,14 +19,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="css/tokens.css?v=1">
-<link rel="stylesheet" href="css/landing.css?v=2">
+<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=3"><link rel="stylesheet" href="css/landing-new.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="./" aria-label="Pogglot, início"><img src="icons/icon-192.png" width="36" height="36" alt=""><span>Pogg<b>lot</b></span></a>
+    <a class="logo" href="./" aria-label="Pogglot, início"><span class="logo-pog" aria-hidden="true"></span><span>Pogg<b>lot</b></span></a>
     <nav class="nav" aria-label="Seções">
       <a href="#como">Como funciona</a><a href="#idiomas">Idiomas</a><a href="#trilhas">Trilhas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a>
     </nav>
@@ -40,14 +40,15 @@
 <main id="main">
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero hero2">
+  <div class="hero-sky" aria-hidden="true"></div>
   <div class="wrap">
-    <div>
+    <div class="copy">
       <span class="eyebrow">Episódios de 10 minutos</span>
       <h1>Aprenda idiomas <em>pela cultura</em></h1>
       <p class="lead">Filmes, livros, poemas, músicas e tradições de cada país, em episódios curtos com voz, prática e uma comunidade para conversar.</p>
       <div class="acts">
-        <a class="btn primary lg" href="app.html">Começar grátis</a>
+        <a class="btn primary lg sun" href="app.html">Começar grátis <i aria-hidden="true">→</i></a>
         <a class="btn ghost lg" href="#como">Ver como funciona</a>
       </div>
       <p class="note" id="hero-note">Comece agora, sem cartão e sem cadastro.</p>
@@ -58,11 +59,12 @@
         <div><b>10 min</b><small>por episódio</small></div>
       </div>
     </div>
-    <div class="phones hero-phones" aria-label="Prévia do Pogglot no celular">
-      <span class="phone-note note-top">Aprenda pela cultura <b>✦</b></span>
-      <div class="phone phone-back"><img src="img/landing/home-m.jpg" width="780" height="1688" alt="Tela inicial do Pogglot no celular, com o botão Começar e as missões do dia"></div>
-      <div class="phone phone-front"><img src="img/landing/episode-m.jpg" width="780" height="1688" alt="Episódio do Pogglot: Hello, New York, com o poema The New Colossus"></div>
-      <span class="phone-note note-bottom"><b>10 min</b> por episódio</span>
+    <div class="stage" aria-label="Prévia do Pogglot no celular">
+      <div class="phone2 back" id="phoneBack"></div>
+      <div class="phone2 front" id="phoneFront"></div>
+      <div class="hero-pog" id="heroPog" aria-hidden="true"></div>
+      <span class="chip2 c-top">Aprenda pela cultura <b>✦</b></span>
+      <span class="chip2 c-bot"><b>10 min</b> por episódio</span>
     </div>
   </div>
 </section>
@@ -108,7 +110,7 @@
       <div class="lang" style="--c:#C46A0A"><span class="code">DE</span><h3>Alemão</h3><small>500+ episódios<br>A1</small></div>
       <div class="lang" style="--c:#12957F"><span class="code">IT</span><h3>Italiano</h3><small>500+ episódios</small></div>
       <div class="lang" style="--c:#4E9A12"><span class="code">PT</span><h3>Português</h3><small>2.100+ episódios</small></div>
-      <div class="lang" style="--c:#C13BD6"><span class="code">JA</span><h3>Japonês</h3><small>380+ episódios<br>A1 a C2</small></div>
+      <div class="lang" style="--c:#E0647E"><span class="code">JA</span><h3>Japonês</h3><small>380+ episódios<br>A1 a C2</small></div>
     </div>
     <div class="levels" aria-label="Níveis do A1 ao C2">
       <div class="l0"><b>A1</b><small>Iniciante</small></div>
@@ -237,6 +239,20 @@
     var f=$('faq-price');f.textContent='Os primeiros '+n+' episódios de cada curso são grátis. Para liberar todos os cursos, revisões e a comunidade completa, você assina o plano Premium, mensal ou anual.';
     if(pm||py)f.textContent+=' Valores: '+[pm?pm+'/mês':'',py?py+'/ano':''].filter(Boolean).join(' ou ')+'.';
   }
+})();
+</script>
+<script src="js/obra-art.js"></script><script src="js/home-art.js"></script>
+<script>
+(function(){
+  var q=function(s){return document.querySelector(s)};
+  try{
+    q('.hero-sky').innerHTML=HomeArt.scene();
+    q('#heroPog').innerHTML=HomeArt.mascot({scarf:'#FF7A45'});
+    var lp=q('.logo-pog');if(lp)lp.innerHTML=HomeArt.mascot({scarf:'#FF7A45'});
+    var ep=PogObra.svg(7009801,'obra-cover'),pd=PogObra.svg(9801,'obra-cover');
+    q('#phoneFront').innerHTML='<div class="ph-top"><i></i><b>Capa 1/19</b></div><div class="ph-cover">'+ep+'<span class="ph-work">📖 Alice\'s Adventures in Wonderland · 1865</span></div><div class="ph-body"><small>EP 2 · A1</small><h3>Quem está aí? · Are you…?</h3><p>Em 10 minutos você faz perguntas como a Alice.</p><div class="ph-bubble"><b>Alice</b>Wait! Are you in a hurry?</div></div><div class="ph-cta">Começar o episódio</div>';
+    q('#phoneBack').innerHTML='<div class="ph-top"><i></i><b>Pogglot</b><span>🔥 3</span></div><div class="ph-hero"><div>'+HomeArt.scene()+'</div><strong>Que bom te ver de volta</strong></div><div class="ph-cont"><div class="ph-th">'+pd+'</div><div><small>CONTINUE DE ONDE PAROU</small><b>Quem é você? · I\'m</b><em><i style="width:38%"></i></em></div></div><div class="ph-row"><span>🎧</span><span>🔁</span><span>📚</span><span>💬</span></div>';
+  }catch(e){}
 })();
 </script>
 </body>

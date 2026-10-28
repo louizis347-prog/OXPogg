@@ -4,23 +4,24 @@
 
 :root{
   /* marca */
-  --t-primary:#5B2FE0;
-  --t-primary-hover:#4A22C4;
-  --t-primary-soft:#F0EBFF;
-  --t-accent:#1FAE9B;          /* progresso e acerto, nunca botão */
-  --t-warm:#F08A24;            /* sequência de dias, urgência */
+  --t-primary:#0B7C88;          /* azul-petróleo: marca */
+  --t-primary-hover:#08666F;
+  --t-primary-soft:#E3F4F5;
+  --t-accent:#16B58F;          /* progresso e acerto, nunca botão */
+  --t-warm:#FF7A45;            /* sequência de dias, urgência */
+  --t-sun:#FFB627;             /* destaque: botão de continuar, conquistas */
   --t-ok:#12A87E;
   --t-danger:#E5484D;
-  --t-grad:linear-gradient(120deg,#5B2FE0 0%,#8A3BF0 45%,#C13BD6 100%);  /* herói e botão de assinar */
+  --t-grad:linear-gradient(120deg,#0A6A78 0%,#10A09B 55%,#58D1A6 100%);  /* herói e botão de assinar */
 
   /* neutros */
-  --t-bg:#F7F5FC;
+  --t-bg:#F7F5EE;
   --t-card:#FFFFFF;
-  --t-ink:#1B1740;
-  --t-ink2:#4A4668;
-  --t-mute:#6F6A96;
-  --t-line:#E9E5F5;
-  --t-line2:#DAD3EE;
+  --t-ink:#0E2F3A;
+  --t-ink2:#3B5963;
+  --t-mute:#66808A;
+  --t-line:#E3E8E1;
+  --t-line2:#D3DDD5;
 
   /* tipografia */
   --t-font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -34,22 +35,22 @@
   --t-s1:4px;--t-s2:8px;--t-s3:12px;--t-s4:16px;--t-s5:24px;--t-s6:32px;--t-s7:48px;
 
   /* sombras */
-  --t-sh-card:0 1px 0 rgba(30,27,58,.04),0 12px 30px -16px rgba(60,40,140,.28);
-  --t-sh-lift:0 24px 48px -28px rgba(60,30,160,.45),0 2px 6px rgba(60,30,160,.06);
+  --t-sh-card:0 1px 0 rgba(30,51,55,.04),0 12px 30px -16px rgba(14,70,80,.22);
+  --t-sh-lift:0 24px 48px -28px rgba(8,80,90,.38),0 2px 6px rgba(8,80,90,.06);
 
   /* toque mínimo */
   --t-hit:44px;
 }
 
 html[data-theme="dark"]{
-  --t-primary:#8B6BFF;          /* mais claro para manter contraste no escuro */
-  --t-primary-hover:#A58BFF;
-  --t-primary-soft:rgba(124,77,255,.18);
-  --t-bg:#0B0A1F;
-  --t-card:#15132F;
-  --t-ink:#F1EEFF;
-  --t-ink2:#CFC8F5;
-  --t-mute:#9F99C6;
+  --t-primary:#3CC3C9;          /* mais claro para manter contraste no escuro */
+  --t-primary-hover:#63D5DA;
+  --t-primary-soft:rgba(60,195,201,.16);
+  --t-bg:#071A20;
+  --t-card:#0E2830;
+  --t-ink:#EAF6F5;
+  --t-ink2:#BFD9D8;
+  --t-mute:#8DAFB0;
   --t-line:rgba(255,255,255,.09);
   --t-line2:rgba(255,255,255,.14);
   --t-sh-card:0 24px 44px -28px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,255,255,.05);
@@ -65,7 +66,7 @@ html[data-theme="dark"]{
 
   --p2-bg:var(--t-bg);--p2-card:var(--t-card);--p2-ink:var(--t-ink);--p2-ink2:var(--t-ink2);--p2-mute:var(--t-mute);
   --p2-line:var(--t-line);--p2-line2:var(--t-line2);
-  --p2-v:var(--t-primary);--p2-v2:var(--t-primary-hover);--p2-m:#C13BD6;--p2-soft:var(--t-primary-soft);
+  --p2-v:var(--t-primary);--p2-v2:var(--t-primary-hover);--p2-m:#FF7A45;--p2-soft:var(--t-primary-soft);
   --p2-ok:var(--t-ok);--p2-warn:var(--t-warm);--p2-grad:var(--t-grad);
   --p2-r:var(--t-r-lg);--p2-sh:var(--t-sh-card);--p2-f:var(--t-font);
 

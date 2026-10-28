@@ -10,14 +10,14 @@ const shuf=a=>a.slice().sort(()=>Math.random()-.5);
 const css=document.createElement('style');css.textContent=`
 .kc{--g1:#E67E22;--g2:#F6C26B;padding-bottom:12px}
 .kc-st{display:flex;gap:6px;justify-content:center;margin:6px 0}.kc-st i{width:30px;height:8px;border-radius:6px;background:#f3e6d6}.kc-st i.on{background:linear-gradient(90deg,#E67E22,#F6C26B)}
-.kc-w{text-align:center;margin:12px 0 4px}.kc-w b{display:block;font:900 36px system-ui;color:#25203f;letter-spacing:.01em}.kc-w small{display:block;font:600 15px system-ui;color:#6b6591;margin-top:2px}
+.kc-w{text-align:center;margin:12px 0 4px}.kc-w b{display:block;font:900 36px system-ui;color:#23383C;letter-spacing:.01em}.kc-w small{display:block;font:600 15px system-ui;color:#68848E;margin-top:2px}
 .kc-hint{text-align:center;font:700 13px system-ui;color:#8a6a3a;margin:2px 0 6px}
 .kc-tools{display:flex;gap:8px;justify-content:center;margin:8px 0}
-.kc-opts{display:grid;gap:10px;margin:10px 0}.kc-opts button{border:0;border-radius:18px;background:#fff;box-shadow:0 6px 16px rgba(40,30,90,.12);min-height:58px;padding:10px;font:900 26px system-ui;color:#25203f}
+.kc-opts{display:grid;gap:10px;margin:10px 0}.kc-opts button{border:0;border-radius:18px;background:#fff;box-shadow:0 6px 16px rgba(37,77,83,.12);min-height:58px;padding:10px;font:900 26px system-ui;color:#23383C}
 .kc-opts button.ok{background:#d9f8e5;outline:3px solid #2cc673}.kc-opts button.no{background:#ffe0e0;outline:3px solid #ff6b6b;opacity:.8}
-.kc-fb{min-height:44px;text-align:center;font:800 15px/1.4 system-ui;color:#25203f}.kc-fb.ok{color:#1f9d5c}.kc-fb.no{color:#d9480f}
+.kc-fb{min-height:44px;text-align:center;font:800 15px/1.4 system-ui;color:#23383C}.kc-fb.ok{color:#1f9d5c}.kc-fb.no{color:#d9480f}
 .kc-tip{margin:8px 0;padding:10px 12px;border-radius:14px;background:#FFF6EA;font:600 13.5px/1.4 system-ui;color:#6b4a1d;text-align:center}
-html[data-theme="dark"] .kc-opts button{background:#1B1740;color:#EDEAFF}html[data-theme="dark"] .kc-w b{color:#EDEAFF}
+html[data-theme="dark"] .kc-opts button{background:#1C373B;color:#EDFCFB}html[data-theme="dark"] .kc-w b{color:#EDFCFB}
 `;document.head.appendChild(css);
 FXR.nbacc=function(f,st,n){
   const items=f.items||[];let i=0,hits=0;P.fx.done=false;P.fx.cta=()=>!P.fx.done;

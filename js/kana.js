@@ -14,27 +14,27 @@ const shuf=a=>{try{return fxShuffle(a.slice())}catch(e){return a.slice().sort(()
 const css=document.createElement('style');css.textContent=`
 .kx{--g1:#E84393;--g2:#FD79A8;padding-bottom:12px}
 .kx-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0}
-.kx-c{border:0;border-radius:18px;background:#fff;box-shadow:0 6px 16px rgba(40,30,90,.12);padding:10px 2px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
-.kx-c b{font:900 30px/1.1 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#25203f}.kx-c small{font:800 11px system-ui;opacity:.6;color:#25203f}
+.kx-c{border:0;border-radius:18px;background:#fff;box-shadow:0 6px 16px rgba(37,77,83,.12);padding:10px 2px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
+.kx-c b{font:900 30px/1.1 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#23383C}.kx-c small{font:800 11px system-ui;opacity:.6;color:#23383C}
 .kx-c.seen{background:linear-gradient(135deg,var(--g1),var(--g2))}.kx-c.seen b,.kx-c.seen small{color:#fff;opacity:1}
-.kx-big{background:#fff;border-radius:26px;box-shadow:0 10px 30px rgba(40,30,90,.14);padding:16px;margin:10px 0;text-align:center}
+.kx-big{background:#fff;border-radius:26px;box-shadow:0 10px 30px rgba(37,77,83,.14);padding:16px;margin:10px 0;text-align:center}
 .kx-big .ch{font:900 110px/1.05 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:var(--g1)}
-.kx-big .ro{font:900 26px system-ui;color:#25203f}.kx-big .mn{margin:8px 0;font:600 14.5px/1.4 system-ui;color:#4a4468}
-.kx-big .ex{display:inline-flex;align-items:center;gap:8px;background:#f4f1ff;border-radius:16px;padding:8px 12px;font:800 15px system-ui;color:#25203f;cursor:pointer}
+.kx-big .ro{font:900 26px system-ui;color:#23383C}.kx-big .mn{margin:8px 0;font:600 14.5px/1.4 system-ui;color:#486064}
+.kx-big .ex{display:inline-flex;align-items:center;gap:8px;background:#F3FDFD;border-radius:16px;padding:8px 12px;font:800 15px system-ui;color:#23383C;cursor:pointer}
 .kx-big .ex em{font-style:normal;font:600 12px system-ui;opacity:.7}
-.kx-cv{position:relative;width:260px;height:260px;margin:10px auto;border-radius:22px;background:#fff;box-shadow:0 8px 22px rgba(40,30,90,.14);touch-action:none}
-.kx-cv .gh{position:absolute;inset:0;display:grid;place-items:center;font:900 190px/1 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#e7e3f3;user-select:none;pointer-events:none}
-.kx-cv .gd{position:absolute;inset:0;pointer-events:none;background:linear-gradient(#0000 49.4%,#e1dcf0 49.4% 50.6%,#0000 50.6%),linear-gradient(90deg,#0000 49.4%,#e1dcf0 49.4% 50.6%,#0000 50.6%);border-radius:22px}
+.kx-cv{position:relative;width:260px;height:260px;margin:10px auto;border-radius:22px;background:#fff;box-shadow:0 8px 22px rgba(37,77,83,.14);touch-action:none}
+.kx-cv .gh{position:absolute;inset:0;display:grid;place-items:center;font:900 190px/1 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#E4F2F2;user-select:none;pointer-events:none}
+.kx-cv .gd{position:absolute;inset:0;pointer-events:none;background:linear-gradient(#0000 49.4%,#DDEFEE 49.4% 50.6%,#0000 50.6%),linear-gradient(90deg,#0000 49.4%,#DDEFEE 49.4% 50.6%,#0000 50.6%);border-radius:22px}
 .kx-cv canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:22px;touch-action:none}
-.kx-q{font:900 64px/1.1 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;text-align:center;margin:18px 0;color:#25203f}
+.kx-q{font:900 64px/1.1 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;text-align:center;margin:18px 0;color:#23383C}
 .kx-opts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:10px 0}
-.kx-opt{border:0;border-radius:20px;background:#fff;box-shadow:0 6px 16px rgba(40,30,90,.12);padding:16px 8px;font:900 40px "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#25203f;cursor:pointer}
+.kx-opt{border:0;border-radius:20px;background:#fff;box-shadow:0 6px 16px rgba(37,77,83,.12);padding:16px 8px;font:900 40px "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#23383C;cursor:pointer}
 .kx-opt.sm{font:800 16px system-ui}.kx-opt.ok{background:#d9f8e5;outline:3px solid #2cc673}.kx-opt.no{background:#ffe0e0;outline:3px solid #ff6b6b;animation:kxs .3s}
 @keyframes kxs{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .kx-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}.kx-col{display:flex;flex-direction:column;gap:8px}
-.kx-pb{border:0;border-radius:16px;background:#fff;box-shadow:0 5px 14px rgba(40,30,90,.12);padding:12px;font:900 28px "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#25203f;cursor:pointer}
+.kx-pb{border:0;border-radius:16px;background:#fff;box-shadow:0 5px 14px rgba(37,77,83,.12);padding:12px;font:900 28px "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:#23383C;cursor:pointer}
 .kx-pb.r{font:900 20px system-ui}.kx-pb.sel{outline:3px solid var(--g1)}.kx-pb.fd{opacity:.35;pointer-events:none;background:#d9f8e5}
-.kx-w{font:900 46px/1.15 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;text-align:center;margin:14px 0;color:#25203f}
+.kx-w{font:900 46px/1.15 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;text-align:center;margin:14px 0;color:#23383C}
 `;document.head.appendChild(css);
 
 /* 1 · apresentação dos caracteres */
@@ -65,7 +65,7 @@ FXR.ktrace=function(f,st,n){
     cv.onpointermove=e=>{if(!on)return;const p=pos(e);ctx.beginPath();ctx.moveTo(last[0],last[1]);ctx.lineTo(p[0],p[1]);ctx.stroke();last=p;drew++;if(drew===8){cta(ri<C.length-1?'Próximo ▶':'Concluir',true,true);P.fx.cta=()=>{ri++;if(ri<C.length){draw();return true}P.fx.cta=()=>!P.fx.done;win();return false}}};
     cv.onpointerup=cv.onpointercancel=()=>{on=false};
     q('#kxs',st).onclick=()=>say2(x.s||x.c);q('#kxcl',st).onclick=()=>{ctx.clearRect(0,0,cv.width,cv.height)};
-    q('#kxg',st).onclick=()=>{const g=q('.gh',st);g.style.color=g.style.color==='rgb(176, 168, 205)'?'':'#b0a8cd'};
+    q('#kxg',st).onclick=()=>{const g=q('.gh',st);g.style.color=g.style.color==='rgb(172,201,200)'?'':'#ACC9C8'};
     say2(x.s||x.c);cta('Trace o caractere',false);P.fx.cta=()=>!P.fx.done};
   draw();say('Trace cada caractere do jeito que quiser; o importante é treinar o desenho.')};
 

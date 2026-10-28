@@ -5,7 +5,7 @@ var KEY='pogglot:theme',root=document.documentElement;
 function get(){try{return localStorage.getItem(KEY)||'auto'}catch(e){return 'auto'}}
 function eff(m){return m==='auto'?(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):m}
 function apply(m){var t=eff(m||get());root.setAttribute('data-theme',t);
-  var mt=document.querySelector('meta[name=theme-color]');if(mt)mt.setAttribute('content',t==='dark'?'#0B0A1F':'#F6F4FD');
+  var mt=document.querySelector('meta[name=theme-color]');if(mt)mt.setAttribute('content',t==='dark'?'#0C1B1D':'#F4FDFC');
   document.querySelectorAll('[data-act="theme"]').forEach(function(b){b.textContent=t==='dark'?'🌙':'☀️';b.setAttribute('aria-label',t==='dark'?'Tema escuro':'Tema claro')})}
 function set(m){try{localStorage.setItem(KEY,m)}catch(e){}apply(m)}
 function toggle(){set(eff(get())==='dark'?'light':'dark')}

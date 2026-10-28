@@ -303,7 +303,7 @@ FXR.ctxv=function(f,st,n){
 FXR.ppat=function(f,st,n){
   const R=f.rounds;let ri=0,tries=0;
   R.forEach(r=>{r.opts=r.opts.map(o=>Array.isArray(o)?o:['',o])});
-  const PAL=['#7C4DFF','#12B3A8','#FF6F59','#E0499D','#2F8FE0'];
+  const PAL=['#6DDFDB','#12B3A8','#FF6F59','#E0499D','#2F8FE0'];
   const draw=()=>{
     const r=R[ri];tries=0;
     const toks=r.q.split(/\s+/);
@@ -606,7 +606,7 @@ if(window.PogTTS&&PogTTS.episodeTexts){
   };
 }
 
-const PALV=['#7C4DFF','#12B3A8','#FF6F59','#E0499D','#2F8FE0'];
+const PALV=['#6DDFDB','#12B3A8','#FF6F59','#E0499D','#2F8FE0'];
 function slotHTML(){return `<span class="rw-slot" id="rwslot" aria-label="peça que falta"><i>?</i></span>`}
 function sitHTML(ic,pt,label){
   return `<div class="rw-sit2"><span class="rw-sit2-ic" aria-hidden="true">${fxIcon(ic||'💬',54)}</span><div><small>${label}</small><p>${esc(pt)}</p></div></div>`;

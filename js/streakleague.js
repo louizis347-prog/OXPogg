@@ -26,7 +26,7 @@ es:{
  sub:function(r,n){return r+'.º de '+n},prom:function(t){return '⬆️ ¡Subiste a '+t+'!'},dem:function(t){return '⬇️ Bajaste a '+t},stay:function(t){return 'Te quedaste en '+t},
  last:'Semana pasada',zero:'Gana XP para salir de cero',sim:'simulado',more:'Ver tabla',less:'Ocultar',tip:'Los 5 primeros suben, los 3 últimos bajan. Se reinicia el lunes.'}};
 var T=function(){return TX[HL()]};
-var COLORS=['#C98A4B','#8E9BB0','#E9A800','#2F8FE0','#E5484D','#9B5DE5','#12B5BC'];
+var COLORS=['#C98A4B','#8E9BB0','#E9A800','#2F8FE0','#E5484D','#6CD6D3','#12B5BC'];
 var E=function(x){return String(x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 
 /* ---------- dia local ---------- */

@@ -1,0 +1,48 @@
+/* Paisagem, Poggie e abertura animada (home e landing). Animações curtas e suaves; desligam com prefers-reduced-motion. */
+.ha-scene{display:block;width:100%;height:100%}
+.ha-cloud{animation:hacloud 90s linear infinite;animation-delay:var(--d,0s)}
+.ha-cloud.c1{--y:130px;--d:-10s}.ha-cloud.c2{--y:190px;--d:-45s;animation-duration:120s}.ha-cloud.c3{--y:96px;--d:-70s;animation-duration:100s}
+@keyframes hacloud{from{transform:translate(-220px,var(--y))}to{transform:translate(1420px,var(--y))}}
+.ha-rays{animation:harot 80s linear infinite}
+@keyframes harot{to{transform:rotate(360deg)}}
+.ha-bird{animation:habird 28s linear infinite}
+.ha-bird.b1{--y:190px;animation-delay:-4s}.ha-bird.b2{--y:240px;animation-delay:-16s;animation-duration:36s}
+@keyframes habird{from{transform:translate(-80px,var(--y))}50%{transform:translate(600px,calc(var(--y) - 24px))}to{transform:translate(1300px,var(--y))}}
+.ha-fl-in{animation:hafloat 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.ha-float.f2 .ha-fl-in{animation-delay:-1.4s}.ha-float.f3 .ha-fl-in{animation-delay:-2.6s}.ha-float.f4 .ha-fl-in{animation-delay:-3.6s}
+@keyframes hafloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-12px) rotate(3deg)}}
+.ha-flower{transform-box:fill-box;transform-origin:50% 100%;animation:hasway 4s ease-in-out infinite}
+@keyframes hasway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+
+.ha-m{display:block;width:100%;height:auto;overflow:visible}
+.ha-m *{transform-box:view-box}
+.ha-whole{animation:habob 3.2s ease-in-out infinite;transform-origin:100px 186px}
+@keyframes habob{0%,100%{transform:translateY(0) scale(1,1)}50%{transform:translateY(-4px) scale(1.01,.99)}}
+.ha-arm{transform-origin:140px 126px;animation:hawave 2.6s ease-in-out infinite}
+@keyframes hawave{0%,100%{transform:rotate(0)}50%{transform:rotate(-14deg)}}
+.ha-tail{transform-origin:62px 140px;animation:hatail 2.4s ease-in-out infinite}
+@keyframes hatail{0%,100%{transform:rotate(0)}50%{transform:rotate(7deg)}}
+.ha-scarf{transform-origin:122px 118px;animation:hascarf 2.2s ease-in-out infinite}
+@keyframes hascarf{0%,100%{transform:rotate(0)}50%{transform:rotate(9deg)}}
+.ha-blink{transform-origin:100px 86px;animation:hablink 4.6s infinite}
+@keyframes hablink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.08)}}
+
+/* abertura */
+#hnSplash{position:fixed;inset:0;z-index:3000;display:grid;place-items:center;overflow:hidden;background:#BFE8E4;transition:opacity .5s ease,transform .5s ease;cursor:pointer}
+#hnSplash.out{opacity:0;transform:scale(1.04);pointer-events:none}
+#hnSplash .sp-bg{position:absolute;inset:0}
+#hnSplash .sp-in{position:relative;display:grid;justify-items:center;gap:6px;text-align:center;padding:0 24px}
+#hnSplash .sp-pog{width:min(46vw,190px);animation:hapop .8s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes hapop{0%{transform:translateX(-60vw) rotate(-14deg) scale(.7);opacity:0}60%{transform:translateX(6px) rotate(3deg) scale(1.04);opacity:1}100%{transform:none;opacity:1}}
+#hnSplash .sp-word{display:flex;gap:1px;font:800 clamp(40px,12vw,64px)/1 var(--t-font,system-ui);letter-spacing:-.02em;color:#0E2F3A}
+#hnSplash .sp-word span{display:inline-block;opacity:0;animation:hasp .5s ease forwards}
+#hnSplash .sp-word .l{color:#FF7A45}
+#hnSplash .sp-word span:nth-child(1){animation-delay:.55s}#hnSplash .sp-word span:nth-child(2){animation-delay:.62s}#hnSplash .sp-word span:nth-child(3){animation-delay:.69s}#hnSplash .sp-word span:nth-child(4){animation-delay:.76s}#hnSplash .sp-word span:nth-child(5){animation-delay:.83s}#hnSplash .sp-word span:nth-child(6){animation-delay:.9s}#hnSplash .sp-word span:nth-child(7){animation-delay:.97s}
+@keyframes hasp{from{opacity:0;transform:translateY(14px) scale(.9)}to{opacity:1;transform:none}}
+#hnSplash p{margin:0;font:700 clamp(14px,3.8vw,18px) var(--t-font,system-ui);color:#245866;opacity:0;animation:hasp .5s 1.2s ease forwards}
+
+@media(prefers-reduced-motion:reduce){
+ .ha-cloud,.ha-rays,.ha-bird,.ha-fl-in,.ha-flower,.ha-whole,.ha-arm,.ha-tail,.ha-scarf,.ha-blink{animation:none!important}
+ .ha-cloud.c1{transform:translate(120px,60px)}.ha-cloud.c2{transform:translate(620px,120px)}.ha-cloud.c3{transform:translate(1000px,34px)}
+ #hnSplash{display:none}
+}

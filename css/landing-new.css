@@ -1,0 +1,44 @@
+/* Landing: herói com paisagem, Poggie e celulares com a nova capa de episódio. Paleta petróleo, sol e coral. */
+.logo-pog{display:inline-block;width:40px;height:40px}.logo-pog .ha-m{width:100%;height:100%}
+.hero2{background:linear-gradient(180deg,#E6F6F3 0%,#FFF6E2 62%,#FFF0CD 100%);padding-bottom:0}
+.hero2::before,.hero2::after{display:none}
+.hero2 .hero-sky{position:absolute;left:0;right:0;bottom:0;height:50%;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 38%);mask-image:linear-gradient(180deg,transparent 0,#000 38%)}
+.hero2 .hero-sky .ha-scene{width:100%;height:100%}
+.hero2 .wrap{position:relative;z-index:1;padding-bottom:110px}
+.hero2 h1{letter-spacing:-.05em}
+.hero2 h1 em{background:none;-webkit-background-clip:initial;background-clip:initial;color:#0B7C88;position:relative;display:inline-block}
+.hero2 h1 em::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.08em;height:.26em;background:#FFB627;opacity:.7;z-index:-1;border-radius:6px}
+.btn.sun{background:#FFB627;color:#2B1B00;box-shadow:0 6px 0 #D9901A,0 20px 26px -14px rgba(217,144,26,.8)}
+.btn.sun:hover{background:#FFC24A}.btn.sun i{font-style:normal;transition:transform .15s}.btn.sun:hover i{transform:translateX(3px)}
+.hero2 .stats div{background:rgba(255,255,255,.82)}
+.hero2 .stage{position:relative;min-height:470px;display:flex;justify-content:center;align-items:flex-start;padding-top:30px}
+.phone2{position:relative;width:min(46vw,232px);aspect-ratio:9/19;border-radius:34px;border:6px solid #12303A;background:#fff;overflow:hidden;box-shadow:0 34px 50px -26px rgba(8,50,58,.8);font-family:var(--t-font)}
+.phone2.back{transform:rotate(-6deg);margin-right:-26px;margin-top:40px;background:#F7F5EE}
+.phone2.front{transform:rotate(2deg);z-index:2}
+.phone2 .ph-top{display:flex;align-items:center;gap:6px;padding:8px 10px 6px;font:800 10px var(--t-font);color:#0E2F3A}
+.phone2 .ph-top i{width:34px;height:5px;border-radius:9px;background:#D3DDD5}
+.phone2 .ph-top span{margin-left:auto}.phone2 .ph-top b{margin-left:auto}
+.phone2.back .ph-top b{margin:0 auto 0 0}
+.ph-cover{position:relative;margin:2px 8px 0;border-radius:14px;overflow:hidden;aspect-ratio:16/10}
+.ph-cover svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.ph-work{position:absolute;left:6px;top:6px;padding:2px 7px;border-radius:99px;background:rgba(255,255,255,.92);font:800 7px var(--t-font);color:#0E2F3A}
+.ph-body{padding:10px 12px 0;text-align:center}
+.ph-body small{display:inline-block;padding:2px 8px;border-radius:99px;background:#E3F4F5;color:#0B7C88;font:800 8px var(--t-font)}
+.ph-body h3{margin:6px 0 4px;font:800 14px/1.15 var(--t-font);color:#0E2F3A;letter-spacing:-.01em}
+.ph-body p{margin:0;font:600 9px/1.35 var(--t-font);color:#66808A}
+.ph-bubble{margin-top:10px;padding:8px;border-radius:12px;background:#fff;box-shadow:0 0 0 1px #E3E8E1;text-align:left;font:700 10px/1.25 var(--t-font);color:#0E2F3A}
+.ph-bubble b{display:block;margin-bottom:2px;font-size:7px;color:#0B7C88}
+.ph-cta{position:absolute;left:10px;right:10px;bottom:12px;padding:9px;border-radius:12px;background:#0B7C88;color:#fff;text-align:center;font:800 10px var(--t-font);box-shadow:0 3px 0 #08565F}
+.ph-hero{position:relative;margin:0 8px;border-radius:14px;overflow:hidden;aspect-ratio:16/10;background:#BFE8E4}
+.ph-hero>div{position:absolute;inset:0}.ph-hero svg{width:100%;height:100%;display:block}
+.ph-hero strong{position:absolute;left:8px;top:8px;right:40%;font:800 12px/1.05 var(--t-font);color:#0E2F3A}
+.ph-cont{display:flex;gap:7px;align-items:center;margin:8px;padding:6px;border-radius:12px;background:#fff;box-shadow:0 0 0 1px #E3E8E1}
+.ph-th{flex:0 0 44%;aspect-ratio:16/11;border-radius:8px;overflow:hidden;position:relative}.ph-th svg{position:absolute;inset:0;width:100%;height:100%}
+.ph-cont small{display:block;font:800 5.5px var(--t-font);color:#0B7C88;letter-spacing:.06em}.ph-cont b{display:block;font:800 9px/1.15 var(--t-font);color:#0E2F3A;margin:2px 0 5px}
+.ph-cont em{display:block;height:4px;border-radius:9px;background:#E6EEE9;overflow:hidden}.ph-cont em i{display:block;height:100%;background:#16B58F}
+.ph-row{display:flex;gap:6px;padding:0 8px}.ph-row span{flex:1;padding:7px 0;border-radius:11px;background:#fff;text-align:center;font-size:13px;box-shadow:0 0 0 1px #E3E8E1}
+.hero2 .hero-pog{position:absolute;left:2%;bottom:-26px;width:clamp(96px,22vw,150px);z-index:3;filter:drop-shadow(0 8px 6px rgba(14,47,58,.25))}
+.chip2{position:absolute;padding:8px 14px;border-radius:99px;background:#fff;font:800 12px var(--t-font);color:#0E2F3A;box-shadow:0 12px 20px -12px rgba(14,47,58,.5);z-index:4}
+.chip2 b{color:#FF7A45}.chip2.c-top{top:8px;right:2%}.chip2.c-bot{right:4%;bottom:36px}
+@media(min-width:900px){.hero2 .wrap{grid-template-columns:1.05fr .95fr}.hero2 .stage{min-height:540px}.phone2{width:250px}}
+@media(prefers-reduced-motion:no-preference){.phone2.front{animation:phfloat 6s ease-in-out infinite}.phone2.back{animation:phfloat 7s -2s ease-in-out infinite}@keyframes phfloat{0%,100%{translate:0 0}50%{translate:0 -8px}}}

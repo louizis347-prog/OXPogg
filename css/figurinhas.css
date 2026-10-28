@@ -51,18 +51,18 @@
 
 /* atalho na página do curso */
 .fa-btn{display:flex;align-items:center;gap:12px;width:100%;margin:12px 0;padding:14px 16px;border:0;border-radius:20px;text-align:left;cursor:pointer;color:#fff;font:inherit;
- background:linear-gradient(120deg,#6B3FA0,#E85D75 60%,#F29B34);box-shadow:0 14px 22px -14px rgba(120,40,100,.8)}
+ background:linear-gradient(120deg,#0B7C88,#16B58F 58%,#FFB627);box-shadow:0 14px 22px -14px rgba(120,40,100,.8)}
 .fa-btn-ico{font-size:32px}.fa-btn b{display:block;font:900 17px var(--f-display,system-ui)}.fa-btn small{opacity:.9;font-weight:700}.fa-btn i{margin-left:auto;font-style:normal;font-size:26px;opacity:.8}
 
 /* álbum */
-.fa{position:fixed;inset:0;z-index:2000;background:radial-gradient(120% 60% at 50% 0,#4a2a86 0,#1d1740 55%,#12102a 100%);color:#fff;overflow:auto;-webkit-overflow-scrolling:touch}
-.fa-bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(18,16,42,.85);backdrop-filter:blur(8px);font:900 17px var(--f-display,system-ui)}
+.fa{position:fixed;inset:0;z-index:2000;background:radial-gradient(120% 60% at 50% 0,#14636E 0,#0D3440 55%,#081F28 100%);color:#fff;overflow:auto;-webkit-overflow-scrolling:touch}
+.fa-bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(8,31,40,.88);backdrop-filter:blur(8px);font:900 17px var(--f-display,system-ui)}
 .fa-back{border:0;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.12);color:#fff;font-size:20px;cursor:pointer}
 .fa-body{max-width:860px;margin:0 auto;padding:6px 16px 40px}
 .fa-hero{display:flex;gap:16px;align-items:center;margin:8px 0 16px}
 .fa-ring{--p:0;flex:none;width:104px;height:104px;border-radius:50%;display:grid;place-items:center;text-align:center;line-height:1.1;
  background:conic-gradient(#F2C94C calc(var(--p)*1%),rgba(255,255,255,.14) 0);position:relative}
-.fa-ring::before{content:"";position:absolute;inset:9px;border-radius:50%;background:#1d1740}
+.fa-ring::before{content:"";position:absolute;inset:9px;border-radius:50%;background:#0D3440}
 .fa-ring b,.fa-ring small{position:relative}.fa-ring b{font:900 30px var(--f-display,system-ui);display:block}.fa-ring small{display:block;font-weight:700;opacity:.75;font-size:12px}
 .fa-hero-t h2{margin:0 0 4px;font:900 26px var(--f-display,system-ui)}.fa-hero-t p{margin:0 0 8px;opacity:.82;font-size:14px;line-height:1.4}
 .fa-chips{display:flex;flex-wrap:wrap;gap:6px}.fa-chips span{padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.12);font-weight:800;font-size:12px}
@@ -80,8 +80,8 @@
 @keyframes facell{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
 .fa-more{display:block;margin:18px auto 0;border:0;border-radius:99px;padding:11px 20px;background:rgba(255,255,255,.14);color:#fff;font:800 14px var(--f-display,system-ui);cursor:pointer}
 .fa-empty{text-align:center;opacity:.7;padding:30px 0}
-.fa-detail{position:fixed;inset:0;z-index:2100;background:rgba(10,8,28,.78);backdrop-filter:blur(6px);display:grid;place-items:center;padding:16px;overflow:auto}
-.fa-dbox{position:relative;width:min(380px,100%);max-height:100%;overflow:auto;background:#1d1740;border-radius:24px;padding:22px 18px 18px;text-align:center;color:#fff;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.fa-detail{position:fixed;inset:0;z-index:2100;background:rgba(4,20,26,.8);backdrop-filter:blur(6px);display:grid;place-items:center;padding:16px;overflow:auto}
+.fa-dbox{position:relative;width:min(380px,100%);max-height:100%;overflow:auto;background:#0D3440;border-radius:24px;padding:22px 18px 18px;text-align:center;color:#fff;box-shadow:0 24px 60px rgba(0,0,0,.5)}
 .fa-dbox h3{margin:14px 0 2px;font:900 20px var(--f-display,system-ui)}.fa-meta{margin:0 0 8px;opacity:.75;font-weight:700;font-size:13px}.fa-dbox p{font-size:14px;line-height:1.45;opacity:.92}
 .fa-x{position:absolute;right:10px;top:10px;border:0;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:16px;cursor:pointer;z-index:6}
 .fa-play{border:0;border-radius:99px;padding:11px 18px;background:linear-gradient(90deg,#F29B34,#E85D75);color:#fff;font:800 14px var(--f-display,system-ui);cursor:pointer;margin-top:6px}

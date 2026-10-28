@@ -94,7 +94,7 @@ FXR.cover=function(f,st,n){
   step.querySelectorAll('.fx-hook,.fx-chips,.fx-cul').forEach(x=>x.remove());
   const art=c.pa?fxArt({pa:c.pa},.62):(c.scene?fxArt(c.scene,.62):'');
   const d=document.createElement('section');d.className='m2-work';
-  d.style.setProperty('--c1',(c.c||['#ffb347','#7b4397'])[0]);d.style.setProperty('--c2',(c.c||['#ffb347','#7b4397'])[1]);
+  d.style.setProperty('--c1',(c.c||['#ffb347','#4C858E'])[0]);d.style.setProperty('--c2',(c.c||['#ffb347','#4C858E'])[1]);
   d.innerHTML=`<div class="m2w-art">${art}<span class="m2w-type">${esc(c.kind)} · ${esc(c.year)}</span></div>
    <div class="m2w-body"><small class="m2w-k">🎭 OBRA EM CENA</small><h2>${esc(c.work)}</h2><p class="m2w-by">${esc(c.by)}</p>
    <p class="m2w-intro">${mk(c.intro)}</p>
@@ -152,7 +152,7 @@ FXR.wsent=function(f,st,n){
 };
 
 /* ---------- 4) Estrutura da frase: molde em 3 páginas com troca de peças ---------- */
-const PATC=['#7C4DFF','#12B3A8','#FF6F59','#E0499D','#FFB020'];
+const PATC=['#6DDFDB','#12B3A8','#FF6F59','#E0499D','#FFB020'];
 const cap1=s=>s?s.charAt(0).toUpperCase()+s.slice(1):s;
 function patBuild(p,sel){
   let en='',pt='';
@@ -704,7 +704,7 @@ if(window.PogTTS&&PogTTS.episodeTexts){
 FX_KIND.sbuild='practice';FX_LABEL.sbuild='Trem da frase';
 FXR.sbuild=function(f,st,n){
   const R=f.rounds,N=R.length;let ri=0,score=0;
-  const COL=['#E0499D','#7C4DFF','#12B3A8','#FF8A3D','#2F80ED'];
+  const COL=['#E0499D','#6DDFDB','#12B3A8','#FF8A3D','#2F80ED'];
   const draw=()=>{
     const r=R[ri],bl=r.b;let pos=0,mist=0;P.answered=false;
     const sh=fxShuffle(bl.map((b,i)=>({t:b[0],i})).concat((r.x||[]).map((x,k)=>({t:x,i:-1-k}))));
