@@ -206,3 +206,6 @@ B1 (370 no modelo piloto): 370 obras distintas em 370 episódios (checagem com n
 
 ## Inglês B1 — 160 episódios restantes convertidos (371–530, publicado)
 B1 completo: 530 episódios no modelo piloto, 530 obras distintas (contrato `tools/audit/regular_pilot_contract.py`: 0 falhas; `check.py`: 0 problemas; `check_unique_b1.py`: 0 repetidos de 530). Autoria por quatro agentes por categoria (literatura 371–410, cinema 411–450, séries/teatro/quadrinhos 451–490, jogos/músicas/pinturas/podcasts/mitos 491–530) com helpers `b1lit.py`, `b1cin.py`, `b1x_lib.py`, `n4h.py`. Pendente: arte/elenco genéricos (K4 92%), K12 (135), fatos das obras (memória), 3 repetições de objetos quentes, teste no navegador; obras também aparecem em outros níveis (regra só dentro do curso).
+
+## Trava de qualidade + plano por episódio (inglês C1 e C2 mapeados)
+Ver `docs/PLANO_E_TRAVA.md`. en-c1 e en-c2: 1.020 episódios mapeados (foco, gs, obra, 4 verbos, 4 expressões), validação conjunta 0 erros (obra única entre C1+C2 e fora das 1.360 já em uso no inglês; expressões e gs únicos). Pendente: revisar naturalidade das expressões, fatos/anos das obras (memória), ligação frouxa obra×foco (`plano/REVISAR_C1_C2.md`). Próximo: espanhol (es-a1…es-c2).
