@@ -212,3 +212,6 @@ Ver `docs/PLANO_E_TRAVA.md`. en-c1 e en-c2: 1.020 episódios mapeados (foco, gs,
 
 ## Plano por episódio — espanhol A1 mapeado
 es-a1: 495 episódios mapeados (foco, gs, obra do mundo hispânico, 4 verbos e 4 expressões em espanhol), validação conjunta 0 erros (obra, expressão e padrão únicos; vizinhos sem 2+ verbos iguais). 108 obras sem ano (memória). Detalhes em `plano/REVISAR_ES_A1.md`. Próximo: es-a2, es-b1, es-b2, es-c1, es-c2 (2.500 episódios).
+
+## Inglês B2 — episódios 416–510 (95) no modelo piloto
+B2: 510/510 no contrato (`regular_pilot_contract.py --course en-b2`: 0 falhas). Autoria por três agentes com letras de obra distintas, briefs com foco único em `tools/b2gen/briefs_416_447|448_479|480_510.json`, validação conjunta `try.py` 0 problemas. Pendente: refazer 940001 e 7083006 (obra do campo `a.w` diferente da capa/figurinha; módulo `b2_fix_05`), teaser do 447 ("Next Lesson") para o título real do 448, fatos das obras (memória), ligação frouxa obra×foco em alguns, resíduo de expressão trocada em falas isoladas (418, 421, 444). `mark_pilot2.py` agora aceita en-b2 (mas reescreve g/gs de episódios já prontos: usar só com cuidado).
