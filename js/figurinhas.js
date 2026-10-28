@@ -61,6 +61,7 @@ function record(info,tier,acc){
 /* ---------- carta ---------- */
 let UID=0;
 function art(info){
+  if(window.PogObra&&PogObra.has(info))return `<div class="ps-stage sticker obra"><div class="ps-stage-bk">${PogObra.svg(info,'sticker')}</div></div>`;
   if(window.PogStage&&PogStage.stage){try{return PogStage.stage({rs:info.rs,chars:info.chars,h:'sticker'})}catch(e){}}
   return `<div class="fg-noart">${(CAT[info.cat]||CAT.history).ico}</div>`;
 }
