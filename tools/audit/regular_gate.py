@@ -7,7 +7,11 @@ Regras:
  2. Obra única entre os episódios marcados do mesmo curso (nome normalizado).
  3. Cursos listados em tools/audit/gate_enforced.json precisam ter 100% dos episódios marcados.
  4. Episódio que já tem mapeamento em tools/plan/map/ e está marcado precisa usar a obra, os 4 verbos e as 4 expressões mapeados.
- 5. Falhas que já existiam (tools/audit/gate_baseline.json) são toleradas; falha nova bloqueia.
+ 5. A PONTE obra↔episódio (tools/audit/bridge_rules.py, docs/PADRAO_PONTE_OBRA.md) é regra de todo episódio marcado: obra nas cenas, missão
+    “Cena da obra” ligada à obra, gancho e figurinha da obra, descrição da obra, elenco não genérico, cenário sem 3 repetições seguidas.
+ 6. EXPRESSÕES ÚNICAS em todo curso regular: a expressão ensinada no quadro de expressões (pgexp) de um episódio não pode ser ensinada em outro
+    episódio do mesmo curso (comparação sem pontuação/caixa). A única repetição oficial é a mochila de revisão (quadro `review`), que retoma o episódio anterior.
+ 7. Falhas que já existiam (tools/audit/gate_baseline.json) são toleradas; falha nova bloqueia. `--shrink` tira do baseline o que já foi corrigido.
 Uso: python3 tools/audit/regular_gate.py [--update-baseline] [--course en-b1 ...]"""
 import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -15,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(ROOT, 'tools', 'plan'))
 import regular_pilot_contract as C
 import plan_lib as P
+from expr_rules import expr_repetidas
 
 os.chdir(ROOT)
 manifest = json.load(open('data/manifest.json', encoding='utf-8'))
@@ -25,9 +30,10 @@ while '--course' in a:
     i = a.index('--course'); sel.append(a[i + 1]); del a[i:i + 2]
 courses = sel or regular
 enforced = json.load(open(os.path.join(HERE, 'gate_enforced.json')))['cursos']
+plano_ativo = json.load(open(os.path.join(HERE, 'gate_plan_ativo.json')))['cursos']
 bpath = os.path.join(HERE, 'gate_baseline.json')
 baseline = set(json.load(open(bpath))['falhas']) if os.path.exists(bpath) else set()
-nx = lambda s: re.sub(r'[^a-z0-9]+', ' ', (s or '').lower()).strip()
+nx = P.fold
 
 found = set()      # (chave, texto)
 for c in courses:
@@ -39,6 +45,8 @@ for c in courses:
             found.add('%s|%s|%s' % (c, m.group(1), f.split(': ', 1)[1]))
     # obra única entre marcados
     seen = {}
+    seen_expr = {}
+    seen_verbs = {}
     for _, e in eps:
         if e.get('presentation') == 'regular-pilot-v1':
             o = P.obra_of(e)
@@ -46,12 +54,22 @@ for c in courses:
             if k and k in seen:
                 found.add('%s|%s|obra repetida com %s: %s' % (c, e['n'], seen[k], o))
             seen.setdefault(k, e['n'])
+            if c in ('en-c1', 'en-c2'):
+                verb_frame = next((q for q in e.get('fr', []) if q.get('k') == 'verbs'), {})
+                verb_key = tuple(sorted(C._norm_phrase(item.get('v')) for item in verb_frame.get('items', []) if isinstance(item, dict)))
+                if len(verb_key) == 4:
+                    if verb_key in seen_verbs:
+                        found.add('%s|%s|conjunto de verbos repetido com %s: %s' % (c, e['n'], seen_verbs[verb_key], ', '.join(verb_key)))
+                    else:
+                        seen_verbs[verb_key] = e['n']
+    for n_, ant, phrase in expr_repetidas([e for _, e in eps if e.get('presentation') == 'regular-pilot-v1']):
+        found.add('%s|%s|expressão repetida com %s: %s' % (c, n_, ant, phrase))
     if c in enforced:
         for _, e in eps:
             if e.get('presentation') != 'regular-pilot-v1':
                 found.add('%s|%s|curso fechado: episódio fora do modelo piloto' % (c, e['n']))
     # aderência ao plano
-    maps = P.read_maps(c)
+    maps = P.read_maps(c) if c in plano_ativo else {}
     for _, e in eps:
         m = maps.get(e['n'])
         if m and e.get('presentation') == 'regular-pilot-v1':
@@ -67,6 +85,12 @@ for c in courses:
             if sorted(x) != sorted(nx(y) for y in m.get('expressoes', [])):
                 found.add('%s|%s|fora do plano: expressões' % (c, e['n']))
 
+if '--shrink' in sys.argv:  # só remove do baseline o que já foi corrigido; nunca adiciona falha nova
+    keep = sorted(baseline & found)
+    json.dump({'nota': 'Falhas já existentes toleradas pela trava; só falhas novas bloqueiam. Gerado por regular_gate.py (--update-baseline ou --shrink).', 'falhas': keep},
+              open(bpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print('baseline reduzido de', len(baseline), 'para', len(keep), '(', len(baseline) - len(keep), 'falhas corrigidas )')
+    sys.exit(0)
 if '--update-baseline' in sys.argv:
     json.dump({'nota': 'Falhas já existentes tolerados pela trava; só falhas novas bloqueiam. Gerado por regular_gate.py --update-baseline.', 'falhas': sorted(found)},
               open(bpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)

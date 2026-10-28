@@ -1,0 +1,299 @@
+[
+ {
+  "n": 7081030,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 1,
+    "en": "No, John. Since the ships came, my people are not calm any more.",
+    "pt": "Não, John. Desde que os navios chegaram, meu povo não está mais calmo."
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Pocahontas, falando com John à beira do rio. **Diga que seu povo não está mais calmo, que você não mora mais perto do rio e que não tem mais medo dele.**",
+   "model": "John, my people are no longer calm. I don’t live by the river any more. I am not afraid of you any more.",
+   "chips": [
+    "no longer"
+   ],
+   "check": [
+    "Usei no longer?",
+    "Falei com John?",
+    "Usei any more?"
+   ],
+   "kw": [
+    "\\bno\\s+longer\\b",
+    "\\bjohn\\b",
+    "\\bany\\s+more\\b"
+   ],
+   "tips": [
+    [
+     [
+      "My people are no longer calm.",
+      "Meu povo não está mais calmo."
+     ]
+    ],
+    [
+     [
+      "John, I don’t live by the river.",
+      "John, eu não moro perto do rio."
+     ]
+    ],
+    [
+     [
+      "I am not afraid of you any more.",
+      "Não tenho mais medo de você."
+     ]
+    ]
+   ],
+   "ok": [
+    "No longer! 🔚",
+    "John! 🌊",
+    "Any more! 🪶"
+   ],
+   "reply": [
+    "I see, Pocahontas.",
+    "Entendi, Pocahontas."
+   ]
+  }
+ },
+ {
+  "n": 81086,
+  "cena": [
+   {
+    "cena": 2,
+    "i": 5,
+    "en": "Sure, Della. Jim sold his watch for these combs.",
+    "pt": "Claro, Della. O Jim vendeu o relógio dele por estes pentes."
+   }
+  ],
+  "missao": {
+   "prompt": "Imagine que Della quer devolver os pentes que ganhou de Jim. **Diga que gostaria de devolver os pentes, que Jim vendeu o relógio por eles e pergunte se pode receber o reembolso.**",
+   "model": "I’d like to return these combs. Jim sold his watch for them. Can I get a refund?",
+   "chips": [
+    "return"
+   ],
+   "check": [
+    "Usei I’d like to return?",
+    "Falei do Jim e do relógio?",
+    "Usei Can I get a refund?"
+   ],
+   "kw": [
+    "\\bi[’']?d\\s+like\\s+to\\s+return\\b",
+    "\\bjim\\b.*\\bwatch\\b",
+    "\\bcan\\s+i\\s+get\\s+a\\s+refund\\b"
+   ],
+   "tips": [
+    [
+     [
+      "I’d like to return these combs.",
+      "Gostaria de devolver estes pentes."
+     ]
+    ],
+    [
+     [
+      "Jim sold his watch for them.",
+      "Jim vendeu o relógio por eles."
+     ]
+    ],
+    [
+     [
+      "Can I get a refund?",
+      "Posso receber o reembolso?"
+     ]
+    ]
+   ],
+   "ok": [
+    "Return! ↩️",
+    "Jim! ⌚",
+    "Refund! 💵"
+   ],
+   "reply": [
+    "Sure, Della!",
+    "Claro, Della!"
+   ]
+  }
+ },
+ {
+  "n": 7081146,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 2,
+    "en": "Susan, have you ever been to Wild Cat Island?",
+    "pt": "Susan, você já foi à Ilha Wild Cat?"
+   },
+   {
+    "cena": 1,
+    "i": 4,
+    "en": "Did the Swallows camp there?",
+    "pt": "Os Swallows acamparam lá?"
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Susan Walker, de Swallows and Amazons. **Diga que já velejou no Swallow muitas vezes, que foi à ilha em julho e que acampou lá no ano passado.**",
+   "model": "I have sailed the Swallow many times. I went to the island in July. We camped there last year.",
+   "chips": [
+    "have sailed"
+   ],
+   "check": [
+    "Usei have sailed?",
+    "Falei do Swallow?",
+    "Usei camped?"
+   ],
+   "kw": [
+    "\\bhave\\s+sailed\\b",
+    "\\bswallow\\b",
+    "\\bcamped\\b"
+   ],
+   "tips": [
+    [
+     [
+      "I have sailed the Swallow many times.",
+      "Já velejei no Swallow muitas vezes."
+     ]
+    ],
+    [
+     [
+      "I went to the island in July.",
+      "Fui à ilha em julho."
+     ]
+    ],
+    [
+     [
+      "We camped there last year.",
+      "Acampamos lá no ano passado."
+     ]
+    ]
+   ],
+   "ok": [
+    "Have sailed! ⛵",
+    "Swallow! 🐦",
+    "Camped! ⛺"
+   ],
+   "reply": [
+    "Well done, Susan!",
+    "Muito bem, Susan!"
+   ]
+  }
+ },
+ {
+  "n": 81228,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 0,
+    "en": "You look busy. Is it the Hamlet essay?",
+    "pt": "Você parece ocupada. É o trabalho sobre Hamlet?"
+   },
+   {
+    "cena": 1,
+    "i": 5,
+    "en": "I cannot. I worry a lot, like Hamlet.",
+    "pt": "Não posso. Me preocupo muito, como Hamlet."
+   }
+  ],
+  "missao": {
+   "prompt": "Você está estudando a peça Hamlet, de Shakespeare. **Diga que está estressado, que tem um prazo para o trabalho sobre Hamlet e que vai fazer uma pausa para relaxar.**",
+   "model": "I am stressed out. I have a deadline for my Hamlet essay. I take a break and relax.",
+   "chips": [
+    "stressed out"
+   ],
+   "check": [
+    "Usei stressed out?",
+    "Falei de Hamlet?",
+    "Usei take a break?"
+   ],
+   "kw": [
+    "\\bstressed\\s+out\\b",
+    "\\bhamlet\\b",
+    "\\btake\\s+a\\s+break\\b"
+   ],
+   "tips": [
+    [
+     [
+      "I am stressed out.",
+      "Estou estressado."
+     ]
+    ],
+    [
+     [
+      "I have a deadline for my Hamlet essay.",
+      "Tenho um prazo para o meu trabalho sobre Hamlet."
+     ]
+    ],
+    [
+     [
+      "I take a break and relax.",
+      "Faço uma pausa e relaxo."
+     ]
+    ]
+   ],
+   "ok": [
+    "Stress! 😫",
+    "Hamlet! 💀",
+    "Break! ☕"
+   ],
+   "reply": [
+    "Relax!",
+    "Relaxe!"
+   ]
+  }
+ },
+ {
+  "n": 7081310,
+  "cena": [
+   {
+    "cena": 1,
+    "i": 7,
+    "en": "Only one bag of cookies for George, Peppa.",
+    "pt": "Só um saco de biscoitos para o George, Peppa."
+   }
+  ],
+  "missao": {
+   "prompt": "Você é Peppa Pig, fazendo compras com a Mummy Pig. **Diga que vocês precisam de uma garrafa de suco para o George, de um saco de farinha para o bolo e de uma caixa de leite para o Daddy Pig.**",
+   "model": "We need a bottle of juice for George. We need a bag of flour for the cake. We need a carton of milk for Daddy Pig.",
+   "chips": [
+    "a bottle of"
+   ],
+   "check": [
+    "Usei a bottle of?",
+    "Falei do George ou do Daddy Pig?",
+    "Usei a bag of ou a carton of?"
+   ],
+   "kw": [
+    "\\ba\\s+bottle\\s+of\\b",
+    "\\b(?:george|daddy\\s+pig)\\b",
+    "\\ba\\s+(?:bag|carton)\\s+of\\b"
+   ],
+   "tips": [
+    [
+     [
+      "We need a bottle of juice for George.",
+      "Precisamos de uma garrafa de suco para o George."
+     ]
+    ],
+    [
+     [
+      "We need a carton of milk for Daddy Pig.",
+      "Precisamos de uma caixa de leite para o Daddy Pig."
+     ]
+    ],
+    [
+     [
+      "We need a bag of flour for the cake.",
+      "Precisamos de um saco de farinha para o bolo."
+     ]
+    ]
+   ],
+   "ok": [
+    "Bottle! 🍾",
+    "George! 🐷",
+    "Bag! 🛍️"
+   ],
+   "reply": [
+    "Good, Peppa!",
+    "Muito bem, Peppa!"
+   ]
+  }
+ }
+]

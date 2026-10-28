@@ -788,6 +788,7 @@ body{padding-bottom:68px}
     <symbol id="i-pencil" viewBox="0 0 24 24"><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></symbol>
     <symbol id="i-back" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></symbol>
     <symbol id="i-fwd" viewBox="0 0 24 24"><path fill="currentColor" d="M4 13h12.17l-5.59 5.59L12 20l8-8-8-8-1.41 1.41L16.17 11H4z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
   </defs>
 </svg>
 <link rel="stylesheet" href="css/modern.css">
@@ -1612,7 +1613,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=265').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=269').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.forEach(registerEpisodeGenders);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
@@ -2784,7 +2785,7 @@ function play(cid,idx){if(window.PogBilling&&!PogBilling.allow(cid,idx))return;c
   P={cid,idx,e,c,L:c.ui,t:T[c.ui],steps:baseSteps,i:0,score:0,total:e.fr?fxTotal(e):(e.q&&e.q[0]?1:0)+(e.q&&e.q[1]?1:0)+(e.x?1:0)+(e.b?buildItems(e).length:0)+(e.fg?1:0)+(e.cq?1:0)+(e.exg?1:0)+(e.gpr?1:0)+(e.ask?e.ask.length:0)+(e.ctx?e.ctx.length:0)+(e.ctx?e.ctx.filter(c=>c.q2).length:0)+(e.shadow?2:0)+(e.pg?4:0)+(e.hm?1:0),t0:Date.now(),answered:false,convoRevealed:{},scored:{},mission:e.m||null,badges:[],streak:0,review:reviewData};
   if(reviewData)P.total+=reviewData.rows.length;
   const el=document.createElement('div');el.className='player';el.id='player';el.setAttribute('role','dialog');el.setAttribute('aria-label',e.t);
-  el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar">×</button><div class="prog" role="progressbar" aria-label="Progresso do episódio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="pbar" style="width:0"></i></div><span class="pstep" id="pstep" aria-live="polite"></span><span class="timer" id="ptime">0:00</span></div>
+  el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar"><svg class="close-ic" aria-hidden="true"><use href="#i-close"/></svg></button><div class="prog" role="progressbar" aria-label="Progresso do episódio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="pbar" style="width:0"></i></div><span class="pstep" id="pstep" aria-live="polite"></span><span class="timer" id="ptime">0:00</span></div>
    <div class="p-body" id="pbody"><div class="badge-strip" id="badges" hidden></div><div class="stage" id="pstage"></div></div>
    <div class="p-foot"><div class="in"><button class="pback" id="pback" aria-label="${T[c.ui].backStep}"><svg class="speak-ic"><use href="#i-back"/></svg></button><div class="pog-dock" id="pdock">${poggie({scarf:c.scarf})}</div><div class="bubble" id="pbub" aria-live="polite"></div><button class="cta" id="pcta"></button><button class="pskip" id="pskip" aria-label="${T[c.ui].skipStep}" title="${T[c.ui].skipStep}"><svg class="speak-ic"><use href="#i-fwd"/></svg></button></div></div>`;
   document.body.appendChild(el);document.body.style.overflow='hidden';
@@ -4575,7 +4576,7 @@ function fxEsHook(st){if(!fxEsOn()||!st)return;fxEsDom(st);if(!st._fxo){st._fxo=
 function playTest(cid,id){const test=/^(mt|cp)\d+$|^exam$/.test(id)?buildArcTest(cid,id):(TESTS[cid]||[]).find(x=>x.id===id);if(!test)return;const c=COURSES[cid];
   P={cid,isTest:true,test,i:0,score:0,total:test.qs.length,answered:false,sel:null,c,L:c.ui,t:T[c.ui],steps:Array(test.qs.length+1).fill('t'),t0:Date.now()};
   const el=document.createElement('div');el.className='player';el.id='player';el.setAttribute('role','dialog');el.setAttribute('aria-label',test.t);
-  el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar">×</button><div class="prog"><i id="pbar" style="width:0"></i></div><span class="timer" id="ptime">0:00</span></div>
+  el.innerHTML=`<div class="p-head"><button class="x" id="px" aria-label="Fechar"><svg class="close-ic" aria-hidden="true"><use href="#i-close"/></svg></button><div class="prog"><i id="pbar" style="width:0"></i></div><span class="timer" id="ptime">0:00</span></div>
    <div class="p-body" id="pbody"><div class="stage" id="pstage"></div></div>
    <div class="p-foot"><div class="in"><div class="pog-dock" id="pdock">${poggie({scarf:c.scarf})}</div><div class="bubble" id="pbub" aria-live="polite"></div><button class="cta" id="pcta"></button></div></div>`;
   document.body.appendChild(el);document.body.style.overflow='hidden';
@@ -4787,4 +4788,5 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/english-pilot-cast.js"></script>
 <script src="js/regular-pilot.js?v=5"></script><script src="js/pilot-reward.js?v=3"></script><link rel="stylesheet" href="css/figurinhas.css?v=4"><script src="js/figurinhas.js?v=7"></script>
 <script src="js/roteiro-screen.js?v=3"></script>
+<link rel="stylesheet" href="css/player-polish.css?v=1">
 </body></html>
