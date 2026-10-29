@@ -18,3 +18,8 @@ Título sem relação nenhuma com a aula (ex.: “Gießen”, “Hof”, “Ran�
 ## Observações
 - Vários títulos têm tipo/ano errados (“Shrek — Instituição”, “Route 66 — Artista”), sinal de troca automática.
 - Nada foi alterado nos dados.
+
+## Aplicado (26 episódios do inglês regular)
+- **Genéricas (23):** obra trocada por outra que combina com o tema da aula, sem mexer no conteúdo (descrição, ponte e capa novas; fichas novas em A1/A2).
+- **Obra livre (3):** título correto devolvido — Lost in Space, Gnomeo & Juliet, Le Morte d’Arthur.
+- **Ficaram de fora (17):** a aula é sobre uma obra que já é título de outro episódio (14 da revisão + Remember the Titans, Dubliners e Kitchen Nightmares, cujos textos culturais dos episódios 950013, 85070 e 960061 descrevem essas obras) e Marie Kondo/Lego/Anne Frank, usadas por outros episódios. Nada foi alterado neles.
