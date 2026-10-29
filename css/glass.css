@@ -162,7 +162,7 @@
 #player.gl :is(.rdg-s small,.m2-sbb small,.ps-q small,.ps-line small){color:#46606a!important}
 #player.gl .step small:not([class]){color:#46606a}
 #player.gl .step .ps-ru-hero small:not([class]){color:inherit}
-#player.gl .vb-v i{background:#0d8077!important;color:#fff!important}
+#player.gl .vb-v i{background:color-mix(in srgb,var(--b,#0d8077) 70%,#0b1b2b)!important;color:#fff!important;border-radius:12px;padding:3px 12px}
 #player.gl .m2-sav{background:#1a6fa3!important;color:#fff!important}
 #player.gl .p-foot .pcl-b i .gl-i{width:18px;height:18px;font-size:18px}
 #player.gl .p-foot #pcl{width:100%;max-width:760px;margin-inline:auto}
@@ -244,3 +244,9 @@
   background:linear-gradient(145deg,#17a2ad,#0a6270);box-shadow:0 8px 14px -10px rgba(8,70,80,.9)}
 #player.gl .ps-exc :is(.ps-exex,.ps-exen)>i .gl-i{width:19px;height:19px}
 #player.gl .ps-exc .ps-exen{display:flex;align-items:center;gap:10px}
+
+/* telas estreitas: perguntas sempre em UMA coluna (nada espremido em meia coluna) */
+@media (max-width:820px){
+  #player.gl .step .ps-qs,#player.gl .step .ps-qs.grid,#player.gl .cb .ps-qs:not(.grid),#player.gl .cb .ps-qs.grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:14px!important}
+  #player.gl .step .ps-q.pic .ps-opts{grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr))!important}
+}
