@@ -109,7 +109,8 @@ def audit(course, episodes, ponte=True):
         kinds = [frame.get('k') for frame in frames]
         if episode.get('presentation') != 'regular-pilot-v1':
             failures.append(f'{label}: presentation ausente')
-        if ordinal != 1 and kinds != EXPECTED:
+        with_reading = EXPECTED[:3] + ['rdg'] + EXPECTED[3:]
+        if ordinal != 1 and kinds != EXPECTED and kinds != with_reading:
             failures.append(f'{label}: sequência de 19 quadros inválida')
         if len(episode.get('v') or []) != 6:
             failures.append(f'{label}: vocabulário deve ter exatamente 6 itens')

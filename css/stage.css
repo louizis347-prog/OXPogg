@@ -439,3 +439,6 @@
 .ps-o.ok{border-color:rgba(44,198,115,.7)}.ps-o.no{border-color:rgba(239,106,76,.7)}
 .ps-slot{box-shadow:0 8px 16px -10px rgba(20,40,90,.45),inset 0 1px 0 rgba(255,255,255,.28)}
 .ps-chip{box-shadow:0 6px 14px -9px rgba(20,40,90,.45),inset 0 1px 0 rgba(255,255,255,.28)}
+
+/* leitura da obra: a tradução aparece ao passar o mouse (e ao tocar, no celular) */
+@media (hover:hover){.rdg-s:hover small{display:block;max-height:none;opacity:1}}
