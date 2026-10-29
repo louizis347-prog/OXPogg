@@ -1,21 +1,16 @@
 {
  "7081285": {
   "obra": {
-   "nome": "Stuart Little",
-   "tipo": "Livro",
-   "ano": "1945"
+   "nome": "Leaning Tower of Pisa",
+   "tipo": "Lugar",
+   "ano": "1173"
   },
-  "desc": "Livro infantil de E. B. White, publicado em 1945, sobre um ratinho muito pequeno que nasce numa família humana de Nova York e vive aventuras do tamanho dele. A história brinca o tempo todo com medidas, alturas e tamanhos. A referência Stuart Little combina com medir altura, comprimento e largura de coisas (the height of, the length of).",
+  "desc": "A Torre de Pisa, na Itália, começou a ser construída em 1173 e é famosa porque está inclinada. Ela tem cerca de 56 metros de altura, e os visitantes adoram comparar a inclinação, o comprimento da sombra e a largura da base. A referência Leaning Tower of Pisa combina com medir altura, comprimento e largura de coisas (the height of, the length of).",
   "ficha": {
-   "t": "Stuart Little",
-   "scene": "bedroom",
-   "tod": "indoor",
+   "t": "Leaning Tower of Pisa",
+   "scene": "plaza",
+   "tod": "day",
    "cast": [
-    {
-     "a": "mouse",
-     "s": 2.0,
-     "x": 300
-    },
     {
      "p": {
       "hs": "short",
@@ -26,17 +21,30 @@
       "arms": "point"
      },
      "s": 1.2,
-     "x": 560
+     "x": 300
+    },
+    {
+     "p": {
+      "hs": "ponytail",
+      "hair": "blond",
+      "outfit": "dress",
+      "top": "#d9402f",
+      "skin": "pale",
+      "arms": "up"
+     },
+     "s": 1.2,
+     "x": 520
     }
    ],
    "prop": {
-    "id": "ladder",
-    "at": "right",
-    "s": 1.4,
-    "x": 700
+    "id": "camera",
+    "at": "front",
+    "s": 1.0,
+    "x": 690
    },
    "decor": [
-    "sparkles"
+    "clouds",
+    "birds"
    ]
   }
  },
@@ -90,45 +98,52 @@
  },
  "81305": {
   "obra": {
-   "nome": "Garfield",
-   "tipo": "Personagem",
-   "ano": "1978"
+   "nome": "Snow Day",
+   "tipo": "Filme",
+   "ano": "2000"
   },
-  "desc": "Garfield é um gato laranja, preguiçoso e comilão, criado pelo cartunista Jim Davis em 1978. Ele adora lasanha, odeia segundas-feiras e vive inventando desculpas para não sair do sofá. A referência Garfield combina com cancelar planos e remarcar encontros (I am afraid I have to cancel, Can we reschedule).",
+  "desc": "Comédia americana de 2000 sobre uma cidade onde uma grande nevasca fecha as escolas e cancela todos os planos do dia. As crianças aproveitam a folga para brincar na neve, enquanto os adultos tentam remarcar tudo. A referência Snow Day combina com cancelar planos e remarcar encontros (I am afraid I have to cancel, Can we reschedule).",
   "ficha": {
-   "t": "Garfield",
-   "scene": "livingroom",
+   "t": "Snow Day",
+   "scene": "snow",
    "tod": "day",
    "cast": [
-    {
-     "a": "cat",
-     "s": 2.0,
-     "x": 300,
-     "c": "#e8892b",
-     "c2": "#f5c27a"
-    },
     {
      "p": {
       "hs": "short",
       "hair": "brown",
-      "outfit": "shirt",
-      "top": "#4a7be0",
-      "skin": "pale",
+      "outfit": "coat",
+      "top": "#d9402f",
+      "skin": "light",
       "arms": "hold",
-      "holds": "telephone"
+      "holds": "telephone",
+      "hat": "bonnet",
+      "hatColor": "#3a7bd5"
      },
      "s": 1.2,
-     "x": 560
+     "x": 300
+    },
+    {
+     "p": {
+      "hs": "pigtails",
+      "hair": "blond",
+      "outfit": "coat",
+      "top": "#2f6f5e",
+      "skin": "pale",
+      "arms": "wave"
+     },
+     "s": 1.2,
+     "x": 540
     }
    ],
    "prop": {
-    "id": "pizza",
+    "id": "sled",
     "at": "front",
-    "s": 1.3,
-    "x": 700
+    "s": 1.4,
+    "x": 690
    },
    "decor": [
-    "sparkles"
+    "snow"
    ]
   }
  },
@@ -182,52 +197,49 @@
  },
  "81313": {
   "obra": {
-   "nome": "Fireman Sam",
-   "tipo": "Série",
-   "ano": "1987"
+   "nome": "SimCity",
+   "tipo": "Jogo",
+   "ano": "1989"
   },
-  "desc": "Série infantil britânica de animação, estreada em 1987, passada na cidadezinha galesa de Pontypandy, onde o bombeiro Sam ajuda os vizinhos. A cidade tem lojas, praça e ruas que as crianças conhecem de cor. A referência Fireman Sam combina com apresentar o bairro e dizer onde ficam as coisas (next to, across from, behind).",
+  "desc": "Jogo de computador criado por Will Wright e lançado em 1989, no qual o jogador planeja e constrói uma cidade com ruas, quarteirões, bancos, bibliotecas e parques. A posição de cada prédio em relação aos outros faz toda a diferença. A referência SimCity combina com apresentar o bairro e dizer onde ficam as coisas (next to, across from, behind).",
   "ficha": {
-   "t": "Fireman Sam",
-   "scene": "village",
+   "t": "SimCity",
+   "scene": "skyline",
    "tod": "day",
    "cast": [
     {
      "p": {
       "hs": "short",
       "hair": "brown",
-      "outfit": "coat",
-      "top": "#d9402f",
+      "outfit": "shirt",
+      "top": "#7a8fa6",
       "skin": "light",
-      "arms": "wave",
-      "hat": "helmet",
-      "hatColor": "#f2c230"
+      "arms": "point"
      },
-     "s": 1.3,
+     "s": 1.2,
      "x": 300
     },
     {
      "p": {
-      "hs": "braids",
-      "hair": "red",
-      "outfit": "dress",
-      "top": "#3a7bd5",
-      "skin": "pale",
-      "arms": "point"
+      "hs": "bob",
+      "hair": "black",
+      "outfit": "shirt",
+      "top": "#f2c230",
+      "skin": "tan",
+      "arms": "wave"
      },
      "s": 1.2,
      "x": 540
     }
    ],
    "prop": {
-    "id": "bell",
-    "at": "right",
+    "id": "computer",
+    "at": "front",
     "s": 1.3,
-    "x": 720
+    "x": 690
    },
    "decor": [
-    "birds",
-    "flowers"
+    "clouds"
    ]
   }
  },
@@ -318,14 +330,14 @@
  },
  "81320": {
   "obra": {
-   "nome": "Akeelah and the Bee",
-   "tipo": "Filme",
-   "ano": "2006"
+   "nome": "Scripps National Spelling Bee",
+   "tipo": "Tradição",
+   "ano": "1925"
   },
-  "desc": "Filme americano de 2006 sobre Akeelah, uma menina de Los Angeles que estuda muito para vencer o concurso nacional de soletrar. Ela treina com um professor e aprende a lidar com a pressão das provas. A referência Akeelah and the Bee combina com falar de provas e resultados (pass, fail, retake the test).",
+  "desc": "Concurso americano de soletrar palavras em inglês, realizado desde 1925, em que estudantes enfrentam várias rodadas e quem erra uma palavra é eliminado. Os participantes estudam muito para chegar à final. A referência Scripps National Spelling Bee combina com falar de provas e resultados (pass, fail, retake the test).",
   "ficha": {
-   "t": "Akeelah and the Bee",
-   "scene": "classroom",
+   "t": "Scripps National Spelling Bee",
+   "scene": "stage",
    "tod": "indoor",
    "cast": [
     {
@@ -354,10 +366,10 @@
     }
    ],
    "prop": {
-    "id": "trophy",
+    "id": "microphone",
     "at": "front",
-    "s": 1.0,
-    "x": 120
+    "s": 1.2,
+    "x": 440
    },
    "decor": [
     "sparkles"
@@ -416,37 +428,51 @@
  },
  "81346": {
   "obra": {
-   "nome": "Winnie-the-Pooh",
-   "tipo": "Livro",
-   "ano": "1926"
+   "nome": "Afternoon Tea",
+   "tipo": "Tradição",
+   "ano": "1840"
   },
-  "desc": "Livro infantil do escritor inglês A. A. Milne, publicado em 1926, sobre o ursinho Pooh e seus amigos Christopher Robin, Piglet, Tigger e Eeyore, que moram na Floresta dos Cem Acres. Eles vivem se visitando para conversar e comer mel. A referência Winnie-the-Pooh combina com conduzir uma conversa completa entre amigos (How is it going, catch up, Take care).",
+  "desc": "O chá da tarde é uma tradição inglesa popularizada por volta de 1840 pela duquesa de Bedford, com chá, bolinhos e sanduíches pequenos. Hoje é um momento clássico para encontrar amigos e colocar a conversa em dia. A referência Afternoon Tea combina com conduzir uma conversa completa entre amigos (How is it going, catch up, Take care).",
   "ficha": {
-   "t": "Winnie-the-Pooh",
-   "scene": "forest",
+   "t": "Afternoon Tea",
+   "scene": "garden",
    "tod": "day",
    "cast": [
     {
-     "a": "bear",
-     "s": 1.7,
-     "x": 300,
-     "c": "#e0a33a"
+     "p": {
+      "hs": "bun",
+      "hair": "gray",
+      "outfit": "dress",
+      "top": "#8a5ab5",
+      "skin": "pale",
+      "arms": "wave"
+     },
+     "s": 1.2,
+     "x": 300
     },
     {
-     "a": "pig",
-     "s": 1.3,
+     "p": {
+      "hs": "curly",
+      "hair": "brown",
+      "outfit": "dress",
+      "top": "#e0407a",
+      "skin": "light",
+      "arms": "hold",
+      "holds": "cup"
+     },
+     "s": 1.2,
      "x": 540
     }
    ],
    "prop": {
-    "id": "jug",
+    "id": "teapot",
     "at": "front",
-    "s": 1.2,
+    "s": 1.3,
     "x": 690
    },
    "decor": [
-    "butterflies",
-    "leaves"
+    "flowers",
+    "butterflies"
    ]
   }
  },
@@ -499,46 +525,49 @@
  },
  "920050": {
   "obra": {
-   "nome": "Kiki's Delivery Service",
-   "tipo": "Filme",
-   "ano": "1989"
+   "nome": "Duolingo",
+   "tipo": "Jogo",
+   "ano": "2011"
   },
-  "desc": "Animação do Studio Ghibli, dirigida por Hayao Miyazaki em 1989, sobre Kiki, uma jovem bruxa que se muda para uma cidade à beira-mar e abre um serviço de entregas voando numa vassoura. No começo ela erra muito, mas vai melhorando. A referência Kiki's Delivery Service combina com mostrar evolução: antes eu não conseguia, agora consigo (could not, but now I can, improved).",
+  "desc": "Duolingo é um aplicativo gratuito de aprender idiomas, lançado em 2011, que transforma as lições em pequenos jogos com pontos e sequências de dias. É assim que muita gente vê o próprio progresso. A referência Duolingo combina com mostrar evolução: antes eu não conseguia, agora consigo (could not, but now I can, improved).",
   "ficha": {
-   "t": "Kiki's Delivery Service",
-   "scene": "seaside",
-   "tod": "day",
+   "t": "Duolingo",
+   "scene": "bedroom",
+   "tod": "indoor",
    "cast": [
     {
      "p": {
-      "hs": "bob",
+      "hs": "short",
       "hair": "black",
-      "outfit": "dress",
-      "top": "#2b2b3a",
-      "skin": "pale",
-      "arms": "up",
-      "hat": "bow",
-      "hatColor": "#d9402f"
+      "outfit": "shirt",
+      "top": "#58cc02",
+      "skin": "tan",
+      "arms": "up"
      },
-     "s": 1.3,
+     "s": 1.2,
      "x": 300
     },
     {
-     "a": "cat",
+     "p": {
+      "hs": "pigtails",
+      "hair": "brown",
+      "outfit": "shirt",
+      "top": "#f2f2f2",
+      "skin": "light",
+      "arms": "wave"
+     },
      "s": 1.2,
-     "x": 560,
-     "c": "#222",
-     "c2": "#222"
+     "x": 540
     }
    ],
    "prop": {
-    "id": "broomstick",
-    "at": "sky",
-    "s": 1.5
+    "id": "trophy",
+    "at": "front",
+    "s": 1.0,
+    "x": 690
    },
    "decor": [
-    "clouds",
-    "birds"
+    "stars"
    ]
   }
  },

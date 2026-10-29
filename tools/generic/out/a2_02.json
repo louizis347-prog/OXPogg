@@ -53,20 +53,30 @@
  },
  "7081091": {
   "obra": {
-   "nome": "Rudolph the Red-Nosed Reindeer",
-   "tipo": "Especial de TV",
-   "ano": "1964"
+   "nome": "Elf",
+   "tipo": "Filme",
+   "ano": "2003"
   },
-  "desc": "Rudolph the Red-Nosed Reindeer estreou na TV americana em 1964, em animação stop-motion, a partir da canção de 1949. Conta a história da rena de nariz vermelho que guia o trenó do Papai Noel numa noite de neblina. A referência Rudolph the Red-Nosed Reindeer combina com perguntar para quem é cada presente e de quem veio, na noite de Natal.",
+  "desc": "Elf (2003) é uma comédia de Natal dirigida por Jon Favreau, com Will Ferrell no papel de Buddy, um humano criado como duende no Polo Norte que viaja a Nova York para encontrar o pai. No final, o trenó do Papai Noel só consegue voar com a ajuda do espírito natalino. A referência Elf combina com perguntar para quem é cada pacote, de quem é o cartão e quem mandou o presente.",
   "ficha": {
-   "t": "Rudolph the Red-Nosed Reindeer",
+   "t": "Elf",
    "scene": "snow",
-   "tod": "night",
+   "tod": "day",
    "cast": [
     {
-     "a": "deer",
-     "s": 1.5,
-     "x": 230
+     "p": {
+      "hs": "short",
+      "hair": "blond",
+      "outfit": "coat",
+      "top": "#2f8a3a",
+      "skin": "light",
+      "hat": "party",
+      "hatColor": "#2f8a3a",
+      "belt": "#15151c",
+      "arms": "wave"
+     },
+     "s": 1.3,
+     "x": 240
     },
     {
      "p": {
@@ -74,19 +84,15 @@
       "hair": "white",
       "outfit": "coat",
       "top": "#c0392b",
+      "skin": "light",
       "hat": "santa",
       "hatColor": "#c0392b",
       "beard": "white",
-      "skin": "light",
-      "arms": "wave"
+      "arms": "hold",
+      "holds": "gift"
      },
      "s": 1.3,
-     "x": 520
-    },
-    {
-     "a": "elf",
-     "s": 0.9,
-     "x": 680
+     "x": 540
     }
    ],
    "prop": {
@@ -153,13 +159,13 @@
  },
  "81100": {
   "obra": {
-   "nome": "Bob's Burgers",
-   "tipo": "Série",
-   "ano": "2011"
+   "nome": "Katz's Delicatessen",
+   "tipo": "Lugar",
+   "ano": "1888"
   },
-  "desc": "Bob's Burgers é uma série de animação americana estreada em 2011 sobre a família Belcher, dona de uma pequena lanchonete de hambúrgueres. Bob faz a comida, Linda atende e os filhos Tina, Gene e Louise ajudam no balcão. A referência Bob's Burgers combina com pagar a conta numa lanchonete, perguntar quanto se deve e deixar gorjeta.",
+  "desc": "O Katz's Delicatessen é uma lanchonete tradicional de Nova York, no Lower East Side, aberta em 1888 e famosa pelos sanduíches de pastrami. Ali o cliente recebe um tíquete no balcão e paga na saída, e é costume deixar uma gorjeta para quem corta a carne. A referência Katz's Delicatessen combina com pagar a conta e a gorjeta: quanto devo, qual é o total e se o serviço está incluído.",
   "ficha": {
-   "t": "Bob's Burgers",
+   "t": "Katz's Delicatessen",
    "scene": "kitchen",
    "tod": "indoor",
    "cast": [
@@ -172,6 +178,8 @@
       "skin": "light",
       "stache": "black",
       "apron": true,
+      "hat": "cap",
+      "hatColor": "#f2f2f2",
       "arms": "hold",
       "holds": "sandwich"
      },
@@ -180,34 +188,32 @@
     },
     {
      "p": {
-      "hs": "long",
-      "hair": "black",
-      "outfit": "shirt",
+      "hs": "bob",
+      "hair": "brown",
+      "outfit": "dress",
       "top": "#d9402f",
       "skin": "light",
-      "glasses": true,
       "arms": "wave"
      },
      "s": 1.2,
-     "x": 430
+     "x": 450
     },
     {
      "p": {
       "hs": "short",
-      "hair": "black",
-      "outfit": "dress",
-      "top": "#3aa0a0",
-      "skin": "light",
-      "hat": "ears",
-      "hatColor": "#f3a6c8",
-      "arms": "up"
+      "hair": "gray",
+      "outfit": "coat",
+      "top": "#2f3a4a",
+      "skin": "tan",
+      "arms": "hold",
+      "holds": "envelope"
      },
-     "s": 0.9,
-     "x": 620
+     "s": 1.2,
+     "x": 640
     }
    ],
    "prop": {
-    "id": "cheese",
+    "id": "pie",
     "at": "front",
     "s": 0.9,
     "x": 720
@@ -331,50 +337,44 @@
  },
  "7081109": {
   "obra": {
-   "nome": "Stuart Little",
-   "tipo": "Filme",
-   "ano": "1999"
+   "nome": "Angelina Ballerina",
+   "tipo": "Livro",
+   "ano": "1983"
   },
-  "desc": "Stuart Little (1999) é um filme baseado no livro de E. B. White, de 1945, sobre um ratinho adotado por uma família de Nova York. Pequeno e corajoso, ele enfrenta o gato Snowbell e ganha a corrida de barcos de brinquedo no Central Park. A referência Stuart Little combina com plurais irregulares como mice, feet e teeth.",
+  "desc": "Angelina Ballerina é uma série de livros infantis da inglesa Katharine Holabird, com ilustrações de Helen Craig, publicada a partir de 1983. A heroína é uma ratinha que sonha em ser bailarina e vive numa vila de camundongos. Virou série de TV em 2001. A referência Angelina Ballerina combina com plurais irregulares como mice, feet e teeth.",
   "ficha": {
-   "t": "Stuart Little",
-   "scene": "park",
-   "tod": "day",
+   "t": "Angelina Ballerina",
+   "scene": "stage",
+   "tod": "indoor",
    "cast": [
     {
      "a": "mouse",
-     "s": 1.3,
+     "s": 1.6,
      "x": 260,
-     "c": "#b9b2a6"
-    },
-    {
-     "a": "cat",
-     "s": 1.4,
-     "x": 530,
      "c": "#f1f1f4"
     },
     {
-     "p": {
-      "hs": "short",
-      "hair": "brown",
-      "outfit": "shirt",
-      "top": "#4a7be0",
-      "skin": "light",
-      "arms": "wave"
-     },
-     "s": 0.9,
-     "x": 690
+     "a": "mouse",
+     "s": 1.2,
+     "x": 470,
+     "c": "#b9b2a6"
+    },
+    {
+     "a": "mouse",
+     "s": 1.0,
+     "x": 650,
+     "c": "#c9a37a"
     }
    ],
    "prop": {
-    "id": "boat",
+    "id": "flower",
     "at": "front",
     "s": 1.0,
-    "x": 400
+    "x": 410
    },
    "decor": [
-    "clouds",
-    "leaves"
+    "sparkles",
+    "hearts"
    ]
   }
  },
@@ -430,39 +430,40 @@
  },
  "920016": {
   "obra": {
-   "nome": "The Hardy Boys",
+   "nome": "Encyclopedia Brown",
    "tipo": "Livro",
-   "ano": "1927"
+   "ano": "1963"
   },
-  "desc": "The Hardy Boys é uma série de livros de mistério publicada desde 1927 sob o nome Franklin W. Dixon, com os irmãos detetives Frank e Joe Hardy, da cidade de Bayport. O primeiro livro foi The Tower Treasure. A referência The Hardy Boys combina com sugerir um plano de investigação: procurar uma pista com a lupa e achar a passagem secreta.",
+  "desc": "Encyclopedia Brown é uma série de livros de Donald J. Sobol, publicada desde 1963, sobre Leroy Brown, um menino detetive da cidade de Idaville, filho do chefe de polícia. No fim de cada caso, o leitor tenta achar a pista que entrega o culpado antes de ver a resposta. A referência Encyclopedia Brown combina com sugerir um plano de investigação: procurar uma pista com a lupa e achar a passagem secreta.",
   "ficha": {
-   "t": "The Hardy Boys",
+   "t": "Encyclopedia Brown",
    "scene": "attic",
    "tod": "night",
    "cast": [
     {
      "p": {
       "hs": "short",
-      "hair": "black",
+      "hair": "brown",
       "outfit": "shirt",
-      "top": "#4a6fa5",
+      "top": "#c0392b",
       "skin": "light",
+      "freckles": true,
       "arms": "point"
      },
-     "s": 1.3,
+     "s": 1.2,
      "x": 260
     },
     {
      "p": {
-      "hs": "short",
-      "hair": "blond",
+      "hs": "pigtails",
+      "hair": "red",
       "outfit": "shirt",
-      "top": "#c0392b",
+      "top": "#4a6fa5",
       "skin": "light",
       "arms": "hold",
       "holds": "lantern"
      },
-     "s": 1.3,
+     "s": 1.2,
      "x": 540
     }
    ],
@@ -893,26 +894,25 @@
  },
  "81175": {
   "obra": {
-   "nome": "Funny Girl",
-   "tipo": "Musical",
-   "ano": "1964"
+   "nome": "Amélie",
+   "tipo": "Filme",
+   "ano": "2001"
   },
-  "desc": "Funny Girl é um musical da Broadway de 1964, inspirado na vida da artista Fanny Brice, com Barbra Streisand no papel principal. No filme de 1968, a primeira fala dela, diante do espelho, é Hello, gorgeous!, e ela ganhou o Oscar de melhor atriz. A referência Funny Girl combina com elogiar: I love your voice, You look lovely, Thanks, you too.",
+  "desc": "Amélie (2001), do diretor francês Jean-Pierre Jeunet, tem Audrey Tautou como uma garçonete tímida de Montmartre, em Paris, que decide espalhar pequenas gentilezas pela vizinhança. O filme foi indicado ao Oscar de melhor filme estrangeiro. A referência Amélie combina com elogiar as pessoas com carinho: I love your voice, You look lovely, Thanks, you too.",
   "ficha": {
-   "t": "Funny Girl",
-   "scene": "stage",
-   "tod": "indoor",
+   "t": "Amélie",
+   "scene": "city",
+   "tod": "day",
    "cast": [
     {
      "p": {
-      "hs": "long",
-      "hair": "brown",
+      "hs": "bob",
+      "hair": "black",
       "outfit": "dress",
-      "top": "#7a2f8a",
+      "top": "#d9302f",
       "skin": "light",
       "arms": "hold",
-      "holds": "mirror",
-      "trim": "#f6c84c"
+      "holds": "flower"
      },
      "s": 1.3,
      "x": 260
@@ -921,25 +921,25 @@
      "p": {
       "hs": "short",
       "hair": "black",
-      "outfit": "suit",
-      "top": "#15151c",
+      "outfit": "shirt",
+      "top": "#f2f2f2",
       "skin": "light",
-      "tie": "#ffffff",
-      "arms": "out"
+      "stache": "black",
+      "arms": "wave"
      },
      "s": 1.3,
-     "x": 570
+     "x": 560
     }
    ],
    "prop": {
-    "id": "microphone",
+    "id": "bicycle",
     "at": "front",
-    "s": 0.9,
+    "s": 1.2,
     "x": 410
    },
    "decor": [
-    "stars",
-    "sparkles"
+    "hearts",
+    "birds"
    ]
   }
  },
