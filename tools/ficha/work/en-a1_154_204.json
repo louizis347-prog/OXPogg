@@ -523,44 +523,34 @@
  },
  "910016": {
   "t": "Finding Dory",
-  "scene": "market",
+  "scene": "underwater",
   "tod": "day",
   "cast": [
    {
-    "p": {
-     "hs": "short",
-     "outfit": "shirt",
-     "hair": "brown",
-     "top": "#d9302f",
-     "stripe": "#fff",
-     "hat": "cap",
-     "hatColor": "#d9302f",
-     "glasses": true,
-     "arms": "wave"
-    },
-    "x": 300
+    "a": "fish",
+    "c": "#3a7bd5",
+    "c2": "#f2c230",
+    "s": 1.6,
+    "x": 260
    },
    {
-    "p": {
-     "hs": "pigtails",
-     "outfit": "dress",
-     "hair": "red",
-     "top": "#4a7be0",
-     "arms": "point"
-    },
-    "x": 520
+    "a": "fish",
+    "c": "#f08a24",
+    "c2": "#ffffff",
+    "s": 1.1,
+    "x": 540,
+    "flip": true
    }
   ],
   "prop": {
    "id": "magnifier",
    "at": "front",
-   "s": 1.4,
-   "x": 420,
-   "y": 410
+   "s": 1.3,
+   "x": 400,
+   "c": "#c9b27c"
   },
   "decor": [
-   "balloons",
-   "birds"
+   "bubbles"
   ]
  },
  "7910016": {
@@ -892,34 +882,30 @@
  },
  "10176": {
   "t": "Jobs",
-  "scene": "garden",
-  "tod": "day",
+  "scene": "plaza",
+  "tod": "indoor",
   "cast": [
    {
     "p": {
-     "hs": "ponytail",
-     "outfit": "dress",
-     "hair": "auburn",
-     "top": "#f3d96a",
-     "hat": "flower",
-     "hatColor": "#e84a7a",
+     "hs": "short",
+     "hair": "brown",
+     "outfit": "shirt",
+     "top": "#111111",
+     "bot": "#3b5b8c",
+     "glasses": true,
      "arms": "hold",
-     "holds": "flower"
+     "holds": "telephone"
     },
-    "x": 300
+    "s": 1.3,
+    "x": 330
    }
   ],
   "prop": {
-   "id": "signpost",
-   "at": "right",
-   "s": 1.5
+   "id": "lamp",
+   "at": "sky-right",
+   "s": 1.2
   },
-  "decor": [
-   "flowers",
-   "butterflies",
-   "leaves",
-   "snow"
-  ]
+  "accent": "#8aa0b8"
  },
  "7010176": {
   "t": "Bambi",
@@ -1399,43 +1385,40 @@
  },
  "7010178": {
   "t": "Rich Dad Poor Dad",
-  "scene": "snow",
-  "tod": "night",
+  "scene": "city",
+  "tod": "day",
   "cast": [
    {
     "p": {
      "hs": "short",
+     "hair": "gray",
      "outfit": "suit",
-     "hair": "brown",
-     "top": "#3a3a4a",
-     "tie": "#c4202f",
-     "arms": "wave"
+     "top": "#1f2933",
+     "tie": "#d4a017",
+     "arms": "point"
     },
     "s": 1.3,
-    "x": 290
+    "x": 250
    },
    {
     "p": {
-     "hs": "bob",
-     "outfit": "dress",
+     "hs": "short",
      "hair": "brown",
-     "top": "#c4503f",
-     "arms": "hold",
-     "holds": "heart"
+     "outfit": "overalls",
+     "top": "#4a6fa5",
+     "shirt": "#e0603a"
     },
     "s": 1.3,
-    "x": 520
+    "x": 560
    }
   ],
   "prop": {
-   "id": "bell",
-   "at": "sky-right",
-   "s": 1.3
-  },
-  "decor": [
-   "snow",
-   "stars"
-  ]
+   "id": "chest",
+   "at": "between",
+   "s": 1.0,
+   "x": 405,
+   "c": "#d4a017"
+  }
  },
  "10179": {
   "t": "The Little Red Hen",

@@ -119,26 +119,30 @@
  },
  "80241": {
   "t": "House M.D.",
-  "scene": "city",
-  "tod": "dusk",
+  "scene": "skyline",
+  "tod": "indoor",
   "cast": [
    {
     "p": {
      "hs": "short",
-     "outfit": "armor",
-     "hair": "blond",
-     "top": "#e2b53a",
-     "hat": "crown",
-     "hatColor": "#f6c84c",
-     "skin": "tan"
+     "hair": "gray",
+     "stache": "gray",
+     "outfit": "coat",
+     "top": "#f2f2f2",
+     "bot": "#2f3a4a",
+     "arms": "point"
     },
-    "s": 1.4,
+    "s": 1.3,
     "x": 300
    },
    {
-    "a": "bird",
-    "s": 2.0,
-    "c": "#4a7be0",
+    "p": {
+     "hs": "long",
+     "hair": "brown",
+     "outfit": "coat",
+     "top": "#f2f2f2"
+    },
+    "s": 1.3,
     "x": 560
    }
   ],
@@ -146,11 +150,8 @@
    "id": "heart",
    "at": "sky-right",
    "s": 1.3,
-   "c": "#d9304a"
-  },
-  "decor": [
-   "sparkles"
-  ]
+   "c": "#d9202f"
+  }
  },
  "7080241": {
   "t": "Little Shop of Horrors",
@@ -506,45 +507,33 @@
  },
  "80250": {
   "t": "Tron",
-  "scene": "garden",
-  "tod": "day",
+  "scene": "space",
+  "tod": "night",
   "cast": [
    {
     "p": {
-     "hs": "pigtails",
-     "outfit": "dress",
-     "hair": "brown",
-     "top": "#e8a0b8"
+     "hs": "bald",
+     "outfit": "jersey",
+     "top": "#101828",
+     "hat": "helmet",
+     "hatColor": "#00e5ff",
+     "arms": "hold",
+     "holds": "ring",
+     "holdColor": "#00e5ff"
     },
-    "s": 1,
-    "x": 250
-   },
-   {
-    "p": {
-     "hs": "short",
-     "outfit": "shirt",
-     "hair": "brown",
-     "top": "#4a7be0"
-    },
-    "s": 1,
+    "s": 1.3,
     "x": 400
-   },
-   {
-    "a": "bear",
-    "s": 1.0,
-    "c": "#e0a63a",
-    "x": 560
    }
   ],
   "prop": {
-   "id": "house",
-   "at": "right",
-   "s": 1.5,
-   "c": "#8a5a2b"
+   "id": "star",
+   "at": "sky-left",
+   "s": 1.3,
+   "c": "#00e5ff"
   },
-  "decor": [
-   "leaves",
-   "butterflies"
+  "accent": "#00b8d4",
+  "falta": [
+   "disco"
   ]
  },
  "7080250": {
@@ -823,43 +812,37 @@
  },
  "80256": {
   "t": "Hotel Transylvania",
-  "scene": "desert",
-  "tod": "dusk",
+  "scene": "castle",
+  "tod": "night",
   "cast": [
    {
     "p": {
-     "hs": "short",
-     "outfit": "shirt",
+     "hs": "side",
      "hair": "black",
-     "top": "#8a5ac8",
-     "hat": "turban",
-     "hatColor": "#e0a43a",
-     "skin": "tan"
+     "skin": "pale",
+     "outfit": "suit",
+     "top": "#222222",
+     "cape": "#8a1f2f",
+     "arms": "out"
     },
-    "s": 1.3,
-    "x": 250
+    "s": 1.35,
+    "x": 300
    },
    {
-    "p": {
-     "hs": "ponytail",
-     "outfit": "dress",
-     "hair": "black",
-     "top": "#3aa0b8",
-     "skin": "tan"
-    },
-    "s": 1.3,
-    "x": 430
+    "a": "bat",
+    "c": "#4a3a5a",
+    "s": 1.6,
+    "x": 580
    }
   ],
   "prop": {
-   "id": "lamp",
-   "at": "front",
-   "s": 1.7,
-   "y": 405
+   "id": "key",
+   "at": "sky-right",
+   "s": 1.4,
+   "c": "#d4a017"
   },
   "decor": [
-   "stars",
-   "sparkles"
+   "stars"
   ]
  },
  "7080256": {
@@ -1377,41 +1360,40 @@
  },
  "7080267": {
   "t": "Santa Claus",
-  "scene": "skyline",
+  "scene": "snow",
   "tod": "night",
   "cast": [
    {
-    "a": "turtle",
-    "s": 1.1,
-    "c": "#4aa84a",
-    "x": 150
-   },
-   {
-    "a": "turtle",
-    "s": 1.1,
-    "c": "#4aa84a",
+    "p": {
+     "hs": "short",
+     "hair": "white",
+     "stache": "white",
+     "beard": "white",
+     "outfit": "coat",
+     "top": "#d9202f",
+     "hat": "santa",
+     "hatColor": "#d9202f",
+     "arms": "hold",
+     "holds": "basket"
+    },
+    "s": 1.35,
     "x": 300
    },
    {
-    "a": "turtle",
+    "a": "deer",
+    "c": "#8a5a2b",
     "s": 1.1,
-    "c": "#4aa84a",
-    "x": 450
-   },
-   {
-    "a": "turtle",
-    "s": 1.1,
-    "c": "#4aa84a",
-    "x": 600
+    "x": 570
    }
   ],
   "prop": {
-   "id": "pizza",
-   "at": "front",
-   "s": 1.2,
-   "y": 410
+   "id": "house",
+   "at": "sky-right",
+   "s": 1.1,
+   "c": "#b5833c"
   },
   "decor": [
+   "snow",
    "stars"
   ]
  },
