@@ -59,7 +59,7 @@ add(dict(
         ('work', '🧑‍🌾', 'trabalhar', 'I work', 'she works', 'We worked in the field.', 'Nós trabalhávamos no campo.', 'work + lugar')],
  verbtip='Quatro verbos para contar o que se fazia na fazenda.',
  exps=[('🌅', 'at sunrise', 'ao nascer do sol', 'Use para falar de algo que acontece de manhã bem cedo.', 'We get up **at sunrise** every day.', 'Nós acordamos ao nascer do sol todo dia.'),
-       ('⌛', 'back in the day', 'antigamente', 'Use para falar de uma época do passado.', '**Back in the day**, there was a big party here.', 'Antigamente, houve uma grande festa aqui.'),
+       ('⌛', 'one spring morning', 'numa manhã de primavera', 'Use para começar a contar uma lembrança de um dia.', '**One spring morning**, there was a big party here.', 'Numa manhã de primavera, houve uma grande festa aqui.'),
        ('🎶', 'hum a tune', 'cantarolar', 'Use para cantar baixinho, sem dizer as palavras.', 'I always **hum a tune** at the gate, Curly.', 'Eu sempre cantarolo no portão, Curly.'),
        ('🤝', 'get along', 'se dar bem', 'Use para pessoas que convivem bem.', 'The farmers and the cowboys must **get along**.', 'Os fazendeiros e os vaqueiros precisam se dar bem.')],
  scene2extra=[['Laurey', 'Aunt Eller says the same thing.', 'A tia Eller diz a mesma coisa.'],
