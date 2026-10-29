@@ -1,27 +1,45 @@
 {
  "7081196": {
   "obra": {
-   "nome": "Rudolph the Red-Nosed Reindeer",
+   "nome": "White Christmas",
    "tipo": "Filme",
-   "ano": "1964"
+   "ano": "1954"
   },
-  "desc": "Rudolph the Red-Nosed Reindeer é um especial de Natal de 1964 em animação stop-motion, narrado pelo boneco de neve Sam, com a voz de Burl Ives. Conta a história da rena de nariz vermelho que guia o trenó do Papai Noel numa noite de nevasca. A referência Rudolph the Red-Nosed Reindeer combina com distinguir on Christmas Day de at Christmas, entre bonecos de neve, cachecóis e presentes.",
+  "desc": "White Christmas é um musical de 1954 com Bing Crosby e Danny Kaye, ambientado numa pousada em Vermont que só salva o negócio quando a neve chega na véspera de Natal. A canção-título, de Irving Berlin, é uma das mais vendidas da história. A referência White Christmas combina com distinguir on Christmas Day de at Christmas, entre bonecos de neve, cachecóis e presentes.",
   "ficha": {
-   "t": "Rudolph the Red-Nosed Reindeer",
+   "t": "White Christmas",
    "scene": "snow",
-   "tod": "dusk",
+   "tod": "night",
    "cast": [
     {
-     "a": "deer",
-     "x": 300,
-     "s": 1.4,
-     "c": "#8b5a2b"
+     "p": {
+      "hs": "short",
+      "hair": "brown",
+      "outfit": "coat",
+      "top": "#c0392b",
+      "skin": "light",
+      "arms": "wave",
+      "hat": "santa",
+      "hatColor": "#c0392b",
+      "scarf": "#f2f2f2"
+     },
+     "s": 1.3,
+     "x": 300
     },
     {
-     "a": "elf",
-     "x": 560,
-     "s": 1.0,
-     "c": "#2e8b57"
+     "p": {
+      "hs": "bob",
+      "hair": "blond",
+      "outfit": "coat",
+      "top": "#c0392b",
+      "skin": "pale",
+      "arms": "hug",
+      "hat": "santa",
+      "hatColor": "#c0392b",
+      "scarf": "#2e8b57"
+     },
+     "s": 1.2,
+     "x": 560
     }
    ],
    "prop": {
@@ -33,9 +51,6 @@
    "decor": [
     "snow",
     "stars"
-   ],
-   "falta": [
-    "nariz vermelho da rena"
    ]
   }
  },
@@ -485,34 +500,41 @@
  },
  "7920034": {
   "obra": {
-   "nome": "Eloise",
-   "tipo": "Livro",
-   "ano": "1955"
+   "nome": "TripAdvisor",
+   "tipo": "Site",
+   "ano": "2000"
   },
-  "desc": "Eloise é um livro infantil de 1955 escrito por Kay Thompson e ilustrado por Hilary Knight. Eloise é uma menina de seis anos que mora no Hotel Plaza, em Nova York, e apronta confusões com funcionários e hóspedes. A referência Eloise combina com reclamar com educação com I would like to complain e It still does not work, como o barulho no sótão e a lâmpada.",
+  "desc": "TripAdvisor é um site de viagens fundado em 2000 nos Estados Unidos, onde os viajantes avaliam hotéis, restaurantes e passeios com notas e comentários. É comum usá-lo para elogiar, mas também para registrar queixas sobre barulho, quarto ou atendimento. A referência TripAdvisor combina com reclamar com educação com I would like to complain e It still does not work, como o barulho no sótão e a lâmpada.",
   "ficha": {
-   "t": "Eloise",
+   "t": "TripAdvisor",
    "scene": "attic",
    "tod": "indoor",
    "cast": [
     {
      "p": {
-      "hs": "long",
-      "hair": "blond",
+      "hs": "bob",
+      "hair": "red",
       "outfit": "dress",
-      "top": "#f5b7b1",
+      "top": "#16a085",
       "skin": "pale",
-      "arms": "wave",
-      "ribbon": "#c0392b"
+      "arms": "point"
      },
-     "s": 1.1,
+     "s": 1.2,
      "x": 300
     },
     {
-     "a": "dog",
-     "x": 580,
-     "s": 1.0,
-     "c": "#7f8c8d"
+     "p": {
+      "hs": "short",
+      "hair": "gray",
+      "outfit": "suit",
+      "top": "#2c3e50",
+      "skin": "light",
+      "arms": "hold",
+      "tie": "#c0392b",
+      "holds": "suitcase"
+     },
+     "s": 1.2,
+     "x": 580
     }
    ],
    "prop": {
@@ -522,7 +544,7 @@
     "x": 700
    },
    "decor": [
-    "hearts"
+    "stars"
    ]
   }
  },
