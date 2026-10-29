@@ -16,8 +16,9 @@ Não edite `data/`, não faça commit. Valide com `python3 tools/generic/check.p
 2. **Única em todo o inglês regular (A1–C2, 3.000 episódios) e nesta entrega**: nenhuma obra que já seja a obra de outro episódio — nem com grafia/idioma diferente, nem da mesma franquia (“Peter Pan” = “Peter and Wendy”; “The Lego Movie” ≈ “Lego”). O `check.py` confere; confira você mesmo também (`grep` em `data/en-*.json`).
 3. **Real e conhecida**; título em inglês (ou nome próprio consagrado). Fatos corretos — nada inventado. Sem pessoas reais com falas inventadas.
 4. **Adequada ao nível**: A1/A2 = obras acessíveis (infantis, filmes/séries populares, canções, lugares, tradições); B1/B2 = obras adultas conhecidas; C1/C2 = obras culturalmente densas (literatura, cinema autoral, arte, instituições, debates), em inglês.
-5. Varie: não escolha 18 filmes; misture livros, canções, quadros, lugares, tradições, jogos, séries.
-6. `desc`: português do Brasil natural, 2–3 frases, fatos verdadeiros, **inclui obrigatoriamente** a frase `A referência <nome> combina com <foco>.` (o gate de ponte exige “A referência…”).
+5. **Adequação**: o produto é educacional e público amplo. Nada de conteúdo adulto/impróprio como obra (sexo, violência gráfica, humor grosseiro, desenhos adultos como Beavis and Butt-Head, Sex and the City…) em A1–B1; em B2–C2 obras adultas conhecidas são aceitas, mas não de apelo explícito.
+6. Varie: não escolha 18 filmes; misture livros, canções, quadros, lugares, tradições, jogos, séries.
+7. `desc`: português do Brasil natural, 2–3 frases, fatos verdadeiros, **inclui obrigatoriamente** a frase `A referência <nome> combina com <foco>.` (o gate de ponte exige “A referência…”).
 
 ## Ficha da capa (arte nova, à mão)
 Formato e vocabulário válidos: `tools/ficha/vocab.json`; exemplos: `tools/ficha/work/en-a2_fix_01.json`, `tools/ficha/exemplos.json`. `{ "t": <nome da obra>, "scene": …, "tod": …, "cast": [1–4: pessoa "p" OU bicho "a"], "prop": {id, at, s}, "decor": […] }` — desenhe **a cena que todo mundo reconhece da obra** (personagens com roupa/cabelo/chapéu certos, objeto-símbolo, cenário e hora do dia), coerente com o conteúdo da aula (`cenario`/`falas`). **Nenhuma ficha pode repetir elenco+objeto+cenário de outra** (o `check.py` compara com TODAS as fichas existentes e com os outros lotes): varie cenário, objeto e roupas.
