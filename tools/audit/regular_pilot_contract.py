@@ -110,7 +110,11 @@ def audit(course, episodes, ponte=True):
         if episode.get('presentation') != 'regular-pilot-v1':
             failures.append(f'{label}: presentation ausente')
         with_reading = EXPECTED[:3] + ['rdg'] + EXPECTED[3:]
-        if ordinal != 1 and kinds != EXPECTED and kinds != with_reading:
+        # versão final: leitura + diálogo (depois dos verbos) no lugar do último quadro de sons
+        full = list(with_reading)
+        full.insert(full.index('vplay') + 1, 'pgdlg')
+        full.pop(full.index('pglab') + 1)
+        if ordinal != 1 and kinds not in (EXPECTED, with_reading, full):
             failures.append(f'{label}: sequência de 19 quadros inválida')
         if len(episode.get('v') or []) != 6:
             failures.append(f'{label}: vocabulário deve ter exatamente 6 itens')

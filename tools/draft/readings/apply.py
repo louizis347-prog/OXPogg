@@ -1,17 +1,37 @@
-import json,glob,sys,os
-sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-from pilot import R
-n=0
-for fn in sorted(glob.glob('data/en-*.json')):
+import json,glob,sys,os,importlib.util
+D=os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0,D)
+E_={}
+from pilot import R as PR
+for n,(s,q) in PR.items():E_[n]={'r':s,'q':q}
+for fn in sorted(glob.glob(D+'/d_*.py'))+sorted(glob.glob(D+'/b_*.py')):
+    sp=importlib.util.spec_from_file_location('m',fn);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m)
+    for n,v in m.E.items():E_.setdefault(n,{}).update(v)
+RS=['library','cafe','park','street','office','kitchen','living','bedroom','desk','lobby1','cafe2']
+nr=nd=0
+for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
     d=json.load(open(fn));ch=False
     for e in d:
-        if e['n'] in R and not any(x['k']=='rdg' and x.get('obra') for x in e['fr']):
-            s,(q,o,a,why)=R[e['n']]
-            hs=next(x for x in e['fr'] if x['k']=='hotscene')
-            f={'k':'rdg','obra':True,'title':'Conheça a obra: '+e['a']['w'],'s':[[a_,b_] for a_,b_ in s],
-               'q':{'q':q,'o':o,'a':a,'why':why},'rs':hs.get('rs'),'chars':hs.get('chars'),
-               'say':'Leia a resenha. Toque em uma frase para ouvir e ver a tradução.'}
-            i=next(i for i,x in enumerate(e['fr']) if x['k']=='hotscene')+1
-            e['fr'].insert(i,f);ch=True;n+=1
+        v=E_.get(e['n'])
+        if not v:continue
+        fr=e['fr']
+        if 'r' in v and not any(x['k']=='rdg' and x.get('obra') for x in fr):
+            q,o,a,why=v['q']
+            hs=next(x for x in fr if x['k']=='hotscene')
+            i=fr.index(hs)+1
+            near={fr[j].get('rs') for j in (i-1,i,i+1) if 0<=j<len(fr)}
+            f={'k':'rdg','obra':True,'title':'Conheça a obra: '+e['a']['w'],'s':[list(t) for t in v['r']],'q':{'q':q,'o':o,'a':a,'why':why},
+               'rs':next(r for r in RS if r not in near),'chars':hs.get('chars'),'say':'Leia a resenha. Toque em uma frase para ouvir e ver a tradução.'}
+            fr.insert(i,f);ch=True;nr+=1
+        if 'd' in v and not any(x['k']=='pgdlg' for x in fr):
+            vp=next((i for i,x in enumerate(fr) if x['k']=='vplay'),None)
+            if vp is None:continue
+            sc=next(x for x in fr if x['k']=='pgscene')
+            near={fr[j].get('rs') for j in (vp-1,vp,vp+1,vp+2) if 0<=j<len(fr)}
+            f={'k':'pgdlg','title':'Diálogo relâmpago','lines':[list(t) for t in v['d']],'rs':next(r for r in RS if r not in near),'chars':sc.get('chars'),'avatar':1,'say':'Troque as peças e ouça a conversa mudar!'}
+            fr.insert(vp+1,f)
+            lab=next((i for i,x in enumerate(fr) if x['k']=='pglab'),None)
+            if lab is not None and lab+1<len(fr) and fr[lab+1]['k']=='pgsheet':del fr[lab+1]
+            ch=True;nd+=1
     if ch:json.dump(d,open(fn,'w'),ensure_ascii=False,separators=(',',':'))
-print(n)
+print('leituras',nr,'diálogos',nd)
