@@ -252,7 +252,7 @@ function coverFix(step,e){
  }
  const hero=step.querySelector('.az-hero,.fx-hero');if(hero)hero.classList.add('obra-hero');
 }
-const PRACTICE=new Set(['pgsheet','pgrule','pgmold','verbs','vplay','pgexp','pglab','pgspeak','pgmission']);
+const PRACTICE=new Set(['pgmission']);
 function strip(step,e,f){if(!PRACTICE.has(f.k)||step.querySelector('.obra-strip'))return;const m=meta(e),d=document.createElement('div');d.className='obra-strip';d.innerHTML=`<div class="obra-strip-art">${svg(e,'strip')}</div><div class="obra-strip-copy"><span>Obra em foco</span><b>${esc(m.title)}</b></div>`;const a=step.querySelector('.fx-h,.sl-hero,.wr-hero')||step.firstElementChild;if(a&&a.parentNode===step)a.before(d);else step.prepend(d);}
 function sticker(step,e,f){if(f.k!=='wrap')return;const host=step.querySelector('.ps-sticker .ps-stage');if(host&&!host.dataset.obraSticker){host.classList.add('obra-stage');host.dataset.obraSticker='1';host.innerHTML=svg(e,'sticker');}}
 function decorate(step,f,e){if(!has(e)||!step)return;const k=f&&f.k;if(k==='cover')coverFix(step,e);else if(k==='wrap')sticker(step,e,f);else if(PRACTICE.has(k))strip(step,e,f);}

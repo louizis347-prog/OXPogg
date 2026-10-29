@@ -10,7 +10,7 @@ const q=(s,r)=>(r||document).querySelector(s);
 const qa=(s,r)=>[...(r||document).querySelectorAll(s)];
 const tts=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
 const MK=s=>(typeof mk==='function'?mk(s):H(s));
-const face=id=>(id&&window.PogChars)?PogChars.face(id):'';
+const face=id=>{if(Array.isArray(id))id='e:'+id[0];return (typeof id==='string'&&id&&window.PogChars)?PogChars.face(id):''};
 const spkr=()=>(typeof spk!=='undefined'?spk:'🔊');
 
 /* ---------------- diálogo ---------------- */

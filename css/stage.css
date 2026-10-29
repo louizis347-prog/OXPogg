@@ -442,3 +442,17 @@
 
 /* leitura da obra: a tradução aparece ao passar o mouse (e ao tocar, no celular) */
 @media (hover:hover){.rdg-s:hover small{display:block;max-height:none;opacity:1}}
+
+/* fala do personagem na barra de baixo (fora do quadro) */
+.pcl{padding:6px 14px 0}
+.pcl[hidden]{display:none}
+.pcl-b{display:flex;align-items:center;gap:8px;width:100%;text-align:left;border:1px solid rgba(70,105,180,.18);border-radius:14px;background:linear-gradient(180deg,#fbfdff,#f1f6ff);padding:6px 10px;cursor:pointer;box-shadow:0 4px 12px -9px rgba(40,70,140,.4)}
+.pcl-who{flex:none;font:800 11px/1 system-ui;text-transform:uppercase;letter-spacing:.05em;color:#1b4fb8;background:#e6f0ff;border-radius:99px;padding:4px 8px}
+.pcl-b b{flex:1;min-width:0;font:800 14px/1.25 system-ui;color:#12315a}
+.pcl-b small{display:none}
+.pcl-b i{font-style:normal;opacity:.7}
+/* capa: ilustração maior */
+#player .step.fx-cover .az-scene,#player .az-hero .az-scene{aspect-ratio:5/4!important;height:auto!important;max-height:none!important}
+#player .step.fx-cover .az-scene .ps-stage,#player .step.fx-cover .az-scene svg{height:100%!important}
+#player.az.ps .rdg-s{font-size:17px;padding:11px 14px}
+#player.az.ps .rdg-s small{font-size:14px}

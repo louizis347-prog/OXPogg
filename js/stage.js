@@ -20,12 +20,23 @@ function bubble(b){
   if(!b)return '';
   return `<button type="button" class="ps-say" data-say="${H(b[1])}"><span class="ps-say-who">${H(b[0])}</span><b>${H(b[1])}</b>${b[2]?`<small>${H(b[2])}</small>`:''}<i aria-hidden="true">🔊</i></button>`;
 }
+/* fala do personagem: vai para a barra de baixo, junto com a fala do Poggie, e não dentro do quadro */
+function footLine(b){
+  const foot=document.querySelector('#player .p-foot');if(!foot)return;
+  let el=foot.querySelector('#pcl');
+  if(!el){el=document.createElement('div');el.id='pcl';el.className='pcl';foot.insertBefore(el,foot.firstChild)}
+  if(!b||!b[1]){el.hidden=true;el.innerHTML='';return}
+  el.hidden=false;
+  el.innerHTML=`<button type="button" class="pcl-b" data-say="${H(b[1])}"><span class="pcl-who">${H(b[0])}</span><b>${H(b[1])}</b>${b[2]?`<small>${H(b[2])}</small>`:''}<i aria-hidden="true">🔊</i></button>`;
+  el.querySelector('.pcl-b').onclick=()=>tts(b[1]);
+}
 function bindBubble(root){
   root.querySelectorAll('.ps-say').forEach(b=>b.onclick=()=>tts(b.dataset.say));
 }
 /* aplica o palco no quadro já renderizado */
 function decorate(step,f,e){
   try{
+    footLine(null);
     const host=step.parentNode;if(host){host._pgf=f;host._pge=e;if(!host._pgo){host._pgo=new MutationObserver(()=>{try{
       if(!P||!P.e||P.e!==host._pge||!P.e.pilot||!/^fx\d+$/.test(P.steps[P.i]||''))return;
       const sp=host.querySelector('.step');if(sp&&!sp.querySelector('.ps-stage'))decorate(sp,host._pgf,host._pge)}catch(x){}});host._pgo.observe(host,{childList:true})}}
@@ -36,7 +47,7 @@ function decorate(step,f,e){
         over:f.obra?`<span class="ps-obra">📖 ${H(f.obra)}</span>`:''});
       if(sc){sc.innerHTML=st;sc.classList.add('ps-cover');try{if(window.PogObra)PogObra.coverFix(sc,e)}catch(_){}}
       const hero=step.querySelector('.az-hero');
-      if(hero&&f.gancho&&!hero.querySelector('.ps-say')){hero.insertAdjacentHTML('beforeend',bubble(f.gancho));bindBubble(hero)}
+      if(hero&&f.gancho&&!hero.querySelector('.ps-say')){hero.insertAdjacentHTML('beforeend',bubble(Array.isArray(f.gancho)?f.gancho:['Referência de hoje',String(f.gancho)]));bindBubble(hero)}
       return;
     }
     step.classList.add('ps-2col');
@@ -50,13 +61,13 @@ function decorate(step,f,e){
     }
     if(step.querySelector('.ps-stage'))return;
     const h=f.avatar?'avatar':(f.stageH||'strip');
-    const html=`<div class="ps-top">${stage(mk(h))}${bubble(f.bubble)}</div>`;
+    const html=`<div class="ps-top">${stage(mk(h))}</div>`;
     const anchor=step.querySelector('.fx-h')||step.firstElementChild;
     if(anchor&&anchor.parentNode===step)anchor.before(frag(html));else step.prepend(frag(html));
-    const top=step.querySelector('.ps-top');if(top)bindBubble(top);
+    const top=step.querySelector('.ps-top');if(top)bindBubble(top);footLine(f.bubble);
   }catch(x){if(window.console)console.warn('pgstage',x)}
 }
-window.PogStage={stage,bubble,decorate,bindBubble};
+window.PogStage={stage,bubble,decorate,bindBubble,footLine};
 const spk2=()=>(typeof spk!=='undefined'?spk:'🔊');
 
 /* ---------- quadro: cena clicável ---------- */
