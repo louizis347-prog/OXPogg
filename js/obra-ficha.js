@@ -165,8 +165,8 @@ const countEl=g=>(g.match(/<(path|ellipse|circle|rect|line|polygon|g)\b/g)||[]).
 function enrich(g,S,f,body){
   const rnd=rngOf(hash('enr'+(f.scene||'')+(f.tod||'')+g.length)),T=S.c.T,indoor=S.c.indoorFloor,night=S.c.night;
   let add='',i=0;
-  while(countEl(g+add+body)<122&&i++<8){
-    if(indoor){add+=[...Array(3)].map(()=>sparkle(40+rnd()*720,40+rnd()*260,6+rnd()*7)).join('')+[...Array(2)].map(()=>starD(40+rnd()*720,40+rnd()*200,5+rnd()*5)).join('')}
+  while(countEl(g+add+body)<122&&i++<16){
+    if(indoor){add+=[...Array(4)].map(()=>sparkle(40+rnd()*720,40+rnd()*260,6+rnd()*7)).join('')+[...Array(3)].map(()=>starD(40+rnd()*720,40+rnd()*200,5+rnd()*5)).join('')+[...Array(2)].map(()=>heartD(60+rnd()*680,50+rnd()*180,.22+rnd()*.12,['#e8709f','#f6c84c','#7ec8f2'][Math.floor(rnd()*3)])).join('')}
     else{
       add+=[...Array(3)].map(()=>flower(20+rnd()*760,380+rnd()*60,1+rnd()*.5,['#e8473b','#f6a23a','#e8709f','#8a5ac8','#fff'][Math.floor(rnd()*5)])).join('')+[...Array(3)].map(()=>tuft(rnd()*800,375+rnd()*70,.9+rnd()*.4)).join('');
       add+=night?[...Array(3)].map(()=>firefly(rnd()*800,140+rnd()*240)).join(''):butterfly(80+rnd()*640,100+rnd()*150,['#e8709f','#f6a23a','#7ec8f2'][Math.floor(rnd()*3)])+sparkle(60+rnd()*680,50+rnd()*200,6+rnd()*6);

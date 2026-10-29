@@ -12,7 +12,7 @@ PERSON_KEYS = {'hs', 'hair', 'skin', 'outfit', 'top', 'bot', 'shirt', 'shoe', 'h
                'holdColor', 'holdS', 'holdDx', 'holdDy', 'cape', 'wings', 'scarf', 'trim', 'tie', 'belt', 'band', 'ribbon', 'apron', 'skirt', 'emblem', 'stripe', 'num',
                'ears', 'sleeve', 'legs', 'wide'}
 ANIMAL_KEYS = {'a', 'c', 'c2', 's', 'x', 'y', 'flip', 'back'}
-FICHA_KEYS = {'t', 'scene', 'tod', 'cast', 'prop', 'decor', 'accent', 'sunx', 'propOver', 'falta'}
+FICHA_KEYS = {'t', 'scene', 'tod', 'cast', 'prop', 'decor', 'accent', 'sunx', 'propOver', 'falta', 'conflito'}
 
 
 def color_ok(v):
@@ -83,18 +83,25 @@ def main():
     F = {}
     for fn in files:
         for n, f in json.load(open(fn, encoding='utf-8')).items(): F[int(n)] = f
+    # a unicidade vale entre TODOS os cursos já fichados (uma capa nunca repete a de outro nível)
+    OUT = {}
+    if not a:
+        for fn in sorted(glob.glob(os.path.join(HERE, 'work', '*_*.json'))):
+            for n, f in json.load(open(fn, encoding='utf-8')).items():
+                if int(n) not in F: OUT[int(n)] = f
     mine = {int(k) for k in json.load(open(meu, encoding='utf-8'))} if meu else None
     bad = 0
     for n, f in sorted(F.items()):
         if mine is not None and n not in mine: continue
         for e in check(n, f): print('ERRO %s: %s' % (n, e)); bad += 1
     seen, seen2, seen3 = {}, {}, {}
-    for n, f in sorted(F.items()):
+    ALL = dict(F); ALL.update(OUT)
+    for n, f in sorted(ALL.items()):
         try: c, p, s = signature(f)
         except Exception: continue
         for tab, key, msg in ((seen, (c, p, s), 'mesma combinação personagem+objeto+cena'), (seen2, (p, s), 'mesmo objeto e mesma cena'), (seen3, (c, s), 'mesmo elenco e mesma cena')):
             if key in tab:
-                if mine is None or n in mine or tab[key] in mine: print('ERRO %s: %s que o episódio %s' % (n, msg, tab[key])); bad += 1
+                if (mine is None and n in F) or (mine is not None and (n in mine or tab[key] in mine)): print('ERRO %s: %s que o episódio %s' % (n, msg, tab[key])); bad += 1
             else: tab[key] = n
     if todos:
         man = json.load(open(os.path.join(ROOT, 'data', 'manifest.json')))

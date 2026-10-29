@@ -6,7 +6,8 @@ curso = sys.argv[1] if len(sys.argv) > 1 else 'en-a1'
 F = {}
 for fn in sorted(glob.glob(os.path.join(HERE, 'work', curso + '_*.json'))):
     for n, f in json.load(open(fn, encoding='utf-8')).items():
-        f = {k: v for k, v in f.items() if k not in ('t', 'falta')}
+        if f.get('conflito'): continue   # obra com título diferente da aula: fica de fora até o título ser corrigido
+        f = {k: v for k, v in f.items() if k not in ('t', 'falta', 'conflito')}
         F[int(n)] = f
 out = '/* Fichas das capas (gerado por tools/ficha/build.py a partir de tools/ficha/work/%s_*.json) */\nwindow.PogFichas=Object.assign(window.PogFichas||{},%s);\n' % (curso, json.dumps(F, ensure_ascii=False, separators=(',', ':'), sort_keys=True))
 open(os.path.join(ROOT, 'js', 'fichas-%s.js' % curso), 'w', encoding='utf-8').write(out)
