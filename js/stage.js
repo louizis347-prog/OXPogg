@@ -36,7 +36,7 @@ function bindBubble(root){
 /* aplica o palco no quadro já renderizado */
 function decorate(step,f,e){
   try{
-    footLine(null);
+    if(f.k!=='combo')footLine(null);
     const host=step.parentNode;if(host){host._pgf=f;host._pge=e;if(!host._pgo){host._pgo=new MutationObserver(()=>{try{
       if(!P||!P.e||P.e!==host._pge||!P.e.pilot||!/^fx\d+$/.test(P.steps[P.i]||''))return;
       const sp=host.querySelector('.step');if(sp&&!sp.querySelector('.ps-stage'))decorate(sp,host._pgf,host._pge)}catch(x){}});host._pgo.observe(host,{childList:true})}}
@@ -51,7 +51,7 @@ function decorate(step,f,e){
       return;
     }
     step.classList.add('ps-2col');
-    if(/^(hotscene|pgscene|pgrule|pgspeak)$/.test(f.k))return;
+    if(/^(hotscene|pgscene|pgrule|pgspeak|combo)$/.test(f.k))return;
     if(f.k==='wrap'){
       const hero=step.querySelector('.wr-hero');if(!hero||step.querySelector('.ps-sticker'))return;
       const s=f.sticker||{};
