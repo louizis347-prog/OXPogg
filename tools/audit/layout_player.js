@@ -2,7 +2,7 @@
 // (3) texto cortado por overflow:hidden. Uso: node tools/audit/layout_player.js WxH idx curso [maxFrames]
 const {chromium}=require(process.env.PLAYWRIGHT||'/opt/node22/lib/node_modules/playwright');
 const [,,vp,idx,cid,mx]=process.argv;const [W,H]=vp.split('x').map(Number);
-(async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({viewport:{width:W,height:H}});
+(async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium',args:['--no-sandbox']});const p=await b.newPage({viewport:{width:W,height:H}});
 await p.goto('http://localhost:8123/app.html');await p.evaluate(()=>{try{sessionStorage.setItem('pogglot:intro','1')}catch(e){}});await p.reload();await p.waitForTimeout(2000);
 try{await p.click('text=Agora não',{timeout:1500})}catch(e){}
 await p.evaluate(async([c,ix])=>{await ensureLangLoaded(c);if(window.PogBilling)PogBilling.allow=()=>true;play(c,ix)},[cid,+idx]);
