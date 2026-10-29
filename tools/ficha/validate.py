@@ -12,7 +12,7 @@ PERSON_KEYS = {'hs', 'hair', 'skin', 'outfit', 'top', 'bot', 'shirt', 'shoe', 'h
                'holdColor', 'holdS', 'holdDx', 'holdDy', 'cape', 'wings', 'scarf', 'trim', 'tie', 'belt', 'band', 'ribbon', 'apron', 'skirt', 'emblem', 'stripe', 'num',
                'ears', 'sleeve', 'legs', 'wide'}
 ANIMAL_KEYS = {'a', 'c', 'c2', 's', 'x', 'y', 'flip', 'back'}
-FICHA_KEYS = {'t', 'scene', 'tod', 'cast', 'prop', 'decor', 'accent', 'sunx', 'propOver', 'falta'}
+FICHA_KEYS = {'t', 'scene', 'tod', 'cast', 'prop', 'decor', 'accent', 'sunx', 'propOver', 'falta', 'conflito'}
 
 
 def color_ok(v):
