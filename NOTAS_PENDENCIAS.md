@@ -221,3 +221,9 @@ B2: 510/510 no contrato (`regular_pilot_contract.py --course en-b2`: 0 falhas). 
 
 ## Ponte obra↔episódio — piloto (20 episódios) e padrão
 Padrão `docs/PADRAO_PONTE_OBRA.md`; aplicador `tools/audit/apply_bridge_patches.py` (idempotente); auditoria `tools/audit/regular_bridge_audit.py`; relatório `docs/AUDITORIA_PADRAO_E_PONTE.md`; antes/depois `docs/PILOTO_PONTE_ANTES_DEPOIS.md`. Falta replicar nos ~1.240 episódios restantes (cena + missão) e tratar os defeitos achados (elenco genérico, cena 2 incoerente) por reconstrução. Depois de reconstruir dados de um episódio já com patch, rodar `python3 tools/audit/apply_bridge_patches.py`.
+
+## Obras repetidas — 20 aulas reescritas e 35 fichas do A2 liberadas (outubro/2026)
+- Aulas que falavam de obra já usada foram reescritas com obra livre (módulos `*_zz_rw1.py`, obras em `obras_new_*_zz_rw.json`, ponte em `tools/audit/bridge_patches/rw_*.json`; reconstruir só com `COURSE=<curso> python3 tools/model_v3.py <n…>`): A1 7070021 (Dear Zoo), 7910009 (In the Night Garden); A2 7920004, 81064, 7081091, 7920015, 7081112, 7081203, 7081228, 7081325; B1 7082170, 930044, 930057, 82019; B2 940003, 7940012, 7083313; C1 950013; C2 960061, 85070 (planos em `tools/plan/map` atualizados). A Alice voltou ao 7009801 (referência do A1).
+- Zero obras repetidas entre A1–C2. **Não reconstruir um curso inteiro com `model_v3.py` sem `n`**: os dados atuais têm correções de outras frentes que a reconstrução apagaria.
+- A2: as 35 fichas marcadas `conflito` eram avisos antigos (a obra já tinha sido trocada); marcação removida, 85 fichas no ar. Fichas redesenhadas: 7920004 (Stuart Little), 81054 (Moomins).
+- Falta: fichas de capa à mão para o resto do A2 e para B1, B2, C1 e C2; as capas das aulas novas de A2–C2 ainda usam o gerador.
