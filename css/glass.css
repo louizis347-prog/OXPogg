@@ -250,3 +250,11 @@
   #player.gl .step .ps-qs,#player.gl .step .ps-qs.grid,#player.gl .cb .ps-qs:not(.grid),#player.gl .cb .ps-qs.grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:14px!important}
   #player.gl .step .ps-q.pic .ps-opts{grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr))!important}
 }
+
+/* capa: cartão de vidro também (as folhas antigas pintam de branco com !important) */
+#player.gl.az .step.fx-cover>.az-hero,#player.gl .step.fx-cover>.az-hero{
+  background:rgba(255,255,255,.55)!important;backdrop-filter:blur(26px) saturate(1.7);-webkit-backdrop-filter:blur(26px) saturate(1.7);
+  border:1px solid rgba(255,255,255,.85)!important;border-radius:32px!important;box-shadow:var(--gl-sh),inset 0 1px 0 rgba(255,255,255,.9)!important;padding:clamp(14px,3.4vw,26px)!important}
+#player.gl.az .step.fx-cover .az-scene{border-radius:24px!important;box-shadow:0 20px 36px -24px rgba(8,70,80,.6)}
+#player.gl.az .step.fx-cover .az-ep{background:rgba(11,124,136,.12)!important;color:#0a6270!important}
+#player.gl .step.fx-cover :is(.fx-hook,.fx-cw){background:rgba(255,255,255,.7)!important;border-radius:20px!important}

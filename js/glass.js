@@ -85,7 +85,7 @@ function art(){
 /* palavras com hífen (meio-dia, heavy-handed) não se partem entre linhas */
 const HY=/[A-Za-zÀ-ÿ0-9]+(?:[-‑][A-Za-zÀ-ÿ0-9]+)+/g;
 function nobreak(root){
-  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>{HY.lastIndex=0;return HY.test(n.nodeValue)&&n.parentElement&&!n.parentElement.closest('svg,script,style,textarea,input,.gl-nb,button.ps-o')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>{HY.lastIndex=0;return HY.test(n.nodeValue)&&n.parentElement&&!n.parentElement.closest('svg,script,style,textarea,input,.gl-nb')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
   const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
   for(const n of nodes){const t=n.nodeValue.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));const sp=document.createElement('span');sp.innerHTML=t.replace(HY,m=>'<span class="gl-nb">'+m+'</span>');n.replaceWith(...sp.childNodes)}
 }
