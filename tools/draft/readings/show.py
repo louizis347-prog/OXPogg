@@ -6,6 +6,9 @@ done=set()
 import importlib.util,os
 for fn in glob.glob('/home/user/OXPogg/tools/draft/readings/b_*.py'):
     sp=importlib.util.spec_from_file_location('x',fn);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);done|=set(m.E)
+for fn in glob.glob('/home/user/OXPogg/tools/draft/readings/b_*.txt'):
+    for ln in open(fn,encoding='utf-8'):
+        if ln.startswith('#'):done.add(int(ln[1:].split()[0]))
 for i in range(start,min(start+cnt,len(L))):
     e=L[i];a=e['a']
     sc=next((x for x in e['fr'] if x['k']=='pgscene'),{})

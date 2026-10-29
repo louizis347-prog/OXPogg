@@ -7,6 +7,23 @@ for n,(s,q) in PR.items():E_[n]={'r':s,'q':q}
 for fn in sorted(glob.glob(D+'/d_*.py'))+sorted(glob.glob(D+'/b_*.py')):
     sp=importlib.util.spec_from_file_location('m',fn);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m)
     for n,v in m.E.items():E_.setdefault(n,{}).update(v)
+def load_txt(fn):
+    out={};cur=None
+    for ln in open(fn,encoding='utf-8'):
+        ln=ln.rstrip('\n')
+        if not ln.strip():continue
+        if ln.startswith('#'):
+            cur=int(ln[1:].split()[0]);out[cur]={'r':[],'d':[]};continue
+        k,_,rest=ln.partition(':');f=[x.strip() for x in rest.split(' // ')]
+        if k=='r':out[cur]['r'].append((f[0],f[1]))
+        elif k=='q':out[cur]['q']=(f[0],[f[1],f[2],f[3]],int(f[4]),f[5])
+        elif k=='d':out[cur]['d'].append((f[0],f[1],f[2]))
+    for v in out.values():
+        if not v['d']:del v['d']
+        if not v['r']:del v['r']
+    return out
+for fn in sorted(glob.glob(D+'/b_*.txt')):
+    for n,v in load_txt(fn).items():E_.setdefault(n,{}).update(v)
 RS=['library','cafe','park','street','office','kitchen','living','bedroom','desk','lobby1','cafe2']
 nr=nd=0
 for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
