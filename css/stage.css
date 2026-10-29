@@ -430,3 +430,12 @@
 .ps-rt{flex:0 1 auto;max-width:100%;overflow-wrap:anywhere}.ps-ru-body mark{white-space:normal}
 @media(max-width:340px){.ps-pair{flex-wrap:wrap;justify-content:center}.ps-pair .ps-big{font-size:20px}}
 @media(max-width:340px){.ps-pc.many .ps-big,.ps-big{white-space:normal;font-size:18px}}
+
+/* ---- acabamento suave dos quadros: bordas finas e translúcidas + sombra leve, sem escurecer ---- */
+.ps-sec,.ps-spc{border:1px solid rgba(70,105,180,.16);background:linear-gradient(180deg,#fbfdff,#f3f7ff);box-shadow:0 10px 24px -16px rgba(40,70,140,.35),inset 0 1px 0 rgba(255,255,255,.9)}
+.ps-pair,.ps-use,.ps-lx,.ps-o,.ps-mc{border:1px solid rgba(70,105,180,.18);box-shadow:0 4px 12px -8px rgba(40,70,140,.35),inset 0 1px 0 rgba(255,255,255,.85)}
+.ps-tip{border:1px solid rgba(214,160,30,.28);box-shadow:0 4px 12px -9px rgba(150,100,0,.35)}
+.ps-spc.ok{border-color:rgba(44,170,100,.4)}
+.ps-o.ok{border-color:rgba(44,198,115,.7)}.ps-o.no{border-color:rgba(239,106,76,.7)}
+.ps-slot{box-shadow:0 8px 16px -10px rgba(20,40,90,.45),inset 0 1px 0 rgba(255,255,255,.28)}
+.ps-chip{box-shadow:0 6px 14px -9px rgba(20,40,90,.45),inset 0 1px 0 rgba(255,255,255,.28)}
