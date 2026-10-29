@@ -106,7 +106,7 @@ def audit(course, episodes, ponte=True):
     for ordinal, (path, episode) in enumerate(episodes, 1):
         label = f'{course} {ordinal} ({episode.get("n")}, {path})'
         frames = episode.get('fr', [])
-        kinds = [frame.get('k') for frame in frames]
+        kinds = ['pgsheet' if frame.get('k') == 'pgfind' else frame.get('k') for frame in frames]
         if episode.get('presentation') != 'regular-pilot-v1':
             failures.append(f'{label}: presentation ausente')
         with_reading = EXPECTED[:3] + ['rdg'] + EXPECTED[3:]
