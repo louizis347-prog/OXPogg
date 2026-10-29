@@ -69,7 +69,7 @@ def signature(f):
         p = m['p']; return 'p:%s:%s:%s:%s:%s' % (p.get('hs'), p.get('outfit'), p.get('hat', ''), p.get('top', ''), p.get('hair', ''))
     cast = '+'.join(sorted(who(m) for m in f['cast']))
     pr = (f.get('prop') or {}).get('id', '') or ','.join(sorted({m['p']['holds'] for m in f['cast'] if 'p' in m and m['p'].get('holds')}))
-    return cast, pr, f['scene']
+    return cast, pr, f['scene'] + '|' + f.get('tod', '') + '|' + ','.join(sorted(f.get('decor') or []))
 
 
 def main():
