@@ -30,10 +30,18 @@ function addExpr(cid,e){var n=0;if(!window.PogVocab||!PogVocab.extract)return 0;
     var k=srsKey(cid,a);if(ST.srs[k])return;
     ST.srs[k]={w:a,m:b,d:'',c:cid,b:0,due:srsToday()+Math.floor(NEWQ.i++/15),ep:e.n,t:'x'};n++});return n}
 var NEWQ={i:0};
+/* verbos (quadro de verbos) e expressões (pgexp) com frase de exemplo */
+function addRich(cid,e){var n=0;
+  function put(a,b,d,t){if(!a||String(a).length>90||!b)return;var k=srsKey(cid,a);if(ST.srs[k]){if(d&&!ST.srs[k].ex)ST.srs[k].ex=d;return}
+    ST.srs[k]={w:a,m:b,d:'',ex:d||'',c:cid,b:0,due:srsToday()+Math.floor(NEWQ.i++/15),ep:e.n,t:t};n++}
+  (e.fr||[]).forEach(function(f){if(!f)return;
+    if(f.k==='verbs'||f.k==='vplay')(f.items||[]).forEach(function(i){if(i&&i.v){var ex=(i.ex&&i.ex[0])?String(i.ex[0]).replace(/\*\*/g,''):'';put(String(i.v).replace(/\*\*/g,''),String(i.pt||''),ex,'w')}});
+    if(f.k==='pgexp')(f.items||[]).forEach(function(i){if(!i)return;var a=i.en||i.x;var ex=(i.ex&&i.ex[0])?String(i.ex[0]).replace(/\*\*/g,''):'';put(String(a||'').replace(/\*\*/g,''),String(i.pt||''),ex,'x')})});
+  return n}
 function backfillExpr(){NEWQ.i=0;var n=0;try{
   var pend=Object.keys(ST.srs).filter(function(k){return ST.srs[k].t==='x'&&ST.srs[k].due>srsToday()}).length;NEWQ.i=pend;
   Object.keys(COURSES).forEach(function(cid){var eps=EP[cid];if(!eps||!eps.length)return;
-    eps.forEach(function(e){if(isPlannedEpisode(e)||e.rev||!ST.done[cid+'-'+e.n])return;n+=addExpr(cid,e)})});
+    eps.forEach(function(e){if(isPlannedEpisode(e)||e.rev||!ST.done[cid+'-'+e.n])return;n+=addExpr(cid,e);n+=addRich(cid,e)})});
   if(n)save()}catch(err){}return n}
 async function prepare(){
   var cs=Object.keys(COURSES).filter(function(c){return doneCountFor(c)>0});
@@ -49,6 +57,10 @@ function dueCards(course){var d=srsToday();
    .sort(function(a,b){return a.c.due-b.c.due||a.c.b-b.c.b})}
 function mix(list,n){var w=list.filter(function(x){return kindOf(x.c)==='w'}),x=list.filter(function(x){return kindOf(x.c)==='x'}),out=[],i=0;
   while(out.length<n&&(w.length||x.length)){if(i%2===0&&w.length)out.push(w.shift());else if(x.length)out.push(x.shift());else out.push(w.shift());i++}return out}
+function last10(){var cid=st.course||(typeof ST!=='undefined'&&ST.lastCourse)||'';if(!cid||!EP[cid])return [];
+  var done=EP[cid].filter(function(e){return ST.done[cid+'-'+e.n]&&!isPlannedEpisode(e)}).slice(-10).map(function(e){return e.n}),set={};done.forEach(function(n){set[n]=1});
+  var l=Object.keys(ST.srs).filter(function(k){var c=ST.srs[k];return c.c===cid&&set[c.ep]}).map(function(k){return{k:k,c:ST.srs[k]}});
+  return mix(l.sort(function(){return Math.random()-.5}),20)}
 function forecast(){var d=srsToday(),f=[0,0,0,0,0,0,0];Object.keys(ST.srs).forEach(function(k){var x=ST.srs[k].due-d;if(x>=1&&x<=7)f[x-1]++});return f}
 function boxes(){var b=[0,0,0,0,0,0,0];Object.keys(ST.srs).forEach(function(k){b[Math.min(6,ST.srs[k].b||0)]++});return b}
 function flagOf(cid){var c=COURSES[cid]||{};return c.flag||cid}
@@ -76,13 +88,14 @@ function dash(el){
    '<div class="rv-hero"><div class="rv-ring" style="--p:'+(all.length?Math.min(100,doneToday()/(doneToday()+all.length)*100):100)+'"><b>'+list.length+'</b><small>'+E(t('due'))+'</small></div><div class="rv-meta"><span>📖 '+w+' '+E(t('words'))+'</span><span>💬 '+x+' '+E(t('expr'))+'</span><span>🔥 '+streakNow()+' '+E(t('streak'))+'</span><span>✅ '+doneToday()+' '+E(t('doneToday'))+'</span></div></div>'+
    (cc.length>1?'<div class="rv-chips" id="rv-c"><button class="pg-chip" data-c="" aria-pressed="'+(!st.course)+'">'+E(t('all'))+'</button>'+cc.map(function(c){return '<button class="pg-chip" data-c="'+E(c)+'" aria-pressed="'+(st.course===c)+'">'+E(flagOf(c))+'</button>'}).join('')+'</div>':'')+
    '<div class="rv-chips" id="rv-s"><span>'+E(t('size'))+':</span>'+[10,20,40].map(function(v){return '<button class="pg-chip" data-s="'+v+'" aria-pressed="'+(st.size===v)+'">'+v+'</button>'}).join('')+'</div>'+
-   (n?'<button class="pg-btn rv-go" id="rv-go">'+E(t('startN')(n))+'</button>':'<p class="rv-sub">'+E(t('none'))+'</p>')+
+   (n?'<button class="pg-btn rv-go" id="rv-go">'+E(t('startN')(n))+'</button>':'<p class="rv-sub">'+E(t('none'))+'</p>')+(last10().length>=5?'<button class="pg-btn ghost rv-go" id="rv-l10">🔟 Revisão dos últimos 10 episódios ('+Math.min(20,last10().length)+')</button>':'')+
    '<h4 class="rv-h4">'+E(t('forecast'))+'</h4><div class="rv-fc">'+f.map(function(v,i){return '<div><i style="height:'+Math.max(4,Math.round(v/mx*54))+'px"></i><b>'+v+'</b><small>'+E(days[i])+'</small></div>'}).join('')+'</div>'+
    '<h4 class="rv-h4">'+E(t('boxes'))+' · '+tot+' '+E(t('deck'))+'</h4><div class="rv-bx">'+bx.map(function(v,i){return '<div><i style="width:'+Math.max(3,Math.round(v/bm*100))+'%"></i><small>'+(i+1)+'</small><b>'+v+'</b></div>'}).join('')+'</div>'+
    '<p class="rv-note">'+E(t('tip'))+' '+E(t('newCards'))+'.</p>')+'</div>';
   el.querySelector('.rv-x').onclick=close;
   var cb=el.querySelector('#rv-c');if(cb)cb.onclick=function(e){var b=e.target.closest('[data-c]');if(b){st.course=b.dataset.c;dash(el)}};
   var sb=el.querySelector('#rv-s');if(sb)sb.onclick=function(e){var b=e.target.closest('[data-s]');if(b){st.size=+b.dataset.s;dash(el)}};
+  var l10=el.querySelector('#rv-l10');if(l10)l10.onclick=function(){session(el,last10().slice(0,20))};
   var g=el.querySelector('#rv-go');if(g)g.onclick=function(){session(el,mix(list,st.size))}}
 function session(el,items){
   var q=items.map(function(x){return x.k}),n0=q.length,R={i:0,ok:0,done:0,retry:{}};
@@ -99,8 +112,51 @@ function session(el,items){
      (nxt?'<p class="rv-sub">'+E(t('next'))+': '+E(nxt-d===1?t('tomorrow'):t('inDays')(nxt-d))+'.</p>':'')+
      '<button class="pg-btn rv-go" id="rv-back">'+E(t('title'))+'</button></div>';
     el.querySelector('#rv-q').onclick=close;el.querySelector('#rv-back').onclick=function(){dash(el)};try{if(R.ok)confetti(80)}catch(e){}}
+  var norm=function(s){return String(s||'').toLowerCase().replace(/[’‘]/g,"'").replace(/[^\p{L}\p{N}' ]+/gu,' ').replace(/\s+/g,' ').trim()};
+  function pickMode(c){var b=c.b||0,x=kindOf(c)==='x',lang=(COURSES[c.c]||{}).tts||'';if(!/^en/i.test(lang))return 'flip';
+    if(b<=1)return 'flip';if(b===2)return 'mcq';if(b===3)return 'dict';if(b===4)return 'type';return (window.PogVoice&&window.PogVoice.mount)?'shadow':'type'}
+  function finishCard(ok,k){var cc=ST.srs[k],d=srsToday();
+    if(ok){cc.b=Math.min(6,cc.b+1);cc.due=d+SRS_STEPS[cc.b];R.ok++;R.done++}
+    else{cc.b=0;cc.due=d;R.retry[k]=(R.retry[k]||0)+1;if(R.retry[k]<=1)q.push(k);else cc.due=d+1;R.done=Math.min(R.done+1,n0)}
+    save();try{beep(ok)}catch(e){}}
+  function modeCard(k,c,mode,lang){
+    var tag=kindOf(c)==='x'?'💬':'📖',hdr='<div class="rv-card">'+bar();
+    var next=function(){R.i++;show()};
+    el.querySelector&&0;
+    if(mode==='mcq'){
+      var pool=Object.keys(ST.srs).filter(function(z){return z!==k&&ST.srs[z].c===c.c&&ST.srs[z].m&&ST.srs[z].m!==c.m}).sort(function(){return Math.random()-.5}).slice(0,3);
+      if(pool.length<3){return false}
+      var opts=pool.map(function(z){return ST.srs[z].m}).concat([c.m]).sort(function(){return Math.random()-.5});
+      el.innerHTML=hdr+'<div class="rv-q">O que significa? <span class="rv-tag">'+tag+'</span></div><div class="rv-flash"><div class="rv-w">'+E(c.w)+'</div><button class="pg-btn ghost" id="rv-say">🔊 '+E(t('listen'))+'</button></div><div class="rv-opts">'+opts.map(function(o,i){return '<button class="pg-btn ghost rv-o" data-i="'+i+'">'+E(o)+'</button>'}).join('')+'</div></div>';
+      el.querySelector('#rv-q').onclick=close;var say=function(ev){try{speak(c.w,lang,ev&&ev.currentTarget)}catch(e){}};el.querySelector('#rv-say').onclick=say;setTimeout(say,250);
+      el.querySelectorAll('.rv-o').forEach(function(b){b.onclick=function(){var ok=opts[+b.dataset.i]===c.m;
+        el.querySelectorAll('.rv-o').forEach(function(x){x.disabled=true;if(opts[+x.dataset.i]===c.m)x.classList.add('rv-ok')});if(!ok)b.classList.add('rv-no');
+        finishCard(ok,k);setTimeout(next,ok?650:1500)}});return true}
+    if(mode==='dict'||mode==='type'){
+      var dict=mode==='dict',ans=c.w;
+      var front=dict?'<div class="rv-q">Ouça e escreva <span class="rv-tag">'+tag+'</span></div><div class="rv-flash"><button class="pg-btn ghost rv-big" id="rv-say">🔊 '+E(t('listen'))+'</button><button class="pg-btn ghost" id="rv-slow">🐢 Devagar</button></div>':'<div class="rv-q">Como se diz em inglês? <span class="rv-tag">'+tag+'</span></div><div class="rv-flash"><div class="rv-w">'+E(c.m)+'</div></div>';
+      el.innerHTML=hdr+front+'<input class="rv-in" id="rv-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Digite aqui"><div class="rv-fb" id="rv-fb"></div><div class="rv-foot" id="rv-foot"><button class="pg-btn rv-ok" id="rv-chk">Conferir</button><button class="pg-btn ghost" id="rv-skip">Não sei</button></div></div>';
+      el.querySelector('#rv-q').onclick=close;var inp=el.querySelector('#rv-in');setTimeout(function(){try{inp.focus()}catch(e){}},150);
+      if(dict){var say=function(ev){try{speak(ans,lang,ev&&ev.currentTarget)}catch(e){}};el.querySelector('#rv-say').onclick=say;el.querySelector('#rv-slow').onclick=function(ev){try{speak(ans,lang,ev.currentTarget,null,true)}catch(e){}};setTimeout(say,300)}
+      var judged=false;
+      function judge(giveUp){if(judged)return;judged=true;var g=norm(inp.value),ok=!giveUp&&g&&(g===norm(ans)||(norm(ans).indexOf(' ')>0&&g.length>3&&norm(ans).replace(/\b(to|a|an|the|someone|something|one's)\b/g,'').replace(/\s+/g,' ').trim()===g.replace(/\b(to|a|an|the|someone|something|one's)\b/g,'').replace(/\s+/g,' ').trim()));
+        var fb=el.querySelector('#rv-fb');fb.className='rv-fb '+(ok?'ok':'no');fb.innerHTML=(ok?'✅ Isso mesmo! ':'❌ Era: ')+'<b>'+E(ans)+'</b>'+(c.ex?'<br><small>'+E(c.ex)+'</small>':'');
+        inp.disabled=true;finishCard(ok,k);try{speak(ans,lang)}catch(e){}
+        el.querySelector('#rv-foot').innerHTML='<button class="pg-btn rv-ok" id="rv-next">Continuar</button>';el.querySelector('#rv-next').onclick=next;try{el.querySelector('#rv-next').focus()}catch(e){}}
+      el.querySelector('#rv-chk').onclick=function(){judge(false)};el.querySelector('#rv-skip').onclick=function(){judge(true)};
+      inp.onkeydown=function(ev){if(ev.key==='Enter'){ev.preventDefault();judge(false)}ev.stopPropagation()};return true}
+    if(mode==='shadow'){
+      var phrase=(c.ex&&c.ex.length<110)?c.ex:c.w;
+      el.innerHTML=hdr+'<div class="rv-q">Ouça e repita em voz alta <span class="rv-tag">'+tag+'</span></div><div class="rv-flash"><div class="rv-w" style="font-size:22px">'+E(phrase)+'</div><div class="rv-m">'+E(c.w)+' = '+E(c.m)+'</div><button class="pg-btn ghost" id="rv-say">🔊 '+E(t('listen'))+'</button></div><div id="rv-mic"></div><div class="rv-foot" id="rv-foot"><button class="pg-btn ghost" id="rv-skip">Pular</button></div></div>';
+      el.querySelector('#rv-q').onclick=close;var say=function(ev){try{speak(phrase,lang,ev&&ev.currentTarget)}catch(e){}};el.querySelector('#rv-say').onclick=say;setTimeout(say,300);
+      var host=el.querySelector('#rv-mic'),doneFlag=false;
+      try{var v=PogVoice.mount(host,{force:true,target:phrase,lang:lang,onDone:function(r){if(doneFlag)return;doneFlag=true;var ok=(r&&r.score!=null?r.score:0)>=65;finishCard(ok,k);host.insertAdjacentHTML('beforeend','<div class="rv-fb '+(ok?'ok':'no')+'">'+(ok?'🌟 Muito bem! ':'Tente de novo amanhã. ')+(r&&r.score!=null?r.score+'%':'')+'</div>');el.querySelector('#rv-foot').innerHTML='<button class="pg-btn rv-ok" id="rv-next">Continuar</button>';el.querySelector('#rv-next').onclick=next}});if(v&&v.start)v.start()}catch(e){return false}
+      el.querySelector('#rv-skip').onclick=function(){if(doneFlag)return;doneFlag=true;finishCard(false,k);next()};return true}
+    return false}
   function show(){
     if(R.i>=q.length)return finish();
+    var k0=q[R.i],c0=ST.srs[k0],lang0=(COURSES[c0.c]||{}).tts||'en-US',m0=pickMode(c0);
+    if(m0!=='flip'&&modeCard(k0,c0,m0,lang0))return;
     var k=q[R.i],c=ST.srs[k],lang=(COURSES[c.c]||{}).tts||'en-US',rev=(kindOf(c)==='x'&&c.b>=3)||(kindOf(c)==='w'&&c.b>=4),rm=roma(c.w,c.c);
     var front=rev?'<div class="rv-w">'+E(c.m)+'</div>':'<div class="rv-w">'+E(c.w)+'</div>'+(rm?'<div class="rv-rm">'+E(rm)+'</div>':'')+'<button class="pg-btn ghost" id="rv-say">🔊 '+E(t('listen'))+'</button>';
     var back=rev?'<div class="rv-w">'+E(c.w)+'</div>'+(rm?'<div class="rv-rm">'+E(rm)+'</div>':'')+'<button class="pg-btn ghost" id="rv-say2">🔊 '+E(t('listen'))+'</button>':'<div class="rv-m">'+E(c.m)+'</div>'+(c.d?'<div class="rv-d">'+E(c.d)+'</div>':'');
