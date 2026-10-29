@@ -2,6 +2,8 @@
    Não altera dados nem a lógica dos quadros. window.POG_GLASS=false desliga. */
 (function(){
 'use strict';
+/* telas compostas (js/combo.js) em todos os episódios do inglês regular; window.POG_COMBO_MAX=10 volta ao piloto */
+if(window.POG_COMBO_MAX==null)window.POG_COMBO_MAX=1e9;
 const pl=()=>document.getElementById('player');
 const active=cid=>window.POG_GLASS!==false&&/^en-/.test(String(cid||''));
 
@@ -80,8 +82,15 @@ function art(){
   /* missões */
   p.querySelectorAll('.ps-mc .ps-ico.big:not([data-gl])').forEach(i=>{i.dataset.gl='1';if(/🙋|🎤|💬/.test(i.textContent))i.innerHTML=PogGlassArt.tile('mission')});
 }
+/* palavras com hífen (meio-dia, heavy-handed) não se partem entre linhas */
+const HY=/[A-Za-zÀ-ÿ0-9]+(?:[-‑][A-Za-zÀ-ÿ0-9]+)+/g;
+function nobreak(root){
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>{HY.lastIndex=0;return HY.test(n.nodeValue)&&n.parentElement&&!n.parentElement.closest('svg,script,style,textarea,input,.gl-nb,button.ps-o')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
+  const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  for(const n of nodes){const t=n.nodeValue.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));const sp=document.createElement('span');sp.innerHTML=t.replace(HY,m=>'<span class="gl-nb">'+m+'</span>');n.replaceWith(...sp.childNodes)}
+}
 let timer=0;
-function schedule(){if(timer)return;timer=setTimeout(()=>{timer=0;const p=pl();if(p&&p.classList.contains('gl')){swap(p);art()}},60)}
+function schedule(){if(timer)return;timer=setTimeout(()=>{timer=0;const p=pl();if(p&&p.classList.contains('gl')){swap(p);art();const st=p.querySelector('#pstage');if(st)nobreak(st)}},60)}
 const start=()=>{if(window._glObs)return;window._glObs=new MutationObserver(m=>{const p=pl();if(p&&p.classList.contains('gl')&&m.some(x=>p.contains(x.target)))schedule()});window._glObs.observe(document.body,{childList:true,subtree:true,characterData:true});};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 

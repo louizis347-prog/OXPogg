@@ -28,4 +28,12 @@ const ART={
  read:()=>wrap(`<path d="M48 30C41 24 31 22 20 23v44c11-1 21 1 28 7 7-6 17-8 28-7V23c-11-1-21 1-28 7z" fill="#fff"/><path d="M48 30v44" stroke="#17a2ad" stroke-width="3.2"/><path d="M27 34c5 0 10 1 15 4M27 44c5 0 10 1 15 4M69 34c-5 0-10 1-15 4M69 44c-5 0-10 1-15 4" fill="none" stroke="#ffb627" stroke-width="3.4" stroke-linecap="round"/>`,TEAL),
 };
 window.PogGlassArt={tile:k=>(ART[k]||ART.listen)(),kinds:Object.keys(ART)};
+/* cabeçalhos dos exercícios ganham o azulejo ilustrado (CSS ::before com SVG embutido, sem mexer no DOM dos quadros) */
+(function(){
+  const uri=k=>'url("data:image/svg+xml,'+encodeURIComponent(ART[k]().replace('class="gl-art" ','xmlns="http://www.w3.org/2000/svg" '))+'")';
+  const hd=(sel,k)=>`#player.gl .step${sel} .fx-h{display:flex;align-items:center;gap:14px}#player.gl .step${sel} .fx-h::before{content:"";flex:none;width:58px;height:58px;background:${uri(k)} center/contain no-repeat;filter:drop-shadow(0 10px 12px rgba(8,70,80,.28))}`;
+  const st=document.createElement('style');st.id='gl-art-css';
+  st.textContent=hd('.ps-lab','sound')+hd('.ps-sp','speak')+hd('.ps-rdg','read');
+  document.head.appendChild(st);
+})();
 })();
