@@ -1,5 +1,6 @@
 import json,glob,sys
 lv,start,cnt=sys.argv[1],int(sys.argv[2]),int(sys.argv[3])
+ONLY_TODO=True
 L=[]
 for f in sorted(glob.glob('/home/user/OXPogg/data/en-%s_*.json'%lv)):L+=json.load(open(f))
 done=set()
@@ -9,8 +10,12 @@ for fn in glob.glob('/home/user/OXPogg/tools/draft/readings/b_*.py'):
 for fn in glob.glob('/home/user/OXPogg/tools/draft/readings/b_*.txt'):
     for ln in open(fn,encoding='utf-8'):
         if ln.startswith('#'):done.add(int(ln[1:].split()[0]))
-for i in range(start,min(start+cnt,len(L))):
+shown=0
+for i in range(start,len(L)):
+    if shown>=cnt:break
     e=L[i];a=e['a']
+    if e['n'] in done or any(x['k']=='rdg' and x.get('obra') for x in e['fr']):continue
+    shown+=1
     sc=next((x for x in e['fr'] if x['k']=='pgscene'),{})
     cast=list((sc.get('cast') or {}).keys())
     ex=[x.get('en') or x.get('x') for fr in e['fr'] if fr['k']=='pgexp' for x in fr['items']]
