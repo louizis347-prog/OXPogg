@@ -225,3 +225,19 @@
 #player.gl.az .step.fx-cover .az-scene{border-radius:24px!important;box-shadow:0 20px 36px -24px rgba(8,70,80,.6)}
 #player.gl.az .step.fx-cover .az-ep{background:rgba(11,124,136,.12)!important;color:#0a6270!important}
 #player.gl .step.fx-cover :is(.fx-hook,.fx-cw){background:rgba(255,255,255,.7)!important;border-radius:20px!important}
+
+/* ---------- correções da auditoria ---------- */
+/* "Cultura em foco": ciano claro sobre claro não passava; usa o petróleo da marca */
+#player.gl .cf{--cf-acc:#0a6270;--cf-soft:rgba(11,124,136,.13)}
+#player.gl .cf .cf-quote{background:linear-gradient(135deg,#0a6270,#0b7c88)!important;color:#fff!important}
+#player.gl .cf .cf-quote small,#player.gl .cf .cf-quote cite{color:#e6f6f7!important}
+#player.gl .cf .cf-h>small,#player.gl .cf .cf-ask>small{color:#0a6270!important}
+#player.gl .cf .cf-chips span{color:#0a6270!important;background:rgba(11,124,136,.12)!important}
+/* cartão de verbo: mais largura útil para a tradução (palavra inteira numa linha) */
+#player.gl .vb-card .vb-top{gap:10px;padding:12px 12px}
+#player.gl .vb-card .vb-ic{width:56px;height:56px;flex:none}
+#player.gl .vb-card .vb-pt{font-size:14px;overflow-wrap:break-word;line-height:1.35}
+#player.gl .vb-v i{background:color-mix(in srgb,var(--b,#0d8077) 60%,#0b1b2b)!important}
+/* barra de prática nunca estoura a tela */
+#player.gl .step :is(.ps-pr,.ps-pr-b){max-width:100%;box-sizing:border-box}
+#player.gl .step .ps-pr-b .ps-btn{min-width:0}
