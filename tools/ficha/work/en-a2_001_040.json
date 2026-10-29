@@ -682,38 +682,38 @@
   ]
  },
  "920002": {
-  "t": "Averroes",
-  "scene": "plaza",
-  "tod": "dusk",
+  "t": "Go Diego Go",
+  "scene": "jungle",
+  "tod": "day",
   "cast": [
    {
     "p": {
-     "hs": "bald",
-     "hair": "white",
-     "outfit": "robe",
-     "top": "#3a7a6a",
-     "hat": "turban",
-     "hatColor": "#f2f2f2",
-     "beard": "white",
-     "stache": "white",
-     "skin": "tan",
-     "arms": "hold",
-     "holds": "book"
+     "hs": "short",
+     "hair": "black",
+     "outfit": "shirt",
+     "top": "#4a9a5a",
+     "arms": "wave"
     },
-    "s": 1.3
+    "x": 300,
+    "s": 1.0
+   },
+   {
+    "a": "cat",
+    "c": "#e8a838",
+    "x": 540,
+    "s": 1.2
    }
   ],
   "prop": {
-   "id": "lantern",
-   "at": "right",
-   "s": 1.4
+   "id": "camera",
+   "at": "front",
+   "s": 1.0,
+   "x": 430,
+   "c": "#444444"
   },
   "decor": [
-   "sparkles",
-   "birds"
-  ],
-  "falta": [
-   "mesquita"
+   "leaves",
+   "butterflies"
   ]
  },
  "7920002": {
@@ -1663,35 +1663,39 @@
   ]
  },
  "920004": {
-  "t": "Nuestra América - José Martí",
-  "scene": "seaside",
-  "tod": "dawn",
+  "t": "Top Gear",
+  "scene": "road",
+  "tod": "day",
   "cast": [
    {
     "p": {
      "hs": "short",
-     "hair": "black",
-     "outfit": "suit",
-     "top": "#1a1a22",
-     "stache": "black",
-     "tie": "#f2f2f2",
-     "arms": "hold",
-     "holds": "flower",
-     "skin": "light"
+     "hair": "brown",
+     "outfit": "coat",
+     "top": "#3b6fb6",
+     "arms": "point"
     },
+    "x": 260,
+    "s": 1.3
+   },
+   {
+    "p": {
+     "hs": "curly",
+     "hair": "gray",
+     "outfit": "shirt",
+     "top": "#e0603a",
+     "arms": "up"
+    },
+    "x": 560,
     "s": 1.3
    }
   ],
   "prop": {
-   "id": "flag",
-   "c": "#2a4aa0",
-   "at": "right",
-   "s": 1.8
-  },
-  "decor": [
-   "birds",
-   "clouds"
-  ]
+   "id": "trophy",
+   "at": "sky-right",
+   "s": 1.2,
+   "c": "#d4a017"
+  }
  },
  "7920004": {
   "t": "Stuart Little",
