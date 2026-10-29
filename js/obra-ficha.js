@@ -127,6 +127,13 @@ function castSvg(cast,c){
   const slots={1:[400],2:[300,520],3:[230,400,570],4:[190,330,470,610],5:[160,280,400,520,640]}[Math.min(5,n)];
   let g='';
   const items=cast.map((m,i)=>{const x=m.x!=null?m.x:slots[i],big=m.p?1.2:1;const s=(m.s||1)*big*(n>3?.85:1);return {m,x,s,i}});
+  /* afasta quem ficou colado (largura aproximada pela escala) e, se não couber, reduz todos juntos */
+  const hw=it=>(it.m.p?44:52)*it.s;
+  const byX=items.slice().sort((a,b)=>a.x-b.x);
+  for(let pass=0;pass<4;pass++){for(let k=1;k<byX.length;k++){const A=byX[k-1],B=byX[k];if(A.m.back||B.m.back)continue;const need=(hw(A)+hw(B))*0.82+14;if(B.x-A.x<need){const d=(need-(B.x-A.x))/2;A.x-=d;B.x+=d}}}
+  const lo=Math.min(...byX.map(it=>it.x-hw(it))),hi=Math.max(...byX.map(it=>it.x+hw(it)));
+  if(hi-lo>740){const k=740/(hi-lo);items.forEach(it=>{it.s*=k;it.x=400+(it.x-400)*k})}
+  else{const sh=(hi>770?770-hi:0)+(lo<30?30-lo:0);if(sh)items.forEach(it=>it.x+=sh)}
   items.sort((a,b)=>(a.m.back?-1:0)-(b.m.back?-1:0));
   items.forEach(({m,x,s,i})=>{
     let inner='';
@@ -148,13 +155,14 @@ function propSvg(pr,cast){
 function stage(f,seed){
   const id=++UID,tod=f.tod&&TOD[f.tod]?f.tod:'day',rnd=rngOf(hash(seed));
   const T=Object.assign({},TOD[tod]);if(f.accent){T.g1=mix(T.g1,f.accent,.18);T.far=mix(T.far,f.accent,.25)}
-  const indoor=/^(classroom|kitchen|livingroom|bedroom|library|market|bakery|cave|attic|throne|workshop|stage|circus)$/.test(f.scene);
+  const SC=SCENES[f.scene];
+  const indoor=(SC&&SC.indoor!=null)?!!SC.indoor:/^(classroom|kitchen|livingroom|bedroom|library|market|bakery|cave|attic|throne|workshop|stage|circus)$/.test(f.scene);
   const c={id,T,tod,night:tod==='night'||tod==='dusk',seed:hash(seed)%7,rnd,accent:f.accent,indoorFloor:indoor};
   c.ground=groundLayer(c);
   const scene=SCENES[f.scene]||SCENES.meadow;
-  const useSky=!/^(classroom|kitchen|livingroom|bedroom|library|bakery|cave|attic|throne|workshop|stage|circus|space|underwater|ship|harbor|seaside|market|station|barn|beach)$/.test(f.scene);
+  const useSky=(SC&&SC.sky!=null)?!!SC.sky:!/^(classroom|kitchen|livingroom|bedroom|library|bakery|cave|attic|throne|workshop|stage|circus|space|underwater|ship|harbor|seaside|market|station|barn|beach)$/.test(f.scene);
   let g=`<defs><filter id="gr${id}" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="${id%9+2}"/><feColorMatrix values="0 0 0 0 .2  0 0 0 0 .15  0 0 0 0 .1  0 0 0 .09 0"/></filter><radialGradient id="vg${id}" cx=".5" cy=".5" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#1b1030" stop-opacity=".38"/></radialGradient></defs>`;
-  if(useSky||/^(seaside|harbor|ship|market|station|barn|beach)$/.test(f.scene)){g+=sky(id,tod,f.accent);if(!/^(market|station|barn)$/.test(f.scene))g+=lumin(tod,f.sunx)}
+  if(useSky||(!(SC&&SC.sky!=null)&&/^(seaside|harbor|ship|market|station|barn|beach)$/.test(f.scene))){g+=sky(id,tod,f.accent);if(!(SC&&SC.nolumin)&&!/^(market|station|barn)$/.test(f.scene))g+=lumin(tod,f.sunx)}
   g+=scene(c);
   if(useSky&&tod!=='night'&&!(f.decor||[]).includes('clouds'))g+=cloud(150,90,.8)+cloud(560,70,.6);
   g+=decor(f.decor,c,rnd);
@@ -163,6 +171,7 @@ function stage(f,seed){
 const countEl=g=>(g.match(/<(path|ellipse|circle|rect|line|polygon|g)\b/g)||[]).length;
 /* enriquece cenas esparsas com enfeites discretos (nunca sobre o elenco: vêm antes dele) até o detalhe mínimo das capas desenhadas */
 function enrich(g,S,f,body){
+  if(SCENES[f.scene]&&SCENES[f.scene].noenrich)return '';
   const rnd=rngOf(hash('enr'+(f.scene||'')+(f.tod||'')+g.length)),T=S.c.T,indoor=S.c.indoorFloor,night=S.c.night;
   let add='',i=0;
   while(countEl(g+add+body)<122&&i++<16){
@@ -196,5 +205,5 @@ function svg(e,mode){
 }
 const DECOR=['flowers','mushrooms','butterflies','birds','clouds','balloons','stars','hearts','leaves','snow','bubbles','fireflies','sparkles','grass'];
 const PROPAT=['front','sky','left','right','between','sky-left','sky-right','held'];
-window.PogFicha={VOCAB:{scene:Object.keys(SCENES),tod:Object.keys(TOD),decor:DECOR,propAt:PROPAT},has:e=>!!fichaOf(e),svg,compose,SCENES,TOD,fichaOf,face:e=>{const f=fichaOf(e);return f?faceSvg(f):''}};
+window.PogFicha={H:{hill,window_,cloud,treeRound,treePine,house,tower,castleFar,flower,tuft,mush,sparkle,butterfly,balloonD,bird,heartD,leaf,flake,bubble,firefly,starD,wave,mix,dark,light,TOD},VOCAB:{scene:Object.keys(SCENES),tod:Object.keys(TOD),decor:DECOR,propAt:PROPAT},has:e=>!!fichaOf(e),svg,compose,SCENES,TOD,fichaOf,face:e=>{const f=fichaOf(e);return f?faceSvg(f):''}};
 })();
