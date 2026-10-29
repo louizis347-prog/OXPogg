@@ -136,7 +136,7 @@ add(dict(
         ('buy', '🛍️', 'comprar', 'I buy', 'she buys', 'She buys a scarf.', 'Ela compra um cachecol.', 'buy + objeto'),
         ('save', '🪙', 'economizar', 'I save', 'she saves', 'She saves two pounds.', 'Ela economiza duas libras.', 'save + valor')],
  verbtip='Quatro verbos para falar de compras e preços.',
- exps=[('👍', 'a good deal', 'um bom negócio', 'Use quando o preço vale a pena.', 'Thirteen pounds for both? That is **a good deal**!', 'Treze libras pelos dois? Isso é um bom negócio!'),
+ exps=[('👍', 'on offer', 'em promoção', 'Use quando um item está com preço especial.', 'Are the scarf and the gloves **on offer**? Thirteen pounds for both?', 'O cachecol e as luvas estão em promoção? Treze libras pelos dois?'),
        ('🚫', 'sold out', 'esgotado', 'Use quando não há mais itens na loja.', 'The red mugs are **sold out**, but I have blue ones.', 'As canecas vermelhas estão esgotadas, mas tenho azuis.'),
        ('💵', 'pay in cash', 'pagar em dinheiro', 'Use para dizer como você paga.', 'Blue is fine. Can I **pay in cash**?', 'Azul serve. Posso pagar em dinheiro?'),
        ('🏷️', 'give a discount', 'dar um desconto', 'Use quando a loja baixa o preço.', 'Of course. And I can **give a discount** on the box.', 'Claro. E posso dar um desconto na caixa.')],

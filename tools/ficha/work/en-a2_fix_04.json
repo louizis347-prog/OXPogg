@@ -1,28 +1,257 @@
 {
-"81028": {"t":"Room on the Broom","scene":"hills","tod":"night","cast":[
- {"p":{"hs":"long","hair":"red","outfit":"dress","top":"#5a8a3a","hat":"witch","hatColor":"#2b2538","arms":"hold","holds":"wand"},"s":1.3,"x":300,"y":330},
- {"a":"cat","c":"#1a1a22","s":1.1,"x":430,"y":340},
- {"a":"dog","c":"#a07a4a","s":1.1,"x":160},
- {"a":"frog","c":"#4aa84a","s":0.9,"x":620}],
- "prop":{"id":"broomstick","at":"between","s":2.4,"x":360,"y":400},"decor":["stars","sparkles"]},
-"7081028": {"t":"Halloween","scene":"village","tod":"night","cast":[
- {"p":{"hs":"pigtails","hair":"black","outfit":"dress","top":"#e8782a","hat":"witch","hatColor":"#2b2538","arms":"wave"},"s":1,"x":220},
- {"p":{"hs":"short","hair":"brown","outfit":"robe","top":"#2b2538","hat":"hood","hatColor":"#2b2538","arms":"hold","holds":"lantern"},"s":1,"x":380},
- {"a":"ghost","s":1.4,"x":600}],
- "prop":{"id":"pumpkin","at":"front","s":1.6,"x":500,"y":410},"decor":["stars","bubbles"]},
-"7081033": {"t":"Pancake Day","scene":"kitchen","tod":"indoor","cast":[
- {"p":{"hs":"bun","hair":"gray","outfit":"apron","top":"#f2f2f2","hat":"chef","hatColor":"#ffffff","glasses":true,"arms":"up","holds":"cookie","holdColor":"#e8b86a"},"s":1.3,"x":280},
- {"p":{"hs":"short","hair":"blond","outfit":"apron","top":"#e8a0b8","arms":"wave"},"s":0.95,"x":470}],
- "prop":{"id":"bowl","at":"front","s":1.5,"x":620,"y":420},"decor":["sparkles"],"falta":["frigideira","panqueca","limão"]},
-"7081034": {"t":"Lego","scene":"workshop","tod":"indoor","cast":[
- {"p":{"hs":"bald","hair":"gray","outfit":"apron","top":"#c4202f","stache":"gray","arms":"hold","holds":"hammer"},"s":1.3,"x":240},
- {"p":{"hs":"long","hair":"brown","outfit":"shirt","top":"#f1c40f","glasses":true,"arms":"hold","holds":"puzzle"},"s":1.3,"x":450},
- {"p":{"hs":"short","hair":"blond","outfit":"overalls","top":"#2f6ad8","shirt":"#fff","arms":"up"},"s":0.9,"x":620}],
- "prop":{"id":"puzzle","at":"front","s":1.8,"x":420,"y":425},"decor":["sparkles"],"falta":["tijolinho Lego","minifigure"]},
-"7081037": {"t":"Cluedo","scene":"library","tod":"night","cast":[
- {"p":{"hs":"long","hair":"auburn","outfit":"dress","top":"#c0182f","arms":"hold","holds":"candle"},"s":1.3,"x":200},
- {"p":{"hs":"short","hair":"gray","outfit":"suit","top":"#d4ac0d","stache":"gray","hat":"bowler","hatColor":"#6b5a1a","arms":"point"},"s":1.3,"x":370},
- {"p":{"hs":"bald","hair":"brown","outfit":"suit","top":"#6a2c91","glasses":true,"beard":"brown"},"s":1.3,"x":540},
- {"p":{"hs":"bun","hair":"white","outfit":"dress","top":"#1f6fa8"},"s":1.3,"x":690}],
- "prop":{"id":"magnifier","at":"sky-right","s":1.6},"decor":["stars"]}
+ "81028": {
+  "t": "Room on the Broom",
+  "scene": "hills",
+  "tod": "night",
+  "cast": [
+   {
+    "p": {
+     "hs": "long",
+     "hair": "red",
+     "outfit": "dress",
+     "top": "#5a8a3a",
+     "hat": "witch",
+     "hatColor": "#2b2538",
+     "arms": "hold",
+     "holds": "wand"
+    },
+    "s": 1.3,
+    "x": 300,
+    "y": 330
+   },
+   {
+    "a": "cat",
+    "c": "#1a1a22",
+    "s": 1.1,
+    "x": 430,
+    "y": 340
+   },
+   {
+    "a": "dog",
+    "c": "#a07a4a",
+    "s": 1.1,
+    "x": 160
+   },
+   {
+    "a": "frog",
+    "c": "#4aa84a",
+    "s": 0.9,
+    "x": 620
+   }
+  ],
+  "prop": {
+   "id": "broomstick",
+   "at": "between",
+   "s": 2.4,
+   "x": 360,
+   "y": 400
+  },
+  "decor": [
+   "stars",
+   "sparkles"
+  ]
+ },
+ "7081028": {
+  "t": "Halloween",
+  "scene": "village",
+  "tod": "night",
+  "cast": [
+   {
+    "p": {
+     "hs": "pigtails",
+     "hair": "black",
+     "outfit": "dress",
+     "top": "#e8782a",
+     "hat": "witch",
+     "hatColor": "#2b2538",
+     "arms": "wave"
+    },
+    "s": 1,
+    "x": 220
+   },
+   {
+    "p": {
+     "hs": "short",
+     "hair": "brown",
+     "outfit": "robe",
+     "top": "#2b2538",
+     "hat": "hood",
+     "hatColor": "#2b2538",
+     "arms": "hold",
+     "holds": "lantern"
+    },
+    "s": 1,
+    "x": 380
+   },
+   {
+    "a": "ghost",
+    "s": 1.4,
+    "x": 600
+   }
+  ],
+  "prop": {
+   "id": "pumpkin",
+   "at": "front",
+   "s": 1.6,
+   "x": 500,
+   "y": 410
+  },
+  "decor": [
+   "stars",
+   "bubbles"
+  ]
+ },
+ "7081033": {
+  "t": "Pancake Day",
+  "scene": "kitchen",
+  "tod": "indoor",
+  "cast": [
+   {
+    "p": {
+     "hs": "bun",
+     "hair": "gray",
+     "outfit": "apron",
+     "top": "#f2f2f2",
+     "hat": "chef",
+     "hatColor": "#ffffff",
+     "glasses": true,
+     "arms": "up",
+     "holds": "cookie",
+     "holdColor": "#e8b86a"
+    },
+    "s": 1.3,
+    "x": 280
+   },
+   {
+    "p": {
+     "hs": "short",
+     "hair": "blond",
+     "outfit": "apron",
+     "top": "#e8a0b8",
+     "arms": "wave"
+    },
+    "s": 0.95,
+    "x": 470
+   }
+  ],
+  "prop": {
+   "id": "bowl",
+   "at": "front",
+   "s": 1.5,
+   "x": 620,
+   "y": 420
+  },
+  "decor": [
+   "sparkles"
+  ],
+  "falta": [
+   "frigideira",
+   "panqueca",
+   "limão"
+  ]
+ },
+ "7081034": {
+  "t": "Barbie",
+  "scene": "space",
+  "tod": "night",
+  "cast": [
+   {
+    "p": {
+     "hs": "ponytail",
+     "hair": "blond",
+     "outfit": "dress",
+     "top": "#ff69b4",
+     "arms": "wave"
+    },
+    "s": 1.4,
+    "x": 300
+   },
+   {
+    "p": {
+     "hs": "short",
+     "hair": "blond",
+     "outfit": "jersey",
+     "top": "#3498db",
+     "arms": "hold",
+     "holds": "stethoscope"
+    },
+    "s": 1.3,
+    "x": 500
+   }
+  ],
+  "prop": {
+   "id": "rocket",
+   "at": "right",
+   "s": 2.0,
+   "x": 650
+  },
+  "decor": [
+   "stars",
+   "sparkles",
+   "hearts"
+  ]
+ },
+ "7081037": {
+  "t": "Cluedo",
+  "scene": "library",
+  "tod": "night",
+  "cast": [
+   {
+    "p": {
+     "hs": "long",
+     "hair": "auburn",
+     "outfit": "dress",
+     "top": "#c0182f",
+     "arms": "hold",
+     "holds": "candle"
+    },
+    "s": 1.3,
+    "x": 200
+   },
+   {
+    "p": {
+     "hs": "short",
+     "hair": "gray",
+     "outfit": "suit",
+     "top": "#d4ac0d",
+     "stache": "gray",
+     "hat": "bowler",
+     "hatColor": "#6b5a1a",
+     "arms": "point"
+    },
+    "s": 1.3,
+    "x": 370
+   },
+   {
+    "p": {
+     "hs": "bald",
+     "hair": "brown",
+     "outfit": "suit",
+     "top": "#6a2c91",
+     "glasses": true,
+     "beard": "brown"
+    },
+    "s": 1.3,
+    "x": 540
+   },
+   {
+    "p": {
+     "hs": "bun",
+     "hair": "white",
+     "outfit": "dress",
+     "top": "#1f6fa8"
+    },
+    "s": 1.3,
+    "x": 690
+   }
+  ],
+  "prop": {
+   "id": "magnifier",
+   "at": "sky-right",
+   "s": 1.6
+  },
+  "decor": [
+   "stars"
+  ]
+ }
 }
