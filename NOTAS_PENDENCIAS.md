@@ -227,3 +227,14 @@ Padrão `docs/PADRAO_PONTE_OBRA.md`; aplicador `tools/audit/apply_bridge_patches
 - Zero obras repetidas entre A1–C2. **Não reconstruir um curso inteiro com `model_v3.py` sem `n`**: os dados atuais têm correções de outras frentes que a reconstrução apagaria.
 - A2: as 35 fichas marcadas `conflito` eram avisos antigos (a obra já tinha sido trocada); marcação removida, 85 fichas no ar. Fichas redesenhadas: 7920004 (Stuart Little), 81054 (Moomins).
 - Falta: fichas de capa à mão para o resto do A2 e para B1, B2, C1 e C2; as capas das aulas novas de A2–C2 ainda usam o gerador.
+
+## Troca de obras sem relação com a aula (A1–C2)
+
+Feito: A1 53 · A2 77 · B1 172 · B2 210 · C1 434 · C2 471 episódios trocados (obra, frase, descrição, ponte, gancho/ano da capa, plano C1/C2).
+Regra: só trocou onde não havia ponte possível entre obra e aula; elenco genérico (Alex/Jordan, Zoe/Grace) permite a troca sem mexer no diálogo.
+
+Pendências conhecidas:
+- 28 episódios do B1, 2 do B2 (7083027, 83105) e 1 do A2 têm diálogo que conta a história da obra antiga: precisam de reescrita, não de troca (lista: B1 82231, 930051, 82012, 7082197, 82210, 82176, 7082034, 7930069, 7082178, 82184, 82192, 7082192, 7082302, 7930029, 82086, 7082091, 7082081, 7082028, 82032, 7082210, 82225, 7930023, 82259, 82052, 7082052, 82053, 82054, 7930012).
+- Capas: A1 e as 5 do A2 trocadas estão com ficha desenhada à mão; o resto de A2 e B1–C2 ainda usa capa gerada (sem ficha) e a figura não representa a obra nova.
+- Expressões (pgexp) de C1/C2 e alguns B2 trazem frases-molde com resíduo da obra antiga ("… about Kore-eda"): reescrever.
+- Ponte: ~1.400 episódios ainda com a linha-molde "This scene carries an idea from…".
