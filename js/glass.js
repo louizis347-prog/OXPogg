@@ -90,7 +90,7 @@ function nobreak(root){
   for(const n of nodes){const t=n.nodeValue.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));const sp=document.createElement('span');sp.innerHTML=t.replace(HY,m=>'<span class="gl-nb">'+m+'</span>');n.replaceWith(...sp.childNodes)}
 }
 let timer=0;
-function schedule(){if(timer)return;timer=setTimeout(()=>{timer=0;const p=pl();if(p&&p.classList.contains('gl')){swap(p);art();const st=p.querySelector('#pstage');if(st)nobreak(st)}},60)}
+function schedule(){if(timer)return;timer=setTimeout(()=>{timer=0;const p=pl();if(p&&p.classList.contains('gl')){if(window.POG_GLASS_ICONS===true)swap(p);art();const st=p.querySelector('#pstage');if(st)nobreak(st)}},60)}
 const start=()=>{if(window._glObs)return;window._glObs=new MutationObserver(m=>{const p=pl();if(p&&p.classList.contains('gl')&&m.some(x=>p.contains(x.target)))schedule()});window._glObs.observe(document.body,{childList:true,subtree:true,characterData:true});};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 
