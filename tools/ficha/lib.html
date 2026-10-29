@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>Biblioteca de peças</title>
+<style>body{margin:0;background:#fff;font:11px system-ui}.g{display:grid;grid-template-columns:repeat(9,1fr);gap:4px;padding:6px}.c{background:#eef6ee;border-radius:8px;text-align:center}.c svg{width:100%;height:110px}</style>
+<div class="g" id="g"></div>
+<script src="../../js/obra-ficha-lib.js"></script>
+<script>
+const q=new URLSearchParams(location.search).get('k')||'animals',L=PogFichaLib,g=document.getElementById('g');
+const add=(n,svg,vb)=>{const d=document.createElement('div');d.className='c';d.innerHTML=`<svg viewBox="${vb}" xmlns="http://www.w3.org/2000/svg">${svg}</svg>${n}`;g.appendChild(d)};
+if(q==='animals')for(const k of Object.keys(L.ANIMAL)){let s='';try{s=L.ANIMAL[k]()}catch(e){s='<text>ERR</text>'}add(k,s,'-110 -230 220 250')}
+if(q==='props')for(const k of Object.keys(L.PROP)){let s='';try{s=L.PROP[k]()}catch(e){s='<text>ERR</text>'}add(k,s,'-80 -80 160 160')}
+if(q==='hats'){for(const h of L.VOCAB.hat)add(h,L.person({hat:h,hs:'short'}),'-70 -250 140 160');}
+if(q==='people'){const T=[{hs:'long',outfit:'dress'},{hs:'bob',outfit:'suit'},{hs:'afro',outfit:'overalls',skin:'dark'},{hs:'curly',outfit:'robe',skin:'brown',top:'#8a5ac8'},{hs:'bun',outfit:'coat',hair:'gray',glasses:true},{hs:'pigtails',outfit:'jersey',top:'#e8473b',skin:'tan'},{hs:'ponytail',outfit:'armor',skirt:true},{hs:'spiky',outfit:'apron',hair:'red',freckles:true},{hs:'side',outfit:'shirt',beard:'gray',hair:'gray',scarf:'#d9304a'},{hs:'bald',outfit:'robe',stache:'white',skin:'deep'},{hs:'braids',outfit:'dress',cape:'#d9304a',hat:'crown'},{hs:'short',outfit:'shirt',wings:'#bfe6f6',hat:'leaf',top:'#4fae6a'}];T.forEach((o,i)=>add('p'+i,L.person(o),'-90 -230 180 250'))}
+document.title='ok';
+</script>

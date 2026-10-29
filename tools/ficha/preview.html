@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Pré-visualização das capas por ficha</title>
+<style>body{margin:0;background:#fff;font:12px system-ui}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:8px}.c{width:100%}.c svg{width:100%;height:auto;display:block;border-radius:10px}b{display:block;padding:2px 4px}</style>
+<div class="g" id="g"></div>
+<script src="../../js/obra-ficha-lib.js"></script><script src="../../js/obra-ficha.js"></script>
+<script>
+const q=new URLSearchParams(location.search);
+fetch(q.get('f')||'sample.json').then(r=>r.json()).then(F=>{window.PogFichas=F;const g=document.getElementById('g');
+ for(const n of Object.keys(F)){const e={n:+n},f=F[n];const d=document.createElement('div');d.className='c';let s='';try{s=PogFicha.svg(e,'cover')}catch(x){s='ERR '+x.message+x.stack}
+  d.innerHTML=s+'<b>'+n+' · '+(f.title||'')+'</b>';g.appendChild(d)}document.title='ok'});
+</script>
