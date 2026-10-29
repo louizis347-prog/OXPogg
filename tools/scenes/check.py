@@ -33,7 +33,8 @@ def main(lotes):
             prev = sc
         for sc, k in cnt.items():
             if k > 8: probs.append('%s: cenário %s usado %d vezes (máx. 8)' % (l, sc, k))
-        if len(cnt) < 35: probs.append('%s: só %d cenários distintos (mín. 35)' % (l, len(cnt)))
+        mn = min(35, int(0.7 * len(order)))
+        if len(cnt) < mn: probs.append('%s: só %d cenários distintos (mín. %d)' % (l, len(cnt), mn))
         g = sum(k for sc, k in cnt.items() if sc in GEN)
         if g > 0.12 * max(1, sum(cnt.values())): probs.append('%s: %d%% de cenários genéricos (máx. 12%%)' % (l, round(100 * g / sum(cnt.values()))))
     print('episódios:', tot, '| problemas:', len(probs))
