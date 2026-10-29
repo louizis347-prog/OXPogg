@@ -128,7 +128,7 @@ add(dict(
         ('clap', '👏', 'bater palmas', 'I clap', 'she claps', 'The children clap every morning.', 'As crianças batem palmas toda manhã.', 'clap (sem objeto)'),
         ('hum', '🎶', 'cantarolar', 'I hum', 'she hums', 'I hum the tune once a day.', 'Eu cantarolo a melodia uma vez por dia.', 'hum + melodia')],
  verbtip='Quatro verbos para falar de ensaio e música.',
- exps=[('🎂', 'make a wish', 'fazer um pedido', 'Use antes de soprar as velas.', 'Close your eyes and **make a wish**.', 'Feche os olhos e faça um pedido.'),
+ exps=[('🎂', 'many happy returns', 'muitas felicidades', 'Use para desejar um feliz aniversário.', '**Many happy returns**, children!', 'Muitas felicidades, crianças!'),
        ('🕯️', 'blow out the candles', 'soprar as velas', 'Use na hora do parabéns.', 'Now **blow out the candles**!', 'Agora sopre as velas!'),
        ('🎶', 'in tune', 'afinado', 'Use quando a voz ou o instrumento está afinado.', 'The children sing **in tune**.', 'As crianças cantam afinadas.'),
        ('🥳', 'hip, hip, hooray', 'hip, hip, urra', 'Use para comemorar.', '**Hip, hip, hooray!** The tune is ready!', 'Hip, hip, urra! A melodia está pronta!')],
