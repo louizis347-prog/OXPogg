@@ -409,7 +409,7 @@ const _cv=FXR.ctxv;
 FXR.ctxv=function(f,st,n){
   if(!f.m2)return _cv.apply(this,arguments);
   const R=f.items;let ri=0;
-  const KD={verbo:['⚡','Verbo'],coringa:['🃏','Expressão coringa'],comum:['💬','Expressão comum']};
+  const KD={verbo:['⚡','Verbo'],coringa:['🃏','Expressão coringa'],comum:['💬','Expressão comum'],palavra:['🔤','Palavra']};
   const draw=()=>{
     const it=R[ri],nb=it.ans.length,val=new Array(nb).fill(null);let checked=false,act=0,k=0;
     const chips=fxShuffle(it.opts),kd=KD[it.kind]||KD.verbo;
@@ -477,12 +477,12 @@ FXR.vplay=function(f,st,n){
   const msgs=['Passo 1: leia a frase e escolha o verbo que completa.','Passo 2: monte a frase tocando as palavras na ordem.','Passo 3: com ele ou ela, o verbo muda! Qual forma é a certa?','Passo 4: ouça a frase e escolha o que ela significa.'];
   const hole=(s,w)=>{const t=toks(s),i=t.findIndex(x=>x.replace(/[^\p{L}']/gu,'').toLowerCase()===w.toLowerCase());return i<0?null:[t,i]};
   const FM=x=>x.vf||x.v,ES=!/^en/i.test(lang());
-  const third=(it)=>{const s=strip((it.f&&it.f[1]&&it.f[1][1])||'');if(it.v3){const t=s.split(/\s+/);const i=t.findIndex(x=>x.replace(/[^\p{L}]/gu,'').toLowerCase()===it.v3.toLowerCase());return i<0?null:{t,i,w:t[i].replace(/[^\p{L}]/gu,'')}}const p=it.v.slice(0,Math.max(2,it.v.length-2)).toLowerCase();const t=s.split(/\s+/);const i=t.findIndex(x=>x.replace(/[^A-Za-z]/g,'').toLowerCase().startsWith(p));return i<0?null:{t,i,w:t[i].replace(/[^A-Za-z]/g,'')}};
+  const FI=it=>it.fi!=null?it.fi:1;const third=(it)=>{const s=strip((it.f&&it.f[FI(it)]&&it.f[FI(it)][1])||'');if(it.v3){const t=s.split(/\s+/);const i=t.findIndex(x=>x.replace(/[^\p{L}]/gu,'').toLowerCase()===it.v3.toLowerCase());return i<0?null:{t,i,w:t[i].replace(/[^\p{L}]/gu,'')}}const p=it.v.slice(0,Math.max(2,it.v.length-2)).toLowerCase();const t=s.split(/\s+/);const i=t.findIndex(x=>x.replace(/[^A-Za-z]/g,'').toLowerCase().startsWith(p));return i<0?null:{t,i,w:t[i].replace(/[^A-Za-z]/g,'')}};
   const hh=t=>t.map(x=>x==='___'?'<span class="m2-vph2">?</span>':esc(x)).join(' ');
   const draw=()=>{
     const T0=tasks[ti],vi=T0.v,step=T0.s,it=V[vi],ex=strip(it.ex[0]);let tries=0;P.answered=false;
     const head=`<div class="m2-vph"><div class="m2-vps" style="width:100%;gap:3px">${tasks.map((_,j)=>`<b class="${j<ti?'ok':j===ti?'on':''}" style="flex:1"></b>`).join('')}</div></div>
-      <div class="m2-vpb"><span>🦫</span><p>${esc(msgs[step])}</p></div>`;
+      <div class="m2-vpb"><span>🦫</span><p>${esc(step===2&&FI(it)!==1?'Passo 3: o verbo muda de forma! Qual é a certa?':msgs[step])}</p></div>`;
     let body='';
     if(step===0){
       const ho=hole(ex,FM(it))||[toks(ex),0];const t=ho[0].slice();t[ho[1]]='___';
@@ -498,7 +498,7 @@ FXR.vplay=function(f,st,n){
       {
         const tt=th.t.slice();tt[th.i]='___';const base=it.v,ok=th.w;
         const lw=ES?null:look(base,[base.toLowerCase()]);const cand=it.d?[ok].concat(it.d):[ok,base,lw?thirdOf(lw):null,(()=>{const o=V.filter(x=>x!==it&&!/\s/.test(x.v));return o.length?thirdOf(o[0].v.toLowerCase()):null})(),thirdOf(base)!==ok?thirdOf(base):null];const opts=fxShuffle(cand.filter((x,i,a)=>x&&a.indexOf(x)===i).slice(0,4));
-        body=`<div class="m2-vpc"><div class="m2-vpi">${fxIcon(it.ic,96)}</div><div class="m2-vpt"><b>${hh(tt)}</b></div><small>${esc((it.f[1]||[])[0]||'')} · ele/ela</small></div>
+        body=`<div class="m2-vpc"><div class="m2-vpi">${fxIcon(it.ic,96)}</div><div class="m2-vpt"><b>${hh(tt)}</b></div><small>forma pedida: ${esc((it.f[FI(it)]||[])[0]||'ele/ela')}</small></div>
           <div class="m2-vpo">${opts.map(o=>`<button type="button" class="m2-vpk" data-v="${esc(o)}"><b>${esc(o)}</b></button>`).join('')}</div>`;
       }
     }
