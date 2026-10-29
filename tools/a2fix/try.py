@@ -156,7 +156,7 @@ def main(names):
             if fr2['k'] == 'pgexp':
                 for x in fr2['items']:
                     k2 = x['en'].casefold().strip()
-                    if k2 in usedx and order.index(usedx[k2]) < order.index(n):
+                    if k2 in usedx:  # no A2 a expressão é única contra TODOS os outros episódios (antes e depois)
                         problemas_x = '%s ep%s: expressão “%s” já é ensinada no episódio %s — troque por outra' % (nm, n, x['en'], usedx[k2])
                         problems.append(problemas_x)
                     elif k2 in mine_x and mine_x[k2] != n:
