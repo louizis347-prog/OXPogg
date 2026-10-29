@@ -2143,6 +2143,21 @@ function speechWarn(nVoices){const now=Date.now();if(now-SPEECH_WARNED<20000)ret
   else d.textContent=nVoices?'Não consegui tocar a voz. Toque no 🔊 de novo e confira o volume de mídia.':'Sem voz de texto-para-fala neste aparelho. Android: Configurações › Texto para fala. iPhone: use o Safari.';
   document.body.appendChild(d);setTimeout(()=>d.remove(),6500);}
 function speak(text,lang,btn,speaker,slow){
+  /* fala mista (idioma da aula + português): cada trecho sai na voz do seu idioma */
+  const tok=speak._tok=(speak._tok||0)+1;
+  let pl=null;
+  try{if(window.PogLang)pl=PogLang.plan(text,lang,{target:(typeof P!=='undefined'&&P&&P.c&&P.c.tts)||lang,home:(typeof HOME_TTS!=='undefined'&&HOME_TTS[ST.homeLang])||'pt-BR'})}catch(e){pl=null}
+  if(!pl)return speakOne(text,lang,btn,speaker,slow);
+  const tl=(typeof P!=='undefined'&&P&&P.c&&P.c.tts)||lang,hl=(typeof HOME_TTS!=='undefined'&&HOME_TTS[ST.homeLang])||'pt-BR';
+  if(pl.single)return speakOne(text,pl.single==='T'?tl:hl,btn,speaker,slow);
+  const done=window.__speakEnd;window.__speakEnd=null;
+  const go=i=>{
+    if(tok!==speak._tok)return;
+    const r=pl.runs[i];if(!r)return;
+    window.__speakEnd=i<pl.runs.length-1?()=>go(i+1):done;
+    speakOne(r.t,r.lang==='T'?tl:hl,i?null:btn,speaker,slow)};
+  go(0)}
+function speakOne(text,lang,btn,speaker,slow){
   if(window.PogTTS&&PogTTS.cloudReady()){PogTTS.cloudSpeak(text,lang,btn,speaker,slow,()=>speakDevice(text,lang,btn,speaker,slow));return}
   return speakDevice(text,lang,btn,speaker,slow)}
 /* Divide a fala em frases e orações para respeitar ponto, vírgula, ? e !: cada trecho é falado
@@ -3824,7 +3839,7 @@ function fxLineParts(line,cast,index,names){
 function fxCul(f){if(!f.cul)return '';return `<div class="fx-cul"><span class="fx-cul-ic">${f.cul[0]}</span><div><small>Cultura em cena · ${esc(f.cul[1])}</small><span>${mk(f.cul[2])}</span></div></div>`}
 /* enunciado: bloco de instrução em destaque (selo + rótulo + texto), igual em todas as práticas */
 function fxEn(ic,label,html,play){return `<div class="fx-en${play?' has-play':''}">${play?`<button class="fx-play" id="fxp" aria-label="Ouvir">${spk}</button>`:`<span class="fx-en-ic" aria-hidden="true">${ic}</span>`}<div class="fx-en-t"><small>${label}</small><p>${html}</p></div></div>`}
-function fxStopAudio(){clearTimeout(fxSeq.t);clearTimeout(fxSeq.t2);window.__speakEnd=null;try{if(window.PogTTS)PogTTS.stop()}catch(e){}try{speechSynthesis.cancel()}catch(e){}}
+function fxStopAudio(){speak._tok=(speak._tok||0)+1;clearTimeout(fxSeq.t);clearTimeout(fxSeq.t2);window.__speakEnd=null;try{if(window.PogTTS)PogTTS.stop()}catch(e){}try{speechSynthesis.cancel()}catch(e){}}
 function fxTotal(e){let n=0;(e.fr||[]).forEach(f=>{if(['tapimg','sound','soundlab','choose','trap','gap','cquiz','vquiz'].includes(f.k))n+=f.rounds.length;else if(f.k==='ctx')n+=f.items.length;else if(f.k==='build')n+=f.items.length;else if(f.k==='dictate')n+=f.lines.length;else if(f.k==='convo')n+=f.turns.length;else if(f.k==='pgsheet')n+=f.items.length;else if(f.k==='match'||f.k==='order')n+=1});return n}
 function fxSay(en,who,slow){speak(en,(P&&P.c&&P.c.tts)||'en-US',null,who,slow)}
 function fxLang(){const t=(P&&P.c&&P.c.tts)||'';return /^pt/.test(t)?'português':/^es/.test(t)?'espanhol':/^fr/.test(t)?'francês':/^de/.test(t)?'alemão':/^it/.test(t)?'italiano':/^ja/.test(t)?'japonês':'inglês'}
@@ -4729,7 +4744,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/az.js"></script><script src="js/chars.js?v=1"></script><script src="js/chars2.js?v=1"></script><script src="js/chars3.js?v=3"></script><script src="js/chars4.js?v=1"></script><script src="js/chars5.js?v=1"></script><script src="js/chars6.js?v=1"></script><script src="js/stage.js?v=3"></script><script src="js/stage2.js?v=3"></script><script src="js/present.js?v=1"></script><script src="js/pgreview.js?v=1"></script>
 <script src="js/rework.js"></script>
 <script src="js/es_m2.js"></script><script src="js/es_pilot.js?v=1"></script>
-<script src="js/m2.js"></script><script src="js/novos.js"></script><script src="js/talk.js"></script><script src="js/rounds.js"></script><script src="js/suavez.js?v=5"></script>
+<script src="js/lang_split.js"></script><script src="js/m2.js"></script><script src="js/novos.js"></script><script src="js/talk.js"></script><script src="js/rounds.js"></script><script src="js/suavez.js?v=5"></script>
 <script src="js/audio_guard.js"></script>
 <script src="js/covers.js"></script><script src="js/faces.js?v=2"></script><script src="js/scenes.js?v=5"></script><script src="js/scenefx.js?v=1"></script>
 <script src="js/nb.js"></script>
