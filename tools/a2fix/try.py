@@ -23,6 +23,8 @@ def similar(a, b):
     ta, tb = _toks(a), _toks(b)
     if not ta or not tb:
         return a.casefold() == b.casefold()
+    if min(len(ta), len(tb)) < 2:  # um só termo (ex.: “room”) contido em outro título não é a mesma obra
+        return ta == tb
     return ta <= tb or tb <= ta
 
 
