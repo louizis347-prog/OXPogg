@@ -1613,7 +1613,7 @@ async function ensureLangLoaded(lang){
   EP_LOADING[lang]=(async()=>{
     const files=(MANIFEST&&MANIFEST[lang])||[];
     const results=new Array(files.length);
-    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=269').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
+    await Promise.all(files.map((file,idx)=>fetch('data/'+file+'?v=270').then(r=>{if(!r.ok)throw new Error(file);return r.json()}).then(arr=>{results[idx]=arr;}).catch(e=>{console.warn('bloco ausente, ignorado:',file);results[idx]=[]})));
     const arr2=[];for(const arr of results)arr2.push(...arr);
     arr2.forEach(registerEpisodeGenders);
     arr2.sort((a,b)=>((a.o!=null?a.o:a.n)||0)-((b.o!=null?b.o:b.n)||0));
@@ -4786,7 +4786,7 @@ Promise.all(jobs).catch(function(){}).then(function(){location.reload()})}catch(
 <script src="js/illus.js?v=1"></script>
 <link rel="stylesheet" href="css/regular-pilot.css?v=2"><link rel="stylesheet" href="css/pilot-reward.css?v=2">
 <script src="js/english-pilot-cast.js"></script>
-<script src="js/regular-pilot.js?v=5"></script><script src="js/pilot-reward.js?v=6"></script><script src="js/obra-art-hand.js?v=1"></script><script src="js/obra-ficha-lib.js?v=1"></script><script src="js/obra-ficha.js?v=1"></script><script src="js/obra-art.js?v=10"></script><link rel="stylesheet" href="css/obra-theme.css?v=7"><script src="js/obra-theme.js?v=4"></script><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/home-new.css?v=8"><link rel="stylesheet" href="css/pogcoins.css?v=1"><script src="js/pogcoins.js?v=1"></script><script src="js/home-art.js?v=6"></script><script src="js/home-new.js?v=5"></script><link rel="stylesheet" href="css/figurinhas.css?v=10"><script src="js/figurinhas.js?v=11"></script>
+<script src="js/regular-pilot.js?v=5"></script><script src="js/pilot-reward.js?v=6"></script><script src="js/obra-art-hand.js?v=1"></script><script src="js/obra-ficha-lib.js?v=2"></script><script src="js/obra-ficha.js?v=2"></script><script src="js/fichas-en-a1.js?v=1"></script><script src="js/obra-art.js?v=10"></script><link rel="stylesheet" href="css/obra-theme.css?v=7"><script src="js/obra-theme.js?v=4"></script><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/home-new.css?v=8"><link rel="stylesheet" href="css/pogcoins.css?v=1"><script src="js/pogcoins.js?v=1"></script><script src="js/home-art.js?v=6"></script><script src="js/home-new.js?v=5"></script><link rel="stylesheet" href="css/figurinhas.css?v=10"><script src="js/figurinhas.js?v=11"></script>
 <script src="js/roteiro-screen.js?v=3"></script>
 <link rel="stylesheet" href="css/player-polish.css?v=1">
 </body></html>
