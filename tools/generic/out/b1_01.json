@@ -1,50 +1,51 @@
 {
  "82004": {
   "obra": {
-   "nome": "Fight Club",
-   "tipo": "Filme",
-   "ano": "1999"
+   "nome": "Tales of the Unexpected",
+   "tipo": "Série",
+   "ano": "1979"
   },
-  "desc": "Fight Club é um filme de David Fincher baseado no romance de Chuck Palahniuk, com Edward Norton e Brad Pitt. Ficou famoso por uma reviravolta final que muda tudo o que o espectador achava ter entendido. A referência Fight Club combina com narrar uma virada inesperada com suddenly, all of a sudden e just as.",
+  "desc": "Tales of the Unexpected é uma série britânica de TV, de 1979, baseada em contos de Roald Dahl e de outros autores. Cada episódio termina com uma reviravolta surpreendente, e a abertura com silhuetas ficou muito famosa. A referência Tales of the Unexpected combina com narrar uma virada inesperada com suddenly, all of a sudden e just as.",
   "ficha": {
-   "t": "Fight Club",
-   "scene": "city",
+   "t": "Tales of the Unexpected",
+   "scene": "village",
    "tod": "night",
    "cast": [
     {
      "p": {
       "hs": "short",
-      "hair": "brown",
-      "outfit": "suit",
-      "top": "#6b7a8f",
-      "shirt": "#ffffff",
-      "tie": "#444444",
+      "hair": "gray",
+      "outfit": "coat",
+      "top": "#4a3a3a",
+      "hat": "bowler",
+      "hatColor": "#2a2a2a",
+      "glasses": true,
       "skin": "pale",
-      "arms": "down"
+      "arms": "point"
      },
-     "x": 230
+     "x": 240
     },
     {
      "p": {
-      "hs": "spiky",
-      "hair": "blond",
-      "outfit": "coat",
-      "top": "#b3202a",
-      "glasses": true,
+      "hs": "bun",
+      "hair": "black",
+      "outfit": "dress",
+      "top": "#8a2f4a",
       "skin": "light",
-      "arms": "point"
+      "arms": "up"
      },
-     "x": 520,
-     "s": 1.1
+     "x": 520
     }
    ],
    "prop": {
-    "id": "lightning",
-    "at": "sky-right",
-    "s": 1.6
+    "id": "key",
+    "at": "front",
+    "s": 1.3,
+    "x": 390
    },
    "decor": [
-    "stars"
+    "stars",
+    "fireflies"
    ]
   }
  },
@@ -257,48 +258,42 @@
  },
  "82035": {
   "obra": {
-   "nome": "Sex and the City",
-   "tipo": "Série",
-   "ano": "1998"
+   "nome": "Hachi: A Dog's Tale",
+   "tipo": "Filme",
+   "ano": "2009"
   },
-  "desc": "Sex and the City é uma série da HBO sobre quatro amigas que vivem em Nova York, acompanhada pelas colunas que Carrie Bradshaw escreve. A amizade antiga entre elas é o centro da história, com encontros em restaurantes e bares. A referência Sex and the City combina com perguntar há quanto tempo alguém conhece, mora ou espera com how long have you known, lived e been.",
+  "desc": "Hachi: A Dog's Tale é um filme com Richard Gere baseado na história real do cão akita Hachikō, no Japão. Todos os dias o cão esperava o dono na estação de trem, e continuou indo lá mesmo depois que ele morreu. A referência Hachi: A Dog's Tale combina com perguntar há quanto tempo alguém espera, mora ou conhece com how long have you known, lived e been.",
   "ficha": {
-   "t": "Sex and the City",
-   "scene": "city",
+   "t": "Hachi: A Dog's Tale",
+   "scene": "station",
    "tod": "dusk",
    "cast": [
     {
-     "p": {
-      "hs": "curly",
-      "hair": "blond",
-      "outfit": "dress",
-      "top": "#f2a6c8",
-      "skin": "pale",
-      "arms": "wave"
-     },
-     "x": 250
+     "a": "dog",
+     "x": 250,
+     "s": 1.4,
+     "c": "#e8d9b8"
     },
     {
      "p": {
-      "hs": "long",
-      "hair": "auburn",
-      "outfit": "dress",
-      "top": "#7a2fa0",
-      "skin": "light",
-      "arms": "hold",
-      "holds": "cup"
+      "hs": "short",
+      "hair": "gray",
+      "outfit": "coat",
+      "top": "#5a5a6a",
+      "scarf": "#b3202a",
+      "skin": "pale",
+      "arms": "wave"
      },
-     "x": 530
+     "x": 520
     }
    ],
    "prop": {
-    "id": "cup",
-    "at": "front",
-    "s": 1.0,
-    "x": 390
+    "id": "train",
+    "at": "right",
+    "s": 1.3
    },
    "decor": [
-    "sparkles"
+    "leaves"
    ]
   }
  },

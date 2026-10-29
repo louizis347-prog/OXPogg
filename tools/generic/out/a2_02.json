@@ -53,30 +53,30 @@
  },
  "7081091": {
   "obra": {
-   "nome": "Elf",
+   "nome": "Arthur Christmas",
    "tipo": "Filme",
-   "ano": "2003"
+   "ano": "2011"
   },
-  "desc": "Elf (2003) é uma comédia de Natal dirigida por Jon Favreau, com Will Ferrell no papel de Buddy, um humano criado como duende no Polo Norte que viaja a Nova York para encontrar o pai. No final, o trenó do Papai Noel só consegue voar com a ajuda do espírito natalino. A referência Elf combina com perguntar para quem é cada pacote, de quem é o cartão e quem mandou o presente.",
+  "desc": "Arthur Christmas (2011) é uma animação britânica da Aardman em que o filho mais novo do Papai Noel descobre que um presente deixou de ser entregue e sai de trenó, junto com o avô, para levá-lo a tempo à menina que o espera. A referência Arthur Christmas combina com perguntar para quem é cada pacote de Natal e de quem veio o cartão.",
   "ficha": {
-   "t": "Elf",
+   "t": "Arthur Christmas",
    "scene": "snow",
-   "tod": "day",
+   "tod": "night",
    "cast": [
     {
      "p": {
       "hs": "short",
-      "hair": "blond",
+      "hair": "red",
       "outfit": "coat",
-      "top": "#2f8a3a",
+      "top": "#c0392b",
       "skin": "light",
-      "hat": "party",
-      "hatColor": "#2f8a3a",
-      "belt": "#15151c",
-      "arms": "wave"
+      "hat": "santa",
+      "hatColor": "#c0392b",
+      "arms": "hold",
+      "holds": "gift"
      },
-     "s": 1.3,
-     "x": 240
+     "s": 1.0,
+     "x": 230
     },
     {
      "p": {
@@ -88,18 +88,22 @@
       "hat": "santa",
       "hatColor": "#c0392b",
       "beard": "white",
-      "arms": "hold",
-      "holds": "gift"
+      "arms": "wave"
      },
      "s": 1.3,
-     "x": 540
+     "x": 450
+    },
+    {
+     "a": "deer",
+     "s": 1.2,
+     "x": 660
     }
    ],
    "prop": {
     "id": "sled",
     "at": "front",
-    "s": 1.3,
-    "x": 400
+    "s": 1.2,
+    "x": 780
    },
    "decor": [
     "snow",
@@ -894,22 +898,22 @@
  },
  "81175": {
   "obra": {
-   "nome": "Amélie",
+   "nome": "Gigi",
    "tipo": "Filme",
-   "ano": "2001"
+   "ano": "1958"
   },
-  "desc": "Amélie (2001), do diretor francês Jean-Pierre Jeunet, tem Audrey Tautou como uma garçonete tímida de Montmartre, em Paris, que decide espalhar pequenas gentilezas pela vizinhança. O filme foi indicado ao Oscar de melhor filme estrangeiro. A referência Amélie combina com elogiar as pessoas com carinho: I love your voice, You look lovely, Thanks, you too.",
+  "desc": "Gigi (1958) é um musical de Vincente Minnelli, passado na Paris de 1900, com Leslie Caron como uma jovem educada para ser uma cortesã elegante. Ganhou nove Oscars, incluindo o de melhor filme, e traz a canção Thank Heaven for Little Girls. A referência Gigi combina com elogiar as pessoas com carinho: I love your voice, You look lovely, Thanks, you too.",
   "ficha": {
-   "t": "Amélie",
+   "t": "Gigi",
    "scene": "city",
    "tod": "day",
    "cast": [
     {
      "p": {
-      "hs": "bob",
-      "hair": "black",
+      "hs": "bun",
+      "hair": "auburn",
       "outfit": "dress",
-      "top": "#d9302f",
+      "top": "#f3a6c8",
       "skin": "light",
       "arms": "hold",
       "holds": "flower"
@@ -921,9 +925,11 @@
      "p": {
       "hs": "short",
       "hair": "black",
-      "outfit": "shirt",
-      "top": "#f2f2f2",
+      "outfit": "suit",
+      "top": "#2f3a4a",
       "skin": "light",
+      "hat": "top",
+      "hatColor": "#15151c",
       "stache": "black",
       "arms": "wave"
      },
@@ -932,7 +938,7 @@
     }
    ],
    "prop": {
-    "id": "bicycle",
+    "id": "fountain",
     "at": "front",
     "s": 1.2,
     "x": 410

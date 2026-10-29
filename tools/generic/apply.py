@@ -15,12 +15,15 @@ def swap(v, old, new, hits):
     hits[1] += 1; return v   # ocorrência no texto da aula: não mexe (fica para revisão)
 
 def main(lotes):
+    EXC = set(json.load(open(os.path.join(ROOT, 'tools/generic/excluir.json')))) if os.path.exists(os.path.join(ROOT, 'tools/generic/excluir.json')) else set()
     by_course = {}
     for l in lotes:
         out = json.load(open(os.path.join(ROOT, 'tools/generic/out', l + '.json'), encoding='utf-8'))
         lv = l.split('_')[0]
         fich = {}
-        for n, x in out.items(): by_course.setdefault('en-' + lv, {})[int(n)] = x; fich[n] = x['ficha']
+        for n, x in out.items():
+            if int(n) in EXC: continue
+            by_course.setdefault('en-' + lv, {})[int(n)] = x; fich[n] = x['ficha']
         json.dump(fich, open(os.path.join(ROOT, 'tools/ficha/work/en-%s_gen_%s.json' % (lv, l.split('_')[1])), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     stale = []
     for course, M in by_course.items():
