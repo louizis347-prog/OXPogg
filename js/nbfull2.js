@@ -33,6 +33,12 @@ function patch(){const F=window.PogFace;if(!F||F._nbf)return;const orig=F.avatar
   F.avatar=function(em,name,color){if(full()){try{return avatar(em,name,color)}catch(x){}}return orig.apply(this,arguments)}}
 patch();setInterval(patch,400);
 window.NBF={avatar};
+/* TODA figura do Neighbors (capa, fundo de cena, chat) usa o desenho refinado e natural */
+function patchBust(){const F=window.PogFace;if(!F||F._nbb||!F.bust)return;const ob=F.bust;F._nbb=1;
+  F.bust=function(o){try{const c=(typeof P!=='undefined'&&P&&String(P.cid||''))||'';
+    if(/^nb/.test(c)&&o&&typeof o==='object'){o.refined=true;o.natural=true;if(!o.mood)o.mood='soft';if(!o.rich||o.rich<2)o.rich=2;if(o.age==='kid')o.age='adult'}}catch(x){}
+    return ob.apply(this,arguments)}}
+patchBust();setInterval(patchBust,400);
 
 /* ---------- Diálogo (substitui a "Leitura") ---------- */
 const origOpen2=FXR.nbopen2;

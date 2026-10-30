@@ -84,6 +84,16 @@ function palm(R,x,y,s,T){let f='';for(let i=0;i<7;i++){const a=-160+i*50,c=Math.
   return `<g transform="translate(${n1(x)} ${n1(y)}) scale(${s})"><path d="M-1.5 0 Q 3 -18 0 -34 L2.5 -34 Q 6 -18 2 0Z" fill="#7a5638"/>${f}${circ(0,-33,2.4,'#6b4a2f')}</g>`}
 function person(R,x,y,s,col,T){
   const skin=pick(R,['#F2C4A0','#D9A07A','#B9784F','#8D5A3B','#F6D2B4']),hair=pick(R,['#2B1B14','#4A2E1B','#1A1A22','#7B4A25','#C69552']);
+  /* Neighbors: figuras de fundo com o mesmo rosto refinado das capas (cabeça/ombros do PogFace.bust sobre o corpo) */
+  try{if(window.PogFace&&PogFace.bust&&typeof P!=='undefined'&&P&&/^nb/.test(String(P.cid||''))){
+    const sk0=['#F2C4A0','#D9A07A','#B9784F','#8D5A3B','#F6D2B4'].indexOf(skin),tone=[1,2,3,4,0][sk0<0?0:sk0],hh=hash(x*7+y*3+s*11);
+    const g=hh%2?'m':'f',st=(g==='f'?['long','wavy','bob','bun']:['short','side','short','curly'])[(hh>>3)%4];
+    const bo={g,tone,style:st,hair:mix(hair,'#7a5238',.22),shirt:col,seed:hh,refined:true,natural:true,rich:LITE?1:2,mood:'soft',beard:g==='m'&&(hh>>5)%5===0,glasses:(hh>>6)%7===0};
+    const k=.17,bx=-34*k,by=-29.4-(95-6)*k+1.1,face=`<svg x="${n1(bx)}" y="${n1(by)}" width="${n1(68*k)}" height="${n1(94*k)}" viewBox="16 6 68 94" overflow="hidden">${PogFace.bust(bo)}</svg>`;
+    const ld0=CTX&&CTX.ld||-1,pants0=['#2f3550','#4a3b32','#3b4a63','#5a4a3e','#35384a'][hh%5],cd0=mix(col,'#000',.34);
+    return `<g transform="translate(${n1(x)} ${n1(y)}) scale(${s})">${ell(-ld0*3.5,.2,9,1.8,'#000',' fill-opacity=".28"')}`+
+      path('M-3.8 -2 L-3.3 -17.5 L-.2 -17.5 L-.4 -2Z',pants0)+path('M.4 -2 L.2 -17.5 L3.3 -17.5 L3.8 -2Z',mix(pants0,'#000',.18))+ell(-2.4,-1,2.9,1.3,'#15151c')+ell(2.6,-1,2.9,1.3,'#15151c')+
+      path('M-5.3 -17 Q0 -22 5.3 -17 L6.2 -29.4 Q0 -32.4 -6.2 -29.4Z',col)+`<path d="M-6 -28.5 L-6.8 -18" stroke="${col}" stroke-width="2.7" stroke-linecap="round"/><path d="M6 -28.5 L6.8 -18" stroke="${cd0}" stroke-width="2.7" stroke-linecap="round"/>`+circ(-6.9,-16.6,1.5,skin)+circ(6.9,-16.6,1.5,mix(skin,'#3a1a10',.3))+face+`</g>`}}catch(err){}
   if(LITE)return `<g transform="translate(${n1(x)} ${n1(y)}) scale(${s})">${ell(0,0,7,1.6,'#000',' fill-opacity=".22"')}${path('M-3.6 -2 L-3.2 -17 L-.3 -17 L-.2 -2Z M.2 -2 L.3 -17 L3.2 -17 L3.6 -2Z',mix(col,'#000',.5))}${path('M-5 -17 Q0 -23 5 -17 L5.8 -29 Q0 -32 -5.8 -29Z',col)}${circ(0,-35,4.6,skin)}${path('M-4.8 -36 Q0 -43 4.8 -36 Q3 -39 0 -39 Q-3 -39 -4.8 -36Z',hair)}</g>`;
   const ld=CTX&&CTX.ld||-1,h=hash(x*7+y*3),pants=['#2f3550','#4a3b32','#3b4a63','#5a4a3e','#35384a'][h%5];
   const sk=mix(skin,'#3a1a10',.35),cd=mix(col,'#000',.34),cl=mix(col,'#fff',.2),hl=mix(hair,'#fff',.3);
