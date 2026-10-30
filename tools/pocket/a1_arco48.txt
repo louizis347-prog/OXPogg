@@ -1,0 +1,241 @@
+# Arco 48 · Salão, barbeiro e cuidados
+T: A haircut | Corte de cabelo | shop | Austin | Max,m,🧑🏼,barbeiro
+K: How would you like it? | Como você quer?
+M: Hoje você corta o cabelo.
+D: Max|Welcome. How would you like your hair?|Bem-vindo. Como você quer o cabelo?
+D: You|Short on the sides, please.|Curto nos lados, por favor.
+D: Max|And on the top?|E em cima?
+D: You|A little shorter, but not too short.|Um pouco mais curto, mas não demais.
+D: Max|Okay. Do you want a beard trim?|Certo. Quer aparar a barba?
+D: You|Yes, please. Just a little.|Quero, por favor. Só um pouco.
+D: Max|Done. How do you like it?|Pronto. Gostou?
+D: You|It looks great. Thank you!|Ficou ótimo. Obrigado!
+V: haircut|corte de cabelo;short|curto;beard|barba;trim|aparar;sides|lados
+B: Short on the {0}.|Curto {0}.|sides=nos lados;top=em cima;back=atrás
+B: Do you want a {0}?|Quer {0}?|beard trim=aparar a barba;shave=fazer a barba;wash=lavar
+S: Max|Welcome. How would you like your hair?|Bem-vindo. Como você quer o cabelo?|Short on the sides, please.|Curto nos lados, por favor.
+S: Max|Done. How do you like it?|Pronto. Gostou?|It looks great. Thank you!|Ficou ótimo. Obrigado!
+R: How would you like your hair?|Como você quer o cabelo?
+R: Short on the sides, please.|Curto nos lados, por favor.
+R: Just a little.|Só um pouco.
+R: It looks great.|Ficou ótimo.
+X: Not too short.|Não curto demais.
+C: Nos EUA, é comum deixar gorjeta de 15 a 20% ao cabeleireiro.
+N: Próximo: o salão.
+
+T: At the hair salon | Salão de beleza | shop | Miami | Lia,f,👩🏽,cabeleireira
+K: I want to dye my hair. | Quero pintar o cabelo.
+M: Hoje você muda a cor do cabelo.
+D: Lia|Hello! What can I do for you?|Olá! O que posso fazer por você?
+D: You|I want to dye my hair.|Quero pintar o cabelo.
+D: Lia|Which color?|Qual cor?
+D: You|Brown, a little lighter.|Castanho, um pouco mais claro.
+D: Lia|Good choice. Sit here, please.|Boa escolha. Sente aqui, por favor.
+D: You|How long does it take?|Quanto tempo leva?
+D: Lia|About two hours.|Cerca de duas horas.
+D: You|Okay. I read a magazine.|Certo. Leio uma revista.
+V: dye|pintar;brown|castanho;lighter|mais claro;magazine|revista;hours|horas
+B: I want to dye my hair {0}.|Quero pintar o cabelo de {0}.|brown=castanho;black=preto;red=ruivo
+B: It takes about {0}.|Leva cerca de {0}.|two hours=duas horas;one hour=uma hora;thirty minutes=trinta minutos
+S: Lia|Hello! What can I do for you?|Olá! O que posso fazer por você?|I want to dye my hair.|Quero pintar o cabelo.
+S: You|How long does it take?|Quanto tempo leva?|About two hours.|Cerca de duas horas.
+R: I want to dye my hair.|Quero pintar o cabelo.
+R: Brown, a little lighter.|Castanho, um pouco mais claro.
+R: How long does it take?|Quanto tempo leva?
+R: It takes about two hours.|Leva cerca de duas horas.
+X: Good choice.|Boa escolha.
+C: Em salões, é comum folhear revistas enquanto a tinta age.
+N: Próximo: as unhas.
+
+T: Nails | Manicure | shop | Los Angeles | Lia,f,👩🏽,manicure
+K: What color do you want? | Que cor você quer?
+M: Hoje você faz as unhas.
+D: Lia|Welcome. Please sit down and put your hands here.|Bem-vinda. Sente e ponha as mãos aqui.
+D: You|Thank you. How much is a manicure?|Obrigada. Quanto custa a manicure?
+D: Lia|Twenty dollars.|Vinte dólares.
+D: You|Okay. Do you have red?|Certo. Vocês têm vermelho?
+D: Lia|Yes, and also pink and blue.|Temos, e também rosa e azul.
+D: You|Red, please.|Vermelho, por favor.
+D: Lia|Wait ten minutes. They need to dry.|Espere dez minutos. Precisam secar.
+D: You|They look beautiful!|Estão lindas!
+V: manicure|manicure;hands|mãos;nails|unhas;dry|secar;red|vermelho
+B: How much is a {0}?|Quanto custa uma {0}?|manicure=manicure;haircut=corte;massage=massagem
+B: Wait {0} minutes.|Espere {0} minutos.|ten=dez;five=cinco;fifteen=quinze
+S: Lia|Welcome. Please sit down and put your hands here.|Bem-vinda. Sente e ponha as mãos aqui.|Thank you. How much is a manicure?|Obrigada. Quanto custa a manicure?
+S: Lia|Wait ten minutes. They need to dry.|Espere dez minutos. Precisam secar.|They look beautiful!|Estão lindas!
+R: How much is a manicure?|Quanto custa a manicure?
+R: Red, please.|Vermelho, por favor.
+R: Wait ten minutes.|Espere dez minutos.
+R: They look beautiful.|Estão lindas.
+X: Red, please.|Vermelho, por favor.
+C: Salões americanos pedem para esperar o esmalte secar antes de pegar a bolsa.
+N: Próximo: o spa.
+
+T: A spa day | Dia de spa | gym | Arizona | Mia,f,👩🏻,atendente
+K: I want a massage. | Quero uma massagem.
+M: Hoje você passa o dia num spa.
+D: Mia|Welcome to the spa. How can I help you?|Bem-vindo ao spa. Como posso ajudar?
+D: You|I want a massage, please.|Quero uma massagem, por favor.
+D: Mia|Thirty minutes or one hour?|Trinta minutos ou uma hora?
+D: You|One hour, please.|Uma hora, por favor.
+D: Mia|Here is a robe and slippers.|Aqui estão um roupão e chinelos.
+D: You|Thank you. Where do I change?|Obrigado. Onde me troco?
+D: Mia|The changing room is on the right.|O vestiário fica à direita.
+D: You|I feel relaxed already.|Já me sinto relaxado.
+V: massage|massagem;robe|roupão;slippers|chinelos;relaxed|relaxado;changing room|vestiário
+B: I want a {0}.|Quero uma {0}.|massage=massagem;facial=limpeza de pele;sauna=sauna
+B: Thirty minutes or {0}?|Trinta minutos ou {0}?|one hour=uma hora;two hours=duas horas;fifteen minutes=quinze minutos
+S: Mia|Welcome to the spa. How can I help you?|Bem-vindo ao spa. Como posso ajudar?|I want a massage, please.|Quero uma massagem, por favor.
+S: Mia|Here is a robe and slippers.|Aqui estão um roupão e chinelos.|Thank you. Where do I change?|Obrigado. Onde me troco?
+R: I want a massage, please.|Quero uma massagem, por favor.
+R: One hour, please.|Uma hora, por favor.
+R: Where do I change?|Onde me troco?
+R: I feel relaxed.|Me sinto relaxado.
+X: How can I help you?|Como posso ajudar?
+C: Spas americanos oferecem roupão e chinelos aos clientes.
+N: Próximo: a farmácia de beleza.
+
+T: Skin care | Cuidados com a pele | shop | New York | Lia,f,👩🏽,vendedora
+K: My skin is dry. | Minha pele está seca.
+M: Hoje você escolhe um creme.
+D: You|Excuse me. My skin is dry.|Com licença. Minha pele está seca.
+D: Lia|This cream is good for dry skin.|Este creme é bom para pele seca.
+D: You|How much is it?|Quanto custa?
+D: Lia|Fifteen dollars.|Quinze dólares.
+D: You|Is there sunscreen too?|Tem protetor solar também?
+D: Lia|Yes, on the next shelf.|Tem, na próxima prateleira.
+D: You|I take both. Thank you.|Levo os dois. Obrigado.
+D: Lia|Use the sunscreen every day.|Use o protetor todo dia.
+V: skin|pele;dry|seca;cream|creme;sunscreen|protetor solar;shelf|prateleira
+B: This cream is good for {0} skin.|Este creme é bom para pele {0}.|dry=seca;oily=oleosa;sensitive=sensível
+B: Use the sunscreen {0}.|Use o protetor {0}.|every day=todo dia;in summer=no verão;at the beach=na praia
+S: Lia|This cream is good for dry skin.|Este creme é bom para pele seca.|How much is it?|Quanto custa?
+S: You|Is there sunscreen too?|Tem protetor solar também?|Yes, on the next shelf.|Tem, na próxima prateleira.
+R: My skin is dry.|Minha pele está seca.
+R: This cream is good for dry skin.|Este creme é bom para pele seca.
+R: Is there sunscreen too?|Tem protetor solar também?
+R: Use it every day.|Use todo dia.
+X: I take both.|Levo os dois.
+C: Protetor solar é uma rotina diária recomendada por dermatologistas.
+N: Próximo: o perfume.
+
+T: Perfume and soap | Perfume e sabonete | shop | Paris | Lia,f,👩🏽,vendedora
+K: This smells nice. | Isto cheira bem.
+M: Hoje você escolhe um perfume.
+D: Lia|Welcome. Do you want to try a perfume?|Bem-vindo. Quer experimentar um perfume?
+D: You|Yes, please. This smells nice.|Quero, por favor. Este cheira bem.
+D: Lia|It is lavender. It is calm and soft.|É lavanda. É calmo e suave.
+D: You|Do you have a stronger one?|Vocês têm um mais forte?
+D: Lia|Yes, this one is lemon and mint.|Temos, este é de limão e hortelã.
+D: You|I love it. How much is it?|Adoro. Quanto custa?
+D: Lia|Forty euros.|Quarenta euros.
+D: You|It is a gift for my mother.|É um presente para a minha mãe.
+V: perfume|perfume;smells|cheira;lavender|lavanda;lemon|limão;mint|hortelã
+B: This smells {0}.|Isto cheira {0}.|nice=bem;fresh=fresco;sweet=doce
+B: It is a gift for my {0}.|É um presente para {0}.|mother=minha mãe;father=meu pai;friend=meu amigo
+S: Lia|Welcome. Do you want to try a perfume?|Bem-vindo. Quer experimentar um perfume?|Yes, please. This smells nice.|Quero, por favor. Este cheira bem.
+S: Lia|Forty euros.|Quarenta euros.|It is a gift for my mother.|É um presente para a minha mãe.
+R: This smells nice.|Isto cheira bem.
+R: It is lavender.|É lavanda.
+R: Do you have a stronger one?|Vocês têm um mais forte?
+R: It is a gift for my mother.|É um presente para a minha mãe.
+X: How much is it?|Quanto custa?
+C: Paris é conhecida mundialmente pelos perfumes.
+N: Próximo: a lavagem de carro.
+
+T: Healthy habits | Hábitos de cuidado | living | Seattle | Jess,f,🧑🏼,amiga
+K: I wash my face every day. | Lavo o rosto todo dia.
+M: Hoje você fala dos cuidados do dia a dia.
+D: Jess|Do you have a daily routine?|Você tem uma rotina diária?
+D: You|Yes. I wash my face in the morning.|Tenho. Lavo o rosto de manhã.
+D: Jess|Do you brush your teeth?|Você escova os dentes?
+D: You|Yes, three times a day.|Escovo, três vezes ao dia.
+D: Jess|And at night?|E à noite?
+D: You|I take a shower and put on cream.|Tomo banho e passo creme.
+D: Jess|That sounds like a good routine.|Parece uma boa rotina.
+D: You|It makes me feel fresh.|Me faz sentir revigorado.
+V: routine|rotina;face|rosto;teeth|dentes;shower|banho;fresh|revigorado
+B: I wash my {0}.|Lavo {0}.|face=o rosto;hands=as mãos;hair=o cabelo
+B: I brush my {0}.|Escovo {0}.|teeth=os dentes;hair=o cabelo;shoes=os sapatos
+S: Jess|Do you have a daily routine?|Você tem uma rotina diária?|Yes. I wash my face in the morning.|Tenho. Lavo o rosto de manhã.
+S: Jess|And at night?|E à noite?|I take a shower and put on cream.|Tomo banho e passo creme.
+R: I wash my face every day.|Lavo o rosto todo dia.
+R: I brush my teeth three times a day.|Escovo os dentes três vezes ao dia.
+R: I take a shower at night.|Tomo banho à noite.
+R: It makes me feel fresh.|Me faz sentir revigorado.
+X: A good routine.|Uma boa rotina.
+C: "Daily routine" é como se chamam os hábitos do dia a dia.
+N: Próximo: a roupa limpa.
+
+T: Dry cleaning | Lavagem a seco | shop | Chicago | Ruth,f,👩🏻,atendente
+K: I need this cleaned. | Preciso limpar isto.
+M: Hoje você deixa roupa na tinturaria.
+D: Ruth|Hello. How can I help you?|Olá. Em que posso ajudar?
+D: You|I want to clean this jacket.|Quero limpar esta jaqueta.
+D: Ruth|Okay. There is a small spot here.|Certo. Tem uma mancha pequena aqui.
+D: You|Yes, it is coffee.|É, é café.
+D: Ruth|It is ready on Thursday.|Fica pronta na quinta.
+D: You|How much is it?|Quanto custa?
+D: Ruth|Ten dollars.|Dez dólares.
+D: You|Great. Here is my phone number.|Ótimo. Aqui está o meu telefone.
+V: jacket|jaqueta;spot|mancha;coffee|café;Thursday|quinta;phone number|telefone
+B: I want to clean this {0}.|Quero limpar {0}.|jacket=esta jaqueta;shirt=esta camisa;dress=este vestido
+B: It is ready on {0}.|Fica pronto na {0}.|Thursday=quinta;Friday=sexta;Monday=segunda
+S: Ruth|Hello. How can I help you?|Olá. Em que posso ajudar?|I want to clean this jacket.|Quero limpar esta jaqueta.
+S: Ruth|It is ready on Thursday.|Fica pronta na quinta.|How much is it?|Quanto custa?
+R: I want to clean this jacket.|Quero limpar esta jaqueta.
+R: There is a small spot.|Tem uma mancha pequena.
+R: It is ready on Thursday.|Fica pronta na quinta.
+R: Here is my phone number.|Aqui está meu telefone.
+X: How can I help you?|Em que posso ajudar?
+C: A tinturaria americana é "dry cleaner".
+N: Próximo: o sapateiro.
+
+T: Shoe repair | Conserto de sapato | shop | Boston | Dan,m,🧑🏽,sapateiro
+K: My shoe is broken. | Meu sapato está quebrado.
+M: Hoje você conserta um sapato.
+D: You|Excuse me. My shoe is broken.|Com licença. Meu sapato está quebrado.
+D: Dan|Let me see. The heel is loose.|Deixe-me ver. O salto está solto.
+D: You|Can you fix it?|Você consegue consertar?
+D: Dan|Yes, in twenty minutes.|Consigo, em vinte minutos.
+D: You|How much is it?|Quanto custa?
+D: Dan|Eight dollars.|Oito dólares.
+D: You|I wait here, please.|Espero aqui, por favor.
+D: Dan|Take a seat. Would you like a coffee?|Sente-se. Aceita um café?
+V: shoe|sapato;heel|salto;fix|consertar;loose|solto;minutes|minutos
+B: My {0} is broken.|Meu(Minha) {0} está quebrado(a).|shoe=sapato;bag=bolsa;watch=relógio
+B: Can you {0} it?|Você consegue {0}?|fix=consertar;clean=limpar;change=trocar
+S: You|Excuse me. My shoe is broken.|Com licença. Meu sapato está quebrado.|Let me see. The heel is loose.|Deixe-me ver. O salto está solto.
+S: You|Can you fix it?|Você consegue consertar?|Yes, in twenty minutes.|Consigo, em vinte minutos.
+R: My shoe is broken.|Meu sapato está quebrado.
+R: The heel is loose.|O salto está solto.
+R: Can you fix it?|Você consegue consertar?
+R: I wait here.|Espero aqui.
+X: Take a seat.|Sente-se.
+C: Sapateiros são comuns em cidades grandes e consertam também bolsas.
+N: Próximo: desafio, um dia de cuidados.
+
+T: A day of care | Desafio do arco: dia de cuidados | shop | Miami | Lia,f,👩🏽,amiga
+K: I want a relaxing day. | Quero um dia relaxante.
+M: Hoje você planeja um dia de cuidados.
+D: Lia|Let us have a relaxing day.|Vamos ter um dia relaxante.
+D: You|Great idea. First, a haircut.|Ótima ideia. Primeiro, um corte.
+D: Lia|Then a manicure and lunch.|Depois manicure e almoço.
+D: You|And after lunch, a massage.|E depois do almoço, massagem.
+D: Lia|Perfect. How much do we spend?|Perfeito. Quanto vamos gastar?
+D: You|About one hundred dollars.|Cerca de cem dólares.
+D: Lia|It is worth it.|Vale a pena.
+D: You|I feel better already.|Já me sinto melhor.
+V: relaxing|relaxante;haircut|corte;lunch|almoço;spend|gastar;worth|vale
+B: First, a {0}.|Primeiro, um(a) {0}.|haircut=corte;massage=massagem;manicure=manicure
+B: About {0} dollars.|Cerca de {0} dólares.|one hundred=cem;fifty=cinquenta;eighty=oitenta
+S: Lia|Let us have a relaxing day.|Vamos ter um dia relaxante.|Great idea. First, a haircut.|Ótima ideia. Primeiro, um corte.
+S: Lia|Perfect. How much do we spend?|Perfeito. Quanto vamos gastar?|About one hundred dollars.|Cerca de cem dólares.
+R: Let us have a relaxing day.|Vamos ter um dia relaxante.
+R: First, a haircut.|Primeiro, um corte.
+R: Then a manicure and lunch.|Depois manicure e almoço.
+R: It is worth it.|Vale a pena.
+X: It is worth it.|Vale a pena.
+C: "Self-care" é o cuidado consigo mesmo: descanso, comida e carinho.
+N: Próximo: esportes de inverno.
+BOSS: 1
