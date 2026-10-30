@@ -42,7 +42,7 @@ for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
             fr.insert(i,f);ch=True;nr+=1
         if 'r' in v:
             ex=next((x for x in fr if x['k']=='rdg' and x.get('obra')),None)
-            if ex and len(ex['s'])!=len(v['r']):
+            if ex and ex['s']!=[list(t) for t in v['r']]:
                 ex['s']=[list(t) for t in v['r']];ch=True;nr+=1
         if 'd' in v and not any(x['k']=='pgdlg' for x in fr):
             vp=next((i for i,x in enumerate(fr) if x['k']=='vplay'),None)
