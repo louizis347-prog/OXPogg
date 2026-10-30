@@ -1,0 +1,230 @@
+# Arco 47 · Tecnologia no cotidiano
+T: A smart speaker | Usar um assistente de voz | living | Seattle | Max,m,🧑🏼,amigo
+K: Can you play some music? | Você pode tocar música?
+M: Hoje você dá comandos simples a um assistente de voz.
+D: Max|I bought a smart speaker. Do you want to try it?|Comprei uma caixa de som inteligente. Quer testar?
+D: You|Yes. What can it do?|Sim. O que ela faz?
+D: Max|It can play music, tell the weather and set an alarm.|Ela toca música, diz o clima e programa um alarme.
+D: You|Can you play some music, please?|Pode tocar música, por favor?
+D: Max|Hey speaker, play some jazz music.|Ei, caixa, toque jazz.
+D: You|Wow, it works! Can you ask about the weather tomorrow?|Uau, funciona! Pode perguntar o clima de amanhã?
+D: Max|Hey speaker, what is the weather tomorrow? It says sunny and twenty degrees.|Ei, caixa, qual é o clima amanhã? Ela diz ensolarado e vinte graus.
+D: You|That is very useful. I want one too.|Isso é muito útil. Quero uma também.
+V: speaker|caixa de som|alto-falante;alarm|alarme;weather|clima;sunny|ensolarado;useful|útil
+B: Can you play some {0}?|Você pode tocar {0}?|music=música;jazz=jazz;rock=rock
+B: It can {0}.|Ela pode {0}.|set an alarm=programar um alarme;tell the weather=dizer o clima;play music=tocar música
+S: Max|What can it do?|O que ela faz?|It can play music, tell the weather and set an alarm.|Toca música, diz o clima e programa alarme.
+S: Max|Do you want to try it?|Quer testar?|Yes. Can you play some music, please?|Sim. Pode tocar música, por favor?
+R: I bought a smart speaker.|Comprei uma caixa de som inteligente.
+R: Can you play some music?|Você pode tocar música?
+R: It can set an alarm.|Ela pode programar um alarme.
+R: It is very useful.|É muito útil.
+X: It works!|Funciona!
+C: Assistentes de voz são comuns nas casas americanas e servem para tocar música, controlar luzes e fazer listas de compras.
+
+T: Printing a document | Imprimir um documento | office | Boston | Kai,m,🧑🏻,atendente
+K: I need to print ten pages. | Preciso imprimir dez páginas.
+M: Hoje você usa uma copiadora e paga pelas cópias.
+D: You|Hello. I need to print ten pages. Can you help me?|Olá. Preciso imprimir dez páginas. O senhor pode me ajudar?
+D: Kai|Of course. Do you have the file on a flash drive or in your email?|Claro. Você tem o arquivo num pen drive ou no e-mail?
+D: You|It is in my email. I can send it to you now.|Está no meu e-mail. Posso enviar agora.
+D: Kai|Please send it to this address. Do you want black and white or color?|Envie para este endereço. Quer preto e branco ou colorido?
+D: You|Black and white, please. And can you print on both sides?|Preto e branco, por favor. E pode imprimir dos dois lados?
+D: Kai|Yes. That costs ten cents a page, so one dollar in total.|Sim. Custa dez centavos a página, então um dólar no total.
+D: You|Perfect. How long does it take?|Perfeito. Quanto tempo leva?
+D: Kai|Two minutes. Please wait here.|Dois minutos. Aguarde aqui.
+V: print|imprimir;pages|páginas;file|arquivo;flash drive|pen drive;both sides|dois lados
+B: I need to print {0} pages.|Preciso imprimir {0} páginas.|ten=dez;five=cinco;twenty=vinte
+B: Do you want black and white or {0}?|Quer preto e branco ou {0}?|color=colorido;gray=cinza;glossy=brilhante
+S: Kai|Do you have the file on a flash drive or in your email?|Tem o arquivo no pen drive ou no e-mail?|It is in my email. I can send it now.|Está no e-mail. Posso enviar agora.
+S: Kai|That costs ten cents a page.|Custa dez centavos a página.|Perfect. How long does it take?|Perfeito. Quanto tempo leva?
+R: I need to print ten pages.|Preciso imprimir dez páginas.
+R: Black and white, please.|Preto e branco, por favor.
+R: Can you print on both sides?|Pode imprimir dos dois lados?
+R: It costs ten cents a page.|Custa dez centavos a página.
+X: Please wait here.|Aguarde aqui.
+C: Bibliotecas e lojas de cópias nos EUA oferecem impressão por poucos centavos a página.
+
+T: Taking a good photo | Dar dicas de fotografia com o celular | park | Los Angeles | Moe,m,🧑🏻,amigo
+K: Hold the phone with two hands. | Segure o celular com as duas mãos.
+M: Hoje você aprende a tirar fotos melhores com o celular.
+D: Moe|Can you take a photo of me in front of the lake?|Você pode tirar uma foto minha em frente ao lago?
+D: You|Sure. Stand there, near the tree. Smile!|Claro. Fique ali, perto da árvore. Sorria!
+D: Moe|Hold the phone with two hands, so the photo is not blurry.|Segure o celular com as duas mãos, para a foto não ficar tremida.
+D: You|Good tip. Is the light okay?|Boa dica. A luz está boa?
+D: Moe|The sun is behind me. Take the photo from this side.|O sol está atrás de mim. Tire a foto deste lado.
+D: You|Okay. One, two, three. Done! Do you like it?|Ok. Um, dois, três. Pronto! Gostou?
+D: Moe|It is nice, but my eyes are closed. Can you take another one?|Ficou bonita, mas meus olhos estão fechados. Pode tirar outra?
+D: You|Of course. Let me take three more. Then you can choose.|Claro. Vou tirar mais três. Depois você escolhe.
+V: photo|foto;blurry|tremida;light|luz;smile|sorrir;choose|escolher
+B: Hold the phone with {0}.|Segure o celular com {0}.|two hands=as duas mãos;one hand=uma mão;a case=uma capa
+B: Take the photo from this {0}.|Tire a foto deste {0}.|side=lado;place=lugar;angle=ângulo
+S: Moe|Can you take a photo of me?|Pode tirar uma foto minha?|Sure. Stand there and smile!|Claro. Fique ali e sorria!
+S: Moe|My eyes are closed.|Meus olhos estão fechados.|Let me take three more. Then you can choose.|Vou tirar mais três. Depois você escolhe.
+R: Can you take a photo of me?|Pode tirar uma foto minha?
+R: Hold the phone with two hands.|Segure o celular com as duas mãos.
+R: The light is okay.|A luz está boa.
+R: Let me take three more.|Vou tirar mais três.
+X: Smile!|Sorria!
+C: Pedir a um desconhecido para tirar uma foto é muito comum em pontos turísticos, e as pessoas costumam ajudar com prazer.
+
+T: A video call with family | Fazer uma videochamada | living | Chicago | Mia,f,👩🏻,amiga
+K: Can you see me? | Você consegue me ver?
+M: Hoje você fala com a família por vídeo.
+D: Mia|Hello, Mom! Can you see me?|Oi, mãe! Você consegue me ver?
+D: You|Mia, I have a question. How do you start a video call?|Mia, tenho uma dúvida. Como se começa uma videochamada?
+D: Mia|Open the app and click on the camera icon.|Abra o aplicativo e clique no ícone da câmera.
+D: You|I see you now, but I cannot hear you.|Estou vendo você, mas não consigo ouvir.
+D: Mia|Check the sound button. It is probably off.|Veja o botão do som. Provavelmente está desligado.
+D: You|Now I can hear you. You look very happy today.|Agora ouço você. Você parece muito feliz hoje.
+D: Mia|I am happy because I can see everyone. How is Dad?|Estou feliz porque posso ver todo mundo. Como está o pai?
+D: You|He is fine. He is cooking dinner and says hello.|Ele está bem. Está cozinhando e manda um oi.
+V: video call|videochamada;camera|câmera;sound|som;button|botão;probably|provavelmente
+B: Can you {0} me?|Você consegue {0}?|see=me ver;hear=me ouvir;find=me achar
+B: Click on the {0} icon.|Clique no ícone {0}.|camera=da câmera;sound=do som;phone=do telefone
+S: Mia|Can you see me?|Você consegue me ver?|I see you now, but I cannot hear you.|Vejo você agora, mas não ouço.
+S: Mia|Check the sound button.|Veja o botão do som.|Now I can hear you. You look happy.|Agora ouço você. Parece feliz.
+R: Can you see me?|Você consegue me ver?
+R: I cannot hear you.|Não consigo ouvir você.
+R: Check the sound button.|Veja o botão do som.
+R: Now I can hear you.|Agora ouço você.
+X: He says hello.|Ele manda um oi.
+C: Videochamadas ajudam famílias separadas por longas distâncias, e são muito comuns entre imigrantes e seus parentes.
+
+T: A computer problem | Pedir ajuda com um computador lento | office | Denver | Max,m,🧑🏼,colega
+K: My computer is very slow. | Meu computador está muito lento.
+M: Hoje você explica um problema simples no computador.
+D: You|Max, can you help me? My computer is very slow today.|Max, você pode me ajudar? Meu computador está muito lento hoje.
+D: Max|Let me see. How many programs are open?|Deixe-me ver. Quantos programas estão abertos?
+D: You|I think about ten. I need all of them for my work.|Acho que uns dez. Preciso de todos para o trabalho.
+D: Max|Close the programs you do not use. Then restart the computer.|Feche os programas que não usa. Depois reinicie o computador.
+D: You|Okay. Should I save my files first?|Ok. Devo salvar meus arquivos antes?
+D: Max|Yes, always save first. Then click "Restart".|Sim, sempre salve antes. Depois clique em "Reiniciar".
+D: You|It is turning on. This takes two minutes.|Está ligando. Isso leva dois minutos.
+D: Max|It is much faster now. You should restart it every week.|Está bem mais rápido agora. Você deveria reiniciar toda semana.
+V: slow|lento;programs|programas;restart|reiniciar;save|salvar;faster|mais rápido
+B: My computer is very {0} today.|Meu computador está muito {0} hoje.|slow=lento;hot=quente;noisy=barulhento
+B: Close the programs you do not {0}.|Feche os programas que você não {0}.|use=usa;need=precisa;know=conhece
+S: Max|How many programs are open?|Quantos programas estão abertos?|I think about ten.|Acho que uns dez.
+S: Max|Save your files first.|Salve seus arquivos antes.|Okay. Then I will click Restart.|Ok. Depois clico em Reiniciar.
+R: My computer is very slow.|Meu computador está muito lento.
+R: Close the programs you do not use.|Feche os programas que não usa.
+R: Save your files first.|Salve seus arquivos antes.
+R: It is much faster now.|Está bem mais rápido agora.
+X: Restart the computer.|Reinicie o computador.
+C: Reiniciar o computador é a dica número um do suporte técnico, e resolve muitos problemas de lentidão.
+
+T: Online classes | Fazer um curso online | living | Austin | Tom,m,🧑🏽,amigo
+K: I take an English class online. | Faço uma aula de inglês online.
+M: Hoje você fala de aprender pela internet.
+D: Tom|I see you at your computer every evening. What are you doing?|Vejo você no computador toda noite. O que está fazendo?
+D: You|I take an English class online. It is on Mondays and Wednesdays.|Faço uma aula de inglês online. É às segundas e quartas.
+D: Tom|Do you like studying online?|Você gosta de estudar online?
+D: You|Yes, it is very convenient. I can study at home, in my pajamas!|Sim, é muito prático. Posso estudar em casa, de pijama!
+D: Tom|Ha! Do you speak with the teacher?|Ha! Você fala com a professora?
+D: You|Yes, we have a video class for one hour. Then I do exercises.|Sim, temos aula em vídeo por uma hora. Depois faço exercícios.
+D: Tom|Is it expensive?|É caro?
+D: You|No. It costs forty dollars a month. I think it is a good price.|Não. Custa quarenta dólares por mês. Acho que é um bom preço.
+V: online|online;convenient|prático;pajamas|pijama;exercises|exercícios;price|preço
+B: I take an English class {0}.|Faço uma aula de inglês {0}.|online=online;at night=à noite;at school=na escola
+B: It costs {0} dollars a month.|Custa {0} dólares por mês.|forty=quarenta;thirty=trinta;fifty=cinquenta
+S: Tom|What are you doing?|O que está fazendo?|I take an English class online.|Faço uma aula de inglês online.
+S: Tom|Is it expensive?|É caro?|No. It costs forty dollars a month.|Não. Custa quarenta dólares por mês.
+R: I take an English class online.|Faço uma aula de inglês online.
+R: It is very convenient.|É muito prático.
+R: We have a video class for one hour.|Temos aula em vídeo por uma hora.
+R: It costs forty dollars a month.|Custa quarenta dólares por mês.
+X: Ha!|Ha!
+C: Cursos online são muito populares nos EUA, e muitas pessoas estudam à noite, depois do trabalho.
+
+T: Sending an attachment | Enviar um arquivo por e-mail | office | New York | Sam,m,🧑🏻,colega
+K: I forgot the attachment. | Esqueci o anexo.
+M: Hoje você anexa um arquivo e escreve um e-mail curto.
+D: Sam|Did you get my email about the meeting?|Você recebeu meu e-mail sobre a reunião?
+D: You|Yes, I did, but I could not open the attachment.|Sim, mas não consegui abrir o anexo.
+D: Sam|Oh no, I forgot to attach the correct file. Sorry!|Ai não, esqueci de anexar o arquivo correto. Desculpe!
+D: You|No problem. Can you send it again?|Sem problema. Pode enviar de novo?
+D: Sam|Sure. I am attaching it now. Can you see it?|Claro. Estou anexando agora. Você consegue ver?
+D: You|Yes, I received it. It is a PDF with ten pages.|Sim, recebi. É um PDF com dez páginas.
+D: Sam|Please read it before the meeting.|Por favor, leia antes da reunião.
+D: You|I will read it tonight. Thanks for sending it.|Vou ler hoje à noite. Obrigado por enviar.
+V: attachment|anexo;attach|anexar;correct|correto;PDF|PDF;meeting|reunião
+B: I could not open the {0}.|Não consegui abrir {0}.|attachment=o anexo;file=o arquivo;link=o link
+B: Please read it before the {0}.|Leia antes {0}.|meeting=da reunião;class=da aula;test=da prova
+S: Sam|Did you get my email?|Recebeu meu e-mail?|Yes, but I could not open the attachment.|Sim, mas não consegui abrir o anexo.
+S: Sam|I am attaching it now.|Estou anexando agora.|Yes, I received it. Thanks.|Sim, recebi. Obrigado.
+R: I could not open the attachment.|Não consegui abrir o anexo.
+R: I forgot to attach the file.|Esqueci de anexar o arquivo.
+R: Can you send it again?|Pode enviar de novo?
+R: I received it.|Eu recebi.
+X: No problem.|Sem problema.
+C: Esquecer o anexo é um erro tão comum que o e-mail de muitos programas avisa quando você escreve "attached" sem anexar nada.
+
+T: A travel app | Usar um aplicativo de viagem | street | Boston | Dan,m,🧑🏽,amigo
+K: The app shows the next bus. | O aplicativo mostra o próximo ônibus.
+M: Hoje você usa um app para chegar a um lugar.
+D: You|Dan, I am lost. How do I get to the museum?|Dan, estou perdido. Como chego ao museu?
+D: Dan|Use a travel app on your phone. Type the name of the museum.|Use um aplicativo de viagem no celular. Digite o nome do museu.
+D: You|Done. It says I can walk or take the bus.|Pronto. Diz que posso ir a pé ou de ônibus.
+D: Dan|The bus is faster. Look, it shows the next bus in four minutes.|O ônibus é mais rápido. Olhe, mostra o próximo ônibus em quatro minutos.
+D: You|Where is the bus stop?|Onde fica o ponto de ônibus?
+D: Dan|The blue point on the map is you. The red point is the stop.|O ponto azul no mapa é você. O ponto vermelho é o ponto de ônibus.
+D: You|I see it. It is only one block from here.|Estou vendo. Fica só a uma quadra daqui.
+D: Dan|Great. The app also tells you how much the ticket costs.|Ótimo. O aplicativo também diz quanto custa a passagem.
+V: lost|perdido;travel app|aplicativo de viagem;bus stop|ponto de ônibus;point|ponto;block|quadra
+B: I can walk or take the {0}.|Posso ir a pé ou de {0}.|bus=ônibus;train=trem;taxi=táxi
+B: The blue point on the map is {0}.|O ponto azul no mapa é {0}.|you=você;the stop=o ponto;the museum=o museu
+S: Dan|Use a travel app. Type the name of the museum.|Use um app. Digite o nome do museu.|Done. It says I can walk or take the bus.|Pronto. Diz que posso ir a pé ou de ônibus.
+S: Dan|The next bus is in four minutes.|O próximo ônibus é em quatro minutos.|Where is the bus stop?|Onde fica o ponto?
+R: Use a travel app.|Use um aplicativo de viagem.
+R: The next bus is in four minutes.|O próximo ônibus é em quatro minutos.
+R: The blue point is you.|O ponto azul é você.
+R: The stop is one block from here.|O ponto fica a uma quadra daqui.
+X: I am lost.|Estou perdido.
+C: Aplicativos de mapas mostram o horário de ônibus e metrô em tempo real, e são muito usados por turistas e moradores.
+
+T: Smart phone, smart habits | Falar de hábitos ao usar o celular | cafe | Seattle | Jess,f,🧑🏼,amiga
+K: I do not use my phone at dinner. | Não uso meu celular no jantar.
+M: Hoje você fala de regras pessoais para usar o celular.
+D: Jess|You never look at your phone when we eat. Why?|Você nunca olha o celular quando comemos. Por quê?
+D: You|I have a rule: no phone at dinner.|Tenho uma regra: sem celular no jantar.
+D: Jess|That is a good rule. I use my phone too much.|É uma boa regra. Uso o celular demais.
+D: You|How many hours do you use it every day?|Quantas horas você usa por dia?
+D: Jess|About five hours. It is too much.|Cerca de cinco horas. É demais.
+D: You|Try to turn off notifications. Then you check it only a few times.|Tente desligar as notificações. Assim você olha só poucas vezes.
+D: Jess|Good idea. I am going to do it tonight.|Boa ideia. Vou fazer isso hoje à noite.
+D: You|And put it in another room when you sleep.|E deixe em outro cômodo quando for dormir.
+V: rule|regra;notifications|notificações;check|conferir|olhar;room|cômodo;sleep|dormir
+B: I have a rule: no phone at {0}.|Tenho uma regra: sem celular {0}.|dinner=no jantar;class=na aula;the table=à mesa
+B: Try to turn off {0}.|Tente desligar {0}.|notifications=as notificações;the sound=o som;the screen=a tela
+S: Jess|You never look at your phone when we eat. Why?|Você nunca olha o celular quando comemos. Por quê?|I have a rule: no phone at dinner.|Tenho uma regra: sem celular no jantar.
+S: Jess|I use my phone too much.|Uso o celular demais.|Try to turn off notifications.|Tente desligar as notificações.
+R: I have a rule: no phone at dinner.|Tenho uma regra: sem celular no jantar.
+R: I use my phone too much.|Uso o celular demais.
+R: Try to turn off notifications.|Tente desligar as notificações.
+R: Put it in another room.|Deixe em outro cômodo.
+X: That is a good rule.|É uma boa regra.
+C: Muitos americanos adotam regras como "sem telas no jantar" para conversar mais em família.
+
+T: Technology in my life | Desafio do arco: descrever o uso de tecnologia | living | New York | Mia,f,👩🏻,amiga
+K: Technology helps me every day. | A tecnologia me ajuda todo dia.
+M: Desafio: fale de aplicativos, aparelhos e hábitos que você usa.
+D: Mia|How do you use technology in your life?|Como você usa tecnologia na sua vida?
+D: You|I use my phone to work, to study and to talk with my family.|Uso meu celular para trabalhar, estudar e falar com minha família.
+D: Mia|Which app do you use most?|Qual aplicativo você mais usa?
+D: You|A map app. I use it every day to go to work.|Um aplicativo de mapas. Uso todo dia para ir ao trabalho.
+D: Mia|Do you also use a computer?|Você também usa computador?
+D: You|Yes, at work. I write emails and I make video calls.|Sim, no trabalho. Escrevo e-mails e faço videochamadas.
+D: Mia|Is there something you do not like?|Tem algo de que você não gosta?
+D: You|Too many notifications. Now I turn them off and I feel better.|Notificações demais. Agora desligo e me sinto melhor.
+V: technology|tecnologia;app|aplicativo;computer|computador;notifications|notificações;feel|sentir
+B: I use my phone to {0}.|Uso meu celular para {0}.|work=trabalhar;study=estudar;talk with my family=falar com minha família
+B: I use a {0} app every day.|Uso um aplicativo de {0} todo dia.|map=mapas;music=música;news=notícias
+S: Mia|How do you use technology in your life?|Como você usa tecnologia?|I use my phone to work, to study and to talk with my family.|Uso o celular para trabalhar, estudar e falar com a família.
+S: Mia|Is there something you do not like?|Tem algo de que não gosta?|Too many notifications.|Notificações demais.
+R: I use my phone to work and to study.|Uso o celular para trabalhar e estudar.
+R: I use a map app every day.|Uso um app de mapas todo dia.
+R: I write emails and make video calls.|Escrevo e-mails e faço videochamadas.
+R: I turn off the notifications.|Desligo as notificações.
+X: Which app do you use most?|Qual app você mais usa?
+C: Equilibrar o uso da tecnologia é um tema comum nos EUA, com programas que mostram o tempo de tela em cada aplicativo.

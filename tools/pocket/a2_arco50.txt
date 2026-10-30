@@ -1,0 +1,230 @@
+# Arco 50 · Viajando por conta própria
+T: A room in a hostel | Reservar uma cama num albergue | hall | San Francisco | Lia,f,👩🏽,recepcionista
+K: Do you have a bed for tonight? | Vocês têm uma cama para esta noite?
+M: Hoje você reserva um albergue e pergunta sobre as regras.
+D: You|Hello. Do you have a bed for tonight?|Olá. Vocês têm uma cama para esta noite?
+D: Lia|Yes. We have a bed in a room for six people. It costs thirty dollars.|Sim. Temos uma cama num quarto para seis pessoas. Custa trinta dólares.
+D: You|Is breakfast included?|O café da manhã está incluído?
+D: Lia|Yes, from seven to ten. There is also a kitchen for the guests.|Sim, das sete às dez. Também há uma cozinha para os hóspedes.
+D: You|Is there a place for my bag?|Tem um lugar para minha mochila?
+D: Lia|Yes, you have a locker under your bed. You need your own lock.|Sim, você tem um armário embaixo da cama. Precisa de um cadeado próprio.
+D: You|What time is the check-out?|A que horas é o check-out?
+D: Lia|At eleven. Quiet hours start at ten at night.|Às onze. O horário de silêncio começa às dez da noite.
+V: hostel|albergue;locker|armário;lock|cadeado;quiet hours|horário de silêncio;guests|hóspedes
+B: Do you have a bed for {0}?|Vocês têm uma cama para {0}?|tonight=esta noite;two nights=duas noites;Friday=sexta
+B: Quiet hours start at {0}.|O horário de silêncio começa às {0}.|ten=dez;eleven=onze;nine thirty=nove e meia
+S: Lia|We have a bed in a room for six people.|Temos uma cama num quarto para seis.|Is breakfast included?|O café da manhã está incluído?
+S: Lia|You need your own lock.|Você precisa de cadeado próprio.|What time is the check-out?|A que horas é o check-out?
+R: Do you have a bed for tonight?|Vocês têm uma cama para esta noite?
+R: Is breakfast included?|O café da manhã está incluído?
+R: You need your own lock.|Você precisa de cadeado próprio.
+R: Quiet hours start at ten.|O silêncio começa às dez.
+X: Check-out is at eleven.|O check-out é às onze.
+C: Albergues são uma opção barata para viajantes nos EUA, com quartos compartilhados e cozinha comunitária.
+
+T: A train trip | Fazer uma viagem de trem | station | Boston | Dan,m,🧑🏽,atendente
+K: What time does the train leave? | A que horas sai o trem?
+M: Hoje você compra passagem de trem e confere a plataforma.
+D: You|Excuse me. What time does the train to New York leave?|Com licença. A que horas sai o trem para Nova York?
+D: Dan|At nine fifteen. It arrives at one o'clock.|Às nove e quinze. Chega à uma hora.
+D: You|How much is a ticket?|Quanto custa a passagem?
+D: Dan|Eighty dollars. It is cheaper if you buy online.|Oitenta dólares. É mais barato se comprar online.
+D: You|I will buy it here, please. One adult ticket.|Vou comprar aqui, por favor. Um ingresso de adulto.
+D: Dan|Here you are. The train leaves from platform four.|Aqui está. O trem sai da plataforma quatro.
+D: You|Can I take a big bag?|Posso levar uma mala grande?
+D: Dan|Yes, there is space above your seat. Have a good trip!|Sim, tem espaço acima do seu assento. Boa viagem!
+V: train|trem;arrives|chega;platform|plataforma;space|espaço;above|acima
+B: What time does the train {0}?|A que horas {0} o trem?|leave=sai;arrive=chega;stop=para
+B: The train leaves from platform {0}.|O trem sai da plataforma {0}.|four=quatro;two=dois;seven=sete
+S: You|What time does the train to New York leave?|A que horas sai o trem para Nova York?|At nine fifteen. It arrives at one o'clock.|Às nove e quinze. Chega à uma.
+S: Dan|The train leaves from platform four.|O trem sai da plataforma quatro.|Thank you. Can I take a big bag?|Obrigado. Posso levar mala grande?
+R: What time does the train leave?|A que horas sai o trem?
+R: It arrives at one o'clock.|Chega à uma hora.
+R: One adult ticket, please.|Um ingresso de adulto, por favor.
+R: The train leaves from platform four.|O trem sai da plataforma quatro.
+X: Have a good trip!|Boa viagem!
+C: O trem Amtrak liga Boston, Nova York e Washington, e é uma boa opção para evitar o trânsito.
+
+T: The airport shuttle | Pegar um transporte do aeroporto | airport | Los Angeles | Jo,f,👩🏿,atendente
+K: How do I get to the hotel? | Como chego ao hotel?
+M: Hoje você escolhe como ir do aeroporto ao hotel.
+D: You|Excuse me. How do I get to this hotel from the airport?|Com licença. Como chego a este hotel a partir do aeroporto?
+D: Jo|You can take a taxi, a bus or the hotel shuttle.|Você pode pegar um táxi, um ônibus ou o transporte do hotel.
+D: You|Which one is the cheapest?|Qual é o mais barato?
+D: Jo|The bus. It costs five dollars, but it takes one hour.|O ônibus. Custa cinco dólares, mas leva uma hora.
+D: You|And the hotel shuttle?|E o transporte do hotel?
+D: Jo|It is free, and it takes twenty minutes. It leaves every thirty minutes.|É grátis e leva vinte minutos. Sai a cada trinta minutos.
+D: You|That is great. Where do I wait for it?|Que ótimo. Onde espero?
+D: Jo|Outside door number three. Look for the blue sign.|Fora da porta número três. Procure a placa azul.
+V: shuttle|transporte (do aeroporto);taxi|táxi;cheapest|mais barato;sign|placa;free|grátis
+B: You can take a taxi, a bus or the {0}.|Você pode pegar um táxi, um ônibus ou {0}.|hotel shuttle=o transporte do hotel;train=o trem;subway=o metrô
+B: It takes {0} minutes.|Leva {0} minutos.|twenty=vinte;thirty=trinta;ten=dez
+S: Jo|You can take a taxi, a bus or the hotel shuttle.|Pode pegar táxi, ônibus ou transporte do hotel.|Which one is the cheapest?|Qual é o mais barato?
+S: Jo|It is free, and it takes twenty minutes.|É grátis e leva vinte minutos.|That is great. Where do I wait for it?|Que ótimo. Onde espero?
+R: How do I get to this hotel?|Como chego a este hotel?
+R: The bus is the cheapest.|O ônibus é o mais barato.
+R: The hotel shuttle is free.|O transporte do hotel é grátis.
+R: Look for the blue sign.|Procure a placa azul.
+X: Outside door number three.|Fora da porta número três.
+C: Muitos hotéis americanos oferecem transporte gratuito do aeroporto, e é bom confirmar o horário na reserva.
+
+T: Renting a bike | Alugar uma bicicleta de passeio | street | Portland | Max,m,🧑🏼,atendente
+K: I would like to rent a bike for the day. | Gostaria de alugar uma bicicleta por um dia.
+M: Hoje você aluga uma bicicleta e escolhe um trajeto.
+D: You|Hello. I would like to rent a bike for the day.|Olá. Gostaria de alugar uma bicicleta por um dia.
+D: Max|Sure. It is twenty dollars for eight hours. Do you want a helmet?|Claro. São vinte dólares por oito horas. Quer capacete?
+D: You|Yes, please. And a lock.|Sim, por favor. E um cadeado.
+D: Max|Both are included. Please show me your ID.|Os dois estão incluídos. Mostre seu documento, por favor.
+D: You|Here it is. Where can I ride?|Aqui está. Onde posso pedalar?
+D: Max|There is a nice path along the river. It is about ten kilometers.|Tem uma bela ciclovia ao longo do rio. São cerca de dez quilômetros.
+D: You|Is it easy?|É fácil?
+D: Max|Yes, it is flat. Return the bike by six, please.|Sim, é plana. Devolva a bicicleta até as seis, por favor.
+V: bike|bicicleta;helmet|capacete;path|ciclovia|caminho;river|rio;flat|plana
+B: I would like to rent a bike for {0}.|Gostaria de alugar uma bicicleta por {0}.|the day=um dia;two hours=duas horas;the weekend=o fim de semana
+B: Return the bike by {0}.|Devolva a bicicleta até as {0}.|six=seis;five=cinco;seven=sete
+S: Max|It is twenty dollars for eight hours.|São vinte dólares por oito horas.|Do you have a helmet? Where can I ride?|Tem capacete? Onde posso pedalar?
+S: Max|There is a path along the river.|Há uma ciclovia ao longo do rio.|Is it easy?|É fácil?
+R: I would like to rent a bike.|Gostaria de alugar uma bicicleta.
+R: Both are included.|Os dois estão incluídos.
+R: There is a path along the river.|Há uma ciclovia ao longo do rio.
+R: Return the bike by six.|Devolva a bicicleta até as seis.
+X: It is flat.|É plana.
+C: Cidades como Portland têm centenas de quilômetros de ciclovias, e alugar uma bicicleta é um jeito agradável de passear.
+
+T: Lost luggage | Relatar uma mala extraviada | airport | Chicago | Jo,f,👩🏿,atendente
+K: My suitcase did not arrive. | Minha mala não chegou.
+M: Hoje você relata a mala perdida e descreve o conteúdo.
+D: You|Excuse me. My suitcase did not arrive.|Com licença. Minha mala não chegou.
+D: Jo|I am sorry. What does it look like?|Sinto muito. Como ela é?
+D: You|It is big and red, with a black handle.|É grande e vermelha, com alça preta.
+D: Jo|Please fill out this form. What is in the suitcase?|Preencha este formulário, por favor. O que tem na mala?
+D: You|Clothes, shoes and a camera.|Roupas, sapatos e uma câmera.
+D: Jo|We will look for it. Where are you staying?|Vamos procurá-la. Onde você está hospedado?
+D: You|At the Grand Hotel, room twelve.|No Grand Hotel, quarto doze.
+D: Jo|We will call you tomorrow, and bring it to your hotel.|Ligaremos amanhã e levaremos ao seu hotel.
+V: suitcase|mala;handle|alça;form|formulário;shoes|sapatos;camera|câmera
+B: My {0} did not arrive.|Minha {0} não chegou.|suitcase=mala;bag=bolsa;box=caixa
+B: It is big and {0}, with a black handle.|É grande e {0}, com alça preta.|red=vermelha;blue=azul;green=verde
+S: Jo|What does it look like?|Como ela é?|It is big and red, with a black handle.|É grande e vermelha, com alça preta.
+S: Jo|Where are you staying?|Onde está hospedado?|At the Grand Hotel, room twelve.|No Grand Hotel, quarto doze.
+R: My suitcase did not arrive.|Minha mala não chegou.
+R: It is big and red.|É grande e vermelha.
+R: There are clothes, shoes and a camera.|Tem roupas, sapatos e uma câmera.
+R: We will call you tomorrow.|Ligaremos amanhã.
+X: Please fill out this form.|Preencha este formulário.
+C: Em caso de bagagem extraviada, a companhia costuma entregá-la no hotel em um ou dois dias.
+
+T: At customs | Passar pela alfândega | airport | New York | Officer Cole,m,🧑🏽,agente
+K: I have nothing to declare. | Não tenho nada a declarar.
+M: Hoje você responde às perguntas da alfândega.
+D: Officer Cole|Good afternoon. May I see your passport?|Boa tarde. Posso ver seu passaporte?
+D: You|Here it is.|Aqui está.
+D: Officer Cole|What is the reason for your visit?|Qual é o motivo da sua visita?
+D: You|I am here on vacation. I will stay for two weeks.|Estou aqui de férias. Vou ficar duas semanas.
+D: Officer Cole|Where are you going to stay?|Onde você vai ficar?
+D: You|At a hotel in Manhattan. Here is the address.|Num hotel em Manhattan. Aqui está o endereço.
+D: Officer Cole|Do you have any food or plants in your bag?|Você tem alguma comida ou planta na mala?
+D: You|No, I have nothing to declare. Only clothes and gifts.|Não, não tenho nada a declarar. Só roupas e presentes.
+V: customs|alfândega;reason|motivo;vacation|férias;declare|declarar;gifts|presentes
+B: I am here on {0}.|Estou aqui a {0}.|vacation=passeio;business=trabalho;study=estudo
+B: I will stay for {0} weeks.|Vou ficar {0} semanas.|two=duas;three=três;one=uma
+S: Officer Cole|What is the reason for your visit?|Qual o motivo da visita?|I am here on vacation. I will stay for two weeks.|Estou de férias. Vou ficar duas semanas.
+S: Officer Cole|Do you have any food in your bag?|Tem comida na mala?|No, I have nothing to declare.|Não, nada a declarar.
+R: May I see your passport?|Posso ver seu passaporte?
+R: I am here on vacation.|Estou aqui de férias.
+R: I will stay for two weeks.|Vou ficar duas semanas.
+R: I have nothing to declare.|Não tenho nada a declarar.
+X: What is the reason for your visit?|Qual o motivo da sua visita?
+C: Ao chegar aos EUA, é proibido trazer certos alimentos e plantas, e a declaração é feita num formulário ou numa máquina.
+
+T: A guided tour | Reservar um passeio guiado | hall | Washington | Gina,f,👩🏻,atendente
+K: I would like to book a tour. | Gostaria de reservar um passeio.
+M: Hoje você reserva um passeio e pergunta detalhes.
+D: You|Hello. I would like to book a tour of the city.|Olá. Gostaria de reservar um passeio pela cidade.
+D: Gina|Of course. We have a tour in the morning and one in the afternoon.|Claro. Temos um passeio de manhã e outro à tarde.
+D: You|How long is the morning tour?|Quanto dura o passeio da manhã?
+D: Gina|Three hours. It starts at nine from this office.|Três horas. Começa às nove neste escritório.
+D: You|What is included in the price?|O que está incluído no preço?
+D: Gina|A guide, a bus and a ticket for two museums.|Um guia, um ônibus e um ingresso para dois museus.
+D: You|How much is it?|Quanto custa?
+D: Gina|Forty dollars each. Do you want to book for tomorrow?|Quarenta dólares cada. Quer reservar para amanhã?
+V: tour|passeio;guide|guia;included|incluído;price|preço;museums|museus
+B: I would like to book a {0}.|Gostaria de reservar {0}.|tour=um passeio;room=um quarto;table=uma mesa
+B: The morning tour starts at {0}.|O passeio da manhã começa às {0}.|nine=nove;ten=dez;eight thirty=oito e meia
+S: Gina|We have a tour in the morning and one in the afternoon.|Temos um passeio de manhã e outro à tarde.|How long is the morning tour?|Quanto dura o passeio da manhã?
+S: Gina|It is forty dollars each.|São quarenta dólares cada.|I would like to book for tomorrow.|Gostaria de reservar para amanhã.
+R: I would like to book a tour.|Gostaria de reservar um passeio.
+R: How long is the tour?|Quanto dura o passeio?
+R: What is included in the price?|O que está incluído no preço?
+R: It is forty dollars each.|São quarenta dólares cada.
+X: Do you want to book for tomorrow?|Quer reservar para amanhã?
+C: Muitos passeios guiados nos EUA incluem ingressos para atrações, o que torna o preço mais vantajoso.
+
+T: Getting a good seat | Escolher assento em voo ou trem | airport | Dallas | Jo,f,👩🏿,atendente
+K: I prefer a window seat. | Prefiro um assento na janela.
+M: Hoje você escolhe um assento e pede ajuda.
+D: Jo|Good morning. Here is your boarding pass. Do you have any questions?|Bom dia. Aqui está seu cartão de embarque. Tem alguma dúvida?
+D: You|Yes. I prefer a window seat. Is that possible?|Sim. Prefiro um assento na janela. É possível?
+D: Jo|Let me check. Yes, seat twelve A is a window seat.|Deixe-me ver. Sim, o assento doze A é na janela.
+D: You|Perfect. Is it near the front of the plane?|Perfeito. Fica perto da frente do avião?
+D: Jo|It is in the middle. Do you want a seat near the front?|Fica no meio. Quer um assento perto da frente?
+D: You|No, thank you. The window is more important for me.|Não, obrigado. A janela é mais importante para mim.
+D: Jo|Okay. Boarding starts at ten, at gate nine.|Ok. O embarque começa às dez, no portão nove.
+D: You|Thank you. I will go there now.|Obrigado. Vou para lá agora.
+V: window|janela;seat|assento;front|frente;middle|meio;boarding|embarque
+B: I prefer a {0} seat.|Prefiro um assento {0}.|window=na janela;aisle=no corredor;front=na frente
+B: Boarding starts at {0}.|O embarque começa às {0}.|ten=dez;nine=nove;eleven=onze
+S: Jo|Do you have any questions?|Tem alguma dúvida?|Yes. I prefer a window seat. Is that possible?|Sim. Prefiro assento na janela. É possível?
+S: Jo|Boarding starts at ten, at gate nine.|O embarque começa às dez, no portão nove.|Thank you. I will go there now.|Obrigado. Vou para lá agora.
+R: I prefer a window seat.|Prefiro um assento na janela.
+R: Is it near the front?|Fica perto da frente?
+R: Boarding starts at ten.|O embarque começa às dez.
+R: I will go to gate nine.|Vou ao portão nove.
+X: Is that possible?|É possível?
+C: Muitas companhias aéreas americanas permitem escolher o assento online, às vezes por uma taxa adicional.
+
+T: Lost in a new city | Voltar ao hotel quando se está perdido | street | Chicago | Ruth,f,👩🏻,moradora
+K: Excuse me, where is this hotel? | Com licença, onde fica este hotel?
+M: Hoje você pede ajuda para voltar ao hotel.
+D: You|Excuse me. I am lost. Where is this hotel, please?|Com licença. Estou perdido. Onde fica este hotel, por favor?
+D: Ruth|Let me see the address. Oh, it is near here.|Deixe-me ver o endereço. Ah, é perto daqui.
+D: You|How can I get there?|Como posso chegar lá?
+D: Ruth|Go straight for two blocks, and then turn left at the bank.|Siga em frente por duas quadras e depois vire à esquerda no banco.
+D: You|Is it far?|Fica longe?
+D: Ruth|No, it is about five minutes on foot.|Não, são cerca de cinco minutos a pé.
+D: You|Thank you very much. You are very kind.|Muito obrigado. Você é muito gentil.
+D: Ruth|My pleasure. Enjoy your stay in Chicago!|Imagina. Aproveite sua estadia em Chicago!
+V: lost|perdido;address|endereço;blocks|quadras;bank|banco;stay|estadia
+B: Go straight for {0} blocks.|Siga em frente por {0} quadras.|two=duas;three=três;four=quatro
+B: Turn left at the {0}.|Vire à esquerda no {0}.|bank=banco;corner=esquina;park=parque
+S: You|I am lost. Where is this hotel, please?|Estou perdido. Onde fica este hotel?|How can I get there?|Como posso chegar lá?
+S: Ruth|Go straight for two blocks and turn left at the bank.|Siga duas quadras e vire à esquerda no banco.|Thank you very much. You are very kind.|Muito obrigado. Você é muito gentil.
+R: I am lost.|Estou perdido.
+R: Where is this hotel, please?|Onde fica este hotel, por favor?
+R: Go straight for two blocks.|Siga em frente por duas quadras.
+R: Enjoy your stay in Chicago!|Aproveite sua estadia em Chicago!
+X: My pleasure.|Imagina.
+C: Mostrar o endereço no celular ou num papel é uma boa forma de pedir ajuda quando você está perdido numa cidade nova.
+
+T: My dream trip today | Desafio do arco: planejar a viagem dos sonhos | living | Seattle | Jess,f,🧑🏼,amiga
+K: My dream trip is to visit three countries. | Minha viagem dos sonhos é visitar três países.
+M: Desafio: planeje destino, transporte, hospedagem e atividades.
+D: Jess|What is your dream trip?|Qual é sua viagem dos sonhos?
+D: You|I want to visit three countries in Europe: Italy, France and Spain.|Quero visitar três países da Europa: Itália, França e Espanha.
+D: Jess|How long are you going to stay?|Quanto tempo você vai ficar?
+D: You|About three weeks. I will travel by train between the cities.|Cerca de três semanas. Vou viajar de trem entre as cidades.
+D: Jess|Where are you going to sleep?|Onde você vai dormir?
+D: You|In hostels. They are cheap, and I can meet other travelers.|Em albergues. São baratos e posso conhecer outros viajantes.
+D: Jess|What are you going to do there?|O que você vai fazer lá?
+D: You|I will visit museums, eat local food and take many photos.|Vou visitar museus, comer comida local e tirar muitas fotos.
+V: dream|sonho;countries|países;travelers|viajantes;local|local;cities|cidades
+B: I want to visit three {0}.|Quero visitar três {0}.|countries=países;cities=cidades;museums=museus
+B: I will travel by {0} between the cities.|Vou viajar de {0} entre as cidades.|train=trem;bus=ônibus;plane=avião
+S: Jess|What is your dream trip?|Qual é sua viagem dos sonhos?|I want to visit three countries in Europe.|Quero visitar três países da Europa.
+S: Jess|Where are you going to sleep?|Onde vai dormir?|In hostels. They are cheap.|Em albergues. São baratos.
+R: My dream trip is to visit three countries.|Minha viagem dos sonhos é visitar três países.
+R: I will travel by train.|Vou viajar de trem.
+R: I will sleep in hostels.|Vou dormir em albergues.
+R: I will take many photos.|Vou tirar muitas fotos.
+X: What is your dream trip?|Qual é sua viagem dos sonhos?
+C: Viajar de mochila pela Europa, com trem e albergues, é um sonho de muitos jovens americanos depois da faculdade.
