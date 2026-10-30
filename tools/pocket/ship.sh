@@ -2,10 +2,11 @@
 # uso: ship.sh "mensagem"  — reconstrói, atualiza disponibilidade, versiona dados, commita e publica
 cd /home/user/OXPogg
 python3 tools/pocket/build.py >/dev/null
-N=$(python3 -c "import json;print(sum(len(json.load(open(f))) if isinstance(json.load(open(f)),list) else 0 for f in __import__('glob').glob('data/pk-a1_*.json')))")
+N=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-a1_*.json')))")
+N2=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-a2_*.json')))")
 python3 - <<P
 import json
-p='data/availability.json'; d=json.load(open(p)); d['pk-a1']={'total':$N,'available':$N}
+p='data/availability.json'; d=json.load(open(p)); d['pk-a1']={'total':$N,'available':$N}; d['pk-a2']={'total':$N2,'available':$N2}
 json.dump(d,open(p,'w'),ensure_ascii=False,separators=(',',':'))
 P
 V=$(grep -o "pogglot-data-v[0-9]*" sw.js | head -1 | grep -o "[0-9]*$"); sed -i "s/pogglot-data-v$V/pogglot-data-v$((V+1))/" sw.js

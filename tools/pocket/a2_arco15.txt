@@ -1,0 +1,138 @@
+# Arco 15 · Serviços e vida na cidade
+T: Opening a bank account | Abrir uma conta no banco | hall | New York | Sam,m,🧑🏻,atendente
+K: I would like to open an account. | Eu gostaria de abrir uma conta.
+M: Hoje você abre uma conta e pergunta sobre o cartão.
+D: You|Hello. I would like to open an account.|Olá. Eu gostaria de abrir uma conta.
+D: Sam|Of course. Do you have your passport and proof of address?|Claro. Você tem passaporte e comprovante de endereço?
+D: You|Yes, here they are.|Sim, aqui estão.
+D: Sam|Would you like a checking or a savings account?|Prefere conta corrente ou poupança?
+D: You|A checking account, please. Is there a monthly fee?|Conta corrente, por favor. Tem taxa mensal?
+D: Sam|Twelve dollars, but it is free if you deposit five hundred.|Doze dólares, mas é grátis se você depositar quinhentos.
+D: You|That works. When will I get my card?|Funciona. Quando recebo meu cartão?
+D: Sam|It will arrive by mail in seven days.|Chegará pelo correio em sete dias.
+V: account|conta;passport|passaporte;savings|poupança;fee|taxa;deposit|depositar
+B: I would like to open {0}.|Eu gostaria de abrir {0}.|an account=uma conta;a savings account=uma poupança;a checking account=uma conta corrente
+B: Is there a monthly {0}?|Tem {0} mensal?|fee=taxa;limit=limite;charge=cobrança
+S: Sam|How can I help you?|Como posso ajudar?|I would like to open an account.|Gostaria de abrir uma conta.
+S: Sam|There is a monthly fee.|Tem uma taxa mensal.|Is it free if I deposit five hundred?|É grátis se eu depositar quinhentos?
+R: I would like to open an account.|Gostaria de abrir uma conta.
+R: Do you have proof of address?|Você tem comprovante de endereço?
+R: Is there a monthly fee?|Tem taxa mensal?
+R: The card will arrive by mail.|O cartão chegará pelo correio.
+X: That works.|Funciona.
+C: Para abrir uma conta nos EUA, bancos pedem documento com foto e um comprovante de endereço recente.
+
+T: Sending a package | Enviar uma encomenda pelo correio | shop | Los Angeles | Moe,m,🧑🏻,atendente
+K: How long will it take to arrive? | Quanto tempo vai levar para chegar?
+M: Hoje você envia um pacote e escolhe o tipo de entrega.
+D: You|Hi. I would like to send this package to Brazil.|Oi. Eu gostaria de enviar este pacote ao Brasil.
+D: Moe|Sure. Let me weigh it. It is two pounds.|Claro. Deixe-me pesar. São dois quilos.
+D: You|How long will it take to arrive?|Quanto tempo vai levar para chegar?
+D: Moe|Express takes five days. Regular takes two weeks.|Expresso leva cinco dias. Normal leva duas semanas.
+D: You|And how much is express?|E quanto custa o expresso?
+D: Moe|Forty-five dollars, with tracking included.|Quarenta e cinco dólares, com rastreamento incluído.
+D: You|I will take express, please.|Vou levar o expresso, por favor.
+D: Moe|Please fill out this form and sign here.|Preencha este formulário e assine aqui.
+V: package|pacote;weigh|pesar;express|expresso;tracking|rastreamento;sign|assinar
+B: I would like to send this {0} to Brazil.|Gostaria de enviar {0} ao Brasil.|package=este pacote;letter=esta carta;box=esta caixa
+B: Express takes {0}.|O expresso leva {0}.|five days=cinco dias;three days=três dias;a week=uma semana
+S: Moe|How can I help you?|Como posso ajudar?|I would like to send this package to Brazil.|Gostaria de enviar este pacote ao Brasil.
+S: Moe|Express takes five days.|O expresso leva cinco dias.|I will take express, please.|Vou levar o expresso, por favor.
+R: I would like to send this package.|Gostaria de enviar este pacote.
+R: How long will it take?|Quanto tempo vai levar?
+R: Express takes five days.|O expresso leva cinco dias.
+R: Please sign here.|Assine aqui, por favor.
+X: Tracking included.|Rastreamento incluído.
+C: Nos EUA, o correio e empresas como a FedEx permitem rastrear a encomenda online, com um número de código.
+
+T: Just a trim, please | Marcar e explicar um corte de cabelo | shop | Chicago | Ana,f,👩🏼,cabeleireira
+K: Just a trim, please. | Só uma aparada, por favor.
+M: Hoje você explica como quer cortar o cabelo.
+D: Ana|Hi! Do you have an appointment?|Oi! Você tem horário marcado?
+D: You|Yes, at three o'clock. Just a trim, please.|Sim, às três. Só uma aparada, por favor.
+D: Ana|How much would you like me to take off?|Quanto você gostaria que eu cortasse?
+D: You|About two inches, and keep the layers.|Uns cinco centímetros, e mantenha as camadas.
+D: Ana|Do you want me to wash it first?|Quer que eu lave antes?
+D: You|Yes, please. And a little shorter on the sides.|Sim, por favor. E um pouco mais curto nas laterais.
+D: Ana|All done! Do you like it?|Pronto! Você gostou?
+D: You|I love it. How much do I owe you?|Adorei. Quanto lhe devo?
+V: trim|aparada;layers|camadas;wash|lavar;sides|laterais;owe|dever
+B: Just a {0}, please.|Só {0}, por favor.|trim=uma aparada;wash=uma lavagem;cut=um corte
+B: A little shorter {0}.|Um pouco mais curto {0}.|on the sides=nas laterais;in the back=atrás;on top=em cima
+S: Ana|How would you like it?|Como você gostaria?|Just a trim, please.|Só uma aparada, por favor.
+S: Ana|Do you like it?|Gostou?|I love it. How much do I owe you?|Adorei. Quanto lhe devo?
+R: Just a trim, please.|Só uma aparada, por favor.
+R: Keep the layers.|Mantenha as camadas.
+R: A little shorter on the sides.|Um pouco mais curto nas laterais.
+R: How much do I owe you?|Quanto lhe devo?
+X: All done!|Pronto!
+C: Nos EUA, a gorjeta ao cabeleireiro costuma ser de 15 a 20% do valor do serviço.
+
+T: A return and a refund | Devolver um produto | shop | Phoenix | Gus,m,🧑🏼,atendente
+K: I would like to return this shirt. | Eu gostaria de devolver isto.
+M: Hoje você devolve um produto e pede reembolso.
+D: You|Hi. I would like to return this shirt.|Oi. Eu gostaria de devolver esta camisa.
+D: Gus|Of course. What is the problem?|Claro. Qual é o problema?
+D: You|It is too small, and I have not worn it.|Está pequena demais e não usei.
+D: Gus|Do you have the receipt?|Você tem o recibo?
+D: You|Yes, here it is. I bought it on Monday.|Sim, aqui está. Comprei na segunda.
+D: Gus|Fine. Would you like a refund or an exchange?|Tudo bem. Prefere reembolso ou troca?
+D: You|A refund, please, to my card.|Reembolso, por favor, no cartão.
+D: Gus|It will take three to five days to appear.|Levará de três a cinco dias para aparecer.
+V: return|devolver;refund|reembolso;exchange|troca;receipt|recibo;worn|usei
+B: I would like to return this {0}.|Gostaria de devolver {0}.|shirt=esta camisa;jacket=esta jaqueta;phone=este celular
+B: Would you like a refund or an {0}?|Prefere reembolso ou {0}?|exchange=troca;credit=crédito;discount=desconto
+S: Gus|What is the problem?|Qual é o problema?|It is too small, and I have not worn it.|Está pequena e não usei.
+S: Gus|Refund or exchange?|Reembolso ou troca?|A refund, please, to my card.|Reembolso, por favor, no cartão.
+R: I would like to return this.|Gostaria de devolver isto.
+R: It is too small.|Está pequena demais.
+R: Here is the receipt.|Aqui está o recibo.
+R: A refund, please.|Reembolso, por favor.
+X: Do you have the receipt?|Você tem o recibo?
+C: Nos EUA, quase toda loja aceita devolução com recibo, e muitos produtos podem ser devolvidos em até 30 dias.
+
+T: Lost and found | Pedir um objeto perdido no transporte | station | Boston | Dan,m,🧑🏽,atendente
+K: I think I left it on the train. | Acho que deixei no trem.
+M: Hoje você descreve um objeto que deixou no transporte.
+D: You|Excuse me. I think I left my umbrella on the train.|Com licença. Acho que deixei meu guarda-chuva no trem.
+D: Dan|What time was your train?|A que horas era seu trem?
+D: You|It left at six this morning, from platform two.|Saiu às seis da manhã, da plataforma dois.
+D: Dan|What does your umbrella look like?|Como é o seu guarda-chuva?
+D: You|It is long, blue, and has a wooden handle.|É comprido, azul e tem cabo de madeira.
+D: Dan|Let me check. Yes, we found one like that!|Deixe-me ver. Sim, achamos um assim!
+D: You|Great! Can I pick it up now?|Ótimo! Posso pegar agora?
+D: Dan|Of course. Please show your ID.|Claro. Mostre seu documento, por favor.
+V: left|deixei;platform|plataforma;wooden|de madeira;handle|cabo;pick up|pegar
+B: I think I left my {0} on the train.|Acho que deixei {0} no trem.|umbrella=meu guarda-chuva;bag=minha bolsa;phone=meu celular
+B: It is {0}, blue, and has a wooden handle.|É {0}, azul e tem cabo de madeira.|long=comprido;big=grande;small=pequeno
+S: Dan|What does your umbrella look like?|Como é seu guarda-chuva?|It is long, blue, and has a wooden handle.|É comprido, azul e tem cabo de madeira.
+S: Dan|We found one like that.|Achamos um assim.|Great! Can I pick it up now?|Ótimo! Posso pegar agora?
+R: I think I left it on the train.|Acho que deixei no trem.
+R: It left from platform two.|Saiu da plataforma dois.
+R: It is long and blue.|É comprido e azul.
+R: Please show your ID.|Mostre seu documento.
+X: Let me check.|Deixe-me verificar.
+C: Estações de trem e metrô nos EUA têm uma seção de "lost and found" onde objetos perdidos ficam guardados por alguns dias.
+
+T: Welcome to the next level | Desafio final: usar tudo o que aprendeu | plaza | Los Angeles | Moe,m,🧑🏻,amigo
+K: I have learned so much already. | Já aprendi tanto.
+M: Desafio final: conte seu passado, seu presente e seus planos.
+D: Moe|You have changed so much since last year!|Você mudou tanto desde o ano passado!
+D: You|I have learned so much already.|Já aprendi tanto.
+D: Moe|What was the hardest part?|Qual foi a parte mais difícil?
+D: You|Speaking with strangers. Last year I was too shy.|Falar com estranhos. No ano passado eu era muito tímido.
+D: Moe|And now?|E agora?
+D: You|Now I talk with my neighbors every day.|Agora converso com meus vizinhos todo dia.
+D: Moe|What are your plans for next year?|Quais são seus planos para o ano que vem?
+D: You|I am going to study harder and travel to London.|Vou estudar mais e viajar para Londres.
+V: changed|mudou;strangers|estranhos;shy|tímido;plans|planos;travel|viajar
+B: Last year I was too {0}.|No ano passado eu era muito {0}.|shy=tímido;nervous=nervoso;busy=ocupado
+B: Next year I am going to {0}.|No ano que vem vou {0}.|travel to London=viajar para Londres;study harder=estudar mais;learn to cook=aprender a cozinhar
+S: Moe|What was the hardest part?|Qual foi a parte mais difícil?|Speaking with strangers. I was too shy.|Falar com estranhos. Eu era muito tímido.
+S: Moe|What are your plans?|Quais são seus planos?|I am going to study harder and travel.|Vou estudar mais e viajar.
+R: I have learned so much.|Aprendi tanto.
+R: Last year I was too shy.|No ano passado eu era muito tímido.
+R: Now I talk with my neighbors.|Agora converso com meus vizinhos.
+R: I am going to travel to London.|Vou viajar para Londres.
+X: You have changed so much!|Você mudou tanto!
+C: Muitos americanos fazem uma retrospectiva no fim do ano e definem novas metas, as "resolutions".

@@ -1,0 +1,230 @@
+# Arco 5 · Comida, restaurante e mercado
+T: How much sugar? | Contáveis e incontáveis: how much, how many | kitchen | Chicago | Ana,f,👩🏼,amiga
+K: How much sugar do we need? | Quanto açúcar precisamos?
+M: Hoje você usa how much e how many numa receita.
+D: Ana|Let us bake a cake! How much sugar do we need?|Vamos fazer um bolo! Quanto açúcar precisamos?
+D: You|One cup of sugar and two cups of flour.|Uma xícara de açúcar e duas de farinha.
+D: Ana|How many eggs do we need?|Quantos ovos precisamos?
+D: You|Three eggs. We have a few in the fridge.|Três ovos. Temos alguns na geladeira.
+D: Ana|And how much milk?|E quanto leite?
+D: You|Just a little milk. We do not need much.|Só um pouco de leite. Não precisamos de muito.
+D: Ana|Do we have any butter?|Temos manteiga?
+D: You|Yes, there is some in the door.|Sim, tem um pouco na porta.
+V: sugar|açúcar;flour|farinha;eggs|ovos;butter|manteiga;fridge|geladeira
+B: How much {0} do we need?|Quanto {0} precisamos?|sugar=açúcar;milk=leite;flour=farinha
+B: How many {0} do we need?|Quantos {0} precisamos?|eggs=ovos;cups=xícaras;apples=maçãs
+S: Ana|What do we need?|O que precisamos?|How much sugar do we need?|Quanto açúcar precisamos?
+S: Ana|We need eggs.|Precisamos de ovos.|How many eggs do we need?|Quantos ovos precisamos?
+R: How much sugar do we need?|Quanto açúcar precisamos?
+R: How many eggs do we need?|Quantos ovos precisamos?
+R: We do not need much milk.|Não precisamos de muito leite.
+R: Is there any butter?|Tem manteiga?
+X: Just a little.|Só um pouco.
+C: Receitas americanas usam xícaras e colheres para medir, e não gramas: "one cup of flour" é bem comum.
+
+T: Some or any? | Usar some e any em casa | kitchen | Seattle | Jess,f,🧑🏼,colega
+K: Do we have any milk? | Temos leite?
+M: Hoje você confere o que há em casa com some e any.
+D: Jess|Let us make breakfast. Do we have any milk?|Vamos fazer o café da manhã. Temos leite?
+D: You|Yes, there is some milk, but there are no eggs.|Sim, tem leite, mas não tem ovos.
+D: Jess|Are there any apples?|Tem maçãs?
+D: You|There are some apples in the basket.|Tem algumas maçãs na cesta.
+D: Jess|Is there any bread?|Tem pão?
+D: You|There is not any bread. I need to buy some.|Não tem pão. Preciso comprar.
+D: Jess|I can go. I want some juice too.|Eu posso ir. Quero um pouco de suco também.
+D: You|Great. Can you buy some eggs, please?|Ótimo. Pode comprar uns ovos, por favor?
+V: milk|leite;apples|maçãs;basket|cesta;bread|pão;juice|suco
+B: Do we have any {0}?|Temos {0}?|milk=leite;bread=pão;juice=suco
+B: There are some {0}.|Tem algumas {0}.|apples=maçãs;oranges=laranjas;bananas=bananas
+S: Jess|What do we have?|O que temos?|There is some milk.|Tem leite.
+S: Jess|And bread?|E pão?|There is not any bread.|Não tem pão.
+R: Do we have any milk?|Temos leite?
+R: There are some apples.|Tem algumas maçãs.
+R: There is not any bread.|Não tem pão.
+R: Can you buy some eggs?|Pode comprar uns ovos?
+X: I can go.|Eu posso ir.
+C: Muitos americanos fazem uma grande compra semanal de mercado e guardam tudo em geladeiras enormes.
+
+T: I would like the soup | Pedir no restaurante com would like | cafe | New York | Ana,f,👩🏼,garçonete
+K: I would like the soup, please. | Eu gostaria da sopa, por favor.
+M: Hoje você faz um pedido completo no restaurante.
+D: Ana|Good evening! Are you ready to order?|Boa noite! Está pronto para pedir?
+D: You|Yes. I would like the soup, please.|Sim. Eu gostaria da sopa, por favor.
+D: Ana|And for the main course?|E o prato principal?
+D: You|I will have the grilled chicken with rice.|Vou querer o frango grelhado com arroz.
+D: Ana|Anything to drink?|Algo para beber?
+D: You|Just water, please. No ice.|Só água, por favor. Sem gelo.
+D: Ana|Would you like dessert later?|Gostaria de sobremesa depois?
+D: You|Maybe. Could I see the menu again?|Talvez. Poderia ver o cardápio de novo?
+V: ready|pronto;soup|sopa;grilled|grelhado;dessert|sobremesa;menu|cardápio
+B: I would like {0}, please.|Eu gostaria de {0}, por favor.|the soup=a sopa;a salad=uma salada;the chicken=o frango
+B: I will have the {0}.|Vou querer o {0}.|grilled chicken=frango grelhado;fish=peixe;burger=hambúrguer
+S: Ana|Are you ready to order?|Está pronto para pedir?|Yes. I would like the soup, please.|Sim. Gostaria da sopa, por favor.
+S: Ana|Anything to drink?|Algo para beber?|Just water, please.|Só água, por favor.
+R: I would like the soup.|Eu gostaria da sopa.
+R: I will have the grilled chicken.|Vou querer o frango grelhado.
+R: Just water, please.|Só água, por favor.
+R: Could I see the menu again?|Poderia ver o cardápio de novo?
+X: Are you ready to order?|Está pronto para pedir?
+C: Nos EUA, o garçom volta à mesa várias vezes para perguntar "Is everything okay?", e responder é parte da educação.
+
+T: Does it have nuts? | Perguntar sobre ingredientes e alergias | cafe | Los Angeles | Moe,m,🧑🏻,garçom
+K: Does it have nuts? | Tem nozes?
+M: Hoje você pergunta sobre ingredientes e avisa sobre alergia.
+D: You|Excuse me. Is this dish spicy?|Com licença. Este prato é picante?
+D: Moe|A little. Do you like spicy food?|Um pouco. Você gosta de comida picante?
+D: You|Not really. Also, I am allergic to nuts.|Nem muito. Além disso, sou alérgico a nozes.
+D: Moe|Thanks for telling me. Let me check.|Obrigado por avisar. Deixe-me verificar.
+D: You|Does the sauce have nuts?|O molho tem nozes?
+D: Moe|No nuts. But it has milk and eggs.|Sem nozes. Mas tem leite e ovos.
+D: You|That is fine. I will order it.|Tudo bem. Vou pedir.
+D: Moe|Great choice. It comes with salad.|Ótima escolha. Vem com salada.
+V: spicy|picante;allergic|alérgico;nuts|nozes;sauce|molho;check|verificar
+B: I am allergic to {0}.|Sou alérgico a {0}.|nuts=nozes;milk=leite;shrimp=camarão
+B: Does it have {0}?|Tem {0}?|nuts=nozes;eggs=ovos;meat=carne
+S: Moe|Do you like spicy food?|Você gosta de comida picante?|Not really. I am allergic to nuts.|Nem muito. Sou alérgico a nozes.
+S: Moe|Let me check.|Deixe-me verificar.|Does the sauce have nuts?|O molho tem nozes?
+R: Is this dish spicy?|Este prato é picante?
+R: I am allergic to nuts.|Sou alérgico a nozes.
+R: Does the sauce have nuts?|O molho tem nozes?
+R: It comes with salad.|Vem com salada.
+X: Not really.|Nem muito.
+C: Restaurantes americanos levam alergias a sério: avisar o garçom logo ao pedir é sempre bem-vindo.
+
+T: Can we split the bill? | Pagar e dividir a conta | cafe | Boston | Dan,m,🧑🏽,garçom
+K: Can we split the bill? | Podemos dividir a conta?
+M: Hoje você pede a conta, divide e deixa gorjeta.
+D: You|Excuse me. Could we have the bill, please?|Com licença. Poderíamos pedir a conta, por favor?
+D: Dan|Of course. Together or separate?|Claro. Junto ou separado?
+D: You|Can we split it in two?|Podemos dividir em dois?
+D: Dan|Sure. Your part is twenty-eight dollars.|Claro. Sua parte é vinte e oito dólares.
+D: You|Is the tip included?|A gorjeta está incluída?
+D: Dan|No. Most people leave fifteen to twenty percent.|Não. A maioria deixa de quinze a vinte por cento.
+D: You|Okay. Here is thirty-three dollars. Keep the change.|Ok. Aqui estão trinta e três dólares. Fique com o troco.
+D: Dan|Thank you very much! Come again!|Muito obrigado! Volte sempre!
+V: bill|conta;split|dividir;tip|gorjeta;included|incluída;change|troco
+B: Can we {0}?|Podemos {0}?|split the bill=dividir a conta;pay by card=pagar com cartão;have the check=pedir a conta
+B: Is the {0} included?|{0} está incluída?|tip=A gorjeta;tax=O imposto;service=O serviço
+S: Dan|Together or separate?|Junto ou separado?|Can we split it in two?|Podemos dividir em dois?
+S: Dan|Your part is twenty-eight dollars.|Sua parte é vinte e oito dólares.|Is the tip included?|A gorjeta está incluída?
+R: Could we have the bill, please?|Poderíamos pedir a conta, por favor?
+R: Can we split the bill?|Podemos dividir a conta?
+R: Is the tip included?|A gorjeta está incluída?
+R: Keep the change.|Fique com o troco.
+X: Keep the change.|Fique com o troco.
+C: Nos EUA, a gorjeta de 15 a 20% é praticamente obrigatória em restaurantes, pois o salário do garçom depende dela.
+
+T: Too much salt | Reclamar com educação de um prato | cafe | Seattle | Gina,f,👩🏻,gerente
+K: Excuse me, this is too salty. | Com licença, isto está muito salgado.
+M: Hoje você reclama de um prato sem ser rude.
+D: You|Excuse me. This soup is too salty.|Com licença. Esta sopa está salgada demais.
+D: Gina|I am so sorry. Let me taste it.|Sinto muito. Deixe-me provar.
+D: You|It is also a little cold.|Também está um pouco fria.
+D: Gina|I will bring you a new one right away.|Vou trazer uma nova agora mesmo.
+D: You|Thank you. I am not in a hurry.|Obrigado. Não estou com pressa.
+D: Gina|And dessert is on the house today.|E a sobremesa é por conta da casa hoje.
+D: You|That is very kind of you.|Que gentileza sua.
+D: Gina|Our pleasure. Enjoy your meal!|É um prazer. Aproveite a refeição!
+V: salty|salgado;taste|provar;cold|frio;hurry|pressa;meal|refeição
+B: This soup is too {0}.|Esta sopa está {0} demais.|salty=salgada;cold=fria;hot=quente
+B: I will bring you a {0} one.|Vou trazer uma {0}.|new=nova;fresh=fresca;hot=quente
+S: Gina|Is everything okay?|Está tudo bem?|Excuse me. This soup is too salty.|Com licença. Esta sopa está salgada demais.
+S: Gina|I will bring a new one.|Vou trazer uma nova.|Thank you. I am not in a hurry.|Obrigado. Não estou com pressa.
+R: This soup is too salty.|Esta sopa está salgada demais.
+R: It is a little cold.|Está um pouco fria.
+R: I am not in a hurry.|Não estou com pressa.
+R: That is very kind of you.|Que gentileza sua.
+X: On the house.|Por conta da casa.
+C: Nos EUA, reclamar com educação é bem visto, e muitos restaurantes oferecem um prato novo ou uma cortesia.
+
+T: Which aisle is it in? | Achar produtos no mercado | market | Phoenix | Gus,m,🧑🏼,atendente
+K: Where can I find the rice? | Onde posso achar o arroz?
+M: Hoje você encontra produtos e entende os corredores.
+D: You|Excuse me. Where can I find the rice?|Com licença. Onde posso achar o arroz?
+D: Gus|It is in aisle five, next to the pasta.|Fica no corredor cinco, ao lado do macarrão.
+D: You|And where are the vegetables?|E onde ficam os legumes?
+D: Gus|At the entrance, on your left.|Na entrada, à sua esquerda.
+D: You|Do you sell fresh bread?|Vocês vendem pão fresco?
+D: Gus|Yes, the bakery is at the back.|Sim, a padaria fica nos fundos.
+D: You|Is there a sale this week?|Tem promoção esta semana?
+D: Gus|Yes. Fruit is two for one.|Sim. As frutas estão em dois por um.
+V: aisle|corredor;vegetables|legumes;entrance|entrada;bakery|padaria;sale|promoção
+B: Where can I find the {0}?|Onde posso achar {0}?|rice=o arroz;milk=o leite;bakery=a padaria
+B: It is in aisle {0}.|Fica no corredor {0}.|five=cinco;two=dois;ten=dez
+S: Gus|Can I help you?|Posso ajudar?|Where can I find the rice?|Onde posso achar o arroz?
+S: Gus|Rice is in aisle five.|O arroz fica no corredor cinco.|Is there a sale this week?|Tem promoção esta semana?
+R: Where can I find the rice?|Onde posso achar o arroz?
+R: It is in aisle five.|Fica no corredor cinco.
+R: The bakery is at the back.|A padaria fica nos fundos.
+R: Fruit is two for one.|As frutas estão em dois por um.
+X: Two for one.|Dois por um.
+C: Supermercados americanos são enormes, e muitos têm um corredor só para cereais matinais.
+
+T: Ready in fifteen minutes | Pedir comida para viagem | street | Austin | Tom,m,🧑🏽,atendente
+K: I would like to order takeout for two. | Eu gostaria de pedir para viagem.
+M: Hoje você faz um pedido por telefone e combina a retirada.
+D: You|Hi. I would like to order takeout, please.|Oi. Eu gostaria de pedir para viagem, por favor.
+D: Tom|Sure. What would you like?|Claro. O que você gostaria?
+D: You|Two cheese burgers and a large fries.|Dois hambúrgueres com queijo e uma batata frita grande.
+D: Tom|Anything to drink?|Algo para beber?
+D: You|Two lemonades, please.|Duas limonadas, por favor.
+D: Tom|That is twenty-four dollars. It will be ready in fifteen minutes.|São vinte e quatro dólares. Ficará pronto em quinze minutos.
+D: You|Perfect. I will pick it up at six.|Perfeito. Vou buscar às seis.
+D: Tom|Great. What is your name?|Ótimo. Qual é o seu nome?
+V: takeout|para viagem;fries|batata frita;lemonade|limonada;pick up|buscar;ready|pronto
+B: I would like to order {0}.|Eu gostaria de pedir {0}.|takeout=para viagem;a pizza=uma pizza;two burgers=dois hambúrgueres
+B: It will be ready in {0}.|Ficará pronto em {0}.|fifteen minutes=quinze minutos;ten minutes=dez minutos;an hour=uma hora
+S: Tom|What would you like?|O que você gostaria?|I would like two burgers and fries.|Gostaria de dois hambúrgueres e batata frita.
+S: Tom|It will be ready in fifteen minutes.|Ficará pronto em quinze minutos.|Great. I will pick it up at six.|Ótimo. Vou buscar às seis.
+R: I would like to order takeout.|Eu gostaria de pedir para viagem.
+R: Two burgers and a large fries.|Dois hambúrgueres e uma batata grande.
+R: It will be ready in fifteen minutes.|Ficará pronto em quinze minutos.
+R: I will pick it up at six.|Vou buscar às seis.
+X: What is your name?|Qual é o seu nome?
+C: Nos EUA, pedir "to go" é normal, e as embalagens vêm com talheres e guardanapos em um saco de papel.
+
+T: What is in this dish? | Entender um cardápio | cafe | Miami | Lia,f,👩🏽,garçonete
+K: What is in this dish? | O que tem neste prato?
+M: Hoje você lê o cardápio e pergunta sobre os pratos.
+D: You|Excuse me. What is in the house salad?|Com licença. O que tem na salada da casa?
+D: Lia|Lettuce, tomatoes, cheese and olives.|Alface, tomate, queijo e azeitonas.
+D: You|Is the fish fresh today?|O peixe está fresco hoje?
+D: Lia|Yes, it comes from the market this morning.|Sim, veio do mercado hoje de manhã.
+D: You|How is it cooked?|Como é preparado?
+D: Lia|It is baked with lemon and herbs.|É assado com limão e ervas.
+D: You|That sounds delicious. I will have it.|Parece delicioso. Vou querer.
+D: Lia|Good choice. It comes with rice or potatoes.|Boa escolha. Vem com arroz ou batatas.
+V: lettuce|alface;olives|azeitonas;baked|assado;herbs|ervas;potatoes|batatas
+B: What is in the {0}?|O que tem {0}?|house salad=na salada da casa;soup=na sopa;sauce=no molho
+B: It is {0} with lemon.|É {0} com limão.|baked=assado;grilled=grelhado;fried=frito
+S: Lia|Do you have any questions?|Tem alguma dúvida?|What is in the house salad?|O que tem na salada da casa?
+S: Lia|It is baked with lemon.|É assado com limão.|That sounds delicious. I will have it.|Parece delicioso. Vou querer.
+R: What is in the house salad?|O que tem na salada da casa?
+R: Is the fish fresh today?|O peixe está fresco hoje?
+R: It is baked with lemon.|É assado com limão.
+R: That sounds delicious.|Parece delicioso.
+X: That sounds delicious.|Parece delicioso.
+C: Cardápios americanos costumam descrever o modo de preparo: grilled (grelhado), baked (assado), fried (frito).
+
+T: A dinner for friends | Desafio do arco: planejar um jantar | kitchen | Denver | Rosa,f,👩🏽,anfitriã
+K: I am making dinner for six people. | Estou fazendo jantar para seis pessoas.
+M: Desafio: planeje um jantar, as compras e o cardápio.
+D: Rosa|Are you cooking for your friends tonight?|Você vai cozinhar para os amigos hoje à noite?
+D: You|Yes. I am making dinner for six people.|Sim. Estou fazendo jantar para seis pessoas.
+D: Rosa|What will you cook?|O que você vai cozinhar?
+D: You|Pasta with chicken, and a big salad.|Macarrão com frango e uma salada grande.
+D: Rosa|How much pasta do you need?|Quanto macarrão você precisa?
+D: You|About one pound. And I need some tomatoes.|Cerca de meio quilo. E preciso de alguns tomates.
+D: Rosa|Do you have any dessert?|Você tem sobremesa?
+D: You|Not yet. Would you like to bring a cake?|Ainda não. Você gostaria de trazer um bolo?
+V: cooking|cozinhando;pasta|macarrão;pound|libra;tomatoes|tomates;dessert|sobremesa
+B: I am making dinner for {0}.|Estou fazendo jantar para {0}.|six people=seis pessoas;my friends=meus amigos;my family=minha família
+B: I need some {0}.|Preciso de {0}.|tomatoes=tomates;onions=cebolas;cheese=queijo
+S: Rosa|What are you doing tonight?|O que você vai fazer hoje à noite?|I am making dinner for six people.|Estou fazendo jantar para seis pessoas.
+S: Rosa|Do you have dessert?|Você tem sobremesa?|Not yet. Would you like to bring a cake?|Ainda não. Quer trazer um bolo?
+R: I am making dinner for six people.|Estou fazendo jantar para seis pessoas.
+R: How much pasta do you need?|Quanto macarrão você precisa?
+R: I need some tomatoes.|Preciso de alguns tomates.
+R: Would you like to bring a cake?|Gostaria de trazer um bolo?
+X: Not yet.|Ainda não.
+C: Nos EUA, "potluck" é um jantar em que cada convidado leva um prato para dividir com todos.

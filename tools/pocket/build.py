@@ -33,9 +33,9 @@ def load(fn):
     sp=importlib.util.spec_from_file_location('m',fn);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
 
 EMO={}
-_ef=os.path.join(R,'emoji_a1.txt')
-if os.path.exists(_ef):
-    for _p in open(_ef,encoding='utf-8').read().replace('\n','|').split('|'):
+_efs=sorted(glob.glob(os.path.join(R,'emoji_*.txt')))
+if _efs:
+    for _p in ''.join(open(_f,encoding='utf-8').read().replace('\n','|')+'|' for _f in _efs).split('|'):
         if ':' in _p:_a,_,_b=_p.strip().partition(':');EMO.setdefault(_a.strip().lower(),_b.strip())
 def vocab_cards(x):
     out=[]

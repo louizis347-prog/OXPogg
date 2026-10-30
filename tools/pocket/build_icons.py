@@ -7,7 +7,8 @@ src=open(sys.argv[1],encoding='utf-8').read()
 blocks={}
 for m in re.finditer(r'<svg [^>]*?\bid="([0-9A-F-]+)"[^>]*>.*?</svg>',src,re.S):blocks[m.group(1).lower()]=m.group(0)
 ems=set()
-for p in open(os.path.join(R,'emoji_a1.txt'),encoding='utf-8').read().replace('\n','|').split('|'):
+import glob
+for p in ''.join(open(f,encoding='utf-8').read().replace('\n','|')+'|' for f in sorted(glob.glob(os.path.join(R,'emoji_*.txt')))).split('|'):
     if ':' in p:ems.add(p.partition(':')[2].strip())
 ems|={'🏙️','❓','💬','💡','🙂','🗣️'}
 def keys(e):

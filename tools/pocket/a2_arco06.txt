@@ -1,0 +1,230 @@
+# Arco 6 · Saúde e bem-estar
+T: How long have you felt this way? | Descrever sintomas | clinic | Seattle | Dr. Lee,f,🧑🏻‍⚕️,médica
+K: I have had a fever since yesterday. | Estou com febre desde ontem.
+M: Hoje você descreve o que sente e há quanto tempo.
+D: Dr. Lee|Good morning. What seems to be the problem?|Bom dia. Qual parece ser o problema?
+D: You|I have a fever and my body hurts.|Estou com febre e o corpo dói.
+D: Dr. Lee|How long have you felt this way?|Há quanto tempo você se sente assim?
+D: You|Since yesterday. I also have a cough.|Desde ontem. Também estou com tosse.
+D: Dr. Lee|Do you have a sore throat?|Você está com dor de garganta?
+D: You|Yes, a little. And I feel very tired.|Sim, um pouco. E me sinto muito cansado.
+D: Dr. Lee|It looks like the flu. You need rest.|Parece gripe. Você precisa de repouso.
+D: You|Should I take any medicine?|Devo tomar algum remédio?
+V: fever|febre;hurts|dói;cough|tosse;flu|gripe;medicine|remédio
+B: I have a {0}.|Estou com {0}.|fever=febre;cough=tosse;headache=dor de cabeça
+B: My {0} hurts.|{0} dói.|body=O corpo;back=A costas;stomach=O estômago
+S: Dr. Lee|What seems to be the problem?|Qual parece ser o problema?|I have a fever and a cough.|Estou com febre e tosse.
+S: Dr. Lee|How long do you feel this way?|Há quanto tempo se sente assim?|Since yesterday.|Desde ontem.
+R: I have a fever.|Estou com febre.
+R: My body hurts.|Meu corpo dói.
+R: I feel very tired.|Eu me sinto muito cansado.
+R: It looks like the flu.|Parece gripe.
+X: Since yesterday.|Desde ontem.
+C: Nos EUA, consultas médicas costumam ser marcadas com antecedência, e é normal chegar dez minutos antes para preencher fichas.
+
+T: Something for a cold | Pedir remédio e instruções | shop | Boston | Ruth,f,👩🏻,farmacêutica
+K: How often should I take this? | Com que frequência devo tomar isto?
+M: Hoje você entende como tomar um remédio.
+D: You|Hi. I need something for a cold.|Oi. Preciso de algo para resfriado.
+D: Ruth|Do you have a runny nose or a cough?|Você tem coriza ou tosse?
+D: You|A runny nose and a headache.|Coriza e dor de cabeça.
+D: Ruth|Take this one. Two tablets every six hours.|Tome este. Dois comprimidos a cada seis horas.
+D: You|How often should I take it?|Com que frequência devo tomar?
+D: Ruth|Three times a day, after meals.|Três vezes por dia, depois das refeições.
+D: You|Is it safe with other medicine?|É seguro com outros remédios?
+D: Ruth|Ask your doctor if you take other pills.|Pergunte ao seu médico se você toma outros comprimidos.
+V: cold|resfriado;tablets|comprimidos;often|frequência;safe|seguro;meals|refeições
+B: I need something for a {0}.|Preciso de algo para {0}.|cold=resfriado;headache=dor de cabeça;sore throat=dor de garganta
+B: Take two tablets every {0}.|Tome dois comprimidos a cada {0}.|six hours=seis horas;day=dia;morning=manhã
+S: Ruth|How can I help you?|Como posso ajudar?|I need something for a cold.|Preciso de algo para resfriado.
+S: Ruth|Take it three times a day.|Tome três vezes por dia.|How often should I take it?|Com que frequência devo tomar?
+R: I need something for a cold.|Preciso de algo para resfriado.
+R: Two tablets every six hours.|Dois comprimidos a cada seis horas.
+R: Three times a day, after meals.|Três vezes por dia, depois das refeições.
+R: Is it safe with other medicine?|É seguro com outros remédios?
+X: Three times a day.|Três vezes por dia.
+C: Nos EUA, a bula dos remédios vem com letras bem pequenas, e o farmacêutico explica a dose se você pedir.
+
+T: Good habits for life | Falar de hábitos saudáveis | park | Austin | Tom,m,🧑🏽,amigo
+K: I try to walk every day. | Eu tento caminhar todo dia.
+M: Hoje você fala dos seus hábitos de saúde.
+D: Tom|You look great! What is your secret?|Você está ótimo! Qual é o seu segredo?
+D: You|I try to walk every day for thirty minutes.|Eu tento caminhar todo dia por trinta minutos.
+D: Tom|Do you eat healthy food?|Você come comida saudável?
+D: You|Mostly. I eat vegetables and fruit, but I love pizza.|Na maioria. Como legumes e frutas, mas adoro pizza.
+D: Tom|How many hours do you sleep?|Quantas horas você dorme?
+D: You|About eight hours. I never skip sleep.|Cerca de oito horas. Nunca pulo o sono.
+D: Tom|I should do the same. I always stay up late.|Eu deveria fazer o mesmo. Sempre durmo tarde.
+D: You|Start with small changes.|Comece com pequenas mudanças.
+V: secret|segredo;healthy|saudável;mostly|na maioria;skip|pular;stay up|ficar acordado
+B: I try to {0} every day.|Eu tento {0} todo dia.|walk=caminhar;drink water=beber água;stretch=me alongar
+B: I never {0}.|Eu nunca {0}.|skip sleep=pulo o sono;eat late=como tarde;drink soda=bebo refrigerante
+S: Tom|What is your secret?|Qual é o seu segredo?|I try to walk every day.|Eu tento caminhar todo dia.
+S: Tom|How many hours do you sleep?|Quantas horas você dorme?|About eight hours.|Cerca de oito horas.
+R: I try to walk every day.|Eu tento caminhar todo dia.
+R: I eat vegetables and fruit.|Eu como legumes e frutas.
+R: I sleep about eight hours.|Eu durmo cerca de oito horas.
+R: Start with small changes.|Comece com pequenas mudanças.
+X: Small changes.|Pequenas mudanças.
+C: Caminhar e correr em parques é um hábito muito popular nos EUA, e muitas cidades têm trilhas para isso.
+
+T: I fell on the stairs | Contar uma pequena lesão no passado | clinic | Chicago | Dr. Lee,f,🧑🏻‍⚕️,médica
+K: I hurt my ankle yesterday. | Eu machuquei o tornozelo ontem.
+M: Hoje você conta como se machucou e como se sente.
+D: Dr. Lee|What happened to your foot?|O que aconteceu com o seu pé?
+D: You|I hurt my ankle yesterday.|Eu machuquei o tornozelo ontem.
+D: Dr. Lee|How did it happen?|Como aconteceu?
+D: You|I fell on the stairs when I was running.|Eu caí na escada quando estava correndo.
+D: Dr. Lee|Does it hurt when you walk?|Dói quando você anda?
+D: You|Yes, and it is a little swollen.|Sim, e está um pouco inchado.
+D: Dr. Lee|Let me check it. Please sit down.|Deixe-me examinar. Sente-se, por favor.
+D: You|Thank you. I hope it is not broken.|Obrigado. Espero que não esteja quebrado.
+V: hurt|machucar;fell|caí;stairs|escada;swollen|inchado;broken|quebrado
+B: I hurt my {0} yesterday.|Eu machuquei {0} ontem.|ankle=o tornozelo;knee=o joelho;hand=a mão
+B: I fell on the {0}.|Eu caí na {0}.|stairs=escada;street=rua;ice=gelo
+S: Dr. Lee|What happened?|O que aconteceu?|I hurt my ankle yesterday.|Eu machuquei o tornozelo ontem.
+S: Dr. Lee|Does it hurt when you walk?|Dói quando você anda?|Yes, and it is a little swollen.|Sim, e está um pouco inchado.
+R: I hurt my ankle yesterday.|Eu machuquei o tornozelo ontem.
+R: I fell on the stairs.|Eu caí na escada.
+R: It is a little swollen.|Está um pouco inchado.
+R: I hope it is not broken.|Espero que não esteja quebrado.
+X: What happened?|O que aconteceu?
+C: Para lesões, os americanos lembram a regra RICE: rest, ice, compression e elevation (descanso, gelo, compressão e elevação).
+
+T: A bad night | Falar de sono e rotina | living | Denver | Rosa,f,👩🏽,vizinha
+K: I could not sleep last night. | Eu não consegui dormir ontem à noite.
+M: Hoje você conta uma noite difícil e recebe dicas.
+D: Rosa|You look tired this morning.|Você parece cansado hoje de manhã.
+D: You|I could not sleep last night.|Eu não consegui dormir ontem à noite.
+D: Rosa|Why? Was it the noise?|Por quê? Foi o barulho?
+D: You|Yes, my neighbors had a party until two.|Sim, meus vizinhos fizeram uma festa até as duas.
+D: Rosa|That is terrible. Did you talk to them?|Que horrível. Você falou com eles?
+D: You|No, I did not want to be rude.|Não, eu não quis ser rude.
+D: Rosa|You should drink warm milk before bed.|Você deveria beber leite morno antes de dormir.
+D: You|Good idea. I will try it tonight.|Boa ideia. Vou tentar hoje à noite.
+V: noise|barulho;party|festa;terrible|horrível;rude|rude;warm|morno
+B: I could not {0} last night.|Eu não consegui {0} ontem à noite.|sleep=dormir;relax=relaxar;rest=descansar
+B: You should drink {0} before bed.|Você deveria beber {0} antes de dormir.|warm milk=leite morno;tea=chá;water=água
+S: Rosa|You look tired.|Você parece cansado.|I could not sleep last night.|Não consegui dormir ontem à noite.
+S: Rosa|What should I do?|O que devo fazer?|I will drink warm milk tonight.|Vou beber leite morno hoje à noite.
+R: I could not sleep last night.|Eu não consegui dormir ontem à noite.
+R: My neighbors had a party.|Meus vizinhos fizeram uma festa.
+R: I did not want to be rude.|Eu não quis ser rude.
+R: I will try it tonight.|Vou tentar hoje à noite.
+X: That is terrible.|Que horrível.
+C: Em muitos prédios americanos há "quiet hours", horário de silêncio, geralmente depois das dez da noite.
+
+T: My tooth hurts | Consulta no dentista | clinic | Miami | Dr. Cruz,m,🧑🏽‍⚕️,dentista
+K: I have a toothache on the right side. | Estou com dor de dente.
+M: Hoje você marca uma consulta e explica a dor.
+D: You|Hello. I would like to make an appointment.|Olá. Eu gostaria de marcar uma consulta.
+D: Dr. Cruz|What is the problem?|Qual é o problema?
+D: You|I have a toothache on the right side.|Estou com dor de dente do lado direito.
+D: Dr. Cruz|Since when?|Desde quando?
+D: You|Since last Friday. It hurts with cold drinks.|Desde sexta passada. Dói com bebidas geladas.
+D: Dr. Cruz|I can see you tomorrow at nine.|Posso atender você amanhã às nove.
+D: You|That is perfect. Do I need to bring anything?|Perfeito. Preciso levar algo?
+D: Dr. Cruz|Just your insurance card.|Só o cartão do seguro.
+V: appointment|consulta;toothache|dor de dente;right|direito;insurance|seguro;cold|gelado
+B: I have a {0}.|Estou com {0}.|toothache=dor de dente;headache=dor de cabeça;stomachache=dor de barriga
+B: I can see you {0}.|Posso atender você {0}.|tomorrow at nine=amanhã às nove;today at five=hoje às cinco;on Monday=na segunda
+S: Dr. Cruz|What is the problem?|Qual é o problema?|I have a toothache on the right side.|Estou com dor de dente do lado direito.
+S: Dr. Cruz|I can see you tomorrow at nine.|Posso atender amanhã às nove.|That is perfect. Thank you.|Perfeito. Obrigado.
+R: I would like to make an appointment.|Gostaria de marcar uma consulta.
+R: I have a toothache.|Estou com dor de dente.
+R: It hurts with cold drinks.|Dói com bebidas geladas.
+R: Bring your insurance card.|Leve o cartão do seguro.
+X: Since last Friday.|Desde sexta passada.
+C: Nos EUA, o seguro de saúde é muito importante, e é comum apresentar o cartão do seguro em toda consulta.
+
+T: At the gym | Falar de exercício e metas | gym | Los Angeles | Moe,m,🧑🏻,instrutor
+K: I want to get stronger. | Eu quero ficar mais forte.
+M: Hoje você conta sua meta e monta um plano de treino.
+D: Moe|What is your goal?|Qual é a sua meta?
+D: You|I want to get stronger and lose weight.|Eu quero ficar mais forte e perder peso.
+D: Moe|How often can you come?|Com que frequência você pode vir?
+D: You|Three times a week, after work.|Três vezes por semana, depois do trabalho.
+D: Moe|Great. Start with twenty minutes of cardio.|Ótimo. Comece com vinte minutos de cardio.
+D: You|Then what should I do?|E depois o que devo fazer?
+D: Moe|Then lift light weights and stretch.|Depois levante pesos leves e se alongue.
+D: You|Sounds good. When do we start?|Parece bom. Quando começamos?
+V: goal|meta;stronger|mais forte;weight|peso;lift|levantar;stretch|alongar
+B: I want to get {0}.|Eu quero ficar {0}.|stronger=mais forte;healthier=mais saudável;faster=mais rápido
+B: Start with {0}.|Comece com {0}.|twenty minutes of cardio=vinte minutos de cardio;light weights=pesos leves;a warm-up=um aquecimento
+S: Moe|What is your goal?|Qual é a sua meta?|I want to get stronger.|Quero ficar mais forte.
+S: Moe|How often can you come?|Com que frequência pode vir?|Three times a week.|Três vezes por semana.
+R: I want to get stronger.|Eu quero ficar mais forte.
+R: Three times a week.|Três vezes por semana.
+R: Start with twenty minutes of cardio.|Comece com vinte minutos de cardio.
+R: Lift light weights and stretch.|Levante pesos leves e se alongue.
+X: Sounds good.|Parece bom.
+C: Academias americanas costumam ficar mais cheias antes do trabalho e no início da noite.
+
+T: Eat well, feel well | Falar de alimentação equilibrada | kitchen | Chicago | Ana,f,👩🏼,nutricionista
+K: You should eat more vegetables. | Você deveria comer mais legumes.
+M: Hoje você fala do que come e recebe sugestões.
+D: Ana|What do you usually eat for breakfast?|O que você costuma comer no café da manhã?
+D: You|Usually just coffee and a donut.|Geralmente só café e uma rosquinha.
+D: Ana|That is too sweet. Try eggs and fruit.|Isso é muito doce. Experimente ovos e fruta.
+D: You|I do not have much time in the morning.|Eu não tenho muito tempo de manhã.
+D: Ana|Prepare it the night before.|Prepare na noite anterior.
+D: You|And what about lunch?|E o almoço?
+D: Ana|Eat more vegetables and less fried food.|Coma mais legumes e menos frituras.
+D: You|Okay. I will try to cook at home.|Ok. Vou tentar cozinhar em casa.
+V: usually|geralmente;donut|rosquinha;sweet|doce;prepare|preparar;fried|frito
+B: You should eat more {0}.|Você deveria comer mais {0}.|vegetables=legumes;fruit=frutas;fish=peixe
+B: Eat less {0}.|Coma menos {0}.|fried food=frituras;sugar=açúcar;salt=sal
+S: Ana|What do you eat for breakfast?|O que você come no café da manhã?|Usually just coffee and a donut.|Geralmente só café e uma rosquinha.
+S: Ana|Eat more vegetables.|Coma mais legumes.|Okay. I will try to cook at home.|Ok. Vou tentar cozinhar em casa.
+R: You should eat more vegetables.|Você deveria comer mais legumes.
+R: Eat less fried food.|Coma menos frituras.
+R: Try eggs and fruit.|Experimente ovos e fruta.
+R: I will cook at home.|Vou cozinhar em casa.
+X: That is too sweet.|Isso é muito doce.
+C: Nos EUA, os rótulos dos alimentos mostram calorias e açúcar por porção, o que ajuda a comparar produtos.
+
+T: My doctor said rest | Contar o que o médico disse | living | Seattle | Jess,f,🧑🏼,amiga
+K: The doctor said I should rest. | O médico disse que eu devo descansar.
+M: Hoje você conta o conselho do médico para uma amiga.
+D: Jess|How was your doctor visit?|Como foi a consulta?
+D: You|Good. The doctor said I should rest.|Boa. A médica disse que eu devo descansar.
+D: Jess|Did she give you any medicine?|Ela deu algum remédio?
+D: You|Yes, she told me to take it twice a day.|Sim, ela disse para tomar duas vezes por dia.
+D: Jess|Can you go to work?|Você pode ir trabalhar?
+D: You|She said I can work, but only half a day.|Ela disse que posso trabalhar, mas só meio período.
+D: Jess|That is a good plan.|É um bom plano.
+D: You|Yes. She asked me to come back next week.|Sim. Ela pediu que eu volte semana que vem.
+V: visit|consulta;said|disse;twice|duas vezes;half|metade;plan|plano
+B: The doctor said I should {0}.|O médico disse que eu devo {0}.|rest=descansar;drink water=beber água;stay home=ficar em casa
+B: She told me to take it {0}.|Ela me disse para tomar {0}.|twice a day=duas vezes por dia;after meals=depois das refeições;every morning=toda manhã
+S: Jess|How was the visit?|Como foi a consulta?|The doctor said I should rest.|A médica disse que devo descansar.
+S: Jess|Did she give you medicine?|Ela deu remédio?|Yes. I should take it twice a day.|Sim. Devo tomar duas vezes por dia.
+R: The doctor said I should rest.|A médica disse que devo descansar.
+R: Take it twice a day.|Tome duas vezes por dia.
+R: I can work half a day.|Posso trabalhar meio período.
+R: She asked me to come back.|Ela pediu que eu volte.
+X: That is a good plan.|É um bom plano.
+C: Nos EUA, é comum pedir um "doctor's note", um atestado, para justificar uma falta no trabalho ou na escola.
+
+T: A healthy plan for the week | Desafio do arco: planejar uma semana saudável | living | Austin | Mia,f,👩🏻,amiga
+K: This week I am going to be healthier. | Esta semana vou ser mais saudável.
+M: Desafio: monte um plano de saúde para a semana.
+D: Mia|What are your health goals this week?|Quais são suas metas de saúde esta semana?
+D: You|I am going to walk every morning.|Eu vou caminhar toda manhã.
+D: Mia|That is great. What about food?|Ótimo. E a comida?
+D: You|I will eat more vegetables and drink more water.|Vou comer mais legumes e beber mais água.
+D: Mia|Will you go to the gym?|Você vai à academia?
+D: You|Yes, on Monday and Thursday.|Sim, na segunda e na quinta.
+D: Mia|And sleep? You should sleep earlier.|E o sono? Você deveria dormir mais cedo.
+D: You|True. I will turn off my phone at ten.|Verdade. Vou desligar o celular às dez.
+V: goals|metas;walk|caminhar;vegetables|legumes;earlier|mais cedo;turn off|desligar
+B: I am going to {0} every morning.|Eu vou {0} toda manhã.|walk=caminhar;stretch=me alongar;run=correr
+B: I will {0}.|Eu vou {0}.|drink more water=beber mais água;sleep earlier=dormir mais cedo;eat more fruit=comer mais frutas
+S: Mia|What are your goals?|Quais são suas metas?|I am going to walk every morning.|Vou caminhar toda manhã.
+S: Mia|What about sleep?|E o sono?|I will turn off my phone at ten.|Vou desligar o celular às dez.
+R: I am going to walk every morning.|Vou caminhar toda manhã.
+R: I will eat more vegetables.|Vou comer mais legumes.
+R: I will go to the gym on Monday.|Vou à academia na segunda.
+R: I will turn off my phone at ten.|Vou desligar o celular às dez.
+X: What are your goals?|Quais são suas metas?
+C: Muitos americanos começam metas de saúde em janeiro, as famosas "New Year's resolutions".
