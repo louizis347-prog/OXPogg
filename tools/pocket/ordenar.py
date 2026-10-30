@@ -36,8 +36,9 @@ def score(x):
     s+=words/18
     return s,feat
 for x in eps:x['_s'],x['_feat']=score(x)
-odd=sorted([x for x in eps if x['_f']<=21],key=lambda x:(x['_s'],x['_f'],x['_k']))
-even=sorted([x for x in eps if x['_f']>=22],key=lambda x:(x['_s'],x['_f'],x['_k']))
+DIA=lambda f:f<=21 or (f>=42 and f%2==0)
+odd=sorted([x for x in eps if DIA(x['_f'])],key=lambda x:(x['_s'],x['_f'],x['_k']))
+even=sorted([x for x in eps if not DIA(x['_f'])],key=lambda x:(x['_s'],x['_f'],x['_k']))
 res=[];i=j=0
 while i<len(odd) or j<len(even):
     ri=(i+.5)/len(odd) if i<len(odd) else 9
