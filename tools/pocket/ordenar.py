@@ -55,8 +55,8 @@ resto=[x for x in eps if x['t'] not in usados and x['t'] not in FIM]
 unid={}
 for x in resto:unid.setdefault(x['_f'],[]).append(x)
 for u in unid.values():u.sort(key=lambda x:x['_k'])
-ORD_DIA=[1,2,3,4,46,5,6,7,42,8,50,9,44,10,52,11,12,48,13,14,54,15,16,19,20,21,56]
-ORD_TEMA=[22,23,29,31,30,32,25,27,33,28,24,38,39,40,26,34,45,47,49,41,43,51,35,36,37,53,55]
+ORD_DIA=[1,2,3,4,46,5,6,7,42,8,50,9,44,10,52,11,12,48,13,58,14,54,15,16,19,20,21,56]
+ORD_TEMA=[22,23,57,29,31,30,32,25,27,33,28,24,38,39,40,26,34,45,47,49,59,41,43,51,35,36,37,53,55]
 def fluxo(dia):
     ordem_u=ORD_DIA if dia else ORD_TEMA
     resto_u=[n for n in unid if DIA(n)==dia and n not in ordem_u]

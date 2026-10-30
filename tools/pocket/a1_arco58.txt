@@ -1,0 +1,254 @@
+# Arco 58 · Compras online e entregas
+T: Shop online | Comprar pela internet | living | Seattle | Jess,f,🧑🏼,amiga
+K: I buy shoes online. | Compro sapatos pela internet.
+M: Hoje você faz uma compra online.
+D: Jess|What are you doing on the computer?|O que você está fazendo no computador?
+D: You|I buy shoes online.|Compro sapatos pela internet.
+D: Jess|Which size do you choose?|Que tamanho você escolhe?
+D: You|Nine. And the color black.|Nove. E a cor preta.
+D: Jess|Is delivery free?|A entrega é grátis?
+D: You|Yes, if I spend over fifty dollars.|Sim, se eu gastar mais de cinquenta dólares.
+D: Jess|Great. Click the button.|Ótimo. Clique no botão.
+V: online|pela internet;choose|escolher;delivery|entrega;free|grátis;click|clicar
+B: I buy {0} online.|Compro {0} pela internet.|shoes=sapatos;books=livros;clothes=roupas
+B: Delivery is {0}.|A entrega é {0}.|free=grátis;fast=rápida;slow=lenta
+S: Jess|What are you doing on the computer?|O que você está fazendo no computador?|I buy shoes online.|Compro sapatos pela internet.
+S: Jess|Is delivery free?|A entrega é grátis?|Yes, if I spend over fifty dollars.|Sim, se eu gastar mais de cinquenta dólares.
+R: I buy shoes online.|Compro sapatos pela internet.
+R: Which size do you choose?|Que tamanho você escolhe?
+R: Is delivery free?|A entrega é grátis?
+R: Click the button.|Clique no botão.
+X: Click.|Clique.
+C: Muitas lojas americanas dão frete grátis acima de certo valor.
+N: Próximo: o carrinho.
+
+T: The cart | O carrinho de compras | living | Seattle | Jess,f,🧑🏼,amiga
+K: Add it to the cart. | Adicione ao carrinho.
+M: Hoje você usa o carrinho online.
+D: Jess|Do you like this jacket?|Você gosta desta jaqueta?
+D: You|Yes. Add it to the cart.|Gosto. Adicione ao carrinho.
+D: Jess|There are three items in the cart.|Tem três itens no carrinho.
+D: You|Remove the red scarf. It is too expensive.|Tire o cachecol vermelho. É caro demais.
+D: Jess|Done. The total is sixty dollars.|Pronto. O total é sessenta dólares.
+D: You|That is fine.|Está bom.
+D: Jess|Now press "pay".|Agora aperte "pagar".
+V: cart|carrinho;add|adicionar;remove|tirar;total|total;items|itens
+B: Add it to the {0}.|Adicione ao {0}.|cart=carrinho;list=lista;bag=sacola
+B: The total is {0} dollars.|O total é {0} dólares.|sixty=sessenta;forty=quarenta;ten=dez
+S: Jess|Do you like this jacket?|Você gosta desta jaqueta?|Yes. Add it to the cart.|Gosto. Adicione ao carrinho.
+S: Jess|Done. The total is sixty dollars.|Pronto. O total é sessenta dólares.|That is fine.|Está bom.
+R: Add it to the cart.|Adicione ao carrinho.
+R: There are three items.|Tem três itens.
+R: Remove the red scarf.|Tire o cachecol vermelho.
+R: The total is sixty dollars.|O total é sessenta dólares.
+X: That is fine.|Está bom.
+C: "Cart" ou "basket" é o carrinho das lojas online.
+N: Próximo: pagar online.
+
+T: Pay by card | Pagar com cartão online | living | Seattle | Jess,f,🧑🏼,amiga
+K: Enter your card number. | Digite o número do cartão.
+M: Hoje você paga online com segurança.
+D: Jess|Now enter your card number.|Agora digite o número do cartão.
+D: You|It is sixteen numbers.|São dezesseis números.
+D: Jess|Then the date and the code on the back.|Depois a data e o código atrás.
+D: You|Done. Is this site safe?|Pronto. Este site é seguro?
+D: Jess|Yes, look at the lock in the address bar.|Sim, olhe o cadeado na barra de endereço.
+D: You|I see it. I press "pay".|Vejo. Aperto "pagar".
+D: Jess|Your order is confirmed.|Seu pedido está confirmado.
+V: enter|digitar;card|cartão;code|código;safe|seguro;lock|cadeado
+B: Enter your {0}.|Digite {0}.|card number=o número do cartão;address=o endereço;email=o e-mail
+B: Is this site {0}?|Este site é {0}?|safe=seguro;real=real;new=novo
+S: Jess|Now enter your card number.|Agora digite o número do cartão.|It is sixteen numbers.|São dezesseis números.
+S: You|Done. Is this site safe?|Pronto. Este site é seguro?|Yes, look at the lock in the address bar.|Sim, olhe o cadeado na barra de endereço.
+R: Enter your card number.|Digite o número do cartão.
+R: It is sixteen numbers.|São dezesseis números.
+R: Is this site safe?|Este site é seguro?
+R: Your order is confirmed.|Seu pedido está confirmado.
+X: Look at the lock.|Olhe o cadeado.
+C: Sites seguros começam com "https" e mostram um cadeado.
+N: Próximo: acompanhar a entrega.
+
+T: Where is my package? | Onde está o meu pacote? | living | Austin | Jess,f,🧑🏼,amiga
+K: Where is my package? | Onde está o meu pacote?
+M: Hoje você acompanha uma entrega.
+D: You|Where is my package?|Onde está o meu pacote?
+D: Jess|Let me check the tracking number.|Deixe-me ver o código de rastreio.
+D: You|Here it is: 4 5 6 7 8.|Aqui está: 4 5 6 7 8.
+D: Jess|It says "out for delivery".|Diz "saiu para entrega".
+D: You|So it arrives today?|Então chega hoje?
+D: Jess|Yes, before six o'clock.|Sim, antes das seis.
+D: You|Great! I stay at home.|Ótimo! Fico em casa.
+V: package|pacote;tracking|rastreio;delivery|entrega;before|antes de;stay|ficar
+B: Where is my {0}?|Onde está {0}?|package=o meu pacote;order=o meu pedido;letter=a minha carta
+B: It arrives {0}.|Chega {0}.|today=hoje;tomorrow=amanhã;on Friday=na sexta
+S: You|Where is my package?|Onde está o meu pacote?|Let me check the tracking number.|Deixe-me ver o código de rastreio.
+S: Jess|It says "out for delivery".|Diz "saiu para entrega".|So it arrives today?|Então chega hoje?
+R: Where is my package?|Onde está o meu pacote?
+R: Check the tracking number.|Veja o código de rastreio.
+R: It arrives today.|Chega hoje.
+R: I stay at home.|Fico em casa.
+X: Out for delivery.|Saiu para entrega.
+C: Com o código de rastreio dá para acompanhar o pacote pelo celular.
+N: Próximo: o entregador.
+
+T: The delivery driver | O entregador | street | Boston | Tom,m,🧑🏽,entregador
+K: Please sign here. | Assine aqui, por favor.
+M: Hoje você recebe uma entrega.
+D: Tom|Good afternoon. A package for Leo?|Boa tarde. Um pacote para o Leo?
+D: You|That is me.|Sou eu.
+D: Tom|Please sign here.|Assine aqui, por favor.
+D: You|Done. Is it heavy?|Pronto. É pesado?
+D: Tom|A little. Let me carry it inside.|Um pouco. Deixe-me levar para dentro.
+D: You|Thank you very much.|Muito obrigado.
+D: Tom|Have a nice day!|Tenha um bom dia!
+V: sign|assinar;heavy|pesado;carry|levar;inside|dentro;afternoon|tarde
+B: Please sign {0}.|Assine {0}, por favor.|here=aqui;below=abaixo;there=ali
+B: Let me carry it {0}.|Deixe-me levar {0}.|inside=para dentro;upstairs=lá em cima;to the door=até a porta
+S: Tom|Good afternoon. A package for Leo?|Boa tarde. Um pacote para o Leo?|That is me.|Sou eu.
+S: Tom|Please sign here.|Assine aqui, por favor.|Done. Is it heavy?|Pronto. É pesado?
+R: A package for Leo?|Um pacote para o Leo?
+R: That is me.|Sou eu.
+R: Please sign here.|Assine aqui, por favor.
+R: Have a nice day!|Tenha um bom dia!
+X: That is me.|Sou eu.
+C: Nos EUA, o entregador costuma deixar o pacote na porta.
+N: Próximo: abrir o pacote.
+
+T: Open the box | Abrir o pacote | living | Boston | Jess,f,🧑🏼,amiga
+K: It is the wrong size. | É o tamanho errado.
+M: Hoje você abre o pacote e confere.
+D: Jess|Open the box. Is everything okay?|Abra a caixa. Está tudo certo?
+D: You|The shoes are here. They are black.|Os sapatos estão aqui. São pretos.
+D: Jess|Try them on.|Experimente.
+D: You|Oh no. They are too small.|Ah não. Estão pequenos demais.
+D: Jess|It is the wrong size.|É o tamanho errado.
+D: You|I need to send them back.|Preciso devolver.
+D: Jess|Look at the return label.|Olhe a etiqueta de devolução.
+V: box|caixa;wrong|errado;size|tamanho;return|devolução;label|etiqueta
+B: It is the wrong {0}.|É o(a) {0} errado(a).|size=tamanho;color=cor;shoe=sapato
+B: I need to send them {0}.|Preciso devolver {0}.|back=de volta;today=hoje;now=agora
+S: Jess|Open the box. Is everything okay?|Abra a caixa. Está tudo certo?|The shoes are here. They are black.|Os sapatos estão aqui. São pretos.
+S: You|Oh no. They are too small.|Ah não. Estão pequenos demais.|It is the wrong size.|É o tamanho errado.
+R: Open the box.|Abra a caixa.
+R: They are too small.|Estão pequenos demais.
+R: It is the wrong size.|É o tamanho errado.
+R: Look at the return label.|Olhe a etiqueta de devolução.
+X: Oh no.|Ah não.
+C: A maioria das lojas americanas aceita devolução em até 30 dias.
+N: Próximo: o reembolso.
+
+T: A refund | O reembolso | living | Boston | Mia,f,👩🏻,atendente
+K: I want a refund. | Quero um reembolso.
+M: Hoje você pede o dinheiro de volta.
+D: Mia|Customer service. How can I help?|Atendimento. Como posso ajudar?
+D: You|I want a refund for my shoes.|Quero reembolso dos meus sapatos.
+D: Mia|What is your order number?|Qual é o número do pedido?
+D: You|It is 12 34 56.|É 12 34 56.
+D: Mia|Thank you. Send the shoes back.|Obrigada. Envie os sapatos de volta.
+D: You|And when do I get my money?|E quando recebo meu dinheiro?
+D: Mia|In five working days.|Em cinco dias úteis.
+V: refund|reembolso;customer service|atendimento;order|pedido;money|dinheiro;working days|dias úteis
+B: I want a {0}.|Quero um(a) {0}.|refund=reembolso;new pair=par novo;receipt=recibo
+B: In {0} working days.|Em {0} dias úteis.|five=cinco;three=três;ten=dez
+S: Mia|Customer service. How can I help?|Atendimento. Como posso ajudar?|I want a refund for my shoes.|Quero reembolso dos meus sapatos.
+S: Mia|Thank you. Send the shoes back.|Obrigada. Envie os sapatos de volta.|And when do I get my money?|E quando recebo meu dinheiro?
+R: I want a refund.|Quero um reembolso.
+R: What is your order number?|Qual é o número do pedido?
+R: Send the shoes back.|Envie os sapatos de volta.
+R: In five working days.|Em cinco dias úteis.
+X: How can I help?|Como posso ajudar?
+C: "Refund" é o dinheiro devolvido; "exchange" é trocar por outro produto.
+N: Próximo: a avaliação.
+
+T: Write a review | Escrever uma avaliação | living | Seattle | Jess,f,🧑🏼,amiga
+K: The shoes are great. | Os sapatos são ótimos.
+M: Hoje você avalia um produto.
+D: Jess|Do you want to write a review?|Quer escrever uma avaliação?
+D: You|Yes. Five stars!|Quero. Cinco estrelas!
+D: Jess|What do you write?|O que você escreve?
+D: You|The shoes are great. They are comfortable.|Os sapatos são ótimos. São confortáveis.
+D: Jess|And the delivery?|E a entrega?
+D: You|Fast and easy.|Rápida e fácil.
+D: Jess|Click "send".|Clique em "enviar".
+V: review|avaliação;stars|estrelas;comfortable|confortáveis;fast|rápida;easy|fácil
+B: Five {0}!|Cinco {0}!|stars=estrelas;points=pontos;books=livros
+B: The shoes are {0}.|Os sapatos são {0}.|great=ótimos;comfortable=confortáveis;light=leves
+S: Jess|Do you want to write a review?|Quer escrever uma avaliação?|Yes. Five stars!|Quero. Cinco estrelas!
+S: Jess|And the delivery?|E a entrega?|Fast and easy.|Rápida e fácil.
+R: Write a review.|Escreva uma avaliação.
+R: Five stars!|Cinco estrelas!
+R: The shoes are comfortable.|Os sapatos são confortáveis.
+R: Click "send".|Clique em "enviar".
+X: Five stars!|Cinco estrelas!
+C: As avaliações ajudam outros clientes a escolher bem.
+N: Próximo: compras em liquidação.
+
+T: Big sale | Liquidação | shop | New York | Lia,f,👩🏽,vendedora
+K: Everything is half price. | Tudo está pela metade do preço.
+M: Hoje você aproveita uma liquidação.
+D: Lia|Big sale! Everything is half price.|Liquidação! Tudo pela metade do preço.
+D: You|Really? This coat is only forty dollars?|Sério? Este casaco custa só quarenta dólares?
+D: Lia|Yes, it is half price today.|Sim, está pela metade hoje.
+D: You|And the hats?|E os chapéus?
+D: Lia|Buy one, get one free.|Leve um, ganhe outro.
+D: You|Perfect. I take two.|Perfeito. Levo dois.
+D: Lia|The sale ends on Sunday.|A liquidação termina no domingo.
+V: sale|liquidação;half price|metade do preço;free|grátis;ends|termina;coat|casaco
+B: Everything is {0}.|Tudo está {0}.|half price=pela metade do preço;on sale=em liquidação;free=grátis
+B: Buy one, get one {0}.|Leve um, ganhe outro {0}.|free=grátis;cheaper=mais barato;half price=pela metade
+S: Lia|Big sale! Everything is half price.|Liquidação! Tudo pela metade do preço.|Really? This coat is only forty dollars?|Sério? Este casaco custa só quarenta dólares?
+S: Lia|Buy one, get one free.|Leve um, ganhe outro.|Perfect. I take two.|Perfeito. Levo dois.
+R: Everything is half price.|Tudo está pela metade do preço.
+R: This coat is forty dollars.|Este casaco custa quarenta dólares.
+R: Buy one, get one free.|Leve um, ganhe outro.
+R: The sale ends on Sunday.|A liquidação termina no domingo.
+X: I take two.|Levo dois.
+C: Na Black Friday, as lojas americanas fazem grandes liquidações.
+N: Próximo: o cupom.
+
+T: A discount code | Código de desconto | living | Seattle | Jess,f,🧑🏼,amiga
+K: Use this code. | Use este código.
+M: Hoje você usa um cupom.
+D: Jess|I have a discount code. Use this code.|Tenho um código de desconto. Use este código.
+D: You|What is it?|Qual é?
+D: Jess|SAVE10. It gives ten percent off.|SAVE10. Dá dez por cento de desconto.
+D: You|Where do I type it?|Onde digito?
+D: Jess|Here, before you pay.|Aqui, antes de pagar.
+D: You|It works! The price is lower.|Funcionou! O preço está menor.
+D: Jess|You save six dollars.|Você economiza seis dólares.
+V: discount|desconto;code|código;percent|por cento;lower|menor;save|economizar
+B: Use this {0}.|Use este(a) {0}.|code=código;coupon=cupom;card=cartão
+B: It gives {0} percent off.|Dá {0} por cento de desconto.|ten=dez;twenty=vinte;five=cinco
+S: Jess|I have a discount code. Use this code.|Tenho um código de desconto. Use este código.|What is it?|Qual é?
+S: Jess|Here, before you pay.|Aqui, antes de pagar.|It works! The price is lower.|Funcionou! O preço está menor.
+R: Use this code.|Use este código.
+R: It gives ten percent off.|Dá dez por cento de desconto.
+R: Type it before you pay.|Digite antes de pagar.
+R: It works!|Funcionou!
+X: You save six dollars.|Você economiza seis dólares.
+C: "Coupon" também é usado para papel de desconto em mercados.
+N: Próximo: desafio, a compra perfeita.
+
+T: The perfect purchase | Desafio do arco: compra completa | living | Seattle | Mia,f,👩🏻,amiga
+K: I buy a jacket online. | Compro uma jaqueta pela internet.
+M: Hoje você faz uma compra completa.
+D: Mia|Tell me about your online purchase.|Conte da sua compra online.
+D: You|I choose a jacket and add it to the cart.|Escolho uma jaqueta e adiciono ao carrinho.
+D: Mia|Do you use a code?|Você usa um código?
+D: You|Yes, ten percent off. I pay by card.|Uso, dez por cento de desconto. Pago com cartão.
+D: Mia|When does it arrive?|Quando chega?
+D: You|Tomorrow, before six.|Amanhã, antes das seis.
+D: Mia|Great. Send me a photo!|Ótimo. Mande uma foto!
+V: purchase|compra;choose|escolher;cart|carrinho;pay|pagar;arrive|chegar
+B: I choose a {0}.|Eu escolho {0}.|jacket=uma jaqueta;bag=uma bolsa;watch=um relógio
+B: I pay by {0}.|Pago com {0}.|card=cartão;cash=dinheiro;phone=celular
+S: Mia|Tell me about your online purchase.|Conte da sua compra online.|I choose a jacket and add it to the cart.|Escolho uma jaqueta e adiciono ao carrinho.
+S: Mia|When does it arrive?|Quando chega?|Tomorrow, before six.|Amanhã, antes das seis.
+R: I choose a jacket.|Eu escolho uma jaqueta.
+R: I add it to the cart.|Adiciono ao carrinho.
+R: I pay by card.|Pago com cartão.
+R: It arrives tomorrow.|Chega amanhã.
+X: Send me a photo!|Mande uma foto!
+C: Comprar online é prático, mas confira sempre o tamanho e a política de devolução.
+N: Próximo: o Polo Norte.
+BOSS: 1
