@@ -1,0 +1,230 @@
+# Arco 34 · Problemas do dia a dia e soluções
+T: The wrong order | Corrigir um pedido errado | cafe | Chicago | Ana,f,👩🏼,garçonete
+K: I think there is a mistake with my order. | Acho que há um erro no meu pedido.
+M: Hoje você corrige um pedido errado sem criar conflito.
+D: You|Excuse me. I think there is a mistake with my order.|Com licença. Acho que há um erro no meu pedido.
+D: Ana|I am sorry. What did you order?|Sinto muito. O que você pediu?
+D: You|The chicken salad, but this is a fish sandwich.|A salada de frango, mas isto é um sanduíche de peixe.
+D: Ana|You are right. I will fix it right away.|Você tem razão. Vou corrigir agora mesmo.
+D: You|Thank you. How long will it take?|Obrigado. Quanto tempo vai levar?
+D: Ana|About ten minutes. Would you like a free drink while you wait?|Cerca de dez minutos. Quer uma bebida grátis enquanto espera?
+D: You|That is very kind. A lemonade, please.|Muito gentil. Uma limonada, por favor.
+D: Ana|Coming right up. Sorry again for the mistake.|Já está saindo. Desculpe de novo pelo erro.
+V: mistake|erro;order|pedido;fix|corrigir;right away|agora mesmo;while|enquanto
+B: I think there is a {0} with my order.|Acho que há {0} no meu pedido.|mistake=um erro;problem=um problema;delay=um atraso
+B: I will fix it {0}.|Vou corrigir {0}.|right away=agora mesmo;today=hoje;soon=logo
+S: Ana|What did you order?|O que você pediu?|The chicken salad, but this is a fish sandwich.|A salada de frango, mas isto é sanduíche de peixe.
+S: Ana|I will fix it right away.|Vou corrigir agora mesmo.|Thank you. How long will it take?|Obrigado. Quanto tempo leva?
+R: I think there is a mistake with my order.|Acho que há erro no meu pedido.
+R: This is not what I ordered.|Isto não é o que pedi.
+R: I will fix it right away.|Vou corrigir agora mesmo.
+R: Sorry for the mistake.|Desculpe pelo erro.
+X: Coming right up.|Já está saindo.
+C: Nos restaurantes americanos, avisar com calma sobre um erro costuma levar a uma rápida correção e às vezes a uma cortesia.
+
+T: The bill is wrong | Questionar uma cobrança errada | cafe | Boston | Dan,m,🧑🏽,garçom
+K: I think we were charged twice. | Acho que fomos cobrados duas vezes.
+M: Hoje você questiona uma cobrança duplicada.
+D: You|Excuse me. I think we were charged twice for the soup.|Com licença. Acho que fomos cobrados duas vezes pela sopa.
+D: Dan|Let me check. Yes, you are right. It was added twice.|Deixe-me ver. Sim, você tem razão. Foi adicionada duas vezes.
+D: You|Could you fix the bill, please?|Poderia corrigir a conta, por favor?
+D: Dan|Of course. I will print a new one.|Claro. Vou imprimir uma nova.
+D: You|And the tip? I do not want to pay it on the wrong amount.|E a gorjeta? Não quero pagar sobre o valor errado.
+D: Dan|Do not worry. The new total is forty-two dollars.|Não se preocupe. O novo total é quarenta e dois dólares.
+D: You|Thank you. We will pay by card.|Obrigado. Pagaremos com cartão.
+D: Dan|Sure. I apologize for the confusion.|Claro. Peço desculpas pela confusão.
+V: charged|cobrado;twice|duas vezes;added|adicionada;amount|valor;confusion|confusão
+B: I think we were charged {0}.|Acho que fomos cobrados {0}.|twice=duas vezes;too much=demais;for something else=por outra coisa
+B: The new total is {0} dollars.|O novo total é {0} dólares.|forty-two=quarenta e dois;thirty-five=trinta e cinco;fifty=cinquenta
+S: Dan|Let me check.|Deixe-me verificar.|I think we were charged twice for the soup.|Acho que fomos cobrados duas vezes pela sopa.
+S: Dan|I will print a new bill.|Vou imprimir uma conta nova.|Thank you. We will pay by card.|Obrigado. Pagaremos com cartão.
+R: I think we were charged twice.|Acho que fomos cobrados duas vezes.
+R: Could you fix the bill, please?|Poderia corrigir a conta?
+R: The new total is forty-two dollars.|O novo total é quarenta e dois dólares.
+R: I apologize for the confusion.|Peço desculpas pela confusão.
+X: Do not worry.|Não se preocupe.
+C: Conferir a conta antes de pagar é um hábito comum nos EUA, e os garçons costumam corrigir erros sem problema.
+
+T: A noisy hotel room | Pedir mudança de quarto por barulho | hall | New York | Sam,m,🧑🏻,recepcionista
+K: Could I change rooms? It is too noisy. | Poderia trocar de quarto? Está barulhento demais.
+M: Hoje você pede para trocar de quarto por causa do barulho.
+D: You|Excuse me. Could I change rooms? It is too noisy.|Com licença. Poderia trocar de quarto? Está barulhento demais.
+D: Sam|I am sorry to hear that. What is the noise?|Sinto muito. Qual é o barulho?
+D: You|There is loud music from the bar downstairs, and I need to sleep.|Há música alta do bar lá embaixo e preciso dormir.
+D: Sam|Let me see what is available. We have a quieter room on the eighth floor.|Deixe-me ver o que há. Temos um quarto mais quieto no oitavo andar.
+D: You|That would be perfect. Is it on the street side?|Seria perfeito. Dá para a rua?
+D: Sam|No, it faces the inner garden. Here are your new keys.|Não, dá para o jardim interno. Aqui estão as chaves novas.
+D: You|Thank you. Could someone help with my bags?|Obrigado. Alguém poderia ajudar com minhas malas?
+D: Sam|Of course. A porter will be there in two minutes.|Claro. Um carregador estará aí em dois minutos.
+V: noisy|barulhento;downstairs|lá embaixo;quieter|mais quieto;porter|carregador;inner|interno
+B: Could I change {0}?|Poderia trocar {0}?|rooms=de quarto;tables=de mesa;seats=de lugar
+B: There is loud music from the {0}.|Há música alta do {0}.|bar=bar;street=rua;neighbor=vizinho
+S: Sam|What is the noise?|Qual é o barulho?|There is loud music from the bar downstairs.|Há música alta do bar lá embaixo.
+S: Sam|We have a quieter room.|Temos um quarto mais quieto.|That would be perfect. Thank you.|Seria perfeito. Obrigado.
+R: Could I change rooms?|Poderia trocar de quarto?
+R: It is too noisy.|Está barulhento demais.
+R: I need to sleep.|Preciso dormir.
+R: Could someone help with my bags?|Alguém poderia ajudar com as malas?
+X: I am sorry to hear that.|Sinto muito ouvir isso.
+C: Em hotéis nos EUA, é comum pedir um quarto "away from the elevator" ou "on a high floor" na reserva, para ter mais silêncio.
+
+T: Overbooked flight | Lidar com um voo lotado | airport | Dallas | Jo,f,👩🏿,atendente
+K: There are no seats left on this flight. | Não há mais lugares neste voo.
+M: Hoje você negocia alternativas num voo lotado.
+D: Jo|I am sorry. The flight is overbooked, and there are no seats left.|Sinto muito. O voo está lotado e não há mais lugares.
+D: You|But I have a ticket. What can you offer me?|Mas eu tenho passagem. O que podem me oferecer?
+D: Jo|We can put you on the next flight, in four hours.|Podemos colocar você no próximo voo, em quatro horas.
+D: You|That is a long time. Is there compensation?|É muito tempo. Há compensação?
+D: Jo|Yes. A two-hundred-dollar voucher and a free meal.|Sim. Um vale de duzentos dólares e uma refeição grátis.
+D: You|Can I choose an aisle seat on the next flight?|Posso escolher um lugar no corredor no próximo voo?
+D: Jo|Of course. Seat fourteen C is available.|Claro. O lugar quatorze C está disponível.
+D: You|Okay. I will take it, and I will wait in the lounge.|Ok. Vou aceitar e esperarei na sala de espera.
+V: overbooked|lotado|além da capacidade;compensation|compensação;voucher|vale;lounge|sala de espera;available|disponível
+B: There are no {0} left.|Não há mais {0}.|seats=lugares;tickets=ingressos;rooms=quartos
+B: We can put you on the {0}.|Podemos colocar você {0}.|next flight=no próximo voo;morning flight=no voo da manhã;evening flight=no voo da noite
+S: Jo|The flight is overbooked.|O voo está lotado.|But I have a ticket. What can you offer me?|Mas tenho passagem. O que podem me oferecer?
+S: Jo|We can offer a voucher.|Podemos oferecer um vale.|Okay. Can I choose an aisle seat?|Ok. Posso escolher um corredor?
+R: The flight is overbooked.|O voo está lotado.
+R: What can you offer me?|O que podem me oferecer?
+R: We can put you on the next flight.|Podemos colocá-lo no próximo voo.
+R: There is a voucher and a free meal.|Há um vale e uma refeição grátis.
+X: Is there compensation?|Há compensação?
+C: Nos EUA, quando um voo está lotado, as companhias oferecem compensações a quem aceitar trocar de voo.
+
+T: Something is broken today | Devolver um produto com defeito | shop | Seattle | Max,m,🧑🏼,atendente
+K: It stopped working after two days. | Parou de funcionar depois de dois dias.
+M: Hoje você devolve um produto defeituoso e pede troca.
+D: You|Hi. I bought this blender last week, but it stopped working after two days.|Oi. Comprei este liquidificador semana passada, mas parou de funcionar depois de dois dias.
+D: Max|I am sorry about that. Do you have the receipt?|Sinto muito. Você tem o recibo?
+D: You|Yes, here it is. I also kept the box.|Sim, aqui está. Também guardei a caixa.
+D: Max|Good. Would you like a refund or a new one?|Ótimo. Prefere reembolso ou um novo?
+D: You|A new one, please. But can you check that it works first?|Um novo, por favor. Mas podem verificar se funciona antes?
+D: Max|Of course. Let me plug it in. It works perfectly.|Claro. Vou ligar na tomada. Funciona perfeitamente.
+D: You|Great. Is there a new warranty?|Ótimo. Tem uma garantia nova?
+D: Max|Yes, another year from today. Here you are.|Sim, mais um ano a partir de hoje. Aqui está.
+V: blender|liquidificador;stopped working|parou de funcionar;kept|guardei;plug in|ligar na tomada;warranty|garantia
+B: It stopped working after {0}.|Parou de funcionar depois de {0}.|two days=dois dias;a week=uma semana;an hour=uma hora
+B: Would you like a refund or a {0} one?|Prefere reembolso ou um {0}?|new=novo;different=diferente;better=melhor
+S: Max|Do you have the receipt?|Você tem o recibo?|Yes, here it is. It stopped working after two days.|Sim, aqui está. Parou depois de dois dias.
+S: Max|Would you like a refund or a new one?|Quer reembolso ou um novo?|A new one, please.|Um novo, por favor.
+R: It stopped working after two days.|Parou de funcionar depois de dois dias.
+R: Here is the receipt.|Aqui está o recibo.
+R: A new one, please.|Um novo, por favor.
+R: Is there a new warranty?|Tem garantia nova?
+X: Let me plug it in.|Vou ligar na tomada.
+C: Guardar a caixa e o recibo é útil nos EUA, porque lojas aceitam trocas de produtos defeituosos com esses itens.
+
+T: A phone plan | Entender ou mudar um plano de celular | shop | Atlanta | Tom,m,🧑🏽,vendedor
+K: I would like to change my plan. | Gostaria de mudar meu plano.
+M: Hoje você compara planos e pergunta sobre custos.
+D: You|Hello. I would like to change my phone plan.|Olá. Gostaria de mudar meu plano de celular.
+D: Tom|Sure. What do you pay now?|Claro. Quanto você paga agora?
+D: You|Sixty dollars a month, but I never use all the data.|Sessenta dólares por mês, mas nunca uso todos os dados.
+D: Tom|We have a plan with ten gigabytes for thirty-five dollars.|Temos um plano com dez gigabytes por trinta e cinco dólares.
+D: You|Is there a contract?|Tem contrato?
+D: Tom|No contract. You can cancel any time.|Sem contrato. Pode cancelar quando quiser.
+D: You|Does it include calls and texts?|Inclui ligações e mensagens?
+D: Tom|Yes, unlimited. Shall I change it today?|Sim, ilimitadas. Posso mudar hoje?
+V: plan|plano;data|dados;contract|contrato;unlimited|ilimitado;texts|mensagens
+B: I would like to change my phone {0}.|Gostaria de mudar meu {0} de celular.|plan=plano;number=número;case=capa
+B: Is there a {0}?|Tem {0}?|contract=contrato;fee=taxa;discount=desconto
+S: Tom|What do you pay now?|Quanto paga agora?|Sixty dollars a month, but I never use all the data.|Sessenta por mês, mas nunca uso todos os dados.
+S: Tom|There is no contract.|Não há contrato.|Does it include calls and texts?|Inclui ligações e mensagens?
+R: I would like to change my phone plan.|Gostaria de mudar meu plano.
+R: I never use all the data.|Nunca uso todos os dados.
+R: Is there a contract?|Tem contrato?
+R: Does it include calls and texts?|Inclui ligações e mensagens?
+X: You can cancel any time.|Pode cancelar quando quiser.
+C: Nos EUA, há planos de celular pré-pagos, sem contrato, e eles costumam ser mais baratos que os planos anuais.
+
+T: Tech support | Pedir ajuda ao suporte técnico | office | Denver | Kai,m,🧑🏻,suporte
+K: Have you tried turning it off and on? | Você já tentou desligar e ligar?
+M: Hoje você descreve um problema técnico e segue instruções.
+D: Kai|Tech support, Kai speaking. How can I help you?|Suporte técnico, Kai falando. Como posso ajudar?
+D: You|My internet is not working. The light on the router is red.|Minha internet não funciona. A luz do roteador está vermelha.
+D: Kai|Have you tried turning it off and on?|Você já tentou desligar e ligar?
+D: You|Not yet. How long should I wait?|Ainda não. Quanto tempo devo esperar?
+D: Kai|Unplug it for thirty seconds, then plug it back in.|Tire da tomada por trinta segundos e ligue de novo.
+D: You|Okay. Now the light is blinking green.|Ok. Agora a luz está piscando verde.
+D: Kai|That is good. Wait two minutes and test your connection.|Isso é bom. Espere dois minutos e teste sua conexão.
+D: You|It works! Thank you so much for your help.|Funciona! Muito obrigado pela ajuda.
+V: router|roteador;light|luz;unplug|desligar da tomada;blinking|piscando;connection|conexão
+B: The light on the router is {0}.|A luz do roteador está {0}.|red=vermelha;green=verde;off=apagada
+B: Unplug it for {0}.|Tire da tomada por {0}.|thirty seconds=trinta segundos;a minute=um minuto;ten seconds=dez segundos
+S: Kai|How can I help you?|Como posso ajudar?|My internet is not working.|Minha internet não funciona.
+S: Kai|Have you tried turning it off and on?|Já tentou desligar e ligar?|Not yet. How long should I wait?|Ainda não. Quanto devo esperar?
+R: My internet is not working.|Minha internet não funciona.
+R: Have you tried turning it off and on?|Já tentou desligar e ligar?
+R: Unplug it for thirty seconds.|Tire da tomada por trinta segundos.
+R: It works! Thank you.|Funciona! Obrigado.
+X: Tech support.|Suporte técnico.
+C: "Have you tried turning it off and on again?" é a frase mais famosa do suporte técnico em inglês.
+
+T: A problem with the landlord | Conversar com o proprietário | living | Phoenix | Ms. Ray,f,👩🏿,proprietária
+K: The heating does not work. | O aquecimento não funciona.
+M: Hoje você comunica um problema ao proprietário e combina o conserto.
+D: You|Hello, Ms. Ray. I am calling about the heating in my apartment.|Olá, Sra. Ray. Estou ligando sobre o aquecimento do meu apartamento.
+D: Ms. Ray|What is the problem?|Qual é o problema?
+D: You|The heating does not work, and it is very cold at night.|O aquecimento não funciona e está muito frio à noite.
+D: Ms. Ray|Since when?|Desde quando?
+D: You|Since Sunday. I already sent an email, but I did not receive an answer.|Desde domingo. Já mandei um e-mail, mas não recebi resposta.
+D: Ms. Ray|I am sorry. I will send a technician tomorrow morning.|Sinto muito. Vou enviar um técnico amanhã de manhã.
+D: You|Thank you. Will someone need to be home?|Obrigado. Alguém precisa estar em casa?
+D: Ms. Ray|Yes, please, between nine and noon.|Sim, por favor, entre nove e meio-dia.
+V: heating|aquecimento;technician|técnico;landlord|proprietário;since|desde;answer|resposta
+B: The {0} does not work.|{0} não funciona.|heating=O aquecimento;elevator=O elevador;washing machine=A máquina de lavar
+B: I will send a technician {0}.|Vou enviar um técnico {0}.|tomorrow morning=amanhã de manhã;today=hoje;on Monday=na segunda
+S: Ms. Ray|What is the problem?|Qual é o problema?|The heating does not work, and it is very cold.|O aquecimento não funciona e está muito frio.
+S: Ms. Ray|I will send a technician.|Vou enviar um técnico.|Thank you. Will someone need to be home?|Obrigado. Alguém precisa estar em casa?
+R: The heating does not work.|O aquecimento não funciona.
+R: It is very cold at night.|Está muito frio à noite.
+R: I already sent an email.|Já mandei um e-mail.
+R: I will send a technician tomorrow.|Vou enviar um técnico amanhã.
+X: Since Sunday.|Desde domingo.
+C: Nos EUA, por lei, o proprietário deve manter itens básicos como água quente e aquecimento funcionando.
+
+T: Lost keys | Resolver chaves perdidas | street | Boston | Gus,m,🧑🏼,chaveiro
+K: I am locked out of my apartment. | Estou trancado fora do meu apartamento.
+M: Hoje você pede ajuda de um chaveiro.
+D: You|Hello? I am locked out of my apartment. Can you help me?|Alô? Estou trancado fora do meu apartamento. Pode me ajudar?
+D: Gus|Of course. Where are you, and do you have an ID?|Claro. Onde você está e tem documento?
+D: You|On Maple Street, number twelve. My ID is inside, but I have a utility bill on my phone.|Na Rua Maple, número doze. Meu documento está lá dentro, mas tenho uma conta no celular.
+D: Gus|That will work. I can be there in twenty minutes.|Isso serve. Chego aí em vinte minutos.
+D: You|How much will it cost?|Quanto vai custar?
+D: Gus|Eighty dollars, plus a new key if you need one.|Oitenta dólares, mais uma chave nova se precisar.
+D: You|I will need two copies, please.|Vou precisar de duas cópias, por favor.
+D: Gus|No problem. See you in twenty minutes.|Sem problema. Até daqui a vinte minutos.
+V: locked out|trancado do lado de fora;utility bill|conta de luz ou água;copies|cópias;inside|lá dentro;key|chave
+B: I am locked out of my {0}.|Estou trancado fora do meu {0}.|apartment=apartamento;car=carro;office=escritório
+B: I will need {0} copies.|Vou precisar de {0} cópias.|two=duas;three=três;one=uma
+S: Gus|Where are you?|Onde você está?|I am locked out of my apartment.|Estou trancado fora do apartamento.
+S: Gus|It will cost eighty dollars.|Vai custar oitenta dólares.|I will need two copies, please.|Preciso de duas cópias, por favor.
+R: I am locked out of my apartment.|Estou trancado fora do apartamento.
+R: Can you help me?|Pode me ajudar?
+R: How much will it cost?|Quanto vai custar?
+R: I will need two copies.|Vou precisar de duas cópias.
+X: See you in twenty minutes.|Até daqui a vinte minutos.
+C: Nos EUA, chaveiros de emergência cobram uma taxa maior à noite e nos fins de semana, então vale perguntar o preço antes.
+
+T: Solving it together | Desafio do arco: contar um problema e a solução | living | Chicago | Mia,f,👩🏻,amiga
+K: Let me tell you how I solved the problem. | Deixe-me contar como resolvi o problema.
+M: Desafio: conte um problema, o que tentou e como resolveu.
+D: Mia|You look relieved. What happened?|Você parece aliviado. O que aconteceu?
+D: You|Last week my internet stopped working, and I had an important video call.|Semana passada minha internet parou e eu tinha uma videochamada importante.
+D: Mia|What did you do?|O que você fez?
+D: You|First I called tech support. They told me to restart the router, but it did not work.|Primeiro liguei para o suporte. Mandaram reiniciar o roteador, mas não funcionou.
+D: Mia|And then?|E depois?
+D: You|I used my phone as a hotspot and finished the call. Later, a technician replaced the cable.|Usei o celular como roteador e terminei a chamada. Depois, um técnico trocou o cabo.
+D: Mia|Smart thinking! Is it working now?|Boa saída! Está funcionando agora?
+D: You|Yes, perfectly. If it happens again, I will know exactly what to do.|Sim, perfeitamente. Se acontecer de novo, saberei exatamente o que fazer.
+V: relieved|aliviado;restart|reiniciar;hotspot|roteador do celular;replaced|trocou;exactly|exatamente
+B: First I {0}.|Primeiro eu {0}.|called tech support=liguei para o suporte;restarted the router=reiniciei o roteador;checked the cable=conferi o cabo
+B: If it happens again, I will {0}.|Se acontecer de novo, eu {0}.|know what to do=saberei o que fazer;call them=ligarei para eles;try the hotspot=usarei o roteador do celular
+S: Mia|What happened?|O que aconteceu?|Last week my internet stopped working.|Semana passada minha internet parou.
+S: Mia|How did you solve it?|Como resolveu?|I used my phone as a hotspot.|Usei o celular como roteador.
+R: Let me tell you how I solved the problem.|Deixe-me contar como resolvi.
+R: First I called tech support.|Primeiro liguei para o suporte.
+R: I used my phone as a hotspot.|Usei o celular como roteador.
+R: If it happens again, I will know what to do.|Se acontecer de novo, saberei o que fazer.
+X: Smart thinking!|Boa saída!
+C: Saber improvisar soluções, como usar o celular como roteador, é visto como uma habilidade útil na vida e no trabalho.
