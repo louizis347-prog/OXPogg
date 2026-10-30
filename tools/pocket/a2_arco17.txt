@@ -1,0 +1,230 @@
+# Arco 17 · Compras, dinheiro e presentes
+T: Do you have a bigger size? | Pedir outro tamanho ou cor | shop | Chicago | Ana,f,👩🏼,vendedora
+K: Do you have this in a bigger size? | Vocês têm isto em um tamanho maior?
+M: Hoje você pede outro tamanho e outra cor.
+D: You|Excuse me. Do you have this in a bigger size?|Com licença. Vocês têm isto em um tamanho maior?
+D: Ana|Let me check. What size do you wear?|Deixe-me ver. Que tamanho você usa?
+D: You|Usually medium, but this one is tight.|Geralmente M, mas este está apertado.
+D: Ana|Here is a large. It comes in blue and black.|Aqui está um G. Vem em azul e preto.
+D: You|Do you have it in green?|Tem em verde?
+D: Ana|Sorry, green is sold out.|Desculpe, o verde esgotou.
+D: You|Okay. I will take the blue one.|Ok. Vou levar o azul.
+D: Ana|Great choice. It looks good on you.|Ótima escolha. Fica bem em você.
+V: size|tamanho;tight|apertado;sold out|esgotado;wear|usar;medium|médio
+B: Do you have this in a {0} size?|Vocês têm isto em um tamanho {0}?|bigger=maior;smaller=menor;different=diferente
+B: Do you have it in {0}?|Tem em {0}?|green=verde;black=preto;white=branco
+S: Ana|What size do you wear?|Que tamanho você usa?|Usually medium, but this one is tight.|Geralmente M, mas este está apertado.
+S: Ana|It comes in blue and black.|Vem em azul e preto.|I will take the blue one.|Vou levar o azul.
+R: Do you have this in a bigger size?|Tem isto em um tamanho maior?
+R: This one is tight.|Este está apertado.
+R: Green is sold out.|O verde esgotou.
+R: I will take the blue one.|Vou levar o azul.
+X: Sold out.|Esgotado.
+C: Os tamanhos de roupa nos EUA são diferentes dos do Brasil, então é comum experimentar antes de comprar.
+
+T: Paying at the register | Pagar no caixa | shop | Boston | Kai,m,🧑🏻,caixa
+K: Can I pay by card here? | Posso pagar com cartão?
+M: Hoje você paga uma compra e pede o recibo.
+D: Kai|Hi. That will be thirty-two fifty.|Oi. Fica trinta e dois e cinquenta.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Kai|Sure. Please insert it here.|Claro. Insira aqui, por favor.
+D: You|Is it asking for a PIN?|Está pedindo senha?
+D: Kai|Yes, enter your four digits.|Sim, digite os quatro dígitos.
+D: You|Done. Can I have a receipt?|Pronto. Posso ter o recibo?
+D: Kai|Of course. Would you like a bag?|Claro. Quer uma sacola?
+D: You|No, thanks. I have my own.|Não, obrigado. Tenho a minha.
+V: card|cartão;insert|inserir;PIN|senha;receipt|recibo;bag|sacola
+B: Can I pay by {0}?|Posso pagar com {0}?|card=cartão;cash=dinheiro;phone=celular
+B: Would you like a {0}?|Quer {0}?|bag=uma sacola;receipt=um recibo;gift box=uma caixa de presente
+S: Kai|That will be thirty-two fifty.|Fica trinta e dois e cinquenta.|Can I pay by card?|Posso pagar com cartão?
+S: Kai|Would you like a bag?|Quer uma sacola?|No, thanks. Can I have a receipt?|Não, obrigado. Posso ter o recibo?
+R: Can I pay by card?|Posso pagar com cartão?
+R: Enter your four digits.|Digite os quatro dígitos.
+R: Can I have a receipt?|Posso ter o recibo?
+R: I have my own bag.|Tenho a minha sacola.
+X: That will be thirty-two fifty.|Fica trinta e dois e cinquenta.
+C: Nos EUA, quase todo lugar aceita cartão, e muita gente prefere pagar por aproximação com o celular.
+
+T: Is it on sale? | Entender promoções e descontos | market | Los Angeles | Moe,m,🧑🏻,vendedor
+K: Everything is thirty percent off. | Tudo está com trinta por cento de desconto.
+M: Hoje você entende descontos e calcula o preço final.
+D: Moe|Welcome! Everything is thirty percent off today.|Bem-vindo! Tudo está com trinta por cento de desconto hoje.
+D: You|Really? How much is this jacket?|Sério? Quanto custa esta jaqueta?
+D: Moe|It was a hundred dollars. Now it is seventy.|Custava cem dólares. Agora custa setenta.
+D: You|And these shoes?|E estes sapatos?
+D: Moe|Sixty dollars, but the red ones are buy one, get one free.|Sessenta dólares, mas os vermelhos são leve um, ganhe outro.
+D: You|That is a great deal. I will take two pairs.|Que ótimo negócio. Vou levar dois pares.
+D: Moe|The sale ends on Sunday.|A promoção termina no domingo.
+D: You|Thanks. I will come back with my sister.|Obrigado. Volto com minha irmã.
+V: percent|por cento;sale|promoção;deal|negócio;free|grátis;ends|termina
+B: Everything is {0} percent off.|Tudo está com {0} por cento de desconto.|thirty=trinta;twenty=vinte;fifty=cinquenta
+B: The sale ends on {0}.|A promoção termina {0}.|Sunday=no domingo;Friday=na sexta;Monday=na segunda
+S: Moe|Everything is thirty percent off.|Tudo está com trinta por cento de desconto.|How much is this jacket?|Quanto custa esta jaqueta?
+S: Moe|It is buy one, get one free.|É leve um, ganhe outro.|That is a great deal.|Que ótimo negócio.
+R: Everything is thirty percent off.|Tudo está com trinta por cento de desconto.
+R: It was a hundred. Now it is seventy.|Custava cem. Agora custa setenta.
+R: Buy one, get one free.|Leve um, ganhe outro.
+R: The sale ends on Sunday.|A promoção termina no domingo.
+X: What a great deal!|Que ótimo negócio!
+C: A "Black Friday", logo depois do Dia de Ação de Graças, é o dia de maiores promoções nas lojas americanas.
+
+T: A gift for my mother | Escolher um presente | shop | Seattle | Ana,f,👩🏼,vendedora
+K: I am looking for a gift for my mother. | Estou procurando um presente para minha mãe.
+M: Hoje você descreve a pessoa e escolhe um presente.
+D: You|Hi. I am looking for a gift for my mother.|Oi. Estou procurando um presente para minha mãe.
+D: Ana|Sure. What does she like?|Claro. Do que ela gosta?
+D: You|She loves gardening and tea.|Ela adora jardinagem e chá.
+D: Ana|How about a tea set or a small plant?|Que tal um jogo de chá ou uma plantinha?
+D: You|A tea set is perfect. How much is it?|Um jogo de chá é perfeito. Quanto custa?
+D: Ana|Thirty-five dollars. We can wrap it for free.|Trinta e cinco dólares. Podemos embrulhar de graça.
+D: You|Great. Could you add a card?|Ótimo. Poderiam colocar um cartão?
+D: Ana|Of course. What should it say?|Claro. O que deve dizer?
+V: gift|presente;gardening|jardinagem;set|jogo;wrap|embrulhar;card|cartão
+B: I am looking for a gift for {0}.|Estou procurando um presente para {0}.|my mother=minha mãe;my friend=meu amigo;my boss=minha chefe
+B: She loves {0}.|Ela adora {0}.|gardening=jardinagem;tea=chá;books=livros
+S: Ana|What does she like?|Do que ela gosta?|She loves gardening and tea.|Ela adora jardinagem e chá.
+S: Ana|We can wrap it for free.|Podemos embrulhar de graça.|Great. Could you add a card?|Ótimo. Poderiam colocar um cartão?
+R: I am looking for a gift.|Estou procurando um presente.
+R: She loves gardening and tea.|Ela adora jardinagem e chá.
+R: A tea set is perfect.|Um jogo de chá é perfeito.
+R: Could you add a card?|Poderia colocar um cartão?
+X: What should it say?|O que deve dizer?
+C: Nos EUA, lojas costumam embrulhar presentes de graça ou por um pequeno valor.
+
+T: New running shoes | Comprar sapatos | shop | Denver | Max,m,🧑🏼,vendedor
+K: I need shoes for running. | Preciso de sapatos para corrida.
+M: Hoje você explica o que precisa e experimenta o calçado.
+D: Max|Can I help you find something?|Posso ajudar a achar algo?
+D: You|Yes. I need shoes for running.|Sim. Preciso de sapatos para corrida.
+D: Max|How often do you run?|Com que frequência você corre?
+D: You|Three times a week, about five kilometers.|Três vezes por semana, uns cinco quilômetros.
+D: Max|Try these. They are light and comfortable.|Experimente estes. São leves e confortáveis.
+D: You|They feel great, but a little tight in the toes.|São ótimos, mas um pouco apertados nos dedos.
+D: Max|Let me bring half a size bigger.|Vou trazer meio número maior.
+D: You|Perfect. How much are they?|Perfeito. Quanto custam?
+V: running|corrida;toes|dedos do pé;comfortable|confortável;light|leve;bigger|maior
+B: I need shoes for {0}.|Preciso de sapatos para {0}.|running=corrida;work=trabalho;hiking=trilha
+B: They are a little tight in the {0}.|São um pouco apertados {0}.|toes=nos dedos;heel=no calcanhar;sides=nas laterais
+S: Max|Can I help you?|Posso ajudar?|Yes. I need shoes for running.|Sim. Preciso de sapatos para corrida.
+S: Max|How do they feel?|Como estão?|They feel great, but a little tight.|Estão ótimos, mas um pouco apertados.
+R: I need shoes for running.|Preciso de sapatos para corrida.
+R: They are light and comfortable.|São leves e confortáveis.
+R: They are a little tight.|São um pouco apertados.
+R: Half a size bigger, please.|Meio número maior, por favor.
+X: They feel great.|Estão ótimos.
+C: Lojas de corrida nos EUA costumam ter esteira para o cliente testar o calçado correndo.
+
+T: Changing money | Trocar dinheiro e falar de câmbio | hall | Miami | Dan,m,🧑🏽,atendente
+K: What is the exchange rate today? | Qual é a taxa de câmbio hoje?
+M: Hoje você troca dinheiro e confere o troco.
+D: You|Hello. What is the exchange rate today?|Olá. Qual é a taxa de câmbio hoje?
+D: Dan|One dollar is five reais and ten cents.|Um dólar são cinco reais e dez centavos.
+D: You|I would like to change two hundred dollars.|Gostaria de trocar duzentos dólares.
+D: Dan|There is a small fee of five dollars.|Há uma pequena taxa de cinco dólares.
+D: You|That is fine. Can I have small bills?|Tudo bem. Posso receber notas pequenas?
+D: Dan|Sure. Count it here, please.|Claro. Conte aqui, por favor.
+D: You|Everything is correct. Thank you.|Está tudo certo. Obrigado.
+D: Dan|Have a nice trip!|Boa viagem!
+V: exchange|câmbio;rate|taxa;fee|taxa;bills|notas;count|contar
+B: I would like to change {0}.|Gostaria de trocar {0}.|two hundred dollars=duzentos dólares;fifty euros=cinquenta euros;some money=algum dinheiro
+B: Can I have {0}?|Posso receber {0}?|small bills=notas pequenas;a receipt=um recibo;coins=moedas
+S: Dan|How can I help you?|Como posso ajudar?|What is the exchange rate today?|Qual é a taxa de câmbio hoje?
+S: Dan|There is a small fee.|Há uma pequena taxa.|That is fine. Can I have small bills?|Tudo bem. Posso receber notas pequenas?
+R: What is the exchange rate today?|Qual é a taxa de câmbio hoje?
+R: I would like to change two hundred dollars.|Gostaria de trocar duzentos dólares.
+R: There is a small fee.|Há uma pequena taxa.
+R: Count it here, please.|Conte aqui, por favor.
+X: Have a nice trip!|Boa viagem!
+C: Casas de câmbio de aeroporto costumam ter taxas maiores; muita gente prefere sacar dinheiro direto no caixa eletrônico.
+
+T: A new laptop | Comparar eletrônicos | shop | Austin | Tom,m,🧑🏽,vendedor
+K: I am looking for a laptop for school. | Estou procurando um notebook para a escola.
+M: Hoje você compara modelos e pergunta sobre garantia.
+D: Tom|What do you need the laptop for?|Para que você precisa do notebook?
+D: You|I am looking for a laptop for school and light games.|Estou procurando um notebook para a escola e jogos leves.
+D: Tom|This one has more memory and a better screen.|Este tem mais memória e uma tela melhor.
+D: You|How long does the battery last?|Quanto tempo dura a bateria?
+D: Tom|About ten hours. It also comes with a two-year warranty.|Cerca de dez horas. Também vem com garantia de dois anos.
+D: You|Is it heavier than the other one?|É mais pesado que o outro?
+D: Tom|A little, but it is much faster.|Um pouco, mas é bem mais rápido.
+D: You|I will think about it and come back tomorrow.|Vou pensar e volto amanhã.
+V: laptop|notebook;memory|memória;battery|bateria;warranty|garantia;last|durar
+B: I am looking for a {0}.|Estou procurando {0}.|laptop=um notebook;phone=um celular;camera=uma câmera
+B: It comes with a {0}.|Vem com {0}.|two-year warranty=garantia de dois anos;charger=carregador;case=capa
+S: Tom|What do you need it for?|Para que você precisa?|I am looking for a laptop for school.|Estou procurando um notebook para a escola.
+S: Tom|It comes with a two-year warranty.|Vem com garantia de dois anos.|How long does the battery last?|Quanto dura a bateria?
+R: I am looking for a laptop.|Estou procurando um notebook.
+R: It has more memory.|Tem mais memória.
+R: It comes with a two-year warranty.|Vem com garantia de dois anos.
+R: I will think about it.|Vou pensar.
+X: I will think about it.|Vou pensar.
+C: Nos EUA, lojas de eletrônicos oferecem garantia estendida, mas é opcional e custa a mais.
+
+T: What is on my list? | Fazer uma lista de compras com quantidades | market | Phoenix | Gus,m,🧑🏼,atendente
+K: I need a dozen eggs and two pounds of rice. | Preciso de uma dúzia de ovos e um quilo de arroz.
+M: Hoje você pede quantidades no mercado.
+D: Gus|Can I help you with your list?|Posso ajudar com a sua lista?
+D: You|Yes. I need a dozen eggs and two pounds of rice.|Sim. Preciso de uma dúzia de ovos e um quilo de arroz.
+D: Gus|Eggs are in aisle three. Anything else?|Os ovos estão no corredor três. Mais alguma coisa?
+D: You|A loaf of bread and a carton of milk.|Um pão e uma caixa de leite.
+D: Gus|Would you like whole milk or skim milk?|Quer leite integral ou desnatado?
+D: You|Skim, please. And a bunch of bananas.|Desnatado, por favor. E um cacho de bananas.
+D: Gus|Fruit is at the entrance, on your right.|As frutas ficam na entrada, à sua direita.
+D: You|Thank you. That is everything.|Obrigado. É tudo.
+V: dozen|dúzia;pound|libra;loaf|pão (unidade);carton|caixa;bunch|cacho
+B: I need a dozen {0}.|Preciso de uma dúzia de {0}.|eggs=ovos;roses=rosas;apples=maçãs
+B: I need a carton of {0}.|Preciso de uma caixa de {0}.|milk=leite;juice=suco;eggs=ovos
+S: Gus|Can I help you with your list?|Posso ajudar com sua lista?|I need a dozen eggs and two pounds of rice.|Preciso de uma dúzia de ovos e um quilo de arroz.
+S: Gus|Whole or skim milk?|Leite integral ou desnatado?|Skim, please.|Desnatado, por favor.
+R: I need a dozen eggs.|Preciso de uma dúzia de ovos.
+R: Two pounds of rice.|Duas libras de arroz.
+R: A loaf of bread and a carton of milk.|Um pão e uma caixa de leite.
+R: A bunch of bananas.|Um cacho de bananas.
+X: That is everything.|É tudo.
+C: Nos EUA, muitas vezes o peso é em libras (pounds) e o leite é vendido em galões ou caixas grandes.
+
+T: My order did not arrive | Reclamar de uma encomenda | shop | Chicago | Sam,m,🧑🏻,atendente
+K: My order has not arrived yet. | Meu pedido ainda não chegou.
+M: Hoje você reclama de uma entrega e pede solução.
+D: You|Hello. My order has not arrived yet.|Olá. Meu pedido ainda não chegou.
+D: Sam|I am sorry. What is the order number?|Sinto muito. Qual é o número do pedido?
+D: You|It is four-two-seven-nine. I ordered it ten days ago.|É quatro-dois-sete-nove. Pedi há dez dias.
+D: Sam|Let me check. It says it was delivered yesterday.|Deixe-me ver. Diz que foi entregue ontem.
+D: You|That is strange. Nobody was home, and there is no package.|Que estranho. Não havia ninguém em casa e não tem pacote.
+D: Sam|I will send a new one today, free of charge.|Vou enviar um novo hoje, sem custo.
+D: You|Thank you. When will it arrive?|Obrigado. Quando vai chegar?
+D: Sam|In two or three days. I will email you the tracking.|Em dois ou três dias. Vou enviar o rastreamento por e-mail.
+V: order|pedido;arrived|chegou;delivered|entregue;ago|atrás;free of charge|sem custo
+B: My order has not {0} yet.|Meu pedido ainda não {0}.|arrived=chegou;shipped=foi enviado;been charged=foi cobrado
+B: I ordered it {0}.|Pedi {0}.|ten days ago=há dez dias;last week=semana passada;on Monday=na segunda
+S: Sam|What is the order number?|Qual é o número do pedido?|It is four-two-seven-nine. I ordered it ten days ago.|É 4279. Pedi há dez dias.
+S: Sam|I will send a new one.|Vou enviar um novo.|Thank you. When will it arrive?|Obrigado. Quando chega?
+R: My order has not arrived yet.|Meu pedido ainda não chegou.
+R: I ordered it ten days ago.|Pedi há dez dias.
+R: There is no package.|Não tem pacote.
+R: I will send a new one today.|Vou enviar um novo hoje.
+X: Free of charge.|Sem custo.
+C: Nas lojas online americanas, é comum o atendimento reenviar o pedido sem custo quando a entrega falha.
+
+T: A day of shopping | Desafio do arco: um dia de compras | market | New York | Mia,f,👩🏻,amiga
+K: Today I bought everything I needed. | Hoje comprei tudo de que precisava.
+M: Desafio: conte o que comprou, quanto gastou e o que foi mais difícil.
+D: Mia|You have so many bags! What did you buy?|Você tem tantas sacolas! O que comprou?
+D: You|I bought a jacket, two shirts and some shoes.|Comprei uma jaqueta, duas camisas e sapatos.
+D: Mia|How much did you spend?|Quanto você gastou?
+D: You|About two hundred dollars. Everything was on sale.|Cerca de duzentos dólares. Estava tudo em promoção.
+D: Mia|Did you find a gift for your mother?|Você achou presente para sua mãe?
+D: You|Yes, a tea set. They wrapped it for free.|Sim, um jogo de chá. Embrulharam de graça.
+D: Mia|Was anything difficult?|Algo foi difícil?
+D: You|The size. I had to try three different ones.|O tamanho. Tive que experimentar três diferentes.
+V: bags|sacolas;spent|gastou;shirts|camisas;wrapped|embrulharam;different|diferentes
+B: I bought a {0}.|Comprei {0}.|jacket=uma jaqueta;tea set=um jogo de chá;pair of shoes=um par de sapatos
+B: I spent about {0}.|Gastei cerca de {0}.|two hundred dollars=duzentos dólares;fifty dollars=cinquenta dólares;a hundred dollars=cem dólares
+S: Mia|What did you buy?|O que comprou?|I bought a jacket, two shirts and some shoes.|Comprei uma jaqueta, duas camisas e sapatos.
+S: Mia|How much did you spend?|Quanto gastou?|About two hundred dollars.|Cerca de duzentos dólares.
+R: I bought a jacket and two shirts.|Comprei uma jaqueta e duas camisas.
+R: I spent about two hundred dollars.|Gastei cerca de duzentos dólares.
+R: Everything was on sale.|Estava tudo em promoção.
+R: They wrapped it for free.|Embrulharam de graça.
+X: You have so many bags!|Você tem tantas sacolas!
+C: Nos EUA, shopping centers ("malls") reúnem lojas, restaurantes e cinema, e são programa comum de fim de semana.
