@@ -1,0 +1,241 @@
+# Arco 52 · Pet shop e veterinário
+T: At the pet shop | Na loja de animais | shop | Boston | Lia,f,👩🏽,vendedora
+K: I want a pet. | Quero um bichinho de estimação.
+M: Hoje você escolhe um bicho de estimação.
+D: Lia|Welcome to the pet shop. How can I help?|Bem-vindo à loja de animais. Como posso ajudar?
+D: You|I want a pet. What do you have?|Quero um bichinho. O que vocês têm?
+D: Lia|We have dogs, cats, fish and birds.|Temos cachorros, gatos, peixes e pássaros.
+D: You|I live in a small apartment.|Moro num apartamento pequeno.
+D: Lia|Then a cat or a fish is perfect.|Então um gato ou um peixe é perfeito.
+D: You|Cats are soft and quiet. I like cats.|Gatos são macios e silenciosos. Gosto de gatos.
+D: Lia|This gray kitten is very calm.|Este gatinho cinza é muito calmo.
+D: You|He is so cute! I take him.|Ele é tão fofo! Levo ele.
+V: pet|bichinho;kitten|gatinho;calm|calmo;cute|fofo;apartment|apartamento
+B: I want a {0}.|Quero um(a) {0}.|cat=gato;fish=peixe;bird=pássaro
+B: He is so {0}!|Ele é tão {0}!|cute=fofo;calm=calmo;small=pequeno
+S: Lia|Welcome to the pet shop. How can I help?|Bem-vindo à loja de animais. Como posso ajudar?|I want a pet. What do you have?|Quero um bichinho. O que vocês têm?
+S: Lia|This gray kitten is very calm.|Este gatinho cinza é muito calmo.|He is so cute! I take him.|Ele é tão fofo! Levo ele.
+R: I want a pet.|Quero um bichinho.
+R: I live in a small apartment.|Moro num apartamento pequeno.
+R: Cats are soft and quiet.|Gatos são macios e silenciosos.
+R: He is so cute!|Ele é tão fofo!
+X: I take him.|Levo ele.
+C: Adotar um animal de abrigo também é muito comum nos EUA.
+N: Próximo: a comida do bicho.
+
+T: Pet food | Comida de bicho | shop | Boston | Lia,f,👩🏽,vendedora
+K: What does he eat? | O que ele come?
+M: Hoje você compra comida para o bichinho.
+D: You|What does a kitten eat?|O que um gatinho come?
+D: Lia|Special kitten food, wet or dry.|Comida especial para gatinhos, úmida ou seca.
+D: You|Which one is better?|Qual é melhor?
+D: Lia|Both are fine. Wet food has more water.|Os dois servem. A úmida tem mais água.
+D: You|How many times a day does he eat?|Quantas vezes por dia ele come?
+D: Lia|Three times a day.|Três vezes por dia.
+D: You|And does he need a bowl?|E ele precisa de uma tigela?
+D: Lia|Yes, two bowls: food and water.|Precisa, duas tigelas: comida e água.
+V: kitten|gatinho;wet|úmida;dry|seca;bowl|tigela;times|vezes
+B: Wet food or {0} food?|Comida úmida ou {0}?|dry=seca;fresh=fresca;canned=em lata
+B: He eats {0} times a day.|Ele come {0} vezes por dia.|three=três;two=duas;four=quatro
+S: You|What does a kitten eat?|O que um gatinho come?|Special kitten food, wet or dry.|Comida especial para gatinhos, úmida ou seca.
+S: You|How many times a day does he eat?|Quantas vezes por dia ele come?|Three times a day.|Três vezes por dia.
+R: What does a kitten eat?|O que um gatinho come?
+R: Wet food or dry food?|Comida úmida ou seca?
+R: He eats three times a day.|Ele come três vezes por dia.
+R: He needs two bowls.|Ele precisa de duas tigelas.
+X: Both are fine.|Os dois servem.
+C: Gatinhos precisam de comida específica para filhotes.
+N: Próximo: o brinquedo.
+
+T: Pet toys | Brinquedos de bicho | shop | Denver | Lia,f,👩🏽,vendedora
+K: He likes this toy. | Ele gosta deste brinquedo.
+M: Hoje você escolhe brinquedos.
+D: You|My kitten needs a toy.|Meu gatinho precisa de um brinquedo.
+D: Lia|Cats love balls and string.|Gatos adoram bolas e barbante.
+D: You|How much is this ball?|Quanto custa esta bola?
+D: Lia|Two dollars. It has a bell inside.|Dois dólares. Tem um sininho dentro.
+D: You|He loves the sound.|Ele adora o som.
+D: Lia|We have a scratching post too.|Temos um arranhador também.
+D: You|Yes, my sofa is not safe!|Sim, meu sofá não está seguro!
+D: Lia|Ha ha! That is true.|Ha ha! É verdade.
+V: toy|brinquedo;ball|bola;string|barbante;bell|sininho;scratching post|arranhador
+B: Cats love {0}.|Gatos adoram {0}.|balls=bolas;string=barbante;boxes=caixas
+B: It has a {0} inside.|Tem um(a) {0} dentro.|bell=sininho;toy=brinquedo;ball=bola
+S: You|My kitten needs a toy.|Meu gatinho precisa de um brinquedo.|Cats love balls and string.|Gatos adoram bolas e barbante.
+S: You|Yes, my sofa is not safe!|Sim, meu sofá não está seguro!|Ha ha! That is true.|Ha ha! É verdade.
+R: My kitten needs a toy.|Meu gatinho precisa de um brinquedo.
+R: Cats love balls and string.|Gatos adoram bolas e barbante.
+R: How much is this ball?|Quanto custa esta bola?
+R: We have a scratching post.|Temos um arranhador.
+X: Ha ha!|Ha ha!
+C: Arranhadores protegem sofás e cortinas.
+N: Próximo: o veterinário.
+
+T: At the vet | No veterinário | clinic | Seattle | Dr. Lee,m,🧑🏻,veterinário
+K: My cat is sick. | Meu gato está doente.
+M: Hoje você leva o gato ao veterinário.
+D: Dr. Lee|Hello. What is wrong with your cat?|Olá. O que há com o seu gato?
+D: You|He does not eat. He is tired.|Ele não come. Está cansado.
+D: Dr. Lee|Let me check him. Put him on the table.|Deixe-me examiná-lo. Ponha-o na mesa.
+D: You|Is it serious?|É grave?
+D: Dr. Lee|No. He has a small cold.|Não. Ele tem um resfriadinho.
+D: You|What medicine does he need?|De que remédio ele precisa?
+D: Dr. Lee|Give him one pill a day.|Dê um comprimido por dia.
+D: You|Thank you, doctor.|Obrigado, doutor.
+V: vet|veterinário;serious|grave;pill|comprimido;tired|cansado;cold|resfriado
+B: My cat is {0}.|Meu gato está {0}.|sick=doente;tired=cansado;hungry=com fome
+B: Give him one {0} a day.|Dê a ele um(a) {0} por dia.|pill=comprimido;spoon=colher;drop=gota
+S: Dr. Lee|Hello. What is wrong with your cat?|Olá. O que há com o seu gato?|He does not eat. He is tired.|Ele não come. Está cansado.
+S: You|Is it serious?|É grave?|No. He has a small cold.|Não. Ele tem um resfriadinho.
+R: What is wrong with your cat?|O que há com o seu gato?
+R: He does not eat.|Ele não come.
+R: Is it serious?|É grave?
+R: Give him one pill a day.|Dê a ele um comprimido por dia.
+X: Thank you, doctor.|Obrigado, doutor.
+C: Gatos escondem a dor, então qualquer mudança é sinal de alerta.
+N: Próximo: a vacina.
+
+T: A vaccine | A vacina | clinic | Seattle | Dr. Lee,m,🧑🏻,veterinário
+K: He needs a vaccine. | Ele precisa de uma vacina.
+M: Hoje você vacina o bichinho.
+D: Dr. Lee|Your dog needs a vaccine.|Seu cachorro precisa de uma vacina.
+D: You|Is it painful?|Dói?
+D: Dr. Lee|Only a little. It takes one second.|Só um pouco. Leva um segundo.
+D: You|How often does he need it?|Com que frequência ele precisa?
+D: Dr. Lee|Once a year.|Uma vez por ano.
+D: You|Good. He is brave.|Bom. Ele é corajoso.
+D: Dr. Lee|Here is a card with the date.|Aqui está um cartão com a data.
+D: You|Thank you. I keep it safe.|Obrigado. Guardo com cuidado.
+V: vaccine|vacina;painful|dolorida;second|segundo;often|frequência;card|cartão
+B: He needs a {0}.|Ele precisa de uma {0}.|vaccine=vacina;check-up=consulta;bath=banho
+B: Once a {0}.|Uma vez por {0}.|year=ano;month=mês;week=semana
+S: Dr. Lee|Your dog needs a vaccine.|Seu cachorro precisa de uma vacina.|Is it painful?|Dói?
+S: You|How often does he need it?|Com que frequência ele precisa?|Once a year.|Uma vez por ano.
+R: He needs a vaccine.|Ele precisa de uma vacina.
+R: It takes one second.|Leva um segundo.
+R: Once a year.|Uma vez por ano.
+R: I keep the card safe.|Guardo o cartão com cuidado.
+X: He is brave.|Ele é corajoso.
+C: Cães e gatos precisam de vacina anual contra doenças.
+N: Próximo: passear com o cachorro.
+
+T: Walk the dog | Passear com o cachorro | park | Portland | Ben,m,🧑🏽,vizinho
+K: I walk my dog every day. | Passeio com meu cachorro todo dia.
+M: Hoje você passeia com o cachorro.
+D: Ben|Is that your dog? He is beautiful!|Aquele é o seu cachorro? Ele é lindo!
+D: You|Thank you. His name is Rex.|Obrigado. O nome dele é Rex.
+D: Ben|What kind of dog is he?|Que raça ele é?
+D: You|He is a golden retriever.|Ele é um golden retriever.
+D: Ben|How old is he?|Quantos anos ele tem?
+D: You|He is three years old.|Ele tem três anos.
+D: Ben|I walk my dog every day too.|Eu também passeio com meu cachorro todo dia.
+D: You|We can walk together.|Podemos passear juntos.
+V: dog|cachorro;beautiful|lindo;golden retriever|golden retriever;walk|passear;together|juntos
+B: His name is {0}.|O nome dele é {0}.|Rex=Rex;Max=Max;Bob=Bob
+B: I walk my dog every {0}.|Passeio com meu cachorro toda {0}.|day=dia;morning=manhã;evening=tarde
+S: Ben|Is that your dog? He is beautiful!|Aquele é o seu cachorro? Ele é lindo!|Thank you. His name is Rex.|Obrigado. O nome dele é Rex.
+S: Ben|How old is he?|Quantos anos ele tem?|He is three years old.|Ele tem três anos.
+R: Is that your dog?|Aquele é o seu cachorro?
+R: His name is Rex.|O nome dele é Rex.
+R: He is three years old.|Ele tem três anos.
+R: We can walk together.|Podemos passear juntos.
+X: He is beautiful.|Ele é lindo.
+C: Passear com o cachorro é um jeito comum de conhecer vizinhos.
+N: Próximo: o parque de cães.
+
+T: The dog park | Parque de cães | park | Austin | Rosa,f,👩🏽,tutora
+K: Can he play with the others? | Ele pode brincar com os outros?
+M: Hoje você leva o cachorro ao parque.
+D: You|Is this the dog park?|Este é o parque de cães?
+D: Rosa|Yes. Dogs can run here without a leash.|Sim. Cachorros podem correr aqui sem coleira.
+D: You|Can my dog play with the others?|Meu cachorro pode brincar com os outros?
+D: Rosa|Yes, if he is friendly.|Pode, se ele for amigável.
+D: You|He is very friendly.|Ele é muito amigável.
+D: Rosa|Then take off his leash.|Então tire a coleira dele.
+D: You|Look, he runs so fast!|Olhe, ele corre tão rápido!
+D: Rosa|Pick up after him, please.|Recolha as sujeiras dele, por favor.
+V: leash|coleira;friendly|amigável;run|correr;others|outros;pick up|recolher
+B: Dogs can run without a {0}.|Cachorros podem correr sem {0}.|leash=coleira;ball=bola;fence=cerca
+B: Take off his {0}.|Tire a {0} dele.|leash=coleira;hat=chapéu;coat=capa
+S: You|Is this the dog park?|Este é o parque de cães?|Yes. Dogs can run here without a leash.|Sim. Cachorros podem correr aqui sem coleira.
+S: Rosa|Then take off his leash.|Então tire a coleira dele.|Look, he runs so fast!|Olhe, ele corre tão rápido!
+R: Is this the dog park?|Este é o parque de cães?
+R: Dogs can run without a leash.|Cachorros podem correr sem coleira.
+R: My dog is very friendly.|Meu cachorro é muito amigável.
+R: Pick up after him, please.|Recolha as sujeiras dele, por favor.
+X: Look!|Olhe!
+C: Parques de cães são cercados e têm regras de convivência.
+N: Próximo: o passarinho.
+
+T: A pet bird | Um passarinho | living | Miami | Mia,f,👩🏻,amiga
+K: My bird sings. | Meu pássaro canta.
+M: Hoje você conhece um passarinho.
+D: Mia|This is my bird. His name is Kiwi.|Este é o meu pássaro. O nome dele é Kiwi.
+D: You|He is green and yellow. He is lovely!|Ele é verde e amarelo. É lindo!
+D: Mia|He sings every morning.|Ele canta toda manhã.
+D: You|Can he talk?|Ele fala?
+D: Mia|Yes, he says "hello" and "good morning".|Sim, ele diz "hello" e "good morning".
+D: You|What does he eat?|O que ele come?
+D: Mia|Seeds and fruit.|Sementes e frutas.
+D: You|Birds are great pets.|Pássaros são ótimos bichinhos.
+V: bird|pássaro;seeds|sementes;fruit|fruta;sings|canta;green|verde
+B: He sings every {0}.|Ele canta toda {0}.|morning=manhã;day=dia;afternoon=tarde
+B: He eats {0}.|Ele come {0}.|seeds=sementes;fruit=frutas;bread=pão
+S: Mia|This is my bird. His name is Kiwi.|Este é o meu pássaro. O nome dele é Kiwi.|He is green and yellow. He is lovely!|Ele é verde e amarelo. É lindo!
+S: You|What does he eat?|O que ele come?|Seeds and fruit.|Sementes e frutas.
+R: This is my bird.|Este é o meu pássaro.
+R: He is green and yellow.|Ele é verde e amarelo.
+R: He sings every morning.|Ele canta toda manhã.
+R: He eats seeds and fruit.|Ele come sementes e frutas.
+X: He is lovely.|Ele é lindo.
+C: Papagaios e periquitos podem aprender a repetir palavras.
+N: Próximo: o aquário.
+
+T: A fish tank | O aquário em casa | living | Seattle | Tom,m,🧑🏽,amigo
+K: I have a fish tank. | Tenho um aquário.
+M: Hoje você cuida de um aquário.
+D: Tom|Look at my fish tank. I have six fish.|Olhe o meu aquário. Tenho seis peixes.
+D: You|They are colorful. What are their names?|São coloridos. Quais são os nomes deles?
+D: Tom|Orange, Blue and Bubbles.|Orange, Blue e Bubbles.
+D: You|How often do you feed them?|Com que frequência você os alimenta?
+D: Tom|Twice a day, a little food.|Duas vezes por dia, pouca comida.
+D: You|Do you clean the water?|Você limpa a água?
+D: Tom|Yes, every Sunday.|Limpo, todo domingo.
+D: You|Fish are easy and calm pets.|Peixes são bichinhos fáceis e calmos.
+V: tank|aquário;feed|alimentar;twice|duas vezes;clean|limpar;Sunday|domingo
+B: I have {0} fish.|Tenho {0} peixes.|six=seis;ten=dez;two=dois
+B: I feed them {0} a day.|Eu os alimento {0} por dia.|twice=duas vezes;once=uma vez;three times=três vezes
+S: Tom|Look at my fish tank. I have six fish.|Olhe o meu aquário. Tenho seis peixes.|They are colorful. What are their names?|São coloridos. Quais são os nomes deles?
+S: You|How often do you feed them?|Com que frequência você os alimenta?|Twice a day, a little food.|Duas vezes por dia, pouca comida.
+R: I have a fish tank.|Tenho um aquário.
+R: I have six fish.|Tenho seis peixes.
+R: I feed them twice a day.|Eu os alimento duas vezes por dia.
+R: I clean the water every Sunday.|Limpo a água todo domingo.
+X: They are colorful.|São coloridos.
+C: Peixes precisam de água limpa e pouca comida para viver bem.
+N: Próximo: desafio, meu bichinho.
+
+T: My pet | Desafio do arco: seu bichinho | living | Boston | Jess,f,🧑🏼,amiga
+K: I love my pet. | Amo meu bichinho.
+M: Hoje você apresenta o seu bichinho.
+D: Jess|Tell me about your pet.|Fale do seu bichinho.
+D: You|I have a cat. His name is Mimi.|Tenho um gato. O nome dele é Mimi.
+D: Jess|How old is he?|Quantos anos ele tem?
+D: You|He is two years old.|Ele tem dois anos.
+D: Jess|What does he eat?|O que ele come?
+D: You|Cat food, three times a day.|Ração, três vezes por dia.
+D: Jess|Is he friendly?|Ele é amigável?
+D: You|Very. He sleeps on my bed.|Muito. Ele dorme na minha cama.
+V: cat|gato;friendly|amigável;food|comida;bed|cama;sleeps|dorme
+B: I have a {0}.|Tenho um(a) {0}.|cat=gato;dog=cachorro;bird=pássaro
+B: He sleeps on my {0}.|Ele dorme na minha {0}.|bed=cama;sofa=sofá;chair=cadeira
+S: Jess|Tell me about your pet.|Fale do seu bichinho.|I have a cat. His name is Mimi.|Tenho um gato. O nome dele é Mimi.
+S: Jess|Is he friendly?|Ele é amigável?|Very. He sleeps on my bed.|Muito. Ele dorme na minha cama.
+R: I have a cat.|Tenho um gato.
+R: His name is Mimi.|O nome dele é Mimi.
+R: He is two years old.|Ele tem dois anos.
+R: I love my pet.|Amo meu bichinho.
+X: Tell me about your pet.|Fale do seu bichinho.
+C: Falar do bichinho é um ótimo assunto para fazer amizade.
+N: Próximo: inventores e descobertas.
+BOSS: 1
