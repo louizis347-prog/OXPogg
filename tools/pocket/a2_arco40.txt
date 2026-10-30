@@ -1,0 +1,207 @@
+# Arco 40 · Desafios finais do A2
+T: Finding an apartment | Desafio: procurar e alugar um apartamento | hall | Seattle | Gina,f,👩🏻,corretora
+K: I am looking for a two-bedroom apartment. | Estou procurando um apartamento de dois quartos.
+M: Desafio: descreva o que procura, compare opções e decida.
+D: Gina|Good morning. What kind of apartment are you looking for?|Bom dia. Que tipo de apartamento você procura?
+D: You|I am looking for a two-bedroom apartment near the subway, under fifteen hundred dollars.|Procuro um apartamento de dois quartos perto do metrô, abaixo de mil e quinhentos dólares.
+D: Gina|I have two options. The first is bigger, but it is farther from the station.|Tenho duas opções. A primeira é maior, mas fica mais longe da estação.
+D: You|And the second one?|E a segunda?
+D: Gina|It is smaller and cheaper, and it has a balcony. It is five minutes from the subway.|É menor e mais barata, e tem sacada. Fica a cinco minutos do metrô.
+D: You|Could I see both this week? If the second one is quiet, I will take it.|Posso ver as duas esta semana? Se a segunda for quieta, vou ficar com ela.
+D: Gina|Of course. How about Thursday at four?|Claro. Que tal quinta às quatro?
+D: You|Perfect. Please send me the details by email.|Perfeito. Envie os detalhes por e-mail, por favor.
+V: two-bedroom|de dois quartos;balcony|sacada;options|opções;farther|mais longe;quiet|quieto
+B: I am looking for a {0} apartment.|Procuro um apartamento {0}.|two-bedroom=de dois quartos;small=pequeno;bright=claro
+B: If it is quiet, I will {0}.|Se for quieto, eu {0}.|take it=fico com ele;sign today=assino hoje;visit again=volto a visitar
+S: Gina|What kind of apartment are you looking for?|Que tipo de apartamento procura?|I am looking for a two-bedroom apartment near the subway.|Procuro um de dois quartos perto do metrô.
+S: Gina|How about Thursday at four?|Que tal quinta às quatro?|Perfect. Please send me the details by email.|Perfeito. Envie os detalhes por e-mail.
+R: I am looking for a two-bedroom apartment.|Procuro um apartamento de dois quartos.
+R: The second one is smaller and cheaper.|O segundo é menor e mais barato.
+R: If it is quiet, I will take it.|Se for quieto, fico com ele.
+R: Please send me the details.|Envie os detalhes, por favor.
+X: Both options.|As duas opções.
+C: Procurar apartamento nos EUA envolve visitar vários, comparar contratos e checar vizinhança, transporte e barulho.
+
+T: A complete job interview | Desafio: fazer uma entrevista de emprego completa | office | Boston | Ms. Ray,f,👩🏿,entrevistadora
+K: I would be a great addition to your team. | Eu seria uma ótima adição à sua equipe.
+M: Desafio: apresente-se, fale de experiência, pontos fortes e perguntas.
+D: Ms. Ray|Thank you for coming. Please tell me about yourself and your experience.|Obrigada por vir. Por favor, fale de você e sua experiência.
+D: You|I worked as an assistant for three years, and I have managed a small team since last year.|Trabalhei como assistente por três anos e lidero uma pequena equipe desde o ano passado.
+D: Ms. Ray|What is your biggest strength?|Qual é seu maior ponto forte?
+D: You|I am organized and I learn fast. For example, I learned a new system in one week.|Sou organizado e aprendo rápido. Por exemplo, aprendi um sistema novo em uma semana.
+D: Ms. Ray|And what do you want to improve?|E o que você quer melhorar?
+D: You|I am working on speaking up more in meetings.|Estou trabalhando para falar mais nas reuniões.
+D: Ms. Ray|Do you have any questions for us?|Você tem perguntas para nós?
+D: You|Yes. What will my first month look like? I think I would be a great addition to your team.|Sim. Como será meu primeiro mês? Acho que seria uma ótima adição à sua equipe.
+V: strength|ponto forte;organized|organizado;system|sistema;addition|adição;improve|melhorar
+B: My biggest strength is that I {0}.|Meu maior ponto forte é que eu {0}.|learn fast=aprendo rápido;am organized=sou organizado;listen well=ouço bem
+B: I have managed a small team {0}.|Lidero uma pequena equipe {0}.|since last year=desde o ano passado;for two years=há dois anos;for a month=há um mês
+S: Ms. Ray|Tell me about yourself.|Fale de você.|I worked as an assistant for three years.|Trabalhei como assistente por três anos.
+S: Ms. Ray|Do you have any questions?|Você tem perguntas?|Yes. What will my first month look like?|Sim. Como será meu primeiro mês?
+R: I worked as an assistant for three years.|Trabalhei como assistente por três anos.
+R: I am organized and I learn fast.|Sou organizado e aprendo rápido.
+R: I am working on speaking up more.|Estou trabalhando para falar mais.
+R: What will my first month look like?|Como será meu primeiro mês?
+X: Do you have any questions?|Você tem perguntas?
+C: Em entrevistas nos EUA, é esperado dar exemplos concretos e terminar fazendo uma ou duas perguntas ao entrevistador.
+
+T: A doctor's visit, start to finish | Desafio: consulta médica completa | clinic | Chicago | Dr. Lee,f,🧑🏻‍⚕️,médica
+K: I have not been feeling well for three days. | Não me sinto bem há três dias.
+M: Desafio: marque, descreva sintomas, entenda o tratamento e pergunte.
+D: Dr. Lee|Good morning. What brings you in today?|Bom dia. O que traz você hoje?
+D: You|I have not been feeling well for three days. I have a sore throat, a cough and a fever.|Não me sinto bem há três dias. Tenho dor de garganta, tosse e febre.
+D: Dr. Lee|Have you taken any medicine?|Você tomou algum remédio?
+D: You|Only paracetamol, twice a day. It helps a little, but the fever comes back.|Só paracetamol, duas vezes por dia. Ajuda um pouco, mas a febre volta.
+D: Dr. Lee|It looks like a throat infection. I will prescribe an antibiotic for seven days.|Parece infecção na garganta. Vou receitar um antibiótico por sete dias.
+D: You|Should I take it with food? And can I go to work?|Devo tomar com comida? E posso ir trabalhar?
+D: Dr. Lee|Yes, with food. Rest for two days, and if you do not improve, come back.|Sim, com comida. Descanse dois dias e, se não melhorar, volte.
+D: You|Thank you, doctor. I will pick up the medicine at the pharmacy today.|Obrigado, doutora. Pego o remédio na farmácia hoje.
+V: infection|infecção;prescribe|receitar;antibiotic|antibiótico;paracetamol|paracetamol;pharmacy|farmácia
+B: I have not been feeling well for {0}.|Não me sinto bem há {0}.|three days=três dias;a week=uma semana;two hours=duas horas
+B: Take it with {0}.|Tome com {0}.|food=comida;water=água;milk=leite
+S: Dr. Lee|What brings you in today?|O que traz você hoje?|I have not been feeling well for three days.|Não me sinto bem há três dias.
+S: Dr. Lee|Rest for two days.|Descanse dois dias.|Thank you. I will pick up the medicine today.|Obrigado. Pego o remédio hoje.
+R: I have not been feeling well for three days.|Não me sinto bem há três dias.
+R: I have a sore throat and a fever.|Tenho dor de garganta e febre.
+R: Should I take it with food?|Devo tomar com comida?
+R: If you do not improve, come back.|Se não melhorar, volte.
+X: Rest for two days.|Descanse dois dias.
+C: Nos EUA, antibióticos só são vendidos com receita médica, e o farmacêutico explica a dose ao entregar.
+
+T: Planning a trip, step by step | Desafio: planejar uma viagem completa | living | Denver | Max,m,🧑🏼,amigo
+K: Let us plan our trip step by step. | Vamos planejar nossa viagem passo a passo.
+M: Desafio: combine destino, transporte, hospedagem e orçamento.
+D: Max|Where do you want to go on our vacation?|Aonde você quer ir nas nossas férias?
+D: You|Let us go to the coast. If we book early, the flights will be cheaper.|Vamos para o litoral. Se reservarmos cedo, os voos serão mais baratos.
+D: Max|Good idea. How many days will we stay?|Boa ideia. Quantos dias vamos ficar?
+D: You|Five days. I have already looked at a small hotel with breakfast included.|Cinco dias. Já olhei um hotelzinho com café da manhã incluído.
+D: Max|How much will it cost in total?|Quanto vai custar no total?
+D: You|About nine hundred dollars each, with flights, hotel and food.|Cerca de novecentos dólares cada, com voos, hotel e comida.
+D: Max|That is fine. I will book the flights tonight if you book the hotel.|Está bom. Reservo os voos hoje à noite se você reservar o hotel.
+D: You|Deal. I will send you the details so we can compare.|Combinado. Envio os detalhes para compararmos.
+V: coast|litoral;book|reservar;total|total;compare|comparar;vacation|férias
+B: Let us go to the {0}.|Vamos para o {0}.|coast=litoral;mountains=as montanhas;city=a cidade
+B: If we book early, the flights will be {0}.|Se reservarmos cedo, os voos serão {0}.|cheaper=mais baratos;better=melhores;easier=mais fáceis
+S: Max|Where do you want to go?|Aonde quer ir?|Let us go to the coast. If we book early, the flights will be cheaper.|Vamos ao litoral. Se reservarmos cedo, os voos serão mais baratos.
+S: Max|How much will it cost?|Quanto vai custar?|About nine hundred dollars each.|Cerca de novecentos dólares cada.
+R: Let us plan our trip step by step.|Vamos planejar a viagem passo a passo.
+R: We will stay five days.|Vamos ficar cinco dias.
+R: The total is about nine hundred dollars.|O total é cerca de novecentos dólares.
+R: I will book the flights tonight.|Reservo os voos hoje à noite.
+X: Deal.|Combinado.
+C: Planejar viagens com amigos nos EUA muitas vezes envolve planilhas online para dividir custos de hotel, comida e transporte.
+
+T: Hosting a party | Desafio: organizar e anfitriar uma festa | living | Austin | Mia,f,👩🏻,anfitriã
+K: Welcome, everyone! Make yourselves at home. | Bem-vindos! Fiquem à vontade.
+M: Desafio: planeje, receba e converse com convidados.
+D: Mia|Welcome, everyone! Make yourselves at home. Can I get you something to drink?|Bem-vindos! Fiquem à vontade. Posso servir algo para beber?
+D: You|Yes, please. Water is fine. Thank you for inviting us. Your home is lovely.|Sim, por favor. Água está ótimo. Obrigado por nos convidar. Sua casa é linda.
+D: Mia|Thank you. I spent the whole day cooking and cleaning.|Obrigada. Passei o dia todo cozinhando e limpando.
+D: You|It smells delicious. Can I help you with anything?|O cheiro está delicioso. Posso ajudar em algo?
+D: Mia|Could you take these plates to the table? Dinner will be ready in ten minutes.|Poderia levar estes pratos para a mesa? O jantar fica pronto em dez minutos.
+D: You|Of course. Let me introduce myself to the other guests while I do it.|Claro. Deixe-me me apresentar aos outros convidados enquanto faço isso.
+D: Mia|Great idea. After dinner, we will play some games.|Ótima ideia. Depois do jantar, vamos jogar alguns jogos.
+D: You|I love that. I have never had such a nice evening.|Adoro isso. Nunca tive uma noite tão agradável.
+V: host|anfitrião;guests|convidados;lovely|lindo;plates|pratos;introduce|apresentar
+B: Make yourselves at {0}.|Fiquem {0}.|home=à vontade;comfortable=confortáveis;ready=prontos
+B: Dinner will be ready in {0}.|O jantar ficará pronto em {0}.|ten minutes=dez minutos;an hour=uma hora;a few minutes=alguns minutos
+S: Mia|Welcome, everyone! Make yourselves at home.|Bem-vindos! Fiquem à vontade.|Thank you for inviting us. Your home is lovely.|Obrigado por nos convidar. Sua casa é linda.
+S: Mia|Dinner will be ready in ten minutes.|O jantar fica pronto em dez minutos.|Can I help you with anything?|Posso ajudar em algo?
+R: Welcome, everyone!|Bem-vindos!
+R: Thank you for inviting us.|Obrigado por nos convidar.
+R: Can I help you with anything?|Posso ajudar em algo?
+R: I have never had such a nice evening.|Nunca tive uma noite tão agradável.
+X: Make yourselves at home.|Fiquem à vontade.
+C: Ser um bom anfitrião ou convidado nos EUA envolve acolher, oferecer bebidas, apresentar pessoas e agradecer ao final.
+
+T: A complaint that works | Desafio: reclamar e resolver | hall | Atlanta | Dan,m,🧑🏽,gerente
+K: I would like to explain the problem calmly. | Gostaria de explicar o problema com calma.
+M: Desafio: descreva o problema, peça solução e feche o assunto.
+D: You|Good afternoon. I would like to explain a problem calmly. I bought this phone last week.|Boa tarde. Gostaria de explicar um problema com calma. Comprei este celular semana passada.
+D: Dan|I am sorry to hear that. What is wrong with it?|Sinto muito. O que há de errado com ele?
+D: You|The screen has stopped responding, and I have already restarted it twice.|A tela parou de responder e já reiniciei duas vezes.
+D: Dan|Have you dropped it or gotten it wet?|Você deixou cair ou molhou?
+D: You|No, never. I have used a case since the first day, and I have the receipt here.|Não, nunca. Uso capa desde o primeiro dia e tenho o recibo aqui.
+D: Dan|Understood. I can offer you a new phone, or a full refund if you prefer.|Entendi. Posso oferecer um celular novo ou reembolso total, se preferir.
+D: You|A new phone is fine. Could you test it before I leave the store?|Um celular novo está bom. Poderia testar antes de eu sair da loja?
+D: Dan|Of course. Thank you for your patience.|Claro. Obrigado pela sua paciência.
+V: calmly|com calma;responding|respondendo;dropped|derrubou;refund|reembolso;patience|paciência
+B: The screen has stopped {0}.|A tela parou de {0}.|responding=responder;working=funcionar;turning on=ligar
+B: I can offer you a new phone, or a {0}.|Posso oferecer um celular novo ou {0}.|full refund=reembolso total;repair=conserto;credit=crédito
+S: Dan|What is wrong with it?|O que há de errado com ele?|The screen has stopped responding.|A tela parou de responder.
+S: Dan|I can offer a new phone or a refund.|Posso oferecer outro celular ou reembolso.|A new phone is fine. Could you test it?|Um novo serve. Poderia testar?
+R: I bought this phone last week.|Comprei este celular semana passada.
+R: The screen has stopped responding.|A tela parou de responder.
+R: I have the receipt here.|Tenho o recibo aqui.
+R: Thank you for your patience.|Obrigado pela sua paciência.
+X: I would like to explain calmly.|Gostaria de explicar com calma.
+C: Reclamar com calma, com recibo na mão e propondo uma solução costuma resolver rápido nas lojas americanas.
+
+T: A speech at the party | Desafio: fazer um pequeno discurso | living | Chicago | Sam,m,🧑🏻,amigo
+K: I would like to say a few words. | Gostaria de dizer algumas palavras.
+M: Desafio: agradeça, conte uma memória e faça um brinde.
+D: Sam|Everyone, please listen. Ana would like to say a few words.|Pessoal, atenção. A Ana gostaria de dizer algumas palavras.
+D: You|Thank you all for coming. I would like to say a few words about my friend Sam.|Obrigada a todos por virem. Gostaria de dizer algumas palavras sobre meu amigo Sam.
+D: You|I met Sam five years ago, on my first day in this city. I was lost, and he helped me find the subway.|Conheci o Sam há cinco anos, no meu primeiro dia nesta cidade. Eu estava perdida e ele me ajudou a achar o metrô.
+D: You|Since then, he has become one of my best friends. He has always been there when I needed him.|Desde então, ele se tornou um dos meus melhores amigos. Sempre esteve ao meu lado quando precisei.
+D: Sam|You are making me emotional!|Você está me deixando emocionado!
+D: You|So, let us raise our glasses. To Sam, and to friendship!|Então, vamos erguer os copos. Ao Sam, e à amizade!
+D: Sam|Thank you, Ana. That was beautiful.|Obrigado, Ana. Foi lindo.
+D: You|Cheers, everyone!|Saúde, pessoal!
+V: speech|discurso;raise|erguer;glasses|copos;friendship|amizade;emotional|emocionado
+B: I would like to say a few {0}.|Gostaria de dizer algumas {0}.|words=palavras;things=coisas;thanks=agradecimentos
+B: To {0}, and to friendship!|A {0}, e à amizade!|Sam=Sam;the bride=a noiva;our team=nossa equipe
+S: Sam|Ana would like to say a few words.|A Ana gostaria de dizer algumas palavras.|Thank you all for coming.|Obrigada a todos por virem.
+S: Sam|You are making me emotional!|Você está me emocionando!|Let us raise our glasses. Cheers, everyone!|Vamos erguer os copos. Saúde, pessoal!
+R: I would like to say a few words.|Gostaria de dizer algumas palavras.
+R: I met Sam five years ago.|Conheci o Sam há cinco anos.
+R: He has always been there for me.|Ele sempre esteve ao meu lado.
+R: Cheers, everyone!|Saúde, pessoal!
+X: Cheers!|Saúde!
+C: Em festas americanas, brindar com "Cheers!" e olhar nos olhos de quem brinda são costumes comuns.
+
+T: Moving abroad, the full story | Desafio: contar uma mudança completa | cafe | Boston | Kai,m,🧑🏻,amigo
+K: Let me tell you the whole story of how I moved here. | Deixe-me contar a história toda de como me mudei para cá.
+M: Desafio: use passado, presente e futuro para contar sua mudança.
+D: Kai|How did you end up in Boston? Tell me the whole story.|Como você veio parar em Boston? Conte a história toda.
+D: You|Three years ago, I was working in a small office, and I wanted a change. I found a scholarship online and applied.|Há três anos eu trabalhava num escritório pequeno e queria uma mudança. Achei uma bolsa online e me candidatei.
+D: Kai|Was it easy?|Foi fácil?
+D: You|Not at all. I studied English every night for a year, and I took the exam twice.|Nem um pouco. Estudei inglês toda noite por um ano e fiz a prova duas vezes.
+D: Kai|And how is life here now?|E como é a vida aqui agora?
+D: You|I have made good friends, I have a job, and I speak English every day. I feel at home.|Fiz bons amigos, tenho emprego e falo inglês todo dia. Me sinto em casa.
+D: Kai|What are you going to do next?|O que vai fazer a seguir?
+D: You|Next year I am going to start a master's degree. If I keep working hard, I will reach my dreams.|Ano que vem vou começar um mestrado. Se continuar me esforçando, alcançarei meus sonhos.
+V: scholarship|bolsa;applied|me candidatei;exam|prova;master's degree|mestrado;dreams|sonhos
+B: Three years ago, I {0}.|Há três anos, eu {0}.|was working in a small office=trabalhava num escritório pequeno;lived in another city=morava em outra cidade;started studying English=comecei a estudar inglês
+B: Next year I am going to {0}.|Ano que vem vou {0}.|start a master's degree=começar um mestrado;travel more=viajar mais;buy a house=comprar uma casa
+S: Kai|How did you end up in Boston?|Como veio parar em Boston?|Three years ago, I wanted a change. I found a scholarship and applied.|Há três anos queria uma mudança. Achei uma bolsa e me candidatei.
+S: Kai|What are you going to do next?|O que vai fazer a seguir?|Next year I am going to start a master's degree.|Ano que vem vou começar um mestrado.
+R: Let me tell you the whole story.|Deixe-me contar a história toda.
+R: I studied English every night.|Estudei inglês toda noite.
+R: I have made good friends here.|Fiz bons amigos aqui.
+R: Next year I am going to start a master's degree.|Ano que vem vou começar um mestrado.
+X: I feel at home.|Me sinto em casa.
+C: Muitos imigrantes contam suas trajetórias em eventos e podcasts, e essas histórias inspiram quem está pensando em se mudar.
+
+T: Welcome to the next level today | Desafio final: apresentar-se e contar seu progresso | plaza | New York | Sam,m,🧑🏻,amigo
+K: I am ready for the next level. | Estou pronto para o próximo nível.
+M: Desafio final do A2: fale de você, do que aprendeu e do que vem a seguir.
+D: Sam|Congratulations on finishing level A2! How do you feel?|Parabéns por terminar o nível A2! Como se sente?
+D: You|Proud and a little tired. I have learned a lot, and I am ready for the next level.|Orgulhoso e um pouco cansado. Aprendi muito e estou pronto para o próximo nível.
+D: Sam|What was the best thing you learned?|Qual foi a melhor coisa que aprendeu?
+D: You|I can now tell stories, make plans, give opinions and solve problems in English.|Agora consigo contar histórias, fazer planos, dar opiniões e resolver problemas em inglês.
+D: Sam|And what was the hardest part?|E qual foi a parte mais difícil?
+D: You|Listening to fast speech. But if I keep practicing every day, it will get easier.|Entender fala rápida. Mas se eu continuar praticando todo dia, ficará mais fácil.
+D: Sam|What are your goals for the next level?|Quais são suas metas para o próximo nível?
+D: You|I am going to read more, watch movies without subtitles and speak with more confidence.|Vou ler mais, assistir filmes sem legendas e falar com mais confiança.
+V: congratulations|parabéns;proud|orgulhoso;opinions|opiniões;solve|resolver;confidence|confiança
+B: I am ready for the {0}.|Estou pronto para {0}.|next level=o próximo nível;challenge=o desafio;exam=a prova
+B: I can now tell stories, make plans and {0}.|Agora consigo contar histórias, fazer planos e {0}.|give opinions=dar opiniões;solve problems=resolver problemas;describe people=descrever pessoas
+S: Sam|Congratulations on finishing level A2! How do you feel?|Parabéns por terminar o A2! Como se sente?|Proud and a little tired. I am ready for the next level.|Orgulhoso e cansado. Estou pronto para o próximo nível.
+S: Sam|What are your goals?|Quais são suas metas?|I am going to read more and speak with more confidence.|Vou ler mais e falar com mais confiança.
+R: Congratulations on finishing level A2!|Parabéns por terminar o A2!
+R: I have learned a lot.|Aprendi muito.
+R: I can tell stories and make plans.|Consigo contar histórias e fazer planos.
+R: I am ready for the next level.|Estou pronto para o próximo nível.
+X: I am ready for the next level.|Estou pronto para o próximo nível.
+C: Concluir um nível de idioma é uma conquista importante, e celebrar o progresso mantém a motivação para continuar.
