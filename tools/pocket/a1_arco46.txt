@@ -1,0 +1,241 @@
+# Arco 46 · Táxi e carona por aplicativo
+T: Call a taxi | Chamar um táxi | street | New York | Walt,m,🧑🏿,taxista
+K: Where to? | Para onde?
+M: Hoje você pega um táxi.
+D: Walt|Good evening. Where to?|Boa noite. Para onde?
+D: You|To the train station, please.|Para a estação de trem, por favor.
+D: Walt|Sure. Put your bag in the trunk.|Claro. Ponha a bolsa no porta-malas.
+D: You|Thank you. How long is the ride?|Obrigado. Quanto tempo leva a corrida?
+D: Walt|About twenty minutes.|Cerca de vinte minutos.
+D: You|How much is it?|Quanto custa?
+D: Walt|Around twenty dollars.|Cerca de vinte dólares.
+D: You|Okay. I am in a hurry.|Certo. Estou com pressa.
+V: taxi|táxi;trunk|porta-malas;ride|corrida;hurry|pressa;station|estação
+B: To the {0}, please.|Para {0}, por favor.|station=a estação;airport=o aeroporto;hotel=o hotel
+B: How much is {0}?|Quanto custa {0}?|the ride=a corrida;it=isso;the trip=a viagem
+S: Walt|Good evening. Where to?|Boa noite. Para onde?|To the train station, please.|Para a estação de trem, por favor.
+S: You|How much is it?|Quanto custa?|Around twenty dollars.|Cerca de vinte dólares.
+R: Where to?|Para onde?
+R: To the train station, please.|Para a estação de trem, por favor.
+R: How long is the ride?|Quanto tempo leva a corrida?
+R: I am in a hurry.|Estou com pressa.
+X: Where to?|Para onde?
+C: Táxis amarelos são símbolo de Nova York.
+N: Próximo: o aplicativo.
+
+T: Book a ride | Pedir uma corrida | street | Seattle | Mia,f,👩🏻,passageira
+K: My ride is here. | Meu carro chegou.
+M: Hoje você pede carona por aplicativo.
+D: Mia|Do you want a ride?|Você quer uma carona?
+D: You|Yes. I use an app on my phone.|Sim. Uso um aplicativo no celular.
+D: Mia|How does it work?|Como funciona?
+D: You|I type the address. A car comes.|Digito o endereço. Um carro vem.
+D: Mia|Do you see the car?|Você vê o carro?
+D: You|Yes, a white car, number 4521.|Vejo, um carro branco, número 4521.
+D: Mia|How much is it?|Quanto custa?
+D: You|The app shows the price.|O aplicativo mostra o preço.
+V: app|aplicativo;address|endereço;price|preço;white|branco;number|número
+B: I use an {0}.|Eu uso um {0}.|app=aplicativo;phone=celular;map=mapa
+B: A {0} car comes.|Um carro {0} vem.|white=branco;black=preto;blue=azul
+S: Mia|How does it work?|Como funciona?|I type the address. A car comes.|Digito o endereço. Um carro vem.
+S: Mia|Do you see the car?|Você vê o carro?|Yes, a white car, number 4521.|Vejo, um carro branco, número 4521.
+R: I use an app on my phone.|Uso um aplicativo no celular.
+R: I type the address.|Digito o endereço.
+R: A white car comes.|Um carro branco vem.
+R: The app shows the price.|O aplicativo mostra o preço.
+X: My ride is here.|Meu carro chegou.
+C: Aplicativos de carona mostram o preço antes da corrida.
+N: Próximo: o motorista.
+
+T: The driver | Conversar com o motorista | street | Chicago | Ben,m,🧑🏽,motorista
+K: Please close the door. | Feche a porta, por favor.
+M: Hoje você conversa com o motorista.
+D: Ben|Hello! Are you Leo?|Olá! Você é o Leo?
+D: You|Yes, that is me.|Sim, sou eu.
+D: Ben|Please close the door. Put on your seat belt.|Feche a porta, por favor. Ponha o cinto.
+D: You|Okay. Is the address right?|Certo. O endereço está certo?
+D: Ben|Yes, 25 Oak Street.|Sim, Oak Street, 25.
+D: You|Can you turn on the air conditioning?|Pode ligar o ar-condicionado?
+D: Ben|Sure. Is it cold enough?|Claro. Está frio o bastante?
+D: You|Yes, perfect. Thank you.|Sim, perfeito. Obrigado.
+V: door|porta;seat belt|cinto;air conditioning|ar-condicionado;enough|bastante;right|certo
+B: Please close the {0}.|Feche {0}, por favor.|door=a porta;window=a janela;trunk=o porta-malas
+B: Can you turn on the {0}?|Pode ligar {0}?|air conditioning=o ar-condicionado;music=a música;radio=o rádio
+S: Ben|Hello! Are you Leo?|Olá! Você é o Leo?|Yes, that is me.|Sim, sou eu.
+S: Ben|Please close the door. Put on your seat belt.|Feche a porta, por favor. Ponha o cinto.|Okay. Is the address right?|Certo. O endereço está certo?
+R: Are you Leo?|Você é o Leo?
+R: Put on your seat belt.|Ponha o cinto.
+R: Is the address right?|O endereço está certo?
+R: Can you turn on the air conditioning?|Pode ligar o ar-condicionado?
+X: That is me.|Sou eu.
+C: Em muitos países, usar cinto no banco de trás também é obrigatório.
+N: Próximo: o trânsito.
+
+T: Traffic jam | Trânsito parado | street | Los Angeles | Sam,m,🧑🏻,motorista
+K: There is a lot of traffic. | Tem muito trânsito.
+M: Hoje você enfrenta um engarrafamento.
+D: You|There is a lot of traffic today.|Tem muito trânsito hoje.
+D: Sam|Yes. Cars are stopped on the road.|Sim. Os carros estão parados na pista.
+D: You|How long is the delay?|Quanto tempo de atraso?
+D: Sam|About fifteen minutes.|Cerca de quinze minutos.
+D: You|Is there another road?|Tem outro caminho?
+D: Sam|Yes, but it is longer.|Tem, mas é mais longo.
+D: You|Let us wait here, please.|Vamos esperar aqui, por favor.
+D: Sam|Okay. Do you want some music?|Certo. Quer música?
+V: traffic|trânsito;road|pista;delay|atraso;longer|mais longo;wait|esperar
+B: There is a lot of {0}.|Tem muito {0}.|traffic=trânsito;noise=barulho;rain=chuva
+B: The road is {0}.|O caminho é {0}.|longer=mais longo;shorter=mais curto;closed=fechado
+S: You|There is a lot of traffic today.|Tem muito trânsito hoje.|Yes. Cars are stopped on the road.|Sim. Os carros estão parados na pista.
+S: You|Is there another road?|Tem outro caminho?|Yes, but it is longer.|Tem, mas é mais longo.
+R: There is a lot of traffic.|Tem muito trânsito.
+R: Cars are stopped on the road.|Os carros estão parados na pista.
+R: How long is the delay?|Quanto tempo de atraso?
+R: Let us wait here.|Vamos esperar aqui.
+X: Do you want some music?|Quer música?
+C: Los Angeles é famosa pelo trânsito pesado.
+N: Próximo: pagar a corrida.
+
+T: Pay the driver | Pagar o motorista | street | Boston | Walt,m,🧑🏿,taxista
+K: Keep the change. | Pode ficar com o troco.
+M: Hoje você paga a corrida.
+D: Walt|We are here. That is eighteen dollars.|Chegamos. São dezoito dólares.
+D: You|Here is a twenty.|Aqui está uma de vinte.
+D: Walt|Do you want a receipt?|Você quer o recibo?
+D: You|Yes, please.|Quero, por favor.
+D: Walt|Here you go. Your change is two.|Aqui está. Seu troco é dois.
+D: You|Keep the change.|Pode ficar com o troco.
+D: Walt|Thank you very much.|Muito obrigado.
+D: You|Have a nice evening.|Tenha uma boa noite.
+V: receipt|recibo;change|troco;eighteen|dezoito;twenty|vinte;keep|ficar
+B: That is {0} dollars.|São {0} dólares.|eighteen=dezoito;twelve=doze;thirty=trinta
+B: Do you want a {0}?|Você quer {0}?|receipt=recibo;bag=sacola;ticket=bilhete
+S: Walt|We are here. That is eighteen dollars.|Chegamos. São dezoito dólares.|Here is a twenty.|Aqui está uma de vinte.
+S: Walt|Here you go. Your change is two.|Aqui está. Seu troco é dois.|Keep the change.|Pode ficar com o troco.
+R: That is eighteen dollars.|São dezoito dólares.
+R: Do you want a receipt?|Você quer o recibo?
+R: Keep the change.|Pode ficar com o troco.
+R: Have a nice evening.|Tenha uma boa noite.
+X: Keep the change.|Pode ficar com o troco.
+C: Nos EUA, a gorjeta ao taxista costuma ser de 15 a 20%.
+N: Próximo: esquecer algo no carro.
+
+T: Left in the car | Objeto esquecido | street | Seattle | Mia,f,👩🏻,passageira
+K: My bag is in the car. | Minha bolsa está no carro.
+M: Hoje você procura algo que ficou no carro.
+D: You|Hello. My bag is in the car.|Olá. Minha bolsa está no carro.
+D: Mia|Which car?|Qual carro?
+D: You|A white car, number 4521.|Um carro branco, número 4521.
+D: Mia|What does the bag look like?|Como é a bolsa?
+D: You|It is small and brown.|É pequena e marrom.
+D: Mia|Let me call the driver.|Deixe-me ligar para o motorista.
+D: You|Thank you. It has my keys.|Obrigado. Tem as minhas chaves.
+D: Mia|He is coming back now.|Ele está voltando agora.
+V: bag|bolsa;brown|marrom;driver|motorista;keys|chaves;coming back|voltando
+B: My {0} is in the car.|Minha(Meu) {0} está no carro.|bag=bolsa;phone=celular;wallet=carteira
+B: It is small and {0}.|É pequeno(a) e {0}.|brown=marrom;black=preto;red=vermelho
+S: Mia|Which car?|Qual carro?|A white car, number 4521.|Um carro branco, número 4521.
+S: Mia|What does the bag look like?|Como é a bolsa?|It is small and brown.|É pequena e marrom.
+R: My bag is in the car.|Minha bolsa está no carro.
+R: It is small and brown.|É pequena e marrom.
+R: It has my keys.|Tem as minhas chaves.
+R: He is coming back now.|Ele está voltando agora.
+X: Thank you.|Obrigado.
+C: Aplicativos de carona têm um botão para contatar o motorista.
+N: Próximo: o ônibus de longa distância.
+
+T: Long distance bus | Ônibus de viagem | station | Denver | Tom,m,🧑🏽,motorista
+K: One ticket to Chicago. | Uma passagem para Chicago.
+M: Hoje você compra passagem de ônibus de viagem.
+D: You|One ticket to Chicago, please.|Uma passagem para Chicago, por favor.
+D: Tom|One way or round trip?|Só ida ou ida e volta?
+D: You|Round trip, please.|Ida e volta, por favor.
+D: Tom|That is eighty dollars.|São oitenta dólares.
+D: You|When does the bus leave?|Quando o ônibus sai?
+D: Tom|At nine thirty, from gate six.|Às nove e meia, do portão seis.
+D: You|How long is the trip?|Quanto dura a viagem?
+D: Tom|About twelve hours.|Cerca de doze horas.
+V: ticket|passagem;one way|só ida;round trip|ida e volta;gate|portão;hours|horas
+B: One ticket to {0}.|Uma passagem para {0}.|Chicago=Chicago;Boston=Boston;Denver=Denver
+B: {0} or round trip?|{0} ou ida e volta?|One way=Só ida;Single=Simples;Direct=Direto
+S: You|One ticket to Chicago, please.|Uma passagem para Chicago, por favor.|One way or round trip?|Só ida ou ida e volta?
+S: You|When does the bus leave?|Quando o ônibus sai?|At nine thirty, from gate six.|Às nove e meia, do portão seis.
+R: One ticket to Chicago, please.|Uma passagem para Chicago, por favor.
+R: Round trip, please.|Ida e volta, por favor.
+R: When does the bus leave?|Quando o ônibus sai?
+R: The trip is twelve hours.|A viagem dura doze horas.
+X: Round trip.|Ida e volta.
+C: Nos EUA, ônibus de longa distância como o Greyhound cruzam o país.
+N: Próximo: o trem.
+
+T: The train ride | Viagem de trem | station | Boston | Walt,m,🧑🏿,condutor
+K: The train leaves at noon. | O trem sai ao meio-dia.
+M: Hoje você viaja de trem.
+D: Walt|Tickets, please.|Passagens, por favor.
+D: You|Here you are.|Aqui estão.
+D: Walt|Thank you. You are in seat twelve.|Obrigado. Você está no assento doze.
+D: You|Where is it?|Onde fica?
+D: Walt|Third car, by the window.|Terceiro vagão, perto da janela.
+D: You|When do we arrive in New York?|Quando chegamos a Nova York?
+D: Walt|At four o'clock.|Às quatro horas.
+D: You|Is there a dining car?|Tem vagão-restaurante?
+V: tickets|passagens;seat|assento;car|vagão;window|janela;dining car|vagão-restaurante
+B: You are in seat {0}.|Você está no assento {0}.|twelve=doze;five=cinco;twenty=vinte
+B: The train leaves at {0}.|O trem sai às {0}.|noon=meio-dia;four=quatro;nine=nove
+S: Walt|Tickets, please.|Passagens, por favor.|Here you are.|Aqui estão.
+S: Walt|Third car, by the window.|Terceiro vagão, perto da janela.|When do we arrive in New York?|Quando chegamos a Nova York?
+R: Tickets, please.|Passagens, por favor.
+R: Here you are.|Aqui estão.
+R: You are in seat twelve.|Você está no assento doze.
+R: The train leaves at noon.|O trem sai ao meio-dia.
+X: Third car.|Terceiro vagão.
+C: A Amtrak é a rede nacional de trens de passageiros dos EUA.
+N: Próximo: o ciclista.
+
+T: Rent a bike | Alugar uma bicicleta | street | Amsterdam | Lia,f,👩🏽,atendente
+K: I want to rent a bike. | Quero alugar uma bicicleta.
+M: Hoje você aluga uma bicicleta.
+D: You|Hello. I want to rent a bike.|Olá. Quero alugar uma bicicleta.
+D: Lia|For how long?|Por quanto tempo?
+D: You|For three hours.|Por três horas.
+D: Lia|That is twelve euros. Here is a helmet.|São doze euros. Aqui está um capacete.
+D: You|Thank you. Is there a map?|Obrigado. Tem um mapa?
+D: Lia|Yes. The bike lane is on the right.|Tem. A ciclovia fica à direita.
+D: You|Where do I leave the bike?|Onde deixo a bicicleta?
+D: Lia|Here, at six o'clock.|Aqui, às seis horas.
+V: bike|bicicleta;rent|alugar;helmet|capacete;lane|ciclovia;euros|euros
+B: I want to rent a {0}.|Quero alugar uma(um) {0}.|bike=bicicleta;car=carro;scooter=patinete
+B: The bike lane is on the {0}.|A ciclovia fica à {0}.|right=direita;left=esquerda;corner=esquina
+S: Lia|For how long?|Por quanto tempo?|For three hours.|Por três horas.
+S: You|Where do I leave the bike?|Onde deixo a bicicleta?|Here, at six o'clock.|Aqui, às seis horas.
+R: I want to rent a bike.|Quero alugar uma bicicleta.
+R: For three hours.|Por três horas.
+R: Here is a helmet.|Aqui está um capacete.
+R: The bike lane is on the right.|A ciclovia fica à direita.
+X: Put on the helmet.|Ponha o capacete.
+C: Amsterdã tem mais bicicletas do que habitantes.
+N: Próximo: a estrada.
+
+T: A day trip | Desafio do arco: viagem de um dia | street | Boston | Ben,m,🧑🏽,amigo
+K: Let us take a day trip. | Vamos fazer uma viagem de um dia.
+M: Hoje você planeja uma viagem de um dia.
+D: Ben|Let us take a day trip on Saturday.|Vamos fazer uma viagem de um dia no sábado.
+D: You|Great idea. How do we go?|Ótima ideia. Como vamos?
+D: Ben|We take the train to the coast.|Pegamos o trem até a costa.
+D: You|How long is the ride?|Quanto dura a viagem?
+D: Ben|One hour and a half.|Uma hora e meia.
+D: You|Then we take a bus to the beach.|Depois pegamos um ônibus até a praia.
+D: Ben|Yes, and we come back at six.|Sim, e voltamos às seis.
+D: You|Perfect. I bring the snacks.|Perfeito. Eu levo os lanches.
+V: coast|costa;train|trem;beach|praia;snacks|lanches;Saturday|sábado
+B: We take the {0}.|Pegamos {0}.|train=o trem;bus=o ônibus;taxi=o táxi
+B: We come back at {0}.|Voltamos às {0}.|six=seis;five=cinco;seven=sete
+S: Ben|Let us take a day trip on Saturday.|Vamos fazer uma viagem de um dia no sábado.|Great idea. How do we go?|Ótima ideia. Como vamos?
+S: Ben|Yes, and we come back at six.|Sim, e voltamos às seis.|Perfect. I bring the snacks.|Perfeito. Eu levo os lanches.
+R: Let us take a day trip.|Vamos fazer uma viagem de um dia.
+R: We take the train to the coast.|Pegamos o trem até a costa.
+R: The ride is one hour and a half.|A viagem dura uma hora e meia.
+R: I bring the snacks.|Eu levo os lanches.
+X: Great idea.|Ótima ideia.
+C: "Day trip" é um passeio de ida e volta no mesmo dia.
+N: Próximo: o circo.
+BOSS: 1
