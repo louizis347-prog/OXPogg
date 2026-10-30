@@ -1,0 +1,230 @@
+# Arco 36 · Viagens de trabalho
+T: Booking a business trip | Reservar uma viagem de trabalho | office | Chicago | Assistant Ana,f,👩🏽,assistente
+K: I need to be in Denver by Monday morning. | Preciso estar em Denver até segunda de manhã.
+M: Hoje você organiza uma viagem de trabalho.
+D: You|Ana, I need to book a trip to Denver. I have to be there by Monday morning for a client meeting.|Ana, preciso reservar uma viagem a Denver. Tenho que estar lá até segunda de manhã para uma reunião com cliente.
+D: Assistant Ana|Of course. Would you prefer to fly on Sunday night or early Monday?|Claro. Prefere voar domingo à noite ou cedo na segunda?
+D: You|Sunday night. If the flight is delayed, I won't miss the meeting.|Domingo à noite. Se o voo atrasar, não perderei a reunião.
+D: Assistant Ana|Good thinking. How many nights will you stay?|Bem pensado. Quantas noites ficará?
+D: You|Two. I'll return on Tuesday afternoon, after lunch with the client.|Duas. Voltarei na terça à tarde, depois do almoço com o cliente.
+D: Assistant Ana|Do you want a hotel near the airport or downtown?|Quer um hotel perto do aeroporto ou no centro?
+D: You|Downtown, close to the client's office, so that I can walk.|No centro, perto do escritório do cliente, para eu poder ir a pé.
+D: Assistant Ana|I'll send you the itinerary by email within an hour.|Enviarei o roteiro por e-mail em uma hora.
+V: itinerary|roteiro;delayed|atrasado;client|cliente;return|voltar;downtown|centro
+B: I have to be there by {0} morning.|Tenho que estar lá até {0} de manhã.|Monday=segunda;Friday=sexta;Tuesday=terça
+B: I'll return on {0} afternoon.|Voltarei na {0} à tarde.|Tuesday=terça;Thursday=quinta;Sunday=domingo
+S: Assistant Ana|Would you prefer to fly on Sunday night or early Monday?|Prefere voar domingo à noite ou cedo na segunda?|Sunday night. If the flight is delayed, I won't miss the meeting.|Domingo à noite. Se o voo atrasar, não perderei a reunião.
+S: Assistant Ana|Do you want a hotel near the airport or downtown?|Quer hotel perto do aeroporto ou no centro?|Downtown, close to the client's office.|No centro, perto do escritório do cliente.
+R: I need to be in Denver by Monday morning.|Preciso estar em Denver até segunda de manhã.
+R: I'll fly on Sunday night.|Voarei no domingo à noite.
+R: I'll stay two nights.|Ficarei duas noites.
+R: Send me the itinerary by email.|Envie-me o roteiro por e-mail.
+X: Good thinking.|Bem pensado.
+C: Viagens de trabalho nos EUA costumam ser reservadas pela empresa, e o funcionário recebe o roteiro por e-mail.
+
+T: Expense reports | Relatório de despesas | office | Seattle | Accountant Kim,f,👩🏻,contadora
+K: Keep every receipt from the trip. | Guarde todos os recibos da viagem.
+M: Hoje você aprende a prestar contas das despesas.
+D: Accountant Kim|Welcome back. Don't forget to submit your expense report within two weeks.|Bem-vindo de volta. Não esqueça de enviar o relatório de despesas em duas semanas.
+D: You|I'll do it today. What do I need to include?|Farei hoje. O que preciso incluir?
+D: Accountant Kim|Receipts for the flight, hotel, meals and taxis. Keep every receipt from the trip, even small ones.|Recibos de voo, hotel, refeições e táxis. Guarde todos os recibos da viagem, mesmo os pequenos.
+D: You|I lost the receipt for one taxi. Is that a problem?|Perdi o recibo de um táxi. É problema?
+D: Accountant Kim|Not a big one. You can write a note explaining it, as long as the amount is small.|Não grande. Pode escrever uma nota explicando, desde que o valor seja pequeno.
+D: You|It was twenty dollars. Is the limit for meals the same as last year?|Foram vinte dólares. O limite para refeições é o mesmo do ano passado?
+D: Accountant Kim|It rose to sixty dollars a day. You'll be reimbursed within ten business days.|Subiu para sessenta dólares por dia. Você será reembolsado em dez dias úteis.
+D: You|Perfect. I'll upload everything this afternoon.|Perfeito. Enviarei tudo esta tarde.
+V: expense|despesa;receipt|recibo;submit|enviar;reimburse|reembolsar;limit|limite
+B: Submit your report within {0} weeks.|Envie o relatório em {0} semanas.|two=duas;three=três;one=uma
+B: The limit for meals rose to {0} dollars a day.|O limite para refeições subiu para {0} dólares por dia.|sixty=sessenta;fifty=cinquenta;seventy=setenta
+S: Accountant Kim|Don't forget to submit your expense report.|Não esqueça de enviar o relatório de despesas.|I'll do it today. What do I need to include?|Farei hoje. O que preciso incluir?
+S: Accountant Kim|You'll be reimbursed within ten business days.|Você será reembolsado em dez dias úteis.|Perfect. I'll upload everything this afternoon.|Perfeito. Enviarei tudo esta tarde.
+R: Submit your expense report within two weeks.|Envie o relatório de despesas em duas semanas.
+R: Keep every receipt from the trip.|Guarde todos os recibos da viagem.
+R: You'll be reimbursed within ten business days.|Você será reembolsado em dez dias úteis.
+R: I'll upload everything this afternoon.|Enviarei tudo esta tarde.
+X: Not a big one.|Não grande.
+C: Nos EUA, funcionários prestam contas das despesas de viagem com recibos e são reembolsados pela empresa.
+
+T: Networking at a conference | Networking em congresso | hall | San Francisco | Stranger Lee,m,👨🏻,participante
+K: What brings you to this conference? | O que traz você a este congresso?
+M: Hoje você faz contatos num congresso profissional.
+D: Stranger Lee|Hi, I'm Lee. What brings you to this conference?|Oi, sou o Lee. O que traz você a este congresso?
+D: You|I'm here to learn about new technologies and to meet people in my field. And you?|Estou aqui para aprender sobre novas tecnologias e conhecer pessoas da minha área. E você?
+D: Stranger Lee|I'm presenting a talk tomorrow about customer service. I'm a little nervous.|Vou apresentar uma palestra amanhã sobre atendimento ao cliente. Estou um pouco nervoso.
+D: You|I'm sure it will go well. Would you like to exchange business cards?|Tenho certeza de que vai dar certo. Quer trocar cartões?
+D: Stranger Lee|Of course. Here's mine. Let's connect online, too.|Claro. Aqui está o meu. Vamos nos conectar on-line também.
+D: You|Great. Maybe we could have coffee after your talk and share ideas.|Ótimo. Talvez possamos tomar um café depois da sua palestra e trocar ideias.
+D: Stranger Lee|I'd like that. Networking is easier when you meet people with similar interests.|Eu gostaria. Fazer contatos é mais fácil quando você conhece pessoas com interesses parecidos.
+D: You|Exactly. See you tomorrow, then!|Exatamente. Até amanhã, então!
+V: conference|congresso;business card|cartão de visita;connect|conectar;talk|palestra;similar|parecido
+B: I'm presenting a talk {0} about customer service.|Vou apresentar uma palestra {0} sobre atendimento ao cliente.|tomorrow=amanhã;today=hoje;next week=semana que vem
+B: Would you like to exchange business {0}?|Quer trocar {0} de visita?|cards=cartões;calls=ligações;gifts=presentes
+S: Stranger Lee|What brings you to this conference?|O que traz você a este congresso?|I'm here to learn about new technologies and meet people.|Estou aqui para aprender tecnologias novas e conhecer pessoas.
+S: Stranger Lee|Let's connect online, too.|Vamos nos conectar on-line também.|Great. Maybe we could have coffee after your talk.|Ótimo. Talvez um café depois da sua palestra.
+R: What brings you to this conference?|O que traz você a este congresso?
+R: Would you like to exchange business cards?|Quer trocar cartões de visita?
+R: Let's connect online, too.|Vamos nos conectar on-line também.
+R: Networking is easier with similar interests.|Fazer contatos é mais fácil com interesses parecidos.
+X: See you tomorrow.|Até amanhã.
+C: Congressos profissionais nos EUA são ótimos para networking, e trocar cartões ainda é comum.
+
+T: Jet lag | Fuso horário | hotel | New York | Colleague Tom,m,👨🏽,colega
+K: My body thinks it's the middle of the night. | Meu corpo acha que é meio da noite.
+M: Hoje você lida com o cansaço do fuso horário.
+D: Colleague Tom|You look exhausted. Didn't you sleep well?|Você parece exausto. Não dormiu bem?
+D: You|Not at all. I flew in from London yesterday, and my body thinks it's the middle of the night.|Nada. Voei de Londres ontem e meu corpo acha que é meio da noite.
+D: Colleague Tom|That's jet lag. It usually takes one day for each hour of time difference.|É fuso horário. Costuma levar um dia para cada hora de diferença.
+D: You|That means five days! How can I speed it up?|Isso significa cinco dias! Como posso acelerar?
+D: Colleague Tom|Get sunlight in the morning, avoid caffeine in the afternoon, and go to bed at local time.|Pegue sol de manhã, evite cafeína à tarde e vá dormir no horário local.
+D: You|Even if I'm not sleepy?|Mesmo sem sono?
+D: Colleague Tom|Yes. Your body will adjust faster if you follow the local schedule.|Sim. Seu corpo se ajustará mais rápido se você seguir o horário local.
+D: You|Okay, I'll try to stay awake until nine tonight.|Certo, tentarei ficar acordado até as nove desta noite.
+V: jet lag|fuso horário;exhausted|exausto;sunlight|luz do sol;caffeine|cafeína;adjust|ajustar-se
+B: I flew in from {0} yesterday.|Cheguei de {0} ontem.|London=Londres;Paris=Paris;Madrid=Madri
+B: Avoid caffeine in the {0}.|Evite cafeína à {0}.|afternoon=tarde;morning=manhã;evening=noite
+S: Colleague Tom|You look exhausted. Didn't you sleep well?|Você parece exausto. Não dormiu bem?|Not at all. I flew in from London yesterday.|Nada. Cheguei de Londres ontem.
+S: Colleague Tom|Your body will adjust if you follow the local schedule.|Seu corpo se ajusta se seguir o horário local.|I'll try to stay awake until nine tonight.|Tentarei ficar acordado até as nove.
+R: My body thinks it's the middle of the night.|Meu corpo acha que é meio da noite.
+R: Jet lag takes about one day for each hour of difference.|O fuso leva cerca de um dia por hora de diferença.
+R: Get sunlight in the morning.|Pegue sol de manhã.
+R: Follow the local schedule.|Siga o horário local.
+X: Not at all.|Nada.
+C: O fuso horário atrapalha viajantes que cruzam vários fusos; luz solar e horário local ajudam a se ajustar.
+
+T: Hotel for business | Hotel para negócios | hotel | Boston | Clerk Dee,f,👩🏾,recepcionista
+K: Is there a quiet room available? | Há um quarto silencioso disponível?
+M: Hoje você faz check-in num hotel corporativo.
+D: Clerk Dee|Welcome to the Harbor Business Hotel. May I have your name, please?|Bem-vindo ao Harbor Business Hotel. Posso saber seu nome, por favor?
+D: You|I have a reservation under Alex Souza for three nights.|Tenho uma reserva em nome de Alex Souza para três noites.
+D: Clerk Dee|Yes, here it is. Your company has already paid for the room. Breakfast is included.|Sim, aqui está. Sua empresa já pagou o quarto. O café da manhã está incluído.
+D: You|Is there a quiet room available? I have to prepare a presentation tonight.|Há um quarto silencioso disponível? Preciso preparar uma apresentação esta noite.
+D: Clerk Dee|Let me check. I can give you a room on the seventh floor, away from the elevator.|Deixe-me ver. Posso dar um quarto no sétimo andar, longe do elevador.
+D: You|That sounds perfect. Does the room have a desk and fast internet?|Parece perfeito. O quarto tem mesa e internet rápida?
+D: Clerk Dee|Yes, a large desk and free high-speed Wi-Fi. There's also a business center on the first floor.|Sim, uma mesa grande e Wi-Fi rápido grátis. Há também um centro de negócios no primeiro andar.
+D: You|Thank you. Could I have a wake-up call at six thirty?|Obrigado. Poderia ter uma chamada de despertar às seis e meia?
+V: reservation|reserva;wake-up call|chamada de despertar;business center|centro de negócios;high-speed|alta velocidade;prepare|preparar
+B: I have a reservation under Alex Souza for {0} nights.|Tenho uma reserva em nome de Alex Souza para {0} noites.|three=três;two=duas;four=quatro
+B: A room on the {0} floor, away from the elevator.|Um quarto no {0} andar, longe do elevador.|seventh=sétimo;fifth=quinto;ninth=nono
+S: Clerk Dee|May I have your name, please?|Posso saber seu nome?|I have a reservation under Alex Souza.|Tenho reserva em nome de Alex Souza.
+S: Clerk Dee|I can give you a room on the seventh floor.|Posso dar um quarto no sétimo andar.|Could I have a wake-up call at six thirty?|Poderia ter uma chamada de despertar às seis e meia?
+R: I have a reservation for three nights.|Tenho uma reserva para três noites.
+R: Is there a quiet room available?|Há um quarto silencioso disponível?
+R: Does the room have a desk and fast internet?|O quarto tem mesa e internet rápida?
+R: Could I have a wake-up call at six thirty?|Poderia ter uma chamada de despertar às seis e meia?
+X: Let me check.|Deixe-me ver.
+C: Hotéis de negócios nos EUA oferecem mesa de trabalho, Wi-Fi e centro de negócios para viajantes.
+
+T: A client dinner | Jantar com cliente | cafe | Austin | Client Ms. Lee,f,👩🏻,cliente
+K: Business and pleasure can mix well. | Negócios e prazer podem se misturar bem.
+M: Hoje você janta com um cliente.
+D: Client Ms. Lee|Thank you for the invitation. This restaurant is lovely.|Obrigada pelo convite. Este restaurante é encantador.
+D: You|I'm glad you like it. The chef is famous for his seafood, so I thought you might enjoy it.|Que bom que gostou. O chef é famoso pelos frutos do mar, então pensei que você poderia gostar.
+D: Client Ms. Lee|I love seafood. What do you recommend?|Adoro frutos do mar. O que recomenda?
+D: You|The grilled salmon is excellent. And for dessert, try their chocolate cake.|O salmão grelhado é excelente. E de sobremesa, prove o bolo de chocolate.
+D: Client Ms. Lee|Sounds delicious. By the way, how long have you worked with our company?|Parece delicioso. A propósito, há quanto tempo trabalha com nossa empresa?
+D: You|About five years. I enjoy working with your team because of the mutual respect.|Cerca de cinco anos. Gosto de trabalhar com sua equipe pelo respeito mútuo.
+D: Client Ms. Lee|We feel the same. Business and pleasure can mix well, can't they?|Sentimos o mesmo. Negócios e prazer podem se misturar bem, não é?
+D: You|Absolutely. Shall we talk about the contract after dinner?|Com certeza. Falamos do contrato depois do jantar?
+V: invitation|convite;seafood|frutos do mar;salmon|salmão;mutual|mútuo;contract|contrato
+B: The chef is famous for his {0}.|O chef é famoso pelos seus {0}.|seafood=frutos do mar;desserts=doces;soups=sopas
+B: The grilled {0} is excellent.|O {0} grelhado é excelente.|salmon=salmão;chicken=frango;fish=peixe
+S: Client Ms. Lee|Thank you for the invitation.|Obrigada pelo convite.|I'm glad you like it. The chef is famous for his seafood.|Que bom que gostou. O chef é famoso pelos frutos do mar.
+S: Client Ms. Lee|Business and pleasure can mix well.|Negócios e prazer podem se misturar bem.|Absolutely. Shall we talk about the contract after dinner?|Com certeza. Falamos do contrato depois do jantar?
+R: Thank you for the invitation.|Obrigada pelo convite.
+R: What do you recommend?|O que recomenda?
+R: I enjoy the mutual respect.|Gosto do respeito mútuo.
+R: Shall we talk about the contract after dinner?|Falamos do contrato depois do jantar?
+X: By the way.|A propósito.
+C: Jantares com clientes nos EUA misturam relacionamento e negócios, com conversa leve antes dos assuntos de trabalho.
+
+T: A delayed meeting | Reunião adiada | office | Denver | Client Mr. Hill,m,👨🏼,cliente
+K: Could we reschedule for tomorrow? | Poderíamos remarcar para amanhã?
+M: Hoje você lida com uma reunião adiada.
+D: Client Mr. Hill|I'm terribly sorry, but I have to cancel our meeting. An urgent problem came up at my office.|Sinto muito, mas preciso cancelar nossa reunião. Surgiu um problema urgente no meu escritório.
+D: You|I understand. These things happen. Could we reschedule for tomorrow?|Entendo. Essas coisas acontecem. Poderíamos remarcar para amanhã?
+D: Client Mr. Hill|Tomorrow morning is full, but I'm free after two.|Amanhã de manhã estou ocupado, mas fico livre depois das duas.
+D: You|Two thirty would be fine for me. My flight leaves at six, so we'd have plenty of time.|Duas e meia está bom para mim. Meu voo sai às seis, então teríamos bastante tempo.
+D: Client Mr. Hill|Perfect. Again, I apologize for the inconvenience.|Perfeito. Mais uma vez, peço desculpas pelo transtorno.
+D: You|No problem at all. I'll use the free time to visit another client in the city.|Sem problema algum. Aproveitarei o tempo livre para visitar outro cliente na cidade.
+D: Client Mr. Hill|That's a good use of your time. I'll send a confirmation by email.|É um bom uso do seu tempo. Enviarei uma confirmação por e-mail.
+D: You|Thank you, Mr. Hill. See you tomorrow.|Obrigado, Sr. Hill. Até amanhã.
+V: cancel|cancelar;reschedule|remarcar;urgent|urgente;inconvenience|transtorno;confirmation|confirmação
+B: I'm free {0} two.|Estou livre {0} das duas.|after=depois;before=antes;at=às
+B: Two thirty would be {0} for me.|Duas e meia está {0} para mim.|fine=bom;late=tarde;early=cedo
+S: Client Mr. Hill|I have to cancel our meeting.|Preciso cancelar nossa reunião.|I understand. Could we reschedule for tomorrow?|Entendo. Poderíamos remarcar para amanhã?
+S: Client Mr. Hill|I'm free after two.|Estou livre depois das duas.|Two thirty would be fine for me.|Duas e meia está bom para mim.
+R: I have to cancel our meeting.|Preciso cancelar nossa reunião.
+R: Could we reschedule for tomorrow?|Poderíamos remarcar para amanhã?
+R: Two thirty would be fine.|Duas e meia está bom.
+R: I'll send a confirmation by email.|Enviarei uma confirmação por e-mail.
+X: These things happen.|Essas coisas acontecem.
+C: Remarcar reuniões com educação e confirmar por e-mail é prática comum nos negócios americanos.
+
+T: Working abroad | Trabalhar no exterior | office | New York | HR Anna,f,👩🏼,RH
+K: Would you consider an international assignment? | Você consideraria uma missão internacional?
+M: Hoje você avalia uma proposta de trabalho no exterior.
+D: HR Anna|The company is opening an office in Singapore, and we'd like you to lead it for two years.|A empresa abrirá um escritório em Singapura, e gostaríamos que você o liderasse por dois anos.
+D: You|That's a big opportunity, but I'd need to think about it. What would the package include?|É uma grande oportunidade, mas precisaria pensar. O que o pacote incluiria?
+D: HR Anna|Relocation costs, housing for the first six months, a higher salary and annual flights home.|Custos de mudança, moradia nos primeiros seis meses, salário maior e voos anuais para casa.
+D: You|And what about my family? I have two children in school.|E minha família? Tenho dois filhos na escola.
+D: HR Anna|The company would help find an international school and cover part of the tuition.|A empresa ajudaria a achar uma escola internacional e cobriria parte da mensalidade.
+D: You|It sounds attractive. How much time do I have to decide?|Parece atraente. Quanto tempo tenho para decidir?
+D: HR Anna|Two weeks. Talk to your family and let me know.|Duas semanas. Converse com sua família e me avise.
+D: You|I will. Thank you for considering me.|Farei isso. Obrigado por me considerar.
+V: relocation|mudança;package|pacote;tuition|mensalidade;attractive|atraente;assignment|missão
+B: The company would help find an international {0}.|A empresa ajudaria a achar uma {0} internacional.|school=escola;home=casa;bank=conta
+B: You have {0} weeks to decide.|Você tem {0} semanas para decidir.|two=duas;three=três;one=uma
+S: HR Anna|We'd like you to lead the new office for two years.|Gostaríamos que liderasse o novo escritório por dois anos.|That's a big opportunity, but I'd need to think about it.|É uma grande oportunidade, mas preciso pensar.
+S: HR Anna|You have two weeks to decide.|Você tem duas semanas para decidir.|I will. Thank you for considering me.|Farei isso. Obrigado por me considerar.
+R: We'd like you to lead the new office.|Gostaríamos que liderasse o novo escritório.
+R: What would the package include?|O que o pacote incluiria?
+R: The company would cover part of the tuition.|A empresa cobriria parte da mensalidade.
+R: Talk to your family and let me know.|Converse com sua família e me avise.
+X: Thank you for considering me.|Obrigado por me considerar.
+C: Missões internacionais costumam incluir mudança, moradia temporária e apoio à família.
+
+T: Cultural differences at work | Diferenças culturais no trabalho | office | Chicago | Colleague Kenji,m,👨🏻,colega
+K: Different cultures have different habits. | Culturas diferentes têm hábitos diferentes.
+M: Hoje você discute diferenças culturais com colegas.
+D: Colleague Kenji|In my country, it's rude to say "no" directly. Here, people seem very direct.|No meu país é rude dizer "não" diretamente. Aqui, as pessoas parecem muito diretas.
+D: You|I noticed that too when I arrived. In Brazil, we usually soften our disagreement.|Notei isso também quando cheguei. No Brasil, costumamos suavizar a discordância.
+D: Colleague Kenji|And what about punctuality? Is it as important to you?|E pontualidade? É tão importante para você?
+D: You|Less than here. In Brazil, being fifteen minutes late to a social event is normal.|Menos que aqui. No Brasil, chegar quinze minutos atrasado a um evento social é normal.
+D: Colleague Kenji|Here, being late for a meeting can cause a bad impression.|Aqui, chegar atrasado a uma reunião pode causar má impressão.
+D: You|Exactly. Different cultures have different habits, and the key is to understand them.|Exatamente. Culturas diferentes têm hábitos diferentes, e a chave é entendê-los.
+D: Colleague Kenji|I agree. Asking questions helps avoid misunderstandings.|Concordo. Fazer perguntas ajuda a evitar mal-entendidos.
+D: You|Let's keep sharing what we learn about each other's cultures.|Vamos continuar compartilhando o que aprendemos sobre as culturas um do outro.
+V: direct|direto;soften|suavizar;impression|impressão;habit|hábito;misunderstanding|mal-entendido
+B: In my country, it's rude to say "no" {0}.|No meu país é rude dizer "não" {0}.|directly=diretamente;loudly=alto;quickly=rápido
+B: Asking questions helps avoid {0}.|Fazer perguntas ajuda a evitar {0}.|misunderstandings=mal-entendidos;mistakes=erros;delays=atrasos
+S: Colleague Kenji|Here, people seem very direct.|Aqui, as pessoas parecem muito diretas.|I noticed that too when I arrived.|Notei isso também quando cheguei.
+S: Colleague Kenji|Asking questions helps avoid misunderstandings.|Fazer perguntas ajuda a evitar mal-entendidos.|Let's keep sharing what we learn.|Vamos continuar compartilhando o que aprendemos.
+R: In my country, it's rude to say no directly.|No meu país é rude dizer não diretamente.
+R: People here seem very direct.|As pessoas aqui parecem muito diretas.
+R: Different cultures have different habits.|Culturas diferentes têm hábitos diferentes.
+R: Asking questions helps avoid misunderstandings.|Fazer perguntas ajuda a evitar mal-entendidos.
+X: I agree.|Concordo.
+C: Entender diferenças culturais, como pontualidade e franqueza, é essencial para trabalhar em equipes internacionais.
+
+T: Coming home today | Voltando para casa | airport | Chicago | Partner Leo,m,👨🏽,parceiro
+K: There's no place like home today. | Não há lugar como o lar.
+M: Hoje você volta de uma longa viagem de trabalho.
+D: Partner Leo|You're finally back! How was the trip?|Você finalmente voltou! Como foi a viagem?
+D: You|Productive but tiring. I visited four cities in two weeks, and I'm exhausted.|Produtiva, mas cansativa. Visitei quatro cidades em duas semanas e estou exausto.
+D: Partner Leo|Did you achieve what you wanted?|Alcançou o que queria?
+D: You|More than that. We closed two big contracts, and my boss was very pleased.|Mais do que isso. Fechamos dois grandes contratos e meu chefe ficou muito satisfeito.
+D: Partner Leo|I'm proud of you. But I missed you a lot.|Tenho orgulho de você. Mas senti muito a sua falta.
+D: You|Me too. After so many hotels, there's no place like home.|Eu também. Depois de tantos hotéis, não há lugar como o lar.
+D: Partner Leo|Let's go home. I made your favorite dinner.|Vamos para casa. Fiz seu jantar favorito.
+D: You|That's the best welcome I could ask for.|É a melhor recepção que eu poderia pedir.
+V: productive|produtivo;tiring|cansativo;achieve|alcançar;pleased|satisfeito;welcome|recepção
+B: I visited {0} cities in two weeks.|Visitei {0} cidades em duas semanas.|four=quatro;three=três;five=cinco
+B: We closed two big {0}.|Fechamos dois grandes {0}.|contracts=contratos;deals=negócios;projects=projetos
+S: Partner Leo|How was the trip?|Como foi a viagem?|Productive but tiring. I'm exhausted.|Produtiva, mas cansativa. Estou exausto.
+S: Partner Leo|I made your favorite dinner.|Fiz seu jantar favorito.|That's the best welcome I could ask for.|É a melhor recepção que eu poderia pedir.
+R: The trip was productive but tiring.|A viagem foi produtiva, mas cansativa.
+R: We closed two big contracts.|Fechamos dois grandes contratos.
+R: After so many hotels, there's no place like home.|Depois de tantos hotéis, não há lugar como o lar.
+R: I made your favorite dinner.|Fiz seu jantar favorito.
+X: I missed you a lot.|Senti muito a sua falta.
+C: Quem viaja muito a trabalho valoriza voltar para casa e passar tempo com a família.
