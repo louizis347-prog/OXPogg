@@ -1,0 +1,53 @@
+/* Neighbors · inglês A1 · episódios 1–10 (#player.nb-full)
+   1) quadro ocupa a altura da tela e o conteúdo é centralizado (sem vazio embaixo)
+   2) bordas inteiras: moldura em anel sem cortar sombra/cantos, como no curso regular
+   3) tipografia única (sem serifas soltas) e faixa de cena ilustrada em cada quadro */
+#player.nb-full{--nbf-line:#dce4e8}
+#player.nb-full .stage{overflow:visible!important;box-shadow:0 16px 34px -22px var(--azd,#1b4db3)!important;
+  display:flex;flex-direction:column;min-height:calc(100dvh - 176px);margin-bottom:14px;border-radius:clamp(22px,3.4vw,30px)}
+#player.nb-full .stage::before,#player.nb-full .stage::after{display:none!important}
+#player.nb-full #pstage>.step{flex:1 1 auto;display:flex!important;flex-direction:column;justify-content:center;
+  background:#fff;border:1px solid var(--nbf-line);border-radius:calc(clamp(22px,3.4vw,30px) - 8px);overflow:hidden;box-sizing:border-box;min-width:0}
+#player.nb-full #pstage>.step.nbx:has(#nbsent),#player.nb-full #pstage>.step.nbx:has(>.nb-card>.nb-sit){display:grid!important;align-content:center!important}
+#player.nb-full #pstage>.step>*{max-width:100%;min-width:0}
+#player.nb-full #pstage>.step>:not(.nbf-scene):first-of-type,#player.nb-full #pstage>.step>.nbf-scene+*{margin-top:0}
+#player.nb-full #pstage>.step.nbx:not(:has(.nb-poster))>:not(.nbf-scene):nth-child(2){margin-top:auto}
+#player.nb-full #pstage>.step.nbx:not(:has(.nb-poster))>:last-child{margin-bottom:auto}
+
+/* tipografia única */
+#player.nb-full .step,#player.nb-full .step *{font-family:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif!important}
+#player.nb-full .nbo-title,#player.nb-full .nbo-quote b,#player.nb-full .nbo-pull b,#player.nb-full .nbo-text,#player.nb-full .nbo-gap,#player.nb-full .nbo-letter,#player.nb-full .nbo-qm{font-style:normal!important}
+#player.nb-full .nbo-title{font-weight:800!important;font-size:26px!important}
+#player.nb-full .nbo-quote b,#player.nb-full .nbo-pull b{font-weight:800!important}
+#player.nb-full .step *{font-style:normal!important}
+#player.nb-full .nbo-need,#player.nb-full .nbo-sub,#player.nb-full [class*=nbo-]{line-height:1.35!important}
+#player.nb-full .step em,#player.nb-full .nbo-mission,#player.nb-full [class*=mission] em{font-style:normal!important}
+
+/* faixa de cena */
+#player.nb-full .nbf-scene{flex:1 1 clamp(96px,17dvh,150px);min-height:96px;max-height:42dvh;margin:-1px -1px 10px;border-radius:calc(clamp(22px,3.4vw,30px) - 9px) calc(clamp(22px,3.4vw,30px) - 9px) 14px 14px;overflow:hidden;position:relative}
+#player.nb-full .nbf-scene svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+#player.nb-full .nbf-scene svg{object-fit:cover}
+#player.nb-full .nbf-scene::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(255,255,255,.9))}
+
+/* capa do vizinho: cena grande à esquerda, texto centralizado à direita, ocupando a tela */
+@media (min-width:760px){
+  #player.nb-full .step.nbx .nb-poster{min-height:min(62dvh,520px);align-content:center;border:0;box-shadow:none}
+  #player.nb-full .step.nbx .nb-poster>.nb-scene{aspect-ratio:auto;height:min(56dvh,460px);max-height:none}
+  #player.nb-full .step.nbo{justify-content:center}
+}
+/* celular */
+@media (max-width:759px){
+  #player.nb-full .stage{min-height:calc(100dvh - 190px);width:calc(100% - 16px)}
+  #player.nb-full .step.nbx .nb-poster{min-height:calc(100dvh - 250px);justify-content:center}
+  #player.nb-full .step.nbx .nb-poster>.nb-scene{min-height:150px;max-height:32dvh}
+  /* "Fio da história": etiqueta em cima, falas empilhadas (antes quebrava em 5 linhas) */
+  #player.nb-full .nbo-ln,#player.nb-full .nbo-quote,#player.nb-full .nbo-pull{flex-direction:column!important;align-items:flex-start!important;gap:4px}
+  #player.nb-full .nbo-ln>*,#player.nb-full .nbo-quote>*{width:100%!important;max-width:100%!important}
+  #player.nb-full .nbo-ln *{text-transform:none!important;letter-spacing:0!important}
+}
+
+#player.nb-full .nbo-hand,#player.nb-full .nbo-hand *{text-transform:none!important;letter-spacing:0!important}
+#player.nb-full .nbo-hand small{font-size:13px;font-weight:800;opacity:.85;display:block}
+#player.nb-full #pstage>.step:has(>.nbf-scene){justify-content:flex-start}
+#player.nb-full .nbo-quote small{text-transform:none!important;letter-spacing:0!important;font-size:13px!important;font-weight:700!important;opacity:.8!important}
+#player.nb-full .nbo-quote{gap:4px}
