@@ -53,6 +53,10 @@ for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
             fr.insert(vp+1,f)
             lab=next((i for i,x in enumerate(fr) if x['k']=='pglab'),None)
             if lab is not None and lab+1<len(fr) and fr[lab+1]['k']=='pgsheet':del fr[lab+1]
+            for j in range(1,len(fr)-1):
+                if fr[j-1].get('rs') and fr[j-1].get('rs')==fr[j].get('rs')==fr[j+1].get('rs'):
+                    other={fr[k].get('rs') for k in range(max(0,j-2),min(len(fr),j+3))}
+                    fr[j]['rs']=next(r for r in RS if r not in other)
             ch=True;nd+=1
     if ch:json.dump(d,open(fn,'w'),ensure_ascii=False,separators=(',',':'))
 print('leituras',nr,'diálogos',nd)

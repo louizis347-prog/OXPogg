@@ -20,6 +20,7 @@ F={
 81292:("The Pompidou Centre","The Pompidou Centre","1977","🏛️ Arquitetura","O Centre Pompidou é um centro cultural em Paris, inaugurado em 1977, famoso pela estrutura virada do avesso, com tubos coloridos por fora.","Renzo Piano e Richard Rogers","Em **The Pompidou Centre**, a estrutura fica por fora, em tubos coloridos. Hoje falamos de **so e such**: *It is such a strange building.*","O prédio foi projetado por Renzo Piano e Richard Rogers."),
 82159:("Campbell's Soup Cans","Campbell's Soup Cans","1962","🖼️ Pintura","“Campbell's Soup Cans” é uma obra de Andy Warhol, de 1962, com trinta e duas telas de latas de sopa, uma para cada sabor.","Andy Warhol","Em **Campbell's Soup Cans**, uma lata de sopa vira arte. Hoje falamos de **too e enough**: *The can is too big for my hand.*","A obra tem 32 telas, uma para cada sabor de sopa da marca."),
 82213:("Dear Sir or Madam","Dear Sir or Madam","carta formal","✉️ Carta","“Dear Sir or Madam” é a saudação tradicional de uma carta formal quando não se sabe o nome do destinatário, comum em cartas de apresentação para vagas de emprego.","","Hoje partimos da saudação **Dear Sir or Madam**, típica das cartas formais. Falamos de **carta de apresentação**: *I am writing to apply for the position.*","Sem nome, a carta termina com Yours faithfully; com nome, com Yours sincerely."),
+7083003:("Past Lives","Past Lives","2023","🎬 Filme","“Past Lives” (Vidas Passadas) é um filme de 2023 escrito e dirigido por Celine Song, sobre dois amigos de infância separados quando a família dela emigra da Coreia do Sul.","Celine Song","Em **Past Lives**, Nora e Hae Sung se reencontram anos depois e lembram a mesma história de modos diferentes. Hoje falamos de **versões do mesmo evento**: *According to you, whereas I remember…*","O filme de estreia de Celine Song foi indicado ao Oscar de melhor filme."),
 82048:("Groundhog Day","Russian Doll","2019","📺 Série","“Russian Doll” é uma série da Netflix de 2019 sobre uma mulher que revive a mesma noite de aniversário em Nova York.","Natasha Lyonne","Em **Russian Doll**, Nadia acorda sempre no mesmo banheiro. Hoje falamos de **quantas vezes algo aconteceu**: *How many times have you tried?*","A série foi criada por Natasha Lyonne, Leslye Headland e Amy Poehler."),
 7082035:("Long Time No See","Long Time No See","expressão","💬 Expressão","“Long time no see” é uma saudação informal do inglês, usada quando duas pessoas se reencontram depois de muito tempo.","","Hoje partimos da expressão **Long time no see**, usada quando nos reencontramos. Falamos de **há quanto tempo**: *How long have you…?*","A frase é tão comum que aparece em conversas do dia a dia no mundo todo."),
 }
@@ -36,7 +37,7 @@ def fix(e,v):
             if by:cw['by']=by
             if isinstance(cw.get('fact'),list):cw['fact'][-1]=fact
     return e2
-for fn in sorted(glob.glob(D+'/../../../data/en-b1_*.json')):
+for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
     d=json.load(open(fn));ch=False
     for i,e in enumerate(d):
         if e['n'] in F:
