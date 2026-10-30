@@ -7,10 +7,10 @@ D: You|Yes. It is going to rain this afternoon.|Sim. Vai chover esta tarde.
 D: Jess|And tomorrow?|E amanhã?
 D: You|It will be sunny, but windy. The temperature will be about twenty degrees.|Vai fazer sol, mas com vento. A temperatura será de uns vinte graus.
 D: Jess|Then let us postpone the picnic until tomorrow.|Então vamos adiar o piquenique para amanhã.
-D: You|Good idea. I will bring a jacket just in case.|Boa ideia. Vou levar uma jaqueta por precaução.
+D: You|Good idea. I will bring a jacket. It can be cold.|Boa ideia. Vou levar uma jaqueta. Pode fazer frio.
 D: Jess|And an umbrella for today.|E um guarda-chuva para hoje.
 D: You|Of course. I do not want to get wet again.|Claro. Não quero me molhar de novo.
-V: forecast|previsão;windy|ventoso;temperature|temperatura;postpone|adiar;just in case|por precaução
+V: forecast|previsão;windy|ventoso;temperature|temperatura;postpone|adiar;jacket|jaqueta
 B: It is going to {0} this afternoon.|Vai {0} esta tarde.|rain=chover;snow=nevar;clear up=abrir o tempo
 B: The temperature will be about {0} degrees.|A temperatura será de uns {0} graus.|twenty=vinte;ten=dez;thirty=trinta
 S: Jess|What is the forecast?|Qual é a previsão?|It is going to rain this afternoon.|Vai chover esta tarde.
@@ -18,8 +18,8 @@ S: Jess|And tomorrow?|E amanhã?|It will be sunny, but windy.|Vai fazer sol, mas
 R: It is going to rain this afternoon.|Vai chover esta tarde.
 R: It will be sunny but windy.|Vai fazer sol, mas com vento.
 R: Let us postpone the picnic.|Vamos adiar o piquenique.
-R: I will bring a jacket just in case.|Vou levar uma jaqueta por precaução.
-X: Just in case.|Por precaução.
+R: I will bring a jacket. It can be cold.|Vou levar uma jaqueta. Pode fazer frio.
+X: It can be cold.|Pode fazer frio.
 C: Nos EUA, a temperatura é medida em graus Fahrenheit: 70 °F equivalem a cerca de 21 °C.
 
 T: What should I pack? | Fazer a mala conforme o clima | living | Chicago | Mia,f,👩🏻,amiga
