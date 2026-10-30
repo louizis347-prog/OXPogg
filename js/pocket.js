@@ -11,6 +11,24 @@ const sfx2=n=>{try{sfx(n)}catch(e){}};
 const lock=()=>{P.fx.done=false;P.fx.cta=()=>!P.fx.done};
 const th=f=>'style="--g1:'+(f.g||['#FF8A5B'])[0]+';--g2:'+(f.g||[0,'#FFC857'])[1]+'"';
 const av=(em,name,col)=>{try{return window.NBF?NBF.avatar(em,name,col):(window.PogFace?PogFace.avatar(em,name,col):em)}catch(e){return em}};
+
+/* personagem de corpo inteiro (cabeça/ombros refinados do PogFace + corpo proporcional), sem zoom no rosto */
+const TONEM={'\u{1F3FB}':0,'\u{1F3FC}':1,'\u{1F3FD}':2,'\u{1F3FE}':3,'\u{1F3FF}':3};
+const SH=['#3b6ea5','#b5543c','#4d8f6b','#7a5fa8','#c58a2f','#2f7f86'];
+function fullBody(face,name,gender){
+  try{const F=window.PogFace;if(!F||!F.bust)return '';
+    let h=7;for(const c of String(name))h=(h*31+c.charCodeAt(0))>>>0;
+    const tm=String(face).match(/[\u{1F3FB}-\u{1F3FF}]/u),g=gender==='f'?'f':'m';
+    const col=SH[h%SH.length],hair=['#4a3228','#2b211c','#7a4a2b','#5b3a29'][h%4];
+    const bo={g,tone:tm?TONEM[tm[0]]:h%4,style:(g==='f'?['long','wavy','bob','bun']:['short','side','short','curly'])[(h>>3)%4],hair,shirt:col,seed:h,refined:true,natural:true,rich:2,mood:'grin',glasses:false,beard:false};
+    const k=.2,by=-17-120*k,pants=['#2f3550','#4a3b32','#3b4a63','#35384a'][h%4],pd='#20263a',sk='#d9a07a';
+    const face2='<svg x="'+(-46*k).toFixed(2)+'" y="'+by.toFixed(2)+'" width="'+(92*k).toFixed(2)+'" height="'+(120*k).toFixed(2)+'" viewBox="4 6 92 120" overflow="hidden">'+F.bust(bo)+'</svg>';
+    const arm=(sx,c)=>'<path d="M'+(sx*7.4)+' '+(by+88*k).toFixed(2)+' Q'+(sx*9.3)+' -20 '+(sx*8.7)+' -12.5" stroke="'+c+'" stroke-width="2.4" fill="none" stroke-linecap="round"/><ellipse cx="'+(sx*8.7)+'" cy="-10.8" rx="1.25" ry="1.6" fill="#e6b896"/>';
+    return '<svg class="pk-fig" viewBox="-14 -48 28 50" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><ellipse cx="0" cy=".2" rx="11" ry="1.9" fill="#000" fill-opacity=".3"/>'+
+     '<path d="M-6.2 -17.5 L-5.6 -2.4 L-.6 -2.4 L-.4 -17.5Z" fill="'+pants+'"/><path d="M.4 -17.5 L.6 -2.4 L5.6 -2.4 L6.2 -17.5Z" fill="'+pd+'"/>'+
+     '<path d="M-6.4 -3 Q-3.4 -4.4 -.5 -3 L-.5 -1.2 L-6.8 -1.2Z M.5 -3 Q3.4 -4.4 6.4 -3 L6.8 -1.2 L.5 -1.2Z" fill="#15151c"/>'+face2+arm(-1,col)+arm(1,'#00000033')+'</svg>';
+  }catch(x){return ''}}
+const bg=v=>{try{const e=P.e,h=e.fr.find(x=>x.k==='pkhero');return '<div class="pk-bg b'+v+'" aria-hidden="true">'+coverOf(e,h,true)+'</div>'}catch(x){return ''}};
 const strip=()=>{try{const e=P.e,h=e.fr.find(x=>x.k==='pkhero');return '<div class="pk-strip">'+coverOf(e,h,true)+'</div>'}catch(x){return ''}};
 const coverOf=(e,f,noc)=>{try{return PogCover.svg({n:e.n,t:e.t,sc:e.sc,fr:[{k:'nbhero',face:f.face,name:f.name,city:f.city,num:f.num}]},{full:true,noChar:!!noc})}catch(x){return ''}};
 
@@ -18,7 +36,7 @@ const coverOf=(e,f,noc)=>{try{return PogCover.svg({n:e.n,t:e.t,sc:e.sc,fr:[{k:'n
 FXR.pkhero=function(f,st,n){
   const e=P.e;
   st.innerHTML='<div class="step fx pk pk-hero" '+th(f)+'>'+fxKindBar(f,n)+
-   '<div class="pk-poster"><div class="pk-scene">'+coverOf(e,f)+'<span class="pk-badge">'+(f.boss?'⭐ DESAFIO DO ARCO':'EPISÓDIO '+f.num)+' · '+H(f.lvl)+'</span></div>'+
+   '<div class="pk-poster"><div class="pk-scene">'+coverOf(e,f,true)+fullBody(f.face,f.name,(e.character||{}).gender)+'<span class="pk-badge">'+(f.boss?'⭐ DESAFIO DO ARCO':'EPISÓDIO '+f.num)+' · '+H(f.lvl)+'</span></div>'+
    '<div class="pk-info"><span class="pk-face">'+av(f.face,f.name,f.g[0])+'</span><h2>'+H(e.t)+'</h2><p class="pk-sub">'+H(f.name)+' · '+H(f.city)+'</p>'+
    '<div class="pk-mis"><small>SUA MISSÃO</small>'+H(f.mission)+'</div>'+
    '<button class="pk-key" id="pkk" type="button">🔊 <b>“'+H(f.hook[0])+'”</b><em>'+H(f.hook[1])+'</em></button></div></div></div>';
@@ -30,7 +48,7 @@ FXR.pkhero=function(f,st,n){
 FXR.pkdlg=function(f,st,n){
   const Ls=f.lines,cast=f.cast||{},voc=f.vocab||[];let seq=0;
   const mark=t=>{let h=H(t);voc.forEach((v,i)=>{const w=String(v[0]).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');h=h.replace(new RegExp('\\b('+w+')\\b','i'),'<button type="button" class="pk-w" data-v="'+i+'">$1</button>')});return h};
-  st.innerHTML='<div class="step fx pk pk-dlg" '+th(f)+'>'+fxKindBar(f,n)+
+  st.innerHTML='<div class="step fx pk pk-dlg" '+th(f)+'>'+bg(1)+
    '<div class="pk-tools"><b class="pk-tt">Diálogo</b><button type="button" class="pk-btn" id="pkpt">🇧🇷 Tradução</button><button type="button" class="pk-btn" id="pkal">🔊 Ouvir tudo</button></div>'+
    '<div class="pk-chat" id="pkc">'+Ls.map((l,i)=>{const c=cast[l[0]]||['🙂','#999'],me=l[0]==='You';
      return '<div class="pk-row'+(me?' me':'')+'" data-l="'+i+'"><span class="pk-av">'+av(c[0],l[0],c[1])+'</span><div class="pk-b"><b>'+H(me?'VOCÊ':l[0])+'</b><span class="pk-en">'+mark(l[1])+'</span><small class="pk-pt">'+H(l[2])+'</small></div></div>'}).join('')+'</div>'+
@@ -51,7 +69,7 @@ FXR.pkbuild=function(f,st,n){
     const render=()=>{const o=it.opts[pick];
       st.querySelector('.pk-sent').innerHTML=H(it.en).replace('{0}','<mark>'+H(o[0])+'</mark>');
       st.querySelector('.pk-sentpt').innerHTML=H(it.pt).replace('{0}','<mark>'+H(o[1])+'</mark>')};
-    st.innerHTML='<div class="step fx pk pk-build" '+th(f)+'>'+strip()+'<div class="pk-prog">'+R.map((_,i)=>'<i class="'+(i<ri?'on':'')+'"></i>').join('')+'</div>'+
+    st.innerHTML='<div class="step fx pk pk-build" '+th(f)+'>'+bg(2)+'<div class="pk-prog">'+R.map((_,i)=>'<i class="'+(i<ri?'on':'')+'"></i>').join('')+'</div>'+
      '<div class="pk-card"><div class="pk-sent"></div><div class="pk-sentpt"></div><button class="pk-btn" id="pkhear" type="button">🔊 Ouvir</button></div>'+
      '<div class="pk-hint">Toque numa peça para trocar a palavra. Experimente todas!</div>'+
      '<div class="pk-opts">'+it.opts.map((o,i)=>'<button type="button" class="pk-opt'+(i===0?' on':'')+'" data-i="'+i+'"><b>'+H(o[0])+'</b><small>'+H(o[1])+'</small></button>').join('')+'</div></div>';
@@ -67,7 +85,7 @@ FXR.pkbuild=function(f,st,n){
 FXR.pkspeak=function(f,st,n){
   const R=f.items,cast=(P.e.fr.find(x=>x.k==='pkdlg')||{}).cast||{};let ri=0;lock();
   const draw=()=>{const it=R[ri],c=cast[it.who]||['🙂','#999'];
-    st.innerHTML='<div class="step fx pk pk-speak" '+th(f)+'>'+strip()+'<div class="pk-prog">'+R.map((_,i)=>'<i class="'+(i<ri?'on':'')+'"></i>').join('')+'</div>'+
+    st.innerHTML='<div class="step fx pk pk-speak" '+th(f)+'>'+bg(3)+'<div class="pk-prog">'+R.map((_,i)=>'<i class="'+(i<ri?'on':'')+'"></i>').join('')+'</div>'+
      '<div class="pk-row"><span class="pk-av">'+av(c[0],it.who,c[1])+'</span><div class="pk-b"><b>'+H(it.who)+'</b><span class="pk-en">'+H(it.line[0])+'</span><small style="display:block">'+H(it.line[1])+'</small></div></div>'+
      '<div class="pk-card pk-say"><small>SUA VEZ · diga em inglês</small><div class="pk-sent">'+H(it.target)+'</div><div class="pk-sentpt">'+H(it.pt)+'</div>'+
      '<div class="pk-tools"><button type="button" class="pk-btn" id="pkl">🔊 Ouvir</button><button type="button" class="pk-btn" id="pks">🐢 Devagar</button></div><div id="pkm"></div></div>'+
@@ -87,7 +105,7 @@ const w0=FXR.wrap;
 FXR.wrap=function(f,st,n){
   if(!(P.e&&P.e.pocket)||!w0)return w0&&w0.apply(this,arguments);
   const e=P.e,s=f.sticker||{};
-  st.innerHTML='<div class="step fx pk pk-wrap" '+th(f)+'>'+fxKindBar({k:'wrap'},n)+
+  st.innerHTML='<div class="step fx pk pk-wrap" '+th(f)+'>'+bg(4)+
    '<div class="pk-fin"><div class="pk-stk'+(s.boss?' boss':'')+'"><span class="pk-face">'+av(s.face,s.name,(f.g||['#FF8A5B'])[0])+'</span><small>'+(s.boss?'FIGURINHA RARA':'FIGURINHA')+'</small><b>'+H(s.name)+'</b><i>'+H(s.role)+' · '+H(s.city)+'</i></div>'+
    '<div class="pk-bag"><h3>🎒 Frases para levar</h3>'+(f.recap||[]).map(r=>'<button type="button" class="pk-cc" data-t="'+H(r[0])+'"><b>'+H(r[0])+'</b><small>'+H(r[1])+'</small></button>').join('')+'</div>'+
    '<div class="pk-bag"><h3>💬 Expressão</h3><button type="button" class="pk-cc" data-t="'+H((f.expr||[''])[0])+'"><b>'+H((f.expr||['',''])[0])+'</b><small>'+H((f.expr||['',''])[1])+'</small></button></div>'+

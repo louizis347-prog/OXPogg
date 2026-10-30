@@ -10,7 +10,7 @@
 /* Cena */
 .pk-poster{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:center;background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:24px;padding:16px}
 .pk-scene{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;min-height:200px}
-.pk-scene svg{position:absolute;inset:0;width:100%;height:100%}
+.pk-scene>svg:not(.pk-fig){position:absolute;inset:0;width:100%;height:100%}
 .pk-badge{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.88);color:#25203f;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:900;letter-spacing:.06em}
 .pk-info{display:flex;flex-direction:column;gap:10px;color:#fff;min-width:0}
 .pk-info h2{margin:0;font-size:38px;line-height:1.05;font-weight:900;text-shadow:0 2px 10px rgba(0,0,0,.2)}
@@ -64,7 +64,7 @@
   .pk-chat{max-height:calc(100dvh - 330px)}.pk-en{font-size:15px}
 }
 
-.pk-strip{position:relative;height:clamp(90px,16dvh,150px);border-radius:16px;overflow:hidden;flex:none}.pk-strip svg{position:absolute;inset:0;width:100%;height:100%}
+.pk-strip{position:relative;height:clamp(90px,16dvh,150px);border-radius:16px;overflow:hidden;flex:none}.pk-strip>svg{position:absolute;inset:0;width:100%;height:100%}
 .pk-strip::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(255,255,255,.85))}
 .course-family.pocket{background:linear-gradient(135deg,#FF8A5B,#FFC857);color:#fff;border-radius:18px;padding:14px 18px}
 .course-family.pocket h2,.course-family.pocket p{color:#fff;margin:0}
@@ -78,3 +78,67 @@
 .pk .pk-btn,.pk .pk-opt b,.pk .pk-cc b{font-weight:600}
 .pk .pk-opt b{font-size:21px}
 .pk .pk-card,.pk .pk-b,.pk .pk-cc,.pk .pk-key,.pk .pk-opt{border-radius:22px}
+
+/* ===== v2 · estilo revista: cenário em tela cheia, cartões de vidro, sem blocos brancos ===== */
+#player.nb-full #pstage>.step.pk{position:relative;overflow:hidden;background:#2a2340;border:0;padding:14px!important;justify-content:flex-start;min-height:calc(100dvh - 190px);color:#25203f}
+.pk-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.pk-bg>svg{position:absolute;inset:0;width:100%;height:100%;transform-origin:50% 60%}
+.pk-bg.b1>svg{transform:scale(1.35) translateX(-6%)}
+.pk-bg.b2>svg{transform:scale(1.5) translateX(8%)}
+.pk-bg.b3>svg{transform:scale(1.45) translateX(-10%)}
+.pk-bg.b4>svg{transform:scale(1.3) translateX(4%)}
+.pk-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,50,.10) 0%,rgba(30,20,50,.35) 55%,rgba(30,20,50,.62) 100%)}
+.pk>*:not(.pk-bg){position:relative;z-index:1}
+.pk .pk-tools,.pk .pk-prog{position:relative;z-index:1}
+.pk .pk-card,.pk .pk-b,.pk .pk-cc,.pk .pk-opt,.pk .pk-cult,.pk .pk-bag{background:rgba(255,255,255,.88)!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-color:rgba(255,255,255,.7)!important}
+.pk .pk-row.me .pk-b{background:rgba(255,238,225,.92)!important}
+.pk .pk-opt.on{background:rgba(255,247,241,.97)!important;border-color:var(--g1)!important}
+.pk .pk-tt,.pk .pk-hint,.pk .pk-next{color:#fff!important;text-shadow:0 1px 8px rgba(0,0,0,.5);opacity:1}
+.pk .pk-btn{background:rgba(255,255,255,.92)}
+.pk .pk-prog i{background:rgba(255,255,255,.45)}.pk .pk-prog i.on{background:#fff}
+.pk .pk-bag h3{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5);background:none!important;padding:0}
+.pk .pk-bag{background:none!important;backdrop-filter:none;border:0!important;box-shadow:none!important;padding:0}
+.pk .pk-chat{flex:1;max-height:none;min-height:0}
+.pk-build,.pk-speak{justify-content:flex-end!important}
+.pk-build .pk-prog,.pk-speak .pk-prog{margin-top:auto}
+
+/* capa: cenário ocupa o quadro inteiro, título grande estilo capa de revista */
+#player.nb-full #pstage>.step.pk-hero{padding:0!important;background:#2a2340}
+.pk-hero .pk-poster{position:relative;display:block;flex:1;min-height:calc(100dvh - 190px);padding:0;background:none;border-radius:0}
+.pk-hero .pk-scene{position:absolute;inset:0;border-radius:0;aspect-ratio:auto;min-height:0}
+.pk-hero .pk-scene::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(25,15,45,.86) 0%,rgba(25,15,45,.35) 48%,rgba(25,15,45,0) 75%)}
+.pk-hero .pk-badge{z-index:2;left:16px;top:16px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border-radius:8px;padding:6px 12px}
+.pk-hero .pk-info{position:absolute;left:0;right:0;bottom:0;padding:22px 26px 24px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:8px;align-items:end;z-index:2}
+.pk-hero .pk-info .pk-face{grid-row:span 2;width:84px;height:84px}
+.pk-hero .pk-info h2{font-size:clamp(34px,6vw,64px);line-height:.98;text-transform:uppercase;letter-spacing:.01em}
+.pk-hero .pk-sub{grid-column:2}
+.pk-hero .pk-mis,.pk-hero .pk-key{grid-column:1/-1;background:rgba(255,255,255,.2);backdrop-filter:blur(10px);color:#fff;border:1px solid rgba(255,255,255,.35);box-shadow:none}
+.pk-hero .pk-key{background:#fff;color:#25203f}
+@media (max-width:759px){
+  #player.nb-full #pstage>.step.pk{padding:10px!important}
+  .pk-hero .pk-info{padding:16px;grid-template-columns:1fr}.pk-hero .pk-info .pk-face{display:none}
+  .pk-hero .pk-info h2{font-size:34px}
+  .pk-hero .pk-sub{grid-column:1}
+}
+/* mochila: figurinha e cartões sobre o cenário */
+.pk-wrap .pk-fin{align-items:stretch}.pk-wrap .pk-stk{box-shadow:0 18px 40px -12px rgba(0,0,0,.55)}
+/* altura fixa do quadro: o diálogo rola por dentro e o paginador ("Ver mais") não divide o quadro */
+#player.nb-full #pstage>.step.pk{height:calc(100dvh - 196px);min-height:0;max-height:calc(100dvh - 196px)}
+.pk-dlg .pk-chat{flex:1 1 0;min-height:0;overflow-y:auto;padding:4px 2px}
+.pk-hero .pk-poster{min-height:0;height:100%}
+@media (max-width:759px){
+  #player.nb-full #pstage>.step.pk{height:calc(100dvh - 205px);max-height:calc(100dvh - 205px)}
+  .pk-hero .pk-mis{padding:8px 12px;font-size:14px}.pk-hero .pk-key{padding:8px 12px}.pk-hero .pk-key b{font-size:16px}
+  .pk-hero .pk-info{gap:6px;padding:14px}
+}
+
+/* sem zoom: cenário inteiro; personagem de corpo inteiro */
+.pk-bg.b1>svg,.pk-bg.b2>svg,.pk-bg.b3>svg,.pk-bg.b4>svg{transform:none}
+.pk-hero .pk-fig{position:absolute;z-index:1;inset:auto 7% 2% auto;height:84%;width:auto;filter:drop-shadow(0 10px 18px rgba(0,0,0,.35))}
+.pk-hero .pk-info{max-width:62%}
+@media (max-width:759px){
+  .pk-hero .pk-fig{inset:auto 50% 34% auto;transform:translateX(50%);height:50%}
+  .pk-hero .pk-info{max-width:none}
+}
+
+@media (max-width:759px){.pk-hero .pk-fig{inset:auto 50% 47% auto;height:40%}}
