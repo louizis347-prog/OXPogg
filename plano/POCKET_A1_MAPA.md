@@ -7,19 +7,25 @@ Objetivo do A1: vocabulário amplo + conversar sobre muitos assuntos, sem repeti
 - **Par (2, 4, 6…)**: "continuação" do ímpar. Mesmo cenário ou personagem como ponte, mas com **outro tema, outro vocabulário e outro padrão** (filmes, séries, bichos, espaço, música, esporte, ciência, arte, mitos, jogos, mundo do trabalho, natureza…). 400 episódios novos.
 - Cada par = 1 padrão novo no ímpar + 1 padrão novo no par. Nenhum padrão novo se repete como "novo".
 
+## Limite de nível (CEFR A1) — regra rígida
+Permitido: *to be*, *have*, *can*, imperativo, *there is/are*, presente simples, presente contínuo básico, *like/want/need*, *this/that*, plurais, preposições simples, números, horas, cores, perguntas wh- simples.
+Blocos prontos aceitos (sem ensinar a gramática): *I would like…*, *Can/Could you…?*, *May I…?*, *Let us…*.
+**Proibido no A1**: futuro (*will*, *going to*), passado (*was/were*, *did*, verbos no passado), *should*, *have to*, *used to*, presente perfeito, comparativos longos, condicionais.
+Passado e futuro ficam para o A2 (reserva em `tools/pocket/reserva_a2/`). Porta automática: `tools/pocket/audit_nivel.py`.
+
 ## Estágios (80 episódios cada = 40 pares)
-| # | Episódios | Padrões novos (ordem de entrada) |
-|---|-----------|----------------------------------|
-| 1 | 1–80 | I am / you are, this/that, cumprimentos, números, please/thanks, Can I have…, my name is, where are you from |
-| 2 | 81–160 | have/has, possessivos, like/love, família, horas, dias, a/an, plural, what's this |
-| 3 | 161–240 | wh-perguntas, there is/are, how much/many, preposições de lugar, direções, I would like, do you have |
-| 4 | 241–320 | presente simples I/you/we/they, he/she (-s), do/does, advérbios de frequência, can/can't, rotina |
-| 5 | 321–400 | presente contínuo, tempo/clima, roupas, descrever pessoas/coisas, adjetivos, cores |
-| 6 | 401–480 | want/need/like + to/ing, some/any, contáveis, compras, comida, pedidos |
-| 7 | 481–560 | was/were, passado regular, expressões de tempo (ago, last, yesterday) |
-| 8 | 561–640 | passado irregular, perguntas/negativas no passado, contar histórias |
-| 9 | 641–720 | going to, will, should, have to, may/could, convites, planos |
-| 10 | 721–800 | comparativos/superlativos, because/so/but, imperativo, conectores, revisão geral, grande final |
+| # | Episódios | Padrões novos |
+|---|-----------|---------------|
+| 1 | 1–80 | I am / you are, my name is, where are you from, this/that, cumprimentos, please/thanks, números 1–20, Can I have… |
+| 2 | 81–160 | have/has, possessivos, família, horas, dias, a/an, plural, what is this, cores |
+| 3 | 161–240 | wh-perguntas, there is/are, how much/many, preposições de lugar, direções simples, Do you have… |
+| 4 | 241–320 | presente simples (I/you/we/they), he/she (-s), do/does, advérbios de frequência, rotina |
+| 5 | 321–400 | can/can't, like/love/want/need + substantivo e + to, comida, pedidos, I would like |
+| 6 | 401–480 | presente contínuo (agora), clima, roupas, descrever pessoas e lugares, adjetivos |
+| 7 | 481–560 | some/any, contáveis/incontáveis, compras, dinheiro, lugares da cidade, transporte |
+| 8 | 561–640 | imperativo, instruções, regras e placas, saúde e corpo, casa e objetos |
+| 9 | 641–720 | pronomes (me/him/her…), and/but/or/because simples, gostos, opiniões curtas, convites com Let us |
+| 10 | 721–800 | revisão por temas, mini-diálogos mistos, grande final do A1 |
 
 ## Domínios de vocabulário (distribuídos entre os pares; cada um aparece em ≥3 estágios)
 Cotidiano: casa, cidade, transporte, compras, comida, saúde, trabalho, escola, tecnologia, dinheiro.
@@ -33,7 +39,7 @@ Regra: personagens e cenas de gênero são **originais**, nunca obras reais.
 4. Mapa auditável: `tools/pocket/mapa_a1.csv` (ordem, estágio, ímpar/par, K, domínio, palavras novas) é gerado e checado a cada build.
 
 ## Como encaixar os 210 atuais
-Cada episódio atual é etiquetado por estágio (pelo padrão em K) e assume uma vaga ímpar do estágio. Estimativa grosseira por regra automática: ~90 em estágios 1–2, ~30 em 3, ~26 em 4, ~13 em 5, ~15 em 7, ~22 em 9, ~5 em 10. Lacunas (estágios 2, 6, 8, 10 e o resto do 5/7/9) são preenchidas por ímpares novos. Ids passam a seguir a ordem final (950001…950800).
+Cada episódio atual é etiquetado por estágio (pelo padrão em K) e assume uma vaga ímpar do estágio. Os arcos 17 (passado) e 18 (futuro) foram para a reserva do A2. Dos demais, cerca de 94 episódios ainda têm will/passado/should/have to espalhados e serão reescritos antes de entrar no mapa.
 
 ## Ordem de trabalho
 1. Gerar o mapa/CSV com a etiquetagem manual dos 210. 
