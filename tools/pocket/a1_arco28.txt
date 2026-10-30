@@ -1,0 +1,483 @@
+# Arco 28 · Arte e museu
+T: At the art museum | Entrar num museu de arte | museum | New York | Dee,f,👩🏿,guia
+K: Welcome to the museum. | Bem-vindo ao museu.
+M: Hoje você visita um museu de arte.
+D: Dee|Welcome to the museum. Here is your map.|Bem-vindo ao museu. Aqui está o seu mapa.
+D: You|Thank you. What is on the first floor?|Obrigado. O que tem no primeiro andar?
+D: Dee|There are old paintings and statues.|Tem pinturas antigas e estátuas.
+D: You|And on the second floor?|E no segundo andar?
+D: Dee|There is modern art. It is colorful.|Tem arte moderna. É colorida.
+D: You|Can I take photos?|Posso tirar fotos?
+D: Dee|Yes, but no flash, please.|Pode, mas sem flash, por favor.
+D: You|Great. I love art.|Ótimo. Eu adoro arte.
+V: museum|museu;paintings|pinturas;statues|estátuas;modern|moderna;flash|flash
+B: There are old {0}.|Tem {0} antigas.|paintings=pinturas;statues=estátuas;coins=moedas
+B: Can I take {0}?|Posso tirar {0}?|photos=fotos;a photo=uma foto;a picture=um retrato
+S: Dee|Welcome to the museum. Here is your map.|Bem-vindo ao museu. Aqui está o seu mapa.|Thank you. What is on the first floor?|Obrigado. O que tem no primeiro andar?
+S: Dee|Yes, but no flash, please.|Pode, mas sem flash, por favor.|Great. I love art.|Ótimo. Eu adoro arte.
+R: Here is your map.|Aqui está o seu mapa.
+R: There are old paintings.|Tem pinturas antigas.
+R: Can I take photos?|Posso tirar fotos?
+R: No flash, please.|Sem flash, por favor.
+X: I love art.|Eu adoro arte.
+C: Muitos museus americanos têm um dia de entrada gratuita por mês.
+N: Próximo: uma pintura famosa.
+
+T: A famous painting | Descrever uma pintura | museum | Paris | Dee,f,👩🏿,guia
+K: This painting is beautiful. | Esta pintura é linda.
+M: Hoje você descreve uma pintura.
+D: Dee|Look at this painting. What do you see?|Olhe esta pintura. O que você vê?
+D: You|I see a woman in a blue dress.|Vejo uma mulher de vestido azul.
+D: Dee|Yes. She has a small smile.|Sim. Ela tem um sorriso pequeno.
+D: You|Where is she? Is it a garden?|Onde ela está? É um jardim?
+D: Dee|It is a garden with big trees.|É um jardim com árvores grandes.
+D: You|The colors are so soft.|As cores são tão suaves.
+D: Dee|This painting is very old.|Esta pintura é muito antiga.
+D: You|It is beautiful. I like it.|É linda. Eu gosto.
+V: woman|mulher;dress|vestido;smile|sorriso;colors|cores;soft|suaves
+B: She wears a {0} dress.|Ela usa um vestido {0}.|blue=azul;red=vermelho;white=branco
+B: The colors are {0}.|As cores são {0}.|soft=suaves;bright=fortes;dark=escuras
+S: Dee|Look at this painting. What do you see?|Olhe esta pintura. O que você vê?|I see a woman in a blue dress.|Vejo uma mulher de vestido azul.
+S: Dee|This painting is very old.|Esta pintura é muito antiga.|It is beautiful. I like it.|É linda. Eu gosto.
+R: What do you see?|O que você vê?
+R: I see a woman in a blue dress.|Vejo uma mulher de vestido azul.
+R: She has a small smile.|Ela tem um sorriso pequeno.
+R: The colors are soft.|As cores são suaves.
+X: I like it.|Eu gosto.
+C: "In a blue dress" mostra a roupa que alguém está usando.
+N: Próximo: a estátua.
+
+T: The old statue | Estátuas e esculturas | plaza | Rome | Walt,m,🧑🏿,guia
+K: This statue is very tall. | Esta estátua é muito alta.
+M: Hoje você descreve uma estátua.
+D: Walt|Look at the statue in the square.|Olhe a estátua na praça.
+D: You|It is very tall. Is it a man?|É muito alta. É um homem?
+D: Walt|Yes. He holds a book.|Sim. Ele segura um livro.
+D: You|What is it? Is it wood?|O que é? É madeira?
+D: Walt|It is stone. It is very heavy.|É pedra. É muito pesada.
+D: You|Is it old?|É antiga?
+D: Walt|Yes, it is two hundred years old.|Sim, tem duzentos anos.
+D: You|I take a photo of it.|Eu tiro uma foto dela.
+V: statue|estátua;square|praça;stone|pedra;heavy|pesada;years|anos
+B: The statue is {0}.|A estátua é {0}.|tall=alta;old=antiga;heavy=pesada
+B: It is two hundred {0} old.|Tem duzentos {0}.|years=anos;days=dias;weeks=semanas
+S: Walt|Look at the statue in the square.|Olhe a estátua na praça.|It is very tall. Is it a man?|É muito alta. É um homem?
+S: Walt|Is it old?|É antiga?|Yes, it is two hundred years old.|Sim, tem duzentos anos.
+R: Look at the statue.|Olhe a estátua.
+R: He holds a book.|Ele segura um livro.
+R: It is stone.|É pedra.
+R: It is two hundred years old.|Tem duzentos anos.
+X: Take a photo!|Tire uma foto!
+C: Para idade de coisas, "two hundred years old" vem depois do "it is".
+N: Próximo: cores e mistura.
+
+T: Mixing colors | Misturar cores | classroom | Austin | Rosa,f,👩🏽,professora
+K: Blue and yellow make green. | Azul e amarelo fazem verde.
+M: Hoje você mistura cores.
+D: Rosa|Welcome to art class. Take your brush.|Bem-vindo à aula de arte. Pegue o pincel.
+D: You|I have the brush. What color do I use?|Estou com o pincel. Que cor eu uso?
+D: Rosa|Use blue and yellow.|Use azul e amarelo.
+D: You|Now I mix them. It is green!|Agora eu misturo. Fica verde!
+D: Rosa|Yes! Red and white make pink.|Sim! Vermelho e branco fazem rosa.
+D: You|And what do red and yellow make?|E o que vermelho e amarelo fazem?
+D: Rosa|They make orange.|Eles fazem laranja.
+D: You|Colors are magic.|As cores são mágicas.
+V: brush|pincel;mix|misturar;yellow|amarelo;pink|rosa;orange|laranja
+B: Blue and yellow {0} green.|Azul e amarelo {0} verde.|make=fazem;give=dão;show=mostram
+B: Take your {0}.|Pegue {0}.|brush=o pincel;paper=o papel;paint=a tinta
+S: Rosa|Welcome to art class. Take your brush.|Bem-vindo à aula de arte. Pegue o pincel.|I have the brush. What color do I use?|Estou com o pincel. Que cor eu uso?
+S: Rosa|Yes! Red and white make pink.|Sim! Vermelho e branco fazem rosa.|And what do red and yellow make?|E o que vermelho e amarelo fazem?
+R: Take your brush.|Pegue o pincel.
+R: Blue and yellow make green.|Azul e amarelo fazem verde.
+R: Red and white make pink.|Vermelho e branco fazem rosa.
+R: Colors are magic.|As cores são mágicas.
+X: What color?|Que cor?
+C: Primárias em inglês: red, blue, yellow.
+N: Próximo: desenhar.
+
+T: Let me draw you | Desenhar um retrato | park | Boston | Kai,m,🧑🏻,artista
+K: Sit here. I draw you. | Sente aqui. Eu desenho você.
+M: Hoje você posa para um desenho.
+D: Kai|Sit here, please. I draw your face.|Sente aqui, por favor. Eu desenho o seu rosto.
+D: You|Okay. Do I move?|Certo. Eu me mexo?
+D: Kai|No, stay still. Look at the tree.|Não, fique parado. Olhe a árvore.
+D: You|How long does it take?|Quanto tempo demora?
+D: Kai|About ten minutes.|Cerca de dez minutos.
+D: You|Can I see?|Posso ver?
+D: Kai|Not yet. It is a surprise.|Ainda não. É uma surpresa.
+D: You|I like your pencil. It is very soft.|Gosto do seu lápis. É muito macio.
+V: draw|desenhar;face|rosto;still|parado;pencil|lápis;surprise|surpresa
+B: I draw your {0}.|Eu desenho {0}.|face=o seu rosto;hand=a sua mão;dog=o seu cachorro
+B: Stay {0}.|Fique {0}.|still=parado;here=aqui;calm=calmo
+S: Kai|Sit here, please. I draw your face.|Sente aqui, por favor. Eu desenho o seu rosto.|Okay. Do I move?|Certo. Eu me mexo?
+S: Kai|Not yet. It is a surprise.|Ainda não. É uma surpresa.|I like your pencil. It is very soft.|Gosto do seu lápis. É muito macio.
+R: Sit here, please.|Sente aqui, por favor.
+R: I draw your face.|Eu desenho o seu rosto.
+R: Stay still.|Fique parado.
+R: It takes ten minutes.|Leva dez minutos.
+X: Not yet.|Ainda não.
+C: "Stay still" pede que alguém não se mexa.
+N: Próximo: fotografia.
+
+T: Taking pictures | Fotografia | street | Chicago | Lia,f,👩🏽,fotógrafa
+K: Smile for the camera. | Sorria para a câmera.
+M: Hoje você aprende a pedir uma foto.
+D: Lia|I take photos of the city. Do you like photography?|Eu tiro fotos da cidade. Você gosta de fotografia?
+D: You|Yes, but I am not good.|Gosto, mas não sou bom.
+D: Lia|It is easy. Hold the camera straight.|É fácil. Segure a câmera reta.
+D: You|Like this?|Assim?
+D: Lia|Yes. Now look at the light.|Sim. Agora olhe a luz.
+D: You|The light is soft in the morning.|A luz é suave de manhã.
+D: Lia|Smile for the camera!|Sorria para a câmera!
+D: You|Click! Great photo.|Clique! Ótima foto.
+V: photography|fotografia;camera|câmera;straight|reta;light|luz;click|clique
+B: Hold the camera {0}.|Segure a câmera {0}.|straight=reta;still=parada;high=alta
+B: Smile for the {0}.|Sorria para {0}.|camera=a câmera;photo=a foto;picture=o retrato
+S: Lia|I take photos of the city. Do you like photography?|Eu tiro fotos da cidade. Você gosta de fotografia?|Yes, but I am not good.|Gosto, mas não sou bom.
+S: Lia|Smile for the camera!|Sorria para a câmera!|Click! Great photo.|Clique! Ótima foto.
+R: Do you like photography?|Você gosta de fotografia?
+R: Hold the camera straight.|Segure a câmera reta.
+R: The light is soft.|A luz é suave.
+R: Smile for the camera!|Sorria para a câmera!
+X: Great photo!|Ótima foto!
+C: Fotógrafos amam a "golden hour", a luz suave do começo da manhã e do fim da tarde.
+N: Próximo: argila e cerâmica.
+
+T: Clay and pots | Cerâmica | classroom | Santa Fe | Ruth,f,👩🏻,ceramista
+K: Make a pot with clay. | Faça um vaso de argila.
+M: Hoje você faz um vaso.
+D: Ruth|Welcome to the pottery class. Take some clay.|Bem-vindo à aula de cerâmica. Pegue argila.
+D: You|It is soft and cold.|É macia e fria.
+D: Ruth|Put it on the wheel. Wet your hands.|Ponha na roda. Molhe as mãos.
+D: You|Now I press with my thumbs.|Agora eu aperto com os polegares.
+D: Ruth|Good. Make the walls thin.|Bom. Deixe as paredes finas.
+D: You|It looks like a pot!|Parece um vaso!
+D: Ruth|Yes! We bake it in the oven.|Sim! Assamos no forno.
+D: You|I want to paint it blue.|Quero pintar de azul.
+V: clay|argila;wheel|roda;thumbs|polegares;walls|paredes;oven|forno
+B: Put it on the {0}.|Ponha na {0}.|wheel=roda;table=mesa;shelf=prateleira
+B: Make the walls {0}.|Deixe as paredes {0}.|thin=finas;thick=grossas;smooth=lisas
+S: Ruth|Welcome to the pottery class. Take some clay.|Bem-vindo à aula de cerâmica. Pegue argila.|It is soft and cold.|É macia e fria.
+S: Ruth|Yes! We bake it in the oven.|Sim! Assamos no forno.|I want to paint it blue.|Quero pintar de azul.
+R: Take some clay.|Pegue argila.
+R: Put it on the wheel.|Ponha na roda.
+R: Make the walls thin.|Deixe as paredes finas.
+R: We bake it in the oven.|Assamos no forno.
+X: It looks like a pot!|Parece um vaso!
+C: "Pottery" é a arte de fazer vasos e pratos de argila.
+N: Próximo: teatro.
+
+T: A night at the theater | Uma peça de teatro | ballroom | New York | Max,m,🧑🏼,lanterninha
+K: The play starts soon. | A peça começa já.
+M: Hoje você assiste a uma peça.
+D: Max|Good evening. May I see your tickets?|Boa noite. Posso ver os seus ingressos?
+D: You|Here they are.|Aqui estão.
+D: Max|Your seats are in row eight.|Seus lugares ficam na fileira oito.
+D: You|Thank you. When does the play start?|Obrigado. Quando a peça começa?
+D: Max|It starts in ten minutes.|Começa em dez minutos.
+D: You|Is there an intermission?|Tem intervalo?
+D: Max|Yes, there is one for twenty minutes.|Sim, tem um de vinte minutos.
+D: You|Perfect. I love the theater.|Perfeito. Eu adoro teatro.
+V: theater|teatro;play|peça;row|fileira;intermission|intervalo;tickets|ingressos
+B: Your seats are in row {0}.|Seus lugares ficam na fileira {0}.|eight=oito;five=cinco;ten=dez
+B: It starts in {0} minutes.|Começa em {0} minutos.|ten=dez;five=cinco;fifteen=quinze
+S: Max|Good evening. May I see your tickets?|Boa noite. Posso ver os seus ingressos?|Here they are.|Aqui estão.
+S: Max|It starts in ten minutes.|Começa em dez minutos.|Is there an intermission?|Tem intervalo?
+R: May I see your tickets?|Posso ver os seus ingressos?
+R: Your seats are in row eight.|Seus lugares ficam na fileira oito.
+R: When does the play start?|Quando a peça começa?
+R: There is an intermission.|Tem intervalo.
+X: Here they are.|Aqui estão.
+C: Em Nova York, o teatro da Broadway tem centenas de peças e musicais.
+N: Próximo: cartões e artesanato.
+
+T: Handmade gifts | Artesanato | kitchen | Portland | Mia,f,👩🏻,amiga
+K: I make a card by hand. | Eu faço um cartão à mão.
+M: Hoje você faz um presente à mão.
+D: Mia|Let us make a card for Rosa.|Vamos fazer um cartão para a Rosa.
+D: You|Good idea. I have paper and scissors.|Boa ideia. Tenho papel e tesoura.
+D: Mia|I have glue and colored pens.|Tenho cola e canetas coloridas.
+D: You|Cut a heart from the red paper.|Corte um coração do papel vermelho.
+D: Mia|Okay. Now glue it on the card.|Certo. Agora cole no cartão.
+D: You|Write a short message inside.|Escreva uma mensagem curta dentro.
+D: Mia|"You are a great friend."|"Você é uma ótima amiga."
+D: You|She loves handmade gifts.|Ela adora presentes feitos à mão.
+V: scissors|tesoura;glue|cola;heart|coração;message|mensagem;inside|dentro
+B: Cut a {0}.|Corte {0}.|heart=um coração;star=uma estrela;circle=um círculo
+B: Write a {0} message.|Escreva uma mensagem {0}.|short=curta;kind=gentil;funny=engraçada
+S: Mia|Let us make a card for Rosa.|Vamos fazer um cartão para a Rosa.|Good idea. I have paper and scissors.|Boa ideia. Tenho papel e tesoura.
+S: Mia|Okay. Now glue it on the card.|Certo. Agora cole no cartão.|Write a short message inside.|Escreva uma mensagem curta dentro.
+R: Let us make a card.|Vamos fazer um cartão.
+R: I have paper and scissors.|Tenho papel e tesoura.
+R: Cut a heart from the red paper.|Corte um coração do papel vermelho.
+R: Write a short message inside.|Escreva uma mensagem curta dentro.
+X: Good idea.|Boa ideia.
+C: Um presente "handmade" tem valor especial porque é feito à mão.
+N: Próximo: desafio, a galeria.
+
+T: My own gallery | Desafio do arco: exposição | museum | Chicago | Dee,f,👩🏿,curadora
+K: This is my first exhibition. | Esta é a minha primeira exposição.
+M: Hoje você mostra suas obras numa galeria.
+D: Dee|Welcome to your exhibition!|Bem-vindo à sua exposição!
+D: You|Thank you. I am nervous.|Obrigado. Estou nervoso.
+D: Dee|Do not be nervous. Your paintings are lovely.|Não fique nervoso. Suas pinturas são lindas.
+D: You|This one is my favorite. It has bright colors.|Esta é a minha favorita. Tem cores fortes.
+D: Dee|People come in. They look at your art.|As pessoas entram. Elas olham a sua arte.
+D: You|A woman asks the price of this one.|Uma mulher pergunta o preço desta.
+D: Dee|Tell her it is one hundred dollars.|Diga a ela que são cem dólares.
+D: You|This is the best day of my life!|Este é o melhor dia da minha vida!
+V: exhibition|exposição;nervous|nervoso;lovely|lindas;price|preço;bright|fortes
+B: I am {0}.|Eu estou {0}.|nervous=nervoso;happy=feliz;excited=animado
+B: It is {0} dollars.|São {0} dólares.|one hundred=cem;fifty=cinquenta;twenty=vinte
+S: Dee|Welcome to your exhibition!|Bem-vindo à sua exposição!|Thank you. I am nervous.|Obrigado. Estou nervoso.
+S: Dee|Tell her it is one hundred dollars.|Diga a ela que são cem dólares.|This is the best day of my life!|Este é o melhor dia da minha vida!
+R: Welcome to your exhibition!|Bem-vindo à sua exposição!
+R: I am nervous.|Estou nervoso.
+R: Your paintings are lovely.|Suas pinturas são lindas.
+R: It is one hundred dollars.|São cem dólares.
+X: Do not be nervous.|Não fique nervoso.
+C: "Gallery" é a sala onde uma arte é exposta e vendida.
+N: Próximo: moda e cores.
+BOSS: 1
+
+# Arco 29 · Moda e cores
+T: What are you wearing? | Roupas que se usa | street | New York | Mia,f,👩🏻,amiga
+K: I wear a blue shirt. | Eu uso uma camisa azul.
+M: Hoje você descreve o que alguém veste.
+D: Mia|What are you wearing today?|O que você está vestindo hoje?
+D: You|I wear a blue shirt and black pants.|Visto uma camisa azul e calças pretas.
+D: Mia|Nice. Do you like my jacket?|Legal. Você gosta da minha jaqueta?
+D: You|Yes, it is cool. It is red.|Gosto, é legal. É vermelha.
+D: Mia|Thank you. I wear it every day.|Obrigada. Eu uso todo dia.
+D: You|And what about shoes?|E os sapatos?
+D: Mia|I wear white sneakers.|Uso tênis brancos.
+D: You|We both look great!|Nós dois estamos ótimos!
+V: wearing|vestindo;shirt|camisa;pants|calças;jacket|jaqueta;sneakers|tênis
+B: I wear a {0} shirt.|Eu uso uma camisa {0}.|blue=azul;white=branca;green=verde
+B: She wears {0}.|Ela usa {0}.|sneakers=tênis;boots=botas;sandals=sandálias
+S: Mia|What are you wearing today?|O que você está vestindo hoje?|I wear a blue shirt and black pants.|Visto uma camisa azul e calças pretas.
+S: Mia|Nice. Do you like my jacket?|Legal. Você gosta da minha jaqueta?|Yes, it is cool. It is red.|Gosto, é legal. É vermelha.
+R: What are you wearing today?|O que você está vestindo hoje?
+R: I wear a blue shirt.|Eu uso uma camisa azul.
+R: I wear black pants.|Eu uso calças pretas.
+R: She wears white sneakers.|Ela usa tênis brancos.
+X: Cool!|Legal!
+C: Pants é plural em inglês: "my pants are black".
+N: Próximo: uma loja de roupas.
+
+T: A shopping day | Comprar roupas | shop | Chicago | Lia,f,👩🏽,vendedora
+K: I want a bigger size. | Quero um tamanho maior.
+M: Hoje você compra roupas.
+D: Lia|Welcome! Can I help you?|Bem-vindo! Posso ajudar?
+D: You|Yes, I want a T-shirt.|Sim, quero uma camiseta.
+D: Lia|What size do you wear?|Que tamanho você usa?
+D: You|Medium, please.|Médio, por favor.
+D: Lia|Here you go. Do you like this color?|Aqui está. Você gosta desta cor?
+D: You|It is nice, but I want green.|É legal, mas quero verde.
+D: Lia|We have green over there.|Temos verde ali.
+D: You|Perfect. How much is it?|Perfeito. Quanto custa?
+V: size|tamanho;medium|médio;T-shirt|camiseta;color|cor;green|verde
+B: I want a {0} T-shirt.|Quero uma camiseta {0}.|green=verde;blue=azul;white=branca
+B: What size do you {0}?|Que tamanho você {0}?|wear=usa;need=precisa;want=quer
+S: Lia|Welcome! Can I help you?|Bem-vindo! Posso ajudar?|Yes, I want a T-shirt.|Sim, quero uma camiseta.
+S: Lia|What size do you wear?|Que tamanho você usa?|Medium, please.|Médio, por favor.
+R: I want a T-shirt.|Quero uma camiseta.
+R: What size do you wear?|Que tamanho você usa?
+R: Medium, please.|Médio, por favor.
+R: How much is it?|Quanto custa?
+X: Here you go.|Aqui está.
+C: Tamanhos nos EUA: small, medium, large.
+N: Próximo: provar a roupa.
+
+T: In the fitting room | Provador | shop | Boston | Lia,f,👩🏽,vendedora
+K: It is too small. | Está pequeno demais.
+M: Hoje você prova roupas.
+D: You|Can I try this on?|Posso provar isto?
+D: Lia|Of course. The fitting room is there.|Claro. O provador é ali.
+D: You|It is too small. Do you have a bigger size?|Está pequeno demais. Tem um tamanho maior?
+D: Lia|Yes, here is a large.|Tem, aqui está um grande.
+D: You|This one fits well. I like it.|Este serve bem. Eu gosto.
+D: Lia|It looks great on you.|Fica ótimo em você.
+D: You|Is it on sale?|Está em promoção?
+D: Lia|Yes, it is twenty percent off.|Sim, está com vinte por cento de desconto.
+V: try on|provar;fitting room|provador;bigger|maior;fits|serve;sale|promoção
+B: It is too {0}.|Está {0} demais.|small=pequeno;big=grande;long=comprido
+B: It looks great {0}.|Fica ótimo {0}.|on you=em você;on her=nela;on him=nele
+S: You|Can I try this on?|Posso provar isto?|Of course. The fitting room is there.|Claro. O provador é ali.
+S: You|It is too small. Do you have a bigger size?|Está pequeno demais. Tem um tamanho maior?|Yes, here is a large.|Tem, aqui está um grande.
+R: Can I try this on?|Posso provar isto?
+R: It is too small.|Está pequeno demais.
+R: This one fits well.|Este serve bem.
+R: Is it on sale?|Está em promoção?
+X: It looks great on you.|Fica ótimo em você.
+C: "On sale" significa em promoção; "twenty percent off" é o desconto.
+N: Próximo: sapatos.
+
+T: New shoes | Comprar sapatos | shop | Seattle | Max,m,🧑🏼,vendedor
+K: What size are your shoes? | Que tamanho são os seus sapatos?
+M: Hoje você compra sapatos.
+D: Max|What can I do for you?|Em que posso ajudar?
+D: You|I want new shoes for work.|Quero sapatos novos para o trabalho.
+D: Max|What size are your feet?|Que tamanho são os seus pés?
+D: You|I am a size nine.|Calço o número nove.
+D: Max|Here is a black pair, size nine.|Aqui está um par preto, número nove.
+D: You|They are comfortable.|São confortáveis.
+D: Max|Walk around the store.|Ande pela loja.
+D: You|I take them. How much are they?|Eu levo. Quanto custam?
+V: shoes|sapatos;pair|par;comfortable|confortáveis;feet|pés;store|loja
+B: I am a size {0}.|Eu calço o número {0}.|nine=nove;eight=oito;ten=dez
+B: They are {0}.|São {0}.|comfortable=confortáveis;tight=apertados;loose=largos
+S: Max|What can I do for you?|Em que posso ajudar?|I want new shoes for work.|Quero sapatos novos para o trabalho.
+S: Max|Walk around the store.|Ande pela loja.|I take them. How much are they?|Eu levo. Quanto custam?
+R: I want new shoes.|Quero sapatos novos.
+R: I am a size nine.|Eu calço o número nove.
+R: They are comfortable.|São confortáveis.
+R: How much are they?|Quanto custam?
+X: What can I do for you?|Em que posso ajudar?
+C: Tamanhos de sapato nos EUA são diferentes dos do Brasil: o 9 americano é cerca de 41–42.
+N: Próximo: cores favoritas.
+
+T: My favorite color | Cores favoritas | living | Miami | Jess,f,🧑🏼,amiga
+K: My favorite color is purple. | Minha cor favorita é roxo.
+M: Hoje você fala de cores.
+D: Jess|What is your favorite color?|Qual é a sua cor favorita?
+D: You|My favorite color is purple. And yours?|Minha cor favorita é roxo. E a sua?
+D: Jess|Mine is yellow. It is happy.|A minha é amarelo. É alegre.
+D: You|I see many yellow flowers here.|Vejo muitas flores amarelas aqui.
+D: Jess|Yes. My room is yellow too.|Sim. O meu quarto é amarelo também.
+D: You|Mine is white and gray.|O meu é branco e cinza.
+D: Jess|Gray is calm.|Cinza é calmo.
+D: You|Colors change how I feel.|As cores mudam como eu me sinto.
+V: purple|roxo;yellow|amarelo;gray|cinza;room|quarto;feel|sentir
+B: My favorite color is {0}.|Minha cor favorita é {0}.|purple=roxo;yellow=amarelo;orange=laranja
+B: Gray is {0}.|Cinza é {0}.|calm=calmo;serious=sério;soft=suave
+S: Jess|What is your favorite color?|Qual é a sua cor favorita?|My favorite color is purple. And yours?|Minha cor favorita é roxo. E a sua?
+S: Jess|Gray is calm.|Cinza é calmo.|Colors change how I feel.|As cores mudam como eu me sinto.
+R: What is your favorite color?|Qual é a sua cor favorita?
+R: My favorite color is purple.|Minha cor favorita é roxo.
+R: Mine is yellow.|A minha é amarelo.
+R: Colors change how I feel.|As cores mudam como eu me sinto.
+X: And yours?|E a sua?
+C: "Mine" e "yours" substituem "my color" e "your color".
+N: Próximo: acessórios.
+
+T: Hats, bags and watches | Acessórios | shop | Paris | Lia,f,👩🏽,vendedora
+K: I like your hat. | Eu gosto do seu chapéu.
+M: Hoje você compra acessórios.
+D: You|I like your hat. Where is it from?|Eu gosto do seu chapéu. De onde é?
+D: Lia|It is from this shop. We have more.|É desta loja. Temos mais.
+D: You|Do you have a bag too?|Vocês têm bolsa também?
+D: Lia|Yes. This brown bag is popular.|Sim. Esta bolsa marrom é popular.
+D: You|It is nice. How much is it?|É legal. Quanto custa?
+D: Lia|It is forty dollars.|Custa quarenta dólares.
+D: You|And this watch? Is it expensive?|E este relógio? É caro?
+D: Lia|No, it is only ten dollars.|Não, custa só dez dólares.
+V: hat|chapéu;bag|bolsa;watch|relógio;brown|marrom;popular|popular
+B: I like your {0}.|Eu gosto d{0}.|hat=o seu chapéu;bag=a sua bolsa;watch=o seu relógio
+B: It is {0} dollars.|Custa {0} dólares.|forty=quarenta;ten=dez;thirty=trinta
+S: You|I like your hat. Where is it from?|Eu gosto do seu chapéu. De onde é?|It is from this shop. We have more.|É desta loja. Temos mais.
+S: Lia|It is forty dollars.|Custa quarenta dólares.|And this watch? Is it expensive?|E este relógio? É caro?
+R: I like your hat.|Eu gosto do seu chapéu.
+R: Do you have a bag too?|Vocês têm bolsa também?
+R: It is forty dollars.|Custa quarenta dólares.
+R: This watch is only ten dollars.|Este relógio custa só dez dólares.
+X: Where is it from?|De onde é?
+C: Em inglês, "popular" também significa que muita gente gosta.
+N: Próximo: roupa para o clima.
+
+T: What to wear? | Escolher roupa pelo clima | living | Chicago | Ruth,f,👩🏻,mãe
+K: Wear a warm coat. | Use um casaco quente.
+M: Hoje você escolhe roupa pelo tempo.
+D: Ruth|It is cold outside. Wear a warm coat.|Está frio lá fora. Use um casaco quente.
+D: You|Okay. Do I need gloves?|Certo. Preciso de luvas?
+D: Ruth|Yes, and a scarf too.|Sim, e um cachecol também.
+D: You|What about my hat?|E o meu chapéu?
+D: Ruth|Wear it. Your ears are cold.|Use. Suas orelhas estão frias.
+D: You|I am ready. I look like a snowman!|Estou pronto. Pareço um boneco de neve!
+D: Ruth|Ha! You look warm.|Ha! Você parece quentinho.
+D: You|Thank you. Bye!|Obrigado. Tchau!
+V: warm|quente;gloves|luvas;scarf|cachecol;ears|orelhas;snowman|boneco de neve
+B: Wear a {0} coat.|Use um casaco {0}.|warm=quente;long=comprido;thick=grosso
+B: Do I need {0}?|Preciso de {0}?|gloves=luvas;a scarf=um cachecol;boots=botas
+S: Ruth|It is cold outside. Wear a warm coat.|Está frio lá fora. Use um casaco quente.|Okay. Do I need gloves?|Certo. Preciso de luvas?
+S: Ruth|Ha! You look warm.|Ha! Você parece quentinho.|Thank you. Bye!|Obrigado. Tchau!
+R: Wear a warm coat.|Use um casaco quente.
+R: Do I need gloves?|Preciso de luvas?
+R: Wear a scarf too.|Use um cachecol também.
+R: You look warm.|Você parece quentinho.
+X: Bye!|Tchau!
+C: Em invernos americanos, se diz "bundle up": agasalhe-se bem.
+N: Próximo: uma festa de gala.
+
+T: A party dress | Roupa para uma festa | ballroom | New York | Mia,f,👩🏻,amiga
+K: You look elegant. | Você está elegante.
+M: Hoje você escolhe uma roupa elegante.
+D: Mia|I have a party tonight. What do I wear?|Tenho uma festa hoje. O que eu visto?
+D: You|Wear the long black dress.|Use o vestido preto comprido.
+D: Mia|It is nice. Do I need jewelry?|É bonito. Preciso de joias?
+D: You|Yes, a necklace and earrings.|Sim, um colar e brincos.
+D: Mia|And shoes?|E sapatos?
+D: You|High heels are elegant.|Salto alto é elegante.
+D: Mia|Oh, they hurt my feet!|Ah, eles machucam meus pés!
+D: You|Then wear flat shoes. They are comfortable.|Então use sapatos baixos. São confortáveis.
+V: dress|vestido;jewelry|joias;necklace|colar;earrings|brincos;heels|salto
+B: Wear the {0} dress.|Use o vestido {0}.|long=comprido;short=curto;red=vermelho
+B: I need {0}.|Preciso de {0}.|a necklace=um colar;earrings=brincos;a bag=uma bolsa
+S: Mia|I have a party tonight. What do I wear?|Tenho uma festa hoje. O que eu visto?|Wear the long black dress.|Use o vestido preto comprido.
+S: Mia|Oh, they hurt my feet!|Ah, eles machucam meus pés!|Then wear flat shoes. They are comfortable.|Então use sapatos baixos. São confortáveis.
+R: What do I wear?|O que eu visto?
+R: Wear the long black dress.|Use o vestido preto comprido.
+R: High heels are elegant.|Salto alto é elegante.
+R: Flat shoes are comfortable.|Sapatos baixos são confortáveis.
+X: You look elegant.|Você está elegante.
+C: "Dress code" é o tipo de roupa pedido numa festa: casual, formal, black tie.
+N: Próximo: roupa de trabalho.
+
+T: Work clothes | Roupa de trabalho | office | Denver | Sam,m,🧑🏻,gerente
+K: We wear a uniform. | Nós usamos uniforme.
+M: Hoje você fala de uniforme e roupa de trabalho.
+D: Sam|Welcome to the team. Here is your uniform.|Bem-vindo ao time. Aqui está o seu uniforme.
+D: You|Thank you. Is it a shirt and pants?|Obrigado. É camisa e calça?
+D: Sam|Yes, and a name badge.|Sim, e um crachá com o nome.
+D: You|Do I wear it every day?|Eu uso todo dia?
+D: Sam|Yes, from Monday to Friday.|Sim, de segunda a sexta.
+D: You|On Friday, can I wear jeans?|Na sexta, posso usar jeans?
+D: Sam|Yes, Friday is casual day.|Sim, sexta é dia casual.
+D: You|I love casual Fridays!|Adoro as sextas casuais!
+V: uniform|uniforme;badge|crachá;jeans|jeans;casual|casual;Monday|segunda
+B: Wear your {0}.|Use {0}.|uniform=o uniforme;badge=o crachá;jacket=a jaqueta
+B: Friday is {0} day.|Sexta é dia {0}.|casual=casual;free=livre;short=curto
+S: Sam|Welcome to the team. Here is your uniform.|Bem-vindo ao time. Aqui está o seu uniforme.|Thank you. Is it a shirt and pants?|Obrigado. É camisa e calça?
+S: You|On Friday, can I wear jeans?|Na sexta, posso usar jeans?|Yes, Friday is casual day.|Sim, sexta é dia casual.
+R: Here is your uniform.|Aqui está o seu uniforme.
+R: Wear your name badge.|Use o seu crachá.
+R: I wear it every day.|Eu uso todo dia.
+R: Friday is casual day.|Sexta é dia casual.
+X: I love casual Fridays!|Adoro as sextas casuais!
+C: "Casual Friday" é a prática de vestir roupa informal na sexta.
+N: Próximo: desafio, desfile de moda.
+
+T: Fashion show | Desafio do arco: desfile | ballroom | Paris | Lia,f,👩🏽,estilista
+K: Welcome to my fashion show. | Bem-vindo ao meu desfile.
+M: Hoje você participa de um desfile.
+D: Lia|Welcome to my fashion show!|Bem-vindo ao meu desfile!
+D: You|Thank you. The room is full of people.|Obrigado. A sala está cheia de gente.
+D: Lia|Yes. Look at the first model.|Sim. Olhe a primeira modelo.
+D: You|She wears a long red dress.|Ela usa um vestido vermelho comprido.
+D: Lia|The next one wears a yellow jacket.|A próxima usa uma jaqueta amarela.
+D: You|I like the colors. They are bright.|Gosto das cores. São fortes.
+D: Lia|Which outfit is your favorite?|Qual traje é o seu favorito?
+D: You|The blue one with white shoes.|O azul com sapatos brancos.
+V: fashion show|desfile;model|modelo;outfit|traje;next|próxima;full|cheia
+B: She wears a {0} dress.|Ela usa um vestido {0}.|long red=vermelho comprido;short blue=azul curto;white=branco
+B: Which outfit is your {0}?|Qual traje é o seu {0}?|favorite=favorito;best=melhor;first=primeiro
+S: Lia|Welcome to my fashion show!|Bem-vindo ao meu desfile!|Thank you. The room is full of people.|Obrigado. A sala está cheia de gente.
+S: Lia|Which outfit is your favorite?|Qual traje é o seu favorito?|The blue one with white shoes.|O azul com sapatos brancos.
+R: Welcome to my fashion show!|Bem-vindo ao meu desfile!
+R: The room is full of people.|A sala está cheia de gente.
+R: She wears a long red dress.|Ela usa um vestido vermelho comprido.
+R: Which outfit is your favorite?|Qual traje é o seu favorito?
+X: Bright colors!|Cores fortes!
+C: "Outfit" é o conjunto completo de roupa.
+N: Próximo: profissões.
+BOSS: 1
