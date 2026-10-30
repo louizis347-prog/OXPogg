@@ -1,0 +1,265 @@
+# Arco 56 · Dia a dia: revisão em situações
+T: Order and pay | Pedir e pagar | cafe | Chicago | Mia,f,👩🏻,barista
+K: I would like a coffee, please. | Gostaria de um café, por favor.
+M: Hoje você pede e paga num café.
+D: Mia|Hi! What can I get you?|Oi! O que posso servir?
+D: You|I would like a coffee, please.|Gostaria de um café, por favor.
+D: Mia|What size?|Que tamanho?
+D: You|Medium, with milk.|Médio, com leite.
+D: Mia|Anything else?|Mais alguma coisa?
+D: You|A blueberry muffin, please.|Um muffin de mirtilo, por favor.
+D: Mia|That is seven dollars.|São sete dólares.
+D: You|Here is my card. Thank you!|Aqui está meu cartão. Obrigado!
+V: coffee|café;size|tamanho;medium|médio;muffin|muffin;card|cartão
+B: I would like a {0}, please.|Gostaria de um(a) {0}, por favor.|coffee=café;tea=chá;muffin=muffin
+B: That is {0} dollars.|São {0} dólares.|seven=sete;five=cinco;ten=dez
+S: Mia|Hi! What can I get you?|Oi! O que posso servir?|I would like a coffee, please.|Gostaria de um café, por favor.
+S: Mia|That is seven dollars.|São sete dólares.|Here is my card. Thank you!|Aqui está meu cartão. Obrigado!
+R: What can I get you?|O que posso servir?
+R: I would like a coffee, please.|Gostaria de um café, por favor.
+R: Medium, with milk.|Médio, com leite.
+R: Here is my card.|Aqui está meu cartão.
+X: Anything else?|Mais alguma coisa?
+C: Pedir com "I would like" é sempre educado em qualquer lugar.
+N: Próximo: pedir direções.
+
+T: Where is it? | Pedir direções | street | Boston | Max,m,🧑🏼,pedestre
+K: Where is the post office? | Onde fica o correio?
+M: Hoje você pede direções.
+D: You|Excuse me. Where is the post office?|Com licença. Onde fica o correio?
+D: Max|Go straight for two blocks.|Siga em frente por duas quadras.
+D: You|Then turn left?|Depois vire à esquerda?
+D: Max|Yes. It is next to the bank.|Sim. Fica ao lado do banco.
+D: You|Is it far from here?|É longe daqui?
+D: Max|No, five minutes on foot.|Não, cinco minutos a pé.
+D: You|Thank you very much.|Muito obrigado.
+D: Max|You are welcome.|De nada.
+V: post office|correio;straight|em frente;blocks|quadras;bank|banco;foot|pé
+B: Go straight for {0} blocks.|Siga em frente por {0} quadras.|two=duas;three=três;four=quatro
+B: It is next to the {0}.|Fica ao lado do {0}.|bank=banco;park=parque;cafe=café
+S: You|Excuse me. Where is the post office?|Com licença. Onde fica o correio?|Go straight for two blocks.|Siga em frente por duas quadras.
+S: You|Is it far from here?|É longe daqui?|No, five minutes on foot.|Não, cinco minutos a pé.
+R: Where is the post office?|Onde fica o correio?
+R: Go straight for two blocks.|Siga em frente por duas quadras.
+R: It is next to the bank.|Fica ao lado do banco.
+R: Five minutes on foot.|Cinco minutos a pé.
+X: You are welcome.|De nada.
+C: "On foot" significa a pé.
+N: Próximo: marcar um horário.
+
+T: Make an appointment | Marcar um horário | clinic | Denver | Ana,f,👩🏽,recepcionista
+K: I would like an appointment. | Gostaria de marcar um horário.
+M: Hoje você marca uma consulta.
+D: Ana|Good morning, clinic. How can I help?|Bom dia, clínica. Como posso ajudar?
+D: You|I would like an appointment, please.|Gostaria de marcar um horário, por favor.
+D: Ana|Which day do you prefer?|Qual dia você prefere?
+D: You|Thursday, in the afternoon.|Quinta, à tarde.
+D: Ana|We have two o'clock or four o'clock.|Temos às duas ou às quatro.
+D: You|Two o'clock is perfect.|Duas horas é perfeito.
+D: Ana|May I have your name and number?|Posso ter seu nome e telefone?
+D: You|Yes. It is Leo, five five five, zero one.|Sim. É Leo, cinco cinco cinco, zero um.
+V: appointment|horário marcado;afternoon|tarde;Thursday|quinta;prefer|preferir;number|telefone
+B: I would like an {0}.|Gostaria de marcar um(a) {0}.|appointment=horário;table=mesa;room=quarto
+B: We have two o'clock or {0}.|Temos às duas ou {0}.|four o'clock=às quatro;five o'clock=às cinco;noon=ao meio-dia
+S: Ana|Good morning, clinic. How can I help?|Bom dia, clínica. Como posso ajudar?|I would like an appointment, please.|Gostaria de marcar um horário, por favor.
+S: Ana|Which day do you prefer?|Qual dia você prefere?|Thursday, in the afternoon.|Quinta, à tarde.
+R: I would like an appointment.|Gostaria de marcar um horário.
+R: Thursday, in the afternoon.|Quinta, à tarde.
+R: Two o'clock is perfect.|Duas horas é perfeito.
+R: May I have your name and number?|Posso ter seu nome e telefone?
+X: How can I help?|Como posso ajudar?
+C: Em consultórios americanos, é comum confirmar por mensagem de texto.
+N: Próximo: pedir ajuda no mercado.
+
+T: Find it in the store | Achar algo na loja | market | Austin | Lia,f,👩🏽,vendedora
+K: Where is the cheese? | Onde está o queijo?
+M: Hoje você pede ajuda numa loja.
+D: You|Excuse me. Where can I find the milk?|Com licença. Onde acho o leite?
+D: Lia|It is in aisle three, on the left.|Está no corredor três, à esquerda.
+D: You|And the bread?|E o pão?
+D: Lia|Next to the milk.|Ao lado do leite.
+D: You|Do you have cheese?|Vocês têm queijo?
+D: Lia|Yes, in the fridge at the back.|Temos, na geladeira do fundo.
+D: You|Thank you for your help.|Obrigado pela ajuda.
+D: Lia|My pleasure.|Com prazer.
+V: aisle|corredor;milk|leite;bread|pão;cheese|queijo;fridge|geladeira
+B: Where can I find the {0}?|Onde acho {0}?|milk=o leite;bread=o pão;cheese=o queijo
+B: It is in aisle {0}.|Está no corredor {0}.|three=três;two=dois;five=cinco
+S: You|Excuse me. Where can I find the milk?|Com licença. Onde acho o leite?|It is in aisle three, on the left.|Está no corredor três, à esquerda.
+S: You|Do you have cheese?|Vocês têm queijo?|Yes, in the fridge at the back.|Temos, na geladeira do fundo.
+R: Where can I find the milk?|Onde acho o leite?
+R: It is in aisle three.|Está no corredor três.
+R: Do you have cheese?|Vocês têm queijo?
+R: Thank you for your help.|Obrigado pela ajuda.
+X: My pleasure.|Com prazer.
+C: "My pleasure" é uma resposta educada a um agradecimento.
+N: Próximo: um telefonema simples.
+
+T: A short call | Uma ligação curta | living | Seattle | Kai,m,🧑🏻,amigo
+K: Is it a good time? | É uma boa hora?
+M: Hoje você faz uma ligação curta a um amigo.
+D: Kai|Hello?|Alô?
+D: You|Hi, Kai! It is Leo. Is it a good time?|Oi, Kai! É o Leo. É uma boa hora?
+D: Kai|I am at work. Can I call you later?|Estou no trabalho. Posso ligar mais tarde?
+D: You|Sure. What time?|Claro. A que horas?
+D: Kai|At six o'clock.|Às seis horas.
+D: You|Perfect. Talk to you then.|Perfeito. Falamos depois.
+D: Kai|Talk to you then. Bye!|Falamos depois. Tchau!
+D: You|Bye!|Tchau!
+V: hello|alô;work|trabalho;later|mais tarde;time|hora;bye|tchau
+B: Can I call you {0}?|Posso ligar {0}?|later=mais tarde;tonight=hoje à noite;tomorrow=amanhã
+B: At {0} o'clock.|Às {0} horas.|six=seis;seven=sete;eight=oito
+S: Kai|Hello?|Alô?|Hi, Kai! It is Leo. Is it a good time?|Oi, Kai! É o Leo. É uma boa hora?
+S: Kai|I am at work. Can I call you later?|Estou no trabalho. Posso ligar mais tarde?|Sure. What time?|Claro. A que horas?
+R: Is it a good time?|É uma boa hora?
+R: Can I call you later?|Posso ligar mais tarde?
+R: At six o'clock.|Às seis horas.
+R: Talk to you then.|Falamos depois.
+X: Talk to you then.|Falamos depois.
+C: "Is it a good time?" é a forma educada de começar uma ligação.
+N: Próximo: falar do tempo.
+
+T: Small talk | Conversa rápida | street | Seattle | Ruth,f,👩🏻,vizinha
+K: Nice weather today. | Que tempo bom hoje.
+M: Hoje você puxa assunto com a vizinha.
+D: Ruth|Good morning! Nice weather today.|Bom dia! Que tempo bom hoje.
+D: You|Yes, it is sunny and warm.|É, está sol e quente.
+D: Ruth|Do you work today?|Você trabalha hoje?
+D: You|Yes. And you?|Estou. E você?
+D: Ruth|I go to the park with my dog.|Vou ao parque com meu cachorro.
+D: You|That sounds nice. Enjoy it!|Parece legal. Aproveite!
+D: Ruth|You too! Have a good day.|Você também! Tenha um bom dia.
+D: You|Thanks, bye!|Obrigado, tchau!
+V: weather|tempo;sunny|ensolarado;warm|quente;park|parque;dog|cachorro
+B: Nice {0} today.|Que {0} bom hoje.|weather=tempo;day=dia;sun=sol
+B: I go to the {0}.|Vou ao(à) {0}.|park=parque;shop=loja;gym=academia
+S: Ruth|Good morning! Nice weather today.|Bom dia! Que tempo bom hoje.|Yes, it is sunny and warm.|É, está sol e quente.
+S: Ruth|You too! Have a good day.|Você também! Tenha um bom dia.|Thanks, bye!|Obrigado, tchau!
+R: Nice weather today.|Que tempo bom hoje.
+R: It is sunny and warm.|Está sol e quente.
+R: I go to the park with my dog.|Vou ao parque com meu cachorro.
+R: Have a good day.|Tenha um bom dia.
+X: Enjoy it!|Aproveite!
+C: Falar do tempo é o assunto mais comum para começar uma conversa.
+N: Próximo: dar uma opinião.
+
+T: Give a reason | Dar uma razão | cafe | London | Ben,m,🧑🏽,colega
+K: I like it because it is fun. | Eu gosto porque é divertido.
+M: Hoje você explica por que gosta de algo.
+D: Ben|Do you like your new job?|Você gosta do seu novo emprego?
+D: You|Yes, because the team is friendly.|Gosto, porque a equipe é simpática.
+D: Ben|And the work?|E o trabalho?
+D: You|It is fun, but it is also busy.|É divertido, mas também é cheio.
+D: Ben|Do you like your boss?|Você gosta da sua chefe?
+D: You|Yes, because she is kind.|Gosto, porque ela é gentil.
+D: Ben|That is great to hear.|Que ótimo ouvir isso.
+D: You|Thank you. I am happy.|Obrigado. Estou feliz.
+V: because|porque;friendly|simpática;busy|cheio;boss|chefe;kind|gentil
+B: I like it because it is {0}.|Eu gosto porque é {0}.|fun=divertido;easy=fácil;big=grande
+B: She is {0}.|Ela é {0}.|kind=gentil;funny=engraçada;smart=inteligente
+S: Ben|Do you like your new job?|Você gosta do seu novo emprego?|Yes, because the team is friendly.|Gosto, porque a equipe é simpática.
+S: Ben|Do you like your boss?|Você gosta da sua chefe?|Yes, because she is kind.|Gosto, porque ela é gentil.
+R: I like it because it is fun.|Eu gosto porque é divertido.
+R: The team is friendly.|A equipe é simpática.
+R: My boss is kind.|Minha chefe é gentil.
+R: I am happy.|Estou feliz.
+X: That is great to hear.|Que ótimo ouvir isso.
+C: "Because" liga uma opinião à sua razão.
+N: Próximo: pedir e dar ajuda.
+
+T: Help each other | Ajudar um ao outro | street | Chicago | Dan,m,🧑🏽,vizinho
+K: Can I help you? | Posso ajudar você?
+M: Hoje você oferece ajuda.
+D: You|Hi, Dan. Can I help you?|Oi, Dan. Posso ajudar você?
+D: Dan|Yes, please. This box is heavy.|Pode, por favor. Esta caixa é pesada.
+D: You|Where do you want it?|Onde você quer?
+D: Dan|In the kitchen, on the table.|Na cozinha, em cima da mesa.
+D: You|Okay. Let me carry it.|Certo. Deixe que eu carrego.
+D: Dan|Thanks. Do you want a glass of water?|Obrigado. Quer um copo de água?
+D: You|Yes, please.|Quero, por favor.
+D: Dan|Here you go. You are a good friend.|Aqui está. Você é um bom amigo.
+V: help|ajudar;heavy|pesada;kitchen|cozinha;carry|carregar;glass|copo
+B: Can I {0} you?|Posso {0} você?|help=ajudar;call=ligar para;join=acompanhar
+B: This box is {0}.|Esta caixa é {0}.|heavy=pesada;big=grande;old=velha
+S: You|Hi, Dan. Can I help you?|Oi, Dan. Posso ajudar você?|Yes, please. This box is heavy.|Pode, por favor. Esta caixa é pesada.
+S: Dan|Thanks. Do you want a glass of water?|Obrigado. Quer um copo de água?|Yes, please.|Quero, por favor.
+R: Can I help you?|Posso ajudar você?
+R: This box is heavy.|Esta caixa é pesada.
+R: Let me carry it.|Deixe que eu carrego.
+R: You are a good friend.|Você é um bom amigo.
+X: Here you go.|Aqui está.
+C: Oferecer ajuda sem esperar pedido é visto como gentileza nos EUA.
+N: Próximo: falar de planos de hoje.
+
+T: What is the plan? | Combinar o dia | street | Boston | Jess,f,🧑🏼,amiga
+K: What is the plan for today? | Qual é o plano de hoje?
+M: Hoje você combina o dia com uma amiga.
+D: Jess|What is the plan for today?|Qual é o plano de hoje?
+D: You|First, lunch at noon. Then a walk in the park.|Primeiro, almoço ao meio-dia. Depois, uma caminhada no parque.
+D: Jess|Sounds good. What time do we meet?|Parece bom. A que horas nos encontramos?
+D: You|At noon, in front of the cafe.|Ao meio-dia, em frente ao café.
+D: Jess|Great. And after the park?|Ótimo. E depois do parque?
+D: You|Coffee and cake at my place.|Café e bolo na minha casa.
+D: Jess|Perfect. See you at noon!|Perfeito. Até o meio-dia!
+D: You|See you!|Até!
+V: plan|plano;lunch|almoço;walk|caminhada;noon|meio-dia;cake|bolo
+B: Lunch at {0}.|Almoço {0}.|noon=ao meio-dia;one o'clock=à uma;two o'clock=às duas
+B: We meet in front of the {0}.|Nos encontramos em frente ao {0}.|cafe=café;park=parque;shop=mercado
+S: Jess|What is the plan for today?|Qual é o plano de hoje?|First, lunch at noon. Then a walk in the park.|Primeiro, almoço ao meio-dia. Depois, uma caminhada no parque.
+S: Jess|Great. And after the park?|Ótimo. E depois do parque?|Coffee and cake at my place.|Café e bolo na minha casa.
+R: What is the plan for today?|Qual é o plano de hoje?
+R: Lunch at noon.|Almoço ao meio-dia.
+R: A walk in the park.|Uma caminhada no parque.
+R: See you at noon!|Até o meio-dia!
+X: Sounds good.|Parece bom.
+C: Para combinar encontros, use "in front of" (em frente a) e "next to" (ao lado de).
+N: Próximo: dizer o que sente.
+
+T: How do you feel? | Dizer como se sente | living | Denver | Mia,f,👩🏻,amiga
+K: I feel happy today. | Me sinto feliz hoje.
+M: Hoje você fala do que sente.
+D: Mia|How do you feel today?|Como você se sente hoje?
+D: You|I feel happy and a little tired.|Me sinto feliz e um pouco cansado.
+D: Mia|Why are you tired?|Por que está cansado?
+D: You|I work a lot this week.|Trabalho muito esta semana.
+D: Mia|Take a break. Have some tea.|Faça uma pausa. Tome um chá.
+D: You|Good idea. Do you want some too?|Boa ideia. Você quer também?
+D: Mia|Yes, please. Thank you.|Quero, por favor. Obrigada.
+D: You|It is nice to talk to you.|É bom conversar com você.
+V: feel|sentir;happy|feliz;tired|cansado;break|pausa;tea|chá
+B: I feel {0}.|Me sinto {0}.|happy=feliz;tired=cansado;calm=calmo
+B: Take a {0}.|Faça uma {0}.|break=pausa;walk=caminhada;rest=descanso
+S: Mia|How do you feel today?|Como você se sente hoje?|I feel happy and a little tired.|Me sinto feliz e um pouco cansado.
+S: Mia|Take a break. Have some tea.|Faça uma pausa. Tome um chá.|Good idea. Do you want some too?|Boa ideia. Você quer também?
+R: How do you feel today?|Como você se sente hoje?
+R: I feel happy.|Me sinto feliz.
+R: I am a little tired.|Estou um pouco cansado.
+R: Take a break.|Faça uma pausa.
+X: It is nice to talk to you.|É bom conversar com você.
+C: "How do you feel?" pergunta como a pessoa se sente.
+N: Próximo: desafio, um dia completo.
+
+T: A full day | Desafio do arco: um dia completo | street | New York | Sam,m,🧑🏻,amigo
+K: I know many things now. | Agora sei muitas coisas.
+M: Hoje você usa tudo em um dia só.
+D: Sam|How is your day in the city?|Como está o seu dia na cidade?
+D: You|Great! I order coffee, ask for directions and talk to people.|Ótimo! Peço café, pergunto o caminho e converso com as pessoas.
+D: Sam|Your English is good.|Seu inglês é bom.
+D: You|Thank you. I study every day.|Obrigado. Estudo todo dia.
+D: Sam|What do you like to talk about?|Sobre o que você gosta de conversar?
+D: You|Animals, food, travel and music.|Animais, comida, viagem e música.
+D: Sam|You can talk about many things.|Você consegue falar de muita coisa.
+D: You|Yes, and I want to learn more.|Sim, e quero aprender mais.
+V: directions|direções;people|pessoas;study|estudar;travel|viagem;music|música
+B: I study every {0}.|Estudo toda {0}.|day=dia;morning=manhã;night=noite
+B: I want to learn {0}.|Quero aprender {0}.|more=mais;English=inglês;new words=palavras novas
+S: Sam|How is your day in the city?|Como está o seu dia na cidade?|Great! I order coffee, ask for directions and talk to people.|Ótimo! Peço café, pergunto o caminho e converso com as pessoas.
+S: Sam|You can talk about many things.|Você consegue falar de muita coisa.|Yes, and I want to learn more.|Sim, e quero aprender mais.
+R: I order coffee and ask for directions.|Peço café e pergunto o caminho.
+R: I talk to people.|Converso com as pessoas.
+R: I study every day.|Estudo todo dia.
+R: I want to learn more.|Quero aprender mais.
+X: Your English is good.|Seu inglês é bom.
+C: Praticar todo dia, mesmo pouco, é o segredo para ganhar fluência.
+N: Hora de passar para o próximo nível.
+BOSS: 1
