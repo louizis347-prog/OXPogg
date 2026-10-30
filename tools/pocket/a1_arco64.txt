@@ -1,0 +1,254 @@
+# Arco 64 · Hospedagem: hotel, hostel e Airbnb
+T: Find a place to stay | Procurar hospedagem | living | Lisbon | Jess,f,🧑🏼,amiga
+K: I look for a place to stay. | Procuro um lugar para ficar.
+M: Hoje você procura hospedagem.
+D: Jess|Where do you stay in Lisbon?|Onde você se hospeda em Lisboa?
+D: You|I look for a small place, near the center.|Procuro um lugar pequeno, perto do centro.
+D: Jess|Hotel, hostel or apartment?|Hotel, hostel ou apartamento?
+D: You|An apartment. I stay five nights.|Um apartamento. Fico cinco noites.
+D: Jess|How much do you want to pay?|Quanto você quer pagar?
+D: You|Sixty dollars a night.|Sessenta dólares por noite.
+D: Jess|Look at this one. It has a kitchen.|Olhe este. Tem cozinha.
+V: stay|ficar;center|centro;nights|noites;kitchen|cozinha;apartment|apartamento
+B: I stay {0} nights.|Fico {0} noites.|five=cinco;three=três;ten=dez
+B: Hotel, hostel or {0}?|Hotel, hostel ou {0}?|apartment=apartamento;house=casa;room=quarto
+S: Jess|Where do you stay in Lisbon?|Onde você se hospeda em Lisboa?|I look for a small place, near the center.|Procuro um lugar pequeno, perto do centro.
+S: Jess|How much do you want to pay?|Quanto você quer pagar?|Sixty dollars a night.|Sessenta dólares por noite.
+R: Where do you stay?|Onde você se hospeda?
+R: I stay five nights.|Fico cinco noites.
+R: Sixty dollars a night.|Sessenta dólares por noite.
+R: It has a kitchen.|Tem cozinha.
+X: Near the center.|Perto do centro.
+C: Hostels são hospedagens baratas com quartos compartilhados.
+N: Próximo: reservar o quarto.
+
+T: Book a room | Reservar um quarto | living | Lisbon | Jess,f,🧑🏼,amiga
+K: I book a room for two. | Reservo um quarto para dois.
+M: Hoje você reserva um quarto online.
+D: Jess|Choose your dates.|Escolha as datas.
+D: You|From June tenth to June fifteenth.|De dez a quinze de junho.
+D: Jess|How many people?|Quantas pessoas?
+D: You|Two adults.|Dois adultos.
+D: Jess|Breakfast included?|Café da manhã incluído?
+D: You|Yes, please.|Sim, por favor.
+D: Jess|Click "book now".|Clique em "reservar agora".
+V: dates|datas;adults|adultos;breakfast|café da manhã;included|incluído;book|reservar
+B: I book a room for {0}.|Reservo um quarto para {0}.|two=dois;one=um;three=três
+B: Breakfast is {0}.|O café da manhã está {0}.|included=incluído;free=grátis;extra=à parte
+S: Jess|Choose your dates.|Escolha as datas.|From June tenth to June fifteenth.|De dez a quinze de junho.
+S: Jess|How many people?|Quantas pessoas?|Two adults.|Dois adultos.
+R: Choose your dates.|Escolha as datas.
+R: Two adults.|Dois adultos.
+R: Breakfast included?|Café da manhã incluído?
+R: Click "book now".|Clique em "reservar agora".
+X: Book now.|Reserve agora.
+C: Reservar com antecedência costuma sair mais barato.
+N: Próximo: o check-in.
+
+T: Check in | Fazer o check-in | street | Lisbon | Rosa,f,👩🏽,anfitriã
+K: Here is the key. | Aqui está a chave.
+M: Hoje você faz o check-in.
+D: Rosa|Welcome! You are Leo, right?|Bem-vindo! Você é o Leo, certo?
+D: You|Yes. I have a reservation.|Sim. Tenho uma reserva.
+D: Rosa|Perfect. Here is the key.|Perfeito. Aqui está a chave.
+D: You|Which floor is it?|Qual é o andar?
+D: Rosa|The third floor, apartment B.|O terceiro andar, apartamento B.
+D: You|Is there Wi-Fi?|Tem Wi-Fi?
+D: Rosa|Yes. The password is on the fridge.|Tem. A senha está na geladeira.
+V: key|chave;reservation|reserva;floor|andar;password|senha;fridge|geladeira
+B: Here is the {0}.|Aqui está {0}.|key=a chave;map=o mapa;card=o cartão
+B: The password is on the {0}.|A senha está na {0}.|fridge=geladeira;table=mesa;door=porta
+S: Rosa|Welcome! You are Leo, right?|Bem-vindo! Você é o Leo, certo?|Yes. I have a reservation.|Sim. Tenho uma reserva.
+S: You|Is there Wi-Fi?|Tem Wi-Fi?|Yes. The password is on the fridge.|Tem. A senha está na geladeira.
+R: I have a reservation.|Tenho uma reserva.
+R: Here is the key.|Aqui está a chave.
+R: The third floor, apartment B.|O terceiro andar, apartamento B.
+R: The password is on the fridge.|A senha está na geladeira.
+X: Welcome!|Bem-vindo!
+C: Em apartamentos de aluguel por temporada, a senha do Wi-Fi costuma ficar à vista.
+N: Próximo: as regras da casa.
+
+T: House rules | Regras da casa | living | Lisbon | Rosa,f,👩🏽,anfitriã
+K: No smoking inside. | Proibido fumar dentro.
+M: Hoje você aprende as regras da casa.
+D: Rosa|Here are the house rules.|Aqui estão as regras da casa.
+D: You|Okay. What are they?|Certo. Quais são?
+D: Rosa|No smoking inside. No parties.|Proibido fumar dentro. Sem festas.
+D: You|What time is quiet hour?|A que horas é o silêncio?
+D: Rosa|After ten at night.|Depois das dez da noite.
+D: You|Can I use the washing machine?|Posso usar a máquina de lavar?
+D: Rosa|Yes, it is in the bathroom.|Sim, fica no banheiro.
+V: rules|regras;smoking|fumar;parties|festas;quiet hour|hora do silêncio;washing machine|máquina de lavar
+B: No {0} inside.|Proibido {0} dentro.|smoking=fumar;shoes=sapatos;pets=bichos
+B: Quiet hour is after {0}.|O silêncio é depois das {0}.|ten=dez;nine=nove;eleven=onze
+S: Rosa|Here are the house rules.|Aqui estão as regras da casa.|Okay. What are they?|Certo. Quais são?
+S: You|Can I use the washing machine?|Posso usar a máquina de lavar?|Yes, it is in the bathroom.|Sim, fica no banheiro.
+R: Here are the house rules.|Aqui estão as regras da casa.
+R: No smoking inside.|Proibido fumar dentro.
+R: Quiet hour is after ten.|O silêncio é depois das dez.
+R: Can I use the washing machine?|Posso usar a máquina de lavar?
+X: Okay.|Certo.
+C: Anfitriões costumam pedir silêncio à noite para respeitar os vizinhos.
+N: Próximo: um problema no quarto.
+
+T: Something is broken | Algo está quebrado | living | Lisbon | Rosa,f,👩🏽,anfitriã
+K: The heater does not work. | O aquecedor não funciona.
+M: Hoje você reporta um problema.
+D: You|Hello, Rosa. The heater does not work.|Olá, Rosa. O aquecedor não funciona.
+D: Rosa|Oh no. Is the room cold?|Ah não. O quarto está frio?
+D: You|Yes, very cold.|Sim, muito frio.
+D: Rosa|I send a man today.|Mando um técnico hoje.
+D: You|What time does he come?|A que horas ele vem?
+D: Rosa|Around four o'clock.|Por volta das quatro.
+D: You|Okay. I stay at home.|Certo. Fico em casa.
+V: heater|aquecedor;cold|frio;room|quarto;today|hoje;technician|técnico
+B: The {0} does not work.|O(A) {0} não funciona.|heater=aquecedor;shower=chuveiro;light=luz
+B: He comes around {0} o'clock.|Ele vem por volta das {0}.|four=quatro;five=cinco;six=seis
+S: You|Hello, Rosa. The heater does not work.|Olá, Rosa. O aquecedor não funciona.|Oh no. Is the room cold?|Ah não. O quarto está frio?
+S: You|What time does he come?|A que horas ele vem?|Around four o'clock.|Por volta das quatro.
+R: The heater does not work.|O aquecedor não funciona.
+R: The room is cold.|O quarto está frio.
+R: What time does he come?|A que horas ele vem?
+R: I stay at home.|Fico em casa.
+X: Oh no.|Ah não.
+C: Em hospedagens, avise o anfitrião logo que perceber um problema.
+N: Próximo: dicas do bairro.
+
+T: Neighborhood tips | Dicas do bairro | street | Lisbon | Rosa,f,👩🏽,anfitriã
+K: Where is a good cafe? | Onde fica um bom café?
+M: Hoje você pede dicas do bairro.
+D: You|Rosa, where is a good cafe?|Rosa, onde fica um bom café?
+D: Rosa|Down the street, on the left.|Rua abaixo, à esquerda.
+D: You|And a supermarket?|E um supermercado?
+D: Rosa|Two blocks away, next to the pharmacy.|A duas quadras, ao lado da farmácia.
+D: You|How do I get to the beach?|Como chego à praia?
+D: Rosa|Take the tram, number twenty-eight.|Pegue o bonde, número vinte e oito.
+D: You|Thank you for the tips.|Obrigado pelas dicas.
+V: cafe|café;supermarket|supermercado;tram|bonde;pharmacy|farmácia;tips|dicas
+B: Take the {0}.|Pegue {0}.|tram=o bonde;bus=o ônibus;train=o trem
+B: Next to the {0}.|Ao lado d{0}.|pharmacy=a farmácia;bank=o banco;cafe=o café
+S: You|Rosa, where is a good cafe?|Rosa, onde fica um bom café?|Down the street, on the left.|Rua abaixo, à esquerda.
+S: You|How do I get to the beach?|Como chego à praia?|Take the tram, number twenty-eight.|Pegue o bonde, número vinte e oito.
+R: Where is a good cafe?|Onde fica um bom café?
+R: Down the street, on the left.|Rua abaixo, à esquerda.
+R: Take the tram.|Pegue o bonde.
+R: Thank you for the tips.|Obrigado pelas dicas.
+X: Two blocks away.|A duas quadras.
+C: Anfitriões locais costumam conhecer os melhores cafés do bairro.
+N: Próximo: o hostel.
+
+T: At the hostel | No hostel | living | Prague | Max,m,🧑🏼,recepcionista
+K: I share a room. | Divido um quarto.
+M: Hoje você fica num hostel.
+D: Max|Welcome to the hostel. Which bed do you have?|Bem-vindo ao hostel. Qual cama você tem?
+D: You|Bed twelve, in a room for six.|Cama doze, num quarto para seis.
+D: Max|Here is a locker for your things.|Aqui está um armário para suas coisas.
+D: You|Do I need a lock?|Preciso de cadeado?
+D: Max|Yes, you can buy one here.|Sim, pode comprar um aqui.
+D: You|Where is the kitchen?|Onde fica a cozinha?
+D: Max|On the first floor.|No primeiro andar.
+V: hostel|hostel;share|dividir;bed|cama;locker|armário;lock|cadeado
+B: I share a room for {0}.|Divido um quarto para {0}.|six=seis;four=quatro;eight=oito
+B: I need a {0}.|Preciso de um(a) {0}.|lock=cadeado;key=chave;towel=toalha
+S: Max|Welcome to the hostel. Which bed do you have?|Bem-vindo ao hostel. Qual cama você tem?|Bed twelve, in a room for six.|Cama doze, num quarto para seis.
+S: You|Do I need a lock?|Preciso de cadeado?|Yes, you can buy one here.|Sim, pode comprar um aqui.
+R: I share a room for six.|Divido um quarto para seis.
+R: Bed twelve.|Cama doze.
+R: Do I need a lock?|Preciso de cadeado?
+R: The kitchen is on the first floor.|A cozinha fica no primeiro andar.
+X: Welcome to the hostel.|Bem-vindo ao hostel.
+C: Em hostels, viajantes do mundo todo se encontram na cozinha comum.
+N: Próximo: novos amigos.
+
+T: New friends | Novos amigos | cafe | Prague | Mia,f,👩🏻,viajante
+K: Where do you travel next? | Para onde você viaja depois?
+M: Hoje você conhece viajantes.
+D: Mia|Hi! I am Mia. Where are you from?|Oi! Sou a Mia. De onde você é?
+D: You|I am from Brazil. And you?|Sou do Brasil. E você?
+D: Mia|From Canada. I travel for two months.|Do Canadá. Viajo por dois meses.
+D: You|Where do you go next?|Para onde você vai depois?
+D: Mia|To Vienna, by train.|Para Viena, de trem.
+D: You|I go to Berlin. Let us have dinner.|Vou para Berlim. Vamos jantar.
+D: Mia|Great idea!|Ótima ideia!
+V: travel|viajar;months|meses;next|depois;train|trem;dinner|jantar
+B: I travel for {0} months.|Viajo por {0} meses.|two=dois;three=três;six=seis
+B: I go to {0}, by train.|Vou para {0}, de trem.|Vienna=Viena;Berlin=Berlim;Rome=Roma
+S: Mia|Hi! I am Mia. Where are you from?|Oi! Sou a Mia. De onde você é?|I am from Brazil. And you?|Sou do Brasil. E você?
+S: You|Where do you go next?|Para onde você vai depois?|To Vienna, by train.|Para Viena, de trem.
+R: Where are you from?|De onde você é?
+R: I travel for two months.|Viajo por dois meses.
+R: Where do you go next?|Para onde você vai depois?
+R: Let us have dinner.|Vamos jantar.
+X: Great idea!|Ótima ideia!
+C: Viajantes de hostel costumam trocar dicas de roteiro.
+N: Próximo: o check-out.
+
+T: Check out | Fazer o check-out | street | Lisbon | Rosa,f,👩🏽,anfitriã
+K: I leave at ten. | Saio às dez.
+M: Hoje você faz o check-out.
+D: Rosa|Good morning. Are you ready to check out?|Bom dia. Você está pronto para o check-out?
+D: You|Yes. Here is the key.|Estou. Aqui está a chave.
+D: Rosa|Is everything okay?|Está tudo bem?
+D: You|Everything is great. The apartment is lovely.|Tudo ótimo. O apartamento é lindo.
+D: Rosa|Do you need a taxi?|Precisa de táxi?
+D: You|Yes, to the airport, please.|Sim, para o aeroporto, por favor.
+D: Rosa|I call one now.|Chamo um agora.
+V: check out|fazer o check-out;lovely|lindo;airport|aeroporto;key|chave;ready|pronto
+B: Here is the {0}.|Aqui está {0}.|key=a chave;card=o cartão;bag=a mala
+B: A taxi to the {0}, please.|Um táxi para {0}, por favor.|airport=o aeroporto;station=a estação;hotel=o hotel
+S: Rosa|Good morning. Are you ready to check out?|Bom dia. Você está pronto para o check-out?|Yes. Here is the key.|Estou. Aqui está a chave.
+S: Rosa|Do you need a taxi?|Precisa de táxi?|Yes, to the airport, please.|Sim, para o aeroporto, por favor.
+R: Are you ready to check out?|Você está pronto para o check-out?
+R: Here is the key.|Aqui está a chave.
+R: The apartment is lovely.|O apartamento é lindo.
+R: A taxi to the airport, please.|Um táxi para o aeroporto, por favor.
+X: Thank you.|Obrigado.
+C: O check-out costuma ser até as 11h.
+N: Próximo: a avaliação do anfitrião.
+
+T: Review the stay | Avaliar a hospedagem | living | Lisbon | Jess,f,🧑🏼,amiga
+K: I give five stars. | Dou cinco estrelas.
+M: Hoje você avalia a estadia.
+D: Jess|How is your stay?|Como está a estadia?
+D: You|It is perfect. The host is kind.|É perfeita. A anfitriã é gentil.
+D: Jess|Is the place clean?|O lugar é limpo?
+D: You|Very clean. And the bed is comfortable.|Muito limpo. E a cama é confortável.
+D: Jess|Do you write a review?|Você escreve uma avaliação?
+D: You|Yes, five stars.|Sim, cinco estrelas.
+D: Jess|Add a photo too!|Acrescente uma foto também!
+V: stay|estadia;clean|limpo;comfortable|confortável;review|avaliação;host|anfitriã
+B: The host is {0}.|A anfitriã é {0}.|kind=gentil;friendly=simpática;helpful=prestativa
+B: Five {0}.|Cinco {0}.|stars=estrelas;points=pontos;nights=noites
+S: Jess|How is your stay?|Como está a estadia?|It is perfect. The host is kind.|É perfeita. A anfitriã é gentil.
+S: Jess|Do you write a review?|Você escreve uma avaliação?|Yes, five stars.|Sim, cinco estrelas.
+R: The place is very clean.|O lugar é muito limpo.
+R: The bed is comfortable.|A cama é confortável.
+R: I write a review.|Escrevo uma avaliação.
+R: Five stars.|Cinco estrelas.
+X: Add a photo!|Acrescente uma foto!
+C: Avaliações ajudam os próximos hóspedes a escolher.
+N: Próximo: desafio, a hospedagem perfeita.
+
+T: The perfect stay | Desafio do arco: a hospedagem perfeita | living | Lisbon | Mia,f,👩🏻,amiga
+K: I want a quiet place. | Quero um lugar calmo.
+M: Hoje você descreve a hospedagem ideal.
+D: Mia|Describe your perfect place to stay.|Descreva a hospedagem ideal.
+D: You|A small apartment near the center.|Um apartamento pequeno perto do centro.
+D: Mia|What does it have?|O que tem?
+D: You|A kitchen, Wi-Fi and a big window.|Cozinha, Wi-Fi e uma janela grande.
+D: Mia|How much is it?|Quanto custa?
+D: You|Sixty dollars a night.|Sessenta dólares por noite.
+D: Mia|That sounds great.|Parece ótimo.
+V: describe|descrever;perfect|ideal;window|janela;center|centro;night|noite
+B: A small apartment near the {0}.|Um apartamento pequeno perto d{0}.|center=o centro;beach=a praia;park=o parque
+B: It has a {0} and Wi-Fi.|Tem {0} e Wi-Fi.|kitchen=cozinha;balcony=varanda;garden=jardim
+S: Mia|Describe your perfect place to stay.|Descreva a hospedagem ideal.|A small apartment near the center.|Um apartamento pequeno perto do centro.
+S: Mia|How much is it?|Quanto custa?|Sixty dollars a night.|Sessenta dólares por noite.
+R: A small apartment near the center.|Um apartamento pequeno perto do centro.
+R: It has a kitchen and Wi-Fi.|Tem cozinha e Wi-Fi.
+R: Sixty dollars a night.|Sessenta dólares por noite.
+R: That sounds great.|Parece ótimo.
+X: Perfect place.|Lugar ideal.
+C: Hospedagens com cozinha economizam dinheiro em viagens longas.
+N: Próximo: astronautas.
+BOSS: 1
