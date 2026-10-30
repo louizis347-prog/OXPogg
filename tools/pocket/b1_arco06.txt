@@ -1,0 +1,230 @@
+# Arco 6 · Serviços e reclamações
+T: Returning a faulty product | Devolver produto com defeito | shop | Chicago | Clerk Joe,m,👨🏻,atendente
+K: It stopped working after two days today. | Parou de funcionar depois de dois dias.
+M: Hoje você devolve um produto com defeito.
+D: You|Hi, I bought this blender last week, but it stopped working after two days.|Oi, comprei este liquidificador semana passada, mas parou de funcionar depois de dois dias.
+D: Clerk Joe|I'm sorry to hear that. Do you have the receipt?|Sinto muito. Você tem o recibo?
+D: You|Yes, here it is. I'd like a refund, if possible.|Sim, aqui está. Gostaria de um reembolso, se possível.
+D: Clerk Joe|I can give you a refund or a replacement. Which would you prefer?|Posso dar reembolso ou troca. Qual prefere?
+D: You|A replacement would be fine, as long as it's a different model.|Uma troca seria bom, desde que seja outro modelo.
+D: Clerk Joe|Let me check what we have. This one is more powerful and it comes with a two-year warranty.|Deixe-me ver o que temos. Este é mais potente e vem com garantia de dois anos.
+D: You|That sounds much better. How much is the difference?|Parece bem melhor. Qual é a diferença de preço?
+D: Clerk Joe|Fifteen dollars, but I'll waive it because of the inconvenience.|Quinze dólares, mas vou dispensar pelo transtorno.
+V: faulty|com defeito;refund|reembolso;replacement|troca;warranty|garantia;waive|dispensar
+B: It stopped working after {0} days.|Parou de funcionar depois de {0} dias.|two=dois;three=três;five=cinco
+B: I'd like a {0}, if possible.|Gostaria de um {0}, se possível.|refund=reembolso;replacement=troca;discount=desconto
+S: Clerk Joe|Do you have the receipt?|Você tem o recibo?|Yes, here it is. I'd like a refund, if possible.|Sim, aqui está. Gostaria de um reembolso, se possível.
+S: Clerk Joe|I can give you a refund or a replacement.|Posso dar reembolso ou troca.|A replacement would be fine, as long as it's a different model.|Troca seria bom, desde que seja outro modelo.
+R: It stopped working after two days.|Parou de funcionar depois de dois dias.
+R: I'd like a refund, if possible.|Gostaria de um reembolso, se possível.
+R: It comes with a two-year warranty.|Vem com garantia de dois anos.
+R: I'll waive the difference.|Vou dispensar a diferença.
+X: I'm sorry to hear that.|Sinto muito por isso.
+C: As lojas dos EUA costumam aceitar devoluções em até 30 dias com recibo, o que protege o consumidor.
+
+T: A wrong charge | Cobrança errada | office | Seattle | Agent Dee,f,👩🏿,atendente
+K: There's a charge I don't recognize. | Há uma cobrança que não reconheço.
+M: Hoje você contesta uma cobrança errada no cartão.
+D: You|Hello, I'm calling because there's a charge on my statement that I don't recognize.|Olá, estou ligando porque há uma cobrança no meu extrato que não reconheço.
+D: Agent Dee|I'll be glad to help. Which charge are you referring to?|Terei prazer em ajudar. A que cobrança você se refere?
+D: You|Two hundred dollars from an online store, dated March third. I haven't bought anything there.|Duzentos dólares de uma loja on-line, datada de três de março. Não comprei nada lá.
+D: Agent Dee|I see it. Has anyone else used your card recently?|Estou vendo. Alguém mais usou seu cartão recentemente?
+D: You|No, and I still have the card with me.|Não, e ainda estou com o cartão.
+D: Agent Dee|It could be fraud. I'll block the card and send you a new one in three days.|Pode ser fraude. Vou bloquear o cartão e enviar um novo em três dias.
+D: You|Will I get my money back?|Vou receber meu dinheiro de volta?
+D: Agent Dee|Yes, after the investigation, which takes about ten days.|Sim, depois da investigação, que leva cerca de dez dias.
+V: charge|cobrança;statement|extrato;recognize|reconhecer;fraud|fraude;investigation|investigação
+B: There's a charge on my {0} that I don't recognize.|Há uma cobrança no meu {0} que não reconheço.|statement=extrato;bill=conta;card=cartão
+B: I'll send you a new card in {0} days.|Enviarei um cartão novo em {0} dias.|three=três;five=cinco;seven=sete
+S: Agent Dee|Which charge are you referring to?|A que cobrança você se refere?|Two hundred dollars from an online store.|Duzentos dólares de uma loja on-line.
+S: Agent Dee|It could be fraud.|Pode ser fraude.|Will I get my money back?|Vou receber meu dinheiro de volta?
+R: There's a charge I don't recognize.|Há uma cobrança que não reconheço.
+R: I haven't bought anything there.|Não comprei nada lá.
+R: I'll block the card.|Vou bloquear o cartão.
+R: It takes about ten days.|Leva cerca de dez dias.
+X: I'll be glad to help.|Terei prazer em ajudar.
+C: Nos EUA, bancos protegem o cliente em caso de fraude, mas é importante avisar rapidamente.
+
+T: A bad meal | Uma refeição ruim | cafe | New York | Manager Max,m,👨🏽,gerente
+K: I'm afraid there's a problem with my order. | Receio que há um problema com meu pedido.
+M: Hoje você reclama de uma refeição com educação.
+D: You|Excuse me, I'm afraid there's a problem with my order. The steak is overcooked.|Com licença, receio que há um problema com meu pedido. O bife está passado demais.
+D: Manager Max|I'm terribly sorry. How did you ask for it?|Sinto muitíssimo. Como você pediu?
+D: You|Medium rare. This is completely well-done.|Ao ponto para mal. Este está completamente bem passado.
+D: Manager Max|I'll have the chef prepare a new one right away. It'll take about ten minutes.|Vou pedir ao chef que prepare um novo agora mesmo. Levará cerca de dez minutos.
+D: You|I'd appreciate that. My friend has already finished eating, though.|Eu agradeceria. Mas meu amigo já terminou de comer.
+D: Manager Max|In that case, dessert is on us for both of you.|Nesse caso, a sobremesa é por nossa conta para os dois.
+D: You|That's very generous. Thank you for handling it so well.|Isso é muito generoso. Obrigado por lidar tão bem com isso.
+D: Manager Max|We want you to leave happy. Thank you for your patience.|Queremos que você saia satisfeito. Obrigado pela paciência.
+V: overcooked|passado demais;medium rare|ao ponto para mal;well-done|bem passado;generous|generoso;handle|lidar
+B: The steak is {0}.|O bife está {0}.|overcooked=passado demais;cold=frio;too salty=salgado demais
+B: Dessert is on {0} for both of you.|A sobremesa é por conta {0} para os dois.|us=nossa;the house=da casa;me=minha
+S: Manager Max|How did you ask for it?|Como você pediu?|Medium rare. This is completely well-done.|Ao ponto para mal. Este está bem passado.
+S: Manager Max|Dessert is on us for both of you.|A sobremesa é por nossa conta.|That's very generous. Thank you.|Muito generoso. Obrigado.
+R: I'm afraid there's a problem with my order.|Receio que há um problema com meu pedido.
+R: The steak is overcooked.|O bife está passado demais.
+R: I'd appreciate that.|Eu agradeceria.
+R: Thank you for handling it so well.|Obrigado por lidar tão bem com isso.
+X: I'm terribly sorry.|Sinto muitíssimo.
+C: Em restaurantes dos EUA, o ponto da carne é pedido como rare, medium rare, medium ou well-done.
+
+T: Internet outage | Internet fora do ar | living | Austin | Tech Rob,m,👨🏿,técnico
+K: It's been down since yesterday. | Está fora do ar desde ontem.
+M: Hoje você liga para resolver a internet.
+D: Tech Rob|Thanks for calling. How can I help you?|Obrigado por ligar. Como posso ajudar?
+D: You|My internet has been down since yesterday, and I work from home.|Minha internet está fora do ar desde ontem, e eu trabalho de casa.
+D: Tech Rob|I'm sorry. Have you tried restarting the router?|Sinto muito. Você já tentou reiniciar o roteador?
+D: You|Yes, twice. The light is still red.|Sim, duas vezes. A luz continua vermelha.
+D: Tech Rob|That means there's a connection problem on our side. I'll send a technician tomorrow.|Isso significa que há um problema de conexão do nosso lado. Enviarei um técnico amanhã.
+D: You|Tomorrow is too late. I have an important video call this afternoon.|Amanhã é tarde demais. Tenho uma videochamada importante esta tarde.
+D: Tech Rob|Let me see if I can move it up. Please hold for a moment.|Deixe-me ver se consigo antecipar. Aguarde um momento, por favor.
+D: You|Sure. I'll wait.|Claro. Aguardo.
+V: outage|queda;restart|reiniciar;router|roteador;technician|técnico;hold|aguardar
+B: My internet has been down since {0}.|Minha internet está fora do ar desde {0}.|yesterday=ontem;Monday=segunda;this morning=esta manhã
+B: Have you tried restarting the {0}?|Você já tentou reiniciar o {0}?|router=roteador;computer=computador;modem=modem
+S: Tech Rob|How can I help you?|Como posso ajudar?|My internet has been down since yesterday.|Minha internet está fora do ar desde ontem.
+S: Tech Rob|I'll send a technician tomorrow.|Enviarei um técnico amanhã.|Tomorrow is too late. I have a video call this afternoon.|Amanhã é tarde. Tenho uma videochamada esta tarde.
+R: My internet has been down since yesterday.|Minha internet está fora do ar desde ontem.
+R: Have you tried restarting the router?|Você já tentou reiniciar o roteador?
+R: I'll send a technician tomorrow.|Enviarei um técnico amanhã.
+R: Please hold for a moment.|Aguarde um momento, por favor.
+X: I'll wait.|Aguardo.
+C: Ao ligar para o suporte nos EUA, é comum o atendente pedir que você reinicie o aparelho primeiro.
+
+T: Delivery delay | Atraso na entrega | living | Denver | Support Eva,f,👩🏼,suporte
+K: My order hasn't arrived yet. | Meu pedido ainda não chegou.
+M: Hoje você cobra uma entrega atrasada.
+D: You|Hello, my order hasn't arrived yet, and it was supposed to be here three days ago.|Olá, meu pedido ainda não chegou, e devia ter chegado há três dias.
+D: Support Eva|I'm sorry for the delay. Could I have your order number, please?|Sinto muito pelo atraso. Poderia me dar o número do pedido, por favor?
+D: You|It's A-seven-four-two-one. I've been checking the tracking, but it hasn't moved since Monday.|É A-sete-quatro-dois-um. Tenho verificado o rastreio, mas não se mexe desde segunda.
+D: Support Eva|Let me look. It seems the package got stuck at a distribution center.|Deixe-me ver. Parece que o pacote ficou preso num centro de distribuição.
+D: You|What can you do about it?|O que vocês podem fazer?
+D: Support Eva|I'll send a new one with express shipping, free of charge.|Enviarei outro com frete expresso, sem custo.
+D: You|That's great. When will it arrive?|Ótimo. Quando chegará?
+D: Support Eva|Within two business days. You'll receive an email with the new tracking number.|Em dois dias úteis. Você receberá um e-mail com o novo número de rastreio.
+V: tracking|rastreio;stuck|preso;shipping|frete;business days|dias úteis;delay|atraso
+B: It was supposed to be here {0} days ago.|Devia ter chegado há {0} dias.|three=três;two=dois;five=cinco
+B: I'll send a new one with {0} shipping.|Enviarei outro com frete {0}.|express=expresso;free=grátis;fast=rápido
+S: Support Eva|Could I have your order number?|Poderia me dar o número do pedido?|It's A-seven-four-two-one. It hasn't moved since Monday.|É A-sete-quatro-dois-um. Não se mexe desde segunda.
+S: Support Eva|I'll send a new one with express shipping.|Enviarei outro com frete expresso.|That's great. When will it arrive?|Ótimo. Quando chegará?
+R: My order hasn't arrived yet.|Meu pedido ainda não chegou.
+R: It hasn't moved since Monday.|Não se mexe desde segunda.
+R: It got stuck at a distribution center.|Ficou preso num centro de distribuição.
+R: You'll receive a new tracking number.|Você receberá um novo número de rastreio.
+X: I'm sorry for the delay.|Sinto muito pelo atraso.
+C: Em compras on-line nos EUA, o número de rastreio permite acompanhar o pacote em tempo real.
+
+T: A noisy hotel | Hotel barulhento | hall | Los Angeles | Desk Clerk Tim,m,👨🏼,recepcionista
+K: Could you do something about the noise? | Poderia fazer algo sobre o barulho?
+M: Hoje você reclama do barulho no hotel.
+D: You|Excuse me, I'm in room 512, and there's a loud party next door.|Com licença, estou no quarto 512 e há uma festa barulhenta ao lado.
+D: Desk Clerk Tim|I'm sorry. How long has it been going on?|Sinto muito. Há quanto tempo isso está acontecendo?
+D: You|For about two hours, and I have to wake up at five. Could you do something about the noise?|Há cerca de duas horas, e preciso acordar às cinco. Poderia fazer algo sobre o barulho?
+D: Desk Clerk Tim|I'll send security right away. If it doesn't stop, I'll move you to another floor.|Enviarei a segurança agora mesmo. Se não parar, transferirei você para outro andar.
+D: You|I appreciate that. I'd prefer to stay in my room, though, if possible.|Agradeço. Mas prefiro ficar no meu quarto, se possível.
+D: Desk Clerk Tim|Of course. Let's see if security solves it first.|Claro. Vamos ver se a segurança resolve primeiro.
+D: You|Thank you. I'll call again if anything changes.|Obrigado. Ligarei de novo se algo mudar.
+D: Desk Clerk Tim|Please do. Sorry again for the inconvenience.|Por favor. Desculpe de novo pelo transtorno.
+V: noise|barulho;security|segurança;next door|ao lado;inconvenience|transtorno;solve|resolver
+B: There's a loud party {0}.|Há uma festa barulhenta {0}.|next door=ao lado;upstairs=em cima;downstairs=embaixo
+B: Could you do something about the {0}?|Poderia fazer algo sobre o {0}?|noise=barulho;heat=calor;smell=cheiro
+S: Desk Clerk Tim|How long has it been going on?|Há quanto tempo isso acontece?|For about two hours, and I have to wake up at five.|Há cerca de duas horas, e preciso acordar às cinco.
+S: Desk Clerk Tim|I'll send security right away.|Enviarei a segurança agora mesmo.|I appreciate that. I'll call again if anything changes.|Agradeço. Ligo de novo se algo mudar.
+R: There's a loud party next door.|Há uma festa barulhenta ao lado.
+R: Could you do something about the noise?|Poderia fazer algo sobre o barulho?
+R: I'll send security right away.|Enviarei a segurança agora mesmo.
+R: Sorry again for the inconvenience.|Desculpe de novo pelo transtorno.
+X: I appreciate that.|Agradeço.
+C: Hotéis americanos têm segurança 24 horas e costumam resolver reclamações de barulho rapidamente.
+
+T: Asking for a manager | Pedir para falar com o gerente | shop | Boston | Manager Kay,f,👩🏻,gerente
+K: Could I speak to the manager, please? | Poderia falar com o gerente, por favor?
+M: Hoje você escala uma reclamação com calma.
+D: You|Excuse me, could I speak to the manager, please?|Com licença, poderia falar com o gerente, por favor?
+D: Manager Kay|I'm the manager. How can I help?|Sou a gerente. Como posso ajudar?
+D: You|I've been waiting for a refund for three weeks, and nobody has answered my emails.|Estou esperando um reembolso há três semanas, e ninguém respondeu meus e-mails.
+D: Manager Kay|I apologize. Do you have the case number?|Peço desculpas. Você tem o número do protocolo?
+D: You|Yes, it's two-nine-one-eight. I was told that it would take five days.|Sim, é dois-nove-um-oito. Disseram-me que levaria cinco dias.
+D: Manager Kay|That's unacceptable. I'll process it myself today, and you'll receive a confirmation.|Isso é inaceitável. Vou processar eu mesma hoje, e você receberá uma confirmação.
+D: You|I'd appreciate that. I just want it solved.|Eu agradeceria. Só quero que seja resolvido.
+D: Manager Kay|Consider it done. Thank you for your patience.|Considere feito. Obrigada pela paciência.
+V: refund|reembolso;case number|número do protocolo;unacceptable|inaceitável;process|processar;consider|considerar
+B: I've been waiting for a refund for {0} weeks.|Estou esperando um reembolso há {0} semanas.|three=três;two=duas;four=quatro
+B: I'll process it myself {0}.|Vou processar eu mesma {0}.|today=hoje;tomorrow=amanhã;now=agora
+S: Manager Kay|How can I help?|Como posso ajudar?|I've been waiting for a refund for three weeks.|Estou esperando um reembolso há três semanas.
+S: Manager Kay|I'll process it myself today.|Eu mesma processo hoje.|I'd appreciate that. I just want it solved.|Eu agradeceria. Só quero que seja resolvido.
+R: Could I speak to the manager, please?|Poderia falar com o gerente, por favor?
+R: Nobody has answered my emails.|Ninguém respondeu meus e-mails.
+R: That's unacceptable.|Isso é inaceitável.
+R: Consider it done.|Considere feito.
+X: I apologize.|Peço desculpas.
+C: Pedir para falar com o gerente é aceitável nos EUA quando o atendimento inicial não resolve o problema.
+
+T: Writing a complaint email | Escrever e-mail de reclamação | office | Chicago | Friend Lia,f,👩🏽,amiga
+K: I am writing to complain about... | Escrevo para reclamar de...
+M: Hoje você escreve uma reclamação formal.
+D: Friend Lia|Are you still angry about that delayed delivery?|Você ainda está bravo com aquela entrega atrasada?
+D: You|A bit. I decided to write a complaint email instead of yelling.|Um pouco. Decidi escrever um e-mail de reclamação em vez de gritar.
+D: Friend Lia|Good idea. How do you start?|Boa ideia. Como você começa?
+D: You|"Dear Sir or Madam, I am writing to complain about the late delivery of my order."|"Prezado senhor ou senhora, escrevo para reclamar do atraso na entrega do meu pedido."
+D: Friend Lia|Perfect. Then you explain what happened, with dates and numbers.|Perfeito. Depois você explica o que aconteceu, com datas e números.
+D: You|And at the end I say what I expect, like a refund or an apology.|E no fim digo o que espero, como reembolso ou desculpas.
+D: Friend Lia|Exactly. Polite but firm. I'm sure they'll answer quickly.|Exatamente. Educado, porém firme. Tenho certeza de que responderão rápido.
+D: You|I hope so. Wish me luck!|Espero que sim. Deseje-me sorte!
+V: complain|reclamar;yell|gritar;firm|firme;expect|esperar;apology|desculpas
+B: I am writing to complain about the {0}.|Escrevo para reclamar do {0}.|delay=atraso;service=serviço;price=preço
+B: At the end I say what I {0}.|No fim digo o que {0}.|expect=espero;want=quero;need=preciso
+S: Friend Lia|How do you start the email?|Como você começa o e-mail?|Dear Sir or Madam, I am writing to complain about the late delivery.|Prezado senhor ou senhora, escrevo para reclamar do atraso na entrega.
+S: Friend Lia|Polite but firm.|Educado, porém firme.|I hope they answer quickly. Wish me luck!|Espero que respondam rápido. Deseje-me sorte!
+R: I am writing to complain about the late delivery.|Escrevo para reclamar do atraso na entrega.
+R: I decided to write instead of yelling.|Decidi escrever em vez de gritar.
+R: Polite but firm.|Educado, porém firme.
+R: Wish me luck!|Deseje-me sorte!
+X: Dear Sir or Madam.|Prezado senhor ou senhora.
+C: Um e-mail de reclamação em inglês começa com "Dear Sir or Madam" e termina com "Sincerely" ou "Yours faithfully".
+
+T: A good customer experience | Uma boa experiência | shop | Portland | Clerk Ana,f,👩🏽,atendente
+K: I'd like to thank you for your excellent service. | Gostaria de agradecer pelo excelente atendimento.
+M: Hoje você elogia um bom atendimento.
+D: You|Excuse me, I'd like to thank you for your excellent service yesterday.|Com licença, gostaria de agradecer pelo excelente atendimento de ontem.
+D: Clerk Ana|Oh, that's very kind of you. How can I help you today?|Ah, é muito gentil. Como posso ajudar hoje?
+D: You|Nothing in particular. I just wanted to tell your manager how helpful you were.|Nada em especial. Só queria dizer ao seu gerente como você foi prestativa.
+D: Clerk Ana|Thank you! Most people only come back to complain.|Obrigada! A maioria só volta para reclamar.
+D: You|I think good service deserves recognition, too.|Acho que bom atendimento também merece reconhecimento.
+D: Clerk Ana|That's true. Would you like to fill out a satisfaction survey?|É verdade. Quer preencher uma pesquisa de satisfação?
+D: You|Gladly. I'll give you five stars.|Com prazer. Darei cinco estrelas.
+D: Clerk Ana|You've made my day. Thank you so much.|Você alegrou meu dia. Muito obrigada.
+V: service|atendimento;helpful|prestativo;deserve|merecer;recognition|reconhecimento;survey|pesquisa
+B: I'd like to thank you for your {0} service.|Gostaria de agradecer pelo seu {0} atendimento.|excellent=excelente;great=ótimo;kind=gentil
+B: I'll give you {0} stars.|Darei {0} estrelas.|five=cinco;four=quatro;three=três
+S: Clerk Ana|How can I help you today?|Como posso ajudar hoje?|Nothing in particular. I'd like to thank you.|Nada em especial. Gostaria de agradecer.
+S: Clerk Ana|Would you like to fill out a survey?|Quer preencher uma pesquisa?|Gladly. I'll give you five stars.|Com prazer. Darei cinco estrelas.
+R: I'd like to thank you for your excellent service.|Gostaria de agradecer pelo excelente atendimento.
+R: Good service deserves recognition.|Bom atendimento merece reconhecimento.
+R: You've made my day.|Você alegrou meu dia.
+R: I'll give you five stars.|Darei cinco estrelas.
+X: Gladly.|Com prazer.
+C: Nos EUA, elogiar um atendimento ao gerente ou numa pesquisa de satisfação é bem visto e pode ajudar o funcionário.
+
+T: Know your rights | Conheça seus direitos | office | New York | Advisor Sam,m,👨🏾,consultor
+K: As a consumer, you have rights. | Como consumidor, você tem direitos.
+M: Hoje você aprende sobre direitos do consumidor.
+D: Advisor Sam|Many people don't know that, as consumers, they have rights.|Muitas pessoas não sabem que, como consumidores, têm direitos.
+D: You|What kind of rights?|Que tipo de direitos?
+D: Advisor Sam|For example, you can return a defective product, and the company must either repair it or replace it.|Por exemplo, você pode devolver um produto defeituoso, e a empresa deve consertá-lo ou trocá-lo.
+D: You|Even after the warranty ends?|Mesmo depois do fim da garantia?
+D: Advisor Sam|It depends on the state. In some places, the law protects you for longer.|Depende do estado. Em alguns lugares, a lei protege você por mais tempo.
+D: You|And if the company refuses to help?|E se a empresa se recusar a ajudar?
+D: Advisor Sam|You can file a complaint with the consumer protection agency.|Você pode registrar uma queixa na agência de proteção ao consumidor.
+D: You|Good to know. I didn't realize I had that option.|Bom saber. Não sabia que tinha essa opção.
+V: consumer|consumidor;defective|defeituoso;repair|consertar;law|lei;agency|agência
+B: As consumers, we have {0}.|Como consumidores, temos {0}.|rights=direitos;options=opções;duties=deveres
+B: You can file a complaint with the consumer protection {0}.|Você pode registrar uma queixa na {0} de proteção ao consumidor.|agency=agência;office=repartição;center=central
+S: Advisor Sam|Many people don't know they have rights.|Muitos não sabem que têm direitos.|What kind of rights?|Que tipo de direitos?
+S: Advisor Sam|You can file a complaint with the agency.|Você pode registrar uma queixa na agência.|Good to know. I didn't realize I had that option.|Bom saber. Não sabia que tinha essa opção.
+R: As consumers, we have rights.|Como consumidores, temos direitos.
+R: The company must repair it or replace it.|A empresa deve consertar ou trocar.
+R: It depends on the state.|Depende do estado.
+R: I didn't realize I had that option.|Não sabia que tinha essa opção.
+X: Good to know.|Bom saber.
+C: Nos EUA, cada estado tem leis próprias de proteção ao consumidor, e a FTC atua em nível nacional.
