@@ -1,0 +1,231 @@
+# Arco 72 · Ótica e óculos
+T: I need glasses | Preciso de óculos | shop | Boston | Lia,f,👩🏽,atendente
+K: I cannot read well. | Não consigo ler bem.
+M: Hoje você marca um exame de vista.
+D: You|Hello. I cannot read well.|Olá. Não consigo ler bem.
+D: Lia|When is the problem worse?|Quando o problema piora?
+D: You|At night, with small letters.|À noite, com letras pequenas.
+D: Lia|You need an eye test.|Você precisa de um exame de vista.
+D: You|Can I do it today?|Posso fazer hoje?
+D: Lia|Yes, the doctor is free at three.|Pode, a doutora está livre às três.
+D: You|Perfect. I wait here.|Perfeito. Espero aqui.
+V: glasses|óculos;read|ler;letters|letras;test|exame;doctor|doutora
+B: I cannot {0} well.|Não consigo {0} bem.|read=ler;see=ver;write=escrever
+B: You need an eye {0}.|Você precisa de um exame de {0}.|test=vista;doctor=médico;check=checagem
+S: Lia|When is the problem worse?|Quando o problema piora?|At night, with small letters.|À noite, com letras pequenas.
+S: You|Can I do it today?|Posso fazer hoje?|Yes, the doctor is free at three.|Pode, a doutora está livre às três.
+R: I cannot read well.|Não consigo ler bem.
+R: You need an eye test.|Você precisa de um exame de vista.
+R: Can I do it today?|Posso fazer hoje?
+R: The doctor is free at three.|A doutora está livre às três.
+X: I wait here.|Espero aqui.
+C: Nos EUA, o exame de vista é feito por um "optometrist".
+N: Próximo: o exame.
+
+T: The eye test | O exame de vista | clinic | Boston | Dr. Lee,m,🧑🏻,optometrista
+K: Read the letters. | Leia as letras.
+M: Hoje você faz um exame de vista.
+D: Dr. Lee|Sit here and cover your left eye.|Sente aqui e cubra o olho esquerdo.
+D: You|Okay.|Certo.
+D: Dr. Lee|Read the letters on the wall.|Leia as letras na parede.
+D: You|E, F, P... I cannot see the last line.|E, F, P... Não consigo ver a última linha.
+D: Dr. Lee|Now the right eye.|Agora o olho direito.
+D: You|This one is better.|Este está melhor.
+D: Dr. Lee|You need glasses for your left eye.|Você precisa de óculos para o olho esquerdo.
+V: cover|cobrir;left|esquerdo;letters|letras;last|última;better|melhor
+B: Cover your {0} eye.|Cubra o olho {0}.|left=esquerdo;right=direito;good=bom
+B: Read the {0} on the wall.|Leia as {0} na parede.|letters=letras;numbers=números;words=palavras
+S: Dr. Lee|Sit here and cover your left eye.|Sente aqui e cubra o olho esquerdo.|Okay.|Certo.
+S: Dr. Lee|Now the right eye.|Agora o olho direito.|This one is better.|Este está melhor.
+R: Cover your left eye.|Cubra o olho esquerdo.
+R: Read the letters.|Leia as letras.
+R: I cannot see the last line.|Não consigo ver a última linha.
+R: You need glasses.|Você precisa de óculos.
+X: This one is better.|Este está melhor.
+C: A tabela de letras do exame se chama "eye chart".
+N: Próximo: escolher a armação.
+
+T: Choose the frames | Escolher a armação | shop | Boston | Lia,f,👩🏽,atendente
+K: Try these frames. | Experimente estas armações.
+M: Hoje você escolhe a armação.
+D: Lia|Here are many frames. Try this one.|Aqui estão muitas armações. Experimente esta.
+D: You|It is round and black.|É redonda e preta.
+D: Lia|Look in the mirror. How do you feel?|Olhe no espelho. Como se sente?
+D: You|I like it, but it is a little big.|Gosto, mas está um pouco grande.
+D: Lia|Try a smaller one, in blue.|Experimente uma menor, azul.
+D: You|This one fits my face.|Esta combina com o meu rosto.
+D: Lia|Perfect. It looks great on you.|Perfeito. Fica ótimo em você.
+V: frames|armações;round|redonda;mirror|espelho;smaller|menor;face|rosto
+B: Try this {0} one.|Experimente esta {0}.|round=redonda;black=preta;blue=azul
+B: It looks great on {0}.|Fica ótimo em {0}.|you=você;him=ele;her=ela
+S: Lia|Here are many frames. Try this one.|Aqui estão muitas armações. Experimente esta.|It is round and black.|É redonda e preta.
+S: Lia|Try a smaller one, in blue.|Experimente uma menor, azul.|This one fits my face.|Esta combina com o meu rosto.
+R: Try these frames.|Experimente estas armações.
+R: Look in the mirror.|Olhe no espelho.
+R: It is a little big.|Está um pouco grande.
+R: It looks great on you.|Fica ótimo em você.
+X: How do you feel?|Como se sente?
+C: A armação certa depende do formato do rosto.
+N: Próximo: o preço.
+
+T: Price and delivery | Preço e prazo | shop | Boston | Lia,f,👩🏽,atendente
+K: When are they ready? | Quando ficam prontos?
+M: Hoje você fecha o pedido dos óculos.
+D: You|How much are the glasses?|Quanto custam os óculos?
+D: Lia|One hundred and twenty dollars with the lenses.|Cento e vinte dólares com as lentes.
+D: You|When are they ready?|Quando ficam prontos?
+D: Lia|In one week.|Em uma semana.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Lia|Yes. Please sign here.|Pode. Assine aqui, por favor.
+D: You|Done. I come back next Friday.|Pronto. Volto na sexta que vem.
+V: lenses|lentes;ready|prontos;week|semana;card|cartão;sign|assinar
+B: The glasses are {0} dollars.|Os óculos custam {0} dólares.|one hundred and twenty=cento e vinte;eighty=oitenta;ninety=noventa
+B: They are ready in {0}.|Ficam prontos em {0}.|one week=uma semana;two days=dois dias;ten days=dez dias
+S: You|How much are the glasses?|Quanto custam os óculos?|One hundred and twenty dollars with the lenses.|Cento e vinte dólares com as lentes.
+S: You|When are they ready?|Quando ficam prontos?|In one week.|Em uma semana.
+R: How much are the glasses?|Quanto custam os óculos?
+R: When are they ready?|Quando ficam prontos?
+R: In one week.|Em uma semana.
+R: Can I pay by card?|Posso pagar com cartão?
+X: Please sign here.|Assine aqui, por favor.
+C: Lentes são feitas sob medida para cada pessoa.
+N: Próximo: pegar os óculos.
+
+T: Pick up my glasses | Pegar os óculos | shop | Boston | Lia,f,👩🏽,atendente
+K: They are ready. | Estão prontos.
+M: Hoje você retira os óculos.
+D: Lia|Good morning. Your glasses are ready.|Bom dia. Seus óculos estão prontos.
+D: You|Great! Let me put them on.|Ótimo! Deixe-me colocar.
+D: Lia|How do they feel?|Como se sente com eles?
+D: You|Everything is clear. I see well!|Tudo está nítido. Vejo bem!
+D: Lia|Here is a case and a cloth.|Aqui estão um estojo e um paninho.
+D: You|Thank you. How do I clean them?|Obrigado. Como limpo?
+D: Lia|Use the cloth only. Never your shirt.|Use só o paninho. Nunca a camisa.
+V: case|estojo;cloth|paninho;clean|limpar;clear|nítido;shirt|camisa
+B: Here is a {0} and a cloth.|Aqui estão um(a) {0} e um paninho.|case=estojo;box=caixa;card=cartão
+B: Use the {0} only.|Use só {0}.|cloth=o paninho;water=a água;soap=o sabão
+S: Lia|Good morning. Your glasses are ready.|Bom dia. Seus óculos estão prontos.|Great! Let me put them on.|Ótimo! Deixe-me colocar.
+S: You|Thank you. How do I clean them?|Obrigado. Como limpo?|Use the cloth only. Never your shirt.|Use só o paninho. Nunca a camisa.
+R: Your glasses are ready.|Seus óculos estão prontos.
+R: I see well!|Vejo bem!
+R: Here is a case and a cloth.|Aqui estão um estojo e um paninho.
+R: How do I clean them?|Como limpo?
+X: Everything is clear.|Tudo está nítido.
+C: Limpar a lente com a camisa pode riscá-la.
+N: Próximo: óculos de sol.
+
+T: Sunglasses | Óculos de sol | shop | Miami | Lia,f,👩🏽,vendedora
+K: The sun is strong. | O sol está forte.
+M: Hoje você compra óculos de sol.
+D: You|I need sunglasses. The sun is strong.|Preciso de óculos de sol. O sol está forte.
+D: Lia|Which color do you like?|Que cor você gosta?
+D: You|Black. Or brown.|Preta. Ou marrom.
+D: Lia|These protect your eyes from the sun.|Estes protegem seus olhos do sol.
+D: You|Are they expensive?|São caros?
+D: Lia|No, twenty-five dollars.|Não, vinte e cinco dólares.
+D: You|I take them. Thank you.|Levo. Obrigado.
+V: sunglasses|óculos de sol;strong|forte;protect|proteger;eyes|olhos;brown|marrom
+B: I need {0}.|Preciso de {0}.|sunglasses=óculos de sol;a hat=chapéu;sunscreen=protetor solar
+B: They protect your {0}.|Eles protegem seus {0}.|eyes=olhos;skin=pele;face=rosto
+S: You|I need sunglasses. The sun is strong.|Preciso de óculos de sol. O sol está forte.|Which color do you like?|Que cor você gosta?
+S: You|Are they expensive?|São caros?|No, twenty-five dollars.|Não, vinte e cinco dólares.
+R: I need sunglasses.|Preciso de óculos de sol.
+R: The sun is strong.|O sol está forte.
+R: They protect your eyes.|Eles protegem seus olhos.
+R: Twenty-five dollars.|Vinte e cinco dólares.
+X: I take them.|Levo.
+C: Bons óculos de sol bloqueiam os raios UV.
+N: Próximo: lentes de contato.
+
+T: Contact lenses | Lentes de contato | clinic | Boston | Dr. Lee,m,🧑🏻,optometrista
+K: Wash your hands first. | Lave as mãos primeiro.
+M: Hoje você aprende a usar lentes.
+D: Dr. Lee|Wash your hands first.|Lave as mãos primeiro.
+D: You|Okay. Now what?|Certo. E agora?
+D: Dr. Lee|Put the lens on your finger.|Ponha a lente no dedo.
+D: You|It is so small.|É tão pequena.
+D: Dr. Lee|Look up and put it on your eye.|Olhe para cima e ponha no olho.
+D: You|I can do it. It feels fine.|Consegui. Está tranquilo.
+D: Dr. Lee|Remove them every night.|Tire todas as noites.
+V: contact lenses|lentes de contato;wash|lavar;finger|dedo;remove|tirar;night|noite
+B: Wash your {0} first.|Lave {0} primeiro.|hands=as mãos;eyes=os olhos;face=o rosto
+B: Remove them every {0}.|Tire todas as {0}.|night=noites;week=semanas;morning=manhãs
+S: Dr. Lee|Wash your hands first.|Lave as mãos primeiro.|Okay. Now what?|Certo. E agora?
+S: Dr. Lee|Look up and put it on your eye.|Olhe para cima e ponha no olho.|I can do it. It feels fine.|Consegui. Está tranquilo.
+R: Wash your hands first.|Lave as mãos primeiro.
+R: Put the lens on your finger.|Ponha a lente no dedo.
+R: Look up and put it on your eye.|Olhe para cima e ponha no olho.
+R: Remove them every night.|Tire todas as noites.
+X: It feels fine.|Está tranquilo.
+C: Lentes de contato exigem higiene e limpeza diárias.
+N: Próximo: o óculos quebrou.
+
+T: Broken glasses | Óculos quebrados | shop | Boston | Dan,m,🧑🏽,técnico
+K: My glasses are broken. | Meus óculos estão quebrados.
+M: Hoje você conserta os óculos.
+D: You|Excuse me. My glasses are broken.|Com licença. Meus óculos estão quebrados.
+D: Dan|Let me see. The arm is loose.|Deixe-me ver. A haste está solta.
+D: You|Can you fix it?|Você consegue consertar?
+D: Dan|Yes, with a small screw.|Consigo, com um parafuso pequeno.
+D: You|How long does it take?|Quanto tempo leva?
+D: Dan|Five minutes. It is free.|Cinco minutos. É grátis.
+D: You|Thank you so much.|Muito obrigado.
+V: broken|quebrados;arm|haste;loose|solta;screw|parafuso;free|grátis
+B: My glasses are {0}.|Meus óculos estão {0}.|broken=quebrados;dirty=sujos;loose=soltos
+B: It takes {0} minutes.|Leva {0} minutos.|five=cinco;ten=dez;two=dois
+S: You|Excuse me. My glasses are broken.|Com licença. Meus óculos estão quebrados.|Let me see. The arm is loose.|Deixe-me ver. A haste está solta.
+S: You|How long does it take?|Quanto tempo leva?|Five minutes. It is free.|Cinco minutos. É grátis.
+R: My glasses are broken.|Meus óculos estão quebrados.
+R: The arm is loose.|A haste está solta.
+R: Can you fix it?|Você consegue consertar?
+R: It is free.|É grátis.
+X: Thank you so much.|Muito obrigado.
+C: Muitas óticas fazem pequenos ajustes de graça.
+N: Próximo: a vista cansada.
+
+T: Eye care | Cuidar dos olhos | living | Boston | Jess,f,🧑🏼,amiga
+K: Rest your eyes. | Descanse os olhos.
+M: Hoje você aprende a cuidar dos olhos.
+D: Jess|Your eyes look tired.|Seus olhos parecem cansados.
+D: You|I work on the computer all day.|Trabalho no computador o dia todo.
+D: Jess|Rest your eyes every hour.|Descanse os olhos a cada hora.
+D: You|How?|Como?
+D: Jess|Look at something far away for a minute.|Olhe algo longe por um minuto.
+D: You|That is easy.|Isso é fácil.
+D: Jess|And drink water. And sleep well.|E beba água. E durma bem.
+V: tired|cansados;computer|computador;hour|hora;far away|longe;minute|minuto
+B: Rest your eyes every {0}.|Descanse os olhos a cada {0}.|hour=hora;day=dia;morning=manhã
+B: Look at something {0}.|Olhe algo {0}.|far away=longe;green=verde;big=grande
+S: Jess|Your eyes look tired.|Seus olhos parecem cansados.|I work on the computer all day.|Trabalho no computador o dia todo.
+S: You|How?|Como?|Look at something far away for a minute.|Olhe algo longe por um minuto.
+R: Your eyes look tired.|Seus olhos parecem cansados.
+R: I work on the computer all day.|Trabalho no computador o dia todo.
+R: Rest your eyes every hour.|Descanse os olhos a cada hora.
+R: Look at something far away.|Olhe algo longe.
+X: That is easy.|Isso é fácil.
+C: A regra 20-20-20: a cada 20 minutos, olhe algo a 20 pés por 20 segundos.
+N: Próximo: desafio, a visita ao oculista.
+
+T: At the eye doctor | Desafio do arco: no oculista | clinic | Boston | Dr. Lee,m,🧑🏻,optometrista
+K: I have an appointment. | Tenho uma consulta.
+M: Hoje você faz uma consulta completa.
+D: Dr. Lee|Good morning. What is your name?|Bom dia. Qual é o seu nome?
+D: You|Leo. I have an appointment at ten.|Leo. Tenho consulta às dez.
+D: Dr. Lee|Please sit down. How are your eyes?|Sente-se, por favor. Como estão seus olhos?
+D: You|I cannot read small letters.|Não consigo ler letras pequenas.
+D: Dr. Lee|You need new glasses.|Você precisa de óculos novos.
+D: You|Can I choose the frames today?|Posso escolher as armações hoje?
+D: Dr. Lee|Of course. The shop is next door.|Claro. A loja é ao lado.
+V: appointment|consulta;eyes|olhos;letters|letras;frames|armações;shop|loja
+B: I have an appointment at {0}.|Tenho consulta às {0}.|ten=dez;nine=nove;three=três
+B: You need new {0}.|Você precisa de {0} novos.|glasses=óculos;lenses=lentes;frames=armações
+S: Dr. Lee|Good morning. What is your name?|Bom dia. Qual é o seu nome?|Leo. I have an appointment at ten.|Leo. Tenho consulta às dez.
+S: Dr. Lee|You need new glasses.|Você precisa de óculos novos.|Can I choose the frames today?|Posso escolher as armações hoje?
+R: I have an appointment at ten.|Tenho consulta às dez.
+R: I cannot read small letters.|Não consigo ler letras pequenas.
+R: You need new glasses.|Você precisa de óculos novos.
+R: Can I choose the frames today?|Posso escolher as armações hoje?
+X: Of course.|Claro.
+C: A consulta no oculista leva cerca de 30 minutos.
+N: Próximo: emoções.
+BOSS: 1
