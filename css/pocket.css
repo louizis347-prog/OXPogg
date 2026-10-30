@@ -68,3 +68,13 @@
 .pk-strip::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(255,255,255,.85))}
 .course-family.pocket{background:linear-gradient(135deg,#FF8A5B,#FFC857);color:#fff;border-radius:18px;padding:14px 18px}
 .course-family.pocket h2,.course-family.pocket p{color:#fff;margin:0}
+
+/* Tipografia lúdica e arredondada: Fredoka nos títulos/frases, Nunito no corpo (fallbacks arredondados do sistema) */
+#player.nb-full .step.pk,#player.nb-full .step.pk *{font-family:"Nunito","Arial Rounded MT Bold",ui-rounded,"Segoe UI",system-ui,sans-serif!important}
+#player.nb-full .step.pk h2,#player.nb-full .step.pk h3,.pk .pk-sent,.pk .pk-key b,.pk .pk-opt b,.pk .pk-tt,.pk .pk-stk b,.pk .pk-cc b,.pk .pk-badge,.pk .pk-btn,.pk-stk small,.pk .pk-b>b,.pk .pk-mis small{font-family:"Fredoka","Arial Rounded MT Bold",ui-rounded,"Nunito",system-ui,sans-serif!important}
+.pk .pk-info h2{font-weight:700;letter-spacing:-.01em}
+.pk .pk-sent{font-weight:600;letter-spacing:0}
+.pk .pk-en{font-weight:800}
+.pk .pk-btn,.pk .pk-opt b,.pk .pk-cc b{font-weight:600}
+.pk .pk-opt b{font-size:21px}
+.pk .pk-card,.pk .pk-b,.pk .pk-cc,.pk .pk-key,.pk .pk-opt{border-radius:22px}
