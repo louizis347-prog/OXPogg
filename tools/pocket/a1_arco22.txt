@@ -1,0 +1,483 @@
+# Arco 22 · Animais
+T: What is that animal? | Perguntar o nome de um animal | park | Denver | Kai,m,🧑🏻,guia do zoo
+K: What is that animal? | Que animal é aquele?
+M: Hoje você pergunta o nome dos animais no zoo.
+D: You|Excuse me, what is that animal?|Com licença, que animal é aquele?
+D: Kai|That is an elephant.|Aquele é um elefante.
+D: You|It is so big!|Ele é tão grande!
+D: Kai|Yes. And this is a monkey.|Sim. E este é um macaco.
+D: You|The monkey is funny. It has a long tail.|O macaco é engraçado. Ele tem uma cauda longa.
+D: Kai|Look, there is a giraffe too.|Olhe, tem uma girafa também.
+D: You|It is very tall!|Ela é muito alta!
+D: Kai|Come this way. There are more animals.|Venha por aqui. Tem mais animais.
+V: elephant|elefante;monkey|macaco;giraffe|girafa;tail|cauda;animal|animal
+B: That is a {0}.|Aquilo é um(a) {0}.|elephant=elefante;monkey=macaco;giraffe=girafa
+B: It is very {0}!|Ele é muito {0}!|big=grande;tall=alto;funny=engraçado
+S: Kai|That is an elephant.|Aquele é um elefante.|It is so big!|Ele é tão grande!
+S: Kai|Look, there is a giraffe too.|Olhe, tem uma girafa também.|It is very tall!|Ela é muito alta!
+R: What is that animal?|Que animal é aquele?
+R: That is an elephant.|Aquele é um elefante.
+R: The monkey has a long tail.|O macaco tem uma cauda longa.
+R: There are more animals.|Tem mais animais.
+X: Look!|Olhe!
+C: "That" aponta para algo longe, "this" para algo perto.
+N: Próximo: o que os animais comem.
+
+T: What do they eat? | Perguntar o que os animais comem | park | Denver | Kai,m,🧑🏻,guia do zoo
+K: What do they eat? | O que eles comem?
+M: Hoje você aprende o que cada animal come.
+D: You|What do the monkeys eat?|O que os macacos comem?
+D: Kai|They eat bananas and fruit.|Eles comem bananas e frutas.
+D: You|And the elephants?|E os elefantes?
+D: Kai|They eat grass and leaves.|Eles comem capim e folhas.
+D: You|Do the lions eat grass?|Os leões comem capim?
+D: Kai|No, they do not. They eat meat.|Não, eles não comem. Eles comem carne.
+D: You|Wow! I like the zoo.|Uau! Eu gosto do zoo.
+D: Kai|Me too. It is a great job.|Eu também. É um ótimo trabalho.
+V: eat|comer;bananas|bananas;grass|capim;leaves|folhas;meat|carne
+B: They eat {0}.|Eles comem {0}.|bananas=bananas;grass=capim;meat=carne
+B: Do the {0} eat grass?|Os {0} comem capim?|lions=leões;cows=vacas;birds=pássaros
+S: Kai|They eat bananas and fruit.|Eles comem bananas e frutas.|And the elephants?|E os elefantes?
+S: Kai|They eat grass and leaves.|Eles comem capim e folhas.|Do the lions eat grass?|Os leões comem capim?
+R: What do the monkeys eat?|O que os macacos comem?
+R: They eat bananas.|Eles comem bananas.
+R: Elephants eat grass and leaves.|Elefantes comem capim e folhas.
+R: Lions eat meat.|Leões comem carne.
+X: Wow!|Uau!
+C: Em inglês, com "they" o verbo não ganha -s: they eat.
+N: Próximo: animais de estimação.
+
+T: My dog and my cat | Falar dos seus animais | living | Seattle | Jess,f,🧑🏼,vizinha
+K: I have a dog and a cat. | Eu tenho um cachorro e um gato.
+M: Hoje você fala dos seus bichos de estimação.
+D: Jess|Do you have a pet?|Você tem um bicho de estimação?
+D: You|Yes, I have a dog and a cat.|Tenho, um cachorro e um gato.
+D: Jess|What are their names?|Quais são os nomes deles?
+D: You|The dog is Max. The cat is Luna.|O cachorro é o Max. A gata é a Luna.
+D: Jess|Is Luna big?|A Luna é grande?
+D: You|No, she is small and white.|Não, ela é pequena e branca.
+D: Jess|I have a fish. It is orange.|Eu tenho um peixe. Ele é laranja.
+D: You|Nice! Pets are good friends.|Legal! Bichos são bons amigos.
+V: dog|cachorro;cat|gato;fish|peixe;small|pequena;white|branca
+B: I have a {0}.|Eu tenho um(a) {0}.|dog=cachorro;cat=gato;fish=peixe
+B: She is {0}.|Ela é {0}.|small=pequena;white=branca;black=preta
+S: Jess|Do you have a pet?|Você tem um bicho de estimação?|Yes, I have a dog and a cat.|Tenho, um cachorro e um gato.
+S: Jess|Is Luna big?|A Luna é grande?|No, she is small and white.|Não, ela é pequena e branca.
+R: Do you have a pet?|Você tem um bicho de estimação?
+R: I have a dog and a cat.|Tenho um cachorro e um gato.
+R: The cat is small and white.|A gata é pequena e branca.
+R: Pets are good friends.|Bichos são bons amigos.
+X: Nice!|Legal!
+C: Em inglês, bichos de estimação são "pets" e muita gente os trata como família.
+N: Próximo: o que o cachorro faz.
+
+T: The dog runs fast | Ações dos animais | park | Chicago | Ben,m,🧑🏽,vizinho
+K: The dog runs fast. | O cachorro corre rápido.
+M: Hoje você descreve o que os animais fazem.
+D: Ben|Look at my dog. He runs fast.|Olhe o meu cachorro. Ele corre rápido.
+D: You|He is great! Does he swim too?|Ele é ótimo! Ele nada também?
+D: Ben|Yes, he swims in the lake.|Sim, ele nada no lago.
+D: You|My cat sleeps all day.|O meu gato dorme o dia todo.
+D: Ben|Cats are lazy. They sleep a lot.|Gatos são preguiçosos. Eles dormem muito.
+D: You|Birds sing in the morning.|Pássaros cantam de manhã.
+D: Ben|And fish swim all day.|E peixes nadam o dia todo.
+D: You|Animals are amazing.|Animais são incríveis.
+V: runs|corre;swims|nada;sleeps|dorme;sing|cantam;lazy|preguiçoso
+B: The dog {0} fast.|O cachorro {0} rápido.|runs=corre;swims=nada;jumps=pula
+B: Birds {0} in the morning.|Pássaros {0} de manhã.|sing=cantam;fly=voam;wake up=acordam
+S: Ben|Look at my dog. He runs fast.|Olhe o meu cachorro. Ele corre rápido.|Does he swim too?|Ele nada também?
+S: Ben|Cats are lazy. They sleep a lot.|Gatos são preguiçosos. Eles dormem muito.|Birds sing in the morning.|Pássaros cantam de manhã.
+R: The dog runs fast.|O cachorro corre rápido.
+R: He swims in the lake.|Ele nada no lago.
+R: My cat sleeps all day.|O meu gato dorme o dia todo.
+R: Birds sing in the morning.|Pássaros cantam de manhã.
+X: Amazing!|Incrível!
+C: Com he, she e it, o verbo ganha -s: he runs, she sleeps.
+N: Próximo: a fazenda.
+
+T: Animals on the farm | Animais da fazenda | market | Austin | Rosa,f,👩🏽,fazendeira
+K: There are cows on the farm. | Tem vacas na fazenda.
+M: Hoje você conhece uma fazenda.
+D: Rosa|Welcome to my farm!|Bem-vindo à minha fazenda!
+D: You|Thank you. There are many animals here.|Obrigado. Tem muitos animais aqui.
+D: Rosa|Yes. We have cows, horses and chickens.|Sim. Temos vacas, cavalos e galinhas.
+D: You|How many cows do you have?|Quantas vacas você tem?
+D: Rosa|We have twelve cows.|Temos doze vacas.
+D: You|What do the chickens give you?|O que as galinhas dão a você?
+D: Rosa|They give us eggs every day.|Elas nos dão ovos todo dia.
+D: You|I love fresh eggs!|Eu adoro ovos frescos!
+V: farm|fazenda;cows|vacas;horses|cavalos;chickens|galinhas;eggs|ovos
+B: There are {0} on the farm.|Tem {0} na fazenda.|cows=vacas;horses=cavalos;chickens=galinhas
+B: We have {0} cows.|Temos {0} vacas.|twelve=doze;ten=dez;five=cinco
+S: Rosa|Welcome to my farm!|Bem-vindo à minha fazenda!|Thank you. There are many animals here.|Obrigado. Tem muitos animais aqui.
+S: Rosa|We have twelve cows.|Temos doze vacas.|What do the chickens give you?|O que as galinhas dão a você?
+R: Welcome to my farm!|Bem-vindo à minha fazenda!
+R: There are many animals.|Tem muitos animais.
+R: We have twelve cows.|Temos doze vacas.
+R: Chickens give us eggs.|Galinhas nos dão ovos.
+X: Welcome!|Bem-vindo!
+C: "How many" pergunta quantidade de coisas que se contam: how many cows?
+N: Próximo: animais do mar.
+
+T: Fish in the sea | Animais do mar | water | Miami | Lia,f,👩🏽,bióloga
+K: Fish live in the sea. | Peixes vivem no mar.
+M: Hoje você conhece os bichos do mar.
+D: Lia|Look at the aquarium. What do you see?|Olhe o aquário. O que você vê?
+D: You|I see a lot of fish.|Vejo muitos peixes.
+D: Lia|Yes. Fish live in the sea.|Sim. Peixes vivem no mar.
+D: You|What is that big animal?|Que animal grande é aquele?
+D: Lia|That is a shark. It is not dangerous here.|Aquele é um tubarão. Não é perigoso aqui.
+D: You|And the small one with eight arms?|E o pequeno com oito braços?
+D: Lia|That is an octopus. It is very smart.|Aquele é um polvo. Ele é muito inteligente.
+D: You|The sea is full of life.|O mar é cheio de vida.
+V: aquarium|aquário;shark|tubarão;octopus|polvo;sea|mar;dangerous|perigoso
+B: I see a {0}.|Eu vejo um(a) {0}.|shark=tubarão;fish=peixe;turtle=tartaruga
+B: It is not {0}.|Ele não é {0}.|dangerous=perigoso;big=grande;slow=lento
+S: Lia|Look at the aquarium. What do you see?|Olhe o aquário. O que você vê?|I see a lot of fish.|Vejo muitos peixes.
+S: Lia|That is an octopus. It is very smart.|Aquele é um polvo. Ele é muito inteligente.|The sea is full of life.|O mar é cheio de vida.
+R: What do you see?|O que você vê?
+R: I see a lot of fish.|Vejo muitos peixes.
+R: Fish live in the sea.|Peixes vivem no mar.
+R: The octopus is very smart.|O polvo é muito inteligente.
+X: Look!|Olhe!
+C: "A lot of" significa "muitos" e funciona com quase tudo.
+N: Próximo: pássaros.
+
+T: Birds can fly | Usar can | park | Seattle | Tom,m,🧑🏽,observador
+K: Birds can fly. | Pássaros podem voar.
+M: Hoje você usa can para falar do que os animais conseguem fazer.
+D: Tom|Look! That bird can fly very high.|Olhe! Aquele pássaro voa muito alto.
+D: You|Can all birds fly?|Todos os pássaros voam?
+D: Tom|No. Penguins cannot fly, but they can swim.|Não. Pinguins não voam, mas nadam.
+D: You|Can a parrot talk?|Um papagaio fala?
+D: Tom|Yes, it can say words.|Sim, ele consegue dizer palavras.
+D: You|Can you see that owl?|Você consegue ver aquela coruja?
+D: Tom|Yes, it is in the tree.|Sim, está na árvore.
+D: You|It can see in the dark.|Ela enxerga no escuro.
+V: bird|pássaro;fly|voar;penguins|pinguins;parrot|papagaio;owl|coruja
+B: A bird can {0}.|Um pássaro pode {0}.|fly=voar;sing=cantar;jump=pular
+B: Penguins cannot {0}.|Pinguins não conseguem {0}.|fly=voar;run=correr fast;climb=escalar
+S: Tom|Look! That bird can fly very high.|Olhe! Aquele pássaro voa muito alto.|Can all birds fly?|Todos os pássaros voam?
+S: Tom|Can a parrot talk?|Um papagaio fala?|Yes, it can say words.|Sim, ele consegue dizer palavras.
+R: Birds can fly.|Pássaros podem voar.
+R: Penguins cannot fly.|Pinguins não voam.
+R: They can swim.|Eles nadam.
+R: A parrot can say words.|Um papagaio diz palavras.
+X: Look!|Olhe!
+C: Can não muda: I can, he can, they can. Cannot é a forma negativa.
+N: Próximo: insetos e bichinhos.
+
+T: Small animals | Bichos pequenos | park | Boston | Ben,m,🧑🏽,vizinho
+K: I do not like spiders. | Eu não gosto de aranhas.
+M: Hoje você fala do que gosta e não gosta.
+D: Ben|Look at the garden. There are many bugs.|Olhe o jardim. Tem muitos insetos.
+D: You|I like butterflies. They are pretty.|Eu gosto de borboletas. São bonitas.
+D: Ben|Me too. Do you like bees?|Eu também. Você gosta de abelhas?
+D: You|Yes, they make honey.|Gosto, elas fazem mel.
+D: Ben|I do not like spiders.|Eu não gosto de aranhas.
+D: You|Why not?|Por que não?
+D: Ben|They have eight legs. It is scary.|Elas têm oito pernas. É assustador.
+D: You|Ha! But they are not dangerous.|Ha! Mas elas não são perigosas.
+V: butterflies|borboletas;bees|abelhas;honey|mel;spiders|aranhas;legs|pernas
+B: I like {0}.|Eu gosto de {0}.|butterflies=borboletas;bees=abelhas;ants=formigas
+B: I do not like {0}.|Eu não gosto de {0}.|spiders=aranhas;snakes=cobras;bugs=insetos
+S: Ben|Look at the garden. There are many bugs.|Olhe o jardim. Tem muitos insetos.|I like butterflies. They are pretty.|Eu gosto de borboletas. São bonitas.
+S: Ben|I do not like spiders.|Eu não gosto de aranhas.|Why not?|Por que não?
+R: I like butterflies.|Eu gosto de borboletas.
+R: Bees make honey.|Abelhas fazem mel.
+R: I do not like spiders.|Eu não gosto de aranhas.
+R: They have eight legs.|Elas têm oito pernas.
+X: Why not?|Por que não?
+C: "Do not like" é o jeito normal de dizer que não gosta de algo.
+N: Próximo: animais selvagens.
+
+T: Wild animals | Animais selvagens | forest | Denver | Kai,m,🧑🏻,guarda-florestal
+K: The bear lives in the forest. | O urso vive na floresta.
+M: Hoje você conhece os animais da floresta.
+D: Kai|This is the forest. Wild animals live here.|Esta é a floresta. Animais selvagens vivem aqui.
+D: You|What animals live here?|Que animais vivem aqui?
+D: Kai|Bears, wolves and deer.|Ursos, lobos e cervos.
+D: You|Are bears dangerous?|Ursos são perigosos?
+D: Kai|Yes, but they do not like people.|Sim, mas eles não gostam de gente.
+D: You|Where do they sleep?|Onde eles dormem?
+D: Kai|The bear sleeps in a cave.|O urso dorme numa caverna.
+D: You|I want to see a deer. Is it far?|Quero ver um cervo. É longe?
+V: forest|floresta;bears|ursos;wolves|lobos;deer|cervos;cave|caverna
+B: The bear lives in the {0}.|O urso vive {0}.|forest=na floresta;mountain=na montanha;cave=na caverna
+B: Wild animals {0} here.|Animais selvagens {0} aqui.|live=vivem;sleep=dormem;eat=comem
+S: Kai|This is the forest. Wild animals live here.|Esta é a floresta. Animais selvagens vivem aqui.|What animals live here?|Que animais vivem aqui?
+S: Kai|The bear sleeps in a cave.|O urso dorme numa caverna.|I want to see a deer. Is it far?|Quero ver um cervo. É longe?
+R: Wild animals live here.|Animais selvagens vivem aqui.
+R: Bears are dangerous.|Ursos são perigosos.
+R: The bear sleeps in a cave.|O urso dorme numa caverna.
+R: I want to see a deer.|Quero ver um cervo.
+X: Is it far?|É longe?
+C: "Wild" significa selvagem; "pet" é animal doméstico.
+N: Próximo: desafio, um dia no zoo.
+
+T: A day at the zoo | Desafio do arco: um dia no zoo | park | Seattle | Mia,f,👩🏻,amiga
+K: I love the zoo! | Eu adoro o zoo!
+M: Hoje você usa tudo sobre animais num passeio.
+D: Mia|Welcome to the zoo! What is your favorite animal?|Bem-vindo ao zoo! Qual é o seu animal favorito?
+D: You|I love elephants. They are big and kind.|Adoro elefantes. São grandes e gentis.
+D: Mia|Mine is the penguin. It can swim very fast.|O meu é o pinguim. Ele nada muito rápido.
+D: You|Look! There are monkeys in that tree.|Olhe! Tem macacos naquela árvore.
+D: Mia|They eat bananas. Do you have one?|Eles comem bananas. Você tem uma?
+D: You|Yes, I have two in my bag.|Tenho, duas na minha bolsa.
+D: Mia|Let us go to the lions now.|Vamos ver os leões agora.
+D: You|Great idea. I love the zoo!|Ótima ideia. Eu adoro o zoo!
+V: favorite|favorito;penguin|pinguim;kind|gentil;tree|árvore;lions|leões
+B: My favorite animal is the {0}.|O meu animal favorito é o {0}.|elephant=elefante;penguin=pinguim;dog=cachorro
+B: Let us go to the {0}.|Vamos ver os {0}.|lions=leões;monkeys=macacos;birds=pássaros
+S: Mia|What is your favorite animal?|Qual é o seu animal favorito?|I love elephants. They are big and kind.|Adoro elefantes. São grandes e gentis.
+S: Mia|Let us go to the lions now.|Vamos ver os leões agora.|Great idea. I love the zoo!|Ótima ideia. Eu adoro o zoo!
+R: What is your favorite animal?|Qual é o seu animal favorito?
+R: I love elephants.|Eu adoro elefantes.
+R: Penguins swim fast.|Pinguins nadam rápido.
+R: Let us go to the lions.|Vamos ver os leões.
+X: Great idea!|Ótima ideia!
+C: "Favorite" é o animal, a cor ou a comida de que você mais gosta.
+N: Próximo: o clima e a natureza.
+BOSS: 1
+
+# Arco 23 · Natureza e clima
+T: A sunny day | Falar do clima | street | Miami | Lia,f,👩🏽,amiga
+K: It is a sunny day. | Hoje é um dia de sol.
+M: Hoje você fala do tempo com naturalidade.
+D: Lia|Look at the sky. It is sunny today.|Olhe o céu. Hoje faz sol.
+D: You|Yes, it is hot too.|Sim, também faz calor.
+D: Lia|Is it hot in your city?|Faz calor na sua cidade?
+D: You|No, it is cold and windy.|Não, faz frio e venta.
+D: Lia|Cold? Do you have snow?|Frio? Vocês têm neve?
+D: You|Yes, in winter we have snow.|Sim, no inverno temos neve.
+D: Lia|I want to see snow one day.|Quero ver neve um dia.
+D: You|Come in winter. It is beautiful.|Venha no inverno. É lindo.
+V: sunny|ensolarado;hot|quente;cold|frio;windy|ventoso;snow|neve
+B: It is {0} today.|Hoje está {0}.|sunny=ensolarado;windy=ventoso;cloudy=nublado
+B: It is {0}.|Está {0}.|hot=quente;cold=frio;warm=morno
+S: Lia|Look at the sky. It is sunny today.|Olhe o céu. Hoje faz sol.|Yes, it is hot too.|Sim, também faz calor.
+S: Lia|Do you have snow?|Vocês têm neve?|Yes, in winter we have snow.|Sim, no inverno temos neve.
+R: It is sunny today.|Hoje faz sol.
+R: It is hot.|Faz calor.
+R: It is cold and windy.|Faz frio e venta.
+R: We have snow in winter.|Temos neve no inverno.
+X: One day.|Um dia.
+C: Para clima, inglês usa "it is": it is hot, it is cold.
+N: Próximo: chuva.
+
+T: It is raining | Dia de chuva | street | Seattle | Jess,f,🧑🏼,vizinha
+K: It is raining. | Está chovendo.
+M: Hoje você fala de chuva e do que levar.
+D: Jess|Look outside. It is raining.|Olhe lá fora. Está chovendo.
+D: You|Oh no! I have no umbrella.|Ah não! Não tenho guarda-chuva.
+D: Jess|Take mine. It is by the door.|Pegue o meu. Está perto da porta.
+D: You|Thank you. Is it raining hard?|Obrigado. Está chovendo forte?
+D: Jess|Yes, and it is very cloudy.|Sim, e está muito nublado.
+D: You|I like rain, but not today.|Eu gosto de chuva, mas não hoje.
+D: Jess|Wear your coat. It is cold too.|Use seu casaco. Está frio também.
+D: You|Good idea. See you later!|Boa ideia. Até mais!
+V: raining|chovendo;umbrella|guarda-chuva;cloudy|nublado;coat|casaco;outside|lá fora
+B: It is {0}.|Está {0}.|raining=chovendo;snowing=nevando;cloudy=nublado
+B: Take my {0}.|Pegue {0}.|umbrella=o meu guarda-chuva;coat=o meu casaco;hat=o meu chapéu
+S: Jess|Look outside. It is raining.|Olhe lá fora. Está chovendo.|Oh no! I have no umbrella.|Ah não! Não tenho guarda-chuva.
+S: Jess|Wear your coat. It is cold too.|Use seu casaco. Está frio também.|Good idea. See you later!|Boa ideia. Até mais!
+R: It is raining.|Está chovendo.
+R: I have no umbrella.|Não tenho guarda-chuva.
+R: Take mine.|Pegue o meu.
+R: Wear your coat.|Use seu casaco.
+X: See you later!|Até mais!
+C: "Raining" é a forma -ing: está chovendo agora.
+N: Próximo: as quatro estações.
+
+T: Four seasons | As estações do ano | park | Boston | Ben,m,🧑🏽,amigo
+K: My favorite season is spring. | Minha estação favorita é a primavera.
+M: Hoje você fala das estações.
+D: Ben|There are four seasons in a year.|Há quatro estações num ano.
+D: You|Yes: spring, summer, fall and winter.|Sim: primavera, verão, outono e inverno.
+D: Ben|What is your favorite season?|Qual é a sua estação favorita?
+D: You|I like spring. The flowers are beautiful.|Eu gosto da primavera. As flores são lindas.
+D: Ben|I like summer. I swim every day.|Eu gosto do verão. Eu nado todo dia.
+D: You|Is winter long in Boston?|O inverno é longo em Boston?
+D: Ben|Yes, it is cold and white.|Sim, é frio e branco.
+D: You|Bring me a scarf next time!|Traga-me um cachecol da próxima vez!
+V: seasons|estações;spring|primavera;summer|verão;fall|outono;winter|inverno
+B: My favorite season is {0}.|Minha estação favorita é {0}.|spring=a primavera;summer=o verão;fall=o outono
+B: I like {0}.|Eu gosto d{0}.|winter=o inverno;flowers=as flores;snow=a neve
+S: Ben|There are four seasons in a year.|Há quatro estações num ano.|Yes: spring, summer, fall and winter.|Sim: primavera, verão, outono e inverno.
+S: Ben|What is your favorite season?|Qual é a sua estação favorita?|I like spring. The flowers are beautiful.|Eu gosto da primavera. As flores são lindas.
+R: There are four seasons.|Há quatro estações.
+R: My favorite season is spring.|Minha estação favorita é a primavera.
+R: The flowers are beautiful.|As flores são lindas.
+R: Winter is cold and white.|O inverno é frio e branco.
+X: Next time!|Da próxima vez!
+C: Nos EUA se diz "fall" para o outono; no Reino Unido, "autumn".
+N: Próximo: a montanha.
+
+T: The mountain | Falar da montanha | forest | Denver | Kai,m,🧑🏻,guia
+K: The mountain is very high. | A montanha é muito alta.
+M: Hoje você sobe uma montanha, com os pés no chão.
+D: Kai|Welcome to the mountain! It is very high.|Bem-vindo à montanha! Ela é muito alta.
+D: You|How high is it?|Qual é a altura?
+D: Kai|It is four thousand meters high.|Tem quatro mil metros de altura.
+D: You|Wow! Is the top cold?|Uau! O topo é frio?
+D: Kai|Yes, it is very cold up there.|Sim, é muito frio lá em cima.
+D: You|Is the path long?|O caminho é longo?
+D: Kai|It is not long, but it is steep.|Não é longo, mas é íngreme.
+D: You|I have water and a map. Let us go!|Tenho água e um mapa. Vamos!
+V: mountain|montanha;high|alta;top|topo;path|caminho;steep|íngreme
+B: The mountain is very {0}.|A montanha é muito {0}.|high=alta;cold=fria;beautiful=bonita
+B: The path is {0}.|O caminho é {0}.|steep=íngreme;long=longo;short=curto
+S: Kai|Welcome to the mountain! It is very high.|Bem-vindo à montanha! Ela é muito alta.|How high is it?|Qual é a altura?
+S: Kai|It is not long, but it is steep.|Não é longo, mas é íngreme.|I have water and a map. Let us go!|Tenho água e um mapa. Vamos!
+R: The mountain is very high.|A montanha é muito alta.
+R: The top is cold.|O topo é frio.
+R: The path is steep.|O caminho é íngreme.
+R: I have water and a map.|Tenho água e um mapa.
+X: Let us go!|Vamos!
+C: Altura de montanha usa meters (metros) em quase todo o mundo; os EUA usam feet.
+N: Próximo: o rio e o lago.
+
+T: The river and the lake | Rio e lago | water | Chicago | Ruth,f,👩🏻,pescadora
+K: The water is clean. | A água é limpa.
+M: Hoje você fala de água e pesca.
+D: Ruth|Good morning! This is my favorite lake.|Bom dia! Este é o meu lago favorito.
+D: You|It is beautiful. The water is clean.|É lindo. A água é limpa.
+D: Ruth|Yes. There is a river near here too.|Sim. Tem um rio perto daqui também.
+D: You|Can you swim in the river?|Dá para nadar no rio?
+D: Ruth|No, it is too fast. But you can fish.|Não, ele é rápido demais. Mas dá para pescar.
+D: You|I do not know how to fish.|Eu não sei pescar.
+D: Ruth|It is easy. I can show you.|É fácil. Eu posso mostrar.
+D: You|Great! I want a big fish.|Ótimo! Quero um peixe grande.
+V: lake|lago;river|rio;clean|limpa;fish|pescar;water|água
+B: The water is {0}.|A água é {0}.|clean=limpa;cold=fria;warm=morna
+B: You can {0}.|Dá para {0}.|swim=nadar;fish=pescar;walk=caminhar
+S: Ruth|Good morning! This is my favorite lake.|Bom dia! Este é o meu lago favorito.|It is beautiful. The water is clean.|É lindo. A água é limpa.
+S: Ruth|It is easy. I can show you.|É fácil. Eu posso mostrar.|Great! I want a big fish.|Ótimo! Quero um peixe grande.
+R: This is my favorite lake.|Este é o meu lago favorito.
+R: The water is clean.|A água é limpa.
+R: Can you swim in the river?|Dá para nadar no rio?
+R: I can show you.|Eu posso mostrar.
+X: Good morning!|Bom dia!
+C: "Fish" é substantivo e verbo; o plural de fish costuma ser igual: two fish.
+N: Próximo: a praia.
+
+T: Sun, sand and sea | Dia de praia | beach | Miami | Lia,f,👩🏽,amiga
+K: Let us go to the beach. | Vamos à praia.
+M: Hoje você vai à praia e fala do que leva.
+D: Lia|It is a hot day. Let us go to the beach.|Está um dia quente. Vamos à praia.
+D: You|Good idea. I have a towel and a hat.|Boa ideia. Tenho uma toalha e um chapéu.
+D: Lia|I have sun cream. Do you need some?|Tenho protetor solar. Você precisa?
+D: You|Yes, please. The sun is strong.|Sim, por favor. O sol está forte.
+D: Lia|Look at the waves. They are big.|Olhe as ondas. Elas estão grandes.
+D: You|Is the water cold?|A água está fria?
+D: Lia|No, it is warm. Come on!|Não, está morna. Vamos!
+D: You|I love the beach!|Eu adoro a praia!
+V: beach|praia;towel|toalha;sun cream|protetor solar;waves|ondas;sand|areia
+B: I have a {0}.|Eu tenho {0}.|towel=uma toalha;hat=um chapéu;umbrella=um guarda-sol
+B: The waves are {0}.|As ondas estão {0}.|big=grandes;small=pequenas;high=altas
+S: Lia|It is a hot day. Let us go to the beach.|Está um dia quente. Vamos à praia.|Good idea. I have a towel and a hat.|Boa ideia. Tenho uma toalha e um chapéu.
+S: Lia|Is the water cold?|A água está fria?|No, it is warm. Come on!|Não, está morna. Vamos!
+R: Let us go to the beach.|Vamos à praia.
+R: I have a towel and a hat.|Tenho uma toalha e um chapéu.
+R: The sun is strong.|O sol está forte.
+R: The water is warm.|A água está morna.
+X: Come on!|Vamos!
+C: Em inglês, "sun cream" (UK) e "sunscreen" (EUA) são o protetor solar.
+N: Próximo: a floresta e as árvores.
+
+T: Trees and flowers | Árvores e flores | park | Austin | Rosa,f,👩🏽,jardineira
+K: This tree is very old. | Esta árvore é muito velha.
+M: Hoje você fala de árvores e flores.
+D: Rosa|Come and see my garden.|Venha ver o meu jardim.
+D: You|It is so green! What is this tree?|É tão verde! Que árvore é esta?
+D: Rosa|It is an apple tree. It is very old.|É uma macieira. É muito velha.
+D: You|And these flowers are lovely.|E estas flores são lindas.
+D: Rosa|They are roses. They are red and white.|São rosas. São vermelhas e brancas.
+D: You|Do they need a lot of water?|Elas precisam de muita água?
+D: Rosa|Yes, every day. Do you have a garden?|Sim, todo dia. Você tem um jardim?
+D: You|No, but I have two small plants.|Não, mas tenho duas plantinhas.
+V: garden|jardim;tree|árvore;roses|rosas;plants|plantas;green|verde
+B: This is a {0} tree.|Esta é uma árvore {0}.|apple=macieira;old=velha;big=grande
+B: The roses are {0}.|As rosas são {0}.|red=vermelhas;white=brancas;pink=cor-de-rosa
+S: Rosa|Come and see my garden.|Venha ver o meu jardim.|It is so green! What is this tree?|É tão verde! Que árvore é esta?
+S: Rosa|Do you have a garden?|Você tem um jardim?|No, but I have two small plants.|Não, mas tenho duas plantinhas.
+R: What is this tree?|Que árvore é esta?
+R: It is an apple tree.|É uma macieira.
+R: The roses are red and white.|As rosas são vermelhas e brancas.
+R: I have two small plants.|Tenho duas plantinhas.
+X: So green!|Tão verde!
+C: "A" antes de som de consoante, "an" antes de vogal: an apple, a tree.
+N: Próximo: o céu à noite.
+
+T: Stars in the sky | Céu noturno | night | Denver | Tom,m,🧑🏽,amigo
+K: Look at the stars! | Olhe as estrelas!
+M: Hoje você observa o céu à noite.
+D: Tom|Look at the sky. There are so many stars!|Olhe o céu. Tem tantas estrelas!
+D: You|They are beautiful. Is that the moon?|São lindas. Aquela é a lua?
+D: Tom|Yes, it is full tonight.|Sim, está cheia hoje.
+D: You|The sky is very clear.|O céu está muito limpo.
+D: Tom|There are no clouds. It is perfect.|Não tem nuvens. É perfeito.
+D: You|I can see a bright star over there.|Vejo uma estrela brilhante ali.
+D: Tom|That is a planet. It is Venus.|Aquilo é um planeta. É Vênus.
+D: You|Wow, I love the night sky.|Uau, eu adoro o céu noturno.
+V: stars|estrelas;moon|lua;clear|limpo;clouds|nuvens;bright|brilhante
+B: Look at the {0}!|Olhe {0}!|stars=as estrelas;moon=a lua;sky=o céu
+B: There are no {0}.|Não tem {0}.|clouds=nuvens;stars=estrelas;people=pessoas
+S: Tom|Look at the sky. There are so many stars!|Olhe o céu. Tem tantas estrelas!|They are beautiful. Is that the moon?|São lindas. Aquela é a lua?
+S: Tom|I can see a bright star over there.|Vejo uma estrela brilhante ali.|That is a planet. It is Venus.|Aquilo é um planeta. É Vênus.
+R: There are so many stars.|Tem tantas estrelas.
+R: The moon is full tonight.|A lua está cheia hoje.
+R: The sky is very clear.|O céu está muito limpo.
+R: I love the night sky.|Eu adoro o céu noturno.
+X: Wow!|Uau!
+C: "Full moon" é lua cheia; "new moon" é lua nova.
+N: Próximo: desastres e tempo extremo.
+
+T: A big storm | Tempestade | street | Miami | Max,m,🧑🏼,vizinho
+K: There is a big storm. | Tem uma tempestade forte.
+M: Hoje você fala de uma tempestade, com calma.
+D: Max|Listen! There is a big storm.|Escute! Tem uma tempestade forte.
+D: You|I hear thunder. It is loud.|Eu ouço trovões. Está alto.
+D: Max|Look at the lightning!|Olhe os relâmpagos!
+D: You|Is it dangerous outside?|Lá fora é perigoso?
+D: Max|Yes. Stay at home today.|Sim. Fique em casa hoje.
+D: You|I have candles and water. I am fine.|Tenho velas e água. Estou bem.
+D: Max|Good. The storm stops in the morning.|Bom. A tempestade para de manhã.
+D: You|Thanks for the call. Stay safe!|Obrigado pela ligação. Se cuide!
+V: storm|tempestade;thunder|trovões;lightning|relâmpagos;candles|velas;safe|seguro
+B: There is a big {0}.|Tem {0} forte.|storm=uma tempestade;wind=um vento;fog=uma neblina
+B: Stay {0}.|Fique {0}.|safe=seguro;home=em casa;inside=dentro
+S: Max|Listen! There is a big storm.|Escute! Tem uma tempestade forte.|I hear thunder. It is loud.|Eu ouço trovões. Está alto.
+S: Max|Is it dangerous outside?|Lá fora é perigoso?|Yes. Stay at home today.|Sim. Fique em casa hoje.
+R: There is a big storm.|Tem uma tempestade forte.
+R: I hear thunder.|Eu ouço trovões.
+R: Stay at home today.|Fique em casa hoje.
+R: Stay safe!|Se cuide!
+X: Stay safe!|Se cuide!
+C: "Stay" + lugar ou adjetivo: stay home, stay safe.
+N: Próximo: desafio, um fim de semana na natureza.
+
+T: Weekend in nature | Desafio do arco: fim de semana na natureza | forest | Seattle | Mia,f,👩🏻,amiga
+K: I love nature. | Eu adoro a natureza.
+M: Hoje você planeja uma saída na natureza em frases simples.
+D: Mia|Let us go to the mountain this weekend.|Vamos à montanha neste fim de semana.
+D: You|Great idea. What is the weather there?|Ótima ideia. Como está o tempo lá?
+D: Mia|It is sunny and warm. No rain.|Faz sol e está morno. Sem chuva.
+D: You|I have a tent and a map.|Tenho uma barraca e um mapa.
+D: Mia|I have water, bread and fruit.|Tenho água, pão e fruta.
+D: You|Can we see animals there?|Dá para ver animais lá?
+D: Mia|Yes. There are deer and birds.|Dá. Tem cervos e pássaros.
+D: You|I love nature. Let us go!|Eu adoro a natureza. Vamos!
+V: weekend|fim de semana;weather|tempo;tent|barraca;map|mapa;nature|natureza
+B: What is the {0}?|Como está {0}?|weather=o tempo;time=a hora;day=o dia
+B: I have a {0}.|Eu tenho {0}.|tent=uma barraca;map=um mapa;bag=uma mochila
+S: Mia|Let us go to the mountain this weekend.|Vamos à montanha neste fim de semana.|Great idea. What is the weather there?|Ótima ideia. Como está o tempo lá?
+S: Mia|Can we see animals there?|Dá para ver animais lá?|Yes. There are deer and birds.|Dá. Tem cervos e pássaros.
+R: Let us go this weekend.|Vamos neste fim de semana.
+R: The weather is sunny and warm.|O tempo está ensolarado e morno.
+R: I have a tent and a map.|Tenho uma barraca e um mapa.
+R: I love nature.|Eu adoro a natureza.
+X: Let us go!|Vamos!
+C: "Weekend" é sábado e domingo; em inglês usa-se "on the weekend" (EUA) ou "at the weekend" (UK).
+N: Próximo: o espaço.
+BOSS: 1
