@@ -48,8 +48,8 @@ Cada episódio atual é etiquetado por estágio (pelo padrão em K) e assume uma
 
 
 ## Ordem pedagógica atual (revisada)
-A ordem NÃO é mais por pontuação automática. `tools/pocket/ordenar.py` tem:
-1. **Trilha curada à mão** (≈115 episódios): primeiros contatos → pedir o básico → eu e as pessoas → lugares, casa e cidade.
-2. **Estágios 5 a 10** por tema e dificuldade (rotina/escola/trabalho → serviços/comida/saúde → lazer/viagem/natureza → cultura → mundo/história/fantasia → integração), sempre sem dois episódios seguidos do mesmo arco.
+`tools/pocket/ordenar.py`:
+1. **Trilha curada à mão** (≈110 episódios): primeiros contatos → pedir o básico → eu e as pessoas → lugares, casa e cidade.
+2. **Resto por blocos de assunto**, cada bloco mantendo a sequência interna em que foi escrito. A ordem dos blocos é definida à mão (`ORD_DIA`, `ORD_TEMA`), do mais simples ao mais rico. Ímpar = dia a dia, par = tema, intercalados em proporção.
 3. Revisões finais ("Everything you know", "Look how much you know", "A full day") no fim.
-O mapa auditável é `tools/pocket/mapa_a1.csv`. Para adicionar episódios novos, inclua o título num estágio de `ordenar.py`.
+Mapa auditável: `tools/pocket/mapa_a1.csv`. Para novos episódios: escreva o arco e acrescente o número em `ORD_DIA` ou `ORD_TEMA`.

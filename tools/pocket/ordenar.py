@@ -8,7 +8,13 @@ ns={'__file__':os.path.abspath('build.py')};exec(compile(src,'build.py','exec'),
 eps=[]
 for fn in sorted(glob.glob('a1_arco*.txt')+glob.glob('a1_arco*.py')):
     a=int(re.search(r'arco(\d+)',fn).group(1))
-    for x in load(fn).EPS:x['_f']=a;eps.append(x)
+    cur=a;marks=[]
+    if fn.endswith('.txt'):
+        for l in open(fn):
+            if l.startswith('# Arco'):cur=int(re.search(r'Arco (\d+)',l).group(1))
+            if l.startswith('T:'):marks.append(cur)
+    for k,x in enumerate(load(fn).EPS):
+        x['_f']=marks[k] if k<len(marks) else a;x['_k']=k;eps.append(x)
 by={x['t']:x for x in eps}
 # ---------- trilha curada (títulos) ----------
 TRILHA=[
@@ -31,24 +37,14 @@ TRILHA=[
  'Central Park','My neighborhood','The corner store','At the post office','At the bank','At the library','Where is it?','Find it in the store','At the supermarket',
  'Where is the classroom?','A campus tour','Is this the right office?']),
 ]
-# ---------- estágios do resto (por arco de origem) ----------
-ESTAGIO={5:[2,8,9,44,50,42,13,41],  # rotina, escola, trabalho, vida digital
-         6:[3,4,5,6,11,12,19,20,21,38,48,16],  # pedir/serviços/comida/saúde/emoções
-         7:[10,14,15,46,52,22,23,45,32,33,40],      # lazer, festas, viagem, bichos, natureza
-         8:[24,26,27,28,29,30,31],               # música, cinema, esporte, arte, moda, jobs, comida
-         9:[34,35,36,37,47,49,43,51,53,55,54],   # aventura, mistério, fantasia, festivais, ciência, história
-         10:[56,25,39]}
+
 FIM=['Everything you know','Look how much you know','A full day']
-def estagio(x):
-    for s,l in ESTAGIO.items():
-        if x['_f'] in l:return s
-    return 9
+DIA=lambda n:n<=21 or (n>=42 and n%2==0)
 usados=set();ordem=[]
 for nome,lst in TRILHA:
     for t in lst:
         if t in by and t not in usados:ordem.append((nome,t));usados.add(t)
         elif t not in by:print('FALTA',t)
-# score de dificuldade simples dentro do estágio
 def dif(x):
     t=' '.join(l[1] for l in x['dlg']).lower()
     s=len(t.split())/18
@@ -56,25 +52,36 @@ def dif(x):
         s+=min(len(re.findall(p,t)),3)*w
     return s
 resto=[x for x in eps if x['t'] not in usados and x['t'] not in FIM]
-for st in sorted(ESTAGIO):
-    pool=sorted([x for x in resto if estagio(x)==st],key=lambda x:(dif(x),x['_f'],x['_k'] if '_k' in x else 0))
-    seq=[]
-    while pool:
-        rec=[y['_f'] for y in seq[-2:]]
-        pick=next((x for x in pool if x['_f'] not in rec),pool[0])
-        pool.remove(pick);seq.append(pick)
-    nome={5:'5 Rotina, escola e trabalho',6:'6 Serviços, comida e saúde',7:'7 Lazer, viagem e natureza',8:'8 Cultura e interesses',9:'9 Mundo, história e fantasia',10:'10 Integração'}[st]
-    for x in seq:ordem.append((nome,x['t']))
+unid={}
+for x in resto:unid.setdefault(x['_f'],[]).append(x)
+for u in unid.values():u.sort(key=lambda x:x['_k'])
+ORD_DIA=[1,2,3,4,46,5,6,7,42,8,50,9,44,10,52,11,12,48,13,14,54,15,16,19,20,21,56]
+ORD_TEMA=[22,23,29,31,30,32,25,27,33,28,24,38,39,40,26,34,45,47,49,41,43,51,35,36,37,53,55]
+def fluxo(dia):
+    ordem_u=ORD_DIA if dia else ORD_TEMA
+    resto_u=[n for n in unid if DIA(n)==dia and n not in ordem_u]
+    if resto_u:print('unidades fora da lista',dia,resto_u)
+    return [x for n in ordem_u+sorted(resto_u) if n in unid for x in unid[n]]
+D=fluxo(True);T=fluxo(False)
+# intercala em proporção: ímpar = dia a dia, par = tema
+seq=[];i=j=0
+while i<len(D) or j<len(T):
+    ri=(i+.5)/len(D) if i<len(D) else 9
+    rj=(j+.5)/len(T) if j<len(T) else 9
+    if ri<=rj:seq.append(D[i]);i+=1
+    else:seq.append(T[j]);j+=1
+bl=lambda n:'5 Dia a dia + temas (módulo %d)'%((n//40)+1)
+for n,x in enumerate(seq):ordem.append((bl(n),x['t']))
 for t in FIM:
-    if t in by and t not in usados:ordem.append(('10 Integração',t))
+    if t in by and t not in usados:ordem.append(('Integração',t))
 tit=[t for _,t in ordem]
 assert len(tit)==len(set(tit))
 faltam=[x['t'] for x in eps if x['t'] not in set(tit)]
 print('episódios',len(eps),'ordenados',len(tit),'fora',faltam)
-tit+= faltam
+tit+=faltam
 json.dump(tit,open('ordem_a1.json','w'),ensure_ascii=False,indent=0)
 with open('mapa_a1.csv','w',newline='') as f:
-    w=csv.writer(f);w.writerow(['ordem','bloco','titulo','padrao_chave','arco_origem','vocabulario'])
+    w=csv.writer(f);w.writerow(['ordem','bloco','titulo','padrao_chave','arco_origem','tipo','vocabulario'])
     nomes=dict((t,n) for n,t in ordem)
     for n,t in enumerate(tit,1):
-        x=by[t];w.writerow([n,nomes.get(t,'?'),t,x['key'][0],x['_f'],';'.join(v[0] for v in x['vocab'])])
+        x=by[t];w.writerow([n,nomes.get(t,'?'),t,x['key'][0],x['_f'],'dia a dia' if DIA(x['_f']) else 'tema',';'.join(v[0] for v in x['vocab'])])
