@@ -27,8 +27,8 @@ ordem,estagio,tipo,titulo,padrao_chave,arco_origem,pontos,vocabulario
 26,1,tema,Night in the tent,It is dark and quiet.,34,3.9,sleep;blanket;stars;owl;late
 27,1,dia a dia,I have an exam tomorrow,I have an exam tomorrow.,8,3.7,exam;nervous;study;sleep;luck
 28,1,tema,Our new band,We have a band.,24,4.1,band;voice;name;practice;cafe
-29,1,tema,In the garden,The garden is behind the house.,32,4.2,behind;grass;pool;under;place
-30,1,dia a dia,Happy birthday!,Happy birthday! This is for you.,6,3.8,birthday;gift;pretty;cake;hope
+29,1,dia a dia,Happy birthday!,Happy birthday! This is for you.,6,3.8,birthday;gift;pretty;cake;hope
+30,1,tema,In the garden,The garden is behind the house.,32,4.2,behind;grass;pool;under;place
 31,1,tema,Famous cities,Paris is in France.,40,4.3,France;Italy;Statue of Liberty;Rio;country
 32,1,dia a dia,How much is it?,How much is it?,1,4.2,mango;fresh;how much;seven;four
 33,1,tema,"Sun, sand and sea",Let us go to the beach.,22,4.4,beach;towel;sun cream;waves;sand
@@ -39,13 +39,13 @@ ordem,estagio,tipo,titulo,padrao_chave,arco_origem,pontos,vocabulario
 38,1,dia a dia,Housewarming party,Welcome to my new home!,7,4.5,invite;lovely;congratulations;visit;old place
 39,1,tema,At the airport,Here is my passport.,40,4.5,passport;bags;suitcase;gate;flying
 40,1,dia a dia,Is there a bakery nearby?,Is there a bakery nearby?,3,4.6,bakery;nearby;open;closed;street
-41,2,tema,Medicine and rest,Take one pill a day.,38,4.6,medicine;pill;morning;food;safe
-42,2,dia a dia,Does this bus go downtown?,Does this bus go downtown?,4,4.6,bus;ticket;exact change;seat;hop on
+41,1,tema,Medicine and rest,Take one pill a day.,38,4.6,medicine;pill;morning;food;safe
+42,1,dia a dia,Does this bus go downtown?,Does this bus go downtown?,4,4.6,bus;ticket;exact change;seat;hop on
 43,2,tema,What to wear?,Wear a warm coat.,28,4.6,warm;gloves;scarf;ears;snowman
-44,2,tema,Breakfast around the world,I eat toast for breakfast.,30,4.7,breakfast;toast;tea;sugar;country
-45,2,dia a dia,Two tickets for the seven o'clock,Two tickets for the seven o'clock show.,10,4.6,show;comedy;subtitles;seats;row
-46,2,tema,Set up the tent,Put the tent here.,34,4.7,ground;flat;pole;rope;ready
-47,2,dia a dia,The building laundry,Is the washer free?,42,4.6,washer;free;clothes;coins;dryer
+44,2,dia a dia,Two tickets for the seven o'clock,Two tickets for the seven o'clock show.,10,4.6,show;comedy;subtitles;seats;row
+45,2,tema,Breakfast around the world,I eat toast for breakfast.,30,4.7,breakfast;toast;tea;sugar;country
+46,2,dia a dia,The building laundry,Is the washer free?,42,4.6,washer;free;clothes;coins;dryer
+47,2,tema,Set up the tent,Put the tent here.,34,4.7,ground;flat;pole;rope;ready
 48,2,tema,The mask and the cape,I want a red cape.,36,4.7,costume;cape;mask;size;real
 49,2,dia a dia,I need to change money,I need to change money.,4,4.7,change money;rate;fee;currency;minus
 50,2,tema,Where are you from?,Where are you from?,40,4.7,Brazil;Canada;cold;warm;visit
@@ -55,12 +55,12 @@ ordem,estagio,tipo,titulo,padrao_chave,arco_origem,pontos,vocabulario
 54,2,tema,Is there a bank near here?,Is there a bank near here?,38,4.7,bank;pharmacy;blocks;near;street
 55,2,dia a dia,A day at the doctor,I need to take care of myself.,12,4.9,feeling;since;rest;syrup;come back
 56,2,tema,What languages do you speak?,I speak Portuguese and English.,40,4.7,languages;Portuguese;Spanish;similar;study
-57,2,tema,The big adventure,I love adventures.,34,4.8,adventure;ready;mountain;kilometers;long
-58,2,dia a dia,Which room is this?,This is the living room.,7,4.9,living room;kitchen;bathroom;bedroom;upstairs
-59,2,tema,Christmas market,I want hot chocolate.,36,4.8,market;hot chocolate;wooden;angel;tree
-60,2,dia a dia,What is wrong?,My back hurts.,12,4.9,back;hurts;lower;walk;days
-61,2,tema,Map and compass,North is this way.,34,4.8,map;compass;north;east;south
-62,2,dia a dia,At the supermarket,Paper or plastic?,20,5.0,cart;aisle;produce;sale;basket
+57,2,dia a dia,Which room is this?,This is the living room.,7,4.9,living room;kitchen;bathroom;bedroom;upstairs
+58,2,tema,The big adventure,I love adventures.,34,4.8,adventure;ready;mountain;kilometers;long
+59,2,dia a dia,What is wrong?,My back hurts.,12,4.9,back;hurts;lower;walk;days
+60,2,tema,Christmas market,I want hot chocolate.,36,4.8,market;hot chocolate;wooden;angel;tree
+61,2,dia a dia,At the supermarket,Paper or plastic?,20,5.0,cart;aisle;produce;sale;basket
+62,2,tema,Map and compass,North is this way.,34,4.8,map;compass;north;east;south
 63,2,tema,My dream trip,My dream trip is to Italy.,40,4.8,dream;Italy;stay;wonderful;hotel
 64,2,dia a dia,Do I need cash for the toll?,Do I need cash for the toll?,15,5.1,toll;electronic;charge;extra;safely
 65,2,tema,The toolbox,I need a hammer.,32,4.9,hammer;nails;screwdriver;drill;toolbox
@@ -70,326 +70,347 @@ ordem,estagio,tipo,titulo,padrao_chave,arco_origem,pontos,vocabulario
 69,2,tema,Day of the Dead,We remember our family.,36,4.9,flowers;marigolds;sweet bread;remember;family
 70,2,dia a dia,A table for two,"A table for two, please.",1,5.4,table;menu;recommend;chicken;to drink
 71,2,tema,My phone number,What is your phone number?,40,4.9,phone number;repeat;email;write down;anytime
-72,2,tema,A sunny day,It is a sunny day.,22,5.0,sunny;hot;cold;windy;snow
-73,2,dia a dia,My building,I like my building.,42,5.4,building;floors;elevator;nice;garden
-74,2,tema,The waterfall,The waterfall is very high.,34,5.0,waterfall;current;strong;bridge;magical
-75,2,dia a dia,Dollars and cents,That is ten dollars.,20,5.5,dollar;cents;change;cash;quarter
-76,2,tema,A coffee break,"A latte, please.",38,5.1,latte;medium;oat milk;muffin;card
-77,2,dia a dia,Where is the restroom?,Where is the restroom?,1,5.6,restroom;over there;next to;left;key
+72,2,dia a dia,My building,I like my building.,42,5.4,building;floors;elevator;nice;garden
+73,2,tema,A sunny day,It is a sunny day.,22,5.0,sunny;hot;cold;windy;snow
+74,2,dia a dia,The salary,How much is the salary?,44,5.4,salary;hour;bonus;holidays;year
+75,2,tema,The waterfall,The waterfall is very high.,34,5.0,waterfall;current;strong;bridge;magical
+76,2,dia a dia,Dollars and cents,That is ten dollars.,20,5.5,dollar;cents;change;cash;quarter
+77,2,tema,A coffee break,"A latte, please.",38,5.1,latte;medium;oat milk;muffin;card
 78,2,tema,A good night's sleep,Go to bed early.,38,5.1,tired;hours;bed;bath;sleep
-79,2,dia a dia,What is the next stop?,What is the next stop?,4,5.6,stop;next;get off;press;button
-80,3,tema,A healthy week,I want a healthy life.,38,5.1,healthy;plan;yoga;swim;rest
-81,3,dia a dia,Turn left at the light,"In five hundred feet, turn left.",15,5.6,feet;traffic light;continue;destination;ahead
-82,3,tema,Pack your bag,I pack my bag.,34,5.2,camp;tent;sleeping bag;flashlight;snacks
-83,3,dia a dia,Do you play any sports?,Do you play any sports?,10,5.6,sports;soccer;often;twice;practice
+79,2,dia a dia,Where is the restroom?,Where is the restroom?,1,5.6,restroom;over there;next to;left;key
+80,2,tema,A healthy week,I want a healthy life.,38,5.1,healthy;plan;yoga;swim;rest
+81,2,dia a dia,What is the next stop?,What is the next stop?,4,5.6,stop;next;get off;press;button
+82,2,tema,Pack your bag,I pack my bag.,34,5.2,camp;tent;sleeping bag;flashlight;snacks
+83,2,dia a dia,Turn left at the light,"In five hundred feet, turn left.",15,5.6,feet;traffic light;continue;destination;ahead
 84,3,tema,The street vendor,"Hot dogs, two dollars!",30,5.3,hot dog;onions;mustard;bottle;smells
-85,3,tema,At the beer garden,Cheers!,36,5.3,festival;sausages;pretzel;potatoes;cheers
-86,3,dia a dia,Thanks a lot,Thanks a lot for your help.,16,5.6,carry;bags;heavy;owe;invite
-87,3,tema,Pizza or pasta?,"I want pizza, please.",30,5.4,pizza;pasta;cheese;juice;bathroom
-88,3,dia a dia,I want to send this,I want to send this letter.,4,5.7,letter;weigh;stamp;week;send
-89,3,tema,The suspect,He is short with black hair.,34,5.5,suspect;hair;thirty;jacket;jeans
-90,3,dia a dia,Did you do the homework?,Do you have the homework?,8,5.7,homework;due;difficult;exercise;study
-91,3,tema,Case solved,The mystery is solved.,34,5.6,thief;clues;corner;mystery;great
-92,3,dia a dia,Where is the classroom?,Where is the classroom?,8,5.7,classroom;building;across;student;starts
+85,3,dia a dia,Do you play any sports?,Do you play any sports?,10,5.6,sports;soccer;often;twice;practice
+86,3,tema,At the beer garden,Cheers!,36,5.3,festival;sausages;pretzel;potatoes;cheers
+87,3,dia a dia,Thanks a lot,Thanks a lot for your help.,16,5.6,carry;bags;heavy;owe;invite
+88,3,tema,Pizza or pasta?,"I want pizza, please.",30,5.4,pizza;pasta;cheese;juice;bathroom
+89,3,dia a dia,I want to send this,I want to send this letter.,4,5.7,letter;weigh;stamp;week;send
+90,3,tema,The suspect,He is short with black hair.,34,5.5,suspect;hair;thirty;jacket;jeans
+91,3,dia a dia,Did you do the homework?,Do you have the homework?,8,5.7,homework;due;difficult;exercise;study
+92,3,tema,Case solved,The mystery is solved.,34,5.6,thief;clues;corner;mystery;great
 93,3,tema,Ancient plants,The ferns are very old.,43,5.7,ferns;plants;wet;shady;grow
-94,3,dia a dia,A note on the board,Read the notice.,42,5.7,note;board;water;bottles;calendar
-95,3,tema,A card game,Pick a card.,26,5.7,cards;king;queen;pick;simple
-96,3,dia a dia,Do you have a room?,Do you have a room for two nights?,5,5.8,room;night;single;double;included
-97,3,tema,Taking pictures,Smile for the camera.,28,5.7,photography;camera;straight;light;click
-98,3,dia a dia,Do you have these in a nine?,Do you have these in a nine?,12,5.8,shoes;tight;fit;size;pair
-99,3,tema,A big feast,We have a big feast.,30,5.7,feast;ten;salad;strawberries;meal
-100,3,tema,What are you wearing?,I wear a blue shirt.,28,5.8,wearing;shirt;pants;jacket;sneakers
-101,3,dia a dia,I miss you,I miss you a lot.,16,5.8,miss;long time;family;visit;love
-102,3,tema,The rocket,This is a big rocket.,24,5.8,rocket;astronauts;brave;tall;center
-103,3,dia a dia,The parking lot,This is my spot.,42,5.8,parking;spot;visitors;camera;wall
-104,3,tema,Mixing colors,Blue and yellow make green.,28,5.8,brush;mix;yellow;pink;orange
-105,3,dia a dia,I need a SIM card,I need a SIM card.,13,5.9,SIM card;prepaid;plan;unlimited;set up
-106,3,tema,Work clothes,We wear a uniform.,28,5.8,uniform;badge;jeans;casual;Monday
-107,3,dia a dia,It is too loud,The music is too loud.,42,5.9,loud;sorry;turn down;musician;early
-108,3,tema,Fossils,This is a fossil.,43,5.8,fossil;bone;million;desert;scientist
-109,3,dia a dia,Nice to meet the neighbors,I live next door.,7,5.9,neighbor;neighborhood;quiet;next door;moved in
-110,3,tema,Movie night,Let us have a movie night.,26,5.9,movie night;blankets;pillows;hilarious;nothing
-111,3,dia a dia,A room for the night,Do you have a room for tonight?,15,5.9,tonight;beds;tax;across;diner
-112,3,tema,What is the score?,What is the score?,26,5.9,score;win;minutes;close;draw
-113,3,tema,In the kitchen,Where is the knife?,32,5.9,knife;spoons;plates;stove;fridge
-114,3,dia a dia,I have a headache,I have a headache.,6,6.1,headache;fever;tired;rest;yesterday
-115,3,tema,Balloons and games,Throw the ball.,32,5.9,balls;bottles;prize;miss;choose
-116,3,dia a dia,I need something for a cold,I need something for a cold.,12,6.1,cold;symptoms;runny nose;cough;syrup
-117,3,tema,A new song,I write a song.,24,5.9,write;slow;line;chorus;again
-118,3,dia a dia,In the elevator,Which floor?,42,6.2,elevator;floor;stairs;slow;always
-119,3,tema,Where is my cat?,My cat is not here.,34,5.9,cat;orange;tail;medium;lucky
-120,4,dia a dia,My address is…,My address is 25 Oak Street.,7,6.2,address;spell;apartment;zip code;number
-121,4,tema,The corner store,I need milk and bread.,38,5.9,milk;bread;eggs;shelf;dozen
-122,4,dia a dia,What time is it?,What time is it?,2,6.3,time;late;class;run;away
-123,4,tema,Months of the year,There are twelve months.,40,5.9,January;March;May;July;December
-124,4,dia a dia,A day online,I need Wi-Fi to work.,13,6.3,connect;outlet;later;trip;another
-125,4,tema,Museum guide,Welcome to my museum.,43,5.9,follow;room;ancient;excellent;guide
-126,4,dia a dia,I have two brothers,I have two brothers.,2,6.4,brothers;older;younger;only;lives
-127,4,tema,Handmade gifts,I make a card by hand.,28,6.0,scissors;glue;heart;message;inside
-128,4,tema,A birthday party,Happy birthday to you!,32,6.0,birthday;gift;balloons;candles;everywhere
-129,4,dia a dia,Cut the onions,"Cut the onions, please.",11,6.4,cut;fry;boil;oil;careful
-130,4,tema,Take the subway,Which line goes to the park?,38,6.0,line;platform;stops;ticket;seat
-131,4,dia a dia,What is your schedule?,What is your schedule?,8,6.4,schedule;semester;Monday;Wednesday;free
-132,4,tema,A concert tonight,The concert starts at eight.,24,6.1,concert;tickets;stage;band;crowd
-133,4,dia a dia,I play the guitar,I play the guitar.,10,6.4,guitar;years;kind;rock;song
-134,4,tema,Clay and pots,Make a pot with clay.,28,6.1,clay;wheel;thumbs;walls;oven
-135,4,dia a dia,Is it spicy?,Is it spicy?,11,6.4,spicy;chili;mild;dish;choice
-136,4,tema,The mountain,The mountain is very high.,22,6.1,mountain;high;top;path;steep
-137,4,dia a dia,Where is my ride?,Where is my ride?,13,6.4,ride;traffic;air conditioning;airport;driver
-138,4,tema,A scientist for a day,I am a scientist today.,24,6.1,scientist;ready;notebook;cells;write
-139,4,dia a dia,It is too expensive,It is too expensive.,3,6.5,expensive;cheap;watch;discount;percent
-140,4,tema,Days of the week,Today is Monday.,40,6.1,Monday;Tuesday;Friday;Saturday;Sunday
-141,4,tema,Let us sing!,Let us sing together!,24,6.3,sing;together;song;words;easy
-142,4,dia a dia,"The check, please","Can we have the check, please?",3,6.5,check;tip;included;change;together
-143,4,tema,A magic show,"Pick a card, any card.",32,6.3,magic;helper;hat;bird;card
-144,4,dia a dia,What is your favorite season?,My favorite season is fall.,14,6.6,season;fall;summer;winter;spring
-145,4,tema,Life long ago,People live in groups.,43,6.4,groups;tents;roots;voices;different
-146,4,dia a dia,A little about me,Let me tell you about myself.,21,6.7,teacher;teach;instrument;guitar;travel
-147,4,tema,Stone tools,This is a stone tool.,43,6.6,tool;stone;cutting;hand;clever
-148,4,dia a dia,This is my family,This is my family.,2,6.7,father;mother;brother;sister;family
-149,4,tema,At the stadium,Our team plays today.,26,6.6,stadium;players;ball;seats;best
-150,4,dia a dia,What are you doing this weekend?,What are you doing this weekend?,6,6.7,beach;join;rest;plans;weekend
-151,4,tema,At the bank,I want to open an account.,38,6.6,account;passport;address;sign;card
-152,4,dia a dia,Which way to the station?,Which way to the station?,1,6.8,straight;block;turn right;far;on foot
-153,4,tema,Movie tickets,Two tickets for eight o'clock.,38,6.6,tickets;movie;middle;room;hall
-154,4,dia a dia,Where do you work?,I work from nine to five.,2,6.8,floor;hours;weekends;never;lunch
-155,4,tema,My weekly budget,I spend fifty dollars a week.,40,6.6,spend;week;save;food;movies
-156,4,tema,At the post office,I want to send a letter.,38,6.7,letter;stamp;Brazil;fast;price
-157,4,dia a dia,I cannot make it,"I am sorry, I cannot make it.",6,6.8,party;work late;maybe;next time;idea
-158,4,tema,Sushi time,Do you like raw fish?,30,6.8,sushi;raw;salmon;chopsticks;delicious
-159,5,dia a dia,Is this class for beginners?,Is this class for beginners?,10,6.8,beginners;mat;comfortable;clothes;begin
-160,5,tema,At the library,I want a library card.,38,6.8,library;card;form;borrow;weeks
-161,5,dia a dia,Thanksgiving dinner,I am thankful for my family.,14,6.8,thankful;turkey;pie;potatoes;sit down
-162,5,tema,Telling the time,It is half past four.,40,6.8,time;half past;quarter;bench;wait
-163,5,dia a dia,I want to join the gym,I want to join the gym.,10,7.0,gym;monthly;yearly;towel;lock
-164,5,tema,The Ice Age,The world is very cold.,43,6.8,ice;thick;furs;wolves;imagine
-165,5,dia a dia,"Two tickets, please","Two tickets, please.",5,7.1,tickets;adult;student;close;photos
-166,5,tema,The castle,The castle has a tower.,36,6.9,castle;tower;king;queen;fairy tale
-167,5,dia a dia,Leaving a tip,Is the tip included?,20,7.1,tip;included;percent;earn;country
-168,5,tema,Around the campfire,The fire is warm.,34,6.9,fire;wood;matches;sticks;marshmallows
-169,5,tema,A scary film,I am afraid of the dark.,26,7.1,scary;afraid;dark;story;scared
-170,5,dia a dia,How old are you?,How old are you?,2,7.2,old;young;birthday;twenty;thirty
-171,5,tema,Cartoons,Kids love cartoons.,26,7.1,cartoon;kids;talking;cute;songs
-172,5,dia a dia,My birthday is in May,My birthday is in May.,14,7.2,birthday;May;October;exactly;believe
-173,5,tema,A famous painting,This painting is beautiful.,28,7.1,woman;dress;smile;colors;soft
-174,5,dia a dia,What is today's date?,What is today's date?,14,7.5,date;March;Thursday;due;tenth
-175,5,tema,The way back,Where is the car?,34,7.1,back;rest;hours;feet;almost
-176,5,dia a dia,What color?,Do you have this in blue?,3,7.6,blue;red;size;check;only
-177,5,tema,Sports day,Today is sports day.,26,7.2,event;choose;race;lunch;shirt
-178,5,dia a dia,Moving day,Can you help me move this box?,7,7.7,box;heavy;careful;move;window
-179,5,tema,Welcome home,Welcome to my new home.,32,7.2,rooms;two;left;lovely;behind
-180,5,dia a dia,Getting around town,How do I get to the museum?,4,7.8,museum;take;subway;stops;on foot
-181,5,tema,A love story,They love each other.,26,7.2,love story;sad;happy;end;cry
-182,5,dia a dia,A free Saturday,What are we doing on Saturday?,10,7.9,Saturday;morning;afternoon;night;perfect
-183,5,tema,A witness,I see a red car.,34,7.3,witness;fast;plate;helpful;police
-184,5,tema,Fish in the sea,Fish live in the sea.,22,7.3,aquarium;shark;octopus;sea;dangerous
-185,5,dia a dia,I am allergic to nuts,I am allergic to nuts.,11,7.9,allergic;nuts;peanuts;dressing;skip
-186,5,tema,What sport do you like?,I like basketball.,26,7.3,sport;basketball;soccer;tennis;weekends
-187,5,dia a dia,How are you feeling?,I am so happy today!,16,7.9,happy;worried;proud;nervous;better
-188,5,tema,A nature documentary,This documentary is about the ocean.,26,7.4,documentary;ocean;pictures;whale;huge
-189,5,dia a dia,Can you help me?,"Can you help me, please?",19,8.0,lost;hospital;straight;problem;far
-190,5,tema,At the laundromat,I need change for the machine.,38,7.5,laundromat;change;quarters;soap;machine
-191,5,dia a dia,I am so sorry,I am so sorry!,16,8.1,sorry;bumped;spill;no big deal;necessary
-192,5,tema,What do they eat?,What do they eat?,22,7.6,eat;bananas;grass;leaves;meat
-193,5,dia a dia,"Fill it up, please",Where is the gas station?,15,8.2,gas station;mile;pump;regular;tires
-194,5,tema,Tacos tonight,I like spicy food.,30,7.6,tacos;beef;beans;spicy;sauce
-195,5,dia a dia,Cash or card?,Can I pay by card?,3,8.4,card;cash;receipt;bag;enter
-196,5,tema,Give change,Here is your change.,40,7.6,change;ten;cents;cash;twenty
-197,5,dia a dia,Can I rent a bike?,Can I rent a bike?,4,8.4,rent;bike;helmet;hour;ride
-198,6,tema,A party dress,You look elegant.,28,7.6,dress;jewelry;necklace;earrings;heels
-199,6,tema,The writer,I write books.,30,7.6,write;books;pages;newest;fox
-200,6,dia a dia,Do you have aspirin?,Do you have aspirin?,4,8.4,aspirin;pill;dose;food;stomach
-201,6,tema,Travel alone,I travel alone.,40,7.6,alone;safe;careful;carry;smart
-202,6,dia a dia,Who is that?,Who is that in the photo?,16,8.5,grandfather;cousin;alike;photo;look
-203,6,tema,Let me draw you,Sit here. I draw you.,28,7.7,draw;face;still;pencil;surprise
-204,6,dia a dia,Where is gate 12?,Where is gate twelve?,1,8.6,gate;boarding;flight;on time;help
-205,6,tema,New shoes,What size are your shoes?,28,7.7,shoes;pair;comfortable;feet;store
-206,6,dia a dia,Trash day,Where do I put the trash?,42,8.6,trash;bins;glass;plastic;paper
-207,6,tema,Join the gym,What time do you open?,38,7.7,gym;monthly;yearly;classes;yoga
-208,6,dia a dia,Let us have a picnic,Let us have a picnic.,10,8.7,picnic;weather;bring;blanket;drinks
-209,6,tema,A dinosaur egg,The egg is round.,43,7.7,egg;round;heavy;baby;empty
-210,6,dia a dia,My order is late,My order is late.,13,8.7,order;late;ago;delayed;customer service
-211,6,tema,The mechanic,The car needs a repair.,30,7.7,mechanic;engine;noise;hood;belt
-212,6,tema,My neighborhood,I live in a nice neighborhood.,38,7.8,neighborhood;quiet;bakery;pharmacy;station
-213,6,dia a dia,I do not feel well,I do not feel well.,19,8.7,headache;fever;throat;medicine;water
-214,6,tema,Playing instruments,Do you play an instrument?,24,7.9,guitar;piano;drums;violin;instrument
-215,6,dia a dia,Can you send me the file?,Can you send me the file?,9,8.7,file;report;budget;email;send
-216,6,tema,Chinese New Year,Red means good luck.,36,7.9,lanterns;luck;dragon dance;envelope;tradition
-217,6,dia a dia,Happy Thanksgiving!,Happy Thanksgiving!,20,8.7,turkey;pie;potatoes;thankful;invite
-218,6,tema,The proof,This is the proof.,34,7.9,picture;recognize;lock;proof;closed
-219,6,dia a dia,The building meeting,We have a meeting tonight.,42,8.8,meeting;idea;group;agrees;noise
-220,6,tema,Central Park,Let us walk in the park.,38,7.9,park;lakes;bridges;zoo;boat
-221,6,dia a dia,Do you want to hang out?,Do you want to hang out?,6,8.9,weekend;movie;Saturday;evening;meet
-222,6,tema,The old statue,This statue is very tall.,28,8.0,statue;square;stone;heavy;years
-223,6,dia a dia,The holiday season,This is my favorite time of the year.,14,8.9,holidays;December;plans;wonderful;before
-224,6,tema,Weekend in nature,I love nature.,22,8.1,weekend;weather;tent;map;nature
-225,6,dia a dia,"Breakfast, please",I would like the breakfast special.,5,9.1,special;eggs;scrambled;pancakes;syrup
-226,6,tema,The treasure map,The treasure is under the tree.,36,8.1,treasure;steps;shovel;box;dig
-227,6,tema,What kind of movie?,I like funny movies.,26,8.2,comedies;action;horror;romantic;popcorn
-228,6,dia a dia,I like pizza,I like pizza.,2,9.2,like;hungry;mushrooms;cheese;love
-229,6,tema,On the movie set,Quiet on the set!,26,8.2,set;actor;director;camera;quiet
-230,6,dia a dia,"A coffee, please","Can I get a coffee, please?",1,9.3,coffee;small;large;to go;dollars
-231,6,tema,At the bakery,"A baguette, please.",30,8.2,baguette;croissants;plain;chocolate;warm
-232,6,dia a dia,First day of class,"Nice to meet you, I am a new student.",8,9.4,seat;every;best;student;question
-233,6,tema,Weight and size,"One kilo, please.",40,8.3,kilo;half;liter;piece;anything else
-234,6,dia a dia,I have a meeting at ten,I have a meeting at ten.,9,9.6,meeting;free;hour;room;talk
-235,6,tema,Count with me,Count from one to ten.,40,8.3,count;ten;twenty;fifty;hundred
-236,6,dia a dia,The shared garden,We share a garden.,42,9.6,garden;herbs;water;plants;bench
-237,6,tema,The firefighter,Firefighters help people.,30,8.4,firefighter;dangerous;special;clothes;truck
-238,7,dia a dia,How much is the rent?,How much is the rent?,7,9.7,rent;month;utilities;deposit;decide
-239,7,tema,Trees and flowers,This tree is very old.,22,8.4,garden;tree;roses;plants;green
-240,7,tema,Today's date,What is the date today?,40,8.6,date;June;calendar;meeting;forget
-241,7,dia a dia,I would like to rent a car,I would like to rent a car.,15,9.7,rent;insurance;driver's license;small car;days
-242,7,tema,In the restaurant kitchen,The chef cooks for many people.,30,8.7,chef;kitchen;soup;rice;hot
-243,7,dia a dia,Can you text me?,Can you text me the address?,13,9.8,text;number;address;lost;send
-244,7,tema,Cleaning day,Let us clean the house.,32,8.7,clean;sweep;broom;trash;windows
-245,7,dia a dia,I have a question,I have a question.,8,9.9,question;mean;example;borrow;understand
-246,7,tema,Fruits and vegetables,I want some apples and carrots.,30,8.7,apples;carrots;tomatoes;fresh;kilo
-247,7,dia a dia,Can I take a message?,Can I take a message?,9,9.9,speaking;message;called;number;tell
-248,7,tema,Ice cream day,Which flavor do you want?,30,8.8,flavor;vanilla;strawberry;cone;scoop
-249,7,dia a dia,Dinner shopping,I need everything for dinner.,3,10.0,need;everything;that is all;bag;dozen
-250,7,tema,In a new country,Can you help me?,40,8.9,help;station;straight;kind;Japan
-251,7,dia a dia,I think it is great,I think it is great.,16,10.0,think;loud;agree;talented;voice
-252,7,tema,At the playground,Take turns on the slide.,32,8.9,slide;swings;seesaw;afternoon;careful
-253,7,dia a dia,Meet my family!,"This is my family, and I love them.",2,10.1,everyone;engineer;teacher;welcome;love
-254,7,tema,Cave paintings,People draw on the wall.,43,8.9,cave;wall;bull;paintings;thousand
-255,7,tema,Four seasons,My favorite season is spring.,22,9.0,seasons;spring;summer;fall;winter
-256,7,dia a dia,Where is the milk?,Where can I find the milk?,3,10.1,aisle;milk;bread;fresh;fruit
-257,7,tema,Join our team,Do you want to join our team?,26,9.0,join;team;practice;captain;near
-258,7,dia a dia,Lunch break,Do you want to grab lunch?,9,10.1,lunch;break;sandwich;nearby;wait
-259,7,tema,Light and power,The light is off.,24,9.1,light;switch;bulb;power;drawer
-260,7,dia a dia,How do I download this app?,How do I download this app?,13,10.1,download;app;tap;account;sign up
-261,7,tema,"Hats, bags and watches",I like your hat.,28,9.1,hat;bag;watch;brown;popular
-262,7,dia a dia,What does he look like?,He is tall and has dark hair.,16,10.2,tall;dark hair;glasses;jacket;fountain
-263,7,tema,Fashion show,Welcome to my fashion show.,28,9.1,fashion show;model;outfit;next;full
-264,7,dia a dia,What does this sign say?,What does this sign say?,15,10.3,sign;speed limit;yield;no parking;miles per hour
-265,7,tema,The haunted house,Do not be scared!,32,9.1,haunted;ghost;stairs;wind;noise
-266,7,dia a dia,Can I call you later?,Can I call you later?,6,10.4,meeting;later;call;time;after
-267,7,tema,I like music,What music do you like?,24,9.1,music;pop;jazz;listen;singer
-268,7,tema,A secret code,This is a secret message.,34,9.1,secret;code;letter;numbers;message
-269,7,dia a dia,Let me introduce you,Let me introduce you to Dee.,9,10.4,introduce;sales;design;same;sometime
-270,7,tema,Good morning exercise,Stretch your arms.,38,9.2,stretch;toes;breathe;slowly;arms
-271,7,dia a dia,It is sunny today,It is sunny today.,4,10.6,sunny;rain;cold;hot;degrees
-272,7,tema,The maze,Turn left at the end.,32,9.3,maze;exit;dead end;way;wall
-273,7,dia a dia,I have a toothache,I have a toothache.,12,10.6,toothache;tooth;cavity;serious;open wide
-274,7,tema,The carousel,My daughter loves horses.,32,9.4,carousel;horses;daughter;colorful;tight
-275,7,dia a dia,I wake up at seven,I wake up at seven.,2,10.7,wake up;breakfast;toast;leave;early
-276,7,tema,My bedroom,There is a bed in my room.,32,9.5,bedroom;bed;desk;lamp;shelf
-277,8,dia a dia,Christmas shopping,I need a gift for my sister.,14,10.8,Christmas;gift;sister;wrapped;bestseller
-278,8,tema,A day at the zoo,I love the zoo!,22,9.6,favorite;penguin;kind;tree;lions
-279,8,dia a dia,My first week in English,I can talk about my life in English.,6,10.9,week;proud;directions;weekends;friends
-280,8,tema,Funny people,He is very funny.,26,9.6,funny;laugh;face;main;another
-281,8,dia a dia,Taking the bus,Which bus goes downtown?,20,10.9,downtown;fare;exact;tap;stop
-282,8,tema,Dinner at home,Dinner is ready.,30,9.7,dinner;plate;glass;salad;table
-283,8,tema,Animals on the farm,There are cows on the farm.,22,9.8,farm;cows;horses;chickens;eggs
-284,8,dia a dia,At the pharmacy,Do you have something for a cold?,19,11.1,cold;cough;twice;prescription;nose
-285,8,tema,The pilot,The pilot flies the plane.,30,9.8,pilot;plane;flight;hours;tired
-286,8,dia a dia,A diner breakfast,I would like the pancakes.,20,11.2,pancakes;bacon;scrambled;order;check
-287,8,tema,Wild animals,The bear lives in the forest.,22,9.8,forest;bears;wolves;deer;cave
-288,8,dia a dia,Welcome to town!,"Can I get a coffee, and where is the station?",1,11.3,again;ready;first day;station;minutes
-289,8,tema,A big storm,There is a big storm.,22,9.8,storm;thunder;lightning;candles;safe
-290,8,dia a dia,What do you do?,What do you do?,2,11.6,teacher;engineer;job;company;interesting
-291,8,tema,Around the world,Every country has a festival.,36,9.8,festival;costumes;lights;autumn;share
-292,8,dia a dia,Room service,Could I order room service?,5,11.6,front desk;room service;sandwich;bottle;arrive
-293,8,tema,A few questions,What is your name?,34,9.9,baker;night;boss;woman;know
-294,8,dia a dia,What is the Wi-Fi password?,What is the Wi-Fi password?,13,11.6,password;receipt;lowercase;spaces;works
-295,8,tema,Balloon festival,The balloons fly high.,36,9.9,balloons;pilot;basket;hundreds;high
-296,8,tema,My favorite series,I watch a series every night.,26,10.1,series;characters;episodes;season;watch
-297,8,dia a dia,The Fourth of July,Let us watch the fireworks.,14,11.6,fireworks;barbecue;blanket;watermelon;July
-298,8,tema,Board games,It is your turn.,26,10.2,board game;dice;piece;turn;steps
-299,8,dia a dia,Is this the right office?,Is this the right office?,9,11.6,office;team;desk;locker;excited
-300,8,tema,Stars in the sky,Look at the stars!,22,10.2,stars;moon;clear;clouds;bright
-301,8,dia a dia,How much is a concert ticket?,How much is a concert ticket?,10,11.6,concert;cheapest;balcony;stage;depends
-302,8,tema,A headache day,My head hurts.,38,10.3,pale;fever;dizzy;pill;rest
-303,8,dia a dia,What is she like?,She is kind and funny.,16,11.6,kind;funny;shy;friendly;smart
-304,8,tema,Where is the sofa?,Move the table to the left.,32,10.3,move;corner;left;wall;bigger
-305,8,dia a dia,Where is the laundromat?,Where is the laundromat?,12,11.7,laundromat;quarters;wash;dryer;corner
-306,8,tema,My own gallery,This is my first exhibition.,28,10.4,exhibition;nervous;lovely;price;bright
-307,8,dia a dia,A problem on the trip,I have a problem with my flight.,19,11.7,ticket;passport;print;saved;safe
-308,8,tema,Piano lesson,Sit down and play.,24,10.7,hands;press;key;high;low
-309,8,dia a dia,A takeout order,I would like to order takeout.,3,11.8,order;takeout;ready;pick up;soda
-310,8,tema,The villain,He is the bad guy.,36,10.8,villain;gold;clever;brave;never
-311,8,tema,Home appliances,The washing machine is broken.,32,10.8,washing machine;plugged in;plug;loose;dryer
-312,8,dia a dia,How do you make pancakes?,First mix the eggs and the flour.,11,11.8,mix;flour;sugar;pan;flip
-313,8,tema,Cool machines,This machine is very useful.,24,10.9,machine;dishes;ice cream;button;difficult
-314,8,dia a dia,Could you keep it down?,"Could you keep it down, please?",7,12.1,loud;turn down;sorry;appreciate;neighbor
-315,8,tema,The bathroom,Where is the bathroom?,32,10.9,bathroom;towel;soap;sink;hall
-316,8,dia a dia,There is a problem,There is a problem with my room.,5,12.1,problem;air conditioner;towels;work;trouble
-317,9,tema,Something sweet,I would like a piece of cake.,30,11.0,dessert;cake;pie;piece;enjoy
-318,9,dia a dia,What are you cooking?,What are you cooking?,11,12.3,cooking;beans;stir;add;salt
-319,9,tema,Take care of the Earth,Do not throw trash.,24,11.1,trash;bin;recycle;plastic;cloth bag
-320,9,dia a dia,A road trip,Let us hit the road!,15,12.6,trip;north;several;on the way;fill up
-321,9,tema,Jobs around us,I am a nurse.,30,11.1,nurse;hospital;driver;truck;tiring
-322,9,dia a dia,Do you have pets?,Do you have pets?,2,12.7,dog;cat;cute;pet;friend
-323,9,tema,A day at work,What do you do at work?,30,11.2,start;finish;teach;after;dinner
-324,9,tema,The Ferris wheel,You can see the whole city.,32,11.2,Ferris wheel;car;meters;view;whole
-325,9,dia a dia,Can you take a photo?,Can you take a photo of us?,5,12.7,photo;statue;smile;button;one more
-326,9,tema,Cotton candy,It is sweet and pink.,32,11.4,cotton candy;sugar;soft;melts;mouth
-327,9,dia a dia,A day at the beach,Do not forget the sunscreen.,10,12.7,beach;sunscreen;towel;cooler;forget
-328,9,tema,The hero mission,We save the city.,36,11.6,bank;stop;bag;floor;team
-329,9,dia a dia,I hurt my ankle,I hurt my ankle.,12,12.8,ankle;foot;swollen;broken;ice
-330,9,tema,How the body works,The heart pumps blood.,24,11.6,heart;blood;brain;lungs;breathe
-331,9,dia a dia,Call an ambulance!,Call an ambulance!,19,12.8,ambulance;fell down;calm;hurry;breathing
-332,9,tema,Price check,How much is this hat?,40,11.6,hat;shoes;expensive;cheaper;register
-333,9,dia a dia,Can I try this on?,Can I try this on?,3,13.2,jacket;try on;fitting room;small;size
-334,9,tema,Birds can fly,Birds can fly.,22,11.7,bird;fly;penguins;parrot;owl
-335,9,dia a dia,A table for Saturday,I would like to make a reservation.,14,13.3,reservation;evening;people;name;Saturday
-336,9,tema,A night at the theater,The play starts soon.,28,11.7,theater;play;row;intermission;tickets
-337,9,dia a dia,Everything you know,Look how far I have come.,21,13.3,remember;barely;directions;proud;ready
-338,9,tema,What is that animal?,What is that animal?,22,11.8,elephant;monkey;giraffe;tail;animal
-339,9,tema,It is raining,It is raining.,22,11.8,raining;umbrella;cloudy;coat;outside
-340,9,dia a dia,Booking a table,I would like a table for two.,21,13.4,book;available;window;evening;name
-341,9,tema,A morning run,I run every morning.,26,11.9,run;kilometers;first;shoes;water
-342,9,dia a dia,Where can I print this?,Where can I print this?,8,13.6,print;printer;page;cents;front desk
-343,9,tema,At the amusement park,Which ride do you want?,32,11.9,ride;roller coaster;line;wait;excited
-344,9,dia a dia,I need a day off,Could I take Friday off?,9,13.6,minute;day off;doctor's appointment;team;understanding
-345,9,tema,In the fitting room,It is too small.,28,11.9,try on;fitting room;bigger;fits;sale
-346,9,dia a dia,Where can I park?,Where can I park?,15,13.6,park;garage;meter;hours;free
-347,9,tema,At the pool,Do not run near the pool.,26,12.0,pool;lane;beginners;deep;cap
-348,9,dia a dia,I am looking for an apartment,I am looking for an apartment.,7,13.7,apartment;bedrooms;options;near;downtown
-349,9,tema,The moon,The moon is far from the Earth.,24,12.1,telescope;close;far away;kilometers;holes
-350,9,dia a dia,"Dessert, please",Can we see the dessert menu?,11,13.7,dessert;cheesecake;plates;share;amazing
-351,9,tema,Look how much you know,I can talk about many things.,40,12.1,remember;animals;food;hobbies;plans
-352,9,tema,Who is it?,Who is that man?,34,12.1,detective;coat;gray;nose;notebook
-353,9,dia a dia,A gift for my mom,I am looking for a gift.,5,13.8,gift;scarf;beautiful;wrapped;mom
-354,9,tema,Big dinosaurs,Dinosaurs are huge.,43,12.4,dinosaur;huge;teeth;sharp;neck
-355,9,dia a dia,May I come in?,May I come in?,19,13.9,knock;window;report;page;check
-356,10,tema,Small animals,I do not like spiders.,22,12.7,butterflies;bees;honey;spiders;legs
-357,10,dia a dia,Follow the steps,"First, cut the tomatoes.",21,13.9,wash;cut;add;mix;recipe
-358,10,tema,Music in the street,He plays on the corner.,24,12.9,corner;saxophone;coins;job;every day
-359,10,dia a dia,The sink is leaking,The sink is leaking.,7,14.1,sink;leaking;since;fix;cost
-360,10,tema,Music festival,The festival is great!,24,12.9,festival;stages;hungry;thirsty;dance
-361,10,dia a dia,Could you repeat that?,"Could you repeat that, please?",19,14.7,repeat;gate;slowly;floor;understand
-362,10,tema,Look for clues,There is a clue on the floor.,34,13.1,clue;broken;key;important;case
-363,10,dia a dia,Can I get a refill?,Can I get a refill?,11,14.8,refill;cream;ordered;fix;actually
-364,10,tema,Eat well,Eat more vegetables.,38,13.6,vegetables;spinach;broccoli;enough;glasses
-365,10,dia a dia,"Excuse me, sir","Excuse me, may I get through?",21,15.1,through;crowded;seat;taken;next
-366,10,tema,In the lab,Wear your glasses in the lab.,24,13.6,lab;glasses;microscope;tiny;science
-367,10,tema,A shopping day,I want a bigger size.,28,13.6,size;medium;T-shirt;color;green
-368,10,dia a dia,Let us watch the game,Who is winning?,20,15.5,game;team;winning;play;seat
-369,10,tema,The dog runs fast,The dog runs fast.,22,13.7,runs;swims;sleeps;sing;lazy
-370,10,dia a dia,I do not understand,I do not understand.,19,15.8,question;mean;spell;write down;word
-371,10,tema,At the art museum,Welcome to the museum.,28,13.8,museum;paintings;statues;modern;flash
-372,10,dia a dia,Can you hear me?,Can you hear me?,13,16.1,hear;camera;microphone;low;turn on
-373,10,tema,I am a superhero,I can fly!,36,13.9,superhero;strong;fast;power;walls
-374,10,dia a dia,Can I borrow this book?,Can I borrow this book?,8,16.2,borrow;library card;return;renew;weeks
-375,10,tema,A magic potion,Mix the water and the herbs.,36,13.9,potion;herbs;flower;purple;tastes
-376,10,dia a dia,Can you pass the salt?,"Can you pass the salt, please?",6,16.4,salt;delicious;recipe;rice;smells
-377,10,tema,The hero scene,The hero runs fast.,26,14.3,hero;roof;jumps;stunt man;bad guy
-378,10,dia a dia,"Hello, who is calling?",Can I speak to Mr. Lee?,21,16.8,speak;call;hold;busy;number
-379,10,tema,The planets,There are eight planets.,24,14.9,planets;Earth;Jupiter;Mars;space
-380,10,tema,The mammoth,The mammoth has long tusks.,43,15.0,mammoth;tusks;hair;cold;elephant
-381,10,dia a dia,I would like to return this,I would like to return this.,12,16.9,return;refund;exchange;receipt;fit
-382,10,tema,The river and the lake,The water is clean.,22,15.4,lake;river;clean;fish;water
-383,10,dia a dia,"A haircut, please",I would like a haircut.,12,17.1,haircut;sides;top;clippers;seat
-384,10,tema,The doctor and the nurse,The doctor helps sick people.,30,15.6,sick;patients;stressful;rewarding;week
-385,10,dia a dia,Can I charge my phone?,Can I charge my phone here?,13,17.3,charge;outlet;charger;battery;dead
-386,10,tema,The dragon,The dragon is friendly.,36,15.6,dragon;friendly;gold;fire;touch
-387,10,dia a dia,Dinner for friends,Dinner is ready!,11,18.2,ready;option;worry;cook;everyone
-388,10,tema,The world map,There are seven continents.,40,15.7,continents;Asia;Africa;Europe;ocean
-389,10,dia a dia,Writing a short email,I am writing to ask about…,13,18.7,email;dear;writing;regards;meeting
-390,10,tema,A day at school,The teacher helps the children.,30,15.9,teacher;teaches;students;read;class
-391,10,dia a dia,What do you think?,What do you think?,21,19.2,interesting;slow;agree;story;disagree
-392,10,tema,A friendly alien,I come in peace.,36,16.1,spaceship;creature;peace;green;light
-393,10,dia a dia,Can you repeat that?,"Can you repeat that, please?",5,22.0,repeat;slowly;second;first;learning
-394,10,tema,My robot friend,My robot can help me.,24,18.9,robot;talk;floor;tea;charges
+94,3,dia a dia,Where is the classroom?,Where is the classroom?,8,5.7,classroom;building;across;student;starts
+95,3,tema,A boat trip,Welcome on board.,45,5.7,boat;captain;life jacket;island;board
+96,3,dia a dia,A note on the board,Read the notice.,42,5.7,note;board;water;bottles;calendar
+97,3,tema,A card game,Pick a card.,26,5.7,cards;king;queen;pick;simple
+98,3,dia a dia,End of the day,See you tomorrow!,44,5.7,home;computer;week;subway;evening
+99,3,tema,Taking pictures,Smile for the camera.,28,5.7,photography;camera;straight;light;click
+100,3,dia a dia,Do you have a room?,Do you have a room for two nights?,5,5.8,room;night;single;double;included
+101,3,tema,A big feast,We have a big feast.,30,5.7,feast;ten;salad;strawberries;meal
+102,3,dia a dia,Do you have these in a nine?,Do you have these in a nine?,12,5.8,shoes;tight;fit;size;pair
+103,3,tema,What are you wearing?,I wear a blue shirt.,28,5.8,wearing;shirt;pants;jacket;sneakers
+104,3,dia a dia,I miss you,I miss you a lot.,16,5.8,miss;long time;family;visit;love
+105,3,tema,The rocket,This is a big rocket.,24,5.8,rocket;astronauts;brave;tall;center
+106,3,dia a dia,The parking lot,This is my spot.,42,5.8,parking;spot;visitors;camera;wall
+107,3,tema,Mixing colors,Blue and yellow make green.,28,5.8,brush;mix;yellow;pink;orange
+108,3,tema,Work clothes,We wear a uniform.,28,5.8,uniform;badge;jeans;casual;Monday
+109,3,dia a dia,A job interview,Tell me about yourself.,44,5.8,interview;student;working;people;happy
+110,3,tema,Fossils,This is a fossil.,43,5.8,fossil;bone;million;desert;scientist
+111,3,dia a dia,I need a SIM card,I need a SIM card.,13,5.9,SIM card;prepaid;plan;unlimited;set up
+112,3,tema,Movie night,Let us have a movie night.,26,5.9,movie night;blankets;pillows;hilarious;nothing
+113,3,dia a dia,It is too loud,The music is too loud.,42,5.9,loud;sorry;turn down;musician;early
+114,3,tema,What is the score?,What is the score?,26,5.9,score;win;minutes;close;draw
+115,3,dia a dia,Nice to meet the neighbors,I live next door.,7,5.9,neighbor;neighborhood;quiet;next door;moved in
+116,3,tema,In the kitchen,Where is the knife?,32,5.9,knife;spoons;plates;stove;fridge
+117,3,dia a dia,A room for the night,Do you have a room for tonight?,15,5.9,tonight;beds;tax;across;diner
+118,3,tema,Balloons and games,Throw the ball.,32,5.9,balls;bottles;prize;miss;choose
+119,3,dia a dia,I have a headache,I have a headache.,6,6.1,headache;fever;tired;rest;yesterday
+120,3,tema,A new song,I write a song.,24,5.9,write;slow;line;chorus;again
+121,3,dia a dia,I need something for a cold,I need something for a cold.,12,6.1,cold;symptoms;runny nose;cough;syrup
+122,3,tema,Where is my cat?,My cat is not here.,34,5.9,cat;orange;tail;medium;lucky
+123,3,tema,The corner store,I need milk and bread.,38,5.9,milk;bread;eggs;shelf;dozen
+124,3,dia a dia,In the elevator,Which floor?,42,6.2,elevator;floor;stairs;slow;always
+125,3,tema,Months of the year,There are twelve months.,40,5.9,January;March;May;July;December
+126,4,dia a dia,My address is…,My address is 25 Oak Street.,7,6.2,address;spell;apartment;zip code;number
+127,4,tema,Museum guide,Welcome to my museum.,43,5.9,follow;room;ancient;excellent;guide
+128,4,dia a dia,What time is it?,What time is it?,2,6.3,time;late;class;run;away
+129,4,tema,Handmade gifts,I make a card by hand.,28,6.0,scissors;glue;heart;message;inside
+130,4,dia a dia,A day online,I need Wi-Fi to work.,13,6.3,connect;outlet;later;trip;another
+131,4,tema,A birthday party,Happy birthday to you!,32,6.0,birthday;gift;balloons;candles;everywhere
+132,4,dia a dia,I have two brothers,I have two brothers.,2,6.4,brothers;older;younger;only;lives
+133,4,tema,Take the subway,Which line goes to the park?,38,6.0,line;platform;stops;ticket;seat
+134,4,dia a dia,Cut the onions,"Cut the onions, please.",11,6.4,cut;fry;boil;oil;careful
+135,4,tema,A concert tonight,The concert starts at eight.,24,6.1,concert;tickets;stage;band;crowd
+136,4,dia a dia,What is your schedule?,What is your schedule?,8,6.4,schedule;semester;Monday;Wednesday;free
+137,4,tema,Clay and pots,Make a pot with clay.,28,6.1,clay;wheel;thumbs;walls;oven
+138,4,dia a dia,I play the guitar,I play the guitar.,10,6.4,guitar;years;kind;rock;song
+139,4,tema,The mountain,The mountain is very high.,22,6.1,mountain;high;top;path;steep
+140,4,tema,A scientist for a day,I am a scientist today.,24,6.1,scientist;ready;notebook;cells;write
+141,4,dia a dia,Is it spicy?,Is it spicy?,11,6.4,spicy;chili;mild;dish;choice
+142,4,tema,Days of the week,Today is Monday.,40,6.1,Monday;Tuesday;Friday;Saturday;Sunday
+143,4,dia a dia,Where is my ride?,Where is my ride?,13,6.4,ride;traffic;air conditioning;airport;driver
+144,4,tema,Let us sing!,Let us sing together!,24,6.3,sing;together;song;words;easy
+145,4,dia a dia,It is too expensive,It is too expensive.,3,6.5,expensive;cheap;watch;discount;percent
+146,4,tema,A magic show,"Pick a card, any card.",32,6.3,magic;helper;hat;bird;card
+147,4,dia a dia,"The check, please","Can we have the check, please?",3,6.5,check;tip;included;change;together
+148,4,tema,Life long ago,People live in groups.,43,6.4,groups;tents;roots;voices;different
+149,4,dia a dia,What is your favorite season?,My favorite season is fall.,14,6.6,season;fall;summer;winter;spring
+150,4,tema,Stone tools,This is a stone tool.,43,6.6,tool;stone;cutting;hand;clever
+151,4,dia a dia,A little about me,Let me tell you about myself.,21,6.7,teacher;teach;instrument;guitar;travel
+152,4,tema,At the stadium,Our team plays today.,26,6.6,stadium;players;ball;seats;best
+153,4,dia a dia,This is my family,This is my family.,2,6.7,father;mother;brother;sister;family
+154,4,tema,At the bank,I want to open an account.,38,6.6,account;passport;address;sign;card
+155,4,tema,Movie tickets,Two tickets for eight o'clock.,38,6.6,tickets;movie;middle;room;hall
+156,4,dia a dia,What are you doing this weekend?,What are you doing this weekend?,6,6.7,beach;join;rest;plans;weekend
+157,4,tema,My weekly budget,I spend fifty dollars a week.,40,6.6,spend;week;save;food;movies
+158,4,dia a dia,Which way to the station?,Which way to the station?,1,6.8,straight;block;turn right;far;on foot
+159,4,tema,At the post office,I want to send a letter.,38,6.7,letter;stamp;Brazil;fast;price
+160,4,dia a dia,Where do you work?,I work from nine to five.,2,6.8,floor;hours;weekends;never;lunch
+161,4,tema,Sushi time,Do you like raw fish?,30,6.8,sushi;raw;salmon;chopsticks;delicious
+162,4,dia a dia,I cannot make it,"I am sorry, I cannot make it.",6,6.8,party;work late;maybe;next time;idea
+163,4,tema,At the library,I want a library card.,38,6.8,library;card;form;borrow;weeks
+164,4,dia a dia,Is this class for beginners?,Is this class for beginners?,10,6.8,beginners;mat;comfortable;clothes;begin
+165,4,tema,Telling the time,It is half past four.,40,6.8,time;half past;quarter;bench;wait
+166,4,dia a dia,Thanksgiving dinner,I am thankful for my family.,14,6.8,thankful;turkey;pie;potatoes;sit down
+167,5,tema,The Ice Age,The world is very cold.,43,6.8,ice;thick;furs;wolves;imagine
+168,5,dia a dia,My computer,How do I log in?,44,6.9,password;printer;Wi-Fi;type;change
+169,5,tema,The castle,The castle has a tower.,36,6.9,castle;tower;king;queen;fairy tale
+170,5,tema,Around the campfire,The fire is warm.,34,6.9,fire;wood;matches;sticks;marshmallows
+171,5,dia a dia,I want to join the gym,I want to join the gym.,10,7.0,gym;monthly;yearly;towel;lock
+172,5,tema,A scary film,I am afraid of the dark.,26,7.1,scary;afraid;dark;story;scared
+173,5,dia a dia,"Two tickets, please","Two tickets, please.",5,7.1,tickets;adult;student;close;photos
+174,5,tema,Cartoons,Kids love cartoons.,26,7.1,cartoon;kids;talking;cute;songs
+175,5,dia a dia,Leaving a tip,Is the tip included?,20,7.1,tip;included;percent;earn;country
+176,5,tema,A famous painting,This painting is beautiful.,28,7.1,woman;dress;smile;colors;soft
+177,5,dia a dia,How old are you?,How old are you?,2,7.2,old;young;birthday;twenty;thirty
+178,5,tema,The way back,Where is the car?,34,7.1,back;rest;hours;feet;almost
+179,5,dia a dia,My birthday is in May,My birthday is in May.,14,7.2,birthday;May;October;exactly;believe
+180,5,tema,Sports day,Today is sports day.,26,7.2,event;choose;race;lunch;shirt
+181,5,dia a dia,The first day,Welcome to the team.,44,7.2,desk;window;hall;kitchen;room
+182,5,tema,Welcome home,Welcome to my new home.,32,7.2,rooms;two;left;lovely;behind
+183,5,dia a dia,What is today's date?,What is today's date?,14,7.5,date;March;Thursday;due;tenth
+184,5,tema,A love story,They love each other.,26,7.2,love story;sad;happy;end;cry
+185,5,tema,A witness,I see a red car.,34,7.3,witness;fast;plate;helpful;police
+186,5,dia a dia,What color?,Do you have this in blue?,3,7.6,blue;red;size;check;only
+187,5,tema,Fish in the sea,Fish live in the sea.,22,7.3,aquarium;shark;octopus;sea;dangerous
+188,5,dia a dia,My work week,I like my job.,44,7.6,answer;calls;emails;friendly;together
+189,5,tema,What sport do you like?,I like basketball.,26,7.3,sport;basketball;soccer;tennis;weekends
+190,5,dia a dia,Moving day,Can you help me move this box?,7,7.7,box;heavy;careful;move;window
+191,5,tema,A nature documentary,This documentary is about the ocean.,26,7.4,documentary;ocean;pictures;whale;huge
+192,5,dia a dia,Getting around town,How do I get to the museum?,4,7.8,museum;take;subway;stops;on foot
+193,5,tema,A tropical island,The island is beautiful.,45,7.4,island;sand;blue;paradise;quiet
+194,5,dia a dia,A free Saturday,What are we doing on Saturday?,10,7.9,Saturday;morning;afternoon;night;perfect
+195,5,tema,Sea creatures,Dolphins are smart.,45,7.4,dolphins;whales;jump;sounds;ocean
+196,5,dia a dia,I am allergic to nuts,I am allergic to nuts.,11,7.9,allergic;nuts;peanuts;dressing;skip
+197,5,tema,At the laundromat,I need change for the machine.,38,7.5,laundromat;change;quarters;soap;machine
+198,5,dia a dia,How are you feeling?,I am so happy today!,16,7.9,happy;worried;proud;nervous;better
+199,5,tema,A storm at sea,The sea is rough.,45,7.5,rough;waves;cabin;horizon;sick
+200,5,tema,What do they eat?,What do they eat?,22,7.6,eat;bananas;grass;leaves;meat
+201,5,dia a dia,Can you help me?,"Can you help me, please?",19,8.0,lost;hospital;straight;problem;far
+202,5,tema,Tacos tonight,I like spicy food.,30,7.6,tacos;beef;beans;spicy;sauce
+203,5,dia a dia,I am so sorry,I am so sorry!,16,8.1,sorry;bumped;spill;no big deal;necessary
+204,5,tema,Give change,Here is your change.,40,7.6,change;ten;cents;cash;twenty
+205,5,dia a dia,"Fill it up, please",Where is the gas station?,15,8.2,gas station;mile;pump;regular;tires
+206,5,tema,A party dress,You look elegant.,28,7.6,dress;jewelry;necklace;earrings;heels
+207,5,dia a dia,Work hours,What are the work hours?,44,8.4,hours;weekends;break;noon;start
+208,5,tema,The writer,I write books.,30,7.6,write;books;pages;newest;fox
+209,6,dia a dia,A work call,Please share your document.,44,8.4,hear;screen;share;document;clear
+210,6,tema,Travel alone,I travel alone.,40,7.6,alone;safe;careful;carry;smart
+211,6,dia a dia,Cash or card?,Can I pay by card?,3,8.4,card;cash;receipt;bag;enter
+212,6,tema,Under the sea,I see colorful fish.,45,7.6,mask;turtle;coral;colorful;swim
+213,6,dia a dia,Can I rent a bike?,Can I rent a bike?,4,8.4,rent;bike;helmet;hour;ride
+214,6,tema,Let me draw you,Sit here. I draw you.,28,7.7,draw;face;still;pencil;surprise
+215,6,dia a dia,Do you have aspirin?,Do you have aspirin?,4,8.4,aspirin;pill;dose;food;stomach
+216,6,tema,New shoes,What size are your shoes?,28,7.7,shoes;pair;comfortable;feet;store
+217,6,tema,Join the gym,What time do you open?,38,7.7,gym;monthly;yearly;classes;yoga
+218,6,dia a dia,Who is that?,Who is that in the photo?,16,8.5,grandfather;cousin;alike;photo;look
+219,6,tema,A dinosaur egg,The egg is round.,43,7.7,egg;round;heavy;baby;empty
+220,6,dia a dia,Where is gate 12?,Where is gate twelve?,1,8.6,gate;boarding;flight;on time;help
+221,6,tema,My dream boat,I want a blue boat.,45,7.7,dream;carry;family;relax;island
+222,6,dia a dia,Trash day,Where do I put the trash?,42,8.6,trash;bins;glass;plastic;paper
+223,6,tema,The mechanic,The car needs a repair.,30,7.7,mechanic;engine;noise;hood;belt
+224,6,dia a dia,Let us have a picnic,Let us have a picnic.,10,8.7,picnic;weather;bring;blanket;drinks
+225,6,tema,My neighborhood,I live in a nice neighborhood.,38,7.8,neighborhood;quiet;bakery;pharmacy;station
+226,6,dia a dia,My order is late,My order is late.,13,8.7,order;late;ago;delayed;customer service
+227,6,tema,Playing instruments,Do you play an instrument?,24,7.9,guitar;piano;drums;violin;instrument
+228,6,dia a dia,I do not feel well,I do not feel well.,19,8.7,headache;fever;throat;medicine;water
+229,6,tema,Chinese New Year,Red means good luck.,36,7.9,lanterns;luck;dragon dance;envelope;tradition
+230,6,dia a dia,Can you send me the file?,Can you send me the file?,9,8.7,file;report;budget;email;send
+231,6,tema,The proof,This is the proof.,34,7.9,picture;recognize;lock;proof;closed
+232,6,tema,Central Park,Let us walk in the park.,38,7.9,park;lakes;bridges;zoo;boat
+233,6,dia a dia,Happy Thanksgiving!,Happy Thanksgiving!,20,8.7,turkey;pie;potatoes;thankful;invite
+234,6,tema,The old statue,This statue is very tall.,28,8.0,statue;square;stone;heavy;years
+235,6,dia a dia,The building meeting,We have a meeting tonight.,42,8.8,meeting;idea;group;agrees;noise
+236,6,tema,Weekend in nature,I love nature.,22,8.1,weekend;weather;tent;map;nature
+237,6,dia a dia,Do you want to hang out?,Do you want to hang out?,6,8.9,weekend;movie;Saturday;evening;meet
+238,6,tema,The treasure map,The treasure is under the tree.,36,8.1,treasure;steps;shovel;box;dig
+239,6,dia a dia,The holiday season,This is my favorite time of the year.,14,8.9,holidays;December;plans;wonderful;before
+240,6,tema,What kind of movie?,I like funny movies.,26,8.2,comedies;action;horror;romantic;popcorn
+241,6,dia a dia,"Breakfast, please",I would like the breakfast special.,5,9.1,special;eggs;scrambled;pancakes;syrup
+242,6,tema,On the movie set,Quiet on the set!,26,8.2,set;actor;director;camera;quiet
+243,6,dia a dia,I like pizza,I like pizza.,2,9.2,like;hungry;mushrooms;cheese;love
+244,6,tema,At the bakery,"A baguette, please.",30,8.2,baguette;croissants;plain;chocolate;warm
+245,6,dia a dia,"A coffee, please","Can I get a coffee, please?",1,9.3,coffee;small;large;to go;dollars
+246,6,tema,Weight and size,"One kilo, please.",40,8.3,kilo;half;liter;piece;anything else
+247,6,tema,Count with me,Count from one to ten.,40,8.3,count;ten;twenty;fifty;hundred
+248,6,dia a dia,First day of class,"Nice to meet you, I am a new student.",8,9.4,seat;every;best;student;question
+249,6,tema,The firefighter,Firefighters help people.,30,8.4,firefighter;dangerous;special;clothes;truck
+250,7,dia a dia,I have a meeting at ten,I have a meeting at ten.,9,9.6,meeting;free;hour;room;talk
+251,7,tema,Trees and flowers,This tree is very old.,22,8.4,garden;tree;roses;plants;green
+252,7,dia a dia,The shared garden,We share a garden.,42,9.6,garden;herbs;water;plants;bench
+253,7,tema,Today's date,What is the date today?,40,8.6,date;June;calendar;meeting;forget
+254,7,dia a dia,How much is the rent?,How much is the rent?,7,9.7,rent;month;utilities;deposit;decide
+255,7,tema,At the port,The ship is very big.,45,8.6,port;ship;boxes;thousand;America
+256,7,dia a dia,I would like to rent a car,I would like to rent a car.,15,9.7,rent;insurance;driver's license;small car;days
+257,7,tema,In the restaurant kitchen,The chef cooks for many people.,30,8.7,chef;kitchen;soup;rice;hot
+258,7,dia a dia,Can you text me?,Can you text me the address?,13,9.8,text;number;address;lost;send
+259,7,tema,Cleaning day,Let us clean the house.,32,8.7,clean;sweep;broom;trash;windows
+260,7,dia a dia,I have a question,I have a question.,8,9.9,question;mean;example;borrow;understand
+261,7,tema,Fruits and vegetables,I want some apples and carrots.,30,8.7,apples;carrots;tomatoes;fresh;kilo
+262,7,tema,Ice cream day,Which flavor do you want?,30,8.8,flavor;vanilla;strawberry;cone;scoop
+263,7,dia a dia,Can I take a message?,Can I take a message?,9,9.9,speaking;message;called;number;tell
+264,7,tema,The mermaid story,The mermaid lives in the sea.,45,8.8,mermaid;story;hair;shiny;crab
+265,7,dia a dia,Lunch with colleagues,Do you want to have lunch?,44,9.9,noon;hungry;sandwiches;soup;inviting
+266,7,tema,In a new country,Can you help me?,40,8.9,help;station;straight;kind;Japan
+267,7,dia a dia,Dinner shopping,I need everything for dinner.,3,10.0,need;everything;that is all;bag;dozen
+268,7,tema,At the playground,Take turns on the slide.,32,8.9,slide;swings;seesaw;afternoon;careful
+269,7,dia a dia,I think it is great,I think it is great.,16,10.0,think;loud;agree;talented;voice
+270,7,tema,Cave paintings,People draw on the wall.,43,8.9,cave;wall;bull;paintings;thousand
+271,7,dia a dia,Meet my family!,"This is my family, and I love them.",2,10.1,everyone;engineer;teacher;welcome;love
+272,7,tema,Four seasons,My favorite season is spring.,22,9.0,seasons;spring;summer;fall;winter
+273,7,dia a dia,Where is the milk?,Where can I find the milk?,3,10.1,aisle;milk;bread;fresh;fruit
+274,7,tema,Join our team,Do you want to join our team?,26,9.0,join;team;practice;captain;near
+275,7,dia a dia,Lunch break,Do you want to grab lunch?,9,10.1,lunch;break;sandwich;nearby;wait
+276,7,tema,Light and power,The light is off.,24,9.1,light;switch;bulb;power;drawer
+277,7,tema,"Hats, bags and watches",I like your hat.,28,9.1,hat;bag;watch;brown;popular
+278,7,dia a dia,How do I download this app?,How do I download this app?,13,10.1,download;app;tap;account;sign up
+279,7,tema,Fashion show,Welcome to my fashion show.,28,9.1,fashion show;model;outfit;next;full
+280,7,dia a dia,What does he look like?,He is tall and has dark hair.,16,10.2,tall;dark hair;glasses;jacket;fountain
+281,7,tema,The haunted house,Do not be scared!,32,9.1,haunted;ghost;stairs;wind;noise
+282,7,dia a dia,What does this sign say?,What does this sign say?,15,10.3,sign;speed limit;yield;no parking;miles per hour
+283,7,tema,I like music,What music do you like?,24,9.1,music;pop;jazz;listen;singer
+284,7,dia a dia,Can I call you later?,Can I call you later?,6,10.4,meeting;later;call;time;after
+285,7,tema,A secret code,This is a secret message.,34,9.1,secret;code;letter;numbers;message
+286,7,dia a dia,Let me introduce you,Let me introduce you to Dee.,9,10.4,introduce;sales;design;same;sometime
+287,7,tema,Good morning exercise,Stretch your arms.,38,9.2,stretch;toes;breathe;slowly;arms
+288,7,dia a dia,It is sunny today,It is sunny today.,4,10.6,sunny;rain;cold;hot;degrees
+289,7,tema,The maze,Turn left at the end.,32,9.3,maze;exit;dead end;way;wall
+290,7,dia a dia,I have a toothache,I have a toothache.,12,10.6,toothache;tooth;cavity;serious;open wide
+291,7,tema,The carousel,My daughter loves horses.,32,9.4,carousel;horses;daughter;colorful;tight
+292,8,dia a dia,A day off,Can I have a day off?,44,10.7,day off;birthday;doctor;team;Friday
+293,8,tema,My bedroom,There is a bed in my room.,32,9.5,bedroom;bed;desk;lamp;shelf
+294,8,tema,A day at the zoo,I love the zoo!,22,9.6,favorite;penguin;kind;tree;lions
+295,8,dia a dia,I wake up at seven,I wake up at seven.,2,10.7,wake up;breakfast;toast;leave;early
+296,8,tema,Funny people,He is very funny.,26,9.6,funny;laugh;face;main;another
+297,8,dia a dia,Christmas shopping,I need a gift for my sister.,14,10.8,Christmas;gift;sister;wrapped;bestseller
+298,8,tema,Dinner at home,Dinner is ready.,30,9.7,dinner;plate;glass;salad;table
+299,8,dia a dia,My first week in English,I can talk about my life in English.,6,10.9,week;proud;directions;weekends;friends
+300,8,tema,Animals on the farm,There are cows on the farm.,22,9.8,farm;cows;horses;chickens;eggs
+301,8,dia a dia,Taking the bus,Which bus goes downtown?,20,10.9,downtown;fare;exact;tap;stop
+302,8,tema,The pilot,The pilot flies the plane.,30,9.8,pilot;plane;flight;hours;tired
+303,8,dia a dia,At the pharmacy,Do you have something for a cold?,19,11.1,cold;cough;twice;prescription;nose
+304,8,tema,Wild animals,The bear lives in the forest.,22,9.8,forest;bears;wolves;deer;cave
+305,8,dia a dia,A diner breakfast,I would like the pancakes.,20,11.2,pancakes;bacon;scrambled;order;check
+306,8,tema,A big storm,There is a big storm.,22,9.8,storm;thunder;lightning;candles;safe
+307,8,dia a dia,Welcome to town!,"Can I get a coffee, and where is the station?",1,11.3,again;ready;first day;station;minutes
+308,8,tema,Around the world,Every country has a festival.,36,9.8,festival;costumes;lights;autumn;share
+309,8,tema,A few questions,What is your name?,34,9.9,baker;night;boss;woman;know
+310,8,dia a dia,My strengths,I am hardworking.,44,11.4,strengths;hardworking;organized;list;team
+311,8,tema,Balloon festival,The balloons fly high.,36,9.9,balloons;pilot;basket;hundreds;high
+312,8,dia a dia,What do you do?,What do you do?,2,11.6,teacher;engineer;job;company;interesting
+313,8,tema,The lighthouse,The lighthouse is tall.,45,10.0,lighthouse;steps;ships;top;night
+314,8,dia a dia,Room service,Could I order room service?,5,11.6,front desk;room service;sandwich;bottle;arrive
+315,8,tema,My favorite series,I watch a series every night.,26,10.1,series;characters;episodes;season;watch
+316,8,dia a dia,What is the Wi-Fi password?,What is the Wi-Fi password?,13,11.6,password;receipt;lowercase;spaces;works
+317,8,tema,Board games,It is your turn.,26,10.2,board game;dice;piece;turn;steps
+318,8,dia a dia,The Fourth of July,Let us watch the fireworks.,14,11.6,fireworks;barbecue;blanket;watermelon;July
+319,8,tema,Stars in the sky,Look at the stars!,22,10.2,stars;moon;clear;clouds;bright
+320,8,dia a dia,Is this the right office?,Is this the right office?,9,11.6,office;team;desk;locker;excited
+321,8,tema,A headache day,My head hurts.,38,10.3,pale;fever;dizzy;pill;rest
+322,8,dia a dia,How much is a concert ticket?,How much is a concert ticket?,10,11.6,concert;cheapest;balcony;stage;depends
+323,8,tema,Where is the sofa?,Move the table to the left.,32,10.3,move;corner;left;wall;bigger
+324,8,tema,My own gallery,This is my first exhibition.,28,10.4,exhibition;nervous;lovely;price;bright
+325,8,dia a dia,What is she like?,She is kind and funny.,16,11.6,kind;funny;shy;friendly;smart
+326,8,tema,Piano lesson,Sit down and play.,24,10.7,hands;press;key;high;low
+327,8,dia a dia,Where is the laundromat?,Where is the laundromat?,12,11.7,laundromat;quarters;wash;dryer;corner
+328,8,tema,The villain,He is the bad guy.,36,10.8,villain;gold;clever;brave;never
+329,8,dia a dia,A problem on the trip,I have a problem with my flight.,19,11.7,ticket;passport;print;saved;safe
+330,8,tema,Home appliances,The washing machine is broken.,32,10.8,washing machine;plugged in;plug;loose;dryer
+331,8,dia a dia,A takeout order,I would like to order takeout.,3,11.8,order;takeout;ready;pick up;soda
+332,8,tema,Cool machines,This machine is very useful.,24,10.9,machine;dishes;ice cream;button;difficult
+333,9,dia a dia,How do you make pancakes?,First mix the eggs and the flour.,11,11.8,mix;flour;sugar;pan;flip
+334,9,tema,The bathroom,Where is the bathroom?,32,10.9,bathroom;towel;soap;sink;hall
+335,9,dia a dia,Could you keep it down?,"Could you keep it down, please?",7,12.1,loud;turn down;sorry;appreciate;neighbor
+336,9,tema,Something sweet,I would like a piece of cake.,30,11.0,dessert;cake;pie;piece;enjoy
+337,9,dia a dia,There is a problem,There is a problem with my room.,5,12.1,problem;air conditioner;towels;work;trouble
+338,9,tema,Take care of the Earth,Do not throw trash.,24,11.1,trash;bin;recycle;plastic;cloth bag
+339,9,tema,Jobs around us,I am a nurse.,30,11.1,nurse;hospital;driver;truck;tiring
+340,9,dia a dia,What are you cooking?,What are you cooking?,11,12.3,cooking;beans;stir;add;salt
+341,9,tema,A day at work,What do you do at work?,30,11.2,start;finish;teach;after;dinner
+342,9,dia a dia,A road trip,Let us hit the road!,15,12.6,trip;north;several;on the way;fill up
+343,9,tema,The Ferris wheel,You can see the whole city.,32,11.2,Ferris wheel;car;meters;view;whole
+344,9,dia a dia,Do you have pets?,Do you have pets?,2,12.7,dog;cat;cute;pet;friend
+345,9,tema,Cotton candy,It is sweet and pink.,32,11.4,cotton candy;sugar;soft;melts;mouth
+346,9,dia a dia,Can you take a photo?,Can you take a photo of us?,5,12.7,photo;statue;smile;button;one more
+347,9,tema,The hero mission,We save the city.,36,11.6,bank;stop;bag;floor;team
+348,9,dia a dia,A day at the beach,Do not forget the sunscreen.,10,12.7,beach;sunscreen;towel;cooler;forget
+349,9,tema,How the body works,The heart pumps blood.,24,11.6,heart;blood;brain;lungs;breathe
+350,9,dia a dia,I hurt my ankle,I hurt my ankle.,12,12.8,ankle;foot;swollen;broken;ice
+351,9,tema,Price check,How much is this hat?,40,11.6,hat;shoes;expensive;cheaper;register
+352,9,dia a dia,Call an ambulance!,Call an ambulance!,19,12.8,ambulance;fell down;calm;hurry;breathing
+353,9,tema,Birds can fly,Birds can fly.,22,11.7,bird;fly;penguins;parrot;owl
+354,9,tema,A night at the theater,The play starts soon.,28,11.7,theater;play;row;intermission;tickets
+355,9,dia a dia,Can I try this on?,Can I try this on?,3,13.2,jacket;try on;fitting room;small;size
+356,9,tema,What is that animal?,What is that animal?,22,11.8,elephant;monkey;giraffe;tail;animal
+357,9,dia a dia,A table for Saturday,I would like to make a reservation.,14,13.3,reservation;evening;people;name;Saturday
+358,9,tema,The fisherman,I catch fish every morning.,45,11.8,fisherwoman;catch;tuna;calm;sea bass
+359,9,dia a dia,Everything you know,Look how far I have come.,21,13.3,remember;barely;directions;proud;ready
+360,9,tema,It is raining,It is raining.,22,11.8,raining;umbrella;cloudy;coat;outside
+361,9,dia a dia,Booking a table,I would like a table for two.,21,13.4,book;available;window;evening;name
+362,9,tema,A morning run,I run every morning.,26,11.9,run;kilometers;first;shoes;water
+363,9,dia a dia,Where can I print this?,Where can I print this?,8,13.6,print;printer;page;cents;front desk
+364,9,tema,At the amusement park,Which ride do you want?,32,11.9,ride;roller coaster;line;wait;excited
+365,9,dia a dia,I need a day off,Could I take Friday off?,9,13.6,minute;day off;doctor's appointment;team;understanding
+366,9,tema,In the fitting room,It is too small.,28,11.9,try on;fitting room;bigger;fits;sale
+367,9,dia a dia,Where can I park?,Where can I park?,15,13.6,park;garage;meter;hours;free
+368,9,tema,At the pool,Do not run near the pool.,26,12.0,pool;lane;beginners;deep;cap
+369,9,tema,The moon,The moon is far from the Earth.,24,12.1,telescope;close;far away;kilometers;holes
+370,9,dia a dia,I am looking for an apartment,I am looking for an apartment.,7,13.7,apartment;bedrooms;options;near;downtown
+371,9,tema,Look how much you know,I can talk about many things.,40,12.1,remember;animals;food;hobbies;plans
+372,9,dia a dia,"Dessert, please",Can we see the dessert menu?,11,13.7,dessert;cheesecake;plates;share;amazing
+373,9,tema,Who is it?,Who is that man?,34,12.1,detective;coat;gray;nose;notebook
+374,9,dia a dia,A gift for my mom,I am looking for a gift.,5,13.8,gift;scarf;beautiful;wrapped;mom
+375,10,tema,Big dinosaurs,Dinosaurs are huge.,43,12.4,dinosaur;huge;teeth;sharp;neck
+376,10,dia a dia,May I come in?,May I come in?,19,13.9,knock;window;report;page;check
+377,10,tema,Small animals,I do not like spiders.,22,12.7,butterflies;bees;honey;spiders;legs
+378,10,dia a dia,Follow the steps,"First, cut the tomatoes.",21,13.9,wash;cut;add;mix;recipe
+379,10,tema,Music in the street,He plays on the corner.,24,12.9,corner;saxophone;coins;job;every day
+380,10,dia a dia,The sink is leaking,The sink is leaking.,7,14.1,sink;leaking;since;fix;cost
+381,10,tema,Music festival,The festival is great!,24,12.9,festival;stages;hungry;thirsty;dance
+382,10,dia a dia,Could you repeat that?,"Could you repeat that, please?",19,14.7,repeat;gate;slowly;floor;understand
+383,10,tema,Look for clues,There is a clue on the floor.,34,13.1,clue;broken;key;important;case
+384,10,dia a dia,Can I get a refill?,Can I get a refill?,11,14.8,refill;cream;ordered;fix;actually
+385,10,tema,Eat well,Eat more vegetables.,38,13.6,vegetables;spinach;broccoli;enough;glasses
+386,10,tema,In the lab,Wear your glasses in the lab.,24,13.6,lab;glasses;microscope;tiny;science
+387,10,dia a dia,"Excuse me, sir","Excuse me, may I get through?",21,15.1,through;crowded;seat;taken;next
+388,10,tema,A shopping day,I want a bigger size.,28,13.6,size;medium;T-shirt;color;green
+389,10,dia a dia,Let us watch the game,Who is winning?,20,15.5,game;team;winning;play;seat
+390,10,tema,The dog runs fast,The dog runs fast.,22,13.7,runs;swims;sleeps;sing;lazy
+391,10,dia a dia,I do not understand,I do not understand.,19,15.8,question;mean;spell;write down;word
+392,10,tema,At the art museum,Welcome to the museum.,28,13.8,museum;paintings;statues;modern;flash
+393,10,dia a dia,Can you hear me?,Can you hear me?,13,16.1,hear;camera;microphone;low;turn on
+394,10,tema,I am a superhero,I can fly!,36,13.9,superhero;strong;fast;power;walls
+395,10,dia a dia,Can I borrow this book?,Can I borrow this book?,8,16.2,borrow;library card;return;renew;weeks
+396,10,tema,A magic potion,Mix the water and the herbs.,36,13.9,potion;herbs;flower;purple;tastes
+397,10,dia a dia,Can you pass the salt?,"Can you pass the salt, please?",6,16.4,salt;delicious;recipe;rice;smells
+398,10,tema,The hero scene,The hero runs fast.,26,14.3,hero;roof;jumps;stunt man;bad guy
+399,10,dia a dia,"Hello, who is calling?",Can I speak to Mr. Lee?,21,16.8,speak;call;hold;busy;number
+400,10,tema,The planets,There are eight planets.,24,14.9,planets;Earth;Jupiter;Mars;space
+401,10,tema,The mammoth,The mammoth has long tusks.,43,15.0,mammoth;tusks;hair;cold;elephant
+402,10,dia a dia,I would like to return this,I would like to return this.,12,16.9,return;refund;exchange;receipt;fit
+403,10,tema,The river and the lake,The water is clean.,22,15.4,lake;river;clean;fish;water
+404,10,dia a dia,"A haircut, please",I would like a haircut.,12,17.1,haircut;sides;top;clippers;seat
+405,10,tema,The doctor and the nurse,The doctor helps sick people.,30,15.6,sick;patients;stressful;rewarding;week
+406,10,dia a dia,Can I charge my phone?,Can I charge my phone here?,13,17.3,charge;outlet;charger;battery;dead
+407,10,tema,The dragon,The dragon is friendly.,36,15.6,dragon;friendly;gold;fire;touch
+408,10,dia a dia,Dinner for friends,Dinner is ready!,11,18.2,ready;option;worry;cook;everyone
+409,10,tema,The world map,There are seven continents.,40,15.7,continents;Asia;Africa;Europe;ocean
+410,10,dia a dia,Writing a short email,I am writing to ask about…,13,18.7,email;dear;writing;regards;meeting
+411,10,tema,A day at school,The teacher helps the children.,30,15.9,teacher;teaches;students;read;class
+412,10,dia a dia,What do you think?,What do you think?,21,19.2,interesting;slow;agree;story;disagree
+413,10,tema,A friendly alien,I come in peace.,36,16.1,spaceship;creature;peace;green;light
+414,10,dia a dia,Can you repeat that?,"Can you repeat that, please?",5,22.0,repeat;slowly;second;first;learning
+415,10,tema,My robot friend,My robot can help me.,24,18.9,robot;talk;floor;tea;charges
