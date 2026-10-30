@@ -7,7 +7,7 @@ future perfect, gerúndio perfeito, whereas/nevertheless/furthermore/moreover/co
 cleft sentences (It was ... that / What I ... is), I wish + had, mixed conditionals, passive continuous complexa, 'were to', 'had better' etc."""
 import re,glob,sys,collections
 RULES=[
- ('3º condicional / would have',r"\bwould (?:not |never )?have \w+|\bif (?:i|you|he|she|we|they|it) had (?:\w+ed|been|gone|seen|done|known|taken|told|said|found|made)\b.*\bwould\b"),
+ ('3º condicional / would have',r"\bwould (?:not |never )?have (?:\w+ed|been|gone|seen|done|known|taken|told|said|found|made|come|left|met|gotten|got|had|given|written|eaten|thought|heard|bought|won|lost|begun|chosen|become)\b|\bif (?:i|you|he|she|we|they|it) had (?:\w+ed|been|gone|seen|done|known|taken|told|said|found|made)\b.*\bwould\b"),
  ('perfeito modal (B2)',r"\b(?:should|could|must|may|might|can't|cannot|couldn't) have (?:been|\w+ed|gone|seen|done|known|said|eaten|taken|told|made|found|heard)\b"),
  ('wish + past perfect',r"\bi wish (?:i|you|he|she|we|they|it) had\b|\bif only (?:i|you|he|she|we|they|it) had\b"),
  ('inversão negativa',r"\b(?:never|seldom|rarely|hardly|barely|scarcely|nowhere|little) (?:have|has|had|did|do|does|will|would|can|could) (?:i|you|he|she|we|they|it)\b|\bnot only [^.?!]*\b(?:but also)\b|\bno sooner\b|\bnot until\b"),
