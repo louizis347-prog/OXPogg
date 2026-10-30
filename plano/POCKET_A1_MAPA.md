@@ -53,3 +53,6 @@ Cada episódio atual é etiquetado por estágio (pelo padrão em K) e assume uma
 2. **Resto por blocos de assunto**, cada bloco mantendo a sequência interna em que foi escrito. A ordem dos blocos é definida à mão (`ORD_DIA`, `ORD_TEMA`), do mais simples ao mais rico. Ímpar = dia a dia, par = tema, intercalados em proporção.
 3. Revisões finais ("Everything you know", "Look how much you know", "A full day") no fim.
 Mapa auditável: `tools/pocket/mapa_a1.csv`. Para novos episódios: escreva o arco e acrescente o número em `ORD_DIA` ou `ORD_TEMA`.
+
+## Estado
+A1 fechado em **800 episódios** (400 dia a dia + 400 tema, intercalados), todos na porta de nível (`audit_nivel.py`). Próximo passo: Pocket A2, com passado e futuro (arcos em `tools/pocket/reserva_a2/`).
