@@ -53,11 +53,20 @@ def main():
     for lv in BASE:
         files=sorted(glob.glob(os.path.join(R,lv+'_arco*.py'))+glob.glob(os.path.join(R,lv+'_arco*.txt')))
         if not files:continue
-        eps=[];order=0
+        flat=[]
         for ai,fn in enumerate(files):
             m=load(fn)
-            for k,x in enumerate(m.EPS):
-                order+=1;eps.append(episode(lv,ai,k,x,BASE[lv],order))
+            for k,x in enumerate(m.EPS):flat.append(x)
+        # ordem pedagógica (tools/pocket/ordem_<nivel>.json): por complexidade, intercalando dia a dia e tema
+        of=os.path.join(R,'ordem_%s.json'%lv)
+        if os.path.exists(of):
+            pos={t:i for i,t in enumerate(json.load(open(of)))}
+            flat=sorted(flat,key=lambda x:pos.get(x['t'],10**6))
+        eps=[]
+        for order,x in enumerate(flat,1):
+            ai=(order-1)//10;k=(order-1)%10
+            x['boss']=(k==9);x['s']=re.sub(r'^Desafio do arco: ?','',x['s'])
+            eps.append(episode(lv,ai,k,x,BASE[lv],order))
         # 1 arquivo por 50 episódios
         names=[]
         for bi in range(0,len(eps),50):

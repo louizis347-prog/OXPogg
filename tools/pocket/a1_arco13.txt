@@ -167,24 +167,24 @@ X: With no traffic.|Sem trânsito.
 C: Em aplicativos de carona, o motorista costuma confirmar seu nome antes de você entrar.
 N: Próximo: uma compra online.
 
-T: My order has not arrived | Reclamar de uma encomenda | living | Seattle | Sue,f,👩🏼,atendente
-K: My order has not arrived. | A minha encomenda não chegou.
+T: My order is late | Reclamar de uma encomenda | living | Seattle | Sue,f,👩🏼,atendente
+K: My order is late. | A minha encomenda está atrasada.
 M: Hoje você reclama de uma entrega e pede uma solução.
 D: Sue|Customer service. How can I help?|Atendimento ao cliente. Como posso ajudar?
-D: You|My order has not arrived.|A minha encomenda não chegou.
+D: You|My order is late.|A minha encomenda está atrasada.
 D: Sue|What time is the order?|Que horas é o pedido?
 D: You|Ten days ago.|Há dez dias.
 D: Sue|Let me check. What is the order number?|Vou verificar. Qual é o número do pedido?
 D: You|It is seven seven four two.|É sete sete quatro dois.
 D: Sue|I see the problem. It is delayed.|Vi o problema. Está atrasado.
 D: You|Can I get a refund?|Posso receber reembolso?
-V: order|pedido;arrived|chegou;ago|atrás / há;delayed|atrasado;customer service|atendimento
-B: My {0} has not arrived.|{0} não chegou.|order=A minha encomenda;package=O meu pacote;refund=O meu reembolso
+V: order|pedido;late|atrasada;ago|atrás / há;delayed|atrasado;customer service|atendimento
+B: My {0} is late.|{0} está em atraso.|order=A minha encomenda;package=O meu pacote;delivery=A minha entrega
 B: I ordered it {0} days ago.|Pedi há {0} dias.|ten=dez;five=cinco;three=três
-S: Sue|How can I help?|Como posso ajudar?|My order has not arrived.|A minha encomenda não chegou.
+S: Sue|How can I help?|Como posso ajudar?|My order is late.|A minha encomenda está atrasada.
 S: Sue|It is delayed.|Está atrasado.|Can I get a refund?|Posso receber reembolso?
-R: My order has not arrived.|A minha encomenda não chegou.
-R: I ordered it ten days ago.|Pedi há dez dias.
+R: My order is late.|A minha encomenda está atrasada.
+R: It is ten days late.|Está dez dias atrasada.
 R: It is order seven seven four two.|É o pedido sete sete quatro dois.
 R: Can I get a refund?|Posso receber reembolso?
 X: Let me check.|Vou verificar.

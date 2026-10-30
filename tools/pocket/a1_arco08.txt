@@ -149,16 +149,16 @@ M: Hoje você fala da prova e se dá coragem.
 D: Gina|You look tired. What is wrong?|Você parece cansado. O que houve?
 D: You|I have an exam tomorrow.|Tenho uma prova amanhã.
 D: Gina|Are you nervous?|Você está nervoso?
-D: You|A little. I studied all night.|Um pouco. Estudei a noite toda.
+D: You|A little. I study all night.|Eu estudo a noite toda.
 D: Gina|You need to sleep. Rest your brain.|Você precisa dormir. Descanse o cérebro.
 D: You|You are right. I go to bed early.|Você tem razão. Eu durmo cedo.
 D: Gina|Good luck tomorrow!|Boa sorte amanhã!
 D: You|Thank you. I need it!|Obrigado. Eu preciso!
-V: exam|prova;nervous|nervoso;studied|estudei;sleep|dormir;luck|sorte
+V: exam|prova;nervous|nervoso;study|estudar;sleep|dormir;luck|sorte
 B: I have {0} tomorrow.|Tenho {0} amanhã.|an exam=uma prova;a test=um teste;a presentation=uma apresentação
 B: I am a little {0}.|Estou um pouco {0}.|nervous=nervoso;tired=cansado;worried=preocupado
 S: Gina|What is wrong?|O que houve?|I have an exam tomorrow.|Tenho uma prova amanhã.
-S: Gina|Are you nervous?|Você está nervoso?|A little. I studied all night.|Um pouco. Estudei a noite toda.
+S: Gina|Are you nervous?|Você está nervoso?|A little. I study all night.|Eu estudo a noite toda.
 R: I have an exam tomorrow.|Tenho uma prova amanhã.
 R: I am a little nervous.|Estou um pouco nervoso.
 R: I go to bed early.|Eu durmo cedo.
@@ -166,30 +166,6 @@ R: Good luck!|Boa sorte!
 X: Good luck!|Boa sorte!
 C: Nos EUA, muitos estudantes passam a noite estudando antes de provas, e as bibliotecas ficam abertas até tarde.
 N: Próximo: a nota.
-
-T: How did you do? | Falar do resultado | classroom | Seattle | Gina,f,👩🏻,colega
-K: I passed the exam! | Eu passei na prova!
-M: Hoje você conta o resultado e comemora.
-D: Gina|How is the exam?|Como é a prova?
-D: You|I passed! I got a B.|Eu passei! Tirei B.
-D: Gina|Congratulations! That is great.|Parabéns! Isso é ótimo.
-D: You|And you? Is your test hard?|E você? Sua prova é difícil?
-D: Gina|I got an A. I am so happy.|Tirei A. Estou tão feliz.
-D: You|Wow! You deserve it.|Uau! Você merece.
-D: Gina|Let us celebrate. Dinner tonight?|Vamos comemorar. Jantar hoje à noite?
-D: You|Yes, my treat!|Sim, por minha conta!
-V: passed|passei;got|tirei / consegui;deserve|merecer;celebrate|comemorar;treat|convite pago
-B: I got {0}.|Eu tirei {0}.|a B=B;an A=A;a C=C
-B: Let us {0}.|Vamos {0}.|celebrate=comemorar;study=estudar;have dinner=jantar
-S: Gina|How is the exam?|Como é a prova?|It is hard! I need a B.|É difícil! Preciso de B.
-S: Gina|I got an A.|Tirei A.|Congratulations!|Parabéns!
-R: I passed the exam!|Eu passei na prova!
-R: I got a B.|Tirei B.
-R: Congratulations!|Parabéns!
-R: My treat!|Por minha conta!
-X: My treat!|Por minha conta!
-C: As notas nos EUA vão de A (melhor) a F (reprovado), e não existe a letra E.
-N: Próximo: um passeio pelo campus.
 
 T: A campus tour | Fazer um tour no campus | classroom | Boston | Ms. Cole,f,👩🏽,guia
 K: Where is the cafeteria? | Onde fica o refeitório?
