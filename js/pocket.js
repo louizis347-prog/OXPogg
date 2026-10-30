@@ -68,6 +68,13 @@ function karaoke(els,text,slow,speakP){
   const tick=setInterval(()=>{const el=(Date.now()-t0)/total*S;let a=0,k=0;while(k<els.length&&a+w[k]<=el){a+=w[k];k++}cur(Math.min(k,els.length-1))},60);
   return speakP.then(ok=>{clearInterval(tick);els.forEach(u=>{u.classList.remove('cur');u.classList.add('past')});return ok})}
 const saved=()=>store.get('saved',[]);
+const tipH=(ic,t)=>'<div class="pk-tip" id="pktip"><i>'+ic+'</i><span>'+t+'</span></div>';
+/* ícones SVG (Noto) carregados sob demanda de data/pk-icons.json; enquanto não chegam, mostra o emoji */
+const PKI={m:null,p:null,
+  load(){if(this.p)return this.p;this.p=fetch('data/pk-icons.json').then(r=>r.json()).then(j=>{this.m=j;return j}).catch(()=>{this.m={};return this.m});return this.p},
+  svg(e){return this.m&&this.m[e]||''},
+  html(e,cls){const sv=this.svg(e);return '<span class="pk-ico'+(cls?' '+cls:'')+'" data-e="'+H(e)+'">'+(sv||'<b class="pk-eg">'+H(e)+'</b>')+'</span>'},
+  paint(root){this.load().then(()=>{root.querySelectorAll('.pk-ico[data-e]').forEach(el=>{if(el.querySelector('svg'))return;const sv=this.svg(el.dataset.e);if(sv)el.innerHTML=sv})})}};
 /* 1 · Cena */
 FXR.pkhero=function(f,st,n){
   const e=P.e,fx=P.fx;PKA.stop();
@@ -88,7 +95,7 @@ FXR.pkdlg=function(f,st,n){
   st.innerHTML='<div class="step fx pk pk-dlg" '+th(f)+'>'+bg(1)+
    '<div class="pk-tools"><b class="pk-tt">Diálogo</b><button type="button" class="pk-btn'+(pt?' on':'')+'" id="pkpt">🇧🇷 PT</button><button type="button" class="pk-btn" id="pkslow">🐢 Lento</button><button type="button" class="pk-btn" id="pkal">⏸ Pausar</button></div>'+
    '<div class="pk-key2">🔑 <b>“'+H(hook[0])+'”</b><span>'+H(hook[1])+'</span></div>'+
-   '<div class="pk-tip" id="pktip">👆 Toque nas <mark>palavras amarelas</mark> para ver o significado</div>'+
+   tipH('👆','Toque nas <mark>palavras amarelas</mark> para ver o significado')+
    '<div class="pk-chat'+(pt?' pt':'')+'" id="pkc">'+Ls.map((l,i)=>{const c=cast[l[0]]||['🙂','#999'],me=l[0]==='You';
      return '<div class="pk-row pend'+(me?' me':'')+'" data-l="'+i+'"><span class="pk-av">'+av(c[0],l[0],c[1])+'</span><div class="pk-b"><b>'+H(me?'VOCÊ':l[0])+'</b><span class="pk-en">'+unitsHTML(l[1],voc)+'</span><small class="pk-pt">'+H(l[2])+'</small>'+(me?'<button type="button" class="pk-mic" title="Repetir esta fala">🎤</button>':'')+'<i class="pk-ok">✓</i></div></div>'}).join('')+'</div>'+
    '<div class="pk-card2" id="pkcard" hidden></div></div>';
@@ -118,7 +125,7 @@ FXR.pkdlg=function(f,st,n){
   const openWord=b=>{const v=voc[+b.dataset.v],w=b.textContent;pause();sfx2('pop');b.classList.add('seen');b.classList.remove('pulse');tip.hidden=true;
     const has=saved().some(x=>x[0]===v[0]);
     card.innerHTML='<div class="pkc-w"><b>'+H(w)+'</b><span>'+H(v[1])+'</span></div><div class="pkc-a"><button type="button" id="pkc-h">🔊 Ouvir</button><button type="button" id="pkc-s">🐢 Devagar</button><button type="button" id="pkc-b"'+(has?' class="on"':'')+'>'+(has?'✓ Guardada':'＋ Guardar na mochila')+'</button><button type="button" id="pkc-x" aria-label="Fechar">✕</button></div>';
-    card.hidden=false;
+    card.hidden=false;PKI.paint(card);
     q('#pkc-h',card).onclick=()=>say2(w);q('#pkc-s',card).onclick=()=>say2(w,null,true);q('#pkc-x',card).onclick=closeCard;
     q('#pkc-b',card).onclick=ev=>{const a=saved(),k=a.findIndex(x=>x[0]===v[0]);if(k<0){a.push([v[0],v[1]]);store.set('saved',a);ev.currentTarget.textContent='✓ Guardada';ev.currentTarget.classList.add('on');sfx2('step')}else{a.splice(k,1);store.set('saved',a);ev.currentTarget.textContent='＋ Guardar na mochila';ev.currentTarget.classList.remove('on')}};
     say2(w)};
@@ -139,16 +146,17 @@ FXR.pkdlg=function(f,st,n){
 
 /* 2b · Leitura: o mesmo episódio contado como narração, com destaque palavra a palavra */
 /* 2b · Vocabulário: figura por palavra, toque para ver exemplos */
+const STC=[['#E85D75','#7B2350'],['#3E8FD8','#1B4585'],['#F29B34','#9A4E14'],['#9B6AD8','#4A2A86'],['#2FB0A0','#166057'],['#2FAE6C','#0F5A37']];
 const TILE=['#ff8a5b','#2ec4b6','#b388ff','#43d17a','#ff7a7a','#3a86ff'];
 FXR.pkvoc=function(f,st,n){
   const fx=P.fx,C=f.cards||[];PKA.stop();lock();const seen=new Set();let cur=-1;
-  const pic=(c,i)=>c[2]?'<span class="pkv-em">'+H(c[2])+'</span>':'<span class="pkv-em tile" style="background:'+TILE[i%TILE.length]+'">'+H(String(c[0]).charAt(0).toUpperCase())+'</span>';
+  const pic=(c,i)=>c[2]?PKI.html(c[2],'pkv-em'):'<span class="pkv-em tile" style="background:'+TILE[i%TILE.length]+'">'+H(String(c[0]).charAt(0).toUpperCase())+'</span>';
   st.innerHTML='<div class="step fx pk pk-voc" '+th(f)+'>'+bg(1)+
    '<div class="pk-tools"><b class="pk-tt">Vocabulário</b><span class="pk-cnt" id="pkvc"></span></div>'+
-   '<div class="pk-tip" id="pktip">👆 Toque em cada figura para ver e ouvir a palavra.</div>'+
-   '<div class="pkv-grid">'+C.map((c,i)=>'<button type="button" class="pkv-c" data-i="'+i+'">'+pic(c,i)+'<b>'+H(c[0])+'</b><i class="pk-ok">✓</i></button>').join('')+'</div>'+
+   tipH('👆','Toque em cada <mark>figura</mark> para ver e ouvir a palavra')+
+   '<div class="pkv-grid">'+C.map((c,i)=>'<button type="button" class="pkv-c" data-i="'+i+'">'+pic(c,i)+'<b>'+H(c[0])+'</b><i class="pk-ok">✓</i></button>').join('')+'</div>'+(f.notes||[]).map(m=>'<div class="pk-note pkv-note"><b>“'+H(m.en)+'”</b> '+H(m.txt)+'</div>').join('')+
    '<div class="pk-card2 pkv-card" id="pkcard" hidden></div></div>';
-  const card=q('#pkcard',st),cnt=q('#pkvc',st),tip=q('#pktip',st),cells=[...st.querySelectorAll('.pkv-c')];
+  const card=q('#pkcard',st),cnt=q('#pkvc',st),tip=q('#pktip',st),cells=[...st.querySelectorAll('.pkv-c')];PKI.paint(st);
   const need=Math.min(C.length,5);let unlocked=false;
   const upd=()=>{cnt.textContent=seen.size+'/'+C.length;
     if(!unlocked&&seen.size>=need){unlocked=true;P.fx.done=true;P.fx.cta=()=>false;cta('Continuar',true,true);coach('Ótimo! Agora vamos ler um texto com essas palavras.')}};
@@ -172,10 +180,10 @@ FXR.pkread=function(f,st,n){
   let runTok=0,playing=false,slow=false,pt=store.get('pt',true);const heard=new Set();
   st.innerHTML='<div class="step fx pk pk-read" '+th(f)+'>'+bg(1)+
    '<div class="pk-tools"><b class="pk-tt">Leitura</b><button type="button" class="pk-btn'+(pt?' on':'')+'" id="pkpt">🇧🇷 PT</button><button type="button" class="pk-btn" id="pkslow">🐢 Lento</button><button type="button" class="pk-btn" id="pkal">⏸ Pausar</button></div>'+
-   '<div class="pk-tip" id="pktip">📖 Acompanhe a leitura. Toque nas <mark>palavras amarelas</mark>.</div>'+
+   tipH('📖','Acompanhe a leitura. Toque nas <mark>palavras amarelas</mark>')+
    '<div class="pk-story'+(pt?' pt':'')+'" id="pks">'+P_.map((p,i)=>
-     '<div class="pk-par" data-p="'+i+'"><p class="pk-line"><span class="pk-lead">'+unitsHTML(p.lead[0],voc)+'</span>'+(p.q[0]?' <span class="pk-q">“'+unitsHTML(p.q[0],voc)+'”</span>':'')+'</p><small class="pk-ptp">'+H(p.lead[1]+(p.q[0]?' “'+p.q[1]+'”':''))+'</small><i class="pk-ok">✓</i></div>').join('')+'</div>'+
-   '<div class="pk-card2" id="pkcard" hidden></div></div>';
+     '<div class="pk-par" data-p="'+i+'">'+(p.ic?PKI.html(p.ic,'pk-pic'):'')+'<div class="pk-ptx"><p class="pk-line"><span class="pk-lead">'+unitsHTML(p.lead[0],voc)+'</span>'+(p.q[0]?' <span class="pk-q">“'+unitsHTML(p.q[0],voc)+'”</span>':'')+'</p><small class="pk-ptp">'+H(p.lead[1]+(p.q[0]?' “'+p.q[1]+'”':''))+'</small></div><i class="pk-ok">✓</i></div>').join('')+'</div>'+
+   '<div class="pk-card2" id="pkcard" hidden></div></div>';PKI.paint(st);
   const box=q('#pks',st),pars=[...st.querySelectorAll('.pk-par')],card=q('#pkcard',st),tip=q('#pktip',st),bAl=q('#pkal',st);
   const first=q('.pk-w',st);if(first)first.classList.add('pulse');
   const setNow=i=>pars.forEach((r,j)=>{r.classList.toggle('now',j===i);if(j!==i)r.querySelectorAll('.cur').forEach(x=>x.classList.remove('cur'))});
@@ -220,7 +228,7 @@ FXR.pkbuild=function(f,st,n){
       st.querySelector('.pk-sent').innerHTML=H(it.en).replace('{0}','<mark>'+H(o[0])+'</mark>');
       st.querySelector('.pk-sentpt').innerHTML=H(it.pt).replace('{0}','<mark>'+H(o[1])+'</mark>')};
     st.innerHTML='<div class="step fx pk pk-build" '+th(f)+'>'+bg(2)+'<div class="pk-prog">'+R.map((_,i)=>'<i class="'+(i<ri?'on':'')+'"></i>').join('')+'</div>'+
-     '<div class="pk-card"><div class="pk-sent"></div><div class="pk-sentpt"></div><button class="pk-btn" id="pkhear" type="button">🔊 Ouvir</button></div>'+
+     '<div class="pk-card"><div class="pk-sent"></div><div class="pk-sentpt"></div><button class="pk-btn" id="pkhear" type="button">🔊 Ouvir</button></div>'+(it.note?'<div class="pk-note">'+H(it.note)+'</div>':'')+
      '<div class="pk-hint">Toque numa peça para trocar a palavra. Experimente todas!</div>'+
      '<div class="pk-opts">'+it.opts.map((o,i)=>'<button type="button" class="pk-opt'+(i===0?' on':'')+'" data-i="'+i+'"><b>'+H(o[0])+'</b><small>'+H(o[1])+'</small></button>').join('')+'</div></div>';
     render();
@@ -254,13 +262,15 @@ FXR.pkspeak=function(f,st,n){
 const w0=FXR.wrap;
 FXR.wrap=function(f,st,n){
   if(!(P.e&&P.e.pocket)||!w0)return w0&&w0.apply(this,arguments);
-  const e=P.e,s=f.sticker||{};PKA.stop();
+  const e=P.e,s=f.sticker||{},STK=f.stickers||[];PKA.stop();
+  const own=store.get('stk',[]);
+  try{store.set('stk',[...new Set(own.concat(STK.map(c=>c[0].toLowerCase())))])}catch(x){}
   st.innerHTML='<div class="step fx pk pk-wrap" '+th(f)+'>'+bg(4)+
-   '<div class="pk-fin"><div class="pk-stk'+(s.boss?' boss':'')+'"><span class="pk-face">'+av(s.face,s.name,(f.g||['#FF8A5B'])[0])+'</span><small>'+(s.boss?'FIGURINHA RARA':'FIGURINHA')+'</small><b>'+H(s.name)+'</b><i>'+H(s.role)+' · '+H(s.city)+'</i></div>'+
+   '<div class="pk-fin"><div class="pk-vsw"><h3>🏷️ Figurinhas do vocabulário</h3><div class="pk-vs-grid">'+STK.map((c,i)=>{const nw=!own.includes(c[0].toLowerCase());return '<button type="button" class="pk-vs'+(s.boss?' gold':'')+'" data-t="'+H(c[0])+'" style="--c1:'+STC[i%STC.length][0]+';--c2:'+STC[i%STC.length][1]+';--r:'+(((i%3)-1)*1.6)+'deg"><span class="pk-vs-shine"></span>'+(nw?'<em class="pk-vs-new">NOVA</em>':'')+'<span class="pk-vs-top">'+(s.boss?'★★★':'★')+'</span><span class="pk-vs-win">'+(c[2]?PKI.html(c[2],'pk-vs-ic'):'<b class="pk-vs-l">'+H(String(c[0]).charAt(0).toUpperCase())+'</b>')+'</span><b class="pk-vs-w">'+H(c[0])+'</b><small>'+H(c[1])+'</small></button>'}).join('')+'</div></div>'+
    '<div class="pk-bag"><h3>🎒 Frases para levar</h3>'+(f.recap||[]).map(r=>'<button type="button" class="pk-cc" data-t="'+H(r[0])+'"><b>'+H(r[0])+'</b><small>'+H(r[1])+'</small></button>').join('')+'</div>'+
    '<div class="pk-bag"><h3>💬 Expressão</h3><button type="button" class="pk-cc" data-t="'+H((f.expr||[''])[0])+'"><b>'+H((f.expr||['',''])[0])+'</b><small>'+H((f.expr||['',''])[1])+'</small></button></div>'+
    '<div class="pk-cult">🌎 '+H(f.culture||'')+'</div><div class="pk-next">'+H((f.teaser||{}).t||'')+'</div></div></div>';
-  st.querySelectorAll('.pk-cc').forEach(b=>b.onclick=()=>{sfx2('pop');say2(b.dataset.t)});
+  st.querySelectorAll('.pk-cc,.pk-vs').forEach(b=>b.onclick=()=>{sfx2('pop');say2(b.dataset.t)});PKI.paint(st);
   try{sfx2('win');if(window.confetti)confetti(70)}catch(x){}
   cta('Concluir episódio',true,true);coach('Episódio concluído!')};
 })();

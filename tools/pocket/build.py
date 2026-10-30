@@ -49,10 +49,50 @@ def vocab_cards(x):
         if not ex[0]:ex=[x['key'][0],x['key'][1]]
         out.append([w,v[1],EMO.get(w.lower(),EMO.get(key,'')),ex[0],ex[1]])
     return out
+NOTAS=[
+ (r"\bhow (are you|is [a-z ]{2,14}|are they|are we) doing\b","💡 Tradução não literal: “doing” significa “fazendo”, mas “How are you doing?” é uma expressão fixa que quer dizer “Como vai?”. Não dá para traduzir palavra por palavra."),
+ (r"\bwhat (are|is) (you|we|they|he|she)\b[^.?!]*\bdoing\b[^.?!]*\b(weekend|saturday|sunday|tonight|tomorrow|next|friday)\b","💡 Aqui “are doing” (presente contínuo) fala de planos próximos. “doing” é “fazendo”, mas em português dizemos “vai fazer”."),
+ (r"\bwhat'?s up\b|\bwhat is up\b","💡 Expressão informal: “What’s up?” é “E aí?”. Literalmente seria “o que está em cima?”, mas ninguém diz isso."),
+ (r"\bhow'?s it going\b|\bhow is it going\b","💡 Expressão fixa: “How’s it going?” é “Como vai?” / “E aí, tudo bem?”. Não é “como está indo” palavra por palavra."),
+ (r"\bnice to meet you\b","💡 Expressão fixa: “Nice to meet you” é “Prazer em conhecer você”. Literalmente seria “bom conhecer você”."),
+ (r"\byou'?re welcome\b|\byou are welcome\b","💡 Expressão fixa: “You’re welcome” é “De nada”. Literalmente seria “você é bem-vindo”."),
+ (r"\bno problem\b","💡 Expressão fixa: “No problem” é “Sem problema / De nada”."),
+ (r"\bsee you\b","💡 Expressão fixa: “See you” é “Até mais”. Literalmente seria “vejo você”."),
+ (r"\bhow much\b[^?]*\b(is|are|does|do)\b","💡 “How much” pergunta o preço ou a quantidade: “Quanto custa / Quanto é?”."),
+]
+def nota_de(text):
+    t=text.lower().replace('’',"'")
+    for rx_,msg in NOTAS:
+        if re.search(rx_,t):return msg
+    return ''
+def notas_ep(x):
+    out=[];seen=set()
+    cand=[(x['key'][0],x['key'][1])]+[(d[1],d[2]) for d in x['dlg']]
+    for en,pt in cand:
+        m=nota_de(en)
+        if m and m not in seen:seen.add(m);out.append(dict(en=en,pt=pt,txt=m))
+    return out
+def build_note(b):
+    for o in b['opts']:
+        m=nota_de(b['en'].replace('{0}',o[0]))
+        if m:return m
+    return ''
+STOP={'back','right','left','up','down','over','under','top','bottom','point','change','time','number','word','words','face','room','plan','test','class','level','work','free','open','new','old','ready','middle','front','behind','around','across','between','near','far','inside','outside','post','follow','share','miss','fix','answer','question','name','address','code','call','send','help','win','play','meet','visit','think','love','look','talk','speak','read','write'}
+def pick_icon(text,vocab,fallback):
+    ws=re.findall(r"[a-z]+(?: [a-z]+)?",text.lower().replace('’',"'"))
+    toks=re.findall(r"[a-z']+",text.lower())
+    for v in vocab:
+        e=EMO.get(v[0].lower()) or EMO.get(v[0].lower().split(' ')[0])
+        if e and re.search(r'\b'+re.escape(v[0].lower().split(' ')[0])+r'\b',text.lower()):return e
+    for i,t in enumerate(toks):
+        if i+1<len(toks) and (t+' '+toks[i+1]) in EMO:return EMO[t+' '+toks[i+1]]
+    for t in toks:
+        if t in EMO and t not in STOP:return EMO[t]
+    return fallback
 def narrate(x,name,city):
     """Leitura em forma de narração (3ª pessoa) montada a partir do diálogo: 'Dee asks: "..."'. Só presente simples (A1)."""
     L=x['dlg'];pars=[]
-    pars.append(dict(lead=['In %s, you meet %s.'%(city,name),'Em %s, você encontra %s.'%(city,name)],q=['',''],who=None))
+    pars.append(dict(lead=['In %s, you meet %s.'%(city,name),'Em %s, você encontra %s.'%(city,name)],q=['',''],who=None,ic='🏙️'))
     prevq=False;prevwho=None
     conn=[('',''),('Then,','Então,'),('',''),('Next,','Depois,'),('',''),('After that,','Em seguida,'),('',''),('Then,','Então,')]
     for i,(who,en,pt) in enumerate(L):
@@ -66,9 +106,9 @@ def narrate(x,name,city):
         sp=('você' if you else who) if cp else ('Você' if you else who)
         lead_en=((ce+' ') if ce else '')+se+' '+ve+':'
         lead_pt=((cp+' ') if cp else '')+sp+' '+vp+':'
-        pars.append(dict(lead=[lead_en,lead_pt],q=[en,pt],who=who))
+        pars.append(dict(lead=[lead_en,lead_pt],q=[en,pt],who=who,ic=pick_icon(en,x['vocab'],'❓' if isq else '💬')))
         prevq=endq;prevwho=who
-    pars.append(dict(lead=['Now you know:','Agora você sabe:'],q=[x['key'][0],x['key'][1]],who=None))
+    pars.append(dict(lead=['Now you know:','Agora você sabe:'],q=[x['key'][0],x['key'][1]],who=None,ic='💡'))
     return pars
 def episode(lv,arc_i,k,x,base,order):
     n=base+order;g=GR[arc_i%len(GR)];who=x['who']
@@ -77,12 +117,12 @@ def episode(lv,arc_i,k,x,base,order):
     fr=[
      dict(k='pkhero',g=list(g),num=order,lvl=lv.upper(),face=face,name=name,city=x['city'],sub=x['s'],mission=x['mission'],hook=list(x['key']),boss=bool(x.get('boss'))),
      dict(k='pkdlg',g=list(g),title='Diálogo',lines=[list(l) for l in x['dlg']],vocab=[list(v) for v in x['vocab']],cast={name:[face,g[0]],'You':['🙂','#e85d75']}),
-     dict(k='pkvoc',g=list(g),title='Vocabulário',cards=vocab_cards(x)),
+     dict(k='pkvoc',g=list(g),title='Vocabulário',cards=vocab_cards(x),notes=notas_ep(x)),
      dict(k='pkread',g=list(g),title='Leitura',pars=narrate(x,name,x['city']),vocab=[list(v) for v in x['vocab']]),
-     dict(k='pkbuild',g=list(g),title='Monte a frase',items=[dict(en=b['en'],pt=b['pt'],opts=[list(o) for o in b['opts']]) for b in x['build']]),
+     dict(k='pkbuild',g=list(g),title='Monte a frase',items=[dict(en=b['en'],pt=b['pt'],opts=[list(o) for o in b['opts']],note=build_note(b)) for b in x['build']]),
      dict(k='pkspeak',g=list(g),title='Fale',items=[dict(who=s['who'],line=list(s['line']),target=s['target'],pt=s['pt']) for s in x['speak']]),
      dict(k='wrap',title='Mochila do episódio',recap=[list(r) for r in x['recap']],expr=list(x['expr']),culture=x['culture'],teaser=dict(t=x['teaser'],d=''),
-          sticker=dict(name=name,face=face,role=role,city=x['city'],boss=bool(x.get('boss')))),
+          sticker=dict(name=name,face=face,role=role,city=x['city'],boss=bool(x.get('boss'))),stickers=vocab_cards(x)),
     ]
     return dict(n=n,o=n,t=x['t'],s=x['s'],sc=x['sc'],lv=lv.upper(),a=dict(k='Situação',w=x['t'],y='',d=x['culture']),
       h=dict(l=x['dlg'][0][1],src='Pocket',tr=x['dlg'][0][2]),p=x['mission'],g=dict(t=x['key'][0]),v2=True,

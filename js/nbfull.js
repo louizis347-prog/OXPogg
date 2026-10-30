@@ -5,8 +5,9 @@
   function tick(){
     const pl=document.getElementById('player');if(!pl)return;
     let on=false,e=null;
-    try{if(typeof P!=='undefined'&&P&&(P.cid==='nb-a1'||/^pk-/.test(String(P.cid)))&&P.e){e=P.e;on=/^pk-/.test(String(P.cid))||(P.idx!=null?P.idx:(P.ix!=null?P.ix:0))<N||(e.n>=90001&&e.n<90001+N)}}catch(x){}
+    try{if(typeof P!=='undefined'&&P&&(P.cid==='nb-a1'||/^pk-/.test(String(P.cid)))&&P.e){e=P.e;on=(/^pk-/.test(String(P.cid))&&P.steps&&P.steps[P.i]!=='done')||(P.idx!=null?P.idx:(P.ix!=null?P.ix:0))<N||(e.n>=90001&&e.n<90001+N)}}catch(x){}
     pl.classList.toggle('nb-full',on);
+    try{pl.classList.toggle('pk-res',/^pk-/.test(String(P.cid))&&!!P.steps&&P.steps[P.i]==='done')}catch(x){}
     if(!on)return;
     const pos=document.querySelector('#pstage .nb-poster');
     if(pos&&!pos.dataset.nbf){pos.dataset.nbf='1';
