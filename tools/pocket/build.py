@@ -155,6 +155,8 @@ def main():
         for bi in range(0,len(eps),50):
             nm='pk-%s_%02d.json'%(lv,bi//50+1);names.append(nm)
             json.dump(eps[bi:bi+50],open(os.path.join(D,nm),'w'),ensure_ascii=False,separators=(',',':'))
+        for old in glob.glob(os.path.join(D,'pk-%s_*.json'%lv)):
+            if os.path.basename(old) not in names:os.remove(old)
         out['pk-'+lv]=(names,len(eps))
     man=json.load(open(os.path.join(D,'manifest.json')));cnt=json.load(open(os.path.join(D,'counts.json')))
     for lv in BASE:man.setdefault('pk-'+lv,[]);cnt.setdefault('pk-'+lv,0)
