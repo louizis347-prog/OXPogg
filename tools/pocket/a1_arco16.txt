@@ -32,7 +32,7 @@ D: Mia|She is kind and funny.|Ela é gentil e engraçada.
 D: You|Is she shy?|Ela é tímida?
 D: Mia|A little, but very friendly.|Um pouco, mas muito simpática.
 D: You|She sounds great.|Ela parece ótima.
-D: Mia|You will love her. She is very smart too.|Você vai adorá-la. Ela também é muito inteligente.
+D: Mia|You love her. She is very smart too.|Você vai adorá-la. Ela também é muito inteligente.
 D: You|I cannot wait to meet her!|Mal posso esperar para conhecê-la!
 V: kind|gentil;funny|engraçado;shy|tímido;friendly|simpático;smart|inteligente
 B: She is {0}.|Ela é {0}.|kind=gentil;funny=engraçada;shy=tímida
@@ -55,14 +55,14 @@ D: You|I am so happy! I got a new job.|Estou tão feliz! Consegui um emprego nov
 D: Jess|Congratulations! I am proud of you.|Parabéns! Tenho orgulho de você.
 D: You|Thanks. And you? You look worried.|Obrigado. E você? Você parece preocupada.
 D: Jess|A little. I have an exam tomorrow.|Um pouco. Tenho uma prova amanhã.
-D: You|You will do great. Do not be nervous.|Você vai se sair bem. Não fique nervosa.
+D: You|You are great. Do not be nervous.|Você é ótima. Não fique nervosa.
 D: Jess|Thanks. I feel better already.|Obrigada. Já me sinto melhor.
 D: You|Good luck!|Boa sorte!
 V: happy|feliz;worried|preocupado;proud|orgulhoso;nervous|nervoso;better|melhor
 B: I am so {0}.|Estou tão {0}.|happy=feliz;tired=cansado;excited=animado
 B: You look {0}.|Você parece {0}.|worried=preocupado;sad=triste;great=ótimo
 S: Jess|How are you feeling today?|Como você está se sentindo hoje?|I am so happy! I got a new job.|Estou tão feliz! Consegui um emprego novo.
-S: Jess|I have an exam tomorrow.|Tenho uma prova amanhã.|You will do great. Good luck!|Você vai se sair bem. Boa sorte!
+S: Jess|I have an exam tomorrow.|Tenho uma prova amanhã.|You are great. Good luck!|Você é ótima. Boa sorte!
 R: How are you feeling?|Como você está se sentindo?
 R: I am so happy!|Estou tão feliz!
 R: You look worried.|Você parece preocupada.
@@ -119,38 +119,14 @@ X: Everyone says that.|Todo mundo diz isso.
 C: "Grandma" e "grandpa" são os nomes carinhosos de avó e avô nos EUA.
 N: Próximo: um elogio.
 
-T: You look great! | Elogiar e agradecer | party | New York | Mia,f,👩🏻,amiga
-K: You look great! | Você está ótima!
-M: Hoje você elogia e recebe um elogio com naturalidade.
-D: You|Wow, you look great tonight!|Uau, você está ótima hoje!
-D: Mia|Thank you! I love your shirt.|Obrigada! Adorei a sua camisa.
-D: You|Thanks. I got it yesterday.|Valeu. Comprei ontem.
-D: Mia|It looks good on you.|Fica bem em você.
-D: You|And your dress is beautiful.|E o seu vestido é lindo.
-D: Mia|Thank you. It was a gift.|Obrigada. Foi um presente.
-D: You|Whoever gave it has great taste.|Quem deu tem ótimo gosto.
-D: Mia|I will tell her you said that!|Vou dizer a ela que você falou isso!
-V: look great|estar ótimo;shirt|camisa;dress|vestido;taste|gosto;gift|presente
-B: You look {0}!|Você está {0}!|great=ótimo;beautiful=lindo;nice=bem
-B: I love your {0}.|Adorei {0}.|shirt=a sua camisa;dress=o seu vestido;hair=o seu cabelo
-S: Mia|Thank you! I love your shirt.|Obrigada! Adorei a sua camisa.|Thanks. You look great tonight!|Valeu. Você está ótima hoje!
-S: Mia|It looks good on you.|Fica bem em você.|Your dress is beautiful.|O seu vestido é lindo.
-R: You look great!|Você está ótima!
-R: I love your shirt.|Adorei a sua camisa.
-R: It looks good on you.|Fica bem em você.
-R: Thank you!|Obrigado!
-X: It looks good on you.|Fica bem em você.
-C: Nos EUA, elogios sobre roupa ou acessórios são comuns, e a resposta educada é sempre "Thank you!".
-N: Próximo: pedir desculpas.
-
 T: I am so sorry | Pedir desculpas e aceitar | street | Chicago | Max,m,🧑🏼,pedestre
 K: I am so sorry! | Sinto muito!
 M: Hoje você pede desculpas e responde a um pedido de desculpas.
 D: You|Oh, I am so sorry! I bumped into you.|Ah, sinto muito! Esbarrei em você.
 D: Max|It is okay. Are you alright?|Tudo bem. Você está bem?
-D: You|Yes, I am fine. I was not looking.|Sim, estou bem. Eu não estava olhando.
+D: You|Yes, I am fine. I am not looking.|Sim, estou bem. Eu não estava olhando.
 D: Max|No worries. It happens.|Sem problema. Acontece.
-D: You|Did I spill your coffee?|Derramei o seu café?
+D: You|Is it your coffee?|É o seu café?
 D: Max|Just a little. It is no big deal.|Só um pouco. Não é nada demais.
 D: You|Let me buy you another one.|Deixe-me pagar outro para você.
 D: Max|That is not necessary, but thank you.|Não é necessário, mas obrigado.
@@ -172,7 +148,7 @@ K: Thanks a lot for your help. | Muito obrigado pela sua ajuda.
 M: Hoje você agradece com calor e retribui o gesto.
 D: Ruth|Do you need help with those bags?|Precisa de ajuda com essas sacolas?
 D: You|Yes, please. They are heavy.|Sim, por favor. Estão pesadas.
-D: Ruth|I will carry this one.|Eu levo esta.
+D: Ruth|I carry this one.|Eu levo esta.
 D: You|Thanks a lot for your help.|Muito obrigado pela sua ajuda.
 D: Ruth|You are welcome. Anytime.|De nada. Quando precisar.
 D: You|I owe you one.|Fico te devendo uma.
@@ -194,24 +170,24 @@ N: Próximo: dizer que sente saudade.
 T: I miss you | Dizer que sente saudade | living | Denver | Mia,f,👩🏻,amiga
 K: I miss you a lot. | Sinto muito a sua falta.
 M: Hoje você fala com um amigo distante.
-D: Mia|Hi! It has been a long time.|Oi! Faz muito tempo.
+D: Mia|Hi! Nice to see you!|Oi! Que bom ver você!
 D: You|I know. I miss you a lot.|Eu sei. Sinto muito a sua falta.
 D: Mia|I miss you too. How is your family?|Eu também. Como está a sua família?
 D: You|They are fine. They send their love.|Estão bem. Mandam um abraço.
 D: Mia|Please say hi for me.|Mande um oi por mim.
-D: You|I will. When can you visit?|Mando. Quando você pode visitar?
+D: You|Okay. When can you visit?|Certo. Quando você pode visitar?
 D: Mia|Maybe in the summer.|Talvez no verão.
 D: You|That would be wonderful!|Isso seria maravilhoso!
 V: miss|sentir falta;long time|muito tempo;family|família;visit|visitar;love|carinho / amor
 B: I miss {0}.|Sinto falta {0}.|you=de você;my family=da minha família;home=de casa
 B: Please say hi to {0}.|Mande um oi para {0}.|your mom=a sua mãe;everyone=todo mundo;your brother=o seu irmão
-S: Mia|It has been a long time.|Faz muito tempo.|I know. I miss you a lot.|Eu sei. Sinto muito a sua falta.
+S: Mia|Nice to see you!|Que bom ver você!|I know. I miss you a lot.|Eu sei. Sinto muito a sua falta.
 S: Mia|When can you visit?|Quando você pode visitar?|Maybe in the summer.|Talvez no verão.
 R: I miss you.|Sinto a sua falta.
-R: It has been a long time.|Faz muito tempo.
+R: Nice to see you!|Que bom ver você!
 R: Say hi for me.|Mande um oi por mim.
 R: That would be wonderful!|Isso seria maravilhoso!
-X: It has been a long time.|Faz muito tempo.
+X: Nice to see you!|Que bom ver você!
 C: Nos EUA, "Let us catch up!" é o convite padrão para pôr a conversa em dia com quem não se vê há tempo.
 N: Próximo: o desafio do arco.
 
@@ -222,7 +198,7 @@ D: You|Mia, these are my friends, Kai and Jess.|Mia, estes são os meus amigos, 
 D: Mia|Nice to meet you both! You look great, Jess.|Prazer em conhecer vocês! Você está ótima, Jess.
 D: You|Kai is tall and funny. Jess is kind and smart.|O Kai é alto e engraçado. A Jess é gentil e inteligente.
 D: Mia|You describe them well.|Você os descreve bem.
-D: You|I am so happy you came tonight.|Estou tão feliz que você veio hoje.
+D: You|I am so happy you are here tonight.|Estou tão feliz que você está aqui hoje.
 D: Mia|Me too. I missed everyone.|Eu também. Senti falta de todos.
 D: You|Let us have a photo together!|Vamos tirar uma foto juntos!
 D: Mia|Great idea!|Ótima ideia!
@@ -230,10 +206,10 @@ V: describe|descrever;both|ambos;tonight|hoje à noite;photo|foto;together|junto
 B: These are my {0}.|Estes são os meus {0}.|friends=amigos;parents=pais;cousins=primos
 B: He is {0} and {1}.|Ele é {0} e {1}.|tall=alto;funny=engraçado;kind=gentil
 S: Mia|Nice to meet you both!|Prazer em conhecer vocês!|These are my friends, Kai and Jess.|Estes são os meus amigos, Kai e Jess.
-S: Mia|You describe them well.|Você os descreve bem.|I am so happy you came tonight.|Estou tão feliz que você veio hoje.
+S: Mia|You describe them well.|Você os descreve bem.|I am so happy you are here tonight.|Estou tão feliz que você está aqui hoje.
 R: These are my friends.|Estes são os meus amigos.
 R: He is tall and funny.|Ele é alto e engraçado.
-R: I am so happy you came.|Estou tão feliz que você veio.
+R: I am so happy you are here.|Estou tão feliz que você está aqui.
 R: Let us have a photo!|Vamos tirar uma foto!
 X: Great idea!|Ótima ideia!
 C: Parabéns! Você terminou o arco 16 e ganhou a figurinha rara da Mia.

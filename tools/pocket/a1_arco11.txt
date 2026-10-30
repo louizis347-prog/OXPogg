@@ -80,17 +80,17 @@ D: You|Is there a milder option?|Há uma opção mais suave?
 D: Ana|Yes, the chicken is not spicy.|Sim, o frango não é picante.
 D: You|What does it come with?|Vem com o quê?
 D: Ana|Rice and a small salad.|Arroz e uma saladinha.
-D: You|Perfect. I will have the chicken.|Perfeito. Vou querer o frango.
+D: You|Perfect. I would like the chicken.|Perfeito. Eu gostaria do frango.
 D: Ana|Good choice!|Boa escolha!
 V: spicy|picante;chili|pimenta;mild|suave;dish|prato;choice|escolha
 B: Is this {0}?|Isto é {0}?|spicy=picante;sweet=doce;salty=salgado
 B: It comes with {0}.|Vem com {0}.|rice=arroz;fries=batata frita;a salad=uma salada
 S: Ana|It has chili peppers.|Tem pimenta.|Is there a milder option?|Há uma opção mais suave?
-S: Ana|The chicken is not spicy.|O frango não é picante.|I will have the chicken.|Vou querer o frango.
+S: Ana|The chicken is not spicy.|O frango não é picante.|I would like the chicken.|Eu gostaria do frango.
 R: Is it spicy?|É picante?
 R: Is there a milder option?|Há uma opção mais suave?
 R: What does it come with?|Vem com o quê?
-R: I will have the chicken.|Vou querer o frango.
+R: I would like the chicken.|Eu gostaria do frango.
 X: Good choice!|Boa escolha!
 C: No Texas, a culinária Tex-Mex usa muita pimenta, e os restaurantes avisam quando algo é "hot".
 N: Próximo: dizer que tem alergia.
@@ -104,17 +104,17 @@ D: You|All nuts, and peanuts too.|Todas, e amendoim também.
 D: Ana|Let me check with the kitchen.|Vou conferir com a cozinha.
 D: You|Does the salad have any nuts?|A salada tem nozes?
 D: Ana|No, but the dressing has peanut oil.|Não, mas o molho tem óleo de amendoim.
-D: You|Then I will skip the dressing.|Então vou dispensar o molho.
-D: Ana|I will tell the chef.|Vou avisar o chef.
+D: You|Then no dressing, please.|Então sem molho, por favor.
+D: Ana|Let me tell the chef.|Deixe-me avisar o chef.
 V: allergic|alérgico;nuts|nozes;peanuts|amendoim;dressing|molho de salada;skip|dispensar
 B: I am allergic to {0}.|Sou alérgico a {0}.|nuts=nozes;milk=leite;shellfish=frutos do mar
 B: Does it have any {0}?|Tem {0}?|nuts=nozes;eggs=ovos;gluten=glúten
 S: Ana|Which nuts?|Quais nozes?|All nuts, and peanuts too.|Todas, e amendoim também.
-S: Ana|The dressing has peanut oil.|O molho tem óleo de amendoim.|Then I will skip the dressing.|Então vou dispensar o molho.
+S: Ana|The dressing has peanut oil.|O molho tem óleo de amendoim.|Then no dressing, please.|Então sem molho, por favor.
 R: I am allergic to nuts.|Sou alérgico a nozes.
 R: Does it have any nuts?|Tem nozes?
 R: Let me check with the kitchen.|Vou conferir com a cozinha.
-R: I will skip the dressing.|Vou dispensar o molho.
+R: No dressing, please.|Sem molho, por favor.
 X: Thank you for telling me.|Obrigada por avisar.
 C: Nos EUA, restaurantes levam alergias a sério: avise sempre antes de pedir.
 N: Próximo: dizer que é vegetariano.
@@ -125,7 +125,7 @@ M: Hoje você explica sua dieta e escolhe um prato.
 D: You|Hi. I am vegetarian. What do you recommend?|Oi. Eu sou vegetariano. O que você recomenda?
 D: Ana|The veggie burger is very popular.|O hambúrguer vegetariano é muito popular.
 D: You|Does it have meat or fish?|Tem carne ou peixe?
-D: Ana|No, it is made with beans and vegetables.|Não, é feito com feijão e legumes.
+D: Ana|No, it has beans and vegetables.|Não, tem feijão e legumes.
 D: You|Great. With fries, please.|Ótimo. Com batata frita, por favor.
 D: Ana|Anything to drink?|Algo para beber?
 D: You|A lemonade, please.|Uma limonada, por favor.
@@ -134,7 +134,7 @@ V: vegetarian|vegetariano;meat|carne;fish|peixe;vegetables|legumes;lemonade|limo
 B: I am {0}.|Eu sou {0}.|vegetarian=vegetariano;vegan=vegano;on a diet=de dieta
 B: Does it have {0}?|Tem {0}?|meat=carne;fish=peixe;cheese=queijo
 S: Ana|What would you like?|O que você gostaria?|I am vegetarian. What do you recommend?|Eu sou vegetariano. O que você recomenda?
-S: Ana|It is made with beans.|É feito com feijão.|With fries, please.|Com batata frita, por favor.
+S: Ana|It has beans.|Tem feijão.|With fries, please.|Com batata frita, por favor.
 R: I am vegetarian.|Eu sou vegetariano.
 R: Does it have meat or fish?|Tem carne ou peixe?
 R: With fries, please.|Com batata frita, por favor.
@@ -151,7 +151,7 @@ D: Dan|Sure. More coffee?|Claro. Mais café?
 D: You|Yes, please. And can I get some more cream?|Sim, por favor. E posso pegar mais creme?
 D: Dan|Of course. Anything else?|Claro. Mais alguma coisa?
 D: You|Actually, I ordered a tea, not a coffee.|Na verdade, pedi um chá, não um café.
-D: Dan|Oh, I am so sorry! I will fix it.|Ah, sinto muito! Vou corrigir.
+D: Dan|Oh, I am so sorry! Let me fix it.|Ah, sinto muito! Deixe-me corrigir.
 D: You|No worries. Thank you!|Sem problema. Obrigado!
 D: Dan|Right away!|Agora mesmo!
 V: refill|recarga;cream|creme;ordered|pedi;fix|corrigir;actually|na verdade
@@ -175,45 +175,21 @@ D: You|Yes, thank you. Can we see the dessert menu?|Sim, obrigado. Podemos ver o
 D: Ana|Of course. The cheesecake is amazing.|Claro. O cheesecake é incrível.
 D: You|Is it big?|É grande?
 D: Ana|Yes, it is good for two people.|Sim, serve para duas pessoas.
-D: You|Then we will share one.|Então vamos dividir um.
+D: You|Then let us share one.|Então vamos dividir um.
 D: Ana|Great. Coffee with it?|Ótimo. Café para acompanhar?
 D: You|Two coffees, please.|Dois cafés, por favor.
 V: dessert|sobremesa;cheesecake|cheesecake;plates|pratos;share|dividir;amazing|incrível
 B: Can we see the {0}?|Podemos ver {0}?|dessert menu=o cardápio de sobremesas;wine list=a carta de vinhos;check=a conta
-B: We will share {0}.|Vamos dividir {0}.|one=um;a dessert=uma sobremesa;the cake=o bolo
+B: Let us share {0}.|Vamos dividir {0}.|one=um;a dessert=uma sobremesa;the cake=o bolo
 S: Ana|Can I take your plates?|Posso retirar os pratos?|Yes, thank you. Can we see the dessert menu?|Sim, obrigado. Podemos ver o cardápio de sobremesas?
-S: Ana|It is good for two people.|Serve para duas pessoas.|Then we will share one.|Então vamos dividir um.
+S: Ana|It is good for two people.|Serve para duas pessoas.|Then let us share one.|Então vamos dividir um.
 R: Can we see the dessert menu?|Podemos ver o cardápio de sobremesas?
 R: Is it big?|É grande?
-R: We will share one.|Vamos dividir um.
+R: Let us share one.|Vamos dividir um.
 R: Two coffees, please.|Dois cafés, por favor.
 X: It is amazing.|É incrível.
 C: Em restaurantes americanos, as porções de sobremesa são grandes, e dividir é normal.
 N: Próximo: levar as sobras.
-
-T: Can I get a box? | Pedir embalagem para levar as sobras | cafe | Chicago | Ana,f,👩🏼,garçonete
-K: Can I get a box for this? | Posso pegar uma caixa para isto?
-M: Hoje você pede para levar o que sobrou.
-D: Ana|Was everything okay?|Estava tudo bem?
-D: You|Yes, it was delicious. But it was too much.|Sim, estava delicioso. Mas era demais.
-D: Ana|I can wrap it up for you.|Posso embalar para você.
-D: You|Can I get a box for this, please?|Posso pegar uma caixa para isto, por favor?
-D: Ana|Sure. Anything else?|Claro. Mais alguma coisa?
-D: You|Just the check, please.|Só a conta, por favor.
-D: Ana|Coming up. Here is your box.|Já trago. Aqui está a sua caixa.
-D: You|Thank you so much!|Muito obrigado!
-V: delicious|delicioso;wrap|embalar;box|caixa;too much|demais;leftovers|sobras
-B: Can I get a {0}?|Posso pegar {0}?|box=uma caixa;bag=uma sacola;to-go cup=um copo para viagem
-B: It was {0}.|Estava {0}.|delicious=delicioso;too much=demais;great=ótimo
-S: Ana|Was everything okay?|Estava tudo bem?|Yes, it was delicious. But it was too much.|Sim, estava delicioso. Mas era demais.
-S: Ana|I can wrap it up for you.|Posso embalar para você.|Can I get a box, please?|Posso pegar uma caixa, por favor?
-R: Can I get a box for this?|Posso pegar uma caixa para isto?
-R: It was delicious.|Estava delicioso.
-R: Just the check, please.|Só a conta, por favor.
-R: Thank you so much!|Muito obrigado!
-X: Wrap it up.|Embale.
-C: Nos EUA é muito comum levar as sobras ("leftovers") para casa numa caixa, o famoso "doggy bag".
-N: Próximo: o desafio do arco.
 
 T: Dinner for friends | Desafio do arco: um jantar para amigos | kitchen | New Orleans | Rosa,f,👩🏽,cozinheira
 K: Dinner is ready! | O jantar está pronto!

@@ -78,20 +78,20 @@ D: Kai|Here is my number. Can you text me later?|Aqui está o meu número. Pode 
 D: You|Sure. What is it?|Claro. Qual é?
 D: Kai|Five five five, one two three four.|Cinco cinco cinco, um dois três quatro.
 D: You|Got it. Can you text me the address?|Anotei. Você pode me mandar o endereço?
-D: Kai|Yes, I will send it now.|Sim, mando agora.
+D: Kai|Yes, I send it now.|Sim, mando agora.
 D: You|I got it! Thanks!|Recebi! Valeu!
 D: Kai|If you get lost, call me.|Se você se perder, me ligue.
-D: You|Will do!|Pode deixar!
+D: You|Okay!|Certo!
 V: text|mensagem de texto;number|número;address|endereço;lost|perdido;send|enviar
 B: Can you text me {0}?|Você pode me mandar {0}?|the address=o endereço;a photo=uma foto;your number=o seu número
 B: My number is five five five, {0}.|Meu número é cinco cinco cinco, {0}.|one two three four=um dois três quatro;nine eight seven six=nove oito sete seis;two two two two=dois dois dois dois
 S: Kai|Can you text me later?|Pode me mandar mensagem depois?|Sure. What is your number?|Claro. Qual é o seu número?
-S: Kai|I will send it now.|Mando agora.|I got it! Thanks!|Recebi! Valeu!
+S: Kai|I send it now.|Mando agora.|I have it! Thanks!|Recebi! Valeu!
 R: Can you text me?|Você pode me mandar mensagem?
 R: What is your number?|Qual é o seu número?
 R: I got it!|Recebi!
-R: Will do!|Pode deixar!
-X: Will do!|Pode deixar!
+R:Okay!|Certo!
+X:Okay!|Certo!
 C: Nos EUA, "text" é mandar SMS, e o número de telefone tem dez dígitos, como 555-123-4567.
 N: Próximo: uma videochamada.
 
@@ -149,7 +149,7 @@ M: Hoje você encontra o motorista e confirma o destino.
 D: Lou|Hi. Are you Alex?|Oi. Você é o Alex?
 D: You|Yes. Is this my ride?|Sim. Esta é a minha corrida?
 D: Lou|Yes. To the airport, right?|Sim. Para o aeroporto, certo?
-D: You|Right. How long will it take?|Isso. Quanto tempo vai levar?
+D: You|Right. How long is the wait?|Isso. Quanto é a espera?
 D: Lou|About twenty minutes with no traffic.|Cerca de vinte minutos sem trânsito.
 D: You|Can you turn on the air conditioning?|Você pode ligar o ar-condicionado?
 D: Lou|Of course. Is this okay?|Claro. Assim está bom?
@@ -158,10 +158,10 @@ V: ride|corrida / carona;traffic|trânsito;air conditioning|ar-condicionado;airp
 B: Is this my {0}?|Esta é a minha {0}?|ride=corrida;car=carro;driver=motorista
 B: Can you turn on the {0}?|Você pode ligar {0}?|air conditioning=o ar-condicionado;radio=o rádio;heat=o aquecimento
 S: Lou|Are you Alex?|Você é o Alex?|Yes. Is this my ride?|Sim. Esta é a minha corrida?
-S: Lou|To the airport, right?|Para o aeroporto, certo?|Right. How long will it take?|Isso. Quanto tempo vai levar?
+S: Lou|To the airport, right?|Para o aeroporto, certo?|Right. How long is the wait?|Isso. Quanto é a espera?
 R: Is this my ride?|Esta é a minha corrida?
 R: To the airport.|Para o aeroporto.
-R: How long will it take?|Quanto tempo vai levar?
+R:How long is the wait?|Quanto é a espera?
 R: Can you turn on the air conditioning?|Você pode ligar o ar-condicionado?
 X: With no traffic.|Sem trânsito.
 C: Em aplicativos de carona, o motorista costuma confirmar seu nome antes de você entrar.
@@ -172,7 +172,7 @@ K: My order has not arrived. | A minha encomenda não chegou.
 M: Hoje você reclama de uma entrega e pede uma solução.
 D: Sue|Customer service. How can I help?|Atendimento ao cliente. Como posso ajudar?
 D: You|My order has not arrived.|A minha encomenda não chegou.
-D: Sue|When did you order it?|Quando você pediu?
+D: Sue|What time is the order?|Que horas é o pedido?
 D: You|Ten days ago.|Há dez dias.
 D: Sue|Let me check. What is the order number?|Vou verificar. Qual é o número do pedido?
 D: You|It is seven seven four two.|É sete sete quatro dois.
@@ -198,7 +198,7 @@ D: Priya|Can you help me write an email?|Você pode me ajudar a escrever um e-ma
 D: You|Sure. Start with "Dear Mr. Lee".|Claro. Comece com "Prezado Sr. Lee".
 D: Priya|Then what?|E depois?
 D: You|Write: "I am writing to ask about the meeting."|Escreva: "Estou escrevendo para perguntar sobre a reunião."
-D: Priya|Should I ask for a time?|Devo pedir um horário?
+D: Priya|Can I ask for a time?|Posso pedir um horário?
 D: You|Yes: "Could we meet on Monday?"|Sim: "Poderíamos nos reunir na segunda?"
 D: Priya|And the ending?|E o final?
 D: You|"Best regards, Priya."|"Atenciosamente, Priya."
@@ -224,13 +224,13 @@ D: You|Yes, please. My battery is almost dead.|Sim, por favor. Minha bateria est
 D: Dan|There is one by the window.|Tem uma perto da janela.
 D: You|Thanks. I also need to send an email.|Obrigado. Também preciso mandar um e-mail.
 D: Dan|No problem. Another coffee?|Sem problema. Outro café?
-D: You|Yes, and later I will order a ride to the airport.|Sim, e depois vou pedir uma corrida para o aeroporto.
+D: You|Yes, and I need a ride to the airport.|Sim, e preciso de uma corrida até o aeroporto.
 D: Dan|Perfect. Good luck with your trip!|Perfeito. Boa sorte na viagem!
 V: connect|conectar;outlet|tomada;later|mais tarde;trip|viagem;another|outro
 B: I need {0}.|Preciso de {0}.|Wi-Fi=Wi-Fi;an outlet=uma tomada;a charger=um carregador
-B: Later I will {0}.|Mais tarde vou {0}.|order a ride=pedir uma corrida;send an email=mandar um e-mail;call my friend=ligar para o meu amigo
+B: Later I {0}.|Mais tarde eu {0}.|order a ride=pedir uma corrida;send an email=mandar um e-mail;call my friend=ligar para o meu amigo
 S: Dan|Need an outlet too?|Precisa de tomada também?|Yes, please. My battery is almost dead.|Sim, por favor. Minha bateria está quase no fim.
-S: Dan|Another coffee?|Outro café?|Yes, and later I will order a ride.|Sim, e depois vou pedir uma corrida.
+S: Dan|Another coffee?|Outro café?|Yes, and I need a ride.|Sim, e preciso de uma corrida.
 R: What is the Wi-Fi password?|Qual é a senha do Wi-Fi?
 R: My battery is almost dead.|Minha bateria está quase no fim.
 R: I need to send an email.|Preciso mandar um e-mail.

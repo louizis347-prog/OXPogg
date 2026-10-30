@@ -27,17 +27,17 @@ T: Call an ambulance! | Chamar a emergência | street | Chicago | Ruth,f,👩�
 K: Call an ambulance! | Chame uma ambulância!
 M: Hoje você aprende a pedir socorro com calma.
 D: Ruth|Help! He fell down!|Socorro! Ele caiu!
-D: You|Stay calm. I will call an ambulance.|Calma. Vou chamar uma ambulância.
+D: You|Stay calm. Let me call an ambulance.|Calma. Deixe-me chamar uma ambulância.
 D: Ruth|Please hurry!|Por favor, rápido!
 D: You|Hello? We need an ambulance on Main Street.|Alô? Precisamos de uma ambulância na Main Street.
 D: Ruth|He is breathing, but his arm hurts.|Ele está respirando, mas o braço dói.
 D: You|They said five minutes. Do not move him.|Disseram cinco minutos. Não o mova.
 D: Ruth|I am staying with him.|Vou ficar com ele.
-D: You|Good. I will wave at the ambulance.|Bom. Vou acenar para a ambulância.
+D: You|Good. Let me wave at the ambulance.|Bom. Deixe-me acenar para a ambulância.
 V: ambulance|ambulância;fell down|caiu;calm|calma;hurry|rápido;breathing|respirando
 B: Call an {0}!|Chame uma {0}!|ambulance=ambulância;doctor=médico;neighbor=vizinho
 B: His arm {0}.|O braço dele {0}.|hurts=dói;is broken=está quebrado;is cold=está frio
-S: Ruth|Help! He fell down!|Socorro! Ele caiu!|Stay calm. I will call an ambulance.|Calma. Vou chamar uma ambulância.
+S: Ruth|Help! He fell down!|Socorro! Ele caiu!|Stay calm. Let me call an ambulance.|Calma. Deixe-me chamar uma ambulância.
 S: Ruth|He is breathing, but his arm hurts.|Ele está respirando, mas o braço dói.|Do not move him.|Não o mova.
 R: Call an ambulance!|Chame uma ambulância!
 R: Stay calm.|Fique calmo.
@@ -46,30 +46,6 @@ R: Do not move him.|Não o mova.
 X: Please hurry!|Por favor, rápido!
 C: Nos EUA, o número de emergência é 911. No Reino Unido é 999.
 N: Próximo: dizer o que perdeu.
-
-T: I lost my wallet | Relatar uma perda | station | New York | Sam,m,🧑🏻,funcionário
-K: I lost my wallet. | Eu perdi a minha carteira.
-M: Hoje você relata um objeto perdido.
-D: You|Excuse me, I lost my wallet.|Com licença, perdi a minha carteira.
-D: Sam|Where did you lose it?|Onde você a perdeu?
-D: You|I think on the train.|Acho que no trem.
-D: Sam|What does it look like?|Como ela é?
-D: You|It is small and brown, with a blue card.|É pequena e marrom, com um cartão azul.
-D: Sam|Let me check. Can you wait here?|Deixe-me ver. Pode esperar aqui?
-D: You|Of course. Thank you.|Claro. Obrigado.
-D: Sam|Good news! We found it.|Boa notícia! Nós a achamos.
-V: wallet|carteira;lose|perder;train|trem;card|cartão;found|achamos
-B: I lost my {0}.|Eu perdi {0}.|wallet=a carteira;phone=o celular;bag=a bolsa
-B: It is {0} and brown.|É {0} e marrom.|small=pequena;old=velha;new=nova
-S: Sam|Where did you lose it?|Onde você a perdeu?|I think on the train.|Acho que no trem.
-S: Sam|What does it look like?|Como ela é?|It is small and brown.|É pequena e marrom.
-R: I lost my wallet.|Perdi a minha carteira.
-R: Where did you lose it?|Onde você a perdeu?
-R: It is small and brown.|É pequena e marrom.
-R: We found it.|Nós a achamos.
-X: Good news!|Boa notícia!
-C: Estações têm um "lost and found" (achados e perdidos).
-N: Próximo: ir ao médico.
 
 T: I do not feel well | Dizer que está mal | clinic | Seattle | Dr. Lee,m,🧑🏻,médico
 K: I do not feel well. | Eu não estou me sentindo bem.
@@ -123,20 +99,20 @@ T: My phone is gone | Perder o celular | cafe | Denver | Kai,m,🧑🏻,barista
 K: My phone is gone. | Meu celular sumiu.
 M: Hoje você procura algo que sumiu.
 D: You|Excuse me, my phone is gone.|Com licença, meu celular sumiu.
-D: Kai|Oh no. When did you see it last?|Poxa. Quando você o viu pela última vez?
+D: Kai|Oh no. Is it on the table?|Poxa. Está na mesa?
 D: You|At that table, about ten minutes ago.|Naquela mesa, há uns dez minutos.
 D: Kai|Let me look. Is it black?|Deixe-me olhar. É preto?
 D: You|Yes, with a green case.|Sim, com capa verde.
-D: Kai|I found one under the chair!|Achei um embaixo da cadeira!
+D: Kai|I see one under the chair!|Vejo um embaixo da cadeira!
 D: You|That is mine! Thank you so much!|É o meu! Muito obrigado!
 D: Kai|No problem. Be careful next time.|Sem problema. Cuidado da próxima vez.
 V: gone|sumiu;table|mesa;black|preto;case|capa;chair|cadeira
 B: My phone is {0}.|Meu celular {0}.|gone=sumiu;dead=descarregou;broken=quebrou
 B: It is under the {0}.|Está embaixo da {0}.|chair=cadeira;table=mesa;bed=cama
-S: Kai|When did you see it last?|Quando você o viu pela última vez?|At that table, about ten minutes ago.|Naquela mesa, há uns dez minutos.
-S: Kai|I found one under the chair!|Achei um embaixo da cadeira!|That is mine! Thank you so much!|É o meu! Muito obrigado!
+S: Kai|Where is your phone?|Onde está o seu celular?|At that table, I think.|Naquela mesa, acho.
+S: Kai|I see one under the chair!|Vejo um embaixo da cadeira!|That is mine! Thank you so much!|É o meu! Muito obrigado!
 R: My phone is gone.|Meu celular sumiu.
-R: I saw it ten minutes ago.|Eu o vi há dez minutos.
+R: It is on that table.|Está naquela mesa.
 R: It is black with a green case.|É preto com capa verde.
 R: That is mine!|É o meu!
 X: That is mine!|É o meu!
@@ -153,7 +129,7 @@ D: You|Could you speak more slowly?|Você pode falar mais devagar?
 D: Ana|Of course. Gate. Twelve. Second floor.|Claro. Portão. Doze. Segundo andar.
 D: You|Thank you. I understand now.|Obrigado. Agora entendi.
 D: Ana|Boarding starts in twenty minutes.|O embarque começa em vinte minutos.
-D: You|Great. I will go there now.|Ótimo. Vou para lá agora.
+D: You|Great. I go there now.|Ótimo. Vou para lá agora.
 V: repeat|repetir;gate|portão;slowly|devagar;floor|andar;understand|entender
 B: Could you {0} that?|Você pode {0} isso?|repeat=repetir;spell=soletrar;explain=explicar
 B: Could you speak more {0}?|Você pode falar mais {0}?|slowly=devagar;loudly=alto;clearly=claramente
@@ -201,7 +177,7 @@ D: Mia|Yes, go ahead.|Sim, fique à vontade.
 D: You|May I ask you a question about the report?|Posso fazer uma pergunta sobre o relatório?
 D: Mia|Sure. What do you need?|Claro. Do que você precisa?
 D: You|Could you check page three?|Você poderia ver a página três?
-D: Mia|Let me see. Yes, I will fix it.|Deixe-me ver. Sim, eu corrijo.
+D: Mia|Let me see. Yes, I fix it.|Deixe-me ver. Sim, eu corrijo.
 V: knock|bater / toc;window|janela;report|relatório;page|página;check|conferir
 B: May I {0}?|Posso {0}?|come in=entrar;sit here=sentar aqui;ask=perguntar
 B: Go {0}.|Fique à vontade, {0}.|ahead=vá em frente;home=para casa;on=continue
@@ -219,20 +195,20 @@ T: A problem on the trip | Desafio do arco: resolver um imprevisto | airport | N
 K: I have a problem with my flight. | Tenho um problema com o meu voo.
 M: Hoje você resolve um imprevisto de viagem.
 D: You|Excuse me, I have a problem with my flight.|Com licença, tenho um problema com o meu voo.
-D: Ana|I am sorry. What happened?|Sinto muito. O que aconteceu?
-D: You|I lost my ticket and my phone is dead.|Perdi a passagem e o celular descarregou.
+D: Ana|I am sorry. What is the problem?|Sinto muito. Qual é o problema?
+D: You|I cannot find my ticket and my phone is dead.|Não acho a passagem e o celular descarregou.
 D: Ana|Do not worry. Do you have your passport?|Não se preocupe. Você tem o passaporte?
 D: You|Yes, here it is.|Tenho, aqui está.
 D: Ana|Good. I can print a new ticket.|Ótimo. Posso imprimir uma nova passagem.
 D: You|Thank you so much. You saved my day!|Muito obrigado. Você salvou o meu dia!
 D: Ana|Happy to help. Have a safe flight!|Fico feliz em ajudar. Boa viagem!
 V: ticket|passagem;passport|passaporte;print|imprimir;saved|salvou;safe|seguro
-B: I lost my {0}.|Eu perdi {0}.|ticket=a passagem;passport=o passaporte;luggage=a bagagem
+B: I cannot find my {0}.|Não encontro {0}.|ticket=a passagem;passport=o passaporte;luggage=a bagagem
 B: Have a {0} flight!|Tenha um voo {0}!|safe=seguro;good=bom;nice=agradável
-S: Ana|I am sorry. What happened?|Sinto muito. O que aconteceu?|I lost my ticket and my phone is dead.|Perdi a passagem e o celular descarregou.
+S: Ana|I am sorry. What is the problem?|Sinto muito. Qual é o problema?|I cannot find my ticket and my phone is dead.|Não acho a passagem e o celular descarregou.
 S: Ana|I can print a new ticket.|Posso imprimir uma nova passagem.|Thank you so much. You saved my day!|Muito obrigado. Você salvou o meu dia!
 R: I have a problem with my flight.|Tenho um problema com o meu voo.
-R: I lost my ticket.|Perdi a minha passagem.
+R: I cannot find my ticket.|Não acho a minha passagem.
 R: Here is my passport.|Aqui está o meu passaporte.
 R: You saved my day!|Você salvou o meu dia!
 X: You saved my day!|Você salvou o meu dia!

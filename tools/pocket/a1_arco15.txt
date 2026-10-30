@@ -8,18 +8,18 @@ D: You|For five days.|Por cinco dias.
 D: Moe|A small car is forty dollars a day.|Um carro pequeno custa quarenta dólares por dia.
 D: You|Does that include insurance?|Isso inclui seguro?
 D: Moe|Basic insurance, yes.|O seguro básico, sim.
-D: You|Okay. I will take it.|Ok. Eu fico com ele.
+D: You|Okay. I want it.|Ok. Eu quero este.
 D: Moe|I need your driver's license, please.|Preciso da sua carteira de motorista, por favor.
 V: rent|alugar;insurance|seguro;driver's license|carteira de motorista;small car|carro pequeno;days|dias
 B: I would like to rent {0}.|Eu gostaria de alugar {0}.|a car=um carro;a van=uma van;a bike=uma bicicleta
 B: It is {0} dollars a day.|Custa {0} dólares por dia.|forty=quarenta;fifty=cinquenta;sixty=sessenta
 S: Moe|For how many days?|Por quantos dias?|For five days.|Por cinco dias.
-S: Moe|Basic insurance is included.|O seguro básico está incluído.|Okay. I will take it.|Ok. Eu fico com ele.
+S: Moe|Basic insurance is included.|O seguro básico está incluído.|Okay. I want it.|Ok. Eu quero este.
 R: I would like to rent a car.|Eu gostaria de alugar um carro.
 R: For five days.|Por cinco dias.
 R: Does that include insurance?|Isso inclui seguro?
 R: Here is my license.|Aqui está a minha carteira.
-X: I will take it.|Eu fico com ele.
+X: I want it.|Eu quero este.
 C: Nos EUA, quase sempre é preciso cartão de crédito e ter 21 anos ou mais para alugar um carro.
 N: Próximo: abastecer.
 
@@ -57,7 +57,7 @@ D: You|Okay. Then straight?|Ok. Depois reto?
 D: GPS|Continue straight for two miles.|Continue reto por duas milhas.
 D: You|How far is the hotel?|Quão longe fica o hotel?
 D: GPS|Your destination is ahead on the right.|Seu destino está à frente, à direita.
-D: You|We made it!|Chegamos!
+D: You|We are here!|Chegamos!
 V: feet|pés;traffic light|semáforo;continue|continuar;destination|destino;ahead|à frente
 B: Turn {0} at the light.|Vire {0} no semáforo.|left=à esquerda;right=à direita;around=para voltar
 B: Continue straight for {0} miles.|Continue reto por {0} milhas.|two=duas;five=cinco;ten=dez
@@ -66,8 +66,8 @@ S: GPS|Continue straight for two miles.|Continue reto por duas milhas.|How far i
 R: Turn left at the light.|Vire à esquerda no semáforo.
 R: Continue straight.|Continue reto.
 R: How far is it?|Quão longe fica?
-R: We made it!|Chegamos!
-X: We made it!|Chegamos!
+R:We are here!|Chegamos!
+X:We are here!|Chegamos!
 C: Nos EUA, distâncias são em milhas e pés: uma milha tem cerca de 1,6 quilômetro.
 N: Próximo: estacionar.
 
@@ -143,30 +143,6 @@ X: Drive safely!|Dirija com cuidado!
 C: Em muitas rodovias americanas, o pedágio é eletrônico, sem cabine, e a cobrança vai para o dono do carro.
 N: Próximo: um problema no carro.
 
-T: The car will not start | Pedir ajuda com o carro | street | Phoenix | Gus,m,🧑🏼,mecânico
-K: The car will not start. | O carro não quer ligar.
-M: Hoje você pede ajuda com um carro que não liga.
-D: You|Hello? I need help. The car will not start.|Alô? Preciso de ajuda. O carro não quer ligar.
-D: Gus|Where are you?|Onde você está?
-D: You|On Highway ten, near exit twelve.|Na Rodovia dez, perto da saída doze.
-D: Gus|Is the engine making noise?|O motor está fazendo barulho?
-D: You|No, it is completely silent.|Não, está completamente em silêncio.
-D: Gus|It may be the battery. I will send a tow truck.|Pode ser a bateria. Vou mandar um guincho.
-D: You|How long will it take?|Quanto tempo vai levar?
-D: Gus|About thirty minutes.|Cerca de trinta minutos.
-V: start|ligar|engine|motor;battery|bateria;tow truck|guincho;exit|saída;highway|rodovia
-B: The car will not {0}.|O carro não quer {0}.|start=ligar;stop=parar;move=andar
-B: I am near exit {0}.|Estou perto da saída {0}.|twelve=doze;five=cinco;twenty=vinte
-S: Gus|Where are you?|Onde você está?|On Highway ten, near exit twelve.|Na Rodovia dez, perto da saída doze.
-S: Gus|I will send a tow truck.|Vou mandar um guincho.|How long will it take?|Quanto tempo vai levar?
-R: The car will not start.|O carro não quer ligar.
-R: I am on Highway ten.|Estou na Rodovia dez.
-R: Can you send a tow truck?|Você pode mandar um guincho?
-R: How long will it take?|Quanto tempo vai levar?
-X: I need help.|Preciso de ajuda.
-C: Nos EUA, empresas de assistência (roadside assistance) enviam guincho ou bateria a qualquer hora.
-N: Próximo: motel.
-
 T: A room for the night | Pedir um quarto de motel | hall | Arizona | Pat,m,🧑🏼,atendente
 K: Do you have a room for tonight? | Vocês têm um quarto para hoje à noite?
 M: Hoje você pede um quarto no meio da estrada.
@@ -190,30 +166,6 @@ R: Is there a restaurant nearby?|Há um restaurante por perto?
 X: plus tax|mais imposto
 C: Os motéis americanos beiram as estradas, com estacionamento na porta do quarto, e são uma tradição das viagens de carro.
 N: Próximo: uma multa de trânsito.
-
-T: Is something wrong, officer? | Falar com um policial de trânsito | street | Texas | Officer Cole,m,🧑🏿,policial
-K: Is something wrong, officer? | Há algum problema, policial?
-M: Hoje você fala com calma com um policial numa blitz.
-D: Officer Cole|Good afternoon. License and registration, please.|Boa tarde. Carteira e documento do carro, por favor.
-D: You|Is something wrong, officer?|Há algum problema, policial?
-D: Officer Cole|You were driving over the speed limit.|Você estava acima do limite de velocidade.
-D: You|I am sorry. I did not see the sign.|Sinto muito. Eu não vi a placa.
-D: Officer Cole|Do you know the limit here?|Você sabe o limite aqui?
-D: You|Fifty-five, right?|Cinquenta e cinco, certo?
-D: Officer Cole|Yes. I will give you a warning this time.|Sim. Dessa vez vou só dar um aviso.
-D: You|Thank you, officer. I will be careful.|Obrigado, policial. Terei cuidado.
-V: officer|policial;registration|documento do carro;warning|aviso;over|acima de;careful|cuidadoso
-B: I am sorry. I did not see {0}.|Sinto muito. Eu não vi {0}.|the sign=a placa;the light=o semáforo;the car=o carro
-B: I will be {0}.|Terei {0}.|careful=cuidado;more careful=mais cuidado;on time=pontualidade
-S: Officer Cole|License and registration, please.|Carteira e documento, por favor.|Is something wrong, officer?|Há algum problema, policial?
-S: Officer Cole|I will give you a warning.|Vou dar só um aviso.|Thank you, officer.|Obrigado, policial.
-R: Is something wrong, officer?|Há algum problema, policial?
-R: I did not see the sign.|Eu não vi a placa.
-R: I am sorry.|Sinto muito.
-R: I will be careful.|Terei cuidado.
-X: Here is my license.|Aqui está a minha carteira.
-C: Nos EUA, ao ser parado pela polícia, fique no carro com as mãos visíveis e fale com calma.
-N: Próximo: o desafio do arco.
 
 T: A road trip | Desafio do arco: uma viagem de carro | street | Arizona | Pat,m,🧑🏼,atendente
 K: Let us hit the road! | Vamos pegar a estrada!

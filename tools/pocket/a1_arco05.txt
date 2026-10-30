@@ -8,7 +8,7 @@ D: You|Double, please. How much is it?|De casal, por favor. Quanto custa?
 D: Sam|It is one hundred twenty a night.|São cento e vinte por noite.
 D: You|Is breakfast included?|O café da manhã está incluído?
 D: Sam|Yes, from seven to ten.|Sim, das sete às dez.
-D: You|Great. I will take it.|Ótimo. Eu fico com ele.
+D: You|Great. I want it.|Ótimo. Eu quero este.
 D: Sam|Perfect. Your name, please?|Perfeito. Seu nome, por favor?
 V: room|quarto;night|noite;single|solteiro;double|casal;included|incluído
 B: Do you have a room for {0}?|Vocês têm um quarto para {0}?|two nights=duas noites;one night=uma noite;a week=uma semana
@@ -18,8 +18,8 @@ S: Sam|Single or double?|Solteiro ou de casal?|Double, please.|De casal, por fav
 R: Do you have a room?|Vocês têm um quarto?
 R: Double, please.|De casal, por favor.
 R: Is breakfast included?|O café da manhã está incluído?
-R: I will take it.|Eu fico com ele.
-X: I will take it.|Eu fico com ele.
+R: I want it.|Eu quero este.
+X: I want it.|Eu quero este.
 C: Nos hotéis dos EUA, o preço do quarto costuma ser por noite e não inclui o imposto.
 N: Próximo: um problema no quarto.
 
@@ -29,16 +29,16 @@ M: Hoje você explica o problema e pede ajuda.
 D: You|Excuse me. There is a problem with my room.|Com licença. Há um problema com o meu quarto.
 D: Sam|I am sorry. What is the problem?|Sinto muito. Qual é o problema?
 D: You|The air conditioner does not work.|O ar-condicionado não funciona.
-D: Sam|I will send someone right away.|Vou mandar alguém agora mesmo.
+D: Sam|Let me send someone right away.|Deixe-me mandar alguém agora mesmo.
 D: You|Also, there are no towels.|Além disso, não há toalhas.
-D: Sam|We will bring some in ten minutes.|Levaremos algumas em dez minutos.
+D: Sam|Let me bring some in ten minutes.|Deixe-me trazer algumas em dez minutos.
 D: You|Thank you very much.|Muito obrigado.
 D: Sam|Sorry again for the trouble.|Desculpe de novo pelo problema.
 V: problem|problema;air conditioner|ar-condicionado;towels|toalhas;work|funcionar;trouble|incômodo
 B: The {0} does not work.|{0} não funciona.|air conditioner=O ar-condicionado;TV=A TV;shower=O chuveiro
 B: There are no {0}.|Não há {0}.|towels=toalhas;pillows=travesseiros;blankets=cobertores
 S: Sam|What is the problem?|Qual é o problema?|The air conditioner does not work.|O ar-condicionado não funciona.
-S: Sam|I will send someone.|Vou mandar alguém.|Also, there are no towels.|Além disso, não há toalhas.
+S: Sam|Let me send someone.|Deixe-me mandar alguém.|Also, there are no towels.|Além disso, não há toalhas.
 R: There is a problem.|Há um problema.
 R: It does not work.|Não funciona.
 R: There are no towels.|Não há toalhas.
@@ -143,30 +143,6 @@ X: How about this?|Que tal este?
 C: Em lojas de lembranças dos EUA, os preços são fixos e você pode pedir embrulho para presente.
 N: Próximo: perdeu algo.
 
-T: I lost my bag | Relatar uma perda | airport | Los Angeles | Jo,f,👩🏿,atendente
-K: I lost my bag. | Eu perdi a minha mala.
-M: Hoje você relata uma perda e descreve o objeto.
-D: You|Excuse me. I lost my bag.|Com licença. Eu perdi a minha mala.
-D: Jo|I am sorry. What does it look like?|Sinto muito. Como ela é?
-D: You|It is black and medium size.|É preta e de tamanho médio.
-D: Jo|Where did you last see it?|Onde você a viu pela última vez?
-D: You|At gate twelve, ten minutes ago.|No portão doze, há dez minutos.
-D: Jo|Please fill out this form.|Por favor, preencha este formulário.
-D: You|Okay. Will you call me?|Ok. Vocês vão me ligar?
-D: Jo|Yes, as soon as we find it.|Sim, assim que acharmos.
-V: lost|perdi;black|preta;form|formulário;fill out|preencher;find|achar
-B: I lost my {0}.|Eu perdi {0}.|bag=a minha mala;phone=o meu celular;passport=o meu passaporte
-B: It is {0} and {1}.|É {0} e {1}.|black=preta;small=pequena;big=grande
-S: Jo|What does it look like?|Como ela é?|It is black and medium size.|É preta e de tamanho médio.
-S: Jo|Where did you last see it?|Onde você a viu pela última vez?|At gate twelve.|No portão doze.
-R: I lost my bag.|Eu perdi a minha mala.
-R: It is black.|É preta.
-R: At gate twelve.|No portão doze.
-R: Will you call me?|Vocês vão me ligar?
-X: As soon as we find it.|Assim que acharmos.
-C: Nos aeroportos americanos, objetos perdidos ficam no balcão "Lost and Found".
-N: Próximo: pedir ajuda com o idioma.
-
 T: Can you repeat that? | Pedir para repetir e falar mais devagar | street | Seattle | Max,m,🧑🏼,pedestre
 K: Can you repeat that, please? | Você pode repetir, por favor?
 M: Hoje você pede para repetir e para falar mais devagar.
@@ -200,7 +176,7 @@ D: Sam|Of course. What would you like?|Claro. O que você gostaria?
 D: You|A chicken sandwich and a salad.|Um sanduíche de frango e uma salada.
 D: Sam|Anything to drink?|Algo para beber?
 D: You|A bottle of water, please.|Uma garrafa de água, por favor.
-D: Sam|It will arrive in thirty minutes.|Chegará em trinta minutos.
+D: Sam|It is here in thirty minutes.|Chega em trinta minutos.
 D: You|Thank you!|Obrigado!
 V: front desk|recepção;room service|serviço de quarto;sandwich|sanduíche;bottle|garrafa;arrive|chegar
 B: Could I order {0}?|Eu poderia pedir {0}?|room service=serviço de quarto;breakfast=café da manhã;a taxi=um táxi
@@ -210,32 +186,7 @@ S: Sam|What would you like?|O que você gostaria?|A chicken sandwich and a salad
 R: Could I order room service?|Eu poderia pedir serviço de quarto?
 R: A chicken sandwich, please.|Um sanduíche de frango, por favor.
 R: A bottle of water.|Uma garrafa de água.
-R: It will arrive in thirty minutes.|Chegará em trinta minutos.
+R:It is here in thirty minutes.|Chega em trinta minutos.
 X: Front desk.|Recepção.
 C: Nos hotéis dos EUA, o serviço de quarto costuma ter taxa de entrega, além da gorjeta.
 N: Próximo: o desafio do arco.
-
-T: A weekend trip | Desafio do arco: um fim de semana viajando | hall | New York | Sam,m,🧑🏿,recepcionista
-K: I would like to check out, please. | Eu gostaria de fazer o check-out, por favor.
-M: Mini-chefe: faça o check-out, peça um táxi e se despeça.
-D: Sam|Good morning! Checking out today?|Bom dia! Fazendo o check-out hoje?
-D: You|Yes, I would like to check out, please.|Sim, eu gostaria de fazer o check-out, por favor.
-D: Sam|Room 305. Did you enjoy your stay?|Quarto 305. Gostou da estadia?
-D: You|Yes, it was great. Thank you!|Sim, foi ótima. Obrigado!
-D: Sam|Do you need anything else?|Precisa de mais alguma coisa?
-D: You|Yes, can you call a taxi to the airport?|Sim, você pode chamar um táxi para o aeroporto?
-D: Sam|Of course. It will be here in ten minutes.|Claro. Chegará em dez minutos.
-D: You|Perfect. Goodbye, and thanks again!|Perfeito. Adeus, e obrigado de novo!
-V: check out|fazer check-out;stay|estadia;enjoy|gostar;call|chamar;taxi|táxi
-B: I would like to {0}.|Eu gostaria de {0}.|check out=fazer o check-out;check in=fazer o check-in;order a taxi=pedir um táxi
-B: It will be here in {0}.|Chegará em {0}.|ten minutes=dez minutos;five minutes=cinco minutos;twenty minutes=vinte minutos
-S: Sam|Checking out today?|Fazendo o check-out hoje?|Yes, I would like to check out, please.|Sim, eu gostaria de fazer o check-out, por favor.
-S: Sam|Do you need anything else?|Precisa de mais alguma coisa?|Can you call a taxi?|Você pode chamar um táxi?
-R: I would like to check out.|Eu gostaria de fazer o check-out.
-R: It was great.|Foi ótimo.
-R: Can you call a taxi?|Você pode chamar um táxi?
-R: Thanks again!|Obrigado de novo!
-X: Did you enjoy your stay?|Gostou da estadia?
-C: Parabéns! Você terminou o arco 5 e ganhou a figurinha rara do Sam.
-N: Próximo arco: amigos, saúde e planos.
-BOSS: 1

@@ -1,7 +1,10 @@
 """Porta de nível A1: o diálogo não pode usar futuro, passado nem estruturas A2+.
 Permitidos como blocos prontos: would like, can/could you, may I, let us."""
 import re,glob,collections
-STRICT=r"\b(will|won't|going to|gonna|did|didn't|was|wasn't|were|weren't|went|saw|ate|took|made|came|left|met|forgot|lost|woke|flew|bought|told|found|gave|got|had|watched|stayed|visited|moved|called|played|lived|loved|tried|walked|happened|started|finished|learned|asked|helped|should|might|must|have to|has to|used to|been)\b"
+STRICT=r"\b(will|won't|going to|gonna|did|didn't|was|wasn't|were|weren't|went|saw|ate|took|made|came|met|forgot|woke|flew|bought|told|found|gave|had|watched|stayed|visited|moved|called|played|lived|loved|tried|walked|happened|started|finished|learned|asked|helped|should|might|must|have to|has to|used to|been)\b"
+def limpo(t):
+    t=t.lower().replace('got it','')
+    return re.findall(STRICT,t)+re.findall(r'\b(?:i|we|you|he|she) lost\b',t)
 def eps(pattern='a1_arco*.txt'):
     for f in sorted(glob.glob(pattern)):
         cur=None

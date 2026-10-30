@@ -81,7 +81,7 @@ D: You|Thanks. It is a little small.|Obrigado. Está um pouco pequena.
 D: Zoe|Do you want a bigger size?|Você quer um tamanho maior?
 D: You|Yes, please. A medium.|Sim, por favor. Um médio.
 D: Zoe|Here you go. How is it now?|Aqui está. Como ficou agora?
-D: You|Perfect. I will take it.|Perfeito. Eu levo.
+D: You|Perfect. I want it.|Perfeito. Eu quero este.
 V: jacket|jaqueta;try on|experimentar;fitting room|provador;small|pequena;size|tamanho
 B: Can I try {0} on?|Posso experimentar {0}?|this=isto;these=estes;it=isso
 B: It is a little {0}.|Está um pouco {0}.|small=pequena;big=grande;tight=apertada
@@ -90,8 +90,8 @@ S: Zoe|How is it?|Como ficou?|It is a little small.|Está um pouco pequena.
 R: Can I try this on?|Posso experimentar isto?
 R: It is a little small.|Está um pouco pequena.
 R: A medium, please.|Um médio, por favor.
-R: I will take it.|Eu levo.
-X: I will take it.|Eu levo. (ao decidir comprar)
+R: I want it.|Eu quero este.
+X: I want it.|Eu quero este. (ao decidir comprar)
 C: Os tamanhos nos EUA são S, M e L, e os números de roupa são diferentes dos do Brasil.
 N: Próximo: tamanhos e cores.
 
@@ -129,7 +129,7 @@ D: You|Do you have a cheaper one?|Vocês têm um mais barato?
 D: Ray|This one is sixty dollars.|Este custa sessenta dólares.
 D: You|Is there a discount?|Tem desconto?
 D: Ray|Ten percent off today.|Dez por cento de desconto hoje.
-D: You|Great. I will take it.|Ótimo. Eu levo.
+D: You|Great. I want it.|Ótimo. Eu quero este.
 V: expensive|caro;cheap|barato;watch|relógio;discount|desconto;percent|por cento
 B: It is too {0}.|É {0} demais.|expensive=caro;big=grande;small=pequeno
 B: Do you have a {0} one?|Vocês têm um mais {0}?|cheaper=barato;smaller=pequeno;bigger=grande
@@ -200,17 +200,17 @@ D: Tony|Sure. What would you like?|Claro. O que você gostaria?
 D: You|One large pizza with cheese, please.|Uma pizza grande de queijo, por favor.
 D: Tony|Anything to drink?|Algo para beber?
 D: You|Two sodas.|Dois refrigerantes.
-D: Tony|It will be ready in twenty minutes.|Ficará pronto em vinte minutos.
-D: You|Great. I will pick it up. Thanks!|Ótimo. Eu busco. Obrigado!
+D: Tony|It is ready in twenty minutes.|Fica pronto em vinte minutos.
+D: You|Great. I pick it up at six. Thanks!|Ótimo. Eu busco às seis. Obrigado!
 V: order|pedir / pedido;takeout|comida para viagem;ready|pronto;pick up|buscar;soda|refrigerante
 B: I would like {0}.|Eu gostaria de {0}.|one large pizza=uma pizza grande;two sodas=dois refrigerantes;a salad=uma salada
-B: It will be ready in {0}.|Ficará pronto em {0}.|twenty minutes=vinte minutos;ten minutes=dez minutos;an hour=uma hora
+B: It is ready in {0}.|Fica pronto em {0}.|twenty minutes=vinte minutos;ten minutes=dez minutos;an hour=uma hora
 S: Tony|How can I help you?|Como posso ajudar?|I would like to order takeout.|Eu gostaria de pedir comida para viagem.
 S: Tony|Anything to drink?|Algo para beber?|Two sodas, please.|Dois refrigerantes, por favor.
 R: I would like to order takeout.|Eu gostaria de pedir comida para viagem.
 R: One large pizza, please.|Uma pizza grande, por favor.
-R: It will be ready in twenty minutes.|Ficará pronto em vinte minutos.
-R: I will pick it up.|Eu busco.
+R:It is ready in twenty minutes.|Fica pronto em vinte minutos.
+R: I pick it up at six.|Eu busco às seis.
 X: How can I help you?|Como posso ajudar?
 C: Nos EUA, "takeout" (ou "to go") é muito comum, e muitos lugares aceitam pedidos por aplicativo.
 N: Próximo: o desafio do arco.

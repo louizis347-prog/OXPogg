@@ -32,17 +32,17 @@ D: You|This one, on the left.|Este, do lado esquerdo.
 D: Dr. Gray|Let me take a look. Open wide.|Deixe-me ver. Abra bem.
 D: You|Is it serious?|É grave?
 D: Dr. Gray|You have a cavity. We can fix it today.|Você tem uma cárie. Podemos tratar hoje.
-D: You|Will it hurt?|Vai doer?
-D: Dr. Gray|Not much. I will numb it first.|Não muito. Vou anestesiar antes.
+D: You|Does it hurt?|Dói?
+D: Dr. Gray|Not much. First I numb it.|Não muito. Primeiro eu anestesio.
 V: toothache|dor de dente;tooth|dente;cavity|cárie;serious|grave;open wide|abra bem
 B: I have a {0}.|Estou com {0}.|toothache=dor de dente;headache=dor de cabeça;sore throat=dor de garganta
 B: Which {0}?|Qual {0}?|tooth=dente;arm=braço;leg=perna
 S: Dr. Gray|Which tooth?|Qual dente?|This one, on the left.|Este, do lado esquerdo.
-S: Dr. Gray|You have a cavity.|Você tem uma cárie.|Will it hurt?|Vai doer?
+S: Dr. Gray|You have a cavity.|Você tem uma cárie.|Does it hurt?|Dói?
 R: I have a toothache.|Estou com dor de dente.
 R: This one, on the left.|Este, do lado esquerdo.
 R: Is it serious?|É grave?
-R: Will it hurt?|Vai doer?
+R:Does it hurt?|Dói?
 X: Open wide.|Abra bem.
 C: Nos EUA, consultas no dentista costumam ser separadas do plano de saúde comum.
 N: Próximo: uma lesão no esporte.
@@ -50,7 +50,7 @@ N: Próximo: uma lesão no esporte.
 T: I hurt my ankle | Contar uma lesão | clinic | Denver | Dr. Park,m,🧑🏻,médico
 K: I hurt my ankle. | Machuquei o tornozelo.
 M: Hoje você conta como se machucou e o que precisa fazer.
-D: Dr. Park|What happened to you?|O que aconteceu com você?
+D: Dr. Park|What is wrong with you?|O que você tem?
 D: You|I hurt my ankle playing soccer.|Machuquei o tornozelo jogando futebol.
 D: Dr. Park|Can you move your foot?|Você consegue mexer o pé?
 D: You|A little, but it hurts a lot.|Um pouco, mas dói muito.
@@ -61,13 +61,13 @@ D: You|Can I play on the weekend?|Posso jogar no fim de semana?
 V: ankle|tornozelo;foot|pé;swollen|inchado;broken|quebrado;ice|gelo
 B: I hurt my {0}.|Machuquei {0}.|ankle=o tornozelo;knee=o joelho;wrist=o pulso
 B: I need {0}.|Eu preciso de {0}.|an X-ray=um raio-X;rest=repouso;ice=gelo
-S: Dr. Park|What happened to you?|O que aconteceu com você?|I hurt my ankle playing soccer.|Machuquei o tornozelo jogando futebol.
+S: Dr. Park|What is wrong with you?|O que você tem?|I hurt my ankle playing soccer.|Machuquei o tornozelo jogando futebol.
 S: Dr. Park|It is swollen.|Está inchado.|Is it broken?|Está quebrado?
 R: I hurt my ankle.|Machuquei o tornozelo.
 R: It hurts a lot.|Dói muito.
 R: Is it broken?|Está quebrado?
 R: Can I play on the weekend?|Posso jogar no fim de semana?
-X: What happened to you?|O que aconteceu com você?
+X:What is wrong with you?|O que você tem?
 C: Nos EUA, a sigla RICE (rest, ice, compression, elevation) resume os primeiros cuidados numa torção.
 N: Próximo: comprar remédio.
 
@@ -138,7 +138,7 @@ S: Zoe|Try them on.|Experimente.|They are a little tight.|Estão um pouco aperta
 R: Do you have these in a nine?|Vocês têm estes no nove?
 R: They are a little tight.|Estão um pouco apertados.
 R: They fit well.|Servem bem.
-R: I will take them.|Eu levo.
+R: I want them.|Eu quero estes.
 X: Try them on.|Experimente.
 C: Os números de sapato dos EUA são diferentes: o 9 masculino é cerca de 42 no Brasil.
 N: Próximo: devolver uma peça.
@@ -153,7 +153,7 @@ D: Kim|Do you have the receipt?|Você tem o recibo?
 D: You|Yes, here you go.|Sim, aqui está.
 D: Kim|Do you want a refund or an exchange?|Quer reembolso ou troca?
 D: You|A refund, please.|Reembolso, por favor.
-D: Kim|Okay. It will take a few days.|Ok. Levará alguns dias.
+D: Kim|Okay. It takes a few days.|Ok. Leva alguns dias.
 V: return|devolver;refund|reembolso;exchange|troca;receipt|recibo;fit|servir
 B: I would like to {0}.|Eu gostaria de {0}.|return this=devolver isto;exchange this=trocar isto;get a refund=receber reembolso
 B: It is too {0}.|É {0} demais.|small=pequeno;big=grande;expensive=caro
@@ -163,33 +163,9 @@ R: I would like to return this.|Eu gostaria de devolver isto.
 R: It does not fit.|Não serve.
 R: Here is the receipt.|Aqui está o recibo.
 R: A refund, please.|Reembolso, por favor.
-X: It will take a few days.|Levará alguns dias.
+X: It takes a few days.|Leva alguns dias.
 C: Nos EUA, lojas costumam aceitar devolução em até 30 dias, com recibo.
 N: Próximo: o clima e as roupas.
-
-T: What should I wear? | Escolher roupas pelo tempo | living | Chicago | Mia,f,👩🏻,amiga
-K: What should I wear today? | O que devo vestir hoje?
-M: Hoje você escolhe roupas conforme o tempo.
-D: You|What should I wear today?|O que devo vestir hoje?
-D: Mia|Check the weather. It is cold and windy.|Veja o tempo. Está frio e ventando.
-D: You|Should I wear a jacket?|Devo vestir uma jaqueta?
-D: Mia|Yes, and a scarf and gloves.|Sim, e cachecol e luvas.
-D: You|What about my boots?|E as minhas botas?
-D: Mia|Good idea. It might snow.|Boa ideia. Pode nevar.
-D: You|Thank you. I almost forgot my hat.|Obrigado. Quase esqueci o gorro.
-D: Mia|You will be warm now!|Agora você ficará aquecido!
-V: wear|vestir;jacket|jaqueta;scarf|cachecol;gloves|luvas;boots|botas
-B: I should wear {0}.|Devo vestir {0}.|a jacket=uma jaqueta;boots=botas;a hat=um gorro
-B: It is {0} today.|Hoje está {0}.|cold=frio;windy=ventando;warm=quente
-S: Mia|Check the weather.|Veja o tempo.|What should I wear today?|O que devo vestir hoje?
-S: Mia|Wear a scarf and gloves.|Vista cachecol e luvas.|Good idea. Thank you!|Boa ideia. Obrigado!
-R: What should I wear?|O que devo vestir?
-R: It is cold and windy.|Está frio e ventando.
-R: Should I wear a jacket?|Devo vestir uma jaqueta?
-R: Thank you!|Obrigado!
-X: It might snow.|Pode nevar.
-C: Em Chicago, o inverno é tão frio que as pessoas usam várias camadas de roupa.
-N: Próximo: lavar roupa.
 
 T: Where is the laundromat? | Usar uma lavanderia | street | New York | Sue,f,👩🏼,moradora
 K: Where is the laundromat? | Onde fica a lavanderia?
@@ -225,16 +201,16 @@ D: You|Since Monday.|Desde segunda.
 D: Dr. Park|Rest, drink water, and take this syrup.|Descanse, beba água e tome este xarope.
 D: You|How often do I take it?|Com que frequência tomo?
 D: Dr. Park|Twice a day. Come back on Friday.|Duas vezes ao dia. Volte na sexta.
-D: You|Thank you, doctor. I will.|Obrigado, doutor. Eu volto.
+D: You|Thank you, doctor. I do.|Obrigado, doutor. Farei isso.
 V: feeling|sentindo;since|desde;rest|descansar;syrup|xarope;come back|voltar
 B: I have a {0} and my {1} hurts.|Estou com {0} e {1} dói.|cold=resfriado;fever=febre;cough=tosse
 B: Come back on {0}.|Volte na {0}.|Friday=sexta;Monday=segunda;Wednesday=quarta
 S: Dr. Park|How are you feeling?|Como você está se sentindo?|Not great. I have a cold.|Nada bem. Estou resfriado.
-S: Dr. Park|Come back on Friday.|Volte na sexta.|Thank you, doctor. I will.|Obrigado, doutor. Eu volto.
+S: Dr. Park|Come back on Friday.|Volte na sexta.|Thank you, doctor. I do.|Obrigado, doutor. Farei isso.
 R: I have a cold.|Estou resfriado.
 R: My back hurts.|Minhas costas doem.
 R: How often do I take it?|Com que frequência tomo?
-R: I will come back on Friday.|Eu volto na sexta.
+R: I come back on Friday.|Eu volto na sexta.
 X: How are you feeling?|Como você está se sentindo?
 C: Parabéns! Você terminou o arco 12 e ganhou a figurinha rara do Dr. Park.
 N: Próximo arco: tecnologia e comunicação.

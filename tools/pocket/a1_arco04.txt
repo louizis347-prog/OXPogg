@@ -54,7 +54,7 @@ D: You|Excuse me. What is the next stop?|Com licença. Qual é a próxima parada
 D: Omar|The next stop is Union Station.|A próxima parada é a Union Station.
 D: You|How many stops to the museum?|Quantas paradas até o museu?
 D: Omar|Three stops. About ten minutes.|Três paradas. Uns dez minutos.
-D: You|Thank you. I will get off there.|Obrigado. Vou descer lá.
+D: You|Thank you. I get off there.|Obrigado. Eu desço lá.
 D: Omar|Press the button to stop.|Aperte o botão para parar.
 D: You|Got it. Thanks again!|Entendi. Obrigado de novo!
 D: Omar|No problem.|Sem problema.
@@ -62,10 +62,10 @@ V: stop|parada;next|próxima;get off|descer;press|apertar;button|botão
 B: What is the next {0}?|Qual é a próxima {0}?|stop=parada;station=estação;street=rua
 B: How many stops to the {0}?|Quantas paradas até {0}?|museum=o museu;park=o parque;airport=o aeroporto
 S: Omar|Where are you going?|Para onde você vai?|What is the next stop?|Qual é a próxima parada?
-S: Omar|Three stops.|Três paradas.|I will get off there.|Eu vou descer lá.
+S: Omar|Three stops.|Três paradas.|I get off there.|Eu desço lá.
 R: What is the next stop?|Qual é a próxima parada?
 R: How many stops to the museum?|Quantas paradas até o museu?
-R: I will get off there.|Eu vou descer lá.
+R: I get off there.|Eu desço lá.
 R: Got it. Thanks again!|Entendi. Obrigado de novo!
 X: Got it.|Entendi.
 C: Nos ônibus americanos você aperta um botão ou puxa um cordão para avisar que vai descer.
@@ -79,7 +79,7 @@ D: You|To the airport, please.|Para o aeroporto, por favor.
 D: Lou|Which terminal?|Qual terminal?
 D: You|Terminal B. How long does it take?|Terminal B. Quanto tempo leva?
 D: Lou|About twenty-five minutes.|Cerca de vinte e cinco minutos.
-D: You|How much will it cost?|Quanto vai custar?
+D: You|How much is it?|Quanto custa?
 D: Lou|Around forty dollars.|Uns quarenta dólares.
 D: You|That is fine. Thank you!|Está bom. Obrigado!
 V: terminal|terminal;take|levar (tempo);cost|custar;around|cerca de;fine|bom / tudo bem
@@ -89,7 +89,7 @@ S: Lou|Where to?|Para onde?|To the airport, please.|Para o aeroporto, por favor.
 S: Lou|Which terminal?|Qual terminal?|Terminal B. How long does it take?|Terminal B. Quanto tempo leva?
 R: To the airport, please.|Para o aeroporto, por favor.
 R: How long does it take?|Quanto tempo leva?
-R: How much will it cost?|Quanto vai custar?
+R:How much is it?|Quanto custa?
 R: That is fine.|Está bom.
 X: Where to?|Para onde?
 C: Nos EUA, também é comum pedir o carro por aplicativo, e o preço aparece antes da corrida.
@@ -150,18 +150,18 @@ D: You|Hi. I want to send this letter to Brazil.|Oi. Quero enviar esta carta par
 D: Ben|Sure. Let me weigh it.|Claro. Vou pesar.
 D: You|How much is it?|Quanto custa?
 D: Ben|It is four dollars.|São quatro dólares.
-D: You|How long will it take?|Quanto tempo vai demorar?
+D: You|How long is the wait?|Quanto é a espera?
 D: Ben|About one week.|Cerca de uma semana.
 D: You|That is fine. Here you go.|Está bom. Aqui está.
 D: Ben|Do you need a stamp too?|Você precisa de selo também?
 V: letter|carta;weigh|pesar;stamp|selo;week|semana;send|enviar
 B: I want to send this {0}.|Quero enviar {0}.|letter=esta carta;package=este pacote;postcard=este cartão-postal
-B: It will take about {0}.|Vai levar cerca de {0}.|one week=uma semana;three days=três dias;two weeks=duas semanas
+B: It takes about {0}.|Leva cerca de {0}.|one week=uma semana;three days=três dias;two weeks=duas semanas
 S: Ben|How can I help you?|Como posso ajudar?|I want to send this letter.|Quero enviar esta carta.
-S: Ben|It is four dollars.|São quatro dólares.|How long will it take?|Quanto tempo vai demorar?
+S: Ben|It is four dollars.|São quatro dólares.|How long is the wait?|Quanto é a espera?
 R: I want to send this letter.|Quero enviar esta carta.
 R: How much is it?|Quanto custa?
-R: How long will it take?|Quanto tempo vai demorar?
+R:How long is the wait?|Quanto é a espera?
 R: Do you need a stamp?|Você precisa de selo?
 X: Let me weigh it.|Vou pesar.
 C: Nos EUA, os correios se chamam "Post Office" e as caixas azuis de rua são para postar cartas.

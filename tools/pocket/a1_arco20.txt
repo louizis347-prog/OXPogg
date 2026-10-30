@@ -6,15 +6,15 @@ D: Sam|Hey! How are you doing?|Oi! Como vai?
 D: You|I am good, thanks. And you?|Estou bem, obrigado. E você?
 D: Sam|Not bad. Busy week.|Nada mal. Semana cheia.
 D: You|Same here. Work is crazy.|Comigo também. O trabalho está uma loucura.
-D: Sam|We should grab a coffee sometime.|A gente devia tomar um café qualquer hora.
+D: Sam|Let us have a coffee sometime.|Vamos tomar um café qualquer hora.
 D: You|Sure, that would be nice.|Claro, seria legal.
-D: Sam|Great. I have to run. See you around!|Ótimo. Tenho que correr. A gente se vê!
+D: Sam|Great. I run now. See you around!|Ótimo. Preciso ir. A gente se vê!
 D: You|See you!|Até!
 V: busy|cheio;crazy|maluco;grab|pegar;sometime|qualquer hora;run|correr
 B: How are you {0}?|Como você {0}?|doing=vai;feeling=está se sentindo;today=hoje
-B: I have to {0}.|Eu tenho que {0}.|run=correr;go=ir;leave=sair
+B: I want to {0}.|Eu quero {0}.|run=correr;go=ir;leave=sair
 S: Sam|Hey! How are you doing?|Oi! Como vai?|I am good, thanks. And you?|Estou bem, obrigado. E você?
-S: Sam|We should grab a coffee sometime.|A gente devia tomar um café qualquer hora.|Sure, that would be nice.|Claro, seria legal.
+S: Sam|Let us have a coffee sometime.|Vamos tomar um café qualquer hora.|Sure, that would be nice.|Claro, seria legal.
 R: How are you doing?|Como vai?
 R: I am good, thanks.|Estou bem, obrigado.
 R: Not bad.|Nada mal.
@@ -24,22 +24,22 @@ C: "How are you?" nos EUA é um cumprimento, não uma pergunta sobre saúde. A r
 N: Próximo: o café da manhã americano.
 
 T: A diner breakfast | Pedir café da manhã num diner | cafe | Chicago | Ruth,f,👩🏻,garçonete
-K: I will have the pancakes. | Vou querer os panquecas.
+K:I would like the pancakes.|Eu gostaria das panquecas.
 M: Hoje você pede o café da manhã num diner.
 D: Ruth|Good morning, hon. Coffee?|Bom dia, querido. Café?
 D: You|Yes, please. Black.|Sim, por favor. Puro.
 D: Ruth|Ready to order?|Pronto para pedir?
-D: You|I will have the pancakes, please.|Vou querer as panquecas, por favor.
+D: You|I would like the pancakes, please.|Eu gostaria das panquecas, por favor.
 D: Ruth|Anything on the side?|Algo de acompanhamento?
 D: You|Bacon and scrambled eggs.|Bacon e ovos mexidos.
 D: Ruth|Comin' right up.|Já vai sair.
 D: You|Thank you. Could I get the check later?|Obrigado. Posso pedir a conta depois?
 V: pancakes|panquecas;bacon|bacon;scrambled|mexidos;order|pedir;check|conta
-B: I will have the {0}.|Vou querer {0}.|pancakes=as panquecas;eggs=os ovos;toast=a torrada
+B: I would like the {0}.|Eu gostaria d{0}.|pancakes=as panquecas;eggs=os ovos;toast=a torrada
 B: Could I get the {0}?|Posso pedir {0}?|check=a conta;menu=o cardápio;water=água
-S: Ruth|Ready to order?|Pronto para pedir?|I will have the pancakes, please.|Vou querer as panquecas, por favor.
+S: Ruth|Ready to order?|Pronto para pedir?|I would like the pancakes, please.|Eu gostaria das panquecas, por favor.
 S: Ruth|Anything on the side?|Algo de acompanhamento?|Bacon and scrambled eggs.|Bacon e ovos mexidos.
-R: I will have the pancakes.|Vou querer as panquecas.
+R:I would like the pancakes.|Eu gostaria das panquecas.
 R: Black coffee, please.|Café puro, por favor.
 R: Bacon and eggs.|Bacon e ovos.
 R: Could I get the check?|Posso pedir a conta?
@@ -72,9 +72,9 @@ C: Nos EUA a gorjeta de 15–20% é esperada em restaurantes e é parte do salá
 N: Próximo: dinheiro e preços.
 
 T: Dollars and cents | Dinheiro e preços | shop | Seattle | Lia,f,👩🏽,caixa
-K: That will be ten dollars. | Fica dez dólares.
+K:That is ten dollars.|São dez dólares.
 M: Hoje você entende preços em dólar.
-D: Lia|That will be ten dollars and fifty cents.|Fica dez dólares e cinquenta centavos.
+D: Lia|That is ten dollars and fifty cents.|São dez dólares e cinquenta centavos.
 D: You|Here is a twenty.|Aqui está uma de vinte.
 D: Lia|Your change is nine fifty.|Seu troco é nove e cinquenta.
 D: You|Do you take cards?|Vocês aceitam cartão?
@@ -83,11 +83,11 @@ D: You|Is a quarter twenty-five cents?|Um quarter é vinte e cinco centavos?
 D: Lia|Right! And a dime is ten.|Isso! E um dime é dez.
 D: You|Good to know. Thanks!|Bom saber. Valeu!
 V: dollar|dólar;cents|centavos;change|troco;cash|dinheiro vivo;quarter|moeda de 25 centavos
-B: That will be {0} dollars.|Fica {0} dólares.|ten=dez;five=cinco;twenty=vinte
+B: That is {0} dollars.|São {0} dólares.|ten=dez;five=cinco;twenty=vinte
 B: Do you take {0}?|Vocês aceitam {0}?|cards=cartão;cash=dinheiro;checks=cheques
-S: Lia|That will be ten dollars and fifty cents.|Fica dez dólares e cinquenta centavos.|Here is a twenty.|Aqui está uma de vinte.
+S: Lia|That is ten dollars and fifty cents.|São dez dólares e cinquenta centavos.|Here is a twenty.|Aqui está uma de vinte.
 S: Lia|Right! And a dime is ten.|Isso! E um dime é dez.|Good to know. Thanks!|Bom saber. Valeu!
-R: That will be ten fifty.|Fica dez e cinquenta.
+R: That is ten fifty.|São dez e cinquenta.
 R: Here is a twenty.|Aqui está uma de vinte.
 R: Do you take cards?|Vocês aceitam cartão?
 R: Keep the change.|Pode ficar com o troco.
@@ -129,17 +129,17 @@ D: You|Thanks. Where are the apples?|Valeu. Onde estão as maçãs?
 D: Jess|In the produce section, by the door.|Na seção de hortifrúti, perto da porta.
 D: You|Is there a sale on bread today?|Tem promoção de pão hoje?
 D: Jess|Yes, two for five dollars.|Tem, dois por cinco dólares.
-D: You|Perfect. I will take two.|Perfeito. Vou levar dois.
+D: You|Perfect. Two, please.|Perfeito. Dois, por favor.
 V: cart|carrinho;aisle|corredor;produce|hortifrúti;sale|promoção;basket|cesta
 B: The {0} is on aisle four.|{0} está no corredor quatro.|milk=o leite;bread=o pão;rice=o arroz
 B: Is there a {0} today?|Tem {0} hoje?|sale=promoção;discount=desconto;special=oferta
 S: Jess|Do you need a cart or a basket?|Precisa de carrinho ou cesta?|A basket is fine.|Uma cesta serve.
-S: Jess|Yes, two for five dollars.|Tem, dois por cinco dólares.|Perfect. I will take two.|Perfeito. Vou levar dois.
+S: Jess|Yes, two for five dollars.|Tem, dois por cinco dólares.|Perfect. Two, please.|Perfeito. Dois, por favor.
 R: A basket is fine.|Uma cesta serve.
 R: Where are the apples?|Onde estão as maçãs?
 R: Is there a sale today?|Tem promoção hoje?
-R: I will take two.|Vou levar dois.
-X: I will take two.|Vou levar dois.
+R: Two, please.|Dois, por favor.
+X: Two, please.|Dois, por favor.
 C: No caixa, ouve-se "Paper or plastic?" — saco de papel ou de plástico.
 N: Próximo: feriados americanos.
 
@@ -174,7 +174,7 @@ D: Rosa|Merry Christmas! Come and see the tree.|Feliz Natal! Venha ver a árvore
 D: You|It is beautiful! Is that a star on top?|É linda! Aquilo é uma estrela no topo?
 D: Rosa|Yes. We open gifts in the morning.|Sim. Abrimos presentes de manhã.
 D: You|I brought a small gift for you.|Trouxe um presentinho para você.
-D: Rosa|You did not have to. Thank you!|Não precisava. Obrigada!
+D: Rosa|It is lovely. Thank you!|É lindo. Obrigada!
 D: You|It is just a little something.|É só uma lembrancinha.
 D: Rosa|Would you like some hot chocolate?|Aceita um chocolate quente?
 D: You|Yes, please. Happy holidays!|Sim, por favor. Boas festas!
@@ -182,12 +182,12 @@ V: tree|árvore;star|estrela;gift|presente;chocolate|chocolate;holidays|festas
 B: Merry {0}!|Feliz {0}!|Christmas=Natal;holidays=festas;New Year=Ano Novo
 B: I brought a small {0}.|Trouxe um pequeno {0}.|gift=presente;card=cartão;surprise=surpresa
 S: Rosa|Merry Christmas! Come and see the tree.|Feliz Natal! Venha ver a árvore.|It is beautiful! Is that a star on top?|É linda! Aquilo é uma estrela no topo?
-S: Rosa|You did not have to. Thank you!|Não precisava. Obrigada!|It is just a little something.|É só uma lembrancinha.
+S: Rosa|It is lovely. Thank you!|É lindo. Obrigada!|It is just a little something.|É só uma lembrancinha.
 R: Merry Christmas!|Feliz Natal!
 R: It is beautiful!|É lindo!
 R: I brought a small gift.|Trouxe um presentinho.
 R: Happy holidays!|Boas festas!
-X: You did not have to.|Você não precisava.
+X: It is lovely.|É lindo.
 C: "Happy holidays" é uma saudação neutra para as festas de fim de ano.
 N: Próximo: o esporte americano.
 
@@ -199,43 +199,18 @@ D: You|Which teams are playing?|Quais times estão jogando?
 D: Tom|The Seahawks and the Eagles.|Os Seahawks e os Eagles.
 D: You|Who is winning?|Quem está ganhando?
 D: Tom|We are, ten to seven!|Nós, dez a sete!
-D: You|That was a great play!|Que jogada ótima!
+D: You|That is a great play!|Que jogada ótima!
 D: Tom|I know! Do you want some pizza?|Pois é! Quer pizza?
 D: You|Yes, please. Go team!|Sim, por favor. Vai time!
 V: game|jogo;team|time;winning|ganhando;play|jogada;seat|lugar
 B: Who is {0}?|Quem está {0}?|winning=ganhando;playing=jogando;losing=perdendo
-B: That was a great {0}!|Foi uma ótima {0}!|play=jogada;game=partida;goal=jogada de gol
+B: That is a great {0}!|Que {0} ótima!|play=jogada;game=partida;goal=jogada de gol
 S: Tom|Which teams are playing?|Quais times estão jogando?|The Seahawks and the Eagles.|Os Seahawks e os Eagles.
-S: Tom|We are, ten to seven!|Nós, dez a sete!|That was a great play!|Que jogada ótima!
+S: Tom|We are, ten to seven!|Nós, dez a sete!|That is a great play!|Que jogada ótima!
 R: Who is winning?|Quem está ganhando?
 R: It is ten to seven.|Está dez a sete.
-R: That was a great play!|Que jogada ótima!
+R:That is a great play!|Que jogada ótima!
 R: Go team!|Vai time!
 X: Go team!|Vai time!
 C: Futebol americano é o esporte mais assistido nos EUA; o "soccer" é o futebol que o Brasil conhece.
 N: Próximo: desafio, seu primeiro dia americano.
-
-T: Your American day | Desafio do arco: dia a dia nos EUA | street | New York | Sam,m,🧑🏻,vizinho
-K: I had an American day. | Eu tive um dia americano.
-M: Hoje você junta tudo do arco em um só dia.
-D: Sam|How was your day in the city?|Como foi o seu dia na cidade?
-D: You|Great! I had pancakes for breakfast.|Ótimo! Comi panquecas no café da manhã.
-D: Sam|Did you leave a tip?|Você deixou gorjeta?
-D: You|Yes, twenty percent. I took the bus downtown.|Sim, vinte por cento. Peguei o ônibus para o centro.
-D: Sam|Nice. Did you buy anything?|Legal. Comprou algo?
-D: You|A hat. And I watched a game with friends.|Um chapéu. E assisti a um jogo com amigos.
-D: Sam|You are becoming a real New Yorker.|Você está virando um novo-iorquino.
-D: You|Thanks! I love it here.|Valeu! Adoro aqui.
-V: breakfast|café da manhã;percent|por cento;downtown|centro;friends|amigos;real|de verdade
-B: I took the {0}.|Eu peguei {0}.|bus=o ônibus;subway=o metrô;taxi=o táxi
-B: I love {0} here.|Adoro {0} aqui.|it=isso;the city=a cidade;the food=a comida
-S: Sam|How was your day in the city?|Como foi o seu dia na cidade?|Great! I had pancakes for breakfast.|Ótimo! Comi panquecas no café da manhã.
-S: Sam|Did you buy anything?|Comprou algo?|A hat. And I watched a game.|Um chapéu. E assisti a um jogo.
-R: I had pancakes for breakfast.|Comi panquecas no café da manhã.
-R: I left a twenty percent tip.|Deixei vinte por cento de gorjeta.
-R: I took the bus downtown.|Peguei o ônibus para o centro.
-R: I love it here.|Adoro aqui.
-X: A real New Yorker.|Um novo-iorquino de verdade.
-C: Misturar passado e cultura é o jeito de ganhar fluência: conte o que viveu.
-N: Próximo: o grande final do A1.
-BOSS: 1

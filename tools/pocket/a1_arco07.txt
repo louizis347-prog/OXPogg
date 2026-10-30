@@ -127,27 +127,27 @@ D: You|The sink is leaking.|A pia está vazando.
 D: Hal|Since when?|Desde quando?
 D: You|Since this morning.|Desde esta manhã.
 D: Hal|I can come at three o'clock.|Posso ir às três horas.
-D: You|That is perfect. How much will it cost?|Perfeito. Quanto vai custar?
+D: You|That is perfect. How much is it?|Perfeito. Quanto custa?
 D: Hal|About eighty dollars.|Uns oitenta dólares.
 D: You|Okay. Thank you!|Ok. Obrigado!
 V: sink|pia;leaking|vazando;since|desde;fix|consertar;cost|custar
 B: The {0} is leaking.|{0} está vazando.|sink=A pia;roof=O telhado;faucet=A torneira
 B: I can come at {0}.|Posso ir às {0}.|three=três;ten=dez;noon=meio-dia
 S: Hal|How can I help?|Como posso ajudar?|The sink is leaking.|A pia está vazando.
-S: Hal|I can come at three.|Posso ir às três.|How much will it cost?|Quanto vai custar?
+S: Hal|I can come at three.|Posso ir às três.|How much is it?|Quanto custa?
 R: The sink is leaking.|A pia está vazando.
 R: Since this morning.|Desde esta manhã.
-R: How much will it cost?|Quanto vai custar?
+R:How much is it?|Quanto custa?
 R: That is perfect.|Está perfeito.
 X: Since when?|Desde quando?
 C: Nos EUA, encanadores (plumbers) costumam cobrar uma taxa mínima só para a visita.
 N: Próximo: conhecer os vizinhos.
 
 T: Nice to meet the neighbors | Conhecer os vizinhos | street | Denver | Ruth,f,👩🏻,vizinha
-K: I just moved in next door. | Acabei de me mudar para a casa ao lado.
+K:I live next door.|Eu moro ao lado.
 M: Hoje você se apresenta aos vizinhos.
 D: Ruth|Hello! Are you the new neighbor?|Olá! Você é o novo vizinho?
-D: You|Yes, I just moved in next door.|Sim, acabei de me mudar para a casa ao lado.
+D: You|Yes, I live next door.|Sim, eu moro ao lado.
 D: Ruth|Welcome to the neighborhood!|Bem-vindo ao bairro!
 D: You|Thank you. It is very quiet here.|Obrigado. É muito calmo aqui.
 D: Ruth|It is. The park is two blocks away.|É sim. O parque fica a duas quadras.
@@ -155,11 +155,11 @@ D: You|Good to know. Where is the supermarket?|Bom saber. Onde fica o supermerca
 D: Ruth|On Main Street. I can show you.|Na Main Street. Posso mostrar.
 D: You|That is kind of you.|Que gentileza sua.
 V: neighbor|vizinho;neighborhood|bairro;quiet|calmo;next door|ao lado;moved in|mudou-se
-B: I just moved {0}.|Eu acabei de me mudar {0}.|in=para cá;here=para cá;to Denver=para Denver
+B: I live {0}.|Eu moro {0}.|in=para cá;here=para cá;to Denver=para Denver
 B: The {0} is two blocks away.|{0} fica a duas quadras.|park=O parque;supermarket=O supermercado;school=A escola
-S: Ruth|Are you the new neighbor?|Você é o novo vizinho?|Yes, I just moved in next door.|Sim, acabei de me mudar para a casa ao lado.
+S: Ruth|Are you the new neighbor?|Você é o novo vizinho?|Yes, I live next door.|Sim, eu moro ao lado.
 S: Ruth|It is two blocks away.|Fica a duas quadras.|Good to know.|Bom saber.
-R: I just moved in.|Acabei de me mudar.
+R: I live next door.|Eu moro ao lado.
 R: It is very quiet here.|É muito calmo aqui.
 R: Where is the supermarket?|Onde fica o supermercado?
 R: That is kind of you.|Que gentileza sua.
@@ -173,9 +173,9 @@ M: Hoje você pede silêncio sem criar atrito.
 D: You|Hi. I am your neighbor from apartment four.|Oi. Eu sou o seu vizinho do apartamento quatro.
 D: Pat|Oh, hello! Is everything okay?|Ah, olá! Está tudo bem?
 D: You|The music is a little loud.|A música está um pouco alta.
-D: Pat|I am so sorry. I did not know.|Sinto muito. Eu não sabia.
+D: Pat|I am so sorry. It is loud.|Sinto muito. Está alto.
 D: You|Could you keep it down, please?|Você poderia fazer menos barulho, por favor?
-D: Pat|Of course. I will turn it down now.|Claro. Vou abaixar agora mesmo.
+D: Pat|Of course. Let me turn it down now.|Claro. Deixe-me abaixar agora.
 D: You|Thank you. I appreciate it.|Obrigado. Eu agradeço.
 D: Pat|No problem. Good night!|Sem problema. Boa noite!
 V: loud|alto;turn down|abaixar;sorry|desculpe;appreciate|agradecer;neighbor|vizinho
@@ -222,7 +222,7 @@ D: You|Welcome to my new home! Come in.|Bem-vindo à minha casa nova! Entre.
 D: Lena|Thank you for inviting me. It is lovely!|Obrigada por me convidar. É linda!
 D: You|This is the living room, and this is the kitchen.|Esta é a sala, e esta é a cozinha.
 D: Lena|Is it furnished?|É mobiliada?
-D: You|No, I moved everything from my old place.|Não, trouxe tudo da minha casa antiga.
+D: You|No, everything is from my old place.|Não, tudo é da minha casa antiga.
 D: Lena|What is your address? I want to visit again.|Qual é o seu endereço? Quero visitar de novo.
 D: You|It is twenty-five Oak Street, apartment four B.|É Oak Street, 25, apartamento 4B.
 D: Lena|Perfect. Congratulations on the new home!|Perfeito. Parabéns pela casa nova!

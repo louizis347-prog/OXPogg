@@ -81,7 +81,7 @@ D: You|I work in sales. And you?|Eu trabalho em vendas. E você?
 D: Dee|I work in design. We are on the same floor.|Eu trabalho em design. Estamos no mesmo andar.
 D: You|Great! We can have lunch sometime.|Ótimo! Podemos almoçar um dia.
 D: Dee|I would like that.|Eu gostaria.
-D: Eli|I will leave you two to talk.|Vou deixar vocês dois conversando.
+D: Eli|Let me leave you two to talk.|Deixo vocês dois conversando.
 V: introduce|apresentar;sales|vendas;design|design;same|mesmo;sometime|um dia
 B: Let me introduce you to {0}.|Deixe-me apresentar você a {0}.|Dee=Dee;my boss=meu chefe;my friend=meu amigo
 B: I work in {0}.|Eu trabalho em {0}.|sales=vendas;design=design;marketing=marketing
@@ -101,20 +101,20 @@ M: Hoje você atende o telefone e anota um recado.
 D: You|Good morning. Alex speaking. How can I help?|Bom dia. Alex falando. Como posso ajudar?
 D: Eli|Hi. Is Ms. Ray there?|Oi. A Ms. Ray está?
 D: You|She is in a meeting. Can I take a message?|Ela está numa reunião. Posso anotar um recado?
-D: Eli|Yes. Please tell her Eli called.|Sim. Diga a ela que o Eli ligou.
+D: Eli|Yes. Please tell her it is Eli.|Sim. Diga a ela que é o Eli.
 D: You|Does she have your number?|Ela tem o seu número?
 D: Eli|Yes, she does. Thank you.|Tem sim. Obrigado.
-D: You|I will give her the message.|Vou passar o recado.
+D: You|Let me give her the message.|Deixe-me passar o recado.
 D: Eli|Thanks. Goodbye!|Obrigado. Tchau!
 V: speaking|falando;message|recado;called|ligou;number|número;tell|dizer
 B: Can I take a {0}?|Posso anotar {0}?|message=um recado;name=o nome;number=o número
 B: She is in a {0}.|Ela está {0}.|meeting=numa reunião;class=numa aula;call=numa ligação
 S: Eli|Is Ms. Ray there?|A Ms. Ray está?|She is in a meeting. Can I take a message?|Ela está numa reunião. Posso anotar um recado?
-S: Eli|Please tell her Eli called.|Diga a ela que o Eli ligou.|I will give her the message.|Vou passar o recado.
+S: Eli|Please tell her it is Eli.|Diga a ela que é o Eli.|Let me give her the message.|Deixe-me passar o recado.
 R: Alex speaking.|Alex falando.
 R: Can I take a message?|Posso anotar um recado?
 R: She is in a meeting.|Ela está numa reunião.
-R: I will give her the message.|Vou passar o recado.
+R:Let me give her the message.|Deixe-me passar o recado.
 X: Alex speaking.|Alex falando. (ao atender)
 C: Ao atender no trabalho, os americanos dizem "[Nome] speaking" ou "How can I help you?".
 N: Próximo: um problema no escritório.
@@ -127,14 +127,14 @@ D: Hank|What is the problem?|Qual é o problema?
 D: You|There is paper stuck inside.|Tem papel preso lá dentro.
 D: Hank|Okay. Is the light red or green?|Ok. A luz está vermelha ou verde?
 D: You|It is red.|Está vermelha.
-D: Hank|I will be there in five minutes.|Chego aí em cinco minutos.
+D: Hank|I am there in five minutes.|Estou aí em cinco minutos.
 D: You|Thank you. It is urgent.|Obrigado. É urgente.
 D: Hank|Understood.|Entendido.
 V: printer|impressora;paper|papel;stuck|preso;urgent|urgente;light|luz
 B: The {0} is not working.|{0} não está funcionando.|printer=A impressora;computer=O computador;phone=O telefone
-B: I will be there in {0}.|Chego aí em {0}.|five minutes=cinco minutos;ten minutes=dez minutos;an hour=uma hora
+B: I am there in {0}.|Estou aí em {0}.|five minutes=cinco minutos;ten minutes=dez minutos;an hour=uma hora
 S: Hank|What is the problem?|Qual é o problema?|The printer is not working.|A impressora não está funcionando.
-S: Hank|I will be there in five minutes.|Chego aí em cinco minutos.|It is urgent.|É urgente.
+S: Hank|I am there in five minutes.|Estou aí em cinco minutos.|It is urgent.|É urgente.
 R: The printer is not working.|A impressora não está funcionando.
 R: There is paper stuck inside.|Tem papel preso lá dentro.
 R: It is urgent.|É urgente.
@@ -152,7 +152,7 @@ D: You|There is a good sandwich place nearby.|Tem uma boa sanduicheria aqui pert
 D: Dee|Sounds good. How long is your break?|Parece bom. Quanto tempo é o seu intervalo?
 D: You|One hour. We have time.|Uma hora. Temos tempo.
 D: Dee|Perfect. Let me get my bag.|Perfeito. Deixe-me pegar minha bolsa.
-D: You|I will wait at the door.|Espero na porta.
+D: You|I wait at the door.|Eu espero na porta.
 D: Dee|Be right there!|Já vou!
 V: lunch|almoço;break|intervalo;sandwich|sanduíche;nearby|aqui perto;wait|esperar
 B: Do you want to grab {0}?|Quer pegar {0} comigo?|lunch=um almoço;coffee=um café;a bite=algo para comer
@@ -162,7 +162,7 @@ S: Dee|How long is your break?|Quanto tempo é o seu intervalo?|One hour. We hav
 R: Do you want to grab lunch?|Quer almoçar comigo?
 R: There is a good place nearby.|Tem um bom lugar por perto.
 R: We have time.|Temos tempo.
-R: I will wait at the door.|Espero na porta.
+R:I wait at the door.|Eu espero na porta.
 X: Be right there!|Já vou!
 C: Nos EUA, muita gente almoça rápido, na própria mesa ou numa lanchonete próxima ("grab a bite").
 N: Próximo: pedir um dia de folga.
@@ -176,7 +176,7 @@ D: You|Could I take Friday off?|Posso tirar a sexta de folga?
 D: Ms. Ray|Is something wrong?|Algo errado?
 D: You|No, I have a doctor's appointment.|Não, tenho uma consulta médica.
 D: Ms. Ray|That is fine. Please tell the team.|Tudo bem. Avise a equipe, por favor.
-D: You|I will. Thank you for understanding.|Aviso. Obrigado por entender.
+D: You|Okay. Thank you for understanding.|Certo. Obrigado por entender.
 D: Ms. Ray|Take care of yourself.|Cuide-se.
 V: minute|minuto;day off|dia de folga;doctor's appointment|consulta médica;team|equipe;understanding|compreensão
 B: Could I take {0} off?|Posso tirar {0} de folga?|Friday=a sexta;tomorrow=amanhã;Monday=a segunda
@@ -190,52 +190,3 @@ R: Thank you for understanding.|Obrigado por entender.
 X: Take care of yourself.|Cuide-se.
 C: Nos EUA, o tempo de folga remunerada varia por empresa, e pedir com antecedência é sempre bem-visto.
 N: Próximo: o desafio do arco.
-
-T: Sorry I am late | Pedir desculpas por atraso | office | Chicago | Ms. Ray,f,👩🏿,gerente
-K: I am sorry I am late. | Desculpe o meu atraso.
-M: Hoje você explica um atraso e promete compensar.
-D: Ms. Ray|Good morning. You are late today.|Bom dia. Você chegou atrasado hoje.
-D: You|I am sorry I am late.|Desculpe o meu atraso.
-D: Ms. Ray|What happened?|O que aconteceu?
-D: You|The train was delayed.|O trem atrasou.
-D: Ms. Ray|How long were you waiting?|Quanto tempo você esperou?
-D: You|About thirty minutes.|Uns trinta minutos.
-D: Ms. Ray|It is okay. Please call next time.|Tudo bem. Ligue da próxima vez.
-D: You|I will. I can stay later to make up the time.|Ligo. Posso ficar até mais tarde para compensar.
-V: late|atrasado;delayed|atrasou;happened|aconteceu;call|ligar;stay|ficar
-B: I am sorry I am {0}.|Desculpe estar {0}.|late=atrasado;lost=perdido;confused=confuso
-B: The {0} was delayed.|{0} atrasou.|train=O trem;bus=O ônibus;flight=O voo
-S: Ms. Ray|What happened?|O que aconteceu?|The train was delayed.|O trem atrasou.
-S: Ms. Ray|Please call next time.|Ligue da próxima vez.|I will. I can stay later.|Ligo. Posso ficar até mais tarde.
-R: I am sorry I am late.|Desculpe o meu atraso.
-R: The train was delayed.|O trem atrasou.
-R: I will call next time.|Vou ligar da próxima vez.
-R: I can stay later.|Posso ficar até mais tarde.
-X: What happened?|O que aconteceu?
-C: Nos EUA, avisar antes que vai se atrasar é uma questão de respeito, mais do que o atraso em si.
-N: Próximo: o desafio do arco.
-
-T: End of the first week | Desafio do arco: fechar a primeira semana | office | Seattle | Ms. Ray,f,👩🏿,gerente
-K: I learned a lot this week. | Aprendi muito esta semana.
-M: Mini-chefe: converse com a chefe sobre a semana e combine a próxima.
-D: Ms. Ray|How was your first week?|Como foi a sua primeira semana?
-D: You|It was great. I learned a lot.|Foi ótima. Aprendi muito.
-D: Ms. Ray|Do you like the team?|Você gostou da equipe?
-D: You|Yes. Everyone is very friendly.|Sim. Todos são muito simpáticos.
-D: Ms. Ray|Any problems?|Algum problema?
-D: You|Only the printer. But it works now.|Só a impressora. Mas agora funciona.
-D: Ms. Ray|Good. Next week you have a big meeting.|Bom. Semana que vem você tem uma reunião importante.
-D: You|I am ready. Thank you for everything!|Estou pronto. Obrigado por tudo!
-V: week|semana;learned|aprendi;friendly|simpático;ready|pronto;next week|semana que vem
-B: I learned a {0}.|Eu aprendi {0}.|lot=muito;little=um pouco;new thing=algo novo
-B: Everyone is very {0}.|Todos são muito {0}.|friendly=simpáticos;kind=gentis;helpful=prestativos
-S: Ms. Ray|How was your first week?|Como foi a sua primeira semana?|It was great. I learned a lot.|Foi ótima. Aprendi muito.
-S: Ms. Ray|Next week you have a big meeting.|Semana que vem você tem uma reunião importante.|I am ready.|Estou pronto.
-R: It was great.|Foi ótima.
-R: I learned a lot.|Aprendi muito.
-R: Everyone is friendly.|Todos são simpáticos.
-R: I am ready.|Estou pronto.
-X: I am ready.|Estou pronto.
-C: Parabéns! Você terminou o arco 9 e ganhou a figurinha rara da Ms. Ray.
-N: Próximo arco: esportes e lazer.
-BOSS: 1
