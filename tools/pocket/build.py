@@ -31,6 +31,45 @@ def load(fn):
         class M:pass
         m=M();m.EPS=parse_txt(fn);m.ARC=('','');return m
     sp=importlib.util.spec_from_file_location('m',fn);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+
+EMO={}
+_ef=os.path.join(R,'emoji_a1.txt')
+if os.path.exists(_ef):
+    for _p in open(_ef,encoding='utf-8').read().replace('\n','|').split('|'):
+        if ':' in _p:_a,_,_b=_p.strip().partition(':');EMO.setdefault(_a.strip().lower(),_b.strip())
+def vocab_cards(x):
+    out=[]
+    for v in x['vocab']:
+        w=v[0];key=w.lower().split(' ')[0];ex=['','']
+        for (_who,en,pt) in x['dlg']:
+            if re.search(r'\b'+re.escape(w.lower())+r'\b',en.lower()):ex=[en,pt];break
+        if not ex[0]:
+            for (_who,en,pt) in x['dlg']:
+                if re.search(r'\b'+re.escape(key)+r'\b',en.lower()):ex=[en,pt];break
+        if not ex[0]:ex=[x['key'][0],x['key'][1]]
+        out.append([w,v[1],EMO.get(w.lower(),EMO.get(key,'')),ex[0],ex[1]])
+    return out
+def narrate(x,name,city):
+    """Leitura em forma de narração (3ª pessoa) montada a partir do diálogo: 'Dee asks: "..."'. Só presente simples (A1)."""
+    L=x['dlg'];pars=[]
+    pars.append(dict(lead=['In %s, you meet %s.'%(city,name),'Em %s, você encontra %s.'%(city,name)],q=['',''],who=None))
+    prevq=False;prevwho=None
+    conn=[('',''),('Then,','Então,'),('',''),('Next,','Depois,'),('',''),('After that,','Em seguida,'),('',''),('Then,','Então,')]
+    for i,(who,en,pt) in enumerate(L):
+        you=(who=='You');first=re.split(r'(?<=[.!?])\s+',en.strip())[0];isq=first.endswith('?');endq=en.strip().endswith('?')
+        if isq:ve,vp='ask' if you else 'asks','pergunta'
+        elif prevq and prevwho!=who:ve,vp='answer' if you else 'answers','responde'
+        else:ve,vp='say' if you else 'says','diz'
+        ce,cp=conn[i%len(conn)] if i<len(L)-1 else ('Finally,','Por fim,')
+        if i==0:ce=cp=''
+        se=('you' if you else who) if ce else ('You' if you else who)
+        sp=('você' if you else who) if cp else ('Você' if you else who)
+        lead_en=((ce+' ') if ce else '')+se+' '+ve+':'
+        lead_pt=((cp+' ') if cp else '')+sp+' '+vp+':'
+        pars.append(dict(lead=[lead_en,lead_pt],q=[en,pt],who=who))
+        prevq=endq;prevwho=who
+    pars.append(dict(lead=['Now you know:','Agora você sabe:'],q=[x['key'][0],x['key'][1]],who=None))
+    return pars
 def episode(lv,arc_i,k,x,base,order):
     n=base+order;g=GR[arc_i%len(GR)];who=x['who']
     name,gender,face,role=who
@@ -38,6 +77,8 @@ def episode(lv,arc_i,k,x,base,order):
     fr=[
      dict(k='pkhero',g=list(g),num=order,lvl=lv.upper(),face=face,name=name,city=x['city'],sub=x['s'],mission=x['mission'],hook=list(x['key']),boss=bool(x.get('boss'))),
      dict(k='pkdlg',g=list(g),title='Diálogo',lines=[list(l) for l in x['dlg']],vocab=[list(v) for v in x['vocab']],cast={name:[face,g[0]],'You':['🙂','#e85d75']}),
+     dict(k='pkvoc',g=list(g),title='Vocabulário',cards=vocab_cards(x)),
+     dict(k='pkread',g=list(g),title='Leitura',pars=narrate(x,name,x['city']),vocab=[list(v) for v in x['vocab']]),
      dict(k='pkbuild',g=list(g),title='Monte a frase',items=[dict(en=b['en'],pt=b['pt'],opts=[list(o) for o in b['opts']]) for b in x['build']]),
      dict(k='pkspeak',g=list(g),title='Fale',items=[dict(who=s['who'],line=list(s['line']),target=s['target'],pt=s['pt']) for s in x['speak']]),
      dict(k='wrap',title='Mochila do episódio',recap=[list(r) for r in x['recap']],expr=list(x['expr']),culture=x['culture'],teaser=dict(t=x['teaser'],d=''),

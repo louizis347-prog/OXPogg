@@ -10,15 +10,15 @@ for k,v in titles.items():
     if v>1:bad.append(('título repetido',k))
 for e in eps:
     fr=e['fr'];n=e['n']
-    if [f['k'] for f in fr]!=['pkhero','pkdlg','pkbuild','pkspeak','wrap']:bad.append((n,'frames'))
+    if [f['k'] for f in fr]!=['pkhero','pkdlg','pkvoc','pkread','pkbuild','pkspeak','wrap']:bad.append((n,'frames'))
     d=fr[1]
     if not 6<=len(d['lines'])<=10:bad.append((n,'dlg',len(d['lines'])))
     if not any(l[0]=='You' for l in d['lines']):bad.append((n,'sem You'))
-    for b in fr[2]['items']:
+    for b in fr[4]['items']:
         if b['en'].count('{')!=b['pt'].count('{') or '{0}' not in b['en']:bad.append((n,'slot',b['en']))
         if len(b['opts'])<2 or any(len(o)!=2 for o in b['opts']):bad.append((n,'opts',b['en']))
-    if len(fr[3]['items'])!=2:bad.append((n,'speak'))
-    if len(fr[4]['recap'])!=4:bad.append((n,'recap'))
+    if len(fr[5]['items'])!=2:bad.append((n,'speak'))
+    if len(fr[6]['recap'])!=4:bad.append((n,'recap'))
     if len(e['v'])<5:bad.append((n,'vocab'))
     txt=' '.join(l[1].lower() for l in d['lines'])
     miss=[v[0] for v in e['v'] if v[0].lower().split(' ')[0] not in txt]
