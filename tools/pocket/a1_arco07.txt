@@ -1,0 +1,241 @@
+# Arco 7 · Casa e bairro
+T: Which room is this? | Nomear os cômodos | living | Chicago | Lena,f,👩🏼,anfitriã
+K: This is the living room. | Esta é a sala de estar.
+M: Hoje você conhece uma casa e aprende o nome dos cômodos.
+D: Lena|Welcome to my home! Come in.|Bem-vindo à minha casa! Entre.
+D: You|Thank you. This is a nice living room.|Obrigado. Esta é uma bela sala de estar.
+D: Lena|And this is the kitchen.|E esta é a cozinha.
+D: You|It is so big! Where is the bathroom?|É tão grande! Onde fica o banheiro?
+D: Lena|Down the hall, on the right.|No fim do corredor, à direita.
+D: You|And your bedroom?|E o seu quarto?
+D: Lena|Upstairs. Do you want to see it?|Lá em cima. Quer ver?
+D: You|Sure, I would love to.|Claro, eu adoraria.
+V: living room|sala de estar;kitchen|cozinha;bathroom|banheiro;bedroom|quarto;upstairs|lá em cima
+B: This is the {0}.|Esta é {0}.|kitchen=a cozinha;bedroom=o quarto;bathroom=o banheiro
+B: It is on the {0}.|Fica à {0}.|right=direita;left=esquerda;second floor=segundo andar
+S: Lena|Welcome to my home!|Bem-vindo à minha casa!|This is a nice living room.|Esta é uma bela sala de estar.
+S: Lena|Down the hall, on the right.|No fim do corredor, à direita.|Where is the bathroom?|Onde fica o banheiro?
+R: This is the living room.|Esta é a sala de estar.
+R: Where is the bathroom?|Onde fica o banheiro?
+R: Down the hall, on the right.|No fim do corredor, à direita.
+R: I would love to.|Eu adoraria.
+X: Come in.|Entre.
+C: Casas americanas costumam ter cozinha aberta para a sala e porão (basement) para guardar coisas.
+N: Próximo: procurar um apartamento.
+
+T: I am looking for an apartment | Procurar um apartamento | hall | Boston | Rick,m,🧑🏻,corretor
+K: I am looking for an apartment. | Estou procurando um apartamento.
+M: Hoje você diz o que procura e quantos quartos quer.
+D: Rick|Hello! How can I help you?|Olá! Como posso ajudar?
+D: You|I am looking for an apartment.|Estou procurando um apartamento.
+D: Rick|How many bedrooms do you need?|De quantos quartos você precisa?
+D: You|Two bedrooms, please.|Dois quartos, por favor.
+D: Rick|Do you want it downtown?|Você quer no centro?
+D: You|Yes, near the subway.|Sim, perto do metrô.
+D: Rick|I have two options. Let us go see them.|Tenho duas opções. Vamos vê-las.
+D: You|That sounds great.|Parece ótimo.
+V: apartment|apartamento;bedrooms|quartos;options|opções;near|perto de;downtown|centro
+B: I am looking for {0}.|Estou procurando {0}.|an apartment=um apartamento;a house=uma casa;a room=um quarto
+B: I need {0} bedrooms.|Preciso de {0} quartos.|two=dois;three=três;one=um
+S: Rick|How can I help you?|Como posso ajudar?|I am looking for an apartment.|Estou procurando um apartamento.
+S: Rick|How many bedrooms do you need?|De quantos quartos você precisa?|Two bedrooms, please.|Dois quartos, por favor.
+R: I am looking for an apartment.|Estou procurando um apartamento.
+R: Two bedrooms, please.|Dois quartos, por favor.
+R: Near the subway.|Perto do metrô.
+R: Let us go see them.|Vamos vê-los.
+X: Let us go see them.|Vamos vê-los.
+C: Nos EUA, aluguéis são anunciados por mês e quase sempre pedem um depósito de segurança.
+N: Próximo: perguntar o preço do aluguel.
+
+T: How much is the rent? | Perguntar preço e condições do aluguel | hall | Boston | Rick,m,🧑🏻,corretor
+K: How much is the rent? | Quanto é o aluguel?
+M: Hoje você pergunta o preço e o que está incluído.
+D: You|How much is the rent?|Quanto é o aluguel?
+D: Rick|It is two thousand dollars a month.|São dois mil dólares por mês.
+D: You|Are utilities included?|As contas estão incluídas?
+D: Rick|Water is included. Electricity is not.|A água está incluída. A luz não.
+D: You|How much is the deposit?|Quanto é o depósito?
+D: Rick|One month of rent.|Um mês de aluguel.
+D: You|Can I have a month to decide?|Posso ter um mês para decidir?
+D: Rick|I can give you two days.|Posso dar dois dias.
+V: rent|aluguel;month|mês;utilities|contas;deposit|depósito;decide|decidir
+B: The rent is {0} a month.|O aluguel é {0} por mês.|two thousand=dois mil;fifteen hundred=mil e quinhentos;eighteen hundred=mil e oitocentos
+B: {0} is included.|{0} está incluída.|Water=A água;Internet=A internet;Heat=O aquecimento
+S: Rick|The rent is two thousand a month.|O aluguel é dois mil por mês.|Are utilities included?|As contas estão incluídas?
+S: Rick|Water is included.|A água está incluída.|How much is the deposit?|Quanto é o depósito?
+R: How much is the rent?|Quanto é o aluguel?
+R: Are utilities included?|As contas estão incluídas?
+R: How much is the deposit?|Quanto é o depósito?
+R: I need two days.|Preciso de dois dias.
+X: a month|por mês
+C: Nos EUA, "utilities" são água, luz, gás e internet, e nem sempre estão no aluguel.
+N: Próximo: ver o que há na casa.
+
+T: Is it furnished? | Perguntar sobre móveis | living | Boston | Rick,m,🧑🏻,corretor
+K: Is it furnished? | Está mobiliado?
+M: Hoje você pergunta o que há no apartamento.
+D: You|Is the apartment furnished?|O apartamento é mobiliado?
+D: Rick|Yes. There is a sofa and a table.|Sim. Há um sofá e uma mesa.
+D: You|Is there a bed in the bedroom?|Há uma cama no quarto?
+D: Rick|Yes, and a small desk.|Sim, e uma escrivaninha pequena.
+D: You|Is there a washing machine?|Há máquina de lavar?
+D: Rick|Yes, in the basement.|Sim, no porão.
+D: You|Perfect. I like it a lot.|Perfeito. Eu gostei muito.
+D: Rick|Great. Let us sign the lease.|Ótimo. Vamos assinar o contrato.
+V: furnished|mobiliado;sofa|sofá;desk|escrivaninha;washing machine|máquina de lavar;lease|contrato
+B: Is there a {0}?|Há {0}?|bed=uma cama;table=uma mesa;washing machine=uma máquina de lavar
+B: There is a {0} in the bedroom.|Há {0} no quarto.|desk=uma escrivaninha;closet=um armário;lamp=uma luminária
+S: Rick|Do you have any questions?|Você tem alguma pergunta?|Is the apartment furnished?|O apartamento é mobiliado?
+S: Rick|Yes, there is a sofa.|Sim, há um sofá.|Is there a washing machine?|Há máquina de lavar?
+R: Is it furnished?|Está mobiliado?
+R: Is there a bed?|Há uma cama?
+R: Is there a washing machine?|Há máquina de lavar?
+R: Let us sign the lease.|Vamos assinar o contrato.
+X: I like it a lot.|Eu gostei muito.
+C: Muitos apartamentos americanos não têm geladeira ou máquina de lavar, então vale perguntar.
+N: Próximo: dar o seu endereço.
+
+T: My address is… | Dizer e soletrar o endereço | hall | Seattle | Dee,f,👩🏽,atendente
+K: My address is 25 Oak Street. | Meu endereço é Oak Street, 25.
+M: Hoje você diz o seu endereço e soletra a rua.
+D: Dee|What is your address?|Qual é o seu endereço?
+D: You|My address is twenty-five Oak Street.|Meu endereço é Oak Street, 25.
+D: Dee|Can you spell Oak?|Você pode soletrar Oak?
+D: You|O-A-K.|O-A-K.
+D: Dee|And the apartment number?|E o número do apartamento?
+D: You|Apartment four B.|Apartamento 4B.
+D: Dee|What is your zip code?|Qual é o seu CEP?
+D: You|It is nine eight one zero one.|É 98101.
+V: address|endereço;spell|soletrar;apartment|apartamento;zip code|CEP;number|número
+B: My address is {0} Oak Street.|Meu endereço é Oak Street, {0}.|twenty-five=25;ten=10;forty=40
+B: Apartment {0}.|Apartamento {0}.|four B=4B;two A=2A;three C=3C
+S: Dee|What is your address?|Qual é o seu endereço?|My address is twenty-five Oak Street.|Meu endereço é Oak Street, 25.
+S: Dee|Can you spell Oak?|Você pode soletrar Oak?|O-A-K.|O-A-K.
+R: My address is…|Meu endereço é…
+R: Can you spell that?|Você pode soletrar isso?
+R: Apartment four B.|Apartamento 4B.
+R: It is nine eight one zero one.|É 98101.
+X: Can you spell that?|Você pode soletrar isso?
+C: Nos EUA, o número vem antes da rua no endereço, e o CEP (zip code) tem cinco números.
+N: Próximo: um vazamento.
+
+T: The sink is leaking | Pedir um conserto | kitchen | Chicago | Hal,m,🧑🏽,encanador
+K: The sink is leaking. | A pia está vazando.
+M: Hoje você explica um problema em casa e combina o conserto.
+D: Hal|Hello. How can I help?|Olá. Como posso ajudar?
+D: You|The sink is leaking.|A pia está vazando.
+D: Hal|Since when?|Desde quando?
+D: You|Since this morning.|Desde esta manhã.
+D: Hal|I can come at three o'clock.|Posso ir às três horas.
+D: You|That is perfect. How much will it cost?|Perfeito. Quanto vai custar?
+D: Hal|About eighty dollars.|Uns oitenta dólares.
+D: You|Okay. Thank you!|Ok. Obrigado!
+V: sink|pia;leaking|vazando;since|desde;fix|consertar;cost|custar
+B: The {0} is leaking.|{0} está vazando.|sink=A pia;roof=O telhado;faucet=A torneira
+B: I can come at {0}.|Posso ir às {0}.|three=três;ten=dez;noon=meio-dia
+S: Hal|How can I help?|Como posso ajudar?|The sink is leaking.|A pia está vazando.
+S: Hal|I can come at three.|Posso ir às três.|How much will it cost?|Quanto vai custar?
+R: The sink is leaking.|A pia está vazando.
+R: Since this morning.|Desde esta manhã.
+R: How much will it cost?|Quanto vai custar?
+R: That is perfect.|Está perfeito.
+X: Since when?|Desde quando?
+C: Nos EUA, encanadores (plumbers) costumam cobrar uma taxa mínima só para a visita.
+N: Próximo: conhecer os vizinhos.
+
+T: Nice to meet the neighbors | Conhecer os vizinhos | street | Denver | Ruth,f,👩🏻,vizinha
+K: I just moved in next door. | Acabei de me mudar para a casa ao lado.
+M: Hoje você se apresenta aos vizinhos.
+D: Ruth|Hello! Are you the new neighbor?|Olá! Você é o novo vizinho?
+D: You|Yes, I just moved in next door.|Sim, acabei de me mudar para a casa ao lado.
+D: Ruth|Welcome to the neighborhood!|Bem-vindo ao bairro!
+D: You|Thank you. It is very quiet here.|Obrigado. É muito calmo aqui.
+D: Ruth|It is. The park is two blocks away.|É sim. O parque fica a duas quadras.
+D: You|Good to know. Where is the supermarket?|Bom saber. Onde fica o supermercado?
+D: Ruth|On Main Street. I can show you.|Na Main Street. Posso mostrar.
+D: You|That is kind of you.|Que gentileza sua.
+V: neighbor|vizinho;neighborhood|bairro;quiet|calmo;next door|ao lado;moved in|mudou-se
+B: I just moved {0}.|Eu acabei de me mudar {0}.|in=para cá;here=para cá;to Denver=para Denver
+B: The {0} is two blocks away.|{0} fica a duas quadras.|park=O parque;supermarket=O supermercado;school=A escola
+S: Ruth|Are you the new neighbor?|Você é o novo vizinho?|Yes, I just moved in next door.|Sim, acabei de me mudar para a casa ao lado.
+S: Ruth|It is two blocks away.|Fica a duas quadras.|Good to know.|Bom saber.
+R: I just moved in.|Acabei de me mudar.
+R: It is very quiet here.|É muito calmo aqui.
+R: Where is the supermarket?|Onde fica o supermercado?
+R: That is kind of you.|Que gentileza sua.
+X: Welcome to the neighborhood!|Bem-vindo ao bairro!
+C: Nos EUA, é comum vizinhos levarem um bolo ou uma torta para dar as boas-vindas.
+N: Próximo: pedir silêncio com educação.
+
+T: Could you keep it down? | Pedir silêncio com educação | hall | New York | Pat,m,🧑🏼,vizinho
+K: Could you keep it down, please? | Você poderia fazer menos barulho, por favor?
+M: Hoje você pede silêncio sem criar atrito.
+D: You|Hi. I am your neighbor from apartment four.|Oi. Eu sou o seu vizinho do apartamento quatro.
+D: Pat|Oh, hello! Is everything okay?|Ah, olá! Está tudo bem?
+D: You|The music is a little loud.|A música está um pouco alta.
+D: Pat|I am so sorry. I did not know.|Sinto muito. Eu não sabia.
+D: You|Could you keep it down, please?|Você poderia fazer menos barulho, por favor?
+D: Pat|Of course. I will turn it down now.|Claro. Vou abaixar agora mesmo.
+D: You|Thank you. I appreciate it.|Obrigado. Eu agradeço.
+D: Pat|No problem. Good night!|Sem problema. Boa noite!
+V: loud|alto;turn down|abaixar;sorry|desculpe;appreciate|agradecer;neighbor|vizinho
+B: The {0} is a little loud.|{0} está um pouco alta.|music=A música;TV=A TV;party=A festa
+B: Could you {0}, please?|Você poderia {0}, por favor?|keep it down=fazer menos barulho;turn it down=abaixar;close the door=fechar a porta
+S: Pat|Is everything okay?|Está tudo bem?|The music is a little loud.|A música está um pouco alta.
+S: Pat|I am so sorry.|Sinto muito.|Could you keep it down, please?|Você poderia fazer menos barulho, por favor?
+R: The music is a little loud.|A música está um pouco alta.
+R: Could you keep it down?|Você poderia fazer menos barulho?
+R: I appreciate it.|Eu agradeço.
+R: Good night!|Boa noite!
+X: I appreciate it.|Eu agradeço.
+C: Em prédios americanos, existem "quiet hours" (horas de silêncio), em geral depois das dez da noite.
+N: Próximo: o dia da mudança.
+
+T: Moving day | Organizar uma mudança | living | Austin | Ned,m,🧑🏿,amigo
+K: Can you help me move this box? | Você pode me ajudar a mover esta caixa?
+M: Hoje você pede ajuda na mudança e diz onde cada coisa vai.
+D: Ned|Ready for moving day?|Pronto para o dia da mudança?
+D: You|Almost. Can you help me move this box?|Quase. Você pode me ajudar a mover esta caixa?
+D: Ned|Sure. Where does it go?|Claro. Para onde vai?
+D: You|In the bedroom, please.|No quarto, por favor.
+D: Ned|And this sofa?|E este sofá?
+D: You|In the living room, by the window.|Na sala, perto da janela.
+D: Ned|Careful! It is heavy.|Cuidado! É pesado.
+D: You|Thank you so much for helping.|Muito obrigado por ajudar.
+V: box|caixa;heavy|pesado;careful|cuidado;move|mover;window|janela
+B: Can you help me move {0}?|Você pode me ajudar a mover {0}?|this box=esta caixa;this sofa=este sofá;this table=esta mesa
+B: It goes in the {0}.|Vai {0}.|bedroom=no quarto;kitchen=na cozinha;living room=na sala
+S: Ned|Where does it go?|Para onde vai?|In the bedroom, please.|No quarto, por favor.
+S: Ned|Careful! It is heavy.|Cuidado! É pesado.|Thank you so much for helping.|Muito obrigado por ajudar.
+R: Can you help me move this box?|Você pode me ajudar a mover esta caixa?
+R: It goes in the bedroom.|Vai no quarto.
+R: It is heavy.|É pesado.
+R: Thank you for helping.|Obrigado por ajudar.
+X: Careful!|Cuidado!
+C: Nos EUA, é comum pagar pizza e cerveja aos amigos que ajudam na mudança.
+N: Próximo: o desafio do arco.
+
+T: Housewarming party | Desafio do arco: uma festa de casa nova | living | Chicago | Lena,f,👩🏼,anfitriã
+K: Welcome to my new home! | Bem-vindo à minha casa nova!
+M: Mini-chefe: receba convidados, mostre a casa e diga o endereço.
+D: You|Welcome to my new home! Come in.|Bem-vindo à minha casa nova! Entre.
+D: Lena|Thank you for inviting me. It is lovely!|Obrigada por me convidar. É linda!
+D: You|This is the living room, and this is the kitchen.|Esta é a sala, e esta é a cozinha.
+D: Lena|Is it furnished?|É mobiliada?
+D: You|No, I moved everything from my old place.|Não, trouxe tudo da minha casa antiga.
+D: Lena|What is your address? I want to visit again.|Qual é o seu endereço? Quero visitar de novo.
+D: You|It is twenty-five Oak Street, apartment four B.|É Oak Street, 25, apartamento 4B.
+D: Lena|Perfect. Congratulations on the new home!|Perfeito. Parabéns pela casa nova!
+V: invite|convidar;lovely|lindo;congratulations|parabéns;visit|visitar;old place|casa antiga
+B: This is the {0}.|Esta é {0}.|living room=a sala;kitchen=a cozinha;bedroom=o quarto
+B: My address is {0}.|Meu endereço é {0}.|twenty-five Oak Street=Oak Street, 25;ten Main Street=Main Street, 10;forty Pine Street=Pine Street, 40
+S: Lena|It is lovely!|É linda!|This is the living room.|Esta é a sala.
+S: Lena|What is your address?|Qual é o seu endereço?|It is twenty-five Oak Street.|É Oak Street, 25.
+R: Welcome to my new home!|Bem-vindo à minha casa nova!
+R: This is the kitchen.|Esta é a cozinha.
+R: My address is…|Meu endereço é…
+R: Congratulations!|Parabéns!
+X: Congratulations on…!|Parabéns por…!
+C: Parabéns! Você terminou o arco 7 e ganhou a figurinha rara da Lena.
+N: Próximo arco: escola e estudo.
+BOSS: 1

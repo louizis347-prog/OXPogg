@@ -1,0 +1,241 @@
+# Arco 9 · Trabalho e escritório
+T: Is this the right office? | Chegar no primeiro dia de trabalho | office | Seattle | Ms. Ray,f,👩🏿,gerente
+K: Is this the right office? | Este é o escritório certo?
+M: Hoje você chega ao trabalho e diz quem procura.
+D: You|Good morning. Is this the right office?|Bom dia. Este é o escritório certo?
+D: Ms. Ray|That depends. Who are you looking for?|Depende. Quem você procura?
+D: You|I am looking for Ms. Ray. It is my first day.|Procuro a Ms. Ray. É o meu primeiro dia.
+D: Ms. Ray|That is me! Welcome to the team.|Sou eu! Bem-vindo à equipe.
+D: You|Thank you. I am excited to be here.|Obrigado. Estou animado por estar aqui.
+D: Ms. Ray|Let me show you your desk.|Deixe-me mostrar a sua mesa.
+D: You|Great. Where do I put my things?|Ótimo. Onde coloco as minhas coisas?
+D: Ms. Ray|In the locker next to the door.|No armário ao lado da porta.
+V: office|escritório;team|equipe;desk|mesa de trabalho;locker|armário;excited|animado
+B: I am looking for {0}.|Procuro {0}.|Ms. Ray=a Ms. Ray;the manager=o gerente;the boss=o chefe
+B: It is my {0} day.|É o meu {0} dia.|first=primeiro;second=segundo;last=último
+S: Ms. Ray|Who are you looking for?|Quem você procura?|I am looking for Ms. Ray.|Procuro a Ms. Ray.
+S: Ms. Ray|Welcome to the team.|Bem-vindo à equipe.|I am excited to be here.|Estou animado por estar aqui.
+R: Is this the right office?|Este é o escritório certo?
+R: It is my first day.|É o meu primeiro dia.
+R: I am excited to be here.|Estou animado por estar aqui.
+R: Where do I put my things?|Onde coloco as minhas coisas?
+X: Welcome to the team.|Bem-vindo à equipe.
+C: Nos EUA, é comum os colegas se chamarem pelo primeiro nome, até o chefe.
+N: Próximo: um horário de reunião.
+
+T: I have a meeting at ten | Falar de reuniões e horários | office | Seattle | Eli,m,🧑🏿,colega
+K: I have a meeting at ten. | Tenho uma reunião às dez.
+M: Hoje você combina horários de reunião com um colega.
+D: Eli|Are you free this morning?|Você está livre esta manhã?
+D: You|I have a meeting at ten.|Tenho uma reunião às dez.
+D: Eli|How long is it?|Quanto tempo dura?
+D: You|One hour. Then I am free.|Uma hora. Depois estou livre.
+D: Eli|Can we talk at eleven?|Podemos conversar às onze?
+D: You|Eleven is perfect.|Às onze está perfeito.
+D: Eli|Great. Let us meet in the small room.|Ótimo. Vamos nos encontrar na sala pequena.
+D: You|See you then.|Até lá.
+V: meeting|reunião;free|livre;hour|hora;room|sala;talk|conversar
+B: I have a meeting at {0}.|Tenho uma reunião às {0}.|ten=dez;two=duas;four thirty=quatro e meia
+B: Can we talk at {0}?|Podemos conversar às {0}?|eleven=onze;noon=meio-dia;three=três
+S: Eli|Are you free this morning?|Você está livre esta manhã?|I have a meeting at ten.|Tenho uma reunião às dez.
+S: Eli|Can we talk at eleven?|Podemos conversar às onze?|Eleven is perfect.|Às onze está perfeito.
+R: I have a meeting at ten.|Tenho uma reunião às dez.
+R: How long is it?|Quanto tempo dura?
+R: Can we talk at eleven?|Podemos conversar às onze?
+R: See you then.|Até lá.
+X: See you then.|Até lá.
+C: Reuniões americanas costumam começar na hora e ter horário de término marcado.
+N: Próximo: pedir um arquivo.
+
+T: Can you send me the file? | Pedir e enviar arquivos | office | Seattle | Priya,f,🧑🏽,colega
+K: Can you send me the file? | Você pode me enviar o arquivo?
+M: Hoje você pede um arquivo por e-mail e confirma o recebimento.
+D: You|Hi, Priya. Can you send me the file?|Oi, Priya. Você pode me enviar o arquivo?
+D: Priya|Which file? The report or the budget?|Qual arquivo? O relatório ou o orçamento?
+D: You|The report, please.|O relatório, por favor.
+D: Priya|Sure. What is your email address?|Claro. Qual é o seu e-mail?
+D: You|It is alex at company dot com.|É alex arroba company ponto com.
+D: Priya|Done. I just sent it.|Pronto. Acabei de enviar.
+D: You|I got it. Thank you!|Recebi. Obrigado!
+D: Priya|No problem!|Sem problema!
+V: file|arquivo;report|relatório;budget|orçamento;email|e-mail;send|enviar
+B: Can you send me {0}?|Você pode me enviar {0}?|the file=o arquivo;the report=o relatório;the photos=as fotos
+B: My email is alex at {0} dot com.|Meu e-mail é alex arroba {0} ponto com.|company=company;work=work;mail=mail
+S: Priya|Which file?|Qual arquivo?|The report, please.|O relatório, por favor.
+S: Priya|What is your email address?|Qual é o seu e-mail?|It is alex at company dot com.|É alex arroba company ponto com.
+R: Can you send me the file?|Você pode me enviar o arquivo?
+R: What is your email?|Qual é o seu e-mail?
+R: I got it.|Recebi.
+R: Thank you!|Obrigado!
+X: I just sent it.|Acabei de enviar.
+C: Em inglês, "@" lê-se "at" e "." lê-se "dot": alex@company.com é "alex at company dot com".
+N: Próximo: apresentar um colega.
+
+T: Let me introduce you | Apresentar colegas | office | San Francisco | Dee,f,👩🏽,colega
+K: Let me introduce you to Dee. | Deixe-me apresentar você à Dee.
+M: Hoje você apresenta duas pessoas e responde a uma apresentação.
+D: Eli|Alex, let me introduce you to Dee.|Alex, deixe-me apresentar você à Dee.
+D: You|Hi, Dee. Nice to meet you.|Oi, Dee. Prazer em conhecer você.
+D: Dee|Nice to meet you too. What do you do here?|O prazer é meu. O que você faz aqui?
+D: You|I work in sales. And you?|Eu trabalho em vendas. E você?
+D: Dee|I work in design. We are on the same floor.|Eu trabalho em design. Estamos no mesmo andar.
+D: You|Great! We can have lunch sometime.|Ótimo! Podemos almoçar um dia.
+D: Dee|I would like that.|Eu gostaria.
+D: Eli|I will leave you two to talk.|Vou deixar vocês dois conversando.
+V: introduce|apresentar;sales|vendas;design|design;same|mesmo;sometime|um dia
+B: Let me introduce you to {0}.|Deixe-me apresentar você a {0}.|Dee=Dee;my boss=meu chefe;my friend=meu amigo
+B: I work in {0}.|Eu trabalho em {0}.|sales=vendas;design=design;marketing=marketing
+S: Dee|What do you do here?|O que você faz aqui?|I work in sales. And you?|Eu trabalho em vendas. E você?
+S: Dee|We are on the same floor.|Estamos no mesmo andar.|We can have lunch sometime.|Podemos almoçar um dia.
+R: Let me introduce you to Dee.|Deixe-me apresentar você à Dee.
+R: Nice to meet you.|Prazer em conhecer você.
+R: I work in sales.|Eu trabalho em vendas.
+R: I would like that.|Eu gostaria.
+X: I would like that.|Eu gostaria.
+C: Nos EUA, ao ser apresentado, é normal apertar a mão e dizer "Nice to meet you".
+N: Próximo: atender o telefone no trabalho.
+
+T: Can I take a message? | Anotar um recado | office | Chicago | Eli,m,🧑🏿,colega
+K: Can I take a message? | Posso anotar um recado?
+M: Hoje você atende o telefone e anota um recado.
+D: You|Good morning. Alex speaking. How can I help?|Bom dia. Alex falando. Como posso ajudar?
+D: Eli|Hi. Is Ms. Ray there?|Oi. A Ms. Ray está?
+D: You|She is in a meeting. Can I take a message?|Ela está numa reunião. Posso anotar um recado?
+D: Eli|Yes. Please tell her Eli called.|Sim. Diga a ela que o Eli ligou.
+D: You|Does she have your number?|Ela tem o seu número?
+D: Eli|Yes, she does. Thank you.|Tem sim. Obrigado.
+D: You|I will give her the message.|Vou passar o recado.
+D: Eli|Thanks. Goodbye!|Obrigado. Tchau!
+V: speaking|falando;message|recado;called|ligou;number|número;tell|dizer
+B: Can I take a {0}?|Posso anotar {0}?|message=um recado;name=o nome;number=o número
+B: She is in a {0}.|Ela está {0}.|meeting=numa reunião;class=numa aula;call=numa ligação
+S: Eli|Is Ms. Ray there?|A Ms. Ray está?|She is in a meeting. Can I take a message?|Ela está numa reunião. Posso anotar um recado?
+S: Eli|Please tell her Eli called.|Diga a ela que o Eli ligou.|I will give her the message.|Vou passar o recado.
+R: Alex speaking.|Alex falando.
+R: Can I take a message?|Posso anotar um recado?
+R: She is in a meeting.|Ela está numa reunião.
+R: I will give her the message.|Vou passar o recado.
+X: Alex speaking.|Alex falando. (ao atender)
+C: Ao atender no trabalho, os americanos dizem "[Nome] speaking" ou "How can I help you?".
+N: Próximo: um problema no escritório.
+
+T: The printer is not working | Relatar um problema | office | Chicago | Hank,m,🧑🏼,suporte
+K: The printer is not working. | A impressora não está funcionando.
+M: Hoje você pede ajuda ao suporte com um equipamento.
+D: You|Hi. The printer is not working.|Oi. A impressora não está funcionando.
+D: Hank|What is the problem?|Qual é o problema?
+D: You|There is paper stuck inside.|Tem papel preso lá dentro.
+D: Hank|Okay. Is the light red or green?|Ok. A luz está vermelha ou verde?
+D: You|It is red.|Está vermelha.
+D: Hank|I will be there in five minutes.|Chego aí em cinco minutos.
+D: You|Thank you. It is urgent.|Obrigado. É urgente.
+D: Hank|Understood.|Entendido.
+V: printer|impressora;paper|papel;stuck|preso;urgent|urgente;light|luz
+B: The {0} is not working.|{0} não está funcionando.|printer=A impressora;computer=O computador;phone=O telefone
+B: I will be there in {0}.|Chego aí em {0}.|five minutes=cinco minutos;ten minutes=dez minutos;an hour=uma hora
+S: Hank|What is the problem?|Qual é o problema?|The printer is not working.|A impressora não está funcionando.
+S: Hank|I will be there in five minutes.|Chego aí em cinco minutos.|It is urgent.|É urgente.
+R: The printer is not working.|A impressora não está funcionando.
+R: There is paper stuck inside.|Tem papel preso lá dentro.
+R: It is urgent.|É urgente.
+R: Understood.|Entendido.
+X: Understood.|Entendido.
+C: Em escritórios americanos, problemas de TI costumam ser abertos por um chamado (ticket) ou por e-mail.
+N: Próximo: o horário do almoço.
+
+T: Lunch break | Combinar o almoço | cafe | New York | Dee,f,👩🏽,colega
+K: Do you want to grab lunch? | Quer almoçar comigo?
+M: Hoje você convida uma colega para almoçar e escolhem o lugar.
+D: You|It is almost noon. Do you want to grab lunch?|Está quase meio-dia. Quer almoçar comigo?
+D: Dee|Sure! Where do you want to go?|Claro! Aonde você quer ir?
+D: You|There is a good sandwich place nearby.|Tem uma boa sanduicheria aqui perto.
+D: Dee|Sounds good. How long is your break?|Parece bom. Quanto tempo é o seu intervalo?
+D: You|One hour. We have time.|Uma hora. Temos tempo.
+D: Dee|Perfect. Let me get my bag.|Perfeito. Deixe-me pegar minha bolsa.
+D: You|I will wait at the door.|Espero na porta.
+D: Dee|Be right there!|Já vou!
+V: lunch|almoço;break|intervalo;sandwich|sanduíche;nearby|aqui perto;wait|esperar
+B: Do you want to grab {0}?|Quer pegar {0} comigo?|lunch=um almoço;coffee=um café;a bite=algo para comer
+B: My break is {0}.|Meu intervalo é de {0}.|one hour=uma hora;thirty minutes=trinta minutos;forty-five minutes=quarenta e cinco minutos
+S: Dee|Where do you want to go?|Aonde você quer ir?|There is a good sandwich place nearby.|Tem uma boa sanduicheria aqui perto.
+S: Dee|How long is your break?|Quanto tempo é o seu intervalo?|One hour. We have time.|Uma hora. Temos tempo.
+R: Do you want to grab lunch?|Quer almoçar comigo?
+R: There is a good place nearby.|Tem um bom lugar por perto.
+R: We have time.|Temos tempo.
+R: I will wait at the door.|Espero na porta.
+X: Be right there!|Já vou!
+C: Nos EUA, muita gente almoça rápido, na própria mesa ou numa lanchonete próxima ("grab a bite").
+N: Próximo: pedir um dia de folga.
+
+T: I need a day off | Pedir folga ao chefe | office | Seattle | Ms. Ray,f,👩🏿,gerente
+K: Could I take Friday off? | Posso tirar a sexta de folga?
+M: Hoje você pede folga com educação e dá um motivo.
+D: You|Ms. Ray, do you have a minute?|Ms. Ray, a senhora tem um minuto?
+D: Ms. Ray|Of course. What is it?|Claro. O que é?
+D: You|Could I take Friday off?|Posso tirar a sexta de folga?
+D: Ms. Ray|Is something wrong?|Algo errado?
+D: You|No, I have a doctor's appointment.|Não, tenho uma consulta médica.
+D: Ms. Ray|That is fine. Please tell the team.|Tudo bem. Avise a equipe, por favor.
+D: You|I will. Thank you for understanding.|Aviso. Obrigado por entender.
+D: Ms. Ray|Take care of yourself.|Cuide-se.
+V: minute|minuto;day off|dia de folga;doctor's appointment|consulta médica;team|equipe;understanding|compreensão
+B: Could I take {0} off?|Posso tirar {0} de folga?|Friday=a sexta;tomorrow=amanhã;Monday=a segunda
+B: I have {0}.|Eu tenho {0}.|a doctor's appointment=uma consulta;a family event=um evento de família;a trip=uma viagem
+S: Ms. Ray|What is it?|O que é?|Could I take Friday off?|Posso tirar a sexta de folga?
+S: Ms. Ray|Is something wrong?|Algo errado?|No, I have a doctor's appointment.|Não, tenho uma consulta médica.
+R: Do you have a minute?|A senhora tem um minuto?
+R: Could I take Friday off?|Posso tirar a sexta de folga?
+R: I have an appointment.|Tenho uma consulta.
+R: Thank you for understanding.|Obrigado por entender.
+X: Take care of yourself.|Cuide-se.
+C: Nos EUA, o tempo de folga remunerada varia por empresa, e pedir com antecedência é sempre bem-visto.
+N: Próximo: o desafio do arco.
+
+T: Sorry I am late | Pedir desculpas por atraso | office | Chicago | Ms. Ray,f,👩🏿,gerente
+K: I am sorry I am late. | Desculpe o meu atraso.
+M: Hoje você explica um atraso e promete compensar.
+D: Ms. Ray|Good morning. You are late today.|Bom dia. Você chegou atrasado hoje.
+D: You|I am sorry I am late.|Desculpe o meu atraso.
+D: Ms. Ray|What happened?|O que aconteceu?
+D: You|The train was delayed.|O trem atrasou.
+D: Ms. Ray|How long were you waiting?|Quanto tempo você esperou?
+D: You|About thirty minutes.|Uns trinta minutos.
+D: Ms. Ray|It is okay. Please call next time.|Tudo bem. Ligue da próxima vez.
+D: You|I will. I can stay later to make up the time.|Ligo. Posso ficar até mais tarde para compensar.
+V: late|atrasado;delayed|atrasou;happened|aconteceu;call|ligar;stay|ficar
+B: I am sorry I am {0}.|Desculpe estar {0}.|late=atrasado;lost=perdido;confused=confuso
+B: The {0} was delayed.|{0} atrasou.|train=O trem;bus=O ônibus;flight=O voo
+S: Ms. Ray|What happened?|O que aconteceu?|The train was delayed.|O trem atrasou.
+S: Ms. Ray|Please call next time.|Ligue da próxima vez.|I will. I can stay later.|Ligo. Posso ficar até mais tarde.
+R: I am sorry I am late.|Desculpe o meu atraso.
+R: The train was delayed.|O trem atrasou.
+R: I will call next time.|Vou ligar da próxima vez.
+R: I can stay later.|Posso ficar até mais tarde.
+X: What happened?|O que aconteceu?
+C: Nos EUA, avisar antes que vai se atrasar é uma questão de respeito, mais do que o atraso em si.
+N: Próximo: o desafio do arco.
+
+T: End of the first week | Desafio do arco: fechar a primeira semana | office | Seattle | Ms. Ray,f,👩🏿,gerente
+K: I learned a lot this week. | Aprendi muito esta semana.
+M: Mini-chefe: converse com a chefe sobre a semana e combine a próxima.
+D: Ms. Ray|How was your first week?|Como foi a sua primeira semana?
+D: You|It was great. I learned a lot.|Foi ótima. Aprendi muito.
+D: Ms. Ray|Do you like the team?|Você gostou da equipe?
+D: You|Yes. Everyone is very friendly.|Sim. Todos são muito simpáticos.
+D: Ms. Ray|Any problems?|Algum problema?
+D: You|Only the printer. But it works now.|Só a impressora. Mas agora funciona.
+D: Ms. Ray|Good. Next week you have a big meeting.|Bom. Semana que vem você tem uma reunião importante.
+D: You|I am ready. Thank you for everything!|Estou pronto. Obrigado por tudo!
+V: week|semana;learned|aprendi;friendly|simpático;ready|pronto;next week|semana que vem
+B: I learned a {0}.|Eu aprendi {0}.|lot=muito;little=um pouco;new thing=algo novo
+B: Everyone is very {0}.|Todos são muito {0}.|friendly=simpáticos;kind=gentis;helpful=prestativos
+S: Ms. Ray|How was your first week?|Como foi a sua primeira semana?|It was great. I learned a lot.|Foi ótima. Aprendi muito.
+S: Ms. Ray|Next week you have a big meeting.|Semana que vem você tem uma reunião importante.|I am ready.|Estou pronto.
+R: It was great.|Foi ótima.
+R: I learned a lot.|Aprendi muito.
+R: Everyone is friendly.|Todos são simpáticos.
+R: I am ready.|Estou pronto.
+X: I am ready.|Estou pronto.
+C: Parabéns! Você terminou o arco 9 e ganhou a figurinha rara da Ms. Ray.
+N: Próximo arco: esportes e lazer.
+BOSS: 1
