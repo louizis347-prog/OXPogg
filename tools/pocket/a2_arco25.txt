@@ -1,0 +1,207 @@
+# Arco 25 · Casa, contas e manutenção
+T: The electricity bill | Entender uma conta de luz | living | Chicago | Ben,m,🧑🏽,colega de casa
+K: The bill is higher this month. | A conta está mais alta este mês.
+M: Hoje você entende a conta e propõe economizar.
+D: Ben|Look at this. The electricity bill is higher this month.|Olhe isto. A conta de luz está mais alta este mês.
+D: You|How much is it?|Quanto é?
+D: Ben|One hundred and twenty dollars. Last month it was eighty.|Cento e vinte dólares. No mês passado foi oitenta.
+D: You|It is because of the air conditioner. We used it all day.|É por causa do ar-condicionado. Usamos o dia todo.
+D: Ben|We should turn it off when we leave the house.|Deveríamos desligar quando saímos de casa.
+D: You|And let us switch to LED light bulbs. They use less energy.|E vamos trocar por lâmpadas de LED. Gastam menos energia.
+D: Ben|Good idea. I will buy some at the hardware store.|Boa ideia. Vou comprar na loja de ferragens.
+D: You|Great. Let us split the bill as usual.|Ótimo. Vamos dividir a conta como sempre.
+V: bill|conta;higher|mais alta;air conditioner|ar-condicionado;energy|energia;hardware store|loja de ferragens
+B: The electricity bill is {0} this month.|A conta de luz está {0} este mês.|higher=mais alta;lower=mais baixa;the same=igual
+B: We should turn it off when we {0}.|Deveríamos desligar quando {0}.|leave the house=saímos de casa;go to bed=vamos dormir;go out=saímos
+S: Ben|The bill is higher this month.|A conta está mais alta este mês.|It is because of the air conditioner.|É por causa do ar-condicionado.
+S: Ben|We should turn it off.|Deveríamos desligar.|Good idea. Let us buy LED light bulbs.|Boa ideia. Vamos comprar lâmpadas de LED.
+R: The electricity bill is higher this month.|A conta de luz está mais alta.
+R: We used the air conditioner all day.|Usamos o ar-condicionado o dia todo.
+R: LED bulbs use less energy.|Lâmpadas de LED gastam menos energia.
+R: Let us split the bill.|Vamos dividir a conta.
+X: As usual.|Como sempre.
+C: Nos EUA, as contas de luz, gás e água costumam chegar por e-mail e podem ser pagas online.
+
+T: A leaking faucet | Chamar o encanador | kitchen | Phoenix | Gus,m,🧑🏼,encanador
+K: The faucet has been leaking for two days. | A torneira está vazando há dois dias.
+M: Hoje você descreve um vazamento e combina o conserto.
+D: You|Hello. The faucet in my kitchen has been leaking for two days.|Olá. A torneira da minha cozinha está vazando há dois dias.
+D: Gus|Is the water dripping or running?|A água está pingando ou correndo?
+D: You|Dripping, but it is getting worse.|Pingando, mas está piorando.
+D: Gus|I can come tomorrow at ten. It will take about an hour.|Posso ir amanhã às dez. Leva cerca de uma hora.
+D: You|How much will it cost?|Quanto vai custar?
+D: Gus|Eighty dollars for the visit, plus the parts.|Oitenta dólares pela visita, mais as peças.
+D: You|That is fine. Should I turn off the water?|Tudo bem. Devo fechar a água?
+D: Gus|Yes, close the valve under the sink until I arrive.|Sim, feche o registro embaixo da pia até eu chegar.
+V: faucet|torneira;dripping|pingando;parts|peças;valve|registro;visit|visita
+B: The faucet has been leaking for {0}.|A torneira está vazando há {0}.|two days=dois dias;a week=uma semana;a few hours=algumas horas
+B: Close the {0} until I arrive.|Feche {0} até eu chegar.|valve=o registro;door=a porta;window=a janela
+S: Gus|Is the water dripping or running?|A água pinga ou corre?|Dripping, but it is getting worse.|Pingando, mas está piorando.
+S: Gus|I can come tomorrow at ten.|Posso ir amanhã às dez.|That is fine. How much will it cost?|Tudo bem. Quanto vai custar?
+R: The faucet has been leaking for two days.|A torneira vaza há dois dias.
+R: It is getting worse.|Está piorando.
+R: How much will it cost?|Quanto vai custar?
+R: Close the valve under the sink.|Feche o registro embaixo da pia.
+X: Plus the parts.|Mais as peças.
+C: Nos EUA, encanadores cobram uma taxa só pela visita, e o preço final depende do conserto.
+
+T: Painting the room | Pintar um cômodo | living | Austin | Tom,m,🧑🏽,amigo
+K: Which color do you prefer? | Qual cor você prefere?
+M: Hoje você escolhe cores e planeja a pintura.
+D: Tom|We are going to paint the living room. Which color do you prefer?|Vamos pintar a sala. Qual cor você prefere?
+D: You|Something light, like pale blue or soft yellow.|Algo claro, como azul-claro ou amarelo suave.
+D: Tom|Blue is calmer. How much paint do we need?|Azul é mais calmo. De quanta tinta precisamos?
+D: You|About two gallons for the walls, and one for the ceiling.|Uns dois galões para as paredes e um para o teto.
+D: Tom|Should we buy brushes or rollers?|Compramos pincéis ou rolos?
+D: You|Both. Rollers for the walls, and brushes for the corners.|Os dois. Rolos para as paredes e pincéis para os cantos.
+D: Tom|And do not forget tape and plastic for the floor.|E não esqueça fita e plástico para o chão.
+D: You|Good thinking. We can start on Saturday morning.|Boa lembrança. Podemos começar no sábado de manhã.
+V: paint|pintar|tinta;ceiling|teto;brushes|pincéis;rollers|rolos;corners|cantos
+B: Which {0} do you prefer?|Qual {0} você prefere?|color=cor;brush=pincel;style=estilo
+B: We need two gallons of {0}.|Precisamos de dois galões de {0}.|paint=tinta;water=água;glue=cola
+S: Tom|Which color do you prefer?|Qual cor você prefere?|Something light, like pale blue.|Algo claro, como azul-claro.
+S: Tom|Rollers or brushes?|Rolos ou pincéis?|Both. Rollers for the walls.|Os dois. Rolos para as paredes.
+R: We are going to paint the living room.|Vamos pintar a sala.
+R: Which color do you prefer?|Qual cor você prefere?
+R: We need two gallons of paint.|Precisamos de dois galões de tinta.
+R: Do not forget the tape.|Não esqueça a fita.
+X: Good thinking.|Boa lembrança.
+C: Nos EUA, muitos fazem a pintura da casa por conta própria, e lojas de ferragens ajudam a escolher cor e quantidade.
+
+T: Assembling furniture | Montar um móvel pelo manual | living | Seattle | Max,m,🧑🏼,amigo
+K: Follow the instructions step by step. | Siga as instruções passo a passo.
+M: Hoje você segue instruções para montar um móvel.
+D: Max|I bought a bookshelf, but it came in pieces.|Comprei uma estante, mas veio em peças.
+D: You|Let us read the instructions. Step one: put the sides on the floor.|Vamos ler as instruções. Passo um: coloque as laterais no chão.
+D: Max|Where are the screws?|Onde estão os parafusos?
+D: You|In the small bag. There are twelve long ones and eight short ones.|No saquinho. São doze compridos e oito curtos.
+D: Max|Step two says to attach the shelves with the long screws.|O passo dois diz para fixar as prateleiras com os parafusos compridos.
+D: You|Hand me the screwdriver, please.|Me passe a chave de fenda, por favor.
+D: Max|Here you are. Is it straight?|Aqui está. Está reto?
+D: You|Almost. Let me check with the level. Perfect!|Quase. Deixe-me conferir com o nível. Perfeito!
+V: instructions|instruções;screws|parafusos;screwdriver|chave de fenda;shelves|prateleiras;straight|reto
+B: Step one: put the sides on the {0}.|Passo um: coloque as laterais {0}.|floor=no chão;table=na mesa;wall=na parede
+B: Hand me the {0}, please.|Me passe {0}, por favor.|screwdriver=a chave de fenda;hammer=o martelo;tape=a fita
+S: Max|Where are the screws?|Onde estão os parafusos?|In the small bag. There are twelve long ones.|No saquinho. São doze compridos.
+S: Max|Is it straight?|Está reto?|Almost. Let me check with the level.|Quase. Deixe-me conferir com o nível.
+R: Let us read the instructions.|Vamos ler as instruções.
+R: Where are the screws?|Onde estão os parafusos?
+R: Hand me the screwdriver, please.|Me passe a chave de fenda.
+R: Is it straight?|Está reto?
+X: Step by step.|Passo a passo.
+C: Lojas americanas de móveis, como a IKEA, vendem peças desmontadas, e montar sozinho é parte da experiência.
+
+T: Recycling day | Separar o lixo para reciclagem | street | Portland | Ruth,f,👩🏻,vizinha
+K: Paper goes in the blue bin. | Papel vai no contêiner azul.
+M: Hoje você aprende a separar o lixo.
+D: You|Excuse me. I just moved here. Could you tell me how recycling works?|Com licença. Acabei de me mudar. Poderia explicar como funciona a reciclagem?
+D: Ruth|Of course. Paper and cardboard go in the blue bin.|Claro. Papel e papelão vão no contêiner azul.
+D: You|And plastic bottles?|E garrafas plásticas?
+D: Ruth|In the yellow bin, but empty and clean them first.|No contêiner amarelo, mas esvazie e lave antes.
+D: You|What about food scraps?|E sobras de comida?
+D: Ruth|They go in the green bin for compost.|Vão no contêiner verde para compostagem.
+D: You|When do they collect the bins?|Quando recolhem os contêineres?
+D: Ruth|Recycling is on Wednesdays. Put the bins out the night before.|A reciclagem é às quartas. Coloque os contêineres na noite anterior.
+V: recycling|reciclagem;cardboard|papelão;bin|contêiner;scraps|sobras;compost|compostagem
+B: Paper goes in the {0} bin.|Papel vai no contêiner {0}.|blue=azul;green=verde;yellow=amarelo
+B: Put the bins out the {0}.|Coloque os contêineres {0}.|night before=na noite anterior;same day=no mesmo dia;next morning=na manhã seguinte
+S: Ruth|Paper goes in the blue bin.|Papel vai no contêiner azul.|And plastic bottles?|E garrafas plásticas?
+S: Ruth|Recycling is on Wednesdays.|A reciclagem é às quartas.|Do I put the bins out the night before?|Coloco os contêineres na noite anterior?
+R: Paper goes in the blue bin.|Papel vai no contêiner azul.
+R: Empty and clean the bottles first.|Esvazie e lave as garrafas antes.
+R: Food scraps go in the green bin.|Sobras vão no contêiner verde.
+R: Recycling is on Wednesdays.|A reciclagem é às quartas.
+X: How does recycling work?|Como funciona a reciclagem?
+C: Em muitas cidades americanas, a coleta de lixo tem dias fixos, e regras de reciclagem variam de bairro para bairro.
+
+T: A package for the neighbor | Receber encomenda de vizinho | street | Boston | Lia,f,👩🏽,vizinha
+K: A package for you was left at my door. | Um pacote para você foi deixado na minha porta.
+M: Hoje você avisa um vizinho sobre uma encomenda.
+D: Lia|Hi! A package for you was left at my door yesterday.|Oi! Um pacote para você foi deixado na minha porta ontem.
+D: You|Oh, thank you for keeping it! I was at work.|Ah, obrigado por guardar! Eu estava no trabalho.
+D: Lia|No problem. It is a big box, so I put it in my living room.|Sem problema. É uma caixa grande, então deixei na sala.
+D: You|Can I pick it up this evening?|Posso buscar esta noite?
+D: Lia|Sure. I am home after six.|Claro. Estou em casa depois das seis.
+D: You|Let me give you my phone number, in case it happens again.|Deixe-me te dar meu telefone, caso aconteça de novo.
+D: Lia|Good idea. I will send you a message next time.|Boa ideia. Mando uma mensagem da próxima vez.
+D: You|Thanks a lot. I will bring you some cookies.|Muito obrigado. Vou levar biscoitos para você.
+V: package|pacote;left|deixado;keeping|guardar;pick up|buscar;in case|caso
+B: A package for you was left {0}.|Um pacote para você foi deixado {0}.|at my door=na minha porta;in the hall=no corredor;at the office=no escritório
+B: Can I pick it up {0}?|Posso buscar {0}?|this evening=esta noite;tomorrow=amanhã;now=agora
+S: Lia|A package for you was left at my door.|Um pacote seu foi deixado na minha porta.|Thank you for keeping it!|Obrigado por guardar!
+S: Lia|I am home after six.|Estou em casa depois das seis.|Can I pick it up this evening?|Posso buscar esta noite?
+R: A package for you was left at my door.|Um pacote seu foi deixado na minha porta.
+R: Thank you for keeping it.|Obrigado por guardar.
+R: Can I pick it up this evening?|Posso buscar esta noite?
+R: I will send you a message next time.|Mando uma mensagem da próxima vez.
+X: No problem.|Sem problema.
+C: Com tantas compras online, vizinhos nos EUA costumam guardar encomendas uns dos outros.
+
+T: Home insurance | Entender um seguro residencial | hall | Atlanta | Dan,m,🧑🏽,corretor
+K: What does this policy cover? | O que esta apólice cobre?
+M: Hoje você pergunta o que o seguro cobre e quanto custa.
+D: You|Hello. I would like to know about home insurance.|Olá. Gostaria de saber sobre seguro residencial.
+D: Dan|Of course. Do you own or rent your home?|Claro. Você é dono ou aluga a casa?
+D: You|I rent an apartment. What does this policy cover?|Alugo um apartamento. O que esta apólice cobre?
+D: Dan|It covers theft, fire and water damage to your belongings.|Cobre furto, incêndio e danos por água aos seus pertences.
+D: You|How much is it per month?|Quanto custa por mês?
+D: Dan|Fifteen dollars. The deductible is two hundred.|Quinze dólares. A franquia é duzentos.
+D: You|What is a deductible?|O que é franquia?
+D: Dan|It is the amount you pay before the insurance pays the rest.|É o valor que você paga antes de o seguro pagar o resto.
+V: insurance|seguro;policy|apólice;cover|cobrir;belongings|pertences;deductible|franquia
+B: What does this policy {0}?|O que esta apólice {0}?|cover=cobre;include=inclui;exclude=exclui
+B: It covers theft, fire and {0}.|Cobre furto, incêndio e {0}.|water damage=danos por água;storms=tempestades;accidents=acidentes
+S: Dan|Do you own or rent?|É dono ou aluga?|I rent an apartment. What does this policy cover?|Alugo. O que esta apólice cobre?
+S: Dan|The deductible is two hundred.|A franquia é duzentos.|What is a deductible?|O que é franquia?
+R: What does this policy cover?|O que esta apólice cobre?
+R: It covers theft, fire and water damage.|Cobre furto, incêndio e danos por água.
+R: It costs fifteen dollars a month.|Custa quinze dólares por mês.
+R: What is a deductible?|O que é franquia?
+X: Per month.|Por mês.
+C: Nos EUA, inquilinos costumam contratar "renters insurance", um seguro barato que protege os pertences.
+
+T: Gardening basics | Cuidar de um jardim | park | Denver | Rosa,f,👩🏽,vizinha
+K: Water the plants early in the morning. | Regue as plantas de manhã cedo.
+M: Hoje você aprende dicas simples de jardinagem.
+D: Rosa|Your garden looks a little dry. Do you water it every day?|Seu jardim parece um pouco seco. Você rega todo dia?
+D: You|Only twice a week. Is that enough?|Só duas vezes por semana. É suficiente?
+D: Rosa|In summer, water the plants early in the morning, every other day.|No verão, regue as plantas de manhã cedo, em dias alternados.
+D: You|What about the tomatoes?|E os tomates?
+D: Rosa|They need full sun and a lot of water. Do not wet the leaves.|Precisam de sol pleno e muita água. Não molhe as folhas.
+D: You|Should I use fertilizer?|Devo usar adubo?
+D: Rosa|Once a month is enough. Natural compost is best.|Uma vez por mês basta. Composto natural é o melhor.
+D: You|Thanks for the tips. I will try them this weekend.|Obrigado pelas dicas. Vou tentar neste fim de semana.
+V: garden|jardim;water|regar;tomatoes|tomates;fertilizer|adubo;leaves|folhas
+B: Water the plants {0}.|Regue as plantas {0}.|early in the morning=de manhã cedo;every other day=em dias alternados;twice a week=duas vezes por semana
+B: Do not wet the {0}.|Não molhe {0}.|leaves=as folhas;flowers=as flores;roots=as raízes
+S: Rosa|Do you water it every day?|Você rega todo dia?|Only twice a week. Is that enough?|Só duas vezes por semana. É suficiente?
+S: Rosa|Water the plants early in the morning.|Regue as plantas de manhã cedo.|Thanks for the tips.|Obrigado pelas dicas.
+R: Water the plants early in the morning.|Regue as plantas de manhã cedo.
+R: Tomatoes need full sun.|Tomates precisam de sol pleno.
+R: Do not wet the leaves.|Não molhe as folhas.
+R: Natural compost is best.|Composto natural é o melhor.
+X: Thanks for the tips.|Obrigado pelas dicas.
+C: Muitas casas americanas têm jardim ou horta no quintal, e feiras de jardinagem acontecem na primavera.
+
+T: A well-kept home | Desafio do arco: cuidar da casa | living | Chicago | Mia,f,👩🏻,amiga
+K: This weekend I will take care of the house. | Neste fim de semana vou cuidar da casa.
+M: Desafio: organize tarefas, contas e pequenos consertos da casa.
+D: Mia|You look busy. What are you doing this weekend?|Você parece ocupado. O que vai fazer neste fim de semana?
+D: You|I will take care of the house. First, I will fix the leaking faucet.|Vou cuidar da casa. Primeiro, vou consertar a torneira que vaza.
+D: Mia|Did you call a plumber?|Você chamou um encanador?
+D: You|No, it is a small problem. I bought a new part and watched a video.|Não, é um problema pequeno. Comprei uma peça nova e vi um vídeo.
+D: Mia|What else is on your list?|O que mais tem na sua lista?
+D: You|I will pay the bills, recycle the old boxes and paint the hall.|Vou pagar as contas, reciclar as caixas velhas e pintar o corredor.
+D: Mia|That is a lot. Do you need help?|É muita coisa. Precisa de ajuda?
+D: You|Yes, please. Could you come on Sunday and bring your ladder?|Sim, por favor. Você poderia vir no domingo e trazer sua escada?
+V: busy|ocupado;fix|consertar;plumber|encanador;ladder|escada;hall|corredor
+B: I will take care of the {0}.|Vou cuidar {0}.|house=da casa;garden=do jardim;bills=das contas
+B: Could you come on {0} and bring your ladder?|Você poderia vir {0} e trazer sua escada?|Sunday=no domingo;Saturday=no sábado;Monday=na segunda
+S: Mia|What are you doing this weekend?|O que vai fazer no fim de semana?|I will take care of the house.|Vou cuidar da casa.
+S: Mia|Do you need help?|Precisa de ajuda?|Yes, please. Could you come on Sunday?|Sim, por favor. Poderia vir no domingo?
+R: I will take care of the house.|Vou cuidar da casa.
+R: First, I will fix the faucet.|Primeiro, vou consertar a torneira.
+R: I will pay the bills and recycle the boxes.|Vou pagar as contas e reciclar as caixas.
+R: Could you bring your ladder?|Poderia trazer sua escada?
+X: Do you need help?|Precisa de ajuda?
+C: "DIY", do it yourself, é uma cultura forte nos EUA, e vídeos e lojas de ferragens ajudam quem quer consertar em casa.
