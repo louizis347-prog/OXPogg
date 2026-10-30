@@ -17,6 +17,7 @@ RULES=[
  ('wish / if only',r"\bi wish\b|\bif only\b"),
  ('perfeito modal',r"\b(?:should|could|must|would) have (?:been|\w+ed|gone|seen|done|known|said|eaten|taken)\b"),
  ('gerúndio perfeito',r"\bhaving \w+ed\b|\bhaving (?:been|done|seen)\b"),
+ ('the more... the more',r"\\bthe (?:more|less|\\w+er) [^.?!,]*, the (?:more|less|\\w+er)\\b"),
  ('whom/whose',r"\bwhom\b|\bwhose\b"),
  ('what/where to + verbo',r"\b(?:what|where|who) to \w+\b"),
 ]
