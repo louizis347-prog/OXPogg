@@ -1,0 +1,253 @@
+# Arco 64 · Carro e trânsito
+T: Rent a car | Alugar um carro | office | Phoenix | Dave,m,👨🏼,atendente
+K: I would like to rent a small car. | Eu gostaria de alugar um carro pequeno.
+M: Hoje você aluga um carro.
+D: Dave|Good morning. How can I help you?|Bom dia. Como posso ajudar?
+D: You|I would like to rent a small car for three days.|Eu gostaria de alugar um carro pequeno por três dias.
+D: Dave|Do you have a driver's license?|Você tem carteira de motorista?
+D: You|Yes, here it is, and my passport.|Sim, aqui está, e meu passaporte.
+D: Dave|The price is forty dollars a day.|O preço é quarenta dólares por dia.
+D: You|Is gas included?|A gasolina está incluída?
+D: Dave|No, you return it with a full tank.|Não, você devolve com o tanque cheio.
+D: You|OK. Where do I sign?|Certo. Onde assino?
+V: rent|alugar;license|carteira;tank|tanque;gas|gasolina;full|cheio
+B: I would like to rent a {0} car.|Eu gostaria de alugar um carro {0}.|small=pequeno;big=grande;cheap=barato
+B: The price is {0} dollars a day.|O preço é {0} dólares por dia.|forty=quarenta;fifty=cinquenta;thirty=trinta
+S: Dave|How can I help you?|Como posso ajudar?|I would like to rent a small car for three days.|Eu gostaria de alugar um carro pequeno por três dias.
+S: Dave|Do you have a driver's license?|Você tem carteira de motorista?|Yes, here it is, and my passport.|Sim, aqui está, e meu passaporte.
+R: I would like to rent a small car.|Eu gostaria de alugar um carro pequeno.
+R: The price is forty dollars a day.|O preço é quarenta dólares por dia.
+R: Is gas included?|A gasolina está incluída?
+R: Where do I sign?|Onde assino?
+X: Here it is.|Aqui está.
+C: Para alugar carro nos EUA, é preciso ser maior de 21 anos e ter carteira de motorista válida.
+
+T: At the gas station today | No posto de gasolina | street | Austin | Ron,m,👨🏽,frentista
+K: Fill it up, please today. | Encha o tanque, por favor.
+M: Hoje você abastece o carro.
+D: You|Excuse me. How do I pay for gas?|Com licença. Como pago pela gasolina?
+D: Ron|You can pay at the pump or inside.|Você pode pagar na bomba ou lá dentro.
+D: You|I will pay inside. Pump number four, please.|Pagarei lá dentro. Bomba número quatro, por favor.
+D: Ron|How much do you want?|Quanto você quer?
+D: You|Fill it up, please.|Encha o tanque, por favor.
+D: Ron|OK. Regular or premium?|Certo. Comum ou premium?
+D: You|Regular is fine. Do you sell water?|Comum está bom. Vocês vendem água?
+D: Ron|Yes, in the fridge by the door.|Sim, na geladeira ao lado da porta.
+V: pump|bomba;regular|comum;premium|premium;fridge|geladeira;pay|pagar
+B: Pump number {0}, please.|Bomba número {0}, por favor.|four=quatro;two=dois;six=seis
+B: Regular or {0}?|Comum ou {0}?|premium=premium;diesel=diesel;super=super
+S: Ron|How much do you want?|Quanto você quer?|Fill it up, please.|Encha o tanque, por favor.
+S: Ron|Regular or premium?|Comum ou premium?|Regular is fine. Do you sell water?|Comum está bom. Vocês vendem água?
+R: How do I pay for gas?|Como pago pela gasolina?
+R: Pump number four, please.|Bomba número quatro, por favor.
+R: Fill it up, please.|Encha o tanque, por favor.
+R: Regular is fine.|Comum está bom.
+X: Fill it up.|Encha o tanque.
+C: Nos EUA, a gasolina é vendida por galão, e em muitos estados você mesmo abastece o carro.
+
+T: Ask for directions | Pedir caminho de carro | street | Denver | Sam,m,👨🏼,motorista
+K: How do I get to the highway? | Como chego à rodovia?
+M: Hoje você pergunta o caminho para a rodovia.
+D: You|Excuse me. How do I get to the highway?|Com licença. Como chego à rodovia?
+D: Sam|Go straight for two miles.|Siga em frente por duas milhas.
+D: You|And then?|E depois?
+D: Sam|Turn right at the traffic light.|Vire à direita no semáforo.
+D: You|Is it far?|É longe?
+D: Sam|No, only ten minutes by car.|Não, só dez minutos de carro.
+D: You|Is there a gas station on the way?|Há um posto no caminho?
+D: Sam|Yes, next to the bank. Good luck!|Sim, ao lado do banco. Boa sorte!
+V: highway|rodovia;mile|milha;traffic light|semáforo;straight|em frente;way|caminho
+B: Go straight for {0} miles.|Siga em frente por {0} milhas.|two=duas;three=três;five=cinco
+B: Turn {0} at the traffic light.|Vire à {0} no semáforo.|right=direita;left=esquerda;around=em volta
+S: Sam|Go straight for two miles.|Siga em frente por duas milhas.|And then? Is it far?|E depois? É longe?
+S: Sam|Turn right at the traffic light.|Vire à direita no semáforo.|Is there a gas station on the way?|Há um posto no caminho?
+R: How do I get to the highway?|Como chego à rodovia?
+R: Go straight for two miles.|Siga em frente por duas milhas.
+R: Turn right at the traffic light.|Vire à direita no semáforo.
+R: Is there a gas station on the way?|Há um posto no caminho?
+X: Good luck!|Boa sorte!
+C: Nos EUA, as distâncias de carro são dadas em milhas, e o GPS do celular é muito usado.
+
+T: A traffic jam | Congestionamento | street | Los Angeles | Pam,f,👩🏼,motorista
+K: We are stuck in traffic. | Estamos presos no trânsito.
+M: Hoje você enfrenta um congestionamento.
+D: Pam|Oh no. We are stuck in traffic.|Ai, não. Estamos presos no trânsito.
+D: You|How long will it take?|Quanto tempo vai levar?
+D: Pam|Maybe an hour. There is an accident ahead.|Talvez uma hora. Há um acidente à frente.
+D: You|Can we take another road?|Podemos pegar outra estrada?
+D: Pam|Let me check the map. Yes, there is a faster way.|Deixe-me ver o mapa. Sim, há um caminho mais rápido.
+D: You|Good. I do not want to be late.|Bom. Não quero me atrasar.
+D: Pam|I will call the office and tell them.|Vou ligar para o escritório e avisar.
+D: You|Thanks. Please drive carefully.|Obrigado. Por favor dirija com cuidado.
+V: traffic|trânsito;accident|acidente;map|mapa;road|estrada;late|atrasado
+B: We are stuck in {0}.|Estamos presos no {0}.|traffic=trânsito;a jam=congestionamento;the snow=neve
+B: There is a faster {0}.|Há um {0} mais rápido.|way=caminho;road=estrada;route=trajeto
+S: Pam|We are stuck in traffic.|Estamos presos no trânsito.|How long will it take?|Quanto tempo vai levar?
+S: Pam|There is an accident ahead.|Há um acidente à frente.|Can we take another road?|Podemos pegar outra estrada?
+R: We are stuck in traffic.|Estamos presos no trânsito.
+R: There is an accident ahead.|Há um acidente à frente.
+R: Let me check the map.|Deixe-me ver o mapa.
+R: Please drive carefully.|Por favor dirija com cuidado.
+X: Oh no.|Ai, não.
+C: Los Angeles é famosa pelo trânsito pesado, principalmente nas horas de pico.
+
+T: A parking ticket | Multa de estacionamento | street | Boston | Officer Reed,m,👨🏿,policial
+K: Where can I park my car? | Onde posso estacionar meu carro?
+M: Hoje você aprende onde pode estacionar.
+D: You|Excuse me, officer. Where can I park my car?|Com licença, policial. Onde posso estacionar meu carro?
+D: Officer Reed|You cannot park here. It is a bus stop.|Você não pode estacionar aqui. É ponto de ônibus.
+D: You|Oh, I am sorry. I did not see the sign.|Ah, sinto muito. Não vi a placa.
+D: Officer Reed|There is a parking lot around the corner.|Há um estacionamento na esquina.
+D: You|Is it free?|É grátis?
+D: Officer Reed|No, it is two dollars an hour.|Não, custa dois dólares por hora.
+D: You|That is fine. Thank you for your help.|Tudo bem. Obrigado pela ajuda.
+D: Officer Reed|No problem. Drive safely.|Sem problema. Dirija com segurança.
+V: park|estacionar;officer|policial;parking lot|estacionamento;sign|placa;corner|esquina
+B: You cannot park {0}.|Você não pode estacionar {0}.|here=aqui;there=ali;on this street=nesta rua
+B: It is {0} dollars an hour.|Custa {0} dólares por hora.|two=dois;three=três;five=cinco
+S: Officer Reed|You cannot park here.|Você não pode estacionar aqui.|Oh, I am sorry. I did not see the sign.|Ah, sinto muito. Não vi a placa.
+S: Officer Reed|There is a parking lot around the corner.|Há um estacionamento na esquina.|Is it free?|É grátis?
+R: Where can I park my car?|Onde posso estacionar meu carro?
+R: You cannot park here.|Você não pode estacionar aqui.
+R: I did not see the sign.|Não vi a placa.
+R: It is two dollars an hour.|Custa dois dólares por hora.
+X: Drive safely.|Dirija com segurança.
+C: Nos EUA, estacionar em local proibido gera multa; as placas indicam horários e regras.
+
+T: Car trouble | Problema no carro | street | Phoenix | Mike,m,👨🏻,mecânico
+K: My car will not start. | Meu carro não liga.
+M: Hoje você pede ajuda porque o carro não liga.
+D: You|Hello. My car will not start.|Olá. Meu carro não liga.
+D: Mike|Let me look. Do you hear a sound?|Deixe-me ver. Você ouve algum barulho?
+D: You|Yes, a small click, but nothing else.|Sim, um clique pequeno, mas nada mais.
+D: Mike|It is probably the battery. It is old.|Provavelmente é a bateria. É velha.
+D: You|Can you fix it today?|Você pode consertar hoje?
+D: Mike|I can change it in thirty minutes.|Posso trocar em trinta minutos.
+D: You|How much is a new battery?|Quanto custa uma bateria nova?
+D: Mike|About ninety dollars with the work.|Cerca de noventa dólares com o serviço.
+V: battery|bateria;start|ligar;sound|barulho;change|trocar;mechanic|mecânico
+B: My car will not {0}.|Meu carro não {0}.|start=liga;stop=para;move=anda
+B: I can change it in {0} minutes.|Posso trocar em {0} minutos.|thirty=trinta;twenty=vinte;forty=quarenta
+S: Mike|Do you hear a sound?|Você ouve algum barulho?|Yes, a small click, but nothing else.|Sim, um clique pequeno, mas nada mais.
+S: Mike|It is probably the battery.|Provavelmente é a bateria.|Can you fix it today?|Você pode consertar hoje?
+R: My car will not start.|Meu carro não liga.
+R: It is probably the battery.|Provavelmente é a bateria.
+R: Can you fix it today?|Você pode consertar hoje?
+R: How much is a new battery?|Quanto custa uma bateria nova?
+X: Let me look.|Deixe-me ver.
+C: Nos EUA, o auxílio rodoviário (como o da AAA) manda ajuda se o carro quebrar na estrada.
+
+T: A driving lesson | Aula de direção | street | Seattle | Mr. Kay,m,👨🏾,instrutor
+K: Look in the mirror before you turn. | Olhe no espelho antes de virar.
+M: Hoje você tem uma aula de direção.
+D: Mr. Kay|Welcome. Put on your seat belt first.|Bem-vindo. Primeiro coloque o cinto.
+D: You|OK. What do I do now?|Certo. O que faço agora?
+D: Mr. Kay|Start the car and look in the mirror.|Ligue o carro e olhe no espelho.
+D: You|I am ready. Can I drive now?|Estou pronto. Posso dirigir agora?
+D: Mr. Kay|Yes, slowly. Stop at the red sign.|Sim, devagar. Pare na placa vermelha.
+D: You|Stop. Is that correct?|Parei. Está correto?
+D: Mr. Kay|Perfect. You learn fast.|Perfeito. Você aprende rápido.
+D: You|Thank you. This is fun!|Obrigado. Isso é divertido!
+V: seat belt|cinto;mirror|espelho;slowly|devagar;stop|parar;correct|correto
+B: Put on your {0} first.|Primeiro coloque o {0}.|seat belt=cinto;glasses=óculos;jacket=casaco
+B: Stop at the red {0}.|Pare na {0} vermelha.|sign=placa;light=luz;line=linha
+S: Mr. Kay|Put on your seat belt first.|Primeiro coloque o cinto.|OK. What do I do now?|Certo. O que faço agora?
+S: Mr. Kay|Drive slowly. Stop at the red sign.|Dirija devagar. Pare na placa vermelha.|Stop. Is that correct?|Parei. Está correto?
+R: Put on your seat belt.|Coloque o cinto.
+R: Look in the mirror.|Olhe no espelho.
+R: Stop at the red sign.|Pare na placa vermelha.
+R: You learn fast.|Você aprende rápido.
+X: Slowly.|Devagar.
+C: Nos EUA, os jovens costumam tirar a carteira aos 16 anos, e muitos fazem aulas de direção na escola.
+
+T: A car wash | Lava-rápido | street | Miami | Dee,f,👩🏽,atendente
+K: I would like a basic wash, please. | Eu gostaria de uma lavagem básica, por favor.
+M: Hoje você lava o carro.
+D: Dee|Welcome! What kind of wash do you want?|Bem-vindo! Que tipo de lavagem você quer?
+D: You|I would like a basic wash, please.|Eu gostaria de uma lavagem básica, por favor.
+D: Dee|Do you want it clean inside too?|Você quer limpar por dentro também?
+D: You|Yes. How much is it for both?|Sim. Quanto custa pelos dois?
+D: Dee|Twenty dollars. It takes about thirty minutes.|Vinte dólares. Leva cerca de trinta minutos.
+D: You|OK. Can I wait here?|Certo. Posso esperar aqui?
+D: Dee|Yes, there is a small room with coffee.|Sim, há uma sala pequena com café.
+D: You|Great. Thank you very much.|Ótimo. Muito obrigado.
+V: wash|lavar;inside|por dentro;clean|limpo;room|sala;basic|básico
+B: I would like a {0} wash.|Eu gostaria de uma lavagem {0}.|basic=básica;full=completa;quick=rápida
+B: It takes about {0} minutes.|Leva cerca de {0} minutos.|thirty=trinta;twenty=vinte;forty=quarenta
+S: Dee|What kind of wash do you want?|Que tipo de lavagem você quer?|I would like a basic wash, please.|Eu gostaria de uma lavagem básica, por favor.
+S: Dee|It takes about thirty minutes.|Leva cerca de trinta minutos.|Can I wait here?|Posso esperar aqui?
+R: I would like a basic wash.|Eu gostaria de uma lavagem básica.
+R: Do you want it clean inside too?|Quer limpar por dentro também?
+R: How much is it for both?|Quanto custa pelos dois?
+R: Can I wait here?|Posso esperar aqui?
+X: Welcome!|Bem-vindo!
+C: Lava-rápidos são muito comuns nos EUA, e muitos têm túneis automáticos onde você fica no carro.
+
+T: Buy a used car | Comprar um carro usado | street | Chicago | Bill,m,👨🏼,vendedor
+K: How many miles does it have? | Quantas milhas ele tem?
+M: Hoje você olha carros usados.
+D: Bill|Hello! Are you looking for a car?|Olá! Você procura um carro?
+D: You|Yes, a used one. How many miles does this blue car have?|Sim, usado. Quantas milhas tem este carro azul?
+D: Bill|Only sixty thousand. It is in good condition.|Só sessenta mil. Está em boas condições.
+D: You|How old is it?|Quantos anos ele tem?
+D: Bill|It is five years old. One owner.|Tem cinco anos. Um dono.
+D: You|What is the price?|Qual é o preço?
+D: Bill|Eight thousand dollars.|Oito mil dólares.
+D: You|Can I test drive it?|Posso fazer um test drive?
+V: used|usado;owner|dono;condition|condição;thousand|mil;price|preço
+B: It has only {0} thousand miles.|Tem só {0} mil milhas.|sixty=sessenta;fifty=cinquenta;forty=quarenta
+B: The price is {0} thousand dollars.|O preço é {0} mil dólares.|eight=oito;seven=sete;nine=nove
+S: Bill|Are you looking for a car?|Você procura um carro?|Yes, a used one. How many miles does it have?|Sim, usado. Quantas milhas tem?
+S: Bill|It is five years old.|Tem cinco anos.|What is the price?|Qual é o preço?
+R: How many miles does it have?|Quantas milhas ele tem?
+R: It is in good condition.|Está em boas condições.
+R: What is the price?|Qual é o preço?
+R: Can I test drive it?|Posso fazer um test drive?
+X: Test drive.|Test drive.
+C: Nos EUA, muitos carros usados são vendidos com histórico, e o preço é negociável.
+
+T: Take the highway | Pegar a rodovia | street | Denver | Zoe,f,👩🏻,amiga
+K: The speed limit is sixty-five. | O limite de velocidade é sessenta e cinco.
+M: Hoje você viaja de carro pela rodovia.
+D: Zoe|We are on the highway now.|Estamos na rodovia agora.
+D: You|What is the speed limit?|Qual é o limite de velocidade?
+D: Zoe|It is sixty-five miles per hour.|São sessenta e cinco milhas por hora.
+D: You|How far is the next town?|A que distância fica a próxima cidade?
+D: Zoe|About fifty miles. One hour.|Cerca de cinquenta milhas. Uma hora.
+D: You|Should we stop for lunch?|Devemos parar para almoçar?
+D: Zoe|Yes, there is a rest area in ten minutes.|Sim, há uma área de descanso em dez minutos.
+D: You|Perfect. I am hungry.|Perfeito. Estou com fome.
+V: speed|velocidade;limit|limite;town|cidade pequena;rest area|área de descanso;hungry|com fome
+B: The speed limit is {0}.|O limite de velocidade é {0}.|sixty-five=sessenta e cinco;fifty-five=cinquenta e cinco;seventy=setenta
+B: The next town is {0} miles away.|A próxima cidade fica a {0} milhas.|fifty=cinquenta;ten=dez;twenty=vinte
+S: Zoe|The speed limit is sixty-five.|O limite é sessenta e cinco.|How far is the next town?|A que distância é a próxima cidade?
+S: Zoe|There is a rest area in ten minutes.|Há uma área de descanso em dez minutos.|Perfect. I am hungry.|Perfeito. Estou com fome.
+R: What is the speed limit?|Qual é o limite de velocidade?
+R: How far is the next town?|A que distância fica a próxima cidade?
+R: There is a rest area in ten minutes.|Há uma área de descanso em dez minutos.
+R: I am hungry.|Estou com fome.
+X: Should we stop?|Devemos parar?
+C: As rodovias americanas têm áreas de descanso com banheiros e máquinas de lanche a cada poucas dezenas de milhas.
+
+T: A bike or a car? | Bicicleta ou carro? | cafe | Portland | Ken,m,👨🏽,amigo
+K: A bike is cheaper than a car. | Uma bicicleta é mais barata que um carro.
+M: Hoje você compara bicicleta e carro.
+D: Ken|Do you go to work by car?|Você vai ao trabalho de carro?
+D: You|No, I go by bike. It is cheaper than a car.|Não, vou de bicicleta. É mais barata que um carro.
+D: Ken|Is it faster?|É mais rápido?
+D: You|In the city, yes. There is no traffic.|Na cidade, sim. Não há trânsito.
+D: Ken|What do you do when it rains?|O que você faz quando chove?
+D: You|I wear a raincoat or take the bus.|Uso uma capa de chuva ou pego o ônibus.
+D: Ken|I want to try. Do you know a good bike shop?|Quero tentar. Você conhece uma boa loja de bicicletas?
+D: You|Yes, I will show you on Saturday.|Sim, mostro no sábado.
+V: bike|bicicleta;raincoat|capa de chuva;cheaper|mais barato;faster|mais rápido;shop|loja
+B: A bike is {0} than a car.|Uma bicicleta é {0} que um carro.|cheaper=mais barata;slower=mais lenta;healthier=mais saudável
+B: I wear a {0} when it rains.|Uso {0} quando chove.|raincoat=capa de chuva;jacket=casaco;hat=chapéu
+S: Ken|Do you go to work by car?|Você vai ao trabalho de carro?|No, I go by bike. It is cheaper.|Não, vou de bicicleta. É mais barata.
+S: Ken|What do you do when it rains?|O que você faz quando chove?|I wear a raincoat or take the bus.|Uso capa de chuva ou pego o ônibus.
+R: I go to work by bike.|Vou ao trabalho de bicicleta.
+R: A bike is cheaper than a car.|Uma bicicleta é mais barata que um carro.
+R: There is no traffic.|Não há trânsito.
+R: I will show you on Saturday.|Mostro no sábado.
+X: In the city.|Na cidade.
+C: Em cidades como Portland, muita gente prefere a bicicleta ao carro para ir ao trabalho.

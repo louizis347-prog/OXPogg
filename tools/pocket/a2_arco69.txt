@@ -1,0 +1,253 @@
+# Arco 69 · Cinema e TV
+T: Buy movie tickets | Comprar ingressos | cinema | Los Angeles | Cashier Jay,m,👨🏽,bilheteiro
+K: Two tickets for the eight o'clock show. | Dois ingressos para a sessão das oito.
+M: Hoje você compra ingressos de cinema.
+D: Cashier Jay|Hi! Which movie do you want to see?|Oi! Qual filme vocês querem ver?
+D: You|Two tickets for the eight o'clock show, please.|Dois ingressos para a sessão das oito, por favor.
+D: Cashier Jay|Which seats? Front, middle or back?|Quais lugares? Frente, meio ou fundo?
+D: You|The middle, please.|No meio, por favor.
+D: Cashier Jay|That is twenty-four dollars.|São vinte e quatro dólares.
+D: You|Is there a discount for students?|Há desconto para estudantes?
+D: Cashier Jay|Yes, show me your card. It is ten percent off.|Sim, mostre a carteirinha. São dez por cento de desconto.
+D: You|Here it is. Thank you.|Aqui está. Obrigado.
+V: ticket|ingresso;show|sessão;seat|lugar;middle|meio;discount|desconto
+B: Two tickets for the {0} o'clock show.|Dois ingressos para a sessão das {0}.|eight=oito;seven=sete;nine=nove
+B: That is {0} dollars.|São {0} dólares.|twenty-four=vinte e quatro;twenty=vinte;thirty=trinta
+S: Cashier Jay|Which movie do you want to see?|Qual filme quer ver?|Two tickets for the eight o'clock show, please.|Dois ingressos para a sessão das oito.
+S: Cashier Jay|Front, middle or back?|Frente, meio ou fundo?|The middle, please.|No meio, por favor.
+R: Two tickets, please.|Dois ingressos, por favor.
+R: The eight o'clock show.|A sessão das oito.
+R: The middle, please.|No meio, por favor.
+R: Is there a discount for students?|Há desconto para estudantes?
+X: Here it is.|Aqui está.
+C: Nos EUA, os cinemas são grandes, com poltronas confortáveis e pipoca em tamanhos enormes.
+
+T: Popcorn and drinks | Pipoca e bebidas | cinema | Chicago | Cashier Ann,f,👩🏼,atendente
+K: A large popcorn and two drinks, please. | Uma pipoca grande e duas bebidas, por favor.
+M: Hoje você compra lanche no cinema.
+D: Cashier Ann|Welcome! What would you like?|Bem-vindo! O que vocês gostariam?
+D: You|A large popcorn and two drinks, please.|Uma pipoca grande e duas bebidas, por favor.
+D: Cashier Ann|What size drinks?|Que tamanho de bebida?
+D: You|Medium. What flavors do you have?|Média. Que sabores vocês têm?
+D: Cashier Ann|Cola, orange and lemon-lime.|Cola, laranja e limão.
+D: You|One cola and one orange, please.|Uma cola e uma laranja, por favor.
+D: Cashier Ann|That is fifteen dollars. Butter on the popcorn?|São quinze dólares. Manteiga na pipoca?
+D: You|Yes, please. Thanks!|Sim, por favor. Obrigado!
+V: popcorn|pipoca;large|grande;medium|médio;flavor|sabor;butter|manteiga
+B: A {0} popcorn and two drinks.|Uma pipoca {0} e duas bebidas.|large=grande;small=pequena;medium=média
+B: One cola and one {0}, please.|Uma cola e uma {0}, por favor.|orange=laranja;lemon=limão;water=água
+S: Cashier Ann|What would you like?|O que gostariam?|A large popcorn and two drinks, please.|Uma pipoca grande e duas bebidas.
+S: Cashier Ann|What size drinks?|Que tamanho de bebida?|Medium. One cola and one orange.|Média. Uma cola e uma laranja.
+R: A large popcorn, please.|Uma pipoca grande, por favor.
+R: What flavors do you have?|Que sabores vocês têm?
+R: Butter on the popcorn?|Manteiga na pipoca?
+R: That is fifteen dollars.|São quinze dólares.
+X: Yes, please.|Sim, por favor.
+C: No cinema americano, o combo de pipoca e refrigerante é quase tradição.
+
+T: Choose a movie | Escolher um filme | living | Boston | Eli,m,👨🏻,amigo
+K: I prefer comedies to horror movies. | Prefiro comédias a filmes de terror.
+M: Hoje você escolhe um filme com um amigo.
+D: Eli|What kind of movies do you like?|Que tipo de filme você gosta?
+D: You|I prefer comedies. And you?|Prefiro comédias. E você?
+D: Eli|I love action movies, but horror is too scary.|Adoro filmes de ação, mas terror é assustador demais.
+D: You|Me too. Let us watch a comedy tonight.|Eu também. Vamos assistir a uma comédia hoje.
+D: Eli|Have you seen the new one with Tom Hill?|Você já viu o novo com o Tom Hill?
+D: You|No, I have not. Is it good?|Não, ainda não. É bom?
+D: Eli|Yes, it is very funny. I saw it last week.|Sim, é muito engraçado. Vi na semana passada.
+D: You|Great. Let us watch that one.|Ótimo. Vamos ver esse.
+V: comedy|comédia;action|ação;horror|terror;scary|assustador;funny|engraçado
+B: I prefer {0}.|Prefiro {0}.|comedies=comédias;action movies=filmes de ação;dramas=dramas
+B: Horror is too {0}.|Terror é {0} demais.|scary=assustador;long=longo;loud=barulhento
+S: Eli|What kind of movies do you like?|Que tipo de filme você gosta?|I prefer comedies. And you?|Prefiro comédias. E você?
+S: Eli|Have you seen the new one?|Você já viu o novo?|No, I have not. Is it good?|Não, ainda não. É bom?
+R: I prefer comedies.|Prefiro comédias.
+R: Horror is too scary.|Terror é assustador demais.
+R: Have you seen the new one?|Você já viu o novo?
+R: It is very funny.|É muito engraçado.
+X: Let us watch that one.|Vamos ver esse.
+C: Os gêneros mais populares nos cinemas americanos são ação, comédia e animação.
+
+T: Talk about a movie | Falar de um filme | cafe | Seattle | Kim,f,👩🏻,amiga
+K: I liked the ending. | Gostei do final.
+M: Hoje você comenta um filme que viu.
+D: Kim|How was the movie?|Como foi o filme?
+D: You|I liked it. The story was interesting.|Gostei. A história foi interessante.
+D: Kim|Who was your favorite character?|Qual foi seu personagem favorito?
+D: You|The old teacher. He was funny and kind.|O professor velho. Ele era engraçado e gentil.
+D: Kim|What did you think of the ending?|O que achou do final?
+D: You|I liked the ending. It was happy.|Gostei do final. Foi feliz.
+D: Kim|I want to see it. Is it long?|Quero ver. É longo?
+D: You|About two hours. It goes fast.|Cerca de duas horas. Passa rápido.
+V: story|história;character|personagem;ending|final;kind|gentil;interesting|interessante
+B: The story was {0}.|A história foi {0}.|interesting=interessante;funny=engraçada;sad=triste
+B: The movie is about {0} hours.|O filme tem cerca de {0} horas.|two=duas;three=três;one=uma
+S: Kim|How was the movie?|Como foi o filme?|I liked it. The story was interesting.|Gostei. A história foi interessante.
+S: Kim|Who was your favorite character?|Qual foi seu personagem favorito?|The old teacher. He was funny and kind.|O professor velho. Era engraçado e gentil.
+R: How was the movie?|Como foi o filme?
+R: The story was interesting.|A história foi interessante.
+R: I liked the ending.|Gostei do final.
+R: It goes fast.|Passa rápido.
+X: It was happy.|Foi feliz.
+C: Depois do filme, é comum ir tomar café ou jantar para conversar sobre ele.
+
+T: A TV series today | Uma série de TV | living | Austin | Sam,m,👨🏼,amigo
+K: I watch one episode every night today. | Assisto a um episódio toda noite.
+M: Hoje você fala da sua série favorita.
+D: Sam|What are you watching these days?|O que você está assistindo ultimamente?
+D: You|A new series about a family in Texas.|Uma série nova sobre uma família no Texas.
+D: Sam|How many episodes are there?|Quantos episódios há?
+D: You|Ten. I watch one episode every night.|Dez. Assisto a um episódio toda noite.
+D: Sam|Is it better than the old one?|É melhor que a antiga?
+D: You|Yes, much better. The actors are great.|Sim, bem melhor. Os atores são ótimos.
+D: Sam|Where can I watch it?|Onde posso assistir?
+D: You|It is on the streaming app. I will send the name.|Está no aplicativo de streaming. Vou mandar o nome.
+V: series|série;episode|episódio;actor|ator;streaming|streaming;app|aplicativo
+B: A new series about a {0}.|Uma série nova sobre uma {0}.|family=família;city=cidade;school=escola
+B: I watch one episode every {0}.|Assisto a um episódio toda {0}.|night=noite;day=dia;weekend=fim de semana
+S: Sam|What are you watching these days?|O que está assistindo ultimamente?|A new series about a family in Texas.|Uma série nova sobre uma família no Texas.
+S: Sam|How many episodes are there?|Quantos episódios há?|Ten. I watch one episode every night.|Dez. Assisto a um por noite.
+R: What are you watching?|O que você está assistindo?
+R: A new series about a family.|Uma série nova sobre uma família.
+R: I watch one episode every night.|Assisto a um episódio toda noite.
+R: The actors are great.|Os atores são ótimos.
+X: Much better.|Bem melhor.
+C: Nos EUA, séries de streaming ganharam muito espaço, e muita gente assiste a vários episódios por vez.
+
+T: Remote control | Controle remoto | living | Denver | Gran,f,👵🏽,avó
+K: How do I change the channel? | Como mudo de canal?
+M: Hoje você ensina sua avó a usar a TV.
+D: Gran|Dear, how do I change the channel?|Querido, como mudo de canal?
+D: You|Use this button with the arrow, Grandma.|Use este botão com a seta, vovó.
+D: Gran|And how do I make the sound louder?|E como aumento o volume?
+D: You|Press the plus button.|Aperte o botão de mais.
+D: Gran|I see. What is this red button for?|Entendi. Para que serve este botão vermelho?
+D: You|That turns the TV off. Do not press it now.|Esse desliga a TV. Não aperte agora.
+D: Gran|Thank you. You are very patient.|Obrigada. Você é muito paciente.
+D: You|Of course. I love helping you.|Claro. Adoro ajudar você.
+V: channel|canal;button|botão;louder|mais alto;volume|volume;arrow|seta
+B: How do I change the {0}?|Como mudo de {0}?|channel=canal;volume=volume;language=idioma
+B: Press the {0} button.|Aperte o botão de {0}.|plus=mais;red=vermelho;power=ligar
+S: Gran|How do I change the channel?|Como mudo de canal?|Use this button with the arrow.|Use este botão com a seta.
+S: Gran|How do I make the sound louder?|Como aumento o volume?|Press the plus button.|Aperte o botão de mais.
+R: How do I change the channel?|Como mudo de canal?
+R: Press the plus button.|Aperte o botão de mais.
+R: That turns the TV off.|Esse desliga a TV.
+R: I love helping you.|Adoro ajudar você.
+X: You are very patient.|Você é muito paciente.
+C: Ensinar tecnologia aos avós é uma cena comum em famílias do mundo todo.
+
+T: Weather on TV | Previsão do tempo na TV | living | Miami | Anchor Dee,f,👩🏽,apresentadora
+K: Tomorrow it will be sunny and hot. | Amanhã vai fazer sol e calor.
+M: Hoje você entende a previsão do tempo.
+D: Anchor Dee|Good evening. Here is the weather for tomorrow.|Boa noite. Aqui está o tempo para amanhã.
+D: You|Quiet, please. I want to listen.|Silêncio, por favor. Quero ouvir.
+D: Anchor Dee|Tomorrow it will be sunny and hot, around 32 degrees.|Amanhã vai fazer sol e calor, cerca de 32 graus.
+D: You|Great. We can go to the beach.|Ótimo. Podemos ir à praia.
+D: Anchor Dee|But on Thursday it will rain all day.|Mas na quinta vai chover o dia todo.
+D: You|Oh no. Then Wednesday is the best day.|Ah, não. Então quarta é o melhor dia.
+D: Anchor Dee|Thank you for watching. Good night.|Obrigada por assistir. Boa noite.
+D: You|Let us plan for Wednesday.|Vamos planejar para quarta.
+V: weather|tempo;tomorrow|amanhã;degrees|graus;rain|chover;listen|ouvir
+B: Tomorrow it will be {0} and hot.|Amanhã vai fazer {0} e calor.|sunny=sol;windy=vento;dry=seco
+B: On Thursday it will {0} all day.|Na quinta vai {0} o dia todo.|rain=chover;snow=nevar;be cloudy=ficar nublado
+S: Anchor Dee|Tomorrow it will be sunny and hot.|Amanhã vai fazer sol e calor.|Great. We can go to the beach.|Ótimo. Podemos ir à praia.
+S: Anchor Dee|On Thursday it will rain all day.|Na quinta vai chover o dia todo.|Then Wednesday is the best day.|Então quarta é o melhor dia.
+R: Tomorrow it will be sunny and hot.|Amanhã vai fazer sol e calor.
+R: On Thursday it will rain.|Na quinta vai chover.
+R: We can go to the beach.|Podemos ir à praia.
+R: Let us plan for Wednesday.|Vamos planejar para quarta.
+X: Quiet, please.|Silêncio, por favor.
+C: As previsões do tempo na TV americana usam graus Fahrenheit, não Celsius.
+
+T: A talent show | Show de talentos | hall | Chicago | Host Rex,m,👨🏿,apresentador
+K: She sings beautifully. | Ela canta lindamente.
+M: Hoje você assiste a um show de talentos.
+D: Host Rex|Welcome to our talent show!|Bem-vindos ao nosso show de talentos!
+D: You|I am so excited. Who is first?|Estou tão animado. Quem é o primeiro?
+D: Host Rex|A young girl. She will sing a song.|Uma menina. Ela vai cantar uma música.
+D: You|She sings beautifully!|Ela canta lindamente!
+D: Host Rex|And the next one plays the piano.|E o próximo toca piano.
+D: You|Wow. He plays very well.|Nossa. Ele toca muito bem.
+D: Host Rex|Please vote for your favorite.|Por favor vote no seu favorito.
+D: You|I vote for the girl. She is wonderful.|Voto na menina. Ela é maravilhosa.
+V: show|show;sing|cantar;piano|piano;vote|votar;wonderful|maravilhoso
+B: She sings {0}.|Ela canta {0}.|beautifully=lindamente;very well=muito bem;loudly=alto
+B: He plays the {0}.|Ele toca {0}.|piano=piano;guitar=violão;drums=bateria
+S: Host Rex|A young girl will sing a song.|Uma menina vai cantar.|She sings beautifully!|Ela canta lindamente!
+S: Host Rex|Please vote for your favorite.|Por favor vote no seu favorito.|I vote for the girl. She is wonderful.|Voto na menina. Ela é maravilhosa.
+R: Who is first?|Quem é o primeiro?
+R: She sings beautifully.|Ela canta lindamente.
+R: He plays very well.|Ele toca muito bem.
+R: I vote for the girl.|Voto na menina.
+X: Wonderful.|Maravilhosa.
+C: Shows de talentos na escola e na TV fazem parte da cultura americana.
+
+T: Buy a TV | Comprar uma TV | shop | Phoenix | Vic,m,👨🏽,vendedor
+K: I am looking for a TV for the living room. | Procuro uma TV para a sala.
+M: Hoje você compra uma TV.
+D: Vic|Hello! Can I help you?|Olá! Posso ajudar?
+D: You|Yes. I am looking for a TV for the living room.|Sim. Procuro uma TV para a sala.
+D: Vic|How big is your living room?|Qual o tamanho da sua sala?
+D: You|Small. About four meters by three.|Pequena. Cerca de quatro por três metros.
+D: Vic|Then a 40-inch TV is perfect.|Então uma TV de 40 polegadas é perfeita.
+D: You|How much is it?|Quanto custa?
+D: Vic|Three hundred dollars. It has a two-year warranty.|Trezentos dólares. Tem dois anos de garantia.
+D: You|That sounds good. I will take it.|Parece bom. Vou levar.
+V: TV|TV;warranty|garantia;inch|polegada;size|tamanho;small|pequeno
+B: I am looking for a TV for the {0}.|Procuro uma TV para a {0}.|living room=sala;bedroom=quarto;kitchen=cozinha
+B: It has a {0}-year warranty.|Tem garantia de {0} anos.|two=dois;one=um;three=três
+S: Vic|Can I help you?|Posso ajudar?|Yes. I am looking for a TV for the living room.|Sim. Procuro uma TV para a sala.
+S: Vic|A 40-inch TV is perfect.|Uma TV de 40 polegadas é perfeita.|How much is it?|Quanto custa?
+R: I am looking for a TV.|Procuro uma TV.
+R: How big is your living room?|Qual o tamanho da sua sala?
+R: It has a two-year warranty.|Tem dois anos de garantia.
+R: I will take it.|Vou levar.
+X: That sounds good.|Parece bom.
+C: Lojas de eletrônicos nos EUA têm muitas ofertas na Black Friday, no fim de novembro.
+
+T: Movie night today | Noite de filme | living | Portland | Mia,f,👩🏽,anfitriã
+K: Let us make popcorn and watch a movie. | Vamos fazer pipoca e ver um filme.
+M: Hoje você faz uma noite de filme em casa.
+D: Mia|Come in! Tonight is movie night.|Entre! Hoje é noite de filme.
+D: You|Great! What are we watching?|Ótimo! O que vamos assistir?
+D: Mia|We can choose. I have three options.|Podemos escolher. Tenho três opções.
+D: You|Let us make popcorn first.|Vamos fazer pipoca primeiro.
+D: Mia|Good idea. The microwave is over there.|Boa ideia. O micro-ondas está ali.
+D: You|Do you have any juice?|Você tem algum suco?
+D: Mia|Yes, in the fridge. Help yourself.|Sim, na geladeira. Fique à vontade.
+D: You|Thanks. This is going to be fun.|Obrigado. Vai ser divertido.
+V: movie night|noite de filme;microwave|micro-ondas;option|opção;juice|suco;help yourself|fique à vontade
+B: Tonight is {0} night.|Hoje é noite de {0}.|movie=filme;game=jogo;pizza=pizza
+B: The microwave is over {0}.|O micro-ondas está ali {0}.|there=ali;here=aqui;in the kitchen=na cozinha
+S: Mia|Come in! Tonight is movie night.|Entre! Hoje é noite de filme.|Great! What are we watching?|Ótimo! O que vamos assistir?
+S: Mia|Help yourself to some juice.|Fique à vontade com o suco.|Thanks. This is going to be fun.|Obrigado. Vai ser divertido.
+R: Tonight is movie night.|Hoje é noite de filme.
+R: Let us make popcorn first.|Vamos fazer pipoca primeiro.
+R: Help yourself.|Fique à vontade.
+R: This is going to be fun.|Vai ser divertido.
+X: Good idea.|Boa ideia.
+C: Noites de filme em casa, com pipoca e amigos, são uma tradição muito comum.
+
+T: Movie review | Crítica de um filme | cafe | New York | Critic Ann,f,👩🏼,crítica
+K: I give it four stars. | Dou quatro estrelas.
+M: Hoje você dá nota a um filme.
+D: Critic Ann|So, what is your opinion of the movie?|Então, qual é sua opinião sobre o filme?
+D: You|I think it was very good. I give it four stars.|Acho que foi muito bom. Dou quatro estrelas.
+D: Critic Ann|Why not five?|Por que não cinco?
+D: You|The beginning was a little slow.|O começo foi um pouco lento.
+D: Critic Ann|I agree. But the music was beautiful.|Concordo. Mas a música foi linda.
+D: You|Yes, and the actors were great.|Sim, e os atores foram ótimos.
+D: Critic Ann|Would you recommend it to a friend?|Você recomendaria a um amigo?
+D: You|Definitely. It is a great movie to watch.|Com certeza. É um ótimo filme para assistir.
+V: opinion|opinião;stars|estrelas;slow|lento;agree|concordar;recommend|recomendar
+B: I give it {0} stars.|Dou {0} estrelas.|four=quatro;five=cinco;three=três
+B: The beginning was a little {0}.|O começo foi um pouco {0}.|slow=lento;long=longo;sad=triste
+S: Critic Ann|What is your opinion of the movie?|Qual é sua opinião sobre o filme?|I think it was very good. I give it four stars.|Acho que foi muito bom. Dou quatro estrelas.
+S: Critic Ann|Would you recommend it to a friend?|Você recomendaria a um amigo?|Definitely. It is a great movie.|Com certeza. É um ótimo filme.
+R: What is your opinion?|Qual é sua opinião?
+R: I give it four stars.|Dou quatro estrelas.
+R: The beginning was a little slow.|O começo foi um pouco lento.
+R: I would recommend it.|Eu recomendaria.
+X: Definitely.|Com certeza.
+C: Críticas de filmes nos EUA usam estrelas, e muita gente confere a nota antes de ir ao cinema.

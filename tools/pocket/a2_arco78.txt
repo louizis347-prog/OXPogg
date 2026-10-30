@@ -1,0 +1,253 @@
+# Arco 78 · Viagem internacional
+T: Passport control | Controle de passaportes | airport | New York | Officer Lee,m,👨🏽,oficial
+K: What is the purpose of your visit? | Qual é o motivo da sua visita?
+M: Hoje você passa pelo controle de passaportes.
+D: Officer Lee|Good morning. Passport, please.|Bom dia. Passaporte, por favor.
+D: You|Here it is.|Aqui está.
+D: Officer Lee|What is the purpose of your visit?|Qual é o motivo da sua visita?
+D: You|Tourism. I am going to visit my cousin.|Turismo. Vou visitar meu primo.
+D: Officer Lee|How long will you stay?|Quanto tempo vai ficar?
+D: You|Two weeks. I have a return ticket.|Duas semanas. Tenho passagem de volta.
+D: Officer Lee|Where will you stay?|Onde vai ficar?
+D: You|At my cousin's house, in Brooklyn.|Na casa do meu primo, no Brooklyn.
+V: passport|passaporte;purpose|motivo;tourism|turismo;return ticket|passagem de volta;visit|visita
+B: What is the purpose of your {0}?|Qual é o motivo da sua {0}?|visit=visita;trip=viagem;stay=estadia
+B: I will stay {0} weeks.|Vou ficar {0} semanas.|two=duas;three=três;one=uma
+S: Officer Lee|What is the purpose of your visit?|Qual é o motivo da sua visita?|Tourism. I am going to visit my cousin.|Turismo. Vou visitar meu primo.
+S: Officer Lee|How long will you stay?|Quanto tempo vai ficar?|Two weeks. I have a return ticket.|Duas semanas. Tenho passagem de volta.
+R: Passport, please.|Passaporte, por favor.
+R: What is the purpose of your visit?|Qual é o motivo da sua visita?
+R: I will stay two weeks.|Vou ficar duas semanas.
+R: I have a return ticket.|Tenho passagem de volta.
+X: Here it is.|Aqui está.
+C: Na imigração dos EUA, o oficial pergunta o motivo da visita, o tempo de estadia e onde você vai ficar.
+
+T: Customs | Alfândega | airport | Miami | Agent Kim,f,👩🏽,agente
+K: Do you have anything to declare? | Você tem algo a declarar?
+M: Hoje você passa pela alfândega.
+D: Agent Kim|Welcome. Do you have anything to declare?|Bem-vindo. Você tem algo a declarar?
+D: You|No, nothing. Only clothes and gifts.|Não, nada. Só roupas e presentes.
+D: Agent Kim|Do you have any food or fruit?|Você tem alguma comida ou fruta?
+D: You|Just some chocolate. Is that OK?|Só um pouco de chocolate. Tudo bem?
+D: Agent Kim|Yes, chocolate is fine.|Sim, chocolate está bem.
+D: You|I also have a bottle of perfume.|Também tenho um frasco de perfume.
+D: Agent Kim|That is fine. Open your bag, please.|Tudo bem. Abra sua mala, por favor.
+D: You|Of course. Here you are.|Claro. Aqui está.
+V: customs|alfândega;declare|declarar;perfume|perfume;gift|presente;fruit|fruta
+B: Do you have anything to {0}?|Você tem algo a {0}?|declare=declarar;show=mostrar;open=abrir
+B: Only clothes and {0}.|Só roupas e {0}.|gifts=presentes;books=livros;shoes=sapatos
+S: Agent Kim|Do you have anything to declare?|Você tem algo a declarar?|No, nothing. Only clothes and gifts.|Não, nada. Só roupas e presentes.
+S: Agent Kim|Open your bag, please.|Abra sua mala, por favor.|Of course. Here you are.|Claro. Aqui está.
+R: Do you have anything to declare?|Você tem algo a declarar?
+R: Only clothes and gifts.|Só roupas e presentes.
+R: Do you have any food?|Você tem alguma comida?
+R: Open your bag, please.|Abra sua mala, por favor.
+X: Of course.|Claro.
+C: Nos EUA, é preciso declarar frutas, plantas e grandes quantias de dinheiro na alfândega.
+
+T: Change money | Trocar dinheiro | shop | Los Angeles | Teller Dan,m,👨🏼,atendente
+K: I would like to change some dollars. | Eu gostaria de trocar alguns dólares.
+M: Hoje você troca dinheiro numa casa de câmbio.
+D: You|Hello. I would like to change some money.|Olá. Eu gostaria de trocar dinheiro.
+D: Teller Dan|Sure. Which currency do you have?|Claro. Que moeda você tem?
+D: You|Brazilian reais. What is the rate today?|Reais. Qual é a cotação hoje?
+D: Teller Dan|One dollar is five reais.|Um dólar são cinco reais.
+D: You|I would like to change five hundred reais.|Eu gostaria de trocar quinhentos reais.
+D: Teller Dan|That is one hundred dollars, minus a small fee.|São cem dólares, menos uma pequena taxa.
+D: You|OK. Here is my passport.|Certo. Aqui está meu passaporte.
+D: Teller Dan|Thank you. Here is your money.|Obrigado. Aqui está seu dinheiro.
+V: currency|moeda;rate|cotação;fee|taxa;change|trocar;real|real
+B: I would like to change {0} reais.|Eu gostaria de trocar {0} reais.|five hundred=quinhentos;two hundred=duzentos;one thousand=mil
+B: One dollar is {0} reais.|Um dólar são {0} reais.|five=cinco;four=quatro;six=seis
+S: Teller Dan|Which currency do you have?|Que moeda você tem?|Brazilian reais. What is the rate today?|Reais. Qual a cotação hoje?
+S: Teller Dan|That is one hundred dollars.|São cem dólares.|OK. Here is my passport.|Certo. Aqui está meu passaporte.
+R: I would like to change some money.|Eu gostaria de trocar dinheiro.
+R: What is the rate today?|Qual é a cotação hoje?
+R: There is a small fee.|Há uma pequena taxa.
+R: Here is my passport.|Aqui está meu passaporte.
+X: Sure.|Claro.
+C: Casas de câmbio nos aeroportos americanos costumam cobrar mais caro; muitos preferem sacar no caixa eletrônico.
+
+T: A hotel booking | Reserva de hotel | office | Boston | Clerk Amy,f,👩🏼,recepcionista
+K: I have a reservation under the name Silva today. | Tenho uma reserva no nome Silva.
+M: Hoje você faz o check-in num hotel.
+D: Clerk Amy|Welcome to the Harbor Hotel.|Bem-vindo ao Harbor Hotel.
+D: You|Thank you. I have a reservation under the name Silva.|Obrigado. Tenho uma reserva no nome Silva.
+D: Clerk Amy|Yes, one room for three nights.|Sim, um quarto por três noites.
+D: You|Is breakfast included?|O café da manhã está incluído?
+D: Clerk Amy|Yes, from six to ten, on the first floor.|Sim, das seis às dez, no primeiro andar.
+D: You|What is the Wi-Fi password?|Qual é a senha do Wi-Fi?
+D: Clerk Amy|It is on your key card.|Está no seu cartão de acesso.
+D: You|Great. Which floor is my room?|Ótimo. Em que andar é meu quarto?
+V: reservation|reserva;breakfast|café da manhã;key card|cartão de acesso;night|noite;floor|andar
+B: One room for {0} nights.|Um quarto por {0} noites.|three=três;two=duas;five=cinco
+B: Breakfast is from six to {0}.|O café da manhã é das seis às {0}.|ten=dez;nine=nove;eleven=onze
+S: Clerk Amy|Welcome to the Harbor Hotel.|Bem-vindo ao Harbor Hotel.|Thank you. I have a reservation under the name Silva.|Obrigado. Tenho uma reserva no nome Silva.
+S: Clerk Amy|Breakfast is from six to ten.|O café é das seis às dez.|What is the Wi-Fi password?|Qual é a senha do Wi-Fi?
+R: I have a reservation under the name Silva.|Tenho uma reserva no nome Silva.
+R: One room for three nights.|Um quarto por três noites.
+R: Is breakfast included?|O café da manhã está incluído?
+R: Which floor is my room?|Em que andar é meu quarto?
+X: Welcome.|Bem-vindo.
+C: Hotéis nos EUA costumam ter check-in à tarde e check-out ao meio-dia.
+
+T: Sightseeing | Passeio turístico | street | Washington | Guide Ben,m,👨🏾,guia
+K: What time does the tour start today? | A que horas o passeio começa?
+M: Hoje você faz um passeio turístico.
+D: You|Good morning. What time does the tour start?|Bom dia. A que horas o passeio começa?
+D: Guide Ben|At ten o'clock, in front of the museum.|Às dez, em frente ao museu.
+D: You|How long is it?|Quanto tempo dura?
+D: Guide Ben|About three hours, with a short break.|Cerca de três horas, com um pequeno intervalo.
+D: You|What places do we visit?|Que lugares visitamos?
+D: Guide Ben|The White House, the monuments and a park.|A Casa Branca, os monumentos e um parque.
+D: You|How much is the ticket?|Quanto custa o ingresso?
+D: Guide Ben|Thirty dollars. Children are free.|Trinta dólares. Crianças não pagam.
+V: tour|passeio;monument|monumento;break|intervalo;ticket|ingresso;free|grátis
+B: The tour starts at {0} o'clock.|O passeio começa às {0}.|ten=dez;nine=nove;eleven=onze
+B: The ticket is {0} dollars.|O ingresso custa {0} dólares.|thirty=trinta;twenty=vinte;forty=quarenta
+S: Guide Ben|The tour starts at ten o'clock.|O passeio começa às dez.|How long is it?|Quanto tempo dura?
+S: Guide Ben|We visit the White House.|Visitamos a Casa Branca.|How much is the ticket?|Quanto custa o ingresso?
+R: What time does the tour start?|A que horas o passeio começa?
+R: About three hours.|Cerca de três horas.
+R: What places do we visit?|Que lugares visitamos?
+R: Children are free.|Crianças não pagam.
+X: In front of the museum.|Em frente ao museu.
+C: Muitos museus em Washington, D.C. são gratuitos.
+
+T: A souvenir | Uma lembrancinha | shop | San Francisco | Seller Tess,f,👩🏽,vendedora
+K: I am looking for a souvenir for my mother. | Procuro uma lembrancinha para minha mãe.
+M: Hoje você compra uma lembrancinha de viagem.
+D: Seller Tess|Hello! Are you looking for something special?|Olá! Procura algo especial?
+D: You|Yes. I am looking for a souvenir for my mother.|Sim. Procuro uma lembrancinha para minha mãe.
+D: Seller Tess|How about a scarf with the Golden Gate Bridge?|Que tal um lenço com a ponte Golden Gate?
+D: You|It is beautiful. How much is it?|É lindo. Quanto custa?
+D: Seller Tess|Twenty dollars. It is made in the city.|Vinte dólares. É feito na cidade.
+D: You|I will take it. Can you wrap it, please?|Vou levar. Pode embrulhar, por favor?
+D: Seller Tess|Of course. Do you want a card?|Claro. Quer um cartão?
+D: You|Yes, a small one, please.|Sim, um pequeno, por favor.
+V: souvenir|lembrancinha;scarf|lenço;wrap|embrulhar;bridge|ponte;special|especial
+B: I am looking for a souvenir for my {0}.|Procuro uma lembrancinha para minha {0}.|mother=mãe;sister=irmã;friend=amiga
+B: It is made in the {0}.|É feito na {0}.|city=cidade;country=região;area=área
+S: Seller Tess|Are you looking for something special?|Procura algo especial?|Yes. I am looking for a souvenir for my mother.|Sim. Procuro uma lembrancinha para minha mãe.
+S: Seller Tess|How about a scarf?|Que tal um lenço?|It is beautiful. I will take it.|É lindo. Vou levar.
+R: I am looking for a souvenir.|Procuro uma lembrancinha.
+R: How much is it?|Quanto custa?
+R: Can you wrap it, please?|Pode embrulhar, por favor?
+R: Do you want a card?|Quer um cartão?
+X: It is beautiful.|É lindo.
+C: Lembrancinhas de viagem, como ímãs e camisetas, são vendidas em todas as cidades turísticas.
+
+T: Ask for help abroad | Pedir ajuda no exterior | street | Chicago | Local Amy,f,👩🏼,moradora
+K: Excuse me, I need some help. | Com licença, preciso de ajuda.
+M: Hoje você pede ajuda numa cidade desconhecida.
+D: You|Excuse me, I need some help. I am lost.|Com licença, preciso de ajuda. Estou perdido.
+D: Local Amy|Of course. Where do you want to go?|Claro. Aonde você quer ir?
+D: You|To the Art Museum. Is it far from here?|Ao Museu de Arte. Fica longe daqui?
+D: Local Amy|No, only ten minutes on foot.|Não, só dez minutos a pé.
+D: You|Could you show me on the map?|Poderia me mostrar no mapa?
+D: Local Amy|Sure. We are here, and the museum is there.|Claro. Estamos aqui, e o museu está lá.
+D: You|Thank you. You are very kind.|Obrigado. Você é muito gentil.
+D: Local Amy|Enjoy your visit!|Aproveite a visita!
+V: lost|perdido;map|mapa;far|longe;foot|pé;kind|gentil
+B: Excuse me, I need some {0}.|Com licença, preciso de {0}.|help=ajuda;water=água;information=informação
+B: Could you show me on the {0}?|Poderia me mostrar no {0}?|map=mapa;phone=celular;screen=tela
+S: Local Amy|Where do you want to go?|Aonde você quer ir?|To the Art Museum. Is it far from here?|Ao Museu de Arte. Fica longe daqui?
+S: Local Amy|It is only ten minutes on foot.|São só dez minutos a pé.|Could you show me on the map?|Poderia me mostrar no mapa?
+R: I am lost.|Estou perdido.
+R: Is it far from here?|Fica longe daqui?
+R: Could you show me on the map?|Poderia me mostrar no mapa?
+R: You are very kind.|Você é muito gentil.
+X: Excuse me.|Com licença.
+C: Americanos costumam ajudar turistas perdidos, e um simples "Excuse me" abre a conversa.
+
+T: A local restaurant | Um restaurante local | cafe | New Orleans | Waiter Max,m,👨🏿,garçom
+K: What is the specialty here? | Qual é a especialidade daqui?
+M: Hoje você experimenta a comida local.
+D: Waiter Max|Welcome to New Orleans! What can I get you?|Bem-vindo a Nova Orleans! O que posso trazer?
+D: You|What is the specialty here?|Qual é a especialidade daqui?
+D: Waiter Max|Our gumbo. It is a rich soup with rice.|Nosso gumbo. É uma sopa rica com arroz.
+D: You|Is it spicy?|É picante?
+D: Waiter Max|A little. I can make it mild for you.|Um pouco. Posso deixar suave para você.
+D: You|Yes, please. I will also try the jazz music.|Sim, por favor. Também vou curtir o jazz.
+D: Waiter Max|There is live music every night.|Há música ao vivo toda noite.
+D: You|Perfect. What a wonderful city!|Perfeito. Que cidade maravilhosa!
+V: specialty|especialidade;rich|rico;mild|suave;jazz|jazz;live|ao vivo
+B: What is the {0} here?|Qual é a {0} daqui?|specialty=especialidade;best dish=melhor prato;soup of the day=sopa do dia
+B: I can make it {0} for you.|Posso deixar {0} para você.|mild=suave;hotter=mais forte;sweet=doce
+S: Waiter Max|What can I get you?|O que posso trazer?|What is the specialty here?|Qual é a especialidade daqui?
+S: Waiter Max|I can make it mild for you.|Posso deixar suave para você.|Yes, please. What a wonderful city!|Sim, por favor. Que cidade maravilhosa!
+R: What is the specialty here?|Qual é a especialidade daqui?
+R: Is it spicy?|É picante?
+R: I can make it mild for you.|Posso deixar suave para você.
+R: There is live music every night.|Há música ao vivo toda noite.
+X: What a wonderful city!|Que cidade maravilhosa!
+C: Nova Orleans é famosa pelo jazz e pela culinária crioula.
+
+T: Time zones | Fusos horários | hall | Atlanta | Agent Joe,m,👨🏽,agente
+K: What time is it in Brazil now? | Que horas são no Brasil agora?
+M: Hoje você aprende sobre fusos horários.
+D: You|Excuse me. What time is it in Brazil now?|Com licença. Que horas são no Brasil agora?
+D: Agent Joe|It is two hours ahead of Atlanta.|São duas horas à frente de Atlanta.
+D: You|So when it is noon here, it is two in Brazil?|Então quando é meio-dia aqui, são duas no Brasil?
+D: Agent Joe|Exactly. In winter, it can be three hours.|Exatamente. No inverno, pode ser três horas.
+D: You|I need to call my family tonight.|Preciso ligar para minha família hoje à noite.
+D: Agent Joe|Call before nine, or they will be asleep.|Ligue antes das nove, ou eles estarão dormindo.
+D: You|Thank you. That helps a lot.|Obrigado. Isso ajuda muito.
+D: Agent Joe|You are welcome.|De nada.
+V: time zone|fuso horário;ahead|à frente;asleep|dormindo;exactly|exatamente;winter|inverno
+B: It is {0} hours ahead of Atlanta.|São {0} horas à frente de Atlanta.|two=duas;three=três;one=uma
+B: Call before {0}.|Ligue antes das {0}.|nine=nove;eight=oito;ten=dez
+S: Agent Joe|It is two hours ahead of Atlanta.|São duas horas à frente de Atlanta.|So when it is noon here, it is two in Brazil?|Então quando é meio-dia aqui, são duas lá?
+S: Agent Joe|Call before nine.|Ligue antes das nove.|Thank you. That helps a lot.|Obrigado. Isso ajuda muito.
+R: What time is it in Brazil now?|Que horas são no Brasil agora?
+R: It is two hours ahead.|São duas horas à frente.
+R: I need to call my family tonight.|Preciso ligar para minha família hoje à noite.
+R: That helps a lot.|Isso ajuda muito.
+X: Exactly.|Exatamente.
+C: Os EUA têm seis fusos horários; planejar chamadas com a família exige atenção às horas.
+
+T: Homesick | Com saudade de casa | living | Seattle | Friend Pat,f,👩🏻,amiga
+K: I miss my country very much. | Sinto muita falta do meu país.
+M: Hoje você fala sobre saudade de casa.
+D: Friend Pat|You look sad today. What is wrong?|Você parece triste hoje. O que houve?
+D: You|I miss my country very much.|Sinto muita falta do meu país.
+D: Friend Pat|I understand. What do you miss the most?|Entendo. Do que você sente mais falta?
+D: You|My family, the food and the weather.|Da minha família, da comida e do clima.
+D: Friend Pat|Do you talk to them often?|Você fala com eles com frequência?
+D: You|Every Sunday, on a video call.|Todo domingo, numa chamada de vídeo.
+D: Friend Pat|That is good. Let me cook for you tonight.|Isso é bom. Deixe-me cozinhar para você hoje à noite.
+D: You|Thank you, Pat. You are a great friend.|Obrigado, Pat. Você é uma ótima amiga.
+V: sad|triste;miss|sentir falta;often|com frequência;weather|clima;understand|entender
+B: I miss my {0} very much.|Sinto muita falta do meu {0}.|country=país;family=família;home=lar
+B: Every {0}, on a video call.|Todo {0}, numa chamada de vídeo.|Sunday=domingo;week=semana;night=noite
+S: Friend Pat|You look sad today. What is wrong?|Você parece triste. O que houve?|I miss my country very much.|Sinto muita falta do meu país.
+S: Friend Pat|Do you talk to them often?|Fala com eles com frequência?|Every Sunday, on a video call.|Todo domingo, numa chamada de vídeo.
+R: I miss my country very much.|Sinto muita falta do meu país.
+R: I miss my family and the food.|Sinto falta da família e da comida.
+R: Every Sunday, we have a video call.|Todo domingo, fazemos uma chamada de vídeo.
+R: You are a great friend.|Você é uma ótima amiga.
+X: What is wrong?|O que houve?
+C: Sentir saudade de casa é normal para quem mora longe, e novos amigos ajudam muito.
+
+T: Going home | Voltando para casa | airport | Chicago | Friend Leo,m,👨🏽,amigo
+K: I had a wonderful trip. | Tive uma viagem maravilhosa.
+M: Hoje você volta para casa depois da viagem.
+D: Friend Leo|Your flight leaves in two hours. Are you ready?|Seu voo sai em duas horas. Está pronto?
+D: You|Yes. I had a wonderful trip.|Sim. Tive uma viagem maravilhosa.
+D: Friend Leo|What was your favorite place?|Qual foi seu lugar favorito?
+D: You|New Orleans. The music and food were amazing.|Nova Orleans. A música e a comida foram incríveis.
+D: Friend Leo|I am happy you enjoyed it.|Fico feliz que você curtiu.
+D: You|Thank you for everything, Leo.|Obrigado por tudo, Leo.
+D: Friend Leo|Come back soon. Send me a message when you arrive.|Volte logo. Mande uma mensagem quando chegar.
+D: You|I will. Goodbye, my friend!|Vou mandar. Tchau, meu amigo!
+V: flight|voo;favorite|favorito;amazing|incrível;enjoy|curtir;soon|logo
+B: Your flight leaves in {0} hours.|Seu voo sai em {0} horas.|two=duas;three=três;one=uma
+B: The music and food were {0}.|A música e a comida foram {0}.|amazing=incríveis;great=ótimas;wonderful=maravilhosas
+S: Friend Leo|Your flight leaves in two hours.|Seu voo sai em duas horas.|Yes. I had a wonderful trip.|Sim. Tive uma viagem maravilhosa.
+S: Friend Leo|Send me a message when you arrive.|Mande uma mensagem quando chegar.|I will. Goodbye, my friend!|Vou mandar. Tchau, meu amigo!
+R: I had a wonderful trip.|Tive uma viagem maravilhosa.
+R: My favorite place was New Orleans.|Meu lugar favorito foi Nova Orleans.
+R: Thank you for everything.|Obrigado por tudo.
+R: Goodbye, my friend!|Tchau, meu amigo!
+X: Come back soon.|Volte logo.
+C: Despedidas em aeroportos são carregadas de emoção, e amigos prometem se rever.

@@ -1,0 +1,230 @@
+# Arco 70 · Livros e biblioteca
+T: Get a library card | Fazer a carteirinha da biblioteca | library | Seattle | Librarian Joy,f,👩🏼,bibliotecária
+K: I would like a library card. | Eu gostaria de uma carteirinha da biblioteca.
+M: Hoje você faz a carteirinha da biblioteca.
+D: Librarian Joy|Welcome to the library. How can I help?|Bem-vindo à biblioteca. Como posso ajudar?
+D: You|I would like a library card, please.|Eu gostaria de uma carteirinha da biblioteca, por favor.
+D: Librarian Joy|Do you live in this city?|Você mora nesta cidade?
+D: You|Yes. I have a letter with my address.|Sim. Tenho uma carta com meu endereço.
+D: Librarian Joy|Perfect. Please fill out this form.|Perfeito. Por favor preencha este formulário.
+D: You|Is the card free?|A carteirinha é grátis?
+D: Librarian Joy|Yes, and you can borrow ten books.|Sim, e você pode pegar dez livros.
+D: You|Wonderful. How long can I keep them?|Maravilhoso. Por quanto tempo posso ficar com eles?
+V: library|biblioteca;card|carteirinha;borrow|pegar emprestado;form|formulário;letter|carta
+B: I would like a library {0}.|Eu gostaria de uma {0} da biblioteca.|card=carteirinha;book=livro;map=mapa
+B: You can borrow {0} books.|Você pode pegar {0} livros.|ten=dez;five=cinco;eight=oito
+S: Librarian Joy|How can I help?|Como posso ajudar?|I would like a library card, please.|Eu gostaria de uma carteirinha, por favor.
+S: Librarian Joy|Please fill out this form.|Por favor preencha este formulário.|Is the card free?|A carteirinha é grátis?
+R: I would like a library card.|Eu gostaria de uma carteirinha.
+R: Please fill out this form.|Por favor preencha este formulário.
+R: You can borrow ten books.|Você pode pegar dez livros.
+R: How long can I keep them?|Por quanto tempo posso ficar com eles?
+X: Is the card free?|A carteirinha é grátis?
+C: Bibliotecas públicas nos EUA são gratuitas e emprestam livros, filmes e até ferramentas.
+
+T: Borrow a book | Pegar um livro emprestado | library | Boston | Librarian Sam,m,👨🏾,bibliotecário
+K: How long can I keep the book? | Por quanto tempo posso ficar com o livro?
+M: Hoje você pega um livro emprestado.
+D: You|Excuse me. Where can I find books about cooking?|Com licença. Onde acho livros de culinária?
+D: Librarian Sam|They are on the second floor, section C.|Ficam no segundo andar, seção C.
+D: You|Thank you. And how long can I keep the book?|Obrigado. E por quanto tempo posso ficar com o livro?
+D: Librarian Sam|Three weeks. You can renew it online.|Três semanas. Você pode renovar pela internet.
+D: You|What happens if I am late?|O que acontece se eu atrasar?
+D: Librarian Sam|You pay a small fee, ten cents a day.|Você paga uma pequena taxa, dez centavos por dia.
+D: You|That is fine. Thank you.|Tudo bem. Obrigado.
+D: Librarian Sam|You are welcome. Enjoy your book.|De nada. Aproveite o livro.
+V: section|seção;renew|renovar;fee|taxa;cooking|culinária;floor|andar
+B: They are on the second {0}.|Ficam no segundo {0}.|floor=andar;shelf=prateleira;row=fileira
+B: You can keep it for {0} weeks.|Você pode ficar por {0} semanas.|three=três;two=duas;four=quatro
+S: Librarian Sam|They are on the second floor.|Ficam no segundo andar.|Thank you. How long can I keep the book?|Obrigado. Por quanto tempo posso ficar com o livro?
+S: Librarian Sam|You can renew it online.|Você pode renovar pela internet.|What happens if I am late?|O que acontece se eu atrasar?
+R: Where can I find books about cooking?|Onde acho livros de culinária?
+R: How long can I keep the book?|Por quanto tempo posso ficar com o livro?
+R: You can renew it online.|Você pode renovar pela internet.
+R: You pay a small fee.|Você paga uma pequena taxa.
+X: Enjoy your book.|Aproveite o livro.
+C: Muitas bibliotecas americanas permitem renovar livros pelo aplicativo ou pelo site.
+
+T: A bookstore | Livraria | shop | New York | Bookseller Ben,m,👨🏼,livreiro
+K: Do you have this book in English? | Vocês têm este livro em inglês?
+M: Hoje você compra livros numa livraria.
+D: Bookseller Ben|Hi! Are you looking for something special?|Oi! Você procura algo especial?
+D: You|Yes. Do you have this book in English?|Sim. Vocês têm este livro em inglês?
+D: Bookseller Ben|Let me check. Yes, we have two copies.|Deixe-me ver. Sim, temos dois exemplares.
+D: You|Great. How much is it?|Ótimo. Quanto custa?
+D: Bookseller Ben|Fifteen dollars. It is on sale today.|Quinze dólares. Está em promoção hoje.
+D: You|Do you have an easy book for beginners?|Vocês têm um livro fácil para iniciantes?
+D: Bookseller Ben|Yes, these are simple and short.|Sim, estes são simples e curtos.
+D: You|Perfect. I will take two.|Perfeito. Vou levar dois.
+V: bookstore|livraria;copy|exemplar;beginner|iniciante;short|curto;simple|simples
+B: Do you have this book in {0}?|Vocês têm este livro em {0}?|English=inglês;Spanish=espanhol;Portuguese=português
+B: These are simple and {0}.|Estes são simples e {0}.|short=curtos;cheap=baratos;new=novos
+S: Bookseller Ben|Are you looking for something special?|Procura algo especial?|Yes. Do you have this book in English?|Sim. Vocês têm este livro em inglês?
+S: Bookseller Ben|We have two copies.|Temos dois exemplares.|Great. How much is it?|Ótimo. Quanto custa?
+R: Do you have this book in English?|Vocês têm este livro em inglês?
+R: Do you have an easy book?|Vocês têm um livro fácil?
+R: It is on sale today.|Está em promoção hoje.
+R: I will take two.|Vou levar dois.
+X: Let me check.|Deixe-me ver.
+C: Livrarias americanas costumam ter cafés dentro, e muita gente passa horas lendo.
+
+T: Reading in English | Ler em inglês | library | Chicago | Teacher Kay,f,👩🏻,professora
+K: I read ten pages every day. | Leio dez páginas todo dia.
+M: Hoje você fala sobre ler em inglês.
+D: Teacher Kay|How do you practice your English?|Como você pratica seu inglês?
+D: You|I read ten pages every day.|Leio dez páginas todo dia.
+D: Teacher Kay|That is a great habit. What do you read?|Que ótimo hábito. O que você lê?
+D: You|Short stories. They are easy.|Contos curtos. São fáceis.
+D: Teacher Kay|Do you look up every new word?|Você procura cada palavra nova?
+D: You|No, only the important ones.|Não, só as importantes.
+D: Teacher Kay|Good. Try reading aloud, too.|Bom. Tente ler em voz alta também.
+D: You|I will. Thank you for the tip.|Vou tentar. Obrigado pela dica.
+V: page|página;habit|hábito;short story|conto;aloud|em voz alta;tip|dica
+B: I read {0} pages every day.|Leio {0} páginas todo dia.|ten=dez;five=cinco;twenty=vinte
+B: Try reading {0}, too.|Tente ler {0} também.|aloud=em voz alta;slowly=devagar;every day=todo dia
+S: Teacher Kay|How do you practice your English?|Como você pratica seu inglês?|I read ten pages every day.|Leio dez páginas todo dia.
+S: Teacher Kay|Try reading aloud, too.|Tente ler em voz alta também.|I will. Thank you for the tip.|Vou tentar. Obrigado pela dica.
+R: I read ten pages every day.|Leio dez páginas todo dia.
+R: Short stories are easy.|Contos curtos são fáceis.
+R: I look up the important words.|Procuro as palavras importantes.
+R: Try reading aloud.|Tente ler em voz alta.
+X: Great habit.|Ótimo hábito.
+C: Ler em voz alta ajuda na pronúncia e na confiança ao falar inglês.
+
+T: A story for kids | Uma história para crianças | living | Portland | Daughter Lily,f,👧🏽,filha
+K: Read me a story, please. | Leia uma história para mim, por favor.
+M: Hoje você lê uma história para sua filha.
+D: Lily|Read me a story, please!|Leia uma história para mim, por favor!
+D: You|OK. Choose a book from the shelf.|Certo. Escolha um livro na estante.
+D: Lily|This one! It has a big dragon.|Este! Tem um dragão grande.
+D: You|Once upon a time, there was a small dragon.|Era uma vez um dragãozinho.
+D: Lily|Was he scary?|Ele era assustador?
+D: You|No, he was kind and he loved to read.|Não, ele era gentil e adorava ler.
+D: Lily|I like him! What happened next?|Gostei dele! O que aconteceu depois?
+D: You|Tomorrow night, I will read the next page.|Amanhã à noite, leio a próxima página.
+V: story|história;shelf|estante;dragon|dragão;once upon a time|era uma vez;happen|acontecer
+B: Once upon a time, there was a small {0}.|Era uma vez um {0} pequeno.|dragon=dragão;dog=cachorro;boy=menino
+B: Choose a book from the {0}.|Escolha um livro na {0}.|shelf=estante;table=mesa;bag=mochila
+S: Lily|Read me a story, please!|Leia uma história para mim!|OK. Choose a book from the shelf.|Certo. Escolha um livro na estante.
+S: Lily|Was he scary?|Ele era assustador?|No, he was kind and he loved to read.|Não, era gentil e adorava ler.
+R: Read me a story, please.|Leia uma história para mim.
+R: Once upon a time, there was a small dragon.|Era uma vez um dragãozinho.
+R: He was kind.|Ele era gentil.
+R: What happened next?|O que aconteceu depois?
+X: Once upon a time.|Era uma vez.
+C: "Once upon a time" é a abertura clássica de contos infantis em inglês.
+
+T: A book club | Clube do livro | cafe | Denver | Host Meg,f,👩🏼,anfitriã
+K: What did you think of the book? | O que você achou do livro?
+M: Hoje você participa de um clube do livro.
+D: Host Meg|Welcome to our book club. What did you think of the book?|Bem-vindo ao nosso clube do livro. O que achou do livro?
+D: You|I liked it a lot. The main character was brave.|Gostei muito. A personagem principal era corajosa.
+D: Host Meg|Which part did you like most?|De qual parte você mais gostou?
+D: You|The part in the forest. It was exciting.|A parte da floresta. Foi emocionante.
+D: Host Meg|Did you like the ending?|Você gostou do final?
+D: You|Yes, but I wanted a longer story.|Sim, mas queria uma história mais longa.
+D: Host Meg|Next month we will read a mystery.|No mês que vem vamos ler um mistério.
+D: You|I love mysteries. I will join again.|Adoro mistérios. Vou participar de novo.
+V: club|clube;brave|corajoso;exciting|emocionante;mystery|mistério;forest|floresta
+B: The main character was {0}.|A personagem principal era {0}.|brave=corajosa;kind=gentil;funny=engraçada
+B: Next month we will read a {0}.|No mês que vem vamos ler {0}.|mystery=um mistério;novel=um romance;story=um conto
+S: Host Meg|What did you think of the book?|O que achou do livro?|I liked it a lot. The main character was brave.|Gostei muito. A personagem era corajosa.
+S: Host Meg|Next month we will read a mystery.|No mês que vem lemos um mistério.|I love mysteries. I will join again.|Adoro mistérios. Vou participar de novo.
+R: What did you think of the book?|O que achou do livro?
+R: The main character was brave.|A personagem principal era corajosa.
+R: The part in the forest was exciting.|A parte da floresta foi emocionante.
+R: I will join again.|Vou participar de novo.
+X: I liked it a lot.|Gostei muito.
+C: Clubes do livro se reúnem em bibliotecas e cafés dos EUA para conversar sobre um livro por mês.
+
+T: Return a book | Devolver um livro | library | Austin | Librarian Lee,m,👨🏻,bibliotecário
+K: I am sorry, this book is late. | Desculpe, este livro está atrasado.
+M: Hoje você devolve um livro atrasado.
+D: You|Hi. I am sorry, this book is late.|Oi. Desculpe, este livro está atrasado.
+D: Librarian Lee|No problem. How many days late?|Sem problema. Quantos dias de atraso?
+D: You|Five days. I forgot to return it.|Cinco dias. Esqueci de devolver.
+D: Librarian Lee|The fee is fifty cents. Do you want to pay now?|A taxa é cinquenta centavos. Quer pagar agora?
+D: You|Yes. Here is a dollar.|Sim. Aqui está um dólar.
+D: Librarian Lee|Here is your change. Do you need another book?|Aqui está seu troco. Você precisa de outro livro?
+D: You|Yes. I would like a mystery.|Sim. Eu gostaria de um mistério.
+D: Librarian Lee|Try the third shelf on the left.|Tente a terceira estante à esquerda.
+V: return|devolver;forgot|esqueceu;cents|centavos;change|troco;another|outro
+B: The fee is {0} cents.|A taxa é {0} centavos.|fifty=cinquenta;twenty=vinte;ten=dez
+B: Try the {0} shelf on the left.|Tente a {0} estante à esquerda.|third=terceira;second=segunda;first=primeira
+S: Librarian Lee|How many days late?|Quantos dias de atraso?|Five days. I forgot to return it.|Cinco dias. Esqueci de devolver.
+S: Librarian Lee|The fee is fifty cents.|A taxa é cinquenta centavos.|Yes. Here is a dollar.|Sim. Aqui está um dólar.
+R: I am sorry, this book is late.|Desculpe, este livro está atrasado.
+R: I forgot to return it.|Esqueci de devolver.
+R: Here is your change.|Aqui está seu troco.
+R: Try the third shelf.|Tente a terceira estante.
+X: No problem.|Sem problema.
+C: Muitas bibliotecas americanas já não cobram multas pequenas, mas ainda pedem a devolução no prazo.
+
+T: An e-book | Livro digital | living | Los Angeles | Friend Pat,f,👩🏽,amiga
+K: I read e-books on my phone. | Leio livros digitais no meu celular.
+M: Hoje você fala de livros digitais.
+D: Pat|Do you prefer paper books or e-books?|Você prefere livros de papel ou digitais?
+D: You|I read e-books on my phone.|Leio livros digitais no meu celular.
+D: Pat|Really? Is it comfortable?|Sério? É confortável?
+D: You|Yes. I can read at night with the light off.|Sim. Posso ler à noite com a luz apagada.
+D: Pat|I like the smell of paper books.|Gosto do cheiro de livros de papel.
+D: You|Me too, but e-books are cheaper.|Eu também, mas os digitais são mais baratos.
+D: Pat|Where do you buy them?|Onde você compra?
+D: You|Online. The library has free ones, too.|Na internet. A biblioteca também tem grátis.
+V: e-book|livro digital;paper|papel;comfortable|confortável;smell|cheiro;cheaper|mais barato
+B: I read e-books on my {0}.|Leio livros digitais no meu {0}.|phone=celular;tablet=tablet;computer=computador
+B: E-books are {0}.|Livros digitais são {0}.|cheaper=mais baratos;lighter=mais leves;easier=mais fáceis
+S: Pat|Do you prefer paper books or e-books?|Você prefere livros de papel ou digitais?|I read e-books on my phone.|Leio livros digitais no meu celular.
+S: Pat|Where do you buy them?|Onde você compra?|Online. The library has free ones, too.|Na internet. A biblioteca também tem grátis.
+R: I read e-books on my phone.|Leio livros digitais no celular.
+R: E-books are cheaper.|Livros digitais são mais baratos.
+R: I like the smell of paper books.|Gosto do cheiro de livros de papel.
+R: The library has free ones.|A biblioteca tem grátis.
+X: Me too.|Eu também.
+C: Muitas bibliotecas americanas emprestam e-books gratuitamente por aplicativo.
+
+T: Study in the library | Estudar na biblioteca | library | Boston | Study Ron,m,👨🏽,colega
+K: Please be quiet in the library. | Por favor fique em silêncio na biblioteca.
+M: Hoje você estuda na biblioteca.
+D: Study Ron|Is this seat free?|Este lugar está livre?
+D: You|Yes, please sit. I am studying for a test.|Sim, sente. Estudo para uma prova.
+D: Study Ron|Me too. We must be quiet here.|Eu também. Precisamos ficar em silêncio aqui.
+D: You|True. Can I ask you a question quietly?|Verdade. Posso te fazer uma pergunta baixinho?
+D: Study Ron|Sure. What is it?|Claro. Qual é?
+D: You|What does this word mean?|O que esta palavra significa?
+D: Study Ron|It means "very big". Let us use the dictionary.|Significa "muito grande". Vamos usar o dicionário.
+D: You|Good idea. Thanks for your help.|Boa ideia. Obrigado pela ajuda.
+V: quiet|silencioso;test|prova;dictionary|dicionário;mean|significar;study|estudar
+B: What does this {0} mean?|O que esta {0} significa?|word=palavra;sign=placa;sentence=frase
+B: We must be {0} here.|Precisamos ficar {0} aqui.|quiet=em silêncio;careful=atentos;polite=educados
+S: Study Ron|Is this seat free?|Este lugar está livre?|Yes, please sit. I am studying for a test.|Sim, sente. Estudo para uma prova.
+S: Study Ron|We must be quiet here.|Precisamos ficar em silêncio.|True. What does this word mean?|Verdade. O que esta palavra significa?
+R: Is this seat free?|Este lugar está livre?
+R: I am studying for a test.|Estudo para uma prova.
+R: What does this word mean?|O que esta palavra significa?
+R: Let us use the dictionary.|Vamos usar o dicionário.
+X: Thanks for your help.|Obrigado pela ajuda.
+C: Bibliotecas americanas têm salas de estudo silenciosas e salas para trabalho em grupo.
+
+T: A favorite author | Um autor favorito | cafe | Seattle | Friend Eli,m,👨🏼,amigo
+K: Who is your favorite author? | Quem é seu autor favorito?
+M: Hoje você fala do seu autor favorito.
+D: Friend Eli|Who is your favorite author?|Quem é seu autor favorito?
+D: You|I love books by Jane Black. She writes mysteries.|Adoro livros da Jane Black. Ela escreve mistérios.
+D: Friend Eli|How many books has she written?|Quantos livros ela já escreveu?
+D: You|More than twenty. I have read ten.|Mais de vinte. Eu li dez.
+D: Friend Eli|Which one is the best?|Qual é o melhor?
+D: You|"The Quiet House" is my favorite.|"The Quiet House" é meu favorito.
+D: Friend Eli|Can I borrow it?|Posso pegar emprestado?
+D: You|Of course. I will bring it on Monday.|Claro. Trago na segunda.
+V: author|autor;write|escrever;borrow|pegar emprestado;written|escrito;more than|mais de
+B: I have read {0} of her books.|Li {0} dos livros dela.|ten=dez;five=cinco;three=três
+B: She writes {0}.|Ela escreve {0}.|mysteries=mistérios;stories=contos;poems=poemas
+S: Friend Eli|Who is your favorite author?|Quem é seu autor favorito?|I love books by Jane Black. She writes mysteries.|Adoro livros da Jane Black. Ela escreve mistérios.
+S: Friend Eli|Can I borrow it?|Posso pegar emprestado?|Of course. I will bring it on Monday.|Claro. Trago na segunda.
+R: Who is your favorite author?|Quem é seu autor favorito?
+R: She writes mysteries.|Ela escreve mistérios.
+R: I have read ten of her books.|Li dez dos livros dela.
+R: Can I borrow it?|Posso pegar emprestado?
+X: Of course.|Claro.
+C: Emprestar livros a amigos é uma forma comum de compartilhar histórias.

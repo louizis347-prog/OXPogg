@@ -1,0 +1,253 @@
+# Arco 65 · Transporte público
+T: Buy a bus pass | Comprar um passe de ônibus | station | Seattle | Gil,m,👨🏽,atendente
+K: I would like a monthly pass today. | Eu gostaria de um passe mensal.
+M: Hoje você compra um passe de ônibus.
+D: Gil|Hello! How can I help you?|Olá! Como posso ajudar?
+D: You|I would like a monthly bus pass, please.|Eu gostaria de um passe mensal de ônibus, por favor.
+D: Gil|Are you a student?|Você é estudante?
+D: You|No, I work in the city.|Não, trabalho na cidade.
+D: Gil|The regular pass is seventy-five dollars.|O passe comum custa setenta e cinco dólares.
+D: You|Can I use it on the train too?|Posso usar no trem também?
+D: Gil|Yes, on buses, trains and the ferry.|Sim, em ônibus, trens e na balsa.
+D: You|Perfect. I will pay by card.|Perfeito. Pago com cartão.
+V: pass|passe;monthly|mensal;ferry|balsa;student|estudante;card|cartão
+B: I would like a {0} bus pass.|Eu gostaria de um passe de ônibus {0}.|monthly=mensal;weekly=semanal;daily=diário
+B: The pass is {0} dollars.|O passe custa {0} dólares.|seventy-five=setenta e cinco;fifty=cinquenta;ninety=noventa
+S: Gil|How can I help you?|Como posso ajudar?|I would like a monthly bus pass, please.|Eu gostaria de um passe mensal, por favor.
+S: Gil|Are you a student?|Você é estudante?|No, I work in the city.|Não, trabalho na cidade.
+R: I would like a monthly pass.|Eu gostaria de um passe mensal.
+R: Can I use it on the train too?|Posso usar no trem também?
+R: The pass is seventy-five dollars.|O passe custa setenta e cinco dólares.
+R: I will pay by card.|Pago com cartão.
+X: Perfect.|Perfeito.
+C: Em Seattle, um único cartão pode ser usado em ônibus, trens e balsas.
+
+T: Which bus? | Qual ônibus? | station | Chicago | Anna,f,👩🏽,passageira
+K: Does this bus go downtown today? | Este ônibus vai ao centro?
+M: Hoje você descobre qual ônibus pegar.
+D: You|Excuse me. Does this bus go downtown?|Com licença. Este ônibus vai ao centro?
+D: Anna|No, you need number twenty-two.|Não, você precisa do número vinte e dois.
+D: You|Where does it stop?|Onde ele para?
+D: Anna|Across the street, at the blue sign.|Do outro lado da rua, na placa azul.
+D: You|How often does it come?|Com que frequência ele passa?
+D: Anna|Every ten minutes. Here it comes!|A cada dez minutos. Aí vem ele!
+D: You|Thank you so much.|Muito obrigado.
+D: Anna|You are welcome. Have a good day.|De nada. Tenha um bom dia.
+V: bus|ônibus;downtown|centro;across|do outro lado;often|frequência;stop|parar
+B: You need number {0}.|Você precisa do número {0}.|twenty-two=vinte e dois;ten=dez;fifteen=quinze
+B: It comes every {0} minutes.|Passa a cada {0} minutos.|ten=dez;five=cinco;fifteen=quinze
+S: Anna|You need number twenty-two.|Você precisa do número vinte e dois.|Where does it stop?|Onde ele para?
+S: Anna|It comes every ten minutes.|Passa a cada dez minutos.|Thank you so much.|Muito obrigado.
+R: Does this bus go downtown?|Este ônibus vai ao centro?
+R: You need number twenty-two.|Você precisa do número vinte e dois.
+R: It comes every ten minutes.|Passa a cada dez minutos.
+R: Here it comes!|Aí vem ele!
+X: Here it comes!|Aí vem ele!
+C: Os ônibus americanos mostram o número e o destino na frente, e o motorista é quem recebe o pagamento ou o passe.
+
+T: Take the subway today | Pegar o metrô | station | New York | Ron,m,👨🏿,passageiro
+K: Which platform do I need? | De qual plataforma preciso?
+M: Hoje você pega o metrô.
+D: You|Excuse me. Which platform do I need for Brooklyn?|Com licença. De qual plataforma preciso para o Brooklyn?
+D: Ron|Take the stairs to platform two.|Pegue as escadas para a plataforma dois.
+D: You|Is it the express or the local train?|É o trem expresso ou o local?
+D: Ron|Both stop there. The express is faster.|Os dois param lá. O expresso é mais rápido.
+D: You|How many stops is it?|Quantas paradas são?
+D: Ron|Only six stops. About fifteen minutes.|Só seis paradas. Cerca de quinze minutos.
+D: You|Great. Thank you very much.|Ótimo. Muito obrigado.
+D: Ron|Hold your bag. It is crowded.|Segure a bolsa. Está cheio.
+V: platform|plataforma;stairs|escadas;express|expresso;crowded|lotado;stop|parada
+B: Take the stairs to platform {0}.|Pegue as escadas para a plataforma {0}.|two=dois;three=três;one=um
+B: It is only {0} stops.|São só {0} paradas.|six=seis;four=quatro;eight=oito
+S: Ron|Take the stairs to platform two.|Pegue as escadas para a plataforma dois.|Is it the express or the local train?|É o trem expresso ou o local?
+S: Ron|It is only six stops.|São só seis paradas.|Great. Thank you very much.|Ótimo. Muito obrigado.
+R: Which platform do I need?|De qual plataforma preciso?
+R: The express is faster.|O expresso é mais rápido.
+R: How many stops is it?|Quantas paradas são?
+R: It is crowded.|Está lotado.
+X: Hold your bag.|Segure a bolsa.
+C: O metrô de Nova York tem trens expressos e locais, e é bom checar a direção antes de entrar.
+
+T: A late train | Trem atrasado | station | Boston | Announcer,f,👩🏻,anunciante
+K: The train is ten minutes late. | O trem está dez minutos atrasado.
+M: Hoje você lida com um trem atrasado.
+D: Announcer|Attention, please. The train to Boston is late.|Atenção, por favor. O trem para Boston está atrasado.
+D: You|Excuse me. How late is it?|Com licença. Quanto está atrasado?
+D: Announcer|About ten minutes. We are sorry.|Cerca de dez minutos. Sentimos muito.
+D: You|I have a meeting at nine. Is that a problem?|Tenho uma reunião às nove. Isso é um problema?
+D: Announcer|The next train arrives at eight forty.|O próximo trem chega às oito e quarenta.
+D: You|That is OK. Where can I wait?|Tudo bem. Onde posso esperar?
+D: Announcer|There is a waiting room next to the shop.|Há uma sala de espera ao lado da loja.
+D: You|Thank you. I will wait there.|Obrigado. Vou esperar lá.
+V: late|atrasado;announce|anunciar;waiting room|sala de espera;arrive|chegar;meeting|reunião
+B: The train is {0} minutes late.|O trem está {0} minutos atrasado.|ten=dez;five=cinco;twenty=vinte
+B: The next train arrives at {0}.|O próximo trem chega às {0}.|eight forty=oito e quarenta;nine=nove;eight=oito
+S: Announcer|The train to Boston is late.|O trem para Boston está atrasado.|How late is it?|Quanto está atrasado?
+S: Announcer|The next train arrives at eight forty.|O próximo trem chega às oito e quarenta.|Where can I wait?|Onde posso esperar?
+R: The train is ten minutes late.|O trem está dez minutos atrasado.
+R: I have a meeting at nine.|Tenho uma reunião às nove.
+R: The next train arrives at eight forty.|O próximo trem chega às oito e quarenta.
+R: Where can I wait?|Onde posso esperar?
+X: We are sorry.|Sentimos muito.
+C: Os trens da Amtrak e do metrô urbano avisam os atrasos por alto-falante e aplicativo.
+
+T: A taxi ride | Corrida de táxi | street | Los Angeles | Mo,m,👨🏽,taxista
+K: To the airport, please today. | Para o aeroporto, por favor.
+M: Hoje você pega um táxi.
+D: You|Hello. To the airport, please.|Olá. Para o aeroporto, por favor.
+D: Mo|Sure. Which terminal?|Claro. Qual terminal?
+D: You|Terminal three. How long will it take?|Terminal três. Quanto tempo vai levar?
+D: Mo|About thirty minutes if there is no traffic.|Cerca de trinta minutos se não houver trânsito.
+D: You|How much is it?|Quanto custa?
+D: Mo|Around forty dollars.|Cerca de quarenta dólares.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Mo|Yes, at the end of the trip.|Sim, no fim da corrida.
+V: taxi|táxi;terminal|terminal;airport|aeroporto;trip|corrida;around|cerca de
+B: Terminal {0}, please.|Terminal {0}, por favor.|three=três;one=um;two=dois
+B: It is around {0} dollars.|Custa cerca de {0} dólares.|forty=quarenta;thirty=trinta;fifty=cinquenta
+S: Mo|Which terminal?|Qual terminal?|Terminal three. How long will it take?|Terminal três. Quanto tempo vai levar?
+S: Mo|It is around forty dollars.|Custa cerca de quarenta dólares.|Can I pay by card?|Posso pagar com cartão?
+R: To the airport, please.|Para o aeroporto, por favor.
+R: How long will it take?|Quanto tempo vai levar?
+R: How much is it?|Quanto custa?
+R: Can I pay by card?|Posso pagar com cartão?
+X: Sure.|Claro.
+C: Nos EUA, muita gente usa aplicativos de transporte, mas táxis ainda são comuns em aeroportos.
+
+T: Ride share | Carro por aplicativo | street | Austin | Tess,f,👩🏼,motorista
+K: Are you going to the hotel? | Você vai para o hotel?
+M: Hoje você usa um carro por aplicativo.
+D: Tess|Hi! Are you Alex?|Oi! Você é o Alex?
+D: You|Yes. Are you my driver?|Sim. Você é minha motorista?
+D: Tess|Yes. Are you going to the Park Hotel?|Sim. Você vai para o Park Hotel?
+D: You|That is right. How long is the trip?|Isso mesmo. Quanto tempo dura a viagem?
+D: Tess|About fifteen minutes. Please sit in the back.|Cerca de quinze minutos. Por favor sente atrás.
+D: You|Is it OK if I open the window?|Posso abrir a janela?
+D: Tess|Sure. And I will give you a bottle of water.|Claro. E vou te dar uma garrafa de água.
+D: You|Thank you. That is very nice.|Obrigado. Isso é muito gentil.
+V: driver|motorista;back|atrás;window|janela;bottle|garrafa;right|certo
+B: Are you going to the {0}?|Você vai para o {0}?|Park Hotel=Park Hotel;airport=aeroporto;station=estação
+B: The trip is about {0} minutes.|A viagem dura cerca de {0} minutos.|fifteen=quinze;ten=dez;twenty=vinte
+S: Tess|Are you going to the Park Hotel?|Você vai para o Park Hotel?|That is right. How long is the trip?|Isso mesmo. Quanto tempo dura?
+S: Tess|Please sit in the back.|Por favor sente atrás.|Is it OK if I open the window?|Posso abrir a janela?
+R: Are you my driver?|Você é minha motorista?
+R: That is right.|Isso mesmo.
+R: How long is the trip?|Quanto tempo dura a viagem?
+R: Thank you. That is very nice.|Obrigado. Isso é muito gentil.
+X: That is right.|Isso mesmo.
+C: Em carros por aplicativo, é comum confirmar seu nome e destino antes de entrar.
+
+T: Lost on the train | Perdido no trem | station | Chicago | Ed,m,👨🏼,passageiro
+K: I am on the wrong train. | Estou no trem errado.
+M: Hoje você percebe que está no trem errado.
+D: You|Excuse me. Is this train going to the airport?|Com licença. Este trem vai para o aeroporto?
+D: Ed|No, this one goes to the north.|Não, este vai para o norte.
+D: You|Oh no. I am on the wrong train.|Ah, não. Estou no trem errado.
+D: Ed|Do not worry. Get off at the next stop.|Não se preocupe. Desça na próxima parada.
+D: You|And then?|E depois?
+D: Ed|Cross to the other platform and take the blue line.|Atravesse para a outra plataforma e pegue a linha azul.
+D: You|Thank you. You are very kind.|Obrigado. Você é muito gentil.
+D: Ed|It happens to everyone.|Acontece com todo mundo.
+V: wrong|errado;north|norte;cross|atravessar;get off|descer;line|linha
+B: I am on the {0} train.|Estou no trem {0}.|wrong=errado;right=certo;blue=azul
+B: Get off at the next {0}.|Desça na próxima {0}.|stop=parada;station=estação;street=rua
+S: Ed|This one goes to the north.|Este vai para o norte.|Oh no. I am on the wrong train.|Ah, não. Estou no trem errado.
+S: Ed|Get off at the next stop.|Desça na próxima parada.|And then? Which line do I take?|E depois? Qual linha pego?
+R: Is this train going to the airport?|Este trem vai para o aeroporto?
+R: I am on the wrong train.|Estou no trem errado.
+R: Get off at the next stop.|Desça na próxima parada.
+R: Take the blue line.|Pegue a linha azul.
+X: It happens to everyone.|Acontece com todo mundo.
+C: Mapas de metrô nos EUA usam cores para as linhas, e as placas dizem o destino final.
+
+T: Student discount | Desconto de estudante | station | Boston | Lin,f,👩🏻,atendente
+K: Do you have a student discount? | Vocês têm desconto de estudante?
+M: Hoje você pergunta sobre desconto de estudante.
+D: You|Hello. Do you have a student discount?|Olá. Vocês têm desconto de estudante?
+D: Lin|Yes, students pay half price.|Sim, estudantes pagam meio preço.
+D: You|I am studying English at a language school.|Estudo inglês numa escola de idiomas.
+D: Lin|Do you have a student card?|Você tem carteirinha de estudante?
+D: You|Yes, here it is.|Sim, aqui está.
+D: Lin|Great. That is fifteen dollars for the week.|Ótimo. São quinze dólares pela semana.
+D: You|That is a good price. I will take it.|É um bom preço. Vou levar.
+D: Lin|Here is your pass. Enjoy your studies!|Aqui está seu passe. Aproveite os estudos!
+V: discount|desconto;half|metade;card|carteirinha;week|semana;price|preço
+B: Students pay {0} price.|Estudantes pagam {0} preço.|half=meio;full=total;special=especial
+B: It is {0} dollars for the week.|São {0} dólares pela semana.|fifteen=quinze;twenty=vinte;ten=dez
+S: Lin|Students pay half price.|Estudantes pagam meio preço.|I am studying English at a language school.|Estudo inglês numa escola de idiomas.
+S: Lin|Do you have a student card?|Você tem carteirinha?|Yes, here it is.|Sim, aqui está.
+R: Do you have a student discount?|Vocês têm desconto de estudante?
+R: Students pay half price.|Estudantes pagam meio preço.
+R: Do you have a student card?|Você tem carteirinha de estudante?
+R: That is a good price.|É um bom preço.
+X: Here it is.|Aqui está.
+C: Nos EUA, estudantes costumam ter desconto em transporte, cinema e museus se mostrarem a carteirinha.
+
+T: Biking to the station | De bicicleta até a estação | street | Portland | Dan,m,👨🏼,ciclista
+K: Can I take my bike on the train? | Posso levar minha bicicleta no trem?
+M: Hoje você combina bicicleta e trem.
+D: You|Excuse me. Can I take my bike on the train?|Com licença. Posso levar minha bicicleta no trem?
+D: Dan|Yes, there is a special car for bikes.|Sim, há um vagão especial para bicicletas.
+D: You|Is it free?|É grátis?
+D: Dan|Yes, but only after nine in the morning.|Sim, mas só depois das nove da manhã.
+D: You|Where do I put it?|Onde coloco?
+D: Dan|Hang it on the hook, near the door.|Pendure no gancho, perto da porta.
+D: You|Great. That makes my trip easy.|Ótimo. Isso facilita minha viagem.
+D: Dan|Yes, many people do it every day.|Sim, muita gente faz isso todo dia.
+V: bike|bicicleta;hook|gancho;hang|pendurar;door|porta;special|especial
+B: There is a special {0} for bikes.|Há um {0} especial para bicicletas.|car=vagão;place=lugar;room=espaço
+B: It is free after {0} in the morning.|É grátis depois das {0} da manhã.|nine=nove;ten=dez;eight=oito
+S: Dan|There is a special car for bikes.|Há um vagão especial para bicicletas.|Is it free?|É grátis?
+S: Dan|Hang it on the hook, near the door.|Pendure no gancho, perto da porta.|Great. That makes my trip easy.|Ótimo. Isso facilita minha viagem.
+R: Can I take my bike on the train?|Posso levar minha bicicleta no trem?
+R: There is a special car for bikes.|Há um vagão especial para bicicletas.
+R: Hang it on the hook.|Pendure no gancho.
+R: Many people do it every day.|Muita gente faz isso todo dia.
+X: Great.|Ótimo.
+C: Em cidades americanas como Portland, é comum levar bicicletas no trem.
+
+T: Plane to train | Do avião ao trem | airport | Atlanta | Kim,f,👩🏾,atendente
+K: How do I get to the city center? | Como chego ao centro da cidade?
+M: Hoje você sai do aeroporto até o centro.
+D: You|Excuse me. How do I get to the city center?|Com licença. Como chego ao centro da cidade?
+D: Kim|You can take the train. It is very easy.|Você pode pegar o trem. É muito fácil.
+D: You|Where is the station?|Onde fica a estação?
+D: Kim|Follow the green signs. It is inside the airport.|Siga as placas verdes. Fica dentro do aeroporto.
+D: You|How long does the train take?|Quanto tempo o trem leva?
+D: Kim|About twenty minutes. It runs every ten minutes.|Cerca de vinte minutos. Passa a cada dez minutos.
+D: You|How much is the ticket?|Quanto custa a passagem?
+D: Kim|Three dollars. You can buy it at the machine.|Três dólares. Você pode comprar na máquina.
+V: center|centro;follow|seguir;machine|máquina;ticket|passagem;easy|fácil
+B: Follow the {0} signs.|Siga as placas {0}.|green=verdes;blue=azuis;red=vermelhas
+B: The train takes about {0} minutes.|O trem leva cerca de {0} minutos.|twenty=vinte;fifteen=quinze;thirty=trinta
+S: Kim|You can take the train. It is very easy.|Você pode pegar o trem. É muito fácil.|Where is the station?|Onde fica a estação?
+S: Kim|The ticket is three dollars.|A passagem custa três dólares.|Where can I buy it?|Onde posso comprar?
+R: How do I get to the city center?|Como chego ao centro da cidade?
+R: Follow the green signs.|Siga as placas verdes.
+R: The train takes about twenty minutes.|O trem leva cerca de vinte minutos.
+R: You can buy it at the machine.|Você pode comprar na máquina.
+X: It is very easy.|É muito fácil.
+C: Muitos aeroportos americanos têm trem direto para o centro, bem mais rápido que táxi no horário de pico.
+
+T: Public transport tips | Dicas do transporte público | cafe | New York | Joy,f,👩🏾,amiga
+K: Always check the schedule first. | Sempre veja o horário primeiro.
+M: Hoje você aprende dicas para usar o transporte.
+D: Joy|You use the subway every day, right?|Você usa o metrô todo dia, certo?
+D: You|Yes. I always check the schedule first.|Sim. Eu sempre vejo o horário primeiro.
+D: Joy|Do you use an app?|Você usa um aplicativo?
+D: You|Yes, it shows the next train in real time.|Sim, mostra o próximo trem em tempo real.
+D: Joy|That is useful. Is it safe at night?|Isso é útil. É seguro à noite?
+D: You|Yes, but I always sit near the driver.|Sim, mas sempre sento perto do condutor.
+D: Joy|Good advice. Where can I buy a card?|Bom conselho. Onde posso comprar um cartão?
+D: You|At any station. Let me show you.|Em qualquer estação. Deixe-me mostrar.
+V: schedule|horário;app|aplicativo;useful|útil;safe|seguro;advice|conselho
+B: I always check the {0} first.|Sempre vejo o {0} primeiro.|schedule=horário;map=mapa;app=aplicativo
+B: It shows the next train in {0} time.|Mostra o próximo trem em tempo {0}.|real=real;short=curto;free=livre
+S: Joy|Do you use an app?|Você usa um aplicativo?|Yes, it shows the next train in real time.|Sim, mostra o próximo trem em tempo real.
+S: Joy|Where can I buy a card?|Onde posso comprar um cartão?|At any station. Let me show you.|Em qualquer estação. Deixe-me mostrar.
+R: I always check the schedule first.|Sempre vejo o horário primeiro.
+R: It shows the next train in real time.|Mostra o próximo trem em tempo real.
+R: I always sit near the driver.|Sempre sento perto do condutor.
+R: Let me show you.|Deixe-me mostrar.
+X: Good advice.|Bom conselho.
+C: Aplicativos de transporte mostram horários em tempo real e são muito usados nas grandes cidades americanas.

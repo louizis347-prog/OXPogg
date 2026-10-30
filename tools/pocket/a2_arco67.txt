@@ -1,0 +1,253 @@
+# Arco 67 · Restaurante II
+T: Book a table | Reservar uma mesa | cafe | New York | Host Lia,f,👩🏼,recepcionista
+K: I would like to book a table for four. | Eu gostaria de reservar uma mesa para quatro.
+M: Hoje você reserva uma mesa por telefone.
+D: Lia|Good evening. Sunset Grill. How can I help you?|Boa noite. Sunset Grill. Como posso ajudar?
+D: You|I would like to book a table for four, please.|Eu gostaria de reservar uma mesa para quatro, por favor.
+D: Lia|For what day and time?|Para que dia e horário?
+D: You|This Saturday at seven thirty.|Neste sábado às sete e meia.
+D: Lia|Let me check. Yes, we have a table by the window.|Deixe-me ver. Sim, temos uma mesa perto da janela.
+D: You|That is perfect. The name is Alex.|Perfeito. O nome é Alex.
+D: Lia|Thank you, Alex. We will see you on Saturday.|Obrigada, Alex. Vemos você no sábado.
+D: You|Thanks. Goodbye!|Obrigado. Tchau!
+V: book|reservar;table|mesa;window|janela;check|verificar;name|nome
+B: I would like to book a table for {0}.|Eu gostaria de reservar uma mesa para {0}.|four=quatro;two=dois;six=seis
+B: This Saturday at seven {0}.|Neste sábado às sete e {0}.|thirty=meia;fifteen=quinze;forty-five=quarenta e cinco
+S: Lia|How can I help you?|Como posso ajudar?|I would like to book a table for four, please.|Eu gostaria de reservar uma mesa para quatro.
+S: Lia|For what day and time?|Para que dia e horário?|This Saturday at seven thirty.|Neste sábado às sete e meia.
+R: I would like to book a table for four.|Eu gostaria de reservar uma mesa para quatro.
+R: This Saturday at seven thirty.|Neste sábado às sete e meia.
+R: We have a table by the window.|Temos uma mesa perto da janela.
+R: The name is Alex.|O nome é Alex.
+X: Let me check.|Deixe-me ver.
+C: Em restaurantes populares dos EUA, é melhor reservar com antecedência, principalmente nos fins de semana.
+
+T: No table available | Sem mesa disponível | cafe | Chicago | Host Ben,m,👨🏽,recepcionista
+K: How long is the wait? | Quanto tempo é a espera?
+M: Hoje você espera por uma mesa.
+D: You|Good evening. A table for two, please.|Boa noite. Uma mesa para dois, por favor.
+D: Host Ben|Do you have a reservation?|Você tem reserva?
+D: You|No, we do not. How long is the wait?|Não, não temos. Quanto tempo é a espera?
+D: Host Ben|About thirty minutes. Sorry about that.|Cerca de trinta minutos. Desculpe.
+D: You|That is OK. Can we wait at the bar?|Tudo bem. Podemos esperar no bar?
+D: Host Ben|Of course. I will call your name.|Claro. Vou chamar seu nome.
+D: You|Thank you. My name is Alex.|Obrigado. Meu nome é Alex.
+D: Host Ben|Thanks, Alex. Enjoy your drinks!|Obrigado, Alex. Aproveite as bebidas!
+V: reservation|reserva;wait|espera;bar|bar;call|chamar;drink|bebida
+B: How long is the {0}?|Quanto tempo é a {0}?|wait=espera;trip=viagem;walk=caminhada
+B: About {0} minutes.|Cerca de {0} minutos.|thirty=trinta;twenty=vinte;forty=quarenta
+S: Host Ben|Do you have a reservation?|Você tem reserva?|No, we do not. How long is the wait?|Não temos. Quanto tempo é a espera?
+S: Host Ben|About thirty minutes.|Cerca de trinta minutos.|That is OK. Can we wait at the bar?|Tudo bem. Podemos esperar no bar?
+R: A table for two, please.|Uma mesa para dois, por favor.
+R: How long is the wait?|Quanto tempo é a espera?
+R: Can we wait at the bar?|Podemos esperar no bar?
+R: I will call your name.|Vou chamar seu nome.
+X: Sorry about that.|Desculpe por isso.
+C: Em restaurantes cheios, o anfitrião anota seu nome e chama quando a mesa está pronta.
+
+T: Order wisely | Pedir com atenção | cafe | Austin | Waiter Sam,m,👨🏼,garçom
+K: What is the soup of the day? | Qual é a sopa do dia?
+M: Hoje você pergunta sobre o cardápio.
+D: Waiter Sam|Good evening. Are you ready to order?|Boa noite. Vocês estão prontos para pedir?
+D: You|Not yet. What is the soup of the day?|Ainda não. Qual é a sopa do dia?
+D: Waiter Sam|Today it is tomato soup with fresh bread.|Hoje é sopa de tomate com pão fresco.
+D: You|That sounds good. And what do you recommend?|Parece bom. E o que você recomenda?
+D: Waiter Sam|The grilled fish is excellent.|O peixe grelhado é excelente.
+D: You|I will have the soup and the fish.|Vou querer a sopa e o peixe.
+D: Waiter Sam|And to drink?|E para beber?
+D: You|A glass of water, please.|Um copo de água, por favor.
+V: soup|sopa;grilled|grelhado;excellent|excelente;recommend|recomendar;order|pedir
+B: What is the soup of the {0}?|Qual é a sopa do {0}?|day=dia;week=semana;chef=chef
+B: I will have the soup and the {0}.|Vou querer a sopa e o {0}.|fish=peixe;chicken=frango;steak=bife
+S: Waiter Sam|Are you ready to order?|Estão prontos para pedir?|Not yet. What is the soup of the day?|Ainda não. Qual é a sopa do dia?
+S: Waiter Sam|The grilled fish is excellent.|O peixe grelhado é excelente.|I will have the soup and the fish.|Vou querer a sopa e o peixe.
+R: What is the soup of the day?|Qual é a sopa do dia?
+R: What do you recommend?|O que você recomenda?
+R: I will have the soup and the fish.|Vou querer a sopa e o peixe.
+R: A glass of water, please.|Um copo de água, por favor.
+X: That sounds good.|Parece bom.
+C: Nos EUA, o garçom pergunta a bebida logo de início, e a água com gelo costuma ser grátis.
+
+T: A wrong order | Pedido errado | cafe | Seattle | Waiter Max,m,👨🏻,garçom
+K: Excuse me, this is not what I ordered. | Com licença, isto não é o que pedi.
+M: Hoje você avisa que veio um pedido errado.
+D: You|Excuse me. This is not what I ordered.|Com licença. Isto não é o que pedi.
+D: Waiter Max|I am sorry. What did you order?|Sinto muito. O que você pediu?
+D: You|I ordered the fish, not the chicken.|Pedi o peixe, não o frango.
+D: Waiter Max|Oh, I see. I will change it right away.|Ah, entendi. Vou trocar agora mesmo.
+D: You|Thank you. How long will it take?|Obrigado. Quanto tempo vai levar?
+D: Waiter Max|About ten minutes. Please accept a free dessert.|Cerca de dez minutos. Por favor aceite uma sobremesa grátis.
+D: You|That is very kind. Thank you.|Isso é muito gentil. Obrigado.
+D: Waiter Max|My pleasure.|É um prazer.
+V: order|pedido;wrong|errado;change|trocar;accept|aceitar;free|grátis
+B: I ordered the {0}, not the chicken.|Pedi o {0}, não o frango.|fish=peixe;soup=sopa;salad=salada
+B: It will take about {0} minutes.|Vai levar cerca de {0} minutos.|ten=dez;five=cinco;fifteen=quinze
+S: Waiter Max|What did you order?|O que você pediu?|I ordered the fish, not the chicken.|Pedi o peixe, não o frango.
+S: Waiter Max|I will change it right away.|Vou trocar agora mesmo.|Thank you. How long will it take?|Obrigado. Quanto tempo vai levar?
+R: This is not what I ordered.|Isto não é o que pedi.
+R: I ordered the fish.|Pedi o peixe.
+R: How long will it take?|Quanto tempo vai levar?
+R: That is very kind.|Isso é muito gentil.
+X: My pleasure.|É um prazer.
+C: Nos EUA, é normal avisar educadamente quando o pedido vem errado, e o restaurante costuma resolver rápido.
+
+T: Special diet | Dieta especial | cafe | Portland | Waiter Jo,f,👩🏽,garçonete
+K: I am allergic to peanuts. | Sou alérgico a amendoim.
+M: Hoje você avisa sobre uma alergia.
+D: Waiter Jo|Are you ready to order?|Estão prontos para pedir?
+D: You|Yes, but first, I am allergic to peanuts.|Sim, mas antes, sou alérgico a amendoim.
+D: Waiter Jo|Thank you for telling me. I will tell the kitchen.|Obrigada por me avisar. Vou avisar a cozinha.
+D: You|Does the sauce have peanuts?|O molho tem amendoim?
+D: Waiter Jo|Let me check. Yes, this one does. The red sauce does not.|Deixe-me ver. Sim, este tem. O molho vermelho não tem.
+D: You|I will take the red sauce, then.|Vou querer o molho vermelho, então.
+D: Waiter Jo|Great. I will mark the order.|Ótimo. Vou marcar o pedido.
+D: You|Thank you for being so careful.|Obrigado por ser tão atenciosa.
+V: allergic|alérgico;peanut|amendoim;sauce|molho;kitchen|cozinha;mark|marcar
+B: I am allergic to {0}.|Sou alérgico a {0}.|peanuts=amendoim;milk=leite;eggs=ovos
+B: The {0} sauce does not have peanuts.|O molho {0} não tem amendoim.|red=vermelho;green=verde;white=branco
+S: Waiter Jo|Are you ready to order?|Estão prontos para pedir?|Yes, but first, I am allergic to peanuts.|Sim, mas antes, sou alérgico a amendoim.
+S: Waiter Jo|The red sauce does not have peanuts.|O molho vermelho não tem amendoim.|I will take the red sauce, then.|Vou querer o molho vermelho, então.
+R: I am allergic to peanuts.|Sou alérgico a amendoim.
+R: Does the sauce have peanuts?|O molho tem amendoim?
+R: I will take the red sauce.|Vou querer o molho vermelho.
+R: Thank you for being so careful.|Obrigado por ser tão atenciosa.
+X: Let me check.|Deixe-me ver.
+C: Restaurantes americanos levam alergias a sério e costumam perguntar sobre elas ao pegar o pedido.
+
+T: Split the bill | Dividir a conta | cafe | Boston | Waiter Dan,m,👨🏽,garçom
+K: Can we split the check? | Podemos dividir a conta?
+M: Hoje você divide a conta com os amigos.
+D: Waiter Dan|Would you like dessert or the check?|Gostariam de sobremesa ou da conta?
+D: You|The check, please. Can we split it?|A conta, por favor. Podemos dividir?
+D: Waiter Dan|Of course. How many checks?|Claro. Quantas contas?
+D: You|Three separate checks, please.|Três contas separadas, por favor.
+D: Waiter Dan|Here you are. Each is thirty dollars.|Aqui estão. Cada uma é trinta dólares.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Waiter Dan|Yes. Please enter your tip.|Sim. Por favor insira a gorjeta.
+D: You|Twenty percent. Thank you for the great service!|Vinte por cento. Obrigado pelo ótimo atendimento!
+V: check|conta;split|dividir;separate|separado;tip|gorjeta;percent|por cento
+B: Three {0} checks, please.|Três contas {0}, por favor.|separate=separadas;small=pequenas;different=diferentes
+B: Each is {0} dollars.|Cada uma custa {0} dólares.|thirty=trinta;twenty=vinte;forty=quarenta
+S: Waiter Dan|Would you like dessert or the check?|Gostariam de sobremesa ou da conta?|The check, please. Can we split it?|A conta, por favor. Podemos dividir?
+S: Waiter Dan|Each is thirty dollars.|Cada uma é trinta dólares.|Can I pay by card?|Posso pagar com cartão?
+R: Can we split the check?|Podemos dividir a conta?
+R: Three separate checks, please.|Três contas separadas, por favor.
+R: Please enter your tip.|Por favor insira a gorjeta.
+R: Thank you for the great service!|Obrigado pelo ótimo atendimento!
+X: Of course.|Claro.
+C: A gorjeta nos EUA costuma ser de 15 a 20 por cento da conta.
+
+T: Take-out food | Comida para viagem | cafe | Miami | Cashier Pam,f,👩🏾,caixa
+K: I would like this to go. | Eu gostaria disto para viagem.
+M: Hoje você pede comida para levar.
+D: Cashier Pam|Hi! Is it for here or to go?|Oi! É para comer aqui ou para viagem?
+D: You|To go, please. Two burgers and a salad.|Para viagem, por favor. Dois hambúrgueres e uma salada.
+D: Cashier Pam|Anything to drink?|Algo para beber?
+D: You|Two lemonades, please.|Duas limonadas, por favor.
+D: Cashier Pam|That is eighteen dollars. It will be ready in ten minutes.|São dezoito dólares. Fica pronto em dez minutos.
+D: You|Can I wait outside?|Posso esperar lá fora?
+D: Cashier Pam|Sure. I will call your name.|Claro. Vou chamar seu nome.
+D: You|Great. Thank you.|Ótimo. Obrigado.
+V: burger|hambúrguer;lemonade|limonada;outside|lá fora;ready|pronto;go|viagem
+B: Two burgers and a {0}.|Dois hambúrgueres e {0}.|salad=uma salada;soup=uma sopa;pizza=uma pizza
+B: It will be ready in {0} minutes.|Fica pronto em {0} minutos.|ten=dez;five=cinco;fifteen=quinze
+S: Cashier Pam|Is it for here or to go?|É para comer aqui ou viagem?|To go, please. Two burgers and a salad.|Para viagem. Dois hambúrgueres e uma salada.
+S: Cashier Pam|That is eighteen dollars.|São dezoito dólares.|Can I wait outside?|Posso esperar lá fora?
+R: To go, please.|Para viagem, por favor.
+R: Two burgers and a salad.|Dois hambúrgueres e uma salada.
+R: It will be ready in ten minutes.|Fica pronto em dez minutos.
+R: I will call your name.|Vou chamar seu nome.
+X: For here or to go?|Aqui ou para viagem?
+C: "For here or to go?" é a pergunta clássica em lanchonetes americanas.
+
+T: Delivery | Entrega em casa | living | Denver | Driver Leo,m,👨🏽,entregador
+K: Your food is at the door. | Sua comida está na porta.
+M: Hoje você recebe uma entrega.
+D: You|Hello?|Alô?
+D: Driver Leo|Hi! I have your food. I am at the door.|Oi! Tenho sua comida. Estou na porta.
+D: You|Great. I will come down in a minute.|Ótimo. Já desço em um minuto.
+D: Driver Leo|Here you are. Two pizzas and a drink.|Aqui está. Duas pizzas e uma bebida.
+D: You|Thank you. It is still hot!|Obrigado. Ainda está quente!
+D: Driver Leo|Yes. Please rate the delivery in the app.|Sim. Por favor avalie a entrega no aplicativo.
+D: You|I will. Here is a tip for you.|Vou avaliar. Aqui está uma gorjeta para você.
+D: Driver Leo|Thank you very much. Enjoy your dinner!|Muito obrigado. Aproveite o jantar!
+V: door|porta;delivery|entrega;hot|quente;rate|avaliar;app|aplicativo
+B: I have your {0}.|Tenho sua {0}.|food=comida;order=encomenda;pizza=pizza
+B: Please rate the delivery in the {0}.|Avalie a entrega no {0}.|app=aplicativo;email=e-mail;site=site
+S: Driver Leo|I have your food. I am at the door.|Tenho sua comida. Estou na porta.|Great. I will come down in a minute.|Ótimo. Já desço em um minuto.
+S: Driver Leo|Two pizzas and a drink.|Duas pizzas e uma bebida.|Thank you. It is still hot!|Obrigado. Ainda está quente!
+R: I have your food.|Tenho sua comida.
+R: I am at the door.|Estou na porta.
+R: It is still hot!|Ainda está quente!
+R: Here is a tip for you.|Aqui está uma gorjeta para você.
+X: Enjoy your dinner!|Aproveite o jantar!
+C: A entrega de comida por aplicativo é muito popular nos EUA, e o entregador costuma receber gorjeta.
+
+T: A food truck | Caminhão de comida | street | Los Angeles | Truck Rosa,f,👩🏽,vendedora
+K: What is the special today? | Qual é o prato do dia?
+M: Hoje você almoça num food truck.
+D: You|Hi! What is the special today?|Oi! Qual é o prato do dia?
+D: Truck Rosa|Today we have fish tacos with fresh salsa.|Hoje temos tacos de peixe com salsa fresca.
+D: You|How much are they?|Quanto custam?
+D: Truck Rosa|Three dollars each, or two for five.|Três dólares cada, ou dois por cinco.
+D: You|I will take two, please.|Vou levar dois, por favor.
+D: Truck Rosa|Anything else?|Mais alguma coisa?
+D: You|A cold drink, please.|Uma bebida gelada, por favor.
+D: Truck Rosa|Here you go. Enjoy!|Aqui está. Aproveite!
+V: special|prato do dia;salsa|molho de tomate;each|cada;cold|gelado;fresh|fresco
+B: Two for {0} dollars.|Dois por {0} dólares.|five=cinco;six=seis;four=quatro
+B: Fish tacos with fresh {0}.|Tacos de peixe com {0} fresco.|salsa=salsa;salad=salada;bread=pão
+S: Truck Rosa|Today we have fish tacos.|Hoje temos tacos de peixe.|How much are they?|Quanto custam?
+S: Truck Rosa|Three dollars each, or two for five.|Três cada, ou dois por cinco.|I will take two, please.|Vou levar dois, por favor.
+R: What is the special today?|Qual é o prato do dia?
+R: Three dollars each.|Três dólares cada.
+R: I will take two, please.|Vou levar dois, por favor.
+R: A cold drink, please.|Uma bebida gelada, por favor.
+X: Here you go.|Aqui está.
+C: Food trucks são populares em cidades como Los Angeles e oferecem comidas do mundo todo.
+
+T: Complain politely | Reclamar com educação | cafe | Chicago | Manager Ann,f,👩🏼,gerente
+K: The soup is cold. | A sopa está fria.
+M: Hoje você reclama de um prato frio.
+D: You|Excuse me. The soup is cold.|Com licença. A sopa está fria.
+D: Manager Ann|I am very sorry. Let me take it back.|Sinto muito. Deixe-me levá-la de volta.
+D: You|Thank you. Could you bring a hot one?|Obrigado. Poderia trazer uma quente?
+D: Manager Ann|Of course. It will be ready in five minutes.|Claro. Fica pronta em cinco minutos.
+D: You|Also, my water is empty.|Além disso, minha água está vazia.
+D: Manager Ann|I will bring more water right now.|Vou trazer mais água agora.
+D: You|Thank you. You are very helpful.|Obrigado. Você ajuda muito.
+D: Manager Ann|Thank you for telling us.|Obrigada por nos avisar.
+V: cold|frio;empty|vazio;manager|gerente;bring|trazer;helpful|prestativo
+B: The soup is {0}.|A sopa está {0}.|cold=fria;hot=quente;salty=salgada
+B: I will bring more {0} right now.|Vou trazer mais {0} agora.|water=água;bread=pão;tea=chá
+S: Manager Ann|I am very sorry.|Sinto muito.|Thank you. Could you bring a hot one?|Obrigado. Poderia trazer uma quente?
+S: Manager Ann|It will be ready in five minutes.|Fica pronta em cinco minutos.|Also, my water is empty.|Além disso, minha água está vazia.
+R: The soup is cold.|A sopa está fria.
+R: Could you bring a hot one?|Poderia trazer uma quente?
+R: My water is empty.|Minha água está vazia.
+R: Thank you for telling us.|Obrigada por nos avisar.
+X: I am very sorry.|Sinto muito.
+C: Reclamar com educação costuma resolver o problema nos restaurantes dos EUA.
+
+T: A great meal | Uma refeição ótima | cafe | San Francisco | Chef Ivo,m,👨🏻,chef
+K: Everything was delicious. | Tudo estava delicioso.
+M: Hoje você elogia a refeição ao chef.
+D: Chef Ivo|Hello! How was your dinner?|Olá! Como foi o jantar?
+D: You|Everything was delicious. The fish was perfect.|Tudo estava delicioso. O peixe estava perfeito.
+D: Chef Ivo|Thank you! I am glad you liked it.|Obrigado! Fico feliz que gostou.
+D: You|Can you tell me the recipe?|Pode me dizer a receita?
+D: Chef Ivo|It is simple: lemon, butter and a little salt.|É simples: limão, manteiga e um pouco de sal.
+D: You|I will try it at home.|Vou tentar em casa.
+D: Chef Ivo|Please come back soon.|Por favor volte logo.
+D: You|I will. This is my new favorite restaurant.|Vou voltar. Este é meu novo restaurante favorito.
+V: recipe|receita;lemon|limão;butter|manteiga;glad|feliz;favorite|favorito
+B: Everything was {0}.|Tudo estava {0}.|delicious=delicioso;perfect=perfeito;great=ótimo
+B: It is simple: lemon, {0} and a little salt.|É simples: limão, {0} e um pouco de sal.|butter=manteiga;oil=azeite;garlic=alho
+S: Chef Ivo|How was your dinner?|Como foi o jantar?|Everything was delicious. The fish was perfect.|Tudo estava delicioso. O peixe estava perfeito.
+S: Chef Ivo|It is simple: lemon, butter and salt.|É simples: limão, manteiga e sal.|I will try it at home.|Vou tentar em casa.
+R: Everything was delicious.|Tudo estava delicioso.
+R: Can you tell me the recipe?|Pode me dizer a receita?
+R: I will try it at home.|Vou tentar em casa.
+R: This is my new favorite restaurant.|Este é meu novo restaurante favorito.
+X: I am glad you liked it.|Fico feliz que gostou.
+C: Muitos restaurantes americanos têm chefs que saem da cozinha para conversar com os clientes.
