@@ -68,6 +68,8 @@ function karaoke(els,text,slow,speakP){
   const tick=setInterval(()=>{const el=(Date.now()-t0)/total*S;let a=0,k=0;while(k<els.length&&a+w[k]<=el){a+=w[k];k++}cur(Math.min(k,els.length-1))},60);
   return speakP.then(ok=>{clearInterval(tick);els.forEach(u=>{u.classList.remove('cur');u.classList.add('past')});return ok})}
 const saved=()=>store.get('saved',[]);
+/* estatísticas do episódio atual (lidas por js/pkplan.js ao concluir) */
+const PKS=window.PKS={cur:null,init(){const n=P&&P.e&&P.e.n;if(!this.cur||this.cur.n!==n)this.cur={n,voc:[],vt:0,b:0,bt:0,bd:{},sp:0,sk:0,st:0,dl:0};return this.cur}};
 const tipH=(ic,t)=>'<div class="pk-tip" id="pktip"><i>'+ic+'</i><span>'+t+'</span></div>';
 /* ícones SVG (Noto) carregados sob demanda de data/pk-icons.json; enquanto não chegam, mostra o emoji */
 const PKI={m:null,p:null,
@@ -77,7 +79,7 @@ const PKI={m:null,p:null,
   paint(root){this.load().then(()=>{root.querySelectorAll('.pk-ico[data-e]').forEach(el=>{if(el.querySelector('svg'))return;const sv=this.svg(el.dataset.e);if(sv)el.innerHTML=sv})})}};
 /* 1 · Cena */
 FXR.pkhero=function(f,st,n){
-  const e=P.e,fx=P.fx;PKA.stop();
+  const e=P.e,fx=P.fx;PKA.stop();PKS.cur=null;PKS.init();
   st.innerHTML='<div class="step fx pk pk-hero" '+th(f)+'>'+fxKindBar(f,n)+
    '<div class="pk-poster"><div class="pk-scene">'+coverOf(e,f,true)+fullBody(f.face,f.name,(e.character||{}).gender)+'<span class="pk-badge">'+(f.boss?'⭐ DESAFIO DO ARCO':'EPISÓDIO '+f.num)+' · '+H(f.lvl)+'</span></div>'+
    '<div class="pk-info"><span class="pk-face">'+av(f.face,f.name,f.g[0])+'</span><h2>'+H(e.t)+'</h2><p class="pk-sub">'+H(f.name)+' · '+H(f.city)+'</p>'+
@@ -105,7 +107,7 @@ FXR.pkdlg=function(f,st,n){
   const revealAll=()=>rows.forEach((_,i)=>reveal(i));
   const setNow=i=>rows.forEach((r,j)=>r.classList.toggle('now',j===i));
   let unlocked=false;
-  const unlock=()=>{if(unlocked)return;unlocked=true;P.fx.done=true;P.fx.cta=()=>false;cta('Continuar',true,true);coach('Muito bem! Toque nas palavras ou siga em frente.')};
+  const unlock=()=>{if(unlocked)return;unlocked=true;try{PKS.init().dl=heard.size}catch(e){}P.fx.done=true;P.fx.cta=()=>false;cta('Continuar',true,true);coach('Muito bem! Toque nas palavras ou siga em frente.')};
   const mark=i=>{rows[i].classList.add('heard');heard.add(i);if(heard.size>=Math.min(3,Ls.length))unlock()};
   const label=()=>{bAl.textContent=playing?'⏸ Pausar':'▶ Ouvir'};
   const speakLine=(i)=>{const l=Ls[i];return PKA.say(l[1],l[0]==='You'?null:l[0],slow)};
@@ -161,7 +163,7 @@ FXR.pkvoc=function(f,st,n){
   const upd=()=>{cnt.textContent=seen.size+'/'+C.length;
     if(!unlocked&&seen.size>=need){unlocked=true;P.fx.done=true;P.fx.cta=()=>false;cta('Continuar',true,true);coach('Ótimo! Agora vamos ler um texto com essas palavras.')}};
   const close=()=>{card.hidden=true;card.innerHTML='';cur=-1};
-  const open=i=>{const c=C[i],has=saved().some(x=>x[0]===c[0]);cur=i;seen.add(i);cells[i].classList.add('seen');tip.hidden=true;sfx2('pop');
+  const open=i=>{const c=C[i],has=saved().some(x=>x[0]===c[0]);cur=i;seen.add(i);try{const c0=PKS.init();c0.vt=C.length;if(c0.voc.indexOf(i)<0)c0.voc.push(i)}catch(e){}cells[i].classList.add('seen');tip.hidden=true;sfx2('pop');
     card.innerHTML='<div class="pkv-big">'+pic(c,i)+'</div><div class="pkc-w"><b>'+H(c[0])+'</b><span>'+H(c[1])+'</span></div>'+
      (c[3]?'<div class="pkv-ex"><p>“'+H(c[3])+'”</p><small>'+H(c[4])+'</small></div>':'')+
      '<div class="pkc-a"><button type="button" id="pkc-h">🔊 Ouvir</button><button type="button" id="pkc-s">🐢 Devagar</button><button type="button" id="pkc-e">🔊 Exemplo</button><button type="button" id="pkc-b"'+(has?' class="on"':'')+'>'+(has?'✓ Guardada':'＋ Guardar')+'</button><button type="button" id="pkc-n">Próxima ▶</button><button type="button" id="pkc-x" aria-label="Fechar">✕</button></div>';
@@ -235,7 +237,7 @@ FXR.pkbuild=function(f,st,n){
     const speak=()=>{const o=it.opts[pick];say2(it.en.replace('{0}',o[0]))};
     q('#pkhear',st).onclick=speak;
     st.querySelectorAll('.pk-opt').forEach(b=>b.onclick=()=>{pick=+b.dataset.i;tried.add(pick);sfx2('step');st.querySelectorAll('.pk-opt').forEach(x=>x.classList.toggle('on',x===b));b.classList.add('seen');render();speak();
-      if(tried.size>=it.opts.length){P.fx.cta=()=>{ri++;if(ri<R.length)draw();else{P.fx.done=true;return false}return true};cta(ri<R.length-1?'Próxima ▶':'Continuar',true,true)}});
+      if(tried.size>=it.opts.length){try{const c0=PKS.init();c0.bt=R.length;c0.bd[ri]=1;c0.b=Object.keys(c0.bd).length}catch(e){}P.fx.cta=()=>{ri++;if(ri<R.length)draw();else{P.fx.done=true;return false}return true};cta(ri<R.length-1?'Próxima ▶':'Continuar',true,true)}});
     P.fx.cta=()=>true;cta('Troque as peças',false)};
   draw();coach('Troque as palavras e ouça como a frase muda.')};
 
@@ -251,11 +253,11 @@ FXR.pkspeak=function(f,st,n){
     q('#pkl',st).onclick=()=>say2(it.target);q('#pks',st).onclick=()=>say2(it.target,null,true);
     setTimeout(()=>{if(alive(fx))PKA.say(it.line[0],it.who===it.who?it.who:null)},350);
     const adv=()=>{ri++;if(ri<R.length)draw();else{P.fx.done=true;P.fx.cta=()=>false;cta('Continuar',true,true)}};
-    const fin=()=>{sfx2('step');P.fx.cta=()=>{adv();return true};cta(ri<R.length-1?'Próxima ▶':'Concluir',true,true)};
+    const fin=()=>{try{const c0=PKS.init();c0.st=R.length;c0.sp++}catch(e){}sfx2('step');P.fx.cta=()=>{adv();return true};cta(ri<R.length-1?'Próxima ▶':'Concluir',true,true)};
     P.fx.cta=()=>true;cta('Fale a frase 🎤',false);
     if(window.PogVoice&&PogVoice.supported())PogVoice.mount(q('#pkm',st),{target:it.target,onDone:()=>fin(),onFail:c=>{if(c==='unsupported')q('#pkm',st).innerHTML='<div class="pk-tools"><button type="button" class="pk-btn" id="pkok">Eu falei ✔</button></div>',q('#pkok',st).onclick=fin}});
     else{q('#pkm',st).innerHTML='<div class="pk-tools"><button type="button" class="pk-btn" id="pkok">Eu falei ✔</button></div>';q('#pkok',st).onclick=fin}
-    q('#pksk',st).onclick=adv};
+    q('#pksk',st).onclick=()=>{try{const c0=PKS.init();c0.st=R.length;c0.sk++}catch(e){}adv()}};
   draw();coach('Agora é você! Fale a frase em voz alta.')};
 
 /* 5 · Mochila: reaproveita o fechamento padrão e acrescenta cartões */
