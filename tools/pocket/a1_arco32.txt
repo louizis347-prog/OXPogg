@@ -1,0 +1,483 @@
+# Arco 32 · Casa e objetos
+T: My bedroom | Descrever o quarto | living | Boston | Jess,f,🧑🏼,amiga
+K: There is a bed in my room. | Tem uma cama no meu quarto.
+M: Hoje você descreve o seu quarto.
+D: Jess|Come in! This is my bedroom.|Entre! Este é o meu quarto.
+D: You|It is nice. There is a big bed.|É legal. Tem uma cama grande.
+D: Jess|Yes. And there is a desk by the window.|Sim. E tem uma mesa perto da janela.
+D: You|Is that your lamp on the desk?|Aquele é o seu abajur na mesa?
+D: Jess|Yes. I read there every night.|Sim. Eu leio ali toda noite.
+D: You|There are many books on the shelf.|Tem muitos livros na estante.
+D: Jess|I love books. And I love my room.|Eu amo livros. E amo o meu quarto.
+D: You|It is cozy and quiet.|É aconchegante e silencioso.
+V: bedroom|quarto;bed|cama;desk|mesa de estudo;lamp|abajur;shelf|estante
+B: There is a {0} in my room.|Tem {0} no meu quarto.|bed=uma cama;desk=uma mesa;lamp=um abajur
+B: There are many {0} on the shelf.|Tem muitos {0} na estante.|books=livros;toys=brinquedos;photos=fotos
+S: Jess|Come in! This is my bedroom.|Entre! Este é o meu quarto.|It is nice. There is a big bed.|É legal. Tem uma cama grande.
+S: Jess|Yes. I read there every night.|Sim. Eu leio ali toda noite.|There are many books on the shelf.|Tem muitos livros na estante.
+R: This is my bedroom.|Este é o meu quarto.
+R: There is a big bed.|Tem uma cama grande.
+R: There are many books.|Tem muitos livros.
+R: My room is cozy and quiet.|O meu quarto é aconchegante e silencioso.
+X: Come in!|Entre!
+C: "There is" para um, "there are" para vários.
+N: Próximo: a cozinha.
+
+T: In the kitchen | Objetos da cozinha | kitchen | Seattle | Ruth,f,👩🏻,anfitriã
+K: Where is the knife? | Onde está a faca?
+M: Hoje você procura objetos na cozinha.
+D: You|Excuse me, where is the knife?|Com licença, onde está a faca?
+D: Ruth|It is in the drawer, next to the spoons.|Está na gaveta, ao lado das colheres.
+D: You|And where are the plates?|E onde estão os pratos?
+D: Ruth|They are in the cupboard above you.|Estão no armário acima de você.
+D: You|I see them. Where is the pan?|Vi. Onde está a panela?
+D: Ruth|It is on the stove.|Está no fogão.
+D: You|Is the fridge full?|A geladeira está cheia?
+D: Ruth|No, it is almost empty.|Não, está quase vazia.
+V: knife|faca;spoons|colheres;plates|pratos;stove|fogão;fridge|geladeira
+B: Where is the {0}?|Onde está {0}?|knife=a faca;pan=a panela;cup=a xícara
+B: The plates are in the {0}.|Os pratos estão no {0}.|cupboard=armário;sink=pia;drawer=gaveta
+S: You|Excuse me, where is the knife?|Com licença, onde está a faca?|It is in the drawer, next to the spoons.|Está na gaveta, ao lado das colheres.
+S: You|And where are the plates?|E onde estão os pratos?|They are in the cupboard above you.|Estão no armário acima de você.
+R: Where is the knife?|Onde está a faca?
+R: It is in the drawer.|Está na gaveta.
+R: Where are the plates?|Onde estão os pratos?
+R: The pan is on the stove.|A panela está no fogão.
+X: Almost empty.|Quase vazia.
+C: "Is" pergunta de um objeto; "are" pergunta de vários.
+N: Próximo: a sala.
+
+T: Living room | Sala de estar | living | Chicago | Ben,m,🧑🏽,anfitrião
+K: Sit on the sofa. | Sente no sofá.
+M: Hoje você recebe visita na sala.
+D: Ben|Welcome to my home. Sit on the sofa.|Bem-vindo à minha casa. Sente no sofá.
+D: You|Thank you. It is so soft.|Obrigado. É tão macio.
+D: Ben|Do you want the TV on?|Você quer a TV ligada?
+D: You|No, thanks. Let us talk.|Não, obrigado. Vamos conversar.
+D: Ben|Look at the pictures on the wall.|Olhe as fotos na parede.
+D: You|Is that your family?|Aquela é a sua família?
+D: Ben|Yes, my parents and my sister.|Sim, meus pais e minha irmã.
+D: You|You have a lovely home.|Você tem uma casa linda.
+V: sofa|sofá;TV|TV;wall|parede;pictures|fotos;parents|pais
+B: Sit on the {0}.|Sente no {0}.|sofa=sofá;chair=cadeira;floor=chão
+B: Look at the {0} on the wall.|Olhe {0} na parede.|pictures=as fotos;clock=o relógio;mirror=o espelho
+S: Ben|Welcome to my home. Sit on the sofa.|Bem-vindo à minha casa. Sente no sofá.|Thank you. It is so soft.|Obrigado. É tão macio.
+S: Ben|Look at the pictures on the wall.|Olhe as fotos na parede.|Is that your family?|Aquela é a sua família?
+R: Welcome to my home.|Bem-vindo à minha casa.
+R: Sit on the sofa.|Sente no sofá.
+R: Look at the pictures.|Olhe as fotos.
+R: You have a lovely home.|Você tem uma casa linda.
+X: Make yourself at home.|Fique à vontade.
+C: "Make yourself at home" é o jeito de dizer: fique à vontade.
+N: Próximo: o banheiro.
+
+T: The bathroom | Banheiro e higiene | clinic | Denver | Rosa,f,👩🏽,anfitriã
+K: Where is the bathroom? | Onde fica o banheiro?
+M: Hoje você pergunta pelo banheiro.
+D: You|Excuse me, where is the bathroom?|Com licença, onde fica o banheiro?
+D: Rosa|It is down the hall, on the right.|Fica no corredor, à direita.
+D: You|Thank you. Is there a towel?|Obrigado. Tem toalha?
+D: Rosa|Yes, there are clean towels in the cabinet.|Sim, tem toalhas limpas no armário.
+D: You|And soap?|E sabonete?
+D: Rosa|There is soap next to the sink.|Tem sabonete ao lado da pia.
+D: You|Great. I wash my hands first.|Ótimo. Lavo as mãos primeiro.
+D: Rosa|Good idea. Take your time.|Boa ideia. Fique à vontade.
+V: bathroom|banheiro;towel|toalha;soap|sabonete;sink|pia;hall|corredor
+B: The bathroom is down the {0}.|O banheiro fica no {0}.|hall=corredor;stairs=andar de baixo;street=rua
+B: There is {0} next to the sink.|Tem {0} ao lado da pia.|soap=sabonete;a towel=uma toalha;a mirror=um espelho
+S: You|Excuse me, where is the bathroom?|Com licença, onde fica o banheiro?|It is down the hall, on the right.|Fica no corredor, à direita.
+S: You|And soap?|E sabonete?|There is soap next to the sink.|Tem sabonete ao lado da pia.
+R: Where is the bathroom?|Onde fica o banheiro?
+R: It is on the right.|Fica à direita.
+R: There is soap next to the sink.|Tem sabonete ao lado da pia.
+R: I wash my hands.|Lavo as mãos.
+X: Take your time.|Fique à vontade.
+C: Nos EUA se diz "restroom" em locais públicos e "bathroom" em casa.
+N: Próximo: o jardim.
+
+T: In the garden | Quintal e jardim | park | Austin | Tom,m,🧑🏽,vizinho
+K: The garden is behind the house. | O jardim fica atrás da casa.
+M: Hoje você fala de um jardim.
+D: Tom|Come see my garden. It is behind the house.|Venha ver o meu jardim. Fica atrás da casa.
+D: You|It is big! What is that?|É grande! O que é aquilo?
+D: Tom|That is a small pool for the kids.|Aquilo é uma piscina pequena para as crianças.
+D: You|And the grass is so green.|E a grama é tão verde.
+D: Tom|I cut it every Saturday.|Eu corto toda sábado.
+D: You|Is that a table under the tree?|Aquilo é uma mesa debaixo da árvore?
+D: Tom|Yes. We eat there in summer.|Sim. Comemos ali no verão.
+D: You|It is a perfect place.|É um lugar perfeito.
+V: behind|atrás de;grass|grama;pool|piscina;under|debaixo de;place|lugar
+B: The garden is {0} the house.|O jardim fica {0} a casa.|behind=atrás d;next to=ao lado d;in front of=na frente d
+B: We eat {0}.|Comemos {0}.|there=ali;outside=lá fora;under the tree=debaixo da árvore
+S: Tom|Come see my garden. It is behind the house.|Venha ver o meu jardim. Fica atrás da casa.|It is big! What is that?|É grande! O que é aquilo?
+S: Tom|Is that a table under the tree?|Aquilo é uma mesa debaixo da árvore?|Yes. We eat there in summer.|Sim. Comemos ali no verão.
+R: The garden is behind the house.|O jardim fica atrás da casa.
+R: The grass is green.|A grama é verde.
+R: There is a table under the tree.|Tem uma mesa debaixo da árvore.
+R: It is a perfect place.|É um lugar perfeito.
+X: What is that?|O que é aquilo?
+C: "Behind", "under" e "next to" dizem a posição de algo.
+N: Próximo: mudar os móveis.
+
+T: Where is the sofa? | Posição dos móveis | living | Portland | Mia,f,👩🏻,amiga
+K: Move the table to the left. | Mova a mesa para a esquerda.
+M: Hoje você arruma os móveis.
+D: Mia|I want to change my room. Help me, please.|Quero mudar meu quarto. Ajude-me, por favor.
+D: You|Sure. Where is the sofa now?|Claro. Onde está o sofá agora?
+D: Mia|It is by the window. I want it by the wall.|Está perto da janela. Quero perto da parede.
+D: You|Okay. Move the table to the left.|Certo. Mova a mesa para a esquerda.
+D: Mia|And put the lamp in the corner.|E ponha o abajur no canto.
+D: You|Like this?|Assim?
+D: Mia|Perfect. It looks bigger now.|Perfeito. Parece maior agora.
+D: You|I like it. It is very modern.|Gosto. É muito moderno.
+V: move|mover;corner|canto;left|esquerda;wall|parede;bigger|maior
+B: Move the {0} to the left.|Mova {0} para a esquerda.|table=a mesa;sofa=o sofá;chair=a cadeira
+B: Put the lamp in the {0}.|Ponha o abajur no {0}.|corner=canto;kitchen=cozinha;bedroom=quarto
+S: Mia|I want to change my room. Help me, please.|Quero mudar meu quarto. Ajude-me, por favor.|Sure. Where is the sofa now?|Claro. Onde está o sofá agora?
+S: Mia|And put the lamp in the corner.|E ponha o abajur no canto.|Like this?|Assim?
+R: Move the table to the left.|Mova a mesa para a esquerda.
+R: Put the lamp in the corner.|Ponha o abajur no canto.
+R: It looks bigger now.|Parece maior agora.
+R: I like it.|Eu gosto.
+X: Like this?|Assim?
+C: "Put" vale para colocar: put the lamp in the corner.
+N: Próximo: limpar a casa.
+
+T: Cleaning day | Limpar a casa | kitchen | Seattle | Max,m,🧑🏼,colega de quarto
+K: Let us clean the house. | Vamos limpar a casa.
+M: Hoje você divide a limpeza.
+D: Max|Today is cleaning day. Let us clean the house.|Hoje é dia de limpeza. Vamos limpar a casa.
+D: You|Okay. I wash the dishes.|Certo. Eu lavo a louça.
+D: Max|I sweep the floor.|Eu varro o chão.
+D: You|Where is the broom?|Onde está a vassoura?
+D: Max|It is behind the door.|Está atrás da porta.
+D: You|Then I take out the trash.|Então eu levo o lixo para fora.
+D: Max|Good. Open the windows too.|Bom. Abra as janelas também.
+D: You|Now the house is clean!|Agora a casa está limpa!
+V: clean|limpar;sweep|varrer;broom|vassoura;trash|lixo;windows|janelas
+B: I wash the {0}.|Eu lavo {0}.|dishes=a louça;floor=o chão;windows=as janelas
+B: Where is the {0}?|Onde está {0}?|broom=a vassoura;mop=o esfregão;bucket=o balde
+S: Max|Today is cleaning day. Let us clean the house.|Hoje é dia de limpeza. Vamos limpar a casa.|Okay. I wash the dishes.|Certo. Eu lavo a louça.
+S: Max|Good. Open the windows too.|Bom. Abra as janelas também.|Now the house is clean!|Agora a casa está limpa!
+R: Let us clean the house.|Vamos limpar a casa.
+R: I wash the dishes.|Eu lavo a louça.
+R: I sweep the floor.|Eu varro o chão.
+R: The house is clean.|A casa está limpa.
+X: Cleaning day!|Dia de limpeza!
+C: "Chores" são as tarefas de casa.
+N: Próximo: ferramentas.
+
+T: The toolbox | Ferramentas | street | Detroit | Dan,m,🧑🏽,vizinho
+K: I need a hammer. | Preciso de um martelo.
+M: Hoje você usa ferramentas em casa.
+D: Dan|Do you need a tool?|Você precisa de uma ferramenta?
+D: You|Yes, I need a hammer and some nails.|Sim, preciso de um martelo e alguns pregos.
+D: Dan|Here is my toolbox. Take what you need.|Aqui está a minha caixa de ferramentas. Pegue o que precisar.
+D: You|Is there a screwdriver too?|Tem uma chave de fenda também?
+D: Dan|Yes, it is under the drill.|Tem, está debaixo da furadeira.
+D: You|I want to hang a picture.|Quero pendurar um quadro.
+D: Dan|Use the hammer carefully.|Use o martelo com cuidado.
+D: You|Thanks. I bring it back soon.|Valeu. Devolvo logo.
+V: hammer|martelo;nails|pregos;screwdriver|chave de fenda;drill|furadeira;toolbox|caixa de ferramentas
+B: I need a {0}.|Preciso de um(a) {0}.|hammer=martelo;screwdriver=chave de fenda;ladder=escada
+B: Use it {0}.|Use com {0}.|carefully=cuidado;slowly=calma;two hands=as duas mãos
+S: Dan|Do you need a tool?|Você precisa de uma ferramenta?|Yes, I need a hammer and some nails.|Sim, preciso de um martelo e alguns pregos.
+S: Dan|Use the hammer carefully.|Use o martelo com cuidado.|Thanks. I bring it back soon.|Valeu. Devolvo logo.
+R: I need a hammer and some nails.|Preciso de um martelo e pregos.
+R: Is there a screwdriver?|Tem uma chave de fenda?
+R: Use the hammer carefully.|Use o martelo com cuidado.
+R: I bring it back soon.|Devolvo logo.
+X: Take what you need.|Pegue o que precisar.
+C: Emprestar ferramenta ao vizinho é comum e bem visto nos EUA.
+N: Próximo: eletrodomésticos.
+
+T: Home appliances | Eletrodomésticos | kitchen | Austin | Rosa,f,👩🏽,mãe
+K: The washing machine is broken. | A máquina de lavar está quebrada.
+M: Hoje você resolve um problema em casa.
+D: Rosa|The washing machine does not work.|A máquina de lavar não funciona.
+D: You|Is it plugged in?|Está ligada na tomada?
+D: Rosa|Yes, but the light is off.|Sim, mas a luz está apagada.
+D: You|Maybe the plug is loose.|Talvez o plugue esteja solto.
+D: Rosa|Let me check. Oh, you are right!|Deixe-me ver. Ah, você tem razão!
+D: You|Now it works.|Agora funciona.
+D: Rosa|Thank you! My clothes are dirty.|Obrigada! Minhas roupas estão sujas.
+D: You|No problem. Do you need help with the dryer?|Sem problema. Precisa de ajuda com a secadora?
+V: washing machine|máquina de lavar;plugged in|ligada na tomada;plug|plugue;loose|solto;dryer|secadora
+B: The {0} does not work.|{0} não funciona.|washing machine=A máquina de lavar;TV=A TV;fridge=A geladeira
+B: Is it {0}?|Está {0}?|plugged in=ligada na tomada;on=ligada;broken=quebrada
+S: Rosa|The washing machine does not work.|A máquina de lavar não funciona.|Is it plugged in?|Está ligada na tomada?
+S: Rosa|Let me check. Oh, you are right!|Deixe-me ver. Ah, você tem razão!|Now it works.|Agora funciona.
+R: It does not work.|Não funciona.
+R: Is it plugged in?|Está ligada na tomada?
+R: The plug is loose.|O plugue está solto.
+R: Now it works.|Agora funciona.
+X: You are right!|Você tem razão!
+C: "Does not work" (doesn't work) é o jeito comum de dizer que algo está com defeito.
+N: Próximo: mudança de casa.
+
+T: Welcome home | Desafio do arco: casa nova | living | Denver | Jess,f,🧑🏼,amiga
+K: Welcome to my new home. | Bem-vindo à minha casa nova.
+M: Hoje você apresenta uma casa.
+D: Jess|Welcome to my new home!|Bem-vindo à minha casa nova!
+D: You|It is lovely. How many rooms are there?|É linda. Quantos cômodos tem?
+D: Jess|There are five: two bedrooms, a kitchen, a living room and a bathroom.|São cinco: dois quartos, cozinha, sala e banheiro.
+D: You|Where is the kitchen?|Onde fica a cozinha?
+D: Jess|It is on the left, next to the living room.|Fica à esquerda, ao lado da sala.
+D: You|Is there a garden?|Tem jardim?
+D: Jess|Yes, behind the house.|Tem, atrás da casa.
+D: You|I love your home.|Eu adoro a sua casa.
+V: rooms|cômodos;two|dois;left|esquerda;lovely|linda;behind|atrás
+B: There are {0} rooms.|Tem {0} cômodos.|five=cinco;four=quatro;six=seis
+B: The kitchen is on the {0}.|A cozinha fica à {0}.|left=esquerda;right=direita;second floor=segundo andar
+S: Jess|Welcome to my new home!|Bem-vindo à minha casa nova!|It is lovely. How many rooms are there?|É linda. Quantos cômodos tem?
+S: You|Where is the kitchen?|Onde fica a cozinha?|It is on the left, next to the living room.|Fica à esquerda, ao lado da sala.
+R: Welcome to my new home!|Bem-vindo à minha casa nova!
+R: How many rooms are there?|Quantos cômodos tem?
+R: The kitchen is on the left.|A cozinha fica à esquerda.
+R: Is there a garden?|Tem jardim?
+X: I love your home.|Eu adoro a sua casa.
+C: "Housewarming" é a festa para celebrar uma casa nova.
+N: Próximo: parque de diversões.
+BOSS: 1
+
+# Arco 33 · Parque de diversões e infância
+T: At the amusement park | Chegar a um parque de diversões | plaza | Orlando | Sam,m,🧑🏻,funcionário
+K: Which ride do you want? | Qual brinquedo você quer?
+M: Hoje você escolhe um brinquedo.
+D: Sam|Welcome to the park! Which ride do you want?|Bem-vindo ao parque! Qual brinquedo você quer?
+D: You|I want the roller coaster.|Quero a montanha-russa.
+D: Sam|It is very fast and high.|É muito rápida e alta.
+D: You|Is it scary?|É assustadora?
+D: Sam|A little. Are you afraid?|Um pouco. Você tem medo?
+D: You|No, I am excited!|Não, estou animado!
+D: Sam|Then you can ride. Stand in line, please.|Então pode andar. Entre na fila, por favor.
+D: You|Thank you. How long is the wait?|Obrigado. Quanto tempo é a espera?
+V: ride|brinquedo;roller coaster|montanha-russa;line|fila;wait|espera;excited|animado
+B: I want the {0}.|Quero {0}.|roller coaster=a montanha-russa;Ferris wheel=a roda-gigante;carousel=o carrossel
+B: How long is the {0}?|Quanto tempo é {0}?|wait=a espera;line=a fila;ride=o passeio
+S: Sam|Welcome to the park! Which ride do you want?|Bem-vindo ao parque! Qual brinquedo você quer?|I want the roller coaster.|Quero a montanha-russa.
+S: Sam|Then you can ride. Stand in line, please.|Então pode andar. Entre na fila, por favor.|Thank you. How long is the wait?|Obrigado. Quanto tempo é a espera?
+R: Which ride do you want?|Qual brinquedo você quer?
+R: I want the roller coaster.|Quero a montanha-russa.
+R: Stand in line, please.|Entre na fila, por favor.
+R: How long is the wait?|Quanto tempo é a espera?
+X: I am excited!|Estou animado!
+C: "Stand in line" é entrar na fila, em inglês americano; no britânico: "queue".
+N: Próximo: o carrossel.
+
+T: The carousel | Brinquedos para crianças | plaza | Chicago | Ruth,f,👩🏻,mãe
+K: My daughter loves horses. | Minha filha adora cavalos.
+M: Hoje você leva uma criança ao carrossel.
+D: Ruth|My daughter loves the carousel.|Minha filha adora o carrossel.
+D: You|It is beautiful. The horses are colorful.|É lindo. Os cavalos são coloridos.
+D: Ruth|She wants the white horse.|Ela quer o cavalo branco.
+D: You|How old is she?|Quantos anos ela tem?
+D: Ruth|She is four years old.|Ela tem quatro anos.
+D: You|She is so small and cute.|Ela é tão pequena e fofa.
+D: Ruth|Hold on tight, sweetie!|Segure firme, querida!
+D: You|Everyone is smiling.|Todo mundo está sorrindo.
+V: carousel|carrossel;horses|cavalos;daughter|filha;colorful|coloridos;tight|firme
+B: She is {0} years old.|Ela tem {0} anos.|four=quatro;five=cinco;three=três
+B: Hold on {0}!|Segure {0}!|tight=firme;here=aqui;now=agora
+S: Ruth|My daughter loves the carousel.|Minha filha adora o carrossel.|It is beautiful. The horses are colorful.|É lindo. Os cavalos são coloridos.
+S: You|How old is she?|Quantos anos ela tem?|She is four years old.|Ela tem quatro anos.
+R: My daughter loves the carousel.|Minha filha adora o carrossel.
+R: The horses are colorful.|Os cavalos são coloridos.
+R: She is four years old.|Ela tem quatro anos.
+R: Hold on tight!|Segure firme!
+X: Sweetie!|Querida!
+C: "Sweetie" é um jeito carinhoso de chamar crianças.
+N: Próximo: o balão.
+
+T: Balloons and games | Jogos de feira | plaza | Austin | Omar,m,🧑🏽,vendedor
+K: Throw the ball. | Jogue a bola.
+M: Hoje você joga um jogo de feira.
+D: Omar|Try your luck! Three balls for one dollar.|Teste a sorte! Três bolas por um dólar.
+D: You|Okay. Here is a dollar.|Certo. Aqui está um dólar.
+D: Omar|Throw the ball and hit the bottles.|Jogue a bola e acerte as garrafas.
+D: You|One, two... I miss!|Uma, duas... errei!
+D: Omar|Try again. You have one more.|Tente de novo. Você tem mais uma.
+D: You|I hit it! All the bottles fall!|Acertei! Todas as garrafas caem!
+D: Omar|You win a prize! Choose one.|Você ganha um prêmio! Escolha um.
+D: You|I want the big blue bear.|Quero o urso azul grande.
+V: balls|bolas;bottles|garrafas;prize|prêmio;miss|errar;choose|escolher
+B: Throw the {0}.|Jogue {0}.|ball=a bola;ring=o anel;dart=o dardo
+B: I want the {0}.|Quero {0}.|big blue bear=o urso azul grande;small cat=o gatinho;red balloon=o balão vermelho
+S: Omar|Try your luck! Three balls for one dollar.|Teste a sorte! Três bolas por um dólar.|Okay. Here is a dollar.|Certo. Aqui está um dólar.
+S: Omar|You win a prize! Choose one.|Você ganha um prêmio! Escolha um.|I want the big blue bear.|Quero o urso azul grande.
+R: Three balls for one dollar.|Três bolas por um dólar.
+R: Throw the ball.|Jogue a bola.
+R: You win a prize!|Você ganha um prêmio!
+R: I want the big blue bear.|Quero o urso azul grande.
+X: Try again!|Tente de novo!
+C: "Try your luck" convida a tentar a sorte num jogo de feira.
+N: Próximo: algodão-doce.
+
+T: Cotton candy | Doces de parque | plaza | Brooklyn | Lia,f,👩🏽,vendedora
+K: It is sweet and pink. | É doce e rosa.
+M: Hoje você compra doces no parque.
+D: Lia|Cotton candy! Sweet and fresh!|Algodão-doce! Doce e fresco!
+D: You|What colors do you have?|Que cores vocês têm?
+D: Lia|Pink and blue.|Rosa e azul.
+D: You|Pink, please. It looks soft.|Rosa, por favor. Parece macio.
+D: Lia|It is just sugar. Here you go.|É só açúcar. Aqui está.
+D: You|How much is it?|Quanto custa?
+D: Lia|Three dollars.|Três dólares.
+D: You|It melts in my mouth. I love it!|Derrete na minha boca. Eu adoro!
+V: cotton candy|algodão-doce;sugar|açúcar;soft|macio;melts|derrete;mouth|boca
+B: It is {0} and pink.|É {0} e rosa.|sweet=doce;soft=macio;light=leve
+B: It {0} in my mouth.|Ele {0} na minha boca.|melts=derrete;sticks=gruda;disappears=some
+S: Lia|Cotton candy! Sweet and fresh!|Algodão-doce! Doce e fresco!|What colors do you have?|Que cores vocês têm?
+S: Lia|Three dollars.|Três dólares.|It melts in my mouth. I love it!|Derrete na minha boca. Eu adoro!
+R: What colors do you have?|Que cores vocês têm?
+R: Pink, please.|Rosa, por favor.
+R: It is just sugar.|É só açúcar.
+R: It melts in my mouth.|Derrete na minha boca.
+X: I love it!|Eu adoro!
+C: Algodão-doce em inglês: "cotton candy" nos EUA e "candy floss" no Reino Unido.
+N: Próximo: a roda-gigante.
+
+T: The Ferris wheel | Roda-gigante | plaza | Chicago | Max,m,🧑🏼,funcionário
+K: You can see the whole city. | Dá para ver a cidade toda.
+M: Hoje você sobe na roda-gigante.
+D: Max|Next, please! Two people in each car.|Próximos, por favor! Duas pessoas em cada cabine.
+D: You|Thank you. How high is it?|Obrigado. Qual é a altura?
+D: Max|It is sixty meters high.|São sessenta metros de altura.
+D: You|Wow! I see the lake from here.|Uau! Vejo o lago daqui.
+D: Max|On a clear day you can see the whole city.|Num dia claro dá para ver a cidade toda.
+D: You|The people look so small.|As pessoas parecem tão pequenas.
+D: Max|Take a photo at the top.|Tire uma foto lá no alto.
+D: You|Good idea. The view is amazing!|Boa ideia. A vista é incrível!
+V: Ferris wheel|roda-gigante;car|cabine;meters|metros;view|vista;whole|toda
+B: It is {0} meters high.|Tem {0} metros de altura.|sixty=sessenta;fifty=cinquenta;eighty=oitenta
+B: You can see the {0}.|Dá para ver {0}.|whole city=a cidade toda;lake=o lago;river=o rio
+S: Max|Next, please! Two people in each car.|Próximos, por favor! Duas pessoas em cada cabine.|Thank you. How high is it?|Obrigado. Qual é a altura?
+S: Max|Take a photo at the top.|Tire uma foto lá no alto.|Good idea. The view is amazing!|Boa ideia. A vista é incrível!
+R: How high is it?|Qual é a altura?
+R: I see the lake from here.|Vejo o lago daqui.
+R: The people look small.|As pessoas parecem pequenas.
+R: The view is amazing!|A vista é incrível!
+X: Next, please!|Próximos, por favor!
+C: A roda-gigante de Chicago, no Navy Pier, é uma das mais famosas dos EUA.
+N: Próximo: o labirinto.
+
+T: The maze | Labirinto | forest | Salem | Kai,m,🧑🏻,funcionário
+K: Turn left at the end. | Vire à esquerda no final.
+M: Hoje você tenta sair de um labirinto.
+D: Kai|Welcome to the maze. Can you find the exit?|Bem-vindo ao labirinto. Você consegue achar a saída?
+D: You|I think so. Is it difficult?|Acho que sim. É difícil?
+D: Kai|A little. Go straight first.|Um pouco. Siga em frente primeiro.
+D: You|Now there is a wall. I turn left.|Agora tem uma parede. Viro à esquerda.
+D: Kai|Good. Turn right at the end.|Bom. Vire à direita no final.
+D: You|Oh no, it is a dead end.|Ah não, é um beco sem saída.
+D: Kai|Go back and try the other way.|Volte e tente o outro caminho.
+D: You|I see the exit! Thank you!|Vejo a saída! Obrigado!
+V: maze|labirinto;exit|saída;dead end|beco sem saída;way|caminho;wall|parede
+B: Turn {0} at the end.|Vire {0} no final.|left=à esquerda;right=à direita;back=para trás
+B: Go {0}.|Siga {0}.|straight=em frente;back=de volta;slowly=devagar
+S: Kai|Welcome to the maze. Can you find the exit?|Bem-vindo ao labirinto. Você consegue achar a saída?|I think so. Is it difficult?|Acho que sim. É difícil?
+S: Kai|Go back and try the other way.|Volte e tente o outro caminho.|I see the exit! Thank you!|Vejo a saída! Obrigado!
+R: Can you find the exit?|Você consegue achar a saída?
+R: Go straight first.|Siga em frente primeiro.
+R: Turn left at the end.|Vire à esquerda no final.
+R: I see the exit!|Vejo a saída!
+X: Try the other way.|Tente o outro caminho.
+C: Labirintos de milharal são uma atração de outono nos EUA.
+N: Próximo: o show de mágica.
+
+T: A magic show | Show de mágica | ballroom | Las Vegas | Walt,m,🧑🏿,mágico
+K: Pick a card, any card. | Escolha uma carta, qualquer uma.
+M: Hoje você assiste a um show de mágica.
+D: Walt|Welcome to my magic show! I need a helper.|Bem-vindos ao meu show de mágica! Preciso de um ajudante.
+D: You|Me? Okay!|Eu? Certo!
+D: Walt|Pick a card, any card.|Escolha uma carta, qualquer uma.
+D: You|I pick this one. It is a queen.|Escolho esta. É uma dama.
+D: Walt|Put it back. Now look at my hat.|Ponha de volta. Agora olhe o meu chapéu.
+D: You|Oh! There is a bird in the hat!|Oh! Tem um pássaro no chapéu!
+D: Walt|And your card is under the bird!|E a sua carta está debaixo do pássaro!
+D: You|How do you do that? It is magic!|Como você faz isso? É mágica!
+V: magic|mágica;helper|ajudante;hat|chapéu;bird|pássaro;card|carta
+B: Pick a {0}, please.|Escolha {0}, por favor.|card=uma carta;number=um número;color=uma cor
+B: There is a {0} in the hat!|Tem {0} no chapéu!|bird=um pássaro;rabbit=um coelho;flower=uma flor
+S: Walt|Welcome to my magic show! I need a helper.|Bem-vindos ao meu show de mágica! Preciso de um ajudante.|Me? Okay!|Eu? Certo!
+S: Walt|And your card is under the bird!|E a sua carta está debaixo do pássaro!|How do you do that? It is magic!|Como você faz isso? É mágica!
+R: I need a helper.|Preciso de um ajudante.
+R: Pick a card.|Escolha uma carta.
+R: There is a bird in the hat!|Tem um pássaro no chapéu!
+R: It is magic!|É mágica!
+X: Me?|Eu?
+C: Magos americanos costumam dizer: "Pick a card, any card".
+N: Próximo: a casa assombrada.
+
+T: The haunted house | Casa assombrada | night | Salem | Ruth,f,👩🏻,guia
+K: Do not be scared! | Não tenha medo!
+M: Hoje você entra numa casa assombrada de brincadeira.
+D: Ruth|Welcome to the haunted house. Are you ready?|Bem-vindo à casa assombrada. Você está pronto?
+D: You|I think so. It is very dark.|Acho que sim. Está muito escuro.
+D: Ruth|Stay close to me. Do not be scared.|Fique perto de mim. Não tenha medo.
+D: You|I hear a strange noise!|Eu ouço um barulho estranho!
+D: Ruth|It is only the wind.|É só o vento.
+D: You|There is a ghost on the stairs!|Tem um fantasma na escada!
+D: Ruth|Ha ha! It is an actor.|Ha ha! É um ator.
+D: You|Oh, I am still scared!|Ah, ainda estou com medo!
+V: haunted|assombrada;ghost|fantasma;stairs|escada;wind|vento;noise|barulho
+B: Stay {0} to me.|Fique {0} de mim.|close=perto;next=ao lado;behind=atrás
+B: There is a {0} on the stairs!|Tem {0} na escada!|ghost=um fantasma;cat=um gato;bat=um morcego
+S: Ruth|Welcome to the haunted house. Are you ready?|Bem-vindo à casa assombrada. Você está pronto?|I think so. It is very dark.|Acho que sim. Está muito escuro.
+S: You|There is a ghost on the stairs!|Tem um fantasma na escada!|Ha ha! It is an actor.|Ha ha! É um ator.
+R: Do not be scared.|Não tenha medo.
+R: Stay close to me.|Fique perto de mim.
+R: It is only the wind.|É só o vento.
+R: There is a ghost on the stairs!|Tem um fantasma na escada!
+X: Ha ha!|Ha ha!
+C: Casas assombradas são atração comum em outubro, perto do Halloween.
+N: Próximo: o parquinho.
+
+T: At the playground | Parquinho | park | Boston | Jess,f,🧑🏼,mãe
+K: Take turns on the slide. | Revezem no escorregador.
+M: Hoje você supervisiona crianças no parquinho.
+D: Jess|Children, take turns on the slide.|Crianças, revezem no escorregador.
+D: You|Your son is so fast!|O seu filho é tão rápido!
+D: Jess|Yes, he loves the swings too.|Sim, ele adora o balanço também.
+D: You|How many children are here today?|Quantas crianças estão aqui hoje?
+D: Jess|About twenty. They play all afternoon.|Cerca de vinte. Elas brincam a tarde toda.
+D: You|Look, a girl is on the seesaw.|Olhe, uma menina está na gangorra.
+D: Jess|Be careful! Do not push!|Cuidado! Não empurrem!
+D: You|They are all happy. It is lovely.|Estão todos felizes. É lindo.
+V: slide|escorregador;swings|balanço;seesaw|gangorra;afternoon|tarde;careful|cuidado
+B: Take turns on the {0}.|Revezem no {0}.|slide=escorregador;swing=balanço;seesaw=gangorra
+B: Be {0}!|Tenha {0}!|careful=cuidado;kind=gentileza;quiet=silêncio
+S: Jess|Children, take turns on the slide.|Crianças, revezem no escorregador.|Your son is so fast!|O seu filho é tão rápido!
+S: Jess|Be careful! Do not push!|Cuidado! Não empurrem!|They are all happy. It is lovely.|Estão todos felizes. É lindo.
+R: Take turns on the slide.|Revezem no escorregador.
+R: He loves the swings.|Ele adora o balanço.
+R: Be careful!|Cuidado!
+R: They are all happy.|Estão todos felizes.
+X: Do not push!|Não empurrem!
+C: "Take turns" é combinar de usar algo um de cada vez.
+N: Próximo: desafio, o aniversário da criança.
+
+T: A birthday party | Desafio do arco: festa infantil | living | Austin | Rosa,f,👩🏽,mãe
+K: Happy birthday to you! | Parabéns pra você!
+M: Hoje você participa de uma festa de aniversário infantil.
+D: Rosa|Welcome to my son's party! Come in!|Bem-vindo à festa do meu filho! Entre!
+D: You|Thank you. Here is a gift for him.|Obrigado. Aqui está um presente para ele.
+D: Rosa|How kind! Let us put it on the table.|Que gentil! Vamos pôr na mesa.
+D: You|There are balloons everywhere!|Tem balões por todo lado!
+D: Rosa|Yes. And a big cake with five candles.|Sim. E um bolo grande com cinco velas.
+D: You|How old is your son?|Quantos anos tem o seu filho?
+D: Rosa|He is five today.|Ele faz cinco hoje.
+D: You|Let us sing "Happy Birthday"!|Vamos cantar "Parabéns"!
+V: birthday|aniversário;gift|presente;balloons|balões;candles|velas;everywhere|por todo lado
+B: He is {0} today.|Ele faz {0} hoje.|five=cinco;six=seis;seven=sete
+B: There are {0} everywhere!|Tem {0} por todo lado!|balloons=balões;flowers=flores;toys=brinquedos
+S: Rosa|Welcome to my son's party! Come in!|Bem-vindo à festa do meu filho! Entre!|Thank you. Here is a gift for him.|Obrigado. Aqui está um presente para ele.
+S: You|How old is your son?|Quantos anos tem o seu filho?|He is five today.|Ele faz cinco hoje.
+R: Welcome to the party!|Bem-vindo à festa!
+R: Here is a gift for him.|Aqui está um presente para ele.
+R: There are balloons everywhere.|Tem balões por todo lado.
+R: Let us sing "Happy Birthday"!|Vamos cantar "Parabéns"!
+X: Happy birthday!|Parabéns!
+C: Em festas infantis, as crianças fazem um pedido e sopram as velas.
+N: Próximo: aventura e acampamento.
+BOSS: 1
