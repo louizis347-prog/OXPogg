@@ -64,6 +64,8 @@ def main():
             flat=sorted(flat,key=lambda x:pos.get(x['t'],10**6))
         eps=[]
         for order,x in enumerate(flat,1):
+            nx=flat[order]['t'] if order<len(flat) else None
+            x['teaser']=('Próximo: '+nx) if nx else 'Fim por enquanto. Novos episódios chegando.'
             ai=(order-1)//10;k=(order-1)%10
             x['boss']=(k==9);x['s']=re.sub(r'^Desafio do arco: ?','',x['s'])
             eps.append(episode(lv,ai,k,x,BASE[lv],order))
