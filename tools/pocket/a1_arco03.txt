@@ -1,0 +1,241 @@
+# Arco 3 · Comer e fazer compras
+T: Where is the milk? | Achar produtos no supermercado | market | Chicago | Gus,m,🧑🏼,atendente
+K: Where can I find the milk? | Onde eu encontro o leite?
+M: Hoje você acha o que precisa no supermercado.
+D: You|Excuse me. Where can I find the milk?|Com licença. Onde eu encontro o leite?
+D: Gus|It is in aisle five, next to the cheese.|Fica no corredor cinco, ao lado do queijo.
+D: You|Aisle five. And the bread?|Corredor cinco. E o pão?
+D: Gus|The bread is at the back of the store.|O pão fica no fundo da loja.
+D: You|Thank you. Do you have fresh fruit?|Obrigado. Vocês têm fruta fresca?
+D: Gus|Yes, right here by the door.|Sim, aqui mesmo perto da porta.
+D: You|Perfect. Thanks for your help!|Perfeito. Obrigado pela ajuda!
+D: Gus|Anytime!|Sempre!
+V: aisle|corredor;milk|leite;bread|pão;fresh|fresco;fruit|fruta
+B: Where can I find the {0}?|Onde eu encontro {0}?|milk=o leite;bread=o pão;rice=o arroz
+B: It is in aisle {0}.|Fica no corredor {0}.|five=cinco;three=três;nine=nove
+S: Gus|Can I help you?|Posso ajudar?|Where can I find the milk?|Onde eu encontro o leite?
+S: Gus|It is in aisle five.|Fica no corredor cinco.|Do you have fresh fruit?|Vocês têm fruta fresca?
+R: Where can I find the milk?|Onde eu encontro o leite?
+R: It is in aisle five.|Fica no corredor cinco.
+R: Do you have fresh fruit?|Vocês têm fruta fresca?
+R: Thanks for your help!|Obrigado pela ajuda!
+X: Anytime!|Quando quiser! (resposta a um agradecimento)
+C: Os supermercados americanos são enormes e organizados por corredores numerados ("aisles").
+N: Próximo: pedir quantidades.
+
+T: A dozen eggs | Pedir quantidades | market | Seattle | Dee,f,👩🏽,vendedora
+K: A dozen eggs, please. | Uma dúzia de ovos, por favor.
+M: Hoje você pede quantidades: dúzia, quilo e pacote.
+D: Dee|Hi! What would you like?|Oi! O que você gostaria?
+D: You|A dozen eggs, please.|Uma dúzia de ovos, por favor.
+D: Dee|Anything else?|Mais alguma coisa?
+D: You|Two pounds of tomatoes.|Um quilo de tomates. (duas libras)
+D: Dee|Here you go. Anything else?|Aqui está. Mais alguma coisa?
+D: You|A bag of rice, please.|Um pacote de arroz, por favor.
+D: Dee|That is twelve dollars.|São doze dólares.
+D: You|Here you go. Thank you!|Aqui está. Obrigado!
+V: dozen|dúzia;pound|libra;bag|pacote;tomatoes|tomates;rice|arroz
+B: A {0} of eggs, please.|Uma {0} de ovos, por favor.|dozen=dúzia;half dozen=meia dúzia;carton=caixa
+B: Two pounds of {0}.|Duas libras de {0}.|tomatoes=tomates;apples=maçãs;onions=cebolas
+S: Dee|What would you like?|O que você gostaria?|A dozen eggs, please.|Uma dúzia de ovos, por favor.
+S: Dee|Anything else?|Mais alguma coisa?|A bag of rice, please.|Um pacote de arroz, por favor.
+R: A dozen eggs, please.|Uma dúzia de ovos, por favor.
+R: Two pounds of tomatoes.|Duas libras de tomates.
+R: Anything else?|Mais alguma coisa?
+R: That is twelve dollars.|São doze dólares.
+X: Anything else?|Mais alguma coisa?
+C: Nos EUA os pesos são em libras (pounds): uma libra tem cerca de 450 gramas.
+N: Próximo: pagar em dinheiro ou no cartão.
+
+T: Cash or card? | Pagar em dinheiro ou cartão | shop | Dallas | Kim,f,👩🏻,caixa
+K: Can I pay by card? | Posso pagar com cartão?
+M: Hoje você escolhe como pagar e pede o recibo.
+D: Kim|That is thirty-five dollars.|São trinta e cinco dólares.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Kim|Sure. Insert your card here.|Claro. Insira o cartão aqui.
+D: You|Like this?|Assim?
+D: Kim|Yes. Now enter your PIN.|Sim. Agora digite a senha.
+D: You|Done. Can I have a receipt?|Pronto. Posso ter o recibo?
+D: Kim|Of course. Here is your bag.|Claro. Aqui está a sua sacola.
+D: You|Thank you. Have a nice day!|Obrigado. Tenha um bom dia!
+V: card|cartão;cash|dinheiro;receipt|recibo;bag|sacola;enter|digitar
+B: Can I pay by {0}?|Posso pagar com {0}?|card=cartão;cash=dinheiro;phone=celular
+B: That is {0} dollars.|São {0} dólares.|thirty-five=trinta e cinco;twenty=vinte;fifty=cinquenta
+S: Kim|That is thirty-five dollars.|São trinta e cinco dólares.|Can I pay by card?|Posso pagar com cartão?
+S: Kim|Now enter your PIN.|Agora digite a senha.|Can I have a receipt?|Posso ter o recibo?
+R: Can I pay by card?|Posso pagar com cartão?
+R: Can I have a receipt?|Posso ter o recibo?
+R: Here is your bag.|Aqui está a sua sacola.
+R: Have a nice day!|Tenha um bom dia!
+X: Of course.|Claro.
+C: Nos EUA, o preço na etiqueta não inclui o imposto: ele é somado no caixa.
+N: Próximo: provar roupas.
+
+T: Can I try this on? | Provar roupas | shop | Los Angeles | Zoe,f,🧑🏼,vendedora
+K: Can I try this on? | Posso experimentar isto?
+M: Hoje você prova uma roupa e diz se serviu.
+D: Zoe|Hi! Can I help you find something?|Oi! Posso ajudar você a achar algo?
+D: You|Yes, I like this jacket. Can I try it on?|Sim, gostei desta jaqueta. Posso experimentar?
+D: Zoe|Of course. The fitting room is over there.|Claro. O provador fica ali.
+D: You|Thanks. It is a little small.|Obrigado. Está um pouco pequena.
+D: Zoe|Do you want a bigger size?|Você quer um tamanho maior?
+D: You|Yes, please. A medium.|Sim, por favor. Um médio.
+D: Zoe|Here you go. How is it now?|Aqui está. Como ficou agora?
+D: You|Perfect. I will take it.|Perfeito. Eu levo.
+V: jacket|jaqueta;try on|experimentar;fitting room|provador;small|pequena;size|tamanho
+B: Can I try {0} on?|Posso experimentar {0}?|this=isto;these=estes;it=isso
+B: It is a little {0}.|Está um pouco {0}.|small=pequena;big=grande;tight=apertada
+S: Zoe|Can I help you?|Posso ajudar?|Can I try this on?|Posso experimentar isto?
+S: Zoe|How is it?|Como ficou?|It is a little small.|Está um pouco pequena.
+R: Can I try this on?|Posso experimentar isto?
+R: It is a little small.|Está um pouco pequena.
+R: A medium, please.|Um médio, por favor.
+R: I will take it.|Eu levo.
+X: I will take it.|Eu levo. (ao decidir comprar)
+C: Os tamanhos nos EUA são S, M e L, e os números de roupa são diferentes dos do Brasil.
+N: Próximo: tamanhos e cores.
+
+T: What color? | Escolher cor e tamanho | shop | Boston | Zoe,f,🧑🏼,vendedora
+K: Do you have this in blue? | Vocês têm isto em azul?
+M: Hoje você pede outra cor e outro tamanho.
+D: You|Excuse me. Do you have this in blue?|Com licença. Vocês têm isto em azul?
+D: Zoe|Let me check. What size?|Vou ver. Que tamanho?
+D: You|Medium, please.|Médio, por favor.
+D: Zoe|Yes, we have one blue medium.|Sim, temos um médio azul.
+D: You|Great. How much is it?|Ótimo. Quanto custa?
+D: Zoe|It is forty dollars.|Custa quarenta dólares.
+D: You|Do you have a red one too?|Vocês têm um vermelho também?
+D: Zoe|Only in small, sorry.|Só no pequeno, desculpe.
+V: blue|azul;red|vermelho;size|tamanho;check|ver / conferir;only|só
+B: Do you have this in {0}?|Vocês têm isto em {0}?|blue=azul;black=preto;white=branco
+B: It is {0} dollars.|Custa {0} dólares.|forty=quarenta;sixty=sessenta;twenty=vinte
+S: Zoe|What size?|Que tamanho?|Medium, please.|Médio, por favor.
+S: Zoe|It is forty dollars.|Custa quarenta dólares.|Do you have a red one?|Vocês têm um vermelho?
+R: Do you have this in blue?|Vocês têm isto em azul?
+R: What size?|Que tamanho?
+R: How much is it?|Quanto custa?
+R: Only in small, sorry.|Só no pequeno, desculpe.
+X: Let me check.|Deixe-me ver.
+C: Em lojas americanas, vendedores costumam dizer "Let me check" e vão ver o estoque nos fundos.
+N: Próximo: achar o preço alto.
+
+T: It is too expensive | Dizer que está caro e pedir desconto | shop | Miami | Ray,m,🧑🏽,vendedor
+K: It is too expensive. | Está caro demais.
+M: Hoje você diz que está caro e pergunta sobre desconto.
+D: Ray|This watch is one hundred dollars.|Este relógio custa cem dólares.
+D: You|Oh, it is too expensive for me.|Ah, está caro demais para mim.
+D: Ray|It is a good watch.|É um bom relógio.
+D: You|Do you have a cheaper one?|Vocês têm um mais barato?
+D: Ray|This one is sixty dollars.|Este custa sessenta dólares.
+D: You|Is there a discount?|Tem desconto?
+D: Ray|Ten percent off today.|Dez por cento de desconto hoje.
+D: You|Great. I will take it.|Ótimo. Eu levo.
+V: expensive|caro;cheap|barato;watch|relógio;discount|desconto;percent|por cento
+B: It is too {0}.|É {0} demais.|expensive=caro;big=grande;small=pequeno
+B: Do you have a {0} one?|Vocês têm um mais {0}?|cheaper=barato;smaller=pequeno;bigger=grande
+S: Ray|This watch is one hundred dollars.|Este relógio custa cem dólares.|It is too expensive for me.|Está caro demais para mim.
+S: Ray|This one is sixty dollars.|Este custa sessenta dólares.|Is there a discount?|Tem desconto?
+R: It is too expensive.|Está caro demais.
+R: Do you have a cheaper one?|Vocês têm um mais barato?
+R: Is there a discount?|Tem desconto?
+R: Ten percent off.|Dez por cento de desconto.
+X: for me|para mim
+C: Nos EUA, barganhar em lojas grandes não é comum, mas perguntar sobre promoções (sales) é normal.
+N: Próximo: achar uma padaria.
+
+T: Is there a bakery nearby? | Perguntar se há algo por perto | street | Portland | Sue,f,👩🏼,moradora
+K: Is there a bakery nearby? | Tem uma padaria por perto?
+M: Hoje você pergunta o que há por perto e a que distância.
+D: You|Excuse me. Is there a bakery nearby?|Com licença. Tem uma padaria por perto?
+D: Sue|Yes, there is one on Oak Street.|Sim, tem uma na Rua Oak.
+D: You|Is it far from here?|Fica longe daqui?
+D: Sue|No, it is five minutes on foot.|Não, são cinco minutos a pé.
+D: You|Is it open now?|Está aberta agora?
+D: Sue|Yes, until six o'clock.|Sim, até as seis horas.
+D: You|Thank you so much!|Muito obrigado!
+D: Sue|Enjoy your bread!|Aproveite o pão!
+V: bakery|padaria;nearby|por perto;open|aberta;closed|fechada;street|rua
+B: Is there a {0} nearby?|Tem {0} por perto?|bakery=uma padaria;bank=um banco;pharmacy=uma farmácia
+B: It is open until {0}.|Está aberta até as {0}.|six=seis;eight=oito;noon=meio-dia
+S: Sue|Can I help you?|Posso ajudar?|Is there a bakery nearby?|Tem uma padaria por perto?
+S: Sue|It is five minutes on foot.|São cinco minutos a pé.|Is it open now?|Está aberta agora?
+R: Is there a bakery nearby?|Tem uma padaria por perto?
+R: Is it far from here?|Fica longe daqui?
+R: Is it open now?|Está aberta agora?
+R: Enjoy your bread!|Aproveite o pão!
+X: Thank you so much!|Muito obrigado!
+C: Nos EUA, muitas lojas fecham cedo aos domingos, então vale perguntar o horário.
+N: Próximo: pedir a conta.
+
+T: The check, please | Pedir a conta no restaurante | cafe | San Francisco | Ana,f,👩🏼,garçonete
+K: Can we have the check, please? | Pode trazer a conta, por favor?
+M: Hoje você pede a conta e divide o valor.
+D: You|Excuse me. Can we have the check, please?|Com licença. Pode trazer a conta, por favor?
+D: Ana|Sure. Together or separate?|Claro. Junto ou separado?
+D: You|Together, please.|Junto, por favor.
+D: Ana|Here you go. It is forty-eight dollars.|Aqui está. São quarenta e oito dólares.
+D: You|Is the tip included?|A gorjeta está incluída?
+D: Ana|No, it is not.|Não, não está.
+D: You|Okay. Here is sixty dollars.|Ok. Aqui estão sessenta dólares.
+D: Ana|Thank you! Keep the change?|Obrigada! Fica com o troco?
+V: check|conta;tip|gorjeta;included|incluída;change|troco;together|junto
+B: Can we have the {0}, please?|Pode trazer {0}, por favor?|check=a conta;menu=o cardápio;water=a água
+B: It is {0} dollars.|São {0} dólares.|forty-eight=quarenta e oito;thirty=trinta;seventy=setenta
+S: Ana|Together or separate?|Junto ou separado?|Together, please.|Junto, por favor.
+S: Ana|It is forty-eight dollars.|São quarenta e oito dólares.|Is the tip included?|A gorjeta está incluída?
+R: Can we have the check, please?|Pode trazer a conta, por favor?
+R: Together, please.|Junto, por favor.
+R: Is the tip included?|A gorjeta está incluída?
+R: Keep the change.|Fique com o troco.
+X: Keep the change.|Fique com o troco.
+C: Nos EUA, a gorjeta costuma ser de 15% a 20% e quase nunca vem incluída na conta.
+N: Próximo: pedir comida para viagem.
+
+T: A takeout order | Fazer um pedido para viagem por telefone | kitchen | New York | Tony,m,🧑🏽,cozinheiro
+K: I would like to order takeout. | Eu gostaria de pedir comida para viagem.
+M: Hoje você faz um pedido por telefone e diz o endereço.
+D: Tony|Tony's Pizza. How can I help you?|Pizzaria do Tony. Como posso ajudar?
+D: You|Hi. I would like to order takeout.|Oi. Eu gostaria de pedir comida para viagem.
+D: Tony|Sure. What would you like?|Claro. O que você gostaria?
+D: You|One large pizza with cheese, please.|Uma pizza grande de queijo, por favor.
+D: Tony|Anything to drink?|Algo para beber?
+D: You|Two sodas.|Dois refrigerantes.
+D: Tony|It will be ready in twenty minutes.|Ficará pronto em vinte minutos.
+D: You|Great. I will pick it up. Thanks!|Ótimo. Eu busco. Obrigado!
+V: order|pedir / pedido;takeout|comida para viagem;ready|pronto;pick up|buscar;soda|refrigerante
+B: I would like {0}.|Eu gostaria de {0}.|one large pizza=uma pizza grande;two sodas=dois refrigerantes;a salad=uma salada
+B: It will be ready in {0}.|Ficará pronto em {0}.|twenty minutes=vinte minutos;ten minutes=dez minutos;an hour=uma hora
+S: Tony|How can I help you?|Como posso ajudar?|I would like to order takeout.|Eu gostaria de pedir comida para viagem.
+S: Tony|Anything to drink?|Algo para beber?|Two sodas, please.|Dois refrigerantes, por favor.
+R: I would like to order takeout.|Eu gostaria de pedir comida para viagem.
+R: One large pizza, please.|Uma pizza grande, por favor.
+R: It will be ready in twenty minutes.|Ficará pronto em vinte minutos.
+R: I will pick it up.|Eu busco.
+X: How can I help you?|Como posso ajudar?
+C: Nos EUA, "takeout" (ou "to go") é muito comum, e muitos lugares aceitam pedidos por aplicativo.
+N: Próximo: o desafio do arco.
+
+T: Dinner shopping | Desafio do arco: compras para um jantar | market | Chicago | Gus,m,🧑🏼,atendente
+K: I need everything for dinner. | Eu preciso de tudo para o jantar.
+M: Mini-chefe: ache produtos, peça quantidades e pague.
+D: Gus|Welcome back! What do you need today?|Bem-vindo de volta! Do que você precisa hoje?
+D: You|I need everything for dinner. Where is the rice?|Preciso de tudo para o jantar. Onde fica o arroz?
+D: Gus|Aisle three. How much do you want?|Corredor três. Quanto você quer?
+D: You|One bag, and a dozen eggs, please.|Um pacote, e uma dúzia de ovos, por favor.
+D: Gus|Anything else?|Mais alguma coisa?
+D: You|No, that is all. How much is it?|Não, só isso. Quanto fica?
+D: Gus|Twenty-two dollars.|Vinte e dois dólares.
+D: You|Can I pay by card? Thank you!|Posso pagar com cartão? Obrigado!
+V: need|precisar;everything|tudo;that is all|é só isso;bag|pacote;dozen|dúzia
+B: Where is the {0}?|Onde fica {0}?|rice=o arroz;milk=o leite;bread=o pão
+B: I need {0}.|Eu preciso de {0}.|eggs=ovos;a bag of rice=um pacote de arroz;milk=leite
+S: Gus|What do you need today?|Do que você precisa hoje?|Where is the rice?|Onde fica o arroz?
+S: Gus|Anything else?|Mais alguma coisa?|No, that is all. How much is it?|Não, só isso. Quanto fica?
+R: I need everything for dinner.|Preciso de tudo para o jantar.
+R: A dozen eggs, please.|Uma dúzia de ovos, por favor.
+R: That is all.|É só isso.
+R: Can I pay by card?|Posso pagar com cartão?
+X: That is all.|É só isso.
+C: Parabéns! Você terminou o arco 3 e ganhou a figurinha rara do Gus.
+N: Próximo arco: cidade e transporte.
+BOSS: 1

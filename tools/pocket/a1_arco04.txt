@@ -1,0 +1,241 @@
+# Arco 4 · Cidade e transporte
+T: Does this bus go downtown? | Perguntar sobre o ônibus | station | Boston | Walt,m,🧑🏿,motorista
+K: Does this bus go downtown? | Este ônibus vai para o centro?
+M: Hoje você pergunta se o ônibus serve e quanto custa.
+D: You|Excuse me. Does this bus go downtown?|Com licença. Este ônibus vai para o centro?
+D: Walt|Yes, it does. Hop on.|Vai sim. Pode subir.
+D: You|How much is the ticket?|Quanto custa a passagem?
+D: Walt|Two dollars and fifty cents.|Dois dólares e cinquenta centavos.
+D: You|Do you take cards?|Vocês aceitam cartão?
+D: Walt|Only exact change or a transit card.|Só dinheiro trocado ou cartão de transporte.
+D: You|Okay. Here you go.|Ok. Aqui está.
+D: Walt|Thanks. Take a seat!|Obrigado. Pode sentar!
+V: bus|ônibus;ticket|passagem;exact change|dinheiro trocado;seat|assento;hop on|subir
+B: Does this bus go to {0}?|Este ônibus vai para {0}?|downtown=o centro;the airport=o aeroporto;the beach=a praia
+B: The ticket is {0}.|A passagem custa {0}.|two fifty=dois e cinquenta;three dollars=três dólares;one dollar=um dólar
+S: Walt|Where to?|Para onde?|Does this bus go downtown?|Este ônibus vai para o centro?
+S: Walt|Two fifty.|Dois e cinquenta.|Here you go.|Aqui está.
+R: Does this bus go downtown?|Este ônibus vai para o centro?
+R: How much is the ticket?|Quanto custa a passagem?
+R: Do you take cards?|Vocês aceitam cartão?
+R: Take a seat!|Pode sentar!
+X: Hop on.|Pode subir.
+C: Em muitos ônibus americanos você precisa ter dinheiro trocado: o motorista não dá troco.
+N: Próximo: comprar passagem de metrô.
+
+T: One ticket, please | Comprar passagem de metrô | subwaycar | New York | Mia,f,👩🏻,atendente
+K: One ticket, please. | Uma passagem, por favor.
+M: Hoje você compra a passagem e acha a plataforma.
+D: You|One ticket to Times Square, please.|Uma passagem para a Times Square, por favor.
+D: Mia|One way or round trip?|Só ida ou ida e volta?
+D: You|Round trip, please.|Ida e volta, por favor.
+D: Mia|That is six dollars.|São seis dólares.
+D: You|Which platform is it?|Qual é a plataforma?
+D: Mia|Platform two, on your left.|Plataforma dois, à sua esquerda.
+D: You|Thank you!|Obrigado!
+D: Mia|Have a safe trip!|Boa viagem!
+V: ticket|passagem;one way|só ida;round trip|ida e volta;platform|plataforma;left|esquerda
+B: One ticket to {0}, please.|Uma passagem para {0}, por favor.|Times Square=Times Square;Brooklyn=Brooklyn;the airport=o aeroporto
+B: Platform {0}.|Plataforma {0}.|two=dois;five=cinco;nine=nove
+S: Mia|One way or round trip?|Só ida ou ida e volta?|Round trip, please.|Ida e volta, por favor.
+S: Mia|That is six dollars.|São seis dólares.|Which platform is it?|Qual é a plataforma?
+R: One ticket, please.|Uma passagem, por favor.
+R: Round trip, please.|Ida e volta, por favor.
+R: Which platform is it?|Qual é a plataforma?
+R: Have a safe trip!|Boa viagem!
+X: Have a safe trip!|Boa viagem!
+C: O metrô de Nova York funciona 24 horas por dia, e a passagem é passada num leitor na catraca.
+N: Próximo: descer na parada certa.
+
+T: What is the next stop? | Perguntar sobre as paradas | subwaycar | Chicago | Omar,m,🧑🏽,passageiro
+K: What is the next stop? | Qual é a próxima parada?
+M: Hoje você pergunta a parada e avisa que vai descer.
+D: You|Excuse me. What is the next stop?|Com licença. Qual é a próxima parada?
+D: Omar|The next stop is Union Station.|A próxima parada é a Union Station.
+D: You|How many stops to the museum?|Quantas paradas até o museu?
+D: Omar|Three stops. About ten minutes.|Três paradas. Uns dez minutos.
+D: You|Thank you. I will get off there.|Obrigado. Vou descer lá.
+D: Omar|Press the button to stop.|Aperte o botão para parar.
+D: You|Got it. Thanks again!|Entendi. Obrigado de novo!
+D: Omar|No problem.|Sem problema.
+V: stop|parada;next|próxima;get off|descer;press|apertar;button|botão
+B: What is the next {0}?|Qual é a próxima {0}?|stop=parada;station=estação;street=rua
+B: How many stops to the {0}?|Quantas paradas até {0}?|museum=o museu;park=o parque;airport=o aeroporto
+S: Omar|Where are you going?|Para onde você vai?|What is the next stop?|Qual é a próxima parada?
+S: Omar|Three stops.|Três paradas.|I will get off there.|Eu vou descer lá.
+R: What is the next stop?|Qual é a próxima parada?
+R: How many stops to the museum?|Quantas paradas até o museu?
+R: I will get off there.|Eu vou descer lá.
+R: Got it. Thanks again!|Entendi. Obrigado de novo!
+X: Got it.|Entendi.
+C: Nos ônibus americanos você aperta um botão ou puxa um cordão para avisar que vai descer.
+N: Próximo: pegar um táxi.
+
+T: To the airport, please | Pedir um táxi | street | Atlanta | Lou,m,🧑🏾,taxista
+K: To the airport, please. | Para o aeroporto, por favor.
+M: Hoje você pega um táxi e pergunta o preço e o tempo.
+D: Lou|Where to?|Para onde?
+D: You|To the airport, please.|Para o aeroporto, por favor.
+D: Lou|Which terminal?|Qual terminal?
+D: You|Terminal B. How long does it take?|Terminal B. Quanto tempo leva?
+D: Lou|About twenty-five minutes.|Cerca de vinte e cinco minutos.
+D: You|How much will it cost?|Quanto vai custar?
+D: Lou|Around forty dollars.|Uns quarenta dólares.
+D: You|That is fine. Thank you!|Está bom. Obrigado!
+V: terminal|terminal;take|levar (tempo);cost|custar;around|cerca de;fine|bom / tudo bem
+B: To {0}, please.|Para {0}, por favor.|the airport=o aeroporto;the hotel=o hotel;Main Street=a Main Street
+B: It takes {0}.|Leva {0}.|about ten minutes=uns dez minutos;half an hour=meia hora;an hour=uma hora
+S: Lou|Where to?|Para onde?|To the airport, please.|Para o aeroporto, por favor.
+S: Lou|Which terminal?|Qual terminal?|Terminal B. How long does it take?|Terminal B. Quanto tempo leva?
+R: To the airport, please.|Para o aeroporto, por favor.
+R: How long does it take?|Quanto tempo leva?
+R: How much will it cost?|Quanto vai custar?
+R: That is fine.|Está bom.
+X: Where to?|Para onde?
+C: Nos EUA, também é comum pedir o carro por aplicativo, e o preço aparece antes da corrida.
+N: Próximo: alugar uma bicicleta.
+
+T: Can I rent a bike? | Alugar uma bicicleta | park | Portland | Pete,m,🧑🏼,atendente
+K: Can I rent a bike? | Posso alugar uma bicicleta?
+M: Hoje você aluga uma bicicleta e combina o preço por hora.
+D: You|Hi. Can I rent a bike?|Oi. Posso alugar uma bicicleta?
+D: Pete|Sure. For how long?|Claro. Por quanto tempo?
+D: You|For two hours.|Por duas horas.
+D: Pete|It is ten dollars an hour.|São dez dólares por hora.
+D: You|Do you have helmets?|Vocês têm capacete?
+D: Pete|Yes, it is free with the bike.|Sim, é grátis com a bicicleta.
+D: You|Great. Here is my ID.|Ótimo. Aqui está o meu documento.
+D: Pete|Thanks. Enjoy the ride!|Obrigado. Aproveite o passeio!
+V: rent|alugar;bike|bicicleta;helmet|capacete;hour|hora;ride|passeio
+B: Can I rent a {0}?|Posso alugar {0}?|bike=uma bicicleta;car=um carro;boat=um barco
+B: It is {0} dollars an hour.|São {0} dólares por hora.|ten=dez;fifteen=quinze;five=cinco
+S: Pete|How can I help you?|Como posso ajudar?|Can I rent a bike?|Posso alugar uma bicicleta?
+S: Pete|For how long?|Por quanto tempo?|For two hours.|Por duas horas.
+R: Can I rent a bike?|Posso alugar uma bicicleta?
+R: For two hours.|Por duas horas.
+R: Do you have helmets?|Vocês têm capacete?
+R: Enjoy the ride!|Aproveite o passeio!
+X: Enjoy the ride!|Aproveite o passeio!
+C: Muitas cidades americanas têm bicicletas de aluguel pelo aplicativo, e o capacete costuma ser recomendado.
+N: Próximo: trocar dinheiro.
+
+T: I need to change money | Trocar dinheiro | hall | Miami | Sofia,f,👩🏽,caixa
+K: I need to change money. | Preciso trocar dinheiro.
+M: Hoje você troca reais por dólares e pergunta a taxa.
+D: You|Hello. I need to change money.|Olá. Preciso trocar dinheiro.
+D: Sofia|Sure. What currency?|Claro. Qual moeda?
+D: You|Brazilian reais. How much for one hundred?|Reais. Quanto fica por cem?
+D: Sofia|The rate is five to one.|A taxa é cinco para um.
+D: You|So that is twenty dollars?|Então são vinte dólares?
+D: Sofia|Minus a small fee.|Menos uma pequena taxa.
+D: You|Okay. Please change one hundred.|Ok. Pode trocar cem.
+D: Sofia|Here you go. Have a nice day!|Aqui está. Tenha um bom dia!
+V: change money|trocar dinheiro;rate|taxa de câmbio;fee|taxa;currency|moeda;minus|menos
+B: I need to {0}.|Eu preciso {0}.|change money=trocar dinheiro;withdraw cash=sacar dinheiro;open an account=abrir uma conta
+B: How much for {0}?|Quanto fica por {0}?|one hundred=cem;fifty=cinquenta;two hundred=duzentos
+S: Sofia|How can I help you?|Como posso ajudar?|I need to change money.|Preciso trocar dinheiro.
+S: Sofia|The rate is five to one.|A taxa é cinco para um.|So that is twenty dollars?|Então são vinte dólares?
+R: I need to change money.|Preciso trocar dinheiro.
+R: How much for one hundred?|Quanto fica por cem?
+R: Is there a fee?|Tem taxa?
+R: Please change one hundred.|Pode trocar cem.
+X: Minus a small fee.|Menos uma pequena taxa.
+C: Nos EUA, casas de câmbio em aeroportos costumam cobrar mais caro. Sacar no caixa eletrônico pode ser mais barato.
+N: Próximo: enviar uma carta.
+
+T: I want to send this | Enviar uma carta no correio | shop | Chicago | Ben,m,🧑🏼,atendente
+K: I want to send this letter. | Quero enviar esta carta.
+M: Hoje você envia uma carta e pergunta quanto demora.
+D: You|Hi. I want to send this letter to Brazil.|Oi. Quero enviar esta carta para o Brasil.
+D: Ben|Sure. Let me weigh it.|Claro. Vou pesar.
+D: You|How much is it?|Quanto custa?
+D: Ben|It is four dollars.|São quatro dólares.
+D: You|How long will it take?|Quanto tempo vai demorar?
+D: Ben|About one week.|Cerca de uma semana.
+D: You|That is fine. Here you go.|Está bom. Aqui está.
+D: Ben|Do you need a stamp too?|Você precisa de selo também?
+V: letter|carta;weigh|pesar;stamp|selo;week|semana;send|enviar
+B: I want to send this {0}.|Quero enviar {0}.|letter=esta carta;package=este pacote;postcard=este cartão-postal
+B: It will take about {0}.|Vai levar cerca de {0}.|one week=uma semana;three days=três dias;two weeks=duas semanas
+S: Ben|How can I help you?|Como posso ajudar?|I want to send this letter.|Quero enviar esta carta.
+S: Ben|It is four dollars.|São quatro dólares.|How long will it take?|Quanto tempo vai demorar?
+R: I want to send this letter.|Quero enviar esta carta.
+R: How much is it?|Quanto custa?
+R: How long will it take?|Quanto tempo vai demorar?
+R: Do you need a stamp?|Você precisa de selo?
+X: Let me weigh it.|Vou pesar.
+C: Nos EUA, os correios se chamam "Post Office" e as caixas azuis de rua são para postar cartas.
+N: Próximo: comprar remédio na farmácia.
+
+T: Do you have aspirin? | Pedir um remédio simples | shop | Denver | Carl,m,🧑🏻,farmacêutico
+K: Do you have aspirin? | Vocês têm aspirina?
+M: Hoje você pede um remédio simples e entende a dose.
+D: You|Excuse me. Do you have aspirin?|Com licença. Vocês têm aspirina?
+D: Carl|Yes, it is in aisle two.|Temos, fica no corredor dois.
+D: You|What is the dose?|Qual é a dose?
+D: Carl|One pill every six hours.|Um comprimido a cada seis horas.
+D: You|Is it okay on an empty stomach?|Pode tomar de barriga vazia?
+D: Carl|No, take it with food.|Não, tome com comida.
+D: You|Good to know. Thanks!|Bom saber. Obrigado!
+D: Carl|Feel better soon!|Melhoras!
+V: aspirin|aspirina;pill|comprimido;dose|dose;food|comida;stomach|estômago
+B: Do you have {0}?|Vocês têm {0}?|aspirin=aspirina;band-aids=curativos;cough syrup=xarope
+B: One pill every {0} hours.|Um comprimido a cada {0} horas.|six=seis;eight=oito;four=quatro
+S: Carl|Can I help you?|Posso ajudar?|Do you have aspirin?|Vocês têm aspirina?
+S: Carl|One pill every six hours.|Um comprimido a cada seis horas.|Can I take it with food?|Posso tomar com comida?
+R: Do you have aspirin?|Vocês têm aspirina?
+R: What is the dose?|Qual é a dose?
+R: Take it with food.|Tome com comida.
+R: Feel better soon!|Melhoras!
+X: Feel better soon!|Melhoras!
+C: Nas farmácias americanas você acha muita coisa sem receita, mas lê a bula (label) com atenção.
+N: Próximo: falar do tempo.
+
+T: It is sunny today | Falar do tempo | park | San Diego | Ivy,f,🧑🏼,passeadora
+K: It is sunny today. | Hoje está ensolarado.
+M: Hoje você comenta o tempo e dá a temperatura.
+D: Ivy|Beautiful day, right?|Dia lindo, né?
+D: You|Yes, it is sunny today.|Sim, hoje está ensolarado.
+D: Ivy|It is seventy-five degrees.|Estão vinte e quatro graus.
+D: You|That is perfect. Is it always like this?|Isso é perfeito. É sempre assim?
+D: Ivy|Mostly. But it rains in winter.|Quase sempre. Mas chove no inverno.
+D: You|Is it cold in winter?|Faz frio no inverno?
+D: Ivy|Not really. It is cool, not cold.|Nem tanto. É fresco, não frio.
+D: You|I love it here!|Eu amo aqui!
+V: sunny|ensolarado;rain|chover;cold|frio;hot|quente;degrees|graus
+B: It is {0} today.|Hoje está {0}.|sunny=ensolarado;rainy=chuvoso;windy=ventoso
+B: It is {0} degrees.|Estão {0} graus.|seventy-five=setenta e cinco;sixty=sessenta;ninety=noventa
+S: Ivy|Beautiful day, right?|Dia lindo, né?|Yes, it is sunny today.|Sim, hoje está ensolarado.
+S: Ivy|Not really cold in winter.|Nem tanto frio no inverno.|I love it here!|Eu amo aqui!
+R: It is sunny today.|Hoje está ensolarado.
+R: Is it always like this?|É sempre assim?
+R: It rains in winter.|Chove no inverno.
+R: I love it here!|Eu amo aqui!
+X: Beautiful day, right?|Dia lindo, né?
+C: Nos EUA, a temperatura é em Fahrenheit: 75 graus Fahrenheit são cerca de 24 graus Celsius.
+N: Próximo: o desafio do arco.
+
+T: Getting around town | Desafio do arco: um dia de deslocamentos | street | Boston | Walt,m,🧑🏿,guia
+K: How do I get to the museum? | Como eu chego ao museu?
+M: Mini-chefe: pegue ônibus, metrô e pergunte o caminho.
+D: Walt|Good morning! Where are you going today?|Bom dia! Para onde você vai hoje?
+D: You|To the museum. How do I get there?|Ao museu. Como eu chego lá?
+D: Walt|Take the bus to Union Station.|Pegue o ônibus até a Union Station.
+D: You|And then?|E depois?
+D: Walt|Take the subway. Three stops.|Pegue o metrô. Três paradas.
+D: You|Is it far from the station?|Fica longe da estação?
+D: Walt|No, five minutes on foot.|Não, cinco minutos a pé.
+D: You|Perfect. Thank you for everything!|Perfeito. Obrigado por tudo!
+V: museum|museu;take|pegar;subway|metrô;stops|paradas;on foot|a pé
+B: How do I get to the {0}?|Como eu chego {0}?|museum=ao museu;airport=ao aeroporto;hotel=ao hotel
+B: Take the {0}.|Pegue o {0}.|bus=ônibus;subway=metrô;train=trem
+S: Walt|Where are you going?|Para onde você vai?|How do I get to the museum?|Como eu chego ao museu?
+S: Walt|Take the bus, then the subway.|Pegue o ônibus, depois o metrô.|Is it far from the station?|Fica longe da estação?
+R: How do I get to the museum?|Como eu chego ao museu?
+R: Take the bus.|Pegue o ônibus.
+R: Three stops.|Três paradas.
+R: Thank you for everything!|Obrigado por tudo!
+X: Thank you for everything!|Obrigado por tudo!
+C: Parabéns! Você terminou o arco 4 e ganhou a figurinha rara do Walt.
+N: Próximo arco: hotel e viagem.
+BOSS: 1

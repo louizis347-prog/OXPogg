@@ -1,0 +1,241 @@
+# Arco 6 · Amigos, saúde e planos
+T: I have a headache | Dizer que está doente | clinic | Chicago | Dr. Lee,f,👩🏻,médica
+K: I have a headache. | Estou com dor de cabeça.
+M: Hoje você explica o que sente à médica.
+D: Dr. Lee|Hello. What is the matter?|Olá. Qual é o problema?
+D: You|I have a headache.|Estou com dor de cabeça.
+D: Dr. Lee|How long have you had it?|Há quanto tempo?
+D: You|Since yesterday.|Desde ontem.
+D: Dr. Lee|Do you have a fever?|Você tem febre?
+D: You|No, but I feel tired.|Não, mas me sinto cansado.
+D: Dr. Lee|Drink water and rest. Take this.|Beba água e descanse. Tome isto.
+D: You|Thank you, doctor.|Obrigado, doutora.
+V: headache|dor de cabeça;fever|febre;tired|cansado;rest|descansar;yesterday|ontem
+B: I have a {0}.|Estou com {0}.|headache=dor de cabeça;fever=febre;cold=resfriado
+B: I feel {0}.|Eu me sinto {0}.|tired=cansado;dizzy=tonto;sick=doente
+S: Dr. Lee|What is the matter?|Qual é o problema?|I have a headache.|Estou com dor de cabeça.
+S: Dr. Lee|Do you have a fever?|Você tem febre?|No, but I feel tired.|Não, mas me sinto cansado.
+R: I have a headache.|Estou com dor de cabeça.
+R: Since yesterday.|Desde ontem.
+R: I feel tired.|Eu me sinto cansado.
+R: Thank you, doctor.|Obrigado, doutora.
+X: What is the matter?|Qual é o problema?
+C: Nos EUA, médicos costumam ser chamados de "Doctor" mais o sobrenome, como "Dr. Lee".
+N: Próximo: marcar uma consulta.
+
+T: I need an appointment | Marcar uma consulta | clinic | Boston | Dr. Lee,f,👩🏻,médica
+K: I need an appointment. | Preciso marcar uma consulta.
+M: Hoje você marca um horário e confirma o dia.
+D: You|Hello. I need an appointment.|Olá. Preciso marcar uma consulta.
+D: Dr. Lee|Sure. What day works for you?|Claro. Que dia é bom para você?
+D: You|Tuesday morning, if possible.|Terça de manhã, se possível.
+D: Dr. Lee|We have ten thirty.|Temos às dez e meia.
+D: You|Ten thirty is perfect.|Dez e meia está perfeito.
+D: Dr. Lee|Please arrive ten minutes early.|Por favor, chegue dez minutos antes.
+D: You|Will do. Thank you!|Pode deixar. Obrigado!
+D: Dr. Lee|See you Tuesday!|Até terça!
+V: appointment|consulta;Tuesday|terça-feira;morning|manhã;possible|possível;arrive|chegar
+B: I need an {0}.|Preciso de {0}.|appointment=uma consulta;ambulance=uma ambulância;doctor=um médico
+B: What day works for {0}?|Que dia é bom para {0}?|you=você;us=nós;her=ela
+S: Dr. Lee|What day works for you?|Que dia é bom para você?|Tuesday morning, if possible.|Terça de manhã, se possível.
+S: Dr. Lee|We have ten thirty.|Temos às dez e meia.|Ten thirty is perfect.|Dez e meia está perfeito.
+R: I need an appointment.|Preciso marcar uma consulta.
+R: Tuesday morning, please.|Terça de manhã, por favor.
+R: Ten thirty is perfect.|Dez e meia está perfeito.
+R: See you Tuesday!|Até terça!
+X: Will do.|Pode deixar.
+C: Nos EUA, consultas costumam ser marcadas com antecedência e é comum chegar 10 minutos antes.
+N: Próximo: convidar um amigo.
+
+T: Do you want to hang out? | Convidar um amigo | cafe | Austin | Kai,m,🧑🏻,amigo
+K: Do you want to hang out? | Quer sair comigo?
+M: Hoje você convida um amigo e combina o horário.
+D: You|Hey, Kai! Do you want to hang out this weekend?|Oi, Kai! Quer sair neste fim de semana?
+D: Kai|Sure! What do you want to do?|Claro! O que você quer fazer?
+D: You|Let us see a movie on Saturday.|Vamos ver um filme no sábado.
+D: Kai|Sounds fun. What time?|Parece divertido. Que horas?
+D: You|At seven in the evening.|Às sete da noite.
+D: Kai|Perfect. Where do we meet?|Perfeito. Onde nos encontramos?
+D: You|In front of the cinema.|Na frente do cinema.
+D: Kai|See you there!|Te vejo lá!
+V: weekend|fim de semana;movie|filme;Saturday|sábado;evening|noite;meet|encontrar
+B: Do you want to {0}?|Quer {0}?|hang out=sair;see a movie=ver um filme;have lunch=almoçar
+B: Let us meet at {0}.|Vamos nos encontrar às {0}.|seven=sete;eight=oito;noon=meio-dia
+S: Kai|What do you want to do?|O que você quer fazer?|Let us see a movie on Saturday.|Vamos ver um filme no sábado.
+S: Kai|What time?|Que horas?|At seven in the evening.|Às sete da noite.
+R: Do you want to hang out?|Quer sair comigo?
+R: Let us see a movie.|Vamos ver um filme.
+R: Where do we meet?|Onde nos encontramos?
+R: See you there!|Te vejo lá!
+X: Sounds fun.|Parece divertido.
+C: "Hang out" é o jeito informal de dizer passar um tempo juntos, sem um programa fixo.
+N: Próximo: aceitar ou recusar um convite.
+
+T: I cannot make it | Recusar um convite com educação | living | Denver | Jess,f,🧑🏼,amiga
+K: I am sorry, I cannot make it. | Sinto muito, não posso ir.
+M: Hoje você recusa um convite com educação e propõe outro dia.
+D: Jess|Are you coming to my party on Friday?|Você vem à minha festa na sexta?
+D: You|I am sorry, I cannot make it.|Sinto muito, não posso ir.
+D: Jess|Oh no. Why not?|Ah, que pena. Por quê?
+D: You|I have to work late.|Tenho que trabalhar até tarde.
+D: Jess|That is okay. Maybe next time.|Tudo bem. Talvez na próxima.
+D: You|How about lunch on Sunday?|Que tal um almoço no domingo?
+D: Jess|Great idea! Let us do it.|Ótima ideia! Vamos fazer isso.
+D: You|Thanks for understanding!|Obrigado por entender!
+V: party|festa;work late|trabalhar até tarde;maybe|talvez;next time|próxima vez;idea|ideia
+B: I am sorry, I cannot {0}.|Sinto muito, não posso {0}.|make it=ir;come=vir;stay=ficar
+B: How about {0}?|Que tal {0}?|lunch on Sunday=um almoço no domingo;dinner tomorrow=jantar amanhã;a coffee=um café
+S: Jess|Are you coming to my party?|Você vem à minha festa?|I am sorry, I cannot make it.|Sinto muito, não posso ir.
+S: Jess|Maybe next time.|Talvez na próxima.|How about lunch on Sunday?|Que tal um almoço no domingo?
+R: I cannot make it.|Não posso ir.
+R: I have to work late.|Tenho que trabalhar até tarde.
+R: How about lunch on Sunday?|Que tal um almoço no domingo?
+R: Thanks for understanding!|Obrigado por entender!
+X: Maybe next time.|Talvez na próxima.
+C: Nos EUA, dizer "I cannot make it" com um motivo curto e sugerir outro dia é considerado educado.
+N: Próximo: ligar para um amigo.
+
+T: Can I call you later? | Atender e ligar por telefone | living | Seattle | Kai,m,🧑🏻,amigo
+K: Can I call you later? | Posso te ligar mais tarde?
+M: Hoje você atende o telefone e combina de ligar depois.
+D: Kai|Hello?|Alô?
+D: You|Hi, Kai. It is me. Is this a good time?|Oi, Kai. Sou eu. É um bom momento?
+D: Kai|Not really. I am in a meeting.|Na verdade não. Estou numa reunião.
+D: You|No problem. Can I call you later?|Sem problema. Posso te ligar mais tarde?
+D: Kai|Yes, after five o'clock.|Sim, depois das cinco.
+D: You|Great. Talk to you then.|Ótimo. Falamos depois.
+D: Kai|Sorry about that. Bye!|Desculpe por isso. Tchau!
+D: You|Bye!|Tchau!
+V: meeting|reunião;later|mais tarde;call|ligar;time|momento / hora;after|depois de
+B: Can I call you {0}?|Posso te ligar {0}?|later=mais tarde;tomorrow=amanhã;tonight=hoje à noite
+B: I am in a {0}.|Eu estou {0}.|meeting=numa reunião;class=numa aula;hurry=com pressa
+S: Kai|Hello?|Alô?|Hi, Kai. Is this a good time?|Oi, Kai. É um bom momento?
+S: Kai|Not really.|Na verdade não.|Can I call you later?|Posso te ligar mais tarde?
+R: Is this a good time?|É um bom momento?
+R: Can I call you later?|Posso te ligar mais tarde?
+R: Talk to you then.|Falamos depois.
+R: Sorry about that.|Desculpe por isso.
+X: Is this a good time?|É um bom momento?
+C: Nos EUA, antes de uma ligação longa é educado perguntar "Is this a good time?".
+N: Próximo: fazer planos para o fim de semana.
+
+T: What are you doing this weekend? | Falar de planos | park | San Diego | Tom,m,🧑🏽,amigo
+K: What are you doing this weekend? | O que você vai fazer neste fim de semana?
+M: Hoje você fala dos seus planos para sábado e domingo.
+D: Tom|What are you doing this weekend?|O que você vai fazer neste fim de semana?
+D: You|I am going to the beach on Saturday.|Vou à praia no sábado.
+D: Tom|Nice! And on Sunday?|Legal! E no domingo?
+D: You|I am going to rest at home.|Vou descansar em casa.
+D: Tom|Do you want to join us on Saturday?|Quer vir com a gente no sábado?
+D: You|I would love to! What time?|Eu adoraria! Que horas?
+D: Tom|We leave at nine.|Saímos às nove.
+D: You|See you at nine!|Te vejo às nove!
+V: beach|praia;join|juntar-se;rest|descansar;plans|planos;weekend|fim de semana
+B: I am going to the {0}.|Eu vou à {0}.|beach=praia;park=parque;movies=cinema
+B: We leave at {0}.|Saímos às {0}.|nine=nove;eight=oito;ten=dez
+S: Tom|What are you doing this weekend?|O que você vai fazer neste fim de semana?|I am going to the beach on Saturday.|Vou à praia no sábado.
+S: Tom|Do you want to join us?|Quer vir com a gente?|I would love to! What time?|Eu adoraria! Que horas?
+R: What are you doing this weekend?|O que você vai fazer neste fim de semana?
+R: I am going to the beach.|Vou à praia.
+R: I would love to!|Eu adoraria!
+R: See you at nine!|Te vejo às nove!
+X: I would love to!|Eu adoraria!
+C: Em cidades de clima ameno, como San Diego, o fim de semana costuma ser na praia ou ao ar livre.
+N: Próximo: um aniversário.
+
+T: Happy birthday! | Parabenizar e dar um presente | party | Austin | Mia,f,👩🏻,amiga
+K: Happy birthday! This is for you. | Feliz aniversário! Isto é para você.
+M: Hoje você dá os parabéns, entrega um presente e agradece.
+D: You|Happy birthday, Mia! This is for you.|Feliz aniversário, Mia! Isto é para você.
+D: Mia|Oh, thank you! You did not have to!|Ah, obrigada! Você não precisava!
+D: You|I hope you like it.|Espero que você goste.
+D: Mia|I love it! It is so pretty.|Eu amei! É tão bonito.
+D: You|How old are you now?|Quantos anos você tem agora?
+D: Mia|I am thirty. Time flies!|Tenho trinta. O tempo voa!
+D: You|You look great!|Você está ótima!
+D: Mia|Thank you. Let us have some cake!|Obrigada. Vamos comer bolo!
+V: birthday|aniversário;gift|presente;pretty|bonito;cake|bolo;hope|esperar / torcer
+B: Happy {0}!|Feliz {0}!|birthday=aniversário;New Year=Ano Novo;holidays=festas
+B: I hope you {0}.|Espero que você {0}.|like it=goste;feel better=melhore;have fun=se divirta
+S: Mia|Is this for me?|Isto é para mim?|Yes, happy birthday!|Sim, feliz aniversário!
+S: Mia|I love it!|Eu amei!|I hope you like it.|Espero que você goste.
+R: Happy birthday!|Feliz aniversário!
+R: This is for you.|Isto é para você.
+R: I hope you like it.|Espero que você goste.
+R: Time flies!|O tempo voa!
+X: You did not have to!|Você não precisava!
+C: Nos EUA, no aniversário é tradição cantar "Happy Birthday to You" antes de cortar o bolo.
+N: Próximo: agradecer e se despedir.
+
+T: Thank you for everything | Agradecer e se despedir | airport | Atlanta | Dan,m,🧑🏽,amigo
+K: Thank you for everything. | Obrigado por tudo.
+M: Hoje você agradece a quem te ajudou e se despede.
+D: Dan|Your flight is soon. Do you have everything?|Seu voo é daqui a pouco. Você tem tudo?
+D: You|Yes, I have my passport and my ticket.|Sim, tenho o passaporte e a passagem.
+D: Dan|Great. It was nice to meet you.|Ótimo. Foi bom conhecer você.
+D: You|It was nice to meet you too. Thank you for everything.|Foi bom conhecer você também. Obrigado por tudo.
+D: Dan|Come back soon!|Volte logo!
+D: You|I will. Let us keep in touch.|Eu volto. Vamos manter contato.
+D: Dan|Send me a message when you land.|Mande uma mensagem quando pousar.
+D: You|I will. Goodbye!|Mando. Adeus!
+V: passport|passaporte;soon|logo;keep in touch|manter contato;land|pousar;message|mensagem
+B: It was nice to {0} you.|Foi bom {0} você.|meet=conhecer;see=ver;talk to=falar com
+B: Send me a {0}.|Me mande {0}.|message=uma mensagem;photo=uma foto;postcard=um cartão-postal
+S: Dan|It was nice to meet you.|Foi bom conhecer você.|It was nice to meet you too.|Foi bom conhecer você também.
+S: Dan|Come back soon!|Volte logo!|Thank you for everything.|Obrigado por tudo.
+R: Thank you for everything.|Obrigado por tudo.
+R: It was nice to meet you.|Foi bom conhecer você.
+R: Let us keep in touch.|Vamos manter contato.
+R: Send me a message.|Me mande uma mensagem.
+X: Come back soon!|Volte logo!
+C: Americanos costumam se despedir com "Take care!" e "Keep in touch!".
+N: Próximo: o desafio final do A1.
+
+T: Can you pass the salt? | Pedir algo à mesa | kitchen | Denver | Jess,f,🧑🏼,amiga
+K: Can you pass the salt, please? | Você pode passar o sal, por favor?
+M: Hoje você janta na casa de uma amiga e pede as coisas com educação.
+D: Jess|Dinner is ready! Please sit down.|O jantar está pronto! Sente-se, por favor.
+D: You|It smells amazing. Can you pass the salt, please?|Está com um cheiro incrível. Você pode passar o sal, por favor?
+D: Jess|Here you go. Would you like some more rice?|Aqui está. Você quer mais arroz?
+D: You|Yes, please. Just a little.|Sim, por favor. Só um pouco.
+D: Jess|Do you like the chicken?|Você gostou do frango?
+D: You|It is delicious. Can I have the recipe?|Está delicioso. Posso ter a receita?
+D: Jess|Of course! I will send it to you.|Claro! Vou mandar para você.
+D: You|Thank you for having me!|Obrigado por me receber!
+V: salt|sal;delicious|delicioso;recipe|receita;rice|arroz;smells|cheira
+B: Can you pass the {0}, please?|Você pode passar {0}, por favor?|salt=o sal;water=a água;bread=o pão
+B: Would you like some more {0}?|Você quer mais {0}?|rice=arroz;chicken=frango;salad=salada
+S: Jess|Dinner is ready!|O jantar está pronto!|Can you pass the salt, please?|Você pode passar o sal, por favor?
+S: Jess|Would you like some more rice?|Você quer mais arroz?|Yes, please. Just a little.|Sim, por favor. Só um pouco.
+R: Can you pass the salt, please?|Você pode passar o sal, por favor?
+R: Just a little, please.|Só um pouco, por favor.
+R: It is delicious.|Está delicioso.
+R: Thank you for having me!|Obrigado por me receber!
+X: Thank you for having me!|Obrigado por me receber!
+C: Nos EUA, ao jantar na casa de alguém, é comum levar uma sobremesa ou uma garrafa de vinho.
+N: Próximo: o desafio final do A1.
+
+T: My first week in English | Desafio do A1: uma semana de conversas | cafe | Chicago | Dan,m,🧑🏽,guia
+K: I can talk about my life in English. | Eu consigo falar da minha vida em inglês.
+M: Mini-chefe: apresente-se, peça algo, pergunte o caminho e faça planos.
+D: Dan|Wow! One week in English. How is it going?|Uau! Uma semana em inglês. Como está indo?
+D: You|Great! I can order a coffee and ask for directions.|Ótimo! Eu sei pedir um café e perguntar o caminho.
+D: Dan|What do you do on weekends?|O que você faz nos fins de semana?
+D: You|I go to the park and see friends.|Eu vou ao parque e vejo amigos.
+D: Dan|Do you want to hang out on Saturday?|Quer sair no sábado?
+D: You|Yes! Let us meet at the cafe at seven.|Sim! Vamos nos encontrar no café às sete.
+D: Dan|Sounds good. I am proud of you!|Parece bom. Tenho orgulho de você!
+D: You|Thank you for everything, Dan!|Obrigado por tudo, Dan!
+V: week|semana;proud|orgulhoso;directions|direções;weekends|fins de semana;friends|amigos
+B: I can {0}.|Eu consigo {0}.|order a coffee=pedir um café;ask for directions=perguntar o caminho;talk about my life=falar da minha vida
+B: Let us meet at {0}.|Vamos nos encontrar às {0}.|seven=sete;six=seis;eight=oito
+S: Dan|How is it going?|Como está indo?|Great! I can order a coffee and ask for directions.|Ótimo! Eu sei pedir um café e perguntar o caminho.
+S: Dan|Do you want to hang out on Saturday?|Quer sair no sábado?|Yes! Let us meet at seven.|Sim! Vamos nos encontrar às sete.
+R: I can order a coffee.|Eu sei pedir um café.
+R: I can ask for directions.|Eu sei perguntar o caminho.
+R: Let us meet at seven.|Vamos nos encontrar às sete.
+R: Thank you for everything!|Obrigado por tudo!
+X: I am proud of you!|Tenho orgulho de você!
+C: Parabéns! Você terminou o A1 de arcos 1 a 6 e ganhou a figurinha rara final do Dan.
+N: Próximo: A2 · arco 1.
+BOSS: 1

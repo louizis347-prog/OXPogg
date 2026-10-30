@@ -4,7 +4,32 @@ import json,glob,importlib.util,os,sys,re
 R=os.path.dirname(os.path.abspath(__file__));D=os.path.join(R,'..','..','data')
 GR=[('#FF8A5B','#FFC857'),('#2EC4B6','#3A86FF'),('#B388FF','#FF6FB5'),('#43D17A','#2EC4B6'),('#FF7A7A','#FFB84D')]
 BASE={'a1':950000,'a2':951000,'b1':952000,'b2':953000,'c1':954000,'c2':955000}
+def parse_txt(fn):
+    eps=[];cur=None
+    def sp(x):return [t.strip() for t in x.split('|')]
+    for ln in open(fn,encoding='utf-8'):
+        ln=ln.rstrip('\n')
+        if not ln.strip() or ln.startswith('#'):continue
+        k,_,v=ln.partition(':');k=k.strip();v=v.strip()
+        if k=='T':
+            a=sp(v);w=[t.strip() for t in a[4].split(',')]
+            cur=dict(t=a[0],s=a[1],sc=a[2],city=a[3],who=(w[0],w[1],w[2],w[3]),dlg=[],vocab=[],build=[],speak=[],recap=[]);eps.append(cur)
+        elif k=='K':a=sp(v);cur['key']=(a[0],a[1])
+        elif k=='M':cur['mission']=v
+        elif k=='D':a=sp(v);cur['dlg'].append((a[0],a[1],a[2]))
+        elif k=='V':cur['vocab']+=[tuple(sp(x)) for x in v.split(';')]
+        elif k=='B':a=sp(v);cur['build'].append(dict(en=a[0],pt=a[1],opts=[tuple(o.split('=')) for o in a[2].split(';')]))
+        elif k=='S':a=sp(v);cur['speak'].append(dict(who=a[0],line=(a[1],a[2]),target=a[3],pt=a[4]))
+        elif k=='R':a=sp(v);cur['recap'].append((a[0],a[1]))
+        elif k=='X':a=sp(v);cur['expr']=(a[0],a[1])
+        elif k=='C':cur['culture']=v
+        elif k=='N':cur['teaser']=v
+        elif k=='BOSS':cur['boss']=True
+    return eps
 def load(fn):
+    if fn.endswith('.txt'):
+        class M:pass
+        m=M();m.EPS=parse_txt(fn);m.ARC=('','');return m
     sp=importlib.util.spec_from_file_location('m',fn);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
 def episode(lv,arc_i,k,x,base,order):
     n=base+order;g=GR[arc_i%len(GR)];who=x['who']
@@ -26,7 +51,7 @@ def episode(lv,arc_i,k,x,base,order):
 def main():
     out={}
     for lv in BASE:
-        files=sorted(glob.glob(os.path.join(R,lv+'_arco*.py')))
+        files=sorted(glob.glob(os.path.join(R,lv+'_arco*.py'))+glob.glob(os.path.join(R,lv+'_arco*.txt')))
         if not files:continue
         eps=[];order=0
         for ai,fn in enumerate(files):
