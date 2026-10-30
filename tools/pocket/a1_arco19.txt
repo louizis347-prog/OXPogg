@@ -1,0 +1,241 @@
+# Arco 19 · Emergências e ajuda
+T: Can you help me? | Pedir ajuda em qualquer lugar | street | Boston | Max,m,🧑🏼,pedestre
+K: Can you help me, please? | Você pode me ajudar, por favor?
+M: Hoje você pede ajuda a um desconhecido.
+D: You|Excuse me, can you help me, please?|Com licença, você pode me ajudar, por favor?
+D: Max|Of course. What is the problem?|Claro. Qual é o problema?
+D: You|I am lost. I need to find the hospital.|Estou perdido. Preciso achar o hospital.
+D: Max|It is not far. Go straight and turn left.|Não é longe. Siga em frente e vire à esquerda.
+D: You|Is it a long walk?|É uma caminhada longa?
+D: Max|Only ten minutes.|Só dez minutos.
+D: You|Thank you so much for your help.|Muito obrigado pela ajuda.
+D: Max|Anytime. Take care!|Sempre que precisar. Se cuide!
+V: lost|perdido;hospital|hospital;straight|em frente;problem|problema;far|longe
+B: Can you {0} me?|Você pode {0}?|help=me ajudar;hear=me ouvir;follow=me seguir
+B: I am {0}.|Eu estou {0}.|lost=perdido;late=atrasado;worried=preocupado
+S: Max|Of course. What is the problem?|Claro. Qual é o problema?|I am lost. I need to find the hospital.|Estou perdido. Preciso achar o hospital.
+S: Max|Only ten minutes.|Só dez minutos.|Thank you so much for your help.|Muito obrigado pela ajuda.
+R: Can you help me, please?|Você pode me ajudar, por favor?
+R: I am lost.|Estou perdido.
+R: Go straight and turn left.|Siga em frente e vire à esquerda.
+R: Thank you for your help.|Obrigado pela ajuda.
+X: Take care!|Se cuide!
+C: "Excuse me" chama a atenção de um desconhecido com educação.
+N: Próximo: ligar para a emergência.
+
+T: Call an ambulance! | Chamar a emergência | street | Chicago | Ruth,f,👩🏻,passante
+K: Call an ambulance! | Chame uma ambulância!
+M: Hoje você aprende a pedir socorro com calma.
+D: Ruth|Help! He fell down!|Socorro! Ele caiu!
+D: You|Stay calm. I will call an ambulance.|Calma. Vou chamar uma ambulância.
+D: Ruth|Please hurry!|Por favor, rápido!
+D: You|Hello? We need an ambulance on Main Street.|Alô? Precisamos de uma ambulância na Main Street.
+D: Ruth|He is breathing, but his arm hurts.|Ele está respirando, mas o braço dói.
+D: You|They said five minutes. Do not move him.|Disseram cinco minutos. Não o mova.
+D: Ruth|I am staying with him.|Vou ficar com ele.
+D: You|Good. I will wave at the ambulance.|Bom. Vou acenar para a ambulância.
+V: ambulance|ambulância;fell down|caiu;calm|calma;hurry|rápido;breathing|respirando
+B: Call an {0}!|Chame uma {0}!|ambulance=ambulância;doctor=médico;neighbor=vizinho
+B: His arm {0}.|O braço dele {0}.|hurts=dói;is broken=está quebrado;is cold=está frio
+S: Ruth|Help! He fell down!|Socorro! Ele caiu!|Stay calm. I will call an ambulance.|Calma. Vou chamar uma ambulância.
+S: Ruth|He is breathing, but his arm hurts.|Ele está respirando, mas o braço dói.|Do not move him.|Não o mova.
+R: Call an ambulance!|Chame uma ambulância!
+R: Stay calm.|Fique calmo.
+R: We need an ambulance.|Precisamos de uma ambulância.
+R: Do not move him.|Não o mova.
+X: Please hurry!|Por favor, rápido!
+C: Nos EUA, o número de emergência é 911. No Reino Unido é 999.
+N: Próximo: dizer o que perdeu.
+
+T: I lost my wallet | Relatar uma perda | station | New York | Sam,m,🧑🏻,funcionário
+K: I lost my wallet. | Eu perdi a minha carteira.
+M: Hoje você relata um objeto perdido.
+D: You|Excuse me, I lost my wallet.|Com licença, perdi a minha carteira.
+D: Sam|Where did you lose it?|Onde você a perdeu?
+D: You|I think on the train.|Acho que no trem.
+D: Sam|What does it look like?|Como ela é?
+D: You|It is small and brown, with a blue card.|É pequena e marrom, com um cartão azul.
+D: Sam|Let me check. Can you wait here?|Deixe-me ver. Pode esperar aqui?
+D: You|Of course. Thank you.|Claro. Obrigado.
+D: Sam|Good news! We found it.|Boa notícia! Nós a achamos.
+V: wallet|carteira;lose|perder;train|trem;card|cartão;found|achamos
+B: I lost my {0}.|Eu perdi {0}.|wallet=a carteira;phone=o celular;bag=a bolsa
+B: It is {0} and brown.|É {0} e marrom.|small=pequena;old=velha;new=nova
+S: Sam|Where did you lose it?|Onde você a perdeu?|I think on the train.|Acho que no trem.
+S: Sam|What does it look like?|Como ela é?|It is small and brown.|É pequena e marrom.
+R: I lost my wallet.|Perdi a minha carteira.
+R: Where did you lose it?|Onde você a perdeu?
+R: It is small and brown.|É pequena e marrom.
+R: We found it.|Nós a achamos.
+X: Good news!|Boa notícia!
+C: Estações têm um "lost and found" (achados e perdidos).
+N: Próximo: ir ao médico.
+
+T: I do not feel well | Dizer que está mal | clinic | Seattle | Dr. Lee,m,🧑🏻,médico
+K: I do not feel well. | Eu não estou me sentindo bem.
+M: Hoje você descreve sintomas simples.
+D: Dr. Lee|Good morning. What is wrong?|Bom dia. O que você tem?
+D: You|I do not feel well. I have a headache.|Não estou me sentindo bem. Estou com dor de cabeça.
+D: Dr. Lee|Do you have a fever?|Você está com febre?
+D: You|Yes, since yesterday.|Sim, desde ontem.
+D: Dr. Lee|Does your throat hurt?|Sua garganta dói?
+D: You|A little. And I am very tired.|Um pouco. E estou muito cansado.
+D: Dr. Lee|Rest, drink water, and take this medicine.|Descanse, beba água e tome este remédio.
+D: You|Thank you, doctor.|Obrigado, doutor.
+V: headache|dor de cabeça;fever|febre;throat|garganta;medicine|remédio;water|água
+B: I have a {0}.|Eu estou com {0}.|headache=dor de cabeça;fever=febre;cough=tosse
+B: My {0} hurts.|Meu {0} dói.|throat=garganta;back=costas;head=cabeça
+S: Dr. Lee|Good morning. What is wrong?|Bom dia. O que você tem?|I do not feel well. I have a headache.|Não estou me sentindo bem. Estou com dor de cabeça.
+S: Dr. Lee|Does your throat hurt?|Sua garganta dói?|A little. And I am very tired.|Um pouco. E estou muito cansado.
+R: I do not feel well.|Não estou me sentindo bem.
+R: I have a headache.|Estou com dor de cabeça.
+R: I have a fever.|Estou com febre.
+R: Rest and drink water.|Descanse e beba água.
+X: What is wrong?|O que você tem?
+C: "I have a headache" usa have, não "I am".
+N: Próximo: na farmácia.
+
+T: At the pharmacy | Comprar remédio | shop | Austin | Lia,f,👩🏽,farmacêutica
+K: Do you have something for a cold? | Você tem algo para resfriado?
+M: Hoje você pede um remédio simples.
+D: You|Hello. Do you have something for a cold?|Olá. Você tem algo para resfriado?
+D: Lia|Yes. Do you have a cough too?|Tenho. Você também tem tosse?
+D: You|A little, and my nose is stuffy.|Um pouco, e o nariz está entupido.
+D: Lia|Take this twice a day, after eating.|Tome isso duas vezes por dia, depois de comer.
+D: You|Do I need a prescription?|Preciso de receita?
+D: Lia|No, you can buy it here.|Não, pode comprar aqui.
+D: You|How much is it?|Quanto custa?
+D: Lia|Eight dollars. Get well soon!|Oito dólares. Melhoras!
+V: cold|resfriado;cough|tosse;twice|duas vezes;prescription|receita;nose|nariz
+B: Do you have something for {0}?|Você tem algo para {0}?|a cold=resfriado;a cough=tosse;a headache=dor de cabeça
+B: Take this {0} a day.|Tome isso {0} por dia.|twice=duas vezes;once=uma vez;three times=três vezes
+S: Lia|Do you have a cough too?|Você também tem tosse?|A little, and my nose is stuffy.|Um pouco, e o nariz está entupido.
+S: Lia|No, you can buy it here.|Não, pode comprar aqui.|How much is it?|Quanto custa?
+R: Do you have something for a cold?|Você tem algo para resfriado?
+R: Take this twice a day.|Tome isso duas vezes por dia.
+R: Do I need a prescription?|Preciso de receita?
+R: Get well soon!|Melhoras!
+X: Get well soon!|Melhoras!
+C: Nos EUA, muitos remédios simples são vendidos sem receita: "over the counter".
+N: Próximo: perder o celular.
+
+T: My phone is gone | Perder o celular | cafe | Denver | Kai,m,🧑🏻,barista
+K: My phone is gone. | Meu celular sumiu.
+M: Hoje você procura algo que sumiu.
+D: You|Excuse me, my phone is gone.|Com licença, meu celular sumiu.
+D: Kai|Oh no. When did you see it last?|Poxa. Quando você o viu pela última vez?
+D: You|At that table, about ten minutes ago.|Naquela mesa, há uns dez minutos.
+D: Kai|Let me look. Is it black?|Deixe-me olhar. É preto?
+D: You|Yes, with a green case.|Sim, com capa verde.
+D: Kai|I found one under the chair!|Achei um embaixo da cadeira!
+D: You|That is mine! Thank you so much!|É o meu! Muito obrigado!
+D: Kai|No problem. Be careful next time.|Sem problema. Cuidado da próxima vez.
+V: gone|sumiu;table|mesa;black|preto;case|capa;chair|cadeira
+B: My phone is {0}.|Meu celular {0}.|gone=sumiu;dead=descarregou;broken=quebrou
+B: It is under the {0}.|Está embaixo da {0}.|chair=cadeira;table=mesa;bed=cama
+S: Kai|When did you see it last?|Quando você o viu pela última vez?|At that table, about ten minutes ago.|Naquela mesa, há uns dez minutos.
+S: Kai|I found one under the chair!|Achei um embaixo da cadeira!|That is mine! Thank you so much!|É o meu! Muito obrigado!
+R: My phone is gone.|Meu celular sumiu.
+R: I saw it ten minutes ago.|Eu o vi há dez minutos.
+R: It is black with a green case.|É preto com capa verde.
+R: That is mine!|É o meu!
+X: That is mine!|É o meu!
+C: "Mine" substitui "my phone": That is mine = Esse é o meu.
+N: Próximo: pedir para repetir.
+
+T: Could you repeat that? | Pedir para repetir e falar devagar | airport | Miami | Ana,f,👩🏽,atendente
+K: Could you repeat that, please? | Você pode repetir, por favor?
+M: Hoje você pede para repetir e falar mais devagar.
+D: Ana|Your flight leaves from gate twelve.|Seu voo sai do portão doze.
+D: You|Sorry, could you repeat that, please?|Desculpe, você pode repetir, por favor?
+D: Ana|Gate twelve, on the second floor.|Portão doze, no segundo andar.
+D: You|Could you speak more slowly?|Você pode falar mais devagar?
+D: Ana|Of course. Gate. Twelve. Second floor.|Claro. Portão. Doze. Segundo andar.
+D: You|Thank you. I understand now.|Obrigado. Agora entendi.
+D: Ana|Boarding starts in twenty minutes.|O embarque começa em vinte minutos.
+D: You|Great. I will go there now.|Ótimo. Vou para lá agora.
+V: repeat|repetir;gate|portão;slowly|devagar;floor|andar;understand|entender
+B: Could you {0} that?|Você pode {0} isso?|repeat=repetir;spell=soletrar;explain=explicar
+B: Could you speak more {0}?|Você pode falar mais {0}?|slowly=devagar;loudly=alto;clearly=claramente
+S: Ana|Your flight leaves from gate twelve.|Seu voo sai do portão doze.|Sorry, could you repeat that, please?|Desculpe, você pode repetir, por favor?
+S: Ana|Of course. Gate. Twelve. Second floor.|Claro. Portão. Doze. Segundo andar.|Thank you. I understand now.|Obrigado. Agora entendi.
+R: Could you repeat that?|Você pode repetir?
+R: Could you speak more slowly?|Você pode falar mais devagar?
+R: I understand now.|Agora entendi.
+R: Boarding starts in twenty minutes.|O embarque começa em vinte minutos.
+X: Sorry?|Como?
+C: "Sorry?" com entonação subindo é um jeito rápido de pedir para repetir.
+N: Próximo: dizer que não entendeu.
+
+T: I do not understand | Dizer que não entendeu | classroom | Boston | Ben,m,🧑🏽,professor
+K: I do not understand. | Eu não entendo.
+M: Hoje você pede explicação.
+D: Ben|Do you have any questions?|Vocês têm perguntas?
+D: You|Yes. I do not understand this word.|Tenho. Não entendo esta palavra.
+D: Ben|Which word? Show me.|Qual palavra? Mostre.
+D: You|This one. What does it mean?|Esta. O que significa?
+D: Ben|It means a small house in the woods.|Significa uma casinha na floresta.
+D: You|Ah, now I get it. How do you spell it?|Ah, agora entendi. Como se escreve?
+D: Ben|C-A-B-I-N.|C-A-B-I-N.
+D: You|Thanks. Can I write it down?|Valeu. Posso anotar?
+V: question|pergunta;mean|significar;spell|soletrar;write down|anotar;word|palavra
+B: What does {0} mean?|O que {0} significa?|this word=esta palavra;cabin=cabin;that=aquilo
+B: How do you {0} it?|Como você {0} isso?|spell=escreve;say=diz;write=escreve
+S: Ben|Do you have any questions?|Vocês têm perguntas?|Yes. I do not understand this word.|Tenho. Não entendo esta palavra.
+S: Ben|It means a small house in the woods.|Significa uma casinha na floresta.|Ah, now I get it.|Ah, agora entendi.
+R: I do not understand.|Eu não entendo.
+R: What does it mean?|O que significa?
+R: How do you spell it?|Como se escreve?
+R: Now I get it.|Agora entendi.
+X: Now I get it.|Agora entendi.
+C: "I get it" é a forma informal de "I understand".
+N: Próximo: pedir permissão.
+
+T: May I come in? | Pedir permissão | office | Chicago | Mia,f,👩🏻,chefe
+K: May I come in? | Posso entrar?
+M: Hoje você pede permissão com educação.
+D: You|Knock, knock. May I come in?|Toc, toc. Posso entrar?
+D: Mia|Of course. Please, sit down.|Claro. Por favor, sente-se.
+D: You|May I open the window? It is hot.|Posso abrir a janela? Está quente.
+D: Mia|Yes, go ahead.|Sim, fique à vontade.
+D: You|May I ask you a question about the report?|Posso fazer uma pergunta sobre o relatório?
+D: Mia|Sure. What do you need?|Claro. Do que você precisa?
+D: You|Could you check page three?|Você poderia ver a página três?
+D: Mia|Let me see. Yes, I will fix it.|Deixe-me ver. Sim, eu corrijo.
+V: knock|bater / toc;window|janela;report|relatório;page|página;check|conferir
+B: May I {0}?|Posso {0}?|come in=entrar;sit here=sentar aqui;ask=perguntar
+B: Go {0}.|Fique à vontade, {0}.|ahead=vá em frente;home=para casa;on=continue
+S: Mia|Of course. Please, sit down.|Claro. Por favor, sente-se.|May I open the window? It is hot.|Posso abrir a janela? Está quente.
+S: Mia|Sure. What do you need?|Claro. Do que você precisa?|Could you check page three?|Você poderia ver a página três?
+R: May I come in?|Posso entrar?
+R: May I open the window?|Posso abrir a janela?
+R: Go ahead.|Fique à vontade.
+R: Could you check page three?|Você poderia ver a página três?
+X: Go ahead.|Fique à vontade.
+C: "May I" é mais formal que "Can I" e soa muito educado.
+N: Próximo: desafio, emergência na viagem.
+
+T: A problem on the trip | Desafio do arco: resolver um imprevisto | airport | New York | Ana,f,👩🏽,atendente
+K: I have a problem with my flight. | Tenho um problema com o meu voo.
+M: Hoje você resolve um imprevisto de viagem.
+D: You|Excuse me, I have a problem with my flight.|Com licença, tenho um problema com o meu voo.
+D: Ana|I am sorry. What happened?|Sinto muito. O que aconteceu?
+D: You|I lost my ticket and my phone is dead.|Perdi a passagem e o celular descarregou.
+D: Ana|Do not worry. Do you have your passport?|Não se preocupe. Você tem o passaporte?
+D: You|Yes, here it is.|Tenho, aqui está.
+D: Ana|Good. I can print a new ticket.|Ótimo. Posso imprimir uma nova passagem.
+D: You|Thank you so much. You saved my day!|Muito obrigado. Você salvou o meu dia!
+D: Ana|Happy to help. Have a safe flight!|Fico feliz em ajudar. Boa viagem!
+V: ticket|passagem;passport|passaporte;print|imprimir;saved|salvou;safe|seguro
+B: I lost my {0}.|Eu perdi {0}.|ticket=a passagem;passport=o passaporte;luggage=a bagagem
+B: Have a {0} flight!|Tenha um voo {0}!|safe=seguro;good=bom;nice=agradável
+S: Ana|I am sorry. What happened?|Sinto muito. O que aconteceu?|I lost my ticket and my phone is dead.|Perdi a passagem e o celular descarregou.
+S: Ana|I can print a new ticket.|Posso imprimir uma nova passagem.|Thank you so much. You saved my day!|Muito obrigado. Você salvou o meu dia!
+R: I have a problem with my flight.|Tenho um problema com o meu voo.
+R: I lost my ticket.|Perdi a minha passagem.
+R: Here is my passport.|Aqui está o meu passaporte.
+R: You saved my day!|Você salvou o meu dia!
+X: You saved my day!|Você salvou o meu dia!
+C: "Have a safe flight" é uma despedida comum para quem vai viajar.
+N: Próximo: a cultura do dia a dia nos EUA.
+BOSS: 1
