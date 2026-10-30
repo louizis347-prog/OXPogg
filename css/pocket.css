@@ -1,0 +1,70 @@
+/* Pocket · identidade própria: coral/sol, cartões grandes, jogo */
+#player.nb-full .step.pk{--g1:#FF8A5B;--g2:#FFC857;padding:14px!important;gap:12px;font-weight:600}
+.pk .pk-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pk .pk-tt{flex:1;font-size:18px;font-weight:800}
+.pk .pk-btn{border:1px solid #dce4e8;background:#fff;border-radius:999px;padding:8px 14px;font-weight:800;font-size:13px;cursor:pointer}
+.pk .pk-btn.on{background:#25203f;color:#fff}
+.pk .pk-hint{font-size:12px;opacity:.6;font-weight:700;text-align:center}
+.pk .pk-prog{display:flex;gap:6px}.pk .pk-prog i{flex:1;height:7px;border-radius:9px;background:#e6ecef}.pk .pk-prog i.on{background:var(--g1)}
+
+/* Cena */
+.pk-poster{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:center;background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:24px;padding:16px}
+.pk-scene{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;min-height:200px}
+.pk-scene svg{position:absolute;inset:0;width:100%;height:100%}
+.pk-badge{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.88);color:#25203f;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:900;letter-spacing:.06em}
+.pk-info{display:flex;flex-direction:column;gap:10px;color:#fff;min-width:0}
+.pk-info h2{margin:0;font-size:38px;line-height:1.05;font-weight:900;text-shadow:0 2px 10px rgba(0,0,0,.2)}
+.pk-sub{margin:0;font-weight:800;opacity:.95}
+.pk-face{width:64px;height:64px;border-radius:50%;overflow:hidden;background:#fff;border:3px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.25);flex:none;display:block}
+.pk-mis{background:rgba(255,255,255,.22);border-radius:16px;padding:12px 14px;font-size:16px}
+.pk-mis small{display:block;font-size:10.5px;letter-spacing:.1em;font-weight:900;opacity:.85}
+.pk-key{background:#fff;color:#25203f;border:0;border-radius:18px;padding:12px 14px;text-align:left;cursor:pointer;box-shadow:0 8px 20px -8px rgba(0,0,0,.35);display:grid;gap:2px}
+.pk-key b{font-size:18px}.pk-key em{font-style:normal;opacity:.65;font-size:13px}
+
+/* Diálogo / Fale */
+.pk-chat{display:flex;flex-direction:column;gap:10px;overflow-y:auto;max-height:calc(100dvh - 300px);padding:2px}
+.pk-row{display:flex;gap:9px;align-items:flex-end;max-width:92%;cursor:pointer}
+.pk-row.me{flex-direction:row-reverse;align-self:flex-end}
+.pk-av{flex:none;width:44px;height:44px;border-radius:50%;overflow:hidden;background:#e9eeed;border:2px solid #fff;box-shadow:0 2px 8px rgba(30,50,60,.2)}
+.pk-b{background:#f4f7f8;border:1px solid #dce4e8;border-radius:16px 16px 16px 4px;padding:8px 12px;min-width:0}
+.pk-row.me .pk-b{background:#fff1e8;border-color:#ffd5bd;border-radius:16px 16px 4px 16px}
+.pk-row.now .pk-b{outline:2px solid var(--g1)}
+.pk-b>b{display:block;font-size:10.5px;letter-spacing:.07em;color:var(--g1)}
+.pk-en{display:block;font-size:17px;line-height:1.35;font-weight:700;overflow-wrap:anywhere}
+.pk-pt{display:none;font-size:13px;opacity:.7;margin-top:2px}.pk-chat.pt .pk-pt{display:block}
+.pk-w{border:0;background:#ffe27a;border-radius:6px;padding:0 4px;font:inherit;font-weight:900;cursor:pointer}.pk-w.seen{background:#c9f5dc}
+.pk-pop{position:absolute;z-index:5;background:#25203f;color:#fff;border-radius:12px;padding:8px 12px;font-size:14px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.pk-dlg,.pk-build,.pk-speak,.pk-wrap{position:relative}
+
+/* Monte a frase / Fale */
+.pk-card{background:#fff;border:1px solid #dce4e8;border-radius:22px;padding:18px;display:grid;gap:8px;text-align:center;box-shadow:0 10px 24px -16px rgba(30,50,60,.4)}
+.pk-sent{font-size:28px;line-height:1.2;font-weight:900}.pk-sent mark{background:linear-gradient(transparent 55%,#ffd36b 55%);padding:0 3px;border-radius:4px}
+.pk-sentpt{font-size:15px;opacity:.7}.pk-sentpt mark{background:transparent;font-weight:800;color:var(--g1)}
+.pk-say small{font-size:11px;letter-spacing:.08em;font-weight:900;opacity:.6}
+.pk-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.pk-opt{border:2px solid #e4eaee;background:#fff;border-radius:18px;padding:14px 10px;cursor:pointer;display:grid;gap:2px;transition:transform .12s}
+.pk-opt:active{transform:scale(.96)}.pk-opt b{font-size:19px}.pk-opt small{opacity:.65}
+.pk-opt.on{border-color:var(--g1);background:#fff7f1}.pk-opt.seen:not(.on){background:#f3fffb}
+
+/* Mochila */
+.pk-fin{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:12px;align-items:start}
+.pk-stk{grid-row:span 3;background:linear-gradient(160deg,var(--g1),var(--g2));color:#fff;border-radius:22px;padding:18px 12px;text-align:center;display:grid;gap:6px;justify-items:center;box-shadow:0 14px 28px -14px rgba(0,0,0,.4)}
+.pk-stk.boss{outline:3px solid gold;box-shadow:0 0 0 6px rgba(255,215,0,.25),0 14px 28px -14px rgba(0,0,0,.4)}
+.pk-stk small{font-size:10px;letter-spacing:.12em;font-weight:900}.pk-stk b{font-size:24px}.pk-stk i{font-style:normal;opacity:.9;font-size:13px}
+.pk-stk .pk-face{width:96px;height:96px}
+.pk-bag h3{margin:0 0 6px;font-size:14px}
+.pk-cc{display:flex;flex-direction:column;align-items:flex-start;width:100%;text-align:left;background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:9px 12px;margin-bottom:6px;cursor:pointer}
+.pk-cc b{font-size:16px}.pk-cc small{opacity:.65}
+.pk-cult{grid-column:2;background:#eefaf4;border:1px solid #cdeedd;border-radius:14px;padding:10px 12px;font-size:13.5px}
+.pk-next{grid-column:2;font-weight:800;opacity:.7;font-size:13px}
+@media (max-width:759px){
+  .pk-poster{grid-template-columns:1fr;gap:12px;padding:12px}.pk-scene{aspect-ratio:16/10;min-height:150px}
+  .pk-info h2{font-size:28px}.pk-face{width:52px;height:52px}
+  .pk-sent{font-size:22px}.pk-fin{grid-template-columns:1fr}.pk-stk{grid-row:auto}.pk-cult,.pk-next{grid-column:1}
+  .pk-chat{max-height:calc(100dvh - 330px)}.pk-en{font-size:15px}
+}
+
+.pk-strip{position:relative;height:clamp(90px,16dvh,150px);border-radius:16px;overflow:hidden;flex:none}.pk-strip svg{position:absolute;inset:0;width:100%;height:100%}
+.pk-strip::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(255,255,255,.85))}
+.course-family.pocket{background:linear-gradient(135deg,#FF8A5B,#FFC857);color:#fff;border-radius:18px;padding:14px 18px}
+.course-family.pocket h2,.course-family.pocket p{color:#fff;margin:0}

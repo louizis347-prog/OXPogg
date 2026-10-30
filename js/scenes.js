@@ -85,7 +85,7 @@ function palm(R,x,y,s,T){let f='';for(let i=0;i<7;i++){const a=-160+i*50,c=Math.
 function person(R,x,y,s,col,T){
   const skin=pick(R,['#F2C4A0','#D9A07A','#B9784F','#8D5A3B','#F6D2B4']),hair=pick(R,['#2B1B14','#4A2E1B','#1A1A22','#7B4A25','#C69552']);
   /* Neighbors: figuras de fundo com o mesmo rosto refinado das capas (cabeça/ombros do PogFace.bust sobre o corpo) */
-  try{if(window.PogFace&&PogFace.bust&&typeof P!=='undefined'&&P&&/^nb/.test(String(P.cid||''))){
+  try{if(window.PogFace&&PogFace.bust&&typeof P!=='undefined'&&P&&/^(nb|pk)/.test(String(P.cid||''))){
     const sk0=['#F2C4A0','#D9A07A','#B9784F','#8D5A3B','#F6D2B4'].indexOf(skin),tone=[1,2,3,4,0][sk0<0?0:sk0],hh=hash(x*7+y*3+s*11);
     const g=hh%2?'m':'f',st=(g==='f'?['long','wavy','bob','bun']:['short','side','short','curly'])[(hh>>3)%4];
     const bo={g,tone,style:st,hair:mix(hair,'#7a5238',.22),shirt:col,seed:hh,refined:true,natural:true,rich:LITE?1:2,mood:'soft',beard:g==='m'&&(hh>>5)%5===0,glasses:(hh>>6)%7===0};

@@ -216,7 +216,7 @@ function sectionHead(h,p,right){return `<div class="p2sh"><div><h2>${E(h)}</h2>$
 function langArt(l,iconId,sub){
   return `<div class="art" style="--c:${l.c};--cd:${l.cd}"><b class="wm">${E(l.mono)}</b><i class="tile">${PC().icon(iconId||LANG_ICON[l.id]||'globe',58,l.cd)}</i>${sub?`<span class="sub">${E(sub)}</span>`:''}</div>`;
 }
-const LANG_SC={en:'street',es:'plaza',fr:'paris',frbr:'paris',de:'station',it:'lisboa',ja:'japan',ko:'seoul',pt:'ipanema',nb:'plaza',nbes:'plaza',nbfr:'paris',nbde:'station',nbpt:'ipanema',nbit:'lisboa',nbeng:'street',nbja:'station',enes:'street'};
+const LANG_SC={en:'street',es:'plaza',fr:'paris',frbr:'paris',de:'station',it:'lisboa',ja:'japan',ko:'seoul',pt:'ipanema',nb:'plaza',nbes:'plaza',nbfr:'paris',nbde:'station',nbpt:'ipanema',nbit:'lisboa',nbeng:'street',pk:'street',nbja:'station',enes:'street'};
 const LV_SC={A1:'cafe',A2:'street',B1:'office',B2:'station',C1:'library',C2:'ballroom'};
 const sceneArt=(key,sc)=>{try{return PC().svg({t:String(key),sc,a:{w:String(key),k:'Cidade'},n:0},{noChar:true})}catch(e){return ''}};
 function workCover(w,k){const e={t:w.w||w.t||'',n:0,a:{w:w.w||w.t||'',k:k||w.k||''}};return PC().work(e)}
@@ -534,7 +534,7 @@ document.addEventListener('click',e=>{const m=e.target.closest&&e.target.closest
 function card5(l,i,big){
   let n=0,d=0,av=0;l.sub.forEach(c=>{n+=nOf(c);d+=doneCountFor(c);av+=(window.EP_AVAILABLE&&EP_AVAILABLE[c]&&EP_AVAILABLE[c].available!=null)?EP_AVAILABLE[c].available:nOf(c)});
   const g=GROUPS[l.id]||COURSES[l.id]||{},p=n?d/n:0,multi=l.sub.length>1,hd=multi?`data-lang="${l.id}"`:`data-course="${l.sub[0]}"`;
-  const neighbors=/^nb/.test(l.id),mode=neighbors?t('neighbors'):t('regular');
+  const neighbors=/^nb/.test(l.id),mode=l.id==='pk'?'Pocket':neighbors?t('neighbors'):t('regular');
   const chips=multi?`<div class="lvs">${l.sub.map(cid=>`<button class="lv ${doneCountFor(cid)?'on':''}" data-course="${cid}" title="${E(COURSES[cid].name[L0()])}">${E(lvlOf(cid))}</button>`).join('')}</div>`
     :`<button class="p2btn soft sm go" data-course="${l.sub[0]}">${E(d?t('continue'):t('begin'))}${IC.arrow()}</button>`;
   return `<article class="p5c ${big?'big':''} ${neighbors?'is-neighbors':'is-regular'}" style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};animation-delay:${i*50}ms">
@@ -545,9 +545,10 @@ function card5(l,i,big){
 }
 window.coursesPage=function(){
   PU().cur='courses';setHash('#/courses');
-  const ls=PU().LANGS,nb=ls.filter(l=>/^nb(es|fr|de|pt|ja|eng|it)?$/.test(l.id)),rest=ls.filter(l=>!/^nb(es|fr|de|pt|ja|eng|it)?$/.test(l.id));
+  const ls=PU().LANGS,nb=ls.filter(l=>/^nb(es|fr|de|pt|ja|eng|it)?$/.test(l.id)),pk=ls.filter(l=>l.id==='pk'),rest=ls.filter(l=>!/^nb(es|fr|de|pt|ja|eng|it)?$/.test(l.id)&&l.id!=='pk');
   const order=['en','es','fr','de','it','pt','enes'];rest.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
   shell(`<header class="p3ch"><span class="p2eyebrow">${E(t('navCourses').toUpperCase())}</span><h1>${E(t('coursesPage'))}</h1><p>${E(t('coursesPageSub'))}</p></header>
+  <section class="p3nbsec pk-sec">${sectionHead('Pocket','Novo: inglês de bolso. Episódios de 5 quadros, 4 minutos por dia, com personagens, som e fala. Do A1 ao C2.')}<div class="p5grid two">${pk.map((l,i)=>card5(l,i,true)).join('')}</div></section>
   <section class="p3nbsec">${sectionHead(t('nbSec'),t('nbSecSub'))}<div class="p5grid two">${nb.map((l,i)=>card5(l,i,true)).join('')}</div></section>
   <section class="p3sec">${sectionHead(t('clSec'),t('clSecSub'))}<div class="p5grid">${rest.map((l,i)=>card5(l,i)).join('')}</div></section>`,'courses');
 };
