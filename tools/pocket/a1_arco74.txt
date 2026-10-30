@@ -1,0 +1,231 @@
+# Arco 74 · Jardinagem em casa
+T: Start a garden | Começar uma horta | park | Portland | Rosa,f,👩🏽,vizinha
+K: I want to grow vegetables. | Quero plantar legumes.
+M: Hoje você começa uma horta em casa.
+D: Rosa|What do you want to plant?|O que você quer plantar?
+D: You|I want to grow vegetables.|Quero plantar legumes.
+D: Rosa|Good idea. Tomatoes are easy.|Boa ideia. Tomates são fáceis.
+D: You|Where do I put them?|Onde coloco?
+D: Rosa|In a sunny place, near the window.|Num lugar ensolarado, perto da janela.
+D: You|Do I need a big pot?|Preciso de um vaso grande?
+D: Rosa|Yes, with good soil.|Sim, com boa terra.
+V: grow|plantar;vegetables|legumes;sunny|ensolarado;pot|vaso;soil|terra
+B: I want to grow {0}.|Quero plantar {0}.|vegetables=legumes;flowers=flores;herbs=ervas
+B: Put them in a {0} place.|Ponha num lugar {0}.|sunny=ensolarado;warm=quente;bright=claro
+S: Rosa|What do you want to plant?|O que você quer plantar?|I want to grow vegetables.|Quero plantar legumes.
+S: You|Do I need a big pot?|Preciso de um vaso grande?|Yes, with good soil.|Sim, com boa terra.
+R: I want to grow vegetables.|Quero plantar legumes.
+R: Tomatoes are easy.|Tomates são fáceis.
+R: Put them in a sunny place.|Ponha num lugar ensolarado.
+R: I need a pot with good soil.|Preciso de um vaso com boa terra.
+X: Good idea.|Boa ideia.
+C: Muita gente começa a horta em vasos na varanda.
+N: Próximo: a loja de plantas.
+
+T: At the garden shop | Na loja de jardinagem | shop | Portland | Lia,f,👩🏽,vendedora
+K: I need seeds and a shovel. | Preciso de sementes e uma pá.
+M: Hoje você compra o material.
+D: Lia|Welcome to the garden shop.|Bem-vindo à loja de jardinagem.
+D: You|I need seeds and a small shovel.|Preciso de sementes e uma pá pequena.
+D: Lia|Which seeds do you want?|Que sementes você quer?
+D: You|Tomatoes, basil and lettuce.|Tomate, manjericão e alface.
+D: Lia|Here you go. Do you need soil?|Aqui estão. Precisa de terra?
+D: You|Yes, one big bag.|Sim, um saco grande.
+D: Lia|That is twenty-five dollars.|São vinte e cinco dólares.
+V: seeds|sementes;shovel|pá;basil|manjericão;lettuce|alface;bag|saco
+B: I need seeds and a {0}.|Preciso de sementes e uma {0}.|shovel=pá;pot=vaso;hose=mangueira
+B: One big {0} of soil.|Um {0} grande de terra.|bag=saco;box=caixa;pot=vaso
+S: Lia|Welcome to the garden shop.|Bem-vindo à loja de jardinagem.|I need seeds and a small shovel.|Preciso de sementes e uma pá pequena.
+S: Lia|Here you go. Do you need soil?|Aqui estão. Precisa de terra?|Yes, one big bag.|Sim, um saco grande.
+R: I need seeds and a shovel.|Preciso de sementes e uma pá.
+R: Tomatoes, basil and lettuce.|Tomate, manjericão e alface.
+R: One big bag of soil.|Um saco grande de terra.
+R: That is twenty-five dollars.|São vinte e cinco dólares.
+X: Here you go.|Aqui estão.
+C: Lojas de jardinagem vendem sementes, terra e adubo.
+N: Próximo: plantar as sementes.
+
+T: Plant the seeds | Plantar as sementes | park | Portland | Rosa,f,👩🏽,vizinha
+K: Put the seeds in the soil. | Ponha as sementes na terra.
+M: Hoje você planta sementes.
+D: Rosa|Fill the pot with soil.|Encha o vaso com terra.
+D: You|Done. Now the seeds?|Pronto. Agora as sementes?
+D: Rosa|Make a small hole with your finger.|Faça um buraquinho com o dedo.
+D: You|Like this?|Assim?
+D: Rosa|Yes. Put one seed in and cover it.|Sim. Ponha uma semente e cubra.
+D: You|Now water?|Agora água?
+D: Rosa|Yes, a little. Not too much.|Sim, um pouco. Não demais.
+V: pot|vaso;soil|terra;hole|buraquinho;cover|cobrir;water|regar
+B: Fill the pot with {0}.|Encha o vaso com {0}.|soil=terra;water=água;sand=areia
+B: Put one {0} in.|Ponha uma {0}.|seed=semente;stone=pedra;plant=planta
+S: Rosa|Fill the pot with soil.|Encha o vaso com terra.|Done. Now the seeds?|Pronto. Agora as sementes?
+S: Rosa|Yes. Put one seed in and cover it.|Sim. Ponha uma semente e cubra.|Now water?|Agora água?
+R: Fill the pot with soil.|Encha o vaso com terra.
+R: Make a small hole.|Faça um buraquinho.
+R: Put one seed in and cover it.|Ponha uma semente e cubra.
+R: Water a little, not too much.|Regue um pouco, não demais.
+X: Not too much.|Não demais.
+C: Regar demais pode matar as sementes.
+N: Próximo: regar.
+
+T: Water the plants | Regar as plantas | park | Portland | Rosa,f,👩🏽,vizinha
+K: Water them every morning. | Regue-as toda manhã.
+M: Hoje você cuida das plantas.
+D: Rosa|Water the plants every morning.|Regue as plantas toda manhã.
+D: You|How much water?|Quanta água?
+D: Rosa|One cup for each pot.|Um copo para cada vaso.
+D: You|And if it rains?|E se chover?
+D: Rosa|Then you do not water.|Então você não rega.
+D: You|Look! A small green leaf!|Olhe! Uma folhinha verde!
+D: Rosa|It grows! Be patient.|Está crescendo! Tenha paciência.
+V: water|regar;cup|copo;rains|chove;leaf|folha;patient|paciente
+B: Water the plants every {0}.|Regue as plantas toda {0}.|morning=manhã;day=dia;evening=tarde
+B: One cup for each {0}.|Um copo para cada {0}.|pot=vaso;plant=planta;row=fileira
+S: Rosa|Water the plants every morning.|Regue as plantas toda manhã.|How much water?|Quanta água?
+S: You|Look! A small green leaf!|Olhe! Uma folhinha verde!|It grows! Be patient.|Está crescendo! Tenha paciência.
+R: Water the plants every morning.|Regue as plantas toda manhã.
+R: One cup for each pot.|Um copo para cada vaso.
+R: Look! A small green leaf!|Olhe! Uma folhinha verde!
+R: Be patient.|Tenha paciência.
+X: It grows!|Está crescendo!
+C: Plantas precisam de água e luz, mas cada espécie é diferente.
+N: Próximo: as flores.
+
+T: Flowers for the house | Flores para a casa | park | Portland | Lia,f,👩🏽,florista
+K: I want red roses. | Quero rosas vermelhas.
+M: Hoje você compra flores.
+D: Lia|Good morning! Look at my flowers.|Bom dia! Olhe minhas flores.
+D: You|They are beautiful. How much are the roses?|São lindas. Quanto custam as rosas?
+D: Lia|Two dollars each.|Dois dólares cada.
+D: You|I want ten red roses, please.|Quero dez rosas vermelhas, por favor.
+D: Lia|Do you want a vase too?|Quer um vaso também?
+D: You|Yes, a small blue one.|Quero, um pequeno azul.
+D: Lia|They smell wonderful.|Elas cheiram maravilhosamente.
+V: roses|rosas;flowers|flores;vase|vaso;smell|cheirar;each|cada
+B: I want ten red {0}.|Quero dez {0} vermelhas.|roses=rosas;tulips=tulipas;flowers=flores
+B: Do you want a {0} too?|Quer um {0} também?|vase=vaso;card=cartão;ribbon=laço
+S: Lia|Good morning! Look at my flowers.|Bom dia! Olhe minhas flores.|They are beautiful. How much are the roses?|São lindas. Quanto custam as rosas?
+S: Lia|Do you want a vase too?|Quer um vaso também?|Yes, a small blue one.|Quero, um pequeno azul.
+R: How much are the roses?|Quanto custam as rosas?
+R: Two dollars each.|Dois dólares cada.
+R: I want ten red roses.|Quero dez rosas vermelhas.
+R: They smell wonderful.|Elas cheiram maravilhosamente.
+X: A small blue one.|Um pequeno azul.
+C: Rosas vermelhas significam amor em muitas culturas.
+N: Próximo: as ervas.
+
+T: Fresh herbs | Ervas frescas | kitchen | Portland | Rosa,f,👩🏽,vizinha
+K: Basil smells great. | Manjericão cheira bem.
+M: Hoje você cultiva ervas na cozinha.
+D: Rosa|Look at my herbs on the window.|Olhe minhas ervas na janela.
+D: You|I see basil, mint and parsley.|Vejo manjericão, hortelã e salsa.
+D: Rosa|Smell the basil. It smells great.|Cheire o manjericão. Cheira bem.
+D: You|It smells like pizza!|Cheira a pizza!
+D: Rosa|I use it in my pasta.|Uso no meu macarrão.
+D: You|And the mint?|E a hortelã?
+D: Rosa|For tea. Take a few leaves.|Para chá. Leve algumas folhas.
+V: herbs|ervas;mint|hortelã;parsley|salsa;smell|cheirar;leaves|folhas
+B: Smell the {0}.|Cheire {0}.|basil=o manjericão;mint=a hortelã;flowers=as flores
+B: I use it in my {0}.|Uso na minha {0}.|pasta=massa;tea=chá;salad=salada
+S: Rosa|Look at my herbs on the window.|Olhe minhas ervas na janela.|I see basil, mint and parsley.|Vejo manjericão, hortelã e salsa.
+S: Rosa|Smell the basil. It smells great.|Cheire o manjericão. Cheira bem.|It smells like pizza!|Cheira a pizza!
+R: I see basil, mint and parsley.|Vejo manjericão, hortelã e salsa.
+R: Smell the basil.|Cheire o manjericão.
+R: I use it in my pasta.|Uso no meu macarrão.
+R: Take a few leaves.|Leve algumas folhas.
+X: It smells great.|Cheira bem.
+C: Ervas frescas dão muito sabor às receitas.
+N: Próximo: os insetos do jardim.
+
+T: Garden insects | Insetos do jardim | park | Portland | Rosa,f,👩🏽,vizinha
+K: Bees help the flowers. | Abelhas ajudam as flores.
+M: Hoje você observa insetos do jardim.
+D: Rosa|Look at the bees on the flowers.|Olhe as abelhas nas flores.
+D: You|Are they dangerous?|São perigosas?
+D: Rosa|No. They are our friends.|Não. São nossas amigas.
+D: You|Why?|Por quê?
+D: Rosa|They help the flowers make fruit.|Elas ajudam as flores a dar fruta.
+D: You|And the ladybug?|E a joaninha?
+D: Rosa|She eats small bugs. Another friend!|Ela come insetinhos. Outra amiga!
+V: bees|abelhas;dangerous|perigosas;friends|amigas;ladybug|joaninha;bugs|insetos
+B: Bees help the {0}.|Abelhas ajudam as {0}.|flowers=flores;plants=plantas;trees=árvores
+B: She eats small {0}.|Ela come {0} pequenos.|bugs=insetos;seeds=sementes;leaves=folhas
+S: Rosa|Look at the bees on the flowers.|Olhe as abelhas nas flores.|Are they dangerous?|São perigosas?
+S: You|And the ladybug?|E a joaninha?|She eats small bugs. Another friend!|Ela come insetinhos. Outra amiga!
+R: Look at the bees on the flowers.|Olhe as abelhas nas flores.
+R: They are our friends.|São nossas amigas.
+R: They help the flowers make fruit.|Elas ajudam as flores a dar fruta.
+R: The ladybug eats small bugs.|A joaninha come insetinhos.
+X: Another friend!|Outra amiga!
+C: Abelhas são essenciais para a polinização de muitas plantas.
+N: Próximo: colher.
+
+T: First harvest | Primeira colheita | kitchen | Portland | Rosa,f,👩🏽,vizinha
+K: The tomatoes are ripe. | Os tomates estão maduros.
+M: Hoje você colhe a primeira safra.
+D: Rosa|Look! The tomatoes are red.|Olhe! Os tomates estão vermelhos.
+D: You|They are ripe. Can I pick them?|Estão maduros. Posso colher?
+D: Rosa|Yes, take three.|Pode, pegue três.
+D: You|They smell so sweet.|Cheiram tão doce.
+D: Rosa|Wash them and make a salad.|Lave e faça uma salada.
+D: You|I add basil and olive oil.|Acrescento manjericão e azeite.
+D: Rosa|Enjoy your first harvest!|Aproveite a sua primeira colheita!
+V: ripe|maduros;pick|colher;wash|lavar;olive oil|azeite;harvest|colheita
+B: The tomatoes are {0}.|Os tomates estão {0}.|ripe=maduros;red=vermelhos;big=grandes
+B: Wash them and make a {0}.|Lave e faça uma {0}.|salad=salada;sauce=molho;soup=sopa
+S: Rosa|Look! The tomatoes are red.|Olhe! Os tomates estão vermelhos.|They are ripe. Can I pick them?|Estão maduros. Posso colher?
+S: Rosa|Wash them and make a salad.|Lave e faça uma salada.|I add basil and olive oil.|Acrescento manjericão e azeite.
+R: The tomatoes are red.|Os tomates estão vermelhos.
+R: They are ripe.|Estão maduros.
+R: Wash them and make a salad.|Lave e faça uma salada.
+R: Enjoy your first harvest!|Aproveite a sua primeira colheita!
+X: They smell so sweet.|Cheiram tão doce.
+C: A primeira colheita é sempre emocionante.
+N: Próximo: o jardim da varanda.
+
+T: Balcony garden | Jardim na varanda | street | New York | Lia,f,👩🏽,vizinha
+K: I have a small balcony. | Tenho uma varanda pequena.
+M: Hoje você monta um jardim na varanda.
+D: Lia|You have a small balcony. It is perfect.|Você tem uma varanda pequena. É perfeita.
+D: You|For what?|Para quê?
+D: Lia|For a vertical garden.|Para um jardim vertical.
+D: You|How does it work?|Como funciona?
+D: Lia|Hang pots on the wall.|Pendure vasos na parede.
+D: You|I can put herbs and small flowers.|Posso pôr ervas e flores pequenas.
+D: Lia|And you save space.|E você economiza espaço.
+V: balcony|varanda;vertical|vertical;hang|pendurar;space|espaço;save|economizar
+B: I have a small {0}.|Tenho uma {0} pequena.|balcony=varanda;garden=horta;kitchen=cozinha
+B: Hang pots on the {0}.|Pendure vasos na {0}.|wall=parede;door=porta;fence=cerca
+S: Lia|You have a small balcony. It is perfect.|Você tem uma varanda pequena. É perfeita.|For what?|Para quê?
+S: Lia|Hang pots on the wall.|Pendure vasos na parede.|I can put herbs and small flowers.|Posso pôr ervas e flores pequenas.
+R: I have a small balcony.|Tenho uma varanda pequena.
+R: A vertical garden.|Um jardim vertical.
+R: Hang pots on the wall.|Pendure vasos na parede.
+R: You save space.|Você economiza espaço.
+X: It is perfect.|É perfeita.
+C: Em cidades grandes, os jardins verticais são muito comuns.
+N: Próximo: desafio, o seu jardim.
+
+T: My garden | Desafio do arco: o seu jardim | park | Portland | Rosa,f,👩🏽,vizinha
+K: This is my garden. | Este é o meu jardim.
+M: Hoje você apresenta o seu jardim.
+D: Rosa|Show me your garden.|Mostre o seu jardim.
+D: You|Here it is. I have tomatoes, basil and roses.|Aqui está. Tenho tomates, manjericão e rosas.
+D: Rosa|How often do you water them?|Com que frequência você rega?
+D: You|Every morning.|Toda manhã.
+D: Rosa|Do you have visitors?|Tem visitantes?
+D: You|Yes. Bees and butterflies.|Tem. Abelhas e borboletas.
+D: Rosa|It is a beautiful garden.|É um lindo jardim.
+V: garden|jardim;tomatoes|tomates;roses|rosas;butterflies|borboletas;visitors|visitantes
+B: I have tomatoes, basil and {0}.|Tenho tomates, manjericão e {0}.|roses=rosas;mint=hortelã;lettuce=alface
+B: I water them every {0}.|Eu os rego toda {0}.|morning=manhã;day=dia;evening=tarde
+S: Rosa|Show me your garden.|Mostre o seu jardim.|Here it is. I have tomatoes, basil and roses.|Aqui está. Tenho tomates, manjericão e rosas.
+S: Rosa|Do you have visitors?|Tem visitantes?|Yes. Bees and butterflies.|Tem. Abelhas e borboletas.
+R: Show me your garden.|Mostre o seu jardim.
+R: I have tomatoes, basil and roses.|Tenho tomates, manjericão e rosas.
+R: I water them every morning.|Eu os rego toda manhã.
+R: It is a beautiful garden.|É um lindo jardim.
+X: Here it is.|Aqui está.
+C: Cuidar de plantas reduz o estresse.
+N: Próximo: robôs.
+BOSS: 1

@@ -1,0 +1,231 @@
+# Arco 75 · Robôs e inteligência
+T: My first robot | Meu primeiro robô | lab | Tokyo | Kai,m,🧑🏻,engenheiro
+K: This robot can walk. | Este robô anda.
+M: Hoje você conhece um robô.
+D: Kai|Meet Robo, my first robot.|Conheça o Robo, meu primeiro robô.
+D: You|He has two arms and two legs.|Ele tem dois braços e duas pernas.
+D: Kai|Yes. He can walk and wave.|Sim. Ele anda e acena.
+D: You|Can he talk?|Ele fala?
+D: Kai|A little. Say "hello", Robo!|Um pouco. Diga "olá", Robo!
+D: Robo|Hello, friend!|Olá, amigo!
+D: You|He is amazing!|Ele é incrível!
+V: robot|robô;arms|braços;legs|pernas;wave|acenar;friend|amigo
+B: He has two {0}.|Ele tem dois(duas) {0}.|arms=braços;legs=pernas;eyes=olhos
+B: He can walk and {0}.|Ele anda e {0}.|wave=acena;talk=fala;dance=dança
+S: Kai|Meet Robo, my first robot.|Conheça o Robo, meu primeiro robô.|He has two arms and two legs.|Ele tem dois braços e duas pernas.
+S: You|Can he talk?|Ele fala?|A little. Say "hello", Robo!|Um pouco. Diga "olá", Robo!
+R: Meet Robo.|Conheça o Robo.
+R: He has two arms and two legs.|Ele tem dois braços e duas pernas.
+R: He can walk and wave.|Ele anda e acena.
+R: He is amazing!|Ele é incrível!
+X: Hello, friend!|Olá, amigo!
+C: A palavra "robot" vem do tcheco "robota", que significa trabalho.
+N: Próximo: o robô de casa.
+
+T: The home robot | O robô de casa | kitchen | Tokyo | Kai,m,🧑🏻,engenheiro
+K: The robot cleans the floor. | O robô limpa o chão.
+M: Hoje você conhece um robô doméstico.
+D: Kai|This small robot cleans the floor.|Este robôzinho limpa o chão.
+D: You|It is round and flat.|É redondo e achatado.
+D: Kai|It moves by itself.|Ele se move sozinho.
+D: You|What happens when it hits a chair?|O que acontece quando bate numa cadeira?
+D: Kai|It turns and goes another way.|Ele vira e vai por outro caminho.
+D: You|Smart! Does it make noise?|Esperto! Faz barulho?
+D: Kai|A little. But it saves time.|Um pouco. Mas economiza tempo.
+V: floor|chão;round|redondo;flat|achatado;noise|barulho;time|tempo
+B: This robot {0} the floor.|Este robô {0} o chão.|cleans=limpa;washes=lava;dries=seca
+B: It is round and {0}.|É redondo e {0}.|flat=achatado;small=pequeno;white=branco
+S: Kai|This small robot cleans the floor.|Este robôzinho limpa o chão.|It is round and flat.|É redondo e achatado.
+S: You|What happens when it hits a chair?|O que acontece quando bate numa cadeira?|It turns and goes another way.|Ele vira e vai por outro caminho.
+R: This robot cleans the floor.|Este robô limpa o chão.
+R: It moves by itself.|Ele se move sozinho.
+R: It turns and goes another way.|Ele vira e vai por outro caminho.
+R: It saves time.|Economiza tempo.
+X: Smart!|Esperto!
+C: Robôs aspiradores existem desde 2002.
+N: Próximo: o robô cozinheiro.
+
+T: The robot chef | O robô cozinheiro | kitchen | Tokyo | Kai,m,🧑🏻,engenheiro
+K: The robot makes pancakes. | O robô faz panquecas.
+M: Hoje você vê um robô na cozinha.
+D: Kai|Look! The robot makes pancakes.|Olhe! O robô faz panquecas.
+D: You|How does it work?|Como funciona?
+D: Kai|It mixes the eggs and flour.|Ele mistura os ovos e a farinha.
+D: You|And then?|E depois?
+D: Kai|It pours the mix in a pan.|Ele põe a massa numa frigideira.
+D: You|It smells delicious!|Cheira delicioso!
+D: Kai|Try one with honey.|Experimente uma com mel.
+V: pancakes|panquecas;mixes|mistura;flour|farinha;pan|frigideira;honey|mel
+B: The robot makes {0}.|O robô faz {0}.|pancakes=panquecas;soup=sopa;coffee=café
+B: It mixes the eggs and {0}.|Ele mistura os ovos e {0}.|flour=farinha;milk=leite;sugar=açúcar
+S: Kai|Look! The robot makes pancakes.|Olhe! O robô faz panquecas.|How does it work?|Como funciona?
+S: Kai|It pours the mix in a pan.|Ele põe a massa numa frigideira.|It smells delicious!|Cheira delicioso!
+R: The robot makes pancakes.|O robô faz panquecas.
+R: It mixes the eggs and flour.|Ele mistura os ovos e a farinha.
+R: It pours the mix in a pan.|Ele põe a massa numa frigideira.
+R: Try one with honey.|Experimente uma com mel.
+X: Delicious!|Delicioso!
+C: Já existem restaurantes com robôs que cozinham e servem.
+N: Próximo: o robô amigo.
+
+T: A friendly robot | Um robô amigo | living | Tokyo | Mia,f,👩🏻,dona
+K: My robot says good morning. | Meu robô diz bom dia.
+M: Hoje você conhece um robô de companhia.
+D: Mia|Meet Momo, my robot friend.|Conheça a Momo, minha amiga robô.
+D: You|Hello, Momo!|Olá, Momo!
+D: Momo|Good morning! How are you today?|Bom dia! Como você está hoje?
+D: You|I am fine. Does she talk a lot?|Estou bem. Ela fala muito?
+D: Mia|Yes. She reminds me of my meetings.|Fala. Ela me lembra das reuniões.
+D: Momo|You have a meeting at ten.|Você tem uma reunião às dez.
+D: You|She is very useful.|Ela é muito útil.
+V: robot|robô;talk|falar;reminds|lembra;meetings|reuniões;useful|útil
+B: She reminds me of my {0}.|Ela me lembra das(dos) minhas(meus) {0}.|meetings=reuniões;classes=aulas;lists=listas
+B: Good morning! How are you {0}?|Bom dia! Como você está {0}?|today=hoje;now=agora;doing=indo
+S: Mia|Meet Momo, my robot friend.|Conheça a Momo, minha amiga robô.|Hello, Momo!|Olá, Momo!
+S: Mia|Yes. She reminds me of my meetings.|Fala. Ela me lembra das reuniões.|She is very useful.|Ela é muito útil.
+R: Meet Momo, my robot friend.|Conheça a Momo, minha amiga robô.
+R: Good morning! How are you today?|Bom dia! Como você está hoje?
+R: She reminds me of my meetings.|Ela me lembra das reuniões.
+R: She is very useful.|Ela é muito útil.
+X: Hello, Momo!|Olá, Momo!
+C: Robôs de companhia ajudam idosos que moram sozinhos.
+N: Próximo: o robô na fábrica.
+
+T: Robots at the factory | Robôs na fábrica | office | Detroit | Dan,m,🧑🏽,gerente
+K: The robots build cars. | Os robôs montam carros.
+M: Hoje você visita uma fábrica.
+D: Dan|Welcome to the factory. Look at the robots.|Bem-vindo à fábrica. Olhe os robôs.
+D: You|They have long metal arms.|Têm longos braços de metal.
+D: Dan|They build one car every minute.|Montam um carro por minuto.
+D: You|Do people work here too?|Pessoas trabalham aqui também?
+D: Dan|Yes, they control the robots.|Sim, elas controlam os robôs.
+D: You|It is loud and busy.|É barulhento e movimentado.
+D: Dan|Please wear your helmet.|Use o capacete, por favor.
+V: factory|fábrica;metal|metal;control|controlar;busy|movimentado;helmet|capacete
+B: Robots have long {0} arms.|Robôs têm braços {0} longos.|metal=de metal;strong=fortes;white=brancos
+B: They build one car every {0}.|Montam um carro a cada {0}.|minute=minuto;hour=hora;day=dia
+S: Dan|Welcome to the factory. Look at the robots.|Bem-vindo à fábrica. Olhe os robôs.|They have long metal arms.|Têm longos braços de metal.
+S: You|Do people work here too?|Pessoas trabalham aqui também?|Yes, they control the robots.|Sim, elas controlam os robôs.
+R: Look at the robots.|Olhe os robôs.
+R: They build one car every minute.|Montam um carro por minuto.
+R: People control the robots.|Pessoas controlam os robôs.
+R: Please wear your helmet.|Use o capacete, por favor.
+X: It is loud and busy.|É barulhento e movimentado.
+C: Robôs industriais são usados em fábricas de carros desde os anos 1960.
+N: Próximo: o assistente de voz.
+
+T: A voice assistant | Assistente de voz | living | Seattle | Jess,f,🧑🏼,amiga
+K: Hey, what is the weather? | Ei, como está o tempo?
+M: Hoje você fala com um assistente de voz.
+D: Jess|Ask my assistant a question.|Faça uma pergunta ao meu assistente.
+D: You|Hey, what is the weather today?|Ei, como está o tempo hoje?
+D: Assistant|It is sunny, twenty degrees.|Faz sol, vinte graus.
+D: You|Play some music, please.|Toque uma música, por favor.
+D: Assistant|Here is a relaxing song.|Aqui está uma música relaxante.
+D: Jess|It also sets alarms and lists.|Também programa alarmes e listas.
+D: You|That is very practical.|É muito prático.
+V: assistant|assistente;weather|tempo;music|música;alarms|alarmes;practical|prático
+B: What is the {0} today?|Como está o(a) {0} hoje?|weather=tempo;date=data;time=hora
+B: Play some {0}, please.|Toque {0}, por favor.|music=música;jazz=jazz;rock=rock
+S: Jess|Ask my assistant a question.|Faça uma pergunta ao meu assistente.|Hey, what is the weather today?|Ei, como está o tempo hoje?
+S: Jess|It also sets alarms and lists.|Também programa alarmes e listas.|That is very practical.|É muito prático.
+R: What is the weather today?|Como está o tempo hoje?
+R: Play some music, please.|Toque uma música, por favor.
+R: It sets alarms and lists.|Programa alarmes e listas.
+R: That is very practical.|É muito prático.
+X: Ask a question.|Faça uma pergunta.
+C: Assistentes de voz respondem a comandos simples.
+N: Próximo: o carro que dirige sozinho.
+
+T: A self-driving car | Um carro que dirige sozinho | street | California | Sam,m,🧑🏻,engenheiro
+K: The car drives by itself. | O carro dirige sozinho.
+M: Hoje você anda num carro autônomo.
+D: Sam|Welcome! This car drives by itself.|Bem-vindo! Este carro dirige sozinho.
+D: You|There is no driver!|Não tem motorista!
+D: Sam|Right. It has cameras and sensors.|Certo. Tem câmeras e sensores.
+D: You|Is it safe?|É seguro?
+D: Sam|Yes, it stops at red lights.|É, para nos sinais vermelhos.
+D: You|Where do we go?|Aonde vamos?
+D: Sam|To the park. Relax and enjoy.|Ao parque. Relaxe e aproveite.
+V: driver|motorista;cameras|câmeras;sensors|sensores;safe|seguro;lights|sinais
+B: The car has cameras and {0}.|O carro tem câmeras e {0}.|sensors=sensores;lights=luzes;mirrors=espelhos
+B: It stops at red {0}.|Para nos {0} vermelhos.|lights=sinais;signs=sinais;cars=carros
+S: Sam|Welcome! This car drives by itself.|Bem-vindo! Este carro dirige sozinho.|There is no driver!|Não tem motorista!
+S: You|Is it safe?|É seguro?|Yes, it stops at red lights.|É, para nos sinais vermelhos.
+R: This car drives by itself.|Este carro dirige sozinho.
+R: There is no driver.|Não tem motorista.
+R: It has cameras and sensors.|Tem câmeras e sensores.
+R: It stops at red lights.|Para nos sinais vermelhos.
+X: Relax and enjoy.|Relaxe e aproveite.
+C: Táxis autônomos já circulam em algumas cidades dos EUA.
+N: Próximo: o drone.
+
+T: A drone | Um drone | park | Austin | Ben,m,🧑🏽,piloto
+K: The drone flies high. | O drone voa alto.
+M: Hoje você pilota um drone.
+D: Ben|Look at my drone. It flies high.|Olhe o meu drone. Voa alto.
+D: You|Wow! It has a camera.|Uau! Tem uma câmera.
+D: Ben|Yes. It takes photos from the sky.|Sim. Tira fotos do céu.
+D: You|Can I try?|Posso tentar?
+D: Ben|Sure. Push the stick up to go up.|Claro. Empurre a alavanca para subir.
+D: You|It goes up! And now down.|Está subindo! E agora descendo.
+D: Ben|Good. Stay away from people.|Bom. Fique longe das pessoas.
+V: drone|drone;camera|câmera;stick|alavanca;sky|céu;people|pessoas
+B: The drone flies {0}.|O drone voa {0}.|high=alto;fast=rápido;far=longe
+B: Push the stick {0}.|Empurre a alavanca para {0}.|up=cima;down=baixo;left=esquerda
+S: Ben|Look at my drone. It flies high.|Olhe o meu drone. Voa alto.|Wow! It has a camera.|Uau! Tem uma câmera.
+S: You|Can I try?|Posso tentar?|Sure. Push the stick up to go up.|Claro. Empurre a alavanca para subir.
+R: Look at my drone.|Olhe o meu drone.
+R: It flies high.|Voa alto.
+R: It takes photos from the sky.|Tira fotos do céu.
+R: Stay away from people.|Fique longe das pessoas.
+X: Can I try?|Posso tentar?
+C: Drones são usados em filmes, agricultura e resgate.
+N: Próximo: o futuro dos robôs.
+
+T: Robot or human? | Robô ou humano? | classroom | Boston | Dr. Ray,f,👩🏽,professora
+K: Robots help people. | Robôs ajudam pessoas.
+M: Hoje você compara robôs e pessoas.
+D: Dr. Ray|Can a robot do everything a person does?|Um robô faz tudo que uma pessoa faz?
+D: You|No. A robot cannot laugh.|Não. Um robô não ri.
+D: Dr. Ray|Right. And it cannot feel love.|Certo. E não sente amor.
+D: You|But a robot works all day.|Mas um robô trabalha o dia todo.
+D: Dr. Ray|Yes, and it does not get tired.|Sim, e não fica cansado.
+D: You|So robots help people, but do not replace them.|Então robôs ajudam, mas não substituem.
+D: Dr. Ray|Exactly.|Exato.
+V: laugh|rir;love|amor;tired|cansado;replace|substituir;person|pessoa
+B: A robot cannot {0}.|Um robô não pode {0}.|laugh=rir;cry=chorar;dream=sonhar
+B: It does not get {0}.|Ele não fica {0}.|tired=cansado;sick=doente;bored=entediado
+S: Dr. Ray|Can a robot do everything a person does?|Um robô faz tudo que uma pessoa faz?|No. A robot cannot laugh.|Não. Um robô não ri.
+S: You|So robots help people, but do not replace them.|Então robôs ajudam, mas não substituem.|Exactly.|Exato.
+R: A robot cannot laugh.|Um robô não ri.
+R: It cannot feel love.|Não sente amor.
+R: It does not get tired.|Não fica cansado.
+R: Robots help people.|Robôs ajudam as pessoas.
+X: Exactly.|Exato.
+C: Robôs são ótimos em tarefas repetitivas; pessoas, em criatividade.
+N: Próximo: desafio, o seu robô.
+
+T: Build my robot | Desafio do arco: o seu robô | lab | Tokyo | Kai,m,🧑🏻,engenheiro
+K: I want to build a robot. | Quero construir um robô.
+M: Hoje você descreve o seu robô ideal.
+D: Kai|Describe your dream robot.|Descreva o robô dos seus sonhos.
+D: You|He is small and friendly.|Ele é pequeno e simpático.
+D: Kai|What can he do?|O que ele faz?
+D: You|He cleans, cooks and plays music.|Ele limpa, cozinha e toca música.
+D: Kai|What is his name?|Qual é o nome dele?
+D: You|His name is Beep.|O nome dele é Beep.
+D: Kai|Great! Let us build him.|Ótimo! Vamos construí-lo.
+V: describe|descrever;dream|sonho;small|pequeno;friendly|simpático;build|construir
+B: He is small and {0}.|Ele é pequeno e {0}.|friendly=simpático;strong=forte;funny=engraçado
+B: He cleans, cooks and {0}.|Ele limpa, cozinha e {0}.|plays music=toca música;sings=canta;dances=dança
+S: Kai|Describe your dream robot.|Descreva o robô dos seus sonhos.|He is small and friendly.|Ele é pequeno e simpático.
+S: Kai|What is his name?|Qual é o nome dele?|His name is Beep.|O nome dele é Beep.
+R: Describe your dream robot.|Descreva o robô dos seus sonhos.
+R: He is small and friendly.|Ele é pequeno e simpático.
+R: He cleans, cooks and plays music.|Ele limpa, cozinha e toca música.
+R: His name is Beep.|O nome dele é Beep.
+X: Let us build him.|Vamos construí-lo.
+C: Muitos engenheiros começaram com um robô de brinquedo.
+N: Próximo: oficina mecânica.
+BOSS: 1
