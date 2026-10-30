@@ -1,0 +1,233 @@
+# Arco 70 · Loja de eletrônicos
+T: A new phone | Um celular novo | shop | Seattle | Sam,m,🧑🏻,vendedor
+K: I need a new phone. | Preciso de um celular novo.
+M: Hoje você escolhe um celular.
+D: Sam|Welcome! How can I help you?|Bem-vindo! Como posso ajudar?
+D: You|I need a new phone. Mine is old.|Preciso de um celular novo. O meu é velho.
+D: Sam|Do you want a big or a small screen?|Quer tela grande ou pequena?
+D: You|A big one. And a good camera.|Grande. E uma boa câmera.
+D: Sam|This one has both. It is five hundred dollars.|Este tem as duas coisas. Custa quinhentos dólares.
+D: You|That is expensive.|É caro.
+D: Sam|We have a cheaper model too.|Temos um modelo mais barato também.
+V: phone|celular;screen|tela;camera|câmera;cheaper|mais barato;model|modelo
+B: I need a new {0}.|Preciso de um(a) {0} novo(a).|phone=celular;laptop=notebook;camera=câmera
+B: This one has a good {0}.|Este tem uma boa {0}.|camera=câmera;screen=tela;battery=bateria
+S: Sam|Welcome! How can I help you?|Bem-vindo! Como posso ajudar?|I need a new phone. Mine is old.|Preciso de um celular novo. O meu é velho.
+S: Sam|This one has both. It is five hundred dollars.|Este tem as duas coisas. Custa quinhentos dólares.|That is expensive.|É caro.
+R: I need a new phone.|Preciso de um celular novo.
+R: I want a big screen.|Quero uma tela grande.
+R: This one has a good camera.|Este tem uma boa câmera.
+R: We have a cheaper model.|Temos um modelo mais barato.
+X: That is expensive.|É caro.
+C: Nos EUA, muita gente compra celular parcelado com a operadora.
+N: Próximo: a bateria.
+
+T: Battery life | Duração da bateria | shop | Seattle | Sam,m,🧑🏻,vendedor
+K: How long does the battery last? | Quanto dura a bateria?
+M: Hoje você pergunta sobre a bateria.
+D: You|How long does the battery last?|Quanto dura a bateria?
+D: Sam|About two days with normal use.|Cerca de dois dias com uso normal.
+D: You|And how long to charge?|E quanto tempo para carregar?
+D: Sam|One hour with a fast charger.|Uma hora com um carregador rápido.
+D: You|Is the charger included?|O carregador está incluso?
+D: Sam|No, it is sold separately.|Não, é vendido à parte.
+D: You|How much is it?|Quanto custa?
+D: Sam|Twenty dollars.|Vinte dólares.
+V: battery|bateria;charge|carregar;charger|carregador;included|incluso;separately|à parte
+B: The battery lasts {0} days.|A bateria dura {0} dias.|two=dois;three=três;one=um
+B: The charger is {0}.|O carregador é {0}.|included=incluso;extra=à parte;fast=rápido
+S: You|How long does the battery last?|Quanto dura a bateria?|About two days with normal use.|Cerca de dois dias com uso normal.
+S: You|Is the charger included?|O carregador está incluso?|No, it is sold separately.|Não, é vendido à parte.
+R: How long does the battery last?|Quanto dura a bateria?
+R: It lasts about two days.|Dura cerca de dois dias.
+R: Is the charger included?|O carregador está incluso?
+R: It is twenty dollars.|Custa vinte dólares.
+X: Sold separately.|Vendido à parte.
+C: "Sold separately" é uma frase comum em embalagens de eletrônicos.
+N: Próximo: o notebook.
+
+T: A laptop | Um notebook | shop | Seattle | Sam,m,🧑🏻,vendedor
+K: I need a laptop for work. | Preciso de um notebook para o trabalho.
+M: Hoje você escolhe um notebook.
+D: Sam|Are you looking for a laptop?|Você procura um notebook?
+D: You|Yes. For work and for study.|Sim. Para trabalho e estudo.
+D: Sam|Do you need it light?|Precisa que seja leve?
+D: You|Yes, I carry it every day.|Sim, levo todo dia.
+D: Sam|This one is very light. It has a big screen.|Este é muito leve. Tem tela grande.
+D: You|How much memory does it have?|Quanta memória tem?
+D: Sam|Sixteen gigabytes.|Dezesseis gigabytes.
+V: laptop|notebook;study|estudo;light|leve;memory|memória;gigabytes|gigabytes
+B: I need a laptop for {0}.|Preciso de um notebook para {0}.|work=trabalho;study=estudo;travel=viagem
+B: It has {0} gigabytes.|Tem {0} gigabytes.|sixteen=dezesseis;eight=oito;thirty-two=trinta e dois
+S: Sam|Are you looking for a laptop?|Você procura um notebook?|Yes. For work and for study.|Sim. Para trabalho e estudo.
+S: You|How much memory does it have?|Quanta memória tem?|Sixteen gigabytes.|Dezesseis gigabytes.
+R: I need a laptop for work.|Preciso de um notebook para o trabalho.
+R: It is very light.|É muito leve.
+R: It has a big screen.|Tem tela grande.
+R: How much memory does it have?|Quanta memória tem?
+X: Light and fast.|Leve e rápido.
+C: Gigabyte (GB) mede a memória e o armazenamento.
+N: Próximo: os fones de ouvido.
+
+T: Headphones | Fones de ouvido | shop | Seattle | Lia,f,👩🏽,vendedora
+K: Can I try them? | Posso experimentar?
+M: Hoje você testa fones de ouvido.
+D: Lia|These are our best headphones.|Estes são nossos melhores fones.
+D: You|Can I try them?|Posso experimentar?
+D: Lia|Of course. Put them on.|Claro. Coloque.
+D: You|The sound is great. Very clear.|O som é ótimo. Muito claro.
+D: Lia|They cancel noise too.|Eles cancelam ruído também.
+D: You|How much are they?|Quanto custam?
+D: Lia|One hundred and twenty dollars.|Cento e vinte dólares.
+V: headphones|fones;sound|som;noise|ruído;cancel|cancelar;clear|claro
+B: Can I {0} them?|Posso {0}?|try=experimentar;buy=comprar;see=ver
+B: The sound is {0}.|O som é {0}.|clear=claro;great=ótimo;loud=alto
+S: Lia|These are our best headphones.|Estes são nossos melhores fones.|Can I try them?|Posso experimentar?
+S: You|How much are they?|Quanto custam?|One hundred and twenty dollars.|Cento e vinte dólares.
+R: Can I try them?|Posso experimentar?
+R: The sound is great.|O som é ótimo.
+R: They cancel noise.|Eles cancelam ruído.
+R: How much are they?|Quanto custam?
+X: Put them on.|Coloque.
+C: Fones com cancelamento de ruído são ótimos em viagens.
+N: Próximo: a TV.
+
+T: A big TV | Uma TV grande | shop | Seattle | Sam,m,🧑🏻,vendedor
+K: How big is the screen? | Qual é o tamanho da tela?
+M: Hoje você escolhe uma TV.
+D: Sam|Look at this TV. It is brand new.|Olhe esta TV. É novinha.
+D: You|How big is the screen?|Qual é o tamanho da tela?
+D: Sam|Fifty inches. It is very sharp.|Cinquenta polegadas. É muito nítida.
+D: You|Is it a smart TV?|É uma smart TV?
+D: Sam|Yes. You can watch movies and series.|É. Você assiste a filmes e séries.
+D: You|It is perfect for my living room.|É perfeita para a minha sala.
+D: Sam|It is on sale today.|Está em promoção hoje.
+V: screen|tela;inches|polegadas;sharp|nítida;smart|inteligente;sale|promoção
+B: The screen is {0} inches.|A tela tem {0} polegadas.|fifty=cinquenta;forty=quarenta;sixty=sessenta
+B: It is on {0} today.|Está em {0} hoje.|sale=promoção;special=oferta;discount=desconto
+S: Sam|Look at this TV. It is brand new.|Olhe esta TV. É novinha.|How big is the screen?|Qual é o tamanho da tela?
+S: Sam|Yes. You can watch movies and series.|É. Você assiste a filmes e séries.|It is perfect for my living room.|É perfeita para a minha sala.
+R: How big is the screen?|Qual é o tamanho da tela?
+R: It is fifty inches.|Tem cinquenta polegadas.
+R: It is a smart TV.|É uma smart TV.
+R: It is on sale today.|Está em promoção hoje.
+X: Brand new.|Novinha.
+C: Nos EUA o tamanho de TV é dado em polegadas (inches).
+N: Próximo: o conserto.
+
+T: Fix my phone | Consertar o celular | shop | Seattle | Dan,m,🧑🏽,técnico
+K: The screen is broken. | A tela está quebrada.
+M: Hoje você leva o celular para consertar.
+D: Dan|Hello. What is the problem?|Olá. Qual é o problema?
+D: You|The screen is broken.|A tela está quebrada.
+D: Dan|Let me see. Yes, it is cracked.|Deixe-me ver. Sim, está rachada.
+D: You|Can you fix it?|Você consegue consertar?
+D: Dan|Of course. It takes one hour.|Claro. Leva uma hora.
+D: You|How much is it?|Quanto custa?
+D: Dan|Eighty dollars.|Oitenta dólares.
+V: broken|quebrada;cracked|rachada;fix|consertar;hour|hora;problem|problema
+B: The screen is {0}.|A tela está {0}.|broken=quebrada;cracked=rachada;dirty=suja
+B: It takes {0} hour.|Leva {0} hora.|one=uma;two=duas;half an=meia
+S: Dan|Hello. What is the problem?|Olá. Qual é o problema?|The screen is broken.|A tela está quebrada.
+S: You|Can you fix it?|Você consegue consertar?|Of course. It takes one hour.|Claro. Leva uma hora.
+R: The screen is broken.|A tela está quebrada.
+R: It is cracked.|Está rachada.
+R: Can you fix it?|Você consegue consertar?
+R: It takes one hour.|Leva uma hora.
+X: How much is it?|Quanto custa?
+C: Capinhas e películas protegem a tela do celular.
+N: Próximo: a garantia.
+
+T: The warranty | A garantia | shop | Seattle | Sam,m,🧑🏻,vendedor
+K: It has a one-year warranty. | Tem um ano de garantia.
+M: Hoje você entende a garantia.
+D: You|Does it have a warranty?|Tem garantia?
+D: Sam|Yes, one year.|Tem, um ano.
+D: You|What does it cover?|O que cobre?
+D: Sam|Problems with the battery and the screen.|Problemas com a bateria e a tela.
+D: You|And if I break it?|E se eu quebrar?
+D: Sam|Then it is not covered.|Aí não está coberto.
+D: You|Okay. Where do I keep the receipt?|Certo. Onde guardo o recibo?
+D: Sam|Keep it in a safe place.|Guarde num lugar seguro.
+V: warranty|garantia;cover|cobrir;receipt|recibo;break|quebrar;safe|seguro
+B: It has a {0}-year warranty.|Tem {0} ano de garantia.|one=um;two=dois;three=três
+B: Keep the {0}.|Guarde {0}.|receipt=o recibo;box=a caixa;card=o cartão
+S: You|Does it have a warranty?|Tem garantia?|Yes, one year.|Tem, um ano.
+S: You|And if I break it?|E se eu quebrar?|Then it is not covered.|Aí não está coberto.
+R: Does it have a warranty?|Tem garantia?
+R: It has a one-year warranty.|Tem um ano de garantia.
+R: What does it cover?|O que cobre?
+R: Keep the receipt.|Guarde o recibo.
+X: Keep it safe.|Guarde em segurança.
+C: Guardar o recibo é essencial para usar a garantia.
+N: Próximo: o carregador.
+
+T: A broken charger | Carregador com defeito | shop | Seattle | Lia,f,👩🏽,vendedora
+K: The charger does not work. | O carregador não funciona.
+M: Hoje você troca um carregador.
+D: You|Hi. This charger does not work.|Oi. Este carregador não funciona.
+D: Lia|Let me test it. You are right.|Deixe-me testar. Você tem razão.
+D: You|It is from last week.|É da semana passada.
+D: Lia|Do you have the receipt?|Você tem o recibo?
+D: You|Yes, here it is.|Tenho, aqui está.
+D: Lia|Then I give you a new one.|Então dou um novo.
+D: You|Thank you very much.|Muito obrigado.
+V: charger|carregador;test|testar;receipt|recibo;new|novo;right|razão
+B: This {0} does not work.|Este(a) {0} não funciona.|charger=carregador;phone=celular;cable=cabo
+B: Do you have the {0}?|Você tem {0}?|receipt=o recibo;card=o cartão;box=a caixa
+S: You|Hi. This charger does not work.|Oi. Este carregador não funciona.|Let me test it. You are right.|Deixe-me testar. Você tem razão.
+S: Lia|Do you have the receipt?|Você tem o recibo?|Yes, here it is.|Tenho, aqui está.
+R: This charger does not work.|Este carregador não funciona.
+R: Let me test it.|Deixe-me testar.
+R: Do you have the receipt?|Você tem o recibo?
+R: I give you a new one.|Dou um novo.
+X: You are right.|Você tem razão.
+C: Lojas costumam trocar produtos com defeito sem custo.
+N: Próximo: instalar o aparelho.
+
+T: Set it up | Configurar o aparelho | living | Seattle | Kai,m,🧑🏻,amigo
+K: Connect it to Wi-Fi. | Conecte ao Wi-Fi.
+M: Hoje você configura um aparelho novo.
+D: Kai|Let me help you set up your new TV.|Deixe-me ajudar a configurar sua TV nova.
+D: You|Thanks. Where do I plug it in?|Obrigado. Onde ligo na tomada?
+D: Kai|Here, behind the TV. Now turn it on.|Aqui, atrás da TV. Agora ligue.
+D: You|It asks for the language.|Pede o idioma.
+D: Kai|Choose English. Then connect to Wi-Fi.|Escolha inglês. Depois conecte ao Wi-Fi.
+D: You|What is the password?|Qual é a senha?
+D: Kai|Look at the router. It is on the back.|Olhe o roteador. Está atrás.
+V: set up|configurar;plug|ligar na tomada;language|idioma;router|roteador;connect|conectar
+B: Connect to {0}.|Conecte ao {0}.|Wi-Fi=Wi-Fi;the phone=celular;the TV=TV
+B: Choose {0}.|Escolha {0}.|English=inglês;a language=um idioma;a name=um nome
+S: Kai|Let me help you set up your new TV.|Deixe-me ajudar a configurar sua TV nova.|Thanks. Where do I plug it in?|Obrigado. Onde ligo na tomada?
+S: Kai|Choose English. Then connect to Wi-Fi.|Escolha inglês. Depois conecte ao Wi-Fi.|What is the password?|Qual é a senha?
+R: Where do I plug it in?|Onde ligo na tomada?
+R: Choose English.|Escolha inglês.
+R: Connect to Wi-Fi.|Conecte ao Wi-Fi.
+R: The password is on the router.|A senha está no roteador.
+X: Turn it on.|Ligue.
+C: A senha do Wi-Fi costuma estar numa etiqueta atrás do roteador.
+N: Próximo: desafio, meus aparelhos.
+
+T: My gadgets | Desafio do arco: meus aparelhos | living | Seattle | Mia,f,👩🏻,amiga
+K: I love my gadgets. | Adoro meus aparelhos.
+M: Hoje você fala dos seus aparelhos.
+D: Mia|What gadgets do you have?|Que aparelhos você tem?
+D: You|A phone, a laptop and headphones.|Um celular, um notebook e fones.
+D: Mia|Which one do you use most?|Qual você mais usa?
+D: You|My phone. I use it every day.|O celular. Uso todo dia.
+D: Mia|Is the battery good?|A bateria é boa?
+D: You|Yes, it lasts two days.|É, dura dois dias.
+D: Mia|Great. Technology is useful.|Ótimo. A tecnologia é útil.
+V: gadgets|aparelhos;laptop|notebook;headphones|fones;battery|bateria;useful|útil
+B: I have a {0}.|Eu tenho um(a) {0}.|phone=celular;laptop=notebook;tablet=tablet
+B: I use my phone every {0}.|Uso meu celular todo {0}.|day=dia;morning=manhã;night=noite
+S: Mia|What gadgets do you have?|Que aparelhos você tem?|A phone, a laptop and headphones.|Um celular, um notebook e fones.
+S: Mia|Is the battery good?|A bateria é boa?|Yes, it lasts two days.|É, dura dois dias.
+R: What gadgets do you have?|Que aparelhos você tem?
+R: I have a phone and a laptop.|Tenho um celular e um notebook.
+R: I use my phone every day.|Uso meu celular todo dia.
+R: Technology is useful.|A tecnologia é útil.
+X: I love my gadgets.|Adoro meus aparelhos.
+C: "Gadget" é qualquer aparelho eletrônico pequeno e útil.
+N: Próximo: o próximo bloco.
+BOSS: 1
