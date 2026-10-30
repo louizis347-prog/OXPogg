@@ -1,0 +1,232 @@
+# Arco 61 · Piratas e navios
+T: Ahoy, matey! | Falar como pirata | water | Caribbean | Ben,m,🧑🏽,pirata
+K: Ahoy, matey! | Ahoy, companheiro!
+M: Hoje você conhece um pirata de brincadeira.
+D: Ben|Ahoy, matey! I am a pirate.|Ahoy, companheiro! Sou um pirata.
+D: You|Hello! What is the name of your ship?|Olá! Qual é o nome do seu navio?
+D: Ben|The Black Star. It is the fastest ship.|A Estrela Negra. É o navio mais rápido.
+D: You|Is it big?|É grande?
+D: Ben|Very big. It has twenty sailors.|Muito grande. Tem vinte marinheiros.
+D: You|I like your hat.|Gosto do seu chapéu.
+D: Ben|Thank you. Come on board!|Obrigado. Venha a bordo!
+V: ship|navio;sailors|marinheiros;pirate|pirata;fastest|mais rápido;hat|chapéu
+B: I am a {0}.|Eu sou {0}.|pirate=pirata;sailor=marinheiro;captain=capitão
+B: It has twenty {0}.|Tem vinte {0}.|sailors=marinheiros;guns=canhões;flags=bandeiras
+S: Ben|Ahoy, matey! I am a pirate.|Ahoy, companheiro! Sou um pirata.|Hello! What is the name of your ship?|Olá! Qual é o nome do seu navio?
+S: Ben|Very big. It has twenty sailors.|Muito grande. Tem vinte marinheiros.|I like your hat.|Gosto do seu chapéu.
+R: Ahoy, matey!|Ahoy, companheiro!
+R: I am a pirate.|Sou um pirata.
+R: The ship is big.|O navio é grande.
+R: Come on board!|Venha a bordo!
+X: Ahoy!|Ahoy!
+C: "Ahoy" é um cumprimento clássico de marinheiros.
+N: Próximo: o navio.
+
+T: On the pirate ship | No navio pirata | water | Caribbean | Ben,m,🧑🏽,pirata
+K: Raise the flag. | Levante a bandeira.
+M: Hoje você sobe a bordo do navio pirata.
+D: Ben|Welcome on board. Raise the flag!|Bem-vindo a bordo. Levante a bandeira!
+D: You|Which flag?|Qual bandeira?
+D: Ben|The black one with the skull.|A preta com a caveira.
+D: You|It is very tall, this mast.|Este mastro é muito alto.
+D: Ben|Yes, and the sails are huge.|Sim, e as velas são enormes.
+D: You|Where do I sleep?|Onde eu durmo?
+D: Ben|In a hammock, below the deck.|Numa rede, embaixo do convés.
+V: flag|bandeira;mast|mastro;sails|velas;deck|convés;hammock|rede
+B: Raise the {0}.|Levante {0}.|flag=a bandeira;sail=a vela;anchor=a âncora
+B: I sleep in a {0}.|Eu durmo numa {0}.|hammock=rede;bed=cama;cabin=cabine
+S: Ben|Welcome on board. Raise the flag!|Bem-vindo a bordo. Levante a bandeira!|Which flag?|Qual bandeira?
+S: You|Where do I sleep?|Onde eu durmo?|In a hammock, below the deck.|Numa rede, embaixo do convés.
+R: Raise the flag.|Levante a bandeira.
+R: The mast is very tall.|O mastro é muito alto.
+R: The sails are huge.|As velas são enormes.
+R: I sleep in a hammock.|Eu durmo numa rede.
+X: Welcome on board.|Bem-vindo a bordo.
+C: As velas e o mastro movem um navio com a força do vento.
+N: Próximo: o mapa.
+
+T: The old map | O mapa antigo | beach | Caribbean | Ben,m,🧑🏽,pirata
+K: X marks the spot. | O X marca o local.
+M: Hoje você lê um mapa de pirata.
+D: Ben|Look at this old map.|Olhe este mapa antigo.
+D: You|There is an X on the island.|Tem um X na ilha.
+D: Ben|X marks the spot. The treasure is there.|O X marca o local. O tesouro está lá.
+D: You|How far is it?|Quão longe é?
+D: Ben|Two days by sea, north.|Dois dias de mar, ao norte.
+D: You|Do we have a compass?|Temos uma bússola?
+D: Ben|Yes, here. Let us go!|Sim, aqui. Vamos!
+V: map|mapa;spot|local;treasure|tesouro;compass|bússola;north|norte
+B: X marks the {0}.|O X marca o {0}.|spot=local;treasure=tesouro;island=ilha
+B: It is two days {0}.|São dois dias {0}.|by sea=de mar;by boat=de barco;on foot=a pé
+S: Ben|Look at this old map.|Olhe este mapa antigo.|There is an X on the island.|Tem um X na ilha.
+S: You|How far is it?|Quão longe é?|Two days by sea, north.|Dois dias de mar, ao norte.
+R: Look at this old map.|Olhe este mapa antigo.
+R: X marks the spot.|O X marca o local.
+R: It is two days by sea.|São dois dias de mar.
+R: We have a compass.|Temos uma bússola.
+X: Let us go!|Vamos!
+C: "X marks the spot" é uma frase famosa de caça ao tesouro.
+N: Próximo: a ilha do tesouro.
+
+T: Treasure island | A ilha do tesouro | beach | Caribbean | Ben,m,🧑🏽,pirata
+K: Dig here. | Cave aqui.
+M: Hoje você acha um tesouro.
+D: Ben|We are here! This is the island.|Chegamos! Esta é a ilha.
+D: You|The beach is empty and quiet.|A praia está vazia e silenciosa.
+D: Ben|Walk ten steps from the big rock.|Ande dez passos da pedra grande.
+D: You|One, two, three... ten.|Um, dois, três... dez.
+D: Ben|Dig here with the shovel!|Cave aqui com a pá!
+D: You|I see a box!|Estou vendo uma caixa!
+D: Ben|Open it. What is inside?|Abra. O que tem dentro?
+V: island|ilha;empty|vazia;rock|pedra;shovel|pá;box|caixa
+B: Walk ten {0} from the rock.|Ande dez {0} da pedra.|steps=passos;meters=metros;minutes=minutos
+B: Dig {0} with the shovel.|Cave {0} com a pá.|here=aqui;there=ali;slowly=devagar
+S: Ben|We are here! This is the island.|Chegamos! Esta é a ilha.|The beach is empty and quiet.|A praia está vazia e silenciosa.
+S: Ben|Dig here with the shovel!|Cave aqui com a pá!|I see a box!|Estou vendo uma caixa!
+R: This is the island.|Esta é a ilha.
+R: Walk ten steps.|Ande dez passos.
+R: Dig here with the shovel.|Cave aqui com a pá.
+R: I see a box!|Estou vendo uma caixa!
+X: Open it.|Abra.
+C: Mapas de tesouro são clássicos de histórias e brincadeiras infantis.
+N: Próximo: as moedas de ouro.
+
+T: Gold coins | Moedas de ouro | beach | Caribbean | Ben,m,🧑🏽,pirata
+K: The box is full of gold. | A caixa está cheia de ouro.
+M: Hoje você conta o tesouro.
+D: Ben|Look! The box is full of gold coins.|Olhe! A caixa está cheia de moedas de ouro.
+D: You|They are shiny and heavy.|Elas são brilhantes e pesadas.
+D: Ben|How many coins do you count?|Quantas moedas você conta?
+D: You|One, two, three... one hundred!|Uma, duas, três... cem!
+D: Ben|And a ring with a red stone.|E um anel com uma pedra vermelha.
+D: You|It is beautiful.|É lindo.
+D: Ben|We are rich, my friend!|Estamos ricos, meu amigo!
+V: gold|ouro;coins|moedas;shiny|brilhantes;ring|anel;rich|ricos
+B: The box is full of {0}.|A caixa está cheia de {0}.|gold=ouro;coins=moedas;jewels=joias
+B: They are shiny and {0}.|Elas são brilhantes e {0}.|heavy=pesadas;round=redondas;old=antigas
+S: Ben|Look! The box is full of gold coins.|Olhe! A caixa está cheia de moedas de ouro.|They are shiny and heavy.|Elas são brilhantes e pesadas.
+S: Ben|How many coins do you count?|Quantas moedas você conta?|One, two, three... one hundred!|Uma, duas, três... cem!
+R: The box is full of gold.|A caixa está cheia de ouro.
+R: The coins are shiny and heavy.|As moedas são brilhantes e pesadas.
+R: I count one hundred coins.|Conto cem moedas.
+R: We are rich!|Estamos ricos!
+X: My friend!|Meu amigo!
+C: Moedas antigas de ouro valem muito para colecionadores.
+N: Próximo: o papagaio.
+
+T: The pirate parrot | O papagaio do pirata | beach | Caribbean | Ben,m,🧑🏽,pirata
+K: The parrot talks. | O papagaio fala.
+M: Hoje você conversa com um papagaio.
+D: Ben|This is Polly, my parrot.|Esta é a Polly, minha papagaio.
+D: You|She is red, blue and yellow.|Ela é vermelha, azul e amarela.
+D: Ben|She can talk. Say hello, Polly!|Ela fala. Diga olá, Polly!
+D: You|Hello, Polly!|Olá, Polly!
+D: Ben|"Pieces of eight!" she says.|"Moedas de oito!" ela diz.
+D: You|She repeats everything!|Ela repete tudo!
+D: Ben|Yes, so be careful what you say.|Sim, então cuidado com o que diz.
+V: parrot|papagaio;talk|falar;repeats|repete;everything|tudo;careful|cuidado
+B: She is red, blue and {0}.|Ela é vermelha, azul e {0}.|yellow=amarela;green=verde;white=branca
+B: She repeats {0}.|Ela repete {0}.|everything=tudo;words=palavras;songs=músicas
+S: Ben|This is Polly, my parrot.|Esta é a Polly, minha papagaio.|She is red, blue and yellow.|Ela é vermelha, azul e amarela.
+S: Ben|She can talk. Say hello, Polly!|Ela fala. Diga olá, Polly!|Hello, Polly!|Olá, Polly!
+R: This is my parrot.|Esta é a minha papagaio.
+R: She can talk.|Ela fala.
+R: She repeats everything.|Ela repete tudo.
+R: Be careful what you say.|Cuidado com o que diz.
+X: Hello, Polly!|Olá, Polly!
+C: Piratas de filme quase sempre têm um papagaio no ombro.
+N: Próximo: a tempestade.
+
+T: Storm ahead | Tempestade à frente | water | Caribbean | Ben,m,🧑🏽,pirata
+K: Hold the wheel. | Segure o leme.
+M: Hoje você enfrenta uma tempestade no mar.
+D: Ben|Look at the sky. Storm ahead!|Olhe o céu. Tempestade à frente!
+D: You|The clouds are black.|As nuvens são pretas.
+D: Ben|Hold the wheel. I lower the sails.|Segure o leme. Eu baixo as velas.
+D: You|The waves are huge!|As ondas são enormes!
+D: Ben|Stay calm. The ship is strong.|Fique calmo. O navio é forte.
+D: You|I am very afraid.|Estou com muito medo.
+D: Ben|Breathe. The storm passes soon.|Respire. A tempestade passa logo.
+V: storm|tempestade;wheel|leme;clouds|nuvens;lower|baixar;passes|passa
+B: Hold the {0}.|Segure {0}.|wheel=o leme;rope=a corda;rail=o corrimão
+B: The clouds are {0}.|As nuvens são {0}.|black=pretas;dark=escuras;big=grandes
+S: Ben|Look at the sky. Storm ahead!|Olhe o céu. Tempestade à frente!|The clouds are black.|As nuvens são pretas.
+S: Ben|Stay calm. The ship is strong.|Fique calmo. O navio é forte.|I am very afraid.|Estou com muito medo.
+R: Storm ahead!|Tempestade à frente!
+R: Hold the wheel.|Segure o leme.
+R: The waves are huge.|As ondas são enormes.
+R: Stay calm.|Fique calmo.
+X: Breathe.|Respire.
+C: Marinheiros dizem "leme" como "wheel" ou "helm".
+N: Próximo: o porto.
+
+T: Back to port | De volta ao porto | water | Caribbean | Ben,m,🧑🏽,pirata
+K: We are home. | Estamos em casa.
+M: Hoje você volta ao porto.
+D: Ben|Look! I see the port.|Olhe! Vejo o porto.
+D: You|Finally! I am tired and hungry.|Finalmente! Estou cansado e com fome.
+D: Ben|We eat at the tavern tonight.|Comemos na taverna hoje à noite.
+D: You|What do they serve?|O que servem?
+D: Ben|Fish, bread and soup.|Peixe, pão e sopa.
+D: You|Sounds perfect.|Parece perfeito.
+D: Ben|Welcome home, matey.|Bem-vindo de volta, companheiro.
+V: port|porto;finally|finalmente;tavern|taverna;serve|servir;soup|sopa
+B: I see the {0}.|Vejo {0}.|port=o porto;ship=o navio;island=a ilha
+B: We eat at the {0}.|Comemos na {0}.|tavern=taverna;cafe=lanchonete;kitchen=cozinha
+S: Ben|Look! I see the port.|Olhe! Vejo o porto.|Finally! I am tired and hungry.|Finalmente! Estou cansado e com fome.
+S: Ben|Fish, bread and soup.|Peixe, pão e sopa.|Sounds perfect.|Parece perfeito.
+R: I see the port.|Vejo o porto.
+R: I am tired and hungry.|Estou cansado e com fome.
+R: We eat at the tavern.|Comemos na taverna.
+R: Welcome home.|Bem-vindo de volta.
+X: Finally!|Finalmente!
+C: Portos eram o coração do comércio e da vida marítima.
+N: Próximo: a vida do marinheiro.
+
+T: A sailor's life | A vida do marinheiro | water | Atlantic | Tom,m,🧑🏽,marinheiro
+K: Sailors work hard. | Marinheiros trabalham duro.
+M: Hoje você conhece a rotina de um marinheiro.
+D: You|What do you do every day?|O que você faz todo dia?
+D: Tom|I wake up at five and clean the deck.|Acordo às cinco e limpo o convés.
+D: You|Is it hard work?|É trabalho duro?
+D: Tom|Yes, but I love the sea.|É, mas amo o mar.
+D: You|What do you eat on the ship?|O que você come no navio?
+D: Tom|Bread, rice and fish.|Pão, arroz e peixe.
+D: You|Do you miss your family?|Sente falta da família?
+D: Tom|A lot. I call them on Sundays.|Muito. Ligo para eles aos domingos.
+V: sailor|marinheiro;deck|convés;miss|sentir falta;family|família;Sundays|domingos
+B: I clean the {0}.|Eu limpo o {0}.|deck=convés;kitchen=cozinha;ship=navio
+B: I miss my {0}.|Sinto falta da minha {0}.|family=família;home=casa;friends=amigos
+S: You|What do you do every day?|O que você faz todo dia?|I wake up at five and clean the deck.|Acordo às cinco e limpo o convés.
+S: You|Do you miss your family?|Sente falta da família?|A lot. I call them on Sundays.|Muito. Ligo para eles aos domingos.
+R: I wake up at five.|Acordo às cinco.
+R: I clean the deck.|Limpo o convés.
+R: I love the sea.|Amo o mar.
+R: I miss my family.|Sinto falta da minha família.
+X: A lot.|Muito.
+C: Navios de carga hoje passam meses no mar.
+N: Próximo: desafio, sua história de pirata.
+
+T: My pirate story | Desafio do arco: sua história de pirata | beach | Caribbean | Ben,m,🧑🏽,pirata
+K: I am the pirate captain. | Eu sou o capitão pirata.
+M: Hoje você inventa uma história de pirata.
+D: Ben|Tell me your pirate story.|Conte a sua história de pirata.
+D: You|I am the captain of a big ship.|Sou o capitão de um navio grande.
+D: Ben|Where do you sail?|Para onde você navega?
+D: You|To a hidden island in the north.|Para uma ilha escondida no norte.
+D: Ben|And what is there?|E o que tem lá?
+D: You|A box full of gold and jewels.|Uma caixa cheia de ouro e joias.
+D: Ben|A great story, captain!|Uma ótima história, capitão!
+V: captain|capitão;sail|navegar;hidden|escondida;jewels|joias;story|história
+B: I am the {0} of a big ship.|Sou o(a) {0} de um navio grande.|captain=capitão;owner=dono;pilot=piloto
+B: I sail to a {0} island.|Navego para uma ilha {0}.|hidden=escondida;quiet=calma;small=pequena
+S: Ben|Tell me your pirate story.|Conte a sua história de pirata.|I am the captain of a big ship.|Sou o capitão de um navio grande.
+S: Ben|And what is there?|E o que tem lá?|A box full of gold and jewels.|Uma caixa cheia de ouro e joias.
+R: Tell me your pirate story.|Conte a sua história de pirata.
+R: I am the captain.|Sou o capitão.
+R: I sail to a hidden island.|Navego para uma ilha escondida.
+R: A box full of gold and jewels.|Uma caixa cheia de ouro e joias.
+X: A great story!|Uma ótima história!
+C: Inventar histórias é um jeito divertido de usar vocabulário novo.
+N: Próximo: um casamento.
+BOSS: 1
