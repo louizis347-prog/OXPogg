@@ -45,3 +45,11 @@ Cada episódio atual é etiquetado por estágio (pelo padrão em K) e assume uma
 1. Gerar o mapa/CSV com a etiquetagem manual dos 210. 
 2. Escrever o estágio 1 completo (80) como piloto: ver o tom dos pares.
 3. Seguir estágio a estágio, validando padrões e vocabulário.
+
+
+## Ordem pedagógica atual (revisada)
+A ordem NÃO é mais por pontuação automática. `tools/pocket/ordenar.py` tem:
+1. **Trilha curada à mão** (≈115 episódios): primeiros contatos → pedir o básico → eu e as pessoas → lugares, casa e cidade.
+2. **Estágios 5 a 10** por tema e dificuldade (rotina/escola/trabalho → serviços/comida/saúde → lazer/viagem/natureza → cultura → mundo/história/fantasia → integração), sempre sem dois episódios seguidos do mesmo arco.
+3. Revisões finais ("Everything you know", "Look how much you know", "A full day") no fim.
+O mapa auditável é `tools/pocket/mapa_a1.csv`. Para adicionar episódios novos, inclua o título num estágio de `ordenar.py`.
