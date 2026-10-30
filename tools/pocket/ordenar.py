@@ -14,9 +14,9 @@ by={x['t']:x for x in eps}
 TRILHA=[
 # 1. Primeiros contatos
 ('1 Primeiros contatos',['Nice to meet you','How are you?','Say hello in many languages','Where are you from?','Nationalities','What languages do you speak?',
- 'Count with me','What time is it?','Days of the week','Months of the year',"Today's date",'Happy birthday!','Happy New Year!']),
+ 'Count with me','What time is it?','Telling the time','Days of the week','Months of the year',"Today's date",'Happy birthday!','Happy New Year!']),
 # 2. Pedir e perguntar o básico
-('2 Pedir o básico',['A coffee, please','How much is it?','Price check','Give change','A dozen eggs','Where is the restroom?','A table for two',
+('2 Pedir o básico',['A coffee, please','How much is it?','Price check','Give change','Weight and size','My phone number','A dozen eggs','Where is the restroom?','A table for two',
  'Is this seat free?','One ticket, please','To the airport, please','Two tickets, please','Where is gate 12?','Which way to the station?',
  'I am so sorry','Thanks a lot','Can you help me?','Could you repeat that?','I do not understand']),
 # 3. Eu, família e gente
@@ -32,9 +32,9 @@ TRILHA=[
  'Where is the classroom?','A campus tour','Is this the right office?']),
 ]
 # ---------- estágios do resto (por arco de origem) ----------
-ESTAGIO={5:[2,8,9,44,50,42,13,40,41],  # rotina, escola, trabalho, vida digital
+ESTAGIO={5:[2,8,9,44,50,42,13,41],  # rotina, escola, trabalho, vida digital
          6:[3,4,5,6,11,12,19,20,21,38,48,16],  # pedir/serviços/comida/saúde/emoções
-         7:[10,14,15,46,52,22,23,45,32,33],      # lazer, festas, viagem, bichos, natureza
+         7:[10,14,15,46,52,22,23,45,32,33,40],      # lazer, festas, viagem, bichos, natureza
          8:[24,26,27,28,29,30,31],               # música, cinema, esporte, arte, moda, jobs, comida
          9:[34,35,36,37,47,49,43,51,53,55,54],   # aventura, mistério, fantasia, festivais, ciência, história
          10:[56,25,39]}
