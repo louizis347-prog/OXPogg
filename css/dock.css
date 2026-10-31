@@ -1,0 +1,37 @@
+/* Mochila: nada passa da margem */
+.m2-bagw,.m2-bagopen,.m2-bagit{max-width:100%;min-width:0;box-sizing:border-box}
+.m2-bagopen{overflow:hidden}
+.m2-bagit{width:100%}
+.m2-bi{max-width:100%;min-width:0;box-sizing:border-box}
+.m2-bi>b,.m2-bi>small,.m2-bi b,.m2-bi small{min-width:0;overflow-wrap:anywhere;word-break:break-word}
+.m2-bi{flex:0 1 auto}
+.m2-bi.rd{outline:3px solid #FFB627;box-shadow:0 0 0 4px rgba(255,182,39,.28);transform:scale(1.03)}
+.m2-bagrow{max-width:100%;box-sizing:border-box}
+.m2-fin-g,.m2-fg{max-width:100%;min-width:0;box-sizing:border-box}
+.m2-fg b{overflow-wrap:anywhere}
+/* Barra de baixo: compacta, mais bonita e minimizável */
+#player#player .p-foot{position:relative}
+#player#player .p-foot .bubble{font-size:13px!important;line-height:1.38!important;padding:8px 12px!important;max-height:68px!important;overflow-y:auto!important;border-radius:16px!important;border:1.5px solid rgba(11,124,136,.28)!important;background:linear-gradient(135deg,#FFFFFF,#EEF8F7)!important;box-shadow:0 6px 14px -10px rgba(14,47,58,.5)!important;scrollbar-width:thin}
+#player#player .p-foot .pog-dock{width:34px!important;height:34px!important}
+#player#player .p-foot .cta{padding-block:11px!important;border-radius:14px!important;font-weight:800!important;letter-spacing:.01em}
+#player#player .p-foot .pback,#player#player .p-foot .pskip{width:40px!important;height:40px!important;border-radius:13px!important}
+#player#player .p-foot{padding-top:8px!important;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))!important}
+.dock-tog{position:absolute;right:12px;top:-15px;z-index:30;display:inline-flex;align-items:center;gap:5px;border:0;border-radius:99px;padding:5px 11px;font:800 12px/1 'Plus Jakarta Sans',system-ui,sans-serif;color:#0B5A64;background:#fff;box-shadow:0 4px 12px -4px rgba(14,47,58,.5),0 0 0 1px rgba(11,124,136,.18);cursor:pointer}
+.dock-tog i{font-style:normal;transition:transform .25s}
+body.pg-dockmin .dock-tog i{transform:rotate(180deg)}
+body.pg-dockmin #player#player .p-foot .bubble,body.pg-dockmin #player#player .p-foot .pog-dock{display:none!important}
+html[data-theme=dark] #player#player .p-foot .bubble{background:linear-gradient(135deg,#1C2E33,#16262B)!important;color:#EAF4F6!important}
+html[data-theme=dark] .dock-tog{background:#1C2E33;color:#BFE9EC}
+@media(prefers-reduced-motion:reduce){.dock-tog i{transition:none}}
+/* Esqueleto de carregamento dos cursos */
+.nl-sk{position:fixed;inset:0;z-index:9999;overflow:hidden;background:var(--bg,#F4F8F8);animation:nlfade .2s both}
+html[data-theme=dark] .nl-sk{background:#0F1A1E}
+@keyframes nlfade{from{opacity:0}}
+.nl-w{max-width:760px;margin:0 auto;padding:78px 16px 16px;display:grid;gap:14px}
+.nl-b{display:block;border-radius:16px;background:linear-gradient(100deg,#E3ECEC 30%,#F3F8F8 50%,#E3ECEC 70%);background-size:300% 100%;animation:nlsh 1.3s linear infinite}
+html[data-theme=dark] .nl-b{background:linear-gradient(100deg,#1B2A2F 30%,#26383E 50%,#1B2A2F 70%);background-size:300% 100%}
+@keyframes nlsh{from{background-position:100% 0}to{background-position:-100% 0}}
+.nl-h{height:150px;border-radius:24px}.nl-r{display:flex;gap:8px}.nl-r i{height:34px;flex:1;border-radius:99px}
+.nl-c{display:grid;gap:8px;padding:14px;border-radius:20px;background:rgba(255,255,255,.55)}html[data-theme=dark] .nl-c{background:rgba(255,255,255,.04)}
+.nl-t{height:18px;width:55%}.nl-l{height:12px}.nl-l.s{width:70%}
+@media(prefers-reduced-motion:reduce){.nl-b{animation:none}.nl-sk{animation:none}}
