@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
-TARGET_LAST = 953200  # 1,200 B1 episodes: 952001–953200
+TARGET_LAST = 952800  # 1,200 B1 episodes: 952001–953200
 IC = ["📝", "⚠️", "💰", "🤝", "✅", "📅", "📍", "🧩", "📷", "🌱", "💡", "🎯"]
 COLORS = [["#FF7A7A", "#FFB84D"], ["#6C5CE7", "#2FB0A0"], ["#3E8FD8", "#FFC857"], ["#E17055", "#6C5CE7"]]
 PEOPLE = [
