@@ -132,6 +132,9 @@ def episode(lv,arc_i,k,x,base,order):
 def main():
     out={}
     for lv in BASE:
+        # TRAVA: os dados já publicados (data/pk-*.json) são editados também por outros geradores e à mão
+        # (ícones, B1 451+, B2–C2). Reconstruir a partir dos .txt apagaria esse trabalho. Para reconstruir um nível de propósito: POCKET_REBUILD=a1,b1
+        if lv not in set(filter(None,os.environ.get('POCKET_REBUILD','').split(','))):continue
         files=sorted(glob.glob(os.path.join(R,lv+'_arco*.py'))+glob.glob(os.path.join(R,lv+'_arco*.txt')))
         if not files:continue
         flat=[]
@@ -158,6 +161,7 @@ def main():
         for old in glob.glob(os.path.join(D,'pk-%s_*.json'%lv)):
             if os.path.basename(old) not in names:os.remove(old)
         out['pk-'+lv]=(names,len(eps))
+    if not out:print('build: nenhum nível reconstruído (dados protegidos)');return
     man=json.load(open(os.path.join(D,'manifest.json')));cnt=json.load(open(os.path.join(D,'counts.json')))
     for lv in BASE:man.setdefault('pk-'+lv,[]);cnt.setdefault('pk-'+lv,0)
     for c,(names,n) in out.items():man[c]=names;cnt[c]=n
