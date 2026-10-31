@@ -9,7 +9,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .chip{display:inline-flex;gap:6px;align-items:center;padding:4px 10px;border-radius:999px;background:color-mix(in srgb,var(--pri) 14%,transparent);font-size:13px;font-weight:700;white-space:nowrap}
 .chip b{font-variant-numeric:tabular-nums}
 .ib{border:1px solid var(--line);background:var(--glass);border-radius:12px;padding:6px 11px;font-weight:700}.ib:hover{border-color:var(--pri)}
-.stage{position:relative;overflow:auto;border-radius:24px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(14px);padding:clamp(14px,2.4vw,30px)}
+.stage{position:relative;overflow:hidden auto;border-radius:24px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(14px);padding:clamp(14px,2.4vw,30px)}
 .stage:before,.stage:after{content:"";position:absolute;border-radius:50%;pointer-events:none;opacity:.5;filter:blur(2px)}
 .stage:before{width:220px;height:220px;right:-60px;top:-70px;background:radial-gradient(circle,color-mix(in srgb,var(--pri2) 30%,transparent),transparent 70%)}
 .stage:after{width:260px;height:260px;left:-80px;bottom:-90px;background:radial-gradient(circle,color-mix(in srgb,var(--pri) 26%,transparent),transparent 70%)}
