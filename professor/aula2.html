@@ -1,8 +1,12 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aula · Painel do Professor</title>
-<link rel="stylesheet" href="css/oxford.css?v=1"><script src="js/gate.js?v=1"></script></head>
-<body><div class="app" id="app">
-<header class="top"><a class="ib" href="index.html">← Painel</a><div class="unit"><span class="un" id="un">1</span><h1 id="ttl">Carregando…</h1></div><span class="chip" id="clock">⏱ <b>00:00</b></span><span class="chip xp">XP <b id="xp">0</b></span><span class="tm" id="teams"><button data-t="A">Equipe A <b id="ta">0</b></button><button data-t="B">Equipe B <b id="tb">0</b></button></span></header>
-<main class="stage" id="stage"></main>
-<footer class="bot"><button class="ib" id="prev">◀</button><nav class="rail" id="rail" aria-label="Páginas"></nav><span class="chip" id="cnt"></span><button class="ib" id="nb">📝 Notas</button><button class="ib" id="fs" title="Tela cheia">⛶</button><button class="btn" id="next">Próxima ▶</button></footer></div>
-<div class="drawer" id="drawer"><h3>Painel do professor — notas desta página</h3><textarea id="nt" placeholder="Anotações, correções, vocabulário extra…"></textarea><label><input type="checkbox" id="vis"> Mostrar esta nota para o aluno</label><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec" id="nexp">Exportar notas</button><button class="btn sec" id="nprint">Imprimir/PDF da aula</button></div><p class="lead" style="font-size:13px;margin:8px 0 0" id="obj"></p></div>
-<script src="../js/obra-ficha-lib.js"></script><script src="../js/obra-ficha.js"></script><script src="../js/obra-ficha-scenes2.js"></script><script src="js/vis.js?v=1"></script><script src="js/deck2.js?v=1"></script></body></html>
+<link rel="stylesheet" href="css/oxford.css?v=3"><script src="js/gate.js?v=1"></script></head>
+<body><div class="app" id="app"><main class="stage" id="stage"></main></div>
+<div class="hudp" id="hudp" hidden>
+ <div class="hr"><a class="ib" href="index.html">← Painel</a><span class="chip" id="clock">⏱ <b>00:00</b></span><span class="chip xp">XP <b class="xpv">0</b></span></div>
+ <div class="hr"><div class="seg" id="mode"><button data-m="solo">Aula particular</button><button data-m="group">Aula em grupo</button></div></div>
+ <div class="hr" id="teams"><button data-t="A">Equipe A <b id="ta">0</b></button><button data-t="B">Equipe B <b id="tb">0</b></button></div>
+ <div class="hr"><button class="ib" id="nb">📝 Notas</button><button class="ib" id="fs">⛶ Tela cheia</button><button class="ib" id="nprint">🖨 PDF</button></div>
+ <p class="lead" id="obj" style="font-size:12px;margin:4px 0 0"></p></div>
+<nav class="dock" id="dock"><button class="rb" id="prev" aria-label="Anterior">‹</button><div class="seg-bar" id="rail" aria-label="Páginas"></div><span class="dl" id="cnt"></span><button class="rb nx" id="next" aria-label="Próxima">›</button></nav>
+<div class="drawer" id="drawer"><h3>Painel do professor — notas desta página</h3><textarea id="nt" placeholder="Anotações, correções, vocabulário extra…"></textarea><label><input type="checkbox" id="vis"> Mostrar esta nota para o aluno</label><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec" id="nexp">Exportar notas</button></div></div>
+<script src="../js/obra-ficha-lib.js"></script><script src="../js/obra-ficha.js"></script><script src="../js/obra-ficha-scenes2.js"></script><script src="js/vis.js?v=3"></script><script src="js/deck2.js?v=3"></script></body></html>
