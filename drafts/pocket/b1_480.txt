@@ -1,0 +1,27 @@
+# Arco 48 · Histórias, escolhas e imprevistos
+# nota: o roteiro rotula The Devil Wears Prada como livro de 1881; a referência verificável usada aqui é o filme de 2006.
+
+T: The Choice Before the Show | Escolher como salvar um evento | hall | Miami | Sofia,f,👩🏽,organizadora de eventos
+K: I'd prefer to wait for the facts. | Prefiro esperar pelos fatos.
+M: Hoje você expressa hesitação e escolhe uma solução para um evento.
+D: Sofia|The school show starts at seven, but the trophy has vanished again.|A apresentação da escola começa às sete, mas o troféu sumiu de novo.
+D: You|I'd rather check the stage before we call it a mystery.|Prefiro conferir o palco antes de chamar isso de mistério.
+D: Sofia|We have two options: search now or start the queen's scene.|Temos duas opções: procurar agora ou começar a cena da rainha.
+D: You|My preference is to start the scene. I'd prefer to wait before accusing anyone.|Minha preferência é começar a cena. Prefiro esperar antes de acusar alguém.
+D: Sofia|I'm reluctant to leave the trophy out. The parents expect a prize.|Estou relutante em deixar o troféu de fora. Os pais esperam um prêmio.
+D: You|Then use the alternative prize. I found a framed drawing backstage.|Então use o prêmio alternativo. Encontrei um desenho emoldurado nos bastidores.
+D: Sofia|That helps, but our workload has grown since the workday began.|Isso ajuda, mas nossa carga de trabalho cresceu desde o início do expediente.
+D: You|I dreamed we'd miss the show. I'd rather not let that dream decide for us.|Sonhei que perderíamos a apresentação. Prefiro não deixar esse sonho decidir por nós.
+D: Sofia|Your hesitation makes sense. The Devil Wears Prada makes every outfit urgent; our deadline is real.|Sua hesitação faz sentido. O Diabo Veste Prada faz cada roupa parecer urgente; nosso prazo é real.
+D: You|Let's start the queen's scene and search afterward. That's my final choice.|Vamos começar a cena da rainha e procurar depois. Essa é minha escolha final.
+V: preference|preferência;hesitation|hesitação;alternative|alternativa;option|opção;reluctant|relutante
+B: I'd rather {0} the stage first.|Prefiro {0} o palco primeiro.|check=conferir;leave=deixar;forget=esquecer
+B: I'd prefer to {0} for the facts.|Prefiro {0} pelos fatos.|wait=esperar;guess=adivinhar;run=correr
+S: Sofia|Should we accuse someone now?|Devemos acusar alguém agora?|No. I'd prefer to wait for the facts.|Não. Prefiro esperar pelos fatos.
+S: Sofia|Which prize should we use?|Qual prêmio devemos usar?|I'd rather use the framed drawing for now.|Prefiro usar o desenho emoldurado por enquanto.
+R: I'd rather check the stage first.|Prefiro conferir o palco primeiro.
+R: My preference is to start the scene.|Minha preferência é começar a cena.
+R: I'm reluctant to leave the trophy out.|Estou relutante em deixar o troféu de fora.
+R: I'd prefer to wait before accusing anyone.|Prefiro esperar antes de acusar alguém.
+X: For now.|Por enquanto.
+C: O filme The Devil Wears Prada (2006) mostra um ambiente de trabalho em que roupas e prazos viram decisões urgentes. Na cena, a referência é passageira: o aluno precisa escolher uma solução sem transformar hesitação em acusação.
