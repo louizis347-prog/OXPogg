@@ -526,61 +526,61 @@
   {
     "n": 952452,
     "o": 952452,
-    "t": "A public meeting turns a concern into a plan · A neighborhood book exchange",
-    "s": "Conduzir uma reunião pública",
-    "sc": "community-center",
+    "t": "While the Fire Was Burning",
+    "s": "Contar uma cena com ação em andamento e interrupção",
+    "sc": "cafe",
     "lv": "B1",
     "a": {
-      "k": "Situação",
-      "w": "A neighborhood book exchange",
-      "y": "",
-      "d": "Bibliotecas de bairro podem aproximar moradores com trocas de livros e mesas de leitura abertas à comunidade. A situação trabalha conduzir uma reunião pública em uma conversa cotidiana."
+      "k": "📖 Conto",
+      "w": "The Canterbury Tales",
+      "y": "c. 1400",
+      "d": "Na obra de Geoffrey Chaucer, peregrinos contam histórias durante uma viagem. Aqui, uma noite de histórias muda de lugar por causa da chuva."
     },
     "h": {
-      "l": "A neighborhood book exchange gives us a useful idea, and I want to adapt it here.",
-      "src": "Pocket",
-      "tr": "A neighborhood book exchange nos dá uma ideia útil, e quero adaptá-la aqui."
+      "l": "I was checking the speakers when the lights went out.",
+      "tr": "Eu estava verificando as caixas de som quando as luzes se apagaram.",
+      "src": "Pocket"
     },
-    "p": "Hoje você vai conduzir uma reunião pública.",
+    "p": "Hoje você conta o que estava acontecendo quando surgiu um imprevisto.",
     "g": {
-      "t": "Then we can make the next step work and keep vote visible in the plan."
+      "t": "I was opening the door when the wanderer offered to finish his tale indoors."
     },
     "v2": true,
     "v": [
       [
-        "agenda",
-        "pauta",
-        "🎯"
+        "campfire",
+        "fogueira",
+        "🔥"
       ],
       [
-        "concern",
-        "preocupação",
-        "📝"
+        "wanderer",
+        "andarilho",
+        "🚶"
       ],
       [
-        "proposal",
-        "proposta",
-        "🧭"
+        "tavern",
+        "taverna",
+        "🏠"
       ],
       [
-        "vote",
-        "votação",
-        "🔎"
+        "legend",
+        "lenda",
+        "📖"
       ],
       [
-        "transparent",
-        "transparente",
-        "🤝"
+        "embers",
+        "brasas",
+        "🪵"
       ]
     ],
     "presentation": "pocket-v1",
     "pocket": 1,
     "character": {
-      "id": "pk_ethan",
-      "name": "Ethan",
-      "gender": "m",
-      "role": "teacher",
-      "city": "Denver",
+      "id": "pk_jordan",
+      "name": "Jordan",
+      "gender": "f",
+      "role": "organizadora comunitária",
+      "city": "New Orleans",
       "recurring": true
     },
     "arc": {
@@ -597,14 +597,14 @@
         ],
         "num": 452,
         "lvl": "B1",
-        "face": "👨🏻",
-        "name": "Ethan",
-        "city": "Denver",
-        "sub": "A public meeting turns a concern into a plan",
-        "mission": "Hoje você vai conduzir uma reunião pública.",
+        "face": "👩🏾",
+        "name": "Jordan",
+        "city": "New Orleans",
+        "sub": "While the Fire Was Burning",
+        "mission": "Hoje você conta o que estava acontecendo quando surgiu um imprevisto.",
         "hook": [
-          "A neighborhood book exchange gives us a useful idea, and I want to adapt it here.",
-          "A neighborhood book exchange nos dá uma ideia útil, e quero adaptá-la aqui."
+          "I was checking the speakers when the lights went out.",
+          "Eu estava verificando as caixas de som quando as luzes se apagaram."
         ],
         "boss": false
       },
@@ -617,72 +617,72 @@
         "title": "Diálogo",
         "lines": [
           [
-            "Ethan",
-            "Thanks for meeting me; we need a practical solution today.",
-            "Obrigada por conversar comigo; precisamos de uma solução prática hoje."
+            "Jordan",
+            "The café lost power while we were setting up the storytelling night.",
+            "O café ficou sem energia enquanto preparávamos a noite de histórias."
           ],
           [
             "You",
-            "A neighborhood book exchange gives us a useful idea, and I want to adapt it here.",
-            "A neighborhood book exchange nos dá uma ideia útil, e quero adaptá-la aqui."
+            "I was checking the speakers when the lights went out.",
+            "Eu estava verificando as caixas de som quando as luzes se apagaram."
           ],
           [
-            "Ethan",
-            "Which question of agenda should we address first?",
-            "Qual questão de pauta devemos abordar primeiro?"
-          ],
-          [
-            "You",
-            "Let us examine concern before we decide what to do about proposal.",
-            "Vamos examinar preocupação antes de decidir o que fazer sobre proposta."
-          ],
-          [
-            "Ethan",
-            "Could you keep the next step transparent while making the vote clear?",
-            "Você pode manter o próximo passo transparente e deixar votação claro?"
+            "Jordan",
+            "Could we move everyone to the courtyard? The campfire is still burning.",
+            "Podemos levar todos para o pátio? A fogueira ainda está acesa."
           ],
           [
             "You",
-            "Yes. I will document the issue of agenda and explain why transparent matters.",
-            "Sim. Vou documentar a questão de pauta e explicar por que transparente importa."
+            "A wanderer was telling a legend when the rain started.",
+            "Um andarilho estava contando uma lenda quando a chuva começou."
           ],
           [
-            "Ethan",
-            "That gives us room to discuss concern without ignoring the issue of proposal.",
-            "Isso nos dá espaço para discutir preocupação sem ignorar a questão de proposta."
+            "Jordan",
+            "Then the courtyard is out. The old tavern across the street has a roof.",
+            "Então o pátio está fora de questão. A velha taverna do outro lado da rua tem cobertura."
           ],
           [
             "You",
-            "Then we can make the next step work and keep vote visible in the plan.",
-            "Então podemos fazer o próximo passo funcionar e manter votação visível no plano."
+            "While the embers were fading, I carried the chairs into the tavern.",
+            "Enquanto as brasas perdiam o brilho, levei as cadeiras para a taverna."
+          ],
+          [
+            "Jordan",
+            "Good call. The group can finish its journey there, like the pilgrims in The Canterbury Tales.",
+            "Boa ideia. O grupo pode terminar sua jornada lá, como os peregrinos de Os Contos da Cantuária."
+          ],
+          [
+            "You",
+            "I was opening the door when the wanderer offered to finish his tale indoors.",
+            "Eu estava abrindo a porta quando o andarilho se ofereceu para terminar seu conto lá dentro."
           ]
         ],
         "vocab": [
           [
-            "agenda",
-            "pauta"
+            "campfire",
+            "fogueira"
           ],
           [
-            "concern",
-            "preocupação"
+            "wanderer",
+            "andarilho"
           ],
           [
-            "proposal",
-            "proposta"
+            "tavern",
+            "taverna"
           ],
           [
-            "vote",
-            "votação"
+            "legend",
+            "lenda"
           ],
           [
-            "transparent",
-            "transparente"
+            "embers",
+            "brasas"
           ]
         ],
         "cast": {
-          "Ethan": [
-            "👨🏻",
-            "#E17055"
+          "Jordan": [
+            "👩🏾",
+            "#FF7A7A"
           ],
           "You": [
             "🙂",
@@ -699,46 +699,46 @@
         "title": "Vocabulário",
         "cards": [
           [
-            "agenda",
-            "pauta",
-            "🎯",
-            "Which question of agenda should we address first?",
-            "Qual questão de pauta devemos abordar primeiro?"
+            "campfire",
+            "fogueira",
+            "🔥",
+            "Could we move everyone to the courtyard? The campfire is still burning.",
+            "Podemos levar todos para o pátio? A fogueira ainda está acesa."
           ],
           [
-            "concern",
-            "preocupação",
-            "📝",
-            "Let us examine concern before we decide what to do about proposal.",
-            "Vamos examinar preocupação antes de decidir o que fazer sobre proposta."
+            "wanderer",
+            "andarilho",
+            "🚶",
+            "A wanderer was telling a legend when the rain started.",
+            "Um andarilho estava contando uma lenda quando a chuva começou."
           ],
           [
-            "proposal",
-            "proposta",
-            "🧭",
-            "Could you keep the next step transparent while making the vote clear?",
-            "Você pode manter o próximo passo transparente e deixar votação claro?"
+            "tavern",
+            "taverna",
+            "🏠",
+            "Then the courtyard is out. The old tavern across the street has a roof.",
+            "Então o pátio está fora de questão. A velha taverna do outro lado da rua tem cobertura."
           ],
           [
-            "vote",
-            "votação",
-            "🔎",
-            "Yes. I will document the issue of agenda and explain why transparent matters.",
-            "Sim. Vou documentar a questão de pauta e explicar por que transparente importa."
+            "legend",
+            "lenda",
+            "📖",
+            "A wanderer was telling a legend when the rain started.",
+            "Um andarilho estava contando uma lenda quando a chuva começou."
           ],
           [
-            "transparent",
-            "transparente",
-            "🤝",
-            "That gives us room to discuss concern without ignoring the issue of proposal.",
-            "Isso nos dá espaço para discutir preocupação sem ignorar a questão de proposta."
+            "embers",
+            "brasas",
+            "🪵",
+            "While the embers were fading, I carried the chairs into the tavern.",
+            "Enquanto as brasas perdiam o brilho, levei as cadeiras para a taverna."
           ]
         ],
         "notes": [
           {
-            "en": "A plan that stays transparent",
-            "pt": "Um plano que continua transparente",
-            "txt": "💡 Use transparent para descrever a qualidade que o plano precisa manter."
+            "en": "was telling ... when the rain started",
+            "pt": "estava contando ... quando a chuva começou",
+            "txt": "💡 A ação longa usa past continuous; o acontecimento que a interrompe usa past simple."
           }
         ]
       },
@@ -752,145 +752,145 @@
         "pars": [
           {
             "lead": [
-              "In Denver, a small team meets after work.",
-              "Em Denver, uma pequena equipe se reúne depois do trabalho."
+              "At a café in New Orleans,",
+              "Num café em Nova Orleans,"
             ],
             "q": [
-              "",
-              ""
+              "the storytelling night takes an unexpected turn.",
+              "a noite de histórias muda de rumo."
             ],
             "who": null,
             "ic": "🏙️"
           },
           {
             "lead": [
-              "Ethan frames the question:",
-              "Ethan formula a pergunta:"
+              "Jordan says:",
+              "Jordan diz:"
             ],
             "q": [
-              "Thanks for meeting me; we need a practical solution today.",
-              "Obrigada por conversar comigo; precisamos de uma solução prática hoje."
+              "The café lost power while we were setting up the storytelling night.",
+              "O café ficou sem energia enquanto preparávamos a noite de histórias."
             ],
-            "who": "Ethan",
+            "who": "Jordan",
             "ic": "💬"
           },
           {
             "lead": [
-              "You connect the work to the situation:",
-              "Você liga a obra à situação:"
+              "You answer:",
+              "Você responde:"
             ],
             "q": [
-              "A neighborhood book exchange gives us a useful idea, and I want to adapt it here.",
-              "A neighborhood book exchange nos dá uma ideia útil, e quero adaptá-la aqui."
+              "I was checking the speakers when the lights went out.",
+              "Eu estava verificando as caixas de som quando as luzes se apagaram."
             ],
             "who": "You",
-            "ic": "📝"
+            "ic": "💬"
           },
           {
             "lead": [
-              "Ethan identifies the first issue:",
-              "Ethan identifica a primeira questão:"
+              "Jordan says:",
+              "Jordan diz:"
             ],
             "q": [
-              "Which question of agenda should we address first?",
-              "Qual questão de pauta devemos abordar primeiro?"
+              "Could we move everyone to the courtyard? The campfire is still burning.",
+              "Podemos levar todos para o pátio? A fogueira ainda está acesa."
             ],
-            "who": "Ethan",
-            "ic": "❓"
+            "who": "Jordan",
+            "ic": "💬"
           },
           {
             "lead": [
-              "You add two concrete steps:",
-              "Você acrescenta dois passos concretos:"
+              "You answer:",
+              "Você responde:"
             ],
             "q": [
-              "Let us examine concern before we decide what to do about proposal.",
-              "Vamos examinar preocupação antes de decidir o que fazer sobre proposta."
+              "A wanderer was telling a legend when the rain started.",
+              "Um andarilho estava contando uma lenda quando a chuva começou."
             ],
             "who": "You",
-            "ic": "💡"
+            "ic": "💬"
           },
           {
             "lead": [
-              "Ethan asks for a workable version:",
-              "Ethan pede uma versão viável:"
+              "Jordan says:",
+              "Jordan diz:"
             ],
             "q": [
-              "Could you keep the next step transparent while making the vote clear?",
-              "Você pode manter o próximo passo transparente e deixar votação claro?"
+              "Then the courtyard is out. The old tavern across the street has a roof.",
+              "Então o pátio está fora de questão. A velha taverna do outro lado da rua tem cobertura."
             ],
-            "who": "Ethan",
-            "ic": "🤝"
+            "who": "Jordan",
+            "ic": "💬"
           },
           {
             "lead": [
-              "You make the plan explicit:",
-              "Você deixa o plano explícito:"
+              "You answer:",
+              "Você responde:"
             ],
             "q": [
-              "Yes. I will document the issue of agenda and explain why transparent matters.",
-              "Sim. Vou documentar a questão de pauta e explicar por que transparente importa."
+              "While the embers were fading, I carried the chairs into the tavern.",
+              "Enquanto as brasas perdiam o brilho, levei as cadeiras para a taverna."
             ],
             "who": "You",
-            "ic": "✅"
+            "ic": "💬"
           },
           {
             "lead": [
-              "Ethan tests the idea:",
-              "Ethan testa a ideia:"
+              "Jordan says:",
+              "Jordan diz:"
             ],
             "q": [
-              "That gives us room to discuss concern without ignoring the issue of proposal.",
-              "Isso nos dá espaço para discutir preocupação sem ignorar a questão de proposta."
+              "Good call. The group can finish its journey there, like the pilgrims in The Canterbury Tales.",
+              "Boa ideia. O grupo pode terminar sua jornada lá, como os peregrinos de Os Contos da Cantuária."
             ],
-            "who": "Ethan",
-            "ic": "🔎"
+            "who": "Jordan",
+            "ic": "💬"
           },
           {
             "lead": [
-              "You close the exchange:",
-              "Você encerra a conversa:"
+              "You answer:",
+              "Você responde:"
             ],
             "q": [
-              "Then we can make the next step work and keep vote visible in the plan.",
-              "Então podemos fazer o próximo passo funcionar e manter votação visível no plano."
+              "I was opening the door when the wanderer offered to finish his tale indoors.",
+              "Eu estava abrindo a porta quando o andarilho se ofereceu para terminar seu conto lá dentro."
             ],
             "who": "You",
-            "ic": "📅"
+            "ic": "💬"
           },
           {
             "lead": [
-              "The useful takeaway:",
-              "O ponto útil:"
+              "After the rain,",
+              "Depois da chuva,"
             ],
             "q": [
-              "A good plan names the agenda, uses the concern, and can vote a next step.",
-              "Um bom plano nomeia pauta, usa preocupação e consegue votação um próximo passo."
+              "the group finishes the tale safely inside the tavern.",
+              "o grupo termina o conto em segurança dentro da taverna."
             ],
             "who": null,
-            "ic": "💡"
+            "ic": "📖"
           }
         ],
         "vocab": [
           [
-            "agenda",
-            "pauta"
+            "campfire",
+            "fogueira"
           ],
           [
-            "concern",
-            "preocupação"
+            "wanderer",
+            "andarilho"
           ],
           [
-            "proposal",
-            "proposta"
+            "tavern",
+            "taverna"
           ],
           [
-            "vote",
-            "votação"
+            "legend",
+            "lenda"
           ],
           [
-            "transparent",
-            "transparente"
+            "embers",
+            "brasas"
           ]
         ]
       },
@@ -903,42 +903,42 @@
         "title": "Monte a frase",
         "items": [
           {
-            "en": "We need to discuss agenda.",
-            "pt": "Precisamos discutir pauta.",
+            "en": "I was checking the speakers when the lights {0}.",
+            "pt": "Eu estava verificando as caixas de som quando as luzes se {0}.",
             "opts": [
               [
-                "agenda",
-                "pauta"
+                "went out",
+                "apagaram"
               ],
               [
-                "clearly",
-                "com clareza"
+                "came back",
+                "acenderam"
               ],
               [
-                "later",
-                "mais tarde"
+                "stayed on",
+                "mantiveram acesas"
               ]
             ],
-            "note": "Use agenda para nomear a questão central."
+            "note": "Past continuous descreve a ação em curso; past simple marca a interrupção."
           },
           {
-            "en": "We should keep vote visible.",
-            "pt": "Devemos manter votação visível.",
+            "en": "While the embers were fading, I {0} the chairs inside.",
+            "pt": "Enquanto as brasas perdiam o brilho, eu {0} as cadeiras para dentro.",
             "opts": [
               [
-                "vote",
-                "votação"
+                "carried",
+                "levei"
               ],
               [
-                "hidden",
-                "escondido"
+                "left",
+                "deixei"
               ],
               [
-                "separate",
-                "separado"
+                "counted",
+                "contei"
               ]
             ],
-            "note": "Use vote para retomar o foco da conversa."
+            "note": "While introduz a ação em andamento."
           }
         ]
       },
@@ -951,22 +951,22 @@
         "title": "Fale",
         "items": [
           {
-            "who": "Ethan",
+            "who": "Jordan",
             "line": [
-              "Which question of agenda should we address first?",
-              "Qual questão de pauta devemos abordar primeiro?"
+              "The café lost power while we were setting up the storytelling night.",
+              "O café ficou sem energia enquanto preparávamos a noite de histórias."
             ],
-            "target": "We need to discuss agenda and concern.",
-            "pt": "Precisamos discutir pauta e preocupação."
+            "target": "I was checking the speakers when the lights went out.",
+            "pt": "Eu estava verificando as caixas de som quando as luzes se apagaram."
           },
           {
-            "who": "Ethan",
+            "who": "Jordan",
             "line": [
-              "Could you keep the next step transparent while making the vote clear?",
-              "Você pode manter o próximo passo transparente e deixar votação claro?"
+              "Then the courtyard is out. The old tavern across the street has a roof.",
+              "Então o pátio está fora de questão. A velha taverna do outro lado da rua tem cobertura."
             ],
-            "target": "We should keep the next step transparent.",
-            "pt": "Devemos manter o próximo passo transparente."
+            "target": "While the embers were fading, I carried the chairs into the tavern.",
+            "pt": "Enquanto as brasas perdiam o brilho, levei as cadeiras para a taverna."
           }
         ]
       },
@@ -975,79 +975,75 @@
         "title": "Mochila do episódio",
         "recap": [
           [
-            "A neighborhood book exchange gives us a useful idea, and I want to adapt it here.",
-            "A neighborhood book exchange nos dá uma ideia útil, e quero adaptá-la aqui."
+            "I was checking the speakers when the lights went out.",
+            "Eu estava verificando as caixas de som quando as luzes se apagaram."
           ],
           [
-            "Which question of agenda should we address first?",
-            "Qual questão de pauta devemos abordar primeiro?"
+            "A wanderer was telling a legend when the rain started.",
+            "Um andarilho estava contando uma lenda quando a chuva começou."
           ],
           [
-            "Let us examine concern before we decide what to do about proposal.",
-            "Vamos examinar preocupação antes de decidir o que fazer sobre proposta."
+            "While the embers were fading, I carried the chairs into the tavern.",
+            "Enquanto as brasas perdiam o brilho, levei as cadeiras para a taverna."
           ],
           [
-            "Could you keep the next step transparent while making the vote clear?",
-            "Você pode manter o próximo passo transparente e deixar votação claro?"
+            "I was opening the door when the wanderer offered to finish his tale indoors.",
+            "Eu estava abrindo a porta quando o andarilho se ofereceu para terminar seu conto lá dentro."
           ]
         ],
         "expr": [
           [
-            "That is a workable next step.",
-            "Esse é um próximo passo viável."
-          ],
-          [
-            "Let us keep the plan clear.",
-            "Vamos manter o plano claro."
+            "Good call.",
+            "Boa ideia."
           ]
         ],
-        "culture": "A referência A neighborhood book exchange abre uma ponte para conduzir uma reunião pública.",
+        "culture": "Em The Canterbury Tales, de Geoffrey Chaucer, viajantes contam histórias uns aos outros. A conversa retoma essa ideia ao mudar a roda de histórias para um lugar coberto.",
         "teaser": {
-          "t": "Próxima situação: uma nova decisão em contexto real",
-          "d": ""
+          "t": "Sudden Changes",
+          "d": "Uma surpresa muda outra história."
         },
         "sticker": {
-          "name": "Ethan",
-          "face": "👨🏻",
-          "role": "teacher",
-          "city": "Denver",
+          "name": "Jordan",
+          "face": "👩🏾",
+          "role": "organizadora comunitária",
+          "city": "New Orleans",
           "boss": false
         },
         "stickers": [
           [
-            "agenda",
-            "pauta",
-            "🎯",
-            "Which question of agenda should we address first?",
-            "Qual questão de pauta devemos abordar primeiro?"
+            "campfire",
+            "fogueira",
+            "🔥",
+            "Could we move everyone to the courtyard? The campfire is still burning.",
+            "Podemos levar todos para o pátio? A fogueira ainda está acesa."
           ],
           [
-            "concern",
-            "preocupação",
-            "📝",
-            "Let us examine concern before we decide what to do about proposal.",
-            "Vamos examinar preocupação antes de decidir o que fazer sobre proposta."
+            "wanderer",
+            "andarilho",
+            "🚶",
+            "A wanderer was telling a legend when the rain started.",
+            "Um andarilho estava contando uma lenda quando a chuva começou."
           ],
           [
-            "proposal",
-            "proposta",
-            "🧭",
-            "Could you keep the next step transparent while making the vote clear?",
-            "Você pode manter o próximo passo transparente e deixar votação claro?"
+            "tavern",
+            "taverna",
+            "🏠",
+            "Then the courtyard is out. The old tavern across the street has a roof.",
+            "Então o pátio está fora de questão. A velha taverna do outro lado da rua tem cobertura."
           ],
           [
-            "vote",
-            "votação",
-            "🔎",
-            "Yes. I will document the issue of agenda and explain why transparent matters.",
-            "Sim. Vou documentar a questão de pauta e explicar por que transparente importa."
+            "legend",
+            "lenda",
+            "📖",
+            "A wanderer was telling a legend when the rain started.",
+            "Um andarilho estava contando uma lenda quando a chuva começou."
           ],
           [
-            "transparent",
-            "transparente",
-            "🤝",
-            "That gives us room to discuss concern without ignoring the issue of proposal.",
-            "Isso nos dá espaço para discutir preocupação sem ignorar a questão de proposta."
+            "embers",
+            "brasas",
+            "🪵",
+            "While the embers were fading, I carried the chairs into the tavern.",
+            "Enquanto as brasas perdiam o brilho, levei as cadeiras para a taverna."
           ]
         ]
       }
