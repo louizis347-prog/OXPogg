@@ -318,9 +318,9 @@ function buildArcs(cid){
   A.forEach((a,ai)=>{const s=list.findIndex(e=>e.n===a[0]);if(s>=0)out.push({ai,s,title:String(a[1]).replace(/^Arco\s*/,''),tests:[]})});
   out.sort((x,y)=>x.s-y.s);
   if(out.length){out.forEach((o,k)=>{o.e=k+1<out.length?out[k+1].s:list.length});if(out[0].s>0)out.unshift({ai:-1,s:0,e:out[0].s,title:t('arc'),tests:[]})}
+  else{for(let s=0;s<list.length;s+=24)out.push({ai:-2,s,e:Math.min(list.length,s+24),title:`${s+1}–${Math.min(list.length,s+24)}`,tests:[]})}
   /* proteção de desempenho: um arco com mais de 60 episódios é fatiado em blocos de 24 (evita centenas de capas de uma vez) */
   for(let k=out.length-1;k>=0;k--){const o=out[k];if(o.e-o.s>60){const parts=[];for(let s=o.s;s<o.e;s+=24)parts.push({ai:s===o.s?o.ai:-3,s,e:Math.min(o.e,s+24),title:s===o.s?o.title:o.title+' · '+(s-o.s+1)+'–'+Math.min(o.e-o.s,s-o.s+24),tests:[]});out.splice(k,1,...parts)}}
-  else{for(let s=0;s<list.length;s+=24)out.push({ai:-2,s,e:Math.min(list.length,s+24),title:`${s+1}–${Math.min(list.length,s+24)}`,tests:[]})}
   const arcOfIdx=i=>out.find(o=>i>=o.s&&i<o.e);
   let ts=[];try{ts=arcTests(cid).concat(cpTests(cid))}catch(e){}
   ts.forEach(x=>{const o=out.find(a=>a.ai===x.arcIdx);if(o)o.tests.push(x)});

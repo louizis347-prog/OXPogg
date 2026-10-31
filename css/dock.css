@@ -23,3 +23,15 @@ body.pg-dockmin #player#player .p-foot .bubble,body.pg-dockmin #player#player .p
 html[data-theme=dark] #player#player .p-foot .bubble{background:linear-gradient(135deg,#1C2E33,#16262B)!important;color:#EAF4F6!important}
 html[data-theme=dark] .dock-tog{background:#1C2E33;color:#BFE9EC}
 @media(prefers-reduced-motion:reduce){.dock-tog i{transition:none}}
+/* Esqueleto de carregamento dos cursos */
+.nl-sk{position:fixed;inset:0;z-index:9999;overflow:hidden;background:var(--bg,#F4F8F8);animation:nlfade .2s both}
+html[data-theme=dark] .nl-sk{background:#0F1A1E}
+@keyframes nlfade{from{opacity:0}}
+.nl-w{max-width:760px;margin:0 auto;padding:78px 16px 16px;display:grid;gap:14px}
+.nl-b{display:block;border-radius:16px;background:linear-gradient(100deg,#E3ECEC 30%,#F3F8F8 50%,#E3ECEC 70%);background-size:300% 100%;animation:nlsh 1.3s linear infinite}
+html[data-theme=dark] .nl-b{background:linear-gradient(100deg,#1B2A2F 30%,#26383E 50%,#1B2A2F 70%);background-size:300% 100%}
+@keyframes nlsh{from{background-position:100% 0}to{background-position:-100% 0}}
+.nl-h{height:150px;border-radius:24px}.nl-r{display:flex;gap:8px}.nl-r i{height:34px;flex:1;border-radius:99px}
+.nl-c{display:grid;gap:8px;padding:14px;border-radius:20px;background:rgba(255,255,255,.55)}html[data-theme=dark] .nl-c{background:rgba(255,255,255,.04)}
+.nl-t{height:18px;width:55%}.nl-l{height:12px}.nl-l.s{width:70%}
+@media(prefers-reduced-motion:reduce){.nl-b{animation:none}.nl-sk{animation:none}}

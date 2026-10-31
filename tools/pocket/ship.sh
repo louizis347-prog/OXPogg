@@ -2,6 +2,7 @@
 # uso: ship.sh "mensagem"  — reconstrói, atualiza disponibilidade, versiona dados, commita e publica
 cd /home/user/OXPogg
 ( cd tools/pocket && python3 audit_a2.py 'a2_arco*.txt' >/dev/null && python3 audit_a2.py 'a1_arco*.txt' >/dev/null && python3 audit_nivel.py | grep -q 'acima do A1 0' && python3 audit_vocab.py >/dev/null && python3 audit_b1.py >/dev/null ) || { echo 'PORTA CEFR FALHOU: rode tools/pocket/audit_a2.py -v ou audit_vocab.py -v'; exit 1; }
+NODE_PATH=$(npm root -g 2>/dev/null) node tools/smoke.js || { echo 'PORTA DE FUMAÇA FALHOU: o app não está íntegro, nada foi publicado'; exit 1; }
 python3 tools/pocket/build.py >/dev/null
 N=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-a1_*.json')))")
 N3=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-b1_*.json')))")
