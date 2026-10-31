@@ -19,7 +19,10 @@ def mcq(q, opts, ans, **k):
     return dict(t='mcq', q=q, opts=opts, ans=ans, **k)
 
 def shuffle_opts(correct, wrong, seed):
-    o = [correct] + [w for w in wrong if w != correct][:3]; r = random.Random(seed); r.shuffle(o); return o, o.index(correct)
+    u = []
+    for w in wrong:
+        if w != correct and w not in u: u.append(w)
+    o = [correct] + u[:3]; r = random.Random(seed); r.shuffle(o); return o, o.index(correct)
 
 def expand(S):
     n = S['n']; rnd = random.Random(n)
@@ -56,9 +59,10 @@ def expand(S):
     add('pattern', 2, frame=p0[0], note=p0[1], slots=[dict(en=a, pt=b) for a, b in pairs(p0[2])])
     add('drill', 4, frame=p0[0], cues=[dict(en=a, pt=b) for a, b in pairs(p0[2])])
     sc = []
-    for a, b in PH[:5]:
+    for a, b in PH + [(d['en'], d['pt']) for d in D]:
         ws = re.findall(r"[\w'’]+|[.,!?]", a)
-        sc.append(dict(words=ws, en=a, pt=b))
+        if len(ws) >= 4 and len(ws) <= 9 and a not in [x['en'] for x in sc]: sc.append(dict(words=ws, en=a, pt=b))
+        if len(sc) == 5: break
     add('scramble', 2, items=sc)
     # gap fill from dialogue
     gp = []
