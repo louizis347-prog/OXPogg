@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Complete Pocket B1 to the 1,200-episode plan with authored story frames.
+"""Complete Pocket B1 to the 800-episode plan with authored story frames.
 
 The generator uses a large pool of unused cultural works from the regular
 English catalogue, then combines each work with a rotating everyday mission.
@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
-TARGET_LAST = 952800  # 1,200 B1 episodes: 952001–953200
+TARGET_LAST = 952800  # 800 B1 episodes: 952001–952800
 IC = ["📝", "⚠️", "💰", "🤝", "✅", "📅", "📍", "🧩", "📷", "🌱", "💡", "🎯"]
 COLORS = [["#FF7A7A", "#FFB84D"], ["#6C5CE7", "#2FB0A0"], ["#3E8FD8", "#FFC857"], ["#E17055", "#6C5CE7"]]
 PEOPLE = [
