@@ -7,8 +7,8 @@ L = dict(n=2, title="What's your name?", pt="Qual é o seu nome?", level="A1", s
   pics=[dict(vis='face:Mia', cap='1'), dict(vis='face:Ana', cap='2'), dict(vis='face:Tom', cap='3'), dict(vis='face:Lily', cap='4')],
   prompts=[dict(q="Who is number 2?", starter="It's Ana."), dict(q="Which person is the teacher?", starter="Number … is the teacher."), dict(q="What's your name?", starter="My name is …"), dict(q="Is your name common in your country?", starter="Yes, it is. / No, it isn't.")]),
  dict(t='vocab', title="People and names", sub="Words for names and people", tip="Click a card to hear the word.",
-  items=[dict(w="name", pt="nome", vis='obj:nametag'), dict(w="first name", pt="primeiro nome", vis='obj:pen'), dict(w="last name", pt="sobrenome", vis='obj:envelope'), dict(w="friend", pt="amigo(a)", vis='obj:heart'),
-         dict(w="teacher", pt="professor(a)", vis='obj:board'), dict(w="student", pt="aluno(a)", vis='obj:book'), dict(w="nickname", pt="apelido", vis='obj:star'), dict(w="introduce", pt="apresentar", vis='obj:speech')],
+  items=[dict(w="name", pt="nome", vis='obj:nametag'), dict(w="first name", pt="primeiro nome", vis='obj:pen'), dict(w="last name", pt="sobrenome", vis='obj:envelope'), dict(w="friend", pt="amigo(a)", vis='char:Ken:wave:park:day'),
+         dict(w="teacher", pt="professor(a)", vis='char:Mia:point:classroom:day'), dict(w="student", pt="aluno(a)", vis='char:Ana:up:classroom:day'), dict(w="nickname", pt="apelido", vis='obj:star'), dict(w="introduce", pt="apresentar", vis='char:Mia:out:school:day')],
   box=dict(h="Word tip", t="<b>first name</b> = Ana · <b>last name</b> = Silva · <b>full name</b> = Ana Silva. A <b>nickname</b> is a short, friendly name: Robert → Bob.")),
  dict(t='matchpic', instr="Match the names to the faces.", items=[dict(w="Mia", vis='face:Mia'), dict(w="Ana", vis='face:Ana'), dict(w="Tom", vis='face:Tom'), dict(w="Lily", vis='face:Lily'), dict(w="Ken", vis='face:Ken'), dict(w="Sara", vis='face:Sara')]),
  dict(t='listenpick', instr="Listen and click the correct face.", items=[
