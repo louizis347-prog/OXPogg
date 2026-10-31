@@ -16,10 +16,10 @@
 (function(){var l=location;if(/[?&]ref=/.test(l.search)||/^#\//.test(l.hash))l.replace('app.html'+l.search+l.hash)})();
 </script>
 <script src="js/theme.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="prefetch" href="data/manifest.json"><link rel="prefetch" href="data/counts.json"><link rel="prefetch" href="data/availability.json">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="css/tokens.css?v=1">
-<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5"><link rel="stylesheet" href="css/landing-pro.css?v=5">
+<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5"><link rel="stylesheet" href="css/landing-teacher.css?v=1"><link rel="stylesheet" href="css/landing-pro.css?v=5">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -28,7 +28,7 @@
   <div class="wrap">
     <a class="logo" href="./" aria-label="Pogglot, início"><span class="logo-fb"><span class="logo-pog" aria-hidden="true"></span><span>Pogg<b>lot</b></span></span></a>
     <nav class="nav" aria-label="Seções">
-      <a href="#tutorial">Veja por dentro</a><a href="#como">Como funciona</a><a href="#idiomas">Idiomas</a><a href="#trilhas">Trilhas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a>
+      <a href="#tutorial">Veja por dentro</a><a href="#como">Como funciona</a><a href="#niveis">Níveis</a><a href="#idiomas">Idiomas</a><a href="#trilhas">Trilhas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a>
     </nav>
     <div class="right">
       <button class="iconbtn" type="button" data-act="theme" aria-label="Alternar tema">☀️</button>
@@ -42,6 +42,7 @@
 <!-- HERO -->
 <section class="hero hero2">
   <div class="hero-sky" aria-hidden="true"></div>
+  <svg class="hero-orbit" viewBox="0 0 640 640" aria-hidden="true"><defs><radialGradient id="ho1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFD37A"/><stop offset="1" stop-color="#FFB627" stop-opacity="0"/></radialGradient></defs><circle cx="320" cy="320" r="300" fill="url(#ho1)" opacity=".5"/><g class="ring"><circle cx="320" cy="320" r="270" fill="none" stroke="#0B7C88" stroke-opacity=".22" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"/><circle cx="590" cy="320" r="9" fill="#FFB627"/><circle cx="50" cy="320" r="6" fill="#0B7C88"/></g><g class="ring r2"><circle cx="320" cy="320" r="200" fill="none" stroke="#E0647E" stroke-opacity=".28" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/><circle cx="320" cy="120" r="7" fill="#E0647E"/><circle cx="520" cy="320" r="5" fill="#3E7BE0"/></g><g class="bub" transform="translate(150 90)"><rect width="104" height="42" rx="21" fill="#fff" stroke="#2F6FE0" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#2F6FE0" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="52.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#2F6FE0">Hello!</text></g><g class="bub" transform="translate(440 70)"><rect width="104" height="42" rx="21" fill="#fff" stroke="#D2493E" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#D2493E" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="52.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#D2493E">¡Hola!</text></g><g class="bub" transform="translate(520 250)"><rect width="143" height="42" rx="21" fill="#fff" stroke="#4A4DDB" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#4A4DDB" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="71.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#4A4DDB">Bonjour !</text></g><g class="bub" transform="translate(70 300)"><rect width="104" height="42" rx="21" fill="#fff" stroke="#C46A0A" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#C46A0A" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="52.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#C46A0A">Hallo!</text></g><g class="bub" transform="translate(470 440)"><rect width="91" height="42" rx="21" fill="#fff" stroke="#12957F" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#12957F" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="45.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#12957F">Ciao!</text></g><g class="bub" transform="translate(120 500)"><rect width="78" height="42" rx="21" fill="#fff" stroke="#4E9A12" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#4E9A12" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="39.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#4E9A12">Olá!</text></g><g class="bub" transform="translate(300 560)"><rect width="91" height="42" rx="21" fill="#fff" stroke="#E0647E" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#E0647E" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="45.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#E0647E">こんにちは</text></g><g class="bub" transform="translate(250 40)"><rect width="65" height="42" rx="21" fill="#fff" stroke="#7A4FD0" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#7A4FD0" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="32.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#7A4FD0">안녕!</text></g></svg>
   <div class="wrap">
     <div class="copy">
       <span class="eyebrow">Episódios de 10 minutos</span>
@@ -54,7 +55,7 @@
       <p class="note" id="hero-note">Comece agora, sem cartão e sem cadastro.</p>
       <div class="stats" aria-label="O Pogglot em números">
         <div><b>10 mil+</b><small>episódios</small></div>
-        <div><b>7</b><small>idiomas</small></div>
+        <div><b>8</b><small>idiomas</small></div>
         <div><b>A1 a C2</b><small>do iniciante ao domínio</small></div>
         <div><b>10 min</b><small>por episódio</small></div>
       </div>
@@ -115,6 +116,25 @@
   </div>
 </section>
 
+<!-- NIVEIS COM A PROFESSORA -->
+<section class="sec prof" id="niveis" aria-labelledby="prof-h">
+  <div class="wrap">
+    <div class="sh c"><h2 id="prof-h">Em que nível você está? A professora explica</h2><p>Os níveis seguem o padrão europeu (CEFR), o mesmo das provas internacionais. Toque em um nível e veja o que você aprende nele.</p></div>
+    <div class="lv-tabs" role="tablist" aria-label="Níveis do A1 ao C2" id="lvTabs"></div>
+    <div class="lv-box" id="lvBox" role="tabpanel" aria-live="polite">
+      <svg class="teacher" viewBox="0 0 160 190" role="img" aria-label="Professora Pog"><ellipse cx="80" cy="182" rx="46" ry="6" fill="#0E2F3A" opacity=".12"/><path d="M30 178c0-34 22-56 50-56s50 22 50 56z" fill="var(--c,#0B7C88)"/><path d="M62 124l18 22 18-22" fill="#fff"/><rect x="68" y="104" width="24" height="22" rx="8" fill="#F2C7A5"/><circle cx="80" cy="76" r="38" fill="#F7D3B3"/><path d="M42 72c-2-30 20-46 40-44 22 2 38 20 34 46-8-18-22-26-38-26s-30 8-36 24z" fill="#5A3A2A"/><circle cx="46" cy="38" r="14" fill="#5A3A2A"/><g fill="none" stroke="#2B2B3A" stroke-width="3.5"><circle cx="64" cy="80" r="12"/><circle cx="96" cy="80" r="12"/><path d="M76 80h8"/></g><circle cx="64" cy="80" r="4.5" fill="#2B2B3A"/><circle cx="96" cy="80" r="4.5" fill="#2B2B3A"/><path d="M66 98c6 8 22 8 28 0" fill="none" stroke="#B5473A" stroke-width="3.5" stroke-linecap="round"/><circle cx="52" cy="94" r="5" fill="#F29A8F" opacity=".6"/><circle cx="108" cy="94" r="5" fill="#F29A8F" opacity=".6"/><path d="M52 36l28-14 28 14-28 14z" fill="#0E2F3A"/><path d="M66 46v12c8 6 20 6 28 0V46" fill="#1B4A5A"/><path d="M108 36v22" stroke="#FFB627" stroke-width="3"/><circle cx="108" cy="60" r="4" fill="#FFB627"/></svg>
+      <div class="bubble" id="lvBubble"></div>
+    </div>
+    <p class="faq-more">Não sabe por onde começar? Faça o teste de nível dentro do app, é rápido.</p>
+  </div>
+</section>
+<script>(function(){var D=[{"k": "A1", "t": "Primeiros passos", "c": "#16B58F", "p": "Oi, eu sou a Pog! Aqui a gente começa do zero, sem pressa e sem vergonha de errar. Você aprende o idioma como uma criança: ouvindo, repetindo e brincando com as palavras mais úteis do dia a dia.", "can": ["Se apresentar e cumprimentar as pessoas", "Pedir comida, perguntar preços e pedir direções", "Entender frases bem lentas e simples"], "say": "Nice to meet you!", "pt": "Prazer em conhecer você!", "n": 1}, {"k": "A2", "t": "Rotina e situações", "c": "#3E7BE0", "p": "Agora você já sabe se virar com o básico, e a gente aumenta a conversa. Falamos sobre o seu dia, o que você fez ontem e o que vai fazer amanhã. É o nível em que viajar começa a ficar tranquilo.", "can": ["Contar a sua rotina, o seu passado e seus planos", "Resolver situações simples em lojas, hotéis e consultas", "Escrever mensagens curtas para amigos"], "say": "Yesterday I went to the market.", "pt": "Ontem eu fui ao mercado.", "n": 2}, {"k": "B1", "t": "Independência", "c": "#E0647E", "p": "Aqui acontece a virada! Você deixa de repetir frases prontas e começa a montar as suas. Dá para contar histórias, explicar o que pensa e se desenrolar mesmo quando esquece uma palavra.", "can": ["Dar opinião e explicar o porquê", "Contar uma história com começo, meio e fim", "Entender o essencial de séries e notícias em ritmo normal"], "say": "If I had more time, I would travel.", "pt": "Se eu tivesse mais tempo, viajaria.", "n": 3}, {"k": "B2", "t": "Fluência de trabalho", "c": "#FF7A45", "p": "Você já conversa de verdade. Neste nível, a gente treina o que faz diferença no trabalho e nos estudos: argumentar, negociar, participar de reuniões e ler textos longos sem se perder.", "can": ["Debater e defender um ponto de vista", "Acompanhar reuniões, aulas e podcasts", "Escrever e-mails e relatórios claros"], "say": "I see your point, but I'd approach it differently.", "pt": "Entendo seu ponto, mas eu abordaria de outra forma.", "n": 4}, {"k": "C1", "t": "Naturalidade", "c": "#D9901A", "p": "Hora de soar natural! Trabalhamos expressões, humor, ironia e as sutilezas que livros didáticos não ensinam. Você escolhe o tom certo para cada pessoa e cada situação.", "can": ["Entender piadas, ironias e sentidos implícitos", "Falar de temas complexos com espontaneidade", "Ler literatura e artigos especializados"], "say": "That went over my head.", "pt": "Eu não captei essa.", "n": 5}, {"k": "C2", "t": "Domínio", "c": "#7A4FD0", "p": "O topo da montanha. Você usa o idioma com precisão e elegância, como um falante culto. Aqui o foco é refinar: estilos, registros e a cultura que dá vida a cada expressão.", "can": ["Entender praticamente tudo, em qualquer sotaque", "Se expressar com precisão, mesmo em temas abstratos", "Traduzir ideias e nuances entre idiomas"], "say": "Nothing could be further from the truth.", "pt": "Nada poderia estar mais longe da verdade.", "n": 6}];var tabs=document.getElementById('lvTabs'),box=document.getElementById('lvBox'),bub=document.getElementById('lvBubble');if(!tabs)return;
+function show(i){var d=D[i];box.style.setProperty('--c',d.c);bub.style.setProperty('--c',d.c);
+var m='';for(var k=1;k<=6;k++)m+='<span'+(k<=d.n?' class="on"':'')+'></span>';
+bub.innerHTML='<h3>'+d.k+' · '+d.t+'</h3><p>'+d.p+'</p><ul class="can">'+d.can.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul><span class="say">“'+d.say+'”<i>'+d.pt+'</i></span><div class="meter" aria-hidden="true">'+m+'</div><div class="meter-l">Etapa '+d.n+' de 6 da jornada</div>';
+[].forEach.call(tabs.children,function(b,j){b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1})}
+D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.style.setProperty('--c',d.c);b.innerHTML=d.k+'<small>'+d.t+'</small>';b.onclick=function(){show(i)};b.onkeydown=function(e){var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;if(n>=0&&n<D.length){show(n);tabs.children[n].focus()}};tabs.appendChild(b)});show(2)})();</script>
+
 <!-- IDIOMAS -->
 <section class="sec alt" id="idiomas">
   <div class="wrap">
@@ -126,7 +146,8 @@
       <div class="lang" style="--c:#C46A0A"><span class="code">DE</span><h3>Alemão</h3><small>500+ episódios<br>A1</small></div>
       <div class="lang" style="--c:#12957F"><span class="code">IT</span><h3>Italiano</h3><small>500+ episódios</small></div>
       <div class="lang" style="--c:#4E9A12"><span class="code">PT</span><h3>Português</h3><small>2.100+ episódios</small></div>
-      <div class="lang" style="--c:#E0647E"><span class="code">JA</span><h3>Japonês</h3><small>380+ episódios<br>A1 a C2</small></div>
+      <div class="lang" style="--c:#E0647E"><span class="code">JA</span><h3>Japonês</h3><small>500+ episódios<br>A1 a C2</small></div>
+      <div class="lang" style="--c:#7A4FD0"><span class="code">KO</span><h3>Coreano</h3><small>500+ episódios<br>A1 a C2</small></div>
     </div>
     <div class="levels" aria-label="Níveis do A1 ao C2">
       <div class="l0"><b>A1</b><small>Iniciante</small></div>
@@ -199,14 +220,29 @@
 <!-- PERGUNTAS -->
 <section class="sec" id="perguntas">
   <div class="wrap">
-    <div class="sh c"><h2>Perguntas frequentes</h2></div>
+    <div class="sh c"><h2>Perguntas frequentes</h2><p>Tudo o que costumam perguntar antes de começar.</p></div>
     <div class="faq">
-      <details><summary>Preciso criar conta para começar?</summary><p>Não. Você abre o app e já pode fazer o primeiro episódio. Para participar da comunidade e guardar o seu progresso na nuvem, crie uma conta.</p></details>
-      <details><summary>Quanto tempo leva cada episódio?</summary><p>Cerca de 10 minutos, em quatro passos: cena real, vocabulário, prática e voz.</p></details>
-      <details><summary>Quais idiomas posso estudar?</summary><p>Inglês, espanhol, francês, alemão, italiano, português e japonês, com níveis do A1 ao C2 em vários deles.</p></details>
-      <details><summary>Funciona no celular?</summary><p>Sim. O Pogglot funciona no celular, no tablet e no computador, e você pode instalá-lo na tela inicial do aparelho.</p></details>
-      <details><summary>Quanto custa?</summary><p id="faq-price">Você começa de graça. As condições do plano Premium aparecem na seção Planos.</p></details>
-      <details><summary>Preciso saber algo do idioma antes?</summary><p>Não. Há trilhas desde o nível A1, para quem está começando do zero. Se já sabe um pouco, o teste de nível ajuda a descobrir por onde começar.</p></details>
+      <h3 class="faq-grp">Começando</h3>
+      <details><summary>Preciso criar conta para começar?</summary><p>Não. Você abre o app e já pode fazer o primeiro episódio. A conta serve para participar da comunidade e guardar o seu progresso na nuvem, e você pode criá-la depois.</p></details>
+      <details><summary>Preciso saber algo do idioma antes?</summary><p>Não. Há trilhas desde o A1, pensadas para quem começa do zero. Se você já sabe um pouco, o teste de nível ajuda a descobrir por onde começar, e dá para pular para o nível que combina com você.</p></details>
+      <details><summary>Quanto tempo leva cada episódio?</summary><p>Cerca de 10 minutos. Cada um tem uma cena com diálogo, vocabulário, prática e fala em voz alta. Dá para estudar no ônibus, no intervalo do almoço ou antes de dormir.</p></details>
+      <details><summary>Em quanto tempo vou aprender?</summary><p>Depende da sua rotina. Estudando um episódio por dia, um nível com cerca de 500 episódios leva mais ou menos 1 ano e meio. O mais importante é a constância: 10 minutos todo dia rendem mais do que 2 horas uma vez por semana.</p></details>
+      <h3 class="faq-grp">Idiomas e cursos</h3>
+      <details><summary>Quais idiomas posso estudar?</summary><p>Inglês, espanhol, francês, alemão, italiano, japonês, coreano e português. O mandarim está em preparação. Cada idioma tem os próprios níveis, trilhas e progresso, então você pode estudar mais de um ao mesmo tempo.</p></details>
+      <details><summary>Todos os idiomas vão até o C2?</summary><p>Inglês, espanhol, francês, alemão, italiano, japonês e coreano têm trilhas do A1 ao C2. A quantidade de episódios publicados varia de um idioma para outro, e novos episódios chegam com frequência. A página de cada curso no app mostra quantos já estão disponíveis.</p></details>
+      <details><summary>Qual a diferença entre Curso Regular e Neighbors?</summary><p>O Regular é a trilha completa e organizada: gramática em contexto, leitura, escrita, cultura e preparação para exames. O Neighbors é para aprender conversando: personagens, cidades e situações reais para treinar respostas naturais e escuta. Você pode alternar entre os dois quando quiser.</p></details>
+      <details><summary>Estudo japonês ou coreano sem saber ler o alfabeto?</summary><p>Sim. O japonês tem um módulo de kana para você aprender a ler desde o começo, e a pronúncia é treinada com áudio. O coreano começa pelo hangul, que é um alfabeto bem lógico.</p></details>
+      <details><summary>Os cursos são para quem fala português?</summary><p>Sim, a maioria é pensada para brasileiros. Também há cursos para quem fala espanhol e quer aprender inglês ou português do Brasil.</p></details>
+      <h3 class="faq-grp">Como é o estudo</h3>
+      <details><summary>Os níveis A1 a C2 são o quê?</summary><p>É a escala europeia (CEFR), usada em provas e escolas do mundo todo. A1 e A2 são o nível básico, B1 e B2 o intermediário, e C1 e C2 o avançado. Na seção de níveis, logo acima, a professora explica o que você consegue fazer em cada um.</p></details>
+      <details><summary>Como funciona a prática de fala?</summary><p>Você fala no microfone e o app avalia a sua pronúncia, mostrando onde melhorar. Se preferir, também dá para só ouvir e repetir. O microfone só é usado quando você toca para falar.</p></details>
+      <details><summary>Aprendo mesmo só com episódios curtos?</summary><p>Os episódios são curtos, mas seguem uma trilha pensada: cada um revisita palavras e estruturas dos anteriores, e a cada 20 episódios há um teste. Assim você fixa o que aprendeu e vê o seu progresso de verdade.</p></details>
+      <details><summary>Tem revisão do que já estudei?</summary><p>Sim. O app marca o que você tem mais dificuldade e leva essas palavras de volta em revisões espaçadas, que ajudam a guardar o vocabulário por muito mais tempo.</p></details>
+      <h3 class="faq-grp">Uso e planos</h3>
+      <details><summary>Funciona no celular?</summary><p>Sim. O Pogglot funciona no celular, no tablet e no computador, e você pode instalá-lo na tela inicial do aparelho, sem loja de aplicativos.</p></details>
+      <details><summary>E se a minha internet for fraca?</summary><p>O que você já abriu fica guardado no aparelho e continua disponível com conexão fraca ou sem internet. Os episódios são leves, e o app carrega só o que você precisa naquele momento.</p></details>
+      <details><summary>Quanto custa?</summary><p><span id="faq-price">Você começa de graça. As condições do plano Premium aparecem na seção Planos.</span></p></details>
+      <details><summary>Meus dados e meu progresso ficam seguros?</summary><p>Seu progresso fica guardado no seu aparelho e, se você criar uma conta, também na nuvem, para continuar de onde parou em outro aparelho. Você controla o que compartilha na comunidade.</p></details>
     </div>
   </div>
 </section>
