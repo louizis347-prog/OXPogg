@@ -1,0 +1,526 @@
+[
+  {
+    "n": 952451,
+    "o": 952451,
+    "t": "A proposal for the community garden",
+    "s": "Apresentar e negociar uma proposta comunitária",
+    "sc": "community-center",
+    "lv": "B1",
+    "a": {
+      "k": "Situação",
+      "w": "A proposal for the community garden",
+      "y": "",
+      "d": "Em bairros de New Orleans, centros comunitários reúnem moradores, cooperativas e voluntários para decidir projetos locais."
+    },
+    "h": {
+      "l": "If we listen first, we can build a plan that works for everyone.",
+      "src": "Pocket",
+      "tr": "Se ouvirmos primeiro, podemos criar um plano que funcione para todos."
+    },
+    "p": "Hoje você apresenta uma proposta, responde a uma preocupação e negocia o próximo passo.",
+    "g": {
+      "t": "A shared plan works when each person can see a place in it."
+    },
+    "v2": true,
+    "v": [
+      [
+        "proposal",
+        "proposta",
+        "📝"
+      ],
+      [
+        "concern",
+        "preocupação",
+        "⚠️"
+      ],
+      [
+        "budget",
+        "orçamento",
+        "💰"
+      ],
+      [
+        "negotiate",
+        "negociar",
+        "🤝"
+      ],
+      [
+        "reliable",
+        "confiável",
+        "✅"
+      ]
+    ],
+    "presentation": "pocket-v1",
+    "pocket": 1,
+    "character": {
+      "id": "pk_jordan",
+      "name": "Jordan",
+      "gender": "f",
+      "role": "organizadora comunitária",
+      "city": "New Orleans",
+      "recurring": true
+    },
+    "arc": {
+      "i": 46,
+      "pos": 1,
+      "of": 10
+    },
+    "fr": [
+      {
+        "k": "pkhero",
+        "g": [
+          "#FF7A7A",
+          "#FFB84D"
+        ],
+        "num": 451,
+        "lvl": "B1",
+        "face": "👩🏾",
+        "name": "Jordan",
+        "city": "New Orleans",
+        "sub": "Apresentar e negociar uma proposta",
+        "mission": "Hoje você apresenta uma proposta, responde a uma preocupação e negocia o próximo passo.",
+        "hook": [
+          "If we listen first, we can build a plan that works for everyone.",
+          "Se ouvirmos primeiro, podemos criar um plano que funcione para todos."
+        ],
+        "boss": false
+      },
+      {
+        "k": "pkdlg",
+        "g": [
+          "#FF7A7A",
+          "#FFB84D"
+        ],
+        "title": "Diálogo",
+        "lines": [
+          [
+            "Jordan",
+            "Thanks for coming to the neighborhood meeting.",
+            "Obrigada por vir à reunião do bairro."
+          ],
+          [
+            "You",
+            "I brought a proposal for the community garden.",
+            "Trouxe uma proposta para a horta comunitária."
+          ],
+          [
+            "Jordan",
+            "What is your main concern?",
+            "Qual é a sua principal preocupação?"
+          ],
+          [
+            "You",
+            "The budget is limited, so we need a reliable plan.",
+            "O orçamento é limitado, então precisamos de um plano confiável."
+          ],
+          [
+            "Jordan",
+            "Could we negotiate the first phase with local volunteers?",
+            "Podemos negociar a primeira fase com voluntários locais?"
+          ],
+          [
+            "You",
+            "Yes. We could start small and review the costs monthly.",
+            "Sim. Podemos começar pequeno e revisar os custos mensalmente."
+          ],
+          [
+            "Jordan",
+            "That sounds fair. I will ask the food co-op for support.",
+            "Parece justo. Vou pedir apoio à cooperativa de alimentos."
+          ],
+          [
+            "You",
+            "A shared plan works when each person can see a place in it.",
+            "Assim conseguimos terminar a reunião com um próximo passo claro."
+          ]
+        ],
+        "vocab": [
+          [
+            "proposal",
+            "proposta"
+          ],
+          [
+            "concern",
+            "preocupação"
+          ],
+          [
+            "budget",
+            "orçamento"
+          ],
+          [
+            "negotiate",
+            "negociar"
+          ],
+          [
+            "reliable",
+            "confiável"
+          ]
+        ],
+        "cast": {
+          "Jordan": [
+            "👩🏾",
+            "#FF7A7A"
+          ],
+          "You": [
+            "🙂",
+            "#e85d75"
+          ]
+        }
+      },
+      {
+        "k": "pkvoc",
+        "g": [
+          "#FF7A7A",
+          "#FFB84D"
+        ],
+        "title": "Vocabulário",
+        "cards": [
+          [
+            "proposal",
+            "proposta",
+            "📝",
+            "I brought a proposal for the community garden.",
+            "Trouxe uma proposta para a horta comunitária."
+          ],
+          [
+            "concern",
+            "preocupação",
+            "⚠️",
+            "What is your main concern?",
+            "Qual é a sua principal preocupação?"
+          ],
+          [
+            "budget",
+            "orçamento",
+            "💰",
+            "The budget is limited, so we need a reliable plan.",
+            "O orçamento é limitado, então precisamos de um plano confiável."
+          ],
+          [
+            "negotiate",
+            "negociar",
+            "🤝",
+            "Could we negotiate the first phase with local volunteers?",
+            "Podemos negociar a primeira fase com voluntários locais?"
+          ],
+          [
+            "reliable",
+            "confiável",
+            "✅",
+            "Yes. We could start small and review the costs monthly.",
+            "Sim. Podemos começar pequeno e revisar os custos mensalmente."
+          ]
+        ],
+        "notes": [
+          {
+            "en": "A reliable proposal",
+            "pt": "Uma proposta confiável",
+            "txt": "💡 Em uma reunião, reliable descreve algo em que as pessoas podem confiar."
+          }
+        ]
+      },
+      {
+        "k": "pkread",
+        "g": [
+          "#FF7A7A",
+          "#FFB84D"
+        ],
+        "title": "Leitura",
+        "pars": [
+          {
+            "lead": [
+              "At a community center in New Orleans,",
+              "Em um centro comunitário em New Orleans,"
+            ],
+            "q": [
+              "",
+              ""
+            ],
+            "who": null,
+            "ic": "🏙️"
+          },
+          {
+            "lead": [
+              "Jordan welcomes you:",
+              "Jordan dá boas-vindas:"
+            ],
+            "q": [
+              "Thanks for coming to the neighborhood meeting.",
+              "Obrigada por vir à reunião do bairro."
+            ],
+            "who": "Jordan",
+            "ic": "💬"
+          },
+          {
+            "lead": [
+              "You present:",
+              "Você apresenta:"
+            ],
+            "q": [
+              "I brought a proposal for the community garden.",
+              "Trouxe uma proposta para a horta comunitária."
+            ],
+            "who": "You",
+            "ic": "📝"
+          },
+          {
+            "lead": [
+              "Jordan asks:",
+              "Jordan pergunta:"
+            ],
+            "q": [
+              "What is your main concern?",
+              "Qual é a sua principal preocupação?"
+            ],
+            "who": "Jordan",
+            "ic": "❓"
+          },
+          {
+            "lead": [
+              "You explain:",
+              "Você explica:"
+            ],
+            "q": [
+              "The budget is limited, so we need a reliable plan.",
+              "O orçamento é limitado, então precisamos de um plano confiável."
+            ],
+            "who": "You",
+            "ic": "⚠️"
+          },
+          {
+            "lead": [
+              "Jordan suggests:",
+              "Jordan sugere:"
+            ],
+            "q": [
+              "Could we negotiate the first phase with local volunteers?",
+              "Podemos negociar a primeira fase com voluntários locais?"
+            ],
+            "who": "Jordan",
+            "ic": "🤝"
+          },
+          {
+            "lead": [
+              "You answer:",
+              "Você responde:"
+            ],
+            "q": [
+              "Yes. We could start small and review the costs monthly.",
+              "Sim. Podemos começar pequeno e revisar os custos mensalmente."
+            ],
+            "who": "You",
+            "ic": "💰"
+          },
+          {
+            "lead": [
+              "Jordan agrees:",
+              "Jordan concorda:"
+            ],
+            "q": [
+              "That sounds fair. I will ask the food co-op for support.",
+              "Parece justo. Vou pedir apoio à cooperativa de alimentos."
+            ],
+            "who": "Jordan",
+            "ic": "✅"
+          },
+          {
+            "lead": [
+              "Finally, you say:",
+              "Por fim, você diz:"
+            ],
+            "q": [
+              "A shared plan works when each person can see a place in it.",
+              "Assim conseguimos terminar a reunião com um próximo passo claro."
+            ],
+            "who": "You",
+            "ic": "💬"
+          },
+          {
+            "lead": [
+              "Now you know:",
+              "Agora você sabe:"
+            ],
+            "q": [
+              "A reliable proposal can grow through careful negotiation.",
+              "Uma proposta confiável pode crescer com uma negociação cuidadosa."
+            ],
+            "who": null,
+            "ic": "💡"
+          }
+        ],
+        "vocab": [
+          [
+            "proposal",
+            "proposta"
+          ],
+          [
+            "concern",
+            "preocupação"
+          ],
+          [
+            "budget",
+            "orçamento"
+          ],
+          [
+            "negotiate",
+            "negociar"
+          ],
+          [
+            "reliable",
+            "confiável"
+          ]
+        ]
+      },
+      {
+        "k": "pkbuild",
+        "g": [
+          "#FF7A7A",
+          "#FFB84D"
+        ],
+        "title": "Monte a frase",
+        "items": [
+          {
+            "en": "We need a {0} plan.",
+            "pt": "Precisamos de um plano {0}.",
+            "opts": [
+              [
+                "reliable",
+                "confiável"
+              ],
+              [
+                "flexible",
+                "flexível"
+              ],
+              [
+                "detailed",
+                "detalhado"
+              ]
+            ],
+            "note": "Use reliable para dizer que o plano merece confiança."
+          },
+          {
+            "en": "We can {0} the budget.",
+            "pt": "Podemos {0} o orçamento.",
+            "opts": [
+              [
+                "negotiate",
+                "negociar"
+              ],
+              [
+                "explain",
+                "explicar"
+              ],
+              [
+                "review",
+                "revisar"
+              ]
+            ],
+            "note": "Negotiate mostra que as pessoas buscam um acordo."
+          }
+        ]
+      },
+      {
+        "k": "pkspeak",
+        "g": [
+          "#FF7A7A",
+          "#FFB84D"
+        ],
+        "title": "Fale",
+        "items": [
+          {
+            "who": "Jordan",
+            "line": [
+              "What is your main concern?",
+              "Qual é a sua principal preocupação?"
+            ],
+            "target": "My concern is the limited budget.",
+            "pt": "Minha preocupação é o orçamento limitado."
+          },
+          {
+            "who": "Jordan",
+            "line": [
+              "Could we negotiate the first phase?",
+              "Podemos negociar a primeira fase?"
+            ],
+            "target": "Yes, we can start with a reliable plan.",
+            "pt": "Sim, podemos começar com um plano confiável."
+          }
+        ]
+      },
+      {
+        "k": "wrap",
+        "title": "Mochila do episódio",
+        "recap": [
+          [
+            "I brought a proposal.",
+            "Trouxe uma proposta."
+          ],
+          [
+            "What is your main concern?",
+            "Qual é a sua principal preocupação?"
+          ],
+          [
+            "The budget is limited.",
+            "O orçamento é limitado."
+          ],
+          [
+            "We can negotiate the first phase.",
+            "Podemos negociar a primeira fase."
+          ]
+        ],
+        "expr": [
+          "That sounds fair.",
+          "Parece justo."
+        ],
+        "culture": "Em muitos centros comunitários de New Orleans, projetos locais começam com reuniões abertas, cooperativas e trabalho voluntário.",
+        "teaser": {
+          "t": "Próximo: A project changes direction",
+          "d": ""
+        },
+        "sticker": {
+          "name": "Jordan",
+          "face": "👩🏾",
+          "role": "organizadora comunitária",
+          "city": "New Orleans",
+          "boss": false
+        },
+        "stickers": [
+          [
+            "proposal",
+            "proposta",
+            "📝",
+            "I brought a proposal for the community garden.",
+            "Trouxe uma proposta para a horta comunitária."
+          ],
+          [
+            "concern",
+            "preocupação",
+            "⚠️",
+            "What is your main concern?",
+            "Qual é a sua principal preocupação?"
+          ],
+          [
+            "budget",
+            "orçamento",
+            "💰",
+            "The budget is limited, so we need a reliable plan.",
+            "O orçamento é limitado, então precisamos de um plano confiável."
+          ],
+          [
+            "negotiate",
+            "negociar",
+            "🤝",
+            "Could we negotiate the first phase with local volunteers?",
+            "Podemos negociar a primeira fase com voluntários locais?"
+          ],
+          [
+            "reliable",
+            "confiável",
+            "✅",
+            "Yes. We could start small and review the costs monthly.",
+            "Sim. Podemos começar pequeno e revisar os custos mensalmente."
+          ]
+        ]
+      }
+    ]
+  }
+]
