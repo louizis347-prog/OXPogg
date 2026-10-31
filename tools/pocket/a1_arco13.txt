@@ -1,0 +1,241 @@
+# Arco 13 · Tecnologia e comunicação
+T: What is the Wi-Fi password? | Pedir a senha do Wi-Fi | cafe | San Francisco | Dan,m,🧑🏽,barista
+K: What is the Wi-Fi password? | Qual é a senha do Wi-Fi?
+M: Hoje você pede a senha e confirma que conectou.
+D: You|Hi. What is the Wi-Fi password?|Oi. Qual é a senha do Wi-Fi?
+D: Dan|It is on the receipt.|Está no recibo.
+D: You|I do not see it. Can you tell me?|Não vejo. Você pode me dizer?
+D: Dan|Sure. It is coffee one two three.|Claro. É coffee um dois três.
+D: You|Coffee, one, two, three. All lowercase?|Coffee, um, dois, três. Tudo minúsculo?
+D: Dan|Yes, no spaces.|Sim, sem espaços.
+D: You|It works! Thank you!|Funcionou! Obrigado!
+D: Dan|Enjoy!|Aproveite!
+V: password|senha;receipt|recibo;lowercase|minúsculo;spaces|espaços;works|funciona
+B: What is the {0}?|Qual é {0}?|Wi-Fi password=a senha do Wi-Fi;network name=o nome da rede;address=o endereço
+B: It is coffee {0}.|É coffee {0}.|one two three=um dois três;four five six=quatro cinco seis;seven eight nine=sete oito nove
+S: Dan|It is on the receipt.|Está no recibo.|I do not see it. Can you tell me?|Não vejo. Você pode me dizer?
+S: Dan|No spaces.|Sem espaços.|It works! Thank you!|Funcionou! Obrigado!
+R: What is the Wi-Fi password?|Qual é a senha do Wi-Fi?
+R: Can you tell me?|Você pode me dizer?
+R: It works!|Funcionou!
+R: Thank you!|Obrigado!
+X: Enjoy!|Aproveite!
+C: Cafés americanos costumam dar Wi-Fi grátis aos clientes, com a senha no recibo ou na parede.
+N: Próximo: carregar o celular.
+
+T: Can I charge my phone? | Pedir para carregar o celular | cafe | Seattle | Dan,m,🧑🏽,barista
+K: Can I charge my phone here? | Posso carregar o meu celular aqui?
+M: Hoje você pede uma tomada e dá um motivo.
+D: You|Excuse me. Can I charge my phone here?|Com licença. Posso carregar o meu celular aqui?
+D: Dan|Sure. There is an outlet by the window.|Claro. Tem uma tomada perto da janela.
+D: You|Thank you. Do you have a charger?|Obrigado. Vocês têm carregador?
+D: Dan|Sorry, we do not. But you can use mine.|Desculpe, não temos. Mas pode usar o meu.
+D: You|That is very kind. My battery is almost dead.|Que gentileza. Minha bateria está quase no fim.
+D: Dan|No problem. What kind of phone?|Sem problema. Que tipo de celular?
+D: You|It is an Android.|É um Android.
+D: Dan|Perfect, mine fits.|Perfeito, o meu serve.
+V: charge|carregar;outlet|tomada;charger|carregador;battery|bateria;dead|descarregado
+B: Can I charge {0} here?|Posso carregar {0} aqui?|my phone=o meu celular;my laptop=o meu notebook;my tablet=o meu tablet
+B: My battery is almost {0}.|Minha bateria está quase {0}.|dead=no fim;full=cheia;low=baixa
+S: Dan|There is an outlet by the window.|Tem uma tomada perto da janela.|Do you have a charger?|Vocês têm carregador?
+S: Dan|You can use mine.|Pode usar o meu.|That is very kind.|Que gentileza.
+R: Can I charge my phone?|Posso carregar o meu celular?
+R: Do you have a charger?|Vocês têm carregador?
+R: My battery is almost dead.|Minha bateria está quase no fim.
+R: That is very kind.|Que gentileza.
+X: Mine fits.|O meu serve.
+C: Nos EUA, a tomada é de 110 volts e o formato é diferente do brasileiro, então você precisa de adaptador.
+N: Próximo: comprar um chip.
+
+T: I need a SIM card | Comprar um chip de celular | shop | Miami | Jay,m,🧑🏽,atendente
+K: I need a SIM card. | Preciso de um chip.
+M: Hoje você escolhe um plano de celular para a viagem.
+D: You|Hi. I need a SIM card.|Oi. Preciso de um chip.
+D: Jay|For how long?|Por quanto tempo?
+D: You|Two weeks. I am a tourist.|Duas semanas. Sou turista.
+D: Jay|We have a prepaid plan. Ten gigabytes for thirty dollars.|Temos um plano pré-pago. Dez gigas por trinta dólares.
+D: You|Does it include calls?|Inclui ligações?
+D: Jay|Yes, unlimited calls and texts.|Sim, ligações e mensagens ilimitadas.
+D: You|Great. Can you set it up?|Ótimo. Você pode configurar?
+D: Jay|Of course. Please show me your passport.|Claro. Mostre o seu passaporte, por favor.
+V: SIM card|chip;prepaid|pré-pago;plan|plano;unlimited|ilimitado;set up|configurar
+B: I need a {0}.|Preciso de {0}.|SIM card=um chip;phone plan=um plano de celular;new charger=um carregador novo
+B: It is {0} dollars.|Custa {0} dólares.|thirty=trinta;twenty=vinte;forty=quarenta
+S: Jay|For how long?|Por quanto tempo?|Two weeks. I am a tourist.|Duas semanas. Sou turista.
+S: Jay|Unlimited calls and texts.|Ligações e mensagens ilimitadas.|Can you set it up?|Você pode configurar?
+R: I need a SIM card.|Preciso de um chip.
+R: Does it include calls?|Inclui ligações?
+R: Can you set it up?|Você pode configurar?
+R: Here is my passport.|Aqui está o meu passaporte.
+X: Prepaid plan.|Plano pré-pago.
+C: Turistas nos EUA costumam comprar chips pré-pagos ou usar eSIM para ter internet barata.
+N: Próximo: mandar uma mensagem.
+
+T: Can you text me? | Trocar mensagens de texto | street | Austin | Kai,m,🧑🏻,amigo
+K: Can you text me the address? | Você pode me mandar o endereço por mensagem?
+M: Hoje você troca números e pede uma mensagem.
+D: Kai|Here is my number. Can you text me later?|Aqui está o meu número. Pode me mandar mensagem depois?
+D: You|Sure. What is it?|Claro. Qual é?
+D: Kai|Five five five, one two three four.|Cinco cinco cinco, um dois três quatro.
+D: You|Got it. Can you text me the address?|Anotei. Você pode me mandar o endereço?
+D: Kai|Yes, I send it now.|Sim, mando agora.
+D: You|I got it! Thanks!|Recebi! Valeu!
+D: Kai|If you get lost, call me.|Se você se perder, me ligue.
+D: You|Okay!|Certo!
+V: text|mensagem de texto;number|número;address|endereço;lost|perdido;send|enviar
+B: Can you text me {0}?|Você pode me mandar {0}?|the address=o endereço;a photo=uma foto;your number=o seu número
+B: My number is five five five, {0}.|Meu número é cinco cinco cinco, {0}.|one two three four=um dois três quatro;nine eight seven six=nove oito sete seis;two two two two=dois dois dois dois
+S: Kai|Can you text me later?|Pode me mandar mensagem depois?|Sure. What is your number?|Claro. Qual é o seu número?
+S: Kai|I send it now.|Mando agora.|I have it! Thanks!|Recebi! Valeu!
+R: Can you text me?|Você pode me mandar mensagem?
+R: What is your number?|Qual é o seu número?
+R: I got it!|Recebi!
+R:Okay!|Certo!
+X:Okay!|Certo!
+C: Nos EUA, "text" é mandar SMS, e o número de telefone tem dez dígitos, como 555-123-4567.
+N: Próximo: uma videochamada.
+
+T: Can you hear me? | Fazer uma videochamada | living | Denver | Mia,f,👩🏻,amiga
+K: Can you hear me? | Você consegue me ouvir?
+M: Hoje você resolve problemas de som e imagem numa videochamada.
+D: Mia|Hello! Can you hear me?|Olá! Você consegue me ouvir?
+D: You|Yes, but I cannot see you.|Sim, mas não consigo ver você.
+D: Mia|Oh, my camera is off. Let me turn it on.|Ah, minha câmera está desligada. Vou ligar.
+D: You|Now I can see you. Can you see me?|Agora vejo você. Você me vê?
+D: Mia|Yes, but your sound is low.|Vejo, mas o seu som está baixo.
+D: You|Let me check my microphone.|Deixe-me conferir o microfone.
+D: Mia|Better now! Great to see you.|Melhor agora! Que bom ver você.
+D: You|Great to see you too!|Que bom ver você também!
+V: hear|ouvir;camera|câmera;microphone|microfone;low|baixo;turn on|ligar
+B: Can you {0} me?|Você consegue {0}?|hear=me ouvir;see=me ver;understand=me entender
+B: Let me turn {0}.|Deixe-me {0}.|it on=ligar;it off=desligar;it up=aumentar
+S: Mia|Can you hear me?|Você consegue me ouvir?|Yes, but I cannot see you.|Sim, mas não consigo ver você.
+S: Mia|Your sound is low.|Seu som está baixo.|Let me check my microphone.|Deixe-me conferir o microfone.
+R: Can you hear me?|Você consegue me ouvir?
+R: I cannot see you.|Não consigo ver você.
+R: Your sound is low.|Seu som está baixo.
+R: Great to see you!|Que bom ver você!
+X: Great to see you!|Que bom ver você!
+C: Em videochamadas, os americanos costumam começar com "Can you hear me?" antes de falar.
+N: Próximo: instalar um aplicativo.
+
+T: How do I download this app? | Baixar e usar um aplicativo | living | Austin | Kai,m,🧑🏻,amigo
+K: How do I download this app? | Como eu baixo este aplicativo?
+M: Hoje você aprende a baixar e abrir um app com a ajuda de um amigo.
+D: You|How do I download this app?|Como eu baixo este aplicativo?
+D: Kai|Open the app store and search for its name.|Abra a loja de aplicativos e procure pelo nome.
+D: You|Okay. I see it. Now what?|Ok. Estou vendo. E agora?
+D: Kai|Tap "Download" and wait.|Toque em "Baixar" e espere.
+D: You|It is almost done. Do I need an account?|Está quase pronto. Preciso de uma conta?
+D: Kai|Yes. Tap "Sign up" and use your email.|Sim. Toque em "Cadastrar" e use o seu e-mail.
+D: You|Done! It works!|Pronto! Funcionou!
+D: Kai|Nice! You are a pro.|Legal! Você é craque.
+V: download|baixar;app|aplicativo;tap|tocar;account|conta;sign up|cadastrar
+B: How do I {0}?|Como eu {0}?|download this app=baixo este aplicativo;sign up=me cadastro;log in=entro
+B: Tap "{0}".|Toque em "{0}".|Download=Baixar;Sign up=Cadastrar;Open=Abrir
+S: Kai|Tap "Download" and wait.|Toque em "Baixar" e espere.|Do I need an account?|Preciso de uma conta?
+S: Kai|Use your email.|Use o seu e-mail.|Done! It works!|Pronto! Funcionou!
+R: How do I download this app?|Como eu baixo este aplicativo?
+R: Tap "Download".|Toque em "Baixar".
+R: Do I need an account?|Preciso de uma conta?
+R: It works!|Funcionou!
+X: You are a pro.|Você é craque.
+C: Nos EUA, muitos serviços (ônibus, restaurante, banco) são usados por aplicativo, então ter o app ajuda.
+N: Próximo: pedir uma carona por aplicativo.
+
+T: Where is my ride? | Pedir uma corrida por aplicativo | street | San Francisco | Lou,m,🧑🏾,motorista
+K: Where is my ride? | Onde está a minha corrida?
+M: Hoje você encontra o motorista e confirma o destino.
+D: Lou|Hi. Are you Alex?|Oi. Você é o Alex?
+D: You|Yes. Is this my ride?|Sim. Esta é a minha corrida?
+D: Lou|Yes. To the airport, right?|Sim. Para o aeroporto, certo?
+D: You|Right. How long is the wait?|Isso. Quanto é a espera?
+D: Lou|About twenty minutes with no traffic.|Cerca de vinte minutos sem trânsito.
+D: You|Can you turn on the air conditioning?|Você pode ligar o ar-condicionado?
+D: Lou|Of course. Is this okay?|Claro. Assim está bom?
+D: You|Perfect. Thanks!|Perfeito. Obrigado!
+V: ride|corrida / carona;traffic|trânsito;air conditioning|ar-condicionado;airport|aeroporto;driver|motorista
+B: Is this my {0}?|Esta é a minha {0}?|ride=corrida;car=carro;driver=motorista
+B: Can you turn on the {0}?|Você pode ligar {0}?|air conditioning=o ar-condicionado;radio=o rádio;heat=o aquecimento
+S: Lou|Are you Alex?|Você é o Alex?|Yes. Is this my ride?|Sim. Esta é a minha corrida?
+S: Lou|To the airport, right?|Para o aeroporto, certo?|Right. How long is the wait?|Isso. Quanto é a espera?
+R: Is this my ride?|Esta é a minha corrida?
+R: To the airport.|Para o aeroporto.
+R:How long is the wait?|Quanto é a espera?
+R: Can you turn on the air conditioning?|Você pode ligar o ar-condicionado?
+X: With no traffic.|Sem trânsito.
+C: Em aplicativos de carona, o motorista costuma confirmar seu nome antes de você entrar.
+N: Próximo: uma compra online.
+
+T: My order is late | Reclamar de uma encomenda | living | Seattle | Sue,f,👩🏼,atendente
+K: My order is late. | A minha encomenda está atrasada.
+M: Hoje você reclama de uma entrega e pede uma solução.
+D: Sue|Customer service. How can I help?|Atendimento ao cliente. Como posso ajudar?
+D: You|My order is late.|A minha encomenda está atrasada.
+D: Sue|What time is the order?|Que horas é o pedido?
+D: You|Ten days ago.|Há dez dias.
+D: Sue|Let me check. What is the order number?|Vou verificar. Qual é o número do pedido?
+D: You|It is seven seven four two.|É sete sete quatro dois.
+D: Sue|I see the problem. It is delayed.|Vi o problema. Está atrasado.
+D: You|Can I get a refund?|Posso receber reembolso?
+V: order|pedido;late|atrasada;ago|atrás / há;delayed|atrasado;customer service|atendimento
+B: My {0} is late.|{0} está em atraso.|order=A minha encomenda;package=O meu pacote;delivery=A minha entrega
+B: I ordered it {0} days ago.|Pedi há {0} dias.|ten=dez;five=cinco;three=três
+S: Sue|How can I help?|Como posso ajudar?|My order is late.|A minha encomenda está atrasada.
+S: Sue|It is delayed.|Está atrasado.|Can I get a refund?|Posso receber reembolso?
+R: My order is late.|A minha encomenda está atrasada.
+R: It is ten days late.|Está dez dias atrasada.
+R: It is order seven seven four two.|É o pedido sete sete quatro dois.
+R: Can I get a refund?|Posso receber reembolso?
+X: Let me check.|Vou verificar.
+C: Nos EUA, a maioria das lojas online dá número de rastreamento (tracking number) para acompanhar a entrega.
+N: Próximo: um e-mail simples.
+
+T: Writing a short email | Escrever um e-mail curto | office | Chicago | Priya,f,🧑🏽,colega
+K: I am writing to ask about… | Estou escrevendo para perguntar sobre…
+M: Hoje você monta um e-mail curto com saudação e despedida.
+D: Priya|Can you help me write an email?|Você pode me ajudar a escrever um e-mail?
+D: You|Sure. Start with "Dear Mr. Lee".|Claro. Comece com "Prezado Sr. Lee".
+D: Priya|Then what?|E depois?
+D: You|Write: "I am writing to ask about the meeting."|Escreva: "Estou escrevendo para perguntar sobre a reunião."
+D: Priya|Can I ask for a time?|Posso pedir um horário?
+D: You|Yes: "Could we meet on Monday?"|Sim: "Poderíamos nos reunir na segunda?"
+D: Priya|And the ending?|E o final?
+D: You|"Best regards, Priya."|"Atenciosamente, Priya."
+V: email|e-mail;dear|prezado;writing|escrevendo;regards|atenciosamente;meeting|reunião
+B: I am writing to ask about {0}.|Estou escrevendo para perguntar sobre {0}.|the meeting=a reunião;the price=o preço;the schedule=o horário
+B: Could we meet on {0}?|Poderíamos nos reunir na {0}?|Monday=segunda;Tuesday=terça;Friday=sexta
+S: Priya|Then what?|E depois?|Write: I am writing to ask about the meeting.|Escreva: Estou escrevendo para perguntar sobre a reunião.
+S: Priya|And the ending?|E o final?|Best regards.|Atenciosamente.
+R: Dear Mr. Lee,|Prezado Sr. Lee,
+R: I am writing to ask about…|Estou escrevendo para perguntar sobre…
+R: Could we meet on Monday?|Poderíamos nos reunir na segunda?
+R: Best regards,|Atenciosamente,
+X: Best regards.|Atenciosamente.
+C: Em e-mails profissionais americanos, "Best regards" e "Sincerely" são fechamentos comuns.
+N: Próximo: o desafio do arco.
+
+T: A day online | Desafio do arco: um dia conectado | cafe | San Francisco | Dan,m,🧑🏽,barista
+K: I need Wi-Fi to work. | Preciso de Wi-Fi para trabalhar.
+M: Mini-chefe: conecte, carregue, escreva e peça uma carona.
+D: You|Good morning. What is the Wi-Fi password?|Bom dia. Qual é a senha do Wi-Fi?
+D: Dan|Coffee one two three. Need an outlet too?|Coffee um dois três. Precisa de tomada também?
+D: You|Yes, please. My battery is almost dead.|Sim, por favor. Minha bateria está quase no fim.
+D: Dan|There is one by the window.|Tem uma perto da janela.
+D: You|Thanks. I also need to send an email.|Obrigado. Também preciso mandar um e-mail.
+D: Dan|No problem. Another coffee?|Sem problema. Outro café?
+D: You|Yes, and I need a ride to the airport.|Sim, e preciso de uma corrida até o aeroporto.
+D: Dan|Perfect. Good luck with your trip!|Perfeito. Boa sorte na viagem!
+V: connect|conectar;outlet|tomada;later|mais tarde;trip|viagem;another|outro
+B: I need {0}.|Preciso de {0}.|Wi-Fi=Wi-Fi;an outlet=uma tomada;a charger=um carregador
+B: Later I {0}.|Mais tarde eu {0}.|order a ride=pedir uma corrida;send an email=mandar um e-mail;call my friend=ligar para o meu amigo
+S: Dan|Need an outlet too?|Precisa de tomada também?|Yes, please. My battery is almost dead.|Sim, por favor. Minha bateria está quase no fim.
+S: Dan|Another coffee?|Outro café?|Yes, and I need a ride.|Sim, e preciso de uma corrida.
+R: What is the Wi-Fi password?|Qual é a senha do Wi-Fi?
+R: My battery is almost dead.|Minha bateria está quase no fim.
+R: I need to send an email.|Preciso mandar um e-mail.
+R: Good luck with your trip!|Boa sorte na viagem!
+X: Good luck with your trip!|Boa sorte na viagem!
+C: Parabéns! Você terminou o arco 13 e ganhou a figurinha rara do Dan (versão conectada).
+N: Próximo arco: datas, meses e festas.
+BOSS: 1

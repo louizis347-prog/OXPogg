@@ -1,0 +1,192 @@
+# Arco 5 · Hotel e viagem
+T: Do you have a room? | Perguntar por um quarto | hall | Las Vegas | Sam,m,🧑🏿,recepcionista
+K: Do you have a room for two nights? | Vocês têm um quarto para duas noites?
+M: Hoje você reserva um quarto e pergunta o preço.
+D: You|Hi. Do you have a room for two nights?|Oi. Vocês têm um quarto para duas noites?
+D: Sam|Yes. Single or double?|Temos. Solteiro ou de casal?
+D: You|Double, please. How much is it?|De casal, por favor. Quanto custa?
+D: Sam|It is one hundred twenty a night.|São cento e vinte por noite.
+D: You|Is breakfast included?|O café da manhã está incluído?
+D: Sam|Yes, from seven to ten.|Sim, das sete às dez.
+D: You|Great. I want it.|Ótimo. Eu quero este.
+D: Sam|Perfect. Your name, please?|Perfeito. Seu nome, por favor?
+V: room|quarto;night|noite;single|solteiro;double|casal;included|incluído
+B: Do you have a room for {0}?|Vocês têm um quarto para {0}?|two nights=duas noites;one night=uma noite;a week=uma semana
+B: It is {0} a night.|São {0} por noite.|one hundred twenty=cento e vinte;eighty=oitenta;two hundred=duzentos
+S: Sam|How can I help you?|Como posso ajudar?|Do you have a room for two nights?|Vocês têm um quarto para duas noites?
+S: Sam|Single or double?|Solteiro ou de casal?|Double, please.|De casal, por favor.
+R: Do you have a room?|Vocês têm um quarto?
+R: Double, please.|De casal, por favor.
+R: Is breakfast included?|O café da manhã está incluído?
+R: I want it.|Eu quero este.
+X: I want it.|Eu quero este.
+C: Nos hotéis dos EUA, o preço do quarto costuma ser por noite e não inclui o imposto.
+N: Próximo: um problema no quarto.
+
+T: There is a problem | Reclamar de um problema | hall | Orlando | Sam,m,🧑🏿,recepcionista
+K: There is a problem with my room. | Há um problema com o meu quarto.
+M: Hoje você explica o problema e pede ajuda.
+D: You|Excuse me. There is a problem with my room.|Com licença. Há um problema com o meu quarto.
+D: Sam|I am sorry. What is the problem?|Sinto muito. Qual é o problema?
+D: You|The air conditioner does not work.|O ar-condicionado não funciona.
+D: Sam|Let me send someone right away.|Deixe-me mandar alguém agora mesmo.
+D: You|Also, there are no towels.|Além disso, não há toalhas.
+D: Sam|Let me bring some in ten minutes.|Deixe-me trazer algumas em dez minutos.
+D: You|Thank you very much.|Muito obrigado.
+D: Sam|Sorry again for the trouble.|Desculpe de novo pelo problema.
+V: problem|problema;air conditioner|ar-condicionado;towels|toalhas;work|funcionar;trouble|incômodo
+B: The {0} does not work.|{0} não funciona.|air conditioner=O ar-condicionado;TV=A TV;shower=O chuveiro
+B: There are no {0}.|Não há {0}.|towels=toalhas;pillows=travesseiros;blankets=cobertores
+S: Sam|What is the problem?|Qual é o problema?|The air conditioner does not work.|O ar-condicionado não funciona.
+S: Sam|Let me send someone.|Deixe-me mandar alguém.|Also, there are no towels.|Além disso, não há toalhas.
+R: There is a problem.|Há um problema.
+R: It does not work.|Não funciona.
+R: There are no towels.|Não há toalhas.
+R: Sorry for the trouble.|Desculpe o incômodo.
+X: Right away.|Agora mesmo.
+C: Nos hotéis americanos, quase sempre há um telefone no quarto ligado direto à recepção.
+N: Próximo: pedir o café da manhã.
+
+T: Breakfast, please | Pedir o café da manhã | cafe | Chicago | Ana,f,👩🏼,garçonete
+K: I would like the breakfast special. | Eu gostaria do café da manhã completo.
+M: Hoje você pede ovos, café e torrada do jeito certo.
+D: Ana|Good morning! Coffee?|Bom dia! Café?
+D: You|Yes, please. And I would like the breakfast special.|Sim, por favor. E eu gostaria do café da manhã completo.
+D: Ana|How do you like your eggs?|Como você quer os ovos?
+D: You|Scrambled, please.|Mexidos, por favor.
+D: Ana|Toast or pancakes?|Torrada ou panquecas?
+D: You|Pancakes, with syrup.|Panquecas, com calda.
+D: Ana|Coming right up!|Já vai sair!
+D: You|Thank you!|Obrigado!
+V: special|prato do dia;eggs|ovos;scrambled|mexidos;pancakes|panquecas;syrup|calda
+B: I would like {0}.|Eu gostaria de {0}.|pancakes=panquecas;toast=torrada;orange juice=suco de laranja
+B: Eggs {0}, please.|Ovos {0}, por favor.|scrambled=mexidos;fried=fritos;boiled=cozidos
+S: Ana|How do you like your eggs?|Como você quer os ovos?|Scrambled, please.|Mexidos, por favor.
+S: Ana|Toast or pancakes?|Torrada ou panquecas?|Pancakes, please.|Panquecas, por favor.
+R: I would like the breakfast special.|Eu gostaria do café da manhã completo.
+R: Scrambled eggs, please.|Ovos mexidos, por favor.
+R: Pancakes with syrup.|Panquecas com calda.
+R: Coming right up!|Já vai sair!
+X: How do you like your eggs?|Como você quer os ovos?
+C: O café da manhã americano tem ovos, bacon, torrada ou panquecas com calda de bordo (maple syrup).
+N: Próximo: passeio na cidade.
+
+T: Two tickets, please | Comprar ingressos | museum | Washington | Eva,f,👩🏻,bilheteira
+K: Two tickets, please. | Dois ingressos, por favor.
+M: Hoje você compra ingressos e pergunta o horário.
+D: You|Hi. Two tickets, please.|Oi. Dois ingressos, por favor.
+D: Eva|Adults or students?|Adultos ou estudantes?
+D: You|One adult and one student.|Um adulto e um estudante.
+D: Eva|That is twenty-five dollars.|São vinte e cinco dólares.
+D: You|What time does the museum close?|A que horas o museu fecha?
+D: Eva|At five thirty.|Às cinco e meia.
+D: You|Can I take photos inside?|Posso tirar fotos lá dentro?
+D: Eva|Yes, but no flash.|Pode, mas sem flash.
+V: tickets|ingressos;adult|adulto;student|estudante;close|fechar;photos|fotos
+B: {0} tickets, please.|{0} ingressos, por favor.|Two=Dois;Three=Três;Four=Quatro
+B: The museum closes at {0}.|O museu fecha às {0}.|five thirty=cinco e meia;six=seis;four=quatro
+S: Eva|Adults or students?|Adultos ou estudantes?|One adult and one student.|Um adulto e um estudante.
+S: Eva|It closes at five thirty.|Fecha às cinco e meia.|Can I take photos?|Posso tirar fotos?
+R: Two tickets, please.|Dois ingressos, por favor.
+R: One adult, one student.|Um adulto, um estudante.
+R: What time does it close?|A que horas fecha?
+R: Can I take photos?|Posso tirar fotos?
+X: No flash.|Sem flash.
+C: Muitos museus em Washington, como os do Smithsonian, são gratuitos.
+N: Próximo: pedir para tirar uma foto.
+
+T: Can you take a photo? | Pedir para tirarem uma foto | plaza | New York | Dan,m,🧑🏽,turista
+K: Can you take a photo of us? | Você pode tirar uma foto de nós?
+M: Hoje você pede uma foto e escolhe o melhor ângulo.
+D: You|Excuse me. Can you take a photo of us?|Com licença. Você pode tirar uma foto de nós?
+D: Dan|Sure! Which button?|Claro! Qual botão?
+D: You|This one. Please include the statue.|Este. Por favor, pegue a estátua.
+D: Dan|Okay. Smile! One, two, three.|Ok. Sorriam! Um, dois, três.
+D: You|Can you take one more?|Pode tirar mais uma?
+D: Dan|Here you go. Is it good?|Aqui está. Ficou boa?
+D: You|It is perfect. Thank you!|Ficou perfeita. Obrigado!
+D: Dan|My pleasure!|Foi um prazer!
+V: photo|foto;statue|estátua;smile|sorrir;button|botão;one more|mais uma
+B: Can you take a {0}?|Você pode tirar {0}?|photo=uma foto;picture=uma foto;video=um vídeo
+B: Please include the {0}.|Por favor, pegue {0}.|statue=a estátua;bridge=a ponte;building=o prédio
+S: Dan|Which button?|Qual botão?|This one. Please include the statue.|Este. Por favor, pegue a estátua.
+S: Dan|Is it good?|Ficou boa?|It is perfect. Thank you!|Ficou perfeita. Obrigado!
+R: Can you take a photo of us?|Você pode tirar uma foto de nós?
+R: Please include the statue.|Por favor, pegue a estátua.
+R: Can you take one more?|Pode tirar mais uma?
+R: It is perfect.|Ficou perfeita.
+X: My pleasure!|Foi um prazer!
+C: Nos pontos turísticos, tirar foto para os outros é algo comum e bem-visto.
+N: Próximo: comprar lembranças.
+
+T: A gift for my mom | Comprar lembranças | shop | New Orleans | Rita,f,👩🏽,vendedora
+K: I am looking for a gift. | Estou procurando um presente.
+M: Hoje você escolhe um presente e pergunta o preço.
+D: Rita|Welcome! Can I help you?|Bem-vindo! Posso ajudar?
+D: You|Yes, I am looking for a gift for my mom.|Sim, estou procurando um presente para minha mãe.
+D: Rita|How about this scarf?|Que tal este lenço?
+D: You|It is beautiful. How much is it?|É lindo. Quanto custa?
+D: Rita|It is eighteen dollars.|Custa dezoito dólares.
+D: You|Do you have it in green?|Vocês têm em verde?
+D: Rita|Yes! Do you want it gift wrapped?|Temos! Quer embrulho para presente?
+D: You|Yes, please.|Sim, por favor.
+V: gift|presente;scarf|lenço;beautiful|lindo;wrapped|embrulhado;mom|mãe
+B: I am looking for a {0}.|Estou procurando {0}.|gift=um presente;souvenir=uma lembrança;postcard=um cartão-postal
+B: How about this {0}?|Que tal {0}?|scarf=este lenço;bag=esta bolsa;hat=este chapéu
+S: Rita|Can I help you?|Posso ajudar?|I am looking for a gift for my mom.|Estou procurando um presente para minha mãe.
+S: Rita|How about this scarf?|Que tal este lenço?|How much is it?|Quanto custa?
+R: I am looking for a gift.|Estou procurando um presente.
+R: How about this scarf?|Que tal este lenço?
+R: Do you have it in green?|Vocês têm em verde?
+R: Gift wrapped, please.|Embrulho de presente, por favor.
+X: How about this?|Que tal este?
+C: Em lojas de lembranças dos EUA, os preços são fixos e você pode pedir embrulho para presente.
+N: Próximo: perdeu algo.
+
+T: Can you repeat that? | Pedir para repetir e falar mais devagar | street | Seattle | Max,m,🧑🏼,pedestre
+K: Can you repeat that, please? | Você pode repetir, por favor?
+M: Hoje você pede para repetir e para falar mais devagar.
+D: Max|Take the second left, then the first right.|Pegue a segunda à esquerda, depois a primeira à direita.
+D: You|Sorry, can you repeat that, please?|Desculpe, você pode repetir, por favor?
+D: Max|Sure. The second left, then the first right.|Claro. A segunda à esquerda, depois a primeira à direita.
+D: You|Can you speak more slowly?|Você pode falar mais devagar?
+D: Max|Of course. Second left. First right.|Claro. Segunda à esquerda. Primeira à direita.
+D: You|Second left, first right. Got it.|Segunda à esquerda, primeira à direita. Entendi.
+D: Max|You speak English very well!|Você fala inglês muito bem!
+D: You|Thank you! I am learning.|Obrigado! Estou aprendendo.
+V: repeat|repetir;slowly|devagar;second|segundo;first|primeiro;learning|aprendendo
+B: Can you {0}, please?|Você pode {0}, por favor?|repeat that=repetir isso;speak slowly=falar devagar;write it=escrever isso
+B: I am {0}.|Eu estou {0}.|learning=aprendendo;lost=perdido;late=atrasado
+S: Max|Take the second left.|Pegue a segunda à esquerda.|Can you repeat that, please?|Você pode repetir, por favor?
+S: Max|Of course.|Claro.|Can you speak more slowly?|Você pode falar mais devagar?
+R: Can you repeat that, please?|Você pode repetir, por favor?
+R: Can you speak more slowly?|Você pode falar mais devagar?
+R: Got it.|Entendi.
+R: I am learning.|Estou aprendendo.
+X: Sorry?|Como? / Desculpe?
+C: Os americanos geralmente são pacientes com quem está aprendendo inglês e gostam de ajudar.
+N: Próximo: falar do hotel por telefone.
+
+T: Room service | Pedir serviço de quarto | hall | New York | Sam,m,🧑🏿,recepcionista
+K: Could I order room service? | Eu poderia pedir serviço de quarto?
+M: Hoje você pede o jantar pelo telefone do quarto.
+D: Sam|Front desk. How can I help you?|Recepção. Como posso ajudar?
+D: You|Hello. Could I order room service?|Olá. Eu poderia pedir serviço de quarto?
+D: Sam|Of course. What would you like?|Claro. O que você gostaria?
+D: You|A chicken sandwich and a salad.|Um sanduíche de frango e uma salada.
+D: Sam|Anything to drink?|Algo para beber?
+D: You|A bottle of water, please.|Uma garrafa de água, por favor.
+D: Sam|It is here in thirty minutes.|Chega em trinta minutos.
+D: You|Thank you!|Obrigado!
+V: front desk|recepção;room service|serviço de quarto;sandwich|sanduíche;bottle|garrafa;arrive|chegar
+B: Could I order {0}?|Eu poderia pedir {0}?|room service=serviço de quarto;breakfast=café da manhã;a taxi=um táxi
+B: A {0} and a {1}.|Um {0} e uma {1}.|sandwich=sanduíche;soup=sopa;salad=salada
+S: Sam|How can I help you?|Como posso ajudar?|Could I order room service?|Eu poderia pedir serviço de quarto?
+S: Sam|What would you like?|O que você gostaria?|A chicken sandwich and a salad.|Um sanduíche de frango e uma salada.
+R: Could I order room service?|Eu poderia pedir serviço de quarto?
+R: A chicken sandwich, please.|Um sanduíche de frango, por favor.
+R: A bottle of water.|Uma garrafa de água.
+R:It is here in thirty minutes.|Chega em trinta minutos.
+X: Front desk.|Recepção.
+C: Nos hotéis dos EUA, o serviço de quarto costuma ter taxa de entrega, além da gorjeta.
+N: Próximo: o desafio do arco.

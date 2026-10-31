@@ -1,0 +1,230 @@
+# Arco 28 · Cozinhar, comer e receber
+T: Following a recipe | Seguir uma receita em ordem | kitchen | Chicago | Ana,f,👩🏼,amiga
+K: First, chop the onions. | Primeiro, pique as cebolas.
+M: Hoje você segue os passos de uma receita.
+D: Ana|Let us make tomato soup. First, chop the onions and the garlic.|Vamos fazer sopa de tomate. Primeiro, pique as cebolas e o alho.
+D: You|Done. What should I do next?|Pronto. O que devo fazer em seguida?
+D: Ana|Fry them in a little oil for five minutes.|Frite em um pouco de óleo por cinco minutos.
+D: You|Then I add the tomatoes, right?|Depois eu coloco os tomates, certo?
+D: Ana|Yes. After that, add water and a pinch of salt.|Sim. Depois disso, adicione água e uma pitada de sal.
+D: You|How long do we cook it?|Por quanto tempo cozinhamos?
+D: Ana|Twenty minutes on low heat. Finally, blend everything.|Vinte minutos em fogo baixo. Por fim, bata tudo.
+D: You|It smells wonderful already!|Já está com um cheiro maravilhoso!
+V: chop|picar;fry|fritar;pinch|pitada;low heat|fogo baixo;blend|bater
+B: First, chop the {0}.|Primeiro, pique {0}.|onions=as cebolas;garlic=o alho;tomatoes=os tomates
+B: Cook it for {0} on low heat.|Cozinhe por {0} em fogo baixo.|twenty minutes=vinte minutos;ten minutes=dez minutos;an hour=uma hora
+S: Ana|What should I do first?|O que devo fazer primeiro?|First, chop the onions and the garlic.|Primeiro, pique cebola e alho.
+S: Ana|How long do we cook it?|Por quanto tempo cozinhamos?|Twenty minutes on low heat.|Vinte minutos em fogo baixo.
+R: First, chop the onions.|Primeiro, pique as cebolas.
+R: Fry them for five minutes.|Frite por cinco minutos.
+R: After that, add water and salt.|Depois disso, adicione água e sal.
+R: Finally, blend everything.|Por fim, bata tudo.
+X: A pinch of salt.|Uma pitada de sal.
+C: As receitas americanas costumam usar xícaras e colheres para medir, e o forno é ajustado em graus Fahrenheit.
+
+T: The farmers market today | Comprar no mercado de produtores | market | Portland | Rosa,f,👩🏽,vendedora
+K: Are these vegetables local? | Estes legumes são daqui?
+M: Hoje você compra frutas e legumes direto dos produtores.
+D: You|Good morning. Are these vegetables local?|Bom dia. Estes legumes são daqui?
+D: Rosa|Yes, we grow everything on our farm, twenty miles from here.|Sim, cultivamos tudo na nossa fazenda, a trinta quilômetros daqui.
+D: You|The tomatoes look wonderful. How much are they?|Os tomates estão lindos. Quanto custam?
+D: Rosa|Three dollars a pound. Try one, it is sweet.|Três dólares a libra. Experimente um, é doce.
+D: You|Mmm, delicious. I will take two pounds, and a bunch of basil.|Mmm, delicioso. Vou levar duas libras e um maço de manjericão.
+D: Rosa|Anything else? The strawberries are in season.|Mais alguma coisa? Os morangos estão na época.
+D: You|Yes, one basket, please. Do you take cards?|Sim, uma cesta, por favor. Vocês aceitam cartão?
+D: Rosa|Yes, with this little reader. Here is your bag.|Sim, com esta maquininha. Aqui está sua sacola.
+V: local|local;grow|cultivar;in season|na época;basket|cesta;basil|manjericão
+B: Are these {0} local?|Estes {0} são daqui?|vegetables=legumes;eggs=ovos;flowers=flores
+B: I will take {0}.|Vou levar {0}.|two pounds=duas libras;a basket=uma cesta;a bunch=um maço
+S: Rosa|Try one, it is sweet.|Experimente um, é doce.|Mmm, delicious. I will take two pounds.|Mmm, delicioso. Vou levar duas libras.
+S: Rosa|The strawberries are in season.|Os morangos estão na época.|One basket, please. Do you take cards?|Uma cesta, por favor. Aceitam cartão?
+R: Are these vegetables local?|Estes legumes são daqui?
+R: How much are the tomatoes?|Quanto custam os tomates?
+R: The strawberries are in season.|Os morangos estão na época.
+R: Do you take cards?|Vocês aceitam cartão?
+X: Try one.|Experimente um.
+C: Feiras de produtores aos sábados são comuns nos EUA, e muita gente compra frutas, pães e queijos direto de quem produz.
+
+T: I am on a diet | Falar de restrições alimentares | cafe | Seattle | Jess,f,🧑🏼,amiga
+K: I cannot eat dairy. | Não posso comer laticínios.
+M: Hoje você explica uma restrição e escolhe o que comer.
+D: Jess|What would you like to order?|O que você gostaria de pedir?
+D: You|Let me see the menu. I cannot eat dairy, so I need to be careful.|Deixe-me ver o cardápio. Não posso comer laticínios, então preciso ter cuidado.
+D: Jess|Do you have an allergy or is it a diet?|Você tem alergia ou é dieta?
+D: You|It is an intolerance. Milk and cheese make me feel sick.|É intolerância. Leite e queijo me fazem mal.
+D: Jess|The grilled fish has no dairy, and the salad comes without cheese.|O peixe grelhado não tem laticínios e a salada vem sem queijo.
+D: You|Perfect. I will take the fish with vegetables.|Perfeito. Vou querer o peixe com legumes.
+D: Jess|And for dessert, they have a fruit plate with no cream.|E de sobremesa, têm um prato de frutas sem creme.
+D: You|Great. I will try that. Thanks for the advice.|Ótimo. Vou experimentar. Obrigada pelo conselho.
+V: dairy|laticínios;allergy|alergia;intolerance|intolerância;cheese|queijo;plate|prato
+B: I cannot eat {0}.|Não posso comer {0}.|dairy=laticínios;gluten=glúten;nuts=nozes
+B: The salad comes without {0}.|A salada vem sem {0}.|cheese=queijo;nuts=nozes;onions=cebola
+S: Jess|Do you have an allergy or is it a diet?|É alergia ou dieta?|It is an intolerance. Milk and cheese make me feel sick.|É intolerância. Leite e queijo me fazem mal.
+S: Jess|The salad comes without cheese.|A salada vem sem queijo.|Perfect. I will take the fish.|Perfeito. Vou querer o peixe.
+R: I cannot eat dairy.|Não posso comer laticínios.
+R: It is an intolerance.|É uma intolerância.
+R: The salad comes without cheese.|A salada vem sem queijo.
+R: I will take the fish with vegetables.|Vou querer o peixe com legumes.
+X: I need to be careful.|Preciso ter cuidado.
+C: Restaurantes americanos oferecem opções sem glúten, sem laticínios e veganas, e o cardápio costuma indicar isso com símbolos.
+
+T: A picnic in the park | Organizar um piquenique | park | Austin | Tom,m,🧑🏽,amigo
+K: I will bring the sandwiches. | Eu levo os sanduíches.
+M: Hoje você divide o que cada um vai levar para o piquenique.
+D: Tom|The weather is perfect for a picnic on Saturday.|O tempo está perfeito para um piquenique no sábado.
+D: You|Great. I will bring the sandwiches and some fruit.|Ótimo. Eu levo os sanduíches e algumas frutas.
+D: Tom|I will bring drinks and a blanket.|Eu levo bebidas e uma manta.
+D: You|Should we bring plates and cups?|Devemos levar pratos e copos?
+D: Tom|Yes, and napkins too. Let us use reusable ones.|Sim, e guardanapos também. Vamos usar reutilizáveis.
+D: You|And what about games? I have a frisbee and a ball.|E jogos? Tenho um frisbee e uma bola.
+D: Tom|Perfect. We can play after eating.|Perfeito. Podemos jogar depois de comer.
+D: You|Do not forget bug spray. There are many mosquitoes near the lake.|Não esqueça repelente. Tem muitos mosquitos perto do lago.
+V: picnic|piquenique;blanket|manta;napkins|guardanapos;frisbee|frisbee;mosquitoes|mosquitos
+B: I will bring {0}.|Eu levo {0}.|the sandwiches=os sanduíches;the drinks=as bebidas;the blanket=a manta
+B: Do not forget {0}.|Não esqueça {0}.|bug spray=o repelente;sunscreen=o protetor solar;napkins=os guardanapos
+S: Tom|The weather is perfect for a picnic.|O tempo está perfeito para piquenique.|Great. I will bring the sandwiches.|Ótimo. Levo os sanduíches.
+S: Tom|I will bring drinks and a blanket.|Levo bebidas e uma manta.|Do not forget bug spray.|Não esqueça o repelente.
+R: I will bring the sandwiches.|Eu levo os sanduíches.
+R: Should we bring plates and cups?|Devemos levar pratos e copos?
+R: We can play after eating.|Podemos jogar depois de comer.
+R: Do not forget bug spray.|Não esqueça o repelente.
+X: Perfect for a picnic.|Perfeito para piquenique.
+C: Piqueniques em parques são tradição americana de verão, e muitos parques têm mesas e churrasqueiras públicas.
+
+T: The food truck | Pedir num food truck | street | Los Angeles | Moe,m,🧑🏻,atendente
+K: What do you recommend? | O que você recomenda?
+M: Hoje você escolhe um prato rápido num food truck.
+D: Moe|Hi there! What can I get you?|Oi! O que posso servir?
+D: You|What do you recommend? This is my first time here.|O que você recomenda? É minha primeira vez aqui.
+D: Moe|Try the fish tacos. They are our best seller.|Experimente os tacos de peixe. São o nosso mais vendido.
+D: You|Are they spicy?|São picantes?
+D: Moe|A little, but you can add mild sauce instead.|Um pouco, mas pode pedir molho suave.
+D: You|I will take two tacos with mild sauce and a lemonade.|Vou querer dois tacos com molho suave e uma limonada.
+D: Moe|That is eleven dollars. It will be ready in five minutes.|São onze dólares. Fica pronto em cinco minutos.
+D: You|Perfect. Do you have napkins and a place to sit?|Perfeito. Têm guardanapos e lugar para sentar?
+V: recommend|recomendar;best seller|mais vendido;mild|suave;sauce|molho;lemonade|limonada
+B: Try the {0}.|Experimente {0}.|fish tacos=os tacos de peixe;burger=o hambúrguer;burrito=o burrito
+B: You can add {0} sauce.|Você pode pedir molho {0}.|mild=suave;hot=picante;sweet=doce
+S: Moe|What can I get you?|O que posso servir?|What do you recommend? This is my first time here.|O que recomenda? É minha primeira vez aqui.
+S: Moe|Try the fish tacos.|Experimente os tacos de peixe.|Are they spicy?|São picantes?
+R: What do you recommend?|O que você recomenda?
+R: Try the fish tacos.|Experimente os tacos de peixe.
+R: I will take two tacos with mild sauce.|Vou querer dois tacos com molho suave.
+R: It will be ready in five minutes.|Fica pronto em cinco minutos.
+X: This is my first time here.|É minha primeira vez aqui.
+C: Em cidades como Los Angeles e Austin, food trucks servem comidas de todo o mundo e são parte da cultura de rua.
+
+T: A coffee order | Pedir café personalizado | cafe | Seattle | Kai,m,🧑🏻,barista
+K: I would like a medium latte with oat milk. | Gostaria de um latte médio com leite de aveia.
+M: Hoje você faz um pedido detalhado numa cafeteria.
+D: Kai|Hi! What can I get started for you?|Oi! O que posso começar a preparar para você?
+D: You|I would like a medium latte with oat milk, please.|Gostaria de um latte médio com leite de aveia, por favor.
+D: Kai|Hot or iced?|Quente ou gelado?
+D: You|Hot. And could you add one shot of vanilla?|Quente. E poderia colocar uma dose de baunilha?
+D: Kai|Sure. Would you like it for here or to go?|Claro. Para tomar aqui ou levar?
+D: You|For here, please. And one blueberry muffin.|Para tomar aqui, por favor. E um muffin de mirtilo.
+D: Kai|That is seven fifty. What name for the order?|São sete e cinquenta. Qual nome para o pedido?
+D: You|Ana. Thank you!|Ana. Obrigada!
+V: latte|latte;oat milk|leite de aveia;iced|gelado;shot|dose;muffin|muffin
+B: I would like a {0} latte.|Gostaria de um latte {0}.|medium=médio;small=pequeno;large=grande
+B: Hot or {0}?|Quente ou {0}?|iced=gelado;warm=morno;cold=frio
+S: Kai|What can I get started for you?|O que posso preparar?|I would like a medium latte with oat milk.|Gostaria de um latte médio com leite de aveia.
+S: Kai|For here or to go?|Para tomar aqui ou levar?|For here, please.|Para tomar aqui, por favor.
+R: I would like a medium latte.|Gostaria de um latte médio.
+R: With oat milk, please.|Com leite de aveia, por favor.
+R: For here or to go?|Para tomar aqui ou levar?
+R: What name for the order?|Qual nome para o pedido?
+X: For here or to go?|Aqui ou para levar?
+C: Nas cafeterias americanas, o barista escreve seu nome no copo, e o pedido é chamado pelo nome.
+
+T: At the bakery today | Escolher pães e doces | shop | New Orleans | Lia,f,👩🏽,padeira
+K: A dozen rolls, please. | Uma dúzia de pãezinhos, por favor.
+M: Hoje você faz um pedido numa padaria.
+D: Lia|Good morning! Our bread is fresh from the oven.|Bom dia! Nosso pão está fresquinho, saído do forno.
+D: You|It smells amazing. A dozen rolls, please.|Está com um cheiro incrível. Uma dúzia de pãezinhos, por favor.
+D: Lia|Anything else? The croissants are still warm.|Mais alguma coisa? Os croissants ainda estão quentes.
+D: You|Two croissants, and a chocolate cake for tomorrow's party.|Dois croissants e um bolo de chocolate para a festa de amanhã.
+D: Lia|How many people will be at the party?|Quantas pessoas estarão na festa?
+D: You|About ten.|Cerca de dez.
+D: Lia|Then I suggest the large cake. Should I write something on it?|Então sugiro o bolo grande. Devo escrever algo nele?
+D: You|Yes, "Happy Birthday, Sam". Can I pick it up at noon?|Sim, "Feliz Aniversário, Sam". Posso buscar ao meio-dia?
+V: fresh|fresco;rolls|pãezinhos;croissants|croissants;oven|forno;suggest|sugerir
+B: A dozen {0}, please.|Uma dúzia de {0}, por favor.|rolls=pãezinhos;eggs=ovos;cookies=biscoitos
+B: Should I write something on {0}?|Devo escrever algo {0}?|it=nele;the cake=no bolo;the box=na caixa
+S: Lia|Anything else?|Mais alguma coisa?|Two croissants and a chocolate cake, please.|Dois croissants e um bolo de chocolate.
+S: Lia|How many people will be at the party?|Quantas pessoas na festa?|About ten. Can I pick it up at noon?|Cerca de dez. Posso buscar ao meio-dia?
+R: Our bread is fresh from the oven.|Nosso pão está fresquinho do forno.
+R: A dozen rolls, please.|Uma dúzia de pãezinhos, por favor.
+R: Two croissants, please.|Dois croissants, por favor.
+R: Can I pick it up at noon?|Posso buscar ao meio-dia?
+X: Fresh from the oven.|Fresquinho do forno.
+C: Em Nova Orleans, a padaria e a cafeteria são ponto de encontro, e os doces locais, como o beignet, são famosos.
+
+T: Cooking for friends | Preparar um jantar para amigos | kitchen | Denver | Rosa,f,👩🏽,anfitriã
+K: Dinner is almost ready. | O jantar está quase pronto.
+M: Hoje você recebe amigos e serve o jantar.
+D: Rosa|Come in! Dinner is almost ready.|Entrem! O jantar está quase pronto.
+D: You|It smells so good. Can I help you in the kitchen?|Está com um cheiro tão bom. Posso ajudar na cozinha?
+D: Rosa|Yes, could you set the table and open the wine?|Sim, poderia pôr a mesa e abrir o vinho?
+D: You|Of course. How many people are we?|Claro. Quantos somos?
+D: Rosa|Six. Please use the white plates and the big glasses.|Seis. Use os pratos brancos e os copos grandes.
+D: You|Done. Shall I bring the bread to the table?|Pronto. Levo o pão para a mesa?
+D: Rosa|Yes, please. Everyone, sit down! Help yourselves to some salad.|Sim, por favor. Pessoal, sentem! Sirvam-se de salada.
+D: You|Everything looks delicious. Thank you for inviting us.|Tudo parece delicioso. Obrigado por nos convidar.
+V: set the table|pôr a mesa;wine|vinho;glasses|copos;sit down|sentar;help yourselves|sirvam-se
+B: Could you set the {0}?|Poderia pôr {0}?|table=a mesa;plates=os pratos;glasses=os copos
+B: Help yourselves to some {0}.|Sirvam-se de {0}.|salad=salada;bread=pão;rice=arroz
+S: Rosa|Dinner is almost ready.|O jantar está quase pronto.|Can I help you in the kitchen?|Posso ajudar na cozinha?
+S: Rosa|Please sit down.|Sentem, por favor.|Everything looks delicious.|Tudo parece delicioso.
+R: Dinner is almost ready.|O jantar está quase pronto.
+R: Could you set the table?|Poderia pôr a mesa?
+R: Help yourselves to some salad.|Sirvam-se de salada.
+R: Thank you for inviting us.|Obrigado por nos convidar.
+X: Help yourselves.|Sirvam-se.
+C: Nos EUA, é comum levar vinho ou sobremesa quando se é convidado para jantar na casa de alguém.
+
+T: Leftovers | Guardar e reaproveitar sobras | kitchen | Boston | Mia,f,👩🏻,colega de casa
+K: Let us put the leftovers in the fridge. | Vamos guardar as sobras na geladeira.
+M: Hoje você organiza as sobras e planeja as próximas refeições.
+D: Mia|Dinner was great, but we cooked too much.|O jantar foi ótimo, mas cozinhamos demais.
+D: You|Let us put the leftovers in the fridge. Where are the containers?|Vamos guardar as sobras na geladeira. Onde estão as vasilhas?
+D: Mia|In the cabinet, under the sink.|No armário embaixo da pia.
+D: You|How long can we keep the chicken?|Por quanto tempo podemos guardar o frango?
+D: Mia|Three days at most. We should eat it by Thursday.|No máximo três dias. Devemos comer até quinta.
+D: You|The rice can become fried rice for lunch tomorrow.|O arroz pode virar arroz frito para o almoço amanhã.
+D: Mia|Good idea. And we can freeze the soup.|Boa ideia. E podemos congelar a sopa.
+D: You|Perfect. Let me label everything with the date.|Perfeito. Deixe-me etiquetar tudo com a data.
+V: leftovers|sobras;containers|vasilhas;freeze|congelar;label|etiquetar;cabinet|armário
+B: Let us put the leftovers in the {0}.|Vamos guardar as sobras {0}.|fridge=na geladeira;freezer=no congelador;containers=nas vasilhas
+B: We should eat it by {0}.|Devemos comer até {0}.|Thursday=quinta;Friday=sexta;tomorrow=amanhã
+S: Mia|We cooked too much.|Cozinhamos demais.|Let us put the leftovers in the fridge.|Vamos guardar as sobras na geladeira.
+S: Mia|We can freeze the soup.|Podemos congelar a sopa.|Good idea. I will label it with the date.|Boa ideia. Etiqueto com a data.
+R: We cooked too much.|Cozinhamos demais.
+R: Let us put the leftovers in the fridge.|Vamos guardar as sobras na geladeira.
+R: We can freeze the soup.|Podemos congelar a sopa.
+R: Let me label everything with the date.|Deixe-me etiquetar tudo com a data.
+X: At most.|No máximo.
+C: Nos EUA, as porções em restaurantes são grandes, e levar as sobras para casa numa "doggy bag" é totalmente normal.
+
+T: My signature dish | Desafio do arco: apresentar seu prato | kitchen | Austin | Tom,m,🧑🏽,amigo
+K: Let me tell you how to cook my favorite dish. | Deixe-me contar como cozinhar meu prato favorito.
+M: Desafio: explique ingredientes e passos do seu prato favorito.
+D: Tom|This is delicious! What is it called?|Isto está delicioso! Como se chama?
+D: You|It is my grandmother's chicken with rice. Let me tell you how to cook it.|É o frango com arroz da minha avó. Deixe-me contar como cozinhar.
+D: Tom|What ingredients do you need?|De quais ingredientes você precisa?
+D: You|Chicken, rice, onions, garlic, tomatoes and a little salt.|Frango, arroz, cebolas, alho, tomates e um pouco de sal.
+D: Tom|And how do you make it?|E como se faz?
+D: You|First, fry the chicken. Then add the onions and garlic, and finally the rice and water.|Primeiro, frite o frango. Depois adicione cebola e alho, e por fim o arroz e a água.
+D: Tom|How long does it take?|Quanto tempo leva?
+D: You|About forty minutes. I will write the recipe for you.|Cerca de quarenta minutos. Vou escrever a receita para você.
+V: ingredients|ingredientes;signature|assinatura;favorite|favorito;recipe|receita;forty|quarenta
+B: Let me tell you how to {0}.|Deixe-me contar como {0}.|cook it=cozinhar isso;make it=fazer isso;serve it=servir isso
+B: First, fry the {0}.|Primeiro, frite {0}.|chicken=o frango;onions=as cebolas;eggs=os ovos
+S: Tom|What is it called?|Como se chama?|It is my grandmother's chicken with rice.|É o frango com arroz da minha avó.
+S: Tom|How do you make it?|Como se faz?|First, fry the chicken. Then add the rice.|Primeiro, frite o frango. Depois adicione o arroz.
+R: Let me tell you how to cook it.|Deixe-me contar como cozinhar.
+R: You need chicken, rice and onions.|Precisa de frango, arroz e cebolas.
+R: First, fry the chicken.|Primeiro, frite o frango.
+R: I will write the recipe for you.|Vou escrever a receita para você.
+X: What is it called?|Como se chama?
+C: Compartilhar receitas de família é uma forma comum de passar tradições, e muitos americanos têm um livro de receitas da avó.

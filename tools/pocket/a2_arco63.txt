@@ -1,0 +1,276 @@
+# Arco 63 · Jardim e quintal
+T: Plant flowers | Plantar flores | park | Portland | Rose,f,👩🏼,vizinha
+K: Where should I plant the roses? | Onde devo plantar as rosas?
+M: Hoje você planta flores no jardim.
+D: Rose|Your garden looks empty. Do you want some flowers?|Seu jardim parece vazio. Você quer algumas flores?
+D: You|Yes, please. Where should I plant the roses?|Sim, por favor. Onde devo plantar as rosas?
+D: Rose|Near the fence. They need a lot of sun.|Perto da cerca. Elas precisam de muito sol.
+D: You|How deep is the hole?|Qual é a profundidade do buraco?
+D: Rose|About twenty centimeters. Then add water.|Cerca de vinte centímetros. Depois ponha água.
+D: You|How often do they need water?|Com que frequência elas precisam de água?
+D: Rose|Every two days, in the morning.|A cada dois dias, de manhã.
+D: You|Thank you. I will take care of them.|Obrigado. Vou cuidar delas.
+V: garden|jardim;rose|rosa;fence|cerca;sun|sol;hole|buraco
+B: Plant the roses near the {0}.|Plante as rosas perto da {0}.|fence=cerca;door=porta;window=janela
+B: They need water every {0} days.|Elas precisam de água a cada {0} dias.|two=dois;three=três;four=quatro
+S: Rose|Do you want some flowers?|Você quer algumas flores?|Yes, please. Where should I plant the roses?|Sim, por favor. Onde devo plantar as rosas?
+S: Rose|They need a lot of sun.|Elas precisam de muito sol.|How often do they need water?|Com que frequência precisam de água?
+R: Where should I plant the roses?|Onde devo plantar as rosas?
+R: They need a lot of sun.|Elas precisam de muito sol.
+R: Add water every two days.|Ponha água a cada dois dias.
+R: I will take care of them.|Vou cuidar delas.
+X: Take care of them.|Cuide delas.
+C: Jardinagem é um hobby popular nos EUA, e muitas casas têm um pequeno jardim na frente.
+
+T: Mow the lawn | Cortar a grama | street | Denver | Hank,m,👨🏼,vizinho
+K: I mow the lawn every Saturday. | Corto a grama todo sábado.
+M: Hoje você corta a grama do quintal.
+D: Hank|Good morning! Are you going to mow the lawn?|Bom dia! Você vai cortar a grama?
+D: You|Yes. I mow the lawn every Saturday.|Sim. Corto a grama todo sábado.
+D: Hank|Do you have a lawn mower?|Você tem um cortador de grama?
+D: You|No, I do not. Can I borrow yours?|Não tenho. Posso pegar o seu emprestado?
+D: Hank|Sure. It is in my garage. Be careful.|Claro. Está na minha garagem. Tenha cuidado.
+D: You|Thank you. I will return it in one hour.|Obrigado. Devolvo em uma hora.
+D: Hank|No hurry. Do you need gas?|Sem pressa. Você precisa de gasolina?
+D: You|No, it is electric. Perfect!|Não, é elétrico. Perfeito!
+V: lawn|grama;mow|cortar;borrow|pegar emprestado;garage|garagem;electric|elétrico
+B: I mow the lawn every {0}.|Corto a grama todo {0}.|Saturday=sábado;Sunday=domingo;week=semana
+B: I will return it in one {0}.|Devolvo em uma {0}.|hour=hora;day=dia;week=semana
+S: Hank|Are you going to mow the lawn?|Você vai cortar a grama?|Yes. I mow the lawn every Saturday.|Sim. Corto a grama todo sábado.
+S: Hank|Do you have a lawn mower?|Você tem um cortador de grama?|No, I do not. Can I borrow yours?|Não tenho. Posso pegar o seu emprestado?
+R: I mow the lawn every Saturday.|Corto a grama todo sábado.
+R: Can I borrow yours?|Posso pegar o seu emprestado?
+R: Be careful.|Tenha cuidado.
+R: I will return it in one hour.|Devolvo em uma hora.
+X: No hurry.|Sem pressa.
+C: Nos EUA, cuidar do gramado é uma tarefa semanal, e vizinhos costumam emprestar equipamentos.
+
+T: Buy tomato plants | Comprar mudas | shop | Seattle | Mia,f,👩🏽,vendedora
+K: I want to grow my own vegetables. | Quero cultivar meus legumes.
+M: Hoje você compra mudas para uma horta.
+D: Mia|Hi! Can I help you find something?|Oi! Posso ajudar você a achar algo?
+D: You|Yes. I want to grow my own vegetables.|Sim. Quero cultivar meus próprios legumes.
+D: Mia|Great! Tomatoes are easy for beginners.|Ótimo! Tomates são fáceis para iniciantes.
+D: You|How much sun do they need?|De quanto sol eles precisam?
+D: Mia|At least six hours a day.|Pelo menos seis horas por dia.
+D: You|How long do they take to grow?|Quanto tempo levam para crescer?
+D: Mia|About three months.|Cerca de três meses.
+D: You|I will take four plants and some soil.|Vou levar quatro mudas e um pouco de terra.
+V: vegetable|legume;tomato|tomate;soil|terra;grow|crescer;plant|muda
+B: Tomatoes are {0} for beginners.|Tomates são {0} para iniciantes.|easy=fáceis;good=bons;perfect=perfeitos
+B: I will take {0} plants.|Vou levar {0} mudas.|four=quatro;two=duas;six=seis
+S: Mia|Can I help you find something?|Posso ajudar você a achar algo?|Yes. I want to grow my own vegetables.|Sim. Quero cultivar meus legumes.
+S: Mia|They need six hours of sun.|Eles precisam de seis horas de sol.|How long do they take to grow?|Quanto tempo levam para crescer?
+R: I want to grow my own vegetables.|Quero cultivar meus legumes.
+R: How much sun do they need?|De quanto sol eles precisam?
+R: They take about three months.|Levam cerca de três meses.
+R: I will take four plants.|Vou levar quatro mudas.
+X: At least.|Pelo menos.
+C: Hortas caseiras ficaram muito populares nos EUA, até em varandas de apartamentos.
+
+T: A garden tool | Ferramentas de jardim | shop | Chicago | Ray,m,👨🏽,vendedor
+K: I need a shovel and gloves. | Preciso de uma pá e luvas.
+M: Hoje você compra ferramentas de jardim.
+D: Ray|Welcome to the hardware store!|Bem-vindo à loja de ferramentas!
+D: You|Hi. I need a shovel and gloves.|Oi. Preciso de uma pá e luvas.
+D: Ray|Shovels are on aisle two.|As pás ficam no corredor dois.
+D: You|Which one is better, the red or the blue?|Qual é melhor, a vermelha ou a azul?
+D: Ray|The blue one is stronger and lighter.|A azul é mais forte e mais leve.
+D: You|How much is it?|Quanto custa?
+D: Ray|It is twenty dollars. Gloves are five.|São vinte dólares. As luvas custam cinco.
+D: You|I will take both. Thank you.|Levo os dois. Obrigado.
+V: shovel|pá;gloves|luvas;hardware store|loja de ferramentas;strong|forte;light|leve
+B: The blue one is {0}.|A azul é {0}.|stronger=mais forte;lighter=mais leve;better=melhor
+B: Gloves are {0} dollars.|As luvas custam {0} dólares.|five=cinco;six=seis;eight=oito
+S: Ray|Welcome to the hardware store!|Bem-vindo à loja de ferramentas!|Hi. I need a shovel and gloves.|Oi. Preciso de uma pá e luvas.
+S: Ray|The blue one is stronger and lighter.|A azul é mais forte e mais leve.|How much is it?|Quanto custa?
+R: I need a shovel and gloves.|Preciso de uma pá e luvas.
+R: Which one is better?|Qual é melhor?
+R: The blue one is stronger.|A azul é mais forte.
+R: I will take both.|Levo os dois.
+X: Aisle two.|Corredor dois.
+C: Lojas como Home Depot vendem tudo para casa e jardim, e os funcionários ajudam a escolher.
+
+T: Water the plants today | Regar as plantas | living | Phoenix | Eva,f,👩🏻,vizinha
+K: Can you water my plants? | Você pode regar minhas plantas?
+M: Hoje você pede à vizinha para regar suas plantas.
+D: You|Hi, Eva. Can you water my plants next week?|Oi, Eva. Você pode regar minhas plantas na semana que vem?
+D: Eva|Sure. Where are they?|Claro. Onde elas estão?
+D: You|Five are in the living room, and three are on the balcony.|Cinco estão na sala, e três estão na varanda.
+D: Eva|How much water do they need?|De quanta água elas precisam?
+D: You|One cup each, every three days.|Um copo cada uma, a cada três dias.
+D: Eva|OK. Where is the key?|Certo. Onde está a chave?
+D: You|Here you are. I will be away for ten days.|Aqui está. Ficarei fora por dez dias.
+D: Eva|Do not worry. They will be fine.|Não se preocupe. Elas ficarão bem.
+V: water|regar;balcony|varanda;cup|copo;key|chave;away|fora
+B: Five are in the {0}.|Cinco estão na {0}.|living room=sala;kitchen=cozinha;bedroom=quarto
+B: One cup each, every {0} days.|Um copo cada, a cada {0} dias.|three=três;two=dois;four=quatro
+S: Eva|How much water do they need?|De quanta água elas precisam?|One cup each, every three days.|Um copo cada, a cada três dias.
+S: Eva|Where is the key?|Onde está a chave?|Here you are. I will be away for ten days.|Aqui está. Ficarei fora dez dias.
+R: Can you water my plants?|Você pode regar minhas plantas?
+R: Three are on the balcony.|Três estão na varanda.
+R: One cup each.|Um copo cada.
+R: They will be fine.|Elas ficarão bem.
+X: Do not worry.|Não se preocupe.
+C: Trocar favores com vizinhos, como regar plantas, é comum nos EUA quando alguém viaja.
+
+T: A backyard barbecue | Churrasco no quintal | park | Austin | Jim,m,👨🏼,anfitrião
+K: Welcome to my backyard! | Bem-vindo ao meu quintal!
+M: Hoje você participa de um churrasco no quintal.
+D: Jim|Welcome to my backyard!|Bem-vindo ao meu quintal!
+D: You|Thank you for inviting us. It is beautiful.|Obrigado por nos convidar. É lindo.
+D: Jim|I built the table myself last summer.|Construí a mesa eu mesmo no verão passado.
+D: You|It is great. Can I help with the food?|É ótima. Posso ajudar com a comida?
+D: Jim|Yes. Please put the salad on the table.|Sim. Por favor ponha a salada na mesa.
+D: You|Where are the plates?|Onde estão os pratos?
+D: Jim|They are in the box next to the grill.|Estão na caixa ao lado da churrasqueira.
+D: You|Got it. The meat smells delicious!|Entendi. A carne está com um cheiro delicioso!
+V: backyard|quintal;grill|churrasqueira;table|mesa;build|construir;salad|salada
+B: I built the table myself last {0}.|Construí a mesa eu mesmo no {0} passado.|summer=verão;year=ano;month=mês
+B: The plates are in the box next to the {0}.|Os pratos estão na caixa ao lado da {0}.|grill=churrasqueira;table=mesa;door=porta
+S: Jim|Welcome to my backyard!|Bem-vindo ao meu quintal!|Thank you for inviting us. It is beautiful.|Obrigado por nos convidar. É lindo.
+S: Jim|Please put the salad on the table.|Ponha a salada na mesa.|Where are the plates?|Onde estão os pratos?
+R: Welcome to my backyard!|Bem-vindo ao meu quintal!
+R: I built the table myself.|Construí a mesa eu mesmo.
+R: Can I help with the food?|Posso ajudar com a comida?
+R: The meat smells delicious.|A carne tem cheiro delicioso.
+X: Got it.|Entendi.
+C: O quintal é o centro da vida social no verão americano, com churrascos entre amigos e vizinhos.
+
+T: Clean the yard | Limpar o quintal | street | Boston | Ted,m,👨🏻,vizinho
+K: The leaves are everywhere. | As folhas estão por toda parte.
+M: Hoje você recolhe as folhas do outono.
+D: Ted|Look at all these leaves!|Olha todas essas folhas!
+D: You|Yes, they are everywhere. It is autumn.|Sim, estão por toda parte. É outono.
+D: Ted|I have an extra rake. Do you want it?|Tenho um ancinho extra. Você quer?
+D: You|Yes, please. Where do I put the leaves?|Sim, por favor. Onde ponho as folhas?
+D: Ted|Use the big paper bags. The city takes them.|Use os sacos de papel grandes. A prefeitura leva.
+D: You|When do they come?|Quando eles vêm?
+D: Ted|Every Wednesday morning.|Toda quarta de manhã.
+D: You|Great. Let us work together.|Ótimo. Vamos trabalhar juntos.
+V: leaves|folhas;rake|ancinho;autumn|outono;bag|saco;city|prefeitura
+B: It is {0}. The leaves are everywhere.|É {0}. As folhas estão por toda parte.|autumn=outono;October=outubro;fall=outono
+B: They come every {0} morning.|Eles vêm toda {0} de manhã.|Wednesday=quarta;Monday=segunda;Friday=sexta
+S: Ted|Look at all these leaves!|Olha todas essas folhas!|Yes, they are everywhere. It is autumn.|Sim, estão por toda parte. É outono.
+S: Ted|Use the big paper bags.|Use os sacos de papel grandes.|When do they come?|Quando eles vêm?
+R: The leaves are everywhere.|As folhas estão por toda parte.
+R: Do you want a rake?|Você quer um ancinho?
+R: Use the big paper bags.|Use os sacos de papel grandes.
+R: Let us work together.|Vamos trabalhar juntos.
+X: Let us work together.|Vamos trabalhar juntos.
+C: No outono americano, as folhas caem em quantidade e todo mundo as recolhe no quintal.
+
+T: A tree house | Casa na árvore | park | Seattle | Dad Max,m,👨🏾,pai
+K: Can we build a tree house? | Podemos construir uma casa na árvore?
+M: Hoje você planeja uma casa na árvore com a família.
+D: Dad Max|The kids want a tree house.|As crianças querem uma casa na árvore.
+D: You|That is a great idea. Do we have a good tree?|Que ótima ideia. Temos uma árvore boa?
+D: Dad Max|Yes, the old oak in the yard is strong.|Sim, o carvalho velho do quintal é forte.
+D: You|What do we need?|O que precisamos?
+D: Dad Max|Wood, nails and a hammer.|Madeira, pregos e um martelo.
+D: You|I can buy the wood tomorrow.|Posso comprar a madeira amanhã.
+D: Dad Max|Good. We can start on Saturday.|Bom. Podemos começar no sábado.
+D: You|The kids will be so happy.|As crianças ficarão tão felizes.
+V: tree|árvore;wood|madeira;nail|prego;hammer|martelo;oak|carvalho
+B: We need wood, {0} and a hammer.|Precisamos de madeira, {0} e um martelo.|nails=pregos;paint=tinta;rope=corda
+B: We can start on {0}.|Podemos começar no {0}.|Saturday=sábado;Sunday=domingo;Monday=segunda
+S: Dad Max|The kids want a tree house.|As crianças querem uma casa na árvore.|That is a great idea. Do we have a good tree?|Ótima ideia. Temos uma árvore boa?
+S: Dad Max|We need wood, nails and a hammer.|Precisamos de madeira, pregos e martelo.|I can buy the wood tomorrow.|Posso comprar a madeira amanhã.
+R: Can we build a tree house?|Podemos construir uma casa na árvore?
+R: The old oak is strong.|O carvalho velho é forte.
+R: We need wood and nails.|Precisamos de madeira e pregos.
+R: The kids will be so happy.|As crianças ficarão tão felizes.
+X: Great idea.|Ótima ideia.
+C: Casas na árvore são um sonho de infância comum nos EUA, e muitos pais constroem uma com os filhos.
+
+T: A farmers market | Feira de agricultores | market | Portland | Anna,f,👩🏼,feirante
+K: Are these apples fresh? | Estas maçãs são frescas?
+M: Hoje você compra frutas e legumes na feira.
+D: Anna|Good morning! Everything is fresh today.|Bom dia! Tudo está fresco hoje.
+D: You|Are these apples fresh?|Estas maçãs são frescas?
+D: Anna|Yes, from my farm. I picked them this morning.|Sim, da minha fazenda. Colhi esta manhã.
+D: You|How much are they?|Quanto custam?
+D: Anna|Two dollars a pound. Try one.|Dois dólares o quilo. Experimente uma.
+D: You|It is sweet and juicy. I will take three pounds.|É doce e suculenta. Levo três quilos.
+D: Anna|Do you want some carrots too?|Quer cenouras também?
+D: You|Yes, one bag, please.|Sim, um saco, por favor.
+V: apple|maçã;carrot|cenoura;sweet|doce;juicy|suculento;pound|libra
+B: I will take {0} pounds.|Levo {0} libras.|three=três;two=duas;five=cinco
+B: Two dollars a {0}.|Dois dólares a {0}.|pound=libra;bag=saco;box=caixa
+S: Anna|Everything is fresh today.|Tudo está fresco hoje.|Are these apples fresh?|Estas maçãs são frescas?
+S: Anna|Try one.|Experimente uma.|It is sweet and juicy. I will take three pounds.|É doce e suculenta. Levo três libras.
+R: Are these apples fresh?|Estas maçãs são frescas?
+R: I picked them this morning.|Colhi esta manhã.
+R: It is sweet and juicy.|É doce e suculenta.
+R: One bag of carrots, please.|Um saco de cenouras, por favor.
+X: Try one.|Experimente uma.
+C: Feiras de agricultores acontecem aos fins de semana em muitas cidades e vendem produtos frescos locais.
+
+T: A garden problem | Problema no jardim | street | Chicago | Lou,m,👨🏿,jardineiro
+K: Something is eating my plants. | Algo está comendo minhas plantas.
+M: Hoje você pede ajuda por pragas no jardim.
+D: You|Hello. Something is eating my plants.|Olá. Algo está comendo minhas plantas.
+D: Lou|What kind of plants?|Que tipo de plantas?
+D: You|My tomatoes. The leaves have small holes.|Meus tomates. As folhas têm buracos pequenos.
+D: Lou|It is probably bugs. Are the plants wet?|Provavelmente são insetos. As plantas estão molhadas?
+D: You|Yes, I water them every evening.|Sim, eu as rego toda tarde.
+D: Lou|Water them in the morning, not in the evening.|Regue de manhã, não à noite.
+D: You|Is there a spray I can use?|Há algum spray que eu possa usar?
+D: Lou|Yes, a natural one. I have it in my truck.|Sim, um natural. Tenho na minha caminhonete.
+V: bug|inseto;hole|buraco;spray|spray;wet|molhado;natural|natural
+B: The leaves have small {0}.|As folhas têm {0} pequenos.|holes=buracos;spots=manchas;bugs=insetos
+B: Water them in the {0}.|Regue de {0}.|morning=manhã;evening=noite;afternoon=tarde
+S: Lou|What kind of plants?|Que tipo de plantas?|My tomatoes. The leaves have small holes.|Meus tomates. As folhas têm buracos pequenos.
+S: Lou|Water them in the morning.|Regue de manhã.|Is there a spray I can use?|Há algum spray que eu possa usar?
+R: Something is eating my plants.|Algo está comendo minhas plantas.
+R: The leaves have small holes.|As folhas têm buracos pequenos.
+R: Water them in the morning.|Regue de manhã.
+R: Is there a spray I can use?|Há algum spray que eu possa usar?
+X: Probably.|Provavelmente.
+C: Lojas de jardinagem nos EUA têm especialistas que ajudam a resolver problemas de pragas.
+
+T: A winter garden | Jardim no inverno | living | Denver | Kay,f,👩🏻,amiga
+K: What can I plant in winter? | O que posso plantar no inverno?
+M: Hoje você aprende o que plantar no inverno.
+D: Kay|Is your garden empty now?|Seu jardim está vazio agora?
+D: You|Yes, it is cold. What can I plant in winter?|Sim, está frio. O que posso plantar no inverno?
+D: Kay|Garlic and onions grow well in cold weather.|Alho e cebola crescem bem no frio.
+D: You|When should I plant them?|Quando devo plantá-los?
+D: Kay|In October, before the first snow.|Em outubro, antes da primeira neve.
+D: You|Do they need a lot of care?|Eles precisam de muito cuidado?
+D: Kay|No, only a little water and some patience.|Não, só um pouco de água e paciência.
+D: You|I like that. I will start next week.|Gostei. Vou começar na semana que vem.
+V: garlic|alho;onion|cebola;snow|neve;patience|paciência;care|cuidado
+B: Garlic grows well in {0} weather.|Alho cresce bem no tempo {0}.|cold=frio;warm=quente;wet=úmido
+B: Plant them in {0}.|Plante em {0}.|October=outubro;spring=primavera;March=março
+S: Kay|Is your garden empty now?|Seu jardim está vazio agora?|Yes, it is cold. What can I plant in winter?|Sim, está frio. O que posso plantar no inverno?
+S: Kay|Garlic and onions grow well.|Alho e cebola crescem bem.|When should I plant them?|Quando devo plantá-los?
+R: What can I plant in winter?|O que posso plantar no inverno?
+R: Garlic grows well in cold weather.|Alho cresce bem no frio.
+R: Plant them in October.|Plante em outubro.
+R: I will start next week.|Vou começar na semana que vem.
+X: I like that.|Gostei.
+C: Em estados frios como Colorado, certos legumes são plantados no outono para crescer no inverno.
+
+T: Garden party | Festa no jardim | park | Los Angeles | Lia,f,👩🏽,anfitriã
+K: Your garden looks wonderful. | Seu jardim está maravilhoso.
+M: Hoje você participa de uma festa no jardim.
+D: Lia|Welcome! I am so happy you came.|Bem-vindo! Estou muito feliz que você veio.
+D: You|Your garden looks wonderful. Are these your roses?|Seu jardim está maravilhoso. Estas são suas rosas?
+D: Lia|Yes, I planted them three years ago.|Sim, plantei há três anos.
+D: You|They are so big and colorful.|São tão grandes e coloridas.
+D: Lia|Thank you. Would you like some lemonade?|Obrigada. Você gostaria de limonada?
+D: You|Yes, please. It is a hot day.|Sim, por favor. É um dia quente.
+D: Lia|Come sit under the tree. There is shade.|Venha sentar sob a árvore. Tem sombra.
+D: You|What a lovely afternoon!|Que tarde linda!
+V: roses|rosas;colorful|colorido;lemonade|limonada;shade|sombra;lovely|lindo
+B: I planted them {0} years ago.|Plantei há {0} anos.|three=três;two=dois;five=cinco
+B: Would you like some {0}?|Você gostaria de {0}?|lemonade=limonada;tea=chá;water=água
+S: Lia|I am so happy you came.|Estou muito feliz que você veio.|Your garden looks wonderful.|Seu jardim está maravilhoso.
+S: Lia|Would you like some lemonade?|Você gostaria de limonada?|Yes, please. It is a hot day.|Sim, por favor. É um dia quente.
+R: Your garden looks wonderful.|Seu jardim está maravilhoso.
+R: I planted them three years ago.|Plantei há três anos.
+R: Would you like some lemonade?|Você gostaria de limonada?
+R: What a lovely afternoon!|Que tarde linda!
+X: What a lovely afternoon!|Que tarde linda!
+C: Festas no jardim são comuns na primavera e no verão, com limonada, chá gelado e conversas leves.

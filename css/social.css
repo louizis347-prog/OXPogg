@@ -62,3 +62,10 @@ html[data-theme=dark] .pr-b{background:#2C474B}
 .rv-back{display:grid;gap:8px;justify-items:center;border-top:2px dashed rgba(120,181,190,.35);padding-top:12px;width:100%}.rv-back small{color:var(--ink2,#4B676B)}
 .rv-foot{display:flex;gap:8px;margin-top:14px}.rv-foot .pg-btn{flex:1}.pg-btn.rv-ok{background:#2f9e44;color:#fff}
 .rv-sum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;margin:16px 0}.rv-sum div{padding:12px 4px;border-radius:14px;background:rgba(121,226,222,.1)}.rv-sum b{display:block;font-size:22px}.rv-sum small{color:var(--ink2,#4B676B);font-weight:700}
+
+/* revisão: modos de cartão (múltipla escolha, ditado, digitar, repetir) */
+.rv-opts{display:grid;gap:8px;margin-top:12px}.rv-opts .rv-o{width:100%;text-align:left;white-space:normal;padding:12px 14px}
+.rv-o.rv-ok{background:#2f9e44!important;color:#fff!important;border-color:#2f9e44!important}.rv-o.rv-no{background:#d6453d!important;color:#fff!important;border-color:#d6453d!important}
+.rv-in{width:100%;box-sizing:border-box;margin-top:12px;padding:14px 16px;border-radius:14px;border:2px solid rgba(120,160,230,.5);font:700 20px system-ui;background:rgba(255,255,255,.9);color:#12315a}
+.rv-fb{min-height:24px;margin-top:10px;padding:0;font:700 16px/1.4 system-ui;text-align:center}.rv-fb.ok{color:#1f8a3a}.rv-fb.no{color:#c0392b}
+.rv-big{font-size:22px;padding:16px 26px}

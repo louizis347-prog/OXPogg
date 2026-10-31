@@ -1,0 +1,253 @@
+# Arco 62 · Animais de estimação
+T: Choose a dog | Escolher um cachorro | shop | Austin | Sue,f,👩🏻,funcionária
+K: I want a small and friendly dog. | Quero um cachorro pequeno e amigável.
+M: Hoje você escolhe um cachorro no abrigo.
+D: Sue|Welcome to the animal shelter!|Bem-vindo ao abrigo de animais!
+D: You|Thank you. I want a small and friendly dog.|Obrigado. Quero um cachorro pequeno e amigável.
+D: Sue|This one is two years old. His name is Max.|Este tem dois anos. O nome dele é Max.
+D: You|He is cute! Is he good with children?|Ele é fofo! Ele é bom com crianças?
+D: Sue|Yes, he loves them. He is also very calm.|Sim, ele adora. Ele também é muito calmo.
+D: You|Does he need a lot of exercise?|Ele precisa de muito exercício?
+D: Sue|A walk in the morning and one at night.|Uma caminhada de manhã e uma à noite.
+D: You|Perfect. I would like to adopt him.|Perfeito. Eu gostaria de adotá-lo.
+V: shelter|abrigo;friendly|amigável;calm|calmo;adopt|adotar;exercise|exercício
+B: This one is {0} years old.|Este tem {0} anos.|two=dois;three=três;five=cinco
+B: He needs a walk in the {0}.|Ele precisa de uma caminhada de {0}.|morning=manhã;evening=noite;afternoon=tarde
+S: Sue|Welcome to the animal shelter!|Bem-vindo ao abrigo!|Thank you. I want a small and friendly dog.|Obrigado. Quero um cachorro pequeno e amigável.
+S: Sue|He is also very calm.|Ele também é muito calmo.|Perfect. I would like to adopt him.|Perfeito. Gostaria de adotá-lo.
+R: I want a small and friendly dog.|Quero um cachorro pequeno e amigável.
+R: Is he good with children?|Ele é bom com crianças?
+R: He needs a walk in the morning.|Ele precisa de uma caminhada de manhã.
+R: I would like to adopt him.|Gostaria de adotá-lo.
+X: He is cute!|Ele é fofo!
+C: Adotar animais em abrigos é muito comum nos EUA, e muitos já vêm vacinados.
+
+T: Buy pet food | Comprar ração | shop | Denver | Tom,m,👨🏼,vendedor
+K: What food is good for a cat? | Que comida é boa para um gato?
+M: Hoje você compra comida para o seu gato.
+D: Tom|Hi! Can I help you?|Oi! Posso ajudar?
+D: You|Yes. What food is good for a cat?|Sim. Que comida é boa para um gato?
+D: Tom|How old is your cat?|Qual é a idade do seu gato?
+D: You|She is one year old. She is very active.|Ela tem um ano. Ela é muito ativa.
+D: Tom|This food is perfect for young cats.|Esta comida é perfeita para gatos jovens.
+D: You|How much is a big bag?|Quanto custa um saco grande?
+D: Tom|Twenty dollars. It lasts about a month.|Vinte dólares. Dura cerca de um mês.
+D: You|OK. I will take one, and some toys.|Certo. Vou levar um, e alguns brinquedos.
+V: cat|gato;food|comida;bag|saco;toy|brinquedo;active|ativo
+B: She is {0} year old.|Ela tem {0} ano.|one=um;two=dois;three=três
+B: This food lasts about a {0}.|Esta comida dura cerca de um {0}.|month=mês;week=semana;year=ano
+S: Tom|Can I help you?|Posso ajudar?|Yes. What food is good for a cat?|Sim. Que comida é boa para um gato?
+S: Tom|It lasts about a month.|Dura cerca de um mês.|OK. I will take one, and some toys.|Certo. Levo um, e alguns brinquedos.
+R: What food is good for a cat?|Que comida é boa para um gato?
+R: She is one year old.|Ela tem um ano.
+R: How much is a big bag?|Quanto custa um saco grande?
+R: I will take some toys.|Vou levar alguns brinquedos.
+X: Can I help you?|Posso ajudar?
+C: Lojas de animais nos EUA vendem ração específica para cada idade e tamanho.
+
+T: Walk the dog today | Passear com o cachorro | park | Portland | Meg,f,👩🏼,vizinha
+K: He loves to run in the park. | Ele adora correr no parque.
+M: Hoje você passeia com o cachorro no parque.
+D: Meg|What a cute dog! What is his name?|Que cachorro fofo! Qual é o nome dele?
+D: You|His name is Max. He loves to run in the park.|O nome dele é Max. Ele adora correr no parque.
+D: Meg|Can I pet him?|Posso fazer carinho nele?
+D: You|Yes, he is very friendly.|Sim, ele é muito amigável.
+D: Meg|My dog is shy. She is behind me.|Minha cachorra é tímida. Ela está atrás de mim.
+D: You|Let us walk together. They can play.|Vamos caminhar juntos. Eles podem brincar.
+D: Meg|Good idea. Do you walk here every day?|Boa ideia. Você passeia aqui todo dia?
+D: You|Yes, at seven in the morning.|Sim, às sete da manhã.
+V: pet|fazer carinho;park|parque;behind|atrás;together|juntos;play|brincar
+B: He loves to {0} in the park.|Ele adora {0} no parque.|run=correr;play=brincar;swim=nadar
+B: I walk here at {0} in the morning.|Passeio aqui às {0} da manhã.|seven=sete;six=seis;eight=oito
+S: Meg|What a cute dog! What is his name?|Que cachorro fofo! Qual é o nome dele?|His name is Max. He loves to run in the park.|O nome dele é Max. Ele adora correr no parque.
+S: Meg|My dog is shy.|Minha cachorra é tímida.|Let us walk together. They can play.|Vamos caminhar juntos. Eles podem brincar.
+R: What is his name?|Qual é o nome dele?
+R: Can I pet him?|Posso fazer carinho nele?
+R: He is very friendly.|Ele é muito amigável.
+R: Let us walk together.|Vamos caminhar juntos.
+X: What a cute dog!|Que cachorro fofo!
+C: Nos parques americanos, muitos cachorros andam com coleira e há "dog parks" onde eles podem correr soltos.
+
+T: At the vet today | No veterinário | clinic | Seattle | Dr. Kim,f,👩🏻,veterinária
+K: My dog does not want to eat. | Meu cachorro não quer comer.
+M: Hoje você leva o cachorro ao veterinário.
+D: Dr. Kim|Good morning. What seems to be the problem?|Bom dia. Qual parece ser o problema?
+D: You|My dog does not want to eat since yesterday.|Meu cachorro não quer comer desde ontem.
+D: Dr. Kim|Does he drink water?|Ele bebe água?
+D: You|Yes, but he sleeps a lot.|Sim, mas dorme muito.
+D: Dr. Kim|Let me check him. His ears are warm.|Deixe-me examiná-lo. As orelhas estão quentes.
+D: You|Is it serious?|É grave?
+D: Dr. Kim|No. Give him this medicine twice a day.|Não. Dê este remédio duas vezes ao dia.
+D: You|Thank you, doctor. I will call you if needed.|Obrigado, doutora. Ligo se precisar.
+V: vet|veterinário;medicine|remédio;serious|grave;ear|orelha;sleep|dormir
+B: Give him this medicine {0} a day.|Dê este remédio {0} ao dia.|twice=duas vezes;once=uma vez;three times=três vezes
+B: His {0} are warm.|As {0} dele estão quentes.|ears=orelhas;paws=patas;eyes=olhos
+S: Dr. Kim|What seems to be the problem?|Qual parece ser o problema?|My dog does not want to eat since yesterday.|Meu cachorro não quer comer desde ontem.
+S: Dr. Kim|Give him this medicine twice a day.|Dê este remédio duas vezes ao dia.|Thank you, doctor. I will do that.|Obrigado, doutora. Farei isso.
+R: My dog does not want to eat.|Meu cachorro não quer comer.
+R: He sleeps a lot.|Ele dorme muito.
+R: Is it serious?|É grave?
+R: Give him this medicine twice a day.|Dê este remédio duas vezes ao dia.
+X: Let me check him.|Deixe-me examiná-lo.
+C: Veterinários nos EUA pedem consultas marcadas, e muitos têm plantão para emergências.
+
+T: A lost cat | Gato perdido | street | Chicago | Dan,m,👨🏽,vizinho
+K: Have you seen my cat? | Você viu meu gato?
+M: Hoje você procura seu gato perdido.
+D: You|Excuse me. Have you seen my cat?|Com licença. Você viu meu gato?
+D: Dan|What does she look like?|Como ela é?
+D: You|She is small and gray, with white feet.|Ela é pequena e cinza, com patas brancas.
+D: Dan|I think I saw her near the garden this morning.|Acho que vi ela perto do jardim hoje cedo.
+D: You|Really? Which garden?|Sério? Qual jardim?
+D: Dan|The one behind the blue house.|O que fica atrás da casa azul.
+D: You|Thank you! I will go there now.|Obrigado! Vou lá agora.
+D: Dan|Good luck! I will look too.|Boa sorte! Vou procurar também.
+V: gray|cinza;feet|patas;garden|jardim;luck|sorte;look|procurar
+B: She is small and {0}.|Ela é pequena e {0}.|gray=cinza;black=preta;white=branca
+B: The garden is behind the {0} house.|O jardim fica atrás da casa {0}.|blue=azul;red=vermelha;green=verde
+S: Dan|What does she look like?|Como ela é?|She is small and gray, with white feet.|Ela é pequena e cinza, com patas brancas.
+S: Dan|I saw her near the garden.|Vi ela perto do jardim.|Thank you! I will go there now.|Obrigado! Vou lá agora.
+R: Have you seen my cat?|Você viu meu gato?
+R: She is small and gray.|Ela é pequena e cinza.
+R: Which garden?|Qual jardim?
+R: Good luck!|Boa sorte!
+X: Good luck!|Boa sorte!
+C: Nos EUA é comum pôr cartazes de "lost cat" nos postes e avisar os vizinhos.
+
+T: Pet rules in an apartment | Regras para animais | hall | Boston | Mr. Lane,m,👨🏻,síndico
+K: Are pets allowed in this building? | Animais são permitidos neste prédio?
+M: Hoje você pergunta sobre animais no prédio.
+D: You|Good morning. Are pets allowed in this building?|Bom dia. Animais são permitidos neste prédio?
+D: Mr. Lane|Yes, small pets are allowed.|Sim, animais pequenos são permitidos.
+D: You|I have a small dog. Is that OK?|Tenho um cachorro pequeno. Tudo bem?
+D: Mr. Lane|Yes, but he must stay on a leash in the hall.|Sim, mas ele deve ficar de coleira no corredor.
+D: You|Is there an extra fee?|Há uma taxa extra?
+D: Mr. Lane|Yes, thirty dollars a month.|Sim, trinta dólares por mês.
+D: You|That is fine. Where can I walk him?|Tudo bem. Onde posso passear com ele?
+D: Mr. Lane|In the small park behind the building.|No parquinho atrás do prédio.
+V: allowed|permitido;leash|coleira;fee|taxa;extra|extra;hall|corredor
+B: Small pets are {0}.|Animais pequenos são {0}.|allowed=permitidos;welcome=bem-vindos;free=grátis
+B: The fee is {0} dollars a month.|A taxa é {0} dólares por mês.|thirty=trinta;twenty=vinte;fifty=cinquenta
+S: Mr. Lane|Small pets are allowed.|Animais pequenos são permitidos.|I have a small dog. Is that OK?|Tenho um cachorro pequeno. Tudo bem?
+S: Mr. Lane|He must stay on a leash.|Ele deve ficar de coleira.|That is fine. Is there a fee?|Tudo bem. Há uma taxa?
+R: Are pets allowed in this building?|Animais são permitidos neste prédio?
+R: He must stay on a leash.|Ele deve ficar de coleira.
+R: Is there an extra fee?|Há uma taxa extra?
+R: Where can I walk him?|Onde posso passear com ele?
+X: That is fine.|Tudo bem.
+C: Muitos prédios americanos cobram uma taxa mensal por animal de estimação e exigem coleira nas áreas comuns.
+
+T: Pet photos | Fotos do animal | living | Miami | Zoe,f,👩🏽,amiga
+K: Look at this photo of my parrot! | Olha esta foto do meu papagaio!
+M: Hoje você mostra fotos do seu animal.
+D: Zoe|Do you have pets?|Você tem animais?
+D: You|Yes, I have a parrot. Look at this photo!|Sim, tenho um papagaio. Olha esta foto!
+D: Zoe|He is beautiful! What color is he?|Ele é lindo! De que cor ele é?
+D: You|He is green, red and blue.|Ele é verde, vermelho e azul.
+D: Zoe|Can he talk?|Ele fala?
+D: You|Yes, he says "hello" and "good morning."|Sim, ele diz "hello" e "good morning".
+D: Zoe|That is amazing! How old is he?|Que incrível! Quantos anos ele tem?
+D: You|He is four, and he is my best friend.|Ele tem quatro, e é meu melhor amigo.
+V: parrot|papagaio;talk|falar;green|verde;amazing|incrível;beautiful|lindo
+B: He is green, red and {0}.|Ele é verde, vermelho e {0}.|blue=azul;yellow=amarelo;white=branco
+B: He says "{0}" and "good morning."|Ele diz "{0}" e "good morning".|hello=hello;goodbye=goodbye;thank you=thank you
+S: Zoe|Do you have pets?|Você tem animais?|Yes, I have a parrot. Look at this photo!|Sim, tenho um papagaio. Olha esta foto!
+S: Zoe|Can he talk?|Ele fala?|Yes, he says hello and good morning.|Sim, ele diz hello e good morning.
+R: Look at this photo!|Olha esta foto!
+R: What color is he?|De que cor ele é?
+R: Can he talk?|Ele fala?
+R: He is my best friend.|Ele é meu melhor amigo.
+X: That is amazing!|Que incrível!
+C: Papagaios e outros animais exóticos precisam de cuidados especiais e às vezes de licença.
+
+T: Pet sitter | Cuidador de animais | living | Austin | Ivy,f,👩🏻,cuidadora
+K: Can you take care of my dog this weekend? | Você pode cuidar do meu cachorro neste fim de semana?
+M: Hoje você contrata alguém para cuidar do seu cachorro.
+D: You|Hi, Ivy. Can you take care of my dog this weekend?|Oi, Ivy. Você pode cuidar do meu cachorro neste fim de semana?
+D: Ivy|Of course. When do you leave?|Claro. Quando você sai?
+D: You|On Friday at six, and I return on Sunday.|Na sexta às seis, e volto no domingo.
+D: Ivy|What does he eat?|O que ele come?
+D: You|Dry food, twice a day, morning and night.|Ração seca, duas vezes ao dia, de manhã e à noite.
+D: Ivy|And how many walks does he need?|E de quantos passeios ele precisa?
+D: You|Three. Here is my phone number.|Três. Aqui está meu número.
+D: Ivy|Do not worry. He will be fine.|Não se preocupe. Ele vai ficar bem.
+V: weekend|fim de semana;return|voltar;dry|seco;worry|preocupar;number|número
+B: I return on {0}.|Volto no {0}.|Sunday=domingo;Monday=segunda;Saturday=sábado
+B: He needs {0} walks.|Ele precisa de {0} passeios.|three=três;two=dois;four=quatro
+S: Ivy|When do you leave?|Quando você sai?|On Friday at six, and I return on Sunday.|Na sexta às seis, e volto no domingo.
+S: Ivy|What does he eat?|O que ele come?|Dry food, twice a day.|Ração seca, duas vezes ao dia.
+R: Can you take care of my dog?|Você pode cuidar do meu cachorro?
+R: I return on Sunday.|Volto no domingo.
+R: He eats twice a day.|Ele come duas vezes ao dia.
+R: He will be fine.|Ele vai ficar bem.
+X: Do not worry.|Não se preocupe.
+C: Pet sitters são comuns nos EUA e podem ficar na sua casa ou levar o animal para a casa deles.
+
+T: Training a puppy | Treinar um filhote | park | Denver | Joe,m,👨🏿,treinador
+K: Sit! Good boy! | Senta! Bom menino!
+M: Hoje você treina seu cachorro.
+D: Joe|Let us start with a simple command: sit.|Vamos começar com um comando simples: sentar.
+D: You|Sit! He does not understand.|Senta! Ele não entende.
+D: Joe|Show him a treat and say it again.|Mostre um petisco e diga de novo.
+D: You|Sit! Oh, he sat down!|Senta! Ah, ele sentou!
+D: Joe|Good! Give him the treat now.|Bom! Dê o petisco agora.
+D: You|Good boy! Can he learn other commands?|Bom menino! Ele pode aprender outros comandos?
+D: Joe|Yes, "stay" and "come" are next.|Sim, "fica" e "vem" são os próximos.
+D: You|Great. We will practice every day.|Ótimo. Vamos praticar todo dia.
+V: command|comando;treat|petisco;sit|sentar;stay|ficar;learn|aprender
+B: Show him a {0} and say it again.|Mostre {0} e diga de novo.|treat=um petisco;toy=um brinquedo;ball=uma bola
+B: We will practice every {0}.|Vamos praticar todo {0}.|day=dia;morning=manhã;weekend=fim de semana
+S: Joe|Let us start with a simple command: sit.|Vamos começar com um comando simples: sentar.|OK. Sit! He does not understand.|Certo. Senta! Ele não entende.
+S: Joe|Good! Give him the treat.|Bom! Dê o petisco.|Good boy! Can he learn other commands?|Bom menino! Ele pode aprender outros comandos?
+R: Let us start with a simple command.|Vamos começar com um comando simples.
+R: Show him a treat.|Mostre um petisco.
+R: Good boy!|Bom menino!
+R: We will practice every day.|Vamos praticar todo dia.
+X: Good boy!|Bom menino!
+C: Nos EUA, "good boy" ou "good girl" é o elogio padrão para cães.
+
+T: A fish tank today | Aquário | shop | Los Angeles | Pat,m,👨🏽,vendedor
+K: How often do I feed the fish? | Com que frequência alimento os peixes?
+M: Hoje você compra um aquário e peixes.
+D: Pat|Welcome! Are you looking for a fish tank?|Bem-vindo! Você procura um aquário?
+D: You|Yes. My daughter wants some fish.|Sim. Minha filha quer alguns peixes.
+D: Pat|This tank is perfect for beginners.|Este aquário é perfeito para iniciantes.
+D: You|How often do I feed the fish?|Com que frequência alimento os peixes?
+D: Pat|Once a day, a little food is enough.|Uma vez ao dia, um pouco de comida é suficiente.
+D: You|Do they need a light?|Eles precisam de luz?
+D: Pat|Yes, and clean water every week.|Sim, e água limpa toda semana.
+D: You|OK. I will take the tank and five fish.|Certo. Levo o aquário e cinco peixes.
+V: fish|peixe;tank|aquário;feed|alimentar;clean|limpo;enough|suficiente
+B: Feed the fish {0} a day.|Alimente os peixes {0} ao dia.|once=uma vez;twice=duas vezes;three times=três vezes
+B: I will take the tank and {0} fish.|Levo o aquário e {0} peixes.|five=cinco;three=três;ten=dez
+S: Pat|Are you looking for a fish tank?|Você procura um aquário?|Yes. My daughter wants some fish.|Sim. Minha filha quer peixes.
+S: Pat|Clean the water every week.|Limpe a água toda semana.|OK. I will take the tank and five fish.|Certo. Levo o aquário e cinco peixes.
+R: How often do I feed the fish?|Com que frequência alimento os peixes?
+R: Once a day is enough.|Uma vez ao dia é suficiente.
+R: Do they need a light?|Eles precisam de luz?
+R: I will take the tank.|Levo o aquário.
+X: Welcome!|Bem-vindo!
+C: Aquários são animais de estimação populares nos EUA para quem mora em apartamento.
+
+T: Farm animals | Animais da fazenda | park | Phoenix | Farmer Sam,m,👨🏼,fazendeiro
+K: Can I feed the horses? | Posso alimentar os cavalos?
+M: Hoje você visita uma fazenda.
+D: Farmer Sam|Welcome to my farm! Do you like animals?|Bem-vindo à minha fazenda! Você gosta de animais?
+D: You|Yes, very much. Can I feed the horses?|Sim, muito. Posso alimentar os cavalos?
+D: Farmer Sam|Of course. Give them this hay.|Claro. Dê a eles este feno.
+D: You|They are so big! How many do you have?|São tão grandes! Quantos você tem?
+D: Farmer Sam|Six horses, ten cows and twenty chickens.|Seis cavalos, dez vacas e vinte galinhas.
+D: You|Do you get fresh eggs every day?|Você pega ovos frescos todo dia?
+D: Farmer Sam|Yes. Would you like to take some home?|Sim. Você gostaria de levar alguns para casa?
+D: You|That would be great. Thank you!|Isso seria ótimo. Obrigado!
+V: farm|fazenda;horse|cavalo;cow|vaca;chicken|galinha;hay|feno
+B: I have {0} horses.|Tenho {0} cavalos.|six=seis;four=quatro;eight=oito
+B: Would you like to take some {0} home?|Você gostaria de levar {0} para casa?|eggs=ovos;milk=leite;apples=maçãs
+S: Farmer Sam|Do you like animals?|Você gosta de animais?|Yes, very much. Can I feed the horses?|Sim, muito. Posso alimentar os cavalos?
+S: Farmer Sam|Would you like to take some eggs home?|Quer levar ovos para casa?|That would be great. Thank you!|Seria ótimo. Obrigado!
+R: Can I feed the horses?|Posso alimentar os cavalos?
+R: How many do you have?|Quantos você tem?
+R: Do you get fresh eggs every day?|Você pega ovos frescos todo dia?
+R: That would be great.|Isso seria ótimo.
+X: Of course.|Claro.
+C: Visitas a fazendas são um passeio popular de família nos EUA, principalmente no outono.

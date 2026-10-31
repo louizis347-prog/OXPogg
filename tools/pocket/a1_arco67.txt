@@ -1,0 +1,232 @@
+# Arco 67 · Fazenda e colheita
+T: Morning on the farm | Manhã na fazenda | forest | Iowa | Rosa,f,👩🏽,fazendeira
+K: The farm wakes up early. | A fazenda acorda cedo.
+M: Hoje você acorda cedo numa fazenda.
+D: Rosa|Good morning! The farm wakes up at five.|Bom dia! A fazenda acorda às cinco.
+D: You|That is very early!|Isso é muito cedo!
+D: Rosa|The cows need milk time.|As vacas precisam ser ordenhadas.
+D: You|Can I help?|Posso ajudar?
+D: Rosa|Yes. Feed the chickens first.|Pode. Alimente as galinhas primeiro.
+D: You|Where is the food?|Onde está a ração?
+D: Rosa|In the red bucket by the barn.|No balde vermelho perto do celeiro.
+V: farm|fazenda;early|cedo;feed|alimentar;bucket|balde;barn|celeiro
+B: The farm wakes up at {0}.|A fazenda acorda às {0}.|five=cinco;six=seis;four=quatro
+B: Feed the {0} first.|Alimente {0} primeiro.|chickens=as galinhas;cows=as vacas;pigs=os porcos
+S: Rosa|Good morning! The farm wakes up at five.|Bom dia! A fazenda acorda às cinco.|That is very early!|Isso é muito cedo!
+S: Rosa|Yes. Feed the chickens first.|Pode. Alimente as galinhas primeiro.|Where is the food?|Onde está a ração?
+R: The farm wakes up at five.|A fazenda acorda às cinco.
+R: Feed the chickens first.|Alimente as galinhas primeiro.
+R: The food is in the red bucket.|A ração está no balde vermelho.
+R: Can I help?|Posso ajudar?
+X: Very early!|Muito cedo!
+C: Fazendeiros começam o dia antes do sol nascer.
+N: Próximo: as vacas.
+
+T: Milk the cows | Ordenhar as vacas | forest | Iowa | Rosa,f,👩🏽,fazendeira
+K: The cows give milk. | As vacas dão leite.
+M: Hoje você aprende como o leite chega à mesa.
+D: Rosa|These cows give milk every day.|Estas vacas dão leite todo dia.
+D: You|How much milk does one cow give?|Quanto leite uma vaca dá?
+D: Rosa|About twenty liters.|Cerca de vinte litros.
+D: You|And what do they eat?|E o que elas comem?
+D: Rosa|Grass and corn.|Capim e milho.
+D: You|Can I touch her?|Posso tocar nela?
+D: Rosa|Yes, gently. Her name is Daisy.|Pode, com delicadeza. O nome dela é Daisy.
+V: cows|vacas;liters|litros;corn|milho;gently|com delicadeza;grass|capim
+B: One cow gives {0} liters.|Uma vaca dá {0} litros.|twenty=vinte;ten=dez;thirty=trinta
+B: They eat grass and {0}.|Elas comem capim e {0}.|corn=milho;hay=feno;apples=maçãs
+S: Rosa|These cows give milk every day.|Estas vacas dão leite todo dia.|How much milk does one cow give?|Quanto leite uma vaca dá?
+S: You|Can I touch her?|Posso tocar nela?|Yes, gently. Her name is Daisy.|Pode, com delicadeza. O nome dela é Daisy.
+R: These cows give milk.|Estas vacas dão leite.
+R: One cow gives twenty liters.|Uma vaca dá vinte litros.
+R: They eat grass and corn.|Elas comem capim e milho.
+R: Touch her gently.|Toque nela com delicadeza.
+X: Her name is Daisy.|O nome dela é Daisy.
+C: Uma vaca leiteira pode dar mais de 20 litros por dia.
+N: Próximo: o campo de milho.
+
+T: The corn field | O milharal | forest | Iowa | Rosa,f,👩🏽,fazendeira
+K: The corn is tall. | O milho é alto.
+M: Hoje você anda num milharal.
+D: Rosa|Come in. This is the corn field.|Entre. Este é o milharal.
+D: You|The corn is taller than me!|O milho é mais alto que eu!
+D: Rosa|Yes, three meters tall.|É, tem três metros.
+D: You|Is it ready to eat?|Está pronto para comer?
+D: Rosa|Almost. We pick it next week.|Quase. Colhemos na semana que vem.
+D: You|It is so green and quiet.|É tão verde e silencioso.
+D: Rosa|Careful. Do not get lost!|Cuidado. Não se perca!
+V: corn|milho;taller|mais alto;field|campo;pick|colher;lost|perdido
+B: The corn is {0} meters tall.|O milho tem {0} metros.|three=três;two=dois;four=quatro
+B: We pick it next {0}.|Colhemos na {0} que vem.|week=semana;month=mês;Monday=segunda
+S: Rosa|Come in. This is the corn field.|Entre. Este é o milharal.|The corn is taller than me!|O milho é mais alto que eu!
+S: You|Is it ready to eat?|Está pronto para comer?|Almost. We pick it next week.|Quase. Colhemos na semana que vem.
+R: This is the corn field.|Este é o milharal.
+R: The corn is three meters tall.|O milho tem três metros.
+R: We pick it next week.|Colhemos na semana que vem.
+R: Do not get lost!|Não se perca!
+X: So green and quiet.|Tão verde e silencioso.
+C: O milho é um dos grãos mais cultivados no mundo.
+N: Próximo: o trator.
+
+T: The tractor | O trator | forest | Iowa | Dan,m,🧑🏽,fazendeiro
+K: The tractor is big. | O trator é grande.
+M: Hoje você sobe num trator.
+D: Dan|This is my tractor. Climb up!|Este é o meu trator. Suba!
+D: You|It is so big and loud.|É tão grande e barulhento.
+D: Dan|Yes. It works all day.|Sim. Trabalha o dia todo.
+D: You|What does it do?|O que faz?
+D: Dan|It pulls the plow and the cart.|Puxa o arado e a carreta.
+D: You|Can I drive?|Posso dirigir?
+D: Dan|Not today. Hold the wheel with me.|Hoje não. Segure o volante comigo.
+V: tractor|trator;climb|subir;plow|arado;cart|carreta;wheel|volante
+B: The tractor pulls the {0}.|O trator puxa o(a) {0}.|plow=arado;cart=carreta;truck=caminhão
+B: Hold the wheel {0}.|Segure o volante {0}.|with me=comigo;tight=firme;slowly=devagar
+S: Dan|This is my tractor. Climb up!|Este é o meu trator. Suba!|It is so big and loud.|É tão grande e barulhento.
+S: You|Can I drive?|Posso dirigir?|Not today. Hold the wheel with me.|Hoje não. Segure o volante comigo.
+R: This is my tractor.|Este é o meu trator.
+R: It works all day.|Trabalha o dia todo.
+R: It pulls the plow.|Puxa o arado.
+R: Hold the wheel with me.|Segure o volante comigo.
+X: Climb up!|Suba!
+C: Um trator moderno pode custar centenas de milhares de dólares.
+N: Próximo: a horta.
+
+T: The vegetable garden | A horta | forest | Iowa | Rosa,f,👩🏽,fazendeira
+K: We grow tomatoes. | Plantamos tomates.
+M: Hoje você colhe vegetais.
+D: Rosa|This is our vegetable garden.|Esta é a nossa horta.
+D: You|I see tomatoes, carrots and lettuce.|Vejo tomates, cenouras e alface.
+D: Rosa|Pick the red tomatoes only.|Colha só os tomates vermelhos.
+D: You|Are these ready?|Estes estão prontos?
+D: Rosa|Yes, they are red and soft.|Estão, são vermelhos e macios.
+D: You|They smell so sweet.|Eles têm um cheiro tão doce.
+D: Rosa|Put them in the basket.|Ponha na cesta.
+V: vegetable|legume;lettuce|alface;basket|cesta;soft|macios;sweet|doce
+B: Pick the {0} tomatoes only.|Colha só os tomates {0}.|red=vermelhos;ripe=maduros;big=grandes
+B: Put them in the {0}.|Ponha na {0}.|basket=cesta;box=caixa;bag=sacola
+S: Rosa|This is our vegetable garden.|Esta é a nossa horta.|I see tomatoes, carrots and lettuce.|Vejo tomates, cenouras e alface.
+S: Rosa|Yes, they are red and soft.|Estão, são vermelhos e macios.|They smell so sweet.|Eles têm um cheiro tão doce.
+R: This is our vegetable garden.|Esta é a nossa horta.
+R: Pick the red tomatoes only.|Colha só os tomates vermelhos.
+R: They are red and soft.|São vermelhos e macios.
+R: Put them in the basket.|Ponha na cesta.
+X: They smell sweet.|Cheiram doce.
+C: Tomates colhidos maduros têm mais sabor.
+N: Próximo: os porcos.
+
+T: The pigs | Os porcos | forest | Iowa | Dan,m,🧑🏽,fazendeiro
+K: Pigs love mud. | Porcos adoram lama.
+M: Hoje você visita os porcos.
+D: Dan|Meet my pigs. They love mud.|Conheça meus porcos. Eles adoram lama.
+D: You|They are pink and round.|São cor-de-rosa e redondos.
+D: Dan|Yes, and very smart.|Sim, e muito inteligentes.
+D: You|What do they eat?|O que comem?
+D: Dan|Corn, vegetables and fruit.|Milho, legumes e fruta.
+D: You|The little one is so cute!|O pequenininho é tão fofo!
+D: Dan|That is Pepper. He is three weeks old.|É o Pepper. Tem três semanas.
+V: pigs|porcos;mud|lama;smart|inteligentes;little|pequenininho;weeks|semanas
+B: Pigs love {0}.|Porcos adoram {0}.|mud=lama;corn=milho;water=água
+B: He is three {0} old.|Ele tem três {0}.|weeks=semanas;days=dias;months=meses
+S: Dan|Meet my pigs. They love mud.|Conheça meus porcos. Eles adoram lama.|They are pink and round.|São cor-de-rosa e redondos.
+S: You|The little one is so cute!|O pequenininho é tão fofo!|That is Pepper. He is three weeks old.|É o Pepper. Tem três semanas.
+R: Pigs love mud.|Porcos adoram lama.
+R: They are pink and round.|São cor-de-rosa e redondos.
+R: They are very smart.|São muito inteligentes.
+R: He is three weeks old.|Ele tem três semanas.
+X: So cute!|Tão fofo!
+C: Porcos são considerados um dos animais mais inteligentes.
+N: Próximo: os ovos.
+
+T: Collect the eggs | Colher os ovos | forest | Iowa | Rosa,f,👩🏽,fazendeira
+K: Collect the eggs. | Colha os ovos.
+M: Hoje você colhe ovos fresquinhos.
+D: Rosa|Take this basket and collect the eggs.|Pegue esta cesta e colha os ovos.
+D: You|Where are they?|Onde estão?
+D: Rosa|In the nests, under the chickens.|Nos ninhos, embaixo das galinhas.
+D: You|They are warm!|Estão quentes!
+D: Rosa|Be gentle. Do not drop them.|Com delicadeza. Não deixe cair.
+D: You|I have six eggs.|Tenho seis ovos.
+D: Rosa|Good. Fresh eggs for breakfast.|Bom. Ovos frescos para o café da manhã.
+V: collect|colher;nests|ninhos;warm|quentes;drop|deixar cair;breakfast|café da manhã
+B: Collect the {0}.|Colha {0}.|eggs=os ovos;apples=as maçãs;tomatoes=os tomates
+B: I have {0} eggs.|Tenho {0} ovos.|six=seis;eight=oito;twelve=doze
+S: Rosa|Take this basket and collect the eggs.|Pegue esta cesta e colha os ovos.|Where are they?|Onde estão?
+S: Rosa|Be gentle. Do not drop them.|Com delicadeza. Não deixe cair.|I have six eggs.|Tenho seis ovos.
+R: Collect the eggs.|Colha os ovos.
+R: They are in the nests.|Estão nos ninhos.
+R: Do not drop them.|Não deixe cair.
+R: I have six eggs.|Tenho seis ovos.
+X: They are warm.|Estão quentes.
+C: Galinhas botam em média um ovo por dia.
+N: Próximo: o mercado do fazendeiro.
+
+T: The farmers market | A feira do produtor | market | Vermont | Lia,f,👩🏽,feirante
+K: Everything is fresh. | Tudo é fresco.
+M: Hoje você faz compras na feira do produtor.
+D: Lia|Come, come! Everything is fresh!|Venham, venham! Tudo é fresco!
+D: You|How much are the tomatoes?|Quanto custam os tomates?
+D: Lia|Three dollars a pound.|Três dólares a libra.
+D: You|Two pounds, please. And one dozen eggs.|Duas libras, por favor. E uma dúzia de ovos.
+D: Lia|Anything else?|Mais alguma coisa?
+D: You|Some honey, please.|Um pouco de mel, por favor.
+D: Lia|That is twenty dollars.|São vinte dólares.
+V: fresh|fresco;pound|libra;dozen|dúzia;honey|mel;anything else|mais alguma coisa
+B: Two {0}, please.|Duas {0}, por favor.|pounds=libras;dozen=dúzias;bags=sacolas
+B: Some {0}, please.|Um pouco de {0}, por favor.|honey=mel;cheese=queijo;bread=pão
+S: Lia|Come, come! Everything is fresh!|Venham, venham! Tudo é fresco!|How much are the tomatoes?|Quanto custam os tomates?
+S: Lia|Anything else?|Mais alguma coisa?|Some honey, please.|Um pouco de mel, por favor.
+R: Everything is fresh.|Tudo é fresco.
+R: How much are the tomatoes?|Quanto custam os tomates?
+R: Two pounds, please.|Duas libras, por favor.
+R: Some honey, please.|Um pouco de mel, por favor.
+X: Anything else?|Mais alguma coisa?
+C: Feiras do produtor vendem alimentos locais direto do fazendeiro.
+N: Próximo: o jantar da fazenda.
+
+T: Farm dinner | Jantar da fazenda | kitchen | Iowa | Rosa,f,👩🏽,fazendeira
+K: Everything is from the farm. | Tudo vem da fazenda.
+M: Hoje você janta com comida da fazenda.
+D: Rosa|Dinner is ready! Everything is from the farm.|O jantar está pronto! Tudo vem da fazenda.
+D: You|It smells wonderful.|O cheiro está maravilhoso.
+D: Rosa|We have corn soup, fresh bread and salad.|Temos sopa de milho, pão fresco e salada.
+D: You|And the cheese is from your cows?|E o queijo é das suas vacas?
+D: Rosa|Yes, from Daisy's milk.|Sim, do leite da Daisy.
+D: You|Everything is delicious.|Tudo está delicioso.
+D: Rosa|Eat well, my friend.|Coma bem, meu amigo.
+V: soup|sopa;bread|pão;salad|salada;cheese|queijo;delicious|delicioso
+B: Everything is from the {0}.|Tudo vem da {0}.|farm=fazenda;garden=horta;market=feira
+B: We have corn {0}.|Temos {0} de milho.|soup=sopa;bread=pão;salad=salada
+S: Rosa|Dinner is ready! Everything is from the farm.|O jantar está pronto! Tudo vem da fazenda.|It smells wonderful.|O cheiro está maravilhoso.
+S: Rosa|Yes, from Daisy's milk.|Sim, do leite da Daisy.|Everything is delicious.|Tudo está delicioso.
+R: Dinner is ready.|O jantar está pronto.
+R: Everything is from the farm.|Tudo vem da fazenda.
+R: We have corn soup and fresh bread.|Temos sopa de milho e pão fresco.
+R: Everything is delicious.|Tudo está delicioso.
+X: Eat well.|Coma bem.
+C: Comida de fazenda é fresca e feita com ingredientes locais.
+N: Próximo: desafio, um dia na fazenda.
+
+T: A day on the farm | Desafio do arco: um dia na fazenda | forest | Iowa | Rosa,f,👩🏽,fazendeira
+K: I love the farm. | Adoro a fazenda.
+M: Hoje você resume um dia na fazenda.
+D: Rosa|Tell me about your day on the farm.|Conte do seu dia na fazenda.
+D: You|I feed the chickens and collect eggs.|Alimento as galinhas e colho ovos.
+D: Rosa|What else do you do?|O que mais você faz?
+D: You|I pick tomatoes and ride the tractor.|Colho tomates e ando de trator.
+D: Rosa|And in the evening?|E à noite?
+D: You|We eat dinner together.|Jantamos juntos.
+D: Rosa|Do you like the farm?|Você gosta da fazenda?
+D: You|I love it!|Eu adoro!
+V: chickens|galinhas;eggs|ovos;tomatoes|tomates;tractor|trator;evening|noite
+B: I feed the {0}.|Eu alimento {0}.|chickens=as galinhas;pigs=os porcos;cows=as vacas
+B: I ride the {0}.|Eu ando de {0}.|tractor=trator;horse=cavalo;bike=bicicleta
+S: Rosa|Tell me about your day on the farm.|Conte do seu dia na fazenda.|I feed the chickens and collect eggs.|Alimento as galinhas e colho ovos.
+S: Rosa|Do you like the farm?|Você gosta da fazenda?|I love it!|Eu adoro!
+R: Tell me about your day.|Conte do seu dia.
+R: I feed the chickens and collect eggs.|Alimento as galinhas e colho ovos.
+R: I pick tomatoes and ride the tractor.|Colho tomates e ando de trator.
+R: I love the farm.|Adoro a fazenda.
+X: I love it!|Eu adoro!
+C: Passar um dia numa fazenda é uma experiência turística popular.
+N: Próximo: o próximo bloco.
+BOSS: 1

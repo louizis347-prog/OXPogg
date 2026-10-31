@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roteiro Pocket · B1 451 ao C2 800</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#F4F8F8;--card:#fff;--ink:#0E2F3A;--mute:#58707A;--line:rgba(14,47,58,.12);--pri:#0B7C88;--sun:#FFB627}
+@media(prefers-color-scheme:dark){:root{--bg:#0F1A1E;--card:#16242B;--ink:#EAF4F6;--mute:#9DB4BC;--line:rgba(255,255,255,.14);--pri:#4CC9D6}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px}
+h1{margin:0 0 8px;font-size:1.15rem}.sub{color:var(--mute);font-size:.85rem;margin:0 0 8px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar button,.bar select,.bar input{font:inherit;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 12px}
+.bar button[aria-pressed=true]{background:var(--pri);color:#fff;border-color:var(--pri)}
+.bar input{flex:1;min-width:150px}
+main{max-width:920px;margin:0 auto;padding:12px 16px 60px}
+.arc{margin:18px 0 6px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.arc h2{margin:0;font-size:1rem}.arc button{font:inherit;font-size:.82rem;border:0;background:var(--sun);color:#3a2500;border-radius:99px;padding:6px 12px;cursor:pointer;font-weight:700}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:6px 0;padding:0 14px}
+summary{cursor:pointer;padding:10px 0;list-style:none;display:flex;gap:10px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+.n{font-weight:800;color:var(--pri);min-width:3.2em}.boss{background:var(--sun);color:#3a2500;border-radius:99px;font-size:.7rem;padding:1px 8px;font-weight:800}
+.t{font-weight:700}.g{color:var(--mute);font-size:.82rem;display:block}
+.body{padding:0 0 12px;display:grid;gap:6px;font-size:.92rem}.body b{color:var(--pri)}
+.w{display:flex;flex-wrap:wrap;gap:6px}.w span{background:rgba(11,124,136,.1);border-radius:8px;padding:2px 8px;font-size:.85rem}
+#msg{color:var(--mute);padding:20px 0}
+</style></head><body>
+<header><h1>Roteiro do Pocket · B1 #451 ao C2 #800 <span class="sub" id="cnt"></span></h1>
+<p class="sub">Um roteiro por episódio (gramática, tema, vocabulário, verbos, expressões, gancho cultural, tipo de interação e reciclagem). Use “Copiar arco” e cole junto do prompt de geração.</p>
+<div class="bar" id="lv"></div><div class="bar" style="margin-top:8px"><select id="arc" aria-label="Arco"></select><input id="q" type="search" placeholder="Buscar por título, gramática, obra, palavra…" aria-label="Buscar"></div></header>
+<main id="m"><p id="msg">Carregando…</p></main>
+<script>
+var LV=['b1','b2','c1','c2'],DATA={},cur='b1',E=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+function load(l){return DATA[l]?Promise.resolve(DATA[l]):fetch('../data/pk-roteiro/pk-'+l+'.json').then(function(r){return r.json()}).then(function(j){return DATA[l]=j})}
+function pills(a){return '<div class="w">'+(a||[]).map(function(v){return '<span>'+E(v[0])+(v[1]?' = '+E(v[1]):'')+'</span>'}).join('')+'</div>'}
+function card(r){return '<details><summary><span class="n">'+r.ordem+'</span><span><span class="t">'+E(r.titulo_en)+'</span>'+(r.chefe?' <span class="boss">MINI-CHEFE</span>':'')+'<span class="g">'+E(r.gramatica)+' · '+E(r.tema_pt)+'</span></span></summary><div class="body">'+
+'<div><b>Situação:</b> '+E(r.situacao)+'</div><div><b>Gramática-alvo:</b> '+E(r.gramatica)+'</div><div><b>Gancho cultural:</b> '+E(r.obra)+' — “'+E(r.gancho.en)+'” ('+E(r.gancho.pt)+')</div>'+
+'<div><b>Vocabulário-alvo (5):</b>'+pills(r.vocabulario)+'</div>'+(r.verbos.length?'<div><b>Verbos:</b>'+pills(r.verbos)+'</div>':'')+(r.expressoes.length?'<div><b>Expressões:</b>'+pills(r.expressoes)+'</div>':'')+
+(r.reciclar?'<div><b>Reciclar do episódio anterior:</b> “'+E(r.reciclar.titulo)+'” → '+E(r.reciclar.palavras.join(', '))+'</div>':'')+(r.reciclar_chefe?'<div><b>Reencontrar no chefe:</b> '+E(r.reciclar_chefe.join(', '))+'</div>':'')+
+(r.proximo?'<div><b>Próximo:</b> '+E(r.proximo)+'</div>':'')+'<div style="color:var(--mute);font-size:.8rem">Fonte: '+E(r.fonte)+' · ID '+r.n+'</div></div></details>'}
+function draw(){var d=DATA[cur],q=document.getElementById('q').value.trim().toLowerCase(),a=+document.getElementById('arc').value,h='',last=-1,k=0;
+ d.forEach(function(r){if(a&&r.arco!==a)return;if(q&&JSON.stringify(r).toLowerCase().indexOf(q)<0)return;k++;if(r.arco!==last){last=r.arco;h+='<div class="arc"><h2>Arco '+r.arco+' · '+E(r.guia.nome)+' ('+E(r.guia.papel)+', '+E(r.guia.cidade)+')</h2><button type="button" data-arc="'+r.arco+'">Copiar arco</button></div>'}h+=card(r)});
+ document.getElementById('m').innerHTML=h||'<p id="msg">Nada encontrado.</p>';document.getElementById('cnt').textContent=k+' de '+d.length+' episódios'}
+function setLv(l){cur=l;[].forEach.call(document.querySelectorAll('#lv button'),function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
+ load(l).then(function(d){var arcs={};d.forEach(function(r){arcs[r.arco]=1});document.getElementById('arc').innerHTML='<option value="0">Todos os arcos</option>'+Object.keys(arcs).map(function(x){return'<option value="'+x+'">Arco '+x+'</option>'}).join('');draw()})}
+document.getElementById('lv').innerHTML=LV.map(function(l){return'<button type="button" data-l="'+l+'" aria-pressed="false">'+l.toUpperCase()+(l==='b1'?' (451–800)':' (1–800)')+'</button>'}).join('');
+document.getElementById('lv').onclick=function(e){var b=e.target.closest('button');if(b)setLv(b.dataset.l)};
+document.getElementById('arc').onchange=draw;document.getElementById('q').oninput=draw;
+document.getElementById('m').onclick=function(e){var b=e.target.closest('[data-arc]');if(!b)return;var a=+b.dataset.arc,t=JSON.stringify(DATA[cur].filter(function(r){return r.arco===a}),null,1);
+ (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copiado ✓'}).catch(function(){var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');b.textContent='Copiado ✓'}catch(x){b.textContent='Selecione e copie'}ta.remove()});setTimeout(function(){b.textContent='Copiar arco'},2000)};
+setLv('b1');
+</script></body></html>

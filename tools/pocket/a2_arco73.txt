@@ -1,0 +1,253 @@
+# Arco 73 · Segurança e emergências
+T: Call 911 today | Ligar para o 911 | street | Chicago | Operator Dee,f,👩🏾,atendente
+K: I need help. There is an accident. | Preciso de ajuda. Houve um acidente.
+M: Hoje você liga para o número de emergência.
+D: Operator Dee|911. What is your emergency?|911. Qual é a sua emergência?
+D: You|I need help. There is an accident.|Preciso de ajuda. Houve um acidente.
+D: Operator Dee|Where are you?|Onde você está?
+D: You|On Main Street, near the bank.|Na Main Street, perto do banco.
+D: Operator Dee|Is anyone hurt?|Alguém se machucou?
+D: You|Yes, one man cannot move his leg.|Sim, um homem não consegue mexer a perna.
+D: Operator Dee|Stay calm. An ambulance is coming.|Fique calmo. Uma ambulância está a caminho.
+D: You|Thank you. Please hurry.|Obrigado. Por favor, rápido.
+V: emergency|emergência;accident|acidente;hurt|machucado;ambulance|ambulância;calm|calmo
+B: There is an {0}.|Há um {0}.|accident=acidente;fire=incêndio;emergency=emergência
+B: One man cannot move his {0}.|Um homem não consegue mexer a {0}.|leg=perna;arm=braço;head=cabeça
+S: Operator Dee|What is your emergency?|Qual é a sua emergência?|I need help. There is an accident.|Preciso de ajuda. Houve um acidente.
+S: Operator Dee|Where are you?|Onde você está?|On Main Street, near the bank.|Na Main Street, perto do banco.
+R: What is your emergency?|Qual é a sua emergência?
+R: There is an accident.|Houve um acidente.
+R: I am on Main Street.|Estou na Main Street.
+R: Please hurry.|Por favor, rápido.
+X: Stay calm.|Fique calmo.
+C: O número de emergência nos EUA é 911, para polícia, bombeiros e ambulância.
+
+T: A fire drill | Simulado de incêndio | office | Seattle | Warden Ray,m,👨🏽,responsável
+K: Please walk to the exit. | Por favor caminhe até a saída.
+M: Hoje você participa de um simulado de incêndio.
+D: Warden Ray|Attention, please. This is a fire drill.|Atenção, por favor. Este é um simulado de incêndio.
+D: You|What should I do?|O que devo fazer?
+D: Warden Ray|Leave your things and walk to the exit.|Deixe suas coisas e caminhe até a saída.
+D: You|Can I use the elevator?|Posso usar o elevador?
+D: Warden Ray|No. Always use the stairs.|Não. Use sempre as escadas.
+D: You|Where do we meet outside?|Onde nos encontramos lá fora?
+D: Warden Ray|In the parking lot, near the big tree.|No estacionamento, perto da árvore grande.
+D: You|Got it. Everyone is leaving now.|Entendi. Todos estão saindo agora.
+V: drill|simulado;exit|saída;stairs|escada;parking lot|estacionamento;leave|sair
+B: Walk to the {0}.|Caminhe até a {0}.|exit=saída;door=porta;stairs=escada
+B: We meet near the big {0}.|Nos encontramos perto da {0} grande.|tree=árvore;gate=entrada;car=carro
+S: Warden Ray|This is a fire drill.|Este é um simulado de incêndio.|What should I do?|O que devo fazer?
+S: Warden Ray|Always use the stairs.|Use sempre as escadas.|Where do we meet outside?|Onde nos encontramos lá fora?
+R: This is a fire drill.|Este é um simulado de incêndio.
+R: Walk to the exit.|Caminhe até a saída.
+R: Always use the stairs.|Use sempre as escadas.
+R: Where do we meet outside?|Onde nos encontramos lá fora?
+X: Got it.|Entendi.
+C: Escolas e escritórios nos EUA fazem simulados de incêndio algumas vezes por ano.
+
+T: First aid | Primeiros socorros | clinic | Boston | Nurse Pat,f,👩🏼,enfermeira
+K: Put a bandage on the cut. | Ponha um curativo no corte.
+M: Hoje você aprende primeiros socorros básicos.
+D: Nurse Pat|Today we learn basic first aid.|Hoje aprendemos primeiros socorros básicos.
+D: You|OK. What do we do for a small cut?|Certo. O que fazemos num corte pequeno?
+D: Nurse Pat|First, wash it with clean water.|Primeiro, lave com água limpa.
+D: You|And then?|E depois?
+D: Nurse Pat|Put a bandage on the cut.|Ponha um curativo no corte.
+D: You|What if there is a lot of blood?|E se houver muito sangue?
+D: Nurse Pat|Press with a clean cloth and call 911.|Pressione com um pano limpo e ligue 911.
+D: You|Thank you. This is very useful.|Obrigado. Isso é muito útil.
+V: bandage|curativo;cut|corte;blood|sangue;cloth|pano;wash|lavar
+B: Put a {0} on the cut.|Ponha um {0} no corte.|bandage=curativo;band-aid=band-aid;cloth=pano
+B: Wash it with clean {0}.|Lave com {0} limpa.|water=água;soap=sabão;cloth=pano
+S: Nurse Pat|What do we do for a small cut?|O que fazemos num corte pequeno?|First, wash it with clean water.|Primeiro, lavar com água limpa.
+S: Nurse Pat|Put a bandage on the cut.|Ponha um curativo no corte.|What if there is a lot of blood?|E se houver muito sangue?
+R: Wash it with clean water.|Lave com água limpa.
+R: Put a bandage on the cut.|Ponha um curativo no corte.
+R: Press with a clean cloth.|Pressione com um pano limpo.
+R: Call 911.|Ligue 911.
+X: This is very useful.|Isso é muito útil.
+C: Muitas escolas e empresas nos EUA oferecem cursos curtos de primeiros socorros.
+
+T: Lost wallet | Carteira perdida | street | Miami | Officer Lee,m,👨🏿,policial
+K: I lost my wallet this morning. | Perdi minha carteira esta manhã.
+M: Hoje você registra a perda da carteira.
+D: You|Excuse me, officer. I lost my wallet this morning.|Com licença, policial. Perdi minha carteira esta manhã.
+D: Officer Lee|Where did you lose it?|Onde você a perdeu?
+D: You|Maybe on the bus, or in the park.|Talvez no ônibus, ou no parque.
+D: Officer Lee|What was inside?|O que tinha dentro?
+D: You|My cards, some money and my ID.|Meus cartões, algum dinheiro e meu documento.
+D: Officer Lee|Please fill out this report.|Por favor preencha este relatório.
+D: You|Should I cancel my cards?|Devo cancelar meus cartões?
+D: Officer Lee|Yes, call your bank now.|Sim, ligue para seu banco agora.
+V: wallet|carteira;report|relatório;cancel|cancelar;lose|perder;ID|documento
+B: I lost my {0} this morning.|Perdi minha {0} esta manhã.|wallet=carteira;bag=bolsa;phone=celular
+B: Please fill out this {0}.|Por favor preencha este {0}.|report=relatório;form=formulário;page=página
+S: Officer Lee|Where did you lose it?|Onde você a perdeu?|Maybe on the bus, or in the park.|Talvez no ônibus, ou no parque.
+S: Officer Lee|Call your bank now.|Ligue para seu banco agora.|Should I cancel my cards?|Devo cancelar meus cartões?
+R: I lost my wallet.|Perdi minha carteira.
+R: My cards and my ID were inside.|Meus cartões e meu documento estavam dentro.
+R: Please fill out this report.|Preencha este relatório.
+R: Should I cancel my cards?|Devo cancelar meus cartões?
+X: Call your bank.|Ligue para seu banco.
+C: Quando algo é perdido ou roubado, é importante cancelar os cartões e fazer um relatório.
+
+T: A storm warning | Alerta de tempestade | living | Miami | Anchor Dee,f,👩🏽,apresentadora
+K: A big storm is coming tonight. | Uma tempestade forte chega hoje à noite.
+M: Hoje você se prepara para uma tempestade.
+D: Anchor Dee|Attention. A big storm is coming tonight.|Atenção. Uma tempestade forte chega hoje à noite.
+D: You|We must get ready. What do we need?|Precisamos nos preparar. De que precisamos?
+D: Anchor Dee|Water, food, a flashlight and batteries.|Água, comida, lanterna e pilhas.
+D: You|Do we have a radio?|Temos um rádio?
+D: Anchor Dee|You should have one. It helps if the power goes out.|Você deveria ter um. Ajuda se a luz acabar.
+D: You|I will go to the store now.|Vou à loja agora.
+D: Anchor Dee|Stay inside and away from windows.|Fique dentro e longe das janelas.
+D: You|Understood. Thank you for the warning.|Entendi. Obrigado pelo aviso.
+V: storm|tempestade;flashlight|lanterna;batteries|pilhas;radio|rádio;warning|aviso
+B: A big {0} is coming tonight.|Uma {0} forte chega hoje à noite.|storm=tempestade;wind=ventania;rain=chuva
+B: We need water, food and a {0}.|Precisamos de água, comida e uma {0}.|flashlight=lanterna;radio=rádio;blanket=coberta
+S: Anchor Dee|A big storm is coming tonight.|Uma tempestade forte chega hoje.|We must get ready. What do we need?|Precisamos nos preparar. De que precisamos?
+S: Anchor Dee|Stay inside and away from windows.|Fique dentro e longe das janelas.|Understood. Thank you for the warning.|Entendi. Obrigado pelo aviso.
+R: A big storm is coming.|Uma tempestade forte está chegando.
+R: We need water, food and a flashlight.|Precisamos de água, comida e uma lanterna.
+R: Stay inside.|Fique dentro de casa.
+R: Thank you for the warning.|Obrigado pelo aviso.
+X: Get ready.|Prepare-se.
+C: Em regiões de furacões como a Flórida, as famílias têm um kit de emergência em casa.
+
+T: Power outage | Queda de energia | living | Phoenix | Neighbor Joe,m,👨🏼,vizinho
+K: The lights are out. | As luzes apagaram.
+M: Hoje você enfrenta uma queda de energia.
+D: Neighbor Joe|Hey! Are your lights out too?|Ei! Suas luzes também apagaram?
+D: You|Yes. The whole street is dark.|Sim. A rua toda está escura.
+D: Neighbor Joe|I called the power company. They said two hours.|Liguei para a companhia de luz. Disseram duas horas.
+D: You|I have a flashlight. Do you need one?|Tenho uma lanterna. Você precisa de uma?
+D: Neighbor Joe|No, thanks. I have candles.|Não, obrigado. Tenho velas.
+D: You|Please be careful with the fire.|Por favor tenha cuidado com o fogo.
+D: Neighbor Joe|I will. Do not open the fridge too much.|Terei. Não abra muito a geladeira.
+D: You|Good tip. See you later.|Boa dica. Até mais tarde.
+V: power|energia;candle|vela;dark|escuro;company|companhia;tip|dica
+B: The whole street is {0}.|A rua toda está {0}.|dark=escura;quiet=silenciosa;empty=vazia
+B: They said {0} hours.|Disseram {0} horas.|two=duas;three=três;four=quatro
+S: Neighbor Joe|Are your lights out too?|Suas luzes também apagaram?|Yes. The whole street is dark.|Sim. A rua toda está escura.
+S: Neighbor Joe|Do not open the fridge too much.|Não abra muito a geladeira.|Good tip. See you later.|Boa dica. Até mais tarde.
+R: The lights are out.|As luzes apagaram.
+R: The whole street is dark.|A rua toda está escura.
+R: I have a flashlight.|Tenho uma lanterna.
+R: Please be careful with the fire.|Tenha cuidado com o fogo.
+X: Good tip.|Boa dica.
+C: Quedas de energia são comuns em tempestades, e os vizinhos costumam se ajudar.
+
+T: A strange noise | Barulho estranho | street | Denver | Officer Ann,f,👩🏻,policial
+K: I heard a strange noise outside. | Ouvi um barulho estranho lá fora.
+M: Hoje você relata um barulho estranho à noite.
+D: You|Hello, officer. I heard a strange noise outside.|Olá, policial. Ouvi um barulho estranho lá fora.
+D: Officer Ann|When did you hear it?|Quando você ouviu?
+D: You|About ten minutes ago, near the garage.|Há cerca de dez minutos, perto da garagem.
+D: Officer Ann|Did you see anyone?|Você viu alguém?
+D: You|No, but the garage door was open.|Não, mas a porta da garagem estava aberta.
+D: Officer Ann|Stay inside. I will check it now.|Fique dentro. Vou verificar agora.
+D: You|Thank you. I feel safer already.|Obrigado. Já me sinto mais seguro.
+D: Officer Ann|Lock your doors and call me if needed.|Tranque as portas e ligue se precisar.
+V: noise|barulho;garage|garagem;open|aberto;lock|trancar;safe|seguro
+B: I heard a strange {0} outside.|Ouvi um {0} estranho lá fora.|noise=barulho;sound=som;voice=voz
+B: The garage door was {0}.|A porta da garagem estava {0}.|open=aberta;closed=fechada;broken=quebrada
+S: Officer Ann|When did you hear it?|Quando você ouviu?|About ten minutes ago, near the garage.|Há cerca de dez minutos, perto da garagem.
+S: Officer Ann|Lock your doors.|Tranque as portas.|Thank you. I feel safer already.|Obrigado. Já me sinto mais seguro.
+R: I heard a strange noise outside.|Ouvi um barulho estranho lá fora.
+R: The garage door was open.|A porta da garagem estava aberta.
+R: Stay inside.|Fique dentro.
+R: Lock your doors.|Tranque as portas.
+X: I feel safer already.|Já me sinto mais seguro.
+C: Nos EUA, a polícia pede que moradores fiquem dentro de casa e tranquem as portas em situação suspeita.
+
+T: Safe at home | Seguro em casa | living | Boston | Dad Max,m,👨🏾,pai
+K: Always lock the door at night. | Sempre tranque a porta à noite.
+M: Hoje você aprende regras de segurança em casa.
+D: Dad Max|Before bed, we always lock the doors.|Antes de dormir, sempre trancamos as portas.
+D: You|I know. And the windows too?|Eu sei. E as janelas também?
+D: Dad Max|Yes, all the windows on the first floor.|Sim, todas as janelas do primeiro andar.
+D: You|Where do we keep the spare key?|Onde guardamos a chave reserva?
+D: Dad Max|With our neighbor, Mrs. Ruth.|Com nossa vizinha, a Sra. Ruth.
+D: You|What about the smoke alarm?|E o alarme de fumaça?
+D: Dad Max|I check it every month. It works well.|Verifico todo mês. Funciona bem.
+D: You|Good. I feel safe at home.|Bom. Me sinto seguro em casa.
+V: lock|trancar;spare key|chave reserva;smoke alarm|alarme de fumaça;window|janela;safe|seguro
+B: We always lock the {0}.|Sempre trancamos as {0}.|doors=portas;windows=janelas;gates=portões
+B: I check the alarm every {0}.|Verifico o alarme todo {0}.|month=mês;week=semana;year=ano
+S: Dad Max|Before bed, we always lock the doors.|Antes de dormir, sempre trancamos as portas.|I know. And the windows too?|Eu sei. E as janelas também?
+S: Dad Max|I check the smoke alarm every month.|Verifico o alarme todo mês.|Good. I feel safe at home.|Bom. Me sinto seguro em casa.
+R: We always lock the doors.|Sempre trancamos as portas.
+R: Where do we keep the spare key?|Onde guardamos a chave reserva?
+R: I check the smoke alarm every month.|Verifico o alarme de fumaça todo mês.
+R: I feel safe at home.|Me sinto seguro em casa.
+X: I know.|Eu sei.
+C: Nos EUA, todo lar deve ter alarme de fumaça, e as pilhas são trocadas uma ou duas vezes por ano.
+
+T: A lost child | Criança perdida | street | Los Angeles | Guard Tim,m,👨🏽,segurança
+K: My daughter is lost. | Minha filha está perdida.
+M: Hoje você pede ajuda para encontrar uma criança.
+D: You|Excuse me. My daughter is lost!|Com licença. Minha filha está perdida!
+D: Guard Tim|Stay calm. How old is she?|Fique calmo. Quantos anos ela tem?
+D: You|She is six. She has a red coat.|Ela tem seis. Ela usa um casaco vermelho.
+D: Guard Tim|When did you see her last?|Quando você a viu pela última vez?
+D: You|Five minutes ago, near the toy shop.|Há cinco minutos, perto da loja de brinquedos.
+D: Guard Tim|I will tell everyone on the radio.|Vou avisar todos pelo rádio.
+D: You|Thank you. Please hurry.|Obrigado. Por favor, rápido.
+D: Guard Tim|We found her! She is at the information desk.|Achamos! Ela está no balcão de informações.
+V: lost|perdido;coat|casaco;radio|rádio;desk|balcão;toy shop|loja de brinquedos
+B: She has a {0} coat.|Ela usa um casaco {0}.|red=vermelho;blue=azul;green=verde
+B: She is {0} years old.|Ela tem {0} anos.|six=seis;five=cinco;seven=sete
+S: Guard Tim|How old is she?|Quantos anos ela tem?|She is six. She has a red coat.|Ela tem seis. Usa um casaco vermelho.
+S: Guard Tim|We found her!|Achamos!|Thank you so much!|Muito obrigado!
+R: My daughter is lost.|Minha filha está perdida.
+R: She has a red coat.|Ela usa um casaco vermelho.
+R: I saw her five minutes ago.|Vi ela há cinco minutos.
+R: We found her!|Achamos!
+X: Stay calm.|Fique calmo.
+C: Em shoppings e parques americanos, a segurança ajuda a encontrar crianças perdidas por rádio.
+
+T: Safe travel | Viajar com segurança | airport | Atlanta | Agent Kim,f,👩🏾,agente
+K: Never leave your bags alone. | Nunca deixe suas malas sozinhas.
+M: Hoje você aprende dicas de segurança em viagens.
+D: Agent Kim|Welcome. Please remember our safety rules.|Bem-vindo. Lembre-se das nossas regras de segurança.
+D: You|Sure. What are they?|Claro. Quais são?
+D: Agent Kim|Never leave your bags alone.|Nunca deixe suas malas sozinhas.
+D: You|What if I need the restroom?|E se eu precisar ir ao banheiro?
+D: Agent Kim|Ask a friend to watch them, or take them with you.|Peça a um amigo para olhar, ou leve com você.
+D: You|Is it safe to carry cash?|É seguro levar dinheiro vivo?
+D: Agent Kim|Better to use a card. Keep your passport close.|Melhor usar cartão. Mantenha o passaporte por perto.
+D: You|Thank you. That is helpful.|Obrigado. Isso ajuda.
+V: bags|malas;restroom|banheiro;cash|dinheiro vivo;passport|passaporte;watch|vigiar
+B: Never leave your {0} alone.|Nunca deixe suas {0} sozinhas.|bags=malas;things=coisas;children=crianças
+B: Keep your {0} close.|Mantenha seu {0} por perto.|passport=passaporte;wallet=carteira;phone=celular
+S: Agent Kim|Never leave your bags alone.|Nunca deixe suas malas sozinhas.|What if I need the restroom?|E se eu precisar ir ao banheiro?
+S: Agent Kim|Better to use a card.|Melhor usar cartão.|Thank you. That is helpful.|Obrigado. Isso ajuda.
+R: Never leave your bags alone.|Nunca deixe suas malas sozinhas.
+R: Keep your passport close.|Mantenha o passaporte por perto.
+R: It is better to use a card.|É melhor usar cartão.
+R: That is helpful.|Isso ajuda.
+X: Remember the rules.|Lembre-se das regras.
+C: Nos aeroportos americanos, malas sem dono são retiradas e investigadas pela segurança.
+
+T: Report a problem | Relatar um problema | hall | Seattle | Manager Ann,f,👩🏼,gerente
+K: There is a broken stair. | Há um degrau quebrado.
+M: Hoje você relata um problema de segurança no prédio.
+D: You|Excuse me. There is a broken stair in the hall.|Com licença. Há um degrau quebrado no corredor.
+D: Manager Ann|Thank you for telling me. Where exactly?|Obrigada por avisar. Onde exatamente?
+D: You|On the third floor, near the elevator.|No terceiro andar, perto do elevador.
+D: Manager Ann|That is dangerous. I will call someone today.|Isso é perigoso. Vou chamar alguém hoje.
+D: You|Can you put a sign there?|Você pode pôr uma placa ali?
+D: Manager Ann|Yes, I will do it right now.|Sim, farei agora mesmo.
+D: You|Thanks. Someone could fall.|Obrigado. Alguém pode cair.
+D: Manager Ann|You are right. Good that you told me.|Você tem razão. Que bom que me avisou.
+V: stair|degrau;broken|quebrado;fall|cair;sign|placa;someone|alguém
+B: There is a broken {0}.|Há um {0} quebrado.|stair=degrau;window=vidro;light=luz
+B: Someone could {0}.|Alguém pode {0}.|fall=cair;get hurt=se machucar;slip=escorregar
+S: Manager Ann|Where exactly?|Onde exatamente?|On the third floor, near the elevator.|No terceiro andar, perto do elevador.
+S: Manager Ann|I will put a sign there.|Vou pôr uma placa ali.|Thanks. Someone could fall.|Obrigado. Alguém pode cair.
+R: There is a broken stair.|Há um degrau quebrado.
+R: It is near the elevator.|Fica perto do elevador.
+R: Can you put a sign there?|Você pode pôr uma placa ali?
+R: Someone could fall.|Alguém pode cair.
+X: You are right.|Você tem razão.
+C: Avisar sobre perigos em prédios é um dever cívico nos EUA, e muitos locais têm linhas para isso.

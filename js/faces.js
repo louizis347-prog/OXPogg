@@ -35,7 +35,9 @@ function bust(o){
   else if(tone<=1&&R()<.3)hair=pick(R,['#C9A25B','#8A5A2B','#6b4528']);
   else if(tone===4)hair='#120C09';
   if(o.hair)hair=o.hair;
-  const hairD=mix(hair,'#000',.35),hairL=mix(hair,'#fff',.28);
+  const nat=!!o.natural;
+  if(nat&&age!=='old'&&o.hairKind!=='gray')hair=mix(hair,'#7a5238',.3);
+  const hairD=mix(hair,'#000',nat?.26:.35),hairL=mix(hair,'#fff',nat?.2:.28);
   const style=o.hairKind==='bald'?'bald':o.hairKind==='curly'?'curly':(o.style||(g==='f'?pick(R,['long','long','wavy','bun','bob']):pick(R,['short','short','side','curly','short'])));
   const beard=o.beard!=null?o.beard:(g==='m'&&age!=='kid'&&R()<.28);
   const glasses=o.glasses!=null?o.glasses:R()<.17;
@@ -55,10 +57,10 @@ function bust(o){
    <linearGradient id="${u}hr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${hairL}"/><stop offset=".5" stop-color="${hair}"/><stop offset="1" stop-color="${hairD}"/></linearGradient>
    <linearGradient id="${u}sd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient></defs>`;
   /* cabelo de trás */
-  if(style==='long'||style==='wavy')s+=`<path d="M25 42 C17 72 20 100 29 112 L71 112 C80 100 83 72 75 42Z" fill="url(#${u}hr)"/>`;
-  if(style==='bob')s+=`<path d="M26 40 C20 58 22 74 30 80 L70 80 C78 74 80 58 74 40Z" fill="url(#${u}hr)"/>`;
-  if(style==='curly'&&fem)s+=`<circle cx="50" cy="38" r="31" fill="url(#${u}hr)"/>`;
-  if(style==='bun')s+=`<circle cx="50" cy="11" r="9.5" fill="url(#${u}hr)"/><circle cx="46.5" cy="8" r="3" fill="${hairL}" fill-opacity=".5"/>`;
+  if(style==='long'||style==='wavy')s+=nat?`<path d="M27 42 C21 70 23 94 31 104 L69 104 C77 94 79 70 73 42Z" fill="url(#${u}hr)"/>`:`<path d="M25 42 C17 72 20 100 29 112 L71 112 C80 100 83 72 75 42Z" fill="url(#${u}hr)"/>`;
+  if(style==='bob')s+=`<path d="${nat?'M27 40 C23 56 24 70 31 75 L69 75 C76 70 77 56 73 40Z':'M26 40 C20 58 22 74 30 80 L70 80 C78 74 80 58 74 40Z'}" fill="url(#${u}hr)"/>`;
+  if(style==='curly'&&fem)s+=`<circle cx="50" cy="38" r="${nat?27:31}" fill="url(#${u}hr)"/>`;
+  if(style==='bun')s+=`<circle cx="50" cy="${nat?15:11}" r="${nat?6.6:9.5}" fill="url(#${u}hr)"/><circle cx="${nat?48:46.5}" cy="${nat?13:8}" r="${nat?2:3}" fill="${hairL}" fill-opacity=".5"/>`;
   /* tronco */
   s+=`<g transform="translate(0 -5)"><path d="M4 240 L4 130 C4 104 20 92 37 88 L63 88 C80 92 96 104 96 130 L96 240Z" fill="url(#${u}sh)"/><path d="M4 240 L4 130 C4 104 20 92 37 88 L63 88 C80 92 96 104 96 130 L96 240Z" fill="url(#${u}sd)"/>`;
   s+=`<path d="M22 112 C28 100 38 94 50 100" stroke="${shirtL}" stroke-opacity=".35" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M78 110 C72 100 62 94 56 100" stroke="${shirtD}" stroke-opacity=".35" stroke-width="2" fill="none" stroke-linecap="round"/>`;
@@ -70,7 +72,7 @@ function bust(o){
     s+=`<path d="M${ld<0?4:96} 130 C${ld<0?4:96} 108 ${ld<0?16:84} 96 ${ld<0?34:66} 90" stroke="${lc}" stroke-opacity="${(.5*lk).toFixed(2)}" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="${ld<0?24:76}" cy="108" rx="14" ry="9" fill="${lc}" fill-opacity="${(.12*lk).toFixed(2)}"/>`}
   s+=`</g>`;
   /* pescoço + sombra do queixo */
-  s+=`<path d="M40.5 56 L40.5 84 Q50 93 59.5 84 L59.5 56Z" fill="url(#${u}nk)"/>`;
+  s+=nat?`<path d="M42.5 56 L42.5 82 Q50 89 57.5 82 L57.5 56Z" fill="url(#${u}nk)"/>`:`<path d="M40.5 56 L40.5 84 Q50 93 59.5 84 L59.5 56Z" fill="url(#${u}nk)"/>`;
   s+=`<g transform="translate(0 -5)">`;
   if(neck==='v')s+=`<path d="M38 88 L50 108 L62 88 Q50 96 38 88Z" fill="${skin}"/><path d="M38 88 L50 108 L62 88" stroke="${shirtD}" stroke-width="1.6" fill="none"/>`;
   else if(neck==='collar')s+=`<path d="M39 87 L50 104 L44 87Z" fill="#fff"/><path d="M61 87 L50 104 L56 87Z" fill="#f0f0f0"/><path d="M39 87 L50 104 L61 87" stroke="${shirtD}" stroke-opacity=".5" fill="none"/>`;
@@ -91,11 +93,11 @@ function bust(o){
   [[41,-1],[59,1]].forEach(([x,d])=>{
     s+=refined?`<path d="M${x-4.8} ${ey+.2} Q${x} ${ey-3.5} ${x+4.8} ${ey+.2} Q${x} ${ey+2.8} ${x-4.8} ${ey+.2}Z" fill="#f8f4ee"/>`:`<ellipse cx="${x}" cy="${ey}" rx="4.9" ry="3" fill="#fff"/><ellipse cx="${x}" cy="${ey+.1}" rx="4.9" ry="3" fill="${skinD}" fill-opacity=".14"/>`;
     s+=`<circle cx="${x+d*.3}" cy="${ey+.1}" r="${irisR}" fill="${iris}"/><circle cx="${x+d*.3}" cy="${ey+.1}" r="${refined?.88:1.15}" fill="#0b0706"/><circle cx="${x+d*.3+.7}" cy="${ey-.7}" r="${refined?.48:.8}" fill="#fff"/>`;
-    s+=`<path d="M${x-5.2} ${ey+.2} Q${x} ${ey-4.8} ${x+5.2} ${ey+.2}" stroke="${mix(hairD,'#000',.3)}" stroke-width="${fem?1.7:1.4}" fill="none" stroke-linecap="round"/><path d="M${x-4.2} ${ey+1.8} Q${x} ${ey+3.6} ${x+4.2} ${ey+1.8}" stroke="${skinD}" stroke-opacity=".5" stroke-width=".9" fill="none" stroke-linecap="round"/>`;
-    if(fem)s+=`<path d="M${x+d*4.6} ${ey-.4} l${d*1.9} -1.4 M${x+d*3.4} ${ey-1.9} l${d*1.4} -1.7" stroke="${hairD}" stroke-width=".9" stroke-linecap="round"/>`;
+    s+=`<path d="M${x-5.2} ${ey+.2} Q${x} ${ey-4.8} ${x+5.2} ${ey+.2}" stroke="${mix(hairD,'#000',.3)}" stroke-width="${nat?(fem?1.15:1):(fem?1.7:1.4)}" fill="none" stroke-linecap="round"/><path d="M${x-4.2} ${ey+1.8} Q${x} ${ey+3.6} ${x+4.2} ${ey+1.8}" stroke="${skinD}" stroke-opacity=".5" stroke-width=".9" fill="none" stroke-linecap="round"/>`;
+    if(fem&&!nat)s+=`<path d="M${x+d*4.6} ${ey-.4} l${d*1.9} -1.4 M${x+d*3.4} ${ey-1.9} l${d*1.4} -1.7" stroke="${hairD}" stroke-width=".9" stroke-linecap="round"/>`;
     /* sobrancelhas */
     const by=ey-6.4,lift=mood==='soft'?-.6:mood==='grin'?-1:0;
-    s+=`<path d="M${x-5.6} ${by+1.2+lift*-1} Q${x-.5} ${by-1.8+lift} ${x+5.4} ${by+.6+(d>0?.4:-.4)}" stroke="${hairD}" stroke-width="${fem?1.6:2.3}" fill="none" stroke-linecap="round" stroke-opacity=".92"/>`;
+    s+=`<path d="M${x-5.6} ${by+1.2+lift*-1} Q${x-.5} ${by-1.8+lift} ${x+5.4} ${by+.6+(d>0?.4:-.4)}" stroke="${hairD}" stroke-width="${nat?(fem?1.15:1.6):(fem?1.6:2.3)}" fill="none" stroke-linecap="round" stroke-opacity="${nat?.72:.92}"/>`;
   });
   if(age==='old')s+=`<g stroke="${skinD}" stroke-opacity=".5" stroke-width=".7" fill="none" stroke-linecap="round"><path d="M33.5 41 l-2 -1.2 M33.4 43.5 l-2.2 .2 M33.6 46 l-2 1.2 M66.5 41 l2 -1.2 M66.6 43.5 l2.2 .2 M66.4 46 l2 1.2"/><path d="M40 30 Q50 28 60 30 M41 32.6 Q50 31 59 32.6"/><path d="M41.5 59.5 q-2 3 0 6 M58.5 59.5 q2 3 0 6"/></g>`;
   /* óculos */
@@ -117,9 +119,9 @@ function bust(o){
   if(style==='short')s+=`<path d="M30 40 C27 13 73 11 70 40 C68.5 31 64 27 58 26 C54 30 42 31 36 27 C32 30 30.4 34 30 40Z" fill="url(#${u}hr)"/>${shine}`;
   else if(style==='side')s+=`<path d="M30 41 C26 12 74 10 70 41 C69 32 66 27 60 25 C50 30 38 29 33 24 C31 29 30 34 30 41Z" fill="url(#${u}hr)"/><path d="M33 24 C42 24 52 22 62 25" stroke="${hairD}" stroke-width="1" fill="none"/>${shine}`;
   else if(style==='long'||style==='wavy'||style==='bun'||style==='bob')s+=`<path d="M30 44 C24 12 76 8 70 44 C69 33 64 25 52 24 C44 31 36 30 34 38 C32 40 31 42 30 44Z" fill="url(#${u}hr)"/><path d="M52 24 C48 29 42 33 34 36" stroke="${hairD}" stroke-opacity=".5" stroke-width="1" fill="none"/>${shine}`;
-  else if(style==='curly'){let c='';for(let i=0;i<13;i++){const a=Math.PI*(1.05+i*.083),r=20+R()*3,x=50+Math.cos(a)*r*1.18,y=40+Math.sin(a)*r*1.1;c+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(6+R()*2.4).toFixed(1)}" fill="${i%3?hair:hairD}"/>`}s+=c+`<path d="M33 34 Q50 20 67 34 C64 27 58 24 50 24 C42 24 36 27 33 34Z" fill="url(#${u}hr)"/>`+shine}
+  else if(style==='curly'){let c='';for(let i=0;i<13;i++){const a=Math.PI*(1.05+i*.083),r=(nat?17.5:20)+R()*3,x=50+Math.cos(a)*r*1.18,y=40+Math.sin(a)*r*1.1+(nat?2:0);c+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${((nat?4.6:6)+R()*(nat?1.8:2.4)).toFixed(1)}" fill="${i%3?hair:hairD}"/>`}s+=c+`<path d="M33 34 Q50 20 67 34 C64 27 58 24 50 24 C42 24 36 27 33 34Z" fill="url(#${u}hr)"/>`+shine}
   else if(style==='bald')s+=`<path d="M32 36 C34 22 66 22 68 36" stroke="${hairL}" stroke-opacity=".28" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="44" cy="26" rx="6" ry="2.2" fill="#fff" fill-opacity=".18"/>`;
-  if(rich&&style!=='bald'){let st='';if(rich>1){const hs=rng(seed+3);
+  if(rich&&!nat&&style!=='bald'){let st='';if(rich>1){const hs=rng(seed+3);
     if(rich>1)for(let i=0;i<9;i++){const a=-.35+i*.09+hs()*.05,x0=33+i*4.2,y0=24+Math.abs(i-4)*1.4;st+=`M${x0.toFixed(1)} ${(y0+7).toFixed(1)}Q${(x0+2+hs()*3).toFixed(1)} ${(y0-2).toFixed(1)} ${(x0+9+i*.4).toFixed(1)} ${(y0-3+hs()*3).toFixed(1)}`}
     s+=`<path d="${st}" stroke="${hairL}" stroke-opacity=".34" stroke-width=".55" fill="none" stroke-linecap="round"/>`}
     s+=`<path d="M${ld<0?31.2:68.8} 36 C${ld<0?31:69} 26 ${ld<0?38:62} 18.6 50 17.6" stroke="${lc}" stroke-opacity="${(.55*lk).toFixed(2)}" stroke-width="1.1" fill="none" stroke-linecap="round"/>`}

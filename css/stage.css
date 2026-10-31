@@ -528,3 +528,26 @@
 .cb .ps-qs:not(.grid),.cb .ps-qs.grid{grid-template-columns:1fr!important;display:grid}
 .cb .ps-opts,.cb .ps-q.pic .ps-opts,#player.ps .cb .ps-q.pic .ps-opts{flex-wrap:wrap!important}
 .cb .ps-opts .ps-o,#player.ps .cb .ps-q.pic .ps-o{min-width:96px!important;flex:1 1 96px!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+
+/* ===== quadro maior mais largo: mais espaço para os quadros internos ===== */
+#player.ps .stage,#player.ps-wide .stage{max-width:none!important;padding-inline:clamp(6px,1.2vw,20px)!important}
+#player.ps .p-head,#player.ps .p-foot .in{max-width:none!important;padding-inline:clamp(8px,1.4vw,24px)}
+#player.ps .step,#player.ps-wide .step{max-width:none!important;width:100%!important;padding:clamp(10px,1.2vw,18px) clamp(8px,1.4vw,20px)!important}
+.cb-pane,.cb-body{min-width:0}
+@media (max-width:700px){
+  #player.ps .stage{padding-inline:4px!important}
+  #player.ps .step{padding:10px 8px!important;border-radius:18px!important}
+  .ps-sec{padding:12px 10px}
+  .cb .ps-opts .ps-o,#player.ps .cb .ps-q.pic .ps-o{min-width:84px!important;flex:1 1 84px!important}
+}
+.ps-pr,.ps-pr-b{max-width:100%;box-sizing:border-box}.ps-pr-b{flex-wrap:wrap}
+/* prática avançada C1/C2 */
+.nu-list{display:flex;flex-direction:column;gap:14px}
+.nu-q,.rw-q{padding:12px 14px}
+.nu-s{display:block;font:800 19px/1.35 system-ui;color:#12315a;margin-bottom:8px}
+.nu-why{margin-top:8px;padding:10px 12px;border-radius:12px;background:#eef5ff;font:600 16px/1.45 system-ui;color:#12315a}
+.nu-why p{margin:3px 0}
+.rw-t{margin:8px 0;font:700 17px/1.4 system-ui}.rw-t mark{background:#fff3b8;padding:1px 6px;border-radius:6px}
+.rw-in{width:100%;box-sizing:border-box;border:2px solid #cfdcf6;border-radius:14px;padding:10px 12px;font:600 18px/1.4 system-ui;resize:vertical}
+.rw-act{margin-top:8px;display:flex;justify-content:flex-end}
+.sm-lines{display:flex;flex-direction:column;gap:6px;margin:8px 0 12px}.sm-lines p{margin:0;font:600 17px/1.4 system-ui}.sm-lines small{color:#5b6f8f}

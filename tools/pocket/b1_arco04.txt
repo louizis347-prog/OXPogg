@@ -1,0 +1,253 @@
+# Arco 4 · Saúde em detalhe
+T: Describing symptoms | Descrever sintomas | clinic | Boston | Dr. Park,m,👨🏻,médico
+K: I've had a sore throat for three days. | Estou com dor de garganta há três dias.
+M: Hoje você descreve seus sintomas ao médico em detalhes.
+D: Dr. Park|Good morning. What brings you in today?|Bom dia. O que o traz aqui hoje?
+D: You|I've had a sore throat for three days, and now I also have a fever.|Estou com dor de garganta há três dias, e agora também tenho febre.
+D: Dr. Park|How high is the fever?|Qual é a temperatura?
+D: You|It was thirty-eight and a half this morning. I've also been coughing a lot.|Estava em trinta e oito e meio hoje de manhã. Também tenho tossido muito.
+D: Dr. Park|Does it hurt when you swallow?|Dói quando você engole?
+D: You|Yes, especially in the morning. And I feel very tired.|Sim, principalmente de manhã. E me sinto muito cansado.
+D: Dr. Park|It sounds like a throat infection. Let me take a look.|Parece uma infecção de garganta. Deixe-me examinar.
+D: You|Is it serious?|É grave?
+V: sore throat|dor de garganta;fever|febre;swallow|engolir;infection|infecção;cough|tossir
+B: I've had a sore throat for {0} days.|Estou com dor de garganta há {0} dias.|three=três;two=dois;five=cinco
+B: It hurts when I {0}.|Dói quando eu {0}.|swallow=engulo;cough=tusso;breathe=respiro
+S: Dr. Park|What brings you in today?|O que o traz aqui hoje?|I've had a sore throat for three days, and now I also have a fever.|Estou com dor de garganta há três dias e agora também tenho febre.
+S: Dr. Park|Does it hurt when you swallow?|Dói quando engole?|Yes, especially in the morning.|Sim, principalmente de manhã.
+R: I've had a sore throat for three days.|Estou com dor de garganta há três dias.
+R: I've also been coughing a lot.|Também tenho tossido muito.
+R: It hurts when I swallow.|Dói quando engulo.
+R: Is it serious?|É grave?
+X: Let me take a look.|Deixe-me examinar.
+C: Nos EUA, o médico começa a consulta com a pergunta "What brings you in today?" e espera uma descrição clara dos sintomas.
+
+T: Understanding a prescription | Entender uma receita | shop | Seattle | Pharmacist Lee,f,👩🏻,farmacêutica
+K: How often should I take it? | Com que frequência devo tomar?
+M: Hoje você tira dúvidas sobre sua receita na farmácia.
+D: Pharmacist Lee|Here's your prescription. These are antibiotics, and this is a throat spray.|Aqui está sua receita. Estes são antibióticos, e este é um spray para a garganta.
+D: You|Thank you. How often should I take the antibiotics?|Obrigado. Com que frequência devo tomar os antibióticos?
+D: Pharmacist Lee|Twice a day, with food, for seven days.|Duas vezes ao dia, com comida, por sete dias.
+D: You|What if I feel better after three days? Can I stop?|E se eu me sentir melhor depois de três dias? Posso parar?
+D: Pharmacist Lee|No, you have to finish all of them, otherwise the infection might come back.|Não, você precisa tomar todos, senão a infecção pode voltar.
+D: You|I see. Are there any side effects?|Entendi. Há efeitos colaterais?
+D: Pharmacist Lee|Some people feel sick to their stomach. If that happens, call your doctor.|Algumas pessoas sentem enjoo. Se isso acontecer, ligue para o médico.
+D: You|Got it. Thank you for explaining everything.|Entendi. Obrigado por explicar tudo.
+V: prescription|receita;antibiotic|antibiótico;side effect|efeito colateral;otherwise|senão;stomach|estômago
+B: Take it twice a day for {0} days.|Tome duas vezes ao dia por {0} dias.|seven=sete;five=cinco;ten=dez
+B: If you feel {0}, call your doctor.|Se você sentir {0}, ligue para o médico.|sick=enjoo;dizzy=tontura;worse=piora
+S: Pharmacist Lee|Take it twice a day, with food.|Tome duas vezes ao dia, com comida.|What if I feel better after three days? Can I stop?|E se eu melhorar em três dias? Posso parar?
+S: Pharmacist Lee|You have to finish all of them.|Você precisa tomar todos.|I see. Are there any side effects?|Entendi. Há efeitos colaterais?
+R: How often should I take the antibiotics?|Com que frequência devo tomar os antibióticos?
+R: Twice a day, with food, for seven days.|Duas vezes ao dia, com comida, por sete dias.
+R: You have to finish all of them.|Você precisa tomar todos.
+R: Are there any side effects?|Há efeitos colaterais?
+X: Got it.|Entendi.
+C: Nos EUA, é importante tomar o antibiótico até o fim, mesmo sentindo-se melhor, para a infecção não voltar.
+
+T: Health insurance | Plano de saúde | office | Chicago | Agent Max,m,👨🏽,atendente
+K: What does my plan cover? | O que meu plano cobre?
+M: Hoje você entende o que seu plano de saúde cobre.
+D: You|Hi, I'd like to understand what my health insurance covers.|Oi, gostaria de entender o que meu plano de saúde cobre.
+D: Agent Max|Sure. Do you have your card with you?|Claro. Você está com seu cartão?
+D: You|Here it is. I need to see a specialist next week.|Aqui está. Preciso consultar um especialista na semana que vem.
+D: Agent Max|You'll need a referral from your regular doctor first.|Você precisará de um encaminhamento do seu médico de família primeiro.
+D: You|And how much would I pay for the visit?|E quanto eu pagaria pela consulta?
+D: Agent Max|Your co-pay is forty dollars, and the insurance pays the rest.|Sua coparticipação é de quarenta dólares, e o plano paga o resto.
+D: You|That's better than I expected. Does it cover tests, too?|É melhor do que eu esperava. Cobre exames também?
+D: Agent Max|Most of them, as long as they're ordered by your doctor.|A maioria, desde que sejam pedidos pelo seu médico.
+V: insurance|seguro;specialist|especialista;referral|encaminhamento;co-pay|coparticipação;cover|cobrir
+B: You'll need a {0} from your regular doctor.|Você precisará de um {0} do seu médico de família.|referral=encaminhamento;letter=carta;form=formulário
+B: Your co-pay is {0} dollars.|Sua coparticipação é de {0} dólares.|forty=quarenta;twenty=vinte;thirty=trinta
+S: Agent Max|Do you have your card with you?|Você está com seu cartão?|Here it is. I need to see a specialist next week.|Aqui está. Preciso ver um especialista na semana que vem.
+S: Agent Max|Your co-pay is forty dollars.|Sua coparticipação é de quarenta dólares.|That's better than I expected.|É melhor do que eu esperava.
+R: What does my health insurance cover?|O que meu plano de saúde cobre?
+R: You'll need a referral from your regular doctor.|Você precisará de encaminhamento do médico de família.
+R: Your co-pay is forty dollars.|Sua coparticipação é de quarenta dólares.
+R: It covers most tests.|Cobre a maioria dos exames.
+X: That's better than I expected.|É melhor do que eu esperava.
+C: Nos EUA, o plano de saúde costuma exigir um encaminhamento antes de consultar especialistas.
+
+T: Emergency room | Pronto-socorro | clinic | Miami | Nurse Tina,f,👩🏾,enfermeira
+K: How long have you been in pain? | Há quanto tempo você está com dor?
+M: Hoje você explica uma dor forte no pronto-socorro.
+D: Nurse Tina|Welcome to the emergency room. What seems to be the problem?|Bem-vindo ao pronto-socorro. Qual parece ser o problema?
+D: You|I fell while I was playing basketball, and now my ankle hurts a lot.|Caí enquanto jogava basquete, e agora meu tornozelo dói muito.
+D: Nurse Tina|How long have you been in pain?|Há quanto tempo você está com dor?
+D: You|About two hours. I tried to walk, but I couldn't put any weight on it.|Cerca de duas horas. Tentei andar, mas não consegui apoiar o pé.
+D: Nurse Tina|On a scale of one to ten, how bad is the pain?|Numa escala de um a dez, qual é a intensidade da dor?
+D: You|About eight. It's swollen, too.|Cerca de oito. Também está inchado.
+D: Nurse Tina|We'll do an X-ray to see if it's broken. Please wait here.|Faremos um raio X para ver se quebrou. Aguarde aqui, por favor.
+D: You|Thank you. How long will the wait be?|Obrigado. Quanto tempo vai demorar a espera?
+V: ankle|tornozelo;swollen|inchado;X-ray|raio X;broken|quebrado;scale|escala
+B: I fell while I was playing {0}.|Caí enquanto jogava {0}.|basketball=basquete;soccer=futebol;tennis=tênis
+B: On a scale of one to ten, the pain is about {0}.|Numa escala de um a dez, a dor é cerca de {0}.|eight=oito;five=cinco;seven=sete
+S: Nurse Tina|What seems to be the problem?|Qual parece ser o problema?|I fell while I was playing basketball, and my ankle hurts.|Caí jogando basquete e meu tornozelo dói.
+S: Nurse Tina|How bad is the pain, from one to ten?|Qual a intensidade da dor, de um a dez?|About eight. It's swollen, too.|Cerca de oito. Também está inchado.
+R: I fell while I was playing basketball.|Caí enquanto jogava basquete.
+R: My ankle hurts a lot.|Meu tornozelo dói muito.
+R: It's swollen, too.|Também está inchado.
+R: How long will the wait be?|Quanto tempo vai demorar a espera?
+X: What seems to be the problem?|Qual parece ser o problema?
+C: Nas emergências dos EUA, as enfermeiras pedem para avaliar a dor numa escala de 1 a 10.
+
+T: A healthy lifestyle | Um estilo de vida saudável | cafe | Portland | Coach Ben,m,👨🏾,treinador
+K: Small habits make a big difference. | Pequenos hábitos fazem grande diferença.
+M: Hoje você planeja hábitos mais saudáveis.
+D: Coach Ben|So, you want to live a healthier life. Where do you want to start?|Então você quer ter uma vida mais saudável. Por onde quer começar?
+D: You|I eat badly and sit all day at work. I'd like to change that.|Como mal e passo o dia sentado no trabalho. Gostaria de mudar isso.
+D: Coach Ben|Small habits make a big difference. For example, you could walk for twenty minutes after lunch.|Pequenos hábitos fazem grande diferença. Por exemplo, você poderia caminhar vinte minutos depois do almoço.
+D: You|That's doable. What about food?|Isso é possível. E a alimentação?
+D: Coach Ben|Try to eat more vegetables and drink less soda. Don't change everything at once.|Tente comer mais legumes e beber menos refrigerante. Não mude tudo de uma vez.
+D: You|I used to drink three sodas a day. I'll start by cutting down to one.|Eu costumava tomar três refrigerantes por dia. Vou começar reduzindo para um.
+D: Coach Ben|Excellent. And sleep is just as important, so aim for seven hours.|Excelente. E o sono é igualmente importante, então busque sete horas.
+D: You|I'll try. Thanks for the advice.|Vou tentar. Obrigado pelo conselho.
+V: lifestyle|estilo de vida;habit|hábito;doable|possível de fazer;soda|refrigerante;cut down|reduzir
+B: You could walk for {0} minutes after lunch.|Você poderia caminhar {0} minutos depois do almoço.|twenty=vinte;ten=dez;thirty=trinta
+B: I used to drink {0} sodas a day.|Eu costumava tomar {0} refrigerantes por dia.|three=três;two=dois;four=quatro
+S: Coach Ben|Where do you want to start?|Por onde quer começar?|I eat badly and sit all day. I'd like to change that.|Como mal e fico sentado o dia todo. Quero mudar isso.
+S: Coach Ben|Try to eat more vegetables and drink less soda.|Tente comer mais legumes e beber menos refrigerante.|I used to drink three sodas a day. I'll start with one.|Eu tomava três por dia. Vou começar com um.
+R: Small habits make a big difference.|Pequenos hábitos fazem grande diferença.
+R: Don't change everything at once.|Não mude tudo de uma vez.
+R: I used to drink three sodas a day.|Eu costumava tomar três refrigerantes por dia.
+R: Aim for seven hours of sleep.|Busque sete horas de sono.
+X: That's doable.|Isso é possível.
+C: Nos EUA, "start small" (comece pequeno) é um conselho comum para criar hábitos saudáveis duradouros.
+
+T: Talking about stress | Falar sobre estresse | cafe | Seattle | Dr. Kim,f,👩🏻,psicóloga
+K: I've been feeling overwhelmed lately. | Tenho me sentido sobrecarregado ultimamente.
+M: Hoje você fala sobre estresse e como lidar com ele.
+D: Dr. Kim|You told me you've been feeling stressed. Can you tell me more?|Você me disse que tem se sentido estressado. Pode me contar mais?
+D: You|I've been feeling overwhelmed lately. I have too much work, and I can't sleep well.|Tenho me sentido sobrecarregado ultimamente. Tenho trabalho demais e não durmo bem.
+D: Dr. Kim|How long has this been going on?|Há quanto tempo isso acontece?
+D: You|For about two months, since my boss gave me extra projects.|Há cerca de dois meses, desde que meu chefe me deu projetos extras.
+D: Dr. Kim|Have you talked to him about it?|Você já conversou com ele sobre isso?
+D: You|Not yet. I was afraid he'd think I couldn't handle the work.|Ainda não. Tinha medo de que ele pensasse que eu não dava conta do trabalho.
+D: Dr. Kim|Asking for help is a sign of strength, not weakness.|Pedir ajuda é sinal de força, não de fraqueza.
+D: You|You're right. I'll talk to him this week.|Você tem razão. Vou conversar com ele esta semana.
+V: overwhelmed|sobrecarregado;stressed|estressado;weakness|fraqueza;strength|força;handle|dar conta
+B: I've been feeling {0} lately.|Tenho me sentido {0} ultimamente.|overwhelmed=sobrecarregado;tired=cansado;stressed=estressado
+B: Asking for help is a sign of {0}.|Pedir ajuda é sinal de {0}.|strength=força;courage=coragem;wisdom=sabedoria
+S: Dr. Kim|Can you tell me more?|Pode me contar mais?|I've been feeling overwhelmed lately. I have too much work.|Tenho me sentido sobrecarregado. Tenho trabalho demais.
+S: Dr. Kim|Have you talked to your boss?|Já conversou com seu chefe?|Not yet. I was afraid he'd think I couldn't handle it.|Ainda não. Tinha medo de que pensasse que eu não dava conta.
+R: I've been feeling overwhelmed lately.|Tenho me sentido sobrecarregado ultimamente.
+R: I can't sleep well.|Não durmo bem.
+R: Asking for help is a sign of strength.|Pedir ajuda é sinal de força.
+R: I'll talk to him this week.|Vou conversar com ele esta semana.
+X: You're right.|Você tem razão.
+C: Falar abertamente sobre saúde mental é cada vez mais comum e aceito nos EUA.
+
+T: At the dentist today | No dentista | clinic | Austin | Dr. Reed,m,👨🏼,dentista
+K: Try to floss every day. | Tente usar fio dental todo dia.
+M: Hoje você faz uma consulta no dentista.
+D: Dr. Reed|Open wide, please. When was your last checkup?|Abra bem, por favor. Quando foi sua última consulta?
+D: You|About two years ago. I've been meaning to come, but I've been very busy.|Há cerca de dois anos. Venho querendo vir, mas estive muito ocupado.
+D: Dr. Reed|I see a small cavity here. It's not serious, but we should fix it soon.|Vejo uma pequena cárie aqui. Não é grave, mas devemos tratá-la logo.
+D: You|Will it hurt?|Vai doer?
+D: Dr. Reed|Not much. I'll give you a local anesthetic so you won't feel anything.|Não muito. Vou dar uma anestesia local para você não sentir nada.
+D: You|That's a relief. How often should I come?|Que alívio. Com que frequência devo vir?
+D: Dr. Reed|Twice a year. And try to floss every day.|Duas vezes por ano. E tente usar fio dental todo dia.
+D: You|I'll try. I know I should do it more often.|Vou tentar. Sei que deveria fazer isso mais vezes.
+V: checkup|consulta de rotina;cavity|cárie;anesthetic|anestesia;floss|usar fio dental;relief|alívio
+B: When was your last {0}?|Quando foi sua última {0}?|checkup=consulta;visit=visita;test=exame
+B: Twice a {0}, and floss every day.|Duas vezes por {0}, e use fio dental todo dia.|year=ano;month=mês;week=semana
+S: Dr. Reed|When was your last checkup?|Quando foi sua última consulta?|About two years ago. I've been very busy.|Há uns dois anos. Estive muito ocupado.
+S: Dr. Reed|I see a small cavity.|Vejo uma pequena cárie.|Will it hurt?|Vai doer?
+R: When was your last checkup?|Quando foi sua última consulta?
+R: I see a small cavity here.|Vejo uma pequena cárie aqui.
+R: Will it hurt?|Vai doer?
+R: Try to floss every day.|Tente usar fio dental todo dia.
+X: That's a relief.|Que alívio.
+C: Nos EUA, a consulta de rotina no dentista é recomendada duas vezes por ano.
+
+T: Visiting a sick friend | Visitar um amigo doente | living | Denver | Friend Joe,m,👨🏼,amigo
+K: Is there anything I can do for you? | Posso fazer algo por você?
+M: Hoje você visita um amigo que está doente.
+D: You|Hey, Joe. I heard you've been sick all week. How are you feeling?|Ei, Joe. Soube que você está doente a semana toda. Como você está?
+D: Friend Joe|Better than yesterday, but still weak. Thanks for coming.|Melhor que ontem, mas ainda fraco. Obrigado por vir.
+D: You|I brought some soup and fruit. Is there anything I can do for you?|Trouxe sopa e frutas. Posso fazer algo por você?
+D: Friend Joe|Actually, yes. Could you pick up my medicine from the pharmacy?|Na verdade, sim. Você poderia buscar meu remédio na farmácia?
+D: You|Of course. I'll go right now. Is there anything else you need?|Claro. Vou agora mesmo. Precisa de mais alguma coisa?
+D: Friend Joe|Maybe some tea. And please don't stay too close. I don't want you to catch it.|Talvez chá. E por favor não fique muito perto. Não quero que você pegue.
+D: You|Don't worry. I've had the flu shot this year.|Não se preocupe. Tomei a vacina da gripe este ano.
+D: Friend Joe|You're a great friend. Thanks.|Você é um ótimo amigo. Obrigado.
+V: weak|fraco;catch|pegar;flu shot|vacina da gripe;pick up|buscar;medicine|remédio
+B: I brought some {0} and fruit.|Trouxe {0} e frutas.|soup=sopa;tea=chá;juice=suco
+B: I don't want you to {0} it.|Não quero que você {0}.|catch=pegue;get=pegue;have=tenha
+S: Friend Joe|Better than yesterday, but still weak.|Melhor que ontem, mas ainda fraco.|Is there anything I can do for you?|Posso fazer algo por você?
+S: Friend Joe|Could you pick up my medicine?|Poderia buscar meu remédio?|Of course. I'll go right now.|Claro. Vou agora mesmo.
+R: How are you feeling?|Como você está se sentindo?
+R: Is there anything I can do for you?|Posso fazer algo por você?
+R: Could you pick up my medicine?|Poderia buscar meu remédio?
+R: I've had the flu shot this year.|Tomei a vacina da gripe este ano.
+X: Thanks for coming.|Obrigado por vir.
+C: Levar sopa ou comida a um amigo doente é um gesto de carinho muito comum nos EUA.
+
+T: A second opinion | Uma segunda opinião | clinic | New York | Dr. Hale,f,👩🏼,médica
+K: I'd like to get a second opinion. | Gostaria de pedir uma segunda opinião.
+M: Hoje você pede uma segunda opinião médica.
+D: You|Dr. Hale, my previous doctor told me that I need surgery, and I'd like a second opinion.|Dra. Hale, meu médico anterior me disse que preciso de cirurgia, e gostaria de uma segunda opinião.
+D: Dr. Hale|That's perfectly reasonable. Do you have your test results with you?|É perfeitamente razoável. Você trouxe os resultados dos exames?
+D: You|Yes, and the X-rays. He said the problem was in my knee.|Sim, e os raios X. Ele disse que o problema estava no joelho.
+D: Dr. Hale|Let me look. Hmm, I think we could try physical therapy before surgery.|Deixe-me ver. Hmm, acho que poderíamos tentar fisioterapia antes da cirurgia.
+D: You|Would that really work?|Isso realmente funcionaria?
+D: Dr. Hale|In many cases, yes. If it doesn't, we can discuss surgery later.|Em muitos casos, sim. Se não funcionar, podemos discutir a cirurgia depois.
+D: You|That's a relief. I wasn't looking forward to an operation.|Que alívio. Eu não estava ansioso por uma operação.
+D: Dr. Hale|Let's start next week. I'll give you a list of exercises.|Vamos começar na semana que vem. Darei uma lista de exercícios.
+V: surgery|cirurgia;result|resultado;knee|joelho;physical therapy|fisioterapia;operation|operação
+B: He said the problem was in my {0}.|Ele disse que o problema estava no meu {0}.|knee=joelho;back=costas;shoulder=ombro
+B: We could try physical therapy {0} surgery.|Poderíamos tentar fisioterapia {0} da cirurgia.|before=antes;after=depois;instead of=em vez
+S: Dr. Hale|Do you have your test results?|Você trouxe os resultados dos exames?|Yes, and the X-rays. He said the problem was in my knee.|Sim, e os raios X. Ele disse que o problema era no joelho.
+S: Dr. Hale|We could try physical therapy first.|Poderíamos tentar fisioterapia primeiro.|That's a relief. I wasn't looking forward to surgery.|Que alívio. Eu não queria cirurgia.
+R: I'd like a second opinion.|Gostaria de uma segunda opinião.
+R: He said I need surgery.|Ele disse que preciso de cirurgia.
+R: We could try physical therapy before surgery.|Poderíamos tentar fisioterapia antes da cirurgia.
+R: If it doesn't work, we can discuss surgery later.|Se não funcionar, discutimos a cirurgia depois.
+X: That's perfectly reasonable.|É perfeitamente razoável.
+C: Pedir uma segunda opinião médica é um direito comum e bem aceito nos EUA.
+
+T: Getting fit | Entrar em forma | gym | Los Angeles | Trainer Rex,m,👨🏽,personal
+K: I want to build strength and lose weight. | Quero ganhar força e perder peso.
+M: Hoje você começa um plano de treino.
+D: Trainer Rex|Welcome to the gym! What are your fitness goals?|Bem-vindo à academia! Quais são seus objetivos?
+D: You|I want to build strength and lose a few kilos, but I've never been to a gym before.|Quero ganhar força e perder alguns quilos, mas nunca fui a uma academia.
+D: Trainer Rex|No problem. We'll start slowly. How many days a week can you come?|Sem problema. Começaremos devagar. Quantos dias por semana você pode vir?
+D: You|Three, probably. Monday, Wednesday and Friday after work.|Três, provavelmente. Segunda, quarta e sexta depois do trabalho.
+D: Trainer Rex|Perfect. If you stay consistent, you'll see results in about a month.|Perfeito. Se você for constante, verá resultados em cerca de um mês.
+D: You|That's encouraging. Should I change my diet, too?|Isso é animador. Devo mudar a dieta também?
+D: Trainer Rex|It helps a lot. We'll talk about it after your first week.|Ajuda muito. Falaremos sobre isso depois da sua primeira semana.
+D: You|Great. I'm ready to begin!|Ótimo. Estou pronto para começar!
+V: goals|objetivos;strength|força;consistent|constante;encouraging|animador;diet|dieta
+B: I want to build {0} and lose a few kilos.|Quero ganhar {0} e perder alguns quilos.|strength=força;muscle=músculo;energy=energia
+B: If you stay consistent, you'll see results in about a {0}.|Se você for constante, verá resultados em cerca de um {0}.|month=mês;week=semana;year=ano
+S: Trainer Rex|What are your fitness goals?|Quais são seus objetivos?|I want to build strength and lose a few kilos.|Quero ganhar força e perder alguns quilos.
+S: Trainer Rex|How many days a week can you come?|Quantos dias por semana pode vir?|Three, probably. Monday, Wednesday and Friday.|Três, provavelmente. Segunda, quarta e sexta.
+R: What are your fitness goals?|Quais são seus objetivos?
+R: I've never been to a gym before.|Nunca fui a uma academia.
+R: If you stay consistent, you'll see results.|Se for constante, verá resultados.
+R: I'm ready to begin.|Estou pronto para começar.
+X: That's encouraging.|Isso é animador.
+C: Muitas academias americanas oferecem a primeira semana grátis e uma avaliação com personal trainer.
+
+T: Staying healthy at work | Manter a saúde no trabalho | office | Chicago | HR Anna,f,👩🏼,RH
+K: Take a break every hour. | Faça uma pausa a cada hora.
+M: Hoje você aprende dicas de saúde para o trabalho.
+D: HR Anna|Our wellness program starts next month, and I'd like to tell you about it.|Nosso programa de bem-estar começa no mês que vem, e gostaria de contar sobre ele.
+D: You|That sounds interesting. What does it include?|Parece interessante. O que inclui?
+D: HR Anna|Free yoga classes, healthy snacks, and a meditation room.|Aulas de ioga grátis, lanches saudáveis e uma sala de meditação.
+D: You|I'd love to try yoga. I've heard it helps with back pain.|Adoraria tentar ioga. Ouvi dizer que ajuda com dor nas costas.
+D: HR Anna|It really does. We also encourage everyone to take a break every hour.|De fato ajuda. Também incentivamos todos a fazer uma pausa a cada hora.
+D: You|That's smart. I usually sit for four hours without moving.|É inteligente. Costumo ficar sentado quatro horas sem me mexer.
+D: HR Anna|That's exactly what we want to change. Your health comes first.|É exatamente isso que queremos mudar. Sua saúde vem primeiro.
+D: You|I'll sign up today. Thank you for this initiative.|Vou me inscrever hoje. Obrigado por esta iniciativa.
+V: wellness|bem-estar;snack|lanche;meditation|meditação;back pain|dor nas costas;encourage|incentivar
+B: Free yoga {0}, healthy snacks and a meditation room.|{0} de ioga grátis, lanches saudáveis e uma sala de meditação.|classes=Aulas;lessons=Lições;sessions=Sessões
+B: Take a break every {0}.|Faça uma pausa a cada {0}.|hour=hora;day=dia;two hours=duas horas
+S: HR Anna|Our wellness program starts next month.|Nosso programa de bem-estar começa no mês que vem.|That sounds interesting. What does it include?|Parece interessante. O que inclui?
+S: HR Anna|We encourage everyone to take a break every hour.|Incentivamos todos a fazer uma pausa a cada hora.|That's smart. I usually sit for four hours.|É inteligente. Costumo ficar sentado quatro horas.
+R: What does the wellness program include?|O que o programa de bem-estar inclui?
+R: Yoga helps with back pain.|Ioga ajuda com dor nas costas.
+R: Take a break every hour.|Faça uma pausa a cada hora.
+R: Your health comes first.|Sua saúde vem primeiro.
+X: Your health comes first.|Sua saúde vem primeiro.
+C: Muitas empresas americanas oferecem programas de bem-estar com ioga, academia e apoio psicológico.

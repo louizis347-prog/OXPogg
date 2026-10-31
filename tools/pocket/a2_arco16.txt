@@ -1,0 +1,230 @@
+# Arco 16 · Viagens e hospedagem
+T: Booking a flight | Reservar uma passagem | hall | New York | Dan,m,🧑🏽,agente
+K: I would like to book a flight to Chicago. | Eu gostaria de reservar um voo para Chicago.
+M: Hoje você reserva um voo e escolhe data e preço.
+D: Dan|Good morning. How can I help you?|Bom dia. Como posso ajudar?
+D: You|I would like to book a flight to Chicago.|Eu gostaria de reservar um voo para Chicago.
+D: Dan|When do you want to leave?|Quando você quer partir?
+D: You|Next Friday, and I will return on Sunday.|Na próxima sexta, e volto no domingo.
+D: Dan|There is a morning flight and an evening flight.|Tem um voo de manhã e um à noite.
+D: You|How much is the morning one?|Quanto custa o da manhã?
+D: Dan|It is two hundred dollars round trip.|São duzentos dólares ida e volta.
+D: You|Perfect. I will take it.|Perfeito. Vou levar.
+V: book|reservar;flight|voo;return|voltar;round trip|ida e volta;evening|noite
+B: I would like to book a {0}.|Eu gostaria de reservar {0}.|flight=um voo;room=um quarto;table=uma mesa
+B: I will return on {0}.|Volto {0}.|Sunday=no domingo;Monday=na segunda;Friday=na sexta
+S: Dan|How can I help you?|Como posso ajudar?|I would like to book a flight to Chicago.|Gostaria de reservar um voo para Chicago.
+S: Dan|When do you want to leave?|Quando quer partir?|Next Friday. I will return on Sunday.|Sexta que vem. Volto no domingo.
+R: I would like to book a flight.|Gostaria de reservar um voo.
+R: I will return on Sunday.|Volto no domingo.
+R: It is two hundred dollars round trip.|São duzentos dólares ida e volta.
+R: I will take it.|Vou levar.
+X: Round trip.|Ida e volta.
+C: Nos EUA, voos domésticos costumam ser mais baratos se comprados com algumas semanas de antecedência.
+
+T: At the check-in desk | Fazer o check-in e despachar mala | airport | Los Angeles | Jo,f,👩🏿,atendente
+K: I would like to check one bag. | Eu gostaria de despachar uma mala.
+M: Hoje você faz o check-in e pergunta sobre bagagem.
+D: Jo|Good afternoon. May I see your passport?|Boa tarde. Posso ver seu passaporte?
+D: You|Here it is. I would like to check one bag.|Aqui está. Eu gostaria de despachar uma mala.
+D: Jo|Please put it on the scale. It is twenty kilos.|Coloque na balança. São vinte quilos.
+D: You|Is that okay?|Está tudo bem?
+D: Jo|Yes, the limit is twenty-three. Do you prefer a window or an aisle seat?|Sim, o limite é vinte e três. Prefere janela ou corredor?
+D: You|A window seat, please.|Janela, por favor.
+D: Jo|Here is your boarding pass. Boarding is at gate twelve.|Aqui está seu cartão de embarque. O embarque é no portão doze.
+D: You|Thank you. What time does boarding start?|Obrigado. A que horas começa o embarque?
+V: check|despachar;scale|balança;limit|limite;aisle|corredor;boarding pass|cartão de embarque
+B: I would like to check {0}.|Eu gostaria de despachar {0}.|one bag=uma mala;two bags=duas malas;this suitcase=esta mala
+B: A {0} seat, please.|Um assento de {0}, por favor.|window=janela;aisle=corredor;front=frente
+S: Jo|May I see your passport?|Posso ver seu passaporte?|Here it is. I would like to check one bag.|Aqui está. Gostaria de despachar uma mala.
+S: Jo|Window or aisle?|Janela ou corredor?|A window seat, please.|Janela, por favor.
+R: I would like to check one bag.|Gostaria de despachar uma mala.
+R: The limit is twenty-three kilos.|O limite é vinte e três quilos.
+R: A window seat, please.|Janela, por favor.
+R: Boarding is at gate twelve.|O embarque é no portão doze.
+X: Here is your boarding pass.|Aqui está seu cartão de embarque.
+C: Nos EUA, muitas companhias cobram para despachar malas, mesmo em voos domésticos.
+
+T: Through security | Passar pela segurança do aeroporto | airport | Atlanta | Officer Cole,m,🧑🏽,guarda
+K: Please take off your shoes. | Por favor, tire os sapatos.
+M: Hoje você entende as instruções da segurança.
+D: Officer Cole|Please take off your shoes and your belt.|Tire os sapatos e o cinto, por favor.
+D: You|Okay. Should I take out my laptop too?|Ok. Devo tirar meu notebook também?
+D: Officer Cole|Yes, put it in a separate tray.|Sim, coloque em uma bandeja separada.
+D: You|Do I need to take out liquids?|Preciso tirar os líquidos?
+D: Officer Cole|Yes, in a clear bag. No bottles over one hundred milliliters.|Sim, em um saco transparente. Nada de frascos acima de cem mililitros.
+D: You|I only have a small bottle of water. It is empty.|Só tenho uma garrafinha de água. Está vazia.
+D: Officer Cole|That is fine. Walk through, please.|Tudo bem. Passe, por favor.
+D: You|Thank you. Have a nice day.|Obrigado. Tenha um bom dia.
+V: security|segurança;belt|cinto;tray|bandeja;liquids|líquidos;empty|vazio
+B: Please take off your {0}.|Por favor, tire {0}.|shoes=os sapatos;belt=o cinto;jacket=a jaqueta
+B: Should I take out my {0}?|Devo tirar {0}?|laptop=meu notebook;phone=meu celular;keys=minhas chaves
+S: Officer Cole|Please take off your shoes.|Tire os sapatos.|Should I take out my laptop too?|Devo tirar meu notebook também?
+S: Officer Cole|Put it in a tray.|Coloque numa bandeja.|Do I need to take out liquids?|Preciso tirar os líquidos?
+R: Please take off your shoes.|Por favor, tire os sapatos.
+R: Put it in a separate tray.|Coloque numa bandeja separada.
+R: Liquids go in a clear bag.|Líquidos vão em saco transparente.
+R: Walk through, please.|Passe, por favor.
+X: Walk through, please.|Passe, por favor.
+C: Nos aeroportos americanos, é preciso tirar sapatos e notebooks para a máquina de raio X, e a fila pode ser longa.
+
+T: The flight is delayed | Lidar com um atraso de voo | airport | Chicago | Jo,f,👩🏿,atendente
+K: My flight was delayed. | Meu voo foi atrasado.
+M: Hoje você entende um atraso e pede alternativas.
+D: You|Excuse me. My flight was delayed. What happened?|Com licença. Meu voo foi atrasado. O que houve?
+D: Jo|There is bad weather, so it will leave at nine.|Há mau tempo, então vai sair às nove.
+D: You|That is two hours late. I will miss my connection.|São duas horas de atraso. Vou perder minha conexão.
+D: Jo|Let me check. I can put you on the next flight to Denver.|Deixe-me ver. Posso colocar você no próximo voo para Denver.
+D: You|When does it leave?|Quando sai?
+D: Jo|At eleven. You will arrive at midnight.|Às onze. Você chega à meia-noite.
+D: You|Okay. Could you give me a meal voucher?|Ok. Poderia me dar um vale-refeição?
+D: Jo|Of course. Here you are. Sorry for the delay.|Claro. Aqui está. Desculpe o atraso.
+V: delayed|atrasado;weather|tempo;miss|perder;connection|conexão;voucher|vale
+B: My flight was {0}.|Meu voo foi {0}.|delayed=atrasado;cancelled=cancelado;late=tardio
+B: It will leave at {0}.|Vai sair às {0}.|nine=nove;eleven=onze;noon=meio-dia
+S: Jo|The flight will leave at nine.|O voo sai às nove.|I will miss my connection. What can I do?|Vou perder a conexão. O que posso fazer?
+S: Jo|I can put you on the next flight.|Posso colocar você no próximo voo.|Thank you. When does it leave?|Obrigado. Quando sai?
+R: My flight was delayed.|Meu voo foi atrasado.
+R: I will miss my connection.|Vou perder minha conexão.
+R: I can put you on the next flight.|Posso colocar você no próximo voo.
+R: Sorry for the delay.|Desculpe o atraso.
+X: Sorry for the delay.|Desculpe o atraso.
+C: Em voos nos EUA, atrasos por clima são comuns no inverno, e as companhias costumam oferecer vales de refeição em atrasos longos.
+
+T: A room for two nights | Reservar um quarto de hotel | hall | Miami | Lia,f,👩🏽,recepcionista
+K: Do you have a room available? | Vocês têm um quarto disponível?
+M: Hoje você reserva um quarto e pergunta o que está incluído.
+D: You|Hello. Do you have a room available?|Olá. Vocês têm um quarto disponível?
+D: Lia|Yes. For how many nights?|Sim. Por quantas noites?
+D: You|Two nights, for two people.|Duas noites, para duas pessoas.
+D: Lia|A double room is ninety dollars a night.|Um quarto de casal custa noventa dólares a noite.
+D: You|Is breakfast included?|O café da manhã está incluído?
+D: Lia|Yes, from seven to ten, on the first floor.|Sim, das sete às dez, no primeiro andar.
+D: You|Does the room have Wi-Fi and air conditioning?|O quarto tem Wi-Fi e ar-condicionado?
+D: Lia|Both are free. Would you like to book it?|Os dois são grátis. Quer reservar?
+V: available|disponível;nights|noites;double|de casal;included|incluído;floor|andar
+B: Do you have a {0} available?|Vocês têm {0} disponível?|room=um quarto;table=uma mesa;taxi=um táxi
+B: Is {0} included?|{0} está incluído?|breakfast=O café da manhã;Wi-Fi=O Wi-Fi;parking=O estacionamento
+S: Lia|For how many nights?|Por quantas noites?|Two nights, for two people.|Duas noites, para duas pessoas.
+S: Lia|It is ninety dollars a night.|São noventa dólares a noite.|Is breakfast included?|O café da manhã está incluído?
+R: Do you have a room available?|Vocês têm um quarto disponível?
+R: Two nights, for two people.|Duas noites, para duas pessoas.
+R: Is breakfast included?|O café da manhã está incluído?
+R: Would you like to book it?|Quer reservar?
+X: For how many nights?|Por quantas noites?
+C: Nos hotéis americanos, o horário de check-out costuma ser até as onze da manhã.
+
+T: Checking in at the hotel | Fazer check-in no hotel | hall | Boston | Sam,m,🧑🏻,recepcionista
+K: I have a reservation under the name Silva. | Tenho uma reserva no nome Silva.
+M: Hoje você faz o check-in e pergunta sobre o quarto.
+D: You|Good evening. I have a reservation under the name Silva.|Boa noite. Tenho uma reserva no nome Silva.
+D: Sam|Let me check. Yes, two nights. May I see your ID?|Deixe-me ver. Sim, duas noites. Posso ver seu documento?
+D: You|Here you are. What floor is the room on?|Aqui está. Em que andar fica o quarto?
+D: Sam|On the fifth floor, room five twelve.|No quinto andar, quarto quinhentos e doze.
+D: You|What time is checkout?|A que horas é o check-out?
+D: Sam|At eleven. Here are your keys.|Às onze. Aqui estão suas chaves.
+D: You|Could I have a late checkout, please?|Poderia fazer o check-out mais tarde?
+D: Sam|Until noon is fine.|Até meio-dia está bem.
+V: reservation|reserva;under|em nome de;checkout|saída;keys|chaves;late|tarde
+B: I have a reservation under the name {0}.|Tenho uma reserva no nome {0}.|Silva=Silva;Brown=Brown;Lee=Lee
+B: Could I have a late {0}?|Poderia ter um {0} mais tarde?|checkout=check-out;breakfast=café da manhã;dinner=jantar
+S: Sam|May I see your ID?|Posso ver seu documento?|Here you are. I have a reservation.|Aqui está. Tenho uma reserva.
+S: Sam|Checkout is at eleven.|O check-out é às onze.|Could I have a late checkout?|Poderia fazer mais tarde?
+R: I have a reservation.|Tenho uma reserva.
+R: What floor is the room on?|Em que andar fica o quarto?
+R: What time is checkout?|A que horas é o check-out?
+R: Could I have a late checkout?|Poderia fazer check-out mais tarde?
+X: Here are your keys.|Aqui estão suas chaves.
+C: Muitos hotéis americanos pedem um cartão de crédito no check-in como garantia, mesmo se o quarto já está pago.
+
+T: Turn left at the corner | Pedir e entender direções a pé | street | Denver | Rosa,f,👩🏽,moradora
+K: Go straight and turn left at the corner. | Siga em frente e vire à esquerda na esquina.
+M: Hoje você pede e entende direções com precisão.
+D: You|Excuse me. How do I get to the museum?|Com licença. Como chego ao museu?
+D: Rosa|Go straight for two blocks and turn left at the corner.|Siga em frente por duas quadras e vire à esquerda na esquina.
+D: You|Is it far from here?|Fica longe daqui?
+D: Rosa|No, about ten minutes on foot.|Não, uns dez minutos a pé.
+D: You|Do I cross the bridge?|Eu atravesso a ponte?
+D: Rosa|No. The museum is across from the park, next to the bank.|Não. O museu fica em frente ao parque, ao lado do banco.
+D: You|Got it. Thank you very much!|Entendi. Muito obrigado!
+D: Rosa|You are welcome. Enjoy your visit!|De nada. Aproveite a visita!
+V: straight|em frente;corner|esquina;cross|atravessar;bridge|ponte;across from|em frente a
+B: Go straight and turn {0}.|Siga em frente e vire {0}.|left=à esquerda;right=à direita;back=de volta
+B: It is {0} the park.|Fica {0} o parque.|across from=em frente ao;next to=ao lado do;behind=atrás do
+S: Rosa|Can I help you?|Posso ajudar?|How do I get to the museum?|Como chego ao museu?
+S: Rosa|Go straight and turn left.|Siga em frente e vire à esquerda.|Is it far from here?|Fica longe daqui?
+R: How do I get to the museum?|Como chego ao museu?
+R: Go straight and turn left at the corner.|Siga em frente e vire à esquerda na esquina.
+R: It is across from the park.|Fica em frente ao parque.
+R: It is ten minutes on foot.|São dez minutos a pé.
+X: Enjoy your visit!|Aproveite a visita!
+C: Nas cidades americanas, as ruas formam quadras regulares, e é comum dar direções contando "blocks".
+
+T: Renting a car | Alugar um carro | street | Phoenix | Gus,m,🧑🏼,atendente
+K: I would like to rent a car for three days. | Eu gostaria de alugar um carro por três dias.
+M: Hoje você aluga um carro e pergunta sobre seguro e combustível.
+D: You|Hello. I would like to rent a car for three days.|Olá. Eu gostaria de alugar um carro por três dias.
+D: Gus|Sure. Do you have a driver's license?|Claro. Você tem carteira de motorista?
+D: You|Yes, here it is. How much is a small car?|Sim, aqui está. Quanto custa um carro pequeno?
+D: Gus|Forty dollars a day, plus insurance.|Quarenta dólares por dia, mais o seguro.
+D: You|Is the gas included?|A gasolina está incluída?
+D: Gus|No. Please return it with a full tank.|Não. Devolva com o tanque cheio.
+D: You|Okay. Where do I return the car?|Ok. Onde devolvo o carro?
+D: Gus|Here, by Friday at five. Here are the keys.|Aqui, até sexta às cinco. Aqui estão as chaves.
+V: rent|alugar;license|carteira de motorista;insurance|seguro;gas|gasolina;tank|tanque
+B: I would like to rent a {0}.|Eu gostaria de alugar {0}.|car=um carro;bike=uma bicicleta;boat=um barco
+B: Please return it with a {0}.|Devolva com {0}.|full tank=o tanque cheio;clean seat=o banco limpo;key=a chave
+S: Gus|Do you have a license?|Você tem carteira?|Yes, here it is. How much is a small car?|Sim, aqui está. Quanto custa um carro pequeno?
+S: Gus|Is that okay?|Está bem?|Is the gas included?|A gasolina está incluída?
+R: I would like to rent a car.|Gostaria de alugar um carro.
+R: Forty dollars a day, plus insurance.|Quarenta dólares por dia, mais seguro.
+R: Return it with a full tank.|Devolva com o tanque cheio.
+R: Here are the keys.|Aqui estão as chaves.
+X: Plus insurance.|Mais seguro.
+C: Nos EUA, para alugar um carro, normalmente é preciso ter pelo menos 21 anos e um cartão de crédito.
+
+T: Taking the subway | Usar o metrô | station | New York | Sam,m,🧑🏻,funcionário
+K: Which line goes to Brooklyn? | Qual linha vai para o Brooklyn?
+M: Hoje você compra um cartão e escolhe a linha certa.
+D: You|Excuse me. Which line goes to Brooklyn?|Com licença. Qual linha vai para o Brooklyn?
+D: Sam|Take the blue line and get off at the third stop.|Pegue a linha azul e desça na terceira parada.
+D: You|How much is a ticket?|Quanto custa um bilhete?
+D: Sam|Three dollars. You can also buy a weekly card.|Três dólares. Você também pode comprar um cartão semanal.
+D: You|How does the machine work?|Como funciona a máquina?
+D: Sam|Choose your card, insert money and take the receipt.|Escolha o cartão, insira o dinheiro e pegue o recibo.
+D: You|And which direction is it?|E qual é o sentido?
+D: Sam|Follow the signs for downtown.|Siga as placas para o centro.
+V: line|linha;get off|descer;stop|parada;weekly|semanal;direction|sentido
+B: Take the {0} line.|Pegue a linha {0}.|blue=azul;red=vermelha;green=verde
+B: Get off at the {0} stop.|Desça na {0} parada.|third=terceira;second=segunda;last=última
+S: Sam|Take the blue line.|Pegue a linha azul.|How much is a ticket?|Quanto custa um bilhete?
+S: Sam|Get off at the third stop.|Desça na terceira parada.|Which direction is downtown?|Qual é o sentido do centro?
+R: Which line goes to Brooklyn?|Qual linha vai para o Brooklyn?
+R: Get off at the third stop.|Desça na terceira parada.
+R: You can buy a weekly card.|Você pode comprar um cartão semanal.
+R: Follow the signs for downtown.|Siga as placas para o centro.
+X: Which direction?|Qual sentido?
+C: O metrô de Nova York funciona 24 horas por dia, e muita gente usa um cartão recarregável.
+
+T: A trip I need to plan | Desafio do arco: planejar uma viagem | hall | Seattle | Gina,f,👩🏻,amiga
+K: I am planning a trip to Boston. | Estou planejando uma viagem para Boston.
+M: Desafio: planeje transporte, hotel e roteiro.
+D: Gina|I heard you are planning a trip. Where to?|Soube que está planejando uma viagem. Para onde?
+D: You|To Boston, for four days in October.|Para Boston, por quatro dias em outubro.
+D: Gina|How are you going to get there?|Como você vai chegar lá?
+D: You|By plane. I already booked a flight for Friday morning.|De avião. Já reservei um voo para sexta de manhã.
+D: Gina|And where will you stay?|E onde você vai ficar?
+D: You|In a small hotel near the station, with breakfast included.|Num hotelzinho perto da estação, com café da manhã.
+D: Gina|What do you want to see?|O que você quer ver?
+D: You|The old city, two museums and a baseball game.|A cidade velha, dois museus e um jogo de beisebol.
+V: planning|planejando;booked|reservei;stay|ficar hospedado;baseball|beisebol;October|outubro
+B: I am planning a trip to {0}.|Estou planejando uma viagem para {0}.|Boston=Boston;Miami=Miami;Seattle=Seattle
+B: I will stay in a {0}.|Vou ficar num {0}.|small hotel=hotelzinho;hostel=albergue;friend's house=casa de um amigo
+S: Gina|Where are you going?|Para onde vai?|I am planning a trip to Boston.|Estou planejando uma viagem para Boston.
+S: Gina|How will you get there?|Como vai chegar?|By plane. I already booked a flight.|De avião. Já reservei um voo.
+R: I am planning a trip to Boston.|Estou planejando uma viagem para Boston.
+R: I already booked a flight.|Já reservei um voo.
+R: I will stay in a small hotel.|Vou ficar num hotelzinho.
+R: I want to see two museums.|Quero ver dois museus.
+X: Where to?|Para onde?
+C: Boston é uma das cidades mais históricas dos EUA e dá para conhecer muita coisa a pé.

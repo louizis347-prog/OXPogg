@@ -1,0 +1,34 @@
+/* Barra do topo: cápsula escura com indicador em movimento */
+.top .nav{background:linear-gradient(135deg,#0B4F5A,#0B7C88 60%,#13A39B);box-shadow:0 14px 26px -14px rgba(8,80,90,.7),inset 0 1px 0 rgba(255,255,255,.25);backdrop-filter:none;padding:5px;overflow:hidden}
+.top .nav::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.22) 50%,transparent 65%);transform:translateX(-120%);animation:navshine 6s ease-in-out infinite;pointer-events:none}
+@keyframes navshine{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.top .nav a{color:#E4F7F6;white-space:nowrap;padding:9px 14px;transition:color .2s,transform .2s}
+.top .nav a:hover{color:#fff;transform:translateY(-1px)}
+.top .nav a.on{color:#3A2500}.top .nav a.on::after{display:none}
+.top .nav .nav-ind{background:linear-gradient(135deg,#FFD25E,#FFB627 55%,#FF9A45);box-shadow:0 6px 14px -6px rgba(255,150,40,.8)}
+.top .btn.primary{background:linear-gradient(135deg,#FFB627,#FF8A3D);color:#3A2500;box-shadow:0 10px 20px -10px #FF8A3D}
+/* Fundo do hero com mais contraste para o texto */
+.hero2{background:radial-gradient(1200px 600px at 12% 8%,#D6F3EE 0,transparent 60%),radial-gradient(900px 500px at 95% 0,#FFE9B8 0,transparent 55%),linear-gradient(180deg,#E3F5F2 0%,#FFF3D6 70%,#FFEBC0 100%)}
+.hero2 .copy{position:relative;z-index:2}
+.hero2 .copy::before{content:"";position:absolute;inset:-26px -30px -20px -30px;z-index:-1;background:radial-gradient(closest-side,rgba(255,255,255,.88) 55%,rgba(255,255,255,0));filter:blur(6px)}
+.hero2 .lead{color:#26424C}.hero2 .note{color:#3E5A64}
+.hero2 .hero-sky{height:34%;opacity:.9}
+/* Pog interativo */
+.hero2 .hero-pog{pointer-events:auto;cursor:pointer;left:auto;right:auto;transform-origin:50% 100%;animation:pogin 1.6s cubic-bezier(.3,1.3,.5,1) .5s both;-webkit-tap-highlight-color:transparent;outline:none}
+.hero2 .hero-pog:focus-visible{filter:drop-shadow(0 0 0 3px #FFB627)}
+.hero2 .hero-pog.talk{animation:pogtalk .5s ease 2}
+@keyframes pogin{0%{transform:translateX(-170%) rotate(-18deg);opacity:0}30%{opacity:1}45%{transform:translateX(-60%) translateY(-34px) rotate(8deg)}60%{transform:translateX(-30%) translateY(0) rotate(-4deg)}75%{transform:translateX(-12%) translateY(-18px) rotate(3deg)}100%{transform:none}}
+@keyframes pogtalk{0%,100%{transform:none}30%{transform:translateY(-16px) rotate(-6deg) scale(1.06)}60%{transform:translateY(0) rotate(5deg)}}
+.pog-say{position:absolute;z-index:6;left:2%;bottom:118px;max-width:230px;background:#fff;color:#0E2F3A;border:2px solid #0B7C88;border-radius:18px;padding:10px 14px;font:800 14px/1.35 'Plus Jakarta Sans',system-ui,sans-serif;box-shadow:0 14px 24px -14px rgba(14,47,58,.6);opacity:0;transform:translateY(8px) scale(.9);transform-origin:20% 100%;transition:opacity .3s,transform .35s cubic-bezier(.3,1.5,.5,1);pointer-events:none}
+.pog-say.on{opacity:1;transform:none}
+.pog-say::after{content:"";position:absolute;left:34px;bottom:-11px;width:18px;height:18px;background:#fff;border-right:2px solid #0B7C88;border-bottom:2px solid #0B7C88;transform:rotate(45deg)}
+.pog-say small{display:block;font-weight:600;color:#58707A;margin-top:2px}
+.pog-snd{position:absolute;left:calc(2% + 100px);bottom:-30px;z-index:6;width:38px;height:38px;border-radius:50%;border:0;background:#fff;box-shadow:0 6px 14px -6px rgba(14,47,58,.6);cursor:pointer;font-size:18px}
+.pog-spark{position:absolute;z-index:7;pointer-events:none;font-size:20px;animation:pogsp 1s ease-out forwards}
+@keyframes pogsp{from{opacity:1;transform:translate(0,0) scale(.6)}to{opacity:0;transform:translate(var(--x),var(--y)) scale(1.4) rotate(40deg)}}
+@media(max-width:899px){.pog-say{bottom:100px}}
+@media(prefers-reduced-motion:reduce){.hero2 .hero-pog,.hero2 .hero-pog.talk,.top .nav::after{animation:none}}
+.top .nav a{padding:9px 11px;font-size:13.5px}
+.top .btn{white-space:nowrap}
+@media(min-width:900px) and (max-width:1100px){.top .nav a{padding:9px 8px;font-size:12.5px}}
+.top .right a.btn.primary,.top a.btn.primary{background:linear-gradient(135deg,#FFB627,#FF8A3D)!important;color:#3A2500!important;box-shadow:0 10px 20px -10px #FF8A3D!important}

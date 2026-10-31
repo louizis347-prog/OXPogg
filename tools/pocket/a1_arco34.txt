@@ -1,0 +1,459 @@
+# Arco 34 · Aventura e acampamento
+T: Pack your bag | Fazer a mochila | living | Denver | Kai,m,🧑🏻,amigo
+K: I pack my bag. | Eu arrumo a minha mochila.
+M: Hoje você arruma a mochila de aventura.
+D: Kai|We camp this weekend. Pack your bag.|Vamos acampar neste fim de semana. Arrume a mochila.
+D: You|What do I need?|De que eu preciso?
+D: Kai|A tent, a sleeping bag and a flashlight.|Uma barraca, um saco de dormir e uma lanterna.
+D: You|I have the tent. I need a flashlight.|Tenho a barraca. Preciso de uma lanterna.
+D: Kai|Here is one. Take water and snacks too.|Aqui está uma. Leve água e lanches também.
+D: You|Is my bag too heavy?|Minha mochila está pesada demais?
+D: Kai|No, it is fine. Let us go!|Não, está boa. Vamos!
+D: You|I am excited for the trip.|Estou animado com a viagem.
+V: camp|acampar;tent|barraca;sleeping bag|saco de dormir;flashlight|lanterna;snacks|lanches
+B: I need a {0}.|Preciso de {0}.|tent=uma barraca;flashlight=uma lanterna;map=um mapa
+B: Take {0} too.|Leve {0} também.|water=água;snacks=lanches;a jacket=uma jaqueta
+S: Kai|We camp this weekend. Pack your bag.|Vamos acampar neste fim de semana. Arrume a mochila.|What do I need?|De que eu preciso?
+S: Kai|Is my bag too heavy?|Minha mochila está pesada demais?|No, it is fine. Let us go!|Não, está boa. Vamos!
+R: Pack your bag.|Arrume a mochila.
+R: I need a flashlight.|Preciso de uma lanterna.
+R: Take water and snacks.|Leve água e lanches.
+R: I am excited for the trip.|Estou animado com a viagem.
+X: Let us go!|Vamos!
+C: Camping nos EUA é muito popular, com parques nacionais cheios de trilhas.
+N: Próximo: montar a barraca.
+
+T: Set up the tent | Montar a barraca | forest | Seattle | Kai,m,🧑🏻,amigo
+K: Put the tent here. | Ponha a barraca aqui.
+M: Hoje você monta a barraca.
+D: Kai|This is a good place. Put the tent here.|Este é um bom lugar. Ponha a barraca aqui.
+D: You|Okay. Is the ground flat?|Certo. O chão é plano?
+D: Kai|Yes, and there are no rocks.|Sim, e não tem pedras.
+D: You|Hold this pole. I push the stakes.|Segure este poste. Eu enfio as estacas.
+D: Kai|Pull the rope tight.|Puxe a corda firme.
+D: You|Like this?|Assim?
+D: Kai|Perfect. The tent is ready.|Perfeito. A barraca está pronta.
+D: You|It is big enough for two.|É grande o suficiente para dois.
+V: ground|chão;flat|plano;pole|poste;rope|corda;ready|pronta
+B: Put the tent {0}.|Ponha a barraca {0}.|here=aqui;there=ali;under the tree=debaixo da árvore
+B: Pull the rope {0}.|Puxe a corda {0}.|tight=firme;slowly=devagar;up=para cima
+S: Kai|This is a good place. Put the tent here.|Este é um bom lugar. Ponha a barraca aqui.|Okay. Is the ground flat?|Certo. O chão é plano?
+S: Kai|Perfect. The tent is ready.|Perfeito. A barraca está pronta.|It is big enough for two.|É grande o suficiente para dois.
+R: Put the tent here.|Ponha a barraca aqui.
+R: The ground is flat.|O chão é plano.
+R: Pull the rope tight.|Puxe a corda firme.
+R: The tent is ready.|A barraca está pronta.
+X: Perfect!|Perfeito!
+C: "Stakes" são as estacas que seguram a barraca no chão.
+N: Próximo: a fogueira.
+
+T: Around the campfire | Fogueira | forest | Colorado | Ben,m,🧑🏽,amigo
+K: The fire is warm. | O fogo é quente.
+M: Hoje você se aquece numa fogueira.
+D: Ben|Let us make a fire. I have wood.|Vamos fazer fogo. Tenho lenha.
+D: You|I have matches in my bag.|Tenho fósforos na mochila.
+D: Ben|Put the small sticks first.|Ponha os gravetos pequenos primeiro.
+D: You|Now the fire is big. It is warm.|Agora o fogo está grande. Está quente.
+D: Ben|Let us cook marshmallows.|Vamos assar marshmallows.
+D: You|I love marshmallows. They are sweet.|Eu adoro marshmallows. São doces.
+D: Ben|Do not put your hand near the fire.|Não ponha a mão perto do fogo.
+D: You|Okay. I stay safe.|Certo. Fico seguro.
+V: fire|fogo;wood|lenha;matches|fósforos;sticks|gravetos;marshmallows|marshmallows
+B: I have {0} in my bag.|Tenho {0} na mochila.|matches=fósforos;wood=lenha;water=água
+B: Do not put your hand near the {0}.|Não ponha a mão perto d{0}.|fire=o fogo;knife=a faca;stove=o fogão
+S: Ben|Let us make a fire. I have wood.|Vamos fazer fogo. Tenho lenha.|I have matches in my bag.|Tenho fósforos na mochila.
+S: Ben|Let us cook marshmallows.|Vamos assar marshmallows.|I love marshmallows. They are sweet.|Eu adoro marshmallows. São doces.
+R: Let us make a fire.|Vamos fazer fogo.
+R: I have matches.|Tenho fósforos.
+R: The fire is warm.|O fogo é quente.
+R: Do not put your hand near the fire.|Não ponha a mão perto do fogo.
+X: Stay safe.|Fique seguro.
+C: Marshmallows assados com chocolate e bolacha formam os "s'mores", clássico do camping americano.
+N: Próximo: a trilha.
+
+T: On the trail | Trilha | forest | Colorado | Kai,m,🧑🏻,guia
+K: The trail is long. | A trilha é longa.
+M: Hoje você faz uma trilha.
+D: Kai|This is the trail. It is five kilometers long.|Esta é a trilha. Tem cinco quilômetros.
+D: You|Is it easy?|É fácil?
+D: Kai|Some parts are steep. Wear good shoes.|Algumas partes são íngremes. Use bons sapatos.
+D: You|I have hiking boots.|Tenho botas de trilha.
+D: Kai|Follow the red signs.|Siga as placas vermelhas.
+D: You|Look, a river on the left.|Olhe, um rio à esquerda.
+D: Kai|We can drink water there.|Podemos beber água lá.
+D: You|I love the quiet and the trees.|Adoro o silêncio e as árvores.
+V: trail|trilha;steep|íngreme;boots|botas;signs|placas;quiet|silêncio
+B: The trail is {0} kilometers long.|A trilha tem {0} quilômetros.|five=cinco;three=três;ten=dez
+B: Follow the {0} signs.|Siga as placas {0}.|red=vermelhas;blue=azuis;yellow=amarelas
+S: Kai|This is the trail. It is five kilometers long.|Esta é a trilha. Tem cinco quilômetros.|Is it easy?|É fácil?
+S: Kai|Follow the red signs.|Siga as placas vermelhas.|Look, a river on the left.|Olhe, um rio à esquerda.
+R: The trail is five kilometers long.|A trilha tem cinco quilômetros.
+R: Wear good shoes.|Use bons sapatos.
+R: Follow the red signs.|Siga as placas vermelhas.
+R: I love the quiet.|Adoro o silêncio.
+X: Look!|Olhe!
+C: Trilhas são marcadas com cores ou formas nas árvores.
+N: Próximo: o mapa e a bússola.
+
+T: Map and compass | Mapa e bússola | forest | Utah | Kai,m,🧑🏻,guia
+K: North is this way. | O norte é por aqui.
+M: Hoje você usa mapa e bússola.
+D: Kai|Do you have a map and a compass?|Você tem um mapa e uma bússola?
+D: You|Yes. What does the compass say?|Tenho. O que a bússola diz?
+D: Kai|The needle points north.|A agulha aponta o norte.
+D: You|So north is this way.|Então o norte é por aqui.
+D: Kai|The lake is to the east.|O lago fica a leste.
+D: You|And the camp is to the south?|E o acampamento fica ao sul?
+D: Kai|Yes. We are in the middle.|Sim. Estamos no meio.
+D: You|Now I understand the map.|Agora eu entendo o mapa.
+V: map|mapa;compass|bússola;north|norte;east|leste;south|sul
+B: The lake is to the {0}.|O lago fica a {0}.|east=leste;west=oeste;north=norte
+B: The needle points {0}.|A agulha aponta {0}.|north=norte;south=sul;left=esquerda
+S: Kai|Do you have a map and a compass?|Você tem um mapa e uma bússola?|Yes. What does the compass say?|Tenho. O que a bússola diz?
+S: Kai|The lake is to the east.|O lago fica a leste.|And the camp is to the south?|E o acampamento fica ao sul?
+R: Do you have a map?|Você tem um mapa?
+R: The needle points north.|A agulha aponta o norte.
+R: The lake is to the east.|O lago fica a leste.
+R: Now I understand the map.|Agora eu entendo o mapa.
+X: This way.|Por aqui.
+C: As quatro direções: north, south, east, west.
+N: Próximo: a cachoeira.
+
+T: The waterfall | Cachoeira | water | Oregon | Lia,f,👩🏽,guia
+K: The waterfall is very high. | A cachoeira é muito alta.
+M: Hoje você chega a uma cachoeira.
+D: Lia|We are here! This is the waterfall.|Chegamos! Esta é a cachoeira.
+D: You|It is so high! And so loud.|É tão alta! E tão barulhenta.
+D: Lia|It is sixty meters tall.|Tem sessenta metros de altura.
+D: You|The water is very cold.|A água é muito fria.
+D: Lia|Do not swim here. The current is strong.|Não nade aqui. A correnteza é forte.
+D: You|Okay. I take photos from the bridge.|Certo. Tiro fotos da ponte.
+D: Lia|Good. The light is perfect now.|Bom. A luz está perfeita agora.
+D: You|This place is magical.|Este lugar é mágico.
+V: waterfall|cachoeira;current|correnteza;strong|forte;bridge|ponte;magical|mágico
+B: The waterfall is {0} meters tall.|A cachoeira tem {0} metros de altura.|sixty=sessenta;thirty=trinta;ten=dez
+B: Do not {0} here.|Não {0} aqui.|swim=nade;run=corra;jump=pule
+S: Lia|We are here! This is the waterfall.|Chegamos! Esta é a cachoeira.|It is so high! And so loud.|É tão alta! E tão barulhenta.
+S: Lia|Do not swim here. The current is strong.|Não nade aqui. A correnteza é forte.|Okay. I take photos from the bridge.|Certo. Tiro fotos da ponte.
+R: This is the waterfall.|Esta é a cachoeira.
+R: It is sixty meters tall.|Tem sessenta metros de altura.
+R: Do not swim here.|Não nade aqui.
+R: This place is magical.|Este lugar é mágico.
+X: So loud!|Tão barulhenta!
+C: "Current" é a força da água do rio ou do mar.
+N: Próximo: a noite na barraca.
+
+T: Night in the tent | Noite na barraca | night | Colorado | Kai,m,🧑🏻,amigo
+K: It is dark and quiet. | Está escuro e silencioso.
+M: Hoje você dorme na barraca.
+D: Kai|It is late. Let us go to sleep.|Está tarde. Vamos dormir.
+D: You|I put my sleeping bag here.|Ponho meu saco de dormir aqui.
+D: Kai|Turn off the flashlight.|Desligue a lanterna.
+D: You|Wow, look at the stars through the door.|Uau, olhe as estrelas pela porta.
+D: Kai|I hear an owl.|Eu ouço uma coruja.
+D: You|It is a little cold. Do you have a blanket?|Está um pouco frio. Você tem um cobertor?
+D: Kai|Yes, take this one.|Tenho, pegue este.
+D: You|Good night, Kai.|Boa noite, Kai.
+V: sleep|dormir;blanket|cobertor;stars|estrelas;owl|coruja;late|tarde
+B: Turn off the {0}.|Desligue {0}.|flashlight=a lanterna;light=a luz;phone=o celular
+B: Take this {0}.|Pegue {0}.|blanket=este cobertor;bag=esta mochila;one=este
+S: Kai|It is late. Let us go to sleep.|Está tarde. Vamos dormir.|I put my sleeping bag here.|Ponho meu saco de dormir aqui.
+S: You|It is a little cold. Do you have a blanket?|Está um pouco frio. Você tem um cobertor?|Yes, take this one.|Tenho, pegue este.
+R: It is late.|Está tarde.
+R: Turn off the flashlight.|Desligue a lanterna.
+R: I hear an owl.|Eu ouço uma coruja.
+R: Good night!|Boa noite!
+X: Good night.|Boa noite.
+C: "Good night" é só para se despedir à noite; para cumprimentar à noite, use "good evening".
+N: Próximo: o amanhecer.
+
+T: Sunrise | Amanhecer | forest | Colorado | Ben,m,🧑🏽,amigo
+K: The sun comes up. | O sol nasce.
+M: Hoje você vê o sol nascer.
+D: Ben|Wake up! The sun comes up now.|Acorde! O sol está nascendo.
+D: You|Is it already morning?|Já é de manhã?
+D: Ben|Yes. Look at the orange sky.|Sim. Olhe o céu laranja.
+D: You|It is beautiful. And it is quiet.|É lindo. E é silencioso.
+D: Ben|I make coffee on the stove.|Eu faço café no fogareiro.
+D: You|I want a cup, please.|Quero uma xícara, por favor.
+D: Ben|Here you go. Careful, it is hot.|Aqui está. Cuidado, está quente.
+D: You|What a perfect morning.|Que manhã perfeita.
+V: sun|sol;sunrise|amanhecer;orange|laranja;coffee|café;careful|cuidado
+B: The sun comes {0}.|O sol {0}.|up=nasce;down=se põe;out=aparece
+B: Careful, it is {0}.|Cuidado, está {0}.|hot=quente;heavy=pesado;wet=molhado
+S: Ben|Wake up! The sun comes up now.|Acorde! O sol está nascendo.|Is it already morning?|Já é de manhã?
+S: Ben|Here you go. Careful, it is hot.|Aqui está. Cuidado, está quente.|What a perfect morning.|Que manhã perfeita.
+R: Wake up!|Acorde!
+R: The sun comes up.|O sol nasce.
+R: Look at the orange sky.|Olhe o céu laranja.
+R: What a perfect morning.|Que manhã perfeita.
+X: Careful, it is hot.|Cuidado, está quente.
+C: "Sunrise" é nascer do sol; "sunset" é pôr do sol.
+N: Próximo: o caminho de volta.
+
+T: The way back | O caminho de volta | forest | Colorado | Kai,m,🧑🏻,guia
+K: Where is the car? | Onde está o carro?
+M: Hoje você volta da aventura.
+D: Kai|Time to go back. Do you have the map?|Hora de voltar. Você tem o mapa?
+D: You|Yes. The car is to the south.|Tenho. O carro fica ao sul.
+D: Kai|Is the way back long?|O caminho de volta é longo?
+D: You|It is about two hours.|São cerca de duas horas.
+D: Kai|Let us take a short rest first.|Vamos descansar um pouco primeiro.
+D: You|Good idea. My feet hurt.|Boa ideia. Meus pés doem.
+D: Kai|Drink some water. We are almost there.|Beba água. Estamos quase lá.
+D: You|I see the car! We are back!|Vejo o carro! Voltamos!
+V: back|de volta;rest|descansar;hours|horas;feet|pés;almost|quase
+B: The way back is {0}.|O caminho de volta é {0}.|long=longo;short=curto;easy=fácil
+B: My {0} hurt.|Meus {0} doem.|feet=pés;legs=pernas;arms=braços
+S: Kai|Time to go back. Do you have the map?|Hora de voltar. Você tem o mapa?|Yes. The car is to the south.|Tenho. O carro fica ao sul.
+S: Kai|Drink some water. We are almost there.|Beba água. Estamos quase lá.|I see the car! We are back!|Vejo o carro! Voltamos!
+R: Time to go back.|Hora de voltar.
+R: The car is to the south.|O carro fica ao sul.
+R: My feet hurt.|Meus pés doem.
+R: We are almost there.|Estamos quase lá.
+X: We are back!|Voltamos!
+C: "Almost there" é o que se diz quando falta pouco.
+N: Próximo: desafio, a grande aventura.
+
+T: The big adventure | Desafio do arco: grande aventura | forest | Alaska | Kai,m,🧑🏻,guia
+K: I love adventures. | Eu adoro aventuras.
+M: Hoje você planeja uma aventura completa.
+D: Kai|Are you ready for the big adventure?|Você está pronto para a grande aventura?
+D: You|Yes. My bag is ready.|Sim. Minha mochila está pronta.
+D: Kai|What do you have?|O que você tem?
+D: You|A tent, a map, water and snacks.|Barraca, mapa, água e lanches.
+D: Kai|Great. We walk to the mountain.|Ótimo. Caminhamos até a montanha.
+D: You|Is it far from here?|É longe daqui?
+D: Kai|Ten kilometers. It is a long trail.|Dez quilômetros. É uma trilha longa.
+D: You|I love adventures. Let us go!|Eu adoro aventuras. Vamos!
+V: adventure|aventura;ready|pronto;mountain|montanha;kilometers|quilômetros;long|longa
+B: I have a {0}.|Eu tenho {0}.|tent=uma barraca;map=um mapa;flashlight=uma lanterna
+B: It is {0} kilometers.|São {0} quilômetros.|ten=dez;five=cinco;twenty=vinte
+S: Kai|Are you ready for the big adventure?|Você está pronto para a grande aventura?|Yes. My bag is ready.|Sim. Minha mochila está pronta.
+S: Kai|Ten kilometers. It is a long trail.|Dez quilômetros. É uma trilha longa.|I love adventures. Let us go!|Eu adoro aventuras. Vamos!
+R: Are you ready?|Você está pronto?
+R: My bag is ready.|Minha mochila está pronta.
+R: I have a tent and a map.|Tenho barraca e mapa.
+R: I love adventures.|Eu adoro aventuras.
+X: Let us go!|Vamos!
+C: "Adventure" é qualquer experiência nova e empolgante.
+N: Próximo: mistério e detetive.
+BOSS: 1
+
+# Arco 35 · Mistério e detetive
+T: Who is it? | Quem é? | street | London | Walt,m,🧑🏿,detetive
+K: Who is that man? | Quem é aquele homem?
+M: Hoje você observa uma pessoa suspeita.
+D: Walt|Look at that man. Who is he?|Olhe aquele homem. Quem é ele?
+D: You|I do not know. He wears a long coat.|Não sei. Ele usa um casaco comprido.
+D: Walt|What color is the coat?|De que cor é o casaco?
+D: You|It is gray. He has a hat too.|É cinza. Ele tem um chapéu também.
+D: Walt|Is he tall or short?|Ele é alto ou baixo?
+D: You|He is tall, with a big nose.|Ele é alto, com nariz grande.
+D: Walt|Good. Write that in your notebook.|Bom. Escreva isso no seu caderno.
+D: You|I am a good detective!|Eu sou um bom detetive!
+V: detective|detetive;coat|casaco;gray|cinza;nose|nariz;notebook|caderno
+B: He wears a {0} coat.|Ele usa um casaco {0}.|gray=cinza;black=preto;brown=marrom
+B: He is tall, with a {0}.|Ele é alto, com {0}.|big nose=nariz grande;hat=chapéu;beard=barba
+S: Walt|Look at that man. Who is he?|Olhe aquele homem. Quem é ele?|I do not know. He wears a long coat.|Não sei. Ele usa um casaco comprido.
+S: Walt|Is he tall or short?|Ele é alto ou baixo?|He is tall, with a big nose.|Ele é alto, com nariz grande.
+R: Who is he?|Quem é ele?
+R: He wears a gray coat.|Ele usa um casaco cinza.
+R: He is tall.|Ele é alto.
+R: Write that in your notebook.|Escreva isso no seu caderno.
+X: Good detective!|Bom detetive!
+C: "Detective" também é usado para policiais que investigam casos.
+N: Próximo: as pistas.
+
+T: Look for clues | Procurar pistas | living | London | Walt,m,🧑🏿,detetive
+K: There is a clue on the floor. | Tem uma pista no chão.
+M: Hoje você procura pistas numa sala.
+D: Walt|Look around the room. What do you see?|Olhe a sala. O que você vê?
+D: You|I see a broken glass on the floor.|Vejo um copo quebrado no chão.
+D: Walt|Good. Is there anything else?|Bom. Tem mais alguma coisa?
+D: You|There is a key under the table.|Tem uma chave debaixo da mesa.
+D: Walt|That is an important clue.|Essa é uma pista importante.
+D: You|And the window is open.|E a janela está aberta.
+D: Walt|Someone comes in through the window.|Alguém entra pela janela.
+D: You|The case is interesting.|O caso é interessante.
+V: clue|pista;broken|quebrado;key|chave;important|importante;case|caso
+B: There is a {0} under the table.|Tem {0} debaixo da mesa.|key=uma chave;book=um livro;note=um bilhete
+B: The window is {0}.|A janela está {0}.|open=aberta;closed=fechada;broken=quebrada
+S: Walt|Look around the room. What do you see?|Olhe a sala. O que você vê?|I see a broken glass on the floor.|Vejo um copo quebrado no chão.
+S: Walt|That is an important clue.|Essa é uma pista importante.|And the window is open.|E a janela está aberta.
+R: What do you see?|O que você vê?
+R: There is a broken glass.|Tem um copo quebrado.
+R: There is a key under the table.|Tem uma chave debaixo da mesa.
+R: That is an important clue.|Essa é uma pista importante.
+X: Interesting!|Interessante!
+C: Em inglês, "clue" é a pista que ajuda a resolver um mistério.
+N: Próximo: o interrogatório.
+
+T: A few questions | Fazer perguntas | office | New York | Walt,m,🧑🏿,detetive
+K: What is your name? | Qual é o seu nome?
+M: Hoje você faz perguntas simples a uma testemunha.
+D: Walt|Good evening. What is your name?|Boa noite. Qual é o seu nome?
+D: You|My name is Sam. I live next door.|Meu nome é Sam. Moro ao lado.
+D: Walt|What do you do?|O que você faz?
+D: You|I am a baker. I work at night.|Sou padeiro. Trabalho à noite.
+D: Walt|Where are you at nine o'clock?|Onde você está às nove?
+D: You|I am in the bakery. Ask my boss.|Estou na padaria. Pergunte ao meu chefe.
+D: Walt|Do you know this woman?|Você conhece esta mulher?
+D: You|No, I do not.|Não, não conheço.
+V: baker|padeiro;night|noite;boss|chefe;woman|mulher;know|conhecer
+B: What is your {0}?|Qual é o seu {0}?|name=nome;job=trabalho;address=endereço
+B: I live {0}.|Eu moro {0}.|next door=ao lado;here=aqui;far away=longe
+S: Walt|Good evening. What is your name?|Boa noite. Qual é o seu nome?|My name is Sam. I live next door.|Meu nome é Sam. Moro ao lado.
+S: Walt|Do you know this woman?|Você conhece esta mulher?|No, I do not.|Não, não conheço.
+R: What is your name?|Qual é o seu nome?
+R: I live next door.|Eu moro ao lado.
+R: Where are you at nine o'clock?|Onde você está às nove?
+R: Do you know this woman?|Você conhece esta mulher?
+X: Ask my boss.|Pergunte ao meu chefe.
+C: "Do you know...?" pergunta se a pessoa conhece alguém.
+N: Próximo: o suspeito.
+
+T: The suspect | Descrever o suspeito | street | London | Dee,f,👩🏿,policial
+K: He is short with black hair. | Ele é baixo, de cabelo preto.
+M: Hoje você descreve um suspeito.
+D: Dee|Tell me about the suspect.|Fale sobre o suspeito.
+D: You|He is short with black hair.|Ele é baixo, de cabelo preto.
+D: Dee|How old is he?|Quantos anos ele tem?
+D: You|He is about thirty.|Ele tem cerca de trinta.
+D: Dee|What is he wearing?|O que ele está vestindo?
+D: You|A green jacket and blue jeans.|Uma jaqueta verde e jeans azul.
+D: Dee|Does he have a bag?|Ele tem uma bolsa?
+D: You|Yes, a big red bag.|Sim, uma bolsa vermelha grande.
+V: suspect|suspeito;hair|cabelo;thirty|trinta;jacket|jaqueta;jeans|jeans
+B: He is {0} with black hair.|Ele é {0} de cabelo preto.|short=baixo;tall=alto;thin=magro
+B: He has a {0} bag.|Ele tem uma bolsa {0}.|red=vermelha;big=grande;black=preta
+S: Dee|Tell me about the suspect.|Fale sobre o suspeito.|He is short with black hair.|Ele é baixo, de cabelo preto.
+S: Dee|What is he wearing?|O que ele está vestindo?|A green jacket and blue jeans.|Uma jaqueta verde e jeans azul.
+R: Tell me about the suspect.|Fale sobre o suspeito.
+R: He is about thirty.|Ele tem cerca de trinta.
+R: He wears a green jacket.|Ele usa uma jaqueta verde.
+R: He has a big red bag.|Ele tem uma bolsa vermelha grande.
+X: About thirty.|Cerca de trinta.
+C: "About" antes de um número significa aproximadamente.
+N: Próximo: o desaparecido.
+
+T: Where is my cat? | Pedir ajuda para achar um animal | street | Boston | Ruth,f,👩🏻,vizinha
+K: My cat is not here. | O meu gato não está aqui.
+M: Hoje você ajuda a achar um gato.
+D: Ruth|Please help me. My cat is not here.|Por favor, me ajude. Meu gato não está aqui.
+D: You|What is his name?|Qual é o nome dele?
+D: Ruth|His name is Milo. He is orange.|O nome dele é Milo. Ele é laranja.
+D: You|Is he big or small?|Ele é grande ou pequeno?
+D: Ruth|He is medium, with a white tail.|Ele é médio, com cauda branca.
+D: You|Look! There is a cat under the car.|Olhe! Tem um gato debaixo do carro.
+D: Ruth|Milo! Come here!|Milo! Venha aqui!
+D: You|He is safe. You are lucky!|Ele está seguro. Você tem sorte!
+V: cat|gato;orange|laranja;tail|cauda;medium|médio;lucky|sortuda
+B: My cat is {0}.|Meu gato é {0}.|orange=laranja;black=preto;gray=cinza
+B: There is a cat under the {0}.|Tem um gato debaixo d{0}.|car=o carro;bench=o banco;table=a mesa
+S: Ruth|Please help me. My cat is not here.|Por favor, me ajude. Meu gato não está aqui.|What is his name?|Qual é o nome dele?
+S: You|Look! There is a cat under the car.|Olhe! Tem um gato debaixo do carro.|Milo! Come here!|Milo! Venha aqui!
+R: My cat is not here.|Meu gato não está aqui.
+R: His name is Milo.|O nome dele é Milo.
+R: He has a white tail.|Ele tem cauda branca.
+R: You are lucky!|Você tem sorte!
+X: Come here!|Venha aqui!
+C: "Lucky" é sortudo; "luck" é a sorte.
+N: Próximo: o código secreto.
+
+T: A secret code | Código secreto | classroom | London | Dr. Ray,f,👩🏽,professora
+K: This is a secret message. | Esta é uma mensagem secreta.
+M: Hoje você decifra um código.
+D: Dr. Ray|Look at this paper. It is a secret code.|Olhe este papel. É um código secreto.
+D: You|What do the numbers mean?|O que os números significam?
+D: Dr. Ray|Each number is a letter. One is A, two is B.|Cada número é uma letra. Um é A, dois é B.
+D: You|So eight is H.|Então oito é H.
+D: Dr. Ray|Yes. Now read the whole message.|Sim. Agora leia a mensagem toda.
+D: You|H, E, L, P. It says "help"!|H, E, L, P. Diz "help"!
+D: Dr. Ray|Someone needs help.|Alguém precisa de ajuda.
+D: You|Let us find who writes it.|Vamos descobrir quem escreve.
+V: secret|secreto;code|código;letter|letra;numbers|números;message|mensagem
+B: Each number is a {0}.|Cada número é uma {0}.|letter=letra;color=cor;word=palavra
+B: It says "{0}".|Diz "{0}".|help=help;hello=hello;run=run
+S: Dr. Ray|Look at this paper. It is a secret code.|Olhe este papel. É um código secreto.|What do the numbers mean?|O que os números significam?
+S: Dr. Ray|Someone needs help.|Alguém precisa de ajuda.|Let us find who writes it.|Vamos descobrir quem escreve.
+R: It is a secret code.|É um código secreto.
+R: Each number is a letter.|Cada número é uma letra.
+R: It says "help".|Diz "help".
+R: Someone needs help.|Alguém precisa de ajuda.
+X: Read the message.|Leia a mensagem.
+C: Códigos simples trocam letras por números: A=1, B=2.
+N: Próximo: a testemunha.
+
+T: A witness | Testemunha | street | New York | Rosa,f,👩🏽,testemunha
+K: I see a red car. | Eu vejo um carro vermelho.
+M: Hoje você descreve o que vê como testemunha.
+D: Walt|You are a witness. What do you see?|Você é testemunha. O que você vê?
+D: You|I see a red car. It is very fast.|Vejo um carro vermelho. Ele é muito rápido.
+D: Walt|How many people are in the car?|Quantas pessoas estão no carro?
+D: You|Two. A man and a woman.|Duas. Um homem e uma mulher.
+D: Walt|Do you see the number plate?|Você vê a placa?
+D: You|Yes. It is four, seven, nine.|Vejo. É quatro, sete, nove.
+D: Walt|Thank you. That is very helpful.|Obrigado. Isso ajuda muito.
+D: You|I want to help the police.|Quero ajudar a polícia.
+V: witness|testemunha;fast|rápido;plate|placa;helpful|útil;police|polícia
+B: I see a {0} car.|Vejo um carro {0}.|red=vermelho;black=preto;white=branco
+B: The number is {0}.|O número é {0}.|four seven nine=quatro, sete, nove;one two three=um, dois, três;five five five=cinco, cinco, cinco
+S: Walt|You are a witness. What do you see?|Você é testemunha. O que você vê?|I see a red car. It is very fast.|Vejo um carro vermelho. Ele é muito rápido.
+S: Walt|Do you see the number plate?|Você vê a placa?|Yes. It is four, seven, nine.|Vejo. É quatro, sete, nove.
+R: What do you see?|O que você vê?
+R: I see a red car.|Vejo um carro vermelho.
+R: Two people are in the car.|Duas pessoas estão no carro.
+R: That is very helpful.|Isso ajuda muito.
+X: Thank you.|Obrigado.
+C: Placa de carro em inglês é "license plate" (EUA) ou "number plate" (UK).
+N: Próximo: a prova.
+
+T: The proof | Provas e evidências | office | London | Walt,m,🧑🏿,detetive
+K: This is the proof. | Esta é a prova.
+M: Hoje você analisa uma prova.
+D: Walt|Look at this picture. Do you recognize him?|Olhe esta foto. Você o reconhece?
+D: You|Yes. It is the man with the gray coat.|Sim. É o homem do casaco cinza.
+D: Walt|And this key opens the door?|E esta chave abre a porta?
+D: You|Yes, it fits the lock.|Sim, ela serve na fechadura.
+D: Walt|So this is the proof.|Então esta é a prova.
+D: You|The case is closed.|O caso está encerrado.
+D: Walt|Not yet. We need to find him.|Ainda não. Precisamos achá-lo.
+D: You|I am ready to help.|Estou pronto para ajudar.
+V: picture|foto;recognize|reconhecer;lock|fechadura;proof|prova;closed|encerrado
+B: This key {0} the door.|Esta chave {0} a porta.|opens=abre;fits=serve;locks=tranca
+B: The case is {0}.|O caso está {0}.|closed=encerrado;open=aberto;difficult=difícil
+S: Walt|Look at this picture. Do you recognize him?|Olhe esta foto. Você o reconhece?|Yes. It is the man with the gray coat.|Sim. É o homem do casaco cinza.
+S: Walt|So this is the proof.|Então esta é a prova.|The case is closed.|O caso está encerrado.
+R: Do you recognize him?|Você o reconhece?
+R: This key opens the door.|Esta chave abre a porta.
+R: This is the proof.|Esta é a prova.
+R: I am ready to help.|Estou pronto para ajudar.
+X: Not yet.|Ainda não.
+C: "Proof" é a prova que confirma algo.
+N: Próximo: a solução.
+
+T: Case solved | Desafio do arco: caso resolvido | office | London | Walt,m,🧑🏿,detetive
+K: The mystery is solved. | O mistério está resolvido.
+M: Hoje você resolve um caso.
+D: Walt|We have the clues. Who is the thief?|Temos as pistas. Quem é o ladrão?
+D: You|The man in the gray coat has the key.|O homem do casaco cinza tem a chave.
+D: Walt|And the window is open.|E a janela está aberta.
+D: You|He is tall and he has a red bag.|Ele é alto e tem uma bolsa vermelha.
+D: Walt|That is the thief! Where is he?|Esse é o ladrão! Onde ele está?
+D: You|He is in the cafe on the corner.|Ele está no café da esquina.
+D: Walt|Let us go and talk to him.|Vamos falar com ele.
+D: You|The mystery is solved. We are great detectives!|O mistério está resolvido. Somos ótimos detetives!
+V: thief|ladrão;clues|pistas;corner|esquina;mystery|mistério;great|ótimos
+B: Who is the {0}?|Quem é o {0}?|thief=ladrão;detective=detetive;witness=testemunha
+B: He is in the {0}.|Ele está no {0}.|cafe=café;park=parque;shop=loja
+S: Walt|We have the clues. Who is the thief?|Temos as pistas. Quem é o ladrão?|The man in the gray coat has the key.|O homem do casaco cinza tem a chave.
+S: Walt|That is the thief! Where is he?|Esse é o ladrão! Onde ele está?|He is in the cafe on the corner.|Ele está no café da esquina.
+R: We have the clues.|Temos as pistas.
+R: Who is the thief?|Quem é o ladrão?
+R: He is in the cafe.|Ele está no café.
+R: The mystery is solved.|O mistério está resolvido.
+X: Great detectives!|Ótimos detetives!
+C: "Solved" é a palavra para um mistério ou problema que foi resolvido.
+N: Próximo: super-heróis.
+BOSS: 1

@@ -1,0 +1,193 @@
+# Arco 15 · Viagem de carro
+T: I would like to rent a car | Alugar um carro | hall | Las Vegas | Moe,m,🧑🏻,atendente
+K: I would like to rent a car. | Eu gostaria de alugar um carro.
+M: Hoje você aluga um carro e pergunta o preço por dia.
+D: You|Hi. I would like to rent a car.|Oi. Eu gostaria de alugar um carro.
+D: Moe|Sure. For how many days?|Claro. Por quantos dias?
+D: You|For five days.|Por cinco dias.
+D: Moe|A small car is forty dollars a day.|Um carro pequeno custa quarenta dólares por dia.
+D: You|Does that include insurance?|Isso inclui seguro?
+D: Moe|Basic insurance, yes.|O seguro básico, sim.
+D: You|Okay. I want it.|Ok. Eu quero este.
+D: Moe|I need your driver's license, please.|Preciso da sua carteira de motorista, por favor.
+V: rent|alugar;insurance|seguro;driver's license|carteira de motorista;small car|carro pequeno;days|dias
+B: I would like to rent {0}.|Eu gostaria de alugar {0}.|a car=um carro;a van=uma van;a bike=uma bicicleta
+B: It is {0} dollars a day.|Custa {0} dólares por dia.|forty=quarenta;fifty=cinquenta;sixty=sessenta
+S: Moe|For how many days?|Por quantos dias?|For five days.|Por cinco dias.
+S: Moe|Basic insurance is included.|O seguro básico está incluído.|Okay. I want it.|Ok. Eu quero este.
+R: I would like to rent a car.|Eu gostaria de alugar um carro.
+R: For five days.|Por cinco dias.
+R: Does that include insurance?|Isso inclui seguro?
+R: Here is my license.|Aqui está a minha carteira.
+X: I want it.|Eu quero este.
+C: Nos EUA, quase sempre é preciso cartão de crédito e ter 21 anos ou mais para alugar um carro.
+N: Próximo: abastecer.
+
+T: Fill it up, please | Abastecer o carro | street | Phoenix | Hal,m,🧑🏽,frentista
+K: Where is the gas station? | Onde fica o posto de gasolina?
+M: Hoje você acha um posto e paga o combustível.
+D: You|Excuse me. Where is the nearest gas station?|Com licença. Onde fica o posto mais próximo?
+D: Hal|One mile ahead, on the right.|A uma milha, à direita.
+D: You|Thank you. How do I pay?|Obrigado. Como eu pago?
+D: Hal|Pay at the pump with your card.|Pague na bomba com o cartão.
+D: You|Which gas do I need?|Qual gasolina eu preciso?
+D: Hal|Regular is fine for rental cars.|A comum serve para carros alugados.
+D: You|And if I need air for the tires?|E se eu precisar de ar para os pneus?
+D: Hal|It is free next to the shop.|É grátis ao lado da loja.
+V: gas station|posto de gasolina;mile|milha;pump|bomba;regular|comum;tires|pneus
+B: Where is the nearest {0}?|Onde fica {0} mais próximo?|gas station=o posto;parking lot=o estacionamento;rest area=a área de descanso
+B: It is {0} on the right.|Fica {0} à direita.|one mile ahead=a uma milha;two miles ahead=a duas milhas;just ahead=logo à frente
+S: Hal|One mile ahead, on the right.|A uma milha, à direita.|How do I pay?|Como eu pago?
+S: Hal|Pay at the pump.|Pague na bomba.|Which gas do I need?|Qual gasolina eu preciso?
+R: Where is the gas station?|Onde fica o posto?
+R: How do I pay?|Como eu pago?
+R: Which gas do I need?|Qual gasolina eu preciso?
+R: Fill it up, please.|Encha o tanque, por favor.
+X: Fill it up.|Encha o tanque.
+C: Nos EUA, a gasolina é vendida em galões, e nos postos você mesmo abastece, na maioria dos estados.
+N: Próximo: usar o GPS.
+
+T: Turn left at the light | Seguir instruções do GPS | street | Los Angeles | GPS,f,👩🏽,voz do GPS
+K: In five hundred feet, turn left. | Em quinhentos pés, vire à esquerda.
+M: Hoje você entende instruções de direção em inglês.
+D: GPS|In five hundred feet, turn left.|Em quinhentos pés, vire à esquerda.
+D: You|Is that at the traffic light?|É no semáforo?
+D: GPS|Turn left at the light.|Vire à esquerda no semáforo.
+D: You|Okay. Then straight?|Ok. Depois reto?
+D: GPS|Continue straight for two miles.|Continue reto por duas milhas.
+D: You|How far is the hotel?|Quão longe fica o hotel?
+D: GPS|Your destination is ahead on the right.|Seu destino está à frente, à direita.
+D: You|We are here!|Chegamos!
+V: feet|pés;traffic light|semáforo;continue|continuar;destination|destino;ahead|à frente
+B: Turn {0} at the light.|Vire {0} no semáforo.|left=à esquerda;right=à direita;around=para voltar
+B: Continue straight for {0} miles.|Continue reto por {0} milhas.|two=duas;five=cinco;ten=dez
+S: GPS|In five hundred feet, turn left.|Em quinhentos pés, vire à esquerda.|Is that at the traffic light?|É no semáforo?
+S: GPS|Continue straight for two miles.|Continue reto por duas milhas.|How far is the hotel?|Quão longe fica o hotel?
+R: Turn left at the light.|Vire à esquerda no semáforo.
+R: Continue straight.|Continue reto.
+R: How far is it?|Quão longe fica?
+R:We are here!|Chegamos!
+X:We are here!|Chegamos!
+C: Nos EUA, distâncias são em milhas e pés: uma milha tem cerca de 1,6 quilômetro.
+N: Próximo: estacionar.
+
+T: Where can I park? | Perguntar onde estacionar | street | San Francisco | Ben,m,🧑🏼,morador
+K: Where can I park? | Onde posso estacionar?
+M: Hoje você acha vaga e paga o parquímetro.
+D: You|Excuse me. Where can I park?|Com licença. Onde posso estacionar?
+D: Ben|There is a parking garage on Pine Street.|Tem um estacionamento coberto na Pine Street.
+D: You|How much is it?|Quanto custa?
+D: Ben|Ten dollars for two hours.|Dez dólares por duas horas.
+D: You|Is street parking free?|O estacionamento na rua é grátis?
+D: Ben|No, you pay at the meter.|Não, você paga no parquímetro.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Ben|Yes, or with an app.|Sim, ou por aplicativo.
+V: park|estacionar;garage|estacionamento coberto;meter|parquímetro;hours|horas;free|grátis
+B: Where can I {0}?|Onde posso {0}?|park=estacionar;pay=pagar;turn=virar
+B: It is {0} dollars for two hours.|Custa {0} dólares por duas horas.|ten=dez;eight=oito;twelve=doze
+S: Ben|There is a garage on Pine Street.|Tem um estacionamento na Pine Street.|How much is it?|Quanto custa?
+S: Ben|You pay at the meter.|Você paga no parquímetro.|Can I pay by card?|Posso pagar com cartão?
+R: Where can I park?|Onde posso estacionar?
+R: How much is it?|Quanto custa?
+R: Is street parking free?|O estacionamento na rua é grátis?
+R: Can I pay by card?|Posso pagar com cartão?
+X: at the meter|no parquímetro
+C: Em cidades como San Francisco, estacionar na rua tem regras rígidas e multas caras.
+N: Próximo: entender uma placa.
+
+T: What does this sign say? | Entender placas de trânsito | street | Phoenix | Hal,m,🧑🏽,frentista
+K: What does this sign say? | O que esta placa diz?
+M: Hoje você entende as placas mais comuns da estrada.
+D: You|Excuse me. What does this sign say?|Com licença. O que esta placa diz?
+D: Hal|It says "No parking".|Diz "Proibido estacionar".
+D: You|And that one?|E aquela?
+D: Hal|"Speed limit fifty-five."|"Limite de velocidade cinquenta e cinco."
+D: You|Fifty-five miles per hour?|Cinquenta e cinco milhas por hora?
+D: Hal|Yes. That is about ninety kilometers.|Sim. São uns noventa quilômetros.
+D: You|And "Yield"?|E "Yield"?
+D: Hal|It means give way to other cars.|Significa dar a preferência a outros carros.
+V: sign|placa;speed limit|limite de velocidade;yield|dê a preferência;no parking|proibido estacionar;miles per hour|milhas por hora
+B: It says "{0}".|Diz "{0}".|No parking=Proibido estacionar;Stop=Pare;Exit=Saída
+B: The speed limit is {0}.|O limite de velocidade é {0}.|fifty-five=cinquenta e cinco;sixty-five=sessenta e cinco;thirty=trinta
+S: Hal|It says "No parking".|Diz "Proibido estacionar".|What does that other sign say?|O que diz aquela outra placa?
+S: Hal|Speed limit fifty-five.|Limite de velocidade cinquenta e cinco.|Fifty-five miles per hour?|Cinquenta e cinco milhas por hora?
+R: What does this sign say?|O que esta placa diz?
+R: No parking.|Proibido estacionar.
+R: Speed limit fifty-five.|Limite de velocidade cinquenta e cinco.
+R: Give way to other cars.|Dê a preferência a outros carros.
+X: Yield.|Dê a preferência.
+C: Nos EUA, a placa vermelha de "STOP" é octogonal, e o limite de velocidade está em milhas por hora.
+N: Próximo: pedágio.
+
+T: Do I need cash for the toll? | Pagar pedágio | street | Florida | Pat,m,🧑🏼,atendente
+K: Do I need cash for the toll? | Preciso de dinheiro para o pedágio?
+M: Hoje você pergunta como pagar o pedágio da rodovia.
+D: You|Excuse me. Do I need cash for the toll?|Com licença. Preciso de dinheiro para o pedágio?
+D: Pat|Some tolls take cash, some are electronic.|Alguns aceitam dinheiro, outros são eletrônicos.
+D: You|This is a rental car. How does that work?|Este é um carro alugado. Como funciona?
+D: Pat|The rental company charges your card.|A locadora cobra do seu cartão.
+D: You|Is there an extra fee?|Há uma taxa extra?
+D: Pat|Yes, a small daily fee.|Sim, uma pequena taxa diária.
+D: You|Good to know. Thank you!|Bom saber. Obrigado!
+D: Pat|Drive safely!|Dirija com cuidado!
+V: toll|pedágio;electronic|eletrônico;charge|cobrar;extra|extra;safely|com segurança
+B: Do I need {0} for the toll?|Preciso de {0} para o pedágio?|cash=dinheiro;a pass=um cartão;an app=um aplicativo
+B: There is a {0} fee.|Há uma taxa {0}.|small daily=diária pequena;weekly=semanal;one-time=única
+S: Pat|Some tolls take cash.|Alguns aceitam dinheiro.|This is a rental car. How does that work?|Este é um carro alugado. Como funciona?
+S: Pat|The company charges your card.|A locadora cobra do seu cartão.|Is there an extra fee?|Há uma taxa extra?
+R: Do I need cash for the toll?|Preciso de dinheiro para o pedágio?
+R: How does that work?|Como funciona?
+R: Is there an extra fee?|Há uma taxa extra?
+R: Drive safely!|Dirija com cuidado!
+X: Drive safely!|Dirija com cuidado!
+C: Em muitas rodovias americanas, o pedágio é eletrônico, sem cabine, e a cobrança vai para o dono do carro.
+N: Próximo: um problema no carro.
+
+T: A room for the night | Pedir um quarto de motel | hall | Arizona | Pat,m,🧑🏼,atendente
+K: Do you have a room for tonight? | Vocês têm um quarto para hoje à noite?
+M: Hoje você pede um quarto no meio da estrada.
+D: You|Good evening. Do you have a room for tonight?|Boa noite. Vocês têm um quarto para hoje à noite?
+D: Pat|Yes. One bed or two?|Temos. Uma cama ou duas?
+D: You|Two beds, please. We are three people.|Duas camas, por favor. Somos três.
+D: Pat|Eighty-five dollars plus tax.|Oitenta e cinco dólares mais imposto.
+D: You|Is there a restaurant nearby?|Há um restaurante por perto?
+D: Pat|Yes, a diner across the street.|Sim, uma lanchonete do outro lado da rua.
+D: You|What time is check out?|A que horas é o check-out?
+D: Pat|At eleven in the morning.|Às onze da manhã.
+V: tonight|hoje à noite;beds|camas;tax|imposto;across|do outro lado;diner|lanchonete
+B: Do you have a room for {0}?|Vocês têm um quarto para {0}?|tonight=hoje à noite;two nights=duas noites;three people=três pessoas
+B: Check out is at {0}.|O check-out é às {0}.|eleven=onze;noon=meio-dia;ten=dez
+S: Pat|One bed or two?|Uma cama ou duas?|Two beds, please. We are three.|Duas camas, por favor. Somos três.
+S: Pat|Eighty-five dollars plus tax.|Oitenta e cinco dólares mais imposto.|Is there a restaurant nearby?|Há um restaurante por perto?
+R: Do you have a room for tonight?|Vocês têm um quarto para hoje à noite?
+R: Two beds, please.|Duas camas, por favor.
+R: What time is check out?|A que horas é o check-out?
+R: Is there a restaurant nearby?|Há um restaurante por perto?
+X: plus tax|mais imposto
+C: Os motéis americanos beiram as estradas, com estacionamento na porta do quarto, e são uma tradição das viagens de carro.
+N: Próximo: uma multa de trânsito.
+
+T: A road trip | Desafio do arco: uma viagem de carro | street | Arizona | Pat,m,🧑🏼,atendente
+K: Let us hit the road! | Vamos pegar a estrada!
+M: Mini-chefe: alugue o carro, abasteça, siga o GPS e reserve o motel.
+D: You|Good morning. I would like to rent a car for five days.|Bom dia. Eu gostaria de alugar um carro por cinco dias.
+D: Pat|Of course. Where are you going?|Claro. Para onde você vai?
+D: You|To the Grand Canyon. Which way is it?|Para o Grand Canyon. Qual é o caminho?
+D: Pat|Take Highway ten north for three hours.|Pegue a Rodovia dez ao norte por três horas.
+D: You|Is there a gas station on the way?|Há um posto no caminho?
+D: Pat|Yes, fill up before you go.|Sim, abasteça antes de ir.
+D: You|And a motel near the park?|E um motel perto do parque?
+D: Pat|There are several. Have a great trip!|Há vários. Boa viagem!
+V: trip|viagem;north|norte;several|vários;on the way|no caminho;fill up|abastecer
+B: Take Highway {0} north.|Pegue a Rodovia {0} ao norte.|ten=dez;five=cinco;ninety=noventa
+B: It takes {0} hours.|Leva {0} horas.|three=três;two=duas;five=cinco
+S: Pat|Where are you going?|Para onde você vai?|To the Grand Canyon. Which way is it?|Para o Grand Canyon. Qual é o caminho?
+S: Pat|Fill up before you go.|Abasteça antes de ir.|Is there a motel near the park?|Há um motel perto do parque?
+R: I would like to rent a car.|Eu gostaria de alugar um carro.
+R: Which way is it?|Qual é o caminho?
+R: Is there a gas station on the way?|Há um posto no caminho?
+R: Have a great trip!|Boa viagem!
+X: Let us hit the road!|Vamos pegar a estrada!
+C: Parabéns! Você terminou o arco 15 e ganhou a figurinha rara do Pat.
+N: Próximo arco: descrever pessoas.
+BOSS: 1

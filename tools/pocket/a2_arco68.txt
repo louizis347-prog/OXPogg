@@ -1,0 +1,253 @@
+# Arco 68 · Mensagens e redes sociais
+T: Send a text | Enviar uma mensagem | living | Boston | Amy,f,👩🏼,amiga
+K: I will send you a text. | Vou te mandar uma mensagem.
+M: Hoje você combina algo por mensagem.
+D: Amy|Are you free tonight?|Você está livre hoje à noite?
+D: You|Yes, I am. Why?|Sim, estou. Por quê?
+D: Amy|Let us go to the movies. I will send you a text.|Vamos ao cinema. Vou te mandar uma mensagem.
+D: You|Great. What time?|Ótimo. A que horas?
+D: Amy|At eight. Meet me at the cinema.|Às oito. Encontre-me no cinema.
+D: You|OK. Let me check my phone. Got it!|Certo. Deixe-me ver meu celular. Recebi!
+D: Amy|Perfect. See you tonight!|Perfeito. Até à noite!
+D: You|See you!|Até!
+V: text|mensagem;phone|celular;free|livre;movies|cinema;tonight|hoje à noite
+B: I will send you a {0}.|Vou te mandar uma {0}.|text=mensagem;photo=foto;message=mensagem
+B: Meet me at the {0}.|Encontre-me no {0}.|cinema=cinema;park=parque;cafe=café
+S: Amy|Are you free tonight?|Você está livre hoje à noite?|Yes, I am. Why?|Sim, estou. Por quê?
+S: Amy|Let us go to the movies at eight.|Vamos ao cinema às oito.|Great. I will wait for your text.|Ótimo. Espero sua mensagem.
+R: Are you free tonight?|Você está livre hoje à noite?
+R: I will send you a text.|Vou te mandar uma mensagem.
+R: Meet me at the cinema.|Encontre-me no cinema.
+R: See you tonight!|Até à noite!
+X: Got it!|Recebi!
+C: Nos EUA, mensagens de texto são o jeito mais comum de combinar encontros.
+
+T: A voice message | Mensagem de voz | street | Seattle | Tom,m,👨🏽,amigo
+K: Listen to my voice message. | Ouça minha mensagem de voz.
+M: Hoje você envia uma mensagem de voz.
+D: Tom|Did you get my voice message?|Você recebeu minha mensagem de voz?
+D: You|Not yet. My phone is on silent.|Ainda não. Meu celular está no silencioso.
+D: Tom|OK. I said the meeting is at ten.|Certo. Eu disse que a reunião é às dez.
+D: You|Thanks. Where is it?|Obrigado. Onde é?
+D: Tom|At the library, on the second floor.|Na biblioteca, no segundo andar.
+D: You|Can you send me the address?|Pode me mandar o endereço?
+D: Tom|Sure. I will send it now.|Claro. Vou mandar agora.
+D: You|Got it. Thanks a lot.|Recebi. Muito obrigado.
+V: voice|voz;message|mensagem;silent|silencioso;address|endereço;library|biblioteca
+B: Did you get my {0} message?|Você recebeu minha mensagem de {0}?|voice=voz;text=texto;video=vídeo
+B: The meeting is at {0}.|A reunião é às {0}.|ten=dez;nine=nove;eleven=onze
+S: Tom|Did you get my voice message?|Você recebeu minha mensagem de voz?|Not yet. My phone is on silent.|Ainda não. Meu celular está no silencioso.
+S: Tom|The meeting is at ten.|A reunião é às dez.|Can you send me the address?|Pode me mandar o endereço?
+R: Did you get my voice message?|Você recebeu minha mensagem de voz?
+R: My phone is on silent.|Meu celular está no silencioso.
+R: Can you send me the address?|Pode me mandar o endereço?
+R: I will send it now.|Vou mandar agora.
+X: Thanks a lot.|Muito obrigado.
+C: Mensagens de voz são comuns entre amigos, mas no trabalho nos EUA o texto ainda é mais usado.
+
+T: Post a photo | Postar uma foto | park | Los Angeles | Mia,f,👩🏽,amiga
+K: Can I post this photo online? | Posso postar esta foto na internet?
+M: Hoje você pergunta antes de postar uma foto.
+D: You|This photo is great! Can I post it online?|Esta foto está ótima! Posso postar na internet?
+D: Mia|Sure, but please do not tag me.|Claro, mas por favor não me marque.
+D: You|Why not?|Por que não?
+D: Mia|My boss follows me online.|Meu chefe me segue na internet.
+D: You|I understand. I will only tag the park.|Entendo. Vou marcar só o parque.
+D: Mia|Thanks. Send me the photo too.|Obrigada. Mande-me a foto também.
+D: You|OK. I am sending it right now.|Certo. Estou enviando agora.
+D: Mia|Perfect. It looks lovely.|Perfeito. Está linda.
+V: photo|foto;post|postar;tag|marcar;boss|chefe;follow|seguir
+B: Can I post it {0}?|Posso postar {0}?|online=na internet;today=hoje;now=agora
+B: Please do not {0} me.|Por favor não me {0}.|tag=marque;call=ligue;text=mande mensagem
+S: Mia|Sure, but please do not tag me.|Claro, mas não me marque.|Why not?|Por que não?
+S: Mia|My boss follows me online.|Meu chefe me segue na internet.|I understand. I will only tag the park.|Entendo. Marco só o parque.
+R: Can I post it online?|Posso postar na internet?
+R: Please do not tag me.|Por favor não me marque.
+R: I understand.|Entendo.
+R: I am sending it right now.|Estou enviando agora.
+X: Why not?|Por que não?
+C: Nos EUA, é educado perguntar antes de postar a foto de outra pessoa.
+
+T: A video call | Chamada de vídeo | living | Chicago | Mom,f,👩🏽,mãe
+K: Can you hear me today? | Você consegue me ouvir?
+M: Hoje você faz uma chamada de vídeo com a família.
+D: Mom|Hello, dear! Can you hear me?|Olá, querido! Você consegue me ouvir?
+D: You|Yes, I can hear you. Can you see me?|Sim, ouço você. Você me vê?
+D: Mom|No, the screen is black.|Não, a tela está preta.
+D: You|Wait. Let me turn on the camera.|Espere. Deixe-me ligar a câmera.
+D: Mom|Now I can see you! You look tired.|Agora vejo você! Você parece cansado.
+D: You|I worked late, but I am fine.|Trabalhei até tarde, mas estou bem.
+D: Mom|Eat well and sleep more.|Coma bem e durma mais.
+D: You|I will, Mom. I miss you.|Vou, mãe. Sinto sua falta.
+V: camera|câmera;screen|tela;hear|ouvir;turn on|ligar;miss|sentir falta
+B: Can you {0} me?|Você consegue me {0}?|hear=ouvir;see=ver;help=ajudar
+B: Let me turn on the {0}.|Deixe-me ligar a {0}.|camera=câmera;light=luz;screen=tela
+S: Mom|Can you hear me?|Você consegue me ouvir?|Yes, I can hear you. Can you see me?|Sim, ouço você. Você me vê?
+S: Mom|You look tired.|Você parece cansado.|I worked late, but I am fine.|Trabalhei até tarde, mas estou bem.
+R: Can you hear me?|Você consegue me ouvir?
+R: The screen is black.|A tela está preta.
+R: Let me turn on the camera.|Deixe-me ligar a câmera.
+R: I miss you.|Sinto sua falta.
+X: Now I can see you!|Agora vejo você!
+C: Chamadas de vídeo mantêm famílias unidas mesmo em países diferentes.
+
+T: A new account | Criar uma conta | living | Austin | Lee,m,👨🏻,amigo
+K: I forgot my password today. | Esqueci minha senha.
+M: Hoje você cria uma conta e escolhe uma senha.
+D: Lee|Are you creating a new account?|Você está criando uma conta nova?
+D: You|Yes. I need a user name and a password.|Sim. Preciso de um nome de usuário e uma senha.
+D: Lee|Choose a strong password with numbers.|Escolha uma senha forte com números.
+D: You|OK. Oh no, I forgot my other password.|Certo. Ah não, esqueci minha outra senha.
+D: Lee|Click on "forgot password" and use your email.|Clique em "esqueci a senha" e use seu e-mail.
+D: You|Done. I got a message with a link.|Pronto. Recebi uma mensagem com um link.
+D: Lee|Great. Now write it down in a safe place.|Ótimo. Agora anote num lugar seguro.
+D: You|Good idea. Thank you.|Boa ideia. Obrigado.
+V: account|conta;password|senha;link|link;strong|forte;forgot|esqueceu
+B: I need a user name and a {0}.|Preciso de um nome de usuário e uma {0}.|password=senha;photo=foto;code=código
+B: Choose a {0} password.|Escolha uma senha {0}.|strong=forte;new=nova;safe=segura
+S: Lee|Are you creating a new account?|Você está criando uma conta nova?|Yes. I need a user name and a password.|Sim. Preciso de um nome de usuário e uma senha.
+S: Lee|Click on forgot password.|Clique em esqueci a senha.|Done. I got a message with a link.|Pronto. Recebi uma mensagem com um link.
+R: I need a user name and a password.|Preciso de nome de usuário e senha.
+R: Choose a strong password.|Escolha uma senha forte.
+R: I forgot my password.|Esqueci minha senha.
+R: I got a message with a link.|Recebi uma mensagem com um link.
+X: Good idea.|Boa ideia.
+C: Para a segurança, é bom usar senhas diferentes e fortes em cada site.
+
+T: Online safety | Segurança na internet | living | Seattle | Dad Sam,m,👨🏾,pai
+K: Do not share your password today. | Não compartilhe sua senha.
+M: Hoje você aprende regras de segurança na internet.
+D: Dad Sam|Listen, it is important to be careful online.|Ouça, é importante ter cuidado na internet.
+D: You|OK, Dad. What should I do?|Certo, pai. O que devo fazer?
+D: Dad Sam|Do not share your password with anyone.|Não compartilhe sua senha com ninguém.
+D: You|Not even with my friends?|Nem com meus amigos?
+D: Dad Sam|No. And do not click on strange links.|Não. E não clique em links estranhos.
+D: You|What if I get a strange message?|E se eu receber uma mensagem estranha?
+D: Dad Sam|Do not answer. Tell me or your teacher.|Não responda. Conte para mim ou sua professora.
+D: You|I will. Thanks for the advice.|Vou contar. Obrigado pelo conselho.
+V: safe|seguro;share|compartilhar;strange|estranho;click|clicar;important|importante
+B: Do not share your {0} with anyone.|Não compartilhe sua {0} com ninguém.|password=senha;address=endereço;number=número
+B: Do not click on {0} links.|Não clique em links {0}.|strange=estranhos;new=novos;red=vermelhos
+S: Dad Sam|It is important to be careful online.|É importante ter cuidado na internet.|OK, Dad. What should I do?|Certo, pai. O que devo fazer?
+S: Dad Sam|Do not click on strange links.|Não clique em links estranhos.|What if I get a strange message?|E se eu receber uma mensagem estranha?
+R: It is important to be careful online.|É importante ter cuidado na internet.
+R: Do not share your password.|Não compartilhe sua senha.
+R: Do not click on strange links.|Não clique em links estranhos.
+R: Tell me or your teacher.|Conte para mim ou sua professora.
+X: Be careful.|Tenha cuidado.
+C: Escolas e pais nos EUA ensinam desde cedo regras básicas de segurança digital.
+
+T: Share news | Compartilhar notícias | cafe | Denver | Kay,f,👩🏻,amiga
+K: Guess what happened! | Adivinha o que aconteceu!
+M: Hoje você conta uma novidade por mensagem.
+D: Kay|You look happy. What happened?|Você parece feliz. O que aconteceu?
+D: You|Guess what! I got a new job!|Adivinha! Consegui um emprego novo!
+D: Kay|That is wonderful! Where?|Que maravilha! Onde?
+D: You|At a big bookstore downtown.|Numa livraria grande no centro.
+D: Kay|Congratulations! When do you start?|Parabéns! Quando você começa?
+D: You|Next Monday. I am so excited.|Na segunda que vem. Estou tão animado.
+D: Kay|Let us celebrate this weekend.|Vamos comemorar neste fim de semana.
+D: You|Yes! I will invite everyone.|Sim! Vou convidar todo mundo.
+V: news|novidade;job|emprego;bookstore|livraria;celebrate|comemorar;invite|convidar
+B: Guess {0}! I got a new job!|Adivinha {0}! Consegui um emprego novo!|what=o quê;who=quem;where=onde
+B: Let us celebrate this {0}.|Vamos comemorar neste {0}.|weekend=fim de semana;week=semana;month=mês
+S: Kay|You look happy. What happened?|Você parece feliz. O que aconteceu?|Guess what! I got a new job!|Adivinha! Consegui um emprego novo!
+S: Kay|When do you start?|Quando você começa?|Next Monday. I am so excited.|Na segunda que vem. Estou tão animado.
+R: Guess what! I got a new job!|Adivinha! Consegui um emprego novo!
+R: Congratulations!|Parabéns!
+R: I am so excited.|Estou tão animado.
+R: Let us celebrate this weekend.|Vamos comemorar neste fim de semana.
+X: Guess what!|Adivinha!
+C: "Guess what?" é uma forma comum de começar a contar uma notícia boa.
+
+T: A wrong number | Número errado | street | Phoenix | Stranger Ray,m,👨🏿,desconhecido
+K: I think you have the wrong number. | Acho que você ligou para o número errado.
+M: Hoje você recebe uma ligação errada.
+D: Stranger Ray|Hello? Is this Mike?|Alô? É o Mike?
+D: You|No, I am sorry. I think you have the wrong number.|Não, desculpe. Acho que você ligou para o número errado.
+D: Stranger Ray|Oh, sorry. Is this 555-0123?|Ah, desculpe. É o 555-0123?
+D: You|No, it is 555-0132.|Não, é 555-0132.
+D: Stranger Ray|I see. I made a mistake. Sorry to bother you.|Entendi. Eu errei. Desculpe incomodar.
+D: You|It is OK. No problem.|Tudo bem. Sem problema.
+D: Stranger Ray|Have a good day.|Tenha um bom dia.
+D: You|You too. Goodbye.|Você também. Tchau.
+V: number|número;wrong|errado;mistake|erro;bother|incomodar;call|ligar
+B: I think you have the {0} number.|Acho que você ligou para o número {0}.|wrong=errado;right=certo;new=novo
+B: Sorry to {0} you.|Desculpe {0}.|bother=incomodar;call=ligar;wake=acordar
+S: Stranger Ray|Is this Mike?|É o Mike?|No, I am sorry. I think you have the wrong number.|Não, desculpe. Acho que você ligou errado.
+S: Stranger Ray|Sorry to bother you.|Desculpe incomodar.|It is OK. No problem.|Tudo bem. Sem problema.
+R: I think you have the wrong number.|Acho que você ligou errado.
+R: It is 555-0132.|É o 555-0132.
+R: Sorry to bother you.|Desculpe incomodar.
+R: Have a good day.|Tenha um bom dia.
+X: No problem.|Sem problema.
+C: Ao receber ligação errada, é comum responder com educação e desejar um bom dia.
+
+T: Leave a voicemail | Deixar um recado | office | Boston | Voicemail,f,👩🏼,gravação
+K: Please leave a message after the beep today. | Por favor deixe um recado após o sinal.
+M: Hoje você deixa um recado de voz.
+D: Voicemail|Hi. You reached Dr. Hill. Please leave a message.|Oi. Você ligou para o Dr. Hill. Por favor deixe um recado.
+D: You|Hello, Dr. Hill. This is Alex Souza.|Olá, Dr. Hill. Aqui é o Alex Souza.
+D: You|I need to change my appointment on Tuesday.|Preciso mudar minha consulta de terça.
+D: You|Can I come on Thursday at ten instead?|Posso ir na quinta às dez no lugar?
+D: You|Please call me back at 555-0189.|Por favor me ligue de volta no 555-0189.
+D: You|Thank you very much.|Muito obrigado.
+D: You|Goodbye.|Tchau.
+D: Voicemail|Your message has been sent.|Seu recado foi enviado.
+V: voicemail|caixa postal;appointment|consulta;instead|no lugar;beep|sinal;reach|ligar para
+B: I need to change my {0}.|Preciso mudar minha {0}.|appointment=consulta;meeting=reunião;plan=plano
+B: Can I come on {0} at ten?|Posso ir na {0} às dez?|Thursday=quinta;Monday=segunda;Friday=sexta
+S: Voicemail|Please leave a message.|Por favor deixe um recado.|This is Alex Souza. I need to change my appointment.|Aqui é o Alex Souza. Preciso mudar minha consulta.
+S: Voicemail|Leave your number.|Deixe seu número.|Please call me back at 555-0189.|Por favor me ligue de volta no 555-0189.
+R: Please leave a message.|Por favor deixe um recado.
+R: This is Alex Souza.|Aqui é o Alex Souza.
+R: I need to change my appointment.|Preciso mudar minha consulta.
+R: Please call me back.|Por favor me ligue de volta.
+X: Call me back.|Me ligue de volta.
+C: Ao deixar recado de voz nos EUA, diga seu nome, o motivo e o número para retorno.
+
+T: Group chat | Grupo de mensagens | living | New York | Sara,f,👩🏽,amiga
+K: Let us plan a trip in the group chat. | Vamos planejar uma viagem no grupo.
+M: Hoje você planeja uma viagem no grupo de mensagens.
+D: Sara|Hey everyone! Let us plan a trip in the group chat.|Oi, pessoal! Vamos planejar uma viagem no grupo.
+D: You|Good idea! Where do we want to go?|Boa ideia! Aonde queremos ir?
+D: Sara|I vote for the beach.|Voto na praia.
+D: You|Me too. Which weekend is best?|Eu também. Qual fim de semana é melhor?
+D: Sara|The third weekend of June.|O terceiro fim de semana de junho.
+D: You|That works for me. I will tell the others.|Funciona para mim. Vou avisar os outros.
+D: Sara|Great. Please send photos of hotels.|Ótimo. Por favor mande fotos de hotéis.
+D: You|Sure, I will search tonight.|Claro, vou procurar hoje à noite.
+V: group|grupo;vote|votar;weekend|fim de semana;search|procurar;trip|viagem
+B: I vote for the {0}.|Voto na {0}.|beach=praia;mountain=montanha;city=cidade
+B: The {0} weekend of June.|O {0} fim de semana de junho.|third=terceiro;first=primeiro;last=último
+S: Sara|Let us plan a trip in the group chat.|Vamos planejar uma viagem no grupo.|Good idea! Where do we want to go?|Boa ideia! Aonde queremos ir?
+S: Sara|I vote for the beach.|Voto na praia.|Me too. That works for me.|Eu também. Funciona para mim.
+R: Let us plan a trip.|Vamos planejar uma viagem.
+R: I vote for the beach.|Voto na praia.
+R: That works for me.|Funciona para mim.
+R: I will search tonight.|Vou procurar hoje à noite.
+X: Me too.|Eu também.
+C: Grupos de mensagens são muito usados nos EUA para combinar viagens e eventos entre amigos.
+
+T: Too much phone | Celular demais | cafe | Portland | Dad,m,👨🏽,pai
+K: Please put your phone away. | Por favor guarde o celular.
+M: Hoje você combina horários sem celular.
+D: Dad|Please put your phone away at dinner.|Por favor guarde o celular no jantar.
+D: You|Why? I am just checking one message.|Por quê? Estou só vendo uma mensagem.
+D: Dad|Dinner time is family time.|A hora do jantar é hora da família.
+D: You|You are right. I am sorry.|Você tem razão. Desculpe.
+D: Dad|Thank you. Let us talk about your day.|Obrigado. Vamos falar sobre o seu dia.
+D: You|OK. I had a great day at school.|Certo. Tive um ótimo dia na escola.
+D: Dad|Tell me everything.|Conte tudo.
+D: You|First, I got an A on my test!|Primeiro, tirei A na prova!
+V: put away|guardar;dinner|jantar;family|família;test|prova;right|razão
+B: Please put your {0} away.|Por favor guarde o {0}.|phone=celular;book=livro;bag=mochila
+B: I got an A on my {0}.|Tirei A na minha {0}.|test=prova;homework=lição;paper=redação
+S: Dad|Please put your phone away at dinner.|Guarde o celular no jantar.|You are right. I am sorry.|Você tem razão. Desculpe.
+S: Dad|Let us talk about your day.|Vamos falar do seu dia.|First, I got an A on my test!|Primeiro, tirei A na prova!
+R: Please put your phone away.|Por favor guarde o celular.
+R: Dinner time is family time.|A hora do jantar é hora da família.
+R: You are right. I am sorry.|Você tem razão. Desculpe.
+R: I got an A on my test!|Tirei A na prova!
+X: Tell me everything.|Conte tudo.
+C: Muitas famílias americanas têm a regra "sem celular na mesa" durante as refeições.

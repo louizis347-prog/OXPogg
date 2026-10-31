@@ -1,0 +1,230 @@
+# Arco 42 · Dinheiro do dia a dia
+T: My monthly budget | Fazer um orçamento mensal | living | Chicago | Ana,f,👩🏼,amiga
+K: I spend too much on food. | Eu gasto demais com comida.
+M: Hoje você organiza quanto ganha e quanto gasta.
+D: Ana|Let us make a budget. How much money do you earn each month?|Vamos fazer um orçamento. Quanto dinheiro você ganha por mês?
+D: You|I earn two thousand dollars after taxes.|Ganho dois mil dólares depois dos impostos.
+D: Ana|And how much do you pay for rent?|E quanto você paga de aluguel?
+D: You|Eight hundred dollars. I spend three hundred on food.|Oitocentos dólares. Gasto trezentos com comida.
+D: Ana|That is a lot. Can you cook at home more often?|É bastante. Você pode cozinhar mais em casa?
+D: You|Yes, I eat out too much. I should buy fewer snacks.|Sim, como fora demais. Eu deveria comprar menos lanches.
+D: Ana|How much can you save each month?|Quanto você consegue guardar por mês?
+D: You|If I cook at home, I can save two hundred dollars.|Se eu cozinhar em casa, posso guardar duzentos dólares.
+V: budget|orçamento;earn|ganhar;rent|aluguel;save|guardar;snacks|lanches
+B: I spend too much on {0}.|Eu gasto demais com {0}.|food=comida;clothes=roupas;taxis=táxis
+B: I can save {0} dollars.|Posso guardar {0} dólares.|two hundred=duzentos;one hundred=cem;fifty=cinquenta
+S: Ana|How much do you earn each month?|Quanto você ganha por mês?|I earn two thousand dollars after taxes.|Ganho dois mil dólares depois dos impostos.
+S: Ana|How much can you save?|Quanto consegue guardar?|If I cook at home, I can save two hundred dollars.|Se eu cozinhar em casa, guardo duzentos dólares.
+R: I spend too much on food.|Gasto demais com comida.
+R: I earn two thousand dollars.|Ganho dois mil dólares.
+R: I should buy fewer snacks.|Eu deveria comprar menos lanches.
+R: I can save two hundred dollars.|Posso guardar duzentos dólares.
+X: That is a lot.|É bastante.
+C: Fazer um orçamento mensal é um hábito financeiro muito recomendado nos EUA, com aplicativos que mostram quanto se gasta em cada categoria.
+
+T: At the ATM | Sacar dinheiro no caixa eletrônico | street | Boston | Dan,m,🧑🏽,amigo
+K: I need to take out some cash. | Preciso sacar algum dinheiro.
+M: Hoje você usa o caixa eletrônico e entende as opções.
+D: Dan|Where are you going? The restaurant is on the left.|Aonde você vai? O restaurante é à esquerda.
+D: You|I need to take out some cash. Is there an ATM near here?|Preciso sacar algum dinheiro. Tem caixa eletrônico por aqui?
+D: Dan|Yes, next to the bank. Do you have your card?|Sim, ao lado do banco. Você tem seu cartão?
+D: You|Yes. First I put the card in, and then I enter my PIN.|Sim. Primeiro coloco o cartão e depois digito minha senha.
+D: Dan|Then choose "withdraw cash" and the amount.|Depois escolha "sacar dinheiro" e o valor.
+D: You|Is there a fee? I do not want to pay extra.|Tem taxa? Não quero pagar a mais.
+D: Dan|Not at your own bank. Other banks charge three dollars.|No seu banco não. Outros bancos cobram três dólares.
+D: You|Good to know. Do not forget to take the card back!|Bom saber. Não esqueça de pegar o cartão de volta!
+V: ATM|caixa eletrônico;cash|dinheiro em espécie;PIN|senha;withdraw|sacar;amount|valor
+B: I need to take out some {0}.|Preciso sacar {0}.|cash=dinheiro;money=dinheiro;dollars=dólares
+B: Is there an ATM near {0}?|Tem caixa eletrônico perto {0}?|here=daqui;the station=da estação;the mall=do shopping
+S: Dan|Do you have your card?|Você tem seu cartão?|Yes. First I put the card in, and then I enter my PIN.|Sim. Primeiro coloco o cartão e depois digito a senha.
+S: Dan|Other banks charge three dollars.|Outros bancos cobram três dólares.|Good to know. Is there a fee at my bank?|Bom saber. Tem taxa no meu banco?
+R: I need to take out some cash.|Preciso sacar algum dinheiro.
+R: First I put the card in.|Primeiro coloco o cartão.
+R: Then I enter my PIN.|Depois digito a senha.
+R: Do not forget the card.|Não esqueça o cartão.
+X: Good to know.|Bom saber.
+C: Nos EUA, usar o caixa de outro banco pode ter taxa, então vale procurar o caixa do seu próprio banco.
+
+T: I lost my card | Bloquear um cartão perdido | hall | Atlanta | Sam,m,🧑🏻,atendente
+K: I want to block my card. | Quero bloquear meu cartão.
+M: Hoje você relata a perda e pede um cartão novo.
+D: You|Hello. I lost my bank card this morning. I want to block it.|Olá. Perdi meu cartão do banco esta manhã. Quero bloqueá-lo.
+D: Sam|I am sorry to hear that. Can I have your name and account number?|Sinto muito. Posso ter seu nome e número da conta?
+D: You|My name is Ana Silva. The account number is on my phone.|Meu nome é Ana Silva. O número da conta está no meu celular.
+D: Sam|Thank you. I blocked your card. Did you see any strange payments?|Obrigado. Bloqueei seu cartão. Você viu pagamentos estranhos?
+D: You|No, I checked the app. There is nothing strange.|Não, conferi o aplicativo. Não há nada estranho.
+D: Sam|Good. We will send a new card to your address.|Ótimo. Vamos enviar um cartão novo ao seu endereço.
+D: You|How long will it take?|Quanto tempo vai levar?
+D: Sam|About five days. You can use the app until then.|Cerca de cinco dias. Você pode usar o aplicativo até lá.
+V: block|bloquear;account|conta;payments|pagamentos;strange|estranho;address|endereço
+B: I lost my {0} this morning.|Perdi meu {0} esta manhã.|bank card=cartão do banco;wallet=carteira;phone=celular
+B: We will send a new card to your {0}.|Vamos enviar um cartão novo ao seu {0}.|address=endereço;office=escritório;home=casa
+S: Sam|Can I have your name and account number?|Posso ter seu nome e número da conta?|My name is Ana Silva.|Meu nome é Ana Silva.
+S: Sam|We will send a new card.|Vamos enviar um cartão novo.|How long will it take?|Quanto tempo vai levar?
+R: I lost my bank card.|Perdi meu cartão do banco.
+R: I want to block it.|Quero bloqueá-lo.
+R: There is nothing strange.|Não há nada estranho.
+R: It will take five days.|Vai levar cinco dias.
+X: I am sorry to hear that.|Sinto muito ouvir isso.
+C: Nos EUA, bloquear o cartão rapidamente pelo aplicativo ou por telefone evita compras indevidas.
+
+T: Splitting the cost | Dividir despesas entre amigos | cafe | Austin | Tom,m,🧑🏽,amigo
+K: Let us split the bill. | Vamos dividir a conta.
+M: Hoje você divide uma conta e calcula quanto cada um paga.
+D: Tom|The bill is ninety dollars. We are three people.|A conta é noventa dólares. Somos três pessoas.
+D: You|So each person pays thirty dollars.|Então cada pessoa paga trinta dólares.
+D: Tom|But I only drank water. Is that fair?|Mas eu só bebi água. Isso é justo?
+D: You|You are right. Let us pay for what we ordered.|Você tem razão. Vamos pagar pelo que pedimos.
+D: Tom|My salad was fifteen dollars, and the water was two.|Minha salada custou quinze dólares e a água, dois.
+D: You|Then you pay seventeen, plus a tip.|Então você paga dezessete, mais a gorjeta.
+D: Tom|Okay. I will give two dollars for the tip.|Ok. Dou dois dólares de gorjeta.
+D: You|Great. Here is my card. Thanks for being honest.|Ótimo. Aqui está meu cartão. Obrigado por ser honesto.
+V: bill|conta;each|cada;fair|justo;ordered|pedimos;honest|honesto
+B: Each person pays {0} dollars.|Cada pessoa paga {0} dólares.|thirty=trinta;twenty=vinte;forty=quarenta
+B: My salad was {0} dollars.|Minha salada custou {0} dólares.|fifteen=quinze;twelve=doze;eighteen=dezoito
+S: Tom|The bill is ninety dollars.|A conta é noventa dólares.|So each person pays thirty dollars.|Então cada pessoa paga trinta dólares.
+S: Tom|I only drank water. Is that fair?|Só bebi água. É justo?|You are right. Let us pay for what we ordered.|Tem razão. Vamos pagar pelo que pedimos.
+R: Let us split the bill.|Vamos dividir a conta.
+R: Each person pays thirty dollars.|Cada pessoa paga trinta dólares.
+R: Let us pay for what we ordered.|Vamos pagar pelo que pedimos.
+R: Thanks for being honest.|Obrigado por ser honesto.
+X: Is that fair?|Isso é justo?
+C: Aplicativos de divisão de contas, como Splitwise, são muito usados nos EUA entre amigos e colegas de casa.
+
+T: A good price | Comparar preços antes de comprar | shop | Seattle | Moe,m,🧑🏻,vendedor
+K: Is this the best price? | Este é o melhor preço?
+M: Hoje você compara preços e negocia com educação.
+D: You|Excuse me. How much is this camera?|Com licença. Quanto custa esta câmera?
+D: Moe|It is four hundred dollars.|São quatrocentos dólares.
+D: You|I saw the same camera online for three hundred and fifty. Is this the best price?|Vi a mesma câmera online por trezentos e cinquenta. Este é o melhor preço?
+D: Moe|I can give you a small discount. How about three hundred and seventy-five?|Posso dar um pequeno desconto. Que tal trezentos e setenta e cinco?
+D: You|Does it come with a memory card?|Vem com cartão de memória?
+D: Moe|Yes, and a bag. It also has a two-year warranty.|Sim, e uma bolsa. Também tem garantia de dois anos.
+D: You|That sounds good. I will take it.|Parece bom. Vou levar.
+D: Moe|Great choice. Do you want a receipt?|Ótima escolha. Quer o recibo?
+V: camera|câmera;discount|desconto;warranty|garantia;receipt|recibo;memory card|cartão de memória
+B: I saw the same camera online for {0}.|Vi a mesma câmera online por {0}.|three hundred and fifty=trezentos e cinquenta;two hundred=duzentos;four hundred=quatrocentos
+B: Does it come with a {0}?|Vem com {0}?|memory card=cartão de memória;bag=bolsa;charger=carregador
+S: Moe|It is four hundred dollars.|São quatrocentos dólares.|I saw it online for three hundred and fifty. Is this the best price?|Vi online por trezentos e cinquenta. É o melhor preço?
+S: Moe|It has a two-year warranty.|Tem garantia de dois anos.|That sounds good. I will take it.|Parece bom. Vou levar.
+R: Is this the best price?|Este é o melhor preço?
+R: I saw it online for three hundred and fifty.|Vi online por trezentos e cinquenta.
+R: Does it come with a memory card?|Vem com cartão de memória?
+R: I will take it.|Vou levar.
+X: A small discount.|Um pequeno desconto.
+C: Comparar preços online antes de comprar é muito comum nos EUA, e muitas lojas aceitam igualar o preço de concorrentes.
+
+T: Paying the rent | Combinar o pagamento do aluguel | living | Boston | Ms. Ray,f,👩🏿,proprietária
+K: I will pay the rent on Friday. | Vou pagar o aluguel na sexta.
+M: Hoje você combina data e forma de pagamento do aluguel.
+D: Ms. Ray|Hello. Is everything okay with the rent this month?|Olá. Está tudo bem com o aluguel este mês?
+D: You|Yes. I will pay it on Friday, because I get my salary on Thursday.|Sim. Vou pagar na sexta, porque recebo meu salário na quinta.
+D: Ms. Ray|The rent is due on the first day of the month.|O aluguel vence no primeiro dia do mês.
+D: You|I know. I am sorry. It will be one day late.|Eu sei. Desculpe. Vai atrasar um dia.
+D: Ms. Ray|There is a late fee of twenty dollars.|Há multa de vinte dólares por atraso.
+D: You|I understand. Can I pay by bank transfer?|Entendo. Posso pagar por transferência bancária?
+D: Ms. Ray|Yes. I will send you the account number by email.|Sim. Vou enviar o número da conta por e-mail.
+D: You|Thank you. Next month, I will pay on time.|Obrigado. No mês que vem, pago em dia.
+V: rent|aluguel;due|com vencimento;late fee|multa por atraso;transfer|transferência;salary|salário
+B: I will pay it on {0}.|Vou pagar na {0}.|Friday=sexta;Monday=segunda;Wednesday=quarta
+B: Can I pay by {0}?|Posso pagar por {0}?|bank transfer=transferência bancária;card=cartão;check=cheque
+S: Ms. Ray|The rent is due on the first day.|O aluguel vence no primeiro dia.|I know. I am sorry. It will be one day late.|Eu sei. Desculpe. Vai atrasar um dia.
+S: Ms. Ray|There is a late fee of twenty dollars.|Há multa de vinte dólares.|Can I pay by bank transfer?|Posso pagar por transferência?
+R: I will pay the rent on Friday.|Vou pagar o aluguel na sexta.
+R: The rent is due on the first.|O aluguel vence no primeiro.
+R: Can I pay by bank transfer?|Posso pagar por transferência?
+R: Next month, I will pay on time.|No mês que vem, pago em dia.
+X: Pay on time.|Pagar em dia.
+C: Nos EUA, o aluguel costuma vencer no dia 1º, e atrasos geralmente geram uma multa prevista em contrato.
+
+T: Opening a savings account | Abrir uma conta poupança | hall | New York | Sam,m,🧑🏻,atendente
+K: I want to save money every month. | Quero guardar dinheiro todo mês.
+M: Hoje você escolhe uma conta para guardar dinheiro.
+D: You|Hello. I want to save money every month. What can you offer me?|Olá. Quero guardar dinheiro todo mês. O que podem me oferecer?
+D: Sam|We have a savings account with no monthly fee.|Temos uma conta poupança sem taxa mensal.
+D: You|How much interest does it pay?|Quanto rende de juros?
+D: Sam|Two percent a year. If you save more, you earn more.|Dois por cento ao ano. Se você guarda mais, ganha mais.
+D: You|Can I take my money out at any time?|Posso retirar meu dinheiro a qualquer hora?
+D: Sam|Yes, but only six times a month.|Sim, mas só seis vezes por mês.
+D: You|That is fine. I will put in one hundred dollars every month.|Está bom. Vou depositar cem dólares todo mês.
+D: Sam|Great. Please sign this form.|Ótimo. Assine este formulário, por favor.
+V: savings|poupança;interest|juros;percent|por cento;take out|retirar;sign|assinar
+B: I want to save {0} every month.|Quero guardar {0} todo mês.|money=dinheiro;a little=um pouco;one hundred dollars=cem dólares
+B: It pays {0} a year.|Rende {0} ao ano.|two percent=dois por cento;one percent=um por cento;three percent=três por cento
+S: Sam|We have a savings account with no monthly fee.|Temos uma poupança sem taxa mensal.|How much interest does it pay?|Quanto rende de juros?
+S: Sam|You can take money out six times a month.|Pode retirar seis vezes por mês.|That is fine. I will put in one hundred dollars every month.|Está bom. Vou depositar cem todo mês.
+R: I want to save money every month.|Quero guardar dinheiro todo mês.
+R: How much interest does it pay?|Quanto rende de juros?
+R: If you save more, you earn more.|Se guarda mais, ganha mais.
+R: I will put in one hundred dollars.|Vou depositar cem dólares.
+X: No monthly fee.|Sem taxa mensal.
+C: Guardar um pouco todo mês, mesmo valores pequenos, é um conselho financeiro muito repetido nos EUA.
+
+T: Buying a bus ticket | Comprar uma passagem de ônibus intermunicipal | station | Chicago | Dan,m,🧑🏽,atendente
+K: One ticket to Detroit, please. | Uma passagem para Detroit, por favor.
+M: Hoje você compra passagem, escolhe horário e paga.
+D: You|Hello. One ticket to Detroit, please.|Olá. Uma passagem para Detroit, por favor.
+D: Dan|One way or round trip?|Só ida ou ida e volta?
+D: You|Round trip. I will come back on Sunday.|Ida e volta. Volto no domingo.
+D: Dan|The bus leaves at eight and at noon. Which one do you prefer?|O ônibus sai às oito e ao meio-dia. Qual você prefere?
+D: You|The bus at eight. How much is it?|O das oito. Quanto custa?
+D: Dan|Forty dollars. Does your luggage weigh more than twenty kilos?|Quarenta dólares. Sua bagagem pesa mais de vinte quilos?
+D: You|No, it is just one small bag.|Não, é só uma mala pequena.
+D: Dan|Perfect. Here is your ticket. The bus leaves from gate five.|Perfeito. Aqui está sua passagem. O ônibus sai do portão cinco.
+V: ticket|passagem;one way|só ida;round trip|ida e volta;luggage|bagagem;gate|portão
+B: One ticket to {0}, please.|Uma passagem para {0}, por favor.|Detroit=Detroit;Boston=Boston;Denver=Denver
+B: The bus leaves from gate {0}.|O ônibus sai do portão {0}.|five=cinco;three=três;ten=dez
+S: Dan|One way or round trip?|Só ida ou ida e volta?|Round trip. I will come back on Sunday.|Ida e volta. Volto no domingo.
+S: Dan|The bus leaves at eight and at noon.|O ônibus sai às oito e ao meio-dia.|The bus at eight. How much is it?|O das oito. Quanto custa?
+R: One ticket to Detroit, please.|Uma passagem para Detroit, por favor.
+R: Round trip, please.|Ida e volta, por favor.
+R: How much is it?|Quanto custa?
+R: The bus leaves from gate five.|O ônibus sai do portão cinco.
+X: One way or round trip?|Só ida ou ida e volta?
+C: Ônibus intermunicipais, como Greyhound e Megabus, são uma opção barata para viajar entre cidades dos EUA.
+
+T: Buying a second-hand bike | Comprar uma bicicleta usada | street | Portland | Max,m,🧑🏼,vendedor
+K: Is the bike in good condition? | A bicicleta está em boas condições?
+M: Hoje você negocia a compra de um item usado.
+D: You|Hello. I saw your ad. Is the bike still for sale?|Olá. Vi seu anúncio. A bicicleta ainda está à venda?
+D: Max|Yes, it is. I bought it two years ago, and I rarely use it.|Sim. Comprei há dois anos e raramente uso.
+D: You|Is the bike in good condition?|A bicicleta está em boas condições?
+D: Max|Yes, but the front tire is a little old. The brakes are new.|Sim, mas o pneu da frente está um pouco velho. Os freios são novos.
+D: You|How much do you want for it?|Quanto você quer por ela?
+D: Max|One hundred and twenty dollars.|Cento e vinte dólares.
+D: You|Can I try it first? If it is comfortable, I will take it.|Posso testar antes? Se for confortável, vou levar.
+D: Max|Of course. Go around the block.|Claro. Dê uma volta na quadra.
+V: ad|anúncio;for sale|à venda;tire|pneu;brakes|freios;condition|condição
+B: Is the bike still for {0}?|A bicicleta ainda está {0}?|sale=à venda;rent=para alugar;free=de graça
+B: How much do you want for {0}?|Quanto você quer por {0}?|it=ela;the helmet=o capacete;the lock=o cadeado
+S: Max|The brakes are new.|Os freios são novos.|Is the bike in good condition?|A bicicleta está em boas condições?
+S: Max|It costs one hundred and twenty dollars.|Custa cento e vinte dólares.|Can I try it first?|Posso testar antes?
+R: Is the bike still for sale?|A bicicleta ainda está à venda?
+R: Is the bike in good condition?|A bicicleta está em boas condições?
+R: How much do you want for it?|Quanto você quer por ela?
+R: Can I try it first?|Posso testar antes?
+X: Go around the block.|Dê uma volta na quadra.
+C: Comprar e vender itens usados, em sites e aplicativos locais, é muito comum nos EUA, principalmente móveis e bicicletas.
+
+T: Money for the future | Desafio do arco: planejar o uso do dinheiro | living | Seattle | Mia,f,👩🏻,amiga
+K: I am going to save money for a trip. | Vou guardar dinheiro para uma viagem.
+M: Desafio: fale de renda, gastos, economia e uma meta de compra.
+D: Mia|Do you have a plan for your money this year?|Você tem um plano para seu dinheiro este ano?
+D: You|Yes. I earn about two thousand dollars a month, and I spend fifteen hundred.|Sim. Ganho cerca de dois mil dólares por mês e gasto mil e quinhentos.
+D: Mia|So you can save five hundred. What is your goal?|Então você pode guardar quinhentos. Qual é sua meta?
+D: You|I am going to save money for a trip to Europe next summer.|Vou guardar dinheiro para uma viagem à Europa no próximo verão.
+D: Mia|How much will the trip cost?|Quanto vai custar a viagem?
+D: You|About three thousand dollars, with the flight and the hotel.|Cerca de três mil dólares, com o voo e o hotel.
+D: Mia|You need six months. Do you have a savings account?|Você precisa de seis meses. Você tem uma conta poupança?
+D: You|Yes, and I put in money on the first day of every month.|Sim, e coloco dinheiro no primeiro dia de todo mês.
+V: plan|plano;goal|meta;Europe|Europa;flight|voo;summer|verão
+B: I am going to save money for a {0}.|Vou guardar dinheiro para {0}.|trip to Europe=uma viagem à Europa;new laptop=um notebook novo;car=um carro
+B: I put in money on the first day of every {0}.|Coloco dinheiro no primeiro dia de todo {0}.|month=mês;week=semana;year=ano
+S: Mia|What is your goal?|Qual é sua meta?|I am going to save money for a trip to Europe.|Vou guardar dinheiro para uma viagem à Europa.
+S: Mia|How much will the trip cost?|Quanto vai custar a viagem?|About three thousand dollars.|Cerca de três mil dólares.
+R: I am going to save money for a trip.|Vou guardar dinheiro para uma viagem.
+R: I earn about two thousand dollars a month.|Ganho cerca de dois mil dólares por mês.
+R: The trip will cost three thousand dollars.|A viagem vai custar três mil dólares.
+R: I put in money every month.|Coloco dinheiro todo mês.
+X: Do you have a plan?|Você tem um plano?
+C: Definir uma meta de economia com valor e prazo ajuda muito a transformar um sonho em plano concreto.

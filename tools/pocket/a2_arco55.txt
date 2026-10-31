@@ -1,0 +1,253 @@
+# Arco 55 · Comida do mundo
+T: Mexican tacos | Pedir tacos | street | Los Angeles | Rosa,f,👩🏽,vendedora
+K: I would like three tacos, please. | Eu gostaria de três tacos, por favor.
+M: Hoje você pede tacos numa barraca de rua.
+D: Rosa|Hello! What would you like today?|Olá! O que você gostaria hoje?
+D: You|I would like three tacos, please.|Eu gostaria de três tacos, por favor.
+D: Rosa|Beef, chicken or beans?|Carne, frango ou feijão?
+D: You|Two with beef and one with beans.|Dois de carne e um de feijão.
+D: Rosa|Do you want it spicy?|Você quer picante?
+D: You|A little spicy, please. Is the sauce hot?|Um pouco picante, por favor. O molho é forte?
+D: Rosa|Yes, it is very hot, but it is delicious.|Sim, é muito forte, mas é delicioso.
+D: You|Perfect. How much is it?|Perfeito. Quanto custa?
+V: taco|taco;beef|carne bovina;chicken|frango;beans|feijão;spicy|picante
+B: I would like {0} tacos, please.|Eu gostaria de {0} tacos, por favor.|three=três;two=dois;four=quatro
+B: Two with {0} and one with beans.|Dois de {0} e um de feijão.|beef=carne;chicken=frango;cheese=queijo
+S: Rosa|What would you like today?|O que você gostaria hoje?|I would like three tacos, please.|Eu gostaria de três tacos, por favor.
+S: Rosa|Do you want it spicy?|Você quer picante?|A little spicy, please.|Um pouco picante, por favor.
+R: What would you like today?|O que você gostaria hoje?
+R: I would like three tacos, please.|Eu gostaria de três tacos, por favor.
+R: Do you want it spicy?|Você quer picante?
+R: The sauce is very hot.|O molho é muito forte.
+X: Delicious.|Delicioso.
+C: Food trucks e barracas de tacos são comuns em Los Angeles e muitas vezes servem comida muito boa e barata.
+
+T: Italian pizza night | Pizza com amigos | cafe | Boston | Marco,m,👨🏻,garçom
+K: Let us share a big pizza. | Vamos dividir uma pizza grande.
+M: Hoje você escolhe uma pizza para dividir.
+D: Marco|Good evening! Here is the menu.|Boa noite! Aqui está o cardápio.
+D: You|Thank you. What is the best pizza?|Obrigado. Qual é a melhor pizza?
+D: Marco|The Margherita is our favorite. It has cheese and tomato.|A Margherita é a nossa favorita. Tem queijo e tomate.
+D: You|Let us share a big pizza with my friend.|Vamos dividir uma pizza grande com meu amigo.
+D: Marco|Good idea. Do you want mushrooms on it?|Boa ideia. Você quer cogumelos nela?
+D: You|No, thanks. Only cheese and tomato.|Não, obrigado. Só queijo e tomate.
+D: Marco|And something to drink?|E algo para beber?
+D: You|Two waters, please.|Duas águas, por favor.
+V: pizza|pizza;share|dividir;mushroom|cogumelo;cheese|queijo;menu|cardápio
+B: Let us share a {0} pizza.|Vamos dividir uma pizza {0}.|big=grande;small=pequena;large=gigante
+B: It has {0} and tomato.|Tem {0} e tomate.|cheese=queijo;onion=cebola;pepper=pimentão
+S: Marco|What is your favorite pizza?|Qual é a sua pizza favorita?|The Margherita. It has cheese and tomato.|A Margherita. Tem queijo e tomate.
+S: Marco|Do you want mushrooms?|Você quer cogumelos?|No, thanks. Only cheese and tomato.|Não, obrigado. Só queijo e tomate.
+R: Here is the menu.|Aqui está o cardápio.
+R: Let us share a big pizza.|Vamos dividir uma pizza grande.
+R: Do you want mushrooms on it?|Você quer cogumelos nela?
+R: Two waters, please.|Duas águas, por favor.
+X: Good idea.|Boa ideia.
+C: Pizzarias de bairro nos EUA vendem pizza grande para dividir, e cada fatia é chamada de "slice".
+
+T: Sushi for lunch | Almoço de sushi | cafe | Seattle | Yuki,f,👩🏻,garçonete
+K: I have never tried sushi. | Eu nunca experimentei sushi.
+M: Hoje você experimenta sushi pela primeira vez.
+D: Yuki|Welcome! Is this your first time here?|Bem-vindo! É a sua primeira vez aqui?
+D: You|Yes. I have never tried sushi.|Sim. Eu nunca experimentei sushi.
+D: Yuki|Then try a simple roll with rice, fish and cucumber.|Então experimente um rolinho simples com arroz, peixe e pepino.
+D: You|Is the fish raw?|O peixe é cru?
+D: Yuki|Yes, but we also have cooked shrimp.|Sim, mas também temos camarão cozido.
+D: You|I will take the shrimp roll, please.|Vou querer o rolinho de camarão, por favor.
+D: Yuki|Would you like soy sauce?|Você gostaria de molho de soja?
+D: You|Yes, thank you. This looks great.|Sim, obrigado. Isso parece ótimo.
+V: sushi|sushi;rice|arroz;fish|peixe;raw|cru;shrimp|camarão
+B: I have never tried {0}.|Eu nunca experimentei {0}.|sushi=sushi;pizza=pizza;tacos=tacos
+B: I will take the {0} roll.|Vou querer o rolinho de {0}.|shrimp=camarão;fish=peixe;egg=ovo
+S: Yuki|Is this your first time here?|É a sua primeira vez aqui?|Yes. I have never tried sushi.|Sim. Eu nunca experimentei sushi.
+S: Yuki|Is the fish raw?|O peixe é cru?|Yes, but we have cooked shrimp too.|Sim, mas temos camarão cozido também.
+R: Is this your first time here?|É a sua primeira vez aqui?
+R: I have never tried sushi.|Eu nunca experimentei sushi.
+R: Is the fish raw?|O peixe é cru?
+R: I will take the shrimp roll.|Vou querer o rolinho de camarão.
+X: This looks great.|Isso parece ótimo.
+C: Seattle tem muitos restaurantes de sushi, e muitos oferecem rolinhos cozidos para quem não gosta de peixe cru.
+
+T: Indian curry | Pedir um curry | cafe | Chicago | Raj,m,👨🏽,dono
+K: Is the curry mild or hot? | O curry é suave ou forte?
+M: Hoje você escolhe um curry num restaurante indiano.
+D: Raj|Hello, my friend! Table for one?|Olá, meu amigo! Mesa para um?
+D: You|Yes, please. What do you recommend?|Sim, por favor. O que você recomenda?
+D: Raj|The chicken curry is very popular.|O curry de frango é muito popular.
+D: You|Is the curry mild or hot?|O curry é suave ou forte?
+D: Raj|You can choose: mild, medium or hot.|Você pode escolher: suave, médio ou forte.
+D: You|Medium, please. And rice, too.|Médio, por favor. E arroz também.
+D: Raj|Do you want naan bread? It is fresh.|Você quer pão naan? É fresquinho.
+D: You|Yes, I want one. Thank you!|Sim, quero um. Obrigado!
+V: curry|curry;mild|suave;medium|médio;bread|pão;fresh|fresco
+B: Is the curry {0}?|O curry é {0}?|mild=suave;hot=forte;sweet=doce
+B: You can choose: mild, medium or {0}.|Você pode escolher: suave, médio ou {0}.|hot=forte;spicy=picante;extra hot=extra forte
+S: Raj|What do you recommend?|O que você recomenda?|The chicken curry is popular. Is it mild or hot?|O curry de frango é popular. É suave ou forte?
+S: Raj|Do you want naan bread?|Você quer pão naan?|Yes, I want one. Thank you!|Sim, quero um. Obrigado!
+R: What do you recommend?|O que você recomenda?
+R: Is the curry mild or hot?|O curry é suave ou forte?
+R: You can choose medium.|Você pode escolher médio.
+R: Do you want naan bread?|Você quer pão naan?
+X: What do you recommend?|O que você recomenda?
+C: Em restaurantes indianos nos EUA, você normalmente escolhe o nível de tempero: suave, médio ou forte.
+
+T: A Chinese dinner | Jantar chinês | cafe | San Francisco | Lin,f,👩🏻,garçonete
+K: Let us order food for the table. | Vamos pedir comida para a mesa.
+M: Hoje você pede vários pratos para dividir.
+D: Lin|Hi! Are you ready to order?|Oi! Vocês estão prontos para pedir?
+D: You|Yes. Let us order food for the table.|Sim. Vamos pedir comida para a mesa.
+D: Lin|Many people share three or four dishes.|Muita gente divide três ou quatro pratos.
+D: You|Then we will take noodles, vegetables and chicken.|Então vamos querer macarrão, legumes e frango.
+D: Lin|Good choice. Do you want chopsticks or a fork?|Boa escolha. Vocês querem hashi ou garfo?
+D: You|Chopsticks, please. I want to practice.|Hashi, por favor. Quero praticar.
+D: Lin|No problem. I can show you how.|Sem problema. Posso mostrar como.
+D: You|That is very kind. Thank you!|Isso é muito gentil. Obrigado!
+V: noodles|macarrão;vegetables|legumes;chopsticks|hashi;fork|garfo;dish|prato
+B: Let us order {0} for the table.|Vamos pedir {0} para a mesa.|food=comida;noodles=macarrão;rice=arroz
+B: Do you want chopsticks or a {0}?|Você quer hashi ou {0}?|fork=garfo;spoon=colher;knife=faca
+S: Lin|Are you ready to order?|Vocês estão prontos para pedir?|Yes. Let us order food for the table.|Sim. Vamos pedir comida para a mesa.
+S: Lin|Chopsticks or a fork?|Hashi ou garfo?|Chopsticks, please. I want to practice.|Hashi, por favor. Quero praticar.
+R: Are you ready to order?|Vocês estão prontos para pedir?
+R: Let us order food for the table.|Vamos pedir comida para a mesa.
+R: Chopsticks, please.|Hashi, por favor.
+R: I can show you how.|Posso mostrar como.
+X: That is very kind.|Isso é muito gentil.
+C: Em restaurantes chineses, é comum dividir vários pratos no centro da mesa, em vez de cada um comer só o seu.
+
+T: Breakfast diner | Café da manhã americano | cafe | Denver | Dan,m,👨🏼,cozinheiro
+K: I usually have eggs and toast. | Eu costumo tomar ovos e torrada.
+M: Hoje você pede o café da manhã num diner.
+D: Dan|Good morning! Coffee?|Bom dia! Café?
+D: You|Yes, please. And I would like breakfast.|Sim, por favor. E eu gostaria de café da manhã.
+D: Dan|We have eggs, pancakes and toast.|Temos ovos, panquecas e torrada.
+D: You|I usually have eggs and toast.|Eu costumo tomar ovos e torrada.
+D: Dan|How do you want your eggs?|Como você quer os ovos?
+D: You|Scrambled, please.|Mexidos, por favor.
+D: Dan|Coming right up. Anything else?|Já saindo. Mais alguma coisa?
+D: You|A glass of orange juice, please.|Um copo de suco de laranja, por favor.
+V: egg|ovo;toast|torrada;pancake|panqueca;juice|suco;scrambled|mexido
+B: I usually have {0} and toast.|Eu costumo tomar {0} e torrada.|eggs=ovos;butter=manteiga;jam=geleia
+B: I would like a glass of {0}.|Eu gostaria de um copo de {0}.|orange juice=suco de laranja;milk=leite;water=água
+S: Dan|What would you like for breakfast?|O que você gostaria de tomar no café?|I usually have eggs and toast.|Eu costumo tomar ovos e torrada.
+S: Dan|How do you want your eggs?|Como você quer os ovos?|Scrambled, please.|Mexidos, por favor.
+R: Coffee, please.|Café, por favor.
+R: I usually have eggs and toast.|Eu costumo tomar ovos e torrada.
+R: How do you want your eggs?|Como você quer os ovos?
+R: A glass of orange juice, please.|Um copo de suco de laranja, por favor.
+X: Coming right up.|Já saindo.
+C: Nos diners americanos, o café é muitas vezes reabastecido de graça durante a refeição.
+
+T: A French bakery | Padaria francesa | cafe | Portland | Claire,f,👩🏼,padeira
+K: Can I try a small piece? | Posso provar um pedacinho?
+M: Hoje você compra pães e doces numa padaria.
+D: Claire|Hello! Our bread is fresh from the oven.|Olá! Nosso pão está saindo do forno.
+D: You|It smells wonderful. What is that?|O cheiro está ótimo. O que é isso?
+D: Claire|That is a croissant. It has a lot of butter.|Isso é um croissant. Tem muita manteiga.
+D: You|Can I try a small piece?|Posso provar um pedacinho?
+D: Claire|Of course. Here you are.|Claro. Aqui está.
+D: You|It is delicious! I will take two, please.|É delicioso! Vou levar dois, por favor.
+D: Claire|Anything else? Maybe a baguette?|Mais alguma coisa? Talvez uma baguete?
+D: You|Yes, one baguette. How much is everything?|Sim, uma baguete. Quanto fica tudo?
+V: bakery|padaria;croissant|croissant;oven|forno;piece|pedaço;smell|cheirar
+B: Can I try a small {0}?|Posso provar um {0} pequeno?|piece=pedaço;slice=fatia;bite=pedacinho
+B: I will take {0}, please.|Vou levar {0}, por favor.|two=dois;three=três;one baguette=uma baguete
+S: Claire|Our bread is fresh from the oven.|Nosso pão está saindo do forno.|It smells wonderful. Can I try a small piece?|O cheiro está ótimo. Posso provar um pedacinho?
+S: Claire|Anything else?|Mais alguma coisa?|Yes, one baguette. How much is everything?|Sim, uma baguete. Quanto fica tudo?
+R: Our bread is fresh.|Nosso pão está fresco.
+R: Can I try a small piece?|Posso provar um pedacinho?
+R: It is delicious!|É delicioso!
+R: I will take two, please.|Vou levar dois, por favor.
+X: Of course.|Claro.
+C: Muitas cidades americanas têm padarias artesanais que vendem pães e croissants frescos de manhã cedo.
+
+T: Greek salad | Salada grega | kitchen | Phoenix | Nina,f,👩🏻,amiga
+K: We need olives and cheese. | Precisamos de azeitonas e queijo.
+M: Hoje você faz uma salada grega com uma amiga.
+D: Nina|Today we are making a Greek salad.|Hoje estamos fazendo uma salada grega.
+D: You|Great! What do we need?|Ótimo! O que precisamos?
+D: Nina|We need tomatoes, cucumbers, olives and cheese.|Precisamos de tomates, pepinos, azeitonas e queijo.
+D: You|I can cut the tomatoes.|Eu posso cortar os tomates.
+D: Nina|Good. I will cut the cucumbers.|Bom. Eu vou cortar os pepinos.
+D: You|Should we add some oil?|Devemos pôr um pouco de azeite?
+D: Nina|Yes, olive oil and a little salt.|Sim, azeite e um pouco de sal.
+D: You|It looks fresh and colorful!|Parece fresco e colorido!
+V: salad|salada;olive|azeitona;cucumber|pepino;oil|azeite;salt|sal
+B: We need {0} and cheese.|Precisamos de {0} e queijo.|olives=azeitonas;tomatoes=tomates;cucumbers=pepinos
+B: I can cut the {0}.|Eu posso cortar os {0}.|tomatoes=tomates;onions=cebolas;peppers=pimentões
+S: Nina|What do we need for the salad?|O que precisamos para a salada?|We need tomatoes, olives and cheese.|Precisamos de tomates, azeitonas e queijo.
+S: Nina|Should we add some oil?|Devemos pôr um pouco de azeite?|Yes, olive oil and a little salt.|Sim, azeite e um pouco de sal.
+R: Today we are making a Greek salad.|Hoje estamos fazendo uma salada grega.
+R: We need olives and cheese.|Precisamos de azeitonas e queijo.
+R: I can cut the tomatoes.|Eu posso cortar os tomates.
+R: It looks fresh and colorful!|Parece fresco e colorido!
+X: Good idea.|Boa ideia.
+C: Saladas simples de legumes frescos são populares no verão em cidades quentes como Phoenix.
+
+T: Barbecue day | Dia de churrasco | park | Austin | Jim,m,👨🏼,anfitrião
+K: The meat will be ready soon. | A carne vai ficar pronta logo.
+M: Hoje você ajuda num churrasco no parque.
+D: Jim|Welcome to our barbecue! Are you hungry?|Bem-vindo ao nosso churrasco! Você está com fome?
+D: You|Yes, very hungry. It smells great!|Sim, muita fome. O cheiro está ótimo!
+D: Jim|The meat will be ready soon.|A carne vai ficar pronta logo.
+D: You|Can I help with something?|Posso ajudar em alguma coisa?
+D: Jim|Yes, please bring the plates and napkins.|Sim, por favor traga os pratos e os guardanapos.
+D: You|Sure. Where are they?|Claro. Onde estão?
+D: Jim|They are on the blue table, near the drinks.|Estão na mesa azul, perto das bebidas.
+D: You|Got it. I will bring them now.|Entendi. Vou trazer agora.
+V: barbecue|churrasco;meat|carne;plate|prato;napkin|guardanapo;hungry|com fome
+B: The {0} will be ready soon.|{0} vai ficar pronta logo.|meat=a carne;chicken=o frango;corn=o milho
+B: Please bring the {0}.|Por favor traga {0}.|plates=os pratos;napkins=os guardanapos;drinks=as bebidas
+S: Jim|Are you hungry?|Você está com fome?|Yes, very hungry. It smells great!|Sim, muita fome. O cheiro está ótimo!
+S: Jim|Please bring the plates.|Por favor traga os pratos.|Sure. Where are they?|Claro. Onde estão?
+R: Are you hungry?|Você está com fome?
+R: The meat will be ready soon.|A carne vai ficar pronta logo.
+R: Can I help with something?|Posso ajudar em alguma coisa?
+R: They are on the blue table.|Estão na mesa azul.
+X: Got it.|Entendi.
+C: O barbecue americano, principalmente no Texas, é uma tradição social: a carne cozinha devagar e a família toda se reúne.
+
+T: Dessert time today | Hora da sobremesa | cafe | Chicago | Eva,f,👩🏼,garçonete
+K: I am too full for dessert. | Estou cheio demais para sobremesa.
+M: Hoje você escolhe uma sobremesa ou recusa com educação.
+D: Eva|Did you enjoy your dinner?|Você gostou do jantar?
+D: You|Yes, it was delicious, thank you.|Sim, estava delicioso, obrigado.
+D: Eva|Would you like some dessert?|Você gostaria de uma sobremesa?
+D: You|What do you have?|O que vocês têm?
+D: Eva|We have chocolate cake, ice cream and apple pie.|Temos bolo de chocolate, sorvete e torta de maçã.
+D: You|I am too full for dessert, but my friend wants cake.|Estou cheio demais para sobremesa, mas meu amigo quer bolo.
+D: Eva|No problem. One cake and the check?|Sem problema. Um bolo e a conta?
+D: You|Yes, and two forks, please.|Sim, e dois garfos, por favor.
+V: dessert|sobremesa;cake|bolo;ice cream|sorvete;pie|torta;full|cheio
+B: I am too {0} for dessert.|Estou {0} demais para sobremesa.|full=cheio;tired=cansado;late=atrasado
+B: We have {0} and ice cream.|Temos {0} e sorvete.|chocolate cake=bolo de chocolate;apple pie=torta de maçã;cheesecake=cheesecake
+S: Eva|Would you like some dessert?|Você gostaria de uma sobremesa?|I am too full, but my friend wants cake.|Estou cheio, mas meu amigo quer bolo.
+S: Eva|One cake and the check?|Um bolo e a conta?|Yes, and two forks, please.|Sim, e dois garfos, por favor.
+R: Did you enjoy your dinner?|Você gostou do jantar?
+R: Would you like some dessert?|Você gostaria de uma sobremesa?
+R: I am too full for dessert.|Estou cheio demais para sobremesa.
+R: Two forks, please.|Dois garfos, por favor.
+X: No problem.|Sem problema.
+C: Nos EUA é normal dividir uma sobremesa grande entre duas ou mais pessoas.
+
+T: My favorite food | Minha comida favorita | cafe | Seattle | Sam,m,👨🏽,amigo
+K: My favorite food is pasta. | Minha comida favorita é macarrão.
+M: Hoje você conta qual é a sua comida favorita.
+D: Sam|What is your favorite food?|Qual é a sua comida favorita?
+D: You|My favorite food is pasta. What about you?|Minha comida favorita é macarrão. E a sua?
+D: Sam|I like tacos the most. They are my favorite.|Eu gosto mais de tacos. São os meus favoritos.
+D: You|Do you cook at home?|Você cozinha em casa?
+D: Sam|Yes, I cook on weekends. I want to learn new dishes.|Sim, cozinho nos fins de semana. Quero aprender pratos novos.
+D: You|I can teach you my pasta recipe.|Posso te ensinar minha receita de macarrão.
+D: Sam|That sounds great. When can we start?|Parece ótimo. Quando podemos começar?
+D: You|How about this Saturday?|Que tal este sábado?
+V: favorite|favorito;recipe|receita;cook|cozinhar;weekend|fim de semana;teach|ensinar
+B: My favorite food is {0}.|Minha comida favorita é {0}.|pasta=macarrão;pizza=pizza;rice and beans=arroz e feijão
+B: I can teach you my {0}.|Posso te ensinar minha {0}.|recipe=receita;pasta recipe=receita de macarrão;cake recipe=receita de bolo
+S: Sam|What is your favorite food?|Qual é a sua comida favorita?|My favorite food is pasta. What about you?|Minha comida favorita é macarrão. E a sua?
+S: Sam|Do you cook at home?|Você cozinha em casa?|Yes, on weekends. I can teach you my recipe.|Sim, nos fins de semana. Posso te ensinar minha receita.
+R: What is your favorite food?|Qual é a sua comida favorita?
+R: My favorite food is pasta.|Minha comida favorita é macarrão.
+R: Do you cook at home?|Você cozinha em casa?
+R: How about this Saturday?|Que tal este sábado?
+X: That sounds great.|Parece ótimo.
+C: Trocar receitas é uma ótima forma de fazer amizades e praticar inglês com vizinhos.

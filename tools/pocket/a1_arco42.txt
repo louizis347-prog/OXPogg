@@ -1,0 +1,241 @@
+# Arco 42 · Vizinhos e condomínio
+T: Meet the neighbor | Cumprimentar o vizinho | street | Boston | Ruth,f,👩🏻,vizinha
+K: I live in apartment four. | Moro no apartamento quatro.
+M: Hoje você se apresenta ao vizinho.
+D: Ruth|Hello! Are you my new neighbor?|Olá! Você é o meu novo vizinho?
+D: You|Yes. I live in apartment four.|Sou. Moro no apartamento quatro.
+D: Ruth|Nice to meet you. I live in apartment five.|Prazer. Moro no apartamento cinco.
+D: You|Is it a quiet building?|O prédio é calmo?
+D: Ruth|Very quiet. The people are kind.|Muito calmo. As pessoas são gentis.
+D: You|Good. I work in the day and sleep at night.|Ótimo. Trabalho de dia e durmo à noite.
+D: Ruth|Then we are a perfect match!|Então combinamos perfeitamente!
+D: You|Thank you for the welcome.|Obrigado pela recepção.
+V: neighbor|vizinha;apartment|apartamento;building|prédio;quiet|calmo;kind|gentis
+B: I live in apartment {0}.|Moro no apartamento {0}.|four=quatro;five=cinco;ten=dez
+B: The people are {0}.|As pessoas são {0}.|kind=gentis;friendly=simpáticas;quiet=calmas
+S: Ruth|Hello! Are you my new neighbor?|Olá! Você é o meu novo vizinho?|Yes. I live in apartment four.|Sou. Moro no apartamento quatro.
+S: Ruth|Very quiet. The people are kind.|Muito calmo. As pessoas são gentis.|Good. I work in the day and sleep at night.|Ótimo. Trabalho de dia e durmo à noite.
+R: Are you my new neighbor?|Você é o meu novo vizinho?
+R: I live in apartment four.|Moro no apartamento quatro.
+R: It is a quiet building.|É um prédio calmo.
+R: Thank you for the welcome.|Obrigado pela recepção.
+X: Nice to meet you.|Prazer.
+C: Nos EUA, é comum bater na porta do vizinho novo e dizer olá.
+N: Próximo: o elevador.
+
+T: In the elevator | No elevador | street | New York | Walt,m,🧑🏿,vizinho
+K: Which floor? | Qual andar?
+M: Hoje você conversa no elevador.
+D: Walt|Good morning. Which floor?|Bom dia. Qual andar?
+D: You|Floor six, please.|Sexto andar, por favor.
+D: Walt|I go to floor eight.|Eu vou para o oitavo.
+D: You|Is the elevator always slow?|O elevador é sempre lento?
+D: Walt|Yes, but the stairs are far.|É, mas a escada fica longe.
+D: You|It is only six floors.|São só seis andares.
+D: Walt|Ha! Here is your floor.|Ha! Chegamos ao seu andar.
+D: You|Have a nice day!|Tenha um bom dia!
+V: elevator|elevador;floor|andar;stairs|escada;slow|lento;always|sempre
+B: Floor {0}, please.|{0} andar, por favor.|six=Sexto;three=Terceiro;ten=Décimo
+B: The elevator is {0}.|O elevador é {0}.|slow=lento;fast=rápido;old=velho
+S: Walt|Good morning. Which floor?|Bom dia. Qual andar?|Floor six, please.|Sexto andar, por favor.
+S: Walt|Ha! Here is your floor.|Ha! Chegamos ao seu andar.|Have a nice day!|Tenha um bom dia!
+R: Which floor?|Qual andar?
+R: Floor six, please.|Sexto andar, por favor.
+R: The elevator is slow.|O elevador é lento.
+R: Have a nice day!|Tenha um bom dia!
+X: Which floor?|Qual andar?
+C: Nos EUA, o primeiro andar é "first floor" e o térreo costuma ser o "lobby".
+N: Próximo: o barulho.
+
+T: It is too loud | Pedir silêncio | living | Chicago | Ben,m,🧑🏽,vizinho
+K: The music is too loud. | A música está alta demais.
+M: Hoje você pede silêncio com educação.
+D: You|Excuse me. The music is too loud.|Com licença. A música está alta demais.
+D: Ben|Oh, I am sorry. What time is it?|Ah, desculpe. Que horas são?
+D: You|It is eleven at night.|São onze da noite.
+D: Ben|I turn it down now.|Eu abaixo agora.
+D: You|Thank you. I work early tomorrow.|Obrigado. Trabalho cedo amanhã.
+D: Ben|No problem. I am a musician.|Sem problema. Sou músico.
+D: You|Then play in the day, please.|Então toque de dia, por favor.
+D: Ben|Good idea. Good night!|Boa ideia. Boa noite!
+V: loud|alta;sorry|desculpe;turn down|abaixar;musician|músico;early|cedo
+B: The music is too {0}.|A música está {0} demais.|loud=alta;fast=rápida;late=tarde
+B: I turn it {0}.|Eu {0}.|down=abaixo;off=desligo;on=ligo
+S: You|Excuse me. The music is too loud.|Com licença. A música está alta demais.|Oh, I am sorry. What time is it?|Ah, desculpe. Que horas são?
+S: Ben|No problem. I am a musician.|Sem problema. Sou músico.|Then play in the day, please.|Então toque de dia, por favor.
+R: The music is too loud.|A música está alta demais.
+R: It is eleven at night.|São onze da noite.
+R: I turn it down.|Eu abaixo.
+R: Good night!|Boa noite!
+X: I am sorry.|Desculpe.
+C: Nos EUA, o horário de silêncio em prédios costuma ser depois das 22h.
+N: Próximo: a lixeira.
+
+T: Trash day | Dia do lixo | street | Seattle | Max,m,🧑🏼,vizinho
+K: Where do I put the trash? | Onde ponho o lixo?
+M: Hoje você aprende como separar o lixo.
+D: You|Excuse me. Where do I put the trash?|Com licença. Onde ponho o lixo?
+D: Max|The bins are behind the building.|As lixeiras ficam atrás do prédio.
+D: You|Which bin is for paper?|Qual lixeira é para papel?
+D: Max|The blue one. The green one is for glass.|A azul. A verde é para vidro.
+D: You|And plastic?|E plástico?
+D: Max|The yellow bin.|A lixeira amarela.
+D: You|When do they come?|Quando eles recolhem?
+D: Max|On Tuesday and Friday.|Terça e sexta.
+V: trash|lixo;bins|lixeiras;glass|vidro;plastic|plástico;paper|papel
+B: The blue bin is for {0}.|A lixeira azul é para {0}.|paper=papel;glass=vidro;plastic=plástico
+B: They come on {0}.|Eles recolhem {0}.|Tuesday=terça;Friday=sexta;Monday=segunda
+S: You|Excuse me. Where do I put the trash?|Com licença. Onde ponho o lixo?|The bins are behind the building.|As lixeiras ficam atrás do prédio.
+S: You|When do they come?|Quando eles recolhem?|On Tuesday and Friday.|Terça e sexta.
+R: Where do I put the trash?|Onde ponho o lixo?
+R: The bins are behind the building.|As lixeiras ficam atrás do prédio.
+R: The blue bin is for paper.|A lixeira azul é para papel.
+R: They come on Tuesday and Friday.|Eles recolhem terça e sexta.
+X: Behind the building.|Atrás do prédio.
+C: Nos EUA, cada cidade tem seu calendário de coleta e de reciclagem.
+N: Próximo: a lavanderia do prédio.
+
+T: The building laundry | Lavanderia do prédio | kitchen | Boston | Ruth,f,👩🏻,vizinha
+K: Is the washer free? | A máquina está livre?
+M: Hoje você usa a lavanderia compartilhada.
+D: You|Excuse me. Is the washer free?|Com licença. A máquina de lavar está livre?
+D: Ruth|Yes, number two is free.|Sim, a número dois está livre.
+D: You|How do I start it?|Como eu ligo?
+D: Ruth|Put the clothes in and press the button.|Ponha as roupas e aperte o botão.
+D: You|Do I need coins?|Preciso de moedas?
+D: Ruth|Yes, three quarters.|Sim, três moedas de vinte e cinco.
+D: You|Thank you. I have them here.|Obrigado. Tenho aqui.
+D: Ruth|The dryer is next to it.|A secadora fica ao lado.
+V: washer|máquina de lavar;free|livre;clothes|roupas;coins|moedas;dryer|secadora
+B: Is the {0} free?|{0} está livre?|washer=A máquina de lavar;dryer=A secadora;table=A mesa
+B: Press the {0}.|Aperte {0}.|button=o botão;start=o iniciar;door=a porta
+S: You|Excuse me. Is the washer free?|Com licença. A máquina de lavar está livre?|Yes, number two is free.|Sim, a número dois está livre.
+S: You|Do I need coins?|Preciso de moedas?|Yes, three quarters.|Sim, três moedas de vinte e cinco.
+R: Is the washer free?|A máquina de lavar está livre?
+R: Put the clothes in.|Ponha as roupas.
+R: Press the button.|Aperte o botão.
+R: I need three quarters.|Preciso de três moedas de vinte e cinco.
+X: Number two.|A número dois.
+C: Em prédios americanos antigos, a lavanderia fica no subsolo.
+N: Próximo: o estacionamento.
+
+T: The parking lot | Estacionamento | street | Denver | Max,m,🧑🏼,vizinho
+K: This is my spot. | Esta é a minha vaga.
+M: Hoje você fala de vagas.
+D: Max|Excuse me. This is my parking spot.|Com licença. Esta é a minha vaga.
+D: You|Oh, sorry. Which one is mine?|Ah, desculpe. Qual é a minha?
+D: Max|Number twelve. It is over there.|Número doze. Fica ali.
+D: You|It has a small number on the wall.|Tem um número pequeno na parede.
+D: Max|Yes. And visitors park outside.|Sim. E visitantes estacionam fora.
+D: You|Is the lot safe at night?|O estacionamento é seguro à noite?
+D: Max|Yes, there is a camera.|Sim, tem uma câmera.
+D: You|Great. Thank you.|Ótimo. Obrigado.
+V: parking|estacionamento;spot|vaga;visitors|visitantes;camera|câmera;wall|parede
+B: This is my {0}.|Esta é a minha {0}.|spot=vaga;car=carro;door=porta
+B: Is the lot {0} at night?|O estacionamento é {0} à noite?|safe=seguro;dark=escuro;open=aberto
+S: Max|Excuse me. This is my parking spot.|Com licença. Esta é a minha vaga.|Oh, sorry. Which one is mine?|Ah, desculpe. Qual é a minha?
+S: You|Is the lot safe at night?|O estacionamento é seguro à noite?|Yes, there is a camera.|Sim, tem uma câmera.
+R: This is my parking spot.|Esta é a minha vaga.
+R: Which one is mine?|Qual é a minha?
+R: Number twelve.|Número doze.
+R: There is a camera.|Tem uma câmera.
+X: Sorry.|Desculpe.
+C: Em prédios americanos, cada apartamento costuma ter uma vaga numerada.
+N: Próximo: o jardim comunitário.
+
+T: The shared garden | Jardim compartilhado | park | Portland | Rosa,f,👩🏽,vizinha
+K: We share a garden. | Nós dividimos um jardim.
+M: Hoje você cuida do jardim do prédio.
+D: Rosa|Welcome to our shared garden.|Bem-vindo ao nosso jardim compartilhado.
+D: You|It is lovely. What do you grow?|É lindo. O que vocês plantam?
+D: Rosa|Tomatoes, herbs and flowers.|Tomates, ervas e flores.
+D: You|Can I help?|Posso ajudar?
+D: Rosa|Yes. Water the plants every morning.|Sim. Regue as plantas toda manhã.
+D: You|Where is the watering can?|Onde está o regador?
+D: Rosa|It is under the bench.|Está debaixo do banco.
+D: You|I love gardens. I help every day.|Eu adoro jardins. Ajudo todo dia.
+V: garden|jardim;herbs|ervas;water|regar;plants|plantas;bench|banco
+B: Water the {0} every morning.|Regue {0} toda manhã.|plants=as plantas;flowers=as flores;herbs=as ervas
+B: The watering can is {0}.|O regador está {0}.|under the bench=debaixo do banco;in the garden=no jardim;by the door=perto da porta
+S: Rosa|Welcome to our shared garden.|Bem-vindo ao nosso jardim compartilhado.|It is lovely. What do you grow?|É lindo. O que vocês plantam?
+S: Rosa|Yes. Water the plants every morning.|Sim. Regue as plantas toda manhã.|Where is the watering can?|Onde está o regador?
+R: Welcome to our shared garden.|Bem-vindo ao nosso jardim compartilhado.
+R: We grow tomatoes and herbs.|Plantamos tomates e ervas.
+R: Water the plants every morning.|Regue as plantas toda manhã.
+R: I help every day.|Ajudo todo dia.
+X: Can I help?|Posso ajudar?
+C: Hortas comunitárias são comuns nas cidades americanas.
+N: Próximo: o aviso no mural.
+
+T: A note on the board | Aviso no mural | street | Chicago | Dan,m,🧑🏽,síndico
+K: Read the notice. | Leia o aviso.
+M: Hoje você lê um aviso do prédio.
+D: Dan|Do you see the note on the board?|Você vê o aviso no mural?
+D: You|No. What does it say?|Não. O que diz?
+D: Dan|The water is off on Monday morning.|A água está desligada na segunda de manhã.
+D: You|For how long?|Por quanto tempo?
+D: Dan|From eight to twelve.|Das oito às doze.
+D: You|Thank you. I fill some bottles.|Obrigado. Encho algumas garrafas.
+D: Dan|Good idea. Also, no parking on Tuesday.|Boa ideia. Também, sem estacionar na terça.
+D: You|I write it in my calendar.|Anoto na minha agenda.
+V: note|aviso;board|mural;water|água;bottles|garrafas;calendar|agenda
+B: The water is off on {0}.|A água está desligada na {0}.|Monday=segunda;Tuesday=terça;Friday=sexta
+B: From {0} to twelve.|Das {0} às doze.|eight=oito;nine=nove;ten=dez
+S: Dan|Do you see the note on the board?|Você vê o aviso no mural?|No. What does it say?|Não. O que diz?
+S: Dan|From eight to twelve.|Das oito às doze.|Thank you. I fill some bottles.|Obrigado. Encho algumas garrafas.
+R: What does it say?|O que diz?
+R: The water is off on Monday.|A água está desligada na segunda.
+R: From eight to twelve.|Das oito às doze.
+R: I write it in my calendar.|Anoto na minha agenda.
+X: Good idea.|Boa ideia.
+C: Murais de avisos são comuns no hall de entrada dos prédios.
+N: Próximo: a reunião do prédio.
+
+T: The building meeting | Reunião do condomínio | office | Austin | Dan,m,🧑🏽,síndico
+K: We have a meeting tonight. | Temos reunião hoje à noite.
+M: Hoje você vai à reunião do prédio.
+D: Dan|Welcome to the building meeting.|Bem-vindo à reunião do prédio.
+D: You|Thank you. What do we talk about?|Obrigado. Sobre o que falamos?
+D: Dan|The garden, the trash and the noise.|O jardim, o lixo e o barulho.
+D: You|I have an idea for the garden.|Tenho uma ideia para o jardim.
+D: Dan|Please say it to the group.|Diga ao grupo, por favor.
+D: You|Let us plant more flowers.|Vamos plantar mais flores.
+D: Dan|Great idea. Who agrees?|Ótima ideia. Quem concorda?
+D: You|I think everyone agrees.|Acho que todos concordam.
+V: meeting|reunião;idea|ideia;group|grupo;agrees|concorda;noise|barulho
+B: We talk about the {0}.|Falamos sobre {0}.|garden=o jardim;trash=o lixo;noise=o barulho
+B: Who {0}?|Quem {0}?|agrees=concorda;helps=ajuda;votes=vota
+S: Dan|Welcome to the building meeting.|Bem-vindo à reunião do prédio.|Thank you. What do we talk about?|Obrigado. Sobre o que falamos?
+S: Dan|Great idea. Who agrees?|Ótima ideia. Quem concorda?|I think everyone agrees.|Acho que todos concordam.
+R: We have a meeting tonight.|Temos reunião hoje à noite.
+R: I have an idea.|Tenho uma ideia.
+R: Let us plant more flowers.|Vamos plantar mais flores.
+R: Who agrees?|Quem concorda?
+X: Great idea.|Ótima ideia.
+C: Reuniões de condomínio servem para votar mudanças e resolver problemas do prédio.
+N: Próximo: desafio, o seu prédio.
+
+T: My building | Desafio do arco: descrever o seu prédio | street | Boston | Ruth,f,👩🏻,vizinha
+K: I like my building. | Eu gosto do meu prédio.
+M: Hoje você descreve o prédio onde mora.
+D: Ruth|Tell me about your building.|Fale do seu prédio.
+D: You|It has ten floors and an elevator.|Tem dez andares e um elevador.
+D: Ruth|Are the neighbors nice?|Os vizinhos são legais?
+D: You|Yes, they are kind and quiet.|São, gentis e calmos.
+D: Ruth|Is there a garden?|Tem jardim?
+D: You|Yes, behind the building.|Tem, atrás do prédio.
+D: Ruth|It sounds perfect.|Parece perfeito.
+D: You|I like my building very much.|Gosto muito do meu prédio.
+V: building|prédio;floors|andares;elevator|elevador;nice|legais;garden|jardim
+B: It has {0} floors.|Tem {0} andares.|ten=dez;five=cinco;twenty=vinte
+B: The neighbors are {0}.|Os vizinhos são {0}.|nice=legais;kind=gentis;quiet=calmos
+S: Ruth|Tell me about your building.|Fale do seu prédio.|It has ten floors and an elevator.|Tem dez andares e um elevador.
+S: Ruth|Is there a garden?|Tem jardim?|Yes, behind the building.|Tem, atrás do prédio.
+R: Tell me about your building.|Fale do seu prédio.
+R: It has ten floors.|Tem dez andares.
+R: The neighbors are kind and quiet.|Os vizinhos são gentis e calmos.
+R: I like my building very much.|Gosto muito do meu prédio.
+X: It sounds perfect.|Parece perfeito.
+C: Descrever sua casa é um dos primeiros assuntos de conversa em inglês.
+N: Próximo: dinossauros.
+BOSS: 1

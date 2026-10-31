@@ -1,0 +1,230 @@
+# Arco 18 · Cidade, serviços e emergências
+T: Is there a pharmacy around here? | Perguntar por serviços próximos | street | Seattle | Ruth,f,👩🏻,moradora
+K: Is there a pharmacy around here? | Tem alguma farmácia por aqui?
+M: Hoje você procura serviços perto de você.
+D: You|Excuse me. Is there a pharmacy around here?|Com licença. Tem alguma farmácia por aqui?
+D: Ruth|Yes, there is one on Pine Street, next to the bakery.|Sim, tem uma na Rua Pine, ao lado da padaria.
+D: You|Is it open now?|Está aberta agora?
+D: Ruth|It closes at ten, so you have time.|Fecha às dez, então você tem tempo.
+D: You|And is there an ATM near it?|E tem caixa eletrônico perto?
+D: Ruth|There is one inside the supermarket across the street.|Tem um dentro do supermercado do outro lado da rua.
+D: You|That is perfect. Thank you for your help.|Perfeito. Obrigado pela ajuda.
+D: Ruth|Anytime. Take care!|Quando quiser. Se cuide!
+V: around here|por aqui;closes|fecha;ATM|caixa eletrônico;inside|dentro;across the street|do outro lado da rua
+B: Is there a {0} around here?|Tem {0} por aqui?|pharmacy=uma farmácia;bank=um banco;hospital=um hospital
+B: It closes at {0}.|Fecha às {0}.|ten=dez;six=seis;nine thirty=nove e meia
+S: Ruth|Can I help you?|Posso ajudar?|Is there a pharmacy around here?|Tem uma farmácia por aqui?
+S: Ruth|It closes at ten.|Fecha às dez.|Is there an ATM near it?|Tem caixa eletrônico perto?
+R: Is there a pharmacy around here?|Tem uma farmácia por aqui?
+R: It is next to the bakery.|Fica ao lado da padaria.
+R: It closes at ten.|Fecha às dez.
+R: There is an ATM across the street.|Tem um caixa eletrônico do outro lado da rua.
+X: Take care!|Se cuide!
+C: Farmácias grandes nos EUA, como CVS e Walgreens, abrem até tarde e algumas funcionam 24 horas.
+
+T: Call 911 | Pedir ajuda numa emergência | street | Chicago | Officer Cole,m,🧑🏽,atendente
+K: There has been an accident. | Houve um acidente.
+M: Hoje você descreve uma emergência com calma e clareza.
+D: Officer Cole|Nine one one, what is your emergency?|Nove um um, qual é a sua emergência?
+D: You|There has been an accident. A car hit a bike.|Houve um acidente. Um carro bateu numa bicicleta.
+D: Officer Cole|Where are you exactly?|Onde você está exatamente?
+D: You|On Main Street, in front of the library.|Na Rua Principal, em frente à biblioteca.
+D: Officer Cole|Is anyone hurt?|Alguém está ferido?
+D: You|Yes, the cyclist is on the ground. He is awake but his leg hurts.|Sim, o ciclista está no chão. Está acordado, mas a perna dói.
+D: Officer Cole|Stay calm. Help is on the way. Do not move him.|Fique calmo. A ajuda está a caminho. Não o mova.
+D: You|Okay. Please hurry.|Ok. Por favor, venham rápido.
+V: emergency|emergência;accident|acidente;exactly|exatamente;cyclist|ciclista;calm|calmo
+B: There has been an {0}.|Houve um {0}.|accident=acidente;fire=incêndio;fall=tombo
+B: Help is {0}.|A ajuda {0}.|on the way=está a caminho;here=chegou;coming=está vindo
+S: Officer Cole|What is your emergency?|Qual é a sua emergência?|There has been an accident on Main Street.|Houve um acidente na Rua Principal.
+S: Officer Cole|Is anyone hurt?|Alguém está ferido?|Yes, the cyclist is on the ground.|Sim, o ciclista está no chão.
+R: There has been an accident.|Houve um acidente.
+R: I am on Main Street.|Estou na Rua Principal.
+R: He is awake but his leg hurts.|Ele está acordado, mas a perna dói.
+R: Help is on the way.|A ajuda está a caminho.
+X: Stay calm.|Fique calmo.
+C: Nos EUA, o número de emergência é 911, e atendentes treinados guiam a pessoa ao telefone até a ajuda chegar.
+
+T: I need to report a theft | Registrar um furto | hall | Phoenix | Officer Cole,m,🧑🏽,policial
+K: Someone stole my bag. | Alguém roubou minha bolsa.
+M: Hoje você registra um furto e descreve o que perdeu.
+D: You|Good afternoon. I need to report a theft.|Boa tarde. Preciso registrar um furto.
+D: Officer Cole|I am sorry to hear that. What happened?|Sinto muito. O que aconteceu?
+D: You|Someone stole my bag at the bus station.|Alguém roubou minha bolsa na rodoviária.
+D: Officer Cole|When did it happen?|Quando aconteceu?
+D: You|About an hour ago, around two o'clock.|Há cerca de uma hora, por volta das duas.
+D: Officer Cole|What was inside the bag?|O que havia dentro da bolsa?
+D: You|My wallet, my phone and my passport.|Minha carteira, meu celular e meu passaporte.
+D: Officer Cole|Please fill out this form. We will call you if we find it.|Preencha este formulário. Ligaremos se acharmos.
+V: report|registrar;theft|furto;stole|roubou;wallet|carteira;passport|passaporte
+B: Someone stole my {0}.|Alguém roubou {0}.|bag=minha bolsa;phone=meu celular;bike=minha bicicleta
+B: It happened about {0}.|Aconteceu há cerca de {0}.|an hour ago=uma hora;two days ago=dois dias;ten minutes ago=dez minutos
+S: Officer Cole|What happened?|O que aconteceu?|Someone stole my bag at the bus station.|Alguém roubou minha bolsa na rodoviária.
+S: Officer Cole|What was inside?|O que havia dentro?|My wallet, my phone and my passport.|Minha carteira, meu celular e meu passaporte.
+R: I need to report a theft.|Preciso registrar um furto.
+R: Someone stole my bag.|Alguém roubou minha bolsa.
+R: It happened an hour ago.|Aconteceu há uma hora.
+R: Please fill out this form.|Preencha este formulário.
+X: I am sorry to hear that.|Sinto muito ouvir isso.
+C: Após um furto, os registros da polícia ajudam na hora de pedir um novo passaporte ou acionar o seguro.
+
+T: A library card | Fazer o cartão da biblioteca | hall | Boston | Gina,f,👩🏻,bibliotecária
+K: I would like to get a library card. | Eu gostaria de fazer um cartão da biblioteca.
+M: Hoje você faz o cartão e pergunta sobre empréstimos.
+D: You|Hello. I would like to get a library card.|Olá. Eu gostaria de fazer um cartão da biblioteca.
+D: Gina|Of course. Do you have an ID and proof of address?|Claro. Você tem documento e comprovante de endereço?
+D: You|Yes, here are both.|Sim, aqui estão os dois.
+D: Gina|Please fill out this form. The card is free.|Preencha este formulário. O cartão é grátis.
+D: You|How many books can I borrow?|Quantos livros posso pegar emprestados?
+D: Gina|Ten books for three weeks. You can renew them online.|Dez livros por três semanas. Pode renovar online.
+D: You|Can I also borrow movies?|Posso pegar filmes emprestados também?
+D: Gina|Yes, and you can use the computers for an hour a day.|Sim, e pode usar os computadores por uma hora por dia.
+V: library card|cartão da biblioteca;proof|comprovante;renew|renovar;borrow|emprestar;computers|computadores
+B: I would like to get a {0}.|Eu gostaria de fazer {0}.|library card=um cartão da biblioteca;bank card=um cartão do banco;bus pass=um passe de ônibus
+B: You can renew them {0}.|Você pode renovar {0}.|online=online;by phone=por telefone;at the desk=no balcão
+S: Gina|Do you have an ID?|Você tem documento?|Yes, here are my ID and proof of address.|Sim, aqui estão meu documento e comprovante.
+S: Gina|You can borrow ten books.|Você pode pegar dez livros.|Can I also borrow movies?|Posso pegar filmes também?
+R: I would like to get a library card.|Gostaria de fazer um cartão da biblioteca.
+R: The card is free.|O cartão é grátis.
+R: Ten books for three weeks.|Dez livros por três semanas.
+R: You can renew them online.|Você pode renovar online.
+X: The card is free.|O cartão é grátis.
+C: Bibliotecas públicas americanas têm aulas de inglês, clubes de leitura e acesso gratuito a computadores.
+
+T: Filling out a form | Preencher um formulário | hall | Denver | Sam,m,🧑🏻,funcionário
+K: Please print your full name. | Escreva seu nome completo, por favor.
+M: Hoje você preenche um formulário com seus dados.
+D: Sam|Please fill out this form and sign at the bottom.|Preencha este formulário e assine embaixo.
+D: You|Okay. Should I write my full name?|Ok. Devo escrever meu nome completo?
+D: Sam|Yes, first name, middle name and last name.|Sim, nome, nome do meio e sobrenome.
+D: You|What does "date of birth" mean?|O que significa "date of birth"?
+D: Sam|It is the day you were born, month first, then day, then year.|É o dia em que você nasceu, mês primeiro, depois dia, depois ano.
+D: You|And "address"?|E "address"?
+D: Sam|Your street, number, city and zip code.|Sua rua, número, cidade e CEP.
+D: You|Done. Is there a fee?|Pronto. Tem taxa?
+V: form|formulário;sign|assinar;middle name|nome do meio;date of birth|data de nascimento;zip code|CEP
+B: Please fill out this {0}.|Preencha este {0}.|form=formulário;application=pedido;survey=questionário
+B: Write your {0}.|Escreva seu {0}.|full name=nome completo;address=endereço;phone number=número de telefone
+S: Sam|Please fill out this form.|Preencha este formulário.|What does date of birth mean?|O que significa date of birth?
+S: Sam|Month first, then day, then year.|Mês, depois dia, depois ano.|Okay. And my address?|Ok. E meu endereço?
+R: Please fill out this form.|Preencha este formulário.
+R: First name, middle name, last name.|Nome, nome do meio, sobrenome.
+R: What does date of birth mean?|O que significa date of birth?
+R: Sign at the bottom.|Assine embaixo.
+X: Month first, then day.|Mês primeiro, depois dia.
+C: Nos EUA, datas são escritas com o mês primeiro: 03/04 é 4 de março, não 3 de abril.
+
+T: The bus pass | Comprar um passe de ônibus | station | Atlanta | Dan,m,🧑🏽,atendente
+K: I would like a monthly pass. | Eu gostaria de um passe mensal.
+M: Hoje você compara tipos de passe e escolhe o melhor.
+D: You|Hi. I would like a monthly pass, please.|Oi. Eu gostaria de um passe mensal, por favor.
+D: Dan|Sure. A monthly pass is seventy-five dollars.|Claro. O passe mensal custa setenta e cinco dólares.
+D: You|How much is a single ride?|Quanto custa uma viagem avulsa?
+D: Dan|Two dollars and fifty cents.|Dois dólares e cinquenta.
+D: You|I take the bus twice a day, so the pass is cheaper.|Pego o ônibus duas vezes por dia, então o passe é mais barato.
+D: Dan|Exactly. You also get free transfers.|Exato. Você também tem baldeações grátis.
+D: You|Do students get a discount?|Estudantes têm desconto?
+D: Dan|Yes, half price with a student ID.|Sim, metade do preço com carteira de estudante.
+V: pass|passe;monthly|mensal;single ride|viagem avulsa;transfers|baldeações;discount|desconto
+B: I would like a {0} pass.|Eu gostaria de um passe {0}.|monthly=mensal;weekly=semanal;daily=diário
+B: Students get {0}.|Estudantes têm {0}.|half price=metade do preço;a discount=um desconto;free rides=viagens grátis
+S: Dan|A monthly pass is seventy-five.|O passe mensal custa setenta e cinco.|How much is a single ride?|Quanto custa uma viagem avulsa?
+S: Dan|You get free transfers.|Você tem baldeações grátis.|Do students get a discount?|Estudantes têm desconto?
+R: I would like a monthly pass.|Gostaria de um passe mensal.
+R: A single ride is two fifty.|Uma viagem avulsa custa dois e cinquenta.
+R: The pass is cheaper.|O passe é mais barato.
+R: Students get half price.|Estudantes pagam metade.
+X: Free transfers.|Baldeações grátis.
+C: Muitas cidades americanas têm passes mensais para ônibus e metrô, com descontos para estudantes e idosos.
+
+T: My car broke down | Pedir ajuda com problema no carro | street | Phoenix | Gus,m,🧑🏼,mecânico
+K: My car broke down on the highway. | Meu carro quebrou na estrada.
+M: Hoje você descreve um problema no carro e pede reboque.
+D: You|Hello. My car broke down on the highway.|Olá. Meu carro quebrou na estrada.
+D: Gus|Where are you exactly?|Onde você está exatamente?
+D: You|Near exit twelve, going north.|Perto da saída doze, indo para o norte.
+D: Gus|What is the problem?|Qual é o problema?
+D: You|It made a loud noise, and then it stopped.|Fez um barulho alto e depois parou.
+D: Gus|I will send a tow truck. It will arrive in about thirty minutes.|Vou enviar um guincho. Chega em uns trinta minutos.
+D: You|Should I stay in the car?|Devo ficar no carro?
+D: Gus|Yes, turn on your hazard lights and wait.|Sim, ligue o pisca-alerta e espere.
+V: broke down|quebrou;highway|estrada;exit|saída;tow truck|guincho;hazard lights|pisca-alerta
+B: My car broke {0}.|Meu carro {0}.|down=quebrou;a window=quebrou um vidro;a mirror=quebrou um espelho
+B: Turn on your {0}.|Ligue o {0}.|hazard lights=pisca-alerta;headlights=farol;engine=motor
+S: Gus|Where are you exactly?|Onde você está exatamente?|Near exit twelve, going north.|Perto da saída doze, indo para o norte.
+S: Gus|I will send a tow truck.|Vou enviar um guincho.|Should I stay in the car?|Devo ficar no carro?
+R: My car broke down on the highway.|Meu carro quebrou na estrada.
+R: It made a loud noise.|Fez um barulho alto.
+R: I will send a tow truck.|Vou enviar um guincho.
+R: Turn on your hazard lights.|Ligue o pisca-alerta.
+X: Where are you exactly?|Onde você está exatamente?
+C: Nas estradas americanas, quem tem problema no carro deve ficar dentro dele e ligar para o seguro ou para o reboque.
+
+T: At the museum ticket desk | Comprar ingressos para um museu | hall | New York | Lia,f,👩🏽,bilheteira
+K: Two tickets for today, please. | Dois ingressos, por favor.
+M: Hoje você compra ingressos e entende horários e regras.
+D: You|Hi. Two tickets, please.|Oi. Dois ingressos, por favor.
+D: Lia|Adults or students?|Adultos ou estudantes?
+D: You|One adult and one student.|Um adulto e um estudante.
+D: Lia|That is twenty-five dollars. Do you want the audio guide?|São vinte e cinco dólares. Querem o guia de áudio?
+D: You|Yes, in Spanish, please.|Sim, em espanhol, por favor.
+D: Lia|The museum closes at five, and no photos in the gallery on the left.|O museu fecha às cinco, e não é permitido fotografar na galeria da esquerda.
+D: You|Understood. Where can I leave my bag?|Entendido. Onde posso deixar a mochila?
+D: Lia|In the lockers by the entrance.|Nos armários da entrada.
+V: tickets|ingressos;adult|adulto;audio guide|guia de áudio;gallery|galeria;lockers|armários
+B: Two {0}, please.|Dois {0}, por favor.|tickets=ingressos;coffees=cafés;maps=mapas
+B: The museum closes at {0}.|O museu fecha às {0}.|five=cinco;six=seis;four thirty=quatro e meia
+S: Lia|Adults or students?|Adultos ou estudantes?|One adult and one student.|Um adulto e um estudante.
+S: Lia|No photos on the left.|Sem fotos à esquerda.|Understood. Where can I leave my bag?|Entendido. Onde deixo a mochila?
+R: Two tickets, please.|Dois ingressos, por favor.
+R: One adult and one student.|Um adulto e um estudante.
+R: The museum closes at five.|O museu fecha às cinco.
+R: Where can I leave my bag?|Onde posso deixar a mochila?
+X: Understood.|Entendido.
+C: Muitos museus americanos têm um dia da semana com entrada grátis ou "pague o quanto puder".
+
+T: Helping in the community | Falar de trabalho voluntário | park | Austin | Tom,m,🧑🏽,organizador
+K: I volunteer on Saturdays. | Eu sou voluntário aos sábados.
+M: Hoje você fala de voluntariado e se oferece para ajudar.
+D: Tom|Thanks for coming to help with the park cleanup.|Obrigado por vir ajudar na limpeza do parque.
+D: You|My pleasure. I volunteer on Saturdays.|Com prazer. Sou voluntário aos sábados.
+D: Tom|That is great. Can you pick up trash near the lake?|Que ótimo. Você pode recolher lixo perto do lago?
+D: You|Sure. Do you have gloves and bags?|Claro. Vocês têm luvas e sacos?
+D: Tom|Yes, here you are. We will work until noon.|Sim, aqui estão. Trabalharemos até o meio-dia.
+D: You|Is there lunch for the volunteers?|Tem almoço para os voluntários?
+D: Tom|Of course, pizza and juice at twelve thirty.|Claro, pizza e suco às doze e meia.
+D: You|Perfect. I will bring two friends next time.|Perfeito. Trago dois amigos da próxima vez.
+V: volunteer|ser voluntário;cleanup|limpeza;gloves|luvas;trash|lixo;pleasure|prazer
+B: I volunteer on {0}.|Sou voluntário {0}.|Saturdays=aos sábados;weekends=nos fins de semana;Mondays=às segundas
+B: Can you pick up {0}?|Você pode recolher {0}?|trash=lixo;leaves=folhas;bottles=garrafas
+S: Tom|Thanks for coming to help.|Obrigado por vir ajudar.|My pleasure. I volunteer on Saturdays.|Com prazer. Sou voluntário aos sábados.
+S: Tom|We will work until noon.|Trabalharemos até o meio-dia.|Is there lunch for the volunteers?|Tem almoço para os voluntários?
+R: I volunteer on Saturdays.|Sou voluntário aos sábados.
+R: Can you pick up trash near the lake?|Pode recolher lixo perto do lago?
+R: We will work until noon.|Trabalharemos até o meio-dia.
+R: I will bring two friends next time.|Trago dois amigos da próxima vez.
+X: My pleasure.|Com prazer.
+C: O voluntariado é muito valorizado nos EUA, e muitas escolas pedem horas de serviço comunitário aos alunos.
+
+T: One day in the city | Desafio do arco: resolver um dia na cidade | street | Boston | Kai,m,🧑🏻,amigo
+K: Today I took care of many things. | Hoje resolvi muitas coisas.
+M: Desafio: conte como resolveu bancos, correio e transporte num só dia.
+D: Kai|You look tired. What did you do today?|Você parece cansado. O que fez hoje?
+D: You|I took care of many things. First I went to the bank.|Resolvi muita coisa. Primeiro fui ao banco.
+D: Kai|Did you open the account?|Abriu a conta?
+D: You|Yes, and then I sent a package at the post office.|Sim, e depois enviei um pacote no correio.
+D: Kai|How did you get around?|Como você se locomoveu?
+D: You|I took the bus. I bought a weekly pass.|Peguei o ônibus. Comprei um passe semanal.
+D: Kai|Did you eat lunch?|Você almoçou?
+D: You|Yes, near the library, and I got my library card too.|Sim, perto da biblioteca, e fiz meu cartão também.
+V: tired|cansado;took care of|resolvi;get around|se locomover;weekly pass|passe semanal;library|biblioteca
+B: First I went to the {0}.|Primeiro fui ao {0}.|bank=banco;post office=correio;library=biblioteca
+B: I bought a {0}.|Comprei um {0}.|weekly pass=passe semanal;ticket=bilhete;map=mapa
+S: Kai|What did you do today?|O que fez hoje?|I took care of many things. First I went to the bank.|Resolvi muita coisa. Primeiro fui ao banco.
+S: Kai|How did you get around?|Como se locomoveu?|I took the bus and bought a weekly pass.|Peguei o ônibus e comprei um passe semanal.
+R: I took care of many things.|Resolvi muita coisa.
+R: First I went to the bank.|Primeiro fui ao banco.
+R: I sent a package at the post office.|Enviei um pacote no correio.
+R: I got my library card.|Fiz meu cartão da biblioteca.
+X: You look tired.|Você parece cansado.
+C: Resolver tarefas do dia a dia em cidades americanas costuma exigir algum planejamento de transporte.

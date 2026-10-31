@@ -1,0 +1,231 @@
+# Arco 76 · Oficina mecânica
+T: The car will not start | O carro não liga | street | Detroit | Dan,m,🧑🏽,mecânico
+K: My car does not start. | Meu carro não liga.
+M: Hoje você leva o carro à oficina.
+D: You|Good morning. My car does not start.|Bom dia. Meu carro não liga.
+D: Dan|What does it do when you turn the key?|O que ele faz quando você gira a chave?
+D: You|It makes a clicking sound.|Faz um barulho de clique.
+D: Dan|Maybe the battery is dead.|Talvez a bateria esteja descarregada.
+D: You|Can you check it?|Pode ver?
+D: Dan|Of course. Leave it here.|Claro. Deixe aqui.
+D: You|How long does it take?|Quanto tempo leva?
+V: start|ligar;key|chave;clicking|clique;battery|bateria;dead|descarregada
+B: My car does not {0}.|Meu carro não {0}.|start=liga;stop=para;turn=vira
+B: Maybe the {0} is dead.|Talvez a {0} esteja descarregada.|battery=bateria;engine=motor;radio=rádio
+S: You|Good morning. My car does not start.|Bom dia. Meu carro não liga.|What does it do when you turn the key?|O que ele faz quando você gira a chave?
+S: Dan|Maybe the battery is dead.|Talvez a bateria esteja descarregada.|Can you check it?|Pode ver?
+R: My car does not start.|Meu carro não liga.
+R: It makes a clicking sound.|Faz um barulho de clique.
+R: Maybe the battery is dead.|Talvez a bateria esteja descarregada.
+R: Can you check it?|Pode ver?
+X: Of course.|Claro.
+C: Bateria fraca é a causa mais comum de carro que não liga.
+N: Próximo: o diagnóstico.
+
+T: Check the engine | Ver o motor | street | Detroit | Dan,m,🧑🏽,mecânico
+K: Open the hood. | Abra o capô.
+M: Hoje você acompanha o diagnóstico.
+D: Dan|Open the hood, please.|Abra o capô, por favor.
+D: You|Here you are.|Aqui está.
+D: Dan|The battery is old. Look at this cable.|A bateria está velha. Olhe este cabo.
+D: You|It is dirty.|Está sujo.
+D: Dan|Yes. I clean it and test the battery.|Sim. Limpo e testo a bateria.
+D: You|Is the engine okay?|O motor está bom?
+D: Dan|Yes, the engine is fine.|Sim, o motor está bom.
+V: hood|capô;cable|cabo;dirty|sujo;test|testar;engine|motor
+B: Open the {0}.|Abra o(a) {0}.|hood=capô;door=porta;trunk=porta-malas
+B: The engine is {0}.|O motor está {0}.|fine=bom;hot=quente;old=velho
+S: Dan|Open the hood, please.|Abra o capô, por favor.|Here you are.|Aqui está.
+S: You|Is the engine okay?|O motor está bom?|Yes, the engine is fine.|Sim, o motor está bom.
+R: Open the hood.|Abra o capô.
+R: The battery is old.|A bateria está velha.
+R: The cable is dirty.|O cabo está sujo.
+R: The engine is fine.|O motor está bom.
+X: Here you are.|Aqui está.
+C: Verificar os cabos é o primeiro passo do diagnóstico.
+N: Próximo: o orçamento.
+
+T: The estimate | O orçamento | street | Detroit | Dan,m,🧑🏽,mecânico
+K: How much is the repair? | Quanto custa o conserto?
+M: Hoje você pede um orçamento.
+D: You|How much is the repair?|Quanto custa o conserto?
+D: Dan|A new battery is one hundred dollars.|Uma bateria nova custa cem dólares.
+D: You|And the work?|E a mão de obra?
+D: Dan|Thirty dollars.|Trinta dólares.
+D: You|So the total is one hundred and thirty?|Então o total é cento e trinta?
+D: Dan|Yes. Do you want to continue?|Sim. Quer continuar?
+D: You|Yes, please.|Sim, por favor.
+V: repair|conserto;battery|bateria;work|mão de obra;total|total;continue|continuar
+B: A new battery is {0} dollars.|Uma bateria nova custa {0} dólares.|one hundred=cem;eighty=oitenta;ninety=noventa
+B: The total is {0}.|O total é {0}.|one hundred and thirty=cento e trinta;two hundred=duzentos;fifty=cinquenta
+S: You|How much is the repair?|Quanto custa o conserto?|A new battery is one hundred dollars.|Uma bateria nova custa cem dólares.
+S: Dan|Yes. Do you want to continue?|Sim. Quer continuar?|Yes, please.|Sim, por favor.
+R: How much is the repair?|Quanto custa o conserto?
+R: A new battery is one hundred dollars.|Uma bateria nova custa cem dólares.
+R: The total is one hundred and thirty.|O total é cento e trinta.
+R: Do you want to continue?|Quer continuar?
+X: Yes, please.|Sim, por favor.
+C: Nos EUA, a oficina costuma dar um "estimate" antes do conserto.
+N: Próximo: o óleo.
+
+T: Change the oil | Trocar o óleo | street | Detroit | Dan,m,🧑🏽,mecânico
+K: The car needs oil. | O carro precisa de óleo.
+M: Hoje você troca o óleo.
+D: Dan|Your car needs an oil change.|Seu carro precisa trocar o óleo.
+D: You|How often do I change it?|Com que frequência troco?
+D: Dan|Every five thousand miles.|A cada cinco mil milhas.
+D: You|How long does it take?|Quanto tempo leva?
+D: Dan|About thirty minutes.|Cerca de trinta minutos.
+D: You|Can I wait here?|Posso esperar aqui?
+D: Dan|Sure. There is coffee in the office.|Claro. Tem café no escritório.
+V: oil|óleo;change|trocar;often|com frequência;miles|milhas;office|escritório
+B: Your car needs an oil {0}.|Seu carro precisa de {0} de óleo.|change=troca;check=revisão;filter=filtro
+B: It takes about {0} minutes.|Leva cerca de {0} minutos.|thirty=trinta;twenty=vinte;fifteen=quinze
+S: Dan|Your car needs an oil change.|Seu carro precisa trocar o óleo.|How often do I change it?|Com que frequência troco?
+S: You|Can I wait here?|Posso esperar aqui?|Sure. There is coffee in the office.|Claro. Tem café no escritório.
+R: My car needs an oil change.|Meu carro precisa trocar o óleo.
+R: Every five thousand miles.|A cada cinco mil milhas.
+R: It takes about thirty minutes.|Leva cerca de trinta minutos.
+R: Can I wait here?|Posso esperar aqui?
+X: There is coffee.|Tem café.
+C: Nos EUA, a troca de óleo é feita a cada 5 mil milhas.
+N: Próximo: os pneus.
+
+T: New tires | Pneus novos | street | Detroit | Dan,m,🧑🏽,mecânico
+K: The tires are worn. | Os pneus estão gastos.
+M: Hoje você troca os pneus.
+D: Dan|Look at your tires. They are old.|Olhe seus pneus. Estão velhos.
+D: You|Are they dangerous?|São perigosos?
+D: Dan|In the rain, yes. You need new ones.|Na chuva, sim. Você precisa de novos.
+D: You|How much are four tires?|Quanto custam quatro pneus?
+D: Dan|Four hundred dollars.|Quatrocentos dólares.
+D: You|When can you change them?|Quando você troca?
+D: Dan|Tomorrow morning at nine.|Amanhã às nove da manhã.
+V: tires|pneus;dangerous|perigosos;rain|chuva;tomorrow|amanhã;morning|manhã
+B: You need new {0}.|Você precisa de {0} novos.|tires=pneus;brakes=freios;lights=luzes
+B: Four tires are {0} dollars.|Quatro pneus custam {0} dólares.|four hundred=quatrocentos;three hundred=trezentos;five hundred=quinhentos
+S: Dan|Look at your tires. They are old.|Olhe seus pneus. Estão velhos.|Are they dangerous?|São perigosos?
+S: You|When can you change them?|Quando você troca?|Tomorrow morning at nine.|Amanhã às nove da manhã.
+R: Look at your tires.|Olhe seus pneus.
+R: You need new ones.|Você precisa de novos.
+R: Four tires are four hundred dollars.|Quatro pneus custam quatrocentos dólares.
+R: Tomorrow morning at nine.|Amanhã às nove da manhã.
+X: They are old.|Estão velhos.
+C: Pneus gastos aumentam o risco de derrapar na chuva.
+N: Próximo: os freios.
+
+T: The brakes | Os freios | street | Detroit | Dan,m,🧑🏽,mecânico
+K: The brakes are noisy. | Os freios fazem barulho.
+M: Hoje você checa os freios.
+D: You|My brakes make a noise.|Meus freios fazem barulho.
+D: Dan|What kind of noise?|Que tipo de barulho?
+D: You|A loud squeak.|Um rangido alto.
+D: Dan|Let me check. The pads are thin.|Deixe-me ver. As pastilhas estão finas.
+D: You|Is it dangerous?|É perigoso?
+D: Dan|Yes. Do not drive for long.|É. Não dirija por muito tempo.
+D: You|Please change them today.|Troque hoje, por favor.
+V: brakes|freios;noise|barulho;squeak|rangido;pads|pastilhas;thin|finas
+B: My brakes make a {0}.|Meus freios fazem um(a) {0}.|noise=barulho;squeak=rangido;sound=som
+B: The pads are {0}.|As pastilhas estão {0}.|thin=finas;old=velhas;new=novas
+S: You|My brakes make a noise.|Meus freios fazem barulho.|What kind of noise?|Que tipo de barulho?
+S: Dan|Yes. Do not drive for long.|É. Não dirija por muito tempo.|Please change them today.|Troque hoje, por favor.
+R: My brakes make a noise.|Meus freios fazem barulho.
+R: The pads are thin.|As pastilhas estão finas.
+R: Do not drive for long.|Não dirija por muito tempo.
+R: Please change them today.|Troque hoje, por favor.
+X: A loud squeak.|Um rangido alto.
+C: Freios barulhentos pedem revisão imediata.
+N: Próximo: o ar-condicionado.
+
+T: Air conditioning | Ar-condicionado | street | Detroit | Dan,m,🧑🏽,mecânico
+K: The air is not cold. | O ar não está frio.
+M: Hoje você conserta o ar do carro.
+D: You|The air conditioning does not work.|O ar-condicionado não funciona.
+D: Dan|Is the air cold or hot?|O ar sai frio ou quente?
+D: You|Hot. It is summer and I am sweating.|Quente. É verão e estou suando.
+D: Dan|Maybe it needs gas.|Talvez precise de gás.
+D: You|How long is the repair?|Quanto tempo leva o conserto?
+D: Dan|One hour.|Uma hora.
+D: You|Good. I wait in the shop.|Ótimo. Espero na loja.
+V: air conditioning|ar-condicionado;hot|quente;summer|verão;sweating|suando;gas|gás
+B: The air conditioning does not {0}.|O ar-condicionado não {0}.|work=funciona;start=liga;cool=esfria
+B: It is {0} and I am sweating.|Está {0} e estou suando.|hot=quente;summer=verão;humid=úmido
+S: You|The air conditioning does not work.|O ar-condicionado não funciona.|Is the air cold or hot?|O ar sai frio ou quente?
+S: Dan|Maybe it needs gas.|Talvez precise de gás.|How long is the repair?|Quanto tempo leva o conserto?
+R: The air conditioning does not work.|O ar-condicionado não funciona.
+R: The air is hot.|O ar sai quente.
+R: Maybe it needs gas.|Talvez precise de gás.
+R: How long is the repair?|Quanto tempo leva o conserto?
+X: I am sweating.|Estou suando.
+C: Nos EUA, o ar-condicionado é essencial em carros no verão.
+N: Próximo: os faróis.
+
+T: The headlights | Os faróis | street | Detroit | Dan,m,🧑🏽,mecânico
+K: One light is broken. | Um farol está quebrado.
+M: Hoje você troca um farol.
+D: Dan|Your left headlight is not working.|Seu farol esquerdo não está funcionando.
+D: You|Oh no. Is it dangerous at night?|Ah não. É perigoso à noite?
+D: Dan|Yes. You cannot see well.|Sim. Você não vê bem.
+D: You|Can you change the bulb now?|Pode trocar a lâmpada agora?
+D: Dan|Of course. It takes ten minutes.|Claro. Leva dez minutos.
+D: You|How much is it?|Quanto custa?
+D: Dan|Fifteen dollars.|Quinze dólares.
+V: headlight|farol;bulb|lâmpada;dangerous|perigoso;night|noite;left|esquerdo
+B: Your {0} headlight is not working.|Seu farol {0} não funciona.|left=esquerdo;right=direito;back=traseiro
+B: It takes {0} minutes.|Leva {0} minutos.|ten=dez;five=cinco;twenty=vinte
+S: Dan|Your left headlight is not working.|Seu farol esquerdo não está funcionando.|Oh no. Is it dangerous at night?|Ah não. É perigoso à noite?
+S: You|Can you change the bulb now?|Pode trocar a lâmpada agora?|Of course. It takes ten minutes.|Claro. Leva dez minutos.
+R: Your left headlight is not working.|Seu farol esquerdo não funciona.
+R: It is dangerous at night.|É perigoso à noite.
+R: Can you change the bulb now?|Pode trocar a lâmpada agora?
+R: It is fifteen dollars.|São quinze dólares.
+X: Of course.|Claro.
+C: Dirigir com farol quebrado pode render multa.
+N: Próximo: pegar o carro.
+
+T: Pick up the car | Retirar o carro | street | Detroit | Dan,m,🧑🏽,mecânico
+K: Your car is ready. | Seu carro está pronto.
+M: Hoje você retira o carro consertado.
+D: Dan|Good afternoon. Your car is ready.|Boa tarde. Seu carro está pronto.
+D: You|Great! How much is it?|Ótimo! Quanto é?
+D: Dan|The total is one hundred and fifty.|O total é cento e cinquenta.
+D: You|Can I pay by card?|Posso pagar com cartão?
+D: Dan|Yes. Here is the machine.|Sim. Aqui está a maquininha.
+D: You|Thank you. Is there a warranty?|Obrigado. Tem garantia?
+D: Dan|Yes, six months on the work.|Tem, seis meses sobre o serviço.
+V: ready|pronto;total|total;card|cartão;machine|maquininha;warranty|garantia
+B: Your car is {0}.|Seu carro está {0}.|ready=pronto;clean=limpo;fixed=consertado
+B: There is a {0} on the work.|Há uma {0} sobre o serviço.|warranty=garantia;receipt=nota;list=lista
+S: Dan|Good afternoon. Your car is ready.|Boa tarde. Seu carro está pronto.|Great! How much is it?|Ótimo! Quanto é?
+S: You|Thank you. Is there a warranty?|Obrigado. Tem garantia?|Yes, six months on the work.|Tem, seis meses sobre o serviço.
+R: Your car is ready.|Seu carro está pronto.
+R: The total is one hundred and fifty.|O total é cento e cinquenta.
+R: Can I pay by card?|Posso pagar com cartão?
+R: There is a six-month warranty.|Há garantia de seis meses.
+X: Thank you.|Obrigado.
+C: Guarde a nota fiscal do serviço para usar a garantia.
+N: Próximo: desafio, cuidar do carro.
+
+T: Take care of your car | Desafio do arco: cuidar do carro | street | Detroit | Dan,m,🧑🏽,mecânico
+K: Take care of your car. | Cuide do seu carro.
+M: Hoje você aprende a manter o carro.
+D: Dan|Do you take care of your car?|Você cuida do seu carro?
+D: You|Yes. I change the oil every five thousand miles.|Cuido. Troco o óleo a cada cinco mil milhas.
+D: Dan|And the tires?|E os pneus?
+D: You|I check the pressure every month.|Verifico a pressão todo mês.
+D: Dan|What about the brakes?|E os freios?
+D: You|I listen for any noise.|Escuto se há barulho.
+D: Dan|Great. A good driver is a good owner.|Ótimo. Um bom motorista é um bom dono.
+V: oil|óleo;tires|pneus;pressure|pressão;brakes|freios;owner|dono
+B: I check the {0} every month.|Verifico {0} todo mês.|pressure=a pressão;oil=o óleo;lights=as luzes
+B: I change the {0} every five thousand miles.|Troco o(a) {0} a cada cinco mil milhas.|oil=óleo;filter=filtro;tires=pneus
+S: Dan|Do you take care of your car?|Você cuida do seu carro?|Yes. I change the oil every five thousand miles.|Cuido. Troco o óleo a cada cinco mil milhas.
+S: Dan|What about the brakes?|E os freios?|I listen for any noise.|Escuto se há barulho.
+R: I change the oil every five thousand miles.|Troco o óleo a cada cinco mil milhas.
+R: I check the tire pressure every month.|Verifico a pressão dos pneus todo mês.
+R: I listen for any noise.|Escuto se há barulho.
+R: A good driver is a good owner.|Um bom motorista é um bom dono.
+X: Take care of it.|Cuide dele.
+C: Manutenção regular economiza dinheiro no longo prazo.
+N: Próximo: o próximo bloco.
+BOSS: 1

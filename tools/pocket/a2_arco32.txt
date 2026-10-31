@@ -1,0 +1,207 @@
+# Arco 32 · Descrever pessoas, lugares e coisas
+T: What does he look like today? | Descrever a aparência de alguém | street | Chicago | Officer Cole,m,🧑🏽,policial
+K: He is tall and has short dark hair. | Ele é alto e tem cabelo curto e escuro.
+M: Hoje você descreve uma pessoa com detalhes.
+D: Officer Cole|You said you lost your friend in the crowd. What does he look like?|Você disse que perdeu seu amigo na multidão. Como ele é?
+D: You|He is tall and has short dark hair.|Ele é alto e tem cabelo curto e escuro.
+D: Officer Cole|How old is he, and what is he wearing?|Que idade ele tem e o que está vestindo?
+D: You|He is about thirty. He is wearing a blue jacket and jeans.|Tem cerca de trinta. Está com jaqueta azul e jeans.
+D: Officer Cole|Does he have glasses or a beard?|Ele usa óculos ou barba?
+D: You|Glasses, yes, but no beard. He is also carrying a green backpack.|Óculos, sim, mas sem barba. Também carrega uma mochila verde.
+D: Officer Cole|Thank you. We will look for him near the main entrance.|Obrigado. Vamos procurá-lo perto da entrada principal.
+D: You|I will wait here and call him again.|Vou esperar aqui e ligar para ele de novo.
+V: crowd|multidão;tall|alto;beard|barba;backpack|mochila;wearing|vestindo
+B: He is tall and has {0} hair.|Ele é alto e tem cabelo {0}.|short dark=curto e escuro;long blond=longo e loiro;curly red=ruivo e cacheado
+B: He is wearing a {0} jacket.|Ele está com uma jaqueta {0}.|blue=azul;black=preta;gray=cinza
+S: Officer Cole|What does he look like?|Como ele é?|He is tall and has short dark hair.|Ele é alto e tem cabelo curto e escuro.
+S: Officer Cole|What is he wearing?|O que está vestindo?|A blue jacket and jeans.|Uma jaqueta azul e jeans.
+R: What does he look like?|Como ele é?
+R: He is tall and has short dark hair.|Ele é alto e tem cabelo curto e escuro.
+R: He is wearing a blue jacket.|Está com jaqueta azul.
+R: He has glasses but no beard.|Usa óculos, mas sem barba.
+X: Near the main entrance.|Perto da entrada principal.
+C: Nos EUA, ao descrever alguém para a polícia, é comum começar por altura, idade aproximada, cabelo e roupas.
+
+T: Personality | Descrever a personalidade de alguém | cafe | Seattle | Jess,f,🧑🏼,amiga
+K: She is outgoing and very funny. | Ela é extrovertida e muito engraçada.
+M: Hoje você descreve como as pessoas são.
+D: Jess|Tell me about your new roommate. What is she like?|Fale da sua nova colega de quarto. Como ela é?
+D: You|She is outgoing and very funny. She makes everyone laugh.|Ela é extrovertida e muito engraçada. Faz todo mundo rir.
+D: Jess|Is she tidy?|Ela é organizada?
+D: You|Not really, but she is generous. She always shares her food.|Nem tanto, mas é generosa. Sempre divide a comida.
+D: Jess|And is she patient?|E é paciente?
+D: You|Very. She listens carefully and never gets angry.|Muito. Ouve com atenção e nunca fica brava.
+D: Jess|She sounds like a great person.|Parece uma ótima pessoa.
+D: You|She is. I think we will become good friends.|É. Acho que seremos boas amigas.
+V: outgoing|extrovertida;tidy|organizada;generous|generosa;patient|paciente;carefully|com atenção
+B: She is outgoing and {0}.|Ela é extrovertida e {0}.|very funny=muito engraçada;kind=gentil;smart=inteligente
+B: She always {0}.|Ela sempre {0}.|shares her food=divide a comida;listens carefully=ouve com atenção;arrives early=chega cedo
+S: Jess|What is she like?|Como ela é?|She is outgoing and very funny.|Ela é extrovertida e muito engraçada.
+S: Jess|Is she tidy?|É organizada?|Not really, but she is generous.|Nem tanto, mas é generosa.
+R: She is outgoing and very funny.|Ela é extrovertida e muito engraçada.
+R: She is generous.|Ela é generosa.
+R: She listens carefully.|Ela ouve com atenção.
+R: I think we will become good friends.|Acho que seremos boas amigas.
+X: What is she like?|Como ela é?
+C: Em inglês, "What is she like?" pergunta sobre a personalidade, e "What does she look like?" sobre a aparência.
+
+T: Describing my hometown | Descrever sua cidade natal | cafe | Denver | Rosa,f,👩🏽,amiga
+K: My hometown is small but beautiful. | Minha cidade natal é pequena, mas bonita.
+M: Hoje você descreve o lugar onde cresceu.
+D: Rosa|Where are you from? Tell me about your hometown.|De onde você é? Fale da sua cidade natal.
+D: You|My hometown is small but beautiful. It is near the sea.|Minha cidade natal é pequena, mas bonita. Fica perto do mar.
+D: Rosa|What is the weather like?|Como é o clima?
+D: You|Warm all year, with a lot of sun and some rain in summer.|Quente o ano todo, com muito sol e alguma chuva no verão.
+D: Rosa|What can people do there?|O que as pessoas podem fazer lá?
+D: You|They can go to the beach, eat fresh fish and visit the old church.|Podem ir à praia, comer peixe fresco e visitar a igreja antiga.
+D: Rosa|It sounds lovely. Is it far from the capital?|Parece lindo. Fica longe da capital?
+D: You|About four hours by bus. You should visit one day.|Cerca de quatro horas de ônibus. Você deveria visitar um dia.
+V: hometown|cidade natal;sea|mar;church|igreja;capital|capital;weather|clima
+B: My hometown is {0}.|Minha cidade natal é {0}.|small but beautiful=pequena, mas bonita;big and busy=grande e agitada;quiet and old=quieta e antiga
+B: It is about {0} by bus.|Fica a cerca de {0} de ônibus.|four hours=quatro horas;two hours=duas horas;an hour=uma hora
+S: Rosa|Tell me about your hometown.|Fale da sua cidade natal.|It is small but beautiful, near the sea.|É pequena, mas bonita, perto do mar.
+S: Rosa|What can people do there?|O que se pode fazer lá?|They can go to the beach and eat fresh fish.|Podem ir à praia e comer peixe fresco.
+R: My hometown is small but beautiful.|Minha cidade natal é pequena, mas bonita.
+R: It is near the sea.|Fica perto do mar.
+R: The weather is warm all year.|O clima é quente o ano todo.
+R: You should visit one day.|Você deveria visitar um dia.
+X: It sounds lovely.|Parece lindo.
+C: Contar sobre a cidade natal é um assunto comum ao conhecer pessoas nos EUA, que adoram ouvir de outros países.
+
+T: My dream house | Descrever a casa dos sonhos | living | Los Angeles | Lia,f,👩🏽,amiga
+K: My dream house has a big garden. | Minha casa dos sonhos tem um jardim grande.
+M: Hoje você descreve a casa que gostaria de ter.
+D: Lia|Tell me about your dream house. What is it like?|Fale da sua casa dos sonhos. Como ela é?
+D: You|My dream house has a big garden and a swimming pool.|Minha casa dos sonhos tem um jardim grande e uma piscina.
+D: Lia|How many rooms does it have?|Quantos cômodos tem?
+D: You|Four bedrooms, three bathrooms and a large kitchen with an island.|Quatro quartos, três banheiros e uma cozinha grande com ilha.
+D: Lia|Where is it located?|Onde fica?
+D: You|Near the beach, with a view of the ocean from the living room.|Perto da praia, com vista para o oceano da sala.
+D: Lia|That sounds expensive!|Parece caro!
+D: You|It is only a dream. For now, I am happy with my small apartment.|É só um sonho. Por enquanto, estou feliz com meu apartamentinho.
+V: dream|sonho;swimming pool|piscina;island|ilha;located|localizada;ocean|oceano
+B: My dream house has a {0}.|Minha casa dos sonhos tem {0}.|big garden=um jardim grande;swimming pool=uma piscina;fireplace=uma lareira
+B: It has {0} bedrooms.|Tem {0} quartos.|four=quatro;three=três;five=cinco
+S: Lia|What is your dream house like?|Como é sua casa dos sonhos?|It has a big garden and a swimming pool.|Tem jardim grande e piscina.
+S: Lia|Where is it located?|Onde fica?|Near the beach, with a view of the ocean.|Perto da praia, com vista para o oceano.
+R: My dream house has a big garden.|Minha casa dos sonhos tem um jardim grande.
+R: It has four bedrooms.|Tem quatro quartos.
+R: It is near the beach.|Fica perto da praia.
+R: It is only a dream.|É só um sonho.
+X: It sounds expensive!|Parece caro!
+C: Muitos americanos sonham com uma casa de subúrbio com jardim e garagem, a chamada "American dream".
+
+T: A picture on the wall | Descrever uma foto | living | Boston | Ruth,f,👩🏻,avó
+K: In this photo, we are at the beach. | Nesta foto, estamos na praia.
+M: Hoje você descreve uma foto de família.
+D: Ruth|Come and look at this old photo. Can you guess who it is?|Venha ver esta foto antiga. Consegue adivinhar quem é?
+D: You|Is that you? You look so young!|Esse é você? Você parece tão jovem!
+D: Ruth|Yes. In this photo, we are at the beach, in nineteen seventy.|Sim. Nesta foto, estamos na praia, em mil novecentos e setenta.
+D: You|Who is the man next to you?|Quem é o homem ao seu lado?
+D: Ruth|That is your grandfather. He is holding a big fish.|Esse é seu avô. Ele está segurando um peixe grande.
+D: You|And what are the children doing?|E o que as crianças estão fazendo?
+D: Ruth|They are playing in the sand. One of them is your father.|Estão brincando na areia. Um deles é seu pai.
+D: You|I love this photo. Can we make a copy for me?|Adoro esta foto. Podemos fazer uma cópia para mim?
+V: photo|foto;guess|adivinhar;holding|segurando;sand|areia;copy|cópia
+B: In this photo, we are at the {0}.|Nesta foto, estamos {0}.|beach=na praia;park=no parque;lake=no lago
+B: He is holding a {0}.|Ele está segurando {0}.|big fish=um peixe grande;flower=uma flor;camera=uma câmera
+S: Ruth|Can you guess who it is?|Consegue adivinhar quem é?|Is that you? You look so young!|É você? Parece tão jovem!
+S: Ruth|They are playing in the sand.|Estão brincando na areia.|I love this photo. Can we make a copy?|Adoro esta foto. Podemos fazer uma cópia?
+R: In this photo, we are at the beach.|Nesta foto, estamos na praia.
+R: He is holding a big fish.|Ele está segurando um peixe grande.
+R: The children are playing in the sand.|As crianças brincam na areia.
+R: Can we make a copy?|Podemos fazer uma cópia?
+X: You look so young!|Você parece tão jovem!
+C: Muitas casas americanas têm uma parede de fotos de família, e álbuns antigos passam de geração em geração.
+
+T: A busy neighborhood | Descrever um bairro | street | New York | Sam,m,🧑🏻,morador
+K: There is always something happening. | Sempre tem algo acontecendo.
+M: Hoje você descreve um bairro movimentado.
+D: Sam|Welcome to my neighborhood. What do you think?|Bem-vindo ao meu bairro. O que acha?
+D: You|It is so busy! There are people everywhere.|É tão movimentado! Tem gente por todo lado.
+D: Sam|Yes, there is always something happening. Look, a street musician.|Sim, sempre tem algo acontecendo. Olhe, um músico de rua.
+D: You|There are also a lot of shops and cafes.|Tem também muitas lojas e cafés.
+D: Sam|And a farmers market every Saturday, near the church.|E uma feira de produtores todo sábado, perto da igreja.
+D: You|Is it noisy at night?|É barulhento à noite?
+D: Sam|A little, but I like it. And everything is close by.|Um pouco, mas eu gosto. E tudo fica por perto.
+D: You|I could live here. Is there a metro station nearby?|Eu poderia morar aqui. Tem estação de metrô por perto?
+V: busy|movimentado;everywhere|por todo lado;musician|músico;noisy|barulhento;used to|acostumado a
+B: There is always something {0}.|Sempre tem algo {0}.|happening=acontecendo;new=novo;fun=divertido
+B: I like {0}.|Eu gosto {0}.|it=disso;the noise=do barulho;the crowds=das multidões
+S: Sam|What do you think of my neighborhood?|O que acha do meu bairro?|It is so busy! There are people everywhere.|É tão movimentado! Tem gente por todo lado.
+S: Sam|There is a market every Saturday.|Tem feira todo sábado.|Is it noisy at night?|É barulhento à noite?
+R: It is so busy!|É tão movimentado!
+R: There are people everywhere.|Tem gente por todo lado.
+R: There is always something happening.|Sempre tem algo acontecendo.
+R: I like it.|Eu gosto.
+X: Everything is close by.|Tudo fica por perto.
+C: Em bairros de grandes cidades como Nova York, é possível fazer quase tudo a pé: mercado, banco, café e metrô.
+
+T: Describing an object | Descrever um objeto perdido | hall | Seattle | Gina,f,👩🏻,atendente
+K: It is round, silver and very small. | É redondo, prateado e muito pequeno.
+M: Hoje você descreve um objeto para recuperá-lo.
+D: You|Hello. I lost my watch yesterday. Has anyone found one?|Olá. Perdi meu relógio ontem. Alguém encontrou um?
+D: Gina|Can you describe it?|Pode descrevê-lo?
+D: You|It is round, silver and very small. It has a brown leather strap.|É redondo, prateado e muito pequeno. Tem uma pulseira de couro marrom.
+D: Gina|Is there anything special about it?|Tem algo especial nele?
+D: You|Yes, there is an engraving on the back with my initials.|Sim, tem uma gravação atrás com minhas iniciais.
+D: Gina|Let me check. Is this it?|Deixe-me ver. É este?
+D: You|Yes! That is it. Thank you so much!|Sim! É esse. Muito obrigada!
+D: Gina|You are lucky. Please sign here to collect it.|Você teve sorte. Assine aqui para retirar.
+V: watch|relógio;round|redondo;strap|pulseira;leather|couro;engraving|gravação
+B: It is {0}, silver and very small.|É {0}, prateado e muito pequeno.|round=redondo;square=quadrado;thin=fino
+B: It has a {0} strap.|Tem uma pulseira {0}.|brown leather=de couro marrom;black=preta;metal=de metal
+S: Gina|Can you describe it?|Pode descrevê-lo?|It is round, silver and very small.|É redondo, prateado e muito pequeno.
+S: Gina|Is anything special about it?|Tem algo especial?|Yes, there is an engraving on the back.|Sim, tem uma gravação atrás.
+R: I lost my watch yesterday.|Perdi meu relógio ontem.
+R: It is round, silver and very small.|É redondo, prateado e muito pequeno.
+R: It has a brown leather strap.|Tem uma pulseira de couro marrom.
+R: There is an engraving on the back.|Tem uma gravação atrás.
+X: That is it.|É esse mesmo.
+C: Em "lost and found" nos EUA, é preciso descrever detalhes que só o dono sabe para recuperar o objeto.
+
+T: Describing my day | Descrever o seu dia em ordem | cafe | Boston | Mia,f,👩🏻,amiga
+K: First I had breakfast, and then I went to work. | Primeiro tomei café, e depois fui trabalhar.
+M: Hoje você descreve seu dia em ordem cronológica.
+D: Mia|How was your day? Tell me everything.|Como foi seu dia? Conte tudo.
+D: You|First I had breakfast, and then I went to work.|Primeiro tomei café, e depois fui trabalhar.
+D: Mia|What did you do there?|O que você fez lá?
+D: You|In the morning, I had two meetings. After lunch, I wrote a report.|De manhã, tive duas reuniões. Depois do almoço, escrevi um relatório.
+D: Mia|And in the evening?|E à noite?
+D: You|I went to the gym, and later I cooked dinner and watched a series.|Fui à academia e depois cozinhei e assisti a uma série.
+D: Mia|That is a full day!|Foi um dia cheio!
+D: You|Yes, but I felt good. Now I am ready to sleep.|Sim, mas me senti bem. Agora estou pronta para dormir.
+V: breakfast|café da manhã;meetings|reuniões;report|relatório;later|mais tarde;full|cheio
+B: First I had {0}, and then I went to work.|Primeiro tomei {0}, e depois fui trabalhar.|breakfast=café da manhã;coffee=café;a shower=banho
+B: After lunch, I {0}.|Depois do almoço, eu {0}.|wrote a report=escrevi um relatório;had a meeting=tive uma reunião;went for a walk=fui caminhar
+S: Mia|How was your day?|Como foi seu dia?|First I had breakfast, and then I went to work.|Primeiro tomei café, e depois fui trabalhar.
+S: Mia|And in the evening?|E à noite?|I went to the gym, and later I cooked dinner.|Fui à academia e depois cozinhei.
+R: First I had breakfast.|Primeiro tomei café da manhã.
+R: Then I went to work.|Depois fui trabalhar.
+R: After lunch, I wrote a report.|Depois do almoço, escrevi um relatório.
+R: That is a full day!|Foi um dia cheio!
+X: Tell me everything.|Conte tudo.
+C: Usar "first, then, after that, finally" ajuda a contar o dia em ordem e é muito comum em conversas nos EUA.
+
+T: A person I admire | Desafio do arco: descrever alguém que admira | living | New York | Sam,m,🧑🏻,amigo
+K: I admire my grandmother because she is strong. | Admiro minha avó porque ela é forte.
+M: Desafio: descreva aparência, personalidade e por que você admira alguém.
+D: Sam|Who is a person you admire?|Quem é uma pessoa que você admira?
+D: You|I admire my grandmother because she is strong and kind.|Admiro minha avó porque ela é forte e gentil.
+D: Sam|What does she look like?|Como ela é?
+D: You|She is short, with white hair and a warm smile. She is always wearing an apron.|É baixinha, com cabelo branco e um sorriso caloroso. Está sempre de avental.
+D: Sam|What is she like?|E como é a personalidade dela?
+D: You|She is patient, funny and generous. She raised five children on a small farm.|É paciente, engraçada e generosa. Criou cinco filhos numa fazenda pequena.
+D: Sam|She sounds like a wonderful person.|Parece uma pessoa maravilhosa.
+D: You|She is. I want to be like her when I am old.|É. Quero ser como ela quando for velha.
+V: admire|admirar;strong|forte;smile|sorriso;apron|avental;raised|criou
+B: I admire my grandmother because she is {0}.|Admiro minha avó porque ela é {0}.|strong=forte;kind=gentil;brave=corajosa
+B: She is short, with {0} hair.|Ela é baixinha, com cabelo {0}.|white=branco;gray=grisalho;long=longo
+S: Sam|Who is a person you admire?|Quem é uma pessoa que admira?|I admire my grandmother because she is strong and kind.|Admiro minha avó porque é forte e gentil.
+S: Sam|What is she like?|Como ela é?|She is patient, funny and generous.|É paciente, engraçada e generosa.
+R: I admire my grandmother.|Admiro minha avó.
+R: She is short, with white hair.|É baixinha, com cabelo branco.
+R: She is patient, funny and generous.|É paciente, engraçada e generosa.
+R: I want to be like her.|Quero ser como ela.
+X: She sounds wonderful.|Parece maravilhosa.
+C: Falar de uma pessoa que admira é uma pergunta clássica em entrevistas e conversas nos EUA.

@@ -1,0 +1,207 @@
+# Arco 30 · Arte, música e cultura
+T: What do you see in this painting? | Descrever uma obra de arte | museum | Chicago | Gina,f,👩🏻,guia
+K: It reminds me of a quiet summer day. | Isso me lembra um dia quieto de verão.
+M: Hoje você descreve e opina sobre uma pintura.
+D: Gina|Let us stop here. What do you see in this painting?|Vamos parar aqui. O que vocês veem nesta pintura?
+D: You|I see a woman with a red umbrella, walking by the lake.|Vejo uma mulher com um guarda-chuva vermelho, andando perto do lago.
+D: Gina|Very good. What colors does the artist use?|Muito bem. Que cores o artista usa?
+D: You|Mostly blue and green, with a little yellow. It feels calm.|Principalmente azul e verde, com um pouco de amarelo. Parece calmo.
+D: Gina|And how does it make you feel?|E como isso faz você se sentir?
+D: You|It reminds me of a quiet summer day.|Me lembra um dia quieto de verão.
+D: Gina|Exactly. The painter wanted to show peace and silence.|Exato. O pintor queria mostrar paz e silêncio.
+D: You|I like it a lot. Can we take a photo of it?|Gosto muito. Podemos tirar uma foto?
+V: painting|pintura;umbrella|guarda-chuva;artist|artista;calm|calmo;remind|lembrar
+B: I see a woman with a {0}.|Vejo uma mulher com {0}.|red umbrella=um guarda-chuva vermelho;big hat=um chapéu grande;blue dress=um vestido azul
+B: It reminds me of a {0}.|Me lembra {0}.|quiet summer day=um dia quieto de verão;happy time=um momento feliz;trip=uma viagem
+S: Gina|What do you see in this painting?|O que você vê nesta pintura?|I see a woman with a red umbrella.|Vejo uma mulher com um guarda-chuva vermelho.
+S: Gina|How does it make you feel?|Como te faz sentir?|It reminds me of a quiet summer day.|Me lembra um dia quieto de verão.
+R: What do you see in this painting?|O que você vê nesta pintura?
+R: The colors are blue and green.|As cores são azul e verde.
+R: It feels calm.|Parece calmo.
+R: It reminds me of a quiet summer day.|Me lembra um dia quieto de verão.
+X: How does it make you feel?|Como te faz sentir?
+C: Museus de arte nos EUA, como o Art Institute de Chicago, abrigam obras famosas de pintores europeus e americanos.
+
+T: A night at the theater today | Ver uma peça de teatro | hall | New York | Lia,f,👩🏽,bilheteira
+K: The play starts at eight. | A peça começa às oito.
+M: Hoje você compra ingressos e escolhe lugares no teatro.
+D: You|Good evening. Two tickets for tonight's play, please.|Boa noite. Dois ingressos para a peça de hoje, por favor.
+D: Lia|Of course. We have seats in the balcony or in the orchestra.|Claro. Temos lugares no balcão ou na plateia.
+D: You|What is the difference in price?|Qual é a diferença de preço?
+D: Lia|The balcony is forty dollars, and the orchestra is seventy.|O balcão custa quarenta dólares e a plateia, setenta.
+D: You|The balcony is fine. What time does the play start?|O balcão está bom. A que horas começa a peça?
+D: Lia|At eight. Please arrive fifteen minutes early. Late guests cannot enter.|Às oito. Chegue quinze minutos antes. Quem chega atrasado não pode entrar.
+D: You|How long is the play?|Quanto dura a peça?
+D: Lia|Two hours and a half, with an intermission in the middle.|Duas horas e meia, com um intervalo no meio.
+V: play|peça de teatro;balcony|balcão;orchestra|plateia;intermission|intervalo;early|cedo
+B: Two tickets for {0}, please.|Dois ingressos para {0}, por favor.|tonight's play=a peça de hoje;the musical=o musical;Saturday's show=o show de sábado
+B: Please arrive {0} early.|Chegue {0} antes.|fifteen minutes=quinze minutos;half an hour=meia hora;ten minutes=dez minutos
+S: Lia|We have seats in the balcony.|Temos lugares no balcão.|What is the difference in price?|Qual é a diferença de preço?
+S: Lia|The play starts at eight.|A peça começa às oito.|How long is the play?|Quanto dura a peça?
+R: Two tickets for tonight's play, please.|Dois ingressos para a peça de hoje.
+R: The balcony is forty dollars.|O balcão custa quarenta dólares.
+R: The play starts at eight.|A peça começa às oito.
+R: There is an intermission in the middle.|Tem um intervalo no meio.
+X: Late guests cannot enter.|Quem chega atrasado não entra.
+C: Em Nova York, a Broadway é o grande centro de teatro, e há bilheterias que vendem ingressos com desconto no mesmo dia.
+
+T: A music concert | Ir a um show de música | plaza | Austin | Max,m,🧑🏼,amigo
+K: I have never seen a live band before. | Nunca vi uma banda ao vivo.
+M: Hoje você comenta um show com um amigo.
+D: Max|Did you enjoy the concert last night?|Você gostou do show ontem à noite?
+D: You|It was amazing! I have never seen a live band before.|Foi incrível! Nunca vi uma banda ao vivo.
+D: Max|What was your favorite song?|Qual foi sua música favorita?
+D: You|The last one, because everyone sang together.|A última, porque todo mundo cantou junto.
+D: Max|Did you buy a T-shirt?|Você comprou uma camiseta?
+D: You|Yes, and the singer signed it. I was so excited!|Sim, e o cantor autografou. Fiquei muito animado!
+D: Max|You are lucky. Tickets were sold out in minutes.|Você teve sorte. Os ingressos esgotaram em minutos.
+D: You|I know. I stayed online for two hours to buy them.|Eu sei. Fiquei online por duas horas para comprar.
+V: band|banda;singer|cantor;signed|autografou;sold out|esgotado;lucky|sortudo
+B: I have never seen a {0}.|Nunca vi {0}.|live band=uma banda ao vivo;ballet=um balé;opera=uma ópera
+B: The singer {0} my T-shirt.|O cantor {0} minha camiseta.|signed=autografou;touched=tocou;took=pegou
+S: Max|Did you enjoy the concert?|Gostou do show?|It was amazing! I have never seen a live band.|Foi incrível! Nunca vi banda ao vivo.
+S: Max|What was your favorite song?|Qual foi sua música favorita?|The last one, because everyone sang together.|A última, porque todos cantaram juntos.
+R: It was amazing.|Foi incrível.
+R: I have never seen a live band.|Nunca vi uma banda ao vivo.
+R: Everyone sang together.|Todos cantaram juntos.
+R: The singer signed my T-shirt.|O cantor autografou minha camiseta.
+X: Tickets sold out in minutes.|Os ingressos esgotaram em minutos.
+C: Austin se chama "a capital mundial da música ao vivo", e tem shows em bares e festivais quase todas as noites.
+
+T: The book club | Participar de um clube do livro | cafe | Boston | Ruth,f,👩🏻,organizadora
+K: What did you think of the ending? | O que achou do final?
+M: Hoje você discute um livro e dá sua opinião.
+D: Ruth|Welcome to our book club. Did everyone finish the book?|Bem-vindos ao nosso clube do livro. Todos terminaram o livro?
+D: You|Yes, I finished it last night. I could not stop reading.|Sim, terminei ontem à noite. Não consegui parar de ler.
+D: Ruth|What did you think of the main character?|O que achou da personagem principal?
+D: You|I liked her. She is brave, but she makes many mistakes.|Gostei dela. É corajosa, mas comete muitos erros.
+D: Ruth|And the ending?|E o final?
+D: You|It surprised me. I did not expect the twist.|Me surpreendeu. Não esperava a reviravolta.
+D: Ruth|Would you recommend the book to a friend?|Você recomendaria o livro a um amigo?
+D: You|Definitely. It made me think about my own choices.|Com certeza. Me fez pensar nas minhas escolhas.
+V: character|personagem;brave|corajosa;mistakes|erros;twist|reviravolta;choices|escolhas
+B: What did you think of the {0}?|O que achou {0}?|ending=do final;story=da história;main character=da personagem principal
+B: It made me think about {0}.|Isso me fez pensar {0}.|my own choices=nas minhas escolhas;life=na vida;my family=na minha família
+S: Ruth|What did you think of the main character?|O que achou da personagem principal?|I liked her. She is brave.|Gostei dela. É corajosa.
+S: Ruth|And the ending?|E o final?|It surprised me. I did not expect the twist.|Me surpreendeu. Não esperava a reviravolta.
+R: I could not stop reading.|Não consegui parar de ler.
+R: She is brave, but she makes mistakes.|É corajosa, mas comete erros.
+R: I did not expect the twist.|Não esperava a reviravolta.
+R: It made me think about my choices.|Me fez pensar nas minhas escolhas.
+X: Would you recommend it?|Você recomendaria?
+C: Clubes do livro são muito populares nos EUA, e cada mês os membros leem o mesmo livro para discutir.
+
+T: A photography walk | Fazer fotos pela cidade | street | San Francisco | Kai,m,🧑🏻,fotógrafo
+K: Try to find a different angle. | Tente achar um ângulo diferente.
+M: Hoje você aprende dicas simples de fotografia.
+D: Kai|Welcome to the photo walk. Today we will take pictures of the old town.|Bem-vindos ao passeio fotográfico. Hoje vamos fotografar a cidade velha.
+D: You|I only have my phone. Is that enough?|Só tenho meu celular. É suficiente?
+D: Kai|Of course. The best camera is the one you have with you.|Claro. A melhor câmera é a que você tem com você.
+D: You|Any tips for beginners?|Alguma dica para iniciantes?
+D: Kai|Look for good light, early in the morning or before sunset.|Procure boa luz, de manhã cedo ou antes do pôr do sol.
+D: You|And what about the angle?|E o ângulo?
+D: Kai|Try to find a different angle. Get low or look from above.|Tente achar um ângulo diferente. Abaixe-se ou olhe de cima.
+D: You|That is a great idea. Let me try with this old door.|Ótima ideia. Deixe-me tentar com esta porta antiga.
+V: pictures|fotos;light|luz;sunset|pôr do sol;angle|ângulo;beginners|iniciantes
+B: Look for good {0}.|Procure boa {0}.|light=luz;view=vista;place=posição
+B: Try to find a different {0}.|Tente achar um {0} diferente.|angle=ângulo;color=cor;place=lugar
+S: Kai|I only have my phone. Is that enough?|Só tenho o celular. É suficiente?|Of course. Any tips for beginners?|Claro. Alguma dica para iniciantes?
+S: Kai|Try a different angle.|Tente um ângulo diferente.|Great idea. Let me try with this door.|Ótima ideia. Vou tentar com esta porta.
+R: I only have my phone.|Só tenho meu celular.
+R: Look for good light.|Procure boa luz.
+R: Try to find a different angle.|Tente achar um ângulo diferente.
+R: Let me try with this door.|Deixe-me tentar com esta porta.
+X: Any tips for beginners?|Alguma dica para iniciantes?
+C: Os americanos chamam o horário logo antes do pôr do sol de "golden hour", considerado o melhor momento para fotografar.
+
+T: Learning an instrument | Aprender um instrumento musical | classroom | Nashville | Prof. Kim,m,🧑🏻,professor
+K: I want to learn the guitar. | Quero aprender violão.
+M: Hoje você combina aulas e metas de prática.
+D: You|Hello. I want to learn the guitar. I have never played before.|Olá. Quero aprender violão. Nunca toquei antes.
+D: Prof. Kim|No problem. We will start with the basic chords.|Sem problema. Vamos começar com os acordes básicos.
+D: You|How often should I take lessons?|Com que frequência devo ter aulas?
+D: Prof. Kim|Once a week, and practice fifteen minutes every day.|Uma vez por semana, e pratique quinze minutos por dia.
+D: You|Do I need to buy my own guitar?|Preciso comprar meu próprio violão?
+D: Prof. Kim|Yes, but a cheap one is fine to start. You can rent one first.|Sim, mas um barato serve para começar. Pode alugar um antes.
+D: You|How long until I can play a song?|Quanto tempo até tocar uma música?
+D: Prof. Kim|In about a month, you will play your first simple song.|Em cerca de um mês, você tocará sua primeira música simples.
+V: instrument|instrumento;chords|acordes;lessons|aulas;rent|alugar;simple|simples
+B: I want to learn the {0}.|Quero aprender {0}.|guitar=violão;piano=piano;drums=bateria
+B: Practice {0} every day.|Pratique {0} por dia.|fifteen minutes=quinze minutos;half an hour=meia hora;ten minutes=dez minutos
+S: Prof. Kim|Have you played before?|Já tocou antes?|No. I have never played before.|Não. Nunca toquei.
+S: Prof. Kim|Practice fifteen minutes every day.|Pratique quinze minutos por dia.|How long until I can play a song?|Quanto até tocar uma música?
+R: I want to learn the guitar.|Quero aprender violão.
+R: We will start with the basic chords.|Vamos começar com os acordes básicos.
+R: Practice fifteen minutes every day.|Pratique quinze minutos por dia.
+R: You can rent a guitar first.|Pode alugar um violão antes.
+X: I have never played before.|Nunca toquei antes.
+C: Nashville, no Tennessee, é conhecida como a "cidade da música", especialmente do country, e tem aulas e lojas de instrumentos em todo canto.
+
+T: Street art | Falar de arte de rua | street | Los Angeles | Moe,m,🧑🏻,artista
+K: Do you need permission to paint on a wall? | Precisa de permissão para pintar numa parede?
+M: Hoje você conversa com um artista de rua.
+D: You|Wow, this mural is huge. Did you paint it?|Uau, este mural é enorme. Foi você que pintou?
+D: Moe|Yes, with two friends. It took us three weeks.|Sim, com dois amigos. Levamos três semanas.
+D: You|What does it represent?|O que representa?
+D: Moe|It shows the history of the neighborhood and the people who live here.|Mostra a história do bairro e as pessoas que vivem aqui.
+D: You|Do you need permission to paint on a wall?|Precisa de permissão para pintar numa parede?
+D: Moe|Yes. We asked the owner, and the city gave us a permit.|Sim. Pedimos ao dono e a cidade nos deu uma licença.
+D: You|It makes the street so colorful and alive.|Deixa a rua tão colorida e viva.
+D: Moe|Thanks! Come back next month. We are starting another one.|Obrigado! Volte no mês que vem. Vamos começar outro.
+V: mural|mural;represent|representar;owner|dono;permit|licença;colorful|colorido
+B: It took us {0}.|Levamos {0}.|three weeks=três semanas;two days=dois dias;a month=um mês
+B: Do you need {0} to paint on a wall?|Precisa de {0} para pintar numa parede?|permission=permissão;a permit=uma licença;paint=tinta
+S: Moe|Yes, with two friends.|Sim, com dois amigos.|Did you paint it? What does it represent?|Foi você que pintou? O que representa?
+S: Moe|We asked the owner.|Pedimos ao dono.|Do you need permission to paint on a wall?|Precisa de permissão para pintar?
+R: Did you paint this mural?|Foi você que pintou este mural?
+R: It took us three weeks.|Levamos três semanas.
+R: It shows the history of the neighborhood.|Mostra a história do bairro.
+R: It makes the street colorful.|Deixa a rua colorida.
+X: It is so colorful and alive.|É tão colorido e vivo.
+C: Bairros de várias cidades americanas, como Wynwood, em Miami, ficaram famosos pelos murais de arte de rua.
+
+T: Dance class | Aprender a dançar | classroom | New Orleans | Lia,f,👩🏽,professora
+K: Move your feet and follow the rhythm. | Mexa os pés e siga o ritmo.
+M: Hoje você aprende passos básicos de dança.
+D: Lia|Welcome to the salsa class. Have you ever danced before?|Bem-vindos à aula de salsa. Você já dançou antes?
+D: You|Only at parties. I do not know any steps.|Só em festas. Não conheço nenhum passo.
+D: Lia|No problem. Listen to the music and follow the rhythm.|Sem problema. Ouça a música e siga o ritmo.
+D: Lia|Step forward with your right foot, then back with your left.|Dê um passo à frente com o pé direito, depois para trás com o esquerdo.
+D: You|Like this? I keep stepping on my partner's foot!|Assim? Eu sempre piso no pé do meu par!
+D: Lia|Do not worry. Everyone does it at the beginning. Keep your back straight.|Não se preocupe. Todo mundo faz isso no começo. Mantenha as costas retas.
+D: You|This is fun. Can we repeat the last part?|Isso é divertido. Podemos repetir a última parte?
+D: Lia|Sure. One, two, three... and turn!|Claro. Um, dois, três... e gire!
+V: dance|dançar|dança;steps|passos;rhythm|ritmo;partner|par;turn|girar
+B: Listen to the music and follow the {0}.|Ouça a música e siga {0}.|rhythm=o ritmo;teacher=a professora;steps=os passos
+B: Step forward with your {0} foot.|Dê um passo à frente com o pé {0}.|right=direito;left=esquerdo;strong=forte
+S: Lia|Have you ever danced before?|Já dançou antes?|Only at parties. I do not know any steps.|Só em festas. Não conheço passos.
+S: Lia|Keep your back straight.|Mantenha as costas retas.|This is fun. Can we repeat the last part?|É divertido. Podemos repetir a última parte?
+R: I do not know any steps.|Não conheço nenhum passo.
+R: Follow the rhythm.|Siga o ritmo.
+R: Step forward with your right foot.|Dê um passo com o pé direito.
+R: Can we repeat the last part?|Podemos repetir a última parte?
+X: One, two, three, and turn!|Um, dois, três, e gire!
+C: Aulas de dança, como salsa, swing e dança de salão, são um jeito divertido de fazer amigos nos EUA.
+
+T: A cultural weekend | Desafio do arco: planejar um fim de semana cultural | plaza | New York | Sam,m,🧑🏻,amigo
+K: Let us spend a weekend visiting museums and shows. | Vamos passar um fim de semana visitando museus e shows.
+M: Desafio: planeje museu, música, teatro e jantar.
+D: Sam|I have a free weekend. Do you want to do something cultural?|Tenho um fim de semana livre. Quer fazer algo cultural?
+D: You|Yes! Let us spend a weekend visiting museums and shows.|Sim! Vamos passar um fim de semana visitando museus e shows.
+D: Sam|On Saturday morning we can see the new painting exhibition.|No sábado de manhã podemos ver a nova exposição de pinturas.
+D: You|And in the evening, a jazz concert at the plaza. I have already bought two tickets.|E à noite, um show de jazz na praça. Já comprei dois ingressos.
+D: Sam|Great. On Sunday we can go to the theater and then have dinner nearby.|Ótimo. No domingo podemos ir ao teatro e depois jantar por perto.
+D: You|How much will it cost?|Quanto vai custar?
+D: Sam|About one hundred and fifty dollars each. It is a good deal.|Cerca de cento e cinquenta dólares cada. É um bom negócio.
+D: You|Perfect. It will be a weekend to remember.|Perfeito. Será um fim de semana para lembrar.
+V: cultural|cultural;exhibition|exposição;jazz|jazz;nearby|por perto;remember|lembrar
+B: Let us spend a weekend visiting {0}.|Vamos passar um fim de semana visitando {0}.|museums and shows=museus e shows;friends=amigos;new places=lugares novos
+B: I have already bought {0}.|Já comprei {0}.|two tickets=dois ingressos;the tickets=os ingressos;the map=o mapa
+S: Sam|Do you want to do something cultural?|Quer fazer algo cultural?|Yes! Let us spend a weekend visiting museums and shows.|Sim! Vamos passar um fim de semana em museus e shows.
+S: Sam|How much will it cost?|Quanto vai custar?|About one hundred and fifty dollars each.|Cerca de cento e cinquenta cada.
+R: Let us spend a weekend visiting museums and shows.|Vamos passar um fim de semana em museus e shows.
+R: On Saturday we can see an exhibition.|No sábado podemos ver uma exposição.
+R: I have already bought two tickets.|Já comprei dois ingressos.
+R: It will be a weekend to remember.|Será um fim de semana para lembrar.
+X: It is a good deal.|É um bom negócio.
+C: Fins de semana culturais em grandes cidades americanas incluem museus gratuitos, shows ao ar livre e feiras de arte.

@@ -1,0 +1,507 @@
+# Arco 38 · A cidade e seus lugares
+T: Is there a bank near here? | Perguntar por um lugar | street | Boston | Max,m,🧑🏼,pedestre
+K: Is there a bank near here? | Tem um banco por aqui?
+M: Hoje você pergunta por lugares da cidade.
+D: You|Excuse me. Is there a bank near here?|Com licença. Tem um banco por aqui?
+D: Max|Yes, there is one on Main Street.|Sim, tem um na Main Street.
+D: You|Is it far?|É longe?
+D: Max|No, it is two blocks away.|Não, fica a duas quadras.
+D: You|And is there a pharmacy too?|E tem uma farmácia também?
+D: Max|Yes, next to the bank.|Tem, ao lado do banco.
+D: You|Great. Thank you very much.|Ótimo. Muito obrigado.
+D: Max|You are welcome.|De nada.
+V: bank|banco;pharmacy|farmácia;blocks|quadras;near|perto;street|rua
+B: Is there a {0} near here?|Tem {0} por aqui?|bank=um banco;pharmacy=uma farmácia;cafe=um café
+B: It is two {0} away.|Fica a duas {0}.|blocks=quadras;streets=ruas;stops=paradas
+S: You|Excuse me. Is there a bank near here?|Com licença. Tem um banco por aqui?|Yes, there is one on Main Street.|Sim, tem um na Main Street.
+S: Max|No, it is two blocks away.|Não, fica a duas quadras.|And is there a pharmacy too?|E tem uma farmácia também?
+R: Is there a bank near here?|Tem um banco por aqui?
+R: There is one on Main Street.|Tem um na Main Street.
+R: It is two blocks away.|Fica a duas quadras.
+R: Is there a pharmacy too?|Tem uma farmácia também?
+X: You are welcome.|De nada.
+C: Cidades americanas usam "blocks" (quadras) para medir distâncias curtas.
+N: Próximo: os Correios.
+
+T: At the post office | Correios | shop | Denver | Ruth,f,👩🏻,atendente
+K: I want to send a letter. | Quero enviar uma carta.
+M: Hoje você envia uma carta.
+D: You|Hello. I want to send a letter.|Olá. Quero enviar uma carta.
+D: Ruth|Where is it going?|Para onde vai?
+D: You|To Brazil.|Para o Brasil.
+D: Ruth|Do you want it fast or slow?|Você quer rápido ou lento?
+D: You|Fast, please. How much is it?|Rápido, por favor. Quanto custa?
+D: Ruth|It is twelve dollars.|São doze dólares.
+D: You|Here you are. Do I need a stamp?|Aqui está. Preciso de selo?
+D: Ruth|No, the price includes it.|Não, o preço já inclui.
+V: letter|carta;stamp|selo;Brazil|Brasil;fast|rápido;price|preço
+B: I want to send a {0}.|Quero enviar {0}.|letter=uma carta;package=um pacote;postcard=um cartão-postal
+B: It is {0} dollars.|São {0} dólares.|twelve=doze;ten=dez;twenty=vinte
+S: Ruth|Where is it going?|Para onde vai?|To Brazil.|Para o Brasil.
+S: You|Fast, please. How much is it?|Rápido, por favor. Quanto custa?|It is twelve dollars.|São doze dólares.
+R: I want to send a letter.|Quero enviar uma carta.
+R: Fast, please.|Rápido, por favor.
+R: How much is it?|Quanto custa?
+R: Do I need a stamp?|Preciso de selo?
+X: Here you are.|Aqui está.
+C: Nos EUA, o selo se chama "stamp" e o carteiro, "mail carrier".
+N: Próximo: o banco.
+
+T: At the bank | Banco | office | New York | Sam,m,🧑🏻,atendente
+K: I want to open an account. | Quero abrir uma conta.
+M: Hoje você abre uma conta.
+D: You|Good morning. I want to open an account.|Bom dia. Quero abrir uma conta.
+D: Sam|Of course. Do you have your passport?|Claro. Você tem o passaporte?
+D: You|Yes, here it is.|Tenho, aqui está.
+D: Sam|What is your address?|Qual é o seu endereço?
+D: You|It is 20 Oak Street.|É Oak Street, 20.
+D: Sam|Sign here, please.|Assine aqui, por favor.
+D: You|Done. When do I get my card?|Pronto. Quando recebo meu cartão?
+D: Sam|In one week.|Em uma semana.
+V: account|conta;passport|passaporte;address|endereço;sign|assinar;card|cartão
+B: I want to open an {0}.|Quero abrir uma {0}.|account=conta;saving account=conta poupança;card=conta de cartão
+B: Sign {0}, please.|Assine {0}, por favor.|here=aqui;there=ali;below=abaixo
+S: You|Good morning. I want to open an account.|Bom dia. Quero abrir uma conta.|Of course. Do you have your passport?|Claro. Você tem o passaporte?
+S: Sam|Sign here, please.|Assine aqui, por favor.|Done. When do I get my card?|Pronto. Quando recebo meu cartão?
+R: I want to open an account.|Quero abrir uma conta.
+R: Here is my passport.|Aqui está meu passaporte.
+R: My address is 20 Oak Street.|Meu endereço é Oak Street, 20.
+R: Sign here, please.|Assine aqui, por favor.
+X: Done.|Pronto.
+C: Para abrir conta bancária no exterior, em geral pedem passaporte e comprovante de endereço.
+N: Próximo: a biblioteca.
+
+T: At the library | Biblioteca | library | Boston | Ruth,f,👩🏻,bibliotecária
+K: I want a library card. | Quero um cartão da biblioteca.
+M: Hoje você faz um cartão de biblioteca.
+D: You|Hello. I want a library card.|Olá. Quero um cartão da biblioteca.
+D: Ruth|Sure. Do you have an ID?|Claro. Você tem um documento?
+D: You|Yes, here is my passport.|Tenho, aqui está meu passaporte.
+D: Ruth|Fill in this form, please.|Preencha este formulário, por favor.
+D: You|Okay. Can I borrow books now?|Certo. Posso pegar livros agora?
+D: Ruth|Yes, five books for two weeks.|Sim, cinco livros por duas semanas.
+D: You|Where is the children's section?|Onde fica a seção infantil?
+D: Ruth|It is on the second floor.|Fica no segundo andar.
+V: library|biblioteca;card|cartão;form|formulário;borrow|pegar emprestado;weeks|semanas
+B: I want a library {0}.|Quero um(a) {0} da biblioteca.|card=cartão;book=livro;map=mapa
+B: Five books for two {0}.|Cinco livros por duas {0}.|weeks=semanas;days=dias;months=meses
+S: You|Hello. I want a library card.|Olá. Quero um cartão da biblioteca.|Sure. Do you have an ID?|Claro. Você tem um documento?
+S: You|Okay. Can I borrow books now?|Certo. Posso pegar livros agora?|Yes, five books for two weeks.|Sim, cinco livros por duas semanas.
+R: I want a library card.|Quero um cartão da biblioteca.
+R: Do you have an ID?|Você tem um documento?
+R: Fill in this form, please.|Preencha este formulário, por favor.
+R: Five books for two weeks.|Cinco livros por duas semanas.
+X: Can I borrow books?|Posso pegar livros emprestados?
+C: Bibliotecas públicas americanas costumam emprestar também filmes, jogos e até ferramentas.
+N: Próximo: o supermercado.
+
+T: The corner store | Lojinha de esquina | shop | Chicago | Omar,m,🧑🏽,vendedor
+K: I need milk and bread. | Preciso de leite e pão.
+M: Hoje você compra o básico.
+D: Omar|Welcome! Can I help you?|Bem-vindo! Posso ajudar?
+D: You|Yes, I need milk and bread.|Sim, preciso de leite e pão.
+D: Omar|The milk is in the fridge on the left.|O leite está na geladeira à esquerda.
+D: You|And the bread?|E o pão?
+D: Omar|It is on the shelf, near the door.|Está na prateleira, perto da porta.
+D: You|Do you have eggs too?|Vocês têm ovos também?
+D: Omar|Yes, a dozen for four dollars.|Sim, uma dúzia por quatro dólares.
+D: You|Perfect. I take all of this.|Perfeito. Levo tudo isto.
+V: milk|leite;bread|pão;eggs|ovos;shelf|prateleira;dozen|dúzia
+B: I need {0}.|Preciso de {0}.|milk=leite;bread=pão;eggs=ovos
+B: A dozen for {0} dollars.|Uma dúzia por {0} dólares.|four=quatro;three=três;five=cinco
+S: Omar|Welcome! Can I help you?|Bem-vindo! Posso ajudar?|Yes, I need milk and bread.|Sim, preciso de leite e pão.
+S: You|Do you have eggs too?|Vocês têm ovos também?|Yes, a dozen for four dollars.|Sim, uma dúzia por quatro dólares.
+R: I need milk and bread.|Preciso de leite e pão.
+R: The milk is in the fridge.|O leite está na geladeira.
+R: Do you have eggs?|Vocês têm ovos?
+R: A dozen for four dollars.|Uma dúzia por quatro dólares.
+X: I take all of this.|Levo tudo isto.
+C: "A dozen" é uma dúzia: doze unidades.
+N: Próximo: a lavanderia.
+
+T: At the laundromat | Lavanderia | shop | Brooklyn | Lia,f,👩🏽,atendente
+K: I need change for the machine. | Preciso de trocado para a máquina.
+M: Hoje você lava roupa numa lavanderia.
+D: You|Hello. I need change for the machine.|Olá. Preciso de trocado para a máquina.
+D: Lia|Here are four quarters.|Aqui estão quatro moedas de 25.
+D: You|How much is a wash?|Quanto custa uma lavagem?
+D: Lia|It is three dollars.|São três dólares.
+D: You|Where is the soap?|Onde está o sabão?
+D: Lia|You can buy it from that machine.|Você pode comprar naquela máquina.
+D: You|How long is a wash?|Quanto tempo dura uma lavagem?
+D: Lia|About forty minutes.|Cerca de quarenta minutos.
+V: laundromat|lavanderia;change|trocado;quarters|moedas de 25 centavos;soap|sabão;machine|máquina
+B: I need {0}.|Preciso de {0}.|change=trocado;soap=sabão;a bag=uma sacola
+B: A wash is {0} dollars.|Uma lavagem custa {0} dólares.|three=três;four=quatro;five=cinco
+S: You|Hello. I need change for the machine.|Olá. Preciso de trocado para a máquina.|Here are four quarters.|Aqui estão quatro moedas de 25.
+S: You|How long is a wash?|Quanto tempo dura uma lavagem?|About forty minutes.|Cerca de quarenta minutos.
+R: I need change for the machine.|Preciso de trocado para a máquina.
+R: How much is a wash?|Quanto custa uma lavagem?
+R: Where is the soap?|Onde está o sabão?
+R: A wash is about forty minutes.|Uma lavagem dura cerca de quarenta minutos.
+X: Four quarters.|Quatro moedas de 25.
+C: Nos EUA, muitas lavanderias funcionam com moedas "quarters".
+N: Próximo: o café.
+
+T: A coffee break | Pausa para o café | cafe | Seattle | Mia,f,👩🏻,barista
+K: A latte, please. | Um latte, por favor.
+M: Hoje você faz uma pausa para o café.
+D: Mia|Good morning! What can I get you?|Bom dia! O que posso servir?
+D: You|A latte, please.|Um latte, por favor.
+D: Mia|Small, medium or large?|Pequeno, médio ou grande?
+D: You|Medium. With oat milk.|Médio. Com leite de aveia.
+D: Mia|Anything to eat?|Algo para comer?
+D: You|A blueberry muffin.|Um muffin de mirtilo.
+D: Mia|That is six dollars.|São seis dólares.
+D: You|Here is my card. Thank you!|Aqui está meu cartão. Obrigado!
+V: latte|latte;medium|médio;oat milk|leite de aveia;muffin|muffin;card|cartão
+B: A {0}, please.|Um(a) {0}, por favor.|latte=latte;tea=chá;muffin=muffin
+B: Small, medium or {0}?|Pequeno, médio ou {0}?|large=grande;extra large=extra grande;mini=mini
+S: Mia|Good morning! What can I get you?|Bom dia! O que posso servir?|A latte, please.|Um latte, por favor.
+S: Mia|Anything to eat?|Algo para comer?|A blueberry muffin.|Um muffin de mirtilo.
+R: A latte, please.|Um latte, por favor.
+R: Medium, with oat milk.|Médio, com leite de aveia.
+R: A blueberry muffin.|Um muffin de mirtilo.
+R: Here is my card.|Aqui está meu cartão.
+X: What can I get you?|O que posso servir?
+C: Em cafeterias americanas, pede-se pelo tamanho: small, medium ou large.
+N: Próximo: o cinema.
+
+T: Movie tickets | Comprar ingressos | cinema | Chicago | Max,m,🧑🏼,atendente
+K: Two tickets for eight o'clock. | Dois ingressos para as oito.
+M: Hoje você compra ingressos de cinema.
+D: You|Two tickets for the eight o'clock movie, please.|Dois ingressos para o filme das oito, por favor.
+D: Max|Which movie?|Qual filme?
+D: You|The new comedy.|A nova comédia.
+D: Max|Where do you want to sit?|Onde você quer sentar?
+D: You|In the middle, not too close.|No meio, não muito perto.
+D: Max|That is twenty dollars.|São vinte dólares.
+D: You|Here you go. Where is room four?|Aqui está. Onde fica a sala quatro?
+D: Max|Down the hall, on the left.|No corredor, à esquerda.
+V: tickets|ingressos;movie|filme;middle|meio;room|sala;hall|corredor
+B: Two tickets for the {0} o'clock movie.|Dois ingressos para o filme das {0}.|eight=oito;seven=sete;nine=nove
+B: Where is room {0}?|Onde fica a sala {0}?|four=quatro;two=dois;six=seis
+S: You|Two tickets for the eight o'clock movie, please.|Dois ingressos para o filme das oito, por favor.|Which movie?|Qual filme?
+S: Max|Where do you want to sit?|Onde você quer sentar?|In the middle, not too close.|No meio, não muito perto.
+R: Two tickets, please.|Dois ingressos, por favor.
+R: The eight o'clock movie.|O filme das oito.
+R: In the middle, please.|No meio, por favor.
+R: Where is room four?|Onde fica a sala quatro?
+X: Here you go.|Aqui está.
+C: Cinemas americanos têm salas numeradas e vendem pipoca em tamanhos grandes.
+N: Próximo: o parque da cidade.
+
+T: Central Park | Passeio no parque | park | New York | Ruth,f,👩🏻,guia
+K: Let us walk in the park. | Vamos caminhar no parque.
+M: Hoje você passeia por um parque famoso.
+D: Ruth|Welcome to Central Park. It is very big.|Bem-vindo ao Central Park. É muito grande.
+D: You|How big is it?|Qual é o tamanho?
+D: Ruth|It is four kilometers long.|Tem quatro quilômetros de comprimento.
+D: You|What is there to see?|O que tem para ver?
+D: Ruth|There are lakes, bridges and a small zoo.|Tem lagos, pontes e um zoológico pequeno.
+D: You|Can I rent a boat?|Posso alugar um barco?
+D: Ruth|Yes, at the lake over there.|Sim, no lago ali.
+D: You|Let us start with the lake.|Vamos começar pelo lago.
+V: park|parque;lakes|lagos;bridges|pontes;zoo|zoológico;boat|barco
+B: There are {0} in the park.|Tem {0} no parque.|lakes=lagos;bridges=pontes;trees=árvores
+B: Can I rent a {0}?|Posso alugar um(a) {0}?|boat=barco;bike=bicicleta;chair=cadeira
+S: Ruth|Welcome to Central Park. It is very big.|Bem-vindo ao Central Park. É muito grande.|How big is it?|Qual é o tamanho?
+S: You|Can I rent a boat?|Posso alugar um barco?|Yes, at the lake over there.|Sim, no lago ali.
+R: It is four kilometers long.|Tem quatro quilômetros de comprimento.
+R: There are lakes and bridges.|Tem lagos e pontes.
+R: Can I rent a boat?|Posso alugar um barco?
+R: Let us start with the lake.|Vamos começar pelo lago.
+X: What is there to see?|O que tem para ver?
+C: O Central Park fica no meio de Manhattan e recebe milhões de visitantes por ano.
+N: Próximo: pegar o metrô.
+
+T: Take the subway | Metrô | subwaycar | New York | Walt,m,🧑🏿,passageiro
+K: Which line goes to the park? | Qual linha vai ao parque?
+M: Hoje você pega o metrô.
+D: You|Excuse me. Which line goes to the park?|Com licença. Qual linha vai ao parque?
+D: Walt|Take the green line. It is on platform two.|Pegue a linha verde. Está na plataforma dois.
+D: You|How many stops are there?|Quantas paradas tem?
+D: Walt|Five stops. It is about ten minutes.|Cinco paradas. São cerca de dez minutos.
+D: You|How much is the ticket?|Quanto custa a passagem?
+D: Walt|Three dollars. Use the machine.|Três dólares. Use a máquina.
+D: You|Thank you. Is this seat free?|Obrigado. Este lugar está livre?
+D: Walt|Yes, please sit.|Sim, sente-se.
+V: line|linha;platform|plataforma;stops|paradas;ticket|passagem;seat|lugar
+B: Take the {0} line.|Pegue a linha {0}.|green=verde;red=vermelha;blue=azul
+B: It is on platform {0}.|Está na plataforma {0}.|two=dois;one=um;three=três
+S: You|Excuse me. Which line goes to the park?|Com licença. Qual linha vai ao parque?|Take the green line. It is on platform two.|Pegue a linha verde. Está na plataforma dois.
+S: You|How many stops are there?|Quantas paradas tem?|Five stops. It is about ten minutes.|Cinco paradas. São cerca de dez minutos.
+R: Which line goes to the park?|Qual linha vai ao parque?
+R: Take the green line.|Pegue a linha verde.
+R: How many stops are there?|Quantas paradas tem?
+R: Is this seat free?|Este lugar está livre?
+X: Please sit.|Sente-se, por favor.
+C: O metrô de Nova York tem linhas de cor e letra, como "A", "1" e "6".
+N: Próximo: desafio, o seu bairro.
+
+T: My neighborhood | Desafio do arco: o seu bairro | street | Boston | Jess,f,🧑🏼,vizinha
+K: I live in a nice neighborhood. | Moro num bairro legal.
+M: Hoje você descreve o seu bairro.
+D: Jess|Tell me about your neighborhood.|Fale do seu bairro.
+D: You|It is quiet and green. There is a park.|É calmo e verde. Tem um parque.
+D: Jess|Are there shops near you?|Tem lojas perto de você?
+D: You|Yes, a bakery, a pharmacy and a bank.|Tem, uma padaria, uma farmácia e um banco.
+D: Jess|Is there a subway station?|Tem estação de metrô?
+D: You|Yes, it is two blocks away.|Tem, fica a duas quadras.
+D: Jess|It sounds perfect.|Parece perfeito.
+D: You|I love my neighborhood.|Eu adoro o meu bairro.
+V: neighborhood|bairro;quiet|calmo;bakery|padaria;pharmacy|farmácia;station|estação
+B: My neighborhood is {0}.|Meu bairro é {0}.|quiet=calmo;green=verde;busy=movimentado
+B: There is a {0} near me.|Tem {0} perto de mim.|park=um parque;bank=um banco;school=uma escola
+S: Jess|Tell me about your neighborhood.|Fale do seu bairro.|It is quiet and green. There is a park.|É calmo e verde. Tem um parque.
+S: Jess|Is there a subway station?|Tem estação de metrô?|Yes, it is two blocks away.|Tem, fica a duas quadras.
+R: Tell me about your neighborhood.|Fale do seu bairro.
+R: It is quiet and green.|É calmo e verde.
+R: There is a bakery and a bank.|Tem uma padaria e um banco.
+R: I love my neighborhood.|Eu adoro o meu bairro.
+X: It sounds perfect.|Parece perfeito.
+C: "Neighborhood" é o bairro; "neighbors" são os vizinhos.
+N: Próximo: saúde e exercício.
+BOSS: 1
+
+# Arco 39 · Saúde e exercício
+T: Good morning exercise | Exercício matinal | gym | Portland | Mia,f,👩🏻,treinadora
+K: Stretch your arms. | Estique os braços.
+M: Hoje você faz alongamento de manhã.
+D: Mia|Good morning! Let us stretch.|Bom dia! Vamos nos alongar.
+D: You|Okay. What do I do first?|Certo. O que faço primeiro?
+D: Mia|Stretch your arms up high.|Estique os braços para cima.
+D: You|Like this?|Assim?
+D: Mia|Yes. Now touch your toes.|Sim. Agora toque os dedos dos pés.
+D: You|It is hard for me.|É difícil para mim.
+D: Mia|Slowly. Breathe in and out.|Devagar. Inspire e expire.
+D: You|I feel better already.|Já me sinto melhor.
+V: stretch|alongar;toes|dedos dos pés;breathe|respirar;slowly|devagar;arms|braços
+B: Stretch your {0}.|Estique {0}.|arms=os braços;legs=as pernas;back=as costas
+B: Breathe in and {0}.|Inspire e {0}.|out=expire;slowly=devagar;deep=fundo
+S: Mia|Good morning! Let us stretch.|Bom dia! Vamos nos alongar.|Okay. What do I do first?|Certo. O que faço primeiro?
+S: Mia|Slowly. Breathe in and out.|Devagar. Inspire e expire.|I feel better already.|Já me sinto melhor.
+R: Let us stretch.|Vamos nos alongar.
+R: Stretch your arms up high.|Estique os braços para cima.
+R: Touch your toes.|Toque os dedos dos pés.
+R: Breathe in and out.|Inspire e expire.
+X: Slowly.|Devagar.
+C: Respirar fundo ajuda a relaxar e a se concentrar.
+N: Próximo: a academia.
+
+T: Join the gym | Entrar na academia | gym | Austin | Max,m,🧑🏼,recepcionista
+K: What time do you open? | A que horas vocês abrem?
+M: Hoje você se inscreve na academia.
+D: You|Hello. I want to join the gym.|Olá. Quero me inscrever na academia.
+D: Max|Welcome! Monthly or yearly?|Bem-vindo! Mensal ou anual?
+D: You|Monthly, please. How much is it?|Mensal, por favor. Quanto custa?
+D: Max|It is thirty dollars a month.|São trinta dólares por mês.
+D: You|What time do you open?|A que horas vocês abrem?
+D: Max|We open at six and close at ten.|Abrimos às seis e fechamos às dez.
+D: You|Are there classes?|Tem aulas?
+D: Max|Yes, yoga and spinning.|Tem, ioga e spinning.
+V: gym|academia;monthly|mensal;yearly|anual;classes|aulas;yoga|ioga
+B: Monthly or {0}?|Mensal ou {0}?|yearly=anual;weekly=semanal;daily=diário
+B: We open at {0}.|Abrimos às {0}.|six=seis;seven=sete;eight=oito
+S: You|Hello. I want to join the gym.|Olá. Quero me inscrever na academia.|Welcome! Monthly or yearly?|Bem-vindo! Mensal ou anual?
+S: You|What time do you open?|A que horas vocês abrem?|We open at six and close at ten.|Abrimos às seis e fechamos às dez.
+R: I want to join the gym.|Quero me inscrever na academia.
+R: Monthly, please.|Mensal, por favor.
+R: It is thirty dollars a month.|São trinta dólares por mês.
+R: We open at six.|Abrimos às seis.
+X: Are there classes?|Tem aulas?
+C: "A month" também significa "por mês": thirty dollars a month.
+N: Próximo: ioga.
+
+T: A yoga class | Aula de ioga | gym | Santa Monica | Lia,f,👩🏽,professora
+K: Close your eyes. | Feche os olhos.
+M: Hoje você faz uma aula de ioga.
+D: Lia|Welcome to yoga. Sit on your mat.|Bem-vindo à ioga. Sente no seu tapete.
+D: You|Is it okay here?|Aqui está bom?
+D: Lia|Yes. Cross your legs and close your eyes.|Sim. Cruze as pernas e feche os olhos.
+D: You|My legs are stiff.|Minhas pernas estão duras.
+D: Lia|That is normal. Breathe slowly.|É normal. Respire devagar.
+D: You|I feel calm.|Eu me sinto calmo.
+D: Lia|Now open your eyes and stretch.|Agora abra os olhos e estique-se.
+D: You|I love this class.|Eu adoro essa aula.
+V: mat|tapete;legs|pernas;eyes|olhos;stiff|duras;calm|calmo
+B: Close your {0}.|Feche {0}.|eyes=os olhos;mouth=a boca;hand=a mão
+B: I feel {0}.|Eu me sinto {0}.|calm=calmo;relaxed=relaxado;strong=forte
+S: Lia|Welcome to yoga. Sit on your mat.|Bem-vindo à ioga. Sente no seu tapete.|Is it okay here?|Aqui está bom?
+S: Lia|That is normal. Breathe slowly.|É normal. Respire devagar.|I feel calm.|Eu me sinto calmo.
+R: Sit on your mat.|Sente no seu tapete.
+R: Cross your legs.|Cruze as pernas.
+R: Close your eyes.|Feche os olhos.
+R: I feel calm.|Eu me sinto calmo.
+X: That is normal.|Isso é normal.
+C: A ioga ficou muito popular nos EUA como exercício e relaxamento.
+N: Próximo: a consulta.
+
+T: A check-up | Consulta de rotina | clinic | Seattle | Dr. Lee,m,🧑🏻,médico
+K: Open your mouth. | Abra a boca.
+M: Hoje você faz uma consulta simples.
+D: Dr. Lee|Good morning. Please sit down.|Bom dia. Sente-se, por favor.
+D: You|Thank you, doctor.|Obrigado, doutor.
+D: Dr. Lee|Open your mouth and say "ah".|Abra a boca e diga "ah".
+D: You|Ahhh.|Ahhh.
+D: Dr. Lee|Your throat is fine. Let me check your heart.|Sua garganta está boa. Deixe-me ver o seu coração.
+D: You|Is it normal?|Está normal?
+D: Dr. Lee|Yes, you are healthy.|Sim, você está saudável.
+D: You|What a relief!|Que alívio!
+V: mouth|boca;throat|garganta;healthy|saudável;relief|alívio;heart|coração
+B: Open your {0}.|Abra {0}.|mouth=a boca;eyes=os olhos;hand=a mão
+B: You are {0}.|Você está {0}.|healthy=saudável;fine=bem;well=bem
+S: Dr. Lee|Good morning. Please sit down.|Bom dia. Sente-se, por favor.|Thank you, doctor.|Obrigado, doutor.
+S: Dr. Lee|Yes, you are healthy.|Sim, você está saudável.|What a relief!|Que alívio!
+R: Please sit down.|Sente-se, por favor.
+R: Open your mouth and say "ah".|Abra a boca e diga "ah".
+R: Your throat is fine.|Sua garganta está boa.
+R: You are healthy.|Você está saudável.
+X: What a relief!|Que alívio!
+C: "Check-up" é uma consulta de rotina, mesmo sem sintomas.
+N: Próximo: comida saudável.
+
+T: Eat well | Alimentação saudável | kitchen | Portland | Jess,f,🧑🏼,nutricionista
+K: Eat more vegetables. | Coma mais legumes.
+M: Hoje você aprende hábitos de alimentação.
+D: Jess|Do you eat vegetables every day?|Você come legumes todo dia?
+D: You|Not always. I like pizza.|Nem sempre. Eu gosto de pizza.
+D: Jess|Pizza is okay, but eat more vegetables.|Pizza está bem, mas coma mais legumes.
+D: You|Which vegetables are good?|Quais legumes são bons?
+D: Jess|Carrots, spinach and broccoli.|Cenoura, espinafre e brócolis.
+D: You|Do I drink enough water?|Eu bebo água suficiente?
+D: Jess|You need eight glasses a day.|Você precisa de oito copos por dia.
+D: You|Okay. I try to do that.|Certo. Vou tentar.
+V: vegetables|legumes;spinach|espinafre;broccoli|brócolis;enough|suficiente;glasses|copos
+B: Eat more {0}.|Coma mais {0}.|vegetables=legumes;fruit=fruta;fish=peixe
+B: You need {0} glasses of water.|Você precisa de {0} copos de água.|eight=oito;six=seis;ten=dez
+S: Jess|Do you eat vegetables every day?|Você come legumes todo dia?|Not always. I like pizza.|Nem sempre. Eu gosto de pizza.
+S: You|Do I drink enough water?|Eu bebo água suficiente?|You need eight glasses a day.|Você precisa de oito copos por dia.
+R: Do you eat vegetables every day?|Você come legumes todo dia?
+R: Eat more vegetables.|Coma mais legumes.
+R: Carrots and broccoli are good.|Cenoura e brócolis são bons.
+R: You need eight glasses of water.|Você precisa de oito copos de água.
+X: Not always.|Nem sempre.
+C: "Enough" significa suficiente: enough water, enough sleep.
+N: Próximo: dormir bem.
+
+T: A good night's sleep | Dormir bem | living | Austin | Rosa,f,👩🏽,mãe
+K: Go to bed early. | Vá para a cama cedo.
+M: Hoje você fala de sono.
+D: Rosa|You look tired. Do you sleep well?|Você parece cansado. Você dorme bem?
+D: You|Not really. I go to bed late.|Nem muito. Eu vou para a cama tarde.
+D: Rosa|Go to bed early. Eight hours is good.|Vá para a cama cedo. Oito horas é bom.
+D: You|I use my phone in bed.|Uso o celular na cama.
+D: Rosa|Put it away. The light is bad for sleep.|Guarde-o. A luz faz mal ao sono.
+D: You|What else helps?|O que mais ajuda?
+D: Rosa|A warm bath and a book.|Um banho quente e um livro.
+D: You|Good idea. I try tonight.|Boa ideia. Vou tentar hoje.
+V: tired|cansado;hours|horas;bed|cama;bath|banho;sleep|sono
+B: Go to bed {0}.|Vá para a cama {0}.|early=cedo;now=agora;at ten=às dez
+B: Eight {0} is good.|Oito {0} é bom.|hours=horas;glasses=copos;minutes=minutos
+S: Rosa|You look tired. Do you sleep well?|Você parece cansado. Você dorme bem?|Not really. I go to bed late.|Nem muito. Eu vou para a cama tarde.
+S: Rosa|Put it away. The light is bad for sleep.|Guarde-o. A luz faz mal ao sono.|What else helps?|O que mais ajuda?
+R: Do you sleep well?|Você dorme bem?
+R: Go to bed early.|Vá para a cama cedo.
+R: Eight hours is good.|Oito horas é bom.
+R: A warm bath and a book help.|Um banho quente e um livro ajudam.
+X: Not really.|Nem muito.
+C: Especialistas dizem que adultos precisam de 7 a 9 horas de sono.
+N: Próximo: dor de cabeça.
+
+T: A headache day | Dor de cabeça | living | Boston | Ben,m,🧑🏽,amigo
+K: My head hurts. | Minha cabeça dói.
+M: Hoje você fala de dor de cabeça.
+D: Ben|You look pale. What is wrong?|Você está pálido. O que houve?
+D: You|My head hurts.|Minha cabeça dói.
+D: Ben|Do you have a fever?|Você tem febre?
+D: You|No, but I feel dizzy.|Não, mas me sinto tonto.
+D: Ben|Drink some water and rest.|Beba água e descanse.
+D: You|Can I take a pill?|Posso tomar um comprimido?
+D: Ben|Ask the pharmacist first.|Pergunte ao farmacêutico primeiro.
+D: You|Good idea. Thank you, Ben.|Boa ideia. Obrigado, Ben.
+V: pale|pálido;fever|febre;dizzy|tonto;pill|comprimido;rest|descansar
+B: My {0} hurts.|Meu(Minha) {0} dói.|head=cabeça;back=costas;stomach=barriga
+B: I feel {0}.|Eu me sinto {0}.|dizzy=tonto;tired=cansado;weak=fraco
+S: Ben|You look pale. What is wrong?|Você está pálido. O que houve?|My head hurts.|Minha cabeça dói.
+S: Ben|Drink some water and rest.|Beba água e descanse.|Good idea. Thank you, Ben.|Boa ideia. Obrigado, Ben.
+R: What is wrong?|O que houve?
+R: My head hurts.|Minha cabeça dói.
+R: I feel dizzy.|Eu me sinto tonto.
+R: Drink some water and rest.|Beba água e descanse.
+X: What is wrong?|O que houve?
+C: "Hurts" é a forma de "hurt" para he, she, it: my head hurts.
+N: Próximo: dente.
+
+T: At the dentist | No dentista | clinic | Denver | Dr. Ray,f,👩🏽,dentista
+K: Open wide, please. | Abra bem, por favor.
+M: Hoje você vai ao dentista.
+D: Dr. Ray|Hello! Please sit in the chair.|Olá! Sente na cadeira, por favor.
+D: You|I have a toothache.|Estou com dor de dente.
+D: Dr. Ray|Open wide, please.|Abra bem, por favor.
+D: You|Ahh.|Ahh.
+D: Dr. Ray|I see the problem. It is a small hole.|Vejo o problema. É um buraquinho.
+D: You|Does it hurt?|Vai doer?
+D: Dr. Ray|Not much. I clean it and close it.|Não muito. Limpo e fecho.
+D: You|Thank you. I brush my teeth every day.|Obrigado. Escovo os dentes todo dia.
+V: toothache|dor de dente;chair|cadeira;wide|bem aberto;hole|buraco;teeth|dentes
+B: I have a {0}.|Estou com {0}.|toothache=dor de dente;headache=dor de cabeça;cold=resfriado
+B: I brush my teeth {0}.|Escovo os dentes {0}.|every day=todo dia;twice a day=duas vezes ao dia;at night=à noite
+S: Dr. Ray|Hello! Please sit in the chair.|Olá! Sente na cadeira, por favor.|I have a toothache.|Estou com dor de dente.
+S: Dr. Ray|Not much. I clean it and close it.|Não muito. Limpo e fecho.|Thank you. I brush my teeth every day.|Obrigado. Escovo os dentes todo dia.
+R: Please sit in the chair.|Sente na cadeira, por favor.
+R: I have a toothache.|Estou com dor de dente.
+R: Open wide, please.|Abra bem, por favor.
+R: I brush my teeth every day.|Escovo os dentes todo dia.
+X: Open wide.|Abra bem.
+C: Escovar os dentes duas vezes por dia é o conselho comum dos dentistas.
+N: Próximo: a farmácia.
+
+T: Medicine and rest | Remédio e descanso | shop | Austin | Lia,f,👩🏽,farmacêutica
+K: Take one pill a day. | Tome um comprimido por dia.
+M: Hoje você entende uma receita simples.
+D: Lia|Here is your medicine.|Aqui está o seu remédio.
+D: You|Thank you. How do I take it?|Obrigado. Como eu tomo?
+D: Lia|Take one pill in the morning.|Tome um comprimido de manhã.
+D: You|With food or without?|Com comida ou sem?
+D: Lia|With food. And drink a lot of water.|Com comida. E beba muita água.
+D: You|For how many days?|Por quantos dias?
+D: Lia|For five days.|Por cinco dias.
+D: You|Is it safe for kids?|É seguro para crianças?
+V: medicine|remédio;pill|comprimido;morning|manhã;food|comida;safe|seguro
+B: Take one {0} in the morning.|Tome um(a) {0} de manhã.|pill=comprimido;spoon=colher;drop=gota
+B: For {0} days.|Por {0} dias.|five=cinco;three=três;seven=sete
+S: Lia|Here is your medicine.|Aqui está o seu remédio.|Thank you. How do I take it?|Obrigado. Como eu tomo?
+S: Lia|With food. And drink a lot of water.|Com comida. E beba muita água.|For how many days?|Por quantos dias?
+R: How do I take it?|Como eu tomo?
+R: Take one pill in the morning.|Tome um comprimido de manhã.
+R: With food, please.|Com comida, por favor.
+R: For five days.|Por cinco dias.
+X: Is it safe?|É seguro?
+C: Na bula, "twice a day" é duas vezes ao dia e "once a day" é uma vez.
+N: Próximo: desafio, uma semana saudável.
+
+T: A healthy week | Desafio do arco: semana saudável | gym | Portland | Mia,f,👩🏻,treinadora
+K: I want a healthy life. | Quero uma vida saudável.
+M: Hoje você planeja uma semana saudável.
+D: Mia|Let us plan a healthy week. What do you do on Monday?|Vamos planejar uma semana saudável. O que você faz na segunda?
+D: You|I run in the morning.|Eu corro de manhã.
+D: Mia|Great. And on Tuesday?|Ótimo. E na terça?
+D: You|I do yoga and eat vegetables.|Faço ioga e como legumes.
+D: Mia|On Wednesday, swim or walk.|Na quarta, nade ou caminhe.
+D: You|I walk. And on Sunday I rest.|Eu caminho. E no domingo eu descanso.
+D: Mia|Good plan. Drink water every day.|Bom plano. Beba água todo dia.
+D: You|I want a healthy life.|Quero uma vida saudável.
+V: healthy|saudável;plan|plano;yoga|ioga;swim|nadar;rest|descansar
+B: I {0} in the morning.|Eu {0} de manhã.|run=corro;swim=nado;walk=caminho
+B: On Sunday I {0}.|No domingo eu {0}.|rest=descanso;cook=cozinho;read=leio
+S: Mia|Let us plan a healthy week. What do you do on Monday?|Vamos planejar uma semana saudável. O que você faz na segunda?|I run in the morning.|Eu corro de manhã.
+S: Mia|Good plan. Drink water every day.|Bom plano. Beba água todo dia.|I want a healthy life.|Quero uma vida saudável.
+R: Let us plan a healthy week.|Vamos planejar uma semana saudável.
+R: I run in the morning.|Eu corro de manhã.
+R: I do yoga and eat vegetables.|Faço ioga e como legumes.
+R: Drink water every day.|Beba água todo dia.
+X: Good plan.|Bom plano.
+C: Cuidar do corpo envolve exercício, boa comida, água e sono.
+N: Próximo: números e dinheiro.
+BOSS: 1

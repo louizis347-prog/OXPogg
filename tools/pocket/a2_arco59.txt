@@ -1,0 +1,184 @@
+# Arco 59 · Compras e serviços
+T: Buy a winter coat | Comprar um casaco | shop | Chicago | Dora,f,👩🏽,vendedora
+K: Do you have this in a larger size? | Você tem este num tamanho maior?
+M: Hoje você compra um casaco de inverno.
+D: Dora|Hello! Are you looking for something?|Olá! Você está procurando algo?
+D: You|Yes, I need a warm winter coat.|Sim, preciso de um casaco quente de inverno.
+D: Dora|This black one is very popular.|Este preto é muito popular.
+D: You|Do you have this in a larger size?|Você tem este num tamanho maior?
+D: Dora|Let me check. Yes, here is a large.|Deixe-me ver. Sim, aqui está um grande.
+D: You|It fits well. How much is it?|Serve bem. Quanto custa?
+D: Dora|It was ninety dollars, but today it is seventy.|Custava noventa dólares, mas hoje está setenta.
+D: You|That is a good price. I will take it.|É um bom preço. Vou levar.
+V: coat|casaco;size|tamanho;fit|servir;larger|maior;popular|popular
+B: Do you have this in a {0} size?|Você tem este num tamanho {0}?|larger=maior;smaller=menor;different=diferente
+B: Today it is {0} dollars.|Hoje custa {0} dólares.|seventy=setenta;eighty=oitenta;sixty=sessenta
+S: Dora|Are you looking for something?|Você está procurando algo?|Yes, I need a warm winter coat.|Sim, preciso de um casaco quente.
+S: Dora|Here is a large.|Aqui está um grande.|It fits well. How much is it?|Serve bem. Quanto custa?
+R: I need a warm winter coat.|Preciso de um casaco quente.
+R: Do you have this in a larger size?|Você tem este num tamanho maior?
+R: It fits well.|Serve bem.
+R: I will take it.|Vou levar.
+X: Let me check.|Deixe-me ver.
+C: Nos EUA, os tamanhos de roupa usam letras (S, M, L) e números, e as liquidações de inverno começam depois do Natal.
+
+T: Return an item | Devolver um produto | shop | Boston | Carl,m,👨🏼,atendente
+K: I would like to return this, please. | Eu gostaria de devolver isto, por favor.
+M: Hoje você devolve um produto na loja.
+D: You|Hello. I would like to return this, please.|Olá. Eu gostaria de devolver isto, por favor.
+D: Carl|Sure. What is the problem?|Claro. Qual é o problema?
+D: You|It is too small, and I bought it yesterday.|É pequeno demais, e comprei ontem.
+D: Carl|Do you have the receipt?|Você tem o recibo?
+D: You|Yes, here it is.|Sim, aqui está.
+D: Carl|Good. Do you want your money back or a different size?|Bom. Você quer o dinheiro de volta ou outro tamanho?
+D: You|A different size, please.|Outro tamanho, por favor.
+D: Carl|No problem. I will get it for you.|Sem problema. Vou buscar para você.
+V: return|devolver;receipt|recibo;money|dinheiro;problem|problema;different|diferente
+B: It is too {0}.|É {0} demais.|small=pequeno;big=grande;expensive=caro
+B: Do you want your money back or a different {0}?|Você quer o dinheiro de volta ou outro {0}?|size=tamanho;color=cor;one=um
+S: Carl|What is the problem?|Qual é o problema?|It is too small, and I bought it yesterday.|É pequeno demais, e comprei ontem.
+S: Carl|Do you have the receipt?|Você tem o recibo?|Yes, here it is. I want a different size.|Sim, aqui está. Quero outro tamanho.
+R: I would like to return this.|Eu gostaria de devolver isto.
+R: It is too small.|É pequeno demais.
+R: Do you have the receipt?|Você tem o recibo?
+R: I want a different size.|Quero outro tamanho.
+X: No problem.|Sem problema.
+C: Nos EUA, a maioria das lojas aceita devoluções em até 30 dias, se você tiver o recibo.
+
+T: At the post office again | No correio | street | Seattle | Mel,f,👩🏻,atendente
+K: I want to send this package to Brazil. | Quero enviar este pacote para o Brasil.
+M: Hoje você envia um pacote pelo correio.
+D: Mel|Next, please! How can I help you?|Próximo, por favor! Como posso ajudar?
+D: You|I want to send this package to Brazil.|Quero enviar este pacote para o Brasil.
+D: Mel|Let me weigh it. It is two pounds.|Deixe-me pesar. Tem dois quilos.
+D: You|How long will it take to arrive?|Quanto tempo vai levar para chegar?
+D: Mel|Express is five days. Regular is two weeks.|Expresso são cinco dias. Normal são duas semanas.
+D: You|I will take express. How much is it?|Vou no expresso. Quanto custa?
+D: Mel|It is forty dollars. Please fill out this form.|São quarenta dólares. Por favor preencha este formulário.
+D: You|Sure. Do you have a pen?|Claro. Você tem uma caneta?
+V: package|pacote;weigh|pesar;express|expresso;form|formulário;pound|libra
+B: I want to send this {0} to Brazil.|Quero enviar este {0} para o Brasil.|package=pacote;letter=carta;box=caixa
+B: Express is {0} days.|Expresso são {0} dias.|five=cinco;three=três;seven=sete
+S: Mel|How can I help you?|Como posso ajudar?|I want to send this package to Brazil.|Quero enviar este pacote para o Brasil.
+S: Mel|Express is five days.|Expresso são cinco dias.|I will take express. How much is it?|Vou no expresso. Quanto custa?
+R: I want to send this package to Brazil.|Quero enviar este pacote para o Brasil.
+R: How long will it take to arrive?|Quanto tempo vai levar para chegar?
+R: Please fill out this form.|Por favor preencha este formulário.
+R: I will take express.|Vou no expresso.
+X: Next, please.|Próximo, por favor.
+C: No correio dos EUA (USPS), há opções expressas e normais; preencher o formulário da alfândega é obrigatório para o exterior.
+
+T: A haircut today | Cortar o cabelo | shop | Austin | Tina,f,👩🏼,cabeleireira
+K: Just a little shorter, please. | Só um pouco mais curto, por favor.
+M: Hoje você corta o cabelo.
+D: Tina|Hi! Please sit down. What would you like today?|Oi! Por favor sente-se. O que você gostaria hoje?
+D: You|A haircut, please. Just a little shorter.|Um corte, por favor. Só um pouco mais curto.
+D: Tina|How short? Like this?|Quão curto? Assim?
+D: You|A bit more on the sides, please.|Um pouco mais dos lados, por favor.
+D: Tina|Done. Do you like it?|Pronto. Você gostou?
+D: You|Yes, it looks great. How much is it?|Sim, ficou ótimo. Quanto custa?
+D: Tina|It is twenty-five dollars.|São vinte e cinco dólares.
+D: You|Here you are. Keep the change.|Aqui está. Fique com o troco.
+V: haircut|corte de cabelo;short|curto;side|lado;change|troco;sit|sentar
+B: A bit more on the {0}, please.|Um pouco mais {0}, por favor.|sides=dos lados;top=em cima;back=atrás
+B: It is {0} dollars.|São {0} dólares.|twenty-five=vinte e cinco;thirty=trinta;forty=quarenta
+S: Tina|What would you like today?|O que você gostaria hoje?|A haircut, please. Just a little shorter.|Um corte, por favor. Só um pouco mais curto.
+S: Tina|Do you like it?|Você gostou?|Yes, it looks great. How much is it?|Sim, ficou ótimo. Quanto custa?
+R: Just a little shorter, please.|Só um pouco mais curto, por favor.
+R: A bit more on the sides.|Um pouco mais dos lados.
+R: Do you like it?|Você gostou?
+R: Keep the change.|Fique com o troco.
+X: Done.|Pronto.
+C: Nos EUA, é comum deixar gorjeta de 15 a 20 por cento para o cabeleireiro.
+
+T: Fix my phone today | Consertar o celular | shop | Denver | Rex,m,👨🏽,técnico
+K: My screen is broken. | A tela está quebrada.
+M: Hoje você leva o celular para consertar.
+D: Rex|Hi! What is the problem?|Oi! Qual é o problema?
+D: You|My screen is broken. I dropped my phone.|A tela está quebrada. Deixei meu celular cair.
+D: Rex|Let me see. Yes, it is cracked.|Deixe-me ver. Sim, está rachada.
+D: You|Can you fix it today?|Você pode consertar hoje?
+D: Rex|Yes, it takes about one hour.|Sim, leva cerca de uma hora.
+D: You|How much does it cost?|Quanto custa?
+D: Rex|It costs eighty dollars with a new screen.|Custa oitenta dólares com tela nova.
+D: You|OK. I will wait in the cafe next door.|Certo. Vou esperar no café ao lado.
+V: screen|tela;broken|quebrado;fix|consertar;cracked|rachado;drop|deixar cair
+B: My {0} is broken.|Meu {0} está quebrado.|screen=tela;phone=celular;charger=carregador
+B: It takes about {0} hour.|Leva cerca de {0} hora.|one=uma;two=duas;half an=meia
+S: Rex|What is the problem?|Qual é o problema?|My screen is broken. I dropped my phone.|A tela está quebrada. Deixei o celular cair.
+S: Rex|It takes about one hour.|Leva cerca de uma hora.|OK. I will wait in the cafe.|Certo. Vou esperar no café.
+R: My screen is broken.|A tela está quebrada.
+R: Can you fix it today?|Você pode consertar hoje?
+R: How much does it cost?|Quanto custa?
+R: I will wait next door.|Vou esperar ao lado.
+X: Let me see.|Deixe-me ver.
+C: Lojas de conserto de celular são comuns nos EUA e muitas fazem o serviço na hora.
+
+T: At the bank today | No banco | hall | Phoenix | Gina,f,👩🏾,atendente
+K: I would like to open an account today. | Eu gostaria de abrir uma conta.
+M: Hoje você abre uma conta no banco.
+D: Gina|Good morning! How can I help you?|Bom dia! Como posso ajudar?
+D: You|I would like to open an account, please.|Eu gostaria de abrir uma conta, por favor.
+D: Gina|Sure. Do you have your passport?|Claro. Você tem seu passaporte?
+D: You|Yes, and a proof of address.|Sim, e um comprovante de endereço.
+D: Gina|Perfect. Do you want a debit card?|Perfeito. Você quer um cartão de débito?
+D: You|Yes, please. When can I use it?|Sim, por favor. Quando posso usar?
+D: Gina|It will arrive in the mail in one week.|Vai chegar pelo correio em uma semana.
+D: You|Great. Thank you for your help.|Ótimo. Obrigado pela ajuda.
+V: account|conta;passport|passaporte;address|endereço;debit card|cartão de débito;mail|correio
+B: I would like to open an {0}.|Eu gostaria de abrir uma {0}.|account=conta;savings account=conta poupança;new account=conta nova
+B: It will arrive in {0}.|Vai chegar em {0}.|one week=uma semana;two days=dois dias;a month=um mês
+S: Gina|How can I help you?|Como posso ajudar?|I would like to open an account, please.|Eu gostaria de abrir uma conta, por favor.
+S: Gina|Do you have your passport?|Você tem seu passaporte?|Yes, and a proof of address.|Sim, e um comprovante de endereço.
+R: I would like to open an account.|Eu gostaria de abrir uma conta.
+R: Do you have your passport?|Você tem seu passaporte?
+R: Do you want a debit card?|Você quer um cartão de débito?
+R: It will arrive in one week.|Vai chegar em uma semana.
+X: Sure.|Claro.
+C: Para abrir uma conta nos EUA, bancos pedem passaporte e comprovante de endereço.
+
+T: Online shopping today | Compras on-line | living | Miami | Ola,f,👩🏽,amiga
+K: I always read the reviews first. | Eu sempre leio as avaliações primeiro.
+M: Hoje você compra on-line com uma amiga.
+D: Ola|What are you buying online?|O que você está comprando on-line?
+D: You|I want new headphones. They are on sale today.|Quero fones novos. Estão em promoção hoje.
+D: Ola|Do you read the reviews first?|Você lê as avaliações primeiro?
+D: You|Yes, I always read the reviews.|Sim, eu sempre leio as avaliações.
+D: Ola|This pair has four stars. That is good.|Este par tem quatro estrelas. É bom.
+D: You|And it has free delivery.|E tem entrega grátis.
+D: Ola|Then buy it before the sale ends.|Então compre antes que a promoção acabe.
+D: You|Done. It will arrive on Thursday.|Pronto. Vai chegar na quinta.
+V: review|avaliação;star|estrela;delivery|entrega;sale|promoção;headphones|fones de ouvido
+B: This pair has {0} stars.|Este par tem {0} estrelas.|four=quatro;five=cinco;three=três
+B: It will arrive on {0}.|Vai chegar na {0}.|Thursday=quinta;Monday=segunda;Wednesday=quarta
+S: Ola|Do you read the reviews first?|Você lê as avaliações primeiro?|Yes, I always read the reviews.|Sim, eu sempre leio as avaliações.
+S: Ola|Buy it before the sale ends.|Compre antes que a promoção acabe.|Done. It will arrive on Thursday.|Pronto. Vai chegar na quinta.
+R: I always read the reviews.|Eu sempre leio as avaliações.
+R: It has four stars.|Tem quatro estrelas.
+R: It has free delivery.|Tem entrega grátis.
+R: It will arrive on Thursday.|Vai chegar na quinta.
+X: Done.|Pronto.
+C: Nos EUA, a maioria das compras on-line oferece entrega rápida e devolução fácil.
+
+T: Lost and found today | Achados e perdidos | station | New York | Vic,m,👨🏿,funcionário
+K: I lost my bag on the train. | Perdi minha bolsa no trem.
+M: Hoje você procura um objeto perdido.
+D: You|Excuse me. I lost my bag on the train.|Com licença. Perdi minha bolsa no trem.
+D: Vic|I am sorry to hear that. What does it look like?|Sinto muito. Como ela é?
+D: You|It is a small black bag with a red tag.|É uma bolsa preta pequena com uma etiqueta vermelha.
+D: Vic|What was inside?|O que tinha dentro?
+D: You|My keys and a blue notebook.|Minhas chaves e um caderno azul.
+D: Vic|Let me look. Yes, we found one this morning.|Deixe-me ver. Sim, achamos uma esta manhã.
+D: You|Thank goodness! Is this it?|Que alívio! É esta?
+D: Vic|Yes. Please sign here.|Sim. Por favor assine aqui.
+V: lost|perdido;bag|bolsa;keys|chaves;notebook|caderno;sign|assinar
+B: I lost my {0} on the train.|Perdi minha {0} no trem.|bag=bolsa;wallet=carteira;phone=celular
+B: It is a small {0} bag.|É uma bolsa {0} pequena.|black=preta;red=vermelha;brown=marrom
+S: Vic|What does it look like?|Como ela é?|It is a small black bag with a red tag.|É uma bolsa preta pequena com uma etiqueta vermelha.
+S: Vic|We found one this morning.|Achamos uma esta manhã.|Thank goodness! Is this it?|Que alívio! É esta?
+R: I lost my bag on the train.|Perdi minha bolsa no trem.
+R: What does it look like?|Como ela é?
+R: We found one this morning.|Achamos uma esta manhã.
+R: Please sign here.|Por favor assine aqui.
+X: Thank goodness!|Que alívio!
+C: Estações e aeroportos americanos têm setor de "lost and found" onde você pode descrever e recuperar objetos.

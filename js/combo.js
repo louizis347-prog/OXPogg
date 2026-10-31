@@ -7,7 +7,7 @@ const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>
 FX_KIND.combo='practice';FX_LABEL.combo='Prática';
 
 /* ---- agrupamento ---- */
-function group(e){
+function group(e,cid){
   const fr=e.fr,out=[];let i=0,scenes=0;
   const K=j=>fr[j]&&fr[j].k;
   const mk=(tabs,parts,layout)=>({k:'combo',tabs,parts,layout:layout||'tabs',rs:parts[0].rs,chars:parts[0].chars});
@@ -22,6 +22,8 @@ function group(e){
       while(K(j)==='pgsheet'){const lac=(fr[j].items||[]).some(t=>t.text&&/___/.test(t.text));tabs.push(lac?'✏️ Complete':'🎧 Escute');parts.push(fr[j]);j++}
       out.push(mk(tabs,parts));i=j;continue}
     if(k==='pglab'&&K(i+1)==='pgspeak'){out.push(mk(['🔊 Sons','🎤 Fale'],[fr[i],fr[i+1]],'split'));i+=2;continue}
+    if(k==='pgmission'&&window.PogAdv&&/^en-c[12]$/.test(cid||'')){
+      try{const ps=PogAdv.build(e);if(ps&&ps.length)out.push(mk(['⚖️ Quase iguais','🔁 Diga de outro jeito','📝 Resumo'].slice(0,ps.length),ps))}catch(x){}}
     if(k==='pgscene')scenes++;
     out.push(fr[i]);i++;
   }
@@ -34,7 +36,7 @@ const _play=window.play;
 window.play=function(cid,idx){
   let e=null;try{e=EP[cid]&&EP[cid][idx]}catch(x){}
   if(!on(cid,idx,e))return _play.apply(this,arguments);
-  const g=Object.assign({},e,{fr:group(e),__orig:e});
+  const g=Object.assign({},e,{fr:group(e,cid),__orig:e});
   EP[cid][idx]=g;
   try{return _play.apply(this,arguments)}finally{EP[cid][idx]=e}
 };

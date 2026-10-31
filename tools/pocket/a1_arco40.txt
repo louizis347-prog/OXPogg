@@ -1,0 +1,507 @@
+# Arco 40 · Números, dinheiro e medidas
+T: Count with me | Contar até cem | classroom | Austin | Rosa,f,👩🏽,professora
+K: Count from one to ten. | Conte de um a dez.
+M: Hoje você conta com facilidade.
+D: Rosa|Let us count together. One, two, three.|Vamos contar juntos. Um, dois, três.
+D: You|Four, five, six, seven.|Quatro, cinco, seis, sete.
+D: Rosa|Good! Eight, nine, ten.|Bom! Oito, nove, dez.
+D: You|What comes after ten?|O que vem depois do dez?
+D: Rosa|Eleven, twelve, thirteen.|Onze, doze, treze.
+D: You|And how do I say twenty?|E como digo vinte?
+D: Rosa|Twenty. Then thirty, forty, fifty.|Vinte. Depois trinta, quarenta, cinquenta.
+D: You|One hundred is easy!|Cem é fácil!
+V: count|contar;ten|dez;twenty|vinte;fifty|cinquenta;hundred|cem
+B: Count from one to {0}.|Conte de um a {0}.|ten=dez;twenty=vinte;fifty=cinquenta
+B: And then {0}.|E depois {0}.|thirty=trinta;forty=quarenta;sixty=sessenta
+S: Rosa|Let us count together. One, two, three.|Vamos contar juntos. Um, dois, três.|Four, five, six, seven.|Quatro, cinco, seis, sete.
+S: Rosa|Twenty. Then thirty, forty, fifty.|Vinte. Depois trinta, quarenta, cinquenta.|One hundred is easy!|Cem é fácil!
+R: Count from one to ten.|Conte de um a dez.
+R: Eleven, twelve, thirteen.|Onze, doze, treze.
+R: Twenty, thirty, forty.|Vinte, trinta, quarenta.
+R: One hundred.|Cem.
+X: Let us count!|Vamos contar!
+C: Os números de 13 a 19 terminam em "-teen"; as dezenas terminam em "-ty".
+N: Próximo: preços.
+
+T: Price check | Perguntar o preço | shop | Chicago | Lia,f,👩🏽,vendedora
+K: How much is this hat? | Quanto custa este chapéu?
+M: Hoje você pergunta preços.
+D: You|Excuse me. How much is this hat?|Com licença. Quanto custa este chapéu?
+D: Lia|It is fifteen dollars.|Custa quinze dólares.
+D: You|And these shoes?|E estes sapatos?
+D: Lia|They are forty-five dollars.|Custam quarenta e cinco dólares.
+D: You|That is expensive. Do you have cheaper ones?|É caro. Vocês têm mais baratos?
+D: Lia|Yes, these are twenty-nine dollars.|Sim, estes custam vinte e nove dólares.
+D: You|I take the cheaper shoes.|Levo os sapatos mais baratos.
+D: Lia|Great. Pay at the register, please.|Ótimo. Pague no caixa, por favor.
+V: hat|chapéu;shoes|sapatos;expensive|caro;cheaper|mais baratos;register|caixa
+B: How much is this {0}?|Quanto custa {0}?|hat=este chapéu;bag=esta bolsa;watch=este relógio
+B: They are {0} dollars.|Custam {0} dólares.|forty-five=quarenta e cinco;twenty-nine=vinte e nove;sixty=sessenta
+S: You|Excuse me. How much is this hat?|Com licença. Quanto custa este chapéu?|It is fifteen dollars.|Custa quinze dólares.
+S: You|That is expensive. Do you have cheaper ones?|É caro. Vocês têm mais baratos?|Yes, these are twenty-nine dollars.|Sim, estes custam vinte e nove dólares.
+R: How much is this hat?|Quanto custa este chapéu?
+R: It is fifteen dollars.|Custa quinze dólares.
+R: That is expensive.|É caro.
+R: Pay at the register.|Pague no caixa.
+X: Do you have cheaper ones?|Vocês têm mais baratos?
+C: Em inglês, "cheap" pode soar mal; "cheaper" ou "inexpensive" é mais educado.
+N: Próximo: dar troco.
+
+T: Give change | Dinheiro e troco | shop | New York | Ruth,f,👩🏻,caixa
+K: Here is your change. | Aqui está o seu troco.
+M: Hoje você paga e recebe o troco.
+D: Ruth|That is eight dollars and twenty cents.|São oito dólares e vinte centavos.
+D: You|Here is a ten.|Aqui está uma de dez.
+D: Ruth|Your change is one eighty.|O seu troco é um e oitenta.
+D: You|Thank you. Do you take cards?|Obrigado. Vocês aceitam cartão?
+D: Ruth|Yes, but cash is fine too.|Sim, mas dinheiro também serve.
+D: You|Can you break a twenty for me?|Pode trocar uma nota de vinte?
+D: Ruth|Sure. Two tens.|Claro. Duas de dez.
+D: You|Thanks for the help.|Obrigado pela ajuda.
+V: change|troco;ten|dez;cents|centavos;cash|dinheiro;twenty|vinte
+B: Your change is {0}.|O seu troco é {0}.|one eighty=um e oitenta;two dollars=dois dólares;fifty cents=cinquenta centavos
+B: Can you break a {0}?|Pode trocar uma nota de {0}?|twenty=vinte;ten=dez;fifty=cinquenta
+S: Ruth|That is eight dollars and twenty cents.|São oito dólares e vinte centavos.|Here is a ten.|Aqui está uma de dez.
+S: You|Can you break a twenty for me?|Pode trocar uma nota de vinte?|Sure. Two tens.|Claro. Duas de dez.
+R: That is eight dollars and twenty cents.|São oito dólares e vinte centavos.
+R: Here is a ten.|Aqui está uma de dez.
+R: Your change is one eighty.|O seu troco é um e oitenta.
+R: Can you break a twenty?|Pode trocar uma nota de vinte?
+X: Here you go.|Aqui está.
+C: "Break a twenty" é trocar uma nota grande por menores.
+N: Próximo: peso e medida.
+
+T: Weight and size | Pesos e medidas | market | Los Angeles | Lia,f,👩🏽,feirante
+K: One kilo, please. | Um quilo, por favor.
+M: Hoje você compra por peso.
+D: Lia|How much do you want?|Quanto você quer?
+D: You|One kilo of apples, please.|Um quilo de maçãs, por favor.
+D: Lia|Here you go. Anything else?|Aqui está. Mais alguma coisa?
+D: You|Half a kilo of cheese.|Meio quilo de queijo.
+D: Lia|Is a small piece okay?|Um pedaço pequeno serve?
+D: You|Yes. And a liter of milk.|Sim. E um litro de leite.
+D: Lia|That is all.|É tudo.
+D: You|How much is everything?|Quanto é tudo?
+V: kilo|quilo;half|meio;liter|litro;piece|pedaço;anything else|mais alguma coisa
+B: One {0} of apples.|Um {0} de maçãs.|kilo=quilo;pound=libra;bag=sacola
+B: Half a {0} of cheese.|Meio {0} de queijo.|kilo=quilo;pound=libra;piece=pedaço
+S: Lia|How much do you want?|Quanto você quer?|One kilo of apples, please.|Um quilo de maçãs, por favor.
+S: Lia|Is a small piece okay?|Um pedaço pequeno serve?|Yes. And a liter of milk.|Sim. E um litro de leite.
+R: One kilo of apples, please.|Um quilo de maçãs, por favor.
+R: Half a kilo of cheese.|Meio quilo de queijo.
+R: A liter of milk.|Um litro de leite.
+R: How much is everything?|Quanto é tudo?
+X: Anything else?|Mais alguma coisa?
+C: Nos EUA, peso se mede em libras (pounds) e líquidos em galões e onças.
+N: Próximo: a hora.
+
+T: Telling the time | Hora certa | street | Boston | Ben,m,🧑🏽,pedestre
+K: It is half past four. | São quatro e meia.
+M: Hoje você pergunta e diz a hora.
+D: You|Excuse me. What time is it?|Com licença. Que horas são?
+D: Ben|It is half past four.|São quatro e meia.
+D: You|Thank you. When does the bus come?|Obrigado. Quando o ônibus chega?
+D: Ben|At a quarter to five.|Às cinco menos quinze.
+D: You|So I wait fifteen minutes.|Então espero quinze minutos.
+D: Ben|Yes. You can sit on that bench.|Sim. Você pode sentar naquele banco.
+D: You|Good idea. I have a book.|Boa ideia. Tenho um livro.
+D: Ben|Have a nice day.|Tenha um bom dia.
+V: time|hora;half past|e meia;quarter|quinze minutos;bench|banco;wait|esperar
+B: It is half past {0}.|São {0} e meia.|four=quatro;five=cinco;six=seis
+B: At a quarter to {0}.|Às {0} menos quinze.|five=cinco;six=seis;seven=sete
+S: You|Excuse me. What time is it?|Com licença. Que horas são?|It is half past four.|São quatro e meia.
+S: You|Thank you. When does the bus come?|Obrigado. Quando o ônibus chega?|At a quarter to five.|Às cinco menos quinze.
+R: What time is it?|Que horas são?
+R: It is half past four.|São quatro e meia.
+R: A quarter to five.|Cinco menos quinze.
+R: I wait fifteen minutes.|Espero quinze minutos.
+X: Have a nice day.|Tenha um bom dia.
+C: "Half past" é "e meia"; "quarter past" é "e quinze"; "quarter to" é "menos quinze".
+N: Próximo: dias e meses.
+
+T: Days of the week | Dias da semana | classroom | Boston | Rosa,f,👩🏽,professora
+K: Today is Monday. | Hoje é segunda.
+M: Hoje você usa os dias da semana.
+D: Rosa|What day is it today?|Que dia é hoje?
+D: You|Today is Monday.|Hoje é segunda-feira.
+D: Rosa|And what day is tomorrow?|E que dia é amanhã?
+D: You|Tomorrow is Tuesday.|Amanhã é terça-feira.
+D: Rosa|What days do you work?|Em que dias você trabalha?
+D: You|I work from Monday to Friday.|Trabalho de segunda a sexta.
+D: Rosa|And the weekend?|E o fim de semana?
+D: You|Saturday and Sunday are free.|Sábado e domingo são livres.
+V: Monday|segunda;Tuesday|terça;Friday|sexta;Saturday|sábado;Sunday|domingo
+B: Today is {0}.|Hoje é {0}.|Monday=segunda;Wednesday=quarta;Thursday=quinta
+B: I work from Monday to {0}.|Trabalho de segunda a {0}.|Friday=sexta;Saturday=sábado;Thursday=quinta
+S: Rosa|What day is it today?|Que dia é hoje?|Today is Monday.|Hoje é segunda-feira.
+S: Rosa|What days do you work?|Em que dias você trabalha?|I work from Monday to Friday.|Trabalho de segunda a sexta.
+R: What day is it today?|Que dia é hoje?
+R: Today is Monday.|Hoje é segunda-feira.
+R: Tomorrow is Tuesday.|Amanhã é terça-feira.
+R: I work from Monday to Friday.|Trabalho de segunda a sexta.
+X: Free day.|Dia livre.
+C: Em inglês, os dias da semana sempre começam com letra maiúscula.
+N: Próximo: meses.
+
+T: Months of the year | Meses do ano | classroom | Boston | Rosa,f,👩🏽,professora
+K: There are twelve months. | Há doze meses.
+M: Hoje você fala dos meses.
+D: Rosa|There are twelve months in a year.|Há doze meses num ano.
+D: You|January, February, March...|Janeiro, fevereiro, março...
+D: Rosa|April, May, June...|Abril, maio, junho...
+D: You|July, August, September...|Julho, agosto, setembro...
+D: Rosa|October, November, December.|Outubro, novembro, dezembro.
+D: You|My birthday is in May.|Meu aniversário é em maio.
+D: Rosa|Mine is in December.|O meu é em dezembro.
+D: You|Happy early birthday!|Feliz aniversário adiantado!
+V: January|janeiro;March|março;May|maio;July|julho;December|dezembro
+B: My birthday is in {0}.|Meu aniversário é em {0}.|May=maio;March=março;December=dezembro
+B: There are {0} months in a year.|Há {0} meses num ano.|twelve=doze;ten=dez;eleven=onze
+S: Rosa|There are twelve months in a year.|Há doze meses num ano.|January, February, March...|Janeiro, fevereiro, março...
+S: Rosa|Mine is in December.|O meu é em dezembro.|Happy early birthday!|Feliz aniversário adiantado!
+R: There are twelve months in a year.|Há doze meses num ano.
+R: January, February, March.|Janeiro, fevereiro, março.
+R: My birthday is in May.|Meu aniversário é em maio.
+R: Mine is in December.|O meu é em dezembro.
+X: Happy early birthday!|Feliz aniversário adiantado!
+C: Os meses também começam com letra maiúscula em inglês.
+N: Próximo: o calendário.
+
+T: Today's date | A data de hoje | office | Denver | Sam,m,🧑🏻,gerente
+K: What is the date today? | Qual é a data de hoje?
+M: Hoje você diz a data.
+D: Sam|What is the date today?|Qual é a data de hoje?
+D: You|It is June fifth.|É cinco de junho.
+D: Sam|And the meeting is on June twelfth.|E a reunião é em doze de junho.
+D: You|That is next Monday.|É na segunda que vem.
+D: Sam|Yes. At ten in the morning.|Sim. Às dez da manhã.
+D: You|I write it in my calendar.|Anoto na minha agenda.
+D: Sam|Good. Do not forget.|Bom. Não esqueça.
+D: You|I do not forget dates.|Eu não esqueço datas.
+V: date|data;June|junho;calendar|agenda;meeting|reunião;forget|esquecer
+B: It is June {0}.|É {0} de junho.|fifth=cinco;tenth=dez;twentieth=vinte
+B: The meeting is on {0}.|A reunião é em {0}.|June twelfth=doze de junho;Monday=segunda;the first=primeiro
+S: Sam|What is the date today?|Qual é a data de hoje?|It is June fifth.|É cinco de junho.
+S: Sam|Yes. At ten in the morning.|Sim. Às dez da manhã.|I write it in my calendar.|Anoto na minha agenda.
+R: What is the date today?|Qual é a data de hoje?
+R: It is June fifth.|É cinco de junho.
+R: The meeting is on June twelfth.|A reunião é em doze de junho.
+R: I write it in my calendar.|Anoto na minha agenda.
+X: Do not forget.|Não esqueça.
+C: Nos EUA a data vem com o mês primeiro: June 5 (6/5). No Brasil, o dia vem primeiro.
+N: Próximo: telefone e números.
+
+T: My phone number | Dizer o telefone | office | Seattle | Mia,f,👩🏻,recepcionista
+K: What is your phone number? | Qual é o seu telefone?
+M: Hoje você dita um telefone.
+D: Mia|What is your phone number?|Qual é o seu telefone?
+D: You|It is five five five, zero one two three.|É cinco cinco cinco, zero um dois três.
+D: Mia|Let me repeat: five five five, zero one two three.|Deixe-me repetir: cinco cinco cinco, zero um dois três.
+D: You|Yes, that is right.|Sim, está certo.
+D: Mia|And your email?|E o seu e-mail?
+D: You|It is leo at mail dot com.|É leo arroba mail ponto com.
+D: Mia|Thank you. I write it down.|Obrigada. Anoto.
+D: You|Great. Call me anytime.|Ótimo. Ligue a qualquer hora.
+V: phone number|telefone;repeat|repetir;email|e-mail;write down|anotar;anytime|a qualquer hora
+B: It is five five five, {0}.|É cinco cinco cinco, {0}.|zero one two three=zero um dois três;nine eight seven six=nove oito sete seis;four four two two=quatro quatro dois dois
+B: It is leo at mail {0} com.|É leo arroba mail {0} com.|dot=ponto;at=arroba;dash=hífen
+S: Mia|What is your phone number?|Qual é o seu telefone?|It is five five five, zero one two three.|É cinco cinco cinco, zero um dois três.
+S: Mia|And your email?|E o seu e-mail?|It is leo at mail dot com.|É leo arroba mail ponto com.
+R: What is your phone number?|Qual é o seu telefone?
+R: It is five five five, zero one two three.|É cinco cinco cinco, zero um dois três.
+R: Let me repeat.|Deixe-me repetir.
+R: Call me anytime.|Ligue a qualquer hora.
+X: That is right.|Está certo.
+C: Em inglês, o zero de telefones costuma ser dito "oh" ou "zero".
+N: Próximo: desafio, o orçamento da semana.
+
+T: My weekly budget | Desafio do arco: orçamento | office | Chicago | Ruth,f,👩🏻,amiga
+K: I spend fifty dollars a week. | Gasto cinquenta dólares por semana.
+M: Hoje você fala do seu orçamento.
+D: Ruth|How much do you spend each week?|Quanto você gasta por semana?
+D: You|I spend about fifty dollars.|Gasto cerca de cinquenta dólares.
+D: Ruth|On what?|Com quê?
+D: You|Twenty on food and ten on the bus.|Vinte com comida e dez com ônibus.
+D: Ruth|And the other twenty?|E os outros vinte?
+D: You|Fun things: coffee and movies.|Coisas divertidas: café e cinema.
+D: Ruth|Do you save any money?|Você guarda algum dinheiro?
+D: You|Yes, ten dollars a week.|Guardo sim, dez dólares por semana.
+V: spend|gastar;week|semana;save|guardar;food|comida;movies|cinema
+B: I spend about {0} dollars.|Gasto cerca de {0} dólares.|fifty=cinquenta;thirty=trinta;one hundred=cem
+B: I save {0} dollars a week.|Guardo {0} dólares por semana.|ten=dez;five=cinco;twenty=vinte
+S: Ruth|How much do you spend each week?|Quanto você gasta por semana?|I spend about fifty dollars.|Gasto cerca de cinquenta dólares.
+S: Ruth|Do you save any money?|Você guarda algum dinheiro?|Yes, ten dollars a week.|Guardo sim, dez dólares por semana.
+R: How much do you spend each week?|Quanto você gasta por semana?
+R: I spend fifty dollars.|Gasto cinquenta dólares.
+R: Twenty on food.|Vinte em comida.
+R: I save ten dollars a week.|Guardo dez dólares por semana.
+X: On what?|Com quê?
+C: Guardar dinheiro é "to save"; gastar é "to spend".
+N: Próximo: países e idiomas.
+BOSS: 1
+
+# Arco 41 · Países e idiomas
+T: Where are you from? | De onde você é | cafe | London | Mia,f,👩🏻,colega
+K: Where are you from? | De onde você é?
+M: Hoje você fala do seu país.
+D: Mia|Hello! Where are you from?|Olá! De onde você é?
+D: You|I am from Brazil. And you?|Sou do Brasil. E você?
+D: Mia|I am from Canada.|Sou do Canadá.
+D: You|Is it cold in Canada?|Faz frio no Canadá?
+D: Mia|Very cold in winter. Is it hot in Brazil?|Muito frio no inverno. Faz calor no Brasil?
+D: You|Yes, it is warm all year.|Sim, é quente o ano todo.
+D: Mia|I want to visit Brazil.|Quero visitar o Brasil.
+D: You|You are welcome anytime.|Você é bem-vinda a qualquer hora.
+V: Brazil|Brasil;Canada|Canadá;cold|frio;warm|quente;visit|visitar
+B: I am from {0}.|Eu sou {0}.|Brazil=do Brasil;Canada=do Canadá;Portugal=de Portugal
+B: I want to visit {0}.|Quero visitar {0}.|Brazil=o Brasil;Japan=o Japão;Italy=a Itália
+S: Mia|Hello! Where are you from?|Olá! De onde você é?|I am from Brazil. And you?|Sou do Brasil. E você?
+S: Mia|I want to visit Brazil.|Quero visitar o Brasil.|You are welcome anytime.|Você é bem-vinda a qualquer hora.
+R: Where are you from?|De onde você é?
+R: I am from Brazil.|Sou do Brasil.
+R: It is warm all year.|É quente o ano todo.
+R: You are welcome anytime.|Você é bem-vinda a qualquer hora.
+X: And you?|E você?
+C: "Where are you from?" pergunta o país ou a cidade de origem.
+N: Próximo: idiomas.
+
+T: What languages do you speak? | Idiomas | cafe | London | Ben,m,🧑🏽,colega
+K: I speak Portuguese and English. | Falo português e inglês.
+M: Hoje você fala dos idiomas que conhece.
+D: Ben|What languages do you speak?|Que idiomas você fala?
+D: You|I speak Portuguese and a little English.|Falo português e um pouco de inglês.
+D: Ben|Your English is good!|Seu inglês é bom!
+D: You|Thank you. I study every day.|Obrigado. Estudo todo dia.
+D: Ben|I speak English and Spanish.|Eu falo inglês e espanhol.
+D: You|Spanish is similar to Portuguese.|Espanhol é parecido com português.
+D: Ben|Yes, it is easy for you.|Sim, é fácil para você.
+D: You|I want to learn it too.|Quero aprender também.
+V: languages|idiomas;Portuguese|português;Spanish|espanhol;similar|parecido;study|estudar
+B: I speak {0}.|Eu falo {0}.|Portuguese=português;English=inglês;Spanish=espanhol
+B: I study {0}.|Eu estudo {0}.|every day=todo dia;at night=à noite;on weekends=nos fins de semana
+S: Ben|What languages do you speak?|Que idiomas você fala?|I speak Portuguese and a little English.|Falo português e um pouco de inglês.
+S: Ben|Spanish is similar to Portuguese.|Espanhol é parecido com português.|I want to learn it too.|Quero aprender também.
+R: What languages do you speak?|Que idiomas você fala?
+R: I speak Portuguese and a little English.|Falo português e um pouco de inglês.
+R: I study every day.|Estudo todo dia.
+R: Your English is good!|Seu inglês é bom!
+X: A little.|Um pouco.
+C: "A little" significa um pouco; "a few" é uns poucos, para coisas contáveis.
+N: Próximo: nacionalidades.
+
+T: Nationalities | Nacionalidades | street | New York | Sam,m,🧑🏻,amigo
+K: He is Italian. | Ele é italiano.
+M: Hoje você diz nacionalidades.
+D: Sam|This is my friend Marco. He is Italian.|Este é meu amigo Marco. Ele é italiano.
+D: You|Nice to meet you, Marco. Is he in New York for work?|Prazer, Marco. Ele está em Nova York a trabalho?
+D: Sam|Yes. And this is Aiko. She is Japanese.|Sim. E esta é a Aiko. Ela é japonesa.
+D: You|Are you from Tokyo?|Você é de Tóquio?
+D: Sam|And I am American.|E eu sou americano.
+D: You|I am Brazilian.|Eu sou brasileiro.
+D: Sam|We are from four different countries.|Somos de quatro países diferentes.
+D: You|It is a small world!|O mundo é pequeno!
+V: Italian|italiano;Japanese|japonesa;American|americano;Brazilian|brasileiro;countries|países
+B: He is {0}.|Ele é {0}.|Italian=italiano;French=francês;German=alemão
+B: She is {0}.|Ela é {0}.|Japanese=japonesa;Mexican=mexicana;Chinese=chinesa
+S: Sam|This is my friend Marco. He is Italian.|Este é meu amigo Marco. Ele é italiano.|Nice to meet you, Marco.|Prazer, Marco.
+S: Sam|We are from four different countries.|Somos de quatro países diferentes.|It is a small world!|O mundo é pequeno!
+R: He is Italian.|Ele é italiano.
+R: She is Japanese.|Ela é japonesa.
+R: I am Brazilian.|Eu sou brasileiro.
+R: It is a small world!|O mundo é pequeno!
+X: It is a small world!|O mundo é pequeno!
+C: Nacionalidades levam letra maiúscula em inglês: Italian, Japanese, Brazilian.
+N: Próximo: cidades famosas.
+
+T: Famous cities | Cidades famosas | museum | Paris | Dee,f,👩🏿,guia
+K: Paris is in France. | Paris fica na França.
+M: Hoje você fala de cidades famosas.
+D: Dee|Where is Paris?|Onde fica Paris?
+D: You|Paris is in France.|Paris fica na França.
+D: Dee|Right. And Rome?|Certo. E Roma?
+D: You|Rome is in Italy.|Roma fica na Itália.
+D: Dee|Where is the Statue of Liberty?|Onde fica a Estátua da Liberdade?
+D: You|It is in New York.|Fica em Nova York.
+D: Dee|And the Christ the Redeemer?|E o Cristo Redentor?
+D: You|It is in Rio, in my country!|Fica no Rio, no meu país!
+V: France|França;Italy|Itália;Statue of Liberty|Estátua da Liberdade;Rio|Rio;country|país
+B: Paris is in {0}.|Paris fica na {0}.|France=França;Europe=Europa;the north=norte
+B: It is in {0}.|Fica em {0}.|Rio=Rio;New York=Nova York;Tokyo=Tóquio
+S: Dee|Where is Paris?|Onde fica Paris?|Paris is in France.|Paris fica na França.
+S: Dee|And the Christ the Redeemer?|E o Cristo Redentor?|It is in Rio, in my country!|Fica no Rio, no meu país!
+R: Paris is in France.|Paris fica na França.
+R: Rome is in Italy.|Roma fica na Itália.
+R: It is in New York.|Fica em Nova York.
+R: It is in Rio, in my country.|Fica no Rio, no meu país.
+X: In my country.|No meu país.
+C: "In" é usado para países e cidades: in France, in Rio.
+N: Próximo: o mapa-múndi.
+
+T: The world map | Continentes e oceanos | classroom | Boston | Ben,m,🧑🏽,professor
+K: There are seven continents. | Há sete continentes.
+M: Hoje você aprende continentes.
+D: Ben|Look at the world map. There are seven continents.|Olhe o mapa-múndi. Há sete continentes.
+D: You|Asia, Africa, Europe...|Ásia, África, Europa...
+D: Ben|North America, South America, Oceania and Antarctica.|América do Norte, América do Sul, Oceania e Antártida.
+D: You|Which one is the biggest?|Qual é o maior?
+D: Ben|Asia is the biggest continent.|A Ásia é o maior continente.
+D: You|And where is Brazil?|E onde fica o Brasil?
+D: Ben|In South America. Show me.|Na América do Sul. Mostre-me.
+D: You|Here it is, next to the ocean.|Aqui está, perto do oceano.
+V: continents|continentes;Asia|Ásia;Africa|África;Europe|Europa;ocean|oceano
+B: There are {0} continents.|Há {0} continentes.|seven=sete;five=cinco;six=seis
+B: Brazil is in {0}.|O Brasil fica na {0}.|South America=América do Sul;Europe=Europa;Africa=África
+S: Ben|Look at the world map. There are seven continents.|Olhe o mapa-múndi. Há sete continentes.|Asia, Africa, Europe...|Ásia, África, Europa...
+S: You|Which one is the biggest?|Qual é o maior?|Asia is the biggest continent.|A Ásia é o maior continente.
+R: There are seven continents.|Há sete continentes.
+R: Asia is the biggest continent.|A Ásia é o maior continente.
+R: Brazil is in South America.|O Brasil fica na América do Sul.
+R: Show me on the map.|Mostre-me no mapa.
+X: Show me.|Mostre-me.
+C: A América é um continente em alguns países e dois (Norte e Sul) em outros.
+N: Próximo: viajar de avião.
+
+T: At the airport | No aeroporto | airport | Los Angeles | Ana,f,👩🏽,atendente
+K: Here is my passport. | Aqui está meu passaporte.
+M: Hoje você faz o check-in no aeroporto.
+D: Ana|Good morning. Passport, please.|Bom dia. Passaporte, por favor.
+D: You|Here is my passport.|Aqui está meu passaporte.
+D: Ana|Where are you flying today?|Para onde você voa hoje?
+D: You|To New York.|Para Nova York.
+D: Ana|Do you have any bags?|Você tem bagagem?
+D: You|One small bag and one suitcase.|Uma mochila e uma mala.
+D: Ana|Put the suitcase here. Your gate is twelve.|Ponha a mala aqui. Seu portão é o doze.
+D: You|Thank you. Have a nice day!|Obrigado. Tenha um bom dia!
+V: passport|passaporte;bags|bagagem;suitcase|mala;gate|portão;flying|voando
+B: Here is my {0}.|Aqui está o meu {0}.|passport=passaporte;ticket=bilhete;ID=documento
+B: Your gate is {0}.|Seu portão é o {0}.|twelve=doze;five=cinco;twenty=vinte
+S: Ana|Good morning. Passport, please.|Bom dia. Passaporte, por favor.|Here is my passport.|Aqui está meu passaporte.
+S: Ana|Do you have any bags?|Você tem bagagem?|One small bag and one suitcase.|Uma mochila e uma mala.
+R: Here is my passport.|Aqui está meu passaporte.
+R: I fly to New York.|Eu voo para Nova York.
+R: One bag and one suitcase.|Uma mochila e uma mala.
+R: Your gate is twelve.|Seu portão é o doze.
+X: Have a nice day!|Tenha um bom dia!
+C: No aeroporto, "boarding pass" é o cartão de embarque.
+N: Próximo: pedir informações num país novo.
+
+T: In a new country | Chegar a um país novo | street | Tokyo | Kai,m,🧑🏻,morador
+K: Can you help me? | Pode me ajudar?
+M: Hoje você pede ajuda num país novo.
+D: You|Excuse me. Can you help me?|Com licença. Pode me ajudar?
+D: Kai|Of course. What do you need?|Claro. Do que você precisa?
+D: You|I want to find the train station.|Quero achar a estação de trem.
+D: Kai|It is near the park. Walk straight.|Fica perto do parque. Siga em frente.
+D: You|Is there a map of the city?|Tem um mapa da cidade?
+D: Kai|Yes, here is one for you.|Tem, aqui está um para você.
+D: You|Thank you. You are very kind.|Obrigado. Você é muito gentil.
+D: Kai|Welcome to Japan!|Bem-vindo ao Japão!
+V: help|ajudar;station|estação;straight|em frente;kind|gentil;Japan|Japão
+B: I want to find the {0}.|Quero achar {0}.|station=a estação;hotel=o hotel;bank=o banco
+B: Walk {0}.|Siga {0}.|straight=em frente;left=à esquerda;right=à direita
+S: You|Excuse me. Can you help me?|Com licença. Pode me ajudar?|Of course. What do you need?|Claro. Do que você precisa?
+S: Kai|Yes, here is one for you.|Tem, aqui está um para você.|Thank you. You are very kind.|Obrigado. Você é muito gentil.
+R: Can you help me?|Pode me ajudar?
+R: I want to find the train station.|Quero achar a estação de trem.
+R: Is there a map of the city?|Tem um mapa da cidade?
+R: You are very kind.|Você é muito gentil.
+X: Welcome to Japan!|Bem-vindo ao Japão!
+C: Pedir ajuda com "Excuse me. Can you help me?" funciona em qualquer país.
+N: Próximo: o hotel.
+
+T: Say hello in many languages | Cumprimentos pelo mundo | plaza | Madrid | Lia,f,👩🏽,guia
+K: Hello in many languages. | Olá em vários idiomas.
+M: Hoje você aprende cumprimentos pelo mundo.
+D: Lia|Let us say hello in different languages.|Vamos dizer olá em idiomas diferentes.
+D: You|In Spanish it is "hola".|Em espanhol é "hola".
+D: Lia|In French it is "bonjour".|Em francês é "bonjour".
+D: You|And in Italian?|E em italiano?
+D: Lia|It is "ciao".|É "ciao".
+D: You|In Japanese it is "konnichiwa".|Em japonês é "konnichiwa".
+D: Lia|And in English?|E em inglês?
+D: You|Hello! And in Portuguese, olá!|Hello! E em português, olá!
+V: Spanish|espanhol;French|francês;Italian|italiano;Japanese|japonês;hello|olá
+B: In {0} it is "hola".|Em {0} é "hola".|Spanish=espanhol;Mexican Spanish=espanhol mexicano;Chile=Chile
+B: Let us say {0}.|Vamos dizer {0}.|hello=olá;goodbye=tchau;thanks=obrigado
+S: Lia|Let us say hello in different languages.|Vamos dizer olá em idiomas diferentes.|In Spanish it is "hola".|Em espanhol é "hola".
+S: Lia|And in Italian?|E em italiano?|It is "ciao".|É "ciao".
+R: Let us say hello in different languages.|Vamos dizer olá em idiomas diferentes.
+R: In Spanish it is "hola".|Em espanhol é "hola".
+R: In French it is "bonjour".|Em francês é "bonjour".
+R: In Japanese it is "konnichiwa".|Em japonês é "konnichiwa".
+X: Ciao!|Tchau!
+C: "Ciao" em italiano serve para olá e tchau.
+N: Próximo: viajar sozinho.
+
+T: Travel alone | Viajar sozinho | street | Lisbon | Rosa,f,👩🏽,viajante
+K: I travel alone. | Eu viajo sozinho.
+M: Hoje você conversa sobre viajar.
+D: Rosa|Do you travel alone or with friends?|Você viaja sozinho ou com amigos?
+D: You|I travel alone. It is fun.|Viajo sozinho. É divertido.
+D: Rosa|Is it safe?|É seguro?
+D: You|Yes, if you are careful.|Sim, se você tomar cuidado.
+D: Rosa|What do you carry in your bag?|O que você leva na mochila?
+D: You|A map, water and a phone.|Um mapa, água e um celular.
+D: Rosa|Smart. Where do you go next?|Esperto. Aonde você vai agora?
+D: You|I go to Spain.|Vou para a Espanha.
+V: alone|sozinho;safe|seguro;careful|cuidadoso;carry|levar;smart|esperto
+B: I travel {0}.|Eu viajo {0}.|alone=sozinho;with friends=com amigos;by train=de trem
+B: I carry a {0}.|Eu levo {0}.|map=um mapa;phone=um celular;camera=uma câmera
+S: Rosa|Do you travel alone or with friends?|Você viaja sozinho ou com amigos?|I travel alone. It is fun.|Viajo sozinho. É divertido.
+S: Rosa|What do you carry in your bag?|O que você leva na mochila?|A map, water and a phone.|Um mapa, água e um celular.
+R: I travel alone.|Eu viajo sozinho.
+R: It is safe if you are careful.|É seguro se você tomar cuidado.
+R: I carry a map and a phone.|Levo um mapa e um celular.
+R: I go to Spain.|Vou para a Espanha.
+X: Be careful.|Tome cuidado.
+C: "Backpacker" é quem viaja pelo mundo com mochila e orçamento pequeno.
+N: Próximo: o grande mapa.
+
+T: My dream trip | Desafio do arco: viagem dos sonhos | airport | New York | Dee,f,👩🏿,guia
+K: My dream trip is to Italy. | Minha viagem dos sonhos é para a Itália.
+M: Hoje você descreve a viagem dos sonhos.
+D: Dee|Tell me about your dream trip.|Fale da sua viagem dos sonhos.
+D: You|I want to go to Italy.|Quero ir para a Itália.
+D: Dee|Why Italy?|Por que a Itália?
+D: You|I love pizza, art and old cities.|Adoro pizza, arte e cidades antigas.
+D: Dee|How many days do you want to stay?|Quantos dias você quer ficar?
+D: You|Ten days. I stay in a small hotel.|Dez dias. Fico num hotelzinho.
+D: Dee|That sounds wonderful.|Parece maravilhoso.
+D: You|It is my dream trip!|É a minha viagem dos sonhos!
+V: dream|sonho;Italy|Itália;stay|ficar;wonderful|maravilhoso;hotel|hotel
+B: I want to go to {0}.|Quero ir para {0}.|Italy=a Itália;Japan=o Japão;Spain=a Espanha
+B: I stay {0} days.|Fico {0} dias.|ten=dez;seven=sete;five=cinco
+S: Dee|Tell me about your dream trip.|Fale da sua viagem dos sonhos.|I want to go to Italy.|Quero ir para a Itália.
+S: Dee|How many days do you want to stay?|Quantos dias você quer ficar?|Ten days. I stay in a small hotel.|Dez dias. Fico num hotelzinho.
+R: Tell me about your dream trip.|Fale da sua viagem dos sonhos.
+R: I want to go to Italy.|Quero ir para a Itália.
+R: I love pizza, art and old cities.|Adoro pizza, arte e cidades antigas.
+R: It is my dream trip!|É a minha viagem dos sonhos!
+X: That sounds wonderful.|Parece maravilhoso.
+C: "Dream trip" ou "dream vacation" é a viagem que se quer muito fazer.
+N: Próximo: o fim do A1.
+BOSS: 1
+
+T: Look how much you know | Revisão: tudo o que você sabe | park | Boston | Ben,m,🧑🏽,amigo
+K: I can talk about many things. | Eu consigo falar de muita coisa.
+M: Hoje você revê as conversas que aprendeu.
+D: Ben|Do you remember your first days of English?|Você lembra dos seus primeiros dias de inglês?
+D: You|Yes. I only say hello and thanks.|Lembro. Eu só dizia olá e obrigado.
+D: Ben|And now?|E agora?
+D: You|I talk about animals, food and cities.|Eu falo de animais, comida e cidades.
+D: Ben|Can you also talk about your home?|Você também consegue falar da sua casa?
+D: You|Yes. And my hobbies, my job, my plans.|Consigo. E dos meus hobbies, do meu trabalho, dos meus planos.
+D: Ben|You speak very well.|Você fala muito bem.
+D: You|I can talk about many things.|Eu consigo falar de muita coisa.
+V: remember|lembrar;animals|animais;food|comida;hobbies|hobbies;plans|planos
+B: I talk about {0}.|Eu falo de {0}.|animals=animais;food=comida;cities=cidades
+B: I can talk about {0}.|Eu consigo falar d{0}.|many things=muita coisa;my home=a minha casa;my job=o meu trabalho
+S: Ben|Do you remember your first days of English?|Você lembra dos seus primeiros dias de inglês?|Yes. I only say hello and thanks.|Lembro. Eu só dizia olá e obrigado.
+S: Ben|You speak very well.|Você fala muito bem.|I can talk about many things.|Eu consigo falar de muita coisa.
+R: I talk about animals, food and cities.|Falo de animais, comida e cidades.
+R: I talk about my home and my job.|Falo da minha casa e do meu trabalho.
+R: You speak very well.|Você fala muito bem.
+R: I can talk about many things.|Eu consigo falar de muita coisa.
+X: Very well.|Muito bem.
+C: Aprender um idioma é como juntar peças: cada tema abre novas conversas.
+N: Hora de escolher a próxima aventura.

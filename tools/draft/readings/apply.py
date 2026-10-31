@@ -40,6 +40,10 @@ for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
             f={'k':'rdg','obra':True,'title':'Conheça a obra: '+e['a']['w'],'s':[list(t) for t in v['r']],'q':{'q':q,'o':o,'a':a,'why':why},
                'rs':next(r for r in RS if r not in near),'chars':hs.get('chars'),'say':'Leia a resenha. Toque em uma frase para ouvir e ver a tradução.'}
             fr.insert(i,f);ch=True;nr+=1
+        if 'r' in v:
+            ex=next((x for x in fr if x['k']=='rdg' and x.get('obra')),None)
+            if ex and ex['s']!=[list(t) for t in v['r']]:
+                ex['s']=[list(t) for t in v['r']];ch=True;nr+=1
         if 'd' in v and not any(x['k']=='pgdlg' for x in fr):
             vp=next((i for i,x in enumerate(fr) if x['k']=='vplay'),None)
             if vp is None:continue
@@ -49,6 +53,10 @@ for fn in sorted(glob.glob(D+'/../../../data/en-*.json')):
             fr.insert(vp+1,f)
             lab=next((i for i,x in enumerate(fr) if x['k']=='pglab'),None)
             if lab is not None and lab+1<len(fr) and fr[lab+1]['k']=='pgsheet':del fr[lab+1]
+            for j in range(1,len(fr)-1):
+                if fr[j-1].get('rs') and fr[j-1].get('rs')==fr[j].get('rs')==fr[j+1].get('rs'):
+                    other={fr[k].get('rs') for k in range(max(0,j-2),min(len(fr),j+3))}
+                    fr[j]['rs']=next(r for r in RS if r not in other)
             ch=True;nd+=1
     if ch:json.dump(d,open(fn,'w'),ensure_ascii=False,separators=(',',':'))
 print('leituras',nr,'diálogos',nd)

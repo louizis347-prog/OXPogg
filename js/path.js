@@ -235,7 +235,10 @@ let loadingFor=null;
 function renderCard(){
   const host=document.querySelector('.pt-today');if(!host)return;host.innerHTML=cardHTML();
   const nx=nextEp();
-  if(nx&&!nx.e&&loadingFor!==nx.cid&&typeof ensureLangLoaded==='function'){loadingFor=nx.cid;ensureLangLoaded(nx.cid).then(()=>{loadingFor=null;if(document.querySelector('.pt-today'))renderCard()}).catch(()=>{loadingFor=null})}
+  /* não baixa o curso inteiro só para escrever o título do próximo episódio: espera ficar ocioso e pula em conexão lenta ou economia de dados */
+  const slowNet=()=>{try{const c=navigator.connection;return !!(c&&(c.saveData||/(^|-)(2g|3g)$/.test(c.effectiveType||'')))}catch(e){return false}};
+  if(nx&&!nx.e&&loadingFor!==nx.cid&&typeof ensureLangLoaded==='function'&&!slowNet()){loadingFor=nx.cid;const cid=nx.cid,go=()=>ensureLangLoaded(cid).then(()=>{loadingFor=null;if(document.querySelector('.pt-today'))renderCard()}).catch(()=>{loadingFor=null});
+    setTimeout(()=>{(window.requestIdleCallback||(f=>f()))(go,{timeout:3000})},4000)}
 }
 {const _home=window.home;if(_home)window.home=function(){const r=_home.apply(this,arguments);
   try{const hero=document.querySelector('#app .pg-stats')||document.querySelector('#app .pg-hero')||document.querySelector('#app .hero');if(hero&&!document.querySelector('.pt-today')){const s=document.createElement('section');s.className='pt-today';hero.insertAdjacentElement('afterend',s);renderCard()}}catch(e){}

@@ -1,0 +1,231 @@
+# Arco 78 · Mudar de cidade
+T: A new city | Uma cidade nova | street | Chicago | Mia,f,👩🏻,amiga
+K: I move to a new city. | Mudo para uma cidade nova.
+M: Hoje você anuncia a mudança.
+D: You|I have news. I move to Chicago.|Tenho novidade. Mudo para Chicago.
+D: Mia|Really? When?|Sério? Quando?
+D: You|Next month.|No mês que vem.
+D: Mia|Why Chicago?|Por que Chicago?
+D: You|I have a new job there.|Tenho um emprego novo lá.
+D: Mia|Congratulations! I am happy for you.|Parabéns! Fico feliz por você.
+D: You|Thank you. But I am a little nervous.|Obrigado. Mas estou um pouco nervoso.
+V: move|mudar;news|novidade;month|mês;job|emprego;nervous|nervoso
+B: I move to {0}.|Mudo para {0}.|Chicago=Chicago;Boston=Boston;Seattle=Seattle
+B: Next {0}.|No(a) {0} que vem.|month=mês;week=semana;year=ano
+S: Mia|Really? When?|Sério? Quando?|Next month.|No mês que vem.
+S: Mia|Why Chicago?|Por que Chicago?|I have a new job there.|Tenho um emprego novo lá.
+R: I move to Chicago.|Mudo para Chicago.
+R: Next month.|No mês que vem.
+R: I have a new job there.|Tenho um emprego novo lá.
+R: I am a little nervous.|Estou um pouco nervoso.
+X: Congratulations!|Parabéns!
+C: Mudar de cidade por trabalho é muito comum nos EUA.
+N: Próximo: procurar casa.
+
+T: Find a place to live | Procurar onde morar | living | Chicago | Lia,f,👩🏽,corretora
+K: I look for an apartment. | Procuro um apartamento.
+M: Hoje você procura moradia.
+D: Lia|What kind of apartment do you want?|Que tipo de apartamento você quer?
+D: You|One bedroom, near the subway.|Um quarto, perto do metrô.
+D: Lia|How much do you want to pay?|Quanto quer pagar?
+D: You|About one thousand dollars a month.|Cerca de mil dólares por mês.
+D: Lia|I have a nice place on Oak Street.|Tenho um lugar bom na Oak Street.
+D: You|Can I see it today?|Posso ver hoje?
+D: Lia|Yes, at four o'clock.|Sim, às quatro.
+V: apartment|apartamento;bedroom|quarto;subway|metrô;month|mês;street|rua
+B: One {0}, near the subway.|Um {0}, perto do metrô.|bedroom=quarto;bathroom=banheiro;room=cômodo
+B: About one thousand dollars a {0}.|Cerca de mil dólares por {0}.|month=mês;week=semana;year=ano
+S: Lia|What kind of apartment do you want?|Que tipo de apartamento você quer?|One bedroom, near the subway.|Um quarto, perto do metrô.
+S: You|Can I see it today?|Posso ver hoje?|Yes, at four o'clock.|Sim, às quatro.
+R: I look for an apartment.|Procuro um apartamento.
+R: One bedroom, near the subway.|Um quarto, perto do metrô.
+R: About one thousand dollars a month.|Cerca de mil dólares por mês.
+R: Can I see it today?|Posso ver hoje?
+X: At four o'clock.|Às quatro.
+C: Nos EUA, o aluguel é quase sempre cobrado por mês.
+N: Próximo: visitar o apartamento.
+
+T: See the apartment | Ver o apartamento | living | Chicago | Lia,f,👩🏽,corretora
+K: This is the kitchen. | Esta é a cozinha.
+M: Hoje você visita um apartamento.
+D: Lia|Come in. This is the living room.|Entre. Esta é a sala.
+D: You|It is bright and spacious.|É clara e espaçosa.
+D: Lia|The kitchen is on the left.|A cozinha fica à esquerda.
+D: You|It has a new fridge.|Tem geladeira nova.
+D: Lia|Yes. And the bedroom has a big window.|Sim. E o quarto tem uma janela grande.
+D: You|I like it. What about the neighbors?|Gostei. E os vizinhos?
+D: Lia|Quiet and friendly.|Calmos e simpáticos.
+V: bright|clara;spacious|espaçosa;fridge|geladeira;window|janela;neighbors|vizinhos
+B: The living room is bright and {0}.|A sala é clara e {0}.|spacious=espaçosa;small=pequena;warm=quente
+B: The bedroom has a big {0}.|O quarto tem uma {0} grande.|window=janela;closet=armário;bed=cama
+S: Lia|Come in. This is the living room.|Entre. Esta é a sala.|It is bright and spacious.|É clara e espaçosa.
+S: Lia|Yes. And the bedroom has a big window.|Sim. E o quarto tem uma janela grande.|I like it. What about the neighbors?|Gostei. E os vizinhos?
+R: This is the living room.|Esta é a sala.
+R: The kitchen is on the left.|A cozinha fica à esquerda.
+R: It has a new fridge.|Tem geladeira nova.
+R: I like it.|Gostei.
+X: Quiet and friendly.|Calmos e simpáticos.
+C: Nos EUA, é comum ver o apartamento antes de assinar o contrato.
+N: Próximo: o contrato.
+
+T: Sign the lease | Assinar o contrato | office | Chicago | Ruth,f,👩🏻,proprietária
+K: Where do I sign? | Onde assino?
+M: Hoje você assina um contrato de aluguel.
+D: Ruth|Welcome. Here is the lease.|Bem-vindo. Aqui está o contrato.
+D: You|How long is it?|Quanto tempo dura?
+D: Ruth|Twelve months.|Doze meses.
+D: You|Is the deposit one month?|O depósito é de um mês?
+D: Ruth|Yes, one thousand dollars.|Sim, mil dólares.
+D: You|Okay. Where do I sign?|Certo. Onde assino?
+D: Ruth|Here, and here. Welcome home!|Aqui e aqui. Bem-vindo à sua casa!
+V: lease|contrato;twelve|doze;deposit|depósito;sign|assinar;home|casa
+B: The lease is {0} months.|O contrato é de {0} meses.|twelve=doze;six=seis;twenty-four=vinte e quatro
+B: The deposit is one {0}.|O depósito é de um {0}.|month=mês;week=semana;year=ano
+S: Ruth|Welcome. Here is the lease.|Bem-vindo. Aqui está o contrato.|How long is it?|Quanto tempo dura?
+S: You|Okay. Where do I sign?|Certo. Onde assino?|Here, and here. Welcome home!|Aqui e aqui. Bem-vindo à sua casa!
+R: Here is the lease.|Aqui está o contrato.
+R: It is twelve months.|São doze meses.
+R: The deposit is one thousand dollars.|O depósito é mil dólares.
+R: Where do I sign?|Onde assino?
+X: Welcome home!|Bem-vindo à sua casa!
+C: O "security deposit" é devolvido no fim do contrato, se não houver danos.
+N: Próximo: a mudança.
+
+T: Moving boxes | Caixas de mudança | living | Chicago | Dan,m,🧑🏽,amigo
+K: Pack your things. | Embale suas coisas.
+M: Hoje você empacota para a mudança.
+D: Dan|Let me help you pack.|Deixe-me ajudar a embalar.
+D: You|Thanks. I have many boxes.|Obrigado. Tenho muitas caixas.
+D: Dan|Put books in small boxes.|Ponha livros em caixas pequenas.
+D: You|And clothes in big ones?|E roupas em grandes?
+D: Dan|Right. Write the room on each box.|Certo. Escreva o cômodo em cada caixa.
+D: You|Good idea. "Kitchen", "bedroom".|Boa ideia. "Cozinha", "quarto".
+D: Dan|The truck comes at nine.|O caminhão chega às nove.
+V: pack|embalar;boxes|caixas;books|livros;clothes|roupas;truck|caminhão
+B: Put {0} in small boxes.|Ponha {0} em caixas pequenas.|books=livros;plates=pratos;shoes=sapatos
+B: Write the {0} on each box.|Escreva o(a) {0} em cada caixa.|room=cômodo;name=nome;date=data
+S: Dan|Let me help you pack.|Deixe-me ajudar a embalar.|Thanks. I have many boxes.|Obrigado. Tenho muitas caixas.
+S: Dan|Right. Write the room on each box.|Certo. Escreva o cômodo em cada caixa.|Good idea. "Kitchen", "bedroom".|Boa ideia. "Cozinha", "quarto".
+R: Let me help you pack.|Deixe-me ajudar a embalar.
+R: Put books in small boxes.|Ponha livros em caixas pequenas.
+R: Write the room on each box.|Escreva o cômodo em cada caixa.
+R: The truck comes at nine.|O caminhão chega às nove.
+X: Good idea.|Boa ideia.
+C: Etiquetar as caixas por cômodo facilita muito o desempacotar.
+N: Próximo: o caminhão.
+
+T: The moving truck | O caminhão de mudança | street | Chicago | Max,m,🧑🏼,motorista
+K: Careful with that box! | Cuidado com essa caixa!
+M: Hoje você carrega o caminhão.
+D: Max|Good morning. Where do I park the truck?|Bom dia. Onde estaciono o caminhão?
+D: You|In front of the building, please.|Na frente do prédio, por favor.
+D: Max|Which boxes first?|Quais caixas primeiro?
+D: You|The heavy ones. Careful with that box!|As pesadas. Cuidado com essa caixa!
+D: Max|What is inside?|O que tem dentro?
+D: You|Glasses and plates.|Copos e pratos.
+D: Max|I carry it slowly.|Levo devagar.
+V: truck|caminhão;heavy|pesadas;careful|cuidado;glasses|copos;plates|pratos
+B: Which boxes {0}?|Quais caixas {0}?|first=primeiro;next=depois;last=por último
+B: Careful with that {0}!|Cuidado com {0}!|box=essa caixa;lamp=esse abajur;mirror=esse espelho
+S: Max|Good morning. Where do I park the truck?|Bom dia. Onde estaciono o caminhão?|In front of the building, please.|Na frente do prédio, por favor.
+S: Max|What is inside?|O que tem dentro?|Glasses and plates.|Copos e pratos.
+R: Where do I park the truck?|Onde estaciono o caminhão?
+R: In front of the building.|Na frente do prédio.
+R: Careful with that box!|Cuidado com essa caixa!
+R: I carry it slowly.|Levo devagar.
+X: The heavy ones first.|As pesadas primeiro.
+C: Mudanças pedem planejamento para o caminhão e para as caixas frágeis.
+N: Próximo: a primeira noite.
+
+T: The first night | A primeira noite | living | Chicago | Mia,f,👩🏻,amiga
+K: Everything is new. | Tudo é novo.
+M: Hoje você passa a primeira noite na casa nova.
+D: Mia|How is your first night?|Como está a sua primeira noite?
+D: You|Everything is new. And boxes are everywhere.|Tudo é novo. E tem caixas por todo lado.
+D: Mia|Do you eat dinner?|Você janta?
+D: You|Not yet. Let us order pizza.|Ainda não. Vamos pedir pizza.
+D: Mia|Good idea. I bring drinks.|Boa ideia. Levo bebidas.
+D: You|The apartment is quiet at night.|O apartamento é silencioso à noite.
+D: Mia|You love it here.|Você adora aqui.
+V: night|noite;boxes|caixas;pizza|pizza;quiet|silencioso;drinks|bebidas
+B: Everything is {0}.|Tudo é {0}.|new=novo;ready=pronto;clean=limpo
+B: Let us order {0}.|Vamos pedir {0}.|pizza=pizza;sushi=sushi;tacos=tacos
+S: Mia|How is your first night?|Como está a sua primeira noite?|Everything is new. And boxes are everywhere.|Tudo é novo. E tem caixas por todo lado.
+S: Mia|Good idea. I bring drinks.|Boa ideia. Levo bebidas.|The apartment is quiet at night.|O apartamento é silencioso à noite.
+R: Everything is new.|Tudo é novo.
+R: Boxes are everywhere.|Tem caixas por todo lado.
+R: Let us order pizza.|Vamos pedir pizza.
+R: The apartment is quiet at night.|O apartamento é silencioso à noite.
+X: Good idea.|Boa ideia.
+C: Pedir pizza na primeira noite é uma tradição de quem se muda.
+N: Próximo: conhecer o bairro.
+
+T: Explore the neighborhood | Conhecer o bairro | street | Chicago | Ben,m,🧑🏽,vizinho
+K: Where is the supermarket? | Onde fica o supermercado?
+M: Hoje você explora o bairro novo.
+D: You|Excuse me. Where is the supermarket?|Com licença. Onde fica o supermercado?
+D: Ben|Two blocks down, on the right.|Duas quadras abaixo, à direita.
+D: You|And a good cafe?|E um bom café?
+D: Ben|There is one next to the park.|Tem um ao lado do parque.
+D: You|Thank you. I am new here.|Obrigado. Sou novo aqui.
+D: Ben|Welcome to the neighborhood!|Bem-vindo ao bairro!
+D: You|Thank you very much.|Muito obrigado.
+V: supermarket|supermercado;cafe|café;park|parque;new|novo;neighborhood|bairro
+B: Two blocks {0}.|Duas quadras {0}.|down=abaixo;up=acima;away=de distância
+B: There is one next to the {0}.|Tem um ao lado do(a) {0}.|park=parque;bank=banco;school=escola
+S: You|Excuse me. Where is the supermarket?|Com licença. Onde fica o supermercado?|Two blocks down, on the right.|Duas quadras abaixo, à direita.
+S: Ben|There is one next to the park.|Tem um ao lado do parque.|Thank you. I am new here.|Obrigado. Sou novo aqui.
+R: Where is the supermarket?|Onde fica o supermercado?
+R: Two blocks down, on the right.|Duas quadras abaixo, à direita.
+R: I am new here.|Sou novo aqui.
+R: Welcome to the neighborhood!|Bem-vindo ao bairro!
+X: Thank you very much.|Muito obrigado.
+C: Perguntar ao vizinho é o melhor jeito de conhecer o bairro.
+N: Próximo: o novo emprego.
+
+T: First day of the new job | Primeiro dia no novo emprego | office | Chicago | Sam,m,🧑🏻,gerente
+K: I am happy to be here. | Estou feliz por estar aqui.
+M: Hoje você começa o novo emprego.
+D: Sam|Welcome to the team. I am Sam.|Bem-vindo à equipe. Sou o Sam.
+D: You|Nice to meet you. I am Leo.|Prazer. Sou o Leo.
+D: Sam|Here is your desk, near the window.|Aqui está a sua mesa, perto da janela.
+D: You|Thank you. It is a great view.|Obrigado. É uma ótima vista.
+D: Sam|Let me introduce you to the team.|Deixe-me apresentar você à equipe.
+D: You|I am happy to be here.|Estou feliz por estar aqui.
+D: Sam|We are happy to have you.|Estamos felizes em ter você.
+V: team|equipe;desk|mesa;window|janela;view|vista;introduce|apresentar
+B: Here is your {0}.|Aqui está a sua {0}.|desk=mesa;chair=cadeira;badge=identidade
+B: Let me {0} you to the team.|Deixe-me {0} você à equipe.|introduce=apresentar;show=mostrar;send=enviar
+S: Sam|Welcome to the team. I am Sam.|Bem-vindo à equipe. Sou o Sam.|Nice to meet you. I am Leo.|Prazer. Sou o Leo.
+S: Sam|Let me introduce you to the team.|Deixe-me apresentar você à equipe.|I am happy to be here.|Estou feliz por estar aqui.
+R: Welcome to the team.|Bem-vindo à equipe.
+R: Here is your desk.|Aqui está a sua mesa.
+R: It is a great view.|É uma ótima vista.
+R: I am happy to be here.|Estou feliz por estar aqui.
+X: Nice to meet you.|Prazer.
+C: No primeiro dia, o gerente costuma apresentar a equipe e o escritório.
+N: Próximo: desafio, minha nova vida.
+
+T: My new life | Desafio do arco: minha nova vida | living | Chicago | Mia,f,👩🏻,amiga
+K: I love my new city. | Adoro minha cidade nova.
+M: Hoje você conta como vai a nova vida.
+D: Mia|Tell me about your new life.|Conte da sua nova vida.
+D: You|I live in a nice apartment near the subway.|Moro num apartamento bom perto do metrô.
+D: Mia|How is your job?|Como está o emprego?
+D: You|Great. The team is friendly.|Ótimo. A equipe é simpática.
+D: Mia|And the city?|E a cidade?
+D: You|Big and busy. But I love it.|Grande e movimentada. Mas adoro.
+D: Mia|I am so happy for you.|Fico tão feliz por você.
+V: life|vida;subway|metrô;busy|movimentada;friendly|simpática;city|cidade
+B: I live in a nice {0}.|Moro num(a) {0} bom(boa).|apartment=apartamento;house=casa;building=prédio
+B: The team is {0}.|A equipe é {0}.|friendly=simpática;kind=gentil;great=ótima
+S: Mia|Tell me about your new life.|Conte da sua nova vida.|I live in a nice apartment near the subway.|Moro num apartamento bom perto do metrô.
+S: Mia|And the city?|E a cidade?|Big and busy. But I love it.|Grande e movimentada. Mas adoro.
+R: Tell me about your new life.|Conte da sua nova vida.
+R: I live near the subway.|Moro perto do metrô.
+R: The team is friendly.|A equipe é simpática.
+R: I love my new city.|Adoro minha cidade nova.
+X: I am so happy for you.|Fico tão feliz por você.
+C: Recomeçar numa cidade nova exige coragem e traz muitas amizades novas.
+N: Próximo: safári.
+BOSS: 1

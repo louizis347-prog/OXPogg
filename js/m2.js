@@ -648,7 +648,11 @@ FXR.review=function(f,st,n){
     box.querySelectorAll('.m2-bi').forEach(x=>x.onclick=()=>{sfx('pop');fxSay(x.dataset.s)});
     if(!seen.has(i)){seen.add(i);burst(b,['⭐','✨','🎒']);st.querySelector('#m2bs').textContent='🎒 '+seen.size+'/'+bag.length;
       if(seen.size>=bag.length){sfx('tada');try{confetti(40)}catch(e){}cta('Testar o que lembro',true,true)}}
-    setTimeout(()=>fxSay(t.say||t.items.map(x=>x.s||x.t).slice(0,3).join('. ')),200);
+    /* lê TODOS os itens do bolso, um depois do outro (antes só lia os 3 primeiros) */
+    const lines=t.items.map(x=>x.s||x.t).filter(Boolean),els=[...box.querySelectorAll('.m2-bi')],tok=(FXR.review._tok=(FXR.review._tok||0)+1);
+    let k=0;const next=()=>{els.forEach(e=>e.classList.remove('rd'));if(tok!==FXR.review._tok||k>=lines.length){window.__speakEnd=null;return}
+      const el=els[k];if(el)el.classList.add('rd');const tx=lines[k++];window.__speakEnd=next;fxSay(tx)};
+    setTimeout(()=>{try{fxStopAudio()}catch(e){}if(lines.length)next();else fxSay(t.say||'')},200);
   });
   cta('Abra os bolsos da mochila',bag.length===0,false);say(f.say||'Bora abrir a mochila e relembrar o episódio anterior!');
 };

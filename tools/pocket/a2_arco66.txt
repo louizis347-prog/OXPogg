@@ -1,0 +1,230 @@
+# Arco 66 · Alugar um apartamento
+T: Looking for an apartment | Procurar um apartamento | office | Chicago | Beth,f,👩🏼,corretora
+K: I am looking for a two-bedroom apartment today. | Procuro um apartamento de dois quartos.
+M: Hoje você procura um apartamento para alugar.
+D: Beth|Welcome. What are you looking for?|Bem-vindo. O que você procura?
+D: You|I am looking for a two-bedroom apartment.|Procuro um apartamento de dois quartos.
+D: Beth|What is your budget per month?|Qual é seu orçamento por mês?
+D: You|About fifteen hundred dollars.|Cerca de mil e quinhentos dólares.
+D: Beth|Do you prefer downtown or a quiet area?|Você prefere o centro ou uma área tranquila?
+D: You|A quiet area, near a train station.|Uma área tranquila, perto de uma estação de trem.
+D: Beth|I have two places to show you today.|Tenho dois lugares para te mostrar hoje.
+D: You|Great. When can we go?|Ótimo. Quando podemos ir?
+V: bedroom|quarto;budget|orçamento;area|área;month|mês;place|lugar
+B: I am looking for a {0}-bedroom apartment.|Procuro um apartamento de {0} quartos.|two=dois;one=um;three=três
+B: My budget is {0} dollars a month.|Meu orçamento é {0} dólares por mês.|fifteen hundred=mil e quinhentos;one thousand=mil;two thousand=dois mil
+S: Beth|What are you looking for?|O que você procura?|I am looking for a two-bedroom apartment.|Procuro um apartamento de dois quartos.
+S: Beth|What is your budget per month?|Qual é seu orçamento por mês?|About fifteen hundred dollars.|Cerca de mil e quinhentos dólares.
+R: I am looking for an apartment.|Procuro um apartamento.
+R: What is your budget?|Qual é seu orçamento?
+R: I prefer a quiet area.|Prefiro uma área tranquila.
+R: When can we go?|Quando podemos ir?
+X: Welcome.|Bem-vindo.
+C: Nos EUA, aluguéis são anunciados por mês e em geral por número de quartos.
+
+T: See the apartment today | Visitar o apartamento | living | Chicago | Beth,f,👩🏼,corretora
+K: How big is the living room? | Qual o tamanho da sala?
+M: Hoje você visita um apartamento.
+D: Beth|Here we are. This is the living room.|Chegamos. Esta é a sala.
+D: You|It is bright. How big is it?|É clara. Qual é o tamanho?
+D: Beth|About twenty square meters.|Cerca de vinte metros quadrados.
+D: You|And the kitchen?|E a cozinha?
+D: Beth|It is small, but it has a new fridge.|É pequena, mas tem geladeira nova.
+D: You|Are there two bathrooms?|Há dois banheiros?
+D: Beth|Yes, one in each bedroom.|Sim, um em cada quarto.
+D: You|I like it. Is there a laundry room?|Gostei. Há lavanderia?
+V: bright|claro;square meter|metro quadrado;fridge|geladeira;bathroom|banheiro;laundry|lavanderia
+B: It is about {0} square meters.|Tem cerca de {0} metros quadrados.|twenty=vinte;thirty=trinta;fifteen=quinze
+B: It has a new {0}.|Tem uma {0} nova.|fridge=geladeira;stove=fogão;door=porta
+S: Beth|This is the living room.|Esta é a sala.|It is bright. How big is it?|É clara. Qual é o tamanho?
+S: Beth|There are two bathrooms.|Há dois banheiros.|I like it. Is there a laundry room?|Gostei. Há lavanderia?
+R: How big is the living room?|Qual o tamanho da sala?
+R: It is small, but it has a new fridge.|É pequena, mas tem geladeira nova.
+R: Are there two bathrooms?|Há dois banheiros?
+R: I like it.|Gostei.
+X: It is bright.|É clara.
+C: Muitos apartamentos americanos têm lavanderia coletiva no prédio, e alguns já vêm com máquina.
+
+T: The lease | O contrato | office | Seattle | Mr. Kim,m,👨🏻,proprietário
+K: How long is the lease? | Qual a duração do contrato?
+M: Hoje você lê o contrato de aluguel.
+D: Mr. Kim|Here is the lease. Please read it carefully.|Aqui está o contrato. Por favor leia com atenção.
+D: You|How long is the lease?|Qual a duração do contrato?
+D: Mr. Kim|One year. The rent is fifteen hundred a month.|Um ano. O aluguel é mil e quinhentos por mês.
+D: You|When do I pay the rent?|Quando pago o aluguel?
+D: Mr. Kim|On the first day of each month.|No primeiro dia de cada mês.
+D: You|Is there a deposit?|Há caução?
+D: Mr. Kim|Yes, one month. You get it back when you leave.|Sim, um mês. Você recebe de volta quando sair.
+D: You|Understood. Where do I sign?|Entendi. Onde assino?
+V: lease|contrato;rent|aluguel;deposit|caução;sign|assinar;carefully|com atenção
+B: The lease is for {0} year.|O contrato é de {0} ano.|one=um;two=dois;half a=meio
+B: I pay the rent on the {0} day.|Pago o aluguel no {0} dia.|first=primeiro;last=último;fifth=quinto
+S: Mr. Kim|Please read the lease carefully.|Leia o contrato com atenção.|How long is the lease?|Qual a duração do contrato?
+S: Mr. Kim|You get the deposit back when you leave.|Você recebe a caução de volta ao sair.|Understood. Where do I sign?|Entendi. Onde assino?
+R: How long is the lease?|Qual a duração do contrato?
+R: The rent is fifteen hundred a month.|O aluguel é mil e quinhentos por mês.
+R: Is there a deposit?|Há caução?
+R: Where do I sign?|Onde assino?
+X: Understood.|Entendi.
+C: Contratos de aluguel nos EUA costumam durar um ano e exigem uma caução igual a um mês de aluguel.
+
+T: Move-in day | Dia da mudança | street | Denver | Tim,m,👨🏽,amigo
+K: Where do I put this box? | Onde ponho esta caixa?
+M: Hoje você se muda para o apartamento.
+D: Tim|We have the keys! Let us start.|Temos as chaves! Vamos começar.
+D: You|First, the boxes. Where do I put this one?|Primeiro as caixas. Onde ponho esta?
+D: Tim|Put it in the kitchen. It says kitchen.|Ponha na cozinha. Está escrito cozinha.
+D: You|And the sofa? It is very heavy.|E o sofá? É muito pesado.
+D: Tim|Let us carry it together. One, two, three!|Vamos carregar juntos. Um, dois, três!
+D: You|Thanks. Is the elevator working?|Obrigado. O elevador está funcionando?
+D: Tim|Yes, but it is small. We use the stairs.|Sim, mas é pequeno. Usamos a escada.
+D: You|OK. After this, pizza is on me.|Certo. Depois disso, a pizza é por minha conta.
+V: boxes|caixas;sofa|sofá;elevator|elevador;stairs|escada;key|chave
+B: Put it in the {0}.|Ponha na {0}.|kitchen=cozinha;bedroom=quarto;living room=sala
+B: Let us carry it {0}.|Vamos carregar {0}.|together=juntos;slowly=devagar;carefully=com cuidado
+S: Tim|We have the keys! Let us start.|Temos as chaves! Vamos começar.|Where do I put this box?|Onde ponho esta caixa?
+S: Tim|Let us carry the sofa together.|Vamos carregar o sofá juntos.|Is the elevator working?|O elevador está funcionando?
+R: Where do I put this box?|Onde ponho esta caixa?
+R: Put it in the kitchen.|Ponha na cozinha.
+R: Let us carry it together.|Vamos carregar juntos.
+R: Pizza is on me.|A pizza é por minha conta.
+X: One, two, three!|Um, dois, três!
+C: Muitos prédios americanos exigem agendar o elevador para mudanças.
+
+T: Set up the internet | Instalar a internet | living | Austin | Rob,m,👨🏿,técnico
+K: When can you install the internet? | Quando você pode instalar a internet?
+M: Hoje você instala a internet em casa.
+D: You|Hello. When can you install the internet?|Olá. Quando você pode instalar a internet?
+D: Rob|I can come tomorrow between nine and twelve.|Posso ir amanhã entre nove e meio-dia.
+D: You|Good. How fast is the connection?|Bom. Qual a velocidade da conexão?
+D: Rob|It is very fast. You can watch videos without problems.|É muito rápida. Você pode ver vídeos sem problemas.
+D: You|How much is it per month?|Quanto custa por mês?
+D: Rob|Fifty dollars with the router included.|Cinquenta dólares com o roteador incluído.
+D: You|Perfect. I will be at home.|Perfeito. Vou estar em casa.
+D: Rob|See you tomorrow, then.|Até amanhã, então.
+V: internet|internet;install|instalar;router|roteador;fast|rápido;connection|conexão
+B: I can come tomorrow between {0}.|Posso ir amanhã entre {0}.|nine and twelve=nove e meio-dia;two and four=duas e quatro;ten and one=dez e uma
+B: It is {0} dollars per month.|Custa {0} dólares por mês.|fifty=cinquenta;forty=quarenta;sixty=sessenta
+S: Rob|I can come tomorrow between nine and twelve.|Posso ir amanhã entre nove e meio-dia.|Good. How fast is the connection?|Bom. Qual a velocidade da conexão?
+S: Rob|It is fifty dollars with the router.|São cinquenta dólares com o roteador.|Perfect. I will be at home.|Perfeito. Estarei em casa.
+R: When can you install the internet?|Quando você pode instalar a internet?
+R: How fast is the connection?|Qual a velocidade da conexão?
+R: How much is it per month?|Quanto custa por mês?
+R: I will be at home.|Vou estar em casa.
+X: See you tomorrow.|Até amanhã.
+C: Nos EUA, a instalação de internet é marcada em janelas de horário, e o técnico traz o roteador.
+
+T: Meet the landlord | Conhecer o proprietário | hall | Boston | Mr. Hill,m,👨🏼,proprietário
+K: Who do I call if something breaks? | Quem chamo se algo quebrar?
+M: Hoje você conhece o proprietário.
+D: Mr. Hill|Welcome to the building. I am Mr. Hill.|Bem-vindo ao prédio. Sou o Sr. Hill.
+D: You|Nice to meet you. Who do I call if something breaks?|Prazer. Quem chamo se algo quebrar?
+D: Mr. Hill|Call me at this number, any time.|Ligue para este número, a qualquer hora.
+D: You|What about the garbage?|E o lixo?
+D: Mr. Hill|Garbage day is Tuesday. Put it outside at night.|O dia do lixo é terça. Ponha do lado de fora à noite.
+D: You|And recycling?|E a reciclagem?
+D: Mr. Hill|On Friday. The bins are in the yard.|Na sexta. Os contêineres ficam no pátio.
+D: You|Thank you. This is very helpful.|Obrigado. Isso é muito útil.
+V: landlord|proprietário;garbage|lixo;recycling|reciclagem;bin|contêiner;yard|pátio
+B: Garbage day is {0}.|O dia do lixo é {0}.|Tuesday=terça;Monday=segunda;Thursday=quinta
+B: Recycling is on {0}.|A reciclagem é na {0}.|Friday=sexta;Wednesday=quarta;Saturday=sábado
+S: Mr. Hill|Call me at this number, any time.|Ligue para este número a qualquer hora.|Thank you. What about the garbage?|Obrigado. E o lixo?
+S: Mr. Hill|Recycling is on Friday.|A reciclagem é na sexta.|Where are the bins?|Onde ficam os contêineres?
+R: Who do I call if something breaks?|Quem chamo se algo quebrar?
+R: Garbage day is Tuesday.|O dia do lixo é terça.
+R: Recycling is on Friday.|A reciclagem é na sexta.
+R: This is very helpful.|Isso é muito útil.
+X: Any time.|A qualquer hora.
+C: Nos EUA, cada cidade tem dias fixos para lixo e reciclagem, e os contêineres vão para a calçada.
+
+T: A noisy neighbor today | Vizinho barulhento | hall | Chicago | Ann,f,👩🏽,vizinha
+K: Could you turn the music down, please? | Poderia abaixar a música, por favor?
+M: Hoje você pede educadamente para baixar o som.
+D: You|Hi. I am your neighbor from downstairs.|Oi. Sou seu vizinho de baixo.
+D: Ann|Oh, hello. Is there a problem?|Ah, olá. Há algum problema?
+D: You|The music is a little loud. Could you turn it down, please?|A música está um pouco alta. Poderia abaixar, por favor?
+D: Ann|I am so sorry. I did not know.|Sinto muito. Eu não sabia.
+D: You|It is no problem. I have to work early tomorrow.|Sem problema. Tenho que trabalhar cedo amanhã.
+D: Ann|I will turn it down right now.|Vou abaixar agora mesmo.
+D: You|Thank you very much. Have a nice night.|Muito obrigado. Tenha uma boa noite.
+D: Ann|You too. Sorry again.|Você também. Desculpe de novo.
+V: loud|alto;neighbor|vizinho;downstairs|embaixo;turn down|abaixar;sorry|desculpe
+B: The music is a little {0}.|A música está um pouco {0}.|loud=alta;strong=forte;late=tarde
+B: I have to work {0} tomorrow.|Tenho que trabalhar {0} amanhã.|early=cedo;late=até tarde;a lot=muito
+S: Ann|Is there a problem?|Há algum problema?|The music is a little loud. Could you turn it down?|A música está um pouco alta. Poderia abaixar?
+S: Ann|I did not know.|Eu não sabia.|It is no problem. Thank you.|Sem problema. Obrigado.
+R: Could you turn it down, please?|Poderia abaixar, por favor?
+R: The music is a little loud.|A música está um pouco alta.
+R: I have to work early tomorrow.|Tenho que trabalhar cedo amanhã.
+R: I will turn it down.|Vou abaixar.
+X: No problem.|Sem problema.
+C: Nos EUA, é mais educado falar diretamente com o vizinho antes de reclamar ao proprietário.
+
+T: Fix the sink | Consertar a pia | kitchen | Phoenix | Sal,m,👨🏽,encanador
+K: The sink is leaking today. | A pia está vazando.
+M: Hoje você chama o encanador.
+D: You|Hello. The sink is leaking.|Olá. A pia está vazando.
+D: Sal|Where is the water coming from?|De onde está saindo a água?
+D: You|From the pipe under the sink.|Do cano debaixo da pia.
+D: Sal|I can come this afternoon at three.|Posso ir esta tarde às três.
+D: You|That is perfect. How much will it cost?|Perfeito. Quanto vai custar?
+D: Sal|Probably eighty dollars. It depends.|Provavelmente oitenta dólares. Depende.
+D: You|OK. In the meantime, I will put a bucket.|Certo. Enquanto isso, vou pôr um balde.
+D: Sal|Good idea. See you soon.|Boa ideia. Até logo.
+V: sink|pia;pipe|cano;leak|vazar;bucket|balde;plumber|encanador
+B: The {0} is leaking.|A {0} está vazando.|sink=pia;pipe=tubulação;roof=telhado
+B: I can come this afternoon at {0}.|Posso ir esta tarde às {0}.|three=três;two=duas;four=quatro
+S: Sal|Where is the water coming from?|De onde está saindo a água?|From the pipe under the sink.|Do cano debaixo da pia.
+S: Sal|I can come at three.|Posso ir às três.|That is perfect. How much will it cost?|Perfeito. Quanto vai custar?
+R: The sink is leaking.|A pia está vazando.
+R: The water is coming from the pipe.|A água está saindo do cano.
+R: How much will it cost?|Quanto vai custar?
+R: I will put a bucket.|Vou pôr um balde.
+X: It depends.|Depende.
+C: Em apartamentos alugados, o proprietário geralmente chama e paga o encanador.
+
+T: Buy furniture | Comprar móveis | shop | Los Angeles | Joe,m,👨🏼,vendedor
+K: I need a table and four chairs. | Preciso de uma mesa e quatro cadeiras.
+M: Hoje você compra móveis para o apartamento.
+D: Joe|Welcome to Home Style. Can I help you?|Bem-vindo à Home Style. Posso ajudar?
+D: You|Yes. I need a table and four chairs.|Sim. Preciso de uma mesa e quatro cadeiras.
+D: Joe|Here is a nice set. It is made of wood.|Aqui está um bom conjunto. É de madeira.
+D: You|How much is it?|Quanto custa?
+D: Joe|Four hundred dollars, with delivery included.|Quatrocentos dólares, com entrega incluída.
+D: You|When can you deliver it?|Quando podem entregar?
+D: Joe|On Saturday morning, between eight and ten.|No sábado de manhã, entre oito e dez.
+D: You|Perfect. I will take it.|Perfeito. Vou levar.
+V: furniture|móveis;chair|cadeira;wood|madeira;delivery|entrega;set|conjunto
+B: I need a table and {0} chairs.|Preciso de uma mesa e {0} cadeiras.|four=quatro;two=duas;six=seis
+B: It is {0} dollars with delivery.|Custa {0} dólares com entrega.|four hundred=quatrocentos;three hundred=trezentos;five hundred=quinhentos
+S: Joe|Can I help you?|Posso ajudar?|Yes. I need a table and four chairs.|Sim. Preciso de uma mesa e quatro cadeiras.
+S: Joe|Delivery is on Saturday morning.|A entrega é no sábado de manhã.|Perfect. I will take it.|Perfeito. Vou levar.
+R: I need a table and four chairs.|Preciso de uma mesa e quatro cadeiras.
+R: It is made of wood.|É de madeira.
+R: When can you deliver it?|Quando podem entregar?
+R: I will take it.|Vou levar.
+X: Delivery included.|Entrega incluída.
+C: Lojas de móveis nos EUA oferecem entrega com horário marcado, às vezes por uma taxa extra.
+
+T: Utilities | Contas da casa | office | Seattle | Cara,f,👩🏻,atendente
+K: I want to open an electricity account. | Quero abrir uma conta de eletricidade.
+M: Hoje você abre a conta de luz.
+D: Cara|Good morning. How can I help you?|Bom dia. Como posso ajudar?
+D: You|I want to open an electricity account.|Quero abrir uma conta de eletricidade.
+D: Cara|Of course. What is your new address?|Claro. Qual é seu novo endereço?
+D: You|It is 210 Pine Street, apartment four.|É 210 Pine Street, apartamento quatro.
+D: Cara|And when do you want the service to start?|E quando você quer que o serviço comece?
+D: You|On the first of next month.|No dia primeiro do mês que vem.
+D: Cara|Done. The bill comes by email each month.|Pronto. A conta chega por e-mail todo mês.
+D: You|Great. Thank you for your help.|Ótimo. Obrigado pela ajuda.
+V: electricity|eletricidade;account|conta;address|endereço;bill|fatura;service|serviço
+B: It is 210 Pine {0}, apartment four.|É 210 Pine {0}, apartamento quatro.|Street=Street;Avenue=Avenue;Road=Road
+B: The service starts on the {0} of next month.|O serviço começa no dia {0} do mês que vem.|first=primeiro;fifth=cinco;tenth=dez
+S: Cara|What is your new address?|Qual é seu novo endereço?|It is 210 Pine Street, apartment four.|É 210 Pine Street, apartamento quatro.
+S: Cara|When do you want the service to start?|Quando quer que o serviço comece?|On the first of next month.|No dia primeiro do mês que vem.
+R: I want to open an electricity account.|Quero abrir uma conta de eletricidade.
+R: What is your new address?|Qual é seu novo endereço?
+R: The bill comes by email each month.|A fatura chega por e-mail todo mês.
+R: Thank you for your help.|Obrigado pela ajuda.
+X: Done.|Pronto.
+C: Ao se mudar para os EUA, é preciso abrir contas de luz, gás e internet em seu nome.
