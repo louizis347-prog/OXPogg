@@ -7,9 +7,12 @@ python3 tools/pocket/build.py >/dev/null
 N=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-a1_*.json')))")
 N3=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-b1_*.json')))")
 N2=$(python3 -c "import json;print(sum(len(json.load(open(f))) for f in __import__('glob').glob('data/pk-a2_*.json')))")
-python3 - <<P
-import json
-p='data/availability.json'; d=json.load(open(p)); d['pk-a1']={'total':$N,'available':$N}; d['pk-a2']={'total':$N2,'available':$N2}; d['pk-b1']={'total':$N3,'available':$N3}
+python3 - <<'P'
+import json,glob
+p='data/availability.json'; d=json.load(open(p))
+for lv in ('a1','a2','b1','b2','c1','c2'):
+    n=sum(len(json.load(open(f))) for f in glob.glob('data/pk-%s_*.json'%lv))
+    if n:d['pk-'+lv]={'total':n,'available':n}
 json.dump(d,open(p,'w'),ensure_ascii=False,separators=(',',':'))
 P
 V=$(grep -o "pogglot-data-v[0-9]*" sw.js | head -1 | grep -o "[0-9]*$"); sed -i "s/pogglot-data-v$V/pogglot-data-v$((V+1))/" sw.js

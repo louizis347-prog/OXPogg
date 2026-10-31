@@ -137,6 +137,32 @@ def main():
         if lv not in set(filter(None,os.environ.get('POCKET_REBUILD','').split(','))):continue
         files=sorted(glob.glob(os.path.join(R,lv+'_arco*.py'))+glob.glob(os.path.join(R,lv+'_arco*.txt')))
         if not files:continue
+        # MODO MESCLAR (POCKET_ARCS=46-80): reconstrói só os arcos indicados (10 episódios cada, id = base + (arco-1)*10 + posição) e mantém o resto do nível intacto
+        if os.environ.get('POCKET_ARCS'):
+            a0,b0=[int(t) for t in os.environ['POCKET_ARCS'].split('-')]
+            cur=[]
+            for f0 in sorted(glob.glob(os.path.join(D,'pk-%s_*.json'%lv))):cur+=json.load(open(f0))
+            by={e['n']:e for e in cur};new_n=0
+            for fn in files:
+                N=int(re.findall(r'arco(\d+)',os.path.basename(fn))[0])
+                if not a0<=N<=b0:continue
+                m=load(fn)
+                if len(m.EPS)!=10:raise SystemExit('%s: o arco precisa ter exatamente 10 episódios (tem %d)'%(os.path.basename(fn),len(m.EPS)))
+                for k,x in enumerate(m.EPS):
+                    order=(N-1)*10+k+1
+                    nxt=m.EPS[k+1]['t'] if k<9 else (by.get(BASE[lv]+order+1,{}).get('t','').split(' · ')[0] or None)
+                    x['teaser']=('Próximo: '+nxt) if nxt else 'Fim por enquanto. Novos episódios chegando.'
+                    x['boss']=(k==9);x['s']=re.sub(r'^Desafio do arco: ?','',x['s'])
+                    by[BASE[lv]+order]=episode(lv,N-1,k,x,BASE[lv],order);new_n+=1
+            eps=[by[n] for n in sorted(by)]
+            names=[];touched={BASE[lv]+(int(re.findall(r'arco(\d+)',os.path.basename(fn))[0])-1)*10+k+1 for fn in files if a0<=int(re.findall(r'arco(\d+)',os.path.basename(fn))[0])<=b0 for k in range(10)}
+            for bi in range(0,len(eps),50):
+                nm='pk-%s_%02d.json'%(lv,bi//50+1);names.append(nm)
+                if any(e['n'] in touched for e in eps[bi:bi+50]) or not os.path.exists(os.path.join(D,nm)):  # só reescreve os blocos que mudaram
+                    json.dump(eps[bi:bi+50],open(os.path.join(D,nm),'w'),ensure_ascii=False,separators=(',',':'))
+            for old in glob.glob(os.path.join(D,'pk-%s_*.json'%lv)):
+                if os.path.basename(old) not in names:os.remove(old)
+            out['pk-'+lv]=(names,len(eps));print('mesclado %s: %d episódios novos, nível com %d'%(lv,new_n,len(eps)));continue
         flat=[]
         for ai,fn in enumerate(files):
             m=load(fn)
@@ -153,6 +179,9 @@ def main():
             ai=(order-1)//10;k=(order-1)%10
             x['boss']=(k==9);x['s']=re.sub(r'^Desafio do arco: ?','',x['s'])
             eps.append(episode(lv,ai,k,x,BASE[lv],order))
+        _ex=sum(len(json.load(open(f0))) for f0 in glob.glob(os.path.join(D,'pk-%s_*.json'%lv)))
+        if len(eps)<_ex and not os.environ.get('POCKET_ALLOW_SHRINK'):
+            print('build: RECUSADO %s: a reconstrução teria %d episódios e já existem %d (use POCKET_ARCS=a-b para mesclar, ou POCKET_ALLOW_SHRINK=1)'%(lv,len(eps),_ex));continue
         # 1 arquivo por 50 episódios
         names=[]
         for bi in range(0,len(eps),50):
