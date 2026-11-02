@@ -253,10 +253,10 @@ window.RL_REGISTER=function(R,API){A=API;var SEC=A.SEC,COLS=A.COLS,esc=A.esc,say
 /* ---------- linha do tempo + roteiro do professor ---------- */
 var tpOpen=false,tpMode=null;
 function fmt2(n){return String(n).padStart(2,'0')}
-function planOf(L,mode){var pl=(L.plan||{})[mode]||[];var t=0;return pl.map(function(s){var o={id:s.id,name:s.name,min:s.min,from:t,to:t+s.min,c:s.c,desc:s.desc};t+=s.min;return o})}
+function planOf(L,mode){var pl=(L.plan||{})[mode]||[];var t=0;return pl.map(function(s){var o={id:s.id,name:s.name,min:s.min,from:t,to:t+s.min,c:s.c,desc:s.desc,ic:s.ic};t+=s.min;return o})}
 function renderTimeline(p,i,pages){var L=A.lesson(),mode=A.mode(),plan=planOf(L,mode),tl=document.getElementById('tl');if(!tl)return;var cur=(p.stage&&typeof p.stage==='object')?p.stage[mode]:p.stage;
   var total=plan.length?plan[plan.length-1].to:60,curIdx=plan.findIndex(function(s){return s.id===cur});
-  tl.innerHTML=plan.map(function(s,k){return '<button class="st '+(k===curIdx?'cur':(k<curIdx?'past':''))+'" style="--c:'+(s.c||'#2f6fe0')+';flex:'+Math.max(1,s.min)+' 1 0" data-s="'+s.id+'" title="'+H(s.desc||'')+'"><em>'+fmt2(s.from)+'–'+fmt2(s.to)+'</em><b>'+H(s.name)+'</b></button>'}).join('')+'<span class="tm0" id="tm0">⏱ 00:00 / '+total+':00</span>';
+  tl.innerHTML=plan.map(function(s,k){return '<button class="st '+(k===curIdx?'cur':(k<curIdx?'past':''))+'" style="--c:'+(s.c||'#2f6fe0')+';flex:'+Math.max(1,s.min)+' 1 0" data-s="'+s.id+'" title="'+H(s.desc||'')+'"><em>'+(s.ic?s.ic+' ':'')+fmt2(s.from)+'–'+fmt2(s.to)+'</em><b>'+H(s.name)+'</b></button>'}).join('')+'<span class="tm0" id="tm0">⏱ 00:00 / '+total+':00</span>';
   Array.prototype.forEach.call(tl.querySelectorAll('.st'),function(x){x.onclick=function(){var id=x.dataset.s,j=A.pages().findIndex(function(q){return ((q.stage&&typeof q.stage==='object')?q.stage[A.mode()]:q.stage)===id});var rb=document.querySelectorAll('#rail .sg')[j];if(rb)rb.click()}})}
 setInterval(function(){var el=document.getElementById('tm0');if(!el||!A)return;var L=A.lesson(),pl=planOf(L,A.mode()),total=pl.length?pl[pl.length-1].to:60,s=Math.floor((Date.now()-T0)/1000);el.firstChild&&(el.textContent='⏱ '+fmt2(Math.floor(s/60))+':'+fmt2(s%60)+' / '+total+':00');el.classList.toggle('over',s/60>total)},1000);
 function renderTeacher(p){var tp=document.getElementById('tp');if(!tp)return;if(!tpOpen){tp.hidden=true;return}tp.hidden=false;
