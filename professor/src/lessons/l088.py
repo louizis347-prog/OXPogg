@@ -75,7 +75,7 @@ PAGES = [
   retell=dict(prompt='Retell the conversation in your own words.', starters=['Nina wants to…', 'Raj has been to…', 'He has never…', 'In the end, Nina feels…']),
   teach=teach(goal='Ler o diálogo, perceber os chunks e recontar.', solo=['O estudante lê Nina; você lê Raj; depois troquem.', 'Reconto no nível que conseguir.'], group=['Leitura em duplas e troca de papéis.', 'Reconto em cadeia.'], answers=['Twice · Ramen · She has never traveled alone · Finland'], extra=['What would you ask Raj about Tokyo?', 'Is Nina ready for her trip?'], errors=[E('I have been in Japan.', 'I’ve been to Japan.'), E('Have you ever went to Japan?', 'Have you ever been to Japan?')], support=['Mostre a tradução (PT) após a 2ª leitura.'])),
  dict(t='rl_chunks', stage='notice', title='Useful expressions',
-  items=[dict(en='Have you ever…?', pt='Você já…?', use='Ask about someone’s life experience.', reg='neutral', alt='Also: **Did you ever…?** (very informal in US English)', pri=True),
+  items=[dict(en='Have you ever…?', pt='Você já…?', use='Ask about someone’s life experience.', reg='neutral', alt='Also: **Have you ever been to…?**', pri=True),
          dict(en='I’ve never…', pt='Eu nunca…', use='Say something you have not experienced.', reg='neutral', pri=True),
          dict(en='I’ve been to…', pt='Eu já estive em…', use='Say you have visited a place.', reg='neutral', alt='Also: **I’ve visited…**', pri=True),
          dict(en='twice / a few times', pt='duas vezes / algumas vezes', use='Say how many times something happened.', reg='neutral', pri=True),

@@ -14,7 +14,7 @@ DIALOG = dict(
  lines=[
   dict(who='Neighbor', en='Hi! **I’m Ken.** Are you new in the neighborhood?', pt='Oi! Eu sou o Ken. Você é nova no bairro?'),
   dict(who='Newcomer', en='Yes! **Nice to meet you.** I’m Mia, from Brazil.', pt='Sou! Prazer em conhecer você. Sou a Mia, do Brasil.'),
-  dict(who='Neighbor', en='Welcome! **Are you free** this afternoon? I know a good café.', pt='Bem-vinda! Você está livre esta tarde? Conheço um bom café.'),
+  dict(who='Neighbor', en='Welcome! **Are you free** this afternoon? I know a good coffee shop.', pt='Bem-vinda! Você está livre esta tarde? Conheço um bom café.'),
   dict(who='Newcomer', en='**Sounds good!** **How about** three o’clock? I need a jacket first.', pt='Combinado! Que tal às três? Preciso de uma jaqueta antes.'),
   dict(who='Neighbor', en='Sure. **Where is** the shop? It’s near the fountain.', pt='Claro. A loja fica perto da fonte.'),
   dict(who='Newcomer', en='Turn left at the bank, right? Is it far?', pt='Vire à esquerda no banco, certo? É longe?'),
