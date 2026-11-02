@@ -90,7 +90,7 @@ PAGES = [
  dict(t='rl_patterns', stage='gram', title='Grammar in context — speaking patterns',
   patterns=[dict(name='Suggesting and agreeing', formula='**Shall we / Let’s** + base verb', ex=['Shall we watch the show?', 'Let’s meet at the stage.', 'Shall we get some food first?'], main=True),
             dict(name='Linking topics', formula='**Speaking of / By the way,** + new topic', ex=['Speaking of music, have you ever heard it live?', 'By the way, did you hear about the festival?'], main=True),
-            dict(name='Combining the unit', formula='Comment → question → plan → close', ex=['Lovely evening, isn’t it? Are you from here?', 'Would you like to go? Sounds like a plan!'])],
+            dict(name='Combining the unit', formula='**Comment** → **question** → **plan** → **close**', ex=['Lovely evening, isn’t it? Are you from here?', 'Would you like to go? Sounds like a plan!'])],
   swap=dict(frame='Shall we {activity} at {time}?', tpt='Vamos {activity} às {time}?',
    slots=[dict(k='activity', label='Activity', opts=[dict(en='watch the show', pt='assistir ao show'), dict(en='get some food', pt='comer alguma coisa'), dict(en='meet at the stage', pt='nos encontrar no palco')]),
           dict(k='time', label='Time', opts=[dict(en='seven', pt='sete'), dict(en='eight', pt='oito'), dict(en='quarter to eight', pt='oito menos quinze')])]),
