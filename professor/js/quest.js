@@ -172,5 +172,5 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
 }
 var prevReg=window.RL_REGISTER;window.RL_REGISTER=function(R,API){if(prevReg)prevReg(R,API);quest(R,API)};
 function addStrip(p){if(!p||!p.art||!p.art.rs||!window.RS||/^(q_cover|q_wrap)$/.test(p.t))return;var b=document.querySelector('.pg .pb');if(!b||b.querySelector('.qstrip'))return;var d=document.createElement('div');d.className='qstrip';d.innerHTML=stg(p.art,'strip');b.insertBefore(d,b.firstChild)}
-var prevDraw=window.RL_ONDRAW;window.RL_ONDRAW=function(p,i,pages){if(prevDraw)prevDraw(p,i,pages);try{drawGameBar(p);drawHint(p);addStrip(p)}catch(e){console.error(e)}};
+var prevDraw=window.RL_ONDRAW;window.RL_ONDRAW=function(p,i,pages){if(prevDraw)prevDraw(p,i,pages);if(document.body.classList.contains('quest-l1'))return;try{drawGameBar(p);drawHint(p);addStrip(p)}catch(e){console.error(e)}};
 })();
