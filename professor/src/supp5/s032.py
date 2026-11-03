@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 32: Water, please + regular Cheers! (Pat-a-Cake)."""
+"""Suplemento Quest v5 · aula 32: Water, please + regular Yes, Please! No, Thanks! (Mary Poppins)."""
 SUPP = {
- 'reg': 12,
+ 'reg': 19,
  'badge': {'icon': '💧', 'name': 'Table Talk Star', 'desc': 'Ask for water, ask for time and enjoy your meal in English'},
  'culture': {
   'hook': 'In many American restaurants, the first thing a server does is bring water. Learn what to say about ice, time and the menu, so you feel relaxed at the table.',
@@ -9,7 +9,7 @@ SUPP = {
    {'s': 'You must order your food as soon as you sit down.', 'ans': False, 'why': 'You can say “Not yet, five more minutes.” Servers expect it.'},
    {'s': 'The Rock and Roll Hall of Fame is in Cleveland, Ohio.', 'ans': True, 'why': 'Yes, the museum opened in Cleveland in 1995.'},
    {'s': 'In the USA, a glass of water usually comes without ice.', 'ans': False, 'why': 'Ice water is the usual style, so people ask for “no ice” when they want it.'},
-   {'s': '“Pat-a-Cake” is an English nursery rhyme.', 'ans': True, 'why': 'It is an old rhyme that children say while they clap.'}],
+   {'s': '“Mary Poppins” is a 1964 Disney musical film with Julie Andrews.', 'ans': True, 'why': 'Mary is a magic nanny who arrives in London with an umbrella.'}],
   'wild': [
    {'kind': 'Drink menu', 'lines': ['**Water**  free', '**Lemonade**  $3', '**Iced tea**  $3 · free refills'], 'decode': {'q': 'Which drink is free?', 'opts': ['Water', 'Lemonade', 'Iced tea'], 'ans': 0, 'why': 'The menu says “Water: free”.'}},
    {'kind': 'Table card', 'lines': ['Ready to order? Wave to your server.', 'Need more time? No problem!', 'Enjoy your meal!'], 'decode': {'q': 'What can you do if you need more time?', 'opts': ['Order now', 'Say you need more time', 'Leave'], 'ans': 1, 'why': '“Need more time? No problem!”'}}],
@@ -17,7 +17,7 @@ SUPP = {
   'quiz': [
    {'q': 'You do not want ice in your water. You say…', 'opts': ['No ice, please.', 'Ice no.', 'I am without ice.'], 'ans': 0, 'why': 'No ice, please is short and polite.'},
    {'q': 'You are not ready to order. You say…', 'opts': ['Not yet. Five more minutes.', 'I do not like food.', 'Go away.'], 'ans': 0, 'why': 'Say it and the server will wait.'},
-   {'q': 'At the end of the meal the server says “Enjoy your meal!” when…', 'opts': ['the food comes to the table', 'you leave', 'you pay'], 'ans': 0, 'why': 'It is said when the food arrives.'}]},
+   {'q': 'The server says “Enjoy your meal!” when…', 'opts': ['the food comes to the table', 'you leave', 'you pay'], 'ans': 0, 'why': 'It is said when the food arrives.'}]},
  'reading': {
   'genre': 'Diary',
   'title': 'Dinner in Cleveland',
@@ -25,14 +25,14 @@ SUPP = {
    'Tonight I am in **Cleveland** with my friend Pete. We want dinner. The restaurant is warm, and the room smells great.',
    'A server named Maya comes to our table. She says, “Hi! **Can I get you something to drink?**” I say, “**Just water, please.**” She asks, “**With ice?**” “**No ice, please**,” I say. She brings the glass quickly. “**Here you go.** Ready to order?”',
    'Pete and I are not ready. I say, “**Not yet. Five more minutes.**” Maya smiles. “**No problem. Take your time.**” We read the menu and look at the napkin, the fork and the spoon on the table. They are all ready, and so are we.',
-   'Then the food comes. I have soup and a sandwich. It is hot and delicious! A little baby at the next table claps her hands. Pete says, “It reminds me of the rhyme Pat-a-Cake!” We laugh.',
+   'Then the food comes. I have soup and a sandwich. It is hot and delicious! Pete has some bread. “Would you like some more?” he asks. “Yes, please!” I say. Pete smiles. “It reminds me of Mary Poppins: ‘A spoonful of sugar helps the medicine go down.’” We laugh.',
    'Pete lifts his glass. “**Cheers!**” he says. “**Enjoy your meal**,” Maya says. I say, “Thank you!” Dinner is simple, but it is perfect.'],
   'glossary': [{'w': 'server', 'pt': 'garçom/garçonete'}, {'w': 'ice', 'pt': 'gelo'}, {'w': 'glass', 'pt': 'copo de vidro'}, {'w': 'menu', 'pt': 'cardápio'}, {'w': 'napkin', 'pt': 'guardanapo'}, {'w': 'fork', 'pt': 'garfo'}, {'w': 'spoon', 'pt': 'colher'}, {'w': 'soup', 'pt': 'sopa'}, {'w': 'delicious', 'pt': 'delicioso'}],
   'fast': {'q': 'What is this diary about?', 'opts': ['A simple dinner in a restaurant', 'A day at school', 'A holiday at the beach'], 'ans': 0, 'why': 'The writer and Pete have dinner in Cleveland.'},
   'scan': [{'q': 'What is the server’s name?', 'ans': 'Maya', 'alt': ['maya']}, {'q': 'What does the writer drink?', 'ans': 'water', 'alt': ['just water']}, {'q': 'What food does the writer have?', 'ans': 'soup and a sandwich', 'alt': ['soup', 'a sandwich', 'sandwich']}],
   'tf': [{'s': 'The writer wants ice in the water.', 'ans': False, 'why': 'The writer says “No ice, please.”'}, {'s': 'They need more time before ordering.', 'ans': True, 'why': '“Not yet. Five more minutes.”'}, {'s': 'Pete is the server.', 'ans': False, 'why': 'Maya is the server. Pete is a friend.'}, {'s': 'Pete says “Cheers!”', 'ans': True, 'why': 'He lifts his glass and says Cheers.'}],
   'order': ['Maya asks about a drink.', 'The writer asks for water with no ice.', 'They ask for five more minutes.', 'The food comes.', 'Pete says Cheers.'],
-  'ctx': [{'sent': 'Take your time. We are not in a hurry.', 'w': 'in a hurry', 'opts': ['fast because of time', 'happy', 'sleepy'], 'ans': 0, 'why': 'In a hurry = needing to be fast.'}, {'sent': 'The soup is hot and delicious.', 'w': 'delicious', 'opts': ['very tasty', 'very cold', 'very small'], 'ans': 0, 'why': 'Delicious = tastes very good.'}, {'sent': 'A baby claps her hands.', 'w': 'claps', 'opts': ['hits hands together', 'cries', 'runs'], 'ans': 0, 'why': 'Clap = hit your hands together.'}],
+  'ctx': [{'sent': 'Take your time. We are not in a hurry.', 'w': 'in a hurry', 'opts': ['fast because of time', 'happy', 'sleepy'], 'ans': 0, 'why': 'In a hurry = needing to be fast.'}, {'sent': 'The soup is hot and delicious.', 'w': 'delicious', 'opts': ['very tasty', 'very cold', 'very small'], 'ans': 0, 'why': 'Delicious = tastes very good.'}, {'sent': 'Would you like some more bread?', 'w': 'more', 'opts': ['an extra amount', 'less', 'none'], 'ans': 0, 'why': 'More = an extra amount.'}],
   'chunkHunt': ['Just water, please.', 'No ice, please.', 'Not yet. Five more minutes.', 'Enjoy your meal!'],
   'think': 'What do you drink at dinner? Do you like ice in your drink?'},
  'convo': {'npc': {'name': 'Maya'}, 'story': 'You are at a restaurant in Cleveland. Maya is your server. Order a drink and ask for time.', 'turns': [

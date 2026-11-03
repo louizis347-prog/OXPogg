@@ -7,7 +7,7 @@ SUPP = {
   'hook': 'In the USA, birthdays are a big deal, but asking an adult “How old are you?” can feel private. Learn when the question is polite.',
   'mythfact': [
    {'s': 'In English, you say “I have 30 years”.', 'ans': False, 'why': 'English uses be: “I’m 30.”'},
-   {'s': 'In every US state, the legal drinking age is 21.', 'ans': True, 'why': 'It is a national rule, so it is 21 in all states.'},
+   {'s': 'In the USA, the legal drinking age is 21 in all states.', 'ans': True, 'why': 'A national law pushes every state to set 21 as the age to buy alcohol, with a few narrow exceptions.'},
    {'s': 'Houston is where NASA’s mission control for human spaceflight is.', 'ans': True, 'why': 'The Johnson Space Center is in Houston. “Houston, we’ve had a problem” is from Apollo 13.'},
    {'s': 'Asking a stranger her age is always polite.', 'ans': False, 'why': 'Many adults think it is private. With children and friends, it is fine.'},
    {'s': 'People often sing “Happy Birthday to You” with a cake.', 'ans': True, 'why': 'The song and a cake with candles are a US tradition.'},
@@ -27,7 +27,7 @@ SUPP = {
    {'q': 'Your friend’s birthday is tomorrow. You say…', 'opts': ['Happy early birthday!', 'Happy birthday last year!', 'Good birthday!'], 'ans': 0, 'why': 'Happy early birthday is natural before the day.'},
    {'q': 'Which month is after May?', 'opts': ['June', 'April', 'March'], 'ans': 0, 'why': 'Order: May, June.'},
   ],
-  'polite': 'Say **“Happy birthday!”** with a smile, and add **“Many happy returns!”** only in UK English. In the USA, a simple wish is perfect.',
+  'polite': 'Say **“Happy birthday!”** with a smile, and add **“Many happy returns!”**, which sounds more British. In the USA, a simple wish is perfect.',
  },
  'reading': {
   'genre': 'Diary entry',

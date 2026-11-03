@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 41: Cooking at home + regular Let's Cook! (MasterChef Junior)."""
+"""Suplemento Quest v5 · aula 41: Cooking at home + regular Some more pancakes? (The Magic Porridge Pot)."""
 SUPP = {
- 'reg': 80,
+ 'reg': 136,
  'badge': {'icon': '🍝', 'name': 'Kitchen Helper', 'desc': 'Cook and give simple steps in English'},
  'sticker': {'cat': 'Everyday culture', 'title': 'The American Home Kitchen', 'sub': 'Cups, ovens and hot pans'},
  'culture': {
@@ -25,7 +25,7 @@ SUPP = {
    'On Sunday night, my roommate Aaron and I cooked together in our small kitchen. He opened the fridge and asked, “**What are you making?**” I smiled and said, “**Pasta with tomato sauce**.”',
    'Aaron wanted to help. “**Can I help?**” he asked. “**Sure**,” I said. “**Cut the onions, please**.” He took a knife and a cutting board. “**How many?**” he asked. “**Just one**,” I said. “Then **add the tomatoes**.”',
    'I put a big pan on the stove and added some oil and a little salt. The kitchen smelled so good! Aaron came near the stove, and I said, “**Careful! The pan is hot**.” He stepped back and laughed.',
-   'My family always says that cooking is like a game. First you cut, then you fry, next you add, and finally you taste. In my country we cook rice and beans, but tonight we made pasta, and it was a lot of fun.',
+   'My family always says that cooking is like a game. First you cut, then you fry, next you add, and finally you taste. I thought about the fairy tale The Magic Porridge Pot, with a small pot that cooks porridge by magic. We have no magic pot, but tonight we made pasta, and it was a lot of fun.',
    'When the sauce was ready, I put the pasta on two plates. Aaron looked at his plate and said, “**Dinner is served!**” We sat at the small table and ate slowly. The food was simple, but it was delicious.'],
   'glossary': [{'w': 'fridge', 'pt': 'geladeira'}, {'w': 'knife', 'pt': 'faca'}, {'w': 'onions', 'pt': 'cebolas'}, {'w': 'pan', 'pt': 'panela/frigideira'}, {'w': 'stove', 'pt': 'fogão'}, {'w': 'salt', 'pt': 'sal'}, {'w': 'sauce', 'pt': 'molho'}, {'w': 'plates', 'pt': 'pratos'}, {'w': 'delicious', 'pt': 'delicioso'}],
   'fast': {'q': 'What is this text about?', 'opts': ['Two roommates cooking pasta', 'A trip to a restaurant', 'A day at school'], 'ans': 0, 'why': 'The writer and Aaron cook pasta at home.'},

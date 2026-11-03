@@ -11,7 +11,7 @@ SUPP = {
    {'s': 'Americans usually say the temperature in Celsius.', 'ans': False, 'why': 'The USA mostly uses Fahrenheit, not Celsius.'},
    {'s': 'Water freezes at 32 degrees Fahrenheit.', 'ans': True, 'why': '32°F is the same as 0°C.'},
    {'s': 'The weather is the same in every part of the USA.', 'ans': False, 'why': 'The USA is very big: Florida is warm and Alaska is very cold.'},
-   {'s': 'Chicago has the nickname “the Windy City”.', 'ans': True, 'why': 'Chicago is famous by this nickname, and the wind off Lake Michigan is real.'}],
+   {'s': 'Chicago has the nickname “the Windy City”.', 'ans': True, 'why': 'Chicago is famous by this nickname. It is often linked to the wind off Lake Michigan, but some people say it was about talkative politicians.'}],
   'wild': [
    {'kind': 'Weather app', 'lines': ['**Today** · Sunny · High 82°F', '**Tonight** · Clear · Low 64°F', '**Tomorrow** · Rain · High 70°F'], 'decode': {'q': 'What is the weather tomorrow?', 'opts': ['Rain', 'Sunny', 'Snow'], 'ans': 0, 'why': 'The app says “Tomorrow · Rain”.'}},
    {'kind': 'Text message', 'lines': ['Brr! It’s freezing today.', 'Bring a warm coat and a hat.', 'See you at the park at 3!'], 'decode': {'q': 'What should you bring?', 'opts': ['A swimsuit', 'A warm coat and a hat', 'An umbrella'], 'ans': 1, 'why': '“Bring a warm coat and a hat.”'}}],

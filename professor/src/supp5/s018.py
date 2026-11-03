@@ -11,13 +11,13 @@ SUPP = {
         'facts': [
             {'vis': 'prop:coin', 'big': 'Soccer', 'label': 'What the USA calls futebol', 'sub': 'In the USA, “football” usually means American football.'},
             {'vis': 'prop:clock', 'big': 'Saturday', 'label': 'Weekend sports', 'sub': 'Many children play soccer in a local league on Saturday morning.'},
-            {'vis': 'prop:umbrella', 'big': 'April', 'label': 'The Boston Marathon', 'sub': 'It is held every April in Boston, Massachusetts.'},
+            {'vis': 'prop:umbrella', 'big': 'April', 'label': 'The Boston Marathon', 'sub': 'It is usually held in April in Boston, Massachusetts.'},
             {'vis': 'prop:bag', 'big': 'I’m in!', 'label': 'Accept an invitation', 'sub': 'Also: “Count me in.”'},
         ],
         'polite': 'To invite someone, say **Do you want to…?** To accept, say **Sure!** or **I’m in!**',
         'mythfact': [
             {'s': 'In the USA, “football” usually means American football.', 'ans': True, 'why': 'The sport with a round ball is called soccer.'},
-            {'s': 'The Boston Marathon is held in April.', 'ans': True, 'why': 'It is held every year in April, on Patriots’ Day.'},
+            {'s': 'The Boston Marathon is held in April.', 'ans': True, 'why': 'It is usually held in April, on Patriots’ Day (the third Monday of April).'},
             {'s': 'People in the USA call soccer “football”.', 'ans': False, 'why': 'They call it soccer.'},
             {'s': 'You can say “I enjoy reading” to talk about a hobby.', 'ans': True, 'why': 'Enjoy + verb-ing is correct.'},
             {'s': 'The poem “The Swing” was written by Robert Louis Stevenson.', 'ans': True, 'why': 'It was published in 1885 in “A Child’s Garden of Verses”.'},

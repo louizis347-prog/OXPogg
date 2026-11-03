@@ -14,7 +14,7 @@ SUPP = {
   'wild': [
    {'kind': 'Machine screen', 'lines': ['**Add value**', 'Choose an amount: $10 · $20 · $50', 'Pay with cash or card'], 'decode': {'q': 'What can you choose first?', 'opts': ['An amount', 'A color', 'A seat'], 'ans': 0, 'why': '“Choose an amount.”'}},
    {'kind': 'Receipt', 'lines': ['Card reloaded: $20.00', 'Cash paid: $20.00', 'Thank you!'], 'decode': {'q': 'How did the customer pay?', 'opts': ['Cash', 'Credit card', 'Check'], 'ans': 0, 'why': '“Cash paid: $20.00.”'}}],
-  'compare': {'br': 'In Brazil many cities use cards such as Bilhete Único, and you often recharge them at a booth or an app.', 'us': 'In the USA each region has its own card, and you can often add money at a machine or online.', 'tip': 'Check your balance before you travel so you do not have a problem at the reader.', 'ask': 'How much money do you usually add to your card? Say it in English.'},
+  'compare': {'br': 'In Brazil, many cities have their own transit card (São Paulo has the Bilhete Único), and you can often recharge it at a booth or an app.', 'us': 'In the USA each region has its own card, and you can often add money at a machine or online.', 'tip': 'Check your balance before you travel so you do not have a problem at the reader.', 'ask': 'How much money do you usually add to your card? Say it in English.'},
   'quiz': [
    {'q': 'The clerk asks “Cash or card?” You want to pay cash. You say…', 'opts': ['Cash, please.', 'I have cash me.', 'Card is cash.'], 'ans': 0, 'why': 'Answer directly: Cash, please.'},
    {'q': 'How do you use a transit card?', 'opts': ['Tap it on the reader', 'Show it to a stranger', 'Cut it in half'], 'ans': 0, 'why': 'Tap on the reader.'},

@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 36: Burger combo + regular Have Breakfast, Have Lunch (The Very Hungry Caterpillar)."""
+"""Suplemento Quest v5 · aula 36: Burger combo + regular Thanksgiving dinner (A Charlie Brown Thanksgiving)."""
 SUPP = {
- 'reg': 46,
+ 'reg': 223,
  'badge': {'icon': '🍔', 'name': 'Combo Champion', 'desc': 'Order a burger combo and say no thanks politely in English'},
  'culture': {
   'hook': 'In a burger place in Milwaukee, you say your order, hear one question about a combo and move on. Learn how to order fast food without stress.',
@@ -9,7 +9,7 @@ SUPP = {
    {'s': 'In the USA, people always call a soft drink “cola”.', 'ans': False, 'why': 'Many say “soda”, and some regions say “pop” or the brand name.'},
    {'s': 'Milwaukee is in the state of Wisconsin.', 'ans': True, 'why': 'It is the biggest city in Wisconsin, on Lake Michigan.'},
    {'s': 'It is rude to say “No, thanks. That’s all.”', 'ans': False, 'why': 'It is a normal and polite way to end an order.'},
-   {'s': '“The Very Hungry Caterpillar” was written by Eric Carle.', 'ans': True, 'why': 'The picture book came out in 1969.'}],
+   {'s': '“A Charlie Brown Thanksgiving” is an animated TV special with the Peanuts characters.', 'ans': True, 'why': 'It is based on Charles Schulz’s Peanuts and first aired in 1973.'}],
   'wild': [
    {'kind': 'Menu board', 'lines': ['**Cheeseburger**  $6', '**Combo** (burger + fries + drink)  $9', '**Extra ketchup**  free'], 'decode': {'q': 'How much more is the combo than the burger alone?', 'opts': ['$3', '$9', '$6'], 'ans': 0, 'why': '$9 - $6 = $3.'}},
    {'kind': 'Order screen', 'lines': ['Your order: 1 Cheeseburger Combo', 'Drink: Cola', 'Order number: 47'], 'decode': {'q': 'What is the order number?', 'opts': ['47', '1', '9'], 'ans': 0, 'why': '“Order number: 47.”'}}],
@@ -22,11 +22,11 @@ SUPP = {
   'genre': 'Blog post',
   'title': 'My burger day',
   'text': [
-   'I am in **Milwaukee**, and I am very hungry. It is like the story of The Very Hungry Caterpillar: today I want to eat a lot! My friend Gus takes me to a burger place.',
+   'I am in **Milwaukee**, and I am very hungry. It is almost Thanksgiving, and I think about a big turkey dinner. Today, my friend Gus takes me to a burger place.',
    'The cashier, Malik, smiles. “**Welcome! What can I get you?**” I say, “**A cheeseburger, please.**” He asks, “**Do you want a combo?**” I am not sure, so I ask, “**What comes with it?**” “**Fries and a drink**,” he says.',
    'That sounds good. “**OK. A combo, and a cola.**” “**Anything else?**” “**No, thanks. That’s all.**” Gus laughs because he wants lemonade and extra ketchup. The tray is full: a burger, fries and a cold drink.',
    '“**Enjoy your burger!**” Malik says. I take a big bite. It is hot and tasty. Gus says, “**Let’s supersize it!**” but I say, “No, I feel full.” That is a good ending: not too much, not too little.',
-   'The caterpillar in the book becomes a butterfly after a big meal. I just became a very happy customer. Next time I will say, “I’m so hungry!” again, but maybe I will order a salad.'],
+   'The TV special A Charlie Brown Thanksgiving is about friends and a dinner, and it talks about being thankful. I am grateful for Gus and for a good burger. Next time I will say, “I’m so hungry!” again, but maybe I will order a salad.'],
   'glossary': [{'w': 'hungry', 'pt': 'com fome'}, {'w': 'cashier', 'pt': 'caixa (atendente)'}, {'w': 'cheeseburger', 'pt': 'hambúrguer com queijo'}, {'w': 'combo', 'pt': 'combo'}, {'w': 'fries', 'pt': 'batata frita'}, {'w': 'drink', 'pt': 'bebida'}, {'w': 'lemonade', 'pt': 'limonada'}, {'w': 'ketchup', 'pt': 'ketchup'}, {'w': 'full', 'pt': 'satisfeito'}],
   'fast': {'q': 'What is this text about?', 'opts': ['Ordering a burger combo', 'Going to school', 'Playing baseball'], 'ans': 0, 'why': 'The writer orders a cheeseburger combo.'},
   'scan': [{'q': 'What does the combo come with?', 'ans': 'fries and a drink', 'alt': ['fries', 'a drink', 'fries and drink']}, {'q': 'What drink does the writer order?', 'ans': 'cola', 'alt': ['a cola']}, {'q': 'Who wants lemonade?', 'ans': 'Gus', 'alt': ['gus']}],

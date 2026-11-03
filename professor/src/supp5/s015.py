@@ -28,7 +28,7 @@ SUPP = {
         ],
         'compare': {
             'br': 'In Brazil many people laugh in texts with “kkkk” and use voice messages a lot.',
-            'us': 'In the USA people often write “LOL” or “haha” and usually type short messages instead of voice notes.',
+            'us': 'In the USA people often write “LOL” or “haha” and often type short messages, though voice notes are common too.',
             'tip': 'Keep texts short and clear: where, when and who.',
             'ask': 'Write a text to a friend in English: invite him or her to eat pizza tonight.',
         },

@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 38: The check, please + regular Split the Check (Check, Please!)."""
+"""Suplemento Quest v5 · aula 38: The check, please + regular Dollars and Cents (Silas Marner)."""
 SUPP = {
- 'reg': 13,
+ 'reg': 100,
  'badge': {'icon': '💳', 'name': 'Check Pro', 'desc': 'Ask for the check, split it and pay by card in English'},
  'culture': {
   'hook': 'In the USA, the server does not bring the bill until you ask for it. Learn to say “The check, please” and to split it with friends.',
@@ -25,9 +25,9 @@ SUPP = {
    'It is Friday night in **Albuquerque**. Raúl and his friend Leila finish dinner at a small restaurant. They laugh because the dessert was huge. Now it is time to pay.',
    'Leila lifts her hand. “**Excuse me. The check, please.**” The server comes with a smile. “**Sure. Together or separate?**” Leila answers, “**Together, please.**” The server brings the paper. “**Here you go. It’s forty dollars.**”',
    '“**I got this**,” says Raúl. “No, **let me**,” says Leila. They are both kind, so they decide to **split it**. Leila asks, “**Can I pay by card?**” “**Yes, of course**,” the server says. “**Here’s my card**,” says Leila.',
-   'Then they think about the webcomic Check, Please! The title is a restaurant phrase, and the story is about friends. Friends often say “Half and half” when the check comes. It is a simple way to be fair.',
+   'Then they think about the novel Silas Marner. Silas loves his gold coins, but a little girl, Eppie, becomes his true treasure. “Gold isn’t everything,” says Raúl. Friends often say “Half and half” when the check comes. It is a simple way to be fair.',
    'At the door, the server says, “**Thank you, come again!**” Raúl smiles. “**Next one’s on me**,” he says. They walk home slowly under the warm night sky, happy and full.'],
-  'glossary': [{'w': 'check', 'pt': 'conta'}, {'w': 'server', 'pt': 'garçom'}, {'w': 'together', 'pt': 'junto'}, {'w': 'separate', 'pt': 'separado'}, {'w': 'card', 'pt': 'cartão'}, {'w': 'split', 'pt': 'dividir'}, {'w': 'dessert', 'pt': 'sobremesa'}, {'w': 'webcomic', 'pt': 'história em quadrinhos online'}, {'w': 'fair', 'pt': 'justo'}],
+  'glossary': [{'w': 'check', 'pt': 'conta'}, {'w': 'server', 'pt': 'garçom'}, {'w': 'together', 'pt': 'junto'}, {'w': 'separate', 'pt': 'separado'}, {'w': 'card', 'pt': 'cartão'}, {'w': 'split', 'pt': 'dividir'}, {'w': 'dessert', 'pt': 'sobremesa'}, {'w': 'novel', 'pt': 'romance (livro)'}, {'w': 'fair', 'pt': 'justo'}],
   'fast': {'q': 'What is this story about?', 'opts': ['Two friends pay for dinner', 'A school lesson', 'A day at the beach'], 'ans': 0, 'why': 'Raúl and Leila pay the check after dinner.'},
   'scan': [{'q': 'What city are they in?', 'ans': 'Albuquerque', 'alt': ['albuquerque']}, {'q': 'How much is the check?', 'ans': '40 dollars', 'alt': ['forty dollars', '$40', '40']}, {'q': 'How does Leila pay?', 'ans': 'by card', 'alt': ['card', 'with a card']}],
   'tf': [{'s': 'They ask for separate checks.', 'ans': False, 'why': 'Leila says “Together, please.”'}, {'s': 'Leila pays by card.', 'ans': True, 'why': '“Here’s my card.”'}, {'s': 'The dessert was small.', 'ans': False, 'why': 'The dessert was huge.'}, {'s': 'Raúl says the next dinner is on him.', 'ans': True, 'why': '“Next one’s on me.”'}],

@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 34: Where is the milk? + regular At the Supermarket (Supermarket Flowers)."""
+"""Suplemento Quest v5 · aula 34: Where is the milk? + regular A Jacket in the Shop (Baa, Baa, Black Sheep)."""
 SUPP = {
- 'reg': 70,
+ 'reg': 21,
  'badge': {'icon': '🛒', 'name': 'Aisle Explorer', 'desc': 'Find products and give directions in a store in English'},
  'culture': {
   'hook': 'A big American supermarket can feel like a small town, with numbered aisles and signs everywhere. Learn how to find milk, bread and rice, and how to ask for help.',
@@ -25,7 +25,7 @@ SUPP = {
    'Today I went shopping in **Honolulu**. The supermarket was huge, and I felt lost. I needed milk, bread and rice, but I did not know where they were.',
    'I saw a young worker. “**Excuse me, where is the milk?**” I asked. “**It’s in aisle three**,” she said. Then I asked, “**And where is the bread?**” “**It’s next to the milk**,” she said. That was easy!',
    'I pushed my cart and found the milk. It was cold and fresh. Then I asked, “**Do you have rice?**” She smiled. “**Yes, in aisle five, on the left.**” “**Thank you!**” I said. “**You’re welcome**,” she answered. “**Happy shopping!**”',
-   'I thought about the song Supermarket Flowers by Ed Sheeran. The title is about a simple bunch of flowers from a supermarket. A big feeling can start in a very ordinary place. Today, my ordinary place was the aisle with the rice.',
+   'I thought about the old rhyme Baa, Baa, Black Sheep. The sheep has “three bags full” of wool. My basket was not full of wool, but it was full of food. A simple shopping day can feel like a little song.',
    'My basket was ready: milk, bread and rice. I walked to the cashier, paid and went home. Next time I will not be lost. I know the words: aisle, left, right, next to.'],
   'glossary': [{'w': 'aisle', 'pt': 'corredor'}, {'w': 'lost', 'pt': 'perdido'}, {'w': 'huge', 'pt': 'enorme'}, {'w': 'worker', 'pt': 'funcionária'}, {'w': 'cart', 'pt': 'carrinho'}, {'w': 'left', 'pt': 'esquerda'}, {'w': 'rice', 'pt': 'arroz'}, {'w': 'basket', 'pt': 'cesta'}, {'w': 'cashier', 'pt': 'caixa'}],
   'fast': {'q': 'What is the writer doing?', 'opts': ['Finding things in a supermarket', 'Cooking dinner', 'Taking a bus'], 'ans': 0, 'why': 'The writer asks for milk, bread and rice.'},

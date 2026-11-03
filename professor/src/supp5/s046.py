@@ -14,15 +14,15 @@ SUPP = {
   'wild': [
    {'kind': 'Bus stop sign', 'lines': ['**Route 12 · Downtown**', 'Every 15 minutes', 'Fare: $2.50 · Exact change or card'], 'decode': {'q': 'How often does the bus come?', 'opts': ['Every 15 minutes', 'Every hour', 'Every 2 minutes'], 'ans': 0, 'why': '“Every 15 minutes.”'}},
    {'kind': 'On-bus sign', 'lines': ['**Please offer your seat**', 'to people who need it.', 'Press the button to request a stop.'], 'decode': {'q': 'How do you ask the bus to stop?', 'opts': ['Press the button', 'Shout', 'Open the door'], 'ans': 0, 'why': '“Press the button to request a stop.”'}}],
-  'compare': {'br': 'In Brazil many people pay a cobrador or use a card at the turnstile, and buses can get very full.', 'us': 'In the USA you usually pay the driver at the front or tap a card, and you press the button to get off.', 'tip': 'Keep your card or small bills ready before the bus arrives.', 'ask': 'How do you pay for the bus in your city? Say it in English.'},
+  'compare': {'br': 'In Brazil, many people use a card at the turnstile (some lines still have a cobrador), and buses can get very full.', 'us': 'In the USA you usually pay the driver at the front or tap a card, and you press the button to get off.', 'tip': 'Keep your card or small bills ready before the bus arrives.', 'ask': 'How do you pay for the bus in your city? Say it in English.'},
   'quiz': [
    {'q': 'You want to know the price. You say…', 'opts': ['How much is the fare?', 'How is the bus money?', 'Fare is how?'], 'ans': 0, 'why': 'Fare = the price of the ride.'},
    {'q': 'Does this bus go downtown?', 'opts': ['A question to the driver', 'A bus brand', 'A kind of ticket'], 'ans': 0, 'why': 'It asks if the bus goes to the center.'},
    {'q': 'How do you ask the bus to stop?', 'opts': ['Press the stop button', 'Call the driver’s name', 'Stand at the door'], 'ans': 0, 'why': 'The button tells the driver.'}]},
  'reading': {
-  'genre': 'Diary entry', 'title': 'Waiting for the bus in Washington',
+  'genre': 'Diary entry', 'title': 'Waiting for the bus in the city',
   'text': [
-   'This morning I waited at a bus stop in Washington. A man named Ethan was next to me. He looked at the sign, then he looked at me. “**Excuse me, does this bus go downtown?**” he asked.',
+   'This morning I waited at a bus stop in the city. A man named Ethan was next to me. He looked at the sign, then he looked at me. “**Excuse me, does this bus go downtown?**” he asked.',
    '“**Yes, it goes downtown**,” I said. “**How much is the fare?**” he asked. “**Two dollars and fifty cents**,” I answered. “**Do I pay the driver?**” “**Yes, or use a card**.”',
    'Then the bus came. It was blue and white, and it was almost empty. We got on, and Ethan put the money in the machine. “**How long does it take?**” he asked. “**About twenty minutes**,” I said.',
    'We sat near a window. The city moved past us: buildings, trees, people with coffee. I like buses because I can look outside and think. Ethan took a small notebook and wrote the name of each street.',
@@ -36,7 +36,7 @@ SUPP = {
   'ctx': [{'sent': 'The bus was almost empty.', 'w': 'empty', 'opts': ['with few people', 'very loud', 'very old'], 'ans': 0, 'why': 'Empty = nobody or almost nobody.'}, {'sent': 'The city moved past us.', 'w': 'past', 'opts': ['by', 'under', 'into'], 'ans': 0, 'why': 'Past = going by.'}, {'sent': 'A simple talk made my morning better.', 'w': 'simple', 'opts': ['easy and short', 'very expensive', 'very loud'], 'ans': 0, 'why': 'Simple = not complicated.'}],
   'chunkHunt': ['Does this bus go downtown?', 'How much is the fare?', 'Do I pay the driver?', 'How long does it take?', 'Enjoy your trip!'],
   'think': 'Do you take the bus? Tell a friend how to pay and how to stop it.'},
- 'convo': {'npc': {'name': 'Ethan'}, 'story': 'You are at a bus stop in Washington. Ethan is new in the city and asks you questions.', 'turns': [
+ 'convo': {'npc': {'name': 'Ethan'}, 'story': 'You are at a bus stop in the city. Ethan is new in the city and asks you questions.', 'turns': [
   {'npc': 'Excuse me, does this bus go downtown?', 'pt': 'Com licença, este ônibus vai ao centro?', 'opts': [
    {'en': 'This bus go to downtown.', 'pt': 'Este ônibus vai para o centro.', 'ok': False, 'fb': 'It goes downtown (no to, with s).'},
    {'en': 'I like the bus.', 'pt': 'Eu gosto do ônibus.', 'ok': False, 'fb': 'Not an answer.'},

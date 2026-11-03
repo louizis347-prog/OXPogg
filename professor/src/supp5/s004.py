@@ -36,7 +36,7 @@ SUPP = {
    'My name is Daniel, and I live in Seattle. In my country, my name is easy. In English, people sometimes write “Danyel” or “Daniell”. So I learned to **spell** it.',
    'Last week I went to the gym. The woman at the desk asked, “**Can I have your name, please?**” I said, “**It’s Daniel**.” She asked, “**How do you spell that?**” I said, “**D-A-N-I-E-L**.” She smiled and said, “**Got it!**”',
    'Then she asked for my **phone number**. I said, “It’s five-five-five, one-two-three-four.” She wrote it down. “**Is that your cell phone?**” she asked. “**Yes, it is**,” I said. “You’re all set. **Have a nice day!**”',
-   'At home I remembered an old English rhyme, “A Was an Apple Pie”. It is from England and it is more than three hundred years old. Each **letter** of the **alphabet** does something to a pie: A bites it, B bakes it, C cuts it. Children learn the ABC with this rhyme.',
+   'At home I remembered an old English rhyme, “A Was an Apple Pie”. It is from England and it is very old: the first mention is from 1671. Each **letter** of the **alphabet** does something to a pie: A bites it, B bakes it, C cuts it. Children learn the ABC with this rhyme.',
    'Now I have a new habit. When people cannot hear a letter, I say, “B as in boy” or “D as in dog”. Spelling is not hard. It just needs time and a calm voice.',
   ],
   'glossary': [{'w': 'spell', 'pt': 'soletrar'}, {'w': 'phone number', 'pt': 'número de telefone'}, {'w': 'gym', 'pt': 'academia'}, {'w': 'desk', 'pt': 'balcão de recepção'}, {'w': 'wrote', 'pt': 'escreveu'}, {'w': 'cell phone', 'pt': 'celular'}, {'w': 'rhyme', 'pt': 'rima'}, {'w': 'letter', 'pt': 'letra'}, {'w': 'alphabet', 'pt': 'alfabeto'}, {'w': 'habit', 'pt': 'hábito'}],

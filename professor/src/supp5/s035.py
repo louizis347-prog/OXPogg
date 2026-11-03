@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 35: Fruit by the pound + regular Fresh Oranges, Please (Oranges and Lemons)."""
+"""Suplemento Quest v5 · aula 35: Fruit by the pound + regular What’s in the cupboard? (Old Mother Hubbard)."""
 SUPP = {
- 'reg': 48,
+ 'reg': 114,
  'badge': {'icon': '🍓', 'name': 'Market Master', 'desc': 'Buy fruit by the pound and understand prices in English'},
  'culture': {
   'hook': 'At a farmers market in San Diego, fruit is sold by the pound or by the box, and the seller often says “That’s eleven dollars.” Learn to buy fruit like a local.',
@@ -9,7 +9,7 @@ SUPP = {
    {'s': 'One pound is exactly one kilogram.', 'ans': False, 'why': 'One pound is about 0.45 kilograms, so a kilo is more than two pounds.'},
    {'s': 'A dozen means twelve.', 'ans': True, 'why': 'You can buy a dozen eggs or a dozen oranges.'},
    {'s': 'San Diego is in California.', 'ans': True, 'why': 'It is a coastal city in southern California.'},
-   {'s': '“Oranges and Lemons” is a rhyme about bells of London churches.', 'ans': True, 'why': 'The rhyme mentions St. Clement’s and other church bells in London.'}],
+   {'s': '“Old Mother Hubbard” is an English nursery rhyme about a woman and her dog.', 'ans': True, 'why': 'In the rhyme, she goes to the cupboard to get a bone for her dog, but the cupboard is bare.'}],
   'wild': [
    {'kind': 'Market sign', 'lines': ['**Apples**  $2 a pound', '**Strawberries**  $5 a box', '**Oranges**  $1 each'], 'decode': {'q': 'How much are 3 pounds of apples?', 'opts': ['$6', '$2', '$5'], 'ans': 0, 'why': '3 x $2 = $6.'}},
    {'kind': 'Receipt', 'lines': ['Apples 3 lb  $6.00', 'Strawberries 1 box  $5.00', 'Total  $11.00'], 'decode': {'q': 'What is the total?', 'opts': ['$11', '$6', '$5'], 'ans': 0, 'why': '$6 + $5 = $11.'}}],
@@ -25,9 +25,9 @@ SUPP = {
    'Every Saturday, my friend Lily goes to the farmers market in **San Diego**. The sun is warm, and the fruit is bright. Today I went with her.',
    'We stopped at a table full of apples. “**These apples look good**,” I said. The seller smiled. “**They’re fresh today. Two dollars a pound.**” I said, “**I’ll take three pounds.**” He put the apples on the scale. “**Okay. Anything else?**”',
    '“**Do you have strawberries?**” I asked. “**Yes. Five dollars a box.**” “**One box, please.**” “**That’s eleven dollars**,” he said. I paid, and he said, “**Enjoy your fruit!**” Lily laughed. “**What a steal!**” she said.',
-   'On my way home, I thought about the old rhyme Oranges and Lemons. It is a game for children, and it talks about the bells of London. The rhyme also has a market feeling: oranges, lemons, a pound of this, a dozen of that.',
+   'On my way home, I thought about the old rhyme Old Mother Hubbard. She goes to the cupboard to get a bone for her poor dog, but the cupboard is bare. Our bags were full of fruit, so we were lucky. No bare cupboard for us!',
    'At home, I washed the strawberries and put the apples in a bowl. They were sweet and cold. I think I will go back next Saturday. Shopping at a market is slow, friendly and delicious.'],
-  'glossary': [{'w': 'market', 'pt': 'feira'}, {'w': 'seller', 'pt': 'vendedor'}, {'w': 'pound', 'pt': 'libra'}, {'w': 'scale', 'pt': 'balança'}, {'w': 'box', 'pt': 'caixa'}, {'w': 'strawberries', 'pt': 'morangos'}, {'w': 'apples', 'pt': 'maçãs'}, {'w': 'dozen', 'pt': 'dúzia'}, {'w': 'bowl', 'pt': 'tigela'}],
+  'glossary': [{'w': 'market', 'pt': 'feira'}, {'w': 'seller', 'pt': 'vendedor'}, {'w': 'pound', 'pt': 'libra'}, {'w': 'scale', 'pt': 'balança'}, {'w': 'box', 'pt': 'caixa'}, {'w': 'strawberries', 'pt': 'morangos'}, {'w': 'apples', 'pt': 'maçãs'}, {'w': 'bare', 'pt': 'vazio'}, {'w': 'bowl', 'pt': 'tigela'}],
   'fast': {'q': 'What is this text about?', 'opts': ['Buying fruit at a market', 'Cooking a big dinner', 'Visiting a museum'], 'ans': 0, 'why': 'The writer buys apples and strawberries.'},
   'scan': [{'q': 'How much are the apples per pound?', 'ans': '2 dollars', 'alt': ['two dollars', '$2', '2']}, {'q': 'How many pounds of apples does the writer buy?', 'ans': 'three', 'alt': ['3', 'three pounds']}, {'q': 'How much is the total?', 'ans': '11 dollars', 'alt': ['eleven dollars', '$11', '11']}],
   'tf': [{'s': 'The writer goes to a market in San Diego.', 'ans': True, 'why': 'The first paragraph says this.'}, {'s': 'Strawberries cost two dollars a box.', 'ans': False, 'why': 'Strawberries are five dollars a box.'}, {'s': 'The seller puts the apples on a scale.', 'ans': True, 'why': 'He puts them on the scale to weigh them.'}, {'s': 'The writer never wants to go back.', 'ans': False, 'why': 'They want to go back next Saturday.'}],

@@ -12,7 +12,7 @@ SUPP = {
             {'vis': 'prop:clock', 'big': 'a.m. / p.m.', 'label': 'The 12-hour clock', 'sub': '7 a.m. = morning · 7 p.m. = evening. Most people say it this way every day.'},
             {'vis': 'prop:clock', 'big': '2:30', 'label': 'Two thirty', 'sub': 'Also “half past two”. 2:15 can be “quarter after two”.'},
             {'vis': 'prop:umbrella', 'big': 'Spring forward', 'label': 'Daylight saving time', 'sub': 'In most of the USA the clocks move one hour in March and again in November.'},
-            {'vis': 'prop:bag', 'big': '4 zones', 'label': 'Time zones in the lower 48 states', 'sub': 'Eastern, Central, Mountain and Pacific. Portland is on Pacific time.'},
+            {'vis': 'prop:bag', 'big': '4 zones', 'label': 'Time zones in the lower 48 states', 'sub': 'Eastern, Central, Mountain and Pacific. Portland, Oregon, is on Pacific time.'},
         ],
         'polite': 'Start with **Excuse me** when you ask a stranger the time. Then say **Thanks!**',
         'mythfact': [

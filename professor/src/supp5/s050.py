@@ -8,7 +8,7 @@ SUPP = {
   'polite': 'Say **“Pump number three, please”** if you pay inside. Many people simply pay at the pump with a card.',
   'mythfact': [
    {'s': 'In the USA gas is sold by the gallon.', 'ans': True, 'why': 'Prices on the big sign are per gallon, not per liter.'},
-   {'s': 'Most gas stations in the USA have a free attendant who pumps for you.', 'ans': False, 'why': 'Most people pump their own gas. New Jersey is a well-known exception.'},
+   {'s': 'Most gas stations in the USA have a free attendant who pumps for you.', 'ans': False, 'why': 'Most people pump their own gas. New Jersey is a well-known exception, and Oregon has allowed self-service only recently.'},
    {'s': 'Regular and premium are two kinds of gasoline.', 'ans': True, 'why': 'Premium has a higher octane number and costs more.'},
    {'s': 'A gas station only sells gas.', 'ans': False, 'why': 'Many also sell water, snacks and coffee, and have a restroom.'}],
   'wild': [
