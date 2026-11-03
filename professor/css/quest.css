@@ -107,3 +107,9 @@ body.qfs .app{max-width:none;padding:8px 14px 84px}
 /* aba minimizada discreta: só uma alça fina no topo */
 #qtop .qtop-h{font-size:0;line-height:0;width:96px;height:6px;padding:0;border-radius:0 0 8px 8px;opacity:.55}
 #qtop:hover .qtop-h,#qtop.open .qtop-h{opacity:0}
+
+/* cena translúcida como fundo da página */
+.pg{position:relative;isolation:isolate}.qbgl{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;border-radius:inherit}
+.qbgl .ps-stage{position:absolute;left:50%;top:50%;width:max(100%,calc(100dvh*1.78));max-height:none;border-radius:0;box-shadow:none;transform:translate(-50%,-50%);opacity:.5}
+.qbgl::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(255,253,246,.62),rgba(255,253,246,.78))}
+.qbgl .qp,.qbgl .ps-c{animation:none}

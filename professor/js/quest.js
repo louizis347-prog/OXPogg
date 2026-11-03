@@ -172,6 +172,6 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
   if(!p.view||p.view==='b')A.confetti();mark()};
 }
 var prevReg=window.RL_REGISTER;window.RL_REGISTER=function(R,API){if(prevReg)prevReg(R,API);quest(R,API)};
-function addStrip(p){if(!p||!p.art||!p.art.rs||!window.RS||/^(q_cover|q_wrap|q_story|q_phrase|q_dialog|q_say)$/.test(p.t))return;var b=document.querySelector('.pg .pb');if(!b||b.querySelector('.qstrip'))return;var d=document.createElement('div');d.className='qstrip';d.innerHTML=stg(p.art,'strip');b.insertBefore(d,b.firstChild)}
+function addStrip(p){if(!p||!p.art||!p.art.rs||!window.RS||/^(q_cover|q_wrap)$/.test(p.t))return;var pg=document.querySelector('.pg');if(!pg||pg.querySelector('.qbgl'))return;var d=document.createElement('div');d.className='qbgl';d.innerHTML=stg(p.art,'bg');pg.insertBefore(d,pg.firstChild)}
 var prevDraw=window.RL_ONDRAW;window.RL_ONDRAW=function(p,i,pages){if(prevDraw)prevDraw(p,i,pages);try{drawGameBar(p);drawHint(p);addStrip(p)}catch(e){console.error(e)}};
 })();

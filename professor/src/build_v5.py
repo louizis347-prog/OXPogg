@@ -6,7 +6,7 @@ import glob, importlib.util, json, math, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, HERE)
 from build_v4 import CH, MIN, DESC, CHAP
-CHAP.update({'q_story': 'mission', 'q_phrase': 'talk', 'q_dialog': 'talk', 'q_say': 'lab', 'q_mold': 'lab', 'q_sound': 'lab', 'q_role': 'boss', 'q_free': 'write'})
+CHAP.update({'rl_write': 'write', 'q_story': 'mission', 'q_phrase': 'talk', 'q_dialog': 'talk', 'q_say': 'lab', 'q_mold': 'lab', 'q_sound': 'lab', 'q_role': 'boss', 'q_free': 'write'})
 def load(p):
     o = []
     for f in sorted(glob.glob(os.path.join(ROOT, 'data', p + '_*.json'))): o += json.load(open(f, encoding='utf-8'))
@@ -25,6 +25,10 @@ def supp(n):
 import zlib
 ELENCO = [x['name'] for x in json.load(open(os.path.join(ROOT, 'professor', 'data', 'elenco.json'), encoding='utf-8'))]
 def face_of(name): return ELENCO[zlib.crc32(name.encode()) % len(ELENCO)]
+def vis(n):
+    f = os.path.join(HERE, 'vis5', 'v%03d.py' % n)
+    if not os.path.exists(f): return {}
+    spec = importlib.util.spec_from_file_location('v5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m.VIS
 def build(n):
     S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[n - 1]
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
@@ -117,12 +121,27 @@ def build(n):
     for k, v in (S.get('arts') or {}).items():
         if k in P: P[k]['art'] = v
     if S.get('sticker_art'): P['q_wrap']['sticker_art'] = S['sticker_art']
+    V = vis(n)
+    if V:
+        for k, v in (V.get('arts') or {}).items():
+            if k in P: P[k]['art'] = v
+        if V.get('convo'):
+            cvv = dict(V['convo']); cvv['npc'] = dict(cvv.get('npc') or {'name': npc}); cvv['npc'].setdefault('face', npcface)
+            P['q_choose'] = dict(t='q_choose', title='Choose your reply', art=P['q_choose'].get('art'), **cvv)
+        if V.get('story_scenes'):
+            tx = P['q_read']['text']; sc = V['story_scenes']; ptx = V.get('story_pt') or [''] * len(tx)
+            P['q_story'] = dict(t='q_story', title='Story time', steps=[dict(en=tx[i], pt=ptx[i] if i < len(ptx) else '', art=sc[min(i, len(sc) - 1)]) for i in range(len(tx))])
+        if V.get('dlg'): P['q_dialog'] = dict(t='q_dialog', title='Dialogue — ' + nb['t'], **V['dlg'])
+        if V.get('phrase'): P['q_phrase'] = dict(t='q_phrase', title=V['phrase'].get('title', 'Situation & phrase'), **{k: v for k, v in V['phrase'].items() if k != 'title'})
+        if V.get('say'): P['q_say'] = dict(t='q_say', title='Say it', **V['say'])
+        if V.get('role'): P['q_role'] = dict(t='q_role', title='Boss mission', **V['role'])
+        if V.get('sticker_art'): P['q_wrap']['sticker_art'] = V['sticker_art']
     if S.get('cando'): P['q_cover']['canDo'] = S['cando']
     if S.get('pt'): P['q_cover']['pt'] = S['pt']
     if S.get('goal'): P['q_cover']['goal'] = S['goal']
     if S.get('chunks'): P['rl_chunks']['items'] = S['chunks']
     if S.get('title_pt'): P['q_cover']['title'] = S['title_pt']
-    ORDER = ['q_cover', 'q_story', 'q_culture', 'q_read', 'q_dialog' if 'q_dialog' in P else 'rl_dialog', 'q_phrase', 'q_choose', 'rl_chunks', 'q_say', 'q_mold' if 'q_mold' in P else 'rl_patterns', 'q_sound' if 'q_sound' in P else 'rl_pron', 'q_arcade', 'q_role' if 'q_role' in P else 'rl_role', 'q_free' if 'q_free' in P else 'rl_write', 'rl_exit', 'q_wrap']
+    ORDER = ['q_cover', 'q_story', 'q_culture', 'q_read', 'q_dialog' if 'q_dialog' in P else 'rl_dialog', 'q_phrase', 'q_choose', 'rl_chunks', 'q_say', 'rl_patterns', 'rl_pron', 'q_arcade', 'q_role' if 'q_role' in P else 'rl_role', 'rl_write', 'rl_exit', 'q_wrap']
     ORDER = [t for t in ORDER if t in P]
     pages = []
     def sub(p, t, **kw):
@@ -133,7 +152,7 @@ def build(n):
         T = p.get('title', '')
         if t == 'q_cover': return [sub(p, None, view='a'), sub(p, 'Mission · what you will do', view='b')]
         if t == 'q_story':
-            st = p['steps']; return [sub(p, 'Story time · %d/%d' % (i + 1, len(st)), steps=[x]) for i, x in enumerate(st)]
+            st = p['steps']; return [sub(p, 'Story time · %d/%d' % (i + 1, len(st)), steps=[x], art=x.get('art')) for i, x in enumerate(st)]
         if t == 'q_culture':
             names = ['Explore the scene', 'Fact file', 'Myth or fact?', 'In the wild', 'Compare', 'Quiz'] if p.get('hot') else ['Fact file', 'Myth or fact?', 'In the wild', 'Compare', 'Quiz']
             return [sub(p, 'Cultural spotlight · ' + n, only=i, nohook=(i > 0)) for i, n in enumerate(names)]
@@ -161,6 +180,27 @@ def build(n):
         if t == 'q_arcade':
             g = p['games']; ids = [('pairs', 'Memory match', 'pairs'), ('uns', 'Unscramble', 'unscramble'), ('err', 'Error hunt', 'errors'), ('spd', 'Speed round', 'speed'), ('dic', 'Dictation', 'dict')]
             return [sub(p, 'Practice arcade · ' + n, game=i) for i, n, k in ids if g.get(k)]
+        if t == 'rl_patterns':
+            sw = p.get('swap'); out = []
+            if p.get('patterns'): out.append(sub(p, 'Patterns', swap=None))
+            if sw and sw.get('slots'): out.append(dict(t='q_mold', title='Word mold', art=p.get('art'), frames=[dict(title='Build it', frame=sw['frame'], tpt=sw.get('tpt', ''), slots=sw['slots'])], stage='lab'))
+            return out or [p]
+        if t == 'rl_pron':
+            clean = lambda s: re.sub(r'\*\*', '', s or '')
+            it = [dict(say=clean(x['say']), linked=clean(x.get('linked', '')), note=clean(x.get('note', ''))) for x in p.get('items', [])]
+            idn = p.get('identify') or []
+            h = (len(it) + 1) // 2; out = []
+            base = dict(t='q_sound', art=p.get('art'), focus=clean(p.get('focus', '')), tip=clean(p.get('tip', '')), stage='lab')
+            if len(it) > 1: out += [dict(base, title='Sound lab · 1/%d' % (3 if idn else 2), items=it[:h], identify=[]), dict(base, title='Sound lab · 2/%d' % (3 if idn else 2), items=it[h:], identify=[])]
+            elif it: out.append(dict(base, title='Sound lab', items=it, identify=[]))
+            if idn: out.append(dict(base, title='Sound lab · listen & choose', items=[], identify=idn))
+            return out or [p]
+        if t == 'rl_write':
+            clean = lambda s: re.sub(r'\*\*', '', s or '')
+            mdl = clean(p.get('model', '')); tg = []
+            for w in re.findall(r"[A-Za-z’']{4,}", mdl.lower()):
+                if w not in tg: tg.append(w)
+            return [dict(t='q_free', title='Free production', art=p.get('art'), prompt=clean(p.get('task', '')), chips=[], targets=tg[:12], model=mdl, stage='write')]
         if t == 'q_wrap': return [sub(p, 'Mission complete', view='a'), sub(p, 'Sticker & next stop', view='b')]
         return [p]
     for t in ORDER:
@@ -168,7 +208,7 @@ def build(n):
             q = dict(q); q['stage'] = CHAP[t]; pages.append(q)
     plan = {m: [dict(id=k, name=CH[k][1], ic=CH[k][0], c=CH[k][2], min=MIN[m][k], desc=DESC[k]) for k in CH if k != 'lab' or True] for m in MIN}
     L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
-        pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=S.get('sticker_art') or dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
+        pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=(vis(n).get('sticker_art')) or S.get('sticker_art') or dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
         src=dict(regular=en['n'], neighbors=nb['n'], reg_idx=S.get('reg', n)))
     os.makedirs(os.path.join(ROOT, 'professor', 'data', 'v4'), exist_ok=True)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
