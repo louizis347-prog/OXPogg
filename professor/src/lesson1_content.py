@@ -40,9 +40,9 @@ def enrich(s):
                     'tip': 'Compare a função do pedido: saudação, bebida, detalhe, esclarecimento e despedida — sem decorar uma única fórmula cultural.',
                     'ask': 'Como você pediria uma bebida e descobriria onde retirá-la? Faça duas versões em inglês.'},
         'quiz': [
-            {'q': 'Você quer levar a bebida. O atendente pergunta “For here or to go?”', 'opts': ['To go, please.', 'For here, please.', 'On the left.'], 'ans': 0, 'why': '“To go” indica levar.'},
-            {'q': 'Não entendeu onde retirar. Qual pergunta resolve o problema?', 'opts': ['Do you have tea?', 'Where is the pickup counter?', 'How old is the counter?'], 'ans': 1, 'why': 'Where is…? pede localização.'},
-            {'q': 'Não há leite de aveia. Qual resposta mantém o pedido?', 'opts': ['I am oat milk.', 'No, you are wrong.', 'Regular milk is fine, thanks.'], 'ans': 2, 'why': 'Você aceita outra opção com naturalidade.'},
+            {'q': 'Você quer levar a bebida. O atendente pergunta “For here or to go?”', 'opts': ['To go, please.', 'For here, please.', 'A small coffee, please.'], 'ans': 0, 'why': '“To go” indica levar.'},
+            {'q': 'Não entendeu onde retirar. Qual pergunta resolve o problema?', 'opts': ['Do you have tea?', 'Where is the pickup counter?', 'Can I pay by card?'], 'ans': 1, 'why': 'Where is…? pede localização.'},
+            {'q': 'Não há leite de aveia. Qual resposta mantém o pedido?', 'opts': ['Do you have oat milk?', 'No, thanks. Bye!', 'Regular milk is fine, thanks.'], 'ans': 2, 'why': 'Você aceita outra opção com naturalidade.'},
         ],
     }
     s['reading'] = {
@@ -59,7 +59,7 @@ def enrich(s):
                      {'w': 'cup', 'pt': 'copo'}, {'w': 'counter', 'pt': 'balcão'},
                      {'w': 'order number', 'pt': 'número do pedido'}, {'w': 'on the left', 'pt': 'à esquerda'},
                      {'w': 'regular milk', 'pt': 'leite comum'}, {'w': 'to go', 'pt': 'para levar'}],
-        'fast': {'q': 'What does Ana do in the café?', 'opts': ['She orders and finds her drink.', 'She studies for a test.', 'She meets a film actor.'], 'ans': 0, 'why': 'She orders, changes one detail and finds the pickup counter.'},
+        'fast': {'q': 'What does Ana do in the café?', 'opts': ['She orders and finds her drink.', 'She waits for a train inside the café.', 'She works as a barista.'], 'ans': 0, 'why': 'She orders, changes one detail and finds the pickup counter.'},
         'scan': [{'q': 'What milk does Ana choose?', 'ans': 'regular milk', 'alt': ['milk'],
                   'opts': ['oat milk', 'regular milk', 'no milk'], 'correct': 1},
                  {'q': 'How much is the order?', 'ans': 'three dollars', 'alt': ['$3', '3 dollars'],
@@ -82,31 +82,31 @@ def enrich(s):
         'turns': [
             {'npc': 'Hi! What can I get for you?', 'pt': 'Oi! O que vai ser?', 'opts': [
                 {'en': 'Can I get a small coffee, please?', 'pt': 'Pode ser um café pequeno, por favor?', 'ok': True, 'fb': 'Pedido claro e cortês.'},
-                {'en': 'Give me coffee now.', 'pt': 'Me dê café agora.', 'ok': False, 'fb': 'Soa como uma ordem; peça com Can I get…?'},
-                {'en': 'I am a coffee.', 'pt': 'Eu sou um café.', 'ok': False, 'fb': 'Isso descreve você, não o pedido.'}]},
+                {'en': 'Hi! I’m fine, thanks.', 'pt': 'Oi! Estou bem, obrigada.', 'ok': False, 'fb': 'Evan pergunta o que você quer, não como você está.'},
+                {'en': 'Hi, do you work here?', 'pt': 'Oi, você trabalha aqui?', 'ok': False, 'fb': 'Ele já está atendendo; responda com o seu pedido.'}]},
             {'npc': 'For here or to go?', 'pt': 'Para ficar ou levar?', 'opts': [
-                {'en': 'On the left.', 'pt': 'À esquerda.', 'ok': False, 'fb': 'Essa fala indica lugar, não se você vai ficar.'},
+                {'en': 'Yes, please.', 'pt': 'Sim, por favor.', 'ok': False, 'fb': 'A pergunta não é de sim ou não: escolha for here ou to go.'},
                 {'en': 'To go, please.', 'pt': 'Para levar, por favor.', 'ok': True, 'fb': 'Resposta direta ao atendente.'},
-                {'en': 'I go now.', 'pt': 'Vou agora.', 'ok': False, 'fb': 'Para pedidos, use To go.'}]},
+                {'en': 'A small coffee, please.', 'pt': 'Um café pequeno, por favor.', 'ok': False, 'fb': 'Você já fez o pedido; agora responda se vai ficar ou levar.'}]},
             {'npc': 'Do you want oat milk? Sorry, we are out of it.', 'pt': 'Quer leite de aveia? Desculpe, acabou.', 'opts': [
-                {'en': 'You are out of me.', 'pt': 'Você acabou comigo.', 'ok': False, 'fb': 'O assunto é a bebida; escolha outra opção.'},
-                {'en': 'I do not like your café.', 'pt': 'Não gosto da sua cafeteria.', 'ok': False, 'fb': 'Não resolve o pedido.'},
+                {'en': 'Then I want oat milk anyway.', 'pt': 'Então quero leite de aveia mesmo assim.', 'ok': False, 'fb': 'Não há leite de aveia hoje; escolha outra opção.'},
+                {'en': 'Is the café open on Sundays?', 'pt': 'A cafeteria abre aos domingos?', 'ok': False, 'fb': 'É uma pergunta útil, mas não resolve o pedido agora.'},
                 {'en': 'Regular milk is fine, thanks.', 'pt': 'Leite comum serve, obrigado.', 'ok': True, 'fb': 'Você repara o pedido e mantém a conversa.'}]},
             {'npc': 'Anything else?', 'pt': 'Mais alguma coisa?', 'opts': [
                 {'en': 'No, that’s all. How much is it?', 'pt': 'Não, é só isso. Quanto custa?', 'ok': True, 'fb': 'Fecha o pedido e pergunta o preço.'},
-                {'en': 'No more coffee.', 'pt': 'Sem mais café.', 'ok': False, 'fb': 'Diga That’s all para encerrar.'},
-                {'en': 'I finish now.', 'pt': 'Eu termino agora.', 'ok': False, 'fb': 'Não é uma forma natural de fechar o pedido.'}]},
+                {'en': 'Yes, I am.', 'pt': 'Sim, eu estou.', 'ok': False, 'fb': 'Anything else? pede sim/não e o item; use No, that’s all.'},
+                {'en': 'It’s three dollars.', 'pt': 'São três dólares.', 'ok': False, 'fb': 'Quem diz o preço é o atendente.'}]},
             {'npc': 'That’s three dollars. Your number is 12.', 'pt': 'São três dólares. Seu número é 12.', 'opts': [
-                {'en': 'I am twelve dollars.', 'pt': 'Eu sou doze dólares.', 'ok': False, 'fb': 'O número identifica seu pedido.'},
+                {'en': 'You’re welcome.', 'pt': 'De nada.', 'ok': False, 'fb': 'Essa fala vem depois de agradecer; agora você paga.'},
                 {'en': 'Here you go. Thanks!', 'pt': 'Aqui está. Obrigado!', 'ok': True, 'fb': 'Você paga e agradece.'},
-                {'en': 'No, I am number three.', 'pt': 'Não, sou o número três.', 'ok': False, 'fb': 'Você confundiu preço e número do pedido.'}]},
+                {'en': 'How much is the muffin?', 'pt': 'Quanto custa o muffin?', 'ok': False, 'fb': 'O preço já foi dito; agora é hora de pagar.'}]},
             {'npc': 'Please wait for your number.', 'pt': 'Espere chamarem seu número.', 'opts': [
-                {'en': 'Where is your number?', 'pt': 'Onde está o seu número?', 'ok': False, 'fb': 'Você precisa encontrar o balcão.'},
-                {'en': 'I wait in the coffee.', 'pt': 'Espero dentro do café.', 'ok': False, 'fb': 'Peça a localização com Where is…?'},
+                {'en': 'Can I get a large coffee?', 'pt': 'Posso pedir um café grande?', 'ok': False, 'fb': 'O pedido já foi feito; a dúvida agora é a retirada.'},
+                {'en': 'Do you have oat milk?', 'pt': 'Vocês têm leite de aveia?', 'ok': False, 'fb': 'Isso já foi respondido; agora procure o balcão de retirada.'},
                 {'en': 'Where is the pickup counter?', 'pt': 'Onde fica o balcão de retirada?', 'ok': True, 'fb': 'Boa pergunta: usa a linguagem de localização do Regular.'}]},
         ]}
     s['errors'] = [
-        {'wrong': 'I want a coffee now.', 'fix': 'Can I get a coffee, please?', 'alt': 'You give me coffee.', 'why': 'Can I get…? faz um pedido; now pode soar brusco.'},
+        {'wrong': 'I want a coffee now.', 'fix': 'Can I get a coffee, please?', 'alt': 'Give me a coffee, please.', 'why': 'Can I get…? faz um pedido; now pode soar brusco.'},
         {'wrong': 'You have oat milk?', 'fix': 'Do you have oat milk?', 'alt': 'Have you oat milk?', 'why': 'Para perguntar sobre disponibilidade: Do you have…?'},
         {'wrong': 'Where pickup counter?', 'fix': 'Where is the pickup counter?', 'alt': 'Where the pickup counter is?', 'why': 'A pergunta direta precisa de is antes do sujeito.'},
         {'wrong': 'The counter is in the left.', 'fix': 'The counter is on the left.', 'alt': 'The counter is at left.', 'why': 'Para localização: on the left.'},
@@ -186,11 +186,11 @@ def refine(lesson, supp):
         {'q': q['s'], 'opts': ['True', 'False'], 'ans': 0 if q['ans'] else 1, 'why': q['why']} for q in r['tf']],
         instruction='A resposta precisa concordar com a história.')
     add('read', 'quiz', 'Sequência da história', items=[
-        {'q': 'Depois de pedir o café, o que Ana faz?', 'opts': ['Sai sem pagar.', 'Escolhe leite comum.', 'Pede um filme.'], 'ans': 1,
+        {'q': 'Depois de pedir o café, o que Ana faz?', 'opts': ['Pede um tamanho grande.', 'Escolhe leite comum.', 'Escolhe um chá gelado.'], 'ans': 1,
          'why': 'Ela muda o ingrediente porque não há leite de aveia.'},
-        {'q': 'O que acontece antes de Ana procurar o balcão de retirada?', 'opts': ['Ela paga e recebe um número.', 'Ela volta ao trem.', 'Ela pega uma bandeja vazia.'], 'ans': 0,
+        {'q': 'O que acontece antes de Ana procurar o balcão de retirada?', 'opts': ['Ela paga e recebe um número.', 'Ela já recebe a bebida na mão.', 'Ela espera do lado de fora.'], 'ans': 0,
          'why': 'O número serve para identificar o pedido na retirada.'},
-        {'q': 'Como termina a história?', 'opts': ['Ana se senta sem a bebida.', 'Evan fecha a loja.', 'Ana confere o copo e sai.'], 'ans': 2,
+        {'q': 'Como termina a história?', 'opts': ['Ana pede mais uma bebida.', 'Ana troca de café.', 'Ana confere o copo e sai.'], 'ans': 2,
          'why': 'Ela verifica o pedido recebido antes de sair.'}],
         instruction='Reconstrua a sequência sem reler a história.')
     add('talk', 'dialog', 'Conversa · o pedido', lines=DIALOG[:6], instruction='Ouça. Depois substitua coffee por tea e diga o que muda.')

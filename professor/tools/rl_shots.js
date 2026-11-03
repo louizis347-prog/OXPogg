@@ -14,15 +14,16 @@ const srv = http.createServer((q, r) => { let f = path.join(ROOT, decodeURICompo
     await ctx.addInitScript(m => { try { localStorage.setItem('pg_prof_ok', String(Date.now())); localStorage.setItem('pgx-mode', JSON.stringify(m)); } catch (e) {} }, mode);
     const p = await ctx.newPage(); const errs = [];
     p.on('pageerror', e => errs.push(e.message)); p.on('console', m => { if (m.type() === 'error' && !/speech|voice/i.test(m.text())) errs.push('console: ' + m.text()); });
-    await p.goto(`http://localhost:${port}/professor/${process.env.PAGE||'aula3.html'}?n=${N}`); await p.waitForTimeout(2200);
-    const count = await p.evaluate(() => document.querySelectorAll('#rail .sg').length);
+    await p.goto(`http://localhost:${port}/professor/${process.env.PAGE||'aula3.html'}?n=${N}`); await p.waitForTimeout(2200); await p.mouse.move(640, 500);
+    const count = await p.evaluate(() => { const m = (document.querySelector('#cnt') || {}).textContent || ''; const n = parseInt(m.split('/')[1]); return n || document.querySelectorAll('#rail .sg').length; });
     const files = [];
     for (let k = 0; k < count; k++) {
-      const info = await p.evaluate(() => { const pb = document.querySelector('.pg .pb'); const h = document.querySelector('.pg .ph h2'); return { title: h ? h.textContent : '', len: pb ? pb.innerText.length : 0, over: pb ? pb.scrollWidth - pb.clientWidth : 0, tag: (document.querySelector('.pg .ph .tag') || {}).textContent }; });
+      const info = await p.evaluate(() => { const stg = document.querySelector('#stage'); const vs = stg ? stg.scrollHeight - stg.clientHeight : 0; const pb = document.querySelector('.pg .pb'); const h = document.querySelector('.pg .ph h2'); return { vs, title: h ? h.textContent : '', len: pb ? pb.innerText.length : 0, over: pb ? pb.scrollWidth - pb.clientWidth : 0, tag: (document.querySelector('.pg .ph .tag') || {}).textContent }; });
       if (info.len < 60) { console.log(`PROBLEMA [${mode}] tela ${k + 1} (${info.tag}): quase vazia`); problems++; }
       if (info.over > 4) { console.log(`PROBLEMA [${mode}] tela ${k + 1} (${info.tag}): estouro horizontal de ${info.over}px`); problems++; }
+      if (info.vs > 6) { console.log(`ROLA [${mode}] quadro ${k + 1} (${info.title}): ${info.vs}px a mais`); if (process.env.STRICT_SCROLL) problems++; }
       const f = `${OUT}/${process.env.PFX||'rl'}_${N}_${mode}_${String(k).padStart(2, '0')}.png`; await p.screenshot({ path: f }); files.push(f);
-      await p.keyboard.press('ArrowRight'); await p.waitForTimeout(350);
+      await p.keyboard.press('ArrowRight'); await p.waitForTimeout(700);
     }
     if (errs.length) { console.log(`PROBLEMA [${mode}] erros de JavaScript:`, errs.slice(0, 3)); problems += errs.length; }
     console.log(`${mode}: ${count} telas → ${OUT}/${process.env.PFX||'rl'}_${N}_${mode}_00.png …`);
