@@ -10,11 +10,11 @@ Z = dict(
   vb('smell', '👃', 'cheirar', ('smell', 'These tacos smell good.', 'Estes tacos cheiram bem.'), ('smells', 'It smells great.', 'Cheira muito bem.'), ('smelled', 'The pies smelled good.', 'As tortas cheiravam bem.'), ('smelling', 'I am smelling the ginger.', 'Estou sentindo o cheiro do gengibre.'), 'smell + adjetivo: smells good.'),
   vb('eat', '🌮', 'comer', ('eat', 'I eat tacos for lunch.', 'Eu como tacos no almoço.'), ('eats', 'Ana eats chips.', 'A Ana come batata frita.'), ('ate', 'We ate three tacos.', 'Nós comemos três tacos.'), ('eating', 'I am eating a taco.', 'Estou comendo um taco.'), 'Passado irregular: eat vira ate.'),
   vb('taste', '😋', 'ter gosto / provar', ('taste', 'They taste fresh.', 'Eles têm gosto de frescos.'), ('tastes', 'This one tastes good.', 'Este tem um gosto bom.'), ('tasted', 'It tasted great.', 'Estava ótimo.'), ('tasting', 'I am tasting the beef.', 'Estou provando a carne.'), 'taste + adjetivo: tastes good.'),
-  vb('put', '🧅', 'colocar', ('put', 'I put onions on my taco.', 'Eu coloco cebola no meu taco.'), ('puts', 'He puts salsa on it.', 'Ele põe molho nele.'), ('put', 'Ana put lime on it.', 'A Ana pôs limão nele.'), ('putting', 'I am putting cilantro on top.', 'Estou pondo coentro por cima.'), 'Put não muda no passado; no -ing dobra o t: putting.'),
+  vb('use', '🧻', 'usar', ('use', 'I use a napkin.', 'Eu uso um guardanapo.'), ('uses', 'He uses two hands.', 'Ele usa as duas mãos.'), ('used', 'Ana used a fork.', 'A Ana usou um garfo.'), ('using', 'I am using a napkin.', 'Estou usando um guardanapo.'), 'Use perde o e antes de -ing: using.')],
  verb_game=[
   dict(scene='Você come batata frita enquanto espera.', en='I ___ chips while I wait.', opts=['eat', 'eats', 'ate'], ans=0, pt='Eu como batata frita enquanto espero.', why='Com “I” o presente usa a forma base: eat.'),
   dict(scene='O taco cheira bem.', en='This taco ___ good.', opts=['smell', 'smells', 'smelling'], ans=1, pt='Este taco cheira bem.', why='“This taco” é ele/ela: smells.'),
-  dict(scene='Ontem a Ana pôs cebola no taco.', en='Ana ___ onions on her taco yesterday.', opts=['puts', 'put', 'putting'], ans=1, pt='A Ana pôs cebola no taco ontem.', why='“Yesterday” pede passado: put (não muda).'),
+  dict(scene='Ontem a Ana usou um garfo no taco.', en='Ana ___ a fork yesterday.', opts=['uses', 'used', 'using'], ans=1, pt='A Ana usou um garfo ontem.', why='“Yesterday” pede passado: used.'),
   dict(scene='Você está provando um bolinho agora.', en='I am ___ a dumpling.', opts=['try', 'tries', 'trying'], ans=2, pt='Estou provando um bolinho.', why='“am” + -ing: trying.')],
  expressions=[
   dict(en='What’s in it?', pt='O que tem nisso?', ex='What’s in it? — Pork and cabbage.', exp='Para saber os ingredientes.', c='a'),
