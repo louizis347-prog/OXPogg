@@ -39,18 +39,25 @@ def build(n):
     sheet = [i for f in fr(en, 'pgsheet') for i in f.get('items', [])]
     rd = fr(en, 'rdg')[0]['s'] if fr(en, 'rdg') else []
     title = re.sub(r'\s*·.*', '', en['t']); title_en = nb['t']
+    def art(k, i=0):
+        fs = fr(en, k); f = fs[i] if len(fs) > i else None
+        if f and f.get('rs'): return dict(rs=f['rs'], chars=f.get('chars') or (en.get('stage') or {}).get('chars'))
+        st = en.get('stage') or {}
+        return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
     P = {}
     P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level='A1', unit=dict(n=math.ceil(n / 8), k=(n - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
         canDo=['Say: ' + strip(i['en']) for i in exps[:4]], success=['I understand the conversation.', 'I use the key expression.', 'I answer a real question.', 'I close politely.'],
         think=strip(nhero.get('mission', '')))
     cult = dict(S.get('culture', {})); cult['t'] = 'q_culture'; cult.setdefault('title', 'Cultural spotlight')
+    hs = fr(en, 'hotscene')
+    if hs: cult['art'] = art('hotscene'); cult['hot'] = [dict(e=h['e'], x=h['x'], y=h['y'], en=h['en'], pt=h['pt'], say=h.get('say', ''), sayPt=h.get('sayPt', '')) for h in hot]
     cult.setdefault('hook', strip(nb['a'].get('d', '') or en['a'].get('d', '')))
     cult.setdefault('facts', [dict(big=h['en'].capitalize(), label=h['pt'], sub=h.get('say', '')) for h in hot[:5]])
     P['q_culture'] = cult
     rdg = dict(S.get('reading', {})); rdg['t'] = 'q_read'
     if 'text' not in rdg: rdg.update(genre='Story', title=en['a']['w'], text=[bold(' '.join(s[0] for s in rd))], glossary=[])
-    rdg['title'] = 'Reading quest — ' + rdg.get('title', ''); P['q_read'] = rdg
+    rdg['art'] = art('rdg'); rdg['title'] = 'Reading quest — ' + rdg.get('title', ''); P['q_read'] = rdg
     P['rl_dialog'] = dict(t='rl_dialog', title='Dialogue — ' + nb['t'], qs=[dict(q=i['q'], opts=[o[1] for o in i['opts']], ans=i['a']) for i in tap[:4]],
         retell=dict(prompt='Retell the conversation in your own words.', starters=['First,', 'Then,', 'In the end,']))
     cv = S.get('convo')
@@ -90,13 +97,16 @@ def build(n):
     P['rl_exit'] = dict(t='rl_exit', title='Exit ticket & homework', tasks=[dict(ic='🎤', name='Say it', prompt=s[1], model=strip(s[0])) for s in speak[:3]],
         homework=dict(h='Your English mission', min='10–15', items=S.get('homework_items', ['Record 45 seconds using the key expressions.', 'Write 3 sentences.', 'Listen to the dialogue again.', 'Review the 4 priority expressions.'])), spaced=dict(next=[strip(i['en']) for i in exps[:3]], week=[], unit=[]))
     P['q_wrap'] = dict(t='q_wrap', title='Mission complete', recap=wrap['recap'] + nwrap['recap'], homework=S.get('homework', 'Record a short audio using today’s expressions.'), next=dict(title=wrap['teaser']['t'], teaser=wrap['teaser']['d']))
+    P['q_cover']['art'] = art('hotscene')
+    P['rl_dialog']['art'] = art('pgscene'); P['q_choose']['art'] = art('pgscene'); P['rl_pron']['art'] = art('pglab'); P['q_arcade']['art'] = art('pgfind')
+    P['rl_role']['art'] = art('pgspeak'); P['rl_write']['art'] = art('pgmission') if fr(en, 'pgmission') else None; P['rl_chunks']['art'] = art('pgexp')
     ORDER = ['q_cover', 'q_culture', 'q_read', 'rl_dialog', 'q_choose', 'rl_chunks', 'rl_patterns', 'rl_pron', 'q_arcade', 'rl_role', 'rl_write', 'rl_exit', 'q_wrap']
     pages = []
     for t in ORDER:
         p = dict(P[t]); p['stage'] = CHAP[t]; pages.append(p)
     plan = {m: [dict(id=k, name=CH[k][1], ic=CH[k][0], c=CH[k][2], min=MIN[m][k], desc=DESC[k]) for k in CH if k != 'lab' or True] for m in MIN}
     L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npc), 'You': dict(name='You')}, lines=lines),
-        pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'])), fmt='quest',
+        pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
         src=dict(regular=en['n'], neighbors=nb['n']))
     os.makedirs(os.path.join(ROOT, 'professor', 'data', 'v4'), exist_ok=True)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
