@@ -16,7 +16,7 @@ NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'r
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
 bold = lambda s: re.sub(r'\{\{(.+?)\}\}', r'**\1**', s or '')
 # Neighbors da aula n: 1-50 sequencial; 51-200 pula situações que já apareceram antes (sem repetir situação)
-SKIP_NB = {150, 151, 154, 159, 160, 161, 162, 164, 167, 168, 170, 171, 179, 180, 206}
+SKIP_NB = {124, 150, 151, 154, 159, 160, 161, 162, 164, 167, 168, 170, 171, 179, 180, 206}
 def nb_index(n):
     if n <= 50: return n
     k, c = 50, 50
