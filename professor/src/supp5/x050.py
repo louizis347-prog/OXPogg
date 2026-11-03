@@ -5,7 +5,7 @@ X = dict(
   dict(who='Jonah', en='Hi! Pump number {three|two|five}, please.', pt='Oi! Bomba número {três|dois|cinco}, por favor.'),
   dict(who='You', en='How much gas do you want?', pt='Quanto de gasolina você quer?'),
   dict(who='Jonah', en='{Twenty|Thirty|Ten} dollars, please.', pt='{Vinte|Trinta|Dez} dólares, por favor.'),
-  dict(who='You', en='Do you want {regular|premium} or {premium|regular}?', pt='Quer {comum|premium} ou {premium|comum}?')],
+  dict(who='You', en='Do you want {regular|premium|diesel} gas?', pt='Quer gasolina {comum|premium|diesel}?')],
  dlg=[
   dict(who='Jonah', en='Hi! Pump number {three|two|five}, please.', pt='Oi! Bomba número {três|dois|cinco}, por favor.'),
   dict(who='You', en='How much gas do you want?', pt='Quanto de gasolina você quer?'),
@@ -24,8 +24,8 @@ X = dict(
   dict(w='bathroom', pt='banheiro', e='🚻', ex=['The bathroom is behind the store.', 'Where is the bathroom?']),
   dict(w='key', pt='chave', e='🔑', ex=['Ask for the key at the counter.', 'I lost my car key.'])],
  molds=[
-  dict(title='Pedir a bomba', frame='Hi! Pump number {n}, please. {amount} dollars, {kind}.', slots=[dict(key='n', opts=['three', 'two', 'five']), dict(key='amount', opts=['Twenty', 'Thirty', 'Ten']), dict(key='kind', opts=['regular', 'premium', 'regular, please'])], model='Hi! Pump number three, please. Twenty dollars, regular.', note='Diga a bomba, o valor e o tipo de gasolina em frases curtas.'),
-  dict(title='Atender no posto', frame='How much gas do you want? Do you want {a} or {b}?', slots=[dict(key='a', opts=['regular', 'premium', 'diesel']), dict(key='b', opts=['premium', 'regular', 'premium'])], model='How much gas do you want? Do you want regular or premium?', note='Duas perguntas curtas: quanto e qual tipo.'),
+  dict(title='Pedir a bomba', frame='Hi! Pump number {n}, please. {amount} dollars, {kind}.', slots=[dict(key='n', opts=['three', 'two', 'five']), dict(key='amount', opts=['Twenty', 'Thirty', 'Ten']), dict(key='kind', opts=['regular', 'premium', 'diesel'])], model='Hi! Pump number three, please. Twenty dollars, regular.', note='Diga a bomba, o valor e o tipo de gasolina em frases curtas.'),
+  dict(title='Atender no posto', frame='How much gas do you want? Do you want {pair}?', slots=[dict(key='pair', opts=['regular or premium', 'premium or regular', 'regular or diesel'])], model='How much gas do you want? Do you want regular or premium?', note='Duas perguntas curtas: quanto e qual tipo.'),
   dict(title='Escrever o total', frame='Pump {n}: {amount} dollars of gas and a bottle of {drink}. That’s {total} dollars.', slots=[dict(key='n', opts=['three', 'two', 'five']), dict(key='amount', opts=['twenty', 'thirty', 'ten']), dict(key='drink', opts=['water', 'juice', 'soda']), dict(key='total', opts=['twenty-two', 'thirty-two', 'twelve'])], model='Pump three: twenty dollars of gas and a bottle of water. That’s twenty-two dollars.', note='Resuma a compra numa frase com bomba, gasolina, item extra e total.')],
  sounds=[
   dict(say='Pump number three, please.', tag='ritmo: palavras fortes', tip='Marque “pump”, “num-” e “three”. “Please” fecha a frase com a voz descendo.'),
