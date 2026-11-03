@@ -1,5 +1,5 @@
 """Quest v5 aula 92: A baseball game."""
-SUPP = {'reg': 38,
+SUPP = {'reg': 65,
  'badge': {'icon': '⚾', 'name': 'Ballpark Rookie', 'desc': 'Understand baseball: pitcher, batter, bases and snacks'},
  'culture': {'hook': 'Baseball is called America’s pastime. At a game, fans eat hot dogs, wear caps and sing a song in the middle of the seventh inning.',
              'mythfact': [{'s': 'A regular baseball game has nine innings.',
@@ -48,8 +48,8 @@ SUPP = {'reg': 38,
                       'In the middle of the seventh inning, everyone stands up and sings “**Take Me Out to the Ball Game**.” It is an old song from 1908 about '
                       'peanuts, snacks and cheering for the home team. A player misses the ball, and a boy shouts, “Nice try!” Priyanka laughs and says, '
                       '“**Keep it up!**”',
-                      'At the end, the score is four to three. Rafa knows the rules now. “**What a play!**” he says. Priyanka smiles. “Enjoy the game!” she '
-                      'says.'],
+                      'At the end, the score is four to three. Rafa knows the rules now. He thinks of the Olympic Games, where teams from many countries play '
+                      'together. “**What a play!**” he says. Priyanka smiles. “Enjoy the game!” she says.'],
              'glossary': [{'w': 'pitcher', 'pt': 'arremessador'},
                           {'w': 'batter', 'pt': 'rebatedor'},
                           {'w': 'bases', 'pt': 'bases'},

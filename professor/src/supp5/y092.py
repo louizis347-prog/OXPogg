@@ -20,6 +20,8 @@ Y = {'sentences': [[{'en': 'Rafa is in **Cincinnati**, Ohio.', 'pt': 'O Rafa est
                 {'en': 'Priyanka laughs and says, “**Keep it up!**”', 'pt': 'A Priyanka ri e diz: “**Continue assim!**”'}],
                [{'en': 'At the end, the score is four to three.', 'pt': 'No fim, o placar é quatro a três.'},
                 {'en': 'Rafa knows the rules now.', 'pt': 'O Rafa já conhece as regras.'},
+                {'en': 'He thinks of the Olympic Games, where teams from many countries play together.',
+                 'pt': 'Ele pensa nos Jogos Olímpicos, onde times de muitos países jogam juntos.'},
                 {'en': '“**What a play!**” he says.', 'pt': '“**Que jogada!**”, ele diz.'},
                 {'en': 'Priyanka smiles.', 'pt': 'A Priyanka sorri.'},
                 {'en': '“Enjoy the game!” she says.', 'pt': '“Aproveite o jogo!”, ela diz.'}]],

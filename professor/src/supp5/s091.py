@@ -1,5 +1,5 @@
 """Quest v5 aula 91: A concert night."""
-SUPP = {'reg': 99,
+SUPP = {'reg': 208,
  'badge': {'icon': '🎸', 'name': 'Front Row Fan', 'desc': 'Go to a concert: ticket, seats, sound and encore'},
  'culture': {'hook': 'Austin, Texas, calls itself the Live Music Capital of the World. At a concert in the USA, you show your ticket, find your seat, wait for '
                      'the band and shout for an encore.',
@@ -53,8 +53,8 @@ SUPP = {'reg': 99,
                       'Section B, row five. “It’s loud in here!” Lia says. “I know! The band starts at eight,” Omar says.',
                       'They get a drink and wait. The crowd is big and happy. Then the lights go out, and the band walks on the stage. Everyone claps and '
                       'shouts, “Awesome!”',
-                      'The singer starts the first song, and Lia sings along. “**This show rocks!**” she says. Omar loves the drummer. He thinks of Ted Lasso, '
-                      'the TV coach who says “Way to go!” to his team, and he shouts it to the band.',
+                      'The singer starts the first song, and Lia sings along. “**This show rocks!**” she says. Omar loves the drummer. He remembers “High '
+                      'School Musical,” a film about students who sing on a stage. “You steal the show!” he shouts to the band.',
                       'At the end, the crowd shouts, “**Encore!**” The band comes back for one more song. Lia is losing her voice, but she is very happy. It '
                       'is the best night ever.'],
              'glossary': [{'w': 'concert', 'pt': 'show (musical)'},
