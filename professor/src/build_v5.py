@@ -54,6 +54,7 @@ def build(n):
         if f and f.get('rs'): return dict(rs=f['rs'], chars=f.get('chars') or (en.get('stage') or {}).get('chars'))
         st = en.get('stage') or {}
         return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
+    L_dialog_lines = [dict(who=l['who'], en=l['en'], pt=l['pt']) for l in lines]
     P = {}
     P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level='A1', unit=dict(n=math.ceil(n / 8), k=(n - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
@@ -141,6 +142,8 @@ def build(n):
     if S.get('goal'): P['q_cover']['goal'] = S['goal']
     if S.get('chunks'): P['rl_chunks']['items'] = S['chunks']
     if S.get('title_pt'): P['q_cover']['title'] = S['title_pt']
+    if 'q_dialog' not in P and L_dialog_lines:
+        P['q_dialog'] = dict(t='q_dialog', title='Dialogue — ' + nb['t'], me='You', faces={npc: npcface, 'You': 'Mia'}, art=P['rl_dialog'].get('art'), lines=L_dialog_lines, qs=[dict(q=x['q'], opts=x['opts'], ans=x['ans'], why='Listen to the dialogue again.') for x in P['rl_dialog'].get('qs', []) if len(x.get('opts', [])) == 3])
     ORDER = ['q_cover', 'q_story', 'q_culture', 'q_read', 'q_dialog' if 'q_dialog' in P else 'rl_dialog', 'q_phrase', 'q_choose', 'rl_chunks', 'q_say', 'rl_patterns', 'rl_pron', 'q_arcade', 'q_role' if 'q_role' in P else 'rl_role', 'rl_write', 'rl_exit', 'q_wrap']
     ORDER = [t for t in ORDER if t in P]
     pages = []
