@@ -1,0 +1,103 @@
+X = dict(
+    key={"big": "How do you spell that?", "label": "Pedir e dar a grafia",
+         "sub": "Quando o nome é difícil de entender, a pessoa pede para soletrar. Responda letra por letra, devagar."},
+    mini=[
+        {"who": "Mei", "en": "{Hello|Hi|Good morning}! Can I have your name, please?",
+         "pt": "{Olá|Oi|Bom dia}! Pode me dar seu nome, por favor?"},
+        {"who": "You", "en": "Sure. It's {Daniel|Sofia|Lucas}.",
+         "pt": "Claro. É {Daniel|Sofia|Lucas}."},
+        {"who": "Mei", "en": "How do you spell {that|your name|your last name}?",
+         "pt": "Como se escreve {isso|seu nome|seu sobrenome}?"},
+        {"who": "You", "en": "{D-A-N-I-E-L|S-O-F-I-A|L-U-C-A-S}.",
+         "pt": "{D-A-N-I-E-L|S-O-F-I-A|L-U-C-A-S}."},
+    ],
+    dlg=[
+        {"who": "Mei", "en": "{Hello|Hi|Good morning}! Can I have your {name|last name}, please?", "pt": "{Olá|Oi|Bom dia}! Pode me dar seu {nome|sobrenome}, por favor?"},
+        {"who": "You", "en": "Sure. It's {Daniel|Sofia|Lucas}.", "pt": "Claro. É {Daniel|Sofia|Lucas}."},
+        {"who": "Mei", "en": "How do you spell {that|your name}?", "pt": "Como se escreve {isso|seu nome}?"},
+        {"who": "You", "en": "{D-A-N-I-E-L|S-O-F-I-A|L-U-C-A-S}.", "pt": "{D-A-N-I-E-L|S-O-F-I-A|L-U-C-A-S}."},
+        {"who": "Mei", "en": "{Great|Perfect|Thanks}. And your phone number?", "pt": "{Ótimo|Perfeito|Obrigada}. E seu telefone?"},
+        {"who": "You", "en": "It's five five five, {one two three four|two two three three|nine eight seven six}.", "pt": "É cinco cinco cinco, {um dois três quatro|dois dois três três|nove oito sete seis}."},
+        {"who": "Mei", "en": "Perfect. Is that your {cell phone|home phone|work phone}?", "pt": "Perfeito. É seu {celular|telefone residencial|telefone do trabalho}?"},
+        {"who": "You", "en": "{Yes, it is|Yes, that's right|That's right}. Thank you!", "pt": "{É sim|Isso mesmo|Está certo}. Obrigado!"},
+        {"who": "Mei", "en": "You're all set. Have a {nice|good|great} day!", "pt": "Está tudo certo. Tenha um {bom|ótimo|excelente} dia!"},
+    ],
+    vocab=[
+        {"w": "spell", "pt": "soletrar", "e": "🔤", "ex": ["How do you spell your name?", "I can spell it slowly."]},
+        {"w": "letter", "pt": "letra", "e": "🅰️", "ex": ["The first letter is D.", "Which letter is next?"]},
+        {"w": "number", "pt": "número", "e": "🔢", "ex": ["My phone number is on the form.", "What is your number?"]},
+        {"w": "phone", "pt": "telefone", "e": "📱", "ex": ["Is that your phone?", "My phone is on the desk."]},
+        {"w": "write", "pt": "escrever", "e": "✍️", "ex": ["Please write your name here.", "I write the number on a card."]},
+        {"w": "name", "pt": "nome", "e": "🏷️", "ex": ["What is your last name?", "Your name is easy to spell."]},
+    ],
+    molds=[
+        {"title": "Pedir uma informação", "frame": "Can I have your {thing}, please?",
+         "slots": [{"key": "thing", "opts": ["name", "phone number", "last name", "email"]}],
+         "model": "Can I have your name, please?",
+         "note": "Can I have… é um pedido educado, muito usado em recepções e formulários."},
+        {"title": "Dar o telefone", "frame": "It's five five five, {digits}.",
+         "slots": [{"key": "digits", "opts": ["one two three four", "two two three three", "nine eight seven six"]}],
+         "model": "It's five five five, one two three four.",
+         "note": "Diga os números um a um e faça uma pequena pausa entre os grupos."},
+        {"title": "Escrever seus dados", "frame": "Hi! My name is {name}. My phone number is five five five, {digits}. Thank you!",
+         "slots": [{"key": "name", "opts": ["Daniel", "Sofia", "Lucas"]},
+                   {"key": "digits", "opts": ["one two three four", "two two three three", "nine eight seven six"]}],
+         "model": "Hi! My name is Daniel. My phone number is five five five, one two three four. Thank you!",
+         "note": "Em um formulário ou mensagem, nome e telefone vêm primeiro; o agradecimento fecha com cortesia."},
+    ],
+    sounds=[
+        {"say": "five five five, one two three four", "tag": "ritmo: grupos 3 + 4", "tip": "Fale os números em dois grupos, com uma pausa curta entre eles."},
+        {"say": "D-A-N-I-E-L", "tag": "ritmo: letra por letra", "tip": "Dê a cada letra a mesma duração e o mesmo volume, sem pressa."},
+        {"say": "How do you spell that?", "tag": "ritmo: palavra forte SPELL", "tip": "Em How do you SPELL that? a palavra forte é spell; as outras ficam leves e rápidas."},
+    ],
+    role={
+        "turns": [
+            {"npc": "Hello! Can I have your name, please?", "opts": [
+                {"en": "Sure. It's Daniel.", "pt": "Claro. É Daniel.", "reply": "Thanks, Daniel."},
+                {"en": "Of course. My name is Daniel.", "pt": "Claro. Meu nome é Daniel.", "reply": "Thanks, Daniel. Nice to meet you."},
+                {"en": "Sure. I'm Daniel.", "pt": "Claro. Sou o Daniel.", "reply": "Thank you, Daniel."}]},
+            {"npc": "How do you spell that?", "opts": [
+                {"en": "D-A-N-I-E-L.", "pt": "D-A-N-I-E-L.", "reply": "D-A-N-I-E-L. Got it."},
+                {"en": "It's D, A, N, I, E, L.", "pt": "É D, A, N, I, E, L.", "reply": "Great, I have it."},
+                {"en": "D-A-N-I-E-L. Should I say it again?", "pt": "D-A-N-I-E-L. Devo repetir?", "reply": "No, that's clear. Thanks!"}]},
+            {"npc": "Great. And your phone number?", "opts": [
+                {"en": "It's five five five, one two three four.", "pt": "É cinco cinco cinco, um dois três quatro.", "reply": "Five five five, one two three four. Got it."},
+                {"en": "My number is five five five, one two three four.", "pt": "Meu número é cinco cinco cinco, um dois três quatro.", "reply": "Thank you. I have it here."},
+                {"en": "Five five five, one two three four.", "pt": "Cinco cinco cinco, um dois três quatro.", "reply": "Great, thanks."}]},
+            {"npc": "Perfect. Is that your cell phone?", "opts": [
+                {"en": "Yes, it is. Thank you!", "pt": "É sim. Obrigado!", "reply": "You're all set. Have a nice day!"},
+                {"en": "Yes, that's my cell.", "pt": "Sim, é o meu celular.", "reply": "Perfect. You're all set!"},
+                {"en": "No, it's my home phone.", "pt": "Não, é meu telefone residencial.", "reply": "OK, I'll write that. You're all set!"}]},
+        ],
+        "change": ["A recepcionista não entende uma letra: repita e dê um exemplo.",
+                   "O sobrenome é longo: soletre em duas partes.",
+                   "O telefone tem um número a mais: diga-o de novo com calma."]},
+    writing={"task": "Escreva uma mensagem curta para uma academia ou clínica com seu nome, a grafia do nome e seu telefone. Depois crie uma segunda versão com outros dados.",
+             "model": "Hello! My name is Daniel. That is D-A-N-I-E-L. My phone number is five five five, one two three four. Thank you!",
+             "kw": ["name", "spell", "phone", "number", "thank"],
+             "checks": ["Escrevi meu nome e a grafia.", "Dei o telefone em números.", "Agradeci no fim."]},
+    scenes={"pool": ["hall", "lobby", "office", "gym", "clinic"], "npc": {"g": "f", "role": "receptionist"}, "you": {"g": "m"}},
+    convo={"npc": {"name": "Mei"}, "story": "Você está se cadastrando na recepção do prédio. Dê seu nome, soletre e informe o telefone.",
+        "turns": [
+            {"npc": "Hello! Can I have your name, please?", "pt": "Olá! Pode me dar seu nome, por favor?", "opts": [
+                {"en": "Hello! I'm fine, thanks.", "pt": "Olá! Estou bem, obrigado.", "ok": False, "fb": "Ela pediu o seu nome, não perguntou como você está."},
+                {"en": "Sure. It's Daniel.", "pt": "Claro. É Daniel.", "ok": True, "fb": "Resposta direta ao pedido."},
+                {"en": "Can I have your name, please?", "pt": "Pode me dar seu nome, por favor?", "ok": False, "fb": "Quem pede o nome é ela; você apenas responderia."}]},
+            {"npc": "How do you spell that?", "pt": "Como se escreve isso?", "opts": [
+                {"en": "It's Daniel, thank you.", "pt": "É Daniel, obrigado.", "ok": False, "fb": "Você repete o nome; ela quer as letras."},
+                {"en": "Sorry, what's your name?", "pt": "Desculpe, qual é o seu nome?", "ok": False, "fb": "Quem pergunta é ela; você deve soletrar o seu nome."},
+                {"en": "D-A-N-I-E-L.", "pt": "D-A-N-I-E-L.", "ok": True, "fb": "Soletra o nome letra por letra."}]},
+            {"npc": "Great. And your phone number?", "pt": "Ótimo. E seu telefone?", "opts": [
+                {"en": "It's five five five, one two three four.", "pt": "É cinco cinco cinco, um dois três quatro.", "ok": True, "fb": "Diz o número em grupos, com clareza."},
+                {"en": "Yes, I have a phone.", "pt": "Sim, eu tenho um telefone.", "ok": False, "fb": "Ela pediu o número, não perguntou se você tem telefone."},
+                {"en": "It's Daniel.", "pt": "É Daniel.", "ok": False, "fb": "Você já disse o nome; agora ela quer o número."}]},
+            {"npc": "Perfect. Is that your cell phone?", "pt": "Perfeito. É seu celular?", "opts": [
+                {"en": "Sorry, what's your number?", "pt": "Desculpe, qual é o seu número?", "ok": False, "fb": "Ela perguntou sobre o seu celular; você responde, não pergunta de volta."},
+                {"en": "Yes, I am.", "pt": "Sim, eu sou.", "ok": False, "fb": "A pergunta é com is that…; responda Yes, it is."},
+                {"en": "Yes, it is. Thank you!", "pt": "É sim. Obrigado!", "ok": True, "fb": "Confirma com a forma correta e agradece."}]},
+            {"npc": "You're all set. Have a nice day!", "pt": "Está tudo certo. Tenha um bom dia!", "opts": [
+                {"en": "You too! Bye.", "pt": "Você também! Tchau.", "ok": True, "fb": "Retribui o desejo e se despede."},
+                {"en": "How do you spell that?", "pt": "Como se escreve isso?", "ok": False, "fb": "A conversa já terminou; não há mais nada para soletrar."},
+                {"en": "Can I have your name?", "pt": "Pode me dar seu nome?", "ok": False, "fb": "Essa fala é de quem cadastra, e o cadastro já acabou."}]},
+        ]},
+)
