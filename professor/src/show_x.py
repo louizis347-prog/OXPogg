@@ -3,7 +3,7 @@
 import sys, os, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_v5 as B
-n = int(sys.argv[1]); nb = B.NB[n - 1]; S = B.supp(n)
+n = int(sys.argv[1]); nb = B.NB[B.nb_index(n) - 1]; S = B.supp(n)
 base = [f for f in nb['fr'] if f['k'] == 'nbchat'][0]
 lines = [l for l in base['lines'] if l[1] not in B.FILLER]
 print('AULA %d · %s · cena Neighbors: %s' % (n, nb['t'], nb.get('sc')))
