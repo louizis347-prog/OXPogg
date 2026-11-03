@@ -327,7 +327,7 @@ RS.kitchen=function(u){var r=rng(141),i;
    +'<g transform="translate(76 156)"><rect x="-44" y="-10" width="88" height="14" fill="#2a2d32" rx="3"/><ellipse cx="-20" cy="-12" rx="16" ry="4" fill="#555"/><ellipse cx="20" cy="-12" rx="16" ry="4" fill="#555"/><path d="M-34 -14h28l-3 -20h-22z" fill="#c9553d"/><rect x="-14" y="-38" width="8" height="5" fill="#222"/><g filter="url(#@b)" opacity=".5"><ellipse cx="-20" cy="-48" rx="6" ry="10" fill="#fff"/></g></g>'
    +'<g transform="translate(400 70)"><rect x="-30" y="0" width="60" height="150" rx="6" fill="#e9eef2"/><rect x="-30" y="56" width="60" height="4" fill="#9aa6b0"/><rect x="22" y="14" width="4" height="26" fill="#9aa6b0"/><rect x="22" y="70" width="4" height="30" fill="#9aa6b0"/></g>'
    +'<g>'+[0,1,2].map(function(k){return rect(190+k*22,138,16,18,['#e34a5f','#f7c948','#3f8fe0'][k],3)}).join('')+'<rect x="150" y="146" width="30" height="4" fill="#fff" opacity=".4"/></g>'
-   +'<g stroke="#2a2d32" stroke-width="2">'+[[170,0,98],[210,0,92]].map(function(p){return '<path d="M'+p[0]+' 0V'+p[2]}).join('')+'</g>'+'<circle cx="170" cy="108" r="14" fill="#444"/><circle cx="210" cy="100" r="11" fill="#666"/>'
+   +'<g stroke="#2a2d32" stroke-width="2">'+[[170,0,98],[210,0,92]].map(function(p){return '<path d="M'+p[0]+' 0V'+p[2]+'"/>'}).join('')+'</g>'+'<circle cx="170" cy="108" r="14" fill="#444"/><circle cx="210" cy="100" r="11" fill="#666"/>'
    +'<ellipse cx="240" cy="232" rx="150" ry="22" fill="#c9553d" opacity=".4"/>'
    +lamp(250,16,1.6)+shad(300,250,50)+crowd([[300,252,2.0,'#7C4DFF']])
    +bokeh(r,8,40,150,['#ffe0a0','#ffb86b'])+FIN+'</svg>';
