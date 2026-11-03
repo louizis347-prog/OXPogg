@@ -69,8 +69,8 @@ var ART=[
  {rs:'park',cast:[ANA(38,0,{prop:'cup'}),FR('Sam','m',66,1)]},{rs:'cafe',cast:[ANA(32),EV(68,1,{prop:'cup'})]}];
 window.L1VIS={person:person,stage:stage,art:ART,H:H,$:$,$$:$$,ANA:ANA,EV:EV,FR:FR,toast:function(t){var el=document.createElement('div');el.className='q1v-toast';el.textContent=t;document.body.appendChild(el);setTimeout(function(){el.classList.add('out')},1800);setTimeout(function(){el.remove()},2300)}};
 /* ---------- decoração por quadro: painel de cena nítido ao lado do conteúdo ---------- */
-var W=[44,40,36,32,28,24],HH=[26,22,18,15,12,9];
-function fit(b){if(!b||!b.isConnected)return;b.classList.remove('q1v-tight','q1v-nohero');
+var W=[50,46,42,38,34,30],HH=[30,27,24,21,18,15];
+function fit(b){if(!b||!b.isConnected)return;b.classList.remove('q1v-tight','q1v-nohero');if(window.matchMedia&&matchMedia('(max-width:820px)').matches){b.scrollTop=0;return}
   function set(i){b.style.setProperty('--q1w',W[i]);b.style.setProperty('--q1h',HH[i])}
   function over(){return b.scrollHeight-b.clientHeight>2}
   var i=0;set(0);for(i=0;i<W.length&&over();i++)set(i);
@@ -89,7 +89,7 @@ function react(b){var hero=$('.q1v-hero',b);if(!hero)return;$$(b,'[data-answer],
 var DECOR={};window.L1DECOR=DECOR;
 var previous=window.RL_REGISTER;
 window.RL_REGISTER=function(R,A){if(previous)previous(R,A);var orig=R.q1;if(!orig)return;
- R.q1=function(p,b){try{orig(p,b)}catch(err){if(!DECOR[p.kind])throw err}var art=p.art||ART[p._i]||ART[0];try{
+ R.q1=function(p,b){try{b.scrollTop=0}catch(z){}try{orig(p,b)}catch(err){if(!DECOR[p.kind])throw err}var art=p.art||ART[p._i]||ART[0];try{
    b.classList.add('q1v');
    var hero=$('.q1-art',b);
    if(hero&&(p.kind==='cover'||p.kind==='work'||p.kind==='finish')){var d=heroEl(art,'cover');hero.replaceWith(d)}
