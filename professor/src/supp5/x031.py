@@ -3,18 +3,18 @@ X = dict(
  mini=[
   {'who': 'Mei', 'en': 'Hi! What can I get started for you {today|this morning|now}?', 'pt': 'Oi! O que posso começar a preparar para você {hoje|esta manhã|agora}?'},
   {'who': 'You', 'en': 'A {latte|cappuccino|coffee}, please.', 'pt': 'Um {latte|cappuccino|café}, por favor.'},
-  {'who': 'Mei', 'en': 'What size? Small, {medium|large|small} or {large|medium|extra large}?', 'pt': 'Que tamanho? Pequeno, {médio|grande|pequeno} ou {grande|médio|extra grande}?'},
+  {'who': 'Mei', 'en': 'What size? Small, medium or {large|extra large|giant}?', 'pt': 'Que tamanho? Pequeno, médio ou {grande|extra grande|gigante}?'},
   {'who': 'You', 'en': '{Medium|Large|Small}. With {oat milk|soy milk|sugar}.', 'pt': '{Médio|Grande|Pequeno}. Com {leite de aveia|leite de soja|açúcar}.'}],
  dlg=[
   {'who': 'Mei', 'en': 'Hi! What can I get started for you?', 'pt': 'Oi! O que posso preparar?'},
   {'who': 'You', 'en': 'A {latte|cappuccino|tea}, please.', 'pt': 'Um {latte|cappuccino|chá}, por favor.'},
   {'who': 'Mei', 'en': 'What size? Small, medium or large?', 'pt': 'Que tamanho? Pequeno, médio ou grande?'},
   {'who': 'You', 'en': '{Medium|Large|Small}. With {oat milk|soy milk|sugar}.', 'pt': '{Médio|Grande|Pequeno}. Com {leite de aveia|leite de soja|açúcar}.'},
-  {'who': 'Mei', 'en': '{Hot|Cold|Warm} or iced?', 'pt': '{Quente|Frio|Morno} ou gelado?'},
+  {'who': 'Mei', 'en': 'Hot or {iced|blended}?', 'pt': 'Quente ou {gelado|batido com gelo}?'},
   {'who': 'You', 'en': '{Hot|Iced|Warm}, please.', 'pt': '{Quente|Gelado|Morno}, por favor.'},
   {'who': 'Mei', 'en': 'Anything to {eat|drink|add}?', 'pt': 'Algo para {comer|beber|acrescentar}?'},
   {'who': 'You', 'en': 'A {blueberry|banana|chocolate} muffin.', 'pt': 'Um muffin de {mirtilo|banana|chocolate}.'},
-  {'who': 'Mei', 'en': 'Have a great {day|morning|afternoon}!', 'pt': 'Tenha um ótimo {dia|manhã|tarde}!'}],
+  {'who': 'Mei', 'en': 'Have a great {day|morning|afternoon}!', 'pt': 'Tenha {um ótimo dia|uma ótima manhã|uma ótima tarde}!'}],
  vocab=[
   {'w': 'latte', 'pt': 'latte (café com leite)', 'e': '☕', 'ex': ['A latte, please.', 'This latte is hot.']},
   {'w': 'sugar', 'pt': 'açúcar', 'e': '🍬', 'ex': ['Can I have sugar?', 'No sugar, please.']},
