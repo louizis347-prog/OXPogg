@@ -1,0 +1,22 @@
+"""Bloco complementar da aula 59: leitura guiada, laboratório de sons, cartões de cultura."""
+EN = [['Evan is new in Chicago.', 'He is at the plaza with a small bag.', 'He wants to see the lake, but he is not sure where it is.', 'The sun is out, and the day is warm.'], ['“**Excuse me, is the lake far from here?**” he asks a woman.', '“**Not really. It’s ten minutes on foot**,” she answers.', '“**Can I walk there?**” Evan asks.', 'He looks at his phone, but he likes to ask people.'], ['“**Yes. Go straight and then turn right**,” she says.', '“**Is it a nice walk?**” he asks.', '“**Yes, you’ll see many trees and bikes**,” she says.', 'Evan smiles.'], ['“**Should I take a bus?**” he asks.', '“**No, walking is better**,” she says.', 'Evan is a little tired, but the walk is short.', '“**Enjoy your walk!**” she says.', 'He says thank you and starts to walk.'], ['On the way, Evan thinks of Marco Polo, a traveler from Venice.', 'The book “The Travels of Marco Polo” says he went to China in the 1200s.', 'He traveled for years, by ship, by camel and on foot.', '“**That’s far!**” Evan says, and he laughs.', 'His own trip is only ten minutes.', 'He sees the lake, the trees and many bikes.']]
+PT = [
+ ['O Evan é novo em Chicago.', 'Ele está na praça com uma bolsa pequena.', 'Ele quer ver o lago, mas não tem certeza de onde fica.', 'O sol está forte, e o dia está quente.'],
+ ['“**Com licença, o lago fica longe daqui?**”, ele pergunta a uma mulher.', '“**Nem tanto. São dez minutos a pé**”, ela responde.', '“**Posso ir a pé?**”, o Evan pergunta.', 'Ele olha o celular, mas gosta de perguntar às pessoas.'],
+ ['“**Sim. Siga em frente e depois vire à direita**”, ela diz.', '“**É um bom passeio?**”, ele pergunta.', '“**Sim, você verá muitas árvores e bicicletas**”, ela diz.', 'O Evan sorri.'],
+ ['“**Devo pegar um ônibus?**”, ele pergunta.', '“**Não, andar é melhor**”, ela diz.', 'O Evan está um pouco cansado, mas o caminho é curto.', '“**Aproveite a caminhada!**”, ela diz.', 'Ele agradece e começa a caminhar.'],
+ ['No caminho, o Evan pensa em Marco Polo, um viajante de Veneza.', 'O livro “As Viagens de Marco Polo” diz que ele foi à China no século XIII.', 'Ele viajou por anos, de navio, de camelo e a pé.', '“**Isso é longe!**”, diz o Evan, e ri.', 'A viagem dele é só de dez minutos.', 'Ele vê o lago, as árvores e muitas bicicletas.'],
+]
+Y = {'sentences': [[{'en': e, 'pt': p} for e, p in zip(a, b)] for a, b in zip(EN, PT)],
+ 'soundlab': {'focus': 'palavras fracas: from, and, can',
+  'what': 'Em inglês, palavras pequenas como “from”, “and” e “can” quase desaparecem na frase. Brasileiros costumam dar a mesma força a todas as palavras, e o ritmo fica lento e quebrado.',
+  'how': 'Dê força só às palavras de conteúdo (LAKE, FAR, STRAIGHT, RIGHT) e passe rápido pelas pequenas: from soa “frm”, and soa “n”, can soa “kn”. Marque o ritmo batendo na mesa nas palavras fortes.',
+  'tip': 'O “l” de “walk” é mudo: diga “uók”. Treine “Can I walk there?” falando as palavras pequenas bem baixinho.',
+  'words': [{'w': 'lake', 'pt': 'lago'}, {'w': 'straight', 'pt': 'em frente'}, {'w': 'minutes', 'pt': 'minutos'}],
+  'pairs': [{'a': 'Can I walk there?', 'b': 'Can’t I walk there?'}, {'a': 'Is it far?', 'b': 'Is it fur?'}, {'a': 'Go straight and turn right.', 'b': 'Go straight, then turn right.'}],
+  'phrase': {'en': 'Is the lake far from here?', 'pt': 'O lago fica longe daqui?'}},
+ 'cards': [
+  {'icon': '⏱️', 'big': 'Minutes', 'label': 'Distância em minutos', 'sub': 'Nos EUA, as pessoas costumam dizer a distância em minutos: “ten minutes on foot” ou “five minutes by car”. Também falam em blocks (quarteirões). Em estradas, as placas costumam mostrar milhas.'},
+  {'icon': '🚶', 'big': 'Walkable', 'label': 'Cidades para andar', 'sub': 'Algumas cidades americanas, como Chicago, têm centros onde dá para ir a pé a muitos lugares. Em outras, o carro é necessário. Antes de sair, pergunte “Can I walk there?” para saber se vale a pena.'},
+  {'icon': '🏞️', 'big': 'Lakefront', 'label': 'O lago em Chicago', 'sub': 'Chicago fica na margem do Lago Michigan, que é tão grande que parece o mar. Muita gente caminha, corre ou anda de bicicleta na beira do lago. Há praias e parques com trilhas.'},
+  {'icon': '🚲', 'big': 'Bike lane', 'label': 'Ciclovias', 'sub': 'Em muitas cidades dos EUA, há ciclovias e bicicletas para alugar. Se você caminhar perto delas, olhe antes de atravessar. “Watch out for bikes” é um aviso comum nos parques perto do lago.'}]}

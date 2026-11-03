@@ -1,0 +1,22 @@
+"""Bloco complementar da aula 58: leitura guiada, laboratório de sons, cartões de cultura."""
+EN = [['Mei and her friend Lia are in Seattle.', 'They are at the station.', 'There is a small window for city tour tickets.', 'A man waits behind the window.'], ['“**Hi! Two tickets for the tour, please**,” Mei says.', '“**Adults or children?**” the man asks.', '“**Two adults**,” she says.', '“**That’s forty dollars**,” he says.'], ['Mei asks, “**Is there a student discount?**”', '“**Yes, with a student card**,” the man says.', 'The two friends have their cards.', '“**Here you go**,” Mei says. The price is lower now.', '“**What time is the tour?**” “**At two o’clock.**”'], ['“**Enjoy the tour!**” the man says.', 'Mei and Lia have one hour, so they sit on a bench near the platform.', 'A worker calls, “**Next, please!**” and the line moves.', 'A train comes, and the people get on.'], ['Mei thinks of an old American folk song, “I’ve Been Working on the Railroad.”', 'People sing it about workers on the railroad.', 'In the song, they say, “**All aboard!**”', 'At two o’clock, the guide says it too, and the tour starts.', 'Mei is happy.', 'Tickets are easy when you know the words.']]
+PT = [
+ ['A Mei e sua amiga Lia estão em Seattle.', 'Elas estão na estação.', 'Há um pequeno guichê de ingressos para o passeio pela cidade.', 'Um homem espera atrás do guichê.'],
+ ['“**Oi! Dois ingressos para o passeio, por favor**”, diz a Mei.', '“**Adultos ou crianças?**”, o homem pergunta.', '“**Dois adultos**”, ela diz.', '“**São quarenta dólares**”, ele diz.'],
+ ['A Mei pergunta: “**Tem desconto para estudante?**”', '“**Sim, com carteirinha**”, o homem diz.', 'As duas amigas têm suas carteirinhas.', '“**Aqui está**”, diz a Mei. O preço agora é menor.', '“**Que horas é o passeio?**” “**Às duas horas.**”'],
+ ['“**Aproveitem o passeio!**”, diz o homem.', 'A Mei e a Lia têm uma hora, então sentam num banco perto da plataforma.', 'Um funcionário chama: “**Próximo, por favor!**” e a fila anda.', 'Um trem chega, e as pessoas entram.'],
+ ['A Mei pensa numa antiga canção folclórica americana, “I’ve Been Working on the Railroad”.', 'As pessoas a cantam sobre os trabalhadores da ferrovia.', 'Na canção, dizem: “**Todos a bordo!**”', 'Às duas horas, o guia diz o mesmo, e o passeio começa.', 'A Mei está feliz.', 'Comprar ingressos é fácil quando você sabe as palavras.'],
+]
+Y = {'sentences': [[{'en': e, 'pt': p} for e, p in zip(a, b)] for a, b in zip(EN, PT)],
+ 'soundlab': {'focus': 'ligação: consoante final + vogal inicial',
+  'what': 'Em inglês, quando uma palavra termina em consoante e a próxima começa com vogal, os sons se ligam: “adults or” soa quase como uma palavra só. Brasileiros costumam separar cada palavra e o ritmo fica quebrado.',
+  'how': 'Mova o último som da primeira palavra para o começo da segunda: a-DULTS-or, HE-ryou-go, tu-o-CLOCK. Não pare entre as palavras e deixe o ar continuar.',
+  'tip': 'Fale devagar como se fosse uma música: “adults-or-children” numa única onda de voz.',
+  'words': [{'w': 'adults', 'pt': 'adultos'}, {'w': 'dollars', 'pt': 'dólares'}, {'w': 'tickets', 'pt': 'ingressos'}],
+  'pairs': [{'a': 'Here you go.', 'b': 'Hear you go.'}, {'a': 'At two o’clock.', 'b': 'At ten o’clock.'}, {'a': 'Two adults.', 'b': 'Two adult.'}],
+  'phrase': {'en': 'Adults or children? Here you go.', 'pt': 'Adultos ou crianças? Aqui está.'}},
+ 'cards': [
+  {'icon': '🎟️', 'big': 'Ticket window', 'label': 'No guichê', 'sub': 'Em passeios e estações dos EUA, você fala com o atendente no guichê ou compra numa máquina. Diga quantos ingressos quer e para quem. Muitos lugares também vendem pelo celular, com um código para mostrar na entrada.'},
+  {'icon': '🎓', 'big': 'Student card', 'label': 'Desconto de estudante', 'sub': 'Muitos lugares dão desconto para estudantes, mas você costuma precisar mostrar um cartão de estudante ou documento da escola. O desconto não é automático: pergunte “Is there a student discount?” antes de pagar.'},
+  {'icon': '💲', 'big': 'Plus tax', 'label': 'Imposto à parte', 'sub': 'Nos EUA, o preço na placa muitas vezes não inclui o imposto sobre vendas, que é somado na hora de pagar. Por isso o total pode ser um pouco maior do que o número que você viu.'},
+  {'icon': '🕑', 'big': 'Be early', 'label': 'Chegue antes', 'sub': 'Para um passeio com horário marcado, é comum chegar alguns minutos antes. Se o passeio está lotado, o atendente oferece outro horário. Pergunte “What time is the next tour?” para saber a próxima saída.'}]}

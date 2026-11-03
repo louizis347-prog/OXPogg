@@ -15,6 +15,15 @@ FILLER = {'That sounds good. What should we do next?', 'Let me check the details
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
 bold = lambda s: re.sub(r'\{\{(.+?)\}\}', r'**\1**', s or '')
+# Neighbors da aula n: 1-50 sequencial; 51-200 pula situações que já apareceram antes (sem repetir situação)
+SKIP_NB = {150, 151, 154, 159, 160, 161, 162, 164, 167, 168, 170, 171, 179, 180, 206}
+def nb_index(n):
+    if n <= 50: return n
+    k, c = 50, 50
+    while c < n:
+        k += 1
+        if k not in SKIP_NB: c += 1
+    return k
 def fr(e, k): return [f for f in e['fr'] if f['k'] == k]
 def supp(n):
     f = os.path.join(HERE, 'supp5', 's%03d.py' % n)
@@ -81,7 +90,7 @@ def prev_ctx(n):
     if not items: return None
     return dict(items=items[:6], words=words[:6], quiz=quiz[:4], say=say)
 def build(n):
-    S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[n - 1]
+    S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[nb_index(n) - 1]
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]

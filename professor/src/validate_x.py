@@ -8,7 +8,7 @@ def groups(t): return [g.split('|') for g in SW.findall(t)]
 def check(n):
     E = []; X = B.extras(n)
     if not X: return ['sem bloco extra']
-    nb = B.NB[n - 1]; base = [f for f in nb['fr'] if f['k'] == 'nbchat'][0]
+    nb = B.NB[B.nb_index(n) - 1]; base = [f for f in nb['fr'] if f['k'] == 'nbchat'][0]
     lines = [l for l in base['lines'] if l[1] not in B.FILLER]; who = [l[0] for l in lines]
     k = X.get('key') or {}
     if not (k.get('big') and k.get('label') and k.get('sub')): E.append('key: big/label/sub')

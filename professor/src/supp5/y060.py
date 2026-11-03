@@ -1,0 +1,22 @@
+"""Bloco complementar da aula 60: leitura guiada, laboratório de sons, cartões de cultura."""
+EN = [['Uma lives in Portland.', 'This morning, she is late for class.', 'She walks fast to the corner.', 'The light is red, but she is ready to cross.', 'Many people wait there with her.', 'There is a lot of traffic on the street.'], ['Her friend Carlos is at the corner too.', '“**Wait! The light is red**,” he says.', '“**Thanks. When can I cross?**” Uma asks.', '“**When the light is green**,” Carlos says.'], ['The light changes.', '“**Now it’s green. Let’s go**,” says Uma.', '“**Look both ways!**” Carlos says.', '“**Good point. Cars are coming**,” she says.', 'A car turns the corner, and then it stops.', 'The driver waves at them.'], ['“**Be careful with bikes too**,” Carlos says.', 'A bike goes fast on the street.', '“**Thanks, I will**,” Uma says.', 'They walk across on the crosswalk.', '“**Have a safe walk!**” Carlos says. Uma smiles.'], ['Many children’s shows teach safe habits.', 'Sesame Street, a TV show from 1969, uses simple steps for children.', 'First, stop. Next, look. Then, listen. Finally, cross.', 'Uma knows the steps.', '“**Safety first**,” she says, and she runs to class.']]
+PT = [
+ ['A Uma mora em Portland.', 'Esta manhã, ela está atrasada para a aula.', 'Ela anda rápido até a esquina.', 'O sinal está vermelho, mas ela está pronta para atravessar.', 'Muita gente espera ali com ela.', 'Há muito trânsito na rua.'],
+ ['O amigo dela, Carlos, também está na esquina.', '“**Espere! O sinal está vermelho**”, ele diz.', '“**Valeu. Quando posso atravessar?**”, pergunta a Uma.', '“**Quando o sinal estiver verde**”, diz o Carlos.'],
+ ['O sinal muda.', '“**Agora está verde. Vamos**”, diz a Uma.', '“**Olhe para os dois lados!**”, diz o Carlos.', '“**Boa. Estão vindo carros**”, ela diz.', 'Um carro faz a curva na esquina e então para.', 'O motorista acena para eles.'],
+ ['“**Cuidado com as bicicletas também**”, diz o Carlos.', 'Uma bicicleta passa rápido na rua.', '“**Valeu, vou ter cuidado**”, diz a Uma.', 'Eles atravessam na faixa de pedestres.', '“**Boa caminhada!**”, diz o Carlos. A Uma sorri.'],
+ ['Muitos programas infantis ensinam hábitos seguros.', 'Sesame Street, um programa de TV de 1969, usa passos simples para as crianças.', 'Primeiro, pare. Depois, olhe. Em seguida, escute. Por fim, atravesse.', 'A Uma conhece os passos.', '“**Segurança em primeiro lugar**”, diz ela, e corre para a aula.'],
+]
+Y = {'sentences': [[{'en': e, 'pt': p} for e, p in zip(a, b)] for a, b in zip(EN, PT)],
+ 'soundlab': {'focus': 'o som de R e L: light, red, careful',
+  'what': 'Em inglês, o R não vibra como o “rr” de “carro” e o L final não vira “u”. Se você trocar um som pelo outro, “light” pode soar como “right”, e a pessoa entende outra coisa.',
+  'how': 'Para o L, encoste a ponta da língua atrás dos dentes de cima e deixe a voz sair pelos lados. Para o R, enrole a língua para trás sem tocar em nada, com os lábios um pouco redondos: “rrred”.',
+  'tip': 'Diga “light” e “right” em voz alta, olhando no espelho: no L você vê a língua; no R os lábios ficam redondos.',
+  'words': [{'w': 'red', 'pt': 'vermelho'}, {'w': 'light', 'pt': 'sinal'}, {'w': 'careful', 'pt': 'cuidadoso'}],
+  'pairs': [{'a': 'light', 'b': 'right'}, {'a': 'lane', 'b': 'rain'}, {'a': 'long', 'b': 'wrong'}],
+  'phrase': {'en': 'The light is red. Be careful!', 'pt': 'O sinal está vermelho. Cuidado!'}},
+ 'cards': [
+  {'icon': '🚦', 'big': 'Walk / Don’t Walk', 'label': 'O sinal de pedestres', 'sub': 'Nos EUA, o sinal de pedestres costuma mostrar um boneco andando (ou a palavra WALK) para atravessar, e uma mão laranja (DON’T WALK) para esperar. Se a mão estiver piscando, não comece a atravessar.'},
+  {'icon': '🔘', 'big': 'Push button', 'label': 'O botão do poste', 'sub': 'Em muitas esquinas há um botão no poste. Aperte uma vez e espere o sinal para pedestres. Apertar várias vezes não faz o sinal mudar mais rápido. Alguns botões falam “Wait” e depois “Walk sign is on”.'},
+  {'icon': '🚶', 'big': 'Jaywalking', 'label': 'Atravessar fora da faixa', 'sub': 'Em muitas cidades dos EUA, atravessar fora da faixa de pedestres é proibido e pode dar multa. Procure o crosswalk, a faixa branca no chão. Mesmo com sinal verde, olhe sempre antes de entrar na rua.'},
+  {'icon': '🚲', 'big': 'Bikes & cars', 'label': 'Carros e bicicletas', 'sub': 'Nos EUA, os carros andam pela direita. Em cidades como Portland, há muitas bicicletas e faixas para elas. Olhe para os dois lados e escute. Carros podem virar na esquina enquanto você atravessa.'}]}
