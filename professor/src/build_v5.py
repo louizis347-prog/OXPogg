@@ -36,7 +36,8 @@ def build(n):
     speak = fr(en, 'pgspeak')[0]['items'] if fr(en, 'pgspeak') else []
     miss = (fr(en, 'pgmission')[0]['missions'] if fr(en, 'pgmission') else [{}])[0].get('data', {})
     wrap = fr(en, 'wrap')[0]; nwrap = fr(nb, 'wrap')[0]
-    tap = fr(nb, 'nbtap')[0]['items']; ctx = fr(nb, 'nbctx')[0]['items'] if fr(nb, 'nbctx') else []
+    tap = fr(nb, 'nbtap')[0]['items']
+    for _i in tap: _i.setdefault('q', _i.get('pt') or 'Listen and choose.'); ctx = fr(nb, 'nbctx')[0]['items'] if fr(nb, 'nbctx') else []
     shadow = fr(nb, 'nbshadow')[0]['items']; vocab = fr(nb, 'nbvocab')[0]['items'] if fr(nb, 'nbvocab') else []
     dic = fr(nb, 'nbdict')[0]['items'] if fr(nb, 'nbdict') else []
     sheet = [i for f in fr(en, 'pgsheet') for i in f.get('items', [])]
@@ -61,8 +62,7 @@ def build(n):
     rdg = dict(S.get('reading', {})); rdg['t'] = 'q_read'
     if 'text' not in rdg: rdg.update(genre='Story', title=en['a']['w'], text=[bold(' '.join(s[0] for s in rd))], glossary=[])
     rdg['art'] = art('rdg'); rdg['title'] = 'Reading quest — ' + rdg.get('title', ''); P['q_read'] = rdg
-    P['rl_dialog'] = dict(t='rl_dialog', title='Dialogue — ' + nb['t'], qs=[dict(q=i['q'], opts=[o[1] for o in i['opts']], ans=i['a']) for i in tap[:4]],
-        retell=dict(prompt='Retell the conversation in your own words.', starters=['First,', 'Then,', 'In the end,']))
+    P['rl_dialog'] = dict(t='rl_dialog', title='Dialogue — ' + nb['t'], qs=[], retell=dict(prompt='Retell the conversation in your own words.', starters=['First,', 'Then,', 'In the end,']))
     cv = S.get('convo')
     if not cv:
         turns = []; ls = base['lines']
@@ -71,6 +71,7 @@ def build(n):
                 turns.append(dict(npc=strip(ls[i - 1][1]), pt=ls[i - 1][2], opts=[dict(en=strip(e), pt=p, ok=True, fb='Natural reply for this situation.')]))
         cv = dict(npc=dict(name=npc, face=npcface), story=strip(nb['p']), turns=turns)
     cv = dict(cv); cv['npc'] = dict(cv.get('npc') or {'name': npc}); cv['npc'].setdefault('face', npcface); cv['npc'].setdefault('name', npc)
+    P['rl_dialog']['qs'] = [dict(q='%s says: “%s” — what is the natural reply?' % (npc, t['npc']), opts=[o['en'] for o in t['opts']], ans=[o['ok'] for o in t['opts']].index(True)) for t in cv['turns'][:4] if len(t['opts']) == 3]
     P['q_choose'] = dict(t='q_choose', title='Choose your reply', **cv)
     P['rl_chunks'] = dict(t='rl_chunks', title='Useful expressions', items=[dict(en=strip(i['en']), pt=i['pt'], use=strip(i['use']), reg=i.get('tag', ''), pri=k < 4) for k, i in enumerate(exps[:8])])
     pats = [dict(name=rule.get('head', title), formula='**' + rule.get('head', '') + '**', ex=[u['en'] for u in rule.get('uses', [])][:3], main=True)] if rule else []
@@ -93,7 +94,7 @@ def build(n):
         dict=[dict(say=strip(d['t'])) for d in dic[:3]])
     if S.get('errors'): games['errors'] = S['errors']
     P['q_arcade'] = dict(t='q_arcade', title='Practice arcade', games=games)
-    P['rl_role'] = dict(t='rl_role', title='Boss mission — ' + nb['t'], brief=dict(teacher='You are ' + npc + '. Change the plan during the scene.', student='You: ' + strip(nhero.get('mission', ''))),
+    P['rl_role'] = dict(t='rl_role', title='Boss mission — ' + nb['t'], brief=dict(teacher='You are ' + npc + '. Change the plan during the scene.', student=(cv.get('story') or 'Use today’s expressions to solve the situation.') + ' You are the customer / visitor.'),
         orders=[strip(s[0]) for s in speak[:3]] or ['Say the key expressions'], complications=S.get('complications', ['Something is not available.', 'The other person did not hear you: repeat.', 'Confirm one detail.']),
         rounds=[dict(label='With support', desc='Chunks on screen', help=[strip(i['en']) for i in exps[:4]]), dict(label='Keywords', desc='Only keywords', help=[v[0] for v in vocab[:5]], kw=True), dict(label='No script', desc='Free', help=[])],
         success=['I make my request.', 'I ask one question.', 'I close politely.'])
