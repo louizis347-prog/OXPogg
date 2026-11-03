@@ -120,6 +120,6 @@ if __name__ == '__main__':
     a = sys.argv[1:]
     if '--table' in a:
         for i in range(len(EN)): print('R%d | %s | %s' % (i + 1, EN[i]['t'], EN[i]['a']['w']))
-        for i in range(50): print('N%d | %s' % (i + 1, NB[i]['t']))
+        for i in range(100): print('N%d | %s' % (i + 1, NB[i]['t']))
     else:
-        for n in (range(1, 51) if '--all' in a else map(int, a)): print('ok', build(n))
+        for n in (range(1, 101) if '--all' in a else map(int, a)): print('ok', build(n))
