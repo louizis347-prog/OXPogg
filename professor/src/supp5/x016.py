@@ -62,7 +62,7 @@ convo=dict(npc=dict(name='Claire'), story='Você passeia com seu cachorro no par
   dict(en='No, thanks.', pt='Não, obrigado.', ok=False, fb='Não é uma oferta; agradeça ao elogio.')]),
  dict(npc='How old is he?', pt='Quantos anos ele tem?', opts=[
   dict(en='His name is Max.', pt='O nome dele é Max.', ok=False, fb='Você já disse o nome; agora ela quer a idade.'),
-  dict(en='He has three years.', pt='Ele tem três anos (traduzido ao pé da letra).', ok=False, fb='Em inglês, idade usa to be: He is three years old.'),
+  dict(en='He has three years.', pt='Ele tem três anos.', ok=False, fb='Em inglês, idade usa to be: He is three years old.'),
   dict(en='He\'s three years old.', pt='Ele tem três anos.', ok=True, fb='Idade com to be.')]),
  dict(npc='Does he like people?', pt='Ele gosta de gente?', opts=[
   dict(en='Yes, he loves people. Do you have a pet?', pt='Sim, ele adora gente. Você tem um bichinho?', ok=True, fb='Responde e devolve a conversa.'),

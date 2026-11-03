@@ -62,7 +62,7 @@ convo=dict(npc=dict(name='Evan'), story='Numa praça de Chicago, você e Evan fa
   dict(en='Good night!', pt='Boa noite!', ok=False, fb='É manhã; good night é despedida à noite.')]),
  dict(npc='But it\'s cold!', pt='Mas está frio!', opts=[
   dict(en='Chicago is always windy.', pt='Chicago é sempre ventosa.', ok=True, fb='Explica com um fato sobre a cidade.'),
-  dict(en='I have cold.', pt='Eu tenho frio (traduzido ao pé da letra).', ok=False, fb='Em inglês: I am cold ou It is cold.'),
+  dict(en='I have cold.', pt='Eu tenho frio.', ok=False, fb='Em inglês: I am cold ou It is cold.'),
   dict(en='Yes, I am.', pt='Sim, eu sou.', ok=False, fb='Para o tempo use it\'s, não I am.')]),
  dict(npc='Is it hot in summer?', pt='Faz calor no verão?', opts=[
   dict(en='Yes, very hot. And in winter, snow!', pt='Sim, muito calor. E no inverno, neve!', ok=True, fb='Responde e acrescenta o inverno.'),

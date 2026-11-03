@@ -69,7 +69,7 @@ def focus(L, P, S, ctx):
     learner = me_sp if me_sp != 'You' else 'Mia'
     npc = next((x for x in speakers if x != me_sp), npc); npcface = face_of(npc)
     sc, sc2 = nb.get('sc') or 'street', en.get('sc') or 'street'
-    pl = [x for x in (X.get('scenes') or {}).get('pool', []) if x in RS] or pool(sc if sc in RS else sc2, sc2); rsn = [0]
+    pl = [x for x in (X.get('scenes') or {}).get('pool', []) if x in RS and x != 'counter'] or pool(sc if sc in RS else sc2, sc2); rsn = [0]
     def scene():
         s = pl[rsn[0] % len(pl)]; rsn[0] += 1; return s
     xs = X.get('scenes') or {}
@@ -99,10 +99,15 @@ def focus(L, P, S, ctx):
     add('culture', 'work', 'A obra e a situação', a=art('both', 1), work={'title': a.get('w', ''), 'year': a.get('y', ''), 'note': re.sub(r'\s+', ' ', a.get('d', ''))[:420]},
         question='Como a história dessa obra ajuda você a imaginar a situação de hoje? Diga uma ideia em inglês.')
     # 3-4 fatos
-    trues = [m for m in cu['mythfact'] if m['ans']]
-    facts = [{'big': t['s'], 'label': 'Fato cultural', 'sub': t['why']} for t in trues]
-    pol = cu.get('polite')
-    if pol: facts.append({'big': 'Soa natural', 'label': 'Educação e tom', 'sub': clean(pol)})
+    # fatos: não repetem o "mito ou fato"; vêm de gancho, tom, comparação e dos textos do cotidiano
+    cm = cu.get('compare') or {}
+    facts = []
+    if cu.get('hook'): facts.append({'big': nb['t'], 'label': 'O contexto', 'sub': clean(cu['hook'])})
+    if cu.get('polite'): facts.append({'big': 'Soa natural', 'label': 'Educação e tom', 'sub': clean(cu['polite'])})
+    for w in cu.get('wild', [])[:2]:
+        d = w.get('decode') or {}
+        facts.append({'big': w.get('kind', 'No dia a dia'), 'label': 'No dia a dia', 'sub': clean(d.get('why', ''))})
+    if cm.get('tip'): facts.append({'big': 'Ponte de uso', 'label': 'Brasil × EUA', 'sub': clean(cm['tip'])})
     while len(facts) < 4: facts.append({'big': nb['t'], 'label': 'Situação', 'sub': clean(cu['hook'])})
     first = X.get('key') or {'big': nb['t'], 'label': 'Situação', 'sub': clean(cu['hook'])}
     mini = list(X.get('mini') or [])
@@ -110,7 +115,7 @@ def focus(L, P, S, ctx):
         for l in lines[:4]:
             e2, p2 = swaps(clean(l['en']), l['pt'], vocab); mini.append({'who': l['who'], 'en': e2, 'pt': p2})
     add('culture', 'facts', 'A situação em contexto', a=art('both', 2), facts=[first] + facts[:2], mini=mini, me=me_sp, faces=faces)
-    add('culture', 'facts', 'Costumes e escolhas', a=art('npc'), facts=facts[2:4] if len(facts) > 3 else facts[:2])
+    add('culture', 'facts', 'Costumes e escolhas', a=art('npc'), facts=facts[2:5] if len(facts) > 3 else facts[:2])
     add('culture', 'compare', 'Brasil e Estados Unidos', a=art('pair'), compare=cu['compare'])
     for w in cu['wild'][:2]:
         add('culture', 'artifact', 'Leia: ' + w['kind'].lower(), a=art('both', 3), artifact=w)
