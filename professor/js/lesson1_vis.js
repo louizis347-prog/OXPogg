@@ -11,9 +11,9 @@ var TOPS=['#3b6ea5','#b5543c','#4d8f6b','#7a5fa8','#c58a2f','#2f7f86','#d9708f',
 var PANTS=['#2f3550','#4a3b32','#3b4a63','#6b5d49','#35384a','#27496d'];
 var SHOES=['#1d1a22','#5a3a28','#e8e4da','#2c3e50'];
 var ROLE={barista:{apron:'#7a4a2b',top:'#f2efe6'},customer:{},friend:{}};
-function shade(hex,k){var h=hex.replace('#','');if(h.length===3)h=h.replace(/./g,'$&$&');var n=parseInt(h,16),r=(n>>16)&255,g=(n>>8)&255,b=n&255;var f=k<0?0:255,t=Math.abs(k);r=Math.round(r+(f-r)*t);g=Math.round(g+(f-g)*t);b=Math.round(b+(f-b)*t);return '#'+[r,g,b].map(function(x){return x.toString(16).padStart(2,'0')}).join('')}
+function shade(hex,k){var h=String(hex||'#8a8a8a').replace('#','');if(h.length===3)h=h.replace(/./g,'$&$&');var n=parseInt(h,16),r=(n>>16)&255,g=(n>>8)&255,b=n&255;var f=k<0?0:255,t=Math.abs(k);r=Math.round(r+(f-r)*t);g=Math.round(g+(f-g)*t);b=Math.round(b+(f-b)*t);return '#'+[r,g,b].map(function(x){return x.toString(16).padStart(2,'0')}).join('')}
 function person(c){var F=window.PogFace;if(!F||!F.bust)return '';var name=c.n||'x',h=7;for(var i=0;i<name.length;i++)h=(h*31+name.charCodeAt(i))>>>0;
-  var g=c.g==='f'?'f':'m',R=ROLE[c.role]||{},tone=c.tone!=null?c.tone:h%4,skin=SKINS[Math.min(4,tone)];
+  var g=c.g==='f'?'f':'m',R=ROLE[c.role]||{},tone=c.tone!=null?c.tone:h%4,skin=SKINS[Math.max(0,Math.min(SKINS.length-1,tone|0))];
   var top=c.shirt||R.top||TOPS[h%TOPS.length],pants=c.pants||PANTS[(h>>2)%PANTS.length],shoe=SHOES[(h>>4)%SHOES.length],hair=c.hair||['#4a3228','#2b211c','#7a4a2b','#5b3a29'][h%4];
   var style=c.style||(R.apron?'tee':['tee','hoodie','jacket','shirt','dress'][g==='f'?h%5:h%4]);
   var bo={g:g,tone:tone,style:(g==='f'?['long','wavy','bob','bun']:['short','side','short','curly'])[(h>>3)%4],hair:hair,shirt:top,seed:h,refined:true,natural:true,rich:2,mood:c.mood||'grin',glasses:!!c.glasses,beard:false};
