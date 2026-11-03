@@ -19,7 +19,7 @@ X = dict(
  ],
  vocab=[
   dict(w="freeway", pt="rodovia urbana", e="🛣️", ex=["The freeway is full.", "We take the freeway to the beach."]),
-  dict(w="accident", pt="acidente", e="💥", ex=["There is an accident on the road.", "The accident is near the exit."]),
+  dict(w="detour", pt="desvio", e="🔀", ex=["There is a detour on Main Street.", "Take the detour, please."]),
   dict(w="commute", pt="trajeto diário (casa-trabalho)", e="🚗", ex=["My commute is one hour.", "Her commute is short."]),
   dict(w="exit", pt="saída (da rodovia)", e="🚧", ex=["Take the next exit.", "The exit is on the right."]),
   dict(w="jam", pt="engarrafamento", e="🚙", ex=["There is a big jam today.", "We are in a traffic jam."]),
