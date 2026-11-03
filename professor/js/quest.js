@@ -128,7 +128,7 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
   mark()};
 
  /* ===== 7 · Choose your reply (conversa ramificada) ===== */
- R.q_choose=function(p,b){var turns=p.turns||[],k=0,okN=0,log=[];var npc=(p.npc&&p.npc.name)||'Neighbor';var face='';try{face=V('face:'+npc)}catch(e){}
+ R.q_choose=function(p,b){var turns=p.turns||[],k=0,okN=0,log=[];var npc=(p.npc&&p.npc.name)||'Neighbor';var face='';try{face=V('face:'+((p.npc&&p.npc.face)||npc))}catch(e){}
   function go(){if(k>=turns.length){b.innerHTML='<div class="qdone">'+okN+' / '+turns.length+' natural replies ✔</div><div class="qlog">'+log.map(function(l){return '<div>'+H(l)+'</div>'}).join('')+'</div>'+(p.story?'<div class="rl-tip">📖 <span>'+H(p.story)+'</span></div>':'')+'<div class="rl-bar"><button class="btn" id="rep">↺ Play again</button></div>';mark();$q(b,'#rep').onclick=function(){k=0;okN=0;log=[];go()};return}
    var t=turns[k];var order=A.shuf(t.opts.map(function(o,i){return {o:o,i:i}}),k+3);
    b.innerHTML='<div class="qchat"><div class="qcn"><div class="av">'+face+'</div><div class="qbub npc"><div class="wo">'+H(npc)+'</div><div class="en">'+H(t.npc)+' '+sayBtn(t.npc)+'</div><div class="pt">'+H(t.pt||'')+'</div></div></div>'+

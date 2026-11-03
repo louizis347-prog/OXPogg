@@ -20,10 +20,13 @@ def supp(n):
     if not os.path.exists(f): return {}
     spec = importlib.util.spec_from_file_location('s5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m.SUPP
 
+import zlib
+ELENCO = [x['name'] for x in json.load(open(os.path.join(ROOT, 'professor', 'data', 'elenco.json'), encoding='utf-8'))]
+def face_of(name): return ELENCO[zlib.crc32(name.encode()) % len(ELENCO)]
 def build(n):
-    en, nb, S = EN[n - 1], NB[n - 1], supp(n)
+    S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[n - 1]
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = chats[0]
-    npc = [k for k in base['cast'] if k != 'You'][0]
+    npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]
     hot = fr(en, 'hotscene')[0]['hot'] if fr(en, 'hotscene') else []
     exps = fr(en, 'pgexp')[0]['items'] if fr(en, 'pgexp') else []
@@ -66,7 +69,8 @@ def build(n):
         for i, (w, e, p) in enumerate(ls):
             if w == 'You' and i > 0 and ls[i - 1][0] != 'You':
                 turns.append(dict(npc=strip(ls[i - 1][1]), pt=ls[i - 1][2], opts=[dict(en=strip(e), pt=p, ok=True, fb='Natural reply for this situation.')]))
-        cv = dict(npc=dict(name=npc), story=strip(nb['p']), turns=turns)
+        cv = dict(npc=dict(name=npc, face=npcface), story=strip(nb['p']), turns=turns)
+    cv = dict(cv); cv['npc'] = dict(cv.get('npc') or {'name': npc}); cv['npc'].setdefault('face', npcface); cv['npc'].setdefault('name', npc)
     P['q_choose'] = dict(t='q_choose', title='Choose your reply', **cv)
     P['rl_chunks'] = dict(t='rl_chunks', title='Useful expressions', items=[dict(en=strip(i['en']), pt=i['pt'], use=strip(i['use']), reg=i.get('tag', ''), pri=k < 4) for k, i in enumerate(exps[:8])])
     pats = [dict(name=rule.get('head', title), formula='**' + rule.get('head', '') + '**', ex=[u['en'] for u in rule.get('uses', [])][:3], main=True)] if rule else []
@@ -105,14 +109,15 @@ def build(n):
     for t in ORDER:
         p = dict(P[t]); p['stage'] = CHAP[t]; pages.append(p)
     plan = {m: [dict(id=k, name=CH[k][1], ic=CH[k][0], c=CH[k][2], min=MIN[m][k], desc=DESC[k]) for k in CH if k != 'lab' or True] for m in MIN}
-    L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npc), 'You': dict(name='You')}, lines=lines),
+    L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
         pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
-        src=dict(regular=en['n'], neighbors=nb['n']))
+        src=dict(regular=en['n'], neighbors=nb['n'], reg_idx=S.get('reg', n)))
     os.makedirs(os.path.join(ROOT, 'professor', 'data', 'v4'), exist_ok=True)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]
     if '--table' in a:
-        for i in range(50): print(i + 1, '|', EN[i]['t'], '|', EN[i]['a']['w'], '||', NB[i]['t'])
+        for i in range(len(EN)): print('R%d | %s | %s' % (i + 1, EN[i]['t'], EN[i]['a']['w']))
+        for i in range(50): print('N%d | %s' % (i + 1, NB[i]['t']))
     else:
         for n in (range(1, 51) if '--all' in a else map(int, a)): print('ok', build(n))
