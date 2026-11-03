@@ -7,13 +7,13 @@ def vb(v, ic, pt, base, third, past, ing, note):
 Z = dict(
  verbs=[
   vb('want', '🍳', 'querer', ('want', 'I want scrambled eggs.', 'Eu quero ovos mexidos.'), ('wants', 'Mia wants tea.', 'A Mia quer chá.'), ('wanted', 'He wanted pancakes.', 'Ele queria panquecas.'), ('wanting', 'I am wanting more juice.', 'Estou querendo mais suco.'), 'Want + coisa. “I’d like” é mais educado que “I want”.'),
-  vb('like', '🙂', 'gostar', ('like', 'I like my eggs fried.', 'Eu gosto dos meus ovos fritos.'), ('likes', 'She likes lemon in tea.', 'Ela gosta de limão no chá.'), ('liked', 'We liked the pancakes.', 'Nós gostamos das panquecas.'), ('liking', 'I am liking this coffee.', 'Estou gostando deste café.'), 'I’d like = I would like: o jeito educado de pedir.'),
+  vb('mix', '🙂', 'misturar', ('mix', 'I mix sugar into my coffee.', 'Eu misturo açúcar no café.'), ('mixes', 'Mia mixes honey into her tea.', 'A Mia mistura mel no chá.'), ('mixed', 'I mixed the juice with water.', 'Eu misturei o suco com água.'), ('mixing', 'I am mixing my yogurt.', 'Estou misturando meu iogurte.'), 'Com he/she/it, mix vira mixes (acrescenta -es).'),
   vb('eat', '🥞', 'comer', ('eat', 'We eat breakfast at eight.', 'Nós tomamos café da manhã às oito.'), ('eats', 'Tom eats toast.', 'O Tom come torrada.'), ('ate', 'I ate bacon and eggs.', 'Eu comi bacon e ovos.'), ('eating', 'She is eating pancakes.', 'Ela está comendo panquecas.'), 'Irregular: eat vira ate no passado.'),
   vb('drink', '☕', 'beber', ('drink', 'I drink coffee.', 'Eu bebo café.'), ('drinks', 'Ana drinks orange juice.', 'A Ana bebe suco de laranja.'), ('drank', 'He drank two teas.', 'Ele bebeu dois chás.'), ('drinking', 'I am drinking tea.', 'Estou bebendo chá.'), 'Irregular: drink vira drank.'),
   vb('enjoy', '😋', 'aproveitar', ('enjoy', 'I enjoy a big breakfast.', 'Eu curto um café da manhã grande.'), ('enjoys', 'Leo enjoys the toast.', 'O Leo curte a torrada.'), ('enjoyed', 'We enjoyed the meal.', 'Nós gostamos da refeição.'), ('enjoying', 'I am enjoying my eggs.', 'Estou curtindo meus ovos.'), 'Enjoy your meal! é o que o garçom diz ao servir.')],
  verb_game=[
   dict(scene='Hoje cedo você comeu panquecas.', en='This morning I ___ pancakes.', opts=['eat', 'ate', 'eating'], ans=1, pt='Esta manhã eu comi panquecas.', why='Passado irregular de eat: ate.'),
-  dict(scene='A Mia gosta de limão no chá.', en='Mia ___ lemon in her tea.', opts=['like', 'likes', 'liked'], ans=1, pt='A Mia gosta de limão no chá.', why='Com “Mia” (ela) o presente leva -s: likes.'),
+  dict(scene='A Mia mistura mel no chá.', en='Mia ___ honey into her tea.', opts=['mix', 'mixes', 'mixed'], ans=1, pt='A Mia mistura mel no chá.', why='Com “Mia” (ela) o presente leva -es: mixes.'),
   dict(scene='Agora você está tomando chá.', en='I am ___ tea with milk.', opts=['drink', 'drank', 'drinking'], ans=2, pt='Estou tomando chá com leite.', why='“am” + -ing: drinking.'),
   dict(scene='Nós queremos ovos fritos.', en='We ___ fried eggs, please.', opts=['want', 'wants', 'wanted'], ans=0, pt='Nós queremos ovos fritos, por favor.', why='Com “we” o presente usa a forma base: want.')],
  expressions=[

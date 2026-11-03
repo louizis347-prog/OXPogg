@@ -7,14 +7,14 @@ def vb(v, ic, pt, base, third, past, ing, note):
 Z = dict(
  verbs=[
   vb('look', '👀', 'parecer / olhar', ('look', 'You look happy.', 'Você parece feliz.'), ('looks', 'She looks nice.', 'Ela parece simpática.'), ('looked', 'He looked tired.', 'Ele parecia cansado.'), ('looking', 'I am looking at her.', 'Estou olhando para ela.'), 'Look + adjetivo = parecer; look at = olhar para.'),
-  vb('have', '💇', 'ter', ('have', 'I have short hair.', 'Eu tenho cabelo curto.'), ('has', 'She has brown eyes.', 'Ela tem olhos castanhos.'), ('had', 'He had long hair.', 'Ele tinha cabelo comprido.'), ('having', 'She is having coffee.', 'Ela está tomando café.'), 'Have vira has com ele/ela.'),
+  vb('wash', '🚿', 'lavar', ('wash', 'I wash my hair every day.', 'Eu lavo meu cabelo todo dia.'), ('washes', 'She washes her face.', 'Ela lava o rosto.'), ('washed', 'He washed his hands.', 'Ele lavou as mãos.'), ('washing', 'I am washing my hair.', 'Estou lavando meu cabelo.'), 'Com he/she/it, wash vira washes (-es).'),
   vb('wear', '👗', 'usar / vestir', ('wear', 'I wear glasses.', 'Eu uso óculos.'), ('wears', 'She wears a red dress.', 'Ela usa um vestido vermelho.'), ('wore', 'He wore a blue shirt.', 'Ele usava uma camisa azul.'), ('wearing', 'She is wearing a hat.', 'Ela está de chapéu.'), 'Irregular: wear, wore.'),
-  vb('meet', '🤝', 'conhecer', ('meet', 'I meet new people.', 'Eu conheço gente nova.'), ('meets', 'Ana meets her at six.', 'A Ana a encontra às seis.'), ('met', 'I met her yesterday.', 'Eu a conheci ontem.'), ('meeting', 'I am meeting her now.', 'Estou conhecendo ela agora.'), 'Irregular: meet, met.'),
+  vb('put', '🧥', 'pôr / vestir', ('put', 'I put on a coat.', 'Eu visto um casaco.'), ('puts', 'She puts on a hat.', 'Ela põe um chapéu.'), ('put', 'He put on a tie yesterday.', 'Ele pôs uma gravata ontem.'), ('putting', 'I am putting on my shoes.', 'Estou calçando meus sapatos.'), 'Put é igual no passado: put. -ing duplica o t.'),
   vb('know', '🧠', 'conhecer / saber', ('know', 'I know her.', 'Eu a conheço.'), ('knows', 'Tom knows that woman.', 'O Tom conhece aquela mulher.'), ('knew', 'I knew him.', 'Eu o conhecia.'), ('knowing', 'Thanks for knowing!', 'Obrigado por saber!'), 'Irregular: know, knew. Quase nunca com -ing.')],
  verb_game=[
-  dict(scene='Ela tem olhos castanhos.', en='She ___ brown eyes.', opts=['have', 'has', 'had'], ans=1, pt='Ela tem olhos castanhos.', why='Com “she”: has.'),
+  dict(scene='Ela lava o cabelo comprido.', en='She ___ her long hair.', opts=['wash', 'washes', 'washed'], ans=1, pt='Ela lava o cabelo comprido.', why='Com “she”: washes.'),
   dict(scene='Ela está de chapéu agora.', en='She is ___ a hat.', opts=['wear', 'wore', 'wearing'], ans=2, pt='Ela está de chapéu.', why='“is” + -ing: wearing.'),
-  dict(scene='Ontem você a conheceu.', en='I ___ her yesterday.', opts=['meet', 'met', 'meets'], ans=1, pt='Eu a conheci ontem.', why='Passado de meet: met.'),
+  dict(scene='Ontem ele colocou a gravata para a festa.', en='He ___ on a tie yesterday.', opts=['put', 'puts', 'putting'], ans=0, pt='Ontem ele pôs a gravata.', why='Passado de put é igual ao presente: put.'),
   dict(scene='Ela parece simpática.', en='She ___ nice.', opts=['look', 'looks', 'looked'], ans=1, pt='Ela parece simpática.', why='Com “she”: looks.')],
  expressions=[
   dict(en='Who is that woman?', pt='Quem é aquela mulher?', ex='Who is that woman?', exp='Perguntar quem é alguém.', c='a'),

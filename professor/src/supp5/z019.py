@@ -9,13 +9,13 @@ Z = dict(
   vb('listen', '🎧', 'ouvir', ('listen', 'I listen to pop.', 'Eu ouço pop.'), ('listens', 'Mia listens to jazz.', 'A Mia ouve jazz.'), ('listened', 'We listened to rock.', 'Nós ouvimos rock.'), ('listening', 'I am listening now.', 'Estou ouvindo agora.'), 'Listen to + música.'),
   vb('sing', '🎤', 'cantar', ('sing', 'I sing in the car.', 'Eu canto no carro.'), ('sings', 'Beyoncé sings well.', 'A Beyoncé canta bem.'), ('sang', 'She sang a song.', 'Ela cantou uma música.'), ('singing', 'I am singing!', 'Estou cantando!'), 'Irregular: sing, sang.'),
   vb('buy', '🎟️', 'comprar', ('buy', 'I buy tickets.', 'Eu compro ingressos.'), ('buys', 'Sam buys two tickets.', 'O Sam compra dois ingressos.'), ('bought', 'I bought tickets.', 'Eu comprei ingressos.'), ('buying', 'I am buying tickets now.', 'Estou comprando ingressos agora.'), 'Irregular: buy, bought.'),
-  vb('love', '💖', 'adorar', ('love', 'I love rock.', 'Eu adoro rock.'), ('loves', 'Ana loves Bruno Mars.', 'A Ana adora o Bruno Mars.'), ('loved', 'We loved the concert.', 'Nós adoramos o show.'), ('loving', 'I am loving this song!', 'Estou adorando esta música!'), 'Love é mais forte que like.'),
-  vb('go', '🚶', 'ir', ('go', 'We go to concerts.', 'Nós vamos a shows.'), ('goes', 'Raj goes at six.', 'O Raj vai às seis.'), ('went', 'We went last night.', 'Nós fomos ontem à noite.'), ('going', 'I am going to the concert.', 'Estou indo ao show.'), 'Irregular: go, went.')],
+  vb('sit', '💺', 'sentar', ('sit', 'We sit near the stage.', 'Nós sentamos perto do palco.'), ('sits', 'Mia sits in front.', 'A Mia senta na frente.'), ('sat', 'I sat in row five.', 'Eu sentei na fileira cinco.'), ('sitting', 'I am sitting here.', 'Estou sentado aqui.'), 'Passado irregular: sit vira sat; -ing duplica o t.'),
+  vb('dance', '💃', 'dançar', ('dance', 'We dance at concerts.', 'Nós dançamos em shows.'), ('dances', 'Raj dances all night.', 'O Raj dança a noite toda.'), ('danced', 'We danced last night.', 'Nós dançamos ontem à noite.'), ('dancing', 'I am dancing to this song.', 'Estou dançando esta música.'), 'Dance + -d no passado: danced.')],
  verb_game=[
   dict(scene='A Mia ouve jazz.', en='Mia ___ to jazz.', opts=['listen', 'listens', 'listened'], ans=1, pt='A Mia ouve jazz.', why='Com “Mia”: listens.'),
   dict(scene='Ontem você comprou ingressos.', en='I ___ tickets yesterday.', opts=['buy', 'buys', 'bought'], ans=2, pt='Eu comprei ingressos ontem.', why='Passado de buy: bought.'),
   dict(scene='Você está cantando agora.', en='I am ___ my favorite song.', opts=['sing', 'sang', 'singing'], ans=2, pt='Estou cantando minha música favorita.', why='“am” + -ing: singing.'),
-  dict(scene='Vocês vão a shows.', en='We ___ to concerts.', opts=['go', 'goes', 'went'], ans=0, pt='Nós vamos a shows.', why='Presente com “we”: go.')],
+  dict(scene='Vocês dançam nos shows.', en='We ___ at concerts.', opts=['dance', 'dances', 'danced'], ans=0, pt='Nós dançamos nos shows.', why='Presente com “we”: dance.')],
  expressions=[
   dict(en='What music do you like?', pt='Que música você gosta?', ex='What music do you like?', exp='Perguntar o gosto musical.', c='a'),
   dict(en='Who is your favorite singer?', pt='Quem é seu cantor favorito?', ex='Who is your favorite singer?', exp='Perguntar o favorito.', c='b'),

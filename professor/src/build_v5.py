@@ -39,7 +39,28 @@ def ylayer(n):
 def zlayer(n):
     f = os.path.join(HERE, 'supp5', 'z%03d.py' % n)
     if not os.path.exists(f): return {}
-    spec = importlib.util.spec_from_file_location('z5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m.Z
+    spec = importlib.util.spec_from_file_location('z5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return natural(m.Z)
+# verbos de estado quase nunca usam -ing: a 4ª peça vira uma forma que o aluno realmente diz
+ALT = {
+ 'want': ('mais educado', "I'd like", "I'd like a small coffee, please.", 'Eu queria um café pequeno, por favor.'),
+ 'need': ('futuro: ’ll + need', 'need', "I'll need a bag, please.", 'Vou precisar de uma sacola, por favor.'),
+ 'like': ('negativa', "don't like", "I don't like spicy food.", 'Eu não gosto de comida picante.'),
+ 'love': ('com ênfase', 'really love', 'I really love this place.', 'Eu adoro este lugar.'),
+ 'cost': ('pergunta: does … cost', 'cost', 'How much does it cost?', 'Quanto custa?'),
+ 'know': ('negativa', "don't know", "I don't know.", 'Eu não sei.'),
+ 'belong': ('com to', 'belong to', 'These keys belong to Ana.', 'Estas chaves são da Ana.'),
+ 'mean': ('pergunta: do … mean', 'mean', 'What do you mean?', 'O que você quer dizer?'),
+}
+def natural(Z):
+    vs = []
+    for v in Z.get('verbs', []):
+        a = ALT.get(v['v'])
+        if a:
+            v['forms'][3] = dict(k=a[0], en=a[1], ex=a[2], pt=a[3])
+            v['note'] = (v.get('note') or '').replace('-ing', '').strip() + ' Quase não se usa no -ing: veja a forma ao lado.'
+        vs.append(v)
+    Z['verbs'] = vs
+    return Z
 def prev_ctx(n):
     if n < 2: return None
     items, words, quiz, say = [], [], [], []

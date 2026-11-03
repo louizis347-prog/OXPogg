@@ -7,15 +7,15 @@ def vb(v, ic, pt, base, third, past, ing, note):
 Z = dict(
  verbs=[
   vb('park', '🅿️', 'estacionar', ('park', 'I park here.', 'Eu estaciono aqui.'), ('parks', 'Sam parks in the lot.', 'O Sam estaciona no estacionamento.'), ('parked', 'We parked on Oak Street.', 'Nós estacionamos na Oak Street.'), ('parking', 'I am parking now.', 'Estou estacionando agora.'), 'Park é regular: parked, parking.'),
-  vb('pay', '💵', 'pagar', ('pay', 'I pay at the machine.', 'Eu pago na máquina.'), ('pays', 'She pays five dollars.', 'Ela paga cinco dólares.'), ('paid', 'We paid for two hours.', 'Nós pagamos por duas horas.'), ('paying', 'I am paying for parking.', 'Estou pagando o estacionamento.'), 'Irregular: pay vira paid.'),
-  vb('leave', '👋', 'sair / deixar', ('leave', 'I leave the car here.', 'Eu deixo o carro aqui.'), ('leaves', 'He leaves at five.', 'Ele sai às cinco.'), ('left', 'We left the car in the lot.', 'Nós deixamos o carro no estacionamento.'), ('leaving', 'I am leaving now.', 'Estou saindo agora.'), 'Irregular: leave vira left.'),
-  vb('find', '🔎', 'encontrar', ('find', 'I find a spot.', 'Eu encontro uma vaga.'), ('finds', 'Ana finds the lot.', 'A Ana encontra o estacionamento.'), ('found', 'We found a parking lot.', 'Nós encontramos um estacionamento.'), ('finding', 'I am finding a spot.', 'Estou achando uma vaga.'), 'Irregular: find vira found.'),
+  vb('pay', '💳', 'pagar', ('pay', 'I pay at the machine.', 'Eu pago na máquina.'), ('pays', 'She pays for parking.', 'Ela paga o estacionamento.'), ('paid', 'He paid two dollars.', 'Ele pagou dois dólares.'), ('paying', 'I am paying now.', 'Estou pagando agora.'), 'Atenção: pay vira paid (não “payed”).'),
+  vb('lock', '🔒', 'trancar', ('lock', 'I lock the car.', 'Eu tranco o carro.'), ('locks', 'He locks the door.', 'Ele tranca a porta.'), ('locked', 'We locked the car.', 'Nós trancamos o carro.'), ('locking', 'I am locking it.', 'Estou trancando.'), 'Lock é regular: locked.'),
+  vb('open', '🚪', 'abrir', ('open', 'I open the car door.', 'Eu abro a porta do carro.'), ('opens', 'She opens the trunk.', 'Ela abre o porta-malas.'), ('opened', 'He opened the door.', 'Ele abriu a porta.'), ('opening', 'I am opening the door.', 'Estou abrindo a porta.'), 'Passado só acrescenta -ed: opened.'),
   vb('drive', '🚗', 'dirigir', ('drive', 'I drive to the shop.', 'Eu dirijo até a loja.'), ('drives', 'Tom drives to work.', 'O Tom dirige até o trabalho.'), ('drove', 'We drove downtown.', 'Nós dirigimos até o centro.'), ('driving', 'I am driving to the lot.', 'Estou dirigindo até o estacionamento.'), 'Irregular: drive vira drove.')],
  verb_game=[
   dict(scene='Você quer estacionar em frente à loja.', en='Can I ___ here?', opts=['park', 'parks', 'parked'], ans=0, pt='Posso estacionar aqui?', why='Depois de “can”, usa-se a forma base: park.'),
-  dict(scene='Ontem vocês acharam um estacionamento.', en='We ___ a parking lot yesterday.', opts=['find', 'found', 'finding'], ans=1, pt='Nós achamos um estacionamento ontem.', why='“Yesterday” pede passado: found.'),
-  dict(scene='A Ana paga cinco dólares por hora.', en='Ana ___ five dollars an hour.', opts=['pay', 'pays', 'paid'], ans=1, pt='A Ana paga cinco dólares por hora.', why='Ana (ela) no presente leva -s: pays.'),
-  dict(scene='Você está estacionando agora.', en='I am ___ now.', opts=['park', 'parks', 'parking'], ans=2, pt='Estou estacionando agora.', why='“am” + -ing: parking.')],
+  dict(scene='Ontem você trancou o carro.', en='I ___ the car yesterday.', opts=['lock', 'locked', 'locking'], ans=1, pt='Eu tranquei o carro ontem.', why='“Yesterday” pede passado: locked.'),
+ dict(scene='A Ana paga o tíquete na máquina.', en='Ana ___ at the machine.', opts=['pay', 'pays', 'paid'], ans=1, pt='A Ana paga na máquina.', why='Ana (ela) no presente leva -s: pays.'),
+  dict(scene='Agora você está estacionando.', en='I am ___ now.', opts=['park', 'parks', 'parking'], ans=2, pt='Estou estacionando agora.', why='“am” + -ing: parking.')],
  expressions=[
   dict(en='Can I park here?', pt='Posso estacionar aqui?', ex='Excuse me, can I park here?', exp='Para checar se pode parar o carro.', c='a'),
   dict(en='Where can I park?', pt='Onde posso estacionar?', ex='Where can I park near the shop?', exp='Para achar um lugar permitido.', c='b'),

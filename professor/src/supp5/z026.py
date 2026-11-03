@@ -8,13 +8,13 @@ Z = dict(
  verbs=[
   vb('try', '🥟', 'provar / experimentar', ('try', 'I try one dumpling.', 'Eu provo um bolinho.'), ('tries', 'Mia tries the pork.', 'A Mia prova o de porco.'), ('tried', 'We tried the chicken.', 'Nós provamos o de frango.'), ('trying', 'I am trying a taco.', 'Estou provando um taco.'), 'Try one! é um convite comum. try vira tries / tried.'),
   vb('smell', '👃', 'cheirar', ('smell', 'These tacos smell good.', 'Estes tacos cheiram bem.'), ('smells', 'It smells great.', 'Cheira muito bem.'), ('smelled', 'The pies smelled good.', 'As tortas cheiravam bem.'), ('smelling', 'I am smelling the ginger.', 'Estou sentindo o cheiro do gengibre.'), 'smell + adjetivo: smells good.'),
-  vb('eat', '🍽️', 'comer', ('eat', 'I eat chicken.', 'Eu como frango.'), ('eats', 'Ben eats rice.', 'O Ben come arroz.'), ('ate', 'We ate six dumplings.', 'Nós comemos seis bolinhos.'), ('eating', 'She is eating a pie.', 'Ela está comendo uma torta.'), 'Para restrições: I don’t eat pork. Passado: ate.'),
+  vb('eat', '🌮', 'comer', ('eat', 'I eat tacos for lunch.', 'Eu como tacos no almoço.'), ('eats', 'Ana eats chips.', 'A Ana come batata frita.'), ('ate', 'We ate three tacos.', 'Nós comemos três tacos.'), ('eating', 'I am eating a taco.', 'Estou comendo um taco.'), 'Passado irregular: eat vira ate.'),
   vb('taste', '😋', 'ter gosto / provar', ('taste', 'They taste fresh.', 'Eles têm gosto de frescos.'), ('tastes', 'This one tastes good.', 'Este tem um gosto bom.'), ('tasted', 'It tasted great.', 'Estava ótimo.'), ('tasting', 'I am tasting the beef.', 'Estou provando a carne.'), 'taste + adjetivo: tastes good.'),
-  vb('buy', '💰', 'comprar', ('buy', 'I buy six dumplings.', 'Eu compro seis bolinhos.'), ('buys', 'Ana buys four tacos.', 'A Ana compra quatro tacos.'), ('bought', 'He bought a pie.', 'Ele comprou uma torta.'), ('buying', 'I am buying lunch.', 'Estou comprando o almoço.'), 'Irregular: buy vira bought.')],
+  vb('use', '🧻', 'usar', ('use', 'I use a napkin.', 'Eu uso um guardanapo.'), ('uses', 'He uses two hands.', 'Ele usa as duas mãos.'), ('used', 'Ana used a fork.', 'A Ana usou um garfo.'), ('using', 'I am using a napkin.', 'Estou usando um guardanapo.'), 'Use perde o e antes de -ing: using.')],
  verb_game=[
-  dict(scene='Você diz que não come porco.', en='I don’t ___ pork.', opts=['eat', 'eats', 'ate'], ans=0, pt='Eu não como porco.', why='Depois de “don’t” o verbo fica na forma base: eat.'),
+  dict(scene='Você come batata frita enquanto espera.', en='I ___ chips while I wait.', opts=['eat', 'eats', 'ate'], ans=0, pt='Eu como batata frita enquanto espero.', why='Com “I” o presente usa a forma base: eat.'),
   dict(scene='O taco cheira bem.', en='This taco ___ good.', opts=['smell', 'smells', 'smelling'], ans=1, pt='Este taco cheira bem.', why='“This taco” é ele/ela: smells.'),
-  dict(scene='Ontem a Ana comprou quatro tacos.', en='Ana ___ four tacos yesterday.', opts=['buys', 'bought', 'buying'], ans=1, pt='A Ana comprou quatro tacos ontem.', why='Passado irregular de buy: bought.'),
+  dict(scene='Ontem a Ana usou um garfo no taco.', en='Ana ___ a fork yesterday.', opts=['uses', 'used', 'using'], ans=1, pt='A Ana usou um garfo ontem.', why='“Yesterday” pede passado: used.'),
   dict(scene='Você está provando um bolinho agora.', en='I am ___ a dumpling.', opts=['try', 'tries', 'trying'], ans=2, pt='Estou provando um bolinho.', why='“am” + -ing: trying.')],
  expressions=[
   dict(en='What’s in it?', pt='O que tem nisso?', ex='What’s in it? — Pork and cabbage.', exp='Para saber os ingredientes.', c='a'),

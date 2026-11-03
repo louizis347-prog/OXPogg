@@ -6,16 +6,16 @@ def vb(v, ic, pt, base, third, past, ing, note):
         dict(k=K[2], en=past[0], ex=past[1], pt=past[2]), dict(k=K[3], en=ing[0], ex=ing[1], pt=ing[2])])
 Z = dict(
  verbs=[
-  vb('be', '🙋', 'ser / estar', ('am', 'I am hungry, and you are thirsty.', 'Eu estou com fome, e você está com sede.'), ('is', 'Leo is tired.', 'O Leo está cansado.'), ('was', 'I was hungry.', 'Eu estava com fome.'), ('being', 'I am being patient.', 'Estou sendo paciente.'), 'Em inglês fome e sede usam be: I am hungry. Com you/we/they: are. Passado: was / were.'),
-  vb('need', '🆘', 'precisar', ('need', 'I need water.', 'Eu preciso de água.'), ('needs', 'Leo needs a snack.', 'O Leo precisa de um lanche.'), ('needed', 'We needed juice.', 'Nós precisávamos de suco.'), ('needing', 'I am needing a break.', 'Estou precisando de uma pausa.'), 'Need + coisa: I need water.'),
-  vb('get', '🛒', 'pegar / buscar', ('get', 'I get the sandwiches.', 'Eu pego os sanduíches.'), ('gets', 'Mia gets the drinks.', 'A Mia pega as bebidas.'), ('got', 'We got an apple.', 'Nós pegamos uma maçã.'), ('getting', 'I am getting a juice.', 'Estou pegando um suco.'), 'I’ll get… oferece buscar algo. Passado: got.'),
-  vb('buy', '💵', 'comprar', ('buy', 'I buy the sandwiches.', 'Eu compro os sanduíches.'), ('buys', 'Leo buys water.', 'O Leo compra água.'), ('bought', 'She bought two apples.', 'Ela comprou duas maçãs.'), ('buying', 'I am buying lunch.', 'Estou comprando o almoço.'), 'Irregular: buy vira bought.'),
+  vb('feel', '😋', 'sentir-se', ('feel', 'I feel hungry at noon.', 'Eu me sinto com fome ao meio-dia.'), ('feels', 'She feels thirsty.', 'Ela se sente com sede.'), ('felt', 'We felt tired.', 'Nós nos sentimos cansados.'), ('feeling', 'I am feeling hungry.', 'Estou me sentindo com fome.'), 'Passado irregular: feel vira felt.'),
+  vb('drink', '🥤', 'beber', ('drink', 'I drink water after class.', 'Eu bebo água depois da aula.'), ('drinks', 'Leo drinks juice.', 'O Leo bebe suco.'), ('drank', 'She drank a cold soda.', 'Ela bebeu um refrigerante gelado.'), ('drinking', 'I am drinking water.', 'Estou bebendo água.'), 'Passado irregular: drink vira drank.'),
+  vb('walk', '🛒', 'andar / ir a pé', ('walk', 'I walk to the store.', 'Eu vou a pé até a loja.'), ('walks', 'Mia walks to the snack aisle.', 'A Mia vai a pé até o corredor de lanches.'), ('walked', 'We walked to the market.', 'Nós fomos a pé até o mercado.'), ('walking', 'I am walking to the store.', 'Estou indo a pé até a loja.'), 'Walk to + lugar: walk to the store.'),
+  vb('cook', '🍲', 'cozinhar', ('cook', 'I cook soup at home.', 'Eu faço sopa em casa.'), ('cooks', 'Mia cooks rice.', 'A Mia cozinha arroz.'), ('cooked', 'She cooked some soup.', 'Ela cozinhou uma sopa.'), ('cooking', 'I am cooking dinner.', 'Estou cozinhando o jantar.'), 'Cook serve para cozinhar e para fazer uma refeição.'),
   vb('share', '🤝', 'dividir', ('share', 'We share a snack.', 'Nós dividimos um lanche.'), ('shares', 'Mia shares her apple.', 'A Mia divide a maçã dela.'), ('shared', 'We shared a sandwich.', 'Nós dividimos um sanduíche.'), ('sharing', 'We are sharing a juice.', 'Estamos dividindo um suco.'), 'Termina em -e: shared, sharing.')],
  verb_game=[
   dict(scene='Você está com fome.', en='I ___ hungry.', opts=['am', 'is', 'are'], ans=0, pt='Eu estou com fome.', why='Com “I” usamos am.'),
   dict(scene='O Leo está com sede.', en='Leo ___ thirsty.', opts=['am', 'is', 'are'], ans=1, pt='O Leo está com sede.', why='Com “Leo” (ele) usamos is.'),
-  dict(scene='Ontem a Mia comprou duas maçãs.', en='Mia ___ two apples yesterday.', opts=['buys', 'bought', 'buying'], ans=1, pt='A Mia comprou duas maçãs ontem.', why='Passado irregular de buy: bought.'),
-  dict(scene='Você precisa de água.', en='I ___ water.', opts=['need', 'needs', 'needing'], ans=0, pt='Eu preciso de água.', why='Com “I” no presente: need.')],
+  dict(scene='Ontem a Mia cozinhou uma sopa.', en='Mia ___ some soup yesterday.', opts=['cooks', 'cooked', 'cooking'], ans=1, pt='A Mia cozinhou uma sopa ontem.', why='“Yesterday” pede passado: cooked.'),
+  dict(scene='Você bebe água porque está com sede.', en='I ___ my water.', opts=['drink', 'drinks', 'drank'], ans=0, pt='Eu bebo minha água.', why='Com “I” no presente: drink.')],
  expressions=[
   dict(en='I’m hungry.', pt='Estou com fome.', ex='I’m hungry. Are you hungry?', exp='Dizer que está com fome.', c='a'),
   dict(en='I’m thirsty.', pt='Estou com sede.', ex='I’m so thirsty!', exp='Dizer que está com sede.', c='b'),

@@ -10,11 +10,11 @@ Z = dict(
   vb('snow', '❄️', 'nevar', ('snow', 'It snows in winter.', 'Neva no inverno.'), ('snows', 'It snows a lot in Chicago.', 'Neva muito em Chicago.'), ('snowed', 'It snowed last night.', 'Nevou ontem à noite.'), ('snowing', 'It is snowing!', 'Está nevando!'), 'Igual a rain: sujeito it.'),
   vb('need', '🧥', 'precisar', ('need', 'I need a warm coat.', 'Eu preciso de um casaco quente.'), ('needs', 'Tom needs a hat.', 'O Tom precisa de um chapéu.'), ('needed', 'I needed a coat.', 'Eu precisei de um casaco.'), ('needing', 'Am I needing it?', 'Será que estou precisando?'), 'Need + coisa ou need + to + verbo.'),
   vb('wear', '🧣', 'vestir / usar', ('wear', 'I wear a coat.', 'Eu uso casaco.'), ('wears', 'Ana wears a scarf.', 'A Ana usa cachecol.'), ('wore', 'I wore boots.', 'Eu usei botas.'), ('wearing', 'I am wearing gloves.', 'Estou de luvas.'), 'Irregular: wear, wore.'),
-  vb('take', '☂️', 'levar', ('take', 'I take an umbrella.', 'Eu levo um guarda-chuva.'), ('takes', 'Sam takes a coat.', 'O Sam leva um casaco.'), ('took', 'I took a coat.', 'Eu levei um casaco.'), ('taking', 'I am taking my coat.', 'Estou levando meu casaco.'), 'Irregular: take, took.')],
+  vb('keep', '☂️', 'guardar / manter', ('keep', 'I keep an umbrella in my bag.', 'Eu guardo um guarda-chuva na bolsa.'), ('keeps', 'Sam keeps a coat at work.', 'O Sam guarda um casaco no trabalho.'), ('kept', 'I kept my coat on all day.', 'Eu fiquei de casaco o dia todo.'), ('keeping', 'I am keeping my hat on.', 'Estou ficando de chapéu.'), 'Keep my coat on = continuar de casaco. Irregular: keep, kept.')],
  verb_game=[
   dict(scene='Em Chicago neva muito.', en='It ___ a lot in Chicago.', opts=['snow', 'snows', 'snowed'], ans=1, pt='Neva muito em Chicago.', why='Com “it”: snows.'),
   dict(scene='Agora está chovendo.', en='It is ___ now.', opts=['rain', 'rains', 'raining'], ans=2, pt='Está chovendo agora.', why='“is” + -ing: raining.'),
-  dict(scene='Ontem você levou um casaco.', en='I ___ a coat yesterday.', opts=['take', 'took', 'taking'], ans=1, pt='Eu levei um casaco ontem.', why='Passado de take: took.'),
+  dict(scene='Ontem você ficou de casaco o dia todo.', en='I ___ my coat on yesterday.', opts=['keep', 'kept', 'keeping'], ans=1, pt='Eu fiquei de casaco ontem.', why='Passado de keep: kept.'),
   dict(scene='Você precisa de um casaco quente.', en='I ___ a warm coat.', opts=['need', 'needs', 'needed'], ans=0, pt='Eu preciso de um casaco quente.', why='Presente com “I”: need.')],
  expressions=[
   dict(en='Nice day, isn’t it?', pt='Dia bonito, né?', ex='Nice day, isn’t it?', exp='Puxar conversa.', c='a'),

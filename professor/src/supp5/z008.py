@@ -6,15 +6,15 @@ def vb(v, ic, pt, base, third, past, ing, note):
         dict(k=K[2], en=past[0], ex=past[1], pt=past[2]), dict(k=K[3], en=ing[0], ex=ing[1], pt=ing[2])])
 Z = dict(
  verbs=[
-  vb('have', '👨‍👩‍👧', 'ter', ('have', 'I have one sister.', 'Eu tenho uma irmã.'), ('has', 'Leo has two brothers.', 'O Leo tem dois irmãos.'), ('had', 'We had a big family.', 'Nós tínhamos uma família grande.'), ('having', 'I am having dinner with them.', 'Estou jantando com eles.'), 'Have vira has com ele/ela; passado: had.'),
-  vb('live', '🏠', 'morar', ('live', 'My parents live in Recife.', 'Meus pais moram no Recife.'), ('lives', 'My sister lives here.', 'Minha irmã mora aqui.'), ('lived', 'My grandma lived in Bahia.', 'Minha avó morava na Bahia.'), ('living', 'I am living with my mother.', 'Estou morando com minha mãe.'), 'Live with = morar com alguém.'),
+  vb('bake', '🍰', 'assar', ('bake', 'We bake a cake for Mom.', 'Nós assamos um bolo para a mamãe.'), ('bakes', 'Grandma bakes bread.', 'A vovó assa pão.'), ('baked', 'I baked cookies with my sister.', 'Eu assei biscoitos com minha irmã.'), ('baking', 'Dad is baking a pie.', 'O papai está assando uma torta.'), 'Bake = assar no forno; passado só com -d: baked.'),
+  vb('talk', '💬', 'conversar / falar', ('talk', 'I talk with my cousins.', 'Eu converso com meus primos.'), ('talks', 'Mom talks with Aunt Lu.', 'A mamãe conversa com a tia Lu.'), ('talked', 'We talked after dinner.', 'Nós conversamos depois do jantar.'), ('talking', 'Mom is talking to Grandma.', 'A mamãe está falando com a vovó.'), 'Talk with/to alguém: conversar com alguém.'),
   vb('visit', '🚪', 'visitar', ('visit', 'We visit my grandma.', 'Nós visitamos minha avó.'), ('visits', 'Paulo visits his brother.', 'O Paulo visita o irmão.'), ('visited', 'I visited my family.', 'Eu visitei minha família.'), ('visiting', 'I am visiting my sister.', 'Estou visitando minha irmã.'), 'Visit não leva “to”: visit my family.'),
   vb('cook', '🍲', 'cozinhar', ('cook', 'I cook with my mother.', 'Eu cozinho com minha mãe.'), ('cooks', 'My father cooks on Sunday.', 'Meu pai cozinha no domingo.'), ('cooked', 'She cooked dinner.', 'Ela fez o jantar.'), ('cooking', 'Grandma is cooking now.', 'A vovó está cozinhando agora.'), 'Passado só com -ed: cooked.'),
   vb('come', '🍽️', 'vir', ('come', 'Come to dinner!', 'Venha jantar!'), ('comes', 'My brother comes on Sunday.', 'Meu irmão vem no domingo.'), ('came', 'They came last night.', 'Eles vieram ontem à noite.'), ('coming', 'My sister is coming too.', 'Minha irmã também está vindo.'), 'Irregular: come vira came.')],
  verb_game=[
-  dict(scene='Você diz que tem uma irmã.', en='I ___ one sister.', opts=['have', 'has', 'had'], ans=0, pt='Eu tenho uma irmã.', why='Com “I” o presente é have.'),
-  dict(scene='O Leo tem dois irmãos.', en='Leo ___ two brothers.', opts=['have', 'has', 'having'], ans=1, pt='O Leo tem dois irmãos.', why='Com “Leo” (ele) usa-se has.'),
-  dict(scene='Sua irmã mora aqui.', en='My sister ___ in this city.', opts=['live', 'lived', 'lives'], ans=2, pt='Minha irmã mora nesta cidade.', why='Com “my sister” (ela) o presente leva -s: lives.'),
+  dict(scene='Sua família assa um bolo.', en='We ___ a cake for Mom.', opts=['bake', 'bakes', 'baked'], ans=0, pt='Nós assamos um bolo para a mamãe.', why='Com “we” o presente fica na forma base: bake.'),
+  dict(scene='A vovó assa pão aos domingos.', en='Grandma ___ bread on Sundays.', opts=['bake', 'bakes', 'baking'], ans=1, pt='A vovó assa pão aos domingos.', why='Com “Grandma” (ela) o presente leva -s: bakes.'),
+  dict(scene='Sua mãe conversa com a tia agora.', en='Mom is ___ with Aunt Lu.', opts=['talk', 'talks', 'talking'], ans=2, pt='A mamãe está conversando com a tia Lu.', why='“is” + verbo termina em -ing: talking.'),
   dict(scene='Ontem sua família veio jantar.', en='My family ___ to dinner yesterday.', opts=['came', 'come', 'comes'], ans=0, pt='Minha família veio jantar ontem.', why='“Yesterday” pede passado irregular: came.')],
  expressions=[
   dict(en='This is my…', pt='Este(a) é meu(minha)…', ex='This is my mother.', exp='Para apresentar alguém da família.', c='a'),
