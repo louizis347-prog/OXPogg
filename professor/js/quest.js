@@ -64,8 +64,7 @@ function drawHint(p){var el=document.getElementById('qh');if(!el){el=document.cr
 function drawGameBar(p){var bar=document.getElementById('qbar');if(!bar){bar=document.createElement('div');bar.id='qbar';bar.className='qbar';var tl=document.getElementById('tl');tl.parentNode.insertBefore(bar,tl)}
   var L=A.lesson(),med=L.badge||{};bar.innerHTML='<span class="qchip lvl">'+(L.level||'')+' · Lesson '+L.n+'</span><span class="qchip">⭐ XP <b>'+A.xp()+'</b></span><span class="qchip">🎯 <b id="qacc">'+(STAT.tot?Math.round(STAT.ok/STAT.tot*100)+'%':'—')+'</b></span><span class="qchip combo" id="qcombo"></span><span class="qgoal">'+(med.icon||'🏆')+' <b>'+H(med.name||'Badge da missão')+'</b> · '+H(med.desc||'')+'</span>'}
 
-var _U=0;function stg(a,h){if(window.QSTAGE)return window.QSTAGE(a,h);return stg0(a,h)}
-function stg0(a,h){if(!a||!a.rs)return '';var bk='';try{bk=window.RS&&RS[a.rs]?RS[a.rs]('pq'+(++_U)):''}catch(e){}
+var _U=0;function stg(a,h){if(!a||!a.rs)return '';var bk='';try{bk=window.RS&&RS[a.rs]?RS[a.rs]('pq'+(++_U)):''}catch(e){}
   var cs=(a.chars||[]).map(function(c){var x=c[1]==null?50:c[1];return '<span class="ps-c'+(c[2]?' fl':'')+'" data-c="'+c[0]+'" style="left:'+x+'%;--s:'+(c[3]||1)+'">'+(window.PogChars?PogChars.svg(c[0]):'')+'</span>'}).join('');
   return '<div class="ps-stage '+(h||'strip')+'"><div class="ps-stage-bk">'+bk+'</div><div class="ps-chars">'+cs+'</div>'+(a.over||'')+'</div>'}
 var PREV_ONDRAW=null;
@@ -74,7 +73,7 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
  var S=function(k){return A.key()+'-q-'+k},sv=function(k,v){A.LS.set(S(k),v)},ld=function(k,d){return A.LS.get(S(k),d)};
  function sayBtn(t){return '<button class="say" data-sy="'+H(t)+'" title="Ouvir">🔊</button>'}
  function wire(r){$a(r,'[data-sy]').forEach(function(x){x.onclick=function(e){e.stopPropagation();stop();A.say(x.dataset.sy.replace(/\*\*/g,''))}})}
- function tabs(box,list,draw,start){var cur=start||0;if(box.dataset.only!==undefined&&box.dataset.only!==''){box.innerHTML='<div class="qview"></div>';var vv=$q(box,'.qview');draw(+box.dataset.only,vv);wire(vv);return function(){}}var h='<div class="qtabs">'+list.map(function(t,i){return '<button data-t="'+i+'"><i>'+t.ic+'</i>'+H(t.n)+'</button>'}).join('')+'</div><div class="qview"></div>';box.innerHTML=h;var view=$q(box,'.qview');
+ function tabs(box,list,draw,start){var cur=start||0;var h='<div class="qtabs">'+list.map(function(t,i){return '<button data-t="'+i+'"><i>'+t.ic+'</i>'+H(t.n)+'</button>'}).join('')+'</div><div class="qview"></div>';box.innerHTML=h;var view=$q(box,'.qview');
   function show(i){cur=i;$a(box,'.qtabs button').forEach(function(b,j){b.classList.toggle('on',j===i)});view.innerHTML='';draw(i,view);wire(view)}
   $a(box,'.qtabs button').forEach(function(b){b.onclick=function(){show(+b.dataset.t)}});show(cur);return show}
  function mcq(box,q,onDone){var ans=q.ans;box.innerHTML='<div class="qq">'+H(q.q||q.s||'')+(q.say?' '+sayBtn(q.say):'')+'</div><div class="opts">'+q.opts.map(function(o,i){return '<button class="opt" data-i="'+i+'">'+H(o)+'</button>'}).join('')+'</div><div class="qfb"></div>';wire(box);
@@ -82,7 +81,7 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
  function seq(box,items,drawOne,onEnd){var k=0,okN=0;function go(){if(k>=items.length){box.innerHTML='<div class="qdone">'+okN+' / '+items.length+' ✔</div>';if(onEnd)onEnd(okN);return}var w=document.createElement('div');w.className='qstep';box.innerHTML='<div class="qcount">'+(k+1)+' / '+items.length+'</div>';box.appendChild(w);drawOne(items[k],w,function(ok){if(ok)okN++;var nx=document.createElement('button');nx.className='btn';nx.textContent=k+1<items.length?'Next →':'Finish ✔';nx.onclick=function(){k++;go()};w.appendChild(nx)})}go()}
 
  /* ===== 1 · Mission briefing ===== */
- R.q_cover=function(p,b){var s=p.situation||{},u=p.unit||{},L=A.lesson(),bd=L.badge||{};b.className='pb c'+(p.view?' qm-'+p.view:'');
+ R.q_cover=function(p,b){var s=p.situation||{},u=p.unit||{},L=A.lesson(),bd=L.badge||{};b.className='pb c';
   var chaps=(L.plan&&L.plan[A.mode()]||[]).map(function(c,i){return '<div class="qnode" style="--c:'+c.c+'"><span class="qi">'+(c.ic||'')+'</span><b>'+H(c.name)+'</b><small>'+c.min+' min</small></div>'}).join('<span class="qlink"></span>');
   b.innerHTML='<div class="qhero"><div class="qh-l"><div class="rl-kick"><span class="k">Unit '+esc(u.n)+'</span><span class="k o">Lesson '+esc(u.k)+' / '+esc(u.of)+'</span><span class="k o">'+esc(p.level||'')+'</span><span class="k o">60 min</span></div>'+
    '<h1 class="rl-h1">'+esc(p.title)+'</h1>'+(p.pt?'<p class="rl-sub">'+esc(p.pt)+'</p>':'')+
@@ -93,7 +92,7 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
 
  /* ===== 3 · Cultural spotlight (aprofundado) ===== */
  R.q_culture=function(p,b){var tabsL=[{ic:'🌍',n:'Fact file'},{ic:'🧐',n:'Myth or fact?'},{ic:'👀',n:'In the wild'},{ic:'🇧🇷',n:'Compare'},{ic:'🎯',n:'Quiz'}];if(p.hot&&p.art)tabsL.unshift({ic:'🔎',n:'Explore the scene'});
-  b.innerHTML=(p.nohook?'':'<p class="lead" style="margin:0">'+esc(p.hook||'')+'</p>')+'<div class="qbox"></div>';if(p.only!=null)$q(b,'.qbox').dataset.only=p.only;
+  b.innerHTML='<p class="lead" style="margin:0">'+esc(p.hook||'')+'</p><div class="qbox"></div>';
   tabs($q(b,'.qbox'),tabsL,function(i,v){
    if(p.hot&&p.art){if(i===0){var seen={},H0=p.hot;v.innerHTML='<div class="qhs">'+stg(Object.assign({},p.art,{over:H0.map(function(o,k){return '<button type="button" class="ps-hot" data-k="'+k+'" style="left:'+o.x+'%;top:'+o.y+'%" aria-label="'+H(o.en)+'"><span>'+o.e+'</span><i class="ps-ping"></i></button>'}).join('')}),'hot')+'<div class="qhsi" id="qhsi"><b>Tap the glowing objects to hear them.</b></div><div class="qhsc" id="qhsc">0/'+H0.length+' found</div></div>';
      $a(v,'.ps-hot').forEach(function(x){x.onclick=function(){var o=H0[+x.dataset.k];seen[x.dataset.k]=1;x.classList.add('seen');$q(v,'#qhsi').innerHTML='<b>'+H(o.en)+'</b> · '+H(o.pt)+(o.say?'<br><span style="font-weight:700">“'+H(o.say)+'”</span> <small>'+H(o.sayPt||'')+'</small>':'');$q(v,'#qhsc').textContent=Object.keys(seen).length+'/'+H0.length+' found';if(o.say)A.say(o.say);try{A.gain(1,true)}catch(e){}}});return}i--}
@@ -106,12 +105,12 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
   });mark()};
 
  /* ===== 4 · Reading quest (densidade) ===== */
- R.q_read=function(p,b){if(p.textOnly)b.classList.add('qm-text');if(p.only!=null)b.classList.add('qm-tab');var gl={};(p.glossary||[]).forEach(function(g){gl[g.w.toLowerCase()]=g.pt});var rate=.9;
+ R.q_read=function(p,b){var gl={};(p.glossary||[]).forEach(function(g){gl[g.w.toLowerCase()]=g.pt});var rate=.9;
   function body(){return (p.text||[]).map(function(par,i){var t=hb(par);Object.keys(gl).sort(function(a,c){return c.length-a.length}).forEach(function(w){t=t.replace(new RegExp('(^|[^A-Za-z>])('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![A-Za-z])','i'),function(_,pre,m){return pre+'<u class="gw" data-w="'+H(w)+'">'+m+'</u>'})});return '<p data-p="'+i+'">'+t+'</p>'}).join('')}
   var words=(p.text||[]).join(' ').split(/\s+/).length;
   b.innerHTML='<div class="rl-two" style="align-items:start"><div class="qread"><div class="qr-h"><span class="qtag">'+H(p.genre||'Reading')+'</span><b>'+H(p.title||'')+'</b><small>'+words+' words</small></div><div class="qr-b">'+body()+'</div><div class="rl-bar"><button class="btn" id="rp">▶ Listen</button><button class="btn sec" id="rs">🐢 Slow</button><button class="btn sec" id="rx">■</button><span class="lead">Tap the underlined words.</span></div><div class="qgl" id="gl"></div></div><div class="qbox"></div></div>';
   var tl=[{ic:'⚡',n:'Skim'},{ic:'🔎',n:'Scan'},{ic:'✔',n:'True / False'},{ic:'🔢',n:'Order'},{ic:'🧩',n:'In context'},{ic:'💬',n:'Talk about it'}];
-  if(p.only!=null)$q(b,'.qbox').dataset.only=p.only;tabs($q(b,'.qbox'),tl,function(i,v){
+  tabs($q(b,'.qbox'),tl,function(i,v){
    if(i===0){mcq(v,p.fast||{q:'What is this text about?',opts:['—','—','—'],ans:0},function(){})}
    if(i===1){v.innerHTML='<p class="lead">Find the information. Look at the text again.</p>'+(p.scan||[]).map(function(q,k){return '<div class="rl-slot"><label>'+H(q.q)+'</label><input data-k="'+k+'" placeholder="…" autocomplete="off"><button class="btn sec" data-c="'+k+'" style="padding:5px 10px">✔</button></div>'}).join('');
     $a(v,'[data-c]').forEach(function(bt){bt.onclick=function(e){var k=+bt.dataset.c,q=p.scan[k],inp=$q(v,'input[data-k="'+k+'"]'),val=norm(inp.value);var ok=val&&[q.ans].concat(q.alt||[]).some(function(a){var n2=norm(a);return n2===val||(val.length>=3&&n2.indexOf(val)>=0)});inp.classList.remove('ok','bad');inp.classList.add(ok?'ok':'bad');if(!ok)inp.placeholder='Answer: '+q.ans;gain(ok?10:0,!!ok,e)}})}
@@ -157,10 +156,10 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
     $q(view,'#sgo').onclick=function(){this.disabled=true;q();iv=setInterval(function(){left--;var t=$q(view,'#stm');if(t){t.textContent='0:'+String(Math.max(0,left)).padStart(2,'0');t.classList.toggle('low',left<=10)}if(left<=0){clearInterval(iv);box.innerHTML='<div class="qdone">Time! '+sc+' ⚡</div>';finish('spd')}},1000)}}
    if(id==='dic'){seq(view,g.dict,function(it,w,dn){w.innerHTML='<div class="qq">Listen and type what you hear '+sayBtn(it.say)+'</div><div class="rl-in"><input placeholder="Type here…" autocomplete="off"><button class="btn" data-ck="1">Check</button></div><div class="qfb"></div>';wire(w);setTimeout(function(){A.say(it.say)},300);
     $q(w,'[data-ck]').onclick=function(e){var v=norm($q(w,'input').value);if(!v)return;var ok=v===norm(it.say);$q(w,'.qfb').innerHTML=(ok?'✅ ':'💡 ')+H(it.say);gain(ok?12:0,ok,e);dn(ok)}},function(){finish('dic')})}}
-  $a(b,'.qg').forEach(function(x){x.onclick=function(){play(x.dataset.g)}});if(p.game){$q(b,'.qarc').style.display='none';play(p.game)}mark()};
+  $a(b,'.qg').forEach(function(x){x.onclick=function(){play(x.dataset.g)}});mark()};
 
  /* ===== 17 · Mission complete: medalha, XP, figurinha e próxima parada ===== */
- R.q_wrap=function(p,b){var L=A.lesson(),m=medal(),bd=L.badge||{},st=L.sticker||{},xp=A.xp();var cast=(L.cast||[]);if(p.view)b.classList.add('qm-w'+p.view);
+ R.q_wrap=function(p,b){var L=A.lesson(),m=medal(),bd=L.badge||{},st=L.sticker||{},xp=A.xp();var cast=(L.cast||[]);
   var rec=A.LS.get('pgq-prog',{});rec[L.n]={xp:xp,acc:STAT.tot?Math.round(STAT.ok/STAT.tot*100):100,medal:m.k,at:Date.now()};
   var prev=rec[L.n];A.LS.set('pgq-prog',rec);
   var lad=(A.lesson().pages.filter(function(x){return x.t==='rl_levels'})[0]||{});
@@ -169,9 +168,9 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
    (p.homework?'<div class="bx soft"><div class="bxh">🎒 Streak mission</div><div class="bxb">'+H(p.homework)+'</div></div>':'')+'</div>'+
    '<div class="qw-r"><div class="qstk '+m.k+'"><div class="qs-h"><span>'+H(st.cat||'Cultural sticker')+'</span><em>Nº '+String(L.n).padStart(3,'0')+'</em></div><div class="frame">'+(st.art&&st.art.rs&&window.RS?stg(st.art,'cover'):A.scene(L.scene||'park',L.tod||'day',cast,'cover'))+'</div><div class="qs-t"><b>'+H(st.title||L.title)+'</b><small>'+H(st.sub||'')+'</small></div><div class="qs-r">'+m.r+'</div></div>'+
    (p.next?'<div class="qnext"><b>🚏 Next stop</b><span>'+H(p.next.title||'')+'</span><small>'+H(p.next.teaser||'')+'</small></div>':'')+'</div></div>';
-  if(!p.view||p.view==='b')A.confetti();mark()};
+  A.confetti();mark()};
 }
 var prevReg=window.RL_REGISTER;window.RL_REGISTER=function(R,API){if(prevReg)prevReg(R,API);quest(R,API)};
-function addStrip(p){if(!p||!p.art||!p.art.rs||!window.RS||/^(q_cover|q_wrap)$/.test(p.t))return;var pg=document.querySelector('.pg');if(!pg||pg.querySelector('.qbgl'))return;var d=document.createElement('div');d.className='qbgl';d.innerHTML=stg(p.art,'bg');pg.insertBefore(d,pg.firstChild)}
-var prevDraw=window.RL_ONDRAW;window.RL_ONDRAW=function(p,i,pages){if(prevDraw)prevDraw(p,i,pages);try{drawGameBar(p);drawHint(p);addStrip(p)}catch(e){console.error(e)}};
+function addStrip(p){if(!p||!p.art||!p.art.rs||!window.RS||/^(q_cover|q_wrap)$/.test(p.t))return;var b=document.querySelector('.pg .pb');if(!b||b.querySelector('.qstrip'))return;var d=document.createElement('div');d.className='qstrip';d.innerHTML=stg(p.art,'strip');b.insertBefore(d,b.firstChild)}
+var prevDraw=window.RL_ONDRAW;window.RL_ONDRAW=function(p,i,pages){if(prevDraw)prevDraw(p,i,pages);if(document.body.classList.contains('quest-l1'))return;try{drawGameBar(p);drawHint(p);addStrip(p)}catch(e){console.error(e)}};
 })();

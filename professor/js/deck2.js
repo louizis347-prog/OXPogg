@@ -162,6 +162,7 @@ R.teamquiz=function(p,b){var k=0,sc={A:0,B:0},rev=false;
   b.querySelector('#rv').onclick=function(){rev=true;draw()};b.querySelector('#a1').onclick=function(e){sc.A++;gain(10,true,e);rev=false;k++;draw()};b.querySelector('#b1').onclick=function(e){sc.B++;gain(10,true,e);rev=false;k++;draw()};b.querySelector('#nx').onclick=function(){rev=false;k++;draw()}};draw()};
 /* ---------- navegação ---------- */
 function build(p,i){var s=SEC[p.t]||['vocab',p.t],sec=document.createElement('section');sec.className='pg';sec.dataset.sec=s[0];var title=p.title||s[1];
+ if(p.t==='q1'){s=[{mission:'open',culture:'read',read:'listen',talk:'photo',lab:'gram',arcade:'game',boss:'speak',write:'write',wrap:'review'}[p.stage]||'open',p.label||'Aula em ação'];sec.dataset.sec=s[0]}
  var badge=p.for==='group'?'<span class="mb">👥 Group</span>':p.for==='solo'?'<span class="mb">1-to-1</span>':'';
  sec.innerHTML='<div class="ph"><span class="tag">'+esc(s[1])+'</span><h2>'+esc(title)+'</h2>'+badge+'<span class="xpc">XP <b class="xpv">'+xp+'</b></span><span class="pn">'+(i+1)+' / '+PG.length+'</span><button class="hb" id="hb" aria-label="Menu">⋯</button></div><div class="pb"></div>';var body=sec.querySelector('.pb');try{(R[p.t]||function(){})(p,body)}catch(e){console.error(p.t,e);body.textContent='(erro de renderização)'}
  sec.querySelectorAll('[data-say]').forEach(function(x){x.addEventListener('click',function(){say(x.dataset.say)})});var hb=sec.querySelector('#hb');if(hb)hb.onclick=function(){var h=$('#hudp');h.hidden=!h.hidden};return sec}
@@ -170,21 +171,35 @@ function draw(){AC++;try{speechSynthesis.cancel()}catch(e){}var p=PG[I],st=$('#s
  var n=LS.get(nk(I),null);if(n&&n.on&&n.t){var d=document.createElement('div');d.className='note';d.innerHTML='<b>Nota do professor</b>'+esc(n.t);st.appendChild(d)}
  if(window.RL_ONDRAW){try{RL_ONDRAW(p,I,PG)}catch(e){console.error(e)}}$('#cnt').textContent=(I+1)+'/'+PG.length;$('#prev').disabled=I===0;$('#next').disabled=I===PG.length-1;st.scrollTop=0;rail();loadNote();LS.set(KEY+'-i',p._i)}
 function go(d){I=Math.max(0,Math.min(PG.length-1,I+d));draw()}
-function rail(){$('#rail').innerHTML=PG.map(function(p,i){var s=(SEC[p.t]||['vocab'])[0];return '<button class="sg '+(i===I?'cur':'')+(done[p._i]?' done':'')+'" style="--sc:'+COLS[s]+'" data-i="'+i+'" title="'+(i+1)+'. '+esc((SEC[p.t]||[0,p.t])[1])+(p.title?' · '+esc(p.title):'')+'"></button>'}).join('');$('#rail').querySelectorAll('.sg').forEach(function(b){b.onclick=function(){I=+b.dataset.i;draw()}})}
+function rail(){
+ if(document.body.classList.contains('quest-l1')){
+  var names={mission:'Missão',culture:'Cultura',read:'Leitura',talk:'Conversa',lab:'Linguagem',arcade:'Prática',boss:'Interação',write:'Escrita',wrap:'Revisão'};
+  var stages=[];PG.forEach(function(p,i){if(!stages.some(function(s){return s.key===p.stage}))stages.push({key:p.stage,start:i})});
+  var current=PG[I]&&PG[I].stage;
+  var trail='M27 10 C8 40 46 65 27 95 S8 150 27 180 S46 245 27 320',pct=Math.round((I+1)/PG.length*330);
+  $('#rail').innerHTML='<svg class="q1-rail-art" viewBox="0 0 54 330" aria-hidden="true"><defs><linearGradient id="q1-flow" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8edbd9"/><stop offset="1" stop-color="#777de7"/></linearGradient></defs><path d="'+trail+'" fill="none" stroke="url(#q1-flow)" stroke-width="8" stroke-linecap="round" opacity=".35"/><path d="'+trail+'" fill="none" stroke="#137d9b" stroke-width="5" stroke-linecap="round" stroke-dasharray="'+pct+' 330"/></svg>'+stages.map(function(s,j){var reached=I>=s.start;return '<button class="q1-node '+(current===s.key?'cur':'')+(reached?' reached':'')+'" data-i="'+s.start+'" aria-label="Ir para '+names[s.key]+'" title="'+names[s.key]+'"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M10 16l4 4 8-9"/></svg><span>'+names[s.key]+'</span></button>'}).join('');
+  $('#rail').querySelectorAll('.q1-node').forEach(function(b){b.onclick=function(){I=+b.dataset.i;draw()}});return
+ }
+ $('#rail').innerHTML=PG.map(function(p,i){var s=(SEC[p.t]||['vocab'])[0];return '<button class="sg '+(i===I?'cur':'')+(done[p._i]?' done':'')+'" style="--sc:'+COLS[s]+'" data-i="'+i+'" title="'+(i+1)+'. '+esc((SEC[p.t]||[0,p.t])[1])+(p.title?' · '+esc(p.title):'')+'"></button>'}).join('');$('#rail').querySelectorAll('.sg').forEach(function(b){b.onclick=function(){I=+b.dataset.i;draw()}})
+}
 function loadNote(){var n=LS.get(nk(I),{t:'',on:false});$('#nt').value=n.t||'';$('#vis').checked=!!n.on}
 function saveNote(){LS.set(nk(I),{t:$('#nt').value,on:$('#vis').checked});var st=$('#stage');st.querySelectorAll('.note').forEach(function(x){x.remove()});if($('#vis').checked&&$('#nt').value){var d=document.createElement('div');d.className='note';d.innerHTML='<b>Nota do professor</b>'+esc($('#nt').value);st.appendChild(d)}}
 function exportNotes(){var o={aula:N,titulo:L.title,notas:L.pages.map(function(s,i){return Object.assign({pagina:i+1,tipo:s.t},LS.get(KEY+'-note'+i,{t:'',on:false}))}).filter(function(x){return x.t})};var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(o,null,1)],{type:'application/json'}));a.download='notas-aula-'+N+'.json';a.click()}
 function setMode(m,keep){MODE=m;LS.set('pgx-mode',m);var cur=PG[I]?PG[I]._i:0;PG=L.pages.filter(function(p){return !p.for||p.for===m});PG.forEach(function(p){});var j=PG.findIndex(function(p){return p._i>=cur});I=keep?Math.max(0,j<0?PG.length-1:j):0;document.querySelectorAll('#mode button').forEach(function(b){b.classList.toggle('on',b.dataset.m===m)});var t=$('#teams');if(t)t.style.display=m==='group'?'flex':'none';$('#obj').textContent=(m==='group'?'Aula em grupo':'Aula particular')+': '+PG.length+' páginas (~'+L.minutes+' min). Notas ficam salvas neste navegador.';draw()}
 function printAll(){document.body.innerHTML='';var app=document.createElement('div');app.className='app';document.body.appendChild(app);PG.forEach(function(p,i){I=i;var st=document.createElement('div');st.className='stage';st.style.height='auto';st.appendChild(build(p,i));app.appendChild(st)});document.querySelectorAll('.hb').forEach(function(x){x.remove()});setTimeout(function(){print()},500)}
 Promise.all([fetch('data/'+(window.DECK_DIR||'v2')+'/'+String(N).padStart(3,'0')+'.json').then(function(r){return r.json()}),fetch('data/elenco.json').then(function(r){return r.json()})]).then(function(r){L=r[0];L.pages.forEach(function(p,i){p._i=i});r[1].forEach(function(p){PEOPLE[p.name]=p});
+ if(window.DECK_DIR==='v4'&&L.n===1&&L.fmt==='quest-focus-v1')document.body.classList.add('quest-l1');
  document.title=L.title+' · Aula '+L.n;done=LS.get(KEY+'-done',{});xp=LS.get(KEY+'-xp',0);document.querySelectorAll('.xpv').forEach(function(e){e.textContent=xp});
  var saved=LS.get(KEY+'-i',0);PG=L.pages.filter(function(p){return !p.for||p.for===MODE});var j=PG.findIndex(function(p){return p._i>=saved});I=PRINT?0:Math.max(0,j<0?0:j);
  document.querySelectorAll('#mode button').forEach(function(b){b.classList.toggle('on',b.dataset.m===MODE);b.onclick=function(){setMode(b.dataset.m,true)}});
  if(PRINT){printAll();return}
- $('#prev').onclick=function(){go(-1)};$('#next').onclick=function(){go(1)};$('#nb').onclick=function(){$('#drawer').classList.toggle('on')};$('#fs').onclick=function(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
+ $('#prev').onclick=function(){go(-1)};$('#next').onclick=function(){go(1)};$('#nb').onclick=function(){$('#drawer').classList.toggle('on')};var sideMenu=$('#menu2');if(sideMenu)sideMenu.onclick=function(){var h=$('#hudp');h.hidden=!h.hidden};
+ var toggleFull=function(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
+ $('#fs').onclick=toggleFull;var sideFull=$('#fs2');if(sideFull)sideFull.onclick=toggleFull;
+ document.addEventListener('fullscreenchange',function(){if(sideFull){sideFull.setAttribute('aria-label',document.fullscreenElement?'Sair da tela cheia':'Entrar em tela cheia');sideFull.textContent=document.fullscreenElement?'⤢':'⛶'}});
  $('#nt').oninput=saveNote;$('#vis').onchange=saveNote;$('#nexp').onclick=exportNotes;$('#nprint').onclick=function(){window.open((window.DECK_PAGE||'aula2.html')+'?n='+N+'&print=1','_blank')};
  document.querySelectorAll('#teams button').forEach(function(b){b.onclick=function(){var k=b.dataset.t;team[k]++;$('#t'+k.toLowerCase()).textContent=team[k]};b.oncontextmenu=function(e){e.preventDefault();var k=b.dataset.t;team[k]=Math.max(0,team[k]-1);$('#t'+k.toLowerCase()).textContent=team[k]}});
  addEventListener('keydown',function(e){if(/INPUT|TEXTAREA/.test(e.target.tagName))return;if(e.key==='ArrowRight')go(1);if(e.key==='ArrowLeft')go(-1)});
- document.addEventListener('click',function(e){var h=$('#hudp');if(!h.hidden&&!e.target.closest('#hudp')&&!e.target.closest('#hb'))h.hidden=true});
+ document.addEventListener('click',function(e){var h=$('#hudp');if(!h.hidden&&!e.target.closest('#hudp')&&!e.target.closest('#hb')&&!e.target.closest('#menu2'))h.hidden=true});
  setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);$('#clock b').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);setMode(MODE,true)}).catch(function(e){console.error(e)});
 })();

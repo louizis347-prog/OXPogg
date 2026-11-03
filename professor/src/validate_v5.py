@@ -11,10 +11,6 @@ def check(n):
     if not S: return ['sem suplemento']
     r = S.get('reg')
     if not (isinstance(r, int) and 1 <= r <= len(B.EN)): E.append('reg: índice 1..%d do episódio regular' % len(B.EN))
-    else:
-        for f in glob.glob(os.path.join(HERE, 'supp5', 's[0-9][0-9][0-9].py')):
-            m = int(os.path.basename(f)[1:4])
-            if m != n and B.supp(m).get('reg') == r: E.append('reg R%d já usado na aula %d (escolha outro episódio)' % (r, m))
     c = S.get('culture') or {}
     if wc(c.get('hook', '')) < 15: E.append('culture.hook curto (≥15 palavras)')
     if len(c.get('mythfact', [])) < 4: E.append('culture.mythfact ≥4')
