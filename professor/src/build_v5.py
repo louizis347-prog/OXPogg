@@ -6,6 +6,7 @@ import glob, importlib.util, json, math, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, HERE)
 from build_v4 import CH, MIN, DESC, CHAP
+CHAP.update({'q_story': 'mission', 'q_phrase': 'talk', 'q_dialog': 'talk', 'q_say': 'lab', 'q_mold': 'lab', 'q_sound': 'lab', 'q_role': 'boss', 'q_free': 'write'})
 def load(p):
     o = []
     for f in sorted(glob.glob(os.path.join(ROOT, 'data', p + '_*.json'))): o += json.load(open(f, encoding='utf-8'))
@@ -106,13 +107,68 @@ def build(n):
     P['q_cover']['art'] = art('hotscene')
     P['rl_dialog']['art'] = art('pgscene'); P['q_choose']['art'] = art('pgscene'); P['rl_pron']['art'] = art('pglab'); P['q_arcade']['art'] = art('pgfind')
     P['rl_role']['art'] = art('pgspeak'); P['rl_write']['art'] = art('pgmission') if fr(en, 'pgmission') else None; P['rl_chunks']['art'] = art('pgexp')
-    ORDER = ['q_cover', 'q_culture', 'q_read', 'rl_dialog', 'q_choose', 'rl_chunks', 'rl_patterns', 'rl_pron', 'q_arcade', 'rl_role', 'rl_write', 'rl_exit', 'q_wrap']
+    if S.get('story'): P['q_story'] = dict(t='q_story', title='Story time', steps=S['story'])
+    if S.get('phrase'): P['q_phrase'] = dict(t='q_phrase', title=S['phrase'].get('title', 'Situation & phrase'), **{k: v for k, v in S['phrase'].items() if k != 'title'})
+    if S.get('dlg'): P['q_dialog'] = dict(t='q_dialog', title='Dialogue — ' + nb['t'], **S['dlg'])
+    if S.get('say'): P['q_say'] = dict(t='q_say', title='Say it', **S['say'])
+    for key, t in (('mold', 'q_mold'), ('sound', 'q_sound'), ('role', 'q_role'), ('free', 'q_free')):
+        if S.get(key): P[t] = dict(t=t, title={'mold': 'Word mold', 'sound': 'Sound lab', 'role': 'Boss mission', 'free': 'Free production'}[key], **S[key])
+    if S.get('speed'): P['q_arcade']['games']['speed'] = S['speed']
+    for k, v in (S.get('arts') or {}).items():
+        if k in P: P[k]['art'] = v
+    if S.get('sticker_art'): P['q_wrap']['sticker_art'] = S['sticker_art']
+    if S.get('cando'): P['q_cover']['canDo'] = S['cando']
+    if S.get('pt'): P['q_cover']['pt'] = S['pt']
+    if S.get('goal'): P['q_cover']['goal'] = S['goal']
+    if S.get('chunks'): P['rl_chunks']['items'] = S['chunks']
+    if S.get('title_pt'): P['q_cover']['title'] = S['title_pt']
+    ORDER = ['q_cover', 'q_story', 'q_culture', 'q_read', 'q_dialog' if 'q_dialog' in P else 'rl_dialog', 'q_phrase', 'q_choose', 'rl_chunks', 'q_say', 'q_mold' if 'q_mold' in P else 'rl_patterns', 'q_sound' if 'q_sound' in P else 'rl_pron', 'q_arcade', 'q_role' if 'q_role' in P else 'rl_role', 'q_free' if 'q_free' in P else 'rl_write', 'rl_exit', 'q_wrap']
+    ORDER = [t for t in ORDER if t in P]
     pages = []
+    def sub(p, t, **kw):
+        q = dict(p); q.update(kw)
+        if t is not None: q['title'] = t
+        return q
+    def explode(t, p):
+        T = p.get('title', '')
+        if t == 'q_cover': return [sub(p, None, view='a'), sub(p, 'Mission · what you will do', view='b')]
+        if t == 'q_story':
+            st = p['steps']; return [sub(p, 'Story time · %d/%d' % (i + 1, len(st)), steps=[x]) for i, x in enumerate(st)]
+        if t == 'q_culture':
+            names = ['Explore the scene', 'Fact file', 'Myth or fact?', 'In the wild', 'Compare', 'Quiz'] if p.get('hot') else ['Fact file', 'Myth or fact?', 'In the wild', 'Compare', 'Quiz']
+            return [sub(p, 'Cultural spotlight · ' + n, only=i, nohook=(i > 0)) for i, n in enumerate(names)]
+        if t == 'q_read':
+            tx = p['text']; h = (len(tx) + 1) // 2
+            out = [sub(p, T + ' · part 1', text=tx[:h], textOnly=True), sub(p, T + ' · part 2', text=tx[h:], textOnly=True)]
+            return out + [sub(p, 'Reading quest · ' + n, only=i, text=tx) for i, n in enumerate(['Skim', 'Scan', 'True or false', 'Order the story', 'Words in context', 'Talk about it'])]
+        if t == 'q_dialog':
+            ln = p['lines']; h = (len(ln) + 1) // 2
+            return [sub(p, 'Dialogue · part 1', lines=ln[:h], qs=[]), sub(p, 'Dialogue · part 2', lines=ln[h:], qs=[]), sub(p, 'Dialogue · check', lines=[], qonly=True)]
+        if t == 'q_choose':
+            tr = p['turns']; h = (len(tr) + 1) // 2
+            return [sub(p, 'Choose your reply · 1/2', turns=tr[:h]), sub(p, 'Choose your reply · 2/2', turns=tr[h:])]
+        if t == 'rl_chunks':
+            it = p['items']; h = (len(it) + 1) // 2
+            return [sub(p, 'Useful expressions · 1/2', items=it[:h]), sub(p, 'Useful expressions · 2/2', items=it[h:])]
+        if t == 'q_say':
+            it = p['items']; h = (len(it) + 1) // 2 + (1 if len(it) % 2 == 0 else 0)
+            return [sub(p, 'Say it · 1/2', items=it[:h]), sub(p, 'Say it · 2/2', items=it[h:])]
+        if t == 'q_mold':
+            return [sub(p, 'Word mold · ' + f['title'], frames=[f]) for f in p['frames']]
+        if t == 'q_sound':
+            it = p['items']; h = (len(it) + 1) // 2
+            return [sub(p, 'Sound lab · 1/3', items=it[:h], identify=[]), sub(p, 'Sound lab · 2/3', items=it[h:], identify=[]), sub(p, 'Sound lab · listen & choose', items=[], identify=p['identify'])]
+        if t == 'q_arcade':
+            g = p['games']; ids = [('pairs', 'Memory match', 'pairs'), ('uns', 'Unscramble', 'unscramble'), ('err', 'Error hunt', 'errors'), ('spd', 'Speed round', 'speed'), ('dic', 'Dictation', 'dict')]
+            return [sub(p, 'Practice arcade · ' + n, game=i) for i, n, k in ids if g.get(k)]
+        if t == 'q_wrap': return [sub(p, 'Mission complete', view='a'), sub(p, 'Sticker & next stop', view='b')]
+        return [p]
     for t in ORDER:
-        p = dict(P[t]); p['stage'] = CHAP[t]; pages.append(p)
+        for q in explode(t, P[t]):
+            q = dict(q); q['stage'] = CHAP[t]; pages.append(q)
     plan = {m: [dict(id=k, name=CH[k][1], ic=CH[k][0], c=CH[k][2], min=MIN[m][k], desc=DESC[k]) for k in CH if k != 'lab' or True] for m in MIN}
     L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
-        pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
+        pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=S.get('sticker_art') or dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
         src=dict(regular=en['n'], neighbors=nb['n'], reg_idx=S.get('reg', n)))
     os.makedirs(os.path.join(ROOT, 'professor', 'data', 'v4'), exist_ok=True)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
