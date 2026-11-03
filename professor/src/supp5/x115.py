@@ -22,7 +22,7 @@ X = dict(
   dict(w="ruler", pt="régua", e="📏", ex=["The ruler is long.", "I draw a line with a ruler."]),
   dict(w="eraser", pt="borracha", e="🧽", ex=["I need an eraser.", "The eraser is pink."]),
   dict(w="calculator", pt="calculadora", e="🧮", ex=["I use a calculator.", "The calculator is cheap."]),
-  dict(w="notebook", pt="caderno", e="📓", ex=["Open your notebook.", "My notebook is blue."]),
+  dict(w="crayon", pt="giz de cera", e="🖍️", ex=["I have a red crayon.", "Draw with a crayon."]),
   dict(w="glue", pt="cola", e="🧴", ex=["I need glue for the paper.", "The glue is in aisle four."]),
  ],
  molds=[
