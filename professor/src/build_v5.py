@@ -28,6 +28,10 @@ def supp(n):
 import zlib
 ELENCO = [x['name'] for x in json.load(open(os.path.join(ROOT, 'professor', 'data', 'elenco.json'), encoding='utf-8'))]
 def face_of(name): return ELENCO[zlib.crc32(name.encode()) % len(ELENCO)]
+def extras(n):
+    f = os.path.join(HERE, 'supp5', 'x%03d.py' % n)
+    if not os.path.exists(f): return {}
+    spec = importlib.util.spec_from_file_location('x5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m.X
 def build(n):
     S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[n - 1]
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
@@ -124,7 +128,7 @@ def build(n):
         refine(L, S)
     else:
         from lesson_focus import focus
-        focus(L, P, S, dict(en=en, nb=nb, lines=[dict(who=l['who'], en=l['en'], pt=l['pt']) for l in lines], vocab=[(v[0], v[1], v[2]) for v in vocab], npc=npc, npcface=npcface, face_of=face_of))
+        focus(L, P, S, dict(en=en, nb=nb, lines=[dict(who=l['who'], en=l['en'], pt=l['pt']) for l in lines], vocab=[(v[0], v[1], v[2]) for v in vocab], npc=npc, npcface=npcface, face_of=face_of, extras=extras(n)))
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]

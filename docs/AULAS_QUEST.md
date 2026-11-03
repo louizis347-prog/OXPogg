@@ -14,3 +14,16 @@ Cada aula 1–50 do Painel do Professor (`professor/aula4.html?n=N`) junta **um 
 ## Passos
 1. `python3 src/show_v5.py N` (lê o Neighbors), escolha `reg`, `python3 src/show_v5.py N R`.
 2. Escreva `src/supp5/sNNN.py`. 3. `python3 src/validate_v5.py N` até `ok`. 4. Não faça commit/push; não edite outros arquivos.
+
+## Bloco extra (padrão da aula 1) — `src/supp5/xNNN.py`
+Cada aula tem, além de `sNNN.py`, um bloco `X = dict(...)` em `src/supp5/xNNN.py`. Rode `python3 src/show_x.py N` (mostra o diálogo numerado, o vocabulário e o elenco) e valide com `python3 src/validate_x.py N`. **Inglês simples (A1); PT só nos campos pt/note/tip/task/checks/change; nada de conteúdo copiado das aulas antigas; fatos verdadeiros.**
+- `key`: `{big, label, sub}` — a expressão-chave da situação (ex.: big “For here / to go”, label “Ficar ou levar”, sub “Uma pergunta frequente ao pedir; a forma exata varia conforme o lugar.” em PT).
+- `mini`: 4 falas `{who, en, pt}` que mostram a situação completa com contexto; use `{a|b|c}` para palavras que trocam ao clicar (≥3 trocas; o pt tem as mesmas trocas, na mesma ordem e quantidade).
+- `dlg`: o diálogo do Neighbors (mesmo número de falas e mesmo `who` do `show_x.py`) com `{a|b|c}` em palavras de vocabulário (≥6 trocas no total; pt paralelo).
+- `vocab`: 6 × `{w, pt, e (emoji), ex: [2 frases com a palavra]}`.
+- `molds`: 3 × `{title (PT), frame com {slot}, slots:[{key, opts:[3–4]}], model (= frame com as primeiras opções), note (PT)}`; todas as combinações precisam ser frases naturais. 1º e 2º para falar; 3º para escrever.
+- `sounds`: 3 × `{say, tag (PT curto, ex.: “ligação: can I”), tip (PT)}` — UM fenômeno (ligação, acento, ritmo, redução) por aula.
+- `role`: `{turns: 4 × {npc, opts: 3 × {en, pt, reply}}, change: [3 complicações em PT]}` — as 3 opções de cada turno são respostas naturais que se encaixam (o aluno escolhe), e `reply` é a fala do outro personagem coerente com a escolha.
+- `writing`: `{task (PT), model (EN, 2–3 frases), kw: [4+ palavras minúsculas esperadas], checks: [3 em PT]}`.
+- `scenes`: `{pool: [3–6 cenas distintas e coerentes com a situação, chaves RS válidas], npc: {g: 'f'|'m', role: 'barista'|'friend'|'customer'…}, you: {g}}`.
+- `convo`: substitui o “escolha sua resposta” de `sNNN.py`: 4–5 turnos `{npc, pt, opts: 3 × {en, pt, ok, fb}}` — exatamente 1 `ok`; as 2 erradas são frases naturais em inglês, **plausíveis mas inadequadas àquela fala** (função errada, quem fala errado, tom errado) — nunca absurdas; varie a posição da certa; `fb` curto em PT explicando.

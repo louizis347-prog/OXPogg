@@ -59,7 +59,8 @@ def swaps(en, pt, vocab):
 
 def focus(L, P, S, ctx):
     n, en, nb, lines, vocab, npc = L['n'], ctx['en'], ctx['nb'], ctx['lines'], ctx['vocab'], ctx['npc']
-    cu, rd, cv = S['culture'], S['reading'], S['convo']
+    X = ctx.get('extras') or {}
+    cu, rd, cv = S['culture'], S['reading'], (X.get('convo') or S['convo'])
     speakers = []
     for l in lines:
         if l['who'] not in speakers: speakers.append(l['who'])
@@ -68,12 +69,13 @@ def focus(L, P, S, ctx):
     learner = me_sp if me_sp != 'You' else 'Mia'
     npc = next((x for x in speakers if x != me_sp), npc); npcface = face_of(npc)
     sc, sc2 = nb.get('sc') or 'street', en.get('sc') or 'street'
-    pl = pool(sc if sc in RS else sc2, sc2); rsn = [0]
+    pl = [x for x in (X.get('scenes') or {}).get('pool', []) if x in RS] or pool(sc if sc in RS else sc2, sc2); rsn = [0]
     def scene():
         s = pl[rsn[0] % len(pl)]; rsn[0] += 1; return s
-    role_npc = 'barista' if sc in ('cafe', 'cafe2', 'cafe3', 'bakery', 'diner', 'restaurant') else 'friend'
-    me = lambda x, fl=0, **o: dict({'n': learner, 'g': 'f', 'role': 'customer', 'x': x, 'flip': fl}, **o)
-    other = lambda x, fl=1, **o: dict({'n': npc, 'g': gender(npc), 'role': role_npc, 'x': x, 'flip': fl}, **o)
+    xs = X.get('scenes') or {}
+    role_npc = (xs.get('npc') or {}).get('role') or ('barista' if sc in ('cafe', 'cafe2', 'cafe3', 'bakery', 'diner', 'restaurant') else 'friend')
+    me = lambda x, fl=0, **o: dict({'n': learner, 'g': (xs.get('you') or {}).get('g', 'f'), 'role': 'customer', 'x': x, 'flip': fl}, **o)
+    other = lambda x, fl=1, **o: dict({'n': npc, 'g': (xs.get('npc') or {}).get('g') or gender(npc), 'role': role_npc, 'x': x, 'flip': fl}, **o)
     def art(kind, k=0):
         s = scene()
         if kind == 'solo': return {'rs': s, 'cast': [me(48)]}
@@ -102,10 +104,11 @@ def focus(L, P, S, ctx):
     pol = cu.get('polite')
     if pol: facts.append({'big': 'Soa natural', 'label': 'Educação e tom', 'sub': clean(pol)})
     while len(facts) < 4: facts.append({'big': nb['t'], 'label': 'Situação', 'sub': clean(cu['hook'])})
-    first = {'big': nb['t'], 'label': 'Situação', 'sub': clean(cu['hook'])}
-    mini = []
-    for l in lines[:4]:
-        e2, p2 = swaps(clean(l['en']), l['pt'], vocab); mini.append({'who': l['who'], 'en': e2, 'pt': p2})
+    first = X.get('key') or {'big': nb['t'], 'label': 'Situação', 'sub': clean(cu['hook'])}
+    mini = list(X.get('mini') or [])
+    if not mini:
+        for l in lines[:4]:
+            e2, p2 = swaps(clean(l['en']), l['pt'], vocab); mini.append({'who': l['who'], 'en': e2, 'pt': p2})
     add('culture', 'facts', 'A situação em contexto', a=art('both', 2), facts=[first] + facts[:2], mini=mini, me=me_sp, faces=faces)
     add('culture', 'facts', 'Costumes e escolhas', a=art('npc'), facts=facts[2:4] if len(facts) > 3 else facts[:2])
     add('culture', 'compare', 'Brasil e Estados Unidos', a=art('pair'), compare=cu['compare'])
@@ -141,8 +144,12 @@ def focus(L, P, S, ctx):
     half = (len(lines) + 1) // 2
     for idx, (title, part) in enumerate([('Conversa · começo', lines[:half]), ('Conversa · final', lines[half:])]):
         sw = []
-        for l in part:
-            e2, p2 = swaps(clean(l['en']), l['pt'], vocab); sw.append({'who': l['who'], 'en': e2, 'pt': p2})
+        xd = X.get('dlg') or []
+        for j, l in enumerate(part):
+            gi = (0 if idx == 0 else half) + j
+            if gi < len(xd) and xd[gi].get('who') == l['who']: sw.append({'who': l['who'], 'en': xd[gi]['en'], 'pt': xd[gi]['pt']})
+            else:
+                e2, p2 = swaps(clean(l['en']), l['pt'], vocab); sw.append({'who': l['who'], 'en': e2, 'pt': p2})
         add('talk', 'dialog', title, a=art('both', idx), lines=[(l['who'], clean(l['en']), l['pt']) for l in part], swaps=sw, me=me_sp, faces=faces, instruction='Ouça. Depois toque nas palavras coloridas e diga o que muda.')
     for i, t in enumerate(cv['turns']):
         add('talk', 'choice', 'Sua resposta · %d/%d' % (i + 1, len(cv['turns'])), a=art('both', i), turn=t, position=i + 1, total=len(cv['turns']), npc=cv['npc']['name'], npcface=npcface, outcome='A conversa continua.')
@@ -156,6 +163,7 @@ def focus(L, P, S, ctx):
         while len(out) < 2: out.append('I need ' + w + '.' if len(out) == 0 else 'This is my ' + w + '.')
         return out[:2]
     words = [(w, wp, exs(w)[0], exs(w)[1], 'prop:cup', e) for w, e, wp in vocab[:6]]
+    if X.get('vocab'): words = [(v['w'], v['pt'], v['ex'][0], v['ex'][1], 'prop:cup', v.get('e', '')) for v in X['vocab'][:6]]
     for i in range(0, len(words), 3):
         grp = words[i:i + 3]
         if grp: add('lab', 'vocab', 'Palavras em ação · %d/%d' % (i // 3 + 1, -(-len(words) // 3)), a=art('both', i), words=grp, prompt='Toque, ouça e diga uma frase sua com cada palavra.')
@@ -178,13 +186,17 @@ def focus(L, P, S, ctx):
         if m_ and len(ms) < 2 and all(m_['frame'] != x['frame'] for x in ms): ms.append(m_)
     if not ms: ms.append({'frame': 'I would like {item}, please.', 'slots': [{'key': 'item', 'opts': vlist[:3] or ['water', 'tea', 'coffee']}], 'model': 'I would like water, please.'})
     titles = ['Molde: faça o pedido', 'Molde: varie a frase']
+    xm = X.get('molds') or []
+    if len(xm) >= 3: ms = [{'frame': m['frame'], 'slots': m['slots'], 'model': m['model'], 'note': m.get('note', ''), 'title': m.get('title')} for m in xm]
     for i in range(2):
         m_ = ms[i % len(ms)]
-        add('lab', 'pattern', titles[i], a=art('both', i), frame=m_['frame'], slots=m_['slots'], model=m_['model'], note='Troque duas opções e diga a frase em voz alta, sem ler.')
+        add('lab', 'pattern', m_.get('title') or titles[i], a=art('both', i), frame=m_['frame'], slots=m_['slots'], model=m_['model'], note=m_.get('note') or 'Troque duas opções e diga a frase em voz alta, sem ler.')
     # sons
     pr = P['rl_pron']; items = [clean(x['say']) for x in pr.get('items', [])][:3]
     if len(items) < 3: items += [clean(o['en']) for o in oks if clean(o['en']) not in items][:3 - len(items)]
-    add('lab', 'sound', 'Som e ritmo', a=art('solo'), pairs=[(t, 'ritmo', 'Ouça, repita no mesmo ritmo e grave sua versão.') for t in items[:3]], prompt='Ouça, repita e depois grave uma versão sua.')
+    pairs_ = [(t, 'ritmo', 'Ouça, repita no mesmo ritmo e grave sua versão.') for t in items[:3]]
+    if X.get('sounds'): pairs_ = [(x['say'], x['tag'], x['tip']) for x in X['sounds'][:3]]
+    add('lab', 'sound', 'Som e ritmo', a=art('solo'), pairs=pairs_, prompt='Ouça, repita e depois grave uma versão sua.')
     # arcade
     ex = []
     for e in S['errors'][:4]:
@@ -204,15 +216,19 @@ def focus(L, P, S, ctx):
                 for alt in m_.group(1).split('|')[1:]:
                     opts.append([e2.replace(m_.group(0), alt), p2, (re.sub(re.escape(m_.group(1).split('|')[0]), alt, rep, flags=re.I) if rep else 'OK.')])
             turns.append({'npc': clean(lines[i]['en']), 'opts': opts[:3]})
+    if (X.get('role') or {}).get('turns'): turns = [{'npc': t['npc'], 'opts': [[o['en'], o['pt'], o['reply']] for o in t['opts']]} for t in X['role']['turns']]
+    chg = (X.get('role') or {}).get('change') or ['Falta um item.', 'O atendente não entende: repita com outras palavras.', 'O cliente muda de ideia.']
     add('boss', 'role', 'Missão ao vivo', a=art('both', 5), solo='Professor é %s; estudante faz o papel de cliente. Escolham as falas e refaçam a conversa em três rodadas.' % npc,
         group='Trio: cliente, %s e observador. Troquem de papel a cada rodada. O observador marca pedido claro, esclarecimento e despedida.' % npc,
-        prompts=[o['en'] for o in oks[:3]], change=['Falta um item.', 'O atendente não entende: repita com outras palavras.', 'O cliente muda de ideia.'], turns=turns or None, me=me_sp, npcname=npc, faces=faces)
+        prompts=[o['en'] for o in oks[:3]], change=chg, turns=turns or None, me=me_sp, npcname=npc, faces=faces)
     # escrita
     model = ' '.join(o['en'] for o in oks[:3]); kw = [w for w in vlist if re.search(r'\b' + re.escape(w) + r'\b', model, re.I)] + ['please', 'thanks']
-    mm = mold_from(oks[0]['en']) or ms[0]
-    add('write', 'pattern', 'Molde: varie por escrito', a=art('both', 6), frame=mm['frame'], slots=mm['slots'], model=mm['model'], note='Na escrita, a saudação, o detalhe e a despedida deixam a mensagem mais clara.')
-    add('write', 'writing', 'Escreva a sua versão', a=art('solo'), task='Escreva 3 frases: faça seu pedido ou sua pergunta, esclareça um detalhe e termine com uma despedida natural. Depois crie uma segunda versão mudando um item.',
-        model=model, checks=['Usei uma expressão da aula.', 'Fiz uma pergunta clara.', 'Usei uma despedida natural.'], variants=[], kw=kw, placeholder='Hi! Could I…?')
+    xw = X.get('writing') or {}
+    if xw: model = xw['model']; kw = [k_.lower() for k_ in xw.get('kw', kw)]
+    mm = (ms[2] if len(xm) >= 3 else (mold_from(oks[0]['en']) or ms[0]))
+    add('write', 'pattern', mm.get('title') or 'Molde: varie por escrito', a=art('both', 6), frame=mm['frame'], slots=mm['slots'], model=mm['model'], note=mm.get('note') or 'Na escrita, a saudação, o detalhe e a despedida deixam a mensagem mais clara.')
+    add('write', 'writing', 'Escreva a sua versão', a=art('solo'), task=xw.get('task') or 'Escreva 3 frases: faça seu pedido ou sua pergunta, esclareça um detalhe e termine com uma despedida natural. Depois crie uma segunda versão mudando um item.',
+        model=model, checks=xw.get('checks') or ['Usei uma expressão da aula.', 'Fiz uma pergunta clara.', 'Usei uma despedida natural.'], variants=[], kw=kw, placeholder='Hi! Could I…?')
     add('wrap', 'exit', 'Mostre o que aprendeu', a=art('both', 7), prompts=['Diga em voz alta: ' + o['pt'] for o in oks[:3]],
         spaced=['Amanhã: refaça a conversa sem consultar.', 'Na próxima semana: use as expressões em uma situação nova.', 'Na próxima unidade: mude o tom por escrito.'])
     add('wrap', 'finish', 'Missão concluída', a=art('both', 8), badge=S.get('badge') or {'name': nb['t'], 'desc': 'Conversa concluída em inglês.'}, homework=S.get('homework', ''), next='Em outra situação, um detalhe mudou. Como você se adaptaria?')
