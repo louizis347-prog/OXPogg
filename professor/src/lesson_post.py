@@ -9,7 +9,10 @@ TINT = {'cafe': ('#fdf3e4', '#f3dfc4'), 'cafe2': ('#fdf3e4', '#f3dfc4'), 'cafe3'
 FIRST_ITEMS = [('👋', 'Hello! Good morning.', 'Olá! Bom dia.'), ('🙏', 'Thank you!', 'Obrigado!'), ('🙂', 'Nice to meet you.', 'Prazer em conhecer você.')]
 norm = lambda s: re.sub(r'\s+', ' ', re.sub(r'\*\*', '', s or '')).strip()
 
-def post(L, n, Y, S, X, prev, vocab_emojis):
+FIRST_WORDS = [('👋', 'hello', 'olá'), ('🙏', 'please', 'por favor'), ('❤️', 'thanks', 'obrigado'), ('😔', 'sorry', 'desculpe'), ('✅', 'yes', 'sim'), ('❌', 'no', 'não')]
+FIRST_ITEMS = FIRST_ITEMS + [('🤝', 'How are you?', 'Como vai você?'), ('🙋', 'Excuse me, please.', 'Com licença, por favor.'), ('👋', 'See you later!', 'Até mais!')]
+
+def post(L, n, Y, S, X, prev, vocab_emojis, Z=None):
     pages = L['pages']
     if n == 1:
         import json, os
@@ -62,17 +65,35 @@ def post(L, n, Y, S, X, prev, vocab_emojis):
         if p.get('kind') == 'exit':
             p['items'] = [dict(cue=pt, target=en) for pt, en in oks[1:4]] if len(oks) >= 4 else [dict(cue=pt, target=en) for pt, en in oks[:3]]
             p.pop('prompts', None); p.pop('spaced', None)
-    # ---- mochila de revisão no começo
+    # ---- mochila de revisão no começo (4 quadros: expressões, palavras, desafio, fale)
     if prev:
-        items = [dict(e=e or '💬', en=en, pt=pt) for e, en, pt in prev['items']][:4]
-        qz = prev['quiz']
+        items = [dict(e=e or '💬', en=en, pt=pt) for e, en, pt in prev['items']][:6]
+        words = [dict(e=e or '💬', w=w, pt=pt) for e, w, pt in prev['words']][:6]
+        qz = prev['quiz']; say = [dict(en=en, pt=pt) for en, pt in prev['say']][:3]
     else:
-        items = [dict(e=e, en=en, pt=pt) for e, en, pt in FIRST_ITEMS]
+        items = [dict(e=e, en=en, pt=pt) for e, en, pt in FIRST_ITEMS][:6]
+        words = [dict(e=e, w=w, pt=pt) for e, w, pt in FIRST_WORDS]
+        say = [dict(en=en, pt=pt) for _, en, pt in FIRST_ITEMS[:3]]
         qz = [dict(q='Alguém diz “Hello! Good morning.” Você responde…', opts=['Hi! Good morning.', 'Goodbye, see you.', 'I am fine, sorry.'], ans=0, why='Respondemos o cumprimento com outro cumprimento.'),
-              dict(q='Alguém ajuda você. Você diz…', opts=['Thank you!', 'See you!', 'Where is it?'], ans=0, why='Thank you! agradece a ajuda.')]
+              dict(q='Alguém ajuda você. Você diz…', opts=['Thank you!', 'See you!', 'Where is it?'], ans=0, why='Thank you! agradece a ajuda.'),
+              dict(q='Você quer a atenção de alguém para perguntar algo. Você diz…', opts=['Excuse me, please.', 'Good night.', 'Nice to meet you.'], ans=0, why='Excuse me chama a atenção com educação.'),
+              dict(q='Você conhece uma pessoa nova. Você diz…', opts=['Nice to meet you.', 'See you later.', 'You are welcome.'], ans=0, why='Nice to meet you é o que dizemos ao conhecer alguém.')]
     art0 = pages[0].get('art') or {}
-    rev = [dict(t='q1', stage='mission', kind='review', title='Mochila de revisão', art=art0, items=items),
-           dict(t='q1', stage='mission', kind='quiz', title='Mochila · desafio rápido', art=art0, items=qz, instruction='Antes de começar: lembre o que você já sabe.')]
+    rev = [dict(t='q1', stage='mission', kind='review', title='Mochila · expressões', art=art0, items=items),
+           dict(t='q1', stage='mission', kind='reviewwords', title='Mochila · palavras', art=art0, words=words),
+           dict(t='q1', stage='mission', kind='quiz', title='Mochila · desafio', art=art0, items=qz, instruction='Antes de começar: lembre o que você já sabe.'),
+           dict(t='q1', stage='mission', kind='reviewsay', title='Mochila · fale', art=art0, items=say)]
     pages[1:1] = rev
+    # ---- verbos e expressões (depois do vocabulário)
+    if Z:
+        vi = max([i for i, p in enumerate(pages) if p.get('kind') == 'vocab'] or [len(pages) - 1]) + 1
+        art = pages[vi - 1].get('art') or art0
+        vs = Z['verbs']
+        add = [dict(t='q1', stage='lab', kind='verbs', title='Verbos em ação · 1/2', art=art, verbs=vs[:3]),
+               dict(t='q1', stage='lab', kind='verbs', title='Verbos em ação · 2/2', art=art, verbs=vs[3:]),
+               dict(t='q1', stage='lab', kind='verbplay', title='Aplique os verbos', art=art, items=Z['verb_game']),
+               dict(t='q1', stage='lab', kind='exprs', title='Expressões comuns', art=art, items=Z['expressions']),
+               dict(t='q1', stage='lab', kind='exprplay', title='Qual expressão usar?', art=art, items=Z['expr_game'])]
+        pages[vi:vi] = add
     L['pages'] = pages
     L['fmt'] = 'quest-focus-v1'
