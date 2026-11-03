@@ -19,7 +19,7 @@ X = dict(
  ],
  vocab=[
   dict(w="deli", pt="delicatessen", e="🥪", ex=["The deli is on the corner.", "We eat at the deli."]),
-  dict(w="coworker", pt="colega de trabalho", e="🧑‍💼", ex=["My coworker is friendly.", "I eat with my coworkers."]),
+  dict(w="lunchbox", pt="marmita", e="🍱", ex=["My lunchbox is blue.", "I bring a lunchbox from home."]),
   dict(w="mustard", pt="mostarda", e="🌭", ex=["I like mustard.", "Put mustard on the sandwich."]),
   dict(w="tuna", pt="atum", e="🐟", ex=["I'll have a tuna sandwich.", "The tuna is fresh."]),
   dict(w="crowded", pt="cheio de gente", e="👥", ex=["The deli is crowded.", "It is not crowded now."]),

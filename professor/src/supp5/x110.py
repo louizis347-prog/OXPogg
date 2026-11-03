@@ -18,12 +18,12 @@ X = dict(
   dict(who="Victor", en="Do I add an {attachment?|link?}", pt="Preciso anexar {um anexo?|um link?}"),
  ],
  vocab=[
-  dict(w="email", pt="e-mail", e="📧", ex=["I write an email.", "This email is short."]),
+  dict(w="greeting", pt="saudação", e="👋", ex=["Hello is a greeting.", "Start with a greeting."]),
   dict(w="subject", pt="assunto", e="🏷️", ex=["The subject is short.", "Write the subject first."]),
   dict(w="attachment", pt="anexo", e="📎", ex=["Open the attachment.", "The attachment is a report."]),
   dict(w="inbox", pt="caixa de entrada", e="📥", ex=["A new email is in my inbox.", "My inbox is full."]),
   dict(w="reply", pt="responder", e="↩️", ex=["Please reply today.", "I will reply soon."]),
-  dict(w="report", pt="relatório", e="📊", ex=["I need the report.", "The report is ready."]),
+  dict(w="draft", pt="rascunho", e="📝", ex=["This is my first draft.", "Read my draft, please."]),
  ],
  molds=[
   dict(title="Pedir ajuda", frame="Can you help me {verb} an email?", slots=[dict(key="verb", opts=["write", "read", "send"])], model="Can you help me write an email?", note="Help me + verbo base, sem 'to'."),

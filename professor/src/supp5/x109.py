@@ -19,7 +19,7 @@ X = dict(
  ],
  vocab=[
   dict(w="file", pt="arquivo", e="📁", ex=["I can't open this file.", "Save the file, please."]),
-  dict(w="folder", pt="pasta", e="🗂️", ex=["Open the folder.", "The folder is empty."]),
+  dict(w="mouse", pt="mouse", e="🖱️", ex=["The mouse is on the desk.", "Click with the mouse."]),
   dict(w="click", pt="clicar", e="🖱️", ex=["Click here.", "Click the link."]),
   dict(w="question", pt="pergunta", e="❓", ex=["I have a question.", "That is a good question."]),
   dict(w="link", pt="link", e="🔗", ex=["Click the link.", "The link is in the email."]),

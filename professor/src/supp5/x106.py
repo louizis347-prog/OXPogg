@@ -21,7 +21,7 @@ X = dict(
   dict(w="printer", pt="impressora", e="🖨️", ex=["The printer is in the hall.", "This printer is new."]),
   dict(w="copy", pt="cópia", e="📑", ex=["I need one copy.", "Make a copy, please."]),
   dict(w="document", pt="documento", e="📄", ex=["Where is my document?", "This document is short."]),
-  dict(w="stapler", pt="grampeador", e="📎", ex=["The stapler is on the desk.", "Can I use your stapler?"]),
+  dict(w="paperclip", pt="clipe de papel", e="📎", ex=["I need a paperclip.", "The paperclip is on the desk."]),
   dict(w="ink", pt="tinta", e="🖋️", ex=["The ink is low.", "We need black ink."]),
   dict(w="print", pt="imprimir", e="🗂️", ex=["Click Print.", "I print two pages."]),
  ],
