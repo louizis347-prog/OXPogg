@@ -194,7 +194,7 @@ Promise.all([fetch('data/'+(window.DECK_DIR||'v2')+'/'+String(N).padStart(3,'0')
  document.querySelectorAll('#mode button').forEach(function(b){b.classList.toggle('on',b.dataset.m===MODE);b.onclick=function(){setMode(b.dataset.m,true)}});
  if(PRINT){printAll();return}
  $('#prev').onclick=function(){go(-1)};$('#next').onclick=function(){go(1)};$('#nb').onclick=function(){$('#drawer').classList.toggle('on')};var sideMenu=$('#menu2');if(sideMenu)sideMenu.onclick=function(){var h=$('#hudp');h.hidden=!h.hidden};
- var toggleFull=function(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
+ var toggleFull=function(){var de=document.documentElement;if(!de.requestFullscreen){document.body.classList.toggle('qfs');return}try{var r=document.fullscreenElement?document.exitFullscreen():de.requestFullscreen();if(r&&r.catch)r.catch(function(){document.body.classList.toggle('qfs')})}catch(e){document.body.classList.toggle('qfs')}};
  $('#fs').onclick=toggleFull;var sideFull=$('#fs2');if(sideFull)sideFull.onclick=toggleFull;
  document.addEventListener('fullscreenchange',function(){if(sideFull){sideFull.setAttribute('aria-label',document.fullscreenElement?'Sair da tela cheia':'Entrar em tela cheia');sideFull.textContent=document.fullscreenElement?'⤢':'⛶'}});
  $('#nt').oninput=saveNote;$('#vis').onchange=saveNote;$('#nexp').onclick=exportNotes;$('#nprint').onclick=function(){window.open((window.DECK_PAGE||'aula2.html')+'?n='+N+'&print=1','_blank')};
