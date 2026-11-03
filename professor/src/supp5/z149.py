@@ -93,4 +93,7 @@ Z = {'verbs': [{'v': 'ride',
                 'opts': ['Howdy!', 'Hold your horses!', 'What happens first?'],
                 'ans': 1,
                 'why': 'Hold your horses! pede calma.'},
-               {'cue': 'Você quer saber o que começa o show.', 'opts': ['What happens first?', 'Giddy up!', 'Howdy!'], 'ans': 0, 'why': 'What happens first? pergunta a ordem.'}]}
+               {'cue': 'Você quer saber o que acontece primeiro no show.',
+                'opts': ['What happens first?', 'Giddy up!', 'Howdy!'],
+                'ans': 0,
+                'why': 'What happens first? pergunta a ordem.'}]}
