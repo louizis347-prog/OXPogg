@@ -6,15 +6,15 @@ def vb(v, ic, pt, base, third, past, ing, note):
         dict(k=K[2], en=past[0], ex=past[1], pt=past[2]), dict(k=K[3], en=ing[0], ex=ing[1], pt=ing[2])])
 Z = dict(
  verbs=[
-  vb('ring', '🔔', 'tocar (campainha)', ('ring', 'I ring the bell.', 'Eu toco a campainha.'), ('rings', 'She rings the bell.', 'Ela toca a campainha.'), ('rang', 'He rang the bell.', 'Ele tocou a campainha.'), ('ringing', 'I am ringing the bell.', 'Estou tocando a campainha.'), 'Irregular: ring vira rang.'),
+  vb('show', '🎫', 'mostrar', ('show', 'I show my pass.', 'Eu mostro meu passe.'), ('shows', 'She shows her card.', 'Ela mostra o cartão.'), ('showed', 'He showed the driver.', 'Ele mostrou ao motorista.'), ('showing', 'I am showing my pass.', 'Estou mostrando meu passe.'), 'Show serve para mostrar passe ou cartão. Passado: showed.'),
   vb('sit', '💺', 'sentar', ('sit', 'I sit near the window.', 'Eu sento perto da janela.'), ('sits', 'Ana sits in the front.', 'A Ana senta na frente.'), ('sat', 'We sat in the back.', 'Nós sentamos atrás.'), ('sitting', 'I am sitting here.', 'Estou sentado aqui.'), 'Irregular: sit vira sat.'),
   vb('hold', '🤝', 'segurar', ('hold', 'I hold the pole.', 'Eu seguro o poste.'), ('holds', 'She holds the rail.', 'Ela segura o corrimão.'), ('held', 'He held my bag.', 'Ele segurou minha bolsa.'), ('holding', 'I am holding on.', 'Estou me segurando.'), 'Irregular: hold vira held.'),
-  vb('hop', '🦘', 'subir rapidinho / pular', ('hop', 'We hop on the bus.', 'Nós subimos no ônibus.'), ('hops', 'He hops off here.', 'Ele desce aqui.'), ('hopped', 'I hopped on late.', 'Eu subi em cima da hora.'), ('hopping', 'We are hopping on.', 'Estamos subindo.'), 'Hop dobra o p: hopped, hopping.'),
+  vb('come', '🚌', 'vir / chegar', ('come', 'The bus comes here.', 'O ônibus vem aqui.'), ('comes', 'It comes every ten minutes.', 'Ele vem a cada dez minutos.'), ('came', 'The bus came late.', 'O ônibus chegou tarde.'), ('coming', 'The bus is coming now.', 'O ônibus está chegando agora.'), 'Passado irregular: came.'),
   vb('stop', '🛑', 'parar', ('stop', 'I stop at the park.', 'Eu paro no parque.'), ('stops', 'The bus stops here.', 'O ônibus para aqui.'), ('stopped', 'It stopped at Main.', 'Ele parou em Main.'), ('stopping', 'The bus is stopping.', 'O ônibus está parando.'), 'Dobra o p: stopped, stopping.')],
  verb_game=[
   dict(scene='Você segura o poste com força.', en='Ana ___ the pole tightly.', opts=['hold', 'holds', 'held'], ans=1, pt='A Ana segura o poste com força.', why='Ana (ela) no presente leva -s: holds.'),
-  dict(scene='Ontem você tocou a campainha.', en='I ___ the bell yesterday.', opts=['ring', 'rang', 'ringing'], ans=1, pt='Eu toquei a campainha ontem.', why='Passado irregular de ring: rang.'),
-  dict(scene='Agora você está subindo no ônibus.', en='I am ___ on the bus.', opts=['hop', 'hops', 'hopping'], ans=2, pt='Estou subindo no ônibus.', why='“am” + -ing: hopping (o p dobra).'),
+ dict(scene='Ontem você mostrou o passe.', en='I ___ my pass yesterday.', opts=['show', 'showed', 'showing'], ans=1, pt='Eu mostrei meu passe ontem.', why='“Yesterday” pede passado: showed.'),
+ dict(scene='Agora o ônibus está chegando.', en='The bus is ___ now.', opts=['come', 'comes', 'coming'], ans=2, pt='O ônibus está chegando agora.', why='“is” + -ing: coming.'),
   dict(scene='Vocês sentaram no fundo do ônibus.', en='We ___ in the back.', opts=['sit', 'sits', 'sat'], ans=2, pt='Nós sentamos no fundo.', why='Passado de sit é sat.')],
  expressions=[
   dict(en='Does this bus go…?', pt='Este ônibus vai para…?', ex='Does this bus go downtown?', exp='Para confirmar o destino antes de subir.', c='a'),
