@@ -6,16 +6,16 @@ def vb(v, ic, pt, base, third, past, ing, note):
         dict(k=K[2], en=past[0], ex=past[1], pt=past[2]), dict(k=K[3], en=ing[0], ex=ing[1], pt=ing[2])])
 Z = dict(
  verbs=[
-  vb('add', '➕', 'adicionar / recarregar', ('add', 'I add twenty dollars.', 'Eu adiciono vinte dólares.'), ('adds', 'She adds ten dollars.', 'Ela adiciona dez dólares.'), ('added', 'He added thirty dollars.', 'Ele adicionou trinta dólares.'), ('adding', 'I am adding money.', 'Estou adicionando dinheiro.'), 'Add money = pôr crédito no cartão.'),
-  vb('buy', '🛍️', 'comprar', ('buy', 'I buy a transit card.', 'Eu compro um cartão.'), ('buys', 'Tom buys a one-way ticket.', 'O Tom compra uma passagem.'), ('bought', 'We bought two tickets.', 'Nós compramos duas passagens.'), ('buying', 'I am buying a card.', 'Estou comprando um cartão.'), 'Irregular: buy vira bought.'),
-  vb('pay', '💳', 'pagar', ('pay', 'I pay in cash.', 'Eu pago em dinheiro.'), ('pays', 'Ana pays by card.', 'A Ana paga no cartão.'), ('paid', 'He paid twenty dollars.', 'Ele pagou vinte dólares.'), ('paying', 'I am paying now.', 'Estou pagando agora.'), 'Irregular: pay vira paid.'),
+  vb('top up', '➕', 'recarregar', ('top up', 'I top up my card.', 'Eu recarrego meu cartão.'), ('tops up', 'She tops up her card.', 'Ela recarrega o cartão.'), ('topped up', 'He topped up twenty.', 'Ele recarregou vinte.'), ('topping up', 'I am topping up now.', 'Estou recarregando agora.'), 'Top up: o p dobra em topped/topping.'),
+  vb('swipe', '💳', 'passar (cartão)', ('swipe', 'I swipe my card.', 'Eu passo meu cartão.'), ('swipes', 'He swipes the card.', 'Ele passa o cartão.'), ('swiped', 'She swiped twice.', 'Ela passou duas vezes.'), ('swiping', 'I am swiping it.', 'Estou passando o cartão.'), 'Swipe perde o e: swiping.'),
+  vb('scan', '📷', 'escanear', ('scan', 'I scan the code.', 'Eu escaneio o código.'), ('scans', 'She scans the QR code.', 'Ela escaneia o QR code.'), ('scanned', 'He scanned his phone.', 'Ele escaneou o celular.'), ('scanning', 'I am scanning it.', 'Estou escaneando.'), 'Scan dobra o n: scanned, scanning.'),
   vb('tap', '👆', 'encostar / aproximar', ('tap', 'I tap my card.', 'Eu encosto meu cartão.'), ('taps', 'She taps the reader.', 'Ela encosta no leitor.'), ('tapped', 'He tapped the gate.', 'Ele encostou na catraca.'), ('tapping', 'I am tapping now.', 'Estou encostando agora.'), 'Tap = encostar de leve no leitor. Dobra o p: tapped.'),
   vb('use', '🔄', 'usar', ('use', 'I use the card every day.', 'Eu uso o cartão todo dia.'), ('uses', 'Sam uses the reader.', 'O Sam usa o leitor.'), ('used', 'We used the machine.', 'Nós usamos a máquina.'), ('using', 'I am using cash.', 'Estou usando dinheiro.'), 'Use é regular: used, using.')],
  verb_game=[
-  dict(scene='Você quer pôr vinte dólares no cartão.', en='I want to ___ twenty dollars.', opts=['add', 'adds', 'added'], ans=0, pt='Quero adicionar vinte dólares.', why='Depois de “want to”, usa-se a forma base: add.'),
-  dict(scene='Ontem você comprou dois bilhetes.', en='I ___ two tickets yesterday.', opts=['buy', 'bought', 'buying'], ans=1, pt='Eu comprei dois bilhetes ontem.', why='“Yesterday” pede passado: bought.'),
+  dict(scene='Você quer recarregar o cartão.', en='I want to ___ my card.', opts=['top up', 'tops up', 'topped up'], ans=0, pt='Quero recarregar meu cartão.', why='Depois de “want to”, usa-se a forma base: top up.'),
+  dict(scene='Ontem você passou o cartão duas vezes.', en='I ___ my card twice yesterday.', opts=['swipe', 'swiped', 'swiping'], ans=1, pt='Eu passei meu cartão duas vezes ontem.', why='“Yesterday” pede passado: swiped.'),
   dict(scene='A Ana encosta o cartão no leitor.', en='Ana ___ the reader.', opts=['tap', 'taps', 'tapping'], ans=1, pt='A Ana encosta no leitor.', why='Ana (ela) leva -s: taps.'),
-  dict(scene='Agora você está pagando em dinheiro.', en='I am ___ in cash.', opts=['pay', 'pays', 'paying'], ans=2, pt='Estou pagando em dinheiro.', why='“am” + -ing: paying.')],
+  dict(scene='Agora você está escaneando o código.', en='I am ___ the code.', opts=['scan', 'scans', 'scanning'], ans=2, pt='Estou escaneando o código.', why='“am” + -ing: scanning (o n dobra).')],
  expressions=[
   dict(en='I need a transit card.', pt='Preciso de um cartão de transporte.', ex='Hi! I need a transit card.', exp='Para pedir o cartão no guichê.', c='a'),
   dict(en='How much do you want to add?', pt='Quanto você quer adicionar?', ex='Sure. How much do you want to add?', exp='O atendente pergunta o valor da recarga.', c='b'),
