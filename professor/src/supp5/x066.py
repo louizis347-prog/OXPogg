@@ -21,7 +21,7 @@ X = dict(
   dict(w="desk", pt="escrivaninha", e="🖥️", ex=["I need a desk for my room.", "The desk is next to the window."]),
   dict(w="pillow", pt="almofada / travesseiro", e="🛌", ex=["The pillow is very soft.", "I'd like a blue pillow."]),
   dict(w="mattress", pt="colchão", e="🛏️", ex=["This mattress is hard.", "Is the mattress new?"]),
-  dict(w="price", pt="preço", e="🏷️", ex=["What is the price?", "The price is good."]),
+  dict(w="cushion", pt="almofada", e="🛋️", ex=["The cushion is soft.", "I like this blue cushion."]),
   dict(w="comfy", pt="confortável (informal)", e="😌", ex=["This chair is so comfy.", "My bed is very comfy."]),
   dict(w="sale", pt="promoção", e="🔖", ex=["There is a sale today.", "The sale ends on Sunday."]),
  ],

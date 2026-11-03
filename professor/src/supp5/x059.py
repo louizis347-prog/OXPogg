@@ -21,9 +21,9 @@ X = dict(
   dict(w="walk", pt="caminhada / andar", e="🚶", ex=["It's a nice walk.", "I walk to school."]),
   dict(w="mile", pt="milha", e="📏", ex=["It's one mile from here.", "The lake is two miles away."]),
   dict(w="tired", pt="cansado", e="😴", ex=["I'm tired.", "He is tired after the walk."]),
-  dict(w="lake", pt="lago", e="🏞️", ex=["The lake is big.", "We walk to the lake."]),
+  dict(w="path", pt="caminho / trilha", e="🛤️", ex=["Take the path by the trees.", "The path is nice."]),
   dict(w="tree", pt="árvore", e="🌳", ex=["There is a big tree.", "The park has many trees."]),
-  dict(w="bike", pt="bicicleta", e="🚲", ex=["I ride my bike.", "There are many bikes."]),
+  dict(w="bench", pt="banco (de sentar)", e="🪑", ex=["I rest on a bench.", "The bench is near the trees."]),
  ],
  molds=[
   dict(title="Perguntar se é longe", frame="Is the {place} far from here?", slots=[dict(key="place", opts=["lake", "park", "station", "museum"])], model="Is the lake far from here?", note="Is the... far from here? = O... fica longe daqui? Far é para distância."),

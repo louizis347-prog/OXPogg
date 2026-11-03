@@ -19,7 +19,7 @@ X = dict(
  ],
  vocab=[
   dict(w="cabinet", pt="armário", e="🚪", ex=["The plates are in the cabinet.", "Open the cabinet, please."]),
-  dict(w="stove", pt="fogão", e="🔥", ex=["The pan is on the stove.", "Turn off the stove."]),
+  dict(w="microwave", pt="micro-ondas", e="📟", ex=["The microwave is on the counter.", "Use the microwave for the soup."]),
   dict(w="oven", pt="forno", e="♨️", ex=["The oven is hot.", "Put the bread in the oven."]),
   dict(w="sink", pt="pia", e="🚰", ex=["The glass is in the sink.", "Wash the pan in the sink."]),
   dict(w="kettle", pt="chaleira", e="🫖", ex=["The kettle is on the stove.", "I need a kettle for tea."]),

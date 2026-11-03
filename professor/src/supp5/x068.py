@@ -18,9 +18,9 @@ X = dict(
   dict(who="Claire", en="Thanks for the help. Bye!", pt="Valeu pela ajuda. Tchau!"),
  ],
  vocab=[
-  dict(w="laundry", pt="roupa suja / lavanderia", e="🧺", ex=["I do laundry on Sunday.", "The laundry room is downstairs."]),
+  dict(w="hamper", pt="cesto de roupa suja", e="🧺", ex=["The hamper is in my room.", "Put the socks in the hamper."]),
   dict(w="basket", pt="cesto", e="🧺", ex=["My basket is full.", "Put the socks in the basket."]),
-  dict(w="towel", pt="toalha", e="🧖", ex=["I need a clean towel.", "The towel is wet."]),
+  dict(w="blanket", pt="cobertor", e="🛏️", ex=["This blanket is warm.", "I wash the blanket today."]),
   dict(w="sock", pt="meia", e="🧦", ex=["I lost a sock.", "This sock is blue."]),
   dict(w="quarter", pt="moeda de 25 centavos", e="🪙", ex=["A quarter is twenty-five cents.", "I have one quarter."]),
   dict(w="hanger", pt="cabide", e="🪝", ex=["Put the shirt on a hanger.", "I need a hanger."]),

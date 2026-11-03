@@ -23,7 +23,7 @@ X = dict(
   dict(w="bucket", pt="balde", e="🪣", ex=["Fill the bucket with water.", "The bucket is blue."]),
   dict(w="sponge", pt="esponja", e="🧽", ex=["I use a sponge for the dishes.", "The sponge is wet."]),
   dict(w="rug", pt="tapete", e="🧶", ex=["The rug is in the living room.", "Vacuum the rug, please."]),
-  dict(w="schedule", pt="escala / cronograma", e="🗓️", ex=["We have a chore schedule.", "Check the schedule on the fridge."]),
+  dict(w="dustpan", pt="pá de lixo", e="🧹", ex=["I need a dustpan and a broom.", "The dustpan is under the sink."]),
  ],
  molds=[
   dict(title="Perguntar de quem é a vez", frame="Whose turn is it to {chore}?", slots=[dict(key="chore", opts=["wash the dishes", "take out the trash", "clean the kitchen", "vacuum the rug"])], model="Whose turn is it to wash the dishes?", note="Whose turn = de quem é a vez. Depois de to, use o verbo simples."),
