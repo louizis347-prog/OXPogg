@@ -104,3 +104,6 @@ body.rlx .app{padding-top:8px}
 /* tela cheia: usa tudo e amplia */
 body.qfs .app{max-width:none;padding:8px 14px 84px}
 @supports (zoom:1){body.qfs .stage{zoom:1.14}}
+/* aba minimizada discreta: só uma alça fina no topo */
+#qtop .qtop-h{font-size:0;line-height:0;width:96px;height:6px;padding:0;border-radius:0 0 8px 8px;opacity:.55}
+#qtop:hover .qtop-h,#qtop.open .qtop-h{opacity:0}
