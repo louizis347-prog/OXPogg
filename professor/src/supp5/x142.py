@@ -21,7 +21,7 @@ X = dict(
   dict(w="freeway", pt="rodovia urbana", e="🛣️", ex=["The freeway is full.", "We take the freeway to the beach."]),
   dict(w="detour", pt="desvio", e="🔀", ex=["There is a detour on Main Street.", "Take the detour, please."]),
   dict(w="commute", pt="trajeto diário (casa-trabalho)", e="🚗", ex=["My commute is one hour.", "Her commute is short."]),
-  dict(w="exit", pt="saída (da rodovia)", e="🚧", ex=["Take the next exit.", "The exit is on the right."]),
+  dict(w="ramp", pt="rampa de acesso", e="🚧", ex=["Take the ramp on the right.", "The ramp is near the bridge."]),
   dict(w="jam", pt="engarrafamento", e="🚙", ex=["There is a big jam today.", "We are in a traffic jam."]),
   dict(w="shortcut", pt="atalho", e="↪️", ex=["Marco knows a shortcut.", "This shortcut saves time."]),
  ],
