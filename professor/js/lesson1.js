@@ -47,7 +47,7 @@ window.RL_REGISTER=function(R,A){
  function status(root,text){var s=$('.q1-feedback',root);if(s)s.textContent=text}
  R.q1=function(p,b){var kind=p.kind,bg=A.lesson().visual||'cafe2';b.className='pb q1-body';
   if(kind==='cover'){
-   b.innerHTML='<div class="q1-cover"><div>'+intro('A1 · Aula 1 · Particular ou grupo')+'<h1>A coffee to go in Chicago</h1>'+card('<b>Missão</b><p>'+H(p.goal)+'</p>','q1-mission')+
+   b.innerHTML='<div class="q1-cover"><div>'+intro(p.kicker||'A1 · Aula 1 · Particular ou grupo')+'<h1>'+H(p.heading||'A coffee to go in Chicago')+'</h1>'+card('<b>Missão</b><p>'+H(p.goal)+'</p>','q1-mission')+
     '<div class="q1-lines">'+p.can.map(function(x){return '<div>'+speak(x)+'<span>'+H(x)+'</span></div>'}).join('')+'</div><p class="q1-note">'+H(p.note)+'</p></div>'+illustration(bg)+'</div>'}
   else if(kind==='work'){
    b.innerHTML='<div class="q1-two">'+card('<span class="q1-eyebrow">Obra cultural · '+H(p.work.year)+'</span><h3>'+H(p.work.title)+'</h3><p>'+H(p.work.note)+'</p><div class="q1-prompt">'+H(p.question)+'</div>')+
@@ -77,7 +77,7 @@ window.RL_REGISTER=function(R,A){
   else if(kind==='dialog'){
    b.innerHTML=intro(p.instruction)+'<div class="q1-dialog">'+p.lines.map(function(line){var who=line[0];return card('<b>'+H(who)+'</b><span>'+H(line[1])+'</span>'+speak(line[1])+'<small>'+H(line[2])+'</small>',who==='Evan'?'evan':'ana')}).join('')+'</div>'}
   else if(kind==='choice'){
-   var t=p.turn;var face=A.face('Evan');b.innerHTML='<div class="q1-choice"><div class="q1-person">'+face+'</div>'+card('<span class="q1-eyebrow">Evan · fala '+p.position+' de 6</span><h3>'+H(t.npc)+'</h3><p>'+H(t.pt)+'</p>'+speak(t.npc))+'</div><div class="q1-options">'+t.opts.map(function(o,i){return '<button type="button" data-choice="'+i+'"><strong>'+H(o.en)+'</strong><span>'+H(o.pt)+'</span></button>'}).join('')+'</div><p class="q1-feedback" role="status"></p>';
+   var t=p.turn;var face=A.face(p.npcface||p.npc||'Evan');b.innerHTML='<div class="q1-choice"><div class="q1-person">'+face+'</div>'+card('<span class="q1-eyebrow">'+H(p.npc||'Evan')+' · fala '+p.position+' de '+(p.total||6)+'</span><h3>'+H(t.npc)+'</h3><p>'+H(t.pt)+'</p>'+speak(t.npc))+'</div><div class="q1-options">'+t.opts.map(function(o,i){return '<button type="button" data-choice="'+i+'"><strong>'+H(o.en)+'</strong><span>'+H(o.pt)+'</span></button>'}).join('')+'</div><p class="q1-feedback" role="status"></p>';
    all(b,'[data-choice]').forEach(function(x){x.onclick=function(e){var o=t.opts[+x.dataset.choice];A.gain(o.ok?10:0,!!o.ok,e);all(b,'[data-choice]').forEach(function(v){v.disabled=true;v.classList.toggle('right',t.opts[+v.dataset.choice].ok)});x.classList.add(o.ok?'right':'wrong');status(b,o.fb+' '+(o.ok?p.outcome:''));if(o.ok)A.say(o.en)}})}
   else if(kind==='vocab'){
    b.innerHTML=intro(p.prompt)+'<div class="q1-vocab">'+p.words.map(function(item){return card('<div class="q1-vocab-head"><span class="q1-vocab-icon">'+vocabIcon(item[0])+'</span><div><strong>'+H(item[0])+'</strong><span>'+H(item[1])+'</span></div>'+speak(item[0])+'</div><button type="button" class="q1-variant" data-say1="'+H(item[2])+'">'+H(item[2])+'</button><button type="button" class="q1-variant" data-say1="'+H(item[3])+'">'+H(item[3])+'</button>')}).join('')+'</div>'}
@@ -92,7 +92,7 @@ window.RL_REGISTER=function(R,A){
    var group=A.mode()==='group';b.innerHTML=card('<span class="q1-eyebrow">'+(group?'Aula em grupo · trios':'Aula particular · duas pessoas')+'</span><h3>'+H(group?p.group:p.solo)+'</h3><div class="q1-roles">'+p.prompts.map(function(x){return '<button type="button" data-say1="'+H(x)+'">'+H(x)+'</button>'}).join('')+'</div>')+
     card('<b>Mude a condição a cada rodada</b><ol>'+p.change.map(function(x){return '<li>'+H(x)+'</li>'}).join('')+'</ol><p class="q1-note">'+(group?'Observador: anote uma fala clara e uma reformulação.':'Professor: dê uma pista só quando necessário; peça uma segunda tentativa.')+'</p>')}
   else if(kind==='writing'){
-   b.innerHTML=card('<span class="q1-eyebrow">Agora escreva</span><p>'+H(p.task)+'</p><textarea aria-label="Sua mensagem em inglês" placeholder="Hi! Could I get…?"></textarea><div class="q1-check">'+p.checks.map(function(c){return '<label><input type="checkbox">'+H(c)+'</label>'}).join('')+'</div>')}
+   b.innerHTML=card('<span class="q1-eyebrow">Agora escreva</span><p>'+H(p.task)+'</p><textarea aria-label="Sua mensagem em inglês" placeholder="'+H(p.placeholder||'Hi! Could I get…?')+'"></textarea><div class="q1-check">'+p.checks.map(function(c){return '<label><input type="checkbox">'+H(c)+'</label>'}).join('')+'</div>')}
   else if(kind==='exit'){
    b.innerHTML=card('<b>Sem consultar, diga em voz alta</b><ol>'+p.prompts.map(function(x){return '<li>'+H(x)+'</li>'}).join('')+'</ol><p class="q1-note">Professor: registre um acerto e uma próxima meta.</p>')+
     card('<b>Mochila de revisão</b><ul>'+p.spaced.map(function(x){return '<li>'+H(x)+'</li>'}).join('')+'</ul>')}

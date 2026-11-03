@@ -122,6 +122,9 @@ def build(n):
     if n == 1:
         from lesson1_content import refine
         refine(L, S)
+    else:
+        from lesson_focus import focus
+        focus(L, P, S, dict(en=en, nb=nb, lines=[dict(who=l['who'], en=l['en'], pt=l['pt']) for l in lines], vocab=[(v[0], v[1], v[2]) for v in vocab], npc=npc, npcface=npcface, face_of=face_of))
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]

@@ -4,11 +4,11 @@ var V=window.L1VIS;if(!V)return;var H=V.H,$=V.$,$$=V.$$,stage=V.stage,ANA=V.ANA,
 var DECOR=window.L1DECOR;
 function sup(){return !!(window.PogVoice&&PogVoice.supported&&PogVoice.supported())}
 /* ---- linhas com palavras que trocam: {a|b|c}; o pt acompanha pelo mesmo índice ---- */
-function parse(en,pt){var e=String(en).split(/\{([^{}]+)\}/),q=String(pt||'').split(/\{([^{}]+)\}/),o=[];for(var k=0;k<e.length;k++){if(k%2===0)o.push({t:e[k],p:q[k]!=null?q[k]:''});else o.push({sw:e[k].split('|'),pw:(q[k]||'').split('|'),i:0})}return o}
+function parse(en,pt){var e=String(en).split(/\{([^{}]+)\}/),q=String(pt||'').split(/\{([^{}]+)\}/),o=[];var stat=String(pt||'').indexOf('{')<0?String(pt||''):null;for(var k=0;k<e.length;k++){if(k%2===0)o.push({t:e[k],p:q[k]!=null?q[k]:''});else o.push({sw:e[k].split('|'),pw:(q[k]||'').split('|'),i:0})}o.ptStatic=stat;return o}
 function txt(parts){return parts.map(function(p){return p.t!=null?p.t:p.sw[p.i]}).join('')}
-function ptxt(parts){return parts.map(function(p){return p.t!=null?p.p:(p.pw[p.i]||p.pw[0]||'')}).join('')}
-function swapBox(host,lines,A,o){o=o||{};var P=lines.map(function(l){return{who:l.who,parts:parse(l.en,l.pt)}}),touched={},total=0,showPt=false,tok=0;P.forEach(function(l){l.parts.forEach(function(p){if(p.sw)total++})});
-  function face(w){try{return A.face(w)}catch(e){return ''}}
+function ptxt(parts){if(parts.ptStatic!=null)return parts.ptStatic;return parts.map(function(p){return p.t!=null?p.p:(p.pw[p.i]||p.pw[0]||'')}).join('')}
+var FACES={};function swapBox(host,lines,A,o){o=o||{};var P=lines.map(function(l){return{who:l.who,parts:parse(l.en,l.pt)}}),touched={},total=0,showPt=false,tok=0;P.forEach(function(l){l.parts.forEach(function(p){if(p.sw)total++})});
+  function face(w){try{return A.face(FACES[w]||w)}catch(e){return ''}}
   function draw(){host.innerHTML=P.map(function(l,i){return '<div class="q1v-ln'+(l.who===o.me?' me':'')+'" data-i="'+i+'"><span class="q1v-av">'+face(l.who)+'</span><div class="q1v-tb"><b>'+H(l.who)+'</b><span>'+l.parts.map(function(p,k){return p.t!=null?H(p.t):'<button type="button" class="q1sw" data-l="'+i+'" data-k="'+k+'">'+H(p.sw[p.i])+'</button>'}).join('')+'</span>'+(showPt?'<small>'+H(ptxt(l.parts))+'</small>':'')+'</div><button type="button" class="q1v-spk" data-s="'+i+'" aria-label="Ouvir">🔊</button></div>'}).join('');
    $$(host,'.q1sw').forEach(function(b){b.onclick=function(e){var l=P[+b.dataset.l],p=l.parts[+b.dataset.k];p.i=(p.i+1)%p.sw.length;var key=b.dataset.l+'-'+b.dataset.k;if(!touched[key]){touched[key]=1;try{A.gain(4,true,e)}catch(x){}if(o.onProgress)o.onProgress(Object.keys(touched).length,total)}draw();A.say(txt(l.parts))}});
    $$(host,'[data-s]').forEach(function(b){b.onclick=function(){A.say(txt(P[+b.dataset.s].parts))}})}
@@ -34,11 +34,11 @@ var MINI=[{who:'Evan',en:'Hi! What can I get for you {today|this morning|this af
  {who:'Ana',en:'Can I get a {small|medium|large} {coffee|tea|latte}, please?',pt:'Posso pedir um {pequeno|médio|grande} {café|chá|latte}, por favor?'},
  {who:'Evan',en:'Sure! {For here or to go?|Is that for here or to go?|Will that be for here or to go?}',pt:'Claro! {Para ficar ou levar?|É para ficar ou levar?|Vai ficar ou levar?}'},
  {who:'Ana',en:'{To go, please.|For here, please.|To go, thanks.}',pt:'{Para levar, por favor.|Para ficar, por favor.|Para levar, obrigada.}'}];
-DECOR.facts=function(p,b,art,A){var first=p.facts&&p.facts[0];
-  if(first&&/For here/.test(first.big)){var cards=$$(b,'.q1-facts .q1-card'),sit=document.createElement('div');sit.className='q1-card q1v-sit';
-    sit.innerHTML='<span class="q1-eyebrow">Situação no balcão</span><h3>'+H(first.big)+' <small>· '+H(first.label)+'</small></h3><p>'+H(first.sub)+'</p><div class="q1v-sitgrid"><div class="q1v-sitst">'+stage({rs:'cafe',cast:[ANA(28),EV(72,1,{prop:'cup'})]},'scene')+'</div><div class="q1v-sitdlg"></div></div>'+bar([['play','▶ Ouvir'],['shuf','🔀 Trocar palavras'],['pt','PT']]);
+DECOR.facts=function(p,b,art,A){var first=p.facts&&p.facts[0];FACES=p.faces||FACES;var mini=p.mini||(first&&/For here/.test(first.big)?MINI:null);
+  if(mini){var cards=$$(b,'.q1-facts .q1-card'),sit=document.createElement('div');sit.className='q1-card q1v-sit';
+    sit.innerHTML='<span class="q1-eyebrow">Situação no balcão</span><h3>'+H(first.big)+' <small>· '+H(first.label)+'</small></h3><p>'+H(first.sub)+'</p><div class="q1v-sitgrid"><div class="q1v-sitst">'+stage(p.miniart||{rs:'cafe',cast:[ANA(28),EV(72,1,{prop:'cup'})]},'scene')+'</div><div class="q1v-sitdlg"></div></div>'+bar([['play','▶ Ouvir'],['shuf','🔀 Trocar palavras'],['pt','PT']]);
     cards[0].replaceWith(sit);var grid=$('.q1-facts',b);grid.classList.add('q1v-facts2');
-    var box=swapBox($('.q1v-sitdlg',sit),MINI,A,{me:'Ana',onProgress:function(n,t){$('.q1v-prog',sit).textContent='🎨 '+n+'/'+t+' palavras exploradas';if(n>=t){A.confetti();toast('✨ Você explorou todas as palavras!')}}});
+    var box=swapBox($('.q1v-sitdlg',sit),mini,A,{me:p.me||'Ana',onProgress:function(n,t){$('.q1v-prog',sit).textContent='🎨 '+n+'/'+t+' palavras exploradas';if(n>=t){A.confetti();toast('✨ Você explorou todas as palavras!')}}});
     $('.q1v-prog',sit).textContent='🎨 0/'+box.total+' palavras exploradas';var on=false;
     $('[data-a=play]',sit).onclick=function(){box.play()};$('[data-a=shuf]',sit).onclick=function(){box.shuffle()};$('[data-a=pt]',sit).onclick=function(){on=!on;box.pt(on)};return}
   split(b,art)};
@@ -57,16 +57,16 @@ var DLG={'Conversa · o pedido':[
  {who:'Ana',en:'Here you go. Where is the pickup counter?',pt:'Aqui está. Onde fica o balcão de retirada?'},
  {who:'Evan',en:'{On the left|On the right|Over there}, near the {window|door|menu}.',pt:'{À esquerda|À direita|Ali}, perto da {janela|porta|cardápio}.'},
  {who:'Ana',en:'Got it. {Thank you!|Thanks a lot!|Perfect, thanks!}',pt:'Entendi. {Obrigada!|Muito obrigada!|Perfeito, obrigada!}'}]};
-DECOR.dialog=function(p,b,art,A){var data=DLG[p.title];if(!data){split(b,art);return}
+DECOR.dialog=function(p,b,art,A){FACES=p.faces||FACES;var data=p.swaps||DLG[p.title];if(!data){split(b,art);return}
   var intro=$('.q1-intro',b),old=$('.q1-dialog',b);var wrap=document.createElement('div');wrap.className='q1v-dlgwrap';wrap.innerHTML=bar([['play','▶ Ouvir tudo'],['shuf','🔀 Trocar palavras'],['pt','PT']]);var host=document.createElement('div');host.className='q1v-dlg';wrap.insertBefore(host,wrap.firstChild);old.replaceWith(wrap);
   var sp=split(b,art);
-  var box=swapBox(host,data,A,{me:'Ana',onProgress:function(n,t){$('.q1v-prog',wrap).textContent='🎨 '+n+'/'+t+' palavras exploradas'}});$('.q1v-prog',wrap).textContent='🎨 0/'+box.total+' palavras exploradas';var on=false;
+  var box=swapBox(host,data,A,{me:p.me||'Ana',onProgress:function(n,t){$('.q1v-prog',wrap).textContent='🎨 '+n+'/'+t+' palavras exploradas'}});$('.q1v-prog',wrap).textContent='🎨 0/'+box.total+' palavras exploradas';var on=false;
   $('[data-a=play]',wrap).onclick=function(){box.play()};$('[data-a=shuf]',wrap).onclick=function(){box.shuffle()};$('[data-a=pt]',wrap).onclick=function(){on=!on;box.pt(on)}};
 /* ===== 19–24 · escolha da fala: o Evan e a Ana aparecem na cena ===== */
 DECOR.choice=function(p,b,art,A){split(b,art)};
 function topRow(b,art){var intro=$('.q1-intro',b),row=document.createElement('div');row.className='q1v-top';var t=document.createElement('div');t.className='q1v-topt';if(intro)t.appendChild(intro);row.appendChild(t);row.appendChild(heroEl(art));b.insertBefore(row,b.firstChild)}
 /* ===== 25–26 · toque, ouça e diga uma frase sua (microfone) ===== */
-DECOR.vocab=function(p,b,art,A){var cards=$$(b,'.q1-vocab .q1-card'),n=0;
+DECOR.vocab=function(p,b,art,A){var cards=$$(b,'.q1-vocab .q1-card'),n=0;cards.forEach(function(c,i){var w=p.words[i];if(w&&w[5]){var ic=$('.q1-vocab-icon',c);if(ic)ic.innerHTML='<span style="font-size:30px;line-height:1">'+H(w[5])+'</span>'}});
   cards.forEach(function(c,i){var w=(p.words[i]||[])[0];if(!w)return;var h=document.createElement('div');h.className='q1v-say';c.appendChild(h);micSay(h,w,A,function(){c.classList.add('done');n++;if(n>=cards.length){A.confetti();A.mark()}})});
   topRow(b,art)};
 /* ===== 27, 28, 33 · molde que muda: cena + palavras que trocam + ouvir + falar ===== */
@@ -88,20 +88,20 @@ var ROLE=[{npc:'Hi! What can I get for you?',opts:[['Can I get a large latte, pl
  {npc:null,opts:[['To go, please.','Para levar, por favor.','No problem. Anything else?'],['For here, please.','Para ficar, por favor.','Nice! Take a seat anywhere. Anything else?'],['Can I have it to go, please?','Posso levar, por favor?','Of course! Anything else?']]},
  {npc:null,opts:[['No, that’s all. How much is it?','Não, é só isso. Quanto custa?','That’s four dollars.'],['Do you have oat milk?','Vocês têm leite de aveia?','Sorry, not today. We have regular milk. That’s four dollars.'],['Yes, a muffin, please.','Sim, um muffin, por favor.','Sure! That’s six dollars.']]},
  {npc:null,opts:[['Here you go. Thanks!','Aqui está. Obrigada!','Thank you! Your number is 12. Pick it up on the left.'],['Can I pay by card?','Posso pagar com cartão?','Sure! Tap your card here. Your number is 12. Pick it up on the left.'],['Here’s ten dollars.','Aqui estão dez dólares.','Thanks! Here’s your change. Your number is 12. Pick it up on the left.']]}];
-DECOR.role=function(p,b,art,A){var group=A.mode()==='group',k=0,log=[];var compl=p.change[Math.floor(Math.random()*p.change.length)];
+DECOR.role=function(p,b,art,A){FACES=p.faces||FACES;if(!p.turns&&p.solo&&p.t&&p.stage&&A.lesson().n!==1){split(b,art);return}var ROLE_=p.turns||ROLE,ME=p.me||'Ana',NPC=p.npcname||'Evan';var group=A.mode()==='group',k=0,log=[];var compl=p.change[Math.floor(Math.random()*p.change.length)];
   b.innerHTML='<div class="q1v-split"><div class="q1v-hero"></div><div class="q1v-main"><div class="q1-card q1v-role"><span class="q1-eyebrow">'+(group?'Aula em grupo · trios':'Aula particular · duas pessoas')+'</span><p class="q1v-compl">⚡ Complicação possível: <b>'+H(compl)+'</b></p><div class="q1v-log"></div><div class="q1v-opts"></div></div></div></div>';
   $('.q1v-hero',b).innerHTML=stage(art,'scene');var log$=$('.q1v-log',b),opts$=$('.q1v-opts',b);
   function bub(who,t,me){var f='';try{f=A.face(who)}catch(e){}return '<div class="q1v-ln'+(me?' me':'')+'"><span class="q1v-av">'+f+'</span><div class="q1v-tb"><b>'+who+'</b><span>'+H(t)+'</span></div><button type="button" class="q1v-spk" data-t="'+H(t)+'">🔊</button></div>'}
   function draw(){var h=log.slice(-4).map(function(x){return bub(x.who,x.en,x.me)}).join('');log$.innerHTML=h;$$(log$,'[data-t]').forEach(function(x){x.onclick=function(){A.say(x.dataset.t)}});
-   if(k>=ROLE.length){opts$.innerHTML='<div class="q1v-bar"><button class="q1v-b" data-a="all">▶ Ouvir a conversa</button><button class="q1v-b" data-a="again">↺ Outra versão</button></div><p class="q1-note">'+(group?'Observador: anote uma fala clara e uma reformulação.':'Professor: registre uma fala clara e uma reformulação.')+'</p>';try{A.confetti();A.gain(20,true);A.mark()}catch(e){}$('[data-a=all]',opts$).onclick=async function(){for(var i=0;i<log.length;i++){await A.sayP(log[i].en)}};$('[data-a=again]',opts$).onclick=function(){k=0;start()};return}
-   var t=ROLE[k];opts$.innerHTML='<div class="q1v-q">Sua vez, Ana — escolha o que dizer:</div>'+t.opts.map(function(o,i){return '<button type="button" class="q1v-opt" data-i="'+i+'">'+H(o[0])+'<small>'+H(o[1])+'</small></button>'}).join('');
-   $$(opts$,'.q1v-opt').forEach(function(x){x.onclick=function(e){var o=t.opts[+x.dataset.i];log.push({who:'Ana',en:o[0],me:true});try{A.gain(8,true,e);A.say(o[0])}catch(z){}log.push({who:'Evan',en:o[2]});k++;draw();setTimeout(function(){A.say(o[2])},600)}})}
-  function start(){log=[{who:'Evan',en:ROLE[0].npc}];draw();setTimeout(function(){A.say(ROLE[0].npc)},400)}start()};
+   if(k>=ROLE_.length){opts$.innerHTML='<div class="q1v-bar"><button class="q1v-b" data-a="all">▶ Ouvir a conversa</button><button class="q1v-b" data-a="again">↺ Outra versão</button></div><p class="q1-note">'+(group?'Observador: anote uma fala clara e uma reformulação.':'Professor: registre uma fala clara e uma reformulação.')+'</p>';try{A.confetti();A.gain(20,true);A.mark()}catch(e){}$('[data-a=all]',opts$).onclick=async function(){for(var i=0;i<log.length;i++){await A.sayP(log[i].en)}};$('[data-a=again]',opts$).onclick=function(){k=0;start()};return}
+   var t=ROLE_[k];opts$.innerHTML='<div class="q1v-q">Sua vez, '+H(ME)+' — escolha o que dizer:</div>'+t.opts.map(function(o,i){return '<button type="button" class="q1v-opt" data-i="'+i+'">'+H(o[0])+'<small>'+H(o[1])+'</small></button>'}).join('');
+   $$(opts$,'.q1v-opt').forEach(function(x){x.onclick=function(e){var o=t.opts[+x.dataset.i];log.push({who:ME,en:o[0],me:true});try{A.gain(8,true,e);A.say(o[0])}catch(z){}log.push({who:NPC,en:o[2]});k++;draw();setTimeout(function(){A.say(o[2])},600)}})}
+  function start(){log=[{who:NPC,en:ROLE_[0].npc}];draw();setTimeout(function(){A.say(ROLE_[0].npc)},400)}start()};
 /* ===== 34 · escrita lúdica: fale ou escreva, confira sozinho ===== */
 DECOR.writing=function(p,b,art,A){var ta=$('textarea',b),checks=$$(b,'.q1-check input');
   var tools=document.createElement('div');tools.className='q1v-tools';tools.innerHTML=(sup()?'<button type="button" class="q1v-mic" id="q1fm">🎤 <span>Falar</span><i class="q1v-wv"><b></b><b></b><b></b><b></b></i></button>':'')+'<button type="button" class="q1v-b" id="q1fc">✓ Conferir</button><button type="button" class="q1v-b" id="q1fv">👀 Ver modelo</button><div class="q1v-fb" role="status"></div>';
   ta.parentNode.insertBefore(tools,ta.nextSibling);
-  function check(e){var t=ta.value.toLowerCase(),n=t.split(/\s+/).filter(Boolean).length;var c1=/(coffee|tea|latte)/.test(t)&&/(small|medium|large)/.test(t),c2=/\?/.test(t),c3=/(thanks|thank you|bye|see you)/.test(t);
+  function check(e){var t=ta.value.toLowerCase(),n=t.split(/\s+/).filter(Boolean).length;var kw=(p.kw||[]),c1=kw.length?kw.filter(function(w){return t.indexOf(w)>=0}).length>=2:(/(coffee|tea|latte)/.test(t)&&/(small|medium|large)/.test(t)),c2=/\?/.test(t),c3=/(thanks|thank you|bye|see you)/.test(t);
    [c1,c2,c3].forEach(function(v,i){if(checks[i])checks[i].checked=!!v});var stars=(c1?1:0)+(c2?1:0)+(c3?1:0);
    $('.q1v-fb',tools).innerHTML='<span class="q1v-st">'+'★'.repeat(stars)+'☆'.repeat(3-stars)+'</span> '+(n<4?'Escreva ou diga pelo menos uma frase completa.':stars===3?'Excelente! Agora faça uma segunda versão mudando bebida, tamanho e horário.':'Quase! '+(!c1?'Inclua bebida e tamanho. ':'')+(!c2?'Faça uma pergunta. ':'')+(!c3?'Termine com uma despedida natural.':''));
    if(n>=4&&stars>=1){try{A.gain(8+stars*8,true,e)}catch(z){}if(stars===3){try{A.confetti()}catch(z){}toast('⭐ Missão cumprida!')}}}

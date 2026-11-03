@@ -57,7 +57,7 @@ var SPLIT_KINDS={facts:1,artifact:1,quiz:1,exit:1};
 var DECOR={};window.L1DECOR=DECOR;
 var previous=window.RL_REGISTER;
 window.RL_REGISTER=function(R,A){if(previous)previous(R,A);var orig=R.q1;if(!orig)return;
- R.q1=function(p,b){orig(p,b);var art=ART[p._i]||ART[0];try{
+ R.q1=function(p,b){orig(p,b);var art=p.art||ART[p._i]||ART[0];try{
    b.classList.add('q1v');
    var hero=$('.q1-art',b);
    if(hero&&(p.kind==='cover'||p.kind==='work'||p.kind==='finish')){var d=heroEl(art,'cover');hero.replaceWith(d)}
