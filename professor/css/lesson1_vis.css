@@ -12,7 +12,7 @@ body.quest-l1 .dock .seg-bar{display:none}
 body.quest-l1 .dock:hover,body.quest-l1 .dock:focus-within{opacity:1;width:66px}
 body.quest-l1 .dock:hover .seg-bar,body.quest-l1 .dock:focus-within .seg-bar{display:flex}
 body.quest-l1:fullscreen .app,body.quest-l1.qfs .app{padding-right:10px}
-@supports (zoom:1){body.quest-l1:fullscreen .stage{zoom:1.12}}
+@supports (zoom:1){@media(min-width:821px){body.quest-l1:fullscreen .stage{zoom:1.12}}}
 
 /* layout: cena à esquerda (nítida, personagens em destaque), conteúdo à direita */
 .q1v-hero{min-width:0;border-radius:22px;overflow:hidden;box-shadow:0 16px 35px rgba(25,70,86,.2);border:2px solid #fff;align-self:center}

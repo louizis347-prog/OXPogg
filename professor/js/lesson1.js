@@ -47,7 +47,7 @@ window.RL_REGISTER=function(R,A){
  function status(root,text){var s=$('.q1-feedback',root);if(s)s.textContent=text}
  R.q1=function(p,b){var kind=p.kind,bg=A.lesson().visual||'cafe2';b.className='pb q1-body';
   if(kind==='cover'){
-   b.innerHTML='<div class="q1-cover"><div>'+intro(p.kicker||'A1 · Aula 1 · Particular ou grupo')+'<h1>'+H(p.heading||'A coffee to go in Chicago')+'</h1>'+card('<b>Missão</b><p>'+H(p.goal)+'</p>','q1-mission')+
+   b.innerHTML='<div class="q1-cover"><div>'+intro(p.kicker||'A1 · Aula 1')+'<h1>'+H(p.heading||'A coffee to go in Chicago')+'</h1>'+card('<b>Missão</b><p>'+H(p.goal)+'</p>','q1-mission')+
     '<div class="q1-lines">'+p.can.map(function(x){return '<div>'+speak(x)+'<span>'+H(x)+'</span></div>'}).join('')+'</div><p class="q1-note">'+H(p.note)+'</p></div>'+illustration(bg)+'</div>'}
   else if(kind==='work'){
    b.innerHTML='<div class="q1-two">'+card('<span class="q1-eyebrow">Obra cultural · '+H(p.work.year)+'</span><h3>'+H(p.work.title)+'</h3><p>'+H(p.work.note)+'</p><div class="q1-prompt">'+H(p.question)+'</div>')+

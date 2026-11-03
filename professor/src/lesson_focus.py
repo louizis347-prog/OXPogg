@@ -93,7 +93,7 @@ def focus(L, P, S, ctx):
     # 1 capa
     situ = P['q_cover']['situation']['text']
     add('mission', 'cover', 'Missão: ' + nb['t'], goal=situ, can=[o['en'] for o in oks[:3]], note='Observe como as pessoas começam, esclarecem e terminam a conversa.',
-        heading=nb['t'], kicker='A1 · Aula %d · Particular ou grupo' % n)
+        heading=nb['t'], kicker='A1 · Aula %d' % n)
     # 2 obra
     a = en.get('a', {})
     add('culture', 'work', 'A obra e a situação', a=art('both', 1), work={'title': a.get('w', ''), 'year': a.get('y', ''), 'note': re.sub(r'\s+', ' ', a.get('d', ''))[:420]},
