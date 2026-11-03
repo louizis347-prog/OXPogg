@@ -1,5 +1,5 @@
 /* Aula Quest 1 · visual: cena translúcida, pessoas, faixas, barra minimizada, tela cheia */
-.qp{position:absolute;bottom:-2%;height:72%;aspect-ratio:28/50;transform:translateX(-50%) scale(var(--s,1));transform-origin:50% 100%;filter:drop-shadow(0 5px 5px rgba(0,0,0,.28))}.qp.fl{transform:translateX(-50%) scale(var(--s,1)) scaleX(-1)}.qp svg{width:100%;height:100%;display:block;overflow:visible}
+.qp{position:absolute;bottom:-2%;height:72%;aspect-ratio:28/50;transform:translateX(-50%) scale(var(--s,1));transform-origin:50% 100%;filter:drop-shadow(0 5px 5px rgba(0,0,0,.28))}.qp.fl{transform:translateX(-50%) scale(var(--s,1)) scaleX(-1)}.qp>svg{width:100%;height:100%;display:block;overflow:visible}.qp svg svg{overflow:hidden}
 body.quest-l1 .ps-stage-bk,body.quest-l1 .ps-chars{position:absolute;inset:0}body.quest-l1 .ps-stage-bk svg{width:100%;height:100%;display:block}
 body.quest-l1 .stage{background:linear-gradient(180deg,#f7fbfc,#eef6f8)}body.quest-l1 .pb.q1-body{background:transparent}
 .q1v-hero{min-width:0;border-radius:22px;overflow:hidden;box-shadow:0 16px 35px rgba(25,70,86,.18);border:2px solid rgba(255,255,255,.75)}.q1v-hero .ps-stage{position:relative;width:100%;aspect-ratio:16/9;max-height:none;border-radius:0}
