@@ -11,6 +11,7 @@ def load(p):
     for f in sorted(glob.glob(os.path.join(ROOT, 'data', p + '_*.json'))): o += json.load(open(f, encoding='utf-8'))
     return o
 EN = [e for e in load('en-a1') if e['n'] < 7000000]
+FILLER = {'That sounds good. What should we do next?', 'Let me check the details before we decide.', 'Could you say that one more time?', 'Sure, I will explain it clearly.', 'Thanks, now I know how to continue.'}
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
 bold = lambda s: re.sub(r'\{\{(.+?)\}\}', r'**\1**', s or '')
@@ -25,7 +26,7 @@ ELENCO = [x['name'] for x in json.load(open(os.path.join(ROOT, 'professor', 'dat
 def face_of(name): return ELENCO[zlib.crc32(name.encode()) % len(ELENCO)]
 def build(n):
     S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[n - 1]
-    nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = chats[0]
+    nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]
     hot = fr(en, 'hotscene')[0]['hot'] if fr(en, 'hotscene') else []
