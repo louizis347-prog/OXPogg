@@ -1,6 +1,6 @@
 """Suplemento Quest v5 · aula 75: At the mall + regular Could I try it on? (Confessions of a Shopaholic)."""
 SUPP = {
- 'reg': 152,
+ 'reg': 77,
  'badge': {'icon': '🛍️', 'name': 'Smart Shopper', 'desc': 'Ask the price, find a sale and pay at the mall'},
  'culture': {
   'hook': 'A mall in the USA is a big building with many shops, a food court and lots of sales. Learn how to ask the price, understand a discount and pay.',

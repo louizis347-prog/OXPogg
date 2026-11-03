@@ -7,7 +7,7 @@ TXT = [
  ['Mei thinks of an old American folk song, “I’ve Been Working on the Railroad.”', 'People sing it about workers on the railroad.', 'In the song, they say, “**All aboard!**”', 'At two o’clock, the guide says it too, and the tour starts.', 'Mei is happy.', 'Tickets are easy when you know the words.'],
 ]
 SUPP = {
- 'reg': 11,
+ 'reg': 45,
  'badge': {'icon': '🎟️', 'name': 'Ticket Buyer', 'desc': 'Buy tickets, ask about discounts and time'},
  'culture': {
   'hook': 'Buying a ticket is one of the first things you do on a trip. The words are short and always the same: how many, adult or child, how much, and what time.',

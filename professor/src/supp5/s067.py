@@ -1,6 +1,6 @@
 """Suplemento Quest v5 · aula 67: In my kitchen + regular Room on the Fifth Floor (Home, Sweet Home)."""
 SUPP = {
- 'reg': 7,
+ 'reg': 68,
  'badge': {'icon': '🍳', 'name': 'Kitchen Helper', 'desc': 'Offer help, ask where things are and understand places in a kitchen'},
  'culture': {
   'hook': 'When you help in a friend\'s kitchen, you ask short questions: where are the forks, where is the salt? Place words like in, on and under make it easy.',
