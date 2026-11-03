@@ -10,12 +10,12 @@ Z = dict(
   vb('read', '📖', 'ler', ('read', 'I read books.', 'Eu leio livros.'), ('reads', 'Mia reads comics.', 'A Mia lê quadrinhos.'), ('read', 'I read a book last week.', 'Eu li um livro semana passada.'), ('reading', 'I am reading now.', 'Estou lendo agora.'), 'Escreve igual no passado, mas lê-se “red”.'),
   vb('watch', '🎬', 'assistir', ('watch', 'I watch movies.', 'Eu assisto filmes.'), ('watches', 'Sam watches TV.', 'O Sam assiste TV.'), ('watched', 'We watched a film.', 'Nós assistimos a um filme.'), ('watching', 'I am watching a game.', 'Estou assistindo a um jogo.'), 'Com he/she: watches (-es).'),
   vb('practice', '🎸', 'praticar', ('practice', 'I practice the guitar.', 'Eu pratico violão.'), ('practices', 'Ana practices every day.', 'A Ana pratica todo dia.'), ('practiced', 'He practiced the piano.', 'Ele praticou piano.'), ('practicing', 'I am practicing now.', 'Estou praticando agora.'), 'Practice + -d no passado.'),
-  vb('meet', '🏟️', 'encontrar', ('meet', 'We meet at ten.', 'Nós nos encontramos às dez.'), ('meets', 'Raj meets us there.', 'O Raj nos encontra lá.'), ('met', 'We met in the park.', 'Nós nos encontramos no parque.'), ('meeting', 'I am meeting Sam.', 'Estou encontrando o Sam.'), 'Irregular: meet, met.')],
+  vb('draw', '✏️', 'desenhar', ('draw', 'I draw in the park.', 'Eu desenho no parque.'), ('draws', 'Mia draws comics.', 'A Mia desenha quadrinhos.'), ('drew', 'We drew a map.', 'Nós desenhamos um mapa.'), ('drawing', 'I am drawing a cat.', 'Estou desenhando um gato.'), 'Irregular: draw, drew.')],
  verb_game=[
   dict(scene='O Raj toca violão.', en='Raj ___ guitar.', opts=['play', 'plays', 'played'], ans=1, pt='O Raj toca violão.', why='Com “Raj”: plays.'),
   dict(scene='Ontem vocês assistiram a um filme.', en='We ___ a movie yesterday.', opts=['watch', 'watches', 'watched'], ans=2, pt='Nós assistimos a um filme ontem.', why='Passado: watched.'),
   dict(scene='Agora você está lendo.', en='I am ___ a book.', opts=['read', 'reads', 'reading'], ans=2, pt='Estou lendo um livro.', why='“am” + -ing: reading.'),
-  dict(scene='Vocês se encontram às dez no parque.', en='We ___ at ten in the park.', opts=['meet', 'meets', 'met'], ans=0, pt='Nós nos encontramos às dez no parque.', why='Presente com “we”: meet.')],
+  dict(scene='Vocês desenham no parque às dez.', en='We ___ in the park at ten.', opts=['draw', 'draws', 'drew'], ans=0, pt='Nós desenhamos no parque às dez.', why='Presente com “we”: draw.')],
  expressions=[
   dict(en='What do you do in your free time?', pt='O que você faz no tempo livre?', ex='What do you do in your free time?', exp='Perguntar sobre hobbies.', c='a'),
   dict(en='I play soccer.', pt='Eu jogo futebol.', ex='I play soccer and read books.', exp='Dizer o que você pratica.', c='b'),

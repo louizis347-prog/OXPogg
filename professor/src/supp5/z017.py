@@ -6,16 +6,16 @@ def vb(v, ic, pt, base, third, past, ing, note):
         dict(k=K[2], en=past[0], ex=past[1], pt=past[2]), dict(k=K[3], en=ing[0], ex=ing[1], pt=ing[2])])
 Z = dict(
  verbs=[
-  vb('like', '👍', 'gostar', ('like', 'I like coffee.', 'Eu gosto de café.'), ('likes', 'Mia likes tea.', 'A Mia gosta de chá.'), ('liked', 'I liked the eggs.', 'Eu gostei dos ovos.'), ('liking', 'I am liking this juice!', 'Estou gostando deste suco!'), 'Em perguntas: Do you like…? / Does she like…?'),
+  vb('fry', '🍳', 'fritar', ('fry', 'I fry eggs.', 'Eu frito ovos.'), ('fries', 'Dad fries bacon.', 'O pai frita bacon.'), ('fried', 'She fried two eggs.', 'Ela fritou dois ovos.'), ('frying', 'I am frying eggs now.', 'Estou fritando ovos agora.'), 'Fry vira fries e fried (y vira i).'),
   vb('eat', '🍳', 'comer', ('eat', 'I eat eggs and toast.', 'Eu como ovos e torrada.'), ('eats', 'Sam eats fruit.', 'O Sam come fruta.'), ('ate', 'We ate at eight.', 'Nós comemos às oito.'), ('eating', 'I am eating cereal.', 'Estou comendo cereal.'), 'Irregular: eat, ate.'),
   vb('drink', '🥤', 'beber', ('drink', 'I drink tea.', 'Eu bebo chá.'), ('drinks', 'Ana drinks juice.', 'A Ana bebe suco.'), ('drank', 'I drank milk.', 'Eu bebi leite.'), ('drinking', 'I am drinking water.', 'Estou bebendo água.'), 'Irregular: drink, drank.'),
-  vb('love', '😍', 'adorar', ('love', 'I love toast.', 'Eu adoro torrada.'), ('loves', 'Tom loves eggs.', 'O Tom adora ovos.'), ('loved', 'She loved the cake.', 'Ela adorou o bolo.'), ('loving', 'I am loving this tea!', 'Estou adorando este chá!'), 'Mais forte que like.'),
+  vb('boil', '🥚', 'ferver', ('boil', 'I boil water for tea.', 'Eu fervo água para o chá.'), ('boils', 'Tom boils two eggs.', 'O Tom cozinha dois ovos.'), ('boiled', 'She boiled the eggs.', 'Ela cozinhou os ovos.'), ('boiling', 'I am boiling water.', 'Estou fervendo água.'), 'Boil an egg = cozinhar um ovo na água.'),
   vb('make', '🍽️', 'fazer / preparar', ('make', 'I make breakfast.', 'Eu preparo o café da manhã.'), ('makes', 'Dad makes eggs.', 'O pai faz ovos.'), ('made', 'She made toast.', 'Ela fez torrada.'), ('making', 'I am making coffee.', 'Estou fazendo café.'), 'Irregular: make, made.')],
  verb_game=[
-  dict(scene='O Tom adora ovos.', en='Tom ___ eggs.', opts=['love', 'loves', 'loved'], ans=1, pt='O Tom adora ovos.', why='Com “Tom”: loves.'),
+  dict(scene='O Tom cozinha dois ovos na água.', en='Tom ___ two eggs.', opts=['boil', 'boils', 'boiled'], ans=1, pt='O Tom cozinha dois ovos.', why='Com “Tom”: boils.'),
   dict(scene='Ontem você bebeu leite.', en='I ___ milk yesterday.', opts=['drink', 'drinks', 'drank'], ans=2, pt='Eu bebi leite ontem.', why='Passado de drink: drank.'),
   dict(scene='Agora você faz café.', en='I am ___ coffee.', opts=['make', 'made', 'making'], ans=2, pt='Estou fazendo café.', why='“am” + -ing: making.'),
-  dict(scene='Vocês comem ovos toda manhã.', en='We ___ eggs every morning.', opts=['eat', 'eats', 'ate'], ans=0, pt='Nós comemos ovos toda manhã.', why='Com “we”, forma base: eat.')],
+  dict(scene='Vocês fritam ovos toda manhã.', en='We ___ eggs every morning.', opts=['fry', 'fries', 'fried'], ans=0, pt='Nós fritamos ovos toda manhã.', why='Com “we”, forma base: fry.')],
  expressions=[
   dict(en='Do you like coffee?', pt='Você gosta de café?', ex='Do you like coffee?', exp='Para saber o gosto de alguém.', c='a'),
   dict(en='Yes, I do.', pt='Sim, gosto.', ex='Yes, I do. I like it with milk.', exp='Resposta curta afirmativa.', c='b'),
