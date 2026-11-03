@@ -32,6 +32,22 @@ def extras(n):
     f = os.path.join(HERE, 'supp5', 'x%03d.py' % n)
     if not os.path.exists(f): return {}
     spec = importlib.util.spec_from_file_location('x5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m.X
+def ylayer(n):
+    f = os.path.join(HERE, 'supp5', 'y%03d.py' % n)
+    if not os.path.exists(f): return {}
+    spec = importlib.util.spec_from_file_location('y5%03d' % n, f); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m.Y
+def prev_ctx(n):
+    if n < 2: return None
+    try:
+        X = extras(n - 1); c = (X.get('convo') or supp(n - 1)['convo'])['turns']
+    except Exception: return None
+    oks = [[o for o in t['opts'] if o.get('ok')][0] for t in c]
+    vem = [v.get('e', '') for v in (X.get('vocab') or [])]
+    items = [((vem[i % len(vem)] if vem else '💬'), o['en'], o['pt']) for i, o in enumerate(oks[:4])]
+    quiz = []
+    for t in c[:2]:
+        opts = [o['en'] for o in t['opts']]; quiz.append(dict(q='Aula anterior: ' + t['npc'] + ' — o que você responde?', opts=opts, ans=[o.get('ok') for o in t['opts']].index(True), why=[o for o in t['opts'] if o.get('ok')][0].get('fb', '')))
+    return dict(items=items, quiz=quiz)
 def build(n):
     S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[n - 1]
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
@@ -129,6 +145,9 @@ def build(n):
     else:
         from lesson_focus import focus
         focus(L, P, S, dict(en=en, nb=nb, lines=[dict(who=l['who'], en=l['en'], pt=l['pt']) for l in lines], vocab=[(v[0], v[1], v[2]) for v in vocab], npc=npc, npcface=npcface, face_of=face_of, extras=extras(n)))
+    from lesson_post import post
+    X_ = extras(n); ems = [v.get('e', '') for v in (X_.get('vocab') or [])] or (['☕', '🥐', '🥛', '🧁', '🍵'] if n == 1 else [])
+    post(L, n, ylayer(n), S, X_, prev_ctx(n), ems)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]

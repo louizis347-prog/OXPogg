@@ -1,0 +1,35 @@
+/* Aula Quest · tema de fundo, práticas lúdicas, leitura guiada, mochila, laboratório de sons, sem consultar */
+body.quest-l1 .stage{background:linear-gradient(135deg,var(--ta,#f7fbfc),var(--tb,#e9f2f5));position:relative}
+.q1v-theme{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}.q1v-theme svg{width:100%;height:100%;display:block}
+body.quest-l1 .stage .pg{position:relative;z-index:1}
+body.quest-l1 #mode{display:none!important}
+/* práticas */
+.q1-quiz .q1-card,.q1v-main .q1-card{border:2px solid rgba(255,255,255,.9);box-shadow:0 12px 30px rgba(30,70,100,.14)}
+.q1-quiz .q1-card h3{font-size:clamp(20px,2.2vw,28px);color:#10354a}
+.q1-options{counter-reset:opt}
+.q1-options button{position:relative;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 14px;border:2px solid #d6e6ec;border-radius:18px;background:#fff;font-size:clamp(16px,1.5vw,20px);transition:transform .12s,box-shadow .12s,border-color .12s;box-shadow:0 4px 0 #d6e6ec}
+.q1-options button::before{counter-increment:opt;content:counter(opt,upper-alpha);flex:none;width:34px;height:34px;border-radius:12px;display:grid;place-items:center;font-weight:900;color:#fff;background:#2f6fe0}
+.q1-options button:nth-child(2)::before{background:#e8438f}.q1-options button:nth-child(3)::before{background:#f2a01e}.q1-options button:nth-child(4)::before{background:#2da44e}
+.q1-options button:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 7px 0 #bcd6df;border-color:#7fc1d0}
+.q1-options button.right{background:#def5ec;border-color:#2f9b68;box-shadow:0 4px 0 #2f9b68;animation:q1pop .4s}.q1-options button.wrong{background:#fff0ee;border-color:#d96565;box-shadow:0 4px 0 #d96565;animation:q1shake .35s}
+@keyframes q1pop{50%{transform:scale(1.04)}}@keyframes q1shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.q1-progress{display:inline-block;background:#e8f3f6;color:#15657c;border-radius:999px;padding:4px 14px}
+.q1v-hero{position:relative}.q1v-react{position:absolute;left:50%;top:10px;transform:translateX(-50%);padding:8px 18px;border-radius:999px;font-weight:900;color:#fff;box-shadow:0 8px 20px rgba(20,40,70,.3);animation:q1pop .4s;z-index:5;white-space:nowrap}.q1v-react.ok{background:linear-gradient(135deg,#2da44e,#22a6a6)}.q1v-react.no{background:linear-gradient(135deg,#e8683d,#e8438f)}
+/* cultura com ícone */
+.q1v-ic{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;font-size:24px;background:linear-gradient(135deg,#fff3d6,#ffe0e8)}
+/* leitura guiada */
+.q1v-sn{border-radius:6px;padding:0 1px;cursor:pointer;transition:background .12s}.q1v-sn:hover,.q1v-sn:focus{background:rgba(242,176,30,.28);outline:none}
+.q1v-tip{position:fixed;z-index:200;max-width:min(420px,86vw);background:#14354a;color:#fff;padding:9px 14px;border-radius:12px;font-weight:700;font-size:15px;line-height:1.35;box-shadow:0 10px 26px rgba(10,30,50,.4);pointer-events:none}.q1v-tip[hidden]{display:none}
+.q1v-trans{display:flex;gap:10px;align-items:flex-start;background:#fff8e6;border:1px dashed #e9c76a;border-radius:12px;padding:8px 12px;font-size:13px;color:#6a5316}.q1v-trans>span{font-size:20px}.q1v-trline{margin-top:3px;font-weight:800;font-size:14px;color:#14354a;min-height:18px}
+/* mochila de revisão */
+.q1v-bagrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.q1v-bc{display:grid;gap:4px;justify-items:center;text-align:center;border:2px solid #f1d9a6;border-radius:18px;background:linear-gradient(180deg,#fffaf0,#fff0d4);padding:12px 10px;cursor:pointer;font-family:inherit;box-shadow:0 5px 0 #f1d9a6;transition:transform .12s}.q1v-bc:hover{transform:translateY(-2px)}
+.q1v-bc .q1v-be{font-size:34px;line-height:1}.q1v-bc b{font-size:clamp(15px,1.5vw,19px);color:#3a2a14}.q1v-bc small{color:#8a6b2a;font-weight:700}.q1v-bc.on{background:linear-gradient(180deg,#f0fbf4,#dcf5e6);border-color:#8fd3ac;box-shadow:0 5px 0 #8fd3ac}.q1v-bc.on small{color:#1d6b43}
+/* laboratório de sons */
+.q1v-slrow{display:flex;gap:12px;align-items:flex-start}.q1v-slrow p{margin:2px 0 0;font-size:clamp(14px,1.3vw,17px);line-height:1.45}.q1v-slic{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,#d9f1f1,#e4e0ff)}
+.q1v-slwords{display:flex;gap:8px;flex-wrap:wrap}.q1v-slw{display:inline-flex;align-items:center;gap:8px;border:2px solid #cfe3ea;border-radius:14px;background:#fff;padding:6px 12px;font-family:inherit;cursor:pointer}.q1v-slw b{font-size:17px}.q1v-slw small{color:#587785}
+.q1v-sltip{background:#eef9f6;border-left:4px solid #30aca8;border-radius:8px;padding:8px 12px;font-weight:700;font-size:14px;color:#164b52}
+.q1v-slopts{display:grid;gap:8px}.q1v-slo{border:2px solid #d6e6ec;border-radius:16px;background:#fff;padding:12px 16px;font:inherit;font-weight:800;font-size:clamp(16px,1.6vw,21px);text-align:left;cursor:pointer;box-shadow:0 4px 0 #d6e6ec}.q1v-slo.right{background:#def5ec;border-color:#2f9b68}.q1v-slo.wrong{background:#fff0ee;border-color:#d96565}.q1v-sldone{font-size:22px;font-weight:900;color:#14354a}
+/* sem consultar */
+.q1v-built{min-height:58px;display:flex;gap:7px;flex-wrap:wrap;align-items:center;padding:10px;border:2px dashed #b9dcdb;border-radius:16px;background:#f6fbfa}.q1v-bank{display:flex;gap:8px;flex-wrap:wrap}
+.q1v-game .q1v-chip{font-size:clamp(16px,1.6vw,20px);padding:8px 16px}

@@ -89,7 +89,7 @@ window.RL_REGISTER=function(R,A){
   else if(kind==='sound'){
    b.innerHTML=intro(p.prompt)+'<div class="q1-facts">'+p.pairs.map(function(pair){return card('<span class="q1-eyebrow">Som: '+H(pair[1])+'</span><h3>'+H(pair[0])+' '+speak(pair[0])+'</h3><p>'+H(pair[2])+'</p>')}).join('')+'</div>'}
   else if(kind==='role'){
-   var group=A.mode()==='group';b.innerHTML=card('<span class="q1-eyebrow">'+(group?'Aula em grupo · trios':'Aula particular · duas pessoas')+'</span><h3>'+H(group?p.group:p.solo)+'</h3><div class="q1-roles">'+p.prompts.map(function(x){return '<button type="button" data-say1="'+H(x)+'">'+H(x)+'</button>'}).join('')+'</div>')+
+   var group=A.mode()==='group';b.innerHTML=card('<span class="q1-eyebrow">'+'Missão ao vivo'+'</span><h3>'+H(p.solo)+'</h3><div class="q1-roles">'+p.prompts.map(function(x){return '<button type="button" data-say1="'+H(x)+'">'+H(x)+'</button>'}).join('')+'</div>')+
     card('<b>Mude a condição a cada rodada</b><ol>'+p.change.map(function(x){return '<li>'+H(x)+'</li>'}).join('')+'</ol><p class="q1-note">'+(group?'Observador: anote uma fala clara e uma reformulação.':'Professor: dê uma pista só quando necessário; peça uma segunda tentativa.')+'</p>')}
   else if(kind==='writing'){
    b.innerHTML=card('<span class="q1-eyebrow">Agora escreva</span><p>'+H(p.task)+'</p><textarea aria-label="Sua mensagem em inglês" placeholder="'+H(p.placeholder||'Hi! Could I get…?')+'"></textarea><div class="q1-check">'+p.checks.map(function(c){return '<label><input type="checkbox">'+H(c)+'</label>'}).join('')+'</div>')}
