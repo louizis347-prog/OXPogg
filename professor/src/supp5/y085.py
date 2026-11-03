@@ -17,7 +17,7 @@ Y = {'sentences': [[{'en': 'It is Friday afternoon in **Chicago**.', 'pt': 'É s
                [{'en': 'Sara checks the weather on her phone.', 'pt': 'A Sara olha o tempo no celular.'},
                 {'en': 'Saturday is sunny and warm.', 'pt': 'O sábado está ensolarado e quente.'},
                 {'en': 'Sunday is cloudy, but there is no rain.', 'pt': 'O domingo está nublado, mas sem chuva.'},
-                {'en': 'A children’s poem says, “The rain is raining all around.”', 'pt': 'Um poema infantil diz: “A chuva está caindo por toda parte.”'},
+                {'en': 'A children’s book, The Little House, shows people who swim in summer.', 'pt': 'Um livro infantil, A Casinha, mostra pessoas que nadam no verão.'},
                 {'en': 'Today the sky is dry.', 'pt': 'Hoje o céu está seco.'},
                 {'en': 'She puts sunscreen and two towels in her bag.', 'pt': 'Ela põe protetor solar e duas toalhas na bolsa.'}],
                [{'en': '“**I’ll bring sandwiches**,” says Sara.', 'pt': '“**Eu levo sanduíches**”, diz a Sara.'},

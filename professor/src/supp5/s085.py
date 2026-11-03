@@ -1,5 +1,5 @@
 """Suplemento Quest v5 · aula 85."""
-SUPP = {'reg': 107,
+SUPP = {'reg': 96,
  'badge': {'icon': '🏖️', 'name': 'Weekend Planner', 'desc': 'Talk about your plans and invite a friend in English'},
  'sticker': {'cat': 'Everyday culture', 'title': 'Weekend Plans in the USA', 'sub': 'What are you doing this weekend?'},
  'culture': {'hook': 'On Friday, many people in the USA ask each other about the weekend. Short plans, a polite invitation and a friendly goodbye are all you need.',
@@ -31,8 +31,8 @@ SUPP = {'reg': 107,
                       '“**I’m going to the beach on Saturday**,” says Sara. In Chicago, the beach is by a big lake. The water is cold, but the sand is warm. “Who are you going with?” Evan asks. “**With my friends**,” '
                       'she says. “**Do you want to come?**”',
                       'Evan is sorry. “I’d love to, but I’m working,” he says. Sara thinks for a moment. “**How about Sunday?**” she asks. “Sunday is great!” says Evan. “**Let’s have a picnic**.”',
-                      'Sara checks the weather on her phone. Saturday is sunny and warm. Sunday is cloudy, but there is no rain. A children’s poem says, “The rain is raining all around.” Today the sky is dry. She puts '
-                      'sunscreen and two towels in her bag.',
+                      'Sara checks the weather on her phone. Saturday is sunny and warm. Sunday is cloudy, but there is no rain. A children’s book, The Little House, shows people who swim in summer. Today the sky is '
+                      'dry. She puts sunscreen and two towels in her bag.',
                       '“**I’ll bring sandwiches**,” says Sara. “I’ll bring fruit and a blanket,” says Evan. They have a plan. “**Have fun this weekend!**” says Evan. “You too!” Sara answers.'],
              'glossary': [{'w': 'excited', 'pt': 'animada'},
                           {'w': 'weekend', 'pt': 'fim de semana'},
@@ -42,7 +42,7 @@ SUPP = {'reg': 107,
                           {'w': 'picnic', 'pt': 'piquenique'},
                           {'w': 'weather', 'pt': 'tempo (clima)'},
                           {'w': 'cloudy', 'pt': 'nublado'},
-                          {'w': 'poem', 'pt': 'poema'},
+                          {'w': 'swim', 'pt': 'nadam'},
                           {'w': 'sunscreen', 'pt': 'protetor solar'},
                           {'w': 'blanket', 'pt': 'manta / cobertor'}],
              'fast': {'q': 'What is this story about?', 'opts': ['Two friends plan their weekend', 'A job interview', 'A trip to the airport'], 'ans': 0, 'why': 'Sara and Evan talk about the beach and a picnic.'},
