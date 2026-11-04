@@ -45,3 +45,40 @@ body.quest-l1 .q1v-vex{padding:12px 16px}
 body.quest-l1 .q1v-vn{padding:10px 14px}
 body.quest-l1 .q1v-sayrow{padding:14px 16px;gap:10px 14px}
 @media(max-width:820px){body.quest-l1 .pb.q1-body{gap:20px}body.quest-l1 .q1-card{padding:18px 16px}body.quest-l1 .q1v-ln{padding:12px}}
+/* cor e conteúdo: cartões com tom por tipo de quadro, hero maior, faixa de palavras */
+body.quest-l1 .pb.q1-body{align-content:center}
+body.quest-l1 .q1v-main{align-content:center}
+body.quest-l1 .q1v-hero .ps-stage{aspect-ratio:4/3}
+body.quest-l1 .q1-card{border:2px solid var(--cc,#7fb7d9);background:color-mix(in srgb,var(--cc,#7fb7d9) 9%,#fff);box-shadow:0 5px 0 color-mix(in srgb,var(--cc,#7fb7d9) 38%,#fff)}
+body.quest-l1 .pb[data-kind=quiz]{--cc:#f0a73a;--cb1:#fffdf6;--cb2:#fff4dc}
+body.quest-l1 .pb[data-kind=facts]{--cc:#2fa8a0;--cb1:#fbfffe;--cb2:#e6f7f5}
+body.quest-l1 .pb[data-kind=compare]{--cc:#5b8def;--cb1:#fbfdff;--cb2:#e8f0ff}
+body.quest-l1 .pb[data-kind=artifact]{--cc:#ee7d5b;--cb1:#fffdfb;--cb2:#ffeee6}
+body.quest-l1 .pb[data-kind=reading]{--cc:#8a74e8;--cb1:#fdfcff;--cb2:#f0ecff}
+body.quest-l1 .pb[data-kind=dialog],body.quest-l1 .pb[data-kind=role]{--cc:#e8639a;--cb1:#fffcfd;--cb2:#ffeaf2}
+body.quest-l1 .pb[data-kind=bridge],body.quest-l1 .pb[data-kind=bridge2]{--cc:#37b27a;--cb1:#fbfffd;--cb2:#e4f7ec}
+body.quest-l1 .pb[data-kind=exit]{--cc:#6a7be6;--cb1:#fcfdff;--cb2:#eaeeff}
+.q1v-strip{display:grid;gap:10px;padding:14px 16px;border-radius:20px;background:rgba(255,255,255,.7);border:1px solid rgba(120,160,190,.35)}
+.q1v-sth{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#4f7088}
+.q1v-stc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.q1v-stw{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;gap:0 8px;align-items:center;text-align:left;border:2px solid var(--sc);background:color-mix(in srgb,var(--sc) 10%,#fff);border-radius:14px;padding:8px 10px;font:inherit;cursor:pointer;color:#17324a;box-shadow:0 3px 0 color-mix(in srgb,var(--sc) 35%,#fff)}
+.q1v-stw span{grid-row:1/3;font-size:22px}.q1v-stw b{font-size:15px}.q1v-stw small{color:#4f7088;font-weight:700}
+.q1v-stw:hover{transform:translateY(-1px)}
+.q1v-stw.h0{--sc:#2f6fe0}.q1v-stw.h1{--sc:#e8438f}.q1v-stw.h2{--sc:#e0891a}.q1v-stw.h3{--sc:#2da44e}.q1v-stw.h4{--sc:#8a74e8}.q1v-stw.h5{--sc:#1fa7b8}
+.q1v-stex{padding:8px 12px;border-radius:12px;background:#fff8e1;border-left:4px solid #f2b01e;font-weight:700;color:#5a4608}
+.q1v-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.q1v-chips button{border:2px solid #bfe6e2;background:#effaf9;color:#14585a;border-radius:999px;padding:6px 12px;font:inherit;font-weight:800;font-size:14px;cursor:pointer}
+.q1v-chips button:hover{background:#dcf3f1}
+@media(max-width:820px){.q1v-stc{grid-template-columns:repeat(2,minmax(0,1fr))}body.quest-l1 .q1v-hero .ps-stage{aspect-ratio:16/10}}
+
+/* cartões coloridos como nas peças dos verbos: cada cartão com a sua cor */
+body.quest-l1 .q1v-facts2>.q1-card:nth-child(4n+1),body.quest-l1 .q1v-main>.q1-card:nth-of-type(4n+1){--cc:#2f6fe0}
+body.quest-l1 .q1v-facts2>.q1-card:nth-child(4n+2),body.quest-l1 .q1v-main>.q1-card:nth-of-type(4n+2){--cc:#e8438f}
+body.quest-l1 .q1v-facts2>.q1-card:nth-child(4n+3),body.quest-l1 .q1v-main>.q1-card:nth-of-type(4n+3){--cc:#e0891a}
+body.quest-l1 .q1v-facts2>.q1-card:nth-child(4n+4),body.quest-l1 .q1v-main>.q1-card:nth-of-type(4n+4){--cc:#2da44e}
+body.quest-l1 .q1v-facts2>.q1-card h3,body.quest-l1 .q1v-facts2>.q1-card>b{color:color-mix(in srgb,var(--cc) 80%,#102030)}
+body.quest-l1 .q1v-pairrow>div:nth-child(1){border:2px solid #2da44e;box-shadow:0 5px 0 #a6dfbf}
+body.quest-l1 .q1v-pairrow>div:nth-child(2){border:2px solid #2f6fe0;box-shadow:0 5px 0 #b9cdf5}
+body.quest-l1 .q1v-pairrow>div>span{font-weight:900}
+body.quest-l1 .q1-options button:nth-child(1){--oc:#2f6fe0}body.quest-l1 .q1-options button:nth-child(2){--oc:#e8438f}body.quest-l1 .q1-options button:nth-child(3){--oc:#e0891a}body.quest-l1 .q1-options button:nth-child(4){--oc:#2da44e}
+body.quest-l1 .q1-options button:not(.right):not(.wrong){border:2px solid var(--oc,#2f6fe0);background:color-mix(in srgb,var(--oc,#2f6fe0) 9%,#fff);box-shadow:0 4px 0 color-mix(in srgb,var(--oc,#2f6fe0) 38%,#fff)}

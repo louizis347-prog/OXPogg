@@ -22,7 +22,8 @@ body.quest-l1 .app{padding-top:14px;padding-bottom:14px}
 .q1v-more{cursor:pointer;position:relative;transition:transform .15s,box-shadow .15s}
 .q1v-more:hover,.q1v-more:focus-visible{transform:translateY(-2px);box-shadow:0 12px 26px rgba(30,70,120,.18);outline:none}
 .q1v-more::after{content:'Toque para saber mais ›';position:absolute;right:12px;bottom:8px;font-size:11px;font-weight:800;letter-spacing:.02em;color:#2b6fe6;background:rgba(43,111,230,.1);padding:3px 9px;border-radius:999px}
-.q1v-pairrow>.q1v-more::after{bottom:auto;top:8px}
+/* sem dica sobre as cenas */
+.q1v-pairrow>.q1v-more::after{display:none}
 /* mini-página */
 .q1v-mini{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:16px;background:rgba(14,28,46,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transition:opacity .18s}
 .q1v-mini.on{opacity:1}

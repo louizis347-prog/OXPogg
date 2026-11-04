@@ -96,14 +96,15 @@ function addNarrate(b,p){var main=$('.q1v-main',b)||b;if($('.q1v-narr',b))return
     var text=(clone.innerText||clone.textContent||'').replace(/\n+/g,'. ');stop();btn.classList.add('on');btn.firstChild.textContent='⏹ ';speakSegs(segments(text),function(){btn.classList.remove('on');btn.firstChild.textContent='🔊 '})}}
 /* ================= cartões clicáveis ================= */
 function findCard(b,txt){var els=$$(b,'h3,b,strong,.q1v-sbig');txt=String(txt).slice(0,40);for(var i=0;i<els.length;i++){if(els[i].textContent.indexOf(txt)===0){return els[i].closest('.q1-card,.q1v-sit,.q1v-fact,.q1v-sitgrid>div,li')||els[i].parentNode}}return null}
-function wireFacts(b,p){(p.facts||[]).forEach(function(f){var c=findCard(b,f.big);if(!c||c.dataset.more)return;c.dataset.more='1';c.classList.add('q1v-more');c.setAttribute('tabindex','0');c.setAttribute('role','button');
+function wireFacts(b,p){var FC=['#2f6fe0','#e8438f','#e0891a','#2da44e'];(p.facts||[]).forEach(function(f,fi){var c=findCard(b,f.big);if(!c||c.dataset.more)return;c.dataset.more='1';c.style.setProperty('--cc',FC[fi%4]);c.classList.add('q1v-more');c.setAttribute('tabindex','0');c.setAttribute('role','button');
   var go=function(){openMini({icon:f.icon||'💡',kicker:f.label||'Cultura',title:f.big,body:[f.sub].concat(f.more?[].concat(f.more):[]),hue:hueOf(f.big)})};
   c.addEventListener('click',function(e){if(e.target.closest('button,a,input'))return;go()});c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})}
-function wireCompare(b,p){var cp=p.compare;if(!cp)return;var cols=$$(b,'.q1v-pairrow>div');var data=[['🇧🇷','No Brasil',cp.br,'#2e9e5b'],['🇺🇸','Nos Estados Unidos',cp.us,'#3b6fe0']];
-  cols.forEach(function(c,i){var d=data[i];if(!d||c.dataset.more)return;c.dataset.more='1';c.classList.add('q1v-more');c.setAttribute('tabindex','0');c.setAttribute('role','button');
-    var go=function(){var body=[d[2]];if(cp.tip)body.push('Dica para falar: '+cp.tip);if(cp.ask)body.push('Sua vez: '+cp.ask);openMini({icon:d[0],kicker:'Compare',title:d[1],body:body,hue:i?220:140})};
-    c.addEventListener('click',go);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})});
-  $$(b,'.q1-card').forEach(function(c){if(c.dataset.more)return;var t=c.textContent;[['tip','Dica'],['ask','Sua vez']].forEach(function(k){var v=cp[k[0]];if(v&&t.indexOf(String(v).slice(0,25))>=0){c.dataset.more='1';c.classList.add('q1v-more');c.setAttribute('tabindex','0');c.setAttribute('role','button');c.addEventListener('click',function(){openMini({icon:k[0]==='tip'?'💡':'🎤',kicker:'Para usar hoje',title:k[1],body:[v],hue:hueOf(v)})})}})})}
+function wireCompare(b,p){var cp=p.compare;if(!cp)return;
+  var defs=[['br','🇧🇷','No Brasil','Compare',140,'#2da44e'],['us','🇺🇸','Nos Estados Unidos','Compare',220,'#2f6fe0'],['tip','💡','Dica para falar','Para usar hoje',45,'#e0891a'],['ask','🎤','Sua vez','Para usar hoje',300,'#e8438f']];
+  $$(b,'.q1-card').forEach(function(c){if(c.dataset.more)return;var t=c.textContent;
+    defs.forEach(function(d){var v=cp[d[0]];if(!v||c.dataset.more||t.indexOf(String(v).slice(0,25))<0)return;c.dataset.more='1';c.style.setProperty('--cc',d[5]);c.classList.add('q1v-more');c.setAttribute('tabindex','0');c.setAttribute('role','button');
+      var go=function(){var body=[v];if(d[0]==='br'||d[0]==='us'){if(cp.tip)body.push('Dica para falar: '+cp.tip);if(cp.ask)body.push('Sua vez: '+cp.ask)}openMini({icon:d[1],kicker:d[3],title:d[2],body:body,hue:d[4]})};
+      c.addEventListener('click',function(e){if(e.target.closest('button,a,input'))return;go()});c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})})}
 /* ================= textos do cotidiano ilustrados ================= */
 function lines(w){return (w.lines||[]).map(function(l){return rich(l)})}
 function kindOf(k){k=String(k||'').toLowerCase();
@@ -132,9 +133,21 @@ var ART={
  paper:function(w){var L=lines(w);return '<div class="q1a-paper"><span class="q1a-tape"></span>'+L.map(function(l,i){return '<div class="'+(i===0?'big':'')+'">'+l+'</div>'}).join('')+'</div>'}};
 function illustrateArtifact(b,p){var w=p.artifact;if(!w||!w.lines)return;var box=$('.q1-sign',b);if(!box||box.dataset.ill)return;var k=kindOf(w.kind);var fn=ART[k]||ART.paper;
   var wrap=document.createElement('div');wrap.className='q1a-wrap q1a-'+k+'-w';wrap.innerHTML=fn(w);wrap.dataset.ill='1';box.parentNode.replaceChild(wrap,box)}
+/* ================= palavras da aula (faixa colorida) e chips de frases ================= */
+var WORDS_CACHE={n:-1,w:[]};
+function lessonWords(L){if(!L)return[];if(WORDS_CACHE.n===L.n)return WORDS_CACHE.w;var w=[];(L.pages||[]).forEach(function(p){if(p.kind==='vocab'&&p.words)p.words.forEach(function(x){w.push({w:x[0],pt:x[1],ex:x[2],e:x[5]||'💬'})})});WORDS_CACHE={n:L.n,w:w};return w}
+var STRIP_KINDS={quiz:1,facts:1,compare:1,artifact:1,reading:1,bridge2:1};
+function addStrip(b,p){var L=window.__LESSON,ws=lessonWords(L);if(!ws.length||$('.q1v-strip',b))return;var main=$('.q1v-main',b);if(!main)return;
+  var s=document.createElement('div');s.className='q1v-strip';
+  s.innerHTML='<span class="q1v-sth">Palavras desta aula</span><div class="q1v-stc">'+ws.slice(0,6).map(function(x,i){return '<button type="button" class="q1v-stw h'+(i%6)+'" data-i="'+i+'"><span>'+esc(x.e)+'</span><b>'+esc(x.w)+'</b><small>'+esc(x.pt)+'</small></button>'}).join('')+'</div>';
+  main.appendChild(s);$$(s,'.q1v-stw').forEach(function(x){x.onclick=function(){var w=ws[+x.dataset.i];window.L1SPEAK.speak(w.w,'en-US');x.classList.toggle('open');var ex=$('.q1v-stex',s);if(!ex){ex=document.createElement('div');ex.className='q1v-stex';s.appendChild(ex)}ex.textContent=w.ex?'“'+w.ex+'”':''}})}
+function addQuoteChips(card,text){if(!card||$('.q1v-chips',card))return;var q=[];String(text).replace(/[“"]([^”"]{3,70})[”"]/g,function(_,t){if(!isPT(t)||/^[A-Za-z' ,.!?’-]+$/.test(t))q.push(t)});q=q.filter(function(t,i){return q.indexOf(t)===i}).slice(0,3);if(!q.length)return;
+  var d=document.createElement('div');d.className='q1v-chips';d.innerHTML=q.map(function(t,i){return '<button type="button" data-q="'+i+'">🔊 '+esc(t)+'</button>'}).join('');card.appendChild(d);
+  $$(d,'button').forEach(function(x){x.onclick=function(e){e.stopPropagation();window.L1SPEAK.speak(q[+x.dataset.q],'en-US')}})}
 /* ================= ligação ================= */
 var previous=window.RL_REGISTER;
 window.RL_REGISTER=function(R,A){if(previous)previous(R,A);var orig=R.q1;if(!orig)return;
   R.q1=function(p,b){try{window.__LESSON=A.lesson&&A.lesson()}catch(z){}clearTransient();orig(p,b);
-    try{if(p.kind==='artifact')illustrateArtifact(b,p);if(NARR[p.kind])addNarrate(b,p);if(p.kind==='facts')wireFacts(b,p);if(p.kind==='compare')wireCompare(b,p);frameCoach(p,b)}catch(err){try{console.error(err)}catch(z){}}}};
+    try{b.dataset.kind=p.kind;if(STRIP_KINDS[p.kind])addStrip(b,p);if(p.kind==='facts')(p.facts||[]).forEach(function(f){var c=findCard(b,f.big);addQuoteChips(c,f.sub||'')});
+    if(p.kind==='artifact')illustrateArtifact(b,p);if(NARR[p.kind])addNarrate(b,p);if(p.kind==='facts')wireFacts(b,p);if(p.kind==='compare')wireCompare(b,p);frameCoach(p,b)}catch(err){try{console.error(err)}catch(z){}}}};
 })();
