@@ -20,8 +20,8 @@ X = dict(
  vocab=[
   dict(w="wedding", pt="casamento", e="💒", ex=["The wedding is in June.", "I go to a wedding."]),
   dict(w="ring", pt="aliança / anel", e="💍", ex=["The ring is gold.", "He has the ring."]),
-  dict(w="flower", pt="flor", e="🌸", ex=["This flower is pink.", "She has a flower in her hair."]),
-  dict(w="garden", pt="jardim", e="🌳", ex=["The garden is big.", "We sit in the garden."]),
+  dict(w="happy", pt="feliz", e="😊", ex=["The bride is happy.", "We are happy for you."]),
+  dict(w="cousin", pt="primo / prima", e="👧", ex=["Cole is my cousin.", "My cousin is happy."]),
   dict(w="bride", pt="noiva", e="👰", ex=["The bride is happy.", "The bride wears white."]),
   dict(w="groom", pt="noivo", e="🤵", ex=["The groom is nervous.", "The groom wears a suit."]),
  ],

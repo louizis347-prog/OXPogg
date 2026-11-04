@@ -12,7 +12,7 @@ X = {'key': {'big': 'Excuse me / Sorry', 'label': 'Esbarrão no mercado', 'sub':
          {'who': 'Claire', 'en': 'Thank you {so much.|very much.}', 'pt': 'Muito {obrigada.|obrigada mesmo.}'},
          {'who': 'You', 'en': 'Excuse me, can I {get through?|pass?}', 'pt': 'Com licença, posso {passar?|passar?}'},
          {'who': 'Claire', 'en': 'Sure, {go ahead.|go on.}', 'pt': 'Claro, {pode ir.|vá em frente.}'}],
- 'vocab': [{'w': 'cart', 'pt': 'carrinho (de compras)', 'e': '🛒', 'ex': ['My cart is small.', 'Push the cart, please.']},
+ 'vocab': [{'w': 'mess', 'pt': 'bagunça', 'e': '🫧', 'ex': ['Oh no, what a mess!', 'I made a mess.']},
            {'w': 'fault', 'pt': 'culpa', 'e': '🤷', 'ex': ['It’s my fault.', 'It’s not your fault.']},
            {'w': 'hurt', 'pt': 'machucado', 'e': '🤕', 'ex': ['Are you hurt?', 'I am not hurt.']},
            {'w': 'bump', 'pt': 'esbarrão', 'e': '💥', 'ex': ['It was a small bump.', 'I felt a bump.']},

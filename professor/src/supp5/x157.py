@@ -18,7 +18,7 @@ X = dict(
   dict(who="Kai", en="{Nice shot!|Great pass!}", pt="{Bela cesta!|Belo passe!}"),
  ],
  vocab=[
-  dict(w="player", pt="jogador", e="🏃", ex=["We need one more player.", "She is a good player."]),
+  dict(w="winner", pt="vencedor", e="🏆", ex=["Who is the winner?", "The blue team is the winner."]),
   dict(w="court", pt="quadra", e="🏟️", ex=["The court is in the park.", "We play on the court."]),
   dict(w="point", pt="ponto", e="☝️", ex=["We have ten points.", "One more point, please!"]),
   dict(w="shot", pt="arremesso / cesta", e="🎯", ex=["That is a nice shot.", "Take a shot!"]),

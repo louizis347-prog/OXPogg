@@ -23,7 +23,7 @@ X = dict(
   dict(w="secret", pt="segredo", e="🤫", ex=["Keep it a secret.", "The party is a secret."]),
   dict(w="dark", pt="escuro", e="🌑", ex=["The room is dark.", "It is dark outside."]),
   dict(w="quiet", pt="silencioso / quieto", e="🤐", ex=["Be quiet, please.", "The house is quiet."]),
-  dict(w="door", pt="porta", e="🚪", ex=["Hide behind the door.", "The door is open."]),
+  dict(w="noise", pt="barulho", e="🔊", ex=["I hear a noise.", "No noise, please."]),
  ],
  molds=[
   dict(title="Mandar todos se esconderem", frame="Everyone, hide {place}!", slots=[dict(key="place", opts=["behind the door", "behind the sofa", "in the kitchen", "under the table"])], model="Everyone, hide behind the door!", note="Hide + lugar. Ordem sem 'to'."),
