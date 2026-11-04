@@ -71,6 +71,11 @@ def focus(L, P, S, ctx):
     sc, sc2 = nb.get('sc') or 'street', en.get('sc') or 'street'
     try:
         from scene_pools import POOLS
+        try:
+            from scene_pools_201_250 import POOLS_201_250
+            POOLS = {**POOLS, **POOLS_201_250}
+        except Exception:
+            pass
         pl = [x for x in POOLS.get(L.get('n'), []) if x in RS and x != 'counter']
     except Exception:
         pl = []
