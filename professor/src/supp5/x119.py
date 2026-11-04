@@ -22,7 +22,7 @@ X = dict(
   dict(w="application", pt="ficha de candidatura", e="📝", ex=["I have a job application.", "The application is on the desk."]),
   dict(w="experience", pt="experiência", e="🏅", ex=["Do you have experience?", "I have some experience."]),
   dict(w="part-time", pt="meio período", e="🕒", ex=["I want a part-time job.", "This is a part-time job."]),
-  dict(w="resume", pt="currículo", e="📄", ex=["Bring your resume.", "My resume is short."]),
+  dict(w="hire", pt="contratar", e="🧑‍💼", ex=["They hire me today.", "We hire new workers."]),
   dict(w="interview", pt="entrevista", e="🤝", ex=["I have an interview today.", "The interview is at ten."]),
  ],
  molds=[

@@ -17,10 +17,10 @@ X = dict(
   dict(who='You', en='Tap it on the {reader|gate|machine}.', pt='Encoste no {leitor|portão|aparelho}.'),
   dict(who='Nina', en='Have a nice {day|trip|evening}!', pt='Tenha um bom {dia|trajeto|noite}!')],
  vocab=[
-  dict(w='card', pt='cartão', e='💳', ex=['I pay by card.', 'This card is for the subway.']),
-  dict(w='cash', pt='dinheiro (em notas)', e='💵', ex=['Do you take cash?', 'I have only cash today.']),
+  dict(w='money', pt='dinheiro', e='💰', ex=['I have no money.', 'Money is in my wallet.']),
+  dict(w='insert', pt='inserir', e='⬇️', ex=['Insert your card here.', 'I insert the ticket.']),
   dict(w='reader', pt='leitor', e='📟', ex=['Tap your card on the reader.', 'The reader is green now.']),
-  dict(w='change', pt='troco', e='🪙', ex=['Here is your change.', 'I need change for a ten.']),
+  dict(w='pass', pt='passe', e='🎫', ex=['I want a day pass.', 'This pass is for one day.']),
   dict(w='add', pt='adicionar / recarregar', e='➕', ex=['I want to add ten dollars.', 'How much do you want to add?']),
   dict(w='one-way', pt='só ida', e='➡️', ex=['A one-way ticket, please.', 'Is this a one-way trip?'])],
  molds=[

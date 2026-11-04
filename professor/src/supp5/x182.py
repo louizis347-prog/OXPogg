@@ -20,7 +20,7 @@ X = dict(
  vocab=[
   dict(w="power", pt="energia, eletricidade", e="⚡", ex=["The power is out.", "The power is back."]),
   dict(w="storm", pt="tempestade", e="⛈️", ex=["There is a big storm.", "The storm is loud."]),
-  dict(w="bulb", pt="lâmpada", e="💡", ex=["The bulb is old.", "I need a new bulb."]),
+  dict(w="wire", pt="fio", e="🔌", ex=["The wire is red.", "Do not touch the wire."]),
   dict(w="switch", pt="interruptor", e="🔘", ex=["Press the switch.", "The switch is on the wall."]),
   dict(w="match", pt="fósforo", e="🔥", ex=["I have a match.", "Use a match for the candle."]),
   dict(w="thunder", pt="trovão", e="🌩️", ex=["I hear thunder.", "The thunder is loud."]),

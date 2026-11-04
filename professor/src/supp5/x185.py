@@ -18,7 +18,7 @@ X = dict(
   dict(who="Jonah", en="Luna. She's {shy.|small.}", pt="Luna. Ela é {tímida.|pequena.}"),
  ],
  vocab=[
-  dict(w="leash", pt="coleira (guia)", e="🦮", ex=["Take the leash, please.", "My dog has a red leash."]),
+  dict(w="treat", pt="petisco", e="🦴", ex=["Give him a treat.", "The dog wants a treat."]),
   dict(w="bone", pt="osso", e="🦴", ex=["The dog has a bone.", "Give him a bone."]),
   dict(w="bark", pt="latir, latido", e="🔊", ex=["I hear a bark.", "The dog can bark."]),
   dict(w="paw", pt="pata", e="🐾", ex=["Give me your paw.", "His paw is brown."]),

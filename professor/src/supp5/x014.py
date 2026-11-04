@@ -19,11 +19,11 @@ dlg=[
 ],
 vocab=[
  dict(w='call', pt='ligar; ligação', e='📞', ex=['I\'ll call you later.', 'Thanks for the call.']),
- dict(w='phone', pt='telefone', e='📱', ex=['My phone is in my bag.', 'He answers the phone.']),
+ dict(w='voice', pt='voz', e='🗣️', ex=['I know that voice.', 'Your voice is low.']),
  dict(w='message', pt='recado', e='💬', ex=['Can I leave a message?', 'I have a message for Raj.']),
  dict(w='later', pt='depois', e='🕒', ex=['Call me later, please.', 'See you later!']),
- dict(w='speak', pt='falar', e='🗣️', ex=['Can I speak to Mia?', 'Please speak slowly.']),
- dict(w='neighbor', pt='vizinho', e='🏠', ex=['I am your neighbor.', 'My neighbor is friendly.']),
+ dict(w='hold', pt='esperar na linha', e='⏳', ex=['Please hold.', 'Can you hold, please?']),
+ dict(w='mobile', pt='celular', e='📱', ex=['This is my mobile.', 'Call me on my mobile.']),
 ],
 molds=[
  dict(title='Pedir alguém ao telefone', frame='Hi, is {name} there? Can I speak to {name}?', slots=[dict(key='name', opts=['Raj', 'Mia', 'Sam'])], model='Hi, is Raj there? Can I speak to Raj?', note='Duas formas de pedir alguém: Is … there? e Can I speak to …? Ambas são naturais.'),

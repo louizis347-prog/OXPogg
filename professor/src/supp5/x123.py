@@ -21,7 +21,7 @@ X = dict(
   dict(w="sick", pt="doente", e="🤒", ex=["I feel sick today.", "My brother is sick."]),
   dict(w="nap", pt="soneca", e="😴", ex=["I take a nap at two.", "A short nap helps me."]),
   dict(w="sofa", pt="sofá", e="🛋️", ex=["Lie down on the sofa.", "The sofa is soft."]),
-  dict(w="stomachache", pt="dor de barriga", e="🤢", ex=["I have a stomachache.", "A stomachache is no fun."]),
+  dict(w="rest", pt="descansar / descanso", e="🛌", ex=["I need to rest.", "Rest is good for you."]),
   dict(w="pill", pt="comprimido", e="💊", ex=["Take one pill.", "The pill is small."]),
   dict(w="honey", pt="mel", e="🍯", ex=["Tea with honey is nice.", "I like honey."]),
  ],

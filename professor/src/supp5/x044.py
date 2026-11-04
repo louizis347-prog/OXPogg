@@ -22,7 +22,7 @@ X = dict(
   dict(w='corner', pt='esquina', e='📐', ex=['The cafe is on the corner.', 'Wait for me at the corner.']),
   dict(w='block', pt='quarteirão', e='🏘️', ex=['Walk two blocks.', 'The bank is one block away.']),
   dict(w='light', pt='semáforo', e='🚦', ex=['Turn left at the light.', 'The light is red.']),
-  dict(w='building', pt='prédio', e='🏢', ex=['It is a tall building.', 'The museum is a big building.'])],
+ dict(w='school', pt='escola', e='🏫', ex=['The school is on the corner.', 'The school is near.']),
  molds=[
   dict(title='Pedir direções', frame='Excuse me, how do I get to the {place}?', slots=[dict(key='place', opts=['museum', 'library', 'park', 'station'])], model='Excuse me, how do I get to the museum?', note='“How do I get to…?” é o jeito comum de pedir um caminho.'),
   dict(title='Dar o caminho', frame='Go straight for {n} blocks. {act} at the {mark}.', slots=[dict(key='n', opts=['two', 'three', 'four']), dict(key='act', opts=['Turn left', 'Turn right', 'Stop']), dict(key='mark', opts=['traffic light', 'corner', 'bank'])], model='Go straight for two blocks. Turn left at the traffic light.', note='Fale em passos curtos: uma instrução por frase.'),

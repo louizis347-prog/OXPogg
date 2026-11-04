@@ -23,7 +23,7 @@ X = dict(
   dict(w="painting", pt="pintura, quadro", e="🖼️", ex=["This painting is beautiful.", "My favorite painting is blue."]),
   dict(w="floor", pt="andar", e="🏢", ex=["The paintings are on the second floor.", "Which floor is the cafe on?"]),
   dict(w="flash", pt="flash da câmera", e="⚡", ex=["No flash, please.", "Flash can hurt old paintings."]),
-  dict(w="exhibit", pt="exposição", e="🏛️", ex=["This exhibit is new.", "The exhibit is open today."]),
+  dict(w="artist", pt="artista", e="🧑‍🎨", ex=["The artist is here.", "He is a famous artist."]),
   dict(w="gift shop", pt="lojinha de lembranças", e="🎁", ex=["The gift shop is near the door.", "I buy a card at the gift shop."]),
  ],
  molds=[

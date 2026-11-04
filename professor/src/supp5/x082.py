@@ -15,7 +15,7 @@ X = {'key': {'big': 'Can you do eight?', 'label': 'Pedir desconto', 'sub': 'Em v
  'vocab': [{'w': 'bargain', 'pt': 'pechincha', 'e': '🏷️', 'ex': ['This lamp is a bargain.', 'I love a good bargain.']},
            {'w': 'sticker', 'pt': 'adesivo (de preço)', 'e': '🔖', 'ex': ['The sticker says five dollars.', 'There is a sticker on the vase.']},
            {'w': 'driveway', 'pt': 'entrada da garagem', 'e': '🏠', 'ex': ['The sale is in the driveway.', 'My car is in the driveway.']},
-           {'w': 'vase', 'pt': 'vaso', 'e': '🏺', 'ex': ['The vase is blue.', 'I want this vase for flowers.']},
+           {'w': 'book', 'pt': 'livro', 'e': '📖', 'ex': ['I read a book.', 'This book is good.']},
            {'w': 'used', 'pt': 'usado', 'e': '♻️', 'ex': ['This is a used chair.', 'Used toys are cheap here.']},
            {'w': 'mug', 'pt': 'caneca', 'e': '☕', 'ex': ['I like this mug.', 'The mug is two dollars.']}],
  'molds': [{'title': 'Perguntar o preço',

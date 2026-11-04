@@ -17,7 +17,7 @@ X = {'key': {'big': 'Where are our seats?', 'label': 'Entrar no show', 'sub': 'M
            {'w': 'crowd', 'pt': 'plateia, multidão', 'e': '👥', 'ex': ['The crowd is happy.', 'A big crowd waits outside.']},
            {'w': 'band', 'pt': 'banda', 'e': '🎸', 'ex': ['The band plays rock.', 'I love this band.']},
            {'w': 'loud', 'pt': 'alto, barulhento', 'e': '🔊', 'ex': ['The music is loud.', "It's very loud in here."]},
-           {'w': 'singer', 'pt': 'cantor / cantora', 'e': '🎤', 'ex': ['The singer is great.', 'I like this singer.']},
+           {'w': 'dance', 'pt': 'dançar', 'e': '💃', 'ex': ['I like to dance.', 'We dance at the concert.']},
            {'w': 'encore', 'pt': 'bis', 'e': '🔁', 'ex': ['The crowd shouts encore.', 'The band plays one encore.']}],
  'molds': [{'title': 'Perguntar onde ficam',
             'frame': 'Where are our {thing}?',

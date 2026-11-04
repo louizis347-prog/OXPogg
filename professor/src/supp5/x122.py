@@ -22,8 +22,8 @@ X = dict(
   dict(w="weekday", pt="dia de semana", e="📅", ex=["Monday is a weekday.", "I work on weekdays."]),
   dict(w="Italian", pt="italiano", e="🇮🇹", ex=["I like Italian food.", "The Italian place is near."]),
   dict(w="table", pt="mesa", e="🪑", ex=["A table for two, please.", "The table is by the window."]),
-  dict(w="deadline", pt="prazo", e="⏳", ex=["The deadline is Friday.", "I have a deadline today."]),
-  dict(w="happy hour", pt="happy hour", e="🍻", ex=["Happy hour starts at five.", "Let's go to happy hour."]),
+  dict(w="shopping", pt="compras", e="🛍️", ex=["I go shopping on Saturday.", "Shopping is fun."]),
+  dict(w="beer", pt="cerveja", e="🍺", ex=["I want a beer.", "Beer is cold."]),
  ],
  molds=[
   dict(title="Contar da semana", frame="My {noun} was {adj}, but good.", slots=[dict(key="noun", opts=["week", "day", "Monday"]), dict(key="adj", opts=["busy", "long", "hard"])], model="My week was busy, but good.", note="Was é o passado de is. Use para uma semana ou dia que acabou."),

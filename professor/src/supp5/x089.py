@@ -23,7 +23,7 @@ X = dict(
   dict(w="campfire", pt="fogueira", e="🔥", ex=["The campfire is warm.", "We cook on the campfire."]),
   dict(w="flashlight", pt="lanterna", e="🔦", ex=["Where is the flashlight?", "My flashlight is bright."]),
   dict(w="backpack", pt="mochila", e="🎒", ex=["It's in my backpack.", "The backpack is heavy."]),
-  dict(w="firewood", pt="lenha", e="🪵", ex=["We need firewood.", "I carry the firewood."]),
+  dict(w="forest", pt="floresta", e="🌲", ex=["The forest is dark.", "We walk in the forest."]),
   dict(w="sleeping bag", pt="saco de dormir", e="🛌", ex=["My sleeping bag is warm.", "Put the sleeping bag in the tent."]),
  ],
  molds=[

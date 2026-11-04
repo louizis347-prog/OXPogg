@@ -22,7 +22,7 @@ X = dict(
   dict(w="popcorn", pt="pipoca", e="🍿", ex=["I want a large popcorn.", "The popcorn is warm."]),
   dict(w="screen", pt="tela", e="📽️", ex=["The screen is very big.", "We sit near the screen."]),
   dict(w="comedy", pt="comédia", e="😂", ex=["This comedy is funny.", "I like a good comedy."]),
-  dict(w="trailer", pt="trailer (prévia)", e="🎞️", ex=["The trailer starts now.", "I like this trailer."]),
+  dict(w="story", pt="história", e="📚", ex=["The story is funny.", "I like this story."]),
   dict(w="row", pt="fileira", e="🪑", ex=["We are in row F.", "Our row is in the middle."]),
   dict(w="actor", pt="ator", e="🎭", ex=["The actor is funny.", "My favorite actor is here."]),
  ],

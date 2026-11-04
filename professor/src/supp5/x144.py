@@ -19,11 +19,11 @@ X = dict(
  ],
  vocab=[
   dict(w="dinosaur", pt="dinossauro", e="🦖", ex=["The dinosaur is huge.", "Leo loves dinosaurs."]),
-  dict(w="skeleton", pt="esqueleto", e="🦴", ex=["We see a dinosaur skeleton.", "The skeleton is very long."]),
+  dict(w="giant", pt="gigante", e="🦣", ex=["The dinosaur is giant.", "I see a giant bone."]),
   dict(w="admission", pt="entrada (preço)", e="🎟️", ex=["Admission is free today.", "How much is admission?"]),
   dict(w="guard", pt="segurança", e="💂", ex=["Ask the guard, please.", "The guard is at the door."]),
   dict(w="gallery", pt="sala de exposição", e="🖼️", ex=["The gallery is on the second floor.", "This gallery is quiet."]),
-  dict(w="fossil", pt="fóssil", e="🐚", ex=["This is an old fossil.", "The fossil is a bone."]),
+  dict(w="animal", pt="animal", e="🐾", ex=["I like animals.", "This animal is big."]),
  ],
  molds=[
   dict(title="Pedir a entrada", frame="{n} adults, please.", slots=[dict(key="n", opts=["Two", "Three", "Four"])], model="Two adults, please.", note="Depois do número, use o plural: adults."),

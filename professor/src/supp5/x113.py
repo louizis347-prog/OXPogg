@@ -19,8 +19,8 @@ X = dict(
  ],
  vocab=[
   dict(w="enroll", pt="matricular-se", e="📝", ex=["I want to enroll today.", "She enrolls in a class."]),
-  dict(w="tuition", pt="mensalidade, valor do curso", e="💵", ex=["The tuition is low.", "What is the tuition?"]),
-  dict(w="semester", pt="semestre", e="🗓️", ex=["The semester starts in August.", "One semester is four months."]),
+  dict(w="learn", pt="aprender", e="🧠", ex=["I learn English.", "We learn every day."]),
+  dict(w="school", pt="escola", e="🏫", ex=["The school is big.", "I go to school."]),
   dict(w="beginner", pt="iniciante", e="🌱", ex=["I am a beginner.", "This is a beginner class."]),
   dict(w="homework", pt="lição de casa", e="📚", ex=["I do my homework at night.", "Is there homework today?"]),
   dict(w="classroom", pt="sala de aula", e="🏫", ex=["The classroom is on the left.", "Our classroom is big."]),

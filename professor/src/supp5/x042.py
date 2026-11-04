@@ -19,9 +19,9 @@ X = dict(
  vocab=[
   dict(w='dinner', pt='jantar', e='🍽️', ex=['We have dinner at seven.', 'Dinner is ready!']),
   dict(w='guest', pt='convidado', e='🙋', ex=['You are my guest tonight.', 'Every guest brings a small gift.']),
-  dict(w='invite', pt='convidar', e='💌', ex=['I want to invite you to my home.', 'Thanks for the invite!']),
+ dict(w='dish', pt='prato (comida)', e='🍛', ex=['I bring a dish.', 'This dish is good.']),
   dict(w='bring', pt='levar / trazer', e='🎁', ex=['I can bring dessert.', 'Please bring a friend.']),
-  dict(w='cook', pt='cozinhar', e='🍳', ex=['I cook pasta on Fridays.', 'Can you cook rice?']),
+ dict(w='wine', pt='vinho', e='🍷', ex=['I bring wine.', 'Do you like wine?']),
   dict(w='ready', pt='pronto', e='✅', ex=['Dinner is ready.', 'Are you ready to eat?'])],
  molds=[
   dict(title='Aceitar um convite', frame='I’d love to! Is {day} at {time} OK?', slots=[dict(key='day', opts=['Friday', 'Saturday', 'Sunday']), dict(key='time', opts=['six', 'seven', 'eight'])], model='I’d love to! Is Friday at six OK?', note='“I’d love to!” é um sim caloroso. Depois você confirma o dia e a hora.'),

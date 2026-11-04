@@ -17,12 +17,12 @@ X = dict(
   dict(who='You', en='{No problem|You’re welcome|Anytime}!', pt='{Sem problema|De nada|Quando precisar}!'),
   dict(who='Rosa', en='Drive safe!', pt='Dirija com segurança!')],
  vocab=[
-  dict(w='park', pt='estacionar', e='🅿️', ex=['Can I park here?', 'I park my car near the shop.']),
+  dict(w='space', pt='vaga', e='🅿️', ex=['I need a parking space.', 'This space is free.']),
   dict(w='parking lot', pt='estacionamento', e='🏢', ex=['The parking lot is full.', 'There is a parking lot behind the bank.']),
   dict(w='hour', pt='hora', e='⏰', ex=['It is five dollars an hour.', 'I wait for one hour.']),
   dict(w='machine', pt='máquina', e='🏧', ex=['Pay at the machine.', 'The machine takes cards.']),
   dict(w='sign', pt='placa', e='🪧', ex=['Read the sign first.', 'The sign says no parking.']),
-  dict(w='ticket', pt='bilhete / multa', e='🎟️', ex=['Take a ticket at the gate.', 'A parking ticket is expensive.'])],
+  dict(w='spot', pt='lugar / vaga', e='📍', ex=['This spot is mine.', 'Is this spot free?'])],
  molds=[
   dict(title='Perguntar se pode', frame='Excuse me, can I park {where}?', slots=[dict(key='where', opts=['here', 'there', 'in front of the shop'])], model='Excuse me, can I park here?', note='“Can I…?” pede permissão de forma simples e educada.'),
   dict(title='Dizer onde estacionar', frame='There’s a parking lot on {street}. It’s {price} dollars an hour.', slots=[dict(key='street', opts=['Oak Street', 'Main Street', 'Park Street']), dict(key='price', opts=['five', 'four', 'six'])], model='There’s a parking lot on Oak Street. It’s five dollars an hour.', note='“There’s…” apresenta uma coisa que existe no lugar.'),

@@ -20,9 +20,9 @@ X = dict(
  vocab=[
   dict(w="bowling", pt="boliche", e="🎳", ex=["We play bowling on Friday.", "I love bowling."]),
   dict(w="strike", pt="strike (todos os pinos)", e="💥", ex=["Maya gets a strike!", "A strike is ten pins."]),
-  dict(w="gutter", pt="canaleta", e="〰️", ex=["My ball goes in the gutter.", "The gutter is on the side."]),
+  dict(w="pins", pt="pinos", e="🎳", ex=["Knock down the pins.", "There are ten pins."]),
   dict(w="points", pt="pontos", e="🔢", ex=["A strike gives ten points.", "We count the points."]),
-  dict(w="nachos", pt="nachos", e="🧀", ex=["We share the nachos.", "I want nachos and juice."]),
+  dict(w="throw", pt="jogar", e="🤾", ex=["Throw the ball.", "I throw it hard."]),
   dict(w="alley", pt="pista de boliche, beco", e="🏟️", ex=["The bowling alley is busy.", "We go to the alley on Friday."]),
  ],
  molds=[
