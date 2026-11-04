@@ -82,7 +82,7 @@ SUPP = {'reg': 108,
              'chunkHunt': ['What do you want to watch?', 'Any ideas?', "I'm not in the mood for comedy.", 'I get scared easily.'],
              'think': 'What do you watch when you are tired? What do you not like to watch?',
              'text': ['Omar and Iris live in Austin. It is Friday night, and they are tired after a long week. They sit on the couch with a big blanket and '
-                      'two pillows.',
+                      'two pillows. They want a quiet evening, with no phones and a bowl of popcorn. Only one problem is left: what to watch.',
                       "Omar looks at the TV. “**What do you want to watch?**” “I don't know,” Iris says. “**Any ideas?**” “How about a comedy?” “**I'm not in "
                       'the mood for comedy.**”',
                       "“Then let's watch a thriller,” Omar says. Iris laughs. “**I get scared easily.** I cannot sleep after a thriller!” “Okay. A cooking "
