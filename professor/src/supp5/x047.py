@@ -20,7 +20,7 @@ X = dict(
   dict(w='money', pt='dinheiro', e='💰', ex=['I have no money.', 'Money is in my wallet.']),
   dict(w='insert', pt='inserir', e='⬇️', ex=['Insert your card here.', 'I insert the ticket.']),
   dict(w='reader', pt='leitor', e='📟', ex=['Tap your card on the reader.', 'The reader is green now.']),
-  dict(w='pass', pt='passe', e='🎫', ex=['I want a day pass.', 'This pass is for one day.']),
+  dict(w='swipe', pt='passar o cartão', e='💳', ex=['Swipe your card here.', 'I swipe my card.']),
   dict(w='add', pt='adicionar / recarregar', e='➕', ex=['I want to add ten dollars.', 'How much do you want to add?']),
   dict(w='one-way', pt='só ida', e='➡️', ex=['A one-way ticket, please.', 'Is this a one-way trip?'])],
  molds=[

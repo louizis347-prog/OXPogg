@@ -18,11 +18,11 @@ X = dict(
   dict(who="Jonah", en="Come back soon. Enjoy cooking!", pt="Volte logo. Bom cozinhar!"),
  ],
  vocab=[
-  dict(w='pot', pt='panela', e='🍲', ex=['The pot is hot.', 'I cook rice in a pot.']),
+  dict(w='jar', pt='pote', e='🫙', ex=['The jar is on the shelf.', 'This jar is empty.']),
   dict(w="microwave", pt="micro-ondas", e="📟", ex=["The microwave is on the counter.", "Use the microwave for the soup."]),
   dict(w="oven", pt="forno", e="♨️", ex=["The oven is hot.", "Put the bread in the oven."]),
   dict(w="sink", pt="pia", e="🚰", ex=["The glass is in the sink.", "Wash the pan in the sink."]),
-  dict(w='dish', pt='prato / louça', e='🍽️', ex=['I wash the dish.', 'This dish is clean.']),
+  dict(w='stir', pt='mexer', e='🥄', ex=['Stir the soup.', 'I stir my tea.']),
   dict(w='freezer', pt='congelador', e='🧊', ex=['The ice is in the freezer.', 'The freezer is cold.']),
  ],
  molds=[
