@@ -18,11 +18,11 @@ X = dict(
   dict(who="Ava", en="Great. See you tomorrow at {five!|six!}", pt="Ótimo. Até amanhã às {cinco!|seis!}"),
  ],
  vocab=[
-  dict(w="lease", pt="contrato de aluguel", e="📝", ex=["I sign the lease today.", "The lease is for one year."]),
+  dict(w='house', pt='casa', e='🏠', ex=['This house is small.', 'My house has a garden.']),
   dict(w="bills", pt="contas", e="🧾", ex=["Are bills included?", "The bills are high."]),
   dict(w="electricity", pt="eletricidade (luz)", e="💡", ex=["Electricity is not included.", "I pay for electricity."]),
   dict(w="roommate", pt="colega de quarto", e="🧑‍🤝‍🧑", ex=["My roommate is friendly.", "I want a quiet roommate."]),
-  dict(w="deposit", pt="caução, depósito", e="🏦", ex=["The deposit is one month.", "I pay a deposit."]),
+  dict(w='move', pt='mudar-se', e='📦', ex=['We move on Monday.', 'I move to a new city.']),
   dict(w="available", pt="disponível", e="✅", ex=["Is the room available?", "It is available now."]),
  ],
  molds=[

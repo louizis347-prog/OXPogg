@@ -24,7 +24,7 @@ X = dict(
   dict(w="chips", pt="salgadinhos", e="🥔", ex=["I have chips and cookies.", "These chips are salty."]),
   dict(w="shade", pt="sombra", e="🌳", ex=["There is shade here.", "Let's sit in the shade."]),
   dict(w="fruit", pt="fruta", e="🍓", ex=["I have fruit in my bag.", "The fruit is fresh."]),
-  dict(w="cooler", pt="caixa térmica", e="🧊", ex=["The cooler is cold.", "My juice is in the cooler."]),
+  dict(w="sun", pt="sol", e="☀️", ex=["The sun is hot.", "We sit in the sun."]),
  ],
  molds=[
   dict(title="Dizer o que você trouxe", frame="I have {food} and {drink}.", slots=[dict(key="food", opts=["sandwiches", "fruit", "chips"]), dict(key="drink", opts=["juice", "water", "lemonade"])], model="I have sandwiches and juice.", note="I have + comida and bebida. Para mais de um item, use and."),

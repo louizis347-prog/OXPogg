@@ -16,7 +16,7 @@ X = {'key': {'big': 'Where is the toothpaste?', 'label': 'Achar produtos na drog
  'vocab': [{'w': 'bandage', 'pt': 'curativo grande, atadura', 'e': '🩹', 'ex': ['I need a bandage.', 'The bandage is white.']},
            {'w': 'cough', 'pt': 'tosse', 'e': '🤧', 'ex': ['I have a cough.', 'This medicine is for a cough.']},
            {'w': 'vitamin', 'pt': 'vitamina', 'e': '💊', 'ex': ['I take a vitamin every day.', 'This vitamin is for kids.']},
-           {'w': 'thermometer', 'pt': 'termômetro', 'e': '🌡️', 'ex': ['Do you sell a thermometer?', 'The thermometer is in aisle five.']},
+           {'w': 'fever', 'pt': 'febre', 'e': '🤒', 'ex': ['I have a fever.', 'She has a fever today.']},
            {'w': 'cream', 'pt': 'creme, pomada', 'e': '🧴', 'ex': ['I need a cream for my hands.', 'This cream is ten dollars.']},
            {'w': 'prescription', 'pt': 'receita médica', 'e': '📝', 'ex': ['Do you have a prescription?', 'The prescription is ready.']}],
  'molds': [{'title': 'Perguntar onde fica',

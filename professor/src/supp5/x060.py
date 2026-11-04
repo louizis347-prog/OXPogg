@@ -23,7 +23,7 @@ X = dict(
   dict(w="traffic", pt="trânsito", e="🚗", ex=["The traffic is heavy.", "Watch the traffic."]),
   dict(w="sidewalk", pt="calçada", e="🚶", ex=["Walk on the sidewalk.", "The sidewalk is wide."]),
   dict(w="button", pt="botão", e="🔘", ex=["Push the button.", "The button is on the pole."]),
-  dict(w="pedestrian", pt="pedestre", e="🧍", ex=["A pedestrian is on the street.", "Pedestrians wait for the green light."]),
+  dict(w='cross', pt='atravessar', e='🚶', ex=['I cross the street here.', 'Cross now, it is green.']),
  ],
  molds=[
   dict(title="Perguntar quando atravessar", frame="When can I {action}?", slots=[dict(key="action", opts=["cross", "go", "walk"])], model="When can I cross?", note="When can I...? = Quando posso...? Depois de can vem o verbo base."),

@@ -18,10 +18,10 @@ X = dict(
  vocab=[
   {'w': 'hungry', 'pt': 'com fome', 'e': '😋', 'ex': ['I’m hungry.', 'Are you hungry?']},
   {'w': 'thirsty', 'pt': 'com sede', 'e': '🥵', 'ex': ['I’m very thirsty.', 'Are you thirsty?']},
-  {'w': 'snack', 'pt': 'lanche', 'e': '🍿', 'ex': ['Let’s get a snack.', 'This snack is good.']},
-  {'w': 'drink', 'pt': 'bebida', 'e': '🥤', 'ex': ['I’ll get the drinks.', 'Do you want a drink?']},
+  {'w': 'cracker', 'pt': 'biscoito salgado', 'e': '🍘', 'ex': ['I eat a cracker.', 'Crackers are salty.']},
+  {'w': 'peanut', 'pt': 'amendoim', 'e': '🥜', 'ex': ['I eat a peanut.', 'I like peanut butter.']},
   {'w': 'apple', 'pt': 'maçã', 'e': '🍎', 'ex': ['I’d like an apple.', 'The apple is red.']},
-  {'w': 'sandwich', 'pt': 'sanduíche', 'e': '🥪', 'ex': ['Do you want a sandwich?', 'Here’s your sandwich.']}],
+  {'w': 'sweet', 'pt': 'doce', 'e': '🍬', 'ex': ['I want something sweet.', 'This is very sweet.']}],
  molds=[
   {'title': 'Dizer como você está', 'frame': 'I’m {feeling}. Are you {feeling2}?', 'slots': [{'key': 'feeling', 'opts': ['hungry', 'thirsty', 'tired']}, {'key': 'feeling2', 'opts': ['hungry', 'thirsty', 'tired']}], 'model': 'I’m hungry. Are you hungry?', 'note': 'Fome, sede e sono usam I’m + adjetivo. Nunca “I have hungry”.'},
   {'title': 'Propor e oferecer', 'frame': 'Let’s get {food}. Do you want {item}?', 'slots': [{'key': 'food', 'opts': ['a snack', 'lunch', 'a sandwich']}, {'key': 'item', 'opts': ['a juice', 'water', 'an apple']}], 'model': 'Let’s get a snack. Do you want a juice?', 'note': 'Let’s get… propõe uma ação juntos. Do you want…? oferece um item.'},

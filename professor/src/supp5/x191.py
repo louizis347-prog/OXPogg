@@ -20,7 +20,7 @@ X = dict(
  vocab=[
   dict(w="bookmark", pt="marcador de página", e="🔖", ex=["I put a bookmark in my book.", "The bookmark is blue."]),
   dict(w="puzzle", pt="quebra-cabeça", e="🧩", ex=["She likes puzzles.", "This puzzle has a hundred pieces."]),
-  dict(w="perfume", pt="perfume", e="🌸", ex=["This perfume is nice.", "My mother likes perfume."]),
+  dict(w="buy", pt="comprar", e="🛍️", ex=["I want to buy a gift.", "Where can I buy it?"]),
   dict(w="special", pt="especial", e="⭐", ex=["It is a special day.", "I want something special."]),
   dict(w="budget", pt="orçamento", e="💰", ex=["My budget is twenty dollars.", "What's your budget?"]),
   dict(w="present", pt="presente", e="🎁", ex=["This present is for Tia.", "I have a present for you."]),

@@ -18,12 +18,12 @@ X = dict(
   dict(who="Claire", en="Thanks for the help. Bye!", pt="Valeu pela ajuda. Tchau!"),
  ],
  vocab=[
-  dict(w="hamper", pt="cesto de roupa suja", e="🧺", ex=["The hamper is in my room.", "Put the socks in the hamper."]),
+  dict(w='dirty', pt='sujo', e='🧺', ex=['My socks are dirty.', 'The towel is dirty.']),
   dict(w="basket", pt="cesto", e="🧺", ex=["My basket is full.", "Put the socks in the basket."]),
   dict(w="blanket", pt="cobertor", e="🛏️", ex=["This blanket is warm.", "I wash the blanket today."]),
   dict(w="sock", pt="meia", e="🧦", ex=["I lost a sock.", "This sock is blue."]),
   dict(w="quarter", pt="moeda de 25 centavos", e="🪙", ex=["A quarter is twenty-five cents.", "I have one quarter."]),
-  dict(w="hanger", pt="cabide", e="🪝", ex=["Put the shirt on a hanger.", "I need a hanger."]),
+  dict(w='washer', pt='máquina de lavar', e='🌀', ex=['The washer is full.', 'Put it in the washer.']),
  ],
  molds=[
   dict(title="Colocar na máquina", frame="Put your {things} in the {machine}.", slots=[dict(key="things", opts=["clothes", "towels", "socks", "shirts"]), dict(key="machine", opts=["washer", "dryer", "machine"])], model="Put your clothes in the washer.", note="Put... in = colocar dentro. Washer lava; dryer seca."),

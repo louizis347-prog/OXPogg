@@ -20,7 +20,7 @@ X = dict(
   {'w': 'pepperoni', 'pt': 'pepperoni', 'e': '🍕', 'ex': ['Two slices of pepperoni, please.', 'I like pepperoni.']},
   {'w': 'soda', 'pt': 'refrigerante', 'e': '🥤', 'ex': ['A large soda, please.', 'The soda is cold.']},
   {'w': 'water', 'pt': 'água', 'e': '💧', 'ex': ['Can I have water?', 'A small water, please.']},
-  {'w': 'dollar', 'pt': 'dólar', 'e': '💵', 'ex': ['It is eight dollars.', 'One dollar, please.']},
+  {'w': 'olive', 'pt': 'azeitona', 'e': '🫒', 'ex': ['I want olives on it.', 'This olive is big.']},
   {'w': 'large', 'pt': 'grande', 'e': '📏', 'ex': ['A large soda, please.', 'The large is better.']}],
  molds=[
   {'title': 'Pedir fatias', 'frame': '{number} slices of {kind}, please.', 'slots': [{'key': 'number', 'opts': ['Two', 'Three', 'Four']}, {'key': 'kind', 'opts': ['pepperoni', 'cheese', 'mushroom']}], 'model': 'Two slices of pepperoni, please.', 'note': 'Com mais de uma fatia, use slices no plural. Para uma só: One slice of cheese, please.'},

@@ -22,8 +22,8 @@ X = dict(
   dict(w="shelf", pt="prateleira", e="🗄️", ex=["The rice is on the top shelf.", "Is the bread on this shelf?"]),
   dict(w="left", pt="esquerda", e="⬅️", ex=["Turn left at the end of the aisle.", "The juice is on the left."]),
   dict(w="right", pt="direita", e="➡️", ex=["The cheese is on the right.", "Turn right, please."]),
-  dict(w="milk", pt="leite", e="🥛", ex=["Where is the milk?", "The milk is next to the cheese."]),
-  dict(w="rice", pt="arroz", e="🍚", ex=["Do you have rice?", "The rice is in aisle five."]),
+  dict(w="flour", pt="farinha", e="🌾", ex=["Where is the flour?", "I need flour."]),
+  dict(w="oil", pt="óleo", e="🫒", ex=["Where is the oil?", "I need oil."]),
  ],
  molds=[
   dict(title="Perguntar onde fica", frame="Excuse me, where is the {item}?", slots=[dict(key="item", opts=["milk", "bread", "rice", "juice"])], model="Excuse me, where is the milk?", note="Excuse me chama a atenção com educação. Where is the...? pergunta a localização."),

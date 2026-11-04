@@ -19,7 +19,7 @@ X = dict(
  vocab=[
   dict(w='taxi', pt='táxi', e='🚕', ex=['I take a taxi to the airport.', 'The taxi is outside.']),
   dict(w='airport', pt='aeroporto', e='✈️', ex=['The airport is far from here.', 'Which airport is it?']),
-  dict(w='driver', pt='motorista', e='🧑‍✈️', ex=['The driver is very kind.', 'Thank the driver.']),
+  dict(w='cab', pt='táxi', e='🚕', ex=['I take a cab to work.', 'The cab is here.']),
   dict(w='trip', pt='viagem / corrida', e='🧳', ex=['The trip is thirty minutes.', 'Have a good trip!']),
   dict(w='app', pt='aplicativo', e='📱', ex=['I call a car with the app.', 'The app shows the price.']),
   dict(w='terminal', pt='terminal', e='🛫', ex=['I am at terminal two.', 'Which terminal is your flight?'])],

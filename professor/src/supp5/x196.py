@@ -19,7 +19,7 @@ X = dict(
  ],
  vocab=[
   dict(w="video", pt="vídeo", e="📹", ex=["I make a video call.", "The video is clear."]),
-  dict(w="headset", pt="fone com microfone", e="🎧", ex=["I use a headset.", "My headset is new."]),
+  dict(w="mute", pt="silenciar", e="🔇", ex=["Please mute your mic.", "I am on mute."]),
   dict(w="winter", pt="inverno", e="❄️", ex=["It is cold in winter.", "I like winter."]),
   dict(w="lonely", pt="sozinho, solitário", e="🥺", ex=["I feel lonely.", "A new city can feel lonely."]),
   dict(w="mom", pt="mãe", e="👩", ex=["Hi, Mom!", "My mom calls me."]),

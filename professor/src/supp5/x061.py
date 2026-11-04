@@ -19,10 +19,10 @@ X = dict(
  ],
  vocab=[
   dict(w="famous", pt="famoso", e="⭐", ex=["The Liberty Bell is famous.", "This is a famous street."]),
-  dict(w="brochure", pt="folheto", e="📄", ex=["Do you have a brochure?", "The brochure is free."]),
-  dict(w="landmark", pt="ponto turístico", e="📍", ex=["The bell is a landmark.", "This landmark is old."]),
+  dict(w='tower', pt='torre', e='🗼', ex=['The tower is very tall.', 'We visit the tower today.']),
+  dict(w='shop', pt='loja', e='🛍️', ex=['I like this shop.', 'The shop is on the corner.']),
   dict(w="statue", pt="estátua", e="🗽", ex=["The statue is tall.", "I take a photo of the statue."]),
-  dict(w="souvenir", pt="lembrancinha", e="🎁", ex=["I want a souvenir.", "This souvenir is small."]),
+  dict(w='visit', pt='visitar', e='🏛️', ex=['I visit the museum.', 'We visit my aunt today.']),
   dict(w="guide", pt="guia", e="🧑‍🏫", ex=["The guide is friendly.", "We follow the guide."]),
  ],
  molds=[

@@ -19,7 +19,7 @@ X = dict(
   {'w': 'latte', 'pt': 'latte (café com leite)', 'e': '☕', 'ex': ['A latte, please.', 'This latte is hot.']},
   {'w': 'sugar', 'pt': 'açúcar', 'e': '🍬', 'ex': ['Can I have sugar?', 'No sugar, please.']},
   {'w': 'muffin', 'pt': 'muffin', 'e': '🧁', 'ex': ['A blueberry muffin, please.', 'The muffin is warm.']},
-  {'w': 'hot', 'pt': 'quente', 'e': '🔥', 'ex': ['Hot, please.', 'The coffee is hot.']},
+  {'w': 'lid', 'pt': 'tampa', 'e': '☕', 'ex': ['Can I have a lid?', 'The lid is on.']},
   {'w': 'iced', 'pt': 'gelado', 'e': '🧊', 'ex': ['An iced latte, please.', 'I like iced tea.']},
   {'w': 'size', 'pt': 'tamanho', 'e': '📏', 'ex': ['What size?', 'This size is small.']}],
  molds=[

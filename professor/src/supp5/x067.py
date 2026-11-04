@@ -18,12 +18,12 @@ X = dict(
   dict(who="Jonah", en="Come back soon. Enjoy cooking!", pt="Volte logo. Bom cozinhar!"),
  ],
  vocab=[
-  dict(w="cabinet", pt="armário", e="🚪", ex=["The plates are in the cabinet.", "Open the cabinet, please."]),
+  dict(w='jar', pt='pote', e='🫙', ex=['The jar is on the shelf.', 'This jar is empty.']),
   dict(w="microwave", pt="micro-ondas", e="📟", ex=["The microwave is on the counter.", "Use the microwave for the soup."]),
   dict(w="oven", pt="forno", e="♨️", ex=["The oven is hot.", "Put the bread in the oven."]),
   dict(w="sink", pt="pia", e="🚰", ex=["The glass is in the sink.", "Wash the pan in the sink."]),
-  dict(w="kettle", pt="chaleira", e="🫖", ex=["The kettle is on the stove.", "I need a kettle for tea."]),
-  dict(w="toaster", pt="torradeira", e="🍞", ex=["The toaster is on the counter.", "My toaster is old."]),
+  dict(w='stir', pt='mexer', e='🥄', ex=['Stir the soup.', 'I stir my tea.']),
+  dict(w='freezer', pt='congelador', e='🧊', ex=['The ice is in the freezer.', 'The freezer is cold.']),
  ],
  molds=[
   dict(title="Perguntar onde fica", frame="Where is the {thing}?", slots=[dict(key="thing", opts=["salt", "pan", "kettle", "toaster"])], model="Where is the salt?", note="Where is... para uma coisa. Para várias: Where are the forks?"),

@@ -18,7 +18,7 @@ X = dict(
   dict(who="Cole", en="Done! Thanks for the {help.|tip.}", pt="Pronto! Valeu pela {ajuda.|dica.}"),
  ],
  vocab=[
-  dict(w="router", pt="roteador", e="📡", ex=["The router is in the living room.", "Turn the router off and on."]),
+  dict(w='website', pt='site', e='🌐', ex=['This website is slow.', 'I open the website.']),
   dict(w="password", pt="senha", e="🔐", ex=["What's the password?", "The password is on the card."]),
   dict(w="internet", pt="internet", e="🌐", ex=["The internet is slow today.", "I need the internet for work."]),
   dict(w="network", pt="rede", e="📶", ex=["Choose the home network.", "The network name is Casa_Lia."]),

@@ -21,9 +21,9 @@ X = dict(
   dict(w="recipe", pt="receita", e="📖", ex=["This recipe is easy.", "I have a recipe for cake."]),
   dict(w="butter", pt="manteiga", e="🧈", ex=["I need some butter.", "The butter is on the table."]),
   dict(w="lend", pt="emprestar", e="🤲", ex=["Can you lend me a cup?", "I can lend you my ladder."]),
-  dict(w="apron", pt="avental", e="👩‍🍳", ex=["She wears a blue apron.", "My apron is on the hook."]),
+  dict(w='bake', pt='assar (no forno)', e='🧁', ex=['I bake a cake.', 'We bake on Sunday.']),
   dict(w="doorbell", pt="campainha", e="🔔", ex=["I ring the doorbell.", "The doorbell is loud."]),
-  dict(w="frosting", pt="cobertura", e="🧁", ex=["The cake has pink frosting.", "I love chocolate frosting."]),
+  dict(w='mix', pt='misturar', e='🥣', ex=['Mix the eggs and sugar.', 'I mix it with a spoon.']),
  ],
  molds=[
   dict(title="Pedir emprestado", frame="Can I borrow {thing}?", slots=[dict(key="thing", opts=["some sugar", "some flour", "some butter", "a ladder"])], model="Can I borrow some sugar?", note="Borrow = pegar emprestado. Com coisas que não se contam, use some."),

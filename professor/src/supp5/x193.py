@@ -20,9 +20,9 @@ X = dict(
  vocab=[
   dict(w="ladder", pt="escada de mão", e="🪜", ex=["The ladder is in the garage.", "I climb the ladder."]),
   dict(w="wood", pt="madeira", e="🪵", ex=["The shelf is made of wood.", "I need a piece of wood."]),
-  dict(w="toolbox", pt="caixa de ferramentas", e="🧰", ex=["The toolbox is in the garage.", "I have a red toolbox."]),
+  dict(w="saw", pt="serra", e="🪚", ex=["Use the saw.", "The saw is sharp."]),
   dict(w="nail", pt="prego", e="📌", ex=["I need a nail.", "The nail is small."]),
-  dict(w="screwdriver", pt="chave de fenda", e="🪛", ex=["Can I borrow a screwdriver?", "The screwdriver is red."]),
+  dict(w="drill", pt="furadeira", e="🔧", ex=["I need a drill.", "The drill is loud."]),
   dict(w="paint", pt="tinta, pintar", e="🎨", ex=["I need white paint.", "We paint the wall."]),
  ],
  molds=[

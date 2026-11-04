@@ -21,7 +21,7 @@ X = dict(
   dict(w="crust", pt="massa, borda", e="🥖", ex=["The crust is thick.", "I like a thin crust."]),
   dict(w="sausage", pt="linguiça", e="🌭", ex=["We want sausage on the pizza.", "The sausage is hot."]),
   dict(w="topping", pt="cobertura (ingrediente extra)", e="🧅", ex=["Onions are my favorite topping.", "Choose one topping."]),
-  dict(w="gust", pt="rajada de vento", e="💨", ex=["A gust of wind opens the door.", "The gust is strong."]),
+  dict(w="delicious", pt="delicioso", e="😋", ex=["The pizza is delicious.", "This cheese is delicious."]),
   dict(w="hurry", pt="pressa", e="⏱️", ex=["We are not in a hurry.", "Why are you in a hurry?"]),
   dict(w="host", pt="recepcionista do restaurante", e="🧑‍🍳", ex=["The host shows us a table.", "Ask the host, please."]),
  ],

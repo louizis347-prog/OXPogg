@@ -18,11 +18,11 @@ X = dict(
   dict(who="Evan", en="What time is it now?", pt="Que horas são agora?"),
  ],
  vocab=[
-  dict(w="whiteboard", pt="quadro branco", e="🧑‍🏫", ex=["Write it on the whiteboard.", "The whiteboard is big."]),
+  dict(w="slide", pt="slide", e="🖼️", ex=["This slide is long.", "Show the next slide."]),
   dict(w="agenda", pt="pauta", e="📋", ex=["The agenda has three items.", "Read the agenda, please."]),
   dict(w="marker", pt="marcador", e="🖍️", ex=["I need a marker.", "The marker is red."]),
   dict(w="pen", pt="caneta", e="🖊️", ex=["I need a pen.", "This pen is black."]),
-  dict(w="projector", pt="projetor", e="📽️", ex=["The projector is on.", "Turn off the projector."]),
+  dict(w="topic", pt="assunto / tema", e="💬", ex=["What is the topic today?", "This topic is easy."]),
   dict(w="calendar", pt="calendário", e="🗓️", ex=["Check your calendar.", "The meeting is in my calendar."]),
  ],
  molds=[

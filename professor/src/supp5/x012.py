@@ -23,7 +23,7 @@ vocab=[
  dict(w='July', pt='julho', e='☀️', ex=['Evan\'s birthday is in July.', 'We have a picnic in July.']),
  dict(w='October', pt='outubro', e='🎃', ex=['Halloween is in October.', 'My class starts in October.']),
  dict(w='December', pt='dezembro', e='🎄', ex=['Christmas is in December.', 'The party is in December.']),
- dict(w='birthday', pt='aniversário', e='🎂', ex=['When is your birthday?', 'Happy birthday, Evan!']),
+ dict(w='April', pt='abril', e='🌷', ex=['My birthday is in April.', 'April is a spring month.']),
 ],
 molds=[
  dict(title='Dizer seu aniversário', frame='My birthday is in {month}.', slots=[dict(key='month', opts=['March', 'July', 'October', 'December'])], model='My birthday is in March.', note='Com só o mês, use in: in March. Com o dia, use on: on March tenth.'),

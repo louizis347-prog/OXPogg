@@ -17,7 +17,7 @@ X = dict(
   dict(who='You', en='About {twenty|thirty|fifteen} minutes.', pt='Uns {vinte|trinta|quinze} minutos.'),
   dict(who='Ethan', en='Enjoy your {trip|day}!', pt='Aproveite a {viagem|o dia}!')],
  vocab=[
-  dict(w='driver', pt='motorista', e='🧑‍✈️', ex=['The driver is friendly.', 'Pay the driver at the front.']),
+ dict(w='step', pt='degrau', e='🪜', ex=['Watch your step.', 'The first step is high.']),
   dict(w='fare', pt='passagem (preço)', e='💵', ex=['The fare is two dollars.', 'What is the fare to downtown?']),
   dict(w='downtown', pt='centro', e='🌆', ex=['This bus goes downtown.', 'My office is downtown.']),
   dict(w='wait', pt='esperar', e='⏳', ex=['I wait for the bus here.', 'Please wait five minutes.']),

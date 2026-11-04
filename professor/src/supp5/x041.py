@@ -18,12 +18,12 @@ X = dict(
   dict(who="Aaron", en="Dinner is served!", pt="O jantar está servido!"),
  ],
  vocab=[
-  dict(w="cook", pt="cozinhar", e="👩‍🍳", ex=["I like to cook at home.", "Can you cook pasta?"]),
+  dict(w="pot", pt="panela", e="🍲", ex=["Put it in the pot.", "The pot is hot."]),
   dict(w="salt", pt="sal", e="🧂", ex=["Add a little salt.", "Pass the salt, please."]),
   dict(w="pan", pt="panela, frigideira", e="🍳", ex=["The pan is hot.", "Put the onions in the pan."]),
   dict(w="onion", pt="cebola", e="🧅", ex=["Cut the onion, please.", "One onion is enough."]),
   dict(w="knife", pt="faca", e="🔪", ex=["Be careful with the knife.", "The knife is sharp."]),
-  dict(w="tomato", pt="tomate", e="🍅", ex=["Add the tomato to the sauce.", "This tomato is red and fresh."]),
+  dict(w="potato", pt="batata", e="🥔", ex=["Cut the potato, please.", "I like potato."]),
  ],
  molds=[
   dict(title="Pedir uma tarefa", frame="{verb} the {food}, please.", slots=[dict(key="verb", opts=["Cut", "Wash", "Chop"]), dict(key="food", opts=["onions", "tomatoes", "carrots"])], model="Cut the onions, please.", note="Verbo no imperativo + the + ingrediente + please. Cut, wash e chop funcionam com legumes."),

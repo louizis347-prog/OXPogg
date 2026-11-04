@@ -21,9 +21,9 @@ X = dict(
   dict(w="garbage", pt="lixo", e="🗑️", ex=["Take out the garbage, please.", "The garbage is full."]),
   dict(w="bin", pt="lixeira", e="🪣", ex=["The blue bin is for recycling.", "Close the lid of the bin."]),
   dict(w="recycling", pt="reciclagem", e="♻️", ex=["Recycling is on Friday.", "Where is the recycling bin?"]),
-  dict(w="cardboard", pt="papelão", e="📦", ex=["Flatten the cardboard box.", "Cardboard goes in the blue bin."]),
+  dict(w='can', pt='lata', e='🥫', ex=['Put the can in the bin.', 'This can is empty.']),
   dict(w="truck", pt="caminhão", e="🚛", ex=["The truck comes at seven.", "I hear the trash truck."]),
-  dict(w="compost", pt="compostagem", e="🥬", ex=["Food scraps go in the compost.", "The compost bin is brown."]),
+  dict(w='empty', pt='esvaziar / vazio', e='🗑️', ex=['I empty the bin.', 'The bin is empty.']),
  ],
  molds=[
   dict(title="Perguntar onde vai", frame="Where does the {thing} go?", slots=[dict(key="thing", opts=["trash", "glass", "cardboard", "compost"])], model="Where does the trash go?", note="Com the + coisa no singular, use does...go. Where do the bottles go? usa do no plural."),

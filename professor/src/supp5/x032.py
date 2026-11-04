@@ -18,7 +18,7 @@ X = dict(
   dict(who="Maya", en="Enjoy your meal!", pt="Bom apetite!"),
  ],
  vocab=[
-  dict(w="water", pt="água", e="💧", ex=["I'd like a glass of water.", "Is the water cold?"]),
+  dict(w="refill", pt="repor / completar o copo", e="🔄", ex=["Can I have a refill?", "A refill, please."]),
   dict(w="ice", pt="gelo", e="🧊", ex=["No ice, please.", "There is ice in my drink."]),
   dict(w="glass", pt="copo de vidro", e="🥛", ex=["Can I have a glass of water?", "My glass is empty."]),
   dict(w="napkin", pt="guardanapo", e="🧻", ex=["Can I have a napkin, please?", "The napkin is on the table."]),

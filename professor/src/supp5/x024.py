@@ -19,7 +19,7 @@ X = dict(
   {'w': 'sandwich', 'pt': 'sanduíche', 'e': '🥪', 'ex': ['I’d like a turkey sandwich.', 'The sandwich is big.']},
   {'w': 'salad', 'pt': 'salada', 'e': '🥗', 'ex': ['A salad, please.', 'This salad has tomato.']},
   {'w': 'cheese', 'pt': 'queijo', 'e': '🧀', 'ex': ['Any cheese?', 'I like cheese on my sandwich.']},
-  {'w': 'tomato', 'pt': 'tomate', 'e': '🍅', 'ex': ['Lettuce and tomato, please.', 'The tomato is red.']},
+  {'w': 'pickle', 'pt': 'picles', 'e': '🥒', 'ex': ['I want a pickle.', 'The pickle is sour.']},
   {'w': 'chicken', 'pt': 'frango', 'e': '🍗', 'ex': ['I’ll have the chicken sandwich.', 'The chicken is hot.']},
   {'w': 'bread', 'pt': 'pão', 'e': '🍞', 'ex': ['White or wheat bread?', 'The bread is fresh.']}],
  molds=[

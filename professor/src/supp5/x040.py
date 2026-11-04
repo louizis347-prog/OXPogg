@@ -22,8 +22,8 @@ X = dict(
   dict(w="pickup", pt="retirada", e="🛍️", ex=["Pickup is at the counter.", "Is this for pickup or delivery?"]),
   dict(w="delivery", pt="entrega", e="🛵", ex=["Do you do delivery?", "The delivery is thirty minutes."]),
   dict(w="bottle", pt="garrafa", e="🍾", ex=["A bottle of water, please.", "The bottle is cold."]),
-  dict(w="minute", pt="minuto", e="⏱️", ex=["It'll be ten minutes.", "Wait one minute, please."]),
-  dict(w="pizza", pt="pizza", e="🍕", ex=["I'd like a large pizza.", "The pizza is hot."]),
+  dict(w="noodles", pt="macarrão oriental", e="🍜", ex=["I want noodles.", "The noodles are hot."]),
+  dict(w="sushi", pt="sushi", e="🍣", ex=["I want sushi.", "The sushi is fresh."]),
  ],
  molds=[
   dict(title="Pedir a pizza", frame="I'd like a {size} pizza for takeout.", slots=[dict(key="size", opts=["large", "medium", "small"])], model="I'd like a large pizza for takeout.", note="For takeout = para levar. I'd like é educado, bom para telefone."),

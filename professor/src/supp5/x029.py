@@ -20,7 +20,7 @@ X = dict(
   {'w': 'soup', 'pt': 'sopa', 'e': '🍲', 'ex': ['The soup is hot.', 'I’ll have the vegetable soup.']},
   {'w': 'pasta', 'pt': 'massa', 'e': '🍝', 'ex': ['The pasta is vegetarian.', 'I’ll have the pasta, please.']},
   {'w': 'meat', 'pt': 'carne', 'e': '🥩', 'ex': ['Is there meat in it?', 'I don’t eat meat.']},
-  {'w': 'fish', 'pt': 'peixe', 'e': '🐟', 'ex': ['I don’t eat fish.', 'Is there fish in the soup?']},
+  {'w': 'ham', 'pt': 'presunto', 'e': '🍖', 'ex': ['Is there ham in it?', 'I like ham and cheese.']},
   {'w': 'vegetarian', 'pt': 'vegetariano', 'e': '🌱', 'ex': ['Do you have vegetarian dishes?', 'I am vegetarian.']}],
  molds=[
   {'title': 'Perguntar se tem carne', 'frame': 'Is there {food} in it?', 'slots': [{'key': 'food', 'opts': ['meat', 'fish', 'cheese']}], 'model': 'Is there meat in it?', 'note': 'Is there… in it? pergunta se um ingrediente está no prato.'},
