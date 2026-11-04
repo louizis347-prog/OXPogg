@@ -2,7 +2,7 @@
 O visual (cenas, pessoas, palavras que trocam) é descrito nos próprios quadros (art, swaps, mini, turns)."""
 import re, random, zlib
 
-RS = set('cafe living market airport lobby station subway park pier lake nyc cafe2 airport2 lobby1 lobby2 sub2 cafe3 diner home1 yard park2 school shop office clinic kitchen bedroom bath counter gym hall street beach zoo farm playground busstop bakery supermarket bookshop postoffice bank pharmacy restaurant hotelroom mountain forest snow stage library museum castlehall garden fair pool stadium harbor chefkitchen musicroom traincar soccerfield fishing artroom nightcity meetingroom christmas'.split())
+RS = set('cafe living market airport lobby station subway park pier lake nyc cafe2 airport2 lobby1 lobby2 sub2 cafe3 diner home1 yard park2 school shop office clinic kitchen bedroom bath counter gym hall street beach zoo farm playground busstop bakery supermarket bookshop postoffice bank pharmacy restaurant hotelroom mountain forest snow stage library museum castlehall garden fair pool stadium harbor chefkitchen musicroom traincar soccerfield fishing artroom nightcity meetingroom christmas laundry bikeshop airportsecurity baggageclaim apartmenthall kidsroom diningroom gasstation parking classroom dentist eyedoctor hardware drycleaner carwash atmstreet phonestore mall clothesstore shoestore hairsalon cinema concert ballpark campsite hiketrail drivethru partyroom weddinghall bowling minigolf elevator'.split())
 FAM = {'cafe': ['cafe2', 'cafe3', 'bakery', 'cafe'], 'cafe2': ['cafe', 'cafe3', 'bakery'], 'cafe3': ['cafe', 'cafe2', 'bakery'], 'bakery': ['cafe', 'market', 'cafe2'], 'market': ['supermarket', 'bakery', 'street'], 'supermarket': ['market', 'bakery', 'street'],
        'restaurant': ['diner', 'cafe2', 'kitchen'], 'diner': ['restaurant', 'cafe2', 'kitchen'], 'street': ['nyc', 'park2', 'busstop'], 'park': ['park2', 'street', 'garden'], 'park2': ['park', 'street', 'garden'], 'airport': ['airport2', 'lobby', 'street'],
        'bank': ['street', 'office', 'lobby'], 'office': ['meetingroom', 'lobby', 'street'], 'school': ['library', 'hall', 'playground'], 'home1': ['living', 'kitchen', 'bedroom'], 'living': ['home1', 'kitchen', 'bedroom'],
@@ -69,7 +69,12 @@ def focus(L, P, S, ctx):
     learner = me_sp if me_sp != 'You' else 'Mia'
     npc = next((x for x in speakers if x != me_sp), npc); npcface = face_of(npc)
     sc, sc2 = nb.get('sc') or 'street', en.get('sc') or 'street'
-    pl = [x for x in (X.get('scenes') or {}).get('pool', []) if x in RS and x != 'counter'] or pool(sc if sc in RS else sc2, sc2); rsn = [0]
+    try:
+        from scene_pools import POOLS
+        pl = [x for x in POOLS.get(L.get('n'), []) if x in RS and x != 'counter']
+    except Exception:
+        pl = []
+    pl = pl or [x for x in (X.get('scenes') or {}).get('pool', []) if x in RS and x != 'counter'] or pool(sc if sc in RS else sc2, sc2); rsn = [0]
     def scene():
         s = pl[rsn[0] % len(pl)]; rsn[0] += 1; return s
     xs = X.get('scenes') or {}
