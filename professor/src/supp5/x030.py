@@ -21,7 +21,7 @@ X = dict(
   {'w': 'lime', 'pt': 'limão', 'e': '🍋‍🟩', 'ex': ['Add some lime, please.', 'I like lime.']},
   {'w': 'avocado', 'pt': 'abacate', 'e': '🥑', 'ex': ['Avocado is green.', 'I’d like avocado on top.']},
   {'w': 'salsa', 'pt': 'molho de tomate', 'e': '🍅', 'ex': ['Salsa and cheese, please.', 'The salsa is spicy.']},
-  {'w': 'tortilla', 'pt': 'tortilla', 'e': '🫓', 'ex': ['I want a tortilla.', 'The tortilla is warm.']},
+  {'w': 'tortilla', 'pt': 'tortilla', 'e': '🫓', 'ex': ['I want a tortilla.', 'The tortilla is warm.']}],
  molds=[
   {'title': 'Pedir o bowl', 'frame': 'A {protein} bowl with {base}, please.', 'slots': [{'key': 'protein', 'opts': ['chicken', 'beef', 'veggie']}, {'key': 'base', 'opts': ['brown rice', 'white rice', 'beans']}], 'model': 'A chicken bowl with brown rice, please.', 'note': 'Bowl é a palavra principal; a proteína vem antes dela.'},
   {'title': 'Escolher molhos', 'frame': '{sauce} and {extra}. No {skip}.', 'slots': [{'key': 'sauce', 'opts': ['Salsa', 'Corn', 'Beans']}, {'key': 'extra', 'opts': ['cheese', 'lettuce', 'avocado']}, {'key': 'skip', 'opts': ['guacamole', 'onions', 'sour cream']}], 'model': 'Salsa and cheese. No guacamole.', 'note': 'No + item pede para tirar aquele ingrediente.'},

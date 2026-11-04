@@ -22,7 +22,7 @@ X = dict(
   dict(w="agenda", pt="pauta", e="📋", ex=["The agenda has three items.", "Read the agenda, please."]),
   dict(w="marker", pt="marcador", e="🖍️", ex=["I need a marker.", "The marker is red."]),
   dict(w="pen", pt="caneta", e="🖊️", ex=["I need a pen.", "This pen is black."]),
-  dict(w="board", pt="quadro", e="🧑‍🏫", ex=["Write on the board.", "The board is white."]),
+  dict(w="topic", pt="assunto / tema", e="💬", ex=["What is the topic today?", "This topic is easy."]),
   dict(w="calendar", pt="calendário", e="🗓️", ex=["Check your calendar.", "The meeting is in my calendar."]),
  ],
  molds=[

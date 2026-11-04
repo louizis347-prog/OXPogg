@@ -22,7 +22,7 @@ X = dict(
   dict(w="strike", pt="strike (todos os pinos)", e="💥", ex=["Maya gets a strike!", "A strike is ten pins."]),
   dict(w="pins", pt="pinos", e="🎳", ex=["Knock down the pins.", "There are ten pins."]),
   dict(w="points", pt="pontos", e="🔢", ex=["A strike gives ten points.", "We count the points."]),
-  dict(w="throw", pt="jogar", e="🤾", ex=["Throw the ball.", "I throw it hard."]),
+  dict(w="round", pt="rodada", e="🔁", ex=["This is round two.", "We play one more round."]),
   dict(w="alley", pt="pista de boliche, beco", e="🏟️", ex=["The bowling alley is busy.", "We go to the alley on Friday."]),
  ],
  molds=[
