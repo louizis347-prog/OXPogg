@@ -1,6 +1,6 @@
-"""Suplemento Quest v5 · aula 171: Booking a table + regular I'd like to book a room (Hotel Transylvania)."""
+"""Suplemento Quest v5 · aula 171: Booking a table + regular Happy birthday! (The Birthday Party)."""
 SUPP = {
- 'reg': 169,
+ 'reg': 221,
  'badge': {'icon': '📅', 'name': 'Table Booked', 'desc': 'Book a table: people, day, time and seats'},
  'culture': {
   'hook': 'In the USA, many restaurants take reservations by phone or online. A short call is enough: say how many people, the day and the time, and your name.',
@@ -9,7 +9,7 @@ SUPP = {
    {'s': 'Every restaurant in the USA needs a reservation.', 'ans': False, 'why': 'Many places welcome walk-ins, but busy places on weekends can be full.'},
    {'s': 'Restaurants usually ask for your name when you book.', 'ans': True, 'why': 'They write the name next to the table, and they call it when you arrive.'},
    {'s': 'If you arrive very late, your table is always waiting.', 'ans': False, 'why': 'Many restaurants give the table to other people after some minutes. Call if you are late.'},
-   {'s': '“Hotel Transylvania” is a film about a hotel for monsters.', 'ans': True, 'why': 'It is an animated film from 2012.'}],
+   {'s': '“The Birthday Party” is a play by Harold Pinter.', 'ans': True, 'why': 'It was first staged in 1958.'}],
   'wild': [
    {'kind': 'Sign on a restaurant door', 'lines': ['**Reservations welcome**', 'Walk-ins welcome', 'Patio open 5 p.m. – 10 p.m.'], 'decode': {'q': 'Can you come without a reservation?', 'opts': ['Yes, walk-ins are welcome', 'No, never', 'Only at lunch'], 'ans': 0, 'why': '“Walk-ins welcome” means you can come without a booking.'}},
    {'kind': 'Text message from a restaurant', 'lines': ['Your table for **4** is booked.', 'Saturday, 7:30 p.m.', 'Reply C to cancel.'], 'decode': {'q': 'How many people is the table for?', 'opts': ['Four', 'Seven', 'Thirty'], 'ans': 0, 'why': '“Table for 4” means four people.'}}],
@@ -24,16 +24,16 @@ SUPP = {
   'text': [
    'Alma lives in **Miami**. On Saturday, it is her friend Leo’s birthday. She wants a nice dinner for four people, so she calls Bella’s Kitchen.',
    '“**Hi. I’d like to make a reservation**,” Alma says. “**Sure. For how many people?**” Cole asks. “**Four people.**” “**What day and time?**” “**Saturday at seven thirty.**”',
-   'Cole looks at the book. “**Let me check. Yes, we have a table.**” Alma smiles. “**Great. Can we sit outside?**” “**Yes, on the patio.**” The patio is quiet, and there are candles on the tables. Alma says thank you and writes the time in her phone.',
-   'That night, Alma watches “Hotel Transylvania.” In the film, Count Dracula has a big hotel for monsters. At the front desk, the guests ask, “**Any vacancies?**” Sometimes the answer is “**Fully booked.**” Alma laughs. Her restaurant is not full on Saturday. She is lucky!',
-   'In the film, Dracula’s daughter, Mavis, has a birthday party at the hotel, and many guests come. Leo’s party is smaller. It is four friends, one table and one cake. Alma thinks it is a perfect plan.'],
-  'glossary': [{'w': 'birthday', 'pt': 'aniversário'}, {'w': 'dinner', 'pt': 'jantar'}, {'w': 'reservation', 'pt': 'reserva'}, {'w': 'patio', 'pt': 'pátio, área externa'}, {'w': 'quiet', 'pt': 'tranquilo, silencioso'}, {'w': 'candles', 'pt': 'velas'}, {'w': 'full', 'pt': 'lotado, cheio'}, {'w': 'guests', 'pt': 'hóspedes, convidados'}, {'w': 'lucky', 'pt': 'com sorte'}],
+   'Cole looks at the book. “**Let me check. Yes, we have a table.**” Alma smiles. “**Great. Can we sit outside?**” “**Yes, on the patio.**” The patio is nice, and there are candles on the tables. Alma says thank you and writes the time in her phone.',
+   'That night, Alma thinks about “The Birthday Party,” a play by Harold Pinter from 1958. In the play, a strange birthday party happens in a small house by the sea. Alma laughs. Leo’s birthday is happier! At Bella’s Kitchen, the answer is not “**Booked solid**.” The restaurant has a table, and she is lucky!',
+   'At a real birthday, friends bring a gift and a card. Everyone sings “**Happy birthday to you!**” The cake comes with a candle, and Leo makes a wish. His party is small. It is four friends, one table and one cake. Alma thinks it is a perfect plan.'],
+  'glossary': [{'w': 'birthday', 'pt': 'aniversário'}, {'w': 'dinner', 'pt': 'jantar'}, {'w': 'reservation', 'pt': 'reserva'}, {'w': 'patio', 'pt': 'pátio, área externa'}, {'w': 'candles', 'pt': 'velas'}, {'w': 'gift', 'pt': 'presente'}, {'w': 'cake', 'pt': 'bolo'}, {'w': 'play', 'pt': 'peça de teatro'}, {'w': 'lucky', 'pt': 'com sorte'}],
   'fast': {'q': 'What is this story about?', 'opts': ['A woman books a table for a birthday dinner', 'A man cooks dinner at home', 'A girl buys a movie ticket'], 'ans': 0, 'why': 'Alma books a table at Bella’s Kitchen for Leo’s birthday.'},
   'scan': [{'q': 'How many people is the table for?', 'ans': 'four', 'alt': ['4', 'four people']}, {'q': 'What day is the dinner?', 'ans': 'Saturday', 'alt': ['saturday']}, {'q': 'Where do they sit?', 'ans': 'on the patio', 'alt': ['patio', 'outside']}],
-  'tf': [{'s': 'Alma calls the restaurant.', 'ans': True, 'why': 'She calls Bella’s Kitchen.'}, {'s': 'The dinner is on Friday.', 'ans': False, 'why': 'It is on Saturday at seven thirty.'}, {'s': 'The restaurant has a table.', 'ans': True, 'why': 'Cole says, “Yes, we have a table.”'}, {'s': 'The patio is noisy.', 'ans': False, 'why': 'The text says the patio is quiet.'}],
+  'tf': [{'s': 'Alma calls the restaurant.', 'ans': True, 'why': 'She calls Bella’s Kitchen.'}, {'s': 'The dinner is on Friday.', 'ans': False, 'why': 'It is on Saturday at seven thirty.'}, {'s': 'The restaurant has a table.', 'ans': True, 'why': 'Cole says, “Yes, we have a table.”'}, {'s': 'Leo’s party is big.', 'ans': False, 'why': 'It is four friends, one table and one cake.'}],
   'order': ['Alma calls the restaurant.', 'Cole asks for how many people.', 'Alma says Saturday at seven thirty.', 'Cole says there is a table.', 'Alma asks for the patio.'],
-  'ctx': [{'sent': 'The patio is quiet.', 'w': 'quiet', 'opts': ['no loud noise', 'very hot', 'very big'], 'ans': 0, 'why': 'Quiet = not noisy.'}, {'sent': 'There are candles on the tables.', 'w': 'candles', 'opts': ['small lights with fire', 'plates for food', 'chairs'], 'ans': 0, 'why': 'A candle gives a small light.'}, {'sent': 'The guests ask for a room.', 'w': 'guests', 'opts': ['people who visit a hotel', 'people who work there', 'people who cook'], 'ans': 0, 'why': 'Guests are visitors.'}],
-  'chunkHunt': ['I’d like to make a reservation.', 'For how many people?', 'Can we sit outside?', 'Any vacancies?'],
+  'ctx': [{'sent': 'Friends bring a gift.', 'w': 'gift', 'opts': ['a present', 'a plate', 'a chair'], 'ans': 0, 'why': 'A gift is a present.'}, {'sent': 'There are candles on the tables.', 'w': 'candles', 'opts': ['small lights with fire', 'plates for food', 'chairs'], 'ans': 0, 'why': 'A candle gives a small light.'}, {'sent': 'Alma sees a play.', 'w': 'play', 'opts': ['a show on a stage', 'a kind of food', 'a car'], 'ans': 0, 'why': 'A play is a theater show.'}],
+  'chunkHunt': ['I’d like to make a reservation.', 'For how many people?', 'Can we sit outside?', 'Happy birthday to you!'],
   'think': 'Do you book a table when you go out for a special dinner? Why or why not?'},
  'convo': {'npc': {'name': 'Cole'}, 'story': 'You call Bella’s Kitchen in Miami to book a table. Cole answers the phone.', 'turns': [
   {'npc': 'Good evening, Bella’s Kitchen.', 'pt': 'Boa noite, Bella’s Kitchen.', 'opts': [

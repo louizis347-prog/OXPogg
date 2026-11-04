@@ -21,8 +21,8 @@ X = dict(
   dict(w="patio", pt="pátio, área externa", e="🌿", ex=["We sit on the patio.", "The patio is quiet."]),
   dict(w="menu", pt="cardápio", e="📋", ex=["Can I see the menu?", "The menu is on the table."]),
   dict(w="outside", pt="do lado de fora", e="🌳", ex=["We sit outside.", "It is nice outside."]),
-  dict(w="quiet", pt="tranquilo, silencioso", e="🤫", ex=["This place is quiet.", "I want a quiet table."]),
-  dict(w="candle", pt="vela", e="🕯️", ex=["There is a candle on the table.", "The candle is red."]),
+  dict(w="inside", pt="dentro", e="🏠", ex=["We sit inside.", "It is warm inside."]),
+  dict(w="chair", pt="cadeira", e="🪑", ex=["I need one more chair.", "The chair is blue."]),
   dict(w="full", pt="lotado, cheio", e="🈵", ex=["The restaurant is full.", "Saturday is full."]),
  ],
  molds=[
@@ -51,7 +51,7 @@ X = dict(
   dict(npc="Yes, we have a table.", opts=[
    dict(en="Great. Can we sit outside?", pt="Ótimo. Podemos ficar do lado de fora?", reply="Yes, on the patio."),
    dict(en="Thanks. Can we sit inside?", pt="Obrigado. Podemos ficar lá dentro?", reply="Yes, inside is fine."),
-   dict(en="Perfect. Is it a quiet table?", pt="Perfeito. É uma mesa tranquila?", reply="Yes, it is quiet.")]),
+   dict(en="Perfect. Is it a table by the window?", pt="Perfeito. É uma mesa perto da janela?", reply="Yes, it is by the window.")]),
  ], change=["O restaurante está lotado no horário: peça outro horário.", "Você precisa de uma mesa para mais duas pessoas: avise o número novo.", "Você vai chegar atrasado: ligue e avise."]),
  writing=dict(task="Escreva 2 ou 3 frases para reservar uma mesa: diga quantas pessoas, o dia, o horário e o lugar que você quer.", model="Hi! I'd like a table for four on Saturday at seven thirty. Can we sit outside?", kw=["table", "four", "saturday", "outside"], checks=["Disse quantas pessoas.", "Disse o dia e o horário.", "Pediu o lugar."]),
  scenes=dict(pool=["diner", "restaurant", "counter", "street"], npc=dict(g="m", role="host"), you=dict(g="f")),

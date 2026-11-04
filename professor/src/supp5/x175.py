@@ -20,8 +20,8 @@ X = dict(
  vocab=[
   dict(w="scan", pt="escanear", e="📟", ex=["Scan the milk here.", "I scan each item."]),
   dict(w="item", pt="item, produto", e="📦", ex=["This item is two dollars.", "Scan every item."]),
-  dict(w="cart", pt="carrinho de compras", e="🛒", ex=["My cart is full.", "Push the cart."]),
-  dict(w="heavy", pt="pesado", e="🏋️", ex=["The bag is heavy.", "This cart is heavy."]),
+  dict(w="list", pt="lista", e="📝", ex=["My list has milk.", "Read the list."]),
+  dict(w="frozen", pt="congelado", e="🧊", ex=["I buy frozen pizza.", "The peas are frozen."]),
   dict(w="lemon", pt="limão", e="🍋", ex=["I buy three lemons.", "The lemon is yellow."]),
   dict(w="touch", pt="tocar", e="👆", ex=["Touch the screen.", "Touch here to pay."]),
  ],

@@ -1,5 +1,5 @@
 """Suplemento Quest v5 · aula 164."""
-SUPP = {'reg': 130,
+SUPP = {'reg': 85,
  'badge': {'icon': '🛗', 'name': 'Elevator Chat', 'desc': 'Say your floor, talk about the weather and meet a neighbor'},
  'sticker': {'cat': 'Everyday culture', 'title': 'Elevator Small Talk', 'sub': 'Short, friendly and easy'},
  'culture': {'hook': 'In the USA, people often say a few friendly words in an elevator. The talk is short, about simple things like the weather, and then everyone goes on with their day.',

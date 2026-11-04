@@ -23,7 +23,7 @@ X = dict(
   dict(w="straw", pt="canudo", e="🥤", ex=["Can I have a straw?", "The straw is red."]),
   dict(w="nuggets", pt="nuggets (pedacinhos de frango)", e="🍗", ex=["I want six nuggets.", "The nuggets are hot."]),
   dict(w="extra", pt="extra, a mais", e="➕", ex=["I want extra ketchup.", "Extra cheese, please."]),
-  dict(w="small", pt="pequeno", e="🤏", ex=["A small drink, please.", "My bag is small."]),
+  dict(w="dessert", pt="sobremesa", e="🍰", ex=["I want a dessert.", "The dessert is sweet."]),
  ],
  molds=[
   dict(title="Pedir o combo", frame="A {food} meal, please.", slots=[dict(key="food", opts=["cheeseburger", "chicken", "fish"])], model="A cheeseburger meal, please.", note="A + prato + meal, please é o jeito mais simples e educado de pedir."),

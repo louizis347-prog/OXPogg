@@ -21,9 +21,9 @@ X = dict(
   dict(w="theater", pt="cinema, sala", e="🎭", ex=["The theater is big.", "We go to the theater."]),
   dict(w="showtime", pt="horário da sessão", e="🕖", ex=["The showtime is seven.", "What is the showtime?"]),
   dict(w="middle", pt="meio", e="🎯", ex=["I sit in the middle.", "The seat is in the middle."]),
-  dict(w="front", pt="frente", e="⬆️", ex=["The front seats are close.", "I sit in the front."]),
-  dict(w="back", pt="fundo, atrás", e="⬇️", ex=["The back seats are far.", "I sit in the back."]),
-  dict(w="dark", pt="escuro", e="🌑", ex=["The theater is dark.", "It is dark at seven."]),
+  dict(w="close", pt="perto", e="📍", ex=["Do not sit too close.", "The screen is close."]),
+  dict(w="behind", pt="atrás de", e="🔙", ex=["I sit behind you.", "The seat behind is free."]),
+  dict(w="lights", pt="luzes", e="💡", ex=["The lights are off.", "Turn off the lights."]),
  ],
  molds=[
   dict(title="Pedir ingressos", frame="{number} tickets for the {time} o'clock movie, please.", slots=[dict(key="number", opts=["Two", "Three", "Four"]), dict(key="time", opts=["seven", "eight", "nine"])], model="Two tickets for the seven o'clock movie, please.", note="Número + tickets (plural). O'clock com hora cheia."),

@@ -22,7 +22,7 @@ Z = dict(
   dict(en='Walk-ins welcome', pt='Aceitamos sem reserva', ex='The sign says walk-ins welcome.', exp='Aviso de que você pode chegar sem reservar.', c='c'),
   dict(en='Let me check.', pt='Deixe-me ver.', ex='Let me check. Yes, we have a table.', exp='Para pedir um instante enquanto olha a agenda.', c='d'),
   dict(en='Hold the line.', pt='Aguarde na linha.', ex='Hold the line, please.', exp='Pedido ao telefone para esperar um momento.', c='a'),
-  dict(en='Any vacancies?', pt='Tem vaga?', ex='Any vacancies for tonight?', exp='Pergunta usada em hotéis para saber se há quartos livres.', c='b')],
+  dict(en='Happy birthday!', pt='Feliz aniversário!', ex='Happy birthday, Leo!', exp='Para desejar um bom aniversário a alguém.', c='b')],
  expr_game=[
   dict(cue='Você quer dizer quantas pessoas vão jantar.', opts=['Table for four, please.', 'Hold the line.', 'Let me check.'], ans=0, why='Table for + número diz o tamanho do grupo.'),
   dict(cue='Você atende ao telefone e precisa olhar a agenda.', opts=['Walk-ins welcome.', 'Let me check.', 'Booked solid.'], ans=1, why='Let me check pede um instante para conferir.'),

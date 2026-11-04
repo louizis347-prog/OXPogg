@@ -25,12 +25,13 @@ SUPP = {'reg': 151,
                       {'q': '“My fault” means…', 'opts': ['I made the mistake', 'You made the mistake', 'It is not a problem'], 'ans': 0, 'why': 'My fault = I am the one who made the mistake.'}]},
  'reading': {'genre': 'Story',
              'title': 'Oops, sorry!',
-             'text': ['It is Saturday, and Nina is at the market. It is crowded, and the aisles are small. She has a small **cart** with bread and milk. Now she wants to buy some fruit.',
+             'text': ['It is Saturday, and Nina is at the market. It is crowded, and the aisles are small. She has a small **cart** with bread and milk. Now she wants to buy some fruit. Many people '
+                      'walk fast, and it is a little loud.',
                       'Suddenly, a woman **bumps** her cart. A bag falls, and oranges spill on the floor. “**Oops! Sorry, I didn’t see you**,” says the woman. “**That’s okay. No problem**,” says '
                       'Nina.',
                       '“**Are you hurt?**” asks the woman. Her name is Claire. “**No, I’m fine. Are you?**” says Nina. “I’m fine, too. **My fault**,” says Claire.',
                       'The oranges roll under a shelf. “**Let me pick up your things**,” says Nina. She puts the oranges back in the bag. “**Thank you so much**,” says Claire. Nina smiles. It is a '
-                      'small thing.',
+                      'small thing. Claire gives her one orange as a thank you.',
                       'Now Claire’s cart is in the middle of the aisle. Nina wants to go to the fruit. “**Excuse me, can I get through?**” she asks. “**Sure, go ahead**,” says Claire. Nina says '
                       'thanks and goes. Everyone is friendly today.'],
              'glossary': [{'w': 'market', 'pt': 'mercado, feira'},

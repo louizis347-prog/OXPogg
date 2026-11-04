@@ -21,7 +21,7 @@ X = dict(
   dict(w="mistake", pt="erro", e="❌", ex=["There is a mistake.", "It is my mistake."]),
   dict(w="wrong", pt="errado", e="🙅", ex=["This is the wrong plate.", "My order is wrong."]),
   dict(w="warm", pt="morno, quente", e="♨️", ex=["The soup is warm.", "I want warm bread."]),
-  dict(w="missing", pt="faltando", e="❓", ex=["My fork is missing.", "The sauce is missing."]),
+  dict(w="tasty", pt="gostoso", e="😋", ex=["The soup is tasty.", "This is a tasty dish."]),
   dict(w="sauce", pt="molho", e="🥫", ex=["I want more sauce.", "The sauce is red."]),
   dict(w="sorry", pt="sinto muito, desculpe", e="🙏", ex=["I'm sorry.", "Sorry, one more thing."]),
  ],

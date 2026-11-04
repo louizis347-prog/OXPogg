@@ -2,7 +2,7 @@
 Z = {'verbs': [{'v': 'bump',
             'ic': '💥',
             'pt': 'bater / esbarrar',
-            'note': 'Bump into = esbarrar em. Dobra o p no -ing? Não: bumping.',
+            'note': 'Bump into = esbarrar em. Regular: bumped, bumping.',
             'forms': [{'k': 'eu · você · nós · eles', 'en': 'bump', 'ex': 'I bump into a cart.', 'pt': 'Eu esbarro num carrinho.'},
                       {'k': 'ele · ela', 'en': 'bumps', 'ex': 'Claire bumps the cart.', 'pt': 'A Claire bate no carrinho.'},
                       {'k': 'passado', 'en': 'bumped', 'ex': 'She bumped into me.', 'pt': 'Ela esbarrou em mim.'},
