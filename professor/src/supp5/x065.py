@@ -19,8 +19,8 @@ X = dict(
  ],
  vocab=[
   dict(w="landlord", pt="proprietário", e="🧑‍💼", ex=["The landlord is friendly.", "Call the landlord."]),
-  dict(w="tenant", pt="inquilino", e="🧑", ex=["I am a new tenant.", "The tenant pays the rent."]),
-  dict(w="basement", pt="porão", e="⬇️", ex=["The laundry is in the basement.", "The basement is cool."]),
+  dict(w='yard', pt='quintal', e='🌳', ex=['The yard is big.', 'The kids play in the yard.']),
+  dict(w='roof', pt='telhado', e='🏠', ex=['The roof is red.', 'A cat is on the roof.']),
   dict(w="trash", pt="lixo", e="🗑️", ex=["Trash day is Tuesday.", "Put the trash outside."]),
   dict(w="laundry", pt="roupa suja, lavanderia", e="🧺", ex=["The laundry room is open.", "I do laundry on Sunday."]),
   dict(w="repair", pt="conserto", e="🔧", ex=["The repair is free.", "I need a repair."]),

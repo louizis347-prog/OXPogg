@@ -19,11 +19,11 @@ X = dict(
  ],
  vocab=[
   dict(w="chore", pt="tarefa doméstica", e="📋", ex=["My chore is the dishes.", "Chores are boring."]),
-  dict(w="mop", pt="esfregão", e="🪣", ex=["The mop is in the closet.", "I need a mop for the floor."]),
+  dict(w='dust', pt='poeira', e='🌫️', ex=['There is dust on the shelf.', 'I clean the dust.']),
   dict(w="bucket", pt="balde", e="🪣", ex=["Fill the bucket with water.", "The bucket is blue."]),
-  dict(w="sponge", pt="esponja", e="🧽", ex=["I use a sponge for the dishes.", "The sponge is wet."]),
+  dict(w='wipe', pt='limpar com pano', e='🧽', ex=['Wipe the table, please.', 'I wipe the sink.']),
   dict(w="rug", pt="tapete", e="🧶", ex=["The rug is in the living room.", "Vacuum the rug, please."]),
-  dict(w="dustpan", pt="pá de lixo", e="🧹", ex=["I need a dustpan and a broom.", "The dustpan is under the sink."]),
+  dict(w='broom', pt='vassoura', e='🧹', ex=['I sweep with a broom.', 'The broom is in the closet.']),
  ],
  molds=[
   dict(title="Perguntar de quem é a vez", frame="Whose turn is it to {chore}?", slots=[dict(key="chore", opts=["wash the dishes", "take out the trash", "clean the kitchen", "vacuum the rug"])], model="Whose turn is it to wash the dishes?", note="Whose turn = de quem é a vez. Depois de to, use o verbo simples."),
