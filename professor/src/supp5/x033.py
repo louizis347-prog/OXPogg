@@ -18,7 +18,7 @@ X = dict(
   dict(who="Ava", en="Have a {sweet|nice|great} day!", pt="Tenha um dia {doce|bom|ótimo}!"),
  ],
  vocab=[
-  dict(w="bread", pt="pão", e="🥖", ex=["The bread is fresh today.", "I'd like some bread, please."]),
+  dict(w="bakery", pt="padaria", e="🥖", ex=["The bakery is open.", "I buy bread at the bakery."]),
   dict(w="croissant", pt="croissant", e="🥐", ex=["One croissant, please.", "The croissant is warm."]),
   dict(w="cookie", pt="biscoito", e="🍪", ex=["I'll take two cookies.", "This cookie has chocolate."]),
   dict(w="cake", pt="bolo", e="🎂", ex=["How much is the cake?", "The chocolate cake looks good."]),

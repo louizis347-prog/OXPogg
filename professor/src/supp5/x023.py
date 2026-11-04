@@ -16,11 +16,11 @@ X = dict(
   {'who': 'You', 'en': '{Scrambled|Fried|Boiled}, please.', 'pt': '{Mexidos|Fritos|Cozidos}, por favor.'},
   {'who': 'Leo', 'en': 'Enjoy your {breakfast|meal|lunch}!', 'pt': 'Aproveite seu {café da manhã|refeição|almoço}!'}],
  vocab=[
-  {'w': 'breakfast', 'pt': 'café da manhã', 'e': '🍳', 'ex': ['I have breakfast at seven.', 'Enjoy your breakfast!']},
+  {'w': 'cereal', 'pt': 'cereal', 'e': '🥣', 'ex': ['I eat cereal with milk.', 'This cereal is good.']},
   {'w': 'pancakes', 'pt': 'panquecas', 'e': '🥞', 'ex': ['I’d like pancakes, please.', 'The pancakes are hot.']},
   {'w': 'bacon', 'pt': 'bacon', 'e': '🥓', 'ex': ['Eggs and bacon, please.', 'I like bacon.']},
   {'w': 'juice', 'pt': 'suco', 'e': '🧃', 'ex': ['A glass of orange juice, please.', 'The juice is cold.']},
-  {'w': 'toast', 'pt': 'torrada', 'e': '🍞', 'ex': ['Toast with butter, please.', 'I want toast and eggs.']},
+  {'w': 'bagel', 'pt': 'bagel', 'e': '🥯', 'ex': ['I want a bagel.', 'The bagel is warm.']},
   {'w': 'scrambled', 'pt': 'mexido', 'e': '🥚', 'ex': ['Scrambled eggs, please.', 'I like my eggs scrambled.']}],
  molds=[
   {'title': 'Pedir o prato', 'frame': 'I’d like {food} and eggs.', 'slots': [{'key': 'food', 'opts': ['pancakes', 'toast', 'bacon']}], 'model': 'I’d like pancakes and eggs.', 'note': 'I’d like… é um pedido educado, mais suave que I want.'},

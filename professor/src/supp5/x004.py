@@ -28,7 +28,7 @@ X = dict(
         {"w": "number", "pt": "número", "e": "🔢", "ex": ["My phone number is on the form.", "What is your number?"]},
         {"w": "phone", "pt": "telefone", "e": "📱", "ex": ["Is that your phone?", "My phone is on the desk."]},
         {"w": "write", "pt": "escrever", "e": "✍️", "ex": ["Please write your name here.", "I write the number on a card."]},
-        {"w": "word", "pt": "palavra", "e": "💬", "ex": ["Spell the word, please.", "I don't know this word."]},
+        {"w": "first name", "pt": "primeiro nome", "e": "🏷️", "ex": ["My first name is Daniel.", "Spell your first name, please."]},
     ],
     molds=[
         {"title": "Pedir uma informação", "frame": "Can I have your {thing}, please?",

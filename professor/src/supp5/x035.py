@@ -18,11 +18,11 @@ X = dict(
   dict(who="Victor", en="Enjoy your fruit!", pt="Aproveite as frutas!"),
  ],
  vocab=[
-  dict(w="apple", pt="maçã", e="🍎", ex=["These apples are sweet.", "I'll take one apple."]),
+  dict(w="pear", pt="pera", e="🍐", ex=["I want a pear.", "The pear is sweet."]),
   dict(w="grapes", pt="uvas", e="🍇", ex=["The grapes are fresh.", "I'd like a pound of grapes."]),
   dict(w="orange", pt="laranja", e="🍊", ex=["An orange is a good snack.", "Do you have oranges today?"]),
   dict(w="strawberry", pt="morango", e="🍓", ex=["This strawberry is red and sweet.", "I like strawberry jam."]),
-  dict(w="pound", pt="libra (peso)", e="⚖️", ex=["Two dollars a pound.", "I'll take three pounds."]),
+  dict(w="peach", pt="pêssego", e="🍑", ex=["The peach is fresh.", "I like a peach."]),
   dict(w="box", pt="caixa", e="📦", ex=["One box of strawberries, please.", "The box is on the table."]),
  ],
  molds=[
