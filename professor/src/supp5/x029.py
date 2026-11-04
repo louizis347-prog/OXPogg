@@ -65,7 +65,7 @@ X = dict(
   {'npc': 'I don’t eat meat or fish.', 'pt': 'Não como carne nem peixe.', 'opts': [
    {'en': 'No problem. We have a veggie burger too.', 'pt': 'Sem problema. Também temos hambúrguer de legumes.', 'ok': True, 'fb': 'Oferece outra opção sem carne.'},
    {'en': 'Eat fish, it’s good.', 'pt': 'Coma peixe, é bom.', 'ok': False, 'fb': 'Ele acabou de dizer que não come peixe.'},
-   {'en': 'I don’t eat meat or fish.', 'pt': 'Não como carne nem peixe.', 'ok': False, 'fb': 'Você repete a frase dele em vez de ajudar.'}]},
+   {'en': 'Our burgers are very good.', 'pt': 'Nossos hambúrgueres são muito bons.', 'ok': False, 'fb': 'Ele não come carne; isso não ajuda.'}]},
   {'npc': 'I’ll have the pasta, please.', 'pt': 'Vou querer a massa, por favor.', 'opts': [
    {'en': 'Do you have vegetarian dishes?', 'pt': 'Vocês têm pratos vegetarianos?', 'ok': False, 'fb': 'Essa pergunta é dele, e já foi respondida.'},
    {'en': 'You’re welcome.', 'pt': 'De nada.', 'ok': False, 'fb': 'Ele ainda não agradeceu.'},

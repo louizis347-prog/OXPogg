@@ -74,8 +74,8 @@ SUPP = {
      {'en': 'At six on the evening.', 'pt': 'Às seis na noite.', 'ok': False, 'fb': 'Use in the evening.'},
      {'en': 'At six in the evening.', 'pt': 'Às seis da tarde.', 'ok': True, 'fb': 'At + time, in + part of the day.'}]},
    {'npc': 'See you on Friday!', 'pt': 'Até sexta!', 'opts': [
-     {'en': 'See you on Friday!', 'pt': 'Até sexta!', 'ok': True, 'fb': 'Repeat the plan.'},
-     {'en': 'See you the Friday.', 'pt': 'Te vejo a sexta.', 'ok': False, 'fb': 'Use on Friday.'},
+     {'en': 'Great, see you then!', 'pt': 'Ótimo, até lá!', 'ok': True, 'fb': 'A natural goodbye for the plan.'},
+     {'en': 'Welcome back!', 'pt': 'Bem-vindo de volta!', 'ok': False, 'fb': 'It is a goodbye, not a welcome.'},
      {'en': 'Good morning!', 'pt': 'Bom dia!', 'ok': False, 'fb': 'It is a goodbye.'}]},
   ]},
  'errors': [

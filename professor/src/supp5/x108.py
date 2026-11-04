@@ -62,7 +62,7 @@ X = dict(
    dict(en="About thirty minutes.", pt="Uns trinta minutos.", ok=False, fb="Ninguém perguntou a duração.")]),
   dict(npc="It's at ten o'clock.", pt="É às dez horas.", opts=[
    dict(en="Where is it?", pt="Onde é?", ok=True, fb="Próximo passo: o lugar."),
-   dict(en="It's at ten o'clock.", pt="É às dez horas.", ok=False, fb="É a fala do Evan."),
+   dict(en="Fine, thank you.", pt="Bem, obrigado.", ok=False, fb="Ele disse o horário; pergunte o local."),
    dict(en="Just a pen.", pt="Só uma caneta.", ok=False, fb="Ainda não perguntou o que levar.")]),
   dict(npc="In room two, on the second floor.", pt="Na sala dois, no segundo andar.", opts=[
    dict(en="Where is it?", pt="Onde é?", ok=False, fb="Ele já disse onde."),

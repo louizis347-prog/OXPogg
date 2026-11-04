@@ -74,7 +74,7 @@ X = dict(
    dict(en="They're in aisle four.", pt="Estão no corredor quatro.", ok=False, fb="Essa informação é dela.")]),
   dict(npc="What about a backpack? We have red, blue and black.", pt="E uma mochila? Temos vermelha, azul e preta.", opts=[
    dict(en="Pencils, notebooks and a ruler.", pt="Lápis, cadernos e uma régua.", ok=False, fb="Você já listou isso."),
-   dict(en="What about a backpack?", pt="E uma mochila?", ok=False, fb="Ela acabou de perguntar."),
+   dict(en="What time do you close?", pt="A que horas vocês fecham?", ok=False, fb="Ela oferece uma mochila; escolha a cor."),
    dict(en="The blue one, please.", pt="A azul, por favor.", ok=True, fb="Escolhe a cor.")]),
  ]),
 )

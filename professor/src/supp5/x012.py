@@ -71,7 +71,7 @@ convo=dict(npc=dict(name='Evan'), story='Você conversa com o vizinho Evan sobre
   dict(en='Thank you, you are kind.', pt='Obrigado, você é gentil.', ok=False, fb='Ele não fez um elogio; agradecer não encaixa.')]),
  dict(npc='Great idea! I\'ll bring a cake.', pt='Ótima ideia! Eu levo um bolo.', opts=[
   dict(en='Perfect. See you in March.', pt='Perfeito. Até março.', ok=True, fb='Você aceita e se despede.'),
-  dict(en='Great idea! I\'ll bring a cake.', pt='Ótima ideia! Eu levo um bolo.', ok=False, fb='Evan já vai levar o bolo; repetir a fala dele não ajuda.'),
+  dict(en='Happy birthday to you!', pt='Feliz aniversário!', ok=False, fb='O aniversário é em março; hoje não é o dia.'),
   dict(en='Sorry, I can\'t come.', pt='Desculpe, não posso ir.', ok=False, fb='Você mesmo propôs a festa; isso contradiz a conversa.')]),
  dict(npc='Don\'t forget the cake!', pt='Não esqueça o bolo!', opts=[
   dict(en='Happy birthday!', pt='Feliz aniversário!', ok=False, fb='Ainda não é o dia do aniversário.'),

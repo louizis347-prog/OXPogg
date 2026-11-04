@@ -80,10 +80,10 @@ X = {'key': {'big': 'Excuse me / Sorry', 'label': 'Esbarrão no mercado', 'sub':
                      {'npc': 'Thank you so much.',
                       'pt': 'Muito obrigada.',
                       'opts': [{'en': 'You’re welcome. Excuse me, can I get through?', 'pt': 'De nada. Com licença, posso passar?', 'ok': True, 'fb': 'Responda ao obrigado e peça licença.'},
-                               {'en': 'Thank you so much.', 'pt': 'Muito obrigado.', 'ok': False, 'fb': 'Quem agradece é ela.'},
+                               {'en': 'Sorry, I’m in a hurry.', 'pt': 'Desculpe, estou com pressa.', 'ok': False, 'fb': 'Ela agradeceu; responda ao agradecimento.'},
                                {'en': 'I am hurt.', 'pt': 'Estou machucado.', 'ok': False, 'fb': 'Você disse que estava bem.'}]},
                      {'npc': 'Sure, go ahead.',
                       'pt': 'Claro, pode ir.',
                       'opts': [{'en': 'Thanks! Have a nice day.', 'pt': 'Obrigado! Tenha um bom dia.', 'ok': True, 'fb': 'Agradeça e se despeça.'},
-                               {'en': 'Sure, go ahead.', 'pt': 'Claro, pode ir.', 'ok': False, 'fb': 'Quem disse foi ela.'},
+                               {'en': 'Wait, I’m not ready.', 'pt': 'Espere, não estou pronto.', 'ok': False, 'fb': 'Você pediu para passar; ela já deixou.'},
                                {'en': 'Are you hurt?', 'pt': 'Você se machucou?', 'ok': False, 'fb': 'Já perguntado antes.'}]}]}}
