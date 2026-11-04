@@ -1,5 +1,5 @@
 """Suplemento Quest v5 aula 177"""
-SUPP = {'reg': 232,
+SUPP = {'reg': 17,
  'badge': {'icon': '🤝', 'name': 'New Friend', 'desc': 'Meet someone, make small talk and swap contacts'},
  'culture': {'hook': 'In the USA, people often start a short, friendly chat with someone they just met. Learn to answer simple questions and to share your contact in a way that feels '
                      'comfortable.',

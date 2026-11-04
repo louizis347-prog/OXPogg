@@ -1,5 +1,5 @@
 """Suplemento Quest v5 aula 179"""
-SUPP = {'reg': 205,
+SUPP = {'reg': 20,
  'badge': {'icon': '🔑', 'name': 'Key Helper', 'desc': 'Help a neighbor who is locked out of home'},
  'culture': {'hook': 'Getting locked out happens to many people in the USA, and neighbors often help. Learn simple sentences to say what happened and to offer help, like lending a phone.',
              'mythfact': [{'s': '“Locked out” means you cannot enter because you have no key.', 'ans': True, 'why': 'The door is locked and the key is on the other side.'},
