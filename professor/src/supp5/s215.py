@@ -80,9 +80,11 @@ SUPP = {'reg': 119,
                       'thighs?**” “**Breasts. Two pounds.**”',
                       'Evan weighed the chicken and wrapped it in white paper. The counter was clean and cold. “**Anything else?**” “**Do you have ground beef?**” '
                       '“**Yes, fresh today.**”',
-                      '“**One pound, please.**” “**Lean or regular?**” Evan asked. “Lean, please.” He put the beef in a bag, and Ana paid at the register.',
+                      '“**One pound, please.**” “**Lean or regular?**” Evan asked. “Lean, please.” Evan smiled and cut a fresh piece for her. He put the beef in a bag, '
+                      'and Ana paid at the register.',
                       'At home, Ana put the meat in the fridge and made a list of the vegetables. She remembered “Little Red Riding Hood,” a fairy tale that Charles '
-                      'Perrault published in 1697. In it, a girl takes a basket of food to her grandmother. “Today my basket is full too,” Ana said.']},
+                      'Perrault published in 1697. In it, a girl takes a basket of food to her grandmother. “Today my basket is full too,” Ana said. Then she began to '
+                      'cook dinner.']},
  'errors': [{'wrong': 'I want chicken, give me.',
              'fix': "I'd like some chicken, please.",
              'alt': 'I want some chicken please.',

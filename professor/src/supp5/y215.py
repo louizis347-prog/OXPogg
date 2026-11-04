@@ -45,10 +45,12 @@ Y = {'soundlab': {'focus': 'o som longo de ee em beef',
                [{'en': '“**One pound, please.**”', 'pt': '“**Meio quilo, por favor.**”'},
                 {'en': '“**Lean or regular?**” Evan asked.', 'pt': '“**Magra ou comum?**”, perguntou o Evan.'},
                 {'en': '“Lean, please.”', 'pt': '“Magra, por favor.”'},
+                {'en': 'Evan smiled and cut a fresh piece for her.', 'pt': 'O Evan sorriu e cortou um pedaço fresco para ela.'},
                 {'en': 'He put the beef in a bag, and Ana paid at the register.', 'pt': 'Ele colocou a carne em uma sacola, e a Ana pagou no caixa.'}],
                [{'en': 'At home, Ana put the meat in the fridge and made a list of the vegetables.',
                  'pt': 'Em casa, a Ana colocou a carne na geladeira e fez uma lista dos legumes.'},
                 {'en': 'She remembered “Little Red Riding Hood,” a fairy tale that Charles Perrault published in 1697.',
                  'pt': 'Ela lembrou de “Chapeuzinho Vermelho”, um conto de fadas que Charles Perrault publicou em 1697.'},
                 {'en': 'In it, a girl takes a basket of food to her grandmother.', 'pt': 'Nele, uma menina leva uma cesta de comida para a avó.'},
-                {'en': '“Today my basket is full too,” Ana said.', 'pt': '“Hoje minha cesta também está cheia”, disse a Ana.'}]]}
+                {'en': '“Today my basket is full too,” Ana said. Then she began to cook dinner.',
+                 'pt': '“Hoje minha cesta também está cheia”, disse a Ana. Então ela começou a fazer o jantar.'}]]}
