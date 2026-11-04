@@ -19,11 +19,11 @@ X = dict(
  ],
  vocab=[
   dict(w="video", pt="vídeo", e="📹", ex=["I make a video call.", "The video is clear."]),
-  dict(w="volume", pt="volume", e="🔊", ex=["Turn up the volume.", "The volume is low."]),
+  dict(w="headset", pt="fone com microfone", e="🎧", ex=["I use a headset.", "My headset is new."]),
   dict(w="winter", pt="inverno", e="❄️", ex=["It is cold in winter.", "I like winter."]),
-  dict(w="miss", pt="sentir saudade", e="💛", ex=["I miss you.", "We miss our family."]),
+  dict(w="lonely", pt="sozinho, solitário", e="🥺", ex=["I feel lonely.", "A new city can feel lonely."]),
   dict(w="mom", pt="mãe", e="👩", ex=["Hi, Mom!", "My mom calls me."]),
-  dict(w="connection", pt="conexão", e="📶", ex=["The connection is bad.", "I have a good connection."]),
+  dict(w="Sunday", pt="domingo", e="📅", ex=["We call on Sunday.", "Sunday is family day."]),
  ],
  molds=[
   dict(title="Checar se o outro ouve ou vê", frame="Can you {verb} me? {fix}.", slots=[dict(key="verb", opts=["see", "hear", "understand"]), dict(key="fix", opts=["Turn up the volume", "Please say it again", "Talk a little louder"])], model="Can you see me? Turn up the volume.", note="Can you + verbo base. A segunda frase é o pedido para resolver."),

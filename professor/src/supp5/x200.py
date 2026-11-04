@@ -19,7 +19,7 @@ X = dict(
  ],
  vocab=[
   dict(w="shorts", pt="bermuda, short", e="🩳", ex=["I wear shorts in summer.", "Where are my shorts?"]),
-  dict(w="coat", pt="casaco grosso", e="🧥", ex=["I wear a coat in winter.", "The coat is warm."]),
+  dict(w="hoodie", pt="moletom com capuz", e="🧥", ex=["I wear a hoodie today.", "The hoodie is warm."]),
   dict(w="outfit", pt="roupa, look", e="👚", ex=["I like your outfit.", "This is a good outfit for school."]),
   dict(w="weather", pt="tempo (clima)", e="🌤️", ex=["The weather is nice.", "What's the weather today?"]),
   dict(w="skirt", pt="saia", e="👗", ex=["She wears a long skirt.", "I like this skirt."]),

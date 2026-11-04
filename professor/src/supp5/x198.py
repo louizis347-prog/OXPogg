@@ -23,7 +23,7 @@ X = dict(
   dict(w="passenger", pt="passageiro", e="🧍", ex=["I am the passenger.", "The passenger sits in front."]),
   dict(w="work", pt="trabalho", e="💼", ex=["I go to work by car.", "Work starts at nine."]),
   dict(w="tank", pt="tanque", e="⛽", ex=["The tank is full.", "The tank is empty."]),
-  dict(w="road", pt="estrada, rua", e="🛣️", ex=["The road is long.", "This road is busy."]),
+  dict(w="engine", pt="motor", e="⚙️", ex=["The engine is loud.", "The mechanic checks the engine."]),
  ],
  molds=[
   dict(title="Pedir carona", frame="My car is in the shop. Can I get a ride {where}?", slots=[dict(key="where", opts=["to work", "to school", "to the mall"])], model="My car is in the shop. Can I get a ride to work?", note="Can I get a ride + to + lugar. Explique o motivo antes de pedir."),

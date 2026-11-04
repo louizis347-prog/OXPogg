@@ -22,7 +22,7 @@ X = dict(
   dict(w="golf", pt="golfe", e="⛳", ex=["I like mini golf.", "Golf is a slow game."]),
   dict(w="club", pt="taco", e="🏌️", ex=["I have a red club.", "Take your club, please."]),
   dict(w="prize", pt="prêmio", e="🎁", ex=["The prize is ice cream.", "She wins a prize."]),
-  dict(w="fun", pt="divertido, diversão", e="🎉", ex=["Mini golf is fun.", "We have fun."]),
+  dict(w="windmill", pt="moinho de vento", e="🌬️", ex=["The windmill is red.", "The ball goes past the windmill."]),
   dict(w="course", pt="campo, percurso", e="🌿", ex=["The course is green.", "This course is small."]),
  ],
  molds=[

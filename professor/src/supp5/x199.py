@@ -18,8 +18,8 @@ X = dict(
   dict(who="Cole", en="Take a {quick|cold} shower.", pt="Tome um banho {rápido.|frio.}"),
  ],
  vocab=[
-  dict(w="shower", pt="banho (de chuveiro)", e="🚿", ex=["I take a quick shower.", "The shower is hot."]),
-  dict(w="sleep", pt="dormir, sono", e="😴", ex=["I sleep eight hours.", "I need more sleep."]),
+  dict(w="teeth", pt="dentes", e="🦷", ex=["I brush my teeth.", "My teeth are clean."]),
+  dict(w="lazy", pt="preguiçoso", e="🛌", ex=["I feel lazy today.", "A lazy morning is nice."]),
   dict(w="quick", pt="rápido", e="⚡", ex=["I take a quick shower.", "Make a quick call."]),
   dict(w="rush", pt="correria, apressar-se", e="🏃", ex=["I rush to class.", "It is rush hour."]),
   dict(w="oversleep", pt="dormir demais", e="💤", ex=["I oversleep on Sundays.", "Don't oversleep!"]),
