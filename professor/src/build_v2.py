@@ -52,10 +52,22 @@ def merge(L, ex):
 def main():
     idx = []
     EXT = load_extras()
+    with open(os.path.join(HERE, 'v2_interactive.json'), encoding='utf-8') as f:
+        interactive = json.load(f)
     for fn in sorted(glob.glob(os.path.join(HERE, 'v2_*.py'))):
         spec = importlib.util.spec_from_file_location('m', fn); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
         for L in m.LESSONS:
             merge(L, EXT.get(L['n'], []))
+            extra = interactive.get(str(L['n']))
+            if extra:
+                photo = next(p for p in L['pages'] if p['t'] == 'photo')
+                reading = next(p for p in L['pages'] if p['t'] == 'reading')
+                board = next(p for p in L['pages'] if p['t'] == 'board')
+                photo['swaps'] = extra['photo_swaps']
+                reading['text'] = extra['reading_text']
+                reading['talk2'] = extra['reading_talk2']
+                for i, task in extra['board_tasks'].items():
+                    board['squares'][int(i)]['task'] = task
             for p in L['pages']:
                 for k in NEED.get(p['t'], []):
                     assert k in p, (L['n'], p['t'], k)
