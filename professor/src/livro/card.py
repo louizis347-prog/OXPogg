@@ -39,11 +39,46 @@ def auto_mcq(vocab,seed,n=4):
         items.append(('What does “%s” mean?'%v['w'],opts,a,'**%s** = %s.'%(v['w'],v['pt'])))
     return items
 
+def _used(skip):
+    s={}
+    for fn in os.listdir(OUT):
+        if not fn.endswith('.json') or fn=='index.json' or fn[:-5]==skip:continue
+        d=json.load(open(OUT+'/'+fn))
+        for fr in d['frames']:
+            for b in fr['blocks']:
+                if b['type']=='vocab':
+                    for v in b['items']:s[v['w'].lower()]=d['id']
+    return s
+def fresh(n,skip,avoid=()):
+    from pool import POOL
+    from pool2 import POOL2
+    used=_used(skip);out=[]
+    for p in POOL+POOL2:
+        w=p[0].lower()
+        if '(' in w or w in used or w in avoid or any(o['w'].lower()==w for o in out):continue
+        out.append(V(p[0],'word',p[1],p[2],p[3]))
+        if len(out)==n:break
+    return out
+def chunks(dl,have,n=3):
+    out=[]
+    for mx in(7,12):
+        for l in dl:
+            k=len(l[1].replace('?','').replace('!','').split())
+            if 2<=k<=mx and l[1].lower() not in have and l[1] not in [o[0] for o in out]:out.append((l[1],l[2]))
+            if len(out)==n:return out
+    return out
 def L(id,title,*,goal,read,tf,mc,gram,gaps,vocab,dlg,pron,speak_,wr,rev,exam,teach,verbs=None,pv=None,expr=None,warm=None,vnote=None,readbox=None,gaprint=None):
     P=PLAN[id];lv=P['level'];seed=P['g']
     # ---- verificações contra o plano ----
     nw=NW[lv]
     if len(vocab)!=nw:raise SystemExit('%s: vocabulário=%d, cota=%d'%(id,len(vocab),nw))
+    used=_used(id);seenw=set();legacy=id.startswith(('A0-','A1-'))
+    for i,v in enumerate(vocab):
+        w=v['w'].lower()
+        if w in used or w in seenw:
+            if not legacy:raise SystemExit('%s: palavra repetida %s (já em %s)'%(id,v['w'],used.get(w,'esta aula')))
+            r=fresh(1,id,avoid=seenw|{x['w'].lower() for x in vocab})[0];vocab[i]=r;w=r['w'].lower()
+        seenw.add(w)
     have_v=[x['v'] for x in (verbs or [])]
     for v in P['verbs']:
         if v not in have_v:raise SystemExit('%s: falta o verbo %s'%(id,v))
@@ -68,7 +103,10 @@ def L(id,title,*,goal,read,tf,mc,gram,gaps,vocab,dlg,pron,speak_,wr,rev,exam,tea
     om=auto_order(dlg[1],seed);orders=[order(om,'Put the words in order')] if om else []
     f6=f('Prática','Practice',gap([(s,a,w,sy) for s,a,w,sy in [g if len(g)==4 else (g[0],g[1],g[2],None) for g in gaps]],'Complete the sentences'),match(auto_match(vocab),'Match the word to its meaning'),*orders)
     b7=[vocab_(vocab)]
-    if exprs:b7.append(box('culture','Expressões desta aula',['**%s** — %s'%(e[0],e[1]) for e in exprs]))
+    ck=chunks(dlg[1],[e[0].lower() for e in exprs])
+    items7=['**%s** — %s'%(e[0],e[1]) for e in exprs]+['**%s** — %s'%c for c in ck]
+    if len(items7)<3:raise SystemExit('%s: poucas expressões no quadro (%d)'%(id,len(items7)))
+    b7.append(box('culture','Expressões desta aula',items7))
     if vnote:b7.append(box('tip','Dica',vnote))
     f7=f('Vocabulário','Words and expressions',*b7)
     b8=[]

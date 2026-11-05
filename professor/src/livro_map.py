@@ -9,13 +9,11 @@ from livro_spec import *
 R=os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..'))
 os.makedirs(R+'/professor/data/livro',exist_ok=True)
 LV=['A0','A1','A2','B1','B2','C1','C2']
-mid=lambda r:r[1]   # metas cumulativas no LIMITE SUPERIOR das faixas de referência
-FACTOR=float(os.environ.get('LIVRO_F','1.85'))   # horas de estudo totais (guiadas + autônomas orientadas pelo livro) = horas guiadas × FACTOR
+mid=lambda r:(r[0]+r[1])//2
 GLH_INC={'A0':30,'A1':70,'A2':100,'B1':200,'B2':200,'C1':200,'C2':400}      # horas guiadas a acrescentar (limite superior das faixas de referência)
-CAP_WORDS={'A0':8,'A1':12,'A2':14,'B1':16,'B2':18,'C1':20,'C2':22}           # palavras novas por aula
-CAP_VERBS,CAP_PV,CAP_EXPR=4,3,8                                              # verbos-base, phrasal verbs e expressões novas por aula
-STEPS={'A0':3,'A1':4,'A2':4,'B1':4,'B2':4,'C1':4,'C2':4}                                                                # aulas por item de gramática (intro; prática e contraste; produção e revisão)
-EXPR_MIN={'A0':3,'A1':4,'A2':5,'B1':6,'B2':7,'C1':8,'C2':9}  # expressões/collocations mínimas no quadro 'Expressões desta aula' (além das do plano)
+CAP_WORDS={'A0':6,'A1':8,'A2':10,'B1':12,'B2':14,'C1':16,'C2':18}           # palavras novas por aula
+CAP_VERBS,CAP_PV,CAP_EXPR=3,2,5                                              # verbos-base, phrasal verbs e expressões novas por aula
+STEPS={'A0':2}                                                                # aulas por item de gramática (intro; prática e contraste; produção e revisão)
 EXAM={'A0':0,'A1':0,'A2':0,'B1':12,'B2':40,'C1':40,'C2':12}                  # aulas de laboratório de TOEFL / IELTS / colleges canadenses
 GENRE=['Notícia / reportagem curta','Biografia','Poema, haiku ou letra','Charge, tirinha e cartum','E-mail, carta, mensagem','Entrevista','Anúncio, folheto, aviso','Receita e instruções','Blog, diário, crônica','Resenha / review','Conto e trecho de peça','Editorial / opinião','Texto acadêmico e resumo','Infográfico em texto','Transcrição de palestra e podcast']
 SKILLS=['Leitura','Escuta','Fala','Escrita']
@@ -53,7 +51,7 @@ def level_plan(l):
     if l=='C2':extra+=len(CONTRASTS_C2)*2+len(REGISTER_C2)*2
     ded=len(PRON.get(l,[]))+(15 if l!='A0' else 0)+len(PAT_BY.get(l,[]))*2+FORM_LESSONS.get(l,0)+(len(IRR_BLOCKS) if l=='A2' else 0)
     struct=gram+extra+ded+EXAM[l]
-    need={'horas de estudo (guiadas + autônomas)':math.ceil(GLH_INC[l]*FACTOR),'vocabulário':math.ceil(d['lex']/CAP_WORDS[l]),'verbos-base':math.ceil(d['verbs']/CAP_VERBS),'phrasal verbs':math.ceil(d['pv']/CAP_PV),'expressões e collocations':math.ceil(d['expr']/CAP_EXPR),'itens estruturados (gramática + aulas dedicadas + exames)':struct}
+    need={'horas guiadas':GLH_INC[l],'vocabulário':math.ceil(d['lex']/CAP_WORDS[l]),'verbos-base':math.ceil(d['verbs']/CAP_VERBS),'phrasal verbs':math.ceil(d['pv']/CAP_PV),'expressões e collocations':math.ceil(d['expr']/CAP_EXPR),'itens estruturados (gramática + aulas dedicadas + exames)':struct}
     base=max(need.values());binding=max(need,key=lambda k:need[k])
     # revisões e avaliações periódicas: 2 aulas a cada unidade de ~16
     units=math.ceil(base/16);L=base+2*units
@@ -74,7 +72,7 @@ def build():
         # agenda estruturada em ordem
         agenda=[]
         for g in GRAM[l]:
-            for s,sn in enumerate(['introdução','prática e contraste','produção','revisão em contexto'][:STEPS.get(l,3)]):agenda.append(('Gramática',g+' — '+sn,g))
+            for s,sn in enumerate(['introdução','prática e contraste','produção e revisão'][:STEPS.get(l,3)]):agenda.append(('Gramática',g+' — '+sn,g))
         for v in PATTERNS_VERB.get(l,[]):agenda+= [('Padrão verbal',v+' — forma','Padrão verbal: '+v),('Padrão verbal',v+' — uso','Padrão verbal: '+v)]
         if l=='B2':
             for m in MODALS_B2:agenda+=[('Modais',m+' — forma','Modais: '+m),('Modais',m+' — uso','Modais: '+m)]
@@ -111,7 +109,6 @@ def build():
         if len(agenda)>core:raise SystemExit('agenda maior que o núcleo em '+l)
         # unidades: blocos contíguos por campo vocabular
         nunits=math.ceil(p['base']/16);per=L/nunits;cur_f=fields[0]
-        vl=set(min(core-1,int((k+0.5)*core/p['need']['vocabulário'])) for k in range(p['need']['vocabulário']))
         verbs=spread(VERBS_NEW[l],core);pvs=spread(PV_NEW[l],core);ex=spread(EXPR_NEW[l],core)
         irr=[]
         q=p['delta']['lex']/core
@@ -138,9 +135,9 @@ def build():
             if cur_f not in un['fl']:un['fl'].append(cur_f)
             ls=dict(id='%s-L%03d'%(l,n),g=gid,level=l,unit=un['id'],n=n,kind=kind,field=cur_f)
             if kind=='core':
-                a=slots[i];ls['type']=a[0] if a else 'Laboratório de habilidade';ls['focus']=a[1] if a else 'Laboratório de %s: %s'%(SKILLS[i%4].lower(),cur_f.split(' (')[0])
+                a=slots[i];ls['type']=a[0] if a else 'Comunicação integrada';ls['focus']=a[1] if a else 'Comunicação integrada: %s'%cur_f.split(' (')[0]
                 ls['trace']=a[2] if a else ''
-                ls['words']=CAP_WORDS[l] if i in vl else 0;ls['expr_min']=EXPR_MIN[l];ls['verbs']=verbs[i];ls['pv']=pvs[i];ls['expr']=ex[i]
+                ls['words']=round(q);ls['verbs']=verbs[i];ls['pv']=pvs[i];ls['expr']=ex[i]
                 ls['pron']=PRON[l][i%len(PRON[l])] if l in PRON else ''
                 ls['skill']=SKILLS[i%4];ls['genre']=GENRE[(i+LV.index(l)*3)%len(GENRE)]
             elif kind=='review':
@@ -157,7 +154,7 @@ def build():
         assert sum(1 for x in lessons if x['level']==l)==L,(l,L)
         levels.append(dict(k=l,cefr=NAMES[l][0],name=NAMES[l][1],goal=GOAL[l],criterion=CRITERIA[l],lessons=L,plan={k:v for k,v in p.items() if k in('delta','cum','need','binding','base','review','gram_lessons','extra','ded')},targets=TARGETS[l],units=nunits))
     out=dict(course='Inglês do zero absoluto ao C2 · inglês americano',frames=12,levels=levels,units=units,lessons=lessons,total_lessons=len(lessons),total_frames=len(lessons)*12)
-    json.dump(out,open(R+'/professor/data/livro/curriculo-v2.json','w'),ensure_ascii=False,separators=(',',':'))
+    json.dump(out,open(R+'/professor/data/livro/curriculo.json','w'),ensure_ascii=False,separators=(',',':'))
     return out,plans
 
 def coverage(o):
@@ -198,7 +195,7 @@ def doc(o,plans,rep,miss):
     'Para cada nível, calculo quantas aulas cada pilar exige e adoto o **maior valor** (restrição que mais pesa); depois somo as revisões e avaliações periódicas (2 por unidade de ~16 aulas). Cada aula comporta: %s palavras novas (A0→C2), %d verbos-base, %d phrasal verbs e %d expressões/collocations novos, mais um item de gramática por etapa (introdução; prática e contraste; produção e revisão — 2 etapas no A0 e 3 nos demais). 1 aula ≈ 60 min de estudo guiado.\n'%('/'.join(str(CAP_WORDS[l]) for l in LV),CAP_VERBS,CAP_PV,CAP_EXPR),
     '| Nível | Horas | Vocabulário | Verbos | Phrasal | Expressões | Estruturados* | **Restrição que pesa** | Núcleo | + Revisões/avaliações | **Aulas** |','|---|---|---|---|---|---|---|---|---|---|---|']
     for l in LV:
-        p=plans[l];n=p['need'];L.append('| %s | %d | %d | %d | %d | %d | %d | %s | %d | %d | **%d** |'%(NAMES[l][0],n['horas de estudo (guiadas + autônomas)'],n['vocabulário'],n['verbos-base'],n['phrasal verbs'],n['expressões e collocations'],n['itens estruturados (gramática + aulas dedicadas + exames)'],p['binding'],p['base'],p['review'],p['lessons']))
+        p=plans[l];n=p['need'];L.append('| %s | %d | %d | %d | %d | %d | %d | %s | %d | %d | **%d** |'%(NAMES[l][0],n['horas guiadas'],n['vocabulário'],n['verbos-base'],n['phrasal verbs'],n['expressões e collocations'],n['itens estruturados (gramática + aulas dedicadas + exames)'],p['binding'],p['base'],p['review'],p['lessons']))
     L.append('| **Total** | | | | | | | | | | **%d aulas · %d quadros** |\n'%(o['total_lessons'],o['total_frames']))
     L+=['\\* Estruturados = aulas de gramática (itens × etapas), padrões verbais, modais, gêneros escritos, contrastes lexicais, verbos-chave (15 por nível de A1 a C2), padrões de frase, formação de palavras, verbos irregulares, pronúncia e laboratórios de exame (TOEFL, IELTS e colleges canadenses, do B1 ao C2).\n',
     '## 3. Metas por nível e itens a completar\n','| Nível | Léxico novo a ensinar | Verbos novos | Verbos listados (sem repetir níveis) | Phrasal novos | Phrasal listados | Expressões novas | Expressões listadas |','|---|---|---|---|---|---|---|---|']
@@ -219,7 +216,7 @@ def doc(o,plans,rep,miss):
         for u in o['units']:
             if u['level']==l:L.append('| %s | %s | %s | %d–%d |'%(u['id'],u['field'][:60],'; '.join(u['focus'][:3]) or '—',u['first'],u['last']))
     L+=['\n## 8. Honestidade sobre a produção\n','Este mapa define **o que** cada aula ensina. As aulas são escritas por lotes, na ordem do currículo, e cada lote passa por verificação automática (12 quadros, respostas conferidas, itens-alvo presentes) antes de entrar no livro. **Ainda não foram revisadas por falante nativo ou professor**; isso é necessário antes de uso em curso pago. As faixas de pontuação de IELTS e TOEFL aceitas por colleges canadenses variam por instituição e mudam: confirme sempre nos sites oficiais.']
-    open(R+'/docs/CURRICULO-2500-AULAS.md','w',encoding='utf-8').write('\n'.join(L)+'\n')
+    open(R+'/docs/CURRICULO-FORMACAO-PROFESSORES.md','w',encoding='utf-8').write('\n'.join(L)+'\n')
 
 if __name__=='__main__':
     o,plans=build();rep,miss=coverage(o);doc(o,plans,rep,miss)

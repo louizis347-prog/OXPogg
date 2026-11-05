@@ -41,7 +41,10 @@ def RV(id,title,*,goal,read,tf,mc,recap,dlg,speak_,wr,teach,exam_extra=()):
     f4=f('Compreensão','Did you understand?',tfng(tf),mcq(mc,'Vocabulary in context'))
     f5=f('Gramática','Grammar recap',*recap)
     f6=f('Prática','Practice · Mixed review',gap(gp,'Complete the sentences (from the unit)'),match(mm,'Match the word to its meaning'))
-    f7=f('Vocabulário','Unit word bank',words(*[(w,pt) for w,pt in voc]),box('tip','Estratégia','Escolha **5 palavras** que ainda travam. Escreva uma frase **sua** com cada uma e diga em voz alta.'))
+    rids=sorted([k for k,x in PLAN.items() if x['kind'] in('review','assess')],key=lambda k:PLAN[k]['g'])
+    from pool import EXPRPOOL
+    nv=fresh(4,id);ni=rids.index(id)*2;nx=[EXPRPOOL[(ni+j)%len(EXPRPOOL)] for j in range(2)]
+    f7=f('Vocabulário','Unit word bank',words(*[(w,pt) for w,pt in voc]),dict(type='vocab',items=nv),box('culture','Novas expressões da revisão',['**%s** — %s'%e for e in nx]),box('tip','Estratégia','Escolha **5 palavras** que ainda travam. Escreva uma frase **sua** com cada uma e diga em voz alta.'))
     f8=f('Verbos','Verbs of the unit',table(['Verbo','Significado'],[['**%s**'%v,pt] for v,pt in vb] or [['be','ser, estar']],'Verbos vistos nesta unidade'),box('look','Revisão','Diga uma frase com cada verbo. Atenção a **he / she / it**: o verbo muda (**has, does, goes**).'))
     f9=f('Escuta e diálogo',dlg[0],dialog(dlg[0],dlg[1]),dict(type='pron',title='Pronúncia da unidade',items=[dict(label=x,note='Revise com o áudio das aulas anteriores.',words=[]) for x in prons[:5]]))
     f10=f('Fala','Speaking',speak(speak_))
