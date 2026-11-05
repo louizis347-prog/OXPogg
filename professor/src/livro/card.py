@@ -76,7 +76,9 @@ def L(id,title,*,goal,read,tf,mc,gram,gaps,vocab,dlg,pron,speak_,wr,rev,exam,tea
     for i,v in enumerate(vocab):
         w=v['w'].lower()
         if w in used or w in seenw:
-            if not legacy:raise SystemExit('%s: palavra repetida %s (já em %s)'%(id,v['w'],used.get(w,'esta aula')))
+            if not legacy:
+                bad=[x['w'] for x in vocab if x['w'].lower() in used]
+                raise SystemExit('%s: palavras repetidas %s'%(id,', '.join(bad)))
             r=fresh(1,id,avoid=seenw|{x['w'].lower() for x in vocab})[0];vocab[i]=r;w=r['w'].lower()
         seenw.add(w)
     have_v=[x['v'] for x in (verbs or [])]

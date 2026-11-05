@@ -33,7 +33,11 @@ def Q(id,title,goal,read,tf,mc,gram,gaps,voc,dlg,sp,wr,verbs=None,pv=None,expr=N
     sk=P['skill']
     ex=exam or ['Treine esta habilidade com o formato de tarefas curtas das provas (TOEFL/IELTS).','Leia o enunciado primeiro e procure as palavras-chave.']
     te=teach or ['Use exemplos reais da vida dos alunos e peça frases próprias.','Corrija o erro mais frequente da aula em grupo, sem expor o aluno.','Retome o conteúdo na aula seguinte com um exercício curto.']
-    return L(id,title,goal=goal,read=read,tf=tf,mc=mc,gram=gram,gaps=gaps,vocab=VV(voc),dlg=dlg,pron=pn,speak_=sp,wr=wr,rev=rev or [],exam=ex,teach=te,verbs=VBS(verbs) if verbs else None,pv=[dict(w=a,pt=b,ex=c,expt=d) for a,b,c,d in pv] if pv else None,expr=expr,warm=warm)
+    try:
+        return L(id,title,goal=goal,read=read,tf=tf,mc=mc,gram=gram,gaps=gaps,vocab=VV(voc),dlg=dlg,pron=pn,speak_=sp,wr=wr,rev=rev or [],exam=ex,teach=te,verbs=VBS(verbs) if verbs else None,pv=[dict(w=a,pt=b,ex=c,expt=d) for a,b,c,d in pv] if pv else None,expr=expr,warm=warm)
+    except SystemExit as e:
+        if os.environ.get('DRY'):print(e);return None
+        raise
 def G(title,head,rows,tip=None,warn=None):
     bl=[table(head,rows,title)]
     if tip:bl.append(box('look','Regra',tip))
