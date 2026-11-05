@@ -53,7 +53,7 @@ def validate(L):
             if t=='match' and len({x[1] for x in b['pairs']})!=len(b['pairs']):e.append('match respostas repetidas q%d'%i)
     # vocabulário-alvo no texto
     voc=[v['w'] for fr in L['frames'] for b in fr['blocks'] if b['type']=='vocab' for v in b['items']]
-    if len(voc)<L['targets'].get('words_min',5):e.append('vocabulário=%d'%len(voc))
+    if L['targets'].get('genre')!='Revisão' and len(voc)<L['targets'].get('words_min',5):e.append('vocabulário=%d'%len(voc))
     return e
 
 def save(L):
@@ -67,3 +67,5 @@ def lesson(id,title,cefr,level,unit,focus,targets,frames):
 
 def write_index(ids_titles):
     json.dump({'lessons':[dict(id=i,title=t) for i,t in ids_titles]},open(OUT+'/index.json','w'),ensure_ascii=False,separators=(',',':'))
+def text(title,paras,kicker='',by='',gloss=()):return dict(type='text',title=title,paras=list(paras),kicker=kicker,by=by,gloss=[list(g) for g in gloss])
+def info(title,items,note='',gloss=()):return dict(type='info',title=title,items=[list(i) for i in items],note=note,gloss=[list(g) for g in gloss])
