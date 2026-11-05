@@ -14,6 +14,10 @@ PN={'I am × I’m':('Na fala natural, I am vira I’m /aɪm/; you are vira you�
 'Schwa /ə/':('Vogais fracas viram /ə/: about, banana, today, the.',['about','banana','today','family','another']),
 'Entonação de perguntas':('Perguntas sim/não sobem; Wh- descem.',['Did you go? ↗','Where did you go? ↘','Is it open? ↗']),
 'gonna e wanna (reconhecimento)':('Na fala: going to → gonna, want to → wanna. Reconheça; na escrita use a forma completa.',['I’m gonna go','I wanna eat','What are you gonna do?']),
+'Word stress':('Palavras de 2+ sílabas têm uma sílaba forte: eDUcaTION, comPUter, PHOtograph, phoTOgraphy.',['education','photograph','photography','develop','different']),
+'Sentence stress':('Na frase, acentue palavras de conteúdo (substantivos, verbos, adjetivos) e reduza as funcionais: I WANT to LEARN ENglish.',['I want to learn English.','She has studied for years.','Can you help me?']),
+'Entonação':('Perguntas de sim/não sobem; Wh- descem; listas sobem e descem no fim; dúvida sobe.',['Have you ever studied abroad? ↗','Where did you study? ↘','books, notes, and pens ↘']),
+'Contrações e fala conectada (compreensão)':('Reconheça: I’ve → /aɪv/, she’s → /ʃiz/, wouldn’t’ve, whaddaya (what do you), gonna, wanna.',['I’ve been there.','She’s been studying.','What do you want?','I’d’ve gone.']),
 'Ligação entre palavras':('Consoante final liga à vogal seguinte: pick it up → pi-ki-tup.',['pick it up','turn it off','an apple','check in'])}
 def _s(v):
     if v.endswith(('s','sh','ch','x','o')):return v+'es'
