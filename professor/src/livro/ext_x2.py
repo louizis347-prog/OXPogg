@@ -95,3 +95,89 @@ rewording attempt|tentativa de reformular|Rewording attempt.|Tentativa de reform
 W('C1-L073','''recap thread|cadeia de resumo|Recap thread.|Cadeia de resumo.
 bilingual recap|resumo bilíngue|Bilingual recap.|Resumo bilíngue.
 call overlap|sobreposição de chamadas|Call overlap.|Sobreposição de chamadas.''')
+W('B2-L206','''outlook survey|pesquisa de perspectivas|Outlook survey.|Pesquisa de perspectivas.
+hiring outlook|perspectiva de contratação|Hiring outlook.|Perspectiva de contratação.
+jobs forecast|previsão de vagas|Jobs forecast.|Previsão de vagas.
+growth projection|projeção de crescimento|Growth projection.|Projeção de crescimento.
+labour trend|tendência trabalhista|Labour trend.|Tendência trabalhista.''')
+W('B2-L210','''alarm tone|toque do despertador|Alarm tone.|Toque do despertador.
+weary sigh|suspiro cansado|Weary sigh.|Suspiro cansado.
+sunrise verse|verso do nascer do sol|Sunrise verse.|Verso do nascer do sol.
+chorus line|verso do refrão|Chorus line.|Verso do refrão.
+humming habit|hábito de cantarolar|Humming habit.|Hábito de cantarolar.
+gloomy morning|manhã sombria|Gloomy morning.|Manhã sombria.
+upbeat chorus|refrão animado|Upbeat chorus.|Refrão animado.''')
+W('B2-L211','''salary comparison|comparação salarial|Salary comparison.|Comparação salarial.
+offer dilemma|dilema da oferta|Offer dilemma.|Dilema da oferta.
+job-switch doubt|dúvida de troca de emprego|Job-switch doubt.|Dúvida de troca de emprego.''')
+W('B2-L213','''candidate rapport|sintonia com o candidato|Candidate rapport.|Sintonia com o candidato.
+interview anxiety|ansiedade de entrevista|Interview anxiety.|Ansiedade de entrevista.
+recruiter feedback|retorno do recrutador|Recruiter feedback.|Retorno do recrutador.
+hiring decision|decisão de contratação|Hiring decision.|Decisão de contratação.
+interview debrief|balanço da entrevista|Interview debrief.|Balanço da entrevista.
+skills example|exemplo de competência|Skills example.|Exemplo de competência.
+reading keyword|palavra-chave de leitura|Reading keyword.|Palavra-chave de leitura.''')
+W('B2-L220','''recall habit|hábito de lembrar|Recall habit.|Hábito de lembrar.
+memory lapse|lapso de memória|Memory lapse.|Lapso de memória.
+review timetable|cronograma de revisão|Review timetable.|Cronograma de revisão.
+retention study|estudo de retenção|Retention study.|Estudo de retenção.''')
+W('B2-L223','''news paraphrase|paráfrase de notícia|News paraphrase.|Paráfrase de notícia.
+spoken outline|esboço falado|Spoken outline.|Esboço falado.''')
+W('C1-L002','''essay thesis|tese do ensaio|Essay thesis.|Tese do ensaio.
+argument paragraph|parágrafo argumentativo|Argument paragraph.|Parágrafo argumentativo.
+academic claim|afirmação acadêmica|Academic claim.|Afirmação acadêmica.
+intellectual biography|biografia intelectual|Intellectual biography.|Biografia intelectual.
+essay opening|abertura de ensaio|Essay opening.|Abertura de ensaio.
+scholarly thesis|tese acadêmica|Scholarly thesis.|Tese acadêmica.''')
+W('C1-L005','''email follow-up|acompanhamento por e-mail|Email follow-up.|Acompanhamento por e-mail.
+budget delay|atraso orçamentário|Budget delay.|Atraso orçamentário.
+proposal reply|resposta à proposta|Proposal reply.|Resposta à proposta.
+software learning|aprendizado de software|Software learning.|Aprendizado de software.''')
+W('C1-L029','''funding editorial|editorial sobre financiamento|Funding editorial.|Editorial sobre financiamento.
+risk-averse committee|comitê avesso ao risco|Risk-averse committee.|Comitê avesso ao risco.
+mRNA research|pesquisa de mRNA|MRNA research.|Pesquisa de mRNA.
+innovation funding|financiamento de inovação|Innovation funding.|Financiamento de inovação.
+discovery grant|bolsa de descoberta|Discovery grant.|Bolsa de descoberta.
+science editorial|editorial de ciência|Science editorial.|Editorial de ciência.''')
+W('C1-L038','''grant comic|tirinha de bolsa|Grant comic.|Tirinha de bolsa.
+literature trim|corte da revisão de literatura|Literature trim.|Corte da revisão de literatura.
+proposal freeze|travamento da proposta|Proposal freeze.|Travamento da proposta.
+submit button|botão de enviar|Submit button.|Botão de enviar.
+review cut|corte da revisão|Review cut.|Corte da revisão.
+footnote cut|corte de notas|Footnote cut.|Corte de notas.''')
+W('C1-L040','''funding stop|interrupção de financiamento|Funding stop.|Interrupção de financiamento.
+data loss risk|risco de perda de dados|Data loss risk.|Risco de perda de dados.
+community ownership|propriedade comunitária|Community ownership.|Propriedade comunitária.
+record protection|proteção de registros|Record protection.|Proteção de registros.
+long-term archive|arquivo de longo prazo|Long-term archive.|Arquivo de longo prazo.
+volunteer dependence|dependência de voluntários|Volunteer dependence.|Dependência de voluntários.''')
+W('C1-L045','''freezer alarm|alarme de freezer|Freezer alarm.|Alarme de freezer.
+sample rescue|resgate de amostras|Sample rescue.|Resgate de amostras.
+backup unit|unidade reserva|Backup unit.|Unidade reserva.
+lab incident|incidente de laboratório|Lab incident.|Incidente de laboratório.
+power failure|falha de energia|Power failure.|Falha de energia.
+collection loss|perda de coleção|Collection loss.|Perda de coleção.''')
+W('C1-L046','''retraction notice|aviso de retratação|Retraction notice.|Aviso de retratação.
+open-data policy|política de dados abertos|Open-data policy.|Política de dados abertos.
+amateur sleuth|detetive amador|Amateur sleuth.|Detetive amador.
+review reform|reforma da revisão|Review reform.|Reforma da revisão.''')
+W('C1-L055','''data wish list|lista de desejos de dados|Data wish list.|Lista de desejos de dados.
+coffee pause|pausa para café|Coffee pause.|Pausa para café.
+lab deadline|prazo de laboratório|Lab deadline.|Prazo de laboratório.
+postdoc joke|piada de pós-doc|Postdoc joke.|Piada de pós-doc.
+supervisor quip|tirada do orientador|Supervisor quip.|Tirada do orientador.''')
+W('C1-L059','''objective check|checagem de objetivos|Objective check.|Checagem de objetivos.
+proposal recipe|receita de proposta|Proposal recipe.|Receita de proposta.
+budget honesty|honestidade orçamentária|Budget honesty.|Honestidade orçamentária.''')
+W('C1-L076','''agenda circulation step|etapa de distribuição de pauta|Agenda circulation step.|Etapa de distribuição de pauta.
+meeting recipe|receita de reunião|Meeting recipe.|Receita de reunião.
+welcome opening|abertura de boas-vindas|Welcome opening.|Abertura de boas-vindas.
+direct invitation|convite direto|Direct invitation.|Convite direto.
+plain-language minutes|ata em linguagem simples|Plain-language minutes.|Ata em linguagem simples.
+multicultural agenda|pauta multicultural|Multicultural agenda.|Pauta multicultural.
+minutes deadline|prazo da ata|Minutes deadline.|Prazo da ata.''')
+W('B2-L213','''interview rubric|rubrica de entrevista|Interview rubric.|Rubrica de entrevista.
+scoring descriptor|descritor de pontuação|Scoring descriptor.|Descritor de pontuação.''')
+W('B2-L223','''speaking rehearsal|ensaio de fala|Speaking rehearsal.|Ensaio de fala.
+oral summary drill|treino de resumo oral|Oral summary drill.|Treino de resumo oral.
+answer timer|cronômetro de resposta|Answer timer.|Cronômetro de resposta.''')
