@@ -677,8 +677,12 @@ specialist;especialista;See a specialist.;Consulte um especialista.
 try:
     from pools2 import F2
     from pools3 import F3
-    for _d in(F2,F3):
+    from pools4 import F4
+    from pools5 import F5
+    from pools6 import G6
+    for _d in(F2,F3,F4,F5):
         for _k,_v in _d.items():FIELD[_k]=FIELD.get(_k,[])+_v
+    for _k in list(FIELD):FIELD[_k]=FIELD[_k]+G6
 except ImportError:pass
 EXPRS=_l("""
 Could I ask something?=Posso perguntar uma coisa?
@@ -1091,4 +1095,314 @@ It tastes awful.=Está com gosto horrível.
 It smells good.=Cheira bem.
 It feels soft.=É macio ao toque.
 It sounds familiar.=Parece familiar.
+""")
+EXPRS+=_l("""
+I’d say…=Eu diria que…
+As far as I’m concerned…=No que me diz respeito…
+I’m under the impression that…=Tenho a impressão de que…
+It seems to me that…=Parece-me que…
+I tend to think…=Costumo achar…
+I’m inclined to agree.=Tendo a concordar.
+That’s not how I see it.=Não vejo assim.
+I take your point.=Entendo seu argumento.
+Let me put it this way.=Deixe-me dizer assim.
+What I mean is…=O que quero dizer é…
+Let me rephrase that.=Deixe-me reformular.
+To sum up…=Resumindo…
+All in all…=No geral…
+On the whole…=Em geral…
+Generally speaking…=De modo geral…
+In a nutshell…=Em poucas palavras…
+First of all…=Antes de mais nada…
+Last but not least…=Por último, mas não menos importante…
+In addition…=Além disso…
+Moreover…=Além do mais…
+However…=No entanto…
+Nevertheless…=Mesmo assim…
+As a result…=Como resultado…
+For this reason…=Por essa razão…
+That’s why…=É por isso que…
+Because of this…=Por causa disso…
+In order to…=A fim de…
+So as to…=Para…
+Instead of…=Em vez de…
+Apart from that…=Fora isso…
+Except for…=Exceto…
+According to…=De acordo com…
+In terms of…=Em termos de…
+With regard to…=Com relação a…
+As for me…=Quanto a mim…
+It goes without saying…=Nem é preciso dizer…
+Needless to say…=Nem é preciso dizer…
+Believe it or not…=Acredite ou não…
+Strange but true.=Estranho, mas verdade.
+To tell the truth…=Para dizer a verdade…
+Come to think of it…=Pensando bem…
+Now that you mention it…=Agora que você falou…
+That reminds me…=Isso me lembra…
+Speaking of which…=Por falar nisso…
+Before I forget…=Antes que eu esqueça…
+By the way, did you hear…?=A propósito, você soube…?
+Guess what!=Adivinhe só!
+You won’t believe this.=Você não vai acreditar.
+It turns out that…=Acontece que…
+It happened to me once.=Aconteceu comigo uma vez.
+I’ll never forget the day…=Nunca vou esquecer o dia…
+It was a close call.=Foi por pouco.
+It made my day.=Alegrou meu dia.
+It was a blast.=Foi demais.
+It was a nightmare.=Foi um pesadelo.
+It was nothing special.=Não foi nada de especial.
+It was out of this world.=Foi sensacional.
+It cost me a fortune.=Me custou uma fortuna.
+It was a rip-off.=Foi um roubo.
+It was a steal.=Foi uma pechincha.
+It’s worth every penny.=Vale cada centavo.
+It’s a bit pricey.=É um pouco caro.
+It’s within my budget.=Cabe no meu orçamento.
+I’ll split it with you.=Divido com você.
+I’ll pay my share.=Pago minha parte.
+Could we split the bill?=Podemos dividir a conta?
+Do you take reservations?=Vocês aceitam reservas?
+We’d like a table for four.=Gostaríamos de uma mesa para quatro.
+Could we sit outside?=Podemos sentar do lado de fora?
+What’s today’s special?=Qual é o prato do dia?
+I’ll have the same.=Quero o mesmo.
+Could I get a refill?=Pode encher de novo?
+Could we have the check?=Pode trazer a conta?
+Keep the change, please.=Fique com o troco, por favor.
+I’d like to book a table.=Gostaria de reservar uma mesa.
+I’d like to cancel my booking.=Gostaria de cancelar minha reserva.
+Could I change my reservation?=Posso alterar minha reserva?
+I’m afraid we’re fully booked.=Receio que estejamos lotados.
+There’s a waiting list.=Há lista de espera.
+Please hold the line.=Aguarde na linha.
+I’ll put you through.=Vou transferir sua ligação.
+Could you call me back?=Pode me ligar de volta?
+I’ll get back to you.=Retorno para você.
+Could I leave a message?=Posso deixar um recado?
+Speak up, please.=Fale mais alto, por favor.
+You’re breaking up.=Está cortando.
+The line is bad.=A linha está ruim.
+I’ll text you.=Mando uma mensagem.
+Send me the details.=Me mande os detalhes.
+Let’s stay in touch.=Vamos manter contato.
+Thanks anyway.=Obrigado de qualquer forma.
+Sorry for the trouble.=Desculpe o incômodo.
+No harm done.=Sem problema.
+It’s my bad.=Foi mal.
+I owe you one.=Te devo uma.
+You saved my life.=Você salvou minha vida.
+I can’t thank you enough.=Não tenho como agradecer.
+Don’t mention it.=Imagina.
+It’s the least I could do.=É o mínimo que eu podia fazer.
+""")
+VERBS+=_l("""
+accept;aceitar;I accept the offer.;She accepts gifts.
+achieve;alcançar;I achieve my goals.;He achieves a lot.
+add;adicionar;I add salt.;She adds sugar.
+admire;admirar;I admire her.;He admires art.
+admit;admitir;I admit my mistake.;He admits it.
+adopt;adotar;I adopt a dog.;She adopts a cat.
+advise;aconselhar;I advise you.;She advises him.
+afford;ter condições de pagar;I can’t afford it.;He can afford it.
+allow;permitir;I allow it.;She allows it.
+announce;anunciar;I announce a plan.;He announces news.
+appear;aparecer;Stars appear.;She appears at nine.
+apply;candidatar-se;I apply for a job.;She applies today.
+arrange;organizar;I arrange a trip.;He arranges a party.
+attend;frequentar;I attend class.;She attends church.
+avoid;evitar;I avoid noise.;He avoids sugar.
+bake;assar;I bake bread.;She bakes cakes.
+behave;comportar-se;I behave well.;He behaves badly.
+belong;pertencer;It belongs to me.;She belongs here.
+blame;culpar;I blame myself.;He blames us.
+blow;soprar;I blow out candles.;The wind blows.
+bother;incomodar;Don’t bother me.;It bothers him.
+breathe;respirar;I breathe slowly.;She breathes deeply.
+burn;queimar;I burn toast.;It burns fast.
+calm;acalmar;I calm the baby.;She calms him.
+care;importar-se;I care about you.;He cares a lot.
+celebrate;comemorar;We celebrate today.;She celebrates her birthday.
+chat;conversar;We chat online.;She chats with friends.
+cheer;torcer;We cheer loudly.;He cheers for his team.
+collect;colecionar;I collect stamps.;She collects coins.
+compare;comparar;I compare prices.;She compares two phones.
+complain;reclamar;I complain rarely.;He complains often.
+connect;conectar;I connect the cable.;She connects the TV.
+copy;copiar;I copy the text.;He copies files.
+cover;cobrir;I cover the pot.;She covers her head.
+create;criar;I create art.;He creates games.
+damage;danificar;Rain damages roofs.;It damages the car.
+deliver;entregar;I deliver mail.;She delivers pizza.
+depend;depender;It depends.;She depends on him.
+disappear;desaparecer;Clouds disappear.;It disappears fast.
+discover;descobrir;I discover new places.;He discovers a path.
+discuss;discutir (um tema);We discuss plans.;She discusses it.
+divide;dividir;I divide the cake.;He divides the work.
+dream;sonhar;I dream of travel.;She dreams a lot.
+dress;vestir;I dress quickly.;She dresses well.
+drop;deixar cair;I drop my keys.;He drops a glass.
+earn;ganhar (salário);I earn little.;She earns more.
+educate;educar;We educate children.;She educates adults.
+enter;entrar;I enter the room.;He enters quietly.
+escape;escapar;I escape the heat.;The cat escapes.
+exist;existir;Dragons don’t exist.;It exists.
+expect;esperar;I expect rain.;She expects a call.
+explore;explorar;I explore the city.;He explores caves.
+fail;falhar;I fail sometimes.;It fails twice.
+fall;cair;Leaves fall.;She falls asleep.
+fill;encher;I fill the glass.;She fills the tank.
+fold;dobrar;I fold the shirt.;He folds the map.
+gain;ganhar (obter);I gain weight.;She gains confidence.
+gather;reunir;We gather here.;She gathers wood.
+greet;cumprimentar;I greet my neighbor.;She greets guests.
+guide;guiar;I guide tourists.;He guides us.
+handle;lidar com;I handle problems.;She handles stress.
+hide;esconder;I hide the gift.;He hides the key.
+hire;contratar;We hire students.;She hires a chef.
+hug;abraçar;I hug my mother.;He hugs his son.
+imagine;imaginar;I imagine a beach.;She imagines it.
+improve;melhorar;I improve daily.;It improves fast.
+include;incluir;It includes breakfast.;The price includes tax.
+increase;aumentar;Prices increase.;It increases daily.
+introduce;apresentar;I introduce my friend.;She introduces him.
+join;juntar-se;I join the club.;He joins us.
+judge;julgar;I judge fairly.;He judges the contest.
+kick;chutar;I kick the ball.;He kicks hard.
+knock;bater (na porta);I knock twice.;She knocks softly.
+lift;levantar;I lift a box.;He lifts weights.
+manage;conseguir, gerenciar;I manage a shop.;She manages well.
+mark;marcar;I mark the date.;She marks the page.
+mention;mencionar;I mention it.;He mentions your name.
+miss;perder;I miss the bus.;She misses home.
+mix;misturar;I mix colors.;She mixes the batter.
+notice;notar;I notice details.;He notices a change.
+obey;obedecer;I obey rules.;The dog obeys.
+operate;operar;I operate machines.;She operates daily.
+pack;arrumar mala;I pack a bag.;She packs light.
+pass;passar;I pass the salt.;She passes the exam.
+perform;apresentar-se;I perform on stage.;He performs well.
+plan;planejar;I plan a trip.;She plans carefully.
+prepare;preparar;I prepare dinner.;He prepares a talk.
+protect;proteger;I protect my phone.;She protects kids.
+prove;provar;I prove my point.;It proves nothing.
+punish;punir;We don’t punish kids.;He punishes crime.
+recommend;recomendar;I recommend this book.;She recommends tea.
+reduce;reduzir;I reduce waste.;He reduces costs.
+refuse;recusar;I refuse the offer.;She refuses to go.
+remove;remover;I remove the lid.;He removes the stain.
+repeat;repetir;I repeat the word.;She repeats it.
+rescue;resgatar;I rescue animals.;He rescues a cat.
+rest;descansar;I rest at noon.;She rests a lot.
+reserve;reservar;I reserve a table.;She reserves a seat.
+""")
+EXPRS+=_l("""
+Don’t get me wrong.=Não me leve a mal.
+Let’s get down to business.=Vamos ao que interessa.
+It’s a long shot.=É uma aposta arriscada.
+It’s a close call.=Foi por pouco.
+It’s a win-win.=É bom para os dois lados.
+It’s all good.=Está tudo bem.
+It’s all Greek to me.=Não entendo nada.
+It’s anyone’s guess.=Ninguém sabe.
+It’s up in the air.=Está indefinido.
+It’s on the way.=Está a caminho.
+It’s out of the question.=Está fora de cogitação.
+It’s not rocket science.=Não é nenhuma ciência.
+It’s about time.=Já era hora.
+It’s better than nothing.=É melhor que nada.
+It could be worse.=Poderia ser pior.
+It couldn’t be better.=Não poderia ser melhor.
+It takes two to tango.=É preciso dois para dançar.
+It runs in the family.=É de família.
+It rings a bell.=Isso me lembra algo.
+It slipped through the cracks.=Passou despercebido.
+It was touch and go.=Foi por um fio.
+It’s no big deal.=Não é nada demais.
+Let it go.=Deixe pra lá.
+Let me know.=Me avise.
+Let me handle it.=Deixe comigo.
+Let’s not jump to conclusions.=Não vamos tirar conclusões precipitadas.
+Let’s play it by ear.=Vamos improvisar.
+Let’s sleep on it.=Vamos dormir sobre isso.
+Let’s touch base.=Vamos nos falar.
+Let’s wrap this up.=Vamos finalizar.
+Hold your horses.=Calma aí.
+Hang in there.=Aguente firme.
+Hang on.=Aguarde.
+Keep an eye on it.=Fique de olho.
+Keep me posted.=Me mantenha informado.
+Keep your chin up.=Cabeça erguida.
+Make a long story short.=Resumindo.
+Make yourself heard.=Faça-se ouvir.
+Mind your own business.=Cuide da sua vida.
+Pull yourself together.=Recomponha-se.
+Put yourself in my shoes.=Ponha-se no meu lugar.
+Read between the lines.=Leia nas entrelinhas.
+See eye to eye.=Concordar plenamente.
+Speak your mind.=Diga o que pensa.
+Take it or leave it.=É pegar ou largar.
+Take my word for it.=Acredite em mim.
+Take a rain check.=Deixar para outra vez.
+Take it with a grain of salt.=Não leve tão a sério.
+Think outside the box.=Pense fora da caixa.
+Turn over a new leaf.=Começar de novo.
+Walk on eggshells.=Pisar em ovos.
+Work out the details.=Acertar os detalhes.
+Cut to the chase.=Ir direto ao ponto.
+Beat around the bush.=Enrolar.
+Bite the bullet.=Encarar o problema.
+Call it a day.=Encerrar por hoje.
+Face the music.=Encarar as consequências.
+Get cold feet.=Ficar com medo.
+Go the extra mile.=Dar um passo além.
+Jump on the bandwagon.=Aderir à moda.
+Miss the boat.=Perder a oportunidade.
+Hit the road.=Pegar a estrada.
+Hit the books.=Estudar com afinco.
+Hit the sack.=Ir dormir.
+Under the weather.=Meio doente.
+Over the moon.=Nas nuvens.
+Out of the blue.=Do nada.
+On the same page.=Na mesma sintonia.
+On cloud nine.=Nas nuvens.
+In the same boat.=No mesmo barco.
+In hot water.=Em apuros.
+In a nutshell.=Resumindo.
+In the long run.=A longo prazo.
+In the nick of time.=Em cima da hora.
+At the end of the day.=No fim das contas.
+At first sight.=À primeira vista.
+At your service.=Às suas ordens.
+By all means.=Com certeza.
+By heart.=De cor.
+For good.=Para sempre.
+For sure.=Com certeza.
+From scratch.=Do zero.
+Once and for all.=De uma vez por todas.
+Sooner or later.=Cedo ou tarde.
+Step by step.=Passo a passo.
+Word for word.=Palavra por palavra.
+Back to square one.=De volta à estaca zero.
+Back on track.=De volta aos trilhos.
+Ahead of schedule.=Adiantado.
+Behind schedule.=Atrasado.
+On a tight budget.=Com orçamento apertado.
+On the other side.=Do outro lado.
+Right away.=Imediatamente.
+Right now.=Agora mesmo.
+Any time.=A qualquer hora.
+Any day now.=A qualquer dia.
+Every now and then.=De vez em quando.
+Now and again.=Vez ou outra.
+No matter what.=Não importa o quê.
+No wonder.=Não é de admirar.
+No offense.=Sem ofensa.
+No hard feelings.=Sem ressentimentos.
+No strings attached.=Sem compromisso.
+No pain, no gain.=Sem esforço, sem resultado.
+Not at all.=De jeito nenhum.
+Not to mention…=Sem falar de…
+Not that I know of.=Não que eu saiba.
 """)

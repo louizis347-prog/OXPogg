@@ -351,3 +351,72 @@ maybe|talvez|Maybe tomorrow.|Talvez amanhã.
 perhaps|quem sabe|Perhaps later.|Quem sabe mais tarde.
 intention|intenção|My intention.|Minha intenção.
 spontaneous|espontâneo|A spontaneous trip.|Uma viagem espontânea.""")
+W('A2-L091',"""building manager|síndico|The building manager.|O síndico.
+condominium|condomínio|A quiet condominium.|Um condomínio calmo.
+noise complaint|reclamação de barulho|A noise complaint.|Uma reclamação de barulho.
+quiet hours|horário de silêncio|Quiet hours start at ten.|O horário de silêncio começa às dez.
+shared garden|jardim compartilhado|A shared garden.|Um jardim compartilhado.
+laundry room|lavanderia do prédio|The laundry room.|A lavanderia do prédio.
+elevator|elevador|A slow elevator.|Um elevador lento.
+doorbell|campainha|Ring the doorbell.|Toque a campainha.
+greeting|cumprimento|A friendly greeting.|Um cumprimento simpático.
+favor|favor|Do me a favor.|Faça-me um favor.
+community spirit|espírito comunitário|Strong community spirit.|Forte espírito comunitário.
+shared rules|regras comuns|Follow the shared rules.|Siga as regras comuns.
+tenants’ meeting|reunião de moradores|A tenants’ meeting.|Uma reunião de moradores.
+potluck dinner|jantar colaborativo|A potluck dinner.|Um jantar colaborativo.""")
+W('A2-L092',"""ice|gelo|Ice is cold.|O gelo é frio.
+water|água|Water boils at 100.|A água ferve a 100.
+temperature|temperatura|A high temperature.|Uma temperatura alta.
+degrees|graus|Zero degrees.|Zero grau.
+steam|vapor|Hot steam.|Vapor quente.
+liquid|líquido|A clear liquid.|Um líquido claro.
+solid|sólido|A solid block.|Um bloco sólido.
+gas|gás|A light gas.|Um gás leve.
+light|luz|Plants need light.|Plantas precisam de luz.
+soil|solo|Rich soil.|Solo rico.
+seed|semente|A tiny seed.|Uma semente minúscula.
+growth|crescimento|Plant growth.|Crescimento das plantas.
+heat|calor|Strong heat.|Calor forte.
+cool|resfriar|Cool the water.|Resfrie a água.
+dissolve|dissolver|Sugar dissolves.|O açúcar dissolve.
+magnet|ímã|A strong magnet.|Um ímã forte.
+mixture|mistura|A simple mixture.|Uma mistura simples.
+lab|laboratório|A school lab.|Um laboratório escolar.""")
+W('A2-L093',"""sentence|frase|A short sentence.|Uma frase curta.
+past tense|tempo passado|The past tense.|O tempo passado.
+mistake|erro|A common mistake.|Um erro comum.
+pronunciation|pronúncia|Clear pronunciation.|Pronúncia clara.
+memorize|memorizar|Memorize the verbs.|Memorize os verbos.
+chart|tabela|A verb chart.|Uma tabela de verbos.
+quiz|teste|A short quiz.|Um teste curto.
+rhyme|rima|A simple rhyme.|Uma rima simples.
+pattern|padrão|A sound pattern.|Um padrão sonoro.
+exception|exceção|A rare exception.|Uma exceção rara.
+tip|dica|A study tip.|Uma dica de estudo.
+flashcards|cartões de estudo|Make flashcards.|Faça cartões de estudo.
+review|revisão|A quick review.|Uma revisão rápida.
+score|pontuação|A high score.|Uma pontuação alta.""")
+W('A2-L092',"""thermometer|termômetro|Read the thermometer.|Leia o termômetro.
+cause|causa|A simple cause.|Uma causa simples.
+reaction|reação|A chemical reaction.|Uma reação química.
+law|lei|A natural law.|Uma lei natural.
+always|sempre|Always true.|Sempre verdade.
+usually|geralmente|Usually warm.|Geralmente quente.
+observe|observar|Observe carefully.|Observe com cuidado.
+measure|medir|Measure the heat.|Meça o calor.""")
+W('A2-L093',"""proverb|provérbio|An old proverb.|Um provérbio antigo.
+dictation|ditado|A short dictation.|Um ditado curto.
+worksheet|folha de exercícios|A grammar worksheet.|Uma folha de exercícios de gramática.
+handout|material impresso|Read the handout.|Leia o material impresso.
+tutorial|tutorial|A video tutorial.|Um tutorial em vídeo.
+dictionary entry|verbete|A dictionary entry.|Um verbete.
+past participle|particípio passado|Learn the past participle.|Aprenda o particípio passado.
+verb form|forma verbal|The correct verb form.|A forma verbal correta.
+tongue twister|trava-língua|A tricky tongue twister.|Um trava-língua difícil.
+jacket|jaqueta|He wore a jacket.|Ele usou uma jaqueta.
+uniform|uniforme|She wore a uniform.|Ela usou um uniforme.
+joke book|livro de piadas|A joke book.|Um livro de piadas.""")
+W('A2-L093',"""lecturer|palestrante|A new lecturer.|Um novo palestrante.
+hint|dica|A small hint.|Uma pequena dica.
+trick|truque|A memory trick.|Um truque de memória.""")
