@@ -41,7 +41,7 @@ def _strs(o):
     return []
 def _V(r):
     q=r.split(';')
-    if len(q)==4:q=[q[0],'word']+q
+    if len(q)==4:q=[q[0],'word']+q[1:]
     return dict(w=q[0],pos=q[1],pt=q[2],ex=q[3],expt=q[4])
 def _s(v):
     if v.endswith(('s','sh','ch','x','o')):return v+'es'
