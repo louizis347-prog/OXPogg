@@ -54,3 +54,14 @@ input.tx2,textarea.tx2,select.tx2{font:inherit;border:1px solid var(--line);back
 ul.cl{margin:6px 0 10px 18px;padding:0}ul.cl li{margin:3px 0}
 .sc2{font-weight:800;color:var(--pri);margin:4px 0 12px}
 @media(prefers-reduced-motion:reduce){.page{animation:none}}
+
+/* ilustrações reais (fotos): aparecem só quando o arquivo existe em img/livro/ */
+.hero{margin:0 0 14px;border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12);background:var(--soft)}
+.hero img{display:block;width:100%;max-height:300px;object-fit:cover}
+.w:has(.ph){flex-direction:column;align-items:stretch;padding:0;overflow:hidden;gap:0;border-radius:14px}
+.w:has(.ph) .ph{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.w:has(.ph)>span{padding:8px 10px}
+.w:has(.ph)>.spk,.w:has(.ph)>button{align-self:flex-end;margin:-34px 8px 0 0;position:relative;z-index:1;background:var(--page);border-radius:50%}
+.vi:has(.ph){display:grid;grid-template-columns:96px 1fr;gap:4px 12px;align-items:start}
+.vi:has(.ph) .ph{grid-row:1 / span 3;width:96px;height:96px;object-fit:cover;border-radius:12px}
+@media(max-width:560px){.vi:has(.ph){grid-template-columns:72px 1fr}.vi:has(.ph) .ph{width:72px;height:72px}}
