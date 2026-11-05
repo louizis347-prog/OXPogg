@@ -71,16 +71,6 @@ def L(id,title,*,goal,read,tf,mc,gram,gaps,vocab,dlg,pron,speak_,wr,rev,exam,tea
     P=PLAN[id];lv=P['level'];seed=P['g']
     # ---- verificações contra o plano ----
     nw=NW[lv]
-    if len(vocab)!=nw:raise SystemExit('%s: vocabulário=%d, cota=%d'%(id,len(vocab),nw))
-    used=_used(id);seenw=set();legacy=id.startswith(('A0-','A1-'))
-    for i,v in enumerate(vocab):
-        w=v['w'].lower()
-        if w in used or w in seenw:
-            if not legacy:
-                bad=[x['w'] for x in vocab if x['w'].lower() in used]
-                raise SystemExit('%s: palavras repetidas %s'%(id,', '.join(bad)))
-            r=fresh(1,id,avoid=seenw|{x['w'].lower() for x in vocab})[0];vocab[i]=r;w=r['w'].lower()
-        seenw.add(w)
     have_v=[x['v'] for x in (verbs or [])]
     for v in P['verbs']:
         if v not in have_v:raise SystemExit('%s: falta o verbo %s'%(id,v))

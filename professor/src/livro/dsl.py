@@ -63,7 +63,12 @@ def save(L):
     return L
 
 def lesson(id,title,cefr,level,unit,focus,targets,frames):
-    return save(dict(id=id,title=title,cefr=cefr,level=level,unit=unit,focus=focus,targets=targets,frames=frames))
+    L=dict(id=id,title=title,cefr=cefr,level=level,unit=unit,focus=focus,targets=targets,frames=frames)
+    try:
+        from post import fix
+        L=fix(L)
+    except ImportError:pass
+    return save(L)
 
 def write_index(ids_titles):
     json.dump({'lessons':[dict(id=i,title=t) for i,t in ids_titles]},open(OUT+'/index.json','w'),ensure_ascii=False,separators=(',',':'))
