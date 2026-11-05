@@ -94,6 +94,11 @@ def fix(L):
         if f['tag']=='Aquecimento':
             for b in f['blocks']:
                 if b['type']=='words':b['items']=[[v['w'],v['pt']] for v in kept]
+    for f0 in L['frames']:
+        if f0['tag']=='Abertura':
+            for b0 in f0['blocks']:
+                if b0['type']=='box' and isinstance(b0.get('body'),list):
+                    b0['body']=[re.sub(r'^\d+ palavras:',str(QUOTA[lv])+' palavras:',re.sub(r'\*\*\d+ palavras novas\*\*','**%d palavras novas**'%QUOTA[lv],i)) for i in b0['body']]
     L['targets']['words_min']=len(kept) if plan else QUOTA[lv];L['targets']['words']=[v['w'] for v in kept]
     # verbos
     f8=next(f for f in L['frames'] if f['tag']=='Verbos')
