@@ -7,6 +7,11 @@ try:
 except ImportError:
     FIELD={};EXPRS=[];VERBS=[]
 R=os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..'))
+_RES={}
+_rf=os.path.join(os.path.dirname(__file__),'reserved.txt')
+if os.path.exists(_rf) and not os.environ.get('COLLECT'):
+    for _l2 in open(_rf):
+        _a,_b=_l2.rstrip('\n').split('|',1);_RES[_b]=_a
 _PL={x['id']:x for x in json.load(open(R+'/data/livro/curriculo.json'))['lessons']}
 QUOTA={'A0':10,'A1':14,'A2':16,'B1':18,'B2':20,'C1':22,'C2':24}      # palavras novas por aula-núcleo
 EXPR_MIN={'A0':5,'A1':6,'A2':7,'B1':8,'B2':9,'C1':10,'C2':11}      # itens no quadro "Expressões desta aula"
@@ -29,6 +34,11 @@ def _scan(skip):
                 if b['type']=='table' and b.get('cap')=='Phrasal verbs':
                     for r in b['rows']:p[r[0].replace('*','').lower()]=d['id']
     return w,v,p,xs
+def _strs(o):
+    if isinstance(o,str):return [o]
+    if isinstance(o,dict):return [x for v in o.values() for x in _strs(v)]
+    if isinstance(o,list):return [x for v in o for x in _strs(v)]
+    return []
 def _V(r):
     q=r.split(';')
     if len(q)==4:q=[q[0],'word']+q
@@ -56,12 +66,23 @@ def fix(L):
         seen.add(w);kept.append(v)
     if len(kept)>QUOTA[lv]:kept=kept[:QUOTA[lv]]
     filled=[]
-    if len(kept)<QUOTA[lv]:
+    if os.environ.get('COLLECT'):
+        open(_rf,'a').write(''.join('%s|%s\n'%(id,v['w'].lower()) for v in kept))
+    elif len(kept)<QUOTA[lv]:
         fld=_PL[id]['field'].split(' (')[0]
-        for r in FIELD.get(fld,[])+[x for k,v in FIELD.items() if k!=fld for x in v]:
+        stems={w[:5] for w in re.findall(r'[a-z]{4,}',' '.join(_strs(L)).lower())}
+        cands=[]
+        for k,v in FIELD.items():
+            for j,r in enumerate(v):
+                q=_V(r);w=q['w'].lower()
+                if w in uw or w in seen or (w in _RES and _RES[w]!=id):continue
+                sc=sum(1 for t in re.findall(r'[a-z]{4,}',(q['w']+' '+q['ex']).lower()) if t[:5] in stems)
+                cands.append((-(sc*2+(1 if k==fld else 0)),j,q))
+        cands.sort(key=lambda c:(c[0],c[1]))
+        for _,_,q in cands:
             if len(kept)>=QUOTA[lv]:break
-            q=_V(r);w=q['w'].lower()
-            if w in uw or w in seen:continue
+            w=q['w'].lower()
+            if w in seen:continue
             seen.add(w);kept.append(q);filled.append(q['w'])
     if filled:open(os.path.join(os.path.dirname(__file__),'fills.txt'),'a').write('%s | %s | %s\n'%(id,L['title'][:38],', '.join(filled)))
     need=QUOTA[lv]-len(kept)
