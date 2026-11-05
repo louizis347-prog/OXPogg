@@ -29,7 +29,7 @@ Para cada nível, calculo quantas aulas cada pilar exige e adoto o **maior valor
 | B2 | 200 | 143 | 34 | 30 | 50 | 178 | horas guiadas | 200 | 26 | **226** |
 | C1 | 200 | 172 | 34 | 43 | 60 | 164 | horas guiadas | 200 | 26 | **226** |
 | C2 | 400 | 153 | 34 | 45 | 70 | 85 | horas guiadas | 400 | 50 | **450** |
-| **Total** | | | | | | | | | | **1418 aulas · 17016 quadros** |
+| **Total** | | | | | | | | | | **1400 aulas · 16800 quadros** |
 
 \* Estruturados = aulas de gramática (itens × etapas), padrões verbais, modais, gêneros escritos, contrastes lexicais, verbos-chave (15 por nível de A1 a C2), padrões de frase, formação de palavras, verbos irregulares, pronúncia e laboratórios de exame (TOEFL, IELTS e colleges canadenses, do B1 ao C2).
 
@@ -136,130 +136,121 @@ Os quadros 3 e 4 trazem sempre um gênero de texto autêntico diferente (notíci
 ## 7. Unidades
 
 
-### Pré-A1 · Zero absoluto (41 aulas, 12 unidades)
+### Pré-A1 · Zero absoluto (41 aulas, 3 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| A0-U01 | Identidade (name, first name, last name, age, country, city, | Pronomes pessoais; am/is/are afirmativa | 1–5 |
-| A0-U02 | Pessoas (man, woman, boy, girl, friend, teacher, student) | am/is/are afirmativa; am/is/are negativa | 6–10 |
-| A0-U03 | Cumprimentos (hello, hi, goodbye, good morning, good night) | am/is/are interrogativa e respostas curtas; Contrações (I’m, you’re, isn’t) | 11–15 |
-| A0-U04 | Família (mother, father, brother, sister, son, daughter) | Contrações (I’m, you’re, isn’t); Artigos básicos a/an/the | 16–20 |
-| A0-U05 | Objetos (book, pen, pencil, phone, computer, table, chair) | Singular e plural; Possessivos my/your/his/her | 21–25 |
-| A0-U06 | Números 0–100 (idade, telefone, preços simples) | Possessivos my/your/his/her; Demonstrativos this/that | 26–30 |
-| A0-U07 | Tempo (today, tomorrow, yesterday, morning, afternoon, eveni | Subject + be + adjective; Subject + be + noun | 31–35 |
-| A0-U08 | Cores (red, blue, green, black, white, yellow, brown) | Subject + be + noun; Subject + be + place | 36–40 |
-| A0-U09 | Lugares (home, school, work, store, restaurant, bathroom) | Subject + have + noun; Subject + like/need + noun | 41–45 |
-| A0-U10 | Necessidades (water, food, help, money, time) | Subject + like/need + noun; Wh-word + be (Where are you from?) | 46–50 |
-| A0-U11 | Dias da semana e meses | — | 51–55 |
-| A0-U12 | Palavras interrogativas | — | 56–59 |
+| A0-U01 | Identidade · Pessoas · Cumprimentos · Família | Pronomes pessoais; am/is/are afirmativa; am/is/are negativa | 1–14 |
+| A0-U02 | Objetos · Números 0–100 · Tempo · Cores | Artigos básicos a/an/the; Singular e plural; Possessivos my/your/his/her | 15–28 |
+| A0-U03 | Lugares · Necessidades · Dias da semana e meses · Palavras i | Subject + be + noun; Subject + be + place; Subject + have + noun | 29–41 |
 
 ### A1 · Beginner (116 aulas, 7 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| A1-U01 | Vida pessoal | Verb to be; Present Simple; Terceira pessoa -s/-es | 60–76 |
-| A1-U02 | Rotina | Present Simple × Continuous; Have / have got; There is / There are | 77–93 |
-| A1-U03 | Alimentação | Wh- questions; Articles (a, an, the e ausência); Countable / uncountable | 94–109 |
-| A1-U04 | Moradia | Adverbs of frequency; Prepositions of place; Prepositions of time | 110–126 |
-| A1-U05 | Trabalho | Adjective position; Like + -ing; Want / need + to | 127–142 |
-| A1-U06 | Lazer | — | 143–159 |
-| A1-U07 | Lugares | — | 160–175 |
+| A1-U01 | Vida pessoal | Verb to be; Present Simple; Terceira pessoa -s/-es | 42–58 |
+| A1-U02 | Rotina | Terceira pessoa -s/-es; Present Continuous; Present Simple × Continuous | 59–75 |
+| A1-U03 | Alimentação | There is / There are; Can / can’t; Imperatives | 76–91 |
+| A1-U04 | Moradia | Wh- questions; Articles (a, an, the e ausência); Countable / uncountable | 92–108 |
+| A1-U05 | Trabalho | Some / any; Adverbs of frequency; Prepositions of place | 109–124 |
+| A1-U06 | Lazer | Prepositions of time; Possessive adjectives/pronouns; Object pronouns | 125–141 |
+| A1-U07 | Lugares | Adjective position; Like + -ing; Want / need + to | 142–157 |
 
 ### A2 · Elementary / Pre-Intermediate (115 aulas, 7 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| A2-U01 | Viagens | Past Simple; Past Continuous | 176–192 |
-| A2-U02 | Compras | Contraste Past Continuous + Past Simple; Future; Present Continuous para futuro | 193–208 |
-| A2-U03 | Saúde cotidiana | Comparatives; Superlatives; Modals (should, must, have to, could) | 209–225 |
-| A2-U04 | Experiências | Too / enough; Infinitive of purpose; Zero Conditional | 226–241 |
-| A2-U05 | Serviços | Present Perfect | 242–258 |
-| A2-U06 | Planos | — | 259–274 |
-| A2-U07 | Problemas simples | — | 275–290 |
+| A2-U01 | Viagens | Past Simple | 158–174 |
+| A2-U02 | Compras | Past Simple; Past Continuous; Contraste Past Continuous + Past Simple | 175–190 |
+| A2-U03 | Saúde cotidiana | Contraste Past Continuous + Past Simple; Future; Present Continuous para futuro | 191–207 |
+| A2-U04 | Experiências | Present Continuous para futuro; Comparatives; Superlatives | 208–223 |
+| A2-U05 | Serviços | Modals (should, must, have to, could); don’t have to / mustn’t; Quantifiers (much, many, a lot of, a few, a little) | 224–240 |
+| A2-U06 | Planos | Too / enough; Infinitive of purpose; Zero Conditional | 241–256 |
+| A2-U07 | Problemas simples | First Conditional; Basic relative clauses (who, that, which); Present Perfect | 257–272 |
 
 ### B1 · Intermediate (226 aulas, 13 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| B1-U01 | Educação | Present Perfect; Present Perfect × Past Simple; Present Perfect Continuous | 291–308 |
-| B1-U02 | Educação | Present Perfect Continuous; Past Perfect; Used to | 309–325 |
-| B1-U03 | Relacionamentos | Would; Second Conditional; Modal deduction (must, might) | 326–343 |
-| B1-U04 | Relacionamentos | Basic Passive Voice; Present Passive; Reported Speech | 344–360 |
-| B1-U05 | Carreira | Indirect questions; Defining relative clauses; Question tags | 361–377 |
-| B1-U06 | Carreira | Verb + infinitive; Verb + gerund; Despite / although | 378–395 |
-| B1-U07 | Tecnologia | want someone to do; ask someone to do; tell someone to do | 396–412 |
-| B1-U08 | Tecnologia | enjoy doing; decide to do; be interested in doing | 413–430 |
-| B1-U09 | Cultura | spend time doing; It’s worth doing | 431–447 |
-| B1-U10 | Cultura | — | 448–464 |
-| B1-U11 | Notícias | — | 465–482 |
-| B1-U12 | Notícias | — | 483–499 |
-| B1-U13 | Sentimentos e decisões | — | 500–516 |
+| B1-U01 | Educação | Present Perfect; want someone to do | 273–290 |
+| B1-U02 | Educação · Relacionamentos | ask someone to do; Present Perfect × Past Simple; Present Perfect Continuous | 291–307 |
+| B1-U03 | Relacionamentos | Present Perfect Continuous; tell someone to do; Past Perfect | 308–325 |
+| B1-U04 | Relacionamentos · Carreira | let someone do; Used to; Would | 326–342 |
+| B1-U05 | Carreira | make someone do; Second Conditional; Modal deduction (must, might) | 343–359 |
+| B1-U06 | Carreira · Tecnologia | enjoy doing; Modal deduction (must, might); Modal impossibility (can’t) | 360–377 |
+| B1-U07 | Tecnologia | Basic Passive Voice; decide to do; Present Passive | 378–394 |
+| B1-U08 | Tecnologia · Cultura | Present Passive; be interested in doing; Reported Speech | 395–412 |
+| B1-U09 | Cultura | Indirect questions; be good at doing; Defining relative clauses | 413–429 |
+| B1-U10 | Cultura · Notícias | Defining relative clauses; be good at doing; Question tags | 430–446 |
+| B1-U11 | Notícias | Verb + infinitive; have trouble doing; spend time doing | 447–464 |
+| B1-U12 | Notícias · Sentimentos e decisões | Verb + gerund; spend time doing; Despite / although | 465–481 |
+| B1-U13 | Sentimentos e decisões | It’s worth doing; Despite / although; So / such | 482–498 |
 
 ### B2 · Upper-Intermediate (226 aulas, 13 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| B2-U01 | Sociedade | Present Perfect Continuous; Past Perfect Continuous; Future Continuous | 517–534 |
-| B2-U02 | Sociedade | Mixed Conditionals; Wish; If only | 535–551 |
-| B2-U03 | Sociedade | Modal Perfect; Advanced Passive Voice; Have/get something done | 552–569 |
-| B2-U04 | Economia básica | Reported questions and commands; Reporting verbs; Non-defining relative clauses | 570–586 |
-| B2-U05 | Economia básica | Contrast and concession (even though, despite, whereas); Discourse connectors (nevertheless, furthermore, consequently); prevent someone from doing | 587–603 |
-| B2-U06 | Meio ambiente | suggest doing; recommend that + clause; be likely to do | 604–621 |
-| B2-U07 | Meio ambiente | remember doing / remember to do; Possibilidade (may, might, could); Dedução forte (must, can’t) | 622–638 |
-| B2-U08 | Política como tema de discussão | Dedução sobre o passado (must have, can’t have); Crítica ou arrependimento (should have, shouldn’t have); Expectativa (be supposed to) | 639–656 |
-| B2-U09 | Política como tema de discussão | — | 657–673 |
-| B2-U10 | Ciência | — | 674–690 |
-| B2-U11 | Ciência | — | 691–708 |
-| B2-U12 | Desenvolvimento profissional | — | 709–725 |
-| B2-U13 | Desenvolvimento profissional | — | 726–742 |
+| B2-U01 | Sociedade | Present Perfect Continuous; prevent someone from doing; Possibilidade (may, might, could) | 499–516 |
+| B2-U02 | Sociedade | Future Continuous; Dedução forte (must, can’t); accuse someone of doing | 517–533 |
+| B2-U03 | Sociedade · Economia básica | Third Conditional; Conselho (should, ought to, had better); insist on doing | 534–551 |
+| B2-U04 | Economia básica | Wish; object to doing; Obrigação (must, have to, be required to) | 552–568 |
+| B2-U05 | Economia básica · Meio ambiente | If only; Ausência de obrigação (don’t have to, needn’t); recommend that + clause | 569–585 |
+| B2-U06 | Meio ambiente | Modal Perfect; be likely to do; Possibilidade no passado (might have, could have) | 586–603 |
+| B2-U07 | Meio ambiente · Política como tema de discussão | Modal Perfect; be likely to do; Possibilidade no passado (might have, could have) | 604–620 |
+| B2-U08 | Política como tema de discussão | Advanced Passive Voice; Dedução sobre o passado (must have, can’t have); be expected to do | 621–638 |
+| B2-U09 | Política como tema de discussão · Ciência | would rather do; Have/get something done; Reported questions and commands | 639–655 |
+| B2-U10 | Ciência | Reporting verbs; prefer doing A to doing B; Crítica ou arrependimento (should have, shouldn’t have) | 656–672 |
+| B2-U11 | Ciência · Desenvolvimento profissional | Non-defining relative clauses; Expectativa (be supposed to); stop doing / stop to do | 673–690 |
+| B2-U12 | Desenvolvimento profissional | Expectativa (be supposed to); Participle clauses; stop doing / stop to do | 691–707 |
+| B2-U13 | Desenvolvimento profissional | Contrast and concession (even though, despite, whereas); Discourse connectors (nevertheless, furthermore, consequently); Probabilidade (be likely to, be unlikely to) | 708–724 |
 
 ### C1 · Advanced (226 aulas, 13 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| C1-U01 | Negócios | Inversion after negative adverbials; Not only… but also; Hardly / scarcely | 743–760 |
-| C1-U02 | Negócios | Inverted hypothetical (Were I…); Cleft sentences; Pseudo-cleft sentences | 761–777 |
-| C1-U03 | Pesquisa | Advanced participle clauses; Perfect participle passive; Nominalization | 778–795 |
-| C1-U04 | Pesquisa | Mixed Conditionals; Advanced relative clauses; Concessive structures (Much as I admire…) | 796–812 |
-| C1-U05 | Comunicação intercultural | Ellipsis; Hedging; Advanced passive modality | 813–829 |
-| C1-U06 | Comunicação intercultural | refrain from doing; be inclined to do; take something into consideration | 830–847 |
-| C1-U07 | Problemas sociais | Academic essay; Report; Proposal | 848–864 |
-| C1-U08 | Problemas sociais | Critical review; Presentation; Debate | 865–882 |
-| C1-U09 | Análises | — | 883–899 |
-| C1-U10 | Análises | — | 900–916 |
-| C1-U11 | Negociações | — | 917–934 |
-| C1-U12 | Negociações | — | 935–951 |
-| C1-U13 | Pensamento crítico | — | 952–968 |
+| C1-U01 | Negócios | Inversion after negative adverbials; Academic essay; attribute something to something | 725–742 |
+| C1-U02 | Negócios · Pesquisa | Academic essay; Hardly / scarcely; distinguish something from something | 743–759 |
+| C1-U03 | Pesquisa | distinguish something from something; Inverted hypothetical (Were I…); Cleft sentences | 760–777 |
+| C1-U04 | Pesquisa · Comunicação intercultural | Proposal; Pseudo-cleft sentences; refrain from doing | 778–794 |
+| C1-U05 | Comunicação intercultural | Advanced participle clauses; Formal email; Perfect participle passive | 795–811 |
+| C1-U06 | Comunicação intercultural · Problemas sociais | Formal email; Nominalization; take something into consideration | 812–829 |
+| C1-U07 | Problemas sociais | Reporting passive; take something into consideration; Critical review | 830–846 |
+| C1-U08 | Problemas sociais · Análises | Subjunctive constructions; Critical review; account for something | 847–864 |
+| C1-U09 | Análises | Mixed Conditionals; Advanced relative clauses; account for something | 865–881 |
+| C1-U10 | Análises · Negociações | Concessive structures (Much as I admire…); give rise to something; Presentation | 882–898 |
+| C1-U11 | Negociações | Future Perfect Continuous; Presentation; give rise to something | 899–916 |
+| C1-U12 | Negociações · Pensamento crítico | Debate; Ellipsis; be subject to something | 917–933 |
+| C1-U13 | Pensamento crítico | Hedging; Advanced passive modality; be subject to something | 934–950 |
 
 ### C2 · Proficiency (450 aulas, 25 unidades)
 
 | Unidade | Campo vocabular | Foco gramatical e estrutural | Aulas |
 |---|---|---|---|
-| C2-U01 | Linguagem especializada | Controle de estruturas hipotéticas; Contrastes sutis (not so much… as…) | 969–986 |
-| C2-U02 | Linguagem especializada | Contrastes sutis (not so much… as…); Concessões sofisticadas | 987–1004 |
-| C2-U03 | Linguagem especializada | Concessões sofisticadas; Inversão estilística | 1005–1022 |
-| C2-U04 | Linguagem especializada | Inversão estilística; Reformulação de ênfase | 1023–1040 |
-| C2-U05 | Discurso público | Reformulação de ênfase; Qualificação de afirmações | 1041–1058 |
-| C2-U06 | Discurso público | Qualificação de afirmações; Argumentação contrafactual | 1059–1076 |
-| C2-U07 | Discurso público | Expressões de avaliação | 1077–1094 |
-| C2-U08 | Discurso público | Redução e condensação; Ambiguidade intencional | 1095–1112 |
-| C2-U09 | Filosofia | Ambiguidade intencional; claim × assert × allege × contend | 1113–1130 |
-| C2-U10 | Filosofia | claim × assert × allege × contend; suggest × imply × infer | 1131–1148 |
-| C2-U11 | Filosofia | convince × persuade; presume × assume | 1149–1166 |
-| C2-U12 | Literatura | mitigate × alleviate; accurate × precise | 1167–1184 |
-| C2-U13 | Literatura | accurate × precise; plausible × possible × probable; Informal | 1185–1202 |
-| C2-U14 | Literatura | Informal; Profissional | 1203–1220 |
-| C2-U15 | Literatura | Diplomático; Analítico/acadêmico | 1221–1238 |
-| C2-U16 | Argumentação complexa | Analítico/acadêmico | 1239–1256 |
-| C2-U17 | Argumentação complexa | — | 1257–1274 |
-| C2-U18 | Argumentação complexa | — | 1275–1292 |
-| C2-U19 | Retórica | — | 1293–1310 |
-| C2-U20 | Retórica | — | 1311–1328 |
-| C2-U21 | Retórica | — | 1329–1346 |
-| C2-U22 | Retórica | — | 1347–1364 |
-| C2-U23 | Nuances culturais | — | 1365–1382 |
-| C2-U24 | Nuances culturais | — | 1383–1400 |
-| C2-U25 | Nuances culturais | — | 1401–1418 |
+| C2-U01 | Linguagem especializada | Controle de estruturas hipotéticas; claim × assert × allege × contend | 951–968 |
+| C2-U02 | Linguagem especializada | Informal; Controle de estruturas hipotéticas | 969–986 |
+| C2-U03 | Linguagem especializada | claim × assert × allege × contend; Contrastes sutis (not so much… as…) | 987–1004 |
+| C2-U04 | Linguagem especializada · Discurso público | suggest × imply × infer; Contrastes sutis (not so much… as…) | 1005–1022 |
+| C2-U05 | Discurso público | Informal; Concessões sofisticadas | 1023–1040 |
+| C2-U06 | Discurso público | Concessões sofisticadas; suggest × imply × infer | 1041–1058 |
+| C2-U07 | Discurso público | Profissional; Inversão estilística | 1059–1076 |
+| C2-U08 | Discurso público · Filosofia | convince × persuade; Inversão estilística | 1077–1094 |
+| C2-U09 | Filosofia | Inversão estilística; convince × persuade; Reformulação de ênfase | 1095–1112 |
+| C2-U10 | Filosofia | Profissional; Reformulação de ênfase | 1113–1130 |
+| C2-U11 | Filosofia · Literatura | presume × assume; Reformulação de ênfase | 1131–1148 |
+| C2-U12 | Literatura | Qualificação de afirmações; presume × assume | 1149–1166 |
+| C2-U13 | Literatura | Qualificação de afirmações; Diplomático | 1167–1184 |
+| C2-U14 | Literatura | Qualificação de afirmações; mitigate × alleviate | 1185–1202 |
+| C2-U15 | Literatura · Argumentação complexa | Argumentação contrafactual | 1203–1220 |
+| C2-U16 | Argumentação complexa | Argumentação contrafactual; mitigate × alleviate | 1221–1238 |
+| C2-U17 | Argumentação complexa | Diplomático | 1239–1256 |
+| C2-U18 | Argumentação complexa · Retórica | Expressões de avaliação; accurate × precise | 1257–1274 |
+| C2-U19 | Retórica | Expressões de avaliação | 1275–1292 |
+| C2-U20 | Retórica | Analítico/acadêmico; Redução e condensação | 1293–1310 |
+| C2-U21 | Retórica | accurate × precise; Redução e condensação | 1311–1328 |
+| C2-U22 | Retórica · Nuances culturais | Redução e condensação | 1329–1346 |
+| C2-U23 | Nuances culturais | plausible × possible × probable; Ambiguidade intencional | 1347–1364 |
+| C2-U24 | Nuances culturais | Analítico/acadêmico; Ambiguidade intencional; plausible × possible × probable | 1365–1382 |
+| C2-U25 | Nuances culturais | Ambiguidade intencional | 1383–1400 |
 
 ## 8. Honestidade sobre a produção
 

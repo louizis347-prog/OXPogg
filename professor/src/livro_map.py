@@ -89,6 +89,18 @@ def build():
         for fm in FORM_BY.get(l,[]):agenda.append(('Formação de palavras',fm,'Formação: '+fm)) if len([a for a in agenda if a[0]=='Formação de palavras'])<FORM_LESSONS.get(l,0) else None
         for pn in PRON.get(l,[]):agenda.append(('Pronúncia',pn,'Pronúncia: '+pn))
         for ex in range(EXAM[l]):agenda.append(('Exame','Laboratório de exame %d (TOEFL · IELTS · college)'%(ex+1),'Exame'))
+        # sequência pedagógica: cada categoria é espalhada por todo o nível (em vez de ficar toda no fim);
+        # no A0 o alfabeto e os sons abrem o curso; os laboratórios de exame ficam na segunda metade
+        cats={}
+        for a in agenda:cats.setdefault(a[0],[]).append(a)
+        keyed=[]
+        for ci_,(cat,its) in enumerate(cats.items()):
+            for j,a in enumerate(its):
+                f=(j+0.5)/len(its)
+                if cat=='Exame':f=0.45+0.55*f
+                if l=='A0' and cat=='Pronúncia' and j<2:f=0.0005*(j+1)
+                keyed.append((f,ci_,j,a))
+        agenda=[a for _,_,_,a in sorted(keyed,key=lambda t:(t[0],t[1],t[2]))]
         core=L-p['review']
         # agenda mais curta que o núcleo → completa com aulas temáticas de comunicação integrada
         slots=[None]*core
@@ -96,7 +108,7 @@ def build():
         for i,a in zip(pos,agenda):slots[i]=a
         if len(agenda)>core:raise SystemExit('agenda maior que o núcleo em '+l)
         # unidades: blocos contíguos por campo vocabular
-        nunits=max(len(fields),math.ceil(L/18));per=L/nunits
+        nunits=math.ceil(p['base']/16);per=L/nunits;cur_f=fields[0]
         verbs=spread(VERBS_NEW[l],core);pvs=spread(PV_NEW[l],core);ex=spread(EXPR_NEW[l],core)
         irr=[]
         q=p['delta']['lex']/core
@@ -112,17 +124,18 @@ def build():
             full.append(('review',k));full.append(('assess',k))
         lu=[]
         for u in range(nunits):
-            fld=fields[min(len(fields)-1,u*len(fields)//nunits)]
-            lu.append(dict(id='%s-U%02d'%(l,u+1),level=l,idx=u+1,field=fld,lessons=0,first=None,last=None,focus=[]))
+            lu.append(dict(id='%s-U%02d'%(l,u+1),level=l,idx=u+1,field='',fl=[],lessons=0,first=None,last=None,focus=[]))
         units+=lu
         ucur=0;ulesson_idx=[]
         # atribui unidade por posição proporcional
         for pos_i,(kind,i) in enumerate(full):
             u=min(nunits-1,pos_i*nunits//len(full));un=lu[u]
             gid+=1;n=pos_i+1
-            ls=dict(id='%s-L%03d'%(l,n),g=gid,level=l,unit=un['id'],n=n,kind=kind,field=un['field'])
+            if kind=='core':cur_f=fields[min(len(fields)-1,i*len(fields)//core)]
+            if cur_f not in un['fl']:un['fl'].append(cur_f)
+            ls=dict(id='%s-L%03d'%(l,n),g=gid,level=l,unit=un['id'],n=n,kind=kind,field=cur_f)
             if kind=='core':
-                a=slots[i];ls['type']=a[0] if a else 'Comunicação integrada';ls['focus']=a[1] if a else 'Comunicação integrada: %s'%un['field']
+                a=slots[i];ls['type']=a[0] if a else 'Comunicação integrada';ls['focus']=a[1] if a else 'Comunicação integrada: %s'%cur_f.split(' (')[0]
                 ls['trace']=a[2] if a else ''
                 ls['words']=round(q);ls['verbs']=verbs[i];ls['pv']=pvs[i];ls['expr']=ex[i]
                 ls['pron']=PRON[l][i%len(PRON[l])] if l in PRON else ''
@@ -136,6 +149,9 @@ def build():
             if ls.get('trace') and len(un['focus'])<3 and ls['type'] in('Gramática','Padrão verbal','Modais','Gênero escrito','Precisão lexical','Registro'):
                 if ls['focus'].split(' — ')[0] not in un['focus']:un['focus'].append(ls['focus'].split(' — ')[0])
             lessons.append(ls)
+        for un in lu:
+            un['field']=' · '.join(f.split(' (')[0] for f in un['fl']);del un['fl']
+        assert sum(1 for x in lessons if x['level']==l)==L,(l,L)
         levels.append(dict(k=l,cefr=NAMES[l][0],name=NAMES[l][1],goal=GOAL[l],criterion=CRITERIA[l],lessons=L,plan={k:v for k,v in p.items() if k in('delta','cum','need','binding','base','review','gram_lessons','extra','ded')},targets=TARGETS[l],units=nunits))
     out=dict(course='Inglês do zero absoluto ao C2 · inglês americano',frames=12,levels=levels,units=units,lessons=lessons,total_lessons=len(lessons),total_frames=len(lessons)*12)
     json.dump(out,open(R+'/professor/data/livro/curriculo.json','w'),ensure_ascii=False,separators=(',',':'))
