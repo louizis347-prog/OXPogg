@@ -56,6 +56,7 @@ def fix(L):
     for v in vb['items']:
         w=v['w'].lower()
         if w in uw:
+            open('dropped.txt','a').write('%s|%s\n'%(id,v['w']))
             continue
         kept.append(v)
     seen={v['w'].lower() for v in kept}
