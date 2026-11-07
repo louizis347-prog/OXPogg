@@ -109,3 +109,15 @@ body{font:500 1rem/1.7 var(--sans);color:#10202E}
 .lab .chip.slow{background:var(--soft)}.lab .sh{display:flex;gap:6px;align-items:center;margin:8px 0;flex-wrap:wrap}.lab .sh .en{flex:1;min-width:200px;font-weight:600}
 .words .w b,.vi .t b{font-weight:800}
 .top .pill{white-space:nowrap}.top h1{min-width:0}
+/* v3b: laboratório, armadilha, prática extra, expressões com exemplo */
+.trap{border:2px solid #E9A93B;border-radius:16px;padding:12px 14px;margin:14px 0;background:rgba(233,169,59,.10)}
+.trap h3{margin:0 0 8px;font:800 1.1rem var(--sans)}.trap h3 small{font:600 .78rem var(--sans);color:var(--mut);margin-left:6px}
+.trap .tw{margin:4px 0;color:#9B2C25}.trap .tr{margin:4px 0;color:#1F6B43;font-weight:600}.trap .why{margin:8px 0 0}
+.row{display:flex;gap:8px;margin:6px 0}.row input{flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:9px 11px;font:inherit;background:var(--page);color:inherit}
+.ec .xe{display:block;margin-top:6px;padding:6px 8px;border-left:3px solid var(--cta,#F2672B);background:rgba(127,127,127,.07);border-radius:6px;font-size:.93rem;color:var(--ink)}
+.ec .xe em{color:#4A5563;font-style:normal;font-size:.88rem}.ec .xt{display:block;margin-top:4px;font-size:.85rem;color:#4A5563}
+.ec .say.sm{width:26px;height:26px;font-size:12px;background:var(--soft);color:var(--pri)}
+.rg{font:800 .66rem var(--sans);text-transform:uppercase;border-radius:6px;padding:1px 6px;margin-left:6px;background:#E8EEF3;color:#2B4256;font-style:normal;vertical-align:middle}.rg.informal{background:#FFE6D6;color:#9A3F10}.rg.formal{background:#E3E8F7;color:#243A7A}
+.lab .ipa{font:600 .95rem var(--sans);color:var(--pri);margin-left:8px}.lab .br{background:rgba(233,169,59,.14);border-radius:10px;padding:8px 10px;margin:8px 0}
+.lab .sub{font:800 .78rem var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:12px 0 4px}
+.lab .pairs{display:grid;gap:6px}.lab .pr{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.lab .vs{font-weight:800;color:var(--mut)}
