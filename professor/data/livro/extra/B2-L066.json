@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish I saved more when I was young.",
+"right": "I wish I had saved more when I was young.",
+"why": "Em português “queria ter economizado”, o brasileiro usa o passado simples. Para arrependimento use wish + had + particípio."
+},
+"mcq": [
+{
+"q": "Regret can **___** us a lot.",
+"opts": [
+"to teach",
+"teach",
+"teaches"
+],
+"ans": 1,
+"why": "Modal + base."
+},
+{
+"q": "I wish I **___** more.",
+"opts": [
+"saved",
+"would save",
+"had saved"
+],
+"ans": 2,
+"why": "Had + part."
+},
+{
+"q": "Exemplo de arrependimento:",
+"opts": [
+"I wish I call her.",
+"I wish I will call her.",
+"I wish I had called her."
+],
+"ans": 2,
+"why": "Had called."
+},
+{
+"q": "Particípio de choose:",
+"opts": [
+"chose",
+"choosed",
+"chosen"
+],
+"ans": 2,
+"why": "Chosen."
+}
+],
+"fix": [
+{
+"wrong": "I wish I chose another job.",
+"right": "I wish I had chosen another job.",
+"why": "Particípio."
+},
+{
+"wrong": "He wishes he didn’t quit.",
+"right": "He wishes he hadn’t quit.",
+"why": "Hadn’t."
+},
+{
+"wrong": "I wish I would have studied.",
+"right": "I wish I had studied.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I didn’t call her.” (I wish…)",
+"answer": "I wish I had called her.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He quit.” (He wishes… not)",
+"answer": "He wishes he hadn’t quit.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We spent too much.” (We wish… not)",
+"answer": "We wish we hadn’t spent so much.",
+"why": ""
+}
+]
+}

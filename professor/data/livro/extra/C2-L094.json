@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Consider a recent notice: “Pursuant at the policy…”",
+"right": "Consider a recent notice: “Pursuant to the policy…”",
+"why": "Português “conforme a”; pursuant exige to."
+},
+"mcq": [
+{
+"q": "Pursuant ___ the policy",
+"opts": [
+"with",
+"to",
+"for"
+],
+"ans": 1,
+"why": "Pursuant to."
+},
+{
+"q": "Consider…",
+"opts": [
+"asks a question",
+"ends",
+"introduces an example"
+],
+"ans": 2,
+"why": "Exemplo."
+},
+{
+"q": "Ironic translation:",
+"opts": [
+"Meaning send form.",
+"What it means: send us the form.",
+"It means to send us."
+],
+"ans": 1,
+"why": "What it means."
+},
+{
+"q": "“Pursuant to” is…",
+"opts": [
+"formal",
+"rare in law",
+"slang"
+],
+"ans": 0,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "Considers a recent notice.",
+"right": "Consider a recent notice.",
+"why": "Imperativo."
+},
+{
+"wrong": "What it mean: send us the form.",
+"right": "What it means: send us the form.",
+"why": "-s."
+},
+{
+"wrong": "Pursuant with the policy, we write.",
+"right": "Pursuant to the policy, we write.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Traduza com pursuant to: “According to the policy, we write.”",
+"answer": "Pursuant to the policy, we write.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “What it means is clear.”",
+"answer": "What it meant was clear.",
+"why": ""
+},
+{
+"prompt": "Imperativo negativo: “Consider the notice.”",
+"answer": "Don’t consider the notice.",
+"why": ""
+}
+]
+}

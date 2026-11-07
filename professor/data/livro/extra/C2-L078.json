@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "I enganei our customers about fees. I take full responsibility.",
+"right": "I misled our customers about fees. I take full responsibility.",
+"why": "Em português “enganar” cai em deceive/cheat; “mislead” é induzir ao erro, e a responsabilidade se assume com take."
+},
+"mcq": [
+{
+"q": "Naming the harm:",
+"opts": [
+"I misled our customers.",
+"Customers misled.",
+"Mistakes were made."
+],
+"ans": 0,
+"why": "Voz ativa."
+},
+{
+"q": "Take responsibility:",
+"opts": [
+"I have responsibility fault.",
+"I take full responsibility.",
+"I make responsibility."
+],
+"ans": 1,
+"why": "take."
+},
+{
+"q": "Credibility comes from…",
+"opts": [
+"hiding the agent",
+"owning the action",
+"apologizing twice"
+],
+"ans": 1,
+"why": "Autoria."
+},
+{
+"q": "Which hides the agent?",
+"opts": [
+"I misled customers.",
+"We misled customers.",
+"Customers were misled."
+],
+"ans": 2,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "I make full responsibility.",
+"right": "I take full responsibility.",
+"why": "take."
+},
+{
+"wrong": "I misled to our customers.",
+"right": "I misled our customers.",
+"why": "Transitivo."
+},
+{
+"wrong": "I regret that I mislead them.",
+"right": "I regret that I misled them.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Ativa: “Customers were misled by me.”",
+"answer": "I misled customers.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “I take responsibility.”",
+"answer": "We take responsibility.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “I misled them.”",
+"answer": "I did not mislead them.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo be omitido",
+"wrong": "My sister very tall.",
+"right": "My sister is very tall.",
+"why": "Em português o verbo ser/estar existe, mas o brasileiro às vezes o omite ao falar rápido de características; em inglês o be é obrigatório."
+},
+"mcq": [
+{
+"q": "I ___ a student.",
+"opts": [
+"am",
+"is",
+"are"
+],
+"ans": 0,
+"why": "I combina com am."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He no is a doctor.",
+"He is not a doctor.",
+"He doesn’t a doctor."
+],
+"ans": 1,
+"why": "Not após is."
+},
+{
+"q": "Is he a doctor? — ___",
+"opts": [
+"No, he doesn’t.",
+"No, he no.",
+"No, he isn’t."
+],
+"ans": 2,
+"why": "Resposta com isn’t."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I’m not tired.",
+"Im not tired.",
+"I’am not tired."
+],
+"ans": 0,
+"why": "I’m."
+}
+],
+"fix": [
+{
+"wrong": "I is a student.",
+"right": "I am a student.",
+"why": "I só usa am."
+},
+{
+"wrong": "I not am hungry.",
+"right": "I am not hungry.",
+"why": "Not depois de am."
+},
+{
+"wrong": "Do you tired?",
+"right": "Are you tired?",
+"why": "Be não usa do."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a negativa: “The bread is cold.”",
+"answer": "The bread is not cold.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “He is a student.”",
+"answer": "Is he a student?",
+"why": ""
+},
+{
+"prompt": "Use contração com isn’t: “She is not here.”",
+"answer": "She isn’t here.",
+"why": ""
+}
+]
+}

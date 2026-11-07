@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If scientists would have been listened to, we would have fewer floods now.",
+"right": "If scientists had been listened to, we would have fewer floods now.",
+"why": "Português usa “tivessem sido ouvidos”; o brasileiro usa would na if. Misto: if + had been + particípio, would + base."
+},
+"mcq": [
+{
+"q": "If we had acted, we **___** safer now.",
+"opts": [
+"had been",
+"would have been",
+"would be"
+],
+"ans": 2,
+"why": "Presente."
+},
+{
+"q": "If scientists **___** listened to, we’d be safe.",
+"opts": [
+"would have been",
+"were",
+"had been"
+],
+"ans": 2,
+"why": "Passiva 3º."
+},
+{
+"q": "Estrutura passiva do 3º:",
+"opts": [
+"would been + particípio",
+"has been + particípio",
+"had been + particípio"
+],
+"ans": 2,
+"why": "Had been."
+},
+{
+"q": "Misto expressa:",
+"opts": [
+"passado que afeta o presente",
+"hábito",
+"futuro certo"
+],
+"ans": 0,
+"why": "Passado → presente."
+}
+],
+"fix": [
+{
+"wrong": "If scientists would have been heard, floods wouldn’t happen.",
+"right": "If scientists had been heard, floods wouldn’t be so frequent.",
+"why": "Had been."
+},
+{
+"wrong": "If we have acted earlier, we would be safe.",
+"right": "If we had acted earlier, we would be safe.",
+"why": "Had."
+},
+{
+"wrong": "If they had been warned, they will be safe now.",
+"right": "If they had been warned, they would be safe now.",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Combine: “Nobody listened to scientists, so we have floods.”",
+"answer": "If scientists had been listened to, we wouldn’t have floods.",
+"why": ""
+},
+{
+"prompt": "Combine: “We didn’t act, so we aren’t safe.”",
+"answer": "If we had acted, we would be safe.",
+"why": ""
+},
+{
+"prompt": "Passiva: “If they had warned us, we would be safe.”",
+"answer": "If we had been warned, we would be safe.",
+"why": ""
+}
+]
+}

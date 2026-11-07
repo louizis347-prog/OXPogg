@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Seldom a speaker does end on time.",
+"right": "Seldom does a speaker end on time.",
+"why": "Português não inverte após “raramente”; inglês exige aux antes do sujeito."
+},
+"mcq": [
+{
+"q": "Stylistic inversion:",
+"opts": [
+"Seldom does ends a speaker.",
+"Seldom a speaker ends on time.",
+"Seldom does a speaker end on time."
+],
+"ans": 2,
+"why": "does + base."
+},
+{
+"q": "Verdict:",
+"opts": [
+"In points she win.",
+"On point wins she.",
+"On points, she won."
+],
+"ans": 2,
+"why": "On points."
+},
+{
+"q": "Had the candidates…",
+"opts": [
+"to listen, …",
+"listen, …",
+"listened, …"
+],
+"ans": 2,
+"why": "Had + particípio."
+},
+{
+"q": "Review ends with…",
+"opts": [
+"a joke",
+"a question",
+"a verdict"
+],
+"ans": 2,
+"why": "Veredito."
+}
+],
+"fix": [
+{
+"wrong": "Seldom a speaker ends on time.",
+"right": "Seldom does a speaker end on time.",
+"why": "does."
+},
+{
+"wrong": "Had the candidates listen, they would…",
+"right": "Had the candidates listened, they would…",
+"why": "Particípio."
+},
+{
+"wrong": "On points, she win.",
+"right": "On points, she won.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “A speaker seldom ends on time.”",
+"answer": "Seldom does a speaker end on time.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Had: “If the candidates had listened, they would have won.”",
+"answer": "Had the candidates listened, they would have won.",
+"why": ""
+},
+{
+"prompt": "Dê veredito em passado: “She wins on points.”",
+"answer": "She won on points.",
+"why": ""
+}
+]
+}

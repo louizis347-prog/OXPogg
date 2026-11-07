@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Having been + pp",
+"wrong": "Having warned, they stayed calm.",
+"right": "Having been warned, they stayed calm.",
+"why": "Em português “avisados, ficaram calmos” é passivo sem auxiliar. Em inglês, a forma passiva exige been."
+},
+"mcq": [
+{
+"q": "___ warned, they stayed calm.",
+"opts": [
+"Having",
+"Being have",
+"Having been"
+],
+"ans": 2,
+"why": "Having been."
+},
+{
+"q": "Not ___ trained, he failed.",
+"opts": [
+"having been",
+"been having",
+"having"
+],
+"ans": 0,
+"why": "Not having been."
+},
+{
+"q": "Passive means the subject…",
+"opts": [
+"is absent",
+"receives the action",
+"does the action"
+],
+"ans": 1,
+"why": "Recebe."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Having told, she left (she was told).",
+"Been told, she left.",
+"Having been told, she left."
+],
+"ans": 2,
+"why": "Having been."
+}
+],
+"fix": [
+{
+"wrong": "Having warned, they stayed calm.",
+"right": "Having been warned, they stayed calm.",
+"why": "been."
+},
+{
+"wrong": "Not having train, he failed.",
+"right": "Not having been trained, he failed.",
+"why": "been + pp."
+},
+{
+"wrong": "Having been warn, they stayed.",
+"right": "Having been warned, they stayed.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Particípio passivo: “Because they had been warned, they stayed calm.”",
+"answer": "Having been warned, they stayed calm.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Because he had not been trained, he failed.”",
+"answer": "Not having been trained, he failed.",
+"why": ""
+},
+{
+"prompt": "Particípio passivo: “After it had been tested, it was approved.”",
+"answer": "Having been tested, it was approved.",
+"why": ""
+}
+]
+}

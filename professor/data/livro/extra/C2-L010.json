@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "claim × reclamar",
+"wrong": "She claimed about the noise to the landlord.",
+"right": "She complained about the noise to the landlord.",
+"why": "Em português “reclamar” pode se traduzir por claim por semelhança com “reclamação”. Em inglês, claim é afirmar; reclamar de algo é complain."
+},
+"mcq": [
+{
+"q": "Strongest commitment:",
+"opts": [
+"claim",
+"assert",
+"allege"
+],
+"ans": 1,
+"why": "assert."
+},
+{
+"q": "An unproved accusation of a crime:",
+"opts": [
+"contend",
+"assert",
+"allege"
+],
+"ans": 2,
+"why": "allege."
+},
+{
+"q": "“Counsel ___ that the contract is void.” (argues a position)",
+"opts": [
+"contends",
+"alleges",
+"claims to be"
+],
+"ans": 0,
+"why": "contend."
+},
+{
+"q": "Which has the weakest attribution?",
+"opts": [
+"She is an expert.",
+"She claims to be an expert.",
+"She proved it."
+],
+"ans": 1,
+"why": "Sem endosso."
+}
+],
+"fix": [
+{
+"wrong": "Police alleged him of theft.",
+"right": "Police alleged that he committed theft.",
+"why": "allege that."
+},
+{
+"wrong": "He asserted that was innocent.",
+"right": "He asserted that he was innocent.",
+"why": "Sujeito."
+},
+{
+"wrong": "The council claim costs fell.",
+"right": "The council claims costs fell.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com allege: “Police say, without proof, that he stole.” (allege that)",
+"answer": "Police allege that he stole.",
+"why": ""
+},
+{
+"prompt": "Reescreva com claims: “The council says costs fell, but nobody checked.” (The council claims…)",
+"answer": "The council claims costs fell.",
+"why": ""
+},
+{
+"prompt": "Reescreva com asserted: “He firmly said he was innocent.”",
+"answer": "He asserted that he was innocent.",
+"why": ""
+}
+]
+}

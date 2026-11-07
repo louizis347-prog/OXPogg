@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "som e grafia",
+"wrong": "Didja see it? (escrita formal)",
+"right": "Did you see it?",
+"why": "Brasileiros transcrevem a fala ligada (didja, pickit up) na escrita. A ligação e a assimilação (did you → /dɪdʒə/) são fenômenos de som, não de grafia."
+},
+"mcq": [
+{
+"q": "did you em fala rápida soa:",
+"opts": [
+"dity",
+"did-you separado",
+"didja"
+],
+"ans": 2,
+"why": "Assimilação."
+},
+{
+"q": "pick it up soa:",
+"opts": [
+"pik-ap",
+"pick-it-up",
+"pi-ki-dup"
+],
+"ans": 2,
+"why": "Ligação."
+},
+{
+"q": "Na escrita se escreve:",
+"opts": [
+"Dija",
+"Did you",
+"Didja"
+],
+"ans": 1,
+"why": "Padrão."
+},
+{
+"q": "Assimilação ocorre quando:",
+"opts": [
+"d + y se fundem",
+"vogal cai",
+"h aparece"
+],
+"ans": 0,
+"why": "/dj/ → /dʒ/."
+}
+],
+"fix": [
+{
+"wrong": "Didja call her?",
+"right": "Did you call her?",
+"why": "Escrita padrão."
+},
+{
+"wrong": "Whadaya want?",
+"right": "What do you want?",
+"why": "Padrão."
+},
+{
+"wrong": "I pikitup.",
+"right": "I pick it up.",
+"why": "Padrão."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva por extenso: “Whaddaya want?”",
+"answer": "What do you want?",
+"why": ""
+},
+{
+"prompt": "Escreva por extenso: “Wouldja help me?”",
+"answer": "Would you help me?",
+"why": ""
+},
+{
+"prompt": "Escreva por extenso: “Pickitup.”",
+"answer": "Pick it up.",
+"why": ""
+}
+]
+}

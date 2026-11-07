@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in vs of",
+"wrong": "He is the fastest of the team.",
+"right": "He is the fastest in the team.",
+"why": "Em português usamos 'da equipe' (de); em inglês, depois do superlativo usa-se in + grupo/lugar, of + plural."
+},
+"mcq": [
+{
+"q": "She is the smartest ___ the class.",
+"opts": [
+"at",
+"of",
+"in"
+],
+"ans": 2,
+"why": "in."
+},
+{
+"q": "He is the best ___ all.",
+"opts": [
+"in",
+"of",
+"at"
+],
+"ans": 1,
+"why": "of all."
+},
+{
+"q": "It is the ___ in Brazil. (largest)",
+"opts": [
+"most large",
+"largest",
+"larger"
+],
+"ans": 1,
+"why": "-est."
+},
+{
+"q": "This is the ___ day.",
+"opts": [
+"worst",
+"baddest",
+"most bad"
+],
+"ans": 0,
+"why": "worst."
+}
+],
+"fix": [
+{
+"wrong": "The biggest of the city.",
+"right": "The biggest in the city.",
+"why": "in."
+},
+{
+"wrong": "It is the baddest day.",
+"right": "It is the worst day.",
+"why": "worst."
+},
+{
+"wrong": "He is the best in all.",
+"right": "He is the best of all.",
+"why": "of all."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “She is the ___ (young) in her class.”",
+"answer": "She is the youngest in her class.",
+"why": ""
+},
+{
+"prompt": "Complete: “It's the ___ (bad) film.”",
+"answer": "It's the worst film.",
+"why": ""
+},
+{
+"prompt": "Complete: “He is the ___ (good) of all.”",
+"answer": "He is the best of all.",
+"why": ""
+}
+]
+}

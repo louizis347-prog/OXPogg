@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "I study now.",
+"right": "I am studying now.",
+"why": "Em português \"estudo agora\" funciona com o presente simples; em inglês, ação em andamento exige be + -ing."
+},
+"mcq": [
+{
+"q": "Right now: I ___ TV.",
+"opts": [
+"am watching",
+"watch",
+"watches"
+],
+"ans": 0,
+"why": "Be + -ing."
+},
+{
+"q": "Now: They ___ football.",
+"opts": [
+"play",
+"are playing",
+"plays"
+],
+"ans": 1,
+"why": "Agora."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She needs.",
+"She a pen needs.",
+"She needs a pen."
+],
+"ans": 2,
+"why": "Verbo transitivo precisa de objeto."
+},
+{
+"q": "Question: “You have got a cat.”",
+"opts": [
+"Have you got a cat?",
+"Do you got a cat?",
+"You have got a cat?"
+],
+"ans": 0,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "I studying now.",
+"right": "I am studying now.",
+"why": "Falta be."
+},
+{
+"wrong": "I am walking to work every day.",
+"right": "I walk to work every day.",
+"why": "Hábito: simples."
+},
+{
+"wrong": "He buys every day.",
+"right": "He buys bread every day.",
+"why": "Falta objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Mude para agora: “She reads every night.”",
+"answer": "She is reading now.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “eats / Tom / an apple”",
+"answer": "Tom eats an apple.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You have got a car.”",
+"answer": "Have you got a car?",
+"why": ""
+}
+]
+}

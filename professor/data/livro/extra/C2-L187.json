@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "subjuntivo",
+"wrong": "Referee 2 suggests that the section is shortened.",
+"right": "Referee 2 suggests that the section be shortened.",
+"why": "Português usa subjuntivo ou indicativo livremente; em inglês formal, suggest that pede verbo na forma base (subjuntivo), sem -s ou is."
+},
+"mcq": [
+{
+"q": "Formal recommendation:",
+"opts": [
+"The editor suggests that the section be shortened.",
+"The editor suggests the section to shorten.",
+"The editor suggests that the section is shortened."
+],
+"ans": 0,
+"why": "Base."
+},
+{
+"q": "Insist that she ___ present.",
+"opts": [
+"to be",
+"be",
+"is"
+],
+"ans": 1,
+"why": "Subjuntivo."
+},
+{
+"q": "Must be a…",
+"opts": [
+"joke",
+"verb",
+"requirement"
+],
+"ans": 2,
+"why": "Exigência."
+},
+{
+"q": "It is essential that he ___ early.",
+"opts": [
+"arrive",
+"arriving",
+"arrives"
+],
+"ans": 0,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "The editor suggests that she submits it.",
+"right": "The editor suggests that she submit it.",
+"why": "Base."
+},
+{
+"wrong": "They recommend that he to leave.",
+"right": "They recommend that he leave.",
+"why": "Sem to."
+},
+{
+"wrong": "We demand that the data is shared.",
+"right": "We demand that the data be shared.",
+"why": "be."
+}
+],
+"rewrite": [
+{
+"prompt": "Formal: “Referee 2 says: shorten the section.” (suggests that)",
+"answer": "Referee 2 suggests that the section be shortened.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He insists that she is present.” (subjuntivo)",
+"answer": "He insists that she be present.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We suggest that he leave.”",
+"answer": "We suggest that he not leave.",
+"why": ""
+}
+]
+}

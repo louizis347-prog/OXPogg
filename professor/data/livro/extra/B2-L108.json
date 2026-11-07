@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be likely",
+"wrong": "She likely wins the prize.",
+"right": "She is likely to win the prize.",
+"why": "O brasileiro omite o verbo be. Em inglês, é be likely to + verbo base."
+},
+"mcq": [
+{
+"q": "Qual NÃO é possível?",
+"opts": [
+"It is probable to rain.",
+"It is probable that it will rain.",
+"It is likely to rain."
+],
+"ans": 0,
+"why": "probable usa that-clause, nunca to."
+},
+{
+"q": "Forma negativa de \"They are likely to agree\":",
+"opts": [
+"They aren't unlikely to agree.",
+"They are unlikely to agree.",
+"They likely don't agree."
+],
+"ans": 1,
+"why": "unlikely = pouco provável."
+},
+{
+"q": "Qual é a pergunta correta?",
+"opts": [
+"Does he likely be late?",
+"Is he likely be late?",
+"Is he likely to be late?"
+],
+"ans": 2,
+"why": "Inverta o verbo be."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"It is likely snow.",
+"It is likely to snow.",
+"It likely to snow."
+],
+"ans": 1,
+"why": "be likely to + base."
+}
+],
+"fix": [
+{
+"wrong": "It isn't unlikely to fail.",
+"right": "It is unlikely to fail.",
+"why": "Evite dupla negação para dizer improvável."
+},
+{
+"wrong": "The team is likely winning.",
+"right": "The team is likely to win.",
+"why": "Likely + to + verbo base."
+},
+{
+"wrong": "Are she likely to call?",
+"right": "Is she likely to call?",
+"why": "Concordância de be: is."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para pergunta: “He is likely to win.”",
+"answer": "Is he likely to win?",
+"why": ""
+},
+{
+"prompt": "Reescreva com likely: “It is probable that he will agree.”",
+"answer": "He is likely to agree.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “It isn't likely to snow.”",
+"answer": "It is unlikely to snow.",
+"why": ""
+}
+]
+}

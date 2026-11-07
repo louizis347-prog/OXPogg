@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "require / take advantage of",
+"wrong": "The app requires of a phone. You are required register. Take advantage from this offer.",
+"right": "The app requires a phone. You are required to register. Take advantage of this offer.",
+"why": "Em português “exige um celular”, “aproveite esta oferta” usam estruturas diferentes. Em inglês require é transitivo direto; be required to + verbo; take advantage of."
+},
+"mcq": [
+{
+"q": "The app ___ a phone.",
+"opts": [
+"requires of",
+"requires to",
+"requires"
+],
+"ans": 2,
+"why": "Direto."
+},
+{
+"q": "You are required ___ register.",
+"opts": [
+"for",
+"to",
+"of"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Take advantage ___ this offer.",
+"opts": [
+"from",
+"of",
+"on"
+],
+"ans": 1,
+"why": "of."
+},
+{
+"q": "Be required to means…",
+"opts": [
+"poder",
+"querer",
+"ser obrigado a"
+],
+"ans": 2,
+"why": "Obrigação."
+}
+],
+"fix": [
+{
+"wrong": "It requires of a password.",
+"right": "It requires a password.",
+"why": "Sem of."
+},
+{
+"wrong": "We are required pay.",
+"right": "We are required to pay.",
+"why": "to."
+},
+{
+"wrong": "Take advantage on the sale.",
+"right": "Take advantage of the sale.",
+"why": "of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com require: “You need a passport.” (Entry requires...)",
+"answer": "Entry requires a passport.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The law obliges you to register.” (required)",
+"answer": "You are required to register.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Take advantage of the offer.” (We)",
+"answer": "We took advantage of the offer.",
+"why": ""
+}
+]
+}

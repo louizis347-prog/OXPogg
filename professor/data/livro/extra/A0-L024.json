@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem adjetivo-substantivo e be",
+"wrong": "The sky blue.",
+"right": "The sky is blue.",
+"why": "Em português \"o céu azul\" funciona como grupo nominal; em inglês, para afirmar, é preciso o be."
+},
+"mcq": [
+{
+"q": "I ___ hungry.",
+"opts": [
+"have",
+"do",
+"am"
+],
+"ans": 2,
+"why": "Be + adjetivo."
+},
+{
+"q": "The apple ___ red.",
+"opts": [
+"is",
+"are",
+"has"
+],
+"ans": 0,
+"why": "Singular: is."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They tired.",
+"They are tired.",
+"They have tired."
+],
+"ans": 1,
+"why": "Precisa do be."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I have cold.",
+"I cold.",
+"I am cold."
+],
+"ans": 2,
+"why": "Cold = adjetivo: am cold."
+}
+],
+"fix": [
+{
+"wrong": "The cat very big.",
+"right": "The cat is very big.",
+"why": "Falta o be."
+},
+{
+"wrong": "I have thirsty.",
+"right": "I am thirsty.",
+"why": "Be + adjetivo."
+},
+{
+"wrong": "The apples are reds.",
+"right": "The apples are red.",
+"why": "Adjetivo não tem plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “The sun / yellow”. Escreva a frase com be.",
+"answer": "The sun is yellow.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be: “I have sleepy.” (corrija)",
+"answer": "I am sleepy.",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “The car is red.”",
+"answer": "The cars are red.",
+"why": ""
+}
+]
+}

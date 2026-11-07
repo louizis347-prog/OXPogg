@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can’t / must have / might",
+"wrong": "It can’t be the battery, it must have being the cable.",
+"right": "It can't be the battery; it must have been the cable.",
+"why": "Em português “deve ter sido” leva particípio; o brasileiro confunde being e been. Em inglês, modal + have + been."
+},
+"mcq": [
+{
+"q": "It ___ the cable (quase certo, passado).",
+"opts": [
+"must been",
+"must being",
+"must have been"
+],
+"ans": 2,
+"why": "must have been."
+},
+{
+"q": "It ___ be the battery (impossível).",
+"opts": [
+"can",
+"can’t",
+"mustn’t to"
+],
+"ans": 1,
+"why": "can’t."
+},
+{
+"q": "It ___ be the plug (possível).",
+"opts": [
+"might",
+"must",
+"can’t"
+],
+"ans": 0,
+"why": "might."
+},
+{
+"q": "Which is correct? (can’t / must have / might)",
+"opts": [
+"It might been the plug.",
+"It might have been the plug.",
+"It might being the plug."
+],
+"ans": 1,
+"why": "have been."
+}
+],
+"fix": [
+{
+"wrong": "It must have being the cable.",
+"right": "It must have been the cable.",
+"why": "been."
+},
+{
+"wrong": "It can’t has been the battery.",
+"right": "It can't have been the battery.",
+"why": "have."
+},
+{
+"wrong": "It might to be the plug.",
+"right": "It might be the plug.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva (quase certo, passado): “It was the cable.”",
+"answer": "It must have been the cable.",
+"why": ""
+},
+{
+"prompt": "Reescreva (possível, presente): “Perhaps it is the plug.”",
+"answer": "It might be the plug.",
+"why": ""
+},
+{
+"prompt": "Reescreva (impossível, presente): “It is not possible that it is the battery.”",
+"answer": "It can't be the battery.",
+"why": ""
+}
+]
+}

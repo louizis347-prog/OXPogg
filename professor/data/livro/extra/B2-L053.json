@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "colocação",
+"wrong": "I have a say about the plan.",
+"right": "I have a say in the plan.",
+"why": "Português “opinar sobre”. Em inglês have a say in; have an effect on; have to + base."
+},
+"mcq": [
+{
+"q": "Everyone should have a say **___** the decision.",
+"opts": [
+"in",
+"about of",
+"at"
+],
+"ans": 0,
+"why": "Have a say in."
+},
+{
+"q": "Smoking has an effect **___** health.",
+"opts": [
+"on",
+"to",
+"in"
+],
+"ans": 0,
+"why": "Effect on."
+},
+{
+"q": "Obrigação:",
+"opts": [
+"I have to going.",
+"I have go.",
+"I have to go."
+],
+"ans": 2,
+"why": "Have to."
+},
+{
+"q": "Have a say =",
+"opts": [
+"ter conversa",
+"ter voz",
+"ter fala"
+],
+"ans": 1,
+"why": "Ter voz."
+}
+],
+"fix": [
+{
+"wrong": "The rule has an effect in sales.",
+"right": "The rule has an effect on sales.",
+"why": "On."
+},
+{
+"wrong": "I have to going home.",
+"right": "I have to go home.",
+"why": "Base."
+},
+{
+"wrong": "Workers have a say of the schedule.",
+"right": "Workers have a say in the schedule.",
+"why": "In."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “Citizens have a say.”",
+"answer": "Citizens had a say.",
+"why": ""
+},
+{
+"prompt": "Negativa: “The rule has an effect on sales.”",
+"answer": "The rule doesn’t have an effect on sales.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She has to leave.”",
+"answer": "Does she have to leave?",
+"why": ""
+}
+]
+}

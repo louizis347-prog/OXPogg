@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "too vs very",
+"wrong": "The soup is too good.",
+"right": "The soup is very good.",
+"why": "Em português 'muito' serve para tudo; em inglês too tem sentido negativo (excesso), very é só intensidade."
+},
+"mcq": [
+{
+"q": "I can't lift it. It's ___ heavy.",
+"opts": [
+"very",
+"too",
+"enough"
+],
+"ans": 1,
+"why": "excesso."
+},
+{
+"q": "This cake is ___ delicious!",
+"opts": [
+"too",
+"very",
+"enough"
+],
+"ans": 1,
+"why": "positivo."
+},
+{
+"q": "He isn't strong ___ to lift it.",
+"opts": [
+"enough",
+"very",
+"too"
+],
+"ans": 0,
+"why": "depois do adj."
+},
+{
+"q": "She is ___ young to drive.",
+"opts": [
+"too",
+"enough",
+"very"
+],
+"ans": 0,
+"why": "excesso."
+}
+],
+"fix": [
+{
+"wrong": "It is too good.",
+"right": "It is very good.",
+"why": "positivo."
+},
+{
+"wrong": "I am not enough tall.",
+"right": "I am not tall enough.",
+"why": "depois."
+},
+{
+"wrong": "It's too much expensive.",
+"right": "It's too expensive.",
+"why": "too + adj."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com too: “It is very small for me.” (to wear)",
+"answer": "It is too small for me to wear.",
+"why": ""
+},
+{
+"prompt": "Reescreva com enough: “It isn't warm.” (to swim)",
+"answer": "It isn't warm enough to swim.",
+"why": ""
+},
+{
+"prompt": "Corrija: “It's too much hot.”",
+"answer": "It's too hot.",
+"why": ""
+}
+]
+}

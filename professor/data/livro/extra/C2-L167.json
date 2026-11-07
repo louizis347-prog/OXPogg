@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "By 1781 he taught for years.",
+"right": "By 1781 he had taught for years.",
+"why": "Português usa o pretérito simples; em inglês “até 1781” com ação anterior pede past perfect."
+},
+"mcq": [
+{
+"q": "By 1781 he ___ for years.",
+"opts": [
+"had taught",
+"taught",
+"has taught"
+],
+"ans": 0,
+"why": "Past perfect."
+},
+{
+"q": "Having laid the foundation, he…",
+"opts": [
+"build",
+"builds before",
+"built the house"
+],
+"ans": 2,
+"why": "Having + particípio."
+},
+{
+"q": "Having + participle shows…",
+"opts": [
+"wish",
+"earlier action",
+"future"
+],
+"ans": 1,
+"why": "Anterioridade."
+},
+{
+"q": "Past participle of lay:",
+"opts": [
+"layed",
+"laid",
+"lain"
+],
+"ans": 1,
+"why": "laid."
+}
+],
+"fix": [
+{
+"wrong": "By 1781 he has taught for years.",
+"right": "By 1781 he had taught for years.",
+"why": "Past perfect."
+},
+{
+"wrong": "Having lay the foundation, he built.",
+"right": "Having laid the foundation, he built.",
+"why": "Particípio."
+},
+{
+"wrong": "When he arrived, she already left.",
+"right": "When he arrived, she had already left.",
+"why": "Past perfect."
+}
+],
+"rewrite": [
+{
+"prompt": "Past perfect: “By 1781 he taught for years.”",
+"answer": "By 1781 he had taught for years.",
+"why": ""
+},
+{
+"prompt": "Una com having: “He laid the foundation. Then he built.”",
+"answer": "Having laid the foundation, he built.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She had left.”",
+"answer": "She had not left.",
+"why": ""
+}
+]
+}

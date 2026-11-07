@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make up for",
+"wrong": "The great view makes up the high price.",
+"right": "The great view makes up for the high price.",
+"why": "Em português “compensar o preço” é transitivo direto. Em inglês, make up for é uma unidade."
+},
+"mcq": [
+{
+"q": "“They made do ___ one example.”",
+"opts": [
+"of",
+"with",
+"by"
+],
+"ans": 1,
+"why": "make do with."
+},
+{
+"q": "“make out” (words) means...",
+"opts": [
+"write",
+"remove",
+"distinguish"
+],
+"ans": 2,
+"why": "Distinguir."
+},
+{
+"q": "“It makes up for its price” means...",
+"opts": [
+"compensates",
+"costs",
+"hides"
+],
+"ans": 0,
+"why": "Compensa."
+},
+{
+"q": "A lexicographer writes...",
+"opts": [
+"novels",
+"dictionaries",
+"maps"
+],
+"ans": 1,
+"why": "Dicionários."
+}
+],
+"fix": [
+{
+"wrong": "We made do of one dictionary.",
+"right": "We made do with one dictionary.",
+"why": "with."
+},
+{
+"wrong": "I could not make out the headword entry of the page.",
+"right": "I could not make out the headword entry.",
+"why": "Natural."
+},
+{
+"wrong": "The size makes up its price.",
+"right": "The size makes up for its price.",
+"why": "for."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com make do with: “They managed with one example.”",
+"answer": "They made do with one example.",
+"why": ""
+},
+{
+"prompt": "Reescreva com make up for: “The view compensates the price.”",
+"answer": "The view makes up for the price.",
+"why": ""
+},
+{
+"prompt": "Reescreva com make out: “I could not distinguish the words.”",
+"answer": "I could not make out the words.",
+"why": ""
+}
+]
+}

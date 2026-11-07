@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "look forward to + -ing",
+"wrong": "I look forward to meet you.",
+"right": "I look forward to meeting you.",
+"why": "Em português “aguardo encontrá-lo” usa infinitivo. Em inglês, to em look forward to é preposição e vem seguida de -ing ou substantivo."
+},
+"mcq": [
+{
+"q": "We look forward ___ the trip.",
+"opts": [
+"for",
+"to",
+"at"
+],
+"ans": 1,
+"why": "look forward to."
+},
+{
+"q": "I look forward to ___ you.",
+"opts": [
+"see",
+"to see",
+"seeing"
+],
+"ans": 2,
+"why": "to preposição + -ing."
+},
+{
+"q": "In a formal email, which ending fits?",
+"opts": [
+"I look forward to hearing from you.",
+"I wait your answer.",
+"I hope you to answer."
+],
+"ans": 0,
+"why": "Fórmula padrão."
+},
+{
+"q": "Which is wrong? (look forward to + -ing)",
+"opts": [
+"I look forward to start.",
+"I look forward to the class.",
+"I look forward to starting."
+],
+"ans": 0,
+"why": "to + base está errado."
+}
+],
+"fix": [
+{
+"wrong": "She looks forward to see them.",
+"right": "She looks forward to seeing them.",
+"why": "-ing após to preposição."
+},
+{
+"wrong": "We look forward the party.",
+"right": "We look forward to the party.",
+"why": "Falta to."
+},
+{
+"wrong": "I look forward to hear from you soon.",
+"right": "I look forward to hearing from you soon.",
+"why": "hearing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I will see you. I am excited.” (look forward)",
+"answer": "I look forward to seeing you.",
+"why": ""
+},
+{
+"prompt": "Reescreva com they: “I look forward to the trip.”",
+"answer": "They look forward to the trip.",
+"why": ""
+},
+{
+"prompt": "Reescreva com we e meeting: “I look forward to meeting you.”",
+"answer": "We look forward to meeting you.",
+"why": ""
+}
+]
+}

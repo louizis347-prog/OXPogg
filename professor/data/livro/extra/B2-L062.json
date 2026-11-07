@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish I used more butter in the cake.",
+"right": "I wish I had used more butter in the cake.",
+"why": "Para arrependimento do passado, o português usa “quem me dera tivesse usado”. O brasileiro traduz com passado simples; use wish + had + particípio."
+},
+"mcq": [
+{
+"q": "I wish I **___** more butter.",
+"opts": [
+"used",
+"would use",
+"had used"
+],
+"ans": 2,
+"why": "Had + part."
+},
+{
+"q": "I wish I **___** so much sugar.",
+"opts": [
+"hadn’t used",
+"didn’t use",
+"wouldn’t use"
+],
+"ans": 0,
+"why": "Negativa."
+},
+{
+"q": "Particípio de eat:",
+"opts": [
+"eated",
+"ate",
+"eaten"
+],
+"ans": 2,
+"why": "Eaten."
+},
+{
+"q": "Arrependimento do passado:",
+"opts": [
+"wish + would",
+"wish + Past",
+"wish + had + part."
+],
+"ans": 2,
+"why": "Had + part."
+}
+],
+"fix": [
+{
+"wrong": "I wish I didn’t eat that.",
+"right": "I wish I hadn’t eaten that.",
+"why": "Hadn’t eaten."
+},
+{
+"wrong": "She wishes she had went home.",
+"right": "She wishes she had gone home.",
+"why": "Gone."
+},
+{
+"wrong": "I wish I would have called.",
+"right": "I wish I had called.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I didn’t use butter.” (I wish…)",
+"answer": "I wish I had used butter.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I ate too much.” (I wish… not)",
+"answer": "I wish I hadn’t eaten so much.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She didn’t go home.” (She wishes…)",
+"answer": "She wishes she had gone home.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discuss about",
+"wrong": "This essay will discuss about both views.",
+"right": "This essay will discuss both views.",
+"why": "Em português \"discutir sobre\" é comum. Em inglês discuss é transitivo e não leva about."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay will discuss both views.",
+"This essay discusses of both views."
+],
+"ans": 1,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"By me",
+"In my opinion"
+],
+"ans": 2,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"information",
+"report",
+"graph"
+],
+"ans": 0,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"is",
+"was",
+"are"
+],
+"ans": 2,
+"why": "people plural."
+}
+],
+"fix": [
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+},
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+}
+]
+}

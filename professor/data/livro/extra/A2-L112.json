@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "for/since",
+"wrong": "I live here since 2020.",
+"right": "I have lived here since 2020.",
+"why": "Em português 'moro aqui desde 2020' usa presente; em inglês o Present Perfect com since/for."
+},
+"mcq": [
+{
+"q": "I've lived here ___ 2020.",
+"opts": [
+"from",
+"for",
+"since"
+],
+"ans": 2,
+"why": "ponto no tempo."
+},
+{
+"q": "She has worked here ___ three years.",
+"opts": [
+"for",
+"since",
+"from"
+],
+"ans": 0,
+"why": "duração."
+},
+{
+"q": "I have ___ been to Rome.",
+"opts": [
+"not",
+"never",
+"no"
+],
+"ans": 1,
+"why": "never."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"We know her since years.",
+"We knew her since years.",
+"We've known her for years."
+],
+"ans": 2,
+"why": "present perfect."
+}
+],
+"fix": [
+{
+"wrong": "I know her since 2019.",
+"right": "I have known her since 2019.",
+"why": "present perfect."
+},
+{
+"wrong": "He has lived here since three years.",
+"right": "He has lived here for three years.",
+"why": "for."
+},
+{
+"wrong": "They have went home.",
+"right": "They have gone home.",
+"why": "particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect: “I live here. (since 2020)”",
+"answer": "I have lived here since 2020.",
+"why": ""
+},
+{
+"prompt": "Present perfect: “She works here. (for 5 years)”",
+"answer": "She has worked here for 5 years.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You have lived here.” (how long)",
+"answer": "How long have you lived here?",
+"why": ""
+}
+]
+}

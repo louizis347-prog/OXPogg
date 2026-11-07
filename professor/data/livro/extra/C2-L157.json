@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I am studying Kant since January.",
+"right": "I have been studying Kant since January.",
+"why": "O português usa o presente (“estudo desde janeiro”); em inglês, ação que continua até agora pede present perfect continuous."
+},
+"mcq": [
+{
+"q": "Since January, I ___ Kant.",
+"opts": [
+"am studying",
+"have been studying",
+"study"
+],
+"ans": 1,
+"why": "Present perfect continuous."
+},
+{
+"q": "Which highlights the idea?",
+"opts": [
+"He sounds modern.",
+"It sounds modern strikes me.",
+"What strikes me is how modern he sounds."
+],
+"ans": 2,
+"why": "Pseudo-cleft destaca."
+},
+{
+"q": "Pseudo-cleft pattern:",
+"opts": [
+"It what is…",
+"What is clause…",
+"What + clause + is…"
+],
+"ans": 2,
+"why": "What + oração + is."
+},
+{
+"q": "“How long have you ___?”",
+"opts": [
+"been reading",
+"reading",
+"be read"
+],
+"ans": 0,
+"why": "Have been -ing."
+}
+],
+"fix": [
+{
+"wrong": "What strikes it me is his tone.",
+"right": "What strikes me is his tone.",
+"why": "Sem it."
+},
+{
+"wrong": "I have read this essay since Monday.",
+"right": "I have been reading this essay since Monday.",
+"why": "Ação contínua."
+},
+{
+"wrong": "She has been wait for an hour.",
+"right": "She has been waiting for an hour.",
+"why": "Gerúndio."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect continuous: “I read Hume since March.”",
+"answer": "I have been reading Hume since March.",
+"why": ""
+},
+{
+"prompt": "Pseudo-cleft: “His clarity impresses me.”",
+"answer": "What impresses me is his clarity.",
+"why": ""
+},
+{
+"prompt": "Negativo: “I have been studying Kant.”",
+"answer": "I haven’t been studying Kant.",
+"why": ""
+}
+]
+}

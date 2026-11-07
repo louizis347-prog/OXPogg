@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "idade com be",
+"wrong": "I have 20 years.",
+"right": "I am 20 years old.",
+"why": "Em português \"tenho 20 anos\" usa ter; em inglês a idade usa be (I am 20)."
+},
+"mcq": [
+{
+"q": "We ___ friends.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 2,
+"why": "We: are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They are happy.",
+"They is happy.",
+"They am happy."
+],
+"ans": 0,
+"why": "They: are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It am a cat.",
+"It is a cat.",
+"It are a cat."
+],
+"ans": 1,
+"why": "It: is."
+},
+{
+"q": "My parents ___ here.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 2,
+"why": "Plural: are."
+}
+],
+"fix": [
+{
+"wrong": "My brother are tall.",
+"right": "My brother is tall.",
+"why": "Singular: is."
+},
+{
+"wrong": "We am friends.",
+"right": "We are friends.",
+"why": "We: are."
+},
+{
+"wrong": "The children is happy.",
+"right": "The children are happy.",
+"why": "Children é plural: are."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o sujeito por “I”: “He is tired.”",
+"answer": "I am tired.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “We”: “It is late.”",
+"answer": "We are late.",
+"why": ""
+},
+{
+"prompt": "Troque por “My dog”: “They are small.”",
+"answer": "My dog is small.",
+"why": ""
+}
+]
+}

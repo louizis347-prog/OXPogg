@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "it + be + that",
+"wrong": "It is clear what wages lag.",
+"right": "It is clear that wages lag.",
+"why": "Em português “é claro que”; o brasileiro troca por what ou omite o sujeito it. Em inglês: It + be + adjetivo + that-clause."
+},
+"mcq": [
+{
+"q": "**___** is obvious that prices are rising.",
+"opts": [
+"This",
+"There",
+"It"
+],
+"ans": 2,
+"why": "It."
+},
+{
+"q": "It is essential **___** we act.",
+"opts": [
+"that",
+"what",
+"to that"
+],
+"ans": 0,
+"why": "That."
+},
+{
+"q": "It is surprising that she **___**.",
+"opts": [
+"left",
+"leaving",
+"leaves to"
+],
+"ans": 0,
+"why": "Oração completa."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Is clear that it works.",
+"It clear that it works.",
+"It is clear that it works."
+],
+"ans": 2,
+"why": "It is."
+}
+],
+"fix": [
+{
+"wrong": "Is important that we check.",
+"right": "It is important that we check.",
+"why": "It."
+},
+{
+"wrong": "It is odd what he left.",
+"right": "It is odd that he left.",
+"why": "That."
+},
+{
+"wrong": "It is clear that wages is low.",
+"right": "It is clear that wages are low.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Wages clearly lag.” (It is clear…)",
+"answer": "It is clear that wages lag.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Surprisingly, she left.” (It is surprising…)",
+"answer": "It is surprising that she left.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It is essential that we act.” (not essential)",
+"answer": "It is not essential that we act.",
+"why": ""
+}
+]
+}

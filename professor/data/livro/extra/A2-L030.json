@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "when + tempos",
+"wrong": "When I arrived, they ate.",
+"right": "When I arrived, they were eating.",
+"why": "Em português usamos 'quando cheguei, eles comiam' sem pensar na ação interrompida; em inglês a ação em curso fica no continuous."
+},
+"mcq": [
+{
+"q": "I ___ when she called.",
+"opts": [
+"sleeping",
+"slept",
+"was sleeping"
+],
+"ans": 2,
+"why": "em curso."
+},
+{
+"q": "While he ___ , it began to rain.",
+"opts": [
+"walks",
+"was walking",
+"walked"
+],
+"ans": 1,
+"why": "while + cont."
+},
+{
+"q": "She ___ the door and went in.",
+"opts": [
+"was opening",
+"opened",
+"opening"
+],
+"ans": 1,
+"why": "ação curta."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I was cooking when he arrived.",
+"I cooked when he was arriving.",
+"I was cooking when he was arrive."
+],
+"ans": 0,
+"why": "fundo + interrupção."
+}
+],
+"fix": [
+{
+"wrong": "While I slept, he called.",
+"right": "While I was sleeping, he called.",
+"why": "continuous."
+},
+{
+"wrong": "I was walking when I was seeing a dog.",
+"right": "I was walking when I saw a dog.",
+"why": "ação curta."
+},
+{
+"wrong": "When she called, I cooked.",
+"right": "When she called, I was cooking.",
+"why": "em curso."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “While I ___ (read), he came.”",
+"answer": "While I was reading, he came.",
+"why": ""
+},
+{
+"prompt": "Reescreva com when: “I was swimming. It started to rain.”",
+"answer": "I was swimming when it started to rain.",
+"why": ""
+},
+{
+"prompt": "Past simple: “He was seeing a bird.” (viu)",
+"answer": "He saw a bird.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "relativa e pessoa",
+"wrong": "He is a man who he held a sign.",
+"right": "He is a man who held a sign.",
+"why": "Português repete “ele” e o brasileiro repete. Who já é o sujeito."
+},
+"mcq": [
+{
+"q": "A man **___** held a sign.",
+"opts": [
+"who",
+"which",
+"whose"
+],
+"ans": 0,
+"why": "Pessoa."
+},
+{
+"q": "She decided **___** a protest.",
+"opts": [
+"to cover",
+"covering",
+"cover"
+],
+"ans": 0,
+"why": "Decide to."
+},
+{
+"q": "An old man **___** held a sign.",
+"opts": [
+"where",
+"what",
+"who"
+],
+"ans": 2,
+"why": "Who."
+},
+{
+"q": "A sign **___** said peace.",
+"opts": [
+"that",
+"who",
+"whose"
+],
+"ans": 0,
+"why": "Coisa: that."
+}
+],
+"fix": [
+{
+"wrong": "She decided cover a protest.",
+"right": "She decided to cover a protest.",
+"why": "Falta to."
+},
+{
+"wrong": "A man who he held a sign.",
+"right": "A man who held a sign.",
+"why": "Sem repetir."
+},
+{
+"wrong": "The sign which it said peace.",
+"right": "The sign which said peace.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com who: “An old man held a sign. He smiled.”",
+"answer": "An old man who held a sign smiled.",
+"why": ""
+},
+{
+"prompt": "Passado: “She decides to cover a protest.”",
+"answer": "She decided to cover a protest.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She decided to cover a protest.” (Did…)",
+"answer": "Did she decide to cover a protest?",
+"why": ""
+}
+]
+}

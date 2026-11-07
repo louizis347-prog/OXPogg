@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if + passado",
+"wrong": "If I would have time, I would study.",
+"right": "If I had time, I would study.",
+"why": "Em português “se eu tivesse tempo, estudaria” usa subjuntivo imperfeito; o brasileiro traduz a segunda parte como would nos dois lados. Em inglês, o if leva Past Simple e a principal leva would."
+},
+"mcq": [
+{
+"q": "If I ___ time, I would study.",
+"opts": [
+"would have",
+"have",
+"had"
+],
+"ans": 2,
+"why": "Past Simple."
+},
+{
+"q": "If I ___ the boss, I would listen.",
+"opts": [
+"were",
+"would be",
+"am"
+],
+"ans": 0,
+"why": "If I were."
+},
+{
+"q": "I ___ travel if I had money.",
+"opts": [
+"will",
+"did",
+"would"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "Second conditional talks about…",
+"opts": [
+"situação irreal",
+"fato real",
+"passado"
+],
+"ans": 0,
+"why": "Irreal."
+}
+],
+"fix": [
+{
+"wrong": "If I would be rich, I would help.",
+"right": "If I were rich, I would help.",
+"why": "were."
+},
+{
+"wrong": "If she has time, she would study.",
+"right": "If she had time, she would study.",
+"why": "Past."
+},
+{
+"wrong": "If I was you, I will go.",
+"right": "If I were you, I would go.",
+"why": "were + would."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no 2º condicional: “If I have time, I will study.”",
+"answer": "If I had time, I would study.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “If I am the boss, I will listen.” (irreal)",
+"answer": "If I were the boss, I would listen.",
+"why": ""
+},
+{
+"prompt": "Reescreva no 2º condicional: “If we win, we will celebrate.”",
+"answer": "If we won, we would celebrate.",
+"why": ""
+}
+]
+}

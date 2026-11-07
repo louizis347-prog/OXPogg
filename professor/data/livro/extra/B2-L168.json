@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "informação incontável",
+"wrong": "The report gives many informations.",
+"right": "The report gives a lot of information.",
+"why": "Informação tem plural em português. Em inglês information não tem plural."
+},
+"mcq": [
+{
+"q": "Qual verbo é transitivo?",
+"opts": [
+"emphasize",
+"happen",
+"arrive"
+],
+"ans": 0,
+"why": "emphasize + objeto."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She explained me it.",
+"She explained it to me.",
+"She explained to it me."
+],
+"ans": 1,
+"why": "explain to."
+},
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"exatamente duas",
+"três",
+"até duas palavras"
+],
+"ans": 2,
+"why": "limite."
+},
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto nega",
+"o texto não diz",
+"o texto confirma"
+],
+"ans": 1,
+"why": "Não mencionado."
+}
+],
+"fix": [
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+},
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+}
+]
+}

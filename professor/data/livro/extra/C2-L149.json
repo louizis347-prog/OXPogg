@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "voz passiva",
+"wrong": "A review expects in two years.",
+"right": "A review is expected in two years.",
+"why": "Português usa “espera-se”, voz reflexiva; inglês usa passiva com be."
+},
+"mcq": [
+{
+"q": "Which sentence reports an expectation impersonally?",
+"opts": [
+"A review is expected.",
+"They expected review.",
+"A review expects."
+],
+"ans": 0,
+"why": "is expected."
+},
+{
+"q": "Report verbs:",
+"opts": [
+"Supporters argue of…",
+"Supporters argued to…",
+"Supporters argued that…"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "Opponents warned that…",
+"opts": [
+"it will fail",
+"fail",
+"it would fail"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "Passive form:",
+"opts": [
+"is expected",
+"expects",
+"expecting"
+],
+"ans": 0,
+"why": "be + particípio."
+}
+],
+"fix": [
+{
+"wrong": "A review expects in two years.",
+"right": "A review is expected in two years.",
+"why": "Passiva."
+},
+{
+"wrong": "Supporters argued to the plan works.",
+"right": "Supporters argued that the plan works.",
+"why": "that."
+},
+{
+"wrong": "Opponents warned it will fail.",
+"right": "Opponents warned it would fail.",
+"why": "would."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “They expect a review in two years.”",
+"answer": "A review is expected in two years.",
+"why": ""
+},
+{
+"prompt": "Passado: “A review is expected.”",
+"answer": "A review was expected.",
+"why": ""
+},
+{
+"prompt": "Negativo: “A review is expected.”",
+"answer": "A review is not expected.",
+"why": ""
+}
+]
+}

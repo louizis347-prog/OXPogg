@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sail",
+"wrong": "The boat navigates close-hauled in this wind.",
+"right": "The boat sails close-hauled in this wind.",
+"why": "Em português “navegar” é universal. Em inglês, o barco sails; navigate é planejar a rota."
+},
+"mcq": [
+{
+"q": "“Trim the sheets” means...",
+"opts": [
+"cut the cloth",
+"adjust the ropes",
+"clean the deck"
+],
+"ans": 1,
+"why": "Ajustar."
+},
+{
+"q": "“Ease” (a sheet) means...",
+"opts": [
+"pull it in",
+"tie it",
+"let it out"
+],
+"ans": 2,
+"why": "Soltar."
+},
+{
+"q": "“Tack” means...",
+"opts": [
+"change course",
+"stop",
+"anchor"
+],
+"ans": 0,
+"why": "Virar de bordo."
+},
+{
+"q": "A **telltale** shows...",
+"opts": [
+"depth",
+"airflow",
+"time"
+],
+"ans": 1,
+"why": "Fluxo."
+}
+],
+"fix": [
+{
+"wrong": "The boat tack at noon.",
+"right": "The boat tacked at noon.",
+"why": "Passado."
+},
+{
+"wrong": "We tacked for avoid the shore.",
+"right": "We tacked to avoid the shore.",
+"why": "to."
+},
+{
+"wrong": "The telltales shows the airflow.",
+"right": "The telltales show the airflow.",
+"why": "plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com sails: “The boat navigates upwind.”",
+"answer": "The boat sails upwind.",
+"why": ""
+},
+{
+"prompt": "Reescreva com to: “We tacked for avoiding the shore.”",
+"answer": "We tacked to avoid the shore.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She eases the sheet.”",
+"answer": "She eased the sheet.",
+"why": ""
+}
+]
+}

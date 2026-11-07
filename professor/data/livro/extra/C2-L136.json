@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Your argument depends of one premise.",
+"right": "Your argument hinges on one premise.",
+"why": "Português “depende de”; inglês hinge on / depend on."
+},
+"mcq": [
+{
+"q": "Polite reserve:",
+"opts": [
+"That is a respectable position, but…",
+"This is a respectful position",
+"That is respectful"
+],
+"ans": 0,
+"why": "Respectable."
+},
+{
+"q": "Premise:",
+"opts": [
+"hinges of",
+"hinges in",
+"hinges on"
+],
+"ans": 2,
+"why": "on."
+},
+{
+"q": "**Respectable** NÃO significa:",
+"opts": [
+"respeitado",
+"respeitoso",
+"respeitável"
+],
+"ans": 1,
+"why": "Falso cognato: respectable = respeitável."
+},
+{
+"q": "Hinges on = …",
+"opts": [
+"depends on",
+"opens",
+"breaks"
+],
+"ans": 0,
+"why": "Depende."
+}
+],
+"fix": [
+{
+"wrong": "It hinges of one premise.",
+"right": "It hinges on one premise.",
+"why": "on."
+},
+{
+"wrong": "That is a respectful position.",
+"right": "That is a respectable position.",
+"why": "respectable."
+},
+{
+"wrong": "Your argument hinge on this.",
+"right": "Your argument hinges on this.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com hinges on: “Your argument depends on one premise.”",
+"answer": "Your argument hinges on one premise.",
+"why": ""
+},
+{
+"prompt": "Plural: “The argument hinges on this.”",
+"answer": "The arguments hinge on this.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It hinges on this.”",
+"answer": "It does not hinge on this.",
+"why": ""
+}
+]
+}

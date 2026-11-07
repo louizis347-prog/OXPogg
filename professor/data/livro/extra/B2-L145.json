@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "set up",
+"wrong": "We made a company last year.",
+"right": "We set up a company last year.",
+"why": "Em português \"montar uma empresa\"; em inglês set up. Make a company é incorreto."
+},
+"mcq": [
+{
+"q": "set up =",
+"opts": [
+"desmontar",
+"montar, criar",
+"parar"
+],
+"ans": 1,
+"why": "set up = estabelecer."
+},
+{
+"q": "set off =",
+"opts": [
+"chegar",
+"dormir",
+"partir"
+],
+"ans": 2,
+"why": "set off = sair."
+},
+{
+"q": "set aside =",
+"opts": [
+"reservar",
+"jogar fora",
+"pegar"
+],
+"ans": 0,
+"why": "set aside."
+},
+{
+"q": "set a goal =",
+"opts": [
+"atingir",
+"ver",
+"definir uma meta"
+],
+"ans": 2,
+"why": "set a goal."
+}
+],
+"fix": [
+{
+"wrong": "They setted a goal.",
+"right": "They set a goal.",
+"why": "Passado de set = set."
+},
+{
+"wrong": "We sat up a meeting.",
+"right": "We set up a meeting.",
+"why": "set up."
+},
+{
+"wrong": "He set of early.",
+"right": "He set off early.",
+"why": "off."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “They set up a club.”",
+"answer": "They set up a club.",
+"why": ""
+},
+{
+"prompt": "Reescreva com set off: “They left at dawn.”",
+"answer": "They set off at dawn.",
+"why": ""
+},
+{
+"prompt": "Reescreva com set aside: “She saved some time.”",
+"answer": "She set aside some time.",
+"why": ""
+}
+]
+}

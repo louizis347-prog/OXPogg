@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares",
+"wrong": "I payed the bill.",
+"right": "I paid the bill.",
+"why": "O aluno regulariza com -ed; pay, run, say, make, meet têm formas próprias."
+},
+"mcq": [
+{
+"q": "Passado de **pay**:",
+"opts": [
+"paid",
+"payed",
+"pay"
+],
+"ans": 0,
+"why": "paid."
+},
+{
+"q": "Passado de **say**:",
+"opts": [
+"said",
+"sayed",
+"sade"
+],
+"ans": 0,
+"why": "said."
+},
+{
+"q": "Passado de **meet**:",
+"opts": [
+"meat",
+"meeted",
+"met"
+],
+"ans": 2,
+"why": "met."
+},
+{
+"q": "Passado de **run**:",
+"opts": [
+"ran",
+"run",
+"runned"
+],
+"ans": 0,
+"why": "ran."
+}
+],
+"fix": [
+{
+"wrong": "She payed it.",
+"right": "She paid it.",
+"why": "paid."
+},
+{
+"wrong": "He sayed yes.",
+"right": "He said yes.",
+"why": "said."
+},
+{
+"wrong": "We meeted Ana.",
+"right": "We met Ana.",
+"why": "met."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I pay.”",
+"answer": "I paid.",
+"why": ""
+},
+{
+"prompt": "Passado: “She says no.”",
+"answer": "She said no.",
+"why": ""
+},
+{
+"prompt": "Passado: “They meet at 5.”",
+"answer": "They met at 5.",
+"why": ""
+}
+]
+}

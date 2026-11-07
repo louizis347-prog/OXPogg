@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do auxiliar na negativa",
+"wrong": "I no work on Sundays.",
+"right": "I do not work on Sundays.",
+"why": "Em português basta \"não\" antes do verbo; em inglês a negativa do Present Simple exige do/does + not."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"You studies at night.",
+"You study at night.",
+"You are study at night."
+],
+"ans": 1,
+"why": "You: base."
+},
+{
+"q": "Negative: “They eat meat.”",
+"opts": [
+"They not eat meat.",
+"They does not eat meat.",
+"They do not eat meat."
+],
+"ans": 2,
+"why": "They: do not."
+},
+{
+"q": "We ___ in Rio.",
+"opts": [
+"live",
+"lives",
+"are live"
+],
+"ans": 0,
+"why": "Plural: base form."
+},
+{
+"q": "Negative: “I work.”",
+"opts": [
+"I not work.",
+"I do not work.",
+"I am not work."
+],
+"ans": 1,
+"why": "Do not."
+}
+],
+"fix": [
+{
+"wrong": "Work every day.",
+"right": "I work every day.",
+"why": "Sujeito."
+},
+{
+"wrong": "They does not live here.",
+"right": "They do not live here.",
+"why": "They: do."
+},
+{
+"wrong": "I no like coffee.",
+"right": "I do not like coffee.",
+"why": "Do not."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o sujeito por “They”: “I study at night.”",
+"answer": "They study at night.",
+"why": ""
+},
+{
+"prompt": "Escreva com “You”: “I work in a bank.”",
+"answer": "You work in a bank.",
+"why": ""
+},
+{
+"prompt": "Negue com do not: “I play tennis.”",
+"answer": "I do not play tennis.",
+"why": ""
+}
+]
+}

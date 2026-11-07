@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to a large extent",
+"wrong": "I agree in a large extent.",
+"right": "I agree to a large extent.",
+"why": "O brasileiro usa “em grande medida” → in. Em inglês: to a large/limited extent."
+},
+"mcq": [
+{
+"q": "To what extent do you agree? Answer: ",
+"opts": [
+"To a large extent, I agree.",
+"In a large extent, I agree.",
+"At large extent, I agree."
+],
+"ans": 0,
+"why": "to a large extent."
+},
+{
+"q": "To a ___ extent, I disagree.",
+"opts": [
+"limiting",
+"limited",
+"limit"
+],
+"ans": 1,
+"why": "limited."
+},
+{
+"q": "Question asks for…",
+"opts": [
+"a date",
+"a list",
+"degree of agreement"
+],
+"ans": 2,
+"why": "Grau."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"to a large extent",
+"in a large extent",
+"by large extent"
+],
+"ans": 0,
+"why": "to."
+}
+],
+"fix": [
+{
+"wrong": "I agree in a large extent.",
+"right": "I agree to a large extent.",
+"why": "to."
+},
+{
+"wrong": "To a limit extent, I agree.",
+"right": "To a limited extent, I agree.",
+"why": "limited."
+},
+{
+"wrong": "I agree at some extent.",
+"right": "I agree to some extent.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Use to a large extent: “I mostly agree.”",
+"answer": "I agree to a large extent.",
+"why": ""
+},
+{
+"prompt": "Use to a limited extent: “I partly agree.”",
+"answer": "I agree to a limited extent.",
+"why": ""
+},
+{
+"prompt": "Use to some extent: “I partially agree.”",
+"answer": "I agree to some extent.",
+"why": ""
+}
+]
+}

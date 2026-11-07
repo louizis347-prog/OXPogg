@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "want/need to",
+"wrong": "I need that you help me.",
+"right": "I need you to help me.",
+"why": "Em português usamos 'preciso que você me ajude'; em inglês, need + pessoa + to."
+},
+"mcq": [
+{
+"q": "I ___ to buy milk.",
+"opts": [
+"needs",
+"needing",
+"need"
+],
+"ans": 2,
+"why": "I need."
+},
+{
+"q": "She likes ___ books.",
+"opts": [
+"read",
+"reading",
+"to reading"
+],
+"ans": 1,
+"why": "like + -ing."
+},
+{
+"q": "Because/so: It's late, ___ I go home.",
+"opts": [
+"or",
+"so",
+"because"
+],
+"ans": 1,
+"why": "Resultado."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He want a pizza.",
+"He wants a pizza.",
+"He wants to a pizza."
+],
+"ans": 1,
+"why": "Substantivo sem to."
+}
+],
+"fix": [
+{
+"wrong": "She like dancing.",
+"right": "She likes dancing.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "I need buy bread.",
+"right": "I need to buy bread.",
+"why": "to."
+},
+{
+"wrong": "I'm late, because of I woke up late.",
+"right": "I'm late because I woke up late.",
+"why": "because + frase."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para negativa: “I want to go.”",
+"answer": "I don't want to go.",
+"why": ""
+},
+{
+"prompt": "Troque para she: “I like reading.”",
+"answer": "She likes reading.",
+"why": ""
+},
+{
+"prompt": "Una com so: “It's cold. I wear a coat.”",
+"answer": "It's cold so I wear a coat.",
+"why": ""
+}
+]
+}

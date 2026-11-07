@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Past Simple",
+"wrong": "Two days before I went there.",
+"right": "Two days ago I went there.",
+"why": "Em português 'há dois dias' não tem tradução literal; o aluno usa before. Em inglês: ago."
+},
+"mcq": [
+{
+"q": "I ___ the film last night.",
+"opts": [
+"saw",
+"see",
+"seen"
+],
+"ans": 0,
+"why": "saw."
+},
+{
+"q": "They ___ happy.",
+"opts": [
+"weren't",
+"didn't",
+"don't"
+],
+"ans": 0,
+"why": "were."
+},
+{
+"q": "Passado de **write**:",
+"opts": [
+"writed",
+"written",
+"wrote"
+],
+"ans": 2,
+"why": "wrote."
+},
+{
+"q": "A week ___ I met her.",
+"opts": [
+"before",
+"since",
+"ago"
+],
+"ans": 2,
+"why": "ago."
+}
+],
+"fix": [
+{
+"wrong": "I didn't saw her.",
+"right": "I didn't see her.",
+"why": "base."
+},
+{
+"wrong": "We was tired.",
+"right": "We were tired.",
+"why": "were."
+},
+{
+"wrong": "She comed late.",
+"right": "She came late.",
+"why": "came."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I eat lunch.”",
+"answer": "I ate lunch.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He went.”",
+"answer": "He didn't go.",
+"why": ""
+},
+{
+"prompt": "Use ago: “I called him two days.”",
+"answer": "I called him two days ago.",
+"why": ""
+}
+]
+}

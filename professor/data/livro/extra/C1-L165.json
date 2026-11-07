@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "despite of",
+"wrong": "Despite of repeated promises, talks failed.",
+"right": "Despite repeated promises, talks failed.",
+"why": "Em português “apesar de” leva preposição, e o aluno cria despite of. Em inglês, despite não leva of; in spite of é a forma com of."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"In spite of the strike threat",
+"Despite of the strike threat",
+"In despite the strike threat"
+],
+"ans": 0,
+"why": "in spite of / despite."
+},
+{
+"q": "“___ talks lasted a year, there was no deal.”",
+"opts": [
+"Despite",
+"Although",
+"In spite"
+],
+"ans": 1,
+"why": "Although + oração."
+},
+{
+"q": "“Much ___ we respect him, we disagree.”",
+"opts": [
+"than",
+"so",
+"as"
+],
+"ans": 2,
+"why": "Much as."
+},
+{
+"q": "Which can follow **despite**?",
+"opts": [
+"a noun or -ing",
+"a full clause",
+"only a verb"
+],
+"ans": 0,
+"why": "Despite + substantivo/-ing."
+}
+],
+"fix": [
+{
+"wrong": "Despite the talks lasted a year, there was no deal.",
+"right": "Although the talks lasted a year, there was no deal.",
+"why": "Despite não leva oração."
+},
+{
+"wrong": "In spite the strike threat, the mayor stayed calm.",
+"right": "In spite of the strike threat, the mayor stayed calm.",
+"why": "of."
+},
+{
+"wrong": "Although of the delay, they signed.",
+"right": "Despite the delay, they signed.",
+"why": "Although + oração."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com despite: “Although the union threatened a strike, talks went on.”",
+"answer": "Despite the strike threat, talks went on.",
+"why": "Use esta forma."
+},
+{
+"prompt": "Reescreva com Although: “Despite the mayor’s patience, talks failed.”",
+"answer": "Although the mayor was patient, talks failed.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in spite of: “Despite the pay rise, they left.”",
+"answer": "In spite of the pay rise, they left.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "unless",
+"wrong": "Unless you don't hurry, you'll be late.",
+"right": "Unless you hurry, you'll be late.",
+"why": "Em português 'a menos que não...' aceita dupla negação; unless já tem sentido negativo (if not)."
+},
+"mcq": [
+{
+"q": "___ you hurry, you'll be late.",
+"opts": [
+"If",
+"Unless",
+"When not"
+],
+"ans": 1,
+"why": "unless."
+},
+{
+"q": "I'll go ___ it rains.",
+"opts": [
+"unless",
+"only",
+"if not"
+],
+"ans": 0,
+"why": "unless."
+},
+{
+"q": "If you ___ , you'll fail.",
+"opts": [
+"didn't study",
+"won't study",
+"don't study"
+],
+"ans": 2,
+"why": "presente."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"Unless he doesn't call, I'll go.",
+"Unless he will call, I'll go.",
+"Unless he calls, I'll go."
+],
+"ans": 2,
+"why": "sem negativa."
+}
+],
+"fix": [
+{
+"wrong": "Unless you don't go, you'll miss it.",
+"right": "Unless you go, you'll miss it.",
+"why": "unless."
+},
+{
+"wrong": "If he will call, I'll tell you.",
+"right": "If he calls, I'll tell you.",
+"why": "presente."
+},
+{
+"wrong": "I'll call if you will want.",
+"right": "I'll call if you want.",
+"why": "presente."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com unless: “If you don't study, you'll fail.”",
+"answer": "Unless you study, you'll fail.",
+"why": ""
+},
+{
+"prompt": "Reescreva com if: “Unless you hurry, you'll be late.”",
+"answer": "If you don't hurry, you'll be late.",
+"why": ""
+},
+{
+"prompt": "Complete: “I'll stay unless it ___ (be) late.” (corrija a forma)",
+"answer": "I'll stay unless it's late.",
+"why": ""
+}
+]
+}

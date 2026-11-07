@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "objeto repetido",
+"wrong": "I like it the music.",
+"right": "I like the music.",
+"why": "Em português o pronome pode repetir o objeto; em inglês o objeto aparece uma vez, depois do verbo."
+},
+"mcq": [
+{
+"q": "Which order is correct?",
+"opts": [
+"Ana books reads.",
+"Reads Ana books.",
+"Ana reads books."
+],
+"ans": 2,
+"why": "S + V + O."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I love music.",
+"I music love.",
+"Love I music."
+],
+"ans": 0,
+"why": "S+V+O."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She needs.",
+"She needs a pen.",
+"She a pen needs."
+],
+"ans": 1,
+"why": "Verbo transitivo precisa de objeto."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Tom an apple eats.",
+"Eats Tom an apple.",
+"Tom eats an apple."
+],
+"ans": 2,
+"why": "S+V+O."
+}
+],
+"fix": [
+{
+"wrong": "I a book read.",
+"right": "I read a book.",
+"why": "S+V+O."
+},
+{
+"wrong": "Ana like it the song.",
+"right": "Ana likes the song.",
+"why": "Objeto uma vez."
+},
+{
+"wrong": "He buys every day.",
+"right": "He buys bread every day.",
+"why": "Falta objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Ponha na ordem: “reads / Ana / a book”",
+"answer": "Ana reads a book.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “eats / Tom / an apple”",
+"answer": "Tom eats an apple.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “watch / we / TV”",
+"answer": "We watch TV.",
+"why": ""
+}
+]
+}

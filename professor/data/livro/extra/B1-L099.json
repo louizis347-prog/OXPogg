@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "instruções (imperativo)",
+"wrong": "First you must to charge the battery. After you connect at Wi-Fi.",
+"right": "First, charge the battery. After that, connect to Wi-Fi.",
+"why": "Em português “conecte-se ao Wi-Fi” usa a; o brasileiro usa at. Em inglês, connect to. E instruções usam o imperativo, sem you must to."
+},
+"mcq": [
+{
+"q": "First, ___ the battery.",
+"opts": [
+"you charge",
+"charging",
+"charge"
+],
+"ans": 2,
+"why": "Imperativo."
+},
+{
+"q": "Connect ___ Wi-Fi.",
+"opts": [
+"at",
+"to",
+"in"
+],
+"ans": 1,
+"why": "connect to."
+},
+{
+"q": "After that, ___ the app.",
+"opts": [
+"open",
+"opening",
+"to open"
+],
+"ans": 0,
+"why": "Imperativo."
+},
+{
+"q": "Finally, ___.",
+"opts": [
+"restarts it",
+"restarting it",
+"restart it"
+],
+"ans": 2,
+"why": "Imperativo."
+}
+],
+"fix": [
+{
+"wrong": "Connect at Wi-Fi.",
+"right": "Connect to Wi-Fi.",
+"why": "to."
+},
+{
+"wrong": "First you charge the battery.",
+"right": "First, charge the battery.",
+"why": "Imperativo."
+},
+{
+"wrong": "After that, to open the app.",
+"right": "After that, open the app.",
+"why": "Imperativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como ordem: “You should charge the battery first.”",
+"answer": "Charge the battery first.",
+"why": ""
+},
+{
+"prompt": "Reescreva com connect: “Connect the Wi-Fi.” corrija",
+"answer": "Connect to Wi-Fi.",
+"why": ""
+},
+{
+"prompt": "Reescreva como ordem: “You must restart it.”",
+"answer": "Restart it.",
+"why": ""
+}
+]
+}

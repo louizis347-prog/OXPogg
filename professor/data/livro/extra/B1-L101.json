@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "give (sentidos)",
+"wrong": "This phone makes clear sound, makes me a headache and I put it 4 stars.",
+"right": "This phone gives clear sound, gave me a headache, and I give it 4 stars.",
+"why": "Em português “dá som claro”, “me deu dor de cabeça”, “dou 4 estrelas” e o brasileiro traduz como make/put. Em inglês, give."
+},
+"mcq": [
+{
+"q": "It ___ me a headache.",
+"opts": [
+"made",
+"gave",
+"did"
+],
+"ans": 1,
+"why": "give."
+},
+{
+"q": "I ___ it four stars.",
+"opts": [
+"put",
+"give",
+"make"
+],
+"ans": 1,
+"why": "give."
+},
+{
+"q": "It ___ clear sound.",
+"opts": [
+"gives",
+"does",
+"takes"
+],
+"ans": 0,
+"why": "give."
+},
+{
+"q": "I ___ a gift to my friend.",
+"opts": [
+"made",
+"took",
+"gave"
+],
+"ans": 2,
+"why": "give."
+}
+],
+"fix": [
+{
+"wrong": "It makes me a headache.",
+"right": "It gives me a headache.",
+"why": "give."
+},
+{
+"wrong": "I put it five stars.",
+"right": "I give it five stars.",
+"why": "give."
+},
+{
+"wrong": "She gived me a gift.",
+"right": "She gave me a gift.",
+"why": "gave."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “It gives me a headache.”",
+"answer": "It gave me a headache.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give: “My rating is four stars.” (I...)",
+"answer": "I give it four stars.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give: “She offered a gift to him.”",
+"answer": "She gave him a gift.",
+"why": ""
+}
+]
+}

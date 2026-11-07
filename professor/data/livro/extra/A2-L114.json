@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Present Perfect",
+"wrong": "I have seen him last week.",
+"right": "I saw him last week.",
+"why": "Em português 'tenho visto' mistura tempos; em inglês, com marcador passado (last week) usa-se Past Simple."
+},
+"mcq": [
+{
+"q": "I have ___ there twice.",
+"opts": [
+"be",
+"been",
+"was"
+],
+"ans": 1,
+"why": "been."
+},
+{
+"q": "The man ___ lives here is kind.",
+"opts": [
+"who",
+"which",
+"where"
+],
+"ans": 0,
+"why": "who."
+},
+{
+"q": "If it rains, I ___ stay home.",
+"opts": [
+"would",
+"will",
+"am"
+],
+"ans": 1,
+"why": "will."
+},
+{
+"q": "She left without ___ goodbye.",
+"opts": [
+"say",
+"saying",
+"to say"
+],
+"ans": 1,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I've lived here since three years.",
+"right": "I've lived here for three years.",
+"why": "for."
+},
+{
+"wrong": "If it will rain, I'll stay.",
+"right": "If it rains, I'll stay.",
+"why": "presente."
+},
+{
+"wrong": "A man who he lives here.",
+"right": "A man who lives here.",
+"why": "sem he."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect: “I see the film.”",
+"answer": "I have seen the film.",
+"why": ""
+},
+{
+"prompt": "Una: “You call. I'll answer.” com if",
+"answer": "If you call, I'll answer.",
+"why": ""
+},
+{
+"prompt": "Junte com who: “She is a girl. She sings.”",
+"answer": "She is a girl who sings.",
+"why": ""
+}
+]
+}

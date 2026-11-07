@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "write irregular",
+"wrong": "She writed a long email.",
+"right": "She wrote a long email.",
+"why": "O aluno regulariza com -ed; write → wrote → written, e become → became → become."
+},
+"mcq": [
+{
+"q": "Passado de write:",
+"opts": [
+"written",
+"writed",
+"wrote"
+],
+"ans": 2,
+"why": "wrote."
+},
+{
+"q": "Particípio de write:",
+"opts": [
+"writed",
+"wrote",
+"written"
+],
+"ans": 2,
+"why": "written."
+},
+{
+"q": "Passado de become:",
+"opts": [
+"become",
+"becomed",
+"became"
+],
+"ans": 2,
+"why": "became."
+},
+{
+"q": "She ___ a book last year.",
+"opts": [
+"wrote",
+"written",
+"has wrote"
+],
+"ans": 0,
+"why": "wrote."
+}
+],
+"fix": [
+{
+"wrong": "He writed an email.",
+"right": "He wrote an email.",
+"why": "wrote."
+},
+{
+"wrong": "I have wrote to her.",
+"right": "I have written to her.",
+"why": "written."
+},
+{
+"wrong": "She becomed a nurse.",
+"right": "She became a nurse.",
+"why": "became."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I write a poem.”",
+"answer": "I wrote a poem.",
+"why": ""
+},
+{
+"prompt": "Present perfect: “I wrote it.” (have)",
+"answer": "I have written it.",
+"why": ""
+},
+{
+"prompt": "Passado: “He becomes a chef.”",
+"answer": "He became a chef.",
+"why": ""
+}
+]
+}

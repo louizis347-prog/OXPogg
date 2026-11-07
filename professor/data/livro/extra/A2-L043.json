@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "will vs going to",
+"wrong": "I will to the cinema tonight.",
+"right": "I'm going to the cinema tonight.",
+"why": "Em português 'vou' serve para tudo; em inglês will é para decisões na hora e promessas, e planos feitos pedem going to ou be + -ing."
+},
+"mcq": [
+{
+"q": "The phone is ringing. I ___ answer it!",
+"opts": [
+"will",
+"am going to",
+"answer"
+],
+"ans": 0,
+"why": "decisão."
+},
+{
+"q": "I promise I ___ help you.",
+"opts": [
+"am going to",
+"help",
+"will"
+],
+"ans": 2,
+"why": "promessa."
+},
+{
+"q": "It's hot. I ___ open the window.",
+"opts": [
+"'ll",
+"'m going",
+"am"
+],
+"ans": 0,
+"why": "decisão."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I'll to be late.",
+"I'll am late.",
+"I'll be late."
+],
+"ans": 2,
+"why": "will be."
+}
+],
+"fix": [
+{
+"wrong": "I will buys it.",
+"right": "I will buy it.",
+"why": "base."
+},
+{
+"wrong": "She will to call.",
+"right": "She will call.",
+"why": "sem to."
+},
+{
+"wrong": "He willn't come.",
+"right": "He won't come.",
+"why": "won't."
+}
+],
+"rewrite": [
+{
+"prompt": "Contração: “I will help.”",
+"answer": "I'll help.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I will tell him.”",
+"answer": "I won't tell him.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You will come.”",
+"answer": "Will you come?",
+"why": ""
+}
+]
+}

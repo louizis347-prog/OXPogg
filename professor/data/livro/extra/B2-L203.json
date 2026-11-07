@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem dos adjetivos",
+"wrong": "It is a study scientific important.",
+"right": "It is an important scientific study.",
+"why": "Adjetivo vem depois do substantivo em português. Em inglês, antes."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"report",
+"graph",
+"information"
+],
+"ans": 2,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rose sharply.",
+"Sales rised sharply."
+],
+"ans": 1,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"in",
+"of",
+"on"
+],
+"ans": 0,
+"why": "increase in."
+}
+],
+"fix": [
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+},
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+},
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+}
+]
+}

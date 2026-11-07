@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo errado",
+"wrong": "The vet made a surgery on the horse.",
+"right": "The vet performed surgery on the horse.",
+"why": "Em português “fazer uma cirurgia” leva a make/do; em inglês usa-se perform ou operate on, e surgery é incontável."
+},
+"mcq": [
+{
+"q": "Which line is short, technical and authoritative?",
+"opts": [
+"She said that maybe it could possibly be colic.",
+"She was saying it is colic, I think.",
+"“Colic,” she said."
+],
+"ans": 2,
+"why": "Fala técnica é curta e sem hesitação."
+},
+{
+"q": "**Palpated** the abdomen means the vet…",
+"opts": [
+"listened to it",
+"cut it",
+"examined it by touch"
+],
+"ans": 2,
+"why": "Palpate = examinar pelo toque."
+},
+{
+"q": "Natural collocation:",
+"opts": [
+"do a tube",
+"pass a tube",
+"make a tube"
+],
+"ans": 1,
+"why": "Pass a tube é a combinação usada."
+},
+{
+"q": "**Gut motility** refers to…",
+"opts": [
+"gut size",
+"gut movement",
+"gut infection"
+],
+"ans": 1,
+"why": "Motility = capacidade de movimento."
+}
+],
+"fix": [
+{
+"wrong": "The vet palpated on the abdomen.",
+"right": "The vet palpated the abdomen.",
+"why": "Palpate é transitivo, sem preposição."
+},
+{
+"wrong": "The horse have abdominal distension.",
+"right": "The horse has abdominal distension.",
+"why": "Terceira pessoa: has."
+},
+{
+"wrong": "She said that: “Colic.”",
+"right": "She said, “Colic.”",
+"why": "Citação direta: vírgula, sem that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “The vet palpates the abdomen.”",
+"answer": "The vet palpated the abdomen.",
+"why": ""
+},
+{
+"prompt": "Troque “perform surgery on” por “operate on”: “They performed surgery on the mare.”",
+"answer": "They operated on the mare.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “The horse passed manure.”",
+"answer": "The horse did not pass manure.",
+"why": ""
+}
+]
+}

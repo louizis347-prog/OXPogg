@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plurais irregulares",
+"wrong": "Two childs are here.",
+"right": "Two children are here.",
+"why": "O brasileiro aplica a regra de -s também aos plurais irregulares."
+},
+"mcq": [
+{
+"q": "Plural of **baby**",
+"opts": [
+"babys",
+"babyes",
+"babies"
+],
+"ans": 2,
+"why": "Consoante + y: -ies."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Three cats",
+"Three cat",
+"Three cats are"
+],
+"ans": 0,
+"why": "Depois de número, plural."
+},
+{
+"q": "Plural of **man**",
+"opts": [
+"mans",
+"men",
+"manes"
+],
+"ans": 1,
+"why": "Irregular."
+},
+{
+"q": "Plural of **book**",
+"opts": [
+"bookes",
+"bookies",
+"books"
+],
+"ans": 2,
+"why": "Regra geral: -s."
+}
+],
+"fix": [
+{
+"wrong": "Five womans are here.",
+"right": "Five women are here.",
+"why": "Plural irregular."
+},
+{
+"wrong": "They are student.",
+"right": "They are students.",
+"why": "Sujeito plural, substantivo plural."
+},
+{
+"wrong": "I see three babys.",
+"right": "I see three babies.",
+"why": "y vira ies."
+}
+],
+"rewrite": [
+{
+"prompt": "Coloque no plural: “a child”",
+"answer": "two children",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “one baby”",
+"answer": "two babies",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “one man”",
+"answer": "two men",
+"why": ""
+}
+]
+}

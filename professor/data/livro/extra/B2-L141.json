@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "prefer ... to",
+"wrong": "I prefer coffee than tea.",
+"right": "I prefer coffee to tea.",
+"why": "Em português, \"prefiro café a chá\"; o aluno copia que de comparativos (more than). Em inglês, prefer usa to."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"I prefer tea to coffee.",
+"I prefer tea than coffee.",
+"I prefer tea of coffee."
+],
+"ans": 0,
+"why": "prefer A to B."
+},
+{
+"q": "Complete: I'd rather **___** at home.",
+"opts": [
+"to stay",
+"stay",
+"staying"
+],
+"ans": 1,
+"why": "would rather + base."
+},
+{
+"q": "Negativa de would rather:",
+"opts": [
+"I'd not rather go.",
+"I wouldn't rather to go.",
+"I'd rather not go."
+],
+"ans": 2,
+"why": "would rather not + base."
+},
+{
+"q": "Qual é correta?",
+"opts": [
+"She prefers cycling than driving.",
+"She prefers cycling to driving.",
+"She prefers to cycling to driving."
+],
+"ans": 1,
+"why": "prefer -ing to -ing."
+}
+],
+"fix": [
+{
+"wrong": "I prefer football than tennis.",
+"right": "I prefer football to tennis.",
+"why": "prefer A to B."
+},
+{
+"wrong": "She would rather to leave early.",
+"right": "She would rather leave early.",
+"why": "Sem to."
+},
+{
+"wrong": "He prefers swim to run.",
+"right": "He prefers swimming to running.",
+"why": "-ing to -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com prefer: “I like tea more than coffee.”",
+"answer": "I prefer tea to coffee.",
+"why": ""
+},
+{
+"prompt": "Reescreva com would rather: “I prefer to stay in.”",
+"answer": "I would rather stay in.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “I'd rather go.”",
+"answer": "I'd rather not go.",
+"why": ""
+}
+]
+}

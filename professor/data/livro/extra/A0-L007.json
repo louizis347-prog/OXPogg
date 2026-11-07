@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "negativa com do",
+"wrong": "I no am tired.",
+"right": "I am not tired.",
+"why": "Em português basta \"não\" antes do verbo; em inglês o not vem depois do be."
+},
+"mcq": [
+{
+"q": "Negative of “I am happy.”",
+"opts": [
+"I am not happy.",
+"I not am happy.",
+"I do not happy."
+],
+"ans": 0,
+"why": "Not vem depois do be."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He no is a doctor.",
+"He is not a doctor.",
+"He doesn’t a doctor."
+],
+"ans": 1,
+"why": "Not após is."
+},
+{
+"q": "You ___ not late.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 2,
+"why": "You: are."
+},
+{
+"q": "Short form of “is not”",
+"opts": [
+"isn’t",
+"ain’t",
+"not’s"
+],
+"ans": 0,
+"why": "is not = isn’t."
+}
+],
+"fix": [
+{
+"wrong": "She no is my sister.",
+"right": "She is not my sister.",
+"why": "Not depois de is."
+},
+{
+"wrong": "I not am hungry.",
+"right": "I am not hungry.",
+"why": "Not depois de am."
+},
+{
+"wrong": "They doesn’t are here.",
+"right": "They are not here.",
+"why": "Com be não se usa do."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a negativa: “The bread is cold.”",
+"answer": "The bread is not cold.",
+"why": ""
+},
+{
+"prompt": "Escreva a negativa: “I am ready.”",
+"answer": "I am not ready.",
+"why": ""
+},
+{
+"prompt": "Escreva a negativa: “We are late.”",
+"answer": "We are not late.",
+"why": ""
+}
+]
+}

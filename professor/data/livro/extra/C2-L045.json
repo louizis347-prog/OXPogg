@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "existing",
+"wrong": "Incidence counts new cases; prevalence counts the cases existents.",
+"right": "Incidence counts new cases; prevalence counts the existing cases.",
+"why": "Em português o adjetivo vem depois do substantivo (“casos existentes”). Em inglês, adjetivos vêm antes, e existent não é o termo usual: existing."
+},
+"mcq": [
+{
+"q": "**Incidence** is the number of...",
+"opts": [
+"new cases in a period",
+"cases at one moment",
+"deaths only"
+],
+"ans": 0,
+"why": "Casos novos."
+},
+{
+"q": "**Prevalence** is the number of...",
+"opts": [
+"new cases",
+"existing cases at one moment",
+"hospitals"
+],
+"ans": 1,
+"why": "Casos existentes."
+},
+{
+"q": "**Relative risk** compares...",
+"opts": [
+"two years",
+"two cities",
+"two groups"
+],
+"ans": 2,
+"why": "Grupos."
+},
+{
+"q": "A doubled relative risk could be...",
+"opts": [
+"tiny in absolute terms",
+"always large",
+"impossible"
+],
+"ans": 0,
+"why": "Absoluto × relativo."
+}
+],
+"fix": [
+{
+"wrong": "The risk is two times bigger.",
+"right": "The risk is twice as high.",
+"why": "twice as."
+},
+{
+"wrong": "The case fatality rate are 2%.",
+"right": "The case fatality rate is 2%.",
+"why": "is."
+},
+{
+"wrong": "The disease incidence increased in 10 per 1,000.",
+"right": "The disease incidence increased by 10 per 1,000.",
+"why": "by."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com twice as: “The risk is two times higher.”",
+"answer": "The risk is twice as high.",
+"why": ""
+},
+{
+"prompt": "Reescreva com existing: “the cases that exist now”",
+"answer": "the existing cases",
+"why": ""
+},
+{
+"prompt": "Reescreva com by: “The rate rose 10 per 1,000.”",
+"answer": "The rate rose by 10 per 1,000.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + infinitivo",
+"wrong": "She wants that I come.",
+"right": "She wants me to come.",
+"why": "Em português “quer que eu venha”. Em inglês: want + objeto + to + base, sem that."
+},
+"mcq": [
+{
+"q": "He decided **___** home.",
+"opts": [
+"staying",
+"to stay",
+"stay"
+],
+"ans": 1,
+"why": "Decide to."
+},
+{
+"q": "We got the car **___**.",
+"opts": [
+"washing",
+"wash",
+"washed"
+],
+"ans": 2,
+"why": "Particípio."
+},
+{
+"q": "She refused **___**.",
+"opts": [
+"waiting",
+"to wait",
+"wait"
+],
+"ans": 1,
+"why": "Refuse to."
+},
+{
+"q": "I had my hair **___**.",
+"opts": [
+"to cut",
+"cut",
+"cutting"
+],
+"ans": 1,
+"why": "Cut."
+}
+],
+"fix": [
+{
+"wrong": "They want that we help.",
+"right": "They want us to help.",
+"why": "Want + obj + to."
+},
+{
+"wrong": "He had his tooth pull.",
+"right": "He had his tooth pulled.",
+"why": "Particípio."
+},
+{
+"wrong": "We hope seeing you.",
+"right": "We hope to see you.",
+"why": "Hope to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She wants. I help.” (She wants me to…)",
+"answer": "She wants me to help.",
+"why": ""
+},
+{
+"prompt": "Passado: “He gets his car washed.”",
+"answer": "He got his car washed.",
+"why": ""
+},
+{
+"prompt": "Passado: “I decide to stay.”",
+"answer": "I decided to stay.",
+"why": ""
+}
+]
+}

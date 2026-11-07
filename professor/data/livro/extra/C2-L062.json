@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "voz passiva",
+"wrong": "The frequency is maintained in 50 Hz by the operator.",
+"right": "The frequency is held at 50 Hz by the operator.",
+"why": "Em português “manter em 50 Hz”; em inglês a preposição para valor/nível é at."
+},
+"mcq": [
+{
+"q": "Which describes a general process?",
+"opts": [
+"Plants fed electricity yesterday.",
+"Plants are going to feed.",
+"Plants feed electricity into the grid."
+],
+"ans": 2,
+"why": "Presente simples para processo."
+},
+{
+"q": "Agent irrelevant: choose the passive.",
+"opts": [
+"Someone holds frequency at 50 Hz.",
+"Frequency is held at 50 Hz.",
+"Frequency holds."
+],
+"ans": 1,
+"why": "Passiva omite o agente."
+},
+{
+"q": "A deviation can **___** shutdowns.",
+"opts": [
+"do",
+"trigger",
+"make"
+],
+"ans": 1,
+"why": "Verbo de causa: trigger."
+},
+{
+"q": "Step-down transformers…",
+"opts": [
+"store voltage",
+"lower voltage",
+"raise voltage"
+],
+"ans": 1,
+"why": "Step-down = reduzir."
+}
+],
+"fix": [
+{
+"wrong": "Electricity is send to homes.",
+"right": "Electricity is sent to homes.",
+"why": "Passiva com particípio."
+},
+{
+"wrong": "A deviation can cause that plants shut down.",
+"right": "A deviation can cause plants to shut down.",
+"why": "Cause + objeto + to."
+},
+{
+"wrong": "The line carries high voltage in long distances.",
+"right": "The line carries high voltage over long distances.",
+"why": "over long distances."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Operators hold frequency at 50 Hz.”",
+"answer": "Frequency is held at 50 Hz.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “trigger”: “A fault causes a shutdown.”",
+"answer": "A fault triggers a shutdown.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “The plant feeds the grid.”",
+"answer": "The plants feed the grid.",
+"why": ""
+}
+]
+}

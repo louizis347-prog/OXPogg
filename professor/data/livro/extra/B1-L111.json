@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ativa × passiva",
+"wrong": "The words were written by I, and the letters are send by the postman.",
+"right": "The words were written by me, and the letters are sent by the postman.",
+"why": "Em português “escritas por mim” usa mim após preposição. Em inglês by + pronome objeto (me), e a passiva exige particípio (sent)."
+},
+"mcq": [
+{
+"q": "Active: I wrote the words. Passive: The words ___.",
+"opts": [
+"wrote",
+"were written",
+"are written"
+],
+"ans": 1,
+"why": "Passado."
+},
+{
+"q": "Letters ___ by the postman (hoje).",
+"opts": [
+"delivers",
+"deliver",
+"are delivered"
+],
+"ans": 2,
+"why": "are."
+},
+{
+"q": "Written by ___.",
+"opts": [
+"me",
+"I",
+"my"
+],
+"ans": 0,
+"why": "me."
+},
+{
+"q": "Passive focuses on…",
+"opts": [
+"who did it",
+"what was done",
+"when"
+],
+"ans": 1,
+"why": "O que foi feito."
+}
+],
+"fix": [
+{
+"wrong": "It was written by I.",
+"right": "It was written by me.",
+"why": "Objeto."
+},
+{
+"wrong": "The letters are send.",
+"right": "The letters are sent.",
+"why": "pp."
+},
+{
+"wrong": "The words was written.",
+"right": "The words were written.",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “I wrote the words.”",
+"answer": "The words were written by me.",
+"why": ""
+},
+{
+"prompt": "Passe para a ativa: “The letters are delivered by the postman.”",
+"answer": "The postman delivers the letters.",
+"why": ""
+},
+{
+"prompt": "Passe para o presente passivo: “The words were written.”",
+"answer": "The words are written.",
+"why": ""
+}
+]
+}

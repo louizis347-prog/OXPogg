@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "It’s worth to visit the museum.",
+"right": "It’s worth visiting the museum.",
+"why": "Português “vale a pena visitar” usa infinitivo. Em inglês worth e no use são seguidos de -ing."
+},
+"mcq": [
+{
+"q": "It’s no use **___** at the door.",
+"opts": [
+"knocking",
+"knock",
+"to knock"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "The film is worth **___**.",
+"opts": [
+"seeing",
+"see",
+"to see"
+],
+"ans": 0,
+"why": "Worth + -ing."
+},
+{
+"q": "Não adianta gritar:",
+"opts": [
+"No use shout.",
+"It’s no use shouting.",
+"It’s no use to shout."
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "O oposto de It’s worth it:",
+"opts": [
+"It isn’t worth it.",
+"It isn’t worthy.",
+"It doesn’t worth."
+],
+"ans": 0,
+"why": "Not worth."
+}
+],
+"fix": [
+{
+"wrong": "It’s no use to argue with him.",
+"right": "It’s no use arguing with him.",
+"why": "-ing."
+},
+{
+"wrong": "The trail is worth to see.",
+"right": "The trail is worth seeing.",
+"why": "-ing."
+},
+{
+"wrong": "Is worthy asking her.",
+"right": "It’s worth asking her.",
+"why": "Worth, não worthy."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Arguing is useless.” (no use)",
+"answer": "It’s no use arguing.",
+"why": ""
+},
+{
+"prompt": "Transforme em pergunta: “The museum is worth visiting.”",
+"answer": "Is the museum worth visiting?",
+"why": ""
+},
+{
+"prompt": "Negativa: “The trail is worth seeing.”",
+"answer": "The trail isn’t worth seeing.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "subject to",
+"wrong": "Prices are subject of change.",
+"right": "Prices are subject to change.",
+"why": "Em português “sujeito a mudança” e o aluno muda a preposição por of. Em inglês, subject to é fixo."
+},
+"mcq": [
+{
+"q": "“Plans may be ___ to approval.”",
+"opts": [
+"subjects",
+"subject",
+"subjected"
+],
+"ans": 1,
+"why": "subject to."
+},
+{
+"q": "“Being subject ___ review improves quality.”",
+"opts": [
+"of",
+"by",
+"to"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "“Subject to funding” means...",
+"opts": [
+"if funding exists",
+"funding ends",
+"funding is late"
+],
+"ans": 0,
+"why": "Condição."
+},
+{
+"q": "A **right of appeal** is...",
+"opts": [
+"an app",
+"the right to challenge",
+"a prize"
+],
+"ans": 1,
+"why": "Direito."
+}
+],
+"fix": [
+{
+"wrong": "Prices are subject for change.",
+"right": "Prices are subject to change.",
+"why": "to."
+},
+{
+"wrong": "The ticket is subject at availability.",
+"right": "The ticket is subject to availability.",
+"why": "to."
+},
+{
+"wrong": "Plans may subject to approval.",
+"right": "Plans may be subject to approval.",
+"why": "be."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com subject to: “Prices may change.”",
+"answer": "Prices are subject to change.",
+"why": ""
+},
+{
+"prompt": "Reescreva com subject to: “If funding exists, we will continue.” (Subject to…)",
+"answer": "Subject to funding, we will continue.",
+"why": ""
+},
+{
+"prompt": "Reescreva com modal: “Plans are subject to approval.” (may)",
+"answer": "Plans may be subject to approval.",
+"why": ""
+}
+]
+}

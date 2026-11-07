@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pseudo-clivada frase",
+"wrong": "What we need data.",
+"right": "What we need is data.",
+"why": "O português diz “o que precisamos é de dados” com verbo ser. Em inglês, falta o is/was depois da oração com what."
+},
+"mcq": [
+{
+"q": "What we need ___ more data.",
+"opts": [
+"does",
+"is",
+"are"
+],
+"ans": 1,
+"why": "is."
+},
+{
+"q": "It is the data ___ we need.",
+"opts": [
+"what",
+"who",
+"that"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"What drove her was curiosity.",
+"What drove her curiosity.",
+"What she drove was curiosity."
+],
+"ans": 0,
+"why": "What…was."
+},
+{
+"q": "Refrain from ___ .",
+"opts": [
+"lie",
+"lying",
+"to lie"
+],
+"ans": 1,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "What we need more data.",
+"right": "What we need is more data.",
+"why": "is."
+},
+{
+"wrong": "All she needs are time.",
+"right": "All she needs is time.",
+"why": "is."
+},
+{
+"wrong": "It is data what we need.",
+"right": "It is data that we need.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudo-clivada: “We need more data.”",
+"answer": "What we need is more data.",
+"why": ""
+},
+{
+"prompt": "Com All: “She needs only time.”",
+"answer": "All she needs is time.",
+"why": ""
+},
+{
+"prompt": "Clivada: “We need more data.”",
+"answer": "It is more data that we need.",
+"why": ""
+}
+]
+}

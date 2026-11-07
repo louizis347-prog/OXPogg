@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito do particípio",
+"wrong": "Having heard it, the idea was clear.",
+"right": "Having heard it, she found the idea clear.",
+"why": "O português tolera sujeito diferente. Em inglês o sujeito da oração principal deve ser quem leu."
+},
+"mcq": [
+{
+"q": "Having heard it, ___ agreed.",
+"opts": [
+"she",
+"the idea",
+"it"
+],
+"ans": 0,
+"why": "Mesmo sujeito."
+},
+{
+"q": "Having ___ alerted, they stayed calm.",
+"opts": [
+"being",
+"been",
+"be"
+],
+"ans": 1,
+"why": "been."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Having heard it, agreed she.",
+"Reading having it, she agreed.",
+"Having heard it, she agreed."
+],
+"ans": 2,
+"why": "Correta."
+},
+{
+"q": "Participle clauses are…",
+"opts": [
+"formal",
+"slang",
+"questions"
+],
+"ans": 0,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "Having heard it, the plan was clear.",
+"right": "Having heard it, I found the plan clear.",
+"why": "Mesmo sujeito."
+},
+{
+"wrong": "Having alerted, they stayed calm.",
+"right": "Having been alerted, they stayed calm.",
+"why": "been."
+},
+{
+"wrong": "Having heard, it she agreed.",
+"right": "Having heard it, she agreed.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Particípio: “After she had heard it, she agreed.”",
+"answer": "Having heard it, she agreed.",
+"why": ""
+},
+{
+"prompt": "Passiva: “After they had been alerted, they stayed calm.”",
+"answer": "Having been alerted, they stayed calm.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Because she had not heard it, she waited.”",
+"answer": "Not having heard it, she waited.",
+"why": ""
+}
+]
+}

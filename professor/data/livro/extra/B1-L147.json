@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "relato de mistério",
+"wrong": "Could you tell me if did you notice it? I didn’t notice it was missing. The staff say that nothing disappear.",
+"right": "Could you tell me if you noticed it? I didn't notice it was missing. The staff said that nothing had disappeared.",
+"why": "Em português “perguntar se você percebeu” mantém a inversão. Em inglês, ordem afirmativa e tempo recuado ao relatar. O brasileiro também esquece o -ed de disappear."
+},
+"mcq": [
+{
+"q": "Could you tell me if you ___?",
+"opts": [
+"noticed",
+"did notice",
+"noticed did"
+],
+"ans": 0,
+"why": "Ordem."
+},
+{
+"q": "I didn’t notice it ___ missing.",
+"opts": [
+"was",
+"is",
+"were"
+],
+"ans": 0,
+"why": "was."
+},
+{
+"q": "The staff said nothing ___.",
+"opts": [
+"disappear",
+"disappears",
+"had disappeared"
+],
+"ans": 2,
+"why": "Past Perfect."
+},
+{
+"q": "To report a witness:",
+"opts": [
+"The staff says me that…",
+"The staff told that…",
+"The staff said that…"
+],
+"ans": 2,
+"why": "said that."
+}
+],
+"fix": [
+{
+"wrong": "Do you know if did he see it?",
+"right": "Do you know if he saw it?",
+"why": "Ordem."
+},
+{
+"wrong": "It was missing, I noticed not.",
+"right": "I didn't notice it was missing.",
+"why": "didn't + base."
+},
+{
+"wrong": "The guard tell that nothing happened.",
+"right": "The guard said that nothing had happened.",
+"why": "said, recuo."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne polida: “Did you notice it?” (Could you tell me if...)",
+"answer": "Could you tell me if you noticed it?",
+"why": ""
+},
+{
+"prompt": "Reescreva no discurso indireto: Staff: “Nothing disappeared.” (said)",
+"answer": "The staff said that nothing had disappeared.",
+"why": ""
+},
+{
+"prompt": "Torne negativa: “I noticed it was missing.”",
+"answer": "I didn't notice it was missing.",
+"why": ""
+}
+]
+}

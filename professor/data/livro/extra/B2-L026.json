@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "By 2030 we plant a million trees.",
+"right": "By 2030 we will have planted a million trees.",
+"why": "Português usa presente ou futuro simples. Ação concluída antes de um momento futuro pede will have + particípio."
+},
+"mcq": [
+{
+"q": "By 2030 we **___** planted a million trees.",
+"opts": [
+"will",
+"will have",
+"have"
+],
+"ans": 1,
+"why": "Will have."
+},
+{
+"q": "Negativa:",
+"opts": [
+"won’t have completed",
+"won’t completed",
+"don’t have completed"
+],
+"ans": 0,
+"why": "Won't have."
+},
+{
+"q": "Particípio de do:",
+"opts": [
+"doed",
+"done",
+"did"
+],
+"ans": 1,
+"why": "Done."
+},
+{
+"q": "By Friday she **___** finished.",
+"opts": [
+"will have",
+"has",
+"will be"
+],
+"ans": 0,
+"why": "Will have."
+}
+],
+"fix": [
+{
+"wrong": "We will have plant it.",
+"right": "We will have planted it.",
+"why": "Particípio."
+},
+{
+"wrong": "By May they will finish.",
+"right": "By May they will have finished.",
+"why": "Perfeito."
+},
+{
+"wrong": "She will has finished.",
+"right": "She will have finished.",
+"why": "Have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “By 2030 we plant a million trees.” (will have)",
+"answer": "By 2030 we will have planted a million trees.",
+"why": ""
+},
+{
+"prompt": "Negativa: “They will have finished.”",
+"answer": "They won’t have finished.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She will have finished.”",
+"answer": "Will she have finished?",
+"why": ""
+}
+]
+}

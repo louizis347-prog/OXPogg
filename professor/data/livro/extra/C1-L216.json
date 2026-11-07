@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "bring × take",
+"wrong": "I will bring you to the airport tomorrow.",
+"right": "I will take you to the airport tomorrow.",
+"why": "Em português “levar” cobre os dois movimentos. Em inglês, bring vai em direção a quem fala; take, para longe."
+},
+"mcq": [
+{
+"q": "“He ___ up the cost.” (mentioned)",
+"opts": [
+"brought",
+"took",
+"got"
+],
+"ans": 0,
+"why": "bring up."
+},
+{
+"q": "“Reform brought ___ change.”",
+"opts": [
+"over",
+"about",
+"in"
+],
+"ans": 1,
+"why": "bring about."
+},
+{
+"q": "“We must bring ___ the date.”",
+"opts": [
+"for",
+"at",
+"forward"
+],
+"ans": 2,
+"why": "antecipar."
+},
+{
+"q": "Moving away from here:",
+"opts": [
+"take",
+"bring",
+"fetch to"
+],
+"ans": 0,
+"why": "take."
+}
+],
+"fix": [
+{
+"wrong": "He brought up the cost, but nobody takes it up.",
+"right": "He brought up the cost, but nobody took it up.",
+"why": "Passado."
+},
+{
+"wrong": "They bring forward the date yesterday.",
+"right": "They brought forward the date yesterday.",
+"why": "Passado."
+},
+{
+"wrong": "It brought to light the problem.",
+"right": "It brought the problem to light.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com brought up: “He mentioned the cost.”",
+"answer": "He brought up the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com bring about: “Reform caused change.”",
+"answer": "Reform brought about change.",
+"why": ""
+},
+{
+"prompt": "Reescreva com bring forward: “We moved the date earlier.”",
+"answer": "We brought forward the date.",
+"why": ""
+}
+]
+}

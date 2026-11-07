@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make/let + base",
+"wrong": "She made me to cry.",
+"right": "She made me cry.",
+"why": "Em português 'me fez chorar' usa infinitivo; em inglês, make e let + objeto usam base sem to."
+},
+"mcq": [
+{
+"q": "My mom let me ___ .",
+"opts": [
+"go",
+"going",
+"to go"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "The film made us ___ .",
+"opts": [
+"laugh",
+"to laugh",
+"laughing"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"They let me staying.",
+"They let me to stay.",
+"They let me stay."
+],
+"ans": 2,
+"why": "base."
+},
+{
+"q": "He made her ___ .",
+"opts": [
+"to wait",
+"waiting",
+"wait"
+],
+"ans": 2,
+"why": "base."
+}
+],
+"fix": [
+{
+"wrong": "She let me to go.",
+"right": "She let me go.",
+"why": "sem to."
+},
+{
+"wrong": "He made them to wait.",
+"right": "He made them wait.",
+"why": "sem to."
+},
+{
+"wrong": "They made me laughing.",
+"right": "They made me laugh.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Mom let. I go.”",
+"answer": "Mom let me go.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It made. She smiles.”",
+"answer": "It made her smile.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He made. We wait.”",
+"answer": "He made us wait.",
+"why": ""
+}
+]
+}

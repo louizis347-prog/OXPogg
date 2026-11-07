@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem SVO",
+"wrong": "She bought red a dress.",
+"right": "She bought a red dress.",
+"why": "Em português o adjetivo costuma vir depois do substantivo; em inglês vem antes, e a ordem S + V + O é rígida."
+},
+"mcq": [
+{
+"q": "Ordem correta:",
+"opts": [
+"I lunch eat at noon.",
+"I eat lunch at noon.",
+"Eat I lunch at noon."
+],
+"ans": 1,
+"why": "S+V+O."
+},
+{
+"q": "Qual é o complemento? “She makes me happy.”",
+"opts": [
+"happy",
+"makes",
+"me"
+],
+"ans": 0,
+"why": "happy descreve o objeto."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"They painted the wall blue.",
+"They painted blue the wall.",
+"They the wall painted blue."
+],
+"ans": 0,
+"why": "Objeto antes do complemento."
+},
+{
+"q": "“It rains” em inglês. Qual está certa?",
+"opts": [
+"Rains.",
+"It rains.",
+"Is rains."
+],
+"ans": 1,
+"why": "Sujeito obrigatório."
+}
+],
+"fix": [
+{
+"wrong": "Is cold today.",
+"right": "It is cold today.",
+"why": "Sujeito obrigatório."
+},
+{
+"wrong": "He made sad me.",
+"right": "He made me sad.",
+"why": "Objeto antes do complemento."
+},
+{
+"wrong": "I bought yesterday a book.",
+"right": "I bought a book yesterday.",
+"why": "Verbo e objeto juntos."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The movie made Ana ___.” → com sad",
+"answer": "The movie made Ana sad.",
+"why": ""
+},
+{
+"prompt": "Reescreva com sujeito: “Is late.”",
+"answer": "It is late.",
+"why": ""
+},
+{
+"prompt": "Coloque na ordem: “a book / I / read”",
+"answer": "I read a book.",
+"why": ""
+}
+]
+}

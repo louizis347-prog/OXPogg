@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "emphasize",
+"wrong": "The author emphasizes on the cost.",
+"right": "The author emphasizes the cost.",
+"why": "\"Dar ênfase em\" leva o aluno a usar on. Emphasize é transitivo."
+},
+"mcq": [
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a useful new tool",
+"a tool new useful",
+"a new tool useful"
+],
+"ans": 0,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"a research",
+"research",
+"researches"
+],
+"ans": 1,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay discusses of both views.",
+"This essay will discuss both views."
+],
+"ans": 2,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"In my opinion",
+"By me"
+],
+"ans": 1,
+"why": "in my opinion."
+}
+],
+"fix": [
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+},
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+}
+]
+}

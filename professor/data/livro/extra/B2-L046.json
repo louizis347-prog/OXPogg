@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "I object to pay this fee.",
+"right": "I object to paying this fee.",
+"why": "Em português “me oponho a pagar” é infinitivo. Em inglês, object to e be opposed to terminam em preposição, então vem -ing."
+},
+"mcq": [
+{
+"q": "She objects **___** working Sundays.",
+"opts": [
+"for",
+"to",
+"with"
+],
+"ans": 1,
+"why": "Object to."
+},
+{
+"q": "He is opposed **___** raising taxes.",
+"opts": [
+"to",
+"with",
+"at"
+],
+"ans": 0,
+"why": "Opposed to."
+},
+{
+"q": "Depois de object to usa-se:",
+"opts": [
+"base",
+"-ing",
+"particípio"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I object to paying.",
+"I object to pay.",
+"I object paying."
+],
+"ans": 0,
+"why": "To + -ing."
+}
+],
+"fix": [
+{
+"wrong": "They object to open on Sundays.",
+"right": "They object to opening on Sundays.",
+"why": "-ing."
+},
+{
+"wrong": "She is opposed with the plan.",
+"right": "She is opposed to the plan.",
+"why": "Opposed to."
+},
+{
+"wrong": "I object of waiting.",
+"right": "I object to waiting.",
+"why": "To."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I don’t want to pay.” (object to)",
+"answer": "I object to paying.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He opposes working late.” (is opposed to)",
+"answer": "He is opposed to working late.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She objects to waiting.”",
+"answer": "She doesn’t object to waiting.",
+"why": ""
+}
+]
+}

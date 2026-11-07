@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "thirteen × thirty",
+"wrong": "I am thirteen. (30 anos)",
+"right": "I am thirty.",
+"why": "O sufixo -teen leva acento no fim (thir-TEEN) e -ty no início (THIR-ty); o brasileiro não percebe a diferença e confunde 13/30 na fala e na escrita."
+},
+"mcq": [
+{
+"q": "30 =",
+"opts": [
+"thirteen",
+"thirty",
+"three"
+],
+"ans": 1,
+"why": "Thirty = 30."
+},
+{
+"q": "14 =",
+"opts": [
+"forty",
+"four",
+"fourteen"
+],
+"ans": 2,
+"why": "Fourteen."
+},
+{
+"q": "40 =",
+"opts": [
+"forty",
+"fourty",
+"fourteen"
+],
+"ans": 0,
+"why": "Sem u."
+},
+{
+"q": "15 =",
+"opts": [
+"fiveteen",
+"fifteen",
+"fifty"
+],
+"ans": 1,
+"why": "Fifteen."
+}
+],
+"fix": [
+{
+"wrong": "I have fourty books.",
+"right": "I have forty books.",
+"why": "Forty."
+},
+{
+"wrong": "She is fiveteen.",
+"right": "She is fifteen.",
+"why": "Fifteen."
+},
+{
+"wrong": "There are thirty-teen people.",
+"right": "There are thirteen people.",
+"why": "Thirteen."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva por extenso: 13",
+"answer": "thirteen",
+"why": ""
+},
+{
+"prompt": "Escreva por extenso: 40",
+"answer": "forty",
+"why": ""
+},
+{
+"prompt": "Escreva por extenso: 15",
+"answer": "fifteen",
+"why": ""
+}
+]
+}

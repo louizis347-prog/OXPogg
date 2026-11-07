@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ask/tell + to",
+"wrong": "The coach told that we run.",
+"right": "The coach told us to run.",
+"why": "Em português 'mandou que corrêssemos' usa subordinada; em inglês tell/ask/allow + pessoa + to."
+},
+"mcq": [
+{
+"q": "Her mom allowed ___ to go.",
+"opts": [
+"hers",
+"her",
+"she"
+],
+"ans": 1,
+"why": "objeto."
+},
+{
+"q": "He asked ___ to speak slower.",
+"opts": [
+"us",
+"we",
+"our"
+],
+"ans": 0,
+"why": "objeto."
+},
+{
+"q": "They advised ___ not to go.",
+"opts": [
+"I",
+"my",
+"me"
+],
+"ans": 2,
+"why": "objeto."
+},
+{
+"q": "Qual está certa? (tell + to)",
+"opts": [
+"Tell him to wait.",
+"Tell him wait.",
+"Tell to him wait."
+],
+"ans": 0,
+"why": "tell + obj + to."
+}
+],
+"fix": [
+{
+"wrong": "The teacher wants that you speak.",
+"right": "The teacher wants you to speak.",
+"why": "objeto + to."
+},
+{
+"wrong": "She told me don't worry.",
+"right": "She told me not to worry.",
+"why": "not to."
+},
+{
+"wrong": "He allowed I to stay.",
+"right": "He allowed me to stay.",
+"why": "objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I advised. He rests.”",
+"answer": "I advised him to rest.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She told. We didn't wait.” (not to)",
+"answer": "She told us not to wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They allowed. She leaves.”",
+"answer": "They allowed her to leave.",
+"why": ""
+}
+]
+}

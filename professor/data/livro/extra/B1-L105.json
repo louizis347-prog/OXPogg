@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "família de palavras (analyze)",
+"wrong": "I analise the source. It is an analytic analyzes.",
+"right": "I analyze the source. It is an analytical analysis.",
+"why": "Em português analisar/análise/analítico; o brasileiro erra a grafia (analise) e mistura verbo e substantivo. Em inglês: analyze (verbo), analysis (substantivo), analytical (adjetivo), analytically (advérbio)."
+},
+"mcq": [
+{
+"q": "A careful ___",
+"opts": [
+"analyze",
+"analysis",
+"analytical"
+],
+"ans": 1,
+"why": "Substantivo."
+},
+{
+"q": "Please ___ the source.",
+"opts": [
+"analyze",
+"analysis",
+"analytical"
+],
+"ans": 0,
+"why": "Verbo."
+},
+{
+"q": "She is very ___.",
+"opts": [
+"analysis",
+"analytical",
+"analyze"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "He thinks ___.",
+"opts": [
+"analytical",
+"analysis",
+"analytically"
+],
+"ans": 2,
+"why": "Advérbio."
+}
+],
+"fix": [
+{
+"wrong": "I will analysis the data.",
+"right": "I will analyze the data.",
+"why": "Verbo."
+},
+{
+"wrong": "It is a good analyze.",
+"right": "It is a good analysis.",
+"why": "Substantivo."
+},
+{
+"wrong": "She is analysis.",
+"right": "She is analytical.",
+"why": "Adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Use o substantivo: “We analyzed the data carefully.” (A careful ...)",
+"answer": "A careful analysis",
+"why": ""
+},
+{
+"prompt": "Use o adjetivo: “She analyzes well.” (She is ...)",
+"answer": "She is analytical.",
+"why": ""
+},
+{
+"prompt": "Use o advérbio: “He thinks in an analytical way.”",
+"answer": "He thinks analytically.",
+"why": ""
+}
+]
+}

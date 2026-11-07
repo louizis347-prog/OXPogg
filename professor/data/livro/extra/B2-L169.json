@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "suggest + objeto",
+"wrong": "He suggested me to rest.",
+"right": "He suggested that I rest.",
+"why": "O português aceita \"sugeriu-me descansar\". Em inglês, suggest não leva objeto + to: use that-clause ou -ing."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"He admitted to that he was late.",
+"He admitted that he was late.",
+"He admitted me he was late."
+],
+"ans": 1,
+"why": "admit that + oração."
+},
+{
+"q": "Qual verbo usa objeto direto de pessoa?",
+"opts": [
+"said",
+"suggested",
+"told"
+],
+"ans": 2,
+"why": "tell + pessoa."
+},
+{
+"q": "\"She denied taking the money\" significa...",
+"opts": [
+"Ela negou ter pegado.",
+"Ela admitiu.",
+"Ela pediu."
+],
+"ans": 0,
+"why": "deny + -ing = negar."
+},
+{
+"q": "Complete: He **promised ___** call.",
+"opts": [
+"that to",
+"for",
+"to"
+],
+"ans": 2,
+"why": "promise to + verbo."
+}
+],
+"fix": [
+{
+"wrong": "He told that the shop was closed.",
+"right": "He said that the shop was closed.",
+"why": "Sem pessoa, use said."
+},
+{
+"wrong": "She suggested me to go home.",
+"right": "She suggested that I go home.",
+"why": "Suggest que-clause."
+},
+{
+"wrong": "They explained me the problem.",
+"right": "They explained the problem to me.",
+"why": "explain to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com admitted: “‘I broke it,’ Leo said.”",
+"answer": "Leo admitted breaking it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com promised: “‘I will help,’ she said.”",
+"answer": "She promised to help.",
+"why": ""
+},
+{
+"prompt": "Reescreva com warned: “‘Don't touch it,’ he said to us.”",
+"answer": "He warned us not to touch it.",
+"why": ""
+}
+]
+}

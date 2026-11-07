@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so… that",
+"wrong": "So strong that it was the wind.",
+"right": "So strong was the wind that trees fell.",
+"why": "Sem inversão e sem that a frase fica incompleta. So + adjetivo no início exige verbo antes do sujeito."
+},
+"mcq": [
+{
+"q": "It is plain words ___ carry disagreement.",
+"opts": [
+"who",
+"that",
+"what"
+],
+"ans": 1,
+"why": "that."
+},
+{
+"q": "So strong ___ the wind that trees fell.",
+"opts": [
+"is it",
+"did",
+"was"
+],
+"ans": 2,
+"why": "was."
+},
+{
+"q": "Such… that vs So… that: both mean…",
+"opts": [
+"consequence",
+"contrast",
+"time"
+],
+"ans": 0,
+"why": "Consequência."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Such was noise that left we.",
+"Such was the noise that we left.",
+"Such the noise was we left."
+],
+"ans": 1,
+"why": "Such was."
+}
+],
+"fix": [
+{
+"wrong": "So strong the wind was that trees fell.",
+"right": "So strong was the wind that trees fell.",
+"why": "Inversão."
+},
+{
+"wrong": "It is plain words what carry meaning.",
+"right": "It is plain words that carry meaning.",
+"why": "that."
+},
+{
+"wrong": "Such was the noise we left.",
+"right": "Such was the noise that we left.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “The wind was so strong that trees fell.”",
+"answer": "So strong was the wind that trees fell.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Plain words carry meaning.”",
+"answer": "It is plain words that carry meaning.",
+"why": ""
+},
+{
+"prompt": "Com such: “The noise was so loud that we left.”",
+"answer": "Such was the noise that we left.",
+"why": ""
+}
+]
+}

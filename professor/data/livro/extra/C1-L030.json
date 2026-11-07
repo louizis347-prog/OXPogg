@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "put down to",
+"wrong": "Managers attribute failure for execution.",
+"right": "Managers attribute failure to execution.",
+"why": "Atribuir “por/para” leva o brasileiro a usar for. Em inglês: attribute A to B ou put A down to B."
+},
+"mcq": [
+{
+"q": "Managers attribute failure ___ execution.",
+"opts": [
+"of",
+"to",
+"for"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Put the failure ___ to weak execution.",
+"opts": [
+"up",
+"off",
+"down"
+],
+"ans": 2,
+"why": "put down to."
+},
+{
+"q": "“As long as” expresses…",
+"opts": [
+"necessary condition",
+"contrast",
+"time"
+],
+"ans": 0,
+"why": "Condição."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Provided of paying, we start.",
+"Provided that you pay, we start.",
+"Provided you will pay, we start."
+],
+"ans": 1,
+"why": "Provided (that)."
+}
+],
+"fix": [
+{
+"wrong": "They put the failure up to luck.",
+"right": "They put the failure down to luck.",
+"why": "put down to."
+},
+{
+"wrong": "As long as you will pay, we start.",
+"right": "As long as you pay, we start.",
+"why": "Sem will."
+},
+{
+"wrong": "They attribute it for luck.",
+"right": "They attribute it to luck.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Use put down to: “They attribute the loss to error.”",
+"answer": "They put the loss down to error.",
+"why": ""
+},
+{
+"prompt": "Use as long as: “We start only if you pay.”",
+"answer": "We start as long as you pay.",
+"why": ""
+},
+{
+"prompt": "Use attribute: “Failure is due to execution.” (Managers…)",
+"answer": "Managers attribute failure to execution.",
+"why": ""
+}
+]
+}

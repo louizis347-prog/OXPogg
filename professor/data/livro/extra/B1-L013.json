@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "how long",
+"wrong": "How much time do you study English?",
+"right": "How long have you studied English?",
+"why": "Em português 'há quanto tempo' vira how long + present perfect; o aluno traduz com 'quanto tempo' no presente."
+},
+"mcq": [
+{
+"q": "___ have you lived here?",
+"opts": [
+"How long",
+"How much",
+"How many"
+],
+"ans": 0,
+"why": "duração."
+},
+{
+"q": "I have studied ___ 7 a.m.",
+"opts": [
+"for",
+"during",
+"since"
+],
+"ans": 2,
+"why": "ponto."
+},
+{
+"q": "We've been friends ___ ages.",
+"opts": [
+"for",
+"since",
+"from"
+],
+"ans": 0,
+"why": "duração."
+},
+{
+"q": "How long ___ she worked there?",
+"opts": [
+"has",
+"did",
+"is"
+],
+"ans": 0,
+"why": "has."
+}
+],
+"fix": [
+{
+"wrong": "How long are you here?",
+"right": "How long have you been here?",
+"why": "present perfect."
+},
+{
+"wrong": "I have studied English since five years.",
+"right": "I have studied English for five years.",
+"why": "for."
+},
+{
+"wrong": "She has wait since noon.",
+"right": "She has waited since noon.",
+"why": "particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “He has lived here.” (how long)",
+"answer": "How long has he lived here?",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I started in March. I'm still here.” com since",
+"answer": "I have been here since March.",
+"why": ""
+},
+{
+"prompt": "Reescreva com for: “I started waiting four hours ago and I'm still waiting.”",
+"answer": "I have waited for four hours.",
+"why": ""
+}
+]
+}

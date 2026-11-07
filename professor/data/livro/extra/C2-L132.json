@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Not until the final session delegates addressed it.",
+"right": "Not until the final session did delegates address it.",
+"why": "Português mantém ordem direta; inglês inverte após Not until."
+},
+"mcq": [
+{
+"q": "Which sentence inverts correctly after Not until?",
+"opts": [
+"Not until noon did he spoke.",
+"Not until noon did he speak.",
+"Not until noon he spoke."
+],
+"ans": 1,
+"why": "did + base."
+},
+{
+"q": "Same meaning:",
+"opts": [
+"He did not speak until noon.",
+"He not spoke until noon.",
+"He did not spoke."
+],
+"ans": 0,
+"why": "Negativa."
+},
+{
+"q": "After “Not until X”, use…",
+"opts": [
+"aux + subject",
+"verb only",
+"subject + verb"
+],
+"ans": 0,
+"why": "Aux + S."
+},
+{
+"q": "Not until the final session…",
+"opts": [
+"delegates addressed it",
+"did delegates address it",
+"addressed delegates"
+],
+"ans": 1,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Not until noon he spoke.",
+"right": "Not until noon did he speak.",
+"why": "Inversão."
+},
+{
+"wrong": "Not until noon did he spoke.",
+"right": "Not until noon did he speak.",
+"why": "Base."
+},
+{
+"wrong": "Delegates did not address it until the final session.",
+"right": "Not until the final session did delegates address it.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “He did not speak until noon.”",
+"answer": "Not until noon did he speak.",
+"why": ""
+},
+{
+"prompt": "Inverta: “She did not arrive until ten.”",
+"answer": "Not until ten did she arrive.",
+"why": ""
+},
+{
+"prompt": "Desfaça: “Not until noon did he speak.”",
+"answer": "He did not speak until noon.",
+"why": ""
+}
+]
+}

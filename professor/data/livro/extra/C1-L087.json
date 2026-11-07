@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mesmo sujeito",
+"wrong": "Having been signalled, the room stayed calm.",
+"right": "Having been signalled, they stayed calm.",
+"why": "O português aceita “avisados, a sala ficou calma”. Em inglês, o sujeito do particípio e da principal é o mesmo."
+},
+"mcq": [
+{
+"q": "Having ___ , she left. (she read)",
+"opts": [
+"reading",
+"read",
+"been read"
+],
+"ans": 1,
+"why": "Ativa."
+},
+{
+"q": "Having been ___ , he left. (he was fired)",
+"opts": [
+"fire",
+"firing",
+"fired"
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "Same subject in both clauses?",
+"opts": [
+"Yes",
+"No",
+"Only in speech"
+],
+"ans": 0,
+"why": "Sim."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Not been told, she asked.",
+"Not having been told, she asked.",
+"Having not been told, she asked it."
+],
+"ans": 1,
+"why": "Not having been."
+}
+],
+"fix": [
+{
+"wrong": "Having been told, the room left.",
+"right": "Having been told, they left.",
+"why": "Mesmo sujeito."
+},
+{
+"wrong": "Having not been told, she asked.",
+"right": "Not having been told, she asked.",
+"why": "Not no início."
+},
+{
+"wrong": "Having seen, she agree.",
+"right": "Having seen it, she agreed.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “After he was told, he left.”",
+"answer": "Having been told, he left.",
+"why": ""
+},
+{
+"prompt": "Ativa: “After she seen it, she agreed.”",
+"answer": "Having seen it, she agreed.",
+"why": ""
+},
+{
+"prompt": "Negativa passiva: “Because she was not told, she asked.”",
+"answer": "Not having been told, she asked.",
+"why": ""
+}
+]
+}

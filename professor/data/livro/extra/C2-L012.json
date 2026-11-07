@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "according to",
+"wrong": "We use different registers according the situation.",
+"right": "We use different registers according to the situation.",
+"why": "Em português “de acordo com” é só uma expressão, e o aluno omite o to final. Em inglês, according to é fixo."
+},
+"mcq": [
+{
+"q": "A **dialect** is tied to...",
+"opts": [
+"region or group",
+"the situation",
+"one author"
+],
+"ans": 0,
+"why": "Região/grupo."
+},
+{
+"q": "A **register** is tied to...",
+"opts": [
+"the birthplace",
+"the situation",
+"the alphabet"
+],
+"ans": 1,
+"why": "Situação."
+},
+{
+"q": "A **descriptive** grammar tells how...",
+"opts": [
+"people should speak",
+"words rhyme",
+"people actually speak"
+],
+"ans": 2,
+"why": "Descreve o uso."
+},
+{
+"q": "Style is...",
+"opts": [
+"an individual choice",
+"a place",
+"a law"
+],
+"ans": 0,
+"why": "Escolha individual."
+}
+],
+"fix": [
+{
+"wrong": "Dialect are linked to region.",
+"right": "Dialects are linked to region.",
+"why": "plural."
+},
+{
+"wrong": "A prescriptive rule tell us how we should speak.",
+"right": "A prescriptive rule tells us how we should speak.",
+"why": "-s."
+},
+{
+"wrong": "Registers varies by the situation.",
+"right": "Registers vary by situation.",
+"why": "plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com according to: “By the situation we change register.”",
+"answer": "We change register according to the situation.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “A dialect is regional.”",
+"answer": "Dialects are regional.",
+"why": ""
+},
+{
+"prompt": "Reescreva no negativo: “It is a social dialect.”",
+"answer": "It is not a social dialect.",
+"why": ""
+}
+]
+}

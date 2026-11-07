@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "She must to be exhausted.",
+"right": "She must be exhausted.",
+"why": "Modais não levam to. Dedução: must be (certeza que é) × can’t be (certeza que não é)."
+},
+"mcq": [
+{
+"q": "She works nonstop. She **___** be exhausted.",
+"opts": [
+"can’t",
+"must",
+"has"
+],
+"ans": 1,
+"why": "Dedução positiva."
+},
+{
+"q": "He is on holiday. He **___** be at the office.",
+"opts": [
+"must",
+"may to",
+"can’t"
+],
+"ans": 2,
+"why": "Dedução negativa."
+},
+{
+"q": "Negativa de must (dedução):",
+"opts": [
+"don’t must",
+"mustn’t",
+"can’t"
+],
+"ans": 2,
+"why": "Can’t."
+},
+{
+"q": "Qual está correta? (Strong deduction (must, can’t) · B2-L022)",
+"opts": [
+"She must is tired.",
+"She must to be tired.",
+"She must be tired."
+],
+"ans": 2,
+"why": "Be."
+}
+],
+"fix": [
+{
+"wrong": "She must to be tired.",
+"right": "She must be tired.",
+"why": "Sem to."
+},
+{
+"wrong": "He mustn’t be at home; his car is gone.",
+"right": "He can’t be at home; his car is gone.",
+"why": "Dedução negativa = can’t."
+},
+{
+"wrong": "They must are late.",
+"right": "They must be late.",
+"why": "Be."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I’m sure she is tired.” (must)",
+"answer": "She must be tired.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I’m sure he isn’t at home.” (can’t)",
+"answer": "He can’t be at home.",
+"why": ""
+},
+{
+"prompt": "Dedução negativa: “She must be at home.” (can’t)",
+"answer": "She can’t be at home.",
+"why": ""
+}
+]
+}

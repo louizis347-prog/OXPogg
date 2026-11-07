@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome extra",
+"wrong": "The book that I bought it is good.",
+"right": "The book that I bought is good.",
+"why": "Em português é comum repetir o pronome ('o livro que comprei ele'); em inglês o objeto da oração relativa se omite."
+},
+"mcq": [
+{
+"q": "The film ___ I saw was great.",
+"opts": [
+"where",
+"who",
+"that"
+],
+"ans": 2,
+"why": "coisa."
+},
+{
+"q": "The woman ___ called me is my aunt.",
+"opts": [
+"who",
+"which",
+"what"
+],
+"ans": 0,
+"why": "pessoa."
+},
+{
+"q": "The house ___ I live in is old.",
+"opts": [
+"who",
+"whom",
+"which"
+],
+"ans": 2,
+"why": "coisa."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"The man I met is kind.",
+"The man who I met him is kind.",
+"The man I met him is kind."
+],
+"ans": 0,
+"why": "sem him."
+}
+],
+"fix": [
+{
+"wrong": "The cake that I made it is good.",
+"right": "The cake that I made is good.",
+"why": "sem it."
+},
+{
+"wrong": "The man which lives here is kind.",
+"right": "The man who lives here is kind.",
+"why": "who."
+},
+{
+"wrong": "A hotel is a place who people stay.",
+"right": "A hotel is a place where people stay.",
+"why": "where."
+}
+],
+"rewrite": [
+{
+"prompt": "Junte: “The cake is good. I made it.” com that",
+"answer": "The cake that I made is good.",
+"why": ""
+},
+{
+"prompt": "Junte: “The man is kind. He lives here.” com who",
+"answer": "The man who lives here is kind.",
+"why": ""
+},
+{
+"prompt": "Junte: “A hotel is a place. People stay there.” com where",
+"answer": "A hotel is a place where people stay.",
+"why": ""
+}
+]
+}

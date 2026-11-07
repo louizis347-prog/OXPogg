@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio irregular",
+"wrong": "The name can’t be spoke aloud.",
+"right": "The name can’t be spoken aloud.",
+"why": "O português usa particípios regulares em -ido/-ado, então o aluno confunde passado e particípio de verbos irregulares (spoke × spoken)."
+},
+"mcq": [
+{
+"q": "Which expresses a **moral duty** in the passive?",
+"opts": [
+"Some things must be said.",
+"Some things can say.",
+"Some things are must said."
+],
+"ans": 0,
+"why": "must be + pp."
+},
+{
+"q": "“Songs ought to have been sung” means...",
+"opts": [
+"they were sung twice",
+"they were not sung, but should have been",
+"they cannot be sung"
+],
+"ans": 1,
+"why": "Passado não cumprido."
+},
+{
+"q": "Complete: “The letter ___ be read now.”",
+"opts": [
+"can",
+"is can",
+"can’t"
+],
+"ans": 2,
+"why": "Impossibilidade: can’t be read."
+},
+{
+"q": "Past participle of **write**:",
+"opts": [
+"written",
+"wrote",
+"writed"
+],
+"ans": 0,
+"why": "write-wrote-written."
+}
+],
+"fix": [
+{
+"wrong": "The unread letter should have been open.",
+"right": "The unread letter should have been opened.",
+"why": "Particípio."
+},
+{
+"wrong": "A name that cannot speak is sad.",
+"right": "A name that cannot be spoken is sad.",
+"why": "Passiva."
+},
+{
+"wrong": "The song ought have been sung.",
+"right": "The song ought to have been sung.",
+"why": "ought to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Someone ought to have sung the songs.”",
+"answer": "The songs ought to have been sung.",
+"why": ""
+},
+{
+"prompt": "Passiva: “You must say some things.”",
+"answer": "Some things must be said.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Nobody can read this letter.”",
+"answer": "This letter can’t be read.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hardly ever",
+"wrong": "Hardly ever a deal succeeds without research.",
+"right": "Hardly ever does a deal succeed without research.",
+"why": "Em português a ordem “raramente um acordo funciona” é direta. Em inglês, após hardly ever no início usa-se do/does."
+},
+"mcq": [
+{
+"q": "Hardly ever ___ a deal succeed without research.",
+"opts": [
+"does",
+"do",
+"is"
+],
+"ans": 0,
+"why": "does."
+},
+{
+"q": "Only then ___ he understand.",
+"opts": [
+"had",
+"did",
+"does"
+],
+"ans": 1,
+"why": "did."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Hardly ever they agree.",
+"Hardly ever agree they.",
+"Hardly ever do they agree."
+],
+"ans": 2,
+"why": "do."
+},
+{
+"q": "“Hardly ever” means…",
+"opts": [
+"almost never",
+"very often",
+"sometimes"
+],
+"ans": 0,
+"why": "Quase nunca."
+}
+],
+"fix": [
+{
+"wrong": "Hardly ever a deal succeeds.",
+"right": "Hardly ever does a deal succeed.",
+"why": "Inversão."
+},
+{
+"wrong": "Only then Rui understood.",
+"right": "Only then did Rui understand.",
+"why": "did."
+},
+{
+"wrong": "Hardly ever does they agree.",
+"right": "Hardly ever do they agree.",
+"why": "do."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Hardly ever: “A deal hardly ever succeeds.”",
+"answer": "Hardly ever does a deal succeed.",
+"why": ""
+},
+{
+"prompt": "Comece com Only then: “Rui understood then.”",
+"answer": "Only then did Rui understand.",
+"why": ""
+},
+{
+"prompt": "Comece com Hardly ever: “They hardly ever agree.”",
+"answer": "Hardly ever do they agree.",
+"why": ""
+}
+]
+}

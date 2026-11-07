@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + that",
+"wrong": "I recommend you to install it.",
+"right": "I recommend that we install it.",
+"why": "Em português “recomendo que instalemos”; o brasileiro usa objeto + to. Recommend that + sujeito + base."
+},
+"mcq": [
+{
+"q": "I recommend that we **___** the update.",
+"opts": [
+"install",
+"installs",
+"to install"
+],
+"ans": 0,
+"why": "Base."
+},
+{
+"q": "He recommends that she **___** early.",
+"opts": [
+"to leave",
+"leave",
+"leaves"
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "Suggest that:",
+"opts": [
+"I suggest that you to wait.",
+"I suggest that you wait.",
+"I suggest you to wait."
+],
+"ans": 1,
+"why": "That + base."
+},
+{
+"q": "Insist that:",
+"opts": [
+"She insists him come.",
+"She insists that he come.",
+"She insists to come him."
+],
+"ans": 1,
+"why": "That + base."
+}
+],
+"fix": [
+{
+"wrong": "I recommend him to rest.",
+"right": "I recommend that he rest.",
+"why": "That."
+},
+{
+"wrong": "She suggests that we goes.",
+"right": "She suggests that we go.",
+"why": "Base."
+},
+{
+"wrong": "They insist that he comes.",
+"right": "They insist that he come.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “You should wait.” (I suggest that you…)",
+"answer": "I suggest that you wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He should rest.” (I recommend that he…)",
+"answer": "I recommend that he rest.",
+"why": ""
+},
+{
+"prompt": "Passado: “We recommend that she leave.”",
+"answer": "We recommended that she leave.",
+"why": ""
+}
+]
+}

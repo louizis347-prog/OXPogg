@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dangling participle",
+"wrong": "Having spoken, the room was quiet.",
+"right": "Having spoken, I waited.",
+"why": "Em português aceitamos sujeitos diferentes. Em inglês, o particípio inicial refere-se ao sujeito da principal: “Having spoken, I wait.”"
+},
+"mcq": [
+{
+"q": "Having spoken, ___ waited.",
+"opts": [
+"it",
+"I",
+"the room"
+],
+"ans": 1,
+"why": "Mesmo sujeito."
+},
+{
+"q": "Perfect participle shows…",
+"opts": [
+"later action",
+"habit",
+"earlier action"
+],
+"ans": 2,
+"why": "Anterior."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Having finished, she left.",
+"Having finished, left she.",
+"Finished having, she left."
+],
+"ans": 0,
+"why": "Having + pp."
+},
+{
+"q": "Passive participle: ___ by noise, he left.",
+"opts": [
+"Having disturb",
+"Disturbed",
+"Disturbing"
+],
+"ans": 1,
+"why": "Disturbed."
+}
+],
+"fix": [
+{
+"wrong": "Having finish, she left.",
+"right": "Having finished, she left.",
+"why": "Particípio."
+},
+{
+"wrong": "Disturbing by noise, he left.",
+"right": "Disturbed by noise, he left.",
+"why": "Passivo."
+},
+{
+"wrong": "Having spoken, the room was quiet.",
+"right": "Having spoken, she sat down.",
+"why": "Mesmo sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Particípio: “After I had spoken, I sat down.”",
+"answer": "Having spoken, I sat down.",
+"why": ""
+},
+{
+"prompt": "Particípio passivo: “He was disturbed by noise, so he left.”",
+"answer": "Disturbed by noise, he left.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Because she had not finished, she stayed.”",
+"answer": "Not having finished, she stayed.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Despite he was ill, he worked.",
+"right": "Although he was ill, he worked.",
+"why": "Despite pede substantivo ou -ing, não oração completa."
+},
+"mcq": [
+{
+"q": "Avoid **___** coffee.",
+"opts": [
+"drink",
+"drinking",
+"to drink"
+],
+"ans": 1,
+"why": "Avoid -ing."
+},
+{
+"q": "He suggested **___** the plan.",
+"opts": [
+"to change",
+"change",
+"changing"
+],
+"ans": 2,
+"why": "Suggest -ing."
+},
+{
+"q": "**___** the noise, I slept.",
+"opts": [
+"Although",
+"Even if",
+"Despite"
+],
+"ans": 2,
+"why": "Despite."
+},
+{
+"q": "I don’t mind **___**.",
+"opts": [
+"waiting",
+"to wait",
+"wait"
+],
+"ans": 0,
+"why": "Mind -ing."
+}
+],
+"fix": [
+{
+"wrong": "I enjoy to read.",
+"right": "I enjoy reading.",
+"why": "Enjoy -ing."
+},
+{
+"wrong": "Despite it was late, we left.",
+"right": "Although it was late, we left.",
+"why": "Oração → although."
+},
+{
+"wrong": "She suggested to go.",
+"right": "She suggested going.",
+"why": "Suggest -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Go home early” (I suggest…)",
+"answer": "I suggest going home early.",
+"why": ""
+},
+{
+"prompt": "Troque: “Although he was ill, he worked.” (despite being)",
+"answer": "Despite being ill, he worked.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “I avoid driving.” (She…)",
+"answer": "She avoids driving.",
+"why": ""
+}
+]
+}

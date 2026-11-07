@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "-ed no passado",
+"wrong": "I studyed last night.",
+"right": "I studied last night.",
+"why": "Em português o passado muda a terminação de forma variada; em inglês o aluno acrescenta -ed sem notar a mudança y → ied."
+},
+"mcq": [
+{
+"q": "Passado de **play**:",
+"opts": [
+"played",
+"plaied",
+"playd"
+],
+"ans": 0,
+"why": "Vogal + y só -ed."
+},
+{
+"q": "Passado de **stop**:",
+"opts": [
+"stoped",
+"stopped",
+"stopd"
+],
+"ans": 1,
+"why": "Dobra a consoante."
+},
+{
+"q": "Passado de **like**:",
+"opts": [
+"liked",
+"likeed",
+"likd"
+],
+"ans": 0,
+"why": "Já termina em e."
+},
+{
+"q": "Yesterday I ___ TV.",
+"opts": [
+"watching",
+"watch",
+"watched"
+],
+"ans": 2,
+"why": "Passado."
+}
+],
+"fix": [
+{
+"wrong": "She studyed hard.",
+"right": "She studied hard.",
+"why": "y → ied."
+},
+{
+"wrong": "We stoped the car.",
+"right": "We stopped the car.",
+"why": "Dobra o p."
+},
+{
+"wrong": "I watch a film yesterday.",
+"right": "I watched a film yesterday.",
+"why": "-ed."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I walk to school.”",
+"answer": "I walked to school.",
+"why": ""
+},
+{
+"prompt": "Passado: “She cries.”",
+"answer": "She cried.",
+"why": ""
+},
+{
+"prompt": "Passado: “We plan a trip.”",
+"answer": "We planned a trip.",
+"why": ""
+}
+]
+}

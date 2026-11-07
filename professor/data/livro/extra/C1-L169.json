@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to-infinitivo",
+"wrong": "Officials are expected that they resume talks.",
+"right": "Officials are expected to resume talks.",
+"why": "Em português “espera-se que eles retomem” leva oração com que. Em inglês, a passiva de expectativa usa to + infinitivo."
+},
+"mcq": [
+{
+"q": "“The delay is reported ___ been caused by quotas.”",
+"opts": [
+"to be",
+"to have",
+"having"
+],
+"ans": 1,
+"why": "reported to have + pp."
+},
+{
+"q": "“Officials are expected ___ talks.”",
+"opts": [
+"resuming",
+"that resume",
+"to resume"
+],
+"ans": 2,
+"why": "to + base."
+},
+{
+"q": "Which is a **hedged** explanation?",
+"opts": [
+"A plausible explanation is that quotas rose.",
+"Quotas definitely did it.",
+"It is a lie."
+],
+"ans": 0,
+"why": "Cautela."
+},
+{
+"q": "“tariff dispute” means a...",
+"opts": [
+"trade fair",
+"fight over taxes on imports",
+"report"
+],
+"ans": 1,
+"why": "Tarifas."
+}
+],
+"fix": [
+{
+"wrong": "The delay is reported to be cause by quotas.",
+"right": "The delay is reported to have been caused by quotas.",
+"why": "Anterioridade."
+},
+{
+"wrong": "Officials expect to be resumed talks.",
+"right": "Officials are expected to resume talks.",
+"why": "Passiva."
+},
+{
+"wrong": "It is reported that the bloc has a dispute last year.",
+"right": "It is reported that the bloc had a dispute last year.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com is reported to have: “People report that quotas caused the delay.”",
+"answer": "The delay is reported to have been caused by quotas.",
+"why": ""
+},
+{
+"prompt": "Reescreva com are expected to: “People expect that officials will resume talks.”",
+"answer": "Officials are expected to resume talks.",
+"why": ""
+},
+{
+"prompt": "Reescreva com is said to: “People say the bloc is divided.”",
+"answer": "The bloc is said to be divided.",
+"why": ""
+}
+]
+}

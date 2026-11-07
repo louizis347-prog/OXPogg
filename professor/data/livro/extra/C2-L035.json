@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "into account",
+"wrong": "The panel took in account the formal reply.",
+"right": "The panel took into account the formal reply.",
+"why": "Em português “levar em conta” usa em. O aluno escreve in. Em inglês, take into account."
+},
+"mcq": [
+{
+"q": "Which is the formal invitation?",
+"opts": [
+"Wanna eat?",
+"Hungry?",
+"Would you care to dine?"
+],
+"ans": 2,
+"why": "Formal."
+},
+{
+"q": "“It is high time the board ___ the plan.”",
+"opts": [
+"approved",
+"approve",
+"will approve"
+],
+"ans": 0,
+"why": "It is high time + passado."
+},
+{
+"q": "“Had I known, I ___ differently.”",
+"opts": [
+"would act",
+"would have acted",
+"will act"
+],
+"ans": 1,
+"why": "Irreal."
+},
+{
+"q": "“take issue with” is...",
+"opts": [
+"informal greeting",
+"a gift",
+"formal disagreement"
+],
+"ans": 2,
+"why": "Discordar."
+}
+],
+"fix": [
+{
+"wrong": "Would you care dine with us?",
+"right": "Would you care to dine with us?",
+"why": "to."
+},
+{
+"wrong": "Wanna to have lunch?",
+"right": "Wanna have lunch?",
+"why": "wanna já inclui to."
+},
+{
+"wrong": "Had I know, I would have called.",
+"right": "Had I known, I would have called.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva de forma formal: “Wanna grab a bite?”",
+"answer": "Would you care to dine?",
+"why": ""
+},
+{
+"prompt": "Reescreva com take into account: “We consider the delay.”",
+"answer": "We take the delay into account.",
+"why": ""
+},
+{
+"prompt": "Reescreva com It is high time: “We must go now.”",
+"answer": "It is high time we went.",
+"why": ""
+}
+]
+}

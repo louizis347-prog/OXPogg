@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "much em afirmativa",
+"wrong": "I have much homework.",
+"right": "I have a lot of homework.",
+"why": "Em português 'tenho muito dinheiro' é natural; em inglês much quase só aparece em negativas e perguntas."
+},
+"mcq": [
+{
+"q": "I don't have ___ time.",
+"opts": [
+"much",
+"a few",
+"many"
+],
+"ans": 0,
+"why": "much."
+},
+{
+"q": "We have ___ apples.",
+"opts": [
+"a little",
+"much",
+"a lot of"
+],
+"ans": 2,
+"why": "a lot of."
+},
+{
+"q": "Is there ___ milk?",
+"opts": [
+"few",
+"many",
+"much"
+],
+"ans": 2,
+"why": "much."
+},
+{
+"q": "There are ___ people here.",
+"opts": [
+"much",
+"a lot of",
+"a little"
+],
+"ans": 1,
+"why": "a lot of."
+}
+],
+"fix": [
+{
+"wrong": "He has much friends.",
+"right": "He has a lot of friends.",
+"why": "a lot of."
+},
+{
+"wrong": "I have much work.",
+"right": "I have a lot of work.",
+"why": "a lot of."
+},
+{
+"wrong": "There aren't much people.",
+"right": "There aren't many people.",
+"why": "many."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por a lot of: “I have many friends.”",
+"answer": "I have a lot of friends.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I have much time.”",
+"answer": "I don't have much time.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You have a lot of money.” com much",
+"answer": "Do you have much money?",
+"why": ""
+}
+]
+}

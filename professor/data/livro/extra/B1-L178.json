@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio/preposição",
+"wrong": "She had trouble to communicate.",
+"right": "She had trouble communicating.",
+"why": "O brasileiro traduz “dificuldade para comunicar” e usa to. Em inglês: have trouble/difficulty + -ing."
+},
+"mcq": [
+{
+"q": "She had a hard time **___** words.",
+"opts": [
+"learn",
+"learning",
+"to learn"
+],
+"ans": 1,
+"why": "Have a hard time + -ing."
+},
+{
+"q": "He has no difficulty **___**.",
+"opts": [
+"write",
+"writing",
+"to write"
+],
+"ans": 1,
+"why": "Difficulty + -ing."
+},
+{
+"q": "She spent time **___**.",
+"opts": [
+"traveling",
+"to travel",
+"travel"
+],
+"ans": 0,
+"why": "Spend time + -ing."
+},
+{
+"q": "Qual significa “tive dificuldade”?",
+"opts": [
+"I had trouble for.",
+"I had trouble.",
+"I had a trouble."
+],
+"ans": 1,
+"why": "Trouble é incontável aqui."
+}
+],
+"fix": [
+{
+"wrong": "I had a trouble reading it.",
+"right": "I had trouble reading it.",
+"why": "Trouble não leva a."
+},
+{
+"wrong": "He has difficulty to hear.",
+"right": "He has difficulty hearing.",
+"why": "Difficulty + -ing."
+},
+{
+"wrong": "She spent time to travel.",
+"right": "She spent time traveling.",
+"why": "Spend time + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Use had trouble: “I couldn’t read the sign.” (reading)",
+"answer": "I had trouble reading the sign.",
+"why": ""
+},
+{
+"prompt": "Use spent time: “She traveled for hours.” (traveling)",
+"answer": "She spent hours traveling.",
+"why": ""
+},
+{
+"prompt": "Use no difficulty: “He writes easily.” (writing)",
+"answer": "He has no difficulty writing.",
+"why": ""
+}
+]
+}

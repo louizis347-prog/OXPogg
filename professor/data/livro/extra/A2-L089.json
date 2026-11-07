@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "run = correr/dirigir",
+"wrong": "I run in a company.",
+"right": "I work in a company.",
+"why": "Em português 'correr' e 'tocar um negócio' são verbos distintos; em inglês run = correr, mas também dirigir (um negócio) e funcionar."
+},
+"mcq": [
+{
+"q": "Passado de run:",
+"opts": [
+"ran",
+"runned",
+"run"
+],
+"ans": 0,
+"why": "ran."
+},
+{
+"q": "She ___ a small shop. (dirige)",
+"opts": [
+"runs",
+"has",
+"does"
+],
+"ans": 0,
+"why": "run a shop."
+},
+{
+"q": "The bus ___ every hour.",
+"opts": [
+"walks",
+"goes to",
+"runs"
+],
+"ans": 2,
+"why": "funciona."
+},
+{
+"q": "I'm ___ out of milk.",
+"opts": [
+"going",
+"running",
+"walking"
+],
+"ans": 1,
+"why": "run out of."
+}
+],
+"fix": [
+{
+"wrong": "He runned fast.",
+"right": "He ran fast.",
+"why": "ran."
+},
+{
+"wrong": "I ran of money.",
+"right": "I ran out of money.",
+"why": "run out of."
+},
+{
+"wrong": "She run a shop yesterday.",
+"right": "She ran a shop yesterday.",
+"why": "passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I run every day.”",
+"answer": "I ran every day.",
+"why": ""
+},
+{
+"prompt": "Passado: “We run out of milk.”",
+"answer": "We ran out of milk.",
+"why": ""
+},
+{
+"prompt": "Passado: “She runs a cafe.”",
+"answer": "She ran a cafe.",
+"why": ""
+}
+]
+}

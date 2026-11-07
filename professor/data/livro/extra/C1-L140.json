@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "critério e verbo",
+"wrong": "The cartoon show a landlord and it mock him.",
+"right": "The cartoon shows a landlord and mocks him.",
+"why": "Esquecer -s na 3ª pessoa é comum: o verbo em português muda por pessoa, mas o brasileiro não transfere isso. Em inglês, shows/mocks."
+},
+"mcq": [
+{
+"q": "The cartoon ___ a landlord.",
+"opts": [
+"shows",
+"show",
+"showing"
+],
+"ans": 0,
+"why": "-s."
+},
+{
+"q": "It ___ his greed.",
+"opts": [
+"mocked to",
+"mocks",
+"mock"
+],
+"ans": 1,
+"why": "-s."
+},
+{
+"q": "I will judge its wit, ___ and clarity.",
+"opts": [
+"message is",
+"it message",
+"its message"
+],
+"ans": 2,
+"why": "Paralelismo."
+},
+{
+"q": "Resumo vem…",
+"opts": [
+"antes da avaliação",
+"depois da conclusão",
+"sem texto"
+],
+"ans": 0,
+"why": "Resumo primeiro."
+}
+],
+"fix": [
+{
+"wrong": "The cartoon show a landlord.",
+"right": "The cartoon shows a landlord.",
+"why": "-s."
+},
+{
+"wrong": "It mock his greed.",
+"right": "It mocks his greed.",
+"why": "-s."
+},
+{
+"wrong": "I will judge its wit, its message and clear.",
+"right": "I will judge its wit, its message and its clarity.",
+"why": "Paralelismo."
+}
+],
+"rewrite": [
+{
+"prompt": "3ª pessoa: “The cartoon show a landlord.”",
+"answer": "The cartoon shows a landlord.",
+"why": ""
+},
+{
+"prompt": "Futuro: “I judge its wit.”",
+"answer": "I will judge its wit.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It mocks his greed.”",
+"answer": "It does not mock his greed.",
+"why": ""
+}
+]
+}

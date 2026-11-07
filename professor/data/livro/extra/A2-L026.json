@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "-ing do passado",
+"wrong": "He was runing.",
+"right": "He was running.",
+"why": "O português não dobra consoantes; em inglês, verbos curtos (CVC) dobram a última letra antes de -ing."
+},
+"mcq": [
+{
+"q": "Forma -ing de **swim**:",
+"opts": [
+"swimmming",
+"swiming",
+"swimming"
+],
+"ans": 2,
+"why": "dobra m."
+},
+{
+"q": "Forma -ing de **make**:",
+"opts": [
+"maaking",
+"makeing",
+"making"
+],
+"ans": 2,
+"why": "tira e."
+},
+{
+"q": "Forma -ing de **sit**:",
+"opts": [
+"sitiing",
+"sitting",
+"siting"
+],
+"ans": 1,
+"why": "dobra t."
+},
+{
+"q": "Forma -ing de **write**:",
+"opts": [
+"writeing",
+"writting",
+"writing"
+],
+"ans": 2,
+"why": "tira e."
+}
+],
+"fix": [
+{
+"wrong": "She was haveing lunch.",
+"right": "She was having lunch.",
+"why": "tira e."
+},
+{
+"wrong": "We were stoping.",
+"right": "We were stopping.",
+"why": "dobra p."
+},
+{
+"wrong": "He was writting.",
+"right": "He was writing.",
+"why": "sem dobrar."
+}
+],
+"rewrite": [
+{
+"prompt": "-ing: “I am running.” → passado",
+"answer": "I was running.",
+"why": ""
+},
+{
+"prompt": "Passado contínuo: “They sit.”",
+"answer": "They were sitting.",
+"why": ""
+},
+{
+"prompt": "Passado contínuo: “She makes tea.”",
+"answer": "She was making tea.",
+"why": ""
+}
+]
+}

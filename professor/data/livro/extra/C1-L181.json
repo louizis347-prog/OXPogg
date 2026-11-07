@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo de estado",
+"wrong": "By then I will have been knowing her for years.",
+"right": "By then I will have known her for years.",
+"why": "Em português “estarei conhecendo” soa estranho, mas “conheço há anos” leva o aluno a tentar o contínuo. Verbos de estado (know, have, be) não usam -ing."
+},
+"mcq": [
+{
+"q": "“By then I ___ her for years.” (know)",
+"opts": [
+"will have been knowing",
+"will have known",
+"will know"
+],
+"ans": 1,
+"why": "Estado."
+},
+{
+"q": "“By dawn we ___ arguing for fourteen hours.”",
+"opts": [
+"will be",
+"have",
+"will have been"
+],
+"ans": 2,
+"why": "Duração."
+},
+{
+"q": "Question:",
+"opts": [
+"Will you have been driving?",
+"Will you have driving?",
+"Will have you been driving?"
+],
+"ans": 0,
+"why": "Ordem."
+},
+{
+"q": "A **dealbreaker** is...",
+"opts": [
+"a lawyer",
+"a point that ends the deal",
+"a signature"
+],
+"ans": 1,
+"why": "Ponto de ruptura."
+}
+],
+"fix": [
+{
+"wrong": "By dawn we will have argue for fourteen hours.",
+"right": "By dawn we will have been arguing for fourteen hours.",
+"why": "been + -ing."
+},
+{
+"wrong": "By then she will have been having a house for years.",
+"right": "By then she will have had a house for years.",
+"why": "have = posse, estado."
+},
+{
+"wrong": "Will have you been driving?",
+"right": "Will you have been driving?",
+"why": "Ordem de pergunta."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “By dawn we argue for fourteen hours.”",
+"answer": "By dawn we will have been arguing for fourteen hours.",
+"why": ""
+},
+{
+"prompt": "Corrija o estado: “By then I will have been knowing her for years.” (known)",
+"answer": "By then I will have known her for years.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You will have been driving.”",
+"answer": "Will you have been driving?",
+"why": ""
+}
+]
+}

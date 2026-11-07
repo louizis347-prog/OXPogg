@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito do particípio",
+"wrong": "Working at an institute, statistics became easy for me.",
+"right": "Working at an institute, I found statistics easy.",
+"why": "Em português o gerúndio é mais livre quanto ao sujeito. Em inglês, o sujeito da oração principal deve ser quem faz a ação do particípio."
+},
+"mcq": [
+{
+"q": "“___ in two packages, I can start now.”",
+"opts": [
+"Training",
+"Having train",
+"Trained"
+],
+"ans": 2,
+"why": "Passivo: -ed."
+},
+{
+"q": "“___ the report, she signed it.”",
+"opts": [
+"Having read",
+"Reading to have",
+"Have read"
+],
+"ans": 0,
+"why": "having + pp = ação anterior."
+},
+{
+"q": "Who is “working” in: “Working at an institute, I learned statistics”?",
+"opts": [
+"statistics",
+"I",
+"the institute"
+],
+"ans": 1,
+"why": "Sujeito = I."
+},
+{
+"q": "Which participle sentence has a clear subject?",
+"opts": [
+"Seeing the error, the chart was corrected.",
+"Seen the error, she corrected.",
+"Seeing the error, she corrected the chart."
+],
+"ans": 2,
+"why": "Mesmo sujeito."
+}
+],
+"fix": [
+{
+"wrong": "Having finished the course, the job was easy.",
+"right": "Having finished the course, he found the job easy.",
+"why": "Sujeito do principal = quem terminou."
+},
+{
+"wrong": "Train in Python, she applied for the job.",
+"right": "Trained in Python, she applied for the job.",
+"why": "-ed (passivo)."
+},
+{
+"wrong": "Be a data analyst, I use two packages.",
+"right": "Being a data analyst, I use two packages.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reduza com -ing: “Because I work at an institute, I learned statistics.”",
+"answer": "Working at an institute, I learned statistics.",
+"why": ""
+},
+{
+"prompt": "Reduza com having + pp: “After I had finished the course, I applied.”",
+"answer": "Having finished the course, I applied.",
+"why": ""
+},
+{
+"prompt": "Reduza com -ed: “Because I was trained in two packages, I can start.”",
+"answer": "Trained in two packages, I can start.",
+"why": ""
+}
+]
+}

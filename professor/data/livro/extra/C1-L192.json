@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "entonação",
+"wrong": "We agreed on the budget ↗",
+"right": "We agreed on the budget ↘",
+"why": "Em português, muitos falantes sobem a voz no fim de afirmações em fala informal. Em inglês, afirmação com informação nova termina em queda ↘; a subida sinaliza pergunta ou continuação."
+},
+"mcq": [
+{
+"q": "A statement with new information ends...",
+"opts": [
+"falling ↘",
+"rising ↗",
+"level"
+],
+"ans": 0,
+"why": "Queda."
+},
+{
+"q": "In a list, non-final items ...",
+"opts": [
+"fall ↘",
+"rise ↗",
+"stay silent"
+],
+"ans": 1,
+"why": "Subida."
+},
+{
+"q": "The **nuclear syllable** is...",
+"opts": [
+"the first word",
+"the last pause",
+"the most prominent syllable"
+],
+"ans": 2,
+"why": "Foco."
+},
+{
+"q": "“Well, it depends ↘↗” expresses...",
+"opts": [
+"reservation",
+"certainty",
+"anger"
+],
+"ans": 0,
+"why": "Reserva."
+}
+],
+"fix": [
+{
+"wrong": "Joao drafts ↘, Mia checks ↘, and Lia signs ↘.",
+"right": "Joao drafts ↗, Mia checks ↗, and Lia signs ↘.",
+"why": "Itens não finais sobem."
+},
+{
+"wrong": "Is the payment on delivery ↘",
+"right": "Is the payment on delivery ↗",
+"why": "Yes/no question sobe."
+},
+{
+"wrong": "We signed the draft contract ↗",
+"right": "We signed the draft contract ↘",
+"why": "Afirmação cai."
+}
+],
+"rewrite": [
+{
+"prompt": "Marque a entonação final: “We agreed on the budget.” (adicione ↘ no fim)",
+"answer": "We agreed on the budget ↘",
+"why": "Copie com a seta ↘."
+},
+{
+"prompt": "Marque como pergunta: “Is it on delivery” (adicione ↗ no fim)",
+"answer": "Is it on delivery ↗",
+"why": ""
+},
+{
+"prompt": "Marque como lista: “Joao drafts, Mia checks” (adicione ↗ após cada item)",
+"answer": "Joao drafts ↗, Mia checks ↗",
+"why": ""
+}
+]
+}

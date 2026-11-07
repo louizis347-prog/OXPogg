@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "false cognate: eventually",
+"wrong": "Eventually, the policy may change tomorrow.",
+"right": "Possibly, the policy may change tomorrow.",
+"why": "Eventualmente em português = possivelmente. Em inglês, eventually = no fim, por fim."
+},
+"mcq": [
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"a research",
+"researches",
+"research"
+],
+"ans": 2,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss both views.",
+"This essay will discuss about both views.",
+"This essay discusses of both views."
+],
+"ans": 0,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"In my opinion",
+"By me"
+],
+"ans": 1,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"information",
+"report",
+"graph"
+],
+"ans": 0,
+"why": "information."
+}
+],
+"fix": [
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+},
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+},
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sobre",
+"wrong": "This paper explores about the link between sleep and memory.",
+"right": "This paper explores the link between sleep and memory.",
+"why": "Em português “falar/explorar sobre” leva o aluno a acrescentar about. Em inglês, examine e explore são transitivos."
+},
+"mcq": [
+{
+"q": "“This paper ___ the link.”",
+"opts": [
+"examines about",
+"examines on",
+"examines"
+],
+"ans": 2,
+"why": "Transitivo."
+},
+{
+"q": "“Findings ___ that…”",
+"opts": [
+"suggest",
+"suggests",
+"suggesting"
+],
+"ans": 0,
+"why": "plural."
+},
+{
+"q": "“We argue ___ …”",
+"opts": [
+"what",
+"that",
+"which"
+],
+"ans": 1,
+"why": "argue that."
+},
+{
+"q": "Objective:",
+"opts": [
+"We found",
+"We use",
+"This paper examines…"
+],
+"ans": 2,
+"why": "Objetivo."
+}
+],
+"fix": [
+{
+"wrong": "The paper discusses about a third variable.",
+"right": "The paper discusses a third variable.",
+"why": "Transitivo."
+},
+{
+"wrong": "Findings suggests an alternative explanation.",
+"right": "Findings suggest an alternative explanation.",
+"why": "plural."
+},
+{
+"wrong": "Using trials, the paper show effects.",
+"right": "Using trials, the paper shows effects.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com examines: “This paper talks about the design.”",
+"answer": "This paper examines the design.",
+"why": ""
+},
+{
+"prompt": "Reescreva com suggest: “Findings show a clear link.” (suggest)",
+"answer": "Findings suggest a clear link.",
+"why": ""
+},
+{
+"prompt": "Reescreva com We argue that: “Our view is that the design is flawed.”",
+"answer": "We argue that the design is flawed.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "for × since",
+"wrong": "By winter they will have been trading since a year.",
+"right": "By winter they will have been trading for a year.",
+"why": "Em português “há um ano” e “desde” se confundem. Em inglês, for + duração; since + ponto de início."
+},
+"mcq": [
+{
+"q": "“They will have been trading ___ a year.”",
+"opts": [
+"for",
+"since",
+"ago"
+],
+"ans": 0,
+"why": "for + duração."
+},
+{
+"q": "“Thin mandates ___ mistrust.”",
+"opts": [
+"gave rise",
+"gave rise to",
+"gave to rise"
+],
+"ans": 1,
+"why": "gave rise to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He stepped down like director.",
+"He stepped down for director.",
+"He stepped down as director."
+],
+"ans": 2,
+"why": "step down as."
+},
+{
+"q": "“Try as she ___, she failed.”",
+"opts": [
+"might",
+"will",
+"does"
+],
+"ans": 0,
+"why": "might."
+}
+],
+"fix": [
+{
+"wrong": "By May we will have been negotiating since six months.",
+"right": "By May we will have been negotiating for six months.",
+"why": "for."
+},
+{
+"wrong": "We run out time.",
+"right": "We run out of time.",
+"why": "of."
+},
+{
+"wrong": "They will have trade for a year.",
+"right": "They will have been trading for a year.",
+"why": "been + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva em Future Perfect Continuous: “By winter they trade for a year.”",
+"answer": "By winter they will have been trading for a year.",
+"why": ""
+},
+{
+"prompt": "Reescreva com for: “since two years” → “___ two years”",
+"answer": "for two years",
+"why": "Resposta curta."
+},
+{
+"prompt": "Reescreva com give rise to: “Thin mandates caused mistrust.”",
+"answer": "Thin mandates gave rise to mistrust.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The article problematizes the assumption that archives are neutral.",
+"right": "The article interrogates the assumption that archives are neutral.",
+"why": "“Problematizar” é comum em português acadêmico, mas em inglês o natural é interrogate, question ou challenge an assumption."
+},
+"mcq": [
+{
+"q": "Natural academic verb for “questionar uma premissa”:",
+"opts": [
+"interrogates",
+"problematizes",
+"revises"
+],
+"ans": 0,
+"why": "Interrogate an assumption."
+},
+{
+"q": "Which phrase shows source and method?",
+"opts": [
+"Everyone knows that…",
+"Drawing on customs ledgers, it argues…",
+"It seems that maybe…"
+],
+"ans": 1,
+"why": "Drawing on… indica base empírica."
+},
+{
+"q": "Which is the most cautious?",
+"opts": [
+"It suggests, though it cannot prove,",
+"It proves that",
+"It shows for sure that"
+],
+"ans": 0,
+"why": "Modéstia epistêmica."
+},
+{
+"q": "The study **___** on petition files.",
+"opts": [
+"bases",
+"draws",
+"takes"
+],
+"ans": 1,
+"why": "Draw on = apoiar-se em."
+}
+],
+"fix": [
+{
+"wrong": "The study draws in petition files.",
+"right": "The study draws on petition files.",
+"why": "Draw on."
+},
+{
+"wrong": "It argues what the archive is silent.",
+"right": "It argues that the archive is silent.",
+"why": "Argue that + oração."
+},
+{
+"wrong": "The author suggests, but cannot to prove, a link.",
+"right": "The author suggests, but cannot prove, a link.",
+"why": "Modal + verbo base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com “Drawing on”: “The paper uses customs ledgers and argues X.”",
+"answer": "Drawing on customs ledgers, the paper argues X.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “interrogates”: “It questions the assumption.”",
+"answer": "It interrogates the assumption.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The article argues that silence matters.”",
+"answer": "The article argued that silence mattered.",
+"why": ""
+}
+]
+}

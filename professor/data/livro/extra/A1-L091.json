@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome sujeito × objeto",
+"wrong": "Give the book to I.",
+"right": "Give the book to me.",
+"why": "Em português \"para mim\" é uma forma fixa; o brasileiro usa o pronome sujeito I depois de preposição, e o inglês exige me."
+},
+"mcq": [
+{
+"q": "I like Ana. I like ___.",
+"opts": [
+"she",
+"hers",
+"her"
+],
+"ans": 2,
+"why": "Objeto."
+},
+{
+"q": "Tom is here. I see ___.",
+"opts": [
+"him",
+"he",
+"his"
+],
+"ans": 0,
+"why": "Objeto."
+},
+{
+"q": "They call ___. (nós)",
+"opts": [
+"we",
+"us",
+"our"
+],
+"ans": 1,
+"why": "Objeto."
+},
+{
+"q": "Give it to ___. (eu)",
+"opts": [
+"I",
+"my",
+"me"
+],
+"ans": 2,
+"why": "Objeto."
+}
+],
+"fix": [
+{
+"wrong": "Give it to I.",
+"right": "Give it to me.",
+"why": "Me."
+},
+{
+"wrong": "I see she.",
+"right": "I see her.",
+"why": "Her."
+},
+{
+"wrong": "He likes we.",
+"right": "He likes us.",
+"why": "Us."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por pronome: “I love Ana.”",
+"answer": "I love her.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “She calls Tom.”",
+"answer": "She calls him.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “He helps my brother and me.”",
+"answer": "He helps us.",
+"why": ""
+}
+]
+}

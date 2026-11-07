@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio",
+"wrong": "Having took on ten staff, the firm grew fast.",
+"right": "Having taken on ten staff, the firm grew fast.",
+"why": "Em português o particípio de “tomar” é regular. Em inglês, take é irregular: took (passado), taken (particípio)."
+},
+"mcq": [
+{
+"q": "“Having ___ the case, she called.”",
+"opts": [
+"took on",
+"taken on",
+"taking on"
+],
+"ans": 1,
+"why": "taken."
+},
+{
+"q": "“take on a hard case” means...",
+"opts": [
+"avoid it",
+"forget it",
+"accept it"
+],
+"ans": 2,
+"why": "Assumir."
+},
+{
+"q": "“challenge an assumption” means...",
+"opts": [
+"question it",
+"accept it",
+"write it"
+],
+"ans": 0,
+"why": "Questionar."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The firm took ten on staff.",
+"The firm took on ten staff.",
+"The firm on took ten staff."
+],
+"ans": 1,
+"why": "take on."
+}
+],
+"fix": [
+{
+"wrong": "Having took on the case, she called the board.",
+"right": "Having taken on the case, she called the board.",
+"why": "taken."
+},
+{
+"wrong": "The mediator challenge assumptions.",
+"right": "The mediator challenges assumptions.",
+"why": "-s."
+},
+{
+"wrong": "The firm took in ten staff.",
+"right": "The firm took on ten staff.",
+"why": "take on = contratar."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Having + pp: “After she took on the case, she called.”",
+"answer": "Having taken on the case, she called.",
+"why": ""
+},
+{
+"prompt": "Reescreva com take on: “The firm hired ten staff.”",
+"answer": "The firm took on ten staff.",
+"why": ""
+},
+{
+"prompt": "Substitua por them: “She took on the cases.”",
+"answer": "She took them on.",
+"why": ""
+}
+]
+}

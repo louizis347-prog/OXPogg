@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conjunção dupla",
+"wrong": "Much as I admire her, but I disagree.",
+"right": "Much as I admire her, I disagree.",
+"why": "Em português “embora… mas” aparece em fala informal. Em inglês, uma concessiva já traz o contraste; não use but na oração principal."
+},
+"mcq": [
+{
+"q": "“Tired ___ I was, I kept working.”",
+"opts": [
+"than",
+"as",
+"so"
+],
+"ans": 1,
+"why": "Adj + as + sujeito + verbo."
+},
+{
+"q": "“Try as he ___, he could not win.”",
+"opts": [
+"will",
+"does",
+"might"
+],
+"ans": 2,
+"why": "Try as he might."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Much as I admire her, I disagree.",
+"Much as I admire her, but I disagree.",
+"Much I admire her, I disagree."
+],
+"ans": 0,
+"why": "Sem but."
+},
+{
+"q": "“Much as” has a meaning close to...",
+"opts": [
+"because",
+"although",
+"unless"
+],
+"ans": 1,
+"why": "although."
+}
+],
+"fix": [
+{
+"wrong": "Shy as she is, but she speaks well.",
+"right": "Shy as she is, she speaks well.",
+"why": "Sem but."
+},
+{
+"wrong": "Try as he can, he could not win.",
+"right": "Try as he might, he could not win.",
+"why": "might."
+},
+{
+"wrong": "Much I admire her, I disagree.",
+"right": "Much as I admire her, I disagree.",
+"why": "as."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Much as: “Although I like her, I disagree.”",
+"answer": "Much as I like her, I disagree.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Adj + as: “Although he was tired, he kept working.”",
+"answer": "Tired as he was, he kept working.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Try as: “Although he tried hard, he could not win.” (Try as…)",
+"answer": "Try as he might, he could not win.",
+"why": ""
+}
+]
+}

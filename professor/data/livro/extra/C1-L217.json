@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to + substantivo",
+"wrong": "Estimates may be subject to revise.",
+"right": "Estimates may be subject to revision.",
+"why": "Em português “sujeito a revisar” usa infinitivo. Em inglês, to em subject to é preposição: pede substantivo (revision) ou -ing."
+},
+"mcq": [
+{
+"q": "“Estimates may be subject to ___.”",
+"opts": [
+"revise",
+"revision",
+"revised"
+],
+"ans": 1,
+"why": "Substantivo."
+},
+{
+"q": "“___ to funding, the study will continue.”",
+"opts": [
+"Subjected",
+"Subjecting",
+"Subject"
+],
+"ans": 2,
+"why": "Subject to."
+},
+{
+"q": "“Responses are ___ to memory error.”",
+"opts": [
+"subject",
+"subjecting",
+"subjects"
+],
+"ans": 0,
+"why": "subject."
+},
+{
+"q": "Social desirability bias affects...",
+"opts": [
+"road signs",
+"survey responses",
+"weather"
+],
+"ans": 1,
+"why": "Respostas."
+}
+],
+"fix": [
+{
+"wrong": "Responses are subject for memory error.",
+"right": "Responses are subject to memory error.",
+"why": "to."
+},
+{
+"wrong": "The study will continue subject funding.",
+"right": "The study will continue subject to funding.",
+"why": "to."
+},
+{
+"wrong": "The survey may be subject to bias error.",
+"right": "The survey may be subject to error.",
+"why": "Natural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com subject to: “Memory error may affect responses.”",
+"answer": "Responses may be subject to memory error.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Subject to: “If funding exists, the study will continue.”",
+"answer": "Subject to funding, the study will continue.",
+"why": ""
+},
+{
+"prompt": "Reescreva com revision: “We may revise the estimates.”",
+"answer": "The estimates may be subject to revision.",
+"why": ""
+}
+]
+}

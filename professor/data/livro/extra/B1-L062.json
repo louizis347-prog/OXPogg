@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "convites (aceitar/recusar)",
+"wrong": "I can’t go. I’m sorry, I have a compromise.",
+"right": "I’m afraid I can’t go. I have another commitment.",
+"why": "Compromisso é falso cognato de compromise (acordo). Para um compromisso marcado use appointment, plan, commitment."
+},
+"mcq": [
+{
+"q": "To accept politely:",
+"opts": [
+"I don't want.",
+"No.",
+"I’d love to."
+],
+"ans": 2,
+"why": "I’d love to."
+},
+{
+"q": "To refuse politely:",
+"opts": [
+"I’m afraid I can’t.",
+"I never go.",
+"It is not."
+],
+"ans": 0,
+"why": "I’m afraid I can’t."
+},
+{
+"q": "Thank you for…",
+"opts": [
+"inviting me",
+"invite me",
+"to invite me"
+],
+"ans": 0,
+"why": "for + -ing/inviting."
+},
+{
+"q": "“compromise” means…",
+"opts": [
+"compromisso marcado",
+"acordo",
+"obrigação"
+],
+"ans": 1,
+"why": "Falso cognato."
+}
+],
+"fix": [
+{
+"wrong": "I have a compromise at 6.",
+"right": "I have an appointment at 6.",
+"why": "compromise = acordo."
+},
+{
+"wrong": "Thank you for invite me.",
+"right": "Thank you for inviting me.",
+"why": "for + -ing."
+},
+{
+"wrong": "Unfortunately I not can go.",
+"right": "Unfortunately I can’t go.",
+"why": "can’t."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com for + -ing: “Thanks. You invited me.”",
+"answer": "Thank you for inviting me.",
+"why": ""
+},
+{
+"prompt": "Recuse com I’m afraid: “I can’t come.”",
+"answer": "I’m afraid I can’t come.",
+"why": ""
+},
+{
+"prompt": "Reescreva com would: “I like to come.” (muito, aceitando convite)",
+"answer": "I’d love to come.",
+"why": ""
+}
+]
+}

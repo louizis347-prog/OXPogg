@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva em anúncio",
+"wrong": "This bag makes from recycled plastic. It developed by engineers. Only 500 units is available.",
+"right": "This bag is made from recycled plastic. It was developed by engineers. Only 500 units are available.",
+"why": "Em português “é feita de plástico” e “foi desenvolvida” usam ser; o brasileiro cai no verbo ativo sem be, e o sujeito plural concorda mal. Em inglês: be + pp."
+},
+"mcq": [
+{
+"q": "The bag ___ from recycled plastic.",
+"opts": [
+"makes",
+"is make",
+"is made"
+],
+"ans": 2,
+"why": "is made."
+},
+{
+"q": "It ___ by engineers.",
+"opts": [
+"was developed",
+"developed",
+"is develop"
+],
+"ans": 0,
+"why": "was developed."
+},
+{
+"q": "Only 500 units ___ available.",
+"opts": [
+"is",
+"are",
+"does"
+],
+"ans": 1,
+"why": "Plural."
+},
+{
+"q": "Origem do material: “made ___ wood”",
+"opts": [
+"from/of",
+"by",
+"for"
+],
+"ans": 0,
+"why": "made from/of."
+}
+],
+"fix": [
+{
+"wrong": "The desk makes of oak.",
+"right": "The desk is made of oak.",
+"why": "be + pp."
+},
+{
+"wrong": "The app was develop in Brazil.",
+"right": "The app was developed in Brazil.",
+"why": "pp."
+},
+{
+"wrong": "Only ten seats is left.",
+"right": "Only ten seats are left.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Engineers developed the lamp.”",
+"answer": "The lamp was developed by engineers.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They make the shoes from leather.”",
+"answer": "The shoes are made from leather.",
+"why": ""
+},
+{
+"prompt": "Use are/is: “Only 50 ... left.” (seats)",
+"answer": "Only 50 seats are left.",
+"why": ""
+}
+]
+}

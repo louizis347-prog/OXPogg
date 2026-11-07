@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "processo (passiva em sequência)",
+"wrong": "First, the beans harvest. Then they ferment. Next they dry by the sun.",
+"right": "First, the beans are harvested. Then they are fermented. Next they are dried by the sun.",
+"why": "Em português “as sementes colhem-se” e “fermentam” soam ativos. Em inglês, processos usam passiva (are + pp); ferment no ativo muda o sentido."
+},
+"mcq": [
+{
+"q": "First, the beans ___ harvested.",
+"opts": [
+"is",
+"are",
+"do"
+],
+"ans": 1,
+"why": "are."
+},
+{
+"q": "After that, they ___ fermented.",
+"opts": [
+"have",
+"be",
+"are"
+],
+"ans": 2,
+"why": "are."
+},
+{
+"q": "Next, they ___ dried by the sun.",
+"opts": [
+"do",
+"were being",
+"are"
+],
+"ans": 2,
+"why": "are."
+},
+{
+"q": "Linking word for step 2:",
+"opts": [
+"Then",
+"Although",
+"Because"
+],
+"ans": 0,
+"why": "Then."
+}
+],
+"fix": [
+{
+"wrong": "The beans dry in sun.",
+"right": "The beans are dried in the sun.",
+"why": "passiva."
+},
+{
+"wrong": "Then, they is roasted.",
+"right": "Then, they are roasted.",
+"why": "are."
+},
+{
+"wrong": "Finally, the chocolate packs.",
+"right": "Finally, the chocolate is packed.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Workers harvest the beans.”",
+"answer": "The beans are harvested by workers.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They roast the nuts.”",
+"answer": "The nuts are roasted.",
+"why": ""
+},
+{
+"prompt": "Une com Then: “Beans are dried. Beans are packed.”",
+"answer": "The beans are dried. Then they are packed.",
+"why": "Escreva com Then no 2º."
+}
+]
+}

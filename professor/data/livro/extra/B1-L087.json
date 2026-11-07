@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "go × come",
+"wrong": "My plan did wrong and I go to home.",
+"right": "My plan went wrong, and I went home.",
+"why": "Em português “deu errado” e “vou pra casa” usam dar e ir. Em inglês, dar errado = go wrong; home dispensa to; e must be/must have been distinguem presente e passado."
+},
+"mcq": [
+{
+"q": "The party ___ wrong.",
+"opts": [
+"did",
+"went",
+"made"
+],
+"ans": 1,
+"why": "go wrong."
+},
+{
+"q": "She ___ be at home now.",
+"opts": [
+"must",
+"must have",
+"must to"
+],
+"ans": 0,
+"why": "must be."
+},
+{
+"q": "He ___ have been there yesterday.",
+"opts": [
+"must be",
+"must to",
+"must"
+],
+"ans": 2,
+"why": "must have been."
+},
+{
+"q": "My parents let me ___ out.",
+"opts": [
+"to go",
+"going",
+"go"
+],
+"ans": 2,
+"why": "let + base."
+}
+],
+"fix": [
+{
+"wrong": "We went to home after class.",
+"right": "We went home after class.",
+"why": "Sem to."
+},
+{
+"wrong": "She must have at home.",
+"right": "She must be at home.",
+"why": "Presente."
+},
+{
+"wrong": "They let me to leave.",
+"right": "They let me leave.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Things go wrong.”",
+"answer": "Things went wrong.",
+"why": ""
+},
+{
+"prompt": "Reescreva com dedução (presente): “I am sure she is at home.”",
+"answer": "She must be at home.",
+"why": ""
+},
+{
+"prompt": "Reescreva com dedução (passado): “I am sure he was at home.”",
+"answer": "He must have been at home.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "associated with",
+"wrong": "Moves are associated to absence.",
+"right": "Moves are associated with absence.",
+"why": "O brasileiro traduz “associado a” e usa to. Em inglês: associated with; linked to."
+},
+"mcq": [
+{
+"q": "Moves are associated ___ absence.",
+"opts": [
+"to",
+"by",
+"with"
+],
+"ans": 2,
+"why": "with."
+},
+{
+"q": "Stress is linked ___ sleep loss.",
+"opts": [
+"to",
+"with of",
+"by"
+],
+"ans": 0,
+"why": "linked to."
+},
+{
+"q": "Association does not mean…",
+"opts": [
+"link",
+"causation",
+"correlation"
+],
+"ans": 1,
+"why": "Causa."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"be associated to",
+"be associated of",
+"be associated with"
+],
+"ans": 2,
+"why": "with."
+}
+],
+"fix": [
+{
+"wrong": "Stress is associated to illness.",
+"right": "Stress is associated with illness.",
+"why": "with."
+},
+{
+"wrong": "Stress is linked with of sleep loss.",
+"right": "Stress is linked to sleep loss.",
+"why": "to."
+},
+{
+"wrong": "It is relation to stress.",
+"right": "It is related to stress.",
+"why": "related."
+}
+],
+"rewrite": [
+{
+"prompt": "Use associated with: “Moves relate to absence.”",
+"answer": "Moves are associated with absence.",
+"why": ""
+},
+{
+"prompt": "Use linked to: “Stress relates to sleep loss.”",
+"answer": "Stress is linked to sleep loss.",
+"why": ""
+},
+{
+"prompt": "Ativa: “Experts link stress to illness.”",
+"answer": "Stress is linked to illness.",
+"why": ""
+}
+]
+}

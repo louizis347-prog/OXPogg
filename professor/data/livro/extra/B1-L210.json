@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "It’s worth to try.",
+"right": "It’s worth trying.",
+"why": "Em português “vale a pena tentar” (infinitivo). Em inglês: worth + -ing."
+},
+"mcq": [
+{
+"q": "It’s worth **___**.",
+"opts": [
+"to try",
+"try",
+"trying"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "It isn’t worth **___** money.",
+"opts": [
+"spending",
+"to spend",
+"spent"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "Vale a pena:",
+"opts": [
+"It’s worthy.",
+"It’s worth it.",
+"It values."
+],
+"ans": 1,
+"why": "Worth it."
+},
+{
+"q": "It’s not **___** waiting.",
+"opts": [
+"worth",
+"value",
+"worthy"
+],
+"ans": 0,
+"why": "Worth."
+}
+],
+"fix": [
+{
+"wrong": "It’s worth to wait.",
+"right": "It’s worth waiting.",
+"why": "-ing."
+},
+{
+"wrong": "It’s worthy trying.",
+"right": "It’s worth trying.",
+"why": "Worth, não worthy."
+},
+{
+"wrong": "It isn’t worth to go.",
+"right": "It isn’t worth going.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Trying is good.” (It’s worth…)",
+"answer": "It’s worth trying.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It’s worth waiting.”",
+"answer": "It isn’t worth waiting.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “It’s worth trying.”",
+"answer": "Is it worth trying?",
+"why": ""
+}
+]
+}

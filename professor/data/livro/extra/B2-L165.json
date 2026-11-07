@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "emphasize",
+"wrong": "The author emphasizes on the cost.",
+"right": "The author emphasizes the cost.",
+"why": "\"Dar ênfase em\" leva o aluno a usar on. Emphasize é transitivo."
+},
+"mcq": [
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rose sharply.",
+"Sales rised sharply."
+],
+"ans": 1,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"of",
+"on",
+"in"
+],
+"ans": 2,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However, it works.",
+"However; it works."
+],
+"ans": 1,
+"why": "However, com vírgula."
+}
+],
+"fix": [
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+},
+{
+"wrong": "He made a research.",
+"right": "He did research.",
+"why": "do research."
+},
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+},
+{
+"prompt": "Reescreva com increase in: “Sales increased.”",
+"answer": "There was an increase in sales.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "expected ≠ esperar",
+"wrong": "I'm expected your answer by Friday.",
+"right": "I'm expecting your answer by Friday.",
+"why": "O verbo expect não é \"esperar\" no sentido de aguardar com be expected. Be expected to = a gente espera que; expecting = aguardando."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"Staff expect to wearing ID.",
+"Staff are expected to wear ID.",
+"Staff are expected wear ID."
+],
+"ans": 1,
+"why": "be expected to + base."
+},
+{
+"q": "Qual agente é correto?",
+"opts": [
+"The book was written from a nurse.",
+"The book was written of a nurse.",
+"The book was written by a nurse."
+],
+"ans": 2,
+"why": "by para o agente."
+},
+{
+"q": "Qual frase mostra oportunidade perdida?",
+"opts": [
+"We could have gone by train.",
+"We could go by train.",
+"We go by train."
+],
+"ans": 0,
+"why": "could have + particípio = poderíamos ter ido (mas não fomos)."
+},
+{
+"q": "\"unlikely\" significa...",
+"opts": [
+"muito provável",
+"obrigatório",
+"pouco provável"
+],
+"ans": 2,
+"why": "un- = negativo."
+}
+],
+"fix": [
+{
+"wrong": "They were suppose to meet at six.",
+"right": "They were supposed to meet at six.",
+"why": "Passado: supposed."
+},
+{
+"wrong": "The letter has been send.",
+"right": "The letter has been sent.",
+"why": "Use o particípio sent."
+},
+{
+"wrong": "He may has lost his wallet.",
+"right": "He may have lost his wallet.",
+"why": "Depois de modal, have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Someone is cleaning the room.”",
+"answer": "The room is being cleaned.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “We can take a taxi.” (oportunidade perdida)",
+"answer": "We could have taken a taxi.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “She probably won't come.”",
+"answer": "She is unlikely to come.",
+"why": ""
+}
+]
+}

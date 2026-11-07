@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ought to",
+"wrong": "It ought have been checked.",
+"right": "It ought to have been checked.",
+"why": "Em português “deveria” é uma forma só. Em inglês, ought é seguido de to, o que o aluno esquece (diferente de should)."
+},
+"mcq": [
+{
+"q": "Choose the hedge:",
+"opts": [
+"Results suggest a link.",
+"Results prove a link.",
+"Results are a link."
+],
+"ans": 0,
+"why": "suggest."
+},
+{
+"q": "“Having reviewed the data, we ___.”",
+"opts": [
+"a pattern was found",
+"found a pattern",
+"pattern found"
+],
+"ans": 1,
+"why": "Sujeito = we."
+},
+{
+"q": "Modal passive, past:",
+"opts": [
+"It should be have checked.",
+"It should have check.",
+"It should have been checked."
+],
+"ans": 2,
+"why": "have been + pp."
+},
+{
+"q": "“tend to” signals...",
+"opts": [
+"a general trend",
+"a rule",
+"a date"
+],
+"ans": 0,
+"why": "Tendência."
+}
+],
+"fix": [
+{
+"wrong": "Errors must reported at once.",
+"right": "Errors must be reported at once.",
+"why": "be."
+},
+{
+"wrong": "Having reviewed the data, a pattern was found.",
+"right": "Having reviewed the data, we found a pattern.",
+"why": "Mesmo sujeito."
+},
+{
+"wrong": "Results suggests that it may be.",
+"right": "Results suggest that it may be.",
+"why": "plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com ought to: “It should have been checked.”",
+"answer": "It ought to have been checked.",
+"why": ""
+},
+{
+"prompt": "Reduza com Having: “After we reviewed the data, we wrote.”",
+"answer": "Having reviewed the data, we wrote.",
+"why": ""
+},
+{
+"prompt": "Suavize: “Results show it is true.” (suggest, may)",
+"answer": "Results suggest it may be true.",
+"why": ""
+}
+]
+}

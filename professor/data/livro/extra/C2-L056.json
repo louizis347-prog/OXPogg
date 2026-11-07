@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "por hora",
+"wrong": "Heat no faster than 100 °C by hour.",
+"right": "Heat no faster than 100 °C an hour.",
+"why": "Em português “100 graus por hora” usa por. O aluno usa by. Em inglês, a taxa é an hour/per hour."
+},
+"mcq": [
+{
+"q": "A **bisque firing** is...",
+"opts": [
+"the last firing",
+"glazing",
+"the first firing"
+],
+"ans": 2,
+"why": "Primeira queima."
+},
+{
+"q": "“Never open it above 200 °C” is a...",
+"opts": [
+"prohibition",
+"suggestion",
+"question"
+],
+"ans": 0,
+"why": "Proibição."
+},
+{
+"q": "Imperative:",
+"opts": [
+"Stirring the glaze.",
+"Stir the glaze.",
+"Glaze stirred."
+],
+"ans": 1,
+"why": "Imperativo."
+},
+{
+"q": "Which phrase sets a safe heating limit?",
+"opts": [
+"goal",
+"date",
+"safe limit"
+],
+"ans": 2,
+"why": "Limite."
+}
+],
+"fix": [
+{
+"wrong": "Dip each piece in the glaze, then to fire it.",
+"right": "Dip each piece in the glaze, then fire it.",
+"why": "Imperativo."
+},
+{
+"wrong": "Never to open the kiln above 200 °C.",
+"right": "Never open the kiln above 200 °C.",
+"why": "Never + base."
+},
+{
+"wrong": "The stoneware clay need slow heating.",
+"right": "The stoneware clay needs slow heating.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com an hour: “100 °C per hour”",
+"answer": "100 °C an hour",
+"why": ""
+},
+{
+"prompt": "Reescreva proibição: “Open the kiln above 200 °C.” (Never…)",
+"answer": "Never open the kiln above 200 °C.",
+"why": ""
+},
+{
+"prompt": "Reescreva com no faster than: “Heat only up to 100 °C an hour.”",
+"answer": "Heat no faster than 100 °C an hour.",
+"why": ""
+}
+]
+}

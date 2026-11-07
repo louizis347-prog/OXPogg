@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "get = ficar/chegar",
+"wrong": "I am tired when I arrive at home.",
+"right": "I get home tired.",
+"why": "O brasileiro limita get a \"pegar\"; em inglês get também indica mudança de estado e chegada: get tired, get home."
+},
+"mcq": [
+{
+"q": "“Ficar cansado” =",
+"opts": [
+"stay tired",
+"get tired",
+"have tired"
+],
+"ans": 1,
+"why": "Get = tornar-se."
+},
+{
+"q": "“Chegar em casa” =",
+"opts": [
+"arrive to home",
+"reach in home",
+"get home"
+],
+"ans": 2,
+"why": "Get home, sem preposição."
+},
+{
+"q": "I ___ a letter every day.",
+"opts": [
+"get",
+"take",
+"make"
+],
+"ans": 0,
+"why": "Get = receber."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It becomes dark early.",
+"It gets dark early.",
+"It does dark early."
+],
+"ans": 1,
+"why": "Gets dark = escurece."
+}
+],
+"fix": [
+{
+"wrong": "I arrive to home at six.",
+"right": "I get home at six.",
+"why": "Get home, sem to."
+},
+{
+"wrong": "She stays angry quickly.",
+"right": "She gets angry quickly.",
+"why": "Get + adjetivo."
+},
+{
+"wrong": "He get an email.",
+"right": "He gets an email.",
+"why": "Terceira pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Use get: “She receives a gift.”",
+"answer": "She gets a gift.",
+"why": ""
+},
+{
+"prompt": "Use get: “I arrive home at 5.”",
+"answer": "I get home at 5.",
+"why": ""
+},
+{
+"prompt": "Use get: “It becomes cold.”",
+"answer": "It gets cold.",
+"why": ""
+}
+]
+}

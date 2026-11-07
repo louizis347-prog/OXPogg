@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "I’d like to talk about of my city.",
+"right": "I’d like to talk about my city.",
+"why": "Português “falar sobre” leva a preposição; o brasileiro acrescenta of. Em inglês: talk about + objeto."
+},
+"mcq": [
+{
+"q": "Open:",
+"opts": [
+"I want talk about…",
+"I’d like to talk about…",
+"I talk you about…"
+],
+"ans": 1,
+"why": "Correto."
+},
+{
+"q": "Four points:",
+"opts": [
+"what, when, why, how",
+"only how",
+"only what"
+],
+"ans": 0,
+"why": "4 pontos."
+},
+{
+"q": "Close:",
+"opts": [
+"That’s all, bye.",
+"Finish.",
+"Thank you for listening."
+],
+"ans": 2,
+"why": "Natural."
+},
+{
+"q": "Talk **___** my city:",
+"opts": [
+"for",
+"of",
+"about"
+],
+"ans": 2,
+"why": "About."
+}
+],
+"fix": [
+{
+"wrong": "I want talk about my city.",
+"right": "I want to talk about my city.",
+"why": "Falta to."
+},
+{
+"wrong": "I will explain you the plan.",
+"right": "I will explain the plan to you.",
+"why": "Explain não leva pessoa direta."
+},
+{
+"wrong": "I’d like talk about it.",
+"right": "I’d like to talk about it.",
+"why": "Falta to."
+}
+],
+"rewrite": [
+{
+"prompt": "Abra: “I talk about my city.” (I’d like to…)",
+"answer": "I’d like to talk about my city.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I explain you the plan.”",
+"answer": "I will explain the plan to you.",
+"why": ""
+},
+{
+"prompt": "Feche: “Thank you. You listen.” (for)",
+"answer": "Thank you for listening.",
+"why": ""
+}
+]
+}

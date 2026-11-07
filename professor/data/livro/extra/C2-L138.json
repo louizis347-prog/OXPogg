@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "We draw the line in insults.",
+"right": "We draw the line at insults.",
+"why": "Português “traçamos o limite em”; inglês draw the line at."
+},
+"mcq": [
+{
+"q": "Limit:",
+"opts": [
+"draw the line in",
+"draw the line at",
+"draw the line of"
+],
+"ans": 1,
+"why": "at."
+},
+{
+"q": "Invitation:",
+"opts": [
+"Joining us.",
+"You join us.",
+"Join us; bring a friend."
+],
+"ans": 2,
+"why": "Imperativo."
+},
+{
+"q": "Draw the line =",
+"opts": [
+"paint",
+"copy",
+"set a limit"
+],
+"ans": 2,
+"why": "Limite."
+},
+{
+"q": "Bring a friend is…",
+"opts": [
+"imperative",
+"past",
+"passive"
+],
+"ans": 0,
+"why": "Imperativo."
+}
+],
+"fix": [
+{
+"wrong": "We draw the line in insults.",
+"right": "We draw the line at insults.",
+"why": "at."
+},
+{
+"wrong": "Joins us; brings a friend.",
+"right": "Join us; bring a friend.",
+"why": "Imperativo."
+},
+{
+"wrong": "We drew the line on there.",
+"right": "We drew the line there.",
+"why": "Sem on."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “We draw the line at insults.”",
+"answer": "We drew the line at insults.",
+"why": ""
+},
+{
+"prompt": "Imperativo negativo: “Bring a friend.”",
+"answer": "Don’t bring a friend.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “You join us.” (convite)",
+"answer": "Join us.",
+"why": ""
+}
+]
+}

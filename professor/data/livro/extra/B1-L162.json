@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "Actually I am living in Boston.",
+"right": "Currently I am living in Boston.",
+"why": "“Actually” parece “atualmente”, mas significa “na verdade”. Para “atualmente” use currently ou these days."
+},
+"mcq": [
+{
+"q": "The speaker says “Maybe it’s true.” His attitude is:",
+"opts": [
+"anger",
+"doubt",
+"certainty"
+],
+"ans": 1,
+"why": "Maybe indica dúvida."
+},
+{
+"q": "“Absolutely!” in a firm voice shows:",
+"opts": [
+"certainty",
+"doubt",
+"regret"
+],
+"ans": 0,
+"why": "Tom firme + absolutely = certeza."
+},
+{
+"q": "“Unfortunately, we lost.” expresses:",
+"opts": [
+"certainty",
+"excitement",
+"regret"
+],
+"ans": 2,
+"why": "Unfortunately = pesar."
+},
+{
+"q": "Qual significa “atualmente”?",
+"opts": [
+"currently",
+"eventually",
+"actually"
+],
+"ans": 0,
+"why": "Currently = atualmente; actually = na verdade."
+}
+],
+"fix": [
+{
+"wrong": "I am not agree with the speaker.",
+"right": "I don’t agree with the speaker.",
+"why": "Agree é verbo, não adjetivo: não se usa “be agree”."
+},
+{
+"wrong": "The speaker was very exciting about the news.",
+"right": "The speaker was very excited about the news.",
+"why": "Sentimento da pessoa = -ed (excited)."
+},
+{
+"wrong": "In my opinion, I am thinking it is false.",
+"right": "In my opinion, it is false.",
+"why": "In my opinion já expressa a opinião; não precisa de “I think”."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “The speaker sounds sure.”",
+"answer": "The speaker sounded sure.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “I agree with her.”",
+"answer": "I don’t agree with her.",
+"why": ""
+},
+{
+"prompt": "Comece com Unfortunately: “The report was late.”",
+"answer": "Unfortunately, the report was late.",
+"why": ""
+}
+]
+}

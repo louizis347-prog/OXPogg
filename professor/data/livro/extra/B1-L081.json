@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "anúncio de vaga",
+"wrong": "We are hiring: answer to calls, solve problems. Requeriments: good English.",
+"right": "We’re hiring: answer calls, solve problems. Requirements: good English.",
+"why": "Em português “atender ligações” e “requisitos” (requerimentos) enganam: answer não leva preposição como objeto e requirements é o termo de vaga, não requeriment/requirement escrito à portuguesa."
+},
+"mcq": [
+{
+"q": "We are ___ for a receptionist.",
+"opts": [
+"hirening",
+"hiring",
+"hiringing"
+],
+"ans": 1,
+"why": "hiring."
+},
+{
+"q": "Duties: ___ calls.",
+"opts": [
+"answer to",
+"answering to",
+"answer"
+],
+"ans": 2,
+"why": "answer + objeto."
+},
+{
+"q": "Benefits:",
+"opts": [
+"good English",
+"teamwork",
+"health insurance"
+],
+"ans": 2,
+"why": "Benefícios."
+},
+{
+"q": "“Requirements” lists…",
+"opts": [
+"o que o candidato precisa",
+"o que a empresa dá",
+"as tarefas"
+],
+"ans": 0,
+"why": "Requisitos."
+}
+],
+"fix": [
+{
+"wrong": "Answer to the phone.",
+"right": "Answer the phone.",
+"why": "Sem to."
+},
+{
+"wrong": "Good english is required.",
+"right": "Good English is required.",
+"why": "English maiúsculo."
+},
+{
+"wrong": "We offer a insurance.",
+"right": "We offer insurance.",
+"why": "Sem a."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem preposição: “Answer to calls.”",
+"answer": "Answer calls.",
+"why": ""
+},
+{
+"prompt": "Reescreva na passiva: “We require good English.”",
+"answer": "Good English is required.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We are looking for a cook.” (hiring)",
+"answer": "We’re hiring a cook.",
+"why": ""
+}
+]
+}

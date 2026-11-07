@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The text is the point of the iceberg.",
+"right": "The text is the tip of the iceberg.",
+"why": "Em português “ponta do iceberg” leva a point; em inglês a expressão fixa é tip."
+},
+"mcq": [
+{
+"q": "Idiom:",
+"opts": [
+"point of the iceberg",
+"top of iceberg",
+"tip of the iceberg"
+],
+"ans": 2,
+"why": "Tip."
+},
+{
+"q": "Behind the scenes means…",
+"opts": [
+"on stage",
+"in the street",
+"out of public sight"
+],
+"ans": 2,
+"why": "Bastidores."
+},
+{
+"q": "Only the visible part:",
+"opts": [
+"the iceberg tip all",
+"the sea of iceberg",
+"the tip of the iceberg"
+],
+"ans": 2,
+"why": "Idioma."
+},
+{
+"q": "Months of work happened…",
+"opts": [
+"behind the scenes",
+"at scenes",
+"behind of scenes"
+],
+"ans": 0,
+"why": "Behind the scenes."
+}
+],
+"fix": [
+{
+"wrong": "It is the point of the iceberg.",
+"right": "It is the tip of the iceberg.",
+"why": "tip."
+},
+{
+"wrong": "Behind of the scenes.",
+"right": "Behind the scenes.",
+"why": "Sem of."
+},
+{
+"wrong": "Months of work was behind.",
+"right": "Months of work were behind the scenes.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com idioma: “The text is only the visible part.”",
+"answer": "The text is the tip of the iceberg.",
+"why": ""
+},
+{
+"prompt": "Plural: “The text is the tip.”",
+"answer": "The texts are the tip.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It is the tip of the iceberg.”",
+"answer": "It is not the tip of the iceberg.",
+"why": ""
+}
+]
+}

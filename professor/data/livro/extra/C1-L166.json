@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "give rise to",
+"wrong": "Vague wording gives rise for disputes.",
+"right": "Vague wording gives rise to disputes.",
+"why": "Em português “dar origem a” tem a preposição a, mas o aluno escolhe for/of por influência de outras estruturas. Em inglês, give rise to é fixo."
+},
+"mcq": [
+{
+"q": "“Ambiguous clauses give rise ___ disputes.”",
+"opts": [
+"for",
+"to",
+"of"
+],
+"ans": 1,
+"why": "give rise to."
+},
+{
+"q": "Better than a passive “were given rise to”:",
+"opts": [
+"were arosed",
+"gave rised",
+"arose from"
+],
+"ans": 2,
+"why": "arise from."
+},
+{
+"q": "The **cause** is...",
+"opts": [
+"the subject",
+"the object",
+"the verb"
+],
+"ans": 0,
+"why": "Sujeito = causa."
+},
+{
+"q": "A near synonym of give rise to:",
+"opts": [
+"lead from",
+"lead to",
+"turn off"
+],
+"ans": 1,
+"why": "lead to."
+}
+],
+"fix": [
+{
+"wrong": "Poor wording gave rise a legal challenge.",
+"right": "Poor wording gave rise to a legal challenge.",
+"why": "to."
+},
+{
+"wrong": "The clause gave rised to a challenge.",
+"right": "The clause gave rise to a challenge.",
+"why": "Verbo irregular: gave rise."
+},
+{
+"wrong": "The clause gives rises to doubt.",
+"right": "The clause gives rise to doubt.",
+"why": "rise não leva -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com give rise to: “Ambiguity leads to disputes.”",
+"answer": "Ambiguity gives rise to disputes.",
+"why": ""
+},
+{
+"prompt": "Passado: “The clause gives rise to a challenge.”",
+"answer": "The clause gave rise to a challenge.",
+"why": ""
+},
+{
+"prompt": "Reescreva com modal: “The wording gives rise to doubt.” (may)",
+"answer": "The wording may give rise to doubt.",
+"why": ""
+}
+]
+}

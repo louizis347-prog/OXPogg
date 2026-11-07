@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "fazer reunião",
+"wrong": "We made a meeting with the suppliers yesterday.",
+"right": "We had a meeting with the suppliers yesterday.",
+"why": "Em português “fazer uma reunião” é natural, então o aluno usa make. Em inglês a colocação é have/hold a meeting; run a meeting é dirigi-la."
+},
+"mcq": [
+{
+"q": "“Worn out ___ she was, she kept running the talks.”",
+"opts": [
+"like",
+"so",
+"as"
+],
+"ans": 2,
+"why": "Adj + as."
+},
+{
+"q": "“Misreadings give rise ___ mistrust.”",
+"opts": [
+"to",
+"for",
+"at"
+],
+"ans": 0,
+"why": "give rise to."
+},
+{
+"q": "“She will ___ as chair.” (resign)",
+"opts": [
+"step in",
+"step down",
+"step by"
+],
+"ans": 1,
+"why": "step down as."
+},
+{
+"q": "A **hook** in a presentation is the...",
+"opts": [
+"last slide",
+"budget",
+"opening that grabs attention"
+],
+"ans": 2,
+"why": "Gancho."
+}
+],
+"fix": [
+{
+"wrong": "Much as I like him, but I disagree.",
+"right": "Much as I like him, I disagree.",
+"why": "Sem but."
+},
+{
+"wrong": "He ran out time in the talks.",
+"right": "He ran out of time in the talks.",
+"why": "of."
+},
+{
+"wrong": "Secrecy gives rise of doubt.",
+"right": "Secrecy gives rise to doubt.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com run: “She leads the meeting.”",
+"answer": "She runs the meeting.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Despite: “Although it rained, we left.”",
+"answer": "Despite the rain, we left.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give rise to: “Secrecy causes doubt.”",
+"answer": "Secrecy gives rise to doubt.",
+"why": ""
+}
+]
+}

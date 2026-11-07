@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "past perfect (produção)",
+"wrong": "When I arrived home, Mom baked the cake and I didn’t make the icing yet.",
+"right": "When I arrived home, Mom had baked the cake and I hadn’t made the icing yet.",
+"why": "Em português “quando cheguei, ela assou” é aceito. Em inglês o fato anterior vai no Past Perfect; já e ainda (already/yet) combinam com had."
+},
+"mcq": [
+{
+"q": "Mom ___ the cake before I arrived.",
+"opts": [
+"baked",
+"had baked",
+"has baked"
+],
+"ans": 1,
+"why": "had baked."
+},
+{
+"q": "I hadn’t made it ___.",
+"opts": [
+"already",
+"yet",
+"since"
+],
+"ans": 1,
+"why": "yet em negativa."
+},
+{
+"q": "She had ___ finished.",
+"opts": [
+"yet",
+"ever",
+"already"
+],
+"ans": 2,
+"why": "already."
+},
+{
+"q": "Past Perfect negative:",
+"opts": [
+"didn't + pp",
+"haven't + pp",
+"hadn't + pp"
+],
+"ans": 2,
+"why": "hadn't."
+}
+],
+"fix": [
+{
+"wrong": "I didn’t finish when she called.",
+"right": "I hadn’t finished when she called.",
+"why": "Past Perfect."
+},
+{
+"wrong": "They had already ate.",
+"right": "They had already eaten.",
+"why": "Particípio."
+},
+{
+"wrong": "She had not make it yet.",
+"right": "She had not made it yet.",
+"why": "made."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com already: “They ate before I arrived.”",
+"answer": "They had already eaten before I arrived.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa com yet: “I made the icing.”",
+"answer": "I hadn't made the icing yet.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Past Perfect: “Mom baked the cake.”",
+"answer": "Mom had baked the cake.",
+"why": ""
+}
+]
+}

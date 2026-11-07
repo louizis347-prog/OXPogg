@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome repetido",
+"wrong": "She is the writer who she wrote this book.",
+"right": "She is the writer who wrote this book.",
+"why": "Em português dizemos “a escritora que ela escreveu”, e o brasileiro repete o pronome. Em inglês, who/that já é o sujeito da oração relativa; não se repete."
+},
+"mcq": [
+{
+"q": "The man **___** car was stolen called the police.",
+"opts": [
+"which",
+"who",
+"whose"
+],
+"ans": 2,
+"why": "Posse (o carro DO homem) pede whose."
+},
+{
+"q": "The book **___** I bought is great.",
+"opts": [
+"whose",
+"who",
+"that"
+],
+"ans": 2,
+"why": "Para coisas usa-se that (ou which)."
+},
+{
+"q": "Qual frase está correta?",
+"opts": [
+"The woman who she lives next door is kind.",
+"The woman lives who next door is kind.",
+"The woman who lives next door is kind."
+],
+"ans": 2,
+"why": "Who já é o sujeito; não há “she”."
+},
+{
+"q": "I like the novel **___** won the prize.",
+"opts": [
+"that",
+"who",
+"whose"
+],
+"ans": 0,
+"why": "Novel é coisa: that/which; who é só para pessoas."
+}
+],
+"fix": [
+{
+"wrong": "The film that I saw it was long.",
+"right": "The film that I saw was long.",
+"why": "O pronome relativo já substitui o objeto; não repita “it”."
+},
+{
+"wrong": "She is a reader who’s life changed.",
+"right": "She is a reader whose life changed.",
+"why": "Posse = whose, não who’s (who is)."
+},
+{
+"wrong": "This is the town where I was born in.",
+"right": "This is the town where I was born.",
+"why": "Where já inclui a preposição in."
+}
+],
+"rewrite": [
+{
+"prompt": "Una as frases com who: “I met a woman. She writes novels.”",
+"answer": "I met a woman who writes novels.",
+"why": ""
+},
+{
+"prompt": "Una com that: “This is the book. I told you about it.”",
+"answer": "This is the book that I told you about.",
+"why": "Use that."
+},
+{
+"prompt": "Una com whose: “He is a boy. His mother is a nurse.”",
+"answer": "He is a boy whose mother is a nurse.",
+"why": ""
+}
+]
+}

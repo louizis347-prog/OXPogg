@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "avaliação unidade 8",
+"wrong": "She said me she will go. He is interested to sing. The cake was ate. Put the light off up.",
+"right": "She told me she would go. He is interested in singing. The cake was eaten. Put the light on.",
+"why": "Itens da avaliação: said me, recuo, interested in -ing, passiva com particípio e put on/off/up. O português facilita todos esses erros."
+},
+"mcq": [
+{
+"q": "She told me she ___ go.",
+"opts": [
+"will",
+"did",
+"would"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "He is interested ___ singing.",
+"opts": [
+"on",
+"to",
+"in"
+],
+"ans": 2,
+"why": "in."
+},
+{
+"q": "The cake was ___.",
+"opts": [
+"eaten",
+"ate",
+"eat"
+],
+"ans": 0,
+"why": "pp."
+},
+{
+"q": "Don’t ___ the meeting; do it today.",
+"opts": [
+"put on",
+"put off",
+"put in"
+],
+"ans": 1,
+"why": "put off = adiar."
+}
+],
+"fix": [
+{
+"wrong": "He said me he left.",
+"right": "He told me he had left.",
+"why": "tell + pessoa e Past Perfect."
+},
+{
+"wrong": "She is good in dance.",
+"right": "She is good at dancing.",
+"why": "at + -ing."
+},
+{
+"wrong": "The window was break.",
+"right": "The window was broken.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: Ele: “I will go.” (He said...)",
+"answer": "He said that he would go.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Someone stole the car.”",
+"answer": "The car was stolen.",
+"why": ""
+},
+{
+"prompt": "Reescreva com interested: “I like (learn) French.” (I am...)",
+"answer": "I am interested in learning French.",
+"why": ""
+}
+]
+}

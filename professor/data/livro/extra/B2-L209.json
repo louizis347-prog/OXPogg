@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "esquecer",
+"wrong": "I remember to lock the door yesterday.",
+"right": "I remember locking the door yesterday.",
+"why": "Brasileiros misturam as duas formas. Remember to = tarefa; remember -ing = lembrança do passado."
+},
+"mcq": [
+{
+"q": "Complete: I'll never forget **___** the sea.",
+"opts": [
+"to see",
+"see",
+"seeing"
+],
+"ans": 2,
+"why": "forget -ing = não esquecer a experiência."
+},
+{
+"q": "Qual NÃO é possível?",
+"opts": [
+"It is probable to rain.",
+"It is probable that it will rain.",
+"It is likely to rain."
+],
+"ans": 0,
+"why": "probable usa that-clause, nunca to."
+},
+{
+"q": "Qual usa in spite of?",
+"opts": [
+"In spite the cost, we bought it.",
+"In spite of the cost, we bought it.",
+"In spite of it was costly, we bought it."
+],
+"ans": 1,
+"why": "in spite of + substantivo."
+},
+{
+"q": "Complete: Costs rose; **___**, sales fell.",
+"opts": [
+"as a result",
+"nevertheless",
+"for example"
+],
+"ans": 0,
+"why": "Relação de causa."
+}
+],
+"fix": [
+{
+"wrong": "He remembered to paying the bill.",
+"right": "He remembered to pay the bill.",
+"why": "to + base."
+},
+{
+"wrong": "Are she likely to call?",
+"right": "Is she likely to call?",
+"why": "Concordância de be: is."
+},
+{
+"wrong": "Despite the fact he was ill, he came.",
+"right": "Despite the fact that he was ill, he came.",
+"why": "the fact that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com unlikely: “It isn't likely to snow.”",
+"answer": "It is unlikely to snow.",
+"why": ""
+},
+{
+"prompt": "Reescreva com even though: “Although he was ill, he came.”",
+"answer": "Even though he was ill, he came.",
+"why": ""
+},
+{
+"prompt": "Reescreva com consequently: “He studied, so he passed.”",
+"answer": "He studied; consequently, he passed.",
+"why": ""
+}
+]
+}

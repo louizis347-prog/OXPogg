@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if + will",
+"wrong": "If it will rain, I will stay home.",
+"right": "If it rains, I will stay home.",
+"why": "Em português 'se chover, ficarei' usa futuro do subjuntivo; em inglês a oração com if fica no presente, e o resultado leva will."
+},
+"mcq": [
+{
+"q": "If she ___ , I'll call you.",
+"opts": [
+"comes",
+"will come",
+"came"
+],
+"ans": 0,
+"why": "presente."
+},
+{
+"q": "If it rains, we ___ stay home.",
+"opts": [
+"would",
+"will",
+"do"
+],
+"ans": 1,
+"why": "will."
+},
+{
+"q": "I'll help you if you ___ me.",
+"opts": [
+"asked",
+"will ask",
+"ask"
+],
+"ans": 2,
+"why": "presente."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"If he ran, he'll win.",
+"If he runs, he'll win.",
+"If he will run, he'll win."
+],
+"ans": 1,
+"why": "presente."
+}
+],
+"fix": [
+{
+"wrong": "If I will see him, I'll tell him.",
+"right": "If I see him, I'll tell him.",
+"why": "presente."
+},
+{
+"wrong": "If you study, you pass.",
+"right": "If you study, you'll pass.",
+"why": "will."
+},
+{
+"wrong": "If she come, I'll go.",
+"right": "If she comes, I'll go.",
+"why": "comes."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “If it ___ (rain), I'll stay.”",
+"answer": "If it rains, I'll stay.",
+"why": ""
+},
+{
+"prompt": "Una: “You study. You'll pass.” com if",
+"answer": "If you study, you'll pass.",
+"why": ""
+},
+{
+"prompt": "Negativa: “If you hurry, you'll miss it.” (não se apressa)",
+"answer": "If you don't hurry, you'll miss it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sem -s no subjuntivo",
+"wrong": "The doctor recommends that he takes a rest.",
+"right": "The doctor recommends that he take a rest.",
+"why": "O brasileiro conjuga o verbo normalmente. Depois de recommend that, usa-se a forma base, mesmo com he/she."
+},
+"mcq": [
+{
+"q": "A negativa correta é...",
+"opts": [
+"I recommend that he not drive.",
+"I recommend that he doesn't to drive.",
+"I recommend that he not to drive."
+],
+"ans": 0,
+"why": "Negativa: not + base."
+},
+{
+"q": "\"The idea that\" é seguido de...",
+"opts": [
+"verbo no infinitivo",
+"sujeito + verbo",
+"gerúndio"
+],
+"ans": 1,
+"why": "that introduz oração completa."
+},
+{
+"q": "Qual frase é uma possibilidade perdida (não crítica)?",
+"opts": [
+"You must ask me.",
+"You are asking me.",
+"You could have asked me."
+],
+"ans": 2,
+"why": "could have + particípio = possibilidade que não se realizou."
+},
+{
+"q": "Qual frase é correta?",
+"opts": [
+"She doesn't has to work today.",
+"She doesn't have to work today.",
+"She don't have to work today."
+],
+"ans": 1,
+"why": "Terceira pessoa: doesn't have to."
+}
+],
+"fix": [
+{
+"wrong": "The teacher recommended that we to read it.",
+"right": "The teacher recommended that we read it.",
+"why": "Sem to após that-clause."
+},
+{
+"wrong": "The belief what money matters is common.",
+"right": "The belief that money matters is common.",
+"why": "Use that, não what."
+},
+{
+"wrong": "He should had study harder.",
+"right": "He should have studied harder.",
+"why": "A estrutura é should have + particípio, não should had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com idea that: “I like (we can walk).”",
+"answer": "I like the idea that we can walk.",
+"why": ""
+},
+{
+"prompt": "Reescreva como crítica: “He leaves early.”",
+"answer": "He should have left early.",
+"why": ""
+},
+{
+"prompt": "Reescreva com don't have to: “They needn't register.”",
+"answer": "They don't have to register.",
+"why": ""
+}
+]
+}

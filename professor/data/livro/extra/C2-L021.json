@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta negativa",
+"wrong": "Don’t you can make it tonight?",
+"right": "Can’t you make it tonight?",
+"why": "Em português “Você não pode vir?” mantém a ordem. Em inglês, em perguntas negativas contraídas o auxiliar contraído vem antes do sujeito."
+},
+"mcq": [
+{
+"q": "Informal for “Are you hungry?”",
+"opts": [
+"Hungry?",
+"Are hungry?",
+"You hungry are?"
+],
+"ans": 0,
+"why": "Elipse."
+},
+{
+"q": "“We’ve got you covered” is a...",
+"opts": [
+"tense",
+"contraction",
+"question"
+],
+"ans": 1,
+"why": "Contração."
+},
+{
+"q": "“Catch up” (informal) means...",
+"opts": [
+"run fast",
+"capture",
+"talk about recent news"
+],
+"ans": 2,
+"why": "Conversar."
+},
+{
+"q": "Which is **informal** for “visit briefly”?",
+"opts": [
+"pop in",
+"attend",
+"call upon formally"
+],
+"ans": 0,
+"why": "pop in."
+}
+],
+"fix": [
+{
+"wrong": "We have got you covered, I think so.",
+"right": "We’ve got you covered.",
+"why": "Contração."
+},
+{
+"wrong": "I will pop in tomorrow at your office place.",
+"right": "I will pop in at your office tomorrow.",
+"why": "Natural."
+},
+{
+"wrong": "Wanna to grab a bite?",
+"right": "Wanna grab a bite?",
+"why": "wanna = want to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva informal: “Are you hungry?”",
+"answer": "Hungry?",
+"why": ""
+},
+{
+"prompt": "Reescreva com contração: “We have arranged for you.”",
+"answer": "We’ve got you covered.",
+"why": ""
+},
+{
+"prompt": "Reescreva informal: “Visit briefly.”",
+"answer": "Pop in.",
+"why": ""
+}
+]
+}

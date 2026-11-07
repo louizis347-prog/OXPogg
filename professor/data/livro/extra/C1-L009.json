@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "interpretar a pergunta",
+"wrong": "Discuss about to what extent technology helps.",
+"right": "Discuss to what extent technology helps.",
+"why": "Por influência de “discutir sobre”, o brasileiro põe about. Em inglês, discuss é seguido direto do objeto."
+},
+"mcq": [
+{
+"q": "Step 1 is to…",
+"opts": [
+"understand the question",
+"write the end",
+"list quotes"
+],
+"ans": 0,
+"why": "Entender o que se pede."
+},
+{
+"q": "A thesis is…",
+"opts": [
+"a title",
+"one sentence with a position",
+"a long quote"
+],
+"ans": 1,
+"why": "Uma frase com posição."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Discuss about the issue.",
+"Discuss on the issue.",
+"Discuss the issue."
+],
+"ans": 2,
+"why": "Sem preposição."
+},
+{
+"q": "“To what extent” asks for…",
+"opts": [
+"degree of agreement",
+"a date",
+"a list"
+],
+"ans": 0,
+"why": "Grau."
+}
+],
+"fix": [
+{
+"wrong": "Discuss about the issue.",
+"right": "Discuss the issue.",
+"why": "Sem about."
+},
+{
+"wrong": "I will argue what it works.",
+"right": "I will argue that it works.",
+"why": "argue that."
+},
+{
+"wrong": "It exist two views.",
+"right": "There are two views.",
+"why": "Use There are."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem about: “Talk about the causes in your essay.”",
+"answer": "Discuss the causes in your essay.",
+"why": ""
+},
+{
+"prompt": "Reescreva com There: “Two views exist.”",
+"answer": "There are two views.",
+"why": ""
+},
+{
+"prompt": "Complete: “I will argue ___ it works.” (frase completa)",
+"answer": "I will argue that it works.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "She relied in trusting her team.",
+"right": "She relied on trusting her team.",
+"why": "Português “confiou em”; o brasileiro usa in. Insist on, rely on, succeed in: cada verbo tem sua preposição + -ing."
+},
+"mcq": [
+{
+"q": "Carla insisted **___** lending us money.",
+"opts": [
+"in",
+"on",
+"to"
+],
+"ans": 1,
+"why": "On."
+},
+{
+"q": "They succeeded **___** finishing early.",
+"opts": [
+"in",
+"at",
+"on"
+],
+"ans": 0,
+"why": "Succeed in."
+},
+{
+"q": "We rely **___** checking twice.",
+"opts": [
+"in",
+"to",
+"on"
+],
+"ans": 2,
+"why": "On."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"He insisted to pay.",
+"He insisted in pay.",
+"He insisted on paying."
+],
+"ans": 2,
+"why": "On + -ing."
+}
+],
+"fix": [
+{
+"wrong": "Carla insisted in paying.",
+"right": "Carla insisted on paying.",
+"why": "On."
+},
+{
+"wrong": "They succeeded on finishing.",
+"right": "They succeeded in finishing.",
+"why": "In."
+},
+{
+"wrong": "We rely of checking twice.",
+"right": "We rely on checking twice.",
+"why": "On."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Carla insisted. She lent us money.” (on)",
+"answer": "Carla insisted on lending us money.",
+"why": ""
+},
+{
+"prompt": "Passado: “They succeed in finishing early.”",
+"answer": "They succeeded in finishing early.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We rely on checking twice.”",
+"answer": "We don’t rely on checking twice.",
+"why": ""
+}
+]
+}

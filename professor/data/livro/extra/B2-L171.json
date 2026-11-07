@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome repetido",
+"wrong": "The man who I saw him is my boss.",
+"right": "The man who I saw is my boss.",
+"why": "Em português coloquial repetimos o pronome (\"o homem que eu o vi\"). Em inglês, o pronome relativo já é o objeto."
+},
+"mcq": [
+{
+"q": "Qual usa vírgulas corretamente?",
+"opts": [
+"Rio, which is hot, is lively.",
+"Rio which is hot is lively.",
+"Rio, that is hot, is lively."
+],
+"ans": 0,
+"why": "Não-restritiva: vírgulas + which."
+},
+{
+"q": "Complete: The woman **___** called is my aunt.",
+"opts": [
+"which",
+"who",
+"whose"
+],
+"ans": 1,
+"why": "Pessoa sujeito = who."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"The film that we saw it was long.",
+"The film who we saw was long.",
+"The film that we saw was long."
+],
+"ans": 2,
+"why": "Sem pronome repetido."
+},
+{
+"q": "Em qual frase that é impossível?",
+"opts": [
+"The car that I bought...",
+"My car, which is old, ...",
+"The car which I bought..."
+],
+"ans": 1,
+"why": "Depois de vírgula, nunca that."
+}
+],
+"fix": [
+{
+"wrong": "The girl who I met her is kind.",
+"right": "The girl who I met is kind.",
+"why": "Sem pronome repetido."
+},
+{
+"wrong": "The song which she sang it was lovely.",
+"right": "The song which she sang was lovely.",
+"why": "Sem it."
+},
+{
+"wrong": "My brother that lives in Rome called.",
+"right": "My brother, who lives in Rome, called.",
+"why": "Informação extra: who + vírgulas."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com who: “I know a woman. She teaches maths.”",
+"answer": "I know a woman who teaches maths.",
+"why": ""
+},
+{
+"prompt": "Una com which: “This is the book. I bought it.”",
+"answer": "This is the book which I bought.",
+"why": ""
+},
+{
+"prompt": "Una com whose: “I met a boy. His dog is huge.”",
+"answer": "I met a boy whose dog is huge.",
+"why": ""
+}
+]
+}

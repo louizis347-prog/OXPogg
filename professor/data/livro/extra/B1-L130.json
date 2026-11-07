@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "fala com preparo",
+"wrong": "I will talk about my city. Firstly, is very big. Second, have many parks.",
+"right": "I'd like to talk about my city. First, it is very big. Second, it has many parks.",
+"why": "Em português o sujeito é omitido (“é grande”, “tem parques”). Em inglês, o sujeito (it) é obrigatório em cada frase."
+},
+"mcq": [
+{
+"q": "Opening:",
+"opts": [
+"I go talk about…",
+"I’d like to talk about…",
+"I am talk about…"
+],
+"ans": 1,
+"why": "Abertura."
+},
+{
+"q": "Preparation: take 3 notes and…",
+"opts": [
+"one example",
+"one dictionary",
+"one excuse"
+],
+"ans": 0,
+"why": "Exemplo."
+},
+{
+"q": "Complete: “___ has many parks.”",
+"opts": [
+"—",
+"There",
+"It"
+],
+"ans": 2,
+"why": "Sujeito."
+},
+{
+"q": "Closing:",
+"opts": [
+"In conclusion,",
+"In the end of,",
+"At conclusion,"
+],
+"ans": 0,
+"why": "In conclusion."
+}
+],
+"fix": [
+{
+"wrong": "Is very big.",
+"right": "It is very big.",
+"why": "Sujeito."
+},
+{
+"wrong": "Have many parks.",
+"right": "It has many parks.",
+"why": "Sujeito + has."
+},
+{
+"wrong": "I would like talk about it.",
+"right": "I would like to talk about it.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com sujeito: “___ is quiet.” (the town)",
+"answer": "It",
+"why": ""
+},
+{
+"prompt": "Reescreva com abertura: “I talk about my school.” (I’d like...)",
+"answer": "I'd like to talk about my school.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Tem muitos museus.” → “It ... many museums.”",
+"answer": "It has many museums.",
+"why": ""
+}
+]
+}

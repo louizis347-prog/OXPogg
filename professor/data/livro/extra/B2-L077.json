@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish governments will act.",
+"right": "I wish governments would act.",
+"why": "Para mudança desejada em terceiros, wish + would. O brasileiro usa will ou presente."
+},
+"mcq": [
+{
+"q": "I wish governments **___** act.",
+"opts": [
+"would",
+"will",
+"acted"
+],
+"ans": 0,
+"why": "Would."
+},
+{
+"q": "I wish we **___** recycled more.",
+"opts": [
+"had",
+"have",
+"would"
+],
+"ans": 0,
+"why": "Arrependimento."
+},
+{
+"q": "Mudança desejada:",
+"opts": [
+"I wish people will care.",
+"I wish people would care.",
+"I wish people care."
+],
+"ans": 1,
+"why": "Would."
+},
+{
+"q": "If only se aplica a:",
+"opts": [
+"ordens",
+"desejos e arrependimentos",
+"fatos"
+],
+"ans": 1,
+"why": "Ênfase."
+}
+],
+"fix": [
+{
+"wrong": "I wish people care more.",
+"right": "I wish people would care more.",
+"why": "Would."
+},
+{
+"wrong": "I wish we recycle more last year.",
+"right": "I wish we had recycled more last year.",
+"why": "Passado."
+},
+{
+"wrong": "If only they will listen!",
+"right": "If only they would listen!",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Governments don’t act.” (I wish… would)",
+"answer": "I wish governments would act.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We didn’t recycle.” (I wish…)",
+"answer": "I wish we had recycled.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “People don’t listen.” (If only… would)",
+"answer": "If only people would listen!",
+"why": ""
+}
+]
+}

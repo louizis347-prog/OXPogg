@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "I study now.",
+"right": "I am studying now.",
+"why": "Em português \"estudo agora\" funciona com o presente simples; em inglês, ação em andamento exige be + -ing."
+},
+"mcq": [
+{
+"q": "Right now: I ___ TV.",
+"opts": [
+"watch",
+"am watching",
+"watches"
+],
+"ans": 1,
+"why": "Be + -ing."
+},
+{
+"q": "They ___ a game.",
+"opts": [
+"play",
+"is playing",
+"are playing"
+],
+"ans": 2,
+"why": "They: are."
+},
+{
+"q": "Spelling of run + ing",
+"opts": [
+"running",
+"runing",
+"runnning"
+],
+"ans": 0,
+"why": "Dobra a consoante."
+},
+{
+"q": "Spelling of make + ing",
+"opts": [
+"makeing",
+"making",
+"makking"
+],
+"ans": 1,
+"why": "Tira o e."
+}
+],
+"fix": [
+{
+"wrong": "I studying now.",
+"right": "I am studying now.",
+"why": "Falta be."
+},
+{
+"wrong": "They is playing.",
+"right": "They are playing.",
+"why": "They: are."
+},
+{
+"wrong": "He is runing.",
+"right": "He is running.",
+"why": "Dobra n."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no Present Continuous: “She eats.”",
+"answer": "She is eating.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Present Continuous: “They run.”",
+"answer": "They are running.",
+"why": ""
+},
+{
+"prompt": "Negue: “I am working.” (am not)",
+"answer": "I am not working.",
+"why": ""
+}
+]
+}

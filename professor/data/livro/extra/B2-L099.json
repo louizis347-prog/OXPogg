@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "rise ≠ raise",
+"wrong": "Prices raised sharply last year.",
+"right": "Prices rose sharply last year.",
+"why": "Raise é transitivo (aumentar algo). Rise é intransitivo: o preço subiu sozinho."
+},
+"mcq": [
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto não diz",
+"o texto nega",
+"o texto confirma"
+],
+"ans": 0,
+"why": "Não mencionado."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a tool new useful",
+"a useful new tool",
+"a new tool useful"
+],
+"ans": 1,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"a research",
+"researches",
+"research"
+],
+"ans": 2,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay will discuss both views.",
+"This essay discusses of both views."
+],
+"ans": 1,
+"why": "discuss é transitivo."
+}
+],
+"fix": [
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+},
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+},
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+}
+]
+}

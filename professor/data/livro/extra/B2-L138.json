@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have + objeto + particípio",
+"wrong": "I cut my hair yesterday at the salon.",
+"right": "I had my hair cut yesterday at the salon.",
+"why": "Em português \"cortei o cabelo\" serve também para quem foi ao salão. Em inglês, cortar com as próprias mãos é cut; mandar fazer é have + objeto + particípio."
+},
+"mcq": [
+{
+"q": "Qual ordem está correta?",
+"opts": [
+"She had her nails done.",
+"She had done her nails.",
+"She done had her nails."
+],
+"ans": 0,
+"why": "Objeto antes do particípio."
+},
+{
+"q": "Qual verbo usa objeto direto de pessoa?",
+"opts": [
+"said",
+"told",
+"suggested"
+],
+"ans": 1,
+"why": "tell + pessoa."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Staff expect to wearing ID.",
+"Staff are expected wear ID.",
+"Staff are expected to wear ID."
+],
+"ans": 2,
+"why": "be expected to + base."
+},
+{
+"q": "A dedução negativa de \"She was there\" é...",
+"opts": [
+"She mustn't have been there.",
+"She can't have been there.",
+"She hasn't must be there."
+],
+"ans": 1,
+"why": "Dedução negativa = can't have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "We are having painting the house.",
+"right": "We are having the house painted.",
+"why": "Particípio painted."
+},
+{
+"wrong": "They explained me the problem.",
+"right": "They explained the problem to me.",
+"why": "explain to."
+},
+{
+"wrong": "They were suppose to meet at six.",
+"right": "They were supposed to meet at six.",
+"why": "Passado: supposed."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com told: “‘Wait here,’ he said to me.”",
+"answer": "He told me to wait there.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be expected to: “They expect us to be quiet.”",
+"answer": "We are expected to be quiet.",
+"why": ""
+},
+{
+"prompt": "Reescreva como dedução negativa: “He took my keys.”",
+"answer": "He can't have taken my keys.",
+"why": ""
+}
+]
+}

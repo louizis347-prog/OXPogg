@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ativa × passiva (presente)",
+"wrong": "Letters sort by machines. It delivered by the postman every day.",
+"right": "Letters are sorted by machines. It is delivered by the postman every day.",
+"why": "Em português “as cartas são separadas” ou “separam-se cartas” são frequentes. O brasileiro traduz sem be. Em inglês, active: sujeito faz; passive: am/is/are + pp."
+},
+"mcq": [
+{
+"q": "Active: The postman delivers it. Passive: It ___ by the postman.",
+"opts": [
+"delivers",
+"is deliver",
+"is delivered"
+],
+"ans": 2,
+"why": "is delivered."
+},
+{
+"q": "Plural passive: “Letters ___ sorted.”",
+"opts": [
+"is",
+"does",
+"are"
+],
+"ans": 2,
+"why": "are."
+},
+{
+"q": "Which sentence is passive?",
+"opts": [
+"Parcels are weighed.",
+"Workers weigh parcels.",
+"They weigh parcels."
+],
+"ans": 0,
+"why": "Passiva."
+},
+{
+"q": "by + agente:",
+"opts": [
+"by machines",
+"from machines",
+"with machines"
+],
+"ans": 0,
+"why": "by."
+}
+],
+"fix": [
+{
+"wrong": "Parcels is weighed.",
+"right": "Parcels are weighed.",
+"why": "Plural."
+},
+{
+"wrong": "The mail carries by trucks.",
+"right": "The mail is carried by trucks.",
+"why": "be."
+},
+{
+"wrong": "Mail is delivery daily.",
+"right": "Mail is delivered daily.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Machines sort the letters.”",
+"answer": "The letters are sorted by machines.",
+"why": ""
+},
+{
+"prompt": "Passe para a ativa: “Parcels are weighed by workers.”",
+"answer": "Workers weigh parcels.",
+"why": ""
+},
+{
+"prompt": "Torne negativa a passiva: “It is delivered on Sundays.”",
+"answer": "It isn't delivered on Sundays.",
+"why": ""
+}
+]
+}

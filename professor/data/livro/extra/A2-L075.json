@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "much / many",
+"wrong": "I have many money.",
+"right": "I have a lot of money.",
+"why": "Em português 'muito/muitos' variam, mas o aluno usa many com incontáveis; em inglês many = contáveis, much = incontáveis."
+},
+"mcq": [
+{
+"q": "How ___ water?",
+"opts": [
+"many",
+"much",
+"few"
+],
+"ans": 1,
+"why": "incontável."
+},
+{
+"q": "How ___ books?",
+"opts": [
+"many",
+"much",
+"little"
+],
+"ans": 0,
+"why": "contável."
+},
+{
+"q": "I have ___ time.",
+"opts": [
+"a little",
+"many",
+"a few"
+],
+"ans": 0,
+"why": "incontável."
+},
+{
+"q": "I have ___ friends.",
+"opts": [
+"a little",
+"much",
+"a few"
+],
+"ans": 2,
+"why": "contável."
+}
+],
+"fix": [
+{
+"wrong": "I don't have many money.",
+"right": "I don't have much money.",
+"why": "much."
+},
+{
+"wrong": "How much friends?",
+"right": "How many friends?",
+"why": "many."
+},
+{
+"wrong": "She has a little friends.",
+"right": "She has a few friends.",
+"why": "a few."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “How ___ rice do you need?” (quantidade)",
+"answer": "How much rice do you need?",
+"why": ""
+},
+{
+"prompt": "Complete: “How ___ eggs do you need?”",
+"answer": "How many eggs do you need?",
+"why": ""
+},
+{
+"prompt": "Complete: “I have ___ milk.” (um pouco)",
+"answer": "I have a little milk.",
+"why": ""
+}
+]
+}

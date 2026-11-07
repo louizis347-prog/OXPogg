@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "provável + to",
+"wrong": "It's probable to rain tomorrow.",
+"right": "It's likely to rain tomorrow.",
+"why": "Em português, \"é provável chover\" leva o aluno a usar probable + to. Em inglês, probable não aceita to; use likely to."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"It is likely to snow.",
+"It is likely snow.",
+"It likely to snow."
+],
+"ans": 0,
+"why": "be likely to + base."
+},
+{
+"q": "\"unlikely\" significa...",
+"opts": [
+"muito provável",
+"pouco provável",
+"obrigatório"
+],
+"ans": 1,
+"why": "un- = negativo."
+},
+{
+"q": "Complete: She **is ___ to** win.",
+"opts": [
+"probable",
+"possibly",
+"likely"
+],
+"ans": 2,
+"why": "likely to; probable não aceita to."
+},
+{
+"q": "Qual NÃO é possível?",
+"opts": [
+"It is probable that it will rain.",
+"It is probable to rain.",
+"It is likely to rain."
+],
+"ans": 1,
+"why": "probable usa that-clause, nunca to."
+}
+],
+"fix": [
+{
+"wrong": "It is probable to be cold tonight.",
+"right": "It is likely to be cold tonight.",
+"why": "probable não aceita to."
+},
+{
+"wrong": "He likely to arrive early.",
+"right": "He is likely to arrive early.",
+"why": "Falta o verbo be."
+},
+{
+"wrong": "They are likely arrive late.",
+"right": "They are likely to arrive late.",
+"why": "Falta to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com likely: “Maybe it will rain.” (use It)",
+"answer": "It is likely to rain.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “She probably won't come.”",
+"answer": "She is unlikely to come.",
+"why": ""
+},
+{
+"prompt": "Passe para pergunta: “He is likely to win.”",
+"answer": "Is he likely to win?",
+"why": ""
+}
+]
+}

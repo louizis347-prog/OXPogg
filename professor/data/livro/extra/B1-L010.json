@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "for / since",
+"wrong": "I am teaching here since 2019.",
+"right": "I have taught here since 2019.",
+"why": "Em português 'leciono aqui desde 2019' usa o presente; em inglês duração até agora pede Present Perfect."
+},
+"mcq": [
+{
+"q": "I've known him ___ ten years.",
+"opts": [
+"for",
+"since",
+"during"
+],
+"ans": 0,
+"why": "duração."
+},
+{
+"q": "She has lived there ___ May.",
+"opts": [
+"since",
+"for",
+"from"
+],
+"ans": 0,
+"why": "ponto."
+},
+{
+"q": "How ___ have you studied English?",
+"opts": [
+"long",
+"much",
+"many"
+],
+"ans": 0,
+"why": "how long."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"They have been married for a year.",
+"They are married since a year.",
+"They were married since a year."
+],
+"ans": 0,
+"why": "present perfect."
+}
+],
+"fix": [
+{
+"wrong": "I work here for 2018.",
+"right": "I have worked here since 2018.",
+"why": "present perfect."
+},
+{
+"wrong": "He has a car since March.",
+"right": "He has had a car since March.",
+"why": "had."
+},
+{
+"wrong": "We know each other since years.",
+"right": "We have known each other for years.",
+"why": "for."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect: “I live in Lima. (for six months)”",
+"answer": "I have lived in Lima for six months.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You have studied Spanish.” (how long)",
+"answer": "How long have you studied Spanish?",
+"why": ""
+},
+{
+"prompt": "Present perfect: “She has a cold. (since Monday)”",
+"answer": "She has had a cold since Monday.",
+"why": ""
+}
+]
+}

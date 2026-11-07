@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "too × either",
+"wrong": "I did not share it, and my friends did not too.",
+"right": "I did not share it, and my friends did not either.",
+"why": "Em português “também não” traduz-se com “também”, o que leva a too. Em inglês, too vem em frases afirmativas; either, em negativas."
+},
+"mcq": [
+{
+"q": "“Friends did, ___.”",
+"opts": [
+"either",
+"too",
+"neither"
+],
+"ans": 1,
+"why": "Afirmativa."
+},
+{
+"q": "“I didn’t share it, and she didn’t ___.”",
+"opts": [
+"too",
+"also",
+"either"
+],
+"ans": 2,
+"why": "Negativa."
+},
+{
+"q": "“She still ___.”",
+"opts": [
+"does",
+"is",
+"has"
+],
+"ans": 0,
+"why": "Mesmo auxiliar."
+},
+{
+"q": "Same subject: “I shared it and ___ it.”",
+"opts": [
+"I regretted",
+"regretted",
+"did regret"
+],
+"ans": 1,
+"why": "Sujeito omitido."
+}
+],
+"fix": [
+{
+"wrong": "I didn’t check, and she didn’t too.",
+"right": "I didn’t check, and she didn’t either.",
+"why": "either."
+},
+{
+"wrong": "Friends did either; others didn’t.",
+"right": "Friends did too; others didn’t.",
+"why": "too."
+},
+{
+"wrong": "I shared it and I regretted it twice.",
+"right": "I shared it and regretted it twice.",
+"why": "Sujeito comum."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com too: “Friends shared it. Others shared it.” → “Friends did; others did ___.”",
+"answer": "Friends did; others did too.",
+"why": "Resposta completa."
+},
+{
+"prompt": "Reescreva com either: “I didn’t read it. She didn’t read it.” (…, and she didn’t …)",
+"answer": "I didn’t read it, and she didn’t either.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse de sujeito: “I shared it and I regretted it.”",
+"answer": "I shared it and regretted it.",
+"why": ""
+}
+]
+}

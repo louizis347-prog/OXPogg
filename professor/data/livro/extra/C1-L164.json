@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "suggest + to",
+"wrong": "The man suggests her to ask the union for advice.",
+"right": "The man suggests that she ask the union for advice.",
+"why": "Em português “sugere a ela perguntar” aceita infinitivo. Em inglês, suggest não leva objeto + to; use that + sujeito + base (ou -ing)."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"He suggests she asks the union.",
+"He suggests to her ask the union.",
+"He suggests that she ask the union."
+],
+"ans": 2,
+"why": "suggest that + base (US)."
+},
+{
+"q": "“The woman has a ___: her rent is going up.”",
+"opts": [
+"problem",
+"obstacle",
+"solution"
+],
+"ans": 0,
+"why": "problem."
+},
+{
+"q": "“However, she says…” introduces an...",
+"opts": [
+"example",
+"obstacle",
+"greeting"
+],
+"ans": 1,
+"why": "However = obstáculo."
+},
+{
+"q": "“Her landlord wants a 20% ___.”",
+"opts": [
+"increasing",
+"up",
+"increase"
+],
+"ans": 2,
+"why": "increase (substantivo)."
+}
+],
+"fix": [
+{
+"wrong": "The man suggests her to sign a longer lease.",
+"right": "The man suggests that she sign a longer lease.",
+"why": "suggest that."
+},
+{
+"wrong": "The union is oppose to the rise.",
+"right": "The union is opposed to the rise.",
+"why": "opposed."
+},
+{
+"wrong": "She worries about to lose her flat.",
+"right": "She worries about losing her flat.",
+"why": "about + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com suggests that: “The man says: ‘Ask the union.’” (The man suggests…)",
+"answer": "The man suggests that she ask the union.",
+"why": "Use that she ask."
+},
+{
+"prompt": "Reescreva com suggests -ing: “The man says she should sign a longer lease.” (suggests signing)",
+"answer": "The man suggests signing a longer lease.",
+"why": ""
+},
+{
+"prompt": "Reescreva no negativo: “The union supports the rise.”",
+"answer": "The union does not support the rise.",
+"why": ""
+}
+]
+}

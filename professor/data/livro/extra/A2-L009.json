@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "terminação -ed",
+"wrong": "I pronounce 'wanted' with one syllable.",
+"right": "'Wanted' has two syllables: /ˈwɑːntɪd/.",
+"why": "Em português não há /t/ final solto; o brasileiro engole o -ed. Depois de /t/ ou /d/, -ed vira uma sílaba extra /ɪd/."
+},
+"mcq": [
+{
+"q": "**Worked** termina em:",
+"opts": [
+"/t/",
+"/d/",
+"/ɪd/"
+],
+"ans": 0,
+"why": "Surdo."
+},
+{
+"q": "**Played** termina em:",
+"opts": [
+"/t/",
+"/d/",
+"/ɪd/"
+],
+"ans": 1,
+"why": "Sonoro."
+},
+{
+"q": "**Wanted** termina em:",
+"opts": [
+"/t/",
+"/d/",
+"/ɪd/"
+],
+"ans": 2,
+"why": "t + ed = /ɪd/."
+},
+{
+"q": "Quantas sílabas em **asked**?",
+"opts": [
+"1",
+"2",
+"3"
+],
+"ans": 0,
+"why": "/t/, uma sílaba."
+}
+],
+"fix": [
+{
+"wrong": "The word 'needed' has one syllable.",
+"right": "The word 'needed' has two syllables.",
+"why": "/ɪd/."
+},
+{
+"wrong": "The word 'washed' ends in /id/.",
+"right": "The word 'washed' ends in /t/.",
+"why": "Surdo."
+},
+{
+"wrong": "The word 'played' ends in /t/.",
+"right": "The word 'played' ends in /d/.",
+"why": "Sonoro."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com /t/, /d/ ou /ɪd/: “washed” → /…/",
+"answer": "/t/",
+"why": ""
+},
+{
+"prompt": "Complete com /t/, /d/ ou /ɪd/: “called” → /…/",
+"answer": "/d/",
+"why": ""
+},
+{
+"prompt": "Complete com /t/, /d/ ou /ɪd/: “started” → /…/",
+"answer": "/ɪd/",
+"why": ""
+}
+]
+}

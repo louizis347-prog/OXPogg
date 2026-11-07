@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "You needn’t to worry about it.",
+"right": "You needn’t worry about it.",
+"why": "Needn’t é modal e não leva to. Don’t have to = não é obrigatório; mustn’t = proibido. O brasileiro mistura."
+},
+"mcq": [
+{
+"q": "Você não precisa vir:",
+"opts": [
+"You needn’t come.",
+"You can’t to come.",
+"You mustn’t come."
+],
+"ans": 0,
+"why": "Needn’t."
+},
+{
+"q": "It’s free, so you **___** pay.",
+"opts": [
+"can’t",
+"mustn’t",
+"don’t have to"
+],
+"ans": 2,
+"why": "Não obrigatório."
+},
+{
+"q": "Proibição:",
+"opts": [
+"You don’t have to touch it.",
+"You needn’t touch it.",
+"You mustn’t touch it."
+],
+"ans": 2,
+"why": "Mustn’t."
+},
+{
+"q": "Needn’t é seguido de:",
+"opts": [
+"verbo base",
+"to + verbo",
+"-ing"
+],
+"ans": 0,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "You needn’t to wait.",
+"right": "You needn’t wait.",
+"why": "Sem to."
+},
+{
+"wrong": "You mustn’t come; it’s optional.",
+"right": "You needn’t come; it’s optional.",
+"why": "Opcional."
+},
+{
+"wrong": "She doesn’t has to leave.",
+"right": "She doesn’t have to leave.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com needn’t: “You don’t have to wait.”",
+"answer": "You needn’t wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva com don’t have to: “You needn’t pay.”",
+"answer": "You don’t have to pay.",
+"why": ""
+},
+{
+"prompt": "Proibição: “Don’t touch it.” (You mustn’t…)",
+"answer": "You mustn’t touch it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Drawing in discourse analysis, it operationalises the term.",
+"right": "Drawing on discourse analysis, it operationalises the term.",
+"why": "Português “baseando-se em”; em inglês draw on."
+},
+"mcq": [
+{
+"q": "Method:",
+"opts": [
+"Drawing of…",
+"Drawing in…",
+"Drawing on discourse analysis…"
+],
+"ans": 2,
+"why": "on."
+},
+{
+"q": "How is a result reported in a findings abstract?",
+"opts": [
+"Findings to suggest…",
+"Findings suggests…",
+"Findings suggest that…"
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "Participle shows…",
+"opts": [
+"method",
+"time only",
+"negative"
+],
+"ans": 0,
+"why": "Método."
+},
+{
+"q": "Findings are…",
+"opts": [
+"singular only",
+"plural",
+"a verb"
+],
+"ans": 1,
+"why": "Plural."
+}
+],
+"fix": [
+{
+"wrong": "Findings suggests a gap.",
+"right": "Findings suggest a gap.",
+"why": "Plural."
+},
+{
+"wrong": "Drawing of the data, we argue.",
+"right": "Drawing on the data, we argue.",
+"why": "on."
+},
+{
+"wrong": "It operationalise the term.",
+"right": "It operationalises the term.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Singular: “Findings suggest a gap.”",
+"answer": "The finding suggests a gap.",
+"why": ""
+},
+{
+"prompt": "Passado: “It operationalises the term.”",
+"answer": "It operationalised the term.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Findings suggest a gap.”",
+"answer": "Findings do not suggest a gap.",
+"why": ""
+}
+]
+}

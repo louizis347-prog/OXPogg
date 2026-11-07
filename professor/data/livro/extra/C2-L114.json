@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "What strikes me it is that endurance became the argument.",
+"right": "What strikes me is that endurance became the argument.",
+"why": "Português “o que me chama atenção é que” aceita pronome extra; em inglês o pseudo-cleft não repete sujeito."
+},
+"mcq": [
+{
+"q": "Pseudo-cleft:",
+"opts": [
+"What strikes me is that…",
+"What strike me is…",
+"What it strikes me is…"
+],
+"ans": 0,
+"why": "What + V + is."
+},
+{
+"q": "That is the…",
+"opts": [
+"reasons that",
+"reasoning",
+"reason"
+],
+"ans": 2,
+"why": "That is the reason."
+},
+{
+"q": "What strikes me is that…",
+"opts": [
+"ends",
+"asks",
+"highlights a point"
+],
+"ans": 2,
+"why": "Destaque."
+},
+{
+"q": "After “is”:",
+"opts": [
+"that-clause",
+"to",
+"ing"
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "What strike me is the speed.",
+"right": "What strikes me is the speed.",
+"why": "-s."
+},
+{
+"wrong": "What I like it is the end.",
+"right": "What I like is the end.",
+"why": "Sem it."
+},
+{
+"wrong": "What strikes me, is it that.",
+"right": "What strikes me is that.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The speed strikes me.”",
+"answer": "What strikes me is the speed.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I like the end.”",
+"answer": "What I like is the end.",
+"why": ""
+},
+{
+"prompt": "Passado: “What strikes me is the speed.”",
+"answer": "What struck me was the speed.",
+"why": ""
+}
+]
+}

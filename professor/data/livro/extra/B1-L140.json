@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "adjetivo + preposição (uso)",
+"wrong": "I am keen of reading. She is afraid of to fly. He is good in organize.",
+"right": "I am keen on reading. She is afraid of flying. He is good at organizing.",
+"why": "Em português “gosto muito de ler”, “medo de voar” usam de. O brasileiro generaliza of/in. Em inglês, cada adjetivo tem sua preposição (keen on, afraid of, good at) e depois vem -ing."
+},
+"mcq": [
+{
+"q": "I am keen ___ exploring.",
+"opts": [
+"of",
+"on",
+"at"
+],
+"ans": 1,
+"why": "keen on."
+},
+{
+"q": "She is afraid ___ flying.",
+"opts": [
+"of",
+"at",
+"on"
+],
+"ans": 0,
+"why": "afraid of."
+},
+{
+"q": "He is good ___ reading.",
+"opts": [
+"at",
+"in",
+"of"
+],
+"ans": 0,
+"why": "good at."
+},
+{
+"q": "Preposition + verb:",
+"opts": [
+"to + base",
+"-ing",
+"base"
+],
+"ans": 1,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I'm keen in cooking.",
+"right": "I'm keen on cooking.",
+"why": "keen on."
+},
+{
+"wrong": "He is afraid of to speak.",
+"right": "He is afraid of speaking.",
+"why": "-ing."
+},
+{
+"wrong": "She is good in reading.",
+"right": "She is good at reading.",
+"why": "at."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com keen: “I like using apps a lot.”",
+"answer": "I am keen on using apps.",
+"why": ""
+},
+{
+"prompt": "Reescreva com good: “She reads very well.”",
+"answer": "She is good at reading.",
+"why": ""
+},
+{
+"prompt": "Reescreva com afraid: “He fears driving.”",
+"answer": "He is afraid of driving.",
+"why": ""
+}
+]
+}

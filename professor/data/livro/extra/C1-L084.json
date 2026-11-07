@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "resumo / paráfrase",
+"wrong": "A study finds that apps improve communication, as the study says.",
+"right": "A study finds that apps improve communication.",
+"why": "O brasileiro repete e copia trechos do texto. Resuma em uma frase com os fatos principais, com palavras próprias."
+},
+"mcq": [
+{
+"q": "A summary sentence has…",
+"opts": [
+"an opinion",
+"main facts",
+"every detail"
+],
+"ans": 1,
+"why": "Fatos."
+},
+{
+"q": "A study ___ that apps help.",
+"opts": [
+"find",
+"founded",
+"finds"
+],
+"ans": 2,
+"why": "finds."
+},
+{
+"q": "Paraphrase means…",
+"opts": [
+"same meaning, new words",
+"copy",
+"opposite"
+],
+"ans": 0,
+"why": "Paráfrase."
+},
+{
+"q": "Which is better?",
+"opts": [
+"Study finds apps helps.",
+"A study finds apps help.",
+"A study found app help."
+],
+"ans": 1,
+"why": "Correta."
+}
+],
+"fix": [
+{
+"wrong": "A study find that apps help.",
+"right": "A study finds that apps help.",
+"why": "-s."
+},
+{
+"wrong": "A study founds that apps help.",
+"right": "A study finds that apps help.",
+"why": "find."
+},
+{
+"wrong": "Study finds that apps help.",
+"right": "A study finds that apps help.",
+"why": "Artigo."
+}
+],
+"rewrite": [
+{
+"prompt": "Resuma: “Apps improve communication.” (A study finds…)",
+"answer": "A study finds that apps improve communication.",
+"why": ""
+},
+{
+"prompt": "Passado: “A study finds that apps help.”",
+"answer": "A study found that apps helped.",
+"why": ""
+},
+{
+"prompt": "Com artigo: “Study shows that apps help.”",
+"answer": "A study shows that apps help.",
+"why": ""
+}
+]
+}

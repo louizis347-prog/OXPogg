@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "vogal curta × longa",
+"wrong": "We saw a sheep in the harbor. (barco)",
+"right": "We saw a ship in the harbor.",
+"why": "O português não distingue vogal curta e longa, então ship (/ɪ/) e sheep (/iː/) parecem iguais e a grafia sai trocada."
+},
+"mcq": [
+{
+"q": "Which word has the long /iː/?",
+"opts": [
+"ship",
+"sit",
+"sheep"
+],
+"ans": 2,
+"why": "Sheep."
+},
+{
+"q": "Which is a boat?",
+"opts": [
+"ship",
+"sheep",
+"seat"
+],
+"ans": 0,
+"why": "Ship."
+},
+{
+"q": "The vowel in “live” (verbo) is…",
+"opts": [
+"long /iː/",
+"short /ɪ/",
+"/aɪ/"
+],
+"ans": 1,
+"why": "Live /lɪv/."
+},
+{
+"q": "Which word has short /ɪ/?",
+"opts": [
+"beat",
+"seat",
+"bit"
+],
+"ans": 2,
+"why": "Bit."
+}
+],
+"fix": [
+{
+"wrong": "We saw a ship in the field. (ovelha)",
+"right": "We saw a sheep in the field.",
+"why": "Sheep = ovelha."
+},
+{
+"wrong": "Please seat down.",
+"right": "Please sit down.",
+"why": "Sit tem /ɪ/ curto."
+},
+{
+"wrong": "The sheep is in the port. (barco)",
+"right": "The ship is in the port.",
+"why": "Ship = barco."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque pela palavra que significa barco: “The sheep is big.”",
+"answer": "The ship is big.",
+"why": ""
+},
+{
+"prompt": "Troque pela palavra que significa ovelha: “The ship is white.”",
+"answer": "The sheep is white.",
+"why": ""
+},
+{
+"prompt": "Coloque no plural com two: “one sheep”",
+"answer": "two sheep",
+"why": "Sheep tem plural igual."
+}
+]
+}

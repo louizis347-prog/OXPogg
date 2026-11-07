@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva (presente, perfeito, modal)",
+"wrong": "AI use in classrooms. Results have improved by the team. Privacy must protect.",
+"right": "AI is used in classrooms. Results have been improved by the team. Privacy must be protected.",
+"why": "Em português “usa-se IA nas escolas” é impessoal. O brasileiro esquece o be em perfeito e modal. Em inglês: has/have been + pp; modal + be + pp."
+},
+"mcq": [
+{
+"q": "AI ___ in classrooms.",
+"opts": [
+"uses",
+"use",
+"is used"
+],
+"ans": 2,
+"why": "is used."
+},
+{
+"q": "Results ___ improved.",
+"opts": [
+"have",
+"have been",
+"are been"
+],
+"ans": 1,
+"why": "have been."
+},
+{
+"q": "Privacy must ___ protected.",
+"opts": [
+"been",
+"be",
+"being"
+],
+"ans": 1,
+"why": "modal + be."
+},
+{
+"q": "Passive + modal order:",
+"opts": [
+"must done",
+"must be do",
+"must be done"
+],
+"ans": 2,
+"why": "must be + pp."
+}
+],
+"fix": [
+{
+"wrong": "Data must protect.",
+"right": "Data must be protected.",
+"why": "be + pp."
+},
+{
+"wrong": "The test has done.",
+"right": "The test has been done.",
+"why": "been."
+},
+{
+"wrong": "Tools are use daily.",
+"right": "Tools are used daily.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “We must protect privacy.”",
+"answer": "Privacy must be protected.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Teachers have improved results.”",
+"answer": "Results have been improved.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Students use AI.”",
+"answer": "AI is used by students.",
+"why": ""
+}
+]
+}

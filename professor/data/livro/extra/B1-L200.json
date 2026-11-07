@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + gerúndio",
+"wrong": "Feeling stressed? Try breath deeply.",
+"right": "Try breathing deeply.",
+"why": "Português mistura substantivo e verbo (“a respiração”). Em inglês breath é substantivo e breathe é verbo; depois de try (experimentar) vem -ing."
+},
+"mcq": [
+{
+"q": "Verb:",
+"opts": [
+"breath",
+"breathing",
+"breathe"
+],
+"ans": 2,
+"why": "Verbo."
+},
+{
+"q": "Noun:",
+"opts": [
+"to breathe",
+"breath",
+"breathe"
+],
+"ans": 1,
+"why": "Substantivo."
+},
+{
+"q": "Try **___** your arms.",
+"opts": [
+"stretching",
+"stretch",
+"to stretching"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "Talking to a friend:",
+"opts": [
+"talk",
+"talking",
+"to talk"
+],
+"ans": 1,
+"why": "-ing como atividade."
+}
+],
+"fix": [
+{
+"wrong": "Take a deep breathe.",
+"right": "Take a deep breath.",
+"why": "Substantivo."
+},
+{
+"wrong": "I like breath slowly.",
+"right": "I like breathing slowly.",
+"why": "-ing."
+},
+{
+"wrong": "He talk to friends helps.",
+"right": "Talking to friends helps.",
+"why": "-ing como sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com -ing: “Try … (stretch) your arms.”",
+"answer": "Try stretching your arms.",
+"why": ""
+},
+{
+"prompt": "Imperativo: “You breathe slowly.”",
+"answer": "Breathe slowly.",
+"why": ""
+},
+{
+"prompt": "Transforme: “She talks to friends.” (She likes…)",
+"answer": "She likes talking to friends.",
+"why": ""
+}
+]
+}

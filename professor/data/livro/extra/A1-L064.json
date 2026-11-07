@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "r americano",
+"wrong": "I eat hice for lunch.",
+"right": "I eat rice for lunch.",
+"why": "Em português o r inicial soa como /h/ (\"rato\") e o r final é fraco; o brasileiro não faz o r retroflexo do inglês e ouve car/ca, red/hed como iguais."
+},
+"mcq": [
+{
+"q": "The American /r/ is made with…",
+"opts": [
+"tongue tapping the teeth",
+"a throat sound like /h/",
+"tongue pulled back, no tap"
+],
+"ans": 2,
+"why": "R retroflexo."
+},
+{
+"q": "Which word starts with /r/?",
+"opts": [
+"red",
+"hand",
+"yes"
+],
+"ans": 0,
+"why": "Red."
+},
+{
+"q": "“Car” ends with…",
+"opts": [
+"a silent r",
+"/r/ pronounced",
+"an h sound"
+],
+"ans": 1,
+"why": "Americano pronuncia o r final."
+},
+{
+"q": "Which is the right spelling for “rato”?",
+"opts": [
+"hat",
+"rut",
+"rat"
+],
+"ans": 2,
+"why": "Rat."
+}
+],
+"fix": [
+{
+"wrong": "I eat hice.",
+"right": "I eat rice.",
+"why": "Rice /raɪs/."
+},
+{
+"wrong": "Is the colour hed?",
+"right": "Is the color red?",
+"why": "Red."
+},
+{
+"wrong": "The ca is big.",
+"right": "The car is big.",
+"why": "Car com r final."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija: “I want hice.”",
+"answer": "I want rice.",
+"why": ""
+},
+{
+"prompt": "Corrija: “It is a hed car.”",
+"answer": "It is a red car.",
+"why": ""
+},
+{
+"prompt": "Corrija: “My ca is new.”",
+"answer": "My car is new.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + -ing",
+"wrong": "I enjoy to cook.",
+"right": "I enjoy cooking.",
+"why": "Em português 'gosto de cozinhar' usa infinitivo; em inglês enjoy, finish, mind pedem -ing."
+},
+"mcq": [
+{
+"q": "She finished ___ .",
+"opts": [
+"reading",
+"read",
+"to read"
+],
+"ans": 0,
+"why": "finish + -ing."
+},
+{
+"q": "I enjoy ___ .",
+"opts": [
+"to dance",
+"dancing",
+"dance"
+],
+"ans": 1,
+"why": "enjoy."
+},
+{
+"q": "He avoids ___ late.",
+"opts": [
+"staying",
+"to stay",
+"stay"
+],
+"ans": 0,
+"why": "avoid."
+},
+{
+"q": "I don't mind ___ .",
+"opts": [
+"wait",
+"waiting",
+"to wait"
+],
+"ans": 1,
+"why": "mind."
+}
+],
+"fix": [
+{
+"wrong": "I enjoy to swim.",
+"right": "I enjoy swimming.",
+"why": "-ing."
+},
+{
+"wrong": "She finished to eat.",
+"right": "She finished eating.",
+"why": "-ing."
+},
+{
+"wrong": "We avoid to go.",
+"right": "We avoid going.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I enjoy. I read.”",
+"answer": "I enjoy reading.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She finished. She works.”",
+"answer": "She finished working.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He avoids. He drives.”",
+"answer": "He avoids driving.",
+"why": ""
+}
+]
+}

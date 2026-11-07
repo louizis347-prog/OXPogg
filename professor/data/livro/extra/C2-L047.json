@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "that × what",
+"wrong": "It was the weather what delayed the launch.",
+"right": "It was the weather that delayed the launch.",
+"why": "Em português “foi o clima que atrasou” usa que, e o aluno às vezes escolhe what. Em inglês, it-cleft usa that (ou who); what abre o wh-cleft."
+},
+"mcq": [
+{
+"q": "An **it-cleft** has the form...",
+"opts": [
+"What X is…",
+"The reason why…",
+"It was X that…"
+],
+"ans": 2,
+"why": "it-cleft."
+},
+{
+"q": "A **wh-cleft**:",
+"opts": [
+"What worried us was the wind.",
+"It was wind worried us.",
+"Wind what worried."
+],
+"ans": 0,
+"why": "What… was."
+},
+{
+"q": "A **reason cleft**:",
+"opts": [
+"Because weather.",
+"The reason (why) it slipped is the weather.",
+"Weather reason."
+],
+"ans": 1,
+"why": "Reason cleft."
+},
+{
+"q": "Which cleft focuses on the **launch**?",
+"opts": [
+"What failed the launch.",
+"Launch failed was.",
+"It was the launch that failed."
+],
+"ans": 2,
+"why": "it-cleft."
+}
+],
+"fix": [
+{
+"wrong": "What worried us were the wind.",
+"right": "What worried us was the wind.",
+"why": "was."
+},
+{
+"wrong": "It was the lunar probe who was delayed.",
+"right": "It was the lunar probe that was delayed.",
+"why": "that para coisa."
+},
+{
+"wrong": "The reason is because of the weather.",
+"right": "The reason is the weather.",
+"why": "reason is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva em it-cleft: “The weather delayed the launch.”",
+"answer": "It was the weather that delayed the launch.",
+"why": ""
+},
+{
+"prompt": "Reescreva em wh-cleft: “The wind worried us.”",
+"answer": "What worried us was the wind.",
+"why": ""
+},
+{
+"prompt": "Reescreva em reason cleft: “The launch was postponed because of the weather constraint.” (The reason…)",
+"answer": "The reason the launch was postponed is the weather constraint.",
+"why": ""
+}
+]
+}

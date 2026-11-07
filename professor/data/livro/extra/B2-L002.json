@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "It prevents me to sleep.",
+"right": "It prevents me from sleeping.",
+"why": "Em português “impede-me de dormir” e o brasileiro usa to. Em inglês: prevent/stop/keep + obj + from + -ing."
+},
+"mcq": [
+{
+"q": "Noise stops me **___** sleeping.",
+"opts": [
+"of",
+"to",
+"from"
+],
+"ans": 2,
+"why": "From."
+},
+{
+"q": "Laws prevent firms **___** polluting.",
+"opts": [
+"to",
+"from",
+"on"
+],
+"ans": 1,
+"why": "From."
+},
+{
+"q": "Keep me from:",
+"opts": [
+"worry",
+"to worry",
+"worrying"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"It keeps me to study.",
+"It keeps me of studying.",
+"It keeps me from studying."
+],
+"ans": 2,
+"why": "From."
+}
+],
+"fix": [
+{
+"wrong": "The rain stopped us to go.",
+"right": "The rain stopped us from going.",
+"why": "From + -ing."
+},
+{
+"wrong": "It prevents us from to work.",
+"right": "It prevents us from working.",
+"why": "-ing."
+},
+{
+"wrong": "She stopped me for leaving.",
+"right": "She stopped me from leaving.",
+"why": "From."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Noise prevents me. I sleep.” (from)",
+"answer": "Noise prevents me from sleeping.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Rain stopped us. We played.” (from)",
+"answer": "Rain stopped us from playing.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It stops me from sleeping.”",
+"answer": "It doesn’t stop me from sleeping.",
+"why": ""
+}
+]
+}

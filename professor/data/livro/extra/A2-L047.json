@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "compromisso marcado",
+"wrong": "I see the dentist on Monday.",
+"right": "I'm seeing the dentist on Monday.",
+"why": "Em português 'vejo o dentista na segunda' funciona; em inglês, combinação já marcada pede Present Continuous."
+},
+"mcq": [
+{
+"q": "I'm ___ my parents this weekend.",
+"opts": [
+"will visiting",
+"visiting",
+"visit"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "What ___ you doing tonight?",
+"opts": [
+"do",
+"are",
+"will"
+],
+"ans": 1,
+"why": "be."
+},
+{
+"q": "We ___ at 8 for dinner.",
+"opts": [
+"are meeting",
+"meeting",
+"meets"
+],
+"ans": 0,
+"why": "be + -ing."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"She leaving at six.",
+"She's leaving at six.",
+"She leave at six."
+],
+"ans": 1,
+"why": "be + -ing."
+}
+],
+"fix": [
+{
+"wrong": "What you doing tonight?",
+"right": "What are you doing tonight?",
+"why": "be."
+},
+{
+"wrong": "He are coming.",
+"right": "He is coming.",
+"why": "is."
+},
+{
+"wrong": "I'm meeting not him.",
+"right": "I'm not meeting him.",
+"why": "not."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro marcado: “She comes on Friday.”",
+"answer": "She is coming on Friday.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “They are traveling.” com where",
+"answer": "Where are they traveling?",
+"why": ""
+},
+{
+"prompt": "Negativa: “I am working.”",
+"answer": "I'm not working.",
+"why": ""
+}
+]
+}

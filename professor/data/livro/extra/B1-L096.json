@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can’t be × can’t have been",
+"wrong": "It can’t have been true now, but it can’t be Leo yesterday.",
+"right": "It can’t be true now, but it can’t have been Leo yesterday.",
+"why": "O português usa “não pode ser” para ambos. Em inglês, presente = can’t be; passado = can’t have been."
+},
+"mcq": [
+{
+"q": "Now: It ___ true.",
+"opts": [
+"can’t be",
+"can’t have been",
+"can’t been"
+],
+"ans": 0,
+"why": "Presente."
+},
+{
+"q": "Yesterday: It ___ Leo.",
+"opts": [
+"can’t be",
+"can’t was",
+"can’t have been"
+],
+"ans": 2,
+"why": "Passado."
+},
+{
+"q": "She ___ have forgotten (impossível).",
+"opts": [
+"can’t",
+"can’t to",
+"cannots"
+],
+"ans": 0,
+"why": "can’t."
+},
+{
+"q": "He is here now. He ___ be sick.",
+"opts": [
+"can’t have",
+"can’t",
+"couldn't have"
+],
+"ans": 1,
+"why": "Presente."
+}
+],
+"fix": [
+{
+"wrong": "It can’t be Leo yesterday.",
+"right": "It can’t have been Leo yesterday.",
+"why": "Passado."
+},
+{
+"wrong": "It can’t have been true now.",
+"right": "It can’t be true now.",
+"why": "Presente."
+},
+{
+"wrong": "She can’t has been there.",
+"right": "She can’t have been there.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “It can’t be Leo.”",
+"answer": "It can’t have been Leo.",
+"why": ""
+},
+{
+"prompt": "Passe para o presente: “It can’t have been the battery.”",
+"answer": "It can’t be the battery.",
+"why": ""
+},
+{
+"prompt": "Reescreva com can’t: “It is impossible that she was angry.”",
+"answer": "She can’t have been angry.",
+"why": ""
+}
+]
+}

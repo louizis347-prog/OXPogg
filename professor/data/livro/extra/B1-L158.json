@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "who/which/whose",
+"wrong": "People whose their time is limited. Groups who meet weekly. The man that his car was stolen.",
+"right": "People whose time is limited. Groups that meet weekly. The man whose car was stolen.",
+"why": "Em português “cujo” é raro e a fala o troca por “que o… dele”. O brasileiro põe the/his depois de whose. Em inglês, whose já indica posse e substitui o possessivo."
+},
+"mcq": [
+{
+"q": "People ___ time is limited…",
+"opts": [
+"whose",
+"who",
+"which"
+],
+"ans": 0,
+"why": "whose."
+},
+{
+"q": "Groups ___ meet weekly.",
+"opts": [
+"whose",
+"where",
+"that"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "The man ___ car was stolen.",
+"opts": [
+"who his",
+"whose",
+"which"
+],
+"ans": 1,
+"why": "whose."
+},
+{
+"q": "A person who…",
+"opts": [
+"pessoa",
+"posse",
+"lugar"
+],
+"ans": 0,
+"why": "pessoa."
+}
+],
+"fix": [
+{
+"wrong": "The woman whose her son is a pilot.",
+"right": "The woman whose son is a pilot.",
+"why": "Sem possessivo."
+},
+{
+"wrong": "Groups who meet.",
+"right": "Groups that meet.",
+"why": "Coisa/grupo: that."
+},
+{
+"wrong": "The man who his bike broke.",
+"right": "The man whose bike broke.",
+"why": "whose."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com whose: “I know a man. His car is red.”",
+"answer": "I know a man whose car is red.",
+"why": ""
+},
+{
+"prompt": "Una com who: “She is a nurse. She helps kids.”",
+"answer": "She is a nurse who helps kids.",
+"why": ""
+},
+{
+"prompt": "Una com that: “These are groups. They meet monthly.”",
+"answer": "These are groups that meet monthly.",
+"why": ""
+}
+]
+}

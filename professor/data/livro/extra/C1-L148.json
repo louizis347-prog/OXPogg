@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "responder por",
+"wrong": "Executives must respond for the decision.",
+"right": "Executives must account for the decision.",
+"why": "“Responder por” leva o aluno a respond for. Em inglês, ser responsável perante alguém é account for (ou answer for); respond é “reagir”."
+},
+"mcq": [
+{
+"q": "“The fall in morale was hard to ___.”",
+"opts": [
+"account on",
+"account for",
+"account of"
+],
+"ans": 1,
+"why": "account for + algo."
+},
+{
+"q": "Which means **represent a share**?",
+"opts": [
+"Two departments respond most losses.",
+"Two departments explain on most losses.",
+"Two departments account for most losses."
+],
+"ans": 2,
+"why": "account for = representar."
+},
+{
+"q": "Which passive keeps the preposition?",
+"opts": [
+"Losses cannot be accounted for.",
+"Losses cannot be accounted.",
+"Losses cannot account for."
+],
+"ans": 0,
+"why": "A preposição permanece."
+},
+{
+"q": "“Executives must account for the decision” means they must...",
+"opts": [
+"cancel it",
+"justify it",
+"forget it"
+],
+"ans": 1,
+"why": "Responder/prestar contas."
+}
+],
+"fix": [
+{
+"wrong": "Sales account the half of our income.",
+"right": "Sales account for half of our income.",
+"why": "account for."
+},
+{
+"wrong": "The board chairman cannot account of the delay.",
+"right": "The board chairman cannot account for the delay.",
+"why": "account for."
+},
+{
+"wrong": "The closure was accounted.",
+"right": "The closure was accounted for.",
+"why": "Passiva mantém for."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na passiva: “Nobody can account for the loss.”",
+"answer": "The loss cannot be accounted for.",
+"why": "Resposta fixa com cannot."
+},
+{
+"prompt": "Reescreva com account for: “Two departments make up most of the cost.”",
+"answer": "Two departments account for most of the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com account for: “How do you explain the fall in morale?”",
+"answer": "How do you account for the fall in morale?",
+"why": ""
+}
+]
+}

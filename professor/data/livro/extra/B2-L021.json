@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "We are testing it since May.",
+"right": "We have been testing it since May.",
+"why": "Português “testamos desde maio”. Inglês: present perfect continuous com since; futuro: will be launching."
+},
+"mcq": [
+{
+"q": "We **___** launching next month.",
+"opts": [
+"are will",
+"will be",
+"will"
+],
+"ans": 1,
+"why": "Will be."
+},
+{
+"q": "We **___** testing since May.",
+"opts": [
+"were",
+"are",
+"have been"
+],
+"ans": 2,
+"why": "PPC."
+},
+{
+"q": "Next week we **___** testing.",
+"opts": [
+"will be",
+"have",
+"will"
+],
+"ans": 0,
+"why": "Will be."
+},
+{
+"q": "Qual indica processo até agora?",
+"opts": [
+"tested",
+"have been testing",
+"will be testing"
+],
+"ans": 1,
+"why": "PPC."
+}
+],
+"fix": [
+{
+"wrong": "We will launching in June.",
+"right": "We will be launching in June.",
+"why": "Be."
+},
+{
+"wrong": "We are testing since May.",
+"right": "We have been testing since May.",
+"why": "PPC."
+},
+{
+"wrong": "They have been launch.",
+"right": "They have been launching.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “We test since May.” (have been)",
+"answer": "We have been testing since May.",
+"why": ""
+},
+{
+"prompt": "Futuro: “We launch next month.” (will be)",
+"answer": "We will be launching next month.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We will be launching.”",
+"answer": "We won’t be launching.",
+"why": ""
+}
+]
+}

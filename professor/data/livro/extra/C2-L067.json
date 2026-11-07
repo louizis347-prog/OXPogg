@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo com cliché",
+"wrong": "The speaker made a cliché.",
+"right": "The speaker used a cliché.",
+"why": "Em português “fazer um clichê” é natural; em inglês o clichê é usado (use) ou repetido, não made."
+},
+"mcq": [
+{
+"q": "Cliché hides…",
+"opts": [
+"data",
+"emptiness",
+"evidence"
+],
+"ans": 1,
+"why": "Vazio."
+},
+{
+"q": "“insert applause” is…",
+"opts": [
+"stage direction",
+"a quote",
+"a joke"
+],
+"ans": 0,
+"why": "Direção cênica."
+},
+{
+"q": "Which is a cliché?",
+"opts": [
+"observe the table",
+"turn the page",
+"audit the ledger"
+],
+"ans": 1,
+"why": "Cliché."
+},
+{
+"q": "Stage direction uses…",
+"opts": [
+"brackets",
+"hashtags",
+"quotes"
+],
+"ans": 0,
+"why": "Colchetes."
+}
+],
+"fix": [
+{
+"wrong": "Let us moving forward.",
+"right": "Let us move forward.",
+"why": "Let us + base."
+},
+{
+"wrong": "The speaker turn the page.",
+"right": "The speaker turned the page.",
+"why": "Passado."
+},
+{
+"wrong": "[Insert applause] he said.",
+"right": "[Insert applause.]",
+"why": "Direção cênica isolada."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “They move forward.”",
+"answer": "They moved forward.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Everyone uses the cliché.”",
+"answer": "The cliché is used by everyone.",
+"why": ""
+},
+{
+"prompt": "Imperativo: “We turn the page.”",
+"answer": "Turn the page.",
+"why": ""
+}
+]
+}

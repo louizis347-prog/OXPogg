@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal come",
+"wrong": "I came across with an old photo.",
+"right": "I came across an old photo.",
+"why": "Em português “deparei-me com” leva com. Em inglês, come across é transitivo direto: sem with."
+},
+"mcq": [
+{
+"q": "I ___ an old photo. (found by chance)",
+"opts": [
+"came by with",
+"came across",
+"came up"
+],
+"ans": 1,
+"why": "come across."
+},
+{
+"q": "She ___ a new idea.",
+"opts": [
+"came across",
+"came out",
+"came up with"
+],
+"ans": 2,
+"why": "come up with."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She came up with a plan.",
+"She came up a plan.",
+"She came with up a plan."
+],
+"ans": 0,
+"why": "come up with."
+},
+{
+"q": "Come across with is…",
+"opts": [
+"formal",
+"incorrect",
+"correct"
+],
+"ans": 1,
+"why": "Sem with."
+}
+],
+"fix": [
+{
+"wrong": "I came across with a photo.",
+"right": "I came across a photo.",
+"why": "Sem with."
+},
+{
+"wrong": "She came up a plan.",
+"right": "She came up with a plan.",
+"why": "with."
+},
+{
+"wrong": "He came up of an idea.",
+"right": "He came up with an idea.",
+"why": "with."
+}
+],
+"rewrite": [
+{
+"prompt": "Use come across: “I found an old photo by chance.”",
+"answer": "I came across an old photo.",
+"why": ""
+},
+{
+"prompt": "Use come up with: “She proposed an idea.”",
+"answer": "She came up with an idea.",
+"why": ""
+},
+{
+"prompt": "Passado: “She comes up with plans.”",
+"answer": "She came up with plans.",
+"why": ""
+}
+]
+}

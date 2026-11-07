@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo errado",
+"wrong": "We did lunch and made a meeting at noon.",
+"right": "We had lunch and held a meeting at noon.",
+"why": "Português “fazer o almoço/uma reunião”; em inglês have lunch, have a meeting."
+},
+"mcq": [
+{
+"q": "Eat a meal:",
+"opts": [
+"have lunch",
+"do lunch",
+"make lunch"
+],
+"ans": 0,
+"why": "have."
+},
+{
+"q": "Obligation:",
+"opts": [
+"Residents have register.",
+"Residents have to register.",
+"Residents has to."
+],
+"ans": 1,
+"why": "have to."
+},
+{
+"q": "Take a bath:",
+"opts": [
+"make a bath",
+"do a bath",
+"have a bath"
+],
+"ans": 2,
+"why": "have."
+},
+{
+"q": "Hold a meeting:",
+"opts": [
+"have a meeting",
+"make a meeting",
+"do a meeting"
+],
+"ans": 0,
+"why": "have."
+}
+],
+"fix": [
+{
+"wrong": "We made a meeting.",
+"right": "We had a meeting.",
+"why": "have."
+},
+{
+"wrong": "Residents have register.",
+"right": "Residents have to register.",
+"why": "to."
+},
+{
+"wrong": "She do a bath.",
+"right": "She had a bath.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “We have lunch.”",
+"answer": "We had lunch.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We have a meeting.”",
+"answer": "We don’t have a meeting.",
+"why": ""
+},
+{
+"prompt": "Obrigação: “Residents must register.”",
+"answer": "Residents have to register.",
+"why": ""
+}
+]
+}

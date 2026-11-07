@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "Deontology stresses duties, meanwhile consequentialism stresses outcomes.",
+"right": "Deontology stresses duties, whereas consequentialism stresses outcomes.",
+"why": "Em português “enquanto isso/ao passo que” vira meanwhile por tradução literal; para contraste de ideias use whereas ou while."
+},
+"mcq": [
+{
+"q": "Contrast, formal:",
+"opts": [
+"whereas",
+"whenever",
+"wherever"
+],
+"ans": 0,
+"why": "whereas."
+},
+{
+"q": "Whatever means…",
+"opts": [
+"quando",
+"onde quer",
+"qualquer que seja"
+],
+"ans": 2,
+"why": "Qualquer que seja."
+},
+{
+"q": "While can also mean…",
+"opts": [
+"at the same time",
+"if",
+"because"
+],
+"ans": 0,
+"why": "Tempo."
+},
+{
+"q": "Whichever takes…",
+"opts": [
+"a choice",
+"a place",
+"a time"
+],
+"ans": 0,
+"why": "Escolha."
+}
+],
+"fix": [
+{
+"wrong": "Duty matter whereas outcomes does not.",
+"right": "Duty matters whereas outcomes do not.",
+"why": "Concordância."
+},
+{
+"wrong": "Whatever you choose is fine, whereas.",
+"right": "Whatever you choose is fine.",
+"why": "Sem whereas."
+},
+{
+"wrong": "Whereas he stresses duties, she stress outcomes.",
+"right": "Whereas he stresses duties, she stresses outcomes.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com whereas: “Kant stresses duties. Mill stresses outcomes.”",
+"answer": "Kant stresses duties, whereas Mill stresses outcomes.",
+"why": ""
+},
+{
+"prompt": "Reescreva com whatever: “Any choice is fine.”",
+"answer": "Whatever you choose is fine.",
+"why": ""
+},
+{
+"prompt": "Passado: “Kant stresses duties.”",
+"answer": "Kant stressed duties.",
+"why": ""
+}
+]
+}

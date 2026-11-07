@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural de this",
+"wrong": "This are my friends.",
+"right": "These are my friends.",
+"why": "This é singular; o plural é these."
+},
+"mcq": [
+{
+"q": "Plural near: ___ are my books.",
+"opts": [
+"This",
+"These",
+"Those"
+],
+"ans": 1,
+"why": "Plural perto: these."
+},
+{
+"q": "Plural far: ___ are birds.",
+"opts": [
+"That",
+"These",
+"Those"
+],
+"ans": 2,
+"why": "Plural longe: those."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"This is a car.",
+"This are a car.",
+"These is a car."
+],
+"ans": 0,
+"why": "Singular: this is."
+},
+{
+"q": "Phone call: “___ is Ana.”",
+"opts": [
+"That",
+"This",
+"These"
+],
+"ans": 1,
+"why": "Ao telefone, \"this is\"."
+}
+],
+"fix": [
+{
+"wrong": "That is my shoes.",
+"right": "Those are my shoes.",
+"why": "Shoes é plural."
+},
+{
+"wrong": "These is my dog.",
+"right": "This is my dog.",
+"why": "Singular."
+},
+{
+"wrong": "Those is a bird.",
+"right": "That is a bird.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Mude para plural: “That is a car.”",
+"answer": "Those are cars.",
+"why": ""
+},
+{
+"prompt": "Mude para singular: “These are books.”",
+"answer": "This is a book.",
+"why": ""
+},
+{
+"prompt": "Mude para singular: “Those are birds.”",
+"answer": "That is a bird.",
+"why": ""
+}
+]
+}

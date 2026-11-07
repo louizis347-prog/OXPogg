@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo",
+"wrong": "Make difference!",
+"right": "Make a difference!",
+"why": "Em português “fazer diferença” dispensa artigo; em inglês a expressão exige a: make a difference."
+},
+"mcq": [
+{
+"q": "Make **___**!",
+"opts": [
+"difference",
+"a difference",
+"the differences"
+],
+"ans": 1,
+"why": "Artigo."
+},
+{
+"q": "It **___** running since 1998.",
+"opts": [
+"has been",
+"is",
+"was"
+],
+"ans": 0,
+"why": "PPC."
+},
+{
+"q": "Gancho de campanha:",
+"opts": [
+"To make difference!",
+"Making difference!",
+"Make a difference!"
+],
+"ans": 2,
+"why": "Frase."
+},
+{
+"q": "Since 1998:",
+"opts": [
+"desde 1998",
+"por 1998",
+"em 1998"
+],
+"ans": 0,
+"why": "Desde."
+}
+],
+"fix": [
+{
+"wrong": "They are running since 1998.",
+"right": "They have been running since 1998.",
+"why": "Since."
+},
+{
+"wrong": "We want make a difference.",
+"right": "We want to make a difference.",
+"why": "To."
+},
+{
+"wrong": "It makes difference.",
+"right": "It makes a difference.",
+"why": "Artigo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “It runs since 1998.” (has been)",
+"answer": "It has been running since 1998.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It makes a difference.”",
+"answer": "It doesn’t make a difference.",
+"why": ""
+},
+{
+"prompt": "Passado: “We make a difference.”",
+"answer": "We made a difference.",
+"why": ""
+}
+]
+}

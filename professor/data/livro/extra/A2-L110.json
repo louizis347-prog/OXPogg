@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Present Perfect",
+"wrong": "I have visited Rome in 2019.",
+"right": "I visited Rome in 2019.",
+"why": "Em português 'tenho visto' não é equivalente a 'vi'; em inglês, com tempo passado definido (yesterday) usa-se Past Simple, não Present Perfect."
+},
+"mcq": [
+{
+"q": "I ___ never been to Rome.",
+"opts": [
+"have",
+"did",
+"was"
+],
+"ans": 0,
+"why": "have."
+},
+{
+"q": "She has ___ her homework.",
+"opts": [
+"finish",
+"finishing",
+"finished"
+],
+"ans": 2,
+"why": "particípio."
+},
+{
+"q": "Particípio de eat:",
+"opts": [
+"eated",
+"ate",
+"eaten"
+],
+"ans": 2,
+"why": "eaten."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I live here since years.",
+"I am living here since years.",
+"I have lived here for years."
+],
+"ans": 2,
+"why": "have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "I have went there.",
+"right": "I have gone there.",
+"why": "particípio."
+},
+{
+"wrong": "She have finished.",
+"right": "She has finished.",
+"why": "has."
+},
+{
+"wrong": "I have saw it.",
+"right": "I have seen it.",
+"why": "particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect: “I eat sushi.” (já)",
+"answer": "I have eaten sushi.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She has seen it.” (never)",
+"answer": "She has never seen it.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You have been there.” (ever)",
+"answer": "Have you ever been there?",
+"why": ""
+}
+]
+}

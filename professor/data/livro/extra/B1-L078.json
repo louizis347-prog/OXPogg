@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conselho e suporte",
+"wrong": "The printer is broken. If I would be you, I call IT. Did you try turn it off?",
+"right": "The printer is broken. If I were you, I would call IT. Have you tried turning it off?",
+"why": "Em português “se eu fosse você, ligaria” usa condicional. Em inglês: If I were you, I would. E try + -ing para testar, try to para tentar."
+},
+"mcq": [
+{
+"q": "If I ___ you, I would call IT.",
+"opts": [
+"were",
+"would be",
+"am"
+],
+"ans": 0,
+"why": "were."
+},
+{
+"q": "Have you tried ___ it off?",
+"opts": [
+"turning",
+"to turn",
+"turn"
+],
+"ans": 0,
+"why": "try + -ing."
+},
+{
+"q": "The printer ___ broken.",
+"opts": [
+"does",
+"has",
+"is"
+],
+"ans": 2,
+"why": "be."
+},
+{
+"q": "To suggest politely:",
+"opts": [
+"You call IT.",
+"Call it you.",
+"Why don’t you call IT?"
+],
+"ans": 2,
+"why": "Why don’t you."
+}
+],
+"fix": [
+{
+"wrong": "If I was you, I would call.",
+"right": "If I were you, I would call.",
+"why": "were."
+},
+{
+"wrong": "Did you tried to turn it off?",
+"right": "Did you try turning it off?",
+"why": "did + base."
+},
+{
+"wrong": "The printer is broke.",
+"right": "The printer is broken.",
+"why": "broken."
+}
+],
+"rewrite": [
+{
+"prompt": "Dê conselho: “Call IT.” (If I were you)",
+"answer": "If I were you, I would call IT.",
+"why": ""
+},
+{
+"prompt": "Pergunte (Present Perfect): “You try turning it off.”",
+"answer": "Have you tried turning it off?",
+"why": ""
+},
+{
+"prompt": "Reescreva no estado atual: “Someone broke the printer.” (The printer ...)",
+"answer": "The printer is broken.",
+"why": ""
+}
+]
+}

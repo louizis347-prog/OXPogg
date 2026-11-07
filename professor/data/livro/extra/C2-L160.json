@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "It is high time we stop the delays.",
+"right": "It is high time we stopped the delays.",
+"why": "Português usa subjuntivo (“já é hora de pararmos”); em inglês o verbo vai no passado, sem valor de passado."
+},
+"mcq": [
+{
+"q": "Urgency:",
+"opts": [
+"It is high time we stop.",
+"It is high time we stopped.",
+"It is high time we will stop."
+],
+"ans": 1,
+"why": "Passado fictício."
+},
+{
+"q": "Moral obligation, strong:",
+"opts": [
+"Society ought act.",
+"Society ought to act.",
+"Society oughts to act."
+],
+"ans": 1,
+"why": "ought to."
+},
+{
+"q": "“High time we left” refers to…",
+"opts": [
+"last year",
+"now",
+"never"
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "After high time, use…",
+"opts": [
+"past simple",
+"will",
+"base"
+],
+"ans": 0,
+"why": "Passado simples."
+}
+],
+"fix": [
+{
+"wrong": "It is high time we leave.",
+"right": "It is high time we left.",
+"why": "Passado."
+},
+{
+"wrong": "It is high time to we stop.",
+"right": "It is high time we stopped.",
+"why": "Estrutura."
+},
+{
+"wrong": "We must to act now.",
+"right": "We must act now.",
+"why": "Modal sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “We must stop the delays now.” (high time)",
+"answer": "It is high time we stopped the delays.",
+"why": ""
+},
+{
+"prompt": "Reescreva com ought to: “Society must act.”",
+"answer": "Society ought to act.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It is high time we left.”",
+"answer": "It is not high time we left.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "deve ter + particípio",
+"wrong": "She must to have forgotten the meeting.",
+"right": "She must have forgotten the meeting.",
+"why": "Em português, \"deve ter esquecido\" tem a preposição-ligação implícita; o aluno copia com to. Em inglês é must have + particípio."
+},
+"mcq": [
+{
+"q": "A dedução negativa de \"She was there\" é...",
+"opts": [
+"She mustn't have been there.",
+"She can't have been there.",
+"She hasn't must be there."
+],
+"ans": 1,
+"why": "Dedução negativa = can't have + particípio."
+},
+{
+"q": "Qual frase mostra oportunidade perdida?",
+"opts": [
+"We could go by train.",
+"We go by train.",
+"We could have gone by train."
+],
+"ans": 2,
+"why": "could have + particípio = poderíamos ter ido (mas não fomos)."
+},
+{
+"q": "\"unlikely\" significa...",
+"opts": [
+"pouco provável",
+"muito provável",
+"obrigatório"
+],
+"ans": 0,
+"why": "un- = negativo."
+},
+{
+"q": "Complete: **The fact ___** prices rose worried everyone.",
+"opts": [
+"of",
+"to",
+"that"
+],
+"ans": 2,
+"why": "The fact that + oração."
+}
+],
+"fix": [
+{
+"wrong": "They must have went home.",
+"right": "They must have gone home.",
+"why": "Use o particípio gone."
+},
+{
+"wrong": "He may has lost his wallet.",
+"right": "He may have lost his wallet.",
+"why": "Depois de modal, have."
+},
+{
+"wrong": "They are likely arrive late.",
+"right": "They are likely to arrive late.",
+"why": "Falta to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com could have: “We can take a taxi.” (oportunidade perdida)",
+"answer": "We could have taken a taxi.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “She probably won't come.”",
+"answer": "She is unlikely to come.",
+"why": ""
+},
+{
+"prompt": "Reescreva com that: “I have no evidence of his guilt.”",
+"answer": "I have no evidence that he is guilty.",
+"why": ""
+}
+]
+}

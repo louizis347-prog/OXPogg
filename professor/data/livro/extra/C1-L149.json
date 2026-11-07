@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "that com vírgula",
+"wrong": "The Nile, that supports farming, floods every year.",
+"right": "The Nile, which supports farming, floods every year.",
+"why": "Em português “que” serve para os dois tipos de oração. Em inglês, a não restritiva (com vírgulas) nunca usa that: use which/who."
+},
+"mcq": [
+{
+"q": "Which has a **non-defining** clause?",
+"opts": [
+"Cities that grew by rivers thrived.",
+"Rivers which flood are risky.",
+"The Nile, which supports farming, floods."
+],
+"ans": 2,
+"why": "Vírgulas + which."
+},
+{
+"q": "Which can use **that**?",
+"opts": [
+"Settlements ___ grew beside rivers developed faster.",
+"The capital, ___ is old, is busy.",
+"Rome, ___ is large, is old."
+],
+"ans": 0,
+"why": "Restritiva (define) aceita that."
+},
+{
+"q": "Commas show that the clause...",
+"opts": [
+"is required",
+"adds extra information",
+"is wrong"
+],
+"ans": 1,
+"why": "Não restritiva = informação extra."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The valley, that is fertile, is wide.",
+"The valley which, is fertile, is wide.",
+"The valley, which is fertile, is wide."
+],
+"ans": 2,
+"why": "Vírgulas ao redor + which."
+}
+],
+"fix": [
+{
+"wrong": "Trade routes, that were busy, linked the cities.",
+"right": "Trade routes, which were busy, linked the cities.",
+"why": "Sem that depois de vírgula."
+},
+{
+"wrong": "The capital city, who is ancient, is dry.",
+"right": "The capital city, which is ancient, is dry.",
+"why": "Coisa = which."
+},
+{
+"wrong": "Farmers which lived beside rivers did well.",
+"right": "Farmers who lived beside rivers did well.",
+"why": "Pessoas = who/that."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com vírgulas (não restritiva): “Cairo is old. Cairo lies on the Nile.” (use which)",
+"answer": "Cairo, which lies on the Nile, is old.",
+"why": ""
+},
+{
+"prompt": "Una como restritiva com that: “Towns grew fast. The towns stood beside rivers.”",
+"answer": "Towns that stood beside rivers grew fast.",
+"why": ""
+},
+{
+"prompt": "Troque that por which, com vírgulas: “The valley that is wide floods.” (The valley, …)",
+"answer": "The valley, which is wide, floods.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "equilíbrio de nomes",
+"wrong": "The expansion and the concentration and the growth of cities are things.",
+"right": "The expansion of cities is a clear trend.",
+"why": "Sobrecarregar a frase com substantivos a deixa pesada. Use nominalização com equilíbrio e um verbo claro."
+},
+"mcq": [
+{
+"q": "Nominalization should be…",
+"opts": [
+"everywhere",
+"avoided",
+"balanced"
+],
+"ans": 2,
+"why": "Equilíbrio."
+},
+{
+"q": "Fees ___ taken into consideration.",
+"opts": [
+"are",
+"do",
+"have"
+],
+"ans": 0,
+"why": "Passiva."
+},
+{
+"q": "Stress is associated ___ sleep loss.",
+"opts": [
+"for",
+"with",
+"to"
+],
+"ans": 1,
+"why": "with."
+},
+{
+"q": "Which is clear?",
+"opts": [
+"Expansion cities of trend.",
+"Cities expansion is of trend.",
+"The expansion of cities is a trend."
+],
+"ans": 2,
+"why": "Clara."
+}
+],
+"fix": [
+{
+"wrong": "Fees are take into consideration.",
+"right": "Fees are taken into consideration.",
+"why": "Particípio."
+},
+{
+"wrong": "It is associated to sleep loss.",
+"right": "It is associated with sleep loss.",
+"why": "with."
+},
+{
+"wrong": "The expand is a trend.",
+"right": "The expansion is a trend.",
+"why": "expansion."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “They take fees into consideration.”",
+"answer": "Fees are taken into consideration.",
+"why": ""
+},
+{
+"prompt": "Use associated with: “Stress relates to sleep loss.”",
+"answer": "Stress is associated with sleep loss.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Cities expand, which is a trend.” (The … of cities is a trend.)",
+"answer": "The expansion of cities is a trend.",
+"why": ""
+}
+]
+}

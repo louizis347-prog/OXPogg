@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "will vs going to",
+"wrong": "I think I'm going to be rich.",
+"right": "I think I'll be rich.",
+"why": "Em português 'vou ser rico' serve para previsão e plano; em inglês previsões sem evidência com I think pedem will."
+},
+"mcq": [
+{
+"q": "I think it ___ be fun.",
+"opts": [
+"is going",
+"do",
+"will"
+],
+"ans": 2,
+"why": "previsão."
+},
+{
+"q": "Maybe she ___ come.",
+"opts": [
+"will",
+"does",
+"going to"
+],
+"ans": 0,
+"why": "maybe."
+},
+{
+"q": "Pergunta: ___ you help me?",
+"opts": [
+"Do",
+"Will",
+"Are"
+],
+"ans": 1,
+"why": "Will."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"It will not to rain.",
+"It don't rain.",
+"It won't rain."
+],
+"ans": 2,
+"why": "won't."
+}
+],
+"fix": [
+{
+"wrong": "I think it rains.",
+"right": "I think it will rain.",
+"why": "will."
+},
+{
+"wrong": "She will not to come.",
+"right": "She will not come.",
+"why": "sem to."
+},
+{
+"wrong": "Do you will help?",
+"right": "Will you help?",
+"why": "inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Com I think: “It is fun.” (futuro)",
+"answer": "I think it will be fun.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He will win.”",
+"answer": "He won't win.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “It will rain.”",
+"answer": "Will it rain?",
+"why": ""
+}
+]
+}

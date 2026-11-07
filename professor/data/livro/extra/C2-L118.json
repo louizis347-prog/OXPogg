@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The figures are in revision.",
+"right": "The figures are still under review.",
+"why": "“Em revisão” leva a in revision; em inglês under review."
+},
+"mcq": [
+{
+"q": "Redirect:",
+"opts": [
+"What matter is…",
+"What matters it is…",
+"What matters is that…"
+],
+"ans": 2,
+"why": "What matters is."
+},
+{
+"q": "Postpone:",
+"opts": [
+"reviewed in",
+"in revision",
+"still under review"
+],
+"ans": 2,
+"why": "under review."
+},
+{
+"q": "Declining to answer:",
+"opts": [
+"I comment not.",
+"I cannot comment.",
+"I no comment."
+],
+"ans": 1,
+"why": "cannot."
+},
+{
+"q": "Evasive tone:",
+"opts": [
+"joke",
+"answer",
+"redirect"
+],
+"ans": 2,
+"why": "Redirecionar."
+}
+],
+"fix": [
+{
+"wrong": "The figures are in review.",
+"right": "The figures are under review.",
+"why": "under."
+},
+{
+"wrong": "What matter is clarity.",
+"right": "What matters is clarity.",
+"why": "-s."
+},
+{
+"wrong": "I no can comment.",
+"right": "I cannot comment.",
+"why": "cannot."
+}
+],
+"rewrite": [
+{
+"prompt": "Redirecione: “Clarity matters.”",
+"answer": "What matters is clarity.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “under review”: “We are reviewing the figures.”",
+"answer": "The figures are under review.",
+"why": ""
+},
+{
+"prompt": "Negativo: “I can comment.”",
+"answer": "I cannot comment.",
+"why": ""
+}
+]
+}

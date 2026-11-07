@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado sem -ed",
+"wrong": "I walk to school yesterday.",
+"right": "I walked to school yesterday.",
+"why": "Em português o advérbio ('ontem') basta na cabeça do aluno; em inglês o verbo também precisa do -ed."
+},
+"mcq": [
+{
+"q": "Last year she ___ in Rio.",
+"opts": [
+"lived",
+"live",
+"lives"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Pronúncia de **worked**:",
+"opts": [
+"/t/",
+"/d/",
+"/ɪd/"
+],
+"ans": 0,
+"why": "Surdo → /t/."
+},
+{
+"q": "Qual frase está correta? (Past Simple (regular): practice and contrast)",
+"opts": [
+"He talked a lot.",
+"He talk a lot yesterday.",
+"He talks a lot yesterday."
+],
+"ans": 0,
+"why": "-ed."
+},
+{
+"q": "Passado de **try**:",
+"opts": [
+"trid",
+"tried",
+"tryed"
+],
+"ans": 1,
+"why": "y → ied."
+}
+],
+"fix": [
+{
+"wrong": "They visit us last week.",
+"right": "They visited us last week.",
+"why": "-ed."
+},
+{
+"wrong": "He opened the doors yesterday ago.",
+"right": "He opened the door yesterday.",
+"why": "Sem ago extra."
+},
+{
+"wrong": "We cooked dinner on the last night.",
+"right": "We cooked dinner last night.",
+"why": "Sem on/the."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “He helps me.”",
+"answer": "He helped me.",
+"why": ""
+},
+{
+"prompt": "Passado: “They live here.”",
+"answer": "They lived here.",
+"why": ""
+},
+{
+"prompt": "Passado: “I try again.”",
+"answer": "I tried again.",
+"why": ""
+}
+]
+}

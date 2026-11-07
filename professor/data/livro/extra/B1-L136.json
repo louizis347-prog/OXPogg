@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discurso indireto (perguntas)",
+"wrong": "She told him she found his letter. He asked where did she find it.",
+"right": "She told him she had found his letter. He asked where she had found it.",
+"why": "Em português “perguntou onde ela encontrou” segue a ordem normal. O brasileiro, porém, mantém a inversão da pergunta direta. Em inglês, no discurso indireto a ordem é afirmativa e o tempo recua (found → had found)."
+},
+"mcq": [
+{
+"q": "“I found it.” → She said she ___ it.",
+"opts": [
+"found it had",
+"had found",
+"has found"
+],
+"ans": 1,
+"why": "Past Perfect."
+},
+{
+"q": "“Where did you find it?” → He asked where she ___.",
+"opts": [
+"had found it",
+"did find it",
+"found did it"
+],
+"ans": 0,
+"why": "Ordem afirmativa."
+},
+{
+"q": "“Do you like tea?” → He asked ___ I liked tea.",
+"opts": [
+"that",
+"if",
+"what"
+],
+"ans": 1,
+"why": "if."
+},
+{
+"q": "Question word order in reported speech:",
+"opts": [
+"auxiliary + subject",
+"verb + subject",
+"subject + verb"
+],
+"ans": 2,
+"why": "Sujeito + verbo."
+}
+],
+"fix": [
+{
+"wrong": "He asked where did she live.",
+"right": "He asked where she lived.",
+"why": "Ordem."
+},
+{
+"wrong": "She asked if I like tea.",
+"right": "She asked if I liked tea.",
+"why": "Recuo."
+},
+{
+"wrong": "He said he saw it before.",
+"right": "He said he had seen it before.",
+"why": "had seen."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: Ele: “Where did you find it?” (He asked...)",
+"answer": "He asked where she had found it.",
+"why": ""
+},
+{
+"prompt": "Reescreva: Ela: “Do you like tea?” (She asked...)",
+"answer": "She asked if I liked tea.",
+"why": ""
+},
+{
+"prompt": "Reescreva: Ele: “I found your letter.” (He told her...)",
+"answer": "He told her he had found her letter.",
+"why": ""
+}
+]
+}

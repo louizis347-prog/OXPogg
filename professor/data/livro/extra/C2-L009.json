@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "by + diferença",
+"wrong": "Inflation has increased in 2 points since May.",
+"right": "Inflation has increased by 2 points since May.",
+"why": "Em português “subiu em 2 pontos” usa em. Em inglês, a diferença numérica usa by; in aparece em “in May”."
+},
+"mcq": [
+{
+"q": "“Core inflation ___ 3% in July.”",
+"opts": [
+"stood at",
+"stood by",
+"stood in"
+],
+"ans": 0,
+"why": "stand at."
+},
+{
+"q": "“Not so much a crisis as a test of nerve” stresses...",
+"opts": [
+"the first element",
+"the second element",
+"neither"
+],
+"ans": 1,
+"why": "Peso no segundo."
+},
+{
+"q": "Concession word:",
+"opts": [
+"thus",
+"hence",
+"yet"
+],
+"ans": 2,
+"why": "yet."
+},
+{
+"q": "**Headline** inflation includes...",
+"opts": [
+"all prices",
+"only energy",
+"no food"
+],
+"ans": 0,
+"why": "Total."
+}
+],
+"fix": [
+{
+"wrong": "Prices rised sharply in March.",
+"right": "Prices rose sharply in March.",
+"why": "rose."
+},
+{
+"wrong": "Core inflation remained steady, however headline eased.",
+"right": "Core inflation remained steady; however, headline eased.",
+"why": "Ponto e vírgula."
+},
+{
+"wrong": "The shock was increase by 5 points.",
+"right": "The shock was an increase of 5 points.",
+"why": "of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com by: “Prices rose 2 points.” (by)",
+"answer": "Prices rose by 2 points.",
+"why": ""
+},
+{
+"prompt": "Reescreva com yet: “Headline eased, but core did not.” (…, yet…)",
+"answer": "Headline eased, yet core did not.",
+"why": ""
+},
+{
+"prompt": "Reescreva com not so much…as: “It was a test of nerve, rather than a crisis.”",
+"answer": "It was not so much a crisis as a test of nerve.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "aspas e uso",
+"wrong": "I use “cat” for the animal, and “cat” has three letters is a mention.",
+"right": "“Cat” has three letters.",
+"why": "Em português é comum não marcar quando se fala da palavra; em inglês a menção exige aspas ou itálico."
+},
+"mcq": [
+{
+"q": "“The morning star” and “the evening star” share…",
+"opts": [
+"a sense",
+"a spelling",
+"a reference"
+],
+"ans": 2,
+"why": "Mesmo referente (Vênus)."
+},
+{
+"q": "They differ in…",
+"opts": [
+"grammar",
+"sense",
+"reference"
+],
+"ans": 1,
+"why": "Sentidos diferentes."
+},
+{
+"q": "Which is a mention?",
+"opts": [
+"“Dog” has three letters.",
+"I fed the dog.",
+"The dog barked."
+],
+"ans": 0,
+"why": "Fala-se da palavra."
+},
+{
+"q": "Which is a use?",
+"opts": [
+"I fed the dog.",
+"“Dog” rhymes.",
+"“Dog” is short."
+],
+"ans": 0,
+"why": "Uso normal."
+}
+],
+"fix": [
+{
+"wrong": "Dog has three letters.",
+"right": "“Dog” has three letters.",
+"why": "Aspas na menção."
+},
+{
+"wrong": "“Venus” is bright tonight, it has five letters.",
+"right": "“Venus” has five letters.",
+"why": "Menção."
+},
+{
+"wrong": "The sense of “star” is a big.",
+"right": "The sense of “star” is broad.",
+"why": "Adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Marque a menção: “Cat has three letters.”",
+"answer": "“Cat” has three letters.",
+"why": ""
+},
+{
+"prompt": "Plural: “The star is bright.”",
+"answer": "The stars are bright.",
+"why": ""
+},
+{
+"prompt": "Passado: “The word has three letters.”",
+"answer": "The word had three letters.",
+"why": ""
+}
+]
+}

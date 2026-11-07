@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mustn't × don't have to",
+"wrong": "You don't have to talk in the exam. (proibido)",
+"right": "You mustn't talk in the exam.",
+"why": "Em português 'não precisa' vs 'não pode' dependem do contexto; em inglês usam estruturas diferentes."
+},
+"mcq": [
+{
+"q": "It's free. You ___ pay.",
+"opts": [
+"aren't",
+"don't have to",
+"mustn't"
+],
+"ans": 1,
+"why": "dispensa."
+},
+{
+"q": "Danger! You ___ enter.",
+"opts": [
+"don't have to",
+"mustn't",
+"aren't"
+],
+"ans": 1,
+"why": "proibição."
+},
+{
+"q": "Passado: She ___ wait.",
+"opts": [
+"mustn't",
+"didn't have to",
+"don't have to"
+],
+"ans": 1,
+"why": "didn't."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I haven't go.",
+"I don't have to go.",
+"I don't must go."
+],
+"ans": 1,
+"why": "don't have to."
+}
+],
+"fix": [
+{
+"wrong": "You don't must smoke.",
+"right": "You mustn't smoke.",
+"why": "mustn't."
+},
+{
+"wrong": "He doesn't has to pay.",
+"right": "He doesn't have to pay.",
+"why": "base."
+},
+{
+"wrong": "They mustn't to run here.",
+"right": "They mustn't run here.",
+"why": "sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “They have to wait.”",
+"answer": "They don't have to wait.",
+"why": ""
+},
+{
+"prompt": "Proibição: “You eat here.” com mustn't",
+"answer": "You mustn't eat here.",
+"why": ""
+},
+{
+"prompt": "Passado: “I don't have to work.”",
+"answer": "I didn't have to work.",
+"why": ""
+}
+]
+}

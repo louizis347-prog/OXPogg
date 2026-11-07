@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Despite of the traffic, the bus arrived early.",
+"right": "Despite the traffic, the bus arrived early.",
+"why": "Por analogia com “in spite of” e com “apesar de”, o brasileiro acrescenta of a despite. Despite nunca leva of."
+},
+"mcq": [
+{
+"q": "**___** the high price, Rita bought the coat.",
+"opts": [
+"Although",
+"Despite of",
+"Despite"
+],
+"ans": 2,
+"why": "Despite + substantivo."
+},
+{
+"q": "**___** it was snowing, the kids played outside.",
+"opts": [
+"Despite",
+"In spite",
+"Although"
+],
+"ans": 2,
+"why": "Oração completa pede although."
+},
+{
+"q": "In **___** of the noise, Leo studied.",
+"opts": [
+"spiting",
+"spite",
+"despite"
+],
+"ans": 1,
+"why": "In spite of."
+},
+{
+"q": "Despite **___** nervous, Ana spoke well.",
+"opts": [
+"been",
+"being",
+"be"
+],
+"ans": 1,
+"why": "Despite + -ing."
+}
+],
+"fix": [
+{
+"wrong": "Despite of feeling sick, Tom went to class.",
+"right": "Despite feeling sick, Tom went to class.",
+"why": "Despite sem of."
+},
+{
+"wrong": "Although the long queue, we got tickets.",
+"right": "Despite the long queue, we got tickets.",
+"why": "Substantivo pede despite."
+},
+{
+"wrong": "In spite the delay, the show began.",
+"right": "In spite of the delay, the show began.",
+"why": "In spite of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com despite: “Although it hurts, we learn.” (the pain)",
+"answer": "Despite the pain, we learn.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “Despite the storm, they sailed.” (there was a storm)",
+"answer": "Although there was a storm, they sailed.",
+"why": ""
+},
+{
+"prompt": "Use despite + -ing: “Although Kim was sick, she sang.”",
+"answer": "Despite being sick, Kim sang.",
+"why": ""
+}
+]
+}

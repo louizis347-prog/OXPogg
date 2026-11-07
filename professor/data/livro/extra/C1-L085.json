@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Having been",
+"wrong": "Having raised abroad, she is flexible.",
+"right": "Having been raised abroad, she is flexible.",
+"why": "Em português “criada no exterior” não pede auxiliar. Em inglês, passiva = been + pp."
+},
+"mcq": [
+{
+"q": "___ raised abroad, she is flexible.",
+"opts": [
+"Having",
+"Been",
+"Having been"
+],
+"ans": 2,
+"why": "Having been."
+},
+{
+"q": "Not having been prepared, he ___ .",
+"opts": [
+"failed",
+"failing",
+"fails to"
+],
+"ans": 0,
+"why": "Verbo principal."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Been tested, it passed.",
+"Having been tested, it passed.",
+"Having tested, it passed (it was tested)."
+],
+"ans": 1,
+"why": "been."
+},
+{
+"q": "Passive form is…",
+"opts": [
+"Having + pp",
+"Being + base",
+"Having been + pp"
+],
+"ans": 2,
+"why": "been."
+}
+],
+"fix": [
+{
+"wrong": "Having raised abroad, she is flexible.",
+"right": "Having been raised abroad, she is flexible.",
+"why": "been."
+},
+{
+"wrong": "Not been prepared, he failed.",
+"right": "Not having been prepared, he failed.",
+"why": "having."
+},
+{
+"wrong": "Having been tested, it pass.",
+"right": "Having been tested, it passed.",
+"why": "passed."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Because she was raised abroad, she is flexible.”",
+"answer": "Having been raised abroad, she is flexible.",
+"why": ""
+},
+{
+"prompt": "Negativa passiva: “Because he was not prepared, he failed.”",
+"answer": "Not having been prepared, he failed.",
+"why": ""
+},
+{
+"prompt": "Passiva: “After it was tested, it passed.”",
+"answer": "Having been tested, it passed.",
+"why": ""
+}
+]
+}

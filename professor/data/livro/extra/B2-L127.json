@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb put off",
+"wrong": "They put the meeting for Monday.",
+"right": "They put the meeting off until Monday.",
+"why": "Em português \"adiaram\" é um verbo único. Em inglês use put off (adiar) ou postpone."
+},
+"mcq": [
+{
+"q": "put off =",
+"opts": [
+"vestir",
+"adiar",
+"apagar"
+],
+"ans": 1,
+"why": "put off = adiar."
+},
+{
+"q": "put on =",
+"opts": [
+"adiar",
+"apagar",
+"vestir; ligar"
+],
+"ans": 2,
+"why": "put on = vestir."
+},
+{
+"q": "put out a fire =",
+"opts": [
+"apagar",
+"acender",
+"adiar"
+],
+"ans": 0,
+"why": "put out = apagar."
+},
+{
+"q": "put up with =",
+"opts": [
+"apoiar",
+"suportar peso",
+"aguentar"
+],
+"ans": 2,
+"why": "put up with = tolerar."
+}
+],
+"fix": [
+{
+"wrong": "Don't put it of.",
+"right": "Don't put it off.",
+"why": "off, não of."
+},
+{
+"wrong": "I can't put up it.",
+"right": "I can't put up with it.",
+"why": "with."
+},
+{
+"wrong": "She put on it.",
+"right": "She put it on.",
+"why": "Pronome no meio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com put on: “She wore her coat.”",
+"answer": "She put on her coat.",
+"why": ""
+},
+{
+"prompt": "Reescreva com put off: “They postponed the trip.”",
+"answer": "They put off the trip.",
+"why": ""
+},
+{
+"prompt": "Reescreva com pronome: “Put off the meeting.” → it",
+"answer": "Put it off.",
+"why": ""
+}
+]
+}

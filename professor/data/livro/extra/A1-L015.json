@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito expresso",
+"wrong": "Is raining.",
+"right": "It is raining.",
+"why": "Em português verbos de clima não têm sujeito; em inglês é preciso it."
+},
+"mcq": [
+{
+"q": "Weather: ___ rains a lot.",
+"opts": [
+"—",
+"It",
+"There"
+],
+"ans": 1,
+"why": "Precisa de sujeito."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Bark dogs.",
+"Dogs is bark.",
+"Dogs bark."
+],
+"ans": 2,
+"why": "S + V."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Tom runs.",
+"Tom run.",
+"Tom is run."
+],
+"ans": 0,
+"why": "Terceira: runs."
+},
+{
+"q": "A sentence needs…",
+"opts": [
+"only a verb",
+"a subject and a verb",
+"only a noun"
+],
+"ans": 1,
+"why": "Estrutura mínima."
+}
+],
+"fix": [
+{
+"wrong": "Is cold today.",
+"right": "It is cold today.",
+"why": "Sujeito it."
+},
+{
+"wrong": "Sleep the baby.",
+"right": "The baby sleeps.",
+"why": "S + V."
+},
+{
+"wrong": "Rains a lot in May.",
+"right": "It rains a lot in May.",
+"why": "Sujeito it."
+}
+],
+"rewrite": [
+{
+"prompt": "Ponha na ordem: “sleeps / the baby”",
+"answer": "The baby sleeps.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “fly / birds”",
+"answer": "Birds fly.",
+"why": ""
+},
+{
+"prompt": "Acrescente o sujeito: “Is late.” (hora)",
+"answer": "It is late.",
+"why": ""
+}
+]
+}

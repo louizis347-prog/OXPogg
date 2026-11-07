@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Only by doubting he could find the truth.",
+"right": "Only by doubting could he find the truth.",
+"why": "Português não inverte após “somente ao…”; inglês coloca aux antes do sujeito."
+},
+"mcq": [
+{
+"q": "Only by + -ing:",
+"opts": [
+"Only by doubting could he find…",
+"Only by doubting he could find…",
+"Only by doubt could find he"
+],
+"ans": 0,
+"why": "could he."
+},
+{
+"q": "So + adj:",
+"opts": [
+"So tired she was that",
+"So tired was she that…",
+"So was tired she that"
+],
+"ans": 1,
+"why": "So + adj + be."
+},
+{
+"q": "Result clause begins with…",
+"opts": [
+"that",
+"who",
+"what"
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "Aux comes…",
+"opts": [
+"after subject",
+"not used",
+"before subject"
+],
+"ans": 2,
+"why": "Antes."
+}
+],
+"fix": [
+{
+"wrong": "Only by doubting he found it.",
+"right": "Only by doubting did he find it.",
+"why": "Inversão."
+},
+{
+"wrong": "So tired she was that she slept.",
+"right": "So tired was she that she slept.",
+"why": "Inversão."
+},
+{
+"wrong": "Only by doubting could he found.",
+"right": "Only by doubting could he find.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “He could find truth only by doubting.”",
+"answer": "Only by doubting could he find truth.",
+"why": ""
+},
+{
+"prompt": "Inverta: “She was so tired that she slept.”",
+"answer": "So tired was she that she slept.",
+"why": ""
+},
+{
+"prompt": "Passado: “Only by doubting can he find it.”",
+"answer": "Only by doubting could he find it.",
+"why": ""
+}
+]
+}

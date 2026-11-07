@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "The Board will to hold a hearing.",
+"right": "The Board will hold a hearing.",
+"why": "Em português “vai realizar”; em inglês will + base sem to."
+},
+"mcq": [
+{
+"q": "Obligation, formal:",
+"opts": [
+"Speakers address the Chair.",
+"Speakers are going address.",
+"Speakers shall address the Chair."
+],
+"ans": 2,
+"why": "Shall."
+},
+{
+"q": "Formal commitment:",
+"opts": [
+"The Board is holding hearing.",
+"The Board hold hearing.",
+"The Board will hold a hearing."
+],
+"ans": 2,
+"why": "will."
+},
+{
+"q": "Shall in rules means…",
+"opts": [
+"suggestion",
+"obligation",
+"ability"
+],
+"ans": 1,
+"why": "Obrigação."
+},
+{
+"q": "Negative of shall:",
+"opts": [
+"shall not",
+"don’t shall",
+"not shall"
+],
+"ans": 0,
+"why": "Shall not."
+}
+],
+"fix": [
+{
+"wrong": "Speakers shall to address the Chair.",
+"right": "Speakers shall address the Chair.",
+"why": "Sem to."
+},
+{
+"wrong": "The Board will held a hearing.",
+"right": "The Board will hold a hearing.",
+"why": "Base."
+},
+{
+"wrong": "Members shall not speaks twice.",
+"right": "Members shall not speak twice.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com shall: “Speakers must address the Chair.”",
+"answer": "Speakers shall address the Chair.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Members shall vote.”",
+"answer": "Members shall not vote.",
+"why": ""
+},
+{
+"prompt": "Com will: “The Board holds a hearing next week.”",
+"answer": "The Board will hold a hearing next week.",
+"why": ""
+}
+]
+}

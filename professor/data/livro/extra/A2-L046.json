@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "schwa /ə/",
+"wrong": "about = /ɑːˈbaʊt/ (a clara)",
+"right": "about = /əˈbaʊt/",
+"why": "Em português toda vogal átona é pronunciada com clareza; em inglês as sílabas átonas reduzem para /ə/."
+},
+"mcq": [
+{
+"q": "Qual vogal é schwa em **about**?",
+"opts": [
+"t",
+"a (1ª)",
+"ou"
+],
+"ans": 1,
+"why": "a- = /ə/."
+},
+{
+"q": "**Banana** tem quantos schwas?",
+"opts": [
+"0",
+"2",
+"1"
+],
+"ans": 1,
+"why": "ba e na final."
+},
+{
+"q": "A schwa é:",
+"opts": [
+"átona",
+"forte",
+"longa"
+],
+"ans": 0,
+"why": "átona."
+},
+{
+"q": "Em **teacher** o -er é:",
+"opts": [
+"/eɪ/",
+"/iː/",
+"schwa"
+],
+"ans": 2,
+"why": "schwa."
+}
+],
+"fix": [
+{
+"wrong": "In 'about', the first a is /æ/.",
+"right": "In 'about', the first a is /ə/.",
+"why": "schwa."
+},
+{
+"wrong": "In 'teacher', -er is /ɛr/.",
+"right": "In 'teacher', -er is /ə/.",
+"why": "schwa."
+},
+{
+"wrong": "In 'banana', all a's are /ɑː/.",
+"right": "In 'banana', the first and last a's are /ə/.",
+"why": "schwa."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva o símbolo da vogal fraca em about:",
+"answer": "ə",
+"why": ""
+},
+{
+"prompt": "Escreva o símbolo da vogal final de teacher:",
+"answer": "ə",
+"why": ""
+},
+{
+"prompt": "Escreva a sílaba forte de banana em maiúsculas: banana",
+"answer": "baNAna",
+"why": ""
+}
+]
+}

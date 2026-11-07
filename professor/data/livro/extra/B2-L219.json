@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "provável + to",
+"wrong": "It's probable to rain tomorrow.",
+"right": "It's likely to rain tomorrow.",
+"why": "Em português, \"é provável chover\" leva o aluno a usar probable + to. Em inglês, probable não aceita to; use likely to."
+},
+"mcq": [
+{
+"q": "Qual NÃO é possível?",
+"opts": [
+"It is probable to rain.",
+"It is probable that it will rain.",
+"It is likely to rain."
+],
+"ans": 0,
+"why": "probable usa that-clause, nunca to."
+},
+{
+"q": "Forma negativa de \"They are likely to agree\":",
+"opts": [
+"They aren't unlikely to agree.",
+"They are unlikely to agree.",
+"They likely don't agree."
+],
+"ans": 1,
+"why": "unlikely = pouco provável."
+},
+{
+"q": "Qual é a pergunta correta?",
+"opts": [
+"Does he likely be late?",
+"Is he likely be late?",
+"Is he likely to be late?"
+],
+"ans": 2,
+"why": "Inverta o verbo be."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"It is likely snow.",
+"It is likely to snow.",
+"It likely to snow."
+],
+"ans": 1,
+"why": "be likely to + base."
+}
+],
+"fix": [
+{
+"wrong": "It isn't unlikely to fail.",
+"right": "It is unlikely to fail.",
+"why": "Evite dupla negação para dizer improvável."
+},
+{
+"wrong": "The team is likely winning.",
+"right": "The team is likely to win.",
+"why": "Likely + to + verbo base."
+},
+{
+"wrong": "Are she likely to call?",
+"right": "Is she likely to call?",
+"why": "Concordância de be: is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com likely: “Maybe it will rain.” (use It)",
+"answer": "It is likely to rain.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “She probably won't come.”",
+"answer": "She is unlikely to come.",
+"why": ""
+},
+{
+"prompt": "Passe para pergunta: “He is likely to win.”",
+"answer": "Is he likely to win?",
+"why": ""
+}
+]
+}

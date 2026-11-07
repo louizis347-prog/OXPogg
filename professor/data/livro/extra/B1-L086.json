@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if + passado / dedução",
+"wrong": "If I would have time, it must to be fun.",
+"right": "If I had time, it would be fun.",
+"why": "Em português “se eu tivesse, seria” usa subjuntivo; o brasileiro coloca would no if e confunde must com would. Em inglês: if + Past, would + base; must é dedução, não condição."
+},
+"mcq": [
+{
+"q": "If I ___ time, I would go.",
+"opts": [
+"had",
+"would have",
+"have"
+],
+"ans": 0,
+"why": "Past."
+},
+{
+"q": "She ___ be at lunch (quase certo).",
+"opts": [
+"must",
+"would",
+"can’t"
+],
+"ans": 0,
+"why": "must be."
+},
+{
+"q": "It ___ have been hopeless (impossível).",
+"opts": [
+"must",
+"might",
+"can’t"
+],
+"ans": 2,
+"why": "can’t have."
+},
+{
+"q": "Which is correct? (if + passado / dedução)",
+"opts": [
+"She might to be late.",
+"She might be late.",
+"She mights be late."
+],
+"ans": 1,
+"why": "Sem to."
+}
+],
+"fix": [
+{
+"wrong": "If I would know, I would help.",
+"right": "If I knew, I would help.",
+"why": "if + Past."
+},
+{
+"wrong": "He must be to the office.",
+"right": "He must be at the office.",
+"why": "Sem to."
+},
+{
+"wrong": "They may been late.",
+"right": "They may have been late.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no 2º condicional: “If I have money, I will travel.”",
+"answer": "If I had money, I would travel.",
+"why": ""
+},
+{
+"prompt": "Reescreva com dedução (presente): “I am sure he is at work.”",
+"answer": "He must be at work.",
+"why": ""
+},
+{
+"prompt": "Reescreva com dedução (passado): “Perhaps they left.”",
+"answer": "They might have left.",
+"why": ""
+}
+]
+}

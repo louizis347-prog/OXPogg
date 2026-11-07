@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "say × tell",
+"wrong": "Ms. Park said me to sit down.",
+"right": "Ms. Park told me to sit down.",
+"why": "Em português “disse a mim” usa dizer com objeto indireto. Em inglês say não aceita a pessoa diretamente; com pessoa usa-se tell (told me)."
+},
+"mcq": [
+{
+"q": "“Sit down,” ___ Ms. Park.",
+"opts": [
+"told",
+"spoke",
+"said"
+],
+"ans": 2,
+"why": "Citação direta com say."
+},
+{
+"q": "She ___ me that I was late.",
+"opts": [
+"said",
+"spoke",
+"told"
+],
+"ans": 2,
+"why": "tell + pessoa."
+},
+{
+"q": "Which word shows sequence?",
+"opts": [
+"Finally",
+"Because",
+"Although"
+],
+"ans": 0,
+"why": "Finally marca sequência."
+},
+{
+"q": "Where does the comma go?",
+"opts": [
+"“Hello,” she said.",
+"“Hello” she said.",
+"“Hello”, she said"
+],
+"ans": 0,
+"why": "A vírgula fica dentro das aspas."
+}
+],
+"fix": [
+{
+"wrong": "She said me a secret.",
+"right": "She told me a secret.",
+"why": "tell + pessoa."
+},
+{
+"wrong": "Then, she smile at us.",
+"right": "Then, she smiled at us.",
+"why": "Passado da narrativa: smiled."
+},
+{
+"wrong": "He asked me what was my name.",
+"right": "He asked me what my name was.",
+"why": "Ordem afirmativa em pergunta indireta."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com told: “She said to me that she was happy.”",
+"answer": "She told me that she was happy.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She smiles and says thanks.”",
+"answer": "She smiled and said thanks.",
+"why": ""
+},
+{
+"prompt": "Troque Then por After that: “First he read. Then he wrote.”",
+"answer": "First he read. After that he wrote.",
+"why": ""
+}
+]
+}

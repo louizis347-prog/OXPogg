@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares",
+"wrong": "I falled yesterday.",
+"right": "I fell yesterday.",
+"why": "O aluno regulariza com -ed; fall, feel, find, give têm formas próprias."
+},
+"mcq": [
+{
+"q": "Passado de **feel**:",
+"opts": [
+"feeled",
+"felt",
+"feelt"
+],
+"ans": 1,
+"why": "felt."
+},
+{
+"q": "Passado de **find**:",
+"opts": [
+"finded",
+"fund",
+"found"
+],
+"ans": 2,
+"why": "found."
+},
+{
+"q": "Passado de **give**:",
+"opts": [
+"gived",
+"gave",
+"given"
+],
+"ans": 1,
+"why": "gave."
+},
+{
+"q": "Passado de **get**:",
+"opts": [
+"got",
+"getted",
+"gotten"
+],
+"ans": 0,
+"why": "got."
+}
+],
+"fix": [
+{
+"wrong": "She finded her keys.",
+"right": "She found her keys.",
+"why": "found."
+},
+{
+"wrong": "He gived me a gift.",
+"right": "He gave me a gift.",
+"why": "gave."
+},
+{
+"wrong": "I feeled sick.",
+"right": "I felt sick.",
+"why": "felt."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I fall.”",
+"answer": "I fell.",
+"why": ""
+},
+{
+"prompt": "Passado: “She finds it.”",
+"answer": "She found it.",
+"why": ""
+},
+{
+"prompt": "Passado: “They give me tea.”",
+"answer": "They gave me tea.",
+"why": ""
+}
+]
+}

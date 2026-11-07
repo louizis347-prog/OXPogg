@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "told … to",
+"wrong": "He advised that I rest and I should have take a break.",
+"right": "He advised me to rest, and I should have taken a break.",
+"why": "Em português “aconselhou que eu descansasse” usa que + subjuntivo, e “deveria ter tomado” soa similar com ter. Em inglês: advise + pessoa + to; should have + particípio."
+},
+"mcq": [
+{
+"q": "They had left ___ I arrived.",
+"opts": [
+"since",
+"when",
+"during"
+],
+"ans": 1,
+"why": "when."
+},
+{
+"q": "He told me ___ careful.",
+"opts": [
+"be",
+"being",
+"to be"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "She might have ___ the letter.",
+"opts": [
+"lost",
+"lose",
+"losing"
+],
+"ans": 0,
+"why": "pp."
+},
+{
+"q": "Which is a Past Perfect?",
+"opts": [
+"had gone",
+"has gone",
+"was going"
+],
+"ans": 0,
+"why": "had gone."
+}
+],
+"fix": [
+{
+"wrong": "She advised that I sleep.",
+"right": "She advised me to sleep.",
+"why": "advise + pessoa + to."
+},
+{
+"wrong": "We had left when he calls.",
+"right": "We had left when he called.",
+"why": "Past Simple."
+},
+{
+"wrong": "You must have know it.",
+"right": "You must have known it.",
+"why": "known."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Be careful,” he said to me.",
+"answer": "He told me to be careful.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Past Perfect: “I finished the work.”",
+"answer": "I had finished the work.",
+"why": ""
+},
+{
+"prompt": "Reescreva com might have: “Perhaps she lost it.”",
+"answer": "She might have lost it.",
+"why": ""
+}
+]
+}

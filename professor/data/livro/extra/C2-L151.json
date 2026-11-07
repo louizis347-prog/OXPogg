@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "paralelismo",
+"wrong": "Doubt the table, doubt the hand, doubt of the doubt.",
+"right": "Doubt the table, doubt the hand, doubt even the doubt.",
+"why": "Português “duvidar de”; em inglês doubt é transitivo, sem preposição."
+},
+"mcq": [
+{
+"q": "Which line repeats the opening verb for insistence?",
+"opts": [
+"Doubt the table, hand, doubting",
+"Doubt table, the doubting",
+"Doubt the table, doubt the hand, doubt…"
+],
+"ans": 2,
+"why": "Repetição."
+},
+{
+"q": "Paradox: “doubt the doubt” is…",
+"opts": [
+"self-reference",
+"an order",
+"a place"
+],
+"ans": 0,
+"why": "Autorreferência."
+},
+{
+"q": "Doubt takes…",
+"opts": [
+"direct object",
+"to",
+"of"
+],
+"ans": 0,
+"why": "Direto."
+},
+{
+"q": "Insistence is made by…",
+"opts": [
+"negation",
+"repetition",
+"question"
+],
+"ans": 1,
+"why": "Repetição."
+}
+],
+"fix": [
+{
+"wrong": "Doubt of the table.",
+"right": "Doubt the table.",
+"why": "Sem of."
+},
+{
+"wrong": "Doubting the table, doubt the hand.",
+"right": "Doubt the table, doubt the hand.",
+"why": "Paralelo."
+},
+{
+"wrong": "Doubt even to the doubt.",
+"right": "Doubt even the doubt.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Imperativo negativo: “Doubt the table.”",
+"answer": "Don’t doubt the table.",
+"why": ""
+},
+{
+"prompt": "Complete: “Doubt the table, doubt the hand, doubt even ___.” (the doubt)",
+"answer": "Doubt the table, doubt the hand, doubt even the doubt.",
+"why": ""
+},
+{
+"prompt": "Passado: “She doubts the hand.”",
+"answer": "She doubted the hand.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "while / when",
+"wrong": "When I was walking, I was seeing him.",
+"right": "While I was walking, I saw him.",
+"why": "O português usa 'enquanto/quando' com o mesmo tempo; em inglês while vai com continuous e when com a interrupção."
+},
+"mcq": [
+{
+"q": "___ I was cooking, he called.",
+"opts": [
+"When I",
+"While",
+"Then"
+],
+"ans": 1,
+"why": "while."
+},
+{
+"q": "I ___ the film when you called.",
+"opts": [
+"was watching",
+"watched",
+"watch"
+],
+"ans": 0,
+"why": "em curso."
+},
+{
+"q": "When the bell rang, we ___ .",
+"opts": [
+"leaving",
+"were leaving",
+"left"
+],
+"ans": 2,
+"why": "curta."
+},
+{
+"q": "While she ___ , I waited.",
+"opts": [
+"shops",
+"was shopping",
+"shopped"
+],
+"ans": 1,
+"why": "em curso."
+}
+],
+"fix": [
+{
+"wrong": "While I played, he arrived.",
+"right": "While I was playing, he arrived.",
+"why": "continuous."
+},
+{
+"wrong": "I was seeing her when I was walking.",
+"right": "I saw her when I was walking.",
+"why": "ação curta."
+},
+{
+"wrong": "When we was eating, it rained.",
+"right": "When we were eating, it rained.",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com while: “I was cooking. He read.” → While I was cooking, he ___",
+"answer": "While I was cooking, he was reading.",
+"why": ""
+},
+{
+"prompt": "Una com when: “He called. I was driving.”",
+"answer": "He called when I was driving.",
+"why": ""
+},
+{
+"prompt": "Past simple: “While I was run, I fell.” corrija",
+"answer": "While I was running, I fell.",
+"why": ""
+}
+]
+}

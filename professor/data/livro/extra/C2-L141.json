@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The book writes with elegance and treats each puzzle like a window to a theory.",
+"right": "The book writes with elegance and treats each puzzle as a window onto a theory.",
+"why": "Português “como uma janela para”; em inglês treat as, e window onto."
+},
+"mcq": [
+{
+"q": "Describe:",
+"opts": [
+"treats each like a window of",
+"treats each as a window onto a theory",
+"treats each for window"
+],
+"ans": 1,
+"why": "treat as."
+},
+{
+"q": "Praise:",
+"opts": [
+"writes in clarity",
+"writes of clarity",
+"writes with clarity"
+],
+"ans": 2,
+"why": "with."
+},
+{
+"q": "Takes ten puzzles → synthesis:",
+"opts": [
+"denies",
+"summarizes",
+"hides"
+],
+"ans": 1,
+"why": "Síntese."
+},
+{
+"q": "Window onto =",
+"opts": [
+"view of",
+"wall",
+"door to"
+],
+"ans": 0,
+"why": "Vista de."
+}
+],
+"fix": [
+{
+"wrong": "It treats each like window.",
+"right": "It treats each as a window.",
+"why": "as."
+},
+{
+"wrong": "She writes of clarity.",
+"right": "She writes with clarity.",
+"why": "with."
+},
+{
+"wrong": "It take ten puzzles.",
+"right": "It takes ten puzzles.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com as: “It sees each puzzle as a window.” (treat)",
+"answer": "It treats each puzzle as a window.",
+"why": ""
+},
+{
+"prompt": "Plural: “The book writes with clarity.”",
+"answer": "The books write with clarity.",
+"why": ""
+},
+{
+"prompt": "Passado: “It takes ten puzzles.”",
+"answer": "It took ten puzzles.",
+"why": ""
+}
+]
+}

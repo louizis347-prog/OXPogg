@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "presente × agora",
+"wrong": "Look! She cooks now.",
+"right": "Look! She is cooking now.",
+"why": "Em português o presente simples cobre ação habitual e agora; em inglês agora exige be + -ing."
+},
+"mcq": [
+{
+"q": "Now: They ___ football.",
+"opts": [
+"play",
+"are playing",
+"plays"
+],
+"ans": 1,
+"why": "Agora."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She needs.",
+"She a pen needs.",
+"She needs a pen."
+],
+"ans": 2,
+"why": "Verbo transitivo precisa de objeto."
+},
+{
+"q": "Question: “You have got a cat.”",
+"opts": [
+"Have you got a cat?",
+"Do you got a cat?",
+"You have got a cat?"
+],
+"ans": 0,
+"why": "Inversão."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She eating.",
+"She is eating.",
+"She is eat."
+],
+"ans": 1,
+"why": "Be + -ing."
+}
+],
+"fix": [
+{
+"wrong": "I am walking to work every day.",
+"right": "I walk to work every day.",
+"why": "Hábito: simples."
+},
+{
+"wrong": "He buys every day.",
+"right": "He buys bread every day.",
+"why": "Falta objeto."
+},
+{
+"wrong": "He has got a dog? Yes, he have.",
+"right": "Has he got a dog? Yes, he has.",
+"why": "Resposta curta."
+}
+],
+"rewrite": [
+{
+"prompt": "Ponha na ordem: “eats / Tom / an apple”",
+"answer": "Tom eats an apple.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You have got a car.”",
+"answer": "Have you got a car?",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “He is cooking.”",
+"answer": "Is he cooking?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "people plural",
+"wrong": "The people is divided about the plan.",
+"right": "The people are divided about the plan.",
+"why": "\"O povo\" é singular em português. Em inglês, people é plural."
+},
+"mcq": [
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto nega",
+"o texto não diz",
+"o texto confirma"
+],
+"ans": 1,
+"why": "Não mencionado."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a tool new useful",
+"a new tool useful",
+"a useful new tool"
+],
+"ans": 2,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"research",
+"a research",
+"researches"
+],
+"ans": 0,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay discusses of both views.",
+"This essay will discuss both views."
+],
+"ans": 2,
+"why": "discuss é transitivo."
+}
+],
+"fix": [
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+},
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+}
+]
+}

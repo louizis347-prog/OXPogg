@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "not so much … as",
+"wrong": "It was not so much the house than the silence that hurt.",
+"right": "It was not so much the house as the silence that hurt.",
+"why": "Em português “não tanto X quanto Y” e “mais X do que Y” se misturam. Em inglês, not so much … as; the comparação com than é de more/less."
+},
+"mcq": [
+{
+"q": "“Not so much X ___ Y.”",
+"opts": [
+"as",
+"than",
+"but"
+],
+"ans": 0,
+"why": "as."
+},
+{
+"q": "“Less out of anger ___ out of habit.”",
+"opts": [
+"as",
+"than",
+"that"
+],
+"ans": 1,
+"why": "less … than."
+},
+{
+"q": "“More afraid than angry” means...",
+"opts": [
+"anger outweighs fear",
+"no feeling",
+"fear outweighs anger"
+],
+"ans": 2,
+"why": "Mais medo."
+},
+{
+"q": "“Rather than” + verb:",
+"opts": [
+"rather than argue",
+"rather than to arguing",
+"rather than argued"
+],
+"ans": 0,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "She was more afraid as angry.",
+"right": "She was more afraid than angry.",
+"why": "than."
+},
+{
+"wrong": "It was not so much anger but habit.",
+"right": "It was not so much anger as habit.",
+"why": "as."
+},
+{
+"wrong": "They talked rather than to fight.",
+"right": "They talked rather than fight.",
+"why": "rather than + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com not so much…as: “It was the silence, more than the house.”",
+"answer": "It was not so much the house as the silence.",
+"why": ""
+},
+{
+"prompt": "Reescreva com less…than: “She acted from habit more than anger.”",
+"answer": "She acted less out of anger than out of habit.",
+"why": ""
+},
+{
+"prompt": "Reescreva com rather than: “They talked and did not fight.”",
+"answer": "They talked rather than fought.",
+"why": ""
+}
+]
+}

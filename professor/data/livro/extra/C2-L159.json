@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta retórica",
+"wrong": "Don’t I always? No, I answer not.",
+"right": "Don’t I always? I do.",
+"why": "Em português a pergunta retórica costuma ter resposta explícita; em inglês o auxiliar negativo já responde sem responder."
+},
+"mcq": [
+{
+"q": "Which question expects “yes”?",
+"opts": [
+"Wouldn’t you say it is still the best?",
+"Would you say it is the worst?",
+"Do you say?"
+],
+"ans": 0,
+"why": "Tag negativa convida ao sim."
+},
+{
+"q": "A rhetorical question…",
+"opts": [
+"needs data",
+"answers without answering",
+"asks the time"
+],
+"ans": 1,
+"why": "Responde sem responder."
+},
+{
+"q": "Complete: “It is the best, ___?”",
+"opts": [
+"is it not it",
+"doesn’t it",
+"isn’t it"
+],
+"ans": 2,
+"why": "Tag com be."
+},
+{
+"q": "Don’t I always? means…",
+"opts": [
+"I am asking.",
+"Yes, I do.",
+"I never do."
+],
+"ans": 1,
+"why": "Resposta implícita."
+}
+],
+"fix": [
+{
+"wrong": "It is still the best, doesn’t it?",
+"right": "It is still the best, isn’t it?",
+"why": "Aux be."
+},
+{
+"wrong": "Wouldn’t you to say it is true?",
+"right": "Wouldn’t you say it is true?",
+"why": "Sem to."
+},
+{
+"wrong": "She never fails, doesn’t she?",
+"right": "She never fails, does she?",
+"why": "Tag positiva após negação."
+}
+],
+"rewrite": [
+{
+"prompt": "Tag question: “It is still the best.”",
+"answer": "It is still the best, isn’t it?",
+"why": ""
+},
+{
+"prompt": "Pergunta retórica negativa: “You would say it is true.”",
+"answer": "Wouldn’t you say it is true?",
+"why": ""
+},
+{
+"prompt": "Tag: “They don’t care.”",
+"answer": "They don’t care, do they?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can’t be (impossibilidade)",
+"wrong": "That can’t to be true and it couldn’t be Leo yesterday.",
+"right": "That can’t be true, and it can’t have been Leo yesterday.",
+"why": "Em português “não pode ser verdade” é igual ao inglês, mas o passado “não pode ter sido” é esquecido. Em inglês, passado = can’t have + pp."
+},
+"mcq": [
+{
+"q": "That ___ be true.",
+"opts": [
+"mustn’t",
+"can’t",
+"don’t"
+],
+"ans": 1,
+"why": "can’t."
+},
+{
+"q": "It ___ have been Leo.",
+"opts": [
+"can’t",
+"can",
+"mustn’t"
+],
+"ans": 0,
+"why": "can’t have."
+},
+{
+"q": "It ___ be the battery.",
+"opts": [
+"can't to",
+"not",
+"couldn’t"
+],
+"ans": 2,
+"why": "couldn’t be."
+},
+{
+"q": "Which is correct? (can’t be (impossibilidade))",
+"opts": [
+"He can’t worked alone.",
+"He can’t has worked.",
+"He can’t have worked alone."
+],
+"ans": 2,
+"why": "can’t have pp."
+}
+],
+"fix": [
+{
+"wrong": "He can’t worked alone.",
+"right": "He can’t have worked alone.",
+"why": "have + pp."
+},
+{
+"wrong": "That can’t to be true.",
+"right": "That can’t be true.",
+"why": "Sem to."
+},
+{
+"wrong": "It couldn’t been Leo.",
+"right": "It couldn’t have been Leo.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “That can’t be true.”",
+"answer": "That can't have been true.",
+"why": ""
+},
+{
+"prompt": "Reescreva com impossibilidade: “It is impossible that he worked alone.”",
+"answer": "He can’t have worked alone.",
+"why": ""
+},
+{
+"prompt": "Reescreva com couldn’t: “It is impossible that it was Leo.”",
+"answer": "It couldn’t have been Leo.",
+"why": ""
+}
+]
+}

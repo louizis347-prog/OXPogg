@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in the mix",
+"wrong": "The guitar sits on the mix well.",
+"right": "The guitar sits in the mix well.",
+"why": "Em português “fica sobre a mixagem/na mixagem” oscila. Em inglês, a expressão fixa é sit in the mix."
+},
+"mcq": [
+{
+"q": "“Muddy” describes a sound that is...",
+"opts": [
+"sharp",
+"silent",
+"unclear"
+],
+"ans": 2,
+"why": "Embaçado."
+},
+{
+"q": "To make room for the vocal, you...",
+"opts": [
+"carve space",
+"raise gain",
+"mute all"
+],
+"ans": 0,
+"why": "carve space."
+},
+{
+"q": "A high-pass filter removes...",
+"opts": [
+"high frequencies",
+"low frequencies",
+"voices"
+],
+"ans": 1,
+"why": "Graves."
+},
+{
+"q": "“Bright” timbre is...",
+"opts": [
+"with strong lows",
+"silent",
+"with strong highs"
+],
+"ans": 2,
+"why": "Brilhante."
+}
+],
+"fix": [
+{
+"wrong": "The bass fights with the vocals by space.",
+"right": "The bass fights with the vocals for space.",
+"why": "for."
+},
+{
+"wrong": "The mix sounds too much muddy.",
+"right": "The mix sounds too muddy.",
+"why": "Sem much."
+},
+{
+"wrong": "Carve a space for the vocal on the mix.",
+"right": "Carve space for the vocal in the mix.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com carve space: “Make room for the vocal.”",
+"answer": "Carve space for the vocal.",
+"why": ""
+},
+{
+"prompt": "Reescreva com sit in the mix: “The drums blend well with the rest.”",
+"answer": "The drums sit well in the mix.",
+"why": ""
+},
+{
+"prompt": "Reescreva com muddy: “The sound is not clear.” (muddy)",
+"answer": "The sound is muddy.",
+"why": ""
+}
+]
+}

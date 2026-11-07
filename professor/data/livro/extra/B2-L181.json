@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "over- = demais",
+"wrong": "I overlooked the cake and it burned.",
+"right": "I overbaked the cake.",
+"why": "Overlook em inglês é ignorar. O brasileiro ligaria over- a \"demais\". Escolha o verbo certo."
+},
+"mcq": [
+{
+"q": "overcook =",
+"opts": [
+"cozinhar pouco",
+"cozinhar demais",
+"cozinhar rápido"
+],
+"ans": 1,
+"why": "over- = excesso."
+},
+{
+"q": "overestimate =",
+"opts": [
+"subestimar",
+"medir",
+"superestimar"
+],
+"ans": 2,
+"why": "over- = acima."
+},
+{
+"q": "overlook =",
+"opts": [
+"ignorar",
+"olhar",
+"examinar"
+],
+"ans": 0,
+"why": "overlook."
+},
+{
+"q": "overwork =",
+"opts": [
+"trabalhar bem",
+"sobrar",
+"trabalhar demais"
+],
+"ans": 2,
+"why": "overwork."
+}
+],
+"fix": [
+{
+"wrong": "I overlooked the cake; it's burned.",
+"right": "I overbaked the cake; it's burned.",
+"why": "Overbake."
+},
+{
+"wrong": "She underestimated the cost and paid too much.",
+"right": "She overestimated the cost and paid too much.",
+"why": "Over."
+},
+{
+"wrong": "Don't overworking.",
+"right": "Don't overwork.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “He overcooks the rice.”",
+"answer": "He overcooked the rice.",
+"why": ""
+},
+{
+"prompt": "Reescreva com over-: “She worked too much.”",
+"answer": "She overworked.",
+"why": ""
+},
+{
+"prompt": "Reescreva com over-: “Don't mix too much.”",
+"answer": "Don't overmix.",
+"why": ""
+}
+]
+}

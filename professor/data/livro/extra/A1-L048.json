@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "come to × come from",
+"wrong": "I came to home early.",
+"right": "I came home early.",
+"why": "Como em go, o brasileiro usa preposição antes de home; em inglês home dispensa to."
+},
+"mcq": [
+{
+"q": "“Vir para casa” =",
+"opts": [
+"come to home",
+"come home",
+"come at home"
+],
+"ans": 1,
+"why": "Come home."
+},
+{
+"q": "“De onde você vem?” =",
+"opts": [
+"Where you come from?",
+"Where are you coming of?",
+"Where do you come from?"
+],
+"ans": 2,
+"why": "Come from."
+},
+{
+"q": "“Vem aqui!” =",
+"opts": [
+"Come here!",
+"Come to here!",
+"Comes here!"
+],
+"ans": 0,
+"why": "Come here."
+},
+{
+"q": "He ___ from Italy.",
+"opts": [
+"come",
+"comes",
+"is come"
+],
+"ans": 1,
+"why": "Terceira."
+}
+],
+"fix": [
+{
+"wrong": "She come from Peru.",
+"right": "She comes from Peru.",
+"why": "-s."
+},
+{
+"wrong": "Come to here!",
+"right": "Come here!",
+"why": "Here dispensa to."
+},
+{
+"wrong": "I came to home late.",
+"right": "I came home late.",
+"why": "Home."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija o verbo: “Go here, please!” (venha)",
+"answer": "Come here, please!",
+"why": ""
+},
+{
+"prompt": "Terceira pessoa: “I come from Italy.” (She)",
+"answer": "She comes from Italy.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You come from Peru.” (Where)",
+"answer": "Where do you come from?",
+"why": ""
+}
+]
+}

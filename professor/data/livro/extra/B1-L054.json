@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "turn out",
+"wrong": "It turned out that he is right.",
+"right": "It turned out that he was right.",
+"why": "Em português “acabou que ele tem razão” aceita o presente. Em inglês, após turned out o verbo seguinte acompanha o passado da narrativa."
+},
+"mcq": [
+{
+"q": "It turned ___ well.",
+"opts": [
+"out",
+"over",
+"up"
+],
+"ans": 0,
+"why": "turn out."
+},
+{
+"q": "“It’s up to you” means…",
+"opts": [
+"você decide",
+"você sobe",
+"você levanta"
+],
+"ans": 0,
+"why": "Decisão sua."
+},
+{
+"q": "It turned out that she ___ right.",
+"opts": [
+"is",
+"was",
+"has been"
+],
+"ans": 1,
+"why": "was."
+},
+{
+"q": "Which is correct? (turn out)",
+"opts": [
+"It turned out good.",
+"It turned out goodly.",
+"It turned out well."
+],
+"ans": 2,
+"why": "well."
+}
+],
+"fix": [
+{
+"wrong": "It turned out good.",
+"right": "It turned out well.",
+"why": "Advérbio."
+},
+{
+"wrong": "It is up at you.",
+"right": "It’s up to you.",
+"why": "up to."
+},
+{
+"wrong": "It turned out that he comes.",
+"right": "It turned out that he came.",
+"why": "Past."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “It turns out that she knows.”",
+"answer": "It turned out that she knew.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “You decide.” com up to",
+"answer": "It’s up to you.",
+"why": ""
+},
+{
+"prompt": "Reescreva com turn out + well: “The plan went well.”",
+"answer": "The plan turned out well.",
+"why": ""
+}
+]
+}

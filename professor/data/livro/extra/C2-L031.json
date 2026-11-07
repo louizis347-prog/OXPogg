@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "take issue with",
+"wrong": "He took issue to the report’s method.",
+"right": "He took issue with the report’s method.",
+"why": "Em português “discordar de” sugere preposição vaga. Em inglês, take issue with e take exception to."
+},
+"mcq": [
+{
+"q": "“take up” a habit means...",
+"opts": [
+"stop it",
+"start it",
+"hide it"
+],
+"ans": 1,
+"why": "Começar."
+},
+{
+"q": "“She took to it” means...",
+"opts": [
+"she took it away",
+"she gave up",
+"she liked it"
+],
+"ans": 2,
+"why": "Gostar."
+},
+{
+"q": "“take issue with” means...",
+"opts": [
+"disagree",
+"agree",
+"leave"
+],
+"ans": 0,
+"why": "Discordar."
+},
+{
+"q": "“take exception to” means...",
+"opts": [
+"accept",
+"be offended by",
+"give"
+],
+"ans": 1,
+"why": "Ofender-se."
+}
+],
+"fix": [
+{
+"wrong": "She took on maths at twelve and took to it.",
+"right": "She took up maths at twelve and took to it.",
+"why": "take up."
+},
+{
+"wrong": "He took exception with the tone.",
+"right": "He took exception to the tone.",
+"why": "to."
+},
+{
+"wrong": "A private tutor taken issue with the notes.",
+"right": "A private tutor took issue with the notes.",
+"why": "took."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com take up: “She began studying maths.”",
+"answer": "She took up maths.",
+"why": ""
+},
+{
+"prompt": "Reescreva com take issue with: “He disagrees with the method.”",
+"answer": "He takes issue with the method.",
+"why": ""
+},
+{
+"prompt": "Reescreva com take exception to: “He was offended by the tone.”",
+"answer": "He took exception to the tone.",
+"why": ""
+}
+]
+}

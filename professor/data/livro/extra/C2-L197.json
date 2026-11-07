@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The court assumes innocence; I presume that for the argument, and it gives rise of doubt.",
+"right": "The court presumes innocence; let us assume it for the argument, and it gives rise to doubt.",
+"why": "Presume = com indícios/regra; assume = ponto de partida; give rise to leva to."
+},
+"mcq": [
+{
+"q": "Premise, not evidence:",
+"opts": [
+"presume",
+"resume",
+"assume"
+],
+"ans": 2,
+"why": "Ponto de partida."
+},
+{
+"q": "Which phrase means to produce doubt?",
+"opts": [
+"give in to",
+"give up",
+"give rise to"
+],
+"ans": 2,
+"why": "give rise to."
+},
+{
+"q": "Based on evidence:",
+"opts": [
+"assume",
+"presume",
+"assure"
+],
+"ans": 1,
+"why": "Indícios."
+},
+{
+"q": "Give voice to means…",
+"opts": [
+"express",
+"hide",
+"count"
+],
+"ans": 0,
+"why": "Expressar."
+}
+],
+"fix": [
+{
+"wrong": "The judge assumed him innocent by law.",
+"right": "The judge presumed him innocent by law.",
+"why": "Regra."
+},
+{
+"wrong": "It gives rise a doubt.",
+"right": "It gives rise to a doubt.",
+"why": "to."
+},
+{
+"wrong": "I presume it for the sake of argument.",
+"right": "I assume it for the sake of argument.",
+"why": "Ponto de partida."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por presume: “The law takes him as innocent.”",
+"answer": "The law presumes him innocent.",
+"why": ""
+},
+{
+"prompt": "Troque por assume: “Suppose it is true, for argument.”",
+"answer": "Assume it is true, for argument.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It causes doubt.” (give rise to)",
+"answer": "It gives rise to doubt.",
+"why": ""
+}
+]
+}

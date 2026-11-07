@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem de tag",
+"wrong": "You are tired, are you?",
+"right": "You are tired, aren’t you?",
+"why": "Para pedir confirmação o brasileiro repete a frase sem inverter a polaridade. A tag inglesa inverte: afirmativa leva tag negativa."
+},
+"mcq": [
+{
+"q": "Which is a correct question tag?",
+"opts": [
+"It’s big, isn’t it?",
+"It’s big, is it?",
+"It’s big, don’t it?"
+],
+"ans": 0,
+"why": "Is → isn’t it."
+},
+{
+"q": "The sand **___** we saw was white.",
+"opts": [
+"who",
+"whose",
+"that"
+],
+"ans": 2,
+"why": "Coisa → that."
+},
+{
+"q": "I had trouble **___** the cave.",
+"opts": [
+"find",
+"finding",
+"to find"
+],
+"ans": 1,
+"why": "Trouble + -ing."
+},
+{
+"q": "Keep a promise means:",
+"opts": [
+"esquecer",
+"fazer uma promessa",
+"cumprir uma promessa"
+],
+"ans": 2,
+"why": "Keep a promise = cumprir."
+}
+],
+"fix": [
+{
+"wrong": "I have trouble to climb the rock.",
+"right": "I have trouble climbing the rock.",
+"why": "Trouble + -ing."
+},
+{
+"wrong": "He took care for his sister.",
+"right": "He took care of his sister.",
+"why": "Take care of, não for."
+},
+{
+"wrong": "She is a guide who her name is Ana.",
+"right": "She is a guide whose name is Ana.",
+"why": "Posse: whose."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com who: “I know a man. He explores caves.”",
+"answer": "I know a man who explores caves.",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “It is a valley.”",
+"answer": "It is a valley, isn’t it?",
+"why": ""
+},
+{
+"prompt": "Use trouble: “I can’t find the way.” (finding)",
+"answer": "I have trouble finding the way.",
+"why": ""
+}
+]
+}

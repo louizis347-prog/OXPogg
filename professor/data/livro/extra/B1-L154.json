@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "oração relativa",
+"wrong": "The teacher who she helped me is kind. The class that I loved it was fun. The town where I lived there is small.",
+"right": "The teacher who helped me is kind. The class that I loved was fun. The town where I lived is small.",
+"why": "O português tolera o pronome repetido (“a professora que ela me ajudou”). Em inglês, who/that/where já substituem o sujeito/objeto/lugar; repetir she, it ou there é erro."
+},
+"mcq": [
+{
+"q": "The teacher ___ helped me.",
+"opts": [
+"which",
+"who",
+"where"
+],
+"ans": 1,
+"why": "Pessoa."
+},
+{
+"q": "The class ___ I loved.",
+"opts": [
+"that",
+"who",
+"where"
+],
+"ans": 0,
+"why": "Coisa."
+},
+{
+"q": "The town ___ I lived.",
+"opts": [
+"who",
+"where",
+"which"
+],
+"ans": 1,
+"why": "Lugar."
+},
+{
+"q": "Which is correct? (oração relativa)",
+"opts": [
+"The man who he called is my uncle.",
+"The man what called is my uncle.",
+"The man who called is my uncle."
+],
+"ans": 2,
+"why": "Sem pronome repetido."
+}
+],
+"fix": [
+{
+"wrong": "The book that I read it was good.",
+"right": "The book that I read was good.",
+"why": "Sem it."
+},
+{
+"wrong": "The girl who she sings is my friend.",
+"right": "The girl who sings is my friend.",
+"why": "Sem she."
+},
+{
+"wrong": "The cafe where we met there is closed.",
+"right": "The cafe where we met is closed.",
+"why": "Sem there."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “I know a teacher. She helped me.” (who)",
+"answer": "I know a teacher who helped me.",
+"why": ""
+},
+{
+"prompt": "Una: “This is the class. I loved it.” (that)",
+"answer": "This is the class that I loved.",
+"why": ""
+},
+{
+"prompt": "Una: “That is the town. I lived there.” (where)",
+"answer": "That is the town where I lived.",
+"why": ""
+}
+]
+}

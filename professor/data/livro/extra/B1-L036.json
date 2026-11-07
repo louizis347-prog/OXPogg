@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "família de palavras (succeed)",
+"wrong": "He succeeded to bake the cake successful.",
+"right": "He succeeded in baking the cake successfully.",
+"why": "Em português “conseguiu assar” usa infinitivo e “bem-sucedido” confunde adjetivo e advérbio. Em inglês: succeed in + -ing, e o advérbio é successfully (depois do verbo)."
+},
+"mcq": [
+{
+"q": "Her ___ is clear.",
+"opts": [
+"success",
+"successful",
+"succeed"
+],
+"ans": 0,
+"why": "Substantivo."
+},
+{
+"q": "She is a ___ chef.",
+"opts": [
+"success",
+"successfully",
+"successful"
+],
+"ans": 2,
+"why": "Adjetivo."
+},
+{
+"q": "He finished it ___.",
+"opts": [
+"success",
+"successfully",
+"successful"
+],
+"ans": 1,
+"why": "Advérbio."
+},
+{
+"q": "He succeeded ___ baking it.",
+"opts": [
+"in",
+"to",
+"at"
+],
+"ans": 0,
+"why": "succeed in."
+}
+],
+"fix": [
+{
+"wrong": "She is very success.",
+"right": "She is very successful.",
+"why": "Adjetivo."
+},
+{
+"wrong": "They succeeded to pass.",
+"right": "They succeeded in passing.",
+"why": "succeed in + -ing."
+},
+{
+"wrong": "He did it successful.",
+"right": "He did it successfully.",
+"why": "Advérbio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com succeed: “He baked it with success.”",
+"answer": "He succeeded in baking it.",
+"why": ""
+},
+{
+"prompt": "Use o adjetivo: “She has a lot of success.”",
+"answer": "She is successful.",
+"why": ""
+},
+{
+"prompt": "Use o advérbio: “He passed the test with success.”",
+"answer": "He passed the test successfully.",
+"why": ""
+}
+]
+}

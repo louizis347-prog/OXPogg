@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal errado",
+"wrong": "If I knew, I should help you last year.",
+"right": "I should have helped you last year.",
+"why": "O brasileiro usa o passado simples para falar de um erro passado. Para crítica ou arrependimento, use should have + particípio."
+},
+"mcq": [
+{
+"q": "Qual frase é uma possibilidade perdida (não crítica)?",
+"opts": [
+"You must ask me.",
+"You are asking me.",
+"You could have asked me."
+],
+"ans": 2,
+"why": "could have + particípio = possibilidade que não se realizou."
+},
+{
+"q": "**ought to have done** é parecido com...",
+"opts": [
+"should have done",
+"will have done",
+"used to do"
+],
+"ans": 0,
+"why": "ought to have e should have têm sentido muito próximo."
+},
+{
+"q": "Como dizer \"Eu não deveria ter gritado\"?",
+"opts": [
+"I shouldn't shout.",
+"I shouldn't have shouted.",
+"I don't should have shouted."
+],
+"ans": 1,
+"why": "A negativa é shouldn't have + particípio; não se usa don't com modais."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He ought to have called.",
+"He ought have to called.",
+"He ought to had called."
+],
+"ans": 0,
+"why": "A ordem é ought to have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "They should have been listen to the doctor.",
+"right": "They should have listened to the doctor.",
+"why": "Não é voz passiva aqui: should have + particípio de listen."
+},
+{
+"wrong": "You could have ask me for help.",
+"right": "You could have asked me for help.",
+"why": "Após could have, use o particípio asked."
+},
+{
+"wrong": "He should had study harder.",
+"right": "He should have studied harder.",
+"why": "A estrutura é should have + particípio, não should had."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque should por ought to: “She should have asked.”",
+"answer": "She ought to have asked.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “I can help him.” (possibilidade perdida)",
+"answer": "I could have helped him.",
+"why": ""
+},
+{
+"prompt": "Reescreva como crítica: “He leaves early.”",
+"answer": "He should have left early.",
+"why": ""
+}
+]
+}

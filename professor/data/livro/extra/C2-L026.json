@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "unless negativo",
+"wrong": "Unless penalties do not rise, firms will keep cheating.",
+"right": "Unless penalties rise, firms will keep cheating.",
+"why": "Em português “a menos que não aumentem” pode soar natural. Em inglês, unless já contém a negação; evite not."
+},
+"mcq": [
+{
+"q": "“___ the regulator cracked down, consumers would not be paying.” (past)",
+"opts": [
+"Were",
+"Should",
+"Had"
+],
+"ans": 2,
+"why": "Had cracked."
+},
+{
+"q": "“___ it to act, prices would fall.”",
+"opts": [
+"Were",
+"Had",
+"Should"
+],
+"ans": 0,
+"why": "Were it to act."
+},
+{
+"q": "“___ penalties are strict, firms comply.”",
+"opts": [
+"Unless",
+"Provided",
+"Despite"
+],
+"ans": 1,
+"why": "Provided (desde que)."
+},
+{
+"q": "A **misleading advert** is one that...",
+"opts": [
+"is long",
+"is cheap",
+"gives a false impression"
+],
+"ans": 2,
+"why": "Engana."
+}
+],
+"fix": [
+{
+"wrong": "Had the regulator acted, consumers would not pay now.",
+"right": "Had the regulator acted, consumers would not be paying now.",
+"why": "would not be paying."
+},
+{
+"wrong": "Provided that firms to comply, fines stay low.",
+"right": "Provided that firms comply, fines stay low.",
+"why": "Presente."
+},
+{
+"wrong": "Unless the watchdog acts, will the ads continue.",
+"right": "Unless the watchdog acts, the ads will continue.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Unless: “If penalties do not rise, firms will keep cheating.”",
+"answer": "Unless penalties rise, firms will keep cheating.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Had: “If the regulator had acted, we would not be paying.”",
+"answer": "Had the regulator acted, we would not be paying.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Provided: “Only if firms comply, fines stay low.” (Provided that…)",
+"answer": "Provided that firms comply, fines stay low.",
+"why": ""
+}
+]
+}

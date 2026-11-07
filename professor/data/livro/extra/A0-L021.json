@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo + possessivo",
+"wrong": "The my brother is tall.",
+"right": "My brother is tall.",
+"why": "Em português é comum \"o meu irmão\"; em inglês não se usa artigo antes de my."
+},
+"mcq": [
+{
+"q": "You have a pen. It is ___ pen.",
+"opts": [
+"you",
+"yours",
+"your"
+],
+"ans": 2,
+"why": "Possessivo antes do substantivo: your."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"My sister is nice.",
+"The my sister is nice.",
+"Me sister is nice."
+],
+"ans": 0,
+"why": "Sem artigo."
+},
+{
+"q": "I am Leo. ___ name is Leo.",
+"opts": [
+"Me",
+"My",
+"I"
+],
+"ans": 1,
+"why": "My name."
+},
+{
+"q": "Ana and I: ___ house is big.",
+"opts": [
+"We",
+"Us",
+"Our"
+],
+"ans": 2,
+"why": "Possessivo de we: our."
+}
+],
+"fix": [
+{
+"wrong": "The my book is here.",
+"right": "My book is here.",
+"why": "Sem artigo."
+},
+{
+"wrong": "Tom has her phone.",
+"right": "Tom has his phone.",
+"why": "Tom é homem."
+},
+{
+"wrong": "You book is on the desk.",
+"right": "Your book is on the desk.",
+"why": "You é pronome sujeito; antes de substantivo use o possessivo your."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com her: “This is Ana’s bag.”",
+"answer": "This is her bag.",
+"why": ""
+},
+{
+"prompt": "Reescreva com your: “This is the book of you.”",
+"answer": "This is your book.",
+"why": ""
+},
+{
+"prompt": "Reescreva com my: “The bag of me is here.”",
+"answer": "My bag is here.",
+"why": ""
+}
+]
+}

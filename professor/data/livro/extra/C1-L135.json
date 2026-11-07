@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "misto B",
+"wrong": "If I had the money, I would have bought the house.",
+"right": "If I had had the money, I would have bought the house.",
+"why": "O brasileiro usa if + passado simples para algo passado. Para o 3º tipo (passado irreal), use had + pp."
+},
+"mcq": [
+{
+"q": "If it ___ up to me, I would build it. (agora)",
+"opts": [
+"would be",
+"were",
+"had been"
+],
+"ans": 1,
+"why": "2º tipo."
+},
+{
+"q": "If it ___ up to me, I would have built it. (passado)",
+"opts": [
+"were",
+"was being",
+"had been"
+],
+"ans": 2,
+"why": "3º tipo."
+},
+{
+"q": "Misto B: if + past simples, would have + pp: If I ___ rich, I would have helped.",
+"opts": [
+"were",
+"had been",
+"am"
+],
+"ans": 0,
+"why": "Estado atual."
+},
+{
+"q": "The 3rd type uses…",
+"opts": [
+"present / will",
+"had + pp / would have + pp",
+"past / would"
+],
+"ans": 1,
+"why": "3º tipo."
+}
+],
+"fix": [
+{
+"wrong": "If I had the money, I would have bought it.",
+"right": "If I had had the money, I would have bought it.",
+"why": "had had."
+},
+{
+"wrong": "If he is kind, he would have helped.",
+"right": "If he were kind, he would have helped.",
+"why": "were."
+},
+{
+"wrong": "If she would be here, we would have won.",
+"right": "If she were here, we would have won.",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "3º tipo: “I didn’t have the money, so I didn’t buy it.”",
+"answer": "If I had had the money, I would have bought it.",
+"why": ""
+},
+{
+"prompt": "2º tipo: “It is not up to me, so I don’t build it.”",
+"answer": "If it were up to me, I would build it.",
+"why": ""
+},
+{
+"prompt": "Misto B: “He isn’t kind, so he didn’t help.”",
+"answer": "If he were kind, he would have helped.",
+"why": ""
+}
+]
+}

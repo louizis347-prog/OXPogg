@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "concordar",
+"wrong": "The examiner did not concord with our amendment.",
+"right": "The examiner did not agree with our amendment.",
+"why": "Em português “concordar” sugere concord. Em inglês, concord é substantivo/raro; o verbo é agree."
+},
+"mcq": [
+{
+"q": "A tactful disagreement:",
+"opts": [
+"We respectfully disagree.",
+"You are wrong.",
+"No way."
+],
+"ans": 0,
+"why": "Cortês."
+},
+{
+"q": "“Still less” adds...",
+"opts": [
+"a positive",
+"a stronger negative",
+"a date"
+],
+"ans": 1,
+"why": "Ênfase negativa."
+},
+{
+"q": "In a patent, **prior art** is...",
+"opts": [
+"a painting",
+"a fee",
+"earlier known work"
+],
+"ans": 2,
+"why": "Anterior."
+},
+{
+"q": "To propose a fix:",
+"opts": [
+"We therefore propose to amend claim 1.",
+"Change it.",
+"It is fixed."
+],
+"ans": 0,
+"why": "Proposta."
+}
+],
+"fix": [
+{
+"wrong": "The examiner agrees to us.",
+"right": "The examiner agrees with us.",
+"why": "agree with."
+},
+{
+"wrong": "We respectfully disagree of the examiner.",
+"right": "We respectfully disagree with the examiner.",
+"why": "with."
+},
+{
+"wrong": "The claim amendment were filed.",
+"right": "The claim amendment was filed.",
+"why": "was."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva mais cortês: “You are wrong.” (We respectfully…)",
+"answer": "We respectfully disagree.",
+"why": ""
+},
+{
+"prompt": "Reescreva com still less: “It does not teach this, and does not suggest it.”",
+"answer": "It does not teach this, still less suggest it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com agree: “The examiner did not concord.”",
+"answer": "The examiner did not agree.",
+"why": ""
+}
+]
+}

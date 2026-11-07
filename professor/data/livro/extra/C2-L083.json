@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "The queue is like a river of slow.",
+"right": "The queue is a river.",
+"why": "Metáfora em inglês não usa like; símile sim: the queue is like a river."
+},
+"mcq": [
+{
+"q": "Metaphor:",
+"opts": [
+"The queue as river.",
+"The queue is a river.",
+"The queue is like a river."
+],
+"ans": 1,
+"why": "Metáfora direta."
+},
+{
+"q": "Simile uses…",
+"opts": [
+"was",
+"like or as",
+"is"
+],
+"ans": 1,
+"why": "like."
+},
+{
+"q": "Scale contrast:",
+"opts": [
+"weighs no more than a leaf",
+"weighs not more as a leaf",
+"weighs no more that a leaf"
+],
+"ans": 0,
+"why": "No more than."
+},
+{
+"q": "A collective image:",
+"opts": [
+"The crowd is a tide.",
+"A crowd tide is.",
+"The crowd tide."
+],
+"ans": 0,
+"why": "Imagem."
+}
+],
+"fix": [
+{
+"wrong": "The queue is a river than moves slowly.",
+"right": "The queue is a river that moves slowly.",
+"why": "that."
+},
+{
+"wrong": "It weighs no more as a leaf.",
+"right": "It weighs no more than a leaf.",
+"why": "than."
+},
+{
+"wrong": "The crowd like a tide.",
+"right": "The crowd is like a tide.",
+"why": "Verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Simile: “The queue is a river.”",
+"answer": "The queue is like a river.",
+"why": ""
+},
+{
+"prompt": "Metáfora: “The crowd is like a tide.”",
+"answer": "The crowd is a tide.",
+"why": ""
+},
+{
+"prompt": "Passado: “It weighs no more than a leaf.”",
+"answer": "It weighed no more than a leaf.",
+"why": ""
+}
+]
+}

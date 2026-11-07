@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + -ing",
+"wrong": "I enjoy to work here and she finished to plan.",
+"right": "I enjoy working here, and she finished planning.",
+"why": "Em português “gosto de trabalhar” e “terminou de planejar” usam infinitivo. Em inglês, enjoy, finish, avoid e keep pedem -ing."
+},
+"mcq": [
+{
+"q": "I enjoy ___ here.",
+"opts": [
+"to work",
+"work",
+"working"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "He avoids ___ breaks.",
+"opts": [
+"to take",
+"taking",
+"take"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "We keep ___.",
+"opts": [
+"trying",
+"to try",
+"try"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "She finished ___.",
+"opts": [
+"to plan",
+"plan",
+"planning"
+],
+"ans": 2,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I enjoy to read.",
+"right": "I enjoy reading.",
+"why": "-ing."
+},
+{
+"wrong": "He avoids to drive.",
+"right": "He avoids driving.",
+"why": "-ing."
+},
+{
+"wrong": "We finished to eat.",
+"right": "We finished eating.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com enjoy: “I like (work) here.”",
+"answer": "I enjoy working here.",
+"why": ""
+},
+{
+"prompt": "Reescreva com avoid: “He doesn't take breaks.”",
+"answer": "He avoids taking breaks.",
+"why": ""
+},
+{
+"prompt": "Reescreva com keep: “We try again and again.”",
+"answer": "We keep trying.",
+"why": ""
+}
+]
+}

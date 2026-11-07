@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição em verbos de estudo",
+"wrong": "This study compared about remote and office workers, according to the authors.",
+"right": "This study compared remote and office workers, according to the authors.",
+"why": "Em português “comparou sobre” é raro, mas o brasileiro acrescenta preposição por analogia com “falar de”. Em inglês compare, examine, report são transitivos diretos."
+},
+"mcq": [
+{
+"q": "This study ___ two groups.",
+"opts": [
+"compared",
+"compared about",
+"compared of"
+],
+"ans": 0,
+"why": "Direto."
+},
+{
+"q": "“According to the authors” indicates…",
+"opts": [
+"método",
+"resultado",
+"fonte"
+],
+"ans": 2,
+"why": "Fonte."
+},
+{
+"q": "“Remote staff reported…” gives…",
+"opts": [
+"resultado",
+"método",
+"ressalva"
+],
+"ans": 0,
+"why": "Resultado."
+},
+{
+"q": "However introduces…",
+"opts": [
+"fonte",
+"ressalva",
+"método"
+],
+"ans": 1,
+"why": "Contraste."
+}
+],
+"fix": [
+{
+"wrong": "The team examined about diets.",
+"right": "The team examined diets.",
+"why": "Sem about."
+},
+{
+"wrong": "Remote staff reports less stress last year.",
+"right": "Remote staff reported less stress last year.",
+"why": "Passado."
+},
+{
+"wrong": "According the authors, it works.",
+"right": "According to the authors, it works.",
+"why": "according to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Remote staff report less stress.”",
+"answer": "Remote staff reported less stress.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem preposição: “The authors examined about the results.”",
+"answer": "The authors examined the results.",
+"why": ""
+},
+{
+"prompt": "Use according to: “The authors say it helps.”",
+"answer": "According to the authors, it helps.",
+"why": ""
+}
+]
+}

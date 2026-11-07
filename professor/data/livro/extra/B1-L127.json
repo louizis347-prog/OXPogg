@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "adjetivo + preposição + -ing",
+"wrong": "He is interested to build. She is good in fix. I am afraid to fail.",
+"right": "He is interested in building. She is good at fixing. I am afraid of failing.",
+"why": "Em português “interessado em construir”, “bom em consertar” e “medo de falhar” usam infinitivo após preposição. Em inglês, após preposição vem -ing e a preposição muda (in, at, of)."
+},
+"mcq": [
+{
+"q": "He is interested ___ building.",
+"opts": [
+"on",
+"to",
+"in"
+],
+"ans": 2,
+"why": "in."
+},
+{
+"q": "She is good ___ fixing.",
+"opts": [
+"at",
+"in",
+"of"
+],
+"ans": 0,
+"why": "at."
+},
+{
+"q": "I am afraid ___ failing.",
+"opts": [
+"from",
+"for",
+"of"
+],
+"ans": 2,
+"why": "of."
+},
+{
+"q": "After a preposition use…",
+"opts": [
+"to + base",
+"-ing",
+"base"
+],
+"ans": 1,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I'm interested in learn.",
+"right": "I'm interested in learning.",
+"why": "-ing."
+},
+{
+"wrong": "He is good in math.",
+"right": "He is good at math.",
+"why": "at."
+},
+{
+"wrong": "We are afraid to fall.",
+"right": "We are afraid of falling.",
+"why": "of + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She likes cooking and is good at it.” (good at cook)",
+"answer": "She is good at cooking.",
+"why": ""
+},
+{
+"prompt": "Reescreva com interested: “He wants to know about painting.”",
+"answer": "He is interested in painting.",
+"why": ""
+},
+{
+"prompt": "Reescreva com afraid: “I fear flying.”",
+"answer": "I am afraid of flying.",
+"why": ""
+}
+]
+}

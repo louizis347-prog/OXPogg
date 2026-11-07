@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tend / prone",
+"wrong": "Managers are tend to misread tone.",
+"right": "Managers tend to misread tone.",
+"why": "O brasileiro cria “estão tendendo a” com be. Em inglês, tend to é verbo comum, sem be."
+},
+"mcq": [
+{
+"q": "Managers ___ to misread tone.",
+"opts": [
+"tend",
+"are tend",
+"tending"
+],
+"ans": 0,
+"why": "tend."
+},
+{
+"q": "Aim, Activities, Rationale, Budget are parts of a…",
+"opts": [
+"essay",
+"proposal",
+"report"
+],
+"ans": 1,
+"why": "Proposta."
+},
+{
+"q": "She is prone ___ errors.",
+"opts": [
+"of",
+"for",
+"to"
+],
+"ans": 2,
+"why": "prone to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He is inclined to agree.",
+"He is inclined agree.",
+"He inclined to agree."
+],
+"ans": 0,
+"why": "be inclined to."
+}
+],
+"fix": [
+{
+"wrong": "Managers are tend to misread tone.",
+"right": "Managers tend to misread tone.",
+"why": "Sem be."
+},
+{
+"wrong": "He inclined to agree.",
+"right": "He is inclined to agree.",
+"why": "be."
+},
+{
+"wrong": "She is prone for errors.",
+"right": "She is prone to errors.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Use tend to: “Managers are usually misreading tone.” (misread)",
+"answer": "Managers tend to misread tone.",
+"why": ""
+},
+{
+"prompt": "Use be inclined to: “He tends to agree.”",
+"answer": "He is inclined to agree.",
+"why": ""
+},
+{
+"prompt": "Use prone to: “She often makes errors.” (is prone to errors)",
+"answer": "She is prone to errors.",
+"why": ""
+}
+]
+}

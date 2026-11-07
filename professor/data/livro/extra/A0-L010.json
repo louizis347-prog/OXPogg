@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "resposta curta",
+"wrong": "Are you tired? — Yes, I tired.",
+"right": "Are you tired? — Yes, I am.",
+"why": "O brasileiro responde só \"sim\" ou repete o adjetivo; a resposta curta em inglês repete o sujeito + be."
+},
+"mcq": [
+{
+"q": "Is he a doctor? — ___",
+"opts": [
+"No, he isn’t.",
+"No, he doesn’t.",
+"No, he no."
+],
+"ans": 0,
+"why": "Resposta com isn’t."
+},
+{
+"q": "___ they friends?",
+"opts": [
+"Is",
+"Are",
+"Do"
+],
+"ans": 1,
+"why": "They: are."
+},
+{
+"q": "Short answer: “Am I late?” Yes, ___",
+"opts": [
+"you do.",
+"I am.",
+"you are."
+],
+"ans": 2,
+"why": "Mudamos o pronome: you are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Is the book new?",
+"Is new the book?",
+"Does the book new?"
+],
+"ans": 0,
+"why": "Is + sujeito + adjetivo."
+}
+],
+"fix": [
+{
+"wrong": "Is she is nice?",
+"right": "Is she nice?",
+"why": "Um is só."
+},
+{
+"wrong": "Do you tired?",
+"right": "Are you tired?",
+"why": "Be não usa do."
+},
+{
+"wrong": "Yes, I do. (Are you late?)",
+"right": "Yes, I am.",
+"why": "A resposta repete o be."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “He is a student.”",
+"answer": "Is he a student?",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “They are in class.”",
+"answer": "Are they in class?",
+"why": ""
+},
+{
+"prompt": "Resposta curta negativa para “Is she tired?” (com isn’t)",
+"answer": "No, she isn’t.",
+"why": ""
+}
+]
+}

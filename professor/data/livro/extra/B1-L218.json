@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so/such",
+"wrong": "It was so a spicy soup.",
+"right": "It was such a spicy soup.",
+"why": "Português “tão apimentada”. Antes de substantivo usa-se such a."
+},
+"mcq": [
+{
+"q": "It’s **___** spicy.",
+"opts": [
+"such a",
+"so",
+"such"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "It was **___** a spicy soup.",
+"opts": [
+"too",
+"such",
+"so"
+],
+"ans": 1,
+"why": "Such a."
+},
+{
+"q": "They are **___** good friends.",
+"opts": [
+"such",
+"so",
+"such a"
+],
+"ans": 0,
+"why": "Plural."
+},
+{
+"q": "He is **___** a kind man.",
+"opts": [
+"such",
+"very",
+"so"
+],
+"ans": 0,
+"why": "Such a."
+}
+],
+"fix": [
+{
+"wrong": "It is such spicy.",
+"right": "It is so spicy.",
+"why": "So + adj."
+},
+{
+"wrong": "He is so kind man.",
+"right": "He is such a kind man.",
+"why": "Such a."
+},
+{
+"wrong": "They are such a good friends.",
+"right": "They are such good friends.",
+"why": "Plural sem a."
+}
+],
+"rewrite": [
+{
+"prompt": "Use so: “The soup is very spicy.”",
+"answer": "The soup is so spicy.",
+"why": ""
+},
+{
+"prompt": "Use such a: “It is a very spicy soup.”",
+"answer": "It is such a spicy soup.",
+"why": ""
+},
+{
+"prompt": "Use such: “They are very good friends.”",
+"answer": "They are such good friends.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "proposal / objetivo",
+"wrong": "What I am proposing a joint study.",
+"right": "What I am proposing is a joint study.",
+"why": "Falta o verbo ser depois da oração com what; o português “o que proponho é…” o exige também, mas o brasileiro o omite ao falar rápido."
+},
+"mcq": [
+{
+"q": "What I am proposing ___ a joint study.",
+"opts": [
+"are",
+"does",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "The aim ___ to compare methods.",
+"opts": [
+"is",
+"has",
+"does"
+],
+"ans": 0,
+"why": "is."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"What propose I is a pilot.",
+"What I propose is a pilot.",
+"What I propose a pilot."
+],
+"ans": 1,
+"why": "What…is."
+},
+{
+"q": "A proposal states…",
+"opts": [
+"a poem",
+"a joke",
+"aim and plan"
+],
+"ans": 2,
+"why": "Objetivo e plano."
+}
+],
+"fix": [
+{
+"wrong": "What I propose a pilot.",
+"right": "What I propose is a pilot.",
+"why": "is."
+},
+{
+"wrong": "The aim to compare methods.",
+"right": "The aim is to compare methods.",
+"why": "is."
+},
+{
+"wrong": "I propose that we starts now.",
+"right": "I propose that we start now.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudo-clivada: “I propose a joint study.”",
+"answer": "What I propose is a joint study.",
+"why": ""
+},
+{
+"prompt": "Complete: “The aim is ___ compare methods.” (frase)",
+"answer": "The aim is to compare methods.",
+"why": ""
+},
+{
+"prompt": "Com that: “We should start now.” (I propose…)",
+"answer": "I propose that we start now.",
+"why": ""
+}
+]
+}

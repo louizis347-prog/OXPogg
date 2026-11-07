@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem de porcentagem",
+"wrong": "There is a chance of 40% of rain tonight.",
+"right": "There is a 40% chance of rain tonight.",
+"why": "Em português “40% de chance de chuva” põe o número depois. Em inglês, a porcentagem vem antes de chance."
+},
+"mcq": [
+{
+"q": "“Temperatures will ___ fall.” (slowly)",
+"opts": [
+"gradual",
+"gradually",
+"graduate"
+],
+"ans": 1,
+"why": "Advérbio."
+},
+{
+"q": "Certainty: “Rain is ___ tomorrow.”",
+"opts": [
+"hoped",
+"wanted",
+"expected"
+],
+"ans": 2,
+"why": "expected."
+},
+{
+"q": "Intensity scale:",
+"opts": [
+"light, moderate, heavy",
+"tall, short",
+"hot, cold"
+],
+"ans": 0,
+"why": "Escala."
+},
+{
+"q": "A low-pressure system brings...",
+"opts": [
+"gold",
+"unsettled weather",
+"dust only"
+],
+"ans": 1,
+"why": "Instável."
+}
+],
+"fix": [
+{
+"wrong": "The weather front will arrives tonight.",
+"right": "The weather front will arrive tonight.",
+"why": "will + base."
+},
+{
+"wrong": "Winds will be gusty with heavy raining.",
+"right": "Winds will be gusty with heavy rain.",
+"why": "Substantivo."
+},
+{
+"wrong": "It is likely that will rain.",
+"right": "It is likely that it will rain.",
+"why": "Sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “There is a chance of 30% of rain.”",
+"answer": "There is a 30% chance of rain.",
+"why": ""
+},
+{
+"prompt": "Reescreva com likely: “Rain will probably fall.” (is likely to)",
+"answer": "Rain is likely to fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva com gradually: “Temperatures will fall little by little.”",
+"answer": "Temperatures will gradually fall.",
+"why": ""
+}
+]
+}

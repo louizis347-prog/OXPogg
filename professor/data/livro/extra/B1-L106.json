@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva básica",
+"wrong": "Laptops make in China. It built in 1975.",
+"right": "Laptops are made in China. It was built in 1975.",
+"why": "Em português “fabricam-se laptops” e “foi construído” usam se ou ser. O brasileiro esquece o verbo be e usa o particípio sozinho. Em inglês: be + particípio."
+},
+"mcq": [
+{
+"q": "Laptops ___ in China.",
+"opts": [
+"made",
+"are make",
+"are made"
+],
+"ans": 2,
+"why": "are made."
+},
+{
+"q": "It ___ in 1975.",
+"opts": [
+"was built",
+"built",
+"is build"
+],
+"ans": 0,
+"why": "was built."
+},
+{
+"q": "Past passive uses…",
+"opts": [
+"did + pp",
+"was/were + pp",
+"has + pp"
+],
+"ans": 1,
+"why": "was/were."
+},
+{
+"q": "Present passive of “make”:",
+"opts": [
+"is made",
+"is make",
+"makes"
+],
+"ans": 0,
+"why": "is made."
+}
+],
+"fix": [
+{
+"wrong": "It build in 1975.",
+"right": "It was built in 1975.",
+"why": "was built."
+},
+{
+"wrong": "Laptops is made here.",
+"right": "Laptops are made here.",
+"why": "are."
+},
+{
+"wrong": "The cars are make here.",
+"right": "The cars are made here.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They make laptops here.”",
+"answer": "Laptops are made here.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They built it in 1975.”",
+"answer": "It was built in 1975.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They sell phones here.”",
+"answer": "Phones are sold here.",
+"why": ""
+}
+]
+}

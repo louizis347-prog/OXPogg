@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "going to + base",
+"wrong": "I going to travel tomorrow.",
+"right": "I'm going to travel tomorrow.",
+"why": "Em português 'vou viajar' tem um só verbo auxiliar (ir); o aluno esquece o verbo be antes de going to."
+},
+"mcq": [
+{
+"q": "She ___ going to call.",
+"opts": [
+"does",
+"will",
+"is"
+],
+"ans": 2,
+"why": "be + going to."
+},
+{
+"q": "We're going to ___ pizza.",
+"opts": [
+"eat",
+"ate",
+"eating"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "Negativa de “I'm going to go”:",
+"opts": [
+"I don't going to go.",
+"I'm not going to go.",
+"I'm no going to go."
+],
+"ans": 1,
+"why": "be not."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They going to win.",
+"They are going to win.",
+"They are going win."
+],
+"ans": 1,
+"why": "be + going to."
+}
+],
+"fix": [
+{
+"wrong": "She going to leave.",
+"right": "She is going to leave.",
+"why": "be."
+},
+{
+"wrong": "I'm going to went.",
+"right": "I'm going to go.",
+"why": "base."
+},
+{
+"wrong": "We going to eat.",
+"right": "We're going to eat.",
+"why": "be."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no futuro: “I study.” (amanhã)",
+"answer": "I'm going to study.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She is going to come.”",
+"answer": "She isn't going to come.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You are going to call.”",
+"answer": "Are you going to call?",
+"why": ""
+}
+]
+}

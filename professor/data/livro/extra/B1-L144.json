@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "biografia (virada)",
+"wrong": "She was born in Mexico. After an accident, she started to paint. Her house is museum now.",
+"right": "She was born in Mexico. After an accident, she started painting. Her house is a museum now.",
+"why": "Em português “virou museu” dispensa artigo (“é museu”). Em inglês o artigo é obrigatório com substantivo contável singular. Also start pode ser com to ou -ing."
+},
+"mcq": [
+{
+"q": "She ___ in Mexico.",
+"opts": [
+"born",
+"borned",
+"was born"
+],
+"ans": 2,
+"why": "was born."
+},
+{
+"q": "Her house is ___ museum.",
+"opts": [
+"the",
+"a",
+"—"
+],
+"ans": 1,
+"why": "Artigo."
+},
+{
+"q": "After an accident, she ___ painting.",
+"opts": [
+"has started",
+"started",
+"start"
+],
+"ans": 1,
+"why": "Passado."
+},
+{
+"q": "Legacy: “Her house ___ visited by many.”",
+"opts": [
+"is",
+"does",
+"has"
+],
+"ans": 0,
+"why": "is visited."
+}
+],
+"fix": [
+{
+"wrong": "She is teacher.",
+"right": "She is a teacher.",
+"why": "Artigo."
+},
+{
+"wrong": "She born in Mexico.",
+"right": "She was born in Mexico.",
+"why": "was born."
+},
+{
+"wrong": "After the accident she start paint.",
+"right": "After the accident she started painting.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com artigo: “It is museum.”",
+"answer": "It is a museum.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She starts painting.”",
+"answer": "She started painting.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Many people visit her house.”",
+"answer": "Her house is visited by many people.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The argument went wrong in the first step.",
+"right": "The argument goes wrong at the first step.",
+"why": "Português “no primeiro passo”; inglês at the first step."
+},
+"mcq": [
+{
+"q": "Movement:",
+"opts": [
+"go at home",
+"go home",
+"go to home"
+],
+"ans": 1,
+"why": "go home."
+},
+{
+"q": "Go wrong =",
+"opts": [
+"walk",
+"speak",
+"fail"
+],
+"ans": 2,
+"why": "Falhar."
+},
+{
+"q": "Go back:",
+"opts": [
+"return",
+"leave",
+"stay"
+],
+"ans": 0,
+"why": "Voltar."
+},
+{
+"q": "Go out =",
+"opts": [
+"stay",
+"leave the house",
+"enter"
+],
+"ans": 1,
+"why": "Sair."
+}
+],
+"fix": [
+{
+"wrong": "She went to home.",
+"right": "She went home.",
+"why": "Sem to."
+},
+{
+"wrong": "Arguments goes wrong.",
+"right": "Arguments go wrong.",
+"why": "Plural."
+},
+{
+"wrong": "He went out of the home.",
+"right": "He went out.",
+"why": "go out."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “They go home.”",
+"answer": "They went home.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It goes wrong.”",
+"answer": "It does not go wrong.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Return to the start.”",
+"answer": "Go back to the start.",
+"why": ""
+}
+]
+}

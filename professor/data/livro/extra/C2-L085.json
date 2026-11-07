@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo",
+"wrong": "I am writing as constituent and teacher to urge you oppose the bill.",
+"right": "I am writing as a constituent and a teacher to urge you to oppose the bill.",
+"why": "Português omite o artigo antes de profissão; inglês exige a, e urge + objeto + to."
+},
+"mcq": [
+{
+"q": "Identify yourself:",
+"opts": [
+"like constituent",
+"as a constituent and a teacher",
+"as constituent and teacher"
+],
+"ans": 1,
+"why": "Artigo."
+},
+{
+"q": "Clear request:",
+"opts": [
+"I urge you oppose it.",
+"I urge to oppose.",
+"I urge you to oppose it."
+],
+"ans": 2,
+"why": "urge you to."
+},
+{
+"q": "Legitimacy comes from…",
+"opts": [
+"how loud",
+"how long",
+"who you are"
+],
+"ans": 2,
+"why": "Identificação."
+},
+{
+"q": "Opposite of oppose:",
+"opts": [
+"urge",
+"support",
+"refuse"
+],
+"ans": 1,
+"why": "Support."
+}
+],
+"fix": [
+{
+"wrong": "I am writing as teacher.",
+"right": "I am writing as a teacher.",
+"why": "Artigo."
+},
+{
+"wrong": "I urge you vote no.",
+"right": "I urge you to vote no.",
+"why": "to."
+},
+{
+"wrong": "I urge that you to oppose it.",
+"right": "I urge you to oppose it.",
+"why": "Sem that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com urge: “Please oppose the bill.”",
+"answer": "I urge you to oppose the bill.",
+"why": ""
+},
+{
+"prompt": "Negativo: “I urge you to oppose it.”",
+"answer": "I urge you not to oppose it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com as: “I am a teacher, and I write.”",
+"answer": "I am writing as a teacher.",
+"why": ""
+}
+]
+}

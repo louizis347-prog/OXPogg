@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do it × do so",
+"wrong": "She tried to settle and did it quickly.",
+"right": "She tried to settle and did so quickly.",
+"why": "Em português “fez isso” retoma a ação com um pronome. Em inglês formal, retome um verbo com do so, não do it."
+},
+"mcq": [
+{
+"q": "“She tried to settle and ___ quickly.”",
+"opts": [
+"did so",
+"did it",
+"did that it"
+],
+"ans": 0,
+"why": "do so."
+},
+{
+"q": "“The first offer was better than the second ___.”",
+"opts": [
+"it",
+"one",
+"ones"
+],
+"ans": 1,
+"why": "one retoma substantivo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I will sign if you will sign it.",
+"I will sign if you.",
+"I will vote if you will."
+],
+"ans": 2,
+"why": "Auxiliar basta."
+},
+{
+"q": "“Sign first” is...",
+"opts": [
+"a verb phrase",
+"a noun",
+"a pronoun"
+],
+"ans": 0,
+"why": "Ação."
+}
+],
+"fix": [
+{
+"wrong": "The first lawyer was better than the second lawyer one.",
+"right": "The first lawyer was better than the second one.",
+"why": "one substitui o substantivo."
+},
+{
+"wrong": "They endorsed the plan and they did it publicly.",
+"right": "They endorsed the plan and did so publicly.",
+"why": "do so."
+},
+{
+"wrong": "I will sign if you will it.",
+"right": "I will vote if you will.",
+"why": "Sem objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com one: “I prefer this plan to that plan.”",
+"answer": "I prefer this plan to that one.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do so: “She signed, and she signed quickly.”",
+"answer": "She signed and did so quickly.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse: “I will sign if you will sign.”",
+"answer": "I will vote if you will.",
+"why": ""
+}
+]
+}

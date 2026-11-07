@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sem be",
+"wrong": "The plot can summarise in one line.",
+"right": "The plot can be summarised in one line.",
+"why": "Em português “pode resumir-se” usa a voz passiva pronominal. Em inglês, modal + passiva exige be + particípio."
+},
+"mcq": [
+{
+"q": "“The plot can ___ in one line.”",
+"opts": [
+"summarised",
+"be summarised",
+"summarise to"
+],
+"ans": 1,
+"why": "be + pp."
+},
+{
+"q": "“Some twists ought to ___ cut.”",
+"opts": [
+"be had",
+"had",
+"have been"
+],
+"ans": 2,
+"why": "modal perfect passive."
+},
+{
+"q": "“The author is believed ___ finished it.”",
+"opts": [
+"to have",
+"has",
+"having"
+],
+"ans": 0,
+"why": "is believed to have."
+},
+{
+"q": "“The sequel is said ___ later.”",
+"opts": [
+"arriving",
+"to arrive",
+"that arrive"
+],
+"ans": 1,
+"why": "is said to."
+}
+],
+"fix": [
+{
+"wrong": "The debut novel must be wrote again.",
+"right": "The debut novel must be written again.",
+"why": "pp."
+},
+{
+"wrong": "The manuscript may be lose.",
+"right": "The manuscript may be lost.",
+"why": "pp."
+},
+{
+"wrong": "The author is believed have lost it.",
+"right": "The author is believed to have lost it.",
+"why": "to have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “You can summarise the plot.”",
+"answer": "The plot can be summarised.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Someone ought to have cut some twists.”",
+"answer": "Some twists ought to have been cut.",
+"why": ""
+},
+{
+"prompt": "Reescreva com is said: “People say the sequel is late.”",
+"answer": "The sequel is said to be late.",
+"why": ""
+}
+]
+}

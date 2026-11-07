@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva técnica",
+"wrong": "The file was save and the photo was putted on the wall.",
+"right": "The file was saved, and the photo was put on the wall.",
+"why": "Em português “foi salvo”, “foi colocado” são regulares; o brasileiro regulariza irregulares (putted). Em inglês: was + particípio (put não muda)."
+},
+"mcq": [
+{
+"q": "The file ___ updated.",
+"opts": [
+"did",
+"has",
+"was"
+],
+"ans": 2,
+"why": "was."
+},
+{
+"q": "It ___ moved yesterday.",
+"opts": [
+"was",
+"were",
+"is"
+],
+"ans": 0,
+"why": "was."
+},
+{
+"q": "The lamp ___ placed there.",
+"opts": [
+"does",
+"has",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "The photo was ___ on the wall.",
+"opts": [
+"putted",
+"put",
+"puts"
+],
+"ans": 1,
+"why": "put."
+}
+],
+"fix": [
+{
+"wrong": "The file was save.",
+"right": "The file was saved.",
+"why": "pp."
+},
+{
+"wrong": "The photo was putted.",
+"right": "The photo was put.",
+"why": "put."
+},
+{
+"wrong": "It was move yesterday.",
+"right": "It was moved yesterday.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Someone saved the file.”",
+"answer": "The file was saved.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Someone moved the desk.”",
+"answer": "The desk was moved.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva (presente): “Someone places the lamp there.”",
+"answer": "The lamp is placed there.",
+"why": ""
+}
+]
+}

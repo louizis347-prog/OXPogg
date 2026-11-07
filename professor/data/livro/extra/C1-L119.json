@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "subjuntivo base",
+"wrong": "He insisted that the court was open.",
+"right": "He insisted that the court be open.",
+"why": "O português tem subjuntivo marcado (“que esteja”). Em inglês, após insist/demand/recommend o verbo fica na forma base, sem -s nem was."
+},
+"mcq": [
+{
+"q": "He insisted that the court ___ open.",
+"opts": [
+"was",
+"be",
+"is"
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "The doctor recommended that she ___ rest.",
+"opts": [
+"takes",
+"took",
+"take"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "It is essential that he ___ on time.",
+"opts": [
+"be",
+"is",
+"will be"
+],
+"ans": 0,
+"why": "Base."
+},
+{
+"q": "They demand that rents ___ published.",
+"opts": [
+"were",
+"be",
+"are"
+],
+"ans": 1,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "She suggested that he comes early.",
+"right": "She suggested that he come early.",
+"why": "Base."
+},
+{
+"wrong": "I demand that she is present.",
+"right": "I demand that she be present.",
+"why": "be."
+},
+{
+"wrong": "It is vital that the file is sent.",
+"right": "It is vital that the file be sent.",
+"why": "be."
+}
+],
+"rewrite": [
+{
+"prompt": "Subj.: “The judge insists that the room is open.”",
+"answer": "The judge insists that the room be open.",
+"why": ""
+},
+{
+"prompt": "Subj.: “I recommend that she takes a break.”",
+"answer": "I recommend that she take a break.",
+"why": ""
+},
+{
+"prompt": "Subj.: “It is essential that the form is signed.”",
+"answer": "It is essential that the form be signed.",
+"why": ""
+}
+]
+}

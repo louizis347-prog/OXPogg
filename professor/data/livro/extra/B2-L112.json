@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "the + generalização",
+"wrong": "The plastics are harmful.",
+"right": "Plastics are harmful.",
+"why": "Em português usamos artigo em generalizações (\"os plásticos\"). Em inglês, sem artigo."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"reef",
+"evidence",
+"film"
+],
+"ans": 1,
+"why": "evidence."
+},
+{
+"q": "Complete: They recommend that governments **___** plastics.",
+"opts": [
+"bans",
+"banned",
+"ban"
+],
+"ans": 2,
+"why": "base."
+},
+{
+"q": "Qual é a frase de tese?",
+"opts": [
+"The fact that oceans are warming should alarm us.",
+"Warm oceans.",
+"Please ban."
+],
+"ans": 0,
+"why": "that-clause."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"The warming oceans threaten the marine life in general.",
+"Warming oceans threatens marine life.",
+"Warming oceans threaten marine life."
+],
+"ans": 2,
+"why": "Plural."
+}
+],
+"fix": [
+{
+"wrong": "They recommend to ban plastics.",
+"right": "They recommend that governments ban plastics.",
+"why": "that."
+},
+{
+"wrong": "The fact of the sea is warm worries us.",
+"right": "The fact that the sea is warm worries us.",
+"why": "that."
+},
+{
+"wrong": "We should listen decades ago.",
+"right": "We should have listened decades ago.",
+"why": "should have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com the fact that: “Oceans warm. This alarms us.”",
+"answer": "The fact that oceans warm alarms us.",
+"why": ""
+},
+{
+"prompt": "Reescreva com recommend that: “Governments should ban plastics.”",
+"answer": "They recommend that governments ban plastics.",
+"why": ""
+},
+{
+"prompt": "Passe a crítica: “We listen to scientists.”",
+"answer": "We should have listened to scientists.",
+"why": ""
+}
+]
+}

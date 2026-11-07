@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "keep + -ing",
+"wrong": "Keep to go.",
+"right": "Keep going.",
+"why": "Em português “continue indo” é com gerúndio. O brasileiro usa infinitivo após keep. Em inglês: keep + -ing."
+},
+"mcq": [
+{
+"q": "Keep ___ .",
+"opts": [
+"go",
+"going",
+"to go"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Keep ___ . (stay calm)",
+"opts": [
+"calmly to",
+"to calm",
+"calm"
+],
+"ans": 2,
+"why": "Adjetivo."
+},
+{
+"q": "She ___ her promise.",
+"opts": [
+"kept",
+"keeped",
+"keeps to"
+],
+"ans": 0,
+"why": "kept."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Make a promise keep",
+"Keep a promise",
+"Hold a promise"
+],
+"ans": 1,
+"why": "keep a promise."
+}
+],
+"fix": [
+{
+"wrong": "She keeped her promise.",
+"right": "She kept her promise.",
+"why": "kept."
+},
+{
+"wrong": "Keep to talk.",
+"right": "Keep talking.",
+"why": "-ing."
+},
+{
+"wrong": "Keep calmly.",
+"right": "Keep calm.",
+"why": "Adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Use keep + -ing: “Continue talking.”",
+"answer": "Keep talking.",
+"why": ""
+},
+{
+"prompt": "Passado: “She keeps her promise.”",
+"answer": "She kept her promise.",
+"why": ""
+},
+{
+"prompt": "Use keep: “Stay calm.”",
+"answer": "Keep calm.",
+"why": ""
+}
+]
+}

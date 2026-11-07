@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "-ing no lugar de oração",
+"wrong": "The man who stands there is my uncle.",
+"right": "The man standing there is my uncle.",
+"why": "Em português dizemos \"o homem que está parado\". Em inglês, a oração relativa pode ser reduzida para -ing sem pronome."
+},
+"mcq": [
+{
+"q": "Qual é a forma reduzida de \"the girl who is singing\"?",
+"opts": [
+"the girl sung",
+"the girl to sing",
+"the girl singing"
+],
+"ans": 2,
+"why": "Ativo = -ing."
+},
+{
+"q": "Qual é passiva reduzida?",
+"opts": [
+"the letter sent yesterday",
+"the letter sending yesterday",
+"the letter to send yesterday"
+],
+"ans": 0,
+"why": "Passiva = particípio."
+},
+{
+"q": "Complete: **___** tired, she went to bed.",
+"opts": [
+"Felt",
+"Feeling",
+"To feel"
+],
+"ans": 1,
+"why": "Mesmo sujeito: Feeling."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Having finished, he left.",
+"Having finish, he left.",
+"Finished having, he left."
+],
+"ans": 0,
+"why": "Having + particípio."
+}
+],
+"fix": [
+{
+"wrong": "The people live here are friendly.",
+"right": "The people living here are friendly.",
+"why": "Oração reduzida -ing."
+},
+{
+"wrong": "The cake baking by Mom is delicious.",
+"right": "The cake baked by Mom is delicious.",
+"why": "Particípio passado."
+},
+{
+"wrong": "Walking to school, the rain began.",
+"right": "Walking to school, I felt the rain begin.",
+"why": "Sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Reduza: “The man who is waiting is my boss.”",
+"answer": "The man waiting is my boss.",
+"why": ""
+},
+{
+"prompt": "Reduza: “The book that was written by Tom is long.”",
+"answer": "The book written by Tom is long.",
+"why": ""
+},
+{
+"prompt": "Una com -ing: “She opened the box. She smiled.”",
+"answer": "Opening the box, she smiled.",
+"why": ""
+}
+]
+}

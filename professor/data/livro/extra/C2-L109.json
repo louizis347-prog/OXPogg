@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "It is a brisk, absorbing study, but not without flaws, sits uneasily beside the others.",
+"right": "It is a brisk, absorbing study, but not without flaws.",
+"why": "Português emenda orações com vírgula; em inglês cada ressalva pede sua própria oração."
+},
+"mcq": [
+{
+"q": "Strong praise:",
+"opts": [
+"brisk study of absorb",
+"a brisk, absorbing study",
+"a brisk absorbing studying"
+],
+"ans": 1,
+"why": "Adjetivos."
+},
+{
+"q": "Reserve:",
+"opts": [
+"without not flaws",
+"not with flaws",
+"not without flaws"
+],
+"ans": 2,
+"why": "Litote."
+},
+{
+"q": "Sits uneasily beside…",
+"opts": [
+"is comfortable with",
+"is close to",
+"is awkward next to"
+],
+"ans": 2,
+"why": "Desconforto."
+},
+{
+"q": "Order of adjectives:",
+"opts": [
+"brisk, absorbing study",
+"study absorbing brisk",
+"a study brisk, absorbing"
+],
+"ans": 0,
+"why": "Antes do substantivo."
+}
+],
+"fix": [
+{
+"wrong": "A study absorbing.",
+"right": "An absorbing study.",
+"why": "Adjetivo antes."
+},
+{
+"wrong": "The study is not without flaw.",
+"right": "The study is not without flaws.",
+"why": "Plural."
+},
+{
+"wrong": "It sit uneasily beside it.",
+"right": "It sits uneasily beside it.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com litote: “The study has weaknesses.”",
+"answer": "The study is not without weaknesses.",
+"why": ""
+},
+{
+"prompt": "Plural: “The study sits uneasily.”",
+"answer": "The studies sit uneasily.",
+"why": ""
+},
+{
+"prompt": "Passado: “It sits uneasily beside it.”",
+"answer": "It sat uneasily beside it.",
+"why": ""
+}
+]
+}

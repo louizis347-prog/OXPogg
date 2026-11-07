@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb",
+"wrong": "She took a new client on.",
+"right": "She took on a new client.",
+"why": "Em português não há partícula. O brasileiro às vezes usa take sozinho (“tomou um cliente”). Take on = assumir; take over = assumir o controle."
+},
+"mcq": [
+{
+"q": "She ___ a new client.",
+"opts": [
+"took out",
+"took off",
+"took on"
+],
+"ans": 2,
+"why": "take on = assumir."
+},
+{
+"q": "He ___ the company. (took control)",
+"opts": [
+"took over",
+"took in",
+"took up"
+],
+"ans": 0,
+"why": "take over."
+},
+{
+"q": "Take up a hobby means…",
+"opts": [
+"lose",
+"start",
+"stop"
+],
+"ans": 1,
+"why": "Começar."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She took the job on of.",
+"She took of the job.",
+"She took on the job."
+],
+"ans": 2,
+"why": "take on."
+}
+],
+"fix": [
+{
+"wrong": "She took in a new client. (assumiu)",
+"right": "She took on a new client.",
+"why": "take on."
+},
+{
+"wrong": "He took the company over it.",
+"right": "He took over the company.",
+"why": "take over."
+},
+{
+"wrong": "I took a new hobby.",
+"right": "I took up a new hobby.",
+"why": "take up."
+}
+],
+"rewrite": [
+{
+"prompt": "Use take on: “She accepted a new client.”",
+"answer": "She took on a new client.",
+"why": ""
+},
+{
+"prompt": "Use take over: “He assumed control of the firm.”",
+"answer": "He took over the firm.",
+"why": ""
+},
+{
+"prompt": "Use take up: “I started yoga.”",
+"answer": "I took up yoga.",
+"why": ""
+}
+]
+}

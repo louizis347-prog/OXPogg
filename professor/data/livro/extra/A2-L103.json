@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "turn: usos",
+"wrong": "Turn to the lights off.",
+"right": "Turn off the lights.",
+"why": "O português tem 'desligar'; em inglês é turn off com partícula separada. Turn into = virar/transformar; get off = descer."
+},
+"mcq": [
+{
+"q": "Get ___ the bus at the next stop.",
+"opts": [
+"off",
+"out",
+"down"
+],
+"ans": 0,
+"why": "get off."
+},
+{
+"q": "It's dark. ___ on the light.",
+"opts": [
+"Make",
+"Do",
+"Turn"
+],
+"ans": 2,
+"why": "turn on."
+},
+{
+"q": "The frog turned ___ a prince.",
+"opts": [
+"into",
+"in",
+"to"
+],
+"ans": 0,
+"why": "turn into."
+},
+{
+"q": "Turn ___ the music. It's loud.",
+"opts": [
+"up",
+"down",
+"over"
+],
+"ans": 1,
+"why": "turn down."
+}
+],
+"fix": [
+{
+"wrong": "Get out of the bus here.",
+"right": "Get off the bus here.",
+"why": "get off."
+},
+{
+"wrong": "Turn up the TV. It's loud. (diminuir)",
+"right": "Turn down the TV. It's loud.",
+"why": "down."
+},
+{
+"wrong": "Turn the lights of.",
+"right": "Turn the lights off.",
+"why": "off."
+}
+],
+"rewrite": [
+{
+"prompt": "Peça para desligar: “Turn / the TV / off / please”",
+"answer": "Turn the TV off, please.",
+"why": ""
+},
+{
+"prompt": "Reescreva com off: “Get down from the bus.”",
+"answer": "Get off the bus.",
+"why": ""
+},
+{
+"prompt": "Reescreva com down: “Make the volume lower.”",
+"answer": "Turn the volume down.",
+"why": ""
+}
+]
+}

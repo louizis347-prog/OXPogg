@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ligação de sons",
+"wrong": "Turn it off = /tɜːrn it ɒf/ (palavras separadas)",
+"right": "Turn it off = /tɜːr.nɪ.tɒf/ (ligadas)",
+"why": "Em português separamos palavras ao falar devagar; em inglês a consoante final liga com a vogal seguinte."
+},
+"mcq": [
+{
+"q": "Em **turn it on**, o n liga com:",
+"opts": [
+"on",
+"turn",
+"it"
+],
+"ans": 2,
+"why": "liga."
+},
+{
+"q": "**Pick up** soa como:",
+"opts": [
+"pi-cup",
+"picka",
+"pick up (separado)"
+],
+"ans": 0,
+"why": "liga."
+},
+{
+"q": "**An apple** soa como:",
+"opts": [
+"an apple (separado)",
+"a apple",
+"a-napple"
+],
+"ans": 2,
+"why": "liga."
+},
+{
+"q": "Ligação ocorre quando termina em ___ e a próxima começa em ___ .",
+"opts": [
+"consoante / consoante",
+"consoante / vogal",
+"vogal / consoante"
+],
+"ans": 1,
+"why": "C+V."
+}
+],
+"fix": [
+{
+"wrong": "She is 'a-napple'. (escrita)",
+"right": "She has an apple.",
+"why": "an."
+},
+{
+"wrong": "Turn 'itoff'.",
+"right": "Turn it off.",
+"why": "separar."
+},
+{
+"wrong": "I 'pickup' the box.",
+"right": "I pick up the box.",
+"why": "separar."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva separado: “pickitup”",
+"answer": "pick it up",
+"why": ""
+},
+{
+"prompt": "Escreva separado: “turnitoff”",
+"answer": "turn it off",
+"why": ""
+},
+{
+"prompt": "Escreva separado: “anapple”",
+"answer": "an apple",
+"why": ""
+}
+]
+}

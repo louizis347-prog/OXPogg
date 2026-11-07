@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "recommend + that",
+"wrong": "I recommend to use public transport.",
+"right": "I recommend that people use public transport.",
+"why": "Em português, \"recomendo usar\" aceita infinitivo. Em inglês formal, recommend that + sujeito + verbo base (sem -s)."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"I suggest that she goes to home.",
+"I suggest that she go home.",
+"I suggest her to go home."
+],
+"ans": 1,
+"why": "suggest that + sujeito + base."
+},
+{
+"q": "Complete: They recommend that every student **___** a copy.",
+"opts": [
+"keeps",
+"to keep",
+"keep"
+],
+"ans": 2,
+"why": "Forma base após recommend that."
+},
+{
+"q": "Qual evita o erro de brasileiro?",
+"opts": [
+"We advise that schools close early.",
+"We advise schools to that close early.",
+"We advise that schools to close early."
+],
+"ans": 0,
+"why": "advise that + sujeito + base."
+},
+{
+"q": "A negativa correta é...",
+"opts": [
+"I recommend that he doesn't to drive.",
+"I recommend that he not to drive.",
+"I recommend that he not drive."
+],
+"ans": 2,
+"why": "Negativa: not + base."
+}
+],
+"fix": [
+{
+"wrong": "I recommend to take the early train.",
+"right": "I recommend taking the early train.",
+"why": "Após recommend sem that, use -ing (ou that-clause)."
+},
+{
+"wrong": "She suggested that he takes a break.",
+"right": "She suggested that he take a break.",
+"why": "Forma base após suggest that."
+},
+{
+"wrong": "They advise us to that apply early.",
+"right": "They advise that we apply early.",
+"why": "Escolha uma estrutura: advise that + sujeito + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com that: “I recommend taking a break.” (sujeito: he)",
+"answer": "I recommend that he take a break.",
+"why": ""
+},
+{
+"prompt": "Reescreva com suggest that: “You should see a dentist.”",
+"answer": "I suggest that you see a dentist.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “We recommend that she go.”",
+"answer": "We recommend that she not go.",
+"why": ""
+}
+]
+}

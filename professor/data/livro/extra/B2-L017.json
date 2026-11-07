@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "It prevents me to work.",
+"right": "It prevents me from working.",
+"why": "Prevent/stop + from + -ing, não to."
+},
+"mcq": [
+{
+"q": "Prevent … **___** + -ing:",
+"opts": [
+"from",
+"to",
+"of"
+],
+"ans": 0,
+"why": "From."
+},
+{
+"q": "I **___** waiting for an hour.",
+"opts": [
+"was been",
+"have been",
+"am"
+],
+"ans": 1,
+"why": "PPC."
+},
+{
+"q": "She **___** working for six hours when I came.",
+"opts": [
+"is",
+"had been",
+"has been"
+],
+"ans": 1,
+"why": "Had."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"It stops us to go.",
+"It stops us from going.",
+"It stops us of going."
+],
+"ans": 1,
+"why": "From."
+}
+],
+"fix": [
+{
+"wrong": "Rain stops us to play.",
+"right": "Rain stops us from playing.",
+"why": "From."
+},
+{
+"wrong": "I have been wait.",
+"right": "I have been waiting.",
+"why": "-ing."
+},
+{
+"wrong": "She had worked for hours when I came.",
+"right": "She had been working for hours when I came.",
+"why": "Continuous."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “It prevents me. I work.” (from)",
+"answer": "It prevents me from working.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I wait since noon.” (have been)",
+"answer": "I have been waiting since noon.",
+"why": ""
+},
+{
+"prompt": "Passado: “I have been waiting.” (had)",
+"answer": "I had been waiting.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Supporters argued that the project will create jobs.",
+"right": "Supporters argued that the project would create jobs.",
+"why": "Português mantém o futuro em discurso indireto; em inglês recua para would."
+},
+"mcq": [
+{
+"q": "Reported:",
+"opts": [
+"argued it would create jobs",
+"argued it will create",
+"argued to create"
+],
+"ans": 0,
+"why": "would."
+},
+{
+"q": "Warned:",
+"opts": [
+"Opponents warned it would block…",
+"Opponents warned to block",
+"Opponents warn it blocked"
+],
+"ans": 0,
+"why": "would."
+},
+{
+"q": "Argue that…",
+"opts": [
+"is a question",
+"denies",
+"supports a thesis"
+],
+"ans": 2,
+"why": "Defesa."
+},
+{
+"q": "Verb after warned (future-in-past):",
+"opts": [
+"to",
+"will",
+"would"
+],
+"ans": 2,
+"why": "would."
+}
+],
+"fix": [
+{
+"wrong": "Opponents warned it will block traffic.",
+"right": "Opponents warned it would block traffic.",
+"why": "would."
+},
+{
+"wrong": "Supporters argued to create jobs.",
+"right": "Supporters argued it would create jobs.",
+"why": "that."
+},
+{
+"wrong": "They warns it.",
+"right": "They warned it.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Discurso indireto: Supporters said, “It will create jobs.” (argued that)",
+"answer": "Supporters argued that it would create jobs.",
+"why": ""
+},
+{
+"prompt": "Passado: “Opponents warn.”",
+"answer": "Opponents warned.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It would block traffic.”",
+"answer": "It would not block traffic.",
+"why": ""
+}
+]
+}

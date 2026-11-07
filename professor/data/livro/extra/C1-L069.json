@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão e tend",
+"wrong": "Never it should be assumed that all agree.",
+"right": "Never should it be assumed that all agree.",
+"why": "O português não inverte. Em inglês formal, Never no início pede modal antes do sujeito."
+},
+"mcq": [
+{
+"q": "Never ___ it be assumed that all agree.",
+"opts": [
+"it should",
+"does",
+"should"
+],
+"ans": 2,
+"why": "should."
+},
+{
+"q": "Teams ___ to misread tone.",
+"opts": [
+"tend",
+"tends",
+"are tend"
+],
+"ans": 0,
+"why": "tend."
+},
+{
+"q": "Prone to + ___ .",
+"opts": [
+"to be",
+"-ing",
+"base"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Little he did know.",
+"Little knew did he.",
+"Little did he know."
+],
+"ans": 2,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Never it should be assumed.",
+"right": "Never should it be assumed.",
+"why": "Inversão."
+},
+{
+"wrong": "Teams tends to misread tone.",
+"right": "Teams tend to misread tone.",
+"why": "tend."
+},
+{
+"wrong": "He is prone to forget.",
+"right": "He is prone to forgetting.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Never: “It should never be assumed that all agree.”",
+"answer": "Never should it be assumed that all agree.",
+"why": ""
+},
+{
+"prompt": "Use tend to: “Teams often misread tone.”",
+"answer": "Teams tend to misread tone.",
+"why": ""
+},
+{
+"prompt": "Comece com Little: “He did not know.”",
+"answer": "Little did he know.",
+"why": ""
+}
+]
+}

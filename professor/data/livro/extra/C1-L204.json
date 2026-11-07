@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado simples",
+"wrong": "In 1934 he has written his first book.",
+"right": "In 1934 he wrote his first book.",
+"why": "Em português o pretérito perfeito composto pode aparecer com data. Em inglês, com data específica no passado use past simple."
+},
+"mcq": [
+{
+"q": "“In 1934, she ___ a book.”",
+"opts": [
+"wrote",
+"has written",
+"writes"
+],
+"ans": 0,
+"why": "Past simple."
+},
+{
+"q": "“By the age of ten, he ___ a prize.”",
+"opts": [
+"has won",
+"had won",
+"wins"
+],
+"ans": 1,
+"why": "Past perfect."
+},
+{
+"q": "Contrast marker:",
+"opts": [
+"later",
+"in 1950",
+"however"
+],
+"ans": 2,
+"why": "Contraste."
+},
+{
+"q": "Which word shows what came later in a life story?",
+"opts": [
+"eventually",
+"although",
+"however"
+],
+"ans": 0,
+"why": "Sequência."
+}
+],
+"fix": [
+{
+"wrong": "In 1950 she has founded a school.",
+"right": "In 1950 she founded a school.",
+"why": "Past simple."
+},
+{
+"wrong": "Although he was famous, but he was poor.",
+"right": "Although he was famous, he was poor.",
+"why": "Sem but."
+},
+{
+"wrong": "He wrote and win a prize.",
+"right": "He wrote and won a prize.",
+"why": "Paralelismo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no past simple: “In 1934 he has won a prize.”",
+"answer": "In 1934 he won a prize.",
+"why": ""
+},
+{
+"prompt": "Una com although: “He was famous. He was poor.” (Although…)",
+"answer": "Although he was famous, he was poor.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She founds a school.”",
+"answer": "She founded a school.",
+"why": ""
+}
+]
+}

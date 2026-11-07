@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have/get + particípio (serviço)",
+"wrong": "Where do you do your nails? I fixed my phone last week at the mall.",
+"right": "Where do you get your nails done? I got my phone fixed last week at the mall.",
+"why": "Em português “fazer as unhas” e “consertar o celular” não marcam que outra pessoa fez. Em inglês, para serviço use have/get + objeto + particípio."
+},
+"mcq": [
+{
+"q": "I ___ my hair cut every month.",
+"opts": [
+"do",
+"make",
+"get"
+],
+"ans": 2,
+"why": "get + obj + pp."
+},
+{
+"q": "She got her phone ___.",
+"opts": [
+"fixed",
+"fix",
+"fixing"
+],
+"ans": 0,
+"why": "pp."
+},
+{
+"q": "Where did you get your shoes ___?",
+"opts": [
+"repaired",
+"repair",
+"repairing"
+],
+"ans": 0,
+"why": "pp."
+},
+{
+"q": "“I had my car washed” means…",
+"opts": [
+"eu lavei meu carro",
+"alguém lavou meu carro",
+"vou lavar"
+],
+"ans": 1,
+"why": "Serviço."
+}
+],
+"fix": [
+{
+"wrong": "He had cut his beard at a barber.",
+"right": "He had his beard cut at a barber.",
+"why": "Ordem."
+},
+{
+"wrong": "We got painted the door.",
+"right": "We got the door painted.",
+"why": "obj antes do pp."
+},
+{
+"wrong": "I need to have repair my bike.",
+"right": "I need to have my bike repaired.",
+"why": "obj + pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “A tailor shortened my pants.” (I got...)",
+"answer": "I got my pants shortened.",
+"why": ""
+},
+{
+"prompt": "Pergunte: “You clean your carpets somewhere.” (Where do you get...)",
+"answer": "Where do you get your carpets cleaned?",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “She had her roof checked.”",
+"answer": "She didn't have her roof checked.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "taught + to",
+"wrong": "My grandfather taught me respect people.",
+"right": "My grandfather taught me to respect people.",
+"why": "Em português “me ensinou a respeitar” usa preposição a; o brasileiro omite o to inglês. Em inglês: teach someone to do."
+},
+"mcq": [
+{
+"q": "He taught me ___ patient.",
+"opts": [
+"be",
+"being",
+"to be"
+],
+"ans": 2,
+"why": "teach + to."
+},
+{
+"q": "“I realized that…” starts a…",
+"opts": [
+"abertura",
+"reflexão",
+"conclusão"
+],
+"ans": 1,
+"why": "Reflexão."
+},
+{
+"q": "My grandfather ___ say: “Slow down.”",
+"opts": [
+"used to",
+"use to",
+"was used"
+],
+"ans": 0,
+"why": "used to."
+},
+{
+"q": "Which is the past of “teach”?",
+"opts": [
+"teached",
+"tought",
+"taught"
+],
+"ans": 2,
+"why": "taught."
+}
+],
+"fix": [
+{
+"wrong": "He teached me to cook.",
+"right": "He taught me to cook.",
+"why": "Irregular."
+},
+{
+"wrong": "I realized what he was right.",
+"right": "I realized that he was right.",
+"why": "that, não what."
+},
+{
+"wrong": "He use to say that.",
+"right": "He used to say that.",
+"why": "used to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “He teaches me to cook.”",
+"answer": "He taught me to cook.",
+"why": ""
+},
+{
+"prompt": "Reescreva com used to: “He told me stories every night.”",
+"answer": "He used to tell me stories every night.",
+"why": ""
+},
+{
+"prompt": "Reescreva com realize: “I understand he was right.” (passado)",
+"answer": "I realized that he was right.",
+"why": ""
+}
+]
+}

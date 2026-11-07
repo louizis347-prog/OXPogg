@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "palavras de contraste",
+"wrong": "They say however she disagrees.",
+"right": "However, she disagrees.",
+"why": "O brasileiro lê “however” como “como for”. É sinal de contraste: aparece com vírgula e anuncia mudança de ideia."
+},
+"mcq": [
+{
+"q": "However signals…",
+"opts": [
+"contrast",
+"time",
+"cause"
+],
+"ans": 0,
+"why": "Contraste."
+},
+{
+"q": "Before listening, underline…",
+"opts": [
+"the title only",
+"keywords",
+"every word"
+],
+"ans": 1,
+"why": "Palavras-chave."
+},
+{
+"q": "Actually signals…",
+"opts": [
+"time",
+"example",
+"correction"
+],
+"ans": 2,
+"why": "Correção."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"However, she disagrees.",
+"However she disagrees, so.",
+"Howsoever, disagrees she."
+],
+"ans": 0,
+"why": "Vírgula."
+}
+],
+"fix": [
+{
+"wrong": "However she disagrees.",
+"right": "However, she disagrees.",
+"why": "Vírgula."
+},
+{
+"wrong": "She actually are right.",
+"right": "She is actually right.",
+"why": "is."
+},
+{
+"wrong": "I listen the keywords.",
+"right": "I listen for the keywords.",
+"why": "listen for."
+}
+],
+"rewrite": [
+{
+"prompt": "Contraste: “She agrees. She disagrees.” (However,)",
+"answer": "She agrees. However, she disagrees.",
+"why": ""
+},
+{
+"prompt": "Use actually: “She is right, really.”",
+"answer": "She is actually right.",
+"why": ""
+},
+{
+"prompt": "Use listen for: “I wait to hear the keywords.”",
+"answer": "I listen for the keywords.",
+"why": ""
+}
+]
+}

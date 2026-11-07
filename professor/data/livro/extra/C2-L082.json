@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "She is elected to both houses and criticised the bill.",
+"right": "She was elected to both houses and criticised the bill.",
+"why": "Português usa presente narrativo; em notícias formais use passado."
+},
+"mcq": [
+{
+"q": "Participial:",
+"opts": [
+"elected to both houses",
+"elect to both houses",
+"electing to both houses"
+],
+"ans": 0,
+"why": "Participial."
+},
+{
+"q": "Public act verbs:",
+"opts": [
+"delivered, criticised, defended",
+"delivery, critic, defense",
+"deliver, critic"
+],
+"ans": 0,
+"why": "Verbos."
+},
+{
+"q": "Past of defend:",
+"opts": [
+"defended",
+"defending",
+"defend"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Which is a participial phrase?",
+"opts": [
+"elected to both houses",
+"she was elected",
+"they elect"
+],
+"ans": 0,
+"why": "Particípio descritivo."
+}
+],
+"fix": [
+{
+"wrong": "She delivered to a speech.",
+"right": "She delivered a speech.",
+"why": "Transitivo."
+},
+{
+"wrong": "He was condemn.",
+"right": "He was condemned.",
+"why": "Particípio."
+},
+{
+"wrong": "They criticise yesterday.",
+"right": "They criticised yesterday.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “They elected her.”",
+"answer": "She was elected.",
+"why": ""
+},
+{
+"prompt": "Passado: “She defends the bill.”",
+"answer": "She defended the bill.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She criticised it.”",
+"answer": "She did not criticise it.",
+"why": ""
+}
+]
+}

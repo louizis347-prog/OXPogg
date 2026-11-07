@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "arise × give rise",
+"wrong": "Hidden agendas arise to mistrust.",
+"right": "Hidden agendas give rise to mistrust.",
+"why": "Em português “originar” e “surgir” se aproximam, e o aluno usa arise (intransitivo). Para causar, use give rise to; arise = aparecer."
+},
+"mcq": [
+{
+"q": "“Posturing ___ hard positions.”",
+"opts": [
+"arose to",
+"gave rise to",
+"rose to"
+],
+"ans": 1,
+"why": "gave rise to."
+},
+{
+"q": "Which has a **modal**?",
+"opts": [
+"Rigid deadlines may gives rise.",
+"Rigid deadlines maybe give rise.",
+"Rigid deadlines may give rise to poor deals."
+],
+"ans": 2,
+"why": "modal + base."
+},
+{
+"q": "A synonym:",
+"opts": [
+"lead to",
+"lead from",
+"go to"
+],
+"ans": 0,
+"why": "lead to."
+},
+{
+"q": "What is the **cause**?",
+"opts": [
+"The object",
+"The subject",
+"The adverb"
+],
+"ans": 1,
+"why": "Sujeito."
+}
+],
+"fix": [
+{
+"wrong": "Mistrust give rise to delays.",
+"right": "Mistrust gives rise to delays.",
+"why": "-s."
+},
+{
+"wrong": "Public posturing gave rise at hard positions.",
+"right": "Public posturing gave rise to hard positions.",
+"why": "to."
+},
+{
+"wrong": "Rigid deadlines may gave rise to poor deals.",
+"right": "Rigid deadlines may give rise to poor deals.",
+"why": "modal + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com give rise to: “Hidden agendas breed mistrust.”",
+"answer": "Hidden agendas give rise to mistrust.",
+"why": ""
+},
+{
+"prompt": "Passado: “Posturing gives rise to hard positions.”",
+"answer": "Posturing gave rise to hard positions.",
+"why": ""
+},
+{
+"prompt": "Reescreva com may: “Rigid deadlines give rise to poor deals.”",
+"answer": "Rigid deadlines may give rise to poor deals.",
+"why": ""
+}
+]
+}

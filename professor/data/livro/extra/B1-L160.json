@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "promessas (collocations)",
+"wrong": "She did her promise. He broke the promise. I did a promise to my mother.",
+"right": "She kept her promise. He broke his promise. I made a promise to my mother.",
+"why": "Em português “fazer uma promessa” e “cumprir” se resolvem com fazer/cumprir. O brasileiro usa do. Em inglês, make a promise, keep a promise, break a promise."
+},
+"mcq": [
+{
+"q": "I ___ a promise to my mother.",
+"opts": [
+"made",
+"did",
+"took"
+],
+"ans": 0,
+"why": "make."
+},
+{
+"q": "She ___ her promise (cumpriu).",
+"opts": [
+"kept",
+"held",
+"did"
+],
+"ans": 0,
+"why": "keep."
+},
+{
+"q": "He ___ his promise (descumpriu).",
+"opts": [
+"cut",
+"lost",
+"broke"
+],
+"ans": 2,
+"why": "break."
+},
+{
+"q": "Which is correct? (promessas (collocations))",
+"opts": [
+"Don't cut your promise.",
+"Don't break your promise.",
+"Don't do your promise."
+],
+"ans": 1,
+"why": "break."
+}
+],
+"fix": [
+{
+"wrong": "I did a promise.",
+"right": "I made a promise.",
+"why": "make."
+},
+{
+"wrong": "She holds her promise always.",
+"right": "She always keeps her promise.",
+"why": "keep."
+},
+{
+"wrong": "He broke the promise to she.",
+"right": "He broke his promise to her.",
+"why": "Objeto her."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com make: “She promised to help.”",
+"answer": "She made a promise to help.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “He breaks his promise.”",
+"answer": "He broke his promise.",
+"why": ""
+},
+{
+"prompt": "Reescreva com keep: “I fulfill my word.” (promise)",
+"answer": "I keep my promise.",
+"why": ""
+}
+]
+}

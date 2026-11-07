@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "zero e if",
+"wrong": "If I will study, I pass.",
+"right": "If I study, I pass.",
+"why": "Em português o futuro do subjuntivo ('se eu estudar') leva o aluno a usar will; em inglês if + presente."
+},
+"mcq": [
+{
+"q": "If you mix blue and yellow, you ___ green.",
+"opts": [
+"will get",
+"got",
+"get"
+],
+"ans": 2,
+"why": "presente."
+},
+{
+"q": "I'm bad ___ drawing.",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 0,
+"why": "at."
+},
+{
+"q": "She went out ___ buy bread.",
+"opts": [
+"for",
+"by",
+"to"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"Thanks to coming.",
+"Thanks for coming.",
+"Thanks for come."
+],
+"ans": 1,
+"why": "for -ing."
+}
+],
+"fix": [
+{
+"wrong": "If it will snow, it's cold.",
+"right": "If it snows, it's cold.",
+"why": "presente."
+},
+{
+"wrong": "Thanks for come.",
+"right": "Thanks for coming.",
+"why": "-ing."
+},
+{
+"wrong": "I went there for see her.",
+"right": "I went there to see her.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “It's cold. Water freezes.” com if",
+"answer": "If it's cold, water freezes.",
+"why": ""
+},
+{
+"prompt": "Corrija: “I'm interested in learn.”",
+"answer": "I'm interested in learning.",
+"why": ""
+},
+{
+"prompt": "Una com to: “I called. I ask.”",
+"answer": "I called to ask.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo polissêmico",
+"wrong": "The traffic light became red.",
+"right": "The traffic light turned red.",
+"why": "Com cores e idades o inglês usa turn, não become. “Virar” tem muitos sentidos: turn left, turn thirty, turn red."
+},
+"mcq": [
+{
+"q": "Turn **left**:",
+"opts": [
+"ligar",
+"virar",
+"tornar-se"
+],
+"ans": 1,
+"why": "Direção."
+},
+{
+"q": "He will **turn** thirty:",
+"opts": [
+"girar",
+"virar à direita",
+"fazer 30 anos"
+],
+"ans": 2,
+"why": "Idade."
+},
+{
+"q": "Turn **on** the light:",
+"opts": [
+"ligar",
+"virar",
+"desligar"
+],
+"ans": 0,
+"why": "Ligar."
+},
+{
+"q": "Turn **off**:",
+"opts": [
+"ligar",
+"desligar",
+"virar"
+],
+"ans": 1,
+"why": "Desligar."
+}
+],
+"fix": [
+{
+"wrong": "The leaves become red.",
+"right": "The leaves turned red.",
+"why": "Cor: turn."
+},
+{
+"wrong": "She turned to thirty.",
+"right": "She turned thirty.",
+"why": "Idade sem to."
+},
+{
+"wrong": "Turn the light off it.",
+"right": "Turn it off.",
+"why": "Pronome entre verbo e partícula."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “The leaves turn red.”",
+"answer": "The leaves turned red.",
+"why": ""
+},
+{
+"prompt": "Troque pelo pronome: “Turn off the light.”",
+"answer": "Turn it off.",
+"why": ""
+},
+{
+"prompt": "Futuro: “He turns thirty.” (next year, will)",
+"answer": "He will turn thirty.",
+"why": ""
+}
+]
+}

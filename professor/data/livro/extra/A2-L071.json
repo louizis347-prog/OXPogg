@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mustn't × needn't",
+"wrong": "You don't have to drive fast. (proibido)",
+"right": "You mustn't drive fast.",
+"why": "Em português 'não deve' e 'não precisa' soam parecidos; em inglês mustn't proíbe e don't have to dispensa."
+},
+"mcq": [
+{
+"q": "Sunday: no school. You ___ go.",
+"opts": [
+"mustn't",
+"can't",
+"don't have to"
+],
+"ans": 2,
+"why": "dispensa."
+},
+{
+"q": "Fire! You ___ use the elevator.",
+"opts": [
+"haven't",
+"mustn't",
+"don't have to"
+],
+"ans": 1,
+"why": "proibição."
+},
+{
+"q": "She ___ pay. It's free.",
+"opts": [
+"doesn't have to",
+"don't have to",
+"mustn't"
+],
+"ans": 0,
+"why": "doesn't."
+},
+{
+"q": "Passado de don't have to:",
+"opts": [
+"didn't have to",
+"mustn't",
+"hadn't to"
+],
+"ans": 0,
+"why": "didn't."
+}
+],
+"fix": [
+{
+"wrong": "You mustn't pay. It's free.",
+"right": "You don't have to pay. It's free.",
+"why": "dispensa."
+},
+{
+"wrong": "You don't have to enter. It's dangerous.",
+"right": "You mustn't enter. It's dangerous.",
+"why": "proibição."
+},
+{
+"wrong": "He doesn't has to go.",
+"right": "He doesn't have to go.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I don't have to go.”",
+"answer": "I didn't have to go.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She has to cook.”",
+"answer": "She doesn't have to cook.",
+"why": ""
+},
+{
+"prompt": "Proibição: “You use your phone here.” com mustn't",
+"answer": "You mustn't use your phone here.",
+"why": ""
+}
+]
+}

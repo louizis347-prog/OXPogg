@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector duplo",
+"wrong": "Granted, anger has driven reforms, but yet a calm culture lasts longer.",
+"right": "Granted, anger has driven reforms. Yet a calm culture lasts longer.",
+"why": "O português junta “mas, porém”; em inglês Yet já contrasta e não se combina com but."
+},
+"mcq": [
+{
+"q": "Granted, …",
+"opts": [
+"concedes a point",
+"asks",
+"ends"
+],
+"ans": 0,
+"why": "Concessão."
+},
+{
+"q": "Counter-argument connector:",
+"opts": [
+"Yet",
+"But yet",
+"Yet but"
+],
+"ans": 0,
+"why": "Yet."
+},
+{
+"q": "Acknowledge opposite point first:",
+"opts": [
+"Because it works.",
+"Never works.",
+"Granted, it works."
+],
+"ans": 2,
+"why": "Granted."
+},
+{
+"q": "Anger has driven reforms: tense?",
+"opts": [
+"present perfect",
+"future",
+"simple past"
+],
+"ans": 0,
+"why": "Present perfect."
+}
+],
+"fix": [
+{
+"wrong": "Granted anger drives reforms, but yet it fades.",
+"right": "Granted, anger drives reforms. Yet it fades.",
+"why": "Sem but yet."
+},
+{
+"wrong": "Anger has drove reforms.",
+"right": "Anger has driven reforms.",
+"why": "Particípio."
+},
+{
+"wrong": "Granted, but yet it is slow.",
+"right": "Granted, yet it is slow.",
+"why": "Não use but com yet."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Granted: “Anger has driven reforms, but it fades.”",
+"answer": "Granted, anger has driven reforms, but it fades.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Anger drives reforms.”",
+"answer": "Anger drove reforms.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “Anger has driven reforms.”",
+"answer": "Anger has not driven reforms.",
+"why": ""
+}
+]
+}

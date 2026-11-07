@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "stop somebody from",
+"wrong": "The rain stopped us to go out.",
+"right": "The rain stopped us from going out.",
+"why": "O português \"impediu-nos de sair\" leva o aluno ao infinitivo. Em inglês: stop somebody from + -ing."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"I can't stop to think about it.",
+"I can't stop think about it.",
+"I can't stop thinking about it."
+],
+"ans": 2,
+"why": "can't stop + -ing."
+},
+{
+"q": "Complete: We stopped **___** a map. (para olhar)",
+"opts": [
+"to look at",
+"looking at",
+"look at"
+],
+"ans": 0,
+"why": "Finalidade = to."
+},
+{
+"q": "Qual é verdade?",
+"opts": [
+"stop + to = deixar de",
+"stop + to = finalidade",
+"stop + -ing = finalidade"
+],
+"ans": 1,
+"why": "stop to do = para fazer algo."
+},
+{
+"q": "\"He stopped to drink water\" = ",
+"opts": [
+"Parou para beber água.",
+"Parou de beber água.",
+"Impediu beber água."
+],
+"ans": 0,
+"why": "stop to do = parar para fazer."
+}
+],
+"fix": [
+{
+"wrong": "We stopped to eat at midnight because we were full.",
+"right": "We stopped eating at midnight because we were full.",
+"why": "Deixar de = -ing."
+},
+{
+"wrong": "They can't stop to laugh.",
+"right": "They can't stop laughing.",
+"why": "can't stop + -ing."
+},
+{
+"wrong": "Stop to talk and listen!",
+"right": "Stop talking and listen!",
+"why": "Pare de falar: -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The rain prevented us from walking.” com stop",
+"answer": "The rain stopped us from walking.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “I can stop eating.”",
+"answer": "I can't stop eating.",
+"why": ""
+},
+{
+"prompt": "Reescreva (finalidade): “We stopped talking.” → paramos para falar",
+"answer": "We stopped to talk.",
+"why": ""
+}
+]
+}

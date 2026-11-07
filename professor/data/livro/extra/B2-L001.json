@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I am studying English since 2020.",
+"right": "I have been studying English since 2020.",
+"why": "Em português “estudo desde 2020” (presente). Com since/for e ação em curso, o inglês exige present perfect continuous."
+},
+"mcq": [
+{
+"q": "Attitudes **___** changing lately.",
+"opts": [
+"are been",
+"have been",
+"has be"
+],
+"ans": 1,
+"why": "Have been + -ing."
+},
+{
+"q": "She **___** for two hours.",
+"opts": [
+"works",
+"is working",
+"has been working"
+],
+"ans": 2,
+"why": "For + duração."
+},
+{
+"q": "Resultado visível: “Your eyes are red. You **___**.”",
+"opts": [
+"have been crying",
+"are cry",
+"cried since"
+],
+"ans": 0,
+"why": "Evidência."
+},
+{
+"q": "How long **___** you been waiting?",
+"opts": [
+"did",
+"are",
+"have"
+],
+"ans": 2,
+"why": "How long have you been."
+}
+],
+"fix": [
+{
+"wrong": "I am living here since June.",
+"right": "I have been living here since June.",
+"why": "Since."
+},
+{
+"wrong": "She has been work for hours.",
+"right": "She has been working for hours.",
+"why": "-ing."
+},
+{
+"wrong": "They have been wait since noon.",
+"right": "They have been waiting since noon.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com since: “I study English. (2020)”",
+"answer": "I have been studying English since 2020.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She has been working.”",
+"answer": "She hasn’t been working.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You have been waiting.” (How long)",
+"answer": "How long have you been waiting?",
+"why": ""
+}
+]
+}

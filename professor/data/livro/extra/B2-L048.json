@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "You should to call your mother.",
+"right": "You should call your mother.",
+"why": "O brasileiro acrescenta to depois de should. Compare: should (geral), ought to (moral), had better (urgência com consequência)."
+},
+"mcq": [
+{
+"q": "Aviso urgente: “You **___** take an umbrella, or you’ll get wet.”",
+"opts": [
+"should better",
+"ought",
+"had better"
+],
+"ans": 2,
+"why": "Had better."
+},
+{
+"q": "Conselho moral: “You **___** to respect elders.”",
+"opts": [
+"had",
+"should",
+"ought"
+],
+"ans": 2,
+"why": "Ought to."
+},
+{
+"q": "Conselho geral:",
+"opts": [
+"You should sleep more.",
+"You should to sleep more.",
+"You ought sleep more."
+],
+"ans": 0,
+"why": "Should + base."
+},
+{
+"q": "Negativa de had better:",
+"opts": [
+"don’t had better",
+"hadn’t better",
+"had better not"
+],
+"ans": 2,
+"why": "Had better not."
+}
+],
+"fix": [
+{
+"wrong": "You had better to hurry.",
+"right": "You had better hurry.",
+"why": "Sem to."
+},
+{
+"wrong": "He ought hurry up.",
+"right": "He ought to hurry up.",
+"why": "Ought to."
+},
+{
+"wrong": "You hadn’t better lie.",
+"right": "You had better not lie.",
+"why": "Not depois de better."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com had better: “You should wear a coat.”",
+"answer": "You had better wear a coat.",
+"why": ""
+},
+{
+"prompt": "Reescreva com ought to: “You should be kind.”",
+"answer": "You ought to be kind.",
+"why": ""
+},
+{
+"prompt": "Negativa com had better: “You had better lie.”",
+"answer": "You had better not lie.",
+"why": ""
+}
+]
+}

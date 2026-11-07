@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "should britânico",
+"wrong": "I suggest that he should to be on time.",
+"right": "I suggest that he be on time.",
+"why": "O brasileiro acrescenta should e to por influência de “que ele deva estar”. A forma americana usa só a base: that he be."
+},
+"mcq": [
+{
+"q": "I suggest that he ___ on time. (American)",
+"opts": [
+"is",
+"should to be",
+"be"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "Britânico: I suggest that he ___ be on time.",
+"opts": [
+"should",
+"would",
+"will to"
+],
+"ans": 0,
+"why": "should."
+},
+{
+"q": "She demanded that he ___ the door.",
+"opts": [
+"opened",
+"open",
+"opens"
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "It is vital that she ___ present.",
+"opts": [
+"is",
+"are",
+"be"
+],
+"ans": 2,
+"why": "be."
+}
+],
+"fix": [
+{
+"wrong": "I suggest that he is on time.",
+"right": "I suggest that he be on time.",
+"why": "Base."
+},
+{
+"wrong": "She demanded that he opens the door.",
+"right": "She demanded that he open the door.",
+"why": "Base."
+},
+{
+"wrong": "I propose that he should to leave.",
+"right": "I propose that he leave.",
+"why": "Sem should to."
+}
+],
+"rewrite": [
+{
+"prompt": "Americano: “I suggest that he should be on time.”",
+"answer": "I suggest that he be on time.",
+"why": ""
+},
+{
+"prompt": "Subj.: “She demanded that he opened the door.”",
+"answer": "She demanded that he open the door.",
+"why": ""
+},
+{
+"prompt": "Subj.: “I insist that she is present.”",
+"answer": "I insist that she be present.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "formar substantivos",
+"wrong": "The submit closes in March.",
+"right": "The submission closes in March.",
+"why": "O brasileiro usa o verbo como substantivo. Em inglês, nominalize com sufixo: submit → submission."
+},
+"mcq": [
+{
+"q": "The ___ closes in March.",
+"opts": [
+"submission",
+"submit",
+"submitting"
+],
+"ans": 0,
+"why": "submission."
+},
+{
+"q": "The ___ is strict. (evaluate)",
+"opts": [
+"evaluated",
+"evaluation",
+"evaluating"
+],
+"ans": 1,
+"why": "evaluation."
+},
+{
+"q": "Nominalization turns a verb into…",
+"opts": [
+"an adverb",
+"a question",
+"a noun"
+],
+"ans": 2,
+"why": "Substantivo."
+},
+{
+"q": "Which is formal?",
+"opts": [
+"The expansion of cities…",
+"Cities expanded a lot…",
+"Cities, they grow…"
+],
+"ans": 0,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "The evaluate is strict.",
+"right": "The evaluation is strict.",
+"why": "evaluation."
+},
+{
+"wrong": "The expand of cities is fast.",
+"right": "The expansion of cities is fast.",
+"why": "expansion."
+},
+{
+"wrong": "The submission close in March.",
+"right": "The submission closes in March.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com um substantivo: “Cities expand fast.” (The … of cities is fast.)",
+"answer": "The expansion of cities is fast.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “They evaluate strictly.” (The … is strict.)",
+"answer": "The evaluation is strict.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Applicants submit by March.” (The … closes in March.)",
+"answer": "The submission closes in March.",
+"why": ""
+}
+]
+}

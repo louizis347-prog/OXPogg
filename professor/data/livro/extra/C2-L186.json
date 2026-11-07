@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If the rules would be enough, I would be fluent.",
+"right": "If the rules were enough, I’d be fluent.",
+"why": "Português usa subjuntivo (“se as regras bastassem”); inglês usa past simple após if, nunca would."
+},
+"mcq": [
+{
+"q": "Unreal condition:",
+"opts": [
+"If the rules would be enough, I’d be fluent.",
+"If the rules were enough, I’d be fluent.",
+"If the rules are enough, I’d be."
+],
+"ans": 1,
+"why": "If + passado."
+},
+{
+"q": "Bait question:",
+"opts": [
+"So you understand the rule?",
+"You are understanding rule?",
+"So understand you?"
+],
+"ans": 0,
+"why": "Pergunta-isca."
+},
+{
+"q": "I’d is…",
+"opts": [
+"I did",
+"I had only",
+"I would"
+],
+"ans": 2,
+"why": "Contração."
+},
+{
+"q": "Shows contradiction when…",
+"opts": [
+"all agrees",
+"words and result clash",
+"nothing"
+],
+"ans": 1,
+"why": "Contradição."
+}
+],
+"fix": [
+{
+"wrong": "If I would know, I would tell.",
+"right": "If I knew, I would tell.",
+"why": "Passado."
+},
+{
+"wrong": "If she is rich, she would travel.",
+"right": "If she were rich, she would travel.",
+"why": "Irreal."
+},
+{
+"wrong": "If rules was enough, I’d be fluent.",
+"right": "If rules were enough, I’d be fluent.",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "Irreal: “If the rules are enough, I’m fluent.”",
+"answer": "If the rules were enough, I’d be fluent.",
+"why": ""
+},
+{
+"prompt": "Contraia: “I would be fluent.”",
+"answer": "I’d be fluent.",
+"why": ""
+},
+{
+"prompt": "Negativo: “If the rules were enough…”",
+"answer": "If the rules weren’t enough…",
+"why": ""
+}
+]
+}

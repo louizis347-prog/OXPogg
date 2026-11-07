@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome repetido",
+"wrong": "The man who I saw him is my boss.",
+"right": "The man who I saw is my boss.",
+"why": "Em português coloquial repetimos o pronome (\"o homem que eu o vi\"). Em inglês, o pronome relativo já é o objeto."
+},
+"mcq": [
+{
+"q": "Complete: The woman **___** called is my aunt.",
+"opts": [
+"which",
+"who",
+"whose"
+],
+"ans": 1,
+"why": "Pessoa sujeito = who."
+},
+{
+"q": "Qual é passiva reduzida?",
+"opts": [
+"the letter sending yesterday",
+"the letter to send yesterday",
+"the letter sent yesterday"
+],
+"ans": 2,
+"why": "Passiva = particípio."
+},
+{
+"q": "\"She stopped smoking\" = ",
+"opts": [
+"Ela parou de fumar.",
+"Ela parou para fumar.",
+"Ela fuma agora."
+],
+"ans": 0,
+"why": "stop -ing = deixar de."
+},
+{
+"q": "Complete: The woman **___** called is my aunt.",
+"opts": [
+"which",
+"whose",
+"who"
+],
+"ans": 2,
+"why": "Pessoa sujeito = who."
+}
+],
+"fix": [
+{
+"wrong": "My brother that lives in Rome called.",
+"right": "My brother, who lives in Rome, called.",
+"why": "Informação extra: who + vírgulas."
+},
+{
+"wrong": "Walking to school, the rain began.",
+"right": "Walking to school, I felt the rain begin.",
+"why": "Sujeito."
+},
+{
+"wrong": "The noise stopped me to sleep.",
+"right": "The noise stopped me from sleeping.",
+"why": "stop somebody from -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reduza: “The book that was written by Tom is long.”",
+"answer": "The book written by Tom is long.",
+"why": ""
+},
+{
+"prompt": "Reescreva (finalidade): “He stopped drinking tea.” → parou para beber chá",
+"answer": "He stopped to drink tea.",
+"why": ""
+},
+{
+"prompt": "Una com which: “This is the book. I bought it.”",
+"answer": "This is the book which I bought.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make vs do",
+"wrong": "I made my homework.",
+"right": "I did my homework.",
+"why": "Em português só fazemos 'fazer'; em inglês homework, chores usam do; coffee, a mistake, a plan usam make."
+},
+"mcq": [
+{
+"q": "I ___ a mistake.",
+"opts": [
+"did",
+"took",
+"made"
+],
+"ans": 2,
+"why": "make a mistake."
+},
+{
+"q": "She ___ the dishes.",
+"opts": [
+"did",
+"made",
+"took"
+],
+"ans": 0,
+"why": "do the dishes."
+},
+{
+"q": "Passado de make:",
+"opts": [
+"made",
+"maked",
+"did"
+],
+"ans": 0,
+"why": "made."
+},
+{
+"q": "I ___ my keys at home. (esqueci)",
+"opts": [
+"forgot",
+"forget",
+"forgotten"
+],
+"ans": 0,
+"why": "forgot."
+}
+],
+"fix": [
+{
+"wrong": "I maked a cake.",
+"right": "I made a cake.",
+"why": "irregular."
+},
+{
+"wrong": "He did a mistake.",
+"right": "He made a mistake.",
+"why": "make."
+},
+{
+"wrong": "She forgetted it.",
+"right": "She forgot it.",
+"why": "irregular."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I make dinner.”",
+"answer": "I made dinner.",
+"why": ""
+},
+{
+"prompt": "Passado: “She forgets the key.”",
+"answer": "She forgot the key.",
+"why": ""
+},
+{
+"prompt": "Passado: “We do the work.”",
+"answer": "We did the work.",
+"why": ""
+}
+]
+}

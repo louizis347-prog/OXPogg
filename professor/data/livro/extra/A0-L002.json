@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "nomes das letras",
+"wrong": "My name is Ian: E-A-N.",
+"right": "My name is Ian: I-A-N.",
+"why": "O brasileiro pensa no nome português das letras; em inglês a letra I se diz \"ai\" e a letra E se diz \"i\", então é fácil trocar na hora de soletrar."
+},
+"mcq": [
+{
+"q": "The letter **E** sounds like…",
+"opts": [
+"\"ê\"",
+"\"i\" (longo)",
+"\"é\""
+],
+"ans": 1,
+"why": "Em inglês, E se diz /iː/."
+},
+{
+"q": "**Last name** means…",
+"opts": [
+"último nome falso",
+"nome de batismo",
+"sobrenome"
+],
+"ans": 2,
+"why": "Last name = sobrenome (family name)."
+},
+{
+"q": "\"Double L\" in \"Ellie\" means…",
+"opts": [
+"duas letras L seguidas",
+"uma letra L longa",
+"L e depois E"
+],
+"ans": 0,
+"why": "Double L = duas letras L."
+},
+{
+"q": "Which is a **vowel**?",
+"opts": [
+"T",
+"U",
+"M"
+],
+"ans": 1,
+"why": "As vogais são A, E, I, O, U."
+}
+],
+"fix": [
+{
+"wrong": "My first name is Leo, L-E-O-N.",
+"right": "My first name is Leo, L-E-O.",
+"why": "Cuidado para não acrescentar letras."
+},
+{
+"wrong": "My name are Ana.",
+"right": "My name is Ana.",
+"why": "Name é singular: is."
+},
+{
+"wrong": "The letter of my name is A.",
+"right": "The first letter of my name is A.",
+"why": "Falta first para indicar a posição."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a resposta com letras separadas por hífen: “Leo”.",
+"answer": "L-E-O",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “one letter”.",
+"answer": "two letters",
+"why": "Escreva \"two letters\"."
+},
+{
+"prompt": "Reescreva como pergunta: “You spell it.”",
+"answer": "Do you spell it?",
+"why": ""
+}
+]
+}

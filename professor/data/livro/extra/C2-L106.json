@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "My voice was waver and my notes blurred.",
+"right": "My voice wavered and my notes blurred.",
+"why": "Português usa “estava tremendo” para tudo; para cena rápida basta passado simples."
+},
+"mcq": [
+{
+"q": "Vivid past:",
+"opts": [
+"my voice wavered",
+"my voice wavering",
+"my voice was wavered"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Resolution:",
+"opts": [
+"Then something small shifted.",
+"Then something shifting.",
+"Then something small shifts."
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Sensory image:",
+"opts": [
+"notes blurred",
+"notes were blurry for",
+"notes blur to"
+],
+"ans": 0,
+"why": "blurred."
+},
+{
+"q": "Narrative past after “Then”:",
+"opts": [
+"future",
+"present",
+"simple past"
+],
+"ans": 2,
+"why": "Passado."
+}
+],
+"fix": [
+{
+"wrong": "My notes was blurred.",
+"right": "My notes blurred.",
+"why": "Passado."
+},
+{
+"wrong": "Then something small shift.",
+"right": "Then something small shifted.",
+"why": "Passado."
+},
+{
+"wrong": "My voice wavering.",
+"right": "My voice wavered.",
+"why": "Verbo finito."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “My voice wavers.”",
+"answer": "My voice wavered.",
+"why": ""
+},
+{
+"prompt": "Negativo: “My notes blurred.”",
+"answer": "My notes did not blur.",
+"why": ""
+},
+{
+"prompt": "Plural: “The note blurred.”",
+"answer": "The notes blurred.",
+"why": ""
+}
+]
+}

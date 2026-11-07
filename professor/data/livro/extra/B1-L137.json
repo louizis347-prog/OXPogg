@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "opinião alheia e hipótese",
+"wrong": "Some peoples say that traditions are important. If we would keep them, young people learn more.",
+"right": "Some people say that traditions are important. If we kept them, young people would learn more.",
+"why": "Em português “pessoas” é plural regular; o brasileiro cria peoples. E “se mantivéssemos” vira would no if. Em inglês, people já é plural; if + Past, would + base."
+},
+"mcq": [
+{
+"q": "Some ___ say it is old.",
+"opts": [
+"peoples",
+"persons",
+"people"
+],
+"ans": 2,
+"why": "people."
+},
+{
+"q": "If we kept them, young people ___ learn.",
+"opts": [
+"would",
+"will",
+"did"
+],
+"ans": 0,
+"why": "would."
+},
+{
+"q": "Giving own opinion:",
+"opts": [
+"On my opinion,",
+"According me,",
+"In my opinion,"
+],
+"ans": 2,
+"why": "In my opinion."
+},
+{
+"q": "Relaying others’ opinion:",
+"opts": [
+"I say that…",
+"Some people say that…",
+"They says that…"
+],
+"ans": 1,
+"why": "Relatar."
+}
+],
+"fix": [
+{
+"wrong": "If we would keep it, it would last.",
+"right": "If we kept it, it would last.",
+"why": "if + Past."
+},
+{
+"wrong": "Many peoples agree.",
+"right": "Many people agree.",
+"why": "people."
+},
+{
+"wrong": "According me, the plan is risky.",
+"right": "In my opinion, the plan is risky.",
+"why": "In my opinion."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no 2º condicional: “If we keep it, it will last.”",
+"answer": "If we kept it, it would last.",
+"why": ""
+},
+{
+"prompt": "Relate: “Traditions are important.” (Some people say...)",
+"answer": "Some people say that traditions are important.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Many peoples agree.” corrija",
+"answer": "Many people agree.",
+"why": ""
+}
+]
+}

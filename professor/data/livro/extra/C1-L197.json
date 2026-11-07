@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "because",
+"wrong": "One reason is because bias flashcards help.",
+"right": "One reason is that bias flashcards help.",
+"why": "Em português “um motivo é porque” é comum. Em inglês, depois de reason is use that."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"One reason is because it helps.",
+"One reason it is that helps.",
+"One reason is that it helps."
+],
+"ans": 2,
+"why": "reason is that."
+},
+{
+"q": "“Another reason ___ framing.”",
+"opts": [
+"is",
+"are",
+"be"
+],
+"ans": 0,
+"why": "is."
+},
+{
+"q": "To concede:",
+"opts": [
+"On the other,",
+"Admittedly,… but overall…",
+"Firstly,"
+],
+"ans": 1,
+"why": "Concessão."
+},
+{
+"q": "Opinion opener:",
+"opts": [
+"According me,",
+"For me opinion,",
+"In my opinion,"
+],
+"ans": 2,
+"why": "In my opinion."
+}
+],
+"fix": [
+{
+"wrong": "In my opinion, loss aversion are real.",
+"right": "In my opinion, loss aversion is real.",
+"why": "incontável singular."
+},
+{
+"wrong": "Another reason is the sunk cost, for example, people buy more.",
+"right": "Another reason is sunk cost. For example, people buy more.",
+"why": "Frase nova."
+},
+{
+"wrong": "I’d say what framing matters.",
+"right": "I’d say that framing matters.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com One reason is: “Flashcards help because they are short.”",
+"answer": "One reason is that flashcards are short.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Admittedly: “Framing is subtle, but it matters.” (Admittedly,…)",
+"answer": "Admittedly, framing is subtle, but it matters.",
+"why": ""
+},
+{
+"prompt": "Reescreva com I’d say that: “I think sunk cost matters.”",
+"answer": "I’d say that sunk cost matters.",
+"why": ""
+}
+]
+}

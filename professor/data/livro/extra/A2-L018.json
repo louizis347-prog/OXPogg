@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "did + verbo base",
+"wrong": "Did you went to school?",
+"right": "Did you go to school?",
+"why": "Em português o verbo muda ('você foi?'); em inglês o did carrega o passado e o verbo fica na base."
+},
+"mcq": [
+{
+"q": "___ she call you?",
+"opts": [
+"Did",
+"Does",
+"Was"
+],
+"ans": 0,
+"why": "Did."
+},
+{
+"q": "Did he ___ the game?",
+"opts": [
+"win",
+"won",
+"wins"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "Resposta curta a “Did you eat?”",
+"opts": [
+"Yes, I did.",
+"Yes, I ate.",
+"Yes, I done."
+],
+"ans": 0,
+"why": "did."
+},
+{
+"q": "Pergunta correta:",
+"opts": [
+"Where did you go?",
+"Where you went?",
+"Where did you went?"
+],
+"ans": 0,
+"why": "did + base."
+}
+],
+"fix": [
+{
+"wrong": "Did you saw it?",
+"right": "Did you see it?",
+"why": "base."
+},
+{
+"wrong": "Where you went?",
+"right": "Where did you go?",
+"why": "did."
+},
+{
+"wrong": "Did she came?",
+"right": "Did she come?",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “You called.”",
+"answer": "Did you call?",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She went home.”",
+"answer": "Did she go home?",
+"why": ""
+},
+{
+"prompt": "Pergunta: “They ate.”",
+"answer": "Did they eat?",
+"why": ""
+}
+]
+}

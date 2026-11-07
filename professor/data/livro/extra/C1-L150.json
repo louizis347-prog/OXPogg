@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome no meio",
+"wrong": "They singled out it for praise.",
+"right": "They singled it out for praise.",
+"why": "Em português o complemento vem depois do verbo (“destacaram-no”). Em inglês, nos phrasal verbs separáveis, o pronome vai ENTRE verbo e partícula."
+},
+"mcq": [
+{
+"q": "Choose the correct order.",
+"opts": [
+"single it out",
+"single out it",
+"out single it"
+],
+"ans": 0,
+"why": "Pronome entre as partes."
+},
+{
+"q": "“single out a factor” means...",
+"opts": [
+"ignore it",
+"highlight it",
+"remove it"
+],
+"ans": 1,
+"why": "destacar."
+},
+{
+"q": "Which passive is formed correctly?",
+"opts": [
+"Heating was single out.",
+"Heating singled out.",
+"Heating was singled out."
+],
+"ans": 2,
+"why": "be + singled out."
+},
+{
+"q": "“___ for criticism” = chosen to be blamed",
+"opts": [
+"singled out",
+"single outed",
+"singling out"
+],
+"ans": 0,
+"why": "be singled out for."
+}
+],
+"fix": [
+{
+"wrong": "The study singled out it as the main cost.",
+"right": "The study singled it out as the main cost.",
+"why": "Pronome separa o phrasal verb."
+},
+{
+"wrong": "Standby power was single out in the report.",
+"right": "Standby power was singled out in the report.",
+"why": "Particípio -ed."
+},
+{
+"wrong": "They singled out him for praise.",
+"right": "They singled him out for praise.",
+"why": "Pronome pessoal entre o verbo e out."
+}
+],
+"rewrite": [
+{
+"prompt": "Substitua o objeto por it: “The report singled out the heating share.”",
+"answer": "The report singled it out.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The report singled out appliance use.”",
+"answer": "Appliance use was singled out in the report.",
+"why": "Use esta forma."
+},
+{
+"prompt": "Substitua por him: “The boss singled out Pedro for praise.”",
+"answer": "The boss singled him out for praise.",
+"why": ""
+}
+]
+}

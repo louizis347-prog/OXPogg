@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mine × my",
+"wrong": "This book is my.",
+"right": "This book is mine.",
+"why": "O português usa \"meu\" nas duas posições; em inglês, sem substantivo, usa-se mine/yours/hers."
+},
+"mcq": [
+{
+"q": "That bag is ___. (de você)",
+"opts": [
+"your",
+"yours",
+"you"
+],
+"ans": 1,
+"why": "Yours."
+},
+{
+"q": "They call ___. (nós)",
+"opts": [
+"we",
+"our",
+"us"
+],
+"ans": 2,
+"why": "Objeto."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a nice red car",
+"a red nice car",
+"a car nice red"
+],
+"ans": 0,
+"why": "Opinião antes da cor."
+},
+{
+"q": "___ the morning",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 1,
+"why": "Parte do dia: in."
+}
+],
+"fix": [
+{
+"wrong": "Is this your? (a bolsa)",
+"right": "Is this yours?",
+"why": "Yours."
+},
+{
+"wrong": "He likes we.",
+"right": "He likes us.",
+"why": "Us."
+},
+{
+"wrong": "We live in a house big.",
+"right": "We live in a big house.",
+"why": "Adj antes."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por pronome: “She calls Tom.”",
+"answer": "She calls him.",
+"why": ""
+},
+{
+"prompt": "Reorganize: “a friend / old”",
+"answer": "an old friend",
+"why": ""
+},
+{
+"prompt": "Complete: “I read ___ night.” (frase completa)",
+"answer": "I read at night.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "bring ≠ take",
+"wrong": "Bring this book to your sister when you go there.",
+"right": "Take this book to your sister when you go there.",
+"why": "Em português \"levar\" e \"trazer\" têm direção; o aluno usa bring sempre. Bring = em direção a quem fala; take = para longe."
+},
+"mcq": [
+{
+"q": "bring up =",
+"opts": [
+"jogar",
+"criar; mencionar",
+"subir"
+],
+"ans": 1,
+"why": "bring up."
+},
+{
+"q": "bring about =",
+"opts": [
+"trazer",
+"visitar",
+"causar"
+],
+"ans": 2,
+"why": "bring about."
+},
+{
+"q": "bring back =",
+"opts": [
+"devolver",
+"levar",
+"perder"
+],
+"ans": 0,
+"why": "bring back."
+},
+{
+"q": "Passado de bring:",
+"opts": [
+"bringed",
+"broughten",
+"brought"
+],
+"ans": 2,
+"why": "bring–brought."
+}
+],
+"fix": [
+{
+"wrong": "He bringed the book.",
+"right": "He brought the book.",
+"why": "brought."
+},
+{
+"wrong": "She brought her kids up in Rome, bringed them up well.",
+"right": "She brought her kids up in Rome.",
+"why": "Sem repetição."
+},
+{
+"wrong": "Bring me to the airport.",
+"right": "Take me to the airport.",
+"why": "take."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “She brings a gift.”",
+"answer": "She brought a gift.",
+"why": ""
+},
+{
+"prompt": "Reescreva com bring up: “They raised three children.”",
+"answer": "They brought up three children.",
+"why": ""
+},
+{
+"prompt": "Reescreva com pronome: “Bring back the book.” → it",
+"answer": "Bring it back.",
+"why": ""
+}
+]
+}

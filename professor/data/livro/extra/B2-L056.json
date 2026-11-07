@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish I was richer.",
+"right": "I wish I were richer.",
+"why": "Formal/escrito pede were para todas as pessoas; o brasileiro usa o presente ou was por analogia. Wish + passado indica irreal."
+},
+"mcq": [
+{
+"q": "I wish I **___** richer.",
+"opts": [
+"am",
+"would be",
+"were"
+],
+"ans": 2,
+"why": "Were."
+},
+{
+"q": "She wishes she **___** a car.",
+"opts": [
+"has",
+"had",
+"would have"
+],
+"ans": 1,
+"why": "Had."
+},
+{
+"q": "Wish + Past indica:",
+"opts": [
+"futuro certo",
+"fato real",
+"irreal no presente"
+],
+"ans": 2,
+"why": "Irreal."
+},
+{
+"q": "I wish it **___** warmer today.",
+"opts": [
+"were",
+"is",
+"will be"
+],
+"ans": 0,
+"why": "Were."
+}
+],
+"fix": [
+{
+"wrong": "I wish it is warmer.",
+"right": "I wish it were warmer.",
+"why": "Were."
+},
+{
+"wrong": "He wishes he has a bike.",
+"right": "He wishes he had a bike.",
+"why": "Had."
+},
+{
+"wrong": "I wish I can fly.",
+"right": "I wish I could fly.",
+"why": "Could."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I’m not famous.” (I wish…)",
+"answer": "I wish I were famous.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He doesn’t have a bike.” (He wishes…)",
+"answer": "He wishes he had a bike.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It isn’t warm.” (I wish…)",
+"answer": "I wish it were warm.",
+"why": ""
+}
+]
+}

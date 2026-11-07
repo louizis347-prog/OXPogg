@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ask … not to",
+"wrong": "We ask them don't run in the hall.",
+"right": "We ask them not to run in the hall.",
+"why": "Em português dizemos “pedimos que não corram”. Em inglês a negação vem antes do to: ask someone not to do."
+},
+"mcq": [
+{
+"q": "We ask them ___ run.",
+"opts": [
+"not to",
+"don't to",
+"to not"
+],
+"ans": 0,
+"why": "not to run."
+},
+{
+"q": "They allow us ___ here.",
+"opts": [
+"park",
+"parking",
+"to park"
+],
+"ans": 2,
+"why": "allow + to."
+},
+{
+"q": "Please remind them ___ lunch.",
+"opts": [
+"bring",
+"to bring",
+"bringing"
+],
+"ans": 1,
+"why": "remind to."
+},
+{
+"q": "Which is correct? (ask … not to)",
+"opts": [
+"She asked me close it.",
+"She asked me to close it.",
+"She asked me closing it."
+],
+"ans": 1,
+"why": "ask + to."
+}
+],
+"fix": [
+{
+"wrong": "He told me don't be late.",
+"right": "He told me not to be late.",
+"why": "not to."
+},
+{
+"wrong": "She allows that I leave.",
+"right": "She allows me to leave.",
+"why": "allow + pessoa + to."
+},
+{
+"wrong": "Remind us bring water.",
+"right": "Remind us to bring water.",
+"why": "to bring."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Don’t run,” we ask them.",
+"answer": "We ask them not to run.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Bring lunch,” I remind them.",
+"answer": "I remind them to bring lunch.",
+"why": ""
+},
+{
+"prompt": "Reescreva com allow: “You can use phones.” (they)",
+"answer": "They allow us to use phones.",
+"why": ""
+}
+]
+}

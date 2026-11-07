@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "was born (passado)",
+"wrong": "She is born in 1870 and become a doctor.",
+"right": "She was born in 1870 and became a doctor.",
+"why": "Em português “nasceu” é ativo (ela nasceu). Em inglês a forma é passiva e vai no passado: was/were born, nunca “is born” para quem já nasceu."
+},
+"mcq": [
+{
+"q": "She ___ in 1870.",
+"opts": [
+"born",
+"is born",
+"was born"
+],
+"ans": 2,
+"why": "was born."
+},
+{
+"q": "They ___ in Lisbon (nascimento).",
+"opts": [
+"were born",
+"was born",
+"are born"
+],
+"ans": 0,
+"why": "Plural: were."
+},
+{
+"q": "“She has influenced schools” shows…",
+"opts": [
+"nascimento",
+"citação",
+"legado até hoje"
+],
+"ans": 2,
+"why": "Present Perfect = legado."
+},
+{
+"q": "Where do you put the comma?",
+"opts": [
+"“Yes,” she said.",
+"“Yes” she said.",
+"“Yes”, she said."
+],
+"ans": 0,
+"why": "Vírgula dentro das aspas."
+}
+],
+"fix": [
+{
+"wrong": "I born in 1990.",
+"right": "I was born in 1990.",
+"why": "was born."
+},
+{
+"wrong": "She become a nurse in 1900.",
+"right": "She became a nurse in 1900.",
+"why": "Passado de become: became."
+},
+{
+"wrong": "When did you born?",
+"right": "When were you born?",
+"why": "Pergunta: were you born."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “She becomes a doctor.”",
+"answer": "She became a doctor.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Ele nasceu em 1870.” em inglês, com “He ... in 1870”: “He ... in 1870.”",
+"answer": "He was born in 1870.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Present Perfect: “She influenced many schools.”",
+"answer": "She has influenced many schools.",
+"why": ""
+}
+]
+}

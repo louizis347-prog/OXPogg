@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb",
+"wrong": "She took the paper over of her father.",
+"right": "She took over the paper from her father.",
+"why": "O brasileiro tenta usar preposição de “assumir de”. Em inglês: take over + objeto (from alguém)."
+},
+"mcq": [
+{
+"q": "She **took over** the paper means:",
+"opts": [
+"leu",
+"assumiu",
+"vendeu"
+],
+"ans": 1,
+"why": "Take over = assumir."
+},
+{
+"q": "I’ll take over **___** you at noon.",
+"opts": [
+"by",
+"from",
+"of"
+],
+"ans": 1,
+"why": "Take over from alguém."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She took it over.",
+"She took over it.",
+"She over took it."
+],
+"ans": 0,
+"why": "Com pronome, ele fica no meio."
+},
+{
+"q": "Substituir alguém na tarefa:",
+"opts": [
+"take over from",
+"take out",
+"take off"
+],
+"ans": 0,
+"why": "Take over from."
+}
+],
+"fix": [
+{
+"wrong": "She took over it.",
+"right": "She took it over.",
+"why": "Pronome vai entre verbo e partícula."
+},
+{
+"wrong": "I will take over of you.",
+"right": "I will take over from you.",
+"why": "Use from."
+},
+{
+"wrong": "He taked over the paper.",
+"right": "He took over the paper.",
+"why": "Passado: took."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “She takes over the paper.”",
+"answer": "She took over the paper.",
+"why": ""
+},
+{
+"prompt": "Troque o objeto pelo pronome it: “I’ll take over the story.”",
+"answer": "I’ll take it over.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He took over the job.”",
+"answer": "He didn’t take over the job.",
+"why": ""
+}
+]
+}

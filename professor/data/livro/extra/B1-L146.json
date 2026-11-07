@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta indireta com did",
+"wrong": "Could you tell me how much is the fine? Do you know when did you return it?",
+"right": "Could you tell me how much the fine is? Do you know when you returned it?",
+"why": "O português não tem auxiliar do/did em perguntas, então o brasileiro o mantém ao transferir a ordem direta. Em inglês, na pergunta indireta o did some e o verbo vai ao passado."
+},
+"mcq": [
+{
+"q": "Do you know when ___ it?",
+"opts": [
+"did you return",
+"you returned",
+"you did return"
+],
+"ans": 1,
+"why": "Passado sem did."
+},
+{
+"q": "Could you tell me how much ___?",
+"opts": [
+"the fine is",
+"is the fine",
+"does the fine"
+],
+"ans": 0,
+"why": "Ordem."
+},
+{
+"q": "Direct: “Why did she leave?” Indirect: Why ___",
+"opts": [
+"did she leave",
+"she did leave",
+"she left"
+],
+"ans": 2,
+"why": "Sem did."
+},
+{
+"q": "Which is correct? (pergunta indireta com did)",
+"opts": [
+"I wonder how old he is.",
+"I wonder how old is he.",
+"I wonder how old does he."
+],
+"ans": 0,
+"why": "Ordem."
+}
+],
+"fix": [
+{
+"wrong": "Do you know when did he arrive?",
+"right": "Do you know when he arrived?",
+"why": "Sem did."
+},
+{
+"wrong": "Tell me how many books are there.",
+"right": "Tell me how many books there are.",
+"why": "Ordem."
+},
+{
+"wrong": "Can you say why did you go?",
+"right": "Can you say why you went?",
+"why": "Sem did."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne indireta: “When did you return it?” (Do you know...)",
+"answer": "Do you know when you returned it?",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “How much is the fine?” (Could you tell me...)",
+"answer": "Could you tell me how much the fine is?",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Why did he leave?” (I wonder...)",
+"answer": "I wonder why he left.",
+"why": ""
+}
+]
+}

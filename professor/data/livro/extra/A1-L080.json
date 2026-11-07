@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "set × put",
+"wrong": "Set the book on the table.",
+"right": "Put the book on the table.",
+"why": "O brasileiro generaliza set por \"pôr\"; set é usado com mesa, alarme, meta."
+},
+"mcq": [
+{
+"q": "“Pôr a mesa” =",
+"opts": [
+"set the table",
+"put the table",
+"make the table"
+],
+"ans": 0,
+"why": "Set the table."
+},
+{
+"q": "“Programar o alarme” =",
+"opts": [
+"make an alarm",
+"set an alarm",
+"put an alarm in"
+],
+"ans": 1,
+"why": "Set."
+},
+{
+"q": "“Definir uma meta” =",
+"opts": [
+"put a goal",
+"do a goal",
+"set a goal"
+],
+"ans": 2,
+"why": "Set."
+},
+{
+"q": "“O sol se põe” =",
+"opts": [
+"The sun sets.",
+"The sun puts.",
+"The sun makes."
+],
+"ans": 0,
+"why": "Set."
+}
+],
+"fix": [
+{
+"wrong": "I put the table at six.",
+"right": "I set the table at six.",
+"why": "Set."
+},
+{
+"wrong": "She makes an alarm for 7.",
+"right": "She sets an alarm for 7.",
+"why": "Set."
+},
+{
+"wrong": "He sets the book on the desk.",
+"right": "He puts the book on the desk.",
+"why": "Put."
+}
+],
+"rewrite": [
+{
+"prompt": "Use set: “Prepare the table.”",
+"answer": "Set the table.",
+"why": ""
+},
+{
+"prompt": "Use set: “I program an alarm.”",
+"answer": "I set an alarm.",
+"why": ""
+},
+{
+"prompt": "Use set: “The sun goes down.”",
+"answer": "The sun sets.",
+"why": ""
+}
+]
+}

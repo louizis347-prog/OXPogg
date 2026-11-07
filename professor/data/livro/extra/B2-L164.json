@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "data",
+"wrong": "This data are important.",
+"right": "These data are important.",
+"why": "Concordância de data no inglês formal é plural; em português dado/dados."
+},
+"mcq": [
+{
+"q": "Qual é passiva?",
+"opts": [
+"They showed.",
+"It shows.",
+"It was shown."
+],
+"ans": 2,
+"why": "was shown."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"The results are clear.",
+"The results is clear.",
+"The result are clear."
+],
+"ans": 0,
+"why": "Plural."
+},
+{
+"q": "Reporting: The team said ___ it works.",
+"opts": [
+"to",
+"that",
+"of"
+],
+"ans": 1,
+"why": "said that."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"research",
+"experiment",
+"result"
+],
+"ans": 0,
+"why": "research."
+}
+],
+"fix": [
+{
+"wrong": "The scientist explained me the data.",
+"right": "The scientist explained the data to me.",
+"why": "explain to."
+},
+{
+"wrong": "The study is thought to being valid.",
+"right": "The study is thought to be valid.",
+"why": "to be."
+},
+{
+"wrong": "Sample size was small, but it was enough.",
+"right": "The sample size was small, but it was enough.",
+"why": "Artigo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The result is likely to change.”",
+"answer": "The result is likely to change.",
+"why": ""
+},
+{
+"prompt": "Reescreva com whose: “A scientist. Her study is famous.”",
+"answer": "A scientist whose study is famous.",
+"why": ""
+},
+{
+"prompt": "Reescreva com suggest that: “Data show a link.”",
+"answer": "The data suggest that there is a link.",
+"why": ""
+}
+]
+}

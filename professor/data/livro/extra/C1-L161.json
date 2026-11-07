@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva com se",
+"wrong": "Next, an opening offer prepares.",
+"right": "Next, an opening offer is prepared.",
+"why": "Em português usamos a voz passiva pronominal (“prepara-se uma oferta”). Em inglês, a passiva exige be + particípio; o verbo sem be soa ativo."
+},
+"mcq": [
+{
+"q": "“First, the goal ___ defined.”",
+"opts": [
+"does",
+"has",
+"is"
+],
+"ans": 2,
+"why": "Passiva: is defined."
+},
+{
+"q": "Which describes a **process**?",
+"opts": [
+"Then the other side’s interests are researched.",
+"Then researches the other side.",
+"Then researching."
+],
+"ans": 0,
+"why": "Passiva de processo."
+},
+{
+"q": "“___ that, concessions are listed.”",
+"opts": [
+"Behind",
+"After",
+"During"
+],
+"ans": 1,
+"why": "After that."
+},
+{
+"q": "Which is the **last** step marker?",
+"opts": [
+"First",
+"Next",
+"Finally"
+],
+"ans": 2,
+"why": "Finally."
+}
+],
+"fix": [
+{
+"wrong": "Next, an opening offer prepares.",
+"right": "Next, an opening offer is prepared.",
+"why": "Passiva."
+},
+{
+"wrong": "The concessions are list and ranked.",
+"right": "The concessions are listed and ranked.",
+"why": "Particípio."
+},
+{
+"wrong": "First, the goal define.",
+"right": "First, the goal is defined.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “We define the goal first.”",
+"answer": "The goal is defined first.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They rank the concessions.”",
+"answer": "The concessions are ranked.",
+"why": ""
+},
+{
+"prompt": "Passiva: “We prepare an opening offer.”",
+"answer": "An opening offer is prepared.",
+"why": ""
+}
+]
+}

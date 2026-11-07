@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do × make (desculpas)",
+"wrong": "I’m sorry, it was my guilt. I did an error.",
+"right": "I’m sorry, it was my fault. I made a mistake.",
+"why": "Em português “culpa” traduz-se como guilt, mas guilt é o sentimento. Para responsabilidade por um erro, o inglês usa fault; e o erro se faz com make."
+},
+"mcq": [
+{
+"q": "“It was my ___.”",
+"opts": [
+"guilt",
+"fault",
+"culpa"
+],
+"ans": 1,
+"why": "fault."
+},
+{
+"q": "What can I ___?",
+"opts": [
+"do",
+"make",
+"take"
+],
+"ans": 0,
+"why": "What can I do?"
+},
+{
+"q": "It’s not a big deal. = ",
+"opts": [
+"Minimizar o peso",
+"Assumir",
+"Reconhecer"
+],
+"ans": 0,
+"why": "Minimizar."
+},
+{
+"q": "Sorry, I ___ a mistake in the bill.",
+"opts": [
+"did",
+"took",
+"made"
+],
+"ans": 2,
+"why": "make a mistake."
+}
+],
+"fix": [
+{
+"wrong": "It was my guilt.",
+"right": "It was my fault.",
+"why": "fault."
+},
+{
+"wrong": "I did a mistake.",
+"right": "I made a mistake.",
+"why": "make."
+},
+{
+"wrong": "I forgot calling you.",
+"right": "I forgot to call you.",
+"why": "forget to + verbo = esquecer de fazer."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “It is my fault.”",
+"answer": "It was my fault.",
+"why": ""
+},
+{
+"prompt": "Reescreva com forget to: “I didn’t call you. I forgot.”",
+"answer": "I forgot to call you.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I make a mistake in the bill.”",
+"answer": "I made a mistake in the bill.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão condicional",
+"wrong": "Had governments funded it, vaccines could arrive sooner.",
+"right": "Had governments funded it, vaccines might have arrived sooner.",
+"why": "O brasileiro mistura tempos (“se tivessem financiado, chegariam”). No condicional inverso passado, a principal pede would/might have + particípio."
+},
+"mcq": [
+{
+"q": "___ governments funded it, vaccines might have arrived sooner.",
+"opts": [
+"Had",
+"Would",
+"Did"
+],
+"ans": 0,
+"why": "Had + sujeito + pp."
+},
+{
+"q": "Had governments funded it, vaccines ___ arrived sooner.",
+"opts": [
+"will have",
+"might have",
+"might"
+],
+"ans": 1,
+"why": "might have + pp."
+},
+{
+"q": "Which is the same as “If they had left”?",
+"opts": [
+"Did they left",
+"Would they leave",
+"Had they left"
+],
+"ans": 2,
+"why": "Had they left."
+},
+{
+"q": "Formal hypotheticals often use…",
+"opts": [
+"inversion",
+"contractions",
+"slang"
+],
+"ans": 0,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Had they funded it, vaccines would arrive sooner.",
+"right": "Had they funded it, vaccines would have arrived sooner.",
+"why": "would have."
+},
+{
+"wrong": "Had governments fund it, it might have worked.",
+"right": "Had governments funded it, it might have worked.",
+"why": "Particípio."
+},
+{
+"wrong": "Did they funded it, it would have worked.",
+"right": "Had they funded it, it would have worked.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If governments had funded it, vaccines might have arrived sooner.”",
+"answer": "Had governments funded it, vaccines might have arrived sooner.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If we had known, we would have called.”",
+"answer": "Had we known, we would have called.",
+"why": ""
+},
+{
+"prompt": "Desinverta: “Had she asked, he would have answered.”",
+"answer": "If she had asked, he would have answered.",
+"why": ""
+}
+]
+}

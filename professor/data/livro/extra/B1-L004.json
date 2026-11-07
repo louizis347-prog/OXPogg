@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "been vs gone",
+"wrong": "She has gone to Paris twice. (já voltou)",
+"right": "She has been to Paris twice.",
+"why": "Em português 'foi' cobre os dois casos; em inglês been = foi e voltou, gone = foi e ainda está lá."
+},
+"mcq": [
+{
+"q": "He's ___ to London. He's not here now.",
+"opts": [
+"gone",
+"been",
+"went"
+],
+"ans": 0,
+"why": "ainda lá."
+},
+{
+"q": "I've ___ to Japan three times.",
+"opts": [
+"been",
+"gone",
+"go"
+],
+"ans": 0,
+"why": "voltou."
+},
+{
+"q": "Já provei café: “I've ___ tried it.”",
+"opts": [
+"already",
+"yet",
+"ever"
+],
+"ans": 0,
+"why": "already."
+},
+{
+"q": "Questions: “Have you ___ eaten there?”",
+"opts": [
+"ever",
+"never",
+"yet"
+],
+"ans": 0,
+"why": "ever."
+}
+],
+"fix": [
+{
+"wrong": "Have you ever went to Peru?",
+"right": "Have you ever been to Peru?",
+"why": "been."
+},
+{
+"wrong": "I haven't seen her already.",
+"right": "I haven't seen her yet.",
+"why": "yet."
+},
+{
+"wrong": "She has gone to the dentist twice, and she is fine.",
+"right": "She has been to the dentist twice, and she is fine.",
+"why": "been."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por been: “I went to Rome and came back.” (experiência)",
+"answer": "I have been to Rome.",
+"why": ""
+},
+{
+"prompt": "Negativa com yet: “I have read it.”",
+"answer": "I haven't read it yet.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “They have been to Brazil.” com ever",
+"answer": "Have they ever been to Brazil?",
+"why": ""
+}
+]
+}

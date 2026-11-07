@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "less … than",
+"wrong": "The problem is less technical as social.",
+"right": "The problem is less technical than social.",
+"why": "Em português “menos técnico quanto social” mistura formas. Em inglês, less usa than."
+},
+"mcq": [
+{
+"q": "“Not because it is perfect ___ because they helped.”",
+"opts": [
+"but",
+"than",
+"so"
+],
+"ans": 0,
+"why": "not…but."
+},
+{
+"q": "To “weed out” means...",
+"opts": [
+"plant",
+"remove the unsuitable",
+"water"
+],
+"ans": 1,
+"why": "Eliminar."
+},
+{
+"q": "“Rather than impose” is followed by...",
+"opts": [
+"-ed",
+"to + -ing",
+"base form"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "Which reply is tactful?",
+"opts": [
+"We respectfully disagree.",
+"We hate this.",
+"Stop."
+],
+"ans": 0,
+"why": "Cortês."
+}
+],
+"fix": [
+{
+"wrong": "We weeded off the weak items.",
+"right": "We weeded out the weak items.",
+"why": "weed out."
+},
+{
+"wrong": "Weed out them quickly.",
+"right": "Weed them out quickly.",
+"why": "Pronome no meio."
+},
+{
+"wrong": "It was more social as technical.",
+"right": "It was more social than technical.",
+"why": "than."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com weed out: “We removed the weak items.” (weeded)",
+"answer": "We weeded out the weak items.",
+"why": ""
+},
+{
+"prompt": "Substitua por pronome: “We weeded out the errors.”",
+"answer": "We weeded them out.",
+"why": ""
+},
+{
+"prompt": "Reescreva com less…than: “It is more cultural than legal.”",
+"answer": "It is less legal than cultural.",
+"why": ""
+}
+]
+}

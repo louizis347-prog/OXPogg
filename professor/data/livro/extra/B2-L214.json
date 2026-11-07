@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pontuação de conectores",
+"wrong": "It was late, nevertheless we left.",
+"right": "It was late; nevertheless, we left.",
+"why": "O português aceita vírgula antes de \"no entanto\". Em inglês, conector entre orações exige ponto-e-vírgula ou ponto."
+},
+"mcq": [
+{
+"q": "Qual pontua corretamente?",
+"opts": [
+"It rained, however we went.",
+"It rained; however, we went.",
+"It rained however, we went."
+],
+"ans": 1,
+"why": "Ponto-e-vírgula + however + vírgula."
+},
+{
+"q": "Qual indica consequência?",
+"opts": [
+"nevertheless",
+"furthermore",
+"consequently"
+],
+"ans": 2,
+"why": "consequently = como consequência."
+},
+{
+"q": "Qual indica adição?",
+"opts": [
+"Furthermore",
+"However",
+"Hence"
+],
+"ans": 0,
+"why": "furthermore = além disso."
+},
+{
+"q": "Complete: Costs rose; **___**, sales fell.",
+"opts": [
+"nevertheless",
+"for example",
+"as a result"
+],
+"ans": 2,
+"why": "Relação de causa."
+}
+],
+"fix": [
+{
+"wrong": "The fee is high, therefore we help.",
+"right": "The fee is high; therefore, we help.",
+"why": "Pontuação."
+},
+{
+"wrong": "Firstly of all, we plan.",
+"right": "First of all, we plan.",
+"why": "first of all."
+},
+{
+"wrong": "Moreover of that, he paid.",
+"right": "Moreover, he paid.",
+"why": "moreover não leva of."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com nevertheless: “It was hard. They finished.”",
+"answer": "It was hard; nevertheless, they finished.",
+"why": ""
+},
+{
+"prompt": "Una com therefore: “Prices rose. Demand fell.”",
+"answer": "Prices rose; therefore, demand fell.",
+"why": ""
+},
+{
+"prompt": "Reescreva com furthermore: “It is cheap. It is fast. (add)”",
+"answer": "It is cheap; furthermore, it is fast.",
+"why": ""
+}
+]
+}

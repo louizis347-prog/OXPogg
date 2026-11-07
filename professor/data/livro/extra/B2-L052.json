@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If I would have the money, I buy it.",
+"right": "If I had the money, I would buy it.",
+"why": "Avaliação: if + had + part./would have; misto; modais de conselho; object to + -ing. O brasileiro usa would após if."
+},
+"mcq": [
+{
+"q": "If I had saved, I **___** bought a car.",
+"opts": [
+"would",
+"would have",
+"had"
+],
+"ans": 1,
+"why": "3º."
+},
+{
+"q": "You **___** see a dentist.",
+"opts": [
+"musting",
+"should to",
+"should"
+],
+"ans": 2,
+"why": "Should."
+},
+{
+"q": "She objects **___** paying.",
+"opts": [
+"for",
+"to",
+"at"
+],
+"ans": 1,
+"why": "To."
+},
+{
+"q": "Qual aconselha?",
+"opts": [
+"You had better to rest.",
+"You had better rest.",
+"You better resting."
+],
+"ans": 1,
+"why": "Had better."
+}
+],
+"fix": [
+{
+"wrong": "I object to work Sundays.",
+"right": "I object to working Sundays.",
+"why": "-ing."
+},
+{
+"wrong": "If I had saved, I will buy a car.",
+"right": "If I had saved, I would have bought a car.",
+"why": "3º."
+},
+{
+"wrong": "You ought see the doctor.",
+"right": "You ought to see the doctor.",
+"why": "To."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I didn’t save, so I didn’t buy a car.”",
+"answer": "If I had saved, I would have bought a car.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She doesn’t like waiting.” (objects to)",
+"answer": "She objects to waiting.",
+"why": ""
+},
+{
+"prompt": "Conselho: “Rest.” (You had better…)",
+"answer": "You had better rest.",
+"why": ""
+}
+]
+}

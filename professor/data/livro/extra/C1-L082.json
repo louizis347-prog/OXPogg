@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "accounts for",
+"wrong": "The handshake accounts to 40%.",
+"right": "The handshake accounts for 40%.",
+"why": "Em português “representa 40%” não tem preposição, e o brasileiro inventa to/of. Em inglês: account for + percentual."
+},
+"mcq": [
+{
+"q": "Bowing ___ for 20%.",
+"opts": [
+"accounting",
+"account",
+"accounts"
+],
+"ans": 2,
+"why": "accounts for."
+},
+{
+"q": "The highest figure ___ the handshake.",
+"opts": [
+"is",
+"are",
+"does"
+],
+"ans": 0,
+"why": "is."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"accounts to 30%",
+"accounts for 30%",
+"accounts of 30%"
+],
+"ans": 1,
+"why": "for."
+},
+{
+"q": "The ___ figure is the lowest.",
+"opts": [
+"most small",
+"littlest",
+"smallest"
+],
+"ans": 2,
+"why": "smallest."
+}
+],
+"fix": [
+{
+"wrong": "Bowing accounts to 20%.",
+"right": "Bowing accounts for 20%.",
+"why": "for."
+},
+{
+"wrong": "The most high figure is the handshake.",
+"right": "The highest figure is the handshake.",
+"why": "Superlativo."
+},
+{
+"wrong": "Bowing account for 20%.",
+"right": "Bowing accounts for 20%.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Use accounts for: “Bowing is 20% of greetings.”",
+"answer": "Bowing accounts for 20% of greetings.",
+"why": ""
+},
+{
+"prompt": "Superlativo: “The figure is high.” (highest, handshake)",
+"answer": "The highest figure is the handshake.",
+"why": ""
+},
+{
+"prompt": "Plural: “Bows account for 20%.” (Bowing…)",
+"answer": "Bowing accounts for 20%.",
+"why": ""
+}
+]
+}

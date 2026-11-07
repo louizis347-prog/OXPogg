@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "causa x efeito",
+"wrong": "Because of the storm, as a result the roads closed.",
+"right": "The storm hit; as a result, the roads closed.",
+"why": "O brasileiro mistura causa e efeito. As a result/therefore indicam efeito; because/due to indicam causa."
+},
+"mcq": [
+{
+"q": "Qual conectivo indica efeito?",
+"opts": [
+"because",
+"due to",
+"therefore"
+],
+"ans": 2,
+"why": "Efeito."
+},
+{
+"q": "Qual indica causa?",
+"opts": [
+"due to",
+"as a result",
+"consequently"
+],
+"ans": 0,
+"why": "Causa."
+},
+{
+"q": "Qual dá exemplo?",
+"opts": [
+"therefore",
+"for example",
+"however"
+],
+"ans": 1,
+"why": "Exemplo."
+},
+{
+"q": "Qual contrasta?",
+"opts": [
+"because",
+"e.g.",
+"however"
+],
+"ans": 2,
+"why": "Contraste."
+}
+],
+"fix": [
+{
+"wrong": "The roads closed because of the storm hit.",
+"right": "The roads closed because the storm hit.",
+"why": "because + oração."
+},
+{
+"wrong": "Due the storm, roads closed.",
+"right": "Due to the storm, roads closed.",
+"why": "due to."
+},
+{
+"wrong": "It rained, therefore, but the match went on.",
+"right": "It rained; however, the match went on.",
+"why": "however."
+}
+],
+"rewrite": [
+{
+"prompt": "Use because: “The storm hit. The roads closed.” (…because…)",
+"answer": "The roads closed because the storm hit.",
+"why": ""
+},
+{
+"prompt": "Use as a result: “The storm hit. The roads closed.”",
+"answer": "The storm hit; as a result, the roads closed.",
+"why": ""
+},
+{
+"prompt": "Use due to: “The roads closed because of the storm.”",
+"answer": "The roads closed due to the storm.",
+"why": ""
+}
+]
+}

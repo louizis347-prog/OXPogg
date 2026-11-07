@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "recuo de tempo e marcadores",
+"wrong": "She said the festival starts Friday. She said tickets are free and it started tomorrow.",
+"right": "She said it would start on Friday. She said tickets were free.",
+"why": "Em português “disse que começa sexta” mantém o presente. Em inglês, o discurso indireto recua o verbo (starts → would start; are → were) e mudam marcadores (tomorrow → the next day)."
+},
+"mcq": [
+{
+"q": "“Tickets are free.” → She said tickets ___ free.",
+"opts": [
+"are",
+"were",
+"had been"
+],
+"ans": 1,
+"why": "Recuo."
+},
+{
+"q": "“It starts Friday.” → She said it ___ start Friday.",
+"opts": [
+"will",
+"did",
+"would"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "“tomorrow” becomes…",
+"opts": [
+"yesterday",
+"today",
+"the next day"
+],
+"ans": 2,
+"why": "Marcador."
+},
+{
+"q": "“I am here.” → He said he was ___.",
+"opts": [
+"here",
+"there",
+"where"
+],
+"ans": 1,
+"why": "there."
+}
+],
+"fix": [
+{
+"wrong": "She said tickets are free.",
+"right": "She said tickets were free.",
+"why": "Recuo."
+},
+{
+"wrong": "He said he will come tomorrow.",
+"right": "He said he would come the next day.",
+"why": "would e marcador."
+},
+{
+"wrong": "She said she lives here.",
+"right": "She said she lived there.",
+"why": "Recuo e there."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The show ends at nine.” (She said...)",
+"answer": "She said the show ended at nine.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I will be here tomorrow.” (He said...)",
+"answer": "He said he would be there the next day.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Tickets are cheap.” (She said...)",
+"answer": "She said tickets were cheap.",
+"why": ""
+}
+]
+}

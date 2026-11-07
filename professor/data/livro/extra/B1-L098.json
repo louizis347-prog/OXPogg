@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + -ing (uso)",
+"wrong": "Do you enjoy to build apps? We avoid to waste time.",
+"right": "Do you enjoy building apps? We avoid wasting time.",
+"why": "Em português “evitar perder tempo” usa infinitivo. Em inglês, avoid, practice, enjoy e finish pedem -ing."
+},
+"mcq": [
+{
+"q": "We practice ___ problems.",
+"opts": [
+"to solve",
+"solving",
+"solve"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "We avoid ___ time.",
+"opts": [
+"wasting",
+"to waste",
+"waste"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "Do you enjoy ___ apps?",
+"opts": [
+"to build",
+"build",
+"building"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "Which is wrong? (verbo + -ing (uso))",
+"opts": [
+"She avoids failing.",
+"She avoids to fail.",
+"She avoids missing."
+],
+"ans": 1,
+"why": "avoid + -ing."
+}
+],
+"fix": [
+{
+"wrong": "We practice to speak.",
+"right": "We practice speaking.",
+"why": "-ing."
+},
+{
+"wrong": "He avoids to ask.",
+"right": "He avoids asking.",
+"why": "-ing."
+},
+{
+"wrong": "Do you enjoy to learn?",
+"right": "Do you enjoy learning?",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça a pergunta com enjoy: “You build apps.”",
+"answer": "Do you enjoy building apps?",
+"why": ""
+},
+{
+"prompt": "Reescreva com avoid: “We don’t waste time.”",
+"answer": "We avoid wasting time.",
+"why": ""
+},
+{
+"prompt": "Reescreva com practice: “We solve problems every day.”",
+"answer": "We practice solving problems every day.",
+"why": ""
+}
+]
+}

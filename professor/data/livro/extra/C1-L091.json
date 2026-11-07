@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "give a talk",
+"wrong": "She made a talk on etiquette.",
+"right": "She gave a talk on etiquette.",
+"why": "Em português “fazer uma palestra”. Em inglês, a colocação é give a talk/speech."
+},
+"mcq": [
+{
+"q": "She ___ a talk on etiquette.",
+"opts": [
+"made",
+"did",
+"gave"
+],
+"ans": 2,
+"why": "give a talk."
+},
+{
+"q": "He ___ way to a driver.",
+"opts": [
+"gave",
+"put",
+"took"
+],
+"ans": 0,
+"why": "give way."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"do a speech",
+"give a speech",
+"make a speech to give"
+],
+"ans": 1,
+"why": "give."
+},
+{
+"q": "Give up means…",
+"opts": [
+"start",
+"win",
+"stop trying"
+],
+"ans": 2,
+"why": "Desistir."
+}
+],
+"fix": [
+{
+"wrong": "She did a speech.",
+"right": "She gave a speech.",
+"why": "give."
+},
+{
+"wrong": "He made way to the car.",
+"right": "He gave way to the car.",
+"why": "give way."
+},
+{
+"wrong": "I give up of smoking.",
+"right": "I gave up smoking.",
+"why": "give up + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Use give a talk: “She did a talk on manners.”",
+"answer": "She gave a talk on manners.",
+"why": ""
+},
+{
+"prompt": "Use give way: “He yielded to the car.”",
+"answer": "He gave way to the car.",
+"why": ""
+},
+{
+"prompt": "Use give up: “I stopped smoking.”",
+"answer": "I gave up smoking.",
+"why": ""
+}
+]
+}

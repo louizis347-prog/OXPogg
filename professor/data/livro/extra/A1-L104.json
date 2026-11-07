@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "turn on/off",
+"wrong": "Please turn the light.",
+"right": "Please turn on the light.",
+"why": "Em português dizemos só 'ligar a luz'; em inglês o verbo turn precisa da partícula on/off para ter esse sentido."
+},
+"mcq": [
+{
+"q": "**Turn** ___ the TV, please. It's too loud.",
+"opts": [
+"on",
+"off",
+"at"
+],
+"ans": 1,
+"why": "Para desligar, turn off."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Turn the radio on.",
+"Turn on to the radio.",
+"Turn to on the radio."
+],
+"ans": 0,
+"why": "A partícula vem depois do objeto ou logo após turn."
+},
+{
+"q": "Quando é a vez de alguém, dizemos: It's your **___**.",
+"opts": [
+"round",
+"turn",
+"time"
+],
+"ans": 1,
+"why": "It's your turn = é a sua vez."
+},
+{
+"q": "**Turn left** at the bank. Significa:",
+"opts": [
+"Vire à esquerda",
+"Pare à esquerda",
+"Ande à esquerda"
+],
+"ans": 0,
+"why": "Turn = virar."
+}
+],
+"fix": [
+{
+"wrong": "Turn of the light, please.",
+"right": "Turn off the light, please.",
+"why": "off = desligar; of é outra palavra."
+},
+{
+"wrong": "It's my turn to the left.",
+"right": "Turn to the left.",
+"why": "Para virar, turn + direção."
+},
+{
+"wrong": "Please turn the computer on it.",
+"right": "Please turn the computer on.",
+"why": "Sem 'it' extra depois de on."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com on: “Turn the lamp.” (ligar)",
+"answer": "Turn on the lamp.",
+"why": ""
+},
+{
+"prompt": "Reescreva com off: “Turn the TV on.”",
+"answer": "Turn the TV off.",
+"why": ""
+},
+{
+"prompt": "Mande virar à direita: “Go straight.” → use turn",
+"answer": "Turn right.",
+"why": ""
+}
+]
+}

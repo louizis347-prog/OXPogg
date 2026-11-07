@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "I assume that she is guilty because of her fingerprints.",
+"right": "I presume that she is guilty because of her fingerprints.",
+"why": "Português “presumir/assumir” se confundem; presume baseia-se em indícios, assume é ponto de partida, e assumir uma culpa é admit."
+},
+"mcq": [
+{
+"q": "The court ___ innocence.",
+"opts": [
+"admits",
+"assumes",
+"presumes"
+],
+"ans": 2,
+"why": "Regra legal."
+},
+{
+"q": "Let us ___ for the argument that it is true.",
+"opts": [
+"prove",
+"assume",
+"presume"
+],
+"ans": 1,
+"why": "Ponto de partida."
+},
+{
+"q": "Presume is based on…",
+"opts": [
+"fear",
+"evidence",
+"wish"
+],
+"ans": 1,
+"why": "Indícios."
+},
+{
+"q": "“Assumir a culpa” is…",
+"opts": [
+"admit guilt",
+"presume guilt",
+"assume guilt"
+],
+"ans": 0,
+"why": "Falso cognato."
+}
+],
+"fix": [
+{
+"wrong": "She assumed the guilt and confessed.",
+"right": "She admitted the guilt and confessed.",
+"why": "admit."
+},
+{
+"wrong": "The court assumes innocence.",
+"right": "The court presumes innocence.",
+"why": "Regra legal."
+},
+{
+"wrong": "Let us presume it is true, for argument.",
+"right": "Let us assume it is true, for argument.",
+"why": "Ponto de partida."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por presumes: “The court takes innocence as the default by rule.”",
+"answer": "The court presumes innocence.",
+"why": ""
+},
+{
+"prompt": "Troque por assume: “Let us take it as true for argument.”",
+"answer": "Let us assume it is true.",
+"why": ""
+},
+{
+"prompt": "Passado: “The court presumes innocence.”",
+"answer": "The court presumed innocence.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "esquecer",
+"wrong": "I remember to lock the door yesterday.",
+"right": "I remember locking the door yesterday.",
+"why": "Brasileiros misturam as duas formas. Remember to = tarefa; remember -ing = lembrança do passado."
+},
+"mcq": [
+{
+"q": "Complete: I'll never forget **___** the sea.",
+"opts": [
+"to see",
+"seeing",
+"see"
+],
+"ans": 1,
+"why": "forget -ing = não esquecer a experiência."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I remember to meet you in Rio.",
+"I remembered meet you in Rio.",
+"I remember meeting you in Rio."
+],
+"ans": 2,
+"why": "Lembrança passada: -ing."
+},
+{
+"q": "Qual indica esquecimento da tarefa?",
+"opts": [
+"She forgot to pay.",
+"She forgot that she paid.",
+"She forgot she paid."
+],
+"ans": 0,
+"why": "forgot to = não fez."
+},
+{
+"q": "\"I remember locking the door\" = ",
+"opts": [
+"Lembrei de trancar.",
+"Vou trancar.",
+"Lembro que tranquei."
+],
+"ans": 2,
+"why": "remember -ing = lembrança."
+}
+],
+"fix": [
+{
+"wrong": "Remember lock the door.",
+"right": "Remember to lock the door.",
+"why": "Falta to."
+},
+{
+"wrong": "I remember to visit Rome as a child.",
+"right": "I remember visiting Rome as a child.",
+"why": "Lembrança: -ing."
+},
+{
+"wrong": "He remembered to paying the bill.",
+"right": "He remembered to pay the bill.",
+"why": "to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a negativa: “She remembered to call.”",
+"answer": "She didn't remember to call.",
+"why": ""
+},
+{
+"prompt": "Reescreva com forget: “I didn't remember to post the letter.”",
+"answer": "I forgot to post the letter.",
+"why": ""
+},
+{
+"prompt": "Reescreva com remember -ing: “I recall that I saw him there.”",
+"answer": "I remember seeing him there.",
+"why": ""
+}
+]
+}

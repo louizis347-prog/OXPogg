@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio passado",
+"wrong": "The books writing by her are famous.",
+"right": "The books written by her are famous.",
+"why": "O aluno usa -ing em vez do particípio. Para sentido passivo, use particípio (written)."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"Having finished, he left.",
+"Having finish, he left.",
+"Finished having, he left."
+],
+"ans": 0,
+"why": "Having + particípio."
+},
+{
+"q": "\"Seen from space, the Earth is blue\" quer dizer...",
+"opts": [
+"Quando vê...",
+"Quando é vista...",
+"Ao ver..."
+],
+"ans": 1,
+"why": "Particípio passado = voz passiva."
+},
+{
+"q": "Qual tem erro de sujeito?",
+"opts": [
+"Driving home, I got a call.",
+"Driving home, she sang.",
+"Driving home, my phone rang."
+],
+"ans": 2,
+"why": "O telefone não dirige."
+},
+{
+"q": "Qual é a forma reduzida de \"the girl who is singing\"?",
+"opts": [
+"the girl sung",
+"the girl singing",
+"the girl to sing"
+],
+"ans": 1,
+"why": "Ativo = -ing."
+}
+],
+"fix": [
+{
+"wrong": "Open the door, she screamed.",
+"right": "Opening the door, she screamed.",
+"why": "-ing para ações simultâneas."
+},
+{
+"wrong": "The window breaking last night is fixed.",
+"right": "The window broken last night is fixed.",
+"why": "Particípio broken."
+},
+{
+"wrong": "Having ate dinner, we left.",
+"right": "Having eaten dinner, we left.",
+"why": "Particípio eaten."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com -ing: “She opened the box. She smiled.”",
+"answer": "Opening the box, she smiled.",
+"why": ""
+},
+{
+"prompt": "Una com Having: “He finished work. He went home.”",
+"answer": "Having finished work, he went home.",
+"why": ""
+},
+{
+"prompt": "Reduza: “The students who study here are happy.”",
+"answer": "The students studying here are happy.",
+"why": ""
+}
+]
+}

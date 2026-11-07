@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "his × her",
+"wrong": "Ana loves his mother.",
+"right": "Ana loves her mother.",
+"why": "Em português \"seu/sua\" concorda com a coisa possuída; em inglês his/her concordam com o possuidor (quem tem)."
+},
+"mcq": [
+{
+"q": "Ana loves ___ mother.",
+"opts": [
+"her",
+"his",
+"your"
+],
+"ans": 0,
+"why": "Possuidor feminino: her."
+},
+{
+"q": "Tom likes ___ dog.",
+"opts": [
+"her",
+"his",
+"its"
+],
+"ans": 1,
+"why": "Possuidor masculino: his."
+},
+{
+"q": "You have a pen. It is ___ pen.",
+"opts": [
+"you",
+"yours",
+"your"
+],
+"ans": 2,
+"why": "Possessivo antes do substantivo: your."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"My sister is nice.",
+"The my sister is nice.",
+"Me sister is nice."
+],
+"ans": 0,
+"why": "Sem artigo."
+}
+],
+"fix": [
+{
+"wrong": "Ana is my friend. His name is Ana.",
+"right": "Ana is my friend. Her name is Ana.",
+"why": "Her para mulher."
+},
+{
+"wrong": "The my book is here.",
+"right": "My book is here.",
+"why": "Sem artigo."
+},
+{
+"wrong": "Tom has her phone.",
+"right": "Tom has his phone.",
+"why": "Tom é homem."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o possessivo: “This is Tom’s book.” (use his)",
+"answer": "This is his book.",
+"why": ""
+},
+{
+"prompt": "Reescreva com her: “This is Ana’s bag.”",
+"answer": "This is her bag.",
+"why": ""
+},
+{
+"prompt": "Reescreva com your: “This is the book of you.”",
+"answer": "This is your book.",
+"why": ""
+}
+]
+}

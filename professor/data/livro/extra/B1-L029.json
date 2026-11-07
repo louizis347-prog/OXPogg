@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal + to",
+"wrong": "A teacher must to be patient.",
+"right": "A teacher must be patient.",
+"why": "Em português diz-se “deve ser”, e a preposição aparece em “ter que/dever de”. Por analogia, o brasileiro põe to após o modal; em inglês modal vem direto com verbo base."
+},
+"mcq": [
+{
+"q": "She ___ listen more.",
+"opts": [
+"should to",
+"shoulds",
+"should"
+],
+"ans": 2,
+"why": "should + base."
+},
+{
+"q": "“A teacher must be patient” expresses…",
+"opts": [
+"obrigação/dedução",
+"passado",
+"permissão"
+],
+"ans": 0,
+"why": "must."
+},
+{
+"q": "Which means ability?",
+"opts": [
+"can",
+"must",
+"should"
+],
+"ans": 0,
+"why": "can."
+},
+{
+"q": "He ___ swim.",
+"opts": [
+"cans",
+"can",
+"can to"
+],
+"ans": 1,
+"why": "Sem -s e sem to."
+}
+],
+"fix": [
+{
+"wrong": "She should to listen.",
+"right": "She should listen.",
+"why": "Sem to."
+},
+{
+"wrong": "He cans speak English.",
+"right": "He can speak English.",
+"why": "Sem -s."
+},
+{
+"wrong": "You must goes now.",
+"right": "You must go now.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com should: “It is good that you rest.”",
+"answer": "You should rest.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “You can park here.”",
+"answer": "You can't park here.",
+"why": "can't ou cannot; use can't."
+},
+{
+"prompt": "Reescreva com must: “It is necessary to be patient.” (a teacher)",
+"answer": "A teacher must be patient.",
+"why": ""
+}
+]
+}

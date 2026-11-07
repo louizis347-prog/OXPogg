@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If it will rain, we will stay in.",
+"right": "If it rains, we will stay in.",
+"why": "Português usa o futuro do subjuntivo (“se chover”), mas o brasileiro traduz com will. Depois de if usa-se o presente."
+},
+"mcq": [
+{
+"q": "If the bus **___** late, we’ll walk.",
+"opts": [
+"would be",
+"will be",
+"is"
+],
+"ans": 2,
+"why": "Presente após if."
+},
+{
+"q": "If I won the lottery, I **___** travel.",
+"opts": [
+"would",
+"will",
+"had"
+],
+"ans": 0,
+"why": "2º condicional."
+},
+{
+"q": "If she had called, I **___** answered.",
+"opts": [
+"will have",
+"would",
+"would have"
+],
+"ans": 2,
+"why": "3º condicional."
+},
+{
+"q": "Qual é o 2º condicional?",
+"opts": [
+"If I were rich, I would buy it.",
+"If I am rich, I will buy it.",
+"If I had been rich, I would buy it."
+],
+"ans": 0,
+"why": "Past + would."
+}
+],
+"fix": [
+{
+"wrong": "If it will snow, the school closes.",
+"right": "If it snows, the school closes.",
+"why": "Presente após if."
+},
+{
+"wrong": "If she knew, she would have joined us.",
+"right": "If she had known, she would have joined us.",
+"why": "3º: had + particípio."
+},
+{
+"wrong": "If we had more time, we will visit Lima.",
+"right": "If we had more time, we would visit Lima.",
+"why": "2º: would."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o 2º condicional: “If I have time, I will paint.”",
+"answer": "If I had time, I would paint.",
+"why": ""
+},
+{
+"prompt": "Passe para o 3º: “If she studies, she passes.”",
+"answer": "If she had studied, she would have passed.",
+"why": ""
+},
+{
+"prompt": "Passe para o 1º: “If it rained, we would cancel.”",
+"answer": "If it rains, we will cancel.",
+"why": ""
+}
+]
+}

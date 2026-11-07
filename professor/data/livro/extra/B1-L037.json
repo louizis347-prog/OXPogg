@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "resultado × processo",
+"wrong": "They have argued for years and have been solving the problem.",
+"right": "They have been arguing for years and have solved the problem.",
+"why": "Em português “têm discutido” e “têm resolvido” usam a mesma estrutura. Em inglês, duração/processo = have been + -ing; resultado concluído = have + particípio."
+},
+"mcq": [
+{
+"q": "The cake is ready. I ___ it.",
+"opts": [
+"have baked",
+"have been baking",
+"bake"
+],
+"ans": 0,
+"why": "Resultado."
+},
+{
+"q": "My hands are dirty. I ___ the car.",
+"opts": [
+"have repaired",
+"have been repairing",
+"repair"
+],
+"ans": 1,
+"why": "Processo."
+},
+{
+"q": "How many books ___ she read?",
+"opts": [
+"is",
+"has",
+"does"
+],
+"ans": 1,
+"why": "Quantidade = particípio."
+},
+{
+"q": "Which stresses duration?",
+"opts": [
+"I have been writing since noon.",
+"I have written two emails.",
+"I wrote two emails."
+],
+"ans": 0,
+"why": "Duração."
+}
+],
+"fix": [
+{
+"wrong": "I have been finishing three reports.",
+"right": "I have finished three reports.",
+"why": "Número = resultado."
+},
+{
+"wrong": "She has been sleep all day.",
+"right": "She has been sleeping all day.",
+"why": "-ing."
+},
+{
+"wrong": "They have argue for years.",
+"right": "They have been arguing for years.",
+"why": "have been + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva focando duração: “They have argued for years.”",
+"answer": "They have been arguing for years.",
+"why": ""
+},
+{
+"prompt": "Reescreva focando resultado: “She has been painting the wall.” (terminou)",
+"answer": "She has painted the wall.",
+"why": ""
+},
+{
+"prompt": "Pergunte quantidade: “She has read books.” (How many)",
+"answer": "How many books has she read?",
+"why": ""
+}
+]
+}

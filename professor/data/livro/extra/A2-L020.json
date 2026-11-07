@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta sem did",
+"wrong": "What you did yesterday?",
+"right": "What did you do yesterday?",
+"why": "Em português a pergunta mantém a ordem da afirmação; em inglês a palavra interrogativa vem seguida de did + sujeito + base."
+},
+"mcq": [
+{
+"q": "What ___ you eat?",
+"opts": [
+"were",
+"do",
+"did"
+],
+"ans": 2,
+"why": "did."
+},
+{
+"q": "Why ___ she leave?",
+"opts": [
+"does",
+"was",
+"did"
+],
+"ans": 2,
+"why": "did."
+},
+{
+"q": "When did they ___ ?",
+"opts": [
+"arriving",
+"arrive",
+"arrived"
+],
+"ans": 1,
+"why": "base."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"Who you called?",
+"Who did you call?",
+"Who did you called?"
+],
+"ans": 1,
+"why": "did + base."
+}
+],
+"fix": [
+{
+"wrong": "Where did you went?",
+"right": "Where did you go?",
+"why": "base."
+},
+{
+"wrong": "What you bought?",
+"right": "What did you buy?",
+"why": "did."
+},
+{
+"wrong": "Why she cried?",
+"right": "Why did she cry?",
+"why": "did."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta com where: “You went.”",
+"answer": "Where did you go?",
+"why": ""
+},
+{
+"prompt": "Pergunta com what: “She bought a gift.” (o quê)",
+"answer": "What did she buy?",
+"why": ""
+},
+{
+"prompt": "Pergunta com why: “They left.”",
+"answer": "Why did they leave?",
+"why": ""
+}
+]
+}

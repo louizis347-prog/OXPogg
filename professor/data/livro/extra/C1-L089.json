@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "present perfect cont.",
+"wrong": "They are talking for two hours.",
+"right": "They have been talking for two hours.",
+"why": "O português usa o presente (“conversam há duas horas”). Em inglês, ação que começou no passado e continua pede have been + -ing."
+},
+"mcq": [
+{
+"q": "They ___ talking for two hours.",
+"opts": [
+"have been",
+"are",
+"were"
+],
+"ans": 0,
+"why": "have been."
+},
+{
+"q": "The cartoon ___ a meeting.",
+"opts": [
+"showing",
+"shows",
+"show"
+],
+"ans": 1,
+"why": "shows."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She is waiting since noon.",
+"She waits since noon.",
+"She has been waiting since noon."
+],
+"ans": 2,
+"why": "has been waiting."
+},
+{
+"q": "For + ___",
+"opts": [
+"duration",
+"starting point",
+"date"
+],
+"ans": 0,
+"why": "Duração."
+}
+],
+"fix": [
+{
+"wrong": "They are talking for two hours.",
+"right": "They have been talking for two hours.",
+"why": "have been."
+},
+{
+"wrong": "She is waiting since noon.",
+"right": "She has been waiting since noon.",
+"why": "has been."
+},
+{
+"wrong": "The cartoon show a meeting.",
+"right": "The cartoon shows a meeting.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect contínuo: “They are talking for two hours.”",
+"answer": "They have been talking for two hours.",
+"why": ""
+},
+{
+"prompt": "Present perfect contínuo: “She is waiting since noon.”",
+"answer": "She has been waiting since noon.",
+"why": ""
+},
+{
+"prompt": "Descreva: “The cartoon show a meeting.” (corrija)",
+"answer": "The cartoon shows a meeting.",
+"why": ""
+}
+]
+}

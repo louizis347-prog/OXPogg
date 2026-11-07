@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If only we listened to the coach!",
+"right": "If only we had listened to the coach!",
+"why": "Arrependimento do passado: if only + had + particípio. O brasileiro usa o passado simples."
+},
+"mcq": [
+{
+"q": "If only we **___** to the coach!",
+"opts": [
+"would listen",
+"listened",
+"had listened"
+],
+"ans": 2,
+"why": "Had + part."
+},
+{
+"q": "She wishes he **___** call more often.",
+"opts": [
+"did",
+"will",
+"would"
+],
+"ans": 2,
+"why": "Would."
+},
+{
+"q": "Arrependimento forte:",
+"opts": [
+"If only I apologize!",
+"If only I had apologized!",
+"If only I will apologize!"
+],
+"ans": 1,
+"why": "Had + part."
+},
+{
+"q": "Queixa sobre hábito:",
+"opts": [
+"I wish you would help.",
+"I wish you help.",
+"I wish you helped yesterday."
+],
+"ans": 0,
+"why": "Would."
+}
+],
+"fix": [
+{
+"wrong": "If only he calls me!",
+"right": "If only he would call me!",
+"why": "Would."
+},
+{
+"wrong": "If only I knew the answer yesterday!",
+"right": "If only I had known the answer yesterday!",
+"why": "Passado."
+},
+{
+"wrong": "I wish she will smile more.",
+"right": "I wish she would smile more.",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I didn’t apologize.” (If only…)",
+"answer": "If only I had apologized!",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He never calls.” (I wish he…)",
+"answer": "I wish he would call.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We lost the game.” (If only we… not)",
+"answer": "If only we hadn’t lost the game!",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "annoyed × annoying",
+"wrong": "Lena is annoying with Marcos in this scene.",
+"right": "Lena is annoyed with Marcos in this scene.",
+"why": "Em português “irritada/irritante” são claras, mas o brasileiro confunde -ed e -ing. -ed descreve como alguém se sente; -ing, o que causa o sentimento."
+},
+"mcq": [
+{
+"q": "Lena feels irritation. She is...",
+"opts": [
+"irritated",
+"irritating",
+"irritation"
+],
+"ans": 0,
+"why": "-ed = sentimento."
+},
+{
+"q": "Which word describes a **stage direction**?",
+"opts": [
+"approval",
+"pause",
+"review"
+],
+"ans": 1,
+"why": "Rubrica (pause) indica ação/silêncio."
+},
+{
+"q": "The relationship is “respectful but tense”. The **tone** is...",
+"opts": [
+"warm",
+"playful",
+"guarded"
+],
+"ans": 2,
+"why": "Tom contido, formal."
+},
+{
+"q": "What is the **subtext**?",
+"opts": [
+"what is not said",
+"what is said aloud",
+"the title"
+],
+"ans": 0,
+"why": "Subtexto = o que não é dito."
+}
+],
+"fix": [
+{
+"wrong": "The scene shows two persons arguing.",
+"right": "The scene shows two people arguing.",
+"why": "Plural de person é people."
+},
+{
+"wrong": "Lena is boring with the delay.",
+"right": "Lena is bored with the delay.",
+"why": "bored = entediada."
+},
+{
+"wrong": "Marcos wants that Lena approves.",
+"right": "Marcos wants Lena to approve.",
+"why": "want + objeto + to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com want: “Marcos hopes that Lena approves.” (use want)",
+"answer": "Marcos wants Lena to approve.",
+"why": ""
+},
+{
+"prompt": "Reescreva no presente perfeito: “Lena pauses.” (Lena ___)",
+"answer": "Lena has paused.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “The tone is polite. The subtext is hostile.” (Although…)",
+"answer": "Although the tone is polite, the subtext is hostile.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tag fixa",
+"wrong": "They want to join, isn’t it?",
+"right": "They want to join, don’t they?",
+"why": "O brasileiro usa uma tag única, como “né?”. Em inglês a tag muda conforme sujeito e auxiliar."
+},
+"mcq": [
+{
+"q": "It is too fast, **___**?",
+"opts": [
+"doesn’t it",
+"is it",
+"isn’t it"
+],
+"ans": 2,
+"why": "Is → isn’t it."
+},
+{
+"q": "They want to join, **___**?",
+"opts": [
+"don’t they",
+"won’t they",
+"aren’t they"
+],
+"ans": 0,
+"why": "Want (presente) → don’t."
+},
+{
+"q": "Entonação descendente na tag indica:",
+"opts": [
+"buscar concordância",
+"raiva",
+"dúvida real"
+],
+"ans": 0,
+"why": "Descendente = esperar que concordem."
+},
+{
+"q": "Let’s go, **___**?",
+"opts": [
+"shall we",
+"don’t we",
+"will we"
+],
+"ans": 0,
+"why": "Let’s → shall we."
+}
+],
+"fix": [
+{
+"wrong": "It is too fast, doesn’t it?",
+"right": "It is too fast, isn’t it?",
+"why": "Frase com be pede tag com be."
+},
+{
+"wrong": "He never calls, doesn’t he?",
+"right": "He never calls, does he?",
+"why": "Never já é negativo; tag positiva."
+},
+{
+"wrong": "We can try, can’t we not?",
+"right": "We can try, can’t we?",
+"why": "Sem not extra."
+}
+],
+"rewrite": [
+{
+"prompt": "Acrescente uma tag: “It is too fast.”",
+"answer": "It is too fast, isn’t it?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “They want to join.”",
+"answer": "They want to join, don’t they?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “He never calls.”",
+"answer": "He never calls, does he?",
+"why": ""
+}
+]
+}

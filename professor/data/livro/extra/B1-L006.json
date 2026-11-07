@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "podcast / listen",
+"wrong": "I listened a podcast about school.",
+"right": "I listened to a podcast about school.",
+"why": "Em português 'ouvi um podcast' não leva preposição; em inglês listen exige to."
+},
+"mcq": [
+{
+"q": "I love listening ___ podcasts.",
+"opts": [
+"for",
+"to",
+"at"
+],
+"ans": 1,
+"why": "listen to."
+},
+{
+"q": "The host ___ with a teacher.",
+"opts": [
+"talked",
+"said",
+"spoke to"
+],
+"ans": 2,
+"why": "speak to."
+},
+{
+"q": "A **podcast** is:",
+"opts": [
+"exame",
+"gravação digital",
+"tipo de escola"
+],
+"ans": 1,
+"why": "podcast."
+},
+{
+"q": "She asked ___ the exam.",
+"opts": [
+"for",
+"of",
+"about"
+],
+"ans": 2,
+"why": "ask about."
+}
+],
+"fix": [
+{
+"wrong": "We listened a podcast.",
+"right": "We listened to a podcast.",
+"why": "to."
+},
+{
+"wrong": "She said me the news.",
+"right": "She told me the news.",
+"why": "told."
+},
+{
+"wrong": "He talks me about school.",
+"right": "He talks to me about school.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com to: “I listen music.”",
+"answer": "I listen to music.",
+"why": ""
+},
+{
+"prompt": "Reescreva com told: “She said us a story.”",
+"answer": "She told us a story.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They discussed about school.” (corrija)",
+"answer": "They discussed school.",
+"why": ""
+}
+]
+}

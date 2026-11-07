@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estrutura",
+"wrong": "If you will be unable to come, tell us.",
+"right": "Should you be unable to come, please let us know.",
+"why": "Em português “caso você não possa”; em inglês formal a inversão Should you… substitui if."
+},
+"mcq": [
+{
+"q": "Invitation formula:",
+"opts": [
+"If you unable…",
+"Should you will unable…",
+"Should you be unable to attend…"
+],
+"ans": 2,
+"why": "Should."
+},
+{
+"q": "Which uses anaphora?",
+"opts": [
+"We will fight. We will win.",
+"We fought and won.",
+"We fight, winning."
+],
+"ans": 0,
+"why": "Repetição."
+},
+{
+"q": "Antithesis:",
+"opts": [
+"Weak and strong.",
+"Strength strength.",
+"Not weakness; strength."
+],
+"ans": 2,
+"why": "Contraste."
+},
+{
+"q": "Tricolon:",
+"opts": [
+"came, saw, stayed",
+"came and stayed",
+"came"
+],
+"ans": 0,
+"why": "Três."
+}
+],
+"fix": [
+{
+"wrong": "Should you unable to come, tell us.",
+"right": "Should you be unable to come, tell us.",
+"why": "be."
+},
+{
+"wrong": "We will fight, we won, we will end.",
+"right": "We will fight, we will win, we will end.",
+"why": "Paralelo."
+},
+{
+"wrong": "Not weakness but is strength.",
+"right": "Not weakness but strength.",
+"why": "Paralelo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Should: “If you cannot join, call us.”",
+"answer": "Should you be unable to join, call us.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We will win.”",
+"answer": "We will not win.",
+"why": ""
+},
+{
+"prompt": "Passado: “We stay.”",
+"answer": "We stayed.",
+"why": ""
+}
+]
+}

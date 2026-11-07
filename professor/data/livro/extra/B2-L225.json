@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conectivo e vírgula",
+"wrong": "Nevertheless he continued, furthermore he won.",
+"right": "Nevertheless, he continued; furthermore, he won.",
+"why": "No português ligamos orações só com vírgula ou sem pontuação. Em inglês, conectivos como nevertheless e furthermore pedem ponto/ponto e vírgula antes e vírgula depois."
+},
+"mcq": [
+{
+"q": "Which adds information?",
+"opts": [
+"Nevertheless",
+"Consequently",
+"Furthermore"
+],
+"ans": 2,
+"why": "Furthermore acrescenta; nevertheless contrasta."
+},
+{
+"q": "Firms are ___ to adopt it.",
+"opts": [
+"bound",
+"going",
+"sure of"
+],
+"ans": 0,
+"why": "be bound to = com certeza vai."
+},
+{
+"q": "**Remember** ___ the door when you leave.",
+"opts": [
+"lock",
+"locking",
+"to lock"
+],
+"ans": 2,
+"why": "Lembrar de fazer algo: remember to + base."
+},
+{
+"q": "The new rule ___ big changes.",
+"opts": [
+"brought up",
+"brought together",
+"brought about"
+],
+"ans": 2,
+"why": "bring about = causar."
+}
+],
+"fix": [
+{
+"wrong": "It rained. Nevertheless we went out.",
+"right": "It rained. Nevertheless, we went out.",
+"why": "Vírgula depois de nevertheless."
+},
+{
+"wrong": "I remember to see her last year.",
+"right": "I remember seeing her last year.",
+"why": "Passado: remember + -ing."
+},
+{
+"wrong": "Firms are bound adopt it.",
+"right": "Firms are bound to adopt it.",
+"why": "bound to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Consequently: “The pilot failed, so they stopped.”",
+"answer": "The pilot failed. Consequently, they stopped.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “bring up”: “He mentioned the issue.”",
+"answer": "He brought up the issue.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “unlikely”: “It probably won’t work.”",
+"answer": "It is unlikely to work.",
+"why": ""
+}
+]
+}

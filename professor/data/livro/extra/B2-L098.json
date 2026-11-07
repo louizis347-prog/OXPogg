@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pode ter + particípio",
+"wrong": "She might to have missed the bus.",
+"right": "She might have missed the bus.",
+"why": "O português \"pode ter perdido\" leva o aluno a inserir to. Depois de might/could, usa-se have + particípio diretamente."
+},
+"mcq": [
+{
+"q": "\"He might have forgotten.\" expressa...",
+"opts": [
+"obrigação",
+"habilidade atual",
+"possibilidade sobre o passado"
+],
+"ans": 2,
+"why": "might have + particípio = talvez tenha acontecido."
+},
+{
+"q": "Qual frase mostra oportunidade perdida?",
+"opts": [
+"We could have gone by train.",
+"We could go by train.",
+"We go by train."
+],
+"ans": 0,
+"why": "could have + particípio = poderíamos ter ido (mas não fomos)."
+},
+{
+"q": "Complete: The keys **___** be in the car. (talvez estejam)",
+"opts": [
+"might have",
+"might",
+"must have been"
+],
+"ans": 1,
+"why": "Presente: might + verbo base; passado: might have."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She may have left already.",
+"She may has left already.",
+"She may had left already."
+],
+"ans": 0,
+"why": "Após modal: have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "She might have came late.",
+"right": "She might have come late.",
+"why": "Particípio de come = come."
+},
+{
+"wrong": "They could of won the game.",
+"right": "They could have won the game.",
+"why": "Escreva have, não of."
+},
+{
+"wrong": "He may has lost his wallet.",
+"right": "He may have lost his wallet.",
+"why": "Depois de modal, have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “She might be late.” (talvez tenha se atrasado)",
+"answer": "She might have been late.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “We can take a taxi.” (oportunidade perdida)",
+"answer": "We could have taken a taxi.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “He may have seen it.”",
+"answer": "He may not have seen it.",
+"why": ""
+}
+]
+}

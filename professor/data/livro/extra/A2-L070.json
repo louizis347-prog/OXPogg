@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "don't have to ≠ mustn't",
+"wrong": "You mustn't come if you don't want to. (opcional)",
+"right": "You don't have to come if you don't want to.",
+"why": "Em português 'não precisa' e 'não pode' às vezes se confundem; em inglês don't have to = não é necessário, mustn't = proibido."
+},
+"mcq": [
+{
+"q": "It's optional. You ___ come.",
+"opts": [
+"can't to",
+"mustn't",
+"don't have to"
+],
+"ans": 2,
+"why": "não necessário."
+},
+{
+"q": "It's dangerous. You ___ touch it.",
+"opts": [
+"haven't to",
+"don't have to",
+"mustn't"
+],
+"ans": 2,
+"why": "proibido."
+},
+{
+"q": "She ___ work on Sunday. (não precisa)",
+"opts": [
+"doesn't have to",
+"don't have to",
+"mustn't"
+],
+"ans": 0,
+"why": "doesn't."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"You not must smoke here.",
+"You mustn't smoke here.",
+"You mustn't to smoke here."
+],
+"ans": 1,
+"why": "mustn't + base."
+}
+],
+"fix": [
+{
+"wrong": "He don't have to go.",
+"right": "He doesn't have to go.",
+"why": "doesn't."
+},
+{
+"wrong": "You don't must run.",
+"right": "You mustn't run.",
+"why": "mustn't."
+},
+{
+"wrong": "We mustn't to talk.",
+"right": "We mustn't talk.",
+"why": "sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “I have to go.”",
+"answer": "I don't have to go.",
+"why": ""
+},
+{
+"prompt": "Proibição: “You run here.” com mustn't",
+"answer": "You mustn't run here.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa negativa: “She has to wait.”",
+"answer": "She doesn't have to wait.",
+"why": ""
+}
+]
+}

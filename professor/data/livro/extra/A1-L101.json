@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem adjetivo-substantivo",
+"wrong": "I have a car red.",
+"right": "I have a red car.",
+"why": "Em português o adjetivo costuma vir depois do substantivo; em inglês vem antes."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"The house is big.",
+"The house big.",
+"The big is house."
+],
+"ans": 0,
+"why": "Be + adj."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a friend old",
+"an old friend",
+"an friend old"
+],
+"ans": 1,
+"why": "Adj + N."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a house big",
+"a bigs house",
+"a big house"
+],
+"ans": 2,
+"why": "Adj + N."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"two red cars",
+"two cars red",
+"two reds cars"
+],
+"ans": 0,
+"why": "Sem plural."
+}
+],
+"fix": [
+{
+"wrong": "It is a city beautiful.",
+"right": "It is a beautiful city.",
+"why": "Adj antes."
+},
+{
+"wrong": "We live in a house big.",
+"right": "We live in a big house.",
+"why": "Adj antes."
+},
+{
+"wrong": "I have a dog black.",
+"right": "I have a black dog.",
+"why": "Adj antes."
+}
+],
+"rewrite": [
+{
+"prompt": "Reorganize: “a friend / old”",
+"answer": "an old friend",
+"why": ""
+},
+{
+"prompt": "Reorganize: “two bags / blue”",
+"answer": "two blue bags",
+"why": ""
+},
+{
+"prompt": "Reorganize: “a car / red”",
+"answer": "a red car",
+"why": ""
+}
+]
+}

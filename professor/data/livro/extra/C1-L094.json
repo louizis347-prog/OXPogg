@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "nominalização formal",
+"wrong": "Because they communicated poorly, the failure of the project.",
+"right": "Poor communication led to the failure of the project.",
+"why": "O português mantém verbos e advérbios. Em inglês acadêmico, nominalize (communicate → communication) e use um verbo como led to."
+},
+"mcq": [
+{
+"q": "Poor ___ led to the failure.",
+"opts": [
+"communicate",
+"communication",
+"communicating"
+],
+"ans": 1,
+"why": "Substantivo."
+},
+{
+"q": "Having tried several times, we ___ .",
+"opts": [
+"stop",
+"stopping",
+"stopped"
+],
+"ans": 2,
+"why": "Passado."
+},
+{
+"q": "Nominalization makes writing…",
+"opts": [
+"more formal",
+"less formal",
+"shorter always"
+],
+"ans": 0,
+"why": "Formal."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The adopting plan of helped.",
+"The adoption of the plan helped.",
+"The adopt of the plan helped."
+],
+"ans": 1,
+"why": "adoption."
+}
+],
+"fix": [
+{
+"wrong": "The adopt of the plan helped.",
+"right": "The adoption of the plan helped.",
+"why": "adoption."
+},
+{
+"wrong": "Having tried, we stops.",
+"right": "Having tried, we stopped.",
+"why": "Passado."
+},
+{
+"wrong": "Poor communicate led to failure.",
+"right": "Poor communication led to failure.",
+"why": "Substantivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Nominalize: “They adopted the plan, and it helped.” (The … of the plan helped.)",
+"answer": "The adoption of the plan helped.",
+"why": ""
+},
+{
+"prompt": "Particípio: “After we had tried several times, we stopped.”",
+"answer": "Having tried several times, we stopped.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Because they communicated poorly, the project failed.” (Poor … led to the failure of the project.)",
+"answer": "Poor communication led to the failure of the project.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be likely",
+"wrong": "She likely wins the prize.",
+"right": "She is likely to win the prize.",
+"why": "O brasileiro omite o verbo be. Em inglês, é be likely to + verbo base."
+},
+"mcq": [
+{
+"q": "Qual NÃO é possível?",
+"opts": [
+"It is probable that it will rain.",
+"It is likely to rain.",
+"It is probable to rain."
+],
+"ans": 2,
+"why": "probable usa that-clause, nunca to."
+},
+{
+"q": "\"The idea that\" é seguido de...",
+"opts": [
+"sujeito + verbo",
+"verbo no infinitivo",
+"gerúndio"
+],
+"ans": 0,
+"why": "that introduz oração completa."
+},
+{
+"q": "A rua está molhada. Dedução:",
+"opts": [
+"It must rain.",
+"It must have rained.",
+"It must to rain."
+],
+"ans": 1,
+"why": "Evidência presente + causa passada = must have + particípio."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She may have left already.",
+"She may has left already.",
+"She may had left already."
+],
+"ans": 0,
+"why": "Após modal: have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "Are she likely to call?",
+"right": "Is she likely to call?",
+"why": "Concordância de be: is."
+},
+{
+"wrong": "The belief what money matters is common.",
+"right": "The belief that money matters is common.",
+"why": "Use that, não what."
+},
+{
+"wrong": "He must of taken the bus.",
+"right": "He must have taken the bus.",
+"why": "Escreva have, não of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com idea that: “I like (we can walk).”",
+"answer": "I like the idea that we can walk.",
+"why": ""
+},
+{
+"prompt": "Reescreva com can't have: “Tom was at home.” (impossível)",
+"answer": "Tom can't have been at home.",
+"why": ""
+},
+{
+"prompt": "Reescreva com may: “She might have left.”",
+"answer": "She may have left.",
+"why": ""
+}
+]
+}

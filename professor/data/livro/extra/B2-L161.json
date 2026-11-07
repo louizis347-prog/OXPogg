@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "increase of/in",
+"wrong": "There was an increase of sales in May.",
+"right": "There was an increase in sales in May.",
+"why": "Em português \"aumento das vendas\" usa de. Em inglês, increase in."
+},
+"mcq": [
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a tool new useful",
+"a new tool useful",
+"a useful new tool"
+],
+"ans": 2,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"research",
+"a research",
+"researches"
+],
+"ans": 0,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay will discuss both views.",
+"This essay discusses of both views."
+],
+"ans": 1,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"In my opinion",
+"According to me",
+"By me"
+],
+"ans": 0,
+"why": "in my opinion."
+}
+],
+"fix": [
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+},
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+},
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+}
+]
+}

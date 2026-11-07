@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal iron out",
+"wrong": "We iron out the problem of.",
+"right": "We ironed out the problem.",
+"why": "O brasileiro tenta “resolver” literalmente e esquece o verbo. Em inglês, iron out = acertar/resolver detalhes."
+},
+"mcq": [
+{
+"q": "Let’s ___ the details.",
+"opts": [
+"iron on",
+"iron up",
+"iron out"
+],
+"ans": 2,
+"why": "iron out."
+},
+{
+"q": "We ironed out our ___ .",
+"opts": [
+"differences",
+"differs",
+"differently"
+],
+"ans": 0,
+"why": "Substantivo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"iron out of a problem",
+"iron out a problem",
+"iron a problem in"
+],
+"ans": 1,
+"why": "iron out."
+},
+{
+"q": "Having tried, we ___ .",
+"opts": [
+"succeed",
+"succeeding",
+"succeeded"
+],
+"ans": 2,
+"why": "Passado."
+}
+],
+"fix": [
+{
+"wrong": "They iron out of the details.",
+"right": "They ironed out the details.",
+"why": "iron out."
+},
+{
+"wrong": "We ironed out our differs.",
+"right": "We ironed out our differences.",
+"why": "Substantivo."
+},
+{
+"wrong": "Let’s iron the problem out of.",
+"right": "Let’s iron out the problem.",
+"why": "iron out."
+}
+],
+"rewrite": [
+{
+"prompt": "Use iron out: “We resolved the details.”",
+"answer": "We ironed out the details.",
+"why": ""
+},
+{
+"prompt": "Futuro: “We iron out our differences.” (will)",
+"answer": "We will iron out our differences.",
+"why": ""
+},
+{
+"prompt": "Use iron out: “Let’s settle the problem.”",
+"answer": "Let’s iron out the problem.",
+"why": ""
+}
+]
+}

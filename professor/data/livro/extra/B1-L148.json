@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "good/bad at + -ing",
+"wrong": "I am good in tell stories, bad on remember dates, terrible to say no.",
+"right": "I am good at telling stories, bad at remembering dates, and terrible at saying no.",
+"why": "Em português “bom em contar”, “ruim para lembrar” e “péssimo em dizer” mudam a preposição. O brasileiro traduz em por in/on e usa infinitivo. Em inglês: good/bad/terrible at + -ing."
+},
+"mcq": [
+{
+"q": "She is good ___ telling stories.",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 0,
+"why": "at."
+},
+{
+"q": "I'm bad at ___ dates.",
+"opts": [
+"remember",
+"remembering",
+"to remember"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "He is terrible at ___ no.",
+"opts": [
+"saying",
+"say",
+"to say"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "Which is correct? (good/bad at + -ing)",
+"opts": [
+"good in cook",
+"good for to cook",
+"good at cooking"
+],
+"ans": 2,
+"why": "at + -ing."
+}
+],
+"fix": [
+{
+"wrong": "She is good in math.",
+"right": "She is good at math.",
+"why": "at."
+},
+{
+"wrong": "I'm bad at remember names.",
+"right": "I'm bad at remembering names.",
+"why": "-ing."
+},
+{
+"wrong": "He is terrible on drawing.",
+"right": "He is terrible at drawing.",
+"why": "at."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “He tells stories very well.” (good at)",
+"answer": "He is good at telling stories.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I can’t remember dates.” (bad at)",
+"answer": "I am bad at remembering dates.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She says no very badly.” (terrible at)",
+"answer": "She is terrible at saying no.",
+"why": ""
+}
+]
+}

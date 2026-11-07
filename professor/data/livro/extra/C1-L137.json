@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "scale back",
+"wrong": "They scaled back of production.",
+"right": "They scaled back production.",
+"why": "Em português “reduzir a produção” é direto. O brasileiro acrescenta of por analogia a “diminuir de”. Em inglês, scale back + objeto."
+},
+"mcq": [
+{
+"q": "They ___ production. (reduziram)",
+"opts": [
+"scaled back",
+"scaled up",
+"scaled on"
+],
+"ans": 0,
+"why": "scale back."
+},
+{
+"q": "Com pronome: “scale ___ back”",
+"opts": [
+"it of",
+"it",
+"back it"
+],
+"ans": 1,
+"why": "scale it back."
+},
+{
+"q": "Scale up é o oposto de…",
+"opts": [
+"scale out",
+"scale of",
+"scale back"
+],
+"ans": 2,
+"why": "Oposto."
+},
+{
+"q": "Scale back plans =",
+"opts": [
+"reduce plans",
+"cancel plans",
+"write plans"
+],
+"ans": 0,
+"why": "Reduzir."
+}
+],
+"fix": [
+{
+"wrong": "They scaled back of plans.",
+"right": "They scaled back plans.",
+"why": "Sem of."
+},
+{
+"wrong": "They scaled back it.",
+"right": "They scaled it back.",
+"why": "Pronome."
+},
+{
+"wrong": "They scale back production last year.",
+"right": "They scaled back production last year.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Use scale back: “They reduced production.”",
+"answer": "They scaled back production.",
+"why": ""
+},
+{
+"prompt": "Com pronome: “They scaled back production.” (it)",
+"answer": "They scaled it back.",
+"why": ""
+},
+{
+"prompt": "Oposto: “They scaled back plans.” (up)",
+"answer": "They scaled up plans.",
+"why": ""
+}
+]
+}

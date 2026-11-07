@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I worked for six hours when she called.",
+"right": "I had been working for six hours when she called.",
+"why": "Português usa o pretérito imperfeito (“trabalhava”). Para duração antes de outro fato passado use had been + -ing."
+},
+"mcq": [
+{
+"q": "I **___** working for six hours.",
+"opts": [
+"have been",
+"was been",
+"had been"
+],
+"ans": 2,
+"why": "Had been."
+},
+{
+"q": "negativa:",
+"opts": [
+"wasn’t been",
+"hadn’t been",
+"haven’t been"
+],
+"ans": 1,
+"why": "Hadn’t."
+},
+{
+"q": "When she called, I **___** sleeping for hours.",
+"opts": [
+"have been",
+"had been",
+"am"
+],
+"ans": 1,
+"why": "Had been."
+},
+{
+"q": "Forma:",
+"opts": [
+"was been + -ing",
+"had + -ing",
+"had been + -ing"
+],
+"ans": 2,
+"why": "Correto."
+}
+],
+"fix": [
+{
+"wrong": "I had working for six hours.",
+"right": "I had been working for six hours.",
+"why": "Been."
+},
+{
+"wrong": "She had been work.",
+"right": "She had been working.",
+"why": "-ing."
+},
+{
+"wrong": "They have been waiting when I arrived.",
+"right": "They had been waiting when I arrived.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I have been working for six hours.” (when she called)",
+"answer": "I had been working for six hours when she called.",
+"why": "Aceita ordem."
+},
+{
+"prompt": "Negativa: “I had been working.”",
+"answer": "I hadn’t been working.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You had been working.”",
+"answer": "Had you been working?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The cartoon infers that the mayor is lazy.",
+"right": "The cartoon implies that the mayor is lazy.",
+"why": "Em português “inferir” é usado para os dois lados; em inglês quem escreve implica (imply) e quem lê infere (infer)."
+},
+"mcq": [
+{
+"q": "Refute vs deny: proof?",
+"opts": [
+"refute has proof",
+"deny has proof",
+"both"
+],
+"ans": 0,
+"why": "Refute."
+},
+{
+"q": "Early surveys **___** a shift in mood.",
+"opts": [
+"suggests",
+"denies",
+"infers"
+],
+"ans": 0,
+"why": "suggest."
+},
+{
+"q": "Reader’s act:",
+"opts": [
+"infers",
+"implies",
+"suggests"
+],
+"ans": 0,
+"why": "infer."
+},
+{
+"q": "Headline implies:",
+"opts": [
+"data prove",
+"the writer hints",
+"the reader deduces"
+],
+"ans": 1,
+"why": "Emissor."
+}
+],
+"fix": [
+{
+"wrong": "The data refutes the theory.",
+"right": "The data refute the theory.",
+"why": "Plural."
+},
+{
+"wrong": "He implied that from the text.",
+"right": "He inferred that from the text.",
+"why": "Receptor."
+},
+{
+"wrong": "She denied to know.",
+"right": "She denied knowing.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por deny: “He refused to accept it without proof.”",
+"answer": "He denied it without proof.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The data refute the theory.”",
+"answer": "The theory is refuted by the data.",
+"why": ""
+},
+{
+"prompt": "Reescreva com infer: “I deduce a motive from his tone.”",
+"answer": "I infer a motive from his tone.",
+"why": ""
+}
+]
+}

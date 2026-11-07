@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "distinguish from",
+"wrong": "He distinguished outbreaks of noise.",
+"right": "He distinguished outbreaks from noise.",
+"why": "O brasileiro traduz “distinguir de” e escolhe of. Em inglês: distinguish A from B (ou between A and B)."
+},
+"mcq": [
+{
+"q": "He distinguished outbreaks ___ noise.",
+"opts": [
+"by",
+"from",
+"of"
+],
+"ans": 1,
+"why": "from."
+},
+{
+"q": "Tell a signal ___ an artifact.",
+"opts": [
+"of",
+"to",
+"from"
+],
+"ans": 2,
+"why": "tell from."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"distinguish between A and B",
+"distinguish between A from B",
+"distinguish of A and B"
+],
+"ans": 0,
+"why": "between…and."
+},
+{
+"q": "Differentiate means…",
+"opts": [
+"ignore",
+"tell apart",
+"join"
+],
+"ans": 1,
+"why": "Diferenciar."
+}
+],
+"fix": [
+{
+"wrong": "Tell a signal of an artifact.",
+"right": "Tell a signal from an artifact.",
+"why": "from."
+},
+{
+"wrong": "He distinguished between outbreaks from noise.",
+"right": "He distinguished between outbreaks and noise.",
+"why": "between…and."
+},
+{
+"wrong": "She distinguish signals from noise.",
+"right": "She distinguishes signals from noise.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Use tell…from: “Distinguish a signal from an artifact.”",
+"answer": "Tell a signal from an artifact.",
+"why": ""
+},
+{
+"prompt": "Use between: “Distinguish outbreaks from noise.”",
+"answer": "Distinguish between outbreaks and noise.",
+"why": ""
+},
+{
+"prompt": "Terceira pessoa: “I distinguish signals from noise.” (She…)",
+"answer": "She distinguishes signals from noise.",
+"why": ""
+}
+]
+}

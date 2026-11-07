@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "most of",
+"wrong": "Most of participants report gains.",
+"right": "Most participants report gains.",
+"why": "Em português “a maioria dos participantes” leva de os. Em inglês, most + substantivo plural sem of; most of exige the/pronome."
+},
+"mcq": [
+{
+"q": "Calibrated claim:",
+"opts": [
+"This course guarantees success.",
+"This course is likely to improve your writing.",
+"This course always works."
+],
+"ans": 1,
+"why": "likely."
+},
+{
+"q": "“Most ___ report gains.”",
+"opts": [
+"of participants",
+"the of participants",
+"participants"
+],
+"ans": 2,
+"why": "Most + plural."
+},
+{
+"q": "“___ works.” (hedged)",
+"opts": [
+"Generally",
+"Always",
+"Surely"
+],
+"ans": 0,
+"why": "Generally."
+},
+{
+"q": "“One of the best courses” avoids...",
+"opts": [
+"hedging",
+"the best course",
+"numbers"
+],
+"ans": 1,
+"why": "Superlativo absoluto."
+}
+],
+"fix": [
+{
+"wrong": "Everyone improves in the course.",
+"right": "Most participants improve in the course.",
+"why": "Hedge."
+},
+{
+"wrong": "Most of the participant report gains.",
+"right": "Most of the participants report gains.",
+"why": "plural."
+},
+{
+"wrong": "This is the best course.",
+"right": "This is one of the best courses.",
+"why": "Hedge."
+}
+],
+"rewrite": [
+{
+"prompt": "Suavize: “Everyone improves.” (Most participants…)",
+"answer": "Most participants improve.",
+"why": ""
+},
+{
+"prompt": "Suavize: “It always works.” (Generally)",
+"answer": "Generally, it works.",
+"why": ""
+},
+{
+"prompt": "Suavize: “The best course.” (one of)",
+"answer": "One of the best courses.",
+"why": ""
+}
+]
+}

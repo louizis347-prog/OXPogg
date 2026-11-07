@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "prefer -ing to -ing",
+"wrong": "I prefer to walk than driving.",
+"right": "I prefer walking to driving.",
+"why": "Para comparar duas ações, use prefer -ing to -ing."
+},
+"mcq": [
+{
+"q": "Qual é correta?",
+"opts": [
+"She prefers cycling than driving.",
+"She prefers cycling to driving.",
+"She prefers to cycling to driving."
+],
+"ans": 1,
+"why": "prefer -ing to -ing."
+},
+{
+"q": "Pergunta com would rather:",
+"opts": [
+"Do you would rather eat out?",
+"Would you rather to eat out?",
+"Would you rather eat out?"
+],
+"ans": 2,
+"why": "Would you rather + base."
+},
+{
+"q": "Preferência sobre pessoa diferente:",
+"opts": [
+"I'd rather you stayed.",
+"I'd rather you to stay.",
+"I'd rather that you stay to."
+],
+"ans": 0,
+"why": "would rather + sujeito + passado."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I prefer tea than coffee.",
+"I prefer tea of coffee.",
+"I prefer tea to coffee."
+],
+"ans": 2,
+"why": "prefer A to B."
+}
+],
+"fix": [
+{
+"wrong": "I'd rather not to say.",
+"right": "I'd rather not say.",
+"why": "Sem to."
+},
+{
+"wrong": "Would you rather going by train?",
+"right": "Would you rather go by train?",
+"why": "Base após rather."
+},
+{
+"wrong": "We prefer walk than take the bus.",
+"right": "We prefer walking to taking the bus.",
+"why": "prefer -ing to -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com prefer: “I like tea more than coffee.”",
+"answer": "I prefer tea to coffee.",
+"why": ""
+},
+{
+"prompt": "Reescreva com would rather: “I prefer to stay in.”",
+"answer": "I would rather stay in.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “I'd rather go.”",
+"answer": "I'd rather not go.",
+"why": ""
+}
+]
+}

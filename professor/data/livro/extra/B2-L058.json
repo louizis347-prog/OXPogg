@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish I didn’t have to getting up.",
+"right": "I wish I didn’t have to get up.",
+"why": "Wish + passado, mas have to leva base. O brasileiro mistura com -ing. Wish também pode usar would para irritação."
+},
+"mcq": [
+{
+"q": "I wish I **___** to get up early.",
+"opts": [
+"wouldn’t have",
+"don’t have",
+"didn’t have"
+],
+"ans": 2,
+"why": "Past."
+},
+{
+"q": "I wish he **___** stop talking.",
+"opts": [
+"would",
+"did to",
+"will"
+],
+"ans": 0,
+"why": "Would."
+},
+{
+"q": "Ele reclama de hábito alheio:",
+"opts": [
+"I wish you will knock.",
+"I wish you knock.",
+"I wish you would knock."
+],
+"ans": 2,
+"why": "Would."
+},
+{
+"q": "I wish I **___** swim.",
+"opts": [
+"would",
+"can",
+"could"
+],
+"ans": 2,
+"why": "Could."
+}
+],
+"fix": [
+{
+"wrong": "I wish I don’t have to work.",
+"right": "I wish I didn’t have to work.",
+"why": "Past."
+},
+{
+"wrong": "She wishes he stops shouting.",
+"right": "She wishes he would stop shouting.",
+"why": "Would."
+},
+{
+"wrong": "I wish I had to not leave.",
+"right": "I wish I didn’t have to leave.",
+"why": "Negativa de have to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I have to get up early.” (I wish… didn’t)",
+"answer": "I wish I didn’t have to get up early.",
+"why": ""
+},
+{
+"prompt": "Irritação: “He never listens.” (I wish he…)",
+"answer": "I wish he would listen.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I can’t drive.” (I wish…)",
+"answer": "I wish I could drive.",
+"why": ""
+}
+]
+}

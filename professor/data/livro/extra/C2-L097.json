@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo errado",
+"wrong": "Breathe low, put your feets on the floor.",
+"right": "Breathe low, plant your feet on the floor.",
+"why": "Português “pôr os pés” → put; para postura firme use plant; e feet é plural irregular."
+},
+"mcq": [
+{
+"q": "Plural of foot:",
+"opts": [
+"feet",
+"foots",
+"feets"
+],
+"ans": 0,
+"why": "Feet."
+},
+{
+"q": "Reframing:",
+"opts": [
+"not weakness; it’s energy",
+"no weakness it energy",
+"not weakness, is energy"
+],
+"ans": 0,
+"why": "Reenquadrar."
+},
+{
+"q": "Instruction:",
+"opts": [
+"Breathe low.",
+"Breathing low.",
+"You breathe low."
+],
+"ans": 0,
+"why": "Imperativo."
+},
+{
+"q": "“Not weakness; it’s energy” is…",
+"opts": [
+"a reframe",
+"a question",
+"a threat"
+],
+"ans": 0,
+"why": "Reenquadrar."
+}
+],
+"fix": [
+{
+"wrong": "Plant your foots.",
+"right": "Plant your feet.",
+"why": "Feet."
+},
+{
+"wrong": "It is not a weakness, it energy.",
+"right": "It’s not weakness; it’s energy.",
+"why": "Verbo."
+},
+{
+"wrong": "Breathes low.",
+"right": "Breathe low.",
+"why": "Imperativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Plural: “Plant your foot.”",
+"answer": "Plant your feet.",
+"why": ""
+},
+{
+"prompt": "Reenquadre: “It’s weakness.”",
+"answer": "It’s not weakness.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Breathe low.”",
+"answer": "Don’t breathe low.",
+"why": ""
+}
+]
+}

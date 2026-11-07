@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Rarely a course changes how you speak.",
+"right": "Rarely does a course change how you speak.",
+"why": "Português mantém a ordem direta; inglês exige do/does antes do sujeito."
+},
+"mcq": [
+{
+"q": "Inversion:",
+"opts": [
+"Rarely changes a course…",
+"Rarely a course changes…",
+"Rarely does a course change…"
+],
+"ans": 2,
+"why": "does."
+},
+{
+"q": "Not only… but also:",
+"opts": [
+"Not only does she writes",
+"Not only does she write, but she also speaks.",
+"Not only she writes"
+],
+"ans": 1,
+"why": "does + base."
+},
+{
+"q": "After “does a course”:",
+"opts": [
+"changed",
+"change",
+"changes"
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "Seldom does he…",
+"opts": [
+"spoke",
+"speak",
+"speaks"
+],
+"ans": 1,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "Rarely a course changes you.",
+"right": "Rarely does a course change you.",
+"why": "Inversão."
+},
+{
+"wrong": "Not only she writes, but also speaks.",
+"right": "Not only does she write, but she also speaks.",
+"why": "does."
+},
+{
+"wrong": "Never he speaks.",
+"right": "Never does he speak.",
+"why": "does."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “A course rarely changes you.”",
+"answer": "Rarely does a course change you.",
+"why": ""
+},
+{
+"prompt": "Inverta: “She not only writes but also speaks.”",
+"answer": "Not only does she write, but she also speaks.",
+"why": ""
+},
+{
+"prompt": "Inverta: “He seldom speaks.”",
+"answer": "Seldom does he speak.",
+"why": ""
+}
+]
+}

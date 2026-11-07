@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "What matters it is friendship, and it is friendship what lasts.",
+"right": "What matters is friendship, and it is friendship that lasts.",
+"why": "Português repete o pronome “isso”; o pseudo-cleft não usa it, e a clivada pede that."
+},
+"mcq": [
+{
+"q": "Highlight the theme:",
+"opts": [
+"What matters is friendship.",
+"What matters it friendship is.",
+"Friendship matters what is."
+],
+"ans": 0,
+"why": "What + V + is."
+},
+{
+"q": "Contrast with a cleft:",
+"opts": [
+"It is friendship that matters.",
+"It is that friendship matters.",
+"It friendship that matters is."
+],
+"ans": 0,
+"why": "It is… that."
+},
+{
+"q": "In a cleft, the stressed word follows…",
+"opts": [
+"What",
+"It is",
+"That"
+],
+"ans": 1,
+"why": "It is."
+},
+{
+"q": "Which pair is equivalent?",
+"opts": [
+"What matters is trust. / It is trust that matters.",
+"What matters is trust. / It is trust who matters.",
+"Trust what matters."
+],
+"ans": 0,
+"why": "Equivalentes."
+}
+],
+"fix": [
+{
+"wrong": "What matters are friends.",
+"right": "What matters is friendship.",
+"why": "is."
+},
+{
+"wrong": "It is friendship what lasts.",
+"right": "It is friendship that lasts.",
+"why": "that."
+},
+{
+"wrong": "What matters it is trust.",
+"right": "What matters is trust.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudoclivada: “Friendship matters.”",
+"answer": "What matters is friendship.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Friendship matters.”",
+"answer": "It is friendship that matters.",
+"why": ""
+},
+{
+"prompt": "Transforme em clivada: “What lasts is friendship.”",
+"answer": "It is friendship that lasts.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "The key idea is trust, but I put it at the start: Trust is the key idea.",
+"right": "The key idea is, above all, trust.",
+"why": "Português admite a ideia-chave no início; em inglês a ênfase vai para o fim da oração e o sujeito deve ser o substantivo forte."
+},
+"mcq": [
+{
+"q": "Where goes the key idea for emphasis?",
+"opts": [
+"at the start",
+"at the end",
+"in the middle"
+],
+"ans": 1,
+"why": "Fim."
+},
+{
+"q": "Strong subject:",
+"opts": [
+"Trust shapes every contract.",
+"It is something that shapes contracts.",
+"There is trust that shapes."
+],
+"ans": 0,
+"why": "Substantivo-chave."
+},
+{
+"q": "Better emphasis:",
+"opts": [
+"Trust is what we lack it.",
+"What we lack is trust.",
+"We lack, trust, what."
+],
+"ans": 1,
+"why": "Pseudo-cleft."
+},
+{
+"q": "Final word of the sentence receives…",
+"opts": [
+"the negation",
+"the stress",
+"the question"
+],
+"ans": 1,
+"why": "Peso."
+}
+],
+"fix": [
+{
+"wrong": "Trust it is what we lack.",
+"right": "What we lack is trust.",
+"why": "Sem it."
+},
+{
+"wrong": "There is a thing that shapes contracts, trust.",
+"right": "Trust shapes contracts.",
+"why": "Sujeito forte."
+},
+{
+"wrong": "It exists trust in the group.",
+"right": "Trust exists in the group.",
+"why": "Sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Mova para o fim: “Trust is what we lack.”",
+"answer": "What we lack is trust.",
+"why": ""
+},
+{
+"prompt": "Sujeito forte: “There is trust in every contract.”",
+"answer": "Trust exists in every contract.",
+"why": ""
+},
+{
+"prompt": "Plural: “Trust shapes a contract.”",
+"answer": "Trust shapes contracts.",
+"why": ""
+}
+]
+}

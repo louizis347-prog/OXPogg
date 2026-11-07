@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to depois de want",
+"wrong": "I want that you come.",
+"right": "I want you to come.",
+"why": "Em português dizemos 'quero que você venha'; em inglês não existe 'that' aqui: want + pessoa + to."
+},
+"mcq": [
+{
+"q": "She ___ to learn English.",
+"opts": [
+"wanting",
+"want",
+"wants"
+],
+"ans": 2,
+"why": "3ª pessoa."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I need study more.",
+"I need to study more.",
+"I need studying more."
+],
+"ans": 1,
+"why": "need + to."
+},
+{
+"q": "Negativa de “They need to wait”:",
+"opts": [
+"They doesn't need to wait.",
+"They don't need to wait.",
+"They not need to wait."
+],
+"ans": 1,
+"why": "don't."
+},
+{
+"q": "Qual significa necessidade?",
+"opts": [
+"I need a break.",
+"I like a break.",
+"I am a break."
+],
+"ans": 0,
+"why": "need."
+}
+],
+"fix": [
+{
+"wrong": "I want to buys a car.",
+"right": "I want to buy a car.",
+"why": "to + base."
+},
+{
+"wrong": "He wants go out.",
+"right": "He wants to go out.",
+"why": "to obrigatório."
+},
+{
+"wrong": "She don't need to pay.",
+"right": "She doesn't need to pay.",
+"why": "doesn't."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a negativa: “He wants to leave.”",
+"answer": "He doesn't want to leave.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “They need to work.”",
+"answer": "Do they need to work?",
+"why": ""
+},
+{
+"prompt": "Troque para I: “She wants to sleep.”",
+"answer": "I want to sleep.",
+"why": ""
+}
+]
+}

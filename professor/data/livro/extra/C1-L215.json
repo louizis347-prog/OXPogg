@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "because + oração",
+"wrong": "The tension arises because of Ren is suspicious.",
+"right": "The tension arises because Ren is suspicious.",
+"why": "Em português “por causa de/porque” se misturam. Em inglês, because of + substantivo; because + oração."
+},
+"mcq": [
+{
+"q": "“Tension arises ___ Ren is suspicious.”",
+"opts": [
+"because of",
+"due",
+"because"
+],
+"ans": 2,
+"why": "Oração."
+},
+{
+"q": "“Tension arises ___ their mistrust.”",
+"opts": [
+"because of",
+"because",
+"that"
+],
+"ans": 0,
+"why": "Substantivo."
+},
+{
+"q": "The scene “takes place ___ a kitchen.”",
+"opts": [
+"at the in",
+"in",
+"on"
+],
+"ans": 1,
+"why": "in."
+},
+{
+"q": "To interpret:",
+"opts": [
+"The first panel…",
+"However…",
+"This suggests that…"
+],
+"ans": 2,
+"why": "Interpretação."
+}
+],
+"fix": [
+{
+"wrong": "The scene takes place on a kitchen.",
+"right": "The scene takes place in a kitchen.",
+"why": "in."
+},
+{
+"wrong": "Ren is suspicious while Ola is lighthearted.",
+"right": "Ren is suspicious, while Ola is lighthearted.",
+"why": "Vírgula antes de while contrastivo."
+},
+{
+"wrong": "This reveal that Ren distrusts Ola.",
+"right": "This reveals that Ren distrusts Ola.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com because: “Because of his suspicion, Ren is tense.” (because he…)",
+"answer": "Ren is tense because he is suspicious.",
+"why": ""
+},
+{
+"prompt": "Reescreva com because of: “Ren is tense because he is suspicious.” (because of his…)",
+"answer": "Ren is tense because of his suspicion.",
+"why": ""
+},
+{
+"prompt": "Reescreva com while: “Ren is suspicious. Ola is calm.” (…, while…)",
+"answer": "Ren is suspicious, while Ola is calm.",
+"why": ""
+}
+]
+}

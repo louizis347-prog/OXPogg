@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "past perfect",
+"wrong": "He noticed that a mould contaminated the plate.",
+"right": "He noticed that a mould had contaminated the plate.",
+"why": "Em português “notou que um fungo contaminara/contaminou” confunde as ordens. Em inglês, a ação anterior a outro passado usa past perfect."
+},
+"mcq": [
+{
+"q": "Which came first?",
+"opts": [
+"He noticed; then the plate was contaminated.",
+"Both at once.",
+"The mould contaminated the plate; then he noticed."
+],
+"ans": 2,
+"why": "had contaminated."
+},
+{
+"q": "“The lab ___ the compound.” (purified, past)",
+"opts": [
+"had purified",
+"purifies",
+"purifying"
+],
+"ans": 0,
+"why": "Past perfect."
+},
+{
+"q": "Nominalisation of **inhibit**:",
+"opts": [
+"inhibiting",
+"inhibition",
+"inhibitor"
+],
+"ans": 1,
+"why": "inhibition."
+},
+{
+"q": "A microbiologist studies...",
+"opts": [
+"metals",
+"stars",
+"microbes"
+],
+"ans": 2,
+"why": "Micróbios."
+}
+],
+"fix": [
+{
+"wrong": "She found that the colony inhibit growth.",
+"right": "She found that the colony inhibited growth.",
+"why": "Passado."
+},
+{
+"wrong": "They isolate it after it had grown.",
+"right": "They isolated it after it had grown.",
+"why": "Passado."
+},
+{
+"wrong": "The compound purified by the team.",
+"right": "The compound was purified by the team.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com past perfect: “He saw that the colony grew.” (had grown)",
+"answer": "He saw that the colony had grown.",
+"why": ""
+},
+{
+"prompt": "Reescreva com past perfect: “She noticed that the mould grew.”",
+"answer": "She noticed that the mould had grown.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The team isolated the colony.”",
+"answer": "The colony was isolated by the team.",
+"why": ""
+}
+]
+}

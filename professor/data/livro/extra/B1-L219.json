@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so/such",
+"wrong": "Moving made a mayor difference.",
+"right": "Moving made a major difference.",
+"why": "Mayor parece “maior”, mas significa prefeito. Major = importante/grande."
+},
+"mcq": [
+{
+"q": "A major difference:",
+"opts": [
+"grande",
+"maior",
+"prefeito"
+],
+"ans": 0,
+"why": "Major."
+},
+{
+"q": "Mayor =",
+"opts": [
+"major",
+"prefeito",
+"maior"
+],
+"ans": 1,
+"why": "Falso cognato."
+},
+{
+"q": "She runs **___** fast.",
+"opts": [
+"so",
+"such a",
+"such"
+],
+"ans": 0,
+"why": "Advérbio."
+},
+{
+"q": "It was **___** a big change.",
+"opts": [
+"such",
+"so",
+"very"
+],
+"ans": 0,
+"why": "Such a."
+}
+],
+"fix": [
+{
+"wrong": "Moving made a mayor difference.",
+"right": "Moving made a major difference.",
+"why": "Major."
+},
+{
+"wrong": "It was so big change.",
+"right": "It was such a big change.",
+"why": "Such a."
+},
+{
+"wrong": "He runs such fast.",
+"right": "He runs so fast.",
+"why": "So."
+}
+],
+"rewrite": [
+{
+"prompt": "Use so: “He runs very fast.”",
+"answer": "He runs so fast.",
+"why": ""
+},
+{
+"prompt": "Use such a: “It was a big change.” (very)",
+"answer": "It was such a big change.",
+"why": ""
+},
+{
+"prompt": "Passado: “Moving makes a difference.”",
+"answer": "Moving made a difference.",
+"why": ""
+}
+]
+}

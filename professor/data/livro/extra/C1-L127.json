@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "relação entre fontes",
+"wrong": "Source A is complement source B because A says steps.",
+"right": "Source A complements Source B because A gives steps.",
+"why": "O brasileiro usa “ser complemento” com be. Em inglês, complement é verbo: A complements B."
+},
+"mcq": [
+{
+"q": "Passo 1 do integrated: resuma…",
+"opts": [
+"só uma fonte",
+"com opinião",
+"cada fonte em uma frase"
+],
+"ans": 2,
+"why": "Cada fonte."
+},
+{
+"q": "Passo 2: ache a…",
+"opts": [
+"relação entre as fontes",
+"data",
+"nota"
+],
+"ans": 0,
+"why": "Relação."
+},
+{
+"q": "Source A ___ Source B. (complementa)",
+"opts": [
+"complement",
+"complements",
+"compliments"
+],
+"ans": 1,
+"why": "complements."
+},
+{
+"q": "Source B ___ a warning.",
+"opts": [
+"give",
+"gaves",
+"gives"
+],
+"ans": 2,
+"why": "gives."
+}
+],
+"fix": [
+{
+"wrong": "Source A compliments Source B.",
+"right": "Source A complements Source B.",
+"why": "complement."
+},
+{
+"wrong": "Source B give a warning.",
+"right": "Source B gives a warning.",
+"why": "-s."
+},
+{
+"wrong": "Source A is contradict B.",
+"right": "Source A contradicts B.",
+"why": "Verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Resuma: “A offers steps.” (A gives…)",
+"answer": "A gives steps.",
+"why": ""
+},
+{
+"prompt": "Relação: “A and B are in contrast.” (A contradicts B)",
+"answer": "A contradicts B.",
+"why": ""
+},
+{
+"prompt": "Singular: “B give warnings.”",
+"answer": "B gives warnings.",
+"why": ""
+}
+]
+}

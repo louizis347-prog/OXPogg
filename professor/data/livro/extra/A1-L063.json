@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontáveis no plural",
+"wrong": "I need some informations and advices.",
+"right": "I need some information and advice.",
+"why": "Em português informação e conselho têm plural; em inglês information, advice, bread e water são incontáveis."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"a bread",
+"some bread",
+"breads"
+],
+"ans": 1,
+"why": "Incontável."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"an advice",
+"advices",
+"a piece of advice"
+],
+"ans": 2,
+"why": "Incontável."
+},
+{
+"q": "Which is uncountable?",
+"opts": [
+"water",
+"car",
+"book"
+],
+"ans": 0,
+"why": "Water."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"an information",
+"some information",
+"informations"
+],
+"ans": 1,
+"why": "Incontável."
+}
+],
+"fix": [
+{
+"wrong": "She has long hairs.",
+"right": "She has long hair.",
+"why": "Hair incontável."
+},
+{
+"wrong": "We need informations.",
+"right": "We need information.",
+"why": "Sem plural."
+},
+{
+"wrong": "I need an advice.",
+"right": "I need some advice.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija: “I want a bread.”",
+"answer": "I want some bread.",
+"why": ""
+},
+{
+"prompt": "Corrija: “The news are good.”",
+"answer": "The news is good.",
+"why": ""
+},
+{
+"prompt": "Complete com much/many: “How ___ sugar do you want?” Escreva a pergunta completa.",
+"answer": "How much sugar do you want?",
+"why": ""
+}
+]
+}

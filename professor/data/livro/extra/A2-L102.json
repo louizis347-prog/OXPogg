@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo na if-clause",
+"wrong": "If I will have time, I'll call you.",
+"right": "If I have time, I'll call you.",
+"why": "O aluno acha que o futuro precisa de will nos dois lados, como no português futuro; em inglês só no resultado."
+},
+"mcq": [
+{
+"q": "If I ___ time, I'll help.",
+"opts": [
+"had",
+"have",
+"will have"
+],
+"ans": 1,
+"why": "presente."
+},
+{
+"q": "She'll be happy if you ___ .",
+"opts": [
+"come",
+"will come",
+"came"
+],
+"ans": 0,
+"why": "presente."
+},
+{
+"q": "When he ___ , I'll tell him.",
+"opts": [
+"arrived",
+"will arrive",
+"arrives"
+],
+"ans": 2,
+"why": "presente."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"If it snowed, we'll stay.",
+"If it snows, we'll stay.",
+"If it will snow, we stay."
+],
+"ans": 1,
+"why": "presente + will."
+}
+],
+"fix": [
+{
+"wrong": "When she will arrive, I'll call.",
+"right": "When she arrives, I'll call.",
+"why": "presente."
+},
+{
+"wrong": "If I'll see him, I'll tell him.",
+"right": "If I see him, I'll tell him.",
+"why": "presente."
+},
+{
+"wrong": "If you don't hurry, you miss it.",
+"right": "If you don't hurry, you'll miss it.",
+"why": "will."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “When I ___ (get) home, I'll call.”",
+"answer": "When I get home, I'll call.",
+"why": ""
+},
+{
+"prompt": "Una: “It's sunny. We'll go out.” com if",
+"answer": "If it's sunny, we'll go out.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “What will you do if it rains?” (corrija: What you will do...)",
+"answer": "What will you do if it rains?",
+"why": ""
+}
+]
+}

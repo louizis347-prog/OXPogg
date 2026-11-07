@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sem verbos",
+"wrong": "Ingredients: you need one short text.",
+"right": "Ingredients: one short text.",
+"why": "Português usa “você precisa de”; listas de ingredientes em inglês são frases nominais sem verbo."
+},
+"mcq": [
+{
+"q": "Ingredient list:",
+"opts": [
+"needing text",
+"one short text; twelve curious people",
+"you will need a text"
+],
+"ans": 1,
+"why": "Sem verbos."
+},
+{
+"q": "Method line:",
+"opts": [
+"To arrange chairs.",
+"Arrange the chairs.",
+"You arranging chairs."
+],
+"ans": 1,
+"why": "Imperativo."
+},
+{
+"q": "A list without verbs saves…",
+"opts": [
+"grammar rules",
+"space",
+"time zones"
+],
+"ans": 1,
+"why": "Economia."
+},
+{
+"q": "Arrange the chairs in a…",
+"opts": [
+"circling",
+"circled",
+"circle"
+],
+"ans": 2,
+"why": "Substantivo."
+}
+],
+"fix": [
+{
+"wrong": "Arranges the chairs in a circle.",
+"right": "Arrange the chairs in a circle.",
+"why": "Imperativo."
+},
+{
+"wrong": "You need to bring one text.",
+"right": "One text.",
+"why": "Lista nominal."
+},
+{
+"wrong": "Arrange the chair in circles.",
+"right": "Arrange the chairs in a circle.",
+"why": "Plural e artigo."
+}
+],
+"rewrite": [
+{
+"prompt": "Lista nominal: “You need twelve curious people.”",
+"answer": "Twelve curious people.",
+"why": ""
+},
+{
+"prompt": "Imperativo: “You arrange the chairs.”",
+"answer": "Arrange the chairs.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Arrange the chairs.”",
+"answer": "Don’t arrange the chairs.",
+"why": ""
+}
+]
+}

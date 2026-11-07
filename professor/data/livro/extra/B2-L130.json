@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "supposed to",
+"wrong": "You are suppose to arrive at nine.",
+"right": "You are supposed to arrive at nine.",
+"why": "Pela pronúncia, o /d/ final de supposed some, e o aluno escreve suppose. Na estrutura be supposed to, o -d é obrigatório."
+},
+"mcq": [
+{
+"q": "\"I'm expecting a call\" significa...",
+"opts": [
+"esperam que eu ligue",
+"aguardo uma ligação",
+"devo ligar"
+],
+"ans": 1,
+"why": "expect no continuous = aguardar."
+},
+{
+"q": "Qual indica que algo não ocorreu como previsto?",
+"opts": [
+"He is supposed calling.",
+"He supposes to call.",
+"He was supposed to call."
+],
+"ans": 2,
+"why": "was supposed to = era para ele ter ligado."
+},
+{
+"q": "Escolha a ortografia certa:",
+"opts": [
+"supposed to",
+"suppose to",
+"supposing to"
+],
+"ans": 0,
+"why": "Mantenha o -d."
+},
+{
+"q": "\"You are supposed to wait\" = ",
+"opts": [
+"Você supõe esperar.",
+"Você esperou.",
+"Você deve esperar (regra/plano)."
+],
+"ans": 2,
+"why": "be supposed to = expectativa ou regra."
+}
+],
+"fix": [
+{
+"wrong": "We are expected finishing by noon.",
+"right": "We are expected to finish by noon.",
+"why": "be expected + to + base."
+},
+{
+"wrong": "I'm expected a package today.",
+"right": "I'm expecting a package today.",
+"why": "Aguardar = expecting."
+},
+{
+"wrong": "Students are supposed wear shoes.",
+"right": "Students are supposed to wear shoes.",
+"why": "Falta to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “She is supposed to call.”",
+"answer": "She was supposed to call.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “You are supposed to park here.”",
+"answer": "You are not supposed to park here.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be expected to: “People expect him to win.”",
+"answer": "He is expected to win.",
+"why": ""
+}
+]
+}

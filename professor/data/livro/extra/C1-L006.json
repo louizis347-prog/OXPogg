@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Not only + inversão",
+"wrong": "Not only we cut prices, but also we grew.",
+"right": "Not only did we cut prices, but we also grew.",
+"why": "Em português “não só… mas também” não inverte. Em inglês, Not only no início pede auxiliar antes do sujeito."
+},
+"mcq": [
+{
+"q": "Seldom ___ I seen such momentum.",
+"opts": [
+"have",
+"am",
+"do"
+],
+"ans": 0,
+"why": "Seldom have I seen."
+},
+{
+"q": "Not only ___ we cut prices, but we also grew.",
+"opts": [
+"had",
+"did",
+"do"
+],
+"ans": 1,
+"why": "Passado: did."
+},
+{
+"q": "In a report, “by and large” means…",
+"opts": [
+"by the sea",
+"at last",
+"in general"
+],
+"ans": 2,
+"why": "De modo geral."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Seldom I have seen it.",
+"Seldom have I seen it.",
+"Seldom I seen it."
+],
+"ans": 1,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Seldom I have seen such growth.",
+"right": "Seldom have I seen such growth.",
+"why": "Inversão."
+},
+{
+"wrong": "Not only we cut costs, but also we grew.",
+"right": "Not only did we cut costs, but we also grew.",
+"why": "did + sujeito."
+},
+{
+"wrong": "For the most part he sell shares.",
+"right": "For the most part, he sold shares.",
+"why": "Passado e vírgula."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Seldom: “I have seldom seen such momentum.”",
+"answer": "Seldom have I seen such momentum.",
+"why": ""
+},
+{
+"prompt": "Comece com Not only: “We cut prices and we grew.”",
+"answer": "Not only did we cut prices, but we also grew.",
+"why": ""
+},
+{
+"prompt": "Use By and large: “In general the plan works.”",
+"answer": "By and large, the plan works.",
+"why": ""
+}
+]
+}

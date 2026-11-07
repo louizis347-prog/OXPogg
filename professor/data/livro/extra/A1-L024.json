@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "I study now.",
+"right": "I am studying now.",
+"why": "Em português \"estudo agora\" funciona com o presente simples; em inglês, ação em andamento exige be + -ing."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"She eating.",
+"She is eating.",
+"She is eat."
+],
+"ans": 1,
+"why": "Be + -ing."
+},
+{
+"q": "Negative: “He is sleeping.”",
+"opts": [
+"He not is sleeping.",
+"He does not sleeping.",
+"He is not sleeping."
+],
+"ans": 2,
+"why": "Not após is."
+},
+{
+"q": "Right now: I ___ TV.",
+"opts": [
+"am watching",
+"watch",
+"watches"
+],
+"ans": 0,
+"why": "Be + -ing."
+},
+{
+"q": "They ___ a game.",
+"opts": [
+"play",
+"are playing",
+"is playing"
+],
+"ans": 1,
+"why": "They: are."
+}
+],
+"fix": [
+{
+"wrong": "He is runing.",
+"right": "He is running.",
+"why": "Dobra n."
+},
+{
+"wrong": "She is makeing tea.",
+"right": "She is making tea.",
+"why": "Tira e."
+},
+{
+"wrong": "I studying now.",
+"right": "I am studying now.",
+"why": "Falta be."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue: “I am working.” (am not)",
+"answer": "I am not working.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “He is cooking.”",
+"answer": "Is he cooking?",
+"why": ""
+},
+{
+"prompt": "Reescreva no Present Continuous: “She eats.”",
+"answer": "She is eating.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would/used to/let",
+"wrong": "When I was kid, I would to be afraid of dogs and my mom would let me to pet one.",
+"right": "When I was a kid, I used to be afraid of dogs, and my mom would let me pet one.",
+"why": "Em português “ficava com medo” e “deixava-me” exigem imperfeito. Em inglês, estado = used to; ação repetida = would; let sem to."
+},
+"mcq": [
+{
+"q": "I ___ afraid of dogs (estado).",
+"opts": [
+"would be",
+"am used",
+"used to be"
+],
+"ans": 2,
+"why": "Estado."
+},
+{
+"q": "Mom ___ me pet one (ação repetida).",
+"opts": [
+"would let",
+"would to let",
+"used"
+],
+"ans": 0,
+"why": "would let."
+},
+{
+"q": "She made me ___.",
+"opts": [
+"to laugh",
+"laugh",
+"laughing"
+],
+"ans": 1,
+"why": "make + base."
+},
+{
+"q": "Which is correct? (would/used to/let)",
+"opts": [
+"She lets me to go.",
+"She lets me go.",
+"She let me to going."
+],
+"ans": 1,
+"why": "let + base."
+}
+],
+"fix": [
+{
+"wrong": "They would to climb trees.",
+"right": "They would climb trees.",
+"why": "Sem to."
+},
+{
+"wrong": "I would be shy as a kid.",
+"right": "I used to be shy as a kid.",
+"why": "Estado."
+},
+{
+"wrong": "She let me to go.",
+"right": "She let me go.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com used to: “I was afraid of dogs.” (hábito antigo)",
+"answer": "I used to be afraid of dogs.",
+"why": ""
+},
+{
+"prompt": "Reescreva com would: “We climbed the tree every day.”",
+"answer": "We would climb the tree every day.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem to: “He made me to wait.”",
+"answer": "He made me wait.",
+"why": ""
+}
+]
+}

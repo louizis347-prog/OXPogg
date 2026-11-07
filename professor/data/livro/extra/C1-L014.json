@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "attribute to",
+"wrong": "Executives attribute success at a strong team.",
+"right": "Executives attribute success to a strong team.",
+"why": "O brasileiro troca a preposição por “a/em/por”. Em inglês, attribute A to B."
+},
+"mcq": [
+{
+"q": "Executives attribute success ___ a strong team.",
+"opts": [
+"by",
+"to",
+"for"
+],
+"ans": 1,
+"why": "attribute to."
+},
+{
+"q": "Success ___ to a strong team.",
+"opts": [
+"attributes",
+"is attribute",
+"is attributed"
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The loss was attributed to errors.",
+"The loss was attributed by errors.",
+"The loss attributed to errors."
+],
+"ans": 0,
+"why": "was attributed to."
+},
+{
+"q": "Tell the twins ___ .",
+"opts": [
+"for apart",
+"apart",
+"to part"
+],
+"ans": 1,
+"why": "tell apart."
+}
+],
+"fix": [
+{
+"wrong": "Success is attributed by teamwork.",
+"right": "Success is attributed to teamwork.",
+"why": "to."
+},
+{
+"wrong": "They attributed the loss on errors.",
+"right": "They attributed the loss to errors.",
+"why": "to."
+},
+{
+"wrong": "The recovery attributes to discipline.",
+"right": "The recovery is attributed to discipline.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Executives attribute success to teamwork.”",
+"answer": "Success is attributed to teamwork.",
+"why": ""
+},
+{
+"prompt": "Ativa: “The fall is attributed to costs.” (Analysts…)",
+"answer": "Analysts attribute the fall to costs.",
+"why": ""
+},
+{
+"prompt": "Passado passiva: “They attribute the loss to errors.”",
+"answer": "The loss was attributed to errors.",
+"why": ""
+}
+]
+}

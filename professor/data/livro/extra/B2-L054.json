@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish I have more money.",
+"right": "I wish I had more money.",
+"why": "Para desejo irreal no presente, o português usa o subjuntivo (“quem me dera tivesse”). O brasileiro usa o presente; em inglês: wish + passado."
+},
+"mcq": [
+{
+"q": "I wish I **___** more time.",
+"opts": [
+"would have",
+"had",
+"have"
+],
+"ans": 1,
+"why": "Past."
+},
+{
+"q": "I wish I **___** taller. (formal)",
+"opts": [
+"am",
+"were",
+"would be"
+],
+"ans": 1,
+"why": "Were."
+},
+{
+"q": "Desejo irreal presente:",
+"opts": [
+"wish + have",
+"wish + will",
+"wish + Past"
+],
+"ans": 2,
+"why": "Past."
+},
+{
+"q": "I wish she **___** here.",
+"opts": [
+"is",
+"would",
+"were"
+],
+"ans": 2,
+"why": "Were."
+}
+],
+"fix": [
+{
+"wrong": "I wish I am rich.",
+"right": "I wish I were rich.",
+"why": "Were."
+},
+{
+"wrong": "She wishes she can swim.",
+"right": "She wishes she could swim.",
+"why": "Could."
+},
+{
+"wrong": "I wish I would have a car.",
+"right": "I wish I had a car.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I don’t have a car.” (I wish…)",
+"answer": "I wish I had a car.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I am not tall.” (I wish…)",
+"answer": "I wish I were tall.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She can’t swim.” (She wishes…)",
+"answer": "She wishes she could swim.",
+"why": ""
+}
+]
+}

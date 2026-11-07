@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "want that",
+"wrong": "My teacher wants that I read more.",
+"right": "My teacher wants me to read more.",
+"why": "Em português 'quer que eu leia' usa subordinada com que; em inglês, want + pessoa + to + verbo."
+},
+"mcq": [
+{
+"q": "My boss wants ___ the report.",
+"opts": [
+"me to finish",
+"that I finish",
+"me finish"
+],
+"ans": 0,
+"why": "objeto + to."
+},
+{
+"q": "Pronome certo: She wants ___ to call.",
+"opts": [
+"us",
+"we",
+"our"
+],
+"ans": 0,
+"why": "objeto."
+},
+{
+"q": "Negativa: He wants me ___ late.",
+"opts": [
+"to not be",
+"don't be",
+"not to be"
+],
+"ans": 2,
+"why": "not to."
+},
+{
+"q": "I'd like ___ to explain.",
+"opts": [
+"your",
+"yours",
+"you"
+],
+"ans": 2,
+"why": "objeto."
+}
+],
+"fix": [
+{
+"wrong": "She wants that we study.",
+"right": "She wants us to study.",
+"why": "objeto + to."
+},
+{
+"wrong": "They want he to leave.",
+"right": "They want him to leave.",
+"why": "him."
+},
+{
+"wrong": "I want you come early.",
+"right": "I want you to come early.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Dad wants. I wash the car.”",
+"answer": "Dad wants me to wash the car.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Ms. Lee wants. They submit it.”",
+"answer": "Ms. Lee wants them to submit it.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I want. You listen.”",
+"answer": "I want you to listen.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have = comer/tomar",
+"wrong": "I eat breakfast at 7.",
+"right": "I have breakfast at 7.",
+"why": "Em português dizemos \"tomar café\"; em inglês usa-se have (breakfast, lunch, a coffee)."
+},
+"mcq": [
+{
+"q": "“Tomar café da manhã” =",
+"opts": [
+"have breakfast",
+"take breakfast",
+"make breakfast"
+],
+"ans": 0,
+"why": "Have."
+},
+{
+"q": "“Tomar uma xícara de café” =",
+"opts": [
+"take a coffee",
+"have a coffee",
+"do a coffee"
+],
+"ans": 1,
+"why": "Have."
+},
+{
+"q": "“Ter uma boa aula” =",
+"opts": [
+"make a good class",
+"do a good class",
+"have a good class"
+],
+"ans": 2,
+"why": "Have."
+},
+{
+"q": "“Ter um bom fim de semana” =",
+"opts": [
+"Have a nice weekend!",
+"Take a nice weekend!",
+"Do a nice weekend!"
+],
+"ans": 0,
+"why": "Have."
+}
+],
+"fix": [
+{
+"wrong": "I take lunch at noon.",
+"right": "I have lunch at noon.",
+"why": "Have lunch."
+},
+{
+"wrong": "She has a shower now.",
+"right": "She is having a shower now.",
+"why": "Have em ação usa -ing."
+},
+{
+"wrong": "We make a party.",
+"right": "We have a party.",
+"why": "Have a party."
+}
+],
+"rewrite": [
+{
+"prompt": "Use have: “I eat lunch at noon.”",
+"answer": "I have lunch at noon.",
+"why": ""
+},
+{
+"prompt": "Use have: “She drinks a coffee.”",
+"answer": "She has a coffee.",
+"why": ""
+},
+{
+"prompt": "Desejo: “Take a nice day!” (corrija)",
+"answer": "Have a nice day!",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "want to",
+"wrong": "I want go home.",
+"right": "I want to go home.",
+"why": "Em português 'quero ir' tem só o verbo no infinitivo; em inglês o to é obrigatório entre want/need e o verbo."
+},
+"mcq": [
+{
+"q": "I need ___ a taxi.",
+"opts": [
+"calling",
+"call",
+"to call"
+],
+"ans": 2,
+"why": "need + to + verbo."
+},
+{
+"q": "She ___ to rest.",
+"opts": [
+"wants",
+"want",
+"wanting"
+],
+"ans": 0,
+"why": "3ª pessoa: wants."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I want that book.",
+"I want to that book.",
+"I want eat that book."
+],
+"ans": 0,
+"why": "Com substantivo, sem to."
+},
+{
+"q": "Qual frase tem erro?",
+"opts": [
+"He needs to study.",
+"He need to study.",
+"They need to study."
+],
+"ans": 1,
+"why": "He needs."
+}
+],
+"fix": [
+{
+"wrong": "I want drink water.",
+"right": "I want to drink water.",
+"why": "want + to."
+},
+{
+"wrong": "She need to sleep.",
+"right": "She needs to sleep.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "We want to going home.",
+"right": "We want to go home.",
+"why": "to + verbo base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com want: “I drink water.” (quero beber)",
+"answer": "I want to drink water.",
+"why": ""
+},
+{
+"prompt": "Troque para she: “I need to work.”",
+"answer": "She needs to work.",
+"why": ""
+},
+{
+"prompt": "Com need: “We buy bread.” (precisamos comprar)",
+"answer": "We need to buy bread.",
+"why": ""
+}
+]
+}

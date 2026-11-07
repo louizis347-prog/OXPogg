@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "subjuntivo / account",
+"wrong": "It is essential that the schedule is published.",
+"right": "It is essential that the schedule be published.",
+"why": "Falta a forma base do subjuntivo. Após essential/vital that, use be + particípio."
+},
+"mcq": [
+{
+"q": "It is essential that the schedule ___ published.",
+"opts": [
+"are",
+"be",
+"is"
+],
+"ans": 1,
+"why": "be."
+},
+{
+"q": "On balance, …, although…",
+"opts": [
+"só resume",
+"só critica",
+"resume e pesa"
+],
+"ans": 2,
+"why": "Equilíbrio."
+},
+{
+"q": "Gas ___ for 40%.",
+"opts": [
+"accounts",
+"account",
+"accounting"
+],
+"ans": 0,
+"why": "accounts."
+},
+{
+"q": "Mixed A: If I ___ studied, I would be a doctor.",
+"opts": [
+"have",
+"had",
+"would"
+],
+"ans": 1,
+"why": "had."
+}
+],
+"fix": [
+{
+"wrong": "It is vital that fees are paid.",
+"right": "It is vital that fees be paid.",
+"why": "be."
+},
+{
+"wrong": "Gas account for 40%.",
+"right": "Gas accounts for 40%.",
+"why": "-s."
+},
+{
+"wrong": "If I would study, I would be a doctor.",
+"right": "If I had studied, I would be a doctor.",
+"why": "had."
+}
+],
+"rewrite": [
+{
+"prompt": "Subj.: “It is vital that fees are paid.”",
+"answer": "It is vital that fees be paid.",
+"why": ""
+},
+{
+"prompt": "Use account for: “Gas makes up 40%.”",
+"answer": "Gas accounts for 40%.",
+"why": ""
+},
+{
+"prompt": "Misto A: “I didn’t study, so I am not a doctor.”",
+"answer": "If I had studied, I would be a doctor.",
+"why": ""
+}
+]
+}

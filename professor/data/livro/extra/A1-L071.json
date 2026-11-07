@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "posição do advérbio",
+"wrong": "I go always to the gym.",
+"right": "I always go to the gym.",
+"why": "Em português o advérbio pode ficar depois do verbo (\"vou sempre\"); em inglês fica antes do verbo principal e depois do be."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"I always eat breakfast.",
+"I eat always breakfast.",
+"Always I eat breakfast."
+],
+"ans": 0,
+"why": "Antes do verbo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He never is late.",
+"He is never late.",
+"He is late never."
+],
+"ans": 1,
+"why": "Após be."
+},
+{
+"q": "100% means…",
+"opts": [
+"never",
+"sometimes",
+"always"
+],
+"ans": 2,
+"why": "Always."
+},
+{
+"q": "0% means…",
+"opts": [
+"never",
+"rarely",
+"often"
+],
+"ans": 0,
+"why": "Never."
+}
+],
+"fix": [
+{
+"wrong": "I go always to school.",
+"right": "I always go to school.",
+"why": "Posição."
+},
+{
+"wrong": "She always is happy.",
+"right": "She is always happy.",
+"why": "Após be."
+},
+{
+"wrong": "He eats never meat.",
+"right": "He never eats meat.",
+"why": "Posição."
+}
+],
+"rewrite": [
+{
+"prompt": "Insira “always”: “I drink coffee.”",
+"answer": "I always drink coffee.",
+"why": ""
+},
+{
+"prompt": "Insira “never”: “She is late.”",
+"answer": "She is never late.",
+"why": ""
+},
+{
+"prompt": "Insira “usually”: “We eat at home.”",
+"answer": "We usually eat at home.",
+"why": ""
+}
+]
+}

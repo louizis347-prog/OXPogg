@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "were to",
+"wrong": "If funding will stop, we close.",
+"right": "If funding were to stop, we would close.",
+"why": "O português usa futuro do subjuntivo (“se parar”). Em inglês, hipótese improvável: were to + base, com would na principal."
+},
+"mcq": [
+{
+"q": "If funding ___ to stop, we would close.",
+"opts": [
+"was",
+"is",
+"were"
+],
+"ans": 2,
+"why": "were to."
+},
+{
+"q": "___ funding to stop, we would close.",
+"opts": [
+"Were",
+"Was",
+"Did"
+],
+"ans": 0,
+"why": "Were."
+},
+{
+"q": "If it weren’t for volunteers = ___",
+"opts": [
+"Had it not volunteers",
+"Were it not for volunteers",
+"Was it not for volunteers"
+],
+"ans": 1,
+"why": "Were it not for."
+},
+{
+"q": "Were funding to stop, we ___ .",
+"opts": [
+"will close",
+"closed",
+"would close"
+],
+"ans": 2,
+"why": "would."
+}
+],
+"fix": [
+{
+"wrong": "Were funding to stops, we would close.",
+"right": "Were funding to stop, we would close.",
+"why": "Base."
+},
+{
+"wrong": "If funding will stop, we close.",
+"right": "If funding were to stop, we would close.",
+"why": "were to."
+},
+{
+"wrong": "Was it not for volunteers, we would close.",
+"right": "Were it not for volunteers, we would close.",
+"why": "Were."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If funding were to stop, we would close.”",
+"answer": "Were funding to stop, we would close.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If it weren’t for volunteers, we would close.”",
+"answer": "Were it not for volunteers, we would close.",
+"why": ""
+},
+{
+"prompt": "Desinverta: “Were she to leave, we would close.”",
+"answer": "If she were to leave, we would close.",
+"why": ""
+}
+]
+}

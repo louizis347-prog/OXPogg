@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Despite the team lost, the fans cheered.",
+"right": "Although the team lost, the fans cheered.",
+"why": "Em português “apesar de” aceita oração (“apesar de o time ter perdido”). Em inglês despite exige substantivo ou -ing; com sujeito + verbo use although."
+},
+"mcq": [
+{
+"q": "**___** her fear, Mia jumped.",
+"opts": [
+"Because",
+"Despite",
+"Although"
+],
+"ans": 1,
+"why": "Substantivo."
+},
+{
+"q": "**___** he was late, Sam smiled.",
+"opts": [
+"In spite of",
+"Despite",
+"Although"
+],
+"ans": 2,
+"why": "Oração."
+},
+{
+"q": "Júlia suggested **___** the meeting.",
+"opts": [
+"move",
+"to move",
+"moving"
+],
+"ans": 2,
+"why": "Suggest + -ing."
+},
+{
+"q": "Pedro avoids **___** sweets at night.",
+"opts": [
+"eat",
+"eating",
+"to eat"
+],
+"ans": 1,
+"why": "Avoid + -ing."
+}
+],
+"fix": [
+{
+"wrong": "Despite of the heat, we hiked.",
+"right": "Despite the heat, we hiked.",
+"why": "Sem of."
+},
+{
+"wrong": "Lucas avoids to drive downtown.",
+"right": "Lucas avoids driving downtown.",
+"why": "Avoid + -ing."
+},
+{
+"wrong": "Although it was cheap but I skipped it.",
+"right": "Although it was cheap, I skipped it.",
+"why": "Sem but."
+}
+],
+"rewrite": [
+{
+"prompt": "Use although: “It snowed. We drove.”",
+"answer": "Although it snowed, we drove.",
+"why": ""
+},
+{
+"prompt": "Use despite: “It snowed. We drove.” (the snow)",
+"answer": "Despite the snow, we drove.",
+"why": ""
+},
+{
+"prompt": "Use suggest: “Take a taxi.” (I…)",
+"answer": "I suggest taking a taxi.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "present perfect (notícia)",
+"wrong": "Residents have worked in the park yesterday and the city donated tools.",
+"right": "Residents worked in the park yesterday, and the city has donated tools.",
+"why": "Em português o pretérito perfeito composto aceita ações recentes sem restrição. Em notícias inglesas, uso Past Simple com data definida e Present Perfect para resultado atual."
+},
+"mcq": [
+{
+"q": "Residents ___ working in the park for a week.",
+"opts": [
+"are",
+"have been",
+"were being"
+],
+"ans": 1,
+"why": "PPC."
+},
+{
+"q": "“…,” ___ Rita.",
+"opts": [
+"told",
+"said",
+"spoke"
+],
+"ans": 1,
+"why": "said."
+},
+{
+"q": "The city ___ tools.",
+"opts": [
+"has donated",
+"donates",
+"donate"
+],
+"ans": 0,
+"why": "Resultado."
+},
+{
+"q": "Which is a quote?",
+"opts": [
+"Rita said us.",
+"Rita told.",
+"“We love it,” said Rita."
+],
+"ans": 2,
+"why": "Citação."
+}
+],
+"fix": [
+{
+"wrong": "The city have donated tools.",
+"right": "The city has donated tools.",
+"why": "city = it."
+},
+{
+"wrong": "Rita told: “We love it.”",
+"right": "Rita said: “We love it.”",
+"why": "said para citação."
+},
+{
+"wrong": "Residents have work in the park for years.",
+"right": "Residents have been working in the park for years.",
+"why": "PPC."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Present Perfect: “The city donated tools.” (resultado agora)",
+"answer": "The city has donated tools.",
+"why": ""
+},
+{
+"prompt": "Reescreva com for: “They work in the park. They started two weeks ago.”",
+"answer": "They have been working in the park for two weeks.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Rita says that they love it.”",
+"answer": "Rita said that they loved it.",
+"why": ""
+}
+]
+}

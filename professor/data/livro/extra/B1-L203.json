@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb",
+"wrong": "The car is broken down yesterday.",
+"right": "The car broke down yesterday.",
+"why": "Português “quebrou”. Em inglês break down é irregular e vem no passado; broke down, não “is broken down yesterday”."
+},
+"mcq": [
+{
+"q": "The car **broke down** =",
+"opts": [
+"comprou",
+"partiu",
+"quebrou"
+],
+"ans": 2,
+"why": "Veículo."
+},
+{
+"q": "She **broke down** in tears =",
+"opts": [
+"partiu",
+"chorou muito",
+"quebrou"
+],
+"ans": 1,
+"why": "Emocional."
+},
+{
+"q": "Passado de break:",
+"opts": [
+"broken",
+"breaked",
+"broke"
+],
+"ans": 2,
+"why": "Passado."
+},
+{
+"q": "Particípio:",
+"opts": [
+"broke",
+"breaked",
+"broken"
+],
+"ans": 2,
+"why": "Particípio."
+}
+],
+"fix": [
+{
+"wrong": "The car breaked down.",
+"right": "The car broke down.",
+"why": "Irregular."
+},
+{
+"wrong": "She has broke down.",
+"right": "She has broken down.",
+"why": "Particípio."
+},
+{
+"wrong": "My car broken down yesterday.",
+"right": "My car broke down yesterday.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “The car breaks down.”",
+"answer": "The car broke down.",
+"why": ""
+},
+{
+"prompt": "Present perfect: “The car breaks down.” (has)",
+"answer": "The car has broken down.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She broke down.”",
+"answer": "She didn’t break down.",
+"why": ""
+}
+]
+}

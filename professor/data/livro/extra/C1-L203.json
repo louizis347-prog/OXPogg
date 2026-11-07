@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio × -ed",
+"wrong": "Publishing last week, the chart spread fast.",
+"right": "Published last week, the chart spread fast.",
+"why": "Em português o gerúndio (“publicando”) é usado livremente. Em inglês, quando a ação é sofrida pelo sujeito use o particípio passado (published)."
+},
+"mcq": [
+{
+"q": "“___ last week, the chart spread.”",
+"opts": [
+"Publishing",
+"Having publish",
+"Published"
+],
+"ans": 2,
+"why": "-ed passivo."
+},
+{
+"q": "“___ a cautious approach, the platform acted.”",
+"opts": [
+"Taking",
+"Taken",
+"Take"
+],
+"ans": 0,
+"why": "-ing ativo."
+},
+{
+"q": "“Having ___ the number, the desk corrected it.”",
+"opts": [
+"checking",
+"checked",
+"check"
+],
+"ans": 1,
+"why": "having + pp."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Seeing by millions, the chart was famous.",
+"See by millions, the chart was famous.",
+"Seen by millions, the chart was famous."
+],
+"ans": 2,
+"why": "-ed."
+}
+],
+"fix": [
+{
+"wrong": "Reading by millions, the chart spread fast.",
+"right": "Read by millions, the chart spread fast.",
+"why": "-ed passivo."
+},
+{
+"wrong": "Check the figure, the desk fixed it.",
+"right": "Checking the figure, the desk fixed it.",
+"why": "-ing."
+},
+{
+"wrong": "Having check the method, the desk agreed.",
+"right": "Having checked the method, the desk agreed.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Reduza: “Because it was published last week, the chart spread fast.”",
+"answer": "Published last week, the chart spread fast.",
+"why": ""
+},
+{
+"prompt": "Reduza: “Because it took a cautious approach, the platform acted.”",
+"answer": "Taking a cautious approach, the platform acted.",
+"why": ""
+},
+{
+"prompt": "Reduza: “After the desk had checked the count, it posted.”",
+"answer": "Having checked the count, the desk posted.",
+"why": ""
+}
+]
+}

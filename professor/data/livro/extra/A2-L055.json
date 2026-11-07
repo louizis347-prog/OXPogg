@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "comparativos irregulares",
+"wrong": "This is more good than that.",
+"right": "This is better than that.",
+"why": "Em português 'mais bom' é evitado (melhor); o aluno usa more good. Good e bad são irregulares."
+},
+"mcq": [
+{
+"q": "Comparativo de good:",
+"opts": [
+"gooder",
+"better",
+"more good"
+],
+"ans": 1,
+"why": "better."
+},
+{
+"q": "Comparativo de bad:",
+"opts": [
+"more bad",
+"worse",
+"badder"
+],
+"ans": 1,
+"why": "worse."
+},
+{
+"q": "It is ___ expensive than that.",
+"opts": [
+"most",
+"very more",
+"more"
+],
+"ans": 2,
+"why": "adj. longo."
+},
+{
+"q": "My car is ___ than yours.",
+"opts": [
+"more fast",
+"fastest",
+"faster"
+],
+"ans": 2,
+"why": "-er."
+}
+],
+"fix": [
+{
+"wrong": "It is more good.",
+"right": "It is better.",
+"why": "better."
+},
+{
+"wrong": "He is more bad.",
+"right": "He is worse.",
+"why": "worse."
+},
+{
+"wrong": "She is more happy than me.",
+"right": "She is happier than me.",
+"why": "y → ier."
+}
+],
+"rewrite": [
+{
+"prompt": "Comparativo: “This is good. (than that)”",
+"answer": "This is better than that.",
+"why": ""
+},
+{
+"prompt": "Comparativo: “It is bad. (than before)”",
+"answer": "It is worse than before.",
+"why": ""
+},
+{
+"prompt": "Comparativo: “He is happy. (than me)”",
+"answer": "He is happier than me.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "1º × 2º condicional",
+"wrong": "If she would find a cook, she would teach him. (real)",
+"right": "If she finds a cook, she will teach him.",
+"why": "Em português o futuro do subjuntivo (“se ela achar”) é diferente do imperfeito (“se achasse”). Em inglês, real = if + presente, will; irreal = if + passado, would."
+},
+"mcq": [
+{
+"q": "If she ___ a cook, she will teach him.",
+"opts": [
+"found",
+"will find",
+"finds"
+],
+"ans": 2,
+"why": "1º cond."
+},
+{
+"q": "If I ___ rich, I would travel.",
+"opts": [
+"am",
+"were",
+"will be"
+],
+"ans": 1,
+"why": "2º cond."
+},
+{
+"q": "Real future uses…",
+"opts": [
+"if + Present, will",
+"if + Past, would",
+"if + will, would"
+],
+"ans": 0,
+"why": "1º."
+},
+{
+"q": "Unreal present uses…",
+"opts": [
+"if + Present, will",
+"if + Past, would",
+"if + Present, would"
+],
+"ans": 1,
+"why": "2º."
+}
+],
+"fix": [
+{
+"wrong": "If it rains, we would stay.",
+"right": "If it rains, we will stay.",
+"why": "1º."
+},
+{
+"wrong": "If I had money, I will buy it.",
+"right": "If I had money, I would buy it.",
+"why": "2º."
+},
+{
+"wrong": "If she will come, we start.",
+"right": "If she comes, we will start.",
+"why": "Sem will após if."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o 1º condicional: “If I had time, I would help.”",
+"answer": "If I have time, I will help.",
+"why": ""
+},
+{
+"prompt": "Passe para o 2º condicional: “If it rains, we will stay.”",
+"answer": "If it rained, we would stay.",
+"why": ""
+},
+{
+"prompt": "Complete: “If he (study) harder, he would pass.”",
+"answer": "If he studied harder, he would pass.",
+"why": ""
+}
+]
+}

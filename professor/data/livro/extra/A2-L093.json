@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares",
+"wrong": "I teached English.",
+"right": "I taught English.",
+"why": "O aluno regulariza com -ed; teach, tell, think, understand, wear, take têm formas próprias."
+},
+"mcq": [
+{
+"q": "Passado de **teach**:",
+"opts": [
+"teached",
+"teach",
+"taught"
+],
+"ans": 2,
+"why": "taught."
+},
+{
+"q": "Passado de **think**:",
+"opts": [
+"thinked",
+"thinks",
+"thought"
+],
+"ans": 2,
+"why": "thought."
+},
+{
+"q": "Passado de **tell**:",
+"opts": [
+"told",
+"telled",
+"tell"
+],
+"ans": 0,
+"why": "told."
+},
+{
+"q": "Passado de **wear**:",
+"opts": [
+"weared",
+"worn",
+"wore"
+],
+"ans": 2,
+"why": "wore."
+}
+],
+"fix": [
+{
+"wrong": "I thinked so.",
+"right": "I thought so.",
+"why": "thought."
+},
+{
+"wrong": "She telled me.",
+"right": "She told me.",
+"why": "told."
+},
+{
+"wrong": "He weared a hat.",
+"right": "He wore a hat.",
+"why": "wore."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “She teaches math.”",
+"answer": "She taught math.",
+"why": ""
+},
+{
+"prompt": "Passado: “I understand it.”",
+"answer": "I understood it.",
+"why": ""
+},
+{
+"prompt": "Passado: “He tells a story.”",
+"answer": "He told a story.",
+"why": ""
+}
+]
+}

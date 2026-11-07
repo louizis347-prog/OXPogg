@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "certeza excessiva",
+"wrong": "The data prove that coffee causes insomnia.",
+"right": "The data suggest that coffee may be linked to insomnia.",
+"why": "Em português afirmamos “os dados provam”. Em análise acadêmica, em inglês, evita-se certeza: use suggest, may, associate."
+},
+"mcq": [
+{
+"q": "Which verb is the most **cautious**?",
+"opts": [
+"suggests",
+"proves",
+"shows"
+],
+"ans": 0,
+"why": "suggest = cautela; prove é forte demais."
+},
+{
+"q": "“Had the sample been larger, the result ___ clearer.”",
+"opts": [
+"would be",
+"would have been",
+"will be"
+],
+"ans": 1,
+"why": "Had + pp… would have been."
+},
+{
+"q": "Which means **explain a difference**?",
+"opts": [
+"account on",
+"account with",
+"account for"
+],
+"ans": 2,
+"why": "account for = explicar/justificar."
+},
+{
+"q": "Which is an **instruction** in a method?",
+"opts": [
+"Clean the data.",
+"The data are cleaned.",
+"Cleaning data."
+],
+"ans": 0,
+"why": "Imperativo para instruções."
+}
+],
+"fix": [
+{
+"wrong": "The model accounts 40% of the variation.",
+"right": "The model accounts for 40% of the variation.",
+"why": "account for."
+},
+{
+"wrong": "Would the sample been larger, we would trust it.",
+"right": "Had the sample been larger, we would trust it.",
+"why": "Inversão com Had, sem if."
+},
+{
+"wrong": "We must delete the duplicate record, then to check it.",
+"right": "We must delete the duplicate record, then check it.",
+"why": "Sem to após then."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com inversão: “If the sample had been larger, we would have found more.”",
+"answer": "Had the sample been larger, we would have found more.",
+"why": ""
+},
+{
+"prompt": "Reescreva com cautela (may be associated): “Smoking causes this.”",
+"answer": "Smoking may be associated with this.",
+"why": "Outras formas possíveis; use esta."
+},
+{
+"prompt": "Reescreva com account for: “Age explains most of the gap.”",
+"answer": "Age accounts for most of the gap.",
+"why": ""
+}
+]
+}

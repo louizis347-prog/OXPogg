@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "This study analyses what wages fell.",
+"right": "This study analyses how wages fell.",
+"why": "Em textos acadêmicos, o brasileiro confunde what e how em análises. Também it is clear that wages have fallen: método e resultado."
+},
+"mcq": [
+{
+"q": "Método:",
+"opts": [
+"This study analyse wage data.",
+"This study is analysing of wage data.",
+"This study analyses wage data."
+],
+"ans": 2,
+"why": "3ª pessoa."
+},
+{
+"q": "Resultado:",
+"opts": [
+"It is clear that wages have fallen.",
+"It is clear what wages have fallen.",
+"Is clear that wages fell."
+],
+"ans": 0,
+"why": "It is clear that."
+},
+{
+"q": "Wages have **___** since 2010.",
+"opts": [
+"fallen",
+"falled",
+"fell"
+],
+"ans": 0,
+"why": "Particípio."
+},
+{
+"q": "Economy em inglês:",
+"opts": [
+"economy",
+"economical",
+"economic person"
+],
+"ans": 0,
+"why": "Substantivo."
+}
+],
+"fix": [
+{
+"wrong": "The study analyse prices.",
+"right": "The study analyses prices.",
+"why": "-es."
+},
+{
+"wrong": "Is clear that prices rose.",
+"right": "It is clear that prices rose.",
+"why": "It."
+},
+{
+"wrong": "Wages have fell.",
+"right": "Wages have fallen.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva o resultado: “Wages have fallen, clearly.” (It is clear…)",
+"answer": "It is clear that wages have fallen.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “We analyse prices.” (This study…)",
+"answer": "This study analyses prices.",
+"why": ""
+},
+{
+"prompt": "Passado: “The study analyses prices.”",
+"answer": "The study analyzed prices.",
+"why": "Grafia americana."
+}
+]
+}

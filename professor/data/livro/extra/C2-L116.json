@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "registro",
+"wrong": "I will revert to you tomorrow.",
+"right": "I will get back to you tomorrow.",
+"why": "Revert, em inglês, é “voltar a um estado anterior” — não responder; o falso cognato vem de “reverter” usado como “retornar”."
+},
+"mcq": [
+{
+"q": "Respond professionally:",
+"opts": [
+"I will back tomorrow.",
+"I will revert tomorrow.",
+"I will respond tomorrow."
+],
+"ans": 2,
+"why": "respond."
+},
+{
+"q": "A large number:",
+"opts": [
+"so many much",
+"a considerable number of",
+"a lot"
+],
+"ans": 1,
+"why": "Formal."
+},
+{
+"q": "Informal reply:",
+"opts": [
+"I’ll get back to you.",
+"Revert I.",
+"I revert."
+],
+"ans": 0,
+"why": "get back."
+},
+{
+"q": "Revert means…",
+"opts": [
+"go back to a previous state",
+"respond",
+"write"
+],
+"ans": 0,
+"why": "Voltar."
+}
+],
+"fix": [
+{
+"wrong": "I will revert to you soon.",
+"right": "I will get back to you soon.",
+"why": "get back."
+},
+{
+"wrong": "A lot of problem exist.",
+"right": "A lot of problems exist.",
+"why": "Plural."
+},
+{
+"wrong": "I'll respond you.",
+"right": "I’ll respond to you.",
+"why": "respond to."
+}
+],
+"rewrite": [
+{
+"prompt": "Formal, com “a considerable number of”: “A lot of customers complained.”",
+"answer": "A considerable number of customers complained.",
+"why": ""
+},
+{
+"prompt": "Troque “get back to” por “respond to”: “I’ll get back to you.”",
+"answer": "I’ll respond to you.",
+"why": ""
+},
+{
+"prompt": "Passado: “I get back to you.”",
+"answer": "I got back to you.",
+"why": ""
+}
+]
+}

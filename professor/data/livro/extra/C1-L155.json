@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if + would have",
+"wrong": "If the council would have invested, it would still be open.",
+"right": "If the council had invested, it would still be open.",
+"why": "O brasileiro traduz “se tivesse investido” com would have. Na oração com if use past perfect."
+},
+"mcq": [
+{
+"q": "“___ the sample been larger, we would trust it.”",
+"opts": [
+"Would",
+"Did",
+"Had"
+],
+"ans": 2,
+"why": "Inversão com Had."
+},
+{
+"q": "“Her team, ___ were volunteers,”",
+"opts": [
+"most of whom",
+"most of who",
+"that"
+],
+"ans": 0,
+"why": "most of whom."
+},
+{
+"q": "Correct?",
+"opts": [
+"He singled out it.",
+"He singled it out.",
+"He out singled it."
+],
+"ans": 1,
+"why": "Pronome no meio."
+},
+{
+"q": "“Failed to ___ the fall in sales”",
+"opts": [
+"account",
+"account on",
+"account for"
+],
+"ans": 2,
+"why": "account for."
+}
+],
+"fix": [
+{
+"wrong": "If the council would have invested, it would still be open.",
+"right": "If the council had invested, it would still be open.",
+"why": "Sem would no if."
+},
+{
+"wrong": "The woman whose her research is new spoke.",
+"right": "The woman whose research is new spoke.",
+"why": "Sem possessivo duplo."
+},
+{
+"wrong": "They accounted the loss.",
+"right": "They accounted for the loss.",
+"why": "for."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com inversão: “If I were you, I would sign.” (Were…)",
+"answer": "Were I you, I would sign.",
+"why": ""
+},
+{
+"prompt": "Reescreva com account for: “Two firms explain most losses.”",
+"answer": "Two firms account for most losses.",
+"why": ""
+},
+{
+"prompt": "Una com whose: “The town was flooded. Its mayor resigned.” (The town whose…)",
+"answer": "The town whose mayor resigned was flooded.",
+"why": ""
+}
+]
+}

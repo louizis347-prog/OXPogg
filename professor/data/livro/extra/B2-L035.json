@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "In June she will finish her thesis already.",
+"right": "By June she will have finished her thesis.",
+"why": "Português diz “em junho ela termina”. Para prazo, o inglês usa by + will have + particípio."
+},
+"mcq": [
+{
+"q": "This time next week, I **___** flying to Lima.",
+"opts": [
+"will be",
+"will have",
+"will"
+],
+"ans": 0,
+"why": "Em curso."
+},
+{
+"q": "By Friday, they **___** repaired the roof.",
+"opts": [
+"will have",
+"will be",
+"will"
+],
+"ans": 0,
+"why": "Concluído."
+},
+{
+"q": "Marta **___** have seen him; she was abroad.",
+"opts": [
+"can’t",
+"needn’t",
+"must"
+],
+"ans": 0,
+"why": "Can’t have."
+},
+{
+"q": "The keys are gone. Someone **___** taken them.",
+"opts": [
+"can have",
+"must have",
+"must"
+],
+"ans": 1,
+"why": "Must have."
+}
+],
+"fix": [
+{
+"wrong": "They will have repair the roof.",
+"right": "They will have repaired the roof.",
+"why": "Particípio."
+},
+{
+"wrong": "Marta can’t has seen him.",
+"right": "Marta can’t have seen him.",
+"why": "Have."
+},
+{
+"wrong": "I will have flying to Lima.",
+"right": "I will be flying to Lima.",
+"why": "Em curso."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I fly to Lima this time next week.” (will be)",
+"answer": "This time next week I will be flying to Lima.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They repair the roof by Friday.” (will have)",
+"answer": "They will have repaired the roof by Friday.",
+"why": ""
+},
+{
+"prompt": "Dedução: “It’s impossible that she saw him.” (can’t have)",
+"answer": "She can’t have seen him.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "say ≠ tell",
+"wrong": "She told that she was tired.",
+"right": "She said that she was tired.",
+"why": "Em português \"disse (a mim)\" não exige objeto. Em inglês tell pede pessoa (told me); sem pessoa use said."
+},
+"mcq": [
+{
+"q": "Complete: He **promised ___** call.",
+"opts": [
+"that to",
+"to",
+"for"
+],
+"ans": 1,
+"why": "promise to + verbo."
+},
+{
+"q": "Qual é correta?",
+"opts": [
+"She warned that not go.",
+"She warned us for not go.",
+"She warned us not to go."
+],
+"ans": 2,
+"why": "warn somebody (not) to."
+},
+{
+"q": "\"insist on\" é seguido de...",
+"opts": [
+"-ing",
+"base",
+"to + base"
+],
+"ans": 0,
+"why": "Preposição + -ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He admitted to that he was late.",
+"He admitted me he was late.",
+"He admitted that he was late."
+],
+"ans": 2,
+"why": "admit that + oração."
+}
+],
+"fix": [
+{
+"wrong": "He admitted to take the money.",
+"right": "He admitted taking the money.",
+"why": "admit + -ing."
+},
+{
+"wrong": "She denied that to know him.",
+"right": "She denied knowing him.",
+"why": "deny + -ing."
+},
+{
+"wrong": "The manager said me to wait.",
+"right": "The manager told me to wait.",
+"why": "tell + pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com said: “‘I am tired,’ Ana said.”",
+"answer": "Ana said that she was tired.",
+"why": ""
+},
+{
+"prompt": "Reescreva com told: “‘Wait here,’ he said to me.”",
+"answer": "He told me to wait there.",
+"why": ""
+},
+{
+"prompt": "Reescreva com admitted: “‘I broke it,’ Leo said.”",
+"answer": "Leo admitted breaking it.",
+"why": ""
+}
+]
+}

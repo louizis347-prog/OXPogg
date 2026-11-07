@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hardly = difícil?",
+"wrong": "Hardly we had arrived when it rained.",
+"right": "Hardly had we arrived when it rained.",
+"why": "“Hardly” lembra “dificilmente/duro”, e o brasileiro esquece a inversão e usa before/than. Em inglês: Hardly + had + sujeito + pp … when."
+},
+"mcq": [
+{
+"q": "Hardly had the doors opened ___ a crowd rushed in.",
+"opts": [
+"than",
+"that",
+"when"
+],
+"ans": 2,
+"why": "Hardly…when."
+},
+{
+"q": "Scarcely had we left ___ it rained.",
+"opts": [
+"when",
+"than",
+"as if"
+],
+"ans": 0,
+"why": "Scarcely…when."
+},
+{
+"q": "No sooner had it begun ___ it stopped.",
+"opts": [
+"then",
+"than",
+"when"
+],
+"ans": 1,
+"why": "No sooner…than."
+},
+{
+"q": "Hardly means…",
+"opts": [
+"very hard",
+"hardly ever",
+"almost not"
+],
+"ans": 2,
+"why": "Quase não; falso amigo de “duramente”."
+}
+],
+"fix": [
+{
+"wrong": "Hardly we had left when it rained.",
+"right": "Hardly had we left when it rained.",
+"why": "Inversão."
+},
+{
+"wrong": "Hardly had we left than it rained.",
+"right": "Hardly had we left when it rained.",
+"why": "when com hardly."
+},
+{
+"wrong": "No sooner had we left when it rained.",
+"right": "No sooner had we left than it rained.",
+"why": "than com no sooner."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Hardly: “We had just left when it rained.”",
+"answer": "Hardly had we left when it rained.",
+"why": ""
+},
+{
+"prompt": "Comece com No sooner: “We had just left and it rained.”",
+"answer": "No sooner had we left than it rained.",
+"why": ""
+},
+{
+"prompt": "Comece com Scarcely: “He had just sat down when she called.”",
+"answer": "Scarcely had he sat down when she called.",
+"why": ""
+}
+]
+}

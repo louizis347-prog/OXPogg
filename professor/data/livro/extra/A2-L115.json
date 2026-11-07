@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Present Perfect",
+"wrong": "She has went to Rome.",
+"right": "She has gone to Rome.",
+"why": "O aluno mistura passado e particípio dos irregulares; em português o particípio é regular ('ido')."
+},
+"mcq": [
+{
+"q": "We've lived here ___ 2018.",
+"opts": [
+"from",
+"since",
+"for"
+],
+"ans": 1,
+"why": "since."
+},
+{
+"q": "This is the cake ___ I made.",
+"opts": [
+"who",
+"that",
+"where"
+],
+"ans": 1,
+"why": "that."
+},
+{
+"q": "If you hurry, you ___ catch it.",
+"opts": [
+"are",
+"would",
+"will"
+],
+"ans": 2,
+"why": "will."
+},
+{
+"q": "I'm good ___ cooking.",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 2,
+"why": "at."
+}
+],
+"fix": [
+{
+"wrong": "I have wrote it.",
+"right": "I have written it.",
+"why": "particípio."
+},
+{
+"wrong": "He have been there.",
+"right": "He has been there.",
+"why": "has."
+},
+{
+"wrong": "Thanks for call.",
+"right": "Thanks for calling.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Present perfect: “They go there.”",
+"answer": "They have gone there.",
+"why": ""
+},
+{
+"prompt": "Una com unless: “If you don't hurry, you'll miss it.”",
+"answer": "Unless you hurry, you'll miss it.",
+"why": ""
+},
+{
+"prompt": "Junte com that: “I lost the book. You gave it.”",
+"answer": "I lost the book that you gave.",
+"why": ""
+}
+]
+}

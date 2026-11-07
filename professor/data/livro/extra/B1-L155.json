@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "revisão unidade 9",
+"wrong": "Do you know where is my seat? She is good in chess. The man who he called me is rude.",
+"right": "Do you know where my seat is? She is good at chess. The man who called me is rude.",
+"why": "Revisão da unidade 9: pergunta indireta com ordem afirmativa, preposição at e who sem pronome duplicado. O português permite a ordem direta e o pronome repetido."
+},
+"mcq": [
+{
+"q": "Could you tell me where ___ now?",
+"opts": [
+"does he live",
+"he lives",
+"lives he"
+],
+"ans": 1,
+"why": "Ordem."
+},
+{
+"q": "She is keen ___ painting.",
+"opts": [
+"in",
+"at to",
+"on"
+],
+"ans": 2,
+"why": "keen on."
+},
+{
+"q": "People ___ are bilingual earn more.",
+"opts": [
+"which",
+"where",
+"who"
+],
+"ans": 2,
+"why": "who."
+},
+{
+"q": "I am bad ___ remembering names.",
+"opts": [
+"in",
+"at",
+"on"
+],
+"ans": 1,
+"why": "at."
+}
+],
+"fix": [
+{
+"wrong": "Tell me what does it mean.",
+"right": "Tell me what it means.",
+"why": "Ordem."
+},
+{
+"wrong": "He is bad in singing.",
+"right": "He is bad at singing.",
+"why": "at."
+},
+{
+"wrong": "The tool that it helps is free.",
+"right": "The tool that helps is free.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne indireta: “Where is my seat?” (Do you know...)",
+"answer": "Do you know where my seat is?",
+"why": ""
+},
+{
+"prompt": "Una com who: “I met a woman. She is bilingual.”",
+"answer": "I met a woman who is bilingual.",
+"why": ""
+},
+{
+"prompt": "Reescreva com good at: “She plays chess well.”",
+"answer": "She is good at playing chess.",
+"why": ""
+}
+]
+}

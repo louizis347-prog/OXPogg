@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "which/who",
+"wrong": "The book who I bought is great.",
+"right": "The book which I bought is great.",
+"why": "Em português \"que\" serve para pessoas e coisas. Em inglês, who é para pessoas e which para coisas."
+},
+"mcq": [
+{
+"q": "Em qual frase that é impossível?",
+"opts": [
+"My car, which is old, ...",
+"The car that I bought...",
+"The car which I bought..."
+],
+"ans": 0,
+"why": "Depois de vírgula, nunca that."
+},
+{
+"q": "whose indica...",
+"opts": [
+"lugar",
+"posse",
+"tempo"
+],
+"ans": 1,
+"why": "whose = de quem."
+},
+{
+"q": "Qual NÃO é correta?",
+"opts": [
+"Mr. Lee, who is kind, helped.",
+"The man who is kind helped.",
+"Mr. Lee, that is kind, helped."
+],
+"ans": 2,
+"why": "that não vem após vírgula."
+},
+{
+"q": "Qual usa vírgulas corretamente?",
+"opts": [
+"Rio which is hot is lively.",
+"Rio, which is hot, is lively.",
+"Rio, that is hot, is lively."
+],
+"ans": 1,
+"why": "Não-restritiva: vírgulas + which."
+}
+],
+"fix": [
+{
+"wrong": "The cake who I made is gone.",
+"right": "The cake which I made is gone.",
+"why": "which para coisas."
+},
+{
+"wrong": "Paris, that is beautiful, is big.",
+"right": "Paris, which is beautiful, is big.",
+"why": "Sem that."
+},
+{
+"wrong": "The man whose his car was stolen called.",
+"right": "The man whose car was stolen called.",
+"why": "Sem his."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com whose: “I met a boy. His dog is huge.”",
+"answer": "I met a boy whose dog is huge.",
+"why": ""
+},
+{
+"prompt": "Una com vírgulas: “Anna is my cousin. She lives in Paris.” (who)",
+"answer": "Anna, who lives in Paris, is my cousin.",
+"why": ""
+},
+{
+"prompt": "Una com which: “London is huge. It has many parks.”",
+"answer": "London, which has many parks, is huge.",
+"why": ""
+}
+]
+}

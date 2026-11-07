@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "negativa com do",
+"wrong": "I don’t have got a pen.",
+"right": "I haven’t got a pen.",
+"why": "Have got não usa do; a negativa é haven’t got/hasn’t got."
+},
+"mcq": [
+{
+"q": "Negative: “She has got a pen.”",
+"opts": [
+"She doesn’t got a pen.",
+"She not has got a pen.",
+"She hasn’t got a pen."
+],
+"ans": 2,
+"why": "Hasn’t got."
+},
+{
+"q": "Question: “You have got a cat.”",
+"opts": [
+"Have you got a cat?",
+"Do you got a cat?",
+"You have got a cat?"
+],
+"ans": 0,
+"why": "Inversão."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They has got a dog.",
+"They’ve got a dog.",
+"They is got a dog."
+],
+"ans": 1,
+"why": "They’ve."
+},
+{
+"q": "Short answer: Has she got a car?",
+"opts": [
+"Yes, she is.",
+"Yes, she got.",
+"Yes, she has."
+],
+"ans": 2,
+"why": "Has."
+}
+],
+"fix": [
+{
+"wrong": "I don’t have got a pen.",
+"right": "I haven’t got a pen.",
+"why": "Sem do."
+},
+{
+"wrong": "Do you got a phone?",
+"right": "Have you got a phone?",
+"why": "Inversão."
+},
+{
+"wrong": "He has got a dog? Yes, he have.",
+"right": "Has he got a dog? Yes, he has.",
+"why": "Resposta curta."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com has got: “She has a dog.”",
+"answer": "She has got a dog.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You have got a car.”",
+"answer": "Have you got a car?",
+"why": ""
+},
+{
+"prompt": "Negue com haven’t: “We have got time.”",
+"answer": "We haven’t got time.",
+"why": ""
+}
+]
+}

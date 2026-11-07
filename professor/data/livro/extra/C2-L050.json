@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in accordance with",
+"wrong": "The contract was signed in accordance to the law.",
+"right": "The contract was signed in accordance with the law.",
+"why": "Em português “de acordo com” leva a/com. O aluno copia to. Em inglês, in accordance with."
+},
+"mcq": [
+{
+"q": "“In triplicate” means...",
+"opts": [
+"three times",
+"third",
+"in three copies"
+],
+"ans": 2,
+"why": "Três vias."
+},
+{
+"q": "“Notwithstanding the foregoing” means...",
+"opts": [
+"despite what was just said",
+"as above",
+"therefore"
+],
+"ans": 0,
+"why": "Apesar do anterior."
+},
+{
+"q": "“Shall be deemed” means...",
+"opts": [
+"may refuse",
+"will be treated as",
+"must pay"
+],
+"ans": 1,
+"why": "Considerado."
+},
+{
+"q": "In legal text, **shall** expresses...",
+"opts": [
+"past",
+"wish",
+"obligation"
+],
+"ans": 2,
+"why": "Obrigação."
+}
+],
+"fix": [
+{
+"wrong": "The notice shall deemed received on day two.",
+"right": "The notice shall be deemed received on day two.",
+"why": "be."
+},
+{
+"wrong": "Notwithstanding of the foregoing, the clause applies.",
+"right": "Notwithstanding the foregoing, the clause applies.",
+"why": "Sem of."
+},
+{
+"wrong": "The agreement is made in triplicates.",
+"right": "The agreement is made in triplicate.",
+"why": "Fixo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in accordance with: “According to the law, the notice is valid.”",
+"answer": "In accordance with the law, the notice is valid.",
+"why": ""
+},
+{
+"prompt": "Reescreva com shall be deemed: “The notice will be treated as received.”",
+"answer": "The notice shall be deemed received.",
+"why": ""
+},
+{
+"prompt": "Reescreva com notwithstanding: “Despite the foregoing, the clause applies.”",
+"answer": "Notwithstanding the foregoing, the clause applies.",
+"why": ""
+}
+]
+}

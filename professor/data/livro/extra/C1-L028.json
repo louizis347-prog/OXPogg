@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make out",
+"wrong": "I can’t make the text out.",
+"right": "I can’t make out the text.",
+"why": "Em português não existe partícula; o brasileiro tenta “fazer” literal. Make out = distinguir; make up = inventar."
+},
+"mcq": [
+{
+"q": "I can’t ___ the text. (read)",
+"opts": [
+"make out",
+"make up",
+"make off"
+],
+"ans": 0,
+"why": "make out."
+},
+{
+"q": "He ___ a story. (invented)",
+"opts": [
+"made over",
+"made up",
+"made out"
+],
+"ans": 1,
+"why": "made up."
+},
+{
+"q": "We made ___ for lost time.",
+"opts": [
+"out",
+"off",
+"up"
+],
+"ans": 2,
+"why": "make up for."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I made up an excuse.",
+"I made an excuse up of.",
+"I made upon an excuse."
+],
+"ans": 0,
+"why": "make up."
+}
+],
+"fix": [
+{
+"wrong": "He made an excuse.",
+"right": "He made up an excuse.",
+"why": "make up."
+},
+{
+"wrong": "I can’t make the words out in the dark.",
+"right": "I can’t make out the words in the dark.",
+"why": "make out."
+},
+{
+"wrong": "We made out for the delay.",
+"right": "We made up for the delay.",
+"why": "make up for."
+}
+],
+"rewrite": [
+{
+"prompt": "Use make up: “He invented an excuse.”",
+"answer": "He made up an excuse.",
+"why": ""
+},
+{
+"prompt": "Use make out: “I can barely distinguish the text.”",
+"answer": "I can barely make out the text.",
+"why": ""
+},
+{
+"prompt": "Use make up for: “We compensated the delay.”",
+"answer": "We made up for the delay.",
+"why": ""
+}
+]
+}

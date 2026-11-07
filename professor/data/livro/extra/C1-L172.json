@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo futuro",
+"wrong": "By June, we will be negotiating for two years.",
+"right": "By June, we will have been negotiating for two years.",
+"why": "Em português “em junho estaremos negociando há dois anos” usa futuro simples + há. Em inglês, para duração até um ponto futuro, use will have been + -ing."
+},
+"mcq": [
+{
+"q": "“By June, we ___ for two years.”",
+"opts": [
+"will negotiate",
+"will have been negotiating",
+"are negotiating"
+],
+"ans": 1,
+"why": "Duração até o futuro."
+},
+{
+"q": "Negative form:",
+"opts": [
+"won’t been sleeping",
+"don’t have been sleeping",
+"won’t have been sleeping"
+],
+"ans": 2,
+"why": "won’t have been + -ing."
+},
+{
+"q": "Question: ___ you have been working?",
+"opts": [
+"Will",
+"Do",
+"Have"
+],
+"ans": 0,
+"why": "Will + sujeito + have been."
+},
+{
+"q": "A time marker typical here:",
+"opts": [
+"yesterday",
+"by + time",
+"ago"
+],
+"ans": 1,
+"why": "by + data."
+}
+],
+"fix": [
+{
+"wrong": "By May, I will have been wait for hours.",
+"right": "By May, I will have been waiting for hours.",
+"why": "-ing."
+},
+{
+"wrong": "By noon, we will been negotiating for ten hours.",
+"right": "By noon, we will have been negotiating for ten hours.",
+"why": "have."
+},
+{
+"wrong": "Will you have been sleep?",
+"right": "Will you have been waiting?",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “By June, we negotiate for two years.” (Future Perfect Continuous)",
+"answer": "By June, we will have been negotiating for two years.",
+"why": ""
+},
+{
+"prompt": "Negativo: “I will have been sleeping much.”",
+"answer": "I won’t have been sleeping much.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You will have been working for hours.”",
+"answer": "Will you have been working for hours?",
+"why": ""
+}
+]
+}

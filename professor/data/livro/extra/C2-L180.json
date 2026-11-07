@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Not only must the board explain, but also it explains late.",
+"right": "Not only must the board explain, but it must also explain early.",
+"why": "Português não inverte após “não só”; inglês exige aux antes do sujeito."
+},
+"mcq": [
+{
+"q": "Pick the emphasis form for a surprise:",
+"opts": [
+"What surprised me was the silence.",
+"Surprised what me was.",
+"It surprised me was silence."
+],
+"ans": 0,
+"why": "Pseudo-cleft."
+},
+{
+"q": "Negative inversion with auxiliary:",
+"opts": [
+"Never she has lied.",
+"Never has she lied.",
+"Never has lied she."
+],
+"ans": 1,
+"why": "has she."
+},
+{
+"q": "For emphasis on who:",
+"opts": [
+"It is the board decides.",
+"It is the board that decides.",
+"The board is that decides."
+],
+"ans": 1,
+"why": "It is… that."
+},
+{
+"q": "Not only will it fail, ___",
+"opts": [
+"also but cost.",
+"but it will also cost us.",
+"but also will cost it."
+],
+"ans": 1,
+"why": "Paralelo."
+}
+],
+"fix": [
+{
+"wrong": "Never she has lied.",
+"right": "Never has she lied.",
+"why": "Inversão."
+},
+{
+"wrong": "What surprised me were the silence.",
+"right": "What surprised me was the silence.",
+"why": "was."
+},
+{
+"wrong": "Not only the board must explain.",
+"right": "Not only must the board explain.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “She has never lied.”",
+"answer": "Never has she lied.",
+"why": ""
+},
+{
+"prompt": "Pseudoclivada: “The silence surprised me.”",
+"answer": "What surprised me was the silence.",
+"why": ""
+},
+{
+"prompt": "Clivada: “The board decides.”",
+"answer": "It is the board that decides.",
+"why": ""
+}
+]
+}

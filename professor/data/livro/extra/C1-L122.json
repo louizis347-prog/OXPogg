@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "said to",
+"wrong": "It is said the firm to be rich.",
+"right": "The firm is said to be rich.",
+"why": "O brasileiro mistura as duas estruturas. It is said that + oração; ou sujeito + is said to + base."
+},
+"mcq": [
+{
+"q": "It is said ___ the firm is rich.",
+"opts": [
+"for",
+"that",
+"to"
+],
+"ans": 1,
+"why": "that."
+},
+{
+"q": "The firm is said ___ rich.",
+"opts": [
+"that be",
+"being",
+"to be"
+],
+"ans": 2,
+"why": "to be."
+},
+{
+"q": "Costs are taken ___ account.",
+"opts": [
+"into",
+"in",
+"for"
+],
+"ans": 0,
+"why": "into."
+},
+{
+"q": "O uso correto da passiva de relato é…",
+"opts": [
+"They is believed…",
+"It is believed that…",
+"It believes that…"
+],
+"ans": 1,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "It is said the firm to be rich.",
+"right": "It is said that the firm is rich.",
+"why": "that."
+},
+{
+"wrong": "The firm is said that be rich.",
+"right": "The firm is said to be rich.",
+"why": "to be."
+},
+{
+"wrong": "Wages are taken in account.",
+"right": "Wages are taken into account.",
+"why": "into."
+}
+],
+"rewrite": [
+{
+"prompt": "Relato com it: “People say the firm is rich.”",
+"answer": "It is said that the firm is rich.",
+"why": ""
+},
+{
+"prompt": "Relato com to: “People believe the firm is rich.”",
+"answer": "The firm is believed to be rich.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Firms take wages into account.”",
+"answer": "Wages are taken into account.",
+"why": ""
+}
+]
+}

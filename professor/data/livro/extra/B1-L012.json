@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "entrevista: do-support",
+"wrong": "Why you decided to teach?",
+"right": "Why did you decide to teach?",
+"why": "Em português 'por que você decidiu' mantém a ordem da afirmação; em inglês a pergunta pede did + sujeito + base."
+},
+"mcq": [
+{
+"q": "Where ___ you study?",
+"opts": [
+"did",
+"do you",
+"were"
+],
+"ans": 0,
+"why": "did."
+},
+{
+"q": "How long ___ you been a teacher?",
+"opts": [
+"have",
+"did",
+"are"
+],
+"ans": 0,
+"why": "have."
+},
+{
+"q": "Who ___ you most at school?",
+"opts": [
+"inspired",
+"did inspire",
+"inspire"
+],
+"ans": 0,
+"why": "sujeito: sem did."
+},
+{
+"q": "Qual pergunta é correta?",
+"opts": [
+"What subject do you teach?",
+"What subject you teach?",
+"What subject do you teaches?"
+],
+"ans": 0,
+"why": "do."
+}
+],
+"fix": [
+{
+"wrong": "How long you work here?",
+"right": "How long have you worked here?",
+"why": "present perfect."
+},
+{
+"wrong": "Where you studied?",
+"right": "Where did you study?",
+"why": "did."
+},
+{
+"wrong": "What does you teach?",
+"right": "What do you teach?",
+"why": "do."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “You studied abroad.” com where",
+"answer": "Where did you study abroad?",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She has taught for ten years.” com how long",
+"answer": "How long has she taught?",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You teach math.” com what",
+"answer": "What do you teach?",
+"why": ""
+}
+]
+}

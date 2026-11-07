@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva em avisos",
+"wrong": "A mistake did in your order. It have been corrected. A new package will send.",
+"right": "A mistake was made in your order. It has been corrected. A new package will be sent.",
+"why": "Em português “houve um erro” e “será enviado um pacote” usam voz impessoal. Em inglês a passiva exige be + particípio; o brasileiro omite o be (will send) ou usa have no lugar de has been."
+},
+"mcq": [
+{
+"q": "We apologize: a mistake ___ in your bill.",
+"opts": [
+"was made",
+"did",
+"made"
+],
+"ans": 0,
+"why": "Passiva no passado."
+},
+{
+"q": "To inform that it is fixed: “It ___ corrected.”",
+"opts": [
+"have been",
+"has been",
+"is being"
+],
+"ans": 1,
+"why": "Present perfect passivo."
+},
+{
+"q": "Future passive: “Your refund ___ tomorrow.”",
+"opts": [
+"will send",
+"will be send",
+"will be sent"
+],
+"ans": 2,
+"why": "will be + pp."
+},
+{
+"q": "Which is a correct passive?",
+"opts": [
+"The form lost.",
+"The form was lost.",
+"The form was lose."
+],
+"ans": 1,
+"why": "was + pp."
+}
+],
+"fix": [
+{
+"wrong": "Your parcel will deliver on Monday.",
+"right": "Your parcel will be delivered on Monday.",
+"why": "will be + pp."
+},
+{
+"wrong": "The error have been fixed.",
+"right": "The error has been fixed.",
+"why": "error = it, has."
+},
+{
+"wrong": "The invoice was send twice.",
+"right": "The invoice was sent twice.",
+"why": "sent."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “We will send a new package.”",
+"answer": "A new package will be sent.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “We have corrected the error.”",
+"answer": "The error has been corrected.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Someone made a mistake.”",
+"answer": "A mistake was made.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "revisão (passiva, decide to)",
+"wrong": "Cars are build here. They refused paying. I had cleaned my sofa by a company.",
+"right": "Cars are built here. They refused to pay. I had my sofa cleaned by a company.",
+"why": "Revisão da unidade 7: o brasileiro esquece o particípio da passiva, usa -ing depois de refuse e coloca o verbo no lugar errado em have + pp. Em inglês: be + pp; refuse + to; have + obj + pp."
+},
+"mcq": [
+{
+"q": "Phones ___ here.",
+"opts": [
+"repair",
+"are repair",
+"are repaired"
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "They refused ___.",
+"opts": [
+"to pay",
+"paying",
+"pay"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "I had my sofa ___.",
+"opts": [
+"cleaned",
+"clean",
+"cleaning"
+],
+"ans": 0,
+"why": "pp."
+},
+{
+"q": "He ___ calm during the storm.",
+"opts": [
+"did",
+"kept",
+"made to"
+],
+"ans": 1,
+"why": "keep calm."
+}
+],
+"fix": [
+{
+"wrong": "Roads are close at night.",
+"right": "Roads are closed at night.",
+"why": "pp."
+},
+{
+"wrong": "We agreed meet at six.",
+"right": "We agreed to meet at six.",
+"why": "to."
+},
+{
+"wrong": "She had cut her hair at salon.",
+"right": "She had her hair cut at a salon.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They close the roads at night.”",
+"answer": "The roads are closed at night.",
+"why": ""
+},
+{
+"prompt": "Reescreva com refuse: “He said no to paying.”",
+"answer": "He refused to pay.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “A dentist checked my teeth.” (I had...)",
+"answer": "I had my teeth checked.",
+"why": ""
+}
+]
+}

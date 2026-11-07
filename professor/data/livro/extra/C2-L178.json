@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo de relato",
+"wrong": "Wittgenstein says that language is a game and abandons the theory.",
+"right": "Wittgenstein contends that language is a game and abandons the theory.",
+"why": "Português usa “diz” em tudo; em inglês o verbo (contends, suggests, abandons) mostra a postura do autor."
+},
+"mcq": [
+{
+"q": "Strong stance:",
+"opts": [
+"contends that",
+"tells that",
+"says that"
+],
+"ans": 0,
+"why": "contends."
+},
+{
+"q": "Source:",
+"opts": [
+"By according to W.",
+"According to Wittgenstein, …",
+"According Wittgenstein, …"
+],
+"ans": 1,
+"why": "According to."
+},
+{
+"q": "Tentative verb:",
+"opts": [
+"insists",
+"demands",
+"suggests"
+],
+"ans": 2,
+"why": "suggests."
+},
+{
+"q": "Abandons means…",
+"opts": [
+"gives up",
+"builds",
+"copies"
+],
+"ans": 0,
+"why": "Abandona."
+}
+],
+"fix": [
+{
+"wrong": "According Wittgenstein, meaning is use.",
+"right": "According to Wittgenstein, meaning is use.",
+"why": "to."
+},
+{
+"wrong": "He contend that meaning is use.",
+"right": "He contends that meaning is use.",
+"why": "-s."
+},
+{
+"wrong": "She abandon the theory.",
+"right": "She abandons the theory.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com contends: “W argues strongly that meaning is use.”",
+"answer": "Wittgenstein contends that meaning is use.",
+"why": ""
+},
+{
+"prompt": "Reescreva com According to: “W says meaning is use.”",
+"answer": "According to Wittgenstein, meaning is use.",
+"why": ""
+},
+{
+"prompt": "Passado: “W abandons the theory.”",
+"answer": "Wittgenstein abandoned the theory.",
+"why": ""
+}
+]
+}

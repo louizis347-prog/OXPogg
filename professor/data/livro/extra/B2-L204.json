@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "made a course",
+"wrong": "I did a course last year to improve my skills.",
+"right": "I took a course last year to improve my skills.",
+"why": "Em português \"fiz um curso\"; em inglês take a course, não do."
+},
+"mcq": [
+{
+"q": "Qual é correta?",
+"opts": [
+"He is supposed to attend.",
+"He supposed attend.",
+"He is suppose attend."
+],
+"ans": 0,
+"why": "supposed to."
+},
+{
+"q": "Complete: She is looking **___** a job.",
+"opts": [
+"by",
+"for",
+"to"
+],
+"ans": 1,
+"why": "look for."
+},
+{
+"q": "Currently =",
+"opts": [
+"na verdade",
+"às vezes",
+"atualmente"
+],
+"ans": 2,
+"why": "currently."
+},
+{
+"q": "Complete: I took a **___**.",
+"opts": [
+"work",
+"course",
+"curriculum"
+],
+"ans": 1,
+"why": "take a course."
+}
+],
+"fix": [
+{
+"wrong": "I have a work.",
+"right": "I have a job.",
+"why": "job."
+},
+{
+"wrong": "She is expecting to be on time.",
+"right": "She is expected to be on time.",
+"why": "passiva."
+},
+{
+"wrong": "The company offered me an training.",
+"right": "The company offered me training.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com have/get done: “Someone checked my CV.”",
+"answer": "I had my CV checked.",
+"why": ""
+},
+{
+"prompt": "Reescreva com supposed to: “You must arrive early.”",
+"answer": "You are supposed to arrive early.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It's hard but fun.”",
+"answer": "It is hard; however, it is fun.",
+"why": ""
+}
+]
+}

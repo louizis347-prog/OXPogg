@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Next year I will have move to Chile.",
+"right": "Next year I will move to Chile.",
+"why": "Will have + particípio marca conclusão até um momento; para uma decisão ou fato futuro simples usa-se will + base."
+},
+"mcq": [
+{
+"q": "By 2030, Rui **___** retired.",
+"opts": [
+"has",
+"will have",
+"will"
+],
+"ans": 1,
+"why": "Concluído."
+},
+{
+"q": "Next year, Ana **___** to Chile.",
+"opts": [
+"will have move",
+"moves",
+"will move"
+],
+"ans": 2,
+"why": "Fato futuro."
+},
+{
+"q": "Qual indica conclusão até um prazo?",
+"opts": [
+"will build",
+"builds",
+"will have built"
+],
+"ans": 2,
+"why": "Will have."
+},
+{
+"q": "Decisão no momento: “I’m cold.” “I **___** close the window.”",
+"opts": [
+"’ll",
+"’m",
+"’ll have"
+],
+"ans": 0,
+"why": "Will."
+}
+],
+"fix": [
+{
+"wrong": "By December they will have build the bridge.",
+"right": "By December they will have built the bridge.",
+"why": "Particípio."
+},
+{
+"wrong": "Next spring she will have start a course.",
+"right": "Next spring she will start a course.",
+"why": "Fato futuro."
+},
+{
+"wrong": "By noon I will has finished.",
+"right": "By noon I will have finished.",
+"why": "Have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “They build the bridge by December.” (will have)",
+"answer": "They will have built the bridge by December.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She starts a course next spring.” (will)",
+"answer": "She will start a course next spring.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Rui will have retired.”",
+"answer": "Rui won’t have retired.",
+"why": ""
+}
+]
+}

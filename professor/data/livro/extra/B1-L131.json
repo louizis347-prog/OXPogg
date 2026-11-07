@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "relato cultural",
+"wrong": "I experienced a tea ceremony. The host said me that people were interested of it.",
+"right": "I experienced a tea ceremony. The host said that people were interested in it.",
+"why": "Experience não é só “experiência”: em inglês também é verbo (viver algo). E interested leva in (não of); e say não leva pessoa."
+},
+"mcq": [
+{
+"q": "I ___ a tea ceremony.",
+"opts": [
+"experimented",
+"assisted",
+"experienced"
+],
+"ans": 2,
+"why": "Falso cognato."
+},
+{
+"q": "The host said ___ it was old.",
+"opts": [
+"me that",
+"that",
+"to"
+],
+"ans": 1,
+"why": "say that."
+},
+{
+"q": "People were interested ___ it.",
+"opts": [
+"in",
+"of",
+"on"
+],
+"ans": 0,
+"why": "in."
+},
+{
+"q": "Reporting uses…",
+"opts": [
+"said me",
+"said that",
+"said to that"
+],
+"ans": 1,
+"why": "said that."
+}
+],
+"fix": [
+{
+"wrong": "I assisted a tea ceremony.",
+"right": "I attended a tea ceremony.",
+"why": "assist = ajudar."
+},
+{
+"wrong": "He said me it was nice.",
+"right": "He said it was nice.",
+"why": "say sem pessoa."
+},
+{
+"wrong": "They are interested of art.",
+"right": "They are interested in art.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: Host: “Tea is served warm.” (The host said...)",
+"answer": "The host said that tea was served warm.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “People are interested in the show.”",
+"answer": "People were interested in the show.",
+"why": ""
+},
+{
+"prompt": "Troque assisted por attended: “I assisted a concert.”",
+"answer": "I attended a concert.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal + to",
+"wrong": "She might to be late.",
+"right": "She might be late.",
+"why": "Em português dizemos “pode estar atrasada” sem problema, mas o brasileiro tende a inserir to após modais. Em inglês, modais (should, must, might, could) vêm direto com o verbo base."
+},
+"mcq": [
+{
+"q": "She ___ be late.",
+"opts": [
+"might to",
+"might",
+"mights"
+],
+"ans": 1,
+"why": "Sem to."
+},
+{
+"q": "They have ___ waiting for an hour.",
+"opts": [
+"be",
+"being",
+"been"
+],
+"ans": 2,
+"why": "have been + -ing."
+},
+{
+"q": "We need to ___ a decision.",
+"opts": [
+"make",
+"do",
+"take"
+],
+"ans": 0,
+"why": "make a decision."
+},
+{
+"q": "You ___ see a doctor.",
+"opts": [
+"should to",
+"shoulds",
+"should"
+],
+"ans": 2,
+"why": "should + base."
+}
+],
+"fix": [
+{
+"wrong": "You must to go.",
+"right": "You must go.",
+"why": "Sem to."
+},
+{
+"wrong": "I am waiting since noon.",
+"right": "I have been waiting since noon.",
+"why": "PPC."
+},
+{
+"wrong": "She did a decision.",
+"right": "She made a decision.",
+"why": "make."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com might: “Perhaps it rains.”",
+"answer": "It might rain.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have been: “I wait for an hour.”",
+"answer": "I have been waiting for an hour.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “We make a list.”",
+"answer": "We made a list.",
+"why": ""
+}
+]
+}

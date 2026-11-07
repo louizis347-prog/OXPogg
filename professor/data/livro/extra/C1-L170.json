@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "despite + oração",
+"wrong": "Despite she had no training, she led the delegation.",
+"right": "Although she had no training, she led the delegation.",
+"why": "Em português “apesar de ela não ter” aceita infinitivo flexionado; o aluno usa despite + sujeito + verbo. Em inglês, despite exige substantivo ou -ing."
+},
+"mcq": [
+{
+"q": "“Young ___ she was, she led.”",
+"opts": [
+"than",
+"so",
+"as"
+],
+"ans": 2,
+"why": "Adj + as."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Despite having no training",
+"Despite she had no training",
+"Despite of training"
+],
+"ans": 0,
+"why": "Despite + -ing."
+},
+{
+"q": "“Much as they doubted her,” = ...",
+"opts": [
+"because they doubted her",
+"although they doubted her",
+"if they doubted her"
+],
+"ans": 1,
+"why": "Concessão."
+},
+{
+"q": "Which can start with a **clause**?",
+"opts": [
+"Despite",
+"In spite of",
+"Though"
+],
+"ans": 2,
+"why": "Though + oração."
+}
+],
+"fix": [
+{
+"wrong": "Despite she had no training, she led.",
+"right": "Despite having no training, she led.",
+"why": "Despite + -ing."
+},
+{
+"wrong": "Young she was, she led the delegation.",
+"right": "Young as she was, she led the delegation.",
+"why": "as."
+},
+{
+"wrong": "Though of her patience, she lost.",
+"right": "Though she was patient, she lost.",
+"why": "Though + oração."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Despite + -ing: “Although she had no training, she led.”",
+"answer": "Despite having no training, she led.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Adj + as: “Although she was young, she led.”",
+"answer": "Young as she was, she led.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Much as: “Although they doubted her, she won.”",
+"answer": "Much as they doubted her, she won.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "there is little",
+"wrong": "There is a little doubt that teams need skills.",
+"right": "There is little doubt that teams need skills.",
+"why": "Little (sem a) = quase nenhum; a little = um pouco. O brasileiro confunde porque português tem só “pouco”."
+},
+"mcq": [
+{
+"q": "There is ___ doubt that teams need skills. (almost none)",
+"opts": [
+"a little",
+"few",
+"little"
+],
+"ans": 2,
+"why": "little."
+},
+{
+"q": "I want to ___ my point across.",
+"opts": [
+"get",
+"go",
+"take"
+],
+"ans": 0,
+"why": "get across."
+},
+{
+"q": "Doubt is…",
+"opts": [
+"countable",
+"uncountable",
+"plural"
+],
+"ans": 1,
+"why": "Incontável."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There are little doubts.",
+"There is few doubt.",
+"There is little doubt."
+],
+"ans": 2,
+"why": "little doubt."
+}
+],
+"fix": [
+{
+"wrong": "There is a little doubt they will fail. (quase nenhuma)",
+"right": "There is little doubt they will fail.",
+"why": "little."
+},
+{
+"wrong": "There is few doubt.",
+"right": "There is little doubt.",
+"why": "Incontável: little."
+},
+{
+"wrong": "I get my point cross.",
+"right": "I get my point across.",
+"why": "across."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “There is almost no doubt that teams need skills.” (little)",
+"answer": "There is little doubt that teams need skills.",
+"why": ""
+},
+{
+"prompt": "Use get across: “I explain my point clearly.”",
+"answer": "I get my point across.",
+"why": ""
+},
+{
+"prompt": "Reescreva com no: “There is little doubt.” (use no)",
+"answer": "There is no doubt.",
+"why": ""
+}
+]
+}

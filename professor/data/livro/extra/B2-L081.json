@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição com concern/damage",
+"wrong": "The pollution causes damage on the reef.",
+"right": "The pollution causes damage to the reef.",
+"why": "Em português \"danos nos recifes\" usa em. Em inglês damage + to."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"Warming oceans threaten marine life.",
+"The warming oceans threaten the marine life in general.",
+"Warming oceans threatens marine life."
+],
+"ans": 0,
+"why": "Plural."
+},
+{
+"q": "**affect** é...",
+"opts": [
+"substantivo",
+"verbo",
+"adjetivo"
+],
+"ans": 1,
+"why": "affect = verbo."
+},
+{
+"q": "Complete: damage **___** the reef",
+"opts": [
+"on",
+"in",
+"to"
+],
+"ans": 2,
+"why": "damage to."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"reef",
+"evidence",
+"film"
+],
+"ans": 1,
+"why": "evidence."
+}
+],
+"fix": [
+{
+"wrong": "The oceans is warming.",
+"right": "The oceans are warming.",
+"why": "Plural."
+},
+{
+"wrong": "Plastic effects fish.",
+"right": "Plastic affects fish.",
+"why": "affect."
+},
+{
+"wrong": "There is a lot of evidences.",
+"right": "There is a lot of evidence.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com the fact that: “Oceans warm. This alarms us.”",
+"answer": "The fact that oceans warm alarms us.",
+"why": ""
+},
+{
+"prompt": "Reescreva com recommend that: “Governments should ban plastics.”",
+"answer": "They recommend that governments ban plastics.",
+"why": ""
+},
+{
+"prompt": "Passe a crítica: “We listen to scientists.”",
+"answer": "We should have listened to scientists.",
+"why": ""
+}
+]
+}

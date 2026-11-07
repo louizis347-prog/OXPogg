@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "take into consideration",
+"wrong": "The council takes in consideration the costs.",
+"right": "The council takes costs into consideration.",
+"why": "Em português “leva em consideração” → in. Em inglês, a preposição é into, e o objeto vem entre take e into."
+},
+"mcq": [
+{
+"q": "The council takes costs ___ consideration.",
+"opts": [
+"on",
+"into",
+"in"
+],
+"ans": 1,
+"why": "into."
+},
+{
+"q": "Take ___ into account.",
+"opts": [
+"of it",
+"for it",
+"it"
+],
+"ans": 2,
+"why": "Objeto."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"take costs into consideration",
+"take into consideration of costs",
+"take in consideration costs"
+],
+"ans": 0,
+"why": "into."
+},
+{
+"q": "Take into consideration means…",
+"opts": [
+"delay",
+"consider",
+"ignore"
+],
+"ans": 1,
+"why": "Considerar."
+}
+],
+"fix": [
+{
+"wrong": "They take in consideration costs.",
+"right": "They take costs into consideration.",
+"why": "into."
+},
+{
+"wrong": "We take into consideration of costs.",
+"right": "We take costs into consideration.",
+"why": "Sem of."
+},
+{
+"wrong": "She took it in account.",
+"right": "She took it into account.",
+"why": "into."
+}
+],
+"rewrite": [
+{
+"prompt": "Use take into consideration: “The council considers costs.”",
+"answer": "The council takes costs into consideration.",
+"why": ""
+},
+{
+"prompt": "Passado: “She takes it into account.”",
+"answer": "She took it into account.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They take costs into consideration.”",
+"answer": "Costs are taken into consideration.",
+"why": ""
+}
+]
+}

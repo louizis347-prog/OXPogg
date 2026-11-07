@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "I give in of the pressure, given that she assumes it.",
+"right": "I give in to the pressure, given that she presumes it.",
+"why": "Give in leva to; given that = visto que; presume baseia-se em indícios."
+},
+"mcq": [
+{
+"q": "Surrender:",
+"opts": [
+"give in of",
+"give in to",
+"give in at"
+],
+"ans": 1,
+"why": "give in to."
+},
+{
+"q": "In “Given that he is late”, given that means…",
+"opts": [
+"although",
+"unless",
+"since"
+],
+"ans": 2,
+"why": "Visto que."
+},
+{
+"q": "Presume vs assume vs preclude: preclude means…",
+"opts": [
+"assume",
+"prove",
+"rule out"
+],
+"ans": 2,
+"why": "Impedir."
+},
+{
+"q": "Give rise to =",
+"opts": [
+"surrender",
+"cause",
+"decide"
+],
+"ans": 1,
+"why": "Causar."
+}
+],
+"fix": [
+{
+"wrong": "He gave in of the pressure.",
+"right": "He gave in to the pressure.",
+"why": "to."
+},
+{
+"wrong": "Given that he is late, he is assumed absent.",
+"right": "Given that he is late, he is presumed absent.",
+"why": "Indícios."
+},
+{
+"wrong": "It precludes to his claim.",
+"right": "It precludes his claim.",
+"why": "Transitivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She surrendered to the pressure.” (give in)",
+"answer": "She gave in to the pressure.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Since he is late, we leave.” (given that)",
+"answer": "Given that he is late, we leave.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Evidence precludes the claim.”",
+"answer": "The claim is precluded by evidence.",
+"why": ""
+}
+]
+}

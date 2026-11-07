@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "present perfect × passado",
+"wrong": "Last year I have been afraid of speaking.",
+"right": "Last year I was afraid of speaking.",
+"why": "Em português “Ano passado eu tive medo” ou “já tive” se misturam. Em inglês, marcador de tempo passado fechado (last year) exige Past Simple."
+},
+"mcq": [
+{
+"q": "I ___ to ask for help now.",
+"opts": [
+"learned",
+"have learned",
+"was learning"
+],
+"ans": 1,
+"why": "Resultado atual."
+},
+{
+"q": "Last year I ___ afraid.",
+"opts": [
+"was",
+"have been",
+"am"
+],
+"ans": 0,
+"why": "last year = Past."
+},
+{
+"q": "She ___ a new idea yesterday.",
+"opts": [
+"has mentioned",
+"mentions",
+"mentioned"
+],
+"ans": 2,
+"why": "yesterday = Past."
+},
+{
+"q": "Which is correct? (present perfect × passado)",
+"opts": [
+"I have lived here in 2010.",
+"I lived here in 2010.",
+"I am living here in 2010."
+],
+"ans": 1,
+"why": "in 2010 = Past Simple."
+}
+],
+"fix": [
+{
+"wrong": "I have visited Rome last summer.",
+"right": "I visited Rome last summer.",
+"why": "Marcador fechado."
+},
+{
+"wrong": "She mentioned it already.",
+"right": "She has already mentioned it.",
+"why": "already com Present Perfect."
+},
+{
+"wrong": "I have been afraid in 2019.",
+"right": "I was afraid in 2019.",
+"why": "Past Simple."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no Past Simple: “I have been afraid of tests.” (last year)",
+"answer": "Last year I was afraid of tests.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “I learn to speak.” (até agora)",
+"answer": "I have learned to speak.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She mentions a new rule.”",
+"answer": "She mentioned a new rule.",
+"why": ""
+}
+]
+}

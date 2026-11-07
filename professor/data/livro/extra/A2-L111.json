@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "bring/achieve",
+"wrong": "I will bring my goal.",
+"right": "I will achieve my goal.",
+"why": "Em português 'alcançar' e 'trazer' são distintos; o aluno usa bring onde cabe achieve (alcançar) e vice-versa."
+},
+"mcq": [
+{
+"q": "She worked hard to ___ her goal.",
+"opts": [
+"take",
+"achieve",
+"bring"
+],
+"ans": 1,
+"why": "alcançar."
+},
+{
+"q": "Please ___ your ID to the exam.",
+"opts": [
+"bring",
+"do",
+"achieve"
+],
+"ans": 0,
+"why": "trazer."
+},
+{
+"q": "Passado de bring:",
+"opts": [
+"brought",
+"bringed",
+"brang"
+],
+"ans": 0,
+"why": "brought."
+},
+{
+"q": "Rain ___ flowers. (traz)",
+"opts": [
+"goes",
+"achieves",
+"brings"
+],
+"ans": 2,
+"why": "traz."
+}
+],
+"fix": [
+{
+"wrong": "They bringed lunch to the office.",
+"right": "They brought lunch to the office.",
+"why": "brought."
+},
+{
+"wrong": "He brought his dream.",
+"right": "He achieved his dream.",
+"why": "achieve."
+},
+{
+"wrong": "Achieve your book tomorrow.",
+"right": "Bring your book tomorrow.",
+"why": "bring."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I bring my laptop.”",
+"answer": "I brought my laptop.",
+"why": ""
+},
+{
+"prompt": "Troque por achieve: “He reached his goal.”",
+"answer": "He achieved his goal.",
+"why": ""
+},
+{
+"prompt": "Passado: “She brings me tea.”",
+"answer": "She brought me tea.",
+"why": ""
+}
+]
+}

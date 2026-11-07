@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "turn on/off",
+"wrong": "Turn the light.",
+"right": "Turn on the light.",
+"why": "Em português \"liga a luz\" não exige partícula; em inglês turn sozinho significa girar. Ligar = turn on; desligar = turn off."
+},
+"mcq": [
+{
+"q": "turn off =",
+"opts": [
+"ligar",
+"desligar",
+"virar"
+],
+"ans": 1,
+"why": "turn off."
+},
+{
+"q": "turn up =",
+"opts": [
+"desligar",
+"descer",
+"aparecer; aumentar"
+],
+"ans": 2,
+"why": "turn up."
+},
+{
+"q": "turn down =",
+"opts": [
+"recusar; baixar",
+"aumentar",
+"ligar"
+],
+"ans": 0,
+"why": "turn down."
+},
+{
+"q": "turn into =",
+"opts": [
+"virar à esquerda",
+"ligar",
+"transformar"
+],
+"ans": 2,
+"why": "turn into."
+}
+],
+"fix": [
+{
+"wrong": "Turn on it.",
+"right": "Turn it on.",
+"why": "Pronome no meio."
+},
+{
+"wrong": "He turned up the offer.",
+"right": "He turned down the offer.",
+"why": "Recusar = turn down."
+},
+{
+"wrong": "She turned of the light.",
+"right": "She turned off the light.",
+"why": "off."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com turn off: “Switch off the TV.”",
+"answer": "Turn off the TV.",
+"why": ""
+},
+{
+"prompt": "Reescreva com turn on e pronome: “Turn on the light.” → it",
+"answer": "Turn it on.",
+"why": ""
+},
+{
+"prompt": "Reescreva com turn down: “She refused the job.”",
+"answer": "She turned down the job.",
+"why": ""
+}
+]
+}

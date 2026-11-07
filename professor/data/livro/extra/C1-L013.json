@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Not only + do/does/did",
+"wrong": "Not only transparent firms attract investors, but they also retain staff.",
+"right": "Not only do transparent firms attract investors, but they also retain staff.",
+"why": "O português não pede auxiliar depois de “não só”. Em inglês, Not only no início exige do/does/did antes do sujeito (plural: do)."
+},
+"mcq": [
+{
+"q": "Not only ___ transparent firms attract investors…",
+"opts": [
+"do",
+"does",
+"are"
+],
+"ans": 0,
+"why": "Sujeito plural: do."
+},
+{
+"q": "Not only ___ she run the team, …",
+"opts": [
+"is",
+"does",
+"do"
+],
+"ans": 1,
+"why": "3ª pessoa: does."
+},
+{
+"q": "After does, the verb is…",
+"opts": [
+"-s form",
+"-ing form",
+"base form"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Not only did the plan fail, but costs rose.",
+"Not only the plan failed, but costs rose.",
+"Not only did the plan failed, but costs rose."
+],
+"ans": 0,
+"why": "did + base."
+}
+],
+"fix": [
+{
+"wrong": "Not only firms attract investors, but also staff.",
+"right": "Not only do firms attract investors, but they also retain staff.",
+"why": "Inversão."
+},
+{
+"wrong": "Not only does she runs the team.",
+"right": "Not only does she run the team.",
+"why": "Base após does."
+},
+{
+"wrong": "Not only we won, but also we grew.",
+"right": "Not only did we win, but we also grew.",
+"why": "did + sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Not only: “Firms attract investors and retain staff.”",
+"answer": "Not only do firms attract investors, but they also retain staff.",
+"why": ""
+},
+{
+"prompt": "Comece com Not only: “He sings and he dances.”",
+"answer": "Not only does he sing, but he also dances.",
+"why": ""
+},
+{
+"prompt": "Passado com Not only: “We won and we grew.”",
+"answer": "Not only did we win, but we also grew.",
+"why": ""
+}
+]
+}

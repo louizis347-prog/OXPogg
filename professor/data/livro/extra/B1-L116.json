@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "presente passivo",
+"wrong": "Bread bake in the oven. Flour and water is mixed. It isn’t sell hot.",
+"right": "Bread is baked in the oven. Flour and water are mixed. It isn't sold hot.",
+"why": "Em português “o pão é assado” e “mistura-se farinha” podem soar ativos para quem aprende. Em inglês, present passive = am/is/are + pp; sujeito plural pede are."
+},
+"mcq": [
+{
+"q": "Bread ___ in the oven.",
+"opts": [
+"is baked",
+"bake",
+"is bake"
+],
+"ans": 0,
+"why": "is baked."
+},
+{
+"q": "Flour and water ___ mixed.",
+"opts": [
+"is",
+"does",
+"are"
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "Negative: “It ___ sold hot.”",
+"opts": [
+"doesn’t",
+"hasn’t",
+"isn’t"
+],
+"ans": 2,
+"why": "isn’t."
+},
+{
+"q": "Question: “___ the cakes sold here?”",
+"opts": [
+"Do",
+"Are",
+"Is"
+],
+"ans": 1,
+"why": "Are."
+}
+],
+"fix": [
+{
+"wrong": "Cheese make from milk.",
+"right": "Cheese is made from milk.",
+"why": "is made."
+},
+{
+"wrong": "Eggs is boiled first.",
+"right": "Eggs are boiled first.",
+"why": "Plural."
+},
+{
+"wrong": "Is the soup serve cold?",
+"right": "Is the soup served cold?",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They bake bread daily.”",
+"answer": "Bread is baked daily.",
+"why": ""
+},
+{
+"prompt": "Torne negativa: “Tea is served here.”",
+"answer": "Tea isn't served here.",
+"why": ""
+},
+{
+"prompt": "Faça a pergunta: “Cakes are sold here.”",
+"answer": "Are cakes sold here?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be esquecido",
+"wrong": "She working today.",
+"right": "She is working today.",
+"why": "O brasileiro omite o be por analogia com \"ela trabalhando\"; em inglês o be é obrigatório."
+},
+"mcq": [
+{
+"q": "Spelling of run + ing",
+"opts": [
+"running",
+"runing",
+"runnning"
+],
+"ans": 0,
+"why": "Dobra a consoante."
+},
+{
+"q": "Spelling of make + ing",
+"opts": [
+"makeing",
+"making",
+"makking"
+],
+"ans": 1,
+"why": "Tira o e."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She eating.",
+"She is eat.",
+"She is eating."
+],
+"ans": 2,
+"why": "Be + -ing."
+},
+{
+"q": "Negative: “He is sleeping.”",
+"opts": [
+"He is not sleeping.",
+"He not is sleeping.",
+"He does not sleeping."
+],
+"ans": 0,
+"why": "Not após is."
+}
+],
+"fix": [
+{
+"wrong": "They is playing.",
+"right": "They are playing.",
+"why": "They: are."
+},
+{
+"wrong": "He is runing.",
+"right": "He is running.",
+"why": "Dobra n."
+},
+{
+"wrong": "She is makeing tea.",
+"right": "She is making tea.",
+"why": "Tira e."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no Present Continuous: “They run.”",
+"answer": "They are running.",
+"why": ""
+},
+{
+"prompt": "Negue: “I am working.” (am not)",
+"answer": "I am not working.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “He is cooking.”",
+"answer": "Is he cooking?",
+"why": ""
+}
+]
+}

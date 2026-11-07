@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "objeto omitido",
+"wrong": "I bought yesterday.",
+"right": "I bought it yesterday.",
+"why": "Em português o objeto pode ficar oculto; em inglês verbos transitivos pedem objeto."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"She needs.",
+"She a pen needs.",
+"She needs a pen."
+],
+"ans": 2,
+"why": "Verbo transitivo precisa de objeto."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Tom eats an apple.",
+"Tom an apple eats.",
+"Eats Tom an apple."
+],
+"ans": 0,
+"why": "S+V+O."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We TV watch.",
+"We watch TV.",
+"Watch we TV."
+],
+"ans": 1,
+"why": "S+V+O."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They it like.",
+"Like they it.",
+"They like it."
+],
+"ans": 2,
+"why": "S+V+O."
+}
+],
+"fix": [
+{
+"wrong": "Ana like it the song.",
+"right": "Ana likes the song.",
+"why": "Objeto uma vez."
+},
+{
+"wrong": "He buys every day.",
+"right": "He buys bread every day.",
+"why": "Falta objeto."
+},
+{
+"wrong": "We play soccer it.",
+"right": "We play soccer.",
+"why": "Sem repetir."
+}
+],
+"rewrite": [
+{
+"prompt": "Ponha na ordem: “eats / Tom / an apple”",
+"answer": "Tom eats an apple.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “watch / we / TV”",
+"answer": "We watch TV.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “like / they / music”",
+"answer": "They like music.",
+"why": ""
+}
+]
+}

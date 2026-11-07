@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "vogal /e/ × /æ/",
+"wrong": "I sleep on the bad every night.",
+"right": "I sleep on the bed every night.",
+"why": "O português não tem o som /æ/ e o brasileiro ouve bed e bad como iguais, errando a palavra escrita."
+},
+"mcq": [
+{
+"q": "Which has /æ/?",
+"opts": [
+"bed",
+"pen",
+"bad"
+],
+"ans": 2,
+"why": "Bad /bæd/."
+},
+{
+"q": "Where do you sleep?",
+"opts": [
+"bed",
+"bad",
+"bat"
+],
+"ans": 0,
+"why": "Bed."
+},
+{
+"q": "“Man” has the vowel…",
+"opts": [
+"/e/",
+"/æ/",
+"/iː/"
+],
+"ans": 1,
+"why": "Man /mæn/."
+},
+{
+"q": "“Men” has the vowel…",
+"opts": [
+"/æ/",
+"/aɪ/",
+"/e/"
+],
+"ans": 2,
+"why": "Men /men/."
+}
+],
+"fix": [
+{
+"wrong": "The bed dog is angry.",
+"right": "The bad dog is angry.",
+"why": "Bad = mau."
+},
+{
+"wrong": "I put my bag on the bad.",
+"right": "I put my bag on the bed.",
+"why": "Bed = cama."
+},
+{
+"wrong": "Two man are here.",
+"right": "Two men are here.",
+"why": "Men."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por “mau”: “It is a bed idea.”",
+"answer": "It is a bad idea.",
+"why": ""
+},
+{
+"prompt": "Troque por “cama”: “The bad is soft.”",
+"answer": "The bed is soft.",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “one man”",
+"answer": "two men",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontável plural",
+"wrong": "The evidences suggest that teamwork is important.",
+"right": "The evidence suggests that teamwork is important.",
+"why": "Em português “as evidências” é plural contável. Em inglês, evidence é incontável: sem -s e com verbo no singular."
+},
+"mcq": [
+{
+"q": "In a conclusion you should…",
+"opts": [
+"copy the intro",
+"restate the thesis in new words",
+"add new data"
+],
+"ans": 1,
+"why": "Retomar sem copiar."
+},
+{
+"q": "“Taken together” introduces…",
+"opts": [
+"a new topic",
+"an example",
+"a synthesis"
+],
+"ans": 2,
+"why": "Síntese."
+},
+{
+"q": "This essay has ___ that teamwork matters.",
+"opts": [
+"argued",
+"argue",
+"arguing"
+],
+"ans": 0,
+"why": "has + pp."
+},
+{
+"q": "Which is better?",
+"opts": [
+"Overall, evidences suggests…",
+"Overall, the evidence suggests…",
+"Overall, the evidence suggest…"
+],
+"ans": 1,
+"why": "Evidence é incontável."
+}
+],
+"fix": [
+{
+"wrong": "The evidences suggest this.",
+"right": "The evidence suggests this.",
+"why": "Evidence é incontável."
+},
+{
+"wrong": "This essay has argue that it works.",
+"right": "This essay has argued that it works.",
+"why": "Particípio."
+},
+{
+"wrong": "Taken together the data show it.",
+"right": "Taken together, the data show it.",
+"why": "Vírgula."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o present perfect: “This essay argues that it works.”",
+"answer": "This essay has argued that it works.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “The evidence suggests this.” (The data…)",
+"answer": "The data suggest this.",
+"why": ""
+},
+{
+"prompt": "Use Taken together: “All arguments show it.”",
+"answer": "Taken together, the arguments show it.",
+"why": ""
+}
+]
+}

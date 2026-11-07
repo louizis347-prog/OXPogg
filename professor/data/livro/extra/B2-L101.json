@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "effect/affect",
+"wrong": "Plastic effects marine life.",
+"right": "Plastic affects marine life.",
+"why": "Pela semelhança de som e de afetar/efeito, o aluno troca. Affect = verbo; effect = substantivo."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"The warming oceans threaten the marine life in general.",
+"Warming oceans threatens marine life.",
+"Warming oceans threaten marine life."
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "**affect** é...",
+"opts": [
+"verbo",
+"substantivo",
+"adjetivo"
+],
+"ans": 0,
+"why": "affect = verbo."
+},
+{
+"q": "Complete: damage **___** the reef",
+"opts": [
+"on",
+"to",
+"in"
+],
+"ans": 1,
+"why": "damage to."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"evidence",
+"reef",
+"film"
+],
+"ans": 0,
+"why": "evidence."
+}
+],
+"fix": [
+{
+"wrong": "The oceans is warming.",
+"right": "The oceans are warming.",
+"why": "Plural."
+},
+{
+"wrong": "Plastic effects fish.",
+"right": "Plastic affects fish.",
+"why": "affect."
+},
+{
+"wrong": "There is a lot of evidences.",
+"right": "There is a lot of evidence.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao plural: “The reef is damaged.”",
+"answer": "The reefs are damaged.",
+"why": ""
+},
+{
+"prompt": "Reescreva com negativa: “We should have waited.”",
+"answer": "We shouldn't have waited.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the fact that: “Oceans warm. This alarms us.”",
+"answer": "The fact that oceans warm alarms us.",
+"why": ""
+}
+]
+}

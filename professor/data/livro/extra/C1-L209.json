@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "every + singular",
+"wrong": "Every studies is subject to question.",
+"right": "Every study is subject to question.",
+"why": "Em português “todos os estudos” é plural. Em inglês, every pede substantivo singular."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Every statistics is subject to question.",
+"Every statistic are subject.",
+"Every statistic is subject to question."
+],
+"ans": 2,
+"why": "singular."
+},
+{
+"q": "“___ examined four studies, we concluded…”",
+"opts": [
+"Having",
+"Have",
+"Had to"
+],
+"ans": 0,
+"why": "Having + pp."
+},
+{
+"q": "“Two hedge; others ___.”",
+"opts": [
+"aren’t",
+"don’t",
+"not"
+],
+"ans": 1,
+"why": "Elipse."
+},
+{
+"q": "Hedged:",
+"opts": [
+"Results prove…",
+"Results always…",
+"Results suggest…"
+],
+"ans": 2,
+"why": "suggest."
+}
+],
+"fix": [
+{
+"wrong": "Having examine four studies, we concluded.",
+"right": "Having examined four studies, we concluded.",
+"why": "pp."
+},
+{
+"wrong": "Every studies are subject to doubt.",
+"right": "Every study is subject to doubt.",
+"why": "Singular."
+},
+{
+"wrong": "Two hedge and others not hedge.",
+"right": "Two hedge and others don’t.",
+"why": "Elipse."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Having: “After we examined four studies, we concluded.”",
+"answer": "Having examined four studies, we concluded.",
+"why": ""
+},
+{
+"prompt": "Reescreva com every: “All studies are subject to doubt.”",
+"answer": "Every study is subject to doubt.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse: “Two hedge; others do not hedge.”",
+"answer": "Two hedge; others do not.",
+"why": ""
+}
+]
+}

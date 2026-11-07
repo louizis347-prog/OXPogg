@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado irregular",
+"wrong": "I goed to the market.",
+"right": "I went to the market.",
+"why": "O aluno aplica a regra do -ed (go → goed) como faria com os verbos regulares do português; irregulares precisam ser memorizados."
+},
+"mcq": [
+{
+"q": "Passado de **see**:",
+"opts": [
+"seed",
+"saw",
+"seen"
+],
+"ans": 1,
+"why": "Irregular."
+},
+{
+"q": "Yesterday I ___ pizza.",
+"opts": [
+"eat",
+"ate",
+"eated"
+],
+"ans": 1,
+"why": "ate."
+},
+{
+"q": "Passado de **have**:",
+"opts": [
+"had",
+"haved",
+"has"
+],
+"ans": 0,
+"why": "had."
+},
+{
+"q": "Passado de **take**:",
+"opts": [
+"taked",
+"took",
+"taken"
+],
+"ans": 1,
+"why": "took."
+}
+],
+"fix": [
+{
+"wrong": "We buyed a car.",
+"right": "We bought a car.",
+"why": "Irregular."
+},
+{
+"wrong": "She eated lunch.",
+"right": "She ate lunch.",
+"why": "Irregular."
+},
+{
+"wrong": "I seed him.",
+"right": "I saw him.",
+"why": "Irregular."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I go home.”",
+"answer": "I went home.",
+"why": ""
+},
+{
+"prompt": "Passado: “She sees Ana.”",
+"answer": "She saw Ana.",
+"why": ""
+},
+{
+"prompt": "Passado: “We have a party.”",
+"answer": "We had a party.",
+"why": ""
+}
+]
+}

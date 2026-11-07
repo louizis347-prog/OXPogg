@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + gerúndio",
+"wrong": "Do you mind to open the window?",
+"right": "Do you mind opening the window?",
+"why": "Português “você se importa de abrir”. Mind e suggest pedem -ing."
+},
+"mcq": [
+{
+"q": "Do you mind **___**?",
+"opts": [
+"wait",
+"to wait",
+"waiting"
+],
+"ans": 2,
+"why": "Mind -ing."
+},
+{
+"q": "I suggest **___** it off.",
+"opts": [
+"to turn",
+"turn",
+"turning"
+],
+"ans": 2,
+"why": "Suggest -ing."
+},
+{
+"q": "Resposta a “Do you mind...?” quando aceita:",
+"opts": [
+"Yes, I do.",
+"Not at all.",
+"I mind."
+],
+"ans": 1,
+"why": "Resposta natural."
+},
+{
+"q": "I can’t **___** laughing.",
+"opts": [
+"avoid to",
+"stop it",
+"help"
+],
+"ans": 2,
+"why": "Can’t help."
+}
+],
+"fix": [
+{
+"wrong": "Do you mind to wait?",
+"right": "Do you mind waiting?",
+"why": "-ing."
+},
+{
+"wrong": "I suggest to turn it off.",
+"right": "I suggest turning it off.",
+"why": "-ing."
+},
+{
+"wrong": "I don’t mind to wait.",
+"right": "I don’t mind waiting.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Peça: “Open the window.” (Do you mind…)",
+"answer": "Do you mind opening the window?",
+"why": ""
+},
+{
+"prompt": "Sugira: “Let’s turn it off.” (I suggest…)",
+"answer": "I suggest turning it off.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I mind waiting.”",
+"answer": "I don’t mind waiting.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "2º condicional (negociação)",
+"wrong": "If you would give me a day off, I would be happier.",
+"right": "If you gave me a day off, I would be happier.",
+"why": "Em português “se você me desse” usa subjuntivo imperfeito; o brasileiro traduz o se como would. Em inglês, if + Past Simple; would só na cláusula principal."
+},
+"mcq": [
+{
+"q": "If I accepted, I ___ more.",
+"opts": [
+"earned",
+"would earn",
+"will earn"
+],
+"ans": 1,
+"why": "would."
+},
+{
+"q": "If you ___ me a day off, I would be happier.",
+"opts": [
+"gave",
+"would give",
+"give"
+],
+"ans": 0,
+"why": "Past."
+},
+{
+"q": "To negotiate politely:",
+"opts": [
+"If you will, I want",
+"You must",
+"If you could… I would…"
+],
+"ans": 2,
+"why": "Cond."
+},
+{
+"q": "Which is wrong? (2º condicional (negociação))",
+"opts": [
+"If I knew, I’d tell you.",
+"If I had it, I’d send it.",
+"If I would know, I’d tell you."
+],
+"ans": 2,
+"why": "if + would."
+}
+],
+"fix": [
+{
+"wrong": "If I will accept, I would earn more.",
+"right": "If I accepted, I would earn more.",
+"why": "Past."
+},
+{
+"wrong": "If you would pay more, I stay.",
+"right": "If you paid more, I would stay.",
+"why": "if + Past."
+},
+{
+"wrong": "If I were have more time, I would help.",
+"right": "If I had more time, I would help.",
+"why": "had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no 2º condicional: “If I accept, I will earn more.”",
+"answer": "If I accepted, I would earn more.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “If you give me a day off, I will be happier.” (irreal)",
+"answer": "If you gave me a day off, I would be happier.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “If she stays, she will learn.” (irreal)",
+"answer": "If she stayed, she would learn.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "fragmento",
+"wrong": "I support voting at 16. Because young people pay taxes.",
+"right": "I support voting at 16 because young people pay taxes.",
+"why": "Em português “Porque…” pode iniciar uma frase falada. Em inglês, because inicia oração subordinada e não fica sozinha como frase."
+},
+"mcq": [
+{
+"q": "A **claim** is...",
+"opts": [
+"one clear sentence",
+"a quote",
+"a date"
+],
+"ans": 0,
+"why": "Afirmação."
+},
+{
+"q": "**Evidence** is...",
+"opts": [
+"a feeling",
+"example + data",
+"a title"
+],
+"ans": 1,
+"why": "Evidência."
+},
+{
+"q": "A **rebuttal** begins with...",
+"opts": [
+"Because",
+"First",
+"They will say… but…"
+],
+"ans": 2,
+"why": "Refutação."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We should lower the age because turnout is low.",
+"We should lower the age. Because turnout is low.",
+"We should lower the age, because, turnout."
+],
+"ans": 0,
+"why": "Sem fragmento."
+}
+],
+"fix": [
+{
+"wrong": "The youth turnout are low.",
+"right": "The youth turnout is low.",
+"why": "incontável."
+},
+{
+"wrong": "They will say that it is risky, but in fact it work.",
+"right": "They will say that it is risky, but in fact it works.",
+"why": "-s."
+},
+{
+"wrong": "We must prepare us for the opposition case.",
+"right": "We must prepare for the opposition case.",
+"why": "prepare for."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “Turnout is low. Young people feel ignored.” (because)",
+"answer": "Turnout is low because young people feel ignored.",
+"why": ""
+},
+{
+"prompt": "Reescreva com rebuttal: “Opponents think it is risky. It is not.” (They will say…, but…)",
+"answer": "They will say it is risky, but it is not.",
+"why": ""
+},
+{
+"prompt": "Reescreva com should: “We lower the age.”",
+"answer": "We should lower the age.",
+"why": ""
+}
+]
+}

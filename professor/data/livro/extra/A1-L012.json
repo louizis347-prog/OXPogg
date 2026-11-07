@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "does + s",
+"wrong": "Does she works here?",
+"right": "Does she work here?",
+"why": "O brasileiro mantém o -s do verbo; com does, o verbo fica na forma base."
+},
+"mcq": [
+{
+"q": "Does she ___ here?",
+"opts": [
+"works",
+"work",
+"working"
+],
+"ans": 1,
+"why": "Base form."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They live here?",
+"Are they live here?",
+"Do they live here?"
+],
+"ans": 2,
+"why": "Do."
+},
+{
+"q": "Short answer: Do you work? ___",
+"opts": [
+"Yes, I do.",
+"Yes, I am.",
+"Yes, I work."
+],
+"ans": 0,
+"why": "Do."
+},
+{
+"q": "Where ___ she live?",
+"opts": [
+"do",
+"does",
+"is"
+],
+"ans": 1,
+"why": "She: does."
+}
+],
+"fix": [
+{
+"wrong": "Does he plays?",
+"right": "Does he play?",
+"why": "Base form."
+},
+{
+"wrong": "Do she like tea?",
+"right": "Does she like tea?",
+"why": "She: does."
+},
+{
+"wrong": "Are you like music?",
+"right": "Do you like music?",
+"why": "Like não usa be."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “She works here.”",
+"answer": "Does she work here?",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “They play soccer.”",
+"answer": "Do they play soccer?",
+"why": ""
+},
+{
+"prompt": "Resposta curta negativa, sem contração: “Does he swim?”",
+"answer": "No, he does not.",
+"why": "Sem contração."
+}
+]
+}

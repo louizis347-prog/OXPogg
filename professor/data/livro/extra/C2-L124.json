@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Far to be weak, she opened strongly.",
+"right": "Far from being weak, she opened strongly.",
+"why": "Português “longe de ser fraca”; em inglês far from + -ing."
+},
+"mcq": [
+{
+"q": "Far from + …",
+"opts": [
+"infinitive",
+"-ing",
+"base"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Contrast marker:",
+"opts": [
+"by comparison with the contrary",
+"per contra",
+"by contrast"
+],
+"ans": 2,
+"why": "By contrast."
+},
+{
+"q": "Comparison:",
+"opts": [
+"Okafor, by contrast, dodged.",
+"Okafor, by contrary, dodged.",
+"Okafor, in contrast dodged."
+],
+"ans": 0,
+"why": "Vírgulas."
+},
+{
+"q": "Far from weak means…",
+"opts": [
+"unclear",
+"a bit weak",
+"actually strong"
+],
+"ans": 2,
+"why": "Longe de."
+}
+],
+"fix": [
+{
+"wrong": "Far from be weak, she won.",
+"right": "Far from being weak, she won.",
+"why": "being."
+},
+{
+"wrong": "Reyes won; Okafor, in contrary, lost.",
+"right": "Reyes won; Okafor, by contrast, lost.",
+"why": "by contrast."
+},
+{
+"wrong": "Far from to weak, she won.",
+"right": "Far from weak, she won.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com far from: “She is not weak at all.”",
+"answer": "Far from being weak, she is strong.",
+"why": ""
+},
+{
+"prompt": "Reescreva com by contrast: “Okafor, however, dodged.”",
+"answer": "Okafor, by contrast, dodged.",
+"why": ""
+},
+{
+"prompt": "Passado: “She opens strongly.”",
+"answer": "She opened strongly.",
+"why": ""
+}
+]
+}

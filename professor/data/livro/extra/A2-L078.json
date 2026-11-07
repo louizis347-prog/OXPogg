@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "few / little",
+"wrong": "I have few money.",
+"right": "I have little money.",
+"why": "Em português 'pouco(s)' é um só; em inglês few = contáveis, little = incontáveis."
+},
+"mcq": [
+{
+"q": "I have ___ friends.",
+"opts": [
+"a few",
+"a little",
+"much"
+],
+"ans": 0,
+"why": "contável."
+},
+{
+"q": "There is ___ milk.",
+"opts": [
+"many",
+"a few",
+"a little"
+],
+"ans": 2,
+"why": "incontável."
+},
+{
+"q": "How ___ people came?",
+"opts": [
+"many",
+"little",
+"much"
+],
+"ans": 0,
+"why": "contável."
+},
+{
+"q": "We have ___ time.",
+"opts": [
+"many",
+"a lot of",
+"few"
+],
+"ans": 1,
+"why": "incontável."
+}
+],
+"fix": [
+{
+"wrong": "I have a few money.",
+"right": "I have a little money.",
+"why": "incontável."
+},
+{
+"wrong": "He invited a little guests.",
+"right": "He invited a few guests.",
+"why": "contável."
+},
+{
+"wrong": "How many water?",
+"right": "How much water?",
+"why": "much."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “I have ___ coffee.” (um pouco)",
+"answer": "I have a little coffee.",
+"why": ""
+},
+{
+"prompt": "Complete: “I have ___ friends.” (alguns)",
+"answer": "I have a few friends.",
+"why": ""
+},
+{
+"prompt": "Complete: “How ___ sugar?”",
+"answer": "How much sugar?",
+"why": ""
+}
+]
+}

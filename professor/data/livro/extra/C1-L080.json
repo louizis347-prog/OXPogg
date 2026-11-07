@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inclined + to",
+"wrong": "We are inclined think so.",
+"right": "We are inclined to think so.",
+"why": "Em português “somos inclinados a pensar” pode ser omitido na fala. Em inglês, be inclined to + base."
+},
+"mcq": [
+{
+"q": "We are inclined ___ think so.",
+"opts": [
+"to",
+"for",
+"at"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "I’m inclined to accept means…",
+"opts": [
+"I forget",
+"I tend to accept",
+"I refuse"
+],
+"ans": 1,
+"why": "Tendo a concordar."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He inclined accept.",
+"He is inclined accepting.",
+"He is inclined to accept."
+],
+"ans": 2,
+"why": "to + base."
+},
+{
+"q": "Inclined to + ___",
+"opts": [
+"base verb",
+"-ing",
+"past"
+],
+"ans": 0,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "He inclined to accept.",
+"right": "He is inclined to accept.",
+"why": "be."
+},
+{
+"wrong": "We are inclined to thinking so.",
+"right": "We are inclined to think so.",
+"why": "Base."
+},
+{
+"wrong": "They are inclined accept.",
+"right": "They are inclined to accept.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Use be inclined to: “We tend to think so.”",
+"answer": "We are inclined to think so.",
+"why": ""
+},
+{
+"prompt": "Use be inclined to: “He usually accepts.”",
+"answer": "He is inclined to accept.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He is inclined to accept.”",
+"answer": "He is not inclined to accept.",
+"why": ""
+}
+]
+}

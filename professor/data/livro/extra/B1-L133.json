@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "entonação",
+"wrong": "Do you like it strong? (falling tone ↘) How long do you boil it? (rising ↗)",
+"right": "Do you like it strong? ↗ How long do you boil it? ↘",
+"why": "O português tende a subir em perguntas Wh por influência da fala regional. Em inglês, sim/não sobe ↗ e Wh- desce ↘; afirmações descem ↘."
+},
+"mcq": [
+{
+"q": "Yes/no question intonation:",
+"opts": [
+"↘",
+"↗",
+"plana"
+],
+"ans": 1,
+"why": "Sobe."
+},
+{
+"q": "Wh- question intonation:",
+"opts": [
+"↗",
+"plana",
+"↘"
+],
+"ans": 2,
+"why": "Desce."
+},
+{
+"q": "Statement: “Boil the water.”",
+"opts": [
+"↘",
+"↗",
+"plana"
+],
+"ans": 0,
+"why": "Desce."
+},
+{
+"q": "Which has rising tone?",
+"opts": [
+"Where is it?",
+"Is it hot?",
+"It is hot."
+],
+"ans": 1,
+"why": "Sim/não."
+}
+],
+"fix": [
+{
+"wrong": "Where do you live? ↗",
+"right": "Where do you live? ↘",
+"why": "Wh- desce."
+},
+{
+"wrong": "Is it ready? ↘",
+"right": "Is it ready? ↗",
+"why": "Sim/não sobe."
+},
+{
+"wrong": "Add sugar? ↗ (ordem)",
+"right": "Add sugar. ↘",
+"why": "Ordem desce."
+}
+],
+"rewrite": [
+{
+"prompt": "Marque a seta final: “Do you want tea?”",
+"answer": "Do you want tea? ↗",
+"why": ""
+},
+{
+"prompt": "Marque a seta final: “What time is it?”",
+"answer": "What time is it? ↘",
+"why": ""
+},
+{
+"prompt": "Marque a seta final: “Stir the soup.”",
+"answer": "Stir the soup. ↘",
+"why": ""
+}
+]
+}

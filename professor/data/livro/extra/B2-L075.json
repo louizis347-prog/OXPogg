@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb",
+"wrong": "I came across of an old photo.",
+"right": "I came across an old photo.",
+"why": "Phrasal verbs inseparáveis não levam of. Come across = encontrar por acaso; come up with = bolar; come down to = resumir-se a."
+},
+"mcq": [
+{
+"q": "I came **___** an old photo.",
+"opts": [
+"across of",
+"across",
+"through of"
+],
+"ans": 1,
+"why": "Direto."
+},
+{
+"q": "We need to come up **___** a plan.",
+"opts": [
+"with",
+"for",
+"to"
+],
+"ans": 0,
+"why": "With."
+},
+{
+"q": "It comes down **___** trust.",
+"opts": [
+"to",
+"at",
+"of"
+],
+"ans": 0,
+"why": "Down to."
+},
+{
+"q": "Come up with =",
+"opts": [
+"bolar",
+"chegar",
+"subir com"
+],
+"ans": 0,
+"why": "Bolar."
+}
+],
+"fix": [
+{
+"wrong": "She came up a great idea.",
+"right": "She came up with a great idea.",
+"why": "With."
+},
+{
+"wrong": "It comes down of price.",
+"right": "It comes down to price.",
+"why": "To."
+},
+{
+"wrong": "They comed across a coin.",
+"right": "They came across a coin.",
+"why": "Irregular."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I come across an old photo.”",
+"answer": "I came across an old photo.",
+"why": ""
+},
+{
+"prompt": "Passado: “We come up with a plan.”",
+"answer": "We came up with a plan.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She came up with an idea.”",
+"answer": "She didn’t come up with an idea.",
+"why": ""
+}
+]
+}

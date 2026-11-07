@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "should em condicional",
+"wrong": "If prices should to rise, we sell.",
+"right": "Should prices rise, we will sell.",
+"why": "Em português dizemos “se as taxas subirem”. Em inglês formal, Should + sujeito + base (sem to, sem -s)."
+},
+"mcq": [
+{
+"q": "___ prices rise, we will sell.",
+"opts": [
+"Would",
+"Must",
+"Should"
+],
+"ans": 2,
+"why": "Should."
+},
+{
+"q": "Had they diversified, they ___ survived.",
+"opts": [
+"would have",
+"will have",
+"would"
+],
+"ans": 0,
+"why": "would have."
+},
+{
+"q": "Were they to fail, …",
+"opts": [
+"would have",
+"would",
+"will have"
+],
+"ans": 1,
+"why": "Were…to: would."
+},
+{
+"q": "Should prices ___ ,",
+"opts": [
+"rises",
+"to rise",
+"rise"
+],
+"ans": 2,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "Should prices rises, we sell.",
+"right": "Should prices rise, we will sell.",
+"why": "Base."
+},
+{
+"wrong": "Had they diversify, they would have survived.",
+"right": "Had they diversified, they would have survived.",
+"why": "Particípio."
+},
+{
+"wrong": "Should he to arrive, call me.",
+"right": "Should he arrive, call me.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If prices should rise, we will sell.”",
+"answer": "Should prices rise, we will sell.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If they had diversified, they would have survived.”",
+"answer": "Had they diversified, they would have survived.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If they were to fail, we would help.”",
+"answer": "Were they to fail, we would help.",
+"why": ""
+}
+]
+}

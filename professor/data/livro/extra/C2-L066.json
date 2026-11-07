@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ritmo e paralelismo",
+"wrong": "We came, we saw, and we were staying.",
+"right": "We came, we saw, we stayed.",
+"why": "O português tolera mudar a forma; o tricolon exige três elementos paralelos."
+},
+"mcq": [
+{
+"q": "Tricolon has…",
+"opts": [
+"two parallel items",
+"four items",
+"three parallel items"
+],
+"ans": 2,
+"why": "Três."
+},
+{
+"q": "Anaphora repeats…",
+"opts": [
+"the end of lines",
+"the start of clauses",
+"nothing"
+],
+"ans": 1,
+"why": "Início."
+},
+{
+"q": "Parallel:",
+"opts": [
+"We came, we saw, we stayed.",
+"We came, saw, and staying.",
+"We come, we saw, staying."
+],
+"ans": 0,
+"why": "Mesma forma."
+},
+{
+"q": "Why rhetorical repetition?",
+"opts": [
+"grammar",
+"rhythm and memory",
+"to shorten"
+],
+"ans": 1,
+"why": "Ritmo."
+}
+],
+"fix": [
+{
+"wrong": "We came, we see, we stayed.",
+"right": "We came, we saw, we stayed.",
+"why": "Mesmo tempo."
+},
+{
+"wrong": "We will fight, we will win, and winning.",
+"right": "We will fight, we will win, we will endure.",
+"why": "Paralelismo."
+},
+{
+"wrong": "Say it once, say it twice, saying it three.",
+"right": "Say it once, say it twice, say it three times.",
+"why": "Imperativos paralelos."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete o tricolon: “We came, we saw, ___” (verbo stay)",
+"answer": "we stayed",
+"why": ""
+},
+{
+"prompt": "Reescreva no futuro: “We came, we saw, we stayed.”",
+"answer": "We will come, we will see, we will stay.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “We came.”",
+"answer": "We did not come.",
+"why": ""
+}
+]
+}

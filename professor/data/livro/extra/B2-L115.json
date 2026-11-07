@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "entonação e pontuação",
+"wrong": "Really.",
+"right": "Really?",
+"why": "Em português a surpresa vem muitas vezes só com a cara e o contexto. Em inglês, o tom sobe (↗) e na escrita usamos ? para marcar surpresa ou dúvida."
+},
+"mcq": [
+{
+"q": "Qual tom indica dúvida?",
+"opts": [
+"desce no fim",
+"sobe no fim",
+"fica plano"
+],
+"ans": 1,
+"why": "Dúvida = tom sobe."
+},
+{
+"q": "Qual tom indica certeza?",
+"opts": [
+"sobe muito",
+"ondula",
+"desce no fim"
+],
+"ans": 2,
+"why": "Certeza = tom desce."
+},
+{
+"q": "\"I said BLUE, not green\" destaca...",
+"opts": [
+"contraste",
+"pergunta",
+"dúvida"
+],
+"ans": 0,
+"why": "Acento no contraste."
+},
+{
+"q": "Qual pontuação combina com surpresa?",
+"opts": [
+"Really,",
+"Really;",
+"Really?"
+],
+"ans": 2,
+"why": "? marca tom subindo."
+}
+],
+"fix": [
+{
+"wrong": "You're sure.",
+"right": "You're sure?",
+"why": "Dúvida = ?"
+},
+{
+"wrong": "I said blue, not green?",
+"right": "I said BLUE, not green.",
+"why": "Contraste, afirmação."
+},
+{
+"wrong": "Really.",
+"right": "Really?",
+"why": "Surpresa."
+}
+],
+"rewrite": [
+{
+"prompt": "Transforme em dúvida: “You're sure.”",
+"answer": "You're sure?",
+"why": ""
+},
+{
+"prompt": "Transforme em certeza: “It's true?”",
+"answer": "It's true.",
+"why": ""
+},
+{
+"prompt": "Transforme em surpresa: “Really.”",
+"answer": "Really?",
+"why": ""
+}
+]
+}

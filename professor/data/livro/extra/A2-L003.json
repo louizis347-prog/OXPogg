@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "get = chegar",
+"wrong": "We arrived to home late.",
+"right": "We got home late.",
+"why": "Em português 'chegar em casa' leva preposição; em inglês get/arrive home não usa to. Get também cobre receber e ficar."
+},
+"mcq": [
+{
+"q": "I ___ a text from Ana yesterday.",
+"opts": [
+"got",
+"gotted",
+"get"
+],
+"ans": 0,
+"why": "Passado irregular."
+},
+{
+"q": "He ___ home at six. (chegou)",
+"opts": [
+"came",
+"arrived to",
+"got"
+],
+"ans": 2,
+"why": "get home."
+},
+{
+"q": "She got ___ after the long walk. (ficou)",
+"opts": [
+"tired",
+"tire",
+"tiring"
+],
+"ans": 0,
+"why": "get + adjetivo."
+},
+{
+"q": "Passado de get:",
+"opts": [
+"got",
+"getted",
+"gets"
+],
+"ans": 0,
+"why": "Irregular."
+}
+],
+"fix": [
+{
+"wrong": "I getted a gift.",
+"right": "I got a gift.",
+"why": "Irregular."
+},
+{
+"wrong": "We arrived to home.",
+"right": "We got home.",
+"why": "Sem to."
+},
+{
+"wrong": "She got tire.",
+"right": "She got tired.",
+"why": "adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I get an email.”",
+"answer": "I got an email.",
+"why": ""
+},
+{
+"prompt": "Troque arrive por get: “He arrived home.”",
+"answer": "He got home.",
+"why": ""
+},
+{
+"prompt": "Passado: “She gets angry.”",
+"answer": "She got angry.",
+"why": ""
+}
+]
+}

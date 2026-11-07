@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "whose duplo",
+"wrong": "The company whose its profits fell is closing.",
+"right": "The company whose profits fell is closing.",
+"why": "Em português “cujos lucros” não repete o pronome, mas o aluno que evita cujo diz “que seus lucros”. Em inglês, whose substitui o possessivo."
+},
+"mcq": [
+{
+"q": "“___ the council invested, it would still be open.”",
+"opts": [
+"Had",
+"If had",
+"Would"
+],
+"ans": 0,
+"why": "Inversão."
+},
+{
+"q": "“Estimates ___ the fall in sales.” (explain)",
+"opts": [
+"accounts",
+"account for",
+"account"
+],
+"ans": 1,
+"why": "account for."
+},
+{
+"q": "Correct mixed conditional?",
+"opts": [
+"If I would leave, I had been there.",
+"If I left, I would be there then.",
+"If I had left, I would be there now."
+],
+"ans": 2,
+"why": "past perfect + would."
+},
+{
+"q": "“a guest for ___ it was new”",
+"opts": [
+"whom",
+"which",
+"that"
+],
+"ans": 0,
+"why": "whom."
+}
+],
+"fix": [
+{
+"wrong": "They singled out him for blame.",
+"right": "They singled him out for blame.",
+"why": "Pronome entre."
+},
+{
+"wrong": "The report, that is long, is dull.",
+"right": "The report, which is long, is dull.",
+"why": "which."
+},
+{
+"wrong": "If I would be you, I would sign.",
+"right": "If I were you, I would sign.",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com inversão: “If the council had invested, it would be open.”",
+"answer": "Had the council invested, it would be open.",
+"why": ""
+},
+{
+"prompt": "Reescreva com whose: “I know a man. His car is blue.”",
+"answer": "I know a man whose car is blue.",
+"why": ""
+},
+{
+"prompt": "Reescreva com single out e o pronome it: “They highlighted the problem.”",
+"answer": "They singled it out.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make + to",
+"wrong": "It makes them to feel tired.",
+"right": "It makes them feel tired.",
+"why": "Em português “faz com que se sintam” usa infinitivo ou subjuntivo. Em inglês, make + objeto + verbo base (sem to); só na passiva o to volta: be made to."
+},
+"mcq": [
+{
+"q": "It makes them ___ tired.",
+"opts": [
+"to feel",
+"feeling",
+"feel"
+],
+"ans": 2,
+"why": "make + base."
+},
+{
+"q": "It makes everyone ___.",
+"opts": [
+"happy to",
+"to happy",
+"happier"
+],
+"ans": 2,
+"why": "make + adj."
+},
+{
+"q": "They were made ___ work late.",
+"opts": [
+"—",
+"to",
+"for"
+],
+"ans": 1,
+"why": "Passiva volta com to."
+},
+{
+"q": "Which is correct? (make + to)",
+"opts": [
+"She makes me to laugh.",
+"She makes me laugh.",
+"She makes me laughing."
+],
+"ans": 1,
+"why": "Sem to."
+}
+],
+"fix": [
+{
+"wrong": "The film made us to cry.",
+"right": "The film made us cry.",
+"why": "Sem to."
+},
+{
+"wrong": "They were made work late.",
+"right": "They were made to work late.",
+"why": "Passiva: to."
+},
+{
+"wrong": "It makes everyone happy to.",
+"right": "It makes everyone happy.",
+"why": "Make + adj."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na passiva: “The boss made them work late.”",
+"answer": "They were made to work late.",
+"why": ""
+},
+{
+"prompt": "Reescreva com make: “Music causes me to relax.”",
+"answer": "Music makes me relax.",
+"why": ""
+},
+{
+"prompt": "Reescreva com adjetivo: “The news causes everyone to be happier.”",
+"answer": "The news makes everyone happier.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in/on/at",
+"wrong": "The keys are in the table.",
+"right": "The keys are on the table.",
+"why": "O português \"em\" cobre in, on e at; em inglês on é sobre uma superfície, in é dentro e at é um ponto."
+},
+"mcq": [
+{
+"q": "The cat is ___ the box.",
+"opts": [
+"on",
+"at",
+"in"
+],
+"ans": 2,
+"why": "Dentro."
+},
+{
+"q": "She is ___ work.",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 0,
+"why": "At work."
+},
+{
+"q": "The book is ___ the table.",
+"opts": [
+"in",
+"on",
+"at"
+],
+"ans": 1,
+"why": "Superfície."
+},
+{
+"q": "The milk is ___ the fridge.",
+"opts": [
+"on",
+"at",
+"in"
+],
+"ans": 2,
+"why": "Dentro."
+}
+],
+"fix": [
+{
+"wrong": "The milk is on the fridge. (dentro)",
+"right": "The milk is in the fridge.",
+"why": "In."
+},
+{
+"wrong": "I am in work.",
+"right": "I am at work.",
+"why": "At work."
+},
+{
+"wrong": "The keys are in the table.",
+"right": "The keys are on the table.",
+"why": "On."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “She / bus stop (ponto)”",
+"answer": "She is at the bus stop.",
+"why": ""
+},
+{
+"prompt": "Use at: “He is in work.” (corrija)",
+"answer": "He is at work.",
+"why": ""
+},
+{
+"prompt": "Complete: “The pen / table (superfície)”",
+"answer": "The pen is on the table.",
+"why": ""
+}
+]
+}

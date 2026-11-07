@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Imagine prisoners chained in a cave. One prisoner was freed and sees the sun.",
+"right": "Imagine prisoners chained in a cave. One prisoner is freed and sees the sun.",
+"why": "Português narra no passado; ao contar uma parábola, o inglês usa o presente histórico, sem trocar de tempo no meio."
+},
+"mcq": [
+{
+"q": "Narrative invitation:",
+"opts": [
+"You imagine prisoners",
+"Imagining prisoners…",
+"Imagine prisoners chained…"
+],
+"ans": 2,
+"why": "Imperativo."
+},
+{
+"q": "Historical present:",
+"opts": [
+"One prisoner frees was.",
+"One prisoner is freed.",
+"One prisoner was free."
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "Imagine takes…",
+"opts": [
+"for",
+"to",
+"object"
+],
+"ans": 2,
+"why": "Objeto."
+},
+{
+"q": "Chained = …",
+"opts": [
+"hidden",
+"free",
+"tied"
+],
+"ans": 2,
+"why": "Preso."
+}
+],
+"fix": [
+{
+"wrong": "Imagine that prisoners chained.",
+"right": "Imagine prisoners chained.",
+"why": "Particípio."
+},
+{
+"wrong": "One prisoner free.",
+"right": "One prisoner is freed.",
+"why": "Passiva."
+},
+{
+"wrong": "Imagining a cave.",
+"right": "Imagine a cave.",
+"why": "Imperativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Imperativo: “You imagine a cave.”",
+"answer": "Imagine a cave.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Someone frees one prisoner.”",
+"answer": "One prisoner is freed.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Imagine a cave.”",
+"answer": "Don’t imagine a cave.",
+"why": ""
+}
+]
+}

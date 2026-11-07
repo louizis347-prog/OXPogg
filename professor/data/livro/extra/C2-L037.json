@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "accuse of",
+"wrong": "The prosecuting counsel accused him for theft.",
+"right": "The prosecuting counsel accused him of theft.",
+"why": "Em português “acusar de” é natural, mas o aluno alterna com for. Em inglês, accuse someone of something."
+},
+"mcq": [
+{
+"q": "An unproved criminal charge:",
+"opts": [
+"assert",
+"allege",
+"state firmly"
+],
+"ans": 1,
+"why": "allege."
+},
+{
+"q": "The council “claims” costs fell, which means...",
+"opts": [
+"proven",
+"false",
+"not endorsed by the writer"
+],
+"ans": 2,
+"why": "Sem endosso."
+},
+{
+"q": "A firm statement of position:",
+"opts": [
+"assert",
+"claim to be",
+"allege"
+],
+"ans": 0,
+"why": "assert."
+},
+{
+"q": "The **accused** is...",
+"opts": [
+"the lawyer",
+"the person charged",
+"the judge"
+],
+"ans": 1,
+"why": "Acusado."
+}
+],
+"fix": [
+{
+"wrong": "Prosecutors allege of theft.",
+"right": "Prosecutors allege theft.",
+"why": "Transitivo."
+},
+{
+"wrong": "The minister assert that costs fell.",
+"right": "The minister asserts that costs fell.",
+"why": "-s."
+},
+{
+"wrong": "The accused person were present.",
+"right": "The accused person was present.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com allege: “Prosecutors say, without proof, that he stole.”",
+"answer": "Prosecutors allege that he stole.",
+"why": ""
+},
+{
+"prompt": "Reescreva com accused of: “Counsel says he committed theft.”",
+"answer": "Counsel accused him of theft.",
+"why": ""
+},
+{
+"prompt": "Reescreva com assert: “The minister firmly stated that costs fell.”",
+"answer": "The minister asserted that costs fell.",
+"why": ""
+}
+]
+}

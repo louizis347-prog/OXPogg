@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "at home",
+"wrong": "I am in home.",
+"right": "I am at home.",
+"why": "Expressões fixas não seguem a lógica do \"em\"."
+},
+"mcq": [
+{
+"q": "I am ___ the bus stop.",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 0,
+"why": "Ponto."
+},
+{
+"q": "The picture is ___ the wall.",
+"opts": [
+"in",
+"on",
+"at"
+],
+"ans": 1,
+"why": "Superfície vertical: on."
+},
+{
+"q": "The cat is ___ the box.",
+"opts": [
+"on",
+"at",
+"in"
+],
+"ans": 2,
+"why": "Dentro."
+},
+{
+"q": "She is ___ work.",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 0,
+"why": "At work."
+}
+],
+"fix": [
+{
+"wrong": "He is in the bus stop.",
+"right": "He is at the bus stop.",
+"why": "At."
+},
+{
+"wrong": "The milk is on the fridge. (dentro)",
+"right": "The milk is in the fridge.",
+"why": "In."
+},
+{
+"wrong": "I am in work.",
+"right": "I am at work.",
+"why": "At work."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “The milk / fridge (dentro)”",
+"answer": "The milk is in the fridge.",
+"why": ""
+},
+{
+"prompt": "Complete: “She / bus stop (ponto)”",
+"answer": "She is at the bus stop.",
+"why": ""
+},
+{
+"prompt": "Use at: “He is in work.” (corrija)",
+"answer": "He is at work.",
+"why": ""
+}
+]
+}

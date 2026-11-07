@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "could have vs. could",
+"wrong": "I could go to the party last Saturday, but I was tired.",
+"right": "I could have gone to the party last Saturday, but I was tired.",
+"why": "O português usa \"podia ir\" para possibilidade não realizada; em inglês could go soa como habilidade geral. Use could have + particípio."
+},
+"mcq": [
+{
+"q": "Qual tem sentido de possibilidade fraca?",
+"opts": [
+"It must have been a mistake.",
+"It was definitely a mistake.",
+"It might have been a mistake."
+],
+"ans": 2,
+"why": "might = pouca certeza."
+},
+{
+"q": "A negativa de \"might have gone\" é...",
+"opts": [
+"might not have gone",
+"mightn't had gone",
+"might have not went"
+],
+"ans": 0,
+"why": "might not have + particípio."
+},
+{
+"q": "\"Could have\" no passado pode indicar...",
+"opts": [
+"algo que ocorreu com certeza",
+"algo possível que não ocorreu",
+"uma regra"
+],
+"ans": 1,
+"why": "Costuma indicar possibilidade não realizada."
+},
+{
+"q": "Escolha: He **may have ___** the email.",
+"opts": [
+"sent",
+"send",
+"sending"
+],
+"ans": 0,
+"why": "Particípio de send = sent."
+}
+],
+"fix": [
+{
+"wrong": "She might have came late.",
+"right": "She might have come late.",
+"why": "Particípio de come = come."
+},
+{
+"wrong": "They could of won the game.",
+"right": "They could have won the game.",
+"why": "Escreva have, não of."
+},
+{
+"wrong": "He may has lost his wallet.",
+"right": "He may have lost his wallet.",
+"why": "Depois de modal, have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na negativa: “He may have seen it.”",
+"answer": "He may not have seen it.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “They might forget.” (talvez tenham esquecido)",
+"answer": "They might have forgotten.",
+"why": ""
+},
+{
+"prompt": "Reescreva com may: “She might have left.”",
+"answer": "She may have left.",
+"why": ""
+}
+]
+}

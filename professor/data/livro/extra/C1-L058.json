@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "refrain from",
+"wrong": "Kindly refrain to use laptops.",
+"right": "Kindly refrain from using laptops.",
+"why": "Em português “queira abster-se de usar” leva infinitivo. Em inglês, refrain from + -ing."
+},
+"mcq": [
+{
+"q": "Kindly refrain ___ using laptops.",
+"opts": [
+"of",
+"from",
+"to"
+],
+"ans": 1,
+"why": "from."
+},
+{
+"q": "Abstain ___ eating at your desk.",
+"opts": [
+"of",
+"to",
+"from"
+],
+"ans": 2,
+"why": "from."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"refrain from talking",
+"refrain talking",
+"refrain to talk"
+],
+"ans": 0,
+"why": "from + -ing."
+},
+{
+"q": "Kindly refrain is…",
+"opts": [
+"slang",
+"polite",
+"rude"
+],
+"ans": 1,
+"why": "Polido."
+}
+],
+"fix": [
+{
+"wrong": "Kindly refrain to smoke.",
+"right": "Kindly refrain from smoking.",
+"why": "from + -ing."
+},
+{
+"wrong": "Abstain of eating at 9 p.m.",
+"right": "Abstain from eating at 9 p.m.",
+"why": "from."
+},
+{
+"wrong": "Refrain from to use laptops.",
+"right": "Refrain from using laptops.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Use kindly refrain: “Please don’t use laptops.”",
+"answer": "Kindly refrain from using laptops.",
+"why": ""
+},
+{
+"prompt": "Use abstain: “Please don’t eat at 9 p.m.”",
+"answer": "Abstain from eating at 9 p.m.",
+"why": ""
+},
+{
+"prompt": "Use refrain: “Don’t talk during the test.”",
+"answer": "Refrain from talking during the test.",
+"why": ""
+}
+]
+}

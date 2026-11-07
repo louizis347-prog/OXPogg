@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "He objects to pay taxes.",
+"right": "He objects to paying taxes.",
+"why": "To em object to é preposição. O brasileiro usa o infinitivo por analogia com “opor-se a pagar”."
+},
+"mcq": [
+{
+"q": "Ela é contra sair:",
+"opts": [
+"She is opposed to leave.",
+"She is opposed to leaving.",
+"She opposed leaving."
+],
+"ans": 1,
+"why": "To + -ing."
+},
+{
+"q": "He objects **___** turning it off.",
+"opts": [
+"to",
+"for",
+"with"
+],
+"ans": 0,
+"why": "Object to."
+},
+{
+"q": "They are opposed **___** the idea.",
+"opts": [
+"to",
+"at",
+"on"
+],
+"ans": 0,
+"why": "Opposed to."
+},
+{
+"q": "To é:",
+"opts": [
+"preposição aqui",
+"marcador de infinitivo aqui",
+"verbo"
+],
+"ans": 0,
+"why": "Preposição."
+}
+],
+"fix": [
+{
+"wrong": "They are opposed to turn off.",
+"right": "They are opposed to turning it off.",
+"why": "-ing."
+},
+{
+"wrong": "He objects to pay the bill.",
+"right": "He objects to paying the bill.",
+"why": "-ing."
+},
+{
+"wrong": "She object to the plan.",
+"right": "She objects to the plan.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I don’t agree with turning it off.” (object to)",
+"answer": "I object to turning it off.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She is against moving.” (opposed to)",
+"answer": "She is opposed to moving.",
+"why": ""
+},
+{
+"prompt": "Passado: “He objects to paying.”",
+"answer": "He objected to paying.",
+"why": ""
+}
+]
+}

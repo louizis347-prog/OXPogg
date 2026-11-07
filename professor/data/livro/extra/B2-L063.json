@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb",
+"wrong": "We will go ahead of the plan.",
+"right": "We will go ahead with the plan.",
+"why": "Português “seguir adiante com o plano”. Go ahead pede with. Go through, go on, go ahead."
+},
+"mcq": [
+{
+"q": "Go ahead **___** the plan:",
+"opts": [
+"with",
+"to",
+"of"
+],
+"ans": 0,
+"why": "With."
+},
+{
+"q": "Go through the papers:",
+"opts": [
+"examinar",
+"atravessar",
+"ir por"
+],
+"ans": 0,
+"why": "Examinar."
+},
+{
+"q": "Go on = ",
+"opts": [
+"sair",
+"continuar",
+"ligar"
+],
+"ans": 1,
+"why": "Continuar."
+},
+{
+"q": "She went through a hard time:",
+"opts": [
+"passou de",
+"passou por",
+"foi por"
+],
+"ans": 1,
+"why": "Passou por."
+}
+],
+"fix": [
+{
+"wrong": "Let’s go on to talk.",
+"right": "Let’s go on talking.",
+"why": "Go on + -ing."
+},
+{
+"wrong": "They go through of a divorce.",
+"right": "They are going through a divorce.",
+"why": "Sem of."
+},
+{
+"wrong": "Go ahead of the plan.",
+"right": "Go ahead with the plan.",
+"why": "With."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “They go ahead with the plan.”",
+"answer": "They went ahead with the plan.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Continue working.” (go on)",
+"answer": "Go on working.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She went through the papers.”",
+"answer": "She didn’t go through the papers.",
+"why": ""
+}
+]
+}

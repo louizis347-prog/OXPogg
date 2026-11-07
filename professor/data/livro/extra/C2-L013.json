@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "of",
+"wrong": "Twelve from fifteen patients improved.",
+"right": "Twelve of fifteen patients improved.",
+"why": "Em português “12 de 15” usa de, e o aluno hesita com from. Em inglês, a fração de um grupo usa of."
+},
+"mcq": [
+{
+"q": "A cautious reporting verb:",
+"opts": [
+"prove",
+"suggest",
+"guarantee"
+],
+"ans": 1,
+"why": "suggest."
+},
+{
+"q": "“No events ___ recorded.”",
+"opts": [
+"are been",
+"have",
+"were"
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "“Preliminary” means...",
+"opts": [
+"early, not final",
+"final",
+"false"
+],
+"ans": 0,
+"why": "Preliminar."
+},
+{
+"q": "A gene-editing therapy targets a...",
+"opts": [
+"broken bone",
+"faulty gene",
+"cold"
+],
+"ans": 1,
+"why": "Gene."
+}
+],
+"fix": [
+{
+"wrong": "The therapy was test in 15 patients.",
+"right": "The therapy was tested in 15 patients.",
+"why": "pp."
+},
+{
+"wrong": "The results warrants further study.",
+"right": "The results warrant further study.",
+"why": "plural."
+},
+{
+"wrong": "12 of 15 patients was improved.",
+"right": "12 of 15 patients improved.",
+"why": "Voz ativa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na passiva: “We recorded no events.”",
+"answer": "No events were recorded.",
+"why": ""
+},
+{
+"prompt": "Reescreva na passiva: “We tested the therapy.”",
+"answer": "The therapy was tested.",
+"why": ""
+},
+{
+"prompt": "Reescreva com of: “Twelve from fifteen improved.”",
+"answer": "Twelve of fifteen improved.",
+"why": ""
+}
+]
+}

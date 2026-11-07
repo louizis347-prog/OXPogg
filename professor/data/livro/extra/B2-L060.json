@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "I suggest to track expenses.",
+"right": "I suggest tracking expenses.",
+"why": "Português “sugiro registrar” (infinitivo). Em inglês suggest + -ing ou suggest that + (should) + base."
+},
+"mcq": [
+{
+"q": "I suggest **___** expenses.",
+"opts": [
+"tracking",
+"track",
+"to track"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "I suggest that she **___** a budget.",
+"opts": [
+"to make",
+"makes",
+"make"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He suggested to go out.",
+"He suggested go out.",
+"He suggested going out."
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "Suggest that + should:",
+"opts": [
+"we should leave",
+"we to leave",
+"we leaving"
+],
+"ans": 0,
+"why": "Should."
+}
+],
+"fix": [
+{
+"wrong": "She suggests to save money.",
+"right": "She suggests saving money.",
+"why": "-ing."
+},
+{
+"wrong": "I suggest that he goes.",
+"right": "I suggest that he go.",
+"why": "Base."
+},
+{
+"wrong": "He suggested me to leave.",
+"right": "He suggested that I leave.",
+"why": "Sem objeto + to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Let’s track expenses.” (I suggest…)",
+"answer": "I suggest tracking expenses.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She should make a budget.” (I suggest that…)",
+"answer": "I suggest that she make a budget.",
+"why": ""
+},
+{
+"prompt": "Passado: “She suggests saving money.”",
+"answer": "She suggested saving money.",
+"why": ""
+}
+]
+}

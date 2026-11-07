@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb go",
+"wrong": "She goes by every step.",
+"right": "She goes through every step.",
+"why": "Em português “passar por cada etapa” sugere by. Em inglês, go through = examinar/passar por."
+},
+"mcq": [
+{
+"q": "She goes ___ every step.",
+"opts": [
+"through",
+"by",
+"over of"
+],
+"ans": 0,
+"why": "go through."
+},
+{
+"q": "Go ___ with the plan.",
+"opts": [
+"forward to",
+"ahead",
+"front"
+],
+"ans": 1,
+"why": "go ahead."
+},
+{
+"q": "The deal ___ wrong. (failed)",
+"opts": [
+"gone",
+"goes",
+"went"
+],
+"ans": 2,
+"why": "went wrong."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Let’s go through the notes.",
+"Let’s go the notes through of.",
+"Let’s go by the notes through."
+],
+"ans": 0,
+"why": "go through."
+}
+],
+"fix": [
+{
+"wrong": "Go ahead the plan.",
+"right": "Go ahead with the plan.",
+"why": "with."
+},
+{
+"wrong": "She goes through of the file.",
+"right": "She goes through the file.",
+"why": "Sem of."
+},
+{
+"wrong": "It went wrongly.",
+"right": "It went wrong.",
+"why": "go + adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Use go through: “She examines every step.”",
+"answer": "She goes through every step.",
+"why": ""
+},
+{
+"prompt": "Use go ahead: “Please proceed with the plan.”",
+"answer": "Please go ahead with the plan.",
+"why": ""
+},
+{
+"prompt": "Passado: “Things go wrong.”",
+"answer": "Things went wrong.",
+"why": ""
+}
+]
+}

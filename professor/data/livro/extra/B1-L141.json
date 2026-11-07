@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "descrever festa (passiva)",
+"wrong": "Carnival celebrates in Brazil. It is colorful and loud. I would love going.",
+"right": "Carnival is celebrated in Brazil. It is colorful and loud. I would love to go.",
+"why": "Em português “Carnaval se celebra no Brasil” e “adoraria ir” usam se e infinitivo. Em inglês, passiva com be; would love + to."
+},
+"mcq": [
+{
+"q": "Carnival ___ in Brazil.",
+"opts": [
+"celebrates",
+"is celebrated",
+"is celebrate"
+],
+"ans": 1,
+"why": "is celebrated."
+},
+{
+"q": "I would love ___ there.",
+"opts": [
+"going",
+"go",
+"to go"
+],
+"ans": 2,
+"why": "would love to."
+},
+{
+"q": "Describing: “It is ___ and loud.”",
+"opts": [
+"colorfully",
+"colorful",
+"color"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "Where it happens:",
+"opts": [
+"It holds in Rio.",
+"It is hold in Rio.",
+"It is held in Rio."
+],
+"ans": 2,
+"why": "is held."
+}
+],
+"fix": [
+{
+"wrong": "The festival celebrates every year.",
+"right": "The festival is celebrated every year.",
+"why": "passiva."
+},
+{
+"wrong": "I would love visiting Rio.",
+"right": "I would love to visit Rio.",
+"why": "to."
+},
+{
+"wrong": "It is very colorfully.",
+"right": "It is very colorful.",
+"why": "Adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “People celebrate Carnival in Brazil.”",
+"answer": "Carnival is celebrated in Brazil.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I want to go.” (muito, educado: would love)",
+"answer": "I would love to go.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They hold the parade in Rio.”",
+"answer": "The parade is held in Rio.",
+"why": ""
+}
+]
+}

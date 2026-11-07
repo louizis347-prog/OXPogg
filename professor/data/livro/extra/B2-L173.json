@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "prefer ... to",
+"wrong": "I prefer coffee than tea.",
+"right": "I prefer coffee to tea.",
+"why": "Em português, \"prefiro café a chá\"; o aluno copia que de comparativos (more than). Em inglês, prefer usa to."
+},
+"mcq": [
+{
+"q": "Complete: I'd rather **___** at home.",
+"opts": [
+"to stay",
+"staying",
+"stay"
+],
+"ans": 2,
+"why": "would rather + base."
+},
+{
+"q": "Complete: The woman **___** called is my aunt.",
+"opts": [
+"who",
+"which",
+"whose"
+],
+"ans": 0,
+"why": "Pessoa sujeito = who."
+},
+{
+"q": "Qual verbo usa objeto direto de pessoa?",
+"opts": [
+"said",
+"told",
+"suggested"
+],
+"ans": 1,
+"why": "tell + pessoa."
+},
+{
+"q": "\"Are you ready?\" reportada:",
+"opts": [
+"She asked if I was ready.",
+"She asked was I ready.",
+"She asked that I was ready."
+],
+"ans": 0,
+"why": "if + sujeito + verbo."
+}
+],
+"fix": [
+{
+"wrong": "He prefers swim to run.",
+"right": "He prefers swimming to running.",
+"why": "-ing to -ing."
+},
+{
+"wrong": "My brother that lives in Rome called.",
+"right": "My brother, who lives in Rome, called.",
+"why": "Informação extra: who + vírgulas."
+},
+{
+"wrong": "They explained me the problem.",
+"right": "They explained the problem to me.",
+"why": "explain to."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com which: “This is the book. I bought it.”",
+"answer": "This is the book which I bought.",
+"why": ""
+},
+{
+"prompt": "Reescreva com told: “‘Wait here,’ he said to me.”",
+"answer": "He told me to wait there.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “‘Are you hungry?’ she asked.”",
+"answer": "She asked if I was hungry.",
+"why": ""
+}
+]
+}

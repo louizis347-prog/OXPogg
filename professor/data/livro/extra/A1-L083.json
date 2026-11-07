@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "posição do advérbio",
+"wrong": "I go always to the gym.",
+"right": "I always go to the gym.",
+"why": "Em português o advérbio pode ficar depois do verbo (\"vou sempre\"); em inglês fica antes do verbo principal e depois do be."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"He is never late.",
+"He never is late.",
+"He is late never."
+],
+"ans": 0,
+"why": "Após be."
+},
+{
+"q": "I am ___ the bus stop.",
+"opts": [
+"in",
+"at",
+"on"
+],
+"ans": 1,
+"why": "Ponto."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I showed to Tom the photo.",
+"I showed the photo Tom.",
+"I showed Tom the photo."
+],
+"ans": 2,
+"why": "IO + DO."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There aren’t any chairs.",
+"There aren’t some chairs.",
+"There isn’t any chairs."
+],
+"ans": 0,
+"why": "Any."
+}
+],
+"fix": [
+{
+"wrong": "She always is happy.",
+"right": "She is always happy.",
+"why": "Após be."
+},
+{
+"wrong": "The milk is on the fridge. (dentro)",
+"right": "The milk is in the fridge.",
+"why": "In."
+},
+{
+"wrong": "I showed the photo Tom.",
+"right": "I showed Tom the photo.",
+"why": "IO + DO."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “The milk / fridge (dentro)”",
+"answer": "The milk is in the fridge.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem to: “I showed the photo to Tom.”",
+"answer": "I showed Tom the photo.",
+"why": ""
+},
+{
+"prompt": "Negue: “There are some apples.”",
+"answer": "There aren’t any apples.",
+"why": ""
+}
+]
+}

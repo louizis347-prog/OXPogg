@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "people é plural",
+"wrong": "The people is angry about the vote.",
+"right": "The people are angry about the vote.",
+"why": "Em português \"o povo\" é singular. Em inglês, people é plural."
+},
+"mcq": [
+{
+"q": "speech =",
+"opts": [
+"pedido",
+"discurso",
+"lei"
+],
+"ans": 1,
+"why": "falso cognato."
+},
+{
+"q": "Qual é voz passiva?",
+"opts": [
+"They passed the law.",
+"The law passes.",
+"The law was passed."
+],
+"ans": 2,
+"why": "was passed."
+},
+{
+"q": "Complete: It is said **___** he will resign.",
+"opts": [
+"that",
+"what",
+"to"
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "Complete: People **___** worried.",
+"opts": [
+"is",
+"was",
+"are"
+],
+"ans": 2,
+"why": "people = plural."
+}
+],
+"fix": [
+{
+"wrong": "He argues to raise taxes.",
+"right": "He argues that we should raise taxes.",
+"why": "that."
+},
+{
+"wrong": "The election realize in May.",
+"right": "The election takes place in May.",
+"why": "verbo."
+},
+{
+"wrong": "They discussed about the law.",
+"right": "They discussed the law.",
+"why": "Sem about."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com is said to: “People say he is honest.”",
+"answer": "He is said to be honest.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The citizen votes.”",
+"answer": "The citizens vote.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have/get done: “Someone prints the ballots.”",
+"answer": "The ballots are printed.",
+"why": ""
+}
+]
+}

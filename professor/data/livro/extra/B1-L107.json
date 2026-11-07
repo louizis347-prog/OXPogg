@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "comparar dados",
+"wrong": "Adults spend 6.5 hours, teens spend more that adults. Make a effort to sleep.",
+"right": "Adults spend 6.5 hours. Teens spend more than adults. Make an effort to sleep.",
+"why": "Em português “mais do que” e “um esforço” (um = a); o brasileiro usa that/a. Em inglês, comparativo usa than e an antes de vogal."
+},
+"mcq": [
+{
+"q": "Teens spend more time ___ adults.",
+"opts": [
+"than",
+"that",
+"then"
+],
+"ans": 0,
+"why": "than."
+},
+{
+"q": "Make ___ effort.",
+"opts": [
+"a",
+"the",
+"an"
+],
+"ans": 2,
+"why": "an."
+},
+{
+"q": "Adults ___ 6.5 hours online.",
+"opts": [
+"spends",
+"spent to",
+"spend"
+],
+"ans": 2,
+"why": "spend."
+},
+{
+"q": "Suggestion:",
+"opts": [
+"Make an effort sleeping.",
+"Make an effort to sleep.",
+"Do an effort."
+],
+"ans": 1,
+"why": "Sugestão."
+}
+],
+"fix": [
+{
+"wrong": "Teens spend more that adults.",
+"right": "Teens spend more than adults.",
+"why": "than."
+},
+{
+"wrong": "Make a effort.",
+"right": "Make an effort.",
+"why": "an."
+},
+{
+"wrong": "Adults spends 6.5 hours.",
+"right": "Adults spend 6.5 hours.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Compare: “Teens spend 7 hours. Adults spend 6.”",
+"answer": "Teens spend more time than adults.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Do an effort.” corrija",
+"answer": "Make an effort.",
+"why": ""
+},
+{
+"prompt": "Reescreva no singular: “Adults spend 6.5 hours.” (An adult)",
+"answer": "An adult spends 6.5 hours.",
+"why": ""
+}
+]
+}

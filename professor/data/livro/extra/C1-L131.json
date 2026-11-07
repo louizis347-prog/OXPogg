@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "associate with",
+"wrong": "Analysts associate the rise of prices.",
+"right": "Analysts associate the rise with prices.",
+"why": "Em português “associar a” → to. Em inglês, associate A with B."
+},
+"mcq": [
+{
+"q": "Analysts associate X ___ Y.",
+"opts": [
+"with",
+"to",
+"by"
+],
+"ans": 0,
+"why": "with."
+},
+{
+"q": "It is known ___ cause delay.",
+"opts": [
+"for",
+"to",
+"that"
+],
+"ans": 1,
+"why": "is known to."
+},
+{
+"q": "The more data, the ___ the model.",
+"opts": [
+"best",
+"good",
+"better"
+],
+"ans": 2,
+"why": "better."
+},
+{
+"q": "Associate with é…",
+"opts": [
+"associar com",
+"associar de",
+"desassociar"
+],
+"ans": 0,
+"why": "with."
+}
+],
+"fix": [
+{
+"wrong": "Analysts associate X to Y.",
+"right": "Analysts associate X with Y.",
+"why": "with."
+},
+{
+"wrong": "It is known cause delay.",
+"right": "It is known to cause delay.",
+"why": "to."
+},
+{
+"wrong": "More data, the better model.",
+"right": "The more data, the better the model.",
+"why": "the…the."
+}
+],
+"rewrite": [
+{
+"prompt": "Use associate with: “Analysts link wealth to health.”",
+"answer": "Analysts associate wealth with health.",
+"why": ""
+},
+{
+"prompt": "Use known to: “People know that it causes delay.” (It…)",
+"answer": "It is known to cause delay.",
+"why": ""
+},
+{
+"prompt": "Use the…the: “With more data the model is better.”",
+"answer": "The more data, the better the model.",
+"why": ""
+}
+]
+}

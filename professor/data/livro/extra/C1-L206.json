@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "say × tell",
+"wrong": "I’m afraid I can’t say you the figures.",
+"right": "I’m afraid I can’t tell you the figures.",
+"why": "Em português “dizer” cobre say e tell. Em inglês, tell leva objeto pessoa (tell you); say não leva (say it to you)."
+},
+"mcq": [
+{
+"q": "“I’m afraid I can’t ___ you.”",
+"opts": [
+"say",
+"speak",
+"tell"
+],
+"ans": 2,
+"why": "tell + pessoa."
+},
+{
+"q": "Limits access:",
+"opts": [
+"on a need-to-know basis",
+"at all times",
+"for free"
+],
+"ans": 0,
+"why": "Need-to-know."
+},
+{
+"q": "Polite refusal:",
+"opts": [
+"No.",
+"I’m afraid I can’t say.",
+"Never."
+],
+"ans": 1,
+"why": "Educado."
+},
+{
+"q": "“Please exercise ___.”",
+"opts": [
+"discrete",
+"discreet",
+"discretion"
+],
+"ans": 2,
+"why": "discretion (substantivo)."
+}
+],
+"fix": [
+{
+"wrong": "Please exercise discrete with this report.",
+"right": "Please exercise discretion with this report.",
+"why": "discretion."
+},
+{
+"wrong": "I said him it was confidential.",
+"right": "I told him it was confidential.",
+"why": "told."
+},
+{
+"wrong": "It would be better to not share it.",
+"right": "It would be better not to share it.",
+"why": "not to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com tell: “I can’t say you the figures.” (corrija)",
+"answer": "I can’t tell you the figures.",
+"why": ""
+},
+{
+"prompt": "Reescreva com need-to-know: “Only people who need it can see this.” (on a …)",
+"answer": "This is on a need-to-know basis.",
+"why": ""
+},
+{
+"prompt": "Reescreva com It would be better not to: “Please do not share it.”",
+"answer": "It would be better not to share it.",
+"why": ""
+}
+]
+}

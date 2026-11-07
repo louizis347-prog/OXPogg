@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal + verbo base",
+"wrong": "She can to speak French.",
+"right": "She can speak French.",
+"why": "Em português 'pode falar' usa infinitivo; o aluno acrescenta to ou -s depois de modal. Modais + base."
+},
+"mcq": [
+{
+"q": "He ___ swim well.",
+"opts": [
+"can",
+"cans",
+"can to"
+],
+"ans": 0,
+"why": "can."
+},
+{
+"q": "You ___ park here. It's allowed.",
+"opts": [
+"mays",
+"may to",
+"may"
+],
+"ans": 2,
+"why": "may."
+},
+{
+"q": "They ___ come tonight. (talvez)",
+"opts": [
+"mights",
+"might to",
+"might"
+],
+"ans": 2,
+"why": "might."
+},
+{
+"q": "Negativa de can:",
+"opts": [
+"can't",
+"don't can",
+"not can"
+],
+"ans": 0,
+"why": "can't."
+}
+],
+"fix": [
+{
+"wrong": "My brother cans cook.",
+"right": "My brother can cook.",
+"why": "sem -s."
+},
+{
+"wrong": "You might to be late.",
+"right": "You might be late.",
+"why": "sem to."
+},
+{
+"wrong": "Do you can swim?",
+"right": "Can you swim?",
+"why": "inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “He can drive.”",
+"answer": "Can he drive?",
+"why": ""
+},
+{
+"prompt": "Negativa: “I can hear you.”",
+"answer": "I can't hear you.",
+"why": ""
+},
+{
+"prompt": "Reescreva com might: “Maybe she knows.”",
+"answer": "She might know.",
+"why": ""
+}
+]
+}

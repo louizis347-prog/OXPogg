@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "go (sentidos)",
+"wrong": "The meeting went wrong, and my bread went bad. It does not go.",
+"right": "The meeting went wrong, and my bread went bad. It does not work.",
+"why": "Em português usamos “dar certo/errado” e “funcionar”. Em inglês, go well/wrong e go bad existem, mas funcionar de máquina = work, e “virar” = go + adjetivo."
+},
+"mcq": [
+{
+"q": "The meeting ___ well.",
+"opts": [
+"went",
+"did",
+"made"
+],
+"ans": 0,
+"why": "go well."
+},
+{
+"q": "The machine doesn’t ___.",
+"opts": [
+"go",
+"work",
+"walk"
+],
+"ans": 1,
+"why": "work."
+},
+{
+"q": "Milk ___ bad.",
+"opts": [
+"becomes to",
+"turns to",
+"goes"
+],
+"ans": 2,
+"why": "go bad."
+},
+{
+"q": "Which is correct? (go (sentidos))",
+"opts": [
+"She went pale.",
+"She did pale.",
+"She made pale."
+],
+"ans": 0,
+"why": "go pale."
+}
+],
+"fix": [
+{
+"wrong": "The plan did wrong.",
+"right": "The plan went wrong.",
+"why": "go wrong."
+},
+{
+"wrong": "This machine doesn't go.",
+"right": "This machine doesn't work.",
+"why": "work."
+},
+{
+"wrong": "I go to home.",
+"right": "I go home.",
+"why": "Home sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Things go well.”",
+"answer": "Things went well.",
+"why": ""
+},
+{
+"prompt": "Reescreva com go: “The milk became bad.”",
+"answer": "The milk went bad.",
+"why": ""
+},
+{
+"prompt": "Reescreva no negativo: “It works.”",
+"answer": "It doesn't work.",
+"why": ""
+}
+]
+}

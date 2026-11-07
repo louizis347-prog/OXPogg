@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "set (sentidos)",
+"wrong": "Set the table. Set a alarm for six. Set a goal. The story is set on Paris in 1920.",
+"right": "Set the table. Set an alarm for six. Set a goal. The story is set in Paris in 1920.",
+"why": "Em português “pôr a mesa”, “colocar despertador” e “ambientado em” usam verbos e preposições diferentes. O brasileiro esquece o artigo an e escolhe on em vez de in."
+},
+"mcq": [
+{
+"q": "Set ___ alarm.",
+"opts": [
+"an",
+"a",
+"the one"
+],
+"ans": 0,
+"why": "an."
+},
+{
+"q": "The story is set ___ Paris.",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 1,
+"why": "in."
+},
+{
+"q": "Set a goal means…",
+"opts": [
+"ajustar o relógio",
+"pôr a mesa",
+"definir uma meta"
+],
+"ans": 2,
+"why": "definir."
+},
+{
+"q": "Set the table =",
+"opts": [
+"sentar",
+"pôr a mesa",
+"servir"
+],
+"ans": 1,
+"why": "pôr a mesa."
+}
+],
+"fix": [
+{
+"wrong": "Set a alarm.",
+"right": "Set an alarm.",
+"why": "an."
+},
+{
+"wrong": "The book is set on London.",
+"right": "The book is set in London.",
+"why": "in."
+},
+{
+"wrong": "Put the table.",
+"right": "Set the table.",
+"why": "set the table."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Ajuste o alarme.” com set (for 7)",
+"answer": "Set an alarm for seven.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The story happens in Rio.” (set)",
+"answer": "The story is set in Rio.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “We set a goal.” (They)",
+"answer": "They set a goal.",
+"why": ""
+}
+]
+}

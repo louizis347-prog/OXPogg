@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "despite of",
+"wrong": "Despite of the rain, we played.",
+"right": "Despite the rain, we played.",
+"why": "O aluno copia \"apesar de\". Em inglês, despite não leva of (só in spite of)."
+},
+"mcq": [
+{
+"q": "Qual usa in spite of?",
+"opts": [
+"In spite the cost, we bought it.",
+"In spite of the cost, we bought it.",
+"In spite of it was costly, we bought it."
+],
+"ans": 1,
+"why": "in spite of + substantivo."
+},
+{
+"q": "Complete: She smiled **___** she was tired.",
+"opts": [
+"despite",
+"in spite of",
+"even though"
+],
+"ans": 2,
+"why": "even though + oração."
+},
+{
+"q": "however é...",
+"opts": [
+"conector entre frases",
+"preposição",
+"verbo"
+],
+"ans": 0,
+"why": "Usa-se com ponto-e-vírgula ou ponto."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Although it rained, but we left.",
+"Although of the rain, we left.",
+"Although it rained, we left."
+],
+"ans": 2,
+"why": "although + oração, sem but."
+}
+],
+"fix": [
+{
+"wrong": "Cars are fast, however trains are cheap.",
+"right": "Cars are fast; however, trains are cheap.",
+"why": "Ponto-e-vírgula."
+},
+{
+"wrong": "In spite the noise, I slept.",
+"right": "In spite of the noise, I slept.",
+"why": "Falta of."
+},
+{
+"wrong": "Despite the fact he was ill, he came.",
+"right": "Despite the fact that he was ill, he came.",
+"why": "the fact that."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com whereas: “Sue likes tea. Joe likes coffee.”",
+"answer": "Sue likes tea, whereas Joe likes coffee.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in spite of: “Despite the rain, we left.”",
+"answer": "In spite of the rain, we left.",
+"why": ""
+},
+{
+"prompt": "Reescreva com even though: “Although he was ill, he came.”",
+"answer": "Even though he was ill, he came.",
+"why": ""
+}
+]
+}

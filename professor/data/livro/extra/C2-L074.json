@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "registro formal demais",
+"wrong": "It is incumbent upon us to ensure that the report is ready.",
+"right": "We’ve got to make sure the report is ready.",
+"why": "O brasileiro tende a calcar o registro formal; no informal usa-se contração e got to, make sure."
+},
+"mcq": [
+{
+"q": "Informal version of “incumbent upon us”:",
+"opts": [
+"We are to",
+"We’ve got to",
+"We shall"
+],
+"ans": 1,
+"why": "We’ve got to."
+},
+{
+"q": "Informal “have access to”:",
+"opts": [
+"possess",
+"obtain",
+"can get"
+],
+"ans": 2,
+"why": "can get."
+},
+{
+"q": "Which is informal?",
+"opts": [
+"We can’t go on.",
+"We cannot proceed.",
+"We are unable to proceed."
+],
+"ans": 0,
+"why": "Contração."
+},
+{
+"q": "Informal “ensure”:",
+"opts": [
+"verify",
+"guarantee",
+"make sure"
+],
+"ans": 2,
+"why": "make sure."
+}
+],
+"fix": [
+{
+"wrong": "We has got to go.",
+"right": "We’ve got to go.",
+"why": "Contração de have got."
+},
+{
+"wrong": "We’ve got make sure of it.",
+"right": "We’ve got to make sure of it.",
+"why": "Faltou to."
+},
+{
+"wrong": "You can to get it online.",
+"right": "You can get it online.",
+"why": "Modal sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Contraia: “We have got to make sure.”",
+"answer": "We’ve got to make sure.",
+"why": ""
+},
+{
+"prompt": "Informal com can: “You have access to the file.”",
+"answer": "You can get the file.",
+"why": ""
+},
+{
+"prompt": "Contraia: “It is not important.”",
+"answer": "It isn’t important.",
+"why": ""
+}
+]
+}

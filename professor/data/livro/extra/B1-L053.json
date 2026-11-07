@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "used to + base",
+"wrong": "We used to meeting on Fridays.",
+"right": "We used to meet on Fridays.",
+"why": "Em português “costumávamos nos reunir” leva infinitivo; o brasileiro tende a pôr -ing ou o verbo flexionado. Em inglês, used to + verbo base; nas negativas e perguntas, use to (didn’t use to)."
+},
+"mcq": [
+{
+"q": "We ___ meet on Fridays.",
+"opts": [
+"used to",
+"use to",
+"were used"
+],
+"ans": 0,
+"why": "used to."
+},
+{
+"q": "We didn’t ___ talk much.",
+"opts": [
+"used to",
+"using to",
+"use to"
+],
+"ans": 2,
+"why": "didn't use to."
+},
+{
+"q": "___ you use to go there?",
+"opts": [
+"Do",
+"Were",
+"Did"
+],
+"ans": 2,
+"why": "Did you use to."
+},
+{
+"q": "Used to describes…",
+"opts": [
+"futuro",
+"hábito que acabou",
+"ação agora"
+],
+"ans": 1,
+"why": "Passado."
+}
+],
+"fix": [
+{
+"wrong": "We didn’t used to talk.",
+"right": "We didn’t use to talk.",
+"why": "use sem -d."
+},
+{
+"wrong": "Did you used to go?",
+"right": "Did you use to go?",
+"why": "use sem -d."
+},
+{
+"wrong": "She used to played.",
+"right": "She used to play.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com used to: “I played every day.” (hábito antigo)",
+"answer": "I used to play every day.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “We used to talk.”",
+"answer": "We didn't use to talk.",
+"why": ""
+},
+{
+"prompt": "Pergunte: “You used to live here.”",
+"answer": "Did you use to live here?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "run a business",
+"wrong": "He leads a small café.",
+"right": "He runs a small café.",
+"why": "O brasileiro tende a usar lead ou direct; em inglês, administrar um negócio é run."
+},
+"mcq": [
+{
+"q": "run a company =",
+"opts": [
+"administrar",
+"correr",
+"fugir"
+],
+"ans": 0,
+"why": "run = gerir."
+},
+{
+"q": "run out of =",
+"opts": [
+"sair correndo",
+"ficar sem",
+"atropelar"
+],
+"ans": 1,
+"why": "run out of."
+},
+{
+"q": "run into =",
+"opts": [
+"bater em",
+"correr para",
+"encontrar por acaso"
+],
+"ans": 2,
+"why": "run into."
+},
+{
+"q": "run over =",
+"opts": [
+"correr",
+"atropelar",
+"passar de"
+],
+"ans": 1,
+"why": "run over."
+}
+],
+"fix": [
+{
+"wrong": "We runned out of time.",
+"right": "We ran out of time.",
+"why": "ran."
+},
+{
+"wrong": "I ran at him on the street yesterday.",
+"right": "I ran into him on the street yesterday.",
+"why": "run into = encontrar por acaso."
+},
+{
+"wrong": "She runs out money.",
+"right": "She runs out of money.",
+"why": "of."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “We run out of sugar.”",
+"answer": "We ran out of sugar.",
+"why": ""
+},
+{
+"prompt": "Reescreva com run: “She manages a hotel.”",
+"answer": "She runs a hotel.",
+"why": ""
+},
+{
+"prompt": "Reescreva com ran into: “I met Tom by chance.”",
+"answer": "I ran into Tom.",
+"why": ""
+}
+]
+}

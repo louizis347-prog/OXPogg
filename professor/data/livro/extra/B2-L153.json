@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "research incontável",
+"wrong": "The researchs show new data.",
+"right": "The research shows new data.",
+"why": "Pesquisa em português tem plural. Em inglês research é incontável."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"research",
+"experiment",
+"result"
+],
+"ans": 0,
+"why": "research."
+},
+{
+"q": "experiment =",
+"opts": [
+"experiência de vida",
+"experimento",
+"experto"
+],
+"ans": 1,
+"why": "falso cognato."
+},
+{
+"q": "Complete: The study **___** that it works.",
+"opts": [
+"suggest me",
+"tell",
+"suggests"
+],
+"ans": 2,
+"why": "suggest that."
+},
+{
+"q": "Qual é passiva?",
+"opts": [
+"They showed.",
+"It was shown.",
+"It shows."
+],
+"ans": 1,
+"why": "was shown."
+}
+],
+"fix": [
+{
+"wrong": "The researchs are new.",
+"right": "The research is new.",
+"why": "Incontável."
+},
+{
+"wrong": "They made an experiment.",
+"right": "They did an experiment.",
+"why": "do an experiment."
+},
+{
+"wrong": "The team told that it works.",
+"right": "The team said that it works.",
+"why": "said that."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Scientists tested the drug.”",
+"answer": "The drug was tested.",
+"why": ""
+},
+{
+"prompt": "Reescreva com said: “‘It works,’ the team said.”",
+"answer": "The team said that it worked.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The result is likely to change.”",
+"answer": "The result is likely to change.",
+"why": ""
+}
+]
+}

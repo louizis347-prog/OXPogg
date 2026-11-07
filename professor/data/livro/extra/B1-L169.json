@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio/preposição",
+"wrong": "I had trouble to set it up.",
+"right": "I had trouble setting it up.",
+"why": "Em português “tive dificuldade em/para configurar”, e o brasileiro usa to + verbo. Em inglês: have trouble + -ing."
+},
+"mcq": [
+{
+"q": "She has trouble **___** English.",
+"opts": [
+"to understand",
+"understanding",
+"understand"
+],
+"ans": 1,
+"why": "Trouble + -ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I had difficulty sleeping.",
+"I had difficulty to sleep.",
+"I had difficulty sleep."
+],
+"ans": 0,
+"why": "Difficulty + -ing."
+},
+{
+"q": "Tive problema com o app = I had trouble **___** the app.",
+"opts": [
+"with using",
+"in use",
+"to using"
+],
+"ans": 0,
+"why": "Trouble with + -ing é possível (with using)."
+},
+{
+"q": "They had **___** time finding it.",
+"opts": [
+"a hard",
+"hardly",
+"hard"
+],
+"ans": 0,
+"why": "Have a hard time + -ing."
+}
+],
+"fix": [
+{
+"wrong": "We had trouble to find the room.",
+"right": "We had trouble finding the room.",
+"why": "Trouble pede -ing."
+},
+{
+"wrong": "He has difficulty to speak fast.",
+"right": "He has difficulty speaking fast.",
+"why": "Difficulty + -ing."
+},
+{
+"wrong": "I have trouble sleeped.",
+"right": "I have trouble sleeping.",
+"why": "Depois de trouble usa-se -ing, não particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com had trouble: “I couldn’t set it up.” (setting)",
+"answer": "I had trouble setting it up.",
+"why": ""
+},
+{
+"prompt": "Use have difficulty: “She finds it hard to read.” (reading)",
+"answer": "She has difficulty reading.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He has trouble hearing.”",
+"answer": "He doesn’t have trouble hearing.",
+"why": ""
+}
+]
+}

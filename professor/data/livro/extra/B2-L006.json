@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I have learning for a year.",
+"right": "I have been learning for a year.",
+"why": "O brasileiro omite been. Present perfect continuous = have/has been + -ing."
+},
+"mcq": [
+{
+"q": "I **___** learning.",
+"opts": [
+"have been",
+"have",
+"am been"
+],
+"ans": 0,
+"why": "Have been."
+},
+{
+"q": "I **___** evaluating my progress.",
+"opts": [
+"has been",
+"been",
+"have been"
+],
+"ans": 2,
+"why": "Have."
+},
+{
+"q": "Reflexão:",
+"opts": [
+"I am thinking since.",
+"I think since.",
+"I have been thinking."
+],
+"ans": 2,
+"why": "PPC."
+},
+{
+"q": "She **___** studying.",
+"opts": [
+"have been",
+"is been",
+"has been"
+],
+"ans": 2,
+"why": "Has."
+}
+],
+"fix": [
+{
+"wrong": "I have learning.",
+"right": "I have been learning.",
+"why": "Been."
+},
+{
+"wrong": "She have been learning.",
+"right": "She has been learning.",
+"why": "Has."
+},
+{
+"wrong": "I have been learn.",
+"right": "I have been learning.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I learn for a year.” (have been)",
+"answer": "I have been learning for a year.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “I have been studying.” (She…)",
+"answer": "She has been studying.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I have been studying.”",
+"answer": "I haven’t been studying.",
+"why": ""
+}
+]
+}

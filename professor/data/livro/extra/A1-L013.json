@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do nas perguntas",
+"wrong": "You work here?",
+"right": "Do you work here?",
+"why": "Em português basta a entonação; em inglês o Present Simple exige do/does no início."
+},
+"mcq": [
+{
+"q": "Short answer: Do you work? ___",
+"opts": [
+"Yes, I am.",
+"Yes, I work.",
+"Yes, I do."
+],
+"ans": 2,
+"why": "Do."
+},
+{
+"q": "Where ___ she live?",
+"opts": [
+"does",
+"do",
+"is"
+],
+"ans": 0,
+"why": "She: does."
+},
+{
+"q": "___ you like pizza?",
+"opts": [
+"Does",
+"Do",
+"Are"
+],
+"ans": 1,
+"why": "You: do."
+},
+{
+"q": "___ he play tennis?",
+"opts": [
+"Do",
+"Is",
+"Does"
+],
+"ans": 2,
+"why": "He: does."
+}
+],
+"fix": [
+{
+"wrong": "Do she like tea?",
+"right": "Does she like tea?",
+"why": "She: does."
+},
+{
+"wrong": "Are you like music?",
+"right": "Do you like music?",
+"why": "Like não usa be."
+},
+{
+"wrong": "You work here?",
+"right": "Do you work here?",
+"why": "Falta do."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “They play soccer.”",
+"answer": "Do they play soccer?",
+"why": ""
+},
+{
+"prompt": "Resposta curta negativa, sem contração: “Does he swim?”",
+"answer": "No, he does not.",
+"why": "Sem contração."
+},
+{
+"prompt": "Faça pergunta: “You live in Rio.”",
+"answer": "Do you live in Rio?",
+"why": ""
+}
+]
+}

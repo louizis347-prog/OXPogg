@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "imperativo negativo",
+"wrong": "Not trust one source.",
+"right": "Do not trust one source.",
+"why": "Em português o negativo é “não confie”, e o aluno omite do. Em inglês, o imperativo negativo exige Do not/Don’t."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Do not trust one source.",
+"Not trust one source.",
+"No trust one source."
+],
+"ans": 0,
+"why": "Do not."
+},
+{
+"q": "Which set marks the order of steps?",
+"opts": [
+"If, since",
+"First, … Next, … Then,",
+"Because"
+],
+"ans": 1,
+"why": "Sequência."
+},
+{
+"q": "“If sources ___, say so.”",
+"opts": [
+"conflicts",
+"conflicting",
+"conflict"
+],
+"ans": 2,
+"why": "Presente."
+},
+{
+"q": "Purpose: “Ask who benefits ___ spot bias.”",
+"opts": [
+"in order to",
+"for",
+"by"
+],
+"ans": 0,
+"why": "in order to."
+}
+],
+"fix": [
+{
+"wrong": "Don’t checking the date.",
+"right": "Don’t check the date.",
+"why": "Base."
+},
+{
+"wrong": "Ask who benefits for spot bias.",
+"right": "Ask who benefits in order to spot bias.",
+"why": "in order to."
+},
+{
+"wrong": "If sources conflicts, say so.",
+"right": "If sources conflict, say so.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativo: “Trust one source.”",
+"answer": "Do not trust one source.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in order to: “Ask who benefits to find bias.”",
+"answer": "Ask who benefits in order to find bias.",
+"why": ""
+},
+{
+"prompt": "Reescreva com If: “When sources conflict, say so.” (If…)",
+"answer": "If sources conflict, say so.",
+"why": ""
+}
+]
+}

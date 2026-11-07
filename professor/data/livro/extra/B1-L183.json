@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "família de palavras",
+"wrong": "Readers rely in us.",
+"right": "Readers rely on us.",
+"why": "Em português “confiar em”, então o brasileiro usa in. Em inglês: rely on."
+},
+"mcq": [
+{
+"q": "Readers **___** on us.",
+"opts": [
+"rely",
+"reliability",
+"reliable"
+],
+"ans": 0,
+"why": "Verbo: rely."
+},
+{
+"q": "It is a **___** source.",
+"opts": [
+"rely",
+"reliable",
+"reliability"
+],
+"ans": 1,
+"why": "Adjetivo antes de substantivo."
+},
+{
+"q": "The **___** of the site is high.",
+"opts": [
+"unreliable",
+"reliably",
+"reliability"
+],
+"ans": 2,
+"why": "Substantivo: reliability."
+},
+{
+"q": "O oposto de reliable:",
+"opts": [
+"relying",
+"reliability",
+"unreliable"
+],
+"ans": 2,
+"why": "Prefixo un-."
+}
+],
+"fix": [
+{
+"wrong": "You can rely in him.",
+"right": "You can rely on him.",
+"why": "Rely on."
+},
+{
+"wrong": "It is a rely source.",
+"right": "It is a reliable source.",
+"why": "Adjetivo = reliable."
+},
+{
+"wrong": "The site is unreliability.",
+"right": "The site is unreliable.",
+"why": "Adjetivo após be."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por um adjetivo: “We can rely on this app.” → “This app is …”",
+"answer": "This app is reliable.",
+"why": ""
+},
+{
+"prompt": "Forme o oposto: “The report is reliable.” (not reliable)",
+"answer": "The report is unreliable.",
+"why": ""
+},
+{
+"prompt": "Use rely: “They trust us.”",
+"answer": "They rely on us.",
+"why": ""
+}
+]
+}

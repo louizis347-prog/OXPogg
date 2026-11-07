@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "might",
+"wrong": "Try as you can, you will still be anchored.",
+"right": "Try as you might, you will still be anchored.",
+"why": "A estrutura fixa try as + sujeito + might aparece em concessivas; o aluno troca por can pela tradução “por mais que tente”."
+},
+"mcq": [
+{
+"q": "“Try as you ___, you will be anchored.”",
+"opts": [
+"might",
+"will",
+"would"
+],
+"ans": 0,
+"why": "might."
+},
+{
+"q": "“A high anchor ___ a high price.”",
+"opts": [
+"gives rise",
+"gives rise to",
+"gives to rise"
+],
+"ans": 1,
+"why": "give rise to."
+},
+{
+"q": "“How do you ___ that figure?”",
+"opts": [
+"account on",
+"count for",
+"account for"
+],
+"ans": 2,
+"why": "account for."
+},
+{
+"q": "“We must scale ___ the offer.”",
+"opts": [
+"back",
+"in",
+"at"
+],
+"ans": 0,
+"why": "scale back."
+}
+],
+"fix": [
+{
+"wrong": "Much as we like to think rational, we are biased.",
+"right": "Much as we like to think we are rational, we are biased.",
+"why": "Oração completa."
+},
+{
+"wrong": "The first number gives rise a high price.",
+"right": "The first number gives rise to a high price.",
+"why": "to."
+},
+{
+"wrong": "They scale back it slowly.",
+"right": "They scale it back slowly.",
+"why": "Pronome no meio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Much as: “Although we like to think we are rational, we are biased.”",
+"answer": "Much as we like to think we are rational, we are biased.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give rise to: “The first number causes a high price.”",
+"answer": "The first number gives rise to a high price.",
+"why": ""
+},
+{
+"prompt": "Substitua por it: “They scaled back the offer.”",
+"answer": "They scaled it back.",
+"why": ""
+}
+]
+}

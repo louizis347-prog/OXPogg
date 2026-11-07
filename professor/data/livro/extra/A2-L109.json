@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição + -ing",
+"wrong": "He left without to say goodbye.",
+"right": "He left without saying goodbye.",
+"why": "Em português 'sem dizer' usa infinitivo; em inglês, depois de preposição o verbo vai em -ing."
+},
+"mcq": [
+{
+"q": "She left after ___ lunch.",
+"opts": [
+"eat",
+"to eat",
+"eating"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "Before ___ , wash your hands.",
+"opts": [
+"eat",
+"to eat",
+"eating"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "He's good at ___ .",
+"opts": [
+"to cook",
+"cooking",
+"cook"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "I'm tired of ___ .",
+"opts": [
+"to wait",
+"wait",
+"waiting"
+],
+"ans": 2,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "Before to eat, wash your hands.",
+"right": "Before eating, wash your hands.",
+"why": "-ing."
+},
+{
+"wrong": "She left without say bye.",
+"right": "She left without saying bye.",
+"why": "-ing."
+},
+{
+"wrong": "After to finish, I went home.",
+"right": "After finishing, I went home.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Wash your hands. Then eat.” com before",
+"answer": "Wash your hands before eating.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I'm good. I draw.” com at",
+"answer": "I'm good at drawing.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She entered. She didn't knock.” com without",
+"answer": "She entered without knocking.",
+"why": ""
+}
+]
+}

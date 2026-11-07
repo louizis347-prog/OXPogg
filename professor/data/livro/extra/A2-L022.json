@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "did na resposta",
+"wrong": "Did you like it? Yes, I liked.",
+"right": "Yes, I did.",
+"why": "Em português respondemos repetindo o verbo ('Gostei'); em inglês a resposta curta usa did."
+},
+"mcq": [
+{
+"q": "Did she call? ___",
+"opts": [
+"Yes, she called.",
+"Yes, she did.",
+"Yes, she does."
+],
+"ans": 1,
+"why": "did."
+},
+{
+"q": "Did you eat? No, ___",
+"opts": [
+"I didn't.",
+"I don't.",
+"I wasn't."
+],
+"ans": 0,
+"why": "didn't."
+},
+{
+"q": "___ you go out last night?",
+"opts": [
+"Are",
+"Did",
+"Do"
+],
+"ans": 1,
+"why": "Did."
+},
+{
+"q": "What ___ they buy?",
+"opts": [
+"did",
+"does",
+"do"
+],
+"ans": 0,
+"why": "did."
+}
+],
+"fix": [
+{
+"wrong": "Did he win? Yes, he wins.",
+"right": "Did he win? Yes, he did.",
+"why": "did."
+},
+{
+"wrong": "Did you saw her?",
+"right": "Did you see her?",
+"why": "base."
+},
+{
+"wrong": "Did you went there?",
+"right": "Did you go there?",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “He won.”",
+"answer": "Did he win?",
+"why": ""
+},
+{
+"prompt": "Resposta curta negativa a “Did you call?”: “No, ___”",
+"answer": "No, I didn't.",
+"why": ""
+},
+{
+"prompt": "Pergunta com when: “You met him.”",
+"answer": "When did you meet him?",
+"why": ""
+}
+]
+}

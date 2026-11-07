@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "causativa",
+"wrong": "We repaired the streets by us.",
+"right": "We got the streets repaired.",
+"why": "O brasileiro diz “consertamos as ruas” sem indicar que outro fez. Have/get + objeto + particípio indica serviço feito por outros."
+},
+"mcq": [
+{
+"q": "I had my car **___**.",
+"opts": [
+"repaired",
+"repairing",
+"repair"
+],
+"ans": 0,
+"why": "Particípio."
+},
+{
+"q": "She got her hair **___**.",
+"opts": [
+"to cut",
+"cutted",
+"cut"
+],
+"ans": 2,
+"why": "Cut é irregular."
+},
+{
+"q": "Experiência negativa: He had his bike **___**.",
+"opts": [
+"stole",
+"stolen",
+"steal"
+],
+"ans": 1,
+"why": "Particípio de steal."
+},
+{
+"q": "Serviço pago:",
+"opts": [
+"We got fix it.",
+"We fixed to it.",
+"We got it fixed."
+],
+"ans": 2,
+"why": "Get + obj + particípio."
+}
+],
+"fix": [
+{
+"wrong": "I had cut my hair yesterday.",
+"right": "I had my hair cut yesterday.",
+"why": "Para serviço: have + obj + particípio."
+},
+{
+"wrong": "We got the streets repair.",
+"right": "We got the streets repaired.",
+"why": "Particípio."
+},
+{
+"wrong": "She had her nails paint.",
+"right": "She had her nails painted.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com get: “Someone repaired the streets.” (We got…)",
+"answer": "We got the streets repaired.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “A barber cut my hair.”",
+"answer": "I had my hair cut.",
+"why": ""
+},
+{
+"prompt": "Reescreva com had: “A painter painted her nails.” (She…)",
+"answer": "She had her nails painted.",
+"why": ""
+}
+]
+}

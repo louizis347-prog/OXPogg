@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "quantificadores",
+"wrong": "I have much friends.",
+"right": "I have many friends.",
+"why": "Em português 'muitos amigos' e 'muito dinheiro' usam a mesma palavra; em inglês many e much diferem."
+},
+"mcq": [
+{
+"q": "How ___ people?",
+"opts": [
+"many",
+"little",
+"much"
+],
+"ans": 0,
+"why": "many."
+},
+{
+"q": "It is ___ small to see.",
+"opts": [
+"too",
+"very much",
+"enough"
+],
+"ans": 0,
+"why": "too."
+},
+{
+"q": "You ___ park here.",
+"opts": [
+"don't have to",
+"mustn't",
+"must"
+],
+"ans": 1,
+"why": "proibição."
+},
+{
+"q": "Passado de speak:",
+"opts": [
+"spoke",
+"speaks",
+"speaked"
+],
+"ans": 0,
+"why": "spoke."
+}
+],
+"fix": [
+{
+"wrong": "I saved a few cash.",
+"right": "I saved a little cash.",
+"why": "incontável."
+},
+{
+"wrong": "It's enough big.",
+"right": "It's big enough.",
+"why": "depois."
+},
+{
+"wrong": "You don't have to touch it. It's hot.",
+"right": "You mustn't touch it. It's hot.",
+"why": "proibição."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “How ___ money?”",
+"answer": "How much money?",
+"why": ""
+},
+{
+"prompt": "Complete: “She is old ___ to vote.”",
+"answer": "She is old enough to vote.",
+"why": ""
+},
+{
+"prompt": "Passado: “He speaks Spanish.”",
+"answer": "He spoke Spanish.",
+"why": ""
+}
+]
+}

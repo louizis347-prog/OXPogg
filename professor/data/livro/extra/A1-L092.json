@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome repetido",
+"wrong": "I see she.",
+"right": "I see her.",
+"why": "O brasileiro usa o sujeito (ela) como objeto; objeto é her."
+},
+"mcq": [
+{
+"q": "They call ___. (nós)",
+"opts": [
+"us",
+"we",
+"our"
+],
+"ans": 0,
+"why": "Objeto."
+},
+{
+"q": "Give it to ___. (eu)",
+"opts": [
+"I",
+"me",
+"my"
+],
+"ans": 1,
+"why": "Objeto."
+},
+{
+"q": "The dogs are hungry. Feed ___.",
+"opts": [
+"they",
+"their",
+"them"
+],
+"ans": 2,
+"why": "Objeto."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She loves him.",
+"She loves he.",
+"She love him."
+],
+"ans": 0,
+"why": "Him."
+}
+],
+"fix": [
+{
+"wrong": "I see she.",
+"right": "I see her.",
+"why": "Her."
+},
+{
+"wrong": "He likes we.",
+"right": "He likes us.",
+"why": "Us."
+},
+{
+"wrong": "Call he, please.",
+"right": "Call him, please.",
+"why": "Him."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por pronome: “She calls Tom.”",
+"answer": "She calls him.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “He helps my brother and me.”",
+"answer": "He helps us.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “I see the dogs.”",
+"answer": "I see them.",
+"why": ""
+}
+]
+}

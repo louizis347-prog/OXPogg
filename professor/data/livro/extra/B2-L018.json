@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "They accused him for lying.",
+"right": "They accused him of lying.",
+"why": "Português “acusar de” gera of, mas o brasileiro troca por for (de blame for). Accuse of / blame for."
+},
+"mcq": [
+{
+"q": "They accused him **___** lying.",
+"opts": [
+"for",
+"of",
+"to"
+],
+"ans": 1,
+"why": "Of."
+},
+{
+"q": "I blame you **___** the delay.",
+"opts": [
+"for",
+"to",
+"of"
+],
+"ans": 0,
+"why": "For."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She accused me for steal.",
+"She accused me of stealing.",
+"She accused me to steal."
+],
+"ans": 1,
+"why": "Of + -ing."
+},
+{
+"q": "Blame someone:",
+"opts": [
+"to + base",
+"of + -ing",
+"for + -ing"
+],
+"ans": 2,
+"why": "For."
+}
+],
+"fix": [
+{
+"wrong": "He accused her to lie.",
+"right": "He accused her of lying.",
+"why": "Of."
+},
+{
+"wrong": "They blamed him of the delay.",
+"right": "They blamed him for the delay.",
+"why": "For."
+},
+{
+"wrong": "She accused me of steal.",
+"right": "She accused me of stealing.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “He lied.” + “They accused him…”",
+"answer": "They accused him of lying.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Tom lost the keys. I blame him.” (…for)",
+"answer": "I blame him for losing the keys.",
+"why": ""
+},
+{
+"prompt": "Passado: “They accuse him of lying.”",
+"answer": "They accused him of lying.",
+"why": ""
+}
+]
+}

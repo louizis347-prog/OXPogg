@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome repetido",
+"wrong": "The cave that we visited it was cold.",
+"right": "The cave that we visited was cold.",
+"why": "Em português a oração relativa pode vir com pronome retomado na fala (“a caverna que a gente visitou ela”). Em inglês that já é o objeto."
+},
+"mcq": [
+{
+"q": "You work here, **___**?",
+"opts": [
+"don’t you",
+"aren’t you",
+"haven’t you"
+],
+"ans": 0,
+"why": "Presente com verbo comum → don’t you."
+},
+{
+"q": "The woman **___** lives here is a guide.",
+"opts": [
+"who",
+"where",
+"whose"
+],
+"ans": 0,
+"why": "Pessoa + sujeito = who."
+},
+{
+"q": "The valley **___** we camped is beautiful.",
+"opts": [
+"who",
+"where",
+"whose"
+],
+"ans": 1,
+"why": "Lugar = where."
+},
+{
+"q": "It isn’t far, **___**?",
+"opts": [
+"does it",
+"is it",
+"isn’t it"
+],
+"ans": 1,
+"why": "Negativa → tag positiva."
+}
+],
+"fix": [
+{
+"wrong": "The rock who we found is old.",
+"right": "The rock that we found is old.",
+"why": "Coisa: that/which, não who."
+},
+{
+"wrong": "She isn’t here, isn’t she?",
+"right": "She isn’t here, is she?",
+"why": "Polaridade oposta."
+},
+{
+"wrong": "He is a man whose he lives in a cave.",
+"right": "He is a man who lives in a cave.",
+"why": "Whose indica posse; aqui falta só o sujeito who."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com where: “This is the valley. We met there.”",
+"answer": "This is the valley where we met.",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “You like sand.”",
+"answer": "You like sand, don’t you?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “The cave isn’t deep.”",
+"answer": "The cave isn’t deep, is it?",
+"why": ""
+}
+]
+}

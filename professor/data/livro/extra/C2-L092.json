@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Rarely a play has held an audience so tightly.",
+"right": "Rarely has a play held an audience so tightly.",
+"why": "Em português a ordem não muda após “raramente”; em inglês advérbio negativo no início exige auxiliar antes do sujeito."
+},
+"mcq": [
+{
+"q": "Emphatic inversion:",
+"opts": [
+"Rarely has a play held us.",
+"Rarely has held a play us.",
+"Rarely a play has held us."
+],
+"ans": 0,
+"why": "Aux + sujeito."
+},
+{
+"q": "Descriptive participle:",
+"opts": [
+"a performance fill grief",
+"a performance filled with grief",
+"a performance filling of"
+],
+"ans": 1,
+"why": "Particípio."
+},
+{
+"q": "Never ___ I seen it.",
+"opts": [
+"did",
+"has",
+"have"
+],
+"ans": 2,
+"why": "Never have I seen."
+},
+{
+"q": "Inversion makes the line…",
+"opts": [
+"more emphatic",
+"more casual",
+"negative"
+],
+"ans": 0,
+"why": "Ênfase."
+}
+],
+"fix": [
+{
+"wrong": "Seldom a speaker has moved us.",
+"right": "Seldom has a speaker moved us.",
+"why": "Inversão."
+},
+{
+"wrong": "Rarely has a play hold us so tightly.",
+"right": "Rarely has a play held us so tightly.",
+"why": "Particípio após has."
+},
+{
+"wrong": "Never I have seen it.",
+"right": "Never have I seen it.",
+"why": "Aux antes de I."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “A play has rarely held us so tightly.”",
+"answer": "Rarely has a play held us so tightly.",
+"why": ""
+},
+{
+"prompt": "Inverta: “I have never seen it.”",
+"answer": "Never have I seen it.",
+"why": ""
+},
+{
+"prompt": "Inverta: “She seldom speaks.”",
+"answer": "Seldom does she speak.",
+"why": ""
+}
+]
+}

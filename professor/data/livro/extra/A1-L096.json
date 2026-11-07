@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hold = segurar",
+"wrong": "Hold the number of your phone.",
+"right": "Write down your phone number.",
+"why": "O português usa \"segurar\" amplamente; hold é segurar com as mãos, esperar (ao telefone) ou conter."
+},
+"mcq": [
+{
+"q": "“Segure minha bolsa” =",
+"opts": [
+"Keep my bag always.",
+"Hold my bag.",
+"Take my bag."
+],
+"ans": 1,
+"why": "Hold."
+},
+{
+"q": "“Um momento, não desligue” (telefone) =",
+"opts": [
+"Keep on, please.",
+"Wait down.",
+"Hold on, please."
+],
+"ans": 2,
+"why": "Hold on."
+},
+{
+"q": "“Segure minha mão” =",
+"opts": [
+"Hold my hand.",
+"Keep my hand.",
+"Put my hand."
+],
+"ans": 0,
+"why": "Hold."
+},
+{
+"q": "“Esta sala comporta 50 pessoas” =",
+"opts": [
+"This room has to 50 people.",
+"This room holds 50 people.",
+"This room puts 50."
+],
+"ans": 1,
+"why": "Hold."
+}
+],
+"fix": [
+{
+"wrong": "Keep my bag, please.",
+"right": "Hold my bag, please.",
+"why": "Hold."
+},
+{
+"wrong": "Hold in, please. (telefone)",
+"right": "Hold on, please.",
+"why": "Hold on."
+},
+{
+"wrong": "She holds hands with me always.",
+"right": "She holds my hand.",
+"why": "Hold."
+}
+],
+"rewrite": [
+{
+"prompt": "Use hold: “Segure a porta.”",
+"answer": "Hold the door.",
+"why": ""
+},
+{
+"prompt": "Use hold on: “Wait, please.” (ao telefone)",
+"answer": "Hold on, please.",
+"why": ""
+},
+{
+"prompt": "Use hold: “She has the baby in her arms.”",
+"answer": "She is holding the baby.",
+"why": ""
+}
+]
+}

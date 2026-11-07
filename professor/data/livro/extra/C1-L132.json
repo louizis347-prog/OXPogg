@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "account for",
+"wrong": "How do you account the drop?",
+"right": "How do you account for the drop?",
+"why": "Em português “explicar a queda” é transitivo direto. Em inglês, account exige for."
+},
+"mcq": [
+{
+"q": "Gas ___ for 40% of emissions.",
+"opts": [
+"accounting",
+"accounts",
+"account"
+],
+"ans": 1,
+"why": "accounts for."
+},
+{
+"q": "How do you account ___ the drop?",
+"opts": [
+"of",
+"to",
+"for"
+],
+"ans": 2,
+"why": "for."
+},
+{
+"q": "Account for pode significar…",
+"opts": [
+"explicar ou representar",
+"apenas contar",
+"pagar"
+],
+"ans": 0,
+"why": "Dois sentidos."
+},
+{
+"q": "The report ___ the delay by weather.",
+"opts": [
+"accounts of",
+"accounts for",
+"accounts to"
+],
+"ans": 1,
+"why": "accounts for."
+}
+],
+"fix": [
+{
+"wrong": "Gas accounts 40% of emissions.",
+"right": "Gas accounts for 40% of emissions.",
+"why": "for."
+},
+{
+"wrong": "How do you account of the drop?",
+"right": "How do you account for the drop?",
+"why": "for."
+},
+{
+"wrong": "Wind account for the delay.",
+"right": "Wind accounts for the delay.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Use account for: “Gas is 40% of emissions.”",
+"answer": "Gas accounts for 40% of emissions.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “How do you explain the drop?” (account for)",
+"answer": "How do you account for the drop?",
+"why": ""
+},
+{
+"prompt": "Passado: “Wind accounts for the delay.”",
+"answer": "Wind accounted for the delay.",
+"why": ""
+}
+]
+}

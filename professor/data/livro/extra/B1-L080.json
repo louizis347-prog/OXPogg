@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make/let/have/help",
+"wrong": "I help them to understand and I let they decide.",
+"right": "I help them understand, and I let them decide.",
+"why": "Em português “ajudo-os a entender” leva preposição; o brasileiro usa to e pronome sujeito (they). Em inglês, help aceita com ou sem to; let/make/have exigem objeto e base; objeto = them."
+},
+"mcq": [
+{
+"q": "I let ___ decide.",
+"opts": [
+"them",
+"they",
+"their"
+],
+"ans": 0,
+"why": "Objeto."
+},
+{
+"q": "It makes people ___ time.",
+"opts": [
+"lose",
+"to lose",
+"losing"
+],
+"ans": 0,
+"why": "make + base."
+},
+{
+"q": "I have them ___ weekly.",
+"opts": [
+"to meet",
+"meeting",
+"meet"
+],
+"ans": 2,
+"why": "have + base."
+},
+{
+"q": "Which is wrong? (make/let/have/help)",
+"opts": [
+"I let them decide.",
+"I help them decide.",
+"I let them to decide."
+],
+"ans": 2,
+"why": "let sem to."
+}
+],
+"fix": [
+{
+"wrong": "I let they decide.",
+"right": "I let them decide.",
+"why": "Objeto."
+},
+{
+"wrong": "It makes people to lose time.",
+"right": "It makes people lose time.",
+"why": "Sem to."
+},
+{
+"wrong": "I have them to meet weekly.",
+"right": "I have them meet weekly.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com let: “I allow them to decide.”",
+"answer": "I let them decide.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “I ask them to meet weekly.”",
+"answer": "I have them meet weekly.",
+"why": ""
+},
+{
+"prompt": "Reescreva com make: “The delay causes people to lose time.”",
+"answer": "The delay makes people lose time.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + -ing / have + pp",
+"wrong": "I enjoy to cook, avoid to be late and I had repaired my car.",
+"right": "I enjoy cooking, avoid being late, and I had my car repaired.",
+"why": "Revisão: em português infinitivo após gostar/evitar e “consertei meu carro” mistura quem faz. Em inglês, enjoy/avoid + -ing; have + obj + pp."
+},
+"mcq": [
+{
+"q": "I avoid ___ late.",
+"opts": [
+"to be",
+"be",
+"being"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "I ___ my car repaired.",
+"opts": [
+"made",
+"had",
+"did"
+],
+"ans": 1,
+"why": "have + obj + pp."
+},
+{
+"q": "It ___ the battery (impossível).",
+"opts": [
+"can’t be",
+"can’t been",
+"can’t to be"
+],
+"ans": 0,
+"why": "can’t be."
+},
+{
+"q": "He keeps ___ the same mistake.",
+"opts": [
+"making",
+"to make",
+"make"
+],
+"ans": 0,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I mind to wait.",
+"right": "I mind waiting.",
+"why": "-ing."
+},
+{
+"wrong": "I had cut my hair.",
+"right": "I had my hair cut.",
+"why": "Ordem."
+},
+{
+"wrong": "It can’t has been Leo.",
+"right": "It can't have been Leo.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com mind: “Is it a problem for you to wait?” (Do you mind...)",
+"answer": "Do you mind waiting?",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “Someone fixed my phone.”",
+"answer": "I had my phone fixed.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Ana didn’t do it. It is impossible.”",
+"answer": "It can't have been Ana.",
+"why": ""
+}
+]
+}

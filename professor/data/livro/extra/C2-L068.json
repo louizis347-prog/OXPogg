@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "paralelismo",
+"wrong": "It was not so much the joke than its timing.",
+"right": "It was not so much the joke as its timing.",
+"why": "Em português “não tanto X quanto/do que Y”; em inglês é not so much X as Y, nunca than."
+},
+"mcq": [
+{
+"q": "not so much X **___** Y",
+"opts": [
+"that",
+"as",
+"than"
+],
+"ans": 1,
+"why": "as."
+},
+{
+"q": "Less X **___** Y",
+"opts": [
+"as",
+"than",
+"of"
+],
+"ans": 1,
+"why": "Less…than."
+},
+{
+"q": "Which pair is grammatically balanced?",
+"opts": [
+"not so much joke as to time",
+"not so much joking as its timing",
+"not so much the joke as its timing"
+],
+"ans": 2,
+"why": "Mesma classe."
+},
+{
+"q": "Meaning of “less an apology than a boast”:",
+"opts": [
+"more a boast",
+"equal",
+"more an apology"
+],
+"ans": 0,
+"why": "Mais vangloria."
+}
+],
+"fix": [
+{
+"wrong": "It was less an apology as a boast.",
+"right": "It was less an apology than a boast.",
+"why": "Less…than."
+},
+{
+"wrong": "Not so much he spoke than he sang.",
+"right": "Not so much he spoke as he sang.",
+"why": "as."
+},
+{
+"wrong": "It was not so much the joke as it was late.",
+"right": "It was not so much the joke as the timing.",
+"why": "Paralelo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com “less…than”: “It was not so much an apology as a boast.”",
+"answer": "It was less an apology than a boast.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “not so much…as”: “It was less the joke than the timing.”",
+"answer": "It was not so much the joke as the timing.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “It is not so much luck as skill.”",
+"answer": "It was not so much luck as skill.",
+"why": ""
+}
+]
+}

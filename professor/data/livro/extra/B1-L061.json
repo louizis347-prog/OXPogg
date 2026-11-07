@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would para hábito",
+"wrong": "We would to climb the tree.",
+"right": "We would climb the tree.",
+"why": "Em português “subíamos na árvore” é hábito e “morávamos” é estado. Em inglês would só serve para ações repetidas; estado exige used to ou passado simples."
+},
+"mcq": [
+{
+"q": "We ___ climb the tree (hábito).",
+"opts": [
+"would",
+"would to",
+"woulds"
+],
+"ans": 0,
+"why": "would + base."
+},
+{
+"q": "We ___ share it (negativa).",
+"opts": [
+"wouldn’t",
+"don’t would",
+"would not to"
+],
+"ans": 0,
+"why": "wouldn’t."
+},
+{
+"q": "I ___ live there (estado).",
+"opts": [
+"would",
+"used to",
+"am"
+],
+"ans": 1,
+"why": "used to."
+},
+{
+"q": "Which is wrong? (would para hábito)",
+"opts": [
+"I used to be tall.",
+"I was tall.",
+"I would be tall as a child."
+],
+"ans": 2,
+"why": "would não para estado."
+}
+],
+"fix": [
+{
+"wrong": "We would to play.",
+"right": "We would play.",
+"why": "Sem to."
+},
+{
+"wrong": "She would be happy back then.",
+"right": "She used to be happy back then.",
+"why": "Estado."
+},
+{
+"wrong": "We wouldn't to share.",
+"right": "We wouldn't share.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com would: “We climbed the tree every summer.”",
+"answer": "We would climb the tree every summer.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “We would share it.”",
+"answer": "We wouldn't share it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com used to (estado): “I had a dog when I was a child.”",
+"answer": "I used to have a dog when I was a child.",
+"why": ""
+}
+]
+}

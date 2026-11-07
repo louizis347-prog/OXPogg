@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "avaliação unidade 9",
+"wrong": "Can you tell me what time is it? He is afraid to fail. The apps who help me are free.",
+"right": "Can you tell me what time it is? He is afraid of failing. The apps that help me are free.",
+"why": "Itens da avaliação: ordem afirmativa na pergunta indireta, adjetivo + preposição + -ing e who para pessoas, that para coisas. O português não faz essas distinções."
+},
+"mcq": [
+{
+"q": "Do you know what time ___ right now?",
+"opts": [
+"is it",
+"it is",
+"does it"
+],
+"ans": 1,
+"why": "Ordem."
+},
+{
+"q": "He is afraid ___ failing.",
+"opts": [
+"to",
+"of",
+"from"
+],
+"ans": 1,
+"why": "of."
+},
+{
+"q": "The apps ___ help me are free.",
+"opts": [
+"that",
+"who",
+"where"
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "The place ___ we met is closed.",
+"opts": [
+"who",
+"what",
+"where"
+],
+"ans": 2,
+"why": "where."
+}
+],
+"fix": [
+{
+"wrong": "I wonder where is he.",
+"right": "I wonder where he is.",
+"why": "Ordem."
+},
+{
+"wrong": "She is good at to draw.",
+"right": "She is good at drawing.",
+"why": "-ing."
+},
+{
+"wrong": "The woman which called is my aunt.",
+"right": "The woman who called is my aunt.",
+"why": "who."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne indireta: “What time is it?” (Can you tell me...)",
+"answer": "Can you tell me what time it is?",
+"why": ""
+},
+{
+"prompt": "Una com that: “The app is free. It helps me.”",
+"answer": "The app that helps me is free.",
+"why": ""
+},
+{
+"prompt": "Reescreva com afraid: “He fears failing.”",
+"answer": "He is afraid of failing.",
+"why": ""
+}
+]
+}

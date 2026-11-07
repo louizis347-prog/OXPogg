@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "para + verbo",
+"wrong": "I am writing for complain about my stay.",
+"right": "I am writing to complain about my stay.",
+"why": "Em português dizemos “escrevo para reclamar” e muitos usam for + verbo. Em inglês, a finalidade com verbo pede to + infinitivo; for só vem antes de substantivo (for a refund)."
+},
+"mcq": [
+{
+"q": "Which opening states the purpose of a complaint letter?",
+"opts": [
+"I am writing to complain about the heating.",
+"I am writing for complaining.",
+"I am writing that I complain."
+],
+"ans": 0,
+"why": "Finalidade com verbo: to + infinitivo."
+},
+{
+"q": "Which sentence politely **asks for** a refund?",
+"opts": [
+"I want my money now.",
+"I would appreciate a full refund.",
+"Give me a refund."
+],
+"ans": 1,
+"why": "I would appreciate… é o pedido formal típico das provas."
+},
+{
+"q": "What is the best order for the **body** of a complaint?",
+"opts": [
+"Request, then chronological facts, then greeting",
+"Closing, then facts",
+"Chronological facts, then the request"
+],
+"ans": 2,
+"why": "Fatos em ordem cronológica e depois o pedido."
+},
+{
+"q": "Which word shows a formal **tone**?",
+"opts": [
+"unacceptable",
+"awful",
+"crap"
+],
+"ans": 0,
+"why": "Registro formal usa adjetivos como unacceptable."
+}
+],
+"fix": [
+{
+"wrong": "The heating failed and nobody repair it.",
+"right": "The heating failed and nobody repaired it.",
+"why": "Passado: repaired."
+},
+{
+"wrong": "I am writing for request a refund.",
+"right": "I am writing to request a refund.",
+"why": "to + infinitivo para finalidade."
+},
+{
+"wrong": "I would appreciate to receive an apology.",
+"right": "I would appreciate receiving an apology.",
+"why": "I would appreciate + -ing (ou + substantivo)."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com I would appreciate: “I want a refund.”",
+"answer": "I would appreciate a refund.",
+"why": ""
+},
+{
+"prompt": "Reescreva com to + infinitivo: “My purpose is the complaint about the room.” (comece com I am writing)",
+"answer": "I am writing to complain about the room.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The technician does not come.”",
+"answer": "The technician did not come.",
+"why": ""
+}
+]
+}

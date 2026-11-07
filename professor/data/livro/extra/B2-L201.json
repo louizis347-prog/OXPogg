@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "explain me",
+"wrong": "The speaker explained me the process.",
+"right": "The speaker explained the process to me.",
+"why": "Em português \"explicou-me\". Em inglês, explain pede to antes da pessoa."
+},
+"mcq": [
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto não diz",
+"o texto nega",
+"o texto confirma"
+],
+"ans": 0,
+"why": "Não mencionado."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a tool new useful",
+"a useful new tool",
+"a new tool useful"
+],
+"ans": 1,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"a research",
+"researches",
+"research"
+],
+"ans": 2,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay will discuss both views.",
+"This essay discusses of both views."
+],
+"ans": 1,
+"why": "discuss é transitivo."
+}
+],
+"fix": [
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+},
+{
+"wrong": "It is a problem very serious.",
+"right": "It is a very serious problem.",
+"why": "ordem."
+},
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The graph shows a fall.”",
+"answer": "The graph showed a fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "I regret to our correction was late.",
+"right": "I regret that our correction was late.",
+"why": "Português “lamento por”; em inglês regret + that-clause."
+},
+"mcq": [
+{
+"q": "Which sentence accepts blame with no excuse?",
+"opts": [
+"I make responsibility for…",
+"I take full responsibility for…",
+"I have responsibility fault."
+],
+"ans": 1,
+"why": "take."
+},
+{
+"q": "Regret:",
+"opts": [
+"I regret that our correction was late.",
+"I regret of.",
+"I regret to our correction."
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "Without excuses:",
+"opts": [
+"Mistakes happened.",
+"It was nobody’s fault.",
+"I take full responsibility."
+],
+"ans": 2,
+"why": "Autoria."
+},
+{
+"q": "Regret takes…",
+"opts": [
+"that-clause",
+"of",
+"for to"
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "I regret for the delay.",
+"right": "I regret the delay.",
+"why": "Sem for."
+},
+{
+"wrong": "I take responsibility of this.",
+"right": "I take responsibility for this.",
+"why": "for."
+},
+{
+"wrong": "I regretted that is late.",
+"right": "I regret that it was late.",
+"why": "Tempos."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com “take”: “I fully accept the blame for the error.”",
+"answer": "I take full responsibility for the error.",
+"why": ""
+},
+{
+"prompt": "Negativo: “I regret it.”",
+"answer": "I don’t regret it.",
+"why": ""
+},
+{
+"prompt": "Passado: “I regret the delay.”",
+"answer": "I regretted the delay.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The report infers that sales fell.",
+"right": "The report implies that sales fell.",
+"why": "Quem escreve implies; o leitor infers."
+},
+"mcq": [
+{
+"q": "Distinguish: refuted =",
+"opts": [
+"denied",
+"shown wrong",
+"doubted"
+],
+"ans": 1,
+"why": "Provado falso."
+},
+{
+"q": "Sender vs receiver:",
+"opts": [
+"suggest/suggest",
+"imply/infer",
+"infer/imply"
+],
+"ans": 1,
+"why": "Emissor/receptor."
+},
+{
+"q": "Dispute means…",
+"opts": [
+"contest",
+"hide",
+"prove"
+],
+"ans": 0,
+"why": "Contestar."
+},
+{
+"q": "Suggest uses…",
+"opts": [
+"only people",
+"data",
+"never data"
+],
+"ans": 1,
+"why": "Dados."
+}
+],
+"fix": [
+{
+"wrong": "The text infers a fault.",
+"right": "The text implies a fault.",
+"why": "Texto emite: imply."
+},
+{
+"wrong": "He refuted it with no proof.",
+"right": "He denied it with no proof.",
+"why": "Sem prova."
+},
+{
+"wrong": "The figures is disputed.",
+"right": "The figures are disputed.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por “infer”: “The reader deduces a fault.”",
+"answer": "The reader infers a fault.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The writer hints at a fault.”",
+"answer": "The writer implies a fault.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She proved the theory false.”",
+"answer": "She refuted the theory.",
+"why": ""
+}
+]
+}

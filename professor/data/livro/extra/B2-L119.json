@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "informação incontável",
+"wrong": "The report gives many informations.",
+"right": "The report gives a lot of information.",
+"why": "Informação tem plural em português. Em inglês information não tem plural."
+},
+"mcq": [
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"a research",
+"researches",
+"research"
+],
+"ans": 2,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss both views.",
+"This essay will discuss about both views.",
+"This essay discusses of both views."
+],
+"ans": 0,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"In my opinion",
+"By me"
+],
+"ans": 1,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"information",
+"report",
+"graph"
+],
+"ans": 0,
+"why": "information."
+}
+],
+"fix": [
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+},
+{
+"wrong": "He made a research.",
+"right": "He did research.",
+"why": "do research."
+},
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+},
+{
+"prompt": "Reescreva com increase in: “Sales increased.”",
+"answer": "There was an increase in sales.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+}
+]
+}

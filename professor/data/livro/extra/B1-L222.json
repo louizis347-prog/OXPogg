@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Although I disagree but I respect it.",
+"right": "Although I disagree, I respect it.",
+"why": "Português admite “embora… mas” na fala; em inglês although já traz o contraste."
+},
+"mcq": [
+{
+"q": "Tese:",
+"opts": [
+"By me,…",
+"In my opinion,…",
+"On my view,…"
+],
+"ans": 1,
+"why": "In."
+},
+{
+"q": "Concessão:",
+"opts": [
+"Although…",
+"Then…",
+"Because…"
+],
+"ans": 0,
+"why": "Concessão."
+},
+{
+"q": "Although it is hard, it’s worth **___**.",
+"opts": [
+"trying",
+"try",
+"to try"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Although hard but worth.",
+"Although it’s hard, it’s worth it.",
+"Although it’s hard, but it’s worth it."
+],
+"ans": 1,
+"why": "Sem but."
+}
+],
+"fix": [
+{
+"wrong": "Although it is hard but it’s worth it.",
+"right": "Although it is hard, it’s worth it.",
+"why": "Sem but."
+},
+{
+"wrong": "It’s worth to take time.",
+"right": "It’s worth taking time.",
+"why": "-ing."
+},
+{
+"wrong": "Despite it is hard, I try.",
+"right": "Although it is hard, I try.",
+"why": "Oração."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com although: “It is hard. It’s worth it.”",
+"answer": "Although it is hard, it’s worth it.",
+"why": ""
+},
+{
+"prompt": "Opinião: “It’s worth taking time.” (In my opinion,)",
+"answer": "In my opinion, it’s worth taking time.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It’s worth it.”",
+"answer": "It isn’t worth it.",
+"why": ""
+}
+]
+}

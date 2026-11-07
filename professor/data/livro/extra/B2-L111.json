@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio irregular",
+"wrong": "They might have took the wrong road.",
+"right": "They might have taken the wrong road.",
+"why": "O aluno mantém a forma do passado simples. Após have, use o particípio (taken)."
+},
+"mcq": [
+{
+"q": "\"Could have\" no passado pode indicar...",
+"opts": [
+"algo possível que não ocorreu",
+"algo que ocorreu com certeza",
+"uma regra"
+],
+"ans": 0,
+"why": "Costuma indicar possibilidade não realizada."
+},
+{
+"q": "Escolha: He **may have ___** the email.",
+"opts": [
+"send",
+"sent",
+"sending"
+],
+"ans": 1,
+"why": "Particípio de send = sent."
+},
+{
+"q": "\"He might have forgotten.\" expressa...",
+"opts": [
+"obrigação",
+"habilidade atual",
+"possibilidade sobre o passado"
+],
+"ans": 2,
+"why": "might have + particípio = talvez tenha acontecido."
+},
+{
+"q": "Qual frase mostra oportunidade perdida?",
+"opts": [
+"We could go by train.",
+"We could have gone by train.",
+"We go by train."
+],
+"ans": 1,
+"why": "could have + particípio = poderíamos ter ido (mas não fomos)."
+}
+],
+"fix": [
+{
+"wrong": "She might have came late.",
+"right": "She might have come late.",
+"why": "Particípio de come = come."
+},
+{
+"wrong": "They could of won the game.",
+"right": "They could have won the game.",
+"why": "Escreva have, não of."
+},
+{
+"wrong": "He may has lost his wallet.",
+"right": "He may have lost his wallet.",
+"why": "Depois de modal, have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com may: “She might have left.”",
+"answer": "She may have left.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “I can call her.” (oportunidade perdida)",
+"answer": "I could have called her.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She might be late.” (talvez tenha se atrasado)",
+"answer": "She might have been late.",
+"why": ""
+}
+]
+}

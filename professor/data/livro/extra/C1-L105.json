@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva de relato",
+"wrong": "It says that the river never sleeps.",
+"right": "It is said that the river never sleeps.",
+"why": "Em português “diz-se” ou “dizem que”. Em inglês, use it + passiva (is said that), pois não existe sujeito indeterminado “eles”."
+},
+"mcq": [
+{
+"q": "It ___ said that the river never sleeps.",
+"opts": [
+"is",
+"does",
+"has"
+],
+"ans": 0,
+"why": "Passiva."
+},
+{
+"q": "The river is said ___ never sleep.",
+"opts": [
+"for",
+"to",
+"that"
+],
+"ans": 1,
+"why": "is said to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It believes that it works.",
+"They is believed that it works.",
+"It is believed that it works."
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "It is estimated ___ one in six…",
+"opts": [
+"that",
+"what",
+"of"
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "It says that the river never sleeps.",
+"right": "It is said that the river never sleeps.",
+"why": "Passiva."
+},
+{
+"wrong": "The river is said that never sleeps.",
+"right": "The river is said to never sleep.",
+"why": "to + base."
+},
+{
+"wrong": "It is believed to that it works.",
+"right": "It is believed that it works.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “People say that the river never sleeps.”",
+"answer": "It is said that the river never sleeps.",
+"why": ""
+},
+{
+"prompt": "Sujeito: “People believe that it works.” (It is …)",
+"answer": "It is believed that it works.",
+"why": ""
+},
+{
+"prompt": "Com to: “It is said that the river is deep.” (The river is said …)",
+"answer": "The river is said to be deep.",
+"why": ""
+}
+]
+}

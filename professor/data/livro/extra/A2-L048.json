@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "futuro",
+"wrong": "Tomorrow will rain.",
+"right": "Tomorrow it will rain.",
+"why": "Em português 'vai chover' dispensa sujeito; em inglês o it é obrigatório."
+},
+"mcq": [
+{
+"q": "It ___ rain tomorrow.",
+"opts": [
+"is",
+"wills",
+"will"
+],
+"ans": 2,
+"why": "will."
+},
+{
+"q": "We ___ going to leave.",
+"opts": [
+"do",
+"is",
+"are"
+],
+"ans": 2,
+"why": "are."
+},
+{
+"q": "Tonight I ___ dinner with Ana.",
+"opts": [
+"have",
+"will having",
+"'m having"
+],
+"ans": 2,
+"why": "arrangement."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I call you will.",
+"I'll call you.",
+"I'll to call you."
+],
+"ans": 1,
+"why": "base."
+}
+],
+"fix": [
+{
+"wrong": "I going to travel.",
+"right": "I'm going to travel.",
+"why": "be."
+},
+{
+"wrong": "It will rains.",
+"right": "It will rain.",
+"why": "base."
+},
+{
+"wrong": "Will rain tomorrow.",
+"right": "It will rain tomorrow.",
+"why": "sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro will: “I help you.”",
+"answer": "I'll help you.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She is going to buy it.”",
+"answer": "She isn't going to buy it.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “It will snow.”",
+"answer": "Will it snow?",
+"why": ""
+}
+]
+}

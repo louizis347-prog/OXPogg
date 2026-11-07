@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão",
+"wrong": "Were the mayor offers a review, the union would return.",
+"right": "Were the mayor to offer a review, the union would return.",
+"why": "Em português “caso o prefeito ofereça” usa o subjuntivo. Em inglês, a inversão com Were exige to + infinitivo (Were … to)."
+},
+"mcq": [
+{
+"q": "“___ the union accept, we would sign.”",
+"opts": [
+"Would",
+"Did",
+"Should"
+],
+"ans": 2,
+"why": "Should + base."
+},
+{
+"q": "“___ talks begun earlier, the strike would not have happened.”",
+"opts": [
+"Had",
+"If",
+"Would"
+],
+"ans": 0,
+"why": "Had begun."
+},
+{
+"q": "“___ both sides move, there is no deal.”",
+"opts": [
+"If",
+"Unless",
+"Whether"
+],
+"ans": 1,
+"why": "Unless."
+},
+{
+"q": "“Were the mayor ___ a review, …”",
+"opts": [
+"offers",
+"offering",
+"to offer"
+],
+"ans": 2,
+"why": "Were … to."
+}
+],
+"fix": [
+{
+"wrong": "Should the union accepts, we would sign.",
+"right": "Should the union accept, we would sign.",
+"why": "Base."
+},
+{
+"wrong": "Had the talks began earlier, the strike would not have happened.",
+"right": "Had the talks begun earlier, the strike would not have happened.",
+"why": "begun."
+},
+{
+"wrong": "Unless both sides don’t move, there is no deal.",
+"right": "Unless both sides move, there is no deal.",
+"why": "Unless já nega."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Were…to: “If the mayor offered a review, the union would return.”",
+"answer": "Were the mayor to offer a review, the union would return.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Should: “If the union accepts, we will sign.”",
+"answer": "Should the union accept, we will sign.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Had: “If talks had begun earlier, we would have won.”",
+"answer": "Had talks begun earlier, we would have won.",
+"why": ""
+}
+]
+}

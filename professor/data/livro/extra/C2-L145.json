@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "Firms must to explain their systems.",
+"right": "Firms ought to explain their systems.",
+"why": "Português “devem” cobre dever moral e obrigação; em inglês ought to é moral, e must/should não levam to."
+},
+"mcq": [
+{
+"q": "Moral duty:",
+"opts": [
+"Firms ought explain.",
+"Firms ought to explain.",
+"Firms oughts to."
+],
+"ans": 1,
+"why": "ought to."
+},
+{
+"q": "Permission as right:",
+"opts": [
+"Citizens must allowed to",
+"Citizens must be allow to",
+"Citizens must be allowed to vote."
+],
+"ans": 2,
+"why": "be allowed to."
+},
+{
+"q": "Should is …",
+"opts": [
+"same as can",
+"stronger",
+"weaker than must"
+],
+"ans": 2,
+"why": "Mais fraco."
+},
+{
+"q": "Ought to + …",
+"opts": [
+"past",
+"base verb",
+"-ing"
+],
+"ans": 1,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "Firms ought explain it.",
+"right": "Firms ought to explain it.",
+"why": "to."
+},
+{
+"wrong": "Citizens must be allow to vote.",
+"right": "Citizens must be allowed to vote.",
+"why": "Particípio."
+},
+{
+"wrong": "Firms musts explain.",
+"right": "Firms must explain.",
+"why": "Sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com ought to: “Firms should explain their systems.”",
+"answer": "Firms ought to explain their systems.",
+"why": ""
+},
+{
+"prompt": "Passiva com allowed: “We must allow citizens to vote.”",
+"answer": "Citizens must be allowed to vote.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Firms ought to explain it.”",
+"answer": "Firms ought not to explain it.",
+"why": ""
+}
+]
+}

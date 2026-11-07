@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "that-clause",
+"wrong": "The fact what plastic stays is scary.",
+"right": "The fact that plastic stays is scary.",
+"why": "Em português “o fato de que”; o brasileiro troca por what ou of. Substantivo + that-clause: the fact that, the idea that."
+},
+"mcq": [
+{
+"q": "The fact **___** plastic lasts is scary.",
+"opts": [
+"of",
+"that",
+"what"
+],
+"ans": 1,
+"why": "That."
+},
+{
+"q": "The idea **___** it is safe is wrong.",
+"opts": [
+"what",
+"that",
+"of"
+],
+"ans": 1,
+"why": "That."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"The belief that taxes rise worries me.",
+"The belief what taxes rise worries me.",
+"The belief of taxes rise worries me."
+],
+"ans": 0,
+"why": "That."
+},
+{
+"q": "The news **___** the factory closed shocked us.",
+"opts": [
+"that",
+"what",
+"which"
+],
+"ans": 0,
+"why": "That."
+}
+],
+"fix": [
+{
+"wrong": "The idea of that it is safe is wrong.",
+"right": "The idea that it is safe is wrong.",
+"why": "Sem of."
+},
+{
+"wrong": "The fact what he lied is clear.",
+"right": "The fact that he lied is clear.",
+"why": "That."
+},
+{
+"wrong": "The news what he left surprised me.",
+"right": "The news that he left surprised me.",
+"why": "That."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “Plastic stays. It is scary.” (The fact that…)",
+"answer": "The fact that plastic stays is scary.",
+"why": ""
+},
+{
+"prompt": "Una: “It is safe. The idea is wrong.” (The idea that…)",
+"answer": "The idea that it is safe is wrong.",
+"why": ""
+},
+{
+"prompt": "Una: “The factory closed. The news shocked us.” (The news that…)",
+"answer": "The news that the factory closed shocked us.",
+"why": ""
+}
+]
+}

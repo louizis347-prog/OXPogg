@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conjunção no meio",
+"wrong": "Because I was tired, I slept.",
+"right": "I was tired, so I slept.",
+"why": "No texto, o brasileiro troca 'porque' e 'então' ao traduzir literalmente; revise causa e resultado."
+},
+"mcq": [
+{
+"q": "I study ___ I want a better job.",
+"opts": [
+"because",
+"so",
+"or"
+],
+"ans": 0,
+"why": "Causa."
+},
+{
+"q": "It was late, ___ we left.",
+"opts": [
+"so",
+"because",
+"but"
+],
+"ans": 0,
+"why": "Resultado."
+},
+{
+"q": "I like soccer ___ basketball.",
+"opts": [
+"and",
+"so",
+"because"
+],
+"ans": 0,
+"why": "Adição."
+},
+{
+"q": "Qual frase está correta?",
+"opts": [
+"I'm sad but I lost.",
+"I'm sad because I lost.",
+"I'm sad so I lost."
+],
+"ans": 1,
+"why": "Causa depois de because."
+}
+],
+"fix": [
+{
+"wrong": "I was tired so I went to bed early because.",
+"right": "I was tired so I went to bed early.",
+"why": "Sem because sobrando."
+},
+{
+"wrong": "I like tea and but coffee.",
+"right": "I like tea and coffee.",
+"why": "Uma conjunção."
+},
+{
+"wrong": "I'm late, because the traffic.",
+"right": "I'm late because of the traffic.",
+"why": "because + frase; because of + substantivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com and: “I like tea. I like milk.”",
+"answer": "I like tea and milk.",
+"why": ""
+},
+{
+"prompt": "Una com but: “I'm tired. I work.”",
+"answer": "I'm tired but I work.",
+"why": ""
+},
+{
+"prompt": "Una com because: “I'm late. The bus was slow.”",
+"answer": "I'm late because the bus was slow.",
+"why": ""
+}
+]
+}

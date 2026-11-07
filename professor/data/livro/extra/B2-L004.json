@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "Prices may to rise.",
+"right": "Prices may rise.",
+"why": "Português: “podem subir”; o brasileiro coloca to. Modais não têm to nem -s."
+},
+"mcq": [
+{
+"q": "Prices **___** rise.",
+"opts": [
+"may",
+"may to",
+"mays"
+],
+"ans": 0,
+"why": "Modal + base."
+},
+{
+"q": "It **___** rain.",
+"opts": [
+"might",
+"might to",
+"is might"
+],
+"ans": 0,
+"why": "Might."
+},
+{
+"q": "She **___** be late.",
+"opts": [
+"could to",
+"could",
+"coulds"
+],
+"ans": 1,
+"why": "Could."
+},
+{
+"q": "Negativa: (Possibility (may, might, could) · B2-L004)",
+"opts": [
+"do not may",
+"may not",
+"not may"
+],
+"ans": 1,
+"why": "May not."
+}
+],
+"fix": [
+{
+"wrong": "It mights rain.",
+"right": "It might rain.",
+"why": "Sem -s."
+},
+{
+"wrong": "He may to come.",
+"right": "He may come.",
+"why": "Sem to."
+},
+{
+"wrong": "They could to win.",
+"right": "They could win.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com may: “Perhaps it rains.”",
+"answer": "It may rain.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It might rain.”",
+"answer": "It might not rain.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could: “Maybe he wins.”",
+"answer": "He could win.",
+"why": ""
+}
+]
+}

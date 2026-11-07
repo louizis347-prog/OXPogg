@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if/whether",
+"wrong": "He asked me do I like tea.",
+"right": "He asked me if I liked tea.",
+"why": "O português usa \"se\"; o aluno esquece if/whether e mantém o do."
+},
+"mcq": [
+{
+"q": "Complete: She asked what time **___**.",
+"opts": [
+"was it",
+"it is it",
+"it was"
+],
+"ans": 2,
+"why": "Ordem afirmativa."
+},
+{
+"q": "Negativa de ordem: “Don't run!”",
+"opts": [
+"She told us not to run.",
+"She told us to not run?",
+"She said us don't run."
+],
+"ans": 0,
+"why": "not to + base."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He asked whether did she agree.",
+"He asked whether she agreed.",
+"He asked her agreed."
+],
+"ans": 1,
+"why": "Sem inversão."
+},
+{
+"q": "Qual é a pergunta indireta correta?",
+"opts": [
+"He asked where I lived.",
+"He asked where did I live.",
+"He asked where I do live."
+],
+"ans": 0,
+"why": "Sem do e sem inversão."
+}
+],
+"fix": [
+{
+"wrong": "I asked her what was her name.",
+"right": "I asked her what her name was.",
+"why": "Ordem afirmativa."
+},
+{
+"wrong": "He asked me do I speak French.",
+"right": "He asked me if I spoke French.",
+"why": "Use if."
+},
+{
+"wrong": "She said me to sit.",
+"right": "She told me to sit.",
+"why": "told + pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “‘Open the window,’ he told me.”",
+"answer": "He told me to open the window.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “‘Don't touch that,’ she told him.”",
+"answer": "She told him not to touch that.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “‘What is your job?’ he asked her.”",
+"answer": "He asked her what her job was.",
+"why": ""
+}
+]
+}

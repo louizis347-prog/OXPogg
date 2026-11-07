@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "colocação",
+"wrong": "It does sense.",
+"right": "It makes sense.",
+"why": "Português “faz sentido”, e o brasileiro usa do. Em inglês make sense, make a point, make an effort."
+},
+"mcq": [
+{
+"q": "It **___** sense.",
+"opts": [
+"does",
+"has",
+"makes"
+],
+"ans": 2,
+"why": "Make."
+},
+{
+"q": "make a point =",
+"opts": [
+"fazer ponto",
+"argumentar",
+"apontar"
+],
+"ans": 1,
+"why": "Argumentar."
+},
+{
+"q": "make a decision:",
+"opts": [
+"fazer decisão",
+"tomar uma decisão",
+"ter decisão"
+],
+"ans": 1,
+"why": "Tomar."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"It has sense.",
+"It does sense.",
+"It makes sense."
+],
+"ans": 2,
+"why": "Make."
+}
+],
+"fix": [
+{
+"wrong": "It doesn’t do sense.",
+"right": "It doesn’t make sense.",
+"why": "Make."
+},
+{
+"wrong": "She did a decision.",
+"right": "She made a decision.",
+"why": "Make."
+},
+{
+"wrong": "He make a point yesterday.",
+"right": "He made a point yesterday.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “It makes sense.”",
+"answer": "It doesn’t make sense.",
+"why": ""
+},
+{
+"prompt": "Passado: “She makes a point.”",
+"answer": "She made a point.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “It makes sense.”",
+"answer": "Does it make sense?",
+"why": ""
+}
+]
+}

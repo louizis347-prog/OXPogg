@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva impessoal",
+"wrong": "It thinks that the cave contains gold.",
+"right": "The cave is thought to contain gold.",
+"why": "Português usa “pensa-se”/“dizem que”; inglês usa passiva impessoal, nunca “It thinks”."
+},
+"mcq": [
+{
+"q": "Impersonal passive:",
+"opts": [
+"They believes it safe.",
+"It is believed to be safe.",
+"It believes safe."
+],
+"ans": 1,
+"why": "Is believed to."
+},
+{
+"q": "**According to** the report…",
+"opts": [
+"introduces a source",
+"is a verb",
+"introduces a doubt"
+],
+"ans": 0,
+"why": "Atribuição."
+},
+{
+"q": "Which creates epistemic distance?",
+"opts": [
+"I know the tomb contains gold.",
+"The tomb is thought to contain gold.",
+"The tomb contains gold."
+],
+"ans": 1,
+"why": "Passiva impessoal."
+},
+{
+"q": "The wall is said **___** built in 1200.",
+"opts": [
+"to be",
+"to have been",
+"having"
+],
+"ans": 1,
+"why": "Infinitivo perfeito passivo."
+}
+],
+"fix": [
+{
+"wrong": "It is thought that to contain gold.",
+"right": "It is thought to contain gold.",
+"why": "Estrutura única."
+},
+{
+"wrong": "Is believed that she left.",
+"right": "It is believed that she left.",
+"why": "Sujeito it obrigatório."
+},
+{
+"wrong": "According the report, it fell.",
+"right": "According to the report, it fell.",
+"why": "According to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com passiva impessoal: “People believe the site is ancient.”",
+"answer": "The site is believed to be ancient.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “It is said that”: “The tomb is said to be cursed.”",
+"answer": "It is said that the tomb is cursed.",
+"why": ""
+},
+{
+"prompt": "Inicie com “According to”: “The report says it fell.”",
+"answer": "According to the report, it fell.",
+"why": ""
+}
+]
+}

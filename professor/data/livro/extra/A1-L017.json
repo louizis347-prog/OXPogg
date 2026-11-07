@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do auxiliar na negativa",
+"wrong": "I no work on Sundays.",
+"right": "I do not work on Sundays.",
+"why": "Em português basta \"não\" antes do verbo; em inglês a negativa do Present Simple exige do/does + not."
+},
+"mcq": [
+{
+"q": "Negative: “I work.”",
+"opts": [
+"I do not work.",
+"I not work.",
+"I am not work."
+],
+"ans": 0,
+"why": "Do not."
+},
+{
+"q": "Does she ___ here?",
+"opts": [
+"works",
+"work",
+"working"
+],
+"ans": 1,
+"why": "Base form."
+},
+{
+"q": "She ___ a car.",
+"opts": [
+"haves",
+"have",
+"has"
+],
+"ans": 2,
+"why": "Irregular."
+},
+{
+"q": "Why ___ they sad?",
+"opts": [
+"are",
+"do",
+"have"
+],
+"ans": 0,
+"why": "Be em pergunta."
+}
+],
+"fix": [
+{
+"wrong": "We am work today.",
+"right": "We work today.",
+"why": "Sem am."
+},
+{
+"wrong": "Do she like tea?",
+"right": "Does she like tea?",
+"why": "She: does."
+},
+{
+"wrong": "She haves a dog.",
+"right": "She has a dog.",
+"why": "Has."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “She works here.”",
+"answer": "Does she work here?",
+"why": ""
+},
+{
+"prompt": "Troque para “She”: “I study.”",
+"answer": "She studies.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be: “I have thirsty.”",
+"answer": "I am thirsty.",
+"why": ""
+}
+]
+}

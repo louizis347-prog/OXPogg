@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ask + to + verbo",
+"wrong": "I asked him wait.",
+"right": "I asked him to wait.",
+"why": "Em português dizemos “pedi a ele que esperasse” (subjuntivo). Em inglês o padrão é verbo + pessoa + to + verbo base."
+},
+"mcq": [
+{
+"q": "She told us ___ down.",
+"opts": [
+"sit",
+"sitting",
+"to sit"
+],
+"ans": 2,
+"why": "tell + pessoa + to."
+},
+{
+"q": "They allow us ___ phones.",
+"opts": [
+"use",
+"using",
+"to use"
+],
+"ans": 2,
+"why": "allow + pessoa + to."
+},
+{
+"q": "Remind me ___ her.",
+"opts": [
+"call",
+"to call",
+"calling"
+],
+"ans": 1,
+"why": "remind + pessoa + to."
+},
+{
+"q": "Which is correct? (ask + to + verbo)",
+"opts": [
+"I asked that he wait.",
+"I asked him to wait.",
+"I asked him wait."
+],
+"ans": 1,
+"why": "Padrão com to."
+}
+],
+"fix": [
+{
+"wrong": "She told that we sit.",
+"right": "She told us to sit.",
+"why": "tell + pessoa + to."
+},
+{
+"wrong": "They allow us use phones.",
+"right": "They allow us to use phones.",
+"why": "to é obrigatório."
+},
+{
+"wrong": "Remind to me call.",
+"right": "Remind me to call.",
+"why": "Sem preposição antes do objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Wait,” I said to him.",
+"answer": "I told him to wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Please close it,” she asked me.",
+"answer": "She asked me to close it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com remind: “Don’t forget to call,” she said to me.",
+"answer": "She reminded me to call.",
+"why": ""
+}
+]
+}

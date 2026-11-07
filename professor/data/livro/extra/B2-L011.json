@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "The dough was rising for hours when I came.",
+"right": "The dough had been rising for hours when I came.",
+"why": "O português usa o imperfeito para tudo. Duração anterior a outro fato passado pede had been + -ing."
+},
+"mcq": [
+{
+"q": "The dough **___** for hours when I came.",
+"opts": [
+"had been rising",
+"was rise",
+"has been rising"
+],
+"ans": 0,
+"why": "Had been."
+},
+{
+"q": "Contraste: the dough **___** rise, so I waited.",
+"opts": [
+"rises",
+"was rising",
+"had rised"
+],
+"ans": 1,
+"why": "Cena."
+},
+{
+"q": "Pergunta:",
+"opts": [
+"Had it been rising?",
+"Was it been rising?",
+"Has it been rising?"
+],
+"ans": 0,
+"why": "Had."
+},
+{
+"q": "For hours:",
+"opts": [
+"duração",
+"ponto",
+"momento"
+],
+"ans": 0,
+"why": "Duração."
+}
+],
+"fix": [
+{
+"wrong": "It had been rise.",
+"right": "It had been rising.",
+"why": "-ing."
+},
+{
+"wrong": "The dough was been rising.",
+"right": "The dough had been rising.",
+"why": "Had."
+},
+{
+"wrong": "I had been wait for hours.",
+"right": "I had been waiting for hours.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “It rose for hours.” (had been…)",
+"answer": "It had been rising for hours.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It had been rising.”",
+"answer": "It hadn’t been rising.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “It had been rising.”",
+"answer": "Had it been rising?",
+"why": ""
+}
+]
+}

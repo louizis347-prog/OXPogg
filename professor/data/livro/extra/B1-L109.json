@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "decide + to",
+"wrong": "He decided open a school and we plan teach 500.",
+"right": "He decided to open a school, and we plan to teach 500.",
+"why": "Em português “decidiu abrir” e “planejamos ensinar” usam infinitivo direto. Em inglês é igual, mas o brasileiro esquece o to, ou usa -ing ou for."
+},
+"mcq": [
+{
+"q": "He decided ___ a school.",
+"opts": [
+"to open",
+"opening",
+"open"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "We hope ___ towns.",
+"opts": [
+"reaching",
+"to reach",
+"reach"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "They refused ___ help.",
+"opts": [
+"to",
+"—",
+"for"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "Which is correct? (decide + to)",
+"opts": [
+"We plan teaching.",
+"We plan to teach.",
+"We plan for teach."
+],
+"ans": 1,
+"why": "plan to."
+}
+],
+"fix": [
+{
+"wrong": "He decided opening a school.",
+"right": "He decided to open a school.",
+"why": "to."
+},
+{
+"wrong": "We hope reach towns.",
+"right": "We hope to reach towns.",
+"why": "to."
+},
+{
+"wrong": "I want that he help.",
+"right": "I want him to help.",
+"why": "want + obj + to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Ele decidiu” + open: “He decided ... a school.”",
+"answer": "He decided to open a school.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “We decided to go.”",
+"answer": "We decided not to go.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We plan teaching 500.” corrija",
+"answer": "We plan to teach 500.",
+"why": ""
+}
+]
+}

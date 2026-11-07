@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "perguntar a grafia",
+"wrong": "How you spell your name?",
+"right": "How do you spell your name?",
+"why": "Em português dizemos \"Como você soletra?\" sem auxiliar; em inglês a pergunta precisa de do: How do you spell...?"
+},
+"mcq": [
+{
+"q": "How do you say the letter **A** in English?",
+"opts": [
+"/eɪ/ (como em \"ei\")",
+"/a/ (como em \"casa\")",
+"/e/ (como em \"pé\")"
+],
+"ans": 0,
+"why": "Em inglês o nome da letra A é /eɪ/, não /a/."
+},
+{
+"q": "Which question asks for the letters of a name?",
+"opts": [
+"How you spell your name?",
+"How do you spell your name?",
+"What is spell your name?"
+],
+"ans": 1,
+"why": "Precisa do auxiliar do: How do you spell...?"
+},
+{
+"q": "The letter **E** sounds like…",
+"opts": [
+"\"ê\"",
+"\"é\"",
+"\"i\" (longo)"
+],
+"ans": 2,
+"why": "Em inglês, E se diz /iː/."
+},
+{
+"q": "**Last name** means…",
+"opts": [
+"sobrenome",
+"último nome falso",
+"nome de batismo"
+],
+"ans": 0,
+"why": "Last name = sobrenome (family name)."
+}
+],
+"fix": [
+{
+"wrong": "How you spell Maya?",
+"right": "How do you spell Maya?",
+"why": "Falta o auxiliar do."
+},
+{
+"wrong": "My first name is Leo, L-E-O-N.",
+"right": "My first name is Leo, L-E-O.",
+"why": "Cuidado para não acrescentar letras."
+},
+{
+"wrong": "My name are Ana.",
+"right": "My name is Ana.",
+"why": "Name é singular: is."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça uma pergunta: “your name / spell”. Use How.",
+"answer": "How do you spell your name?",
+"why": ""
+},
+{
+"prompt": "Escreva a resposta com letras separadas por hífen: “Leo”.",
+"answer": "L-E-O",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “one letter”.",
+"answer": "two letters",
+"why": "Escreva \"two letters\"."
+}
+]
+}

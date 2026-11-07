@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo be omitido",
+"wrong": "My sister very tall.",
+"right": "My sister is very tall.",
+"why": "Em português o verbo ser/estar existe, mas o brasileiro às vezes o omite ao falar rápido de características; em inglês o be é obrigatório."
+},
+"mcq": [
+{
+"q": "I ___ a student.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 1,
+"why": "I combina com am."
+},
+{
+"q": "She ___ my teacher.",
+"opts": [
+"are",
+"am",
+"is"
+],
+"ans": 2,
+"why": "She/he/it: is."
+},
+{
+"q": "We ___ friends.",
+"opts": [
+"are",
+"is",
+"am"
+],
+"ans": 0,
+"why": "We: are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"They is happy.",
+"They are happy.",
+"They am happy."
+],
+"ans": 1,
+"why": "They: are."
+}
+],
+"fix": [
+{
+"wrong": "I is a student.",
+"right": "I am a student.",
+"why": "I só usa am."
+},
+{
+"wrong": "My brother are tall.",
+"right": "My brother is tall.",
+"why": "Singular: is."
+},
+{
+"wrong": "We am friends.",
+"right": "We are friends.",
+"why": "We: are."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o sujeito por “They”: “She is happy.”",
+"answer": "They are happy.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “I”: “He is tired.”",
+"answer": "I am tired.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “We”: “It is late.”",
+"answer": "We are late.",
+"why": ""
+}
+]
+}

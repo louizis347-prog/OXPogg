@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "superlativo",
+"wrong": "She is the most nice person.",
+"right": "She is the nicest person.",
+"why": "Em português 'a mais simpática' sempre usa 'mais'; em inglês adjetivos curtos usam -est."
+},
+"mcq": [
+{
+"q": "It is the ___ film I've seen.",
+"opts": [
+"funnyest",
+"most funny",
+"funniest"
+],
+"ans": 2,
+"why": "y → iest."
+},
+{
+"q": "He is the ___ student here.",
+"opts": [
+"carefulest",
+"most careful",
+"more careful"
+],
+"ans": 1,
+"why": "adj. longo."
+},
+{
+"q": "This is the ___ road.",
+"opts": [
+"longest",
+"most long",
+"longer"
+],
+"ans": 0,
+"why": "-est."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"She is the most good.",
+"She is the best.",
+"She is the goodest."
+],
+"ans": 1,
+"why": "best."
+}
+],
+"fix": [
+{
+"wrong": "It is the funnyest.",
+"right": "It is the funniest.",
+"why": "y → iest."
+},
+{
+"wrong": "He is the most smart.",
+"right": "He is the smartest.",
+"why": "-est."
+},
+{
+"wrong": "This is the longer.",
+"right": "This is the longest.",
+"why": "superlativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Superlativo: “She is nice.”",
+"answer": "She is the nicest.",
+"why": ""
+},
+{
+"prompt": "Superlativo: “He is careful.”",
+"answer": "He is the most careful.",
+"why": ""
+},
+{
+"prompt": "Superlativo: “It is big.”",
+"answer": "It is the biggest.",
+"why": ""
+}
+]
+}

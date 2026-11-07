@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "look forward to",
+"wrong": "I look forward to hear from you.",
+"right": "I look forward to hearing from you.",
+"why": "Em português “aguardo ouvir” usa infinitivo. Em inglês, to em look forward to é preposição e pede -ing."
+},
+"mcq": [
+{
+"q": "Closing line:",
+"opts": [
+"I look forward to hear.",
+"I look forward hearing.",
+"I look forward to hearing from you."
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "“I would be grateful ___ you could renew it.”",
+"opts": [
+"if",
+"that",
+"to"
+],
+"ans": 0,
+"why": "if you could."
+},
+{
+"q": "To ask politely, use...",
+"opts": [
+"Give me…",
+"I would be grateful if…",
+"I want…"
+],
+"ans": 1,
+"why": "Formal."
+},
+{
+"q": "Which opens a letter?",
+"opts": [
+"Hello man",
+"Now,",
+"I am writing in response to…"
+],
+"ans": 2,
+"why": "Abertura formal."
+}
+],
+"fix": [
+{
+"wrong": "I am writing for ask about the loan.",
+"right": "I am writing to ask about the loan.",
+"why": "to."
+},
+{
+"wrong": "I would be grateful if you could to renew it.",
+"right": "I would be grateful if you could renew it.",
+"why": "could + base."
+},
+{
+"wrong": "The reason is because the library closes.",
+"right": "The reason is that the library closes.",
+"why": "reason is that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com look forward: “I hope to hear from you.” (I look forward…)",
+"answer": "I look forward to hearing from you.",
+"why": ""
+},
+{
+"prompt": "Reescreva com I would be grateful: “Please renew my loan.” (… if you could)",
+"answer": "I would be grateful if you could renew my loan.",
+"why": ""
+},
+{
+"prompt": "Reescreva com enquire: “I want to ask about loans.” (I am writing to…)",
+"answer": "I am writing to enquire about loans.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "idade e sentimentos",
+"wrong": "I have 25 years and I have cold.",
+"right": "I am 25 years old and I am cold.",
+"why": "Em português idade, fome, frio e sono usam ter; em inglês usam be + adjetivo."
+},
+"mcq": [
+{
+"q": "“Tenho fome” =",
+"opts": [
+"I have hungry.",
+"I have hunger.",
+"I am hungry."
+],
+"ans": 2,
+"why": "Estado: be + adjetivo."
+},
+{
+"q": "Negative: “I work.”",
+"opts": [
+"I do not work.",
+"I not work.",
+"I am not work."
+],
+"ans": 0,
+"why": "Do not."
+},
+{
+"q": "Does she ___ here?",
+"opts": [
+"works",
+"work",
+"working"
+],
+"ans": 1,
+"why": "Base form."
+},
+{
+"q": "She ___ a car.",
+"opts": [
+"haves",
+"have",
+"has"
+],
+"ans": 2,
+"why": "Irregular."
+}
+],
+"fix": [
+{
+"wrong": "I have 12 years.",
+"right": "I am 12 years old.",
+"why": "Idade com be."
+},
+{
+"wrong": "We am work today.",
+"right": "We work today.",
+"why": "Sem am."
+},
+{
+"wrong": "Do she like tea?",
+"right": "Does she like tea?",
+"why": "She: does."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue com do not: “I play tennis.”",
+"answer": "I do not play tennis.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “She works here.”",
+"answer": "Does she work here?",
+"why": ""
+},
+{
+"prompt": "Troque para “She”: “I study.”",
+"answer": "She studies.",
+"why": ""
+}
+]
+}

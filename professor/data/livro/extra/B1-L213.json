@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "colocação",
+"wrong": "We did a solution for the problem.",
+"right": "We found a solution to the problem.",
+"why": "Em português “fazer uma solução”; em inglês solve a problem, find a solution to…"
+},
+"mcq": [
+{
+"q": "Solve **___** problem:",
+"opts": [
+"for a",
+"a",
+"to a"
+],
+"ans": 1,
+"why": "Direto."
+},
+{
+"q": "A serious **___**:",
+"opts": [
+"problem",
+"problems is",
+"problem is"
+],
+"ans": 0,
+"why": "Singular."
+},
+{
+"q": "A solution **___** the problem:",
+"opts": [
+"to",
+"of",
+"for of"
+],
+"ans": 0,
+"why": "Solution to."
+},
+{
+"q": "Find a:",
+"opts": [
+"soluction",
+"solute",
+"solution"
+],
+"ans": 2,
+"why": "Grafia."
+}
+],
+"fix": [
+{
+"wrong": "We solved the problem of.",
+"right": "We solved the problem.",
+"why": "Sem of."
+},
+{
+"wrong": "It is a serious problems.",
+"right": "It is a serious problem.",
+"why": "Singular."
+},
+{
+"wrong": "We found a solution of it.",
+"right": "We found a solution to it.",
+"why": "Solution to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “We solve a problem.”",
+"answer": "We solved a problem.",
+"why": ""
+},
+{
+"prompt": "Plural: “It is a serious problem.” (They are…)",
+"answer": "They are serious problems.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We found a solution.”",
+"answer": "We didn’t find a solution.",
+"why": ""
+}
+]
+}

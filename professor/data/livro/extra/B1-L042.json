@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado do passado",
+"wrong": "They hadn’t met before, so she write 2,000 letters.",
+"right": "They hadn’t met before, so she had written 2,000 letters.",
+"why": "Em português “tinha escrito” é raro na fala; o pretérito simples é usado. Em inglês, ação anterior a outra no passado exige Past Perfect (had + particípio)."
+},
+"mcq": [
+{
+"q": "She ___ 2,000 letters.",
+"opts": [
+"had written",
+"has written",
+"wrote"
+],
+"ans": 0,
+"why": "Past Perfect."
+},
+{
+"q": "They ___ before.",
+"opts": [
+"haven't met",
+"didn't met",
+"hadn't met"
+],
+"ans": 2,
+"why": "hadn't met."
+},
+{
+"q": "___ they ever met?",
+"opts": [
+"Have",
+"Had",
+"Did"
+],
+"ans": 1,
+"why": "Had they."
+},
+{
+"q": "Past Perfect form:",
+"opts": [
+"had + particípio",
+"have + particípio",
+"was + -ing"
+],
+"ans": 0,
+"why": "had + pp."
+}
+],
+"fix": [
+{
+"wrong": "They had meet before.",
+"right": "They had met before.",
+"why": "Particípio."
+},
+{
+"wrong": "Did they ever met?",
+"right": "Had they ever met?",
+"why": "Pergunta com had."
+},
+{
+"wrong": "She hadn't wrote.",
+"right": "She hadn't written.",
+"why": "written."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no Past Perfect: “She wrote 2,000 letters.”",
+"answer": "She had written 2,000 letters.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “They had met.”",
+"answer": "They hadn't met.",
+"why": ""
+},
+{
+"prompt": "Pergunte: “They had met before.”",
+"answer": "Had they met before?",
+"why": ""
+}
+]
+}

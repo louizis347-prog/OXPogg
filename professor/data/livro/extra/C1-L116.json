@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "however, the study fails",
+"wrong": "The study fail to explain the sample, but however it is good.",
+"right": "However, the study fails to explain the sample.",
+"why": "O brasileiro empilha but e however, como “mas porém”. Em inglês use apenas um: However, … ou but."
+},
+"mcq": [
+{
+"q": "Para elogiar, use…",
+"opts": [
+"The author is dumb",
+"A notable strength is…",
+"Sadly it is…"
+],
+"ans": 1,
+"why": "Elogio."
+},
+{
+"q": "The study fails ___ explain the sample.",
+"opts": [
+"for",
+"of",
+"to"
+],
+"ans": 2,
+"why": "fail to."
+},
+{
+"q": "Para resumir, use…",
+"opts": [
+"The author argues that…",
+"I think that…",
+"Look at…"
+],
+"ans": 0,
+"why": "Resumir."
+},
+{
+"q": "Which avoids a double connector?",
+"opts": [
+"The data rich, but however small is.",
+"The data are rich; however, the sample is small.",
+"The data are rich but however small."
+],
+"ans": 1,
+"why": "Um conectivo."
+}
+],
+"fix": [
+{
+"wrong": "The study fail to explain the sample.",
+"right": "The study fails to explain the sample.",
+"why": "-s."
+},
+{
+"wrong": "The data are rich, but however the sample is small.",
+"right": "The data are rich, but the sample is small.",
+"why": "Um conectivo."
+},
+{
+"wrong": "A notable strength it is the data.",
+"right": "A notable strength is the data.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Elogie: “The data are rich.” (A notable strength…)",
+"answer": "A notable strength is the data.",
+"why": ""
+},
+{
+"prompt": "Critique: “The study does not explain the sample.” (fails to)",
+"answer": "The study fails to explain the sample.",
+"why": ""
+},
+{
+"prompt": "Resuma: “The author says that rents are rising.” (argues)",
+"answer": "The author argues that rents are rising.",
+"why": ""
+}
+]
+}

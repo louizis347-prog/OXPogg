@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "too much / too many",
+"wrong": "I have too much friends.",
+"right": "I have too many friends.",
+"why": "Em português 'demais' e 'muito' não separam contável de incontável; em inglês too many/too much sim."
+},
+"mcq": [
+{
+"q": "There are ___ cars here.",
+"opts": [
+"too many",
+"too much",
+"too"
+],
+"ans": 0,
+"why": "contável."
+},
+{
+"q": "There is ___ noise.",
+"opts": [
+"too much",
+"too many",
+"too"
+],
+"ans": 0,
+"why": "incontável."
+},
+{
+"q": "He isn't old ___ .",
+"opts": [
+"too",
+"enough",
+"very"
+],
+"ans": 1,
+"why": "enough."
+},
+{
+"q": "She has ___ homework.",
+"opts": [
+"too much",
+"too many",
+"too"
+],
+"ans": 0,
+"why": "incontável."
+}
+],
+"fix": [
+{
+"wrong": "We have too much students.",
+"right": "We have too many students.",
+"why": "many."
+},
+{
+"wrong": "There is too many sugar.",
+"right": "There is too much sugar.",
+"why": "much."
+},
+{
+"wrong": "She is too enough tired.",
+"right": "She is too tired.",
+"why": "one only."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “There are ___ people.” (demais)",
+"answer": "There are too many people.",
+"why": ""
+},
+{
+"prompt": "Complete: “I have ___ work.” (demais)",
+"answer": "I have too much work.",
+"why": ""
+},
+{
+"prompt": "Reescreva com enough: “The room is not big.” (for us)",
+"answer": "The room isn't big enough for us.",
+"why": ""
+}
+]
+}

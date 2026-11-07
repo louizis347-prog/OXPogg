@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "indireto sem to",
+"wrong": "Now I want to explain you the second point.",
+"right": "Now I want to explain the second point to you.",
+"why": "Em português “explicar a você” aceita o pronome direto. Em inglês, explain exige o objeto direto primeiro e to + pessoa depois."
+},
+"mcq": [
+{
+"q": "Which is a good **opening**?",
+"opts": [
+"In conclusion,",
+"Thank you and goodbye.",
+"How much water did you use this morning?"
+],
+"ans": 2,
+"why": "Pergunta para prender a atenção."
+},
+{
+"q": "A **roadmap** sentence is...",
+"opts": [
+"I will make three points.",
+"That is all.",
+"Any questions?"
+],
+"ans": 0,
+"why": "Roteiro = anunciar o que virá."
+},
+{
+"q": "Which phrase moves a talk to point two?",
+"opts": [
+"Wait, what?",
+"Turning to my second point,…",
+"So,"
+],
+"ans": 1,
+"why": "Sinalização."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She explained me the data.",
+"She explained to me the data them.",
+"She explained the data to me."
+],
+"ans": 2,
+"why": "explain sth to sb."
+}
+],
+"fix": [
+{
+"wrong": "Today I will talk you about water scarcity.",
+"right": "Today I will talk to you about water scarcity.",
+"why": "talk to."
+},
+{
+"wrong": "I will make three point.",
+"right": "I will make three points.",
+"why": "Plural."
+},
+{
+"wrong": "Let me to move on.",
+"right": "Let me move on.",
+"why": "let + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com to: “I will explain you the plan.”",
+"answer": "I will explain the plan to you.",
+"why": ""
+},
+{
+"prompt": "Reescreva como roteiro (three points): “I will say three things.” (I will make…)",
+"answer": "I will make three points.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I explain the point to you.”",
+"answer": "I explained the point to you.",
+"why": ""
+}
+]
+}

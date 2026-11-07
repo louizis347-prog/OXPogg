@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discuss/examine (relatório)",
+"wrong": "The authors advertise that it is risky.",
+"right": "The authors warn that it is risky.",
+"why": "Advertise é falso cognato de advertir. Advertir = warn. Em textos acadêmicos, ainda, o brasileiro costuma acrescentar preposição desnecessária."
+},
+"mcq": [
+{
+"q": "“Researchers found that…” introduces…",
+"opts": [
+"um objetivo",
+"uma ressalva",
+"um resultado"
+],
+"ans": 2,
+"why": "Resultado."
+},
+{
+"q": "“This study examined…” states…",
+"opts": [
+"o objetivo",
+"o resultado",
+"a ressalva"
+],
+"ans": 0,
+"why": "Objetivo."
+},
+{
+"q": "“However, the authors warn…” is…",
+"opts": [
+"um objetivo",
+"uma citação",
+"uma ressalva"
+],
+"ans": 2,
+"why": "Ressalva."
+},
+{
+"q": "Warn means…",
+"opts": [
+"avisar",
+"anunciar",
+"assistir"
+],
+"ans": 0,
+"why": "warn = advertir."
+}
+],
+"fix": [
+{
+"wrong": "The authors advertise us not to go.",
+"right": "The authors warn us not to go.",
+"why": "advertise = anunciar."
+},
+{
+"wrong": "Researchers find that it works.",
+"right": "Researchers found that it works.",
+"why": "Passado."
+},
+{
+"wrong": "The study examined about sleep.",
+"right": "The study examined sleep.",
+"why": "examine é transitivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Researchers find that it works.”",
+"answer": "Researchers found that it works.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem preposição: “The study examined about sleep.”",
+"answer": "The study examined sleep.",
+"why": ""
+},
+{
+"prompt": "Use warn: “The authors say: don’t trust it.” (us)",
+"answer": "The authors warn us not to trust it.",
+"why": ""
+}
+]
+}

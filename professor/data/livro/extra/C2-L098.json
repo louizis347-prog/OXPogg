@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The team won to beat the rival 3–0.",
+"right": "The team won, beating the rival 3–0.",
+"why": "Português “ganhou ao vencer”; em inglês use particípio -ing: won, beating."
+},
+"mcq": [
+{
+"q": "Result:",
+"opts": [
+"won to beat them 3–0",
+"won, beating them 3–0",
+"won for beat"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Praise attributed:",
+"opts": [
+"Judges the praise.",
+"Judges praised the team’s clarity.",
+"Judges praised to clarity."
+],
+"ans": 1,
+"why": "praise."
+},
+{
+"q": "Central fact first:",
+"opts": [
+"Maybe a win.",
+"The team won 3–0.",
+"After a long season, perhaps…"
+],
+"ans": 1,
+"why": "Fato."
+},
+{
+"q": "Praised + …",
+"opts": [
+"noun",
+"to",
+"that to"
+],
+"ans": 0,
+"why": "Objeto direto."
+}
+],
+"fix": [
+{
+"wrong": "Judges praised for the clarity.",
+"right": "Judges praised the clarity.",
+"why": "Sem for."
+},
+{
+"wrong": "The team won beat them.",
+"right": "The team won, beating them.",
+"why": "-ing."
+},
+{
+"wrong": "The team win 3–0.",
+"right": "The team won 3–0.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com -ing: “The team won. It beat the rival.”",
+"answer": "The team won, beating the rival.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Judges praised the clarity.”",
+"answer": "The clarity was praised by judges.",
+"why": ""
+},
+{
+"prompt": "Negativo: “The team won.”",
+"answer": "The team did not win.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Last year I check it every hour.",
+"right": "Last year I checked it every hour.",
+"why": "Com marcador de passado (last year) o inglês exige passado; o brasileiro às vezes mantém o presente, como no “eu checo” informal."
+},
+"mcq": [
+{
+"q": "Last year I **___** the news every hour.",
+"opts": [
+"check",
+"have checked",
+"checked"
+],
+"ans": 2,
+"why": "Last year → past simple."
+},
+{
+"q": "I decided **___** the news twice a day.",
+"opts": [
+"to read",
+"read",
+"reading"
+],
+"ans": 0,
+"why": "Decide + to + base."
+},
+{
+"q": "Now I **___** calm.",
+"opts": [
+"feel",
+"feeling",
+"am feel"
+],
+"ans": 0,
+"why": "Feel sem be."
+},
+{
+"q": "Which is a result?",
+"opts": [
+"Now I feel calmer.",
+"Last year I checked it.",
+"I was anxious."
+],
+"ans": 0,
+"why": "Now indica resultado atual."
+}
+],
+"fix": [
+{
+"wrong": "I decided reading it twice a day.",
+"right": "I decided to read it twice a day.",
+"why": "Decide pede infinitivo com to."
+},
+{
+"wrong": "Last year I am anxious.",
+"right": "Last year I was anxious.",
+"why": "Passado de be."
+},
+{
+"wrong": "Now I am feeling calm every day.",
+"right": "Now I feel calm every day.",
+"why": "Hábito e estado = presente simples."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “I check the news hourly.”",
+"answer": "I checked the news hourly.",
+"why": ""
+},
+{
+"prompt": "Use decided to: “I read it twice.” (I decided…)",
+"answer": "I decided to read it twice.",
+"why": ""
+},
+{
+"prompt": "Negativa no passado: “I felt calm.”",
+"answer": "I didn’t feel calm.",
+"why": ""
+}
+]
+}

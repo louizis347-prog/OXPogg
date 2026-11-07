@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo ser na pseudo",
+"wrong": "What drove her curiosity.",
+"right": "What drove her was curiosity.",
+"why": "Sem o is/was, a frase fica incompleta. Em português, o “era” também aparece, mas o brasileiro o omite ao traduzir."
+},
+"mcq": [
+{
+"q": "What drove her ___ curiosity.",
+"opts": [
+"were",
+"did",
+"was"
+],
+"ans": 2,
+"why": "was."
+},
+{
+"q": "All she needs ___ time.",
+"opts": [
+"is",
+"are",
+"does"
+],
+"ans": 0,
+"why": "is."
+},
+{
+"q": "What we need ___ ideas.",
+"opts": [
+"has",
+"is",
+"do"
+],
+"ans": 1,
+"why": "is."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"What I want peace.",
+"What want I is peace.",
+"What I want is peace."
+],
+"ans": 2,
+"why": "What…is."
+}
+],
+"fix": [
+{
+"wrong": "What drove her curiosity.",
+"right": "What drove her was curiosity.",
+"why": "was."
+},
+{
+"wrong": "All I want are peace.",
+"right": "All I want is peace.",
+"why": "is."
+},
+{
+"wrong": "What I want peace is.",
+"right": "What I want is peace.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudo-clivada: “Curiosity drove her.”",
+"answer": "What drove her was curiosity.",
+"why": ""
+},
+{
+"prompt": "Com All: “I want only peace.”",
+"answer": "All I want is peace.",
+"why": ""
+},
+{
+"prompt": "Pseudo-clivada: “I want peace.”",
+"answer": "What I want is peace.",
+"why": ""
+}
+]
+}

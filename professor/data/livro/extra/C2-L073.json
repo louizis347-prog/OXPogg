@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estrutura",
+"wrong": "Tell stories than facts.",
+"right": "Tell stories rather than facts.",
+"why": "Português usa “em vez de”/“do que”; em inglês, rather than, não than sozinho."
+},
+"mcq": [
+{
+"q": "Instead of:",
+"opts": [
+"rather than",
+"than",
+"instead"
+],
+"ans": 0,
+"why": "rather than."
+},
+{
+"q": "Imperative + object:",
+"opts": [
+"Gather memories.",
+"Gathering memory.",
+"You gather memories."
+],
+"ans": 0,
+"why": "Imperativo."
+},
+{
+"q": "Clear sentence:",
+"opts": [
+"Choose one theme.",
+"To choose theme.",
+"Choosing a theme one."
+],
+"ans": 0,
+"why": "Claro."
+},
+{
+"q": "Rather than + …",
+"opts": [
+"to",
+"different form",
+"same form"
+],
+"ans": 2,
+"why": "Paralelo."
+}
+],
+"fix": [
+{
+"wrong": "Tell stories, no facts.",
+"right": "Tell stories, not facts.",
+"why": "not."
+},
+{
+"wrong": "Gather memory, choose themes.",
+"right": "Gather memories; choose one theme.",
+"why": "Clareza."
+},
+{
+"wrong": "Use stories rather than using facts.",
+"right": "Use stories rather than facts.",
+"why": "Paralelismo."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com rather than: “Use stories. Do not use data.”",
+"answer": "Use stories rather than data.",
+"why": ""
+},
+{
+"prompt": "Imperativo: “You choose one theme.”",
+"answer": "Choose one theme.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Gather memories.”",
+"answer": "Don’t gather memories.",
+"why": ""
+}
+]
+}

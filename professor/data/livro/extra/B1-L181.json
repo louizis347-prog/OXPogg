@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo polissêmico",
+"wrong": "We will make a meeting on Friday.",
+"right": "We will hold a meeting on Friday.",
+"why": "Em português “fazer uma reunião”. Em inglês a colocação é hold a meeting (ou have); make não é usado."
+},
+"mcq": [
+{
+"q": "Hold my bag, please. Hold =",
+"opts": [
+"realizar",
+"segurar",
+"conter"
+],
+"ans": 1,
+"why": "Hold = segurar."
+},
+{
+"q": "The room **holds** fifty people. Hold =",
+"opts": [
+"conter",
+"realizar",
+"segurar"
+],
+"ans": 0,
+"why": "Capacidade = conter."
+},
+{
+"q": "They will **hold** a vote. Hold =",
+"opts": [
+"segurar",
+"esperar",
+"realizar"
+],
+"ans": 2,
+"why": "Hold a vote = realizar."
+},
+{
+"q": "Hold on! significa:",
+"opts": [
+"pare de vez",
+"espere",
+"corra"
+],
+"ans": 1,
+"why": "Hold on = espere."
+}
+],
+"fix": [
+{
+"wrong": "The hall can hold to 200 people.",
+"right": "The hall can hold 200 people.",
+"why": "Hold é direto."
+},
+{
+"wrong": "We hold a meeting yesterday.",
+"right": "We held a meeting yesterday.",
+"why": "Passado: held."
+},
+{
+"wrong": "She holded my bag.",
+"right": "She held my bag.",
+"why": "Irregular: hold, held."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “We hold a meeting.”",
+"answer": "We held a meeting.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “She holds my bag.”",
+"answer": "She held my bag.",
+"why": ""
+},
+{
+"prompt": "Negativa: “The room holds 50 people.”",
+"answer": "The room doesn’t hold 50 people.",
+"why": ""
+}
+]
+}

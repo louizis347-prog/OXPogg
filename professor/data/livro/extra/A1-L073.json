@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "put on × wear",
+"wrong": "I put a blue jacket every day.",
+"right": "I wear a blue jacket every day.",
+"why": "O brasileiro traduz \"vestir/pôr\" por put; put on é o ato de vestir, wear é usar."
+},
+"mcq": [
+{
+"q": "“Vestir o casaco (agora)” =",
+"opts": [
+"wear on my coat",
+"dress my coat",
+"put on my coat"
+],
+"ans": 2,
+"why": "Put on."
+},
+{
+"q": "“Usar óculos” =",
+"opts": [
+"wear glasses",
+"put glasses always",
+"use glasses"
+],
+"ans": 0,
+"why": "Wear."
+},
+{
+"q": "“Coloque na mesa” =",
+"opts": [
+"Put it in on table.",
+"Put it on the table.",
+"Place it at table."
+],
+"ans": 1,
+"why": "Put + on."
+},
+{
+"q": "“Tire o casaco” =",
+"opts": [
+"Put off your coat.",
+"Out your coat.",
+"Take off your coat."
+],
+"ans": 2,
+"why": "Take off."
+}
+],
+"fix": [
+{
+"wrong": "She puts a hat every day.",
+"right": "She wears a hat every day.",
+"why": "Wear."
+},
+{
+"wrong": "Put it in the table.",
+"right": "Put it on the table.",
+"why": "On."
+},
+{
+"wrong": "He puts off his shoes.",
+"right": "He takes off his shoes.",
+"why": "Take off."
+}
+],
+"rewrite": [
+{
+"prompt": "Use put on: “I wear my coat now.” (ação)",
+"answer": "I put on my coat.",
+"why": ""
+},
+{
+"prompt": "Use put: “Place the keys on the desk.”",
+"answer": "Put the keys on the desk.",
+"why": ""
+},
+{
+"prompt": "Use take off: “Remove your shoes.”",
+"answer": "Take off your shoes.",
+"why": ""
+}
+]
+}

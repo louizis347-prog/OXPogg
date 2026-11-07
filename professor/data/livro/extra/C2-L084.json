@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "We can’t do without to comment.",
+"right": "We can’t do without comment.",
+"why": "Português “passar sem”; do without é verbo frasal, sem to."
+},
+"mcq": [
+{
+"q": "Abolish:",
+"opts": [
+"do away with",
+"do up",
+"do without"
+],
+"ans": 0,
+"why": "do away with."
+},
+{
+"q": "Manage without:",
+"opts": [
+"do in",
+"do without",
+"do away"
+],
+"ans": 1,
+"why": "do without."
+},
+{
+"q": "They **did away with** the fee means…",
+"opts": [
+"abolished it",
+"raised it",
+"paid it"
+],
+"ans": 0,
+"why": "Aboliram."
+},
+{
+"q": "Past of do away with:",
+"opts": [
+"done away with",
+"did away with",
+"do away with"
+],
+"ans": 1,
+"why": "did."
+}
+],
+"fix": [
+{
+"wrong": "They did away the fee.",
+"right": "They did away with the fee.",
+"why": "with."
+},
+{
+"wrong": "We cannot do with water.",
+"right": "We cannot do without water.",
+"why": "without."
+},
+{
+"wrong": "They done away with it.",
+"right": "They did away with it.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com do away with: “They abolished the fee.”",
+"answer": "They did away with the fee.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do without: “We can’t manage without water.”",
+"answer": "We can’t do without water.",
+"why": ""
+},
+{
+"prompt": "Passado: “They do away with it.”",
+"answer": "They did away with it.",
+"why": ""
+}
+]
+}

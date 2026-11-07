@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "deveria ter + particípio",
+"wrong": "We should to have called the client earlier.",
+"right": "We should have called the client earlier.",
+"why": "Em português dizemos \"deveria ter ligado\" e o brasileiro insere to por analogia com infinitivo. Em inglês, depois de should have vem direto o particípio, sem to."
+},
+"mcq": [
+{
+"q": "Qual frase critica uma ação passada?",
+"opts": [
+"She should check the map.",
+"She checks the map.",
+"She should have checked the map."
+],
+"ans": 2,
+"why": "should have + particípio = crítica sobre o passado."
+},
+{
+"q": "**shouldn't have** + particípio expressa...",
+"opts": [
+"arrependimento: não era para ter feito",
+"obrigação no futuro",
+"habilidade no passado"
+],
+"ans": 0,
+"why": "shouldn't have + particípio lamenta algo que foi feito."
+},
+{
+"q": "Escolha a forma correta: We **should have ___** the tickets earlier.",
+"opts": [
+"book",
+"booked",
+"booking"
+],
+"ans": 1,
+"why": "Após should have usamos o particípio passado."
+},
+{
+"q": "Qual frase é uma possibilidade perdida (não crítica)?",
+"opts": [
+"You could have asked me.",
+"You must ask me.",
+"You are asking me."
+],
+"ans": 0,
+"why": "could have + particípio = possibilidade que não se realizou."
+}
+],
+"fix": [
+{
+"wrong": "She should have went home earlier.",
+"right": "She should have gone home earlier.",
+"why": "Após should have, use o particípio gone, não o passado went."
+},
+{
+"wrong": "We should to have told them the truth.",
+"right": "We should have told them the truth.",
+"why": "Não se usa to depois de should."
+},
+{
+"wrong": "I shouldn't of said that.",
+"right": "I shouldn't have said that.",
+"why": "Of é erro de escrita por causa do som /əv/; a forma é have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como crítica no passado: “You call me.”",
+"answer": "You should have called me.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “We should have waited.”",
+"answer": "We shouldn't have waited.",
+"why": ""
+},
+{
+"prompt": "Troque should por ought to: “She should have asked.”",
+"answer": "She ought to have asked.",
+"why": ""
+}
+]
+}

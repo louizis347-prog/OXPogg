@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pleased",
+"wrong": "We are pleasured to confirm your appointment.",
+"right": "We are pleased to confirm your appointment.",
+"why": "Em português “temos o prazer” leva o aluno a pleasure/pleasured. Em inglês, o adjetivo é pleased (to) ou a locução it is our pleasure."
+},
+"mcq": [
+{
+"q": "Approval opening:",
+"opts": [
+"We are pleasure…",
+"We are pleased to confirm…",
+"We pleased."
+],
+"ans": 1,
+"why": "pleased."
+},
+{
+"q": "“Subject to…” introduces a...",
+"opts": [
+"joke",
+"date",
+"condition"
+],
+"ans": 2,
+"why": "Condição."
+},
+{
+"q": "“Without prejudice to…” means...",
+"opts": [
+"preserving rights",
+"hurting rights",
+"ending"
+],
+"ans": 0,
+"why": "Preservar direitos."
+},
+{
+"q": "“Should circumstances change,” is an inverted...",
+"opts": [
+"question",
+"conditional",
+"comparison"
+],
+"ans": 1,
+"why": "Condicional."
+}
+],
+"fix": [
+{
+"wrong": "Should circumstances will change, we will inform you.",
+"right": "Should circumstances change, we will inform you.",
+"why": "Base."
+},
+{
+"wrong": "The arrangement is subject of a review.",
+"right": "The arrangement is subject to a review.",
+"why": "to."
+},
+{
+"wrong": "Remote work is approve for three months.",
+"right": "Remote work is approved for three months.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If circumstances change, we will inform you.”",
+"answer": "Should circumstances change, we will inform you.",
+"why": ""
+},
+{
+"prompt": "Reescreva com subject to: “If a review is positive, the arrangement continues.”",
+"answer": "The arrangement continues subject to a positive review.",
+"why": ""
+},
+{
+"prompt": "Reescreva com pleased: “We are happy to say we approve it.”",
+"answer": "We are pleased to confirm it.",
+"why": ""
+}
+]
+}

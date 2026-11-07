@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make/let + base",
+"wrong": "They let him to leave.",
+"right": "They let him leave.",
+"why": "Em português 'deixaram ele sair' usa infinitivo; em inglês let e make + objeto vão sem to."
+},
+"mcq": [
+{
+"q": "Mom made me ___ my room.",
+"opts": [
+"to clean",
+"cleaning",
+"clean"
+],
+"ans": 2,
+"why": "base."
+},
+{
+"q": "They let us ___ early.",
+"opts": [
+"leave",
+"leaving",
+"to leave"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "He helps me ___ .",
+"opts": [
+"to studying",
+"study",
+"studied"
+],
+"ans": 1,
+"why": "base."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"She made him waits.",
+"She made him to wait.",
+"She made him wait."
+],
+"ans": 2,
+"why": "base."
+}
+],
+"fix": [
+{
+"wrong": "The teacher made us to read.",
+"right": "The teacher made us read.",
+"why": "sem to."
+},
+{
+"wrong": "Let me to see.",
+"right": "Let me see.",
+"why": "sem to."
+},
+{
+"wrong": "They made me to wait.",
+"right": "They made me wait.",
+"why": "sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The teacher made. We read.”",
+"answer": "The teacher made us read.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Dad let. I drive.”",
+"answer": "Dad let me drive.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It made. Him laugh.”",
+"answer": "It made him laugh.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "during × while",
+"wrong": "During the participants are tested, the staff stay silent.",
+"right": "While the participants are tested, the staff stay silent.",
+"why": "Em português “durante” aparece sem distinção diante de substantivo ou oração. Em inglês, during + substantivo; while + oração."
+},
+"mcq": [
+{
+"q": "“___ the test, the staff stay silent.”",
+"opts": [
+"While",
+"When during",
+"During"
+],
+"ans": 2,
+"why": "During + substantivo."
+},
+{
+"q": "“___ participants are tested, …”",
+"opts": [
+"While",
+"During",
+"In"
+],
+"ans": 0,
+"why": "While + oração."
+},
+{
+"q": "“Once the data ___ collected, …”",
+"opts": [
+"are been",
+"have been",
+"has"
+],
+"ans": 1,
+"why": "Passiva."
+},
+{
+"q": "Randomisation uses...",
+"opts": [
+"the same group",
+"sunlight",
+"random assignment"
+],
+"ans": 2,
+"why": "Atribuição aleatória."
+}
+],
+"fix": [
+{
+"wrong": "First, participants assigned randomly.",
+"right": "First, participants are assigned randomly.",
+"why": "Passiva."
+},
+{
+"wrong": "During they are tested, notes are taken.",
+"right": "While they are tested, notes are taken.",
+"why": "while."
+},
+{
+"wrong": "Finally, data is analyze.",
+"right": "Finally, data are analysed.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com while: “Participants are tested. Staff take notes.” (While…)",
+"answer": "While participants are tested, staff take notes.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They assign participants randomly.”",
+"answer": "Participants are assigned randomly.",
+"why": ""
+},
+{
+"prompt": "Reescreva com during: “While the test, staff stay silent.” (corrija)",
+"answer": "During the test, staff stay silent.",
+"why": ""
+}
+]
+}

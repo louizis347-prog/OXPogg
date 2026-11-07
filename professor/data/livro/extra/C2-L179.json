@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Simple bread praised he, and what matters it is taste.",
+"right": "Simple bread he praised, and what matters is taste.",
+"why": "Português mantém a ordem direta; o inglês enfático antecipa o objeto (Simple bread he praised) ou usa what matters is."
+},
+"mcq": [
+{
+"q": "Fronting the object:",
+"opts": [
+"Simple bread he praised.",
+"He praised simple bread.",
+"Praised he simple bread."
+],
+"ans": 0,
+"why": "Objeto à frente."
+},
+{
+"q": "Which pseudo-cleft puts taste last?",
+"opts": [
+"What matters is taste.",
+"What matters it taste.",
+"Matters what is taste."
+],
+"ans": 0,
+"why": "What… is."
+},
+{
+"q": "Which line inverts after Rarely with did?",
+"opts": [
+"Rarely he complained.",
+"Rarely did he complain.",
+"Rarely complained he."
+],
+"ans": 1,
+"why": "did he."
+},
+{
+"q": "Which cleft stresses taste?",
+"opts": [
+"Taste it is matters.",
+"It is taste that matters.",
+"It is taste what matters."
+],
+"ans": 1,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "Rarely he complained.",
+"right": "Rarely did he complain.",
+"why": "Inversão."
+},
+{
+"wrong": "It is taste what counts.",
+"right": "It is taste that counts.",
+"why": "that."
+},
+{
+"wrong": "What matters it is taste.",
+"right": "What matters is taste.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Ênfase no objeto: “He praised simple bread.”",
+"answer": "Simple bread he praised.",
+"why": ""
+},
+{
+"prompt": "Inverta: “He rarely complained.”",
+"answer": "Rarely did he complain.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Taste counts.”",
+"answer": "It is taste that counts.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would have",
+"wrong": "MFA would likely prevented the attack.",
+"right": "MFA would likely have prevented the attack.",
+"why": "Em português “teria evitado” é uma forma composta e o aluno omite have. Em inglês, would + have + particípio."
+},
+"mcq": [
+{
+"q": "“No evidence ___ emerged.”",
+"opts": [
+"had",
+"has been",
+"was"
+],
+"ans": 0,
+"why": "Past perfect."
+},
+{
+"q": "Neutral language avoids...",
+"opts": [
+"verbs",
+"blame words",
+"dates"
+],
+"ans": 1,
+"why": "Neutra."
+},
+{
+"q": "“The network was struck ___ ransomware.”",
+"opts": [
+"from",
+"with",
+"by"
+],
+"ans": 2,
+"why": "by."
+},
+{
+"q": "A modal perfect:",
+"opts": [
+"would have prevented",
+"would prevent",
+"will have prevent"
+],
+"ans": 0,
+"why": "Hipótese passada."
+}
+],
+"fix": [
+{
+"wrong": "The network struck by ransomware.",
+"right": "The network was struck by ransomware.",
+"why": "Passiva."
+},
+{
+"wrong": "Offline backups would have restore the files.",
+"right": "Offline backups would have restored the files.",
+"why": "pp."
+},
+{
+"wrong": "No evidence had emerge by Monday.",
+"right": "No evidence had emerged by Monday.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na passiva: “Ransomware struck the network.”",
+"answer": "The network was struck by ransomware.",
+"why": ""
+},
+{
+"prompt": "Reescreva com would have: “MFA probably prevented it.” (hipótese)",
+"answer": "MFA would probably have prevented it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com past perfect: “No evidence emerged before then.”",
+"answer": "No evidence had emerged before then.",
+"why": ""
+}
+]
+}

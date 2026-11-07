@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + 3ª pessoa",
+"wrong": "A good friend show up and keep secrets.",
+"right": "A good friend shows up and keeps secrets.",
+"why": "Em português o verbo flexiona pessoa claramente; em inglês, o -s da 3ª pessoa do singular é esquecido porque não há outra marca. Phrasal verbs também."
+},
+"mcq": [
+{
+"q": "She ___ without judging.",
+"opts": [
+"listen",
+"listening",
+"listens"
+],
+"ans": 2,
+"why": "-s."
+},
+{
+"q": "A good friend ___ up.",
+"opts": [
+"shows",
+"show",
+"showing"
+],
+"ans": 0,
+"why": "-s."
+},
+{
+"q": "He keeps secrets means…",
+"opts": [
+"mantém chaves",
+"guarda segredos",
+"tem segredos"
+],
+"ans": 1,
+"why": "Guarda."
+},
+{
+"q": "Which is correct? (verbo + 3ª pessoa)",
+"opts": [
+"He do his best.",
+"He does his best.",
+"He doing his best."
+],
+"ans": 1,
+"why": "does."
+}
+],
+"fix": [
+{
+"wrong": "She listen well.",
+"right": "She listens well.",
+"why": "-s."
+},
+{
+"wrong": "He keep secrets.",
+"right": "He keeps secrets.",
+"why": "-s."
+},
+{
+"wrong": "A friend show up.",
+"right": "A friend shows up.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para 3ª pessoa: “I keep secrets.” (he)",
+"answer": "He keeps secrets.",
+"why": ""
+},
+{
+"prompt": "Passe para 3ª pessoa: “They show up.” (she)",
+"answer": "She shows up.",
+"why": ""
+},
+{
+"prompt": "Passe para 3ª pessoa: “I listen.” (my friend)",
+"answer": "My friend listens.",
+"why": ""
+}
+]
+}

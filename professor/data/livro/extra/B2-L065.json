@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "resposta curta",
+"wrong": "Do I have to? Yes, you must.",
+"right": "Do I have to? Yes, you do.",
+"why": "Depois de uma pergunta com have to, responda com do/don’t. Must e don’t have to não são opostos: mustn’t é proibição."
+},
+"mcq": [
+{
+"q": "“Do I have to pay?” — “___”",
+"opts": [
+"Yes, you have.",
+"Yes, you do.",
+"Yes, you must to."
+],
+"ans": 1,
+"why": "Do."
+},
+{
+"q": "“Você não precisa ir”:",
+"opts": [
+"You haven’t go.",
+"You don’t have to go.",
+"You mustn’t go."
+],
+"ans": 1,
+"why": "Não precisa."
+},
+{
+"q": "Proibido:",
+"opts": [
+"You haven’t smoke here.",
+"You mustn’t smoke here.",
+"You don’t have to smoke here."
+],
+"ans": 1,
+"why": "Mustn’t."
+},
+{
+"q": "“Does she have to leave?” — “___”",
+"opts": [
+"No, she doesn’t.",
+"No, she hasn’t.",
+"No, she mustn’t."
+],
+"ans": 0,
+"why": "Doesn’t."
+}
+],
+"fix": [
+{
+"wrong": "You mustn’t pay; it’s free.",
+"right": "You don’t have to pay; it’s free.",
+"why": "Não precisa."
+},
+{
+"wrong": "Do I have to go? Yes, I do have.",
+"right": "Do I have to go? Yes, you do.",
+"why": "Resposta curta."
+},
+{
+"wrong": "You don’t have to enter; it’s dangerous.",
+"right": "You mustn’t enter; it’s dangerous.",
+"why": "Proibição."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “You have to pay.”",
+"answer": "Do you have to pay?",
+"why": ""
+},
+{
+"prompt": "Negativa (não precisa): “He has to wait.”",
+"answer": "He doesn’t have to wait.",
+"why": ""
+},
+{
+"prompt": "Proibição: “Do not park here.” (You mustn’t…)",
+"answer": "You mustn’t park here.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conectivo de opinião",
+"wrong": "According to me, laptops should be banned.",
+"right": "In my view, laptops should be banned.",
+"why": "“Segundo eu” parece natural, mas “according to” introduz a opinião de OUTRA pessoa/fonte. Para a sua, use in my view/opinion."
+},
+"mcq": [
+{
+"q": "Which phrase gives **your own** position?",
+"opts": [
+"According to me",
+"In my view",
+"According my view"
+],
+"ans": 1,
+"why": "In my view/opinion."
+},
+{
+"q": "Which introduces the second reason?",
+"opts": [
+"For one thing,",
+"Admittedly,",
+"Moreover,"
+],
+"ans": 2,
+"why": "Moreover/On top of that = razão adicional."
+},
+{
+"q": "Which introduces a **counterpoint**?",
+"opts": [
+"That said,",
+"Besides,",
+"For example,"
+],
+"ans": 0,
+"why": "That said/Admittedly = contraponto."
+},
+{
+"q": "“I would argue ___ notes help memory.”",
+"opts": [
+"what",
+"that",
+"which"
+],
+"ans": 1,
+"why": "argue that + oração."
+}
+],
+"fix": [
+{
+"wrong": "In my point of view, handwriting is better.",
+"right": "In my view, handwriting is better.",
+"why": "Fórmula: in my view / from my point of view."
+},
+{
+"wrong": "For one thing, laptops are a distraction, moreover they are heavy.",
+"right": "For one thing, laptops are a distraction. Moreover, they are heavy.",
+"why": "Moreover inicia nova frase."
+},
+{
+"wrong": "I am agree that notes help.",
+"right": "I agree that notes help.",
+"why": "agree é verbo; sem am."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com In my view: “I think notes help.”",
+"answer": "In my view, notes help.",
+"why": ""
+},
+{
+"prompt": "Reescreva com I would argue that: “Laptops are a distraction.”",
+"answer": "I would argue that laptops are a distraction.",
+"why": ""
+},
+{
+"prompt": "Una com That said: “Laptops are fast. Handwriting is deeper.” (comece com Laptops are fast.)",
+"answer": "Laptops are fast. That said, handwriting is deeper.",
+"why": ""
+}
+]
+}

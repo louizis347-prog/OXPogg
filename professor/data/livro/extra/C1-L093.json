@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "limite de palavras",
+"wrong": "The answer is the rapid growing of the market. (NO MORE THAN TWO WORDS)",
+"right": "The answer is rapid growth.",
+"why": "O brasileiro copia trechos longos ou muda a palavra. Respeite o limite e copie as palavras exatas do texto, com a forma pedida."
+},
+"mcq": [
+{
+"q": "NO MORE THAN TWO WORDS: ",
+"opts": [
+"rapid growth",
+"the rapid growth",
+"rapid and fast growth"
+],
+"ans": 0,
+"why": "Máximo 2 palavras."
+},
+{
+"q": "Sentence completion answers use…",
+"opts": [
+"a number only",
+"exact words from the text",
+"your own words"
+],
+"ans": 1,
+"why": "Palavras exatas."
+},
+{
+"q": "In a flow-chart, follow…",
+"opts": [
+"alphabet",
+"length",
+"the order of steps"
+],
+"ans": 2,
+"why": "Ordem."
+},
+{
+"q": "Which is a noun?",
+"opts": [
+"growth",
+"grow",
+"grew"
+],
+"ans": 0,
+"why": "Substantivo."
+}
+],
+"fix": [
+{
+"wrong": "The market growed rapidly.",
+"right": "The market grew rapidly.",
+"why": "Irregular."
+},
+{
+"wrong": "The text say it is rapid.",
+"right": "The text says it is rapid.",
+"why": "-s."
+},
+{
+"wrong": "It is the rapid grow.",
+"right": "It is rapid growth.",
+"why": "Substantivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “The market grows rapidly.”",
+"answer": "The market grew rapidly.",
+"why": ""
+},
+{
+"prompt": "Substantivo: “The market grows rapidly.” (rapid …)",
+"answer": "The market shows rapid growth.",
+"why": ""
+},
+{
+"prompt": "Negativa: “The text says it.”",
+"answer": "The text does not say it.",
+"why": ""
+}
+]
+}

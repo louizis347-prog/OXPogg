@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva take into",
+"wrong": "Costs must take into consideration.",
+"right": "Costs must be taken into consideration.",
+"why": "Em português, “devem ser levados em consideração” e “devem levar em consideração” soam parecidos. Em inglês, objeto como sujeito exige passiva."
+},
+"mcq": [
+{
+"q": "Costs must ___ into consideration.",
+"opts": [
+"be taking",
+"be taken",
+"take"
+],
+"ans": 1,
+"why": "Passiva."
+},
+{
+"q": "The ___ of the service helped.",
+"opts": [
+"expand",
+"expanded",
+"expansion"
+],
+"ans": 2,
+"why": "Substantivo."
+},
+{
+"q": "Transfers are associated ___ absence.",
+"opts": [
+"with",
+"to",
+"by"
+],
+"ans": 0,
+"why": "with."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Costs take into consideration.",
+"Costs are taken into consideration.",
+"Costs are taken in consideration."
+],
+"ans": 1,
+"why": "into."
+}
+],
+"fix": [
+{
+"wrong": "Costs must taken into consideration.",
+"right": "Costs must be taken into consideration.",
+"why": "be."
+},
+{
+"wrong": "The expand of the service helped.",
+"right": "The expansion of the service helped.",
+"why": "expansion."
+},
+{
+"wrong": "Absence is associated to transfers.",
+"right": "Absence is associated with transfers.",
+"why": "with."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “We must take costs into consideration.”",
+"answer": "Costs must be taken into consideration.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “The service expanded, and it helped.” (The … of the service helped.)",
+"answer": "The expansion of the service helped.",
+"why": ""
+},
+{
+"prompt": "Use associated with: “Transfers relate to absence.”",
+"answer": "Transfers are associated with absence.",
+"why": ""
+}
+]
+}

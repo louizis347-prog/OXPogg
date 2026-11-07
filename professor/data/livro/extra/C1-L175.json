@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Thank you by your quotation of May 3.",
+"right": "Thank you for your quotation of May 3.",
+"why": "Em português “agradeço pela” traduz-se com by ou with. Em inglês, thank you for + substantivo/-ing."
+},
+"mcq": [
+{
+"q": "Which opens a business reply?",
+"opts": [
+"Thanks of your quotation.",
+"Thank you for your quotation.",
+"Thank you with the quotation."
+],
+"ans": 1,
+"why": "for."
+},
+{
+"q": "“___ we value your offer, the price is high.”",
+"opts": [
+"Even",
+"So",
+"Much as"
+],
+"ans": 2,
+"why": "Concessão formal."
+},
+{
+"q": "“Should you be ___ to confirm, we would order.”",
+"opts": [
+"able",
+"can",
+"possible"
+],
+"ans": 0,
+"why": "Should you be able to."
+},
+{
+"q": "“In ___, we would commit to a two-year contract.”",
+"opts": [
+"change",
+"return",
+"contrast"
+],
+"ans": 1,
+"why": "In return."
+}
+],
+"fix": [
+{
+"wrong": "Should you can confirm, we would order.",
+"right": "Should you be able to confirm, we would order.",
+"why": "can não combina."
+},
+{
+"wrong": "We would commit for a two-year contract.",
+"right": "We would commit to a two-year contract.",
+"why": "commit to."
+},
+{
+"wrong": "Much as we value the discount, but the price is high.",
+"right": "Much as we value the discount, the price is high.",
+"why": "Sem but."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Should: “If you are able to confirm, we would order.”",
+"answer": "Should you be able to confirm, we would order.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Much as: “Although we value your offer, the price is high.”",
+"answer": "Much as we value your offer, the price is high.",
+"why": ""
+},
+{
+"prompt": "Reescreva com thank you for: “I thank you the quotation.”",
+"answer": "Thank you for the quotation.",
+"why": ""
+}
+]
+}

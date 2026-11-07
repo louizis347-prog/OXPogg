@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "wish + would",
+"wrong": "I wish you would be here.",
+"right": "I wish you were here.",
+"why": "Em português “queria que você estivesse aqui” usa subjuntivo. O aluno traduz com would. Em inglês, o desejo sobre o presente usa wish + past (were)."
+},
+"mcq": [
+{
+"q": "Regret about the past:",
+"opts": [
+"I wish you had stayed.",
+"I wish you stayed.",
+"I wish you will stay."
+],
+"ans": 0,
+"why": "wish + past perfect."
+},
+{
+"q": "“as if the dark ___ a guest”",
+"opts": [
+"is",
+"were",
+"would be"
+],
+"ans": 1,
+"why": "as if + were."
+},
+{
+"q": "A **mandative** clause:",
+"opts": [
+"I insist that he is present.",
+"I insist him present.",
+"I insist that he be present."
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "A **counterfactual wish** describes...",
+"opts": [
+"unreal situations",
+"real facts",
+"dates"
+],
+"ans": 0,
+"why": "Irreal."
+}
+],
+"fix": [
+{
+"wrong": "I wish she was here now.",
+"right": "I wish she were here now.",
+"why": "were."
+},
+{
+"wrong": "I wish I would have stayed.",
+"right": "I wish I had stayed.",
+"why": "had."
+},
+{
+"wrong": "He behaves as if he was the boss.",
+"right": "He behaves as if he were the boss.",
+"why": "as if + were."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com wish: “I regret that you left.” (I wish…)",
+"answer": "I wish you had stayed.",
+"why": "Use esta forma."
+},
+{
+"prompt": "Reescreva com wish: “I am sorry you are away.” (I wish…)",
+"answer": "I wish you were here.",
+"why": ""
+},
+{
+"prompt": "Reescreva com as if: “He acts, but he is not the boss.” (as if he were)",
+"answer": "He acts as if he were the boss.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "let x be",
+"wrong": "Let x is a point on the line.",
+"right": "Let x be a point on the line.",
+"why": "Em português “seja x um ponto” usa subjuntivo e o aluno põe is. Em inglês, depois de Let X use be."
+},
+"mcq": [
+{
+"q": "“Suppose that…” introduces a...",
+"opts": [
+"conclusion",
+"citation",
+"hypothesis"
+],
+"ans": 2,
+"why": "Hipótese."
+},
+{
+"q": "“Q.E.D.” closes a...",
+"opts": [
+"proof",
+"letter",
+"party"
+],
+"ans": 0,
+"why": "Prova."
+},
+{
+"q": "“Then, by induction,…” shows...",
+"opts": [
+"doubt",
+"inference",
+"history"
+],
+"ans": 1,
+"why": "Inferência."
+},
+{
+"q": "“Let X be…” does what?",
+"opts": [
+"proves",
+"questions",
+"defines"
+],
+"ans": 2,
+"why": "Define."
+}
+],
+"fix": [
+{
+"wrong": "Let the circle are given.",
+"right": "Let the circle be given.",
+"why": "be."
+},
+{
+"wrong": "Suppose that the line is finite, then we gets a segment.",
+"right": "Suppose that the line is finite; then we get a segment.",
+"why": "get."
+},
+{
+"wrong": "Choose a point at the chosen circle.",
+"right": "Choose a point on the chosen circle.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Let C is a circle.”",
+"answer": "Let C be a circle.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Suppose: “Assume the line is finite.”",
+"answer": "Suppose that the line is finite.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Then: “From the assumption we get a segment.” (Then…)",
+"answer": "Then we get a segment.",
+"why": ""
+}
+]
+}

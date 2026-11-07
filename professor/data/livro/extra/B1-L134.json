@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "relato de viagem",
+"wrong": "When I arrived in Lisbon, I was surprised. I was told that the museum closes at five.",
+"right": "When I arrived in Lisbon, I was surprised. I was told that the museum closed at five.",
+"why": "Em português “disseram-me que fecha às cinco” mantém o presente. Em inglês, I was told that + verbo recuado (closed). E arrive in cidade, não to."
+},
+"mcq": [
+{
+"q": "I arrived ___ Lisbon.",
+"opts": [
+"to",
+"in",
+"at to"
+],
+"ans": 1,
+"why": "arrive in."
+},
+{
+"q": "I was told that it ___ at five.",
+"opts": [
+"closes",
+"closed",
+"will close"
+],
+"ans": 1,
+"why": "Recuo."
+},
+{
+"q": "Another surprise: …",
+"opts": [
+"Other surprise is the food.",
+"Another surprises.",
+"Another surprise was the food."
+],
+"ans": 2,
+"why": "Another + singular."
+},
+{
+"q": "Conclusion:",
+"opts": [
+"At conclusion,",
+"In the end of,",
+"In conclusion,"
+],
+"ans": 2,
+"why": "In conclusion."
+}
+],
+"fix": [
+{
+"wrong": "I arrived to Lisbon.",
+"right": "I arrived in Lisbon.",
+"why": "in."
+},
+{
+"wrong": "I was told it opens at nine.",
+"right": "I was told it opened at nine.",
+"why": "Recuo."
+},
+{
+"wrong": "Other surprise was the price.",
+"right": "Another surprise was the price.",
+"why": "Another."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I arrive to Porto.” no passado, corrija",
+"answer": "I arrived in Porto.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They told me: it is free.” (I was told...)",
+"answer": "I was told that it was free.",
+"why": ""
+},
+{
+"prompt": "Reescreva com another: “One more surprise was the price.”",
+"answer": "Another surprise was the price.",
+"why": ""
+}
+]
+}

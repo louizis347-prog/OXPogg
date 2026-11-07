@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If we would learn, we would have saved.",
+"right": "If we had learned, we would have saved.",
+"why": "O brasileiro usa would na if-clause. Comparar: 3º (had + part., would have), 2º (past, would) e misto."
+},
+"mcq": [
+{
+"q": "If we had learned, we **___** saved.",
+"opts": [
+"had",
+"would have",
+"would"
+],
+"ans": 1,
+"why": "3º."
+},
+{
+"q": "If we **___** richer, we would travel.",
+"opts": [
+"would be",
+"were",
+"had been"
+],
+"ans": 1,
+"why": "2º."
+},
+{
+"q": "Misto: If I had slept, I **___** tired now.",
+"opts": [
+"wouldn’t have been",
+"won’t be",
+"wouldn’t be"
+],
+"ans": 2,
+"why": "Presente."
+},
+{
+"q": "Qual é do 3º?",
+"opts": [
+"If it had rained, we would have stayed.",
+"If it rains, we stay.",
+"If it rained, we would stay."
+],
+"ans": 0,
+"why": "Passado."
+}
+],
+"fix": [
+{
+"wrong": "If we would learned, we saved.",
+"right": "If we had learned, we would have saved.",
+"why": "3º."
+},
+{
+"wrong": "If I was rich, I would have bought it.",
+"right": "If I were rich, I would buy it.",
+"why": "2º."
+},
+{
+"wrong": "If she had slept, she isn’t tired now.",
+"right": "If she had slept, she wouldn’t be tired now.",
+"why": "Misto."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o 2º: “If we learn, we save.”",
+"answer": "If we learned, we would save.",
+"why": ""
+},
+{
+"prompt": "Passe para o 3º: “If we learned, we would save.”",
+"answer": "If we had learned, we would have saved.",
+"why": ""
+},
+{
+"prompt": "Passe para o misto: “If I had slept, I wouldn’t have been tired.” (now)",
+"answer": "If I had slept, I wouldn’t be tired now.",
+"why": ""
+}
+]
+}

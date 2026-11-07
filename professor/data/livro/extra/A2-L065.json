@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "comparativos",
+"wrong": "He is more tall that me.",
+"right": "He is taller than me.",
+"why": "Em português 'mais alto que' usa sempre mais; em inglês curto usa -er."
+},
+"mcq": [
+{
+"q": "She is the ___ in the team.",
+"opts": [
+"most fast",
+"fastest",
+"faster"
+],
+"ans": 1,
+"why": "-est."
+},
+{
+"q": "He told ___ to wait.",
+"opts": [
+"my",
+"I",
+"me"
+],
+"ans": 2,
+"why": "objeto."
+},
+{
+"q": "It is ___ than mine.",
+"opts": [
+"more big",
+"bigger",
+"biggest"
+],
+"ans": 1,
+"why": "-er."
+},
+{
+"q": "Passado de **meet**:",
+"opts": [
+"met",
+"meeted",
+"meat"
+],
+"ans": 0,
+"why": "met."
+}
+],
+"fix": [
+{
+"wrong": "He is more fast.",
+"right": "He is faster.",
+"why": "-er."
+},
+{
+"wrong": "She wants that I wait.",
+"right": "She wants me to wait.",
+"why": "objeto + to."
+},
+{
+"wrong": "It is the better.",
+"right": "It is the best.",
+"why": "superlativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Comparativo: “He is old. (than me)”",
+"answer": "He is older than me.",
+"why": ""
+},
+{
+"prompt": "Superlativo: “It is cheap.”",
+"answer": "It is the cheapest.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She asked. I wait.”",
+"answer": "She asked me to wait.",
+"why": ""
+}
+]
+}

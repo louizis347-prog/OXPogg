@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "let/make/have + base",
+"wrong": "She let me to go.",
+"right": "She let me go.",
+"why": "Em português “me deixou ir” é infinitivo, e o brasileiro leva o to por analogia a allow. Em inglês, let/make/have + objeto + verbo base, sem to; allow exige to."
+},
+"mcq": [
+{
+"q": "She let me ___.",
+"opts": [
+"to go",
+"going",
+"go"
+],
+"ans": 2,
+"why": "let + base."
+},
+{
+"q": "My boss made us ___ late.",
+"opts": [
+"to stay",
+"staying",
+"stay"
+],
+"ans": 2,
+"why": "make + base."
+},
+{
+"q": "I had him ___ it.",
+"opts": [
+"to fix",
+"fix",
+"fixing"
+],
+"ans": 1,
+"why": "have + base."
+},
+{
+"q": "She allowed me ___.",
+"opts": [
+"go",
+"to go",
+"going"
+],
+"ans": 1,
+"why": "allow + to."
+}
+],
+"fix": [
+{
+"wrong": "He made me to wait.",
+"right": "He made me wait.",
+"why": "Sem to."
+},
+{
+"wrong": "She allowed me go.",
+"right": "She allowed me to go.",
+"why": "allow + to."
+},
+{
+"wrong": "I had him to fix it.",
+"right": "I had him fix it.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com let: “She allowed me to go.”",
+"answer": "She let me go.",
+"why": ""
+},
+{
+"prompt": "Reescreva com allow: “She let me leave.”",
+"answer": "She allowed me to leave.",
+"why": ""
+},
+{
+"prompt": "Reescreva com make: “I forced him to wait.”",
+"answer": "I made him wait.",
+"why": ""
+}
+]
+}

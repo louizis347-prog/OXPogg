@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The board voted for 5 to 2 and told that costs would rise.",
+"right": "The board voted 5–2 and told the board that costs would rise.",
+"why": "Português “votou por 5 a 2”; inglês voted 5–2, sem preposição, e tell leva objeto pessoal."
+},
+"mcq": [
+{
+"q": "Score reported:",
+"opts": [
+"voted for 5–2",
+"voted 5–2",
+"voted of 5–2"
+],
+"ans": 1,
+"why": "Sem preposição."
+},
+{
+"q": "Reporting verb with object:",
+"opts": [
+"said the board",
+"talked the board",
+"told the board"
+],
+"ans": 2,
+"why": "tell + objeto."
+},
+{
+"q": "Conceded means…",
+"opts": [
+"won",
+"admitted",
+"denied"
+],
+"ans": 1,
+"why": "Admitiu."
+},
+{
+"q": "Warned that costs…",
+"opts": [
+"rise to",
+"will rise",
+"would rise"
+],
+"ans": 2,
+"why": "Recuo."
+}
+],
+"fix": [
+{
+"wrong": "The chair told that costs rise.",
+"right": "The chair said that costs would rise.",
+"why": "said/would."
+},
+{
+"wrong": "They voted for 5–2.",
+"right": "They voted 5–2.",
+"why": "Sem for."
+},
+{
+"wrong": "She conceded to the point.",
+"right": "She conceded the point.",
+"why": "Transitivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The chair said to the board, ‘Costs will rise.’” (told)",
+"answer": "The chair told the board that costs would rise.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They voted five to two.” (símbolo)",
+"answer": "They voted 5–2.",
+"why": ""
+},
+{
+"prompt": "Passado: “She concedes the point.”",
+"answer": "She conceded the point.",
+"why": ""
+}
+]
+}

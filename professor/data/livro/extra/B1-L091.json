@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gostar + -ing e condicional",
+"wrong": "I enjoyed to work with numbers; if I would stay, I regret it.",
+"right": "I enjoyed working with numbers; if I stayed, I would regret it.",
+"why": "Em português “gostei de trabalhar” usa infinitivo e “se eu ficasse, me arrependeria” usa subjuntivo. Em inglês, enjoy + -ing; if + Past, would + base."
+},
+"mcq": [
+{
+"q": "I enjoyed ___ with numbers.",
+"opts": [
+"to work",
+"working",
+"work"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "If I stayed, I ___ it.",
+"opts": [
+"regretted",
+"will regret",
+"would regret"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "You ___ be tired (dedução).",
+"opts": [
+"must to",
+"musts",
+"must"
+],
+"ans": 2,
+"why": "must."
+},
+{
+"q": "Which is correct? (gostar + -ing e condicional)",
+"opts": [
+"If I would leave, I regret.",
+"If I left, I would regret it.",
+"If I leave, I would regret."
+],
+"ans": 1,
+"why": "2º."
+}
+],
+"fix": [
+{
+"wrong": "I enjoyed to work.",
+"right": "I enjoyed working.",
+"why": "-ing."
+},
+{
+"wrong": "If I would stay, I would regret.",
+"right": "If I stayed, I would regret.",
+"why": "if + Past."
+},
+{
+"wrong": "You must to be tired.",
+"right": "You must be tired.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com enjoy: “I liked (work) with numbers.”",
+"answer": "I enjoyed working with numbers.",
+"why": ""
+},
+{
+"prompt": "Reescreva no 2º condicional: “If I stay, I will regret it.”",
+"answer": "If I stayed, I would regret it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com must: “I am sure you are tired.”",
+"answer": "You must be tired.",
+"why": ""
+}
+]
+}

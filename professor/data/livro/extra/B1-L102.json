@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "could / would (hábito)",
+"wrong": "It could water the plants every morning; it would greet she.",
+"right": "It could water the plants. Every morning it would greet her.",
+"why": "Em português “podia regar” e “cumprimentava” usam imperfeito. Em inglês, could = habilidade passada; would = hábito; pronome após o verbo é objeto (her)."
+},
+"mcq": [
+{
+"q": "It ___ water the plants (habilidade).",
+"opts": [
+"would to",
+"could",
+"coulds"
+],
+"ans": 1,
+"why": "could."
+},
+{
+"q": "It ___ greet her every morning (hábito).",
+"opts": [
+"would",
+"could to",
+"will"
+],
+"ans": 0,
+"why": "would."
+},
+{
+"q": "It greeted ___.",
+"opts": [
+"she",
+"her",
+"hers"
+],
+"ans": 1,
+"why": "Objeto."
+},
+{
+"q": "She ___ stop smiling (sentimento).",
+"opts": [
+"couldn’t",
+"couldn't to",
+"can't"
+],
+"ans": 0,
+"why": "couldn’t."
+}
+],
+"fix": [
+{
+"wrong": "It would greet she.",
+"right": "It would greet her.",
+"why": "her."
+},
+{
+"wrong": "It could waters the plants.",
+"right": "It could water the plants.",
+"why": "Base."
+},
+{
+"wrong": "She couldn’t to stop smiling.",
+"right": "She couldn't stop smiling.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com would: “It greeted her every morning.”",
+"answer": "It would greet her every morning.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could: “It was able to water the plants.”",
+"answer": "It could water the plants.",
+"why": ""
+},
+{
+"prompt": "Reescreva com couldn't: “She was unable to stop smiling.”",
+"answer": "She couldn't stop smiling.",
+"why": ""
+}
+]
+}

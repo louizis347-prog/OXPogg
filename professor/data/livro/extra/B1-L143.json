@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estratégia de resumo",
+"wrong": "The text talk about trains. The author say that numbers rises. Paraphrase it with the same words.",
+"right": "The text talks about trains. The author says that numbers rise. Paraphrase it with your own words.",
+"why": "Em português o verbo concorda com o sujeito, mas o -s do inglês é ignorado; também numbers é plural (rise). E parafrasear exige palavras próprias."
+},
+"mcq": [
+{
+"q": "To paraphrase, use…",
+"opts": [
+"the same words",
+"your own words",
+"only numbers"
+],
+"ans": 1,
+"why": "Próprias."
+},
+{
+"q": "Note 3 main ideas and…",
+"opts": [
+"every detail",
+"nothing",
+"numbers and names"
+],
+"ans": 2,
+"why": "Números."
+},
+{
+"q": "The author ___ that prices rise.",
+"opts": [
+"says",
+"say",
+"saying"
+],
+"ans": 0,
+"why": "-s."
+},
+{
+"q": "Numbers ___ in 2020.",
+"opts": [
+"rised",
+"rose",
+"rise"
+],
+"ans": 1,
+"why": "rose."
+}
+],
+"fix": [
+{
+"wrong": "The text talk about trains.",
+"right": "The text talks about trains.",
+"why": "-s."
+},
+{
+"wrong": "The numbers rised.",
+"right": "The numbers rose.",
+"why": "rose."
+},
+{
+"wrong": "The writer don't say it.",
+"right": "The writer doesn't say it.",
+"why": "doesn't."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Prices rise.”",
+"answer": "Prices rose.",
+"why": ""
+},
+{
+"prompt": "Reescreva na 3ª pessoa: “I say that numbers rise.” (The author)",
+"answer": "The author says that numbers rise.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “The text mentions prices.”",
+"answer": "The text doesn't mention prices.",
+"why": ""
+}
+]
+}

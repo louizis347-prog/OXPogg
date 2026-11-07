@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "the + comparativo",
+"wrong": "More we talk, better we understand.",
+"right": "The more we talk, the better we understand.",
+"why": "Em português “quanto mais… melhor” não usa artigo. Em inglês, the é obrigatório antes dos dois comparativos."
+},
+"mcq": [
+{
+"q": "___ more we talk, the better we understand.",
+"opts": [
+"A",
+"Some",
+"The"
+],
+"ans": 2,
+"why": "The."
+},
+{
+"q": "The sooner, ___ better.",
+"opts": [
+"the",
+"a",
+"more"
+],
+"ans": 0,
+"why": "the."
+},
+{
+"q": "Not so much A ___ B.",
+"opts": [
+"like",
+"as",
+"than"
+],
+"ans": 1,
+"why": "as."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"More the, merrier the.",
+"The more, merrier.",
+"The more, the merrier."
+],
+"ans": 2,
+"why": "The…the."
+}
+],
+"fix": [
+{
+"wrong": "More we practice, better we get.",
+"right": "The more we practice, the better we get.",
+"why": "the…the."
+},
+{
+"wrong": "The more we practice, better we get.",
+"right": "The more we practice, the better we get.",
+"why": "the."
+},
+{
+"wrong": "It is not so much price than quality.",
+"right": "It is not so much price as quality.",
+"why": "as."
+}
+],
+"rewrite": [
+{
+"prompt": "Use the…the: “If we practice more, we get better.”",
+"answer": "The more we practice, the better we get.",
+"why": ""
+},
+{
+"prompt": "Use the…the: “If it is sooner, it is better.”",
+"answer": "The sooner, the better.",
+"why": ""
+},
+{
+"prompt": "Use not so much…as: “It is quality more than price.”",
+"answer": "It is not so much price as quality.",
+"why": ""
+}
+]
+}

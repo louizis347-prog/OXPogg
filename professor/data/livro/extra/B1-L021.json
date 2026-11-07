@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo definido",
+"wrong": "In 2015, they have surveyed 1,000 adults.",
+"right": "In 2015, they surveyed 1,000 adults.",
+"why": "Em português usamos “têm pesquisado” de forma flexível. Em inglês, data definida (in 2015, yesterday) exige Past Simple; Present Perfect não aceita ponto fechado no passado."
+},
+"mcq": [
+{
+"q": "E-books ___ popular.",
+"opts": [
+"became",
+"have become",
+"has become"
+],
+"ans": 1,
+"why": "Sem data, até agora."
+},
+{
+"q": "We ___ the store in 2018.",
+"opts": [
+"have opened",
+"open",
+"opened"
+],
+"ans": 2,
+"why": "Data definida = Past Simple."
+},
+{
+"q": "Which goes with Present Perfect?",
+"opts": [
+"so far",
+"last year",
+"yesterday"
+],
+"ans": 0,
+"why": "so far = até agora."
+},
+{
+"q": "She ___ here since 2010.",
+"opts": [
+"worked",
+"works",
+"has worked"
+],
+"ans": 2,
+"why": "since pede Present Perfect."
+}
+],
+"fix": [
+{
+"wrong": "I have seen him yesterday.",
+"right": "I saw him yesterday.",
+"why": "yesterday exige passado simples."
+},
+{
+"wrong": "They has finished.",
+"right": "They have finished.",
+"why": "They + have."
+},
+{
+"wrong": "She have lived here for years.",
+"right": "She has lived here for years.",
+"why": "She + has."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no Present Perfect: “I read three books.” (até agora)",
+"answer": "I have read three books.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Past Simple, com in 2015: “They have surveyed adults.”",
+"answer": "In 2015, they surveyed adults.",
+"why": "Aceita a ordem com in 2015 no início."
+},
+{
+"prompt": "Reescreva com since: “We have lived here for six years.” (desde 2019)",
+"answer": "We have lived here since 2019.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão",
+"wrong": "You are new?",
+"right": "Are you new?",
+"why": "Em português basta mudar a entonação; em inglês inverte-se o verbo be e o sujeito."
+},
+"mcq": [
+{
+"q": "Short answer: “Am I late?” Yes, ___",
+"opts": [
+"you do.",
+"you are.",
+"I am."
+],
+"ans": 1,
+"why": "Mudamos o pronome: you are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Is new the book?",
+"Does the book new?",
+"Is the book new?"
+],
+"ans": 2,
+"why": "Is + sujeito + adjetivo."
+},
+{
+"q": "Question for “She is nice.”",
+"opts": [
+"Is she nice?",
+"She is nice?",
+"Does she nice?"
+],
+"ans": 0,
+"why": "Inverta is e she."
+},
+{
+"q": "Are you late? — ___",
+"opts": [
+"Yes, I do.",
+"Yes, I am.",
+"Yes, I late."
+],
+"ans": 1,
+"why": "Resposta curta com be."
+}
+],
+"fix": [
+{
+"wrong": "Do you tired?",
+"right": "Are you tired?",
+"why": "Be não usa do."
+},
+{
+"wrong": "Yes, I do. (Are you late?)",
+"right": "Yes, I am.",
+"why": "A resposta repete o be."
+},
+{
+"wrong": "You are new?",
+"right": "Are you new?",
+"why": "Inversão obrigatória."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “They are in class.”",
+"answer": "Are they in class?",
+"why": ""
+},
+{
+"prompt": "Resposta curta negativa para “Is she tired?” (com isn’t)",
+"answer": "No, she isn’t.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You are hungry.”",
+"answer": "Are you hungry?",
+"why": ""
+}
+]
+}

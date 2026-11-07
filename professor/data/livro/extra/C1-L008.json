@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem paralela",
+"wrong": "Not only must you gather data, but also verifying.",
+"right": "Not only must you gather data, but you should also verify it.",
+"why": "Em português tendemos a misturar formas após “mas também”. Em inglês, os dois lados devem ter a mesma estrutura."
+},
+"mcq": [
+{
+"q": "Not only ___ she write, but she also edits.",
+"opts": [
+"is",
+"has",
+"does"
+],
+"ans": 2,
+"why": "does + base."
+},
+{
+"q": "“Both … and” needs…",
+"opts": [
+"parallel forms",
+"different forms",
+"a comma"
+],
+"ans": 0,
+"why": "Paralelismo."
+},
+{
+"q": "Which is parallel?",
+"opts": [
+"Not only fast but also to be accurate",
+"Not only fast but also accurate",
+"Not only fast but also accuracy"
+],
+"ans": 1,
+"why": "Adjetivo + adjetivo."
+},
+{
+"q": "Not only ___ he lost, but he also quit.",
+"opts": [
+"has",
+"was",
+"did"
+],
+"ans": 2,
+"why": "did lose? atenção: lost vs. lose."
+}
+],
+"fix": [
+{
+"wrong": "Not only she writes, but she also edits.",
+"right": "Not only does she write, but she also edits.",
+"why": "Inversão."
+},
+{
+"wrong": "Both managers and also staff came.",
+"right": "Both managers and staff came.",
+"why": "both…and sem also."
+},
+{
+"wrong": "Not only did he lost, but he also quit.",
+"right": "Not only did he lose, but he also quit.",
+"why": "Após did, base."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Not only: “She writes and she edits.”",
+"answer": "Not only does she write, but she also edits.",
+"why": ""
+},
+{
+"prompt": "Use both…and: “Managers came. Staff came too.”",
+"answer": "Both managers and staff came.",
+"why": ""
+},
+{
+"prompt": "Comece com Not only: “It saves time and money.”",
+"answer": "Not only does it save time, but it also saves money.",
+"why": ""
+}
+]
+}

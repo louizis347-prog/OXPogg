@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estrutura",
+"wrong": "She convinced me to sign the contract.",
+"right": "She persuaded me to sign the contract.",
+"why": "Português “convenceu-me a assinar” usa um só verbo; em inglês convince + that/of (crença) e persuade + to (ação)."
+},
+"mcq": [
+{
+"q": "Change belief:",
+"opts": [
+"persuade",
+"urge",
+"convince"
+],
+"ans": 2,
+"why": "convince."
+},
+{
+"q": "Lead to act:",
+"opts": [
+"convince me to sign",
+"persuade me sign",
+"persuade me to sign"
+],
+"ans": 2,
+"why": "persuade to."
+},
+{
+"q": "Convince + …",
+"opts": [
+"to",
+"for",
+"of / that"
+],
+"ans": 2,
+"why": "of/that."
+},
+{
+"q": "She convinced me ___ it was true.",
+"opts": [
+"that",
+"for",
+"to"
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "She convinced me to sign.",
+"right": "She persuaded me to sign.",
+"why": "Ação = persuade."
+},
+{
+"wrong": "She persuaded me that it was true.",
+"right": "She convinced me that it was true.",
+"why": "Crença."
+},
+{
+"wrong": "He persuaded me sign.",
+"right": "He persuaded me to sign.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com persuade: “She convinced me to sign.”",
+"answer": "She persuaded me to sign.",
+"why": ""
+},
+{
+"prompt": "Reescreva com convince: “She persuaded me that it was true.”",
+"answer": "She convinced me that it was true.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She convinced me.”",
+"answer": "She did not convince me.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would no if",
+"wrong": "If they would have practiced, deals would have closed.",
+"right": "If they had practiced, deals would have closed.",
+"why": "O brasileiro pensa em “se eles teriam praticado”. Em inglês, a oração if usa past perfect; o would fica só na principal."
+},
+"mcq": [
+{
+"q": "If they ___ practiced, deals would have closed.",
+"opts": [
+"had",
+"would have",
+"did"
+],
+"ans": 0,
+"why": "past perfect."
+},
+{
+"q": "I regret ___ . (arrependimento)",
+"opts": [
+"If I would know",
+"If I had known",
+"If I know"
+],
+"ans": 1,
+"why": "3º condicional."
+},
+{
+"q": "___ the weather holds, we will finish.",
+"opts": [
+"Unless that",
+"Whereas",
+"Provided that"
+],
+"ans": 2,
+"why": "Provided that = desde que."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Unless you call, I stay.",
+"Unless you don’t call, I stay.",
+"Unless call you, I stay."
+],
+"ans": 0,
+"why": "Unless já é negativo."
+}
+],
+"fix": [
+{
+"wrong": "If I would have known, I would have asked.",
+"right": "If I had known, I would have asked.",
+"why": "if + had."
+},
+{
+"wrong": "Provided if it rains, we stay.",
+"right": "Provided that it rains, we stay.",
+"why": "Provided that."
+},
+{
+"wrong": "If they have practiced, deals would have closed.",
+"right": "If they had practiced, deals would have closed.",
+"why": "past perfect."
+}
+],
+"rewrite": [
+{
+"prompt": "Críticas: “You didn’t plan, so we failed.” (If…)",
+"answer": "If you had planned, we would not have failed.",
+"why": ""
+},
+{
+"prompt": "Use provided that: “We will sign if the price drops.”",
+"answer": "We will sign provided that the price drops.",
+"why": ""
+},
+{
+"prompt": "Use unless: “If you don’t ask, you won’t know.”",
+"answer": "Unless you ask, you won’t know.",
+"why": ""
+}
+]
+}

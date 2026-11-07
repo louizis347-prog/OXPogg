@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição + whom",
+"wrong": "Farmers for who water was a worry moved away.",
+"right": "Farmers for whom water was a worry moved away.",
+"why": "Em português dizemos “para quem”/“os quais” e muitos reduzem para who. Depois de preposição, em inglês formal, a forma é whom."
+},
+"mcq": [
+{
+"q": "“a team most of ___ were volunteers”",
+"opts": [
+"whom",
+"who",
+"which"
+],
+"ans": 0,
+"why": "most of whom."
+},
+{
+"q": "“Calder, ___ research changed policy,”",
+"opts": [
+"who",
+"whose",
+"which"
+],
+"ans": 1,
+"why": "whose research."
+},
+{
+"q": "Non-restrictive clauses use...",
+"opts": [
+"no commas",
+"that",
+"commas"
+],
+"ans": 2,
+"why": "Vírgulas."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"the town in which the flood struck",
+"the town in that the flood struck",
+"the town where in the flood struck"
+],
+"ans": 0,
+"why": "prep + which."
+}
+],
+"fix": [
+{
+"wrong": "Calder, who research changed policy, spoke.",
+"right": "Calder, whose research changed policy, spoke.",
+"why": "whose."
+},
+{
+"wrong": "A team most of who were volunteers.",
+"right": "A team, most of whom were volunteers.",
+"why": "most of whom."
+},
+{
+"wrong": "The spring flood that damaged the town it was severe.",
+"right": "The spring flood that damaged the town was severe.",
+"why": "Sem pronome duplo."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “I met farmers. Water was a worry for them.” (for whom)",
+"answer": "I met farmers for whom water was a worry.",
+"why": ""
+},
+{
+"prompt": "Una: “She has a team. Most of the team were volunteers.” (most of whom)",
+"answer": "She has a team, most of whom were volunteers.",
+"why": ""
+},
+{
+"prompt": "Una: “Calder is an ecologist. Her research changed policy.” (whose)",
+"answer": "Calder is an ecologist whose research changed policy.",
+"why": ""
+}
+]
+}

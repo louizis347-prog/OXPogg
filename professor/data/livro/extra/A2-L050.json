@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "come vs go",
+"wrong": "I go to your party tomorrow. See you there!",
+"right": "I'll come to your party tomorrow. See you there!",
+"why": "Em português 'ir' serve nos dois sentidos; em inglês, quando o movimento é em direção a quem fala ou ouve, usa-se come."
+},
+"mcq": [
+{
+"q": "Passado de come:",
+"opts": [
+"comed",
+"come",
+"came"
+],
+"ans": 2,
+"why": "came."
+},
+{
+"q": "Can you ___ to my party?",
+"opts": [
+"go",
+"came",
+"come"
+],
+"ans": 2,
+"why": "vir."
+},
+{
+"q": "I'm ___ ! Wait for me.",
+"opts": [
+"going",
+"coming",
+"comes"
+],
+"ans": 1,
+"why": "vou aí."
+},
+{
+"q": "Where do you ___ from?",
+"opts": [
+"go",
+"come",
+"came"
+],
+"ans": 1,
+"why": "come from."
+}
+],
+"fix": [
+{
+"wrong": "He comed late.",
+"right": "He came late.",
+"why": "came."
+},
+{
+"wrong": "Where do you go from?",
+"right": "Where do you come from?",
+"why": "come from."
+},
+{
+"wrong": "I will coming.",
+"right": "I'll come.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “She comes home.”",
+"answer": "She came home.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You come from Brazil.” com where",
+"answer": "Where do you come from?",
+"why": ""
+},
+{
+"prompt": "Passado: “They come early.”",
+"answer": "They came early.",
+"why": ""
+}
+]
+}

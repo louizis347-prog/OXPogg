@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pedido indireto",
+"wrong": "Could you to close the window?",
+"right": "Could you close the window?",
+"why": "Em português “poderia fechar” aceita a estrutura com infinitivo depois. Em inglês, após Could you use verbo na forma base, sem to."
+},
+"mcq": [
+{
+"q": "“Interesting idea” may actually signal...",
+"opts": [
+"reservations",
+"enthusiasm",
+"a question"
+],
+"ans": 0,
+"why": "Reservas."
+},
+{
+"q": "“Do you have a minute?” often precedes...",
+"opts": [
+"a joke",
+"a serious talk",
+"a goodbye"
+],
+"ans": 1,
+"why": "Conversa séria."
+},
+{
+"q": "“With respect,…” typically announces...",
+"opts": [
+"gratitude",
+"apology",
+"disagreement"
+],
+"ans": 2,
+"why": "Discordância."
+},
+{
+"q": "A **face-threatening act** is one that...",
+"opts": [
+"risks someone’s dignity",
+"is quiet",
+"is quick"
+],
+"ans": 0,
+"why": "Ameaça à face."
+}
+],
+"fix": [
+{
+"wrong": "Do you have a minute for to talk?",
+"right": "Do you have a minute to talk?",
+"why": "Sem for."
+},
+{
+"wrong": "I am sure you did your best, but is not good.",
+"right": "I am sure you did your best, but it is not good.",
+"why": "Sujeito."
+},
+{
+"wrong": "With respect, I disagreeing.",
+"right": "With respect, I disagree.",
+"why": "Presente."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como pedido indireto: “Close the window.”",
+"answer": "Could you close the window?",
+"why": ""
+},
+{
+"prompt": "Reescreva sendo diplomático: “That is wrong.” (With respect,…)",
+"answer": "With respect, that is wrong.",
+"why": ""
+},
+{
+"prompt": "Reescreva no negativo: “Could you close the window?” (Couldn’t you…)",
+"answer": "Couldn’t you close the window?",
+"why": ""
+}
+]
+}

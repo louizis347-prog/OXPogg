@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "set",
+"wrong": "I setted the table.",
+"right": "I set the table.",
+"why": "O aluno regulariza com -ed; set é invariável: set, set, set."
+},
+"mcq": [
+{
+"q": "Passado de set:",
+"opts": [
+"seted",
+"setted",
+"set"
+],
+"ans": 2,
+"why": "set."
+},
+{
+"q": "Set the ___ . (alarme)",
+"opts": [
+"alarm",
+"alarm to",
+"alarms"
+],
+"ans": 0,
+"why": "set an alarm."
+},
+{
+"q": "Let's ___ a goal.",
+"opts": [
+"sets",
+"setted",
+"set"
+],
+"ans": 2,
+"why": "set a goal."
+},
+{
+"q": "The sun ___ at 6.",
+"opts": [
+"set to",
+"setting",
+"sets"
+],
+"ans": 2,
+"why": "sets."
+}
+],
+"fix": [
+{
+"wrong": "She setted the table.",
+"right": "She set the table.",
+"why": "set."
+},
+{
+"wrong": "She sets the table yesterday.",
+"right": "She set the table yesterday.",
+"why": "passado."
+},
+{
+"wrong": "The sun setted.",
+"right": "The sun set.",
+"why": "set."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I set the alarm.”",
+"answer": "I set the alarm.",
+"why": ""
+},
+{
+"prompt": "Passado: “She sets the table.”",
+"answer": "She set the table.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “The sun sets.” → passado",
+"answer": "The sun set.",
+"why": ""
+}
+]
+}
