@@ -4,7 +4,7 @@ Ordem = ordem original de carregamento (a cascata não muda), com landing-light.
 Uso: python3 tools/build_landing.py"""
 import re,os
 R=os.path.abspath(os.path.join(os.path.dirname(__file__),'..'))
-ORDER=['tokens','landing','home-art','landing-new','landing-teacher','landing-wow','landing-pro','landing-connect','landing-light']
+ORDER=['tokens','landing','home-art','landing-new','landing-teacher','landing-wow','landing-pro','landing-connect','landing-light','landing-dark']
 def mini(s):
     s=re.sub(r'/\*.*?\*/','',s,flags=re.S)
     s=re.sub(r'\s+',' ',s)

@@ -1,0 +1,20 @@
+/* Pogglot · landing no tema escuro (a folha landing-light forçava fundos claros) — vem depois de tudo */
+html[data-theme=dark]{--lt-line:rgba(255,255,255,.1);--lt-soft:#102326;--lt-ink:#E6F3F2;color-scheme:dark}
+html[data-theme=dark] body{background:#0C1B1D;color:#E6F3F2}
+html[data-theme=dark] .sec.alt{background:var(--lt-soft)!important;border-color:var(--lt-line)}
+html[data-theme=dark] .hero2{background:linear-gradient(180deg,#0F2A2D 0%,#0C1B1D 88%)!important}
+html[data-theme=dark] .hero2 .lead{color:#B7CFD0}
+html[data-theme=dark] .hero2 .stats div{background:rgba(255,255,255,.05);border-color:var(--lt-line)}
+html[data-theme=dark] .hero2 .hero-orbit{opacity:.3}
+html[data-theme=dark] .sh p,html[data-theme=dark] .tut-head p{color:#9DB7B9}
+html[data-theme=dark] .faq details,html[data-theme=dark] .btn.ghost{background:rgba(255,255,255,.05);border-color:var(--lt-line)!important;color:#E6F3F2}
+html[data-theme=dark] .step,html[data-theme=dark] .plan,html[data-theme=dark] .card,html[data-theme=dark] .tut-steps button,html[data-theme=dark] .prof .bubble{background:#12292C}
+html[data-theme=dark] .top{background:rgba(12,27,29,.82)}
+html[data-theme=dark] .cx-card,html[data-theme=dark] .cl{background:#12292C;border-color:var(--lt-line)}
+html[data-theme=dark] .cx-card .meta span{background:rgba(255,255,255,.06);border-color:var(--lt-line);color:#C6DADB}
+html[data-theme=dark] .cx-goals button{background:rgba(255,255,255,.05);border-color:var(--lt-line);color:#C6DADB}
+html[data-theme=dark] .cx-goals button[aria-pressed=true]{background:var(--t-primary);color:#fff}
+html[data-theme=dark] .cl .crs b{background:color-mix(in srgb,var(--k) 24%,transparent)}
+html[data-theme=dark] .cx-route{color:#C6DADB}
+html[data-theme=dark] .hero2 h1,html[data-theme=dark] .sh h2,html[data-theme=dark] .cx-card h3,html[data-theme=dark] .cl h3{color:#F2FAF9}
+html[data-theme=dark] .logo,html[data-theme=dark] .logo span{color:#F2FAF9}html[data-theme=dark] .logo b{color:#FFB627}
