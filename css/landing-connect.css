@@ -1,0 +1,55 @@
+/* Pogglot · landing: idiomas com miniaturas + cursos conectados (v1) */
+.cl-grid{display:grid;gap:var(--t-s4);grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.cl-grid{grid-template-columns:repeat(4,1fr)}}
+.cl{position:relative;display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:var(--t-card);border:1px solid var(--t-line);box-shadow:var(--t-sh-card);text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s,border-color .25s}
+.cl:hover,.cl:focus-visible{transform:translateY(-5px);border-color:var(--c);box-shadow:0 22px 38px -24px color-mix(in srgb,var(--c) 70%,transparent)}
+.cl .art{position:relative;aspect-ratio:4/3;background:linear-gradient(160deg,color-mix(in srgb,var(--c) 38%,#fff),color-mix(in srgb,var(--c) 78%,#13222b));overflow:hidden}
+.cl .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.cl:hover .art img{transform:scale(1.06)}
+.cl .art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,rgba(8,20,28,.72));pointer-events:none}
+.cl .code{position:absolute;left:12px;bottom:10px;z-index:1;color:#fff;font-weight:800;font-size:13px;letter-spacing:.14em;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.cl .code i{font-style:normal;opacity:.78;font-weight:700;letter-spacing:.06em;margin-left:6px}
+.cl .bd{padding:14px 15px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cl h3{font-size:var(--t-fs-md);line-height:1.2}
+.cl .hook{color:var(--t-ink2);font-size:13.5px;line-height:1.4;font-weight:600;flex:1}
+.cl .lv{color:var(--t-mute);font-size:12px;font-weight:700}
+.cl .crs{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.cl .crs b{font-size:10.5px;font-weight:800;letter-spacing:.04em;padding:3px 8px;border-radius:999px;color:var(--k);background:color-mix(in srgb,var(--k) 13%,#fff)}
+.cl .crs b.off{display:none}
+.k-pk{--k:#E8742A}.k-rg{--k:#0B7C88}.k-nb{--k:#C2488A}.k-pr{--k:#5B5BD6}
+
+/* cursos conectados */
+.cx{position:relative}
+.cx-goals{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 auto var(--t-s5);max-width:900px}
+.cx-goals button{font:inherit;font-weight:700;font-size:14px;padding:10px 16px;border-radius:999px;border:1px solid var(--t-line2);background:var(--t-card);color:var(--t-ink2);cursor:pointer;transition:all .2s}
+.cx-goals button:hover{border-color:var(--t-primary);color:var(--t-primary)}
+.cx-goals button[aria-pressed=true]{background:var(--t-primary);border-color:var(--t-primary);color:#fff;box-shadow:0 10px 22px -14px var(--t-primary)}
+.cx-route{min-height:26px;text-align:center;color:var(--t-ink2);font-weight:700;font-size:15px;margin:0 auto var(--t-s5);max-width:640px}
+.cx-route b{color:var(--t-primary)}
+.cx-path{display:grid;gap:30px;grid-template-columns:1fr;counter-reset:cx}
+@media(min-width:900px){.cx-path{grid-template-columns:repeat(4,1fr);gap:26px}}
+.cx-card{position:relative;display:flex;flex-direction:column;border-radius:24px;overflow:hidden;background:var(--t-card);border:1px solid var(--t-line);box-shadow:var(--t-sh-card);text-decoration:none;color:inherit;transition:transform .3s,opacity .3s,box-shadow .3s,border-color .3s;counter-increment:cx}
+.cx-card:hover,.cx-card:focus-visible{transform:translateY(-6px);border-color:var(--k);box-shadow:0 26px 44px -26px color-mix(in srgb,var(--k) 75%,transparent)}
+.cx-card .art{position:relative;aspect-ratio:4/3;overflow:hidden;background:color-mix(in srgb,var(--k) 55%,#13222b)}
+.cx-card .art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.cx-card:hover .art img{transform:scale(1.05)}
+.cx-card .art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,20,28,.55));pointer-events:none}
+.cx-card .num{position:absolute;left:14px;top:14px;z-index:1;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:var(--k);font-weight:800;font-size:15px;box-shadow:0 6px 16px -6px rgba(0,0,0,.4)}
+.cx-card .num::before{content:counter(cx)}
+.cx-card .bd{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cx-card .kick{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--k)}
+.cx-card h3{font-size:clamp(20px,2.2vw,24px);line-height:1.15}
+.cx-card p{color:var(--t-ink2);font-size:14.5px;line-height:1.5;flex:1}
+.cx-card .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.cx-card .meta span{font-size:12px;font-weight:700;color:var(--t-ink2);background:var(--t-bg);border:1px solid var(--t-line);padding:4px 9px;border-radius:999px}
+.cx-card .nx{margin-top:10px;padding-top:12px;border-top:1px dashed var(--t-line2);font-size:13px;font-weight:700;color:var(--k)}
+/* ligações entre os cursos */
+.cx-card:not(:last-child)::after{content:"";position:absolute;z-index:2;background:var(--k);opacity:.9}
+@media(max-width:899px){.cx-card:not(:last-child)::after{left:50%;bottom:-30px;width:2px;height:30px;transform:translateX(-1px);background:repeating-linear-gradient(var(--k) 0 5px,transparent 5px 9px)}}
+@media(min-width:900px){.cx-card:not(:last-child)::after{top:calc(37.5% - 1px);right:-27px;width:28px;height:2px;background:repeating-linear-gradient(90deg,var(--k) 0 5px,transparent 5px 9px)}}
+.cx-path.on .cx-card{opacity:.38;transform:scale(.985)}
+.cx-path.on .cx-card.hit{opacity:1;transform:none;border-color:var(--k);box-shadow:0 22px 40px -24px color-mix(in srgb,var(--k) 75%,transparent)}
+.cx-path.on .cx-card.hit .num{background:var(--k);color:#fff}
+@media(prefers-reduced-motion:reduce){.cl,.cl .art img,.cx-card,.cx-card .art img{transition:none}.cl:hover,.cx-card:hover{transform:none}}
+:root[data-theme=dark] .cx-card .meta span,:root[data-theme=dark] .cx-goals button{background:rgba(255,255,255,.06)}
+:root[data-theme=dark] .cl .crs b{background:color-mix(in srgb,var(--k) 22%,transparent)}
