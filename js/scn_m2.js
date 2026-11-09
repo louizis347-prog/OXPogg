@@ -17,7 +17,7 @@ var CLOUDS='<g filter="url(#@b)"><ellipse cx="300" cy="40" rx="110" ry="6" fill=
 var FIN='<rect width="480" height="270" fill="url(#@vg)"/><rect width="480" height="270" filter="url(#@n)" opacity=".06"/>';
 function bokeh(r,n,y0,y1,cols){var s='<g filter="url(#@b)">';for(var i=0;i<n;i++){s+='<circle cx="'+f(r()*480)+'" cy="'+f(y0+r()*(y1-y0))+'" r="'+f(2+r()*3.5)+'" fill="'+cols[i%cols.length]+'" opacity="'+f(.35+r()*.4)+'"/>';}return s+'</g>';}
 function lamp(x,y,s){return '<circle cx="'+x+'" cy="'+y+'" r="'+f(26*s)+'" fill="url(#@lg)"/><circle cx="'+x+'" cy="'+y+'" r="'+f(3.2*s)+'" fill="#fffbe6"/>';}
-function person(x,y,s,c,h){return '<g filter="url(#@b)" opacity=".9"><ellipse cx="'+x+'" cy="'+f(y-34*s)+'" rx="'+f(5*s)+'" ry="'+f(5.5*s)+'" fill="'+h+'"/><path d="M'+f(x-9*s)+' '+y+'Q'+x+' '+f(y-44*s)+' '+f(x+9*s)+' '+y+'Z" fill="'+c+'"/></g>';}
+function person(x,y,s,c,h){return '';} /* figurantes borrados removidos: pareciam fumaça azul */
 
 /* ============ NYC: Brooklyn ao entardecer, ponte, skyline, táxi ============ */
 RS.nyc=function(u){

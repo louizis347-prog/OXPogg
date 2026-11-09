@@ -1,26 +1,27 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="ld" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Pogglot — Aprenda idiomas pela cultura</title>
-<meta name="description" content="Aprenda inglês, espanhol, francês e outros idiomas com episódios de 10 minutos baseados em poemas, filmes, músicas e tradições de cada país. Com voz, prática e comunidade. Comece grátis.">
-<meta name="theme-color" content="#0B7C88">
+<title>Pogglot — Cinco jeitos de aprender idiomas, um só progresso</title>
+<meta name="description" content="Estude em profundidade, converse com personagens, pratique em minutos, siga um currículo do A1 ao C2 ou fale ao vivo com um professor. Cinco experiências em uma conta. Comece grátis.">
+<meta name="theme-color" content="#070c1b">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pogglot — Aprenda idiomas pela cultura">
-<meta property="og:description" content="Episódios de 10 minutos com cultura de verdade, voz e prática. Comece grátis.">
+<meta property="og:title" content="Pogglot — Cinco jeitos de aprender idiomas, um só progresso">
+<meta property="og:description" content="Regular, Neighbors, Pocket, o livro do A1 ao C2 e aula ao vivo: escolha o jeito certo para o seu momento. Comece grátis.">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <script>
 /* links antigos apontavam para o app na raiz: convites (?ref=) e rotas (#/...) seguem para o app */
 (function(){var l=location;if(/[?&]ref=/.test(l.search)||/^#\//.test(l.hash))l.replace('app.html'+l.search+l.hash)})();
 </script>
-<script src="js/theme.js"></script>
+<script>document.documentElement.setAttribute("data-theme","dark")</script><script src="js/theme.js"></script><script>document.documentElement.setAttribute("data-theme","dark");try{window.PogTheme&&(PogTheme.apply=function(){document.documentElement.setAttribute("data-theme","dark")})}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="prefetch" href="data/manifest.json"><link rel="prefetch" href="data/counts.json"><link rel="prefetch" href="data/availability.json">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500..800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500..800&display=swap"></noscript>
 <link rel="stylesheet" href="css/landing.bundle.css?v=2">
 <link rel="preload" as="image" href="img/landing/episode-m.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/landing-five.css?v=1"><link rel="stylesheet" href="css/landing-ld.css?v=1">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -28,13 +29,8 @@
 <header class="top">
   <div class="wrap">
     <a class="logo" href="./" aria-label="Pogglot, início"><span class="logo-fb"><span class="logo-pog" aria-hidden="true"></span><span>Pogg<b>lot</b></span></span></a>
-    <nav class="nav" aria-label="Seções">
-      <a href="#tutorial">Por dentro</a><a href="#como">Como funciona</a><a href="#niveis">Níveis</a><a href="#idiomas">Idiomas</a><a href="#trilhas">Trilhas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a>
-    </nav>
-    <div class="right">
-      <button class="iconbtn" type="button" data-act="theme" aria-label="Alternar tema">☀️</button>
-      <a class="btn" href="professor/" id="profbtn">👩‍🏫 Painel do Professor</a><a class="btn primary" href="app.html">Começar grátis</a>
-    </div>
+    <nav class="nav" id="mainNav" aria-label="Seções"><a href="#experiencias">Cinco jeitos</a><a href="#ao-vivo" class="live">Aula ao vivo</a><a href="#conexao">Jornada</a><a href="#tutorial">Por dentro</a><a href="#idiomas">Idiomas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a></nav>
+    <div class="right"><a class="btn primary" href="app.html">Começar grátis</a></div>
   </div>
 </header>
 
@@ -42,22 +38,23 @@
 
 <!-- HERO -->
 <section class="hero hero2">
-  <svg class="hero-orbit" viewBox="0 0 640 640" aria-hidden="true"><defs><radialGradient id="ho1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFD37A"/><stop offset="1" stop-color="#FFB627" stop-opacity="0"/></radialGradient></defs><circle cx="320" cy="320" r="300" fill="url(#ho1)" opacity=".5"/><g class="ring"><circle cx="320" cy="320" r="270" fill="none" stroke="#0B7C88" stroke-opacity=".22" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"/><circle cx="590" cy="320" r="9" fill="#FFB627"/><circle cx="50" cy="320" r="6" fill="#0B7C88"/></g><g class="ring r2"><circle cx="320" cy="320" r="200" fill="none" stroke="#E0647E" stroke-opacity=".28" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/><circle cx="320" cy="120" r="7" fill="#E0647E"/><circle cx="520" cy="320" r="5" fill="#3E7BE0"/></g><g class="bub" transform="translate(150 90)"><rect width="104" height="42" rx="21" fill="#fff" stroke="#2F6FE0" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#2F6FE0" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="52.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#2F6FE0">Hello!</text></g><g class="bub" transform="translate(440 70)"><rect width="104" height="42" rx="21" fill="#fff" stroke="#D2493E" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#D2493E" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="52.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#D2493E">¡Hola!</text></g><g class="bub" transform="translate(520 250)"><rect width="143" height="42" rx="21" fill="#fff" stroke="#4A4DDB" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#4A4DDB" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="71.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#4A4DDB">Bonjour !</text></g><g class="bub" transform="translate(70 300)"><rect width="104" height="42" rx="21" fill="#fff" stroke="#C46A0A" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#C46A0A" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="52.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#C46A0A">Hallo!</text></g><g class="bub" transform="translate(470 440)"><rect width="91" height="42" rx="21" fill="#fff" stroke="#12957F" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#12957F" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="45.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#12957F">Ciao!</text></g><g class="bub" transform="translate(120 500)"><rect width="78" height="42" rx="21" fill="#fff" stroke="#4E9A12" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#4E9A12" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="39.0" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#4E9A12">Olá!</text></g><g class="bub" transform="translate(300 560)"><rect width="91" height="42" rx="21" fill="#fff" stroke="#E0647E" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#E0647E" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="45.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#E0647E">こんにちは</text></g><g class="bub" transform="translate(250 40)"><rect width="65" height="42" rx="21" fill="#fff" stroke="#7A4FD0" stroke-width="3"/><path d="M18 40l-4 12 14-12z" fill="#fff" stroke="#7A4FD0" stroke-width="3" stroke-linejoin="round"/><path d="M16 38h14" stroke="#fff" stroke-width="5"/><text x="32.5" y="27" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="19" fill="#7A4FD0">안녕!</text></g></svg>
+  <div class="hero-sky" aria-hidden="true"></div>
+  <svg class="hero-orbit" viewBox="0 0 640 640" aria-hidden="true"><defs><radialGradient id="ho1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFD37A"/><stop offset="1" stop-color="#FFB627" stop-opacity="0"/></radialGradient></defs><circle cx="320" cy="320" r="300" fill="url(#ho1)" opacity=".5"/><g class="ring"><circle cx="320" cy="320" r="270" fill="none" stroke="#0B7C88" stroke-opacity=".22" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"/><circle cx="590" cy="320" r="9" fill="#FFB627"/><circle cx="50" cy="320" r="6" fill="#0B7C88"/></g><g class="ring r2"><circle cx="320" cy="320" r="200" fill="none" stroke="#E0647E" stroke-opacity=".28" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/><circle cx="320" cy="120" r="7" fill="#E0647E"/><circle cx="520" cy="320" r="5" fill="#3E7BE0"/></g></svg>
   <div class="wrap">
     <div class="copy">
-      <span class="eyebrow">Episódios de 10 minutos</span>
-      <h1>Aprenda idiomas <em>pela cultura</em></h1>
-      <p class="lead">Filmes, livros, poemas, músicas e tradições de cada país, em episódios curtos com voz, prática e uma comunidade para conversar.</p>
+      <span class="eyebrow">Regular · Neighbors · Pocket · Livro · Ao vivo</span>
+      <h1>Cinco jeitos de aprender. <em>Um só progresso.</em></h1>
+      <p class="lead">Estude em profundidade com obras culturais, converse com personagens que voltam, pratique em poucos minutos, siga um currículo do A1 ao C2 ou fale ao vivo com um professor.</p>
       <div class="acts">
         <a class="btn primary lg sun" href="app.html">Começar grátis <i aria-hidden="true">→</i></a>
-        <a class="btn ghost lg" href="#como">Ver como funciona</a>
+        <a class="btn ghost lg" href="#experiencias">Conhecer os cinco jeitos</a>
       </div>
       <p class="note" id="hero-note">Comece agora, sem cartão e sem cadastro.</p>
       <div class="stats" aria-label="O Pogglot em números">
-        <div><b>10 mil+</b><small>episódios</small></div>
-        <div><b>8</b><small>idiomas</small></div>
+        <div><b>5</b><small>experiências em uma conta</small></div>
         <div><b>A1 a C2</b><small>do iniciante ao domínio</small></div>
-        <div><b>10 min</b><small>por episódio</small></div>
+        <div><b>10 mil+</b><small>episódios de inglês</small></div>
+        <div><b>8</b><small>idiomas</small></div>
       </div>
     </div>
     <div class="stage" aria-label="Prévia do Pogglot no celular">
@@ -69,12 +66,86 @@
   </div>
 </section>
 
+<!-- CINCO EXPERIÊNCIAS -->
+<section class="sec five" id="experiencias" aria-labelledby="five-h">
+  <div class="wrap">
+    <div class="sh c"><span class="eyebrow">Cinco experiências, uma conta</span><h2 id="five-h">Cada jeito de aprender tem <em>uma promessa clara</em></h2>
+    <p>Você não precisa fazer tudo ao mesmo tempo. Escolha pelo que precisa hoje e volte às outras quando quiser: o progresso é um só.</p></div>
+    <div class="pick" role="group" aria-label="Qual escolher?">
+      <span class="pick-l">Hoje eu quero…</span>
+      <a href="#x-pocket">ter só 5 minutos</a><a href="#x-neighbors">conversar</a><a href="#x-book">entender a regra</a><a href="#x-regular">ir fundo</a><a href="#x-live">falar com alguém</a>
+    </div>
+    <div class="five-grid">
+      <article class="xp regular" id="x-regular">
+        <header><span class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M8 7h8M8 11h6"/></svg></span><div><small>Regular</small><h3>Estude em profundidade</h3></div></header>
+        <p class="xp-p">Uma obra cultural, uma cena, leitura e oficinas de língua: o idioma estudado com calma, a partir de textos de verdade.</p>
+        <div class="xp-get"><b>O que você leva</b>Compreensão, repertório e uma produção cada vez mais autônoma.</div>
+        <ul class="xp-meta"><li>3.000 episódios de inglês</li><li>Obra, cena, leitura e produção</li></ul>
+        <a class="btn ghost" href="curso-regular.html">Conhecer o curso →</a>
+      </article>
+      <article class="xp neighbors" id="x-neighbors">
+        <header><span class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 11h6M9 14h4"/></svg></span><div><small>Neighbors</small><h3>Converse com a vizinhança</h3></div></header>
+        <p class="xp-p">Acompanhe pessoas e situações que voltam: você reconhece quem fala, lembra o que aconteceu e escolhe o que dizer.</p>
+        <div class="xp-get"><b>O que você leva</b>Agilidade para entender, responder e lidar com as consequências sociais da conversa.</div>
+        <ul class="xp-meta"><li>2.640 episódios de inglês</li><li>Uma revisão a cada 10 episódios</li></ul>
+        <a class="btn ghost" href="curso-neighbors.html">Conhecer o curso →</a>
+      </article>
+      <article class="xp pocket" id="x-pocket">
+        <header><span class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 3h6"/></svg></span><div><small>Pocket</small><h3>Um objetivo, poucos minutos</h3></div></header>
+        <p class="xp-p">Uma situação, poucos itens essenciais, escuta, tentativa de fala e recuperação depois. Cabe entre uma tarefa e outra.</p>
+        <div class="xp-get"><b>O que você leva</b>Um hábito diário e uma conquista comunicativa imediata.</div>
+        <ul class="xp-meta"><li>4.800 práticas de 7 quadros</li><li>800 em cada nível</li></ul>
+        <a class="btn ghost" href="curso-pocket.html">Conhecer o curso →</a>
+      </article>
+      <article class="xp book" id="x-book">
+        <header><span class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"/><path d="M21 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span><div><small>Inglês do zero ao C2</small><h3>Um currículo que se acumula</h3></div></header>
+        <p class="xp-p">O livro interativo: objetivos, explicações, prática e progressão planejada, para entender por que uma construção funciona.</p>
+        <div class="xp-get"><b>O que você leva</b>Domínio sistemático das habilidades e preparação para avaliações.</div>
+        <ul class="xp-meta"><li>1.150 aulas já publicadas</li><li>O trecho C2 ainda está sendo concluído</li></ul>
+        <a class="btn ghost" href="curso-do-zero-ao-c2.html">Conhecer o curso →</a>
+      </article>
+      <article class="xp live" id="x-live">
+        <header><span class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.4 1.7-4.4 4-4.8"/></svg></span><div><small>Aula ao vivo</small><h3>Use com gente de verdade</h3></div></header>
+        <p class="xp-p">Fale com outras pessoas e receba a intervenção do professor: escuta atenta, adaptação na hora e feedback pessoal.</p>
+        <div class="xp-get"><b>O que você leva</b>Desempenho observado, correção e mais confiança para falar.</div>
+        <ul class="xp-meta"><li>Grupos de 1h30</li><li>Reserva com link do Meet</li></ul>
+        <a class="btn ghost" href="aula-ao-vivo.html">Conhecer e marcar aula →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMO SE CONECTAM -->
+<section class="sec alt link" id="conexao" aria-labelledby="link-h">
+  <div class="wrap">
+    <div class="sh c"><h2 id="link-h">Uma jornada, <em>cinco encontros com o idioma</em></h2><p>Um tema pode atravessar as cinco experiências. Veja um exemplo: pedir ajuda em inglês.</p></div>
+    <ol class="journey">
+      <li class="j1"><span class="jn">1</span><b>Regular</b><p>Você lê uma cena sobre pedir ajuda e entende o contexto cultural.</p></li>
+      <li class="j2"><span class="jn">2</span><b>Neighbors</b><p>Você conversa com os vizinhos e escolhe o que dizer, com consequências reais.</p></li>
+      <li class="j3"><span class="jn">3</span><b>Pocket</b><p>Em 5 minutos, você recupera as frases-chave e tenta falar de novo.</p></li>
+      <li class="j4"><span class="jn">4</span><b>Livro</b><p>Quando surge a dúvida, você consulta a regra e confere se dominou.</p></li>
+      <li class="j5"><span class="jn">5</span><b>Aula ao vivo</b><p>Você usa tudo isso com uma pessoa, e o professor corrige na hora.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- AULA AO VIVO -->
+<section class="sec ao-vivo" id="ao-vivo" aria-labelledby="av-h">
+  <div class="wrap">
+    <div class="sh c"><span class="eyebrow">Aula ao vivo · já disponível</span><h2 id="av-h">Marque a sua aula <em>com o professor</em></h2>
+    <p>Grupos pequenos de 1h30, com conversa guiada e correção na hora. Escolha o grupo, reserve o horário e receba o link do Google Meet.</p></div>
+    <ul class="av-info"><li>⏱ 1h30 por aula</li><li>🕒 Horário de Brasília (com o seu fuso ao lado)</li><li>🔗 Link do Meet gerado para você</li></ul>
+    <div class="av-grid" id="avGrid"><p class="lead" style="grid-column:1/-1;text-align:center">Carregando a agenda…</p></div>
+    <div class="acts" style="justify-content:center;margin-top:22px"><a class="btn primary lg sun" href="aula-ao-vivo.html">Ver todos os horários</a></div>
+  </div>
+</section>
+
 <!-- TUTORIAL -->
 <section class="sec tut" id="tutorial" aria-labelledby="tut-h">
   <div class="wrap">
     <div class="tut-head">
       <span class="tut-eye"><i></i>Passo a passo</span>
-      <h2 id="tut-h">Veja um episódio <em>por dentro</em></h2>
+      <h2 id="tut-h">Veja um episódio do Regular <em>por dentro</em></h2>
       <p>Cada episódio do curso regular segue 6 passos, da obra de verdade até a figurinha no seu álbum. Toque em um passo e veja a tela de perto.</p>
     </div>
     <div class="tut-grid">
@@ -88,36 +159,6 @@
       </ol>
       <div class="tut-stage"></div>
     </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="sec alt" id="como">
-  <div class="wrap">
-    <div class="sh"><h2>Como funciona</h2><p>Cada episódio dura cerca de 10 minutos e segue quatro passos.</p></div>
-    <div class="steps">
-      <div class="step"><span class="n">1</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 8l2-4h14l2 4M8 4l3 4M13 4l3 4"/></svg></span><h3>Cena real</h3><p>Você ouve um diálogo curto, de uma situação de verdade, com legenda e tradução.</p></div>
-      <div class="step"><span class="n">2</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19l5-14 5 14M6 14h6M16 9h4l-4 6h4"/></svg></span><h3>Vocabulário</h3><p>Seis palavras-chave por episódio, com som, imagem e dica de pronúncia.</p></div>
-      <div class="step"><span class="n">3</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="11" rx="5"/><path d="M8 10v5M5.5 12.5h5M16 11h.01M18 14h.01"/></svg></span><h3>Prática</h3><p>Quadros e mini-jogos para fixar o que ouviu, sem decorar regras.</p></div>
-      <div class="step"><span class="n">4</span><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></span><h3>Voz</h3><p>Você fala em voz alta e recebe retorno sobre a sua pronúncia.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CULTURA -->
-<section class="sec">
-  <div class="wrap split">
-    <div>
-      <div class="sh" style="margin-bottom:0"><h2>Obras de verdade dentro da lição</h2>
-      <p>Cada episódio traz uma obra real, como um poema, um filme, um livro ou uma música. Você aprende o idioma no contexto em que ele é usado.</p></div>
-      <ul>
-        <li>Episódios curtos, para encaixar no seu dia</li>
-        <li>Áudio, legenda e tradução em cada cena</li>
-        <li>Cultura de cada país junto com o vocabulário</li>
-      </ul>
-      <div class="acts"><a class="btn primary" href="app.html">Experimentar um episódio</a></div>
-    </div>
-    <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="img/landing/home-d.webp" width="960" height="600" loading="lazy" decoding="async" alt="Pogglot no computador: tela inicial com cursos, missões e progresso"></div>
   </div>
 </section>
 
@@ -153,42 +194,6 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
       <a class="cl" href="app.html" style="--c:#4E9A12"><div class="art"><img src="img/landing/art/lang-pt.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">PT<i>Rio</i></span></div><div class="bd"><h3>Português</h3><p class="hook">De Machado a Macunaíma: o português do Brasil, para hispanofalantes.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
       <a class="cl" href="app.html" style="--c:#E0647E"><div class="art"><img src="img/landing/art/lang-ja.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">JA<i>Fuji</i></span></div><div class="bd"><h3>Japonês</h3><p class="hook">Do Genji ao anime, com o sistema de escrita passo a passo.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
       <a class="cl" href="app.html" style="--c:#7A4FD0"><div class="art"><img src="img/landing/art/lang-ko.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">KO<i>Seul</i></span></div><div class="bd"><h3>Coreano</h3><p class="hook">Do Hangul ao K-pop.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b></span></div></a>
-    </div>
-  </div>
-</section>
-
-<!-- CURSOS CONECTADOS -->
-<section class="sec cx" id="trilhas" aria-labelledby="cx-h">
-  <div class="wrap">
-    <div class="sh c"><h2 id="cx-h">Quatro cursos, <em>uma só jornada</em></h2><p>Eles foram feitos para se completar: comece leve, ganhe profundidade, converse de verdade e domine. Diga o seu objetivo e veja o caminho.</p></div>
-    <div class="cx-goals" role="group" aria-label="Qual é o seu objetivo?">
-      <button type="button" data-goal="tempo" aria-pressed="false">Tenho poucos minutos por dia</button>
-      <button type="button" data-goal="falar" aria-pressed="false">Quero conversar de verdade</button>
-      <button type="button" data-goal="base" aria-pressed="false">Quero cultura e base completa</button>
-      <button type="button" data-goal="ensinar" aria-pressed="false">Vou ensinar ou fazer prova</button>
-    </div>
-    <p class="cx-route" id="cxRoute" aria-live="polite"></p>
-    <div class="cx-path" id="cxPath">
-      <a class="cx-card" data-c="pk" href="app.html" style="--k:#E8742A"><div class="art"><img src="img/landing/art/course-pocket.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="num"></span></div><div class="bd"><span class="kick">COMECE</span><h3>Pocket</h3><p>Inglês de bolso: episódios de 5 quadros, 4 minutos por dia, com fala primeiro, jogo e personagens.</p><div class="meta"><span>4 min por dia</span><span>Inglês</span><span>A1 a C2</span></div><div class="nx">Com o hábito criado, siga para o Regular →</div></div></a>
-      <a class="cx-card" data-c="rg" href="app.html" style="--k:#0B7C88"><div class="art"><img src="img/landing/art/course-regular.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="num"></span></div><div class="bd"><span class="kick">MERGULHE</span><h3>Curso Regular</h3><p>Filmes, livros, poemas e músicas em episódios de 10 minutos, com gramática em contexto, leitura, escrita e cultura.</p><div class="meta"><span>10 min por episódio</span><span>8 idiomas</span><span>A1 a C2</span></div><div class="nx">Quer soltar a voz? Vá ao Neighbors →</div></div></a>
-      <a class="cx-card" data-c="nb" href="app.html" style="--k:#C2488A"><div class="art"><img src="img/landing/art/course-neighbors.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="num"></span></div><div class="bd"><span class="kick">CONVERSE</span><h3>Neighbors</h3><p>Cada episódio é uma pessoa, uma cidade e uma situação real. Você pratica respostas naturais, com fala primeiro.</p><div class="meta"><span>7 idiomas</span><span>Escuta e fala</span><span>A1 a C2</span></div><div class="nx">Para provas e para ensinar, siga ao Livro →</div></div></a>
-      <a class="cx-card" data-c="pr" href="professor/livro/inicio.html" style="--k:#5B5BD6"><div class="art"><img src="img/landing/art/course-professor.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="num"></span></div><div class="bd"><span class="kick">DOMINE</span><h3>Livro do Professor</h3><p>Inglês do zero ao C2 em aulas de 12 quadros, com fotos reais, áudio em cada palavra e preparação para TOEFL e IELTS.</p><div class="meta"><span>Mais de 1.100 aulas</span><span>Painel do Professor</span><span>Inglês americano</span></div><div class="nx">Abrir o livro →</div></div></a>
-    </div>
-  </div>
-</section>
-
-<!-- EM QUALQUER TELA -->
-<section class="sec">
-  <div class="wrap split rev">
-    <div class="phones"><div class="phone"><img src="img/landing/home-m.webp" width="480" height="1039" loading="lazy" decoding="async" alt="Pogglot no celular"></div></div>
-    <div>
-      <div class="sh" style="margin-bottom:0"><h2>No celular, no tablet e no computador</h2>
-      <p>O mesmo progresso em qualquer tela, com visual claro ou escuro.</p></div>
-      <ul>
-        <li>Instale na tela inicial do aparelho, sem loja de aplicativos</li>
-        <li>O que você já abriu fica guardado e continua disponível com conexão fraca</li>
-        <li>Sequência diária, missões e conquistas para manter o ritmo</li>
-      </ul>
     </div>
   </div>
 </section>
@@ -232,21 +237,15 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
       <details><summary>Preciso criar conta para começar?</summary><p>Não. Você abre o app e já pode fazer o primeiro episódio. A conta serve para participar da comunidade e guardar o seu progresso na nuvem, e você pode criá-la depois.</p></details>
       <details><summary>Preciso saber algo do idioma antes?</summary><p>Não. Há trilhas desde o A1, pensadas para quem começa do zero. Se você já sabe um pouco, o teste de nível ajuda a descobrir por onde começar, e dá para pular para o nível que combina com você.</p></details>
       <details><summary>Quanto tempo leva cada episódio?</summary><p>Cerca de 10 minutos. Cada um tem uma cena com diálogo, vocabulário, prática e fala em voz alta. Dá para estudar no ônibus, no intervalo do almoço ou antes de dormir.</p></details>
-      <details><summary>Em quanto tempo vou aprender?</summary><p>Depende da sua rotina. Estudando um episódio por dia, um nível com cerca de 500 episódios leva mais ou menos 1 ano e meio. O mais importante é a constância: 10 minutos todo dia rendem mais do que 2 horas uma vez por semana.</p></details>
       <h3 class="faq-grp">Idiomas e cursos</h3>
       <details><summary>Quais idiomas posso estudar?</summary><p>Inglês, espanhol, francês, alemão, italiano, japonês, coreano e português. O mandarim está em preparação. Cada idioma tem os próprios níveis, trilhas e progresso, então você pode estudar mais de um ao mesmo tempo.</p></details>
       <details><summary>Todos os idiomas vão até o C2?</summary><p>Inglês, espanhol, francês, alemão, italiano, japonês e coreano têm trilhas do A1 ao C2. A quantidade de episódios publicados varia de um idioma para outro, e novos episódios chegam com frequência. A página de cada curso no app mostra quantos já estão disponíveis.</p></details>
-      <details><summary>Qual a diferença entre Curso Regular e Neighbors?</summary><p>O Regular é a trilha completa e organizada: gramática em contexto, leitura, escrita, cultura e preparação para exames. O Neighbors é para aprender conversando: personagens, cidades e situações reais para treinar respostas naturais e escuta. Você pode alternar entre os dois quando quiser.</p></details>
-      <details><summary>Estudo japonês ou coreano sem saber ler o alfabeto?</summary><p>Sim. O japonês tem um módulo de kana para você aprender a ler desde o começo, e a pronúncia é treinada com áudio. O coreano começa pelo hangul, que é um alfabeto bem lógico.</p></details>
-      <details><summary>Os cursos são para quem fala português?</summary><p>Sim, a maioria é pensada para brasileiros. Também há cursos para quem fala espanhol e quer aprender inglês ou português do Brasil.</p></details>
+      <details><summary>Qual a diferença entre Regular, Neighbors, Pocket, o livro e a aula ao vivo?</summary><p>O <b>Regular</b> estuda o idioma em profundidade, a partir de uma obra cultural, com leitura e produção. O <b>Neighbors</b> acompanha pessoas e situações que voltam, para você aprender a conversar. O <b>Pocket</b> é uma prática curta, de poucos minutos. O <b>livro</b> (Inglês do zero ao C2) é o currículo explícito, com explicações e exercícios cumulativos. A <b>aula ao vivo</b> é o encontro com um professor e outras pessoas. Você não precisa fazer todos ao mesmo tempo: o progresso é um só.</p></details>
       <h3 class="faq-grp">Como é o estudo</h3>
       <details><summary>Os níveis A1 a C2 são o quê?</summary><p>É a escala europeia (CEFR), usada em provas e escolas do mundo todo. A1 e A2 são o nível básico, B1 e B2 o intermediário, e C1 e C2 o avançado. Na seção de níveis, logo acima, a professora explica o que você consegue fazer em cada um.</p></details>
       <details><summary>Como funciona a prática de fala?</summary><p>Você fala no microfone e o app avalia a sua pronúncia, mostrando onde melhorar. Se preferir, também dá para só ouvir e repetir. O microfone só é usado quando você toca para falar.</p></details>
-      <details><summary>Aprendo mesmo só com episódios curtos?</summary><p>Os episódios são curtos, mas seguem uma trilha pensada: cada um revisita palavras e estruturas dos anteriores, e a cada 20 episódios há um teste. Assim você fixa o que aprendeu e vê o seu progresso de verdade.</p></details>
-      <details><summary>Tem revisão do que já estudei?</summary><p>Sim. O app marca o que você tem mais dificuldade e leva essas palavras de volta em revisões espaçadas, que ajudam a guardar o vocabulário por muito mais tempo.</p></details>
       <h3 class="faq-grp">Uso e planos</h3>
       <details><summary>Funciona no celular?</summary><p>Sim. O Pogglot funciona no celular, no tablet e no computador, e você pode instalá-lo na tela inicial do aparelho, sem loja de aplicativos.</p></details>
-      <details><summary>E se a minha internet for fraca?</summary><p>O que você já abriu fica guardado no aparelho e continua disponível com conexão fraca ou sem internet. Os episódios são leves, e o app carrega só o que você precisa naquele momento.</p></details>
       <details><summary>Quanto custa?</summary><p><span id="faq-price">Você começa de graça. As condições do plano Premium aparecem na seção Planos.</span></p></details>
       <details><summary>Meus dados e meu progresso ficam seguros?</summary><p>Seu progresso fica guardado no seu aparelho e, se você criar uma conta, também na nuvem, para continuar de onde parou em outro aparelho. Você controla o que compartilha na comunidade.</p></details>
     </div>
@@ -256,8 +255,8 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
 <!-- CHAMADA FINAL -->
 <div class="wrap">
   <div class="cta">
-    <h2>Seu primeiro episódio leva 10 minutos</h2>
-    <p>Abra, escolha um idioma e comece agora.</p>
+    <h2>Escolha por onde começar</h2>
+    <p>Cinco jeitos de aprender, um só progresso. O primeiro passo leva 10 minutos.</p>
     <a class="btn light lg" href="app.html">Começar grátis</a>
   </div>
 </div>
@@ -267,7 +266,7 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
 <footer>
   <div class="wrap">
     <span>© <span id="yr">2026</span> Pogglot</span>
-    <nav aria-label="Rodapé"><a href="app.html">Entrar no app</a><a href="professor/">Painel do Professor</a><a href="#tutorial">Por dentro</a><a href="#como">Como funciona</a><a href="#planos">Planos</a><a id="support" href="#" hidden>Apoie o projeto</a></nav>
+    <nav aria-label="Rodapé"><a href="app.html">Entrar no app</a><a href="professor/">Painel do Professor</a><a href="#tutorial">Por dentro</a><a href="#experiencias">Cinco jeitos</a><a href="#planos">Planos</a><a id="support" href="#" hidden>Apoie o projeto</a></nav>
   </div>
 </footer>
 
@@ -307,18 +306,18 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
 })();
 </script>
 <script src="js/landing-pro.js?v=2"></script><script src="js/landing-wow.js?v=1"></script>
-
 <script>
-(function(){var P=document.getElementById('cxPath');if(!P)return;
-var G={tempo:{c:['pk','rg'],t:'Comece pelo <b>Pocket</b> e, quando o hábito pegar, aprofunde no <b>Curso Regular</b>.'},
-falar:{c:['nb','rg'],t:'Use o <b>Neighbors</b> para falar desde cedo e o <b>Curso Regular</b> para sustentar a base.'},
-base:{c:['rg','nb'],t:'Construa tudo no <b>Curso Regular</b> e solte a voz com o <b>Neighbors</b>.'},
-ensinar:{c:['pr','rg'],t:'Estude pelo <b>Livro do Professor</b> e aprofunde a cultura no <b>Curso Regular</b>.'}};
-var btns=[].slice.call(document.querySelectorAll('.cx-goals button')),R=document.getElementById('cxRoute');
-function set(k){btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.goal===k?'true':'false')});
-[].forEach.call(P.children,function(c){c.classList.toggle('hit',!!k&&G[k].c.indexOf(c.dataset.c)>-1)});
-P.classList.toggle('on',!!k);R.innerHTML=k?G[k].t:''}
-btns.forEach(function(b){b.addEventListener('click',function(){set(b.getAttribute('aria-pressed')==='true'?'':b.dataset.goal)})})})();
+(function(){
+  var links=[].slice.call(document.querySelectorAll('#mainNav a')),map={};
+  links.forEach(function(a){var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);if(el)map[id]={a:a,el:el}});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('on')});var m=map[e.target.id];if(m)m.a.classList.add('on')}})},{rootMargin:'-35% 0px -55% 0px'});Object.keys(map).forEach(function(k){io.observe(map[k].el)})}
+  var BRT='America/Sao_Paulo',f=function(t,o){return new Intl.DateTimeFormat('pt-BR',Object.assign({timeZone:BRT},o)).format(new Date(t))};
+  fetch('data/live-schedule.json').then(function(r){return r.json()}).then(function(S){
+    var now=Date.now(),b=new Date(now-3*3600e3);
+    function next(g){var best=null;for(var i=0;i<14;i++){var day=new Date(Date.UTC(b.getUTCFullYear(),b.getUTCMonth(),b.getUTCDate()+i));g.slots.forEach(function(s){if(s.dow!==day.getUTCDay())return;var p=s.time.split(':'),st=Date.UTC(day.getUTCFullYear(),day.getUTCMonth(),day.getUTCDate(),+p[0]+3,+p[1]);if(st>now+30*60e3&&(!best||st<best))best=st})}return best}
+    document.getElementById('avGrid').innerHTML=S.groups.map(function(g){var n=next(g),days=g.slots.map(function(s){return['domingo','segunda','terça','quarta','quinta','sexta','sábado'][s.dow]+' '+s.time}).join(' e ');
+      return '<a class="av-card" style="--c:'+g.accent+'" href="aula-ao-vivo.html#'+g.id+'"><span class="fl">'+g.icon+'</span><small>'+g.teaches+' · '+g.audience+'</small><h3>'+g.title+'</h3><p>'+g.blurb+'</p><div class="av-next">Toda '+days+' <em style="font-style:normal;opacity:.8">(Brasília)</em>'+(n?'<br>Próxima: <b>'+f(n,{weekday:'short',day:'2-digit',month:'short'})+' · '+f(n,{hour:'2-digit',minute:'2-digit'})+'</b>':'')+'</div><span class="av-go">Reservar horário →</span></a>'}).join('')}).catch(function(){document.getElementById('avGrid').innerHTML='<p class="lead" style="grid-column:1/-1;text-align:center"><a href="aula-ao-vivo.html">Ver a agenda de aulas ao vivo</a></p>'});
+})();
 </script>
 </body>
 </html>

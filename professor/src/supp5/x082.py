@@ -68,7 +68,7 @@ X = {'key': {'big': 'Can you do eight?', 'label': 'Pedir desconto', 'sub': 'Em v
                      {'npc': 'That one is ten dollars.',
                       'pt': 'Essa custa dez dólares.',
                       'opts': [{'en': 'Can you do eight?', 'pt': 'Pode fazer oito?', 'ok': True, 'fb': 'Jeito educado de pedir desconto.'},
-                               {'en': 'Ten dollars.', 'pt': 'Dez dólares.', 'ok': False, 'fb': 'Você só repetiu o preço dele.'},
+                               {'en': 'Is it new?', 'pt': 'É novo?', 'ok': False, 'fb': 'Possível, mas não pede um preço melhor.'},
                                {'en': 'Thanks for stopping by!', 'pt': 'Valeu por passar aqui!', 'ok': False, 'fb': 'É a despedida de quem vende.'}]},
                      {'npc': 'OK, eight dollars. Anything else?',
                       'pt': 'Ok, oito dólares. Mais alguma coisa?',

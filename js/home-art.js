@@ -87,17 +87,38 @@ function scene(o){
   </svg>`;
 }
 
-/* abertura animada: Poggie entra, o nome aparece e a tela sobe. Uma vez por sessão; qualquer toque pula. */
+/* abertura animada: palco escuro, saudações em 8 idiomas orbitando, Poggie entra, letras com notas, tela sobe. Sons por Web Audio. Uma vez por sessão; toque pula. */
+function splashSound(){
+  let ctx=null;
+  try{const AC=window.AudioContext||window.webkitAudioContext;ctx=new AC();if(ctx.state==='suspended')ctx.resume().catch(()=>{})}catch(e){return{n(){},w(){},c(){},x(){}}}
+  const t0=()=>ctx.currentTime;
+  function tone(f,at,dur,type,vol,f2){try{const o=ctx.createOscillator(),g=ctx.createGain();o.type=type||'sine';o.frequency.setValueAtTime(f,t0()+at);if(f2)o.frequency.exponentialRampToValueAtTime(f2,t0()+at+dur);g.gain.setValueAtTime(.0001,t0()+at);g.gain.exponentialRampToValueAtTime(vol||.08,t0()+at+.02);g.gain.exponentialRampToValueAtTime(.0001,t0()+at+dur);o.connect(g);g.connect(ctx.destination);o.start(t0()+at);o.stop(t0()+at+dur+.05)}catch(e){}}
+  return{
+    w(){tone(180,0,.7,'sawtooth',.03,900);tone(120,0,.7,'sine',.05,600)},
+    n(i){const sc=[523.25,587.33,659.25,783.99,880,987.77,1174.66];tone(sc[i%7],0,.28,'triangle',.07);tone(sc[i%7]*2,0,.18,'sine',.025)},
+    c(){[523.25,659.25,783.99,1046.5].forEach((f,k)=>tone(f,k*.07,.9,'sine',.07))},
+    x(){try{ctx.close()}catch(e){}}
+  };
+}
 function splash(done){
   try{
     if(matchMedia('(prefers-reduced-motion:reduce)').matches||sessionStorage.getItem('pogglot:intro')){done&&done();return}
     sessionStorage.setItem('pogglot:intro','1');
   }catch(e){done&&done();return}
+  const sfx=splashSound();
+  const hello=[['Hello','#FFB627'],['Hola','#FF7A45'],['Bonjour','#8FD9C9'],['Ciao','#FF9BD0'],['Hallo','#9BB8FF'],['Olá','#7CF0A8'],['こんにちは','#FFD866'],['안녕','#FF8E8E']];
+  const orb=hello.map((h,i)=>`<span class="sp-hi" style="--a:${i*45}deg;--d:${.25+i*.12}s;--c:${h[1]}"><b>${h[0]}</b></span>`).join('');
+  const stars=Array.from({length:26},(_,i)=>`<i style="left:${(i*37)%100}%;top:${(i*53)%100}%;--s:${.6+(i%5)*.35}s;--z:${1+(i%3)}px"></i>`).join('');
   const d=document.createElement('div');d.id='hnSplash';d.setAttribute('role','presentation');
-  d.innerHTML=`<div class="sp-bg">${scene()}</div><div class="sp-in"><div class="sp-pog">${mascot()}</div><div class="sp-word" aria-label="Pogglot"><span>P</span><span>o</span><span>g</span><span>g</span><span class="l">l</span><span class="l">o</span><span class="l">t</span></div><svg class="sp-sw" viewBox="0 0 220 14" aria-hidden="true"><path d="M4,8 Q50,0 110,7 T216,6" fill="none" stroke="#FFB627" stroke-width="5" stroke-linecap="round" pathLength="1"/></svg><p>Aprenda idiomas pela cultura</p></div>`;
+  d.innerHTML=`<div class="sp-aur"></div><div class="sp-stars">${stars}</div><div class="sp-ring r1"></div><div class="sp-ring r2"></div>
+  <div class="sp-in"><div class="sp-stage"><div class="sp-orbit">${orb}</div><div class="sp-glow"></div><div class="sp-pog">${mascot()}</div></div>
+  <div class="sp-word" aria-label="Pogglot"><span>P</span><span>o</span><span>g</span><span>g</span><span class="l">l</span><span class="l">o</span><span class="l">t</span></div>
+  <svg class="sp-sw" viewBox="0 0 220 14" aria-hidden="true"><path d="M4,8 Q50,0 110,7 T216,6" fill="none" stroke="#FFB627" stroke-width="5" stroke-linecap="round" pathLength="1"/></svg>
+  <p>Aprenda idiomas pela cultura</p><div class="sp-bar"><i></i></div><small>Toque para pular</small></div>`;
   document.body.appendChild(d);
-  let fin=false;const end=()=>{if(fin)return;fin=true;d.classList.add('out');setTimeout(()=>{d.remove();done&&done()},520)};
-  d.addEventListener('click',end);setTimeout(end,2300);
+  sfx.w();[0,1,2,3,4,5,6].forEach(i=>setTimeout(()=>sfx.n(i),900+i*95));setTimeout(()=>sfx.c(),1750);
+  let fin=false;const end=()=>{if(fin)return;fin=true;d.classList.add('out');setTimeout(()=>{d.remove();sfx.x();done&&done()},560)};
+  d.addEventListener('click',end);setTimeout(end,3300);
 }
 
 /* marca: emblema redondo com a cabeça do Poggie + palavra "Pogglot" com traço de sol */

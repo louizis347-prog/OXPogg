@@ -58,7 +58,7 @@ X = dict(
  convo=dict(npc=dict(name="Ms. Lane"), story="Você é pai ou mãe na escola do seu filho. Ms. Lane é a professora.", turns=[
   dict(npc="Hello! Please sit down.", pt="Olá! Sente-se, por favor.", opts=[
    dict(en="Thank you. How is my son in class?", pt="Obrigado. Como meu filho vai na aula?", ok=True, fb="Agradeça e pergunte da aula."),
-   dict(en="Please sit down.", pt="Sente-se, por favor.", ok=False, fb="Quem convida é a professora."),
+   dict(en="Goodbye, see you!", pt="Tchau, até logo!", ok=False, fb="Vocês acabaram de chegar; não é hora de se despedir."),
    dict(en="He is a good student.", pt="Ele é um bom aluno.", ok=False, fb="Essa é a resposta dela.")]),
   dict(npc="He is a good student.", pt="Ele é um bom aluno.", opts=[
    dict(en="Yes, every day.", pt="Sim, todo dia.", ok=False, fb="Ainda não perguntou nada."),

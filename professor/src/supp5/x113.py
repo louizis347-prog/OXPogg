@@ -70,7 +70,7 @@ X = dict(
    dict(en="I'd like to enroll.", pt="Eu gostaria de me matricular.", ok=False, fb="Você já disse isso.")]),
   dict(npc="Monday and Wednesday, from six to eight.", pt="Segunda e quarta, das seis às oito.", opts=[
    dict(en="It's two hundred dollars.", pt="São duzentos dólares.", ok=False, fb="Quem informa o preço é ela."),
-   dict(en="Monday and Wednesday, from six to eight.", pt="Segunda e quarta, das seis às oito.", ok=False, fb="Repete o que ela disse."),
+   dict(en="Is it on Saturday?", pt="É no sábado?", ok=False, fb="Ela acabou de dizer os dias; pergunte o preço."),
    dict(en="How much is the class?", pt="Quanto custa a aula?", ok=True, fb="Próxima pergunta natural.")]),
   dict(npc="It's two hundred dollars.", pt="São duzentos dólares.", opts=[
    dict(en="Can I pay in two parts?", pt="Posso pagar em duas partes?", ok=True, fb="Pergunta sobre pagamento."),

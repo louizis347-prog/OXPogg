@@ -1,26 +1,70 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Painel do Professor</title><link rel="stylesheet" href="css/professor.css?v=1"><script src="js/gate.js?v=1"></script>
-<style>body{overflow:auto}.wrap{max-width:1300px;margin:0 auto;padding:18px 14px 60px}.hd{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.hd h1{margin:0;font-size:clamp(22px,3vw,32px);flex:1}
-.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}.tile{display:block;text-decoration:none;color:inherit;border-radius:20px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);overflow:hidden;transition:transform .15s,box-shadow .15s}.tile:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(40,50,120,.18)}
-.tile .im{aspect-ratio:16/9;background:rgba(255,255,255,.3)}.tile svg{width:100%;height:100%;display:block;opacity:.95}.tile .tx2{padding:10px 12px}.tile b{display:block;font-size:15px}.tile small{color:var(--mut)}.num{position:absolute;margin:8px;padding:3px 9px;border-radius:999px;background:rgba(20,30,70,.72);color:#fff;font-weight:800;font-size:12px}.pos{position:relative}
-.bar{display:flex;gap:8px;flex-wrap:wrap}.f{border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--glass);font-weight:700}.f.on{background:var(--pri);color:#fff;border-color:var(--pri)}input.tx{max-width:260px}.uh{grid-column:1/-1;display:flex;gap:10px;align-items:baseline;margin:10px 2px 0;padding-top:6px;border-top:2px solid var(--line)}.uh b{font-size:18px}.uh small{color:var(--mut)}.tile.soon{opacity:.55;pointer-events:none;filter:grayscale(.5)}.tile .tag2{position:absolute;right:0;margin:8px;padding:3px 9px;border-radius:999px;background:#2da44e;color:#fff;font-size:11px;font-weight:800;letter-spacing:.05em}</style></head>
-<body><div class="wrap"><div class="hd"><h1>Painel do Professor <small style="font-size:14px;color:var(--mut)">· Inglês · Quest</small></h1><input class="tx" id="q" placeholder="Buscar aula…"><a href="livro/inicio.html" style="text-decoration:none;background:linear-gradient(135deg,#0B6E7A,#1A8F86);color:#fff;border-radius:999px;padding:8px 16px;font-weight:800;white-space:nowrap">📘 Inglês do zero ao C2</a></div>
-<div class="bar" id="cat" style="margin-bottom:10px"></div><div class="bar" id="bar" style="margin-bottom:14px"></div><div class="tiles" id="t"></div></div>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pogglot · Quest A1</title><script src="js/gate.js?v=1"></script>
+<style>
+:root{--bg:#f5f8fc;--ink:#14263a;--mut:#5d7188;--line:#e3eaf3;--pri:#2b6fe6;--pri2:#7a5af8;--card:#fff;--ok:#1f9d6b}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1824;--ink:#e8f0fa;--mut:#9db0c6;--line:#243245;--card:#16212f}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:auto}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px max(16px,calc((100vw - 1240px)/2));background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:20px;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+.logo{width:32px;height:32px;border-radius:11px;display:grid;place-items:center;color:#fff;font-weight:900;background:linear-gradient(135deg,var(--pri),var(--pri2));box-shadow:0 6px 16px rgba(60,80,230,.35)}
+.top .sp{flex:1}
+.top input{width:min(300px,38vw);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:9px 16px;font:inherit;outline:none}
+.top input:focus{border-color:var(--pri);box-shadow:0 0 0 3px color-mix(in srgb,var(--pri) 22%,transparent)}
+.hero{position:relative;overflow:hidden;margin:16px auto 8px;max-width:1240px;padding:clamp(26px,5vw,56px);border-radius:30px;background:radial-gradient(900px 300px at 85% -20%,#c9d8ff 0,transparent 60%),radial-gradient(700px 300px at 0% 120%,#e5d9ff 0,transparent 60%),linear-gradient(135deg,#eef4ff,#f7f2ff);border:1px solid var(--line)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .hero{background:radial-gradient(900px 300px at 85% -20%,#243a78 0,transparent 60%),radial-gradient(700px 300px at 0% 120%,#35246f 0,transparent 60%),linear-gradient(135deg,#142038,#1b1636)}}
+.hero h1{margin:0;font-size:clamp(30px,5vw,54px);line-height:1.04;letter-spacing:-.035em}
+.hero h1 span{background:linear-gradient(90deg,var(--pri),var(--pri2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:12px 0 0;max-width:560px;font-size:clamp(15px,1.7vw,19px);color:var(--mut);line-height:1.5}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.chip{display:inline-flex;gap:6px;align-items:center;padding:7px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:800;font-size:13px}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;animation:fl 9s ease-in-out infinite}
+.b1{width:120px;height:120px;right:6%;top:18%;background:#cfe0ff}.b2{width:70px;height:70px;right:20%;bottom:12%;background:#e6d8ff;animation-delay:-3s}.b3{width:44px;height:44px;right:34%;top:14%;background:#d3f3e6;animation-delay:-6s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media(prefers-reduced-motion:reduce){.blob{animation:none}}
+.units{display:flex;gap:8px;overflow-x:auto;padding:10px max(16px,calc((100vw - 1240px)/2));scrollbar-width:none}
+.units::-webkit-scrollbar{display:none}
+.u{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 14px;font:inherit;font-weight:800;font-size:13px;cursor:pointer;white-space:nowrap}
+.u.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.wrap{max-width:1240px;margin:0 auto;padding:6px 16px 70px}
+.uh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin:26px 2px 12px}.uh b{font-size:19px;letter-spacing:-.01em}.uh small{color:var(--mut)}
+.tiles{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.tile{display:block;text-decoration:none;color:inherit;border-radius:22px;background:var(--card);border:1px solid var(--line);overflow:hidden;box-shadow:0 1px 2px rgba(20,38,58,.04);transition:transform .18s,box-shadow .18s}
+.tile:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,60,120,.16)}
+.tile:focus-visible{outline:3px solid var(--pri);outline-offset:2px}
+.pos{position:relative}.im{aspect-ratio:16/9;background:#dde8f5}.im img{width:100%;height:100%;display:block;object-fit:cover}.im::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,40,.0) 55%,rgba(10,20,40,.35));pointer-events:none}.im{position:relative}
+.num{position:absolute;left:10px;top:10px;padding:3px 10px;border-radius:999px;background:rgba(15,28,50,.7);color:#fff;font-weight:800;font-size:12px;backdrop-filter:blur(6px)}
+.done{position:absolute;right:10px;top:10px;padding:3px 10px;border-radius:999px;background:var(--ok);color:#fff;font-weight:800;font-size:12px}
+.tx2{padding:12px 14px 14px}.tx2 b{display:block;font-size:16px;letter-spacing:-.01em}.tx2 small{display:block;margin-top:4px;color:var(--mut);line-height:1.4}
+.empty{color:var(--mut);padding:30px 4px}
+@media(max-width:560px){.top input{width:42vw}.hero{margin:10px 10px 4px;border-radius:24px}.tiles{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}.tx2 small{display:none}}
+</style></head>
+<body>
+<header class="top"><a class="brand" href="index.html"><span class="logo">P</span>Pogglot</a><span class="sp"></span><input id="q" type="search" placeholder="Buscar aula…" aria-label="Buscar aula"></header>
+<section class="hero"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+<h1>Inglês para <span>viver em inglês</span></h1>
+<p>Aulas em situações reais: peça um café, alugue um carro, vá ao médico. Em cada aula você lê, ouve, fala e pratica — sempre com tradução e no seu ritmo.</p>
+<div class="chips" id="chips"></div></section>
+<nav class="units" id="units" aria-label="Unidades"></nav>
+<main class="wrap"><div id="t"></div></main>
 <script src="../js/obra-ficha-lib.js"></script><script src="../js/obra-ficha.js"></script><script src="../js/obra-ficha-scenes2.js"></script>
 <script>
 (async()=>{const J=u=>fetch(u).then(r=>r.json());
-const QC=await J('data/v4/curriculum.json').catch(()=>[]);const CUR=QC.length?QC:await J('data/v3/curriculum.json').catch(()=>[]);const AV=QC.length?new Set(QC.map(x=>x.n)):new Set(await J('data/v3/available.json').catch(()=>[]));const ISQ=QC.length>0;const EL={};(await J('data/elenco.json').catch(()=>[])).forEach(p=>EL[p.name]=p);
+const CUR=await J('data/v4/curriculum.json').catch(()=>[]);const AV=new Set(CUR.map(x=>x.n));
+const EL={};(await J('data/elenco.json').catch(()=>[])).forEach(p=>EL[p.name]=p);
 window.PogFichas={};
 CUR.forEach(c=>{window.PogFichas[-(2000+c.n)]={scene:c.scene,tod:'day',decor:[],cast:c.cast.filter(n=>EL[n]).map(n=>({p:Object.assign({},EL[n].look,{arms:'wave'})}))}});
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));let lv='*',q='';
-const prog=n=>{try{const d=JSON.parse(localStorage.getItem('pgprof-en-'+n+'-done')||'{}');return Object.keys(d).length}catch(e){return 0}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let q='',unit=0;
+const done=n=>{try{const d=JSON.parse(localStorage.getItem('pgx-q-'+n+'-done')||localStorage.getItem('pgprof-en-'+n+'-done')||'{}');return Object.keys(d).length>5}catch(e){return false}};
 const svg=k=>{try{return PogFicha.svg({n:k},'cover')}catch(e){return ''}};
-function drawRL(){const f=CUR.filter(l=>(lv==='*'||l.level===lv)&&(!q||(l.title+l.pt).toLowerCase().includes(q)));let last=-1,h='';
- f.forEach(l=>{if(l.unit.n!==last){last=l.unit.n;h+=`<div class="uh"><b>Unit ${l.unit.n} · ${esc(l.unit.name)}</b><small>${l.level} · ${l.unit.of} aulas</small></div>`}
-  const ok=AV.has(l.n);h+=`<a class="tile ${ok?'':'soon'}" ${ok?`href="${ISQ||l.n<=50?`aula4.html`:`aula3.html`}?n=${l.n}"`:''}><div class="pos"><span class="num">${l.level} · ${String(l.n).padStart(3,'0')}</span>${ok?`<span class="tag2">${ISQ?'Quest':'Real-Life'}</span>`:'<span class="tag2" style="background:#8a93b4">Em breve</span>'}<div class="im">${svg(-(2000+l.n))}</div></div><div class="tx2"><b>${esc(l.title)}</b><small>${esc(l.pt)} · 60 min · particular e grupo${prog(l.n)?` · ✔`:''}</small></div></a>`});
- document.getElementById('t').innerHTML=h||'<p class="lead">Nenhuma aula.</p>'}
-function draw(){const lvs=['*',...new Set(CUR.map(l=>l.level))];if(!lvs.includes(lv))lv='*';
- document.getElementById('cat').innerHTML=CUR.length?`<button class="f on" type="button">${ISQ?'Quest · inglês':'Real-Life English'} (${AV.size}/${CUR.length})</button>`:'';
- document.getElementById('bar').innerHTML=lvs.map(x=>`<button class="f ${x===lv?'on':''}" data-l="${x}">${x==='*'?'Todas ('+CUR.length+')':x}</button>`).join('');
- drawRL()}
-document.getElementById('bar').onclick=e=>{const b=e.target.closest('.f');if(!b)return;lv=b.dataset.l;draw()};document.getElementById('q').oninput=e=>{q=e.target.value.toLowerCase();draw()};draw()})();
+const units=[...new Map(CUR.map(l=>[l.unit.n,l.unit])).values()];
+document.getElementById('chips').innerHTML=`<span class="chip">📚 ${CUR.length} aulas</span><span class="chip">🎯 Nível A1</span><span class="chip">🎙️ Fale com o microfone</span><span class="chip">🔊 Áudio e tradução</span>`;
+function drawUnits(){document.getElementById('units').innerHTML=`<button class="u ${unit===0?'on':''}" data-u="0">Todas</button>`+units.map(u=>`<button class="u ${unit===u.n?'on':''}" data-u="${u.n}">Unidade ${u.n}</button>`).join('')}
+function draw(){const f=CUR.filter(l=>(unit===0||l.unit.n===unit)&&(!q||(l.title+' '+l.pt).toLowerCase().includes(q)));let last=-1,h='',open=false;
+ f.forEach(l=>{if(l.unit.n!==last){if(open)h+='</div>';last=l.unit.n;open=true;h+=`<div class="uh"><b>Unidade ${l.unit.n}</b><small>${esc(l.unit.name.replace(/^Quest \d+ · /,''))}</small></div><div class="tiles">`}
+  const ok=AV.has(l.n);h+=`<a class="tile" ${ok?`href="aula4.html?n=${l.n}"`:''}><div class="pos"><span class="num">${String(l.n).padStart(3,'0')}</span>${done(l.n)?'<span class="done">✔ feita</span>':''}<div class="im"><img src="img/cover/${String(l.n).padStart(3,'0')}.jpg" alt="" loading="lazy" decoding="async" width="640" height="360"></div></div><div class="tx2"><b>${esc(l.title)}</b><small>${esc(l.pt)}</small></div></a>`});
+ if(open)h+='</div>';document.getElementById('t').innerHTML=h||'<p class="empty">Nenhuma aula encontrada.</p>'}
+document.getElementById('units').onclick=e=>{const b=e.target.closest('.u');if(!b)return;unit=+b.dataset.u;drawUnits();draw()};
+document.getElementById('q').oninput=e=>{q=e.target.value.toLowerCase();draw()};
+drawUnits();draw()})();
 </script></body></html>

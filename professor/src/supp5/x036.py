@@ -66,7 +66,7 @@ X = dict(
    dict(en="No, I'm a combo.", pt="Não, eu sou um combo.", ok=False, fb="Frase sem sentido; combo é o menu.")]),
   dict(npc="Fries and a drink.", pt="Batata frita e uma bebida.", opts=[
    dict(en="OK. A combo, and a cola.", pt="Ok. Um combo e uma cola.", ok=True, fb="Aceita o combo e escolhe a bebida."),
-   dict(en="Fries and a drink, too.", pt="Batata frita e uma bebida também.", ok=False, fb="Repete o que ele disse, sem responder."),
+   dict(en="How much is the burger?", pt="Quanto custa o hambúrguer?", ok=False, fb="Ele fala do combo; responda ao pedido primeiro."),
    dict(en="Enjoy your burger!", pt="Bom apetite!", ok=False, fb="Quem diz isso é o atendente, no final.")]),
   dict(npc="Anything else?", pt="Mais alguma coisa?", opts=[
    dict(en="A cheeseburger, please.", pt="Um cheeseburger, por favor.", ok=False, fb="O hambúrguer já foi pedido."),
