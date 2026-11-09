@@ -136,7 +136,7 @@ FXR.pgme=function(f,st,n){
     <div class="tg-card" id="mCard"><span class="tg-hole"></span><small>${H(f.cardTitle||'SUA FRASE')}</small>${(f.lines||[]).map((_,i)=>`<b id="mL${i}"></b>`).join('')}</div>
     <div class="tg-acts"><button type="button" class="ps-btn main" id="mP">🔊 Ouvir</button><button type="button" class="ps-btn rec" id="mM">🎤 Falar</button></div>
     <div class="pv-host tg-mic" id="mMic" hidden></div></div>`;
-  const typ={};F.forEach(x=>typ[x.id]=x.type);const fill=t=>t.replace(/\{(\w+)\}/g,(m,k)=>typ[k]==='text'?(clean(val[k])||'…'):(val[k]||'…'));
+  const typ={};F.forEach(x=>typ[x.id]=x.type);const fill=t=>t.replace(/\{(\w+)(?:\|(\w+))?\}/g,(m,k,fn)=>{const v=typ[k]==='text'?(clean(val[k])||'…'):(val[k]||'…');return fn==='spell'?v.replace(/[^\p{L}]/gu,'').toUpperCase().split('').join('-')||'…':v});
   const lines=()=>(f.lines||[]).map(fill);
   const paint=()=>lines().forEach((l,i)=>{q('#mL'+i,st).textContent=l.replace("'",'’')});
   const ready=()=>F.every(x=>x.type!=='text'||clean(val[x.id]));
