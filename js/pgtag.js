@@ -31,9 +31,9 @@ FXR.pgtag=function(f,st,n){
   const scene=S.stage({rs:f.rs||'station',chars:f.chars||[['bear',36,0,1],['mrs',68,1,1]]});
   if(mode==='start'){
     st.innerHTML=`<div class="step fx tg">
-      <div class="tg-story"><span>📖</span><p><b>Paddington está perdido na estação.</b> A Sra. Brown se aproxima.</p></div>
+      <div class="tg-story"><span>${f.ico||'📖'}</span><p>${f.story||''}</p></div>
       <div class="tg-scene">${scene}</div>
-      <div class="tg-bub"><small>MRS. BROWN</small><b>Hello! What’s your name?</b><span>Olá! Qual é o seu nome?</span><button type="button" class="tg-hear" data-say="Hello! What's your name?">🔊</button></div>
+      <div class="tg-bub"><small>${H((f.bubble&&f.bubble.who)||'')}</small><b>${H((f.bubble&&f.bubble.en)||'Hello! What’s your name?')}</b><span>${H((f.bubble&&f.bubble.pt)||'Olá! Qual é o seu nome?')}</span><button type="button" class="tg-hear" data-say="Hello! What's your name?">🔊</button></div>
       <label class="tg-lab">Escreva o seu nome<input id="tgName" type="text" maxlength="20" autocomplete="given-name" placeholder="Luiz" value="${H(saved.name||'')}"></label>
       <div class="tg-tag" id="tgTag" aria-live="polite"><span class="tg-hole"></span><div><small>Sua primeira frase</small><b id="tgLine">I’m …</b></div></div>
       <div class="tg-acts"><button type="button" class="ps-btn main" id="tgHear">🔊 Ouvir</button><button type="button" class="ps-btn rec" id="tgSay">🎤 Dizer “I’m …”</button></div>
@@ -62,14 +62,14 @@ FXR.pgtag=function(f,st,n){
   const FEEL=[['happy','😄','feliz'],['tired','😴','cansado'],['hungry','🍞','com fome']];
   const st0=Object.assign({name:'',from:'Brazil',feel:'happy'},saved);
   st.innerHTML=`<div class="step fx tg tg-end">
-    <div class="tg-story"><span>🏠</span><p><b>A família Brown leva o Paddington para casa.</b> Agora falta a sua etiqueta, a que vai para o seu álbum.</p></div>
+    <div class="tg-story"><span>${f.ico||'🏠'}</span><p>${f.story||'Agora falta a sua etiqueta, a que vai para o seu álbum.'}</p></div>
     <div class="tg-form">
       <label class="tg-lab">Nome<input id="tgN" type="text" maxlength="20" value="${H(st0.name)}" placeholder="Luiz"></label>
       <label class="tg-lab">País<select id="tgF">${COUNTRIES.map(c=>`<option${c===st0.from?' selected':''}>${c}</option>`).join('')}</select></label>
       <label class="tg-lab" id="tgOW" hidden>Qual país? (em inglês)<input id="tgO" type="text" maxlength="24" placeholder="Italy"></label>
       <div class="tg-lab">Como você está?<div class="tg-chips" id="tgC">${FEEL.map(x=>`<button type="button" data-v="${x[0]}" class="${x[0]===st0.feel?'on':''}"><span>${x[1]}</span>${x[0]}<small>${x[2]}</small></button>`).join('')}</div></div>
     </div>
-    <div class="tg-card" id="tgCard"><span class="tg-hole"></span><small>PLEASE LOOK AFTER THIS PERSON</small><b id="tgL1"></b><b id="tgL2"></b><b id="tgL3"></b><em id="tgSig"></em></div>
+    <div class="tg-card" id="tgCard"><span class="tg-hole"></span><small>HELLO, MY NAME IS</small><b id="tgL1"></b><b id="tgL2"></b><b id="tgL3"></b><em id="tgSig"></em></div>
     <div class="tg-acts"><button type="button" class="ps-btn main" id="tgP">🔊 Ouvir</button><button type="button" class="ps-btn rec" id="tgM">🎤 Falar a etiqueta</button><button type="button" class="ps-btn" id="tgS">📤 Compartilhar</button></div>
     <div class="pv-host tg-mic" id="tgMic" hidden></div></div>`;
   const nameI=q('#tgN',st),fromS=q('#tgF',st),otherW=q('#tgOW',st),otherI=q('#tgO',st);
