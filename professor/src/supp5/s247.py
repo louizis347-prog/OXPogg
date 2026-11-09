@@ -84,7 +84,7 @@ SUPP = {'reg': 233,
              'chunkHunt': ['Do you have a reservation?', 'You don’t have to wear a tie.', 'We have to leave a tip.', 'Happy Valentine’s Day!'],
              'think': 'Do you have to make a reservation for a restaurant in your town?',
              'text': ['It is February 14 in Chicago. Ana and Tom Silva have dinner at a nice restaurant. It is Valentine’s Day, and it is also their '
-                      'anniversary. They are a happy couple. Tom has a gift for Ana, and the night is cold but sunny.',
+                      'anniversary. They are a happy couple. Tom has a gift for Ana, and the night is cold and clear.',
                       'Evan, the waiter, says, “Good evening! Do you have a reservation?” “Yes, for two, under Silva,” Ana says. “Right this way. Your table '
                       'is by the window.” “It’s lovely. Thank you.”',
                       'The room is romantic. A red rose is on every table. Tom looks at his jacket. “Do I have to wear a tie?” he asks. Evan smiles. “**You '
