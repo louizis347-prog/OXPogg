@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dedução (grau de certeza)",
+"wrong": "It must to be ready, but it can be wrong.",
+"right": "It must be ready, but it might be wrong.",
+"why": "Em português “deve estar pronto” e “pode estar errado” usam poder e dever. Em inglês: must be (~95%), might/may/could be (~50%), can’t be (~0%); o can de possibilidade não vale para dedução."
+},
+"mcq": [
+{
+"q": "It ___ be ready (quase certo).",
+"opts": [
+"might",
+"can’t",
+"must"
+],
+"ans": 2,
+"why": "95%."
+},
+{
+"q": "It ___ need more time (50%).",
+"opts": [
+"must",
+"might",
+"can’t"
+],
+"ans": 1,
+"why": "50%."
+},
+{
+"q": "It ___ be true (impossível).",
+"opts": [
+"must",
+"might",
+"can’t"
+],
+"ans": 2,
+"why": "0%."
+},
+{
+"q": "Which is correct? (dedução (grau de certeza))",
+"opts": [
+"He must be tired.",
+"He must to be tired.",
+"He musts be tired."
+],
+"ans": 0,
+"why": "Sem to."
+}
+],
+"fix": [
+{
+"wrong": "It can be a mistake. (talvez)",
+"right": "It might be a mistake.",
+"why": "can não = talvez em dedução."
+},
+{
+"wrong": "She must to be home.",
+"right": "She must be home.",
+"why": "Sem to."
+},
+{
+"wrong": "It no must be true.",
+"right": "It can’t be true.",
+"why": "can’t."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com 95%: “I am sure he is tired.”",
+"answer": "He must be tired.",
+"why": ""
+},
+{
+"prompt": "Reescreva com 50%: “Perhaps it is broken.” (might)",
+"answer": "It might be broken.",
+"why": ""
+},
+{
+"prompt": "Reescreva com 0%: “It is impossible that she is angry.”",
+"answer": "She can’t be angry.",
+"why": ""
+}
+]
+}

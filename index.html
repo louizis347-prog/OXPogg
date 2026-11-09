@@ -17,9 +17,11 @@
 </script>
 <script>document.documentElement.setAttribute("data-theme","dark")</script><script src="js/theme.js"></script><script>document.documentElement.setAttribute("data-theme","dark");try{window.PogTheme&&(PogTheme.apply=function(){document.documentElement.setAttribute("data-theme","dark")})}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="prefetch" href="data/manifest.json"><link rel="prefetch" href="data/counts.json"><link rel="prefetch" href="data/availability.json">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
-<link rel="stylesheet" href="css/tokens.css?v=1">
-<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5"><link rel="stylesheet" href="css/landing-teacher.css?v=1"><link rel="stylesheet" href="css/landing-wow.css?v=1"><link rel="stylesheet" href="css/landing-pro.css?v=5"><link rel="stylesheet" href="css/landing-five.css?v=1"><link rel="stylesheet" href="css/landing-dark.css?v=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500..800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500..800&display=swap"></noscript>
+<link rel="stylesheet" href="css/landing.bundle.css?v=2">
+<link rel="preload" as="image" href="img/landing/episode-m.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/landing-five.css?v=1"><link rel="stylesheet" href="css/landing-ld.css?v=1">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -55,7 +57,12 @@
         <div><b>8</b><small>idiomas</small></div>
       </div>
     </div>
-    <div class="stage" aria-label="Prévia do Pogglot no celular"></div>
+    <div class="stage" aria-label="Prévia do Pogglot no celular">
+      <div class="hp back"><img src="img/landing/home-m.webp" width="480" height="1039" alt="" decoding="async"></div>
+      <div class="hp front"><img src="img/landing/episode-m.webp" width="480" height="1039" alt="Tela de um episódio do Pogglot" fetchpriority="high" decoding="async"></div>
+      <div class="hero-pog" aria-hidden="true"></div>
+      <span class="chip2 c-top">Aprenda pela cultura <b>✦</b></span><span class="chip2 c-bot"><b>10 min</b> por episódio</span><span class="chip2 c-mid">🪙 +10 Pogcoins</span>
+    </div>
   </div>
 </section>
 
@@ -177,24 +184,16 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
 <!-- IDIOMAS -->
 <section class="sec alt" id="idiomas">
   <div class="wrap">
-    <div class="sh"><h2>Escolha o seu idioma</h2><p>Cada idioma tem os próprios níveis, trilhas e progresso.</p></div>
-    <div class="langs">
-      <div class="lang" style="--c:#2F6FE0"><span class="code">EN</span><h3>Inglês</h3><small>3.000+ episódios<br>A1 a C2</small></div>
-      <div class="lang" style="--c:#D2493E"><span class="code">ES</span><h3>Espanhol</h3><small>2.000+ episódios<br>A1 a C2</small></div>
-      <div class="lang" style="--c:#4A4DDB"><span class="code">FR</span><h3>Francês</h3><small>2.100+ episódios<br>A1 a C2</small></div>
-      <div class="lang" style="--c:#C46A0A"><span class="code">DE</span><h3>Alemão</h3><small>500+ episódios<br>A1</small></div>
-      <div class="lang" style="--c:#12957F"><span class="code">IT</span><h3>Italiano</h3><small>500+ episódios</small></div>
-      <div class="lang" style="--c:#4E9A12"><span class="code">PT</span><h3>Português</h3><small>2.100+ episódios</small></div>
-      <div class="lang" style="--c:#E0647E"><span class="code">JA</span><h3>Japonês</h3><small>500+ episódios<br>A1 a C2</small></div>
-      <div class="lang" style="--c:#7A4FD0"><span class="code">KO</span><h3>Coreano</h3><small>500+ episódios<br>A1 a C2</small></div>
-    </div>
-    <div class="levels" aria-label="Níveis do A1 ao C2">
-      <div class="l0"><b>A1</b><small>Iniciante</small></div>
-      <div class="l1"><b>A2</b><small>Básico</small></div>
-      <div class="l2"><b>B1</b><small>Intermediário</small></div>
-      <div class="l3"><b>B2</b><small>Avançado inicial</small></div>
-      <div class="l4"><b>C1</b><small>Avançado</small></div>
-      <div class="l5"><b>C2</b><small>Domínio</small></div>
+    <div class="sh"><h2>Escolha o seu idioma <em>e a sua cultura</em></h2><p>Cada idioma nasce de obras, vozes e lugares de verdade. Os níveis vão do A1 ao C2 em todos eles.</p></div>
+    <div class="cl-grid">
+      <a class="cl" href="app.html" style="--c:#2F6FE0"><div class="art"><img src="img/landing/art/lang-en.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">EN<i>Nova York</i></span></div><div class="bd"><h3>Inglês americano</h3><p class="hook">De Friends a Gatsby: o inglês das telas e dos livros dos EUA.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-pk">POCKET</b><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b><b class="k-pr">LIVRO</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#D2493E"><div class="art"><img src="img/landing/art/lang-es.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">ES<i>Andaluzia</i></span></div><div class="bd"><h3>Espanhol</h3><p class="hook">Do Quixote ao Chaves, sem cair nos falsos amigos.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#4A4DDB"><div class="art"><img src="img/landing/art/lang-fr.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">FR<i>Paris</i></span></div><div class="bd"><h3>Francês</h3><p class="hook">Do Pequeno Príncipe ao cinema francês.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#C46A0A"><div class="art"><img src="img/landing/art/lang-de.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">DE<i>Baviera</i></span></div><div class="bd"><h3>Alemão</h3><p class="hook">De Goethe aos filmes e à vida cotidiana.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#12957F"><div class="art"><img src="img/landing/art/lang-it.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">IT<i>Amalfi</i></span></div><div class="bd"><h3>Italiano</h3><p class="hook">De Dante ao cinema italiano.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#4E9A12"><div class="art"><img src="img/landing/art/lang-pt.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">PT<i>Rio</i></span></div><div class="bd"><h3>Português</h3><p class="hook">De Machado a Macunaíma: o português do Brasil, para hispanofalantes.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#E0647E"><div class="art"><img src="img/landing/art/lang-ja.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">JA<i>Fuji</i></span></div><div class="bd"><h3>Japonês</h3><p class="hook">Do Genji ao anime, com o sistema de escrita passo a passo.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b><b class="k-nb">NEIGHBORS</b></span></div></a>
+      <a class="cl" href="app.html" style="--c:#7A4FD0"><div class="art"><img src="img/landing/art/lang-ko.svg" width="480" height="360" loading="lazy" decoding="async" alt="" onerror="this.remove()"><span class="code">KO<i>Seul</i></span></div><div class="bd"><h3>Coreano</h3><p class="hook">Do Hangul ao K-pop.</p><span class="lv">A1 a C2</span><span class="crs"><b class="k-rg">REGULAR</b></span></div></a>
     </div>
   </div>
 </section>
@@ -299,14 +298,11 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
   }
 })();
 </script>
-<script src="js/obra-art-hand.js"></script><script src="js/obra-art.js"></script><script src="js/home-art.js"></script>
+<script src="js/home-art.js"></script>
 <script>
 (function(){
   var q=function(s){return document.querySelector(s)};
-  try{
-    q('.hero-sky').innerHTML=HomeArt.scene();
-    var lg=q('.logo-fb');if(lg)lg.outerHTML=HomeArt.logo({size:42});
-  }catch(e){}
+  try{var lg=q('.logo-fb');if(lg)lg.outerHTML=HomeArt.logo({size:42})}catch(e){}
 })();
 </script>
 <script src="js/landing-pro.js?v=2"></script><script src="js/landing-wow.js?v=1"></script>

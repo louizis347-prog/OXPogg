@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "avaliação: passiva, to, have, keep",
+"wrong": "The letter sended yesterday. We agree helping. I fixed my watch at a shop.",
+"right": "The letter was sent yesterday. We agreed to help. I had my watch fixed at a shop.",
+"why": "Falta be e particípio correto na passiva, infinitivo com to após agree, e estrutura causativa. Em português o ativo e o passivo se confundem em “consertei no relojoeiro”."
+},
+"mcq": [
+{
+"q": "The invoice ___ yesterday.",
+"opts": [
+"sent",
+"was sent",
+"was send"
+],
+"ans": 1,
+"why": "was sent."
+},
+{
+"q": "They agreed ___ the rules.",
+"opts": [
+"to follow",
+"following",
+"follow"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "I ___ my watch fixed.",
+"opts": [
+"had",
+"did",
+"kept"
+],
+"ans": 0,
+"why": "had."
+},
+{
+"q": "Keep ___ the receipt.",
+"opts": [
+"safely",
+"to safe",
+"the receipt safe"
+],
+"ans": 2,
+"why": "keep + adj."
+}
+],
+"fix": [
+{
+"wrong": "The cake was eat.",
+"right": "The cake was eaten.",
+"why": "pp."
+},
+{
+"wrong": "He refused answering.",
+"right": "He refused to answer.",
+"why": "to."
+},
+{
+"wrong": "I kept to smile.",
+"right": "I kept smiling.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Someone stole my bag.”",
+"answer": "My bag was stolen.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They agreed. They will help.”",
+"answer": "They agreed to help.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “A technician fixed my laptop.”",
+"answer": "I had my laptop fixed.",
+"why": ""
+}
+]
+}

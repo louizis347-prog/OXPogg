@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "like + -ing",
+"wrong": "I like play soccer.",
+"right": "I like playing soccer.",
+"why": "Em português usamos o infinitivo ('gosto de jogar'); em inglês, depois de like usamos o verbo com -ing."
+},
+"mcq": [
+{
+"q": "I like ___ music.",
+"opts": [
+"listen to",
+"listening to",
+"to listening"
+],
+"ans": 1,
+"why": "like + -ing."
+},
+{
+"q": "She **don't** like cooking. O erro é:",
+"opts": [
+"don't → doesn't",
+"cooking → cook",
+"like → likes"
+],
+"ans": 0,
+"why": "She exige doesn't."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He likes swim.",
+"He likes swimming.",
+"He like swimming."
+],
+"ans": 1,
+"why": "3ª pessoa: likes + -ing."
+},
+{
+"q": "Pergunta correta:",
+"opts": [
+"Do you like dancing?",
+"Do you likes dancing?",
+"You like dancing do?"
+],
+"ans": 0,
+"why": "Do + you + like (sem -s)."
+}
+],
+"fix": [
+{
+"wrong": "My brother like reading.",
+"right": "My brother likes reading.",
+"why": "3ª pessoa leva -s."
+},
+{
+"wrong": "We like cook dinner.",
+"right": "We like cooking dinner.",
+"why": "like + -ing."
+},
+{
+"wrong": "Does she likes running?",
+"right": "Does she like running?",
+"why": "Após does, verbo sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva negativa: “I like swimming.”",
+"answer": "I don't like swimming.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You like dancing.”",
+"answer": "Do you like dancing?",
+"why": ""
+},
+{
+"prompt": "Troque para he: “I like singing.”",
+"answer": "He likes singing.",
+"why": ""
+}
+]
+}

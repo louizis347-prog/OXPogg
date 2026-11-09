@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "It was in the attic what she found it.",
+"right": "It was in the attic that she found it.",
+"why": "Português usa “foi… que/o que”; em inglês cleft usa that (ou who/where), nunca what."
+},
+"mcq": [
+{
+"q": "Cleft:",
+"opts": [
+"In attic was that she found.",
+"It was in the attic what she found.",
+"It was in the attic that she found it."
+],
+"ans": 2,
+"why": "It was… that."
+},
+{
+"q": "Which pseudo-cleft names what she wanted?",
+"opts": [
+"What she wanted was peace.",
+"She wanted what was peace.",
+"What she wanted it was peace."
+],
+"ans": 0,
+"why": "What… was."
+},
+{
+"q": "Cleft for a person:",
+"opts": [
+"It were Ana who.",
+"It was Ana who called.",
+"It was Ana what called."
+],
+"ans": 1,
+"why": "who."
+},
+{
+"q": "Emphasis falls on the…",
+"opts": [
+"end",
+"verb",
+"word after It was"
+],
+"ans": 2,
+"why": "Foco."
+}
+],
+"fix": [
+{
+"wrong": "It was Ana what called.",
+"right": "It was Ana who called.",
+"why": "who."
+},
+{
+"wrong": "It was yesterday when she called.",
+"right": "It was yesterday that she called.",
+"why": "that."
+},
+{
+"wrong": "What she wanted were peace.",
+"right": "What she wanted was peace.",
+"why": "was."
+}
+],
+"rewrite": [
+{
+"prompt": "Cleft: “She found it in the attic.”",
+"answer": "It was in the attic that she found it.",
+"why": ""
+},
+{
+"prompt": "Pseudo-cleft: “She wanted peace.”",
+"answer": "What she wanted was peace.",
+"why": ""
+},
+{
+"prompt": "Cleft: “Ana called.”",
+"answer": "It was Ana who called.",
+"why": ""
+}
+]
+}

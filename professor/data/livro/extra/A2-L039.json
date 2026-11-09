@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "going to",
+"wrong": "Tomorrow I travel to Rio.",
+"right": "Tomorrow I'm going to travel to Rio.",
+"why": "Em português o presente serve para o futuro próximo ('amanhã eu viajo'); em inglês, um plano pede going to."
+},
+"mcq": [
+{
+"q": "She ___ going to stay.",
+"opts": [
+"are",
+"is",
+"does"
+],
+"ans": 1,
+"why": "is."
+},
+{
+"q": "They ___ going to visit us.",
+"opts": [
+"do",
+"is",
+"are"
+],
+"ans": 2,
+"why": "are."
+},
+{
+"q": "I'm not going ___ late.",
+"opts": [
+"being",
+"be",
+"to be"
+],
+"ans": 2,
+"why": "to be."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"We going to learn.",
+"We're going to learn.",
+"We're going learn."
+],
+"ans": 1,
+"why": "be + going to."
+}
+],
+"fix": [
+{
+"wrong": "I going to call.",
+"right": "I'm going to call.",
+"why": "be."
+},
+{
+"wrong": "He is go to leave.",
+"right": "He is going to leave.",
+"why": "going."
+},
+{
+"wrong": "We are going to eating.",
+"right": "We are going to eat.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro: “I eat lunch at 1.”",
+"answer": "I'm going to eat lunch at 1.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She is going to dance.”",
+"answer": "Is she going to dance?",
+"why": ""
+},
+{
+"prompt": "Negativa: “They are going to wait.”",
+"answer": "They aren't going to wait.",
+"why": ""
+}
+]
+}

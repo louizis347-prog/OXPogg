@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can’t × cannot",
+"wrong": "I can not swim and he cans swim.",
+"right": "I can’t swim, but he can.",
+"why": "Can não recebe -s e a negativa é can’t/cannot."
+},
+"mcq": [
+{
+"q": "Question: ___ you help me?",
+"opts": [
+"Do",
+"Are",
+"Can"
+],
+"ans": 2,
+"why": "Can + sujeito."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He can speak French.",
+"He can speaks French.",
+"He can to speak French."
+],
+"ans": 0,
+"why": "Base form."
+},
+{
+"q": "Short answer: Can she cook? ___",
+"opts": [
+"Yes, she does.",
+"Yes, she can.",
+"Yes, she cans."
+],
+"ans": 1,
+"why": "Can."
+},
+{
+"q": "Can means…",
+"opts": [
+"future",
+"past",
+"ability or permission"
+],
+"ans": 2,
+"why": "Habilidade/permissão."
+}
+],
+"fix": [
+{
+"wrong": "He cans play guitar.",
+"right": "He can play guitar.",
+"why": "Sem -s."
+},
+{
+"wrong": "Do you can help?",
+"right": "Can you help?",
+"why": "Sem do."
+},
+{
+"wrong": "I don’t can sing.",
+"right": "I can’t sing.",
+"why": "Can’t."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue com can’t: “She can drive.”",
+"answer": "She can’t drive.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You can swim.”",
+"answer": "Can you swim?",
+"why": ""
+},
+{
+"prompt": "Resposta curta afirmativa: “Can he run?”",
+"answer": "Yes, he can.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pontuação",
+"wrong": "Marta thought, Footnotes are surrender.",
+"right": "Marta thought, “Footnotes are surrender.”",
+"why": "Português pode dispensar aspas no pensamento; em inglês o discurso direto de pensamento leva aspas."
+},
+"mcq": [
+{
+"q": "Direct thought:",
+"opts": [
+"Marta thought, “Footnotes are surrender.”",
+"Marta thought footnotes surrender",
+"Marta thought that “footnotes are surrender”."
+],
+"ans": 0,
+"why": "Aspas."
+},
+{
+"q": "Indirect:",
+"opts": [
+"Marta thought that footnotes are surrender.",
+"Marta thought footnotes to be.",
+"Marta thought that footnotes were surrender."
+],
+"ans": 2,
+"why": "Recuo."
+},
+{
+"q": "Reported tense shifts from present to…",
+"opts": [
+"nothing",
+"future",
+"past"
+],
+"ans": 2,
+"why": "Passado."
+},
+{
+"q": "Aspas mark…",
+"opts": [
+"a place",
+"her exact words",
+"a date"
+],
+"ans": 1,
+"why": "Palavras exatas."
+}
+],
+"fix": [
+{
+"wrong": "Marta thought footnotes are surrender.",
+"right": "Marta thought footnotes were surrender.",
+"why": "Recuo."
+},
+{
+"wrong": "Marta thought “That footnotes were surrender”.",
+"right": "Marta thought that footnotes were surrender.",
+"why": "Indireto sem aspas."
+},
+{
+"wrong": "Marta think, “Footnotes are surrender.”",
+"right": "Marta thought, “Footnotes are surrender.”",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Indireto: Marta thought, “Footnotes are surrender.”",
+"answer": "Marta thought that footnotes were surrender.",
+"why": ""
+},
+{
+"prompt": "Direto: Marta thought that notes were useless.",
+"answer": "Marta thought, “Notes are useless.”",
+"why": ""
+},
+{
+"prompt": "Negativo: “Marta thought it.”",
+"answer": "Marta did not think it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "must have + particípio",
+"wrong": "He must has felt alone.",
+"right": "He must have felt alone.",
+"why": "Em português “deve ter sentido” usa ter + particípio e o brasileiro conjuga o auxiliar. Em inglês, modal + have (sempre have) + particípio."
+},
+"mcq": [
+{
+"q": "He ___ felt alone.",
+"opts": [
+"must has",
+"must had",
+"must have"
+],
+"ans": 2,
+"why": "must have."
+},
+{
+"q": "“She might have left” expresses…",
+"opts": [
+"certeza no passado",
+"possibilidade no passado",
+"obrigação"
+],
+"ans": 1,
+"why": "might have."
+},
+{
+"q": "Which is a past participle?",
+"opts": [
+"gone",
+"go",
+"went"
+],
+"ans": 0,
+"why": "gone."
+},
+{
+"q": "They ___ have called.",
+"opts": [
+"could to",
+"coulds",
+"could"
+],
+"ans": 2,
+"why": "could have."
+}
+],
+"fix": [
+{
+"wrong": "She must has forgot.",
+"right": "She must have forgotten.",
+"why": "have + pp."
+},
+{
+"wrong": "He might have went.",
+"right": "He might have gone.",
+"why": "gone."
+},
+{
+"wrong": "They could had come.",
+"right": "They could have come.",
+"why": "could have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com certeza: “I am sure she was tired.” (must)",
+"answer": "She must have been tired.",
+"why": ""
+},
+{
+"prompt": "Reescreva com possibilidade: “Perhaps he forgot.” (might)",
+"answer": "He might have forgotten.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “It was possible for them to win.”",
+"answer": "They could have won.",
+"why": ""
+}
+]
+}

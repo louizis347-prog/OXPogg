@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "go + preposição",
+"wrong": "I go to home after class.",
+"right": "I go home after class.",
+"why": "Em português dizemos \"vou para casa\"; em inglês home é advérbio e dispensa to."
+},
+"mcq": [
+{
+"q": "“Ir para casa” =",
+"opts": [
+"go to home",
+"go home",
+"go at home"
+],
+"ans": 1,
+"why": "Sem to."
+},
+{
+"q": "“Ir a pé” =",
+"opts": [
+"go by feet",
+"go with foot",
+"go on foot"
+],
+"ans": 2,
+"why": "On foot."
+},
+{
+"q": "“Ir de ônibus” =",
+"opts": [
+"go by bus",
+"go with bus",
+"go in the bus only"
+],
+"ans": 0,
+"why": "By bus."
+},
+{
+"q": "“Ir dormir” =",
+"opts": [
+"go to the bed",
+"go to bed",
+"go sleep"
+],
+"ans": 1,
+"why": "Go to bed."
+}
+],
+"fix": [
+{
+"wrong": "I go to home at six.",
+"right": "I go home at six.",
+"why": "Sem to."
+},
+{
+"wrong": "She goes with bus.",
+"right": "She goes by bus.",
+"why": "By bus."
+},
+{
+"wrong": "We go for school.",
+"right": "We go to school.",
+"why": "To school."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I go to home.” (corrija)",
+"answer": "I go home.",
+"why": ""
+},
+{
+"prompt": "Use go by: “She travels in a bus.”",
+"answer": "She goes by bus.",
+"why": ""
+},
+{
+"prompt": "Use go to: “They go in school.” (corrija)",
+"answer": "They go to school.",
+"why": ""
+}
+]
+}

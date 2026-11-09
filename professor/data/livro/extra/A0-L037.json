@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gostar de",
+"wrong": "I like of music.",
+"right": "I like music.",
+"why": "Em português \"gostar de\" pede preposição; em inglês like não leva of."
+},
+"mcq": [
+{
+"q": "I ___ a pen.",
+"opts": [
+"need",
+"needs",
+"am need"
+],
+"ans": 0,
+"why": "I: need."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He need water.",
+"He needs water.",
+"He is needs water."
+],
+"ans": 1,
+"why": "Terceira: needs."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We likes dogs.",
+"We are like dogs.",
+"We like dogs."
+],
+"ans": 2,
+"why": "We: like."
+},
+{
+"q": "“I need a pen” means…",
+"opts": [
+"Preciso de uma caneta",
+"Gosto de uma caneta",
+"Tenho uma caneta"
+],
+"ans": 0,
+"why": "Need = precisar."
+}
+],
+"fix": [
+{
+"wrong": "She need a pen.",
+"right": "She needs a pen.",
+"why": "Terceira pessoa."
+},
+{
+"wrong": "Need water.",
+"right": "I need water.",
+"why": "Sujeito obrigatório."
+},
+{
+"wrong": "He like cats.",
+"right": "He likes cats.",
+"why": "Terceira pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque para “He”: “I need a pen.”",
+"answer": "He needs a pen.",
+"why": ""
+},
+{
+"prompt": "Troque para “They”: “He likes music.”",
+"answer": "They like music.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I need of water.” (corrija)",
+"answer": "I need water.",
+"why": ""
+}
+]
+}

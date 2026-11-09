@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "We must reconcile freedom and responsibility.",
+"right": "We must reconcile freedom with responsibility.",
+"why": "Português “conciliar A e B”; inglês reconcile A with B."
+},
+"mcq": [
+{
+"q": "Reconcile A ___ B",
+"opts": [
+"with",
+"to",
+"and"
+],
+"ans": 0,
+"why": "with."
+},
+{
+"q": "Yet:",
+"opts": [
+"Free yet but limited",
+"Free, but yet limited",
+"Free, yet her freedom is limited."
+],
+"ans": 2,
+"why": "Yet."
+},
+{
+"q": "And yet…",
+"opts": [
+"contrasts",
+"repeats",
+"adds"
+],
+"ans": 0,
+"why": "Contraste."
+},
+{
+"q": "Reconcile freedom ___ duty",
+"opts": [
+"with",
+"by",
+"for"
+],
+"ans": 0,
+"why": "with."
+}
+],
+"fix": [
+{
+"wrong": "Reconcile freedom and duty.",
+"right": "Reconcile freedom with duty.",
+"why": "with."
+},
+{
+"wrong": "She is free, but yet limited.",
+"right": "She is free, yet limited.",
+"why": "Sem but."
+},
+{
+"wrong": "We reconciles A with B.",
+"right": "We reconcile A with B.",
+"why": "Sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com reconcile: “Combine freedom and duty.”",
+"answer": "Reconcile freedom with duty.",
+"why": ""
+},
+{
+"prompt": "Passado: “We reconcile A with B.”",
+"answer": "We reconciled A with B.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We reconcile A with B.”",
+"answer": "We do not reconcile A with B.",
+"why": ""
+}
+]
+}

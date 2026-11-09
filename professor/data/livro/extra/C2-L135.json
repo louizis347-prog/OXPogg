@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If I will pull the lever, am I a murderer?",
+"right": "If I pull the lever, am I a murderer?",
+"why": "Português “se eu puxar/puxarei”; em inglês if + presente simples, nunca will."
+},
+"mcq": [
+{
+"q": "First conditional:",
+"opts": [
+"If I pull, five live.",
+"If I will pull, five live.",
+"If I pulled, five live (real)"
+],
+"ans": 0,
+"why": "If + presente."
+},
+{
+"q": "Unless =",
+"opts": [
+"because",
+"if not",
+"when"
+],
+"ans": 1,
+"why": "If not."
+},
+{
+"q": "Which sentence states the condition correctly?",
+"opts": [
+"unless I will pull",
+"The trolley will kill five unless I pull.",
+"The trolley will kill five unless I don’t pull."
+],
+"ans": 1,
+"why": "Sem negativa dupla."
+},
+{
+"q": "Open question uses…",
+"opts": [
+"if + would",
+"if + will",
+"if + present"
+],
+"ans": 2,
+"why": "Presente."
+}
+],
+"fix": [
+{
+"wrong": "If I will pull it, five live.",
+"right": "If I pull it, five live.",
+"why": "Sem will."
+},
+{
+"wrong": "Unless I don’t pull, five die.",
+"right": "Unless I pull, five die.",
+"why": "Não duplicar."
+},
+{
+"wrong": "If I pulled it, am I guilty?",
+"right": "If I pull it, am I guilty?",
+"why": "Presente."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com unless: “If I don’t pull, five die.”",
+"answer": "Unless I pull, five die.",
+"why": ""
+},
+{
+"prompt": "Reescreva com if: “Unless I pull, five die.”",
+"answer": "If I don’t pull, five die.",
+"why": ""
+},
+{
+"prompt": "Negativo: “If I pull, five live.”",
+"answer": "If I pull, five don’t live.",
+"why": ""
+}
+]
+}

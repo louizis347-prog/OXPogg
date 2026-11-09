@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "decide / decision",
+"wrong": "I made a decide.",
+"right": "I made a decision.",
+"why": "Em português 'decidir/decisão' é próximo, mas o aluno usa o verbo onde cabe o substantivo."
+},
+"mcq": [
+{
+"q": "It was a hard ___ .",
+"opts": [
+"decision",
+"decisive",
+"decide"
+],
+"ans": 0,
+"why": "substantivo."
+},
+{
+"q": "She ___ to leave.",
+"opts": [
+"decisive",
+"decision",
+"decided"
+],
+"ans": 2,
+"why": "verbo."
+},
+{
+"q": "He is a ___ leader.",
+"opts": [
+"decisive",
+"decide",
+"decision"
+],
+"ans": 0,
+"why": "adjetivo."
+},
+{
+"q": "They acted ___ .",
+"opts": [
+"decisive",
+"decisively",
+"decision"
+],
+"ans": 1,
+"why": "advérbio."
+}
+],
+"fix": [
+{
+"wrong": "I made a decide.",
+"right": "I made a decision.",
+"why": "substantivo."
+},
+{
+"wrong": "She is very decision.",
+"right": "She is very decisive.",
+"why": "adjetivo."
+},
+{
+"wrong": "He acted decisive.",
+"right": "He acted decisively.",
+"why": "advérbio."
+}
+],
+"rewrite": [
+{
+"prompt": "Substantivo: “I decided to go. It was my ___.”",
+"answer": "It was my decision.",
+"why": ""
+},
+{
+"prompt": "Adjetivo: “She is a leader who decides fast.”",
+"answer": "She is a decisive leader.",
+"why": ""
+},
+{
+"prompt": "Advérbio: “He answered with confidence.” → answered ___",
+"answer": "He answered decisively.",
+"why": ""
+}
+]
+}

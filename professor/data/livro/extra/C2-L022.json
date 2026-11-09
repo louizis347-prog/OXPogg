@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "futuro após until",
+"wrong": "Cook until the butter will melt.",
+"right": "Cook until the butter melts.",
+"why": "Em português “até que derreta” usa subjuntivo e o aluno cria futuro. Em inglês, after until/when/as soon as usa-se presente."
+},
+"mcq": [
+{
+"q": "“Reduce the sauce ___ it coats the spoon.”",
+"opts": [
+"since",
+"until",
+"during"
+],
+"ans": 1,
+"why": "until."
+},
+{
+"q": "“Mount” in sauce-making means...",
+"opts": [
+"climb",
+"slice",
+"whisk in cold butter"
+],
+"ans": 2,
+"why": "Montar com manteiga."
+},
+{
+"q": "“No faster than” sets a...",
+"opts": [
+"limit",
+"speed record",
+"time"
+],
+"ans": 0,
+"why": "Limite."
+},
+{
+"q": "Purpose: “Add cold butter ___ it emulsifies.”",
+"opts": [
+"unless",
+"so that",
+"until"
+],
+"ans": 1,
+"why": "so that."
+}
+],
+"fix": [
+{
+"wrong": "Sweat the diced shallot until it will soften.",
+"right": "Sweat the diced shallot until it softens.",
+"why": "Presente."
+},
+{
+"wrong": "Add the butter slow.",
+"right": "Add the butter slowly.",
+"why": "Advérbio."
+},
+{
+"wrong": "Deglaze the pan then to reduce.",
+"right": "Deglaze the pan, then reduce.",
+"why": "Imperativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com until: “Stir. The butter melts at the end.” (Stir …)",
+"answer": "Stir until the butter melts.",
+"why": ""
+},
+{
+"prompt": "Reescreva no negativo: “Boil the sauce.” (Never…)",
+"answer": "Never boil the sauce.",
+"why": ""
+},
+{
+"prompt": "Reescreva com so that: “Whisk to make it emulsify.” (so that)",
+"answer": "Whisk so that it emulsifies.",
+"why": ""
+}
+]
+}

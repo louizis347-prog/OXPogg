@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "had been",
+"wrong": "Had this taught earlier, students would understand it.",
+"right": "Had this been taught earlier, students would understand it.",
+"why": "Em português “se isto tivesse sido ensinado” tem duas partes e o aluno omite been. Em inglês, passiva em inversão: Had + been + pp."
+},
+"mcq": [
+{
+"q": "A tactful rewrite of “That’s wrong”:",
+"opts": [
+"I take issue with that point.",
+"That’s dumb.",
+"No."
+],
+"ans": 0,
+"why": "Registro."
+},
+{
+"q": "“Should you need help, call.” Replaces...",
+"opts": [
+"If you needed",
+"If you need help",
+"If you had needed"
+],
+"ans": 1,
+"why": "Should."
+},
+{
+"q": "“___ this been taught, they would know it.”",
+"opts": [
+"Did",
+"Was",
+"Had"
+],
+"ans": 2,
+"why": "Had been."
+},
+{
+"q": "Match the register to the reader means...",
+"opts": [
+"adapt tone",
+"use slang",
+"avoid verbs"
+],
+"ans": 0,
+"why": "Adaptar."
+}
+],
+"fix": [
+{
+"wrong": "Should you needs help, call me.",
+"right": "Should you need help, call me.",
+"why": "Base."
+},
+{
+"wrong": "I take exception with your tone.",
+"right": "I take exception to your tone.",
+"why": "to."
+},
+{
+"wrong": "Had it taught, they would know.",
+"right": "Had it been taught, they would know.",
+"why": "been."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If this had been taught, they would know.”",
+"answer": "Had this been taught, they would know.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If you need anything, tell me.”",
+"answer": "Should you need anything, tell me.",
+"why": ""
+},
+{
+"prompt": "Reescreva com take issue with: “I think that is wrong.”",
+"answer": "I take issue with that.",
+"why": ""
+}
+]
+}

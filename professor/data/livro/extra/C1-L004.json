@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição fixa",
+"wrong": "We attribute the growth at teamwork.",
+"right": "We attribute the growth to teamwork.",
+"why": "Em português “atribuir a” sugere to, mas o brasileiro mistura com “por/em”. Em inglês, attribute A TO B; na passiva, is attributed to."
+},
+"mcq": [
+{
+"q": "We attribute the growth ___ teamwork.",
+"opts": [
+"with",
+"to",
+"for"
+],
+"ans": 1,
+"why": "attribute … to."
+},
+{
+"q": "The dip ___ to market shifts.",
+"opts": [
+"is attributed",
+"attributed it",
+"attributes"
+],
+"ans": 0,
+"why": "Passiva."
+},
+{
+"q": "Tell A ___ B:",
+"opts": [
+"to",
+"from",
+"for"
+],
+"ans": 1,
+"why": "tell A from B = distinguir."
+},
+{
+"q": "Which is passive?",
+"opts": [
+"It attributes to X.",
+"They attribute it to X.",
+"It is attributed to X."
+],
+"ans": 2,
+"why": "is + particípio."
+}
+],
+"fix": [
+{
+"wrong": "The result is attributed for luck.",
+"right": "The result is attributed to luck.",
+"why": "attribute to."
+},
+{
+"wrong": "They attribute the dip on prices.",
+"right": "They attribute the dip to prices.",
+"why": "attribute to."
+},
+{
+"wrong": "I can’t tell one twin to the other.",
+"right": "I can’t tell one twin from the other.",
+"why": "tell A from B."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “We attribute the rise to training.”",
+"answer": "The rise is attributed to training.",
+"why": ""
+},
+{
+"prompt": "Ativa: “The loss is attributed to errors.” (They…)",
+"answer": "They attribute the loss to errors.",
+"why": ""
+},
+{
+"prompt": "Reescreva com tell…from: “I can’t see the difference between the twins.” (one twin / other)",
+"answer": "I can’t tell one twin from the other.",
+"why": ""
+}
+]
+}

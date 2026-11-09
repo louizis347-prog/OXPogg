@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "must vs have to",
+"wrong": "I must to go to work every day.",
+"right": "I have to go to work every day.",
+"why": "Em português 'tenho que' e 'devo' se misturam; em inglês have to é obrigação externa e must é obrigação pessoal ou forte; must não leva to."
+},
+"mcq": [
+{
+"q": "The rule says I ___ wear a helmet.",
+"opts": [
+"am must",
+"must to",
+"have to"
+],
+"ans": 2,
+"why": "externa."
+},
+{
+"q": "You ___ be quiet in a library.",
+"opts": [
+"musts",
+"must to",
+"must"
+],
+"ans": 2,
+"why": "modal."
+},
+{
+"q": "Negativa de “I have to go”:",
+"opts": [
+"I don't have to go.",
+"I don't must go.",
+"I haven't to go."
+],
+"ans": 0,
+"why": "don't have to."
+},
+{
+"q": "Passado de have to:",
+"opts": [
+"musted",
+"had to",
+"must"
+],
+"ans": 1,
+"why": "had to."
+}
+],
+"fix": [
+{
+"wrong": "I must to leave.",
+"right": "I must leave.",
+"why": "sem to."
+},
+{
+"wrong": "She have to study.",
+"right": "She has to study.",
+"why": "has."
+},
+{
+"wrong": "I musted go.",
+"right": "I had to go.",
+"why": "had to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I have to work.”",
+"answer": "I had to work.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She has to go.”",
+"answer": "Does she have to go?",
+"why": ""
+},
+{
+"prompt": "Com must: “It's important. You (study).”",
+"answer": "You must study.",
+"why": ""
+}
+]
+}

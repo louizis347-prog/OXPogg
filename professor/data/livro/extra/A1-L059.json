@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo com generalização",
+"wrong": "The life is beautiful.",
+"right": "Life is beautiful.",
+"why": "Em português dizemos \"a vida é bela\" e \"os cachorros são fiéis\"; em inglês, ideias gerais e plurais genéricos dispensam artigo."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Life is hard.",
+"The life is hard.",
+"A life is hard."
+],
+"ans": 0,
+"why": "Sem artigo."
+},
+{
+"q": "Second mention: I saw a movie. ___ movie was long.",
+"opts": [
+"A",
+"The",
+"—"
+],
+"ans": 1,
+"why": "Segunda menção: the."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The dogs are loyal. (geral)",
+"A dogs are loyal.",
+"Dogs are loyal."
+],
+"ans": 2,
+"why": "Generalização sem artigo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I go to school.",
+"I go to the school. (estudar)",
+"I go to a school."
+],
+"ans": 0,
+"why": "School sem artigo = estudar."
+}
+],
+"fix": [
+{
+"wrong": "She likes the music.",
+"right": "She likes music.",
+"why": "Geral."
+},
+{
+"wrong": "I have dog. Dog is black.",
+"right": "I have a dog. The dog is black.",
+"why": "A, depois the."
+},
+{
+"wrong": "The life is short.",
+"right": "Life is short.",
+"why": "Sem the."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija: “I go to the school at 8.”",
+"answer": "I go to school at 8.",
+"why": ""
+},
+{
+"prompt": "Corrija: “I eat the breakfast at 7.”",
+"answer": "I eat breakfast at 7.",
+"why": ""
+},
+{
+"prompt": "Tire o artigo: “The money is important.” (geral)",
+"answer": "Money is important.",
+"why": ""
+}
+]
+}

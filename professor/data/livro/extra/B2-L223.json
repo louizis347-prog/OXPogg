@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso amigo",
+"wrong": "It is probable to work.",
+"right": "It is likely to work.",
+"why": "Em português dizemos “é provável que funcione”, e o brasileiro cria “probable to”. Em inglês, “probable” não aceita infinitivo; use “be likely to + verbo”."
+},
+"mcq": [
+{
+"q": "Which word introduces a **result**?",
+"opts": [
+"Because",
+"Consequently",
+"Despite"
+],
+"ans": 1,
+"why": "Consequently indica resultado; because indica causa."
+},
+{
+"q": "A survey ___ that most staff like quiet days.",
+"opts": [
+"found",
+"founded",
+"finded"
+],
+"ans": 0,
+"why": "found é o passado de find. “Founded” significa fundar (falso amigo de “fundou”)."
+},
+{
+"q": "Best opinion sentence:",
+"opts": [
+"In my view, it likely works to.",
+"My view, it is likely work.",
+"In my view, it is likely to work."
+],
+"ans": 2,
+"why": "Use In my view + oração completa; likely to + base."
+},
+{
+"q": "The news ___ a company that cut meetings.",
+"opts": [
+"is about",
+"is of",
+"does about"
+],
+"ans": 0,
+"why": "Tema: “is about”."
+}
+],
+"fix": [
+{
+"wrong": "The report talk about a firm.",
+"right": "The report talks about a firm.",
+"why": "Sujeito singular exige -s."
+},
+{
+"wrong": "A survey found what workers are happier.",
+"right": "A survey found that workers are happier.",
+"why": "Após found, use that (não what)."
+},
+{
+"wrong": "Consequently workers now finish earlier.",
+"right": "Consequently, workers now finish earlier.",
+"why": "Consequently vem seguido de vírgula."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com um resultado: “Meetings were cut. Workers finished earlier.” (use Consequently)",
+"answer": "Meetings were cut. Consequently, workers finished earlier.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “is likely to”: “It will probably work.”",
+"answer": "It is likely to work.",
+"why": ""
+},
+{
+"prompt": "Reescreva começando com “A survey found that”: “Workers like quiet days.”",
+"answer": "A survey found that workers like quiet days.",
+"why": ""
+}
+]
+}

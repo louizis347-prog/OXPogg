@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito claro",
+"wrong": "The concentrate of the poverty.",
+"right": "The concentration of poverty is rising.",
+"why": "Falta o verbo e o substantivo correto. Nominalize (concentrate → concentration) e mantenha sujeito e verbo claros."
+},
+"mcq": [
+{
+"q": "The ___ of poverty is rising.",
+"opts": [
+"concentrating",
+"concentration",
+"concentrate"
+],
+"ans": 1,
+"why": "concentration."
+},
+{
+"q": "The expansion of towns ___ fast.",
+"opts": [
+"are",
+"do",
+"is"
+],
+"ans": 2,
+"why": "Singular."
+},
+{
+"q": "A noun phrase needs…",
+"opts": [
+"a clear verb",
+"two nouns",
+"no verb"
+],
+"ans": 0,
+"why": "Verbo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Expansion towns is fast.",
+"The expansion of towns is fast.",
+"The expansion of towns fast."
+],
+"ans": 1,
+"why": "Sujeito + verbo."
+}
+],
+"fix": [
+{
+"wrong": "The expansion of towns are fast.",
+"right": "The expansion of towns is fast.",
+"why": "is."
+},
+{
+"wrong": "The concentrate of poverty rises.",
+"right": "The concentration of poverty rises.",
+"why": "concentration."
+},
+{
+"wrong": "Expansion of towns fast.",
+"right": "The expansion of towns is fast.",
+"why": "Verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Nominalize: “Cities expand fast.” (The … of towns is fast.)",
+"answer": "The expansion of towns is fast.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Poverty concentrates in towns.” (The … of poverty rises.)",
+"answer": "The concentration of poverty rises.",
+"why": ""
+},
+{
+"prompt": "Verbalize: “The expansion of the service helped.” (They … the service.)",
+"answer": "They expanded the service.",
+"why": ""
+}
+]
+}

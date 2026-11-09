@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Not only must the plan work, but it also must to be cheap.",
+"right": "Not only must the plan work, but it must also be cheap.",
+"why": "Português mantém a ordem direta; inglês inverte após Not only."
+},
+"mcq": [
+{
+"q": "Choose the pattern:",
+"opts": [
+"Not only the plan must work",
+"Not only must the plan work, but also be cheap.",
+"Not only work must plan"
+],
+"ans": 1,
+"why": "Not only must."
+},
+{
+"q": "Convince / persuade:",
+"opts": [
+"persuade someone to",
+"convince someone to",
+"persuade of"
+],
+"ans": 0,
+"why": "persuade to."
+},
+{
+"q": "Rarely + aux:",
+"opts": [
+"Rarely works it.",
+"Rarely it works.",
+"Rarely does it work."
+],
+"ans": 2,
+"why": "does."
+},
+{
+"q": "Cleft emphasis:",
+"opts": [
+"It is the idea that matters.",
+"It is that idea matters.",
+"It is the idea matters."
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "Not only the plan must work.",
+"right": "Not only must the plan work.",
+"why": "Inversão."
+},
+{
+"wrong": "Rarely it works.",
+"right": "Rarely does it work.",
+"why": "Inversão."
+},
+{
+"wrong": "He convinced her to resign.",
+"right": "He persuaded her to resign.",
+"why": "Ação."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “The plan must not only work but also be cheap.”",
+"answer": "Not only must the plan work, but it must also be cheap.",
+"why": ""
+},
+{
+"prompt": "Cleft: “The idea matters.”",
+"answer": "It is the idea that matters.",
+"why": ""
+},
+{
+"prompt": "Inverta: “It rarely works.”",
+"answer": "Rarely does it work.",
+"why": ""
+}
+]
+}

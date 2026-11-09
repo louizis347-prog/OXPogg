@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "told me to",
+"wrong": "My mother told me that I take the keys.",
+"right": "My mother told me to take the keys.",
+"why": "Em português “mandou que eu pegasse” usa que + subjuntivo. Em inglês, tell + pessoa + to + verbo; também Past Perfect para o fato anterior."
+},
+"mcq": [
+{
+"q": "She told me ___ the keys.",
+"opts": [
+"to take",
+"take",
+"taking"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "He left after he ___ the work.",
+"opts": [
+"finished",
+"had finished",
+"has finished"
+],
+"ans": 1,
+"why": "had finished."
+},
+{
+"q": "You ___ studied more (arrependimento).",
+"opts": [
+"should",
+"must",
+"should have"
+],
+"ans": 2,
+"why": "should have."
+},
+{
+"q": "Which verb takes “do”?",
+"opts": [
+"a mistake",
+"homework",
+"a cake"
+],
+"ans": 1,
+"why": "do homework."
+}
+],
+"fix": [
+{
+"wrong": "She told that I leave.",
+"right": "She told me to leave.",
+"why": "tell + pessoa + to."
+},
+{
+"wrong": "When I arrived, he left.",
+"right": "When I arrived, he had left.",
+"why": "Past Perfect."
+},
+{
+"wrong": "You should have went.",
+"right": "You should have gone.",
+"why": "gone."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Leave,” she said to me.",
+"answer": "She told me to leave.",
+"why": ""
+},
+{
+"prompt": "Reescreva com should have: “You didn’t study. That was a mistake.”",
+"answer": "You should have studied.",
+"why": ""
+},
+{
+"prompt": "Una: “He left. I arrived.” (Past Perfect, when)",
+"answer": "He had left when I arrived.",
+"why": ""
+}
+]
+}

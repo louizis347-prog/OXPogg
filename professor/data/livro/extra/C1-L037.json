@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "were com todos",
+"wrong": "Were I braver, I will ask.",
+"right": "Were I braver, I would ask.",
+"why": "O português diz “se eu fosse mais corajoso, perguntaria”; o brasileiro troca por will. Em inglês, hipótese irreal: would + base."
+},
+"mcq": [
+{
+"q": "Were I braver, I ___ ask.",
+"opts": [
+"will",
+"did",
+"would"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "___ it not for you, I would fail.",
+"opts": [
+"Were",
+"Was",
+"Had"
+],
+"ans": 0,
+"why": "Were it not for."
+},
+{
+"q": "If it ___ up to me,…",
+"opts": [
+"is",
+"were",
+"was"
+],
+"ans": 1,
+"why": "were."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Was she here, she will help.",
+"Were she here, she helps.",
+"Were he here, he would help."
+],
+"ans": 2,
+"why": "would."
+}
+],
+"fix": [
+{
+"wrong": "Were I braver, I will ask.",
+"right": "Were I braver, I would ask.",
+"why": "would."
+},
+{
+"wrong": "Was it not for you, I would fail.",
+"right": "Were it not for you, I would fail.",
+"why": "Were."
+},
+{
+"wrong": "Were I to went, I would ask.",
+"right": "Were I to go, I would ask.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If I were braver, I would ask.”",
+"answer": "Were I braver, I would ask.",
+"why": ""
+},
+{
+"prompt": "Use Were it not for: “Without you, I would fail.”",
+"answer": "Were it not for you, I would fail.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If he were here, he would help.”",
+"answer": "Were he here, he would help.",
+"why": ""
+}
+]
+}

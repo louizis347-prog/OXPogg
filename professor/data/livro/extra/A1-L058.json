@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "give + to",
+"wrong": "Give me to the book.",
+"right": "Give me the book.",
+"why": "O português usa \"dar a/para\" e o brasileiro leva a preposição junto; em inglês, give me + objeto não leva to."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Give to me the book.",
+"Give me to the book.",
+"Give me the book."
+],
+"ans": 2,
+"why": "Sem to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Give the book to Ana.",
+"Give the book Ana.",
+"Give to the book Ana."
+],
+"ans": 0,
+"why": "Com to após o objeto."
+},
+{
+"q": "“Dar um abraço” =",
+"opts": [
+"do a hug",
+"give a hug",
+"make a hug"
+],
+"ans": 1,
+"why": "Give."
+},
+{
+"q": "“Dar uma carona” =",
+"opts": [
+"take a ride",
+"make a ride",
+"give a ride"
+],
+"ans": 2,
+"why": "Give."
+}
+],
+"fix": [
+{
+"wrong": "She gives to me a gift.",
+"right": "She gives me a gift.",
+"why": "Sem to."
+},
+{
+"wrong": "Give the pen Tom.",
+"right": "Give the pen to Tom.",
+"why": "Com to."
+},
+{
+"wrong": "He do me a hug.",
+"right": "He gives me a hug.",
+"why": "Give."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com to: “Give Ana the book.”",
+"answer": "Give the book to Ana.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem to: “Give the pen to me.”",
+"answer": "Give me the pen.",
+"why": ""
+},
+{
+"prompt": "Use give: “She makes a hug.” (corrija)",
+"answer": "She gives a hug.",
+"why": ""
+}
+]
+}

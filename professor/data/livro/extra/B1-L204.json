@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector + oração",
+"wrong": "Although of the rain, we went out.",
+"right": "Although it rained, we went out.",
+"why": "Português “apesar da chuva”. Although pede sujeito + verbo; despite pede substantivo ou -ing."
+},
+"mcq": [
+{
+"q": "**___** it rained, we went out.",
+"opts": [
+"Although",
+"In spite",
+"Despite"
+],
+"ans": 0,
+"why": "Although + oração."
+},
+{
+"q": "**___** the rain, we went out.",
+"opts": [
+"Although",
+"Even though",
+"Despite"
+],
+"ans": 2,
+"why": "Despite + substantivo."
+},
+{
+"q": "Although he failed, he **___** trying.",
+"opts": [
+"keeping",
+"kept",
+"keep"
+],
+"ans": 1,
+"why": "Passado."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Although he was tired, he worked.",
+"Although he was tired but he worked.",
+"Although tired, but he worked."
+],
+"ans": 0,
+"why": "Sem but."
+}
+],
+"fix": [
+{
+"wrong": "Although he was tired, but he worked.",
+"right": "Although he was tired, he worked.",
+"why": "Sem but."
+},
+{
+"wrong": "Despite he failed, he tried.",
+"right": "Although he failed, he tried.",
+"why": "Despite + substantivo."
+},
+{
+"wrong": "Despite of the rain, we went.",
+"right": "Despite the rain, we went.",
+"why": "Despite sem of."
+}
+],
+"rewrite": [
+{
+"prompt": "Use although: “He failed. He kept trying.”",
+"answer": "Although he failed, he kept trying.",
+"why": ""
+},
+{
+"prompt": "Use despite: “It rained. We went out.” (the rain)",
+"answer": "Despite the rain, we went out.",
+"why": ""
+},
+{
+"prompt": "Use even though: “She was ill. She worked.”",
+"answer": "Even though she was ill, she worked.",
+"why": ""
+}
+]
+}

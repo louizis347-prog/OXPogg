@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "assistir",
+"wrong": "The judge asked me to assist the hearing.",
+"right": "The judge asked me to attend the hearing.",
+"why": "Em português “assistir a” é ver ou estar presente. Em inglês, assist significa ajudar; estar presente é attend."
+},
+"mcq": [
+{
+"q": "A rhetorical question that exposes vagueness:",
+"opts": [
+"What time is it?",
+"Where is the exit?",
+"How certain is “fairly”?"
+],
+"ans": 2,
+"why": "Expõe imprecisão."
+},
+{
+"q": "A euphemism softens...",
+"opts": [
+"a harsh fact",
+"a number",
+"a noun"
+],
+"ans": 0,
+"why": "Eufemismo."
+},
+{
+"q": "“I would not put a number on it” means...",
+"opts": [
+"It is zero",
+"I am unwilling to quantify",
+"It is large"
+],
+"ans": 1,
+"why": "Evita quantificar."
+},
+{
+"q": "Who speaks for the other side in court?",
+"opts": [
+"presiding judge",
+"witness",
+"opposing counsel"
+],
+"ans": 2,
+"why": "Advogado da parte contrária."
+}
+],
+"fix": [
+{
+"wrong": "The witness stand are empty.",
+"right": "The witness stand is empty.",
+"why": "Singular."
+},
+{
+"wrong": "Opposing counsel objected the question.",
+"right": "Opposing counsel objected to the question.",
+"why": "object to."
+},
+{
+"wrong": "Reasonably, fairly, quite — all hedges, isn’t it?",
+"right": "Reasonably, fairly, quite — all hedges, aren’t they?",
+"why": "Tag concordante."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com attend: “He was present at the hearing.”",
+"answer": "He attended the hearing.",
+"why": ""
+},
+{
+"prompt": "Reescreva com object to: “Counsel disagreed formally with the question.”",
+"answer": "Counsel objected to the question.",
+"why": ""
+},
+{
+"prompt": "Reescreva como eufemismo: “He lied.” (He was economical with…)",
+"answer": "He was economical with the truth.",
+"why": ""
+}
+]
+}

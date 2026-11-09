@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "disagree with",
+"wrong": "The lecturer disagrees the reading’s claim.",
+"right": "The lecturer disagrees with the reading’s claim.",
+"why": "Em português “discorda da afirmação” leva a. O aluno omite a preposição. Em inglês, disagree with."
+},
+"mcq": [
+{
+"q": "“The lecturer ___ the reading’s claim.”",
+"opts": [
+"challenges to",
+"challenges",
+"challenges with"
+],
+"ans": 1,
+"why": "Transitivo."
+},
+{
+"q": "“The lecturer disagrees ___ the reading.”",
+"opts": [
+"to",
+"of",
+"with"
+],
+"ans": 2,
+"why": "disagree with."
+},
+{
+"q": "“Second, … which ___ the reading.”",
+"opts": [
+"contradicts",
+"contradicts to",
+"is contradict"
+],
+"ans": 0,
+"why": "Transitivo."
+},
+{
+"q": "Closing:",
+"opts": [
+"First,",
+"Therefore, the lecturer…",
+"Whereas,"
+],
+"ans": 1,
+"why": "Fecho."
+}
+],
+"fix": [
+{
+"wrong": "The lecturer agrees to the reading.",
+"right": "The lecturer agrees with the reading.",
+"why": "agree with."
+},
+{
+"wrong": "The reading say that bias is vivid.",
+"right": "The reading says that bias is vivid.",
+"why": "-s."
+},
+{
+"wrong": "First, the lecturer argues that bias is silent, whereas the reading say not.",
+"right": "First, the lecturer argues that bias is silent, whereas the reading says not.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com disagree: “The lecturer does not agree the reading.” (disagrees)",
+"answer": "The lecturer disagrees with the reading.",
+"why": ""
+},
+{
+"prompt": "Reescreva com whereas: “The reading says X. The lecturer says Y.” (…, whereas…)",
+"answer": "The reading says X, whereas the lecturer says Y.",
+"why": ""
+},
+{
+"prompt": "Reescreva com contradicts: “The lecturer says the opposite of the reading.”",
+"answer": "The lecturer contradicts the reading.",
+"why": ""
+}
+]
+}

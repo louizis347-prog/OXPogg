@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "presente para futuro",
+"wrong": "On Friday I have dinner with Ana at eight.",
+"right": "On Friday I'm having dinner with Ana at eight.",
+"why": "Em português o presente simples serve ao futuro marcado; em inglês o presente simples é para horários, e combinações usam be + -ing."
+},
+"mcq": [
+{
+"q": "I ___ Ana tonight. (marcado)",
+"opts": [
+"am meeting",
+"meet",
+"will meeting"
+],
+"ans": 0,
+"why": "cont."
+},
+{
+"q": "We ___ dinner at 8 tomorrow.",
+"opts": [
+"having",
+"are having",
+"have to"
+],
+"ans": 1,
+"why": "arrangement."
+},
+{
+"q": "She ___ flying tomorrow.",
+"opts": [
+"will",
+"does",
+"is"
+],
+"ans": 2,
+"why": "be."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I seeing a doctor.",
+"I'm seeing a doctor.",
+"I see a doctor on Friday."
+],
+"ans": 1,
+"why": "be + -ing."
+}
+],
+"fix": [
+{
+"wrong": "I meet Ana tomorrow.",
+"right": "I'm meeting Ana tomorrow.",
+"why": "be + -ing."
+},
+{
+"wrong": "We having dinner.",
+"right": "We're having dinner.",
+"why": "be."
+},
+{
+"wrong": "She are leaving.",
+"right": "She is leaving.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro marcado: “I see him tonight.”",
+"answer": "I'm seeing him tonight.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You are leaving.”",
+"answer": "Are you leaving?",
+"why": ""
+},
+{
+"prompt": "Negativa: “They are coming.”",
+"answer": "They aren't coming.",
+"why": ""
+}
+]
+}

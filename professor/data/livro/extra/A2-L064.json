@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "keep + -ing",
+"wrong": "She keeps to work.",
+"right": "She keeps working.",
+"why": "Em português 'continua a trabalhar' usa infinitivo; keep + -ing significa continuar. Keep também é guardar."
+},
+"mcq": [
+{
+"q": "Please ___ quiet.",
+"opts": [
+"hold",
+"stay to",
+"keep"
+],
+"ans": 2,
+"why": "keep quiet."
+},
+{
+"q": "He keeps ___ late.",
+"opts": [
+"to come",
+"coming",
+"come"
+],
+"ans": 1,
+"why": "keep + -ing."
+},
+{
+"q": "Passado de keep:",
+"opts": [
+"kept",
+"keep",
+"keeped"
+],
+"ans": 0,
+"why": "kept."
+},
+{
+"q": "I ___ the receipt.",
+"opts": [
+"kepted",
+"keeped",
+"kept"
+],
+"ans": 2,
+"why": "kept."
+}
+],
+"fix": [
+{
+"wrong": "She keeped the keys.",
+"right": "She kept the keys.",
+"why": "kept."
+},
+{
+"wrong": "He keeps to talk.",
+"right": "He keeps talking.",
+"why": "-ing."
+},
+{
+"wrong": "We kept walk.",
+"right": "We kept walking.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I keep it.”",
+"answer": "I kept it.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She keeps. She works.”",
+"answer": "She keeps working.",
+"why": ""
+},
+{
+"prompt": "Passado: “He keeps the change.”",
+"answer": "He kept the change.",
+"why": ""
+}
+]
+}

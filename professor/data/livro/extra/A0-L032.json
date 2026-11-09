@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição de lugar",
+"wrong": "I am in home.",
+"right": "I am at home.",
+"why": "\"Em casa\" vira in home por tradução literal; a expressão fixa é at home."
+},
+"mcq": [
+{
+"q": "The books ___ on the desk.",
+"opts": [
+"is",
+"are",
+"be"
+],
+"ans": 1,
+"why": "Plural: are."
+},
+{
+"q": "Where ___ you?",
+"opts": [
+"do",
+"have",
+"are"
+],
+"ans": 2,
+"why": "Where are you?"
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She is in the kitchen.",
+"She is on the kitchen.",
+"She stays in kitchen."
+],
+"ans": 0,
+"why": "In the kitchen."
+},
+{
+"q": "He is ___ the library.",
+"opts": [
+"at home",
+"in",
+"to"
+],
+"ans": 1,
+"why": "Dentro do lugar: in."
+}
+],
+"fix": [
+{
+"wrong": "The keys is on the table.",
+"right": "The keys are on the table.",
+"why": "Plural: are."
+},
+{
+"wrong": "Tom stays in the office now.",
+"right": "Tom is in the office now.",
+"why": "Use be."
+},
+{
+"wrong": "She is in school.",
+"right": "She is at school.",
+"why": "Como lugar de estudo, usa-se at school."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “Mia is at school.”",
+"answer": "Is Mia at school?",
+"why": ""
+},
+{
+"prompt": "Negue: “They are in the park.” (are not)",
+"answer": "They are not in the park.",
+"why": ""
+},
+{
+"prompt": "Troque para plural: “The book is on the table.”",
+"answer": "The books are on the table.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição + -ing",
+"wrong": "I'm good in cook.",
+"right": "I'm good at cooking.",
+"why": "Em português 'bom em cozinhar' usa em + infinitivo; em inglês a preposição é at e o verbo vai em -ing."
+},
+"mcq": [
+{
+"q": "I'm interested ___ learning.",
+"opts": [
+"on",
+"of",
+"in"
+],
+"ans": 2,
+"why": "in."
+},
+{
+"q": "He's afraid ___ flying.",
+"opts": [
+"for",
+"of",
+"about"
+],
+"ans": 1,
+"why": "of."
+},
+{
+"q": "Thanks ___ helping.",
+"opts": [
+"for",
+"of",
+"to"
+],
+"ans": 0,
+"why": "for."
+},
+{
+"q": "She's good ___ drawing.",
+"opts": [
+"in",
+"at",
+"on"
+],
+"ans": 1,
+"why": "at."
+}
+],
+"fix": [
+{
+"wrong": "I'm good in singing.",
+"right": "I'm good at singing.",
+"why": "at."
+},
+{
+"wrong": "She's afraid to fly.",
+"right": "She's afraid of flying.",
+"why": "of -ing."
+},
+{
+"wrong": "He left without say goodbye.",
+"right": "He left without saying goodbye.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I'm tired. I wait.” com of",
+"answer": "I'm tired of waiting.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Thank you. You call.” com for",
+"answer": "Thank you for calling.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He left. He didn't say bye.” com without",
+"answer": "He left without saying bye.",
+"why": ""
+}
+]
+}

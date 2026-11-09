@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal + base",
+"wrong": "He should goes home.",
+"right": "He should go home.",
+"why": "O português conjuga o verbo depois do auxiliar ('deve ir'); em inglês modais não mudam e o verbo fica na base."
+},
+"mcq": [
+{
+"q": "She ___ study more.",
+"opts": [
+"shoulds",
+"is should",
+"should"
+],
+"ans": 2,
+"why": "should."
+},
+{
+"q": "You ___ park here. (proibido)",
+"opts": [
+"aren't must",
+"mustn't",
+"don't must"
+],
+"ans": 1,
+"why": "mustn't."
+},
+{
+"q": "Pergunta: ___ I come in?",
+"opts": [
+"Am",
+"Could",
+"Do"
+],
+"ans": 1,
+"why": "could."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"You should rest.",
+"You should to rest.",
+"You should resting."
+],
+"ans": 0,
+"why": "base."
+}
+],
+"fix": [
+{
+"wrong": "You should to sleep.",
+"right": "You should sleep.",
+"why": "sem to."
+},
+{
+"wrong": "Could you helps me?",
+"right": "Could you help me?",
+"why": "base."
+},
+{
+"wrong": "Our boss musts leave now.",
+"right": "Our boss must leave now.",
+"why": "modal sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Aconselhe: “You rest.” com should",
+"answer": "You should rest.",
+"why": ""
+},
+{
+"prompt": "Pedido com could: “Help me.”",
+"answer": "Could you help me?",
+"why": ""
+},
+{
+"prompt": "Obrigação: “She goes.” com must",
+"answer": "She must go.",
+"why": ""
+}
+]
+}

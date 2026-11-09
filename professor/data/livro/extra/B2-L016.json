@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Maya is waiting here since breakfast.",
+"right": "Maya has been waiting here since breakfast.",
+"why": "Português usa o presente com desde (“espera desde”). Inglês exige present perfect continuous."
+},
+"mcq": [
+{
+"q": "Kai **___** sleeping for ten hours.",
+"opts": [
+"has been",
+"is been",
+"was"
+],
+"ans": 0,
+"why": "Has been."
+},
+{
+"q": "When I woke up, the storm **___** raging all night.",
+"opts": [
+"had been",
+"has been",
+"is"
+],
+"ans": 0,
+"why": "Past perfect continuous."
+},
+{
+"q": "Heat stops workers **___** concentrating.",
+"opts": [
+"from",
+"of",
+"to"
+],
+"ans": 0,
+"why": "From."
+},
+{
+"q": "Which means a long process up to now?",
+"opts": [
+"will be growing",
+"grew",
+"has been growing"
+],
+"ans": 2,
+"why": "PPC."
+}
+],
+"fix": [
+{
+"wrong": "The kids are playing since lunch.",
+"right": "The kids have been playing since lunch.",
+"why": "PPC."
+},
+{
+"wrong": "Fog prevents drivers to see.",
+"right": "Fog prevents drivers from seeing.",
+"why": "From + -ing."
+},
+{
+"wrong": "The river had flooded for days when help came.",
+"right": "The river had been flooding for days when help came.",
+"why": "Continuous."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Maya waits here since breakfast.” (has been)",
+"answer": "Maya has been waiting here since breakfast.",
+"why": ""
+},
+{
+"prompt": "Passado anterior: “We have been walking for hours.” (when it rained) (had)",
+"answer": "We had been walking for hours when it rained.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The smoke prevents me. I breathe.” (from)",
+"answer": "The smoke prevents me from breathing.",
+"why": ""
+}
+]
+}

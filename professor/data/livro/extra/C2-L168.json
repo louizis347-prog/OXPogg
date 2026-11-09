@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo errado",
+"wrong": "The sun asked gentle, and the words stung as a verdict.",
+"right": "The sun asked gently, and the words stung like a verdict.",
+"why": "Português usa adjetivo no lugar do advérbio e “como” sem diferença; em inglês gently e like + substantivo."
+},
+"mcq": [
+{
+"q": "Personification:",
+"opts": [
+"the sun gentle",
+"the sun asked, gently",
+"the sun was gentle asking"
+],
+"ans": 1,
+"why": "Voz ao abstrato."
+},
+{
+"q": "Which is a correct simile about words?",
+"opts": [
+"stung verdict",
+"stung as verdict",
+"stung like a verdict"
+],
+"ans": 2,
+"why": "like."
+},
+{
+"q": "Adverb of gentle:",
+"opts": [
+"gentle",
+"gentlely",
+"gently"
+],
+"ans": 2,
+"why": "gently."
+},
+{
+"q": "Personification gives…",
+"opts": [
+"human traits to things",
+"dates",
+"numbers"
+],
+"ans": 0,
+"why": "Humaniza."
+}
+],
+"fix": [
+{
+"wrong": "It stung as a verdict.",
+"right": "It stung like a verdict.",
+"why": "like + nome."
+},
+{
+"wrong": "The sun asked gentle.",
+"right": "The sun asked gently.",
+"why": "Advérbio."
+},
+{
+"wrong": "The wind whisper at night.",
+"right": "The wind whispered at night.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Símile: “The words were a verdict.”",
+"answer": "The words were like a verdict.",
+"why": ""
+},
+{
+"prompt": "Personifique: “The sun rose slowly.” (asked)",
+"answer": "The sun asked slowly.",
+"why": ""
+},
+{
+"prompt": "Passado: “The words sting like a verdict.”",
+"answer": "The words stung like a verdict.",
+"why": ""
+}
+]
+}

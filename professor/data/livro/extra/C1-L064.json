@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ritmo e pausa",
+"wrong": "Speakers pause after every word.",
+"right": "Speakers pause between groups of four to seven words.",
+"why": "Em português falamos em ritmo silábico e tendemos a separar cada palavra. Em inglês, agrupe 4 a 7 palavras e acentue as de conteúdo."
+},
+"mcq": [
+{
+"q": "A thought group has about…",
+"opts": [
+"4–7 words",
+"1 word",
+"20 words"
+],
+"ans": 0,
+"why": "4–7."
+},
+{
+"q": "Content words get…",
+"opts": [
+"no weight",
+"stress",
+"silence"
+],
+"ans": 1,
+"why": "Acento."
+},
+{
+"q": "Pause…",
+"opts": [
+"between all words",
+"never",
+"between thought groups"
+],
+"ans": 2,
+"why": "Grupos."
+},
+{
+"q": "Which is better?",
+"opts": [
+"In academic talks / speakers pause.",
+"In / academic / talks / speakers / pause.",
+"In academic talks speakers pause no."
+],
+"ans": 0,
+"why": "Grupos."
+}
+],
+"fix": [
+{
+"wrong": "Speakers pause the every word.",
+"right": "Speakers pause at every word.",
+"why": "at."
+},
+{
+"wrong": "Speaker pause after ideas.",
+"right": "Speakers pause after ideas.",
+"why": "Plural."
+},
+{
+"wrong": "In academic talks speakers pause.",
+"right": "In academic talks, speakers pause.",
+"why": "Vírgula marca pausa."
+}
+],
+"rewrite": [
+{
+"prompt": "Use a vírgula: “In academic talks speakers pause.”",
+"answer": "In academic talks, speakers pause.",
+"why": ""
+},
+{
+"prompt": "Plural: “A speaker pauses after ideas.”",
+"answer": "Speakers pause after ideas.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Speakers pause often.”",
+"answer": "Speakers do not pause often.",
+"why": ""
+}
+]
+}

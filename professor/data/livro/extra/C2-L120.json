@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "concordância",
+"wrong": "My opponent claim that costs fall.",
+"right": "My opponent claims that costs fall.",
+"why": "Português não marca -s; em inglês o presente da terceira pessoa exige -s."
+},
+"mcq": [
+{
+"q": "State a claim:",
+"opts": [
+"My opponent claiming",
+"My opponent claim that…",
+"My opponent claims that…"
+],
+"ans": 2,
+"why": "-s."
+},
+{
+"q": "Label a flaw:",
+"opts": [
+"This overlook…",
+"This overlooks…",
+"This overlooking"
+],
+"ans": 1,
+"why": "-s."
+},
+{
+"q": "Assume vs presume:",
+"opts": [
+"This assuming…",
+"This assumes…",
+"This assumes to…"
+],
+"ans": 1,
+"why": "assumes."
+},
+{
+"q": "Claims that costs…",
+"opts": [
+"fall",
+"to fall",
+"falls"
+],
+"ans": 0,
+"why": "Plural."
+}
+],
+"fix": [
+{
+"wrong": "This assume that costs fall.",
+"right": "This assumes that costs fall.",
+"why": "-s."
+},
+{
+"wrong": "He claims to costs fall.",
+"right": "He claims that costs fall.",
+"why": "that."
+},
+{
+"wrong": "This overlooks to the data.",
+"right": "This overlooks the data.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Terceira pessoa: “They claim that costs fall.”",
+"answer": "He claims that costs fall.",
+"why": ""
+},
+{
+"prompt": "Passado: “This overlooks the data.”",
+"answer": "This overlooked the data.",
+"why": ""
+},
+{
+"prompt": "Negativo: “This assumes costs fall.”",
+"answer": "This does not assume costs fall.",
+"why": ""
+}
+]
+}

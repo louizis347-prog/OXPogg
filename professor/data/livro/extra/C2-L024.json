@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "smell of",
+"wrong": "It smells ripe plum and cedar.",
+"right": "It smells of ripe plum and cedar.",
+"why": "Em português “cheira a ameixa” e o aluno suprime a preposição. Em inglês, smell of/like + substantivo."
+},
+"mcq": [
+{
+"q": "“Full-bodied” describes...",
+"opts": [
+"weight in the mouth",
+"price",
+"color only"
+],
+"ans": 0,
+"why": "Corpo."
+},
+{
+"q": "“Supple tannins” are...",
+"opts": [
+"harsh",
+"soft",
+"absent"
+],
+"ans": 1,
+"why": "Macios."
+},
+{
+"q": "“Well integrated” praises...",
+"opts": [
+"price",
+"age",
+"balance"
+],
+"ans": 2,
+"why": "Equilíbrio."
+},
+{
+"q": "On the nose = ...",
+"opts": [
+"the aroma",
+"the taste",
+"the color"
+],
+"ans": 0,
+"why": "Aroma."
+}
+],
+"fix": [
+{
+"wrong": "The wine have bright acidity.",
+"right": "The wine has bright acidity.",
+"why": "has."
+},
+{
+"wrong": "It tastes like of cedar.",
+"right": "It tastes of cedar.",
+"why": "Uma preposição."
+},
+{
+"wrong": "This wine is very approachable and sublime too much.",
+"right": "This wine is approachable and utterly sublime.",
+"why": "Natural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com smells of: “The aroma is plum.”",
+"answer": "It smells of plum.",
+"why": ""
+},
+{
+"prompt": "Reescreva com tastes of: “The flavor is cedar.”",
+"answer": "It tastes of cedar.",
+"why": ""
+},
+{
+"prompt": "Reescreva com approachable: “It is easy to enjoy.”",
+"answer": "It is approachable.",
+"why": ""
+}
+]
+}

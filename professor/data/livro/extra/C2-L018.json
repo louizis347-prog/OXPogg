@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "had + pp",
+"wrong": "Had firms did so, prices would be lower.",
+"right": "Had firms done so, prices would be lower.",
+"why": "Em português o particípio de “fazer” é feito/fizeram e o aluno mistura formas. Em inglês, depois de Had use o particípio: done."
+},
+"mcq": [
+{
+"q": "“___ doctors to explain, patients would understand.”",
+"opts": [
+"Were",
+"Had",
+"Did"
+],
+"ans": 0,
+"why": "Were … to."
+},
+{
+"q": "A police statement of unproved crime:",
+"opts": [
+"assert",
+"allege",
+"claim to know"
+],
+"ans": 1,
+"why": "allege."
+},
+{
+"q": "A firm statement of belief:",
+"opts": [
+"allege",
+"reportedly",
+"assert"
+],
+"ans": 2,
+"why": "assert."
+},
+{
+"q": "Mixed: “If I had saved, I ___ rich now.”",
+"opts": [
+"would be",
+"would have been",
+"am"
+],
+"ans": 0,
+"why": "Misto."
+}
+],
+"fix": [
+{
+"wrong": "Were doctors explain, patients would understand.",
+"right": "Were doctors to explain, patients would understand.",
+"why": "to."
+},
+{
+"wrong": "Police assert he stole it, without proof.",
+"right": "Police allege he stole it, without proof.",
+"why": "allege."
+},
+{
+"wrong": "If I would save, I would be rich.",
+"right": "If I saved, I would be rich.",
+"why": "Sem would no if."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If firms had done so, prices would be lower.”",
+"answer": "Had firms done so, prices would be lower.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If doctors were to explain, patients would understand.”",
+"answer": "Were doctors to explain, patients would understand.",
+"why": ""
+},
+{
+"prompt": "Reescreva com assert: “The author firmly says it works.”",
+"answer": "The author asserts that it works.",
+"why": ""
+}
+]
+}

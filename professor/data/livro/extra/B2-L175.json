@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato: experience",
+"wrong": "The scientist had an experience in the lab.",
+"right": "The scientist did an experiment in the lab.",
+"why": "Em português \"experiência\" é experimento. Em inglês, experience = vivência; o teste é experiment."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"experiment",
+"research",
+"result"
+],
+"ans": 1,
+"why": "research."
+},
+{
+"q": "experiment =",
+"opts": [
+"experiência de vida",
+"experto",
+"experimento"
+],
+"ans": 2,
+"why": "falso cognato."
+},
+{
+"q": "Complete: The study **___** that it works.",
+"opts": [
+"suggests",
+"suggest me",
+"tell"
+],
+"ans": 0,
+"why": "suggest that."
+},
+{
+"q": "Qual é passiva?",
+"opts": [
+"They showed.",
+"It shows.",
+"It was shown."
+],
+"ans": 2,
+"why": "was shown."
+}
+],
+"fix": [
+{
+"wrong": "The researchs are new.",
+"right": "The research is new.",
+"why": "Incontável."
+},
+{
+"wrong": "They made an experiment.",
+"right": "They did an experiment.",
+"why": "do an experiment."
+},
+{
+"wrong": "The team told that it works.",
+"right": "The team said that it works.",
+"why": "said that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com suggest that: “Data show a link.”",
+"answer": "The data suggest that there is a link.",
+"why": ""
+},
+{
+"prompt": "Reescreva com non-defining: “Dr. Lee is my aunt. She studies cells.”",
+"answer": "Dr. Lee, who studies cells, is my aunt.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “Scientists tested the drug.”",
+"answer": "The drug was tested.",
+"why": ""
+}
+]
+}

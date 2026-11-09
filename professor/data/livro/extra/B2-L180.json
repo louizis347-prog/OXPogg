@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hold on",
+"wrong": "Wait a second, hold.",
+"right": "Hold on a second.",
+"why": "O brasileiro diz \"segura aí\" e omite on. Em inglês, esperar um pouco é hold on."
+},
+"mcq": [
+{
+"q": "hold on =",
+"opts": [
+"esperar",
+"largar",
+"segurar com força"
+],
+"ans": 0,
+"why": "hold on."
+},
+{
+"q": "hold back =",
+"opts": [
+"avançar",
+"conter",
+"pegar"
+],
+"ans": 1,
+"why": "hold back."
+},
+{
+"q": "hold up =",
+"opts": [
+"esperar",
+"largar",
+"atrasar; assaltar"
+],
+"ans": 2,
+"why": "hold up."
+},
+{
+"q": "hold a meeting =",
+"opts": [
+"segurar",
+"realizar",
+"cancelar"
+],
+"ans": 1,
+"why": "hold a meeting."
+}
+],
+"fix": [
+{
+"wrong": "He holded my hand.",
+"right": "He held my hand.",
+"why": "held."
+},
+{
+"wrong": "They hold up the meeting yesterday.",
+"right": "They held the meeting yesterday.",
+"why": "hold a meeting."
+},
+{
+"wrong": "Hold the line please on.",
+"right": "Hold on, please.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “She holds my hand.”",
+"answer": "She held my hand.",
+"why": ""
+},
+{
+"prompt": "Reescreva com hold on: “Wait a second.”",
+"answer": "Hold on a second.",
+"why": ""
+},
+{
+"prompt": "Reescreva com hold back: “He kept his tears in.”",
+"answer": "He held back his tears.",
+"why": ""
+}
+]
+}

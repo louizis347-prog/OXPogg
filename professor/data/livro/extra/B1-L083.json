@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dedução + passado",
+"wrong": "I think it must have been hopeless. I repair it in an hour.",
+"right": "I thought it must be hopeless. I repaired it in an hour.",
+"why": "Em português o pretérito (“consertei”) é flexionado; o brasileiro esquece o -ed. Em dedução, must be descreve o presente de uma impressão."
+},
+"mcq": [
+{
+"q": "It ___ be hopeless (dedução).",
+"opts": [
+"may to",
+"must",
+"does"
+],
+"ans": 1,
+"why": "must be."
+},
+{
+"q": "I ___ it in an hour.",
+"opts": [
+"repair",
+"repairing",
+"repaired"
+],
+"ans": 2,
+"why": "Passado."
+},
+{
+"q": "Today a customer ___ a broken phone.",
+"opts": [
+"brought",
+"bringed",
+"bring"
+],
+"ans": 0,
+"why": "brought."
+},
+{
+"q": "Which is correct? (dedução + passado)",
+"opts": [
+"It must be hopeless.",
+"It must to be hopeless.",
+"It musts be hopeless."
+],
+"ans": 0,
+"why": "Sem to."
+}
+],
+"fix": [
+{
+"wrong": "I repair it in an hour yesterday.",
+"right": "I repaired it in an hour yesterday.",
+"why": "Passado."
+},
+{
+"wrong": "It must to be old.",
+"right": "It must be old.",
+"why": "Sem to."
+},
+{
+"wrong": "A customer bringed it.",
+"right": "A customer brought it.",
+"why": "brought."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “I repair it in an hour.”",
+"answer": "I repaired it in an hour.",
+"why": ""
+},
+{
+"prompt": "Reescreva com dedução: “I am sure it is hopeless.”",
+"answer": "It must be hopeless.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “A customer brings a phone.”",
+"answer": "A customer brought a phone.",
+"why": ""
+}
+]
+}

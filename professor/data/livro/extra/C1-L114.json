@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "em account",
+"wrong": "League tables do not take it in account.",
+"right": "League tables do not take it into account.",
+"why": "Em português “levar em conta” usa em. Em inglês, a preposição é into."
+},
+"mcq": [
+{
+"q": "We ask you to take this ___ consideration.",
+"opts": [
+"in",
+"at",
+"into"
+],
+"ans": 2,
+"why": "into."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"take the cost into account",
+"take into account the cost it",
+"take cost in the account"
+],
+"ans": 0,
+"why": "take X into account."
+},
+{
+"q": "Para pedido formal, use…",
+"opts": [
+"Consider it please to.",
+"We ask you to take this into consideration.",
+"Take it in mind."
+],
+"ans": 1,
+"why": "Formal."
+},
+{
+"q": "Critics say rankings ignore context: they don’t ___ it into account.",
+"opts": [
+"make",
+"do",
+"take"
+],
+"ans": 2,
+"why": "take."
+}
+],
+"fix": [
+{
+"wrong": "They did not take it in consideration.",
+"right": "They did not take it into consideration.",
+"why": "into."
+},
+{
+"wrong": "Please take in consideration our needs.",
+"right": "Please take our needs into consideration.",
+"why": "Ordem."
+},
+{
+"wrong": "Tables do not takes it into account.",
+"right": "Tables do not take it into account.",
+"why": "Base após do not."
+}
+],
+"rewrite": [
+{
+"prompt": "Formal: “Please consider our needs.” (take … into consideration)",
+"answer": "Please take our needs into consideration.",
+"why": ""
+},
+{
+"prompt": "Crítica: “Tables ignore it.” (do not take … into account)",
+"answer": "Tables do not take it into account.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Tables take context into account.”",
+"answer": "Context is taken into account by tables.",
+"why": ""
+}
+]
+}

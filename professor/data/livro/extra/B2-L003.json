@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Emissions are falling since 2010.",
+"right": "Emissions have been falling since 2010.",
+"why": "O português usa presente com desde; o inglês exige present perfect continuous."
+},
+"mcq": [
+{
+"q": "Emissions **___** falling for years.",
+"opts": [
+"were",
+"are",
+"have been"
+],
+"ans": 2,
+"why": "Have been."
+},
+{
+"q": "Foco no processo:",
+"opts": [
+"have been rising",
+"rose",
+"rises"
+],
+"ans": 0,
+"why": "Continuous."
+},
+{
+"q": "How long **___** it been raining?",
+"opts": [
+"has",
+"does",
+"is"
+],
+"ans": 0,
+"why": "Has."
+},
+{
+"q": "Since:",
+"opts": [
+"2010",
+"a long time",
+"ten years"
+],
+"ans": 0,
+"why": "Ponto."
+}
+],
+"fix": [
+{
+"wrong": "It is raining since morning.",
+"right": "It has been raining since morning.",
+"why": "Present perfect continuous."
+},
+{
+"wrong": "Prices have been rised.",
+"right": "Prices have been rising.",
+"why": "-ing."
+},
+{
+"wrong": "Emissions has been falling.",
+"right": "Emissions have been falling.",
+"why": "Plural: have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Emissions fall. (2010)”",
+"answer": "Emissions have been falling since 2010.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “Prices have been rising.” (How long)",
+"answer": "How long have prices been rising?",
+"why": ""
+},
+{
+"prompt": "Negativa: “It has been raining.”",
+"answer": "It hasn’t been raining.",
+"why": ""
+}
+]
+}

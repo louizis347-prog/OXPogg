@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "First, we do a plan, after, we write.",
+"right": "First, make a plan. Next, write the draft.",
+"why": "Português usa “depois” para sequência; em inglês Next/Then/Finally, e instrução vai no imperativo."
+},
+"mcq": [
+{
+"q": "Sequence:",
+"opts": [
+"Firstly … secondly of",
+"First, … Next, … Then, … Finally, …",
+"First, … after … lastly"
+],
+"ans": 1,
+"why": "Conectores."
+},
+{
+"q": "Which instruction about the story is correct?",
+"opts": [
+"Trim the story.",
+"You trim",
+"Trimming the story."
+],
+"ans": 0,
+"why": "Base."
+},
+{
+"q": "Fold in…",
+"opts": [
+"say",
+"incorporate",
+"remove"
+],
+"ans": 1,
+"why": "Incorporar."
+},
+{
+"q": "Last step:",
+"opts": [
+"Next",
+"Finally",
+"Firstly"
+],
+"ans": 1,
+"why": "Finally."
+}
+],
+"fix": [
+{
+"wrong": "Next, you trims the story.",
+"right": "Next, trim the story.",
+"why": "Imperativo."
+},
+{
+"wrong": "First we make a plan, after we write.",
+"right": "First, make a plan. Next, write.",
+"why": "Conectores."
+},
+{
+"wrong": "Finally, to add the complication.",
+"right": "Finally, add the complication.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Imperativo: “You trim the story.”",
+"answer": "Trim the story.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Trim the story.”",
+"answer": "Don’t trim the story.",
+"why": ""
+},
+{
+"prompt": "Troque “Finally” por “Next”: “Finally, add the complication.”",
+"answer": "Next, add the complication.",
+"why": ""
+}
+]
+}

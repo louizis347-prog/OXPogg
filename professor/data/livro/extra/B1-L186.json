@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + infinitivo",
+"wrong": "She refuses giving up.",
+"right": "She refuses to give up.",
+"why": "O brasileiro usa -ing depois de verbos como “recusar”. Decide, hope, refuse, promise pedem to + base."
+},
+"mcq": [
+{
+"q": "He decides **___** the case.",
+"opts": [
+"investigating",
+"investigate",
+"to investigate"
+],
+"ans": 2,
+"why": "Decide to."
+},
+{
+"q": "She hopes **___** soon.",
+"opts": [
+"winning",
+"win",
+"to win"
+],
+"ans": 2,
+"why": "Hope to."
+},
+{
+"q": "They refuse **___**.",
+"opts": [
+"leave",
+"to leave",
+"leaving"
+],
+"ans": 1,
+"why": "Refuse to."
+},
+{
+"q": "Negação: He decided **___** go.",
+"opts": [
+"not to",
+"no to",
+"to not"
+],
+"ans": 0,
+"why": "Not to."
+}
+],
+"fix": [
+{
+"wrong": "She hopes winning.",
+"right": "She hopes to win.",
+"why": "Hope to."
+},
+{
+"wrong": "He refused answering.",
+"right": "He refused to answer.",
+"why": "Refuse to."
+},
+{
+"wrong": "They decide to not go.",
+"right": "They decide not to go.",
+"why": "Not antes de to."
+}
+],
+"rewrite": [
+{
+"prompt": "Terceira pessoa: “I refuse to give up.” (She…)",
+"answer": "She refuses to give up.",
+"why": ""
+},
+{
+"prompt": "Passado: “He decides to investigate.”",
+"answer": "He decided to investigate.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I decided to go.” (not to)",
+"answer": "I decided not to go.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem direta",
+"wrong": "She asked me where was the station.",
+"right": "She asked me where the station was.",
+"why": "Em português mantemos ordem de pergunta (\"onde fica\"). Em inglês, pergunta indireta tem ordem de afirmativa, sem inversão."
+},
+"mcq": [
+{
+"q": "\"Are you ready?\" reportada:",
+"opts": [
+"She asked was I ready.",
+"She asked that I was ready.",
+"She asked if I was ready."
+],
+"ans": 2,
+"why": "if + sujeito + verbo."
+},
+{
+"q": "Qual verbo usa objeto direto de pessoa?",
+"opts": [
+"told",
+"said",
+"suggested"
+],
+"ans": 0,
+"why": "tell + pessoa."
+},
+{
+"q": "Complete: I'd rather **___** at home.",
+"opts": [
+"to stay",
+"stay",
+"staying"
+],
+"ans": 1,
+"why": "would rather + base."
+},
+{
+"q": "**shouldn't have** + particípio expressa...",
+"opts": [
+"arrependimento: não era para ter feito",
+"obrigação no futuro",
+"habilidade no passado"
+],
+"ans": 0,
+"why": "shouldn't have + particípio lamenta algo que foi feito."
+}
+],
+"fix": [
+{
+"wrong": "They told me don't worry.",
+"right": "They told me not to worry.",
+"why": "not to."
+},
+{
+"wrong": "They explained me the problem.",
+"right": "They explained the problem to me.",
+"why": "explain to."
+},
+{
+"wrong": "He prefers swim to run.",
+"right": "He prefers swimming to running.",
+"why": "-ing to -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com told: “‘Wait here,’ he said to me.”",
+"answer": "He told me to wait there.",
+"why": ""
+},
+{
+"prompt": "Reescreva com would rather: “I prefer to stay in.”",
+"answer": "I would rather stay in.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “We should have waited.”",
+"answer": "We shouldn't have waited.",
+"why": ""
+}
+]
+}

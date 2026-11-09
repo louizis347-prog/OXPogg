@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "planejar relatório",
+"wrong": "The report talk about why was the study done.",
+"right": "The report explains why the study was done.",
+"why": "Em perguntas indiretas o brasileiro mantém a ordem de pergunta. Em inglês, ordem direta: why + sujeito + verbo."
+},
+"mcq": [
+{
+"q": "Introduction answers…",
+"opts": [
+"what next",
+"why the study was done",
+"how many"
+],
+"ans": 1,
+"why": "Objetivo."
+},
+{
+"q": "The report explains why the study ___ done.",
+"opts": [
+"did",
+"were",
+"was"
+],
+"ans": 2,
+"why": "Ordem direta."
+},
+{
+"q": "Method tells…",
+"opts": [
+"who, how many, how",
+"only results",
+"only advice"
+],
+"ans": 0,
+"why": "Método."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I will explain why failed it.",
+"I will explain why it failed.",
+"I will explain why did it fail."
+],
+"ans": 1,
+"why": "Ordem direta."
+}
+],
+"fix": [
+{
+"wrong": "I will explain why did it fail.",
+"right": "I will explain why it failed.",
+"why": "Ordem direta."
+},
+{
+"wrong": "The report say how many participated.",
+"right": "The report says how many participated.",
+"why": "-s."
+},
+{
+"wrong": "We explain how was it done.",
+"right": "We explain how it was done.",
+"why": "Ordem direta."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne indireta: “Why did it fail?” (I will explain…)",
+"answer": "I will explain why it failed.",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “How was it done?” (The report explains…)",
+"answer": "The report explains how it was done.",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Who took part?” (The report states…)",
+"answer": "The report states who took part.",
+"why": ""
+}
+]
+}

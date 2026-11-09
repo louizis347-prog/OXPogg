@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "it para coisas",
+"wrong": "The book is new. He is blue.",
+"right": "The book is new. It is blue.",
+"why": "Em português tudo tem gênero (ele/ela); em inglês, objetos e animais no singular usam it."
+},
+"mcq": [
+{
+"q": "Tom and Ana = ?",
+"opts": [
+"they",
+"we",
+"she"
+],
+"ans": 0,
+"why": "Falando DE duas pessoas: they."
+},
+{
+"q": "Tom and I = ?",
+"opts": [
+"they",
+"we",
+"you"
+],
+"ans": 1,
+"why": "Eu + outra pessoa = we."
+},
+{
+"q": "\"Is a teacher.\" What is missing?",
+"opts": [
+"The article",
+"Nothing",
+"The subject (She/He)"
+],
+"ans": 2,
+"why": "O sujeito é obrigatório em inglês."
+},
+{
+"q": "Talking TO one friend: **___ are kind.**",
+"opts": [
+"You",
+"He",
+"They"
+],
+"ans": 0,
+"why": "Com quem ouve, you."
+}
+],
+"fix": [
+{
+"wrong": "Ana and I is friends.",
+"right": "Ana and I are friends.",
+"why": "Dois sujeitos: are."
+},
+{
+"wrong": "Tom is my brother. She is tall.",
+"right": "Tom is my brother. He is tall.",
+"why": "Tom é homem: he."
+},
+{
+"wrong": "The books are new. It are blue.",
+"right": "The books are new. They are blue.",
+"why": "Plural: they."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por pronome: “Leo and Ana are here.”",
+"answer": "They are here.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “The cat is small.”",
+"answer": "It is small.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “Tom and I are late.”",
+"answer": "We are late.",
+"why": ""
+}
+]
+}

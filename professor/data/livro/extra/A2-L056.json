@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "as ... as",
+"wrong": "He is so tall as me.",
+"right": "He is as tall as me.",
+"why": "Em português 'tão alto quanto/como' mistura palavras; em inglês é as ... as."
+},
+"mcq": [
+{
+"q": "She is ___ as me.",
+"opts": [
+"tall",
+"as tall",
+"so tall"
+],
+"ans": 1,
+"why": "as ... as."
+},
+{
+"q": "This is not ___ big as that.",
+"opts": [
+"more",
+"so",
+"as"
+],
+"ans": 2,
+"why": "not as ... as."
+},
+{
+"q": "He is ___ than her.",
+"opts": [
+"more old",
+"oldest",
+"older"
+],
+"ans": 2,
+"why": "-er."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"It's more cheap than mine.",
+"It's cheaper than mine.",
+"It's cheap than mine."
+],
+"ans": 1,
+"why": "-er than."
+}
+],
+"fix": [
+{
+"wrong": "It is more expensive that mine.",
+"right": "It is more expensive than mine.",
+"why": "than."
+},
+{
+"wrong": "He is so fast as me.",
+"right": "He is as fast as me.",
+"why": "as ... as."
+},
+{
+"wrong": "She is more young.",
+"right": "She is younger.",
+"why": "-er."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com as ... as: “He is tall. I am tall.”",
+"answer": "He is as tall as me.",
+"why": ""
+},
+{
+"prompt": "Negativa: “This is as big as that.”",
+"answer": "This isn't as big as that.",
+"why": ""
+},
+{
+"prompt": "Comparativo: “She is young. (than me)”",
+"answer": "She is younger than me.",
+"why": ""
+}
+]
+}

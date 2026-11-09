@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "aim of / objetivo",
+"wrong": "The aim of this report is describe the failure.",
+"right": "The aim of this report is to describe the failure.",
+"why": "Em português basta “é descrever”. Em inglês, após is, use to + base."
+},
+"mcq": [
+{
+"q": "The aim of this report ___ to describe the failure.",
+"opts": [
+"are",
+"does",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "Findings should be…",
+"opts": [
+"facts and data",
+"opinions",
+"a title"
+],
+"ans": 0,
+"why": "Fatos e dados."
+},
+{
+"q": "Which is formal?",
+"opts": [
+"Let’s talk about it.",
+"This report describes the failure.",
+"I wanna tell you about the failure."
+],
+"ans": 1,
+"why": "Formal."
+},
+{
+"q": "The survey ___ that 60% agreed.",
+"opts": [
+"founded",
+"finded",
+"found"
+],
+"ans": 2,
+"why": "found."
+}
+],
+"fix": [
+{
+"wrong": "The aim is describe the failure.",
+"right": "The aim is to describe the failure.",
+"why": "to."
+},
+{
+"wrong": "The survey founded that 60% agreed.",
+"right": "The survey found that 60% agreed.",
+"why": "found."
+},
+{
+"wrong": "This report describe the failure.",
+"right": "This report describes the failure.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I will describe the failure.” (The aim of this report…)",
+"answer": "The aim of this report is to describe the failure.",
+"why": ""
+},
+{
+"prompt": "Passado: “The survey finds that 60% agree.”",
+"answer": "The survey found that 60% agreed.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The report lists the problems.” (This report…) Use describes.",
+"answer": "This report describes the problems.",
+"why": ""
+}
+]
+}

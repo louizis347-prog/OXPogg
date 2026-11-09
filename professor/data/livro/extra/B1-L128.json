@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "poesia (haiku)",
+"wrong": "Blue light in the dark, a thousand voices sound; one friend answer me.",
+"right": "Blue light in the dark, a thousand voices sounding; one friend answers me.",
+"why": "Em português o haiku é medido em sílabas poéticas; o brasileiro conta sílabas ortográficas e esquece a flexão do verbo. Em inglês, a 3ª pessoa leva -s (one friend answers)."
+},
+"mcq": [
+{
+"q": "A haiku has…",
+"opts": [
+"5 versos",
+"2 versos",
+"3 versos"
+],
+"ans": 2,
+"why": "3 linhas."
+},
+{
+"q": "Syllable pattern (approx.):",
+"opts": [
+"5-7-5",
+"7-5-7",
+"4-4-4"
+],
+"ans": 0,
+"why": "5-7-5."
+},
+{
+"q": "“one friend ___ me”",
+"opts": [
+"answer",
+"answers",
+"answering"
+],
+"ans": 1,
+"why": "-s."
+},
+{
+"q": "A haiku usually uses…",
+"opts": [
+"argumento",
+"imagem e contraste",
+"citação longa"
+],
+"ans": 1,
+"why": "Imagem."
+}
+],
+"fix": [
+{
+"wrong": "One friend answer me.",
+"right": "One friend answers me.",
+"why": "-s."
+},
+{
+"wrong": "A thousand voice speak.",
+"right": "A thousand voices speak.",
+"why": "Plural."
+},
+{
+"wrong": "The moon shine soft.",
+"right": "The moon shines softly.",
+"why": "-s e advérbio."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a 3ª pessoa: “Light fills the room.” (The light)",
+"answer": "The light fills the room.",
+"why": ""
+},
+{
+"prompt": "Conte as sílabas de “library” (número)",
+"answer": "3",
+"why": "Escreva apenas o número."
+},
+{
+"prompt": "Pluralize: “One voice sings.” (Many voices)",
+"answer": "Many voices sing.",
+"why": ""
+}
+]
+}

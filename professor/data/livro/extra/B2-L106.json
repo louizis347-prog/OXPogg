@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make a research",
+"wrong": "The students made a research on pollution.",
+"right": "The students did research on pollution.",
+"why": "\"Fazer uma pesquisa\" vira make a research. Em inglês, do research (incontável)."
+},
+"mcq": [
+{
+"q": "Complete: It depends **___** the data.",
+"opts": [
+"of",
+"on",
+"from"
+],
+"ans": 1,
+"why": "depend on."
+},
+{
+"q": "Qual verbo é transitivo?",
+"opts": [
+"happen",
+"arrive",
+"emphasize"
+],
+"ans": 2,
+"why": "emphasize + objeto."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She explained it to me.",
+"She explained me it.",
+"She explained to it me."
+],
+"ans": 0,
+"why": "explain to."
+},
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"exatamente duas",
+"três",
+"até duas palavras"
+],
+"ans": 2,
+"why": "limite."
+}
+],
+"fix": [
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+},
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+}
+]
+}

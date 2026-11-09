@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "no sooner than",
+"wrong": "No sooner had it begun when it stopped.",
+"right": "No sooner had it begun than it stopped.",
+"why": "O brasileiro usa when por analogia a hardly. Em inglês, no sooner exige than."
+},
+"mcq": [
+{
+"q": "No sooner had the guests left ___ the lights went out.",
+"opts": [
+"that",
+"than",
+"when"
+],
+"ans": 1,
+"why": "than."
+},
+{
+"q": "Hardly had we announced it ___ orders poured in.",
+"opts": [
+"than",
+"then",
+"when"
+],
+"ans": 2,
+"why": "when."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"No sooner had it begun than it stopped.",
+"No sooner it had begun than it stopped.",
+"No sooner had it begun when it stopped."
+],
+"ans": 0,
+"why": "than."
+},
+{
+"q": "Both structures use…",
+"opts": [
+"will",
+"inversion",
+"present tense"
+],
+"ans": 1,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "No sooner had the guests left when the lights went out.",
+"right": "No sooner had the guests left than the lights went out.",
+"why": "than."
+},
+{
+"wrong": "Hardly had the guests left than the lights went out.",
+"right": "Hardly had the guests left when the lights went out.",
+"why": "when."
+},
+{
+"wrong": "No sooner we had left than the lights went out.",
+"right": "No sooner had the guests left than the lights went out.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Hardly: “We announced it and orders poured in.”",
+"answer": "Hardly had we announced it when orders poured in.",
+"why": ""
+},
+{
+"prompt": "Comece com No sooner: “It began and it stopped.”",
+"answer": "No sooner had it begun than it stopped.",
+"why": ""
+},
+{
+"prompt": "Comece com Scarcely: “They arrived and the lights went out.”",
+"answer": "Scarcely had they arrived when the lights went out.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Continuous vs Simple",
+"wrong": "I was knowing the answer.",
+"right": "I knew the answer.",
+"why": "Em português usamos 'estava sabendo'; verbos de estado como know não vão ao continuous."
+},
+"mcq": [
+{
+"q": "While I ___ , the phone rang.",
+"opts": [
+"was cooking",
+"cooked",
+"cook"
+],
+"ans": 0,
+"why": "ação em andamento."
+},
+{
+"q": "I ___ the answer.",
+"opts": [
+"knew",
+"knowing",
+"was knowing"
+],
+"ans": 0,
+"why": "estado."
+},
+{
+"q": "What ___ you doing at 7?",
+"opts": [
+"did",
+"were",
+"was"
+],
+"ans": 1,
+"why": "were."
+},
+{
+"q": "Negativa: “I was sleeping”",
+"opts": [
+"I wasn't sleeping.",
+"I didn't sleeping.",
+"I not was sleeping."
+],
+"ans": 0,
+"why": "wasn't."
+}
+],
+"fix": [
+{
+"wrong": "I was wanting a cake.",
+"right": "I wanted a cake.",
+"why": "estado."
+},
+{
+"wrong": "We weren't watched TV.",
+"right": "We weren't watching TV.",
+"why": "-ing."
+},
+{
+"wrong": "Was they playing?",
+"right": "Were they playing?",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “She was working.”",
+"answer": "She wasn't working.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “They were studying.”",
+"answer": "Were they studying?",
+"why": ""
+},
+{
+"prompt": "Past continuous: “He sleeps.”",
+"answer": "He was sleeping.",
+"why": ""
+}
+]
+}

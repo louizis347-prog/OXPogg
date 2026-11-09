@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "marcador de abertura",
+"wrong": "Right, so, I will start for explain the idea.",
+"right": "Right, so, let me start with the idea.",
+"why": "Português “vou começar explicando”; em inglês let me start with + substantivo."
+},
+"mcq": [
+{
+"q": "Open a talk:",
+"opts": [
+"Right, so, let me start with…",
+"Right so, start I with",
+"So right let start"
+],
+"ans": 0,
+"why": "let me start with."
+},
+{
+"q": "Invite imagination:",
+"opts": [
+"Imagine, if you will, a city…",
+"Imagine if you will to a city",
+"If you will imagining"
+],
+"ans": 0,
+"why": "Imagine, if you will."
+},
+{
+"q": "“If you will” here means…",
+"opts": [
+"unless",
+"when",
+"please"
+],
+"ans": 2,
+"why": "Por favor."
+},
+{
+"q": "In “Imagine a city”, what follows imagine?",
+"opts": [
+"an object",
+"for",
+"to"
+],
+"ans": 0,
+"why": "Objeto."
+}
+],
+"fix": [
+{
+"wrong": "Let me to start with the idea.",
+"right": "Let me start with the idea.",
+"why": "Sem to."
+},
+{
+"wrong": "Imagine to a city.",
+"right": "Imagine a city.",
+"why": "Transitivo."
+},
+{
+"wrong": "Right so, lets start with this.",
+"right": "Right, so, let’s start with this.",
+"why": "Contração com apóstrofo."
+}
+],
+"rewrite": [
+{
+"prompt": "Abra: “I will begin with the idea.” (let me)",
+"answer": "Let me start with the idea.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Imagine a city.”",
+"answer": "Don’t imagine a city.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Let us start with this.” (contração)",
+"answer": "Let’s start with this.",
+"why": ""
+}
+]
+}

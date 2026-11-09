@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo após be",
+"wrong": "My father is engineer.",
+"right": "My father is an engineer.",
+"why": "Em português profissões vêm sem artigo depois de ser; em inglês leva a/an."
+},
+"mcq": [
+{
+"q": "She ___ a nurse.",
+"opts": [
+"is",
+"are",
+"am"
+],
+"ans": 0,
+"why": "She: is."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He is teacher.",
+"He is a teacher.",
+"He a teacher."
+],
+"ans": 1,
+"why": "Be + artigo + substantivo."
+},
+{
+"q": "They ___ students.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 2,
+"why": "They: are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We are doctors.",
+"We are a doctors.",
+"We are doctor."
+],
+"ans": 0,
+"why": "Plural sem a/an."
+}
+],
+"fix": [
+{
+"wrong": "He is doctor.",
+"right": "He is a doctor.",
+"why": "Falta artigo."
+},
+{
+"wrong": "They are a nurses.",
+"right": "They are nurses.",
+"why": "Plural sem a."
+},
+{
+"wrong": "She is a engineer.",
+"right": "She is an engineer.",
+"why": "Vogal: an."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “Tom / pilot”. Use is.",
+"answer": "Tom is a pilot.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “She is a nurse.”",
+"answer": "They are nurses.",
+"why": ""
+},
+{
+"prompt": "Negue: “He is a doctor.” (is not)",
+"answer": "He is not a doctor.",
+"why": ""
+}
+]
+}

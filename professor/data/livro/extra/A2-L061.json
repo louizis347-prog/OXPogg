@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "let vs want",
+"wrong": "He wants that she calls.",
+"right": "He wants her to call.",
+"why": "Em português o infinitivo vem sem partícula; com want/ask/tell + objeto, o inglês exige to."
+},
+"mcq": [
+{
+"q": "I asked him ___ the door.",
+"opts": [
+"to open",
+"open",
+"opening"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "My boss told me ___ late.",
+"opts": [
+"don't be",
+"to not be",
+"not to be"
+],
+"ans": 2,
+"why": "not to."
+},
+{
+"q": "She wants us ___ early.",
+"opts": [
+"to arrive",
+"arriving",
+"arrive"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I'd like that you stay.",
+"I'd like you to stay.",
+"I'd like you stay."
+],
+"ans": 1,
+"why": "to."
+}
+],
+"fix": [
+{
+"wrong": "He asked me open it.",
+"right": "He asked me to open it.",
+"why": "to."
+},
+{
+"wrong": "She told us don't go.",
+"right": "She told us not to go.",
+"why": "not to."
+},
+{
+"wrong": "They want us coming.",
+"right": "They want us to come.",
+"why": "to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “He told. She waits.”",
+"answer": "He told her to wait.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I asked. He doesn't go.”",
+"answer": "I asked him not to go.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They want. We help.”",
+"answer": "They want us to help.",
+"why": ""
+}
+]
+}

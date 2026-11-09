@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "negativa de dedução",
+"wrong": "He mustn't have seen the sign.",
+"right": "He can't have seen the sign.",
+"why": "Em português \"não deve ter visto\" usa a mesma forma da negativa; em inglês a dedução negativa é can't have, e mustn't é proibição."
+},
+"mcq": [
+{
+"q": "Qual indica menos certeza?",
+"opts": [
+"He must have left.",
+"He can't have left.",
+"He might have left."
+],
+"ans": 2,
+"why": "might have = possibilidade; must have = quase certeza."
+},
+{
+"q": "Complete: The door is open. Someone **___ have** forgotten to lock it.",
+"opts": [
+"must",
+"can't",
+"mustn't"
+],
+"ans": 0,
+"why": "Há evidência de que alguém esqueceu: must have."
+},
+{
+"q": "\"They can't have known.\" significa...",
+"opts": [
+"Eles não podem saber.",
+"É impossível que eles soubessem.",
+"Eles não deviam saber."
+],
+"ans": 1,
+"why": "can't have known = tenho certeza de que não souberam."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She must have been tired.",
+"She must been tired.",
+"She must has been tired."
+],
+"ans": 0,
+"why": "Must have been: sem -s em have e com particípio."
+}
+],
+"fix": [
+{
+"wrong": "He must has left early.",
+"right": "He must have left early.",
+"why": "Depois de modal, use have, nunca has."
+},
+{
+"wrong": "She can't has seen us.",
+"right": "She can't have seen us.",
+"why": "Modais não mudam e pedem have + particípio."
+},
+{
+"wrong": "They must have went home.",
+"right": "They must have gone home.",
+"why": "Use o particípio gone."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque must por might: “They must have forgotten.”",
+"answer": "They might have forgotten.",
+"why": ""
+},
+{
+"prompt": "Reescreva como dedução: “It rained last night.”",
+"answer": "It must have rained last night.",
+"why": ""
+},
+{
+"prompt": "Reescreva com can't have: “Tom was at home.” (impossível)",
+"answer": "Tom can't have been at home.",
+"why": ""
+}
+]
+}

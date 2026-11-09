@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "give + objeto",
+"wrong": "She gave to me a book.",
+"right": "She gave me a book.",
+"why": "Em português 'deu a mim um livro' leva preposição a/para; em inglês give + pessoa + coisa sem to."
+},
+"mcq": [
+{
+"q": "He ___ me a gift.",
+"opts": [
+"give",
+"gave",
+"gived"
+],
+"ans": 1,
+"why": "gave."
+},
+{
+"q": "Give ___ the book.",
+"opts": [
+"her",
+"to she",
+"she"
+],
+"ans": 0,
+"why": "objeto."
+},
+{
+"q": "Qual está certa? (Key verb: give (past and uses))",
+"opts": [
+"Give it to Ana.",
+"Give to Ana it.",
+"Give Ana to it."
+],
+"ans": 0,
+"why": "give it to."
+},
+{
+"q": "Passado de give:",
+"opts": [
+"given",
+"gave",
+"gived"
+],
+"ans": 1,
+"why": "gave."
+}
+],
+"fix": [
+{
+"wrong": "She gived me a pen.",
+"right": "She gave me a pen.",
+"why": "gave."
+},
+{
+"wrong": "Give to me the key.",
+"right": "Give me the key.",
+"why": "sem to."
+},
+{
+"wrong": "He gave to she a gift.",
+"right": "He gave her a gift.",
+"why": "objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem to: “Give the book to me.”",
+"answer": "Give me the book.",
+"why": ""
+},
+{
+"prompt": "Passado: “I give her a gift.”",
+"answer": "I gave her a gift.",
+"why": ""
+},
+{
+"prompt": "Com to: “Give me it.” (it → Ana)",
+"answer": "Give it to Ana.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "has × have",
+"wrong": "She have a bike.",
+"right": "She has a bike.",
+"why": "Em português o verbo ter também muda (\"ela tem\"), mas o brasileiro transfere have para he/she/it; a terceira pessoa é has."
+},
+"mcq": [
+{
+"q": "She ___ a dog.",
+"opts": [
+"have",
+"haves",
+"has"
+],
+"ans": 2,
+"why": "He/she/it: has."
+},
+{
+"q": "I ___ two cats.",
+"opts": [
+"have",
+"has",
+"am"
+],
+"ans": 0,
+"why": "I: have."
+},
+{
+"q": "They ___ a car.",
+"opts": [
+"has",
+"have",
+"are"
+],
+"ans": 1,
+"why": "They: have."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He have a phone.",
+"He is a phone.",
+"He has a phone."
+],
+"ans": 2,
+"why": "Has."
+}
+],
+"fix": [
+{
+"wrong": "He have a bike.",
+"right": "He has a bike.",
+"why": "Has."
+},
+{
+"wrong": "I has a sister.",
+"right": "I have a sister.",
+"why": "I: have."
+},
+{
+"wrong": "She is a dog. (she owns a dog)",
+"right": "She has a dog.",
+"why": "Posse: has."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o sujeito por “She”: “I have a pen.”",
+"answer": "She has a pen.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “They”: “He has a car.”",
+"answer": "They have a car.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “We”: “She has a cat.”",
+"answer": "We have a cat.",
+"why": ""
+}
+]
+}

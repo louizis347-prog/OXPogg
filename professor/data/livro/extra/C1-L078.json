@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "True/False/Not Given",
+"wrong": "The text says the study was in 2020, so False.",
+"right": "The text does not mention the year, so the answer is Not Given.",
+"why": "O brasileiro tende a escolher False quando o texto não confirma. Not Given significa que o texto não diz nada sobre aquilo."
+},
+"mcq": [
+{
+"q": "The text contradicts the statement →",
+"opts": [
+"True",
+"False",
+"Not Given"
+],
+"ans": 1,
+"why": "Contradiz = False."
+},
+{
+"q": "The text says nothing about it →",
+"opts": [
+"False",
+"True",
+"Not Given"
+],
+"ans": 2,
+"why": "Not Given."
+},
+{
+"q": "True means…",
+"opts": [
+"same meaning, other words",
+"exact same words",
+"opposite"
+],
+"ans": 0,
+"why": "Paráfrase."
+},
+{
+"q": "Which is a paraphrase?",
+"opts": [
+"rose = stopped",
+"rose sharply = increased a lot",
+"rose = fell"
+],
+"ans": 1,
+"why": "Sinônimo."
+}
+],
+"fix": [
+{
+"wrong": "The text confirm the claim.",
+"right": "The text confirms the claim.",
+"why": "-s."
+},
+{
+"wrong": "The author don’t mention it.",
+"right": "The author doesn’t mention it.",
+"why": "doesn’t."
+},
+{
+"wrong": "It is say in the text.",
+"right": "It is said in the text.",
+"why": "said."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “The author mentions the year.”",
+"answer": "The author does not mention the year.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The text says it.”",
+"answer": "It is said in the text.",
+"why": ""
+},
+{
+"prompt": "Negativa: “The text confirms it.”",
+"answer": "The text does not confirm it.",
+"why": ""
+}
+]
+}

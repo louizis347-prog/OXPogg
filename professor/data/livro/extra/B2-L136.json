@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "She had repaired her car.",
+"right": "She had her car repaired.",
+"why": "O brasileiro coloca o particípio logo após have. Em inglês, o objeto vem no meio: have + objeto + particípio."
+},
+"mcq": [
+{
+"q": "\"I had my phone stolen\" pode indicar...",
+"opts": [
+"eu mandei roubar",
+"algo ruim que aconteceu comigo",
+"eu roubei"
+],
+"ans": 1,
+"why": "have + objeto + particípio também indica experiência negativa."
+},
+{
+"q": "Qual é a pergunta correta?",
+"opts": [
+"Where do you get cut your hair?",
+"Where you get your hair cut?",
+"Where do you get your hair cut?"
+],
+"ans": 2,
+"why": "Ordem: objeto + particípio."
+},
+{
+"q": "get something done é...",
+"opts": [
+"mais informal que have",
+"mais formal que have",
+"incorreto"
+],
+"ans": 0,
+"why": "get é mais informal."
+},
+{
+"q": "Qual significa \"mandar fazer\"?",
+"opts": [
+"I washed my car.",
+"I was washing my car.",
+"I had my car washed."
+],
+"ans": 2,
+"why": "have + objeto + particípio."
+}
+],
+"fix": [
+{
+"wrong": "She got her nails do yesterday.",
+"right": "She got her nails done yesterday.",
+"why": "Particípio done."
+},
+{
+"wrong": "I'll have checked my eyes tomorrow.",
+"right": "I'll have my eyes checked tomorrow.",
+"why": "Ordem: have + objeto + particípio."
+},
+{
+"wrong": "They had their car stealing.",
+"right": "They had their car stolen.",
+"why": "Particípio stolen."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o futuro: “I have my car washed.”",
+"answer": "I will have my car washed.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “She had her house painted.”",
+"answer": "She didn't have her house painted.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “A mechanic checked our car.”",
+"answer": "We had our car checked.",
+"why": ""
+}
+]
+}

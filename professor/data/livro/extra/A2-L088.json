@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to de finalidade",
+"wrong": "I went to the store for buy milk.",
+"right": "I went to the store to buy milk.",
+"why": "Em português 'para comprar' usa para + infinitivo; o aluno traduz com for. Em inglês: to + base."
+},
+"mcq": [
+{
+"q": "I use my phone ___ call friends.",
+"opts": [
+"to",
+"for",
+"in order"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "She goes to the gym ___ .",
+"opts": [
+"for getting",
+"to get fit",
+"for get fit"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He called to ask.",
+"He called for ask.",
+"He called for asking me."
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "I went there ___ a coffee. (substantivo)",
+"opts": [
+"by",
+"for",
+"to"
+],
+"ans": 1,
+"why": "for + substantivo."
+}
+],
+"fix": [
+{
+"wrong": "I came for learn English.",
+"right": "I came to learn English.",
+"why": "to."
+},
+{
+"wrong": "She went there to a coffee.",
+"right": "She went there for a coffee.",
+"why": "for + substantivo."
+},
+{
+"wrong": "I study for to pass.",
+"right": "I study to pass.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I use a map. I find the way.”",
+"answer": "I use a map to find the way.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She called. She asked.”",
+"answer": "She called to ask.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He went there. A coffee.” com for",
+"answer": "He went there for a coffee.",
+"why": ""
+}
+]
+}

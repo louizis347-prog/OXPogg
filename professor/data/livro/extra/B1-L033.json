@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato (resumo)",
+"wrong": "I assisted the film yesterday.",
+"right": "I watched the film yesterday.",
+"why": "Pretender e assistir parecem equivalentes, mas são falsos cognatos: pretend = fingir; assist = ajudar. Para resenhas, use claim/aim to e watch/see."
+},
+"mcq": [
+{
+"q": "“I would recommend it” is…",
+"opts": [
+"resumo",
+"opinião",
+"título"
+],
+"ans": 1,
+"why": "Recomendação = opinião."
+},
+{
+"q": "This novel ___ a young chef.",
+"opts": [
+"follows",
+"follow",
+"following"
+],
+"ans": 0,
+"why": "3ª pessoa: follows."
+},
+{
+"q": "Which word shows a con?",
+"opts": [
+"Pros",
+"However",
+"Verdict"
+],
+"ans": 1,
+"why": "However introduz contraponto."
+},
+{
+"q": "In a review, “verdict” means…",
+"opts": [
+"sumário",
+"enredo",
+"conclusão/avaliação final"
+],
+"ans": 2,
+"why": "Verdict = veredito."
+}
+],
+"fix": [
+{
+"wrong": "I assisted the movie yesterday.",
+"right": "I watched the movie yesterday.",
+"why": "assist = ajudar."
+},
+{
+"wrong": "This novel follow a young chef.",
+"right": "This novel follows a young chef.",
+"why": "-s na 3ª pessoa."
+},
+{
+"wrong": "I would recommend to it.",
+"right": "I would recommend it.",
+"why": "recommend é transitivo direto."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com would: “I recommend this book.”",
+"answer": "I would recommend this book.",
+"why": ""
+},
+{
+"prompt": "Reescreva com 3ª pessoa: “The novel follow a girl.”",
+"answer": "The novel follows a girl.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I recommend it to you.” → “I would ...”",
+"answer": "I would recommend it to you.",
+"why": ""
+}
+]
+}

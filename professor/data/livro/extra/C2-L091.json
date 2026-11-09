@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Tired I was as, I went.",
+"right": "Tired as I was, I went.",
+"why": "Em português “cansado como estava” soa literal; em inglês adjetivo + as + sujeito + verbo para concessão."
+},
+"mcq": [
+{
+"q": "Concession with “as”:",
+"opts": [
+"As tired I am, I went.",
+"Tired I am as, I went.",
+"Tired as I am, I went."
+],
+"ans": 2,
+"why": "Adj + as + S + V."
+},
+{
+"q": "Try as I might, I can’t.",
+"opts": [
+"emphatic and literary",
+"a question",
+"informal slang"
+],
+"ans": 0,
+"why": "Literário."
+},
+{
+"q": "Notwithstanding is followed by…",
+"opts": [
+"a full clause",
+"a noun phrase",
+"an infinitive"
+],
+"ans": 1,
+"why": "Notwithstanding the delay."
+},
+{
+"q": "Same meaning as “Although I was tired”:",
+"opts": [
+"As tired was I",
+"Tired as I was",
+"Tired was as I"
+],
+"ans": 1,
+"why": "Tired as I was."
+}
+],
+"fix": [
+{
+"wrong": "As tired I was, I went.",
+"right": "Tired as I was, I went.",
+"why": "Adjetivo vem primeiro."
+},
+{
+"wrong": "Try as I might it, I can’t.",
+"right": "Try as I might, I can’t.",
+"why": "Sem objeto."
+},
+{
+"wrong": "Notwithstanding that it rained a lot, we went.",
+"right": "Notwithstanding the rain, we went.",
+"why": "Notwithstanding + sintagma nominal."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com “as”: “Although I was tired, I went.”",
+"answer": "Tired as I was, I went.",
+"why": ""
+},
+{
+"prompt": "Reescreva com notwithstanding: “Despite the delay, we left.”",
+"answer": "Notwithstanding the delay, we left.",
+"why": ""
+},
+{
+"prompt": "Reescreva no presente: “Try as I might, I could not.”",
+"answer": "Try as I might, I cannot.",
+"why": ""
+}
+]
+}

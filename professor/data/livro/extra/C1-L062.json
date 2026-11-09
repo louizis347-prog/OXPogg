@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão com so",
+"wrong": "So she was exhausted that she quit.",
+"right": "So exhausted was she that she nearly quit.",
+"why": "Em português “tão exausta estava que…” não exige inversão. Em inglês formal, So + adjetivo no início pede verbo antes do sujeito."
+},
+"mcq": [
+{
+"q": "So exhausted ___ she that she quit.",
+"opts": [
+"did",
+"was",
+"she was"
+],
+"ans": 1,
+"why": "was."
+},
+{
+"q": "I ___ want to finish this. (emphatic)",
+"opts": [
+"am",
+"does",
+"do"
+],
+"ans": 2,
+"why": "do."
+},
+{
+"q": "Never ___ I seen it.",
+"opts": [
+"have",
+"do",
+"am"
+],
+"ans": 0,
+"why": "have."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Such was speed the that few checked.",
+"Such was the speed that few checked.",
+"Such the speed was that few checked."
+],
+"ans": 1,
+"why": "Such was."
+}
+],
+"fix": [
+{
+"wrong": "So tired she was that she left.",
+"right": "So tired was she that she left.",
+"why": "Inversão."
+},
+{
+"wrong": "I does want to finish.",
+"right": "I do want to finish.",
+"why": "do."
+},
+{
+"wrong": "Such the speed was that few checked.",
+"right": "Such was the speed that few checked.",
+"why": "Such was."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “She was so exhausted that she nearly quit.”",
+"answer": "So exhausted was she that she nearly quit.",
+"why": ""
+},
+{
+"prompt": "Ênfase: “I want to finish this.”",
+"answer": "I do want to finish this.",
+"why": ""
+},
+{
+"prompt": "Inverta: “The speed was such that few checked.”",
+"answer": "Such was the speed that few checked.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem na pergunta",
+"wrong": "Where the reporter went?",
+"right": "Where did the reporter go?",
+"why": "Em português “onde o repórter foi?” não pede auxiliar. Em inglês perguntas com who/what/where/when usam did/does + sujeito + base."
+},
+"mcq": [
+{
+"q": "Para saber o lugar:",
+"opts": [
+"When",
+"Who",
+"Where"
+],
+"ans": 2,
+"why": "Where = onde."
+},
+{
+"q": "**___** did the story happen?",
+"opts": [
+"When",
+"Whose",
+"Who"
+],
+"ans": 0,
+"why": "When = quando."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"What did the reporter write?",
+"What wrote the reporter?",
+"What the reporter wrote?"
+],
+"ans": 0,
+"why": "Auxiliar did + base."
+},
+{
+"q": "Inverted pyramid:",
+"opts": [
+"o final vem primeiro sempre",
+"só imagens",
+"o mais importante vem primeiro"
+],
+"ans": 2,
+"why": "O fato principal abre a notícia."
+}
+],
+"fix": [
+{
+"wrong": "When the story happened?",
+"right": "When did the story happen?",
+"why": "Falta did."
+},
+{
+"wrong": "What did the reporter wrote?",
+"right": "What did the reporter write?",
+"why": "Depois de did, verbo base."
+},
+{
+"wrong": "Who did write the story?",
+"right": "Who wrote the story?",
+"why": "Pergunta sobre o sujeito não usa did."
+}
+],
+"rewrite": [
+{
+"prompt": "Transforme em pergunta com Where: “The reporter went to the park.”",
+"answer": "Where did the reporter go?",
+"why": ""
+},
+{
+"prompt": "Pergunta com What: “She wrote a story.”",
+"answer": "What did she write?",
+"why": ""
+},
+{
+"prompt": "Pergunta com When: “The event started at noon.”",
+"answer": "When did the event start?",
+"why": ""
+}
+]
+}

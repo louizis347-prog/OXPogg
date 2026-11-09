@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito expletivo",
+"wrong": "Is not so much a correction as a conciliation.",
+"right": "It is not so much a correction as a conciliation.",
+"why": "Em português “não é tanto uma correção” dispensa sujeito. Em inglês, a oração exige it."
+},
+"mcq": [
+{
+"q": "Which is the formal reply to an objection?",
+"opts": [
+"You wrong.",
+"I no agree.",
+"We respectfully disagree."
+],
+"ans": 2,
+"why": "Fórmula."
+},
+{
+"q": "“Rather than impose a winner, we...”",
+"opts": [
+"compromised",
+"compromise to",
+"compromising to"
+],
+"ans": 0,
+"why": "Paralelo."
+},
+{
+"q": "“Less technical ___ social”",
+"opts": [
+"as",
+"than",
+"from"
+],
+"ans": 1,
+"why": "less…than."
+},
+{
+"q": "“not so much…” compares...",
+"opts": [
+"dates",
+"spelling",
+"importance"
+],
+"ans": 2,
+"why": "Peso."
+}
+],
+"fix": [
+{
+"wrong": "Rather than imposing a winner, we compromised.",
+"right": "Rather than impose a winner, we compromised.",
+"why": "rather than + base."
+},
+{
+"wrong": "Is less about tools than about people.",
+"right": "It is less about tools than about people.",
+"why": "Sujeito obrigatório: it."
+},
+{
+"wrong": "We respectfully disagree for that point.",
+"right": "We respectfully disagree on that point.",
+"why": "disagree on."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com not so much…as: “It is a conciliation more than a correction.”",
+"answer": "It is not so much a correction as a conciliation.",
+"why": ""
+},
+{
+"prompt": "Reescreva com rather than: “We did not impose a winner; we compromised.” (Rather than…)",
+"answer": "Rather than impose a winner, we compromised.",
+"why": ""
+},
+{
+"prompt": "Reescreva com politely: “We do not agree.”",
+"answer": "We politely disagree.",
+"why": ""
+}
+]
+}

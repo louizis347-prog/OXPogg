@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "imperativo e preparação",
+"wrong": "Research about the company and not be late.",
+"right": "Research the company and don’t be late.",
+"why": "Em português “pesquise sobre a empresa” usa preposição. Em inglês research/ discuss levam objeto direto; e a ordem negativa usa don’t, nunca not."
+},
+"mcq": [
+{
+"q": "___ the company before the interview.",
+"opts": [
+"Research",
+"Research about",
+"Researching"
+],
+"ans": 0,
+"why": "Imperativo direto."
+},
+{
+"q": "Negative order:",
+"opts": [
+"Don’t be late.",
+"Not be late.",
+"No late."
+],
+"ans": 0,
+"why": "Don’t."
+},
+{
+"q": "“I couldn’t agree more” means…",
+"opts": [
+"não concordo",
+"concordo totalmente",
+"concordo pouco"
+],
+"ans": 1,
+"why": "Concordo plenamente."
+},
+{
+"q": "First, … Then, … Finally, … shows…",
+"opts": [
+"contraste",
+"opinião",
+"passos"
+],
+"ans": 2,
+"why": "Sequência."
+}
+],
+"fix": [
+{
+"wrong": "Not be late.",
+"right": "Don’t be late.",
+"why": "Don’t."
+},
+{
+"wrong": "Research about the company.",
+"right": "Research the company.",
+"why": "Sem about."
+},
+{
+"wrong": "I am agree with you.",
+"right": "I agree with you.",
+"why": "agree é verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne negativa: “Be late.”",
+"answer": "Don’t be late.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem preposição: “Search about the company.” (research)",
+"answer": "Research the company.",
+"why": ""
+},
+{
+"prompt": "Corrija: “I am agree with you.”",
+"answer": "I agree with you.",
+"why": ""
+}
+]
+}

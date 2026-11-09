@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "Actually, the school has 500 students.",
+"right": "Currently, the school has 500 students.",
+"why": "Actually em inglês significa \"na verdade\", não \"atualmente\" (falso cognato)."
+},
+"mcq": [
+{
+"q": "Qual pontua corretamente?",
+"opts": [
+"It rained; however, we went.",
+"It rained, however we went.",
+"It rained however, we went."
+],
+"ans": 0,
+"why": "Ponto-e-vírgula + however + vírgula."
+},
+{
+"q": "Qual indica consequência?",
+"opts": [
+"nevertheless",
+"consequently",
+"furthermore"
+],
+"ans": 1,
+"why": "consequently = como consequência."
+},
+{
+"q": "Qual indica adição?",
+"opts": [
+"However",
+"Hence",
+"Furthermore"
+],
+"ans": 2,
+"why": "furthermore = além disso."
+},
+{
+"q": "Complete: Costs rose; **___**, sales fell.",
+"opts": [
+"nevertheless",
+"as a result",
+"for example"
+],
+"ans": 1,
+"why": "Relação de causa."
+}
+],
+"fix": [
+{
+"wrong": "The fee is high, therefore we help.",
+"right": "The fee is high; therefore, we help.",
+"why": "Pontuação."
+},
+{
+"wrong": "Firstly of all, we plan.",
+"right": "First of all, we plan.",
+"why": "first of all."
+},
+{
+"wrong": "Moreover of that, he paid.",
+"right": "Moreover, he paid.",
+"why": "moreover não leva of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com consequently: “He studied, so he passed.”",
+"answer": "He studied; consequently, he passed.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in addition: “Also, they offer a mentor.”",
+"answer": "In addition, they offer a mentor.",
+"why": ""
+},
+{
+"prompt": "Una com nevertheless: “It was hard. They finished.”",
+"answer": "It was hard; nevertheless, they finished.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so vs because",
+"wrong": "I was late so the bus was slow.",
+"right": "I was late because the bus was slow.",
+"why": "Em português usamos 'então/porque' sem fixar a ordem; o aluno troca. Because dá a causa, so dá o resultado."
+},
+"mcq": [
+{
+"q": "It's raining, ___ I take an umbrella.",
+"opts": [
+"so",
+"because",
+"or"
+],
+"ans": 0,
+"why": "Resultado."
+},
+{
+"q": "I stay home ___ I'm sick.",
+"opts": [
+"so",
+"but",
+"because"
+],
+"ans": 2,
+"why": "Causa."
+},
+{
+"q": "I want to go, ___ I'm tired.",
+"opts": [
+"and",
+"but",
+"because"
+],
+"ans": 1,
+"why": "Contraste."
+},
+{
+"q": "Coffee ___ tea?",
+"opts": [
+"or",
+"so",
+"because"
+],
+"ans": 0,
+"why": "Escolha."
+}
+],
+"fix": [
+{
+"wrong": "I'm hungry because I eat.",
+"right": "I'm hungry so I eat.",
+"why": "Resultado."
+},
+{
+"wrong": "I was sick so I stayed home.",
+"right": "I was sick, so I stayed home.",
+"why": "Antes de so, vírgula."
+},
+{
+"wrong": "I like fish or I don't like rice.",
+"right": "I like fish but I don't like rice.",
+"why": "but."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com so: “I'm cold. I close the window.”",
+"answer": "I'm cold so I close the window.",
+"why": ""
+},
+{
+"prompt": "Reescreva com because: “I'm happy. It's my birthday.”",
+"answer": "I'm happy because it's my birthday.",
+"why": ""
+},
+{
+"prompt": "Reescreva com or: “Do you want tea? Do you want coffee?”",
+"answer": "Do you want tea or coffee?",
+"why": ""
+}
+]
+}

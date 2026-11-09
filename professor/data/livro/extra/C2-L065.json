@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "vírgulas",
+"wrong": "Douglass an escaped slave and a writer gave a speech that, changed history.",
+"right": "Douglass, an escaped slave and a writer, gave a speech that changed history.",
+"why": "O aposto vai entre vírgulas; já a relativa restritiva não leva vírgula, ao contrário do que o português às vezes sugere."
+},
+"mcq": [
+{
+"q": "Appositive:",
+"opts": [
+"Douglass, a writer spoke.",
+"Douglass a writer, spoke.",
+"Douglass, a writer, spoke."
+],
+"ans": 2,
+"why": "Duas vírgulas."
+},
+{
+"q": "Restrictive relative:",
+"opts": [
+"a speech what changed lives",
+"a speech, that changed lives",
+"a speech that changed lives"
+],
+"ans": 2,
+"why": "Sem vírgula."
+},
+{
+"q": "Why use an appositive?",
+"opts": [
+"to identify someone quickly",
+"to ask a question",
+"to negate"
+],
+"ans": 0,
+"why": "Identifica."
+},
+{
+"q": "Which pronoun in a restrictive clause for a thing?",
+"opts": [
+"that",
+"who",
+"whom"
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "Douglass, a writer gave a speech.",
+"right": "Douglass, a writer, gave a speech.",
+"why": "Aposto fecha com vírgula."
+},
+{
+"wrong": "A speech, that changed history, was given.",
+"right": "A speech that changed history was given.",
+"why": "Sem vírgula."
+},
+{
+"wrong": "The man who he spoke was brave.",
+"right": "The man who spoke was brave.",
+"why": "Não repita o sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com aposto: “Lincoln was a president. He gave a speech.”",
+"answer": "Lincoln, a president, gave a speech.",
+"why": ""
+},
+{
+"prompt": "Una com “that”: “It was a speech. It changed lives.”",
+"answer": "It was a speech that changed lives.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Douglass gives a speech.”",
+"answer": "Douglass gave a speech.",
+"why": ""
+}
+]
+}

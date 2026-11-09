@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "formalidade",
+"wrong": "Dear Mr. Silva, I am writing for ask about the job.",
+"right": "Dear Mr. Silva, I am writing to ask about the job.",
+"why": "Português: “escrevo para pedir” é igual, mas o brasileiro usa for. Em inglês: I am writing to + base."
+},
+"mcq": [
+{
+"q": "Abertura formal:",
+"opts": [
+"Hey you,",
+"Hi Sir,",
+"Dear Sir or Madam,"
+],
+"ans": 2,
+"why": "Formal."
+},
+{
+"q": "I am writing **___** apply.",
+"opts": [
+"in order of",
+"for",
+"to"
+],
+"ans": 2,
+"why": "To."
+},
+{
+"q": "Fechamento:",
+"opts": [
+"Bye,",
+"Kisses,",
+"Yours sincerely,"
+],
+"ans": 2,
+"why": "Formal."
+},
+{
+"q": "Mr. Silva:",
+"opts": [
+"Dear Mr. Silva,",
+"Dear Silva Mr.,",
+"Dear Mister,"
+],
+"ans": 0,
+"why": "Ordem."
+}
+],
+"fix": [
+{
+"wrong": "I am writing for apply.",
+"right": "I am writing to apply.",
+"why": "To + base."
+},
+{
+"wrong": "I look forward to hear from you.",
+"right": "I look forward to hearing from you.",
+"why": "To é preposição."
+},
+{
+"wrong": "I am writing to ask for informations.",
+"right": "I am writing to ask for information.",
+"why": "Information é incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Use I am writing: “I want to apply.”",
+"answer": "I am writing to apply.",
+"why": ""
+},
+{
+"prompt": "Mais formal: “I want information.” (would like)",
+"answer": "I would like information.",
+"why": ""
+},
+{
+"prompt": "Complete: “I look forward to … (hear) from you.”",
+"answer": "I look forward to hearing from you.",
+"why": ""
+}
+]
+}

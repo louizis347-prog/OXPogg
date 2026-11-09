@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ver TV",
+"wrong": "I saw TV last night.",
+"right": "I watched TV last night.",
+"why": "Em português dizemos 'ver TV'; em inglês ver algo que se move é watch, e see é para perceber."
+},
+"mcq": [
+{
+"q": "I ___ TV at 8.",
+"opts": [
+"was watching",
+"see",
+"saw"
+],
+"ans": 0,
+"why": "em curso."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She no was working.",
+"She wasn't working.",
+"She didn't working."
+],
+"ans": 1,
+"why": "wasn't + -ing."
+},
+{
+"q": "While I ___ , he called.",
+"opts": [
+"slept",
+"was sleeping",
+"sleeping"
+],
+"ans": 1,
+"why": "cont."
+},
+{
+"q": "Passado de **buy**:",
+"opts": [
+"bought",
+"buys",
+"buyed"
+],
+"ans": 0,
+"why": "irregular."
+}
+],
+"fix": [
+{
+"wrong": "I was run when it rained.",
+"right": "I was running when it rained.",
+"why": "-ing."
+},
+{
+"wrong": "We didn't saw it.",
+"right": "We didn't see it.",
+"why": "base."
+},
+{
+"wrong": "Were she cooking?",
+"right": "Was she cooking?",
+"why": "was."
+}
+],
+"rewrite": [
+{
+"prompt": "Past continuous: “They eat.”",
+"answer": "They were eating.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I was sleeping.”",
+"answer": "I wasn't sleeping.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She was working.”",
+"answer": "Was she working?",
+"why": ""
+}
+]
+}

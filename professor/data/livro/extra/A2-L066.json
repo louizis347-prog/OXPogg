@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "superlativos",
+"wrong": "She is the most smart in the class.",
+"right": "She is the smartest in the class.",
+"why": "Em português 'a mais inteligente' usa mais; em inglês curto usa the -est."
+},
+"mcq": [
+{
+"q": "This is the ___ book.",
+"opts": [
+"best",
+"most good",
+"goodest"
+],
+"ans": 0,
+"why": "best."
+},
+{
+"q": "He is ___ than me.",
+"opts": [
+"younger",
+"more young",
+"youngest"
+],
+"ans": 0,
+"why": "-er."
+},
+{
+"q": "She asked ___ to help.",
+"opts": [
+"him",
+"his",
+"he"
+],
+"ans": 0,
+"why": "objeto."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"It's as big as that.",
+"It's more big that.",
+"It's so big as that."
+],
+"ans": 0,
+"why": "as...as."
+}
+],
+"fix": [
+{
+"wrong": "This is the worse day.",
+"right": "This is the worst day.",
+"why": "superlativo."
+},
+{
+"wrong": "He is as taller as me.",
+"right": "He is as tall as me.",
+"why": "as + adj."
+},
+{
+"wrong": "They told he to go.",
+"right": "They told him to go.",
+"why": "objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Superlativo: “This is good.”",
+"answer": "This is the best.",
+"why": ""
+},
+{
+"prompt": "Comparativo: “He is tall. (than her)”",
+"answer": "He is taller than her.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He wants. We stay.”",
+"answer": "He wants us to stay.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ideia principal",
+"wrong": "The paragraph A is about the effect from the neighborhood.",
+"right": "Paragraph A is about the effect of the neighborhood.",
+"why": "O brasileiro usa “efeito de/da” com from ou omite o artigo. Em inglês: the effect of X (on Y)."
+},
+"mcq": [
+{
+"q": "Para achar a ideia principal, leia…",
+"opts": [
+"a 1ª e a última frase",
+"só o meio",
+"só o título"
+],
+"ans": 0,
+"why": "Primeira e última."
+},
+{
+"q": "Paragraph A is about the effect ___ the neighborhood.",
+"opts": [
+"by",
+"of",
+"from"
+],
+"ans": 1,
+"why": "effect of."
+},
+{
+"q": "Títulos de parágrafo: sublinhe…",
+"opts": [
+"números",
+"conectivos",
+"palavras-chave"
+],
+"ans": 2,
+"why": "Palavras-chave."
+},
+{
+"q": "The effect of noise ___ sleep.",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 0,
+"why": "effect on."
+}
+],
+"fix": [
+{
+"wrong": "The effect from noise is clear.",
+"right": "The effect of noise is clear.",
+"why": "of."
+},
+{
+"wrong": "Noise has effect in sleep.",
+"right": "Noise has an effect on sleep.",
+"why": "an … on."
+},
+{
+"wrong": "Paragraph B talk about rents.",
+"right": "Paragraph B talks about rents.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Use effect on: “Noise affects sleep.”",
+"answer": "Noise has an effect on sleep.",
+"why": ""
+},
+{
+"prompt": "Use the effect of: “The neighborhood affects children.” (The effect…)",
+"answer": "The effect of the neighborhood on children is clear.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “Paragraph C describe rents.”",
+"answer": "Paragraph C describes rents.",
+"why": ""
+}
+]
+}

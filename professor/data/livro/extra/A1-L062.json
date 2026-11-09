@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo de ligação",
+"wrong": "The soup tastes deliciously.",
+"right": "The soup tastes delicious.",
+"why": "Em português usamos advérbio (\"saboroso\" ou \"saborosamente\") por transferência; com tastes/looks/feels vem adjetivo, não advérbio."
+},
+"mcq": [
+{
+"q": "He feels ___.",
+"opts": [
+"tired",
+"tiredly",
+"tire"
+],
+"ans": 0,
+"why": "Adjetivo."
+},
+{
+"q": "It sounds ___.",
+"opts": [
+"greatly",
+"great",
+"greater"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She is teacher.",
+"She a teacher.",
+"She is a teacher."
+],
+"ans": 2,
+"why": "S+V+C."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The music sounds nice.",
+"The music sounds nicely.",
+"The music sound nice."
+],
+"ans": 0,
+"why": "Nice."
+}
+],
+"fix": [
+{
+"wrong": "He looks tiredly.",
+"right": "He looks tired.",
+"why": "Adjetivo."
+},
+{
+"wrong": "She feels happily.",
+"right": "She feels happy.",
+"why": "Adjetivo."
+},
+{
+"wrong": "It sound good.",
+"right": "It sounds good.",
+"why": "Terceira."
+}
+],
+"rewrite": [
+{
+"prompt": "Use looks: “The cake is nice.” (aparência)",
+"answer": "The cake looks nice.",
+"why": ""
+},
+{
+"prompt": "Use feels: “I am tired.” (sensação)",
+"answer": "I feel tired.",
+"why": ""
+},
+{
+"prompt": "Use sounds: “The idea is good.”",
+"answer": "The idea sounds good.",
+"why": ""
+}
+]
+}

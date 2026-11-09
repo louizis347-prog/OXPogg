@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "apóstrofo",
+"wrong": "Im happy and youre kind.",
+"right": "I’m happy and you’re kind.",
+"why": "Em português não existe contração com apóstrofo; o brasileiro esquece o apóstrofo ao escrever."
+},
+"mcq": [
+{
+"q": "Yes, he ___ (short answer)",
+"opts": [
+"’s",
+"are",
+"is"
+],
+"ans": 2,
+"why": "Em sim, usa-se a forma completa."
+},
+{
+"q": "“They’re” =",
+"opts": [
+"they are",
+"their",
+"there"
+],
+"ans": 0,
+"why": "They’re = they are."
+},
+{
+"q": "Contraction of “you are”",
+"opts": [
+"your",
+"you’re",
+"youre"
+],
+"ans": 1,
+"why": "Com apóstrofo; your é possessivo."
+},
+{
+"q": "“He is” =",
+"opts": [
+"Hes",
+"He’is",
+"He’s"
+],
+"ans": 2,
+"why": "He’s."
+}
+],
+"fix": [
+{
+"wrong": "Yes, she’s.",
+"right": "Yes, she is.",
+"why": "Sem contração em resposta afirmativa."
+},
+{
+"wrong": "Were friends.",
+"right": "We’re friends.",
+"why": "We’re com apóstrofo."
+},
+{
+"wrong": "Your late today.",
+"right": "You’re late today.",
+"why": "You’re = you are; your é possessivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Use contração com isn’t: “She is not here.”",
+"answer": "She isn’t here.",
+"why": ""
+},
+{
+"prompt": "Use contração com aren’t: “We are not late.”",
+"answer": "We aren’t late.",
+"why": ""
+},
+{
+"prompt": "Use contração: “I am a teacher.”",
+"answer": "I’m a teacher.",
+"why": ""
+}
+]
+}

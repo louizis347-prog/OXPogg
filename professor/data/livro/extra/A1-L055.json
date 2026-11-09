@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "wh- + auxiliar",
+"wrong": "What you do?",
+"right": "What do you do?",
+"why": "Em português \"O que você faz?\" mantém a ordem do sujeito; em inglês wh- é seguida do auxiliar e depois do sujeito."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"What she wants?",
+"What does she wants?",
+"What does she want?"
+],
+"ans": 2,
+"why": "Does + base."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"How old are you?",
+"How old you are?",
+"How many old are you?"
+],
+"ans": 0,
+"why": "Be inverte."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Where you live?",
+"Where do you live?",
+"Where live you?"
+],
+"ans": 1,
+"why": "Wh + do + S."
+},
+{
+"q": "Question about a person:",
+"opts": [
+"What",
+"Where",
+"Who"
+],
+"ans": 2,
+"why": "Who = quem."
+}
+],
+"fix": [
+{
+"wrong": "What is your English teacher? (pessoa)",
+"right": "Who is your English teacher?",
+"why": "Who."
+},
+{
+"wrong": "How old you are?",
+"right": "How old are you?",
+"why": "Inversão."
+},
+{
+"wrong": "Where you work?",
+"right": "Where do you work?",
+"why": "Do."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunte com What: “She wants a coffee.”",
+"answer": "What does she want?",
+"why": ""
+},
+{
+"prompt": "Pergunte com When: “The class starts at 8.”",
+"answer": "When does the class start?",
+"why": ""
+},
+{
+"prompt": "Pergunte com Where: “You live in Rio.” (Where…)",
+"answer": "Where do you live?",
+"why": ""
+}
+]
+}

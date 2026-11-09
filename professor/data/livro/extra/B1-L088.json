@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "opinião e contraste",
+"wrong": "In my opinion, in one hand schools are good, in the other hand costs.",
+"right": "In my opinion, on the one hand schools are good; on the other hand, they cost money.",
+"why": "Em português “por um lado… por outro” é traduzido literalmente como in one hand. Em inglês é on the one hand… on the other hand."
+},
+"mcq": [
+{
+"q": "___ the one hand, it is cheap.",
+"opts": [
+"In",
+"On",
+"At"
+],
+"ans": 1,
+"why": "On the one hand."
+},
+{
+"q": "___ the other hand, it is slow.",
+"opts": [
+"On",
+"In",
+"At"
+],
+"ans": 0,
+"why": "On."
+},
+{
+"q": "If more schools offer classes, …",
+"opts": [
+"students will benefit",
+"students benefited",
+"students benefiting"
+],
+"ans": 0,
+"why": "1º cond."
+},
+{
+"q": "Which opens opinion?",
+"opts": [
+"On my opinion,",
+"By my opinion,",
+"In my opinion,"
+],
+"ans": 2,
+"why": "In my opinion."
+}
+],
+"fix": [
+{
+"wrong": "In one hand, it is cheap.",
+"right": "On the one hand, it is cheap.",
+"why": "on the one hand."
+},
+{
+"wrong": "On my opinion, it is good.",
+"right": "In my opinion, it is good.",
+"why": "in."
+},
+{
+"wrong": "If schools will offer classes, students win.",
+"right": "If schools offer classes, students will win.",
+"why": "Sem will após if."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “___ the one hand it is cheap.”",
+"answer": "On",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Eu acho que é bom.” com opinion",
+"answer": "In my opinion, it is good.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “If schools will offer classes, students win.”",
+"answer": "If schools offer classes, students will win.",
+"why": ""
+}
+]
+}

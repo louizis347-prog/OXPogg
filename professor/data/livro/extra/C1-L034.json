@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conectivo de par",
+"wrong": "Hardly the band had started than it ended.",
+"right": "Hardly had the band started when it ended.",
+"why": "Por analogia a no sooner, o brasileiro usa than com hardly. Hardly/scarcely pedem when; no sooner pede than."
+},
+"mcq": [
+{
+"q": "Hardly had the film begun ___ the screen froze.",
+"opts": [
+"than",
+"then",
+"when"
+],
+"ans": 2,
+"why": "when."
+},
+{
+"q": "No sooner had the film begun ___ the screen froze.",
+"opts": [
+"than",
+"when",
+"that"
+],
+"ans": 0,
+"why": "than."
+},
+{
+"q": "Distinguish A ___ B.",
+"opts": [
+"to",
+"from",
+"of"
+],
+"ans": 1,
+"why": "from."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Hardly she had left when snow fell.",
+"Hardly had she left than snow fell.",
+"Hardly had she left when snow fell."
+],
+"ans": 2,
+"why": "Inversão + when."
+}
+],
+"fix": [
+{
+"wrong": "No sooner had the staff left when snow fell.",
+"right": "No sooner had the staff left than snow fell.",
+"why": "than."
+},
+{
+"wrong": "Distinguish a fact of a rumor.",
+"right": "Distinguish a fact from a rumor.",
+"why": "from."
+},
+{
+"wrong": "Hardly the staff left when snow fell.",
+"right": "Hardly had the staff left when snow fell.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com No sooner: “We left and snow fell.”",
+"answer": "No sooner had the staff left than snow fell.",
+"why": ""
+},
+{
+"prompt": "Comece com Hardly: “We left and snow fell.”",
+"answer": "Hardly had the staff left when snow fell.",
+"why": ""
+},
+{
+"prompt": "Use distinguish: “Tell fact from rumor.”",
+"answer": "Distinguish fact from rumor.",
+"why": ""
+}
+]
+}

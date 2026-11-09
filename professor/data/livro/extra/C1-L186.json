@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "repetir objeto",
+"wrong": "We were prepared to walk away, but we didn’t it.",
+"right": "We were prepared to walk away, but we didn’t.",
+"why": "Em português “mas não o fizemos” mantém o pronome. Em inglês, a elipse com auxiliar dispensa o verbo e o objeto: but we didn’t."
+},
+"mcq": [
+{
+"q": "“We wanted to leave, but we ___.”",
+"opts": [
+"couldn’t",
+"couldn’t it",
+"couldn’t do"
+],
+"ans": 0,
+"why": "Auxiliar basta."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The union agreed to suspend and to review it pay.",
+"The union agreed to suspend and review pay.",
+"The union agreed suspend."
+],
+"ans": 1,
+"why": "Elipse do sujeito."
+},
+{
+"q": "“Had the mayor been ready? — Yes, he ___.”",
+"opts": [
+"was",
+"did",
+"had"
+],
+"ans": 2,
+"why": "Mesmo auxiliar."
+},
+{
+"q": "Ellipsis removes...",
+"opts": [
+"repeated words",
+"all verbs",
+"the subject always"
+],
+"ans": 0,
+"why": "Repetição."
+}
+],
+"fix": [
+{
+"wrong": "She resumed talks and she resumed them quickly.",
+"right": "She resumed talks and did so quickly.",
+"why": "do so retoma a ação."
+},
+{
+"wrong": "Will they sign? — Yes, they will sign it.",
+"right": "Will they sign? — Yes, they will.",
+"why": "Elipse."
+},
+{
+"wrong": "We could have walked away, but we hadn’t.",
+"right": "We could have walked away, but we didn’t.",
+"why": "Auxiliar coerente."
+}
+],
+"rewrite": [
+{
+"prompt": "Aplique elipse: “They wanted to resume talks, but they could not resume talks.”",
+"answer": "They wanted to resume talks, but they could not.",
+"why": ""
+},
+{
+"prompt": "Resposta curta: “Did the union suspend the strike?” → “Yes, the union ___.”",
+"answer": "Yes, the union did.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse: “She will sign if you will sign.”",
+"answer": "She will sign if you will.",
+"why": ""
+}
+]
+}

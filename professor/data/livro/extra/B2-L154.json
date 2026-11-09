@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem + to",
+"wrong": "The teacher told me don't talk.",
+"right": "The teacher told me not to talk.",
+"why": "Em português \"mandou não falar\"; em inglês use told + pessoa + not to + verbo."
+},
+"mcq": [
+{
+"q": "Qual é a pergunta indireta correta?",
+"opts": [
+"He asked where did I live.",
+"He asked where I lived.",
+"He asked where I do live."
+],
+"ans": 1,
+"why": "Sem do e sem inversão."
+},
+{
+"q": "\"Are you ready?\" reportada:",
+"opts": [
+"She asked was I ready.",
+"She asked that I was ready.",
+"She asked if I was ready."
+],
+"ans": 2,
+"why": "if + sujeito + verbo."
+},
+{
+"q": "\"Close the door!\" reportado:",
+"opts": [
+"He told me to close the door.",
+"He told me close the door.",
+"He said me to close the door."
+],
+"ans": 0,
+"why": "told + pessoa + to."
+},
+{
+"q": "Complete: She asked what time **___**.",
+"opts": [
+"was it",
+"it is it",
+"it was"
+],
+"ans": 2,
+"why": "Ordem afirmativa."
+}
+],
+"fix": [
+{
+"wrong": "She asked me where did I buy it.",
+"right": "She asked me where I had bought it.",
+"why": "Sem auxiliar do na pergunta indireta."
+},
+{
+"wrong": "He asked if was I tired.",
+"right": "He asked if I was tired.",
+"why": "Sem inversão."
+},
+{
+"wrong": "They told me don't worry.",
+"right": "They told me not to worry.",
+"why": "not to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “‘What is your job?’ he asked her.”",
+"answer": "He asked her what her job was.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “‘Did you call?’ she asked me.”",
+"answer": "She asked me if I had called.",
+"why": ""
+},
+{
+"prompt": "Reescreva em discurso indireto: “‘Where do you live?’ he asked me.”",
+"answer": "He asked me where I lived.",
+"why": ""
+}
+]
+}

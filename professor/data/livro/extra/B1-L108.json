@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estratégia de escuta",
+"wrong": "I listen the audio and take notes of the numbers.",
+"right": "I listen to the audio and write down the numbers.",
+"why": "Em português “escutar o áudio” dispensa preposição e “tomar nota” não existe. Em inglês, listen to e write down/take notes."
+},
+"mcq": [
+{
+"q": "Before listening, ___ the questions.",
+"opts": [
+"listen",
+"say",
+"read"
+],
+"ans": 2,
+"why": "Ler perguntas."
+},
+{
+"q": "I ___ the audio.",
+"opts": [
+"listen to",
+"listen",
+"hear to"
+],
+"ans": 0,
+"why": "listen to."
+},
+{
+"q": "During listening, note…",
+"opts": [
+"every word",
+"numbers, names, connectors",
+"nothing"
+],
+"ans": 1,
+"why": "Anotar."
+},
+{
+"q": "Signals: First, second, finally show…",
+"opts": [
+"contrast",
+"sequence",
+"opinion"
+],
+"ans": 1,
+"why": "Sequência."
+}
+],
+"fix": [
+{
+"wrong": "Listen the audio.",
+"right": "Listen to the audio.",
+"why": "to."
+},
+{
+"wrong": "Take notes of numbers.",
+"right": "Take notes of the numbers.",
+"why": "Artigo."
+},
+{
+"wrong": "I make a note.",
+"right": "I take notes.",
+"why": "take notes."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Listen the audio.” corrija",
+"answer": "Listen to the audio.",
+"why": ""
+},
+{
+"prompt": "Reescreva com take: “Write notes while you listen.”",
+"answer": "Take notes while you listen.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I listen to the audio.”",
+"answer": "I listened to the audio.",
+"why": ""
+}
+]
+}

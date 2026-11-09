@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inclined to",
+"wrong": "She is inclined agree.",
+"right": "She is inclined to agree.",
+"why": "Em português “inclinada a concordar” é natural, mas o brasileiro esquece o to. Em inglês, be inclined to + base."
+},
+"mcq": [
+{
+"q": "She is inclined ___ agree.",
+"opts": [
+"to",
+"for",
+"of"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "Teams ___ to misread tone.",
+"opts": [
+"tends",
+"tend",
+"are tending"
+],
+"ans": 1,
+"why": "tend to."
+},
+{
+"q": "Prone to means…",
+"opts": [
+"afraid",
+"slow",
+"likely to suffer"
+],
+"ans": 2,
+"why": "Propenso."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He tends to forget.",
+"He tends forgetting.",
+"He tend to forget."
+],
+"ans": 0,
+"why": "tends to."
+}
+],
+"fix": [
+{
+"wrong": "She is inclined agreeing.",
+"right": "She is inclined to agree.",
+"why": "to + base."
+},
+{
+"wrong": "He tend to forget.",
+"right": "He tends to forget.",
+"why": "-s."
+},
+{
+"wrong": "Teams are prone misread tone.",
+"right": "Teams are prone to misreading tone.",
+"why": "prone to + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Use be inclined to: “She tends to agree.”",
+"answer": "She is inclined to agree.",
+"why": ""
+},
+{
+"prompt": "Use tend to: “He is inclined to forget.”",
+"answer": "He tends to forget.",
+"why": ""
+},
+{
+"prompt": "Use prone to: “Teams often misread tone.”",
+"answer": "Teams are prone to misreading tone.",
+"why": ""
+}
+]
+}

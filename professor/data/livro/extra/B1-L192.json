@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "números e porcentagem",
+"wrong": "62% of the people is online.",
+"right": "62% of the people are online.",
+"why": "Em português “62% das pessoas está” às vezes concorda no singular. Em inglês, percent of + plural pede verbo no plural."
+},
+"mcq": [
+{
+"q": "25% =",
+"opts": [
+"a third",
+"a quarter",
+"a half"
+],
+"ans": 1,
+"why": "25% = um quarto."
+},
+{
+"q": "About two thirds of people **___**.",
+"opts": [
+"is using it",
+"uses it",
+"use it"
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "8% is:",
+"opts": [
+"most",
+"half",
+"less than a tenth"
+],
+"ans": 2,
+"why": "8% < 10%."
+},
+{
+"q": "62% =",
+"opts": [
+"six two percent",
+"sixty-two percent",
+"sixty twelve percent"
+],
+"ans": 1,
+"why": "Leitura."
+}
+],
+"fix": [
+{
+"wrong": "Sixty-two percents use phones.",
+"right": "Sixty-two percent use phones.",
+"why": "Percent não leva -s."
+},
+{
+"wrong": "A quarter of people is online.",
+"right": "A quarter of people are online.",
+"why": "People é plural."
+},
+{
+"wrong": "About the half use it.",
+"right": "About half use it.",
+"why": "Sem the."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva por extenso: “50%”",
+"answer": "half",
+"why": ""
+},
+{
+"prompt": "Escreva: “About 66%”",
+"answer": "about two thirds",
+"why": ""
+},
+{
+"prompt": "Plural: “A quarter of the person uses it.” → “A quarter of the … use it.”",
+"answer": "A quarter of the people use it.",
+"why": ""
+}
+]
+}

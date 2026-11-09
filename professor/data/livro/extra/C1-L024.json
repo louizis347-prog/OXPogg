@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "distinguish from",
+"wrong": "Distinguish a trend of a fad.",
+"right": "Distinguish a trend from a fad.",
+"why": "O brasileiro usa “distinguir de” e escolhe of ou between. Em inglês, distinguish A from B; também differentiate between."
+},
+"mcq": [
+{
+"q": "Distinguish a trend ___ a fad.",
+"opts": [
+"to",
+"of",
+"from"
+],
+"ans": 2,
+"why": "from."
+},
+{
+"q": "I can’t ___ one cousin from the other.",
+"opts": [
+"tell",
+"say",
+"speak"
+],
+"ans": 0,
+"why": "tell A from B."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"distinguish from A and B",
+"distinguish between A and B",
+"distinguish between A to B"
+],
+"ans": 1,
+"why": "between A and B."
+},
+{
+"q": "Differentiate takes…",
+"opts": [
+"of",
+"with",
+"between / from"
+],
+"ans": 2,
+"why": "between ou from."
+}
+],
+"fix": [
+{
+"wrong": "Distinguish fact of fiction.",
+"right": "Distinguish fact from fiction.",
+"why": "from."
+},
+{
+"wrong": "I can’t say one cousin from the other.",
+"right": "I can’t tell one cousin from the other.",
+"why": "tell."
+},
+{
+"wrong": "Distinguish between fact from fiction.",
+"right": "Distinguish between fact and fiction.",
+"why": "between…and."
+}
+],
+"rewrite": [
+{
+"prompt": "Use distinguish: “Tell fact from fiction.”",
+"answer": "Distinguish fact from fiction.",
+"why": ""
+},
+{
+"prompt": "Use between: “Distinguish fact from fiction.”",
+"answer": "Distinguish between fact and fiction.",
+"why": ""
+},
+{
+"prompt": "Use tell: “I can’t distinguish one cousin from the other.”",
+"answer": "I can’t tell one cousin from the other.",
+"why": ""
+}
+]
+}

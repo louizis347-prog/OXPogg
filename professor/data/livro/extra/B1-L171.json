@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + pessoa",
+"wrong": "She said me a secret.",
+"right": "She told me a secret.",
+"why": "Em português “disse-me um segredo”; em inglês say não aceita pessoa direta, e tell sim."
+},
+"mcq": [
+{
+"q": "Can you **___** a secret?",
+"opts": [
+"say",
+"hold up",
+"keep"
+],
+"ans": 2,
+"why": "Guardar segredo = keep a secret."
+},
+{
+"q": "She **___** me a secret yesterday.",
+"opts": [
+"told",
+"spoke",
+"said"
+],
+"ans": 0,
+"why": "Tell something to someone: told me."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She told to me a secret.",
+"She told me a secret.",
+"She said me a secret."
+],
+"ans": 1,
+"why": "Tell + pessoa direto, sem to."
+},
+{
+"q": "Keep a secret significa:",
+"opts": [
+"guardar",
+"revelar",
+"inventar"
+],
+"ans": 0,
+"why": "Keep = guardar."
+}
+],
+"fix": [
+{
+"wrong": "She said me a secret.",
+"right": "She told me a secret.",
+"why": "Say não leva pessoa direta; tell sim."
+},
+{
+"wrong": "I keeped the secret.",
+"right": "I kept the secret.",
+"why": "Passado de keep: kept."
+},
+{
+"wrong": "He tells a secret to me yesterday.",
+"right": "He told me a secret yesterday.",
+"why": "Yesterday exige passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “She keeps a secret.”",
+"answer": "She kept a secret.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “He tells me a secret.”",
+"answer": "He told me a secret.",
+"why": ""
+},
+{
+"prompt": "Transforme em pergunta: “You can keep a secret.”",
+"answer": "Can you keep a secret?",
+"why": ""
+}
+]
+}

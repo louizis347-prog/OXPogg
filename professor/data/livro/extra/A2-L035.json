@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have = tomar",
+"wrong": "I took a coffee with Ana.",
+"right": "I had a coffee with Ana.",
+"why": "Em português 'tomar café/banho' usa tomar; em inglês eat/drink/shower/lunch/party combinam com have."
+},
+"mcq": [
+{
+"q": "I ___ lunch at noon.",
+"opts": [
+"had",
+"made",
+"took"
+],
+"ans": 0,
+"why": "have lunch."
+},
+{
+"q": "We ___ a party.",
+"opts": [
+"had",
+"took",
+"did"
+],
+"ans": 0,
+"why": "have a party."
+},
+{
+"q": "Passado de have:",
+"opts": [
+"had",
+"has",
+"haved"
+],
+"ans": 0,
+"why": "had."
+},
+{
+"q": "Negativa: “I had time”",
+"opts": [
+"I didn't had time.",
+"I didn't have time.",
+"I hadn't time."
+],
+"ans": 1,
+"why": "didn't have."
+}
+],
+"fix": [
+{
+"wrong": "I haved a cat.",
+"right": "I had a cat.",
+"why": "had."
+},
+{
+"wrong": "She didn't had lunch.",
+"right": "She didn't have lunch.",
+"why": "base."
+},
+{
+"wrong": "We took a party.",
+"right": "We had a party.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I have a shower.”",
+"answer": "I had a shower.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She had lunch.”",
+"answer": "She didn't have lunch.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You had a good time.”",
+"answer": "Did you have a good time?",
+"why": ""
+}
+]
+}

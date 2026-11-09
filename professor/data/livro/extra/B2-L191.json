@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "stop somebody from",
+"wrong": "The rain stopped us to go out.",
+"right": "The rain stopped us from going out.",
+"why": "O português \"impediu-nos de sair\" leva o aluno ao infinitivo. Em inglês: stop somebody from + -ing."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"I can't stop to think about it.",
+"I can't stop think about it.",
+"I can't stop thinking about it."
+],
+"ans": 2,
+"why": "can't stop + -ing."
+},
+{
+"q": "Em qual frase that é impossível?",
+"opts": [
+"My car, which is old, ...",
+"The car that I bought...",
+"The car which I bought..."
+],
+"ans": 0,
+"why": "Depois de vírgula, nunca that."
+},
+{
+"q": "Em qual frase that é impossível?",
+"opts": [
+"The car that I bought...",
+"My car, which is old, ...",
+"The car which I bought..."
+],
+"ans": 1,
+"why": "Depois de vírgula, nunca that."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Having finished, he left.",
+"Having finish, he left.",
+"Finished having, he left."
+],
+"ans": 0,
+"why": "Having + particípio."
+}
+],
+"fix": [
+{
+"wrong": "Stop to talk and listen!",
+"right": "Stop talking and listen!",
+"why": "Pare de falar: -ing."
+},
+{
+"wrong": "The man whose his car was stolen called.",
+"right": "The man whose car was stolen called.",
+"why": "Sem his."
+},
+{
+"wrong": "The man whose his car was stolen called.",
+"right": "The man whose car was stolen called.",
+"why": "Sem his."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com which: “London is huge. It has many parks.”",
+"answer": "London, which has many parks, is huge.",
+"why": ""
+},
+{
+"prompt": "Una com which: “London is huge. It has many parks.”",
+"answer": "London, which has many parks, is huge.",
+"why": ""
+},
+{
+"prompt": "Reduza: “The students who study here are happy.”",
+"answer": "The students studying here are happy.",
+"why": ""
+}
+]
+}

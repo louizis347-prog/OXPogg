@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "clivada e preposição",
+"wrong": "It is transparency what matters.",
+"right": "It is transparency that matters.",
+"why": "O brasileiro traduz “é a transparência que importa” usando what. Em inglês: It is … that."
+},
+"mcq": [
+{
+"q": "It is transparency ___ matters.",
+"opts": [
+"that",
+"what",
+"which it"
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "Refrain ___ overstating.",
+"opts": [
+"of",
+"from",
+"to"
+],
+"ans": 1,
+"why": "from."
+},
+{
+"q": "Students want to have a ___ .",
+"opts": [
+"tell",
+"speak",
+"say"
+],
+"ans": 2,
+"why": "have a say."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It will have an impact on pay.",
+"It will make impact in pay.",
+"It will do an impact on pay."
+],
+"ans": 0,
+"why": "have an impact on."
+}
+],
+"fix": [
+{
+"wrong": "It is transparency what matters.",
+"right": "It is transparency that matters.",
+"why": "that."
+},
+{
+"wrong": "Refrain of overstating.",
+"right": "Refrain from overstating.",
+"why": "from."
+},
+{
+"wrong": "Staff want a say of the plan.",
+"right": "Staff want a say in the plan.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Clivada: “Transparency matters.”",
+"answer": "It is transparency that matters.",
+"why": ""
+},
+{
+"prompt": "Use refrain from: “Don’t overstate.”",
+"answer": "Refrain from overstating.",
+"why": ""
+},
+{
+"prompt": "Use have an impact on: “It affects pay.”",
+"answer": "It has an impact on pay.",
+"why": ""
+}
+]
+}

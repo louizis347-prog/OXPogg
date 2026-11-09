@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "although ... but",
+"wrong": "Although it was cold, but we went out.",
+"right": "Although it was cold, we went out.",
+"why": "Em português, \"embora... mas\" é comum na fala. Em inglês, although já contrasta; não se usa but junto."
+},
+"mcq": [
+{
+"q": "Complete: **___** the traffic, he arrived early.",
+"opts": [
+"Although",
+"Despite",
+"Whereas"
+],
+"ans": 1,
+"why": "despite + substantivo."
+},
+{
+"q": "Qual indica consequência?",
+"opts": [
+"nevertheless",
+"furthermore",
+"consequently"
+],
+"ans": 2,
+"why": "consequently = como consequência."
+},
+{
+"q": "\"Remember to lock the door\" = ",
+"opts": [
+"Lembre-se de trancar.",
+"Lembro que tranquei.",
+"Eu tranquei."
+],
+"ans": 0,
+"why": "remember to = tarefa."
+},
+{
+"q": "\"unlikely\" significa...",
+"opts": [
+"muito provável",
+"obrigatório",
+"pouco provável"
+],
+"ans": 2,
+"why": "un- = negativo."
+}
+],
+"fix": [
+{
+"wrong": "Despite it rained, we went.",
+"right": "Although it rained, we went.",
+"why": "Oração: although."
+},
+{
+"wrong": "Moreover of that, he paid.",
+"right": "Moreover, he paid.",
+"why": "moreover não leva of."
+},
+{
+"wrong": "She forgot calling him, so he was angry.",
+"right": "She forgot to call him, so he was angry.",
+"why": "Tarefa não feita."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com therefore: “Prices rose. Demand fell.”",
+"answer": "Prices rose; therefore, demand fell.",
+"why": ""
+},
+{
+"prompt": "Reescreva (tarefa): “Don't forget. Buy bread.”",
+"answer": "Remember to buy bread.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “She probably won't come.”",
+"answer": "She is unlikely to come.",
+"why": ""
+}
+]
+}

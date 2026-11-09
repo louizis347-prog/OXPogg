@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be + particípio (formas)",
+"wrong": "Streets build in 1900. Cities have plan. The bridge will repair.",
+"right": "Streets were built in 1900. Cities have been planned. The bridge will be repaired.",
+"why": "Em português “foram construídas”, “têm sido planejadas” e “será consertada” têm ser/ter + particípio. O brasileiro omite be ou been. Em inglês: am/is/are/was/were/been/be + pp."
+},
+"mcq": [
+{
+"q": "Streets ___ built in 1900.",
+"opts": [
+"were",
+"are",
+"have"
+],
+"ans": 0,
+"why": "were."
+},
+{
+"q": "Cities ___ been planned.",
+"opts": [
+"are",
+"were",
+"have"
+],
+"ans": 2,
+"why": "have been."
+},
+{
+"q": "The bridge will ___ repaired.",
+"opts": [
+"been",
+"be",
+"being"
+],
+"ans": 1,
+"why": "will be."
+},
+{
+"q": "Present passive: Streets ___ built.",
+"opts": [
+"are",
+"were",
+"been"
+],
+"ans": 0,
+"why": "are."
+}
+],
+"fix": [
+{
+"wrong": "The road was close.",
+"right": "The road was closed.",
+"why": "pp."
+},
+{
+"wrong": "The houses has been sold.",
+"right": "The houses have been sold.",
+"why": "Plural."
+},
+{
+"wrong": "The hall will clean.",
+"right": "The hall will be cleaned.",
+"why": "be."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “Streets are built.”",
+"answer": "Streets were built.",
+"why": ""
+},
+{
+"prompt": "Passe para o futuro: “The bridge is repaired.”",
+"answer": "The bridge will be repaired.",
+"why": ""
+},
+{
+"prompt": "Passe para o perfeito: “Cities are planned.”",
+"answer": "Cities have been planned.",
+"why": ""
+}
+]
+}

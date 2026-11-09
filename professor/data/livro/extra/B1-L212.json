@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Although of the pain, Rui finished the race.",
+"right": "Although it hurt, Rui finished the race.",
+"why": "Português “apesar da dor” leva substantivo; com although é preciso uma oração, e o brasileiro cria “although of”."
+},
+"mcq": [
+{
+"q": "**___** Eva was sick, she cooked dinner.",
+"opts": [
+"Despite",
+"Although",
+"In spite"
+],
+"ans": 1,
+"why": "Oração."
+},
+{
+"q": "Despite **___** hungry, Ben waited.",
+"opts": [
+"be",
+"was",
+"being"
+],
+"ans": 2,
+"why": "Despite + -ing."
+},
+{
+"q": "**___** the cold, they camped.",
+"opts": [
+"Despite",
+"Even though",
+"Although"
+],
+"ans": 0,
+"why": "Substantivo."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Although she was upset, she smiled.",
+"Although upset but she smiled.",
+"Despite she was upset, she smiled."
+],
+"ans": 0,
+"why": "Oração com although."
+}
+],
+"fix": [
+{
+"wrong": "Although tired, but Zoe kept dancing.",
+"right": "Although she was tired, Zoe kept dancing.",
+"why": "Sem but."
+},
+{
+"wrong": "Despite she was nervous, she sang.",
+"right": "Despite being nervous, she sang.",
+"why": "Despite + -ing."
+},
+{
+"wrong": "Despite of working late, Ian smiled.",
+"right": "Despite working late, Ian smiled.",
+"why": "Sem of."
+}
+],
+"rewrite": [
+{
+"prompt": "Use despite + -ing: “Although Eva was ill, she cooked.”",
+"answer": "Despite being ill, Eva cooked.",
+"why": ""
+},
+{
+"prompt": "Use although: “Despite the heat, Ben waited.” (it was hot)",
+"answer": "Although it was hot, Ben waited.",
+"why": ""
+},
+{
+"prompt": "Use even though: “Although Lia lost, she laughed.”",
+"answer": "Even though Lia lost, she laughed.",
+"why": ""
+}
+]
+}

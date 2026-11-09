@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "It can’t be accidental, so the film follows to a town.",
+"right": "The film follows a town.",
+"why": "Follow é transitivo direto; o brasileiro acrescenta a por “seguir a”."
+},
+"mcq": [
+{
+"q": "The film **___** a town.",
+"opts": [
+"follow",
+"follows",
+"follows to"
+],
+"ans": 1,
+"why": "3ª pessoa."
+},
+{
+"q": "It can’t be an accident means:",
+"opts": [
+"foi",
+"talvez foi",
+"certeza que não foi"
+],
+"ans": 2,
+"why": "Dedução."
+},
+{
+"q": "The subject is:",
+"opts": [
+"sujeito gramatical apenas",
+"resumo",
+"assunto"
+],
+"ans": 2,
+"why": "Assunto do filme."
+},
+{
+"q": "Equilíbrio:",
+"opts": [
+"ballance",
+"balance",
+"balanse"
+],
+"ans": 1,
+"why": "Grafia."
+}
+],
+"fix": [
+{
+"wrong": "The film follow a town.",
+"right": "The film follows a town.",
+"why": "-s."
+},
+{
+"wrong": "It can’t been an accident.",
+"right": "It can’t be an accident.",
+"why": "Be."
+},
+{
+"wrong": "The film is about of a town.",
+"right": "The film is about a town.",
+"why": "About sem of."
+}
+],
+"rewrite": [
+{
+"prompt": "3ª pessoa: “Films follow a town.” (The film…)",
+"answer": "The film follows a town.",
+"why": ""
+},
+{
+"prompt": "Dedução negativa: “I’m sure it isn’t an accident.” (can’t)",
+"answer": "It can’t be an accident.",
+"why": ""
+},
+{
+"prompt": "Negativa: “The film follows a town.”",
+"answer": "The film doesn’t follow a town.",
+"why": ""
+}
+]
+}

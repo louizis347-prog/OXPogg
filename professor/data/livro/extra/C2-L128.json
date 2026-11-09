@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "We call to the mayor to retract the statement.",
+"right": "We call on the mayor to retract the statement.",
+"why": "Português “apelamos ao prefeito”; em inglês call on, não call to."
+},
+"mcq": [
+{
+"q": "Strong appeal:",
+"opts": [
+"We urge the mayor retract…",
+"We urge for the mayor to retract…",
+"We urge the mayor to retract…"
+],
+"ans": 2,
+"why": "urge + obj + to."
+},
+{
+"q": "Public call:",
+"opts": [
+"We call all parties to adopt…",
+"We call to all parties…",
+"We call on all parties to adopt…"
+],
+"ans": 2,
+"why": "call on."
+},
+{
+"q": "Urge takes…",
+"opts": [
+"object + to",
+"ing",
+"that only"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "Call on = …",
+"opts": [
+"telephone",
+"visit",
+"appeal to"
+],
+"ans": 2,
+"why": "Pedir."
+}
+],
+"fix": [
+{
+"wrong": "We urge the mayor for retract it.",
+"right": "We urge the mayor to retract it.",
+"why": "to."
+},
+{
+"wrong": "We call all parties to adopt it.",
+"right": "We call on all parties to adopt it.",
+"why": "on."
+},
+{
+"wrong": "We urge to the mayor.",
+"right": "We urge the mayor.",
+"why": "Transitivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com urge: “Please retract it, mayor.”",
+"answer": "We urge the mayor to retract it.",
+"why": ""
+},
+{
+"prompt": "Reescreva com call on: “We ask all parties to adopt it.”",
+"answer": "We call on all parties to adopt it.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We urge you to retract.”",
+"answer": "We urge you not to retract.",
+"why": ""
+}
+]
+}

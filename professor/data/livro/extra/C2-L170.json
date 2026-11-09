@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tom",
+"wrong": "The argument conflates, with respect.",
+"right": "With respect, the argument conflates two ideas.",
+"why": "Português coloca “com todo o respeito” no fim; inglês abre a crítica com With respect,."
+},
+"mcq": [
+{
+"q": "Soften a criticism:",
+"opts": [
+"With respect, the argument conflates…",
+"The argument is wrong, respect.",
+"Respect, argument conflate."
+],
+"ans": 0,
+"why": "With respect."
+},
+{
+"q": "That… does not show that…",
+"opts": [
+"limits a conclusion",
+"asks",
+"ends"
+],
+"ans": 0,
+"why": "Limita."
+},
+{
+"q": "Conflates means…",
+"opts": [
+"mixes up",
+"proves",
+"separates"
+],
+"ans": 0,
+"why": "Confunde."
+},
+{
+"q": "Which limits the conclusion?",
+"opts": [
+"That shows rules useless.",
+"Does rules not show.",
+"That does not show that rules are useless."
+],
+"ans": 2,
+"why": "does not show that."
+}
+],
+"fix": [
+{
+"wrong": "That not shows that he lied.",
+"right": "That does not show that he lied.",
+"why": "does not."
+},
+{
+"wrong": "With respect the argument conflate.",
+"right": "With respect, the argument conflates two ideas.",
+"why": "-s."
+},
+{
+"wrong": "That show not that.",
+"right": "That does not show that.",
+"why": "Auxiliar."
+}
+],
+"rewrite": [
+{
+"prompt": "Suavize: “Your argument is wrong.”",
+"answer": "With respect, your argument is wrong.",
+"why": ""
+},
+{
+"prompt": "Limite: “That shows he lied.”",
+"answer": "That does not show that he lied.",
+"why": ""
+},
+{
+"prompt": "Passado: “The argument conflates two ideas.”",
+"answer": "The argument conflated two ideas.",
+"why": ""
+}
+]
+}

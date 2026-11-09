@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "família de palavras",
+"wrong": "The result is significative.",
+"right": "The result is significant.",
+"why": "Português “significativo”; o brasileiro cria significative. Em inglês: signify, significant, significance."
+},
+"mcq": [
+{
+"q": "Adjetivo:",
+"opts": [
+"signify",
+"significant",
+"significance"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "Substantivo:",
+"opts": [
+"significant",
+"signified",
+"significance"
+],
+"ans": 2,
+"why": "Substantivo."
+},
+{
+"q": "Verbo:",
+"opts": [
+"signify",
+"significance",
+"significant"
+],
+"ans": 0,
+"why": "Verbo."
+},
+{
+"q": "Advérbio:",
+"opts": [
+"significant",
+"significance",
+"significantly"
+],
+"ans": 2,
+"why": "Advérbio."
+}
+],
+"fix": [
+{
+"wrong": "It is a significative result.",
+"right": "It is a significant result.",
+"why": "Significant."
+},
+{
+"wrong": "The significant of this is huge.",
+"right": "The significance of this is huge.",
+"why": "Substantivo."
+},
+{
+"wrong": "It significant a real effect.",
+"right": "It signifies a real effect.",
+"why": "Verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Forme o advérbio: “significant”",
+"answer": "significantly",
+"why": ""
+},
+{
+"prompt": "Use o verbo: “The sign means a real effect.” (signifies)",
+"answer": "The sign signifies a real effect.",
+"why": ""
+},
+{
+"prompt": "Use o substantivo: “It is of great … (significant)”",
+"answer": "It is of great significance.",
+"why": ""
+}
+]
+}

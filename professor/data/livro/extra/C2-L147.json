@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Replace planks one for one.",
+"right": "Replace planks one by one.",
+"why": "Português “um a um”; inglês one by one."
+},
+"mcq": [
+{
+"q": "Which phrase shows the order of replacement?",
+"opts": [
+"one for one",
+"one to one",
+"one by one"
+],
+"ans": 2,
+"why": "one by one."
+},
+{
+"q": "Once + perfect:",
+"opts": [
+"Once every part is replacing",
+"Once every part replace",
+"Once every part is replaced, it differs."
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "Once = …",
+"opts": [
+"when finished",
+"never",
+"before"
+],
+"ans": 0,
+"why": "Quando."
+},
+{
+"q": "Replace planks…",
+"opts": [
+"one by one",
+"one one by",
+"by one one"
+],
+"ans": 0,
+"why": "Ordem."
+}
+],
+"fix": [
+{
+"wrong": "Replace planks one for one.",
+"right": "Replace planks one by one.",
+"why": "by."
+},
+{
+"wrong": "Once every part replaced, it differs.",
+"right": "Once every part is replaced, it differs.",
+"why": "is."
+},
+{
+"wrong": "Once every part will be replaced, it differs.",
+"right": "Once every part is replaced, it differs.",
+"why": "Presente."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Replace the planks, each in turn.”",
+"answer": "Replace the planks one by one.",
+"why": ""
+},
+{
+"prompt": "Reescreva com once: “When every part is replaced, it differs.”",
+"answer": "Once every part is replaced, it differs.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Replace the planks.”",
+"answer": "Don’t replace the planks.",
+"why": ""
+}
+]
+}

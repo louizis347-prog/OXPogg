@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "remember doing ≠ to do",
+"wrong": "I remember to see her last year at school.",
+"right": "I remember seeing her last year at school.",
+"why": "Em português \"lembrei de ver\" mistura lembrança e tarefa. Em inglês: remember doing = lembrar de algo que fez; remember to do = lembrar de fazer algo."
+},
+"mcq": [
+{
+"q": "\"I remember locking the door\" = ",
+"opts": [
+"Lembro que tranquei.",
+"Lembrei de trancar.",
+"Vou trancar."
+],
+"ans": 0,
+"why": "remember -ing = lembrança."
+},
+{
+"q": "\"Remember to lock the door\" = ",
+"opts": [
+"Lembro que tranquei.",
+"Lembre-se de trancar.",
+"Eu tranquei."
+],
+"ans": 1,
+"why": "remember to = tarefa."
+},
+{
+"q": "Complete: Don't forget **___** milk.",
+"opts": [
+"buying",
+"buy",
+"to buy"
+],
+"ans": 2,
+"why": "forget to = esquecer a tarefa."
+},
+{
+"q": "Complete: I'll never forget **___** the sea.",
+"opts": [
+"to see",
+"seeing",
+"see"
+],
+"ans": 1,
+"why": "forget -ing = não esquecer a experiência."
+}
+],
+"fix": [
+{
+"wrong": "Remember to meeting me tomorrow.",
+"right": "Remember to meet me tomorrow.",
+"why": "to + base."
+},
+{
+"wrong": "I don't remember to give you the key.",
+"right": "I don't remember giving you the key.",
+"why": "Lembrança: -ing."
+},
+{
+"wrong": "She forgot calling him, so he was angry.",
+"right": "She forgot to call him, so he was angry.",
+"why": "Tarefa não feita."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva (lembrança): “I remember. I met her in 2010.”",
+"answer": "I remember meeting her in 2010.",
+"why": ""
+},
+{
+"prompt": "Reescreva (tarefa): “Don't forget. Buy bread.”",
+"answer": "Remember to buy bread.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “She remembered to call.”",
+"answer": "She didn't remember to call.",
+"why": ""
+}
+]
+}

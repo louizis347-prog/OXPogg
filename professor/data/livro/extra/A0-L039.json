@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "from obrigatório",
+"wrong": "Where are you?",
+"right": "Where are you from?",
+"why": "Where are you? pergunta o lugar agora; para origem é preciso from."
+},
+"mcq": [
+{
+"q": "Where ___ she from?",
+"opts": [
+"are",
+"does",
+"is"
+],
+"ans": 2,
+"why": "She: is."
+},
+{
+"q": "Where ___ they from?",
+"opts": [
+"are",
+"is",
+"do"
+],
+"ans": 0,
+"why": "They: are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Where he is from?",
+"Where is he from?",
+"Where is from he?"
+],
+"ans": 1,
+"why": "Wh + be + sujeito."
+},
+{
+"q": "“Where are you?” asks for…",
+"opts": [
+"origin",
+"age",
+"present place"
+],
+"ans": 2,
+"why": "Lugar atual."
+}
+],
+"fix": [
+{
+"wrong": "Where is they from?",
+"right": "Where are they from?",
+"why": "They: are."
+},
+{
+"wrong": "Where are you? (origem)",
+"right": "Where are you from?",
+"why": "Falta from."
+},
+{
+"wrong": "I am of Brazil.",
+"right": "I am from Brazil.",
+"why": "From."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “She is from Peru.” (Where…)",
+"answer": "Where is she from?",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “They are from Spain.” (Where…)",
+"answer": "Where are they from?",
+"why": ""
+},
+{
+"prompt": "Responda com from: “I / Brazil”",
+"answer": "I am from Brazil.",
+"why": ""
+}
+]
+}

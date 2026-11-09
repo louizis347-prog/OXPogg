@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Tomorrow at nine the crew will working.",
+"right": "Tomorrow at nine the crew will be working.",
+"why": "Faltando o be, o brasileiro cria “will working”. Revise: will be + -ing (em curso) e will have + particípio (concluído)."
+},
+"mcq": [
+{
+"q": "At nine, the crew **___** loading the truck.",
+"opts": [
+"will have",
+"will be",
+"will"
+],
+"ans": 1,
+"why": "Em curso."
+},
+{
+"q": "By nine, the crew **___** loaded the truck.",
+"opts": [
+"will",
+"will have",
+"will be"
+],
+"ans": 1,
+"why": "Concluído."
+},
+{
+"q": "Esther **___** be home; the lights are off.",
+"opts": [
+"may to",
+"must",
+"can’t"
+],
+"ans": 2,
+"why": "Dedução negativa."
+},
+{
+"q": "Dedução afirmativa:",
+"opts": [
+"He must be hungry.",
+"He must is hungry.",
+"He must to be hungry."
+],
+"ans": 0,
+"why": "Must + base."
+}
+],
+"fix": [
+{
+"wrong": "By nine the crew will be load it.",
+"right": "By nine the crew will have loaded it.",
+"why": "Concluído."
+},
+{
+"wrong": "Dan mustn’t have called; the phone is silent.",
+"right": "Dan can’t have called; the phone is silent.",
+"why": "Can’t have."
+},
+{
+"wrong": "Ella will have wait for an hour.",
+"right": "Ella will have waited for an hour.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “At nine the crew loads the truck.” (will be)",
+"answer": "At nine the crew will be loading the truck.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The crew loads the truck by nine.” (will have)",
+"answer": "The crew will have loaded the truck by nine.",
+"why": ""
+},
+{
+"prompt": "Dedução: “I’m sure Dan is asleep.” (must)",
+"answer": "Dan must be asleep.",
+"why": ""
+}
+]
+}

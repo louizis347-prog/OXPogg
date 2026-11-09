@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "a × an",
+"wrong": "She is a engineer.",
+"right": "She is an engineer.",
+"why": "O português tem um/uma sem depender do som seguinte; em inglês usa-se an antes de som de vogal."
+},
+"mcq": [
+{
+"q": "___ apple",
+"opts": [
+"a",
+"an",
+"the"
+],
+"ans": 1,
+"why": "Som de vogal: an."
+},
+{
+"q": "Plural of **child**",
+"opts": [
+"childs",
+"childes",
+"children"
+],
+"ans": 2,
+"why": "Irregular."
+},
+{
+"q": "You have a pen. It is ___ pen.",
+"opts": [
+"your",
+"you",
+"yours"
+],
+"ans": 0,
+"why": "Possessivo antes do substantivo: your."
+},
+{
+"q": "Plural far: ___ are birds.",
+"opts": [
+"That",
+"Those",
+"These"
+],
+"ans": 1,
+"why": "Plural longe: those."
+}
+],
+"fix": [
+{
+"wrong": "I have a apple.",
+"right": "I have an apple.",
+"why": "Som de vogal."
+},
+{
+"wrong": "Five womans are here.",
+"right": "Five women are here.",
+"why": "Plural irregular."
+},
+{
+"wrong": "Tom has her phone.",
+"right": "Tom has his phone.",
+"why": "Tom é homem."
+}
+],
+"rewrite": [
+{
+"prompt": "Coloque no plural: “one box”",
+"answer": "two boxes",
+"why": ""
+},
+{
+"prompt": "Reescreva com her: “This is Ana’s bag.”",
+"answer": "This is her bag.",
+"why": ""
+},
+{
+"prompt": "Mude para singular: “These are books.”",
+"answer": "This is a book.",
+"why": ""
+}
+]
+}

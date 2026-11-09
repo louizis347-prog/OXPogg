@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "colocação",
+"wrong": "We did an agreement.",
+"right": "We reached an agreement.",
+"why": "Em português “fazer um acordo”, e o brasileiro usa do/make. Em inglês, colocação: reach an agreement, sign a deal, find a compromise."
+},
+"mcq": [
+{
+"q": "They **___** a deal yesterday.",
+"opts": [
+"did",
+"signed",
+"made sign"
+],
+"ans": 1,
+"why": "Sign a deal."
+},
+{
+"q": "We **___** a compromise.",
+"opts": [
+"found",
+"put",
+"did"
+],
+"ans": 0,
+"why": "Find a compromise."
+},
+{
+"q": "Respect other **___**.",
+"opts": [
+"opinions",
+"opinion's",
+"opinioned"
+],
+"ans": 0,
+"why": "Plural: opinions."
+},
+{
+"q": "Reach an agreement means:",
+"opts": [
+"ler um acordo",
+"tocar num acordo",
+"chegar a um acordo"
+],
+"ans": 2,
+"why": "Reach = alcançar."
+}
+],
+"fix": [
+{
+"wrong": "We did a compromise.",
+"right": "We found a compromise.",
+"why": "Colocação com find."
+},
+{
+"wrong": "They reached to an agreement.",
+"right": "They reached an agreement.",
+"why": "Reach é direto, sem to."
+},
+{
+"wrong": "Respect to other opinions.",
+"right": "Respect other opinions.",
+"why": "Verbo transitivo direto."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “We reach an agreement.”",
+"answer": "We reached an agreement.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “They sign a deal.”",
+"answer": "They signed a deal.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “We find a compromise.”",
+"answer": "We found a compromise.",
+"why": ""
+}
+]
+}

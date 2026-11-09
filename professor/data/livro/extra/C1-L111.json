@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "the… the",
+"wrong": "More I give, more I learn.",
+"right": "The more I give, the more I learn.",
+"why": "O português diz “quanto mais… mais” sem artigo. Em inglês, the é obrigatório antes de cada comparativo."
+},
+"mcq": [
+{
+"q": "___ sooner you book, the cheaper it is.",
+"opts": [
+"A",
+"Much",
+"The"
+],
+"ans": 2,
+"why": "The."
+},
+{
+"q": "The louder the music, the ___ the neighbors complain.",
+"opts": [
+"more",
+"most",
+"many"
+],
+"ans": 0,
+"why": "more."
+},
+{
+"q": "“The sooner, the better” é…",
+"opts": [
+"gíria",
+"fórmula fixa",
+"erro"
+],
+"ans": 1,
+"why": "Fórmula."
+},
+{
+"q": "The ___ she practiced, the better she played.",
+"opts": [
+"hardly",
+"hard",
+"harder"
+],
+"ans": 2,
+"why": "Comparativo harder."
+}
+],
+"fix": [
+{
+"wrong": "The more you read, better you write.",
+"right": "The more you read, the better you write.",
+"why": "the dois."
+},
+{
+"wrong": "More I give, more I learn.",
+"right": "The more I give, the more I learn.",
+"why": "the…the."
+},
+{
+"wrong": "The harder she practiced, the more good she played.",
+"right": "The harder she practiced, the better she played.",
+"why": "better."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “You read more. You write better.” (The more…)",
+"answer": "The more you read, the better you write.",
+"why": ""
+},
+{
+"prompt": "Una: “It is cheap if you book early.” (The earlier…)",
+"answer": "The earlier you book, the cheaper it is.",
+"why": ""
+},
+{
+"prompt": "Una: “We give more. We learn more.”",
+"answer": "The more we give, the more we learn.",
+"why": ""
+}
+]
+}

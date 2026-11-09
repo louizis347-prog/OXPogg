@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "come × go",
+"wrong": "I come to home every day, and I come from São Paulo.",
+"right": "I come home every day, and I come from São Paulo.",
+"why": "Em português “vir para casa” e “ir para casa” se confundem. O brasileiro coloca to antes de home. Em inglês, home é advérbio: come home/go home, sem to."
+},
+"mcq": [
+{
+"q": "I ___ from Brazil.",
+"opts": [
+"go",
+"go to",
+"come"
+],
+"ans": 2,
+"why": "origem."
+},
+{
+"q": "Her dream ___ true.",
+"opts": [
+"went",
+"came",
+"made"
+],
+"ans": 1,
+"why": "come true."
+},
+{
+"q": "I came ___ love it.",
+"opts": [
+"for",
+"at",
+"to"
+],
+"ans": 2,
+"why": "come to."
+},
+{
+"q": "Which is correct? (come × go)",
+"opts": [
+"Come home!",
+"Come to home!",
+"Come for home!"
+],
+"ans": 0,
+"why": "Sem to."
+}
+],
+"fix": [
+{
+"wrong": "I come to home late.",
+"right": "I come home late.",
+"why": "Sem to."
+},
+{
+"wrong": "I am coming from Brazil.",
+"right": "I come from Brazil.",
+"why": "Origem: presente simples."
+},
+{
+"wrong": "It came to be true.",
+"right": "It came true.",
+"why": "come true."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Eu venho do Brasil.” com origem: “I ... Brazil.”",
+"answer": "I come from Brazil.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “My dream comes true.”",
+"answer": "My dream came true.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I arrive at home.” com come",
+"answer": "I come home.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "a × an",
+"wrong": "She is a engineer.",
+"right": "She is an engineer.",
+"why": "O português tem um/uma sem depender do som seguinte; em inglês usa-se an antes de som de vogal."
+},
+"mcq": [
+{
+"q": "___ apple",
+"opts": [
+"a",
+"the",
+"an"
+],
+"ans": 2,
+"why": "Som de vogal: an."
+},
+{
+"q": "___ book",
+"opts": [
+"a",
+"an",
+"one the"
+],
+"ans": 0,
+"why": "Som de consoante: a."
+},
+{
+"q": "I have a cat. ___ cat is black.",
+"opts": [
+"A",
+"The",
+"An"
+],
+"ans": 1,
+"why": "Já mencionado: the."
+},
+{
+"q": "___ hour",
+"opts": [
+"a",
+"the",
+"an"
+],
+"ans": 2,
+"why": "H mudo: an hour."
+}
+],
+"fix": [
+{
+"wrong": "I have a apple.",
+"right": "I have an apple.",
+"why": "Som de vogal."
+},
+{
+"wrong": "She is nurse.",
+"right": "She is a nurse.",
+"why": "Falta o artigo."
+},
+{
+"wrong": "It is an dog.",
+"right": "It is a dog.",
+"why": "Dog começa com consoante."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com a/an: “I have ___ orange.”",
+"answer": "I have an orange.",
+"why": "Escreva a frase completa."
+},
+{
+"prompt": "Complete com a/an: “He is ___ student.”",
+"answer": "He is a student.",
+"why": ""
+},
+{
+"prompt": "Troque a por the (segunda menção): “A dog is here.”",
+"answer": "The dog is here.",
+"why": ""
+}
+]
+}

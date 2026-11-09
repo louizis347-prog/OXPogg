@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "get / suppose",
+"wrong": "I suppose that yes.",
+"right": "I suppose so.",
+"why": "Em português 'suponho que sim' leva que; em inglês a resposta curta com suppose é suppose so / I suppose not."
+},
+"mcq": [
+{
+"q": "Do you think it'll rain? — I ___ .",
+"opts": [
+"suppose it",
+"suppose yes",
+"suppose so"
+],
+"ans": 2,
+"why": "so."
+},
+{
+"q": "Get ___ the train at Central.",
+"opts": [
+"on",
+"at",
+"to"
+],
+"ans": 0,
+"why": "get on."
+},
+{
+"q": "I got an email = I ___ an email.",
+"opts": [
+"received",
+"sent",
+"wrote"
+],
+"ans": 0,
+"why": "receber."
+},
+{
+"q": "He got ___ after the match.",
+"opts": [
+"tired",
+"tiring",
+"tire"
+],
+"ans": 0,
+"why": "adjetivo."
+}
+],
+"fix": [
+{
+"wrong": "I suppose that yes.",
+"right": "I suppose so.",
+"why": "so."
+},
+{
+"wrong": "She got angry with I.",
+"right": "She got angry with me.",
+"why": "objeto."
+},
+{
+"wrong": "We get to home at six.",
+"right": "We get home at six.",
+"why": "sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I think yes.” com suppose",
+"answer": "I suppose so.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I received a gift.” com got",
+"answer": "I got a gift.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We arrived at the hotel.” com got",
+"answer": "We got to the hotel.",
+"why": ""
+}
+]
+}

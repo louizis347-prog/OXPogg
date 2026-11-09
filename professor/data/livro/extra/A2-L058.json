@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "the + superlativo",
+"wrong": "She is more tall of the class.",
+"right": "She is the tallest in the class.",
+"why": "Em português 'a mais alta da turma' usa de; em inglês superlativo leva the e in. Adjetivos curtos usam -est."
+},
+"mcq": [
+{
+"q": "He is ___ student in the class.",
+"opts": [
+"the tallest",
+"tallest",
+"the more tall"
+],
+"ans": 0,
+"why": "the + -est."
+},
+{
+"q": "It's ___ day of my life.",
+"opts": [
+"the most good",
+"the goodest",
+"the best"
+],
+"ans": 2,
+"why": "best."
+},
+{
+"q": "She is the best ___ the team.",
+"opts": [
+"at",
+"of",
+"in"
+],
+"ans": 2,
+"why": "in + grupo."
+},
+{
+"q": "This is ___ interesting book.",
+"opts": [
+"the more",
+"the",
+"the most"
+],
+"ans": 2,
+"why": "most."
+}
+],
+"fix": [
+{
+"wrong": "She is tallest in the class.",
+"right": "She is the tallest in the class.",
+"why": "the."
+},
+{
+"wrong": "He is the most tall.",
+"right": "He is the tallest.",
+"why": "-est."
+},
+{
+"wrong": "It is the more expensive.",
+"right": "It is the most expensive.",
+"why": "most."
+}
+],
+"rewrite": [
+{
+"prompt": "Superlativo: “He is tall. (in the class)”",
+"answer": "He is the tallest in the class.",
+"why": ""
+},
+{
+"prompt": "Superlativo: “It is good. (in town)”",
+"answer": "It is the best in town.",
+"why": ""
+},
+{
+"prompt": "Superlativo: “This is expensive. (in the shop)”",
+"answer": "This is the most expensive in the shop.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "reduções na fala",
+"wrong": "I don’t know what “dija” means. (do you)",
+"right": "Do you know what it means?",
+"why": "Em fala rápida do you soa \"dyuh\"; o brasileiro não percebe do e escreve só you, perdendo o auxiliar."
+},
+"mcq": [
+{
+"q": "In fast speech, “do you” sounds like…",
+"opts": [
+"\"du iu\"",
+"\"dyuh\"",
+"\"dou you\""
+],
+"ans": 1,
+"why": "Redução."
+},
+{
+"q": "“What do you want?” in fast speech:",
+"opts": [
+"\"What du iu want?\"",
+"\"Wat you do want?\"",
+"\"Whaddaya want?\""
+],
+"ans": 2,
+"why": "Redução."
+},
+{
+"q": "Written form of “Dija eat?”",
+"opts": [
+"Did you eat?",
+"Do you ate?",
+"Does you eat?"
+],
+"ans": 0,
+"why": "Did you."
+},
+{
+"q": "Written form of “D’you like it?”",
+"opts": [
+"Does you like it?",
+"Do you like it?",
+"Do like it?"
+],
+"ans": 1,
+"why": "Do you."
+}
+],
+"fix": [
+{
+"wrong": "You like pizza?",
+"right": "Do you like pizza?",
+"why": "Falta do."
+},
+{
+"wrong": "Where you live?",
+"right": "Where do you live?",
+"why": "Do."
+},
+{
+"wrong": "What you want?",
+"right": "What do you want?",
+"why": "Do."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a forma completa: “Whaddaya want?”",
+"answer": "What do you want?",
+"why": ""
+},
+{
+"prompt": "Escreva a forma completa: “Dyou like it?”",
+"answer": "Do you like it?",
+"why": ""
+},
+{
+"prompt": "Escreva a forma completa: “Where dyou live?”",
+"answer": "Where do you live?",
+"why": ""
+}
+]
+}

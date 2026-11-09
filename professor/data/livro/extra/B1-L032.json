@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "fazer = make × do",
+"wrong": "She did me laugh.",
+"right": "She made me laugh.",
+"why": "Em português “ela me fez rir”; o brasileiro traduz “fez” por did. Em inglês, causar algo em alguém usa make + pessoa + verbo base."
+},
+"mcq": [
+{
+"q": "Please ___ a decision.",
+"opts": [
+"make",
+"do",
+"take"
+],
+"ans": 0,
+"why": "make a decision."
+},
+{
+"q": "She ___ a list.",
+"opts": [
+"did",
+"made",
+"took"
+],
+"ans": 1,
+"why": "make a list."
+},
+{
+"q": "He made me ___.",
+"opts": [
+"laugh",
+"to laugh",
+"laughing"
+],
+"ans": 0,
+"why": "Sem to."
+},
+{
+"q": "Which is correct? (fazer = make × do)",
+"opts": [
+"do a call",
+"take a call",
+"make a call"
+],
+"ans": 2,
+"why": "make a call."
+}
+],
+"fix": [
+{
+"wrong": "I did a call yesterday.",
+"right": "I made a call yesterday.",
+"why": "make a call."
+},
+{
+"wrong": "She made me to cry.",
+"right": "She made me cry.",
+"why": "Sem to."
+},
+{
+"wrong": "We need to do a decision.",
+"right": "We need to make a decision.",
+"why": "make a decision."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She caused me to laugh.” com make",
+"answer": "She made me laugh.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I make a list.”",
+"answer": "I made a list.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “She made a call.”",
+"answer": "She didn't make a call.",
+"why": ""
+}
+]
+}

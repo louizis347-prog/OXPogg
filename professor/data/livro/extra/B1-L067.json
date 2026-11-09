@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "should have + particípio",
+"wrong": "She should have to ask, so she might had gotten it.",
+"right": "She should have asked, so she might have gotten it.",
+"why": "Em português “deveria ter perguntado” usa ter; o brasileiro troca have por had e adiciona to. Em inglês é modal + have + particípio, sem to."
+},
+"mcq": [
+{
+"q": "She ___ asked.",
+"opts": [
+"should had",
+"should to have",
+"should have"
+],
+"ans": 2,
+"why": "should have."
+},
+{
+"q": "“She might have gotten it” means…",
+"opts": [
+"com certeza conseguiu",
+"talvez tenha conseguido",
+"não conseguiu"
+],
+"ans": 1,
+"why": "Possibilidade."
+},
+{
+"q": "Her friend ___ helped.",
+"opts": [
+"could have",
+"could had",
+"could to"
+],
+"ans": 0,
+"why": "could have."
+},
+{
+"q": "Which is correct? (should have + particípio)",
+"opts": [
+"He might had left.",
+"He might has left.",
+"He might have left."
+],
+"ans": 2,
+"why": "have."
+}
+],
+"fix": [
+{
+"wrong": "She should have went.",
+"right": "She should have gone.",
+"why": "gone."
+},
+{
+"wrong": "They could had won.",
+"right": "They could have won.",
+"why": "have."
+},
+{
+"wrong": "He might had said yes.",
+"right": "He might have said yes.",
+"why": "might have, não might had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com arrependimento: “I didn’t call her.” (should)",
+"answer": "I should have called her.",
+"why": ""
+},
+{
+"prompt": "Reescreva com possibilidade: “Perhaps she got the job.” (might)",
+"answer": "She might have gotten the job.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could: “It was possible for him to help.”",
+"answer": "He could have helped.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + objeto + to",
+"wrong": "She wants that I come.",
+"right": "She wants me to come.",
+"why": "Em português dizemos 'quer que eu venha'; em inglês não há that, use want + objeto + to."
+},
+"mcq": [
+{
+"q": "He wants ___ to help.",
+"opts": [
+"my",
+"me",
+"I"
+],
+"ans": 1,
+"why": "pronome objeto."
+},
+{
+"q": "She asked ___ to wait.",
+"opts": [
+"us",
+"our",
+"we"
+],
+"ans": 0,
+"why": "objeto."
+},
+{
+"q": "They told ___ to leave.",
+"opts": [
+"him",
+"his",
+"he"
+],
+"ans": 0,
+"why": "objeto."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I want you to come.",
+"I want that you come.",
+"I want you come."
+],
+"ans": 0,
+"why": "objeto + to."
+}
+],
+"fix": [
+{
+"wrong": "He wants that I help.",
+"right": "He wants me to help.",
+"why": "objeto + to."
+},
+{
+"wrong": "She asked I to wait.",
+"right": "She asked me to wait.",
+"why": "objeto."
+},
+{
+"wrong": "They told him leave.",
+"right": "They told him to leave.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I want. You come.”",
+"answer": "I want you to come.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She asked. We wait.”",
+"answer": "She asked us to wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He told. They leave.”",
+"answer": "He told them to leave.",
+"why": ""
+}
+]
+}

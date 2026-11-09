@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ever / never",
+"wrong": "Did you ever visit a museum abroad?",
+"right": "Have you ever visited a museum abroad?",
+"why": "Em português 'você já visitou' admite o pretérito perfeito simples; para experiências de vida sem data, o inglês pede have + particípio."
+},
+"mcq": [
+{
+"q": "**Have** you ___ sushi?",
+"opts": [
+"ever tried",
+"ever try",
+"ever trying"
+],
+"ans": 0,
+"why": "particípio."
+},
+{
+"q": "I've never ___ a marathon.",
+"opts": [
+"run",
+"ran",
+"running"
+],
+"ans": 0,
+"why": "particípio de run."
+},
+{
+"q": "Experiência sem data:",
+"opts": [
+"She has met a famous singer.",
+"She met a famous singer last year.",
+"She was meeting a famous singer."
+],
+"ans": 0,
+"why": "sem tempo definido."
+},
+{
+"q": "Resposta curta a “Have you flown?”",
+"opts": [
+"Yes, I flew.",
+"Yes, I have.",
+"Yes, I did."
+],
+"ans": 1,
+"why": "have."
+}
+],
+"fix": [
+{
+"wrong": "Have you ever see snow?",
+"right": "Have you ever seen snow?",
+"why": "particípio."
+},
+{
+"wrong": "My cousin have been to Chile.",
+"right": "My cousin has been to Chile.",
+"why": "has."
+},
+{
+"wrong": "I never have eaten octopus.",
+"right": "I have never eaten octopus.",
+"why": "never após have."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta com ever: “You have climbed a mountain.”",
+"answer": "Have you ever climbed a mountain?",
+"why": ""
+},
+{
+"prompt": "Negativa com never: “I have driven a truck.”",
+"answer": "I have never driven a truck.",
+"why": ""
+},
+{
+"prompt": "Present perfect: “Lia swam with dolphins.” (experiência)",
+"answer": "Lia has swum with dolphins.",
+"why": ""
+}
+]
+}

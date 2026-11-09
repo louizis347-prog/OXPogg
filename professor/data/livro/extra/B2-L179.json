@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "although ... but",
+"wrong": "Although the cost is high, but the plan is useful.",
+"right": "Although the cost is high, the plan is useful.",
+"why": "Em português dizemos \"embora... mas\". Em inglês, use apenas um conector."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"She explained me it.",
+"She explained to it me.",
+"She explained it to me."
+],
+"ans": 2,
+"why": "explain to."
+},
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"até duas palavras",
+"exatamente duas",
+"três"
+],
+"ans": 0,
+"why": "limite."
+},
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto nega",
+"o texto não diz",
+"o texto confirma"
+],
+"ans": 1,
+"why": "Não mencionado."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a useful new tool",
+"a tool new useful",
+"a new tool useful"
+],
+"ans": 0,
+"why": "adjetivo antes."
+}
+],
+"fix": [
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+},
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+},
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+}
+]
+}

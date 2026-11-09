@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do vs make",
+"wrong": "I did a cake.",
+"right": "I made a cake.",
+"why": "Em português fazemos tudo; em inglês make cria algo, do é tarefa/atividade."
+},
+"mcq": [
+{
+"q": "I ___ the laundry.",
+"opts": [
+"took",
+"did",
+"made"
+],
+"ans": 1,
+"why": "do laundry."
+},
+{
+"q": "She ___ a cake.",
+"opts": [
+"made",
+"did",
+"got"
+],
+"ans": 0,
+"why": "make."
+},
+{
+"q": "What did you ___ ?",
+"opts": [
+"do",
+"does",
+"make"
+],
+"ans": 0,
+"why": "do."
+},
+{
+"q": "Negativa: “I did it”",
+"opts": [
+"I not did it.",
+"I didn't did it.",
+"I didn't do it."
+],
+"ans": 2,
+"why": "didn't do."
+}
+],
+"fix": [
+{
+"wrong": "He maked his homework.",
+"right": "He did his homework.",
+"why": "do."
+},
+{
+"wrong": "I did a mistake.",
+"right": "I made a mistake.",
+"why": "make."
+},
+{
+"wrong": "What did you did?",
+"right": "What did you do?",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I do my homework.”",
+"answer": "I did my homework.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You did your work.”",
+"answer": "Did you do your work?",
+"why": ""
+},
+{
+"prompt": "Negativa: “She did the dishes.”",
+"answer": "She didn't do the dishes.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "take × make photo",
+"wrong": "I make a photo of the park.",
+"right": "I take a photo of the park.",
+"why": "O brasileiro traduz \"fazer\"; em inglês foto, banho e ônibus usam take."
+},
+"mcq": [
+{
+"q": "“Tirar uma foto” =",
+"opts": [
+"take a photo",
+"make a photo",
+"do a photo"
+],
+"ans": 0,
+"why": "Take."
+},
+{
+"q": "“Tomar um banho” =",
+"opts": [
+"drink a shower",
+"take a shower",
+"make a shower"
+],
+"ans": 1,
+"why": "Take."
+},
+{
+"q": "“Pegar o ônibus” =",
+"opts": [
+"catch the bus only",
+"get on bus in",
+"take the bus"
+],
+"ans": 2,
+"why": "Take the bus."
+},
+{
+"q": "How long does it ___? (levar tempo)",
+"opts": [
+"take",
+"make",
+"have"
+],
+"ans": 0,
+"why": "It takes..."
+}
+],
+"fix": [
+{
+"wrong": "I make a shower every day.",
+"right": "I take a shower every day.",
+"why": "Take a shower."
+},
+{
+"wrong": "She takes a bus to work. (Ônibus)",
+"right": "She takes the bus to work.",
+"why": "Artigo the."
+},
+{
+"wrong": "It make two hours.",
+"right": "It takes two hours.",
+"why": "Take para duração."
+}
+],
+"rewrite": [
+{
+"prompt": "Use take: “I shower.”",
+"answer": "I take a shower.",
+"why": ""
+},
+{
+"prompt": "Use take: “We photograph the cat.” (a photo)",
+"answer": "We take a photo of the cat.",
+"why": ""
+},
+{
+"prompt": "Use take: “The trip is two hours.”",
+"answer": "The trip takes two hours.",
+"why": ""
+}
+]
+}

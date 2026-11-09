@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to + substantivo",
+"wrong": "That brings me for my second point.",
+"right": "That brings me to my second point.",
+"why": "Em português “nos traz ao/para o segundo ponto” oscila entre preposições. Em inglês, bring someone to a point."
+},
+"mcq": [
+{
+"q": "“By June we ___ for a year.”",
+"opts": [
+"will talk",
+"will have been talking",
+"have talked"
+],
+"ans": 1,
+"why": "Duração."
+},
+{
+"q": "“Silence gives rise ___ fear.”",
+"opts": [
+"for",
+"of",
+"to"
+],
+"ans": 2,
+"why": "give rise to."
+},
+{
+"q": "“I will sign if you ___.”",
+"opts": [
+"will",
+"do it",
+"are"
+],
+"ans": 0,
+"why": "Elipse."
+},
+{
+"q": "Which phrase links your talk to the next part?",
+"opts": [
+"In spite of…",
+"That brings me to…",
+"Try as…"
+],
+"ans": 1,
+"why": "Sinalização."
+}
+],
+"fix": [
+{
+"wrong": "By June we will have been talk for a year.",
+"right": "By June we will have been talking for a year.",
+"why": "-ing."
+},
+{
+"wrong": "Silence gives rise of fear.",
+"right": "Silence gives rise to fear.",
+"why": "to."
+},
+{
+"wrong": "I will pay if you will sign it.",
+"right": "I will pay if you will.",
+"why": "Elipse."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “By June we talk for a year.” (Future Perfect Continuous)",
+"answer": "By June we will have been talking for a year.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give rise to: “Silence causes fear.”",
+"answer": "Silence gives rise to fear.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse: “She wants to sign and I want to sign.”",
+"answer": "She wants to sign and I do.",
+"why": ""
+}
+]
+}

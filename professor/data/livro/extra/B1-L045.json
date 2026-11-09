@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discurso indireto de ordens",
+"wrong": "Ana told me that I bring dessert.",
+"right": "Ana told me to bring dessert.",
+"why": "Em português “Ana disse que eu levasse” usa que + subjuntivo. Em inglês, ordens e pedidos relatados usam tell/ask + pessoa + (not) to + verbo."
+},
+"mcq": [
+{
+"q": "“Stay here.” → He told me ___ there.",
+"opts": [
+"stay",
+"to stay",
+"stayed"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "“Don’t be late.” → She asked us ___ late.",
+"opts": [
+"to not be",
+"not to be",
+"don't be"
+],
+"ans": 1,
+"why": "not to."
+},
+{
+"q": "“Bring dessert.” → Ana ___ me to bring it.",
+"opts": [
+"told",
+"said",
+"spoke"
+],
+"ans": 0,
+"why": "told."
+},
+{
+"q": "Which is correct? (discurso indireto de ordens)",
+"opts": [
+"She told me to go.",
+"She said me to go.",
+"She told me go."
+],
+"ans": 0,
+"why": "told me to go."
+}
+],
+"fix": [
+{
+"wrong": "He said me to stay.",
+"right": "He told me to stay.",
+"why": "tell + pessoa."
+},
+{
+"wrong": "She asked us don't be late.",
+"right": "She asked us not to be late.",
+"why": "not to."
+},
+{
+"wrong": "Ana told that I bring it.",
+"right": "Ana told me to bring it.",
+"why": "tell + pessoa + to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Bring dessert,” Ana said to me.",
+"answer": "Ana told me to bring dessert.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Don’t be late,” she said to us.",
+"answer": "She asked us not to be late.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Stay here,” he said to them.",
+"answer": "He told them to stay here.",
+"why": ""
+}
+]
+}

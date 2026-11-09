@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo com profissão",
+"wrong": "He is doctor.",
+"right": "He is a doctor.",
+"why": "Em português dizemos \"Ele é médico\" sem artigo; em inglês profissão leva a/an."
+},
+"mcq": [
+{
+"q": "I have a cat. ___ cat is black.",
+"opts": [
+"The",
+"A",
+"An"
+],
+"ans": 0,
+"why": "Já mencionado: the."
+},
+{
+"q": "___ hour",
+"opts": [
+"a",
+"an",
+"the"
+],
+"ans": 1,
+"why": "H mudo: an hour."
+},
+{
+"q": "___ university (som \"you\")",
+"opts": [
+"an",
+"the",
+"a"
+],
+"ans": 2,
+"why": "Som de consoante /j/: a university."
+},
+{
+"q": "He is ___ teacher.",
+"opts": [
+"a",
+"an",
+"—"
+],
+"ans": 0,
+"why": "Profissão leva artigo."
+}
+],
+"fix": [
+{
+"wrong": "She is nurse.",
+"right": "She is a nurse.",
+"why": "Falta o artigo."
+},
+{
+"wrong": "It is an dog.",
+"right": "It is a dog.",
+"why": "Dog começa com consoante."
+},
+{
+"wrong": "I see a cat. A cat is small. (mesmo gato)",
+"right": "I see a cat. The cat is small.",
+"why": "Segunda menção: the."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com a/an: “He is ___ student.”",
+"answer": "He is a student.",
+"why": ""
+},
+{
+"prompt": "Troque a por the (segunda menção): “A dog is here.”",
+"answer": "The dog is here.",
+"why": ""
+},
+{
+"prompt": "Acrescente an ou a: “It is ___ egg.”",
+"answer": "It is an egg.",
+"why": ""
+}
+]
+}

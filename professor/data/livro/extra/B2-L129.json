@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "it is said that",
+"wrong": "It says that the dam is unsafe.",
+"right": "It is said that the dam is unsafe.",
+"why": "Em português \"diz-se que\" usa se. Em inglês não existe esse se; use passiva: It is said that…"
+},
+"mcq": [
+{
+"q": "Qual é passiva no presente contínuo?",
+"opts": [
+"The road is being repaired.",
+"The road is repairing.",
+"The road repaired."
+],
+"ans": 0,
+"why": "is being + particípio."
+},
+{
+"q": "Qual agente é correto?",
+"opts": [
+"The book was written from a nurse.",
+"The book was written by a nurse.",
+"The book was written of a nurse."
+],
+"ans": 1,
+"why": "by para o agente."
+},
+{
+"q": "\"He is said to be rich\" = ",
+"opts": [
+"Ele disse ser rico.",
+"Ele diz que é rico.",
+"Dizem que ele é rico."
+],
+"ans": 2,
+"why": "is said to = dizem que."
+},
+{
+"q": "Complete: The bridge **has ___** repaired.",
+"opts": [
+"being",
+"been",
+"be"
+],
+"ans": 1,
+"why": "has been + particípio."
+}
+],
+"fix": [
+{
+"wrong": "The cake was eaten for my brother.",
+"right": "The cake was eaten by my brother.",
+"why": "Agente = by."
+},
+{
+"wrong": "The street is closing today.",
+"right": "The street is being closed today.",
+"why": "Passiva contínua."
+},
+{
+"wrong": "The letter has been send.",
+"right": "The letter has been sent.",
+"why": "Use o particípio sent."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They will announce the winner.”",
+"answer": "The winner will be announced.",
+"why": ""
+},
+{
+"prompt": "Reescreva com is said to: “People say he is honest.”",
+"answer": "He is said to be honest.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They fixed the roof.”",
+"answer": "The roof was fixed.",
+"why": ""
+}
+]
+}

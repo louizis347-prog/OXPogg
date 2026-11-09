@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "The more I understand, I hold the less.",
+"right": "The more I grasp, the less I hold.",
+"why": "Português diz “quanto mais… menos…” com mas simples; inglês exige the + comparativo nas duas partes."
+},
+"mcq": [
+{
+"q": "Proportional correlation:",
+"opts": [
+"More I grasp, less I hold.",
+"The more I grasp, the less I hold.",
+"The more I grasp, less I hold."
+],
+"ans": 1,
+"why": "The… the…"
+},
+{
+"q": "Parallelism:",
+"opts": [
+"softness over force, grace over speed",
+"softness over force, graceful speed",
+"soft over force, grace speeding"
+],
+"ans": 0,
+"why": "Paralelo."
+},
+{
+"q": "The faster, the…",
+"opts": [
+"more good",
+"best",
+"better"
+],
+"ans": 2,
+"why": "Comparativo."
+},
+{
+"q": "The less you ___",
+"opts": [
+"rush more see",
+"rushing the more see",
+"rush, the more you see"
+],
+"ans": 2,
+"why": "Estrutura."
+}
+],
+"fix": [
+{
+"wrong": "More I read, the less I know.",
+"right": "The more I read, the less I know.",
+"why": "The."
+},
+{
+"wrong": "The more I read, I know less.",
+"right": "The more I read, the less I know.",
+"why": "Paralelo."
+},
+{
+"wrong": "The most I read, the less I know.",
+"right": "The more I read, the less I know.",
+"why": "Comparativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “As I read more, I know less.”",
+"answer": "The more I read, the less I know.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “As you rush less, you see more.”",
+"answer": "The less you rush, the more you see.",
+"why": ""
+},
+{
+"prompt": "Passado: “The more I read, the less I know.”",
+"answer": "The more I read, the less I knew.",
+"why": ""
+}
+]
+}

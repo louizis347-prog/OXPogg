@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "futuro e sujeito",
+"wrong": "Next week going to rain.",
+"right": "Next week it's going to rain.",
+"why": "Em português o sujeito oculto é natural; em inglês é obrigatório o it."
+},
+"mcq": [
+{
+"q": "I think she ___ win.",
+"opts": [
+"is",
+"does",
+"will"
+],
+"ans": 2,
+"why": "will."
+},
+{
+"q": "Look! He ___ fall.",
+"opts": [
+"is going to",
+"does",
+"will to"
+],
+"ans": 0,
+"why": "evidência."
+},
+{
+"q": "We ___ lunch at 1 tomorrow.",
+"opts": [
+"are having",
+"will having",
+"have"
+],
+"ans": 0,
+"why": "arrangement."
+},
+{
+"q": "Negativa de “I will go”:",
+"opts": [
+"I don't will go.",
+"I willn't go.",
+"I won't go."
+],
+"ans": 2,
+"why": "won't."
+}
+],
+"fix": [
+{
+"wrong": "It going to rain.",
+"right": "It's going to rain.",
+"why": "be."
+},
+{
+"wrong": "I will to go.",
+"right": "I will go.",
+"why": "sem to."
+},
+{
+"wrong": "We have lunch tomorrow at one.",
+"right": "We're having lunch tomorrow at one.",
+"why": "be + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro: “I buy a car.” (plano) com going to",
+"answer": "I'm going to buy a car.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He will call.”",
+"answer": "He won't call.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “They are going to leave.”",
+"answer": "Are they going to leave?",
+"why": ""
+}
+]
+}

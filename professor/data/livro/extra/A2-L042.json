@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "go to / go home",
+"wrong": "I went to home.",
+"right": "I went home.",
+"why": "Em português 'fui para casa' leva preposição; em inglês home é advérbio e não leva to."
+},
+"mcq": [
+{
+"q": "We ___ home late.",
+"opts": [
+"went",
+"goed",
+"went to"
+],
+"ans": 0,
+"why": "sem to."
+},
+{
+"q": "She went ___ the park.",
+"opts": [
+"in",
+"to",
+"at"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Passado de go:",
+"opts": [
+"goed",
+"went",
+"gone"
+],
+"ans": 1,
+"why": "went."
+},
+{
+"q": "I'm going ___ foot.",
+"opts": [
+"in",
+"on",
+"by"
+],
+"ans": 1,
+"why": "on foot."
+}
+],
+"fix": [
+{
+"wrong": "I go to home.",
+"right": "I go home.",
+"why": "home sem to."
+},
+{
+"wrong": "They goed out.",
+"right": "They went out.",
+"why": "went."
+},
+{
+"wrong": "We went by foot.",
+"right": "We went on foot.",
+"why": "on foot."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “We go home early.”",
+"answer": "We went home early.",
+"why": ""
+},
+{
+"prompt": "Passado: “She goes out.”",
+"answer": "She went out.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They go to home.” (corrija)",
+"answer": "They go home.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "like + sujeito ausente",
+"wrong": "Like pizza.",
+"right": "I like pizza.",
+"why": "Em português \"Gosto de pizza\" tem sujeito oculto; em inglês o sujeito é obrigatório."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"I like of music.",
+"I like music.",
+"I like to music."
+],
+"ans": 1,
+"why": "Like sem preposição."
+},
+{
+"q": "She ___ tea.",
+"opts": [
+"like",
+"is like",
+"likes"
+],
+"ans": 2,
+"why": "He/she/it: likes."
+},
+{
+"q": "I ___ a pen.",
+"opts": [
+"need",
+"needs",
+"am need"
+],
+"ans": 0,
+"why": "I: need."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He need water.",
+"He needs water.",
+"He is needs water."
+],
+"ans": 1,
+"why": "Terceira: needs."
+}
+],
+"fix": [
+{
+"wrong": "I like of pizza.",
+"right": "I like pizza.",
+"why": "Sem of."
+},
+{
+"wrong": "She need a pen.",
+"right": "She needs a pen.",
+"why": "Terceira pessoa."
+},
+{
+"wrong": "Need water.",
+"right": "I need water.",
+"why": "Sujeito obrigatório."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque para “She”: “I like tea.”",
+"answer": "She likes tea.",
+"why": ""
+},
+{
+"prompt": "Troque para “He”: “I need a pen.”",
+"answer": "He needs a pen.",
+"why": ""
+},
+{
+"prompt": "Troque para “They”: “He likes music.”",
+"answer": "They like music.",
+"why": ""
+}
+]
+}

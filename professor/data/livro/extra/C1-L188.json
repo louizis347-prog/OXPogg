@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontável",
+"wrong": "The poem has many imageries.",
+"right": "The poem has a lot of imagery.",
+"why": "Em português “imagens” é contável. Em inglês, imagery é incontável: sem plural e sem many."
+},
+"mcq": [
+{
+"q": "Which is **Point** in PEEL?",
+"opts": [
+"“a smaller word slipped in”",
+"This suggests flexibility.",
+"The poem shows tension easing."
+],
+"ans": 2,
+"why": "Afirmação."
+},
+{
+"q": "Which is **Evidence**?",
+"opts": [
+"“perhaps”",
+"This reflects change.",
+"Therefore…"
+],
+"ans": 0,
+"why": "Citação."
+},
+{
+"q": "The **Link** step...",
+"opts": [
+"gives a quote",
+"connects to the question",
+"ends the poem"
+],
+"ans": 1,
+"why": "Conecta."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The imageries are strong.",
+"The imagery are strong.",
+"The imagery is strong."
+],
+"ans": 2,
+"why": "incontável."
+}
+],
+"fix": [
+{
+"wrong": "The poem have strong imagery.",
+"right": "The poem has strong imagery.",
+"why": "has."
+},
+{
+"wrong": "This suggest flexibility.",
+"right": "This suggests flexibility.",
+"why": "-s."
+},
+{
+"wrong": "The poet uses many imagery.",
+"right": "The poet uses a lot of imagery.",
+"why": "imagery é incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no singular: “The imageries are vivid.”",
+"answer": "The imagery is vivid.",
+"why": ""
+},
+{
+"prompt": "Reescreva com suggests: “This shows flexibility, in my opinion.” (This suggests…)",
+"answer": "This suggests flexibility.",
+"why": ""
+},
+{
+"prompt": "Reescreva no presente: “The poet used a quote.”",
+"answer": "The poet uses a quote.",
+"why": ""
+}
+]
+}

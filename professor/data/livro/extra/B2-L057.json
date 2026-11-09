@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "I must to finish this report.",
+"right": "I must finish this report.",
+"why": "Modais não levam to. Must = obrigação interna; have to = externa; be required to = formal (regra)."
+},
+"mcq": [
+{
+"q": "Obrigação externa (regra do chefe):",
+"opts": [
+"I must to wear a badge.",
+"I haven’t wear a badge.",
+"I have to wear a badge."
+],
+"ans": 2,
+"why": "Have to."
+},
+{
+"q": "Obrigação formal:",
+"opts": [
+"Staff are requiring sign in.",
+"Staff required sign in.",
+"Staff are required to sign in."
+],
+"ans": 2,
+"why": "Be required to."
+},
+{
+"q": "Obrigação interna:",
+"opts": [
+"I must to call my sister.",
+"I have must call my sister.",
+"I must call my sister."
+],
+"ans": 2,
+"why": "Must + base."
+},
+{
+"q": "Passado de have to:",
+"opts": [
+"had to",
+"musted",
+"must had"
+],
+"ans": 0,
+"why": "Had to."
+}
+],
+"fix": [
+{
+"wrong": "She must to leave early.",
+"right": "She must leave early.",
+"why": "Sem to."
+},
+{
+"wrong": "Drivers are required wear seatbelts.",
+"right": "Drivers are required to wear seatbelts.",
+"why": "To."
+},
+{
+"wrong": "Yesterday I must pay the fee.",
+"right": "Yesterday I had to pay the fee.",
+"why": "Must não tem passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I have to wear a badge.”",
+"answer": "I had to wear a badge.",
+"why": ""
+},
+{
+"prompt": "Formal: “You must sign in.” (are required to)",
+"answer": "You are required to sign in.",
+"why": ""
+},
+{
+"prompt": "Negativa de have to (não é obrigatório): “He has to pay.”",
+"answer": "He doesn’t have to pay.",
+"why": ""
+}
+]
+}

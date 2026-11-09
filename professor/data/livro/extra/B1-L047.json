@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do × make",
+"wrong": "I will make my homework and make you a favor.",
+"right": "I will do my homework and do you a favor.",
+"why": "Em português “fazer” cobre tudo. Em inglês, tarefas, favores e esforço usam do; criar algo novo usa make."
+},
+"mcq": [
+{
+"q": "I ___ the dishes.",
+"opts": [
+"did",
+"made",
+"took"
+],
+"ans": 0,
+"why": "do the dishes."
+},
+{
+"q": "Could you ___ me a favor?",
+"opts": [
+"make",
+"give",
+"do"
+],
+"ans": 2,
+"why": "do a favor."
+},
+{
+"q": "Do your ___!",
+"opts": [
+"better",
+"best",
+"good"
+],
+"ans": 1,
+"why": "do your best."
+},
+{
+"q": "Which uses make?",
+"opts": [
+"the dishes",
+"homework",
+"a cake"
+],
+"ans": 2,
+"why": "make a cake."
+}
+],
+"fix": [
+{
+"wrong": "I made my homework.",
+"right": "I did my homework.",
+"why": "do."
+},
+{
+"wrong": "Make me a favor.",
+"right": "Do me a favor.",
+"why": "favor com do."
+},
+{
+"wrong": "She did a cake.",
+"right": "She made a cake.",
+"why": "make para criar."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “I do the shopping.”",
+"answer": "I did the shopping.",
+"why": ""
+},
+{
+"prompt": "Peça um favor: “Could you help me?” use do",
+"answer": "Could you do me a favor?",
+"why": ""
+},
+{
+"prompt": "Reescreva com do: “Try your best.”",
+"answer": "Do your best.",
+"why": ""
+}
+]
+}

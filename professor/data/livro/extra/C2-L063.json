@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The headline infers that the minister lied.",
+"right": "The headline implies that the minister lied.",
+"why": "Em português “inferir” é confundido com sugerir; infer é do receptor, imply é do emissor."
+},
+"mcq": [
+{
+"q": "The writer **___** a link without stating it.",
+"opts": [
+"implies",
+"infers",
+"refutes"
+],
+"ans": 0,
+"why": "Emissor implica."
+},
+{
+"q": "The reader **___** a link from the text.",
+"opts": [
+"infers",
+"suggests",
+"implies"
+],
+"ans": 0,
+"why": "Receptor infere."
+},
+{
+"q": "The poll **___** a lead.",
+"opts": [
+"infers",
+"suggests",
+"implies to"
+],
+"ans": 1,
+"why": "Dados sugerem."
+},
+{
+"q": "Which is the receiver’s act?",
+"opts": [
+"state",
+"imply",
+"infer"
+],
+"ans": 2,
+"why": "Infer."
+}
+],
+"fix": [
+{
+"wrong": "I implied from his tone that he was upset.",
+"right": "I inferred from his tone that he was upset.",
+"why": "Quem deduz infere."
+},
+{
+"wrong": "Are you inferring that I am late?",
+"right": "Are you implying that I am late?",
+"why": "Emissor = imply."
+},
+{
+"wrong": "The results suggests a pattern.",
+"right": "The results suggest a pattern.",
+"why": "Data costuma ser plural no registro formal."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque “implies” por “infers”, sujeito “I”: “The text implies a flaw.”",
+"answer": "I infer a flaw from the text.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “suggest”: “The survey hints at a pattern.”",
+"answer": "The survey suggests a pattern.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “He implied it.”",
+"answer": "He did not imply it.",
+"why": ""
+}
+]
+}

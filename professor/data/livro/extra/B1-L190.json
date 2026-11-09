@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + infinitivo",
+"wrong": "I expect getting a reply soon.",
+"right": "I expect to get a reply soon.",
+"why": "Em português “espero receber” é infinitivo, mas o brasileiro troca por -ing. Expect, hope, promise pedem to + base."
+},
+"mcq": [
+{
+"q": "She promised **___** on time.",
+"opts": [
+"arrive",
+"to arrive",
+"arriving"
+],
+"ans": 1,
+"why": "Promise + to."
+},
+{
+"q": "We had the roof **___**.",
+"opts": [
+"repaired",
+"repair",
+"repairing"
+],
+"ans": 0,
+"why": "Have + obj + particípio."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I decided going.",
+"I decided to go.",
+"I decided go."
+],
+"ans": 1,
+"why": "Decide to."
+},
+{
+"q": "They got the screen **___**.",
+"opts": [
+"fixed",
+"fix",
+"to fix"
+],
+"ans": 0,
+"why": "Particípio."
+}
+],
+"fix": [
+{
+"wrong": "He expects arriving at six.",
+"right": "He expects to arrive at six.",
+"why": "Expect to."
+},
+{
+"wrong": "I had my phone fix.",
+"right": "I had my phone fixed.",
+"why": "Particípio."
+},
+{
+"wrong": "She promised to not tell.",
+"right": "She promised not to tell.",
+"why": "Not to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “I expect to get a reply.”",
+"answer": "I expected to get a reply.",
+"why": ""
+},
+{
+"prompt": "Use get: “Someone fixed my phone.” (I got…)",
+"answer": "I got my phone fixed.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She promised to tell.” (not to)",
+"answer": "She promised not to tell.",
+"why": ""
+}
+]
+}

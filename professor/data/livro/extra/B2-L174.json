@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "suggest + objeto",
+"wrong": "He suggested me to rest.",
+"right": "He suggested that I rest.",
+"why": "O português aceita \"sugeriu-me descansar\". Em inglês, suggest não leva objeto + to: use that-clause ou -ing."
+},
+"mcq": [
+{
+"q": "Complete: He **promised ___** call.",
+"opts": [
+"to",
+"that to",
+"for"
+],
+"ans": 0,
+"why": "promise to + verbo."
+},
+{
+"q": "Complete: She asked what time **___**.",
+"opts": [
+"was it",
+"it was",
+"it is it"
+],
+"ans": 1,
+"why": "Ordem afirmativa."
+},
+{
+"q": "Qual é correta?",
+"opts": [
+"She prefers cycling than driving.",
+"She prefers to cycling to driving.",
+"She prefers cycling to driving."
+],
+"ans": 2,
+"why": "prefer -ing to -ing."
+},
+{
+"q": "Em qual frase that é impossível?",
+"opts": [
+"The car that I bought...",
+"My car, which is old, ...",
+"The car which I bought..."
+],
+"ans": 1,
+"why": "Depois de vírgula, nunca that."
+}
+],
+"fix": [
+{
+"wrong": "The manager said me to wait.",
+"right": "The manager told me to wait.",
+"why": "tell + pessoa."
+},
+{
+"wrong": "She said me to sit.",
+"right": "She told me to sit.",
+"why": "told + pessoa."
+},
+{
+"wrong": "We prefer walk than take the bus.",
+"right": "We prefer walking to taking the bus.",
+"why": "prefer -ing to -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “‘What is your job?’ he asked her.”",
+"answer": "He asked her what her job was.",
+"why": ""
+},
+{
+"prompt": "Passe para pergunta: “You would rather eat now.”",
+"answer": "Would you rather eat now?",
+"why": ""
+},
+{
+"prompt": "Una com which: “London is huge. It has many parks.”",
+"answer": "London, which has many parks, is huge.",
+"why": ""
+}
+]
+}

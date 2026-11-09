@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "idade e sentimentos",
+"wrong": "I have 25 years and I have cold.",
+"right": "I am 25 years old and I am cold.",
+"why": "Em português idade, fome, frio e sono usam ter; em inglês usam be + adjetivo."
+},
+"mcq": [
+{
+"q": "“Tenho fome” =",
+"opts": [
+"I have hungry.",
+"I have hunger.",
+"I am hungry."
+],
+"ans": 2,
+"why": "Estado: be + adjetivo."
+},
+{
+"q": "Where ___ your keys?",
+"opts": [
+"are",
+"is",
+"do"
+],
+"ans": 0,
+"why": "Keys: plural."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She no is at work.",
+"She isn’t at work.",
+"She doesn’t at work."
+],
+"ans": 1,
+"why": "Isn’t."
+},
+{
+"q": "Age: “I ___ 30.”",
+"opts": [
+"have",
+"do",
+"am"
+],
+"ans": 2,
+"why": "Be."
+}
+],
+"fix": [
+{
+"wrong": "I have 12 years.",
+"right": "I am 12 years old.",
+"why": "Idade com be."
+},
+{
+"wrong": "Why you are sad?",
+"right": "Why are you sad?",
+"why": "Inversão."
+},
+{
+"wrong": "She have cold.",
+"right": "She is cold.",
+"why": "Estado com be."
+}
+],
+"rewrite": [
+{
+"prompt": "Diga a idade: “I / 10 / years old”",
+"answer": "I am 10 years old.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “They are tired.”",
+"answer": "Are they tired?",
+"why": ""
+},
+{
+"prompt": "Negue: “We are ready.” (are not)",
+"answer": "We are not ready.",
+"why": ""
+}
+]
+}

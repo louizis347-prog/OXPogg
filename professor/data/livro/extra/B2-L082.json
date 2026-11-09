@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "increase of/in",
+"wrong": "There was an increase of sales in May.",
+"right": "There was an increase in sales in May.",
+"why": "Em português \"aumento das vendas\" usa de. Em inglês, increase in."
+},
+"mcq": [
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"of",
+"in",
+"on"
+],
+"ans": 1,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However; it works.",
+"However, it works."
+],
+"ans": 2,
+"why": "However, com vírgula."
+},
+{
+"q": "Complete: It depends **___** the data.",
+"opts": [
+"on",
+"of",
+"from"
+],
+"ans": 0,
+"why": "depend on."
+},
+{
+"q": "Qual verbo é transitivo?",
+"opts": [
+"happen",
+"arrive",
+"emphasize"
+],
+"ans": 2,
+"why": "emphasize + objeto."
+}
+],
+"fix": [
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+},
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+},
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+}
+]
+}

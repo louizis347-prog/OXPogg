@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio esquecido",
+"wrong": "They shouldn't have choose such a small room.",
+"right": "They shouldn't have chosen such a small room.",
+"why": "O português usa \"não deveriam ter escolhido\" com particípio, mas o aluno deixa o verbo na forma base depois de have. Use sempre o particípio (chosen)."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"He ought have to called.",
+"He ought to had called.",
+"He ought to have called."
+],
+"ans": 2,
+"why": "A ordem é ought to have + particípio."
+},
+{
+"q": "O que a frase sugere? \"We could have won.\"",
+"opts": [
+"Não vencemos, mas era possível.",
+"Vencemos facilmente.",
+"Vamos vencer amanhã."
+],
+"ans": 0,
+"why": "could have = possibilidade não realizada no passado."
+},
+{
+"q": "Qual frase critica uma ação passada?",
+"opts": [
+"She should check the map.",
+"She should have checked the map.",
+"She checks the map."
+],
+"ans": 1,
+"why": "should have + particípio = crítica sobre o passado."
+},
+{
+"q": "**shouldn't have** + particípio expressa...",
+"opts": [
+"arrependimento: não era para ter feito",
+"obrigação no futuro",
+"habilidade no passado"
+],
+"ans": 0,
+"why": "shouldn't have + particípio lamenta algo que foi feito."
+}
+],
+"fix": [
+{
+"wrong": "She should have went home earlier.",
+"right": "She should have gone home earlier.",
+"why": "Após should have, use o particípio gone, não o passado went."
+},
+{
+"wrong": "We should to have told them the truth.",
+"right": "We should have told them the truth.",
+"why": "Não se usa to depois de should."
+},
+{
+"wrong": "I shouldn't of said that.",
+"right": "I shouldn't have said that.",
+"why": "Of é erro de escrita por causa do som /əv/; a forma é have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como crítica: “He leaves early.”",
+"answer": "He should have left early.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “I should have bought it.”",
+"answer": "I shouldn't have bought it.",
+"why": ""
+},
+{
+"prompt": "Reescreva como crítica no passado: “You call me.”",
+"answer": "You should have called me.",
+"why": ""
+}
+]
+}

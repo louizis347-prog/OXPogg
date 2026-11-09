@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Past Simple",
+"wrong": "Yesterday I have studied.",
+"right": "Yesterday I studied.",
+"why": "Em português 'tenho estudado' é comum; o aluno escolhe have + particípio mesmo com marcador de passado."
+},
+"mcq": [
+{
+"q": "Passado de **buy**:",
+"opts": [
+"bought",
+"buyed",
+"buys"
+],
+"ans": 0,
+"why": "bought."
+},
+{
+"q": "She ___ call.",
+"opts": [
+"didn't",
+"don't",
+"doesn't"
+],
+"ans": 0,
+"why": "didn't."
+},
+{
+"q": "Last year I ___ in Paris.",
+"opts": [
+"live",
+"living",
+"lived"
+],
+"ans": 2,
+"why": "-ed."
+},
+{
+"q": "Passado de **go**:",
+"opts": [
+"goed",
+"went",
+"gone"
+],
+"ans": 1,
+"why": "went."
+}
+],
+"fix": [
+{
+"wrong": "I didn't went.",
+"right": "I didn't go.",
+"why": "base."
+},
+{
+"wrong": "He studyed.",
+"right": "He studied.",
+"why": "y → ied."
+},
+{
+"wrong": "We buyed it.",
+"right": "We bought it.",
+"why": "irregular."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “I called.”",
+"answer": "I didn't call.",
+"why": ""
+},
+{
+"prompt": "Passado: “We go.”",
+"answer": "We went.",
+"why": ""
+},
+{
+"prompt": "Passado: “She studies.”",
+"answer": "She studied.",
+"why": ""
+}
+]
+}

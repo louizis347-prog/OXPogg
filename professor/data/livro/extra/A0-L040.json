@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo após be",
+"wrong": "My father is engineer.",
+"right": "My father is an engineer.",
+"why": "Em português profissões vêm sem artigo depois de ser; em inglês leva a/an."
+},
+"mcq": [
+{
+"q": "She ___ a nurse.",
+"opts": [
+"is",
+"are",
+"am"
+],
+"ans": 0,
+"why": "She: is."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I am in home.",
+"I am at home.",
+"I am on home."
+],
+"ans": 1,
+"why": "At home é fixo."
+},
+{
+"q": "They ___ a car.",
+"opts": [
+"has",
+"are",
+"have"
+],
+"ans": 2,
+"why": "They: have."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He needs water.",
+"He need water.",
+"He is needs water."
+],
+"ans": 0,
+"why": "Terceira: needs."
+}
+],
+"fix": [
+{
+"wrong": "He is doctor.",
+"right": "He is a doctor.",
+"why": "Falta artigo."
+},
+{
+"wrong": "The keys is on the table.",
+"right": "The keys are on the table.",
+"why": "Plural: are."
+},
+{
+"wrong": "She is a dog. (she owns a dog)",
+"right": "She has a dog.",
+"why": "Posse: has."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “The cat / on the sofa”. Use is.",
+"answer": "The cat is on the sofa.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “They”: “He has a car.”",
+"answer": "They have a car.",
+"why": ""
+},
+{
+"prompt": "Troque para “They”: “He likes music.”",
+"answer": "They like music.",
+"why": ""
+}
+]
+}

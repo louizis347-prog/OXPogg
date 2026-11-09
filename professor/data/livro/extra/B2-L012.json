@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "Robots mights replace some jobs.",
+"right": "Robots might replace some jobs.",
+"why": "Modais não variam com a pessoa. O brasileiro, acostumado a conjugar todo verbo, acrescenta -s ou to."
+},
+"mcq": [
+{
+"q": "Tickets **___** get more expensive.",
+"opts": [
+"may to",
+"may",
+"mays"
+],
+"ans": 1,
+"why": "Modal + base."
+},
+{
+"q": "Stores **___** close earlier.",
+"opts": [
+"might",
+"might to",
+"are might"
+],
+"ans": 0,
+"why": "Might."
+},
+{
+"q": "The test **___** be postponed.",
+"opts": [
+"coulds",
+"could to",
+"could"
+],
+"ans": 2,
+"why": "Could."
+},
+{
+"q": "Negação de possibilidade:",
+"opts": [
+"might not",
+"not might",
+"don’t might"
+],
+"ans": 0,
+"why": "Might not."
+}
+],
+"fix": [
+{
+"wrong": "Our boss mights agree.",
+"right": "Our boss might agree.",
+"why": "Sem -s."
+},
+{
+"wrong": "Wages could to rise next year.",
+"right": "Wages could rise next year.",
+"why": "Sem to."
+},
+{
+"wrong": "The bank may opens on Sunday.",
+"right": "The bank may open on Sunday.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com might: “Perhaps the bus is late.”",
+"answer": "The bus might be late.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Prices may fall.”",
+"answer": "Prices may not fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could: “Maybe it snows tonight.”",
+"answer": "It could snow tonight.",
+"why": ""
+}
+]
+}

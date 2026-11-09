@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "colocação",
+"wrong": "She did a research on rivers.",
+"right": "She did research on rivers.",
+"why": "Em português “fazer uma pesquisa”, e research é incontável em inglês: sem a nem plural. Do research, do harm, do good."
+},
+"mcq": [
+{
+"q": "Too much sugar can **___** harm.",
+"opts": [
+"cause to",
+"do",
+"make"
+],
+"ans": 1,
+"why": "Do harm."
+},
+{
+"q": "Scientists **___** research.",
+"opts": [
+"make",
+"put",
+"do"
+],
+"ans": 2,
+"why": "Do research."
+},
+{
+"q": "Do + a favor:",
+"opts": [
+"do someone a favor",
+"do favor to",
+"make someone a favor"
+],
+"ans": 0,
+"why": "Do a favor."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"They did a lot of research.",
+"They did many researches.",
+"They did a researches."
+],
+"ans": 0,
+"why": "Incontável."
+}
+],
+"fix": [
+{
+"wrong": "Rita made a favor for me.",
+"right": "Rita did me a favor.",
+"why": "Do a favor."
+},
+{
+"wrong": "They did researches on bees.",
+"right": "They did research on bees.",
+"why": "Incontável."
+},
+{
+"wrong": "Smoking makes harm.",
+"right": "Smoking does harm.",
+"why": "Do harm."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “Scientists do research.”",
+"answer": "Scientists did research.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Please help me.” (do a favor)",
+"answer": "Please do me a favor.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Sugar does good.”",
+"answer": "Sugar doesn’t do good.",
+"why": ""
+}
+]
+}

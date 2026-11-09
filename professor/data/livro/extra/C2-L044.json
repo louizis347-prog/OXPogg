@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "nominalização",
+"wrong": "The declining of participation worries the council.",
+"right": "The decline in participation worries the council.",
+"why": "Em português “o declínio da participação” aceita gerúndio substantivado. Em inglês, nominalize com o substantivo decline in, não com -ing + of."
+},
+"mcq": [
+{
+"q": "Nominal form of “trust erodes”:",
+"opts": [
+"the eroding trust",
+"trust erosion of",
+"the erosion of trust"
+],
+"ans": 2,
+"why": "erosion of."
+},
+{
+"q": "“Bonding capital” links...",
+"opts": [
+"similar people",
+"strangers",
+"countries"
+],
+"ans": 0,
+"why": "Vínculos internos."
+},
+{
+"q": "“They reinforce each other” = ...",
+"opts": [
+"self-reinforce",
+"mutual reinforcement",
+"reinforcing of"
+],
+"ans": 1,
+"why": "Mutual."
+},
+{
+"q": "“It is unclear ___ the effect lasts.”",
+"opts": [
+"that",
+"what if",
+"whether"
+],
+"ans": 2,
+"why": "whether."
+}
+],
+"fix": [
+{
+"wrong": "The erosion on trust is rapid.",
+"right": "The erosion of trust is rapid.",
+"why": "of."
+},
+{
+"wrong": "Is unclear whether the effect lasts.",
+"right": "It is unclear whether the effect lasts.",
+"why": "Sujeito expletivo."
+},
+{
+"wrong": "Social capitals are valuable.",
+"right": "Social capital is valuable.",
+"why": "incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Nominalize: “Participation declines.” (the decline in …)",
+"answer": "The decline in participation.",
+"why": ""
+},
+{
+"prompt": "Reescreva com whether: “We do not know if it lasts.” (It is unclear…)",
+"answer": "It is unclear whether it lasts.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Trust erodes.” (the erosion of …)",
+"answer": "The erosion of trust.",
+"why": ""
+}
+]
+}

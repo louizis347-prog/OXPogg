@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "who × what",
+"wrong": "What is your teacher?",
+"right": "Who is your teacher?",
+"why": "O brasileiro usa o que/quem de forma parecida; who é para pessoas e what para coisas."
+},
+"mcq": [
+{
+"q": "Question about time:",
+"opts": [
+"Why",
+"When",
+"Who"
+],
+"ans": 1,
+"why": "When."
+},
+{
+"q": "Question about reason:",
+"opts": [
+"Where",
+"How",
+"Why"
+],
+"ans": 2,
+"why": "Why."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"What does she want?",
+"What she wants?",
+"What does she wants?"
+],
+"ans": 0,
+"why": "Does + base."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"How old you are?",
+"How old are you?",
+"How many old are you?"
+],
+"ans": 1,
+"why": "Be inverte."
+}
+],
+"fix": [
+{
+"wrong": "What does he wants?",
+"right": "What does he want?",
+"why": "Base."
+},
+{
+"wrong": "What is your English teacher? (pessoa)",
+"right": "Who is your English teacher?",
+"why": "Who."
+},
+{
+"wrong": "How old you are?",
+"right": "How old are you?",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunte com Who: “Ana is my teacher.” (sobre a pessoa)",
+"answer": "Who is your teacher?",
+"why": ""
+},
+{
+"prompt": "Pergunte com What: “She wants a coffee.”",
+"answer": "What does she want?",
+"why": ""
+},
+{
+"prompt": "Pergunte com When: “The class starts at 8.”",
+"answer": "When does the class start?",
+"why": ""
+}
+]
+}

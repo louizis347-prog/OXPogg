@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The assistance was mostly managers, not specialists.",
+"right": "The audience was mostly managers, not specialists.",
+"why": "“Assistência” em português é o público presente, mas em inglês assistance é ajuda. O público é audience."
+},
+"mcq": [
+{
+"q": "Your listeners are your...",
+"opts": [
+"assistance",
+"public",
+"audience"
+],
+"ans": 2,
+"why": "audience."
+},
+{
+"q": "The **purpose** of a talk is to...",
+"opts": [
+"persuade",
+"tax",
+"design"
+],
+"ans": 0,
+"why": "purpose."
+},
+{
+"q": "A good **message** is...",
+"opts": [
+"ten slides",
+"one sentence",
+"a list"
+],
+"ans": 1,
+"why": "Uma frase."
+},
+{
+"q": "Which sentence names the audience?",
+"opts": [
+"I am speaking about managers.",
+"I am speaking from managers.",
+"I am speaking to managers."
+],
+"ans": 2,
+"why": "speak to."
+}
+],
+"fix": [
+{
+"wrong": "My purpose is inform the managers.",
+"right": "My purpose is to inform the managers.",
+"why": "to + infinitivo."
+},
+{
+"wrong": "I want persuade the audience.",
+"right": "I want to persuade the audience.",
+"why": "to."
+},
+{
+"wrong": "The slide limit is of ten.",
+"right": "The slide limit is ten.",
+"why": "Sem of."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque assistance pelo termo correto: “The assistance liked the talk.”",
+"answer": "The audience liked the talk.",
+"why": ""
+},
+{
+"prompt": "Reescreva com purpose: “I want to persuade.” (My purpose is…)",
+"answer": "My purpose is to persuade.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “The slide limit is low.”",
+"answer": "The slide limits are low.",
+"why": ""
+}
+]
+}

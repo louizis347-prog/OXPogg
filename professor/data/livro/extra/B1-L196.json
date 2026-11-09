@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronúncia e escrita",
+"wrong": "I’m going to wanna go.",
+"right": "I’m gonna want to go.",
+"why": "Brasileiros anotam formas faladas (gonna, wanna) na escrita formal. Gonna, wanna, hafta são reduções de fala; na escrita use going to, want to, have to."
+},
+"mcq": [
+{
+"q": "“gonna” =",
+"opts": [
+"go on",
+"going",
+"going to"
+],
+"ans": 2,
+"why": "Redução."
+},
+{
+"q": "“wanna” =",
+"opts": [
+"want to",
+"won’t",
+"want a"
+],
+"ans": 0,
+"why": "Redução."
+},
+{
+"q": "“d’you” =",
+"opts": [
+"do you",
+"do",
+"did you"
+],
+"ans": 0,
+"why": "Do you."
+},
+{
+"q": "Na escrita formal:",
+"opts": [
+"going to",
+"gonna",
+"goin"
+],
+"ans": 0,
+"why": "Escrita padrão."
+}
+],
+"fix": [
+{
+"wrong": "I’m gonna to go.",
+"right": "I’m going to go.",
+"why": "Gonna já contém to."
+},
+{
+"wrong": "She wanna see it.",
+"right": "She wants to see it.",
+"why": "3ª pessoa usa wants."
+},
+{
+"wrong": "I hafta work.",
+"right": "I have to work.",
+"why": "Escrita padrão."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva forma completa: “I’m gonna call.”",
+"answer": "I’m going to call.",
+"why": ""
+},
+{
+"prompt": "Escreva forma completa: “I wanna sleep.”",
+"answer": "I want to sleep.",
+"why": ""
+},
+{
+"prompt": "Escreva forma completa: “I hafta go.”",
+"answer": "I have to go.",
+"why": ""
+}
+]
+}

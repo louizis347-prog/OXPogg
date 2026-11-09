@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta retórica",
+"wrong": "Do you know that it will rise? Answer: yes.",
+"right": "Do you know it will rise? Of course you do.",
+"why": "Português costuma responder à pergunta retórica; em inglês basta o chamado ao ouvinte."
+},
+"mcq": [
+{
+"q": "Call to the listener:",
+"opts": [
+"Picture this.",
+"Pictures this.",
+"Picture to this."
+],
+"ans": 0,
+"why": "Imperativo."
+},
+{
+"q": "Create an image:",
+"opts": [
+"Think of a rising tide.",
+"Think a rising tide.",
+"Thinking tide."
+],
+"ans": 0,
+"why": "Think of."
+},
+{
+"q": "Rhetorical question:",
+"opts": [
+"Know you it will?",
+"You know will it rise?",
+"Do you know it will rise?"
+],
+"ans": 2,
+"why": "Inversão."
+},
+{
+"q": "Think of takes…",
+"opts": [
+"to",
+"for",
+"a noun"
+],
+"ans": 2,
+"why": "Substantivo."
+}
+],
+"fix": [
+{
+"wrong": "Think a rising tide.",
+"right": "Think of a rising tide.",
+"why": "of."
+},
+{
+"wrong": "Picture to this scene.",
+"right": "Picture this scene.",
+"why": "Transitivo."
+},
+{
+"wrong": "You know it will rise?",
+"right": "Do you know it will rise?",
+"why": "do."
+}
+],
+"rewrite": [
+{
+"prompt": "Imperativo: “You picture this.”",
+"answer": "Picture this.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Think of a tide.”",
+"answer": "Don’t think of a tide.",
+"why": ""
+},
+{
+"prompt": "Retórica: “You know it will rise.”",
+"answer": "Do you know it will rise?",
+"why": ""
+}
+]
+}

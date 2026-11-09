@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "a + incontável",
+"wrong": "I want a water.",
+"right": "I want some water.",
+"why": "Não se usa a/an com incontáveis."
+},
+"mcq": [
+{
+"q": "How ___ water?",
+"opts": [
+"many",
+"few",
+"much"
+],
+"ans": 2,
+"why": "Much."
+},
+{
+"q": "How ___ books?",
+"opts": [
+"many",
+"much",
+"little"
+],
+"ans": 0,
+"why": "Many."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a bread",
+"some bread",
+"breads"
+],
+"ans": 1,
+"why": "Incontável."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"an advice",
+"advices",
+"a piece of advice"
+],
+"ans": 2,
+"why": "Incontável."
+}
+],
+"fix": [
+{
+"wrong": "How many money?",
+"right": "How much money?",
+"why": "Much."
+},
+{
+"wrong": "She has long hairs.",
+"right": "She has long hair.",
+"why": "Hair incontável."
+},
+{
+"wrong": "We need informations.",
+"right": "We need information.",
+"why": "Sem plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com much/many: “How ___ apples do you have?” (frase completa)",
+"answer": "How many apples do you have?",
+"why": ""
+},
+{
+"prompt": "Corrija: “I want a bread.”",
+"answer": "I want some bread.",
+"why": ""
+},
+{
+"prompt": "Corrija: “The news are good.”",
+"answer": "The news is good.",
+"why": ""
+}
+]
+}

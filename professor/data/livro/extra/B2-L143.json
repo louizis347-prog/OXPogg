@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have + objeto + particípio",
+"wrong": "I cut my hair yesterday at the salon.",
+"right": "I had my hair cut yesterday at the salon.",
+"why": "Em português \"cortei o cabelo\" serve também para quem foi ao salão. Em inglês, cortar com as próprias mãos é cut; mandar fazer é have + objeto + particípio."
+},
+"mcq": [
+{
+"q": "Qual significa \"mandar fazer\"?",
+"opts": [
+"I washed my car.",
+"I was washing my car.",
+"I had my car washed."
+],
+"ans": 2,
+"why": "have + objeto + particípio."
+},
+{
+"q": "Qual ordem está correta?",
+"opts": [
+"She had her nails done.",
+"She had done her nails.",
+"She done had her nails."
+],
+"ans": 0,
+"why": "Objeto antes do particípio."
+},
+{
+"q": "Complete: We **are getting the roof ___** next week.",
+"opts": [
+"fix",
+"fixed",
+"fixing"
+],
+"ans": 1,
+"why": "get + objeto + particípio."
+},
+{
+"q": "\"I had my phone stolen\" pode indicar...",
+"opts": [
+"algo ruim que aconteceu comigo",
+"eu mandei roubar",
+"eu roubei"
+],
+"ans": 0,
+"why": "have + objeto + particípio também indica experiência negativa."
+}
+],
+"fix": [
+{
+"wrong": "I need to cut my hair at the salon.",
+"right": "I need to have my hair cut at the salon.",
+"why": "Para mandar fazer, use have + particípio."
+},
+{
+"wrong": "He had fixed his bike by a mechanic.",
+"right": "He had his bike fixed by a mechanic.",
+"why": "Ordem do objeto."
+},
+{
+"wrong": "We are having painting the house.",
+"right": "We are having the house painted.",
+"why": "Particípio painted."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com have: “A mechanic checked our car.”",
+"answer": "We had our car checked.",
+"why": ""
+},
+{
+"prompt": "Passe para pergunta: “You had your hair cut.”",
+"answer": "Did you have your hair cut?",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “A barber cut my hair.”",
+"answer": "I had my hair cut.",
+"why": ""
+}
+]
+}

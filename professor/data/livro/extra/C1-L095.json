@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo vs substantivo",
+"wrong": "The expand of cities causes pollution.",
+"right": "The expansion of cities causes pollution.",
+"why": "O brasileiro usa a base do verbo como substantivo. Em inglês, é preciso o sufixo: expand → expansion."
+},
+"mcq": [
+{
+"q": "The ___ of cities causes pollution.",
+"opts": [
+"expand",
+"expanding",
+"expansion"
+],
+"ans": 2,
+"why": "expansion."
+},
+{
+"q": "Weak planning ___ to failure.",
+"opts": [
+"led",
+"lead",
+"leaded"
+],
+"ans": 0,
+"why": "led."
+},
+{
+"q": "Because they ___ poorly, … (verb)",
+"opts": [
+"plan to",
+"planned",
+"planning"
+],
+"ans": 1,
+"why": "Verbo."
+},
+{
+"q": "Which is nominal?",
+"opts": [
+"the project failed",
+"failing the project",
+"the failure of the project"
+],
+"ans": 2,
+"why": "Nome."
+}
+],
+"fix": [
+{
+"wrong": "The expand causes pollution.",
+"right": "The expansion causes pollution.",
+"why": "expansion."
+},
+{
+"wrong": "Weak planning leaded to failure.",
+"right": "Weak planning led to failure.",
+"why": "led."
+},
+{
+"wrong": "The failed of the project was clear.",
+"right": "The failure of the project was clear.",
+"why": "failure."
+}
+],
+"rewrite": [
+{
+"prompt": "Nominalize: “Because they planned weakly, the project failed.” (Poor …)",
+"answer": "Weak planning led to the failure of the project.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Cities expanded, and pollution rose.” (The … of cities)",
+"answer": "The expansion of cities raised pollution.",
+"why": ""
+},
+{
+"prompt": "Verbalize: “The failure of the project was a surprise.” (The project … a surprise → failed)",
+"answer": "The project failed, which was a surprise.",
+"why": ""
+}
+]
+}

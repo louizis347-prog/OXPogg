@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "stop doing ≠ stop to do",
+"wrong": "I stopped to smoke last year.",
+"right": "I stopped smoking last year.",
+"why": "Em português \"parei de fumar\" e \"parei para fumar\" são claros. O aluno confunde o infinitivo: stop to do = parar PARA fazer; stop doing = deixar de fazer."
+},
+"mcq": [
+{
+"q": "\"He stopped to drink water\" = ",
+"opts": [
+"Parou para beber água.",
+"Parou de beber água.",
+"Impediu beber água."
+],
+"ans": 0,
+"why": "stop to do = parar para fazer."
+},
+{
+"q": "\"She stopped smoking\" = ",
+"opts": [
+"Ela parou para fumar.",
+"Ela parou de fumar.",
+"Ela fuma agora."
+],
+"ans": 1,
+"why": "stop -ing = deixar de."
+},
+{
+"q": "Complete: Nothing can stop me **___** trying.",
+"opts": [
+"to",
+"of",
+"from"
+],
+"ans": 2,
+"why": "stop somebody from -ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I can't stop to think about it.",
+"I can't stop thinking about it.",
+"I can't stop think about it."
+],
+"ans": 1,
+"why": "can't stop + -ing."
+}
+],
+"fix": [
+{
+"wrong": "I stopped to eat sugar last month.",
+"right": "I stopped eating sugar last month.",
+"why": "Deixei de comer: -ing."
+},
+{
+"wrong": "He stopped to smoke last year; he is healthier now.",
+"right": "He stopped smoking last year; he is healthier now.",
+"why": "Deixar de = -ing."
+},
+{
+"wrong": "The noise stopped me to sleep.",
+"right": "The noise stopped me from sleeping.",
+"why": "stop somebody from -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva (deixou de): “She stopped to smoke.” → parou de fumar",
+"answer": "She stopped smoking.",
+"why": ""
+},
+{
+"prompt": "Reescreva (finalidade): “He stopped drinking tea.” → parou para beber chá",
+"answer": "He stopped to drink tea.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The rain prevented us from walking.” com stop",
+"answer": "The rain stopped us from walking.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "fala argumentativa",
+"wrong": "In my opinion, the reason is because he is lazy. For exemple, he sleeps late.",
+"right": "In my opinion, one reason is that he is lazy. For example, he sleeps late.",
+"why": "Em português “a razão é porque” e “exemplo” (exemplo) enganam: o brasileiro escreve exemple e usa because após reason. Em inglês: reason is that…; example."
+},
+"mcq": [
+{
+"q": "One reason ___ he is tired.",
+"opts": [
+"is because",
+"is why because",
+"is that"
+],
+"ans": 2,
+"why": "reason is that."
+},
+{
+"q": "To give an example:",
+"opts": [
+"By example,",
+"For example,",
+"Per example,"
+],
+"ans": 1,
+"why": "For example."
+},
+{
+"q": "To conclude:",
+"opts": [
+"At the end of,",
+"In final,",
+"In conclusion,"
+],
+"ans": 2,
+"why": "In conclusion."
+},
+{
+"q": "To give your view:",
+"opts": [
+"On my opinion,",
+"In my opinion,",
+"To my opinion,"
+],
+"ans": 1,
+"why": "In my opinion."
+}
+],
+"fix": [
+{
+"wrong": "The reason is because it is cheap.",
+"right": "The reason is that it is cheap.",
+"why": "that."
+},
+{
+"wrong": "For exemple, I walk.",
+"right": "For example, I walk.",
+"why": "example."
+},
+{
+"wrong": "At conclusion, it is good.",
+"right": "In conclusion, it is good.",
+"why": "In conclusion."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I think remote work is great.” (In my opinion)",
+"answer": "In my opinion, remote work is great.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Because it saves time” → “One reason ... it saves time.”",
+"answer": "One reason is that it saves time.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Finally, I believe it is good.” (In conclusion)",
+"answer": "In conclusion, I believe it is good.",
+"why": ""
+}
+]
+}

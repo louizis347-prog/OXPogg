@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "I am relutant to say yes.",
+"right": "I am reluctant to say yes.",
+"why": "Português “relutante” tem um t a menos; em inglês a grafia é reluctant (dois c e dois t)."
+},
+"mcq": [
+{
+"q": "Low commitment:",
+"opts": [
+"I would be reluctant to say yes.",
+"I say yes, no.",
+"I am sure to say yes."
+],
+"ans": 0,
+"why": "Cautela."
+},
+{
+"q": "Personal view:",
+"opts": [
+"It seems to me that…",
+"It seem to me that…",
+"It seems me that…"
+],
+"ans": 0,
+"why": "to me."
+},
+{
+"q": "Reluctant to + …",
+"opts": [
+"that",
+"base verb",
+"-ing"
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "It seems to me = …",
+"opts": [
+"I think",
+"I know",
+"I doubt"
+],
+"ans": 0,
+"why": "Opinião."
+}
+],
+"fix": [
+{
+"wrong": "It seems me that it is wrong.",
+"right": "It seems to me that it is wrong.",
+"why": "to."
+},
+{
+"wrong": "I would be reluctant saying yes.",
+"right": "I would be reluctant to say yes.",
+"why": "to say."
+},
+{
+"wrong": "It seem to me that.",
+"right": "It seems to me that.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I am sure it is wrong.” (cautela)",
+"answer": "It seems to me that it is wrong.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativo: “I would be reluctant to say yes.”",
+"answer": "I would not be reluctant to say yes.",
+"why": ""
+},
+{
+"prompt": "Passado: “It seems to me.”",
+"answer": "It seemed to me.",
+"why": ""
+}
+]
+}

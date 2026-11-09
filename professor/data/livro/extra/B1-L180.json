@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + infinitivo/gerúndio",
+"wrong": "I stopped to smoke.",
+"right": "I stopped smoking.",
+"why": "Em português “parei de fumar” e “parei para fumar” se parecem. Em inglês stop to + base = parar PARA; stop + -ing = parar DE."
+},
+"mcq": [
+{
+"q": "I stopped **___** my phone, so now I’m calmer. (parei de usar)",
+"opts": [
+"to check",
+"check",
+"checking"
+],
+"ans": 2,
+"why": "Stop -ing = parar de."
+},
+{
+"q": "Remember **___** the door! (não esqueça de)",
+"opts": [
+"to lock",
+"lock",
+"locking"
+],
+"ans": 0,
+"why": "Remember to = lembrar de fazer."
+},
+{
+"q": "I remember **___** him. (lembro de ter visto)",
+"opts": [
+"see",
+"to see",
+"seeing"
+],
+"ans": 2,
+"why": "Remember -ing = lembrar de ter feito."
+},
+{
+"q": "Try **___** it: it’s easy! (experimente)",
+"opts": [
+"opening",
+"to open",
+"open"
+],
+"ans": 0,
+"why": "Try -ing = experimentar."
+}
+],
+"fix": [
+{
+"wrong": "She stopped to check her phone all day.",
+"right": "She stopped checking her phone all day.",
+"why": "Parar de = stop -ing."
+},
+{
+"wrong": "I forgot closing the window.",
+"right": "I forgot to close the window.",
+"why": "Esquecer de fazer = forget to."
+},
+{
+"wrong": "He remembered to meet her years ago.",
+"right": "He remembered meeting her years ago.",
+"why": "Lembrar de ter feito = -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva “parei de comer”: “I stopped … (eat)”",
+"answer": "I stopped eating.",
+"why": ""
+},
+{
+"prompt": "Escreva “parei para comer”: “I stopped … (eat)”",
+"answer": "I stopped to eat.",
+"why": ""
+},
+{
+"prompt": "Lembrar de fazer: “Remember … the door.” (lock)",
+"answer": "Remember to lock the door.",
+"why": ""
+}
+]
+}

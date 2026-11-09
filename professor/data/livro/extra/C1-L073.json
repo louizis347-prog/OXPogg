@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio sem sujeito",
+"wrong": "Not wanting to create conflict, the meeting was short.",
+"right": "Not wanting to create conflict, I kept the meeting short.",
+"why": "O sujeito do particípio deve ser o da principal. Em português isso não é cobrado; em inglês, evite o dangling participle."
+},
+"mcq": [
+{
+"q": "Not wanting conflict, ___ kept it short.",
+"opts": [
+"I",
+"the meeting",
+"it"
+],
+"ans": 0,
+"why": "Mesmo sujeito."
+},
+{
+"q": "Having reviewed the notes, I ___ .",
+"opts": [
+"realizes",
+"realize",
+"realized to"
+],
+"ans": 1,
+"why": "Concorda com I."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Having reviewed, agree I.",
+"Having review, I agree.",
+"Having reviewed, I agree."
+],
+"ans": 2,
+"why": "Having + pp."
+},
+{
+"q": "Not wanting… means…",
+"opts": [
+"because I did not want",
+"if I wanted",
+"when I want"
+],
+"ans": 0,
+"why": "Causa."
+}
+],
+"fix": [
+{
+"wrong": "Having review the notes, I agree.",
+"right": "Having reviewed the notes, I agree.",
+"why": "Particípio."
+},
+{
+"wrong": "Not wanting conflict, the talk was short.",
+"right": "Not wanting conflict, I kept the talk short.",
+"why": "Mesmo sujeito."
+},
+{
+"wrong": "Wanting not conflict, I left.",
+"right": "Not wanting conflict, I left.",
+"why": "Not antes."
+}
+],
+"rewrite": [
+{
+"prompt": "Particípio: “After I had reviewed the notes, I agreed.”",
+"answer": "Having reviewed the notes, I agreed.",
+"why": ""
+},
+{
+"prompt": "Particípio negativo: “Because I did not want conflict, I left.”",
+"answer": "Not wanting conflict, I left.",
+"why": ""
+},
+{
+"prompt": "Particípio: “After she had finished it, she agreed.”",
+"answer": "Having finished it, she agreed.",
+"why": ""
+}
+]
+}

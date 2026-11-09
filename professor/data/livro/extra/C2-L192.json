@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Where the book excels it is in its case studies.",
+"right": "Where the book excels is in its case studies.",
+"why": "Português “onde o livro se destaca é…” aceita redundância; o pseudo-cleft inglês não usa it."
+},
+"mcq": [
+{
+"q": "Which line praises a book’s strength?",
+"opts": [
+"Where the book excels is in its case studies.",
+"The book excels where is.",
+"Where excels the book is case."
+],
+"ans": 0,
+"why": "Where… is in."
+},
+{
+"q": "Criticism:",
+"opts": [
+"Where falters it is ending.",
+"It falters where in.",
+"Where it falters is in its ending."
+],
+"ans": 2,
+"why": "Where… is."
+},
+{
+"q": "Falters means…",
+"opts": [
+"excels",
+"hesitates / fails",
+"wins"
+],
+"ans": 1,
+"why": "Falhar."
+},
+{
+"q": "After “is”, use…",
+"opts": [
+"that",
+"in + noun",
+"to"
+],
+"ans": 1,
+"why": "in."
+}
+],
+"fix": [
+{
+"wrong": "Where it falters it is in the end.",
+"right": "Where it falters is in the end.",
+"why": "Sem it."
+},
+{
+"wrong": "Where the book excel is in its examples.",
+"right": "Where the book excels is in its examples.",
+"why": "-s."
+},
+{
+"wrong": "Where it falters are its ending.",
+"right": "Where it falters is its ending.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The book excels in its case studies.”",
+"answer": "Where the book excels is in its case studies.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It falters in its ending.”",
+"answer": "Where it falters is in its ending.",
+"why": ""
+},
+{
+"prompt": "Passado: “Where the book excels is in its cases.”",
+"answer": "Where the book excelled was in its cases.",
+"why": ""
+}
+]
+}

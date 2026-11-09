@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Don’t accuse me for being late.",
+"right": "Don’t accuse me of being late.",
+"why": "Portugues “acusar de”; o brasileiro mistura com blame for. Accuse of / blame for."
+},
+"mcq": [
+{
+"q": "Don’t accuse me **___** lying.",
+"opts": [
+"for",
+"of",
+"with"
+],
+"ans": 1,
+"why": "Of."
+},
+{
+"q": "I blame you **___** this mess.",
+"opts": [
+"of",
+"for",
+"to"
+],
+"ans": 1,
+"why": "For."
+},
+{
+"q": "Não me acuse de mentir:",
+"opts": [
+"Don’t accuse me lying.",
+"Don’t accuse me to lie.",
+"Don’t accuse me of lying."
+],
+"ans": 2,
+"why": "Of."
+},
+{
+"q": "Blame:",
+"opts": [
+"culpar",
+"bloquear",
+"sugerir"
+],
+"ans": 0,
+"why": "Culpar."
+}
+],
+"fix": [
+{
+"wrong": "He accused me for lying.",
+"right": "He accused me of lying.",
+"why": "Of."
+},
+{
+"wrong": "I blame you of this.",
+"right": "I blame you for this.",
+"why": "For."
+},
+{
+"wrong": "Don’t accuse me to be late.",
+"right": "Don’t accuse me of being late.",
+"why": "Of + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “You are late. I blame you.”",
+"answer": "I blame you for being late.",
+"why": ""
+},
+{
+"prompt": "Imperativo negativo: “Accuse me of lying.”",
+"answer": "Don’t accuse me of lying.",
+"why": ""
+},
+{
+"prompt": "Passado: “She blames me for the delay.”",
+"answer": "She blamed me for the delay.",
+"why": ""
+}
+]
+}

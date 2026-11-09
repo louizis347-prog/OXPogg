@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ativa x passiva",
+"wrong": "Having been studied it, she agreed.",
+"right": "Having studied it, she agreed.",
+"why": "O brasileiro mistura as formas. Ativa: Having + pp. Passiva: Having been + pp (sujeito recebe a ação)."
+},
+"mcq": [
+{
+"q": "___ it, she agreed. (she read)",
+"opts": [
+"Having read",
+"Having been read",
+"Been reading"
+],
+"ans": 0,
+"why": "Ativa."
+},
+{
+"q": "___ raised abroad, she speaks well. (she was raised)",
+"opts": [
+"Been having",
+"Having been",
+"Having"
+],
+"ans": 1,
+"why": "Passiva."
+},
+{
+"q": "Which is passive?",
+"opts": [
+"Having told",
+"Telling",
+"Having been told"
+],
+"ans": 2,
+"why": "been."
+},
+{
+"q": "Not having been ___ , he left.",
+"opts": [
+"invited",
+"invite",
+"inviting"
+],
+"ans": 0,
+"why": "Particípio."
+}
+],
+"fix": [
+{
+"wrong": "Having been studied it, she agreed.",
+"right": "Having studied it, she agreed.",
+"why": "Ativa."
+},
+{
+"wrong": "Having raised abroad, she speaks well.",
+"right": "Having been raised abroad, she speaks well.",
+"why": "Passiva."
+},
+{
+"wrong": "Not having invited, he left.",
+"right": "Not having been invited, he left.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Ativa: “After she had studied it, she agreed.”",
+"answer": "Having studied it, she agreed.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Because she had been raised abroad, she speaks well.”",
+"answer": "Having been raised abroad, she speaks well.",
+"why": ""
+},
+{
+"prompt": "Passiva negativa: “Because he had not been invited, he left.”",
+"answer": "Not having been invited, he left.",
+"why": ""
+}
+]
+}

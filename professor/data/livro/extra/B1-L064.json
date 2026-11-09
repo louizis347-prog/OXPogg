@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would × used to",
+"wrong": "They would live in Recife and would be happy.",
+"right": "They used to live in Recife and used to be happy.",
+"why": "Em português “moravam” e “encontravam-se” são ambos imperfeito. Em inglês, would só para ação repetida; estado (live, be, have) exige used to."
+},
+"mcq": [
+{
+"q": "They ___ meet every Sunday (ação).",
+"opts": [
+"would",
+"used to live",
+"will"
+],
+"ans": 0,
+"why": "would."
+},
+{
+"q": "They ___ share meals (hábito).",
+"opts": [
+"would be",
+"are",
+"used to"
+],
+"ans": 2,
+"why": "used to."
+},
+{
+"q": "She ___ have a cat (estado).",
+"opts": [
+"would",
+"used to",
+"wills"
+],
+"ans": 1,
+"why": "used to."
+},
+{
+"q": "Which accepts both?",
+"opts": [
+"be tall",
+"meet every Sunday",
+"have a car"
+],
+"ans": 1,
+"why": "Ação repetida."
+}
+],
+"fix": [
+{
+"wrong": "I would have a bike.",
+"right": "I used to have a bike.",
+"why": "Estado."
+},
+{
+"wrong": "They would to meet.",
+"right": "They would meet.",
+"why": "Sem to."
+},
+{
+"wrong": "She would be shy.",
+"right": "She used to be shy.",
+"why": "Estado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com would: “They used to meet every Sunday.”",
+"answer": "They would meet every Sunday.",
+"why": ""
+},
+{
+"prompt": "Reescreva com used to (estado): “She was shy.” (antigamente)",
+"answer": "She used to be shy.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “They would share.”",
+"answer": "They wouldn't share.",
+"why": ""
+}
+]
+}

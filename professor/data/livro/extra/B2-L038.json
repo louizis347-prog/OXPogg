@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal",
+"wrong": "You should to see a doctor.",
+"right": "You should see a doctor.",
+"why": "Em português “deveria ir”; o brasileiro coloca to depois de should. Should, ought to e had better: só ought leva to."
+},
+"mcq": [
+{
+"q": "You **___** drink more water.",
+"opts": [
+"ought",
+"should to",
+"should"
+],
+"ans": 2,
+"why": "Should + base."
+},
+{
+"q": "You **___** to apologize.",
+"opts": [
+"ought",
+"should",
+"had better"
+],
+"ans": 0,
+"why": "Ought to."
+},
+{
+"q": "You **___** leave now, or you’ll miss the train.",
+"opts": [
+"had better",
+"have better",
+"better"
+],
+"ans": 0,
+"why": "Had better."
+},
+{
+"q": "Negativa de should:",
+"opts": [
+"shouldn’t",
+"don’t should",
+"not should"
+],
+"ans": 0,
+"why": "Shouldn’t."
+}
+],
+"fix": [
+{
+"wrong": "She ought see a dentist.",
+"right": "She ought to see a dentist.",
+"why": "Ought to."
+},
+{
+"wrong": "You better go home.",
+"right": "You had better go home.",
+"why": "Had better."
+},
+{
+"wrong": "He shoulds rest.",
+"right": "He should rest.",
+"why": "Sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Aconselhe com should: “Rest more.” (You…)",
+"answer": "You should rest more.",
+"why": ""
+},
+{
+"prompt": "Reescreva com had better: “You should leave now.”",
+"answer": "You had better leave now.",
+"why": ""
+},
+{
+"prompt": "Negativa: “You ought to shout.” (shouldn’t)",
+"answer": "You shouldn’t shout.",
+"why": ""
+}
+]
+}

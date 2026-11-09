@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontável",
+"wrong": "The wildlife are declining near the farms.",
+"right": "The wildlife is declining near the farms.",
+"why": "Em português “a fauna” também é singular, mas ao pensar em “animais” o aluno usa plural. Em inglês, wildlife é incontável e leva verbo no singular."
+},
+"mcq": [
+{
+"q": "In a reading task, how do you find what **it** or **they** refers to?",
+"opts": [
+"Pick the longest word",
+"Skip the sentence",
+"Find the nearest noun that matches in number"
+],
+"ans": 2,
+"why": "Referência: substantivo mais próximo que combine em número."
+},
+{
+"q": "A passage says a **pesticide ban** was approved. The **purpose** question asks...",
+"opts": [
+"why the author mentions it",
+"how long the ban lasts",
+"who wrote the title"
+],
+"ans": 0,
+"why": "Propósito = por que o autor menciona."
+},
+{
+"q": "To guess a word from context, you can...",
+"opts": [
+"ignore the line",
+"swap it for a definition",
+"count letters"
+],
+"ans": 1,
+"why": "Troque pela definição."
+},
+{
+"q": "Which noun is **uncountable**?",
+"opts": [
+"insect",
+"farm",
+"wildlife"
+],
+"ans": 2,
+"why": "wildlife não tem plural."
+}
+],
+"fix": [
+{
+"wrong": "The pesticide ban was approved from the council.",
+"right": "The pesticide ban was approved by the council.",
+"why": "Agente da passiva: by."
+},
+{
+"wrong": "The decline of the wildlife worry experts.",
+"right": "The decline of wildlife worries experts.",
+"why": "Sem the; verbo singular."
+},
+{
+"wrong": "Insects are important to the food chain, what explains the concern.",
+"right": "Insects are important to the food chain, which explains the concern.",
+"why": "which comenta a oração."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no singular verbal: “Wildlife are in danger.”",
+"answer": "Wildlife is in danger.",
+"why": ""
+},
+{
+"prompt": "Passiva com by: “The council approved the ban.”",
+"answer": "The ban was approved by the council.",
+"why": ""
+},
+{
+"prompt": "Una com which: “Insects are vanishing. This worries farmers.”",
+"answer": "Insects are vanishing, which worries farmers.",
+"why": ""
+}
+]
+}

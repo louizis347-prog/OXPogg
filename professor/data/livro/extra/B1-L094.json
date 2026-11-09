@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "protect from",
+"wrong": "Helmets protect the workers of accidents; they can’t to be idle.",
+"right": "Helmets protect workers from accidents; they can’t be idle.",
+"why": "Em português “proteger de acidentes” usa de; o brasileiro traduz como of. Em inglês, protect X from Y."
+},
+"mcq": [
+{
+"q": "Helmets protect workers ___ accidents.",
+"opts": [
+"of",
+"from",
+"to"
+],
+"ans": 1,
+"why": "from."
+},
+{
+"q": "They ___ be idle (impossível).",
+"opts": [
+"can’t",
+"mustn't to",
+"don't"
+],
+"ans": 0,
+"why": "can’t be."
+},
+{
+"q": "Builders ___ houses.",
+"opts": [
+"builds",
+"building",
+"build"
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "Protect means…",
+"opts": [
+"provar",
+"proteger",
+"propor"
+],
+"ans": 1,
+"why": "proteger."
+}
+],
+"fix": [
+{
+"wrong": "Protect us of danger.",
+"right": "Protect us from danger.",
+"why": "from."
+},
+{
+"wrong": "Helmets protects workers.",
+"right": "Helmets protect workers.",
+"why": "Plural."
+},
+{
+"wrong": "They can’t to be idle.",
+"right": "They can’t be idle.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com protect from: “Helmets keep workers safe from accidents.”",
+"answer": "Helmets protect workers from accidents.",
+"why": ""
+},
+{
+"prompt": "Reescreva com can’t: “It is impossible that they are idle.”",
+"answer": "They can’t be idle.",
+"why": ""
+},
+{
+"prompt": "Reescreva no singular: “Helmets protect workers.” (A helmet)",
+"answer": "A helmet protects workers.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "depend on",
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "\"Depende de\" vira depends of. Em inglês, depend on."
+},
+"mcq": [
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"In my opinion",
+"By me"
+],
+"ans": 1,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"report",
+"graph",
+"information"
+],
+"ans": 2,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rised sharply.",
+"Sales rose sharply."
+],
+"ans": 2,
+"why": "rose."
+}
+],
+"fix": [
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+},
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+},
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make + to",
+"wrong": "Dark pavements make the heat to increase.",
+"right": "Dark pavements make the heat increase.",
+"why": "Em português “fazem o calor aumentar” corresponde a uma estrutura com infinitivo. Em inglês, make + objeto + verbo na forma base, sem to."
+},
+"mcq": [
+{
+"q": "Which phrase introduces an **effect**?",
+"opts": [
+"for one",
+"which means",
+"first of all"
+],
+"ans": 1,
+"why": "which means = consequência."
+},
+{
+"q": "Which opens with a **definition**?",
+"opts": [
+"Finally,",
+"In return,",
+"Let me define…"
+],
+"ans": 2,
+"why": "Let me define… abre o tema."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Wind blockage makes cities get hotter.",
+"Wind blockage makes cities to get hotter.",
+"Wind blockage makes cities getting hotter."
+],
+"ans": 0,
+"why": "make + obj + base."
+},
+{
+"q": "To list causes, use...",
+"opts": [
+"however",
+"one, two, three",
+"in contrast"
+],
+"ans": 1,
+"why": "Enumeração."
+}
+],
+"fix": [
+{
+"wrong": "The cause are dark pavements.",
+"right": "The causes are dark pavements.",
+"why": "Plural: causes."
+},
+{
+"wrong": "Heat makes people to feel tired.",
+"right": "Heat makes people feel tired.",
+"why": "Sem to."
+},
+{
+"wrong": "How can we responding?",
+"right": "How can we respond?",
+"why": "can + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com make: “Dark roofs cause the city to get hotter.”",
+"answer": "Dark roofs make the city get hotter.",
+"why": ""
+},
+{
+"prompt": "Reescreva com which means: “Surface temperature rises. The result is more energy use.” (…, which means more energy use)",
+"answer": "Surface temperature rises, which means more energy use.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Dark pavements make the heat increase.”",
+"answer": "Dark pavements made the heat increase.",
+"why": ""
+}
+]
+}

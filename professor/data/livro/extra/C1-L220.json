@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "argue that",
+"wrong": "She argued about that the age should be lowered.",
+"right": "She argued that the age should be lowered.",
+"why": "Em português “argumentou sobre que” leva preposição. Em inglês, argue that + oração, sem about."
+},
+"mcq": [
+{
+"q": "Reporting a view:",
+"opts": [
+"argued about that",
+"argued that",
+"argued of"
+],
+"ans": 1,
+"why": "argued that."
+},
+{
+"q": "To reject a claim:",
+"opts": [
+"counted that",
+"contented that",
+"countered that"
+],
+"ans": 2,
+"why": "countered."
+},
+{
+"q": "Quote:",
+"opts": [
+"“Youth vote matters,” said Ana.",
+"Said Ana “youth vote matters”",
+"Ana said, youth vote matters"
+],
+"ans": 0,
+"why": "Pontuação."
+},
+{
+"q": "“It was decided ___ evidence.”",
+"opts": [
+"in",
+"on",
+"by"
+],
+"ans": 1,
+"why": "decided on."
+}
+],
+"fix": [
+{
+"wrong": "The winner team argued that turnout was low.",
+"right": "The winning team argued that turnout was low.",
+"why": "winning."
+},
+{
+"wrong": "She said me that the vote was fair.",
+"right": "She told me that the vote was fair.",
+"why": "told."
+},
+{
+"wrong": "They countered, that the claim was weak.",
+"right": "They countered that the claim was weak.",
+"why": "Sem vírgula."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com argued that: “She said, ‘Youth turnout is low.’”",
+"answer": "She argued that youth turnout was low.",
+"why": "Aceita-se: She argued that youth turnout was low."
+},
+{
+"prompt": "Reescreva com countered that: “He replied that the claim was weak.”",
+"answer": "He countered that the claim was weak.",
+"why": ""
+},
+{
+"prompt": "Reescreva com a citação: “Ana says youth vote matters.”",
+"answer": "“Youth vote matters,” says Ana.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado: ago vs há",
+"wrong": "I moved here since two years.",
+"right": "I moved here two years ago.",
+"why": "Em português 'há dois anos' usa o verbo haver; o aluno traduz com since/for. Em inglês, passado + tempo + ago."
+},
+"mcq": [
+{
+"q": "I visited Rome two years ___.",
+"opts": [
+"before",
+"since",
+"ago"
+],
+"ans": 2,
+"why": "ago depois do tempo."
+},
+{
+"q": "We ___ the game last night.",
+"opts": [
+"enjoyed",
+"enjoying",
+"enjoy"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Qual está certa? (Past Simple (regular): production and review)",
+"opts": [
+"She called me an hour ago.",
+"She called me ago an hour.",
+"She call me an hour ago."
+],
+"ans": 0,
+"why": "ago depois."
+},
+{
+"q": "Passado de **carry**:",
+"opts": [
+"carryed",
+"carried",
+"carrid"
+],
+"ans": 1,
+"why": "y → ied."
+}
+],
+"fix": [
+{
+"wrong": "He moved ago three years.",
+"right": "He moved three years ago.",
+"why": "ago vem depois."
+},
+{
+"wrong": "She carryed the bag.",
+"right": "She carried the bag.",
+"why": "y → ied."
+},
+{
+"wrong": "I phone him yesterday.",
+"right": "I phoned him yesterday.",
+"why": "-ed."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com ago: “I started in 2020.” (há 6 anos) → “I started six years …”",
+"answer": "I started six years ago.",
+"why": ""
+},
+{
+"prompt": "Passado: “They paint the room.”",
+"answer": "They painted the room.",
+"why": ""
+},
+{
+"prompt": "Passado: “He studies law.”",
+"answer": "He studied law.",
+"why": ""
+}
+]
+}

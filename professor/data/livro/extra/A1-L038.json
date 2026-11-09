@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural",
+"wrong": "There is two books on the table.",
+"right": "There are two books on the table.",
+"why": "O português não marca a concordância (\"há dois livros\"); em inglês o verbo concorda com o que vem depois."
+},
+"mcq": [
+{
+"q": "Question: ___ a bank near here?",
+"opts": [
+"Is there",
+"Are there",
+"Has"
+],
+"ans": 0,
+"why": "Singular."
+},
+{
+"q": "Negative: ___ any milk.",
+"opts": [
+"There aren’t",
+"There isn’t",
+"There doesn’t"
+],
+"ans": 1,
+"why": "Milk é incontável."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There is three chairs.",
+"Have three chairs.",
+"There are three chairs."
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "Short answer: Is there a park? ___",
+"opts": [
+"Yes, there is.",
+"Yes, it has.",
+"Yes, there are."
+],
+"ans": 0,
+"why": "Singular."
+}
+],
+"fix": [
+{
+"wrong": "There is two cats.",
+"right": "There are two cats.",
+"why": "Plural."
+},
+{
+"wrong": "Is there two chairs?",
+"right": "Are there two chairs?",
+"why": "Plural."
+},
+{
+"wrong": "It is a park near my house.",
+"right": "There is a park near my house.",
+"why": "There is, não it is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com there are: “Three cats are on the sofa.”",
+"answer": "There are three cats on the sofa.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “There is a bank here.”",
+"answer": "Is there a bank here?",
+"why": ""
+},
+{
+"prompt": "Negue com there isn’t: “There is a park here.”",
+"answer": "There isn’t a park here.",
+"why": ""
+}
+]
+}

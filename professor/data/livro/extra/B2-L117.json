@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "suggest that",
+"wrong": "The text suggests to build more homes.",
+"right": "The text suggests that we build more homes.",
+"why": "Em português \"sugere construir\". Em inglês suggest + that-clause ou -ing."
+},
+"mcq": [
+{
+"q": "Qual verbo é transitivo?",
+"opts": [
+"emphasize",
+"happen",
+"arrive"
+],
+"ans": 0,
+"why": "emphasize + objeto."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She explained me it.",
+"She explained it to me.",
+"She explained to it me."
+],
+"ans": 1,
+"why": "explain to."
+},
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"exatamente duas",
+"três",
+"até duas palavras"
+],
+"ans": 2,
+"why": "limite."
+},
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto nega",
+"o texto não diz",
+"o texto confirma"
+],
+"ans": 1,
+"why": "Não mencionado."
+}
+],
+"fix": [
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+},
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+},
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+}
+]
+}

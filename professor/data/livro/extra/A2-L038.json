@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "going to: plano",
+"wrong": "We bought tickets, but we will travel on Sunday.",
+"right": "We bought tickets, so we're going to travel on Sunday.",
+"why": "Em português 'vou viajar' cobre planos e previsões; em inglês, plano já decidido pede going to."
+},
+"mcq": [
+{
+"q": "Look at the clouds! It ___ rain.",
+"opts": [
+"goes to",
+"is going to",
+"will to"
+],
+"ans": 1,
+"why": "evidência."
+},
+{
+"q": "I bought tickets. I ___ travel.",
+"opts": [
+"go to",
+"am going to",
+"will to"
+],
+"ans": 1,
+"why": "plano."
+},
+{
+"q": "Pergunta correta:",
+"opts": [
+"Are you going to eat?",
+"Do you going to eat?",
+"You are going to eat?"
+],
+"ans": 0,
+"why": "be + subject."
+},
+{
+"q": "Resposta:",
+"opts": [
+"Yes, I do.",
+"Yes, I am.",
+"Yes, I going."
+],
+"ans": 1,
+"why": "am."
+}
+],
+"fix": [
+{
+"wrong": "It's going to rains.",
+"right": "It's going to rain.",
+"why": "base."
+},
+{
+"wrong": "Do you going to leave?",
+"right": "Are you going to leave?",
+"why": "be."
+},
+{
+"wrong": "She's going to buys it.",
+"right": "She's going to buy it.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “He is going to win.”",
+"answer": "Is he going to win?",
+"why": ""
+},
+{
+"prompt": "Futuro: “They play.”",
+"answer": "They are going to play.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We are going to leave.”",
+"answer": "We aren't going to leave.",
+"why": ""
+}
+]
+}

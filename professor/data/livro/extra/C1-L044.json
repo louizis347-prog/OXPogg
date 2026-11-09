@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "clivada sem it",
+"wrong": "Was Dr. Amaral who named it.",
+"right": "It was Dr. Amaral who named it.",
+"why": "O português põe a ênfase com “foi… que” e deixa o sujeito oculto. Em inglês, o it é obrigatório na frase clivada."
+},
+"mcq": [
+{
+"q": "___ was Dr. Amaral who named it.",
+"opts": [
+"It",
+"This",
+"He"
+],
+"ans": 0,
+"why": "It."
+},
+{
+"q": "It was Dr. Amaral ___ named it.",
+"opts": [
+"whom he",
+"who",
+"what"
+],
+"ans": 1,
+"why": "who."
+},
+{
+"q": "It was the report ___ I read.",
+"opts": [
+"what",
+"who",
+"that"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It is time that matters.",
+"Is time that matters.",
+"It time is that matters."
+],
+"ans": 0,
+"why": "It is…that."
+}
+],
+"fix": [
+{
+"wrong": "Was Dr. Amaral who named it.",
+"right": "It was Dr. Amaral who named it.",
+"why": "It."
+},
+{
+"wrong": "It was Dr. Amaral what named it.",
+"right": "It was Dr. Amaral who named it.",
+"why": "who."
+},
+{
+"wrong": "It is the report what I read.",
+"right": "It is the report that I read.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Clivada: “Dr. Amaral named it.” (sujeito)",
+"answer": "It was Dr. Amaral who named it.",
+"why": ""
+},
+{
+"prompt": "Clivada: “I read the report.” (objeto)",
+"answer": "It was the report that I read.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Time matters.”",
+"answer": "It is time that matters.",
+"why": ""
+}
+]
+}

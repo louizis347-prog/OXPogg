@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do without",
+"wrong": "We can do without of the second table.",
+"right": "We can do without the second table.",
+"why": "Por “passar sem”, o brasileiro acrescenta of/de. Em inglês, do without + substantivo."
+},
+"mcq": [
+{
+"q": "We can do ___ the second table.",
+"opts": [
+"for",
+"without",
+"with"
+],
+"ans": 1,
+"why": "do without."
+},
+{
+"q": "She ___ up her coat. (zipped)",
+"opts": [
+"made",
+"put",
+"did"
+],
+"ans": 2,
+"why": "did up."
+},
+{
+"q": "Do away with means…",
+"opts": [
+"eliminate",
+"do again",
+"avoid"
+],
+"ans": 0,
+"why": "Eliminar."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We can do not it.",
+"We can do without it.",
+"We can do without of it."
+],
+"ans": 1,
+"why": "do without."
+}
+],
+"fix": [
+{
+"wrong": "We can do without of coffee.",
+"right": "We can do without coffee.",
+"why": "Sem of."
+},
+{
+"wrong": "She did the zip up of her coat.",
+"right": "She did up her coat.",
+"why": "did up."
+},
+{
+"wrong": "We can’t do with the car.",
+"right": "We can’t do without the car.",
+"why": "without."
+}
+],
+"rewrite": [
+{
+"prompt": "Use do without: “We can manage without a table.”",
+"answer": "We can do without a table.",
+"why": ""
+},
+{
+"prompt": "Use do up: “She closed her coat.”",
+"answer": "She did up her coat.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We can do without it.”",
+"answer": "We can’t do without it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "generalizar / ordem",
+"wrong": "For the most part she used savings, hardly had she borrowed.",
+"right": "For the most part, she used savings.",
+"why": "O brasileiro tende a unir orações com vírgula. Em inglês, locuções como For the most part vêm no início seguidas de vírgula."
+},
+"mcq": [
+{
+"q": "“By and large” means…",
+"opts": [
+"in general",
+"slowly",
+"at once"
+],
+"ans": 0,
+"why": "De modo geral."
+},
+{
+"q": "Hardly ___ the meeting started when the fire alarm rang.",
+"opts": [
+"did",
+"had",
+"has"
+],
+"ans": 1,
+"why": "had."
+},
+{
+"q": "“For the most part,” is followed by…",
+"opts": [
+"a colon",
+"nothing",
+"a comma"
+],
+"ans": 2,
+"why": "Vírgula."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"By and large, it worked.",
+"By and large it worked, hardly.",
+"By large and, it worked."
+],
+"ans": 0,
+"why": "Expressão fixa."
+}
+],
+"fix": [
+{
+"wrong": "By and large it worked.",
+"right": "By and large, it worked.",
+"why": "Vírgula."
+},
+{
+"wrong": "Hardly the meeting had started when it rained.",
+"right": "Hardly had the meeting started when it rained.",
+"why": "Inversão."
+},
+{
+"wrong": "For the most part she use savings.",
+"right": "For the most part, she used savings.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Use By and large: “In general, the plan worked.”",
+"answer": "By and large, the plan worked.",
+"why": ""
+},
+{
+"prompt": "Comece com Hardly: “The meeting had just started when it rained.”",
+"answer": "Hardly had the meeting started when it rained.",
+"why": ""
+},
+{
+"prompt": "Use For the most part: “Mostly, she used savings.”",
+"answer": "For the most part, she used savings.",
+"why": ""
+}
+]
+}

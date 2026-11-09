@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontáveis no plural",
+"wrong": "I need some informations and advices.",
+"right": "I need some information and advice.",
+"why": "Em português informação e conselho têm plural; em inglês information, advice, bread e water são incontáveis."
+},
+"mcq": [
+{
+"q": "Which is uncountable?",
+"opts": [
+"car",
+"water",
+"book"
+],
+"ans": 1,
+"why": "Water."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"an information",
+"informations",
+"some information"
+],
+"ans": 2,
+"why": "Incontável."
+},
+{
+"q": "How ___ water?",
+"opts": [
+"much",
+"many",
+"few"
+],
+"ans": 0,
+"why": "Much."
+},
+{
+"q": "How ___ books?",
+"opts": [
+"much",
+"many",
+"little"
+],
+"ans": 1,
+"why": "Many."
+}
+],
+"fix": [
+{
+"wrong": "I need an advice.",
+"right": "I need some advice.",
+"why": "Incontável."
+},
+{
+"wrong": "How many money?",
+"right": "How much money?",
+"why": "Much."
+},
+{
+"wrong": "She has long hairs.",
+"right": "She has long hair.",
+"why": "Hair incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com much/many: “How ___ sugar do you want?” Escreva a pergunta completa.",
+"answer": "How much sugar do you want?",
+"why": ""
+},
+{
+"prompt": "Complete com much/many: “How ___ apples do you have?” (frase completa)",
+"answer": "How many apples do you have?",
+"why": ""
+},
+{
+"prompt": "Corrija: “I want a bread.”",
+"answer": "I want some bread.",
+"why": ""
+}
+]
+}

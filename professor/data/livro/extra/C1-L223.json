@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "who × which",
+"wrong": "The cartoon shows a man which is trusting his feed.",
+"right": "The cartoon shows a man who is trusting his feed.",
+"why": "Em português “que” serve para pessoa e coisa. Em inglês, para pessoas use who/that, não which."
+},
+"mcq": [
+{
+"q": "To describe the first scene, begin with...",
+"opts": [
+"Finally,…",
+"In the first panel,…",
+"Overall,…"
+],
+"ans": 1,
+"why": "Cenário."
+},
+{
+"q": "“The humor comes ___ the loop.”",
+"opts": [
+"of",
+"by",
+"from"
+],
+"ans": 2,
+"why": "come from."
+},
+{
+"q": "To state the point, write...",
+"opts": [
+"The message is that…",
+"It is message that…",
+"The message that is."
+],
+"ans": 0,
+"why": "The message is that."
+},
+{
+"q": "Which noun phrase names the idea of seeing only similar views?",
+"opts": [
+"pricing table",
+"confirmation loop",
+"street map"
+],
+"ans": 1,
+"why": "confirmation loop."
+}
+],
+"fix": [
+{
+"wrong": "The humor is from the algorithm.",
+"right": "The humor comes from the algorithm.",
+"why": "come from."
+},
+{
+"wrong": "I find it funny because of the algorithm recommends only likes.",
+"right": "I find it funny because the algorithm recommends only likes.",
+"why": "because + oração."
+},
+{
+"wrong": "The cartoon show a like-minded circle.",
+"right": "The cartoon shows a like-minded circle.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com who: “I see a woman. She scrolls all night.”",
+"answer": "I see a woman who scrolls all night.",
+"why": ""
+},
+{
+"prompt": "Reescreva com The message is that: “The cartoon warns that filters are risky.”",
+"answer": "The message is that filters are risky.",
+"why": ""
+},
+{
+"prompt": "Reescreva com I find it: “In my opinion, it is clever.”",
+"answer": "I find it clever.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to e not to",
+"wrong": "I study for don't fail.",
+"right": "I study not to fail.",
+"why": "Em português 'para não falhar' vem com não; em inglês a negativa é not to + base."
+},
+"mcq": [
+{
+"q": "I wrote it down ___ forget.",
+"opts": [
+"to not",
+"for not",
+"not to"
+],
+"ans": 2,
+"why": "not to."
+},
+{
+"q": "We left early ___ be late.",
+"opts": [
+"to",
+"not to",
+"for"
+],
+"ans": 1,
+"why": "not to."
+},
+{
+"q": "She uses a map ___ lost.",
+"opts": [
+"not to get",
+"to not get",
+"for don't get"
+],
+"ans": 0,
+"why": "not to."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I came to help.",
+"I came for help to.",
+"I came helping."
+],
+"ans": 0,
+"why": "to."
+}
+],
+"fix": [
+{
+"wrong": "I wrote it to don't forget.",
+"right": "I wrote it not to forget.",
+"why": "not to."
+},
+{
+"wrong": "She went for buy bread.",
+"right": "She went to buy bread.",
+"why": "to."
+},
+{
+"wrong": "He ran to no be late.",
+"right": "He ran not to be late.",
+"why": "not to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I take notes. I don't forget.” com not to",
+"answer": "I take notes not to forget.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I went. I buy a gift.”",
+"answer": "I went to buy a gift.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We left early. We aren't late.” com not to",
+"answer": "We left early not to be late.",
+"why": ""
+}
+]
+}

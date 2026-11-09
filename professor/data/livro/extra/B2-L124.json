@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The politician made a discourse about the new law.",
+"right": "The politician made a speech about the new law.",
+"why": "Discurso em português = speech; discourse existe, mas é raro e abstrato."
+},
+"mcq": [
+{
+"q": "Complete: People **___** worried.",
+"opts": [
+"is",
+"are",
+"was"
+],
+"ans": 1,
+"why": "people = plural."
+},
+{
+"q": "Qual é a preposição?",
+"opts": [
+"vote on candidate",
+"vote of",
+"vote for"
+],
+"ans": 2,
+"why": "vote for."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He argues that taxes should fall.",
+"He argues taxes to fall.",
+"He argues to taxes."
+],
+"ans": 0,
+"why": "argue that."
+},
+{
+"q": "speech =",
+"opts": [
+"pedido",
+"lei",
+"discurso"
+],
+"ans": 2,
+"why": "falso cognato."
+}
+],
+"fix": [
+{
+"wrong": "The people is voting today.",
+"right": "The people are voting today.",
+"why": "Plural."
+},
+{
+"wrong": "She voted on Smith.",
+"right": "She voted for Smith.",
+"why": "for."
+},
+{
+"wrong": "The deputy made a discourse.",
+"right": "The deputy made a speech.",
+"why": "speech."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They elected the mayor.”",
+"answer": "The mayor was elected.",
+"why": ""
+},
+{
+"prompt": "Reescreva com argue that: “The mayor wants a park.”",
+"answer": "The mayor argues that we need a park.",
+"why": ""
+},
+{
+"prompt": "Reescreva com is said to: “People say he is honest.”",
+"answer": "He is said to be honest.",
+"why": ""
+}
+]
+}

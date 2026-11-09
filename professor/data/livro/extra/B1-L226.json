@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "The bag is not enough big.",
+"right": "The bag is not big enough.",
+"why": "Em português “grande o suficiente” vem depois; o brasileiro, porém, pensa em “suficientemente grande” e coloca enough antes do adjetivo. Em inglês, depois."
+},
+"mcq": [
+{
+"q": "The coffee is hot **___**.",
+"opts": [
+"enough",
+"too",
+"so"
+],
+"ans": 0,
+"why": "Enough depois."
+},
+{
+"q": "This tea is **___** sweet to drink.",
+"opts": [
+"such",
+"enough",
+"too"
+],
+"ans": 2,
+"why": "Too + adj."
+},
+{
+"q": "Did the trial seem worth **___**?",
+"opts": [
+"to do",
+"do",
+"doing"
+],
+"ans": 2,
+"why": "Worth + -ing."
+},
+{
+"q": "The result was so odd **___** we repeated it.",
+"opts": [
+"what",
+"that",
+"than"
+],
+"ans": 1,
+"why": "So… that."
+}
+],
+"fix": [
+{
+"wrong": "The room is enough warm.",
+"right": "The room is warm enough.",
+"why": "Ordem."
+},
+{
+"wrong": "It was such big surprise.",
+"right": "It was such a big surprise.",
+"why": "Falta a."
+},
+{
+"wrong": "It’s no use to wait.",
+"right": "It’s no use waiting.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva “quente o bastante”: “The tea is … (hot)”",
+"answer": "The tea is hot enough.",
+"why": ""
+},
+{
+"prompt": "Use too: “The tea is very hot. I can’t drink it.”",
+"answer": "The tea is too hot to drink.",
+"why": ""
+},
+{
+"prompt": "Use no use: “Waiting is useless.”",
+"answer": "It’s no use waiting.",
+"why": ""
+}
+]
+}

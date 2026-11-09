@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mine × my",
+"wrong": "This book is my.",
+"right": "This book is mine.",
+"why": "O português usa \"meu\" nas duas posições; em inglês, sem substantivo, usa-se mine/yours/hers."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"a friend of my",
+"a friend of mine",
+"a friend of me"
+],
+"ans": 1,
+"why": "Of mine."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There house is big.",
+"They’re house is big.",
+"Their house is big."
+],
+"ans": 2,
+"why": "Their."
+},
+{
+"q": "This is my book. It is ___.",
+"opts": [
+"mine",
+"my",
+"me"
+],
+"ans": 0,
+"why": "Pronome possessivo."
+},
+{
+"q": "That bag is ___. (de você)",
+"opts": [
+"your",
+"yours",
+"you"
+],
+"ans": 1,
+"why": "Yours."
+}
+],
+"fix": [
+{
+"wrong": "That is her. (the bag)",
+"right": "That is hers.",
+"why": "Hers."
+},
+{
+"wrong": "There house is big.",
+"right": "Their house is big.",
+"why": "Their."
+},
+{
+"wrong": "The red car is my.",
+"right": "The red car is mine.",
+"why": "Mine."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por pronome: “It is your pen.” (The pen is…)",
+"answer": "The pen is yours.",
+"why": ""
+},
+{
+"prompt": "Corrija: “It is there car.” (deles)",
+"answer": "It is their car.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “This is my book.” (This book is…)",
+"answer": "This book is mine.",
+"why": ""
+}
+]
+}

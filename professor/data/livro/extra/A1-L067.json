@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "keep = manter/continuar",
+"wrong": "I stay running every day.",
+"right": "I keep running every day.",
+"why": "Em português dizemos \"continuo correndo\"; em inglês keep + -ing expressa continuar."
+},
+"mcq": [
+{
+"q": "“Continue a falar” =",
+"opts": [
+"Stay talking.",
+"Continue talk.",
+"Keep talking."
+],
+"ans": 2,
+"why": "Keep + -ing."
+},
+{
+"q": "“Guarde o troco” =",
+"opts": [
+"Keep the change.",
+"Save the change.",
+"Hold the change."
+],
+"ans": 0,
+"why": "Keep."
+},
+{
+"q": "“Fique calmo” =",
+"opts": [
+"Stay calm only",
+"Keep calm.",
+"Hold calm."
+],
+"ans": 1,
+"why": "Keep/stay calm."
+},
+{
+"q": "“Mantenha a porta fechada” =",
+"opts": [
+"Hold the door closed.",
+"Stay the door closed.",
+"Keep the door closed."
+],
+"ans": 2,
+"why": "Keep."
+}
+],
+"fix": [
+{
+"wrong": "She keeps to talk.",
+"right": "She keeps talking.",
+"why": "Keep + -ing."
+},
+{
+"wrong": "Hold the change.",
+"right": "Keep the change.",
+"why": "Keep."
+},
+{
+"wrong": "Keep to walk!",
+"right": "Keep walking!",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Use keep: “Continue to work.” (imperativo)",
+"answer": "Keep working.",
+"why": ""
+},
+{
+"prompt": "Use keep: “Guarde o dinheiro.” (“Save the money.”)",
+"answer": "Keep the money.",
+"why": ""
+},
+{
+"prompt": "Use keep: “He continues to sing.”",
+"answer": "He keeps singing.",
+"why": ""
+}
+]
+}

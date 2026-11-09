@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "This study examine how people decide.",
+"right": "This study examines how people decide.",
+"why": "Esquecer o -s da 3ª pessoa (em português o verbo varia por pessoa, mas o hábito é outro). Study é singular."
+},
+"mcq": [
+{
+"q": "This study **___** how people decide.",
+"opts": [
+"examines",
+"examine",
+"examining"
+],
+"ans": 0,
+"why": "3ª pessoa."
+},
+{
+"q": "Contrast:",
+"opts": [
+"Although",
+"Because",
+"So"
+],
+"ans": 0,
+"why": "Contraste."
+},
+{
+"q": "Method:",
+"opts": [
+"This study examines…",
+"We examines…",
+"I am examine…"
+],
+"ans": 0,
+"why": "Método."
+},
+{
+"q": "The results **___** that…",
+"opts": [
+"show",
+"showing",
+"shows"
+],
+"ans": 0,
+"why": "Plural."
+}
+],
+"fix": [
+{
+"wrong": "The study show that people decide fast.",
+"right": "The study shows that people decide fast.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Although it hurts but we learn.",
+"right": "Although it hurts, we learn.",
+"why": "Sem but."
+},
+{
+"wrong": "People decides slowly.",
+"right": "People decide slowly.",
+"why": "People é plural."
+}
+],
+"rewrite": [
+{
+"prompt": "3ª pessoa: “These studies examine it.” (This study…)",
+"answer": "This study examines it.",
+"why": ""
+},
+{
+"prompt": "Plural: “The study shows this.” (The studies…)",
+"answer": "The studies show this.",
+"why": ""
+},
+{
+"prompt": "Combine: “It hurts. We learn.” (Although)",
+"answer": "Although it hurts, we learn.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would rather + base",
+"wrong": "I would rather to stay home.",
+"right": "I would rather stay home.",
+"why": "O português \"preferiria ficar\" leva infinitivo; em inglês would rather é seguido de base sem to."
+},
+"mcq": [
+{
+"q": "Qual é correta?",
+"opts": [
+"She prefers cycling than driving.",
+"She prefers cycling to driving.",
+"She prefers to cycling to driving."
+],
+"ans": 1,
+"why": "prefer -ing to -ing."
+},
+{
+"q": "Pergunta com would rather:",
+"opts": [
+"Do you would rather eat out?",
+"Would you rather to eat out?",
+"Would you rather eat out?"
+],
+"ans": 2,
+"why": "Would you rather + base."
+},
+{
+"q": "Preferência sobre pessoa diferente:",
+"opts": [
+"I'd rather you stayed.",
+"I'd rather you to stay.",
+"I'd rather that you stay to."
+],
+"ans": 0,
+"why": "would rather + sujeito + passado."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I prefer tea than coffee.",
+"I prefer tea of coffee.",
+"I prefer tea to coffee."
+],
+"ans": 2,
+"why": "prefer A to B."
+}
+],
+"fix": [
+{
+"wrong": "I'd rather not to say.",
+"right": "I'd rather not say.",
+"why": "Sem to."
+},
+{
+"wrong": "Would you rather going by train?",
+"right": "Would you rather go by train?",
+"why": "Base após rather."
+},
+{
+"wrong": "We prefer walk than take the bus.",
+"right": "We prefer walking to taking the bus.",
+"why": "prefer -ing to -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a negativa: “I'd rather go.”",
+"answer": "I'd rather not go.",
+"why": ""
+},
+{
+"prompt": "Reescreva com prefer -ing: “She likes reading better than watching TV.”",
+"answer": "She prefers reading to watching TV.",
+"why": ""
+},
+{
+"prompt": "Passe para pergunta: “You would rather eat now.”",
+"answer": "Would you rather eat now?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in + década",
+"wrong": "On the early 1950s, researchers studied DNA fibers.",
+"right": "In the early 1950s, researchers studied DNA fibers.",
+"why": "Em português “nos anos 1950” usa em/nos. O aluno muda para on. Em inglês, décadas e anos usam in; on é para dias."
+},
+"mcq": [
+{
+"q": "“In 1953” uses the preposition...",
+"opts": [
+"in",
+"on",
+"at"
+],
+"ans": 0,
+"why": "in."
+},
+{
+"q": "Cautious about credit:",
+"opts": [
+"She alone discovered…",
+"Historians continue to debate…",
+"It is a fact that…"
+],
+"ans": 1,
+"why": "Cautela."
+},
+{
+"q": "A verb of contribution:",
+"opts": [
+"made of",
+"got of",
+"contributed to"
+],
+"ans": 2,
+"why": "contribute to."
+},
+{
+"q": "X-ray crystallography produces a...",
+"opts": [
+"diffraction pattern",
+"family tree",
+"table"
+],
+"ans": 0,
+"why": "Padrão."
+}
+],
+"fix": [
+{
+"wrong": "Her data contributed the model.",
+"right": "Her data contributed to the model.",
+"why": "contribute to."
+},
+{
+"wrong": "The model drawed on her pattern.",
+"right": "The model drew on her pattern.",
+"why": "drew."
+},
+{
+"wrong": "In 1958 he published a paper in the DNA fiber.",
+"right": "In 1958 he published a paper on the DNA fiber.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in: “The date was early in the 1950s.”",
+"answer": "In the early 1950s,",
+"why": ""
+},
+{
+"prompt": "Reescreva com drew on: “She used earlier work.”",
+"answer": "She drew on earlier work.",
+"why": ""
+},
+{
+"prompt": "Reescreva com cautela: “Many question who deserves credit.” (Historians continue to debate…)",
+"answer": "Historians continue to debate who deserves credit.",
+"why": ""
+}
+]
+}

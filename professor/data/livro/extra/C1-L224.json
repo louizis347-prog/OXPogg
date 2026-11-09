@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pedir esclarecimento",
+"wrong": "I would like to ask you a clarification on the draft.",
+"right": "I would like to ask for clarification on the draft.",
+"why": "Em português “pedir um esclarecimento” usa o substantivo direto. Em inglês, ask for clarification (incontável, com for)."
+},
+"mcq": [
+{
+"q": "Politely queries a point:",
+"opts": [
+"Explain this now.",
+"What is this?",
+"I would like to ask for clarification on…"
+],
+"ans": 2,
+"why": "Educado."
+},
+{
+"q": "To soften criticism:",
+"opts": [
+"That may be too strong.",
+"That is wrong.",
+"You are bad."
+],
+"ans": 0,
+"why": "Atenuação."
+},
+{
+"q": "A suggestion form:",
+"opts": [
+"Add a source.",
+"Would you consider adding a source?",
+"You add source."
+],
+"ans": 1,
+"why": "Would you consider…?"
+},
+{
+"q": "In a manuscript review, “causal wording” means...",
+"opts": [
+"spelling",
+"fonts",
+"words implying cause"
+],
+"ans": 2,
+"why": "Linguagem causal."
+}
+],
+"fix": [
+{
+"wrong": "The wording appears be too strong.",
+"right": "The wording appears to be too strong.",
+"why": "appears to be."
+},
+{
+"wrong": "Would you consider to add a source?",
+"right": "Would you consider adding a source?",
+"why": "consider + -ing."
+},
+{
+"wrong": "I ask clarification for the request.",
+"right": "I ask for clarification on the request.",
+"why": "ask for."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva suavizando: “This claim is too strong.” (may be)",
+"answer": "This claim may be too strong.",
+"why": ""
+},
+{
+"prompt": "Reescreva como sugestão: “Add a source.” (Would you consider…?)",
+"answer": "Would you consider adding a source?",
+"why": ""
+},
+{
+"prompt": "Reescreva formal: “Explain the method.” (I would like to ask for clarification on…)",
+"answer": "I would like to ask for clarification on the method.",
+"why": ""
+}
+]
+}

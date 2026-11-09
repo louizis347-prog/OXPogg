@@ -4,8 +4,14 @@
 'use strict';
 const $=(s,r)=>(r||document).querySelector(s),$$=(s,r)=>[].slice.call((r||document).querySelectorAll(s));
 const reduce=()=>{try{return matchMedia('(prefers-reduced-motion:reduce)').matches}catch(e){return false}};
-if(!window.HomeArt||!window.PogObra)return;
-const ART=PogObra.svg(7009801,'obra-cover'),ARTP=PogObra.svg(7009801,'sticker'),ART2=PogObra.svg(9801,'obra-cover'),FACE=id=>PogObra.face(id);
+if(!window.HomeArt)return;
+/* arte pesada (capas das obras) só é carregada quando a pessoa chega ao tutorial */
+let ART,ARTP,ART2,FACE;
+function loadArt(){
+  if(window.PogObra){ART=PogObra.svg(7009801,'obra-cover');ARTP=PogObra.svg(7009801,'sticker');ART2=PogObra.svg(9801,'obra-cover');FACE=id=>PogObra.face(id);return Promise.resolve()}
+  const add=src=>new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=no;document.head.appendChild(s)});
+  return add('js/obra-art-hand.js').then(()=>add('js/obra-art.js')).then(loadArt);
+}
 
 /* ---------- aparelho ---------- */
 const SB=`<span class="sb-i"><svg viewBox="0 0 18 12" width="1.7em" height="1.1em"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12" width="1.5em" height="1.1em"><path d="M8,11.4 L5.6,8.7 A3.6,3.6 0 0 1 10.4,8.7Z M2.6,6 A7.2,7.2 0 0 1 13.4,6 L11.9,7.4 A5,5 0 0 0 4.1,7.4Z M0.3,3.4 A10.4,10.4 0 0 1 15.7,3.4 L14.2,4.8 A8.4,8.4 0 0 0 1.8,4.8Z"/></svg><svg viewBox="0 0 27 12" width="2.3em" height="1.1em"><rect x=".6" y=".6" width="22" height="10.8" rx="3.2" fill="none" stroke="currentColor" opacity=".5"/><rect x="2.2" y="2.2" width="17" height="7.6" rx="2" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="1" fill="currentColor" opacity=".5"/></svg></span>`;
@@ -65,14 +71,9 @@ const SCR={
 };
 
 /* ---------- herói ---------- */
+/* o palco do herói agora é HTML estático (capas em WebP); aqui só entra o mascote */
 function hero(){
-  const st=$('.hero2 .stage');if(!st)return;
-  st.innerHTML=`<div class="st-glow"></div>${device(SCR.home(),{cls:'back'})}${device(SCR.cover(),{cls:'front'})}
-   <div class="hero-pog" aria-hidden="true">${HomeArt.mascot({scarf:'#FF7A45'})}</div>
-   <span class="chip2 c-top">Aprenda pela cultura <b>✦</b></span><span class="chip2 c-bot"><b>10 min</b> por episódio</span><span class="chip2 c-mid">🪙 +10 Pogcoins</span>`;
-  if(reduce())return;
-  st.addEventListener('pointermove',e=>{const r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;st.style.setProperty('--rx',(-y*7).toFixed(2)+'deg');st.style.setProperty('--ry',(x*9).toFixed(2)+'deg')});
-  st.addEventListener('pointerleave',()=>{st.style.setProperty('--rx','0deg');st.style.setProperty('--ry','0deg')});
+  const pog=$('.hero2 .hero-pog');if(pog&&!pog.firstChild)pog.innerHTML=HomeArt.mascot({scarf:'#FF7A45'});
 }
 
 /* ---------- tutorial ---------- */
@@ -140,6 +141,12 @@ function menu(){
   }
 }
 
-hero();tutorial();menu();
+hero();menu();
+/* o tutorial (≈500 elementos + arte das obras) só é montado quando a seção chega perto da tela */
+(function(){
+  const sec=$('#tutorial');if(!sec)return;
+  const go=()=>loadArt().then(()=>tutorial()).catch(()=>{});
+  if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();go()}},{rootMargin:'250px 0px'});io.observe(sec)}else go();
+})();
 window.LandingPro={device,SCR};
 })();

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem io/do",
+"wrong": "She sent a letter me.",
+"right": "She sent me a letter.",
+"why": "Em português o objeto direto vem antes da preposição (\"enviou a carta para mim\"); em inglês, sem to, o objeto indireto vem primeiro."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"She gave a gift me.",
+"She gave me a gift.",
+"She gave to me a gift."
+],
+"ans": 1,
+"why": "IO antes de DO."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He sent to Ana a letter.",
+"He sent a letter Ana.",
+"He sent a letter to Ana."
+],
+"ans": 2,
+"why": "Com to após DO."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Tell me the answer.",
+"Tell to me the answer.",
+"Tell the answer me."
+],
+"ans": 0,
+"why": "Sem to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I showed to Tom the photo.",
+"I showed Tom the photo.",
+"I showed the photo Tom."
+],
+"ans": 1,
+"why": "IO + DO."
+}
+],
+"fix": [
+{
+"wrong": "He gave a book me.",
+"right": "He gave me a book.",
+"why": "IO antes."
+},
+{
+"wrong": "She sent to Ana a letter.",
+"right": "She sent Ana a letter.",
+"why": "Sem to."
+},
+{
+"wrong": "Tell to me the truth.",
+"right": "Tell me the truth.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem to: “She gave a gift to Ana.”",
+"answer": "She gave Ana a gift.",
+"why": ""
+},
+{
+"prompt": "Reescreva com to: “He sent me a letter.”",
+"answer": "He sent a letter to me.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem to: “I showed the photo to Tom.”",
+"answer": "I showed Tom the photo.",
+"why": ""
+}
+]
+}

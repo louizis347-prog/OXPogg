@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Albeit it was modest, trust rose.",
+"right": "Albeit modest, trust rose.",
+"why": "Em português “embora fosse modesto”; albeit não é seguido de oração completa, só adjetivo, advérbio ou sintagma."
+},
+"mcq": [
+{
+"q": "Albeit + …",
+"opts": [
+"full clause",
+"verb",
+"adjective"
+],
+"ans": 2,
+"why": "Albeit modest."
+},
+{
+"q": "Much as + …",
+"opts": [
+"infinitive",
+"clause",
+"noun"
+],
+"ans": 1,
+"why": "Oração."
+},
+{
+"q": "Correct:",
+"opts": [
+"Much analysts as…",
+"Much as analysts expected, …",
+"Much as analysts expected it, …"
+],
+"ans": 1,
+"why": "Much as."
+},
+{
+"q": "Albeit is…",
+"opts": [
+"informal",
+"formal and short",
+"a verb"
+],
+"ans": 1,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "Albeit was brief, it helped.",
+"right": "Albeit brief, it helped.",
+"why": "Sem verbo."
+},
+{
+"wrong": "Much as I admiring her, I disagree.",
+"right": "Much as I admire her, I disagree.",
+"why": "Presente."
+},
+{
+"wrong": "Albeit slowly it grew, trust rose.",
+"right": "Albeit slowly, trust rose.",
+"why": "Sem oração."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com albeit: “Trust rose, although it was modest.”",
+"answer": "Trust rose, albeit modest.",
+"why": ""
+},
+{
+"prompt": "Reescreva com much as: “Although I admire her, I disagree.”",
+"answer": "Much as I admire her, I disagree.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Much as I admire her, I disagree.”",
+"answer": "Much as I admired her, I disagreed.",
+"why": ""
+}
+]
+}

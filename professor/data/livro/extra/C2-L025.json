@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural",
+"wrong": "The countries found areas of common interests.",
+"right": "The countries found areas of common interest.",
+"why": "Em português “interesses comuns” é plural. Em inglês, a expressão fixa é areas of common interest (singular)."
+},
+"mcq": [
+{
+"q": "“A frank exchange” in diplomacy means...",
+"opts": [
+"a pleasant talk",
+"a tense discussion",
+"a trade"
+],
+"ans": 1,
+"why": "Eufemismo."
+},
+{
+"q": "“Views with concern” expresses...",
+"opts": [
+"approval",
+"joy",
+"disapproval"
+],
+"ans": 2,
+"why": "Condena."
+},
+{
+"q": "“Takes note” (of) signals...",
+"opts": [
+"no agreement",
+"full agreement",
+"anger"
+],
+"ans": 0,
+"why": "Sem concordar."
+},
+{
+"q": "A joint communiqué is...",
+"opts": [
+"a trade",
+"a shared statement",
+"a vote"
+],
+"ans": 1,
+"why": "Comunicado conjunto."
+}
+],
+"fix": [
+{
+"wrong": "The envoy took note about the proposal.",
+"right": "The envoy took note of the proposal.",
+"why": "of."
+},
+{
+"wrong": "The cable were sent by the envoy.",
+"right": "The cable was sent by the envoy.",
+"why": "was."
+},
+{
+"wrong": "They had a frank exchange of views, but agree on nothing.",
+"right": "They had a frank exchange of views but agreed on nothing.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com views with concern: “The government is worried about the plan.”",
+"answer": "The government views the plan with concern.",
+"why": ""
+},
+{
+"prompt": "Reescreva com takes note of: “The ministry knows about the proposal but does not agree.”",
+"answer": "The ministry takes note of the proposal.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “They take note of it.”",
+"answer": "They took note of it.",
+"why": ""
+}
+]
+}

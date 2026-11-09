@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "it + be + that",
+"wrong": "It is surprising what he refused.",
+"right": "It is surprising that he refused.",
+"why": "Em português, “é surpreendente que ele recusou”; o brasileiro omite it ou troca por what. Estrutura: It + be + adjetivo + that."
+},
+"mcq": [
+{
+"q": "It is **___** that we investigate.",
+"opts": [
+"essential",
+"essence",
+"essentially"
+],
+"ans": 0,
+"why": "Adjetivo."
+},
+{
+"q": "It is odd **___** nobody called.",
+"opts": [
+"who",
+"that",
+"what"
+],
+"ans": 1,
+"why": "That."
+},
+{
+"q": "Que opção está certa?",
+"opts": [
+"Is vital that we act.",
+"It vital that we act.",
+"It is vital that we act."
+],
+"ans": 2,
+"why": "It is."
+},
+{
+"q": "It is surprising that he **___**.",
+"opts": [
+"refused",
+"refuse to",
+"refusing"
+],
+"ans": 0,
+"why": "Oração."
+}
+],
+"fix": [
+{
+"wrong": "Is vital that she stays.",
+"right": "It is vital that she stay.",
+"why": "It; subjuntivo."
+},
+{
+"wrong": "It is odd what nobody called.",
+"right": "It is odd that nobody called.",
+"why": "That."
+},
+{
+"wrong": "It is essential we to investigate.",
+"right": "It is essential that we investigate.",
+"why": "That + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Surprisingly, he refused.” (It is…)",
+"answer": "It is surprising that he refused.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Our investigating is essential.” (It is…)",
+"answer": "It is essential that we investigate.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It is odd that nobody called.” (not odd)",
+"answer": "It is not odd that nobody called.",
+"why": ""
+}
+]
+}

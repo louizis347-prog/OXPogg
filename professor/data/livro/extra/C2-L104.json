@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "voz passiva",
+"wrong": "Speakers will limited to two minutes.",
+"right": "Speakers will be limited to two minutes.",
+"why": "Em português “serão limitados”; em inglês é obrigatório o be após will na passiva."
+},
+"mcq": [
+{
+"q": "Formal invitation:",
+"opts": [
+"Residents cordially invite.",
+"Residents invited to.",
+"Residents are cordially invited."
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "Restriction:",
+"opts": [
+"Speakers will be limited to two minutes.",
+"Speakers limit to.",
+"Speakers will limited."
+],
+"ans": 0,
+"why": "will be."
+},
+{
+"q": "Cordially means…",
+"opts": [
+"quickly",
+"warmly",
+"angrily"
+],
+"ans": 1,
+"why": "Cordialmente."
+},
+{
+"q": "Institutional tone is…",
+"opts": [
+"impersonal",
+"slangy",
+"personal"
+],
+"ans": 0,
+"why": "Impessoal."
+}
+],
+"fix": [
+{
+"wrong": "Speakers limited to two minutes will be.",
+"right": "Speakers will be limited to two minutes.",
+"why": "Ordem will be + particípio."
+},
+{
+"wrong": "Residents are cordial invited.",
+"right": "Residents are cordially invited.",
+"why": "Advérbio."
+},
+{
+"wrong": "Speakers will be limit.",
+"right": "Speakers will be limited.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “We limit speakers to two minutes.”",
+"answer": "Speakers are limited to two minutes.",
+"why": ""
+},
+{
+"prompt": "Futuro: “Speakers are limited to two minutes.”",
+"answer": "Speakers will be limited to two minutes.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Residents are invited.”",
+"answer": "Residents are not invited.",
+"why": ""
+}
+]
+}

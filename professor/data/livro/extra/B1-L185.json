@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conectores",
+"wrong": "In the other hand, phones distract students.",
+"right": "On the other hand, phones distract students.",
+"why": "“Por outro lado” se confunde com in. Em inglês: on the one hand / on the other hand."
+},
+"mcq": [
+{
+"q": "A tese vem:",
+"opts": [
+"no meio",
+"no fim apenas",
+"no início"
+],
+"ans": 2,
+"why": "Abra com a tese."
+},
+{
+"q": "First, they give **___** to information.",
+"opts": [
+"excess",
+"acess",
+"access"
+],
+"ans": 2,
+"why": "Access."
+},
+{
+"q": "Para razão: ",
+"opts": [
+"But",
+"Although",
+"Because of this"
+],
+"ans": 2,
+"why": "Because of this."
+},
+{
+"q": "Para contraste:",
+"opts": [
+"Therefore",
+"However",
+"Moreover"
+],
+"ans": 1,
+"why": "However = contraste."
+}
+],
+"fix": [
+{
+"wrong": "Phones helps if rules are clear.",
+"right": "Phones help if rules are clear.",
+"why": "Phones é plural."
+},
+{
+"wrong": "In my point of view, I think that phones help.",
+"right": "In my view, phones help.",
+"why": "Evite duplicação."
+},
+{
+"wrong": "They give access of information.",
+"right": "They give access to information.",
+"why": "Access to."
+}
+],
+"rewrite": [
+{
+"prompt": "Contraste com However: “Phones help. They distract.”",
+"answer": "Phones help. However, they distract.",
+"why": ""
+},
+{
+"prompt": "Primeira razão: “They give access.”",
+"answer": "First, they give access.",
+"why": ""
+},
+{
+"prompt": "Tese: “Phones help.” If rules are clear.",
+"answer": "Phones help if rules are clear.",
+"why": ""
+}
+]
+}

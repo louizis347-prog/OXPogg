@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "step down from",
+"wrong": "She stepped down of her post last week.",
+"right": "She stepped down from her post last week.",
+"why": "Em português usamos “renunciar a/de”. O aluno copia de. Em inglês, step down from um cargo ou step down as + função."
+},
+"mcq": [
+{
+"q": "“He stepped down ___ chairman.”",
+"opts": [
+"of",
+"as",
+"to"
+],
+"ans": 1,
+"why": "step down as."
+},
+{
+"q": "“She was asked to ___ down.”",
+"opts": [
+"stand",
+"go",
+"step"
+],
+"ans": 2,
+"why": "be asked to step down."
+},
+{
+"q": "A **stepping-down speech** is a...",
+"opts": [
+"farewell speech",
+"first speech",
+"debate"
+],
+"ans": 0,
+"why": "Discurso de despedida."
+},
+{
+"q": "“step down from a post” means...",
+"opts": [
+"get it",
+"leave it",
+"design it"
+],
+"ans": 1,
+"why": "Deixar o cargo."
+}
+],
+"fix": [
+{
+"wrong": "The leader stepped down the post.",
+"right": "The leader stepped down from the post.",
+"why": "from."
+},
+{
+"wrong": "He was ask to step down.",
+"right": "He was asked to step down.",
+"why": "Passiva."
+},
+{
+"wrong": "The deal was fail and the leader stepped down.",
+"right": "The deal failed and the leader stepped down.",
+"why": "Verbo ativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com as: “He resigned from the position of chairman.” (stepped down as)",
+"answer": "He stepped down as chairman.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They asked her to step down.”",
+"answer": "She was asked to step down.",
+"why": ""
+},
+{
+"prompt": "Reescreva com stepped down from: “He left his post.”",
+"answer": "He stepped down from his post.",
+"why": ""
+}
+]
+}

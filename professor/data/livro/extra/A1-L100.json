@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make + adjetivo",
+"wrong": "The news makes me to feel sad.",
+"right": "The news makes me sad.",
+"why": "Em português dizemos \"me faz ficar triste\"; em inglês make + objeto + adjetivo, sem to."
+},
+"mcq": [
+{
+"q": "The news makes me ___.",
+"opts": [
+"sadly",
+"to sad",
+"sad"
+],
+"ans": 2,
+"why": "Adjetivo."
+},
+{
+"q": "They call him ___.",
+"opts": [
+"Max",
+"to Max",
+"for Max"
+],
+"ans": 0,
+"why": "Sem preposição."
+},
+{
+"q": "Paint the wall ___.",
+"opts": [
+"bluely",
+"blue",
+"in blue"
+],
+"ans": 1,
+"why": "Cor como complemento."
+},
+{
+"q": "The song makes her ___.",
+"opts": [
+"happily",
+"to happy",
+"happy"
+],
+"ans": 2,
+"why": "Adjetivo."
+}
+],
+"fix": [
+{
+"wrong": "The news makes me sadly.",
+"right": "The news makes me sad.",
+"why": "Adjetivo."
+},
+{
+"wrong": "They call to her Ana.",
+"right": "They call her Ana.",
+"why": "Sem to."
+},
+{
+"wrong": "He painted blue the door.",
+"right": "He painted the door blue.",
+"why": "Ordem O + C."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The song makes happy me.” (corrija)",
+"answer": "The song makes me happy.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “We call to the dog Rex.”",
+"answer": "We call the dog Rex.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She painted red the wall.”",
+"answer": "She painted the wall red.",
+"why": ""
+}
+]
+}

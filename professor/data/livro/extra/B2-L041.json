@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "Water is scary in the desert.",
+"right": "Water is scarce in the desert.",
+"why": "Scarce (escasso) lembra scare/scary (medo), e o brasileiro confunde a grafia e o sentido."
+},
+"mcq": [
+{
+"q": "Quando algo é escasso, é:",
+"opts": [
+"scarce",
+"scary",
+"scare"
+],
+"ans": 0,
+"why": "Scarce."
+},
+{
+"q": "Oferta (econômica):",
+"opts": [
+"suply",
+"offer",
+"supply"
+],
+"ans": 2,
+"why": "Supply."
+},
+{
+"q": "A high price may **imply** that…",
+"opts": [
+"aplicar",
+"sugerir",
+"implicar-se"
+],
+"ans": 1,
+"why": "Imply = sugerir."
+},
+{
+"q": "Demand é:",
+"opts": [
+"demanda",
+"pedido de emprego",
+"exigência legal"
+],
+"ans": 0,
+"why": "Demanda."
+}
+],
+"fix": [
+{
+"wrong": "Fresh fruit is scary in winter.",
+"right": "Fresh fruit is scarce in winter.",
+"why": "Scarce."
+},
+{
+"wrong": "The supply of apples rose.",
+"right": "The suply of apples rose.",
+"why": "Grafia: supply."
+},
+{
+"wrong": "Prices imply of high demand.",
+"right": "Prices imply high demand.",
+"why": "Imply direto."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “Water is … in the desert.” (scarce)",
+"answer": "Water is scarce in the desert.",
+"why": ""
+},
+{
+"prompt": "Troque suggests por implies: “A high price suggests high demand.”",
+"answer": "A high price implies high demand.",
+"why": ""
+},
+{
+"prompt": "Complete: “The price depends on supply and … (demanda)”",
+"answer": "The price depends on supply and demand.",
+"why": ""
+}
+]
+}

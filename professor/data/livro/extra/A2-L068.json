@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "entonação",
+"wrong": "Can you help me? (voz descendo)",
+"right": "Can you help me? (voz subindo)",
+"why": "Em português pedidos podem terminar em tom neutro; em inglês perguntas de sim/não sobem no final. Sem subida, soa como ordem."
+},
+"mcq": [
+{
+"q": "Yes/no question: voz",
+"opts": [
+"desce",
+"sobe",
+"fica reta"
+],
+"ans": 1,
+"why": "sobe."
+},
+{
+"q": "“Where do you live?” termina:",
+"opts": [
+"subindo",
+"descendo",
+"reto"
+],
+"ans": 1,
+"why": "wh- desce."
+},
+{
+"q": "Pedido educado:",
+"opts": [
+"You open it.",
+"Open it.",
+"Could you open it?"
+],
+"ans": 2,
+"why": "could."
+},
+{
+"q": "“Can I sit here?” sobe ou desce?",
+"opts": [
+"sobe",
+"tanto faz",
+"desce"
+],
+"ans": 0,
+"why": "sobe."
+}
+],
+"fix": [
+{
+"wrong": "Where do you live? (voz subindo)",
+"right": "Where do you live? (voz descendo)",
+"why": "wh- desce."
+},
+{
+"wrong": "Could you help me? (voz descendo)",
+"right": "Could you help me? (voz subindo)",
+"why": "sobe."
+},
+{
+"wrong": "Do you like it? (voz descendo)",
+"right": "Do you like it? (voz subindo)",
+"why": "sobe."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva ↑ ou ↓: “Do you speak English?”",
+"answer": "↑",
+"why": ""
+},
+{
+"prompt": "Escreva ↑ ou ↓: “What is your name?”",
+"answer": "↓",
+"why": ""
+},
+{
+"prompt": "Faça pedido educado: “Open the window.” com could",
+"answer": "Could you open the window?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "comparativo/superlativo",
+"wrong": "TV is the most popular of the world.",
+"right": "TV is the most popular source.",
+"why": "Em português “o mais popular do mundo”; o brasileiro usa of the world com source. Aqui o foco: the most/the least + adjetivo, com the obrigatório."
+},
+"mcq": [
+{
+"q": "TV is **___** popular source.",
+"opts": [
+"more",
+"most",
+"the most"
+],
+"ans": 2,
+"why": "Superlativo exige the."
+},
+{
+"q": "Radio is the **___** common.",
+"opts": [
+"least",
+"little",
+"less"
+],
+"ans": 0,
+"why": "The least = o menos."
+},
+{
+"q": "Contrast: Radio is **___** less common than TV.",
+"opts": [
+"much",
+"most",
+"very"
+],
+"ans": 0,
+"why": "Much + comparativo."
+},
+{
+"q": "“A third” is:",
+"opts": [
+"1/4",
+"1/2",
+"1/3"
+],
+"ans": 2,
+"why": "A third = um terço."
+}
+],
+"fix": [
+{
+"wrong": "TV is most popular source.",
+"right": "TV is the most popular source.",
+"why": "Superlativo precisa de the."
+},
+{
+"wrong": "Radio is the less common.",
+"right": "Radio is the least common.",
+"why": "Superlativo de baixa intensidade: the least."
+},
+{
+"wrong": "About the half of people use phones.",
+"right": "About half of people use phones.",
+"why": "Half não leva the aqui."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com superlativo: “TV is more popular than radio.” (…the most popular)",
+"answer": "TV is the most popular.",
+"why": ""
+},
+{
+"prompt": "Reescreva com least: “Radio is the most uncommon.” → “Radio is the … common.”",
+"answer": "Radio is the least common.",
+"why": ""
+},
+{
+"prompt": "Escreva por extenso: “25%”",
+"answer": "a quarter",
+"why": ""
+}
+]
+}

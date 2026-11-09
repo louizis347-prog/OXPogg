@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If only I have more time!",
+"right": "If only I had more time!",
+"why": "If only reforça wish. No presente: if only + passado; no passado: if only + had + particípio. O brasileiro usa o presente."
+},
+"mcq": [
+{
+"q": "If only I **___** more time!",
+"opts": [
+"have",
+"would have",
+"had"
+],
+"ans": 2,
+"why": "Past."
+},
+{
+"q": "If only we **___** earlier!",
+"opts": [
+"left",
+"would leave",
+"had left"
+],
+"ans": 2,
+"why": "Had + part."
+},
+{
+"q": "If only it **___** stop raining!",
+"opts": [
+"would",
+"will",
+"did"
+],
+"ans": 0,
+"why": "Would."
+},
+{
+"q": "If only se usa para:",
+"opts": [
+"desejo ou arrependimento forte",
+"fatos reais",
+"ordens"
+],
+"ans": 0,
+"why": "Intensidade."
+}
+],
+"fix": [
+{
+"wrong": "If only I am taller!",
+"right": "If only I were taller!",
+"why": "Were."
+},
+{
+"wrong": "If only we leave earlier!",
+"right": "If only we had left earlier!",
+"why": "Had left."
+},
+{
+"wrong": "If only he stops talking!",
+"right": "If only he would stop talking!",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I wish I had more time.” (If only…)",
+"answer": "If only I had more time!",
+"why": ""
+},
+{
+"prompt": "Passado: “I wish we had left earlier.” (If only…)",
+"answer": "If only we had left earlier!",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I wish it would stop.” (If only…)",
+"answer": "If only it would stop!",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "put (sentidos)",
+"wrong": "Put on the table. She puts off the exam for tomorrow, then pull on her coat.",
+"right": "Put it on the table. She put off the exam, then put on her coat.",
+"why": "Em português “vestir” e “adiar” têm verbos distintos; o brasileiro usa wear/delay ou perde o phrasal. Em inglês put on = vestir, put off = adiar, put = colocar."
+},
+"mcq": [
+{
+"q": "“Don’t put off the exam” means…",
+"opts": [
+"não adie",
+"não vista",
+"não coloque"
+],
+"ans": 0,
+"why": "adiar."
+},
+{
+"q": "She ___ on her coat.",
+"opts": [
+"wore to",
+"put",
+"took to"
+],
+"ans": 1,
+"why": "put on."
+},
+{
+"q": "She puts ideas ___.",
+"opts": [
+"simple",
+"simplicity",
+"simply"
+],
+"ans": 2,
+"why": "Advérbio."
+},
+{
+"q": "Put the book ___ the table.",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 0,
+"why": "on."
+}
+],
+"fix": [
+{
+"wrong": "Don’t delay the exam up.",
+"right": "Don't put off the exam.",
+"why": "put off."
+},
+{
+"wrong": "She wore on her coat.",
+"right": "She put on her coat.",
+"why": "put on."
+},
+{
+"wrong": "He puts it in the table.",
+"right": "He puts it on the table.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com put on: “He wears a hat now.” (acabou de vestir)",
+"answer": "He puts on a hat.",
+"why": ""
+},
+{
+"prompt": "Reescreva com put off: “We postponed the trip.”",
+"answer": "We put off the trip.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She puts it on the shelf.”",
+"answer": "She put it on the shelf.",
+"why": ""
+}
+]
+}

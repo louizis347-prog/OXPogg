@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "It is commonly hold that rules are natural.",
+"right": "It is commonly held that rules are natural.",
+"why": "Em português “considera-se”; o inglês usa a passiva impessoal com particípio irregular held."
+},
+"mcq": [
+{
+"q": "Distance yourself from a view:",
+"opts": [
+"Commonly it holds…",
+"It is commonly held that…",
+"I hold commonly that…"
+],
+"ans": 1,
+"why": "Passiva impessoal."
+},
+{
+"q": "Nominalization of “appeal to nominalism”:",
+"opts": [
+"appeal to nominalise",
+"the appealing nominalism",
+"the appeal of nominalism"
+],
+"ans": 2,
+"why": "Substantivo."
+},
+{
+"q": "Past participle of hold:",
+"opts": [
+"holden",
+"holded",
+"held"
+],
+"ans": 2,
+"why": "held."
+},
+{
+"q": "Why use “It is held that”?",
+"opts": [
+"to joke",
+"to ask",
+"to avoid owning the claim"
+],
+"ans": 2,
+"why": "Distanciamento."
+}
+],
+"fix": [
+{
+"wrong": "It is commonly holded that rules exist.",
+"right": "It is commonly held that rules exist.",
+"why": "Particípio irregular."
+},
+{
+"wrong": "Commonly is held that rules exist.",
+"right": "It is commonly held that rules exist.",
+"why": "It obrigatório."
+},
+{
+"wrong": "The appeal to nominalism is grow.",
+"right": "The appeal of nominalism is growing.",
+"why": "Gerúndio."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva impessoal: “People commonly hold that rules exist.”",
+"answer": "It is commonly held that rules exist.",
+"why": ""
+},
+{
+"prompt": "Passado: “It is commonly held that rules exist.”",
+"answer": "It was commonly held that rules existed.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “Nominalism appeals to many.”",
+"answer": "The appeal of nominalism is wide.",
+"why": ""
+}
+]
+}

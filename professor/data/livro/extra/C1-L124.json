@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "altura e pausa",
+"wrong": "We lost three hundred jobs, all words equal.",
+"right": "We lost THREE HUNDRED jobs.",
+"why": "Em português a entonação é mais plana nas palavras-chave. Em inglês, suba o tom na palavra-chave e faça pausa antes do dado importante."
+},
+"mcq": [
+{
+"q": "Para enfatizar o número, você…",
+"opts": [
+"sobe o tom em THREE HUNDRED",
+"fala baixo",
+"fala rápido"
+],
+"ans": 0,
+"why": "Pitch."
+},
+{
+"q": "Pausa serve para…",
+"opts": [
+"aumentar a frase",
+"destacar a ideia importante",
+"esconder erros"
+],
+"ans": 1,
+"why": "Pausa."
+},
+{
+"q": "Palavras-chave em inglês recebem…",
+"opts": [
+"nenhum acento",
+"só silêncio",
+"acento e altura"
+],
+"ans": 2,
+"why": "Acento."
+},
+{
+"q": "Qual pausa é mais natural?",
+"opts": [
+"We lost / three hundred jobs.",
+"We / lost three / hundred jobs.",
+"We lost three hun / dred jobs."
+],
+"ans": 0,
+"why": "Grupos."
+}
+],
+"fix": [
+{
+"wrong": "We lost three hundreds jobs.",
+"right": "We lost three hundred jobs.",
+"why": "Sem plural."
+},
+{
+"wrong": "They was loud.",
+"right": "They were loud.",
+"why": "were."
+},
+{
+"wrong": "The speaker pause here.",
+"right": "The speaker pauses here.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Plural: “The speaker pauses here.”",
+"answer": "The speakers pause here.",
+"why": ""
+},
+{
+"prompt": "Passado: “We lose three hundred jobs.”",
+"answer": "We lost three hundred jobs.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We lost three hundred jobs.”",
+"answer": "We did not lose three hundred jobs.",
+"why": ""
+}
+]
+}

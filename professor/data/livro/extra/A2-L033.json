@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Past Simple e contínuo",
+"wrong": "When I arrived, she cooked.",
+"right": "When I arrived, she was cooking.",
+"why": "Em português 'ela cozinhava' é imperfeito; o aluno usa o Past Simple e perde a ideia de ação em curso."
+},
+"mcq": [
+{
+"q": "I was reading when you ___ .",
+"opts": [
+"called",
+"call",
+"were calling"
+],
+"ans": 0,
+"why": "curta."
+},
+{
+"q": "She ___ him. (não viu)",
+"opts": [
+"didn't saw",
+"didn't see",
+"wasn't seeing"
+],
+"ans": 1,
+"why": "didn't."
+},
+{
+"q": "What ___ you doing?",
+"opts": [
+"was",
+"were",
+"did"
+],
+"ans": 1,
+"why": "were."
+},
+{
+"q": "Passado de **drive**:",
+"opts": [
+"drived",
+"driven",
+"drove"
+],
+"ans": 2,
+"why": "drove."
+}
+],
+"fix": [
+{
+"wrong": "They was playing.",
+"right": "They were playing.",
+"why": "were."
+},
+{
+"wrong": "Did you went?",
+"right": "Did you go?",
+"why": "base."
+},
+{
+"wrong": "While I walked, I fell.",
+"right": "While I was walking, I fell.",
+"why": "cont."
+}
+],
+"rewrite": [
+{
+"prompt": "Past continuous: “I clean.”",
+"answer": "I was cleaning.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You saw him.”",
+"answer": "Did you see him?",
+"why": ""
+},
+{
+"prompt": "Negativa: “He called.”",
+"answer": "He didn't call.",
+"why": ""
+}
+]
+}

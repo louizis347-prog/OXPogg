@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "zero conditional",
+"wrong": "If you will heat ice, it melts.",
+"right": "If you heat ice, it melts.",
+"why": "Em português 'se você aquecer' usa subjuntivo/futuro; em inglês o presente simples nos dois lados, sem will."
+},
+"mcq": [
+{
+"q": "If you mix red and blue, you ___ purple.",
+"opts": [
+"will get",
+"get",
+"got"
+],
+"ans": 1,
+"why": "presente."
+},
+{
+"q": "If it ___ , the ground gets wet.",
+"opts": [
+"will rain",
+"rains",
+"rained"
+],
+"ans": 1,
+"why": "presente."
+},
+{
+"q": "Water ___ if you heat it.",
+"opts": [
+"boils",
+"will boil",
+"boiled"
+],
+"ans": 0,
+"why": "presente."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"If I'm tired, I sleep.",
+"If I was tired, I sleep.",
+"If I will be tired, I sleep."
+],
+"ans": 0,
+"why": "presente."
+}
+],
+"fix": [
+{
+"wrong": "If it will rain, the street gets wet.",
+"right": "If it rains, the street gets wet.",
+"why": "sem will."
+},
+{
+"wrong": "If you heat ice, it melted.",
+"right": "If you heat ice, it melts.",
+"why": "presente."
+},
+{
+"wrong": "If he don't sleep, he gets tired.",
+"right": "If he doesn't sleep, he gets tired.",
+"why": "doesn't."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com if: “It rains. The grass grows.”",
+"answer": "If it rains, the grass grows.",
+"why": ""
+},
+{
+"prompt": "Una com if: “You heat ice. It melts.”",
+"answer": "If you heat ice, it melts.",
+"why": ""
+},
+{
+"prompt": "Negativa: “If I sleep, I'm tired.” (não durmo)",
+"answer": "If I don't sleep, I'm tired.",
+"why": ""
+}
+]
+}

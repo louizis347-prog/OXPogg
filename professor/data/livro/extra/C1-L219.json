@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "depends on",
+"wrong": "The argument depends of a false dilemma.",
+"right": "The argument depends on a false dilemma.",
+"why": "Em português “depende de” leva o aluno a usar of. Em inglês, depend on."
+},
+"mcq": [
+{
+"q": "“She failed math, so ignore her” is...",
+"opts": [
+"ad hominem",
+"false dilemma",
+"slippery slope"
+],
+"ans": 0,
+"why": "Ataque à pessoa."
+},
+{
+"q": "“Either you agree or you’re against us.”",
+"opts": [
+"ad hominem",
+"false dilemma",
+"evidence"
+],
+"ans": 1,
+"why": "Só duas opções."
+},
+{
+"q": "A **slippery slope** is...",
+"opts": [
+"a good method",
+"a table",
+"a chain of unlikely effects"
+],
+"ans": 2,
+"why": "Efeito dominó."
+},
+{
+"q": "“The argument ___ a false dilemma.”",
+"opts": [
+"relies on",
+"relies of",
+"relies to"
+],
+"ans": 0,
+"why": "rely on."
+}
+],
+"fix": [
+{
+"wrong": "He attacked to the speaker, not the idea.",
+"right": "He attacked the speaker, not the idea.",
+"why": "Transitivo."
+},
+{
+"wrong": "It is a slippery slope fallacy that lead to panic.",
+"right": "It is a slippery slope fallacy that leads to panic.",
+"why": "-s."
+},
+{
+"wrong": "This is a false dilema.",
+"right": "This is a false dilemma.",
+"why": "Ortografia."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com depends on: “The conclusion relies on a false dilemma.” (depends)",
+"answer": "The conclusion depends on a false dilemma.",
+"why": ""
+},
+{
+"prompt": "Reescreva com either…or: “Agree, or you are against us.” (Either…)",
+"answer": "Either you agree, or you are against us.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “a fallacy”",
+"answer": "fallacies",
+"why": ""
+}
+]
+}

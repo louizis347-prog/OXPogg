@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "the fact that",
+"wrong": "The fact of the city be growing is clear.",
+"right": "The fact that the city is growing is clear.",
+"why": "Em português, \"o fato de a cidade estar crescendo\" usa de + infinitivo. Em inglês, o substantivo é seguido de that + oração completa."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"There is evidence that sleep helps memory.",
+"There is evidence of sleep helps memory.",
+"There is evidence to sleep helps memory."
+],
+"ans": 0,
+"why": "evidence that + oração."
+},
+{
+"q": "Complete: **The fact ___** prices rose worried everyone.",
+"opts": [
+"of",
+"that",
+"to"
+],
+"ans": 1,
+"why": "The fact that + oração."
+},
+{
+"q": "Qual é uma that-clause após substantivo?",
+"opts": [
+"The belief of money",
+"The belief for joy",
+"The belief that money brings joy"
+],
+"ans": 2,
+"why": "belief that + oração."
+},
+{
+"q": "\"The idea that\" é seguido de...",
+"opts": [
+"verbo no infinitivo",
+"sujeito + verbo",
+"gerúndio"
+],
+"ans": 1,
+"why": "that introduz oração completa."
+}
+],
+"fix": [
+{
+"wrong": "The fact of he was late annoyed us.",
+"right": "The fact that he was late annoyed us.",
+"why": "Use that + oração."
+},
+{
+"wrong": "I heard the news what she won.",
+"right": "I heard the news that she won.",
+"why": "Não use what."
+},
+{
+"wrong": "There is a proof of the drug works.",
+"right": "There is proof that the drug works.",
+"why": "proof é incontável e leva that."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com that: “The fact / Prices are rising.”",
+"answer": "The fact that prices are rising",
+"why": ""
+},
+{
+"prompt": "Reescreva com that: “I have no evidence of his guilt.”",
+"answer": "I have no evidence that he is guilty.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the fact that: “Tom is late. That bothers me.”",
+"answer": "The fact that Tom is late bothers me.",
+"why": ""
+}
+]
+}

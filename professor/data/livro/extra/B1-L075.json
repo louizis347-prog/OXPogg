@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb bring up",
+"wrong": "He was bringed up in Recife and brought up it.",
+"right": "He was brought up in Recife, and he brought it up.",
+"why": "Em português verbos regulares são mais comuns; o brasileiro regulariza irregulares (bringed). Phrasal verbs separáveis: pronome entra no meio."
+},
+"mcq": [
+{
+"q": "She ___ up the idea.",
+"opts": [
+"brought",
+"bringed",
+"bring"
+],
+"ans": 0,
+"why": "brought."
+},
+{
+"q": "He was ___ up in Recife.",
+"opts": [
+"bringed",
+"brung",
+"brought"
+],
+"ans": 2,
+"why": "brought up = criado."
+},
+{
+"q": "Which is correct? (phrasal verb bring up)",
+"opts": [
+"bring it up",
+"bring up it",
+"bring it for up"
+],
+"ans": 0,
+"why": "Pronome no meio."
+},
+{
+"q": "“Bring up” can mean…",
+"opts": [
+"trazer para cima",
+"pagar",
+"mencionar"
+],
+"ans": 2,
+"why": "mencionar."
+}
+],
+"fix": [
+{
+"wrong": "She bringed up the idea.",
+"right": "She brought up the idea.",
+"why": "brought."
+},
+{
+"wrong": "He brought up it.",
+"right": "He brought it up.",
+"why": "Pronome."
+},
+{
+"wrong": "I was brought up on Recife.",
+"right": "I was brought up in Recife.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com it: “He brought up the idea.”",
+"answer": "He brought it up.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She brings up the topic.”",
+"answer": "She brought up the topic.",
+"why": ""
+},
+{
+"prompt": "Reescreva na passiva: “His parents raised him in Recife.” (brought up)",
+"answer": "He was brought up in Recife.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "What it strikes me is the practicality.",
+"right": "What strikes me is the practicality.",
+"why": "Português permite “o que me chama atenção é isso”; o pseudo-cleft inglês não leva it."
+},
+"mcq": [
+{
+"q": "Which sentence highlights what strikes the speaker?",
+"opts": [
+"What strikes me is the practicality.",
+"What strike me is practicality.",
+"What it strikes me is practicality."
+],
+"ans": 0,
+"why": "What + V."
+},
+{
+"q": "Conditional 1 with imperative:",
+"opts": [
+"Realize this, you would",
+"Realize this, and you will understand.",
+"Realize this and you understood."
+],
+"ans": 1,
+"why": "Imperativo + and + will."
+},
+{
+"q": "Realize this, and… means…",
+"opts": [
+"If you realize this, …",
+"Although you realize this, …",
+"Because you realized, …"
+],
+"ans": 0,
+"why": "Condicional."
+},
+{
+"q": "After “and” use…",
+"opts": [
+"base only",
+"would",
+"will + base"
+],
+"ans": 2,
+"why": "will."
+}
+],
+"fix": [
+{
+"wrong": "Realize this, and you understand.",
+"right": "Realize this, and you will understand.",
+"why": "will."
+},
+{
+"wrong": "What impress me is the humor.",
+"right": "What impresses me is the humor.",
+"why": "-s."
+},
+{
+"wrong": "What I admire it is the wit.",
+"right": "What I admire is the wit.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The humor impresses me.”",
+"answer": "What impresses me is the humor.",
+"why": ""
+},
+{
+"prompt": "Reescreva com if: “Realize this, and you will understand.”",
+"answer": "If you realize this, you will understand.",
+"why": ""
+},
+{
+"prompt": "Passado: “What strikes me is clear.”",
+"answer": "What struck me was clear.",
+"why": ""
+}
+]
+}

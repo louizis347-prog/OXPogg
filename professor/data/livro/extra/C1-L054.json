@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "outlines this",
+"wrong": "This proposal outline a new service.",
+"right": "This proposal outlines a new service.",
+"why": "O sujeito singular this proposal exige -s; o brasileiro esquece porque o verbo português não depende de “this”."
+},
+"mcq": [
+{
+"q": "This proposal ___ a new service.",
+"opts": [
+"outlines",
+"outline",
+"outlining"
+],
+"ans": 0,
+"why": "-s."
+},
+{
+"q": "The aim ___ to build understanding.",
+"opts": [
+"does",
+"is",
+"are"
+],
+"ans": 1,
+"why": "is."
+},
+{
+"q": "Objectives should be…",
+"opts": [
+"long",
+"vague",
+"measurable"
+],
+"ans": 2,
+"why": "Mensuráveis."
+},
+{
+"q": "Which is formal?",
+"opts": [
+"This proposal outlines…",
+"I wanna tell you…",
+"Look, my idea is…"
+],
+"ans": 0,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "This proposal outline a service.",
+"right": "This proposal outlines a service.",
+"why": "-s."
+},
+{
+"wrong": "The aim is build understanding.",
+"right": "The aim is to build understanding.",
+"why": "to."
+},
+{
+"wrong": "We proposes a study.",
+"right": "We propose a study.",
+"why": "Sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Terceira pessoa: “We outline a new service.” (This proposal…)",
+"answer": "This proposal outlines a new service.",
+"why": ""
+},
+{
+"prompt": "Complete: “The aim is ___ build trust.” (frase)",
+"answer": "The aim is to build trust.",
+"why": ""
+},
+{
+"prompt": "Reescreva com We: “This proposal proposes a study.”",
+"answer": "We propose a study.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "rise ≠ raise",
+"wrong": "Prices raised sharply last year.",
+"right": "Prices rose sharply last year.",
+"why": "Raise é transitivo (aumentar algo). Rise é intransitivo: o preço subiu sozinho."
+},
+"mcq": [
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rised sharply.",
+"Sales rose sharply."
+],
+"ans": 2,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"in",
+"of",
+"on"
+],
+"ans": 0,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However, it works.",
+"However; it works."
+],
+"ans": 1,
+"why": "However, com vírgula."
+},
+{
+"q": "Complete: It depends **___** the data.",
+"opts": [
+"on",
+"of",
+"from"
+],
+"ans": 0,
+"why": "depend on."
+}
+],
+"fix": [
+{
+"wrong": "It is a problem very serious.",
+"right": "It is a very serious problem.",
+"why": "ordem."
+},
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+},
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “The graph shows a fall.”",
+"answer": "The graph showed a fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+}
+]
+}

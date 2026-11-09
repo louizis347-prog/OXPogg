@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conjunções e vírgula",
+"wrong": "I was tired, because I slept late.",
+"right": "I was tired because I slept late.",
+"why": "Em português escrevemos 'estava cansado, porque…' com vírgula; em inglês because não leva vírgula antes."
+},
+"mcq": [
+{
+"q": "I like tea ___ I don't like coffee.",
+"opts": [
+"because",
+"so",
+"but"
+],
+"ans": 2,
+"why": "Contraste = but."
+},
+{
+"q": "I'm hungry, ___ I eat now.",
+"opts": [
+"so",
+"or",
+"but"
+],
+"ans": 0,
+"why": "Resultado = so."
+},
+{
+"q": "Tea ___ coffee?",
+"opts": [
+"or",
+"so",
+"and"
+],
+"ans": 0,
+"why": "Escolha = or."
+},
+{
+"q": "I'm happy ___ it's Friday.",
+"opts": [
+"because",
+"so",
+"but"
+],
+"ans": 0,
+"why": "Razão = because."
+}
+],
+"fix": [
+{
+"wrong": "I was late, because the bus was slow.",
+"right": "I was late because the bus was slow.",
+"why": "Sem vírgula."
+},
+{
+"wrong": "It's cold, but I wear a coat.",
+"right": "It's cold, so I wear a coat.",
+"why": "Resultado = so."
+},
+{
+"wrong": "I like pizza and I don't like fish.",
+"right": "I like pizza but I don't like fish.",
+"why": "Contraste = but."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com because: “I'm tired. I worked late.”",
+"answer": "I'm tired because I worked late.",
+"why": ""
+},
+{
+"prompt": "Una com but: “I like tea. I don't like milk.”",
+"answer": "I like tea but I don't like milk.",
+"why": ""
+},
+{
+"prompt": "Una com so: “It rains. I stay home.”",
+"answer": "It rains so I stay home.",
+"why": ""
+}
+]
+}

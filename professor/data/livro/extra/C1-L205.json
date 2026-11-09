@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "certeza excessiva",
+"wrong": "This is the cause of the flood.",
+"right": "This is probably one cause of the flood.",
+"why": "Em português afirmamos causas sem ressalva (“esta é a causa”). Em texto acadêmico em inglês, use probably, one of, may para não superafirmar."
+},
+"mcq": [
+{
+"q": "Which sentence is least certain about the weather?",
+"opts": [
+"It will rain.",
+"The clouds suggest rain.",
+"It rains."
+],
+"ans": 1,
+"why": "suggest."
+},
+{
+"q": "Which word best softens “always” in a river description?",
+"opts": [
+"never",
+"every",
+"mostly"
+],
+"ans": 2,
+"why": "mostly."
+},
+{
+"q": "“This is ___ one cause.”",
+"opts": [
+"probably",
+"definitely",
+"surely"
+],
+"ans": 0,
+"why": "probably."
+},
+{
+"q": "“___ experts agree” (hedged)",
+"opts": [
+"All",
+"Many",
+"Every"
+],
+"ans": 1,
+"why": "Many."
+}
+],
+"fix": [
+{
+"wrong": "The river always runs downhill.",
+"right": "The river mostly runs downhill.",
+"why": "Hedge."
+},
+{
+"wrong": "Everyone knows the forecast is wrong.",
+"right": "Many people think the forecast is wrong.",
+"why": "Generalização."
+},
+{
+"wrong": "The clouds suggest it will to rain.",
+"right": "The clouds suggest it will rain.",
+"why": "will + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Suavize: “It will rain tomorrow.” (may)",
+"answer": "It may rain tomorrow.",
+"why": ""
+},
+{
+"prompt": "Suavize: “The clouds show rain.” (suggest)",
+"answer": "The clouds suggest rain.",
+"why": ""
+},
+{
+"prompt": "Suavize: “This is the cause.” (probably one)",
+"answer": "This is probably one cause.",
+"why": ""
+}
+]
+}

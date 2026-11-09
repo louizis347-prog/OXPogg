@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito nulo",
+"wrong": "We chose it not because it is cheap but because is reliable.",
+"right": "We chose it not because it is cheap but because it is reliable.",
+"why": "O português omite o sujeito (“porque é confiável”). Em inglês, o sujeito é obrigatório em toda oração, mesmo depois de but."
+},
+"mcq": [
+{
+"q": "“Not so much correcting ___ reconciling.”",
+"opts": [
+"than",
+"as",
+"but"
+],
+"ans": 1,
+"why": "not so much…as."
+},
+{
+"q": "“Less at elegance ___ at frequency.”",
+"opts": [
+"as",
+"but",
+"than"
+],
+"ans": 2,
+"why": "less…than."
+},
+{
+"q": "“Not X but Y” puts the stress on...",
+"opts": [
+"Y",
+"X",
+"neither"
+],
+"ans": 0,
+"why": "Y."
+},
+{
+"q": "A **term bank** is...",
+"opts": [
+"a money bank",
+"a database of terms",
+"a dictionary"
+],
+"ans": 1,
+"why": "Banco terminológico."
+}
+],
+"fix": [
+{
+"wrong": "Is not so much a rule as a habit.",
+"right": "It is not so much a rule as a habit.",
+"why": "Sujeito."
+},
+{
+"wrong": "The controlled vocabulary were revised.",
+"right": "The controlled vocabulary was revised.",
+"why": "was."
+},
+{
+"wrong": "They use a term bank for preferred term.",
+"right": "They use a term bank for preferred terms.",
+"why": "plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com not so much…as: “It is a habit more than a rule.”",
+"answer": "It is not so much a rule as a habit.",
+"why": ""
+},
+{
+"prompt": "Reescreva com not…but: “They helped, and it was not because it was perfect.” (Not because it is perfect but because they helped)",
+"answer": "Not because it is perfect but because they helped.",
+"why": ""
+},
+{
+"prompt": "Reescreva com less…than: “It is more social than technical.”",
+"answer": "It is less technical than social.",
+"why": ""
+}
+]
+}

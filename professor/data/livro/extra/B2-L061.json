@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Do you wish you know more about money?",
+"right": "Do you wish you knew more about money?",
+"why": "Wish + passado para desejo irreal. O brasileiro mantém o presente. Recomendação: I recommend that + base."
+},
+"mcq": [
+{
+"q": "Do you wish you **___** more about money?",
+"opts": [
+"knew",
+"would know",
+"know"
+],
+"ans": 0,
+"why": "Past."
+},
+{
+"q": "I recommend that he **___** a budget.",
+"opts": [
+"keep",
+"to keep",
+"keeps"
+],
+"ans": 0,
+"why": "Base."
+},
+{
+"q": "Gancho irreal:",
+"opts": [
+"I wish I saved more.",
+"I wish I had saved more.",
+"I wish I saving more."
+],
+"ans": 1,
+"why": "Passado: arrependimento."
+},
+{
+"q": "Recomendação:",
+"opts": [
+"I recommend opening an account.",
+"I recommend to open an account.",
+"I recommend open an account."
+],
+"ans": 0,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I wish I know how to invest.",
+"right": "I wish I knew how to invest.",
+"why": "Past."
+},
+{
+"wrong": "She recommends that I opens an account.",
+"right": "She recommends that I open an account.",
+"why": "Base."
+},
+{
+"wrong": "He recommended to save more.",
+"right": "He recommended saving more.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I don’t know about money.” (I wish…)",
+"answer": "I wish I knew about money.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “You should open an account.” (I recommend that you…)",
+"answer": "I recommend that you open an account.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You wish you knew more.”",
+"answer": "Do you wish you knew more?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Should extend the city the lease?",
+"right": "Should the city extend the lease?",
+"why": "Português permite a pergunta sem inverter; em inglês should vem antes do sujeito."
+},
+"mcq": [
+{
+"q": "Formal ballot question:",
+"opts": [
+"Extend should city?",
+"Should the city extend the lease?",
+"The city should extend the lease?"
+],
+"ans": 1,
+"why": "Inversão."
+},
+{
+"q": "A Yes vote…",
+"opts": [
+"asks",
+"blocks it",
+"extends the lease"
+],
+"ans": 2,
+"why": "Efeito."
+},
+{
+"q": "Effect of vote:",
+"opts": [
+"A Yes vote extending.",
+"A vote of Yes extends it.",
+"A vote Yes is extending."
+],
+"ans": 1,
+"why": "Efeito."
+},
+{
+"q": "Should + …",
+"opts": [
+"to",
+"-ing",
+"base verb"
+],
+"ans": 2,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "Should extend the city the lease?",
+"right": "Should the city extend the lease?",
+"why": "Inversão."
+},
+{
+"wrong": "Should the city to extend it?",
+"right": "Should the city extend it?",
+"why": "Base."
+},
+{
+"wrong": "A Yes vote extend the lease.",
+"right": "A Yes vote extends the lease.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta formal: “The city should extend the lease.”",
+"answer": "Should the city extend the lease?",
+"why": ""
+},
+{
+"prompt": "Negativo: “A Yes vote extends the lease.”",
+"answer": "A Yes vote does not extend the lease.",
+"why": ""
+},
+{
+"prompt": "Plural: “A Yes vote extends it.”",
+"answer": "Yes votes extend it.",
+"why": ""
+}
+]
+}

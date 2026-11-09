@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "therefore ≠ so",
+"wrong": "The fee is high, therefore, so we offer plans.",
+"right": "The fee is high; therefore, we offer plans.",
+"why": "O brasileiro junta dois conectores de consequência. Use apenas um."
+},
+"mcq": [
+{
+"q": "Complete: Costs rose; **___**, sales fell.",
+"opts": [
+"nevertheless",
+"for example",
+"as a result"
+],
+"ans": 2,
+"why": "Relação de causa."
+},
+{
+"q": "Qual indica contraste?",
+"opts": [
+"Nevertheless",
+"Moreover",
+"Therefore"
+],
+"ans": 0,
+"why": "nevertheless = ainda assim."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"First of all, then, we plan.",
+"Firstly, we plan. Secondly, we act.",
+"Firstly, secondly we act."
+],
+"ans": 1,
+"why": "Sequência com ordem."
+},
+{
+"q": "Qual pontua corretamente?",
+"opts": [
+"It rained; however, we went.",
+"It rained, however we went.",
+"It rained however, we went."
+],
+"ans": 0,
+"why": "Ponto-e-vírgula + however + vírgula."
+}
+],
+"fix": [
+{
+"wrong": "It was hard, however we won.",
+"right": "It was hard; however, we won.",
+"why": "Pontuação."
+},
+{
+"wrong": "In addition of this, we help.",
+"right": "In addition, we help.",
+"why": "Sem of."
+},
+{
+"wrong": "Consequently, so, sales fell.",
+"right": "Consequently, sales fell.",
+"why": "Um conector."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com furthermore: “It is cheap. It is fast. (add)”",
+"answer": "It is cheap; furthermore, it is fast.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It's late but I'll stay.”",
+"answer": "It's late; however, I'll stay.",
+"why": ""
+},
+{
+"prompt": "Reescreva com consequently: “He studied, so he passed.”",
+"answer": "He studied; consequently, he passed.",
+"why": ""
+}
+]
+}

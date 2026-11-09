@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in/on/at",
+"wrong": "I have class in Monday at 8.",
+"right": "I have class on Monday at 8.",
+"why": "O português usa \"na/às\" de forma parecida, mas o brasileiro generaliza in; em inglês usa-se at (hora), on (dia), in (mês/ano)."
+},
+"mcq": [
+{
+"q": "___ July",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 1,
+"why": "Mês."
+},
+{
+"q": "___ 2024",
+"opts": [
+"on",
+"at",
+"in"
+],
+"ans": 2,
+"why": "Ano."
+},
+{
+"q": "___ the morning",
+"opts": [
+"in",
+"on",
+"at"
+],
+"ans": 0,
+"why": "Parte do dia: in."
+},
+{
+"q": "___ night",
+"opts": [
+"in",
+"at",
+"on"
+],
+"ans": 1,
+"why": "At night."
+}
+],
+"fix": [
+{
+"wrong": "She works in Mondays.",
+"right": "She works on Mondays.",
+"why": "On."
+},
+{
+"wrong": "My birthday is on May.",
+"right": "My birthday is in May.",
+"why": "In."
+},
+{
+"wrong": "They sleep in the night.",
+"right": "They sleep at night.",
+"why": "At night."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “We have class ___ Friday.” (frase completa)",
+"answer": "We have class on Friday.",
+"why": ""
+},
+{
+"prompt": "Complete: “It is cold ___ December.” (frase completa)",
+"answer": "It is cold in December.",
+"why": ""
+},
+{
+"prompt": "Complete: “I read ___ night.” (frase completa)",
+"answer": "I read at night.",
+"why": ""
+}
+]
+}

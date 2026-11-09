@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "into",
+"wrong": "She made a translation of the play to English.",
+"right": "She made a translation of the play into English.",
+"why": "Em português “traduzir para o inglês” usa para; o aluno copia to. Em inglês, translate into a language."
+},
+"mcq": [
+{
+"q": "“Handsome staging” praises the...",
+"opts": [
+"script",
+"budget",
+"production design"
+],
+"ans": 2,
+"why": "Encenação."
+},
+{
+"q": "“Ensemble” refers to the...",
+"opts": [
+"cast working together",
+"audience",
+"lights"
+],
+"ans": 0,
+"why": "Elenco."
+},
+{
+"q": "“Curious inertia” describes...",
+"opts": [
+"fast action",
+"odd lack of movement",
+"loud music"
+],
+"ans": 1,
+"why": "Inércia."
+},
+{
+"q": "Pick the noun for a changed script:",
+"opts": [
+"adaptive",
+"adapting to",
+"adaptation"
+],
+"ans": 2,
+"why": "adaptation."
+}
+],
+"fix": [
+{
+"wrong": "The revival were handsome.",
+"right": "The revival was handsome.",
+"why": "was."
+},
+{
+"wrong": "The direction is good, however the pacing drags.",
+"right": "The direction is good; however, the pacing drags.",
+"why": "Ponto e vírgula."
+},
+{
+"wrong": "The play translated to Portuguese was staged.",
+"right": "The play translated into Portuguese was staged.",
+"why": "into."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com translated into: “She translated the play to English.”",
+"answer": "She translated the play into English.",
+"why": ""
+},
+{
+"prompt": "Reescreva com ensemble: “The cast works well together.”",
+"answer": "The ensemble works well together.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The revival opens in June.”",
+"answer": "The revival opened in June.",
+"why": ""
+}
+]
+}

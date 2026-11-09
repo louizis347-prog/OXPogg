@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "expected + to",
+"wrong": "Workers are expected arrive on time.",
+"right": "Workers are expected to arrive on time.",
+"why": "Em português \"espera-se que cheguem\" dispensa o to; em inglês falta o infinitivo com to."
+},
+"mcq": [
+{
+"q": "\"You are supposed to wait\" = ",
+"opts": [
+"Você supõe esperar.",
+"Você deve esperar (regra/plano).",
+"Você esperou."
+],
+"ans": 1,
+"why": "be supposed to = expectativa ou regra."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Staff expect to wearing ID.",
+"Staff are expected wear ID.",
+"Staff are expected to wear ID."
+],
+"ans": 2,
+"why": "be expected to + base."
+},
+{
+"q": "Complete: The train **was supposed ___** at 8.",
+"opts": [
+"to arrive",
+"arrive",
+"arriving"
+],
+"ans": 0,
+"why": "supposed to + base."
+},
+{
+"q": "\"I'm expecting a call\" significa...",
+"opts": [
+"esperam que eu ligue",
+"devo ligar",
+"aguardo uma ligação"
+],
+"ans": 2,
+"why": "expect no continuous = aguardar."
+}
+],
+"fix": [
+{
+"wrong": "You are suppose to sign here.",
+"right": "You are supposed to sign here.",
+"why": "Falta o -d."
+},
+{
+"wrong": "She is expect to win.",
+"right": "She is expected to win.",
+"why": "Voz passiva: expected."
+},
+{
+"wrong": "They were suppose to meet at six.",
+"right": "They were supposed to meet at six.",
+"why": "Passado: supposed."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com be expected to: “People expect him to win.”",
+"answer": "He is expected to win.",
+"why": ""
+},
+{
+"prompt": "Reescreva com expecting: “I wait for his email.”",
+"answer": "I am expecting his email.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be supposed to: “You must be here at nine.”",
+"answer": "You are supposed to be here at nine.",
+"why": ""
+}
+]
+}

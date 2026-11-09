@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural sem artigo",
+"wrong": "They are a doctors.",
+"right": "They are doctors.",
+"why": "No plural não se usa a/an."
+},
+"mcq": [
+{
+"q": "They ___ students.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 2,
+"why": "They: are."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We are doctors.",
+"We are a doctors.",
+"We are doctor."
+],
+"ans": 0,
+"why": "Plural sem a/an."
+},
+{
+"q": "I ___ a student.",
+"opts": [
+"is",
+"am",
+"are"
+],
+"ans": 1,
+"why": "I: am."
+},
+{
+"q": "Which uses an?",
+"opts": [
+"an teacher",
+"an doctor",
+"an engineer"
+],
+"ans": 2,
+"why": "Engineer começa com vogal."
+}
+],
+"fix": [
+{
+"wrong": "They are a nurses.",
+"right": "They are nurses.",
+"why": "Plural sem a."
+},
+{
+"wrong": "She is a engineer.",
+"right": "She is an engineer.",
+"why": "Vogal: an."
+},
+{
+"wrong": "I are a teacher.",
+"right": "I am a teacher.",
+"why": "I: am."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no plural: “She is a nurse.”",
+"answer": "They are nurses.",
+"why": ""
+},
+{
+"prompt": "Negue: “He is a doctor.” (is not)",
+"answer": "He is not a doctor.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “She is a teacher.”",
+"answer": "Is she a teacher?",
+"why": ""
+}
+]
+}

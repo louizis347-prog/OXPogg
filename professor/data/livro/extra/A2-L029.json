@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural /ɪz/",
+"wrong": "two bus",
+"right": "two buses",
+"why": "Em português o plural é só -s sem sílaba extra; em inglês, após sibilantes, -es soa /ɪz/."
+},
+"mcq": [
+{
+"q": "**Boxes** termina em:",
+"opts": [
+"/s/",
+"/ɪz/",
+"/z/"
+],
+"ans": 1,
+"why": "sibilante."
+},
+{
+"q": "**Cats** termina em:",
+"opts": [
+"/s/",
+"/ɪz/",
+"/z/"
+],
+"ans": 0,
+"why": "surdo."
+},
+{
+"q": "**Dogs** termina em:",
+"opts": [
+"/ɪz/",
+"/s/",
+"/z/"
+],
+"ans": 2,
+"why": "sonoro."
+},
+{
+"q": "Plural de **watch**:",
+"opts": [
+"watchies",
+"watchs",
+"watches"
+],
+"ans": 2,
+"why": "-es."
+}
+],
+"fix": [
+{
+"wrong": "two watchs",
+"right": "two watches",
+"why": "-es."
+},
+{
+"wrong": "She teachs English.",
+"right": "She teaches English.",
+"why": "-es."
+},
+{
+"wrong": "three classs",
+"right": "three classes",
+"why": "-es."
+}
+],
+"rewrite": [
+{
+"prompt": "Plural: “one box”",
+"answer": "two boxes",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “I wash it.” (she)",
+"answer": "She washes it.",
+"why": ""
+},
+{
+"prompt": "Plural: “one dish”",
+"answer": "two dishes",
+"why": ""
+}
+]
+}

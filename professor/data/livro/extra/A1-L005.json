@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem sujeito-verbo",
+"wrong": "Went to school Ana yesterday.",
+"right": "Ana went to school yesterday.",
+"why": "Em português o sujeito pode vir depois do verbo (\"foi a Ana\"); em inglês o padrão é sujeito antes do verbo."
+},
+"mcq": [
+{
+"q": "Which order is correct?",
+"opts": [
+"Ana sleeps.",
+"Sleeps Ana.",
+"Ana is sleeps."
+],
+"ans": 0,
+"why": "Sujeito + verbo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Fly birds.",
+"Birds fly.",
+"Birds flying."
+],
+"ans": 1,
+"why": "S + V."
+},
+{
+"q": "Weather: ___ rains a lot.",
+"opts": [
+"—",
+"There",
+"It"
+],
+"ans": 2,
+"why": "Precisa de sujeito."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Dogs bark.",
+"Bark dogs.",
+"Dogs is bark."
+],
+"ans": 0,
+"why": "S + V."
+}
+],
+"fix": [
+{
+"wrong": "Arrived the teacher.",
+"right": "The teacher arrived.",
+"why": "S antes de V."
+},
+{
+"wrong": "Is cold today.",
+"right": "It is cold today.",
+"why": "Sujeito it."
+},
+{
+"wrong": "Sleep the baby.",
+"right": "The baby sleeps.",
+"why": "S + V."
+}
+],
+"rewrite": [
+{
+"prompt": "Ponha na ordem: “runs / Tom”",
+"answer": "Tom runs.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “sleeps / the baby”",
+"answer": "The baby sleeps.",
+"why": ""
+},
+{
+"prompt": "Ponha na ordem: “fly / birds”",
+"answer": "Birds fly.",
+"why": ""
+}
+]
+}

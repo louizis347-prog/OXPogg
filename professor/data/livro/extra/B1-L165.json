@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "question tag",
+"wrong": "You work late, aren’t you?",
+"right": "You work late, don’t you?",
+"why": "Em português usamos “né?” para tudo. Em inglês a tag repete o auxiliar da frase (do/does/did) com polaridade oposta."
+},
+"mcq": [
+{
+"q": "It’s late, **___**?",
+"opts": [
+"is it",
+"doesn’t it",
+"isn’t it"
+],
+"ans": 2,
+"why": "Frase positiva com is → tag negativa isn’t it."
+},
+{
+"q": "It isn’t late, **___**?",
+"opts": [
+"is it",
+"does it",
+"isn’t it"
+],
+"ans": 0,
+"why": "Frase negativa → tag positiva."
+},
+{
+"q": "She finished the report, **___**?",
+"opts": [
+"wasn’t she",
+"hasn’t she",
+"didn’t she"
+],
+"ans": 2,
+"why": "Passado simples com verbo comum → didn’t."
+},
+{
+"q": "I’m right, **___**?",
+"opts": [
+"aren’t I",
+"amn’t I",
+"isn’t I"
+],
+"ans": 0,
+"why": "Com I am a tag é aren’t I."
+}
+],
+"fix": [
+{
+"wrong": "You like coffee, isn’t it?",
+"right": "You like coffee, don’t you?",
+"why": "A tag concorda com o sujeito e o auxiliar, não é fixa como “né”."
+},
+{
+"wrong": "He doesn’t work here, doesn’t he?",
+"right": "He doesn’t work here, does he?",
+"why": "Frase negativa pede tag positiva."
+},
+{
+"wrong": "They are tired, aren’t they not?",
+"right": "They are tired, aren’t they?",
+"why": "A tag já é negativa; não acrescente not."
+}
+],
+"rewrite": [
+{
+"prompt": "Acrescente uma tag: “You work late.”",
+"answer": "You work late, don’t you?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “It isn’t late.”",
+"answer": "It isn’t late, is it?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “She is a reporter.”",
+"answer": "She is a reporter, isn’t she?",
+"why": ""
+}
+]
+}

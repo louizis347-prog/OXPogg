@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição + -ing",
+"wrong": "Instead of use the score, I listed my priorities.",
+"right": "Instead of using the score, I listed my priorities.",
+"why": "Em português “em vez de usar” leva infinitivo. Em inglês, depois de instead of (preposição) use -ing."
+},
+"mcq": [
+{
+"q": "“Instead of ___, I listed priorities.”",
+"opts": [
+"using scores",
+"use scores",
+"to use scores"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "“Then, and only then, ___ I let feelings decide.”",
+"opts": [
+"do",
+"did",
+"have"
+],
+"ans": 1,
+"why": "Inversão."
+},
+{
+"q": "Emphasis:",
+"opts": [
+"Maybe",
+"Because",
+"Then, and only then…"
+],
+"ans": 2,
+"why": "Ênfase."
+},
+{
+"q": "“The surprise: my favourite came ___.”",
+"opts": [
+"last",
+"at last",
+"lastly"
+],
+"ans": 0,
+"why": "last."
+}
+],
+"fix": [
+{
+"wrong": "My favourite came the last.",
+"right": "My favourite came last.",
+"why": "last."
+},
+{
+"wrong": "Only then I let feelings decide.",
+"right": "Only then did I let feelings decide.",
+"why": "Inversão."
+},
+{
+"wrong": "I decided by listing than choosing.",
+"right": "I decided by listing rather than choosing.",
+"why": "rather than."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com instead of: “I listed priorities. I did not use scores.”",
+"answer": "Instead of using scores, I listed priorities.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Only then: “I let feelings decide then.”",
+"answer": "Only then did I let feelings decide.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “My favourite comes last.”",
+"answer": "My favourite came last.",
+"why": ""
+}
+]
+}

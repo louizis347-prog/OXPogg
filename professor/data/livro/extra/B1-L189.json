@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "We spent three hours to use phones.",
+"right": "We spent three hours using phones.",
+"why": "Português: “passamos três horas para usar”. Em inglês spend/waste time + -ing."
+},
+"mcq": [
+{
+"q": "She spent two hours **___**.",
+"opts": [
+"read",
+"reading",
+"to read"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Don’t waste time **___**.",
+"opts": [
+"to worry",
+"worry",
+"worrying"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "I spend money **___** books.",
+"opts": [
+"on",
+"at",
+"in"
+],
+"ans": 0,
+"why": "Spend money on."
+},
+{
+"q": "Spend time:",
+"opts": [
+"achar tempo",
+"gastar tempo",
+"perder o tempo sempre"
+],
+"ans": 1,
+"why": "Gastar tempo."
+}
+],
+"fix": [
+{
+"wrong": "He wasted an hour to wait.",
+"right": "He wasted an hour waiting.",
+"why": "-ing."
+},
+{
+"wrong": "We spent time for talk.",
+"right": "We spent time talking.",
+"why": "-ing."
+},
+{
+"wrong": "I spend money in clothes.",
+"right": "I spend money on clothes.",
+"why": "On."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “She read for three hours.” (spent)",
+"answer": "She spent three hours reading.",
+"why": ""
+},
+{
+"prompt": "Una: “He waited. It was a waste of an hour.” (wasted)",
+"answer": "He wasted an hour waiting.",
+"why": ""
+},
+{
+"prompt": "Passado: “I spend time using phones.”",
+"answer": "I spent time using phones.",
+"why": ""
+}
+]
+}

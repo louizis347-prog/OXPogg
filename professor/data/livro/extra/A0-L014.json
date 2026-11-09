@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "negativa com do",
+"wrong": "I no am tired.",
+"right": "I am not tired.",
+"why": "Em português basta \"não\" antes do verbo; em inglês o not vem depois do be."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"He no is a doctor.",
+"He is not a doctor.",
+"He doesn’t a doctor."
+],
+"ans": 1,
+"why": "Not após is."
+},
+{
+"q": "Is he a doctor? — ___",
+"opts": [
+"No, he doesn’t.",
+"No, he no.",
+"No, he isn’t."
+],
+"ans": 2,
+"why": "Resposta com isn’t."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I’m not tired.",
+"Im not tired.",
+"I’am not tired."
+],
+"ans": 0,
+"why": "I’m."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It am a cat.",
+"It is a cat.",
+"It are a cat."
+],
+"ans": 1,
+"why": "It: is."
+}
+],
+"fix": [
+{
+"wrong": "I not am hungry.",
+"right": "I am not hungry.",
+"why": "Not depois de am."
+},
+{
+"wrong": "Do you tired?",
+"right": "Are you tired?",
+"why": "Be não usa do."
+},
+{
+"wrong": "Were friends.",
+"right": "We’re friends.",
+"why": "We’re com apóstrofo."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “He is a student.”",
+"answer": "Is he a student?",
+"why": ""
+},
+{
+"prompt": "Use contração com isn’t: “She is not here.”",
+"answer": "She isn’t here.",
+"why": ""
+},
+{
+"prompt": "Troque por “My dog”: “They are small.”",
+"answer": "My dog is small.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + gerúndio",
+"wrong": "I can’t help to check my phone.",
+"right": "I can’t help checking my phone.",
+"why": "Em português “não consigo evitar de checar”. O inglês exige can’t help + -ing. Keep e fail aparecem em construções diferentes."
+},
+"mcq": [
+{
+"q": "I keep **___**.",
+"opts": [
+"scroll",
+"to scroll",
+"scrolling"
+],
+"ans": 2,
+"why": "Keep -ing."
+},
+{
+"q": "I can’t help **___**.",
+"opts": [
+"laughing",
+"laugh",
+"to laugh"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "She failed **___** the test.",
+"opts": [
+"to pass",
+"pass",
+"passing"
+],
+"ans": 0,
+"why": "Fail to pass."
+},
+{
+"q": "Keep + -ing:",
+"opts": [
+"continuar",
+"parar",
+"começar"
+],
+"ans": 0,
+"why": "Continuar."
+}
+],
+"fix": [
+{
+"wrong": "He keeps to scroll.",
+"right": "He keeps scrolling.",
+"why": "Keep -ing."
+},
+{
+"wrong": "I can’t help to smile.",
+"right": "I can’t help smiling.",
+"why": "-ing."
+},
+{
+"wrong": "She failed passing.",
+"right": "She failed to pass.",
+"why": "Fail to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She continues to scroll.” (keeps)",
+"answer": "She keeps scrolling.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “I keep scrolling.”",
+"answer": "I kept scrolling.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I can help checking.” (can’t)",
+"answer": "I can’t help checking.",
+"why": ""
+}
+]
+}

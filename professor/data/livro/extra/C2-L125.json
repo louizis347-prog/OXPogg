@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Not only you will win, but also learn.",
+"right": "Not only will you win, but you will also learn.",
+"why": "Português mantém ordem direta após “não só”; inglês inverte aux + sujeito."
+},
+"mcq": [
+{
+"q": "Which sentence inverts correctly after Rarely?",
+"opts": [
+"Rarely he did miss.",
+"Rarely did he miss.",
+"Rarely did he missed."
+],
+"ans": 1,
+"why": "did + base."
+},
+{
+"q": "Review phrase:",
+"opts": [
+"not with flaws",
+"not without flaws",
+"no without flaw"
+],
+"ans": 1,
+"why": "Litote."
+},
+{
+"q": "Have it that…",
+"opts": [
+"owns",
+"eats",
+"claims"
+],
+"ans": 2,
+"why": "Alegar."
+},
+{
+"q": "Not only will you…",
+"opts": [
+"but you will also…",
+"also but",
+"but will also you"
+],
+"ans": 0,
+"why": "Paralelo."
+}
+],
+"fix": [
+{
+"wrong": "Not only you will win, but…",
+"right": "Not only will you win, but…",
+"why": "will you."
+},
+{
+"wrong": "Rarely he did miss.",
+"right": "Rarely did he miss.",
+"why": "did he."
+},
+{
+"wrong": "On points, he win.",
+"right": "On points, he won.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “You will not only win but also learn.”",
+"answer": "Not only will you win, but you will also learn.",
+"why": ""
+},
+{
+"prompt": "Inverta: “He rarely missed.”",
+"answer": "Rarely did he miss.",
+"why": ""
+},
+{
+"prompt": "Plural: “It is not without flaws.”",
+"answer": "They are not without flaws.",
+"why": ""
+}
+]
+}

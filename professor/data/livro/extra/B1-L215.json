@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so/such",
+"wrong": "She is such tired.",
+"right": "She is so tired.",
+"why": "Em português “tão cansada” e “tamanho cansaço”. Em inglês so + adjetivo; such + (a) + adjetivo + substantivo."
+},
+"mcq": [
+{
+"q": "She is **___** tired.",
+"opts": [
+"so",
+"such",
+"such a"
+],
+"ans": 0,
+"why": "So + adj."
+},
+{
+"q": "It was **___** a long day.",
+"opts": [
+"so",
+"too",
+"such"
+],
+"ans": 2,
+"why": "Such a + adj + n."
+},
+{
+"q": "He runs **___** quickly.",
+"opts": [
+"such a",
+"so",
+"such"
+],
+"ans": 1,
+"why": "Advérbio."
+},
+{
+"q": "They are **___** nice people.",
+"opts": [
+"such",
+"such a",
+"so"
+],
+"ans": 0,
+"why": "Plural: such."
+}
+],
+"fix": [
+{
+"wrong": "It was so a long day.",
+"right": "It was such a long day.",
+"why": "Such a."
+},
+{
+"wrong": "She is such tired.",
+"right": "She is so tired.",
+"why": "So + adj."
+},
+{
+"wrong": "It was such long day.",
+"right": "It was such a long day.",
+"why": "Falta a."
+}
+],
+"rewrite": [
+{
+"prompt": "Use so: “She is very tired.”",
+"answer": "She is so tired.",
+"why": ""
+},
+{
+"prompt": "Use such a: “It was a very long day.”",
+"answer": "It was such a long day.",
+"why": ""
+},
+{
+"prompt": "Use so: “He speaks very fast.”",
+"answer": "He speaks so fast.",
+"why": ""
+}
+]
+}

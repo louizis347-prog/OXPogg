@@ -1,0 +1,47 @@
+/* Landing leve e moderna: fundos limpos, cartões planos, tipografia mais fina, poucas animações. Vem por último no pacote. */
+:root{--lt-line:rgba(14,47,58,.09);--lt-soft:#F5FAFA;--lt-ink:#10303B}
+html{scroll-behavior:smooth}
+body{background:#fff}
+/* seções: sem faixas coloridas, ritmo por espaço em branco */
+.sec,.sec.alt,.prof,.paths-sec,.tut{background:transparent!important}
+.sec.alt{background:var(--lt-soft)!important}
+.sec{padding-block:clamp(48px,8vw,88px)}
+.sh h2,.tut-head h2,.prof h2{font-weight:700;letter-spacing:-.025em;font-size:clamp(1.55rem,4.2vw,2.15rem)}
+.sh p,.tut-head p{color:#5C7480;font-weight:500}
+/* herói: fundo suave, sem colinas */
+.hero2{background:linear-gradient(180deg,#EEF8F7 0%,#fff 88%)!important;padding-bottom:0}
+.hero2 .wrap{padding-bottom:56px}
+.hero2 h1{font-weight:700;letter-spacing:-.04em}
+.hero2 .copy::before{display:none}
+.hero2 .lead{font-weight:500;color:#33505B}
+.hero2 .stats{gap:10px}
+.hero2 .stats div{background:#fff;border:1px solid var(--lt-line);box-shadow:none;border-radius:16px}
+.hero2 .stats b{font-weight:700}
+/* palco do herói: dois celulares leves */
+.hero2 .stage{min-height:430px;padding-top:20px}
+.hp{position:relative;width:min(44vw,205px);flex:none;border:5px solid #17313B;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 26px 40px -26px rgba(14,47,58,.5)}
+.hp img{display:block;width:100%;height:auto}
+.hp.back{transform:rotate(-5deg);margin-right:-26px;margin-top:38px}
+.hp.front{transform:rotate(3deg);z-index:2}
+@media(min-width:900px){.hero2 .stage{min-height:520px}.hp{width:236px}}
+.hero2 .hero-pog{left:2%;bottom:6px}
+/* sem movimento contínuo */
+.hero2 .hero-orbit .ring{animation:none}
+.top .nav::after{display:none}
+.hero2 .hero-orbit{opacity:.55}
+@media(max-width:899px){.hero2 .hero-orbit{display:none}}
+.hero2 .hero-orbit .bub{animation:none}
+/* cartões planos */
+.step,.lang,.path,.plan,.faq details,.card,.tut-steps button,.prof .bubble{box-shadow:none!important;border:1px solid var(--lt-line)!important;border-radius:16px}
+.plan.pro{border-color:var(--pri,#0B7C88)!important}
+.faq details{background:#fff}
+.faq summary{font-weight:700}
+.faq-grp{letter-spacing:.1em;font-weight:700}
+/* botões */
+.btn.primary{box-shadow:0 8px 18px -12px #FF8A3D}
+.btn.ghost{background:#fff;border:1px solid var(--lt-line)}
+.cta{border-radius:24px}
+/* imagens das telas: leves e arredondadas */
+.phone img,.browser img{border-radius:inherit}
+.phones .phone{box-shadow:0 24px 40px -28px rgba(14,47,58,.45)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have + objeto + particípio",
+"wrong": "I had repaired my window.",
+"right": "I had my window repaired.",
+"why": "Em português “mandei consertar a janela” tem outro sentido; o brasileiro diz “I repaired my window” para serviço contratado. Em inglês, have/get + objeto + particípio = alguém faz para mim."
+},
+"mcq": [
+{
+"q": "I ___ my window repaired.",
+"opts": [
+"had",
+"made",
+"did"
+],
+"ans": 0,
+"why": "have + obj + pp."
+},
+{
+"q": "She ___ her roof checked.",
+"opts": [
+"did",
+"got",
+"made"
+],
+"ans": 1,
+"why": "get."
+},
+{
+"q": "Where do you get it ___?",
+"opts": [
+"do",
+"doing",
+"done"
+],
+"ans": 2,
+"why": "pp."
+},
+{
+"q": "“I repaired my window.” means…",
+"opts": [
+"mandei consertar",
+"quebrei",
+"eu mesmo consertei"
+],
+"ans": 2,
+"why": "Eu mesmo."
+}
+],
+"fix": [
+{
+"wrong": "I cut my hair yesterday (no salão).",
+"right": "I had my hair cut yesterday.",
+"why": "have + obj + pp."
+},
+{
+"wrong": "She got fix her phone.",
+"right": "She got her phone fixed.",
+"why": "pp."
+},
+{
+"wrong": "We had painted the house (por alguém).",
+"right": "We had the house painted.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “A technician repaired my car.” (I had...)",
+"answer": "I had my car repaired.",
+"why": ""
+},
+{
+"prompt": "Reescreva com get: “A barber cut my hair.”",
+"answer": "I got my hair cut.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Someone fixed her phone.” (She got...)",
+"answer": "She got her phone fixed.",
+"why": ""
+}
+]
+}

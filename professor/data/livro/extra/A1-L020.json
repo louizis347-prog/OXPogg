@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make × do",
+"wrong": "I make my homework every night.",
+"right": "I do my homework every night.",
+"why": "Em português \"fazer\" cobre make e do; homework e tarefas usam do, enquanto coisas criadas usam make."
+},
+"mcq": [
+{
+"q": "“Fazer a cama” =",
+"opts": [
+"make the bed",
+"do the bed",
+"build the bed"
+],
+"ans": 0,
+"why": "Make the bed."
+},
+{
+"q": "“Fazer um erro” =",
+"opts": [
+"do a mistake",
+"make a mistake",
+"have a mistake"
+],
+"ans": 1,
+"why": "Make a mistake."
+},
+{
+"q": "“Fazer o café” =",
+"opts": [
+"do coffee",
+"cook coffee",
+"make coffee"
+],
+"ans": 2,
+"why": "Make."
+},
+{
+"q": "“Fazer o dever” =",
+"opts": [
+"do homework",
+"make homework",
+"take homework"
+],
+"ans": 0,
+"why": "Do."
+}
+],
+"fix": [
+{
+"wrong": "I do a mistake.",
+"right": "I make a mistake.",
+"why": "Make a mistake."
+},
+{
+"wrong": "She makes her homework.",
+"right": "She does her homework.",
+"why": "Do homework."
+},
+{
+"wrong": "He does dinner for us.",
+"right": "He makes dinner for us.",
+"why": "Make dinner."
+}
+],
+"rewrite": [
+{
+"prompt": "Use make: “I prepare lunch.”",
+"answer": "I make lunch.",
+"why": ""
+},
+{
+"prompt": "Use make: “She errs.” (a mistake)",
+"answer": "She makes a mistake.",
+"why": ""
+},
+{
+"prompt": "Use make: “We prepare the beds.”",
+"answer": "We make the beds.",
+"why": ""
+}
+]
+}

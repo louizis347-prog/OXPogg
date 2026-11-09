@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregular no texto",
+"wrong": "Last weekend I go to the beach and swim.",
+"right": "Last weekend I went to the beach and swam.",
+"why": "Em narrativas, o aluno esquece de manter todos os verbos no passado; em inglês cada verbo da sequência vai ao passado."
+},
+"mcq": [
+{
+"q": "Passado de **swim**:",
+"opts": [
+"swam",
+"swimmed",
+"swum"
+],
+"ans": 0,
+"why": "swam."
+},
+{
+"q": "Passado de **run**: (Past Simple (irregular): production and review)",
+"opts": [
+"runned",
+"ran",
+"run"
+],
+"ans": 1,
+"why": "ran."
+},
+{
+"q": "Passado de **sit**: (Past Simple (irregular): production and review)",
+"opts": [
+"sat",
+"sitted",
+"sit"
+],
+"ans": 0,
+"why": "sat."
+},
+{
+"q": "I ___ coffee and ___ the news.",
+"opts": [
+"drank / read",
+"drink / read",
+"drank / readed"
+],
+"ans": 0,
+"why": "drank, read."
+}
+],
+"fix": [
+{
+"wrong": "I woke up and eat breakfast.",
+"right": "I woke up and ate breakfast.",
+"why": "Passado."
+},
+{
+"wrong": "She runned fast.",
+"right": "She ran fast.",
+"why": "ran."
+},
+{
+"wrong": "We sleeped late.",
+"right": "We slept late.",
+"why": "slept."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I swim and run.”",
+"answer": "I swam and ran.",
+"why": ""
+},
+{
+"prompt": "Passado: “She sits and reads.”",
+"answer": "She sat and read.",
+"why": ""
+},
+{
+"prompt": "Passado: “He drinks tea.”",
+"answer": "He drank tea.",
+"why": ""
+}
+]
+}

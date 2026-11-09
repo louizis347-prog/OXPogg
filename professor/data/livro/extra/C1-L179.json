@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "by + -ing",
+"wrong": "I would like to begin by introduce the topic.",
+"right": "I would like to begin by introducing the topic.",
+"why": "Em português “começar por apresentar” usa infinitivo depois da preposição. Em inglês, depois de preposição, use -ing."
+},
+"mcq": [
+{
+"q": "“I’d like to begin ___ thanking you.”",
+"opts": [
+"to",
+"for",
+"by"
+],
+"ans": 2,
+"why": "begin by + -ing."
+},
+{
+"q": "“Let me move ___ to costs.”",
+"opts": [
+"on",
+"in",
+"by"
+],
+"ans": 0,
+"why": "move on."
+},
+{
+"q": "To conclude, say...",
+"opts": [
+"First…",
+"To sum up…",
+"By the way…"
+],
+"ans": 1,
+"why": "Conclusão."
+},
+{
+"q": "“What matters most ___ the cost.”",
+"opts": [
+"are",
+"be",
+"is"
+],
+"ans": 2,
+"why": "is."
+}
+],
+"fix": [
+{
+"wrong": "Today I’ll be talk about costs.",
+"right": "Today I’ll be talking about costs.",
+"why": "-ing."
+},
+{
+"wrong": "That bring me to the cost breakdown.",
+"right": "That brings me to the cost breakdown.",
+"why": "-s."
+},
+{
+"wrong": "I’d be happy to take questions of the committee.",
+"right": "I’d be happy to take questions from the committee.",
+"why": "from."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com begin by: “First I will thank you.”",
+"answer": "I would like to begin by thanking you.",
+"why": ""
+},
+{
+"prompt": "Reescreva com What matters: “The cost is the most important thing.”",
+"answer": "What matters most is the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com That brings me to: “Now the cost breakdown.”",
+"answer": "That brings me to the cost breakdown.",
+"why": ""
+}
+]
+}

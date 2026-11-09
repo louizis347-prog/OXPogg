@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dados e verbo",
+"wrong": "It is estimated that four in ten shelters is full.",
+"right": "It is estimated that four in ten shelters are full.",
+"why": "Em português “quatro em cada dez abrigos está/estão cheios” oscila. Em inglês, four in ten + plural leva verbo no plural."
+},
+"mcq": [
+{
+"q": "It is ___ that four in ten shelters are full.",
+"opts": [
+"estimated",
+"estimating",
+"estimate"
+],
+"ans": 0,
+"why": "Particípio."
+},
+{
+"q": "___ collected over three years, the figures are solid.",
+"opts": [
+"Been",
+"Having been",
+"Having"
+],
+"ans": 1,
+"why": "Passiva."
+},
+{
+"q": "Four in ten shelters ___ full.",
+"opts": [
+"is",
+"does",
+"are"
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "It is reported ___ rents rose.",
+"opts": [
+"that",
+"what",
+"of"
+],
+"ans": 0,
+"why": "that."
+}
+],
+"fix": [
+{
+"wrong": "Four in ten shelters is full.",
+"right": "Four in ten shelters are full.",
+"why": "Plural."
+},
+{
+"wrong": "It is estimate that rents rose.",
+"right": "It is estimated that rents rose.",
+"why": "Particípio."
+},
+{
+"wrong": "Having collect over three years, the figures are solid.",
+"right": "Having been collected over three years, the figures are solid.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Analysts report that rents rose.” (It is…)",
+"answer": "It is reported that rents rose.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Staff collected the figures over a year.” (Having been…, the figures…) use are reliable",
+"answer": "Having been collected over a year, the figures are reliable.",
+"why": ""
+},
+{
+"prompt": "Singular→plural: “One shelter is full.” (Four…)",
+"answer": "Four shelters are full.",
+"why": ""
+}
+]
+}

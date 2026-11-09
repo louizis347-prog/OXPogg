@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "rentabilidade",
+"wrong": "The rentability of the fund can fall as well as rise.",
+"right": "The return on the fund can fall as well as rise.",
+"why": "Em português “rentabilidade” parece ter correspondente em inglês, mas o termo usual é return (retorno). Rentability não se usa."
+},
+"mcq": [
+{
+"q": "“Past performance is not a ___ to future results.”",
+"opts": [
+"guard",
+"guide",
+"guess"
+],
+"ans": 1,
+"why": "guide."
+},
+{
+"q": "“You may get back ___ than you invest.”",
+"opts": [
+"fewer",
+"small",
+"less"
+],
+"ans": 2,
+"why": "less."
+},
+{
+"q": "A **diversified portfolio** has...",
+"opts": [
+"varied investments",
+"one asset",
+"no risk"
+],
+"ans": 0,
+"why": "Diversificado."
+},
+{
+"q": "“Subject to limits” signals a...",
+"opts": [
+"joke",
+"condition",
+"title"
+],
+"ans": 1,
+"why": "Condição."
+}
+],
+"fix": [
+{
+"wrong": "Funds can falls as well as rise.",
+"right": "Funds can fall as well as rise.",
+"why": "can + base."
+},
+{
+"wrong": "The annual charge is of 1%.",
+"right": "The annual charge is 1%.",
+"why": "Sem of."
+},
+{
+"wrong": "You may to get back less.",
+"right": "You may get back less.",
+"why": "may + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com may: “Maybe you get back less.”",
+"answer": "You may get back less.",
+"why": ""
+},
+{
+"prompt": "Reescreva com can: “It is possible for value to rise or fall.”",
+"answer": "Value can rise or fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva com subject to: “Limits apply to this offer.”",
+"answer": "This offer is subject to limits.",
+"why": ""
+}
+]
+}

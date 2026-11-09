@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "let/make/have sem to",
+"wrong": "I let them to try.",
+"right": "I let them try.",
+"why": "Em português “deixo-os tentar” usa infinitivo, mas o brasileiro replica to após let. Em inglês, let/make/have + objeto + base, sem to."
+},
+"mcq": [
+{
+"q": "I let them ___.",
+"opts": [
+"try",
+"to try",
+"trying"
+],
+"ans": 0,
+"why": "let + base."
+},
+{
+"q": "It makes them ___.",
+"opts": [
+"learn",
+"to learn",
+"learning"
+],
+"ans": 0,
+"why": "make + base."
+},
+{
+"q": "It has them ___.",
+"opts": [
+"to think",
+"thinking",
+"think"
+],
+"ans": 2,
+"why": "have + base."
+},
+{
+"q": "I never let them ___.",
+"opts": [
+"to cheat",
+"cheat",
+"cheating"
+],
+"ans": 1,
+"why": "let + base."
+}
+],
+"fix": [
+{
+"wrong": "It makes them to learn.",
+"right": "It makes them learn.",
+"why": "Sem to."
+},
+{
+"wrong": "I let them going.",
+"right": "I let them go.",
+"why": "Base."
+},
+{
+"wrong": "I have them to think.",
+"right": "I have them think.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na negativa: “I let them try.”",
+"answer": "I don't let them try.",
+"why": ""
+},
+{
+"prompt": "Reescreva com make: “They are forced to learn.” (it)",
+"answer": "It makes them learn.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have: “I ask them to think.”",
+"answer": "I have them think.",
+"why": ""
+}
+]
+}

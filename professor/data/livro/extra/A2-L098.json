@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conditional e finalidade",
+"wrong": "I went to the market for buy bread.",
+"right": "I went to the market to buy bread.",
+"why": "Em português 'para comprar' vira for; em inglês use to + base."
+},
+"mcq": [
+{
+"q": "If you heat ice, it ___ .",
+"opts": [
+"melts",
+"will melt",
+"melted"
+],
+"ans": 0,
+"why": "zero."
+},
+{
+"q": "I'm tired ___ waiting.",
+"opts": [
+"to",
+"in",
+"of"
+],
+"ans": 2,
+"why": "of."
+},
+{
+"q": "She called ___ say hi.",
+"opts": [
+"for",
+"at",
+"to"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "It's too cold ___ swim.",
+"opts": [
+"to",
+"at",
+"for"
+],
+"ans": 0,
+"why": "too...to."
+}
+],
+"fix": [
+{
+"wrong": "If it will rain, I stay.",
+"right": "If it rains, I stay.",
+"why": "sem will."
+},
+{
+"wrong": "I'm good in cooking.",
+"right": "I'm good at cooking.",
+"why": "at."
+},
+{
+"wrong": "She came for buy it.",
+"right": "She came to buy it.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Junte: “I study. I pass.” com to",
+"answer": "I study to pass.",
+"why": ""
+},
+{
+"prompt": "Corrija: “Thanks for help.”",
+"answer": "Thanks for helping.",
+"why": ""
+},
+{
+"prompt": "Una: “It rains. The park is empty.” com if",
+"answer": "If it rains, the park is empty.",
+"why": ""
+}
+]
+}

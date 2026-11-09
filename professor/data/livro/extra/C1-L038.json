@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso amigo eventually",
+"wrong": "Do away of an old rule.",
+"right": "Do away with an old rule.",
+"why": "O brasileiro usa of/de por analogia ao português. Em inglês, do away with = eliminar."
+},
+"mcq": [
+{
+"q": "Do away ___ an old rule.",
+"opts": [
+"with",
+"of",
+"from"
+],
+"ans": 0,
+"why": "with."
+},
+{
+"q": "By and large means…",
+"opts": [
+"exactly",
+"in general",
+"slowly"
+],
+"ans": 1,
+"why": "De modo geral."
+},
+{
+"q": "The proposal is solid ___ and large.",
+"opts": [
+"on",
+"at",
+"by"
+],
+"ans": 2,
+"why": "By and large."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We did away with it.",
+"We did away it.",
+"We did away to it."
+],
+"ans": 0,
+"why": "with."
+}
+],
+"fix": [
+{
+"wrong": "They did away of the rule.",
+"right": "They did away with the rule.",
+"why": "with."
+},
+{
+"wrong": "By and large the proposal is solid.",
+"right": "By and large, the proposal is solid.",
+"why": "Vírgula."
+},
+{
+"wrong": "We do away the policy.",
+"right": "We do away with the policy.",
+"why": "with."
+}
+],
+"rewrite": [
+{
+"prompt": "Use do away with: “They eliminated the rule.”",
+"answer": "They did away with the rule.",
+"why": ""
+},
+{
+"prompt": "Use By and large: “In general, the proposal is solid.”",
+"answer": "By and large, the proposal is solid.",
+"why": ""
+},
+{
+"prompt": "Use do away with: “Let’s eliminate the form.”",
+"answer": "Let’s do away with the form.",
+"why": ""
+}
+]
+}

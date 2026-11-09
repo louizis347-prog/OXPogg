@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I'm not sure but I think it is maybe true, and she convinced me to stay.",
+"right": "It seems to me that it is true, and she persuaded me to stay.",
+"why": "Português acumula “talvez/acho que”; inglês usa fórmulas de cautela, e convince não leva to."
+},
+"mcq": [
+{
+"q": "Epistemic caution:",
+"opts": [
+"I would be reluctant to say yes.",
+"Yes I am being.",
+"I say yes sure."
+],
+"ans": 0,
+"why": "Cautela."
+},
+{
+"q": "It seems to me…",
+"opts": [
+"softens a claim",
+"orders",
+"denies"
+],
+"ans": 0,
+"why": "Suaviza."
+},
+{
+"q": "She ___ me to stay (action).",
+"opts": [
+"persuaded",
+"inferred",
+"convinced"
+],
+"ans": 0,
+"why": "persuade to."
+},
+{
+"q": "He ___ me that it was fair (belief).",
+"opts": [
+"convinced",
+"urged",
+"persuaded"
+],
+"ans": 0,
+"why": "convince that."
+}
+],
+"fix": [
+{
+"wrong": "I convinced her to stay.",
+"right": "I persuaded her to stay.",
+"why": "Ação."
+},
+{
+"wrong": "It seems me that it is fair.",
+"right": "It seems to me that it is fair.",
+"why": "to me."
+},
+{
+"wrong": "I am reluctant say it.",
+"right": "I am reluctant to say it.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Cautela: “It is fair.” (It seems…)",
+"answer": "It seems to me that it is fair.",
+"why": ""
+},
+{
+"prompt": "Troque por persuade: “He convinced her to leave.”",
+"answer": "He persuaded her to leave.",
+"why": ""
+},
+{
+"prompt": "Troque por convince: “He persuaded her that it was fair.”",
+"answer": "He convinced her that it was fair.",
+"why": ""
+}
+]
+}

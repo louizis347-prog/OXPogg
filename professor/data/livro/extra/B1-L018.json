@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do × take (provas)",
+"wrong": "I did a test yesterday and did notes.",
+"right": "I took a test yesterday and took notes.",
+"why": "Em português “fazer prova”, “fazer anotações” e “fazer uma pausa”; o brasileiro usa do/make. Em inglês esses casos pedem take: take a test, take notes, take a break."
+},
+"mcq": [
+{
+"q": "It ___ ten weeks to finish the course.",
+"opts": [
+"makes",
+"does",
+"takes"
+],
+"ans": 2,
+"why": "It takes + tempo = demorar."
+},
+{
+"q": "Please ___ a break.",
+"opts": [
+"take",
+"do",
+"make"
+],
+"ans": 0,
+"why": "take a break."
+},
+{
+"q": "“Take my advice” means…",
+"opts": [
+"Leve meu conselho",
+"Aceite meu conselho",
+"Dê meu conselho"
+],
+"ans": 1,
+"why": "take = aceitar."
+},
+{
+"q": "Students ___ notes in class.",
+"opts": [
+"make",
+"do",
+"take"
+],
+"ans": 2,
+"why": "take notes."
+}
+],
+"fix": [
+{
+"wrong": "I made a test last week.",
+"right": "I took a test last week.",
+"why": "fazer prova = take a test."
+},
+{
+"wrong": "It takes me to go there ten minutes.",
+"right": "It takes me ten minutes to go there.",
+"why": "Ordem: take + pessoa + tempo + to + verbo."
+},
+{
+"wrong": "Do a break, please.",
+"right": "Take a break, please.",
+"why": "take a break."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com take: “The trip lasts three hours.”",
+"answer": "The trip takes three hours.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I take notes.”",
+"answer": "I took notes.",
+"why": ""
+},
+{
+"prompt": "Reescreva como ordem: “You should take a break.”",
+"answer": "Take a break.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ritmo (sentence stress)",
+"wrong": "I CAN to GO TO the STORE. (all words stressed)",
+"right": "I can go to the STORE.",
+"why": "O português tem ritmo silábico: todas as sílabas têm duração parecida. O inglês tem ritmo de acento: palavras de conteúdo são fortes e as de função (to, of, can) são fracas e curtas."
+},
+"mcq": [
+{
+"q": "Which words are stressed?",
+"opts": [
+"nouns, verbs, adjectives",
+"a, the, of",
+"to, can, is"
+],
+"ans": 0,
+"why": "Conteúdo."
+},
+{
+"q": "Which are usually weak?",
+"opts": [
+"nouns",
+"verbs",
+"a, the, of"
+],
+"ans": 2,
+"why": "Função."
+},
+{
+"q": "In “I want to BUY a CAR”, stress falls on…",
+"opts": [
+"I and to",
+"BUY and CAR",
+"a and want"
+],
+"ans": 1,
+"why": "Conteúdo."
+},
+{
+"q": "“can” in “I can go” sounds…",
+"opts": [
+"forte /kæn/",
+"mudo",
+"fraco /kən/"
+],
+"ans": 2,
+"why": "Fraco."
+}
+],
+"fix": [
+{
+"wrong": "I WANT TO GO TO THE STORE.",
+"right": "I WANT to GO to the STORE.",
+"why": "Somente conteúdo."
+},
+{
+"wrong": "I CAN to SWIM.",
+"right": "I can SWIM.",
+"why": "Sem to e can fraco."
+},
+{
+"wrong": "She IS a TEACHer.",
+"right": "She’s a TEACHer.",
+"why": "Função fraca."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva em maiúsculas só as palavras fortes: “I want to buy a car”",
+"answer": "I WANT to BUY a CAR",
+"why": ""
+},
+{
+"prompt": "Escreva em maiúsculas só as palavras fortes: “She works at a bank”",
+"answer": "She WORKS at a BANK",
+"why": ""
+},
+{
+"prompt": "Escreva em maiúsculas só as palavras fortes: “The test is hard”",
+"answer": "The TEST is HARD",
+"why": ""
+}
+]
+}

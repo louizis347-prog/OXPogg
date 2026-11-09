@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "singular/plural",
+"wrong": "This statistics is misleading.",
+"right": "This statistic is misleading.",
+"why": "Em português “estatística” funciona como singular para o campo e para o número. Em inglês, statistics (ciência) é plural na forma; um dado isolado é a statistic."
+},
+"mcq": [
+{
+"q": "“A small base makes one ___ misleading.”",
+"opts": [
+"statistics",
+"statistic",
+"statistical"
+],
+"ans": 1,
+"why": "Um dado: a statistic."
+},
+{
+"q": "“___ you told me, I would not have printed it.”",
+"opts": [
+"If had",
+"Would",
+"Had"
+],
+"ans": 2,
+"why": "Inversão com Had."
+},
+{
+"q": "“How do you ___ it?” (explain)",
+"opts": [
+"account for",
+"account to",
+"account at"
+],
+"ans": 0,
+"why": "account for."
+},
+{
+"q": "“a figure ___ size depends on the base”",
+"opts": [
+"which",
+"whose",
+"that"
+],
+"ans": 1,
+"why": "whose + substantivo."
+}
+],
+"fix": [
+{
+"wrong": "Had you would told me, I would not have printed it.",
+"right": "Had you told me, I would not have printed it.",
+"why": "Had + pp, sem would."
+},
+{
+"wrong": "The percentage trap, that is common, fools readers.",
+"right": "The percentage trap, which is common, fools readers.",
+"why": "which após vírgula."
+},
+{
+"wrong": "If the graph was clearer, we would understand it.",
+"right": "If the graph were clearer, we would understand it.",
+"why": "Condicional irreal: were."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com inversão: “If you had told me, I would have stopped.”",
+"answer": "Had you told me, I would have stopped.",
+"why": ""
+},
+{
+"prompt": "Reescreva com whose: “I saw a chart. Its scale was misleading.”",
+"answer": "I saw a chart whose scale was misleading.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “This statistic is wrong.”",
+"answer": "These statistics are wrong.",
+"why": ""
+}
+]
+}

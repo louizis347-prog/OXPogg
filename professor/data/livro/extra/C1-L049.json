@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "fall through",
+"wrong": "The deal fell through of.",
+"right": "The deal fell through.",
+"why": "Em português diz-se “o negócio fracassou”. Em inglês, fall through é intransitivo e não leva objeto."
+},
+"mcq": [
+{
+"q": "The deal ___ .",
+"opts": [
+"fell down it",
+"fell through",
+"fell by"
+],
+"ans": 1,
+"why": "fall through."
+},
+{
+"q": "It is poor communication ___ derails teams.",
+"opts": [
+"what",
+"who",
+"that"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "Refrain ___ blaming.",
+"opts": [
+"from",
+"to",
+"of"
+],
+"ans": 0,
+"why": "from."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The plan through fell.",
+"The plan fell through.",
+"The plan fell through it."
+],
+"ans": 1,
+"why": "fell through."
+}
+],
+"fix": [
+{
+"wrong": "The deal fall through.",
+"right": "The deal fell through.",
+"why": "Passado."
+},
+{
+"wrong": "It is poor communication what derails teams.",
+"right": "It is poor communication that derails teams.",
+"why": "that."
+},
+{
+"wrong": "Refrain to blame others.",
+"right": "Refrain from blaming others.",
+"why": "from + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Use fall through: “The plan failed.”",
+"answer": "The plan fell through.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Poor communication derails teams.”",
+"answer": "It is poor communication that derails teams.",
+"why": ""
+},
+{
+"prompt": "Use refrain from: “Don’t blame others.”",
+"answer": "Refrain from blaming others.",
+"why": ""
+}
+]
+}

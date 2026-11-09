@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "suggest that",
+"wrong": "The text suggests to build more homes.",
+"right": "The text suggests that we build more homes.",
+"why": "Em português \"sugere construir\". Em inglês suggest + that-clause ou -ing."
+},
+"mcq": [
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"By me",
+"In my opinion"
+],
+"ans": 2,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"information",
+"report",
+"graph"
+],
+"ans": 0,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"is",
+"are",
+"was"
+],
+"ans": 1,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales rose sharply.",
+"Sales raised sharply.",
+"Sales rised sharply."
+],
+"ans": 0,
+"why": "rose."
+}
+],
+"fix": [
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+},
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+},
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+}
+]
+}

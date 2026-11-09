@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "In some extension, results suggest a link.",
+"right": "To some extent, results suggest a link.",
+"why": "Em português “em certa extensão” soa parecido. Em inglês, extent (grau) é o termo correto; extension é prolongamento."
+},
+"mcq": [
+{
+"q": "“To some ___, results suggest…”",
+"opts": [
+"extension",
+"extent",
+"extend"
+],
+"ans": 1,
+"why": "extent."
+},
+{
+"q": "“She still does; I don’t ___.”",
+"opts": [
+"too",
+"also",
+"either"
+],
+"ans": 2,
+"why": "either."
+},
+{
+"q": "“Plans are ___ to change.”",
+"opts": [
+"subject",
+"subjected",
+"subjective"
+],
+"ans": 0,
+"why": "subject to."
+},
+{
+"q": "This house...",
+"opts": [
+"believe that",
+"believes that…",
+"believing"
+],
+"ans": 1,
+"why": "believes."
+}
+],
+"fix": [
+{
+"wrong": "Plans are subject for change.",
+"right": "Plans are subject to change.",
+"why": "to."
+},
+{
+"wrong": "The critic claim that costs fell.",
+"right": "The critic claims that costs fell.",
+"why": "-s."
+},
+{
+"wrong": "Results proves a link.",
+"right": "Results suggest a link.",
+"why": "Hedging."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com extent: “In part, results suggest a link.” (To some…)",
+"answer": "To some extent, results suggest a link.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse: “She still hedges and I do not hedge.”",
+"answer": "She still hedges and I do not.",
+"why": ""
+},
+{
+"prompt": "Reescreva com subject to: “Plans may change.”",
+"answer": "Plans are subject to change.",
+"why": ""
+}
+]
+}

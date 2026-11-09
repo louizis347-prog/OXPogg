@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo polissêmico",
+"wrong": "I became tired after work.",
+"right": "I got tired after work.",
+"why": "Em português “fiquei cansada”; o brasileiro traduz com become, que soa formal. Em inglês get + adjetivo é o natural para mudança de estado."
+},
+"mcq": [
+{
+"q": "get tired =",
+"opts": [
+"ficar",
+"pegar",
+"chegar"
+],
+"ans": 0,
+"why": "Tornar-se."
+},
+{
+"q": "get a prize =",
+"opts": [
+"obter",
+"ir",
+"tornar"
+],
+"ans": 0,
+"why": "Obter."
+},
+{
+"q": "get better:",
+"opts": [
+"melhorar",
+"ir",
+"pegar"
+],
+"ans": 0,
+"why": "Melhorar."
+},
+{
+"q": "get to work:",
+"opts": [
+"pegar trabalho",
+"chegar ao trabalho",
+"ficar"
+],
+"ans": 1,
+"why": "Chegar."
+}
+],
+"fix": [
+{
+"wrong": "I get tired after work.",
+"right": "I got tired after work.",
+"why": "Passado: got."
+},
+{
+"wrong": "She geted an education.",
+"right": "She got an education.",
+"why": "Irregular."
+},
+{
+"wrong": "It is getting more cold.",
+"right": "It is getting colder.",
+"why": "Comparativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I get tired.”",
+"answer": "I got tired.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She got a prize.”",
+"answer": "She didn’t get a prize.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It becomes colder.” (getting)",
+"answer": "It is getting colder.",
+"why": ""
+}
+]
+}

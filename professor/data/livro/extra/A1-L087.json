@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pronome + to",
+"wrong": "She gave to me the book.",
+"right": "She gave me the book.",
+"why": "O português usa \"deu a mim o livro\"; sem preposição, o objeto indireto vem logo após o verbo."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Tell to me the answer.",
+"Tell me the answer.",
+"Tell the answer me."
+],
+"ans": 1,
+"why": "Sem to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I showed to Tom the photo.",
+"I showed the photo Tom.",
+"I showed Tom the photo."
+],
+"ans": 2,
+"why": "IO + DO."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She teaches us English.",
+"She teaches to us English.",
+"She teaches English us."
+],
+"ans": 0,
+"why": "IO + DO."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Give him it to.",
+"Give it to him.",
+"Give to him it."
+],
+"ans": 1,
+"why": "Pronome em DO exige to."
+}
+],
+"fix": [
+{
+"wrong": "She sent to Ana a letter.",
+"right": "She sent Ana a letter.",
+"why": "Sem to."
+},
+{
+"wrong": "Tell to me the truth.",
+"right": "Tell me the truth.",
+"why": "Sem to."
+},
+{
+"wrong": "I showed the photo Tom.",
+"right": "I showed Tom the photo.",
+"why": "IO + DO."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com to: “He sent me a letter.”",
+"answer": "He sent a letter to me.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem to: “I showed the photo to Tom.”",
+"answer": "I showed Tom the photo.",
+"why": ""
+},
+{
+"prompt": "Reescreva com to: “Tell me the answer.”",
+"answer": "Tell the answer to me.",
+"why": ""
+}
+]
+}

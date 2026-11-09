@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "imperativo com sujeito",
+"wrong": "You open the door, please.",
+"right": "Open the door, please.",
+"why": "Em português usamos \"você abra\"; o imperativo inglês não tem sujeito."
+},
+"mcq": [
+{
+"q": "Which is an imperative?",
+"opts": [
+"You open the door.",
+"Open the door.",
+"Opens the door."
+],
+"ans": 1,
+"why": "Sem sujeito."
+},
+{
+"q": "Negative: “Run!”",
+"opts": [
+"Not run!",
+"No run!",
+"Don’t run!"
+],
+"ans": 2,
+"why": "Don’t."
+},
+{
+"q": "Polite way:",
+"opts": [
+"Please sit down.",
+"You please sit.",
+"Sit you down."
+],
+"ans": 0,
+"why": "Please."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Are quiet.",
+"Be quiet.",
+"Is quiet."
+],
+"ans": 1,
+"why": "Be."
+}
+],
+"fix": [
+{
+"wrong": "You close the window.",
+"right": "Close the window.",
+"why": "Sem you."
+},
+{
+"wrong": "Not talk now.",
+"right": "Don’t talk now.",
+"why": "Don’t."
+},
+{
+"wrong": "Don’t late.",
+"right": "Don’t be late.",
+"why": "Be."
+}
+],
+"rewrite": [
+{
+"prompt": "Transforme em ordem: “You open the book.”",
+"answer": "Open the book.",
+"why": ""
+},
+{
+"prompt": "Negue: “Run.”",
+"answer": "Don’t run.",
+"why": ""
+},
+{
+"prompt": "Negue: “Be late.”",
+"answer": "Don’t be late.",
+"why": ""
+}
+]
+}

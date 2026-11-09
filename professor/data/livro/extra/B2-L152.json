@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "explain me",
+"wrong": "The speaker explained me the process.",
+"right": "The speaker explained the process to me.",
+"why": "Em português \"explicou-me\". Em inglês, explain pede to antes da pessoa."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"report",
+"graph",
+"information"
+],
+"ans": 2,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rose sharply.",
+"Sales rised sharply."
+],
+"ans": 1,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"in",
+"of",
+"on"
+],
+"ans": 0,
+"why": "increase in."
+}
+],
+"fix": [
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+},
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+},
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+}
+]
+}

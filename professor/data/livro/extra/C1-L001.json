@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão após never",
+"wrong": "Never they had seen such a view.",
+"right": "Never had they seen such a view.",
+"why": "O português mantém sujeito + verbo depois de “nunca”. Em inglês formal, advérbio negativo no início exige auxiliar antes do sujeito."
+},
+"mcq": [
+{
+"q": "Rarely ___ talks fail.",
+"opts": [
+"talks do",
+"do",
+"does it"
+],
+"ans": 1,
+"why": "Rarely do talks fail: auxiliar antes do sujeito."
+},
+{
+"q": "Never before ___ so close.",
+"opts": [
+"had they come",
+"they came had",
+"they had come"
+],
+"ans": 0,
+"why": "Inversão: had + sujeito + particípio."
+},
+{
+"q": "Under no circumstances ___ share the password.",
+"opts": [
+"you will",
+"will you",
+"you should to"
+],
+"ans": 1,
+"why": "Under no circumstances + will + sujeito."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Seldom does he visits us.",
+"Seldom he visits us.",
+"Seldom does he visit us."
+],
+"ans": 2,
+"why": "Com does, o verbo fica na base."
+}
+],
+"fix": [
+{
+"wrong": "Rarely they accept offers.",
+"right": "Rarely do they accept offers.",
+"why": "Inversão com do."
+},
+{
+"wrong": "Never I have felt so tired.",
+"right": "Never have I felt so tired.",
+"why": "Auxiliar antes do sujeito."
+},
+{
+"wrong": "Seldom does she visits us.",
+"right": "Seldom does she visit us.",
+"why": "Após does, verbo na base."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Never: “They had never seen such a rise.”",
+"answer": "Never had they seen such a rise.",
+"why": ""
+},
+{
+"prompt": "Comece com Rarely: “Talks rarely fail.”",
+"answer": "Rarely do talks fail.",
+"why": ""
+},
+{
+"prompt": "Comece com Seldom: “She seldom calls.”",
+"answer": "Seldom does she call.",
+"why": ""
+}
+]
+}

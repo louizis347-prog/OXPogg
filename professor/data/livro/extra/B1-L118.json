@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "responsible for / responsibility",
+"wrong": "He took the responsibility of the error. She is responsible by the team.",
+"right": "He took responsibility for the error. She is responsible for the team.",
+"why": "Em português “responsável por” e “responsabilidade pelo erro” usam por/de; o brasileiro traduz por by/of. Em inglês, responsible for e responsibility for."
+},
+"mcq": [
+{
+"q": "She is responsible ___ the team.",
+"opts": [
+"for",
+"by",
+"of"
+],
+"ans": 0,
+"why": "for."
+},
+{
+"q": "He took ___ for it.",
+"opts": [
+"responsibility",
+"a responsibility",
+"the responsible"
+],
+"ans": 0,
+"why": "Sem artigo."
+},
+{
+"q": "Responsibility is a…",
+"opts": [
+"verb",
+"adjective",
+"noun"
+],
+"ans": 2,
+"why": "Substantivo."
+},
+{
+"q": "Which is correct? (responsible for / responsibility)",
+"opts": [
+"I take responsibility of this.",
+"I take responsibility for this.",
+"I take responsible for this."
+],
+"ans": 1,
+"why": "for."
+}
+],
+"fix": [
+{
+"wrong": "I am responsible of the budget.",
+"right": "I am responsible for the budget.",
+"why": "for."
+},
+{
+"wrong": "They took the responsible.",
+"right": "They took responsibility.",
+"why": "Substantivo."
+},
+{
+"wrong": "Who is responsibility for this?",
+"right": "Who is responsible for this?",
+"why": "Adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “It is my duty to manage the budget.” (responsible)",
+"answer": "I am responsible for the budget.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “He takes responsibility for it.”",
+"answer": "He took responsibility for it.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The manager is responsible by the team.” corrija",
+"answer": "The manager is responsible for the team.",
+"why": ""
+}
+]
+}

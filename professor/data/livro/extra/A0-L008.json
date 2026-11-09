@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do + be",
+"wrong": "She doesn’t be happy.",
+"right": "She is not happy.",
+"why": "O brasileiro generaliza o auxiliar do para negar; com be, nega-se só com not."
+},
+"mcq": [
+{
+"q": "You ___ not late.",
+"opts": [
+"is",
+"are",
+"am"
+],
+"ans": 1,
+"why": "You: are."
+},
+{
+"q": "Short form of “is not”",
+"opts": [
+"ain’t",
+"not’s",
+"isn’t"
+],
+"ans": 2,
+"why": "is not = isn’t."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We are not tired.",
+"We not are tired.",
+"We don’t tired."
+],
+"ans": 0,
+"why": "Not depois de are."
+},
+{
+"q": "The cat ___ big.",
+"opts": [
+"do not",
+"is not",
+"are not"
+],
+"ans": 1,
+"why": "Singular: is not."
+}
+],
+"fix": [
+{
+"wrong": "I not am hungry.",
+"right": "I am not hungry.",
+"why": "Not depois de am."
+},
+{
+"wrong": "They doesn’t are here.",
+"right": "They are not here.",
+"why": "Com be não se usa do."
+},
+{
+"wrong": "He are not a teacher.",
+"right": "He is not a teacher.",
+"why": "He: is."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a negativa: “I am ready.”",
+"answer": "I am not ready.",
+"why": ""
+},
+{
+"prompt": "Escreva a negativa: “We are late.”",
+"answer": "We are not late.",
+"why": ""
+},
+{
+"prompt": "Escreva a negativa com contração isn’t: “It is big.”",
+"answer": "It isn’t big.",
+"why": ""
+}
+]
+}

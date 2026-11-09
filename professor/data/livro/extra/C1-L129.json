@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "critérios paralelos",
+"wrong": "I will evaluate the access, balance and analyze of the series.",
+"right": "I will evaluate the access, the balance and the analysis of the series.",
+"why": "Misturar verbo e substantivo quebra o paralelismo. Mantenha substantivos: access, balance, analysis."
+},
+"mcq": [
+{
+"q": "Critérios são…",
+"opts": [
+"o título",
+"o que vou avaliar",
+"o resultado"
+],
+"ans": 1,
+"why": "Critérios."
+},
+{
+"q": "Evidências são…",
+"opts": [
+"opiniões",
+"a conclusão",
+"cenas ou dados que provam"
+],
+"ans": 2,
+"why": "Provas."
+},
+{
+"q": "I will judge its access, balance and ___ .",
+"opts": [
+"analysis",
+"analyze",
+"analyzing"
+],
+"ans": 0,
+"why": "Substantivo."
+},
+{
+"q": "The series ___ landlords unfairly.",
+"opts": [
+"portraying",
+"portrays",
+"portray"
+],
+"ans": 1,
+"why": "-s."
+}
+],
+"fix": [
+{
+"wrong": "The series portray landlords.",
+"right": "The series portrays landlords.",
+"why": "-s."
+},
+{
+"wrong": "Balance and analyze are criteria.",
+"right": "Balance and analysis are criteria.",
+"why": "Substantivo."
+},
+{
+"wrong": "I will evaluates the series.",
+"right": "I will evaluate the series.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro: “I evaluate the series.”",
+"answer": "I will evaluate the series.",
+"why": ""
+},
+{
+"prompt": "Substantivo: “I will judge how it analyses.” (its …)",
+"answer": "I will judge its analysis.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “The series portray landlords.”",
+"answer": "The series portrays landlords.",
+"why": ""
+}
+]
+}

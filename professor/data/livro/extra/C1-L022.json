@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "negativa com did",
+"wrong": "I no said he stole it.",
+"right": "I didn’t say he stole it.",
+"why": "Em português basta “não” antes do verbo. Em inglês a negativa no passado usa didn’t + verbo base; depois, a ênfase em SAY ou HE muda o sentido."
+},
+"mcq": [
+{
+"q": "To mean “someone else said it”, stress…",
+"opts": [
+"I",
+"say",
+"stole"
+],
+"ans": 0,
+"why": "I."
+},
+{
+"q": "To mean “I only hinted”, stress…",
+"opts": [
+"it",
+"say",
+"he"
+],
+"ans": 1,
+"why": "say."
+},
+{
+"q": "Intentional stress changes…",
+"opts": [
+"spelling",
+"tense",
+"meaning"
+],
+"ans": 2,
+"why": "Sentido."
+},
+{
+"q": "Which stress means “not him, someone else stole”?",
+"opts": [
+"he",
+"stole",
+"it"
+],
+"ans": 0,
+"why": "he."
+}
+],
+"fix": [
+{
+"wrong": "She didn’t says it.",
+"right": "She didn’t say it.",
+"why": "Base após didn’t."
+},
+{
+"wrong": "I didn’t said he stole it.",
+"right": "I didn’t say he stole it.",
+"why": "Base."
+},
+{
+"wrong": "I no said he stole it.",
+"right": "I didn’t say he stole it.",
+"why": "Negativa com didn’t."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “I said he stole it.”",
+"answer": "I didn’t say he stole it.",
+"why": ""
+},
+{
+"prompt": "Passado: “She doesn’t say it.”",
+"answer": "She didn’t say it.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He stole it.”",
+"answer": "He didn’t steal it.",
+"why": ""
+}
+]
+}

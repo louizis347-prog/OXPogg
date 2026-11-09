@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão após never",
+"wrong": "Never before the board had seen such a loss.",
+"right": "Never before had the board seen such a loss.",
+"why": "O português não inverte. Em inglês, após never before no início, usa-se had + sujeito."
+},
+"mcq": [
+{
+"q": "Never before ___ the board seen such a loss.",
+"opts": [
+"had",
+"did",
+"has"
+],
+"ans": 0,
+"why": "had."
+},
+{
+"q": "Not only ___ they ignore it…",
+"opts": [
+"do",
+"did",
+"had"
+],
+"ans": 1,
+"why": "did ignore."
+},
+{
+"q": "Success is attributed ___ luck.",
+"opts": [
+"for",
+"at",
+"to"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Rarely do they fail.",
+"Rarely they do fail.",
+"Rarely do they fails."
+],
+"ans": 0,
+"why": "do + base."
+}
+],
+"fix": [
+{
+"wrong": "Rarely they win.",
+"right": "Rarely do they win.",
+"why": "Inversão."
+},
+{
+"wrong": "Not only they ignored it, but also hid it.",
+"right": "Not only did they ignore it, but they also hid it.",
+"why": "did."
+},
+{
+"wrong": "It is attributed for luck.",
+"right": "It is attributed to luck.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Never before: “The board had not seen such a loss.”",
+"answer": "Never before had the board seen such a loss.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They attribute the dip to markets.”",
+"answer": "The dip is attributed to markets.",
+"why": ""
+},
+{
+"prompt": "Comece com Rarely: “They rarely win.”",
+"answer": "Rarely do they win.",
+"why": ""
+}
+]
+}

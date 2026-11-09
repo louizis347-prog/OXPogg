@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can + to / -s",
+"wrong": "She can to swim.",
+"right": "She can swim.",
+"why": "Em português dizemos \"ela pode nadar\" com infinitivo e flexão; em inglês can é modal: sem to e sem -s."
+},
+"mcq": [
+{
+"q": "Short answer: Can she cook? ___",
+"opts": [
+"Yes, she can.",
+"Yes, she does.",
+"Yes, she cans."
+],
+"ans": 0,
+"why": "Can."
+},
+{
+"q": "Can means…",
+"opts": [
+"future",
+"ability or permission",
+"past"
+],
+"ans": 1,
+"why": "Habilidade/permissão."
+},
+{
+"q": "She ___ swim.",
+"opts": [
+"cans",
+"can to",
+"can"
+],
+"ans": 2,
+"why": "Modal, sem -s."
+},
+{
+"q": "Negative of “I can run.”",
+"opts": [
+"I can’t run.",
+"I don’t can run.",
+"I can’t to run."
+],
+"ans": 0,
+"why": "Can’t."
+}
+],
+"fix": [
+{
+"wrong": "Do you can help?",
+"right": "Can you help?",
+"why": "Sem do."
+},
+{
+"wrong": "I don’t can sing.",
+"right": "I can’t sing.",
+"why": "Can’t."
+},
+{
+"wrong": "She can to swim.",
+"right": "She can swim.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “You can swim.”",
+"answer": "Can you swim?",
+"why": ""
+},
+{
+"prompt": "Resposta curta afirmativa: “Can he run?”",
+"answer": "Yes, he can.",
+"why": ""
+},
+{
+"prompt": "Reescreva com can: “I speak English.”",
+"answer": "I can speak English.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "bring vs take",
+"wrong": "Bring this book to the teacher over there.",
+"right": "Take this book to the teacher over there.",
+"why": "Em português levar e trazer dependem do ponto de vista; o aluno usa bring sempre. Bring = trazer para cá; take = levar para lá."
+},
+"mcq": [
+{
+"q": "Please ___ your book to class tomorrow (venha para cá).",
+"opts": [
+"bring",
+"take",
+"carry"
+],
+"ans": 0,
+"why": "Trazer para cá = bring."
+},
+{
+"q": "I ___ my kids to school.",
+"opts": [
+"take",
+"come",
+"bring"
+],
+"ans": 0,
+"why": "Levar para lá = take."
+},
+{
+"q": "Qual é o passado de bring?",
+"opts": [
+"brang",
+"brought",
+"bringed"
+],
+"ans": 1,
+"why": "Irregular."
+},
+{
+"q": "Can you ___ me a glass of water?",
+"opts": [
+"take",
+"go",
+"bring"
+],
+"ans": 2,
+"why": "Trazer = bring."
+}
+],
+"fix": [
+{
+"wrong": "She bringed a cake.",
+"right": "She brought a cake.",
+"why": "Irregular."
+},
+{
+"wrong": "Bring this to him there.",
+"right": "Take this to him there.",
+"why": "Levar = take."
+},
+{
+"wrong": "I bring my dog to the park every day.",
+"right": "I take my dog to the park every day.",
+"why": "Levo para lá."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I bring a gift.”",
+"answer": "I brought a gift.",
+"why": ""
+},
+{
+"prompt": "Peça para trazer: “water / please / me / Bring”",
+"answer": "Bring me water, please.",
+"why": ""
+},
+{
+"prompt": "Troque por take: “I bring my son to school.”",
+"answer": "I take my son to school.",
+"why": ""
+}
+]
+}

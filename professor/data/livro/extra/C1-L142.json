@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if + would",
+"wrong": "If I would have known, I would be there now.",
+"right": "If I had known, I would be there now.",
+"why": "O português usa subjuntivo (“se eu soubesse”) e o brasileiro traduz com would. Em inglês a oração com if não leva would: use past perfect (passado) ou past simple (presente)."
+},
+"mcq": [
+{
+"q": "Choose the correct mixed conditional: “If we ___ earlier, we would not be in trouble now.”",
+"opts": [
+"acted",
+"had acted",
+"would have acted"
+],
+"ans": 1,
+"why": "Tipo A: past perfect + would + base."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"If I would be a mayor, I had fixed it.",
+"If I am a mayor, I would have fixed it.",
+"If I were a mayor, I would have fixed it."
+],
+"ans": 2,
+"why": "Tipo B: past simple + would have + pp."
+},
+{
+"q": "Which sentence has the **if-clause error**?",
+"opts": [
+"If I would have studied, I would be calmer.",
+"If I had studied, I would be calmer.",
+"If I had studied, I might be calmer."
+],
+"ans": 0,
+"why": "Sem would na oração com if."
+},
+{
+"q": "“___ might be safer now” expresses...",
+"opts": [
+"certainty",
+"possibility",
+"an order"
+],
+"ans": 1,
+"why": "might = possibilidade (could/might)."
+}
+],
+"fix": [
+{
+"wrong": "If they would have listened, we would be safer today.",
+"right": "If they had listened, we would be safer today.",
+"why": "Sem would depois de if."
+},
+{
+"wrong": "If I was a politician, I would have push the law.",
+"right": "If I were a politician, I would have pushed the law.",
+"why": "were + would have + pp (particípio)."
+},
+{
+"wrong": "If she had warned us, we would not facing this now.",
+"right": "If she had warned us, we would not be facing this now.",
+"why": "would + be + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Transforme em condicional mista: “We did not act, so we face this problem now.” (If…)",
+"answer": "If we had acted, we would not be facing this problem now.",
+"why": "Ou: would not face — use esta forma."
+},
+{
+"prompt": "Reescreva sem would na oração com if: “If he would have known, he would have called.”",
+"answer": "If he had known, he would have called.",
+"why": ""
+},
+{
+"prompt": "Reescreva com might: “If I had slept, I would be fine now.”",
+"answer": "If I had slept, I might be fine now.",
+"why": ""
+}
+]
+}

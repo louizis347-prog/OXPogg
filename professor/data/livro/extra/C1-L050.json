@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have a say",
+"wrong": "Students want to have a word on the plan.",
+"right": "Students want to have a say in the plan.",
+"why": "Em português “ter voz/palavra”. Em inglês, a colocação é have a say (in)."
+},
+"mcq": [
+{
+"q": "Students want a ___ in the plan.",
+"opts": [
+"word",
+"voice to",
+"say"
+],
+"ans": 2,
+"why": "have a say."
+},
+{
+"q": "It will ___ an impact on exams.",
+"opts": [
+"have",
+"make",
+"do"
+],
+"ans": 0,
+"why": "have an impact on."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"do an impact on",
+"have an impact on",
+"make an impact in"
+],
+"ans": 1,
+"why": "have an impact on."
+},
+{
+"q": "Have a say means…",
+"opts": [
+"speak a lot",
+"argue",
+"take part in deciding"
+],
+"ans": 2,
+"why": "Participar."
+}
+],
+"fix": [
+{
+"wrong": "It will do an impact on exams.",
+"right": "It will have an impact on exams.",
+"why": "have."
+},
+{
+"wrong": "Students want a say of the plan.",
+"right": "Students want a say in the plan.",
+"why": "in."
+},
+{
+"wrong": "It has impact in exams.",
+"right": "It has an impact on exams.",
+"why": "an … on."
+}
+],
+"rewrite": [
+{
+"prompt": "Use have a say: “Students want to take part in deciding.”",
+"answer": "Students want a say.",
+"why": ""
+},
+{
+"prompt": "Use have an impact on: “It affects exams.”",
+"answer": "It will have an impact on exams.",
+"why": ""
+},
+{
+"prompt": "Passado: “It has an impact on exams.”",
+"answer": "It had an impact on exams.",
+"why": ""
+}
+]
+}

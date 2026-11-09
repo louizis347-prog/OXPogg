@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + to",
+"wrong": "He wants stay here.",
+"right": "He wants to stay here.",
+"why": "Em português o infinitivo vem direto ('quer ficar'); em inglês verbos como want, need, learn pedem to antes do verbo."
+},
+"mcq": [
+{
+"q": "I'd like ___ coffee.",
+"opts": [
+"to a",
+"have",
+"a"
+],
+"ans": 2,
+"why": "substantivo sem to."
+},
+{
+"q": "He needs ___ now.",
+"opts": [
+"to leave",
+"leave",
+"leaving"
+],
+"ans": 0,
+"why": "need + to."
+},
+{
+"q": "They learned ___ .",
+"opts": [
+"to swim",
+"swim",
+"swimming"
+],
+"ans": 0,
+"why": "learn + to."
+},
+{
+"q": "She promised ___ .",
+"opts": [
+"to call",
+"call",
+"calling"
+],
+"ans": 0,
+"why": "promise + to."
+}
+],
+"fix": [
+{
+"wrong": "I learned swim.",
+"right": "I learned to swim.",
+"why": "to."
+},
+{
+"wrong": "He promised call me.",
+"right": "He promised to call me.",
+"why": "to."
+},
+{
+"wrong": "We need to went.",
+"right": "We need to go.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I need. I buy milk.”",
+"answer": "I need to buy milk.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She learned. She drives.”",
+"answer": "She learned to drive.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They promised. They come.”",
+"answer": "They promised to come.",
+"why": ""
+}
+]
+}

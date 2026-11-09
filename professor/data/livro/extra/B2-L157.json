@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discuss about",
+"wrong": "This essay will discuss about both views.",
+"right": "This essay will discuss both views.",
+"why": "Em português \"discutir sobre\" é comum. Em inglês discuss é transitivo e não leva about."
+},
+"mcq": [
+{
+"q": "Complete: It depends **___** the data.",
+"opts": [
+"of",
+"on",
+"from"
+],
+"ans": 1,
+"why": "depend on."
+},
+{
+"q": "Qual verbo é transitivo?",
+"opts": [
+"happen",
+"arrive",
+"emphasize"
+],
+"ans": 2,
+"why": "emphasize + objeto."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She explained it to me.",
+"She explained me it.",
+"She explained to it me."
+],
+"ans": 0,
+"why": "explain to."
+},
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"exatamente duas",
+"três",
+"até duas palavras"
+],
+"ans": 2,
+"why": "limite."
+}
+],
+"fix": [
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+},
+{
+"wrong": "It is a problem very serious.",
+"right": "It is a very serious problem.",
+"why": "ordem."
+},
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The graph shows a fall.”",
+"answer": "The graph showed a fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+}
+]
+}

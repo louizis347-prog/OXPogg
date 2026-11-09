@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "curriculum / resume",
+"wrong": "I sent my curriculum to the company.",
+"right": "I sent my résumé to the company.",
+"why": "Curriculum em português = currículo; em inglês americano, resume ou CV."
+},
+"mcq": [
+{
+"q": "Complete: I took a **___**.",
+"opts": [
+"course",
+"work",
+"curriculum"
+],
+"ans": 0,
+"why": "take a course."
+},
+{
+"q": "job vs. work: a ___",
+"opts": [
+"work",
+"job",
+"works"
+],
+"ans": 1,
+"why": "job contável."
+},
+{
+"q": "résumé =",
+"opts": [
+"resumo",
+"reunião",
+"currículo"
+],
+"ans": 2,
+"why": "falso cognato."
+},
+{
+"q": "Qual é correta?",
+"opts": [
+"He supposed attend.",
+"He is supposed to attend.",
+"He is suppose attend."
+],
+"ans": 1,
+"why": "supposed to."
+}
+],
+"fix": [
+{
+"wrong": "I did a course.",
+"right": "I took a course.",
+"why": "take."
+},
+{
+"wrong": "I sent my curriculum.",
+"right": "I sent my résumé.",
+"why": "résumé."
+},
+{
+"wrong": "Actually I am studying English this month.",
+"right": "Currently I am studying English this month.",
+"why": "currently."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe ao passado: “She takes a course.”",
+"answer": "She took a course.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “I was tired. I went to work.”",
+"answer": "Although I was tired, I went to work.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have/get done: “Someone checked my CV.”",
+"answer": "I had my CV checked.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "citação",
+"wrong": "He said me it was no use.",
+"right": "He told me it was no use.",
+"why": "Em português “disse-me”; o brasileiro usa said me. Say sem pessoa, tell com pessoa."
+},
+"mcq": [
+{
+"q": "“It’s no use giving up.” =",
+"opts": [
+"Use sempre.",
+"Não use.",
+"Não adianta desistir."
+],
+"ans": 2,
+"why": "No use."
+},
+{
+"q": "Marco **___** his exam twice.",
+"opts": [
+"fail",
+"failed",
+"has fail"
+],
+"ans": 1,
+"why": "Passado."
+},
+{
+"q": "He **___** me it was hard.",
+"opts": [
+"said",
+"spoke",
+"told"
+],
+"ans": 2,
+"why": "Tell."
+},
+{
+"q": "It’s no use **___**.",
+"opts": [
+"crying",
+"cry",
+"to cry"
+],
+"ans": 0,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "It’s no use to cry.",
+"right": "It’s no use crying.",
+"why": "-ing."
+},
+{
+"wrong": "Marco failed twice his exam.",
+"right": "Marco failed his exam twice.",
+"why": "Ordem."
+},
+{
+"wrong": "He said me it was hard.",
+"right": "He told me it was hard.",
+"why": "Tell."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Crying is useless.” (It’s no use…)",
+"answer": "It’s no use crying.",
+"why": ""
+},
+{
+"prompt": "Passado: “Marco fails his exam.”",
+"answer": "Marco failed his exam.",
+"why": ""
+},
+{
+"prompt": "Indireto: “It’s hard,” he said to me. (He told…)",
+"answer": "He told me it was hard.",
+"why": ""
+}
+]
+}

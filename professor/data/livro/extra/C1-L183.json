@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The author pretends to show that opening prices are arbitrary.",
+"right": "The author aims to show that opening prices are arbitrary.",
+"why": "Em português “pretende mostrar” = quer/tem intenção. Em inglês, pretend significa fingir. Use aim/intend/seek."
+},
+"mcq": [
+{
+"q": "Main idea: “The author ___ that anchors bias us.”",
+"opts": [
+"argues",
+"pretends",
+"assists"
+],
+"ans": 0,
+"why": "argues that."
+},
+{
+"q": "“The passage is ___ the opening price.”",
+"opts": [
+"on about of",
+"about",
+"of"
+],
+"ans": 1,
+"why": "is about."
+},
+{
+"q": "To close a summary use...",
+"opts": [
+"One study showed…",
+"First…",
+"Overall, the text suggests…"
+],
+"ans": 2,
+"why": "Fecho."
+},
+{
+"q": "Support is shown by...",
+"opts": [
+"One study showed that…",
+"Overall…",
+"Finally…"
+],
+"ans": 0,
+"why": "Apoio."
+}
+],
+"fix": [
+{
+"wrong": "The author argue that the number is arbitrary.",
+"right": "The author argues that the number is arbitrary.",
+"why": "-s."
+},
+{
+"wrong": "The text pretends to explain bias.",
+"right": "The text intends to explain bias.",
+"why": "pretend = fingir."
+},
+{
+"wrong": "One study showed that the first number it affects price.",
+"right": "One study showed that the first number affects price.",
+"why": "Sem pronome duplo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com argues: “The author thinks anchors matter.” (argues that)",
+"answer": "The author argues that anchors matter.",
+"why": ""
+},
+{
+"prompt": "Reescreva com aims to: “The author pretends to explain bias.” (aims)",
+"answer": "The author aims to explain bias.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Overall: “In conclusion, the text suggests a bias.”",
+"answer": "Overall, the text suggests a bias.",
+"why": ""
+}
+]
+}

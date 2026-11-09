@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo",
+"wrong": "A forest is protected, and the integrity of biotic community matters.",
+"right": "A forest is protected, and the integrity of the biotic community matters.",
+"why": "Português omite o artigo antes de abstração coletiva; em inglês the é obrigatório com the biotic community."
+},
+"mcq": [
+{
+"q": "Abstract noun:",
+"opts": [
+"the integrate of community",
+"the integrity of the community",
+"the integrity community"
+],
+"ans": 1,
+"why": "Substantivo."
+},
+{
+"q": "Passive:",
+"opts": [
+"A forest protected is law.",
+"A forest is protected by law.",
+"A forest protects by law."
+],
+"ans": 1,
+"why": "Passiva."
+},
+{
+"q": "Conceptualization turns a quality into…",
+"opts": [
+"a noun",
+"a verb",
+"a date"
+],
+"ans": 0,
+"why": "Substantivo."
+},
+{
+"q": "Integrity comes from…",
+"opts": [
+"integrity",
+"integrate only",
+"integral"
+],
+"ans": 2,
+"why": "Adjetivo → nome."
+}
+],
+"fix": [
+{
+"wrong": "The integrity of community matters.",
+"right": "The integrity of the community matters.",
+"why": "the."
+},
+{
+"wrong": "A forest protects by law.",
+"right": "A forest is protected by law.",
+"why": "Passiva."
+},
+{
+"wrong": "The stable of the land matters.",
+"right": "The stability of the land matters.",
+"why": "Substantivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “The law protects a forest.”",
+"answer": "A forest is protected by the law.",
+"why": ""
+},
+{
+"prompt": "Nominalize: “The community is stable.”",
+"answer": "The stability of the community matters.",
+"why": ""
+},
+{
+"prompt": "Plural: “A forest is protected.”",
+"answer": "Forests are protected.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would rather + base",
+"wrong": "I would rather to stay home.",
+"right": "I would rather stay home.",
+"why": "O português \"preferiria ficar\" leva infinitivo; em inglês would rather é seguido de base sem to."
+},
+"mcq": [
+{
+"q": "Qual é correta?",
+"opts": [
+"She prefers cycling to driving.",
+"She prefers cycling than driving.",
+"She prefers to cycling to driving."
+],
+"ans": 0,
+"why": "prefer -ing to -ing."
+},
+{
+"q": "Qual frase é uma possibilidade perdida (não crítica)?",
+"opts": [
+"You must ask me.",
+"You could have asked me.",
+"You are asking me."
+],
+"ans": 1,
+"why": "could have + particípio = possibilidade que não se realizou."
+},
+{
+"q": "Complete: She asked what time **___**.",
+"opts": [
+"was it",
+"it is it",
+"it was"
+],
+"ans": 2,
+"why": "Ordem afirmativa."
+},
+{
+"q": "Complete: He **promised ___** call.",
+"opts": [
+"that to",
+"to",
+"for"
+],
+"ans": 1,
+"why": "promise to + verbo."
+}
+],
+"fix": [
+{
+"wrong": "We prefer walk than take the bus.",
+"right": "We prefer walking to taking the bus.",
+"why": "prefer -ing to -ing."
+},
+{
+"wrong": "He should had study harder.",
+"right": "He should have studied harder.",
+"why": "A estrutura é should have + particípio, não should had."
+},
+{
+"wrong": "She said me to sit.",
+"right": "She told me to sit.",
+"why": "told + pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como crítica: “He leaves early.”",
+"answer": "He should have left early.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “‘What is your job?’ he asked her.”",
+"answer": "He asked her what her job was.",
+"why": ""
+},
+{
+"prompt": "Reescreva com warned: “‘Don't touch it,’ he said to us.”",
+"answer": "He warned us not to touch it.",
+"why": ""
+}
+]
+}

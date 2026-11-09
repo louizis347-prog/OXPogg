@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dedução vs. futuro",
+"wrong": "The lights are on, so he must be arrive.",
+"right": "The lights are on, so he must have arrived.",
+"why": "O brasileiro confunde o tempo: para deduzir algo que já aconteceu, use must have + particípio."
+},
+"mcq": [
+{
+"q": "\"They can't have known.\" significa...",
+"opts": [
+"É impossível que eles soubessem.",
+"Eles não podem saber.",
+"Eles não deviam saber."
+],
+"ans": 0,
+"why": "can't have known = tenho certeza de que não souberam."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She must been tired.",
+"She must have been tired.",
+"She must has been tired."
+],
+"ans": 1,
+"why": "Must have been: sem -s em have e com particípio."
+},
+{
+"q": "Qual frase é uma dedução sobre o passado?",
+"opts": [
+"He must miss the train.",
+"He is missing the train.",
+"He must have missed the train."
+],
+"ans": 2,
+"why": "must have + particípio = certeza lógica sobre o passado."
+},
+{
+"q": "A dedução negativa de \"She was there\" é...",
+"opts": [
+"She mustn't have been there.",
+"She can't have been there.",
+"She hasn't must be there."
+],
+"ans": 1,
+"why": "Dedução negativa = can't have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "He must has left early.",
+"right": "He must have left early.",
+"why": "Depois de modal, use have, nunca has."
+},
+{
+"wrong": "She can't has seen us.",
+"right": "She can't have seen us.",
+"why": "Modais não mudam e pedem have + particípio."
+},
+{
+"wrong": "They must have went home.",
+"right": "They must have gone home.",
+"why": "Use o particípio gone."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com can't have: “Tom was at home.” (impossível)",
+"answer": "Tom can't have been at home.",
+"why": ""
+},
+{
+"prompt": "Reescreva com must have: “Anna lost her phone.”",
+"answer": "Anna must have lost her phone.",
+"why": ""
+},
+{
+"prompt": "Reescreva como dedução certa: “She was sick.”",
+"answer": "She must have been sick.",
+"why": ""
+}
+]
+}

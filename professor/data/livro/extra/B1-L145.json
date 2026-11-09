@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta indireta (ordem)",
+"wrong": "Could you tell me where is the bank? Do you know if is it open?",
+"right": "Could you tell me where the bank is? Do you know if it is open?",
+"why": "Em português “você sabe onde fica o banco?” mantém a ordem da pergunta direta. Em inglês, depois de Could you tell me / Do you know, a ordem é afirmativa: sujeito + verbo."
+},
+"mcq": [
+{
+"q": "Could you tell me where ___?",
+"opts": [
+"is the bank",
+"the bank is",
+"does the bank"
+],
+"ans": 1,
+"why": "Ordem afirmativa."
+},
+{
+"q": "Do you know ___ it is open?",
+"opts": [
+"that",
+"what",
+"if"
+],
+"ans": 2,
+"why": "if."
+},
+{
+"q": "Do you know who ___ it?",
+"opts": [
+"did build",
+"built",
+"build did"
+],
+"ans": 1,
+"why": "Sujeito Wh- sem auxiliar."
+},
+{
+"q": "Which is correct? (pergunta indireta (ordem))",
+"opts": [
+"Do you know where does she live?",
+"Do you know where lives she?",
+"Do you know where she lives?"
+],
+"ans": 2,
+"why": "Ordem afirmativa."
+}
+],
+"fix": [
+{
+"wrong": "Can you tell me what time is it?",
+"right": "Can you tell me what time it is?",
+"why": "Ordem."
+},
+{
+"wrong": "Do you know where does he work?",
+"right": "Do you know where he works?",
+"why": "Sem does."
+},
+{
+"wrong": "Could you tell me is it open?",
+"right": "Could you tell me if it is open?",
+"why": "if."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne indireta: “Where is the museum?” (Could you tell me...)",
+"answer": "Could you tell me where the museum is?",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Is the shop open?” (Do you know...)",
+"answer": "Do you know if the shop is open?",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Who built it?” (Do you know...)",
+"answer": "Do you know who built it?",
+"why": ""
+}
+]
+}

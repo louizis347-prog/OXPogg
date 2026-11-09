@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Albeit it is brief, we admire it.",
+"right": "Albeit brief, we admire it.",
+"why": "Albeit pede só adjetivo/advérbio/sintagma, não oração completa."
+},
+"mcq": [
+{
+"q": "In “Albeit brief, we admire it”, albeit is followed by…",
+"opts": [
+"it is brief",
+"that brief",
+"brief"
+],
+"ans": 2,
+"why": "Albeit brief."
+},
+{
+"q": "Much as we admire her…",
+"opts": [
+"…we disagree not.",
+"…we disagree.",
+"…not we disagree."
+],
+"ans": 1,
+"why": "Much as."
+},
+{
+"q": "do away with =",
+"opts": [
+"wait",
+"abolish",
+"visit"
+],
+"ans": 1,
+"why": "Abolir."
+},
+{
+"q": "do without =",
+"opts": [
+"use",
+"manage without",
+"need"
+],
+"ans": 1,
+"why": "Passar sem."
+}
+],
+"fix": [
+{
+"wrong": "Much as we admiring her, we disagree.",
+"right": "Much as we admire her, we disagree.",
+"why": "Presente."
+},
+{
+"wrong": "They did away the tax.",
+"right": "They did away with the tax.",
+"why": "with."
+},
+{
+"wrong": "Albeit it was slow, it worked.",
+"right": "Albeit slow, it worked.",
+"why": "Sem oração."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com albeit: “It was brief, although it was clear.”",
+"answer": "It was brief, albeit clear.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do without: “We cannot manage without it.”",
+"answer": "We can’t do without it.",
+"why": ""
+},
+{
+"prompt": "Passado: “They do away with the rule.”",
+"answer": "They did away with the rule.",
+"why": ""
+}
+]
+}

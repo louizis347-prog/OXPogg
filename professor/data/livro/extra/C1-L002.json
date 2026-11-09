@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tese e verbo",
+"wrong": "This essay discuss about the causes of success.",
+"right": "This essay discusses the causes of success.",
+"why": "Por “falar sobre”, o brasileiro coloca about depois de discuss. Em inglês, discuss é transitivo direto e leva -s com this essay."
+},
+"mcq": [
+{
+"q": "A thesis statement should…",
+"opts": [
+"only list topics",
+"ask a question",
+"state a clear position"
+],
+"ans": 2,
+"why": "A tese traz posição clara."
+},
+{
+"q": "The intro gives context and then a ___.",
+"opts": [
+"problem",
+"conclusion",
+"list of sources"
+],
+"ans": 0,
+"why": "Contexto + problema."
+},
+{
+"q": "Success is often ___ to talent.",
+"opts": [
+"attribute",
+"attributed",
+"attributing"
+],
+"ans": 1,
+"why": "Passiva: is attributed to."
+},
+{
+"q": "This essay ___ that luck matters.",
+"opts": [
+"discusses about",
+"says to",
+"argues"
+],
+"ans": 2,
+"why": "argue that + oração."
+}
+],
+"fix": [
+{
+"wrong": "The essay discuss about luck.",
+"right": "The essay discusses luck.",
+"why": "discuss é transitivo direto; -s."
+},
+{
+"wrong": "Success is attribute to talent.",
+"right": "Success is attributed to talent.",
+"why": "Passiva com particípio."
+},
+{
+"wrong": "It exists many reasons.",
+"right": "There are many reasons.",
+"why": "Em inglês use There is/are."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na passiva: “People attribute success to talent.”",
+"answer": "Success is attributed to talent.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem about: “This essay talks about luck.”",
+"answer": "This essay discusses luck.",
+"why": ""
+},
+{
+"prompt": "Reescreva com There: “Many reasons exist.”",
+"answer": "There are many reasons.",
+"why": ""
+}
+]
+}

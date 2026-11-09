@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The review is not without flaws, but the critic was very sympathetic.",
+"right": "The review is not without flaws, but the critic was very kind.",
+"why": "“Simpático” não é sympathetic; sympathetic é compassivo."
+},
+"mcq": [
+{
+"q": "**Not without flaws** means…",
+"opts": [
+"it is perfect",
+"it has no flaws",
+"it has some flaws"
+],
+"ans": 2,
+"why": "Litote: dupla negação suaviza."
+},
+{
+"q": "Praise phrase:",
+"opts": [
+"at best, her illustrate",
+"at her best, illustrates",
+"at her best, she illustrates"
+],
+"ans": 2,
+"why": "At her best."
+},
+{
+"q": "Concession:",
+"opts": [
+"Even so works it.",
+"Even so it not works.",
+"Even so, it works."
+],
+"ans": 2,
+"why": "Even so + oração."
+},
+{
+"q": "Litotes uses…",
+"opts": [
+"a question",
+"a negative to soften",
+"an exaggeration"
+],
+"ans": 1,
+"why": "Suavizar."
+}
+],
+"fix": [
+{
+"wrong": "It is not without flaw, but it works.",
+"right": "It is not without flaws, but it works.",
+"why": "Flaws no plural."
+},
+{
+"wrong": "At her best, illustrate with examples.",
+"right": "At her best, she illustrates with examples.",
+"why": "Sujeito e -s."
+},
+{
+"wrong": "Even so it works.",
+"right": "Even so, it works.",
+"why": "Even so leva vírgula."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com litote: “It has some flaws.”",
+"answer": "It is not without flaws.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She illustrates the point.”",
+"answer": "She illustrated the point.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “It has flaws.”",
+"answer": "It has no flaws.",
+"why": ""
+}
+]
+}

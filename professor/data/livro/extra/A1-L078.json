@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "contração em resposta",
+"wrong": "Are you ready? — Yes, I’m.",
+"right": "Are you ready? — Yes, I am.",
+"why": "O brasileiro contrai também no fim da resposta, mas I am só se contrai quando algo vem depois; no final da frase, usa-se a forma completa e ela é acentuada."
+},
+"mcq": [
+{
+"q": "“I’m” is pronounced like…",
+"opts": [
+"/ai am/ (two syllables)",
+"/aɪm/ (one syllable)",
+"/im/"
+],
+"ans": 1,
+"why": "I’m."
+},
+{
+"q": "Contraction of “I am”:",
+"opts": [
+"Im",
+"I’am",
+"I’m"
+],
+"ans": 2,
+"why": "I’m."
+},
+{
+"q": "In fast speech we usually say…",
+"opts": [
+"I’m late.",
+"I am late. (stressed)",
+"Am I late."
+],
+"ans": 0,
+"why": "Natural."
+},
+{
+"q": "“I am” is stressed to…",
+"opts": [
+"sound fast",
+"emphasize",
+"ask"
+],
+"ans": 1,
+"why": "Ênfase."
+}
+],
+"fix": [
+{
+"wrong": "Im tired.",
+"right": "I’m tired.",
+"why": "Apóstrofo."
+},
+{
+"wrong": "I’am happy.",
+"right": "I’m happy.",
+"why": "I’m."
+},
+{
+"wrong": "Yes, I’m. (Are you ready?)",
+"right": "Yes, I am.",
+"why": "Sem contração no final."
+}
+],
+"rewrite": [
+{
+"prompt": "Use contração: “I am happy.”",
+"answer": "I’m happy.",
+"why": ""
+},
+{
+"prompt": "Use contração: “I am not tired.”",
+"answer": "I’m not tired.",
+"why": ""
+},
+{
+"prompt": "Use a forma completa: “I’m late.”",
+"answer": "I am late.",
+"why": ""
+}
+]
+}

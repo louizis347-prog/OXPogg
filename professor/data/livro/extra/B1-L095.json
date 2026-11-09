@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estratégia de leitura",
+"wrong": "The text says that the author is agree, but it don’t say it.",
+"right": "The text says that the author agrees, but it doesn’t say it.",
+"why": "Em português “concorda” é verbo; o brasileiro usa to be + agree. Em inglês, agree é verbo e o auxiliar negativo da 3ª pessoa é doesn’t."
+},
+"mcq": [
+{
+"q": "True/False/Not Given: if the text doesn’t mention it, answer…",
+"opts": [
+"Not Given",
+"False",
+"True"
+],
+"ans": 0,
+"why": "Not Given."
+},
+{
+"q": "Before reading, you should…",
+"opts": [
+"translate all",
+"skip the text",
+"read the questions"
+],
+"ans": 2,
+"why": "Perguntas primeiro."
+},
+{
+"q": "Underline key…",
+"opts": [
+"pages",
+"lines",
+"words"
+],
+"ans": 2,
+"why": "Palavras-chave."
+},
+{
+"q": "The author ___ with the idea.",
+"opts": [
+"is agree",
+"agrees",
+"agree"
+],
+"ans": 1,
+"why": "agrees."
+}
+],
+"fix": [
+{
+"wrong": "The author is agree.",
+"right": "The author agrees.",
+"why": "Verbo."
+},
+{
+"wrong": "The text don't say it.",
+"right": "The text doesn't say it.",
+"why": "doesn't."
+},
+{
+"wrong": "The writer say that.",
+"right": "The writer says that.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva negativa: “The text says it.”",
+"answer": "The text doesn't say it.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The author is agree.” corrija",
+"answer": "The author agrees.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “The writer says that.” (The writers)",
+"answer": "The writers say that.",
+"why": ""
+}
+]
+}

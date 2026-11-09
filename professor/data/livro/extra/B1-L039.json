@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tell + to",
+"wrong": "I told her call me.",
+"right": "I told her to call me.",
+"why": "Em português “disse a ela que ligasse”. Em inglês, tell/advise/invite + pessoa + to + verbo base; a negativa é not to."
+},
+"mcq": [
+{
+"q": "He advised me ___.",
+"opts": [
+"to rest",
+"rest",
+"resting"
+],
+"ans": 0,
+"why": "advise + to."
+},
+{
+"q": "She warned us ___ panic.",
+"opts": [
+"not to",
+"don't",
+"to not"
+],
+"ans": 0,
+"why": "not to."
+},
+{
+"q": "They invited me ___ dinner.",
+"opts": [
+"have",
+"to have",
+"having"
+],
+"ans": 1,
+"why": "invite + to."
+},
+{
+"q": "Which is correct? (tell + to)",
+"opts": [
+"I told to her call.",
+"I told her call.",
+"I told her to call."
+],
+"ans": 2,
+"why": "told her to call."
+}
+],
+"fix": [
+{
+"wrong": "She advised me rest.",
+"right": "She advised me to rest.",
+"why": "to."
+},
+{
+"wrong": "He warned that I not touch it.",
+"right": "He warned me not to touch it.",
+"why": "warn + pessoa + not to."
+},
+{
+"wrong": "They invited me have dinner.",
+"right": "They invited me to have dinner.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Call me,” I said to her.",
+"answer": "I told her to call me.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Don’t panic,” she said to us.",
+"answer": "She warned us not to panic.",
+"why": ""
+},
+{
+"prompt": "Reescreva com advise: “Rest,” he said to me.",
+"answer": "He advised me to rest.",
+"why": ""
+}
+]
+}

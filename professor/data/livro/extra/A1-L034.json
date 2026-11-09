@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "has got",
+"wrong": "She have got a car.",
+"right": "She has got a car.",
+"why": "O brasileiro generaliza have para todos; com he/she/it é has got."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"They has got a dog.",
+"They is got a dog.",
+"They’ve got a dog."
+],
+"ans": 2,
+"why": "They’ve."
+},
+{
+"q": "Short answer: Has she got a car?",
+"opts": [
+"Yes, she has.",
+"Yes, she is.",
+"Yes, she got."
+],
+"ans": 0,
+"why": "Has."
+},
+{
+"q": "He ___ got a bike.",
+"opts": [
+"have",
+"has",
+"is"
+],
+"ans": 1,
+"why": "He: has got."
+},
+{
+"q": "I ___ got a phone.",
+"opts": [
+"has",
+"am",
+"have"
+],
+"ans": 2,
+"why": "I: have got."
+}
+],
+"fix": [
+{
+"wrong": "Do you got a phone?",
+"right": "Have you got a phone?",
+"why": "Inversão."
+},
+{
+"wrong": "He has got a dog? Yes, he have.",
+"right": "Has he got a dog? Yes, he has.",
+"why": "Resposta curta."
+},
+{
+"wrong": "She have got a car.",
+"right": "She has got a car.",
+"why": "Has got."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “You have got a car.”",
+"answer": "Have you got a car?",
+"why": ""
+},
+{
+"prompt": "Negue com haven’t: “We have got time.”",
+"answer": "We haven’t got time.",
+"why": ""
+},
+{
+"prompt": "Reescreva com have got: “I have a pen.”",
+"answer": "I have got a pen.",
+"why": ""
+}
+]
+}

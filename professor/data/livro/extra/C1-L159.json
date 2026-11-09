@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso amigo",
+"wrong": "She is antisocial because she prefers to stay home.",
+"right": "She is unsociable because she prefers to stay home.",
+"why": "Em português “antissocial” costuma significar “tímido/reservado”. Em inglês, antisocial é prejudicial aos outros; para quem prefere ficar só, use unsociable ou introverted."
+},
+"mcq": [
+{
+"q": "**anti-** means...",
+"opts": [
+"against",
+"before",
+"again"
+],
+"ans": 0,
+"why": "anti- = contra."
+},
+{
+"q": "Which prevents infection?",
+"opts": [
+"antidote",
+"antiseptic",
+"antifreeze"
+],
+"ans": 1,
+"why": "antiseptic."
+},
+{
+"q": "An **antidote** works against...",
+"opts": [
+"a path",
+"a number",
+"a poison"
+],
+"ans": 2,
+"why": "Contraveneno."
+},
+{
+"q": "Antisocial behavior is...",
+"opts": [
+"harmful to others",
+"shy",
+"friendly"
+],
+"ans": 0,
+"why": "Prejudicial."
+}
+],
+"fix": [
+{
+"wrong": "The doctor gave me an anti-biotic for the infection.",
+"right": "The doctor gave me an antibiotic for the infection.",
+"why": "antibiotic sem hífen."
+},
+{
+"wrong": "Use antibacterial soap for kill germs.",
+"right": "Use antibacterial soap to kill germs.",
+"why": "to + verbo."
+},
+{
+"wrong": "An antidote is need now.",
+"right": "An antidote is needed now.",
+"why": "Passiva."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com um adjetivo anti-: “soap against bacteria” → “___ soap”",
+"answer": "antibacterial soap",
+"why": ""
+},
+{
+"prompt": "Reescreva com anti-: “a drug against viruses” → “an ___ drug”",
+"answer": "an antiviral drug",
+"why": ""
+},
+{
+"prompt": "Reescreva com plural: “an antibiotic”",
+"answer": "antibiotics",
+"why": ""
+}
+]
+}

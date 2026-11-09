@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo",
+"wrong": "A common misconception is that the memory is stored in one place.",
+"right": "A common misconception is that memory is stored in one place.",
+"why": "Em português dizemos “a memória” com artigo, mesmo no sentido geral. Em inglês, substantivos abstratos gerais ficam sem artigo."
+},
+"mcq": [
+{
+"q": "“A common misconception is that…” introduces a...",
+"opts": [
+"method",
+"myth",
+"result"
+],
+"ans": 1,
+"why": "Mito."
+},
+{
+"q": "“Think of it as…” introduces an...",
+"opts": [
+"exception",
+"date",
+"analogy"
+],
+"ans": 2,
+"why": "Analogia."
+},
+{
+"q": "“Of course, the analogy has limits” is a...",
+"opts": [
+"caveat",
+"myth",
+"hook"
+],
+"ans": 0,
+"why": "Ressalva."
+},
+{
+"q": "Memory consolidation happens...",
+"opts": [
+"suddenly only",
+"gradually",
+"never"
+],
+"ans": 1,
+"why": "Gradualmente."
+}
+],
+"fix": [
+{
+"wrong": "The hippocampus replay the day’s events.",
+"right": "The hippocampus replays the day’s events.",
+"why": "-s."
+},
+{
+"wrong": "Neocortex stores long-term memories.",
+"right": "The neocortex stores long-term memories.",
+"why": "Órgão leva the."
+},
+{
+"wrong": "Memory are consolidated in sleep.",
+"right": "Memory is consolidated in sleep.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem artigo: “The memory fades.”",
+"answer": "Memory fades.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Think of it as: “It is like a library.”",
+"answer": "Think of it as a library.",
+"why": ""
+},
+{
+"prompt": "Reescreva com ressalva: “The analogy is limited.” (has limits)",
+"answer": "The analogy has limits.",
+"why": ""
+}
+]
+}

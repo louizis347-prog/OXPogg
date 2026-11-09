@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo com generalização",
+"wrong": "The life is beautiful.",
+"right": "Life is beautiful.",
+"why": "Em português dizemos \"a vida é bela\" e \"os cachorros são fiéis\"; em inglês, ideias gerais e plurais genéricos dispensam artigo."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Dogs are loyal.",
+"The dogs are loyal. (geral)",
+"A dogs are loyal."
+],
+"ans": 0,
+"why": "Generalização sem artigo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I go to the school. (estudar)",
+"I go to school.",
+"I go to a school."
+],
+"ans": 1,
+"why": "School sem artigo = estudar."
+},
+{
+"q": "First mention:",
+"opts": [
+"I see the car.",
+"I see car.",
+"I see a car."
+],
+"ans": 2,
+"why": "A."
+},
+{
+"q": "Second mention:",
+"opts": [
+"The car is red.",
+"A car is red.",
+"Car is red."
+],
+"ans": 0,
+"why": "The."
+}
+],
+"fix": [
+{
+"wrong": "The life is short.",
+"right": "Life is short.",
+"why": "Sem the."
+},
+{
+"wrong": "I go to the work by bus.",
+"right": "I go to work by bus.",
+"why": "Work."
+},
+{
+"wrong": "She likes the music.",
+"right": "She likes music.",
+"why": "Geral."
+}
+],
+"rewrite": [
+{
+"prompt": "Tire o artigo: “The money is important.” (geral)",
+"answer": "Money is important.",
+"why": ""
+},
+{
+"prompt": "Complete com a/the: “I have a pen. ___ pen is blue.”",
+"answer": "The pen is blue.",
+"why": "Escreva a frase."
+},
+{
+"prompt": "Corrija: “I go to the school at 8.”",
+"answer": "I go to school at 8.",
+"why": ""
+}
+]
+}

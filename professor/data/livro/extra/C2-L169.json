@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "registro formal",
+"wrong": "I can’t make it, I got stuff on.",
+"right": "I shall be unable to attend owing to a prior commitment.",
+"why": "Português mantém o tom informal ao recusar; no registro profissional inglês pede fórmula formal."
+},
+"mcq": [
+{
+"q": "Formal “can’t make it”:",
+"opts": [
+"won’t make it",
+"shall be unable to attend",
+"can’t come"
+],
+"ans": 1,
+"why": "Formal."
+},
+{
+"q": "Formal “got stuff on”:",
+"opts": [
+"busy stuff",
+"got things",
+"owing to a prior commitment"
+],
+"ans": 2,
+"why": "Formal."
+},
+{
+"q": "Owing to is followed by…",
+"opts": [
+"a noun phrase",
+"a verb",
+"a clause"
+],
+"ans": 0,
+"why": "Sintagma nominal."
+},
+{
+"q": "Which is the most formal?",
+"opts": [
+"I won’t come.",
+"I can’t go.",
+"I shall be unable to attend."
+],
+"ans": 2,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "Owing the commitment, I cannot attend.",
+"right": "Owing to the commitment, I cannot attend.",
+"why": "to."
+},
+{
+"wrong": "I shall unable attend.",
+"right": "I shall be unable to attend.",
+"why": "be unable to."
+},
+{
+"wrong": "I shall be unable attend.",
+"right": "I shall be unable to attend.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Formalize: “I can’t make it.”",
+"answer": "I shall be unable to attend.",
+"why": ""
+},
+{
+"prompt": "Formalize: “I’ve got stuff on.”",
+"answer": "I have a prior commitment.",
+"why": ""
+},
+{
+"prompt": "Troque because por owing to: “Because of a prior commitment, I will miss it.”",
+"answer": "Owing to a prior commitment, I will miss it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tom",
+"wrong": "Cut off him politely but firmly: “I must to stop you there.”",
+"right": "Cut him off politely but firmly: “I must stop you there.”",
+"why": "Em português “interromper-o”; verbos frasais separáveis aceitam pronome no meio."
+},
+"mcq": [
+{
+"q": "Intervention formula:",
+"opts": [
+"I stop you there must.",
+"Must I stop.",
+"I must stop you there."
+],
+"ans": 2,
+"why": "must."
+},
+{
+"q": "Imperative + adverb:",
+"opts": [
+"Speaking clearly.",
+"You clearly speak.",
+"Speak clearly."
+],
+"ans": 2,
+"why": "Imperativo."
+},
+{
+"q": "Tone is…",
+"opts": [
+"rude",
+"silent",
+"polite but firm"
+],
+"ans": 2,
+"why": "Tom."
+},
+{
+"q": "Phrasal:",
+"opts": [
+"cut him off",
+"cut to him off",
+"cut off him"
+],
+"ans": 0,
+"why": "Pronome no meio."
+}
+],
+"fix": [
+{
+"wrong": "Cut off him.",
+"right": "Cut him off.",
+"why": "Pronome no meio."
+},
+{
+"wrong": "I must to stop you.",
+"right": "I must stop you.",
+"why": "Sem to."
+},
+{
+"wrong": "Speak clear.",
+"right": "Speak clearly.",
+"why": "Advérbio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com pronome: “Cut off the speaker.”",
+"answer": "Cut him off.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Cut him off.”",
+"answer": "Don’t cut him off.",
+"why": ""
+},
+{
+"prompt": "Com advérbio: “Speak with clarity.”",
+"answer": "Speak clearly.",
+"why": ""
+}
+]
+}

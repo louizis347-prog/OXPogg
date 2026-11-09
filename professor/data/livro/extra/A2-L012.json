@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "didn't + verbo base",
+"wrong": "I didn't went to school.",
+"right": "I didn't go to school.",
+"why": "Em português o passado aparece em 'não fui'; o aluno mantém o passado depois de didn't, mas o didn't já carrega o passado."
+},
+"mcq": [
+{
+"q": "She ___ call me.",
+"opts": [
+"wasn't",
+"didn't",
+"don't"
+],
+"ans": 1,
+"why": "didn't."
+},
+{
+"q": "I didn't ___ the film.",
+"opts": [
+"like",
+"liked",
+"liking"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "Negativa de “He ate”:",
+"opts": [
+"He didn't ate.",
+"He didn't eat.",
+"He not ate."
+],
+"ans": 1,
+"why": "didn't eat."
+},
+{
+"q": "Which is correct? (Past Simple (negative): introduction)",
+"opts": [
+"We didn't see it.",
+"We didn't saw it.",
+"We no see it."
+],
+"ans": 0,
+"why": "didn't + base."
+}
+],
+"fix": [
+{
+"wrong": "He didn't called.",
+"right": "He didn't call.",
+"why": "base."
+},
+{
+"wrong": "I no watched TV.",
+"right": "I didn't watch TV.",
+"why": "didn't."
+},
+{
+"wrong": "She didn't went.",
+"right": "She didn't go.",
+"why": "base."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “I saw him.”",
+"answer": "I didn't see him.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She called.”",
+"answer": "She didn't call.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We ate.”",
+"answer": "We didn't eat.",
+"why": ""
+}
+]
+}

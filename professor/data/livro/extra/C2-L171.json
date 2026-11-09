@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estrutura condicional",
+"wrong": "If a theory would be compatible with everything, it would explain nothing.",
+"right": "Were a theory compatible with everything, it would explain nothing.",
+"why": "Português usa “se fosse” no subjuntivo; em inglês formal a inversão Were + sujeito + to dispensa if, e would não entra após if."
+},
+"mcq": [
+{
+"q": "Formal unreal present:",
+"opts": [
+"A rule were absolute, binds.",
+"If a rule would be absolute, it binds us.",
+"Were a rule absolute, it would bind us."
+],
+"ans": 2,
+"why": "Were + sujeito."
+},
+{
+"q": "Unreal past, formal:",
+"opts": [
+"If had she known",
+"Had she known, she would have left.",
+"Had she knew, she left."
+],
+"ans": 1,
+"why": "Had + particípio."
+},
+{
+"q": "Were it to rain means…",
+"opts": [
+"because it rained",
+"when it rains",
+"if it rained"
+],
+"ans": 2,
+"why": "Hipótese."
+},
+{
+"q": "After “Had she known”, the result uses…",
+"opts": [
+"will",
+"would + base",
+"would have + particípio"
+],
+"ans": 2,
+"why": "would have."
+}
+],
+"fix": [
+{
+"wrong": "Were a rule to be absolute, it bind us.",
+"right": "Were a rule absolute, it would bind us.",
+"why": "would + base."
+},
+{
+"wrong": "Had I know, I would have called.",
+"right": "Had I known, I would have called.",
+"why": "Particípio."
+},
+{
+"wrong": "If were he honest, he would speak.",
+"right": "Were he honest, he would speak.",
+"why": "Sem if."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If a rule were absolute, it would bind us.”",
+"answer": "Were a rule absolute, it would bind us.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If she had known, she would have left.”",
+"answer": "Had she known, she would have left.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Were he honest, he would speak.”",
+"answer": "Were he not honest, he would not speak.",
+"why": ""
+}
+]
+}

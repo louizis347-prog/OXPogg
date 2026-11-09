@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Fences prevent cows to escape.",
+"right": "Fences prevent cows from escaping.",
+"why": "Em português “impedem as vacas de fugir”; o brasileiro usa to. Prevent + objeto + from + -ing."
+},
+"mcq": [
+{
+"q": "Fog stopped the plane **___** landing.",
+"opts": [
+"for",
+"to",
+"from"
+],
+"ans": 2,
+"why": "From."
+},
+{
+"q": "Strong walls keep water **___** entering.",
+"opts": [
+"to",
+"of",
+"from"
+],
+"ans": 2,
+"why": "From."
+},
+{
+"q": "Prevent costuma significar:",
+"opts": [
+"impedir",
+"presentear",
+"prever"
+],
+"ans": 0,
+"why": "Impedir; “prever” é foresee."
+},
+{
+"q": "Qual frase está correta?",
+"opts": [
+"The lock prevents thieves enter.",
+"The lock prevents thieves of entering.",
+"The lock prevents thieves from entering."
+],
+"ans": 2,
+"why": "From + -ing."
+}
+],
+"fix": [
+{
+"wrong": "A helmet stops injuries to happen.",
+"right": "A helmet stops injuries from happening.",
+"why": "From + -ing."
+},
+{
+"wrong": "Snow prevented the trucks for moving.",
+"right": "Snow prevented the trucks from moving.",
+"why": "From."
+},
+{
+"wrong": "Nothing can prevent us to win.",
+"right": "Nothing can prevent us from winning.",
+"why": "From + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Fences prevent cows. They escape.” (from)",
+"answer": "Fences prevent cows from escaping.",
+"why": ""
+},
+{
+"prompt": "Passado: “Fog stops the plane from landing.”",
+"answer": "Fog stopped the plane from landing.",
+"why": ""
+},
+{
+"prompt": "Troque prevent por keep: “Walls prevent water from entering.”",
+"answer": "Walls keep water from entering.",
+"why": ""
+}
+]
+}

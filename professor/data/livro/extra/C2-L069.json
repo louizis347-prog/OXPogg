@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "If I can’t to say it in twelve words, I haven’t found it yet.",
+"right": "If I can’t say it in twelve words, I haven’t found it yet.",
+"why": "Português usa “poder dizer”; em inglês modal + base e if + presente."
+},
+"mcq": [
+{
+"q": "Rule conditional:",
+"opts": [
+"If I wouldn’t say it…",
+"If I can’t say it, I haven’t found it.",
+"If I not say it…"
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "Imperative:",
+"opts": [
+"To cut intro.",
+"Cut the intro.",
+"You cutting the intro."
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "Principle: “If X, Y” signals…",
+"opts": [
+"a rule",
+"a question",
+"a past event"
+],
+"ans": 0,
+"why": "Regra."
+},
+{
+"q": "Negative imperative:",
+"opts": [
+"No cut it.",
+"Don’t cut it.",
+"Not cut."
+],
+"ans": 1,
+"why": "Don’t."
+}
+],
+"fix": [
+{
+"wrong": "If you will not understand it, rewrite.",
+"right": "If you don’t understand it, rewrite it.",
+"why": "If + presente."
+},
+{
+"wrong": "Cuts the intro first.",
+"right": "Cut the intro first.",
+"why": "Imperativo."
+},
+{
+"wrong": "If I can’t say it clearly, I have not find it.",
+"right": "If I can’t say it clearly, I haven’t found it.",
+"why": "Present perfect."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva em negativo: “Cut the intro.”",
+"answer": "Don’t cut the intro.",
+"why": ""
+},
+{
+"prompt": "Reescreva com if: “I can’t say it, so I haven’t found it.”",
+"answer": "If I can’t say it, I haven’t found it.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “If a speaker can’t say it, he hasn’t found it.”",
+"answer": "If speakers can’t say it, they haven’t found it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If I would have known, I would help you now.",
+"right": "If I had known, I would help you now.",
+"why": "Revisão: 3º (had + part., would have + part.) e misto (had + part., would + base). O brasileiro usa would na if."
+},
+"mcq": [
+{
+"q": "If we had left earlier, we **___** the train.",
+"opts": [
+"had caught",
+"would have caught",
+"would catch"
+],
+"ans": 1,
+"why": "3º."
+},
+{
+"q": "If I had slept, I **___** awake now.",
+"opts": [
+"would be",
+"would have been",
+"had been"
+],
+"ans": 0,
+"why": "Misto."
+},
+{
+"q": "Qual é 3º condicional?",
+"opts": [
+"If I had known, I would have called.",
+"If I knew, I would call.",
+"If I know, I will call."
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Qual é misto?",
+"opts": [
+"If he trained, he’d be fit.",
+"If he trains, he’ll be fit.",
+"If he had trained, he would be fitter now."
+],
+"ans": 2,
+"why": "Passado → presente."
+}
+],
+"fix": [
+{
+"wrong": "If we would have left, we caught the train.",
+"right": "If we had left, we would have caught the train.",
+"why": "3º."
+},
+{
+"wrong": "If I had known, I helped you.",
+"right": "If I had known, I would have helped you.",
+"why": "Would have."
+},
+{
+"wrong": "If she had trained, she will be fit now.",
+"right": "If she had trained, she would be fit now.",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o 3º: “If I know, I call.”",
+"answer": "If I had known, I would have called.",
+"why": ""
+},
+{
+"prompt": "Misto: “If he trained, he is fitter.” (had)",
+"answer": "If he had trained, he would be fitter.",
+"why": ""
+},
+{
+"prompt": "Negativa: “If I had known, I would have called.” (wouldn’t)",
+"answer": "If I had known, I wouldn’t have called.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "than e comparativo",
+"wrong": "She is more tall than me.",
+"right": "She is taller than me.",
+"why": "Em português 'mais alto' usa sempre 'mais'; em inglês adjetivos curtos usam -er (taller) e não more."
+},
+"mcq": [
+{
+"q": "He is ___ than me.",
+"opts": [
+"tallest",
+"taller",
+"more tall"
+],
+"ans": 1,
+"why": "-er."
+},
+{
+"q": "This book is ___ than that.",
+"opts": [
+"interestinger",
+"more interesting",
+"most interesting"
+],
+"ans": 1,
+"why": "adj. longo."
+},
+{
+"q": "My house is ___ than yours.",
+"opts": [
+"more big",
+"biggest",
+"bigger"
+],
+"ans": 2,
+"why": "dobra g."
+},
+{
+"q": "Usamos ___ para comparar:",
+"opts": [
+"than",
+"that",
+"then"
+],
+"ans": 0,
+"why": "than."
+}
+],
+"fix": [
+{
+"wrong": "She is more young than me.",
+"right": "She is younger than me.",
+"why": "-er."
+},
+{
+"wrong": "It is more big than that.",
+"right": "It is bigger than that.",
+"why": "dobra."
+},
+{
+"wrong": "He is taller that me.",
+"right": "He is taller than me.",
+"why": "than."
+}
+],
+"rewrite": [
+{
+"prompt": "Comparativo: “He is tall. (than me)”",
+"answer": "He is taller than me.",
+"why": ""
+},
+{
+"prompt": "Comparativo: “This is cheap. (than that)”",
+"answer": "This is cheaper than that.",
+"why": ""
+},
+{
+"prompt": "Comparativo: “It is big. (than mine)”",
+"answer": "It is bigger than mine.",
+"why": ""
+}
+]
+}

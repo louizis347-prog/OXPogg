@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "contraste de aspecto",
+"wrong": "By June we will have been signing the deal.",
+"right": "By June we will have signed the deal.",
+"why": "Em português “estaremos assinando” e “teremos assinado” se confundem. Ação concluída = will have + pp; duração = will have been + -ing."
+},
+"mcq": [
+{
+"q": "“By June we ___ the deal.” (done)",
+"opts": [
+"will have signed",
+"will have been signing",
+"will be sign"
+],
+"ans": 0,
+"why": "Concluída."
+},
+{
+"q": "“By June we ___ for a year.” (duration)",
+"opts": [
+"will have negotiated",
+"will have been negotiating",
+"negotiate"
+],
+"ans": 1,
+"why": "Duração."
+},
+{
+"q": "“At noon we ___ in the round.” (in progress)",
+"opts": [
+"will have negotiating",
+"negotiated",
+"will be negotiating"
+],
+"ans": 2,
+"why": "Futuro contínuo."
+},
+{
+"q": "Which emphasizes **duration**?",
+"opts": [
+"will have been + -ing",
+"will have + pp",
+"will + base"
+],
+"ans": 0,
+"why": "Duração."
+}
+],
+"fix": [
+{
+"wrong": "By June we will have been signed the deal.",
+"right": "By June we will have signed the deal.",
+"why": "Concluída."
+},
+{
+"wrong": "By May we will have negotiating for a year.",
+"right": "By May we will have been negotiating for a year.",
+"why": "been."
+},
+{
+"wrong": "By noon we will have been to negotiate.",
+"right": "By noon we will have been negotiating.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com ação concluída: “By June we will have been signing the deal.” (completed)",
+"answer": "By June we will have signed the deal.",
+"why": ""
+},
+{
+"prompt": "Reescreva com duração: “By June we will have negotiated for a year.”",
+"answer": "By June we will have been negotiating for a year.",
+"why": ""
+},
+{
+"prompt": "Reescreva no futuro contínuo: “At noon we negotiate.”",
+"answer": "At noon we will be negotiating.",
+"why": ""
+}
+]
+}

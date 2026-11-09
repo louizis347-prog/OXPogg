@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The chair praised to its prose, adding that the book earn its pace.",
+"right": "The chair praised its prose, adding that the book earns its pace.",
+"why": "Em português “elogiou a prosa” é direto, mas o brasileiro pode inserir to; praise é transitivo."
+},
+"mcq": [
+{
+"q": "Which sentence praises correctly?",
+"opts": [
+"The chair praised of its prose.",
+"The chair praised its prose.",
+"The chair praised to its prose."
+],
+"ans": 1,
+"why": "Transitivo."
+},
+{
+"q": "Add information:",
+"opts": [
+"…add that.",
+"…adding that the book earns its pace.",
+"…adding the book earns pace of."
+],
+"ans": 1,
+"why": "adding that."
+},
+{
+"q": "-ing clause after a comma shows…",
+"opts": [
+"a question",
+"a further point",
+"a past event"
+],
+"ans": 1,
+"why": "Acréscimo."
+},
+{
+"q": "Adding that = …",
+"opts": [
+"and said also that",
+"and asked",
+"and denied"
+],
+"ans": 0,
+"why": "Acrescentou."
+}
+],
+"fix": [
+{
+"wrong": "The chair praised to the prose.",
+"right": "The chair praised the prose.",
+"why": "Sem to."
+},
+{
+"wrong": "She praised it, adding the book is good.",
+"right": "She praised it, adding that the book was good.",
+"why": "that."
+},
+{
+"wrong": "He praise the pace.",
+"right": "He praised the pace.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com adding that: “The chair praised the prose. It also said the pace works.”",
+"answer": "The chair praised the prose, adding that the pace works.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The chair praised its prose.”",
+"answer": "Its prose was praised by the chair.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She praised the pace.”",
+"answer": "She did not praise the pace.",
+"why": ""
+}
+]
+}

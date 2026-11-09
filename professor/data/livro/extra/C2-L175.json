@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "For all of its austerity, it is moving.",
+"right": "For all its austerity, it is moving.",
+"why": "Português “apesar de toda a sua austeridade”; for all não leva of antes do possessivo."
+},
+"mcq": [
+{
+"q": "Which sentence concedes a point about austerity?",
+"opts": [
+"For all of its austerity it moving.",
+"For all austerity moving.",
+"For all its austerity, it is moving."
+],
+"ans": 2,
+"why": "For all its."
+},
+{
+"q": "Admittedly is followed by…",
+"opts": [
+"a clause",
+"a noun only",
+"a verb only"
+],
+"ans": 0,
+"why": "Oração."
+},
+{
+"q": "Admittedly, the pacing drags means…",
+"opts": [
+"it never drags",
+"it speeds",
+"I concede it drags"
+],
+"ans": 2,
+"why": "Concessão."
+},
+{
+"q": "For all = …",
+"opts": [
+"after",
+"despite",
+"because of"
+],
+"ans": 1,
+"why": "Apesar de."
+}
+],
+"fix": [
+{
+"wrong": "For all of its length, it is gripping.",
+"right": "For all its length, it is gripping.",
+"why": "Sem of."
+},
+{
+"wrong": "Admittedly the pacing drag.",
+"right": "Admittedly, the pacing drags.",
+"why": "-s."
+},
+{
+"wrong": "Admittedly, the film is austere, however moving.",
+"right": "Admittedly, the film is austere. Yet it is moving.",
+"why": "Conector."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com For all: “Although it is austere, it is moving.”",
+"answer": "For all its austerity, it is moving.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Admittedly: “I concede the pacing drags.”",
+"answer": "Admittedly, the pacing drags.",
+"why": ""
+},
+{
+"prompt": "Passado: “Admittedly, the pacing drags.”",
+"answer": "Admittedly, the pacing dragged.",
+"why": ""
+}
+]
+}

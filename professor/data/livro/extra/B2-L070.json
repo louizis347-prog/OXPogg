@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If only I have a better memory!",
+"right": "If only I had a better memory!",
+"why": "Avaliação da unidade 4: wish/if only + passado ou had + part.; must/have to; suggest/recommend."
+},
+"mcq": [
+{
+"q": "If only I **___** a better memory!",
+"opts": [
+"had",
+"would have",
+"have"
+],
+"ans": 0,
+"why": "Past."
+},
+{
+"q": "I wish I **___** gone to the party.",
+"opts": [
+"had",
+"have",
+"would"
+],
+"ans": 0,
+"why": "Had gone."
+},
+{
+"q": "Employees **___** wear helmets. (regra)",
+"opts": [
+"are required to",
+"are required",
+"must to"
+],
+"ans": 0,
+"why": "Be required to."
+},
+{
+"q": "Ela recomenda esperar:",
+"opts": [
+"She recommends to wait.",
+"She recommends wait.",
+"She recommends waiting."
+],
+"ans": 2,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I wish I had went to the party.",
+"right": "I wish I had gone to the party.",
+"why": "Particípio."
+},
+{
+"wrong": "Employees required wear helmets.",
+"right": "Employees are required to wear helmets.",
+"why": "Be required to."
+},
+{
+"wrong": "She suggests to wait.",
+"right": "She suggests waiting.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I don’t have a good memory.” (If only…)",
+"answer": "If only I had a good memory!",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I didn’t go.” (I wish…)",
+"answer": "I wish I had gone.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I didn’t study.” → “If only I … (study)”, passado",
+"answer": "If only I had studied!",
+"why": ""
+}
+]
+}

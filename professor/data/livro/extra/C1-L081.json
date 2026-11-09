@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "silêncio / nouns",
+"wrong": "Little research examine silence.",
+"right": "Little research examines silence.",
+"why": "Research é incontável; em português “pesquisas” é plural. Em inglês, verbo no singular e sem -s em research."
+},
+"mcq": [
+{
+"q": "Little research ___ silence.",
+"opts": [
+"examining",
+"examines",
+"examine"
+],
+"ans": 1,
+"why": "Singular."
+},
+{
+"q": "Background answers…",
+"opts": [
+"who paid",
+"the result",
+"why it matters"
+],
+"ans": 2,
+"why": "Por quê."
+},
+{
+"q": "We ___ four cultures.",
+"opts": [
+"analyzed",
+"analyzing",
+"analyze to"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Research show…",
+"Researches show…",
+"Research shows…"
+],
+"ans": 1,
+"why": "Incontável."
+}
+],
+"fix": [
+{
+"wrong": "Researches show silence matters.",
+"right": "Research shows silence matters.",
+"why": "Incontável."
+},
+{
+"wrong": "We analyze four cultures last year.",
+"right": "We analyzed four cultures last year.",
+"why": "Passado."
+},
+{
+"wrong": "Little research examine it.",
+"right": "Little research examines it.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “We analyze four cultures.”",
+"answer": "We analyzed four cultures.",
+"why": ""
+},
+{
+"prompt": "Singular: “Researches show this.”",
+"answer": "Research shows this.",
+"why": ""
+},
+{
+"prompt": "Use little: “Not much research examines silence.”",
+"answer": "Little research examines silence.",
+"why": ""
+}
+]
+}

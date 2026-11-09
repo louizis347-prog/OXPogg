@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "depend on",
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "\"Depende de\" vira depends of. Em inglês, depend on."
+},
+"mcq": [
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rose sharply.",
+"Sales rised sharply."
+],
+"ans": 1,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"of",
+"on",
+"in"
+],
+"ans": 2,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However, it works.",
+"However; it works."
+],
+"ans": 1,
+"why": "However, com vírgula."
+}
+],
+"fix": [
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+},
+{
+"wrong": "It is a problem very serious.",
+"right": "It is a very serious problem.",
+"why": "ordem."
+},
+{
+"wrong": "Although it is cheap, but it is poor.",
+"right": "Although it is cheap, it is poor.",
+"why": "sem but."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The graph shows a fall.”",
+"answer": "The graph showed a fall.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The study shows a link.”",
+"answer": "The study showed a link.",
+"why": ""
+}
+]
+}

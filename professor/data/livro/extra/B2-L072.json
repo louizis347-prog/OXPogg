@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Scientists have determined what the plant dies if it gets too hot.",
+"right": "Scientists have determined that the plant dies if it gets too hot.",
+"why": "Em português “determinaram que”, e o brasileiro usa what. Além disso: condicional zero (if + presente, presente) para fatos científicos."
+},
+"mcq": [
+{
+"q": "Scientists have determined **___** the plant needs water.",
+"opts": [
+"to",
+"what",
+"that"
+],
+"ans": 2,
+"why": "That."
+},
+{
+"q": "If the plant **___** too hot, it dies.",
+"opts": [
+"got",
+"gets",
+"will get"
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "Causa:",
+"opts": [
+"Because of the heat, it died.",
+"Because the heat, it died.",
+"By the heat of, it died."
+],
+"ans": 0,
+"why": "Because of + substantivo."
+},
+{
+"q": "Particípio de determine:",
+"opts": [
+"determined",
+"determinated",
+"determine"
+],
+"ans": 0,
+"why": "-ed."
+}
+],
+"fix": [
+{
+"wrong": "Because the drought, crops failed.",
+"right": "Because of the drought, crops failed.",
+"why": "Because of."
+},
+{
+"wrong": "If it will get hot, the plant dies.",
+"right": "If it gets hot, the plant dies.",
+"why": "Presente."
+},
+{
+"wrong": "Researchers have determine the cause.",
+"right": "Researchers have determined the cause.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “… of the drought, the crops failed.”",
+"answer": "Because of the drought, the crops failed.",
+"why": ""
+},
+{
+"prompt": "Una: “It gets hot. The plant dies.” (If…)",
+"answer": "If it gets hot, the plant dies.",
+"why": ""
+},
+{
+"prompt": "Present perfect: “Scientists determine the cause.”",
+"answer": "Scientists have determined the cause.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "voz passiva",
+"wrong": "The photos have taken yesterday.",
+"right": "The photos were taken yesterday.",
+"why": "O português usa “foram tiradas” e o brasileiro esquece o auxiliar be ou o troca por have. Na passiva sempre há be + particípio."
+},
+"mcq": [
+{
+"q": "The story **___** updated an hour ago.",
+"opts": [
+"is",
+"was",
+"has"
+],
+"ans": 1,
+"why": "Passado + passiva: was + particípio."
+},
+{
+"q": "The article **___** published next week.",
+"opts": [
+"will be",
+"is being",
+"will"
+],
+"ans": 0,
+"why": "Futuro passivo: will be + particípio."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"The report must be checked.",
+"The report must been checked.",
+"The report must checked."
+],
+"ans": 0,
+"why": "Modal + be + particípio."
+},
+{
+"q": "The flood photo has been **___**.",
+"opts": [
+"take",
+"taken",
+"took"
+],
+"ans": 1,
+"why": "Particípio de take = taken."
+}
+],
+"fix": [
+{
+"wrong": "The newsroom team informed by email yesterday.",
+"right": "The newsroom team was informed by email yesterday.",
+"why": "Passiva exige be + particípio."
+},
+{
+"wrong": "The story has update.",
+"right": "The story has been updated.",
+"why": "Present perfect passivo: has been + particípio."
+},
+{
+"wrong": "The editor’s note will published tomorrow.",
+"right": "The editor’s note will be published tomorrow.",
+"why": "Falta be depois de will."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They took the photo.”",
+"answer": "The photo was taken.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva no futuro: “They will publish the story.”",
+"answer": "The story will be published.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva (present perfect): “They have updated the page.”",
+"answer": "The page has been updated.",
+"why": ""
+}
+]
+}

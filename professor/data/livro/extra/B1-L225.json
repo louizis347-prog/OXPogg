@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "It’s no use to cry over spilled milk.",
+"right": "It’s no use crying over spilled milk.",
+"why": "Worth e no use pedem -ing; em português seria infinitivo (“não adianta chorar”, mas muitos dizem “de chorar”)."
+},
+"mcq": [
+{
+"q": "It’s no use **___** about the exam.",
+"opts": [
+"worry",
+"to worry",
+"worrying"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "The class was **___** boring that I left.",
+"opts": [
+"too",
+"so",
+"such"
+],
+"ans": 1,
+"why": "So + adj."
+},
+{
+"q": "It was **___** an awful movie.",
+"opts": [
+"so",
+"too",
+"such"
+],
+"ans": 2,
+"why": "Such an."
+},
+{
+"q": "Max is **___** young to vote.",
+"opts": [
+"such",
+"too",
+"so"
+],
+"ans": 1,
+"why": "Too + adj."
+}
+],
+"fix": [
+{
+"wrong": "Lia is not enough tall for the ride.",
+"right": "Lia is not tall enough for the ride.",
+"why": "Enough depois do adjetivo."
+},
+{
+"wrong": "It was so awful movie.",
+"right": "It was such an awful movie.",
+"why": "Such an."
+},
+{
+"wrong": "It’s worth to repeat the test.",
+"right": "It’s worth repeating the test.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com so… that: “The soup was hot. I couldn’t eat it.”",
+"answer": "The soup was so hot that I couldn’t eat it.",
+"why": ""
+},
+{
+"prompt": "Use too… to: “The box is very heavy. I can’t lift it.”",
+"answer": "The box is too heavy to lift.",
+"why": ""
+},
+{
+"prompt": "Use enough: “The lake is warm. We can swim.” (warm enough)",
+"answer": "The lake is warm enough to swim in.",
+"why": ""
+}
+]
+}

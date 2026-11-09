@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "poema e inversão",
+"wrong": "The school bell rings loudly, the children run happy.",
+"right": "The school bell rings loudly, and the children run happily.",
+"why": "Em português o adjetivo 'feliz' pode servir de advérbio; em inglês, o advérbio pede -ly (happily)."
+},
+"mcq": [
+{
+"q": "The poem is ___ beautiful.",
+"opts": [
+"very",
+"much",
+"too much"
+],
+"ans": 0,
+"why": "very."
+},
+{
+"q": "She read it ___ .",
+"opts": [
+"slowing",
+"slowly",
+"slow"
+],
+"ans": 1,
+"why": "advérbio."
+},
+{
+"q": "A poem has:",
+"opts": [
+"lines",
+"pieces of lines",
+"chapter"
+],
+"ans": 0,
+"why": "lines."
+},
+{
+"q": "Rhyme = ___ .",
+"opts": [
+"rima",
+"ritmo",
+"verso"
+],
+"ans": 0,
+"why": "rima."
+}
+],
+"fix": [
+{
+"wrong": "She sang beautiful.",
+"right": "She sang beautifully.",
+"why": "advérbio."
+},
+{
+"wrong": "He read the poem quiet.",
+"right": "He read the poem quietly.",
+"why": "advérbio."
+},
+{
+"wrong": "The poem makes me happily.",
+"right": "The poem makes me happy.",
+"why": "adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Adjetivo → advérbio: “She is quick.” → She runs ___",
+"answer": "She runs quickly.",
+"why": ""
+},
+{
+"prompt": "Adjetivo → advérbio: “He is soft.” → He speaks ___",
+"answer": "He speaks softly.",
+"why": ""
+},
+{
+"prompt": "Corrija: “It makes me sadly.”",
+"answer": "It makes me sad.",
+"why": ""
+}
+]
+}

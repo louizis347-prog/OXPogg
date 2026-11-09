@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "wh- + auxiliar",
+"wrong": "What you do?",
+"right": "What do you do?",
+"why": "Em português \"O que você faz?\" mantém a ordem do sujeito; em inglês wh- é seguida do auxiliar e depois do sujeito."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Where do you live?",
+"Where you live?",
+"Where live you?"
+],
+"ans": 0,
+"why": "Wh + do + S."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I go to the school. (estudar)",
+"I go to school.",
+"I go to a school."
+],
+"ans": 1,
+"why": "School sem artigo = estudar."
+},
+{
+"q": "How ___ water?",
+"opts": [
+"many",
+"few",
+"much"
+],
+"ans": 2,
+"why": "Much."
+},
+{
+"q": "It sounds ___.",
+"opts": [
+"great",
+"greatly",
+"greater"
+],
+"ans": 0,
+"why": "Adjetivo."
+}
+],
+"fix": [
+{
+"wrong": "Where you work?",
+"right": "Where do you work?",
+"why": "Do."
+},
+{
+"wrong": "I go to the work by bus.",
+"right": "I go to work by bus.",
+"why": "Work."
+},
+{
+"wrong": "She has long hairs.",
+"right": "She has long hair.",
+"why": "Hair incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Tire o artigo: “The money is important.” (geral)",
+"answer": "Money is important.",
+"why": ""
+},
+{
+"prompt": "Complete com much/many: “How ___ apples do you have?” (frase completa)",
+"answer": "How many apples do you have?",
+"why": ""
+},
+{
+"prompt": "Use feels: “I am tired.” (sensação)",
+"answer": "I feel tired.",
+"why": ""
+}
+]
+}

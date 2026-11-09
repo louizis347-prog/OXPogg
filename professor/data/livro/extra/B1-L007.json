@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "já/ainda",
+"wrong": "I didn't finish my homework already.",
+"right": "I haven't finished my homework yet.",
+"why": "Em português 'ainda não' e 'já' têm só uma tradução cada; em inglês yet fica em negativas/perguntas e already em afirmativas."
+},
+"mcq": [
+{
+"q": "I've ___ finished!",
+"opts": [
+"already",
+"yet",
+"ever"
+],
+"ans": 0,
+"why": "afirmativa."
+},
+{
+"q": "Have you called him ___ ?",
+"opts": [
+"yet",
+"already",
+"never"
+],
+"ans": 0,
+"why": "pergunta."
+},
+{
+"q": "She hasn't arrived ___ .",
+"opts": [
+"yet",
+"already",
+"ever"
+],
+"ans": 0,
+"why": "negativa."
+},
+{
+"q": "Qual frase fala de experiência?",
+"opts": [
+"I've seen that film twice.",
+"I saw it on Monday.",
+"I was seeing it."
+],
+"ans": 0,
+"why": "sem data."
+}
+],
+"fix": [
+{
+"wrong": "I have yet finished.",
+"right": "I have already finished.",
+"why": "already."
+},
+{
+"wrong": "Have you eaten already?",
+"right": "Have you eaten yet?",
+"why": "yet."
+},
+{
+"wrong": "He haven't left.",
+"right": "He hasn't left.",
+"why": "hasn't."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com yet: “She hasn't called me.”",
+"answer": "She hasn't called me yet.",
+"why": ""
+},
+{
+"prompt": "Reescreva com already: “They have left.”",
+"answer": "They have already left.",
+"why": ""
+},
+{
+"prompt": "Pergunta com ever: “He has sung on stage.”",
+"answer": "Has he ever sung on stage?",
+"why": ""
+}
+]
+}

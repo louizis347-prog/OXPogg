@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "calque",
+"wrong": "I recognize, but who left the lever there?",
+"right": "Granted, but who left the lever there?",
+"why": "Em português “reconheço, mas…”; em inglês, para conceder e contestar, a fórmula é Granted, but… (recognize soa estranho aqui)."
+},
+"mcq": [
+{
+"q": "Concede to contest:",
+"opts": [
+"I grant but who",
+"Granting, but",
+"Granted, but who left the lever?"
+],
+"ans": 2,
+"why": "Granted."
+},
+{
+"q": "Hedged claim:",
+"opts": [
+"One may to say",
+"One might say that…",
+"One say"
+],
+"ans": 1,
+"why": "One might say."
+},
+{
+"q": "Granted means…",
+"opts": [
+"I concede",
+"I ask",
+"I refuse"
+],
+"ans": 0,
+"why": "Concedo."
+},
+{
+"q": "One might say…",
+"opts": [
+"orders",
+"insists",
+"distances the writer"
+],
+"ans": 2,
+"why": "Distância."
+}
+],
+"fix": [
+{
+"wrong": "One might to say it is wrong.",
+"right": "One might say it is wrong.",
+"why": "Sem to."
+},
+{
+"wrong": "Granted but, who left it?",
+"right": "Granted, but who left it?",
+"why": "Vírgula."
+},
+{
+"wrong": "One says might it.",
+"right": "One might say it.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Granted: “I concede the point, but who left it?”",
+"answer": "Granted, but who left it?",
+"why": ""
+},
+{
+"prompt": "Reescreva com one might: “Some people may say it is wrong.”",
+"answer": "One might say it is wrong.",
+"why": ""
+},
+{
+"prompt": "Negativo: “One might say it is wrong.”",
+"answer": "One might not say it is wrong.",
+"why": ""
+}
+]
+}

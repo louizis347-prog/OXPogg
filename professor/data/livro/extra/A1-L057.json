@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo com lugares",
+"wrong": "I go to the school every day.",
+"right": "I go to school every day.",
+"why": "Em português usamos \"à escola\"; em inglês school, bed e work como atividade dispensam the."
+},
+"mcq": [
+{
+"q": "First mention:",
+"opts": [
+"I see the car.",
+"I see a car.",
+"I see car."
+],
+"ans": 1,
+"why": "A."
+},
+{
+"q": "Second mention:",
+"opts": [
+"A car is red.",
+"Car is red.",
+"The car is red."
+],
+"ans": 2,
+"why": "The."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Life is hard.",
+"The life is hard.",
+"A life is hard."
+],
+"ans": 0,
+"why": "Sem artigo."
+},
+{
+"q": "Second mention: I saw a movie. ___ movie was long.",
+"opts": [
+"A",
+"The",
+"—"
+],
+"ans": 1,
+"why": "Segunda menção: the."
+}
+],
+"fix": [
+{
+"wrong": "I go to the work by bus.",
+"right": "I go to work by bus.",
+"why": "Work."
+},
+{
+"wrong": "She likes the music.",
+"right": "She likes music.",
+"why": "Geral."
+},
+{
+"wrong": "I have dog. Dog is black.",
+"right": "I have a dog. The dog is black.",
+"why": "A, depois the."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete com a/the: “I have a pen. ___ pen is blue.”",
+"answer": "The pen is blue.",
+"why": "Escreva a frase."
+},
+{
+"prompt": "Corrija: “I go to the school at 8.”",
+"answer": "I go to school at 8.",
+"why": ""
+},
+{
+"prompt": "Corrija: “I eat the breakfast at 7.”",
+"answer": "I eat breakfast at 7.",
+"why": ""
+}
+]
+}

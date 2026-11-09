@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "deveria ter + particípio",
+"wrong": "We should to have called the client earlier.",
+"right": "We should have called the client earlier.",
+"why": "Em português dizemos \"deveria ter ligado\" e o brasileiro insere to por analogia com infinitivo. Em inglês, depois de should have vem direto o particípio, sem to."
+},
+"mcq": [
+{
+"q": "**shouldn't have** + particípio expressa...",
+"opts": [
+"obrigação no futuro",
+"habilidade no passado",
+"arrependimento: não era para ter feito"
+],
+"ans": 2,
+"why": "shouldn't have + particípio lamenta algo que foi feito."
+},
+{
+"q": "Qual indica proibição?",
+"opts": [
+"You mustn't park here.",
+"You don't have to park here.",
+"You needn't park here."
+],
+"ans": 0,
+"why": "mustn't = proibido."
+},
+{
+"q": "Complete: They recommend that every student **___** a copy.",
+"opts": [
+"keeps",
+"keep",
+"to keep"
+],
+"ans": 1,
+"why": "Forma base após recommend that."
+},
+{
+"q": "Complete: **The fact ___** prices rose worried everyone.",
+"opts": [
+"that",
+"of",
+"to"
+],
+"ans": 0,
+"why": "The fact that + oração."
+}
+],
+"fix": [
+{
+"wrong": "I shouldn't of said that.",
+"right": "I shouldn't have said that.",
+"why": "Of é erro de escrita por causa do som /əv/; a forma é have."
+},
+{
+"wrong": "She don't have to wear a uniform.",
+"right": "She doesn't have to wear a uniform.",
+"why": "Com she, use doesn't."
+},
+{
+"wrong": "They advise us to that apply early.",
+"right": "They advise that we apply early.",
+"why": "Escolha uma estrutura: advise that + sujeito + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com needn't: “We don't have to wait.”",
+"answer": "We needn't wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva com suggest that: “You should see a dentist.”",
+"answer": "I suggest that you see a dentist.",
+"why": ""
+},
+{
+"prompt": "Reescreva com that: “I have no evidence of his guilt.”",
+"answer": "I have no evidence that he is guilty.",
+"why": ""
+}
+]
+}

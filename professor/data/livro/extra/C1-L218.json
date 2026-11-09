@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be ausente",
+"wrong": "The error log should have checked by two people.",
+"right": "The error log should have been checked by two people.",
+"why": "Em português “deveria ter sido checado” tem duas partes; o aluno esquece o be. Em inglês, modal perfect passive = modal + have been + pp."
+},
+"mcq": [
+{
+"q": "“It should have ___ checked.”",
+"opts": [
+"be",
+"being",
+"been"
+],
+"ans": 2,
+"why": "have been."
+},
+{
+"q": "“Errors must ___ reported.”",
+"opts": [
+"be",
+"been",
+"being"
+],
+"ans": 0,
+"why": "modal + be."
+},
+{
+"q": "Active to passive: “They can test the fix.”",
+"opts": [
+"The fix can tested.",
+"The fix can be tested.",
+"The fix can testing."
+],
+"ans": 1,
+"why": "be + pp."
+},
+{
+"q": "Focus on the **action**, not the actor:",
+"opts": [
+"imperative",
+"question",
+"passive"
+],
+"ans": 2,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "Errors must reported to the team.",
+"right": "Errors must be reported to the team.",
+"why": "be."
+},
+{
+"wrong": "Someone should have check it.",
+"right": "Someone should have checked it.",
+"why": "pp."
+},
+{
+"wrong": "It should have being checked.",
+"right": "It should have been checked.",
+"why": "been."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Staff must report errors.”",
+"answer": "Errors must be reported.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Someone should have checked it.”",
+"answer": "It should have been checked.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They can test the fix.”",
+"answer": "The fix can be tested.",
+"why": ""
+}
+]
+}

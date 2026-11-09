@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares",
+"wrong": "I drinked juice.",
+"right": "I drank juice.",
+"why": "O aluno aplica -ed a todo verbo, como a regularidade do português; choose, drink, drive, eat são irregulares."
+},
+"mcq": [
+{
+"q": "Passado de **choose**:",
+"opts": [
+"choosen",
+"choosed",
+"chose"
+],
+"ans": 2,
+"why": "chose."
+},
+{
+"q": "Passado de **drive**:",
+"opts": [
+"drived",
+"drove",
+"driven"
+],
+"ans": 1,
+"why": "drove."
+},
+{
+"q": "Passado de **do**:",
+"opts": [
+"did",
+"doed",
+"done"
+],
+"ans": 0,
+"why": "did."
+},
+{
+"q": "Passado de **come**:",
+"opts": [
+"comed",
+"come",
+"came"
+],
+"ans": 2,
+"why": "came."
+}
+],
+"fix": [
+{
+"wrong": "He drived to work.",
+"right": "He drove to work.",
+"why": "drove."
+},
+{
+"wrong": "We choosed red.",
+"right": "We chose red.",
+"why": "chose."
+},
+{
+"wrong": "She doed it.",
+"right": "She did it.",
+"why": "did."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I drink water.”",
+"answer": "I drank water.",
+"why": ""
+},
+{
+"prompt": "Passado: “He drives fast.”",
+"answer": "He drove fast.",
+"why": ""
+},
+{
+"prompt": "Passado: “They choose a film.”",
+"answer": "They chose a film.",
+"why": ""
+}
+]
+}

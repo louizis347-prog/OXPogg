@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "causativa",
+"wrong": "I’m cutting my hair at the salon.",
+"right": "I’m getting my hair cut at the salon.",
+"why": "O brasileiro diz “estou cortando meu cabelo” mesmo quando outro corta. Em inglês, get/have + objeto + particípio."
+},
+"mcq": [
+{
+"q": "I had my nails **___**.",
+"opts": [
+"paint",
+"painting",
+"painted"
+],
+"ans": 2,
+"why": "Particípio."
+},
+{
+"q": "She’s getting her hair **___**.",
+"opts": [
+"cutting",
+"cuts",
+"cut"
+],
+"ans": 2,
+"why": "Particípio."
+},
+{
+"q": "Serviço:",
+"opts": [
+"I had my car washed.",
+"I had washed my car.",
+"I washed my car by."
+],
+"ans": 0,
+"why": "Estrutura."
+},
+{
+"q": "They got the door **___**.",
+"opts": [
+"fixed",
+"fixing",
+"fix"
+],
+"ans": 0,
+"why": "Particípio."
+}
+],
+"fix": [
+{
+"wrong": "I had my nails paint.",
+"right": "I had my nails painted.",
+"why": "Particípio."
+},
+{
+"wrong": "She is getting cut her hair.",
+"right": "She is getting her hair cut.",
+"why": "Ordem."
+},
+{
+"wrong": "I cut my hair at the salon yesterday.",
+"right": "I had my hair cut at the salon yesterday.",
+"why": "Outro cortou."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “A barber is cutting my hair.” (I’m getting…)",
+"answer": "I’m getting my hair cut.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Someone painted my nails.” (I had…)",
+"answer": "I had my nails painted.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I had my hair cut.”",
+"answer": "I didn’t have my hair cut.",
+"why": ""
+}
+]
+}

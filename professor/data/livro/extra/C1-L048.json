@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ênfase com it is",
+"wrong": "It is clear titles what attract readers.",
+"right": "It is clear titles that attract readers.",
+"why": "Por “o que”, o brasileiro usa what na clivada. Em inglês, é that (ou who para pessoas)."
+},
+"mcq": [
+{
+"q": "It is clear titles ___ attract readers.",
+"opts": [
+"that",
+"what",
+"whose"
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "It was a famous co-author ___ helped.",
+"opts": [
+"which",
+"who",
+"what"
+],
+"ans": 1,
+"why": "who."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It was last year what we met.",
+"Was last year that we met.",
+"It was last year that we met."
+],
+"ans": 2,
+"why": "It was…that."
+},
+{
+"q": "A cleft sentence begins with…",
+"opts": [
+"It is/was",
+"What",
+"Was"
+],
+"ans": 0,
+"why": "It is/was."
+}
+],
+"fix": [
+{
+"wrong": "It is clear titles what attract readers.",
+"right": "It is clear titles that attract readers.",
+"why": "that."
+},
+{
+"wrong": "Was a famous co-author who helped.",
+"right": "It was a famous co-author who helped.",
+"why": "it."
+},
+{
+"wrong": "It was a famous co-author which helped.",
+"right": "It was a famous co-author who helped.",
+"why": "who."
+}
+],
+"rewrite": [
+{
+"prompt": "Clivada: “Clear titles attract readers.”",
+"answer": "It is clear titles that attract readers.",
+"why": ""
+},
+{
+"prompt": "Clivada: “A famous co-author helped.”",
+"answer": "It was a famous co-author who helped.",
+"why": ""
+},
+{
+"prompt": "Clivada: “We met last year.”",
+"answer": "It was last year that we met.",
+"why": ""
+}
+]
+}

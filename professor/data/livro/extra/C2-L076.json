@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tom de ameaça",
+"wrong": "I disagree you, with respect.",
+"right": "With respect, I disagree with you.",
+"why": "Em português “discordo de você”; em inglês disagree with, e a fórmula With respect— abre a frase."
+},
+"mcq": [
+{
+"q": "Polite disagreement:",
+"opts": [
+"Without respect—",
+"With respect—",
+"In respect—"
+],
+"ans": 1,
+"why": "With respect."
+},
+{
+"q": "Time rule:",
+"opts": [
+"Your three minutes began.",
+"Your three minutes begin now.",
+"You three minutes now."
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "With respect can be…",
+"opts": [
+"a veiled threat",
+"a question",
+"a greeting"
+],
+"ans": 0,
+"why": "Pode ser ameaça."
+},
+{
+"q": "Disagree uses…",
+"opts": [
+"with",
+"to",
+"at"
+],
+"ans": 0,
+"why": "disagree with."
+}
+],
+"fix": [
+{
+"wrong": "I disagree you.",
+"right": "I disagree with you.",
+"why": "with."
+},
+{
+"wrong": "With respect I think wrong.",
+"right": "With respect, I think you are wrong.",
+"why": "Sujeito."
+},
+{
+"wrong": "Your three minutes begins now.",
+"right": "Your three minutes begin now.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com With respect: “I disagree with the Chair.”",
+"answer": "With respect, I disagree with the Chair.",
+"why": ""
+},
+{
+"prompt": "Plural: “Your minute begins now.”",
+"answer": "Your minutes begin now.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “I agree with you.”",
+"answer": "I don’t agree with you.",
+"why": ""
+}
+]
+}

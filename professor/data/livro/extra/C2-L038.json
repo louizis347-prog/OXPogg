@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "comodidades",
+"wrong": "The flat has many commodities, like a gym and a pool.",
+"right": "The flat has many amenities, like a gym and a pool.",
+"why": "“Comodidades” lembra commodities, mas esta palavra são mercadorias (como soja). As facilidades de um imóvel são amenities."
+},
+"mcq": [
+{
+"q": "“In need of modernization” means...",
+"opts": [
+"is modern",
+"is cheap",
+"needs renovation"
+],
+"ans": 2,
+"why": "Precisa de reforma."
+},
+{
+"q": "“Sold as seen” gives the buyer...",
+"opts": [
+"no guarantees",
+"a warranty",
+"a refund"
+],
+"ans": 0,
+"why": "Sem garantias."
+},
+{
+"q": "“Subject to contract” means...",
+"opts": [
+"final",
+"not yet binding",
+"free"
+],
+"ans": 1,
+"why": "Não vinculado."
+},
+{
+"q": "“Generous proportions” describes...",
+"opts": [
+"small rooms",
+"old rooms",
+"large rooms"
+],
+"ans": 2,
+"why": "Cômodos amplos."
+}
+],
+"fix": [
+{
+"wrong": "The guide price is of 300,000.",
+"right": "The guide price is 300,000.",
+"why": "Sem of."
+},
+{
+"wrong": "This period property have original features.",
+"right": "This period property has original features.",
+"why": "has."
+},
+{
+"wrong": "It is sold like seen.",
+"right": "It is sold as seen.",
+"why": "as."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in need of: “It needs modernization.”",
+"answer": "It is in need of modernization.",
+"why": ""
+},
+{
+"prompt": "Reescreva com generous: “The rooms are very large.”",
+"answer": "The rooms are of generous proportions.",
+"why": ""
+},
+{
+"prompt": "Reescreva com subject to contract: “No binding agreement yet.”",
+"answer": "The sale is subject to contract.",
+"why": ""
+}
+]
+}

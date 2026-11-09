@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make × take",
+"wrong": "I took a decision and did a list.",
+"right": "I made a decision and made a list.",
+"why": "O português “tomar uma decisão” leva o brasileiro a usar take. Em inglês, decisão, lista, plano e telefonema usam make; take é para prova, nota, pausa."
+},
+"mcq": [
+{
+"q": "Choose the right verb: ___ a decision.",
+"opts": [
+"take",
+"do",
+"make"
+],
+"ans": 2,
+"why": "make a decision."
+},
+{
+"q": "We ___ about the plan.",
+"opts": [
+"discussed about",
+"discussed",
+"discussed on"
+],
+"ans": 1,
+"why": "discuss sem preposição."
+},
+{
+"q": "She ___ waiting for hours.",
+"opts": [
+"is",
+"has been",
+"was being"
+],
+"ans": 1,
+"why": "has been."
+},
+{
+"q": "He ___ be the boss.",
+"opts": [
+"might",
+"might to",
+"mights"
+],
+"ans": 0,
+"why": "Modal + base."
+}
+],
+"fix": [
+{
+"wrong": "We discussed about the trip.",
+"right": "We discussed the trip.",
+"why": "discuss sem about."
+},
+{
+"wrong": "I took a call to my mom.",
+"right": "I made a call to my mom.",
+"why": "make a call."
+},
+{
+"wrong": "It might to rain.",
+"right": "It might rain.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem preposição: “We discussed about prices.”",
+"answer": "We discussed prices.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I am reading since 8.”",
+"answer": "I have been reading since 8.",
+"why": ""
+},
+{
+"prompt": "Reescreva com might: “It is possible that he is late.”",
+"answer": "He might be late.",
+"why": ""
+}
+]
+}

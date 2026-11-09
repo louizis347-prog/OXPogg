@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so/such",
+"wrong": "She is so irritable what relationships suffer.",
+"right": "She is so irritable that relationships suffer.",
+"why": "Português “tão irritada que”; o brasileiro troca por what. Em inglês so… that / such a… that."
+},
+"mcq": [
+{
+"q": "so tired **___** I slept:",
+"opts": [
+"than",
+"what",
+"that"
+],
+"ans": 2,
+"why": "That."
+},
+{
+"q": "such a long day **___** I slept:",
+"opts": [
+"what",
+"that",
+"than"
+],
+"ans": 1,
+"why": "That."
+},
+{
+"q": "He is **___** irritable that…",
+"opts": [
+"such",
+"such an",
+"so"
+],
+"ans": 2,
+"why": "Adj."
+},
+{
+"q": "It was **___** an awful day that…",
+"opts": [
+"so",
+"such",
+"too"
+],
+"ans": 1,
+"why": "Such an."
+}
+],
+"fix": [
+{
+"wrong": "It was so a bad day that I cried.",
+"right": "It was such a bad day that I cried.",
+"why": "Such a."
+},
+{
+"wrong": "I was so tired what I slept.",
+"right": "I was so tired that I slept.",
+"why": "That."
+},
+{
+"wrong": "She is such irritable that we left.",
+"right": "She is so irritable that we left.",
+"why": "So."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “I was tired. I slept.” (so… that)",
+"answer": "I was so tired that I slept.",
+"why": ""
+},
+{
+"prompt": "Una: “It was a bad day. I cried.” (such a… that)",
+"answer": "It was such a bad day that I cried.",
+"why": ""
+},
+{
+"prompt": "Una: “He is irritable. People leave.” (so… that)",
+"answer": "He is so irritable that people leave.",
+"why": ""
+}
+]
+}

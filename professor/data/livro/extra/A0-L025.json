@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have em vez de be",
+"wrong": "I have hungry.",
+"right": "I am hungry.",
+"why": "Em português \"tenho fome\" usa ter; em inglês estados usam be + adjetivo."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"They are tired.",
+"They tired.",
+"They have tired."
+],
+"ans": 0,
+"why": "Precisa do be."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I have cold.",
+"I am cold.",
+"I cold."
+],
+"ans": 1,
+"why": "Cold = adjetivo: am cold."
+},
+{
+"q": "Adjectives change in the plural?",
+"opts": [
+"Yes: reds apples",
+"Yes: red apple",
+"No: red apples"
+],
+"ans": 2,
+"why": "Adjetivo não varia em inglês."
+},
+{
+"q": "“Green” is…",
+"opts": [
+"a color",
+"a verb",
+"a number"
+],
+"ans": 0,
+"why": "Green = verde."
+}
+],
+"fix": [
+{
+"wrong": "I have thirsty.",
+"right": "I am thirsty.",
+"why": "Be + adjetivo."
+},
+{
+"wrong": "The apples are reds.",
+"right": "The apples are red.",
+"why": "Adjetivo não tem plural."
+},
+{
+"wrong": "She are tall.",
+"right": "She is tall.",
+"why": "She: is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com be: “I have sleepy.” (corrija)",
+"answer": "I am sleepy.",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “The car is red.”",
+"answer": "The cars are red.",
+"why": ""
+},
+{
+"prompt": "Negue: “The sky is gray.” (is not)",
+"answer": "The sky is not gray.",
+"why": ""
+}
+]
+}

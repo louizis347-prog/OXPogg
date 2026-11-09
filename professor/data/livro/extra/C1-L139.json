@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "misto A e B",
+"wrong": "If I would have studied, I am a pilot.",
+"right": "If I had studied, I would be a pilot.",
+"why": "O brasileiro mistura tempos. Misto A: if + had pp, would + base. Misto B: if + passado, would have + pp."
+},
+"mcq": [
+{
+"q": "Misto A: If I had studied, I ___ a pilot now.",
+"opts": [
+"would have been",
+"will be",
+"would be"
+],
+"ans": 2,
+"why": "would be."
+},
+{
+"q": "Misto B: If I were kind, I ___ helped.",
+"opts": [
+"would have",
+"would",
+"had"
+],
+"ans": 0,
+"why": "would have."
+},
+{
+"q": "Account for pode ser…",
+"opts": [
+"contar",
+"representar",
+"pagar"
+],
+"ans": 1,
+"why": "Representar."
+},
+{
+"q": "Coal accounts ___ 40%.",
+"opts": [
+"of",
+"by",
+"for"
+],
+"ans": 2,
+"why": "for."
+}
+],
+"fix": [
+{
+"wrong": "If I had studied, I would have a pilot now.",
+"right": "If I had studied, I would be a pilot now.",
+"why": "be."
+},
+{
+"wrong": "If I am kind, I would have helped.",
+"right": "If I were kind, I would have helped.",
+"why": "were."
+},
+{
+"wrong": "Coal accounts to 40%.",
+"right": "Coal accounts for 40%.",
+"why": "for."
+}
+],
+"rewrite": [
+{
+"prompt": "Misto A: “I didn’t study, so I am not a pilot.”",
+"answer": "If I had studied, I would be a pilot.",
+"why": ""
+},
+{
+"prompt": "Misto B: “I am not kind, so I didn’t help.”",
+"answer": "If I were kind, I would have helped.",
+"why": ""
+},
+{
+"prompt": "Use account for: “Oil is 30% of exports.”",
+"answer": "Oil accounts for 30% of exports.",
+"why": ""
+}
+]
+}

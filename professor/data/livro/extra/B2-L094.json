@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "deve ter + particípio",
+"wrong": "She must to have forgotten the meeting.",
+"right": "She must have forgotten the meeting.",
+"why": "Em português, \"deve ter esquecido\" tem a preposição-ligação implícita; o aluno copia com to. Em inglês é must have + particípio."
+},
+"mcq": [
+{
+"q": "Qual frase é uma dedução sobre o passado?",
+"opts": [
+"He must miss the train.",
+"He must have missed the train.",
+"He is missing the train."
+],
+"ans": 1,
+"why": "must have + particípio = certeza lógica sobre o passado."
+},
+{
+"q": "A dedução negativa de \"She was there\" é...",
+"opts": [
+"She mustn't have been there.",
+"She hasn't must be there.",
+"She can't have been there."
+],
+"ans": 2,
+"why": "Dedução negativa = can't have + particípio."
+},
+{
+"q": "**mustn't** expressa...",
+"opts": [
+"proibição",
+"dedução negativa no passado",
+"possibilidade passada"
+],
+"ans": 0,
+"why": "mustn't = proibido; para dedução negativa use can't have."
+},
+{
+"q": "A rua está molhada. Dedução:",
+"opts": [
+"It must rain.",
+"It must to rain.",
+"It must have rained."
+],
+"ans": 2,
+"why": "Evidência presente + causa passada = must have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "He must has left early.",
+"right": "He must have left early.",
+"why": "Depois de modal, use have, nunca has."
+},
+{
+"wrong": "She can't has seen us.",
+"right": "She can't have seen us.",
+"why": "Modais não mudam e pedem have + particípio."
+},
+{
+"wrong": "They must have went home.",
+"right": "They must have gone home.",
+"why": "Use o particípio gone."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como dedução certa: “She was sick.”",
+"answer": "She must have been sick.",
+"why": ""
+},
+{
+"prompt": "Reescreva como dedução negativa: “He took my keys.”",
+"answer": "He can't have taken my keys.",
+"why": ""
+},
+{
+"prompt": "Troque must por might: “They must have forgotten.”",
+"answer": "They might have forgotten.",
+"why": ""
+}
+]
+}

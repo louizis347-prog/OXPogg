@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inferir x copiar",
+"wrong": "The author says that closed boxes are bad.",
+"right": "The author implies that closed boxes show custom.",
+"why": "Inferir ≠ copiar. Em português dizemos “o autor diz”; em inglês, use implies/suggests para ideias não ditas explicitamente."
+},
+"mcq": [
+{
+"q": "What can be ___ from the text? (not stated)",
+"opts": [
+"inferred",
+"infered",
+"inferring of"
+],
+"ans": 0,
+"why": "inferred."
+},
+{
+"q": "The author ___ that custom matters.",
+"opts": [
+"implicits",
+"implies",
+"implicates"
+],
+"ans": 1,
+"why": "imply."
+},
+{
+"q": "To infer, combine…",
+"opts": [
+"your opinion",
+"the title only",
+"clues in the text"
+],
+"ans": 2,
+"why": "Pistas."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"gifts opened later",
+"gifts opened lately",
+"gifts open later"
+],
+"ans": 0,
+"why": "later = depois."
+}
+],
+"fix": [
+{
+"wrong": "The author imply that custom matters.",
+"right": "The author implies that custom matters.",
+"why": "-s."
+},
+{
+"wrong": "Gifts are opened lately.",
+"right": "Gifts are opened later.",
+"why": "later."
+},
+{
+"wrong": "It can be infered.",
+"right": "It can be inferred.",
+"why": "inferred."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “We can infer it.”",
+"answer": "It can be inferred.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “The author implies custom matters.” → negativa",
+"answer": "The author does not imply that custom matters.",
+"why": ""
+},
+{
+"prompt": "Use later: “Gifts are opened afterward.”",
+"answer": "Gifts are opened later.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Given that promises create trust, so it follows that we must keep them.",
+"right": "Given that promises create trust, it follows that we must keep them.",
+"why": "Português “dado que…, então”; em inglês a conclusão dispensa so."
+},
+"mcq": [
+{
+"q": "Which clause states the premise?",
+"opts": [
+"Given promises create trust to…",
+"Given that promises create trust, …",
+"Given of that…"
+],
+"ans": 1,
+"why": "Given that."
+},
+{
+"q": "Logical step:",
+"opts": [
+"It follows that…",
+"It follow that…",
+"It follows to…"
+],
+"ans": 0,
+"why": "It follows that."
+},
+{
+"q": "Hence / thus introduce…",
+"opts": [
+"a premise",
+"a question",
+"a conclusion"
+],
+"ans": 2,
+"why": "Conclusão."
+},
+{
+"q": "Given that = …",
+"opts": [
+"unless",
+"although",
+"since"
+],
+"ans": 2,
+"why": "Visto que."
+}
+],
+"fix": [
+{
+"wrong": "It follow that we must keep them.",
+"right": "It follows that we must keep them.",
+"why": "-s."
+},
+{
+"wrong": "Given that promises creates trust, …",
+"right": "Given that promises create trust, …",
+"why": "Plural."
+},
+{
+"wrong": "Thus, so we must keep them.",
+"right": "Thus, we must keep them.",
+"why": "Sem so."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com given that: “Since promises create trust, we keep them.”",
+"answer": "Given that promises create trust, we keep them.",
+"why": ""
+},
+{
+"prompt": "Reescreva com hence: “Therefore we must keep them.”",
+"answer": "Hence we must keep them.",
+"why": ""
+},
+{
+"prompt": "Passado: “It follows that we keep them.”",
+"answer": "It followed that we kept them.",
+"why": ""
+}
+]
+}

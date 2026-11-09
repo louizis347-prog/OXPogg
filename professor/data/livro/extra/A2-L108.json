@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "who/that/which",
+"wrong": "The woman who she called is my aunt.",
+"right": "The woman who called is my aunt.",
+"why": "O português repete o pronome na oração relativa; em inglês não. Também o aluno usa who para coisas."
+},
+"mcq": [
+{
+"q": "The bag ___ is on the chair is mine.",
+"opts": [
+"whose",
+"that",
+"who"
+],
+"ans": 1,
+"why": "coisa."
+},
+{
+"q": "The girl ___ won is my cousin.",
+"opts": [
+"who",
+"which",
+"where"
+],
+"ans": 0,
+"why": "pessoa."
+},
+{
+"q": "A place ___ you buy books:",
+"opts": [
+"who",
+"where",
+"which"
+],
+"ans": 1,
+"why": "lugar."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"The man which helped me is kind.",
+"The man who he helped me is kind.",
+"The man who helped me is kind."
+],
+"ans": 2,
+"why": "who."
+}
+],
+"fix": [
+{
+"wrong": "The man who he works here is kind.",
+"right": "The man who works here is kind.",
+"why": "sem he."
+},
+{
+"wrong": "The cup who is broken is mine.",
+"right": "The cup that is broken is mine.",
+"why": "that."
+},
+{
+"wrong": "A bakery is a place which we buy bread.",
+"right": "A bakery is a place where we buy bread.",
+"why": "where."
+}
+],
+"rewrite": [
+{
+"prompt": "Junte com who: “I met a girl. She speaks French.”",
+"answer": "I met a girl who speaks French.",
+"why": ""
+},
+{
+"prompt": "Junte com that: “I have a phone. It is new.”",
+"answer": "I have a phone that is new.",
+"why": ""
+},
+{
+"prompt": "Junte com where: “That is the park. We play there.”",
+"answer": "That is the park where we play.",
+"why": ""
+}
+]
+}

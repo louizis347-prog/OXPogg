@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "She encontrou an old paper, and he comes across like sincere.",
+"right": "She came across an old paper, and he comes across as sincere.",
+"why": "“Deparar-se com” e “parecer” são ambos come across, mas a impressão leva as, não like/ como adjetivo solto."
+},
+"mcq": [
+{
+"q": "Find by chance:",
+"opts": [
+"came out",
+"came across",
+"came over"
+],
+"ans": 1,
+"why": "come across."
+},
+{
+"q": "Give an impression:",
+"opts": [
+"comes across sincere to",
+"comes across as sincere",
+"comes across like sincere"
+],
+"ans": 1,
+"why": "as + adj."
+},
+{
+"q": "Come across a letter means…",
+"opts": [
+"find it by chance",
+"write it",
+"burn it"
+],
+"ans": 0,
+"why": "Encontrar."
+},
+{
+"q": "Past of come across:",
+"opts": [
+"came across",
+"comed across",
+"come across"
+],
+"ans": 0,
+"why": "came."
+}
+],
+"fix": [
+{
+"wrong": "He comes across like sincere.",
+"right": "He comes across as sincere.",
+"why": "as."
+},
+{
+"wrong": "She comed across a paper.",
+"right": "She came across a paper.",
+"why": "Irregular."
+},
+{
+"wrong": "I came across with an old note.",
+"right": "I came across an old note.",
+"why": "Sem with."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “She comes across an old paper.”",
+"answer": "She came across an old paper.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He seems sincere.” (come across)",
+"answer": "He comes across as sincere.",
+"why": ""
+},
+{
+"prompt": "Negativo: “He comes across as sincere.”",
+"answer": "He doesn’t come across as sincere.",
+"why": ""
+}
+]
+}

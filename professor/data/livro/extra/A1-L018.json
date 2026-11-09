@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "study → studies",
+"wrong": "He studys English.",
+"right": "He studies English.",
+"why": "Consoante + y vira ies; o brasileiro só acrescenta s."
+},
+"mcq": [
+{
+"q": "He ___ TV.",
+"opts": [
+"watchs",
+"watches",
+"watch"
+],
+"ans": 1,
+"why": "ch + es."
+},
+{
+"q": "She ___ a car.",
+"opts": [
+"haves",
+"have",
+"has"
+],
+"ans": 2,
+"why": "Irregular."
+},
+{
+"q": "It ___ well.",
+"opts": [
+"works",
+"work",
+"working"
+],
+"ans": 0,
+"why": "-s."
+},
+{
+"q": "He ___ to school.",
+"opts": [
+"gos",
+"goes",
+"go"
+],
+"ans": 1,
+"why": "Go + es."
+}
+],
+"fix": [
+{
+"wrong": "He studys math.",
+"right": "He studies math.",
+"why": "ies."
+},
+{
+"wrong": "Tom watch TV.",
+"right": "Tom watches TV.",
+"why": "es."
+},
+{
+"wrong": "She haves a dog.",
+"right": "She has a dog.",
+"why": "Has."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque para “He”: “I go home.”",
+"answer": "He goes home.",
+"why": ""
+},
+{
+"prompt": "Troque para “She”: “I study.”",
+"answer": "She studies.",
+"why": ""
+},
+{
+"prompt": "Troque para “Tom”: “I have a bike.”",
+"answer": "Tom has a bike.",
+"why": ""
+}
+]
+}

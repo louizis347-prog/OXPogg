@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "explain me",
+"wrong": "The speaker explained me the process.",
+"right": "The speaker explained the process to me.",
+"why": "Em português \"explicou-me\". Em inglês, explain pede to antes da pessoa."
+},
+"mcq": [
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales rose sharply.",
+"Sales raised sharply.",
+"Sales rised sharply."
+],
+"ans": 0,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"of",
+"in",
+"on"
+],
+"ans": 1,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However; it works.",
+"However, it works."
+],
+"ans": 2,
+"why": "However, com vírgula."
+},
+{
+"q": "Complete: It depends **___** the data.",
+"opts": [
+"of",
+"on",
+"from"
+],
+"ans": 1,
+"why": "depend on."
+}
+],
+"fix": [
+{
+"wrong": "The graph show a rise.",
+"right": "The graph shows a rise.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "Prices raised last year.",
+"right": "Prices rose last year.",
+"why": "rose."
+},
+{
+"wrong": "She discussed about the plan.",
+"right": "She discussed the plan.",
+"why": "Sem about."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in my opinion: “According to me, it is fair.”",
+"answer": "In my opinion, it is fair.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “Sales rise in May.”",
+"answer": "Sales rose in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com although: “It is cheap. It is poor.”",
+"answer": "Although it is cheap, it is poor.",
+"why": ""
+}
+]
+}

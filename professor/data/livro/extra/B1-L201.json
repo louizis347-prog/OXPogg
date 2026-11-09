@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gerúndio",
+"wrong": "I spend time to relax.",
+"right": "I spend time relaxing.",
+"why": "Português “gastar tempo para relaxar”. Em inglês spend/waste time + -ing."
+},
+"mcq": [
+{
+"q": "She wastes time **___** online.",
+"opts": [
+"to chat",
+"chat",
+"chatting"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "We spend time **___**.",
+"opts": [
+"to rest",
+"resting",
+"rest"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Waste time =",
+"opts": [
+"perder tempo",
+"ganhar tempo",
+"achar tempo"
+],
+"ans": 0,
+"why": "Perder."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I spent time reading.",
+"I spent time to read.",
+"I spent time read."
+],
+"ans": 0,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "He wastes time to play games.",
+"right": "He wastes time playing games.",
+"why": "-ing."
+},
+{
+"wrong": "I spend time in relax.",
+"right": "I spend time relaxing.",
+"why": "-ing."
+},
+{
+"wrong": "She spended time resting.",
+"right": "She spent time resting.",
+"why": "Passado: spent."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I relax.” (I spend time…)",
+"answer": "I spend time relaxing.",
+"why": ""
+},
+{
+"prompt": "Passado: “She wastes time chatting.”",
+"answer": "She wasted time chatting.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We spend time resting.”",
+"answer": "We don’t spend time resting.",
+"why": ""
+}
+]
+}

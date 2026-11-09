@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "auxiliar e paralelismo",
+"wrong": "Not only was late the report, but also incomplete.",
+"right": "Not only was the report late, but it was also incomplete.",
+"why": "Mantém-se a ordem do português. Em inglês, com be, inverta be + sujeito e mantenha paralelismo."
+},
+"mcq": [
+{
+"q": "Not only ___ the report late…",
+"opts": [
+"had",
+"was",
+"did"
+],
+"ans": 1,
+"why": "be: was."
+},
+{
+"q": "Which is parallel?",
+"opts": [
+"both fast and cheaply",
+"both fast and be cheap",
+"both fast and cheap"
+],
+"ans": 2,
+"why": "Adj + adj."
+},
+{
+"q": "Inversion after Never needs…",
+"opts": [
+"auxiliary before subject",
+"subject before auxiliary",
+"no auxiliary"
+],
+"ans": 0,
+"why": "Auxiliar antes."
+},
+{
+"q": "It is attributed ___ costs.",
+"opts": [
+"by",
+"to",
+"with"
+],
+"ans": 1,
+"why": "to."
+}
+],
+"fix": [
+{
+"wrong": "Never I had seen it.",
+"right": "Never had I seen it.",
+"why": "Inversão."
+},
+{
+"wrong": "Not only was late the report.",
+"right": "Not only was the report late.",
+"why": "be + sujeito."
+},
+{
+"wrong": "It is attributed with costs.",
+"right": "It is attributed to costs.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Never: “I had not seen it.”",
+"answer": "Never had I seen it.",
+"why": ""
+},
+{
+"prompt": "Comece com Not only: “The report was late and incomplete.”",
+"answer": "Not only was the report late, but it was also incomplete.",
+"why": ""
+},
+{
+"prompt": "Passiva: “They attribute it to costs.”",
+"answer": "It is attributed to costs.",
+"why": ""
+}
+]
+}

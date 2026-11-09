@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Aim / to",
+"wrong": "The aim is build mutual understanding.",
+"right": "The aim is to build mutual understanding.",
+"why": "O português diz “o objetivo é construir”, sem preposição. Em inglês, após The aim is, use to + base."
+},
+"mcq": [
+{
+"q": "The aim ___ to open a library.",
+"opts": [
+"are",
+"does",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "Activities answer…",
+"opts": [
+"what will be done",
+"why",
+"who paid"
+],
+"ans": 0,
+"why": "O que."
+},
+{
+"q": "Budget lists…",
+"opts": [
+"dates",
+"costs",
+"aims"
+],
+"ans": 1,
+"why": "Custos."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Students meeting will weekly.",
+"Students will to meet weekly.",
+"Students will meet weekly."
+],
+"ans": 2,
+"why": "will + base."
+}
+],
+"fix": [
+{
+"wrong": "The aim is open a clinic.",
+"right": "The aim is to open a clinic.",
+"why": "to."
+},
+{
+"wrong": "Students will to meet weekly.",
+"right": "Students will meet weekly.",
+"why": "will + base."
+},
+{
+"wrong": "The budget are small.",
+"right": "The budget is small.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “We want to open a clinic.” (The aim…)",
+"answer": "The aim is to open a clinic.",
+"why": ""
+},
+{
+"prompt": "Futuro: “Students meet weekly.”",
+"answer": "Students will meet weekly.",
+"why": ""
+},
+{
+"prompt": "Singular: “The costs are small.” (The budget…)",
+"answer": "The budget is small.",
+"why": ""
+}
+]
+}

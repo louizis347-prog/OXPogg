@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "this × that",
+"wrong": "(apontando para um livro na sua mão) That is my book.",
+"right": "This is my book.",
+"why": "Em português \"isto\" e \"isso\" nem sempre têm a mesma divisão; em inglês this = perto de você, that = longe."
+},
+"mcq": [
+{
+"q": "Near you: ___ is my pen.",
+"opts": [
+"This",
+"That",
+"These"
+],
+"ans": 0,
+"why": "Perto: this."
+},
+{
+"q": "Far from you: ___ is a bus.",
+"opts": [
+"This",
+"That",
+"Those"
+],
+"ans": 1,
+"why": "Longe: that."
+},
+{
+"q": "Plural near: ___ are my books.",
+"opts": [
+"This",
+"Those",
+"These"
+],
+"ans": 2,
+"why": "Plural perto: these."
+},
+{
+"q": "Plural far: ___ are birds.",
+"opts": [
+"Those",
+"That",
+"These"
+],
+"ans": 0,
+"why": "Plural longe: those."
+}
+],
+"fix": [
+{
+"wrong": "This are my keys.",
+"right": "These are my keys.",
+"why": "Plural: these."
+},
+{
+"wrong": "That is my shoes.",
+"right": "Those are my shoes.",
+"why": "Shoes é plural."
+},
+{
+"wrong": "These is my dog.",
+"right": "This is my dog.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Mude para plural: “This is a pen.”",
+"answer": "These are pens.",
+"why": ""
+},
+{
+"prompt": "Mude para plural: “That is a car.”",
+"answer": "Those are cars.",
+"why": ""
+},
+{
+"prompt": "Mude para singular: “These are books.”",
+"answer": "This is a book.",
+"why": ""
+}
+]
+}

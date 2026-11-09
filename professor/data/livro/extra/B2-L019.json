@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "Tomorrow at ten I present the plan.",
+"right": "Tomorrow at ten I will be presenting the plan.",
+"why": "Português usa presente ou futuro simples. O inglês usa will be + -ing para ação em curso em um momento futuro."
+},
+"mcq": [
+{
+"q": "At ten, I **___** presenting.",
+"opts": [
+"am be",
+"will",
+"will be"
+],
+"ans": 2,
+"why": "Will be."
+},
+{
+"q": "Negativa:",
+"opts": [
+"don’t be working",
+"won’t be working",
+"won’t working"
+],
+"ans": 1,
+"why": "Won’t be."
+},
+{
+"q": "Pergunta:",
+"opts": [
+"Are you will be presenting?",
+"Will you presenting?",
+"Will you be presenting?"
+],
+"ans": 2,
+"why": "Will you be."
+},
+{
+"q": "Forma:",
+"opts": [
+"will be + -ing",
+"be will + -ing",
+"will + -ing"
+],
+"ans": 0,
+"why": "Forma."
+}
+],
+"fix": [
+{
+"wrong": "I will presenting at ten.",
+"right": "I will be presenting at ten.",
+"why": "Be."
+},
+{
+"wrong": "She will be work then.",
+"right": "She will be working then.",
+"why": "-ing."
+},
+{
+"wrong": "They will be to arrive.",
+"right": "They will be arriving.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “At ten I present.” (will be)",
+"answer": "At ten I will be presenting.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She will be working.”",
+"answer": "She won’t be working.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You will be presenting.”",
+"answer": "Will you be presenting?",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "whose",
+"wrong": "This is the man which his car was stolen.",
+"right": "This is the man whose car was stolen.",
+"why": "Em português “cujo” é raro e usamos “que o carro dele”. Em inglês, whose já contém o possessivo: não repita his/her/its."
+},
+"mcq": [
+{
+"q": "“a book ___ author loves data”",
+"opts": [
+"that",
+"which",
+"whose"
+],
+"ans": 2,
+"why": "whose + substantivo."
+},
+{
+"q": "“people for ___ it is new”",
+"opts": [
+"whom",
+"who",
+"which"
+],
+"ans": 0,
+"why": "preposição + whom."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"tables, the results of them are clear",
+"tables, the results of which are clear",
+"tables, which results are clear"
+],
+"ans": 1,
+"why": "the + substantivo + of which."
+},
+{
+"q": "“He lost, ___ surprised everyone.”",
+"opts": [
+"that",
+"what",
+"which"
+],
+"ans": 2,
+"why": "which pode se referir à oração inteira."
+}
+],
+"fix": [
+{
+"wrong": "A chapter in that she dissects the headline.",
+"right": "A chapter in which she dissects the headline.",
+"why": "Preposição + which; that não segue preposição."
+},
+{
+"wrong": "The author whose her book is famous lives here.",
+"right": "The author whose book is famous lives here.",
+"why": "whose já é possessivo."
+},
+{
+"wrong": "People who for it is new need help.",
+"right": "People for whom it is new need help.",
+"why": "for whom."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com whose: “I know a writer. Her books sell well.”",
+"answer": "I know a writer whose books sell well.",
+"why": ""
+},
+{
+"prompt": "Una com in which: “This is the chapter. She dissects the figure in it.”",
+"answer": "This is the chapter in which she dissects the figure.",
+"why": ""
+},
+{
+"prompt": "Una com of which: “Here are tables. The results of the tables are clear.”",
+"answer": "Here are tables, the results of which are clear.",
+"why": ""
+}
+]
+}

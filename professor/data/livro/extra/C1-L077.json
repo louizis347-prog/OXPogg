@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "registro do e-mail",
+"wrong": "Dear Dr. Tanaka, I wanna ask for a meeting.",
+"right": "Dear Dr. Tanaka, I am writing to request a meeting.",
+"why": "Em português informal falamos como na conversa. Em e-mail formal em inglês, evite wanna/gonna e use I am writing to + base."
+},
+"mcq": [
+{
+"q": "A clear subject line:",
+"opts": [
+"Request for a meeting on 12 May",
+"Hi!!",
+"Urgent stuff"
+],
+"ans": 0,
+"why": "Assunto claro."
+},
+{
+"q": "I am writing ___ request a meeting.",
+"opts": [
+"in order of",
+"to",
+"for"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Formal closing:",
+"opts": [
+"See ya,",
+"Bye bye,",
+"Yours sincerely,"
+],
+"ans": 2,
+"why": "Sincerely."
+},
+{
+"q": "Which is formal?",
+"opts": [
+"I would appreciate your reply.",
+"Answer me fast.",
+"Tell me soon, ok?"
+],
+"ans": 0,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "I am writing for request a meeting.",
+"right": "I am writing to request a meeting.",
+"why": "to + base."
+},
+{
+"wrong": "I wanna request a meeting.",
+"right": "I would like to request a meeting.",
+"why": "Formal."
+},
+{
+"wrong": "Dear Dr. Tanaka, I am writing for ask.",
+"right": "Dear Dr. Tanaka, I am writing to ask.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Formalize: “I wanna ask for a meeting.” (I would like…)",
+"answer": "I would like to ask for a meeting.",
+"why": ""
+},
+{
+"prompt": "Use I am writing to: “I request a meeting.”",
+"answer": "I am writing to request a meeting.",
+"why": ""
+},
+{
+"prompt": "Formalize: “Tell me soon.” (I would appreciate…)",
+"answer": "I would appreciate a reply soon.",
+"why": ""
+}
+]
+}

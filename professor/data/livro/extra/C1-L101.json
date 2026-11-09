@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "e-mail de reclamação",
+"wrong": "I am writing for to draw your attention.",
+"right": "I am writing to draw your attention to broken street lights.",
+"why": "Em português “chamar sua atenção para” leva para. Em inglês: draw your attention to + substantivo; I am writing to + base."
+},
+"mcq": [
+{
+"q": "I am writing to draw your attention ___ the lights.",
+"opts": [
+"for",
+"at",
+"to"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "Please ___ the lights.",
+"opts": [
+"repair",
+"to repair",
+"repairing"
+],
+"ans": 0,
+"why": "Imperativo."
+},
+{
+"q": "Formal subject line:",
+"opts": [
+"Lights",
+"Broken street lights on Marsh Lane — request for repair",
+"Help!!"
+],
+"ans": 1,
+"why": "Assunto claro."
+},
+{
+"q": "I look forward ___ your reply.",
+"opts": [
+"for",
+"at",
+"to"
+],
+"ans": 2,
+"why": "look forward to."
+}
+],
+"fix": [
+{
+"wrong": "I look forward for your reply.",
+"right": "I look forward to your reply.",
+"why": "to."
+},
+{
+"wrong": "I am writing for draw your attention.",
+"right": "I am writing to draw your attention.",
+"why": "to."
+},
+{
+"wrong": "Please to repair the lights.",
+"right": "Please repair the lights.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Use I am writing to: “I tell you about broken lights.”",
+"answer": "I am writing to draw your attention to broken lights.",
+"why": ""
+},
+{
+"prompt": "Use look forward to: “I wait for your reply.”",
+"answer": "I look forward to your reply.",
+"why": ""
+},
+{
+"prompt": "Educado: “Repair the lights.” (Please…)",
+"answer": "Please repair the lights.",
+"why": ""
+}
+]
+}

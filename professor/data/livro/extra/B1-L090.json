@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dedução (produção)",
+"wrong": "They can’t be left, it must be cold, they must be at lunch yesterday.",
+"right": "They can’t have left; it must be cold; they might be at lunch.",
+"why": "Em português “não podem ter saído” e “devem estar” se confundem. Em inglês, é preciso escolher: passado = modal + have + pp; presente = modal + be."
+},
+"mcq": [
+{
+"q": "It ___ be cold (quase certo).",
+"opts": [
+"can’t",
+"must",
+"might not"
+],
+"ans": 1,
+"why": "must."
+},
+{
+"q": "They ___ be at lunch (possível).",
+"opts": [
+"must",
+"can’t",
+"might"
+],
+"ans": 2,
+"why": "might."
+},
+{
+"q": "They ___ have left (impossível).",
+"opts": [
+"must",
+"can’t",
+"might"
+],
+"ans": 1,
+"why": "can’t have."
+},
+{
+"q": "A prediction about the past:",
+"opts": [
+"must have been",
+"must be",
+"musts"
+],
+"ans": 0,
+"why": "Passado."
+}
+],
+"fix": [
+{
+"wrong": "They can’t leave already (passado).",
+"right": "They can’t have left already.",
+"why": "Passado."
+},
+{
+"wrong": "It must been cold.",
+"right": "It must have been cold.",
+"why": "have."
+},
+{
+"wrong": "They might been at lunch.",
+"right": "They might have been at lunch.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva (impossível, passado): “They left.” ",
+"answer": "They can’t have left.",
+"why": ""
+},
+{
+"prompt": "Reescreva (quase certo, passado): “It was cold.”",
+"answer": "It must have been cold.",
+"why": ""
+},
+{
+"prompt": "Reescreva (possível, presente): “They are at lunch.”",
+"answer": "They might be at lunch.",
+"why": ""
+}
+]
+}

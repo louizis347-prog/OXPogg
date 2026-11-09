@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "run out of",
+"wrong": "We ran out time.",
+"right": "We ran out of time.",
+"why": "Em português dizemos \"acabou o tempo\" sem preposição; em inglês a expressão fixa é run out of."
+},
+"mcq": [
+{
+"q": "“Administrar uma loja” =",
+"opts": [
+"run a store",
+"do a store",
+"take a store"
+],
+"ans": 0,
+"why": "Run."
+},
+{
+"q": "“Correr no parque” =",
+"opts": [
+"run to park",
+"run in the park",
+"run at park"
+],
+"ans": 1,
+"why": "In."
+},
+{
+"q": "“A água está correndo” =",
+"opts": [
+"The water runs fast only",
+"The water is going.",
+"The water is running."
+],
+"ans": 2,
+"why": "Run."
+},
+{
+"q": "“Ficar sem tempo” =",
+"opts": [
+"run out of time",
+"run of time",
+"finish of time"
+],
+"ans": 0,
+"why": "Run out of."
+}
+],
+"fix": [
+{
+"wrong": "She run every day.",
+"right": "She runs every day.",
+"why": "-s."
+},
+{
+"wrong": "We run out time.",
+"right": "We run out of time.",
+"why": "Of."
+},
+{
+"wrong": "He runs in the park now.",
+"right": "He is running in the park now.",
+"why": "-ing para agora."
+}
+],
+"rewrite": [
+{
+"prompt": "Terceira pessoa: “I run a shop.”",
+"answer": "She runs a shop.",
+"why": "Use She."
+},
+{
+"prompt": "Use run out of: “We have no milk.”",
+"answer": "We ran out of milk.",
+"why": "Passado."
+},
+{
+"prompt": "Present Continuous: “They run.”",
+"answer": "They are running.",
+"why": ""
+}
+]
+}

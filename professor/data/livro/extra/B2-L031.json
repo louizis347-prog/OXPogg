@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal perfeito",
+"wrong": "The thief can’t escape because the door was locked.",
+"right": "The thief can’t have escaped.",
+"why": "Português usa presente (“não pode ter escapado” mas fala “não pode escapar”). Para o passado: can’t/must + have + particípio."
+},
+"mcq": [
+{
+"q": "He **___** have forgotten. (certeza que esqueceu)",
+"opts": [
+"may to",
+"can’t",
+"must"
+],
+"ans": 2,
+"why": "Must have."
+},
+{
+"q": "The thief **___** have escaped. (impossível)",
+"opts": [
+"needn’t",
+"can’t",
+"mustn’t"
+],
+"ans": 1,
+"why": "Can’t have."
+},
+{
+"q": "Particípio de go:",
+"opts": [
+"went",
+"gone",
+"goed"
+],
+"ans": 1,
+"why": "Gone."
+},
+{
+"q": "Qual está correta? (Strong deduction (must, can’t) · B2-L031)",
+"opts": [
+"He must forgot.",
+"He must has forgotten.",
+"He must have forgotten."
+],
+"ans": 2,
+"why": "Have + particípio."
+}
+],
+"fix": [
+{
+"wrong": "He must forgot.",
+"right": "He must have forgotten.",
+"why": "Have."
+},
+{
+"wrong": "She can’t has left.",
+"right": "She can’t have left.",
+"why": "Have."
+},
+{
+"wrong": "They must have went.",
+"right": "They must have gone.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I’m sure he forgot.” (must)",
+"answer": "He must have forgotten.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It’s impossible that she left.” (can’t)",
+"answer": "She can’t have left.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He must have gone.” (can’t)",
+"answer": "He can’t have gone.",
+"why": ""
+}
+]
+}

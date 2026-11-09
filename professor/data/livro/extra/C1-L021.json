@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hard x hardly",
+"wrong": "I worked hardly all night.",
+"right": "I worked hard all night.",
+"why": "O brasileiro acha que hardly é o advérbio de hard (como “duramente”). Hardly significa “quase não”; para esforço use hard."
+},
+"mcq": [
+{
+"q": "He worked ___ all night. (with effort)",
+"opts": [
+"hardly",
+"hardy",
+"hard"
+],
+"ans": 2,
+"why": "hard = com esforço."
+},
+{
+"q": "I could ___ sleep. (almost not)",
+"opts": [
+"hardly",
+"hard",
+"barely not"
+],
+"ans": 0,
+"why": "hardly."
+},
+{
+"q": "Hardly any students came means…",
+"opts": [
+"some",
+"almost none",
+"many"
+],
+"ans": 1,
+"why": "Quase nenhum."
+},
+{
+"q": "Which has a double negative?",
+"opts": [
+"I can hardly see.",
+"I hardly can see.",
+"I can’t hardly see."
+],
+"ans": 2,
+"why": "hardly já é negativo."
+}
+],
+"fix": [
+{
+"wrong": "I can’t hardly see.",
+"right": "I can hardly see.",
+"why": "Dupla negação."
+},
+{
+"wrong": "She works hardly.",
+"right": "She works hard.",
+"why": "hard."
+},
+{
+"wrong": "Hardly never does he come.",
+"right": "Hardly ever does he come.",
+"why": "hardly ever, não never."
+}
+],
+"rewrite": [
+{
+"prompt": "Use hardly: “I could almost not sleep.”",
+"answer": "I could hardly sleep.",
+"why": ""
+},
+{
+"prompt": "Use hardly any: “Almost no students came.”",
+"answer": "Hardly any students came.",
+"why": ""
+},
+{
+"prompt": "Use hard: “She works with great effort.”",
+"answer": "She works hard.",
+"why": ""
+}
+]
+}

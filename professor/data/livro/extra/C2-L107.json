@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Should you be unable to attend, please to inform us.",
+"right": "Should you be unable to attend, please inform us.",
+"why": "Português “por favor informe” aceita infinitivo; em inglês please + verbo base."
+},
+"mcq": [
+{
+"q": "Rhetorical device with three items:",
+"opts": [
+"antithesis",
+"anaphora",
+"tricolon"
+],
+"ans": 2,
+"why": "Três itens."
+},
+{
+"q": "Formal conditional invitation:",
+"opts": [
+"Should you are unable…",
+"If you will unable…",
+"Should you be unable to attend…"
+],
+"ans": 2,
+"why": "Should + sujeito."
+},
+{
+"q": "Antithesis contrasts…",
+"opts": [
+"times",
+"opposites",
+"equals"
+],
+"ans": 1,
+"why": "Opostos."
+},
+{
+"q": "In an anaphora, which part recurs?",
+"opts": [
+"the last word",
+"the verb",
+"the opening words"
+],
+"ans": 2,
+"why": "Início."
+}
+],
+"fix": [
+{
+"wrong": "Should you are unable to attend, tell us.",
+"right": "Should you be unable to attend, tell us.",
+"why": "Should + be."
+},
+{
+"wrong": "Please to inform us.",
+"right": "Please inform us.",
+"why": "Base."
+},
+{
+"wrong": "We will not retreat, we will not to yield.",
+"right": "We will not retreat; we will not yield.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Should: “If you are unable to attend, please tell us.”",
+"answer": "Should you be unable to attend, please tell us.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We will yield.”",
+"answer": "We will not yield.",
+"why": ""
+},
+{
+"prompt": "Negativo: “We win.”",
+"answer": "We do not win.",
+"why": ""
+}
+]
+}

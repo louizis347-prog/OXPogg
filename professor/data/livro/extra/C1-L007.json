@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal e inversão",
+"wrong": "Under no circumstances staff may share files.",
+"right": "Under no circumstances may staff share files.",
+"why": "O português não inverte após “em nenhuma circunstância”. Em inglês, a expressão negativa inicial puxa o modal antes do sujeito."
+},
+"mcq": [
+{
+"q": "Under no circumstances ___ staff share files.",
+"opts": [
+"are",
+"may",
+"do"
+],
+"ans": 1,
+"why": "may + sujeito."
+},
+{
+"q": "Only when ready ___ we launch.",
+"opts": [
+"we will",
+"do",
+"will"
+],
+"ans": 2,
+"why": "Only when… will we."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Only then did he understand.",
+"Only then he understood.",
+"Only then he did understood."
+],
+"ans": 0,
+"why": "Only then + did + sujeito."
+},
+{
+"q": "Choose the correct one:",
+"opts": [
+"Never will agree I.",
+"Never will I agree.",
+"Never I will agree."
+],
+"ans": 1,
+"why": "Never will I."
+}
+],
+"fix": [
+{
+"wrong": "Under no circumstances you should leave.",
+"right": "Under no circumstances should you leave.",
+"why": "Inversão."
+},
+{
+"wrong": "Only when finished we can go.",
+"right": "Only when finished can we go.",
+"why": "Inversão na principal."
+},
+{
+"wrong": "Only then he understood.",
+"right": "Only then did he understand.",
+"why": "did + sujeito + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Under no circumstances: “You must not open it.”",
+"answer": "Under no circumstances must you open it.",
+"why": ""
+},
+{
+"prompt": "Comece com Only then: “He understood the problem then.”",
+"answer": "Only then did he understand the problem.",
+"why": ""
+},
+{
+"prompt": "Comece com Never: “I will agree.”",
+"answer": "Never will I agree.",
+"why": ""
+}
+]
+}

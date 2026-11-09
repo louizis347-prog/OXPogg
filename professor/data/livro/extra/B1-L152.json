@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estratégia de leitura",
+"wrong": "The main idea appear on the first sentence. The text infer that prices is high.",
+"right": "The main idea appears in the first sentence. The text implies that prices are high.",
+"why": "Em português “aparece na primeira frase” e “o texto infere” (texto infere) confundem; em inglês quem infere é o leitor, o texto implies. O brasileiro também esquece -s e concordância."
+},
+"mcq": [
+{
+"q": "The main idea appears…",
+"opts": [
+"in numbers",
+"in the first sentence",
+"in the title only"
+],
+"ans": 1,
+"why": "1ª frase."
+},
+{
+"q": "Details are…",
+"opts": [
+"only the title",
+"the opinion",
+"examples and numbers"
+],
+"ans": 2,
+"why": "Exemplos."
+},
+{
+"q": "The text ___ that prices are high.",
+"opts": [
+"infers",
+"implies",
+"assists"
+],
+"ans": 1,
+"why": "implies."
+},
+{
+"q": "The reader ___ the meaning.",
+"opts": [
+"infers",
+"implies",
+"says"
+],
+"ans": 0,
+"why": "Leitor infere."
+}
+],
+"fix": [
+{
+"wrong": "The text infer that it works.",
+"right": "The text implies that it works.",
+"why": "Texto implica."
+},
+{
+"wrong": "The main idea appear here.",
+"right": "The main idea appears here.",
+"why": "-s."
+},
+{
+"wrong": "Prices is high.",
+"right": "Prices are high.",
+"why": "are."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na 3ª pessoa: “The idea appear first.”",
+"answer": "The idea appears first.",
+"why": ""
+},
+{
+"prompt": "Use implies: “The text suggests that it works.”",
+"answer": "The text implies that it works.",
+"why": ""
+},
+{
+"prompt": "Pluralize: “The detail is clear.” (The details)",
+"answer": "The details are clear.",
+"why": ""
+}
+]
+}

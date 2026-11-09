@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "entonação",
+"wrong": "Is it ready? ↘ (pergunta sim/não)",
+"right": "Is it ready? ↗",
+"why": "Em português a pergunta de sim/não costuma cair no fim; em inglês a pergunta de sim/não sobe (↗), enquanto afirmações caem (↘)."
+},
+"mcq": [
+{
+"q": "Certainty and end:",
+"opts": [
+"fall-rise ↘↗",
+"rising ↗",
+"falling ↘"
+],
+"ans": 2,
+"why": "Queda."
+},
+{
+"q": "Yes/no question:",
+"opts": [
+"rising ↗",
+"falling ↘",
+"flat"
+],
+"ans": 0,
+"why": "Subida."
+},
+{
+"q": "“Well, that depends.”",
+"opts": [
+"rising",
+"falling",
+"fall-rise ↘↗"
+],
+"ans": 2,
+"why": "Hesitação."
+},
+{
+"q": "“It’s done.” ends…",
+"opts": [
+"↘↗",
+"↗",
+"↘"
+],
+"ans": 2,
+"why": "Queda."
+}
+],
+"fix": [
+{
+"wrong": "Is it done? ↘ (as question)",
+"right": "Is it done? ↗",
+"why": "Subida."
+},
+{
+"wrong": "Really↘? (asking)",
+"right": "Really? ↗",
+"why": "Subida."
+},
+{
+"wrong": "It’s done ↗ (certainty)",
+"right": "It’s done. ↘",
+"why": "Queda."
+}
+],
+"rewrite": [
+{
+"prompt": "Marque a seta: “Really?” (pergunta)",
+"answer": "Really? ↗",
+"why": ""
+},
+{
+"prompt": "Marque a seta: “It’s done.” (certeza)",
+"answer": "It’s done. ↘",
+"why": ""
+},
+{
+"prompt": "Marque a seta: “Well, that depends.” (hesitação)",
+"answer": "Well, that depends. ↘↗",
+"why": ""
+}
+]
+}

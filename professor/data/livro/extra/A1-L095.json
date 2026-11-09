@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem adjetivo-substantivo",
+"wrong": "I have a car red.",
+"right": "I have a red car.",
+"why": "Em português o adjetivo costuma vir depois do substantivo; em inglês vem antes."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"a big house",
+"a house big",
+"a bigs house"
+],
+"ans": 0,
+"why": "Adj + N."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"two cars red",
+"two red cars",
+"two reds cars"
+],
+"ans": 1,
+"why": "Sem plural."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a city beautiful",
+"a beautifuls city",
+"a beautiful city"
+],
+"ans": 2,
+"why": "Adj + N."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a nice red car",
+"a red nice car",
+"a car nice red"
+],
+"ans": 0,
+"why": "Opinião antes da cor."
+}
+],
+"fix": [
+{
+"wrong": "I have a dog black.",
+"right": "I have a black dog.",
+"why": "Adj antes."
+},
+{
+"wrong": "She has two reds bags.",
+"right": "She has two red bags.",
+"why": "Sem plural."
+},
+{
+"wrong": "It is a city beautiful.",
+"right": "It is a beautiful city.",
+"why": "Adj antes."
+}
+],
+"rewrite": [
+{
+"prompt": "Reorganize: “a car / red”",
+"answer": "a red car",
+"why": ""
+},
+{
+"prompt": "Reorganize: “a city / beautiful”",
+"answer": "a beautiful city",
+"why": ""
+},
+{
+"prompt": "Reorganize: “a friend / old”",
+"answer": "an old friend",
+"why": ""
+}
+]
+}

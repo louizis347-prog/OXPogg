@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "actually",
+"wrong": "Actually, I work in a bank.",
+"right": "Currently, I work in a bank.",
+"why": "Actually em inglês = na verdade, não atualmente."
+},
+"mcq": [
+{
+"q": "Complete: I took a **___**.",
+"opts": [
+"work",
+"curriculum",
+"course"
+],
+"ans": 2,
+"why": "take a course."
+},
+{
+"q": "job vs. work: a ___",
+"opts": [
+"job",
+"work",
+"works"
+],
+"ans": 0,
+"why": "job contável."
+},
+{
+"q": "résumé =",
+"opts": [
+"resumo",
+"currículo",
+"reunião"
+],
+"ans": 1,
+"why": "falso cognato."
+},
+{
+"q": "Qual é correta?",
+"opts": [
+"He is supposed to attend.",
+"He supposed attend.",
+"He is suppose attend."
+],
+"ans": 0,
+"why": "supposed to."
+}
+],
+"fix": [
+{
+"wrong": "I did a course.",
+"right": "I took a course.",
+"why": "take."
+},
+{
+"wrong": "I sent my curriculum.",
+"right": "I sent my résumé.",
+"why": "résumé."
+},
+{
+"wrong": "Actually I am studying English this month.",
+"right": "Currently I am studying English this month.",
+"why": "currently."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com however: “It's hard but fun.”",
+"answer": "It is hard; however, it is fun.",
+"why": ""
+},
+{
+"prompt": "Reescreva com furthermore: “It pays well. It is flexible.”",
+"answer": "It pays well; furthermore, it is flexible.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “She takes a course.”",
+"answer": "She took a course.",
+"why": ""
+}
+]
+}

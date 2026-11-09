@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "wh- + auxiliar",
+"wrong": "What you do?",
+"right": "What do you do?",
+"why": "Em português \"O que você faz?\" mantém a ordem do sujeito; em inglês wh- é seguida do auxiliar e depois do sujeito."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"Where you live?",
+"Where live you?",
+"Where do you live?"
+],
+"ans": 2,
+"why": "Wh + do + S."
+},
+{
+"q": "Question about a person:",
+"opts": [
+"Who",
+"What",
+"Where"
+],
+"ans": 0,
+"why": "Who = quem."
+},
+{
+"q": "Question about time:",
+"opts": [
+"Why",
+"When",
+"Who"
+],
+"ans": 1,
+"why": "When."
+},
+{
+"q": "Question about reason:",
+"opts": [
+"Where",
+"How",
+"Why"
+],
+"ans": 2,
+"why": "Why."
+}
+],
+"fix": [
+{
+"wrong": "Where you work?",
+"right": "Where do you work?",
+"why": "Do."
+},
+{
+"wrong": "What does he wants?",
+"right": "What does he want?",
+"why": "Base."
+},
+{
+"wrong": "What is your English teacher? (pessoa)",
+"right": "Who is your English teacher?",
+"why": "Who."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunte com Where: “You live in Rio.” (Where…)",
+"answer": "Where do you live?",
+"why": ""
+},
+{
+"prompt": "Pergunte com Who: “Ana is my teacher.” (sobre a pessoa)",
+"answer": "Who is your teacher?",
+"why": ""
+},
+{
+"prompt": "Pergunte com What: “She wants a coffee.”",
+"answer": "What does she want?",
+"why": ""
+}
+]
+}

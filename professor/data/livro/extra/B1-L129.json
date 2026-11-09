@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discurso indireto (recuo)",
+"wrong": "He said me that he is tired. She told that she will call.",
+"right": "He told me that he was tired. She said that she would call.",
+"why": "Em português “disse que está cansado” mantém o presente e “disse a mim” aceita dizer. Em inglês, tell leva pessoa; say não; e o verbo recua (is → was, will → would)."
+},
+"mcq": [
+{
+"q": "“I am tired.” → He said that he ___ tired.",
+"opts": [
+"is",
+"was",
+"has been"
+],
+"ans": 1,
+"why": "Recuo."
+},
+{
+"q": "“I will call.” → She said she ___ call.",
+"opts": [
+"will",
+"wills",
+"would"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "He ___ me that he was busy.",
+"opts": [
+"said",
+"spoke",
+"told"
+],
+"ans": 2,
+"why": "told + pessoa."
+},
+{
+"q": "Which is correct? (discurso indireto (recuo))",
+"opts": [
+"She said that she was happy.",
+"She said me she was happy.",
+"She told that she was happy."
+],
+"ans": 0,
+"why": "say sem pessoa."
+}
+],
+"fix": [
+{
+"wrong": "He said me he was late.",
+"right": "He told me he was late.",
+"why": "tell + pessoa."
+},
+{
+"wrong": "She said she will come.",
+"right": "She said she would come.",
+"why": "would."
+},
+{
+"wrong": "He told that he was ill.",
+"right": "He told me that he was ill.",
+"why": "tell + pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: Tom: “I am hungry.” (Tom said...)",
+"answer": "Tom said that he was hungry.",
+"why": ""
+},
+{
+"prompt": "Reescreva: Ana: “I will help.” (Ana said...)",
+"answer": "Ana said that she would help.",
+"why": ""
+},
+{
+"prompt": "Reescreva com told: Lia to me: “I am busy.”",
+"answer": "Lia told me that she was busy.",
+"why": ""
+}
+]
+}

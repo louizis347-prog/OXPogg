@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "wait for",
+"wrong": "We are waiting your confirmation to pour the slab.",
+"right": "We are waiting for your confirmation to pour the slab.",
+"why": "Em português “aguardar a confirmação” não leva preposição. Em inglês, wait exige for (await é formal e sem preposição)."
+},
+"mcq": [
+{
+"q": "“Pending your confirmation” means...",
+"opts": [
+"after you confirm",
+"until you confirm",
+"if you refuse"
+],
+"ans": 1,
+"why": "Pending."
+},
+{
+"q": "“Please issue a revised detail” is a...",
+"opts": [
+"complaint",
+"joke",
+"formal request"
+],
+"ans": 2,
+"why": "Pedido."
+},
+{
+"q": "“For the record,…” introduces...",
+"opts": [
+"a statement to be noted",
+"a joke",
+"a quote"
+],
+"ans": 0,
+"why": "Registro."
+},
+{
+"q": "A **flush finish** is...",
+"opts": [
+"rough",
+"level with the surface",
+"wet"
+],
+"ans": 1,
+"why": "Nivelado."
+}
+],
+"fix": [
+{
+"wrong": "Otherwise the pour will to slip.",
+"right": "Otherwise the pour will slip.",
+"why": "will + base."
+},
+{
+"wrong": "The formwork is wait for approval.",
+"right": "The formwork is waiting for approval.",
+"why": "-ing."
+},
+{
+"wrong": "Please issue us a revised detail.",
+"right": "Please issue a revised detail.",
+"why": "Sem us."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Pending: “Until you confirm, we will wait.”",
+"answer": "Pending your confirmation, we will wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva com otherwise: “Confirm, or the pour will slip.”",
+"answer": "Confirm, otherwise the pour will slip.",
+"why": ""
+},
+{
+"prompt": "Reescreva com await: “We wait for your reply.” (await)",
+"answer": "We await your reply.",
+"why": ""
+}
+]
+}

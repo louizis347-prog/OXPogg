@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "resumo com lacunas",
+"wrong": "The summary needs a verb: companies ___ the plan.",
+"right": "The summary needs a noun, such as plan, in the gap.",
+"why": "O brasileiro preenche sem ver a classe da palavra. Leia antes a lacuna: nome, verbo ou adjetivo."
+},
+"mcq": [
+{
+"q": "Primeiro, veja que tipo de palavra falta:",
+"opts": [
+"só nome",
+"só verbo",
+"nome, verbo ou adjetivo"
+],
+"ans": 2,
+"why": "Classe."
+},
+{
+"q": "Depois, localize…",
+"opts": [
+"a passagem no texto",
+"a nota",
+"o título"
+],
+"ans": 0,
+"why": "Localizar."
+},
+{
+"q": "A lacuna após the exige…",
+"opts": [
+"um advérbio",
+"um substantivo ou adjetivo",
+"um verbo"
+],
+"ans": 1,
+"why": "Nome."
+},
+{
+"q": "A lacuna após to exige…",
+"opts": [
+"substantivo",
+"adjetivo",
+"verbo base"
+],
+"ans": 2,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "The plan was succeed.",
+"right": "The plan was successful.",
+"why": "Adjetivo."
+},
+{
+"wrong": "The fund was grow quickly.",
+"right": "The fund grew quickly.",
+"why": "Passado."
+},
+{
+"wrong": "The gap needs a verb: the company grow.",
+"right": "The company grows.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Preencha: “The company ___ quickly.” (grow, passado)",
+"answer": "The company grew quickly.",
+"why": ""
+},
+{
+"prompt": "Preencha: “The plan was ___ .” (success → adjetivo)",
+"answer": "The plan was successful.",
+"why": ""
+},
+{
+"prompt": "Preencha: “Growth is ___ .” (rapid, advérbio rapidly→ adjetivo)",
+"answer": "Growth is rapid.",
+"why": ""
+}
+]
+}

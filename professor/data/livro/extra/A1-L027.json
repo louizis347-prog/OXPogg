@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hábito com -ing",
+"wrong": "I am going to school every day.",
+"right": "I go to school every day.",
+"why": "O brasileiro usa o gerúndio (\"estou indo\") para rotinas; hábitos pedem Present Simple."
+},
+"mcq": [
+{
+"q": "Signal word for habit",
+"opts": [
+"now",
+"usually",
+"at the moment"
+],
+"ans": 1,
+"why": "Usually."
+},
+{
+"q": "Signal word for now",
+"opts": [
+"every day",
+"always",
+"right now"
+],
+"ans": 2,
+"why": "Right now."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I am listening to music now.",
+"I listen to music now.",
+"I am listen to music now."
+],
+"ans": 0,
+"why": "Agora: -ing."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He is working on Mondays (habit).",
+"He works on Mondays.",
+"He work on Mondays."
+],
+"ans": 1,
+"why": "Hábito: simples."
+}
+],
+"fix": [
+{
+"wrong": "I am walking to work every day.",
+"right": "I walk to work every day.",
+"why": "Hábito: simples."
+},
+{
+"wrong": "She is work now.",
+"right": "She is working now.",
+"why": "-ing."
+},
+{
+"wrong": "They are knowing the answer.",
+"right": "They know the answer.",
+"why": "Know não costuma usar -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Mude para hábito: “He is running now.” (every day)",
+"answer": "He runs every day.",
+"why": ""
+},
+{
+"prompt": "Mude para agora: “They play soccer.”",
+"answer": "They are playing soccer now.",
+"why": ""
+},
+{
+"prompt": "Negue o agora: “I am eating.” (am not)",
+"answer": "I am not eating.",
+"why": ""
+}
+]
+}

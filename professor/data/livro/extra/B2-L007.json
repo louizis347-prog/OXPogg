@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "adjetivo + infinitivo",
+"wrong": "It is difficult to understand it.",
+"right": "It is difficult to understand.",
+"why": "O brasileiro repete o objeto (“difícil de entender ele”). Em inglês não se repete."
+},
+"mcq": [
+{
+"q": "It’s easy **___** use.",
+"opts": [
+"of",
+"to",
+"for use"
+],
+"ans": 1,
+"why": "To."
+},
+{
+"q": "I’m glad **___** help.",
+"opts": [
+"to",
+"of",
+"for"
+],
+"ans": 0,
+"why": "To."
+},
+{
+"q": "This is hard **___** believe.",
+"opts": [
+"at",
+"of",
+"to"
+],
+"ans": 2,
+"why": "To."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"It’s easy use.",
+"It’s easy to use.",
+"It’s easy to use it."
+],
+"ans": 1,
+"why": "Sem it."
+}
+],
+"fix": [
+{
+"wrong": "The app is easy to use it.",
+"right": "The app is easy to use.",
+"why": "Sem it."
+},
+{
+"wrong": "I am glad for help.",
+"right": "I am glad to help.",
+"why": "To."
+},
+{
+"wrong": "It’s hard believing.",
+"right": "It’s hard to believe.",
+"why": "To."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Using it is easy.”",
+"answer": "It is easy to use.",
+"why": "Aceita it’s."
+},
+{
+"prompt": "Use glad: “I help you. I’m happy.”",
+"answer": "I’m glad to help you.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It is easy to use.”",
+"answer": "It isn’t easy to use.",
+"why": ""
+}
+]
+}

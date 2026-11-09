@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discuss about",
+"wrong": "This essay will discuss about both views.",
+"right": "This essay will discuss both views.",
+"why": "Em português \"discutir sobre\" é comum. Em inglês discuss é transitivo e não leva about."
+},
+"mcq": [
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a tool new useful",
+"a new tool useful",
+"a useful new tool"
+],
+"ans": 2,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"research",
+"a research",
+"researches"
+],
+"ans": 0,
+"why": "incontável."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss about both views.",
+"This essay will discuss both views.",
+"This essay discusses of both views."
+],
+"ans": 1,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"In my opinion",
+"According to me",
+"By me"
+],
+"ans": 0,
+"why": "in my opinion."
+}
+],
+"fix": [
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+},
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+},
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+}
+]
+}

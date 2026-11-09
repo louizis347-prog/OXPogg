@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "What troubles me it is the question that.",
+"right": "What troubles me is the question.",
+"why": "Português admite redundância; a pseudoclivada inglesa não repete pronome."
+},
+"mcq": [
+{
+"q": "Which is a cleft?",
+"opts": [
+"What matters question is.",
+"It is the question that matters.",
+"The question is that."
+],
+"ans": 1,
+"why": "It is… that."
+},
+{
+"q": "Which is a pseudo-cleft?",
+"opts": [
+"Cost is trouble me.",
+"It is the cost troubles.",
+"What troubles me is the cost."
+],
+"ans": 2,
+"why": "What… is."
+},
+{
+"q": "Negative inversion:",
+"opts": [
+"Not until dusk did the vote end.",
+"Not until dusk the vote ended.",
+"Not until dusk ended did vote."
+],
+"ans": 0,
+"why": "Aux + sujeito."
+},
+{
+"q": "In “Not until dusk did the vote end”, verb after did is…",
+"opts": [
+"base",
+"-ing",
+"past"
+],
+"ans": 0,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "Not until dusk the vote ended.",
+"right": "Not until dusk did the vote end.",
+"why": "Inversão."
+},
+{
+"wrong": "What troubles me are the cost.",
+"right": "What troubles me is the cost.",
+"why": "is."
+},
+{
+"wrong": "It is the cost what matters.",
+"right": "It is the cost that matters.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Clivada: “The cost matters.”",
+"answer": "It is the cost that matters.",
+"why": ""
+},
+{
+"prompt": "Pseudoclivada: “The cost troubles me.”",
+"answer": "What troubles me is the cost.",
+"why": ""
+},
+{
+"prompt": "Inverta: “The vote did not end until dusk.”",
+"answer": "Not until dusk did the vote end.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "good at + -ing (uso)",
+"wrong": "I am good in organize. He is terrible on keeping secrets. She is brilliant to make friends.",
+"right": "I am good at organizing. He is terrible at keeping secrets. She is brilliant at making friends.",
+"why": "Em português “bom em organizar” e “brilhante para fazer amigos” usam em/para + infinitivo. Em inglês, adjetivo de habilidade + at + -ing."
+},
+"mcq": [
+{
+"q": "She is brilliant ___ making friends.",
+"opts": [
+"in",
+"at",
+"for"
+],
+"ans": 1,
+"why": "at."
+},
+{
+"q": "He is terrible at ___ secrets.",
+"opts": [
+"keep",
+"to keep",
+"keeping"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "I am good at ___.",
+"opts": [
+"organizing",
+"organize",
+"organization to"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "Which is wrong? (good at + -ing (uso))",
+"opts": [
+"good at to cook",
+"good at cooking",
+"bad at cooking"
+],
+"ans": 0,
+"why": "at + -ing."
+}
+],
+"fix": [
+{
+"wrong": "He is brilliant in teach.",
+"right": "He is brilliant at teaching.",
+"why": "at + -ing."
+},
+{
+"wrong": "I am terrible on math.",
+"right": "I am terrible at math.",
+"why": "at."
+},
+{
+"wrong": "She is good to listen.",
+"right": "She is good at listening.",
+"why": "at + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She makes friends easily.” (brilliant at)",
+"answer": "She is brilliant at making friends.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “He can’t keep secrets.” (terrible at)",
+"answer": "He is terrible at keeping secrets.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I organize well.” (good at)",
+"answer": "I am good at organizing.",
+"why": ""
+}
+]
+}

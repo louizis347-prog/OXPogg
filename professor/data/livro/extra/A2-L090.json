@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to vs for",
+"wrong": "I called for ask the time.",
+"right": "I called to ask the time.",
+"why": "Em português para + infinitivo traduz para for; em inglês, para + verbo = to + base."
+},
+"mcq": [
+{
+"q": "I'm saving money ___ buy a bike.",
+"opts": [
+"for",
+"to",
+"at"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "I need a pen ___ writing.",
+"opts": [
+"for",
+"at",
+"to"
+],
+"ans": 0,
+"why": "for + -ing para uso."
+},
+{
+"q": "He went ___ some bread.",
+"opts": [
+"in",
+"to",
+"for"
+],
+"ans": 2,
+"why": "for + substantivo."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"We walk for stay healthy.",
+"We walk to stay healthy.",
+"We walk to staying healthy."
+],
+"ans": 1,
+"why": "to."
+}
+],
+"fix": [
+{
+"wrong": "She came for see me.",
+"right": "She came to see me.",
+"why": "to."
+},
+{
+"wrong": "I use it for cut.",
+"right": "I use it to cut.",
+"why": "to."
+},
+{
+"wrong": "He goes to the shop for to buy milk.",
+"right": "He goes to the shop to buy milk.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I study. I get a job.”",
+"answer": "I study to get a job.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They went out. Dinner.” com for",
+"answer": "They went out for dinner.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She called. She say hi.”",
+"answer": "She called to say hi.",
+"why": ""
+}
+]
+}

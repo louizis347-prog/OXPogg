@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If I would have known, I would have come.",
+"right": "If I had known, I would have come.",
+"why": "Em português dizemos “se eu tivesse sabido” mas o brasileiro traduz com would na oração com if. No terceiro condicional: if + had + particípio, would have + particípio."
+},
+"mcq": [
+{
+"q": "If I **___** known, I would have come.",
+"opts": [
+"have",
+"would have",
+"had"
+],
+"ans": 2,
+"why": "Had."
+},
+{
+"q": "If she had studied, she **___** passed.",
+"opts": [
+"would have",
+"had",
+"would"
+],
+"ans": 0,
+"why": "Would have."
+},
+{
+"q": "Particípio de know:",
+"opts": [
+"known",
+"knowed",
+"knew"
+],
+"ans": 0,
+"why": "Known."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"If I would have known…",
+"If I knew…",
+"If I had known…"
+],
+"ans": 2,
+"why": "Had."
+}
+],
+"fix": [
+{
+"wrong": "If I would have known, I would have come.",
+"right": "If I had known, I would have come.",
+"why": "Had."
+},
+{
+"wrong": "If he had called, I would answered.",
+"right": "If he had called, I would have answered.",
+"why": "Have."
+},
+{
+"wrong": "If we had went, we would have seen it.",
+"right": "If we had gone, we would have seen it.",
+"why": "Gone."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I didn’t know, so I didn’t come.” (If I…)",
+"answer": "If I had known, I would have come.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “She didn’t study, so she failed.”",
+"answer": "If she had studied, she wouldn’t have failed.",
+"why": ""
+},
+{
+"prompt": "Negativa na if-clause: “If I had known.” (not)",
+"answer": "If I hadn’t known.",
+"why": ""
+}
+]
+}

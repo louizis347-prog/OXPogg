@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "had + particípio",
+"wrong": "Hardly we started when the lights failed.",
+"right": "Hardly had we started when the lights failed.",
+"why": "O português usa o pretérito simples sem inversão (“mal começamos quando…”). Em inglês, a estrutura exige had + sujeito + particípio."
+},
+"mcq": [
+{
+"q": "Hardly ___ we started when the lights failed.",
+"opts": [
+"had",
+"did",
+"have"
+],
+"ans": 0,
+"why": "had."
+},
+{
+"q": "Differentiate ___ A and B.",
+"opts": [
+"of",
+"between",
+"from to"
+],
+"ans": 1,
+"why": "between."
+},
+{
+"q": "Scarcely ___ he arrived when hail fell.",
+"opts": [
+"was",
+"has",
+"had"
+],
+"ans": 2,
+"why": "had."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"No sooner had it begun than it ended.",
+"No sooner it began than it ended.",
+"No sooner did it begun than it ended."
+],
+"ans": 0,
+"why": "had + pp."
+}
+],
+"fix": [
+{
+"wrong": "Hardly did I start when it ended.",
+"right": "Hardly had I started when it ended.",
+"why": "had + pp."
+},
+{
+"wrong": "Differentiate fact of fiction.",
+"right": "Differentiate fact from fiction.",
+"why": "from."
+},
+{
+"wrong": "No sooner they left than hail fell.",
+"right": "No sooner had they left than hail fell.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Hardly: “I had just sat down when she called.”",
+"answer": "Hardly had I sat down when she called.",
+"why": ""
+},
+{
+"prompt": "Use differentiate between: “Distinguish A from B.” (fact / opinion)",
+"answer": "Differentiate between fact and opinion.",
+"why": ""
+},
+{
+"prompt": "Comece com Scarcely: “He had just left when hail fell.”",
+"answer": "Scarcely had he left when hail fell.",
+"why": ""
+}
+]
+}

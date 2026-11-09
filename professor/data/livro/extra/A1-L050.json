@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can + to / -s",
+"wrong": "She can to swim.",
+"right": "She can swim.",
+"why": "Em português dizemos \"ela pode nadar\" com infinitivo e flexão; em inglês can é modal: sem to e sem -s."
+},
+"mcq": [
+{
+"q": "Negative of “I can run.”",
+"opts": [
+"I can’t run.",
+"I don’t can run.",
+"I can’t to run."
+],
+"ans": 0,
+"why": "Can’t."
+},
+{
+"q": "Polite way:",
+"opts": [
+"You please sit.",
+"Please sit down.",
+"Sit you down."
+],
+"ans": 1,
+"why": "Please."
+},
+{
+"q": "Question: “You have got a cat.”",
+"opts": [
+"Do you got a cat?",
+"You have got a cat?",
+"Have you got a cat?"
+],
+"ans": 2,
+"why": "Inversão."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There are three chairs.",
+"There is three chairs.",
+"Have three chairs."
+],
+"ans": 0,
+"why": "Plural."
+}
+],
+"fix": [
+{
+"wrong": "He cans play guitar.",
+"right": "He can play guitar.",
+"why": "Sem -s."
+},
+{
+"wrong": "Don’t late.",
+"right": "Don’t be late.",
+"why": "Be."
+},
+{
+"wrong": "He has got a dog? Yes, he have.",
+"right": "Has he got a dog? Yes, he has.",
+"why": "Resposta curta."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue: “Run.”",
+"answer": "Don’t run.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You have got a car.”",
+"answer": "Have you got a car?",
+"why": ""
+},
+{
+"prompt": "Negue com there isn’t: “There is a park here.”",
+"answer": "There isn’t a park here.",
+"why": ""
+}
+]
+}

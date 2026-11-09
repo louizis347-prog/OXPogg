@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado em narrativa",
+"wrong": "Helen understand “water” and she used to refuse at first.",
+"right": "Helen understood “water.” At first she refused.",
+"why": "Em português “entendeu”/“recusou” no pretérito; o brasileiro puxa a forma regular para irregular (understanded). Em inglês, understand → understood; fato único = Past Simple."
+},
+"mcq": [
+{
+"q": "Helen ___ “water.”",
+"opts": [
+"understood",
+"understanded",
+"understand"
+],
+"ans": 0,
+"why": "understood."
+},
+{
+"q": "“At first she refused” shows…",
+"opts": [
+"gratidão",
+"hábito",
+"recusa"
+],
+"ans": 2,
+"why": "Recusa."
+},
+{
+"q": "She ___ spell words (hábito).",
+"opts": [
+"use to",
+"uses",
+"used to"
+],
+"ans": 2,
+"why": "used to."
+},
+{
+"q": "Thank you = ",
+"opts": [
+"gratidão",
+"recusa",
+"fato"
+],
+"ans": 0,
+"why": "Gratidão."
+}
+],
+"fix": [
+{
+"wrong": "She understanded the word.",
+"right": "She understood the word.",
+"why": "Irregular."
+},
+{
+"wrong": "At first she refuse.",
+"right": "At first she refused.",
+"why": "Past."
+},
+{
+"wrong": "She used to understood.",
+"right": "She used to understand.",
+"why": "used to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “She understands the word.”",
+"answer": "She understood the word.",
+"why": ""
+},
+{
+"prompt": "Reescreva com used to: “She spelled words every day.”",
+"answer": "She used to spell words every day.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “At first she refuses.”",
+"answer": "At first she refused.",
+"why": ""
+}
+]
+}

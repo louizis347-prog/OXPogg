@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "generalização",
+"wrong": "All teenagers are addicted to phones.",
+"right": "Many teenagers seem to be addicted to phones.",
+"why": "Em português “todos” e “sempre” são comuns na fala. Em prosa acadêmica em inglês, evite absolutos: use many, tend to, may, seem."
+},
+"mcq": [
+{
+"q": "Which sentence is the most tentative about causes?",
+"opts": [
+"It may be caused by stress.",
+"It is caused by stress.",
+"It must be stress."
+],
+"ans": 0,
+"why": "may."
+},
+{
+"q": "“Results ___ a link.” (cautious)",
+"opts": [
+"prove",
+"suggest",
+"show it is"
+],
+"ans": 1,
+"why": "suggest."
+},
+{
+"q": "Replace **always**:",
+"opts": [
+"never",
+"all",
+"often"
+],
+"ans": 2,
+"why": "often."
+},
+{
+"q": "A **sweeping claim** is...",
+"opts": [
+"too broad",
+"well hedged",
+"a table"
+],
+"ans": 0,
+"why": "Generalização."
+}
+],
+"fix": [
+{
+"wrong": "Stress always causes illness.",
+"right": "Stress often causes illness.",
+"why": "Evite absolutos."
+},
+{
+"wrong": "The results prove that sleep helps.",
+"right": "The results suggest that sleep helps.",
+"why": "suggest."
+},
+{
+"wrong": "It is clearly possibly caused by noise.",
+"right": "It is possibly caused by noise.",
+"why": "Um advérbio só."
+}
+],
+"rewrite": [
+{
+"prompt": "Suavize: “It is caused by stress.” (may)",
+"answer": "It may be caused by stress.",
+"why": ""
+},
+{
+"prompt": "Suavize: “This proves the effect.” (suggests)",
+"answer": "This suggests the effect.",
+"why": ""
+},
+{
+"prompt": "Suavize: “Students always fail.” (often)",
+"answer": "Students often fail.",
+"why": ""
+}
+]
+}

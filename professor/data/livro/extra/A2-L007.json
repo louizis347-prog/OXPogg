@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares be/bring",
+"wrong": "I was became tired.",
+"right": "I became tired.",
+"why": "O aluno junta was com o verbo principal como em 'estava ficando'; o passado de become é became (irregular)."
+},
+"mcq": [
+{
+"q": "Passado de **buy**:",
+"opts": [
+"bought",
+"boughted",
+"buyed"
+],
+"ans": 0,
+"why": "bought."
+},
+{
+"q": "Passado de **break**:",
+"opts": [
+"broke",
+"broken",
+"breaked"
+],
+"ans": 0,
+"why": "broke."
+},
+{
+"q": "Passado de **begin**:",
+"opts": [
+"begun",
+"beginned",
+"began"
+],
+"ans": 2,
+"why": "began."
+},
+{
+"q": "They ___ happy.",
+"opts": [
+"become",
+"became",
+"becamed"
+],
+"ans": 1,
+"why": "became."
+}
+],
+"fix": [
+{
+"wrong": "He breaked the window.",
+"right": "He broke the window.",
+"why": "Irregular."
+},
+{
+"wrong": "She bringed lunch.",
+"right": "She brought lunch.",
+"why": "Irregular."
+},
+{
+"wrong": "We was late.",
+"right": "We were late.",
+"why": "we → were."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I buy a book.”",
+"answer": "I bought a book.",
+"why": ""
+},
+{
+"prompt": "Passado: “It begins at 8.”",
+"answer": "It began at 8.",
+"why": ""
+},
+{
+"prompt": "Passado: “She becomes a doctor.”",
+"answer": "She became a doctor.",
+"why": ""
+}
+]
+}

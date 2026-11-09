@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta indireta",
+"wrong": "Tell me where is the meeting.",
+"right": "Tell me where the meeting is.",
+"why": "No português dizemos “onde é a reunião”. Em perguntas embutidas o inglês volta à ordem sujeito + verbo."
+},
+"mcq": [
+{
+"q": "Qual frase está correta?",
+"opts": [
+"You love the news, aren’t you?",
+"Do you love the news, do you?",
+"You love the news, don’t you?"
+],
+"ans": 2,
+"why": "Tag com polaridade oposta e do."
+},
+{
+"q": "We **___** the news every Thursday.",
+"opts": [
+"discuss",
+"are discuss",
+"discusses"
+],
+"ans": 0,
+"why": "Sujeito we: verbo sem -s."
+},
+{
+"q": "“Where / When” servem para pedir:",
+"opts": [
+"permissão",
+"desculpas",
+"detalhes"
+],
+"ans": 2,
+"why": "São palavras interrogativas para detalhes."
+},
+{
+"q": "Keep in touch significa:",
+"opts": [
+"manter silêncio",
+"manter contato",
+"tocar em"
+],
+"ans": 1,
+"why": "Keep in touch = manter contato."
+}
+],
+"fix": [
+{
+"wrong": "We discuss about the news.",
+"right": "We discuss the news.",
+"why": "Discuss é transitivo direto; sem about (influência de “discutir sobre”)."
+},
+{
+"wrong": "Where is the meeting, don’t you know?",
+"right": "Do you know where the meeting is?",
+"why": "Ordem de pergunta indireta."
+},
+{
+"wrong": "We keeping in touch every week.",
+"right": "We keep in touch every week.",
+"why": "Presente simples não usa -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como pergunta indireta com “Do you know”: “Where is the club?”",
+"answer": "Do you know where the club is?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “You read the news.”",
+"answer": "You read the news, don’t you?",
+"why": ""
+},
+{
+"prompt": "Passe para a 3ª pessoa: “I check the news.” (She…)",
+"answer": "She checks the news.",
+"why": ""
+}
+]
+}

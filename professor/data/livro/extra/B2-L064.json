@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I wish the plot was more original, and I wish I read the book.",
+"right": "I wish the plot were more original.",
+"why": "Wish no presente usa passado/were; no passado usa had + particípio; para queixa de hábito, would. O brasileiro confunde os três."
+},
+"mcq": [
+{
+"q": "Presente irreal:",
+"opts": [
+"I wish the plot had been.",
+"I wish the plot is better.",
+"I wish the plot were better."
+],
+"ans": 2,
+"why": "Past."
+},
+{
+"q": "Passado arrependido:",
+"opts": [
+"I wish I would read it.",
+"I wish I had read it.",
+"I wish I read it."
+],
+"ans": 1,
+"why": "Had + part."
+},
+{
+"q": "Queixa de hábito:",
+"opts": [
+"I wish she stops.",
+"I wish she stopped.",
+"I wish she would stop."
+],
+"ans": 2,
+"why": "Would."
+},
+{
+"q": "Particípio de read:",
+"opts": [
+"read",
+"readed",
+"reading"
+],
+"ans": 0,
+"why": "Read."
+}
+],
+"fix": [
+{
+"wrong": "I wish I watched the movie yesterday.",
+"right": "I wish I had watched the movie yesterday.",
+"why": "Passado."
+},
+{
+"wrong": "I wish the ending is better.",
+"right": "I wish the ending were better.",
+"why": "Past."
+},
+{
+"wrong": "I wish he doesn’t talk so much.",
+"right": "I wish he wouldn’t talk so much.",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I didn’t read the book.” (I wish…)",
+"answer": "I wish I had read the book.",
+"why": ""
+},
+{
+"prompt": "Presente: “The plot isn’t original.” (I wish…)",
+"answer": "I wish the plot were original.",
+"why": ""
+},
+{
+"prompt": "Irritação: “He talks too much.” (I wish… wouldn’t)",
+"answer": "I wish he wouldn’t talk so much.",
+"why": ""
+}
+]
+}

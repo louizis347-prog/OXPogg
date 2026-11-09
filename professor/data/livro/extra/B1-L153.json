@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hábito em narrativa e pergunta",
+"wrong": "Children would to gather around the fire. Could you tell me how was the river born?",
+"right": "Children would gather around the fire. Could you tell me how the river was born?",
+"why": "Em português “as crianças se reuniam” e “como o rio nasceu” seguem a ordem direta. O brasileiro insere to após would e inverte a pergunta indireta. Em inglês: would + base; ordem afirmativa."
+},
+"mcq": [
+{
+"q": "Children ___ gather around the fire.",
+"opts": [
+"would to",
+"would",
+"woulds"
+],
+"ans": 1,
+"why": "would + base."
+},
+{
+"q": "Could you tell us how the river ___?",
+"opts": [
+"was it born",
+"was born",
+"born was"
+],
+"ans": 1,
+"why": "Ordem."
+},
+{
+"q": "An old tale starts with…",
+"opts": [
+"Long ago,",
+"In long,",
+"Since long,"
+],
+"ans": 0,
+"why": "Long ago."
+},
+{
+"q": "Habit in the past:",
+"opts": [
+"We would listen.",
+"We would to listen.",
+"We will listened."
+],
+"ans": 0,
+"why": "would."
+}
+],
+"fix": [
+{
+"wrong": "Elders would to tell stories.",
+"right": "Elders would tell stories.",
+"why": "Sem to."
+},
+{
+"wrong": "Tell me why did it happen.",
+"right": "Tell me why it happened.",
+"why": "Ordem."
+},
+{
+"wrong": "Could you tell me when was it built?",
+"right": "Could you tell me when it was built?",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com would: “Elders told stories every night.”",
+"answer": "Elders would tell stories every night.",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “How was the river born?” (Could you tell us...)",
+"answer": "Could you tell us how the river was born?",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Why did it happen?” (Tell me...)",
+"answer": "Tell me why it happened.",
+"why": ""
+}
+]
+}

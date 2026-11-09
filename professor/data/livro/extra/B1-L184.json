@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "imperativo e ordem",
+"wrong": "Read beyond of the headline.",
+"right": "Read beyond the headline.",
+"why": "Em português “além de”, então o brasileiro adiciona of. Em inglês beyond e outras preposições não levam of."
+},
+"mcq": [
+{
+"q": "Check **___** source.",
+"opts": [
+"the",
+"to the",
+"a the"
+],
+"ans": 0,
+"why": "Check é direto."
+},
+{
+"q": "Look **___** the date.",
+"opts": [
+"in",
+"for at",
+"at"
+],
+"ans": 2,
+"why": "Look at."
+},
+{
+"q": "Read **___** the headline.",
+"opts": [
+"behind of",
+"beyond",
+"between"
+],
+"ans": 1,
+"why": "Beyond the headline."
+},
+{
+"q": "Imperativo negativo:",
+"opts": [
+"Not believe it.",
+"Don’t believe it.",
+"No believe it."
+],
+"ans": 1,
+"why": "Don’t + base."
+}
+],
+"fix": [
+{
+"wrong": "Check the source of.",
+"right": "Check the source.",
+"why": "Sem of final."
+},
+{
+"wrong": "No believe every headline.",
+"right": "Don’t believe every headline.",
+"why": "Imperativo negativo com don’t."
+},
+{
+"wrong": "Look for to the date.",
+"right": "Look for the date.",
+"why": "Look for + objeto."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “Believe every headline.”",
+"answer": "Don’t believe every headline.",
+"why": ""
+},
+{
+"prompt": "Formal: “Please check the source.” sem please",
+"answer": "Check the source.",
+"why": ""
+},
+{
+"prompt": "Troque por imperativo: “You should read the article.”",
+"answer": "Read the article.",
+"why": ""
+}
+]
+}

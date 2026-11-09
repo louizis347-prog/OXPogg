@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "like of",
+"wrong": "I like of dancing.",
+"right": "I like dancing.",
+"why": "Sem preposição."
+},
+"mcq": [
+{
+"q": "Spelling: run + ing",
+"opts": [
+"runing",
+"runnning",
+"running"
+],
+"ans": 2,
+"why": "Dobra n."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We like reading.",
+"We like of reading.",
+"We like to reading."
+],
+"ans": 0,
+"why": "Sem of."
+},
+{
+"q": "Spelling: dance + ing",
+"opts": [
+"danceing",
+"dancing",
+"dancng"
+],
+"ans": 1,
+"why": "Tira e."
+},
+{
+"q": "Negative: “I like dancing.”",
+"opts": [
+"I like not dancing.",
+"I don’t like dance.",
+"I don’t like dancing."
+],
+"ans": 2,
+"why": "Don’t."
+}
+],
+"fix": [
+{
+"wrong": "He like cooking.",
+"right": "He likes cooking.",
+"why": "-s."
+},
+{
+"wrong": "She likes of reading.",
+"right": "She likes reading.",
+"why": "Sem of."
+},
+{
+"wrong": "We like runing.",
+"right": "We like running.",
+"why": "Dobra n."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue: “She likes dancing.”",
+"answer": "She doesn’t like dancing.",
+"why": ""
+},
+{
+"prompt": "Troque para “He”: “I like cooking.”",
+"answer": "He likes cooking.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You like reading.”",
+"answer": "Do you like reading?",
+"why": ""
+}
+]
+}

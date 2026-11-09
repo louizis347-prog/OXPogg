@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Were I to",
+"wrong": "If I was you, I would ask.",
+"right": "Were I you, I would ask.",
+"why": "Em português usamos “se eu fosse”. Em inglês formal/hipotético, com inversão use Were (não was) com todos os sujeitos."
+},
+"mcq": [
+{
+"q": "___ I to design a study, I would ask first.",
+"opts": [
+"Were",
+"Was",
+"Had"
+],
+"ans": 0,
+"why": "Were."
+},
+{
+"q": "If I ___ you, I’d ask.",
+"opts": [
+"am",
+"were",
+"was"
+],
+"ans": 1,
+"why": "Subjuntivo: were."
+},
+{
+"q": "Were it ___ for volunteers, …",
+"opts": [
+"no",
+"don’t",
+"not"
+],
+"ans": 2,
+"why": "Were it not for."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Were she here, …",
+"Was she here, …",
+"Is she here, …"
+],
+"ans": 0,
+"why": "Were."
+}
+],
+"fix": [
+{
+"wrong": "Was I to design a study, I would ask.",
+"right": "Were I to design a study, I would ask.",
+"why": "Were."
+},
+{
+"wrong": "Were I to designing a study, I would ask.",
+"right": "Were I to design a study, I would ask.",
+"why": "to + base."
+},
+{
+"wrong": "If it was not for you, I’d fail.",
+"right": "If it were not for you, I’d fail.",
+"why": "were."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If I were to design a study, I would ask first.”",
+"answer": "Were I to design a study, I would ask first.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If she were here, she would help.”",
+"answer": "Were she here, she would help.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If it were not for volunteers, we would fail.”",
+"answer": "Were it not for volunteers, we would fail.",
+"why": ""
+}
+]
+}

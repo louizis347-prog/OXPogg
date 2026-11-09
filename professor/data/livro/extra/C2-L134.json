@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "voz passiva",
+"wrong": "It say that Socrates said it.",
+"right": "Socrates is said to have said it.",
+"why": "Português “diz-se que”; inglês usa passiva impessoal."
+},
+"mcq": [
+{
+"q": "Impersonal report:",
+"opts": [
+"Socrates is said to have said…",
+"It is said Socrates to say",
+"Socrates says to have said"
+],
+"ans": 0,
+"why": "is said to have."
+},
+{
+"q": "Which simile compares the phrase to a coin?",
+"opts": [
+"turn the phrase like a coin",
+"turn the phrase as coin",
+"turn like the coin phrase"
+],
+"ans": 0,
+"why": "like."
+},
+{
+"q": "To have said = …",
+"opts": [
+"earlier action",
+"future",
+"present"
+],
+"ans": 0,
+"why": "Anterior."
+},
+{
+"q": "Distance is shown by…",
+"opts": [
+"said",
+"is said",
+"says"
+],
+"ans": 1,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "Socrates is said to say it long ago.",
+"right": "Socrates is said to have said it long ago.",
+"why": "have said."
+},
+{
+"wrong": "He says to have said it.",
+"right": "He is said to have said it.",
+"why": "Passiva."
+},
+{
+"wrong": "Turn the phrase as a coin.",
+"right": "Turn the phrase like a coin.",
+"why": "like."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva impessoal: “People say Socrates said it.”",
+"answer": "Socrates is said to have said it.",
+"why": ""
+},
+{
+"prompt": "Símile: “The phrase is a coin.”",
+"answer": "The phrase is like a coin.",
+"why": ""
+},
+{
+"prompt": "Negativo: “He is said to have said it.”",
+"answer": "He is not said to have said it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo polissêmico",
+"wrong": "The engine is running good.",
+"right": "The engine is running well.",
+"why": "Em português “funciona bem/bom”. Depois de verbo usamos advérbio (well), e run também significa funcionar, administrar, correr."
+},
+"mcq": [
+{
+"q": "She **runs** a small shop. Here run means:",
+"opts": [
+"correr",
+"administrar",
+"acabar"
+],
+"ans": 1,
+"why": "Run a business = administrar."
+},
+{
+"q": "We **ran out of** milk. Means:",
+"opts": [
+"o leite acabou",
+"correu para o leite",
+"administramos leite"
+],
+"ans": 0,
+"why": "Run out of = ficar sem."
+},
+{
+"q": "The engine runs well. Means:",
+"opts": [
+"funciona",
+"gerencia",
+"corre"
+],
+"ans": 0,
+"why": "Máquina que runs = funciona."
+},
+{
+"q": "Qual frase usa run = correr?",
+"opts": [
+"The bus runs late.",
+"I run in the park.",
+"I run a team."
+],
+"ans": 1,
+"why": "Run in the park = correr."
+}
+],
+"fix": [
+{
+"wrong": "He runs a company since 2020.",
+"right": "He has run a company since 2020.",
+"why": "Since pede present perfect; o português usa presente (“administra desde”)."
+},
+{
+"wrong": "We runned out of time.",
+"right": "We ran out of time.",
+"why": "Passado irregular: run, ran, run."
+},
+{
+"wrong": "The newsletter runs good.",
+"right": "The newsletter runs well.",
+"why": "Advérbio, não adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “I run every morning.”",
+"answer": "I ran every morning.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “We run out of paper.”",
+"answer": "We ran out of paper.",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “She runs a team.”",
+"answer": "She doesn’t run a team.",
+"why": ""
+}
+]
+}

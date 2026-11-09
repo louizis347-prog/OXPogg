@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "enjoy/keep + -ing",
+"wrong": "I enjoy to solve puzzles and I keep to try.",
+"right": "I enjoy solving puzzles, and I keep trying.",
+"why": "Em português “gosto de resolver” e “continuo tentando” usam infinitivo ou gerúndio indistintamente. Em inglês, enjoy e keep pedem -ing."
+},
+"mcq": [
+{
+"q": "I keep ___.",
+"opts": [
+"to try",
+"trying",
+"try"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "I enjoy ___ puzzles.",
+"opts": [
+"to solve",
+"solve",
+"solving"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "Advice: “Start small and ___ daily.”",
+"opts": [
+"practicing to",
+"practice",
+"to practice"
+],
+"ans": 1,
+"why": "Imperativo."
+},
+{
+"q": "Which is correct? (enjoy/keep + -ing)",
+"opts": [
+"She keeps coding.",
+"She keeps to code.",
+"She keeps code."
+],
+"ans": 0,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "I enjoy to code.",
+"right": "I enjoy coding.",
+"why": "-ing."
+},
+{
+"wrong": "He keeps to try.",
+"right": "He keeps trying.",
+"why": "-ing."
+},
+{
+"wrong": "Start small and practicing daily.",
+"right": "Start small and practice daily.",
+"why": "Imperativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com enjoy: “I like solving puzzles.”",
+"answer": "I enjoy solving puzzles.",
+"why": ""
+},
+{
+"prompt": "Reescreva com keep: “She continues to try.”",
+"answer": "She keeps trying.",
+"why": ""
+},
+{
+"prompt": "Dê um conselho: “You should practice daily.” (imperativo)",
+"answer": "Practice daily.",
+"why": ""
+}
+]
+}

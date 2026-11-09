@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "gonna / wanna",
+"wrong": "I'm gonna to go.",
+"right": "I'm going to go.",
+"why": "O aluno escreve gonna como se fosse palavra formal e ainda acrescenta to; gonna = going to, só na fala."
+},
+"mcq": [
+{
+"q": "gonna é a fala de:",
+"opts": [
+"go to",
+"going to",
+"gone to"
+],
+"ans": 1,
+"why": "going to."
+},
+{
+"q": "wanna é a fala de:",
+"opts": [
+"wants to",
+"wanted",
+"want to"
+],
+"ans": 2,
+"why": "want to."
+},
+{
+"q": "Na escrita formal usamos:",
+"opts": [
+"gonna",
+"going to",
+"gunna"
+],
+"ans": 1,
+"why": "formal."
+},
+{
+"q": "I ___ be late. (fala)",
+"opts": [
+"gonna",
+"'m gonna",
+"am gonna to"
+],
+"ans": 1,
+"why": "be + gonna."
+}
+],
+"fix": [
+{
+"wrong": "I gonna go.",
+"right": "I'm gonna go.",
+"why": "be."
+},
+{
+"wrong": "She wanna go.",
+"right": "She wants to go.",
+"why": "3ª pessoa."
+},
+{
+"wrong": "We're gonna to eat.",
+"right": "We're gonna eat.",
+"why": "to extra."
+}
+],
+"rewrite": [
+{
+"prompt": "Forma escrita: “I'm gonna call.”",
+"answer": "I'm going to call.",
+"why": ""
+},
+{
+"prompt": "Forma escrita: “I wanna sleep.”",
+"answer": "I want to sleep.",
+"why": ""
+},
+{
+"prompt": "Forma falada: “I'm going to eat.”",
+"answer": "I'm gonna eat.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "approximately of",
+"wrong": "The median value is approximately of 40.",
+"right": "The median value is approximately 40.",
+"why": "Em português “aproximadamente de 40” é aceitável com preposição em algumas construções. Em inglês, roughly/approximately vêm diretamente antes do número."
+},
+"mcq": [
+{
+"q": "Which verb shows a **sharp** increase?",
+"opts": [
+"edge up",
+"tick",
+"surge"
+],
+"ans": 2,
+"why": "surge."
+},
+{
+"q": "“Sales ___ off at 200 units.”",
+"opts": [
+"leveled",
+"levied",
+"leaned"
+],
+"ans": 0,
+"why": "level off."
+},
+{
+"q": "“Up 50%” versus “up by 2 points” differ in...",
+"opts": [
+"tense",
+"relative and absolute change",
+"spelling"
+],
+"ans": 1,
+"why": "Relativa × absoluta."
+},
+{
+"q": "The **mean** is...",
+"opts": [
+"the middle value",
+"the most frequent",
+"the arithmetic average"
+],
+"ans": 2,
+"why": "Média."
+}
+],
+"fix": [
+{
+"wrong": "The mean is of 12 and the median are 10.",
+"right": "The mean is 12 and the median is 10.",
+"why": "Sem of; verbo."
+},
+{
+"wrong": "Prices climbed to 3 points last year.",
+"right": "Prices climbed by 3 points last year.",
+"why": "by."
+},
+{
+"wrong": "The modal category be the youngest group.",
+"right": "The modal category is the youngest group.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com roughly: “The mean is nearly 12.”",
+"answer": "The mean is roughly 12.",
+"why": ""
+},
+{
+"prompt": "Reescreva com plateau: “Sales stopped rising.” (leveled off)",
+"answer": "Sales leveled off.",
+"why": ""
+},
+{
+"prompt": "Reescreva com by: “The rate rose 2 points.”",
+"answer": "The rate rose by 2 points.",
+"why": ""
+}
+]
+}

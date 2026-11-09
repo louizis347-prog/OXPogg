@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "0:30 · Stakes: Name the audience interest.",
+"right": "0:30 · Stakes: Name the audience’s interest.",
+"why": "Português usa “o interesse do público”; em inglês genitivo ’s com pessoa/grupo."
+},
+"mcq": [
+{
+"q": "Which opening instruction is correct?",
+"opts": [
+"Naming the audience interest.",
+"You name audience.",
+"Name the audience’s interest."
+],
+"ans": 2,
+"why": "Imperativo."
+},
+{
+"q": "Which line announces a time limit correctly?",
+"opts": [
+"Your time beginning now.",
+"Your time begin now.",
+"Your time begins now."
+],
+"ans": 2,
+"why": "Singular."
+},
+{
+"q": "Two-part instruction uses…",
+"opts": [
+"no mark",
+"a comma splice",
+"a colon"
+],
+"ans": 2,
+"why": "Dois-pontos."
+},
+{
+"q": "Label + time:",
+"opts": [
+"0:30 · Stakes",
+"Stakes 0:30 time",
+"Time stakes"
+],
+"ans": 0,
+"why": "Etiqueta."
+}
+],
+"fix": [
+{
+"wrong": "Name the audience interest.",
+"right": "Name the audience’s interest.",
+"why": "’s."
+},
+{
+"wrong": "Names the audience’s interest.",
+"right": "Name the audience’s interest.",
+"why": "Imperativo."
+},
+{
+"wrong": "Your time begin now.",
+"right": "Your time begins now.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Imperativo negativo: “Name the stakes.”",
+"answer": "Don’t name the stakes.",
+"why": ""
+},
+{
+"prompt": "Plural: “Your slot begins now.”",
+"answer": "Your slots begin now.",
+"why": ""
+},
+{
+"prompt": "Passiva: “You name the interest.”",
+"answer": "The interest is named.",
+"why": ""
+}
+]
+}

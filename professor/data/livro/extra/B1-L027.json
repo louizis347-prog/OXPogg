@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do × make",
+"wrong": "I’m sorry. I did a mistake.",
+"right": "I’m sorry. I made a mistake.",
+"why": "Em português “cometer/fazer um erro”; o brasileiro usa do. Em inglês o erro se faz com make: make a mistake."
+},
+"mcq": [
+{
+"q": "Where is your homework? ‒ I ___ forget it.",
+"opts": [
+"didn't",
+"don't",
+"wasn't"
+],
+"ans": 0,
+"why": "didn't + base."
+},
+{
+"q": "Which is an apology?",
+"opts": [
+"Where is it?",
+"I didn't do it.",
+"I'm sorry."
+],
+"ans": 2,
+"why": "I'm sorry."
+},
+{
+"q": "I ___ a mistake.",
+"opts": [
+"did",
+"took",
+"made"
+],
+"ans": 2,
+"why": "make a mistake."
+},
+{
+"q": "To deny: “I ___ it.”",
+"opts": [
+"didn't do",
+"not did",
+"don't did"
+],
+"ans": 0,
+"why": "didn't do."
+}
+],
+"fix": [
+{
+"wrong": "I forgot my book. Sorry by that.",
+"right": "I forgot my book. Sorry about that.",
+"why": "Sorry about."
+},
+{
+"wrong": "I didn't did it.",
+"right": "I didn't do it.",
+"why": "didn't + verbo base."
+},
+{
+"wrong": "I did a big mistake.",
+"right": "I made a big mistake.",
+"why": "make a mistake."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva na negativa: “I did it.”",
+"answer": "I didn't do it.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I forget my homework.”",
+"answer": "I forgot my homework.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I make a mistake.”",
+"answer": "I made a mistake.",
+"why": ""
+}
+]
+}

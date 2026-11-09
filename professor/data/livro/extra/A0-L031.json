@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estar × be + place",
+"wrong": "The keys stay on the table.",
+"right": "The keys are on the table.",
+"why": "Em português usamos \"ficar\" para localização; em inglês usa-se be + lugar."
+},
+"mcq": [
+{
+"q": "Ana ___ at school.",
+"opts": [
+"is",
+"stays",
+"has"
+],
+"ans": 0,
+"why": "Be + lugar."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I am in home.",
+"I am at home.",
+"I am on home."
+],
+"ans": 1,
+"why": "At home é fixo."
+},
+{
+"q": "The books ___ on the desk.",
+"opts": [
+"is",
+"be",
+"are"
+],
+"ans": 2,
+"why": "Plural: are."
+},
+{
+"q": "Where ___ you?",
+"opts": [
+"are",
+"do",
+"have"
+],
+"ans": 0,
+"why": "Where are you?"
+}
+],
+"fix": [
+{
+"wrong": "I am in home.",
+"right": "I am at home.",
+"why": "At home."
+},
+{
+"wrong": "The keys is on the table.",
+"right": "The keys are on the table.",
+"why": "Plural: are."
+},
+{
+"wrong": "Tom stays in the office now.",
+"right": "Tom is in the office now.",
+"why": "Use be."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “The cat / on the sofa”. Use is.",
+"answer": "The cat is on the sofa.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “Mia is at school.”",
+"answer": "Is Mia at school?",
+"why": ""
+},
+{
+"prompt": "Negue: “They are in the park.” (are not)",
+"answer": "They are not in the park.",
+"why": ""
+}
+]
+}

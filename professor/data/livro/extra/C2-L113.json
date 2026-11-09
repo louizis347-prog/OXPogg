@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo",
+"wrong": "Roughly the fifth of the text is quoted.",
+"right": "Roughly a fifth of the text is quoted.",
+"why": "Português “um quinto”; inglês a fifth sem artigo definido."
+},
+"mcq": [
+{
+"q": "About 20%:",
+"opts": [
+"roughly a fifth",
+"roughly fifth",
+"roughly the fifth"
+],
+"ans": 0,
+"why": "a fifth."
+},
+{
+"q": "Maximum:",
+"opts": [
+"no more than ten",
+"no most than ten",
+"no more of ten"
+],
+"ans": 0,
+"why": "no more than."
+},
+{
+"q": "Minimum:",
+"opts": [
+"at least ten",
+"at less ten",
+"at last ten"
+],
+"ans": 0,
+"why": "at least."
+},
+{
+"q": "Approximate proportion uses…",
+"opts": [
+"exactly",
+"only",
+"roughly"
+],
+"ans": 2,
+"why": "Aproximada."
+}
+],
+"fix": [
+{
+"wrong": "No more of ten.",
+"right": "No more than ten.",
+"why": "than."
+},
+{
+"wrong": "At last ten pages.",
+"right": "At least ten pages.",
+"why": "least."
+},
+{
+"wrong": "Roughly the half is quoted.",
+"right": "Roughly half is quoted.",
+"why": "Sem the."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com roughly: “About one fifth is quoted.”",
+"answer": "Roughly a fifth is quoted.",
+"why": ""
+},
+{
+"prompt": "Use “no more than”: “There are ten at most.”",
+"answer": "There are no more than ten.",
+"why": ""
+},
+{
+"prompt": "Use “at least”: “There are ten or more.”",
+"answer": "There are at least ten.",
+"why": ""
+}
+]
+}

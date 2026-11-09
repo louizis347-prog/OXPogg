@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conclude that",
+"wrong": "From these premises, we conclude to that the argument fails.",
+"right": "From these premises, we conclude that the argument fails.",
+"why": "Em português “concluímos por/que” aceita preposição. Em inglês, conclude é seguido diretamente de that."
+},
+"mcq": [
+{
+"q": "A **premise** is a...",
+"opts": [
+"starting claim",
+"final claim",
+"question"
+],
+"ans": 0,
+"why": "Premissa."
+},
+{
+"q": "A **valid** argument is one where...",
+"opts": [
+"all premises are true",
+"the conclusion follows",
+"it is short"
+],
+"ans": 1,
+"why": "Segue."
+},
+{
+"q": "A **sound** argument is valid and...",
+"opts": [
+"is popular",
+"is long",
+"has true premises"
+],
+"ans": 2,
+"why": "Premissas verdadeiras."
+},
+{
+"q": "Which links premise to conclusion?",
+"opts": [
+"therefore",
+"moreover",
+"besides"
+],
+"ans": 0,
+"why": "therefore."
+}
+],
+"fix": [
+{
+"wrong": "The premises is true.",
+"right": "The premises are true.",
+"why": "plural."
+},
+{
+"wrong": "The argument is valid but it isn’t sound, because the premise are false.",
+"right": "The argument is valid but it isn’t sound, because the premise is false.",
+"why": "Singular."
+},
+{
+"wrong": "Therefore the conclusion is follow.",
+"right": "Therefore the conclusion follows.",
+"why": "Verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com therefore: “The premises are true, so the conclusion holds.” (Therefore…)",
+"answer": "The premises are true; therefore, the conclusion holds.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “The premise is true.”",
+"answer": "The premises are true.",
+"why": ""
+},
+{
+"prompt": "Reescreva com conclude: “We reach the result that it fails.”",
+"answer": "We conclude that it fails.",
+"why": ""
+}
+]
+}

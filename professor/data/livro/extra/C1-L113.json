@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to have been",
+"wrong": "The mill is said to be built in 1900.",
+"right": "The mill is said to have been built in 1900.",
+"why": "O português usa o mesmo infinitivo para presente e passado. Em inglês, ação anterior ao relato pede to have + particípio."
+},
+"mcq": [
+{
+"q": "The mill is said ___ built in 1900.",
+"opts": [
+"to being",
+"to have been",
+"to be"
+],
+"ans": 1,
+"why": "Anterior."
+},
+{
+"q": "She is believed ___ a prize now.",
+"opts": [
+"to have held",
+"hold",
+"to hold"
+],
+"ans": 2,
+"why": "Presente."
+},
+{
+"q": "Qual indica ação anterior?",
+"opts": [
+"is said to have grown",
+"is said to grow",
+"is saying to grow"
+],
+"ans": 0,
+"why": "to have + pp."
+},
+{
+"q": "The firm is thought ___ in trouble.",
+"opts": [
+"being",
+"to be",
+"to been"
+],
+"ans": 1,
+"why": "to be."
+}
+],
+"fix": [
+{
+"wrong": "The mill is said to be built in 1900.",
+"right": "The mill is said to have been built in 1900.",
+"why": "Anterior."
+},
+{
+"wrong": "He is believed to has left.",
+"right": "He is believed to have left.",
+"why": "to have."
+},
+{
+"wrong": "She is said to been rich once.",
+"right": "She is said to have been rich once.",
+"why": "to have been."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “People say he left early.” (He is said…)",
+"answer": "He is said to have left early.",
+"why": ""
+},
+{
+"prompt": "Presente: “People think the firm is in trouble.” (The firm…)",
+"answer": "The firm is thought to be in trouble.",
+"why": ""
+},
+{
+"prompt": "Anterior: “People believe she won a prize.” (She…)",
+"answer": "She is believed to have won a prize.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would após if",
+"wrong": "If I would have known, I would have called.",
+"right": "Had I known, I would have called.",
+"why": "O brasileiro usa o futuro do pretérito (“se eu teria sabido”). Em inglês, nunca would na oração condicional; use had + sujeito + pp."
+},
+"mcq": [
+{
+"q": "___ I known, I would have called.",
+"opts": [
+"Did",
+"Had",
+"Would"
+],
+"ans": 1,
+"why": "Had I known."
+},
+{
+"q": "___ rates rise, we will sell.",
+"opts": [
+"Would",
+"Did",
+"Should"
+],
+"ans": 2,
+"why": "Should rates rise."
+},
+{
+"q": "Had we ___ , we would have won.",
+"opts": [
+"tried",
+"try",
+"trying"
+],
+"ans": 0,
+"why": "Particípio."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Would she known, she called.",
+"Had she known, she would have called.",
+"Had she knew, she would call."
+],
+"ans": 1,
+"why": "Had + pp."
+}
+],
+"fix": [
+{
+"wrong": "Had I knew, I would have called.",
+"right": "Had I known, I would have called.",
+"why": "Particípio."
+},
+{
+"wrong": "Should rates will rise, we sell.",
+"right": "Should rates rise, we will sell.",
+"why": "Base."
+},
+{
+"wrong": "Would I known, I would have called.",
+"right": "Had I known, I would have called.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If I had known, I would have called.”",
+"answer": "Had I known, I would have called.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If rates should rise, we will sell.”",
+"answer": "Should rates rise, we will sell.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If they had tried, they would have won.”",
+"answer": "Had they tried, they would have won.",
+"why": ""
+}
+]
+}

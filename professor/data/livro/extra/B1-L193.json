@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + gerúndio",
+"wrong": "I avoid to watch the news at night.",
+"right": "I avoid watching the news at night.",
+"why": "Em português “evito assistir” (infinitivo). Em inglês avoid, suggest, consider são seguidos de -ing."
+},
+"mcq": [
+{
+"q": "She suggested **___** the limit.",
+"opts": [
+"lower",
+"lowering",
+"to lower"
+],
+"ans": 1,
+"why": "Suggest -ing."
+},
+{
+"q": "I avoid **___** it.",
+"opts": [
+"watching",
+"watch",
+"to watch"
+],
+"ans": 0,
+"why": "Avoid -ing."
+},
+{
+"q": "Consider **___** a break.",
+"opts": [
+"to take",
+"take",
+"taking"
+],
+"ans": 2,
+"why": "Consider -ing."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He enjoys reading.",
+"He enjoys to read.",
+"He enjoys read."
+],
+"ans": 0,
+"why": "Enjoy -ing."
+}
+],
+"fix": [
+{
+"wrong": "I suggest to limit it.",
+"right": "I suggest limiting it.",
+"why": "Suggest -ing."
+},
+{
+"wrong": "She avoids to check.",
+"right": "She avoids checking.",
+"why": "Avoid -ing."
+},
+{
+"wrong": "We consider to stop.",
+"right": "We consider stopping.",
+"why": "Consider -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Let’s limit screens.” (I suggest…)",
+"answer": "I suggest limiting screens.",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “I avoid watching it.” (He…)",
+"answer": "He avoids watching it.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She considers moving.”",
+"answer": "She doesn’t consider moving.",
+"why": ""
+}
+]
+}

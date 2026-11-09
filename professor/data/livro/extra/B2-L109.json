@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "keep + -ing",
+"wrong": "She keeps to call me every day.",
+"right": "She keeps calling me every day.",
+"why": "Em português \"continua a ligar\" lembra infinitivo. Em inglês, keep é seguido de -ing."
+},
+"mcq": [
+{
+"q": "keep + -ing =",
+"opts": [
+"parar de fazer",
+"continuar fazendo",
+"fazer pela primeira vez"
+],
+"ans": 1,
+"why": "keep -ing = continuar."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Keep to go!",
+"Keep go!",
+"Keep going!"
+],
+"ans": 2,
+"why": "keep + -ing."
+},
+{
+"q": "keep up with =",
+"opts": [
+"acompanhar o ritmo",
+"desistir",
+"guardar"
+],
+"ans": 0,
+"why": "keep up with = acompanhar."
+},
+{
+"q": "keep in touch =",
+"opts": [
+"tocar",
+"conter",
+"manter contato"
+],
+"ans": 2,
+"why": "keep in touch."
+}
+],
+"fix": [
+{
+"wrong": "He keeps to ask the same question.",
+"right": "He keeps asking the same question.",
+"why": "keep + -ing."
+},
+{
+"wrong": "Please keep silent to.",
+"right": "Please keep quiet.",
+"why": "Forma simples."
+},
+{
+"wrong": "We kept in touch with each other for years to.",
+"right": "We kept in touch for years.",
+"why": "Sem repetição."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com keep: “She continues to talk.”",
+"answer": "She keeps talking.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “Keep talking!”",
+"answer": "Don't keep talking!",
+"why": ""
+},
+{
+"prompt": "Reescreva com keep in touch: “We stay in contact.”",
+"answer": "We keep in touch.",
+"why": ""
+}
+]
+}

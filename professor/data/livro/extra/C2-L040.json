@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "depth",
+"wrong": "The portrait has a shallow deep of field.",
+"right": "The portrait has a shallow depth of field.",
+"why": "Em português “profundidade” é um substantivo. O aluno usa deep (adjetivo) em vez de depth."
+},
+"mcq": [
+{
+"q": "A **wide aperture** gives...",
+"opts": [
+"frozen motion",
+"blurred background",
+"more noise"
+],
+"ans": 1,
+"why": "Fundo desfocado."
+},
+{
+"q": "A **fast shutter speed**...",
+"opts": [
+"blurs motion",
+"adds noise",
+"freezes motion"
+],
+"ans": 2,
+"why": "Congela."
+},
+{
+"q": "**Low ISO** means...",
+"opts": [
+"less noise",
+"more noise",
+"more blur"
+],
+"ans": 0,
+"why": "Menos ruído."
+},
+{
+"q": "The **plane of focus** is...",
+"opts": [
+"the sky",
+"where the image is sharp",
+"the lens cap"
+],
+"ans": 1,
+"why": "Plano."
+}
+],
+"fix": [
+{
+"wrong": "Use a fast shutter for freeze the motion.",
+"right": "Use a fast shutter to freeze the motion.",
+"why": "to."
+},
+{
+"wrong": "The background are blurred.",
+"right": "The background is blurred.",
+"why": "is."
+},
+{
+"wrong": "She shot at low ISO for have less noise.",
+"right": "She shot at low ISO to have less noise.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com wide aperture: “A big opening gives a blurred background.”",
+"answer": "A wide aperture gives a blurred background.",
+"why": ""
+},
+{
+"prompt": "Reescreva com to: “Use a fast shutter for freezing motion.” (to…)",
+"answer": "Use a fast shutter to freeze motion.",
+"why": ""
+},
+{
+"prompt": "Corrija deep por depth: “The deep of field is shallow.”",
+"answer": "The depth of field is shallow.",
+"why": ""
+}
+]
+}

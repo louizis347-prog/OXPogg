@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "arising from",
+"wrong": "Damages arisen from the breach are capped.",
+"right": "Damages arising from the breach are capped.",
+"why": "O português usa o particípio (“decorrentes”) e o aluno escolhe arisen. Em inglês jurídico, a oração reduzida ativa é arising from."
+},
+"mcq": [
+{
+"q": "In a contract, “irrespective of” means...",
+"opts": [
+"because of",
+"unless",
+"no matter"
+],
+"ans": 2,
+"why": "Independentemente de."
+},
+{
+"q": "“Issues ___ attention” means they deserve it.",
+"opts": [
+"merit",
+"need of",
+"deserve to"
+],
+"ans": 0,
+"why": "merit attention."
+},
+{
+"q": "A **liability cap** is...",
+"opts": [
+"a fee",
+"an upper limit on responsibility",
+"a signature"
+],
+"ans": 1,
+"why": "Teto."
+},
+{
+"q": "“Kindly reply” in plain English is...",
+"opts": [
+"Reply now",
+"Revert it",
+"Please reply"
+],
+"ans": 2,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "The clause is applied irrespective the breach.",
+"right": "The clause applies irrespective of the breach.",
+"why": "irrespective of."
+},
+{
+"wrong": "Issues which merit to attention are listed.",
+"right": "Issues which merit attention are listed.",
+"why": "Transitivo."
+},
+{
+"wrong": "The indemnity clause were amended.",
+"right": "The indemnity clause was amended.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com irrespective of: “No matter the cause, the cap applies.”",
+"answer": "Irrespective of the cause, the cap applies.",
+"why": ""
+},
+{
+"prompt": "Reescreva com arising from: “Damages caused by the breach are capped.”",
+"answer": "Damages arising from the breach are capped.",
+"why": ""
+},
+{
+"prompt": "Reescreva mais simples: “Kindly revert by Friday.” (Please reply…)",
+"answer": "Please reply by Friday.",
+"why": ""
+}
+]
+}

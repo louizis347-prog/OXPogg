@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "som e grafia",
+"wrong": "A cup off tea.",
+"right": "A cup of tea.",
+"why": "Em fala rápida of vira /əv/ e to vira /tə/; o brasileiro, que pronuncia tudo com vogal plena, ouve e escreve errado (off, too, four). Na escrita mantém-se of, to, for."
+},
+"mcq": [
+{
+"q": "to em fala rápida:",
+"opts": [
+"/tuː/",
+"/toʊ/",
+"/tə/"
+],
+"ans": 2,
+"why": "Schwa."
+},
+{
+"q": "of em fala rápida:",
+"opts": [
+"/əv/",
+"/ɒv/",
+"/ɔf/"
+],
+"ans": 0,
+"why": "Schwa."
+},
+{
+"q": "A palavra funcional costuma ser:",
+"opts": [
+"fraca",
+"forte",
+"acentuada"
+],
+"ans": 0,
+"why": "Fraca."
+},
+{
+"q": "Na escrita se escreve: (Reduction of function words (to, of, for, and, can))",
+"opts": [
+"tu",
+"to",
+"ta"
+],
+"ans": 1,
+"why": "Padrão."
+}
+],
+"fix": [
+{
+"wrong": "I want too go.",
+"right": "I want to go.",
+"why": "to, não too."
+},
+{
+"wrong": "A cup off tea.",
+"right": "A cup of tea.",
+"why": "of, não off."
+},
+{
+"wrong": "Thanks four coming.",
+"right": "Thanks for coming.",
+"why": "for, não four."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija a grafia: “a cup off coffee”",
+"answer": "a cup of coffee",
+"why": ""
+},
+{
+"prompt": "Corrija: “I went too the store.”",
+"answer": "I went to the store.",
+"why": ""
+},
+{
+"prompt": "Corrija: “A gift four you.”",
+"answer": "A gift for you.",
+"why": ""
+}
+]
+}

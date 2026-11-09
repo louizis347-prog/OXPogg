@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito obrigatório",
+"wrong": "Work in a bank.",
+"right": "She works in a bank.",
+"why": "Em português o verbo já indica a pessoa; em inglês o sujeito aparece sempre."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"They play soccer.",
+"They plays soccer.",
+"They are play soccer."
+],
+"ans": 0,
+"why": "They: base."
+},
+{
+"q": "Present Simple is used for…",
+"opts": [
+"right now",
+"habits",
+"past"
+],
+"ans": 1,
+"why": "Hábitos e fatos."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"You studies at night.",
+"You are study at night.",
+"You study at night."
+],
+"ans": 2,
+"why": "You: base."
+},
+{
+"q": "Negative: “They eat meat.”",
+"opts": [
+"They do not eat meat.",
+"They not eat meat.",
+"They does not eat meat."
+],
+"ans": 0,
+"why": "They: do not."
+}
+],
+"fix": [
+{
+"wrong": "We am work today.",
+"right": "We work today.",
+"why": "Sem am."
+},
+{
+"wrong": "Work every day.",
+"right": "I work every day.",
+"why": "Sujeito."
+},
+{
+"wrong": "They does not live here.",
+"right": "They do not live here.",
+"why": "They: do."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue com do not: “We live here.”",
+"answer": "We do not live here.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “They”: “I study at night.”",
+"answer": "They study at night.",
+"why": ""
+},
+{
+"prompt": "Escreva com “You”: “I work in a bank.”",
+"answer": "You work in a bank.",
+"why": ""
+}
+]
+}

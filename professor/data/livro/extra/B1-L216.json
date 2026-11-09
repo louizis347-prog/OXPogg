@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "so/such",
+"wrong": "It was so a hard thing.",
+"right": "It was such a hard thing.",
+"why": "Português usa “tão” para tudo; so não aceita substantivo sem adjetivo + a."
+},
+"mcq": [
+{
+"q": "so busy **___** I forgot:",
+"opts": [
+"what",
+"than",
+"that"
+],
+"ans": 2,
+"why": "So…that."
+},
+{
+"q": "such a hard **___**:",
+"opts": [
+"things",
+"thing's",
+"thing"
+],
+"ans": 2,
+"why": "Singular."
+},
+{
+"q": "It’s worth **___**:",
+"opts": [
+"to take",
+"taking",
+"take"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Ênfase:",
+"opts": [
+"so fast",
+"such fast",
+"such a fast"
+],
+"ans": 0,
+"why": "Advérbio."
+}
+],
+"fix": [
+{
+"wrong": "I was so busy what I forgot.",
+"right": "I was so busy that I forgot.",
+"why": "That."
+},
+{
+"wrong": "It’s worth to take a break.",
+"right": "It’s worth taking a break.",
+"why": "-ing."
+},
+{
+"wrong": "It was so a hard thing.",
+"right": "It was such a hard thing.",
+"why": "Such a."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “I was busy. I forgot.” (so… that)",
+"answer": "I was so busy that I forgot.",
+"why": ""
+},
+{
+"prompt": "Una: “It was a hard thing. I cried.” (such a… that)",
+"answer": "It was such a hard thing that I cried.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Taking a break is useful.” (worth)",
+"answer": "It’s worth taking a break.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be em perguntas",
+"wrong": "Why you are late?",
+"right": "Why are you late?",
+"why": "O brasileiro mantém a ordem afirmativa; com be, o verbo vem antes do sujeito."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"She isn’t at work.",
+"She no is at work.",
+"She doesn’t at work."
+],
+"ans": 0,
+"why": "Isn’t."
+},
+{
+"q": "Age: “I ___ 30.”",
+"opts": [
+"have",
+"am",
+"do"
+],
+"ans": 1,
+"why": "Be."
+},
+{
+"q": "Why ___ they sad?",
+"opts": [
+"do",
+"have",
+"are"
+],
+"ans": 2,
+"why": "Be em pergunta."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Are we late?",
+"We are late?",
+"Do we late?"
+],
+"ans": 0,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Why you are sad?",
+"right": "Why are you sad?",
+"why": "Inversão."
+},
+{
+"wrong": "She have cold.",
+"right": "She is cold.",
+"why": "Estado com be."
+},
+{
+"wrong": "They no are here.",
+"right": "They are not here.",
+"why": "Not depois de are."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “They are tired.”",
+"answer": "Are they tired?",
+"why": ""
+},
+{
+"prompt": "Negue: “We are ready.” (are not)",
+"answer": "We are not ready.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be: “I have thirsty.”",
+"answer": "I am thirsty.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "transitivo",
+"wrong": "We will leverage of our core competencies.",
+"right": "We will leverage our core competencies.",
+"why": "Em português “alavancar-se em” leva preposição. Em inglês, leverage é transitivo direto."
+},
+"mcq": [
+{
+"q": "“Circle back” means...",
+"opts": [
+"go in circles",
+"return to a topic later",
+"turn around"
+],
+"ans": 1,
+"why": "Retomar."
+},
+{
+"q": "“Move the needle” means...",
+"opts": [
+"threaten",
+"read",
+"make a real difference"
+],
+"ans": 2,
+"why": "Fazer diferença."
+},
+{
+"q": "“Take it offline” means...",
+"opts": [
+"talk outside the meeting",
+"turn off wifi",
+"cancel"
+],
+"ans": 0,
+"why": "Conversar fora."
+},
+{
+"q": "Jargon is best avoided when...",
+"opts": [
+"speaking to peers",
+"clarity matters",
+"joking"
+],
+"ans": 1,
+"why": "Clareza."
+}
+],
+"fix": [
+{
+"wrong": "We will circle back it later.",
+"right": "We will circle back to it later.",
+"why": "circle back to."
+},
+{
+"wrong": "This won’t move the needle at all it.",
+"right": "This won’t move the needle at all.",
+"why": "Sem it."
+},
+{
+"wrong": "Let’s take this off line.",
+"right": "Let’s take this offline.",
+"why": "offline."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem jargão: “Let’s circle back next week.”",
+"answer": "Let’s return to this next week.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem jargão: “Let’s take it offline.” (talk about it after the meeting)",
+"answer": "Let’s talk about it after the meeting.",
+"why": ""
+},
+{
+"prompt": "Reescreva com leverage: “We use our strengths.”",
+"answer": "We leverage our strengths.",
+"why": ""
+}
+]
+}

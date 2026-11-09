@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mandativo",
+"wrong": "We propose that the school bans phones.",
+"right": "We propose that the school ban phones.",
+"why": "Em português “propomos que a escola proíba” usa subjuntivo, que o aluno traduz com -s. Em inglês, propose/urge/suggest that + base (sem -s)."
+},
+"mcq": [
+{
+"q": "“We propose that the council ___ the plan.”",
+"opts": [
+"adopts",
+"adopt",
+"adopted"
+],
+"ans": 1,
+"why": "Base."
+},
+{
+"q": "Which is a **refutation** opener?",
+"opts": [
+"Our first argument is…",
+"For these reasons,",
+"My opponent claims…, but in fact…"
+],
+"ans": 2,
+"why": "Refutação."
+},
+{
+"q": "The **closing** uses...",
+"opts": [
+"For these reasons, we urge you to…",
+"First,",
+"Moreover,"
+],
+"ans": 0,
+"why": "Fecho."
+},
+{
+"q": "“This house ___ that…”",
+"opts": [
+"believe",
+"believes",
+"believing"
+],
+"ans": 1,
+"why": "believes."
+}
+],
+"fix": [
+{
+"wrong": "We propose that the team writes a report.",
+"right": "We propose that the team write a report.",
+"why": "Base."
+},
+{
+"wrong": "My opponent claim that costs fell.",
+"right": "My opponent claims that costs fell.",
+"why": "-s."
+},
+{
+"wrong": "We urge to vote for the proposition.",
+"right": "We urge you to vote for the proposition.",
+"why": "urge + objeto + to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com propose that: “We want the school to ban phones.” (We propose that…)",
+"answer": "We propose that the school ban phones.",
+"why": ""
+},
+{
+"prompt": "Reescreva com urge: “Please vote yes.” (We urge you…)",
+"answer": "We urge you to vote yes.",
+"why": ""
+},
+{
+"prompt": "Reescreva com claims: “My opponent says costs fell.”",
+"answer": "My opponent claims that costs fell.",
+"why": ""
+}
+]
+}

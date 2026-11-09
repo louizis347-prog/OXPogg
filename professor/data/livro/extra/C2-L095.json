@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "concordância",
+"wrong": "The data suggests a trend.",
+"right": "The data suggest a trend.",
+"why": "Em português “os dados” é plural; em inglês acadêmico data costuma ser plural também, mas o brasileiro erra ao tratar como incontável."
+},
+"mcq": [
+{
+"q": "The findings ___ a link.",
+"opts": [
+"indicate",
+"indicates",
+"indicating"
+],
+"ans": 0,
+"why": "Plural."
+},
+{
+"q": "Suggest vs indicate:",
+"opts": [
+"indicate is firmer",
+"suggest is firmer",
+"same"
+],
+"ans": 0,
+"why": "Indicate mais firme."
+},
+{
+"q": "Without claiming proof:",
+"opts": [
+"The data suggest…",
+"The data deny…",
+"The data prove…"
+],
+"ans": 0,
+"why": "Suggest."
+},
+{
+"q": "Indicate takes…",
+"opts": [
+"only places",
+"only people",
+"data and signs"
+],
+"ans": 2,
+"why": "Dados."
+}
+],
+"fix": [
+{
+"wrong": "The findings indicates a trend.",
+"right": "The findings indicate a trend.",
+"why": "Plural."
+},
+{
+"wrong": "The data suggests that.",
+"right": "The data suggest that.",
+"why": "Data plural."
+},
+{
+"wrong": "It suggests to a trend.",
+"right": "It suggests a trend.",
+"why": "Transitivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Singular: “The finding indicates a trend.”",
+"answer": "The finding indicates a trend.",
+"why": ""
+},
+{
+"prompt": "Negativo: “The data suggest a trend.”",
+"answer": "The data do not suggest a trend.",
+"why": ""
+},
+{
+"prompt": "Passado: “The data suggest a trend.”",
+"answer": "The data suggested a trend.",
+"why": ""
+}
+]
+}

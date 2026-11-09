@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "present perfect continuous (produção)",
+"wrong": "We are planning a trip since March and I am saving money for six months.",
+"right": "We have been planning a trip since March and I have been saving money for six months.",
+"why": "Em português usamos o presente (“planejamos desde março”). Em inglês, ação em andamento desde o passado pede have been + -ing com for/since."
+},
+"mcq": [
+{
+"q": "I ___ money for months.",
+"opts": [
+"am saving",
+"have been saving",
+"saved"
+],
+"ans": 1,
+"why": "PPC."
+},
+{
+"q": "We have been planning ___ March.",
+"opts": [
+"for",
+"during",
+"since"
+],
+"ans": 2,
+"why": "since March."
+},
+{
+"q": "How long ___ she been studying?",
+"opts": [
+"has",
+"is",
+"does"
+],
+"ans": 0,
+"why": "has been."
+},
+{
+"q": "“She has been running” shows…",
+"opts": [
+"ação concluída",
+"ação em andamento",
+"futuro"
+],
+"ans": 1,
+"why": "Continuidade."
+}
+],
+"fix": [
+{
+"wrong": "I am saving since January.",
+"right": "I have been saving since January.",
+"why": "PPC."
+},
+{
+"wrong": "We have been plan a trip.",
+"right": "We have been planning a trip.",
+"why": "-ing."
+},
+{
+"wrong": "He has been work for three hours.",
+"right": "He has been working for three hours.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I plan a trip. It started in May.” (since)",
+"answer": "I have been planning a trip since May.",
+"why": ""
+},
+{
+"prompt": "Pergunte: “She studies.” (How long)",
+"answer": "How long has she been studying?",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “I have been saving money.”",
+"answer": "I haven't been saving money.",
+"why": ""
+}
+]
+}

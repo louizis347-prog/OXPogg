@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo de relato",
+"wrong": "Ferro said that the registrar maintain the rule.",
+"right": "Ferro argued that the registrar maintained the rule.",
+"why": "Português usa “disse” para tudo; inglês escolhe o verbo pela atitude (argued, maintained, declined to say)."
+},
+"mcq": [
+{
+"q": "Defended position:",
+"opts": [
+"The registrar maintaining…",
+"The registrar maintained that…",
+"The registrar maintain…"
+],
+"ans": 1,
+"why": "maintained that."
+},
+{
+"q": "Refused to answer:",
+"opts": [
+"declined that",
+"declined saying",
+"declined to say"
+],
+"ans": 2,
+"why": "decline to."
+},
+{
+"q": "Argued that = …",
+"opts": [
+"presented a case",
+"refused",
+"joked"
+],
+"ans": 0,
+"why": "Defesa."
+},
+{
+"q": "After declined, use…",
+"opts": [
+"to + base",
+"that",
+"-ing"
+],
+"ans": 0,
+"why": "to + base."
+}
+],
+"fix": [
+{
+"wrong": "Ferro declined saying more.",
+"right": "Ferro declined to say more.",
+"why": "to."
+},
+{
+"wrong": "She maintain that it was fair.",
+"right": "She maintained that it was fair.",
+"why": "Passado."
+},
+{
+"wrong": "He argued to the rule was fair.",
+"right": "He argued that the rule was fair.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com declined: “Ferro refused to say more.”",
+"answer": "Ferro declined to say more.",
+"why": ""
+},
+{
+"prompt": "Reescreva com maintained: “She kept saying the rule was fair.”",
+"answer": "She maintained that the rule was fair.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The registrar maintained the rule.”",
+"answer": "The rule was maintained by the registrar.",
+"why": ""
+}
+]
+}

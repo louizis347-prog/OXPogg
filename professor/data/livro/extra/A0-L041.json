@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estar × be + place",
+"wrong": "The keys stay on the table.",
+"right": "The keys are on the table.",
+"why": "Em português usamos \"ficar\" para localização; em inglês usa-se be + lugar."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"I am in home.",
+"I am at home.",
+"I am on home."
+],
+"ans": 1,
+"why": "At home é fixo."
+},
+{
+"q": "They ___ a car.",
+"opts": [
+"has",
+"are",
+"have"
+],
+"ans": 2,
+"why": "They: have."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He needs water.",
+"He need water.",
+"He is needs water."
+],
+"ans": 0,
+"why": "Terceira: needs."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Where he is from?",
+"Where is he from?",
+"Where is from he?"
+],
+"ans": 1,
+"why": "Wh + be + sujeito."
+}
+],
+"fix": [
+{
+"wrong": "The keys is on the table.",
+"right": "The keys are on the table.",
+"why": "Plural: are."
+},
+{
+"wrong": "She is a dog. (she owns a dog)",
+"right": "She has a dog.",
+"why": "Posse: has."
+},
+{
+"wrong": "He like cats.",
+"right": "He likes cats.",
+"why": "Terceira pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o sujeito por “They”: “He has a car.”",
+"answer": "They have a car.",
+"why": ""
+},
+{
+"prompt": "Troque para “They”: “He likes music.”",
+"answer": "They like music.",
+"why": ""
+},
+{
+"prompt": "Responda com from: “I / Brazil”",
+"answer": "I am from Brazil.",
+"why": ""
+}
+]
+}

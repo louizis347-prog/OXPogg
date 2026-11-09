@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "I’m afraid for changing.",
+"right": "I’m afraid of changing.",
+"why": "Português: “medo de mudar”. Em inglês: afraid of + -ing. Para dúvida use should I."
+},
+"mcq": [
+{
+"q": "I’m afraid **___** changing.",
+"opts": [
+"to",
+"of",
+"for"
+],
+"ans": 1,
+"why": "Afraid of."
+},
+{
+"q": "Should I stay **___** go?",
+"opts": [
+"or",
+"and",
+"but"
+],
+"ans": 0,
+"why": "Or."
+},
+{
+"q": "A consequence:",
+"opts": [
+"As a result",
+"Because",
+"But"
+],
+"ans": 0,
+"why": "Conseqüência."
+},
+{
+"q": "Dúvida:",
+"opts": [
+"I should stay or go?",
+"Stay I should?",
+"Should I stay or go?"
+],
+"ans": 2,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "I should to stay.",
+"right": "I should stay.",
+"why": "Modal sem to."
+},
+{
+"wrong": "I’m afraid for change.",
+"right": "I’m afraid of change.",
+"why": "Afraid of."
+},
+{
+"wrong": "Should I to go?",
+"right": "Should I go?",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “I should stay.”",
+"answer": "Should I stay?",
+"why": ""
+},
+{
+"prompt": "Use afraid of: “I fear changing.”",
+"answer": "I’m afraid of changing.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I should go.”",
+"answer": "I shouldn’t go.",
+"why": ""
+}
+]
+}

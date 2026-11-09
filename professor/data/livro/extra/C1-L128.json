@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sem -s no subjuntivo",
+"wrong": "I demand that she creates a rule.",
+"right": "I demand that she create a rule.",
+"why": "O brasileiro conjuga normalmente na 3ª pessoa. Após demand/insist/suggest, a forma base fica sem -s."
+},
+"mcq": [
+{
+"q": "I demand that rents ___ published.",
+"opts": [
+"be",
+"are",
+"is"
+],
+"ans": 0,
+"why": "be."
+},
+{
+"q": "…that she ___ a rule.",
+"opts": [
+"created",
+"create",
+"creates"
+],
+"ans": 1,
+"why": "create."
+},
+{
+"q": "It is important that he ___ early.",
+"opts": [
+"leaves",
+"left",
+"leave"
+],
+"ans": 2,
+"why": "leave."
+},
+{
+"q": "They insist that the site ___ closed.",
+"opts": [
+"be",
+"is",
+"was"
+],
+"ans": 0,
+"why": "be."
+}
+],
+"fix": [
+{
+"wrong": "I demand that she creates a rule.",
+"right": "I demand that she create a rule.",
+"why": "Base."
+},
+{
+"wrong": "We insist that he leaves now.",
+"right": "We insist that he leave now.",
+"why": "Base."
+},
+{
+"wrong": "It is vital that the fee is paid.",
+"right": "It is vital that the fee be paid.",
+"why": "be."
+}
+],
+"rewrite": [
+{
+"prompt": "Subj.: “I demand that the rents are published.”",
+"answer": "I demand that the rents be published.",
+"why": ""
+},
+{
+"prompt": "Subj.: “We insist that he leaves.”",
+"answer": "We insist that he leave.",
+"why": ""
+},
+{
+"prompt": "Subj.: “They request that she creates a form.”",
+"answer": "They request that she create a form.",
+"why": ""
+}
+]
+}

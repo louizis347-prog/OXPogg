@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "some × any",
+"wrong": "I don’t have some money.",
+"right": "I don’t have any money.",
+"why": "Em português \"algum\" e \"nenhum\" mudam de forma; em inglês some vai em afirmativas e any em negativas e perguntas."
+},
+"mcq": [
+{
+"q": "I have ___ milk.",
+"opts": [
+"some",
+"any",
+"a"
+],
+"ans": 0,
+"why": "Afirmativa."
+},
+{
+"q": "I don’t have ___ milk.",
+"opts": [
+"some",
+"any",
+"a"
+],
+"ans": 1,
+"why": "Negativa."
+},
+{
+"q": "Do you have ___ milk?",
+"opts": [
+"some",
+"an",
+"any"
+],
+"ans": 2,
+"why": "Pergunta."
+},
+{
+"q": "Offer: Would you like ___ tea?",
+"opts": [
+"some",
+"any",
+"a"
+],
+"ans": 0,
+"why": "Oferta usa some."
+}
+],
+"fix": [
+{
+"wrong": "I don’t have some bread.",
+"right": "I don’t have any bread.",
+"why": "Any."
+},
+{
+"wrong": "Do you have some pens?",
+"right": "Do you have any pens?",
+"why": "Any."
+},
+{
+"wrong": "She has any books.",
+"right": "She has some books.",
+"why": "Some."
+}
+],
+"rewrite": [
+{
+"prompt": "Negue: “I have some water.”",
+"answer": "I don’t have any water.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You have some pens.”",
+"answer": "Do you have any pens?",
+"why": ""
+},
+{
+"prompt": "Complete: “She has ___ friends.” (frase completa, some)",
+"answer": "She has some friends.",
+"why": ""
+}
+]
+}

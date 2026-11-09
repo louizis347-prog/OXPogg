@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "zero conditional",
+"wrong": "If you will press it, it works.",
+"right": "If you press it, it works.",
+"why": "O português futuro/subjuntivo 'se apertar' leva o aluno a usar will. No zero conditional são dois presentes."
+},
+"mcq": [
+{
+"q": "If you ___ water, it freezes.",
+"opts": [
+"cooled",
+"cool",
+"will cool"
+],
+"ans": 1,
+"why": "presente."
+},
+{
+"q": "Plants die if they ___ water.",
+"opts": [
+"don't get",
+"didn't get",
+"won't get"
+],
+"ans": 0,
+"why": "presente."
+},
+{
+"q": "If it ___ cold, I stay in.",
+"opts": [
+"was",
+"is",
+"will be"
+],
+"ans": 1,
+"why": "presente."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"If I'm busy, I don't call.",
+"If I will be busy, I don't call.",
+"If I'm busy, I won't call."
+],
+"ans": 0,
+"why": "presente."
+}
+],
+"fix": [
+{
+"wrong": "If I will sleep, I feel better.",
+"right": "If I sleep, I feel better.",
+"why": "sem will."
+},
+{
+"wrong": "When he don't eat, he is weak.",
+"right": "When he doesn't eat, he is weak.",
+"why": "doesn't."
+},
+{
+"wrong": "If you heat it, it will melts.",
+"right": "If you heat it, it melts.",
+"why": "presente."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “It's hot. Ice melts.”",
+"answer": "If it's hot, ice melts.",
+"why": ""
+},
+{
+"prompt": "Una com when: “I am tired. I sleep.”",
+"answer": "When I'm tired, I sleep.",
+"why": ""
+},
+{
+"prompt": "Negativa: “If you water it, it grows.” (não rega)",
+"answer": "If you don't water it, it dies.",
+"why": ""
+}
+]
+}

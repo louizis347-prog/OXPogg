@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sílaba tônica",
+"wrong": "I live in an apartMENT.",
+"right": "I live in an aPARTment.",
+"why": "Como em português 'apartaMENto', o brasileiro desloca o acento; em inglês a sílaba forte é PART."
+},
+"mcq": [
+{
+"q": "Qual palavra tem acento na 1ª sílaba?",
+"opts": [
+"hoTEL",
+"TAble",
+"beLOW"
+],
+"ans": 1,
+"why": "TAble = TA-ble."
+},
+{
+"q": "Em **hotel**, a sílaba forte é:",
+"opts": [
+"HO",
+"TEL",
+"as duas iguais"
+],
+"ans": 1,
+"why": "hoTEL."
+},
+{
+"q": "Em **banana**, a sílaba forte é:",
+"opts": [
+"BA",
+"NA (2ª)",
+"NA (3ª)"
+],
+"ans": 1,
+"why": "baNAna."
+},
+{
+"q": "Em **teacher**, a sílaba forte é:",
+"opts": [
+"TEA",
+"CHER",
+"as duas iguais"
+],
+"ans": 0,
+"why": "TEAcher."
+}
+],
+"fix": [
+{
+"wrong": "The stress in 'table' is on ble.",
+"right": "The stress in 'table' is on ta.",
+"why": "TAble."
+},
+{
+"wrong": "The stress in 'hotel' is on ho.",
+"right": "The stress in 'hotel' is on tel.",
+"why": "hoTEL."
+},
+{
+"wrong": "The stress in 'teacher' is on cher.",
+"right": "The stress in 'teacher' is on tea.",
+"why": "TEAcher."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a sílaba forte em maiúsculas: “table”",
+"answer": "TAble",
+"why": ""
+},
+{
+"prompt": "Escreva a sílaba forte em maiúsculas: “hotel”",
+"answer": "hoTEL",
+"why": ""
+},
+{
+"prompt": "Escreva a sílaba forte em maiúsculas: “banana”",
+"answer": "baNAna",
+"why": ""
+}
+]
+}

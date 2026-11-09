@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "leitura",
+"wrong": "The poem says that what can not be said can still be shaped.",
+"right": "The poem says that what cannot be said can still be shaped.",
+"why": "Em português “não pode” são duas palavras; em inglês a forma usual é cannot, numa só palavra."
+},
+"mcq": [
+{
+"q": "Where to look for the central idea of a poem?",
+"opts": [
+"at the end",
+"the first word",
+"only the title"
+],
+"ans": 0,
+"why": "Conclusão."
+},
+{
+"q": "“What cannot be said can still be shaped” implies…",
+"opts": [
+"speech is easy",
+"poems are false",
+"form can carry meaning"
+],
+"ans": 2,
+"why": "Inferência."
+},
+{
+"q": "Inference means…",
+"opts": [
+"skip",
+"conclude from clues",
+"copy"
+],
+"ans": 1,
+"why": "Deduzir."
+},
+{
+"q": "Cannot is written…",
+"opts": [
+"as two words always",
+"with a hyphen",
+"as one word"
+],
+"ans": 2,
+"why": "Uma palavra."
+}
+],
+"fix": [
+{
+"wrong": "What can not be said can be shaped.",
+"right": "What cannot be said can be shaped.",
+"why": "cannot."
+},
+{
+"wrong": "The poem is saying about silence.",
+"right": "The poem is about silence.",
+"why": "Verbo."
+},
+{
+"wrong": "He inferred from the end that.",
+"right": "He inferred from the ending that…",
+"why": "Substantivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Readers shape what cannot be said.”",
+"answer": "What cannot be said is shaped by readers.",
+"why": ""
+},
+{
+"prompt": "Passado: “The poem shapes silence.”",
+"answer": "The poem shaped silence.",
+"why": ""
+},
+{
+"prompt": "Negativo: “The poem says it.”",
+"answer": "The poem does not say it.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "mesmo sujeito",
+"wrong": "Walking home, the rain started.",
+"right": "Walking home, I got wet in the rain.",
+"why": "O português tolera sujeito diferente. Em inglês, o sujeito da oração principal deve ser quem anda."
+},
+"mcq": [
+{
+"q": "Qual é a forma reduzida de \"the girl who is singing\"?",
+"opts": [
+"the girl sung",
+"the girl singing",
+"the girl to sing"
+],
+"ans": 1,
+"why": "Ativo = -ing."
+},
+{
+"q": "Qual é passiva reduzida?",
+"opts": [
+"the letter sending yesterday",
+"the letter to send yesterday",
+"the letter sent yesterday"
+],
+"ans": 2,
+"why": "Passiva = particípio."
+},
+{
+"q": "Complete: **___** tired, she went to bed.",
+"opts": [
+"Feeling",
+"Felt",
+"To feel"
+],
+"ans": 0,
+"why": "Mesmo sujeito: Feeling."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Having finish, he left.",
+"Finished having, he left.",
+"Having finished, he left."
+],
+"ans": 2,
+"why": "Having + particípio."
+}
+],
+"fix": [
+{
+"wrong": "The people live here are friendly.",
+"right": "The people living here are friendly.",
+"why": "Oração reduzida -ing."
+},
+{
+"wrong": "The cake baking by Mom is delicious.",
+"right": "The cake baked by Mom is delicious.",
+"why": "Particípio passado."
+},
+{
+"wrong": "Walking to school, the rain began.",
+"right": "Walking to school, I felt the rain begin.",
+"why": "Sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Reduza: “The students who study here are happy.”",
+"answer": "The students studying here are happy.",
+"why": ""
+},
+{
+"prompt": "Reduza: “The photos that were taken in May are lost.”",
+"answer": "The photos taken in May are lost.",
+"why": ""
+},
+{
+"prompt": "Reduza: “The man who is waiting is my boss.”",
+"answer": "The man waiting is my boss.",
+"why": ""
+}
+]
+}

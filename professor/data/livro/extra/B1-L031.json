@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "presente × present perfect continuous",
+"wrong": "How long are you waiting here?",
+"right": "How long have you been waiting here?",
+"why": "Em português “há quanto tempo você espera aqui?” usa o presente. Em inglês, ação em andamento desde o passado usa have been + -ing."
+},
+"mcq": [
+{
+"q": "I ___ cooking since noon.",
+"opts": [
+"am",
+"was",
+"have been"
+],
+"ans": 2,
+"why": "have been + -ing."
+},
+{
+"q": "She ___ for an hour.",
+"opts": [
+"is waiting",
+"has been waiting",
+"waited"
+],
+"ans": 1,
+"why": "for + duração."
+},
+{
+"q": "Which fits “since”?",
+"opts": [
+"Monday",
+"three days",
+"a long time"
+],
+"ans": 0,
+"why": "since + ponto."
+},
+{
+"q": "How long ___ you been working?",
+"opts": [
+"have",
+"are",
+"do"
+],
+"ans": 0,
+"why": "have you been."
+}
+],
+"fix": [
+{
+"wrong": "I am studying English since 2020.",
+"right": "I have been studying English since 2020.",
+"why": "Present Perfect Continuous."
+},
+{
+"wrong": "He has been wait for hours.",
+"right": "He has been waiting for hours.",
+"why": "-ing."
+},
+{
+"wrong": "We have been cook since noon.",
+"right": "We have been cooking since noon.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I cook. I started two hours ago.” (for)",
+"answer": "I have been cooking for two hours.",
+"why": ""
+},
+{
+"prompt": "Faça a pergunta: “You wait.” (How long)",
+"answer": "How long have you been waiting?",
+"why": ""
+},
+{
+"prompt": "Reescreva com she: “I have been working.”",
+"answer": "She has been working.",
+"why": ""
+}
+]
+}

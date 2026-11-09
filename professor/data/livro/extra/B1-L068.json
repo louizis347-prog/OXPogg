@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would × passado simples (narrativa)",
+"wrong": "Every night Clara would to leave a warm meal, and a cleaner would leave a note once.",
+"right": "Every night Clara would leave a warm meal, and a cleaner left a note once.",
+"why": "Em português “deixava” e “deixou” diferem só pelo tempo. Em inglês, ação repetida = would/used to; ação única = Past Simple."
+},
+"mcq": [
+{
+"q": "She ___ leave a warm meal every night.",
+"opts": [
+"would",
+"left once",
+"was left"
+],
+"ans": 0,
+"why": "Hábito."
+},
+{
+"q": "A cleaner ___ a note once.",
+"opts": [
+"would leave",
+"used to leave",
+"left"
+],
+"ans": 2,
+"why": "Fato único."
+},
+{
+"q": "“Clara smiled” expresses…",
+"opts": [
+"hábito",
+"emoção",
+"fato repetido"
+],
+"ans": 1,
+"why": "Emoção."
+},
+{
+"q": "Which means a one-time event?",
+"opts": [
+"He called me yesterday.",
+"He would call me.",
+"He used to call me."
+],
+"ans": 0,
+"why": "Past Simple."
+}
+],
+"fix": [
+{
+"wrong": "She would leave a note yesterday.",
+"right": "She left a note yesterday.",
+"why": "Fato único."
+},
+{
+"wrong": "Clara smile at him.",
+"right": "Clara smiled at him.",
+"why": "Passado."
+},
+{
+"wrong": "Every day she left a warm meal.",
+"right": "Every day she would leave a warm meal.",
+"why": "Hábito."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como hábito: “She left a warm meal every night.” (would)",
+"answer": "She would leave a warm meal every night.",
+"why": ""
+},
+{
+"prompt": "Reescreva como fato: “He would leave a note once.”",
+"answer": "He left a note once.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Clara smiles.”",
+"answer": "Clara smiled.",
+"why": ""
+}
+]
+}

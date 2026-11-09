@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "his/her",
+"wrong": "Ana likes his bag. (da Ana)",
+"right": "Ana likes her bag.",
+"why": "His/her concordam com o possuidor."
+},
+"mcq": [
+{
+"q": "This is Ana’s pen. It is ___.",
+"opts": [
+"her",
+"she",
+"hers"
+],
+"ans": 2,
+"why": "Hers."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Is this yours?",
+"Is this your?",
+"Is this you?"
+],
+"ans": 0,
+"why": "Yours."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a friend of my",
+"a friend of mine",
+"a friend of me"
+],
+"ans": 1,
+"why": "Of mine."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There house is big.",
+"They’re house is big.",
+"Their house is big."
+],
+"ans": 2,
+"why": "Their."
+}
+],
+"fix": [
+{
+"wrong": "Is this your? (a bolsa)",
+"right": "Is this yours?",
+"why": "Yours."
+},
+{
+"wrong": "That is her. (the bag)",
+"right": "That is hers.",
+"why": "Hers."
+},
+{
+"wrong": "There house is big.",
+"right": "Their house is big.",
+"why": "Their."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por pronome: “That is her bag.” (That bag is…)",
+"answer": "That bag is hers.",
+"why": ""
+},
+{
+"prompt": "Troque por pronome: “It is your pen.” (The pen is…)",
+"answer": "The pen is yours.",
+"why": ""
+},
+{
+"prompt": "Corrija: “It is there car.” (deles)",
+"answer": "It is their car.",
+"why": ""
+}
+]
+}

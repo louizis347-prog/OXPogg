@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "The cue cards swimmed in front of my eyes.",
+"right": "The cue cards swam in front of my eyes.",
+"why": "Português regulariza o passado; swim é irregular (swam)."
+},
+"mcq": [
+{
+"q": "Past of swim:",
+"opts": [
+"swum",
+"swam",
+"swimmed"
+],
+"ans": 1,
+"why": "swam."
+},
+{
+"q": "Direct speech:",
+"opts": [
+"I’ve known Daniel since we are nine.",
+"I know Daniel since nine.",
+"“I’ve known Daniel since we were nine.”"
+],
+"ans": 2,
+"why": "since + passado."
+},
+{
+"q": "Physical sensation:",
+"opts": [
+"my hands shook",
+"my hands did shake it",
+"my hands was shaking"
+],
+"ans": 0,
+"why": "shook."
+},
+{
+"q": "Vivid detail makes writing…",
+"opts": [
+"more formal",
+"more alive",
+"shorter"
+],
+"ans": 1,
+"why": "Vivacidade."
+}
+],
+"fix": [
+{
+"wrong": "I know Daniel since we were nine.",
+"right": "I’ve known Daniel since we were nine.",
+"why": "Present perfect."
+},
+{
+"wrong": "The cards swum.",
+"right": "The cards swam.",
+"why": "Passado."
+},
+{
+"wrong": "My hands were shake.",
+"right": "My hands were shaking.",
+"why": "Gerúndio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “The cards swim.”",
+"answer": "The cards swam.",
+"why": ""
+},
+{
+"prompt": "Use present perfect: “I know Daniel since we were nine.”",
+"answer": "I’ve known Daniel since we were nine.",
+"why": ""
+},
+{
+"prompt": "Negativo: “My hands shook.”",
+"answer": "My hands did not shake.",
+"why": ""
+}
+]
+}

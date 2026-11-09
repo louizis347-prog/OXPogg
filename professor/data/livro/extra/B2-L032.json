@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "He insists to speak.",
+"right": "He insists on speaking.",
+"why": "Português “insiste em falar”; o brasileiro usa to. Insist on / concentrate on + -ing."
+},
+"mcq": [
+{
+"q": "He insists **___** speaking.",
+"opts": [
+"to",
+"at",
+"on"
+],
+"ans": 2,
+"why": "On."
+},
+{
+"q": "Concentrate **___** listening.",
+"opts": [
+"on",
+"in",
+"at"
+],
+"ans": 0,
+"why": "On."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She insisted on paying.",
+"She insisted in paying.",
+"She insisted to pay."
+],
+"ans": 0,
+"why": "On."
+},
+{
+"q": "Depende de:",
+"opts": [
+"depend on",
+"depend of",
+"depend from"
+],
+"ans": 0,
+"why": "On."
+}
+],
+"fix": [
+{
+"wrong": "She insists to pay.",
+"right": "She insists on paying.",
+"why": "On."
+},
+{
+"wrong": "I concentrate in studying.",
+"right": "I concentrate on studying.",
+"why": "On."
+},
+{
+"wrong": "He insisted on speak.",
+"right": "He insisted on speaking.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “He insists. He speaks.” (on)",
+"answer": "He insists on speaking.",
+"why": ""
+},
+{
+"prompt": "Passado: “She insists on paying.”",
+"answer": "She insisted on paying.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He insists on speaking.”",
+"answer": "He doesn’t insist on speaking.",
+"why": ""
+}
+]
+}

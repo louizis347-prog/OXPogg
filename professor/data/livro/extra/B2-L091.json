@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb",
+"wrong": "After the argument, he gave up and let me choose the film.",
+"right": "After the argument, he gave in and let me choose the film.",
+"why": "Em português \"desistir\" e \"ceder\" são confundidos. Give up = desistir de algo; give in = ceder a alguém."
+},
+"mcq": [
+{
+"q": "give up =",
+"opts": [
+"doar",
+"desistir",
+"revelar"
+],
+"ans": 1,
+"why": "give up = parar de tentar."
+},
+{
+"q": "give away pode significar...",
+"opts": [
+"ceder",
+"desistir",
+"doar ou revelar"
+],
+"ans": 2,
+"why": "give away = doar; revelar segredo."
+},
+{
+"q": "Qual quer dizer ceder?",
+"opts": [
+"give in",
+"give up",
+"give out"
+],
+"ans": 0,
+"why": "give in = ceder."
+},
+{
+"q": "give way no trânsito =",
+"opts": [
+"desistir",
+"entregar",
+"dar a preferência"
+],
+"ans": 2,
+"why": "give way = ceder passagem."
+}
+],
+"fix": [
+{
+"wrong": "He gave up after a long argument and accepted my idea.",
+"right": "He gave in after a long argument and accepted my idea.",
+"why": "Ceder = give in."
+},
+{
+"wrong": "Never give out your dreams.",
+"right": "Never give up your dreams.",
+"why": "give up = desistir."
+},
+{
+"wrong": "She gave me a gift for my birthday to.",
+"right": "She gave me a gift for my birthday.",
+"why": "Não repita to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com give up: “She stopped trying.”",
+"answer": "She gave up.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give away: “He donated his books.”",
+"answer": "He gave away his books.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give in: “They surrendered.”",
+"answer": "They gave in.",
+"why": ""
+}
+]
+}

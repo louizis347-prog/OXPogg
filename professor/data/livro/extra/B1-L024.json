@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "acento tônico",
+"wrong": "She is the direcTOR of the school.",
+"right": "She is the diRECtor of the school.",
+"why": "Em português “diretor” é oxítona (diRETOR). O brasileiro transfere a sílaba tônica para o inglês; em inglês, director leva a força na 2ª sílaba (diRECtor) e muitas palavras não seguem o padrão do português."
+},
+"mcq": [
+{
+"q": "Which has stress on the 1st syllable?",
+"opts": [
+"LIbrary",
+"diRECtor",
+"volunTEER"
+],
+"ans": 0,
+"why": "LIbrary."
+},
+{
+"q": "Stress pattern of volunteer:",
+"opts": [
+"VOLunteer",
+"voLUNteer",
+"volunTEER"
+],
+"ans": 2,
+"why": "3ª sílaba."
+},
+{
+"q": "Stress pattern of computer:",
+"opts": [
+"COMputer",
+"computER",
+"comPUter"
+],
+"ans": 2,
+"why": "2ª sílaba."
+},
+{
+"q": "Stressed syllable is…",
+"opts": [
+"louder and longer",
+"softer",
+"always last"
+],
+"ans": 0,
+"why": "Mais forte, longa e clara."
+}
+],
+"fix": [
+{
+"wrong": "The COMputer is new.",
+"right": "The comPUter is new.",
+"why": "Tônica na 2ª sílaba."
+},
+{
+"wrong": "He is a VOLunteer.",
+"right": "He is a volunTEER.",
+"why": "Tônica na última."
+},
+{
+"wrong": "I love the liBRARy.",
+"right": "I love the LIbrary.",
+"why": "Tônica na 1ª."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva a sílaba tônica em maiúsculas: “library”",
+"answer": "LIbrary",
+"why": ""
+},
+{
+"prompt": "Escreva a sílaba tônica em maiúsculas: “director”",
+"answer": "diRECtor",
+"why": ""
+},
+{
+"prompt": "Escreva a sílaba tônica em maiúsculas: “volunteer”",
+"answer": "volunTEER",
+"why": ""
+}
+]
+}

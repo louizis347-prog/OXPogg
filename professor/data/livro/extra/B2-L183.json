@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "make a research",
+"wrong": "The students made a research on pollution.",
+"right": "The students did research on pollution.",
+"why": "\"Fazer uma pesquisa\" vira make a research. Em inglês, do research (incontável)."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"This essay will discuss both views.",
+"This essay will discuss about both views.",
+"This essay discusses of both views."
+],
+"ans": 0,
+"why": "discuss é transitivo."
+},
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"According to me",
+"In my opinion",
+"By me"
+],
+"ans": 1,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"report",
+"graph",
+"information"
+],
+"ans": 2,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"is",
+"are",
+"was"
+],
+"ans": 1,
+"why": "people plural."
+}
+],
+"fix": [
+{
+"wrong": "He made a research.",
+"right": "He did research.",
+"why": "do research."
+},
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+},
+{
+"wrong": "It is a problem very serious.",
+"right": "It is a very serious problem.",
+"why": "ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com increase in: “Sales increased.”",
+"answer": "There was an increase in sales.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The graph shows a fall.”",
+"answer": "The graph showed a fall.",
+"why": ""
+}
+]
+}

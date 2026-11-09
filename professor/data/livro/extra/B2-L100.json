@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "although ... but",
+"wrong": "Although the cost is high, but the plan is useful.",
+"right": "Although the cost is high, the plan is useful.",
+"why": "Em português dizemos \"embora... mas\". Em inglês, use apenas um conector."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"report",
+"information",
+"graph"
+],
+"ans": 1,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"is",
+"was",
+"are"
+],
+"ans": 2,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales rose sharply.",
+"Sales raised sharply.",
+"Sales rised sharply."
+],
+"ans": 0,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"of",
+"on",
+"in"
+],
+"ans": 2,
+"why": "increase in."
+}
+],
+"fix": [
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+},
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+},
+{
+"wrong": "He made a research.",
+"right": "He did research.",
+"why": "do research."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+},
+{
+"prompt": "Reescreva com increase in: “Sales increased.”",
+"answer": "There was an increase in sales.",
+"why": ""
+}
+]
+}

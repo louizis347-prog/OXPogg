@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The installation is very actual and fresh.",
+"right": "The installation is very current and fresh.",
+"why": "Em português “atual” significa do momento. Em inglês, actual é “real, verdadeiro”; para “atual” use current/topical."
+},
+"mcq": [
+{
+"q": "A work that “repays attention” is...",
+"opts": [
+"boring",
+"worth close looking",
+"cheap"
+],
+"ans": 1,
+"why": "Vale a atenção."
+},
+{
+"q": "“Derivative” is a (negative) word for...",
+"opts": [
+"bright",
+"small",
+"unoriginal"
+],
+"ans": 2,
+"why": "Pouco original."
+},
+{
+"q": "“Juxtapose” means...",
+"opts": [
+"place side by side",
+"remove",
+"paint"
+],
+"ans": 0,
+"why": "Justapor."
+},
+{
+"q": "Positive adjective for striking art:",
+"opts": [
+"labored",
+"arresting",
+"sprawling"
+],
+"ans": 1,
+"why": "Marcante."
+}
+],
+"fix": [
+{
+"wrong": "The retrospective show is derivate and labored.",
+"right": "The retrospective show is derivative and labored.",
+"why": "Adjetivo: derivative."
+},
+{
+"wrong": "The palette is very sympathetic.",
+"right": "The palette is very pleasant.",
+"why": "sympathetic = compassivo."
+},
+{
+"wrong": "It feels date.",
+"right": "It feels dated.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com current: “The show deals with today’s themes.” (current)",
+"answer": "The show deals with current themes.",
+"why": ""
+},
+{
+"prompt": "Reescreva com juxtapose: “She puts blue next to red.”",
+"answer": "She juxtaposes blue and red.",
+"why": ""
+},
+{
+"prompt": "Reescreva com repays: “It is worth looking at carefully.” (It repays…)",
+"answer": "It repays careful attention.",
+"why": ""
+}
+]
+}

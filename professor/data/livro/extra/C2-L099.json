@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "He earned election and entered in the Senate.",
+"right": "He won election and entered the Senate.",
+"why": "Português “entrou no Senado”; enter é transitivo, sem in."
+},
+"mcq": [
+{
+"q": "Enter takes…",
+"opts": [
+"in the Senate",
+"the Senate",
+"to the Senate"
+],
+"ans": 1,
+"why": "Transitivo."
+},
+{
+"q": "Direct quote:",
+"opts": [
+"My faith in the Constitution is deep.",
+"“My faith in the Constitution is deep.”",
+"'My faith, Constitution'."
+],
+"ans": 1,
+"why": "Aspas."
+},
+{
+"q": "Career verbs:",
+"opts": [
+"earned, won, entered",
+"earn, win, entering",
+"earned, win, enter"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Won election means…",
+"opts": [
+"ran",
+"was elected",
+"lost"
+],
+"ans": 1,
+"why": "Eleito."
+}
+],
+"fix": [
+{
+"wrong": "He entered in the Senate.",
+"right": "He entered the Senate.",
+"why": "Sem in."
+},
+{
+"wrong": "She winned election.",
+"right": "She won election.",
+"why": "Irregular."
+},
+{
+"wrong": "He said that “My faith is deep”.",
+"right": "He said, “My faith is deep.”",
+"why": "Citação direta."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Voters elected him.”",
+"answer": "He was elected.",
+"why": ""
+},
+{
+"prompt": "Passado: “She enters the Senate.”",
+"answer": "She entered the Senate.",
+"why": ""
+},
+{
+"prompt": "Negativo: “He won election.”",
+"answer": "He did not win election.",
+"why": ""
+}
+]
+}

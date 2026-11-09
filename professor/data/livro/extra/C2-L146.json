@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "This study investigate if participants read both versions.",
+"right": "This study investigates whether participants read both versions.",
+"why": "Português “investiga se”; em inglês whether (não if) em objetivo formal, com -s."
+},
+"mcq": [
+{
+"q": "Objective:",
+"opts": [
+"This study investigates whether…",
+"This study investigates for…",
+"This study investigate if…"
+],
+"ans": 0,
+"why": "whether."
+},
+{
+"q": "Which sentence reports participants correctly in a methods section?",
+"opts": [
+"Participants reads",
+"Participants readed",
+"Participants read one of two versions."
+],
+"ans": 2,
+"why": "read."
+},
+{
+"q": "Indirect objective means…",
+"opts": [
+"a question",
+"not a question",
+"an order"
+],
+"ans": 1,
+"why": "Indireta."
+},
+{
+"q": "Past of read:",
+"opts": [
+"readed",
+"read (pronounced red)",
+"reeded"
+],
+"ans": 1,
+"why": "read."
+}
+],
+"fix": [
+{
+"wrong": "This study investigate whether.",
+"right": "This study investigates whether.",
+"why": "-s."
+},
+{
+"wrong": "Participants readed one version.",
+"right": "Participants read one version.",
+"why": "Irregular."
+},
+{
+"wrong": "The study investigates if or not they read.",
+"right": "The study investigates whether they read.",
+"why": "whether."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com whether: “This study asks if they read both.”",
+"answer": "This study investigates whether they read both.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Participants read one version.”",
+"answer": "Participants did not read one version.",
+"why": ""
+},
+{
+"prompt": "Singular: “Participants read one version.”",
+"answer": "A participant reads one version.",
+"why": ""
+}
+]
+}

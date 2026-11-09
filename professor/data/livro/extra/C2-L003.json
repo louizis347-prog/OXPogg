@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "diagnóstico",
+"wrong": "The doctor made a diagnostic yesterday.",
+"right": "The doctor gave a diagnosis yesterday.",
+"why": "Em português “diagnóstico” é o substantivo; o aluno usa diagnostic, que em inglês é adjetivo (diagnostic test). O substantivo é diagnosis."
+},
+"mcq": [
+{
+"q": "“In plain terms, it means…” is used to...",
+"opts": [
+"translate jargon",
+"hide risk",
+"end a call"
+],
+"ans": 0,
+"why": "Explicar termo."
+},
+{
+"q": "Plural of **diagnosis**:",
+"opts": [
+"diagnosises",
+"diagnoses",
+"diagnosis"
+],
+"ans": 1,
+"why": "diagnoses."
+},
+{
+"q": "To check understanding:",
+"opts": [
+"Do you get it?",
+"Are you stupid?",
+"Could you tell me what you’ve understood?"
+],
+"ans": 2,
+"why": "Confirmar."
+},
+{
+"q": "“Think of it as…” introduces a...",
+"opts": [
+"comparison",
+"number",
+"warning"
+],
+"ans": 0,
+"why": "Analogia."
+}
+],
+"fix": [
+{
+"wrong": "The diagnostic was high blood pressure.",
+"right": "The diagnosis was high blood pressure.",
+"why": "diagnosis."
+},
+{
+"wrong": "This is call hypertension.",
+"right": "This is called hypertension.",
+"why": "Passiva."
+},
+{
+"wrong": "The prognosis are good.",
+"right": "The prognosis is good.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com called: “Doctors name this hypertension.”",
+"answer": "This is called hypertension.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Think of it as: “It is like a pipe under pressure.”",
+"answer": "Think of it as a pipe under pressure.",
+"why": ""
+},
+{
+"prompt": "Plural: “one diagnosis”",
+"answer": "two diagnoses",
+"why": ""
+}
+]
+}

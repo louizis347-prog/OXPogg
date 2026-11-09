@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estrutura",
+"wrong": "She convinced me to sign the form.",
+"right": "She persuaded me to sign the form.",
+"why": "Português “convenceu-me a assinar” usa um só verbo; em inglês convince + that/of (crença) e persuade + to (ação)."
+},
+"mcq": [
+{
+"q": "Belief:",
+"opts": [
+"convince me that",
+"persuade me that to",
+"convince me to"
+],
+"ans": 0,
+"why": "convince that."
+},
+{
+"q": "Action:",
+"opts": [
+"persuade me to",
+"persuade me that to",
+"convince me to"
+],
+"ans": 0,
+"why": "persuade to."
+},
+{
+"q": "Convince + person + …",
+"opts": [
+"of",
+"for",
+"to"
+],
+"ans": 0,
+"why": "of."
+},
+{
+"q": "She persuaded me ___ attend.",
+"opts": [
+"to",
+"that",
+"of"
+],
+"ans": 0,
+"why": "to."
+}
+],
+"fix": [
+{
+"wrong": "He persuaded me of his good faith.",
+"right": "He convinced me of his good faith.",
+"why": "Crença."
+},
+{
+"wrong": "She convinced me to attend.",
+"right": "She persuaded me to attend.",
+"why": "Ação."
+},
+{
+"wrong": "He convinced me for his plan.",
+"right": "He convinced me of his plan.",
+"why": "of."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por persuade: “She convinced me to attend.”",
+"answer": "She persuaded me to attend.",
+"why": ""
+},
+{
+"prompt": "Troque por convince: “They persuaded us that it was safe.”",
+"answer": "They convinced us that it was safe.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She convinced me of it.”",
+"answer": "She did not convince me of it.",
+"why": ""
+}
+]
+}

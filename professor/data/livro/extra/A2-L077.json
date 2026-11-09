@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares",
+"wrong": "I sleeped late.",
+"right": "I slept late.",
+"why": "O aluno regulariza com -ed; see, send, sit, sleep, speak, spend têm formas próprias."
+},
+"mcq": [
+{
+"q": "Passado de **speak**:",
+"opts": [
+"speaked",
+"spoke",
+"spoken"
+],
+"ans": 1,
+"why": "spoke."
+},
+{
+"q": "Passado de **spend**:",
+"opts": [
+"spent",
+"spenda",
+"spended"
+],
+"ans": 0,
+"why": "spent."
+},
+{
+"q": "Passado de **send**:",
+"opts": [
+"sended",
+"send",
+"sent"
+],
+"ans": 2,
+"why": "sent."
+},
+{
+"q": "Passado de **sit**:",
+"opts": [
+"sitted",
+"sat",
+"sit"
+],
+"ans": 1,
+"why": "sat."
+}
+],
+"fix": [
+{
+"wrong": "I spended money.",
+"right": "I spent money.",
+"why": "spent."
+},
+{
+"wrong": "She sended it.",
+"right": "She sent it.",
+"why": "sent."
+},
+{
+"wrong": "He speaked English.",
+"right": "He spoke English.",
+"why": "spoke."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I sleep well.”",
+"answer": "I slept well.",
+"why": ""
+},
+{
+"prompt": "Passado: “She speaks Spanish.”",
+"answer": "She spoke Spanish.",
+"why": ""
+},
+{
+"prompt": "Passado: “They send mail.”",
+"answer": "They sent mail.",
+"why": ""
+}
+]
+}

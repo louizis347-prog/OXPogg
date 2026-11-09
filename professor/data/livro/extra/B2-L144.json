@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "argue that",
+"wrong": "The mayor argues to build a park.",
+"right": "The mayor argues that we should build a park.",
+"why": "Argue em português pode ser seguido de infinitivo; em inglês, argue that + oração."
+},
+"mcq": [
+{
+"q": "Complete: People **___** worried.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people = plural."
+},
+{
+"q": "Qual é a preposição?",
+"opts": [
+"vote on candidate",
+"vote for",
+"vote of"
+],
+"ans": 1,
+"why": "vote for."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He argues taxes to fall.",
+"He argues to taxes.",
+"He argues that taxes should fall."
+],
+"ans": 2,
+"why": "argue that."
+},
+{
+"q": "speech =",
+"opts": [
+"pedido",
+"discurso",
+"lei"
+],
+"ans": 1,
+"why": "falso cognato."
+}
+],
+"fix": [
+{
+"wrong": "The people is voting today.",
+"right": "The people are voting today.",
+"why": "Plural."
+},
+{
+"wrong": "She voted on Smith.",
+"right": "She voted for Smith.",
+"why": "for."
+},
+{
+"wrong": "The deputy made a discourse.",
+"right": "The deputy made a speech.",
+"why": "speech."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com have/get done: “Someone prints the ballots.”",
+"answer": "The ballots are printed.",
+"why": ""
+},
+{
+"prompt": "Reescreva com vote for: “She chose Ana.”",
+"answer": "She voted for Ana.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They elected the mayor.”",
+"answer": "The mayor was elected.",
+"why": ""
+}
+]
+}

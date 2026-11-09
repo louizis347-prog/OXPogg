@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "clivada com who/that",
+"wrong": "It was an amateur analyst that found the mistake. (sem it)",
+"right": "It was an amateur analyst who found the mistake.",
+"why": "O brasileiro costuma dizer “Foi um analista que achou” e esquece o it ou usa what. Em inglês: It was + sujeito + who/that."
+},
+"mcq": [
+{
+"q": "It was an amateur analyst ___ found the mistake.",
+"opts": [
+"which he",
+"who",
+"what"
+],
+"ans": 1,
+"why": "who."
+},
+{
+"q": "It is honest error ___ most often causes this.",
+"opts": [
+"what",
+"who",
+"that"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It was in May that it began.",
+"Was in May that it began.",
+"It was in May what it began."
+],
+"ans": 0,
+"why": "It was…that."
+},
+{
+"q": "Cleft sentences add…",
+"opts": [
+"negation",
+"emphasis",
+"tense"
+],
+"ans": 1,
+"why": "Ênfase."
+}
+],
+"fix": [
+{
+"wrong": "Was an amateur who found it.",
+"right": "It was an amateur who found it.",
+"why": "it."
+},
+{
+"wrong": "It is honest error what causes this.",
+"right": "It is honest error that causes this.",
+"why": "that."
+},
+{
+"wrong": "It was in May what it began.",
+"right": "It was in May that it began.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Clivada: “An amateur analyst found the mistake.”",
+"answer": "It was an amateur analyst who found the mistake.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Honest error causes this.”",
+"answer": "It is honest error that causes this.",
+"why": ""
+},
+{
+"prompt": "Clivada com tempo: “It began in May.”",
+"answer": "It was in May that it began.",
+"why": ""
+}
+]
+}

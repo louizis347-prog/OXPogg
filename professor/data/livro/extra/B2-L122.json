@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "could have vs. could",
+"wrong": "I could go to the party last Saturday, but I was tired.",
+"right": "I could have gone to the party last Saturday, but I was tired.",
+"why": "O português usa \"podia ir\" para possibilidade não realizada; em inglês could go soa como habilidade geral. Use could have + particípio."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"She may has left already.",
+"She may had left already.",
+"She may have left already."
+],
+"ans": 2,
+"why": "Após modal: have + particípio."
+},
+{
+"q": "Qual NÃO é possível?",
+"opts": [
+"It is probable to rain.",
+"It is probable that it will rain.",
+"It is likely to rain."
+],
+"ans": 0,
+"why": "probable usa that-clause, nunca to."
+},
+{
+"q": "\"I'm expecting a call\" significa...",
+"opts": [
+"esperam que eu ligue",
+"aguardo uma ligação",
+"devo ligar"
+],
+"ans": 1,
+"why": "expect no continuous = aguardar."
+},
+{
+"q": "Complete: The bridge **has ___** repaired.",
+"opts": [
+"been",
+"being",
+"be"
+],
+"ans": 0,
+"why": "has been + particípio."
+}
+],
+"fix": [
+{
+"wrong": "It might not has been him.",
+"right": "It might not have been him.",
+"why": "Modal + not + have + particípio."
+},
+{
+"wrong": "Are she likely to call?",
+"right": "Is she likely to call?",
+"why": "Concordância de be: is."
+},
+{
+"wrong": "Students are supposed wear shoes.",
+"right": "Students are supposed to wear shoes.",
+"why": "Falta to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com unlikely: “It isn't likely to snow.”",
+"answer": "It is unlikely to snow.",
+"why": ""
+},
+{
+"prompt": "Reescreva com be expected to: “People expect him to win.”",
+"answer": "He is expected to win.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They will announce the winner.”",
+"answer": "The winner will be announced.",
+"why": ""
+}
+]
+}

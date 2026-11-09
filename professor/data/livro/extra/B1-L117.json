@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "decide/choose + to",
+"wrong": "I decided learning to code, and I chose study at night.",
+"right": "I decided to learn to code, and I chose to study at night.",
+"why": "Em português “decidi aprender” e “escolhi estudar” seguem o infinitivo; o brasileiro usa -ing ou omite o to. Em inglês, decide, want e choose pedem to + base."
+},
+"mcq": [
+{
+"q": "I decided ___ English.",
+"opts": [
+"learning",
+"learn",
+"to learn"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "She wanted ___ a site.",
+"opts": [
+"building",
+"to build",
+"build"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "He chose ___ at night.",
+"opts": [
+"studying",
+"study",
+"to study"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "Negative: “I decided ___ go.”",
+"opts": [
+"not to",
+"to not",
+"don't"
+],
+"ans": 0,
+"why": "not to."
+}
+],
+"fix": [
+{
+"wrong": "They chose working abroad.",
+"right": "They chose to work abroad.",
+"why": "to."
+},
+{
+"wrong": "She wants study law.",
+"right": "She wants to study law.",
+"why": "to."
+},
+{
+"wrong": "We decided don't buy it.",
+"right": "We decided not to buy it.",
+"why": "not to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “I decide to learn Python.”",
+"answer": "I decided to learn Python.",
+"why": ""
+},
+{
+"prompt": "Torne negativa: “I chose to quit.”",
+"answer": "I chose not to quit.",
+"why": ""
+},
+{
+"prompt": "Reescreva com want: “I wanted a site. I build it.”",
+"answer": "I wanted to build a site.",
+"why": ""
+}
+]
+}

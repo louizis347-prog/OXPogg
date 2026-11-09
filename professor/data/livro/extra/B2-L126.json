@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "deve ter + particípio",
+"wrong": "She must to have forgotten the meeting.",
+"right": "She must have forgotten the meeting.",
+"why": "Em português, \"deve ter esquecido\" tem a preposição-ligação implícita; o aluno copia com to. Em inglês é must have + particípio."
+},
+"mcq": [
+{
+"q": "A dedução negativa de \"She was there\" é...",
+"opts": [
+"She can't have been there.",
+"She mustn't have been there.",
+"She hasn't must be there."
+],
+"ans": 0,
+"why": "Dedução negativa = can't have + particípio."
+},
+{
+"q": "**mustn't** expressa...",
+"opts": [
+"dedução negativa no passado",
+"proibição",
+"possibilidade passada"
+],
+"ans": 1,
+"why": "mustn't = proibido; para dedução negativa use can't have."
+},
+{
+"q": "A rua está molhada. Dedução:",
+"opts": [
+"It must rain.",
+"It must to rain.",
+"It must have rained."
+],
+"ans": 2,
+"why": "Evidência presente + causa passada = must have + particípio."
+},
+{
+"q": "Qual indica menos certeza?",
+"opts": [
+"He must have left.",
+"He might have left.",
+"He can't have left."
+],
+"ans": 1,
+"why": "might have = possibilidade; must have = quase certeza."
+}
+],
+"fix": [
+{
+"wrong": "It mustn't have been easy.",
+"right": "It can't have been easy.",
+"why": "Dedução negativa = can't have; mustn't é proibição."
+},
+{
+"wrong": "You must to have been very tired.",
+"right": "You must have been very tired.",
+"why": "Sem to depois de must."
+},
+{
+"wrong": "He must of taken the bus.",
+"right": "He must have taken the bus.",
+"why": "Escreva have, não of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como dedução certa: “She was sick.”",
+"answer": "She must have been sick.",
+"why": ""
+},
+{
+"prompt": "Reescreva como dedução negativa: “He took my keys.”",
+"answer": "He can't have taken my keys.",
+"why": ""
+},
+{
+"prompt": "Troque must por might: “They must have forgotten.”",
+"answer": "They might have forgotten.",
+"why": ""
+}
+]
+}

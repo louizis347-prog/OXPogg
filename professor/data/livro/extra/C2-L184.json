@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "vírgulas",
+"wrong": "Her paper which won the prize, argues that freedom is achieved through others.",
+"right": "Her paper, which won the prize, argues that freedom is achieved through others.",
+"why": "A relativa não restritiva leva vírgulas e which; em português a vírgula é facultativa."
+},
+"mcq": [
+{
+"q": "Passive with agent:",
+"opts": [
+"Freedom achieved is others.",
+"Freedom is achieved through others.",
+"Freedom achieves others."
+],
+"ans": 1,
+"why": "Passiva."
+},
+{
+"q": "Non-restrictive clause:",
+"opts": [
+"Her paper, which won the prize, …",
+"Her paper that, won the prize,",
+"Her paper which won, the prize"
+],
+"ans": 0,
+"why": "Vírgulas."
+},
+{
+"q": "Focus on result uses…",
+"opts": [
+"imperative",
+"question",
+"passive"
+],
+"ans": 2,
+"why": "Passiva."
+},
+{
+"q": "In a non-restrictive clause, don’t use…",
+"opts": [
+"that",
+"who",
+"which"
+],
+"ans": 0,
+"why": "Sem that."
+}
+],
+"fix": [
+{
+"wrong": "Her paper, that won the prize, is good.",
+"right": "Her paper, which won the prize, is good.",
+"why": "which."
+},
+{
+"wrong": "Freedom achieves through others.",
+"right": "Freedom is achieved through others.",
+"why": "Passiva."
+},
+{
+"wrong": "Her paper which won the prize, is good.",
+"right": "Her paper, which won the prize, is good.",
+"why": "Vírgulas duplas."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Others achieve freedom.”",
+"answer": "Freedom is achieved through others.",
+"why": ""
+},
+{
+"prompt": "Una: “Her paper won the prize. It is good.”",
+"answer": "Her paper, which won the prize, is good.",
+"why": ""
+},
+{
+"prompt": "Passado: “Freedom is achieved.”",
+"answer": "Freedom was achieved.",
+"why": ""
+}
+]
+}

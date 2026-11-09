@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "remember + -ing",
+"wrong": "He remembers to work in a bakery when he was young.",
+"right": "He remembers working in a bakery when he was young.",
+"why": "Em português “lembra de trabalhar” serve para os dois sentidos. Em inglês, lembrar de um fato passado pede remember + -ing; remember to + base é lembrar de fazer algo."
+},
+"mcq": [
+{
+"q": "He remembers ___ in a bakery as a teen. (memória)",
+"opts": [
+"work",
+"to work",
+"working"
+],
+"ans": 2,
+"why": "Memória do passado: remember + -ing."
+},
+{
+"q": "___ limited funds, she studied engineering.",
+"opts": [
+"Despite",
+"Although",
+"Despite of"
+],
+"ans": 0,
+"why": "Despite + substantivo, sem “of”. Although exige oração."
+},
+{
+"q": "She is ___ to become a director.",
+"opts": [
+"likely",
+"probably",
+"possible"
+],
+"ans": 0,
+"why": "be likely to + verbo."
+},
+{
+"q": "He graduated; ___, he got a job at a firm.",
+"opts": [
+"remembering",
+"despite",
+"consequently"
+],
+"ans": 2,
+"why": "Consequently marca resultado."
+}
+],
+"fix": [
+{
+"wrong": "Despite of the cost, he studied.",
+"right": "Despite the cost, he studied.",
+"why": "Despite não leva of."
+},
+{
+"wrong": "I remember to visit the site last year.",
+"right": "I remember visiting the site last year.",
+"why": "Lembrança do passado: -ing."
+},
+{
+"wrong": "He is probably to win the prize.",
+"right": "He is likely to win the prize.",
+"why": "Estrutura: be likely to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Despite: “Although the funds were limited, she studied.”",
+"answer": "Despite the limited funds, she studied.",
+"why": ""
+},
+{
+"prompt": "Reescreva com “likely”: “She will probably join the firm.”",
+"answer": "She is likely to join the firm.",
+"why": ""
+},
+{
+"prompt": "Reescreva com remember + -ing: “I recall that I visited the site.”",
+"answer": "I remember visiting the site.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "inversão sem auxiliar",
+"wrong": "Rarely dared the numbers to rise.",
+"right": "Rarely did the numbers dare to rise.",
+"why": "Em português podemos inverter verbo e sujeito livremente. Em inglês, com verbo comum usa-se do/does/did antes do sujeito."
+},
+"mcq": [
+{
+"q": "Never ___ such a rise.",
+"opts": [
+"they had seen",
+"had they seen",
+"did they saw"
+],
+"ans": 1,
+"why": "Never + had + sujeito + particípio."
+},
+{
+"q": "Rarely ___ the numbers dare to rise.",
+"opts": [
+"were",
+"did",
+"had"
+],
+"ans": 1,
+"why": "Passado simples: did + sujeito + base."
+},
+{
+"q": "Which has the SAME meaning as “They had never seen it”?",
+"opts": [
+"Never had they seen it.",
+"Never saw they it.",
+"Never they had seen it."
+],
+"ans": 0,
+"why": "Inversão com had."
+},
+{
+"q": "Inversion is ___.",
+"opts": [
+"formal and emphatic",
+"used in texting",
+"required in all questions"
+],
+"ans": 0,
+"why": "Estilo formal e enfático."
+}
+],
+"fix": [
+{
+"wrong": "Rarely they had seen such growth.",
+"right": "Rarely had they seen such growth.",
+"why": "Inversão com had."
+},
+{
+"wrong": "Rarely did the numbers dared to rise.",
+"right": "Rarely did the numbers dare to rise.",
+"why": "Após did, base."
+},
+{
+"wrong": "Never she had met him.",
+"right": "Never had she met him.",
+"why": "Auxiliar antes do sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Rarely: “The numbers rarely dared to rise.”",
+"answer": "Rarely did the numbers dare to rise.",
+"why": ""
+},
+{
+"prompt": "Comece com Never: “She had never met him.”",
+"answer": "Never had she met him.",
+"why": ""
+},
+{
+"prompt": "Comece com Seldom: “He had seldom spoken.”",
+"answer": "Seldom had he spoken.",
+"why": ""
+}
+]
+}

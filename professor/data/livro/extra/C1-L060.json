@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do enfático",
+"wrong": "I love feedback, and I did resisted it.",
+"right": "I do love feedback. I did resist it.",
+"why": "O português enfatiza com “realmente/muito”. Em inglês usa-se do/does/did + base; o verbo principal volta à forma base."
+},
+"mcq": [
+{
+"q": "I ___ love feedback.",
+"opts": [
+"do",
+"am",
+"does"
+],
+"ans": 0,
+"why": "do + base."
+},
+{
+"q": "She ___ want to finish.",
+"opts": [
+"did to",
+"does",
+"do"
+],
+"ans": 1,
+"why": "does."
+},
+{
+"q": "I did ___ it. (resist)",
+"opts": [
+"resisted",
+"resisting",
+"resist"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "So tired was he ___ he quit.",
+"opts": [
+"that",
+"than",
+"as"
+],
+"ans": 0,
+"why": "so…that."
+}
+],
+"fix": [
+{
+"wrong": "I did resisted it.",
+"right": "I did resist it.",
+"why": "Base."
+},
+{
+"wrong": "She do want to finish.",
+"right": "She does want to finish.",
+"why": "does."
+},
+{
+"wrong": "So tired was he than he quit.",
+"right": "So tired was he that he quit.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Ênfase: “I love feedback.”",
+"answer": "I do love feedback.",
+"why": ""
+},
+{
+"prompt": "Ênfase passado: “I resisted it.”",
+"answer": "I did resist it.",
+"why": ""
+},
+{
+"prompt": "Ênfase 3ª pessoa: “She wants to finish.”",
+"answer": "She does want to finish.",
+"why": ""
+}
+]
+}

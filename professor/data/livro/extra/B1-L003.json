@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "study vs learn",
+"wrong": "I learn math at university.",
+"right": "I study math at university.",
+"why": "Em português 'estudar' cobre tudo; em inglês study é se dedicar a uma matéria e learn é adquirir uma habilidade ou informação."
+},
+"mcq": [
+{
+"q": "Education: **homework** é:",
+"opts": [
+"incontável",
+"contável",
+"sempre plural"
+],
+"ans": 0,
+"why": "homework."
+},
+{
+"q": "She is ___ for her exam.",
+"opts": [
+"studying",
+"learning to",
+"teaching"
+],
+"ans": 0,
+"why": "study for."
+},
+{
+"q": "I'm ___ to play the guitar.",
+"opts": [
+"learning",
+"studying",
+"teaching"
+],
+"ans": 0,
+"why": "learn to."
+},
+{
+"q": "A teacher ___ students.",
+"opts": [
+"learns",
+"studies",
+"teaches"
+],
+"ans": 2,
+"why": "teach."
+}
+],
+"fix": [
+{
+"wrong": "I did many homeworks.",
+"right": "I did a lot of homework.",
+"why": "incontável."
+},
+{
+"wrong": "She learns math in the university.",
+"right": "She studies math at university.",
+"why": "at university."
+},
+{
+"wrong": "He teached me English.",
+"right": "He taught me English.",
+"why": "irregular."
+}
+],
+"rewrite": [
+{
+"prompt": "Plural impossível: “two homeworks” → corrija",
+"answer": "two pieces of homework",
+"why": ""
+},
+{
+"prompt": "Troque study por learn: “I study to cook.”",
+"answer": "I learn to cook.",
+"why": ""
+},
+{
+"prompt": "Passado: “She teaches physics.”",
+"answer": "She taught physics.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo polissêmico",
+"wrong": "The meeting will do place on Monday.",
+"right": "The meeting will take place on Monday.",
+"why": "Português “ter lugar / acontecer”. Em inglês colocação: take place, take part in, take into account."
+},
+"mcq": [
+{
+"q": "take place =",
+"opts": [
+"sentar",
+"acontecer",
+"tomar lugar"
+],
+"ans": 1,
+"why": "Acontecer."
+},
+{
+"q": "take part in =",
+"opts": [
+"pegar parte",
+"participar",
+"tirar"
+],
+"ans": 1,
+"why": "Participar."
+},
+{
+"q": "take into account =",
+"opts": [
+"tirar da conta",
+"considerar",
+"contar"
+],
+"ans": 1,
+"why": "Considerar."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She took part of the event.",
+"She took part at the event.",
+"She took part in the event."
+],
+"ans": 2,
+"why": "In."
+}
+],
+"fix": [
+{
+"wrong": "The event happens place today.",
+"right": "The event takes place today.",
+"why": "Take place."
+},
+{
+"wrong": "She took part of the race.",
+"right": "She took part in the race.",
+"why": "In."
+},
+{
+"wrong": "They took in account the cost.",
+"right": "They took the cost into account.",
+"why": "Into account."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “The meeting takes place on Monday.”",
+"answer": "The meeting took place on Monday.",
+"why": ""
+},
+{
+"prompt": "Passado: “She takes part in the race.”",
+"answer": "She took part in the race.",
+"why": ""
+},
+{
+"prompt": "Negativa: “It will take place.”",
+"answer": "It won’t take place.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "will após if",
+"wrong": "If the file will be incomplete, it is rejected.",
+"right": "If a file is incomplete, it is rejected.",
+"why": "No português o verbo após “se” pode ficar no futuro do subjuntivo. Em inglês, depois de if, use presente, não will."
+},
+"mcq": [
+{
+"q": "If a file ___ incomplete, it is rejected.",
+"opts": [
+"is",
+"will be",
+"would be"
+],
+"ans": 0,
+"why": "Presente."
+},
+{
+"q": "If it rains, we ___ .",
+"opts": [
+"would stayed",
+"will stay",
+"stay will"
+],
+"ans": 1,
+"why": "Primeiro condicional."
+},
+{
+"q": "If I were rich, I ___ travel.",
+"opts": [
+"will",
+"did",
+"would"
+],
+"ans": 2,
+"why": "would."
+},
+{
+"q": "Unless means…",
+"opts": [
+"if not",
+"if so",
+"when"
+],
+"ans": 0,
+"why": "If not."
+}
+],
+"fix": [
+{
+"wrong": "If it will rain, we stay home.",
+"right": "If it rains, we will stay home.",
+"why": "Sem will."
+},
+{
+"wrong": "If I would be rich, I would travel.",
+"right": "If I were rich, I would travel.",
+"why": "were."
+},
+{
+"wrong": "Unless you don’t pay, we stop.",
+"right": "Unless you pay, we stop.",
+"why": "Unless já é negativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com unless: “If you don’t pay, we stop.”",
+"answer": "Unless you pay, we stop.",
+"why": ""
+},
+{
+"prompt": "Reescreva no zero: “If water is heated, it boils.” (heat/water)",
+"answer": "If you heat water, it boils.",
+"why": ""
+},
+{
+"prompt": "Use if: “I’m not rich, so I don’t travel.” (If I… )",
+"answer": "If I were rich, I would travel.",
+"why": ""
+}
+]
+}

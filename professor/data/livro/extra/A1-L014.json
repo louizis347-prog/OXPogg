@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "-s da 3ª pessoa",
+"wrong": "She work in a hospital.",
+"right": "She works in a hospital.",
+"why": "O português conjuga todas as pessoas, mas o brasileiro esquece que em inglês só he/she/it recebem -s."
+},
+"mcq": [
+{
+"q": "He ___ tea.",
+"opts": [
+"drinks",
+"drink",
+"drinking"
+],
+"ans": 0,
+"why": "-s."
+},
+{
+"q": "She ___ English.",
+"opts": [
+"studys",
+"studies",
+"study"
+],
+"ans": 1,
+"why": "y vira ies."
+},
+{
+"q": "He ___ TV.",
+"opts": [
+"watchs",
+"watch",
+"watches"
+],
+"ans": 2,
+"why": "ch + es."
+},
+{
+"q": "She ___ a car.",
+"opts": [
+"has",
+"haves",
+"have"
+],
+"ans": 0,
+"why": "Irregular."
+}
+],
+"fix": [
+{
+"wrong": "She work here.",
+"right": "She works here.",
+"why": "-s."
+},
+{
+"wrong": "He studys math.",
+"right": "He studies math.",
+"why": "ies."
+},
+{
+"wrong": "Tom watch TV.",
+"right": "Tom watches TV.",
+"why": "es."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque para “She”: “I teach.”",
+"answer": "She teaches.",
+"why": ""
+},
+{
+"prompt": "Troque para “He”: “I go home.”",
+"answer": "He goes home.",
+"why": ""
+},
+{
+"prompt": "Troque para “She”: “I study.”",
+"answer": "She studies.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "according to me",
+"wrong": "According to me, the plan is sensible.",
+"right": "In my opinion, the plan is sensible.",
+"why": "Em português \"segundo eu\" é calco. Em inglês, according to é para fontes; para opinião própria use in my opinion."
+},
+"mcq": [
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"are",
+"is",
+"was"
+],
+"ans": 0,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rose sharply.",
+"Sales rised sharply."
+],
+"ans": 1,
+"why": "rose."
+},
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"of",
+"on",
+"in"
+],
+"ans": 2,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However, it works.",
+"However; it works."
+],
+"ans": 1,
+"why": "However, com vírgula."
+}
+],
+"fix": [
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+},
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+},
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If you had planted trees, we have shade now.",
+"right": "If you had planted trees, we would have shade now.",
+"why": "Condicional misto: passado → presente: if + had + particípio, would + base. O brasileiro mistura have/would have."
+},
+"mcq": [
+{
+"q": "If you had planted trees, we **___** shade now.",
+"opts": [
+"had",
+"would have",
+"would have had"
+],
+"ans": 1,
+"why": "Would + base."
+},
+{
+"q": "If I were taller, I **___** have joined.",
+"opts": [
+"had",
+"would have",
+"would"
+],
+"ans": 1,
+"why": "Presente → passado: would have."
+},
+{
+"q": "Passado → presente:",
+"opts": [
+"past, would + base",
+"would have + part.",
+"had + part., would + base"
+],
+"ans": 2,
+"why": "Estrutura."
+},
+{
+"q": "If she had studied, she **___** a doctor now.",
+"opts": [
+"would be",
+"will be",
+"would have been"
+],
+"ans": 0,
+"why": "Would be."
+}
+],
+"fix": [
+{
+"wrong": "If I had listened, I would be lost now.",
+"right": "If I had listened, I wouldn’t be lost now.",
+"why": "Sentido: negativa."
+},
+{
+"wrong": "If you had took the job, you would be rich.",
+"right": "If you had taken the job, you would be rich.",
+"why": "Particípio."
+},
+{
+"wrong": "If you had left, you will be home now.",
+"right": "If you had left, you would be home now.",
+"why": "Would."
+}
+],
+"rewrite": [
+{
+"prompt": "Combine: “I didn’t plant trees, so we have no shade.”",
+"answer": "If I had planted trees, we would have shade.",
+"why": ""
+},
+{
+"prompt": "Combine: “She didn’t study, so she isn’t a doctor.”",
+"answer": "If she had studied, she would be a doctor.",
+"why": ""
+},
+{
+"prompt": "Inverta as cláusulas: “If you had left, you would be home now.”",
+"answer": "You would be home now if you had left.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "som e grafia",
+"wrong": "I put my bedder shoes on.",
+"right": "I put my better shoes on.",
+"why": "O flap T americano faz o t entre vogais soar como d rápido (/ɾ/). O brasileiro ouve “bedder” e escreve com d. Escreve-se better, water, city."
+},
+"mcq": [
+{
+"q": "Em better, o t soa como:",
+"opts": [
+"r forte",
+"d rápido",
+"t aspirado"
+],
+"ans": 1,
+"why": "Flap."
+},
+{
+"q": "A palavra escrita corretamente:",
+"opts": [
+"waterr",
+"wader",
+"water"
+],
+"ans": 2,
+"why": "Water."
+},
+{
+"q": "Em atom e Adam o som é:",
+"opts": [
+"parecido",
+"mudo",
+"totalmente diferente"
+],
+"ans": 0,
+"why": "Flap."
+},
+{
+"q": "O flap ocorre em:",
+"opts": [
+"vogal + t + vogal",
+"início de palavra",
+"depois de s"
+],
+"ans": 0,
+"why": "Entre vogais."
+}
+],
+"fix": [
+{
+"wrong": "She has a litle cat.",
+"right": "She has a little cat.",
+"why": "Little com tt."
+},
+{
+"wrong": "The sity is big.",
+"right": "The city is big.",
+"why": "City."
+},
+{
+"wrong": "I drink wader.",
+"right": "I drink water.",
+"why": "Water."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija a grafia: “a cup of wader”",
+"answer": "a cup of water",
+"why": ""
+},
+{
+"prompt": "Corrija a grafia: “a bedder idea”",
+"answer": "a better idea",
+"why": ""
+},
+{
+"prompt": "Corrija a grafia: “a quiet sity”",
+"answer": "a quiet city",
+"why": ""
+}
+]
+}

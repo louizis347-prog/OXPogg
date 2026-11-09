@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sujeito oculto",
+"wrong": "Join to us on Friday and bring to your doubts.",
+"right": "Join us on Friday and bring your doubts.",
+"why": "Em português “junte-se a nós” leva preposição; em inglês join é transitivo direto e o imperativo dispensa to."
+},
+"mcq": [
+{
+"q": "Which poster line is a noun phrase with no verb?",
+"opts": [
+"Come and enter free.",
+"Admission free.",
+"We offer free admission."
+],
+"ans": 1,
+"why": "Frase nominal economiza espaço."
+},
+{
+"q": "Direct invitation to a philosophy night:",
+"opts": [
+"To bring doubts.",
+"Bring your doubts.",
+"You bringing doubts."
+],
+"ans": 1,
+"why": "Imperativo."
+},
+{
+"q": "Join ___ for the debate.",
+"opts": [
+"us",
+"with we",
+"to us"
+],
+"ans": 0,
+"why": "Join + objeto."
+},
+{
+"q": "Why use “Tickets: £5.” on a flyer?",
+"opts": [
+"It is past tense.",
+"It saves space.",
+"It is a question."
+],
+"ans": 1,
+"why": "Economia de espaço."
+}
+],
+"fix": [
+{
+"wrong": "Please joins us tonight.",
+"right": "Please join us tonight.",
+"why": "Imperativo sem -s."
+},
+{
+"wrong": "Bring with you your doubts.",
+"right": "Bring your doubts.",
+"why": "Bring é transitivo direto."
+},
+{
+"wrong": "Entrance is free of charge, welcome all.",
+"right": "Entrance free. All welcome.",
+"why": "Frase nominal em aviso."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne frase nominal: “Admission is free.”",
+"answer": "Admission free.",
+"why": ""
+},
+{
+"prompt": "Imperativo negativo: “Bring your doubts.”",
+"answer": "Don’t bring your doubts.",
+"why": ""
+},
+{
+"prompt": "Convite direto: “You should come along.”",
+"answer": "Come along.",
+"why": ""
+}
+]
+}

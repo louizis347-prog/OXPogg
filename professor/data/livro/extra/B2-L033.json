@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "By 2050 emissions will fall.",
+"right": "By 2050 emissions will have fallen.",
+"why": "Para queda concluída até 2050, use will have + particípio, não will + base."
+},
+"mcq": [
+{
+"q": "By 2050 emissions **___** fallen.",
+"opts": [
+"will",
+"will have",
+"have"
+],
+"ans": 1,
+"why": "Will have."
+},
+{
+"q": "Provided that = ",
+"opts": [
+"embora",
+"desde que",
+"porque"
+],
+"ans": 1,
+"why": "Condição."
+},
+{
+"q": "Particípio de fall:",
+"opts": [
+"fallen",
+"falled",
+"fell"
+],
+"ans": 0,
+"why": "Fallen."
+},
+{
+"q": "Projeção:",
+"opts": [
+"will have reduced",
+"reduced",
+"will reduce by"
+],
+"ans": 0,
+"why": "Perfeito."
+}
+],
+"fix": [
+{
+"wrong": "Emissions will have fell.",
+"right": "Emissions will have fallen.",
+"why": "Particípio."
+},
+{
+"wrong": "By 2050 it will has changed.",
+"right": "By 2050 it will have changed.",
+"why": "Have."
+},
+{
+"wrong": "Provided it rains, we go.",
+"right": "Provided it rains, we will go.",
+"why": "Condição."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “By 2050 emissions fall.” (will have)",
+"answer": "By 2050 emissions will have fallen.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Emissions will have fallen.”",
+"answer": "Emissions won’t have fallen.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “Emissions will have fallen.”",
+"answer": "Will emissions have fallen?",
+"why": ""
+}
+]
+}

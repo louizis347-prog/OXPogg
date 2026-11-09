@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "although ... but",
+"wrong": "Although it was cold, but we went out.",
+"right": "Although it was cold, we went out.",
+"why": "Em português, \"embora... mas\" é comum na fala. Em inglês, although já contrasta; não se usa but junto."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"Although it rained, but we left.",
+"Although of the rain, we left.",
+"Although it rained, we left."
+],
+"ans": 2,
+"why": "although + oração, sem but."
+},
+{
+"q": "Complete: **___** the traffic, he arrived early.",
+"opts": [
+"Despite",
+"Although",
+"Whereas"
+],
+"ans": 0,
+"why": "despite + substantivo."
+},
+{
+"q": "Qual compara dois fatos?",
+"opts": [
+"Tom is tall despite Ben is short.",
+"Tom is tall, whereas Ben is short.",
+"Tom is tall although of Ben."
+],
+"ans": 1,
+"why": "whereas = ao passo que."
+},
+{
+"q": "Qual usa in spite of?",
+"opts": [
+"In spite of the cost, we bought it.",
+"In spite the cost, we bought it.",
+"In spite of it was costly, we bought it."
+],
+"ans": 0,
+"why": "in spite of + substantivo."
+}
+],
+"fix": [
+{
+"wrong": "Despite of the cold, we swam.",
+"right": "Despite the cold, we swam.",
+"why": "Sem of."
+},
+{
+"wrong": "Although he was rich, but he was sad.",
+"right": "Although he was rich, he was sad.",
+"why": "Sem but."
+},
+{
+"wrong": "Despite it rained, we went.",
+"right": "Although it rained, we went.",
+"why": "Oração: although."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com although: “It was late. We kept working.”",
+"answer": "Although it was late, we kept working.",
+"why": ""
+},
+{
+"prompt": "Una com despite: “It was cold. We went out.” (the cold)",
+"answer": "Despite the cold, we went out.",
+"why": ""
+},
+{
+"prompt": "Una com whereas: “Sue likes tea. Joe likes coffee.”",
+"answer": "Sue likes tea, whereas Joe likes coffee.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I will to give you the data.",
+"right": "I’ll give you the data.",
+"why": "Will + base, sem to. Contraste: will (decisão na hora) × going to (plano) × will be -ing."
+},
+"mcq": [
+{
+"q": "Decisão na hora: “The phone’s ringing.” “I **___** get it.”",
+"opts": [
+"will",
+"am going to",
+"will be"
+],
+"ans": 0,
+"why": "Will."
+},
+{
+"q": "Plano: “I **___** visit Rio.”",
+"opts": [
+"go",
+"am going to",
+"will be going to"
+],
+"ans": 1,
+"why": "Going to."
+},
+{
+"q": "Ação em curso no futuro:",
+"opts": [
+"will work",
+"will be working",
+"works"
+],
+"ans": 1,
+"why": "Will be."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I will to help.",
+"I’ll helping.",
+"I’ll help."
+],
+"ans": 2,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "I will gives you the data.",
+"right": "I will give you the data.",
+"why": "Base."
+},
+{
+"wrong": "I will to call you.",
+"right": "I will call you.",
+"why": "Sem to."
+},
+{
+"wrong": "At noon I will working.",
+"right": "At noon I will be working.",
+"why": "Be."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com going to: “I will visit Rio.”",
+"answer": "I am going to visit Rio.",
+"why": ""
+},
+{
+"prompt": "Reescreva com will be: “At noon I work.”",
+"answer": "At noon I will be working.",
+"why": ""
+},
+{
+"prompt": "Contração: “I will give you the data.”",
+"answer": "I’ll give you the data.",
+"why": ""
+}
+]
+}

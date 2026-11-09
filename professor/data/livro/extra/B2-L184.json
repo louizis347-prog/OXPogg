@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "reporting verb",
+"wrong": "The team said me that it works.",
+"right": "The team told me that it works.",
+"why": "Em português \"disse-me\". Em inglês tell + pessoa."
+},
+"mcq": [
+{
+"q": "Qual é passiva?",
+"opts": [
+"They showed.",
+"It was shown.",
+"It shows."
+],
+"ans": 1,
+"why": "was shown."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"The results is clear.",
+"The result are clear.",
+"The results are clear."
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "Reporting: The team said ___ it works.",
+"opts": [
+"that",
+"to",
+"of"
+],
+"ans": 0,
+"why": "said that."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"experiment",
+"result",
+"research"
+],
+"ans": 2,
+"why": "research."
+}
+],
+"fix": [
+{
+"wrong": "The scientist explained me the data.",
+"right": "The scientist explained the data to me.",
+"why": "explain to."
+},
+{
+"wrong": "The study is thought to being valid.",
+"right": "The study is thought to be valid.",
+"why": "to be."
+},
+{
+"wrong": "Sample size was small, but it was enough.",
+"right": "The sample size was small, but it was enough.",
+"why": "Artigo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Scientists tested the drug.”",
+"answer": "The drug was tested.",
+"why": ""
+},
+{
+"prompt": "Reescreva com said: “‘It works,’ the team said.”",
+"answer": "The team said that it worked.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “The result is likely to change.”",
+"answer": "The result is likely to change.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Frankly / sinceridade",
+"wrong": "Frankly I used to be shy.",
+"right": "Frankly, I used to be shy.",
+"why": "O brasileiro omite a vírgula e confunde used to com be used to. Frankly vem seguido de vírgula."
+},
+"mcq": [
+{
+"q": "Does ice burn? ",
+"opts": [
+"Of course not.",
+"Of course yes not.",
+"No of course."
+],
+"ans": 0,
+"why": "Of course not."
+},
+{
+"q": "I ___ be shy. (hábito passado)",
+"opts": [
+"am used to",
+"used to",
+"use to"
+],
+"ans": 1,
+"why": "used to."
+},
+{
+"q": "“To be honest” ocorre…",
+"opts": [
+"no fim sem pausa",
+"nunca",
+"no início, com vírgula"
+],
+"ans": 2,
+"why": "Vírgula."
+},
+{
+"q": "Frankly, I don’t ___ it.",
+"opts": [
+"like",
+"liking",
+"likes"
+],
+"ans": 0,
+"why": "Base."
+}
+],
+"fix": [
+{
+"wrong": "Frankly I used to be shy.",
+"right": "Frankly, I used to be shy.",
+"why": "Vírgula."
+},
+{
+"wrong": "I use to be shy.",
+"right": "I used to be shy.",
+"why": "used."
+},
+{
+"wrong": "Of course no.",
+"right": "Of course not.",
+"why": "not."
+}
+],
+"rewrite": [
+{
+"prompt": "Sinceridade: “I used to be shy.” (Frankly…)",
+"answer": "Frankly, I used to be shy.",
+"why": ""
+},
+{
+"prompt": "Rejeição: “No, ice does not burn.” (Of course…)",
+"answer": "Of course ice does not burn.",
+"why": ""
+},
+{
+"prompt": "Negue: “Does ice burn?” → resposta curta",
+"answer": "Of course not.",
+"why": ""
+}
+]
+}

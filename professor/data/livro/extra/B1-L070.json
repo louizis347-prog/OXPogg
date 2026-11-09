@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would × used to × should have",
+"wrong": "I would live in Recife, and I should have to call her.",
+"right": "I used to live in Recife, and I should have called her.",
+"why": "Em português “morava” e “devia ter ligado” parecem simples. Em inglês: estado antigo = used to; arrependimento = should have + particípio."
+},
+"mcq": [
+{
+"q": "I ___ in Recife (estado).",
+"opts": [
+"used to live",
+"would live",
+"should live"
+],
+"ans": 0,
+"why": "Estado."
+},
+{
+"q": "We ___ play every day (ação).",
+"opts": [
+"used to play every",
+"would",
+"wills"
+],
+"ans": 1,
+"why": "Ação repetida."
+},
+{
+"q": "They ___ have called (arrependimento).",
+"opts": [
+"should to",
+"shoulds",
+"should"
+],
+"ans": 2,
+"why": "should have."
+},
+{
+"q": "They let me ___.",
+"opts": [
+"to try",
+"trying",
+"try"
+],
+"ans": 2,
+"why": "let + base."
+}
+],
+"fix": [
+{
+"wrong": "He let me to go.",
+"right": "He let me go.",
+"why": "Sem to."
+},
+{
+"wrong": "You should have call her.",
+"right": "You should have called her.",
+"why": "Particípio."
+},
+{
+"wrong": "I would have a cat.",
+"right": "I used to have a cat.",
+"why": "Estado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com used to (estado): “I had a cat.” (hábito antigo)",
+"answer": "I used to have a cat.",
+"why": ""
+},
+{
+"prompt": "Reescreva com might have: “Perhaps she called.”",
+"answer": "She might have called.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem to: “She made me to cry.”",
+"answer": "She made me cry.",
+"why": ""
+}
+]
+}

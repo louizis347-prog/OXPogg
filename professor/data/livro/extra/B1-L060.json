@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "have = ter × comer",
+"wrong": "I am having a friend and I eat coffee now.",
+"right": "I have a friend, and I’m having coffee now.",
+"why": "Em português “tomar café” e “comer” viram eat/drink; o brasileiro também usa estar com ter. Em inglês, have de posse não usa -ing, mas have coffee/lunch pode usar."
+},
+"mcq": [
+{
+"q": "I ___ a friend (posse).",
+"opts": [
+"am having",
+"have",
+"has"
+],
+"ans": 1,
+"why": "have."
+},
+{
+"q": "I ___ a good time (experimentar).",
+"opts": [
+"did",
+"had",
+"made"
+],
+"ans": 1,
+"why": "have a good time."
+},
+{
+"q": "I’m having ___ now.",
+"opts": [
+"coffee",
+"a coffee tooth",
+"make coffee"
+],
+"ans": 0,
+"why": "have coffee."
+},
+{
+"q": "Which is correct? (have = ter × comer)",
+"opts": [
+"I am having a car.",
+"I haves a car.",
+"I have a car."
+],
+"ans": 2,
+"why": "Posse sem -ing."
+}
+],
+"fix": [
+{
+"wrong": "I am having a sister.",
+"right": "I have a sister.",
+"why": "Sem -ing para posse."
+},
+{
+"wrong": "She eat lunch at noon.",
+"right": "She has lunch at noon.",
+"why": "have lunch."
+},
+{
+"wrong": "We did a good time.",
+"right": "We had a good time.",
+"why": "have a good time."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com have: “She eats lunch at noon.”",
+"answer": "She has lunch at noon.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “We have a good time.”",
+"answer": "We had a good time.",
+"why": ""
+},
+{
+"prompt": "Reescreva no contínuo (agora): “I have coffee.”",
+"answer": "I am having coffee.",
+"why": ""
+}
+]
+}

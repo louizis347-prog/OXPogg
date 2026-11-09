@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "adjetivo + infinitivo",
+"wrong": "It is important note that…",
+"right": "It is important to note that…",
+"why": "Português “é importante notar”; o brasileiro esquece o to. Adjetivo + to + base."
+},
+"mcq": [
+{
+"q": "It’s important **___** note this.",
+"opts": [
+"of",
+"for",
+"to"
+],
+"ans": 2,
+"why": "To."
+},
+{
+"q": "He is **___** to win.",
+"opts": [
+"probably",
+"maybe",
+"likely"
+],
+"ans": 2,
+"why": "Likely."
+},
+{
+"q": "It is unlikely **___** rain.",
+"opts": [
+"of",
+"to",
+"that to"
+],
+"ans": 1,
+"why": "To."
+},
+{
+"q": "Necessário:",
+"opts": [
+"necessary to",
+"necessary of",
+"necessary for to"
+],
+"ans": 0,
+"why": "To."
+}
+],
+"fix": [
+{
+"wrong": "It is necessary say it.",
+"right": "It is necessary to say it.",
+"why": "To."
+},
+{
+"wrong": "She is probably to win.",
+"right": "She is likely to win.",
+"why": "Likely."
+},
+{
+"wrong": "It is important of note this.",
+"right": "It is important to note this.",
+"why": "To."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Noting this is important.”",
+"answer": "It is important to note this.",
+"why": ""
+},
+{
+"prompt": "Reescreva com likely: “She will probably win.”",
+"answer": "She is likely to win.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She is likely to win.” (unlikely)",
+"answer": "She is unlikely to win.",
+"why": ""
+}
+]
+}

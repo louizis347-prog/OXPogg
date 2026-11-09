@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "want vs need",
+"wrong": "I need a coffee because I love it.",
+"right": "I want a coffee because I love it.",
+"why": "Em português 'preciso' é usado até para vontade; em inglês need é necessidade, want é desejo."
+},
+"mcq": [
+{
+"q": "Você está com sede e quer suco (desejo). Diga:",
+"opts": [
+"I want juice.",
+"I must juice.",
+"I am juice."
+],
+"ans": 0,
+"why": "Desejo = want."
+},
+{
+"q": "My phone is dead. I ___ a charger.",
+"opts": [
+"am",
+"need",
+"likes"
+],
+"ans": 1,
+"why": "Necessidade = need."
+},
+{
+"q": "Negativa correta:",
+"opts": [
+"I not want to go.",
+"I don't wants to go.",
+"I don't want to go."
+],
+"ans": 2,
+"why": "don't + verbo base."
+},
+{
+"q": "Pergunta correta:",
+"opts": [
+"Does he needs to leave?",
+"Do he need to leave?",
+"Does he need to leave?"
+],
+"ans": 2,
+"why": "Does + he + need."
+}
+],
+"fix": [
+{
+"wrong": "He don't want to wait.",
+"right": "He doesn't want to wait.",
+"why": "He → doesn't."
+},
+{
+"wrong": "Do you wants to sit?",
+"right": "Do you want to sit?",
+"why": "Após do, sem -s."
+},
+{
+"wrong": "I no need to go.",
+"right": "I don't need to go.",
+"why": "Negativa com don't."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “I want to leave.”",
+"answer": "I don't want to leave.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She needs to call.”",
+"answer": "Does she need to call?",
+"why": ""
+},
+{
+"prompt": "Troque want por need: “I want to rest.”",
+"answer": "I need to rest.",
+"why": ""
+}
+]
+}

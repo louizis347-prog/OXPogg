@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Much I enjoy the plan, I object.",
+"right": "Much as I enjoy the plan, I object.",
+"why": "Português “por mais que admire” omite o as; inglês exige much as."
+},
+"mcq": [
+{
+"q": "Emphatic concession:",
+"opts": [
+"Much as I admire her, I disagree.",
+"As much admire I her",
+"Much I admire her, I disagree."
+],
+"ans": 0,
+"why": "Much as."
+},
+{
+"q": "Brave as he was…",
+"opts": [
+"fell he",
+"he fell",
+"he falling"
+],
+"ans": 1,
+"why": "Adj + as + S + V."
+},
+{
+"q": "Though form:",
+"opts": [
+"Brave though he was",
+"Though brave was he",
+"Brave he was though"
+],
+"ans": 0,
+"why": "Brave though he was."
+},
+{
+"q": "Much as = …",
+"opts": [
+"when",
+"although",
+"because"
+],
+"ans": 1,
+"why": "Embora."
+}
+],
+"fix": [
+{
+"wrong": "Brave he was as, he fell.",
+"right": "Brave as he was, he fell.",
+"why": "Ordem."
+},
+{
+"wrong": "Much as I respects the plan, I object.",
+"right": "Much as I respect the plan, I object.",
+"why": "Tempos."
+},
+{
+"wrong": "Much as she dislikes it, but she signs.",
+"right": "Much as she dislikes it, she signs.",
+"why": "Sem but."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Although she likes it, she objects.”",
+"answer": "Much as she likes it, she objects.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Although he was brave, he fell.”",
+"answer": "Brave as he was, he fell.",
+"why": ""
+},
+{
+"prompt": "Passado: “Much as I respect the plan, I object.”",
+"answer": "Much as I respected the plan, I objected.",
+"why": ""
+}
+]
+}

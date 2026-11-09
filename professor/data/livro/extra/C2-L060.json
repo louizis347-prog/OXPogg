@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The scientist denied the theory with new data and proved it wrong.",
+"right": "The scientist refuted the theory with new data.",
+"why": "Em português “negar” cobre deny e refute; em inglês refute exige prova de que é falso, deny é só negar sem provar."
+},
+"mcq": [
+{
+"q": "Data **___** the theory, showing it was false.",
+"opts": [
+"refuted",
+"disputed",
+"denied"
+],
+"ans": 0,
+"why": "Refute = provar que é falso."
+},
+{
+"q": "Which verb means to say something is not true, with no proof?",
+"opts": [
+"confirm",
+"refute",
+"deny"
+],
+"ans": 2,
+"why": "Deny = negar."
+},
+{
+"q": "Critics **___** the figures, saying they are doubtful.",
+"opts": [
+"dispute",
+"rebut",
+"refute"
+],
+"ans": 0,
+"why": "Dispute = contestar."
+},
+{
+"q": "Which verb means to answer an argument point by point?",
+"opts": [
+"deny",
+"rebut",
+"accept"
+],
+"ans": 1,
+"why": "Rebut = rebater."
+}
+],
+"fix": [
+{
+"wrong": "He refuted the charge but offered no evidence.",
+"right": "He denied the charge but offered no evidence.",
+"why": "Sem evidência é deny, não refute."
+},
+{
+"wrong": "Critics disputes the figures.",
+"right": "Critics dispute the figures.",
+"why": "Critics é plural."
+},
+{
+"wrong": "She denied to have taken it.",
+"right": "She denied having taken it.",
+"why": "Deny + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque “denied” por “refuted”: “He denied the claim with new data.”",
+"answer": "He refuted the claim with new data.",
+"why": ""
+},
+{
+"prompt": "Reescreva na passiva: “Critics dispute the figures.”",
+"answer": "The figures are disputed by critics.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She denies the allegation.”",
+"answer": "She denied the allegation.",
+"why": ""
+}
+]
+}

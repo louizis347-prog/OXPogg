@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "of ausente",
+"wrong": "We ran out time in the meeting.",
+"right": "We ran out of time in the meeting.",
+"why": "Em português “ficar sem tempo” não tem preposição entre os dois elementos; o aluno omite of. Em inglês, run out of é uma unidade com o objeto."
+},
+"mcq": [
+{
+"q": "“I ___ the team.” (lead)",
+"opts": [
+"run",
+"go",
+"walk"
+],
+"ans": 0,
+"why": "run a team."
+},
+{
+"q": "“We ran ___ trouble.” (met unexpectedly)",
+"opts": [
+"out",
+"into",
+"off"
+],
+"ans": 1,
+"why": "run into."
+},
+{
+"q": "“We ran ___ of coffee.”",
+"opts": [
+"up",
+"in",
+"out"
+],
+"ans": 2,
+"why": "run out of."
+},
+{
+"q": "“They ran ___ the list quickly.”",
+"opts": [
+"through",
+"by",
+"out"
+],
+"ans": 0,
+"why": "run through."
+}
+],
+"fix": [
+{
+"wrong": "We ran out coffee in the talks.",
+"right": "We ran out of coffee in the talks.",
+"why": "of."
+},
+{
+"wrong": "She runs a meeting of the supplier talks, yesterday.",
+"right": "She ran a meeting of the supplier talks yesterday.",
+"why": "Passado."
+},
+{
+"wrong": "They ran in trouble with the supplier.",
+"right": "They ran into trouble with the supplier.",
+"why": "run into."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com run out of: “We have no time left.”",
+"answer": "We have run out of time.",
+"why": "Use present perfect."
+},
+{
+"prompt": "Reescreva com run a: “She leads the procurement team.”",
+"answer": "She runs the procurement team.",
+"why": ""
+},
+{
+"prompt": "Reescreva com ran into: “We unexpectedly met a problem.”",
+"answer": "We ran into a problem.",
+"why": ""
+}
+]
+}

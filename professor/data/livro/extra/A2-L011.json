@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "take = levar/tomar",
+"wrong": "I took a coffee with my friend.",
+"right": "I had a coffee with my friend.",
+"why": "Em português 'tomar café/banho' usa tomar; em inglês coffee é have, mas shower, bus, photo e time combinam com take."
+},
+"mcq": [
+{
+"q": "It ___ me two hours to get there.",
+"opts": [
+"took",
+"made",
+"did"
+],
+"ans": 0,
+"why": "take time."
+},
+{
+"q": "She ___ a photo.",
+"opts": [
+"did",
+"took",
+"made"
+],
+"ans": 1,
+"why": "take a photo."
+},
+{
+"q": "Passado de take:",
+"opts": [
+"taked",
+"took",
+"taken"
+],
+"ans": 1,
+"why": "took."
+},
+{
+"q": "I ___ a shower.",
+"opts": [
+"took",
+"did",
+"made"
+],
+"ans": 0,
+"why": "take a shower."
+}
+],
+"fix": [
+{
+"wrong": "He taked the bus.",
+"right": "He took the bus.",
+"why": "took."
+},
+{
+"wrong": "I made a photo.",
+"right": "I took a photo.",
+"why": "take."
+},
+{
+"wrong": "We did a taxi.",
+"right": "We took a taxi.",
+"why": "take."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I take a shower.”",
+"answer": "I took a shower.",
+"why": ""
+},
+{
+"prompt": "Passado: “She takes the bus.”",
+"answer": "She took the bus.",
+"why": ""
+},
+{
+"prompt": "Passado: “They take photos.”",
+"answer": "They took photos.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "what vs that",
+"wrong": "What is more staff that we need.",
+"right": "It is more staff that we need.",
+"why": "O brasileiro mistura as duas estruturas. Clivada: It is X that…; pseudo: What we need is X."
+},
+"mcq": [
+{
+"q": "It is more staff ___ we need.",
+"opts": [
+"is",
+"that",
+"what"
+],
+"ans": 1,
+"why": "that."
+},
+{
+"q": "What we need ___ more staff.",
+"opts": [
+"that",
+"are",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "The deadline worries me → ___",
+"opts": [
+"What worries me is the deadline.",
+"What the deadline worries me is.",
+"It worries me what deadline."
+],
+"ans": 0,
+"why": "Pseudo."
+},
+{
+"q": "Which is a cleft?",
+"opts": [
+"Time matters.",
+"It is time that matters.",
+"What matters is time."
+],
+"ans": 1,
+"why": "It is…that."
+}
+],
+"fix": [
+{
+"wrong": "What we need that is staff.",
+"right": "What we need is staff.",
+"why": "is."
+},
+{
+"wrong": "It is staff what we need.",
+"right": "It is staff that we need.",
+"why": "that."
+},
+{
+"wrong": "What worries me are the deadline.",
+"right": "What worries me is the deadline.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudo-clivada: “The deadline worries me.”",
+"answer": "What worries me is the deadline.",
+"why": ""
+},
+{
+"prompt": "Clivada: “The deadline worries me.”",
+"answer": "It is the deadline that worries me.",
+"why": ""
+},
+{
+"prompt": "Pseudo-clivada: “We need more staff.”",
+"answer": "What we need is more staff.",
+"why": ""
+}
+]
+}

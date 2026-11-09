@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sem preposição",
+"wrong": "The study is expected to be published in next month.",
+"right": "The study is expected to be published next month.",
+"why": "Em português dizemos “no próximo mês”. Em inglês, expressões com next/last/this não levam preposição."
+},
+"mcq": [
+{
+"q": "“The paper is expected ___ out soon.”",
+"opts": [
+"coming",
+"to come",
+"that come"
+],
+"ans": 1,
+"why": "expected to."
+},
+{
+"q": "A precise hedge:",
+"opts": [
+"always",
+"never",
+"tend to"
+],
+"ans": 2,
+"why": "tend to."
+},
+{
+"q": "“It ___ have been easy.” (deduction in the past, negative)",
+"opts": [
+"can’t",
+"mustn’t been",
+"won’t"
+],
+"ans": 0,
+"why": "can’t have been."
+},
+{
+"q": "Which participle clause is OK?",
+"opts": [
+"Having read the paper, it is long.",
+"Having read the paper, I disagree.",
+"Read the paper, long."
+],
+"ans": 1,
+"why": "Mesmo sujeito."
+}
+],
+"fix": [
+{
+"wrong": "Results may to be revised.",
+"right": "Results may be revised.",
+"why": "modal + base."
+},
+{
+"wrong": "The guide should have been easy for read.",
+"right": "The guide should have been easy to read.",
+"why": "easy to read."
+},
+{
+"wrong": "Having finished, the report was sent.",
+"right": "Having finished, we sent the report.",
+"why": "Sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com is expected to: “People expect the study to appear next month.”",
+"answer": "The study is expected to appear next month.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Staff should have fixed it.”",
+"answer": "It should have been fixed.",
+"why": ""
+},
+{
+"prompt": "Reescreva com tend to: “Often, students skip notes.”",
+"answer": "Students tend to skip notes.",
+"why": ""
+}
+]
+}

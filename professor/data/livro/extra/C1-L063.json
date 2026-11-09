@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "such/so inversão",
+"wrong": "Such is the speed few verify.",
+"right": "Such is the speed that few verify.",
+"why": "O português omite “que” às vezes (“tal é a velocidade, poucos verificam”). Em inglês, such… that exige that."
+},
+"mcq": [
+{
+"q": "Such is the speed ___ few verify.",
+"opts": [
+"than",
+"what",
+"that"
+],
+"ans": 2,
+"why": "that."
+},
+{
+"q": "Never ___ it been so fast.",
+"opts": [
+"has",
+"is",
+"did"
+],
+"ans": 0,
+"why": "has."
+},
+{
+"q": "Only by practice ___ you improve.",
+"opts": [
+"do",
+"can",
+"you can"
+],
+"ans": 1,
+"why": "can."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Never it has been so fast.",
+"Never has been it so fast.",
+"Never has it been so fast."
+],
+"ans": 2,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Never it has been so fast.",
+"right": "Never has it been so fast.",
+"why": "Inversão."
+},
+{
+"wrong": "Only by practice you can improve.",
+"right": "Only by practice can you improve.",
+"why": "Inversão."
+},
+{
+"wrong": "Such is the speed few verify.",
+"right": "Such is the speed that few verify.",
+"why": "that."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “It has never been so fast.”",
+"answer": "Never has it been so fast.",
+"why": ""
+},
+{
+"prompt": "Inverta: “You can improve only by practice.”",
+"answer": "Only by practice can you improve.",
+"why": ""
+},
+{
+"prompt": "Com such: “The speed is so great that few verify.”",
+"answer": "Such is the speed that few verify.",
+"why": ""
+}
+]
+}

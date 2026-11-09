@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontável",
+"wrong": "We need more informations about the oceans.",
+"right": "We need more information about the oceans.",
+"why": "Informação em português tem plural. Em inglês information é incontável."
+},
+"mcq": [
+{
+"q": "Qual é incontável?",
+"opts": [
+"reef",
+"film",
+"evidence"
+],
+"ans": 2,
+"why": "evidence."
+},
+{
+"q": "Complete: They recommend that governments **___** plastics.",
+"opts": [
+"ban",
+"bans",
+"banned"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "Qual é a frase de tese?",
+"opts": [
+"Warm oceans.",
+"The fact that oceans are warming should alarm us.",
+"Please ban."
+],
+"ans": 1,
+"why": "that-clause."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"Warming oceans threaten marine life.",
+"The warming oceans threaten the marine life in general.",
+"Warming oceans threatens marine life."
+],
+"ans": 0,
+"why": "Plural."
+}
+],
+"fix": [
+{
+"wrong": "They recommend to ban plastics.",
+"right": "They recommend that governments ban plastics.",
+"why": "that."
+},
+{
+"wrong": "The fact of the sea is warm worries us.",
+"right": "The fact that the sea is warm worries us.",
+"why": "that."
+},
+{
+"wrong": "We should listen decades ago.",
+"right": "We should have listened decades ago.",
+"why": "should have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe a crítica: “We listen to scientists.”",
+"answer": "We should have listened to scientists.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “It is a great film.” com overall",
+"answer": "Overall, it is a great film.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The reef is damaged.”",
+"answer": "The reefs are damaged.",
+"why": ""
+}
+]
+}

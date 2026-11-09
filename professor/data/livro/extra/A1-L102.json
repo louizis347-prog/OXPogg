@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "like + infinitivo",
+"wrong": "I like to swimming.",
+"right": "I like swimming.",
+"why": "O português usa \"gosto de nadar\" (infinitivo); em inglês like pode vir com -ing ou to + verbo, mas nunca misturados."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"I like swim.",
+"I like swimming.",
+"I like to swimming."
+],
+"ans": 1,
+"why": "Like + -ing."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She like cooking.",
+"She likes cook.",
+"She likes cooking."
+],
+"ans": 2,
+"why": "Terceira."
+},
+{
+"q": "Spelling: run + ing",
+"opts": [
+"running",
+"runing",
+"runnning"
+],
+"ans": 0,
+"why": "Dobra n."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We like of reading.",
+"We like reading.",
+"We like to reading."
+],
+"ans": 1,
+"why": "Sem of."
+}
+],
+"fix": [
+{
+"wrong": "I like swim.",
+"right": "I like swimming.",
+"why": "-ing."
+},
+{
+"wrong": "He like cooking.",
+"right": "He likes cooking.",
+"why": "-s."
+},
+{
+"wrong": "She likes of reading.",
+"right": "She likes reading.",
+"why": "Sem of."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com -ing: “I like to swim.”",
+"answer": "I like swimming.",
+"why": ""
+},
+{
+"prompt": "Negue: “She likes dancing.”",
+"answer": "She doesn’t like dancing.",
+"why": ""
+},
+{
+"prompt": "Troque para “He”: “I like cooking.”",
+"answer": "He likes cooking.",
+"why": ""
+}
+]
+}

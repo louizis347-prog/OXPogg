@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato / sufixo",
+"wrong": "The study is conclusive: it concludes of that tea is healthy.",
+"right": "The study concludes that tea is healthy.",
+"why": "Em português \"conclui-se de que\". Em inglês, conclude é seguido de that, sem of."
+},
+"mcq": [
+{
+"q": "conclusion é...",
+"opts": [
+"substantivo",
+"verbo",
+"advérbio"
+],
+"ans": 0,
+"why": "conclusion = substantivo."
+},
+{
+"q": "conclusively é...",
+"opts": [
+"adjetivo",
+"advérbio",
+"verbo"
+],
+"ans": 1,
+"why": "-ly = advérbio."
+},
+{
+"q": "Qual é adjetivo?",
+"opts": [
+"conclude",
+"conclusion",
+"conclusive"
+],
+"ans": 2,
+"why": "conclusive = adjetivo."
+},
+{
+"q": "Complete: I **___** that it is safe.",
+"opts": [
+"conclusion",
+"conclude",
+"conclusively"
+],
+"ans": 1,
+"why": "verbo."
+}
+],
+"fix": [
+{
+"wrong": "The conclude was clear.",
+"right": "The conclusion was clear.",
+"why": "substantivo."
+},
+{
+"wrong": "It was not conclude.",
+"right": "It was not conclusive.",
+"why": "adjetivo."
+},
+{
+"wrong": "They conclusive that it works.",
+"right": "They concluded that it works.",
+"why": "verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para substantivo: “We conclude.” → Our ___",
+"answer": "Our conclusion",
+"why": ""
+},
+{
+"prompt": "Reescreva com conclude that: “Our conclusion: it is safe.”",
+"answer": "We conclude that it is safe.",
+"why": ""
+},
+{
+"prompt": "Passe ao passado: “They conclude that it is safe.”",
+"answer": "They concluded that it is safe.",
+"why": ""
+}
+]
+}

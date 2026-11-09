@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "would × used to (produção)",
+"wrong": "I would be tired at five, and my boss would pay us in cash.",
+"right": "I used to be tired at five, and my boss used to pay us in cash.",
+"why": "Em português o imperfeito serve para tudo. Em inglês, would só em ação repetida; para estado e situação permanente, use used to."
+},
+"mcq": [
+{
+"q": "I ___ wake up at five (ação).",
+"opts": [
+"would",
+"used to be",
+"will"
+],
+"ans": 0,
+"why": "would."
+},
+{
+"q": "My boss ___ pay us in cash.",
+"opts": [
+"would to",
+"is used",
+"used to"
+],
+"ans": 2,
+"why": "used to."
+},
+{
+"q": "I ___ a small flat (estado).",
+"opts": [
+"would have",
+"used to have",
+"will have"
+],
+"ans": 1,
+"why": "Estado."
+},
+{
+"q": "Which is wrong? (would × used to (produção))",
+"opts": [
+"I used to own a car.",
+"I would own a car.",
+"I owned a car."
+],
+"ans": 1,
+"why": "own = estado."
+}
+],
+"fix": [
+{
+"wrong": "We would have an old car.",
+"right": "We used to have an old car.",
+"why": "Estado."
+},
+{
+"wrong": "I would to wake up early.",
+"right": "I would wake up early.",
+"why": "Sem to."
+},
+{
+"wrong": "She would be a nurse.",
+"right": "She used to be a nurse.",
+"why": "Estado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com would: “I woke up at five every day.”",
+"answer": "I would wake up at five every day.",
+"why": ""
+},
+{
+"prompt": "Reescreva com used to: “My boss paid us in cash.”",
+"answer": "My boss used to pay us in cash.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “I would wake up late.”",
+"answer": "I wouldn't wake up late.",
+"why": ""
+}
+]
+}

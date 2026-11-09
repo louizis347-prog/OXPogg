@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio",
+"wrong": "Students that wish to enrol must apply and enrolment is limit to 30.",
+"right": "Students wishing to enrol must apply; enrolment is limited to 30.",
+"why": "Português usa “alunos que desejam”; em avisos formais prefere-se o particípio presente, e a restrição leva limited to."
+},
+"mcq": [
+{
+"q": "How do you state a cap in a notice?",
+"opts": [
+"Enrolment is limited to 30.",
+"Enrolment limits at 30.",
+"Enrolment is limit 30."
+],
+"ans": 0,
+"why": "limited to."
+},
+{
+"q": "Compact clause:",
+"opts": [
+"Students who wishing to enrol",
+"Students wish enrol",
+"Students wishing to enrol must apply."
+],
+"ans": 2,
+"why": "Particípio."
+},
+{
+"q": "Limited to uses…",
+"opts": [
+"at",
+"of",
+"to"
+],
+"ans": 2,
+"why": "to."
+},
+{
+"q": "Wishing = …",
+"opts": [
+"wished",
+"to wish",
+"who wish"
+],
+"ans": 2,
+"why": "Particípio presente."
+}
+],
+"fix": [
+{
+"wrong": "Enrolment is limited at 30.",
+"right": "Enrolment is limited to 30.",
+"why": "to."
+},
+{
+"wrong": "Students who wishing to enrol apply.",
+"right": "Students wishing to enrol apply.",
+"why": "Sem who."
+},
+{
+"wrong": "Enrolment limited to 30 students are.",
+"right": "Enrolment is limited to 30 students.",
+"why": "Verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reduza: “Students who wish to enrol must apply.”",
+"answer": "Students wishing to enrol must apply.",
+"why": ""
+},
+{
+"prompt": "Passiva: “We limit enrolment to 30.”",
+"answer": "Enrolment is limited to 30.",
+"why": ""
+},
+{
+"prompt": "Negativo: “Students wishing to enrol must apply.”",
+"answer": "Students wishing to enrol need not apply.",
+"why": ""
+}
+]
+}

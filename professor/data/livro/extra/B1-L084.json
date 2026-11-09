@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dedução presente × passado",
+"wrong": "She must be at lunch yesterday.",
+"right": "She must have been at lunch yesterday.",
+"why": "Em português “deve estar” e “deve ter estado” são formas distintas, mas o brasileiro mantém “must be” para o passado. Em inglês, passado = modal + have + particípio."
+},
+"mcq": [
+{
+"q": "She ___ at lunch (agora).",
+"opts": [
+"must have been",
+"must be",
+"musts be"
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "She ___ at lunch (ontem).",
+"opts": [
+"must have been",
+"must be",
+"must was"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "He ___ left (impossível).",
+"opts": [
+"can’t have",
+"can’t has",
+"can’t to"
+],
+"ans": 0,
+"why": "can’t have."
+},
+{
+"q": "They ___ been late (talvez).",
+"opts": [
+"might had",
+"might has",
+"might have"
+],
+"ans": 2,
+"why": "might have."
+}
+],
+"fix": [
+{
+"wrong": "They must be late yesterday.",
+"right": "They must have been late yesterday.",
+"why": "Passado."
+},
+{
+"wrong": "She might be gone by 5 (ontem).",
+"right": "She might have gone by 5.",
+"why": "Passado."
+},
+{
+"wrong": "He can’t has left.",
+"right": "He can’t have left.",
+"why": "have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o passado: “She must be at lunch.”",
+"answer": "She must have been at lunch.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “He can’t be angry.”",
+"answer": "He can’t have been angry.",
+"why": ""
+},
+{
+"prompt": "Passe para o passado: “They might be late.”",
+"answer": "They might have been late.",
+"why": ""
+}
+]
+}

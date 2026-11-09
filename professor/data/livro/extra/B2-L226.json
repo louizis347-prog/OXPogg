@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "remember + -ing",
+"wrong": "I remembered to see the old bridge as a child.",
+"right": "I remembered seeing the old bridge as a child.",
+"why": "O português usa “lembrar de ver” nos dois casos. Em inglês, o sentido muda: lembrança do passado = -ing; tarefa a cumprir = to + base."
+},
+"mcq": [
+{
+"q": "Choose the correct punctuation:",
+"opts": [
+"It failed, nevertheless we tried.",
+"It failed. Nevertheless, we tried.",
+"It failed nevertheless, we tried."
+],
+"ans": 1,
+"why": "Nevertheless começa nova frase, com vírgula depois."
+},
+{
+"q": "Remember ___ milk on the way home!",
+"opts": [
+"buy",
+"buying",
+"to buy"
+],
+"ans": 2,
+"why": "Tarefa futura: remember to."
+},
+{
+"q": "The man ___ lives next door is a chef.",
+"opts": [
+"what",
+"whose he",
+"who"
+],
+"ans": 2,
+"why": "Pronome relativo para pessoa: who; sem pronome extra."
+},
+{
+"q": "It is ___ to rain tomorrow.",
+"opts": [
+"unlikely",
+"unprobable",
+"impossibly"
+],
+"ans": 0,
+"why": "unlikely to + base."
+}
+],
+"fix": [
+{
+"wrong": "The man who he lives here is kind.",
+"right": "The man who lives here is kind.",
+"why": "Não repita o sujeito depois do relativo."
+},
+{
+"wrong": "Furthermore we need more data.",
+"right": "Furthermore, we need more data.",
+"why": "Vírgula após o conectivo."
+},
+{
+"wrong": "She is likely finish early.",
+"right": "She is likely to finish early.",
+"why": "likely to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com who: “I met a woman. She teaches law.”",
+"answer": "I met a woman who teaches law.",
+"why": ""
+},
+{
+"prompt": "Reescreva com unlikely: “He will probably not agree.”",
+"answer": "He is unlikely to agree.",
+"why": ""
+},
+{
+"prompt": "Reescreva com remember + -ing: “I recall that I met him.”",
+"answer": "I remember meeting him.",
+"why": ""
+}
+]
+}

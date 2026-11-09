@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "imperativo da receita",
+"wrong": "You must to mix the flour with the eggs.",
+"right": "Mix the flour with the eggs.",
+"why": "Em português a receita usa infinitivo ('misturar') ou 'você deve misturar'; em inglês, instruções usam imperativo direto sem sujeito."
+},
+"mcq": [
+{
+"q": "___ the eggs gently.",
+"opts": [
+"To beat",
+"Beating",
+"Beat"
+],
+"ans": 2,
+"why": "imperativo."
+},
+{
+"q": "Don't ___ the sugar.",
+"opts": [
+"forget",
+"to forget",
+"forgetting"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "First, ___ your notes.",
+"opts": [
+"read",
+"reads",
+"reading"
+],
+"ans": 0,
+"why": "base."
+},
+{
+"q": "Qual sequência está certa?",
+"opts": [
+"First to read, then write.",
+"First read, then write.",
+"First reading, then writing."
+],
+"ans": 1,
+"why": "imperativo."
+}
+],
+"fix": [
+{
+"wrong": "You are adding the milk now.",
+"right": "Add the milk now.",
+"why": "imperativo."
+},
+{
+"wrong": "Don't to forget the salt.",
+"right": "Don't forget the salt.",
+"why": "sem to."
+},
+{
+"wrong": "Reads the text twice.",
+"right": "Read the text twice.",
+"why": "sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Imperativo: “You should write a plan.”",
+"answer": "Write a plan.",
+"why": ""
+},
+{
+"prompt": "Negativo: “You mustn't be late.”",
+"answer": "Don't be late.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “You should make notes.”",
+"answer": "Make notes.",
+"why": ""
+}
+]
+}

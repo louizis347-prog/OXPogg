@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "adjetivo de sentimento",
+"wrong": "I am boring today.",
+"right": "I am bored today.",
+"why": "Em português “estou entediada” e “chata” se confundem. -ed descreve o sentimento da pessoa; -ing descreve a causa."
+},
+"mcq": [
+{
+"q": "Orgulho:",
+"opts": [
+"proudly",
+"pride",
+"proud"
+],
+"ans": 2,
+"why": "Adjetivo."
+},
+{
+"q": "Alívio:",
+"opts": [
+"relief",
+"relieved",
+"relieving"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "I feel **___**.",
+"opts": [
+"doubting",
+"doubtful",
+"doubt"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "She is **___** of her son.",
+"opts": [
+"pride",
+"proud",
+"prouding"
+],
+"ans": 1,
+"why": "Proud of."
+}
+],
+"fix": [
+{
+"wrong": "I am proud for my son.",
+"right": "I am proud of my son.",
+"why": "Proud of."
+},
+{
+"wrong": "I am relieve now.",
+"right": "I am relieved now.",
+"why": "Adjetivo."
+},
+{
+"wrong": "She is unsure with the plan.",
+"right": "She is unsure about the plan.",
+"why": "About."
+}
+],
+"rewrite": [
+{
+"prompt": "Adjetivo: “I feel relief.”",
+"answer": "I feel relieved.",
+"why": ""
+},
+{
+"prompt": "Use proud: “She has pride in her son.”",
+"answer": "She is proud of her son.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She is sure.” (unsure)",
+"answer": "She is unsure.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "falso cognato",
+"wrong": "The author uses an unreliable narrator in The Remains of the Day, for example.",
+"right": "The author uses an unreliable narrator, as in The Remains of the Day.",
+"why": "Português “por exemplo” vira for example no fim; para nomear técnica + obra, use as in + obra."
+},
+"mcq": [
+{
+"q": "Named device:",
+"opts": [
+"an narrator unreliable",
+"an unreliable narrator",
+"a narrator unreliability"
+],
+"ans": 1,
+"why": "Adjetivo + nome."
+},
+{
+"q": "Example from a work:",
+"opts": [
+"…how The Remains.",
+"…as in The Remains of the Day.",
+"…like in The Remains of the Day."
+],
+"ans": 1,
+"why": "as in."
+},
+{
+"q": "Technique = …",
+"opts": [
+"plot",
+"device",
+"title"
+],
+"ans": 1,
+"why": "Recurso."
+},
+{
+"q": "Narrator spelled…",
+"opts": [
+"narrater",
+"narrator",
+"narator"
+],
+"ans": 1,
+"why": "narrator."
+}
+],
+"fix": [
+{
+"wrong": "The author use a narrator.",
+"right": "The author uses a narrator.",
+"why": "-s."
+},
+{
+"wrong": "He used a unreliable narrator.",
+"right": "He used an unreliable narrator.",
+"why": "an."
+},
+{
+"wrong": "Like in the novel, he lies.",
+"right": "As in the novel, he lies.",
+"why": "as in."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “The author uses an unreliable narrator.”",
+"answer": "The author used an unreliable narrator.",
+"why": ""
+},
+{
+"prompt": "Reescreva com as in: “For example, in the novel he lies.”",
+"answer": "As in the novel, he lies.",
+"why": ""
+},
+{
+"prompt": "Passiva: “The author uses a device.”",
+"answer": "A device is used by the author.",
+"why": ""
+}
+]
+}

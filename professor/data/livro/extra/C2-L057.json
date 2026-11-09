@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hífen sem plural",
+"wrong": "We took a three-hours walk across the salt marsh.",
+"right": "We took a three-hour walk across the salt marsh.",
+"why": "Em português “caminhada de três horas” mantém o plural. Em inglês, em adjetivos compostos o substantivo fica no singular."
+},
+"mcq": [
+{
+"q": "“Mist-wrapped marsh” is a...",
+"opts": [
+"compound adjective",
+"verb",
+"adverb"
+],
+"ans": 0,
+"why": "Adjetivo composto."
+},
+{
+"q": "Field notes often use...",
+"opts": [
+"future perfect",
+"time + historic present",
+"passive only"
+],
+"ans": 1,
+"why": "Presente histórico."
+},
+{
+"q": "An exact verb of movement:",
+"opts": [
+"goes",
+"does",
+"quarters"
+],
+"ans": 2,
+"why": "quarters."
+},
+{
+"q": "“5:42 a.m. A harrier quarters the reeds” gives...",
+"opts": [
+"vividness",
+"a rule",
+"a list"
+],
+"ans": 0,
+"why": "Vivacidade."
+}
+],
+"fix": [
+{
+"wrong": "A harrier quarter the reeds at dawn.",
+"right": "A harrier quarters the reeds at dawn.",
+"why": "-s."
+},
+{
+"wrong": "The mist-wrapped marshes is quiet.",
+"right": "The mist-wrapped marsh is quiet.",
+"why": "is."
+},
+{
+"wrong": "We saw a ten-meters tall reed.",
+"right": "We saw a ten-meter tall reed.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como adjetivo composto: “a walk of three hours”",
+"answer": "a three-hour walk",
+"why": ""
+},
+{
+"prompt": "Reescreva com hífen: “a marsh wrapped in mist”",
+"answer": "a mist-wrapped marsh",
+"why": ""
+},
+{
+"prompt": "Reescreva no presente histórico: “At 5:42 a.m. a harrier quartered the reeds.”",
+"answer": "At 5:42 a.m. a harrier quarters the reeds.",
+"why": ""
+}
+]
+}

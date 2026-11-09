@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pode ter + particípio",
+"wrong": "She might to have missed the bus.",
+"right": "She might have missed the bus.",
+"why": "O português \"pode ter perdido\" leva o aluno a inserir to. Depois de might/could, usa-se have + particípio diretamente."
+},
+"mcq": [
+{
+"q": "Qual frase mostra oportunidade perdida?",
+"opts": [
+"We could go by train.",
+"We go by train.",
+"We could have gone by train."
+],
+"ans": 2,
+"why": "could have + particípio = poderíamos ter ido (mas não fomos)."
+},
+{
+"q": "Complete: The keys **___** be in the car. (talvez estejam)",
+"opts": [
+"might",
+"might have",
+"must have been"
+],
+"ans": 0,
+"why": "Presente: might + verbo base; passado: might have."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"She may has left already.",
+"She may have left already.",
+"She may had left already."
+],
+"ans": 1,
+"why": "Após modal: have + particípio."
+},
+{
+"q": "Qual tem sentido de possibilidade fraca?",
+"opts": [
+"It might have been a mistake.",
+"It must have been a mistake.",
+"It was definitely a mistake."
+],
+"ans": 0,
+"why": "might = pouca certeza."
+}
+],
+"fix": [
+{
+"wrong": "I might to have left it at home.",
+"right": "I might have left it at home.",
+"why": "Sem to após might."
+},
+{
+"wrong": "We could went by bus yesterday, but we walked.",
+"right": "We could have gone by bus yesterday, but we walked.",
+"why": "Possibilidade passada não realizada: could have + particípio."
+},
+{
+"wrong": "It might not has been him.",
+"right": "It might not have been him.",
+"why": "Modal + not + have + particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “She might be late.” (talvez tenha se atrasado)",
+"answer": "She might have been late.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “We can take a taxi.” (oportunidade perdida)",
+"answer": "We could have taken a taxi.",
+"why": ""
+},
+{
+"prompt": "Reescreva na negativa: “He may have seen it.”",
+"answer": "He may not have seen it.",
+"why": ""
+}
+]
+}

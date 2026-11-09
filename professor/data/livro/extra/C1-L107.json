@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sem fonte",
+"wrong": "It is estimate that one in six lacks access.",
+"right": "It is estimated that one in six lacks access.",
+"why": "Em português “estima-se” é reflexivo. Em inglês, passiva com is + particípio estimated."
+},
+"mcq": [
+{
+"q": "It is ___ that one in six lacks access.",
+"opts": [
+"estimate",
+"estimating",
+"estimated"
+],
+"ans": 2,
+"why": "Particípio."
+},
+{
+"q": "___ been collected over three years, the data are reliable.",
+"opts": [
+"Having",
+"Be",
+"Been"
+],
+"ans": 0,
+"why": "Having been."
+},
+{
+"q": "One in six ___ access. (singular)",
+"opts": [
+"lacking",
+"lacks",
+"lack"
+],
+"ans": 1,
+"why": "lacks."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"It estimates that…",
+"They is estimated that…",
+"It is estimated that…"
+],
+"ans": 2,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "It is estimate that four in ten lack access.",
+"right": "It is estimated that four in ten lack access.",
+"why": "Particípio."
+},
+{
+"wrong": "Having collected over three years, the data are reliable.",
+"right": "Having been collected over three years, the data are reliable.",
+"why": "been."
+},
+{
+"wrong": "One in six lack access.",
+"right": "One in six lacks access.",
+"why": "lacks."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Experts estimate that one in six lacks access.”",
+"answer": "It is estimated that one in six lacks access.",
+"why": ""
+},
+{
+"prompt": "Passiva: “Researchers collected the data over three years. They are reliable.” (Having been…)",
+"answer": "Having been collected over three years, the data are reliable.",
+"why": ""
+},
+{
+"prompt": "Com to: “It is said that clinics will close.” (Clinics are said…)",
+"answer": "Clinics are said to close.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "estrutura",
+"wrong": "For all its flaws, but it works.",
+"right": "For all its flaws, it works.",
+"why": "Português admite “apesar de…, mas”; for all é concessão que dispensa but."
+},
+"mcq": [
+{
+"q": "For all its flaws…",
+"opts": [
+"but it works",
+"and but works",
+"it works"
+],
+"ans": 2,
+"why": "Sem but."
+},
+{
+"q": "Albeit imperfect…",
+"opts": [
+"…it is working still.",
+"…works it.",
+"…it works."
+],
+"ans": 2,
+"why": "Albeit."
+},
+{
+"q": "Do: abolish =",
+"opts": [
+"do up with",
+"do away with",
+"do without"
+],
+"ans": 1,
+"why": "do away with."
+},
+{
+"q": "However + adj:",
+"opts": [
+"however small",
+"however is small",
+"however it small"
+],
+"ans": 0,
+"why": "however small."
+}
+],
+"fix": [
+{
+"wrong": "For all its flaw, it works.",
+"right": "For all its flaws, it works.",
+"why": "Plural."
+},
+{
+"wrong": "However small is it, it counts.",
+"right": "However small it is, it counts.",
+"why": "Ordem."
+},
+{
+"wrong": "Albeit is imperfect, it works.",
+"right": "Albeit imperfect, it works.",
+"why": "Sem verbo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com for all: “Although it has flaws, it works.”",
+"answer": "For all its flaws, it works.",
+"why": ""
+},
+{
+"prompt": "Com however: “It is small, but it counts.”",
+"answer": "However small it is, it counts.",
+"why": ""
+},
+{
+"prompt": "Com albeit: “It is imperfect, but it works.”",
+"answer": "Albeit imperfect, it works.",
+"why": ""
+}
+]
+}

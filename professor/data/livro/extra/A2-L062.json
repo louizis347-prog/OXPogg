@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modal + base",
+"wrong": "She should to go.",
+"right": "She should go.",
+"why": "Em português 'deveria ir' usa infinitivo; o aluno insere to após modais. Modais não levam to nem -s."
+},
+"mcq": [
+{
+"q": "You ___ see a doctor.",
+"opts": [
+"shoulds",
+"should",
+"should to"
+],
+"ans": 1,
+"why": "should."
+},
+{
+"q": "He ___ wear a seatbelt. (obrigação)",
+"opts": [
+"must",
+"musts",
+"must to"
+],
+"ans": 0,
+"why": "must."
+},
+{
+"q": "I ___ work today. (obrigação)",
+"opts": [
+"must to",
+"have to",
+"has to"
+],
+"ans": 1,
+"why": "have to."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"Could you to help me?",
+"Could you help me?",
+"Could you helping me?"
+],
+"ans": 1,
+"why": "base."
+}
+],
+"fix": [
+{
+"wrong": "You should to rest.",
+"right": "You should rest.",
+"why": "sem to."
+},
+{
+"wrong": "He musts go.",
+"right": "He must go.",
+"why": "sem -s."
+},
+{
+"wrong": "She have to work.",
+"right": "She has to work.",
+"why": "has to."
+}
+],
+"rewrite": [
+{
+"prompt": "Conselho com should: “You rest.”",
+"answer": "You should rest.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You could help.”",
+"answer": "Could you help?",
+"why": ""
+},
+{
+"prompt": "3ª pessoa: “I have to go.” (she)",
+"answer": "She has to go.",
+"why": ""
+}
+]
+}

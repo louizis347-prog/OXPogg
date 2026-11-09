@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "h mudo",
+"wrong": "I have ouse and I eat am.",
+"right": "I have a house and I eat ham.",
+"why": "O português tem h mudo, então o brasileiro omite o /h/ inicial de house/ham/hello; em inglês ele é pronunciado como um sopro."
+},
+"mcq": [
+{
+"q": "Initial h in “house” is…",
+"opts": [
+"silent",
+"pronounced as a breath",
+"like Portuguese r"
+],
+"ans": 1,
+"why": "Sopro."
+},
+{
+"q": "Which is “mão” in English?",
+"opts": [
+"and",
+"end",
+"hand"
+],
+"ans": 2,
+"why": "Hand."
+},
+{
+"q": "Which pair differs by /h/?",
+"opts": [
+"hat / at",
+"cat / cut",
+"dog / dig"
+],
+"ans": 0,
+"why": "H."
+},
+{
+"q": "“Hello” starts with…",
+"opts": [
+"a vowel",
+"/h/",
+"/r/"
+],
+"ans": 1,
+"why": "Hello."
+}
+],
+"fix": [
+{
+"wrong": "I live in a ouse.",
+"right": "I live in a house.",
+"why": "H."
+},
+{
+"wrong": "She has a at.",
+"right": "She has a hat.",
+"why": "H."
+},
+{
+"wrong": "I eat am for lunch.",
+"right": "I eat ham for lunch.",
+"why": "H."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija: “I have an arm and an and.”",
+"answer": "I have an arm and a hand.",
+"why": ""
+},
+{
+"prompt": "Complete: “Say ___ to him.” (olá)",
+"answer": "Say hello to him.",
+"why": ""
+},
+{
+"prompt": "Escreva corretamente: “It is a ot day.”",
+"answer": "It is a hot day.",
+"why": ""
+}
+]
+}

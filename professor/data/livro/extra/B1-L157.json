@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "relativas em texto",
+"wrong": "People who are bilingual, a tool that it helps communication, a lab where the staff work there.",
+"right": "People who are bilingual, a tool that helps communication, a lab where the staff work.",
+"why": "Em português é comum repetir o pronome (“a ferramenta que ela ajuda”). Em inglês, o relativo já faz o papel do sujeito ou do lugar."
+},
+"mcq": [
+{
+"q": "People ___ are bilingual…",
+"opts": [
+"which",
+"who",
+"whose"
+],
+"ans": 1,
+"why": "who."
+},
+{
+"q": "A tool ___ helps communication.",
+"opts": [
+"who",
+"that",
+"where"
+],
+"ans": 1,
+"why": "that."
+},
+{
+"q": "A lab ___ staff work.",
+"opts": [
+"where",
+"who",
+"which"
+],
+"ans": 0,
+"why": "where."
+},
+{
+"q": "Which has a duplicate subject?",
+"opts": [
+"A tool that helps",
+"A tool which helps",
+"A tool that it helps"
+],
+"ans": 2,
+"why": "it duplicado."
+}
+],
+"fix": [
+{
+"wrong": "A person who she speaks three languages.",
+"right": "A person who speaks three languages.",
+"why": "Sem she."
+},
+{
+"wrong": "A place where I work there.",
+"right": "A place where I work.",
+"why": "Sem there."
+},
+{
+"wrong": "An app that it translates.",
+"right": "An app that translates.",
+"why": "Sem it."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com who: “Bilingual people earn more. They speak two languages.”",
+"answer": "Bilingual people who speak two languages earn more.",
+"why": ""
+},
+{
+"prompt": "Una com that: “A tool helps communication.”",
+"answer": "A tool that helps communication.",
+"why": ""
+},
+{
+"prompt": "Una com where: “A lab. The staff work in it.”",
+"answer": "A lab where the staff work.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "presente × agora",
+"wrong": "Look! She cooks now.",
+"right": "Look! She is cooking now.",
+"why": "Em português o presente simples cobre ação habitual e agora; em inglês agora exige be + -ing."
+},
+"mcq": [
+{
+"q": "Habit: She ___ coffee every day.",
+"opts": [
+"is drinking",
+"drink",
+"drinks"
+],
+"ans": 2,
+"why": "Hábito."
+},
+{
+"q": "Now: They ___ football.",
+"opts": [
+"are playing",
+"play",
+"plays"
+],
+"ans": 0,
+"why": "Agora."
+},
+{
+"q": "Signal word for habit",
+"opts": [
+"now",
+"usually",
+"at the moment"
+],
+"ans": 1,
+"why": "Usually."
+},
+{
+"q": "Signal word for now",
+"opts": [
+"every day",
+"always",
+"right now"
+],
+"ans": 2,
+"why": "Right now."
+}
+],
+"fix": [
+{
+"wrong": "Look! It rains.",
+"right": "Look! It is raining.",
+"why": "Agora: -ing."
+},
+{
+"wrong": "I am walking to work every day.",
+"right": "I walk to work every day.",
+"why": "Hábito: simples."
+},
+{
+"wrong": "She is work now.",
+"right": "She is working now.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Mude para agora: “She reads every night.”",
+"answer": "She is reading now.",
+"why": ""
+},
+{
+"prompt": "Mude para hábito: “He is running now.” (every day)",
+"answer": "He runs every day.",
+"why": ""
+},
+{
+"prompt": "Mude para agora: “They play soccer.”",
+"answer": "They are playing soccer now.",
+"why": ""
+}
+]
+}

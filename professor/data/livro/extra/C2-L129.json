@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The model was proposed from Petty and Cacioppo in 1986.",
+"right": "The model was proposed by Petty and Cacioppo in 1986.",
+"why": "Português “proposto por”; em inglês agente da passiva é by."
+},
+"mcq": [
+{
+"q": "Attribution:",
+"opts": [
+"proposed of Petty",
+"proposed by Petty in 1986",
+"proposed from Petty"
+],
+"ans": 1,
+"why": "by."
+},
+{
+"q": "Define:",
+"opts": [
+"The model holds persuasion that",
+"The model hold that…",
+"The model holds that persuasion is…"
+],
+"ans": 2,
+"why": "holds that."
+},
+{
+"q": "Year preposition:",
+"opts": [
+"on 1986",
+"at 1986",
+"in 1986"
+],
+"ans": 2,
+"why": "in."
+},
+{
+"q": "Holds that = …",
+"opts": [
+"catches",
+"maintains",
+"owns"
+],
+"ans": 1,
+"why": "Sustenta."
+}
+],
+"fix": [
+{
+"wrong": "It was proposed from Petty.",
+"right": "It was proposed by Petty.",
+"why": "by."
+},
+{
+"wrong": "The model hold that persuasion is routed.",
+"right": "The model holds that persuasion is routed.",
+"why": "-s."
+},
+{
+"wrong": "It was proposed at 1986.",
+"right": "It was proposed in 1986.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Petty proposed the model.”",
+"answer": "The model was proposed by Petty.",
+"why": ""
+},
+{
+"prompt": "Passado: “The model holds that.”",
+"answer": "The model held that.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It holds that.”",
+"answer": "It does not hold that.",
+"why": ""
+}
+]
+}

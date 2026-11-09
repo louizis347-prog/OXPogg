@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "if misto",
+"wrong": "If I studied medicine, I would be a doctor now.",
+"right": "If I had studied medicine, I would be a doctor now.",
+"why": "Em português usamos “se eu tivesse estudado, seria”. O brasileiro simplifica if + passado simples. Em inglês misto: if + past perfect, would + base."
+},
+"mcq": [
+{
+"q": "If I ___ medicine, I would be a doctor now.",
+"opts": [
+"studied",
+"would study",
+"had studied"
+],
+"ans": 2,
+"why": "past perfect."
+},
+{
+"q": "If she were taller, she ___ have played.",
+"opts": [
+"would",
+"will",
+"had"
+],
+"ans": 0,
+"why": "would have."
+},
+{
+"q": "O misto A combina…",
+"opts": [
+"futuro→presente",
+"passado→presente",
+"presente→passado"
+],
+"ans": 1,
+"why": "Passado→presente."
+},
+{
+"q": "If he had saved, he ___ rich now.",
+"opts": [
+"would have been",
+"will be",
+"would be"
+],
+"ans": 2,
+"why": "would be."
+}
+],
+"fix": [
+{
+"wrong": "If I studied law, I would be a lawyer now.",
+"right": "If I had studied law, I would be a lawyer now.",
+"why": "past perfect."
+},
+{
+"wrong": "If he had saved, he would had money.",
+"right": "If he had saved, he would have money.",
+"why": "would + base."
+},
+{
+"wrong": "If I would have left, I would be there.",
+"right": "If I had left, I would be there.",
+"why": "had."
+}
+],
+"rewrite": [
+{
+"prompt": "Misto: “I didn’t study law, so I am not a lawyer.”",
+"answer": "If I had studied law, I would be a lawyer.",
+"why": ""
+},
+{
+"prompt": "Misto: “He didn’t save, so he has no money.”",
+"answer": "If he had saved, he would have money.",
+"why": ""
+},
+{
+"prompt": "Misto: “She didn’t go, so she is not here.”",
+"answer": "If she had gone, she would be here.",
+"why": ""
+}
+]
+}

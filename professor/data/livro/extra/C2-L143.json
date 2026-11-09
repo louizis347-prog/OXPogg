@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Not until midnight I left the party.",
+"right": "Not until midnight did I leave the party.",
+"why": "Português mantém a ordem direta após “só quando/não até”; inglês inverte aux + sujeito após Not until."
+},
+"mcq": [
+{
+"q": "Persuade pattern:",
+"opts": [
+"persuade someone that",
+"persuade of",
+"persuade someone to do"
+],
+"ans": 2,
+"why": "to do."
+},
+{
+"q": "Which sentence inverts correctly after Hardly?",
+"opts": [
+"Hardly she had left when",
+"Hardly had she left when it rained.",
+"Hardly had left she"
+],
+"ans": 1,
+"why": "Hardly had… when."
+},
+{
+"q": "Which sentence is a correct cleft about the plan?",
+"opts": [
+"It was the plan that failed.",
+"It was the plan what failed.",
+"The plan was that failed."
+],
+"ans": 0,
+"why": "that."
+},
+{
+"q": "Convince that…",
+"opts": [
+"place",
+"belief",
+"action"
+],
+"ans": 1,
+"why": "Crença."
+}
+],
+"fix": [
+{
+"wrong": "Not until midnight I left.",
+"right": "Not until midnight did I leave.",
+"why": "Inversão."
+},
+{
+"wrong": "She convinced me to go.",
+"right": "She persuaded me to go.",
+"why": "Ação."
+},
+{
+"wrong": "Hardly she had left when it rained.",
+"right": "Hardly had she left when it rained.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “I did not leave until midnight.”",
+"answer": "Not until midnight did I leave.",
+"why": ""
+},
+{
+"prompt": "Cleft: “The plan failed.”",
+"answer": "It was the plan that failed.",
+"why": ""
+},
+{
+"prompt": "Troque por convince: “He persuaded me that the plan was fair.”",
+"answer": "He convinced me that the plan was fair.",
+"why": ""
+}
+]
+}

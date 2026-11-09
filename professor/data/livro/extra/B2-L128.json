@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem dos adjetivos",
+"wrong": "It is a study scientific important.",
+"right": "It is an important scientific study.",
+"why": "Adjetivo vem depois do substantivo em português. Em inglês, antes."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"She explained me it.",
+"She explained to it me.",
+"She explained it to me."
+],
+"ans": 2,
+"why": "explain to."
+},
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"até duas palavras",
+"exatamente duas",
+"três"
+],
+"ans": 0,
+"why": "limite."
+},
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto nega",
+"o texto não diz",
+"o texto confirma"
+],
+"ans": 1,
+"why": "Não mencionado."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a useful new tool",
+"a tool new useful",
+"a new tool useful"
+],
+"ans": 0,
+"why": "adjetivo antes."
+}
+],
+"fix": [
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+},
+{
+"wrong": "In my point of view, it is fair.",
+"right": "In my view, it is fair.",
+"why": "in my view."
+},
+{
+"wrong": "There is an increase of cars.",
+"right": "There is an increase in cars.",
+"why": "in."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+},
+{
+"prompt": "Reescreva com the author argues that: “It's unfair.” (author)",
+"answer": "The author argues that it is unfair.",
+"why": ""
+},
+{
+"prompt": "Passe ao plural: “The graph shows a rise.”",
+"answer": "The graphs show a rise.",
+"why": ""
+}
+]
+}

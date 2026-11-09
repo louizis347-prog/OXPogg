@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "hold / trust",
+"wrong": "I trust to him.",
+"right": "I trust him.",
+"why": "Em português 'confio nele' usa preposição; em inglês trust + objeto direto, sem to/in. Hold = segurar."
+},
+"mcq": [
+{
+"q": "Please ___ my bag.",
+"opts": [
+"hold",
+"keep to",
+"take to"
+],
+"ans": 0,
+"why": "hold."
+},
+{
+"q": "I ___ her. She is honest.",
+"opts": [
+"trust",
+"trust in",
+"trust to"
+],
+"ans": 0,
+"why": "trust."
+},
+{
+"q": "Passado de hold:",
+"opts": [
+"held",
+"holded",
+"hold"
+],
+"ans": 0,
+"why": "held."
+},
+{
+"q": "___ on, please. (ao telefone)",
+"opts": [
+"Hold",
+"Keep",
+"Take"
+],
+"ans": 0,
+"why": "hold on."
+}
+],
+"fix": [
+{
+"wrong": "I trust in you.",
+"right": "I trust you.",
+"why": "direto."
+},
+{
+"wrong": "She holded my hand.",
+"right": "She held my hand.",
+"why": "held."
+},
+{
+"wrong": "Hold of, please.",
+"right": "Hold on, please.",
+"why": "hold on."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I hold the baby.”",
+"answer": "I held the baby.",
+"why": ""
+},
+{
+"prompt": "Reescreva sem preposição: “I trust in him.”",
+"answer": "I trust him.",
+"why": ""
+},
+{
+"prompt": "Peça espera: “Wait on the phone.” com hold",
+"answer": "Hold on, please.",
+"why": ""
+}
+]
+}

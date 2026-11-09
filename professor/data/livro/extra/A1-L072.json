@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be + advérbio",
+"wrong": "She always is late.",
+"right": "She is always late.",
+"why": "Com be, o advérbio vem depois do verbo."
+},
+"mcq": [
+{
+"q": "100% means…",
+"opts": [
+"never",
+"always",
+"sometimes"
+],
+"ans": 1,
+"why": "Always."
+},
+{
+"q": "0% means…",
+"opts": [
+"rarely",
+"often",
+"never"
+],
+"ans": 2,
+"why": "Never."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She usually walks.",
+"She walks usually.",
+"Usually she walk."
+],
+"ans": 0,
+"why": "Antes do verbo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We go sometimes out.",
+"We sometimes go out.",
+"We sometimes are go out."
+],
+"ans": 1,
+"why": "Antes do verbo principal."
+}
+],
+"fix": [
+{
+"wrong": "She always is happy.",
+"right": "She is always happy.",
+"why": "Após be."
+},
+{
+"wrong": "He eats never meat.",
+"right": "He never eats meat.",
+"why": "Posição."
+},
+{
+"wrong": "They are late never.",
+"right": "They are never late.",
+"why": "Posição."
+}
+],
+"rewrite": [
+{
+"prompt": "Insira “never”: “She is late.”",
+"answer": "She is never late.",
+"why": ""
+},
+{
+"prompt": "Insira “usually”: “We eat at home.”",
+"answer": "We usually eat at home.",
+"why": ""
+},
+{
+"prompt": "Insira “often”: “They are tired.”",
+"answer": "They are often tired.",
+"why": ""
+}
+]
+}

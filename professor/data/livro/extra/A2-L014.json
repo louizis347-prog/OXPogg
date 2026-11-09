@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "dupla negação",
+"wrong": "I didn't see nobody.",
+"right": "I didn't see anybody.",
+"why": "Em português a dupla negação é normal ('não vi ninguém'); em inglês só uma negação por frase."
+},
+"mcq": [
+{
+"q": "I didn't eat ___.",
+"opts": [
+"anything",
+"nothing",
+"something"
+],
+"ans": 0,
+"why": "any."
+},
+{
+"q": "She didn't go ___.",
+"opts": [
+"anywhere",
+"somewhere",
+"nowhere"
+],
+"ans": 0,
+"why": "any."
+},
+{
+"q": "He ___ nothing.",
+"opts": [
+"didn't said",
+"said",
+"didn't say"
+],
+"ans": 1,
+"why": "nothing já nega."
+},
+{
+"q": "Qual está correta? (Past Simple (negative): production and review)",
+"opts": [
+"I didn't meet no one.",
+"I no met anyone.",
+"I didn't meet anyone."
+],
+"ans": 2,
+"why": "any."
+}
+],
+"fix": [
+{
+"wrong": "I didn't buy nothing.",
+"right": "I didn't buy anything.",
+"why": "any."
+},
+{
+"wrong": "We didn't saw anyone.",
+"right": "We didn't see anyone.",
+"why": "base."
+},
+{
+"wrong": "She didn't go nowhere.",
+"right": "She didn't go anywhere.",
+"why": "any."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “I saw someone.”",
+"answer": "I didn't see anyone.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He bought something.”",
+"answer": "He didn't buy anything.",
+"why": ""
+},
+{
+"prompt": "Negativa: “We went somewhere.”",
+"answer": "We didn't go anywhere.",
+"why": ""
+}
+]
+}

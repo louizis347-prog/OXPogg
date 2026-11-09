@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "Never he did raise his voice.",
+"right": "Never did he raise his voice.",
+"why": "Português mantém sujeito-verbo após “nunca”; em inglês advérbio negativo no início exige did antes do sujeito."
+},
+"mcq": [
+{
+"q": "Solemn inversion:",
+"opts": [
+"Never did raise he.",
+"Never did he raise his voice.",
+"Never he raised his voice."
+],
+"ans": 1,
+"why": "Aux + S."
+},
+{
+"q": "Little did I know…",
+"opts": [
+"short it was",
+"how short was it",
+"how short it would be"
+],
+"ans": 2,
+"why": "Oração."
+},
+{
+"q": "After “Never did he”, verb is…",
+"opts": [
+"base",
+"-ing",
+"past"
+],
+"ans": 0,
+"why": "Base."
+},
+{
+"q": "Effect is…",
+"opts": [
+"negative",
+"casual",
+"solemn"
+],
+"ans": 2,
+"why": "Solene."
+}
+],
+"fix": [
+{
+"wrong": "Little I knew how short it was.",
+"right": "Little did I know how short it was.",
+"why": "did."
+},
+{
+"wrong": "Never did he raised his voice.",
+"right": "Never did he raise his voice.",
+"why": "Base."
+},
+{
+"wrong": "Never she did smile.",
+"right": "Never did she smile.",
+"why": "Inversão."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “He never raised his voice.”",
+"answer": "Never did he raise his voice.",
+"why": ""
+},
+{
+"prompt": "Inverta: “I knew little about it.”",
+"answer": "Little did I know about it.",
+"why": ""
+},
+{
+"prompt": "Inverta: “She never smiled.”",
+"answer": "Never did she smile.",
+"why": ""
+}
+]
+}

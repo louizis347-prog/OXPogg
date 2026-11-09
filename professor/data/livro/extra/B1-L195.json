@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + that",
+"wrong": "She admitted to be wrong.",
+"right": "She admitted that she was wrong.",
+"why": "Em português “admitiu estar errada” (infinitivo). Em inglês admit é seguido de that-clause ou -ing."
+},
+"mcq": [
+{
+"q": "She decided **___** a break.",
+"opts": [
+"take",
+"taking",
+"to take"
+],
+"ans": 2,
+"why": "Decide to."
+},
+{
+"q": "She admitted **___** she was tired.",
+"opts": [
+"for",
+"that",
+"to"
+],
+"ans": 1,
+"why": "Admit that."
+},
+{
+"q": "He admitted **___** the mistake.",
+"opts": [
+"making",
+"make",
+"to make"
+],
+"ans": 0,
+"why": "Admit -ing (ou that)."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She said me she was tired.",
+"She told that she was tired.",
+"She told me she was tired."
+],
+"ans": 2,
+"why": "Tell + pessoa."
+}
+],
+"fix": [
+{
+"wrong": "She admitted to take it.",
+"right": "She admitted taking it.",
+"why": "Admit -ing."
+},
+{
+"wrong": "She decided taking a break.",
+"right": "She decided to take a break.",
+"why": "Decide to."
+},
+{
+"wrong": "He said me he was late.",
+"right": "He told me he was late.",
+"why": "Tell + pessoa."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I’m wrong,” she said. (She admitted that…)",
+"answer": "She admitted that she was wrong.",
+"why": ""
+},
+{
+"prompt": "Use decided: “She takes a break.”",
+"answer": "She decided to take a break.",
+"why": ""
+},
+{
+"prompt": "Use told: “He said to me he was late.”",
+"answer": "He told me he was late.",
+"why": ""
+}
+]
+}

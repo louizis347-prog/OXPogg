@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tom e metáfora",
+"wrong": "The text is in the tone of patient, quiet and sombre.",
+"right": "The tone of the text is patient, quiet and sombre.",
+"why": "Em português “tom de paciência”. Em inglês, tone é descrito com adjetivos: the tone is patient."
+},
+"mcq": [
+{
+"q": "Tone describes…",
+"opts": [
+"its length",
+"its title",
+"the mood of a text"
+],
+"ans": 2,
+"why": "Clima."
+},
+{
+"q": "“Patience is a garden” is a…",
+"opts": [
+"metaphor",
+"fact",
+"date"
+],
+"ans": 0,
+"why": "Metáfora."
+},
+{
+"q": "The tone is ___ .",
+"opts": [
+"a sombre",
+"sombre",
+"sombrely"
+],
+"ans": 1,
+"why": "Adjetivo."
+},
+{
+"q": "Who is describing the tone?",
+"opts": [
+"Tone is of quiet.",
+"The tone quiet is.",
+"The tone is quiet."
+],
+"ans": 2,
+"why": "Estrutura."
+}
+],
+"fix": [
+{
+"wrong": "The tone is sombrely.",
+"right": "The tone is sombre.",
+"why": "Adjetivo."
+},
+{
+"wrong": "Patience it is a garden.",
+"right": "Patience is a garden.",
+"why": "Sem it."
+},
+{
+"wrong": "The tone are quiet.",
+"right": "The tone is quiet.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Descreva: “The text has a quiet tone.” (The tone…)",
+"answer": "The tone is quiet.",
+"why": ""
+},
+{
+"prompt": "Metáfora: “Time is a thief.” — mude para plural: “Hours…”",
+"answer": "Hours are thieves.",
+"why": ""
+},
+{
+"prompt": "Negativa: “The tone is sombre.”",
+"answer": "The tone is not sombre.",
+"why": ""
+}
+]
+}

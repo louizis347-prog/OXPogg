@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "irregulares",
+"wrong": "I knowed him.",
+"right": "I knew him.",
+"why": "O aluno regulariza com -ed; know, hear, leave, lose têm passado próprio."
+},
+"mcq": [
+{
+"q": "Passado de **lose**:",
+"opts": [
+"lose",
+"lost",
+"losed"
+],
+"ans": 1,
+"why": "lost."
+},
+{
+"q": "Passado de **hear**:",
+"opts": [
+"heard",
+"heared",
+"hear"
+],
+"ans": 0,
+"why": "heard."
+},
+{
+"q": "Passado de **know**:",
+"opts": [
+"known",
+"knew",
+"knowed"
+],
+"ans": 1,
+"why": "knew."
+},
+{
+"q": "Passado de **leave**:",
+"opts": [
+"lefted",
+"left",
+"leaved"
+],
+"ans": 1,
+"why": "left."
+}
+],
+"fix": [
+{
+"wrong": "I loosed my keys.",
+"right": "I lost my keys.",
+"why": "lost."
+},
+{
+"wrong": "We heared a noise.",
+"right": "We heard a noise.",
+"why": "heard."
+},
+{
+"wrong": "She leaved early.",
+"right": "She left early.",
+"why": "left."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I know him.”",
+"answer": "I knew him.",
+"why": ""
+},
+{
+"prompt": "Passado: “She loses it.”",
+"answer": "She lost it.",
+"why": ""
+},
+{
+"prompt": "Passado: “They hear a noise.”",
+"answer": "They heard a noise.",
+"why": ""
+}
+]
+}

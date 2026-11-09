@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "planejar proposta",
+"wrong": "The problem it is that rents are high.",
+"right": "The problem is that rents are high.",
+"why": "O brasileiro repete o sujeito com it. Em inglês: The problem is that + oração, sem pronome extra."
+},
+"mcq": [
+{
+"q": "The problem ___ that rents are high.",
+"opts": [
+"it is",
+"are",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "Good objectives are…",
+"opts": [
+"measurable",
+"long",
+"secret"
+],
+"ans": 0,
+"why": "Mensuráveis."
+},
+{
+"q": "One sentence for the…",
+"opts": [
+"title",
+"problem",
+"budget"
+],
+"ans": 1,
+"why": "Problema."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"We will to survey 100 tenants.",
+"We survey will 100 tenants.",
+"We will survey 100 tenants."
+],
+"ans": 2,
+"why": "will + base."
+}
+],
+"fix": [
+{
+"wrong": "We will to survey 100 tenants.",
+"right": "We will survey 100 tenants.",
+"why": "will + base."
+},
+{
+"wrong": "The problem it is the rent.",
+"right": "The problem is the rent.",
+"why": "Sem it."
+},
+{
+"wrong": "The aim are to reduce rent.",
+"right": "The aim is to reduce rent.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Rents are high. This is the problem.” (The problem…)",
+"answer": "The problem is that rents are high.",
+"why": ""
+},
+{
+"prompt": "Futuro: “We survey 100 tenants.”",
+"answer": "We will survey 100 tenants.",
+"why": ""
+},
+{
+"prompt": "Complete: “The aim ___ to reduce rent.” (frase)",
+"answer": "The aim is to reduce rent.",
+"why": ""
+}
+]
+}

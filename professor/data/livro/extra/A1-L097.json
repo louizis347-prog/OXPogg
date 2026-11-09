@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "adjetivo plural",
+"wrong": "They are reds cars.",
+"right": "They are red cars.",
+"why": "O português marca o plural no adjetivo; em inglês ele nunca muda."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"a city beautiful",
+"a beautifuls city",
+"a beautiful city"
+],
+"ans": 2,
+"why": "Adj + N."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a nice red car",
+"a red nice car",
+"a car nice red"
+],
+"ans": 0,
+"why": "Opinião antes da cor."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"The house big.",
+"The house is big.",
+"The big is house."
+],
+"ans": 1,
+"why": "Be + adj."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a friend old",
+"an friend old",
+"an old friend"
+],
+"ans": 2,
+"why": "Adj + N."
+}
+],
+"fix": [
+{
+"wrong": "She has two reds bags.",
+"right": "She has two red bags.",
+"why": "Sem plural."
+},
+{
+"wrong": "It is a city beautiful.",
+"right": "It is a beautiful city.",
+"why": "Adj antes."
+},
+{
+"wrong": "We live in a house big.",
+"right": "We live in a big house.",
+"why": "Adj antes."
+}
+],
+"rewrite": [
+{
+"prompt": "Reorganize: “a city / beautiful”",
+"answer": "a beautiful city",
+"why": ""
+},
+{
+"prompt": "Reorganize: “a friend / old”",
+"answer": "an old friend",
+"why": ""
+},
+{
+"prompt": "Reorganize: “two bags / blue”",
+"answer": "two blue bags",
+"why": ""
+}
+]
+}

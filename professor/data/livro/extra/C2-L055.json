@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "in the event of",
+"wrong": "In case of fire, we will pay the sum insured.",
+"right": "In the event of fire, we will pay the sum insured.",
+"why": "Em português “em caso de” serve para tudo. Em inglês, in case (of) é por precaução; para cobertura use in the event of."
+},
+"mcq": [
+{
+"q": "“Provided that you took reasonable care” is a...",
+"opts": [
+"exclusion",
+"condition",
+"price"
+],
+"ans": 1,
+"why": "Condição."
+},
+{
+"q": "Coverage trigger:",
+"opts": [
+"In case fire…",
+"Because fire,…",
+"In the event of fire,…"
+],
+"ans": 2,
+"why": "In the event of."
+},
+{
+"q": "“Policy excess” is...",
+"opts": [
+"the amount you pay first",
+"a bonus",
+"a limit"
+],
+"ans": 0,
+"why": "Franquia."
+},
+{
+"q": "An exclusion starts with...",
+"opts": [
+"Provided…",
+"Except where…",
+"In the event…"
+],
+"ans": 1,
+"why": "Exceção."
+}
+],
+"fix": [
+{
+"wrong": "Provided that you take reasonable care, we paid.",
+"right": "Provided that you take reasonable care, we will pay.",
+"why": "will pay."
+},
+{
+"wrong": "The sum insured are 100,000.",
+"right": "The sum insured is 100,000.",
+"why": "is."
+},
+{
+"wrong": "We cover all but not deliberate damage.",
+"right": "We cover all except deliberate damage.",
+"why": "except."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com in the event of: “If there is a fire, we pay.”",
+"answer": "In the event of fire, we pay.",
+"why": ""
+},
+{
+"prompt": "Reescreva com provided that: “Only if you take reasonable care, we will pay.”",
+"answer": "Provided that you take reasonable care, we will pay.",
+"why": ""
+},
+{
+"prompt": "Reescreva com except: “We exclude deliberate damage.”",
+"answer": "We cover all except deliberate damage.",
+"why": ""
+}
+]
+}

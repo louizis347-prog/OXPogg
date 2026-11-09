@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "I am writing for invite you to the dinner.",
+"right": "I am writing to invite you to the dinner.",
+"why": "Português “para convidar”; inglês to + verbo, nunca for + verbo."
+},
+"mcq": [
+{
+"q": "Formal invite:",
+"opts": [
+"I am writing to invite you to…",
+"I am wrote to invite",
+"I write for invite you…"
+],
+"ans": 0,
+"why": "to invite."
+},
+{
+"q": "Honour:",
+"opts": [
+"We should be honoured if you would attend.",
+"We should be honoured if you will to attend.",
+"Honoured we are if…"
+],
+"ans": 0,
+"why": "If you would."
+},
+{
+"q": "Honoured: spelling in this course?",
+"opts": [
+"honored",
+"honoured",
+"onored"
+],
+"ans": 1,
+"why": "Formal UK; aceite."
+},
+{
+"q": "Invite takes…",
+"opts": [
+"to you",
+"you for",
+"you to"
+],
+"ans": 2,
+"why": "Invite you to."
+}
+],
+"fix": [
+{
+"wrong": "We should be honoured if you will attend.",
+"right": "We should be honoured if you would attend.",
+"why": "would."
+},
+{
+"wrong": "I am writing for inviting you.",
+"right": "I am writing to invite you.",
+"why": "to invite."
+},
+{
+"wrong": "We invite to you.",
+"right": "We invite you.",
+"why": "Objeto direto."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I invite you. I am writing.”",
+"answer": "I am writing to invite you.",
+"why": ""
+},
+{
+"prompt": "Formal: “We would like you to come.”",
+"answer": "We should be honoured if you would attend.",
+"why": ""
+},
+{
+"prompt": "Negativo: “I am writing to invite you.”",
+"answer": "I am not writing to invite you.",
+"why": ""
+}
+]
+}

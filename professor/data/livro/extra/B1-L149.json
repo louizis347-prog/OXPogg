@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pedir informação (produção)",
+"wrong": "Could you tell me where I can buy a ticket? Do you know what time does the train leave? I wonder if there is a discount.",
+"right": "Do you know what time the train leaves?",
+"why": "Em português “que horas o trem sai?” mantém a ordem. Em inglês, a pergunta indireta usa ordem afirmativa e sem do/does."
+},
+"mcq": [
+{
+"q": "Could you tell me how long ___?",
+"opts": [
+"does the trip take",
+"takes the trip",
+"the trip takes"
+],
+"ans": 2,
+"why": "Ordem."
+},
+{
+"q": "Do you know what time ___?",
+"opts": [
+"it opens",
+"does it open",
+"opens it"
+],
+"ans": 0,
+"why": "Sem does."
+},
+{
+"q": "I wonder ___ there is a discount.",
+"opts": [
+"what",
+"that",
+"if"
+],
+"ans": 2,
+"why": "if."
+},
+{
+"q": "Polite request for information:",
+"opts": [
+"You tell me…",
+"Could you tell me…?",
+"Tell me…?"
+],
+"ans": 1,
+"why": "Polidez."
+}
+],
+"fix": [
+{
+"wrong": "Do you know what time does it open?",
+"right": "Do you know what time it opens?",
+"why": "Sem does."
+},
+{
+"wrong": "I wonder is there a seat.",
+"right": "I wonder if there is a seat.",
+"why": "if."
+},
+{
+"wrong": "Could you tell me where is Platform 2?",
+"right": "Could you tell me where Platform 2 is?",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Torne indireta: “What time does it close?” (Do you know...)",
+"answer": "Do you know what time it closes?",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Is there a discount?” (I wonder...)",
+"answer": "I wonder if there is a discount.",
+"why": ""
+},
+{
+"prompt": "Torne indireta: “Where can I buy a ticket?” (Could you tell me...)",
+"answer": "Could you tell me where I can buy a ticket?",
+"why": ""
+}
+]
+}

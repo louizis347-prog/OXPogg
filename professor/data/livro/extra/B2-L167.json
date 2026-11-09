@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal errado",
+"wrong": "If I knew, I should help you last year.",
+"right": "I should have helped you last year.",
+"why": "O brasileiro usa o passado simples para falar de um erro passado. Para crítica ou arrependimento, use should have + particípio."
+},
+"mcq": [
+{
+"q": "**ought to have done** é parecido com...",
+"opts": [
+"will have done",
+"used to do",
+"should have done"
+],
+"ans": 2,
+"why": "ought to have e should have têm sentido muito próximo."
+},
+{
+"q": "Como dizer \"Eu não deveria ter gritado\"?",
+"opts": [
+"I shouldn't have shouted.",
+"I shouldn't shout.",
+"I don't should have shouted."
+],
+"ans": 0,
+"why": "A negativa é shouldn't have + particípio; não se usa don't com modais."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"He ought have to called.",
+"He ought to have called.",
+"He ought to had called."
+],
+"ans": 1,
+"why": "A ordem é ought to have + particípio."
+},
+{
+"q": "O que a frase sugere? \"We could have won.\"",
+"opts": [
+"Não vencemos, mas era possível.",
+"Vencemos facilmente.",
+"Vamos vencer amanhã."
+],
+"ans": 0,
+"why": "could have = possibilidade não realizada no passado."
+}
+],
+"fix": [
+{
+"wrong": "She should have went home earlier.",
+"right": "She should have gone home earlier.",
+"why": "Após should have, use o particípio gone, não o passado went."
+},
+{
+"wrong": "We should to have told them the truth.",
+"right": "We should have told them the truth.",
+"why": "Não se usa to depois de should."
+},
+{
+"wrong": "I shouldn't of said that.",
+"right": "I shouldn't have said that.",
+"why": "Of é erro de escrita por causa do som /əv/; a forma é have."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque should por ought to: “She should have asked.”",
+"answer": "She ought to have asked.",
+"why": ""
+},
+{
+"prompt": "Reescreva com could have: “I can help him.” (possibilidade perdida)",
+"answer": "I could have helped him.",
+"why": ""
+},
+{
+"prompt": "Reescreva como crítica: “He leaves early.”",
+"answer": "He should have left early.",
+"why": ""
+}
+]
+}

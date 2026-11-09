@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "emphasize",
+"wrong": "The author emphasizes on the cost.",
+"right": "The author emphasizes the cost.",
+"why": "\"Dar ênfase em\" leva o aluno a usar on. Emphasize é transitivo."
+},
+"mcq": [
+{
+"q": "Complete: an increase **___** sales",
+"opts": [
+"in",
+"of",
+"on"
+],
+"ans": 0,
+"why": "increase in."
+},
+{
+"q": "Qual pontua o contraste?",
+"opts": [
+"However it works.",
+"However, it works.",
+"However; it works."
+],
+"ans": 1,
+"why": "However, com vírgula."
+},
+{
+"q": "Complete: It depends **___** the data.",
+"opts": [
+"of",
+"from",
+"on"
+],
+"ans": 2,
+"why": "depend on."
+},
+{
+"q": "Qual verbo é transitivo?",
+"opts": [
+"happen",
+"emphasize",
+"arrive"
+],
+"ans": 1,
+"why": "emphasize + objeto."
+}
+],
+"fix": [
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+},
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+},
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+}
+]
+}

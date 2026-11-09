@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + to",
+"wrong": "I decided go home.",
+"right": "I decided to go home.",
+"why": "Em português o infinitivo vem direto ('decidi ir'); em inglês decide, hope, plan etc. exigem to."
+},
+"mcq": [
+{
+"q": "She hopes ___ a job.",
+"opts": [
+"finding",
+"to find",
+"find"
+],
+"ans": 1,
+"why": "hope + to."
+},
+{
+"q": "We planned ___ early.",
+"opts": [
+"leave",
+"to leave",
+"leaving"
+],
+"ans": 1,
+"why": "plan + to."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I want to learn.",
+"I want learn.",
+"I want learning."
+],
+"ans": 0,
+"why": "want + to."
+},
+{
+"q": "They ___ to help.",
+"opts": [
+"agreed",
+"agree to",
+"agreeing"
+],
+"ans": 0,
+"why": "Passado + to."
+}
+],
+"fix": [
+{
+"wrong": "He decided buy a car.",
+"right": "He decided to buy a car.",
+"why": "to."
+},
+{
+"wrong": "I hope see you.",
+"right": "I hope to see you.",
+"why": "to."
+},
+{
+"wrong": "She plans to goes.",
+"right": "She plans to go.",
+"why": "to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com to: “I decided. I leave.”",
+"answer": "I decided to leave.",
+"why": ""
+},
+{
+"prompt": "Reescreva com plan: “We plan. We travel in May.”",
+"answer": "We plan to travel in May.",
+"why": ""
+},
+{
+"prompt": "Reescreva com hope: “She hopes. She wins.”",
+"answer": "She hopes to win.",
+"why": ""
+}
+]
+}

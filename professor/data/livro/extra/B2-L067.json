@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "She suggests to go through budgets.",
+"right": "She suggests going through budgets.",
+"why": "Suggest nunca leva to + verbo; use -ing ou that + base. Recommend that usa base."
+},
+"mcq": [
+{
+"q": "She suggests **___** through budgets.",
+"opts": [
+"going",
+"to go",
+"go"
+],
+"ans": 0,
+"why": "-ing."
+},
+{
+"q": "The advisor recommends that we **___** earlier.",
+"opts": [
+"starts",
+"to start",
+"start"
+],
+"ans": 2,
+"why": "Base."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I recommend that you to wait.",
+"I recommend you to wait.",
+"I recommend that you wait."
+],
+"ans": 2,
+"why": "That + base."
+},
+{
+"q": "Suggest + objeto:",
+"opts": [
+"suggest him to sell",
+"suggest that he sell",
+"suggest him sell"
+],
+"ans": 1,
+"why": "That."
+}
+],
+"fix": [
+{
+"wrong": "He recommends me to wait.",
+"right": "He recommends that I wait.",
+"why": "That."
+},
+{
+"wrong": "They suggest to leave.",
+"right": "They suggest leaving.",
+"why": "-ing."
+},
+{
+"wrong": "I recommend that she waits.",
+"right": "I recommend that she wait.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “You should wait.” (I recommend that you…)",
+"answer": "I recommend that you wait.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Let’s review the budgets.” (She suggests…)",
+"answer": "She suggests reviewing the budgets.",
+"why": ""
+},
+{
+"prompt": "Passado: “He recommends that we start.”",
+"answer": "He recommended that we start.",
+"why": ""
+}
+]
+}

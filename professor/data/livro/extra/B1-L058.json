@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "used to (produção)",
+"wrong": "Residents used to queue there and the booth used to close on Friday.",
+"right": "Residents used to queue there, and the booth closed on Friday.",
+"why": "Em português “costumavam” e “fechou” se alternam. Em inglês, used to é só para hábito/estado antigo; fato único e recente = Past Simple."
+},
+"mcq": [
+{
+"q": "The booth ___ on Friday (fato).",
+"opts": [
+"used to close",
+"uses to close",
+"closed"
+],
+"ans": 2,
+"why": "Past Simple."
+},
+{
+"q": "Residents ___ queue there.",
+"opts": [
+"used to",
+"used",
+"use to"
+],
+"ans": 0,
+"why": "used to."
+},
+{
+"q": "A novelty is introduced with…",
+"opts": [
+"The city used to open…",
+"The city uses to open…",
+"The city opened…"
+],
+"ans": 2,
+"why": "Fato novo."
+},
+{
+"q": "Used to cannot be used with…",
+"opts": [
+"every day",
+"on Friday (1 vez)",
+"when I was a kid"
+],
+"ans": 1,
+"why": "Fato único."
+}
+],
+"fix": [
+{
+"wrong": "The booth used to close on Friday.",
+"right": "The booth closed on Friday.",
+"why": "Fato."
+},
+{
+"wrong": "Residents use to queue.",
+"right": "Residents used to queue.",
+"why": "used."
+},
+{
+"wrong": "The city used to open a new office last week.",
+"right": "The city opened a new office last week.",
+"why": "last week."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “The old booth closed. The new one opened on Monday.” (novidade)",
+"answer": "The new one opened on Monday.",
+"why": ""
+},
+{
+"prompt": "Reescreva com used to: “Residents queued every day.”",
+"answer": "Residents used to queue every day.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Past Simple: “The booth used to close on Friday.” (fato recente)",
+"answer": "The booth closed on Friday.",
+"why": ""
+}
+]
+}

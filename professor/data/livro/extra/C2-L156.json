@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "infinitivo de finalidade",
+"wrong": "Repair weak points for to strengthen the argument.",
+"right": "Repair weak points in order to strengthen the argument.",
+"why": "Em português “para fortalecer”; em inglês a finalidade usa (in order) to + verbo, nunca for + verbo."
+},
+"mcq": [
+{
+"q": "Which line orders steps correctly?",
+"opts": [
+"Step 2. Read. Step 1. Restate.",
+"Step 1. Read. Step 2. Restate.",
+"Read, Step. Restate, Step."
+],
+"ans": 1,
+"why": "Numeração em ordem."
+},
+{
+"q": "Purpose clause:",
+"opts": [
+"Read twice for catch errors.",
+"Read twice to catching errors.",
+"Read twice in order to catch errors."
+],
+"ans": 2,
+"why": "in order to + base."
+},
+{
+"q": "Step 2 begins with a(n)…",
+"opts": [
+"imperative",
+"question",
+"past verb"
+],
+"ans": 0,
+"why": "Imperativo."
+},
+{
+"q": "Which is the negative purpose?",
+"opts": [
+"in order to not miss it for",
+"for not miss it",
+"in order not to miss it"
+],
+"ans": 2,
+"why": "in order not to."
+}
+],
+"fix": [
+{
+"wrong": "Read twice for finding errors.",
+"right": "Read twice to find errors.",
+"why": "to + base."
+},
+{
+"wrong": "Step 1: you read the text.",
+"right": "Step 1. Read the text.",
+"why": "Imperativo."
+},
+{
+"wrong": "Restate it in order to clarifying.",
+"right": "Restate it in order to clarify.",
+"why": "Base após to."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com in order to: “Reread the claim. Check its logic.”",
+"answer": "Reread the claim in order to check its logic.",
+"why": ""
+},
+{
+"prompt": "Negativa: “Read slowly in order to catch errors.”",
+"answer": "Read slowly in order not to miss errors.",
+"why": ""
+},
+{
+"prompt": "Passado: “Step 1: read the text.”",
+"answer": "Step 1: read the text.",
+"why": ""
+}
+]
+}

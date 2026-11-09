@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "rather than",
+"wrong": "I'd rather going out.",
+"right": "I'd rather go out.",
+"why": "O aluno confunde com prefer -ing. Após would rather, use base."
+},
+"mcq": [
+{
+"q": "Qual está correta?",
+"opts": [
+"I prefer tea than coffee.",
+"I prefer tea to coffee.",
+"I prefer tea of coffee."
+],
+"ans": 1,
+"why": "prefer A to B."
+},
+{
+"q": "Complete: I'd rather **___** at home.",
+"opts": [
+"to stay",
+"staying",
+"stay"
+],
+"ans": 2,
+"why": "would rather + base."
+},
+{
+"q": "Negativa de would rather:",
+"opts": [
+"I'd rather not go.",
+"I'd not rather go.",
+"I wouldn't rather to go."
+],
+"ans": 0,
+"why": "would rather not + base."
+},
+{
+"q": "Qual é correta?",
+"opts": [
+"She prefers cycling than driving.",
+"She prefers to cycling to driving.",
+"She prefers cycling to driving."
+],
+"ans": 2,
+"why": "prefer -ing to -ing."
+}
+],
+"fix": [
+{
+"wrong": "I prefer football than tennis.",
+"right": "I prefer football to tennis.",
+"why": "prefer A to B."
+},
+{
+"wrong": "She would rather to leave early.",
+"right": "She would rather leave early.",
+"why": "Sem to."
+},
+{
+"wrong": "He prefers swim to run.",
+"right": "He prefers swimming to running.",
+"why": "-ing to -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para pergunta: “You would rather eat now.”",
+"answer": "Would you rather eat now?",
+"why": ""
+},
+{
+"prompt": "Reescreva com would rather: “He prefers to walk.”",
+"answer": "He would rather walk.",
+"why": ""
+},
+{
+"prompt": "Reescreva com prefer: “I like tea more than coffee.”",
+"answer": "I prefer tea to coffee.",
+"why": ""
+}
+]
+}

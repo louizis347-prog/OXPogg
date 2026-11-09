@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discuss + objeto",
+"wrong": "We discussed about the plan.",
+"right": "We discussed the plan.",
+"why": "Em português “discutir sobre o plano”. Em inglês discuss é transitivo direto, sem about; já talk e argue pedem preposição (talk about, argue with)."
+},
+"mcq": [
+{
+"q": "We ___ the plan.",
+"opts": [
+"discussed",
+"discussed about",
+"discussed of"
+],
+"ans": 0,
+"why": "Sem preposição."
+},
+{
+"q": "We ___ the plan for hours.",
+"opts": [
+"talked",
+"talked about",
+"told"
+],
+"ans": 1,
+"why": "talk about."
+},
+{
+"q": "He ___ his boss.",
+"opts": [
+"argued to",
+"argued",
+"argued with"
+],
+"ans": 2,
+"why": "argue with."
+},
+{
+"q": "Which is correct? (discuss + objeto)",
+"opts": [
+"Let’s discuss about it.",
+"Let’s discuss on it.",
+"Let’s discuss it."
+],
+"ans": 2,
+"why": "Sem preposição."
+}
+],
+"fix": [
+{
+"wrong": "They discussed about money.",
+"right": "They discussed money.",
+"why": "Sem about."
+},
+{
+"wrong": "She argued to her brother.",
+"right": "She argued with her brother.",
+"why": "argue with."
+},
+{
+"wrong": "We talked the plan.",
+"right": "We talked about the plan.",
+"why": "talk about."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com talk: “We discussed the plan.”",
+"answer": "We talked about the plan.",
+"why": ""
+},
+{
+"prompt": "Reescreva com discuss: “We talked about the problem.”",
+"answer": "We discussed the problem.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “He argues with her.”",
+"answer": "He argued with her.",
+"why": ""
+}
+]
+}

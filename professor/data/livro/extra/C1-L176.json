@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "step up to",
+"wrong": "He stepped up the challenge when the manager fell ill.",
+"right": "He stepped up to the challenge when the manager fell ill.",
+"why": "Em português “assumir o desafio” não pede preposição. Em inglês step up exige to antes do desafio."
+},
+"mcq": [
+{
+"q": "“step up to the challenge” means...",
+"opts": [
+"avoid it",
+"delay it",
+"face it"
+],
+"ans": 2,
+"why": "Enfrentar."
+},
+{
+"q": "“a step-up in security” is a...",
+"opts": [
+"reinforcement",
+"cut",
+"delay"
+],
+"ans": 0,
+"why": "Reforço."
+},
+{
+"q": "“We must ___ efforts.”",
+"opts": [
+"step by",
+"step up",
+"step off"
+],
+"ans": 1,
+"why": "intensificar."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She stepped at when needed.",
+"She stepped off when needed.",
+"She stepped up when needed."
+],
+"ans": 2,
+"why": "step up."
+}
+],
+"fix": [
+{
+"wrong": "They stepped on the security after the leak.",
+"right": "They stepped up the security after the leak.",
+"why": "step up."
+},
+{
+"wrong": "The veteran stepped up the challenge.",
+"right": "The veteran stepped up to the challenge.",
+"why": "to."
+},
+{
+"wrong": "They stepped up efforts to listen carefuly.",
+"right": "They stepped up efforts to listen carefully.",
+"why": "Ortografia."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com step up: “The veteran assumed the role when needed.”",
+"answer": "The veteran stepped up when needed.",
+"why": ""
+},
+{
+"prompt": "Reescreva com step up efforts: “We intensify our efforts.”",
+"answer": "We step up our efforts.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She steps up to the challenge.”",
+"answer": "She stepped up to the challenge.",
+"why": ""
+}
+]
+}

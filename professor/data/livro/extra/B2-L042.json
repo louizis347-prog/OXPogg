@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "If the supplier would have delivered, we would have sold more.",
+"right": "If the supplier had delivered, we would have sold more.",
+"why": "Português “se tivesse entregado”; o brasileiro usa would na oração com if. No 3º condicional: if + had + particípio."
+},
+"mcq": [
+{
+"q": "If the shop **___** opened, we would have bought it.",
+"opts": [
+"had",
+"has",
+"would have"
+],
+"ans": 0,
+"why": "Had."
+},
+{
+"q": "We **___** profits if prices had fallen.",
+"opts": [
+"lost",
+"would lose",
+"would have lost"
+],
+"ans": 2,
+"why": "Would have."
+},
+{
+"q": "Particípio de sell:",
+"opts": [
+"sell",
+"selled",
+"sold"
+],
+"ans": 2,
+"why": "Sold."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"If I had saved, I would have bought it.",
+"If I would save, I had bought it.",
+"If I saved, I would have bought it."
+],
+"ans": 0,
+"why": "3º."
+}
+],
+"fix": [
+{
+"wrong": "If demand had grew, prices had risen.",
+"right": "If demand had grown, prices would have risen.",
+"why": "Particípio e would have."
+},
+{
+"wrong": "If we would have known, we would have waited.",
+"right": "If we had known, we would have waited.",
+"why": "Had."
+},
+{
+"wrong": "If she had paid, she will have received it.",
+"right": "If she had paid, she would have received it.",
+"why": "Would have."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para o 3º: “If the supplier delivers, we sell more.”",
+"answer": "If the supplier had delivered, we would have sold more.",
+"why": ""
+},
+{
+"prompt": "Negativa na if: “If prices had risen.” (not)",
+"answer": "If prices hadn’t risen.",
+"why": ""
+},
+{
+"prompt": "Inverta as cláusulas: “If I had known, I would have waited.”",
+"answer": "I would have waited if I had known.",
+"why": ""
+}
+]
+}

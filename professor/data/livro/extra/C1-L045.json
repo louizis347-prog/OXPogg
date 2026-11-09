@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "voz do relatório",
+"wrong": "The aim of this report is describe the leak of Freezer 4.",
+"right": "The aim of this report is to describe the leak of Freezer 4.",
+"why": "Em português “o objetivo é descrever” não tem preposição. Em inglês, após The aim is, use to + base."
+},
+"mcq": [
+{
+"q": "The aim is ___ the leak.",
+"opts": [
+"to describe",
+"describe",
+"describing of"
+],
+"ans": 0,
+"why": "to + base."
+},
+{
+"q": "Findings list…",
+"opts": [
+"jokes",
+"facts in order",
+"opinions"
+],
+"ans": 1,
+"why": "Fatos."
+},
+{
+"q": "The freezer ___ at 3 a.m.",
+"opts": [
+"has failed yesterday",
+"fails yesterday",
+"failed"
+],
+"ans": 2,
+"why": "Passado simples."
+},
+{
+"q": "Which is formal?",
+"opts": [
+"This report describes…",
+"I will tell you…",
+"So, basically…"
+],
+"ans": 0,
+"why": "Formal."
+}
+],
+"fix": [
+{
+"wrong": "The aim is describe the leak.",
+"right": "The aim is to describe the leak.",
+"why": "to."
+},
+{
+"wrong": "The freezer has failed yesterday.",
+"right": "The freezer failed yesterday.",
+"why": "Passado simples com yesterday."
+},
+{
+"wrong": "This report describe the leak.",
+"right": "This report describes the leak.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I describe the leak.” (The aim is…)",
+"answer": "The aim is to describe the leak.",
+"why": ""
+},
+{
+"prompt": "Passado: “The freezer fails at 3 a.m.”",
+"answer": "The freezer failed at 3 a.m.",
+"why": ""
+},
+{
+"prompt": "Use This report: “We describe the leak.”",
+"answer": "This report describes the leak.",
+"why": ""
+}
+]
+}

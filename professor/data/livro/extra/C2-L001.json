@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem da inversão",
+"wrong": "Were not it for the receipt, I could not prove it.",
+"right": "Were it not for the receipt, I could not prove it.",
+"why": "Em português “não fosse o recibo” coloca o não antes do sujeito. Em inglês, na inversão com Were, o sujeito vem logo depois e not depois dele."
+},
+"mcq": [
+{
+"q": "Which is the formal version of “If you had kept it, …”?",
+"opts": [
+"Did you kept it,…",
+"Had you kept it,…",
+"Would you keep it,…"
+],
+"ans": 1,
+"why": "Inversão sem if."
+},
+{
+"q": "“___ it not for the receipt, the claim would fail.”",
+"opts": [
+"Had",
+"Should",
+"Were"
+],
+"ans": 2,
+"why": "Were it not for."
+},
+{
+"q": "Mixed: “Had I kept it, we ___ done now.”",
+"opts": [
+"would be",
+"would have",
+"will be"
+],
+"ans": 0,
+"why": "Passado → presente."
+},
+{
+"q": "A **missing receipt** creates an...",
+"opts": [
+"interest rate",
+"evidentiary gap",
+"office"
+],
+"ans": 1,
+"why": "Lacuna probatória."
+}
+],
+"fix": [
+{
+"wrong": "Had you would kept the receipt, we would be done.",
+"right": "Had you kept the receipt, we would be done.",
+"why": "Sem would após Had."
+},
+{
+"wrong": "Should you will need proof, call us.",
+"right": "Should you need proof, call us.",
+"why": "Should + base."
+},
+{
+"wrong": "Were it for not the claim, we would stop.",
+"right": "Were it not for the claim, we would stop.",
+"why": "Ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Inverta: “If it were not for the receipt, the claim would fail.”",
+"answer": "Were it not for the receipt, the claim would fail.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If you had kept it, we would be done.”",
+"answer": "Had you kept it, we would be done.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If you should need proof, call us.”",
+"answer": "Should you need proof, call us.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "prefixo post-",
+"wrong": "postgraduation student",
+"right": "a postgraduate student",
+"why": "Em português dizemos “pós-graduação” e o brasileiro cria “postgraduation”. Em inglês o adjetivo/substantivo é postgraduate."
+},
+"mcq": [
+{
+"q": "A ___ student has a first degree.",
+"opts": [
+"post-graduated",
+"postgraduate",
+"postgraduation"
+],
+"ans": 1,
+"why": "postgraduate."
+},
+{
+"q": "Postwar economics means…",
+"opts": [
+"before",
+"during",
+"after the war"
+],
+"ans": 2,
+"why": "Depois."
+},
+{
+"q": "Post-industrial means…",
+"opts": [
+"after industry",
+"no work",
+"old"
+],
+"ans": 0,
+"why": "Pós-industrial."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"a economy postwar",
+"a postwar economy",
+"a post-war's economy"
+],
+"ans": 1,
+"why": "Adjetivo antes do substantivo."
+}
+],
+"fix": [
+{
+"wrong": "She is a postgraduation student.",
+"right": "She is a postgraduate student.",
+"why": "postgraduate."
+},
+{
+"wrong": "A economy postwar grew.",
+"right": "A postwar economy grew.",
+"why": "Ordem."
+},
+{
+"wrong": "He studies post industrial towns.",
+"right": "He studies post-industrial towns.",
+"why": "Hífen."
+}
+],
+"rewrite": [
+{
+"prompt": "Use post-: “economics after the war”",
+"answer": "postwar economics",
+"why": ""
+},
+{
+"prompt": "Use postgraduate: “a student with a degree”",
+"answer": "a postgraduate student",
+"why": ""
+},
+{
+"prompt": "Use post-industrial: “towns after industry”",
+"answer": "post-industrial towns",
+"why": ""
+}
+]
+}

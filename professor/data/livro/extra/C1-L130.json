@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "narrativa no passado",
+"wrong": "So I broke it down and I am solving the problem.",
+"right": "So I broke it down and solved the problem.",
+"why": "O brasileiro mistura presente e passado ao contar histórias. Em inglês, mantenha o passado na narrativa."
+},
+"mcq": [
+{
+"q": "I’d like to talk about a time ___ I led a team.",
+"opts": [
+"what",
+"that when",
+"when"
+],
+"ans": 2,
+"why": "when."
+},
+{
+"q": "The problem ___ that we had no time.",
+"opts": [
+"was",
+"is",
+"were"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Passado de break:",
+"opts": [
+"broken",
+"broke",
+"breaked"
+],
+"ans": 1,
+"why": "broke."
+},
+{
+"q": "Then I ___ a plan.",
+"opts": [
+"maked",
+"make",
+"made"
+],
+"ans": 2,
+"why": "made."
+}
+],
+"fix": [
+{
+"wrong": "The problem were that we had no time.",
+"right": "The problem was that we had no time.",
+"why": "was."
+},
+{
+"wrong": "So I breaked it into steps.",
+"right": "So I broke it into steps.",
+"why": "broke."
+},
+{
+"wrong": "Then I make a plan.",
+"right": "Then I made a plan.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I break the task into steps.”",
+"answer": "I broke the task into steps.",
+"why": ""
+},
+{
+"prompt": "Passado: “The problem is that we have no time.”",
+"answer": "The problem was that we had no time.",
+"why": ""
+},
+{
+"prompt": "Passado: “Then I make a plan.”",
+"answer": "Then I made a plan.",
+"why": ""
+}
+]
+}

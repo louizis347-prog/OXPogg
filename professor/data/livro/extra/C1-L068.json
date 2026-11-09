@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio perfeito",
+"wrong": "Having grown up abroad, his accent is neutral.",
+"right": "Having grown up abroad, he has a neutral accent.",
+"why": "O particípio inicial deve ter o mesmo sujeito da oração principal. No português isso é tolerado; em inglês, seria dangling participle."
+},
+"mcq": [
+{
+"q": "Having grown up abroad, ___ a neutral accent.",
+"opts": [
+"it has",
+"he has",
+"his accent is"
+],
+"ans": 1,
+"why": "Mesmo sujeito."
+},
+{
+"q": "She ___ to notice what others overlook.",
+"opts": [
+"tend",
+"is tending",
+"tends"
+],
+"ans": 2,
+"why": "tends to."
+},
+{
+"q": "Having + pp shows…",
+"opts": [
+"earlier action",
+"future",
+"habit"
+],
+"ans": 0,
+"why": "Anterior."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Having read it, clear it was.",
+"Having read it, she agreed.",
+"Having read it, it was clear."
+],
+"ans": 1,
+"why": "Mesmo sujeito."
+}
+],
+"fix": [
+{
+"wrong": "Having read it, the idea was clear.",
+"right": "Having read it, she found the idea clear.",
+"why": "Mesmo sujeito."
+},
+{
+"wrong": "Have grown up abroad, he speaks well.",
+"right": "Having grown up abroad, he speaks well.",
+"why": "Having."
+},
+{
+"wrong": "She tend to notice details.",
+"right": "She tends to notice details.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Particípio: “After he had grown up abroad, he spoke well.”",
+"answer": "Having grown up abroad, he spoke well.",
+"why": ""
+},
+{
+"prompt": "Particípio: “After she had read it, she agreed.”",
+"answer": "Having read it, she agreed.",
+"why": ""
+},
+{
+"prompt": "Use tend: “She usually notices details.”",
+"answer": "She tends to notice details.",
+"why": ""
+}
+]
+}

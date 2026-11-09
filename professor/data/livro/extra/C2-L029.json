@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "transitivo",
+"wrong": "The fingerprint match corroborates with the witness account.",
+"right": "The fingerprint match corroborates the witness account.",
+"why": "Em português “corroborar com” é comum. Em inglês, corroborate é transitivo direto."
+},
+"mcq": [
+{
+"q": "To confirm with independent evidence:",
+"opts": [
+"undermine",
+"rule out",
+"corroborate"
+],
+"ans": 2,
+"why": "corroborate."
+},
+{
+"q": "To weaken:",
+"opts": [
+"undermine",
+"support",
+"allow"
+],
+"ans": 0,
+"why": "undermine."
+},
+{
+"q": "To eliminate a possibility:",
+"opts": [
+"rule on",
+"rule out",
+"rule in"
+],
+"ans": 1,
+"why": "rule out."
+},
+{
+"q": "A **latent print** is...",
+"opts": [
+"very large",
+"printed on paper",
+"hidden until developed"
+],
+"ans": 2,
+"why": "Latente."
+}
+],
+"fix": [
+{
+"wrong": "The test supports to the conclusion.",
+"right": "The test supports the conclusion.",
+"why": "Transitivo."
+},
+{
+"wrong": "They ruled off the suspect.",
+"right": "They ruled out the suspect.",
+"why": "rule out."
+},
+{
+"wrong": "The evidence undermine her story.",
+"right": "The evidence undermines her story.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com corroborate: “The DNA confirms the account independently.”",
+"answer": "The DNA corroborates the account.",
+"why": ""
+},
+{
+"prompt": "Reescreva com rule out: “The lab eliminated that possibility.”",
+"answer": "The lab ruled out that possibility.",
+"why": ""
+},
+{
+"prompt": "Reescreva com undermine: “The error weakens the result.”",
+"answer": "The error undermines the result.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "Admittedly, words wound, but yet they also heal.",
+"right": "Admittedly, words wound. Yet they also heal.",
+"why": "Português junta “é verdade, mas”; em inglês Admittedly… Yet… usa dois períodos, sem but."
+},
+"mcq": [
+{
+"q": "Concession → counter-attack:",
+"opts": [
+"Admittedly X, but yet Y.",
+"Admittedly, X. Yet Y.",
+"Yet admittedly but Y."
+],
+"ans": 1,
+"why": "Admittedly… Yet…"
+},
+{
+"q": "“It does not follow that…” means…",
+"opts": [
+"it is obvious",
+"the conclusion is not guaranteed",
+"it is a result"
+],
+"ans": 1,
+"why": "Não decorre."
+},
+{
+"q": "Choose:",
+"opts": [
+"Does not follow words.",
+"It not follows that words harmless.",
+"It does not follow that words are harmless."
+],
+"ans": 2,
+"why": "does not follow."
+},
+{
+"q": "Yet here is…",
+"opts": [
+"a contrast marker",
+"a time word",
+"a verb"
+],
+"ans": 0,
+"why": "Contraste."
+}
+],
+"fix": [
+{
+"wrong": "It not follows that they heal.",
+"right": "It does not follow that they heal.",
+"why": "does not."
+},
+{
+"wrong": "Admittedly words wound yet heal too.",
+"right": "Admittedly, words wound. Yet they heal too.",
+"why": "Pontuação."
+},
+{
+"wrong": "It does not follows that.",
+"right": "It does not follow that.",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativo: “It follows that words heal.”",
+"answer": "It does not follow that words heal.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Yet: “Words wound, but they heal.”",
+"answer": "Words wound. Yet they heal.",
+"why": ""
+},
+{
+"prompt": "Passado: “It does not follow.”",
+"answer": "It did not follow.",
+"why": ""
+}
+]
+}

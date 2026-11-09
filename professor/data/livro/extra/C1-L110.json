@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "nomes e datas",
+"wrong": "The meeting is on 03/04, that is April 3rd.",
+"right": "The meeting is on the 3rd of April, so I write 3 April.",
+"why": "No Brasil a data é dia/mês. Nos EUA, mês/dia: 03/04 é 4 de março. No exame, siga o formato pedido e copie a grafia exatamente."
+},
+"mcq": [
+{
+"q": "A prova pede day/month. Como escrever 7 de maio?",
+"opts": [
+"7th May of",
+"7 May",
+"May 7th of"
+],
+"ans": 1,
+"why": "Day/month: 7 May."
+},
+{
+"q": "Para nomes na prova, você deve…",
+"opts": [
+"escrever como soa",
+"abreviar",
+"copiar a grafia exatamente"
+],
+"ans": 2,
+"why": "Copie."
+},
+{
+"q": "Como confirmar um número no áudio?",
+"opts": [
+"conferir dígito a dígito",
+"escrever por extenso sempre",
+"ignorar zeros"
+],
+"ans": 0,
+"why": "Dígitos."
+},
+{
+"q": "O número 1,500 em inglês equivale a…",
+"opts": [
+"quinze",
+"mil e quinhentos",
+"um vírgula cinco"
+],
+"ans": 1,
+"why": "A vírgula separa milhar."
+}
+],
+"fix": [
+{
+"wrong": "The exam is in the 12 of June.",
+"right": "The exam is on 12 June.",
+"why": "on + data."
+},
+{
+"wrong": "Her surname is spelled wrong: Smyth.",
+"right": "Her surname is spelled Smith.",
+"why": "Copie o nome."
+},
+{
+"wrong": "It costs 2.500 dollars.",
+"right": "It costs 2,500 dollars.",
+"why": "Vírgula nos milhares."
+}
+],
+"rewrite": [
+{
+"prompt": "Escreva: “Meet me on ___.” (12 de junho, day/month)",
+"answer": "Meet me on 12 June.",
+"why": ""
+},
+{
+"prompt": "Escreva por extenso em algarismos: “two thousand five hundred dollars”",
+"answer": "$2,500",
+"why": ""
+},
+{
+"prompt": "Passado: “She spells her name slowly.”",
+"answer": "She spelled her name slowly.",
+"why": ""
+}
+]
+}

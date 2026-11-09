@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal verb literal",
+"wrong": "We can pass with less.",
+"right": "We can get by with less.",
+"why": "Traduzir “virar-se/passar” palavra por palavra leva a verbos errados. Em inglês, get by = conseguir se virar; get across = fazer entender."
+},
+"mcq": [
+{
+"q": "I want to ___ our point across.",
+"opts": [
+"do",
+"carry",
+"get"
+],
+"ans": 2,
+"why": "get across = transmitir."
+},
+{
+"q": "We can ___ with less. (manage)",
+"opts": [
+"get by",
+"get up",
+"get off"
+],
+"ans": 0,
+"why": "get by."
+},
+{
+"q": "Which means “understand”?",
+"opts": [
+"get out",
+"get",
+"get away"
+],
+"ans": 1,
+"why": "get = entender."
+},
+{
+"q": "She ___ the flu last week.",
+"opts": [
+"gotted",
+"get",
+"got"
+],
+"ans": 2,
+"why": "Passado: got."
+}
+],
+"fix": [
+{
+"wrong": "I can’t get across to him the idea.",
+"right": "I can’t get the idea across to him.",
+"why": "Objeto entre verbo e partícula."
+},
+{
+"wrong": "We got by with few.",
+"right": "We got by with little.",
+"why": "Com incontável, use little."
+},
+{
+"wrong": "He gets his point cross.",
+"right": "He gets his point across.",
+"why": "Partícula across."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com get across: “I explained my idea clearly.”",
+"answer": "I got my idea across.",
+"why": ""
+},
+{
+"prompt": "Reescreva com get by: “We manage with little money.”",
+"answer": "We get by with little money.",
+"why": ""
+},
+{
+"prompt": "Passado: “She gets by.”",
+"answer": "She got by.",
+"why": ""
+}
+]
+}

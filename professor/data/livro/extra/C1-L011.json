@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "misto / tempos",
+"wrong": "If we would have signed, we would be leading now.",
+"right": "If we had signed, we would be leading now.",
+"why": "Em português o subjuntivo “se tivéssemos assinado” não tem tradução óbvia, e o brasileiro usa would na oração com if. Em inglês, if + past perfect."
+},
+"mcq": [
+{
+"q": "If we ___ signed, we would be leading now.",
+"opts": [
+"would have",
+"have",
+"had"
+],
+"ans": 2,
+"why": "if + had + pp."
+},
+{
+"q": "___ you finish early, call me.",
+"opts": [
+"If",
+"Unless",
+"Despite"
+],
+"ans": 0,
+"why": "If = se; unless = a menos que."
+},
+{
+"q": "Zero conditional uses…",
+"opts": [
+"if + would",
+"if + present, present",
+"if + will"
+],
+"ans": 1,
+"why": "Fatos gerais."
+},
+{
+"q": "Choose the correct one:",
+"opts": [
+"If it will rain, we stay.",
+"If it would rain, we stay.",
+"If it rains, we stay."
+],
+"ans": 2,
+"why": "Sem will após if."
+}
+],
+"fix": [
+{
+"wrong": "If I would know, I would tell you.",
+"right": "If I knew, I would tell you.",
+"why": "Sem would após if."
+},
+{
+"wrong": "Unless you don’t sign, we lose.",
+"right": "Unless you sign, we lose.",
+"why": "Unless já é negativo."
+},
+{
+"wrong": "If we would have won, we would celebrate.",
+"right": "If we had won, we would celebrate.",
+"why": "if + past perfect."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva em 3º condicional: “She didn’t rehearse, so the pitch didn’t land.” (If…)",
+"answer": "If she had rehearsed, the pitch would have landed.",
+"why": ""
+},
+{
+"prompt": "Use unless: “If you don’t sign, we stay.”",
+"answer": "Unless you sign, we stay.",
+"why": ""
+},
+{
+"prompt": "Misto: “I didn’t sign, so I’m not leading now.” (If…)",
+"answer": "If I had signed, I would be leading now.",
+"why": ""
+}
+]
+}

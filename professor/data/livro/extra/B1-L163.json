@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "pergunta sem inversão",
+"wrong": "It is true?",
+"right": "Is it true?",
+"why": "No português basta mudar a entonação (“É verdade?”). Em inglês a pergunta pede o verbo auxiliar antes do sujeito."
+},
+"mcq": [
+{
+"q": "Para pedir perdão, diga:",
+"opts": [
+"Can you forgive me?",
+"You can forgive me?",
+"Can you forgive to me?"
+],
+"ans": 0,
+"why": "Forgive é transitivo direto, sem “to”."
+},
+{
+"q": "“Mistakes happen.” serve para:",
+"opts": [
+"acusar",
+"aceitar um pedido de desculpas",
+"confirmar uma notícia"
+],
+"ans": 1,
+"why": "É uma forma de aceitar o pedido de perdão."
+},
+{
+"q": "I’m sorry **___** the wrong date.",
+"opts": [
+"about",
+"by",
+"with"
+],
+"ans": 0,
+"why": "Sorry about/for + coisa."
+},
+{
+"q": "Para corrigir um erro seu:",
+"opts": [
+"I misread the date.",
+"I misreaded the date.",
+"I have misreaded the date."
+],
+"ans": 0,
+"why": "Misread é irregular: misread/misread."
+}
+],
+"fix": [
+{
+"wrong": "I am sorry by the wrong date.",
+"right": "I am sorry for the wrong date.",
+"why": "Sorry é seguido de for/about, não by."
+},
+{
+"wrong": "Are you sure it true?",
+"right": "Are you sure it’s true?",
+"why": "Falta o verbo: o português omite menos, mas aqui esquecemos o is."
+},
+{
+"wrong": "I have misreaded the date.",
+"right": "I misread the date.",
+"why": "Misread é irregular e não recebe -ed."
+}
+],
+"rewrite": [
+{
+"prompt": "Transforme em pergunta: “It is true.”",
+"answer": "Is it true?",
+"why": ""
+},
+{
+"prompt": "Passe para a negativa: “I wrote the wrong date.”",
+"answer": "I didn’t write the wrong date.",
+"why": ""
+},
+{
+"prompt": "Peça perdão com Can you: “Forgive me.”",
+"answer": "Can you forgive me?",
+"why": ""
+}
+]
+}

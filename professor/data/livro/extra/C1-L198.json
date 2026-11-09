@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Doubt turned in certainty at the end.",
+"right": "Doubt turned into certainty at the end.",
+"why": "Em português “transformou-se em” e o aluno usa in. Em inglês, turn into expressa transformação."
+},
+"mcq": [
+{
+"q": "“Doubt turned ___ certainty.”",
+"opts": [
+"into",
+"in",
+"on"
+],
+"ans": 0,
+"why": "turn into."
+},
+{
+"q": "“It turned ___ well.”",
+"opts": [
+"off",
+"out",
+"on"
+],
+"ans": 1,
+"why": "turn out."
+},
+{
+"q": "“They turned ___ the offer.”",
+"opts": [
+"up",
+"in",
+"down"
+],
+"ans": 2,
+"why": "recusar."
+},
+{
+"q": "“turn over” means...",
+"opts": [
+"flip",
+"burn",
+"buy"
+],
+"ans": 0,
+"why": "Virar."
+}
+],
+"fix": [
+{
+"wrong": "They turned up the offer.",
+"right": "They turned down the offer.",
+"why": "down = recusar."
+},
+{
+"wrong": "It turns out good.",
+"right": "It turned out well.",
+"why": "well."
+},
+{
+"wrong": "The villain turned to a hero.",
+"right": "The villain turned into a hero.",
+"why": "into."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com turn down: “They refused the offer.”",
+"answer": "They turned down the offer.",
+"why": ""
+},
+{
+"prompt": "Reescreva com turn into: “The doubt became certainty.”",
+"answer": "The doubt turned into certainty.",
+"why": ""
+},
+{
+"prompt": "Reescreva com turn out: “It ended well.”",
+"answer": "It turned out well.",
+"why": ""
+}
+]
+}

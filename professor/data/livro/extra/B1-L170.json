@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tag de auxiliar",
+"wrong": "You haven’t met, don’t you?",
+"right": "You haven’t met, have you?",
+"why": "O brasileiro tende a usar sempre do/don’t. A tag copia o auxiliar da frase (have, be, did)."
+},
+"mcq": [
+{
+"q": "You’re new, **___**?",
+"opts": [
+"haven’t you",
+"aren’t you",
+"don’t you"
+],
+"ans": 1,
+"why": "Are → aren’t."
+},
+{
+"q": "You haven’t met, **___**?",
+"opts": [
+"do you",
+"have you",
+"haven’t you"
+],
+"ans": 1,
+"why": "Negativa → positiva; auxiliar have."
+},
+{
+"q": "She called, **___**?",
+"opts": [
+"wasn’t she",
+"hasn’t she",
+"didn’t she"
+],
+"ans": 2,
+"why": "Passado simples → didn’t."
+},
+{
+"q": "They won’t come, **___**?",
+"opts": [
+"will they",
+"do they",
+"won’t they"
+],
+"ans": 0,
+"why": "Won’t → will they."
+}
+],
+"fix": [
+{
+"wrong": "She called, wasn’t she?",
+"right": "She called, didn’t she?",
+"why": "Verbo comum no passado pede did."
+},
+{
+"wrong": "You’re new, don’t you?",
+"right": "You’re new, aren’t you?",
+"why": "Verbo be: a tag repete be."
+},
+{
+"wrong": "He has finished, doesn’t he?",
+"right": "He has finished, hasn’t he?",
+"why": "Present perfect: tag com have."
+}
+],
+"rewrite": [
+{
+"prompt": "Acrescente uma tag: “You’re new.”",
+"answer": "You’re new, aren’t you?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “You haven’t met.”",
+"answer": "You haven’t met, have you?",
+"why": ""
+},
+{
+"prompt": "Acrescente uma tag: “She called.”",
+"answer": "She called, didn’t she?",
+"why": ""
+}
+]
+}

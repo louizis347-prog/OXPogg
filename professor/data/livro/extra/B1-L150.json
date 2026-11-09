@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "planejar uma festa",
+"wrong": "Plan three dishes and send the invitations for the guests. Ask them if have allergies.",
+"right": "Plan three dishes and send invitations to the guests. Ask if they have allergies.",
+"why": "Em português “pergunte se têm alergia” omite o sujeito. Em inglês, o sujeito they é obrigatório; e invitations vai to alguém (send to), não for."
+},
+"mcq": [
+{
+"q": "Send invitations ___ the guests.",
+"opts": [
+"for",
+"to",
+"at"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Ask if ___ have allergies.",
+"opts": [
+"—",
+"them",
+"they"
+],
+"ans": 2,
+"why": "Sujeito."
+},
+{
+"q": "Plan three ___.",
+"opts": [
+"dishs",
+"dish",
+"dishes"
+],
+"ans": 2,
+"why": "dishes."
+},
+{
+"q": "Imperative of invite:",
+"opts": [
+"Invite everyone.",
+"Inviting everyone.",
+"To invite everyone."
+],
+"ans": 0,
+"why": "Imperativo."
+}
+],
+"fix": [
+{
+"wrong": "Ask if have allergies.",
+"right": "Ask if they have allergies.",
+"why": "Sujeito."
+},
+{
+"wrong": "Send the invitation for them.",
+"right": "Send the invitation to them.",
+"why": "to."
+},
+{
+"wrong": "Prepare three dishs.",
+"right": "Prepare three dishes.",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva como ordem: “You should send invitations.”",
+"answer": "Send invitations.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Ask them: do you have allergies?” (Ask if...)",
+"answer": "Ask if they have allergies.",
+"why": ""
+},
+{
+"prompt": "Pluralize: “Plan one dish.” (three)",
+"answer": "Plan three dishes.",
+"why": ""
+}
+]
+}

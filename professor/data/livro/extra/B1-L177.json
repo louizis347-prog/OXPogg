@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + infinitivo",
+"wrong": "I decided going to the meeting.",
+"right": "I decided to go to the meeting.",
+"why": "Em português “decidi ir” é um infinitivo; o brasileiro troca por -ing por analogia com outros verbos. Decide, want, hope, promise pedem to + base."
+},
+"mcq": [
+{
+"q": "They hope **___** the bridge soon.",
+"opts": [
+"to build",
+"build",
+"building"
+],
+"ans": 0,
+"why": "Hope + to."
+},
+{
+"q": "She refused **___** the cost.",
+"opts": [
+"to pay",
+"pay",
+"paying"
+],
+"ans": 0,
+"why": "Refuse + to."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"We want the bridge opens.",
+"We want that the bridge opens.",
+"We want the bridge to open."
+],
+"ans": 2,
+"why": "Want + objeto + to."
+},
+{
+"q": "Residents **___** to attend.",
+"opts": [
+"plan for",
+"plans for",
+"plan"
+],
+"ans": 2,
+"why": "Plan + to + base."
+}
+],
+"fix": [
+{
+"wrong": "They decided building a bridge.",
+"right": "They decided to build a bridge.",
+"why": "Decide + to."
+},
+{
+"wrong": "I want that you come.",
+"right": "I want you to come.",
+"why": "Want não aceita that."
+},
+{
+"wrong": "She promised to not be late.",
+"right": "She promised not to be late.",
+"why": "Negação antes do to."
+}
+],
+"rewrite": [
+{
+"prompt": "Una: “I hope. I see you.” (hope to)",
+"answer": "I hope to see you.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “They offered. They help.” (offered to)",
+"answer": "They offered to help.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I want. You come.” (want you to)",
+"answer": "I want you to come.",
+"why": ""
+}
+]
+}

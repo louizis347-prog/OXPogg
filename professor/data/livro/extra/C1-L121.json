@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "reporting passive",
+"wrong": "Wages must take into account.",
+"right": "Wages must be taken into account.",
+"why": "Em português “devem ser levados em conta” e “devem levar” soam parecidos. Em inglês, wages recebe a ação: passiva."
+},
+"mcq": [
+{
+"q": "Wages must ___ into account.",
+"opts": [
+"be taken",
+"take",
+"taking"
+],
+"ans": 0,
+"why": "Passiva."
+},
+{
+"q": "It is estimated ___ one in five is poor.",
+"opts": [
+"of",
+"that",
+"what"
+],
+"ans": 1,
+"why": "that."
+},
+{
+"q": "The firm is said ___ grown.",
+"opts": [
+"to be",
+"have",
+"to have"
+],
+"ans": 2,
+"why": "to have grown."
+},
+{
+"q": "Which is passive?",
+"opts": [
+"is said to have grown",
+"says to grow",
+"is saying"
+],
+"ans": 0,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "Wages must taken into account.",
+"right": "Wages must be taken into account.",
+"why": "be."
+},
+{
+"wrong": "It is estimate that one in five is poor.",
+"right": "It is estimated that one in five is poor.",
+"why": "estimated."
+},
+{
+"wrong": "The firm is said to grew fast.",
+"right": "The firm is said to have grown fast.",
+"why": "to have grown."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “We must take wages into account.”",
+"answer": "Wages must be taken into account.",
+"why": ""
+},
+{
+"prompt": "Relato: “People say the firm grew fast.” (The firm…)",
+"answer": "The firm is said to have grown fast.",
+"why": ""
+},
+{
+"prompt": "Com it: “Experts estimate that one in five is poor.”",
+"answer": "It is estimated that one in five is poor.",
+"why": ""
+}
+]
+}

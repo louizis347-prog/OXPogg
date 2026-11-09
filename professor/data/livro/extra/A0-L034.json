@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ter × haver",
+"wrong": "Has a cat in the house.",
+"right": "There is a cat in the house.",
+"why": "\"Tem\" coloquial = existe; em inglês a existência usa there is, e have é para posse."
+},
+"mcq": [
+{
+"q": "They ___ a car.",
+"opts": [
+"have",
+"has",
+"are"
+],
+"ans": 0,
+"why": "They: have."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He have a phone.",
+"He has a phone.",
+"He is a phone."
+],
+"ans": 1,
+"why": "Has."
+},
+{
+"q": "We ___ a big house.",
+"opts": [
+"has",
+"are",
+"have"
+],
+"ans": 2,
+"why": "We: have."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"You have a pen.",
+"You has a pen.",
+"You are a pen."
+],
+"ans": 0,
+"why": "You: have."
+}
+],
+"fix": [
+{
+"wrong": "I has a sister.",
+"right": "I have a sister.",
+"why": "I: have."
+},
+{
+"wrong": "She is a dog. (she owns a dog)",
+"right": "She has a dog.",
+"why": "Posse: has."
+},
+{
+"wrong": "My parents has a car.",
+"right": "My parents have a car.",
+"why": "Plural: have."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o sujeito por “They”: “He has a car.”",
+"answer": "They have a car.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “We”: “She has a cat.”",
+"answer": "We have a cat.",
+"why": ""
+},
+{
+"prompt": "Troque o sujeito por “It”: “They have a tail.”",
+"answer": "It has a tail.",
+"why": ""
+}
+]
+}

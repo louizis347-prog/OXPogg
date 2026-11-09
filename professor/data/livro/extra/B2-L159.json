@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "som e grafia: s + consoante",
+"wrong": "I saw an estar in the sky.",
+"right": "I saw a star in the sky.",
+"why": "O português não começa palavra com s + consoante e o aluno acrescenta um e (estar, escar). Em inglês é star, /st/ junto."
+},
+"mcq": [
+{
+"q": "Qual palavra tem acento em NIGHT?",
+"opts": [
+"I set out at NIGHT, not noon.",
+"I set out AT night.",
+"I SET out at night."
+],
+"ans": 0,
+"why": "Acento na informação nova."
+},
+{
+"q": "Em \"Not ONE—THREE\", o acento recai em...",
+"opts": [
+"not",
+"os números",
+"telescopes"
+],
+"ans": 1,
+"why": "Contraste."
+},
+{
+"q": "\"SHE found it\" destaca...",
+"opts": [
+"o que",
+"onde",
+"quem fez"
+],
+"ans": 2,
+"why": "Pessoa."
+},
+{
+"q": "star difere de scar em...",
+"opts": [
+"o acento",
+"a consoante",
+"a vogal"
+],
+"ans": 1,
+"why": "Contraste."
+}
+],
+"fix": [
+{
+"wrong": "I said estar, not scar.",
+"right": "I said star, not scar.",
+"why": "Sem e inicial."
+},
+{
+"wrong": "Not one telescope, two.",
+"right": "Not one telescope, three.",
+"why": "Coerência."
+},
+{
+"wrong": "I saw a escar.",
+"right": "I saw a scar.",
+"why": "Artigo a."
+}
+],
+"rewrite": [
+{
+"prompt": "Corrija mentalmente e escreva: “I said star.” (contraste com scar)",
+"answer": "I said star, not scar.",
+"why": ""
+},
+{
+"prompt": "Escreva: “She found it.” (não eu)",
+"answer": "She found it, not me.",
+"why": ""
+},
+{
+"prompt": "Escreva: “I left at night.” (não ao meio-dia)",
+"answer": "I left at night, not at noon.",
+"why": ""
+}
+]
+}

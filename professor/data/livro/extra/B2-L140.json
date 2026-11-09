@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "according to me",
+"wrong": "According to me, the plan is sensible.",
+"right": "In my opinion, the plan is sensible.",
+"why": "Em português \"segundo eu\" é calco. Em inglês, according to é para fontes; para opinião própria use in my opinion."
+},
+"mcq": [
+{
+"q": "Em ouvir, \"NO MORE THAN TWO WORDS\" significa...",
+"opts": [
+"exatamente duas",
+"três",
+"até duas palavras"
+],
+"ans": 2,
+"why": "limite."
+},
+{
+"q": "Em V/F/NG, NOT GIVEN =",
+"opts": [
+"o texto não diz",
+"o texto nega",
+"o texto confirma"
+],
+"ans": 0,
+"why": "Não mencionado."
+},
+{
+"q": "Qual é a ordem correta?",
+"opts": [
+"a tool new useful",
+"a useful new tool",
+"a new tool useful"
+],
+"ans": 1,
+"why": "adjetivo antes."
+},
+{
+"q": "Complete: She did **___** on pollution.",
+"opts": [
+"research",
+"a research",
+"researches"
+],
+"ans": 0,
+"why": "incontável."
+}
+],
+"fix": [
+{
+"wrong": "He made a research.",
+"right": "He did research.",
+"why": "do research."
+},
+{
+"wrong": "The reading explain me the term.",
+"right": "The reading explains the term to me.",
+"why": "explain to."
+},
+{
+"wrong": "It is a problem very serious.",
+"right": "It is a very serious problem.",
+"why": "ordem."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com increase in: “Sales increased.”",
+"answer": "There was an increase in sales.",
+"why": ""
+},
+{
+"prompt": "Reescreva com do research: “They researched pollution.”",
+"answer": "They did research on pollution.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The graph shows a fall.”",
+"answer": "The graph showed a fall.",
+"why": ""
+}
+]
+}

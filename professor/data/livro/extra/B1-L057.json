@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "used to × passado simples",
+"wrong": "She used to walk there yesterday.",
+"right": "She walked there yesterday.",
+"why": "Em português “costumava” e “andou” convivem. Em inglês, used to não pode ser usado com tempo definido (yesterday); fato específico = Past Simple."
+},
+"mcq": [
+{
+"q": "People ___ write letters (hábito antigo).",
+"opts": [
+"walked",
+"used to",
+"are"
+],
+"ans": 1,
+"why": "used to."
+},
+{
+"q": "She ___ there yesterday.",
+"opts": [
+"walked",
+"used to walk",
+"uses to walk"
+],
+"ans": 0,
+"why": "Fato."
+},
+{
+"q": "Now I ___ emails (hábito atual).",
+"opts": [
+"used to write",
+"write",
+"wrote"
+],
+"ans": 1,
+"why": "Present Simple."
+},
+{
+"q": "Which is correct? (used to × passado simples)",
+"opts": [
+"I went last Monday.",
+"I used to go last Monday.",
+"I use to go last Monday."
+],
+"ans": 0,
+"why": "Past Simple."
+}
+],
+"fix": [
+{
+"wrong": "I used to go there yesterday.",
+"right": "I went there yesterday.",
+"why": "Tempo definido."
+},
+{
+"wrong": "He use to smoke.",
+"right": "He used to smoke.",
+"why": "used."
+},
+{
+"wrong": "People are used to write letters.",
+"right": "People used to write letters.",
+"why": "used to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I went there every day when I was young.” (used to)",
+"answer": "I used to go there every day when I was young.",
+"why": ""
+},
+{
+"prompt": "Reescreva no Past Simple: “She used to walk there yesterday.”",
+"answer": "She walked there yesterday.",
+"why": ""
+},
+{
+"prompt": "Corrija o tempo: “Yesterday she used to walk there.”",
+"answer": "Yesterday she walked there.",
+"why": "Tempo definido pede Past Simple."
+}
+]
+}

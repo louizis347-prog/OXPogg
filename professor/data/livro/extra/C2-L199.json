@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "So, where does come the novel from?",
+"right": "So, where does the novel come from?",
+"why": "Português “de onde vem o romance?” mantém verbo antes do sujeito; em inglês com do, o sujeito vem antes de come."
+},
+"mcq": [
+{
+"q": "Open a question:",
+"opts": [
+"So, where does the novel come from?",
+"So where the novel comes from?",
+"So, where comes the novel?"
+],
+"ans": 0,
+"why": "do + sujeito."
+},
+{
+"q": "Attribute views:",
+"opts": [
+"Some point at… others at",
+"Some point to… others to…",
+"Some say to"
+],
+"ans": 1,
+"why": "point to."
+},
+{
+"q": "Some… others… presents…",
+"opts": [
+"no view",
+"different views",
+"one view"
+],
+"ans": 1,
+"why": "Visões."
+},
+{
+"q": "Come from keeps its preposition…",
+"opts": [
+"at the end",
+"after where",
+"nowhere"
+],
+"ans": 0,
+"why": "No fim."
+}
+],
+"fix": [
+{
+"wrong": "Where comes the novel from?",
+"right": "Where does the novel come from?",
+"why": "do."
+},
+{
+"wrong": "Some point at the author, others the reader.",
+"right": "Some point to the author, others to the reader.",
+"why": "to."
+},
+{
+"wrong": "From where does comes it?",
+"right": "Where does it come from?",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Where is the novel from?” (come)",
+"answer": "Where does the novel come from?",
+"why": ""
+},
+{
+"prompt": "Atribua: “Some people name the author.” (point to)",
+"answer": "Some point to the author.",
+"why": ""
+},
+{
+"prompt": "Passado: “Where does it come from?”",
+"answer": "Where did it come from?",
+"why": ""
+}
+]
+}

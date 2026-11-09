@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "to e -ing",
+"wrong": "I like to swimming.",
+"right": "I like swimming.",
+"why": "Em português só há infinitivo ('gosto de nadar'); o aluno mistura to e -ing. Like + -ing; want/need + to + verbo."
+},
+"mcq": [
+{
+"q": "I ___ to go home.",
+"opts": [
+"want",
+"wants",
+"wanting"
+],
+"ans": 0,
+"why": "want to."
+},
+{
+"q": "She ___ swimming.",
+"opts": [
+"like",
+"likes",
+"liking"
+],
+"ans": 1,
+"why": "likes."
+},
+{
+"q": "Escolha: I'm tired ___ I stay home.",
+"opts": [
+"so",
+"because",
+"or"
+],
+"ans": 0,
+"why": "Resultado."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I don't need to go.",
+"I no need go.",
+"I don't need go."
+],
+"ans": 0,
+"why": "to presente."
+}
+],
+"fix": [
+{
+"wrong": "He want a coffee.",
+"right": "He wants a coffee.",
+"why": "wants."
+},
+{
+"wrong": "I need go now.",
+"right": "I need to go now.",
+"why": "to."
+},
+{
+"wrong": "We like to playing games.",
+"right": "We like playing games.",
+"why": "like + -ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “He needs to work.”",
+"answer": "He doesn't need to work.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You like cooking.”",
+"answer": "Do you like cooking?",
+"why": ""
+},
+{
+"prompt": "Una com because: “I smile. I'm happy.”",
+"answer": "I smile because I'm happy.",
+"why": ""
+}
+]
+}

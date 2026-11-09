@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "for e since",
+"wrong": "She is a nurse since 2015.",
+"right": "She has been a nurse since 2015.",
+"why": "O português usa o presente para estados que continuam; em inglês estados que duram até agora pedem have been."
+},
+"mcq": [
+{
+"q": "We've been here ___ two hours.",
+"opts": [
+"for",
+"since",
+"at"
+],
+"ans": 0,
+"why": "duração."
+},
+{
+"q": "He hasn't called ___ Monday.",
+"opts": [
+"since",
+"for",
+"from"
+],
+"ans": 0,
+"why": "ponto."
+},
+{
+"q": "I haven't seen her ___ ages.",
+"opts": [
+"since",
+"in",
+"for"
+],
+"ans": 2,
+"why": "duração."
+},
+{
+"q": "They ___ lived here for years.",
+"opts": [
+"have",
+"are",
+"did"
+],
+"ans": 0,
+"why": "have."
+}
+],
+"fix": [
+{
+"wrong": "I am here since noon.",
+"right": "I have been here since noon.",
+"why": "present perfect."
+},
+{
+"wrong": "We've known him since ten years.",
+"right": "We've known him for ten years.",
+"why": "for."
+},
+{
+"wrong": "She have worked here for a year.",
+"right": "She has worked here for a year.",
+"why": "has."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com since: “I came in 2021. I am here.”",
+"answer": "I have been here since 2021.",
+"why": ""
+},
+{
+"prompt": "Reescreva com for: “It started raining three weeks ago and still rains.”",
+"answer": "It has rained for three weeks.",
+"why": ""
+},
+{
+"prompt": "Negativa com since: “I didn't eat. Lunch.”",
+"answer": "I haven't eaten since lunch.",
+"why": ""
+}
+]
+}

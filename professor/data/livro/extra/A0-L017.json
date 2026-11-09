@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural em -s",
+"wrong": "I have two brother.",
+"right": "I have two brothers.",
+"why": "Em português o plural aparece no artigo (\"os\") e muitas vezes no número; em inglês só o substantivo muda e é obrigatório depois de two."
+},
+"mcq": [
+{
+"q": "Plural of **box**",
+"opts": [
+"boxs",
+"boxes",
+"boxies"
+],
+"ans": 1,
+"why": "Termina em x: -es."
+},
+{
+"q": "Plural of **child**",
+"opts": [
+"childs",
+"childes",
+"children"
+],
+"ans": 2,
+"why": "Irregular."
+},
+{
+"q": "Plural of **baby**",
+"opts": [
+"babies",
+"babys",
+"babyes"
+],
+"ans": 0,
+"why": "Consoante + y: -ies."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Three cat",
+"Three cats",
+"Three cats are"
+],
+"ans": 1,
+"why": "Depois de número, plural."
+}
+],
+"fix": [
+{
+"wrong": "I have two sister.",
+"right": "I have two sisters.",
+"why": "Número maior que 1: plural."
+},
+{
+"wrong": "Five womans are here.",
+"right": "Five women are here.",
+"why": "Plural irregular."
+},
+{
+"wrong": "They are student.",
+"right": "They are students.",
+"why": "Sujeito plural, substantivo plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Coloque no plural: “one box”",
+"answer": "two boxes",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “a child”",
+"answer": "two children",
+"why": ""
+},
+{
+"prompt": "Coloque no plural: “one baby”",
+"answer": "two babies",
+"why": ""
+}
+]
+}

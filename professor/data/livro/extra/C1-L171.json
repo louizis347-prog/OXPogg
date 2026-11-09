@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo com número",
+"wrong": "The turn happens in the line nine.",
+"right": "The turn happens in line nine.",
+"why": "Em português dizemos “na linha nove” com artigo. Em inglês, com numeral depois do substantivo (line 9, page 4) não se usa the."
+},
+"mcq": [
+{
+"q": "A **rhyme scheme** ABAB means lines...",
+"opts": [
+"1 and 3 rhyme",
+"all rhyme",
+"none rhyme"
+],
+"ans": 0,
+"why": "ABAB."
+},
+{
+"q": "A **regular** poem has...",
+"opts": [
+"no rhyme",
+"steady syllables",
+"one word"
+],
+"ans": 1,
+"why": "Ritmo regular."
+},
+{
+"q": "The **tone** of “tense, restrained” is...",
+"opts": [
+"cheerful",
+"angry",
+"controlled and anxious"
+],
+"ans": 2,
+"why": "Contida."
+},
+{
+"q": "The turn in “Then someone shifts” is a...",
+"opts": [
+"volta",
+"title",
+"rhyme"
+],
+"ans": 0,
+"why": "Virada."
+}
+],
+"fix": [
+{
+"wrong": "The poem has the ten syllables in each line.",
+"right": "The poem has ten syllables in each line.",
+"why": "Sem the."
+},
+{
+"wrong": "The turn is in the stanza three.",
+"right": "The turn is in stanza three.",
+"why": "Sem the."
+},
+{
+"wrong": "Each lines has ten syllables.",
+"right": "Each line has ten syllables.",
+"why": "each + singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem the: “The turn comes in the line nine.”",
+"answer": "The turn comes in line nine.",
+"why": ""
+},
+{
+"prompt": "Reescreva com every: “Each line has ten syllables.”",
+"answer": "Every line has ten syllables.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “The tone turns tense.”",
+"answer": "The tone turned tense.",
+"why": ""
+}
+]
+}

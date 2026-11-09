@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "particípio -ing",
+"wrong": "Opening with a welcome, sets the tone.",
+"right": "Opening with a welcome, set the tone.",
+"why": "Em instruções, o particípio inicial precisa de um imperativo/sujeito coerente. O brasileiro adiciona -s ou omite o sujeito."
+},
+"mcq": [
+{
+"q": "Having circulated the agenda, ___ .",
+"opts": [
+"the chair began",
+"began the agenda",
+"the agenda began"
+],
+"ans": 0,
+"why": "Mesmo sujeito."
+},
+{
+"q": "Opening with a welcome shows…",
+"opts": [
+"future",
+"simultaneous action",
+"earlier action"
+],
+"ans": 1,
+"why": "Simultâneo."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Having finish, we left.",
+"Finished having, we left.",
+"Having finished, we left."
+],
+"ans": 2,
+"why": "Having + pp."
+},
+{
+"q": "Not having been told, he ___ .",
+"opts": [
+"was surprised",
+"surprised",
+"is surprising"
+],
+"ans": 0,
+"why": "Passiva."
+}
+],
+"fix": [
+{
+"wrong": "Having circulate the agenda, I began.",
+"right": "Having circulated the agenda, I began.",
+"why": "Particípio."
+},
+{
+"wrong": "Opening with a welcome, sets the tone.",
+"right": "Opening with a welcome, set the tone.",
+"why": "Imperativo."
+},
+{
+"wrong": "Having circulated the agenda, the agenda began.",
+"right": "Having circulated the agenda, I began.",
+"why": "Mesmo sujeito."
+}
+],
+"rewrite": [
+{
+"prompt": "Particípio: “After I had circulated the agenda, I began.”",
+"answer": "Having circulated the agenda, I began.",
+"why": ""
+},
+{
+"prompt": "Particípio negativo: “Because he had not been told, he was surprised.”",
+"answer": "Not having been told, he was surprised.",
+"why": ""
+},
+{
+"prompt": "Particípio: “While I opened with a welcome, I set the tone.”",
+"answer": "Opening with a welcome, I set the tone.",
+"why": ""
+}
+]
+}

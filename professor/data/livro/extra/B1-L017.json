@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "present perfect com since",
+"wrong": "I am living here since 2019.",
+"right": "I have lived here since 2019.",
+"why": "Em português dizemos “moro aqui desde 2019” (presente). Em inglês, ação que começou no passado e continua usa Present Perfect com since/for, não o presente simples ou contínuo."
+},
+"mcq": [
+{
+"q": "She **has worked** here ___ 2020.",
+"opts": [
+"for",
+"since",
+"from"
+],
+"ans": 1,
+"why": "since + ponto no tempo."
+},
+{
+"q": "They have lived here ___ ten years.",
+"opts": [
+"for",
+"since",
+"during"
+],
+"ans": 0,
+"why": "for + duração."
+},
+{
+"q": "I want ___ the report today.",
+"opts": [
+"you finish",
+"that you finish",
+"you to finish"
+],
+"ans": 2,
+"why": "want someone to do."
+},
+{
+"q": "Which is correct? (present perfect com since)",
+"opts": [
+"He must go.",
+"He must to go.",
+"He musts go."
+],
+"ans": 0,
+"why": "Modal + verbo base, sem to."
+}
+],
+"fix": [
+{
+"wrong": "I have know Ana for years.",
+"right": "I have known Ana for years.",
+"why": "Use o particípio: known."
+},
+{
+"wrong": "She wants that I help her.",
+"right": "She wants me to help her.",
+"why": "want + pessoa + to + verbo."
+},
+{
+"wrong": "We have lived here since five years.",
+"right": "We have lived here for five years.",
+"why": "Duração usa for."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com for: “I have studied English since 2020.” (hoje = 2025)",
+"answer": "I have studied English for five years.",
+"why": ""
+},
+{
+"prompt": "Reescreva com want: “I want to leave. You must stay.” → Eu quero que você fique.",
+"answer": "I want you to stay.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “He has finished.”",
+"answer": "He hasn't finished.",
+"why": "hasn't ou has not é aceito; use hasn't."
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "some × any",
+"wrong": "I don’t have some money.",
+"right": "I don’t have any money.",
+"why": "Em português \"algum\" e \"nenhum\" mudam de forma; em inglês some vai em afirmativas e any em negativas e perguntas."
+},
+"mcq": [
+{
+"q": "Do you have ___ milk?",
+"opts": [
+"some",
+"any",
+"an"
+],
+"ans": 1,
+"why": "Pergunta."
+},
+{
+"q": "Offer: Would you like ___ tea?",
+"opts": [
+"any",
+"a",
+"some"
+],
+"ans": 2,
+"why": "Oferta usa some."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"There aren’t any chairs.",
+"There aren’t some chairs.",
+"There isn’t any chairs."
+],
+"ans": 0,
+"why": "Any."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"She has any friends.",
+"She has some friends.",
+"She has a friends."
+],
+"ans": 1,
+"why": "Some."
+}
+],
+"fix": [
+{
+"wrong": "Do you have some pens?",
+"right": "Do you have any pens?",
+"why": "Any."
+},
+{
+"wrong": "She has any books.",
+"right": "She has some books.",
+"why": "Some."
+},
+{
+"wrong": "We haven’t some time.",
+"right": "We haven’t any time.",
+"why": "Any."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça pergunta: “You have some pens.”",
+"answer": "Do you have any pens?",
+"why": ""
+},
+{
+"prompt": "Complete: “She has ___ friends.” (frase completa, some)",
+"answer": "She has some friends.",
+"why": ""
+},
+{
+"prompt": "Negue: “There are some apples.”",
+"answer": "There aren’t any apples.",
+"why": ""
+}
+]
+}

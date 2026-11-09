@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "há × tem",
+"wrong": "Has a cat in the garden.",
+"right": "There is a cat in the garden.",
+"why": "Em português \"tem\" coloquial indica existência; em inglês existência exige there is/are e não have."
+},
+"mcq": [
+{
+"q": "___ a cat in the house.",
+"opts": [
+"There are",
+"There is",
+"It has"
+],
+"ans": 1,
+"why": "Singular."
+},
+{
+"q": "___ two books.",
+"opts": [
+"There is",
+"It is",
+"There are"
+],
+"ans": 2,
+"why": "Plural."
+},
+{
+"q": "Question: ___ a bank near here?",
+"opts": [
+"Is there",
+"Are there",
+"Has"
+],
+"ans": 0,
+"why": "Singular."
+},
+{
+"q": "Negative: ___ any milk.",
+"opts": [
+"There aren’t",
+"There isn’t",
+"There doesn’t"
+],
+"ans": 1,
+"why": "Milk é incontável."
+}
+],
+"fix": [
+{
+"wrong": "Has a bank near here.",
+"right": "There is a bank near here.",
+"why": "There is."
+},
+{
+"wrong": "There is two cats.",
+"right": "There are two cats.",
+"why": "Plural."
+},
+{
+"wrong": "Is there two chairs?",
+"right": "Are there two chairs?",
+"why": "Plural."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com there is: “A dog is in the garden.”",
+"answer": "There is a dog in the garden.",
+"why": ""
+},
+{
+"prompt": "Reescreva com there are: “Three cats are on the sofa.”",
+"answer": "There are three cats on the sofa.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “There is a bank here.”",
+"answer": "Is there a bank here?",
+"why": ""
+}
+]
+}

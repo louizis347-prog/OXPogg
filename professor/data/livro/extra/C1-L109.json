@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva sem sujeito",
+"wrong": "They say that the bridge is safe, so the bridge is said safe.",
+"right": "The bridge is said to be safe.",
+"why": "Em português “diz-se que a ponte é segura” é natural, e o brasileiro omite o to be. Em inglês, após is said use to + be + adjetivo."
+},
+"mcq": [
+{
+"q": "Qual frase atribui a informação a uma fonte explícita?",
+"opts": [
+"Officials say the dam is sound.",
+"The dam is said to be sound.",
+"The dam was inspected."
+],
+"ans": 0,
+"why": "Fonte explícita: Officials say."
+},
+{
+"q": "The old mill ___ to be haunted.",
+"opts": [
+"is saying",
+"is said",
+"says"
+],
+"ans": 1,
+"why": "Passiva: is said to."
+},
+{
+"q": "Qual é a passiva simples (sem relato)?",
+"opts": [
+"The dam is said to hold.",
+"They say it holds.",
+"The dam was inspected."
+],
+"ans": 2,
+"why": "was inspected."
+},
+{
+"q": "It is ___ that the dam holds.",
+"opts": [
+"believed",
+"believing",
+"believe"
+],
+"ans": 0,
+"why": "It is believed that."
+}
+],
+"fix": [
+{
+"wrong": "The dam is said be sound.",
+"right": "The dam is said to be sound.",
+"why": "is said to + base."
+},
+{
+"wrong": "It is believed to that the mill is old.",
+"right": "It is believed that the mill is old.",
+"why": "that, sem to."
+},
+{
+"wrong": "They says the tunnel is safe.",
+"right": "They say the tunnel is safe.",
+"why": "they + say."
+}
+],
+"rewrite": [
+{
+"prompt": "Passive com to: “People say the tunnel is safe.” (The tunnel…)",
+"answer": "The tunnel is said to be safe.",
+"why": ""
+},
+{
+"prompt": "Com it: “People believe the mill is old.” (It is…)",
+"answer": "It is believed that the mill is old.",
+"why": ""
+},
+{
+"prompt": "Passiva simples: “Engineers inspected the dam.”",
+"answer": "The dam was inspected by engineers.",
+"why": ""
+}
+]
+}

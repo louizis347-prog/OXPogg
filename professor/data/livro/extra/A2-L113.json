@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "Present Perfect",
+"wrong": "Have you ate sushi?",
+"right": "Have you eaten sushi?",
+"why": "Em português o particípio de comer é 'comido' e o aluno usa o passado do inglês; é preciso o particípio irregular."
+},
+"mcq": [
+{
+"q": "Particípio de **go**:",
+"opts": [
+"gone",
+"goed",
+"went"
+],
+"ans": 0,
+"why": "gone."
+},
+{
+"q": "Particípio de **see**:",
+"opts": [
+"seen",
+"seed",
+"saw"
+],
+"ans": 0,
+"why": "seen."
+},
+{
+"q": "___ you ever eaten sushi?",
+"opts": [
+"Have",
+"Are",
+"Did"
+],
+"ans": 0,
+"why": "have."
+},
+{
+"q": "She ___ never lied.",
+"opts": [
+"have",
+"has",
+"did"
+],
+"ans": 1,
+"why": "has."
+}
+],
+"fix": [
+{
+"wrong": "We have ate dinner.",
+"right": "We have eaten dinner.",
+"why": "particípio."
+},
+{
+"wrong": "She have called.",
+"right": "She has called.",
+"why": "has."
+},
+{
+"wrong": "Have you went there?",
+"right": "Have you gone there?",
+"why": "particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Pergunta: “You have eaten sushi.” (ever)",
+"answer": "Have you ever eaten sushi?",
+"why": ""
+},
+{
+"prompt": "Negativa: “I have seen it.” (never)",
+"answer": "I have never seen it.",
+"why": ""
+},
+{
+"prompt": "Present perfect: “She goes to Rome.” (already)",
+"answer": "She has already gone to Rome.",
+"why": ""
+}
+]
+}

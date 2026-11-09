@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "provided that",
+"wrong": "Provided of the road stays open, we will arrive.",
+"right": "Provided that the road stays open, we will arrive.",
+"why": "O brasileiro troca por “desde de/que”. Em inglês: provided (that) + oração no presente."
+},
+"mcq": [
+{
+"q": "___ the road stays open, we will arrive.",
+"opts": [
+"Provided of",
+"Unless that",
+"Provided that"
+],
+"ans": 2,
+"why": "Provided that."
+},
+{
+"q": "Had we ___ , we would have won.",
+"opts": [
+"started",
+"start",
+"starting"
+],
+"ans": 0,
+"why": "Particípio."
+},
+{
+"q": "Unless you study, …",
+"opts": [
+"you didn’t know",
+"you won’t learn",
+"you will not to know"
+],
+"ans": 1,
+"why": "Sem to."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Provided it will rain, we stay.",
+"Provided to rain, we stay.",
+"Provided it rains, we stay."
+],
+"ans": 2,
+"why": "Presente."
+}
+],
+"fix": [
+{
+"wrong": "Provided it will rain, we stay.",
+"right": "Provided it rains, we stay.",
+"why": "Presente."
+},
+{
+"wrong": "Had we start earlier, we would have won.",
+"right": "Had we started earlier, we would have won.",
+"why": "Particípio."
+},
+{
+"wrong": "Unless you don’t study, you won’t learn.",
+"right": "Unless you study, you won’t learn.",
+"why": "Unless negativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Use provided that: “We arrive if the road stays open.”",
+"answer": "We will arrive provided that the road stays open.",
+"why": ""
+},
+{
+"prompt": "Inverta: “If we had started earlier, we would have won.”",
+"answer": "Had we started earlier, we would have won.",
+"why": ""
+},
+{
+"prompt": "Use unless: “If you don’t study, you won’t learn.”",
+"answer": "Unless you study, you won’t learn.",
+"why": ""
+}
+]
+}

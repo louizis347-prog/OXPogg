@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "It is the reasons what make us free.",
+"right": "It is the reasons that make us free.",
+"why": "Português “são as razões que nos libertam” às vezes vira what; em inglês a clivada usa that."
+},
+"mcq": [
+{
+"q": "Pseudo-cleft puts the focus…",
+"opts": [
+"at the start",
+"nowhere",
+"at the end"
+],
+"ans": 2,
+"why": "Foco no fim."
+},
+{
+"q": "Cleft sentence:",
+"opts": [
+"It the reasons is make us free.",
+"Is it reasons that free.",
+"It is the reasons that make us free."
+],
+"ans": 2,
+"why": "It is… that."
+},
+{
+"q": "What she proposes is a middle path. The focus is…",
+"opts": [
+"a middle path",
+"proposes",
+"what"
+],
+"ans": 0,
+"why": "Foco no fim."
+},
+{
+"q": "In a cleft about people, use…",
+"opts": [
+"what",
+"which only",
+"who or that"
+],
+"ans": 2,
+"why": "who/that."
+}
+],
+"fix": [
+{
+"wrong": "What she proposes it is a path.",
+"right": "What she proposes is a path.",
+"why": "Sem it."
+},
+{
+"wrong": "It is reasons what free us.",
+"right": "It is reasons that free us.",
+"why": "that."
+},
+{
+"wrong": "What I need are a rest.",
+"right": "What I need is a rest.",
+"why": "is."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudoclivada: “She proposes a middle path.”",
+"answer": "What she proposes is a middle path.",
+"why": ""
+},
+{
+"prompt": "Clivada: “Reasons make us free.”",
+"answer": "It is reasons that make us free.",
+"why": ""
+},
+{
+"prompt": "Negativo: “It is reasons that make us free.”",
+"answer": "It is not reasons that make us free.",
+"why": ""
+}
+]
+}

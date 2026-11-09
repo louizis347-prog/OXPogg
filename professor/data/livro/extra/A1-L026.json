@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "do × make",
+"wrong": "Do a cake for the party.",
+"right": "Make a cake for the party.",
+"why": "O brasileiro generaliza fazer = do; do é para tarefas e atividades, make para criar algo."
+},
+"mcq": [
+{
+"q": "“Fazer exercício” =",
+"opts": [
+"do exercise",
+"make exercise",
+"take exercise"
+],
+"ans": 0,
+"why": "Do."
+},
+{
+"q": "“Lavar a louça” =",
+"opts": [
+"make the dishes",
+"do the dishes",
+"wash the dish do"
+],
+"ans": 1,
+"why": "Do the dishes."
+},
+{
+"q": "Question: ___ you like tea?",
+"opts": [
+"Make",
+"Are",
+"Do"
+],
+"ans": 2,
+"why": "Auxiliar."
+},
+{
+"q": "“Fazer um favor” =",
+"opts": [
+"do a favor",
+"make a favor",
+"take a favor"
+],
+"ans": 0,
+"why": "Do a favor."
+}
+],
+"fix": [
+{
+"wrong": "I make my homework.",
+"right": "I do my homework.",
+"why": "Do."
+},
+{
+"wrong": "She does a cake.",
+"right": "She makes a cake.",
+"why": "Make."
+},
+{
+"wrong": "We make the dishes.",
+"right": "We do the dishes.",
+"why": "Do."
+}
+],
+"rewrite": [
+{
+"prompt": "Use do: “I clean the dishes.”",
+"answer": "I do the dishes.",
+"why": ""
+},
+{
+"prompt": "Use do: “He exercises.”",
+"answer": "He does exercise.",
+"why": ""
+},
+{
+"prompt": "Use do: “We help you.” (a favor)",
+"answer": "We do you a favor.",
+"why": ""
+}
+]
+}

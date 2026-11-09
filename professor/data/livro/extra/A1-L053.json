@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo de ligação",
+"wrong": "The soup tastes deliciously.",
+"right": "The soup tastes delicious.",
+"why": "Em português usamos advérbio (\"saboroso\" ou \"saborosamente\") por transferência; com tastes/looks/feels vem adjetivo, não advérbio."
+},
+"mcq": [
+{
+"q": "She looks ___.",
+"opts": [
+"happy",
+"happily",
+"happiness"
+],
+"ans": 0,
+"why": "Adjetivo após look."
+},
+{
+"q": "The soup tastes ___.",
+"opts": [
+"well",
+"good",
+"goodly"
+],
+"ans": 1,
+"why": "Good."
+},
+{
+"q": "He feels ___.",
+"opts": [
+"tiredly",
+"tire",
+"tired"
+],
+"ans": 2,
+"why": "Adjetivo."
+},
+{
+"q": "It sounds ___.",
+"opts": [
+"great",
+"greatly",
+"greater"
+],
+"ans": 0,
+"why": "Adjetivo."
+}
+],
+"fix": [
+{
+"wrong": "The soup tastes deliciously.",
+"right": "The soup tastes delicious.",
+"why": "Adjetivo."
+},
+{
+"wrong": "He looks tiredly.",
+"right": "He looks tired.",
+"why": "Adjetivo."
+},
+{
+"wrong": "She feels happily.",
+"right": "She feels happy.",
+"why": "Adjetivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque o advérbio: “He looks happily.” (corrija)",
+"answer": "He looks happy.",
+"why": ""
+},
+{
+"prompt": "Use looks: “The cake is nice.” (aparência)",
+"answer": "The cake looks nice.",
+"why": ""
+},
+{
+"prompt": "Use feels: “I am tired.” (sensação)",
+"answer": "I feel tired.",
+"why": ""
+}
+]
+}

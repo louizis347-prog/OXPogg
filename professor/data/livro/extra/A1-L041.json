@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "can + to / -s",
+"wrong": "She can to swim.",
+"right": "She can swim.",
+"why": "Em português dizemos \"ela pode nadar\" com infinitivo e flexão; em inglês can é modal: sem to e sem -s."
+},
+"mcq": [
+{
+"q": "She ___ swim.",
+"opts": [
+"can",
+"cans",
+"can to"
+],
+"ans": 0,
+"why": "Modal, sem -s."
+},
+{
+"q": "Negative of “I can run.”",
+"opts": [
+"I don’t can run.",
+"I can’t run.",
+"I can’t to run."
+],
+"ans": 1,
+"why": "Can’t."
+},
+{
+"q": "Question: ___ you help me?",
+"opts": [
+"Do",
+"Are",
+"Can"
+],
+"ans": 2,
+"why": "Can + sujeito."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"He can speak French.",
+"He can speaks French.",
+"He can to speak French."
+],
+"ans": 0,
+"why": "Base form."
+}
+],
+"fix": [
+{
+"wrong": "She can to swim.",
+"right": "She can swim.",
+"why": "Sem to."
+},
+{
+"wrong": "He cans play guitar.",
+"right": "He can play guitar.",
+"why": "Sem -s."
+},
+{
+"wrong": "Do you can help?",
+"right": "Can you help?",
+"why": "Sem do."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com can: “I speak English.”",
+"answer": "I can speak English.",
+"why": ""
+},
+{
+"prompt": "Negue com can’t: “She can drive.”",
+"answer": "She can’t drive.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You can swim.”",
+"answer": "Can you swim?",
+"why": ""
+}
+]
+}

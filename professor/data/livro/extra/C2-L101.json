@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "paralelismo",
+"wrong": "We will not retreat. We will not surrender. We will not to give up.",
+"right": "We will not retreat. We will not surrender. We will not give up.",
+"why": "Em português o paralelismo é flexível; em inglês a anáfora exige a mesma estrutura sem to."
+},
+"mcq": [
+{
+"q": "Anaphora:",
+"opts": [
+"We not… will we…",
+"Not will we",
+"We will not… We will not…"
+],
+"ans": 2,
+"why": "Repetição."
+},
+{
+"q": "Tricolon feel:",
+"opts": [
+"completeness",
+"apology",
+"doubt"
+],
+"ans": 0,
+"why": "Completude."
+},
+{
+"q": "Which triple of verbs keeps the same form?",
+"opts": [
+"come, saw, staying",
+"came, saw, stayed",
+"came, seeing, stay"
+],
+"ans": 1,
+"why": "Mesma forma."
+},
+{
+"q": "Anaphora repeats the…",
+"opts": [
+"end",
+"middle",
+"start"
+],
+"ans": 2,
+"why": "Início."
+}
+],
+"fix": [
+{
+"wrong": "We will not retreat, will we not surrender.",
+"right": "We will not retreat; we will not surrender.",
+"why": "Paralelo."
+},
+{
+"wrong": "They rose, they spoke, they leaving.",
+"right": "They rose, they spoke, they left.",
+"why": "Passado."
+},
+{
+"wrong": "We will not to retreat.",
+"right": "We will not retreat.",
+"why": "Sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Complete: “We will not retreat. We will not ___.” (surrender)",
+"answer": "We will not retreat. We will not surrender.",
+"why": ""
+},
+{
+"prompt": "Negativo: “They stayed.”",
+"answer": "They did not stay.",
+"why": ""
+},
+{
+"prompt": "Passado: “We see, we stay.”",
+"answer": "We saw, we stayed.",
+"why": ""
+}
+]
+}

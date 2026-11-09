@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "too/enough",
+"wrong": "It is enough big.",
+"right": "It is big enough.",
+"why": "Em português 'suficientemente grande' vem antes ou depois; em inglês enough vem depois do adjetivo."
+},
+"mcq": [
+{
+"q": "It's ___ cold to swim.",
+"opts": [
+"enough",
+"too",
+"very much"
+],
+"ans": 1,
+"why": "too."
+},
+{
+"q": "He is old ___ to drive.",
+"opts": [
+"very",
+"too",
+"enough"
+],
+"ans": 2,
+"why": "depois."
+},
+{
+"q": "There is ___ food.",
+"opts": [
+"enough",
+"very",
+"too much"
+],
+"ans": 0,
+"why": "antes de substantivo."
+},
+{
+"q": "The tea is ___ hot to drink.",
+"opts": [
+"too",
+"enough",
+"so"
+],
+"ans": 0,
+"why": "too."
+}
+],
+"fix": [
+{
+"wrong": "It is enough big.",
+"right": "It is big enough.",
+"why": "depois do adj."
+},
+{
+"wrong": "I'm too much tired.",
+"right": "I'm too tired.",
+"why": "too."
+},
+{
+"wrong": "She is enough old.",
+"right": "She is old enough.",
+"why": "depois do adj."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com enough: “She is not tall.” (to reach)",
+"answer": "She isn't tall enough to reach.",
+"why": ""
+},
+{
+"prompt": "Reescreva com too: “It is very hot to eat.”",
+"answer": "It is too hot to eat.",
+"why": ""
+},
+{
+"prompt": "Ordem: “enough / money / We have”",
+"answer": "We have enough money.",
+"why": ""
+}
+]
+}

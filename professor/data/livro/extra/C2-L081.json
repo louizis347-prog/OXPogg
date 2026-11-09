@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "The council voted for 7 against 4 approve the plan.",
+"right": "The council voted 7–4 to approve the plan.",
+"why": "Português “votou por 7 a 4 para aprovar”; em inglês voted 7–4 to approve."
+},
+"mcq": [
+{
+"q": "Vote reported:",
+"opts": [
+"voted to 7–4 approve",
+"voted for 7–4 approving",
+"voted 7–4 to approve"
+],
+"ans": 2,
+"why": "voted 7–4 to approve."
+},
+{
+"q": "Neutral plan:",
+"opts": [
+"a plan amended to preserve…",
+"a plan amending preserve",
+"a plan amend"
+],
+"ans": 0,
+"why": "Particípio."
+},
+{
+"q": "Which opens with the central fact?",
+"opts": [
+"In the end, after much talk, a vote.",
+"Maybe the council voted.",
+"The council voted 7–4 to approve the plan."
+],
+"ans": 2,
+"why": "Fato central primeiro."
+},
+{
+"q": "Plan amended means…",
+"opts": [
+"changed",
+"lost",
+"approved"
+],
+"ans": 0,
+"why": "Amended = alterado."
+}
+],
+"fix": [
+{
+"wrong": "The plan was amend.",
+"right": "The plan was amended.",
+"why": "Particípio."
+},
+{
+"wrong": "The council voted approving.",
+"right": "The council voted to approve.",
+"why": "to + base."
+},
+{
+"wrong": "Voted 7–4 for approve.",
+"right": "Voted 7–4 to approve.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “The council amended the plan.”",
+"answer": "The plan was amended by the council.",
+"why": ""
+},
+{
+"prompt": "Reescreva com voted: “The council approved it, 7–4.”",
+"answer": "The council voted 7–4 to approve it.",
+"why": ""
+},
+{
+"prompt": "Negativo: “The plan was amended.”",
+"answer": "The plan was not amended.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "há × tem",
+"wrong": "Has a cat in the garden.",
+"right": "There is a cat in the garden.",
+"why": "Em português \"tem\" coloquial indica existência; em inglês existência exige there is/are e não have."
+},
+"mcq": [
+{
+"q": "___ a cat in the house.",
+"opts": [
+"There are",
+"It has",
+"There is"
+],
+"ans": 2,
+"why": "Singular."
+},
+{
+"q": "Negative of “I can run.”",
+"opts": [
+"I can’t run.",
+"I don’t can run.",
+"I can’t to run."
+],
+"ans": 0,
+"why": "Can’t."
+},
+{
+"q": "Polite way:",
+"opts": [
+"You please sit.",
+"Please sit down.",
+"Sit you down."
+],
+"ans": 1,
+"why": "Please."
+},
+{
+"q": "Question: “You have got a cat.”",
+"opts": [
+"Do you got a cat?",
+"You have got a cat?",
+"Have you got a cat?"
+],
+"ans": 2,
+"why": "Inversão."
+}
+],
+"fix": [
+{
+"wrong": "Has a bank near here.",
+"right": "There is a bank near here.",
+"why": "There is."
+},
+{
+"wrong": "He cans play guitar.",
+"right": "He can play guitar.",
+"why": "Sem -s."
+},
+{
+"wrong": "Don’t late.",
+"right": "Don’t be late.",
+"why": "Be."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com can: “I speak English.”",
+"answer": "I can speak English.",
+"why": ""
+},
+{
+"prompt": "Negue: “Run.”",
+"answer": "Don’t run.",
+"why": ""
+},
+{
+"prompt": "Faça pergunta: “You have got a car.”",
+"answer": "Have you got a car?",
+"why": ""
+}
+]
+}

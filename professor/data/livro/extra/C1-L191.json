@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "artigo",
+"wrong": "The rumor gives rise to the panic.",
+"right": "Rumor gives rise to panic.",
+"why": "Em português usamos artigo diante de substantivos abstratos (“o sigilo gera a dúvida”). Em inglês, abstratos em sentido geral ficam sem artigo."
+},
+"mcq": [
+{
+"q": "Which is correct?",
+"opts": [
+"The rumor gives rise to the panic.",
+"A rumor gives rise to panics.",
+"Rumor gives rise to panic."
+],
+"ans": 2,
+"why": "Sem artigo."
+},
+{
+"q": "“By autumn they will have been trading ___ a year.”",
+"opts": [
+"for",
+"since",
+"during"
+],
+"ans": 0,
+"why": "for."
+},
+{
+"q": "Ellipsis: “Two hedge; others ___.”",
+"opts": [
+"aren’t",
+"don’t",
+"not do"
+],
+"ans": 1,
+"why": "Mesmo auxiliar."
+},
+{
+"q": "“Vague promises ___ mistrust.”",
+"opts": [
+"gave rise",
+"raised to",
+"gave rise to"
+],
+"ans": 2,
+"why": "gave rise to."
+}
+],
+"fix": [
+{
+"wrong": "The weak mandates gave rise to the mistrust.",
+"right": "Vague promises gave rise to mistrust.",
+"why": "Sem artigo."
+},
+{
+"wrong": "By autumn they will have been trade for a year.",
+"right": "By autumn they will have been trading for a year.",
+"why": "-ing."
+},
+{
+"wrong": "Some firms hedge; others don’t hedge it.",
+"right": "Some firms hedge; others don’t.",
+"why": "Elipse."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem artigo: “The mistrust grew.”",
+"answer": "Mistrust grew.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “By autumn they trade for a year.”",
+"answer": "By autumn they will have been trading for a year.",
+"why": ""
+},
+{
+"prompt": "Aplique elipse: “Some firms hedge; others do not hedge.”",
+"answer": "Some firms hedge; others do not.",
+"why": ""
+}
+]
+}

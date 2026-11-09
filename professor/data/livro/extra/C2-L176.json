@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "discurso indireto",
+"wrong": "He replied that he has run the whole way.",
+"right": "He replied that he had run the whole way.",
+"why": "Português mantém o tempo do original; em inglês o discurso indireto recua um tempo (have run to had run)."
+},
+"mcq": [
+{
+"q": "Backshift of “I have run”:",
+"opts": [
+"he has run",
+"he had run",
+"he ran now"
+],
+"ans": 1,
+"why": "Past perfect."
+},
+{
+"q": "Backshift of “You will never catch me”:",
+"opts": [
+"I never catch him",
+"I would never catch him",
+"I will never catch him"
+],
+"ans": 1,
+"why": "would."
+},
+{
+"q": "Direct → reported: “I am tired.”",
+"opts": [
+"He said he is tired.",
+"He said he was tired.",
+"He said he be tired."
+],
+"ans": 1,
+"why": "was."
+},
+{
+"q": "Replied that = …",
+"opts": [
+"asked",
+"answered saying",
+"denied"
+],
+"ans": 1,
+"why": "Respondeu."
+}
+],
+"fix": [
+{
+"wrong": "He said that he will come.",
+"right": "He said that he would come.",
+"why": "would."
+},
+{
+"wrong": "She replied that she runs daily.",
+"right": "She replied that she ran daily.",
+"why": "Recuo."
+},
+{
+"wrong": "He told that he had run.",
+"right": "He said that he had run.",
+"why": "said."
+}
+],
+"rewrite": [
+{
+"prompt": "Indireto: He said, “I am hungry.”",
+"answer": "He said that he was hungry.",
+"why": ""
+},
+{
+"prompt": "Indireto: She said, “I will go.”",
+"answer": "She said that she would go.",
+"why": ""
+},
+{
+"prompt": "Indireto: He said, “I have finished.”",
+"answer": "He said that he had finished.",
+"why": ""
+}
+]
+}

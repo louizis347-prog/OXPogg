@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "informação incontável",
+"wrong": "The report gives many informations.",
+"right": "The report gives a lot of information.",
+"why": "Informação tem plural em português. Em inglês information não tem plural."
+},
+"mcq": [
+{
+"q": "Para opinião própria, use...",
+"opts": [
+"In my opinion",
+"According to me",
+"By me"
+],
+"ans": 0,
+"why": "in my opinion."
+},
+{
+"q": "Qual é incontável?",
+"opts": [
+"report",
+"information",
+"graph"
+],
+"ans": 1,
+"why": "information."
+},
+{
+"q": "Complete: People **___** divided.",
+"opts": [
+"is",
+"was",
+"are"
+],
+"ans": 2,
+"why": "people plural."
+},
+{
+"q": "Qual frase está certa?",
+"opts": [
+"Sales raised sharply.",
+"Sales rose sharply.",
+"Sales rised sharply."
+],
+"ans": 1,
+"why": "rose."
+}
+],
+"fix": [
+{
+"wrong": "The people is angry.",
+"right": "The people are angry.",
+"why": "Plural."
+},
+{
+"wrong": "We need more informations.",
+"right": "We need more information.",
+"why": "Incontável."
+},
+{
+"wrong": "The result depends of the sample.",
+"right": "The result depends on the sample.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a negativa: “The text mentions the cost.”",
+"answer": "The text does not mention the cost.",
+"why": ""
+},
+{
+"prompt": "Reescreva com however: “It is cheap but poor.”",
+"answer": "It is cheap; however, it is poor.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “Sales fall in June.”",
+"answer": "Sales fell in June.",
+"why": ""
+}
+]
+}

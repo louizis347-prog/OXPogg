@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "will + base",
+"wrong": "She will to come.",
+"right": "She will come.",
+"why": "Em português 'vai vir' tem preposição/infinitivo; em inglês will é modal e dispensa to e -s."
+},
+"mcq": [
+{
+"q": "I think it ___ rain.",
+"opts": [
+"will",
+"is will",
+"wills"
+],
+"ans": 0,
+"why": "will."
+},
+{
+"q": "He ___ help you.",
+"opts": [
+"will",
+"wills",
+"will to"
+],
+"ans": 0,
+"why": "modal."
+},
+{
+"q": "Negativa de will:",
+"opts": [
+"willn't",
+"don't will",
+"won't"
+],
+"ans": 2,
+"why": "won't."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I'll calling you.",
+"I'll call you.",
+"I'll to call you."
+],
+"ans": 1,
+"why": "base."
+}
+],
+"fix": [
+{
+"wrong": "She will comes.",
+"right": "She will come.",
+"why": "base."
+},
+{
+"wrong": "I will to help.",
+"right": "I will help.",
+"why": "sem to."
+},
+{
+"wrong": "He wills win.",
+"right": "He will win.",
+"why": "sem -s."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro com will: “I call you.”",
+"answer": "I'll call you.",
+"why": ""
+},
+{
+"prompt": "Negativa: “She will come.”",
+"answer": "She won't come.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “He will help.”",
+"answer": "Will he help?",
+"why": ""
+}
+]
+}

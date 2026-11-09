@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "registro informal",
+"wrong": "I gonna to go.",
+"right": "I'm gonna go.",
+"why": "Em português o \"vou ir\" coloquial é aceito. Em inglês, gonna = going to e vem com be, sem to depois."
+},
+"mcq": [
+{
+"q": "gonna =",
+"opts": [
+"got to",
+"going to",
+"want to"
+],
+"ans": 1,
+"why": "gonna."
+},
+{
+"q": "wanna =",
+"opts": [
+"went to",
+"won't",
+"want to"
+],
+"ans": 2,
+"why": "wanna."
+},
+{
+"q": "Qual é fala monitorada?",
+"opts": [
+"I am going to leave.",
+"I'm gonna leave.",
+"I gonna leave."
+],
+"ans": 0,
+"why": "Forma plena."
+},
+{
+"q": "gotta =",
+"opts": [
+"got a",
+"go to",
+"have to"
+],
+"ans": 2,
+"why": "gotta."
+}
+],
+"fix": [
+{
+"wrong": "I gonna call you.",
+"right": "I'm gonna call you.",
+"why": "be."
+},
+{
+"wrong": "She wanna to go.",
+"right": "She wanna go.",
+"why": "Sem to."
+},
+{
+"wrong": "I am gonna to leave.",
+"right": "I am going to leave.",
+"why": "Forma formal."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva em fala informal: “I want to go.”",
+"answer": "I wanna go.",
+"why": ""
+},
+{
+"prompt": "Reescreva em fala formal: “I'm gonna leave.”",
+"answer": "I am going to leave.",
+"why": ""
+},
+{
+"prompt": "Reescreva em fala informal: “She has to work.”",
+"answer": "She's gotta work.",
+"why": ""
+}
+]
+}

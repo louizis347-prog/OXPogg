@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "colocação",
+"wrong": "We made a target for next year.",
+"right": "We set a target for next year.",
+"why": "Em português “fazer/colocar uma meta” parece natural, então o aluno traduz com make ou put. A colocação em inglês é set a target/goal."
+},
+"mcq": [
+{
+"q": "Which verb forms a **fund** for a grant?",
+"opts": [
+"set aside",
+"set out",
+"set up"
+],
+"ans": 2,
+"why": "set up = criar, montar."
+},
+{
+"q": "“Set ___ a week for the interview.”",
+"opts": [
+"aside",
+"up",
+"out"
+],
+"ans": 0,
+"why": "set aside = reservar."
+},
+{
+"q": "Which means **to explain in detail**?",
+"opts": [
+"set up your aims",
+"set out your aims",
+"set off your aims"
+],
+"ans": 1,
+"why": "set out = expor."
+},
+{
+"q": "Which verb goes with “target”?",
+"opts": [
+"put a target",
+"do a target",
+"set a target"
+],
+"ans": 2,
+"why": "set a target/goal/deadline."
+}
+],
+"fix": [
+{
+"wrong": "They made up a pilot grant last year.",
+"right": "They set up a pilot grant last year.",
+"why": "set up = criar uma instituição/fundo."
+},
+{
+"wrong": "Please set a side two hours for the review.",
+"right": "Please set aside two hours for the review.",
+"why": "set aside é uma unidade."
+},
+{
+"wrong": "The report sets in your aims clearly.",
+"right": "The report sets out your aims clearly.",
+"why": "set out = expor."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com set up: “They created a research foundation.”",
+"answer": "They set up a research foundation.",
+"why": ""
+},
+{
+"prompt": "Reescreva com set aside: “We reserved a week for scoring.”",
+"answer": "We set aside a week for scoring.",
+"why": ""
+},
+{
+"prompt": "Reescreva com set a target: “The team established a goal.”",
+"answer": "The team set a target.",
+"why": ""
+}
+]
+}

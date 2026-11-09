@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "is/was na pseudo",
+"wrong": "What reviewers do to scrutinize methods.",
+"right": "What reviewers do is to scrutinize methods.",
+"why": "Falta o verbo ser. A pseudo-clivada exige What + S + V + is/was."
+},
+"mcq": [
+{
+"q": "What reviewers do ___ to scrutinize methods.",
+"opts": [
+"is",
+"does",
+"are"
+],
+"ans": 0,
+"why": "is."
+},
+{
+"q": "All they ask for ___ clarity.",
+"opts": [
+"does",
+"is",
+"are"
+],
+"ans": 1,
+"why": "is."
+},
+{
+"q": "What drove her ___ ambition.",
+"opts": [
+"is it",
+"were",
+"was"
+],
+"ans": 2,
+"why": "was."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"What they want is time.",
+"What they want time.",
+"What want they is time."
+],
+"ans": 0,
+"why": "What…is."
+}
+],
+"fix": [
+{
+"wrong": "What reviewers do scrutinize methods.",
+"right": "What reviewers do is scrutinize methods.",
+"why": "is."
+},
+{
+"wrong": "All they ask for are clarity.",
+"right": "All they ask for is clarity.",
+"why": "is."
+},
+{
+"wrong": "What drove her ambition.",
+"right": "What drove her was ambition.",
+"why": "was."
+}
+],
+"rewrite": [
+{
+"prompt": "Pseudo-clivada: “Reviewers scrutinize methods.”",
+"answer": "What reviewers do is scrutinize methods.",
+"why": ""
+},
+{
+"prompt": "Com All: “They ask only for clarity.”",
+"answer": "All they ask for is clarity.",
+"why": ""
+},
+{
+"prompt": "Passado: “Curiosity drove her.”",
+"answer": "What drove her was ambition.",
+"why": ""
+}
+]
+}

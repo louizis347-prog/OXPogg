@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "subject × matter",
+"wrong": "My favourite matter at school was history.",
+"right": "My favourite subject at school was history.",
+"why": "Em português “matéria” é a disciplina escolar. Em inglês, matter significa assunto/questão ou matéria física; a disciplina é subject."
+},
+"mcq": [
+{
+"q": "Support that is withdrawn gradually is...",
+"opts": [
+"summative",
+"scaffolding",
+"a rubric"
+],
+"ans": 1,
+"why": "Scaffolding."
+},
+{
+"q": "Checking learning during the course:",
+"opts": [
+"summative assessment",
+"final exam",
+"formative assessment"
+],
+"ans": 2,
+"why": "Formativa."
+},
+{
+"q": "Teaching in different ways for different learners:",
+"opts": [
+"differentiated instruction",
+"uniform teaching",
+"dictation"
+],
+"ans": 0,
+"why": "Diferenciada."
+},
+{
+"q": "A final exam is a...",
+"opts": [
+"scaffold",
+"summative assessment",
+"warm-up"
+],
+"ans": 1,
+"why": "Somativa."
+}
+],
+"fix": [
+{
+"wrong": "The teacher did a prove at the end.",
+"right": "The teacher gave a test at the end.",
+"why": "prove é verbo."
+},
+{
+"wrong": "Formative assessments is useful for pupils.",
+"right": "Formative assessments are useful for pupils.",
+"why": "plural."
+},
+{
+"wrong": "She withdrew the scaffolding slow.",
+"right": "She withdrew the scaffolding slowly.",
+"why": "Advérbio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com subject: “My favourite matter is math.”",
+"answer": "My favourite subject is math.",
+"why": ""
+},
+{
+"prompt": "Reescreva no plural: “A summative assessment is final.”",
+"answer": "Summative assessments are final.",
+"why": ""
+},
+{
+"prompt": "Reescreva com gradually: “Support is removed bit by bit.”",
+"answer": "Support is gradually removed.",
+"why": ""
+}
+]
+}

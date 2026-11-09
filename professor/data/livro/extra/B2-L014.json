@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "She was waiting for an hour when it arrived.",
+"right": "She had been waiting for an hour when it arrived.",
+"why": "Português usa o imperfeito. Para espera que durou até um evento passado: had been + -ing."
+},
+"mcq": [
+{
+"q": "She **___** for an hour when the announcement came.",
+"opts": [
+"has been waiting",
+"was wait",
+"had been waiting"
+],
+"ans": 2,
+"why": "Had been."
+},
+{
+"q": "Evento:",
+"opts": [
+"The announcement had come.",
+"The announcement came.",
+"has come."
+],
+"ans": 1,
+"why": "Passado simples."
+},
+{
+"q": "Cenário anterior:",
+"opts": [
+"had been waiting",
+"waited",
+"waits"
+],
+"ans": 0,
+"why": "Anterior."
+},
+{
+"q": "Negativa:",
+"opts": [
+"wasn’t been waiting",
+"hadn’t been waiting",
+"haven’t been waiting"
+],
+"ans": 1,
+"why": "Hadn’t."
+}
+],
+"fix": [
+{
+"wrong": "She had wait for an hour.",
+"right": "She had been waiting for an hour.",
+"why": "Been -ing."
+},
+{
+"wrong": "She had been waiting when I will arrive.",
+"right": "She had been waiting when I arrived.",
+"why": "Passado."
+},
+{
+"wrong": "They has been waiting.",
+"right": "They had been waiting.",
+"why": "Had."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “She waited for an hour. The announcement came.” (had been)",
+"answer": "She had been waiting for an hour when the announcement came.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She had been waiting.”",
+"answer": "Had she been waiting?",
+"why": ""
+},
+{
+"prompt": "Negativa: “She had been waiting.”",
+"answer": "She hadn’t been waiting.",
+"why": ""
+}
+]
+}

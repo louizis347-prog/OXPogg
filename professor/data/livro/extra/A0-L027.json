@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "plural em -s",
+"wrong": "I have two brother.",
+"right": "I have two brothers.",
+"why": "Em português o plural aparece no artigo (\"os\") e muitas vezes no número; em inglês só o substantivo muda e é obrigatório depois de two."
+},
+"mcq": [
+{
+"q": "Plural of **child**",
+"opts": [
+"childs",
+"childes",
+"children"
+],
+"ans": 2,
+"why": "Irregular."
+},
+{
+"q": "You have a pen. It is ___ pen.",
+"opts": [
+"your",
+"you",
+"yours"
+],
+"ans": 0,
+"why": "Possessivo antes do substantivo: your."
+},
+{
+"q": "Plural far: ___ are birds.",
+"opts": [
+"That",
+"Those",
+"These"
+],
+"ans": 1,
+"why": "Plural longe: those."
+},
+{
+"q": "Adjectives change in the plural?",
+"opts": [
+"Yes: reds apples",
+"Yes: red apple",
+"No: red apples"
+],
+"ans": 2,
+"why": "Adjetivo não varia em inglês."
+}
+],
+"fix": [
+{
+"wrong": "Five womans are here.",
+"right": "Five women are here.",
+"why": "Plural irregular."
+},
+{
+"wrong": "Tom has her phone.",
+"right": "Tom has his phone.",
+"why": "Tom é homem."
+},
+{
+"wrong": "Those is a bird.",
+"right": "That is a bird.",
+"why": "Singular."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com her: “This is Ana’s bag.”",
+"answer": "This is her bag.",
+"why": ""
+},
+{
+"prompt": "Mude para singular: “These are books.”",
+"answer": "This is a book.",
+"why": ""
+},
+{
+"prompt": "Negue: “The sky is gray.” (is not)",
+"answer": "The sky is not gray.",
+"why": ""
+}
+]
+}

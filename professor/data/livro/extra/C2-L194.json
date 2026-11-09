@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "For all of their archaic dress, and not least, a classic rewards re-reading.",
+"right": "For all their archaic dress, a classic rewards re-reading, not least because it changes.",
+"why": "For all não leva of; Not least introduz um motivo importante entre vários."
+},
+"mcq": [
+{
+"q": "Which concessive phrase is correct?",
+"opts": [
+"For all of their archaic dress, …",
+"For all their archaic dress, …",
+"For all archaic their dress, …"
+],
+"ans": 1,
+"why": "For all their."
+},
+{
+"q": "Not least,… introduces…",
+"opts": [
+"a joke",
+"a date",
+"an important reason"
+],
+"ans": 2,
+"why": "Razão importante."
+},
+{
+"q": "A classic ___ re-reading.",
+"opts": [
+"rewards for",
+"rewards to",
+"rewards"
+],
+"ans": 2,
+"why": "Transitivo."
+},
+{
+"q": "In “For all their charm”, for all means…",
+"opts": [
+"for",
+"because",
+"despite"
+],
+"ans": 2,
+"why": "Apesar de."
+}
+],
+"fix": [
+{
+"wrong": "For all of their charm, they bore.",
+"right": "For all their charm, they bore.",
+"why": "Sem of."
+},
+{
+"wrong": "A classic reward re-reading.",
+"right": "A classic rewards re-reading.",
+"why": "-s."
+},
+{
+"wrong": "Not least, because it change us.",
+"right": "Not least, because it changes us.",
+"why": "-s."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “Although they are archaic, classics reward re-reading.”",
+"answer": "For all their archaic dress, classics reward re-reading.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “Above all, it changes.” (not least)",
+"answer": "Not least, it changes.",
+"why": ""
+},
+{
+"prompt": "Singular: “Classics reward re-reading.”",
+"answer": "A classic rewards re-reading.",
+"why": ""
+}
+]
+}

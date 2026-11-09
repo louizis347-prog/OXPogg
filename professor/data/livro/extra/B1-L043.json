@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "get over",
+"wrong": "She got over to lose the game.",
+"right": "She got over losing the game.",
+"why": "Em português “superar perder” aceita infinitivo. Em inglês, get over é verbo preposicionado; o que segue é substantivo ou -ing, nunca to."
+},
+"mcq": [
+{
+"q": "I got ___ the quarrel.",
+"opts": [
+"off",
+"over",
+"on"
+],
+"ans": 1,
+"why": "get over."
+},
+{
+"q": "She got over ___.",
+"opts": [
+"to lose",
+"lose",
+"losing"
+],
+"ans": 2,
+"why": "-ing."
+},
+{
+"q": "“It took a while” means…",
+"opts": [
+"demorou",
+"levou",
+"tirou"
+],
+"ans": 0,
+"why": "Demorou."
+},
+{
+"q": "Get over means…",
+"opts": [
+"superar",
+"passar por cima",
+"pegar"
+],
+"ans": 0,
+"why": "Superar."
+}
+],
+"fix": [
+{
+"wrong": "I got over of my fear.",
+"right": "I got over my fear.",
+"why": "Sem of."
+},
+{
+"wrong": "He got over to lose.",
+"right": "He got over losing.",
+"why": "-ing."
+},
+{
+"wrong": "I get over to it yesterday.",
+"right": "I got over it yesterday.",
+"why": "Passado e sem to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com -ing: “He got over (lose) his job.”",
+"answer": "He got over losing his job.",
+"why": ""
+},
+{
+"prompt": "Reescreva com it: “I got over the quarrel.”",
+"answer": "I got over it.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “She gets over her fear.”",
+"answer": "She got over her fear.",
+"why": ""
+}
+]
+}

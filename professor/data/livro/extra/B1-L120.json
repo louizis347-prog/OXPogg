@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "keep (sentidos)",
+"wrong": "Keep to try. Keep the receipt and keep calmly. Please keep your promise to me.",
+"right": "Keep trying. Keep the receipt and keep calm. Please keep your promise.",
+"why": "Em português “continue tentando” e “mantenha a calma” usam estruturas variadas. Em inglês, keep + -ing (continuar), keep + adjetivo (estado, não advérbio) e keep a promise (cumprir)."
+},
+"mcq": [
+{
+"q": "Keep ___!",
+"opts": [
+"to try",
+"trying",
+"try"
+],
+"ans": 1,
+"why": "keep + -ing."
+},
+{
+"q": "Keep ___.",
+"opts": [
+"calmly",
+"calming",
+"calm"
+],
+"ans": 2,
+"why": "keep + adj."
+},
+{
+"q": "“Keep your receipt” means…",
+"opts": [
+"jogar fora",
+"guardar",
+"pagar"
+],
+"ans": 1,
+"why": "Guardar."
+},
+{
+"q": "To fulfill a vow:",
+"opts": [
+"hold a promise",
+"do a promise",
+"keep a promise"
+],
+"ans": 2,
+"why": "keep a promise."
+}
+],
+"fix": [
+{
+"wrong": "Keep to walk.",
+"right": "Keep walking.",
+"why": "-ing."
+},
+{
+"wrong": "He kept quietly.",
+"right": "He kept quiet.",
+"why": "adjetivo."
+},
+{
+"wrong": "She did her promise.",
+"right": "She kept her promise.",
+"why": "keep."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com keep: “She continues to sing.”",
+"answer": "She keeps singing.",
+"why": ""
+},
+{
+"prompt": "Reescreva com keep + adjetivo: “Stay calm.”",
+"answer": "Keep calm.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “I keep the ticket.”",
+"answer": "I kept the ticket.",
+"why": ""
+}
+]
+}

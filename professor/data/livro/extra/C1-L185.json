@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "will em if",
+"wrong": "Now, if the payoffs will change, the players will cooperate.",
+"right": "Now, if the payoffs change, the players will cooperate.",
+"why": "Em português “se mudarem” usa futuro do subjuntivo e leva o aluno a will. Em inglês, depois de if use presente simples."
+},
+"mcq": [
+{
+"q": "To give an example:",
+"opts": [
+"Therefore…",
+"If so…",
+"For instance…"
+],
+"ans": 2,
+"why": "For instance."
+},
+{
+"q": "To rephrase:",
+"opts": [
+"Let me put it differently",
+"So what",
+"Now"
+],
+"ans": 0,
+"why": "Reformular."
+},
+{
+"q": "“Now, if the payoffs ___, players cooperate.”",
+"opts": [
+"will change",
+"change",
+"changing"
+],
+"ans": 1,
+"why": "Presente."
+},
+{
+"q": "“So what does this tell us?” leads to a...",
+"opts": [
+"date",
+"title",
+"conclusion"
+],
+"ans": 2,
+"why": "Conclusão."
+}
+],
+"fix": [
+{
+"wrong": "If the players will cooperate, both win.",
+"right": "If the players cooperate, both win.",
+"why": "Sem will."
+},
+{
+"wrong": "A rational actor maximize payoff.",
+"right": "A rational actor maximizes payoff.",
+"why": "-s."
+},
+{
+"wrong": "Let me put differently.",
+"right": "Let me put it differently.",
+"why": "it."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva sem will no if: “If the players will cooperate, both win.”",
+"answer": "If the players cooperate, both win.",
+"why": ""
+},
+{
+"prompt": "Reescreva com For instance: “An example: the prisoner’s dilemma.”",
+"answer": "For instance, the prisoner’s dilemma.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Let me: “I say it in a different way.”",
+"answer": "Let me put it differently.",
+"why": ""
+}
+]
+}

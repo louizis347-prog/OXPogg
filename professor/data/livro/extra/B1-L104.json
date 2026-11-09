@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo + -ing / can’t",
+"wrong": "I keep to try, I had repaired my laptop, and it can’t be Leo yesterday.",
+"right": "I keep trying, I had my laptop repaired, and it can't have been Leo yesterday.",
+"why": "Mesmos hábitos do português: infinitivo após keep, “consertei” por contratar e “não pode ser” para o passado. Em inglês: keep + -ing; have + obj + pp; can’t have been."
+},
+"mcq": [
+{
+"q": "Which is correct? (verbo + -ing / can’t)",
+"opts": [
+"She avoids to drive.",
+"She avoids driving.",
+"She avoids drive."
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "Choose the right form:",
+"opts": [
+"I had it repaired.",
+"I had repaired it.",
+"I had it to repair."
+],
+"ans": 0,
+"why": "have + obj + pp."
+},
+{
+"q": "Yesterday it ___ Leo.",
+"opts": [
+"can’t be",
+"can’t have been",
+"can’t were"
+],
+"ans": 1,
+"why": "Passado."
+},
+{
+"q": "She keeps ___.",
+"opts": [
+"to call",
+"call",
+"calling"
+],
+"ans": 2,
+"why": "-ing."
+}
+],
+"fix": [
+{
+"wrong": "She keeps to call.",
+"right": "She keeps calling.",
+"why": "-ing."
+},
+{
+"wrong": "I had repaired my phone (por alguém).",
+"right": "I had my phone repaired.",
+"why": "Ordem."
+},
+{
+"wrong": "It can’t be Mia yesterday.",
+"right": "It can’t have been Mia yesterday.",
+"why": "Passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com keep: “He continues to call.”",
+"answer": "He keeps calling.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “A plumber fixed my sink.” (I had...)",
+"answer": "I had my sink fixed.",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado: “It can’t be Leo.”",
+"answer": "It can't have been Leo.",
+"why": ""
+}
+]
+}

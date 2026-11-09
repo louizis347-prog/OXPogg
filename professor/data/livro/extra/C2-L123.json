@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo frasal",
+"wrong": "He ended shouting and blurted.",
+"right": "He ended up shouting and blurted out an answer.",
+"why": "Português “acabou gritando”; inglês exige end up + -ing, e blurt out leva a partícula."
+},
+"mcq": [
+{
+"q": "Spontaneity phrasal:",
+"opts": [
+"blurted out",
+"blurted",
+"blurted at"
+],
+"ans": 0,
+"why": "blurt out."
+},
+{
+"q": "Which phrase shows the outcome?",
+"opts": [
+"ended up shouting",
+"ended to shout",
+"ended shout"
+],
+"ans": 0,
+"why": "end up -ing."
+},
+{
+"q": "A look that could curdle milk is…",
+"opts": [
+"grammar",
+"sensory detail",
+"a date"
+],
+"ans": 1,
+"why": "Detalhe sensorial."
+},
+{
+"q": "Past of blurt out:",
+"opts": [
+"blurting out",
+"blurted out",
+"blurt outed"
+],
+"ans": 1,
+"why": "Regular."
+}
+],
+"fix": [
+{
+"wrong": "He ended shouting.",
+"right": "He ended up shouting.",
+"why": "up."
+},
+{
+"wrong": "She blurted the answer out loud out.",
+"right": "She blurted out the answer.",
+"why": "blurt out."
+},
+{
+"wrong": "They end up to shout.",
+"right": "They ended up shouting.",
+"why": "-ing e passado."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “He ends up shouting.”",
+"answer": "He ended up shouting.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She blurted out the answer.”",
+"answer": "She did not blurt out the answer.",
+"why": ""
+},
+{
+"prompt": "Plural: “He blurted out an answer.”",
+"answer": "They blurted out an answer.",
+"why": ""
+}
+]
+}

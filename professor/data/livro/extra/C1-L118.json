@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "expected to",
+"wrong": "Three clinics are expected close next year.",
+"right": "Three clinics are expected to close next year.",
+"why": "Em português “espera-se que fechem”. Em inglês, são expected + to + base; não esqueça o to."
+},
+"mcq": [
+{
+"q": "Three clinics are expected ___ close.",
+"opts": [
+"to",
+"for",
+"that"
+],
+"ans": 0,
+"why": "expected to."
+},
+{
+"q": "It is ___ that 12,000 will lose care.",
+"opts": [
+"estimating",
+"estimated",
+"estimate"
+],
+"ans": 1,
+"why": "Particípio."
+},
+{
+"q": "The plan is expected ___ in June.",
+"opts": [
+"starting",
+"start",
+"to start"
+],
+"ans": 2,
+"why": "to + base."
+},
+{
+"q": "Which uses It?",
+"opts": [
+"It is expected that three clinics will close.",
+"Three clinics expected closing.",
+"It expects three clinics close."
+],
+"ans": 0,
+"why": "It is expected that."
+}
+],
+"fix": [
+{
+"wrong": "Three clinics expected to close.",
+"right": "Three clinics are expected to close.",
+"why": "be."
+},
+{
+"wrong": "It is estimate that 12,000 will lose care.",
+"right": "It is estimated that 12,000 will lose care.",
+"why": "Particípio."
+},
+{
+"wrong": "The plan is expected starts in June.",
+"right": "The plan is expected to start in June.",
+"why": "to + base."
+}
+],
+"rewrite": [
+{
+"prompt": "Passiva: “Experts expect three clinics to close.”",
+"answer": "Three clinics are expected to close.",
+"why": ""
+},
+{
+"prompt": "Com It: “Experts estimate that 12,000 will lose care.”",
+"answer": "It is estimated that 12,000 will lose care.",
+"why": ""
+},
+{
+"prompt": "Passiva: “People expect the plan to start in June.”",
+"answer": "The plan is expected to start in June.",
+"why": ""
+}
+]
+}

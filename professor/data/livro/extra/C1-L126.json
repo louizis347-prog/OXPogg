@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "rule out",
+"wrong": "We ruled out of the idea completely.",
+"right": "We ruled the idea out completely.",
+"why": "Em português “descartar de” soa natural. Em inglês, rule out é transitivo: sem of; com pronome, rule it out."
+},
+"mcq": [
+{
+"q": "The board ___ the idea completely.",
+"opts": [
+"ruled up",
+"ruled out",
+"ruled off"
+],
+"ans": 1,
+"why": "rule out."
+},
+{
+"q": "Com pronome: “We ruled ___ .”",
+"opts": [
+"out it",
+"out of it",
+"it out"
+],
+"ans": 2,
+"why": "rule it out."
+},
+{
+"q": "Rule something out significa…",
+"opts": [
+"descartar",
+"aceitar",
+"adiar"
+],
+"ans": 0,
+"why": "Descartar."
+},
+{
+"q": "Narrow down significa…",
+"opts": [
+"trocar",
+"reduzir",
+"aumentar"
+],
+"ans": 1,
+"why": "Reduzir."
+}
+],
+"fix": [
+{
+"wrong": "They ruled out it.",
+"right": "They ruled it out.",
+"why": "Pronome."
+},
+{
+"wrong": "We ruled out of the plan.",
+"right": "We ruled out the plan.",
+"why": "Sem of."
+},
+{
+"wrong": "She narrowed down it to two.",
+"right": "She narrowed it down to two.",
+"why": "Pronome."
+}
+],
+"rewrite": [
+{
+"prompt": "Use rule out: “They discarded the plan.”",
+"answer": "They ruled out the plan.",
+"why": ""
+},
+{
+"prompt": "Com pronome: “They ruled out the plan.” (it)",
+"answer": "They ruled it out.",
+"why": ""
+},
+{
+"prompt": "Use rule out completely: “We discarded the idea entirely.”",
+"answer": "We ruled out the idea completely.",
+"why": ""
+}
+]
+}

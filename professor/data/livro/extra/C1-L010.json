@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem e parallelismo",
+"wrong": "Not only organizes tasks, it also predicts delays.",
+"right": "Not only does it organize tasks, it also predicts delays.",
+"why": "Em português basta “não só organiza, também prevê”. Em inglês, após Not only, é preciso do/does/did antes do sujeito."
+},
+"mcq": [
+{
+"q": "Not only ___ it organize tasks, it also predicts delays.",
+"opts": [
+"is",
+"does",
+"do"
+],
+"ans": 1,
+"why": "Sujeito it: does."
+},
+{
+"q": "Both managers ___ staff attended.",
+"opts": [
+"also",
+"or",
+"and"
+],
+"ans": 2,
+"why": "both…and."
+},
+{
+"q": "Not only ___ the tool predict delays?",
+"opts": [
+"does",
+"is",
+"has"
+],
+"ans": 0,
+"why": "Not only does."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"Not only it organizes, it predicts.",
+"Not only does it organize but also it predicts.",
+"Not only does it organize, it also predicts."
+],
+"ans": 2,
+"why": "Inversão correta."
+}
+],
+"fix": [
+{
+"wrong": "Not only it organizes tasks, it also predicts.",
+"right": "Not only does it organize tasks, it also predicts.",
+"why": "Inversão."
+},
+{
+"wrong": "Both managers or staff attended.",
+"right": "Both managers and staff attended.",
+"why": "both…and."
+},
+{
+"wrong": "Not only does it organizes tasks, it also predicts.",
+"right": "Not only does it organize tasks, it also predicts.",
+"why": "Base após does."
+}
+],
+"rewrite": [
+{
+"prompt": "Comece com Not only: “It organizes tasks and predicts delays.”",
+"answer": "Not only does it organize tasks, it also predicts delays.",
+"why": ""
+},
+{
+"prompt": "Use both…and: “Managers attended. Staff attended.”",
+"answer": "Both managers and staff attended.",
+"why": ""
+},
+{
+"prompt": "Comece com Not only: “She leads and teaches.”",
+"answer": "Not only does she lead, she also teaches.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "th /θ/ e /ð/",
+"wrong": "I sink this is a good idea.",
+"right": "I think this is a good idea.",
+"why": "O português não tem /θ/ e /ð/; o brasileiro substitui por s, t, d ou f, e a palavra escrita muda (think vira sink)."
+},
+"mcq": [
+{
+"q": "“Think” starts with…",
+"opts": [
+"/s/",
+"/t/",
+"/θ/"
+],
+"ans": 2,
+"why": "Língua entre os dentes."
+},
+{
+"q": "“This” starts with…",
+"opts": [
+"/ð/ (voiced)",
+"/s/",
+"/d/"
+],
+"ans": 0,
+"why": "Th sonoro."
+},
+{
+"q": "Which word is “pensar”?",
+"opts": [
+"sink",
+"think",
+"tink"
+],
+"ans": 1,
+"why": "Think."
+},
+{
+"q": "Which word is “afundar”?",
+"opts": [
+"think",
+"sing",
+"sink"
+],
+"ans": 2,
+"why": "Sink."
+}
+],
+"fix": [
+{
+"wrong": "I tink it is good.",
+"right": "I think it is good.",
+"why": "Th."
+},
+{
+"wrong": "Dis is my friend.",
+"right": "This is my friend.",
+"why": "This."
+},
+{
+"wrong": "I sank so. (acho)",
+"right": "I think so.",
+"why": "Think."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque pela palavra “pensar”: “I sink so.”",
+"answer": "I think so.",
+"why": ""
+},
+{
+"prompt": "Escreva corretamente: “Dis is Tom.”",
+"answer": "This is Tom.",
+"why": ""
+},
+{
+"prompt": "Escreva corretamente: “I fink it works.”",
+"answer": "I think it works.",
+"why": ""
+}
+]
+}

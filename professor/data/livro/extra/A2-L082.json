@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "modals/quantifiers",
+"wrong": "You must to wait.",
+"right": "You must wait.",
+"why": "O português insere preposição ou infinitivo; em inglês, modal + base sem to."
+},
+"mcq": [
+{
+"q": "There aren't ___ chairs.",
+"opts": [
+"much",
+"a little",
+"many"
+],
+"ans": 2,
+"why": "many."
+},
+{
+"q": "He ___ wear a helmet. (regra)",
+"opts": [
+"has to",
+"must to",
+"have to"
+],
+"ans": 0,
+"why": "has to."
+},
+{
+"q": "It's ___ expensive for me.",
+"opts": [
+"very much",
+"too",
+"enough"
+],
+"ans": 1,
+"why": "too."
+},
+{
+"q": "She ___ come. It's optional.",
+"opts": [
+"doesn't have to",
+"mustn't",
+"can't"
+],
+"ans": 0,
+"why": "doesn't."
+}
+],
+"fix": [
+{
+"wrong": "There is many water.",
+"right": "There is a lot of water.",
+"why": "incontável."
+},
+{
+"wrong": "He have to go.",
+"right": "He has to go.",
+"why": "has."
+},
+{
+"wrong": "It is enough small.",
+"right": "It is small enough.",
+"why": "depois."
+}
+],
+"rewrite": [
+{
+"prompt": "Negativa: “She has to work.”",
+"answer": "She doesn't have to work.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “You have much money.”",
+"answer": "Do you have much money?",
+"why": ""
+},
+{
+"prompt": "Obrigação: “I go.” com must",
+"answer": "I must go.",
+"why": ""
+}
+]
+}

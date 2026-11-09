@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "sequência de ações",
+"wrong": "I opened the door and was seeing a cat.",
+"right": "I opened the door and saw a cat.",
+"why": "Em português, 'abri a porta e vi um gato' vira continuous por analogia ao imperfeito; ações sequenciais ficam no Past Simple."
+},
+"mcq": [
+{
+"q": "I ___ home and ___ dinner.",
+"opts": [
+"got / cooked",
+"get / cook",
+"was getting / cooking"
+],
+"ans": 0,
+"why": "sequência."
+},
+{
+"q": "At 6 I ___ dinner. (em curso)",
+"opts": [
+"was cooking",
+"cooked",
+"cook"
+],
+"ans": 0,
+"why": "cont."
+},
+{
+"q": "While she ___ , I read.",
+"opts": [
+"was sleeping",
+"slept",
+"sleeps"
+],
+"ans": 0,
+"why": "fundo."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"He was falling while he ran.",
+"He falled while running.",
+"He fell while he was running."
+],
+"ans": 2,
+"why": "fell."
+}
+],
+"fix": [
+{
+"wrong": "I was getting up and ate.",
+"right": "I got up and ate.",
+"why": "sequência."
+},
+{
+"wrong": "He falled.",
+"right": "He fell.",
+"why": "irregular."
+},
+{
+"wrong": "While we ate, we were talking.",
+"right": "While we were eating, we talked.",
+"why": "fundo."
+}
+],
+"rewrite": [
+{
+"prompt": "Junte: “I arrived. I saw Ana.”",
+"answer": "I arrived and saw Ana.",
+"why": ""
+},
+{
+"prompt": "Past simple: “He was falling.” (caiu)",
+"answer": "He fell.",
+"why": ""
+},
+{
+"prompt": "Past continuous: “While I walk, I listen.”",
+"answer": "While I was walking, I was listening.",
+"why": ""
+}
+]
+}

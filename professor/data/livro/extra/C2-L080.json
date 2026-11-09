@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "My opponent said X, but that overlooks to Y.",
+"right": "My opponent said X, but that overlooks Y.",
+"why": "Português “deixa de levar em conta Y”; overlook é transitivo direto."
+},
+"mcq": [
+{
+"q": "Locating the point:",
+"opts": [
+"My opponent said X…",
+"Mine opponent X…",
+"Opponent said X…"
+],
+"ans": 0,
+"why": "My opponent."
+},
+{
+"q": "Refute politely:",
+"opts": [
+"…but that overlooks Y.",
+"…but Y is overlooking.",
+"…but overlook Y."
+],
+"ans": 0,
+"why": "Overlooks."
+},
+{
+"q": "Sustain:",
+"opts": [
+"Costs fall because…",
+"Costs falling because.",
+"Costs because fall."
+],
+"ans": 0,
+"why": "Afirma."
+},
+{
+"q": "Debate signals…",
+"opts": [
+"where I am",
+"a doubt",
+"a joke"
+],
+"ans": 0,
+"why": "Sinalizar."
+}
+],
+"fix": [
+{
+"wrong": "My opponent say X.",
+"right": "My opponent said X.",
+"why": "Passado."
+},
+{
+"wrong": "That overlook Y.",
+"right": "That overlooks Y.",
+"why": "Terceira pessoa."
+},
+{
+"wrong": "My opponent have said X.",
+"right": "My opponent has said X.",
+"why": "Opponent singular: has."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no presente: “My opponent said X.”",
+"answer": "My opponent says X.",
+"why": ""
+},
+{
+"prompt": "Plural: “My opponent says X.”",
+"answer": "My opponents say X.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativo: “That overlooks Y.”",
+"answer": "That does not overlook Y.",
+"why": ""
+}
+]
+}

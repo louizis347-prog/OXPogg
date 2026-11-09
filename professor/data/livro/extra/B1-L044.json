@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem dos fatos",
+"wrong": "When I arrived, the party ended.",
+"right": "When I arrived, the party had ended.",
+"why": "Em português o pretérito perfeito basta e a ordem fica implícita. Em inglês, o fato anterior pede Past Perfect, o segundo Past Simple."
+},
+"mcq": [
+{
+"q": "The party ___ before I arrived.",
+"opts": [
+"ended",
+"has ended",
+"had ended"
+],
+"ans": 2,
+"why": "1º fato."
+},
+{
+"q": "The party ___ when I got there.",
+"opts": [
+"had ended",
+"has ended",
+"ended already"
+],
+"ans": 0,
+"why": "Fato anterior = had ended."
+},
+{
+"q": "Which is the first event?",
+"opts": [
+"She called, then I had eaten.",
+"I had eaten, then she called.",
+"I had called, I ate."
+],
+"ans": 1,
+"why": "had eaten primeiro."
+},
+{
+"q": "Before she left, she ___ the door.",
+"opts": [
+"had locked",
+"locks",
+"has locked"
+],
+"ans": 0,
+"why": "had locked."
+}
+],
+"fix": [
+{
+"wrong": "When I arrived, they already left.",
+"right": "When I arrived, they had already left.",
+"why": "already com had."
+},
+{
+"wrong": "The movie had started when we arrive.",
+"right": "The movie had started when we arrived.",
+"why": "Past Simple."
+},
+{
+"wrong": "She had finish before 5.",
+"right": "She had finished before 5.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Una (1º fato no Past Perfect): “The party ended. I arrived.” (when)",
+"answer": "The party had ended when I arrived.",
+"why": ""
+},
+{
+"prompt": "Reescreva com already: “They left when I arrived.” (antes)",
+"answer": "They had already left when I arrived.",
+"why": ""
+},
+{
+"prompt": "Reescreva negativa: “I had eaten.”",
+"answer": "I hadn't eaten.",
+"why": ""
+}
+]
+}

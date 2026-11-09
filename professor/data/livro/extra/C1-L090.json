@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tom e registro",
+"wrong": "Hey Professor, gimme a meeting.",
+"right": "Dear Professor, I would like to request an appointment.",
+"why": "Em português já distinguimos “você” e “senhor”, mas o brasileiro transfere a informalidade do e-mail. Em inglês, ajuste o tom ao leitor."
+},
+"mcq": [
+{
+"q": "A professor → ",
+"opts": [
+"emoji",
+"formal tone",
+"slang"
+],
+"ans": 1,
+"why": "Formal."
+},
+{
+"q": "Purpose: one ___ request.",
+"opts": [
+"long",
+"vague",
+"clear"
+],
+"ans": 2,
+"why": "Claro."
+},
+{
+"q": "I would like ___ request an appointment.",
+"opts": [
+"to",
+"for",
+"of"
+],
+"ans": 0,
+"why": "to."
+},
+{
+"q": "Which is polite?",
+"opts": [
+"You must answer.",
+"Could you please reply?",
+"Reply now."
+],
+"ans": 1,
+"why": "Polido."
+}
+],
+"fix": [
+{
+"wrong": "I would like request an appointment.",
+"right": "I would like to request an appointment.",
+"why": "to."
+},
+{
+"wrong": "Gimme an appointment.",
+"right": "Could I have an appointment?",
+"why": "Educado."
+},
+{
+"wrong": "Could you replies?",
+"right": "Could you reply?",
+"why": "Base."
+}
+],
+"rewrite": [
+{
+"prompt": "Seja educado: “Reply now.” (Could you…)",
+"answer": "Could you please reply?",
+"why": ""
+},
+{
+"prompt": "Formalize: “I want an appointment.” (I would like…)",
+"answer": "I would like to request an appointment.",
+"why": ""
+},
+{
+"prompt": "Use polite request: “Send me the file.” (Could you…)",
+"answer": "Could you please send me the file?",
+"why": ""
+}
+]
+}

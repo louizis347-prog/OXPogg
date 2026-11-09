@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "conector",
+"wrong": "In my opinion, I think that is true.",
+"right": "In my opinion, it is true.",
+"why": "Duplicar “em minha opinião, eu acho”. In my opinion já marca a opinião."
+},
+"mcq": [
+{
+"q": "Introdução:",
+"opts": [
+"It is often said that…",
+"Is often said…",
+"Often says…"
+],
+"ans": 0,
+"why": "Passiva."
+},
+{
+"q": "Visão 1:",
+"opts": [
+"In one hand,",
+"On the one hand,",
+"At one hand,"
+],
+"ans": 1,
+"why": "Idioma."
+},
+{
+"q": "Opinião:",
+"opts": [
+"In my opinion,",
+"By my opinion,",
+"On my opinion,"
+],
+"ans": 0,
+"why": "In."
+},
+{
+"q": "Conclusão:",
+"opts": [
+"At conclusion,",
+"In conclusion,",
+"On conclude,"
+],
+"ans": 1,
+"why": "In."
+}
+],
+"fix": [
+{
+"wrong": "In the other hand, it is costly.",
+"right": "On the other hand, it is costly.",
+"why": "On the other hand."
+},
+{
+"wrong": "On my opinion, it is true.",
+"right": "In my opinion, it is true.",
+"why": "In."
+},
+{
+"wrong": "It is say that it works.",
+"right": "It is said that it works.",
+"why": "Particípio."
+}
+],
+"rewrite": [
+{
+"prompt": "Abra: “People say that it works.” (It is…)",
+"answer": "It is often said that it works.",
+"why": "Aceita often."
+},
+{
+"prompt": "Complete: “___ the other hand, it costs more.”",
+"answer": "On the other hand, it costs more.",
+"why": ""
+},
+{
+"prompt": "Opinião: “I think it works.” (In my…)",
+"answer": "In my opinion, it works.",
+"why": ""
+}
+]
+}

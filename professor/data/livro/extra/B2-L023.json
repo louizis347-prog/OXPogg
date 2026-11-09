@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "I will walking slow tomorrow.",
+"right": "I will be walking slowly tomorrow.",
+"why": "Faltam be e advérbio: will be + -ing; slowly é advérbio, slow é adjetivo."
+},
+"mcq": [
+{
+"q": "Cut back **___** sugar.",
+"opts": [
+"in",
+"of",
+"on"
+],
+"ans": 2,
+"why": "Cut back on."
+},
+{
+"q": "I **___** walking slowly.",
+"opts": [
+"am be",
+"will be",
+"will"
+],
+"ans": 1,
+"why": "Will be."
+},
+{
+"q": "Qual está correta?",
+"opts": [
+"I’ll be walking slowly.",
+"I’ll walking slowly.",
+"I’ll be walking slow."
+],
+"ans": 0,
+"why": "Advérbio."
+},
+{
+"q": "Cut back on =",
+"opts": [
+"voltar",
+"reduzir",
+"cortar atrás"
+],
+"ans": 1,
+"why": "Reduzir."
+}
+],
+"fix": [
+{
+"wrong": "I will cut back in sugar.",
+"right": "I will cut back on sugar.",
+"why": "On."
+},
+{
+"wrong": "She will be walk slowly.",
+"right": "She will be walking slowly.",
+"why": "-ing."
+},
+{
+"wrong": "He walks slow.",
+"right": "He walks slowly.",
+"why": "Advérbio."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva: “I walk slowly tomorrow.” (will be)",
+"answer": "I will be walking slowly tomorrow.",
+"why": ""
+},
+{
+"prompt": "Negativa: “I will be walking.”",
+"answer": "I won’t be walking.",
+"why": ""
+},
+{
+"prompt": "Reescreva: “I reduce sugar.” (cut back)",
+"answer": "I cut back on sugar.",
+"why": ""
+}
+]
+}

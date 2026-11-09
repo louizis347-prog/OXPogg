@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "preposição",
+"wrong": "Novels give rise debates and give voice of silence.",
+"right": "Novels give rise to debates and give voice to silence.",
+"why": "Português “dar origem a/dar voz a” é igual, mas o brasileiro esquece o to final nas expressões fixas."
+},
+"mcq": [
+{
+"q": "Cause:",
+"opts": [
+"give up to",
+"give in on",
+"give rise to"
+],
+"ans": 2,
+"why": "give rise to."
+},
+{
+"q": "Express:",
+"opts": [
+"give voice of",
+"give voice to",
+"give voice at"
+],
+"ans": 1,
+"why": "to."
+},
+{
+"q": "Yield:",
+"opts": [
+"give way to",
+"give away to",
+"give out to"
+],
+"ans": 0,
+"why": "give way to."
+},
+{
+"q": "Give rise to debates means…",
+"opts": [
+"ends",
+"causes",
+"hides"
+],
+"ans": 1,
+"why": "Causa."
+}
+],
+"fix": [
+{
+"wrong": "It gives rise debate.",
+"right": "It gives rise to debate.",
+"why": "to."
+},
+{
+"wrong": "The poem gives a voice of the poor.",
+"right": "The poem gives voice to the poor.",
+"why": "to."
+},
+{
+"wrong": "Pride gave way of fear.",
+"right": "Pride gave way to fear.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com give rise to: “Novels cause debates.”",
+"answer": "Novels give rise to debates.",
+"why": ""
+},
+{
+"prompt": "Reescreva com give voice to: “The poem expresses the silence.”",
+"answer": "The poem gives voice to the silence.",
+"why": ""
+},
+{
+"prompt": "Passado: “Pride gives way to fear.”",
+"answer": "Pride gave way to fear.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passado: tempo",
+"wrong": "I have seen him yesterday.",
+"right": "I saw him yesterday.",
+"why": "Em português 'tenho visto/vi' se misturam; em inglês, com 'yesterday' só vale Past Simple."
+},
+"mcq": [
+{
+"q": "Last week we ___ a movie.",
+"opts": [
+"saw",
+"see",
+"seen"
+],
+"ans": 0,
+"why": "saw."
+},
+{
+"q": "Passado de **write**: (Past Simple (irregular): practice and contrast)",
+"opts": [
+"writed",
+"wrote",
+"written"
+],
+"ans": 1,
+"why": "wrote."
+},
+{
+"q": "Passado de **leave**: (Past Simple (irregular): practice and contrast)",
+"opts": [
+"left",
+"lefted",
+"leaved"
+],
+"ans": 0,
+"why": "left."
+},
+{
+"q": "Which is correct? (Past Simple (irregular): practice and contrast)",
+"opts": [
+"She comed late.",
+"She come late.",
+"She came late."
+],
+"ans": 2,
+"why": "came."
+}
+],
+"fix": [
+{
+"wrong": "He comed home early.",
+"right": "He came home early.",
+"why": "came."
+},
+{
+"wrong": "I writed a letter.",
+"right": "I wrote a letter.",
+"why": "wrote."
+},
+{
+"wrong": "She leaved at six.",
+"right": "She left at six.",
+"why": "left."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “He comes late.”",
+"answer": "He came late.",
+"why": ""
+},
+{
+"prompt": "Passado: “I write an email.”",
+"answer": "I wrote an email.",
+"why": ""
+},
+{
+"prompt": "Passado: “They leave early.”",
+"answer": "They left early.",
+"why": ""
+}
+]
+}

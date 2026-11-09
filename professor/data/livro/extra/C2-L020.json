@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "repeat to",
+"wrong": "Please repeat me the clearance.",
+"right": "Please say again the clearance.",
+"why": "Em português “repita-me” usa pronome. Em radiofonia, a fraseologia padrão é Say again; repeat não se usa porque pode significar repetir uma ação."
+},
+"mcq": [
+{
+"q": "“Wilco” means...",
+"opts": [
+"message received",
+"negative",
+"I will comply"
+],
+"ans": 2,
+"why": "Cumprirei."
+},
+{
+"q": "“Roger” means...",
+"opts": [
+"message received",
+"I will do it",
+"no"
+],
+"ans": 0,
+"why": "Recebido."
+},
+{
+"q": "“Affirm” means...",
+"opts": [
+"no",
+"yes",
+"wait"
+],
+"ans": 1,
+"why": "Sim."
+},
+{
+"q": "A **readback** is...",
+"opts": [
+"a recording",
+"a prayer",
+"repeating an instruction to confirm"
+],
+"ans": 2,
+"why": "Confirmação."
+}
+],
+"fix": [
+{
+"wrong": "Negative, I cannot to comply.",
+"right": "Negative, I cannot comply.",
+"why": "cannot + base."
+},
+{
+"wrong": "Roger, I will to descend.",
+"right": "Roger, I will descend.",
+"why": "will + base."
+},
+{
+"wrong": "Say again the altitude, please.",
+"right": "Say again the altitude.",
+"why": "Fraseologia padrão."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Say again: “Please repeat.”",
+"answer": "Say again.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Affirm: “Yes.”",
+"answer": "Affirm.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Wilco: “Message received and I will comply.” (Roger, …)",
+"answer": "Roger, wilco.",
+"why": ""
+}
+]
+}

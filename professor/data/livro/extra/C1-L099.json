@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "phrasal narrow down",
+"wrong": "We narrowed down it to three.",
+"right": "We narrowed it down to three.",
+"why": "Com pronome, a partícula vai depois do objeto. O brasileiro mantém a ordem do verbo único."
+},
+"mcq": [
+{
+"q": "We ___ the list down to three.",
+"opts": [
+"narrowed",
+"narrow",
+"narrowing"
+],
+"ans": 0,
+"why": "Passado."
+},
+{
+"q": "Narrow ___ the options.",
+"opts": [
+"off",
+"down",
+"up"
+],
+"ans": 1,
+"why": "down."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"narrow down it",
+"narrow it",
+"narrow it down"
+],
+"ans": 2,
+"why": "Pronome no meio."
+},
+{
+"q": "Narrow down means…",
+"opts": [
+"reduce",
+"expand",
+"ignore"
+],
+"ans": 0,
+"why": "Reduzir."
+}
+],
+"fix": [
+{
+"wrong": "We narrowed down it.",
+"right": "We narrowed it down.",
+"why": "Pronome."
+},
+{
+"wrong": "Narrow the list at three.",
+"right": "Narrow the list down to three.",
+"why": "down to."
+},
+{
+"wrong": "They narrow the options down of two.",
+"right": "They narrowed the options down to two.",
+"why": "to."
+}
+],
+"rewrite": [
+{
+"prompt": "Use narrow down: “We reduced the options.”",
+"answer": "We narrowed down the options.",
+"why": ""
+},
+{
+"prompt": "Com pronome: “We narrowed down the list.” (it)",
+"answer": "We narrowed it down.",
+"why": ""
+},
+{
+"prompt": "Use narrow down to: “Reduce the list to three.”",
+"answer": "Narrow the list down to three.",
+"why": ""
+}
+]
+}

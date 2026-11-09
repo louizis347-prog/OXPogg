@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "passiva biográfica",
+"wrong": "She was borned in London and taught by tutors; her notes are study today.",
+"right": "She was born in London and taught by tutors; her notes are studied today.",
+"why": "Em português “nasceu” é ativo; o brasileiro fabrica borned. Em inglês, was born (irregular) e passivas exigem particípio (studied)."
+},
+"mcq": [
+{
+"q": "She ___ in London.",
+"opts": [
+"was born",
+"borned",
+"born"
+],
+"ans": 0,
+"why": "was born."
+},
+{
+"q": "She ___ by tutors.",
+"opts": [
+"was taught",
+"taught",
+"was teached"
+],
+"ans": 0,
+"why": "was taught."
+},
+{
+"q": "Her notes ___ today.",
+"opts": [
+"study",
+"are study",
+"are studied"
+],
+"ans": 2,
+"why": "pp."
+},
+{
+"q": "Which is correct? (passiva biográfica)",
+"opts": [
+"He educated at home.",
+"He is educate.",
+"He was educated at home."
+],
+"ans": 2,
+"why": "was educated."
+}
+],
+"fix": [
+{
+"wrong": "She was borned in 1900.",
+"right": "She was born in 1900.",
+"why": "born."
+},
+{
+"wrong": "She was teached by tutors.",
+"right": "She was taught by tutors.",
+"why": "taught."
+},
+{
+"wrong": "Her notes are study.",
+"right": "Her notes are studied.",
+"why": "pp."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “Tutors taught her.”",
+"answer": "She was taught by tutors.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva (presente): “People study her notes.”",
+"answer": "Her notes are studied.",
+"why": ""
+},
+{
+"prompt": "Complete: “She ___ in London.” (nascer)",
+"answer": "She was born in London.",
+"why": ""
+}
+]
+}

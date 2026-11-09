@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "how long + presente",
+"wrong": "How long do you use this app? I use it since 2018.",
+"right": "How long have you used this app? I have used it since 2018.",
+"why": "Em português perguntamos “há quanto tempo você usa?” no presente. Em inglês, duração até agora exige Present Perfect (have used)."
+},
+"mcq": [
+{
+"q": "___ have you lived here?",
+"opts": [
+"When",
+"How much",
+"How long"
+],
+"ans": 2,
+"why": "Duração."
+},
+{
+"q": "___ did you start?",
+"opts": [
+"How long",
+"Since when have",
+"When"
+],
+"ans": 2,
+"why": "Ponto no passado = When did."
+},
+{
+"q": "Have you ___ been to Rome?",
+"opts": [
+"ever",
+"already",
+"since"
+],
+"ans": 0,
+"why": "Have you ever."
+},
+{
+"q": "“I started in 2018.” answers…",
+"opts": [
+"How long have you worked?",
+"When did you start?",
+"Have you ever worked?"
+],
+"ans": 1,
+"why": "Past Simple responde When did."
+}
+],
+"fix": [
+{
+"wrong": "When have you started?",
+"right": "When did you start?",
+"why": "When pede Past Simple."
+},
+{
+"wrong": "I am here since 9 o'clock.",
+"right": "I have been here since 9 o'clock.",
+"why": "since com Present Perfect."
+},
+{
+"wrong": "Did you ever eat sushi?",
+"right": "Have you ever eaten sushi?",
+"why": "Experiência de vida: Present Perfect."
+}
+],
+"rewrite": [
+{
+"prompt": "Faça a pergunta: “You have used it for two years.” (How long)",
+"answer": "How long have you used it?",
+"why": ""
+},
+{
+"prompt": "Reescreva no passado simples com last year: “Have you been to Paris?”",
+"answer": "Did you go to Paris last year?",
+"why": ""
+},
+{
+"prompt": "Pergunte When: “I started in 2018.”",
+"answer": "When did you start?",
+"why": ""
+}
+]
+}

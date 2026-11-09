@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be + -ing futuro",
+"wrong": "We having a party Saturday.",
+"right": "We're having a party on Saturday.",
+"why": "O português usa o presente para planos; o aluno omite o be e a preposição on antes do dia."
+},
+"mcq": [
+{
+"q": "What ___ you doing on Friday?",
+"opts": [
+"do",
+"will",
+"are"
+],
+"ans": 2,
+"why": "be."
+},
+{
+"q": "We're meeting ___ Monday.",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 2,
+"why": "on + dia."
+},
+{
+"q": "She ___ leaving tonight.",
+"opts": [
+"does",
+"will",
+"is"
+],
+"ans": 2,
+"why": "is."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"I don't working tomorrow.",
+"I not working tomorrow.",
+"I'm not working tomorrow."
+],
+"ans": 2,
+"why": "be not."
+}
+],
+"fix": [
+{
+"wrong": "We're meeting in Monday.",
+"right": "We're meeting on Monday.",
+"why": "on."
+},
+{
+"wrong": "He leaving tonight.",
+"right": "He's leaving tonight.",
+"why": "be."
+},
+{
+"wrong": "I'm not go tomorrow.",
+"right": "I'm not going tomorrow.",
+"why": "-ing."
+}
+],
+"rewrite": [
+{
+"prompt": "Futuro marcado: “I fly on Tuesday.”",
+"answer": "I'm flying on Tuesday.",
+"why": ""
+},
+{
+"prompt": "Pergunta: “She is meeting Ana.”",
+"answer": "Is she meeting Ana?",
+"why": ""
+},
+{
+"prompt": "Negativa: “We are working Friday.”",
+"answer": "We aren't working Friday.",
+"why": ""
+}
+]
+}

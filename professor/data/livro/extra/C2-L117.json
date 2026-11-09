@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "ordem das palavras",
+"wrong": "like a coat what someone left behind",
+"right": "like a coat that someone left behind",
+"why": "Português usa “que” ou “o que”; inglês usa that/which em relativa restritiva."
+},
+"mcq": [
+{
+"q": "Which line is a simile with a relative clause?",
+"opts": [
+"a coat",
+"like a coat that someone left behind",
+"coat like"
+],
+"ans": 1,
+"why": "like."
+},
+{
+"q": "Which line is a direct metaphor?",
+"opts": [
+"as a seed",
+"a seed of breath",
+"like a seed of breath"
+],
+"ans": 1,
+"why": "Sem like."
+},
+{
+"q": "Fusion:",
+"opts": [
+"borrowing wing",
+"wing borrow",
+"a borrowed wing"
+],
+"ans": 2,
+"why": "Particípio."
+},
+{
+"q": "What marks a simile?",
+"opts": [
+"only was",
+"like or as",
+"only is"
+],
+"ans": 1,
+"why": "like."
+}
+],
+"fix": [
+{
+"wrong": "It is as a coat.",
+"right": "It is like a coat.",
+"why": "like."
+},
+{
+"wrong": "A coat what someone left.",
+"right": "A coat that someone left.",
+"why": "that."
+},
+{
+"wrong": "A seed from breath.",
+"right": "A seed of breath.",
+"why": "of."
+}
+],
+"rewrite": [
+{
+"prompt": "Simile: “The silence is a coat.”",
+"answer": "The silence is like a coat.",
+"why": ""
+},
+{
+"prompt": "Metáfora: “It is like a seed.”",
+"answer": "It is a seed.",
+"why": ""
+},
+{
+"prompt": "Passado: “Someone leaves a coat.”",
+"answer": "Someone left a coat.",
+"why": ""
+}
+]
+}

@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "zero: when/if",
+"wrong": "When I am hungry I will eat.",
+"right": "When I'm hungry, I eat.",
+"why": "Em português 'quando eu estiver com fome, comerei' usa futuro; no zero conditional é presente + presente (fatos gerais)."
+},
+"mcq": [
+{
+"q": "When it's cold, I ___ a coat.",
+"opts": [
+"wore",
+"will wear",
+"wear"
+],
+"ans": 2,
+"why": "presente."
+},
+{
+"q": "If you press this, it ___ .",
+"opts": [
+"opened",
+"will open",
+"opens"
+],
+"ans": 2,
+"why": "presente."
+},
+{
+"q": "He ___ coffee when he's tired.",
+"opts": [
+"will drink",
+"drinks",
+"drank"
+],
+"ans": 1,
+"why": "presente."
+},
+{
+"q": "Qual está certa?",
+"opts": [
+"If I eat late, I feel sick.",
+"If I ate late, I feel sick.",
+"If I will eat late, I feel sick."
+],
+"ans": 0,
+"why": "presente."
+}
+],
+"fix": [
+{
+"wrong": "When I will wake up, I drink water.",
+"right": "When I wake up, I drink water.",
+"why": "sem will."
+},
+{
+"wrong": "If she study, she passes.",
+"right": "If she studies, she passes.",
+"why": "studies."
+},
+{
+"wrong": "When it rains, I stayed home.",
+"right": "When it rains, I stay home.",
+"why": "presente."
+}
+],
+"rewrite": [
+{
+"prompt": "Una com when: “It's cold. I wear a coat.”",
+"answer": "When it's cold, I wear a coat.",
+"why": ""
+},
+{
+"prompt": "Inverta: “I wear a coat if it's cold.”",
+"answer": "If it's cold, I wear a coat.",
+"why": ""
+},
+{
+"prompt": "Negativa: “If you eat, you get sick.” (não come)",
+"answer": "If you don't eat, you get sick.",
+"why": ""
+}
+]
+}

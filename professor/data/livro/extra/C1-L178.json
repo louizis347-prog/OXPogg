@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "no final",
+"wrong": "At the final, the speaker lists the last number.",
+"right": "Finally, the speaker lists the last number.",
+"why": "Em português “no final” traduz-se literalmente. Em inglês, para a última etapa use Finally ou Last; the final é um substantivo/adjetivo (a final)."
+},
+"mcq": [
+{
+"q": "Which starts a sequence?",
+"opts": [
+"Finally",
+"First",
+"Last"
+],
+"ans": 1,
+"why": "First."
+},
+{
+"q": "Which means the **last** step?",
+"opts": [
+"Next",
+"Then",
+"Finally"
+],
+"ans": 2,
+"why": "Finally."
+},
+{
+"q": "“After ___, note the number.”",
+"opts": [
+"that",
+"the final",
+"finally"
+],
+"ans": 0,
+"why": "After that."
+},
+{
+"q": "Which instruction is punctuated correctly?",
+"opts": [
+"To begin listen the date.",
+"To begin, listen for the date.",
+"To begin to listening date."
+],
+"ans": 1,
+"why": "To begin + vírgula."
+}
+],
+"fix": [
+{
+"wrong": "At the final, write the answer.",
+"right": "Finally, write the answer.",
+"why": "Finally."
+},
+{
+"wrong": "Next, listening for the number.",
+"right": "Next, listen for the number.",
+"why": "Imperativo."
+},
+{
+"wrong": "First, to read the instructions.",
+"right": "First, read the instructions.",
+"why": "Imperativo."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva com Finally: “At the end, write the answer.”",
+"answer": "Finally, write the answer.",
+"why": ""
+},
+{
+"prompt": "Reescreva com Then, sem vírgula: “After that, circle the number.”",
+"answer": "Then circle the number.",
+"why": ""
+},
+{
+"prompt": "Reescreva com First: “To begin, read the script.”",
+"answer": "First, read the script.",
+"why": ""
+}
+]
+}

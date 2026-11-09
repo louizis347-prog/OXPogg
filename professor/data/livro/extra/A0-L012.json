@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "contração em resposta curta",
+"wrong": "Are you ready? — Yes, I’m.",
+"right": "Are you ready? — Yes, I am.",
+"why": "No “yes” a forma completa é obrigatória; não se contrai no final da frase."
+},
+"mcq": [
+{
+"q": "Short form of “are not”",
+"opts": [
+"arn’t",
+"are’nt",
+"aren’t"
+],
+"ans": 2,
+"why": "aren’t."
+},
+{
+"q": "Which is correct?",
+"opts": [
+"I’m not tired.",
+"Im not tired.",
+"I’am not tired."
+],
+"ans": 0,
+"why": "I’m."
+},
+{
+"q": "Yes, he ___ (short answer)",
+"opts": [
+"’s",
+"is",
+"are"
+],
+"ans": 1,
+"why": "Em sim, usa-se a forma completa."
+},
+{
+"q": "“They’re” =",
+"opts": [
+"their",
+"there",
+"they are"
+],
+"ans": 2,
+"why": "They’re = they are."
+}
+],
+"fix": [
+{
+"wrong": "She isnt here.",
+"right": "She isn’t here.",
+"why": "Falta o apóstrofo."
+},
+{
+"wrong": "Yes, she’s.",
+"right": "Yes, she is.",
+"why": "Sem contração em resposta afirmativa."
+},
+{
+"wrong": "Were friends.",
+"right": "We’re friends.",
+"why": "We’re com apóstrofo."
+}
+],
+"rewrite": [
+{
+"prompt": "Use contração: “They are happy.”",
+"answer": "They’re happy.",
+"why": ""
+},
+{
+"prompt": "Use contração com isn’t: “She is not here.”",
+"answer": "She isn’t here.",
+"why": ""
+},
+{
+"prompt": "Use contração com aren’t: “We are not late.”",
+"answer": "We aren’t late.",
+"why": ""
+}
+]
+}

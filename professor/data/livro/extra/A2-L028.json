@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "classe de palavra",
+"wrong": "He is very action.",
+"right": "He is very active.",
+"why": "Em português ação/ativo/ativamente mudam o final, mas o aluno cola o substantivo onde caberia o adjetivo."
+},
+"mcq": [
+{
+"q": "She is an ___ girl. (adjetivo)",
+"opts": [
+"actively",
+"active",
+"action"
+],
+"ans": 1,
+"why": "adjetivo."
+},
+{
+"q": "He works ___ .",
+"opts": [
+"activity",
+"active",
+"actively"
+],
+"ans": 2,
+"why": "advérbio."
+},
+{
+"q": "A great ___ for kids:",
+"opts": [
+"active",
+"actively",
+"activity"
+],
+"ans": 2,
+"why": "substantivo."
+},
+{
+"q": "Take ___ now!",
+"opts": [
+"action",
+"active",
+"actively"
+],
+"ans": 0,
+"why": "substantivo."
+}
+],
+"fix": [
+{
+"wrong": "She is action.",
+"right": "She is active.",
+"why": "adjetivo."
+},
+{
+"wrong": "He acts very active.",
+"right": "He acts very actively.",
+"why": "advérbio."
+},
+{
+"wrong": "It is a fun active.",
+"right": "It is a fun activity.",
+"why": "substantivo."
+}
+],
+"rewrite": [
+{
+"prompt": "Troque por adjetivo: “She has action.”",
+"answer": "She is active.",
+"why": ""
+},
+{
+"prompt": "Troque por advérbio: “He works with action.”",
+"answer": "He works actively.",
+"why": ""
+},
+{
+"prompt": "Substantivo: “It is fun to be active.” → “It is a fun ___.”",
+"answer": "It is a fun activity.",
+"why": ""
+}
+]
+}

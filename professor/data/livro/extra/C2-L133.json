@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "tempo verbal",
+"wrong": "She has left Germany in 1933.",
+"right": "She left Germany in 1933.",
+"why": "Português usa “tem saído” de modo livre; com data passada, inglês exige passado simples."
+},
+"mcq": [
+{
+"q": "Dated event:",
+"opts": [
+"She leaves in 1933.",
+"She left Germany in 1933.",
+"She has left in 1933."
+],
+"ans": 1,
+"why": "Passado."
+},
+{
+"q": "Present participle:",
+"opts": [
+"complete her doctorate, she…",
+"completing her doctorate, she…",
+"completed her, she…"
+],
+"ans": 1,
+"why": "-ing."
+},
+{
+"q": "1933 preposition:",
+"opts": [
+"at",
+"in",
+"on"
+],
+"ans": 1,
+"why": "in."
+},
+{
+"q": "Participle clause shows…",
+"opts": [
+"future",
+"negative",
+"simultaneous action"
+],
+"ans": 2,
+"why": "Simultâneo."
+}
+],
+"fix": [
+{
+"wrong": "She has left in 1933.",
+"right": "She left in 1933.",
+"why": "Passado."
+},
+{
+"wrong": "Complete her doctorate, she moved.",
+"right": "Completing her doctorate, she moved.",
+"why": "-ing."
+},
+{
+"wrong": "She leaved Germany.",
+"right": "She left Germany.",
+"why": "Irregular."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “She leaves Germany in 1933.”",
+"answer": "She left Germany in 1933.",
+"why": ""
+},
+{
+"prompt": "Una com -ing: “She completed her doctorate. She moved.”",
+"answer": "Completing her doctorate, she moved.",
+"why": ""
+},
+{
+"prompt": "Negativo: “She left in 1933.”",
+"answer": "She did not leave in 1933.",
+"why": ""
+}
+]
+}

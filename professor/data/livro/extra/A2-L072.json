@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "put = pôr/vestir",
+"wrong": "I put my coat off.",
+"right": "I took off my coat.",
+"why": "Em português 'colocar/tirar' cobre as ideias; em inglês put on = vestir e take off = tirar. Put é passado igual ao presente."
+},
+"mcq": [
+{
+"q": "Put ___ your coat. It's cold.",
+"opts": [
+"off",
+"on",
+"in"
+],
+"ans": 1,
+"why": "put on."
+},
+{
+"q": "Passado de put:",
+"opts": [
+"puted",
+"putted",
+"put"
+],
+"ans": 2,
+"why": "put."
+},
+{
+"q": "Please ___ the book on the table.",
+"opts": [
+"puts to",
+"putted",
+"put"
+],
+"ans": 2,
+"why": "put."
+},
+{
+"q": "Put your phone ___ . (guarde)",
+"opts": [
+"at",
+"on",
+"away"
+],
+"ans": 2,
+"why": "put away."
+}
+],
+"fix": [
+{
+"wrong": "I putted my keys here.",
+"right": "I put my keys here.",
+"why": "put."
+},
+{
+"wrong": "Put your shoes of.",
+"right": "Take off your shoes.",
+"why": "take off."
+},
+{
+"wrong": "She put in her hat.",
+"right": "She put on her hat.",
+"why": "on."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “I put it away.”",
+"answer": "I put it away.",
+"why": ""
+},
+{
+"prompt": "Peça: “Tire o casaco: coat / Take / off / your”",
+"answer": "Take off your coat.",
+"why": ""
+},
+{
+"prompt": "Reescreva com on: “She puts a hat.”",
+"answer": "She puts on a hat.",
+"why": ""
+}
+]
+}

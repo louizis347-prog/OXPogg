@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "verbo polissêmico",
+"wrong": "Bring me to the station.",
+"right": "Take me to the station.",
+"why": "Em português “trazer” e “levar” se confundem. Bring = trazer para onde o falante está; take = levar para outro lugar."
+},
+"mcq": [
+{
+"q": "Bring a friend =",
+"opts": [
+"traga",
+"pegue",
+"leve"
+],
+"ans": 0,
+"why": "Para cá."
+},
+{
+"q": "Bring **joy** =",
+"opts": [
+"vender",
+"levar",
+"causar"
+],
+"ans": 2,
+"why": "Causar."
+},
+{
+"q": "Take me to the airport:",
+"opts": [
+"leve-me",
+"traga-me",
+"pegue-me"
+],
+"ans": 0,
+"why": "Take = levar."
+},
+{
+"q": "Bring about change:",
+"opts": [
+"trazer troco",
+"levar mudança",
+"causar mudança"
+],
+"ans": 2,
+"why": "Causar."
+}
+],
+"fix": [
+{
+"wrong": "Please bring me to the airport.",
+"right": "Please take me to the airport.",
+"why": "Take."
+},
+{
+"wrong": "She brang a friend.",
+"right": "She brought a friend.",
+"why": "Irregular."
+},
+{
+"wrong": "Bring your homework to there.",
+"right": "Take your homework there.",
+"why": "Direção oposta."
+}
+],
+"rewrite": [
+{
+"prompt": "Passado: “She brings a friend.”",
+"answer": "She brought a friend.",
+"why": ""
+},
+{
+"prompt": "Negativa: “He brought a gift.”",
+"answer": "He didn’t bring a gift.",
+"why": ""
+},
+{
+"prompt": "Troque bring por take: “Bring this to Ana.” (there)",
+"answer": "Take this to Ana.",
+"why": ""
+}
+]
+}

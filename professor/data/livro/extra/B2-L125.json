@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "be + particípio",
+"wrong": "The report is writing now.",
+"right": "The report is being written now.",
+"why": "O português usa \"está sendo escrito\" mas o aluno cola o gerúndio sozinho. Use is being + particípio."
+},
+"mcq": [
+{
+"q": "Complete: The bridge **has ___** repaired.",
+"opts": [
+"being",
+"be",
+"been"
+],
+"ans": 2,
+"why": "has been + particípio."
+},
+{
+"q": "Qual é a passiva de \"They will build a school\"?",
+"opts": [
+"A school will be built.",
+"A school will build.",
+"A school will be build."
+],
+"ans": 0,
+"why": "will be + particípio."
+},
+{
+"q": "Qual NÃO é passiva?",
+"opts": [
+"It was opened by the mayor.",
+"The mayor opened it.",
+"It is opened every day."
+],
+"ans": 1,
+"why": "A primeira é ativa."
+},
+{
+"q": "Qual é passiva no presente contínuo?",
+"opts": [
+"The road is being repaired.",
+"The road is repairing.",
+"The road repaired."
+],
+"ans": 0,
+"why": "is being + particípio."
+}
+],
+"fix": [
+{
+"wrong": "It say that he left.",
+"right": "It is said that he left.",
+"why": "Passiva impessoal."
+},
+{
+"wrong": "The house built in 1990.",
+"right": "The house was built in 1990.",
+"why": "Falta was."
+},
+{
+"wrong": "The rules will be changing next year.",
+"right": "The rules will be changed next year.",
+"why": "Passiva: be + particípio, não gerúndio."
+}
+],
+"rewrite": [
+{
+"prompt": "Passe para a passiva: “They have sold the house.”",
+"answer": "The house has been sold.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva com by: “A student wrote the report.”",
+"answer": "The report was written by a student.",
+"why": ""
+},
+{
+"prompt": "Passe para a passiva: “They will announce the winner.”",
+"answer": "The winner will be announced.",
+"why": ""
+}
+]
+}

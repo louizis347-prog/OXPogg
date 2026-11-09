@@ -1,0 +1,84 @@
+{
+"trap": {
+"label": "incontável",
+"wrong": "These informations about the server farm are useful.",
+"right": "This information about the server farm is useful.",
+"why": "Em português “informações” é contável no plural. Em inglês, information é incontável: sem -s e com verbo singular."
+},
+"mcq": [
+{
+"q": "For lay readers, use...",
+"opts": [
+"short analogies",
+"dense abbreviations",
+"passive only"
+],
+"ans": 0,
+"why": "Leigos."
+},
+{
+"q": "A mixed audience gets...",
+"opts": [
+"no terms",
+"term plus parenthetical explanation",
+"only numbers"
+],
+"ans": 1,
+"why": "Termo + explicação."
+},
+{
+"q": "Avoid in explanations:",
+"opts": [
+"for example",
+"in short",
+"obviously"
+],
+"ans": 2,
+"why": "Evite obviously."
+},
+{
+"q": "“On-demand provisioning” is...",
+"opts": [
+"resources allocated when needed",
+"a paper form",
+"a bill"
+],
+"ans": 0,
+"why": "Provisionamento sob demanda."
+}
+],
+"fix": [
+{
+"wrong": "The distributed system need more capacity.",
+"right": "The distributed system needs more capacity.",
+"why": "-s."
+},
+{
+"wrong": "Obviously, the setup is simply.",
+"right": "Obviously, the setup is simple.",
+"why": "Adjetivo."
+},
+{
+"wrong": "Some advices help non-experts.",
+"right": "Some advice helps non-experts.",
+"why": "incontável."
+}
+],
+"rewrite": [
+{
+"prompt": "Reescreva no singular: “These informations are useful.”",
+"answer": "This information is useful.",
+"why": ""
+},
+{
+"prompt": "Reescreva com parêntese: “API means application programming interface.” (API (…))",
+"answer": "API (application programming interface)",
+"why": "Copie o termo com parêntese."
+},
+{
+"prompt": "Reescreva sem simply: “Simply restart the server.”",
+"answer": "Restart the server.",
+"why": ""
+}
+]
+}
