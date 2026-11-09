@@ -1,0 +1,57 @@
+/* Páginas de curso e aula ao vivo no mesmo visual da landing (creme, contornos, sombras deslocadas) */
+:root{--bg:#FFF3D6;--bg2:#fff;--ink:#14183a;--mut:#4a527f;--line:#14183a;--glass:#fff;--pri:#FFC93C;--pri2:#FF6B4A;--ok:#12A39A}
+html,body{background:#FFF3D6!important;color:#14183a!important;font-weight:600}
+a{color:inherit}
+h1,h2,h3,h4{color:#14183a!important}
+h1 em,h2 em{background:#FF6B4A!important;-webkit-background-clip:initial!important;background-clip:initial!important;color:#fff!important;padding:0 .25em;border-radius:12px;display:inline-block;transform:rotate(-1.5deg);border:3px solid #14183a;box-shadow:3px 3px 0 #14183a}
+/* barras */
+.cs-top,.lv-top{background:#FFF3D6!important;backdrop-filter:none!important;border-bottom:3px solid #14183a!important}
+.cs-logo,.lv-logo{color:#14183a!important}.cs-logo b,.lv-wm b{color:#FF6B4A!important}
+.cs-logo span,.lv-mark{background:#FFC93C!important;color:#14183a!important;border:3px solid #14183a}
+.cs-top nav a,.lv-nav a,.lv-ghost{color:#14183a!important;background:#fff;border:3px solid #14183a!important;box-shadow:3px 3px 0 #14183a;font-weight:800}
+.cs-top nav a.on{background:#FF6B4A!important;color:#fff!important}
+.cs-top nav a:hover,.lv-nav a:hover,.lv-ghost:hover{background:#FFE08A!important}
+/* botões */
+.cs-go,.lv-btn{background:#FFC93C!important;color:#14183a!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a!important;font-weight:800}
+.cs-go:hover,.lv-btn:hover{transform:translate(-2px,-2px)}
+.cs-ghost{background:#fff;color:#14183a!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a}
+/* curso: hero e blocos */
+.cs-hero{background:var(--a);border:4px solid #14183a;border-radius:32px;box-shadow:8px 8px 0 #14183a;margin-top:22px;padding:40px 18px 28px!important}
+.cs-hero h1,.cs-hero>p{color:#fff!important}.cs-hero h1 em{background:#FFC93C!important;color:#14183a!important}
+.cs-orb{background:#fff!important;border:4px solid #14183a;box-shadow:6px 6px 0 #14183a!important;animation:csfl 3.4s ease-in-out infinite}
+.cs-eye{background:#fff!important;color:#14183a!important;border:3px solid #14183a!important}
+.cs-nums div{background:#fff!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a}.cs-nums b{color:var(--a)!important}.cs-nums span{color:#14183a!important}
+.cs-sub{color:#4a527f!important}
+.cs-who li,.cs-lvt,.cs-demo,.cs-faq details{background:#fff!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a;color:#14183a!important}
+.cs-who li::before{background:var(--a)!important;color:#fff!important;border:2px solid #14183a}
+.cs-tab{background:#fff!important;border:3px solid #14183a!important;box-shadow:3px 3px 0 #14183a;color:#14183a!important}
+.cs-tab.on{background:var(--b)!important;transform:translateX(4px)}
+.cs-card{background:#fff!important;border:4px solid #14183a!important;box-shadow:6px 6px 0 #14183a;color:#14183a!important}
+.cs-card small{color:var(--a)!important}.cs-card p{color:#2b3160!important}.cs-card .ex{background:#FFF3D6!important;border:3px dashed #14183a!important;color:#14183a!important}
+.bub{background:#FFE08A!important;color:#14183a}.bub b{color:var(--a)}
+.opts button{background:#fff!important;border:3px solid #14183a!important;color:#14183a!important;box-shadow:3px 3px 0 #14183a}.opts button:hover,.opts button.sel{background:#FFC93C!important}
+.out{background:#FFF3D6!important;color:#14183a!important;border:3px solid #14183a}
+.cs-lv button{background:#fff!important;border:3px solid #14183a!important;color:#14183a!important;box-shadow:3px 3px 0 #14183a}.cs-lv button.on{background:var(--b)!important}
+.cs-get{background:var(--a)!important;border:4px solid #14183a!important;box-shadow:6px 6px 0 #14183a;color:#fff}.cs-get p,.cs-get b{color:#fff!important}
+.cs-faq p{color:#2b3160!important}
+.cs-cta{background:#FF6B4A!important;border:4px solid #14183a!important;box-shadow:8px 8px 0 #14183a}.cs-cta h2,.cs-cta p{color:#fff!important}
+.cs-foot,.cs-foot a{color:#14183a!important}.cs-foot a{background:#fff;border:2px solid #14183a}
+/* aula ao vivo */
+.lv-hero p,.lv-sec p,.lv-g p,.lv-fine,.lv-note{color:#2b3160!important}
+.lv-chips li,.lv-tz,.lv-note{background:#fff!important;border:3px solid #14183a!important;color:#14183a!important;box-shadow:3px 3px 0 #14183a}
+.lv-eyebrow{background:#fff!important;color:#14183a!important;border:3px solid #14183a!important}
+.lv-g,.lv-s,.lv-card,.lv-link,.lv-load{background:#fff!important;border:4px solid #14183a!important;box-shadow:6px 6px 0 #14183a!important;color:#14183a!important}
+.lv-g:hover,.lv-s:hover{transform:translate(-2px,-2px)}
+.lv-g *,.lv-s *,.lv-card *{color:inherit}.lv-s.full{opacity:.55}
+.lv-card input{background:#FFF3D6!important;border:3px solid #14183a!important;color:#14183a!important}
+.lv-modal{background:rgba(20,24,58,.6)!important}
+.lv-err{color:#c0182f!important}
+.lv-foot{color:#14183a!important}
+.lv-gn,.lv-gn b{color:#14183a!important;border-top:3px solid #14183a!important}
+.lv-gt small{color:var(--c,#2b3160)!important;filter:brightness(.6) saturate(1.4)}
+.lv-foot a{color:#FF6B4A!important;font-weight:800}.lv-foot{border-top:3px solid #14183a!important}
+.lv-d,.lv-i,.lv-v,.lv-lz{color:#14183a!important}
+.lv-g.on,.lv-s.on{background:#FFE08A!important}
+.lv-d{background:#FFC93C!important;border:3px solid #14183a;box-shadow:3px 3px 0 #14183a}
+.lv-d *{color:#14183a!important}
+.lv-tz select,.lv-tz{color:#14183a!important;background:#fff!important}
