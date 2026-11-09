@@ -28,7 +28,7 @@ D.verbplay=function(p,b,art,A){var its=p.items||[],k=0,ok=0,m=shell(b,art);
   draw()};
 /* ---- expressões comuns ---- */
 D.exprs=function(p,b,art,A){var its=p.items||[],m=shell(b,art),n=0;
-  m.innerHTML='<div class="q1-card q1v-ex"><span class="q1-eyebrow">Expressões comuns · toque para ouvir</span><div class="q1v-exg">'+its.map(function(x,i){return '<button type="button" class="q1v-exc c-'+H(x.c)+'" data-i="'+i+'"><b>'+H(x.en)+'</b><span>'+H(x.pt)+'</span><small>'+H(x.ex)+'</small><em>'+H(x.exp)+'</em></button>'}).join('')+'</div></div>';
+  m.innerHTML='<div class="q1-card q1v-ex"><span class="q1-eyebrow">Expressões comuns · toque para ouvir</span><div class="q1v-exg">'+its.map(function(x,i){return '<button type="button" class="q1v-exc c-'+H(x.c)+'" data-i="'+i+'"><b>'+H(x.en)+(x.reg?' <i class="q1v-reg r-'+H(x.reg)+'">'+H(x.reg)+'</i>':'')+'</b><span>'+H(x.pt)+'</span><small>'+H(x.ex)+'</small><em>'+H(x.exp)+'</em></button>'}).join('')+'</div></div>';
   $$(b,'.q1v-exc').forEach(function(x){x.onclick=function(e){var it=its[+x.dataset.i];A.say(it.en);if(!x.classList.contains('on')){x.classList.add('on');n++;try{A.gain(3,true,e)}catch(z){}if(n>=its.length)A.mark()}}});A.mark()};
 D.exprplay=function(p,b,art,A){var its=p.items||[],k=0,m=shell(b,art);
   function draw(){if(k>=its.length){m.innerHTML='<div class="q1-card q1v-vp"><span class="q1-eyebrow">Qual expressão usar?</span><h3>🎉 Você escolheu a expressão certa para cada situação!</h3></div>';try{A.confetti();A.mark()}catch(z){}return}

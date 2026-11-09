@@ -66,7 +66,7 @@ DECOR.dialog=function(p,b,art,A){FACES=p.faces||FACES;var data=p.swaps||DLG[p.ti
 DECOR.choice=function(p,b,art,A){split(b,art)};
 function topRow(b,art){var intro=$('.q1-intro',b),row=document.createElement('div');row.className='q1v-top';var t=document.createElement('div');t.className='q1v-topt';if(intro)t.appendChild(intro);row.appendChild(t);row.appendChild(heroEl(art));b.insertBefore(row,b.firstChild)}
 /* ===== 25–26 · toque, ouça e diga uma frase sua (microfone) ===== */
-DECOR.vocab=function(p,b,art,A){var cards=$$(b,'.q1-vocab .q1-card'),n=0;cards.forEach(function(c,i){var w=p.words[i];if(w&&w[5]){var ic=$('.q1-vocab-icon',c);if(ic)ic.innerHTML='<span style="font-size:30px;line-height:1">'+H(w[5])+'</span>'}});
+DECOR.vocab=function(p,b,art,A){var cards=$$(b,'.q1-vocab .q1-card'),n=0;cards.forEach(function(c,i){var w=p.words[i];if(w&&w[5]){var ic=$('.q1-vocab-icon:not(.q1-vph)',c);if(ic)ic.innerHTML='<span style="font-size:30px;line-height:1">'+H(w[5])+'</span>'}});
   cards.forEach(function(c,i){var w=(p.words[i]||[])[0];if(!w)return;var h=document.createElement('div');h.className='q1v-say';c.appendChild(h);micSay(h,w,A,function(){c.classList.add('done');n++;if(n>=cards.length){A.confetti();A.mark()}})});
   topRow(b,art)};
 /* ===== 27, 28, 33 · molde que muda: cena + palavras que trocam + ouvir + falar ===== */

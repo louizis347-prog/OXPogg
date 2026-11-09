@@ -26,6 +26,10 @@ window.RL_REGISTER=function(R,A){
   '<path d="M0 0h800v450H0z" fill="none" stroke="#2b1d3a" stroke-width="12"/></svg></div>'}
  function intro(text){return '<p class="q1-intro">'+H(text||'')+'</p>'}
  function card(inner,extra){return '<div class="q1-card '+(extra||'')+'">'+inner+'</div>'}
+ var QX=null;try{fetch('../data/v4/vocabx.json').then(function(r){return r.json()}).then(function(j){QX=j}).catch(function(){})}catch(e){}
+ function slug1(w){return String(w).toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+ function vphoto(w){return '<span class="q1-vocab-icon q1-vph" data-i="'+H(String(w).charAt(0).toUpperCase())+'"><img class="q1-vphoto" src="../img/livro/palavras/'+slug1(w)+'.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add(\'nophoto\');this.remove()"></span>'}
+ function vmeta(w){var e=QX&&QX[String(w).toLowerCase()];if(!e)return '';var bits=[];if(e.p)bits.push('<i>'+H(e.p)+'</i>');if(e.i)bits.push('<span class="q1-ipa">'+H(e.i)+'</span>');return bits.length?'<small class="q1-meta">'+bits.join(' · ')+'</small>':''}
  function vocabIcon(word){var shapes={
   coffee:'<path d="M10 24h23l-3 18H13z" fill="#b7775e"/><path d="M10 24h23"/><path d="M18 18c-5-6 5-7 0-13m9 13c-5-6 5-7 0-13"/>',
   tea:'<path d="M9 22h24l-2 18H11z" fill="#eacb89"/><path d="M33 27c12-2 11 9-1 9"/><path d="M17 14q7-9 15-4-5 8-15 4" fill="#8cb69b"/>',
@@ -36,7 +40,7 @@ window.RL_REGISTER=function(R,A){
   return '<svg viewBox="0 0 48 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g stroke="#2b1d3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">'+(shapes[word]||shapes.cup)+'</g></svg>'}
  function quiz(root,items){var index=0,correct=0;
   function draw(){if(index>=items.length){root.innerHTML=card('<b class="q1-complete">'+correct+' / '+items.length+' · concluído</b><p>Explique uma resposta com suas próprias palavras.</p>');A.mark();return}
-   var q=items[index];root.innerHTML='<div class="q1-progress">Pergunta '+(index+1)+' de '+items.length+'</div>'+card('<h3>'+H(q.q||q.s)+'</h3><div class="q1-options">'+
+   var q=items[index];root.innerHTML='<div class="q1-progress">Pergunta '+(index+1)+' de '+items.length+'</div>'+card((q.img?'<img class="q1-qimg" src="../img/livro/'+H(q.img)+'" alt="">':'')+'<h3>'+H(q.q||q.s)+'</h3><div class="q1-options">'+
     q.opts.map(function(o,i){return '<button type="button" data-answer="'+i+'">'+H(o)+'</button>'}).join('')+'</div><p class="q1-feedback" role="status"></p><button type="button" class="q1-next-item" hidden>Próxima pergunta →</button>');
    all(root,'[data-answer]').forEach(function(btn){btn.onclick=function(e){var ok=+btn.dataset.answer===q.ans;if(ok)correct++;A.gain(ok?8:0,ok,e);
     all(root,'[data-answer]').forEach(function(x){x.disabled=true;x.classList.toggle('right',+x.dataset.answer===q.ans)});
@@ -80,7 +84,11 @@ window.RL_REGISTER=function(R,A){
    var t=p.turn;var face=A.face(p.npcface||p.npc||'Evan');b.innerHTML='<div class="q1-choice"><div class="q1-person">'+face+'</div>'+card('<span class="q1-eyebrow">'+H(p.npc||'Evan')+' · fala '+p.position+' de '+(p.total||6)+'</span><h3>'+H(t.npc)+'</h3><p>'+H(t.pt)+'</p>'+speak(t.npc))+'</div><div class="q1-options">'+t.opts.map(function(o,i){return '<button type="button" data-choice="'+i+'"><strong>'+H(o.en)+'</strong><span>'+H(o.pt)+'</span></button>'}).join('')+'</div><p class="q1-feedback" role="status"></p>';
    all(b,'[data-choice]').forEach(function(x){x.onclick=function(e){var o=t.opts[+x.dataset.choice];A.gain(o.ok?10:0,!!o.ok,e);all(b,'[data-choice]').forEach(function(v){v.disabled=true;v.classList.toggle('right',t.opts[+v.dataset.choice].ok)});x.classList.add(o.ok?'right':'wrong');status(b,o.fb+' '+(o.ok?p.outcome:''));if(o.ok)A.say(o.en)}})}
   else if(kind==='vocab'){
-   b.innerHTML=intro(p.prompt)+'<div class="q1-vocab">'+p.words.map(function(item){return card('<div class="q1-vocab-head"><span class="q1-vocab-icon">'+vocabIcon(item[0])+'</span><div><strong>'+H(item[0])+'</strong><span>'+H(item[1])+'</span></div>'+speak(item[0])+'</div><button type="button" class="q1-variant" data-say1="'+H(item[2])+'">'+H(item[2])+'</button><button type="button" class="q1-variant" data-say1="'+H(item[3])+'">'+H(item[3])+'</button>')}).join('')+'</div>'}
+   b.innerHTML=intro(p.prompt)+'<div class="q1-vocab">'+p.words.map(function(item){return card('<div class="q1-vocab-head">'+vphoto(item[0])+'<div><strong>'+H(item[0])+'</strong><span>'+H(item[1])+'</span>'+vmeta(item[0])+'</div>'+speak(item[0])+'</div><button type="button" class="q1-variant" data-say1="'+H(item[2])+'">'+H(item[2])+'</button><button type="button" class="q1-variant" data-say1="'+H(item[3])+'">'+H(item[3])+'</button>')}).join('')+'</div>'}
+  else if(kind==='trap'){
+   var t=p.trap||{};b.innerHTML='<div class="q1-two">'+card('<span class="q1-eyebrow">Armadilha de tradução'+(t.label?' · '+H(t.label):'')+'</span><div class="q1-trap"><p class="tw"><b>Evite</b><span>'+H(t.wrong)+'</span></p><p class="tr"><b>Diga</b><span>'+H(t.right)+'</span>'+speak(t.right)+'</p></div><p class="q1-why">'+H(t.why)+'</p><div class="q1-prompt">Repita a frase certa em voz alta duas vezes.</div>')+'</div>'}
+  else if(kind==='famcol'){
+   b.innerHTML='<div class="q1-famcol">'+card('<span class="q1-eyebrow">Famílias e colocações</span><div class="q1-fcrows">'+(p.rows||[]).map(function(r){return '<div class="q1-fcrow"><strong>'+H(r.w)+'</strong>'+(r.f?'<span><i>família</i> '+H(r.f)+'</span>':'')+(r.c?'<span><i>combina</i> '+H(r.c[0])+' <em>'+H(r.c[1])+'</em> '+speak(r.c[0])+'</span>':'')+'</div>'}).join('')+'</div>')+'</div>'}
   else if(kind==='pattern'){
    b.innerHTML='<div class="q1-two">'+card('<span class="q1-eyebrow">Molde que muda</span><div class="q1-result" aria-live="polite"></div><div class="q1-slots">'+p.slots.map(function(s){return '<label>'+H(s.key)+'<select data-slot="'+H(s.key)+'">'+s.opts.map(function(o){return '<option>'+H(o)+'</option>'}).join('')+'</select></label>'}).join('')+'</div><button type="button" class="q1-main" id="q1-say">Ouvir minha frase</button>')+
     card('<b>Compare e produza</b><p>'+H(p.model)+'</p><p>'+H(p.note)+'</p><div class="q1-prompt">Troque duas opções. Depois faça a pergunta ou responda sem ler.</div>')+'</div>';

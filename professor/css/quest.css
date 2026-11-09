@@ -57,3 +57,20 @@ body.rlx .tl .st{min-width:104px}
 
 .qhs{display:grid;gap:8px;justify-items:center}.qhs .ps-stage.hot{--pgh:36dvh}.qhsi{background:var(--paper);border:2px solid var(--line);border-radius:14px;padding:8px 14px;width:100%;text-align:center}.qhsc{font-weight:800;font-size:12px;color:var(--ink2,#566)}
 .qh-r .ps-stage,.qstk .ps-stage{width:100%;--pgh:34dvh}
+
+/* v3 · Quest: foto no vocabulário, classe/IPA, armadilha, famílias, registro */
+.q1-vocab-icon.q1-vph{width:64px;height:64px;flex:none;border-radius:14px;overflow:hidden;background:linear-gradient(145deg,#e6eef0,#c9d8dc);display:grid;place-items:center;position:relative;box-shadow:inset 0 0 0 1px rgba(20,40,60,.08)}
+.q1-vocab-icon.q1-vph svg{display:none}
+.q1-vphoto{width:100%;height:100%;object-fit:cover;display:block}
+.q1-vocab-icon.nophoto::before{content:attr(data-i);font-weight:800;font-size:26px;color:#5b7480;letter-spacing:.02em}
+.q1-meta{display:block;font-size:12px;color:#5b6f78;margin-top:2px}.q1-meta i{font-style:normal;font-weight:700;color:#3d6b78}.q1-ipa{font-family:"Noto Sans","Segoe UI",sans-serif}
+.q1-qimg{display:block;width:100%;max-height:230px;object-fit:cover;border-radius:14px;margin:0 0 12px}
+.q1-trap{display:grid;gap:10px;margin:8px 0 12px}.q1-trap p{margin:0;display:flex;gap:10px;align-items:baseline;padding:10px 12px;border-radius:12px}
+.q1-trap b{flex:none;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;min-width:48px}
+.q1-trap .tw{background:rgba(214,69,69,.1)}.q1-trap .tw b{color:#c23b3b}.q1-trap .tw span{text-decoration:line-through;text-decoration-color:rgba(194,59,59,.55)}
+.q1-trap .tr{background:rgba(46,158,91,.12)}.q1-trap .tr b{color:#23804a}.q1-trap .tr span{font-weight:700;flex:1}
+.q1-why{line-height:1.5}
+.q1-fcrows{display:grid;gap:10px;margin-top:8px}.q1-fcrow{display:grid;gap:3px;padding:10px 12px;border-radius:12px;background:rgba(20,60,80,.05)}
+.q1-fcrow strong{font-size:18px}.q1-fcrow span{font-size:14px}.q1-fcrow i{font-style:normal;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#3d6b78;margin-right:6px}.q1-fcrow em{color:#5b6f78;font-style:normal}
+.q1v-reg{font-style:normal;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:middle;background:rgba(20,60,80,.1);color:#3d6b78}
+.q1v-reg.r-formal{background:rgba(91,91,214,.14);color:#4646b8}.q1v-reg.r-informal{background:rgba(232,116,42,.16);color:#b85514}
