@@ -82,7 +82,7 @@ FXR.pgtag=function(f,st,n){
   const full=()=>{const p=parts();return `${p.l1} ${p.l2} ${p.l3}`};
   const ready=()=>clean(nameI.value)&&(fromS.value!=='Other'||clean(otherI.value));
   let finished=false;
-  const finish=()=>{if(finished)return;finished=true;const p=parts();put({name:p.nm,from:p.fr,feel});q('#tgCard',st).classList.add('ok');
+  const finish=()=>{if(finished)return;finished=true;const p=parts();put({name:p.nm,from:p.fr,feel,_l:[p.l1,p.l2,p.l3]});q('#tgCard',st).classList.add('ok');
     if(award('end',20))pop(st.querySelector('.tg'),'+20 🪙');
     try{if(window.PogStickers&&PogStickers.add)PogStickers.add({id:'tag-ep1',title:'Minha etiqueta',sub:full()})}catch(e){}
     P.fx.cta=null;cta('Continuar',true,true);say(`Etiqueta guardada, ${p.nm}! 🎉`)};
@@ -99,4 +99,84 @@ FXR.pgtag=function(f,st,n){
   P.fx.cta=null;cta('Fale a etiqueta para guardar',false);
   say('Monte a sua etiqueta e fale em voz alta!');
 };
+})();
+
+/* ---------- pgme: quadro pessoal configurável (aulas 2 em diante) ----------
+   f.mode 'start' | 'end'; f.bubble {who,en,pt}; f.story; f.fields [{id,label,type:'chips'|'text'|'select',opts:[[valor,emoji,pt]],def}];
+   f.lines ["Are you {a1}?", ...] com {id}; f.key identifica a recompensa (uma vez); f.coins; f.cta */
+(function(){
+'use strict';
+if(typeof FXR==='undefined'||typeof FX_KIND==='undefined'||!window.PogStage)return;
+const S=window.PogStage;
+const H=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const q=(s,r)=>(r||document).querySelector(s),qa=(s,r)=>[...(r||document).querySelectorAll(s)];
+const tts=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
+const KEY='pg_me',AW='pg_tag_coins';
+const rd=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){return {}}};
+const wr=o=>{try{localStorage.setItem(KEY,JSON.stringify(Object.assign(rd(),o)))}catch(e){}};
+const was=k=>{try{return (JSON.parse(localStorage.getItem(AW)||'{}')||{})[k]}catch(e){return false}};
+const give=(k,n)=>{if(was(k))return false;try{const o=JSON.parse(localStorage.getItem(AW)||'{}')||{};o[k]=1;localStorage.setItem(AW,JSON.stringify(o))}catch(e){}try{window.PogCoins&&PogCoins.add(n)}catch(e){}return true};
+const clean=v=>String(v||'').replace(/[^\p{L}\p{M}' -]/gu,'').replace(/\s+/g,' ').trim().slice(0,24);
+const lang=()=>(typeof P!=='undefined'&&P.c&&P.c.tts)||'en-US';
+FX_LABEL.pgme='Sua vez';FX_KIND.pgme='speak';
+FXR.pgme=function(f,st,n){
+  const F=f.fields||[],saved=(rd()[f.key]||{}),val={};
+  F.forEach(x=>{val[x.id]=saved[x.id]!=null?saved[x.id]:(x.def!=null?x.def:(x.opts&&x.opts[0]?x.opts[0][0]:''))});
+  const scene=S.stage({rs:f.rs||'library',chars:f.chars||[]});
+  const b=f.bubble;
+  const fieldHTML=x=>{
+    if(x.type==='chips')return `<div class="tg-lab">${H(x.label)}<div class="tg-chips" data-f="${x.id}">${x.opts.map(o=>`<button type="button" data-v="${H(o[0])}" class="${o[0]===val[x.id]?'on':''}"><span>${o[1]||''}</span>${H(o[0])}<small>${H(o[2]||'')}</small></button>`).join('')}</div></div>`;
+    if(x.type==='select')return `<label class="tg-lab">${H(x.label)}<select data-f="${x.id}">${x.opts.map(o=>`<option value="${H(o[0])}"${o[0]===val[x.id]?' selected':''}>${H(o[0])}${o[2]?' ('+H(o[2])+')':''}</option>`).join('')}</select></label>`;
+    return `<label class="tg-lab">${H(x.label)}<input data-f="${x.id}" type="text" maxlength="24" value="${H(val[x.id]||'')}" placeholder="${H(x.ph||'')}"></label>`};
+  st.innerHTML=`<div class="step fx tg">
+    ${f.story?`<div class="tg-story"><span>${f.ico||'📖'}</span><p>${f.story}</p></div>`:''}
+    <div class="tg-scene">${scene}</div>
+    ${b?`<div class="tg-bub"><small>${H(b.who||'')}</small><b>${H(b.en)}</b><span>${H(b.pt||'')}</span><button type="button" class="tg-hear" data-say="${H(b.en)}">🔊</button></div>`:''}
+    <div class="tg-form">${F.map(fieldHTML).join('')}</div>
+    <div class="tg-card" id="mCard"><span class="tg-hole"></span><small>${H(f.cardTitle||'SUA FRASE')}</small>${(f.lines||[]).map((_,i)=>`<b id="mL${i}"></b>`).join('')}</div>
+    <div class="tg-acts"><button type="button" class="ps-btn main" id="mP">🔊 Ouvir</button><button type="button" class="ps-btn rec" id="mM">🎤 Falar</button></div>
+    <div class="pv-host tg-mic" id="mMic" hidden></div></div>`;
+  const typ={};F.forEach(x=>typ[x.id]=x.type);const fill=t=>t.replace(/\{(\w+)\}/g,(m,k)=>typ[k]==='text'?(clean(val[k])||'…'):(val[k]||'…'));
+  const lines=()=>(f.lines||[]).map(fill);
+  const paint=()=>lines().forEach((l,i)=>{q('#mL'+i,st).textContent=l.replace("'",'’')});
+  const ready=()=>F.every(x=>x.type!=='text'||clean(val[x.id]));
+  qa('[data-say]',st).forEach(x=>x.onclick=()=>tts(x.dataset.say));
+  qa('input[data-f]',st).forEach(i=>i.oninput=()=>{val[i.dataset.f]=i.value;paint()});
+  qa('select[data-f]',st).forEach(i=>i.onchange=()=>{val[i.dataset.f]=i.value;paint()});
+  qa('.tg-chips[data-f]',st).forEach(g=>qa('button',g).forEach(bn=>bn.onclick=()=>{val[g.dataset.f]=bn.dataset.v;qa('button',g).forEach(x=>x.classList.toggle('on',x===bn));paint();tts(lines()[0]||bn.dataset.v)}));
+  let done=false;
+  const finish=()=>{if(done)return;done=true;wr({[f.key]:Object.assign({},val,{_l:lines(),_t:f.cardTitle||'Minha frase'})});q('#mCard',st).classList.add('ok');
+    if(give(f.key,f.coins||10)){const p=document.createElement('div');p.className='tg-pop';p.textContent='+'+(f.coins||10)+' 🪙';q('.tg',st).appendChild(p);setTimeout(()=>p.remove(),1600)}
+    P.fx.cta=null;cta(f.cta||'Continuar',true,true);say(f.done||'Muito bem! 🎉')};
+  q('#mP',st).onclick=()=>{if(!ready()){q('input[data-f]',st)&&q('input[data-f]',st).focus();return}tts(lines().join(' '))};
+  q('#mM',st).onclick=()=>{if(!ready()){say('Preencha primeiro.');return}
+    if(f.correct&&val[f.correct.field]!==f.correct.value){say(f.correct.hint||'Quase! Tente outra resposta.');return}
+    const host=q('#mMic',st),text=lines().join(' ');
+    if(window.PogVoice){host.hidden=false;host.innerHTML='';try{const v=PogVoice.mount(host,{force:true,target:text,lang:lang(),onDone:()=>finish()});if(v&&v.start)v.start()}catch(e){finish()}}else host.hidden=false;
+    if(!host.querySelector('.tg-skip')){const bn=document.createElement('button');bn.type='button';bn.className='ps-btn tg-skip';bn.textContent='✓ Já falei (sem microfone)';bn.onclick=finish;host.appendChild(bn)}};
+  paint();
+  P.fx.cta=null;cta(f.ctaWait||'Fale a frase para continuar',false);
+  say(f.say||'Sua vez!');
+};
+/* quadro de história curta: uma cena, uma fala, um toque */
+FX_LABEL.pgstory='História';FX_KIND.pgstory='story';
+FXR.pgstory=function(f,st,n){
+  const scene=S.stage({rs:f.rs||'library',chars:f.chars||[]});
+  st.innerHTML=`<div class="step fx tg"><div class="tg-story"><span>${f.ico||'📖'}</span><p>${f.story||''}</p></div><div class="tg-scene" style="max-height:200px">${scene}</div>
+    ${f.bubble?`<div class="tg-bub"><small>${H(f.bubble.who||'')}</small><b>${H(f.bubble.en)}</b><span>${H(f.bubble.pt||'')}</span><button type="button" class="tg-hear" data-say="${H(f.bubble.en)}">🔊</button></div>`:''}</div>`;
+  qa('[data-say]',st).forEach(x=>x.onclick=()=>tts(x.dataset.say));
+  if(f.bubble)setTimeout(()=>tts(f.bubble.en),450);
+  P.fx.cta=null;cta(f.cta||'Continuar',true,true);say(f.say||'Veja o que acontece.');
+};
+})();
+
+/* álbum: seção "Minhas etiquetas" com tudo que o aluno já disse nas aulas */
+(function(){
+const q=(s,r)=>(r||document).querySelector(s);
+const E=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function items(){const out=[];try{const t=JSON.parse(localStorage.getItem('pg_tag')||'{}');if(t._l)out.push(['Aula 1 · Minha etiqueta',t._l])}catch(e){}
+  try{const m=JSON.parse(localStorage.getItem('pg_me')||'{}');Object.keys(m).forEach(k=>{const v=m[k];if(v&&v._l)out.push([v._t||k,v._l])})}catch(e){}return out}
+function add(){const b=q('#fgAlbum .fa-body');if(!b||q('.fa-mytags',b))return;const it=items();if(!it.length)return;
+  b.insertAdjacentHTML('afterbegin',`<section class="fa-mytags" style="margin:0 0 14px;padding:14px;border-radius:18px;background:#FFF4D6;border:2px solid #14183a;color:#14183a"><b>🏷️ Minhas etiquetas</b><div style="display:grid;gap:8px;margin-top:8px">${it.map(x=>`<div style="padding:8px 12px;border-radius:12px;background:#fff;border:2px solid #14183a"><small style="font-weight:800;color:#8a5a00">${E(x[0])}</small><div style="font-weight:700">${x[1].map(E).join(' ')}</div></div>`).join('')}</div></section>`)}
+new MutationObserver(add).observe(document.body,{childList:true,subtree:true});
 })();
