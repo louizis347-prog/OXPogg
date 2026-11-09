@@ -1,0 +1,88 @@
+/* Landing · blocos de cor vivos, cartões "adesivo" (contorno + sombra deslocada). Carregado por último. */
+html.ld.pop{--ink:#14183a;--cream:#FFF3D6;--cor:#ff6b4a;--t-ink:#14183a;--t-ink2:#2b3160;--t-mute:#4a527f;--bg:#FFF3D6;--card:#fff;color-scheme:light}
+html.ld.pop body{background:#FFF3D6;color:#14183a;font-weight:600}
+html.ld.pop h1,html.ld.pop h2,html.ld.pop h3,html.ld.pop h4{color:#14183a}
+html.ld.pop p,html.ld.pop li{color:#2b3160}
+html.ld.pop .sec{padding:72px 0;position:relative}
+html.ld.pop .sec.alt,html.ld.pop .prof,html.ld.pop .tut{background:none!important}
+/* barra */
+html.ld.pop .top{background:#FFF3D6;backdrop-filter:none;border-bottom:3px solid #14183a}
+html.ld.pop .logo,html.ld.pop .logo *{color:#14183a}
+html.ld.pop .nav{background:#fff;border:3px solid #14183a;box-shadow:4px 4px 0 #14183a}
+html.ld.pop .nav a{color:#14183a;font-weight:800}
+html.ld.pop .nav a:hover{background:#FFE08A;color:#14183a}
+html.ld.pop .nav a.on{background:#FF6B4A;color:#fff}
+html.ld.pop .nav a.live::before{background:#e11d48}
+html.ld.pop .btn.primary,html.ld.pop .btn.sun{background:#FFC93C;color:#14183a;border:3px solid #14183a;box-shadow:4px 4px 0 #14183a;font-weight:800}
+html.ld.pop .btn.primary:hover,html.ld.pop .btn.sun:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #14183a}
+html.ld.pop .btn.ghost{background:#fff;color:#14183a!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a;font-weight:800}
+html.ld.pop .btn.ghost:hover{background:#FFE08A}
+/* hero: turquesa vivo */
+html.ld.pop .hero2{background:#12A39A!important;border-bottom:4px solid #14183a;padding-bottom:64px}
+html.ld.pop .hero2 h1,html.ld.pop .hero2 .lead,html.ld.pop .hero2 p{color:#fff;text-shadow:none}
+html.ld.pop .hero2 h1 em{background:none;-webkit-background-clip:initial;background-clip:initial;color:#FFE14D;-webkit-text-stroke:0}
+html.ld.pop .hero2 .eyebrow{background:#fff;color:#14183a;border:3px solid #14183a;box-shadow:3px 3px 0 #14183a}
+html.ld.pop .hero2 .stats div{background:#fff;border:3px solid #14183a;box-shadow:4px 4px 0 #14183a;color:#14183a}
+html.ld.pop .hero2 .stats div *{color:#14183a}
+html.ld.pop .hero2 .hero-orbit,html.ld.pop .hero2 .hero-sky{opacity:.25}
+html.ld.pop .hero2 .btn.ghost{background:#fff}
+/* títulos de seção */
+html.ld.pop .sh h2{font-size:clamp(28px,5vw,44px);letter-spacing:-.02em}
+html.ld.pop .sh h2 em,html.ld.pop .fin h2 em{background:none;-webkit-background-clip:initial;background-clip:initial;color:#fff;background:#FF6B4A;padding:0 .25em;border-radius:12px;display:inline-block;transform:rotate(-1.5deg);box-shadow:3px 3px 0 #14183a;border:3px solid #14183a}
+html.ld.pop .sh p{color:#2b3160;font-weight:600}
+html.ld.pop .eyebrow{background:#fff;color:#14183a;border:3px solid #14183a;box-shadow:3px 3px 0 #14183a;font-weight:800}
+/* cinco experiências: cartões coloridos */
+html.ld.pop .five{background:#FFF3D6}
+html.ld.pop .xp{background:var(--c);border:4px solid #14183a;box-shadow:8px 8px 0 #14183a;border-radius:26px;color:#fff;transition:transform .15s,box-shadow .15s}
+html.ld.pop .xp:hover{transform:translate(-3px,-3px);box-shadow:12px 12px 0 #14183a}
+html.ld.pop .xp h3,html.ld.pop .xp small{color:#fff}html.ld.pop .xp small{opacity:.9}
+html.ld.pop .xp-p{color:#fff}
+html.ld.pop .xp-get{background:#fff;color:#14183a;border:3px solid #14183a;border-left-width:3px}html.ld.pop .xp-get b{color:var(--c)}
+html.ld.pop .xp-meta li{background:#fff;color:#14183a;border:2px solid #14183a}
+html.ld.pop .xp-ic{background:#fff;color:var(--c);border:3px solid #14183a}
+html.ld.pop .xp .btn.ghost{background:#FFC93C}
+html.ld.pop .xp.pocket{--c:#F28A0B}html.ld.pop .xp.book{--c:#2F6FE0}html.ld.pop .xp.live{--c:#7A4DE8}html.ld.pop .xp.regular{--c:#0B7C88}html.ld.pop .xp.neighbors{--c:#D6336C}
+html.ld.pop .pick{background:#fff;border:3px solid #14183a;box-shadow:4px 4px 0 #14183a}html.ld.pop .pick a{color:#14183a;background:#FFE08A;border:2px solid #14183a}html.ld.pop .pick-l{color:#14183a}
+/* jornada: amarelo */
+html.ld.pop .link{background:#FFC93C;border-top:4px solid #14183a;border-bottom:4px solid #14183a}
+html.ld.pop .journey li{background:#fff;border:3px solid #14183a;box-shadow:5px 5px 0 #14183a}
+html.ld.pop .journey li b,html.ld.pop .journey li p{color:#14183a}
+/* ao vivo: roxo */
+html.ld.pop .ao-vivo{background:#6C47E0;border-bottom:4px solid #14183a}
+html.ld.pop .ao-vivo .sh h2,html.ld.pop .ao-vivo .sh p{color:#fff}
+html.ld.pop .av-info li{background:#fff;color:#14183a;border:3px solid #14183a;box-shadow:3px 3px 0 #14183a}
+html.ld.pop .av-card{background:#fff;border:4px solid #14183a;box-shadow:7px 7px 0 #14183a;color:#14183a}
+html.ld.pop .av-card h3,html.ld.pop .av-card p,html.ld.pop .av-card small,html.ld.pop .av-card .av-next{color:#14183a}
+html.ld.pop .av-go{background:#FFC93C;color:#14183a;border:3px solid #14183a}
+/* por dentro: creme */
+html.ld.pop .tut-head h2,html.ld.pop .tut h2{color:#14183a}
+html.ld.pop .tut-steps button{background:#fff!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a;color:#14183a}
+html.ld.pop .tut-steps button *{color:#14183a}
+/* níveis: rosa */
+html.ld.pop .prof{background:#FF8FB8!important;border-top:4px solid #14183a;border-bottom:4px solid #14183a}
+html.ld.pop .prof .lv button,html.ld.pop .prof button{border:3px solid #14183a;background:#fff;color:#14183a;box-shadow:3px 3px 0 #14183a}
+html.ld.pop .prof .bubble{background:#fff!important;border:3px solid #14183a;color:#14183a}html.ld.pop .prof .bubble *{color:#14183a}
+/* idiomas: azul-claro */
+html.ld.pop #idiomas{background:#8FD9F0;border-bottom:4px solid #14183a}
+html.ld.pop .cl{background:#fff!important;border:4px solid #14183a!important;box-shadow:6px 6px 0 #14183a}
+html.ld.pop .cl h3,html.ld.pop .cl p,html.ld.pop .cl small{color:#14183a}
+/* planos / faq */
+html.ld.pop .plan,html.ld.pop .card{background:#fff!important;border:4px solid #14183a!important;box-shadow:6px 6px 0 #14183a;color:#14183a}
+html.ld.pop .plan *{color:#14183a}
+html.ld.pop .faq details{background:#fff!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a;color:#14183a}html.ld.pop .faq details *{color:#14183a}
+/* final: coral */
+html.ld.pop .fin{background:#FF6B4A;border:4px solid #14183a;box-shadow:10px 10px 0 #14183a;border-radius:32px}
+html.ld.pop .fin h2{color:#fff}html.ld.pop .fin h2 em{background:#FFC93C;color:#14183a}
+html.ld.pop .fin-grid a{background:#fff;border:3px solid #14183a;box-shadow:4px 4px 0 #14183a;color:#14183a}
+html.ld.pop .fin-grid a:hover{background:#FFE08A}html.ld.pop .fin-grid b{color:#14183a}html.ld.pop .fin-grid span{color:#2b3160}
+html.ld.pop .fin-note,html.ld.pop .fin-note a{color:#fff}
+html.ld.pop footer{background:#14183a;color:#fff}html.ld.pop footer *{color:#e8ecff}
+html.ld.pop .hero2 .stats div,html.ld.pop .hero2 .stat{background:#fff!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a!important}
+html.ld.pop .hero2 .stats div *{color:#14183a!important}
+html.ld.pop .btn.primary,html.ld.pop .btn.primary.lg,html.ld.pop .btn.sun{background:#FFC93C!important;color:#14183a!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a!important}
+html.ld.pop .hero2 .btn.ghost,html.ld.pop .btn.ghost{background:#fff!important;color:#14183a!important}
+html.ld.pop .nav a.on{background:#FF6B4A!important;color:#fff!important;box-shadow:none!important}
+html.ld.pop .sec.alt.link{background:#FFC93C!important}
+html.ld.pop .journey li{height:auto!important;min-height:0;overflow:visible;padding-bottom:18px}
+html.ld.pop .sec.ao-vivo{background:#6C47E0!important}
+html.ld.pop .tut-steps button{box-shadow:4px 4px 0 #14183a!important}

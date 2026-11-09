@@ -1,0 +1,49 @@
+/* Poggie, o assistente de dúvidas. Responde por perguntas frequentes (sem servidor).
+   Para ligar uma IA depois: defina window.POGGIE_ENDPOINT = 'https://.../poggie' (POST {q} -> {a}). */
+(function(){
+var KB=[
+{k:['regular','obra','filme','livro de','poema','episodio','episódio'],a:'O <b>Regular</b> é o curso em profundidade: cada episódio parte de uma obra cultural (filme, livro, poema, música) e tem cena, leitura, prática, fala e uma figurinha no fim. São 3.000 episódios de inglês.',l:['curso-regular.html','Conhecer o Regular']},
+{k:['neighbors','vizinh','conversa','personagem','responder'],a:'No <b>Neighbors</b> você convive com personagens que voltam, escolhe o que dizer e vê a consequência da sua resposta. São 2.640 episódios de inglês, com uma revisão a cada 10.',l:['curso-neighbors.html','Conhecer o Neighbors']},
+{k:['pocket','minutos','pouco tempo','rapido','rápido','habito','hábito'],a:'O <b>Pocket</b> são práticas de poucos minutos: uma situação, itens essenciais, escuta, fala e recuperação, em 7 quadros. São 4.800 práticas, 800 por nível.',l:['curso-pocket.html','Conhecer o Pocket']},
+{k:['livro','c2','gramatica','gramática','regra','prova','zero'],a:'<b>Inglês do zero ao C2</b> é o livro interativo: objetivo, explicação, prática e progressão planejada. Já são 1.150 aulas publicadas; o trecho C2 ainda está sendo concluído.',l:['curso-do-zero-ao-c2.html','Conhecer o livro']},
+{k:['ao vivo','aula ao vivo','professor','meet','agendar','marcar','horario','horário','reservar','grupo'],a:'As <b>aulas ao vivo</b> são em grupo, de 1h30, em horário de Brasília. Você escolhe o grupo, reserva o horário e recebe o link do Google Meet. Quem marca o mesmo horário usa o mesmo link.',l:['aula-ao-vivo.html','Marcar aula ao vivo']},
+{k:['preco','preço','quanto custa','valor','plano','pagar','assinatura','gratis','grátis'],a:'Você pode começar de graça. Os valores dos planos ainda não foram divulgados: em breve eles aparecem na seção Planos.',l:['./#planos','Ver planos']},
+{k:['nivel','nível','a1','a2','b1','b2','c1','começar','comecar','iniciante','por onde'],a:'Os níveis seguem o padrão europeu (A1 a C2). Quem está começando entra no A1; quem já sabe algo pode fazer o teste de nível dentro do app. Não sabe por onde começar? Comece pelo <b>Pocket</b> (5 minutos) ou pelo <b>Regular</b> (mais fundo).',l:['app.html','Começar grátis']},
+{k:['idioma','espanhol','frances','francês','japones','japonês','alemao','alemão','italiano','coreano','portugues','português'],a:'Há 8 idiomas: inglês (o mais completo, do A1 ao C2), espanhol, francês, alemão, italiano, português, japonês e coreano. Os outros idiomas estão em crescimento.',l:['./#idiomas','Ver idiomas']},
+{k:['celular','app','instalar','computador','tablet'],a:'Funciona no celular, no tablet e no computador, direto no navegador. Dá para instalar na tela inicial, sem loja de aplicativos.',l:['app.html','Abrir o app']},
+{k:['moeda','pogcoin','figurinha','sequencia','sequência','conquista'],a:'Você ganha <b>Pogcoins</b> ao acertar, figurinhas ao fechar episódios e mantém uma sequência diária. Tudo entra no seu álbum e no seu perfil.',l:null},
+{k:['voz','microfone','falar','audio','áudio','som'],a:'Os episódios têm áudio e há prática de fala com o microfone. Se o seu aparelho não tiver voz para o idioma, o app avisa e mostra como ativar nas configurações.',l:null},
+{k:['oi','ola','olá','bom dia','boa tarde','boa noite','hello','e ai','e aí'],a:'Oi! Eu sou o Poggie 🦆 Posso explicar os cursos, a aula ao vivo, os níveis e como começar. O que você quer saber?',l:null}
+];
+var CH=['Qual curso escolher?','Como marcar aula ao vivo?','Quanto custa?','Por onde começar?'];
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function find(q){var n=norm(q),best=null,bs=0;KB.forEach(function(e){var sc=0;e.k.forEach(function(w){if(n.indexOf(norm(w))>-1)sc+=w.length>3?2:1});if(sc>bs){bs=sc;best=e}});
+ if(/qual curso|escolher|diferenca|diferença/.test(n))return{a:'São cinco jeitos, com um só progresso: <b>Regular</b> (obra e profundidade), <b>Neighbors</b> (conversa e escolhas), <b>Pocket</b> (poucos minutos), <b>Livro</b> (do zero ao C2) e <b>Aula ao vivo</b> (falar com o professor). Hoje tenho só 5 minutos? Pocket. Quero conversar? Neighbors. Quero entender a regra? Livro. Ir fundo? Regular. Falar com alguém? Ao vivo.',l:['./#experiencias','Ver os cinco jeitos']};
+ return bs?best:null}
+function build(){
+ var css=document.createElement('style');css.textContent='.pgc-fab{position:fixed;right:16px;bottom:16px;z-index:9000;width:62px;height:62px;border:0;border-radius:50%;background:linear-gradient(135deg,#FFB627,#FF7A45);box-shadow:0 10px 30px -6px #ff7a45aa;cursor:pointer;display:grid;place-items:center;animation:pgcb 3s ease-in-out infinite}.pgc-fab svg{width:44px;height:44px}@keyframes pgcb{50%{transform:translateY(-5px)}}.pgc-tip{position:fixed;right:88px;bottom:30px;z-index:9000;background:#fff;color:#10182e;padding:8px 12px;border-radius:14px 14px 4px 14px;font:700 13px system-ui;box-shadow:0 8px 24px #0004}.pgc-box{position:fixed;right:16px;bottom:90px;z-index:9001;width:min(380px,calc(100vw - 32px));height:min(520px,calc(100vh - 120px));display:none;flex-direction:column;border-radius:22px;overflow:hidden;background:#0d1530;color:#e8eefc;border:1px solid #ffffff2a;box-shadow:0 24px 70px #000a;font:500 14px/1.5 system-ui}.pgc-box.on{display:flex;animation:pgcp .25s ease}@keyframes pgcp{from{opacity:0;transform:translateY(12px) scale(.97)}}.pgc-h{display:flex;align-items:center;gap:10px;padding:12px 14px;background:linear-gradient(135deg,#12a39a,#0a6a78)}.pgc-h b{display:block}.pgc-h small{opacity:.85}.pgc-h button{margin-left:auto;background:#ffffff26;border:0;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:16px}.pgc-m{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px}.pgc-b{max-width:86%;padding:9px 12px;border-radius:16px;background:#ffffff14}.pgc-b.u{align-self:flex-end;background:linear-gradient(135deg,#FFB627,#FF7A45);color:#10182e;font-weight:600}.pgc-b a{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:99px;background:#FFB627;color:#10182e;font-weight:800;text-decoration:none;font-size:13px}.pgc-c{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 8px}.pgc-c button{border:1px solid #ffffff33;background:#ffffff0d;color:#dbe6ff;border-radius:99px;padding:6px 11px;font:700 12px system-ui;cursor:pointer}.pgc-f{display:flex;gap:8px;padding:10px;border-top:1px solid #ffffff1f}.pgc-f input{flex:1;min-width:0;border-radius:99px;border:1px solid #ffffff33;background:#ffffff0d;color:#fff;padding:10px 14px;font:inherit}.pgc-f button{border:0;border-radius:99px;padding:0 16px;background:#FFB627;color:#10182e;font-weight:800;cursor:pointer}@media(prefers-reduced-motion:reduce){.pgc-fab{animation:none}}';
+ document.head.appendChild(css);
+ var ic=(window.HomeArt&&HomeArt.emblem)?HomeArt.emblem({size:44}):'🦆';
+ var fab=document.createElement('button');fab.className='pgc-fab';fab.type='button';fab.setAttribute('aria-label','Falar com o Poggie');fab.innerHTML=ic;
+ var tip=document.createElement('div');tip.className='pgc-tip';tip.textContent='Dúvidas? Pergunte ao Poggie';
+ var box=document.createElement('div');box.className='pgc-box';box.setAttribute('role','dialog');box.setAttribute('aria-label','Poggie, assistente de dúvidas');
+ box.innerHTML='<div class="pgc-h">'+ic+'<div><b>Poggie</b><small>Tira dúvidas sobre o Pogglot</small></div><button type="button" aria-label="Fechar">✕</button></div><div class="pgc-m" aria-live="polite"></div><div class="pgc-c"></div><form class="pgc-f"><input type="text" placeholder="Escreva sua dúvida…" aria-label="Sua dúvida" maxlength="200"><button>Enviar</button></form>';
+ document.body.appendChild(fab);document.body.appendChild(tip);document.body.appendChild(box);
+ var M=box.querySelector('.pgc-m'),C=box.querySelector('.pgc-c'),inp=box.querySelector('input'),started=false;
+ function add(h,u){var d=document.createElement('div');d.className='pgc-b'+(u?' u':'');d.innerHTML=h;M.appendChild(d);M.scrollTop=M.scrollHeight}
+ function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+ function reply(q){var r=find(q);
+  function show(r){add(r.a+(r.l?'<br><a href="'+r.l[0]+'">'+r.l[1]+' →</a>':''))}
+  if(r){setTimeout(function(){show(r)},350);return}
+  if(window.POGGIE_ENDPOINT){fetch(window.POGGIE_ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({q:q})}).then(function(x){return x.json()}).then(function(j){add(esc(j.a||'Não consegui responder agora.'))}).catch(function(){add('Não consegui responder agora. Tente de novo em instantes.')});return}
+  setTimeout(function(){add('Hmm, essa eu ainda não sei responder 🦆 Posso falar sobre os cursos, aula ao vivo, níveis, idiomas e como começar. Tente uma das sugestões abaixo.')},350)}
+ function ask(q){q=q.trim();if(!q)return;add(esc(q),true);reply(q)}
+ CH.forEach(function(t){var b=document.createElement('button');b.type='button';b.textContent=t;b.onclick=function(){ask(t)};C.appendChild(b)});
+ function open(){box.classList.add('on');tip.remove();if(!started){started=true;add('Oi! Eu sou o <b>Poggie</b> 🦆 Tiro dúvidas sobre os cursos, a aula ao vivo, níveis e como começar. O que você quer saber?')}setTimeout(function(){inp.focus()},50)}
+ fab.onclick=function(){box.classList.contains('on')?box.classList.remove('on'):open()};
+ box.querySelector('.pgc-h button').onclick=function(){box.classList.remove('on')};
+ box.querySelector('form').onsubmit=function(e){e.preventDefault();ask(inp.value);inp.value=''};
+ setTimeout(function(){if(tip.parentNode)tip.remove()},9000);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',build);else build();
+})();
