@@ -1,0 +1,26 @@
+/* Etiqueta de bagagem (pgtag) */
+.tg{display:grid;gap:12px;position:relative}
+.tg-story{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:16px;background:#FFF4D6;border:2px solid #14183a;color:#14183a}
+.tg-story span{font-size:26px;line-height:1}.tg-story p{margin:0;font-size:15px;line-height:1.45}
+.tg-scene{border-radius:16px;overflow:hidden;max-height:160px;border:2px solid #14183a}
+.tg-scene svg,.tg-scene>*{display:block;width:100%}
+.tg-bub{position:relative;padding:10px 44px 10px 14px;border-radius:16px 16px 16px 4px;background:#fff;border:2px solid #14183a;color:#14183a}
+.tg-bub small{display:block;font-size:11px;font-weight:800;letter-spacing:.06em;color:#8a5a00}.tg-bub b{display:block;font-size:18px}.tg-bub span{font-size:14px;color:#4a527f}
+.tg-hear{position:absolute;right:8px;top:8px;width:34px;height:34px;border-radius:50%;border:2px solid #14183a;background:#FFC93C;cursor:pointer}
+.tg-lab{display:grid;gap:4px;font-weight:800;font-size:14px;color:#14183a}
+.tg-lab input,.tg-lab select{font:inherit;font-size:17px;font-weight:700;padding:11px 14px;border-radius:14px;border:2px solid #14183a;background:#fff;color:#14183a}
+.tg-tag,.tg-card{position:relative;padding:14px 16px 14px 46px;border-radius:14px;background:#F2D9A8;border:2px solid #14183a;box-shadow:4px 4px 0 #14183a;color:#14183a;transition:transform .3s,background .3s}
+.tg-hole{position:absolute;left:14px;top:50%;margin-top:-8px;width:16px;height:16px;border-radius:50%;background:#FFF3D6;border:2px solid #14183a}
+.tg-tag small,.tg-card small{display:block;font-size:11px;font-weight:800;letter-spacing:.05em;color:#7a5200}
+.tg-tag b{font-size:24px}.tg-card b{display:block;font-size:20px;line-height:1.3}.tg-card em{display:block;margin-top:4px;font-family:Georgia,serif;font-size:18px}
+.tg-tag.ok,.tg-card.ok{background:#B8F0C8;transform:rotate(-1.5deg) scale(1.02)}
+.tg-acts{display:flex;gap:8px;flex-wrap:wrap}.tg-note{font-size:13px;color:#4a527f;margin:0}
+.tg-chips{display:flex;gap:8px;flex-wrap:wrap}.tg-chips button{flex:1;min-width:90px;display:grid;justify-items:center;gap:0;padding:8px;border-radius:14px;border:2px solid #14183a;background:#fff;color:#14183a;font:800 15px inherit;cursor:pointer}
+.tg-chips button span{font-size:24px}.tg-chips button small{font-weight:600;color:#4a527f}.tg-chips button.on{background:#FFC93C;box-shadow:3px 3px 0 #14183a}
+.tg-form{display:grid;gap:10px}
+.tg-pop{position:absolute;right:8px;top:-6px;z-index:5;padding:6px 12px;border-radius:99px;background:#FFC93C;border:2px solid #14183a;font-weight:800;color:#14183a;animation:tgpop 1.5s ease forwards}
+@keyframes tgpop{0%{opacity:0;transform:translateY(10px) scale(.6)}20%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-30px)}}
+@media(prefers-reduced-motion:reduce){.tg-tag,.tg-card,.tg-pop{animation:none;transition:none}}
+/* indicador de que há mais conteúdo abaixo (evita parecer "cortado") */
+#player .p-body.more::after{content:"";position:sticky;bottom:0;display:block;height:34px;margin-top:-34px;pointer-events:none;background:linear-gradient(to bottom,rgba(255,250,235,0),rgba(255,250,235,.96))}
+#player .dock-tog{position:static!important;margin:0 0 4px auto;display:flex}
