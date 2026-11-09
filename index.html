@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="ld" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Pogglot — Cinco jeitos de aprender idiomas, um só progresso</title>
 <meta name="description" content="Estude em profundidade, converse com personagens, pratique em minutos, siga um currículo do A1 ao C2 ou fale ao vivo com um professor. Cinco experiências em uma conta. Comece grátis.">
-<meta name="theme-color" content="#0B7C88">
+<meta name="theme-color" content="#070c1b">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pogglot — Cinco jeitos de aprender idiomas, um só progresso">
 <meta property="og:description" content="Regular, Neighbors, Pocket, o livro do A1 ao C2 e aula ao vivo: escolha o jeito certo para o seu momento. Comece grátis.">
@@ -15,11 +15,11 @@
 /* links antigos apontavam para o app na raiz: convites (?ref=) e rotas (#/...) seguem para o app */
 (function(){var l=location;if(/[?&]ref=/.test(l.search)||/^#\//.test(l.hash))l.replace('app.html'+l.search+l.hash)})();
 </script>
-<script src="js/theme.js"></script>
+<script>document.documentElement.setAttribute("data-theme","dark")</script><script src="js/theme.js"></script><script>document.documentElement.setAttribute("data-theme","dark");try{window.PogTheme&&(PogTheme.apply=function(){document.documentElement.setAttribute("data-theme","dark")})}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="prefetch" href="data/manifest.json"><link rel="prefetch" href="data/counts.json"><link rel="prefetch" href="data/availability.json">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="css/tokens.css?v=1">
-<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5"><link rel="stylesheet" href="css/landing-teacher.css?v=1"><link rel="stylesheet" href="css/landing-wow.css?v=1"><link rel="stylesheet" href="css/landing-pro.css?v=5"><link rel="stylesheet" href="css/landing-five.css?v=1">
+<link rel="stylesheet" href="css/landing.css?v=3"><link rel="stylesheet" href="css/home-art.css?v=4"><link rel="stylesheet" href="css/landing-new.css?v=5"><link rel="stylesheet" href="css/landing-teacher.css?v=1"><link rel="stylesheet" href="css/landing-wow.css?v=1"><link rel="stylesheet" href="css/landing-pro.css?v=5"><link rel="stylesheet" href="css/landing-five.css?v=1"><link rel="stylesheet" href="css/landing-dark.css?v=1">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -27,13 +27,8 @@
 <header class="top">
   <div class="wrap">
     <a class="logo" href="./" aria-label="Pogglot, início"><span class="logo-fb"><span class="logo-pog" aria-hidden="true"></span><span>Pogg<b>lot</b></span></span></a>
-    <nav class="nav" aria-label="Seções">
-      <a href="#experiencias">Cinco jeitos</a><a href="#conexao">Jornada</a><a href="#tutorial">Por dentro</a><a href="#niveis">Níveis</a><a href="#idiomas">Idiomas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a>
-    </nav>
-    <div class="right">
-      <button class="iconbtn" type="button" data-act="theme" aria-label="Alternar tema">☀️</button>
-      <a class="btn" href="professor/" id="profbtn">👩‍🏫 Painel do Professor</a><a class="btn primary" href="app.html">Começar grátis</a>
-    </div>
+    <nav class="nav" id="mainNav" aria-label="Seções"><a href="#experiencias">Cinco jeitos</a><a href="#ao-vivo" class="live">Aula ao vivo</a><a href="#conexao">Jornada</a><a href="#tutorial">Por dentro</a><a href="#idiomas">Idiomas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a></nav>
+    <div class="right"><a class="btn primary" href="app.html">Começar grátis</a></div>
   </div>
 </header>
 
@@ -106,8 +101,8 @@
         <header><span class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.4 1.7-4.4 4-4.8"/></svg></span><div><small>Aula ao vivo</small><h3>Use com gente de verdade</h3></div></header>
         <p class="xp-p">Fale com outras pessoas e receba a intervenção do professor: escuta atenta, adaptação na hora e feedback pessoal.</p>
         <div class="xp-get"><b>O que você leva</b>Desempenho observado, correção e mais confiança para falar.</div>
-        <ul class="xp-meta"><li>Aulas com roteiro para o professor</li><li>Particular ou em grupo</li></ul>
-        <a class="btn ghost" href="#perguntas">Saber mais</a>
+        <ul class="xp-meta"><li>Grupos de 1h30</li><li>Reserva com link do Meet</li></ul>
+        <a class="btn ghost" href="aula-ao-vivo.html">Marcar aula ao vivo</a>
       </article>
     </div>
   </div>
@@ -124,6 +119,17 @@
       <li class="j4"><span class="jn">4</span><b>Livro</b><p>Quando surge a dúvida, você consulta a regra e confere se dominou.</p></li>
       <li class="j5"><span class="jn">5</span><b>Aula ao vivo</b><p>Você usa tudo isso com uma pessoa, e o professor corrige na hora.</p></li>
     </ol>
+  </div>
+</section>
+
+<!-- AULA AO VIVO -->
+<section class="sec ao-vivo" id="ao-vivo" aria-labelledby="av-h">
+  <div class="wrap">
+    <div class="sh c"><span class="eyebrow">Aula ao vivo · já disponível</span><h2 id="av-h">Marque a sua aula <em>com o professor</em></h2>
+    <p>Grupos pequenos de 1h30, com conversa guiada e correção na hora. Escolha o grupo, reserve o horário e receba o link do Google Meet.</p></div>
+    <ul class="av-info"><li>⏱ 1h30 por aula</li><li>🕒 Horário de Brasília (com o seu fuso ao lado)</li><li>🔗 Link do Meet gerado para você</li></ul>
+    <div class="av-grid" id="avGrid"><p class="lead" style="grid-column:1/-1;text-align:center">Carregando a agenda…</p></div>
+    <div class="acts" style="justify-content:center;margin-top:22px"><a class="btn primary lg sun" href="aula-ao-vivo.html">Ver todos os horários</a></div>
   </div>
 </section>
 
@@ -304,5 +310,18 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
 })();
 </script>
 <script src="js/landing-pro.js?v=2"></script><script src="js/landing-wow.js?v=1"></script>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('#mainNav a')),map={};
+  links.forEach(function(a){var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);if(el)map[id]={a:a,el:el}});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('on')});var m=map[e.target.id];if(m)m.a.classList.add('on')}})},{rootMargin:'-35% 0px -55% 0px'});Object.keys(map).forEach(function(k){io.observe(map[k].el)})}
+  var BRT='America/Sao_Paulo',f=function(t,o){return new Intl.DateTimeFormat('pt-BR',Object.assign({timeZone:BRT},o)).format(new Date(t))};
+  fetch('data/live-schedule.json').then(function(r){return r.json()}).then(function(S){
+    var now=Date.now(),b=new Date(now-3*3600e3);
+    function next(g){var best=null;for(var i=0;i<14;i++){var day=new Date(Date.UTC(b.getUTCFullYear(),b.getUTCMonth(),b.getUTCDate()+i));g.slots.forEach(function(s){if(s.dow!==day.getUTCDay())return;var p=s.time.split(':'),st=Date.UTC(day.getUTCFullYear(),day.getUTCMonth(),day.getUTCDate(),+p[0]+3,+p[1]);if(st>now+30*60e3&&(!best||st<best))best=st})}return best}
+    document.getElementById('avGrid').innerHTML=S.groups.map(function(g){var n=next(g),days=g.slots.map(function(s){return['domingo','segunda','terça','quarta','quinta','sexta','sábado'][s.dow]+' '+s.time}).join(' e ');
+      return '<a class="av-card" style="--c:'+g.accent+'" href="aula-ao-vivo.html#'+g.id+'"><span class="fl">'+g.icon+'</span><small>'+g.teaches+' · '+g.audience+'</small><h3>'+g.title+'</h3><p>'+g.blurb+'</p><div class="av-next">Toda '+days+' <em style="font-style:normal;opacity:.8">(Brasília)</em>'+(n?'<br>Próxima: <b>'+f(n,{weekday:'short',day:'2-digit',month:'short'})+' · '+f(n,{hour:'2-digit',minute:'2-digit'})+'</b>':'')+'</div><span class="av-go">Reservar horário →</span></a>'}).join('')}).catch(function(){document.getElementById('avGrid').innerHTML='<p class="lead" style="grid-column:1/-1;text-align:center"><a href="aula-ao-vivo.html">Ver a agenda de aulas ao vivo</a></p>'});
+})();
+</script>
 </body>
 </html>

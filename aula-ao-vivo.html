@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aula ao vivo · Pogglot</title>
+<meta name="description" content="Marque sua aula ao vivo em grupo com o professor. Horários em horário de Brasília, link do Google Meet gerado para você.">
+<meta name="theme-color" content="#0a1020">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/live.css?v=1">
+</head>
+<body>
+<header class="lv-top">
+  <a class="lv-logo" href="./" aria-label="Pogglot, início"><span class="lv-mark">P</span><span class="lv-wm">Pogg<b>lot</b></span></a>
+  <nav class="lv-nav" aria-label="Aula ao vivo">
+    <a href="./">← Início</a>
+    <a href="#grupos">Grupos</a>
+    <button type="button" id="openMine" class="lv-ghost">Minhas reservas <i id="mineN" hidden>0</i></button>
+  </nav>
+</header>
+
+<main>
+  <section class="lv-hero">
+    <span class="lv-eyebrow"><i class="lv-dot"></i> Aula ao vivo</span>
+    <h1>Marque sua aula com o professor.<br><em>Fale de verdade.</em></h1>
+    <p>Grupos pequenos, 1h30 de conversa guiada, correção na hora e feedback pessoal. Você escolhe o grupo, reserva o horário e recebe o link do Google Meet.</p>
+    <ul class="lv-chips"><li>⏱ 1h30 por aula</li><li>👥 Grupos pequenos</li><li>🕒 Horários de Brasília, com o seu horário ao lado</li><li>🔗 Link do Meet gerado para você</li></ul>
+  </section>
+
+  <div id="demoNote" class="lv-note" hidden></div>
+
+  <section class="lv-sec" id="grupos" aria-labelledby="g-h">
+    <h2 id="g-h"><span>1</span> Escolha o seu grupo</h2>
+    <div class="lv-groups" id="groups" role="radiogroup" aria-label="Grupos de aula"></div>
+  </section>
+
+  <section class="lv-sec" id="agenda" aria-labelledby="a-h">
+    <div class="lv-sech">
+      <h2 id="a-h"><span>2</span> Escolha o dia e o horário</h2>
+      <div class="lv-tz" id="tzInfo"></div>
+    </div>
+    <div class="lv-slots" id="slots" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="lv-foot">© <span id="yr">2026</span> Pogglot · <a href="./">Início</a> · Dúvidas sobre sua reserva: responda o e-mail do convite do Google Agenda.</footer>
+
+<!-- reserva -->
+<div class="lv-modal" id="bk" role="dialog" aria-modal="true" aria-labelledby="bk-t" hidden>
+  <div class="lv-card">
+    <button type="button" class="lv-x" data-close aria-label="Fechar">✕</button>
+    <div id="bkForm">
+      <small class="lv-k" id="bkK"></small>
+      <h3 id="bk-t"></h3>
+      <p class="lv-when" id="bkWhen"></p>
+      <form id="f" novalidate>
+        <label>Seu nome<input name="name" autocomplete="name" required placeholder="Como devemos te chamar"></label>
+        <label>E-mail (o convite do Google Agenda vai para ele)<input name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label>
+        <label>WhatsApp (opcional)<input name="wa" type="tel" autocomplete="tel" placeholder="+55 11 90000-0000"></label>
+        <p class="lv-err" id="err" role="alert" hidden></p>
+        <button class="lv-btn" id="go" type="submit">Reservar minha vaga</button>
+        <p class="lv-fine">Quem reservar este mesmo horário recebe o mesmo link do Google Meet.</p>
+      </form>
+    </div>
+    <div id="bkDone" hidden></div>
+  </div>
+</div>
+
+<!-- minhas reservas -->
+<div class="lv-modal" id="mine" role="dialog" aria-modal="true" aria-labelledby="mine-t" hidden>
+  <div class="lv-card">
+    <button type="button" class="lv-x" data-close aria-label="Fechar">✕</button>
+    <h3 id="mine-t">Minhas reservas</h3>
+    <div id="mineList"></div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="js/live.js?v=1"></script>
+</body>
+</html>
