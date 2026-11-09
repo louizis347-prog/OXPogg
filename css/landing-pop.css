@@ -86,3 +86,24 @@ html.ld.pop .sec.alt.link{background:#FFC93C!important}
 html.ld.pop .journey li{height:auto!important;min-height:0;overflow:visible;padding-bottom:18px}
 html.ld.pop .sec.ao-vivo{background:#6C47E0!important}
 html.ld.pop .tut-steps button{box-shadow:4px 4px 0 #14183a!important}
+html.ld.pop .xp-art{margin:-4px -4px 16px;border-radius:20px 20px 0 0;overflow:hidden;border-bottom:4px solid #14183a;aspect-ratio:16/9;background:#fff}
+html.ld.pop .xp-art img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+html.ld.pop .xp:hover .xp-art img{transform:scale(1.06)}
+html.ld.pop .xp{padding-top:0!important;overflow:hidden}
+html.ld.pop .xp header{margin-top:4px}
+html.ld.pop .sec{overflow-x:clip}
+@media(max-width:700px){html.ld.pop .hero2 .stage{padding:20px 8px 0;max-width:100%}html.ld.pop .hero2 .hp{width:min(38vw,170px)}html.ld.pop .hero2 .hp.back{margin-right:-18px}html.ld.pop .hero2 .chip2.c-top{right:6px}}
+html.ld.pop .xp-art{margin:0 -22px 16px!important;border-radius:0!important;border-top:0}
+/* ilustrações com respiro: moldura própria, longe das bordas do cartão */
+html.ld.pop .xp{padding-top:22px!important}
+html.ld.pop .xp-art{margin:0 0 18px!important;border-radius:18px!important;border:3px solid #14183a!important;box-shadow:4px 4px 0 #14183a;overflow:hidden}
+html.ld.pop .xp header{margin-top:0}
+html.ld.pop .cl .art,html.ld.pop .cl>div:first-child{border-radius:14px}
+html.ld.pop .cl{padding:12px!important}
+html.ld.pop .cl .art{border-radius:16px;border:3px solid #14183a;overflow:hidden}
+html.ld.pop .cl>div:not(.art){padding-left:6px;padding-right:6px}
+html.ld.pop .tut-steps,html.ld.pop .tut-steps>*{filter:none!important}
+html.ld.pop .tut-steps button{box-shadow:4px 4px 0 #14183a!important}
+html.ld.pop .prof .panel,html.ld.pop .prof .lvl-box{border:3px solid #14183a;box-shadow:5px 5px 0 #14183a}
+html.ld.pop .cl .crs b{background:#FFE08A!important;color:#14183a!important;border:2px solid #14183a;opacity:1!important}
+html.ld.pop .cl small{color:#2b3160;font-weight:700}
