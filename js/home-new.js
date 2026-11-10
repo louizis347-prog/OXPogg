@@ -35,7 +35,7 @@ function enhance(){
   const cidL=(ep&&ep.cid)||(typeof ST!=='undefined'&&ST.lastCourse)||'en-a1';
   const lang=LA[(String(cidL).match(/^(?:nb)?(en|es|fr|de|it|pt|ja|ko)/)||[])[1]]||'en';
   const html=`<section class="hn-hero hn-in${ref?' rs':''}" aria-label="Boas-vindas">
-    <div class="hn-bg">${HomeArt.scene()}</div>
+    <div class="hn-bg hn-mesh"><span class="fc f2">🎬</span><span class="fc f3">📖</span><span class="fc f4">🎵</span></div>
     <figure class="hn-frame" aria-hidden="true"><img src="img/landing/art/lang-${lang}.svg" width="480" height="360" alt="" decoding="async"><i class="hn-glow"></i></figure>
     <div class="hn-copy">
       <span class="hn-chip">${esc(eyebrow||'Episódios de 10 minutos')}</span>
