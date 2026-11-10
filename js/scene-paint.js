@@ -32,7 +32,8 @@ var R=[ /* [tema, regex] em ordem de prioridade; testado primeiro na obra/títul
  ['museum',/museum|painting|gallery|exhibit|monet|van gogh|mona lisa|louvre|statue|sculpture|ancient|egypt|artist|canvas|history/],
  ['studio',/podcast|radio|album|record\b|\bband\b|singer|guitar|\bdj\b|studio|beatles|news\b|journal|talk show|broadcast|microphone|song|music\b|headline|interview/],
  ['classroom',/school|class\b|classroom|teacher|student|exam|homework|university|college|lesson|dead poets|matilda|professor|study|quiz|grade/],
- ['library',/library|bookshop|novel|\bbooks?\b|author|writer|poem|literature|shakespeare|dickens|austen|reading|read\b|diary|letter|manuscript|story/],
+ ['bedroom',/toy story|pixar|\btoys?\b|bedtime|sleepover|pajama|nursery/],
+ ['library',/library|bookshop|novel|\bbooks?\b|author|writer|poem|literature|shakespeare|dickens|austen|reading|manuscript/],
  ['restaurant',/restaurant|menu|waiter|wine\b|dinner|order food|bistro|reservation|chef\b|tasting|banquet|feast/],
  ['kitchen',/kitchen|cook|recipe|bake|baking|ratatouille|masterchef|pasta|soup|sugar|flour|oven|ingredient|stir\b|whisk|simmer/],
  ['cafe',/caf[eé]|coffee|\btea\b|diner|brunch|bakery|breakfast|friends\b|barista|sandwich|latte/],
@@ -82,7 +83,9 @@ window.PogPaint={
       if(t==='studio'||t==='theater'||t==='space'||t==='cinema'||t==='gym')tod='night';if(t==='cabin'||t==='rain'||t==='subway')tod=t==='subway'?'day':'night';
       var flip=(h>>3)&1,hue=((h>>5)%5-2)*6;
       var nv=NV[t]||0,v=nv?((h>>7)%(nv+1)):0,nm=t+(v?'-v'+v:'')+'-'+tod;
-      return '<img class="ps-paint" src="img/scenes/'+nm+'.webp" width="1024" height="576" alt="" decoding="async" draggable="false" style="'+(flip?'transform:scaleX(-1);':'')+'filter:hue-rotate('+hue+'deg) saturate(1.04)">';
+      var out='<img class="ps-paint" src="img/scenes/'+nm+'.webp" width="1024" height="576" alt="" decoding="async" draggable="false" style="'+(flip?'transform:scaleX(-1);':'')+'filter:hue-rotate('+hue+'deg) saturate(1.04)">';
+      try{if(window.PogProps&&e&&e.a){var b=PogProps.brief(e,rs);if(b)out+=PogProps.layer(b,e.uid||e.n||e.t)}}catch(y){}
+      return out;
     }catch(x){return ''}
   }
 };

@@ -553,3 +553,7 @@
 .sm-lines{display:flex;flex-direction:column;gap:6px;margin:8px 0 12px}.sm-lines p{margin:0;font:600 17px/1.4 system-ui}.sm-lines small{color:#5b6f8f}
 
 .ps-stage-bk .ps-paint,.az-ill-bk .ps-paint,.wr-nx-bk .ps-paint{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ps-props{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+.ps-rain line{animation:psrain 1.1s linear infinite}@keyframes psrain{to{transform:translate(-18px,60px);opacity:0}}
+.ps-snow circle{animation:pssnow 6s linear infinite}@keyframes pssnow{to{transform:translate(-14px,120px)}}
+@media(prefers-reduced-motion:reduce){.ps-rain line,.ps-snow circle{animation:none}}
