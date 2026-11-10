@@ -19,7 +19,7 @@ def road(s,y,col1='#4a4f5a',col2='#2a2d36'):
     for i in range(7): s.rect(40+i*120,y+(H-y)*.45,60,5,'#f4f1e8',1,.75)
 # ===== EXTERIORES =====
 def t_street(s):
-    heaven(s,(600,120)); city_blocks(s,300,9,[('#9fb4c8','#7c93ab'),('#c7b69c','#a8957a'),('#8aa0a8','#6c838c')],(150,260),(70,130),5)
+    heaven(s,(600,120)); s.refl=(335,.18); city_blocks(s,300,9,[('#9fb4c8','#7c93ab'),('#c7b69c','#a8957a'),('#8aa0a8','#6c838c')],(150,260),(70,130),5)
     s.rect(0,300,W,30,'#b9b4a8'); road(s,330)
     for x in (120,420,700): tree(s,x,330,110,('#2f7d4f','#5fb36a','#b6e07a')); s.light(x+10,250,30)
     for x in (260,600): lamp(s,x,330,120); s.light(x,210,40)
@@ -28,7 +28,7 @@ def t_street(s):
     for x,c in ((180,'#c0453a'),(520,'#3b6aa8')): s.rect(x,342,110,26,c,8); s.rect(x+20,326,60,22,c,6); s.rect(x+26,330,22,14,'#bfe6ff',3); s.rect(x+52,330,22,14,'#bfe6ff',3); s.ell(x+22,368,10,10,'#222'); s.ell(x+88,368,10,10,'#222'); s.shadow(x+55,372,60,5,.35)
     s.rect(660,330,5,40,'#8a8f9e'); s.rect(645,320,36,16,'#2f6aa8',3)
 def t_skyline(s):
-    heaven(s,(300,140),2)
+    heaven(s,(300,140),2); s.refl=(340,.4)
     for k,(y,cols,hr) in enumerate([(300,[('#47507e','#3a4270')],(150,300)),(340,[('#2b3158','#232848')],(120,240))]): city_blocks(s,y,9,cols,hr,(40,90),7+k)
     s.rect(0,340,W,H-340,s.grad([(0,'#3a3f66'),(1,'#161a36')]))
     for i in range(30): s.rect(s.r.uniform(0,W),345+s.r.uniform(0,90),s.r.uniform(30,110),2,'#ffd98a',1,.35)
@@ -56,7 +56,7 @@ def t_desert(s):
     for i in range(6): s.rect(398+i*10,340+i*20,5+i*2,10+i*4,'#f4e6a0',1,.8)
     for x in (80,700): s.rect(x,300,8,60,'#4a7a3a',3); s.rect(x-14,320,8,26,'#4a7a3a',3); s.rect(x+14,312,8,28,'#4a7a3a',3)
 def t_lake(s):
-    heaven(s,(560,120)); 
+    heaven(s,(560,120)); s.refl=(300,.4)
     s.poly([(0,260),(120,150),(240,250),(360,130),(520,260),(640,170),(800,250),(800,300),(0,300)],s.grad([(0,'#5f7fa6'),(1,'#9bb6cf')]))
     s.poly([(80,180),(120,150),(160,185)],'#fff',.8); s.poly([(320,150),(360,130),(400,160)],'#fff',.8)
     hills(s,[(300,30,'#4f8a64','#2f6a50',4)])
@@ -87,7 +87,7 @@ def t_castle(s):
     s.rect(390,260,36,50,'#4a3a2a',16); hills(s,[(340,30,'#5f9a62','#3a7048',5)])
     for x in (80,160,700): tree(s,x,340,90)
 def t_harbor(s):
-    heaven(s,(560,150)); s.rect(0,260,W,H-260,s.grad([(0,'#5fb0d6'),(1,'#1f5a8a')]))
+    heaven(s,(560,150)); s.refl=(262,.35); s.rect(0,260,W,H-260,s.grad([(0,'#5fb0d6'),(1,'#1f5a8a')]))
     for i in range(40): s.rect(s.r.uniform(0,W),270+s.r.uniform(0,170),s.r.uniform(30,110),2,'#fff',1,.3)
     city_blocks(s,262,6,[('#d9a58a','#b27a62'),('#e0c78a','#b79a60'),('#9fb6c4','#7a92a2')],(50,110),(50,90),4)
     for x,c in [(160,'#fff'),(420,'#f4d35e'),(640,'#fff')]:
@@ -151,7 +151,7 @@ def t_rooftop(s):
 # ===== INTERIORES =====
 def wall(s,c1='#f2e6d4',c2='#e0cfb4',fy=330,fl1='#b78a5a',fl2='#8a6038',tile=False):
     s.rect(0,0,W,fy,s.grad([(0,c1),(1,c2)])); wallpaper(s,0,fy)
-    (tile_floor if tile else wood_floor)(s,fy,fl1,fl2); skirting(s,fy); crown(s)
+    (tile_floor if tile else wood_floor)(s,fy,fl1,fl2); skirting(s,fy); crown(s); s.refl=(fy+4,.30 if tile else .16)
 def vw(s):
     def f(x,y,w,h):
         if s.tod=='night':

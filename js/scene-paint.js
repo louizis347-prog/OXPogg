@@ -42,7 +42,7 @@ var R=[ /* [tema, regex] em ordem de prioridade; testado primeiro na obra/títul
  ['bedroom',/\bbed\b|sleep|bedroom|dream|pajama|insomnia|morning routine|wake up|night\b|alarm/],
  ['living',/home\b|house|family|living room|\bsofa|\btv\b|sitcom|roommate|neighbo|furniture|friends and|chores/]
 ];
-var NV={cafe:2,library:2,kitchen:2,living:2,office:2,classroom:2,street:2,park:2,forest:1,lake:1,lobby:2,shop:1,bedroom:1};
+var NV={cafe:2,library:2,kitchen:2,living:2,office:2,classroom:2,street:2,park:2,forest:1,lake:1,lobby:2,shop:1,bedroom:1,studio:1,bakery:1,museum:1,hospital:1,courtroom:1,restaurant:1,harbor:1,farm:1,village:1,castle:1,beach:1,snow:1,airport:1,station:1,theater:1,desert:1,gym:1,cinema:1,subway:1};
 var BYRS={cafe:'cafe',cafe2:'cafe',cafe3:'cafe',diner:'cafe',pizzeria:'cafe',library:'library',lake:'lake',forest:'forest',kitchen:'kitchen',street:'street',city:'street',plaza:'street',office:'office',meetingroom:'office',living:'living',home1:'living',home2:'living',lobby1:'lobby',hall:'lobby',school:'classroom',yard:'park',park:'park',park2:'park',garden:'park',shop:'shop',market:'shop',bookshop:'library',bedroom:'bedroom',pier:'harbor',harbor:'harbor',coast:'harbor',museum:'museum',mountain:'lake',station:'station',castlehall:'castle',musicroom:'studio',nightcity:'skyline',restaurant:'restaurant',stage:'theater',outdoors:'park',workshop:'office'};
 var WEAK={library:1,kitchen:1,cafe:1,shop:1,office:1,classroom:1,hospital:1,courtroom:1,restaurant:1,bakery:1,gym:1,living:1,bedroom:1,lobby:1,museum:1,studio:1,airport:1,station:1,park:1};
 var POOL=['street','cafe','park','living','office','library','shop','kitchen','classroom','lobby','bedroom','restaurant','village','bakery','museum','studio','lake','forest','harbor','farm'];
@@ -63,8 +63,17 @@ function themeOf(e,rs){
 }
 var OK=null;
 function themes(){return OK}
+function pick(rs,ep){
+  var e=ep||(typeof P!=='undefined'&&P&&P.e)||null;if(!e&&!BYRS[rs])return null;
+  var t=themeOf(e,rs),h=hash((e&&(e.uid||e.n||e.t))||rs),tod=TOD[h%TOD.length];
+  if(t==='skyline'||t==='rooftop'||t==='studio'||t==='theater'||t==='space')tod=(h&1)?'night':'gold';
+  if(t==='studio'||t==='theater'||t==='space'||t==='cinema'||t==='gym')tod='night';
+  if(t==='cabin'||t==='rain'||t==='subway')tod=t==='subway'?'day':'night';
+  var nv=NV[t]||0,v=nv?((h>>7)%(nv+1)):0;
+  return {name:t+(v?'-v'+v:'')+'-'+tod,flip:(h>>3)&1,hue:((h>>5)%5-2)*6,theme:t};
+}
 window.PogPaint={
-  theme:themeOf,
+  theme:themeOf,pick:pick,
   bg:function(rs,ep){
     try{
       var e=ep||(typeof P!=='undefined'&&P&&P.e)||null;if(!e&&!BYRS[rs])return '';
@@ -77,4 +86,17 @@ window.PogPaint={
     }catch(x){return ''}
   }
 };
+
+function patchCovers(){
+  var C=window.PogCover;if(!C||C._pp)return;C._pp=1;var og=C.svg;
+  C.svg=function(e,o){
+    try{
+      o=o||{};if(!e||o.noPaint||!e.fr||!e.a)return og.apply(this,arguments);
+      var k=pick((e.stage&&e.stage.rs)||'street',e);if(!k)return og.apply(this,arguments);
+      var num=(o.num!=null&&!o.noNum)?'<g transform="translate(14 14)"><rect width="46" height="30" rx="15" fill="rgba(10,16,30,.62)"/><text x="23" y="21" text-anchor="middle" font-family="Plus Jakarta Sans,system-ui,sans-serif" font-weight="800" font-size="16" fill="#fff">'+String(o.num).replace(/[<>&]/g,'')+'</text></g>':'';
+      return '<svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="'+String(e.t||'').replace(/[<>&"]/g,'')+'"><g'+(k.flip?' transform="translate(400 0) scale(-1 1)"':'')+'><image href="img/scenes/'+k.name+'.webp" width="400" height="225" preserveAspectRatio="xMidYMid slice" style="filter:hue-rotate('+k.hue+'deg) saturate(1.04)"/></g>'+num+'</svg>';
+    }catch(x){return og.apply(this,arguments)}
+  };
+}
+patchCovers();document.addEventListener('DOMContentLoaded',patchCovers);setTimeout(patchCovers,0);setTimeout(patchCovers,800);
 })();

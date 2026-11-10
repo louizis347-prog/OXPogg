@@ -3,7 +3,7 @@ import random, math
 W,H=800,450
 class S:
     def __init__(s,seed=1):
-        s.r=random.Random(seed); s.o=[]; s.d=[]; s.n=0; s.lights=[]; s.tod='day'
+        s.r=random.Random(seed); s.o=[]; s.d=[]; s.n=0; s.lights=[]; s.tod='day'; s.refl=None
     def id(s,p='g'):
         s.n+=1; return f'{p}{s.n}'
     def add(s,x): s.o.append(x)
@@ -49,10 +49,17 @@ class S:
               '<radialGradient id="vig" cx="50%" cy="48%" r="72%"><stop offset=".5" stop-color="#0d0714" stop-opacity="0"/><stop offset="1" stop-color="#0d0714" stop-opacity=".48"/></radialGradient>')
         s.atmos(); body=''.join(s.o)
         hz=horizon/H
+        refl=''
+        if s.refl:
+            ry,ro=s.refl
+            s.d.append(f'<linearGradient id="rfg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset=".55" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="rm" maskUnits="userSpaceOnUse" x="0" y="{ry}" width="{W}" height="{H-ry}"><rect x="0" y="{ry}" width="{W}" height="{H-ry}" fill="url(#rfg)"/></mask>')
+            refl=f'<g mask="url(#rm)" opacity="{ro}"><use href="#sc" xlink:href="#sc" transform="translate(0 {2*ry}) scale(1 -1)" filter="url(#b2)"/></g>'
         gr=f'<linearGradient id="grade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{cool}"/><stop offset="1" stop-color="{warm}"/></linearGradient>'
         hzg=f'<linearGradient id="haze" x1="0" y1="0" x2="0" y2="1"><stop offset="{max(hz-.28,0):.2f}" stop-color="#fff" stop-opacity="0"/><stop offset="{hz:.2f}" stop-color="{warm}" stop-opacity=".22"/><stop offset="{min(hz+.18,1):.2f}" stop-color="{warm}" stop-opacity="0"/></linearGradient>'
         return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid slice"><defs>{defs}{gr}{hzg}<linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#808080"/><stop offset="1" stop-color="#000"/></linearGradient><linearGradient id="ao" x1="0" y1="0" x2="0" y2="1"><stop offset=".62" stop-color="#fff"/><stop offset="1" stop-color="#8e8e9c"/></linearGradient>{"".join(s.d)}</defs>'
                 f'<g id="sc" filter="url(#paint)">{body}</g>'
+                +refl+
+                f'<rect width="{W}" height="{H}" filter="url(#tex)" opacity=".30" style="mix-blend-mode:soft-light"/>'
                 f'<use href="#sc" xlink:href="#sc" filter="url(#bloom)" opacity=".10" style="mix-blend-mode:screen"/>'
                 f'<rect width="{W}" height="{H}" fill="url(#haze)" style="mix-blend-mode:screen"/>'
                 f'<rect width="{W}" height="{H}" fill="url(#grade)" opacity=".3" style="mix-blend-mode:soft-light"/><rect width="{W}" height="{H}" fill="url(#side)" opacity=".5" style="mix-blend-mode:soft-light"/><rect width="{W}" height="{H}" fill="url(#ao)" style="mix-blend-mode:multiply"/><rect width="{W}" height="{H}" filter="url(#plaster)" opacity=".16" style="mix-blend-mode:multiply"/>'
@@ -63,9 +70,11 @@ def sky(s,stops,sun=None):
     if sun: s.glow(sun[0],sun[1],sun[2],sun[3],.9); s.ell(sun[0],sun[1],sun[2]*.16,sun[2]*.16,'#fff8dc',.95)
 def clouds(s,n,y0,col='#fff',op=.55):
     for i in range(n):
-        x=s.r.uniform(0,W); y=y0+s.r.uniform(0,60); sc=s.r.uniform(.7,1.5)
-        for dx,dy,rx,ry in [(0,0,60,14),(-30,4,40,10),(32,3,46,12),(5,-9,34,12)]:
-            s.ell(x+dx*sc,y+dy*sc,rx*sc,ry*sc,col,op,'filter="url(#b2)"')
+        x=s.r.uniform(0,W); y=y0+s.r.uniform(0,60); sc=s.r.uniform(.8,1.6)
+        parts=[(0,0,64,15),(-34,5,42,11),(36,4,48,13),(6,-10,36,13),(-12,-6,30,10)]
+        for dx,dy,rx,ry in parts: s.ell(x+dx*sc,y+dy*sc+5*sc,rx*sc,ry*sc,'#6f86a8',op*.45,'filter="url(#b2)"')
+        for dx,dy,rx,ry in parts: s.ell(x+dx*sc,y+dy*sc,rx*sc,ry*sc,col,op,'filter="url(#b2)"')
+        for dx,dy,rx,ry in parts[3:]: s.ell(x+dx*sc-4,y+dy*sc-4,rx*sc*.6,ry*sc*.5,'#fff',min(1,op+.25),'filter="url(#b2)"')
 def hills(s,layers):
     for (y,amp,col1,col2,sd) in layers:
         r=random.Random(sd); d=f'M0 {H} L0 {y}'
@@ -258,3 +267,6 @@ def city_blocks(s,y,n,cols,hr=(120,240),wr=(50,100),seed=3,wins=True):
     s.end()
 def mist(s,y,h=90,op=.25,col='#ffffff'):
     s.rect(0,y,W,h,s.grad([(0,col,0),(.5,col,op),(1,col,0)]))
+
+def floorlight(s,x,w,y,depth=110,col='#fff3c2',op=.2):
+    s.add(f'<polygon points="{x},{y} {x+w},{y} {x+w*1.5},{y+depth} {x-w*.3},{y+depth}" fill="{col}" opacity="{op}" filter="url(#b4)" style="mix-blend-mode:screen"/>')
