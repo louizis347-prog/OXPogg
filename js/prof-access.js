@@ -10,6 +10,9 @@ function add(nav){
  nav.appendChild(b);
 }
 function sync(){add(document.getElementById('pgnav'));add(document.querySelector('.bnav'))}
-function init(){sync();new MutationObserver(sync).observe(document.body,{childList:true,subtree:true})}
+function pill(){if(document.getElementById('profPill'))return;var a=document.createElement('a');a.id='profPill';a.href=URL_;a.setAttribute('aria-label','Painel do Professor');a.innerHTML=ICON+'<span>Professor</span>';
+ a.style.cssText='position:fixed;left:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:99px;background:#14263a;color:#fff;font:800 13px system-ui,sans-serif;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.28);opacity:.92';
+ a.querySelector('svg').setAttribute('width','16');a.querySelector('svg').setAttribute('height','16');document.body.appendChild(a)}
+function init(){sync();pill();new MutationObserver(sync).observe(document.body,{childList:true,subtree:true})}
 if(document.body)init();else document.addEventListener('DOMContentLoaded',init);
 })();
