@@ -266,3 +266,194 @@ def _(s):
     for x in (120,360,600): lamp(s,x,340,130)
     for i in range(140): x=s.r.uniform(0,W); y=s.r.uniform(0,H); s.add(f'<line x1="{x:.0f}" y1="{y:.0f}" x2="{x-6:.0f}" y2="{y+22:.0f}" stroke="#cfe0ff" stroke-opacity=".3" stroke-width="1.2"/>')
     for i in range(8): s.ell(s.r.uniform(40,760),s.r.uniform(360,440),s.r.uniform(30,70),4,'#cfe0ff',.12)
+# ======= APROFUNDA CENAS VAZIAS =======
+@reg('forest',1)
+def _(s):
+    day=s.tod=='day'
+    s.rect(0,0,W,H,s.grad([(0,'#3d7a52'),(1,'#d7e89a')]) if day else s.grad([(0,'#2d3f6a'),(.5,'#6a5a8a'),(1,'#d99a70')]))
+    s.begin('b4')
+    for x,h in [(40,420),(150,380),(300,430),(470,400),(640,420),(760,380)]: s.rect(x-h*.04,0,h*.08,H,'#33503a',0,.55)
+    s.end()
+    for x,h in [(90,430),(230,400),(390,440),(560,410),(700,430)]:
+        s.rect(x-h*.045,0,h*.09,H,'#2a1f16'); s.rect(x+h*.012,0,h*.02,H,'#fff',0,.06); s.rect(x-h*.045,0,h*.02,H,'#000',0,.25)
+        for k in range(6): s.rect(x-h*.045,k*70+20,h*.09,2,'#000',0,.18)
+    for i in range(26): s.ell(s.r.uniform(0,W),s.r.uniform(0,90),s.r.uniform(40,90),s.r.uniform(20,40),s.r.choice(['#1f5a3c','#2e7d4f','#3f9a5a']),.95)
+    mist(s,240,110,.3,'#fff0d0'); s.beam([(300,0),(390,0),(520,420),(250,420)],'#fff0b0',.34); s.beam([(560,0),(610,0),(700,420),(560,420)],'#fff0b0',.22)
+    s.rect(0,380,W,H-380,s.grad([(0,'#2f5a3a'),(1,'#16301f')]))
+    s.path(f'M0 410 Q200 395 400 415 T800 405 L800 450 L0 450Z',s.grad([(0,'#7fb8d6'),(1,'#2f5f88')]),.0)
+    for i in range(24): s.ell(s.r.uniform(0,W),s.r.uniform(385,445),s.r.uniform(8,26),s.r.uniform(3,8),s.r.choice(['#3f8a4f','#2f6a40','#4f9a58']))
+    for x in (110,300,470,640,720): s.rect(x,396,5,16,'#efe6cf'); s.ell(x+2,396,14,9,'#c0453a'); s.ell(x-3,394,3,2,'#fff'); s.ell(x+8,397,2,2,'#fff')
+    for x,y_ in [(60,415),(250,435),(560,425),(740,440),(400,445)]:
+        for a in range(-5,6): s.path(f'M{x} {y_} Q{x+a*14} {y_-38} {x+a*26} {y_-26+abs(a)*4}',"none",1,'stroke="#3f8a4f" stroke-width="4" stroke-linecap="round"')
+    for i in range(40): s.ell(s.r.uniform(0,W),s.r.uniform(100,400),1.6,1.6,'#fff7b0',.8)
+@reg('gym',1)
+def _(s):
+    wall(s,'#262b36','#171b24',330,'#2a2d34','#15171c',True)
+    s.rect(40,50,720,200,'#aab6c6',4,.55); s.rect(40,50,720,200,s.grad([(0,'#fff',.25),(1,'#fff',0)]),4)
+    for x in (100,300,500,700): person_sil(s,x,330,90,'#222a38'); 
+    for i in range(6): s.rect(70+i*120,250,3,80,'#fff',0,.1)
+    s.rect(60,300,280,16,'#5a5f6a',3); 
+    for i in range(8): s.rect(70+i*34,284,22,16,'#222',3); s.ell(81+i*34,282,9,9,'#c0453a' if i%2 else '#3b6aa8')
+    for x in (440,520,600,680): s.rect(x,300,40,70,'#333',6); s.rect(x+8,310,24,34,'#6fe6a0',3,.5); s.rect(x+16,370,8,30,'#555')
+    plant(s,30,430,1.2); plant(s,770,430,1.2)
+    for x in (150,400,650): hanging_lamp(s,x,0,60,'#e6f2ff')
+@reg('lobby',2)
+def _(s):
+    wall(s,'#eef1f6','#d3dae4',340,'#c9ced9','#8a909f',True)
+    s.rect(0,0,W,30,'#fff'); 
+    for x in (160,400,640): s.rect(x-70,6,140,6,'#fff6c9'); s.light(x,12,90,'#fff6c9',.6)
+    window(s,40,50,300,230,SK[s.tod],'#cfd8e6',4,vw(s),sill=False); window(s,460,50,300,230,SK[s.tod],'#cfd8e6',4,vw(s),sill=False)
+    s.rect(330,250,140,80,'#e7ebf2',4); s.rect(340,260,120,40,'#c9d2e0',3); s.add('<text x="352" y="288" font-family="Arial" font-size="20" fill="#2f6aa8">Welcome</text>')
+    s.rect(300,330,200,40,'#2f6aa8',8); s.rect(300,330,200,5,'#fff',3,.5)
+    for x in (110,690): sofa(s,x-70,410,150,('#4a5a7a','#6a7a9a'))
+    plant(s,40,430,1.5); plant(s,760,430,1.5)
+@reg('cinema',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#2a1522'),(1,'#120810')]))
+    for i in range(9): s.rect(40+i*88,40,58,150,'#3a1a28',4); s.rect(46+i*88,46,46,138,s.r.choice(['#e0525a','#3b6aa8','#f2c24a','#4aa87a','#a85aa8']),3,.85); s.rect(46+i*88,160,46,24,'#fff',2,.9)
+    s.rect(0,230,W,10,'#c9a24a'); s.rect(0,240,W,90,'#1a0a14'); 
+    for i in range(10): s.ell(60+i*76,300,26,40,'#7a1a2a')
+    s.rect(120,330,560,16,'#5a0f1e'); 
+    for i in range(8): s.rect(30+i*98,346,50,70,'#1a0a14',0,.0)
+    s.rect(220,346,360,50,'#c9a24a',6); s.add('<text x="260" y="382" font-family="Georgia" font-size="28" fill="#2a1522">POPCORN</text>')
+    for x in (100,400,700): hanging_lamp(s,x,0,80,'#ffcf80')
+@reg('subway',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#2a3a4a'),(1,'#161e28')])); 
+    for i in range(12): s.rect(i*70,40,66,210,'#d9dfe4',2,.9); s.rect(i*70,40,2,210,'#000',0,.1)
+    s.rect(0,250,W,12,'#f2c24a'); s.rect(0,262,W,H-262,s.grad([(0,'#6a707a'),(1,'#2a2e36')])); 
+    for i in range(14): s.rect(i*60,262,2,H-262,'#000',0,.15)
+    s.rect(140,110,520,130,'#9aa3ac',10); s.rect(150,120,150,110,'#bfe6ff',4,.7); s.rect(310,120,180,110,'#bfe6ff',4,.7); s.rect(500,120,150,110,'#bfe6ff',4,.7); s.rect(140,232,520,16,'#2f6aa8')
+    for x in (60,720): s.rect(x-6,60,12,260,'#c0c8d0'); 
+    s.rect(60,300,100,50,'#3a4a5a',6); s.rect(630,300,100,50,'#3a4a5a',6)
+    for x in (150,400,650): hanging_lamp(s,x,0,50,'#e6f2ff')
+# ======= MAIS VARIANTES DOS TEMAS REPETIDOS =======
+@reg('studio',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#14202a'),(1,'#243442')])); 
+    for i in range(8): s.rect(40+i*92,50,70,190,'#1c2a36',4); 
+    for i in range(8):
+        for j in range(8): s.rect(46+i*92+(j%2)*28,58+j*22,26,18,'#2f4658',3)
+    s.rect(60,300,680,20,'#3a2a20',5); s.rect(100,320,10,100,'#2a1a10'); s.rect(690,320,10,100,'#2a1a10')
+    s.rect(200,240,400,60,'#0c1218',6); s.rect(210,250,380,40,'#14283a',3)
+    for i in range(16): s.rect(222+i*22,258,6,10+((i*7)%22),'#6fe6a0' if i%3 else '#ffd166',1)
+    s.ell(130,270,20,30,'#222'); s.rect(126,296,8,24,'#444'); s.ell(670,270,20,30,'#222'); s.rect(666,296,8,24,'#444')
+    s.rect(380,170,40,12,'#c0453a',3); s.add('<text x="360" y="162" font-family="Arial" font-size="18" fill="#c0453a">ON AIR</text>')
+@reg('bakery',1)
+def _(s):
+    wall(s,'#f6ece0','#e3d2b8',330,'#caa77a','#8f6a3a',True)
+    for i in range(3): s.rect(60+i*240,60,180,150,'#8a5a3a',4); 
+    for i in range(3):
+        for k in range(3): s.rect(70+i*240,70+k*46,160,6,'#5f3a22'); 
+        for k in range(3):
+            for j in range(5): s.ell(88+i*240+j*30,108+k*46,12,8,s.r.choice(['#d9a05a','#c0803a','#e8c27a']))
+    s.rect(100,260,600,70,'#a6824f',5); s.rect(110,230,60,30,'#e9eef0',4); s.rect(210,236,34,24,'#c0453a',4); s.ell(420,246,34,14,'#d9a05a'); s.rect(540,240,100,20,'#f4efe2',3)
+    for x in (200,400,600): hanging_lamp(s,x,0,70,'#ffd08a')
+@reg('museum',1)
+def _(s):
+    wall(s,'#e8e0d0','#cdc2ac',340,'#c4b89c','#8a7d5e',True)
+    s.rect(300,40,200,250,'#a9a08a',4); s.rect(300,40,200,14,'#d9cfb8'); s.path('M300 290 L300 140 Q400 60 500 140 L500 290Z',s.grad([(0,'#7aa8d0'),(1,'#f0c47a')]))
+    for x in (120,680): s.rect(x-40,160,80,180,'#cfc6b0',3); s.ell(x,150,30,34,'#dad2be'); s.rect(x-24,340,48,10,'#b9b09a')
+    for x in (200,600): person_sil(s,x,415,130,'#4a4560')
+    s.rect(380,350,40,40,'#a98a5a',3); s.light(400,60,150,'#fff6d8',.6)
+@reg('hospital',1)
+def _(s):
+    wall(s,'#eef6f2','#d3e6de',330,'#d4dcd8','#9aa7a2',True); s.rect(0,230,W,10,'#6fcf9a')
+    for i in range(3): s.rect(60+i*240,70,170,120,'#fff',6); s.rect(70+i*240,80,150,100,'#e6f4ee',4); s.rect(110+i*240,100,70,60,'#cfe6dc',4)
+    s.rect(0,330,W,6,'#000',0,.12)
+    for x in (140,400,660): s.rect(x-50,300,100,28,'#8a9ca0',6); s.rect(x-50,330,100,10,'#6a7a80'); s.rect(x-36,340,8,40,'#555'); s.rect(x+28,340,8,40,'#555'); s.rect(x-30,282,60,18,'#fff',6)
+    s.rect(700,250,6,120,'#9aa7a2'); s.rect(680,246,50,6,'#9aa7a2'); s.rect(688,260,34,40,'#bfe6ff',6,.8)
+@reg('courtroom',1)
+def _(s):
+    wall(s,'#d9cdb0','#b9a98a',340,'#5a3a24','#2f1d10'); 
+    for x in (60,200,600,740): s.rect(x-16,40,32,300,'#efe6cf',3); s.rect(x-20,40,40,14,'#d9cfb4'); s.rect(x-20,326,40,14,'#d9cfb4')
+    s.rect(300,150,200,50,'#5a3a24',4); s.rect(310,160,180,30,'#3f2a1a',3); s.rect(290,200,220,130,s.grad([(0,'#6a4a30'),(1,'#3f2a1a')]),6)
+    s.rect(120,310,130,16,'#7a5232',3); s.rect(560,310,130,16,'#7a5232',3); s.rect(390,100,20,50,'#c9a24a'); s.ell(400,96,26,26,'#c9a24a'); s.rect(340,60,120,6,'#c9a24a'); s.rect(398,60,4,36,'#c9a24a')
+@reg('restaurant',1)
+def _(s):
+    wall(s,'#e9dcc4','#cdb893',340,'#6a4a30','#3a2616'); window(s,60,50,300,230,SK[s.tod],'#6a4a30',3,vw(s),curt=('#a84a3a','#8a3a2a'))
+    for i,x in enumerate((140,380,610)):
+        s.rect(x-70,320,140,10,'#fff',3); s.rect(x-4,330,8,90,'#7a5a3a'); s.ell(x,316,70,12,'#fff',.0)
+        s.ell(x-30,312,16,5,'#f4efe4'); s.ell(x+30,312,16,5,'#f4efe4'); s.rect(x-3,288,6,22,'#c0453a'); s.glow(x,292,50,'#ffb066',.6)
+        chair(s,x-100,390); chair(s,x+70,390)
+    for x in (140,400,640): hanging_lamp(s,x,0,90,'#ffbf6a')
+    frame(s,470,80,120,80,'#d9825a','#f2d27a'); frame(s,620,100,90,70,'#7aa8d0','#f4c47a')
+@reg('harbor',1)
+def _(s):
+    heaven(s,(260,170)); s.refl=(300,.4); s.rect(0,300,W,H-300,s.grad([(0,'#4aa0cc'),(1,'#1a4a7a')]))
+    s.poly([(0,300),(160,200),(300,300)],'#6a7a8a'); s.poly([(120,250),(160,200),(210,270)],'#fff',.3)
+    for x in (420,560,700): s.rect(x-6,200,10,110,'#6a4a2a'); s.rect(x-30,196,60,6,'#6a4a2a')
+    s.rect(380,300,420,18,'#8a6a4a'); 
+    for x in range(390,800,40): s.rect(x,318,6,40,'#5a4a30')
+    for x,c in [(180,'#c0453a'),(300,'#f2c24a')]: s.poly([(x-70,340),(x+70,340),(x+50,372),(x-50,372)],c); s.rect(x-3,260,5,80,'#6a4a2a'); s.poly([(x+3,264),(x+3,336),(x+56,336)],'#fff')
+@reg('farm',1)
+def _(s):
+    heaven(s,(180,110)); hills(s,[(250,40,'#d9c27a','#b59a52',2),(300,30,'#c0a860','#8f7a3a',3)])
+    for i in range(8): s.path(f'M{-100+i*120} 450 L{300+i*50} 290',"none",.35,'stroke="#8fb050" stroke-width="30"')
+    s.rect(60,170,150,130,'#e9e0c8',4); s.poly([(50,170),(135,110),(220,170)],'#8a4a3a'); s.rect(110,230,50,70,'#6a4a30',3); 
+    for i in range(3): s.ell(500+i*70,380,30,18,'#f4f1e8'); s.ell(480+i*70,372,14,12,'#222')
+    s.path(f'M0 {H} Q300 330 800 {H-30} L800 {H} Z','#8c7a4a',.5)
+    for x in (360,420): s.rect(x,300,6,80,'#6a4a2a'); 
+    s.rect(340,310,100,6,'#6a4a2a'); s.rect(340,340,100,6,'#6a4a2a')
+@reg('village',1)
+def _(s):
+    heaven(s,(180,160)); hills(s,[(240,40,'#8fb98a','#5f8f6a',2)])
+    s.poly([(320,230),(400,130),(480,230)],'#b86a4a'); s.rect(330,230,140,110,'#e9d4a8'); s.rect(380,170,40,50,'#6a4a30'); s.ell(400,160,16,16,'#fff3c0'); s.rect(398,100,4,30,'#6a4a30')
+    for x in (60,160,600,700): s.rect(x,260,80,80,s.r.choice(['#e8b890','#d98b7a','#9fb9d4']),0); s.poly([(x-6,260),(x+40,214),(x+86,260)],'#a4503e'); s.rect(x+30,300,20,40,'#6a4630'); s.rect(x+10,276,14,16,'#f4e6c0'); s.rect(x+56,276,14,16,'#f4e6c0')
+    s.rect(0,340,W,H-340,s.grad([(0,'#cfc2a0'),(1,'#8a7a5a')]))
+    for i in range(9): s.ell(60+i*90,360+(i%3)*20,26,5,'#000',.07)
+    s.ell(400,380,80,16,'#7fb8d6'); s.rect(396,345,8,30,'#c9ced9'); s.ell(400,345,14,6,'#bfe6ff')
+@reg('castle',1)
+def _(s):
+    heaven(s,(600,170)); hills(s,[(280,50,'#6f9a7a','#4a7a5a',2)]); 
+    s.poly([(0,300),(120,170),(240,300)],'#7a8aa0'); s.poly([(560,300),(700,150),(800,300)],'#7a8aa0')
+    s.rect(280,160,240,150,'#b9b0a0'); s.rect(260,120,60,190,'#a9a090'); s.rect(480,120,60,190,'#a9a090')
+    for x in (260,480): s.poly([(x-6,120),(x+30,60),(x+66,120)],'#3a5a8a')
+    for x in range(290,520,28): s.rect(x,150,14,12,'#b9b0a0')
+    s.rect(380,230,40,80,'#3a2a1a',20); s.rect(300,190,16,28,'#2a2a3a',8); s.rect(484,190,16,28,'#2a2a3a',8); s.light(308,204,26,'#ffd27a',.9); s.light(492,204,26,'#ffd27a',.9)
+    s.path(f'M0 {H} L0 330 Q400 300 800 330 L800 {H}Z',s.grad([(0,'#4a8a58'),(1,'#2a5a3a')]))
+    for x in (80,200,700): tree(s,x,360,110)
+@reg('beach',1)
+def _(s):
+    heaven(s,(600,150),2); s.rect(0,230,W,110,s.grad([(0,'#3fb6d6'),(1,'#9fe6ee')]))
+    for i in range(10): s.path(f'M0 {250+i*10} Q200 {240+i*10} 400 {250+i*10} T800 {250+i*10}',"none",.5,'stroke="#fff" stroke-width="2"')
+    s.poly([(0,340),(800,320),(800,450),(0,450)],s.grad([(0,'#f4e0b0'),(1,'#d9b878')])); 
+    s.poly([(250,300),(310,220),(370,300)],'#c9a06a'); s.rect(308,220,4,80,'#6a4a2a')
+    for x,c in [(120,'#e0525a'),(520,'#3b6aa8'),(650,'#f2c24a')]: s.ell(x,400,50,10,'#000',.15); s.poly([(x-50,396),(x,350),(x+50,396)],c); s.rect(x-2,350,4,50,'#6a4a2a')
+    for i in range(14): s.ell(s.r.uniform(0,W),s.r.uniform(350,H),s.r.uniform(2,6),s.r.uniform(1,3),'#fff',.6)
+@reg('snow',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#27364a'),(1,'#8aa0c0')])); 
+    for i in range(80): s.ell(s.r.uniform(0,W),s.r.uniform(0,300),s.r.uniform(.6,1.6),s.r.uniform(.6,1.6),'#fff',.9)
+    s.glow(560,90,70,'#cfd8ff',.6); s.ell(560,90,20,20,'#f4f1dc'); s.poly([(0,330),(160,200),(300,300),(480,170),(640,290),(800,230),(800,450),(0,450)],'#dfe8f4')
+    for x,h in [(80,170),(170,130),(690,190),(750,140)]: pine(s,x,360,h,('#1f4a45','#2f6a5f')); s.poly([(x-h*.3,360-h*.4),(x,360-h),(x+h*.3,360-h*.4)],'#fff',.7)
+    s.rect(300,260,160,100,'#7a5238',3); s.poly([(290,262),(380,196),(470,262)],'#fff'); s.rect(360,310,34,50,'#3a2a1a'); s.rect(318,284,28,24,'#ffd27a',2); s.light(332,296,40,'#ffd27a',.9)
+@reg('airport',1)
+def _(s):
+    wall(s,'#e7ecf4','#c9d2e0',340,'#aab2c2','#6a7284',True); window(s,40,50,720,220,SK[s.tod],'#d9e0ec',4,None,sill=False)
+    s.poly([(260,230),(520,230),(560,208),(500,208),(480,180),(430,180),(444,208),(280,208)],'#fff'); s.poly([(500,208),(560,208),(580,172),(560,172)],'#2f6aa8')
+    s.rect(40,250,720,20,'#7a8294'); 
+    for x in (120,320,520,700): s.rect(x-30,330,60,34,'#4a5a7a',8); s.rect(x-30,312,60,24,'#5a6a8a',8)
+    s.rect(300,60,200,36,'#1f2a3a',4); s.add('<text x="316" y="86" font-family="Arial" font-size="20" fill="#ffd166">GATE 12</text>')
+@reg('station',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#cfd6dc'),(1,'#9aa3ac')])); 
+    for i in range(9): s.path(f'M{i*100} 0 Q{i*100+50} 60 {i*100+100} 0',"none",.4,'stroke="#5a6272" stroke-width="3"')
+    s.rect(0,60,W,8,'#5a6272'); s.rect(0,260,W,H-260,s.grad([(0,'#7a7f88'),(1,'#33363f')])); s.rect(0,258,W,6,'#f2c24a')
+    s.rect(120,120,560,120,'#9aa6b4',4); s.rect(130,130,540,100,'#bfe6ff',3,.6); 
+    s.rect(600,160,120,70,'#1f2a3a',4); s.add('<text x="612" y="206" font-family="Arial" font-size="24" fill="#6fe6a0">10:45</text>')
+    for x in (150,400,650): s.rect(x-4,264,8,130,'#4a4f5a'); s.rect(x-40,270,80,10,'#8a6a4a'); s.rect(x-40,300,80,6,'#8a6a4a')
+@reg('theater',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#14102a'),(1,'#241a4a')])); 
+    s.rect(100,70,600,250,s.grad([(0,'#3a2a6a'),(1,'#8a5a8a')])); s.path('M100 320 Q250 220 400 280 T700 250 L700 320Z','#2a1a4a'); s.ell(560,150,50,50,'#f4e6c8'); s.glow(560,150,120,'#f4e6c8',.5)
+    s.poly([(0,0),(100,70),(100,320),(0,H)],s.grad([(0,'#7a1a3a'),(1,'#3a0a1a')])); s.poly([(W,0),(700,70),(700,320),(W,H)],s.grad([(0,'#7a1a3a'),(1,'#3a0a1a')]))
+    s.rect(100,320,600,30,'#5a3a22'); 
+    for i in range(12): s.ell(40+i*66,410,22,12,'#14102a')
+@reg('desert',1)
+def _(s):
+    s.rect(0,0,W,H,s.grad([(0,'#2a3a6a'),(.5,'#c08a7a'),(1,'#f2c28a')])); s.glow(400,300,220,'#ffb066',.6); s.ell(400,290,36,36,'#fff0c0')
+    s.poly([(0,330),(160,260),(320,320),(520,250),(700,320),(800,290),(800,450),(0,450)],s.grad([(0,'#c2744a'),(1,'#7a3a2a')]))
+    s.poly([(0,360),(200,320),(450,350),(800,330),(800,450),(0,450)],s.grad([(0,'#d99a60'),(1,'#a0603a')]))
+    for x in (90,700): s.rect(x,300,10,70,'#2a3a22',4); s.rect(x-16,322,10,30,'#2a3a22',4); s.rect(x+16,314,10,34,'#2a3a22',4)
+    for i in range(10): s.rect(300+i*8,380+i*7,60-i*4,3,'#f4e6a0',1,.5)
