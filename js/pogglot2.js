@@ -540,7 +540,7 @@ function card5(l,i,big){
   const chips=multi?`<div class="lvs">${l.sub.map(cid=>`<button class="lv ${doneCountFor(cid)?'on':''}" data-course="${cid}" title="${E(COURSES[cid].name[L0()])}">${E(lvlOf(cid))}</button>`).join('')}</div>`
     :`<button class="p2btn soft sm go" data-course="${l.sub[0]}">${E(d?t('continue'):t('begin'))}${IC.arrow()}</button>`;
   return `<article class="p5c ${big?'big':''} ${neighbors?'is-neighbors':'is-regular'}" style="--c:${l.c};--cd:${l.cd};--cl:${l.cl};animation-delay:${i*50}ms">
-   <button class="ban" ${hd} tabindex="-1" aria-hidden="true">${sceneArt(l.id+(big?'b':''),LANG_SC[l.id]||'plaza')}<span class="sh"></span></button>
+   <button class="ban" ${hd} tabindex="-1" aria-hidden="true">${window.PogLangArt?`<img class="lang-art" src="${PogLangArt(l.id)}" width="480" height="360" alt="" decoding="async" loading="lazy">`:sceneArt(l.id+(big?'b':''),LANG_SC[l.id]||'plaza')}<span class="sh"></span></button>
    <button class="top" ${hd}><span class="mk">${E(l.mono)}</span><span class="nm"><span class="p5mode">${E(mode)}</span><h3>${E(l.n[L0()])}</h3><small>${multi?'A1–C2':E(lvlOf(l.sub[0])||'')} · ${nf(av)} ${E(t('available'))||'disponíveis'}${av<n?' · '+nf(n)+' '+E(t('planned')):''}</small></span><span class="ar">${IC.arrow()}</span></button>
    <p>${E(g.desc?g.desc[L0()]:'')}</p>
    <div class="pr"><div class="p2bar-p">${''}<i style="width:${(p*100).toFixed(1)}%"></i></div><b>${Math.round(p*100)}%</b></div>${chips}</article>`;
