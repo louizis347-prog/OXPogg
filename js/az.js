@@ -150,7 +150,7 @@ AZ.scn=function(e,kind){
   if(!k){const sc=e.fr.find(f=>f.k==='scene'),cv=e.fr.find(f=>f.k==='cover');const s=(sc&&sc.art&&sc.art.s)||(cv&&cv.art&&cv.art.s);k=BYK[s]}
   return k&&RS[k]?k:null;
 };
-AZ.svg=k=>RS[k]('az'+(++UID));
+AZ.svg=k=>{try{const pt=window.PogPaint&&PogPaint.bg(k);if(pt)return pt}catch(e){}return RS[k]('az'+(++UID))};
 function addBk(){
   try{
     if(typeof P==='undefined'||!P||!P.e||!AZ.on(P.e))return;
