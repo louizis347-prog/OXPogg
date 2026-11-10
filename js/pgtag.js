@@ -162,7 +162,7 @@ FXR.pgme=function(f,st,n){
 FX_LABEL.pgstory='História';FX_KIND.pgstory='story';
 FXR.pgstory=function(f,st,n){
   const scene=S.stage({rs:f.rs||'library',chars:f.chars||[]});
-  st.innerHTML=`<div class="step fx tg"><div class="tg-story"><span>${f.ico||'📖'}</span><p>${f.story||''}</p></div><div class="tg-scene" style="max-height:200px">${scene}</div>
+  st.innerHTML=`<div class="step fx tg"><div class="tg-story"><span>${f.ico||'📖'}</span><p>${f.story||''}</p></div><div class="tg-scene">${scene}</div>
     ${f.bubble?`<div class="tg-bub"><small>${H(f.bubble.who||'')}</small><b>${H(f.bubble.en)}</b><span>${H(f.bubble.pt||'')}</span><button type="button" class="tg-hear" data-say="${H(f.bubble.en)}">🔊</button></div>`:''}</div>`;
   qa('[data-say]',st).forEach(x=>x.onclick=()=>tts(x.dataset.say));
   if(f.bubble)setTimeout(()=>tts(f.bubble.en),450);
