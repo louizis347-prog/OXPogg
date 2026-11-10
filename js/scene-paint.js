@@ -3,11 +3,19 @@
 (function(){
 'use strict';
 var R=[ /* [tema, regex] em ordem de prioridade; testado primeiro na obra/título, depois no vocabulário */
+ ['temple',/japan|tokyo|kyoto|temple|samurai|korea|seoul|china|chinese|asian|sakura|ghibli|spirited|anime|ninja|k-?pop/],
+ ['gym',/\bgym\b|workout|exercise|fitness|training|muscle|boxing|rocky|yoga|stretch|sweat|trainer|warm up/],
+ ['bakery',/bakery|\bbread\b|\bcake\b|pastry|donut|cookie|dessert|croissant|cupcake|muffin/],
+ ['cinema',/cinema|movie theat|premiere|popcorn|film studio|screening|projector|blockbuster/],
+ ['subway',/subway|metro\b|underground|\btube\b|tram\b|commuter|rush hour/],
+ ['bridge',/\bbridge|golden gate|river crossing|overpass/],
+ ['cabin',/cabin|fireplace|cozy|hearth|chimney|cottage|christmas carol|log fire|wood stove/],
+ ['rain',/\brain|storm|umbrella|drizzle|thunder|downpour/],
  ['space',/star trek|star wars|alien\b|space|galaxy|planet|martian|gravity|astronaut|moon landing|rocket|telescope|interstellar|tomorrowland|terminator|sci-?fi|spaceship|mars\b/],
  ['desert',/mad max|desert|sahara|dune|route 66|road trip|western|cowboy|wild west|duel|outlaw|canyon/],
- ['castle',/lord of the rings|hobbit|king\b|queen\b|castle|prince|princess|knight|fairy|macbeth|hamlet|cinderella|beowulf|throne|dragon|harry potter|game of thrones|camelot|medieval|witch|wizard|pinocchio|shrek|rapunzel|sleeping beauty|crown\b/],
+ ['castle',/lord of the rings|hobbit|castle|princess|knight|fairy|macbeth|hamlet|cinderella|beowulf|throne|dragon|harry potter|game of thrones|camelot|medieval|witch|wizard|pinocchio|shrek|rapunzel|sleeping beauty/],
  ['forest',/alice|wonderland|robin hood|forest|woods|hansel|snow white|goldilocks|wizard of oz|peter pan|neverland|jungle|bambi|red riding|mushroom|enchanted|fox\b|wolf|bear\b|goat/],
- ['snow',/snow|winter|frozen|christmas|santa|polar|arctic|shackleton|blizzard|ice\b|cold facts|north pole/],
+ ['snow',/snow|winter|frozen|christmas|santa|polar|arctic|shackleton|blizzard|north pole/],
  ['harbor',/\bship\b|titanic|pirate|\bsea\b|ocean|sailor|\bboat|moby|harbor|harbour|treasure|odyssey|voyage|lighthouse|navigat|captain|whale|shark|cruise|canal/],
  ['beach',/beach|surf|tropical|hawaii|ipanema|island|castaway|swim|summer|coast/],
  ['lake',/mountain|lake\b|climb|everest|walden|alps|heidi|sound of music|hiking|trail|camp|river|waterfall|canyon|wild\b|nature|summit/],
@@ -34,7 +42,10 @@ var R=[ /* [tema, regex] em ordem de prioridade; testado primeiro na obra/títul
  ['bedroom',/\bbed\b|sleep|bedroom|dream|pajama|insomnia|morning routine|wake up|night\b|alarm/],
  ['living',/home\b|house|family|living room|\bsofa|\btv\b|sitcom|roommate|neighbo|furniture|friends and|chores/]
 ];
+var NV={cafe:2,library:2,kitchen:2,living:2,office:2,classroom:2,street:2,park:2,forest:1,lake:1,lobby:2,shop:1,bedroom:1};
 var BYRS={cafe:'cafe',cafe2:'cafe',cafe3:'cafe',diner:'cafe',pizzeria:'cafe',library:'library',lake:'lake',forest:'forest',kitchen:'kitchen',street:'street',city:'street',plaza:'street',office:'office',meetingroom:'office',living:'living',home1:'living',home2:'living',lobby1:'lobby',hall:'lobby',school:'classroom',yard:'park',park:'park',park2:'park',garden:'park',shop:'shop',market:'shop',bookshop:'library',bedroom:'bedroom',pier:'harbor',harbor:'harbor',coast:'harbor',museum:'museum',mountain:'lake',station:'station',castlehall:'castle',musicroom:'studio',nightcity:'skyline',restaurant:'restaurant',stage:'theater',outdoors:'park',workshop:'office'};
+var WEAK={library:1,kitchen:1,cafe:1,shop:1,office:1,classroom:1,hospital:1,courtroom:1,restaurant:1,bakery:1,gym:1,living:1,bedroom:1,lobby:1,museum:1,studio:1,airport:1,station:1,park:1};
+var POOL=['street','cafe','park','living','office','library','shop','kitchen','classroom','lobby','bedroom','restaurant','village','bakery','museum','studio','lake','forest','harbor','farm'];
 var TOD=['day','gold','day','night','gold','day'];
 function hash(s){var h=7;s=String(s);for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h}
 function words(e){var v=(e&&e.v)||[],o=[];for(var i=0;i<v.length;i++){var w=v[i];o.push(Array.isArray(w)?w[0]:(w&&w.w)||w)}return o.join(' ')}
@@ -45,8 +56,8 @@ function themeOf(e,rs){
   for(i=0;i<R.length&&!t;i++)if(R[i][1].test(strong))t=R[i][0];
   var base=BYRS[rs];
   if(!t&&base&&base!=='street')t=base;
-  for(i=0;i<R.length&&!t;i++)if(R[i][1].test(weak))t=R[i][0];
-  t=t||base||'street';
+  for(i=0;i<R.length&&!t;i++)if(WEAK[R[i][0]]&&R[i][1].test(weak))t=R[i][0];
+  if(!t)t=POOL[hash(e.uid||e.n||e.t)%POOL.length];
   try{e._pt=t}catch(x){}
   return t;
 }
@@ -59,9 +70,10 @@ window.PogPaint={
       var e=ep||(typeof P!=='undefined'&&P&&P.e)||null;if(!e&&!BYRS[rs])return '';
       var t=themeOf(e,rs),h=hash((e&&(e.uid||e.n||e.t))||rs),tod=TOD[h%TOD.length];
       if(t==='skyline'||t==='rooftop'||t==='studio'||t==='theater'||t==='space')tod=(h&1)?'night':'gold';
-      if(t==='studio'||t==='theater'||t==='space')tod='night';
+      if(t==='studio'||t==='theater'||t==='space'||t==='cinema'||t==='gym')tod='night';if(t==='cabin'||t==='rain'||t==='subway')tod=t==='subway'?'day':'night';
       var flip=(h>>3)&1,hue=((h>>5)%5-2)*6;
-      return '<img class="ps-paint" src="img/scenes/'+t+'-'+tod+'.webp" width="1024" height="576" alt="" decoding="async" draggable="false" style="'+(flip?'transform:scaleX(-1);':'')+'filter:hue-rotate('+hue+'deg) saturate(1.04)">';
+      var nv=NV[t]||0,v=nv?((h>>7)%(nv+1)):0,nm=t+(v?'-v'+v:'')+'-'+tod;
+      return '<img class="ps-paint" src="img/scenes/'+nm+'.webp" width="1024" height="576" alt="" decoding="async" draggable="false" style="'+(flip?'transform:scaleX(-1);':'')+'filter:hue-rotate('+hue+'deg) saturate(1.04)">';
     }catch(x){return ''}
   }
 };
