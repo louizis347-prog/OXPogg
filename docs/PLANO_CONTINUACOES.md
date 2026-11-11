@@ -62,10 +62,10 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 42 Dinner at my place | 1042 | Comida e bebida | I’d love to! Is {day} at {time} OK? | Coffee date | feita (diálogo próprio) |
 | 43 Where is the bank? | 1043 | Lugares, direções e transporte | Excuse me, where is the {place}? Is it far f | On my way! | feita (diálogo próprio) |
 | 44 Turn left, turn right | 1044 | Lugares, direções e transporte | Excuse me, how do I get to the {place}? | Running in the park | feita (diálogo próprio) |
-| 45 Taking the subway | 1045 | Lugares, direções e transporte | Excuse me, which {vehicle} goes to {place}? | Carrying groceries upstairs | a fazer: diálogo próprio; tema sugerido |
-| 46 The bus stop | 1046 | Lugares, direções e transporte | Excuse me, does this bus go {place}? | Where does the sofa go? | a fazer: diálogo próprio; tema sugerido |
-| 47 Buy a transit card | 1047 | Compras e dinheiro | Hi! I need a {item}. {amount} dollars, pleas | Can you watch my bag? | a fazer: diálogo próprio; tema sugerido |
-| 48 Taking a taxi | 1048 | Lugares, direções e transporte | To the {place}, please. {terminal}. | Waiter training | a fazer: diálogo próprio; tema sugerido |
+| 45 Taking the subway | 1045 | Lugares, direções e transporte | Excuse me, which {vehicle} goes to {place}? | Carrying groceries upstairs | feita (diálogo próprio) |
+| 46 The bus stop | 1046 | Lugares, direções e transporte | Excuse me, does this bus go {place}? | Where does the sofa go? | feita (diálogo próprio) |
+| 47 Buy a transit card | 1047 | Compras e dinheiro | Hi! I need a {item}. {amount} dollars, pleas | Can you watch my bag? | feita (diálogo próprio) |
+| 48 Taking a taxi | 1048 | Lugares, direções e transporte | To the {place}, please. {terminal}. | Waiter training | feita (diálogo próprio) |
 | 49 Parking | 1049 | Lugares, direções e transporte | Excuse me, can I park {where}? | A lost glove | a fazer: diálogo próprio; tema sugerido |
 | 50 At the gas station | 1050 | Lugares, direções e transporte | Hi! Pump number {n}, please. {amount} dollar | Gas on a road trip | a fazer: diálogo próprio; tema sugerido |
 | 51 Renting a bike | 1051 | Compras e dinheiro | I’d like to rent a {thing}. | Booking a hotel by phone | a fazer: diálogo próprio; tema sugerido |
