@@ -263,6 +263,6 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 243 A day at the zoo | 1243 | Viagem e hospedagem | Is there a {thing} in the zoo? | — | feita (diálogo próprio) |
 | 244 At the aquarium | 1244 | Viagem e hospedagem | You can’t {action} in the {place}. | — | feita (diálogo próprio) |
 | 245 Theme park rides | 1245 | Lugares, direções e transporte | You have to {verb} {thing}. | — | feita (diálogo próprio) |
-| 246 At the playground | 1246 | Lazer, festas e eventos | You must {action}. | — | a fazer: diálogo próprio; tema sugerido |
-| 247 Valentine's dinner | 1247 | Comida e bebida | Do I have to {action}? | — | a fazer: diálogo próprio; tema sugerido |
-| 248 Mother's Day card | 1248 | Lugares, direções e transporte | You should {action}. | — | a fazer: diálogo próprio; tema sugerido |
+| 246 At the playground | 1246 | Lazer, festas e eventos | You must {action}. | — | feita (diálogo próprio) |
+| 247 Valentine's dinner | 1247 | Comida e bebida | Do I have to {action}? | — | feita (diálogo próprio) |
+| 248 Mother's Day card | 1248 | Lugares, direções e transporte | You should {action}. | — | feita (diálogo próprio) |
