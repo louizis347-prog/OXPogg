@@ -47,8 +47,8 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 27 Sharing food | 1027 | Comida e bebida | Yes, let’s {action}. What’s {adj} here? | Potluck dinner | feita (diálogo próprio) |
 | 28 I'm hungry! | 1028 | Comida e bebida | I’m {feeling}. Are you {feeling2}? | I'm thirsty | feita (diálogo próprio) |
 | 29 Vegetarian options | 1029 | Comida e bebida | Is there {food} in it? | Making a salad | feita (diálogo próprio) |
-| 30 Build your bowl | 1030 | Comida e bebida | A {protein} bowl with {base}, please. | At the smoothie bar | a fazer: diálogo próprio; tema sugerido |
-| 31 Coffee, your way | 1031 | Comida e bebida | A {size} {drink}, please. | At the tea shop | a fazer: diálogo próprio; tema sugerido |
+| 30 Build your bowl | 1030 | Comida e bebida | A {protein} bowl with {base}, please. | At the smoothie bar | feita (diálogo próprio) |
+| 31 Coffee, your way | 1031 | Comida e bebida | A {size} {drink}, please. | At the tea shop | feita (diálogo próprio) |
 | 32 Water, please | 1032 | Comida e bebida | Just {drink}, please. {ice}. | The vending machine | a fazer: diálogo próprio; tema sugerido |
 | 33 At the bakery | 1033 | Comida e bebida | How much is the {item}? | At the donut shop | a fazer: diálogo próprio; tema sugerido |
 | 34 Where is the milk? | 1034 | Lugares, direções e transporte | Excuse me, where is the {item}? | At the cash register | a fazer: diálogo próprio; tema sugerido |
