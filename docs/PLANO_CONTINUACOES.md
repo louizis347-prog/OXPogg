@@ -243,26 +243,26 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 223 The airport shuttle | 1223 | Lugares, direções e transporte | My {thing} leaves at {time}. | — | feita (diálogo próprio) |
 | 224 Checking out | 1224 | Viagem e hospedagem | I arrived {time} ago. | — | feita (diálogo próprio) |
 | 225 At the hostel | 1225 | Viagem e hospedagem | Do you have any {thing} available for {when} | — | feita (diálogo próprio) |
-| 226 The toll booth | 1226 | Lugares, direções e transporte | How far is {place}? It’s {number} miles. | — | a fazer: diálogo próprio; tema sugerido |
-| 227 A parking ticket | 1227 | Compras e dinheiro | Where is {thing}? It’s {place}. | — | a fazer: diálogo próprio; tema sugerido |
-| 228 First English class | 1228 | Trabalho e estudo | My English class is {when}. | — | a fazer: diálogo próprio; tema sugerido |
-| 229 Roll call | 1229 | Dados pessoais e apresentações | The {event} is on {day} at {time}. | — | a fazer: diálogo próprio; tema sugerido |
-| 230 Leaving early | 1230 | Dados pessoais e apresentações | How long does it take to get to the {place}? | — | a fazer: diálogo próprio; tema sugerido |
-| 231 Coffee break | 1231 | Comida e bebida | I {freq} take my coffee {how}. | — | a fazer: diálogo próprio; tema sugerido |
-| 232 Business cards | 1232 | Lugares, direções e transporte | At work, I prefer {pair}. It’s {adj}. | — | a fazer: diálogo próprio; tema sugerido |
-| 233 I lost my badge | 1233 | Lugares, direções e transporte | A temporary badge is {adj} than a new one. I | — | a fazer: diálogo próprio; tema sugerido |
-| 234 Soccer game | 1234 | Lazer, festas e eventos | {name} is {adj} than {other}. | — | a fazer: diálogo próprio; tema sugerido |
-| 235 At the swimming pool | 1235 | Dados pessoais e apresentações | I prefer the {place}. I’d rather {verb} than | — | a fazer: diálogo próprio; tema sugerido |
-| 236 Hiking trail | 1236 | Lazer, festas e eventos | The {a} trail is {adj} than the hill trail. | — | a fazer: diálogo próprio; tema sugerido |
-| 237 Fishing at the lake | 1237 | Lazer, festas e eventos | {thing1} work better than {thing2}. | — | a fazer: diálogo próprio; tema sugerido |
-| 238 At the skate park | 1238 | Lugares, direções e transporte | I prefer {thing}. I’d rather {verb} than {ve | — | a fazer: diálogo próprio; tema sugerido |
-| 239 Ice skating | 1239 | Lazer, festas e eventos | I {adv} {verb} on {day}. | — | a fazer: diálogo próprio; tema sugerido |
-| 240 Art class | 1240 | Trabalho e estudo | {thing} is the most {adj} {noun}. | — | a fazer: diálogo próprio; tema sugerido |
-| 241 Cooking class | 1241 | Comida e bebida | How {adj} should the {thing} be? | — | a fazer: diálogo próprio; tema sugerido |
-| 242 Dance class | 1242 | Trabalho e estudo | Do I have to {action}? | — | a fazer: diálogo próprio; tema sugerido |
-| 243 A day at the zoo | 1243 | Viagem e hospedagem | Is there a {thing} in the zoo? | — | a fazer: diálogo próprio; tema sugerido |
-| 244 At the aquarium | 1244 | Viagem e hospedagem | You can’t {action} in the {place}. | — | a fazer: diálogo próprio; tema sugerido |
-| 245 Theme park rides | 1245 | Lugares, direções e transporte | You have to {verb} {thing}. | — | a fazer: diálogo próprio; tema sugerido |
+| 226 The toll booth | 1226 | Lugares, direções e transporte | How far is {place}? It’s {number} miles. | — | feita (diálogo próprio) |
+| 227 A parking ticket | 1227 | Compras e dinheiro | Where is {thing}? It’s {place}. | — | feita (diálogo próprio) |
+| 228 First English class | 1228 | Trabalho e estudo | My English class is {when}. | — | feita (diálogo próprio) |
+| 229 Roll call | 1229 | Dados pessoais e apresentações | The {event} is on {day} at {time}. | — | feita (diálogo próprio) |
+| 230 Leaving early | 1230 | Dados pessoais e apresentações | How long does it take to get to the {place}? | — | feita (diálogo próprio) |
+| 231 Coffee break | 1231 | Comida e bebida | I {freq} take my coffee {how}. | — | feita (diálogo próprio) |
+| 232 Business cards | 1232 | Lugares, direções e transporte | At work, I prefer {pair}. It’s {adj}. | — | feita (diálogo próprio) |
+| 233 I lost my badge | 1233 | Lugares, direções e transporte | A temporary badge is {adj} than a new one. I | — | feita (diálogo próprio) |
+| 234 Soccer game | 1234 | Lazer, festas e eventos | {name} is {adj} than {other}. | — | feita (diálogo próprio) |
+| 235 At the swimming pool | 1235 | Dados pessoais e apresentações | I prefer the {place}. I’d rather {verb} than | — | feita (diálogo próprio) |
+| 236 Hiking trail | 1236 | Lazer, festas e eventos | The {a} trail is {adj} than the hill trail. | — | feita (diálogo próprio) |
+| 237 Fishing at the lake | 1237 | Lazer, festas e eventos | {thing1} work better than {thing2}. | — | feita (diálogo próprio) |
+| 238 At the skate park | 1238 | Lugares, direções e transporte | I prefer {thing}. I’d rather {verb} than {ve | — | feita (diálogo próprio) |
+| 239 Ice skating | 1239 | Lazer, festas e eventos | I {adv} {verb} on {day}. | — | feita (diálogo próprio) |
+| 240 Art class | 1240 | Trabalho e estudo | {thing} is the most {adj} {noun}. | — | feita (diálogo próprio) |
+| 241 Cooking class | 1241 | Comida e bebida | How {adj} should the {thing} be? | — | feita (diálogo próprio) |
+| 242 Dance class | 1242 | Trabalho e estudo | Do I have to {action}? | — | feita (diálogo próprio) |
+| 243 A day at the zoo | 1243 | Viagem e hospedagem | Is there a {thing} in the zoo? | — | feita (diálogo próprio) |
+| 244 At the aquarium | 1244 | Viagem e hospedagem | You can’t {action} in the {place}. | — | feita (diálogo próprio) |
+| 245 Theme park rides | 1245 | Lugares, direções e transporte | You have to {verb} {thing}. | — | feita (diálogo próprio) |
 | 246 At the playground | 1246 | Lazer, festas e eventos | You must {action}. | — | a fazer: diálogo próprio; tema sugerido |
 | 247 Valentine's dinner | 1247 | Comida e bebida | Do I have to {action}? | — | a fazer: diálogo próprio; tema sugerido |
 | 248 Mother's Day card | 1248 | Lugares, direções e transporte | You should {action}. | — | a fazer: diálogo próprio; tema sugerido |
