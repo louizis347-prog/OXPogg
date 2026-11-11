@@ -68,9 +68,9 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 48 Taking a taxi | 1048 | Lugares, direções e transporte | To the {place}, please. {terminal}. | Waiter training | feita (diálogo próprio) |
 | 49 Parking | 1049 | Lugares, direções e transporte | Excuse me, can I park {where}? | A lost glove | feita (diálogo próprio) |
 | 50 At the gas station | 1050 | Lugares, direções e transporte | Hi! Pump number {n}, please. {amount} dollar | Gas on a road trip | feita (diálogo próprio) |
-| 51 Renting a bike | 1051 | Compras e dinheiro | I’d like to rent a {thing}. | Booking a hotel by phone | a fazer: diálogo próprio; tema sugerido |
-| 52 At the train station | 1052 | Lugares, direções e transporte | One ticket to {city}, please. | Lost cat poster | a fazer: diálogo próprio; tema sugerido |
-| 53 Airport check-in | 1053 | Lugares, direções e transporte | Yes, {thing}. | My flight is delayed | a fazer: diálogo próprio; tema sugerido |
+| 51 Renting a bike | 1051 | Compras e dinheiro | I’d like to rent a {thing}. | Booking a hotel by phone | feita (diálogo próprio) |
+| 52 At the train station | 1052 | Lugares, direções e transporte | One ticket to {city}, please. | Lost cat poster | feita (diálogo próprio) |
+| 53 Airport check-in | 1053 | Lugares, direções e transporte | Yes, {thing}. | My flight is delayed | feita (diálogo próprio) |
 | 54 Security and the gate | 1054 | Dados pessoais e apresentações | Please take off your {thing}. | Fire drill | a fazer: diálogo próprio; tema sugerido |
 | 55 Hotel check-in | 1055 | Viagem e hospedagem | Yes. It’s under the name {name}. | Museum audio guide | a fazer: diálogo próprio; tema sugerido |
 | 56 A small problem | 1056 | Compras e dinheiro | My {thing} doesn't work. | Buying earrings | a fazer: diálogo próprio; tema sugerido |
