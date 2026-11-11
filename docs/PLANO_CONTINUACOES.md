@@ -203,26 +203,26 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 183 I lost my phone | 1183 | Lugares, direções e transporte | Excuse me, I lost my {thing}! | Cooking pasta | feita (diálogo próprio) |
 | 184 A flat tire | 1184 | Dados pessoais e apresentações | Hi. I have a {problem}. | Saying sorry to a friend | feita (diálogo próprio) |
 | 185 At the dog park | 1185 | Lugares, direções e transporte | What a {adj} dog! | I can speak English! | feita (diálogo próprio) |
-| 186 Exchange money | 1186 | Compras e dinheiro | I'd like to exchange {amount} {currency}. | Comparing prices | a fazer: diálogo próprio; tema sugerido |
-| 187 Meet my friend | 1187 | Dados pessoais e apresentações | This is my {who} {name}. | At the pediatrician | a fazer: diálogo próprio; tema sugerido |
-| 188 Where's the restroom? | 1188 | Lugares, direções e transporte | Excuse me, where's the {place}? | Baking cookies | a fazer: diálogo próprio; tema sugerido |
-| 189 Room service | 1189 | Viagem e hospedagem | This is room {number}. I need {thing}, pleas | Delivering packages | a fazer: diálogo próprio; tema sugerido |
-| 190 The bus is late | 1190 | Lugares, direções e transporte | Excuse me, is this the {place} for {line}? | Backyard barbecue | a fazer: diálogo próprio; tema sugerido |
-| 191 A gift for a friend | 1191 | Dados pessoais e apresentações | It's for my {person}. | I want to send a package | a fazer: diálogo próprio; tema sugerido |
-| 192 Long time no see | 1192 | Tempo, horas e telefone | I live in {place} now. | Setting up a new phone | a fazer: diálogo próprio; tema sugerido |
-| 193 May I borrow a ladder? | 1193 | Dados pessoais e apresentações | Could I borrow your {thing}? | Happy and sad | a fazer: diálogo próprio; tema sugerido |
-| 194 Snow day | 1194 | Tempo, horas e telefone | Is school {state} {time}? | The elevator is broken | a fazer: diálogo próprio; tema sugerido |
-| 195 Bowling night | 1195 | Comida e bebida | {number} players, please. | Labor Day barbecue | a fazer: diálogo próprio; tema sugerido |
-| 196 Video call home | 1196 | Casa e rotina | Can you {verb} me? {fix}. | Team lunch order | a fazer: diálogo próprio; tema sugerido |
-| 197 Mini golf date | 1197 | Lazer, festas e eventos | Hi! {number} for {activity}, please. | Learning to swim | a fazer: diálogo próprio; tema sugerido |
-| 198 Can I get a ride? | 1198 | Lugares, direções e transporte | My car is in the shop. Can I get a ride {whe | Living in Brazil | a fazer: diálogo próprio; tema sugerido |
-| 199 I'm late! | 1199 | Tempo, horas e telefone | My {thing} didn't ring. I'm so late! | Building a snowman | a fazer: diálogo próprio; tema sugerido |
-| 200 What should I wear? | 1200 | Tempo, horas e telefone | What should I wear {when}? | At the rest stop | a fazer: diálogo próprio; tema sugerido |
-| 201 Set the table | 1201 | Dados pessoais e apresentações | {ask} you {action}, please? | Congratulations! | a fazer: diálogo próprio; tema sugerido |
-| 202 Our grocery list | 1202 | Dados pessoais e apresentações | We need some {item} and some {item2}. | Counting change | a fazer: diálogo próprio; tema sugerido |
-| 203 What should we watch? | 1203 | Compras e dinheiro | What should we {action}? | — | a fazer: diálogo próprio; tema sugerido |
-| 204 Packing a lunch | 1204 | Comida e bebida | I'll make a {filling} sandwich with {extra}. | — | a fazer: diálogo próprio; tema sugerido |
-| 205 At the vet | 1205 | Saúde e corpo | We're going to {action} him now. | — | a fazer: diálogo próprio; tema sugerido |
+| 186 Exchange money | 1186 | Compras e dinheiro | I'd like to exchange {amount} {currency}. | Comparing prices | feita (diálogo próprio) |
+| 187 Meet my friend | 1187 | Dados pessoais e apresentações | This is my {who} {name}. | At the pediatrician | feita (diálogo próprio) |
+| 188 Where's the restroom? | 1188 | Lugares, direções e transporte | Excuse me, where's the {place}? | Baking cookies | feita (diálogo próprio) |
+| 189 Room service | 1189 | Viagem e hospedagem | This is room {number}. I need {thing}, pleas | Delivering packages | feita (diálogo próprio) |
+| 190 The bus is late | 1190 | Lugares, direções e transporte | Excuse me, is this the {place} for {line}? | Backyard barbecue | feita (diálogo próprio) |
+| 191 A gift for a friend | 1191 | Dados pessoais e apresentações | It's for my {person}. | I want to send a package | feita (diálogo próprio) |
+| 192 Long time no see | 1192 | Tempo, horas e telefone | I live in {place} now. | Setting up a new phone | feita (diálogo próprio) |
+| 193 May I borrow a ladder? | 1193 | Dados pessoais e apresentações | Could I borrow your {thing}? | Happy and sad | feita (diálogo próprio) |
+| 194 Snow day | 1194 | Tempo, horas e telefone | Is school {state} {time}? | The elevator is broken | feita (diálogo próprio) |
+| 195 Bowling night | 1195 | Comida e bebida | {number} players, please. | Labor Day barbecue | feita (diálogo próprio) |
+| 196 Video call home | 1196 | Casa e rotina | Can you {verb} me? {fix}. | Team lunch order | feita (diálogo próprio) |
+| 197 Mini golf date | 1197 | Lazer, festas e eventos | Hi! {number} for {activity}, please. | Learning to swim | feita (diálogo próprio) |
+| 198 Can I get a ride? | 1198 | Lugares, direções e transporte | My car is in the shop. Can I get a ride {whe | Living in Brazil | feita (diálogo próprio) |
+| 199 I'm late! | 1199 | Tempo, horas e telefone | My {thing} didn't ring. I'm so late! | Building a snowman | feita (diálogo próprio) |
+| 200 What should I wear? | 1200 | Tempo, horas e telefone | What should I wear {when}? | At the rest stop | feita (diálogo próprio) |
+| 201 Set the table | 1201 | Dados pessoais e apresentações | {ask} you {action}, please? | Congratulations! | feita (diálogo próprio) |
+| 202 Our grocery list | 1202 | Dados pessoais e apresentações | We need some {item} and some {item2}. | Counting change | feita (diálogo próprio) |
+| 203 What should we watch? | 1203 | Compras e dinheiro | What should we {action}? | — | feita (diálogo próprio) |
+| 204 Packing a lunch | 1204 | Comida e bebida | I'll make a {filling} sandwich with {extra}. | — | feita (diálogo próprio) |
+| 205 At the vet | 1205 | Saúde e corpo | We're going to {action} him now. | — | feita (diálogo próprio) |
 | 206 Watering the plants | 1206 | Comida e bebida | Can you {favor} {when}? | — | a fazer: diálogo próprio; tema sugerido |
 | 207 Not interested | 1207 | Dados pessoais e apresentações | Thanks, but I'm {reason}. | — | a fazer: diálogo próprio; tema sugerido |
 | 208 The smoke alarm | 1208 | Casa e rotina | I'll {action}. | — | a fazer: diálogo próprio; tema sugerido |
