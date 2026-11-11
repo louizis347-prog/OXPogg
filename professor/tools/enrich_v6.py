@@ -51,6 +51,8 @@ def enrich(d):
     i = next(k for k, p in enumerate(pg) if p.get('kind') == 'work'); pg.insert(i + 1, story)
     i = next(k for k, p in enumerate(pg) if p.get('kind') == 'exit'); pg.insert(i, me1)
     d['pages'] = pg
+    if pnt and not os.path.exists(os.path.join(ROOT, '..', 'img', 'scenes', pnt['name'] + '.webp')): pnt = dict(pnt, name=re.sub(r'-v-?(\d)', r'-v\1', pnt['name']).replace('-v-', '-'))
+    if pnt and not os.path.exists(os.path.join(ROOT, '..', 'img', 'scenes', pnt['name'] + '.webp')): pnt = dict(pnt, name=pnt['theme'] + '-day')
     if pnt: d['paint'] = pnt
     return True
 changed = 0
@@ -64,5 +66,5 @@ for f in sorted(glob.glob(os.path.join(D, '[0-9]*.json'))):
     d = json.load(open(f, encoding='utf-8'))
     if d['n'] in have: continue
     cur.append({'n': d['n'], 'unit': d['unit'], 'level': d['level'], 'title': d['title'], 'pt': d['pt'], 'scene': d['scene'], 'cast': d['cast']}); add += 1
-cur.sort(key=lambda x: x['n']); json.dump(cur, open(cp, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+cur.sort(key=lambda x: (x['n'] % 1000, x['n'] >= 1000)); json.dump(cur, open(cp, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('aulas alteradas', changed, '| indexadas', add, '| total no índice', len(cur))

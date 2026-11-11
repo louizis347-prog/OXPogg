@@ -71,7 +71,7 @@ def natural(Z):
     Z['verbs'] = vs
     return Z
 def prev_ctx(n):
-    if n < 2: return None
+    if n < 2 or n >= 1000: return None
     items, words, quiz, say = [], [], [], []
     for k, back in enumerate((1, 2)):
         m = n - back
@@ -90,7 +90,8 @@ def prev_ctx(n):
     if not items: return None
     return dict(items=items[:6], words=words[:6], quiz=quiz[:4], say=say)
 def build(n):
-    S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[nb_index(n) - 1]
+    n0 = n % 1000 if n >= 1000 else n
+    S = supp(n); en, nb = EN[S.get('reg', n0) - 1], NB[S.get('nb', nb_index(n0)) - 1]
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]
@@ -115,7 +116,7 @@ def build(n):
         st = en.get('stage') or {}
         return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
     P = {}
-    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level='A1', unit=dict(n=math.ceil(n / 8), k=(n - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
+    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level='A1', unit=dict(n=math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
         canDo=['Say: ' + strip(i['en']) for i in exps[:4]], success=['I understand the conversation.', 'I use the key expression.', 'I answer a real question.', 'I close politely.'],
         think=strip(nhero.get('mission', '')))
