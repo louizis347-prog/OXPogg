@@ -73,81 +73,81 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 53 Airport check-in | 1053 | Lugares, direções e transporte | Yes, {thing}. | My flight is delayed | feita (diálogo próprio) |
 | 54 Security and the gate | 1054 | Dados pessoais e apresentações | Please take off your {thing}. | Fire drill | feita (diálogo próprio) |
 | 55 Hotel check-in | 1055 | Viagem e hospedagem | Yes. It’s under the name {name}. | Museum audio guide | feita (diálogo próprio) |
-| 56 A small problem | 1056 | Compras e dinheiro | My {thing} doesn't work. | Buying earrings | a fazer: diálogo próprio; tema sugerido |
-| 57 I'm lost | 1057 | Lugares, direções e transporte | I want to go to the {place}. | Choosing a card | a fazer: diálogo próprio; tema sugerido |
-| 58 Buying tickets | 1058 | Compras e dinheiro | {num} tickets for the tour, please. | Lost child at the mall | a fazer: diálogo próprio; tema sugerido |
-| 59 Is it far? | 1059 | Lugares, direções e transporte | Is the {place} far from here? | Sending a postcard | a fazer: diálogo próprio; tema sugerido |
-| 60 Crossing the street | 1060 | Lugares, direções e transporte | When can I {action}? | When is the next train? | a fazer: diálogo próprio; tema sugerido |
-| 61 Tourist information | 1061 | Viagem e hospedagem | What can I {verb} in {time}? | Campfire stories | a fazer: diálogo próprio; tema sugerido |
-| 62 Renting a car | 1062 | Lugares, direções e transporte | I'd like to rent a {type} car. | The school bus | a fazer: diálogo próprio; tema sugerido |
-| 63 Apartment tour | 1063 | Viagem e hospedagem | Is there a {room}? | A school field trip | a fazer: diálogo próprio; tema sugerido |
-| 64 A room for rent | 1064 | Viagem e hospedagem | It's {price} dollars a month. | A day at the beach | a fazer: diálogo próprio; tema sugerido |
-| 65 Meet the landlord | 1065 | Dados pessoais e apresentações | Where is the {place}? | Office birthday | a fazer: diálogo próprio; tema sugerido |
-| 66 Furniture shopping | 1066 | Compras e dinheiro | I'm looking for a {item}. | A phone charger | a fazer: diálogo próprio; tema sugerido |
-| 67 In my kitchen | 1067 | Casa e rotina | Where is the {thing}? | Using the microwave | a fazer: diálogo próprio; tema sugerido |
-| 68 At the laundry room | 1068 | Viagem e hospedagem | Put your {things} in the {machine}. | Changing seats | a fazer: diálogo próprio; tema sugerido |
-| 69 Borrowing sugar | 1069 | Dados pessoais e apresentações | Can I borrow {thing}? | A package at the door | a fazer: diálogo próprio; tema sugerido |
-| 70 Chores at home | 1070 | Casa e rotina | Whose turn is it to {chore}? | Sleepover | a fazer: diálogo próprio; tema sugerido |
-| 71 Wi-Fi and internet | 1071 | Casa e rotina | The {thing} is very {state}. | Making the bed | a fazer: diálogo próprio; tema sugerido |
-| 72 Trash and recycling | 1072 | Casa e rotina | Where does the {thing} go? | My evening routine | a fazer: diálogo próprio; tema sugerido |
-| 73 Clothes and sizes | 1073 | Compras e dinheiro | I'm looking for a {item}. | At the copy shop | a fazer: diálogo próprio; tema sugerido |
-| 74 Shoe shopping | 1074 | Compras e dinheiro | I need {item} in size {size}. | Buying souvenirs | a fazer: diálogo próprio; tema sugerido |
-| 75 At the mall | 1075 | Compras e dinheiro | How much {verb}? | Winter coat shopping | a fazer: diálogo próprio; tema sugerido |
-| 76 The fitting room | 1076 | Viagem e hospedagem | Can I try {thing} on? | Easter egg hunt | a fazer: diálogo próprio; tema sugerido |
-| 77 Returning an item | 1077 | Compras e dinheiro | I’d like to return {thing}. | Bike share station | a fazer: diálogo próprio; tema sugerido |
-| 78 At the phone store | 1078 | Compras e dinheiro | I need a {thing}. | Printing photos | a fazer: diálogo próprio; tema sugerido |
-| 79 At the drugstore | 1079 | Compras e dinheiro | Excuse me, where is the {thing}? | A flat bike tire | a fazer: diálogo próprio; tema sugerido |
-| 80 At the barbershop | 1080 | Compras e dinheiro | I need a {thing}. | At the thrift store | a fazer: diálogo próprio; tema sugerido |
-| 81 At the checkout | 1081 | Compras e dinheiro | I’d like {bag}, please. | At the nail salon | a fazer: diálogo próprio; tema sugerido |
-| 82 Garage sale | 1082 | Compras e dinheiro | How much is {item}? | Borrowing a book | a fazer: diálogo próprio; tema sugerido |
-| 83 My morning routine | 1083 | Casa e rotina | I get up at {time}. | Cleaning day | a fazer: diálogo próprio; tema sugerido |
-| 84 At the gym | 1084 | Saúde e corpo | How much is {thing}? | A flu shot | a fazer: diálogo próprio; tema sugerido |
-| 85 Weekend plans | 1085 | Lazer, festas e eventos | I’m going to the {place} on {day}. | My favorite movie | a fazer: diálogo próprio; tema sugerido |
-| 86 Movie night | 1086 | Lazer, festas e eventos | I like {type} films. | New Year's resolutions | a fazer: diálogo próprio; tema sugerido |
-| 87 A picnic in the park | 1087 | Lugares, direções e transporte | I have {food} and {drink}. | What's the Wi-Fi password? | a fazer: diálogo próprio; tema sugerido |
-| 88 At the beach | 1088 | Viagem e hospedagem | Is the {thing} {adj}? | Mowing the lawn | a fazer: diálogo próprio; tema sugerido |
-| 89 Camping | 1089 | Viagem e hospedagem | Where should we put the {thing}? | Buying a used bike | a fazer: diálogo próprio; tema sugerido |
-| 90 At the museum | 1090 | Viagem e hospedagem | {number} tickets, please. | Storm warning | a fazer: diálogo próprio; tema sugerido |
-| 91 A concert night | 1091 | Lazer, festas e eventos | Where are our {thing}? | Posting a photo | a fazer: diálogo próprio; tema sugerido |
-| 92 A baseball game | 1092 | Lazer, festas e eventos | I don't know {thing} well. Can you {verb}? | Let's dance! | a fazer: diálogo próprio; tema sugerido |
-| 93 A street festival | 1093 | Lugares, direções e transporte | Is that a {kind} band? | Parent-teacher meeting | a fazer: diálogo próprio; tema sugerido |
-| 94 Follow me! | 1094 | Dados pessoais e apresentações | My {thing} is {name}. | Packing boxes | a fazer: diálogo próprio; tema sugerido |
-| 95 Taking a photo | 1095 | Lazer, festas e eventos | Excuse me, can you take our {thing}? | Trick or treat | a fazer: diálogo próprio; tema sugerido |
-| 96 Halloween night | 1096 | Lazer, festas e eventos | I'm a {costume}. | Our Thanksgiving table | a fazer: diálogo próprio; tema sugerido |
-| 97 Thanksgiving dinner | 1097 | Comida e bebida | Thank you for {thing}. | Weekend brunch | a fazer: diálogo próprio; tema sugerido |
-| 98 Fourth of July | 1098 | Dados pessoais e apresentações | Can I bring {thing}? | Complaining politely | a fazer: diálogo próprio; tema sugerido |
-| 99 Christmas shopping | 1099 | Compras e dinheiro | It's for my {person}. | The copy machine | a fazer: diálogo próprio; tema sugerido |
-| 100 New Year's Eve | 1100 | Lazer, festas e eventos | We have {number} minutes. | Dance recital | a fazer: diálogo próprio; tema sugerido |
-| 101 Super Bowl party | 1101 | Comida e bebida | Who’s {doing}? | Meals on the plane | a fazer: diálogo próprio; tema sugerido |
-| 102 The goodbye party | 1102 | Dados pessoais e apresentações | When is your {thing}? | Asking for a discount | a fazer: diálogo próprio; tema sugerido |
-| 103 My first day | 1103 | Tempo, horas e telefone | Where do I {verb}? | My phone is dead | a fazer: diálogo próprio; tema sugerido |
-| 104 Meet my coworker | 1104 | Dados pessoais e apresentações | {name} works in {dept}. | Get well soon | a fazer: diálogo próprio; tema sugerido |
-| 105 Office supplies | 1105 | Trabalho e estudo | Do you have {thing}? | Taking a test | a fazer: diálogo próprio; tema sugerido |
-| 106 Printing documents | 1106 | Compras e dinheiro | How do I {verb} the {thing}? | Yard sale | a fazer: diálogo próprio; tema sugerido |
-| 107 Lunch with coworkers | 1107 | Comida e bebida | Do you want to {verb} with us? | Hotel breakfast | a fazer: diálogo próprio; tema sugerido |
-| 108 What time is the meeting? | 1108 | Dados pessoais e apresentações | When is the {event}? | A child's haircut | a fazer: diálogo próprio; tema sugerido |
-| 109 Can you help me? | 1109 | Saúde e corpo | Can you {verb} me? | Blood pressure | a fazer: diálogo próprio; tema sugerido |
-| 110 Send an email | 1110 | Trabalho e estudo | Can you help me {verb} an email? | Job interview | a fazer: diálogo próprio; tema sugerido |
-| 111 A call at work | 1111 | Trabalho e estudo | Hello. Can I speak to {person}, please? | Fireworks night | a fazer: diálogo próprio; tema sugerido |
-| 112 The library card | 1112 | Lugares, direções e transporte | Hi! I'd like a {thing}, please. | An overdue book | a fazer: diálogo próprio; tema sugerido |
-| 113 Enroll in a class | 1113 | Trabalho e estudo | I'd like to enroll in {type} class. | A compliment at work | a fazer: diálogo próprio; tema sugerido |
-| 114 Study group | 1114 | Trabalho e estudo | Hey, want to join our {group}? | Asking an officer | a fazer: diálogo próprio; tema sugerido |
-| 115 School supplies | 1115 | Trabalho e estudo | I need {thing}. | School pick-up | a fazer: diálogo próprio; tema sugerido |
-| 116 Ask the teacher | 1116 | Comida e bebida | What does "{word}" mean? | Road trip snacks | a fazer: diálogo próprio; tema sugerido |
-| 117 Homework help | 1117 | Casa e rotina | What is {a} {op} {b}? | The Wi-Fi is down | a fazer: diálogo próprio; tema sugerido |
-| 118 Lost and found | 1118 | Lugares, direções e transporte | Excuse me, I lost my {thing}. | Unpacking | a fazer: diálogo próprio; tema sugerido |
-| 119 Job application | 1119 | Trabalho e estudo | Hello! I'm here for the {thing}. | Group project | a fazer: diálogo próprio; tema sugerido |
-| 120 Volunteer day | 1120 | Trabalho e estudo | What can I {verb}? | Volunteering | a fazer: diálogo próprio; tema sugerido |
-| 121 My child's school | 1121 | Trabalho e estudo | How is {name} in {place}? | Before the test | a fazer: diálogo próprio; tema sugerido |
-| 122 End of the work week | 1122 | Trabalho e estudo | My {noun} was {adj}, but good. | Raking leaves | a fazer: diálogo próprio; tema sugerido |
-| 123 I don't feel well | 1123 | Saúde e corpo | I don't feel {adj}. I have a {pain}. | At the pharmacy | a fazer: diálogo próprio; tema sugerido |
-| 124 Make an appointment | 1124 | Saúde e corpo | Hi. I'd like to make an appointment {when}. | A sick day | a fazer: diálogo próprio; tema sugerido |
-| 125 At the doctor's office | 1125 | Saúde e corpo | I have a {a} and a {b}. | Bandages and sunscreen | a fazer: diálogo próprio; tema sugerido |
-| 126 Parts of the body | 1126 | Saúde e corpo | {verb} your {part}. | Feeding the ducks | a fazer: diálogo próprio; tema sugerido |
-| 127 Healthy food | 1127 | Comida e bebida | I eat {food} every day. | Cheering for the team | a fazer: diálogo próprio; tema sugerido |
-| 128 Sleep and tired | 1128 | Casa e rotina | I went to bed {when}. | Doing the dishes | a fazer: diálogo próprio; tema sugerido |
-| 129 At the dentist | 1129 | Saúde e corpo | I have an appointment at {time}. | A doggy bag | a fazer: diálogo próprio; tema sugerido |
-| 130 Glasses and eye test | 1130 | Saúde e corpo | I can’t see well {where}. | At the stadium | a fazer: diálogo próprio; tema sugerido |
+| 56 A small problem | 1056 | Compras e dinheiro | My {thing} doesn't work. | Buying earrings | feita (diálogo próprio) |
+| 57 I'm lost | 1057 | Lugares, direções e transporte | I want to go to the {place}. | Choosing a card | feita (diálogo próprio) |
+| 58 Buying tickets | 1058 | Compras e dinheiro | {num} tickets for the tour, please. | Lost child at the mall | feita (diálogo próprio) |
+| 59 Is it far? | 1059 | Lugares, direções e transporte | Is the {place} far from here? | Sending a postcard | feita (diálogo próprio) |
+| 60 Crossing the street | 1060 | Lugares, direções e transporte | When can I {action}? | When is the next train? | feita (diálogo próprio) |
+| 61 Tourist information | 1061 | Viagem e hospedagem | What can I {verb} in {time}? | Campfire stories | feita (diálogo próprio) |
+| 62 Renting a car | 1062 | Lugares, direções e transporte | I'd like to rent a {type} car. | The school bus | feita (diálogo próprio) |
+| 63 Apartment tour | 1063 | Viagem e hospedagem | Is there a {room}? | A school field trip | feita (diálogo próprio) |
+| 64 A room for rent | 1064 | Viagem e hospedagem | It's {price} dollars a month. | A day at the beach | feita (diálogo próprio) |
+| 65 Meet the landlord | 1065 | Dados pessoais e apresentações | Where is the {place}? | Office birthday | feita (diálogo próprio) |
+| 66 Furniture shopping | 1066 | Compras e dinheiro | I'm looking for a {item}. | A phone charger | feita (diálogo próprio) |
+| 67 In my kitchen | 1067 | Casa e rotina | Where is the {thing}? | Using the microwave | feita (diálogo próprio) |
+| 68 At the laundry room | 1068 | Viagem e hospedagem | Put your {things} in the {machine}. | Changing seats | feita (diálogo próprio) |
+| 69 Borrowing sugar | 1069 | Dados pessoais e apresentações | Can I borrow {thing}? | A package at the door | feita (diálogo próprio) |
+| 70 Chores at home | 1070 | Casa e rotina | Whose turn is it to {chore}? | Sleepover | feita (diálogo próprio) |
+| 71 Wi-Fi and internet | 1071 | Casa e rotina | The {thing} is very {state}. | Making the bed | feita (diálogo próprio) |
+| 72 Trash and recycling | 1072 | Casa e rotina | Where does the {thing} go? | My evening routine | feita (diálogo próprio) |
+| 73 Clothes and sizes | 1073 | Compras e dinheiro | I'm looking for a {item}. | At the copy shop | feita (diálogo próprio) |
+| 74 Shoe shopping | 1074 | Compras e dinheiro | I need {item} in size {size}. | Buying souvenirs | feita (diálogo próprio) |
+| 75 At the mall | 1075 | Compras e dinheiro | How much {verb}? | Winter coat shopping | feita (diálogo próprio) |
+| 76 The fitting room | 1076 | Viagem e hospedagem | Can I try {thing} on? | Easter egg hunt | feita (diálogo próprio) |
+| 77 Returning an item | 1077 | Compras e dinheiro | I’d like to return {thing}. | Bike share station | feita (diálogo próprio) |
+| 78 At the phone store | 1078 | Compras e dinheiro | I need a {thing}. | Printing photos | feita (diálogo próprio) |
+| 79 At the drugstore | 1079 | Compras e dinheiro | Excuse me, where is the {thing}? | A flat bike tire | feita (diálogo próprio) |
+| 80 At the barbershop | 1080 | Compras e dinheiro | I need a {thing}. | At the thrift store | feita (diálogo próprio) |
+| 81 At the checkout | 1081 | Compras e dinheiro | I’d like {bag}, please. | At the nail salon | feita (diálogo próprio) |
+| 82 Garage sale | 1082 | Compras e dinheiro | How much is {item}? | Borrowing a book | feita (diálogo próprio) |
+| 83 My morning routine | 1083 | Casa e rotina | I get up at {time}. | Cleaning day | feita (diálogo próprio) |
+| 84 At the gym | 1084 | Saúde e corpo | How much is {thing}? | A flu shot | feita (diálogo próprio) |
+| 85 Weekend plans | 1085 | Lazer, festas e eventos | I’m going to the {place} on {day}. | My favorite movie | feita (diálogo próprio) |
+| 86 Movie night | 1086 | Lazer, festas e eventos | I like {type} films. | New Year's resolutions | feita (diálogo próprio) |
+| 87 A picnic in the park | 1087 | Lugares, direções e transporte | I have {food} and {drink}. | What's the Wi-Fi password? | feita (diálogo próprio) |
+| 88 At the beach | 1088 | Viagem e hospedagem | Is the {thing} {adj}? | Mowing the lawn | feita (diálogo próprio) |
+| 89 Camping | 1089 | Viagem e hospedagem | Where should we put the {thing}? | Buying a used bike | feita (diálogo próprio) |
+| 90 At the museum | 1090 | Viagem e hospedagem | {number} tickets, please. | Storm warning | feita (diálogo próprio) |
+| 91 A concert night | 1091 | Lazer, festas e eventos | Where are our {thing}? | Posting a photo | feita (diálogo próprio) |
+| 92 A baseball game | 1092 | Lazer, festas e eventos | I don't know {thing} well. Can you {verb}? | Let's dance! | feita (diálogo próprio) |
+| 93 A street festival | 1093 | Lugares, direções e transporte | Is that a {kind} band? | Parent-teacher meeting | feita (diálogo próprio) |
+| 94 Follow me! | 1094 | Dados pessoais e apresentações | My {thing} is {name}. | Packing boxes | feita (diálogo próprio) |
+| 95 Taking a photo | 1095 | Lazer, festas e eventos | Excuse me, can you take our {thing}? | Trick or treat | feita (diálogo próprio) |
+| 96 Halloween night | 1096 | Lazer, festas e eventos | I'm a {costume}. | Our Thanksgiving table | feita (diálogo próprio) |
+| 97 Thanksgiving dinner | 1097 | Comida e bebida | Thank you for {thing}. | Weekend brunch | feita (diálogo próprio) |
+| 98 Fourth of July | 1098 | Dados pessoais e apresentações | Can I bring {thing}? | Complaining politely | feita (diálogo próprio) |
+| 99 Christmas shopping | 1099 | Compras e dinheiro | It's for my {person}. | The copy machine | feita (diálogo próprio) |
+| 100 New Year's Eve | 1100 | Lazer, festas e eventos | We have {number} minutes. | Dance recital | feita (diálogo próprio) |
+| 101 Super Bowl party | 1101 | Comida e bebida | Who’s {doing}? | Meals on the plane | feita (diálogo próprio) |
+| 102 The goodbye party | 1102 | Dados pessoais e apresentações | When is your {thing}? | Asking for a discount | feita (diálogo próprio) |
+| 103 My first day | 1103 | Tempo, horas e telefone | Where do I {verb}? | My phone is dead | feita (diálogo próprio) |
+| 104 Meet my coworker | 1104 | Dados pessoais e apresentações | {name} works in {dept}. | Get well soon | feita (diálogo próprio) |
+| 105 Office supplies | 1105 | Trabalho e estudo | Do you have {thing}? | Taking a test | feita (diálogo próprio) |
+| 106 Printing documents | 1106 | Compras e dinheiro | How do I {verb} the {thing}? | Yard sale | feita (diálogo próprio) |
+| 107 Lunch with coworkers | 1107 | Comida e bebida | Do you want to {verb} with us? | Hotel breakfast | feita (diálogo próprio) |
+| 108 What time is the meeting? | 1108 | Dados pessoais e apresentações | When is the {event}? | A child's haircut | feita (diálogo próprio) |
+| 109 Can you help me? | 1109 | Saúde e corpo | Can you {verb} me? | Blood pressure | feita (diálogo próprio) |
+| 110 Send an email | 1110 | Trabalho e estudo | Can you help me {verb} an email? | Job interview | feita (diálogo próprio) |
+| 111 A call at work | 1111 | Trabalho e estudo | Hello. Can I speak to {person}, please? | Fireworks night | feita (diálogo próprio) |
+| 112 The library card | 1112 | Lugares, direções e transporte | Hi! I'd like a {thing}, please. | An overdue book | feita (diálogo próprio) |
+| 113 Enroll in a class | 1113 | Trabalho e estudo | I'd like to enroll in {type} class. | A compliment at work | feita (diálogo próprio) |
+| 114 Study group | 1114 | Trabalho e estudo | Hey, want to join our {group}? | Asking an officer | feita (diálogo próprio) |
+| 115 School supplies | 1115 | Trabalho e estudo | I need {thing}. | School pick-up | feita (diálogo próprio) |
+| 116 Ask the teacher | 1116 | Comida e bebida | What does "{word}" mean? | Road trip snacks | feita (diálogo próprio) |
+| 117 Homework help | 1117 | Casa e rotina | What is {a} {op} {b}? | The Wi-Fi is down | feita (diálogo próprio) |
+| 118 Lost and found | 1118 | Lugares, direções e transporte | Excuse me, I lost my {thing}. | Unpacking | feita (diálogo próprio) |
+| 119 Job application | 1119 | Trabalho e estudo | Hello! I'm here for the {thing}. | Group project | feita (diálogo próprio) |
+| 120 Volunteer day | 1120 | Trabalho e estudo | What can I {verb}? | Volunteering | feita (diálogo próprio) |
+| 121 My child's school | 1121 | Trabalho e estudo | How is {name} in {place}? | Before the test | feita (diálogo próprio) |
+| 122 End of the work week | 1122 | Trabalho e estudo | My {noun} was {adj}, but good. | Raking leaves | feita (diálogo próprio) |
+| 123 I don't feel well | 1123 | Saúde e corpo | I don't feel {adj}. I have a {pain}. | At the pharmacy | feita (diálogo próprio) |
+| 124 Make an appointment | 1124 | Saúde e corpo | Hi. I'd like to make an appointment {when}. | A sick day | feita (diálogo próprio) |
+| 125 At the doctor's office | 1125 | Saúde e corpo | I have a {a} and a {b}. | Bandages and sunscreen | feita (diálogo próprio) |
+| 126 Parts of the body | 1126 | Saúde e corpo | {verb} your {part}. | Feeding the ducks | feita (diálogo próprio) |
+| 127 Healthy food | 1127 | Comida e bebida | I eat {food} every day. | Cheering for the team | feita (diálogo próprio) |
+| 128 Sleep and tired | 1128 | Casa e rotina | I went to bed {when}. | Doing the dishes | feita (diálogo próprio) |
+| 129 At the dentist | 1129 | Saúde e corpo | I have an appointment at {time}. | A doggy bag | feita (diálogo próprio) |
+| 130 Glasses and eye test | 1130 | Saúde e corpo | I can’t see well {where}. | At the stadium | feita (diálogo próprio) |
 | 131 I need help! | 1131 | Saúde e corpo | Please call {who}! | Drying clothes | a fazer: diálogo próprio; tema sugerido |
 | 132 I want to open an account | 1132 | Dados pessoais e apresentações | I want to open a {type} account. | Giving directions | a fazer: diálogo próprio; tema sugerido |
 | 133 Where is the ATM? | 1133 | Lugares, direções e transporte | Excuse me, is there {place} here? | Ironing clothes | a fazer: diálogo próprio; tema sugerido |
