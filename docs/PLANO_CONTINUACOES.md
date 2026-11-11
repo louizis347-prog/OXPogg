@@ -163,26 +163,26 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 143 Foggy city | 1143 | Viagem e hospedagem | It's so {weather} today. | Changing a light bulb | feita (diálogo próprio) |
 | 144 Museums in D.C. | 1144 | Viagem e hospedagem | {n} adults, please. | The big party | feita (diálogo próprio) |
 | 145 History walk | 1145 | Dados pessoais e apresentações | When does the {thing} start? In {time} minut | Meeting the boss | feita (diálogo próprio) |
-| 146 Jazz and gumbo | 1146 | Dados pessoais e apresentações | Listen! Do you hear that {thing}? | Hot and cold | a fazer: diálogo próprio; tema sugerido |
-| 147 Show night | 1147 | Dados pessoais e apresentações | We have {number} tickets. Here you go. | Stargazing | a fazer: diálogo próprio; tema sugerido |
-| 148 National park | 1148 | Lugares, direções e transporte | What can we see at the {place}? | Building a sandcastle | a fazer: diálogo próprio; tema sugerido |
-| 149 Rodeo night | 1149 | Dados pessoais e apresentações | {greeting}! This is our first {thing}. | Decorating the tree | a fazer: diálogo próprio; tema sugerido |
-| 150 College tour | 1150 | Viagem e hospedagem | I like {subject} and {subject2}. | Hot chocolate on a cold day | a fazer: diálogo próprio; tema sugerido |
-| 151 Football Friday | 1151 | Tempo, horas e telefone | Let’s sit {place}. | Payday | a fazer: diálogo próprio; tema sugerido |
-| 152 County fair | 1152 | Dados pessoais e apresentações | Let’s {do} the {place}. | A thank-you note | a fazer: diálogo próprio; tema sugerido |
-| 153 Housewarming party | 1153 | Casa e rotina | Congratulations! Here’s a {gift} for your {r | Bedtime story | a fazer: diálogo próprio; tema sugerido |
-| 154 Moving day | 1154 | Casa e rotina | I’ll {verb} this {thing}. | The thermostat | a fazer: diálogo próprio; tema sugerido |
-| 155 My package is lost | 1155 | Lugares, direções e transporte | Hi. My {thing} didn’t arrive. | Allergy season | a fazer: diálogo próprio; tema sugerido |
-| 156 Book club night | 1156 | Compras e dinheiro | I loved the {thing}. | I want to return this | a fazer: diálogo próprio; tema sugerido |
-| 157 Pickup basketball | 1157 | Lazer, festas e eventos | Do you want to play {game} with us? | Wedding day | a fazer: diálogo próprio; tema sugerido |
-| 158 Yoga class | 1158 | Saúde e corpo | Do I need {thing}? | Goodbye at the airport | a fazer: diálogo próprio; tema sugerido |
-| 159 Surprise party | 1159 | Lazer, festas e eventos | Everyone, hide {place}! | Block party | a fazer: diálogo próprio; tema sugerido |
-| 160 Wedding invitation | 1160 | Lazer, festas e eventos | The wedding is {date}, at {time} o'clock. | Video games | a fazer: diálogo próprio; tema sugerido |
-| 161 Baby shower | 1161 | Lazer, festas e eventos | The baby is due in {month}. | Babysitting | a fazer: diálogo próprio; tema sugerido |
-| 162 Flying a kite | 1162 | Lazer, festas e eventos | It is {adj} today. | A leaky faucet | a fazer: diálogo próprio; tema sugerido |
-| 163 Welcome, new neighbor | 1163 | Dados pessoais e apresentações | I just moved into {apt}. | At the hair salon | a fazer: diálogo próprio; tema sugerido |
-| 164 Elevator small talk | 1164 | Compras e dinheiro | I’m on the {ord} floor. | At the toy store | a fazer: diálogo próprio; tema sugerido |
-| 165 Excuse me, sorry | 1165 | Tempo, horas e telefone | Excuse me, can I {verb}? | Black Friday | a fazer: diálogo próprio; tema sugerido |
+| 146 Jazz and gumbo | 1146 | Dados pessoais e apresentações | Listen! Do you hear that {thing}? | Hot and cold | feita (diálogo próprio) |
+| 147 Show night | 1147 | Dados pessoais e apresentações | We have {number} tickets. Here you go. | Stargazing | feita (diálogo próprio) |
+| 148 National park | 1148 | Lugares, direções e transporte | What can we see at the {place}? | Building a sandcastle | feita (diálogo próprio) |
+| 149 Rodeo night | 1149 | Dados pessoais e apresentações | {greeting}! This is our first {thing}. | Decorating the tree | feita (diálogo próprio) |
+| 150 College tour | 1150 | Viagem e hospedagem | I like {subject} and {subject2}. | Hot chocolate on a cold day | feita (diálogo próprio) |
+| 151 Football Friday | 1151 | Tempo, horas e telefone | Let’s sit {place}. | Payday | feita (diálogo próprio) |
+| 152 County fair | 1152 | Dados pessoais e apresentações | Let’s {do} the {place}. | A thank-you note | feita (diálogo próprio) |
+| 153 Housewarming party | 1153 | Casa e rotina | Congratulations! Here’s a {gift} for your {r | Bedtime story | feita (diálogo próprio) |
+| 154 Moving day | 1154 | Casa e rotina | I’ll {verb} this {thing}. | The thermostat | feita (diálogo próprio) |
+| 155 My package is lost | 1155 | Lugares, direções e transporte | Hi. My {thing} didn’t arrive. | Allergy season | feita (diálogo próprio) |
+| 156 Book club night | 1156 | Compras e dinheiro | I loved the {thing}. | I want to return this | feita (diálogo próprio) |
+| 157 Pickup basketball | 1157 | Lazer, festas e eventos | Do you want to play {game} with us? | Wedding day | feita (diálogo próprio) |
+| 158 Yoga class | 1158 | Saúde e corpo | Do I need {thing}? | Goodbye at the airport | feita (diálogo próprio) |
+| 159 Surprise party | 1159 | Lazer, festas e eventos | Everyone, hide {place}! | Block party | feita (diálogo próprio) |
+| 160 Wedding invitation | 1160 | Lazer, festas e eventos | The wedding is {date}, at {time} o'clock. | Video games | feita (diálogo próprio) |
+| 161 Baby shower | 1161 | Lazer, festas e eventos | The baby is due in {month}. | Babysitting | feita (diálogo próprio) |
+| 162 Flying a kite | 1162 | Lazer, festas e eventos | It is {adj} today. | A leaky faucet | feita (diálogo próprio) |
+| 163 Welcome, new neighbor | 1163 | Dados pessoais e apresentações | I just moved into {apt}. | At the hair salon | feita (diálogo próprio) |
+| 164 Elevator small talk | 1164 | Compras e dinheiro | I’m on the {ord} floor. | At the toy store | feita (diálogo próprio) |
+| 165 Excuse me, sorry | 1165 | Tempo, horas e telefone | Excuse me, can I {verb}? | Black Friday | feita (diálogo próprio) |
 | 166 Could you repeat that? | 1166 | Tempo, horas e telefone | Sorry, could you {ask} that? | A clogged drain | a fazer: diálogo próprio; tema sugerido |
 | 167 I like your jacket | 1167 | Dados pessoais e apresentações | I like your {thing}. | Popcorn and soda | a fazer: diálogo próprio; tema sugerido |
 | 168 Passport control | 1168 | Viagem e hospedagem | {reason}. I'm here on {kind}. | Donating clothes | a fazer: diálogo próprio; tema sugerido |
