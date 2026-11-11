@@ -34,10 +34,10 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 14 Hello, who is this? | 1014 | Dados pessoais e apresentações | Hi, is {name} there? Can I speak to {name}? | Video call meeting | feita (diálogo próprio) |
 | 15 Texting a friend | 1015 | Dados pessoais e apresentações | Are you free {when}? Let's get {food}. | Plans for tomorrow | feita (diálogo próprio) |
 | 16 My pet | 1016 | Dados pessoais e apresentações | My {pet} is {name}. | Walking the dog | feita (diálogo próprio) |
-| 17 I like, I don't like | 1017 | Dados pessoais e apresentações | Do you like {thing}? Yes, I {ans}. | My favorite season | a fazer: diálogo próprio; tema sugerido |
-| 18 My hobbies | 1018 | Dados pessoais e apresentações | I play {game} and I read {thing}. | Joining a club | a fazer: diálogo próprio; tema sugerido |
-| 19 My favorite music | 1019 | Lazer, festas e eventos | I like {music}. My favorite singer is {name} | Karaoke night | a fazer: diálogo próprio; tema sugerido |
-| 20 Describing a person | 1020 | Dados pessoais e apresentações | She is {height} and {trait}. | My best friend | a fazer: diálogo próprio; tema sugerido |
+| 17 I like, I don't like | 1017 | Dados pessoais e apresentações | Do you like {thing}? Yes, I {ans}. | My favorite season | feita (diálogo próprio) |
+| 18 My hobbies | 1018 | Dados pessoais e apresentações | I play {game} and I read {thing}. | Joining a club | feita (diálogo próprio) |
+| 19 My favorite music | 1019 | Lazer, festas e eventos | I like {music}. My favorite singer is {name} | Karaoke night | feita (diálogo próprio) |
+| 20 Describing a person | 1020 | Dados pessoais e apresentações | She is {height} and {trait}. | My best friend | feita (diálogo próprio) |
 | 21 What's the weather? | 1021 | Tempo, horas e telefone | It's {weather} today, but it's {weather2}. | Weather forecast | a fazer: diálogo próprio; tema sugerido |
 | 22 Party invitation | 1022 | Lazer, festas e eventos | Sure! {question} is it? | Dinner invitation | a fazer: diálogo próprio; tema sugerido |
 | 23 Breakfast at the diner | 1023 | Comida e bebida | I’d like {food} and eggs. | Eggs and toast | a fazer: diálogo próprio; tema sugerido |
