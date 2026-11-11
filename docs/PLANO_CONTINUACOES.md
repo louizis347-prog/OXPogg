@@ -223,26 +223,26 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 203 What should we watch? | 1203 | Compras e dinheiro | What should we {action}? | — | feita (diálogo próprio) |
 | 204 Packing a lunch | 1204 | Comida e bebida | I'll make a {filling} sandwich with {extra}. | — | feita (diálogo próprio) |
 | 205 At the vet | 1205 | Saúde e corpo | We're going to {action} him now. | — | feita (diálogo próprio) |
-| 206 Watering the plants | 1206 | Comida e bebida | Can you {favor} {when}? | — | a fazer: diálogo próprio; tema sugerido |
-| 207 Not interested | 1207 | Dados pessoais e apresentações | Thanks, but I'm {reason}. | — | a fazer: diálogo próprio; tema sugerido |
-| 208 The smoke alarm | 1208 | Casa e rotina | I'll {action}. | — | a fazer: diálogo próprio; tema sugerido |
-| 209 Painting the room | 1209 | Viagem e hospedagem | Let's {action} {when}. | — | a fazer: diálogo próprio; tema sugerido |
-| 210 Leave a message | 1210 | Tempo, horas e telefone | Hello, this is {name}. I'm calling about {to | — | a fazer: diálogo próprio; tema sugerido |
-| 211 Wrong number | 1211 | Tempo, horas e telefone | I {verb} the {thing} wrong. | — | a fazer: diálogo próprio; tema sugerido |
-| 212 Cancel an appointment | 1212 | Saúde e corpo | I made an appointment {when}, but {reason}. | — | a fazer: diálogo próprio; tema sugerido |
-| 213 At the hardware store | 1213 | Compras e dinheiro | My {thing} broke {when}. | — | a fazer: diálogo próprio; tema sugerido |
-| 214 Buying headphones | 1214 | Compras e dinheiro | My old {thing} broke {when}. | — | a fazer: diálogo próprio; tema sugerido |
-| 215 At the butcher | 1215 | Compras e dinheiro | I'd like {amount} of {meat}, please. | — | a fazer: diálogo próprio; tema sugerido |
-| 216 At the farmers market | 1216 | Compras e dinheiro | Last {when}, I bought {thing} here. It was { | — | a fazer: diálogo próprio; tema sugerido |
-| 217 At the bookstore | 1217 | Compras e dinheiro | Last week I {action} a {thing}. It was {adj} | — | a fazer: diálogo próprio; tema sugerido |
-| 218 At the pet store | 1218 | Dados pessoais e apresentações | Yesterday my {pet} {action} his {thing}. | — | a fazer: diálogo próprio; tema sugerido |
-| 219 At the flower shop | 1219 | Compras e dinheiro | Last {when}, I bought {thing} for {person}. | — | a fazer: diálogo próprio; tema sugerido |
-| 220 A new watch battery | 1220 | Compras e dinheiro | My {thing} {action} {when}. | — | a fazer: diálogo próprio; tema sugerido |
-| 221 Using a map app | 1221 | Lugares, direções e transporte | How long does it take to walk to the {place} | — | a fazer: diálogo próprio; tema sugerido |
-| 222 The ferry ride | 1222 | Lugares, direções e transporte | When does the {thing} leave? Is it from {pla | — | a fazer: diálogo próprio; tema sugerido |
-| 223 The airport shuttle | 1223 | Lugares, direções e transporte | My {thing} leaves at {time}. | — | a fazer: diálogo próprio; tema sugerido |
-| 224 Checking out | 1224 | Viagem e hospedagem | I arrived {time} ago. | — | a fazer: diálogo próprio; tema sugerido |
-| 225 At the hostel | 1225 | Viagem e hospedagem | Do you have any {thing} available for {when} | — | a fazer: diálogo próprio; tema sugerido |
+| 206 Watering the plants | 1206 | Comida e bebida | Can you {favor} {when}? | — | feita (diálogo próprio) |
+| 207 Not interested | 1207 | Dados pessoais e apresentações | Thanks, but I'm {reason}. | — | feita (diálogo próprio) |
+| 208 The smoke alarm | 1208 | Casa e rotina | I'll {action}. | — | feita (diálogo próprio) |
+| 209 Painting the room | 1209 | Viagem e hospedagem | Let's {action} {when}. | — | feita (diálogo próprio) |
+| 210 Leave a message | 1210 | Tempo, horas e telefone | Hello, this is {name}. I'm calling about {to | — | feita (diálogo próprio) |
+| 211 Wrong number | 1211 | Tempo, horas e telefone | I {verb} the {thing} wrong. | — | feita (diálogo próprio) |
+| 212 Cancel an appointment | 1212 | Saúde e corpo | I made an appointment {when}, but {reason}. | — | feita (diálogo próprio) |
+| 213 At the hardware store | 1213 | Compras e dinheiro | My {thing} broke {when}. | — | feita (diálogo próprio) |
+| 214 Buying headphones | 1214 | Compras e dinheiro | My old {thing} broke {when}. | — | feita (diálogo próprio) |
+| 215 At the butcher | 1215 | Compras e dinheiro | I'd like {amount} of {meat}, please. | — | feita (diálogo próprio) |
+| 216 At the farmers market | 1216 | Compras e dinheiro | Last {when}, I bought {thing} here. It was { | — | feita (diálogo próprio) |
+| 217 At the bookstore | 1217 | Compras e dinheiro | Last week I {action} a {thing}. It was {adj} | — | feita (diálogo próprio) |
+| 218 At the pet store | 1218 | Dados pessoais e apresentações | Yesterday my {pet} {action} his {thing}. | — | feita (diálogo próprio) |
+| 219 At the flower shop | 1219 | Compras e dinheiro | Last {when}, I bought {thing} for {person}. | — | feita (diálogo próprio) |
+| 220 A new watch battery | 1220 | Compras e dinheiro | My {thing} {action} {when}. | — | feita (diálogo próprio) |
+| 221 Using a map app | 1221 | Lugares, direções e transporte | How long does it take to walk to the {place} | — | feita (diálogo próprio) |
+| 222 The ferry ride | 1222 | Lugares, direções e transporte | When does the {thing} leave? Is it from {pla | — | feita (diálogo próprio) |
+| 223 The airport shuttle | 1223 | Lugares, direções e transporte | My {thing} leaves at {time}. | — | feita (diálogo próprio) |
+| 224 Checking out | 1224 | Viagem e hospedagem | I arrived {time} ago. | — | feita (diálogo próprio) |
+| 225 At the hostel | 1225 | Viagem e hospedagem | Do you have any {thing} available for {when} | — | feita (diálogo próprio) |
 | 226 The toll booth | 1226 | Lugares, direções e transporte | How far is {place}? It’s {number} miles. | — | a fazer: diálogo próprio; tema sugerido |
 | 227 A parking ticket | 1227 | Compras e dinheiro | Where is {thing}? It’s {place}. | — | a fazer: diálogo próprio; tema sugerido |
 | 228 First English class | 1228 | Trabalho e estudo | My English class is {when}. | — | a fazer: diálogo próprio; tema sugerido |
