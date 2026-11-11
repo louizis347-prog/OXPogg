@@ -28,12 +28,12 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 8 My family | 1008 | Dados pessoais e apresentações | Yes! This is my {person}. | Meeting his parents | feita (diálogo próprio) |
 | 9 What do you do? | 1009 | Dados pessoais e apresentações | I'm a {job}. And you? | My first day as a barista | feita (diálogo próprio) |
 | 10 Days of the week | 1010 | Tempo, horas e telefone | It's {day}. I have {thing} today. | Asking for a day off | feita (diálogo próprio) |
-| 11 What time is it? | 1011 | Tempo, horas e telefone | It's {time}. | Let's meet at six | a fazer: diálogo próprio; tema sugerido |
-| 12 Months and birthdays | 1012 | Dados pessoais e apresentações | My birthday is in {month}. | What's today's date? | a fazer: diálogo próprio; tema sugerido |
-| 13 Colors and things | 1013 | Tempo, horas e telefone | Is {obj} {owner}? | Which one do you like? | a fazer: diálogo próprio; tema sugerido |
-| 14 Hello, who is this? | 1014 | Dados pessoais e apresentações | Hi, is {name} there? Can I speak to {name}? | Video call meeting | a fazer: diálogo próprio; tema sugerido |
-| 15 Texting a friend | 1015 | Dados pessoais e apresentações | Are you free {when}? Let's get {food}. | Plans for tomorrow | a fazer: diálogo próprio; tema sugerido |
-| 16 My pet | 1016 | Dados pessoais e apresentações | My {pet} is {name}. | Walking the dog | a fazer: diálogo próprio; tema sugerido |
+| 11 What time is it? | 1011 | Tempo, horas e telefone | It's {time}. | Let's meet at six | feita (diálogo próprio) |
+| 12 Months and birthdays | 1012 | Dados pessoais e apresentações | My birthday is in {month}. | What's today's date? | feita (diálogo próprio) |
+| 13 Colors and things | 1013 | Tempo, horas e telefone | Is {obj} {owner}? | Which one do you like? | feita (diálogo próprio) |
+| 14 Hello, who is this? | 1014 | Dados pessoais e apresentações | Hi, is {name} there? Can I speak to {name}? | Video call meeting | feita (diálogo próprio) |
+| 15 Texting a friend | 1015 | Dados pessoais e apresentações | Are you free {when}? Let's get {food}. | Plans for tomorrow | feita (diálogo próprio) |
+| 16 My pet | 1016 | Dados pessoais e apresentações | My {pet} is {name}. | Walking the dog | feita (diálogo próprio) |
 | 17 I like, I don't like | 1017 | Dados pessoais e apresentações | Do you like {thing}? Yes, I {ans}. | My favorite season | a fazer: diálogo próprio; tema sugerido |
 | 18 My hobbies | 1018 | Dados pessoais e apresentações | I play {game} and I read {thing}. | Joining a club | a fazer: diálogo próprio; tema sugerido |
 | 19 My favorite music | 1019 | Lazer, festas e eventos | I like {music}. My favorite singer is {name} | Karaoke night | a fazer: diálogo próprio; tema sugerido |
