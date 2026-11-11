@@ -49,9 +49,9 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 29 Vegetarian options | 1029 | Comida e bebida | Is there {food} in it? | Making a salad | feita (diálogo próprio) |
 | 30 Build your bowl | 1030 | Comida e bebida | A {protein} bowl with {base}, please. | At the smoothie bar | feita (diálogo próprio) |
 | 31 Coffee, your way | 1031 | Comida e bebida | A {size} {drink}, please. | At the tea shop | feita (diálogo próprio) |
-| 32 Water, please | 1032 | Comida e bebida | Just {drink}, please. {ice}. | The vending machine | a fazer: diálogo próprio; tema sugerido |
-| 33 At the bakery | 1033 | Comida e bebida | How much is the {item}? | At the donut shop | a fazer: diálogo próprio; tema sugerido |
-| 34 Where is the milk? | 1034 | Lugares, direções e transporte | Excuse me, where is the {item}? | At the cash register | a fazer: diálogo próprio; tema sugerido |
+| 32 Water, please | 1032 | Comida e bebida | Just {drink}, please. {ice}. | The vending machine | feita (diálogo próprio) |
+| 33 At the bakery | 1033 | Comida e bebida | How much is the {item}? | At the donut shop | feita (diálogo próprio) |
+| 34 Where is the milk? | 1034 | Lugares, direções e transporte | Excuse me, where is the {item}? | At the cash register | feita (diálogo próprio) |
 | 35 Fruit by the pound | 1035 | Dados pessoais e apresentações | {fruit} are {price} a pound. | Dollars and cents | a fazer: diálogo próprio; tema sugerido |
 | 36 Burger combo | 1036 | Comida e bebida | A {food}, please. | Kids' meal | a fazer: diálogo próprio; tema sugerido |
 | 37 Ice cream flavors | 1037 | Comida e bebida | {flavor}, please. | Ice cream truck | a fazer: diálogo próprio; tema sugerido |
