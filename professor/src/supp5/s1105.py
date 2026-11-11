@@ -93,7 +93,7 @@ SUPP = {'badge': {'desc': 'Ask for office supplies and say what is missing', 'ic
                    ('You', 'The printer does not work. Can you help?', 'A impressora não funciona. Pode ajudar?'),
                    ('Dee', 'Let me check. Is there paper in it?', 'Deixe-me ver. Tem papel nela?'),
                    ('You', 'Yes, but it makes a loud noise.', 'Sim, mas ela faz um barulho alto.'),
-                   ('Dee', 'I will call the repair service.', 'Vou ligar para o conserto.')],
+                   ('Dee', 'I am going to call the repair service.', 'Vou ligar para o conserto.')],
          'mission': 'Pedir material de escritório e dizer o que falta.',
          'npc': 'Dee',
          'p': 'Hoje você conhece Dee, de Portland. Pedir canetas, papel e uma impressora que funciona.',
@@ -108,7 +108,7 @@ SUPP = {'badge': {'desc': 'Ask for office supplies and say what is missing', 'ic
                            'Is there any paper?',
                            'Can you order more tape?',
                            'The printer does not work.',
-                           'I will call the repair service.'],
+                           'I am going to call the repair service.'],
              'ctx': [{'ans': 0,
                       'opts': ['a box that slides in a desk', 'a kind of pen', 'a type of paper'],
                       'sent': 'The pens are in the drawer.',
@@ -152,13 +152,13 @@ SUPP = {'badge': {'desc': 'Ask for office supplies and say what is missing', 'ic
                       '“Thank you. Is there any paper?” says Tom. “There is some. But there is no more tape.” says Dee. “Can you order more tape, please?” says Tom.',
                       '“Sure. I am going to order it today.” says Dee. “The printer does not work. Can you help?” says Tom. “Let me check. Is there paper in it?” says '
                       'Dee.',
-                      '“Yes, but it makes a loud noise.” says Tom. “I will call the repair service.” says Dee. Dee opens the first drawer and gives Tom five pens. She '
-                      'writes “tape” on a small list. Tom puts a pile of paper next to the printer. A man from the repair service comes at noon. Soon the printer works '
-                      'again. Small problems are easy with a helpful person.'],
+                      '“Yes, but it makes a loud noise.” says Tom. “I am going to call the repair service.” says Dee. Dee opens the first drawer and gives Tom five '
+                      'pens. She writes “tape” on a small list. Tom puts a pile of paper next to the printer. A man from the repair service comes at noon. Soon the '
+                      'printer works again. Small problems are easy with a helpful person.'],
              'tf': [{'ans': True, 's': 'Tom needs pens and paper.', 'why': 'He says it.'},
                     {'ans': False, 's': 'There is a lot of tape.', 'why': 'There is no more tape.'},
                     {'ans': False, 's': 'The printer works well.', 'why': 'It does not work.'},
-                    {'ans': True, 's': 'Dee will call the repair service.', 'why': 'She says it.'}],
+                    {'ans': True, 's': 'Dee is going to call the repair service.', 'why': 'She says it.'}],
              'think': 'What do you need at your desk? What do you do when something is missing?',
              'title': 'The empty closet'},
  'reg': 172}

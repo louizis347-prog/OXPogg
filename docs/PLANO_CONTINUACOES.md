@@ -148,21 +148,21 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 128 Sleep and tired | 1128 | Casa e rotina | I went to bed {when}. | Doing the dishes | feita (diálogo próprio) |
 | 129 At the dentist | 1129 | Saúde e corpo | I have an appointment at {time}. | A doggy bag | feita (diálogo próprio) |
 | 130 Glasses and eye test | 1130 | Saúde e corpo | I can’t see well {where}. | At the stadium | feita (diálogo próprio) |
-| 131 I need help! | 1131 | Saúde e corpo | Please call {who}! | Drying clothes | a fazer: diálogo próprio; tema sugerido |
-| 132 I want to open an account | 1132 | Dados pessoais e apresentações | I want to open a {type} account. | Giving directions | a fazer: diálogo próprio; tema sugerido |
-| 133 Where is the ATM? | 1133 | Lugares, direções e transporte | Excuse me, is there {place} here? | Ironing clothes | a fazer: diálogo próprio; tema sugerido |
-| 134 At the post office | 1134 | Trabalho e estudo | I need {thing}, please. | A sore throat | a fazer: diálogo próprio; tema sugerido |
-| 135 Where is the form? | 1135 | Lugares, direções e transporte | Excuse me, where is the {thing}? | The science fair | a fazer: diálogo próprio; tema sugerido |
-| 136 My driver's license | 1136 | Lugares, direções e transporte | I want to {verb} my {thing}. | At the tailor | a fazer: diálogo próprio; tema sugerido |
-| 137 At the dry cleaner | 1137 | Casa e rotina | I have a {thing} and two {things2} to clean. | Renting an umbrella | a fazer: diálogo próprio; tema sugerido |
-| 138 My shoe is broken | 1138 | Compras e dinheiro | My {item} is broken. The {part} came off. | Gift wrapping | a fazer: diálogo próprio; tema sugerido |
-| 139 Wash my car | 1139 | Lugares, direções e transporte | I’d like a {wash} for my car, please. | Calling a plumber | a fazer: diálogo próprio; tema sugerido |
-| 140 Welcome to New York | 1140 | Viagem e hospedagem | Excuse me, how do I get to {place}? | Daylight saving time | a fazer: diálogo próprio; tema sugerido |
-| 141 Deep dish and windy days | 1141 | Casa e rotina | We want a {kind} pizza with {top}. | House numbers | a fazer: diálogo próprio; tema sugerido |
-| 142 Traffic in L.A. | 1142 | Lugares, direções e transporte | How long to the {place}? | Hanging pictures | a fazer: diálogo próprio; tema sugerido |
-| 143 Foggy city | 1143 | Viagem e hospedagem | It's so {weather} today. | Changing a light bulb | a fazer: diálogo próprio; tema sugerido |
-| 144 Museums in D.C. | 1144 | Viagem e hospedagem | {n} adults, please. | The big party | a fazer: diálogo próprio; tema sugerido |
-| 145 History walk | 1145 | Dados pessoais e apresentações | When does the {thing} start? In {time} minut | Meeting the boss | a fazer: diálogo próprio; tema sugerido |
+| 131 I need help! | 1131 | Saúde e corpo | Please call {who}! | Drying clothes | feita (diálogo próprio) |
+| 132 I want to open an account | 1132 | Dados pessoais e apresentações | I want to open a {type} account. | Giving directions | feita (diálogo próprio) |
+| 133 Where is the ATM? | 1133 | Lugares, direções e transporte | Excuse me, is there {place} here? | Ironing clothes | feita (diálogo próprio) |
+| 134 At the post office | 1134 | Trabalho e estudo | I need {thing}, please. | A sore throat | feita (diálogo próprio) |
+| 135 Where is the form? | 1135 | Lugares, direções e transporte | Excuse me, where is the {thing}? | The science fair | feita (diálogo próprio) |
+| 136 My driver's license | 1136 | Lugares, direções e transporte | I want to {verb} my {thing}. | At the tailor | feita (diálogo próprio) |
+| 137 At the dry cleaner | 1137 | Casa e rotina | I have a {thing} and two {things2} to clean. | Renting an umbrella | feita (diálogo próprio) |
+| 138 My shoe is broken | 1138 | Compras e dinheiro | My {item} is broken. The {part} came off. | Gift wrapping | feita (diálogo próprio) |
+| 139 Wash my car | 1139 | Lugares, direções e transporte | I’d like a {wash} for my car, please. | Calling a plumber | feita (diálogo próprio) |
+| 140 Welcome to New York | 1140 | Viagem e hospedagem | Excuse me, how do I get to {place}? | Daylight saving time | feita (diálogo próprio) |
+| 141 Deep dish and windy days | 1141 | Casa e rotina | We want a {kind} pizza with {top}. | House numbers | feita (diálogo próprio) |
+| 142 Traffic in L.A. | 1142 | Lugares, direções e transporte | How long to the {place}? | Hanging pictures | feita (diálogo próprio) |
+| 143 Foggy city | 1143 | Viagem e hospedagem | It's so {weather} today. | Changing a light bulb | feita (diálogo próprio) |
+| 144 Museums in D.C. | 1144 | Viagem e hospedagem | {n} adults, please. | The big party | feita (diálogo próprio) |
+| 145 History walk | 1145 | Dados pessoais e apresentações | When does the {thing} start? In {time} minut | Meeting the boss | feita (diálogo próprio) |
 | 146 Jazz and gumbo | 1146 | Dados pessoais e apresentações | Listen! Do you hear that {thing}? | Hot and cold | a fazer: diálogo próprio; tema sugerido |
 | 147 Show night | 1147 | Dados pessoais e apresentações | We have {number} tickets. Here you go. | Stargazing | a fazer: diálogo próprio; tema sugerido |
 | 148 National park | 1148 | Lugares, direções e transporte | What can we see at the {place}? | Building a sandcastle | a fazer: diálogo próprio; tema sugerido |
