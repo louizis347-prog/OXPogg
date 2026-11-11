@@ -58,10 +58,10 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 38 The check, please | 1038 | Viagem e hospedagem | Excuse me. {request}, please. | Depositing a check | feita (diálogo próprio) |
 | 39 Tip and thank you | 1039 | Dados pessoais e apresentações | How much is the {thing}? | The washing machine | feita (diálogo próprio) |
 | 40 Takeout by phone | 1040 | Tempo, horas e telefone | I'd like a {size} pizza for takeout. | Remember day one? | feita (diálogo próprio) |
-| 41 Cooking at home | 1041 | Comida e bebida | {verb} the {food}, please. | Coffee for the office | a fazer: diálogo próprio; tema sugerido |
-| 42 Dinner at my place | 1042 | Comida e bebida | I’d love to! Is {day} at {time} OK? | Coffee date | a fazer: diálogo próprio; tema sugerido |
-| 43 Where is the bank? | 1043 | Lugares, direções e transporte | Excuse me, where is the {place}? Is it far f | On my way! | a fazer: diálogo próprio; tema sugerido |
-| 44 Turn left, turn right | 1044 | Lugares, direções e transporte | Excuse me, how do I get to the {place}? | Running in the park | a fazer: diálogo próprio; tema sugerido |
+| 41 Cooking at home | 1041 | Comida e bebida | {verb} the {food}, please. | Coffee for the office | feita (diálogo próprio) |
+| 42 Dinner at my place | 1042 | Comida e bebida | I’d love to! Is {day} at {time} OK? | Coffee date | feita (diálogo próprio) |
+| 43 Where is the bank? | 1043 | Lugares, direções e transporte | Excuse me, where is the {place}? Is it far f | On my way! | feita (diálogo próprio) |
+| 44 Turn left, turn right | 1044 | Lugares, direções e transporte | Excuse me, how do I get to the {place}? | Running in the park | feita (diálogo próprio) |
 | 45 Taking the subway | 1045 | Lugares, direções e transporte | Excuse me, which {vehicle} goes to {place}? | Carrying groceries upstairs | a fazer: diálogo próprio; tema sugerido |
 | 46 The bus stop | 1046 | Lugares, direções e transporte | Excuse me, does this bus go {place}? | Where does the sofa go? | a fazer: diálogo próprio; tema sugerido |
 | 47 Buy a transit card | 1047 | Compras e dinheiro | Hi! I need a {item}. {amount} dollars, pleas | Can you watch my bag? | a fazer: diálogo próprio; tema sugerido |
