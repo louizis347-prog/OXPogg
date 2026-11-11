@@ -38,11 +38,11 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 18 My hobbies | 1018 | Dados pessoais e apresentações | I play {game} and I read {thing}. | Joining a club | feita (diálogo próprio) |
 | 19 My favorite music | 1019 | Lazer, festas e eventos | I like {music}. My favorite singer is {name} | Karaoke night | feita (diálogo próprio) |
 | 20 Describing a person | 1020 | Dados pessoais e apresentações | She is {height} and {trait}. | My best friend | feita (diálogo próprio) |
-| 21 What's the weather? | 1021 | Tempo, horas e telefone | It's {weather} today, but it's {weather2}. | Weather forecast | a fazer: diálogo próprio; tema sugerido |
-| 22 Party invitation | 1022 | Lazer, festas e eventos | Sure! {question} is it? | Dinner invitation | a fazer: diálogo próprio; tema sugerido |
-| 23 Breakfast at the diner | 1023 | Comida e bebida | I’d like {food} and eggs. | Eggs and toast | a fazer: diálogo próprio; tema sugerido |
-| 24 Ordering lunch | 1024 | Comida e bebida | Can I have a {filling} sandwich? | The school cafeteria | a fazer: diálogo próprio; tema sugerido |
-| 25 Pizza by the slice | 1025 | Comida e bebida | {number} slices of {kind}, please. | At the food truck | a fazer: diálogo próprio; tema sugerido |
+| 21 What's the weather? | 1021 | Tempo, horas e telefone | It's {weather} today, but it's {weather2}. | Weather forecast | feita (diálogo próprio) |
+| 22 Party invitation | 1022 | Lazer, festas e eventos | Sure! {question} is it? | Dinner invitation | feita (diálogo próprio) |
+| 23 Breakfast at the diner | 1023 | Comida e bebida | I’d like {food} and eggs. | Eggs and toast | feita (diálogo próprio) |
+| 24 Ordering lunch | 1024 | Comida e bebida | Can I have a {filling} sandwich? | The school cafeteria | feita (diálogo próprio) |
+| 25 Pizza by the slice | 1025 | Comida e bebida | {number} slices of {kind}, please. | At the food truck | feita (diálogo próprio) |
 | 26 What's in this? | 1026 | Dados pessoais e apresentações | What’s in {thing}? | What's good here? | a fazer: diálogo próprio; tema sugerido |
 | 27 Sharing food | 1027 | Comida e bebida | Yes, let’s {action}. What’s {adj} here? | Potluck dinner | a fazer: diálogo próprio; tema sugerido |
 | 28 I'm hungry! | 1028 | Comida e bebida | I’m {feeling}. Are you {feeling2}? | I'm thirsty | a fazer: diálogo próprio; tema sugerido |
