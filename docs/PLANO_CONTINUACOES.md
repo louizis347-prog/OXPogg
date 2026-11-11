@@ -26,8 +26,8 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 6 Hello, goodbye | 1006 | Dados pessoais e apresentações | {greeting}! How are you? | Monday small talk | feita (diálogo do Neighbors) |
 | 7 How old are you? | 1007 | Dados pessoais e apresentações | I'm {age}. My birthday is in {month}. | A birthday cake | feita (diálogo do Neighbors) |
 | 8 My family | 1008 | Dados pessoais e apresentações | Yes! This is my {person}. | Meeting his parents | feita (diálogo próprio) |
-| 9 What do you do? | 1009 | Dados pessoais e apresentações | I'm a {job}. And you? | My first day as a barista | a fazer: diálogo próprio; tema sugerido |
-| 10 Days of the week | 1010 | Tempo, horas e telefone | It's {day}. I have {thing} today. | Asking for a day off | a fazer: diálogo próprio; tema sugerido |
+| 9 What do you do? | 1009 | Dados pessoais e apresentações | I'm a {job}. And you? | My first day as a barista | feita (diálogo próprio) |
+| 10 Days of the week | 1010 | Tempo, horas e telefone | It's {day}. I have {thing} today. | Asking for a day off | feita (diálogo próprio) |
 | 11 What time is it? | 1011 | Tempo, horas e telefone | It's {time}. | Let's meet at six | a fazer: diálogo próprio; tema sugerido |
 | 12 Months and birthdays | 1012 | Dados pessoais e apresentações | My birthday is in {month}. | What's today's date? | a fazer: diálogo próprio; tema sugerido |
 | 13 Colors and things | 1013 | Tempo, horas e telefone | Is {obj} {owner}? | Which one do you like? | a fazer: diálogo próprio; tema sugerido |
