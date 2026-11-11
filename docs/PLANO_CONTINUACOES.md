@@ -183,26 +183,26 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 163 Welcome, new neighbor | 1163 | Dados pessoais e apresentações | I just moved into {apt}. | At the hair salon | feita (diálogo próprio) |
 | 164 Elevator small talk | 1164 | Compras e dinheiro | I’m on the {ord} floor. | At the toy store | feita (diálogo próprio) |
 | 165 Excuse me, sorry | 1165 | Tempo, horas e telefone | Excuse me, can I {verb}? | Black Friday | feita (diálogo próprio) |
-| 166 Could you repeat that? | 1166 | Tempo, horas e telefone | Sorry, could you {ask} that? | A clogged drain | a fazer: diálogo próprio; tema sugerido |
-| 167 I like your jacket | 1167 | Dados pessoais e apresentações | I like your {thing}. | Popcorn and soda | a fazer: diálogo próprio; tema sugerido |
-| 168 Passport control | 1168 | Viagem e hospedagem | {reason}. I'm here on {kind}. | Donating clothes | a fazer: diálogo próprio; tema sugerido |
-| 169 Baggage claim | 1169 | Viagem e hospedagem | Excuse me, where is {place}? | Birthday song at the restaurant | a fazer: diálogo próprio; tema sugerido |
-| 170 Calling a ride | 1170 | Lugares, direções e transporte | Yes! You're my {who}, right? | At the laundromat | a fazer: diálogo próprio; tema sugerido |
-| 171 Booking a table | 1171 | Compras e dinheiro | I'd like to {do} for {number} people. | Language exchange | a fazer: diálogo próprio; tema sugerido |
-| 172 The wrong order | 1172 | Comida e bebida | Excuse me, my {thing} is {problem}. | Making pancakes | a fazer: diálogo próprio; tema sugerido |
-| 173 At the drive-thru | 1173 | Lugares, direções e transporte | A {food} meal, please. | My favorite team | a fazer: diálogo próprio; tema sugerido |
-| 174 Movie tickets | 1174 | Compras e dinheiro | {number} tickets for the {time} o'clock movi | Buying a train ticket | a fazer: diálogo próprio; tema sugerido |
-| 175 Self-checkout | 1175 | Compras e dinheiro | Excuse me, how does this {thing} work? | Learning to ride a bike | a fazer: diálogo próprio; tema sugerido |
-| 176 Order online | 1176 | Comida e bebida | Let’s get {food}. Which size? | Rainy day coffee | a fazer: diálogo próprio; tema sugerido |
-| 177 Can I get your number? | 1177 | Dados pessoais e apresentações | Hi! I’m {name}. I’m from {country}. | Morning with neighbors | a fazer: diálogo próprio; tema sugerido |
-| 178 I can't make it | 1178 | Dados pessoais e apresentações | Sorry, I can’t make it {when}. | First floor, second floor | a fazer: diálogo próprio; tema sugerido |
-| 179 Locked out | 1179 | Casa e rotina | Oh no! I left my {thing} {place}. | Brushing my teeth | a fazer: diálogo próprio; tema sugerido |
-| 180 The heater is broken | 1180 | Casa e rotina | The {thing} isn’t working. | The spelling bee | a fazer: diálogo próprio; tema sugerido |
-| 181 Too much noise | 1181 | Dados pessoais e apresentações | The {thing} is a little {problem}. | Hat and gloves | a fazer: diálogo próprio; tema sugerido |
-| 182 The power is out | 1182 | Casa e rotina | The {thing} went out. Is it only our {place} | Sorting the mail | a fazer: diálogo próprio; tema sugerido |
-| 183 I lost my phone | 1183 | Lugares, direções e transporte | Excuse me, I lost my {thing}! | Cooking pasta | a fazer: diálogo próprio; tema sugerido |
-| 184 A flat tire | 1184 | Dados pessoais e apresentações | Hi. I have a {problem}. | Saying sorry to a friend | a fazer: diálogo próprio; tema sugerido |
-| 185 At the dog park | 1185 | Lugares, direções e transporte | What a {adj} dog! | I can speak English! | a fazer: diálogo próprio; tema sugerido |
+| 166 Could you repeat that? | 1166 | Tempo, horas e telefone | Sorry, could you {ask} that? | A clogged drain | feita (diálogo próprio) |
+| 167 I like your jacket | 1167 | Dados pessoais e apresentações | I like your {thing}. | Popcorn and soda | feita (diálogo próprio) |
+| 168 Passport control | 1168 | Viagem e hospedagem | {reason}. I'm here on {kind}. | Donating clothes | feita (diálogo próprio) |
+| 169 Baggage claim | 1169 | Viagem e hospedagem | Excuse me, where is {place}? | Birthday song at the restaurant | feita (diálogo próprio) |
+| 170 Calling a ride | 1170 | Lugares, direções e transporte | Yes! You're my {who}, right? | At the laundromat | feita (diálogo próprio) |
+| 171 Booking a table | 1171 | Compras e dinheiro | I'd like to {do} for {number} people. | Language exchange | feita (diálogo próprio) |
+| 172 The wrong order | 1172 | Comida e bebida | Excuse me, my {thing} is {problem}. | Making pancakes | feita (diálogo próprio) |
+| 173 At the drive-thru | 1173 | Lugares, direções e transporte | A {food} meal, please. | My favorite team | feita (diálogo próprio) |
+| 174 Movie tickets | 1174 | Compras e dinheiro | {number} tickets for the {time} o'clock movi | Buying a train ticket | feita (diálogo próprio) |
+| 175 Self-checkout | 1175 | Compras e dinheiro | Excuse me, how does this {thing} work? | Learning to ride a bike | feita (diálogo próprio) |
+| 176 Order online | 1176 | Comida e bebida | Let’s get {food}. Which size? | Rainy day coffee | feita (diálogo próprio) |
+| 177 Can I get your number? | 1177 | Dados pessoais e apresentações | Hi! I’m {name}. I’m from {country}. | Morning with neighbors | feita (diálogo próprio) |
+| 178 I can't make it | 1178 | Dados pessoais e apresentações | Sorry, I can’t make it {when}. | First floor, second floor | feita (diálogo próprio) |
+| 179 Locked out | 1179 | Casa e rotina | Oh no! I left my {thing} {place}. | Brushing my teeth | feita (diálogo próprio) |
+| 180 The heater is broken | 1180 | Casa e rotina | The {thing} isn’t working. | The spelling bee | feita (diálogo próprio) |
+| 181 Too much noise | 1181 | Dados pessoais e apresentações | The {thing} is a little {problem}. | Hat and gloves | feita (diálogo próprio) |
+| 182 The power is out | 1182 | Casa e rotina | The {thing} went out. Is it only our {place} | Sorting the mail | feita (diálogo próprio) |
+| 183 I lost my phone | 1183 | Lugares, direções e transporte | Excuse me, I lost my {thing}! | Cooking pasta | feita (diálogo próprio) |
+| 184 A flat tire | 1184 | Dados pessoais e apresentações | Hi. I have a {problem}. | Saying sorry to a friend | feita (diálogo próprio) |
+| 185 At the dog park | 1185 | Lugares, direções e transporte | What a {adj} dog! | I can speak English! | feita (diálogo próprio) |
 | 186 Exchange money | 1186 | Compras e dinheiro | I'd like to exchange {amount} {currency}. | Comparing prices | a fazer: diálogo próprio; tema sugerido |
 | 187 Meet my friend | 1187 | Dados pessoais e apresentações | This is my {who} {name}. | At the pediatrician | a fazer: diálogo próprio; tema sugerido |
 | 188 Where's the restroom? | 1188 | Lugares, direções e transporte | Excuse me, where's the {place}? | Baking cookies | a fazer: diálogo próprio; tema sugerido |
