@@ -89,9 +89,34 @@ def prev_ctx(n):
         if k == 0: say = [(o['en'], o['pt']) for o in oks[:3]]
     if not items: return None
     return dict(items=items[:6], words=words[:6], quiz=quiz[:4], say=say)
+def own_nb(o, n):
+    """Episódio de situação próprio (sem Neighbors): monta os quadros nb a partir do diálogo e do vocabulário escritos para a aula."""
+    npc = o['npc']; L = [list(x) for x in o['lines']]; g = o.get('g', ['#E17055', '#6C5CE7'])
+    npc_i = [i for i, l in enumerate(L) if l[0] != 'You']; opts_pt = [l[2] for l in L]
+    tap = []
+    for i in npc_i[:4]:
+        d = [t for t in opts_pt if t != L[i][2]][:2]; ch = [L[i][2]] + d; ch = ch[1:2] + ch[:1] + ch[2:] if len(ch) > 2 else ch
+        tap.append(dict(pt='O que ' + npc + ' disse?', opts=[['💬', t] for t in ch], a=ch.index(L[i][2]), line=i))
+    ex = o['exprs']; ctx = []
+    for k in range(min(3, len(ex))):
+        en_k, pt_k = ex[k][0], ex[k][1]; others = [e[0] for e in ex if e[0] != en_k][:2]; ch = [others[0], en_k] + others[1:]
+        ctx.append(dict(ic='💬', sit='Complete a fala: “____.” (' + pt_k + ')', opts=ch, a=1, why='“' + en_k + '” = ' + pt_k))
+    you = [(l[1], l[2]) for l in L if l[0] == 'You'][:4]
+    fr_ = [dict(k='nbhero', g=g, num=n, lvl='A1', face=o.get('face', '🙂'), name=npc, city=o['city'], sub=o['title'], emo=o.get('emo', ['💬']), mission=o['mission'], hook=[L[0][1], L[0][2]]),
+           dict(k='nbchat', g=g, title='O diálogo-padrão', intro='Toque em “Próxima fala” para abrir cada mensagem.', cast={npc: [o.get('face', '🙂'), '#2159C9'], 'You': ['🙂', '#e85d75']}, lines=L),
+           dict(k='nbtap', g=g, title='Ouça e toque', items=tap), dict(k='nbctx', g=g, title='Em que contexto?', items=ctx),
+           dict(k='nbshadow', g=g, title='Fale como ' + npc, items=[list(x) for x in you], real=o.get('real', [L[1][1], L[1][1], 'fale em blocos'])),
+           dict(k='nbvocab', g=g, title='Soletrando', items=[list(v) for v in o['vocab'][:5]]),
+           dict(k='nbdict', g=g, title='Ditado', items=[dict(t=L[i][1], pt=L[i][2]) for i in (0, 2, 4)]),
+           dict(k='wrap', title='Para levar na mochila', recap=[[e[0], e[1]] for e in ex[:4]], teaser=dict(t=o.get('teaser', 'Próxima aula'), d=o.get('teaser_d', 'Novas situações do dia a dia')))]
+    return dict(n=0, t=o['title'], s='', sc=o.get('sc'), a=dict(k='Cidade', w=o['city'], y='', d=o.get('desc', '')), p=o['p'], fr=fr_)
+def nb_for(n, S=None):
+    S = S or supp(n); n0 = n % 1000 if n >= 1000 else n
+    if S.get('own'): return own_nb(S['own'], n)
+    return NB[S.get('nb', nb_index(n0)) - 1]
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
-    S = supp(n); en, nb = EN[S.get('reg', n0) - 1], NB[S.get('nb', nb_index(n0)) - 1]
+    S = supp(n); en, nb = EN[S.get('reg', n0) - 1], nb_for(n, S)
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]

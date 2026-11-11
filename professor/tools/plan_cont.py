@@ -34,6 +34,7 @@ def dom(txt):
 def tier(n):
     for lim, t, d in TIER:
         if n <= lim: return t, d
+DONE_OWN = {1008}
 def main():
     rows = json.load(open('/tmp/orig_focus.json')) if os.path.exists('/tmp/orig_focus.json') else []
     cur = {x['n']: x for x in json.load(open(os.path.join(ROOT, 'data/v4/curriculum.json')))}
@@ -52,12 +53,12 @@ def main():
             c = [i for i in free if i not in taken and fdom[i] == d] or [i for i in free if i not in taken]
             nb = c[(n * 7) % len(c)] if c else None
         if nb: taken.add(nb)
-        rev = 'fixo' if (1000 + n) in fixed else ('sugestão automática: revisar no lote' if nb else 'sem episódio livre: escrever diálogo próprio')
+        rev = 'feita (diálogo do Neighbors)' if (1000 + n) in range(1001, 1008) else ('feita (diálogo próprio)' if (1000 + n) in DONE_OWN else 'a fazer: diálogo próprio; tema sugerido')
         plan.append(dict(n=n, cont=1000 + n, original=t, domain=d, cando=cd, level=tr, ceiling=ceil, anchor=anchor, nb=nb, nb_title=B.NB[nb - 1]['t'] if nb else '', status=rev))
     json.dump(plan, open(os.path.join(ROOT, 'data/plano-continuacoes.json'), 'w'), ensure_ascii=False, indent=1)
-    md = ['# Plano das continuações (aulas 1001–1248)', '', 'Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto do bloco da aula original; (2) **CEFR A1**: cobre um descritor “Consigo…” do domínio indicado; (3) **vocabulário**: palavras e verbos novos, conferidos pelo registro (`tools/vocab_registry.py`).', '', '## Tetos gramaticais por bloco', '']
+    md = ['# Plano das continuações (aulas 1001–1248)', '', '**Meta: 500 aulas de nível A1** (248 originais + 252 continuações: as 248 do mapa + 4 aulas extras de revisão a definir). **Daqui para a frente as continuações não usam mais o Neighbors**: o diálogo de cada uma é escrito para a aula.', '', 'Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto do bloco da aula original; (2) **CEFR A1**: cobre um descritor “Consigo…” do domínio indicado; (3) **vocabulário**: palavras e verbos novos, conferidos pelo registro (`tools/vocab_registry.py`).', '', '## Tetos gramaticais por bloco', '']
     for lim, t, dd in TIER: md.append('- até a aula %s (%s): %s' % (lim if lim < 999 else 248, t, dd))
-    md += ['', '## Mapa', '', '| Original | Continuação | Domínio CEFR A1 | Estrutura-âncora da original | Situação nova (Neighbors) | Status |', '|---|---|---|---|---|---|']
+    md += ['', '## Mapa', '', '| Original | Continuação | Domínio CEFR A1 | Estrutura-âncora da original | Tema sugerido (ideia, não obrigatório) | Status |', '|---|---|---|---|---|---|']
     for p in plan: md.append('| %d %s | %d | %s | %s | %s | %s |' % (p['n'], p['original'], p['cont'], p['domain'], p['anchor'] or '—', p['nb_title'] or '—', p['status']))
     open(os.path.join(ROOT, '..', 'docs', 'PLANO_CONTINUACOES.md'), 'w', encoding='utf-8').write('\n'.join(md) + '\n')
     print(len(plan), 'linhas;', sum(1 for p in plan if not p['nb']), 'sem nb')
