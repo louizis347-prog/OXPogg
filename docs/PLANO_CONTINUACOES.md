@@ -43,10 +43,10 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 23 Breakfast at the diner | 1023 | Comida e bebida | I’d like {food} and eggs. | Eggs and toast | feita (diálogo próprio) |
 | 24 Ordering lunch | 1024 | Comida e bebida | Can I have a {filling} sandwich? | The school cafeteria | feita (diálogo próprio) |
 | 25 Pizza by the slice | 1025 | Comida e bebida | {number} slices of {kind}, please. | At the food truck | feita (diálogo próprio) |
-| 26 What's in this? | 1026 | Dados pessoais e apresentações | What’s in {thing}? | What's good here? | a fazer: diálogo próprio; tema sugerido |
-| 27 Sharing food | 1027 | Comida e bebida | Yes, let’s {action}. What’s {adj} here? | Potluck dinner | a fazer: diálogo próprio; tema sugerido |
-| 28 I'm hungry! | 1028 | Comida e bebida | I’m {feeling}. Are you {feeling2}? | I'm thirsty | a fazer: diálogo próprio; tema sugerido |
-| 29 Vegetarian options | 1029 | Comida e bebida | Is there {food} in it? | Making a salad | a fazer: diálogo próprio; tema sugerido |
+| 26 What's in this? | 1026 | Dados pessoais e apresentações | What’s in {thing}? | What's good here? | feita (diálogo próprio) |
+| 27 Sharing food | 1027 | Comida e bebida | Yes, let’s {action}. What’s {adj} here? | Potluck dinner | feita (diálogo próprio) |
+| 28 I'm hungry! | 1028 | Comida e bebida | I’m {feeling}. Are you {feeling2}? | I'm thirsty | feita (diálogo próprio) |
+| 29 Vegetarian options | 1029 | Comida e bebida | Is there {food} in it? | Making a salad | feita (diálogo próprio) |
 | 30 Build your bowl | 1030 | Comida e bebida | A {protein} bowl with {base}, please. | At the smoothie bar | a fazer: diálogo próprio; tema sugerido |
 | 31 Coffee, your way | 1031 | Comida e bebida | A {size} {drink}, please. | At the tea shop | a fazer: diálogo próprio; tema sugerido |
 | 32 Water, please | 1032 | Comida e bebida | Just {drink}, please. {ice}. | The vending machine | a fazer: diálogo próprio; tema sugerido |
