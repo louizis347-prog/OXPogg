@@ -34,7 +34,7 @@ def dom(txt):
 def tier(n):
     for lim, t, d in TIER:
         if n <= lim: return t, d
-DONE_OWN = set(range(1008, 1035))
+DONE_OWN = set(range(1008, 1041))
 def main():
     rows = json.load(open('/tmp/orig_focus.json')) if os.path.exists('/tmp/orig_focus.json') else []
     cur = {x['n']: x for x in json.load(open(os.path.join(ROOT, 'data/v4/curriculum.json')))}

@@ -52,12 +52,12 @@ Cada continuação respeita três regras: (1) **estrutura**: nunca acima do teto
 | 32 Water, please | 1032 | Comida e bebida | Just {drink}, please. {ice}. | The vending machine | feita (diálogo próprio) |
 | 33 At the bakery | 1033 | Comida e bebida | How much is the {item}? | At the donut shop | feita (diálogo próprio) |
 | 34 Where is the milk? | 1034 | Lugares, direções e transporte | Excuse me, where is the {item}? | At the cash register | feita (diálogo próprio) |
-| 35 Fruit by the pound | 1035 | Dados pessoais e apresentações | {fruit} are {price} a pound. | Dollars and cents | a fazer: diálogo próprio; tema sugerido |
-| 36 Burger combo | 1036 | Comida e bebida | A {food}, please. | Kids' meal | a fazer: diálogo próprio; tema sugerido |
-| 37 Ice cream flavors | 1037 | Comida e bebida | {flavor}, please. | Ice cream truck | a fazer: diálogo próprio; tema sugerido |
-| 38 The check, please | 1038 | Viagem e hospedagem | Excuse me. {request}, please. | Depositing a check | a fazer: diálogo próprio; tema sugerido |
-| 39 Tip and thank you | 1039 | Dados pessoais e apresentações | How much is the {thing}? | The washing machine | a fazer: diálogo próprio; tema sugerido |
-| 40 Takeout by phone | 1040 | Tempo, horas e telefone | I'd like a {size} pizza for takeout. | Remember day one? | a fazer: diálogo próprio; tema sugerido |
+| 35 Fruit by the pound | 1035 | Dados pessoais e apresentações | {fruit} are {price} a pound. | Dollars and cents | feita (diálogo próprio) |
+| 36 Burger combo | 1036 | Comida e bebida | A {food}, please. | Kids' meal | feita (diálogo próprio) |
+| 37 Ice cream flavors | 1037 | Comida e bebida | {flavor}, please. | Ice cream truck | feita (diálogo próprio) |
+| 38 The check, please | 1038 | Viagem e hospedagem | Excuse me. {request}, please. | Depositing a check | feita (diálogo próprio) |
+| 39 Tip and thank you | 1039 | Dados pessoais e apresentações | How much is the {thing}? | The washing machine | feita (diálogo próprio) |
+| 40 Takeout by phone | 1040 | Tempo, horas e telefone | I'd like a {size} pizza for takeout. | Remember day one? | feita (diálogo próprio) |
 | 41 Cooking at home | 1041 | Comida e bebida | {verb} the {food}, please. | Coffee for the office | a fazer: diálogo próprio; tema sugerido |
 | 42 Dinner at my place | 1042 | Comida e bebida | I’d love to! Is {day} at {time} OK? | Coffee date | a fazer: diálogo próprio; tema sugerido |
 | 43 Where is the bank? | 1043 | Lugares, direções e transporte | Excuse me, where is the {place}? Is it far f | On my way! | a fazer: diálogo próprio; tema sugerido |
