@@ -1,5 +1,5 @@
 """Suplemento Quest v5 aula 234."""
-SUPP = {'reg': 178,
+SUPP = {'reg': 174,
  'badge': {'icon': '⚽', 'name': 'Sideline Fan', 'desc': 'Cheer at a kids soccer game and compare the players'},
  'culture': {'hook': 'In the USA, many families spend Saturday mornings at a park watching kids play soccer. Parents cheer, bring water and snacks, and say “Good game” at the end.',
              'mythfact': [{'s': 'In the USA, the word “football” usually means American football.', 'ans': True, 'why': 'The sport called futebol in Brazil is usually called soccer in the USA.'},
