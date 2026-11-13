@@ -234,6 +234,7 @@ def build(n):
     X_ = extras(n); ems = [v.get('e', '') for v in (X_.get('vocab') or [])] or (['☕', '🥐', '🥛', '🧁', '🍵'] if n == 1 else [])
     post(L, n, ylayer(n), S, X_, prev_ctx(n), ems, zlayer(n))
     L = apply_overrides(L, n)
+    import live_teach; L = live_teach.apply(L)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]

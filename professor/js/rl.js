@@ -252,8 +252,10 @@ window.RL_REGISTER=function(R,API){A=API;var SEC=A.SEC,COLS=A.COLS,esc=A.esc,say
 
 /* ---------- linha do tempo + roteiro do professor ---------- */
 var tpOpen=false,tpMode=null;
+window.RL_DUR=function(){return DUR};window.RL_SETDUR=function(d){DUR=d==='60'?'60':'90';try{localStorage.setItem('pgx-dur',DUR)}catch(e){}var p=A&&A.pages()[A.idx()];if(p){renderTimeline(p,A.idx(),A.pages());renderTeacher(p)}var bs=document.querySelectorAll('#dur button');Array.prototype.forEach.call(bs,function(b){b.classList.toggle('on',b.dataset.d===DUR)})};
 function fmt2(n){return String(n).padStart(2,'0')}
-function planOf(L,mode){var pl=(L.plan||{})[mode]||[];var t=0;return pl.map(function(s){var o={id:s.id,name:s.name,min:s.min,from:t,to:t+s.min,c:s.c,desc:s.desc,ic:s.ic};t+=s.min;return o})}
+var DUR=(function(){try{return localStorage.getItem('pgx-dur')==='60'?'60':'90'}catch(e){return '90'}})();
+function planOf(L,mode){var P=L.plan||{};var pl=(DUR==='90'&&P[mode+'90'])||P[mode]||[];var t=0;return pl.map(function(s){var o={id:s.id,name:s.name,min:s.min,from:t,to:t+s.min,c:s.c,desc:s.desc,ic:s.ic};t+=s.min;return o})}
 function renderTimeline(p,i,pages){var L=A.lesson(),mode=A.mode(),plan=planOf(L,mode),tl=document.getElementById('tl');if(!tl)return;var cur=(p.stage&&typeof p.stage==='object')?p.stage[mode]:p.stage;
   var total=plan.length?plan[plan.length-1].to:60,curIdx=plan.findIndex(function(s){return s.id===cur});
   tl.innerHTML=plan.map(function(s,k){return '<button class="st '+(k===curIdx?'cur':(k<curIdx?'past':''))+'" style="--c:'+(s.c||'#2f6fe0')+';flex:'+Math.max(1,s.min)+' 1 0" data-s="'+s.id+'" title="'+H(s.desc||'')+'"><em>'+(s.ic?s.ic+' ':'')+fmt2(s.from)+'–'+fmt2(s.to)+'</em><b>'+H(s.name)+'</b></button>'}).join('')+'<span class="tm0" id="tm0">⏱ 00:00 / '+total+':00</span>';
@@ -270,7 +272,7 @@ function renderTeacher(p){var tp=document.getElementById('tp');if(!tp)return;if(
    (t.goal?'<div class="blk"><b>Objetivo da tela</b>'+H(t.goal)+'</div>':'')+
    '<div class="blk"><b>Como conduzir ('+(mode==='solo'?'1 professor + 1 estudante':'4 a 6 estudantes')+')</b>'+ul(steps)+'</div>'+
    (ansH?'<div class="blk"><b>Respostas</b>'+ansH+'</div>':'')+
-   (t.extra&&t.extra.length?'<div class="blk"><b>Perguntas extras</b>'+ul(t.extra)+'</div>':'')+
+   (t.extra&&t.extra.length?'<div class="blk"><b>Perguntas extras</b>'+ul(t.extra)+'</div>':'')+(DUR==='90'&&t.extra90&&t.extra90.length?'<div class="blk"><b>Só na versão de 1h30</b>'+ul(t.extra90)+'</div>':'')+
    (errs?'<div class="blk"><b>Correções frequentes</b>'+errs+'</div>':'')+
    (t.support&&t.support.length?'<div class="blk"><b>Mais apoio</b>'+ul(t.support)+'</div>':'')+
    (t.stretch&&t.stretch.length?'<div class="blk"><b>Para ir além</b>'+ul(t.stretch)+'</div>':'')+
@@ -278,7 +280,7 @@ function renderTeacher(p){var tp=document.getElementById('tp');if(!tp)return;if(
   var x=document.getElementById('tpx');if(x)x.onclick=function(){tpOpen=false;tp.hidden=true};
   Array.prototype.forEach.call(tp.querySelectorAll('.sg2 button'),function(bn){bn.onclick=function(){tpMode=bn.dataset.m;renderTeacher(p)}})}
 window.RL_ONDRAW=function(p,i,pages){if(!A)return;tpMode=null;renderTimeline(p,i,pages);renderTeacher(p)};
-document.addEventListener('DOMContentLoaded',function(){var bt=document.getElementById('tpb');if(bt)bt.onclick=function(){tpOpen=!tpOpen;var h=document.getElementById('hudp');if(h)h.hidden=true;var p=A&&A.pages()[A.idx()];if(p)renderTeacher(p)};
+document.addEventListener('DOMContentLoaded',function(){Array.prototype.forEach.call(document.querySelectorAll('#dur button'),function(b){b.classList.toggle('on',b.dataset.d===DUR);b.onclick=function(){RL_SETDUR(b.dataset.d)}});var bt=document.getElementById('tpb');if(bt)bt.onclick=function(){tpOpen=!tpOpen;var h=document.getElementById('hudp');if(h)h.hidden=true;var p=A&&A.pages()[A.idx()];if(p)renderTeacher(p)};
   document.addEventListener('keydown',function(e){if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(e.key==='t'||e.key==='T'){tpOpen=!tpOpen;var p=A&&A.pages()[A.idx()];if(p)renderTeacher(p)}});
   document.addEventListener('click',function(e){if(e.target&&e.target.id==='nb'){}});});
 })();

@@ -82,8 +82,8 @@ function quest(R,API){A=API;var SEC=A.SEC,esc=A.esc,gain=A.gain,mark=A.mark,LS=A
 
  /* ===== 1 · Mission briefing ===== */
  R.q_cover=function(p,b){var s=p.situation||{},u=p.unit||{},L=A.lesson(),bd=L.badge||{};b.className='pb c';
-  var chaps=(L.plan&&L.plan[A.mode()]||[]).map(function(c,i){return '<div class="qnode" style="--c:'+c.c+'"><span class="qi">'+(c.ic||'')+'</span><b>'+H(c.name)+'</b><small>'+c.min+' min</small></div>'}).join('<span class="qlink"></span>');
-  b.innerHTML='<div class="qhero"><div class="qh-l"><div class="rl-kick"><span class="k">Unit '+esc(u.n)+'</span><span class="k o">Lesson '+esc(u.k)+' / '+esc(u.of)+'</span><span class="k o">'+esc(p.level||'')+'</span><span class="k o">60 min</span></div>'+
+  var chaps=(L.plan&&((window.RL_DUR&&window.RL_DUR()==='90'&&L.plan[A.mode()+'90'])||L.plan[A.mode()])||[]).map(function(c,i){return '<div class="qnode" style="--c:'+c.c+'"><span class="qi">'+(c.ic||'')+'</span><b>'+H(c.name)+'</b><small>'+c.min+' min</small></div>'}).join('<span class="qlink"></span>');
+  b.innerHTML='<div class="qhero"><div class="qh-l"><div class="rl-kick"><span class="k">Unit '+esc(u.n)+'</span><span class="k o">Lesson '+esc(u.k)+' / '+esc(u.of)+'</span><span class="k o">'+esc(p.level||'')+'</span><span class="k o">'+(window.RL_DUR&&window.RL_DUR()==='90'?'90':'60')+' min</span></div>'+
    '<h1 class="rl-h1">'+esc(p.title)+'</h1>'+(p.pt?'<p class="rl-sub">'+esc(p.pt)+'</p>':'')+
    '<div class="qmission"><b>🎬 Mission</b>'+esc(s.text||'')+'</div>'+
    '<div class="qcando"><b>By the end you can…</b>'+(p.canDo||[]).map(function(g){return '<div><i>✓</i><span>'+esc(g)+'</span></div>'}).join('')+'</div>'+
