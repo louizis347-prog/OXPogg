@@ -16,7 +16,7 @@ SUPP = {'badge': {'desc': 'Tell about moving day', 'icon': '📦', 'name': 'Movi
                                 'ok': False,
                                 'pt': 'Sim! Embalamos caixas até a meia-noite de sexta.'}],
                       'pt': 'Oi, Eva! Então você se mudou ontem?'},
-                     {'npc': 'Wow. Did you hire a truck?',
+                     {'npc': 'Wow. Did you use a truck?',
                       'opts': [{'en': 'Yes, two men carried the heavy things.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -26,7 +26,7 @@ SUPP = {'badge': {'desc': 'Tell about moving day', 'icon': '📦', 'name': 'Movi
                                 'ok': False,
                                 'pt': 'Sim, dois homens carregaram as coisas pesadas.'},
                                {'en': 'Yes, two men the heavy things.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Sim, dois homens carregaram as coisas pesadas.'}],
-                      'pt': 'Nossa. Vocês contrataram um caminhão?'},
+                      'pt': 'Nossa. Vocês usaram um caminhão?'},
                      {'npc': 'Did anything break?',
                       'opts': [{'en': 'One glass broke, but nothing important.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Um copo quebrou, mas nada importante.'},
                                {'en': 'One important. glass but broke, nothing',
@@ -61,7 +61,7 @@ SUPP = {'badge': {'desc': 'Tell about moving day', 'icon': '📦', 'name': 'Movi
                          'br': 'No Brasil, amigos ajudam na mudança e a gente paga o almoço.',
                          'tip': 'Diga: “We packed boxes all night.”',
                          'us': 'Nos EUA, pessoas contratam caminhões e amigos trazem pizza. Diga We carried the boxes.'},
-             'hook': 'Moving day is a big event in the USA. Many people hire a truck or ask friends for help. New neighbors often bring cookies or a small gift to say '
+             'hook': 'Moving day is a big event in the USA. Many people use a truck or ask friends for help. New neighbors often bring cookies or a small gift to say '
                      'welcome. Saying “Welcome to the neighborhood” is a classic.',
              'mythfact': [{'ans': True, 's': 'Neighbors may bring cookies to new people.', 'why': 'Yes.'},
                           {'ans': False, 's': 'Nobody helps on moving day.', 'why': 'Friends often help.'},
@@ -106,7 +106,7 @@ SUPP = {'badge': {'desc': 'Tell about moving day', 'icon': '📦', 'name': 'Movi
          'face': '🧔🏾',
          'lines': [('Moe', 'Hi, Eva! So, you moved yesterday?', 'Oi, Eva! Então você se mudou ontem?'),
                    ('You', 'Yes! We packed boxes until midnight on Friday.', 'Sim! Embalamos caixas até a meia-noite de sexta.'),
-                   ('Moe', 'Wow. Did you hire a truck?', 'Nossa. Vocês contrataram um caminhão?'),
+                   ('Moe', 'Wow. Did you use a truck?', 'Nossa. Vocês usaram um caminhão?'),
                    ('You', 'Yes, two men carried the heavy things.', 'Sim, dois homens carregaram as coisas pesadas.'),
                    ('Moe', 'Did anything break?', 'Alguma coisa quebrou?'),
                    ('You', 'One glass broke, but nothing important.', 'Um copo quebrou, mas nada importante.'),
@@ -157,7 +157,7 @@ SUPP = {'badge': {'desc': 'Tell about moving day', 'icon': '📦', 'name': 'Movi
                       {'alt': ['cookies'], 'ans': 'cookies', 'q': 'What did the neighbor bring?'}],
              'text': ['It is Sunday morning in a quiet building in Denver. Boxes sit in every room. Eva opens a window to get some air. Her old neighbor Moe visits with '
                       'a coffee. He looks at the boxes and smiles. He asks about moving day.',
-                      '“Hi, Eva! So, you moved yesterday?” says Moe. “Yes! We packed boxes until midnight on Friday.” says Eva. “Wow. Did you hire a truck?” says Moe.',
+                      '“Hi, Eva! So, you moved yesterday?” says Moe. “Yes! We packed boxes until midnight on Friday.” says Eva. “Wow. Did you use a truck?” says Moe.',
                       '“Yes, two men carried the heavy things.” says Eva. “Did anything break?” says Moe. “One glass broke, but nothing important.” says Eva.',
                       '“And the new apartment? Do you like it?” says Moe. “I love it! The kitchen is bigger than my old one.” says Eva. “Did you meet your neighbors?” '
                       'says Moe.',

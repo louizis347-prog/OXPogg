@@ -44,7 +44,7 @@ SUPP = {'badge': {'desc': 'Tell about visiting family', 'icon': '🏠', 'name': 
                                 'ok': False,
                                 'pt': 'Sim, conversamos por duas horas no telefone.'}],
                       'pt': 'Você falou com a tia Maria?'},
-                     {'npc': 'She told me you bought her a gift.',
+                     {'npc': 'She said you bought her a gift.',
                       'opts': [{'en': 'I did. I found a nice scarf at the airport.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -57,7 +57,7 @@ SUPP = {'badge': {'desc': 'Tell about visiting family', 'icon': '🏠', 'name': 
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Comprei. Achei um cachecol bonito no aeroporto.'}],
-                      'pt': 'Ela me contou que você comprou um presente para ela.'},
+                      'pt': 'Ela disse que você comprou um presente para ela.'},
                      {'npc': 'Perfect. Dinner is ready. I made pizza.',
                       'opts': [{'en': 'Great! We laughed a lot at the old photos last year.',
                                 'fb': 'Natural e claro.',
@@ -125,7 +125,7 @@ SUPP = {'badge': {'desc': 'Tell about visiting family', 'icon': '🏠', 'name': 
                    ('You', 'Terrible at first, but it got better after noon.', 'Péssimo no começo, mas melhorou depois do meio-dia.'),
                    ('Cousin Dan', 'Did you talk to Aunt Maria?', 'Você falou com a tia Maria?'),
                    ('You', 'Yes, we talked for two hours on the phone.', 'Sim, conversamos por duas horas no telefone.'),
-                   ('Cousin Dan', 'She told me you bought her a gift.', 'Ela me contou que você comprou um presente para ela.'),
+                   ('Cousin Dan', 'She said you bought her a gift.', 'Ela disse que você comprou um presente para ela.'),
                    ('You', 'I did. I found a nice scarf at the airport.', 'Comprei. Achei um cachecol bonito no aeroporto.'),
                    ('Cousin Dan', 'Perfect. Dinner is ready. I made pizza.', 'Perfeito. O jantar está pronto. Fiz pizza.'),
                    ('You', 'Great! We laughed a lot at the old photos last year.', 'Ótimo! Rimos muito das fotos antigas no ano passado.'),
@@ -172,7 +172,7 @@ SUPP = {'badge': {'desc': 'Tell about visiting family', 'icon': '🏠', 'name': 
                       'traffic?” says Cousin Dan.',
                       '“Terrible at first, but it got better after noon.” says Noah. “Did you talk to Aunt Maria?” says Cousin Dan. “Yes, we talked for two hours on the '
                       'phone.” says Noah.',
-                      '“She told me you bought her a gift.” says Cousin Dan. “I did. I found a nice scarf at the airport.” says Noah. “Perfect. Dinner is ready. I made '
+                      '“She said you bought her a gift.” says Cousin Dan. “I did. I found a nice scarf at the airport.” says Noah. “Perfect. Dinner is ready. I made '
                       'pizza.” says Cousin Dan.',
                       '“Great! We laughed a lot at the old photos last year.” says Noah. “We can do it again tonight. Come in!” says Cousin Dan. Dan takes Noah’s bag to '
                       'the guest room. Noah sits at the table with a smile. They eat pizza and look at old photos. Laughter fills the house. The sun goes down behind '

@@ -46,7 +46,7 @@ SUPP = {'badge': {'desc': 'Tell about a work message', 'icon': '💬', 'name': '
                                 'ok': False,
                                 'pt': 'Sim, um. A reunião de terça era às nove, não às dez.'}],
                       'pt': 'Ótimo. Você achou algum erro?'},
-                     {'npc': 'You’re right. I fixed it right away.',
+                     {'npc': 'You’re right. I changed it right away.',
                       'opts': [{'en': 'Thank you. Next time, call me if it’s urgent.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -59,7 +59,7 @@ SUPP = {'badge': {'desc': 'Tell about a work message', 'icon': '💬', 'name': '
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Obrigada. Da próxima vez, ligue se for urgente.'}],
-                      'pt': 'Você tem razão. Corrigi na hora.'}]},
+                      'pt': 'Você tem razão. Mudei na hora.'}]},
  'culture': {'compare': {'ask': 'I read your text this morning.',
                          'br': 'No Brasil, mensagens do chefe à noite são comuns e geram debate.',
                          'tip': 'Diga: “I read your text this morning.”',
@@ -93,7 +93,7 @@ SUPP = {'badge': {'desc': 'Tell about a work message', 'icon': '💬', 'name': '
             {'alt': 'I write a note yesterday.', 'fix': 'I wrote a note.', 'why': 'Write is irregular: wrote.', 'wrong': 'I writed a note.'},
             {'alt': 'I no answered.', 'fix': 'I didn’t answer.', 'why': 'After didn’t, use the base verb.', 'wrong': 'I didn’t answered.'},
             {'alt': 'I read it on ten.', 'fix': 'I read it at ten.', 'why': 'Use at with clock times.', 'wrong': 'I read it in ten.'}],
- 'homework': 'Write 5 sentences about a message you received. Use read, answered, sent, wrote and fixed.',
+ 'homework': 'Write 5 sentences about a message you received. Use read, answered, sent, wrote and changed.',
  'homework_items': ['Write: I read ___ at ___. I didn’t answer ___.',
                     'Say aloud: Did you get my text? I read it at ten.',
                     'Listen to the dialogue and shadow Kit.',
@@ -115,7 +115,7 @@ SUPP = {'badge': {'desc': 'Tell about a work message', 'icon': '💬', 'name': '
                    ('You', 'I know. I opened the file at seven and checked it.', 'Eu sei. Abri o arquivo às sete e conferi.'),
                    ('Kit', 'Great. Did you find any mistakes?', 'Ótimo. Você achou algum erro?'),
                    ('You', 'Yes, one. Tuesday’s meeting was at nine, not ten.', 'Sim, um. A reunião de terça era às nove, não às dez.'),
-                   ('Kit', 'You’re right. I fixed it right away.', 'Você tem razão. Corrigi na hora.'),
+                   ('Kit', 'You’re right. I changed it right away.', 'Você tem razão. Mudei na hora.'),
                    ('You', 'Thank you. Next time, call me if it’s urgent.', 'Obrigada. Da próxima vez, ligue se for urgente.'),
                    ('Kit', 'Good idea. I’ll do that.', 'Boa ideia. Vou fazer isso.')],
          'mission': 'Contar uma mensagem do chefe no passado.',
@@ -159,7 +159,7 @@ SUPP = {'badge': {'desc': 'Tell about a work message', 'icon': '💬', 'name': '
                       '“Zoe, did you get my text last night?” says Kit. “Yes, I read it at ten, but I didn’t answer.” says Zoe. “Why not? It was important.” says Kit.',
                       '“I was asleep. I saw it this morning.” says Zoe. “I sent the new schedule and I wrote a note.” says Kit. “I know. I opened the file at seven and '
                       'checked it.” says Zoe.',
-                      '“Great. Did you find any mistakes?” says Kit. “Yes, one. Tuesday’s meeting was at nine, not ten.” says Zoe. “You’re right. I fixed it right '
+                      '“Great. Did you find any mistakes?” says Kit. “Yes, one. Tuesday’s meeting was at nine, not ten.” says Zoe. “You’re right. I changed it right '
                       'away.” says Kit.',
                       '“Thank you. Next time, call me if it’s urgent.” says Zoe. “Good idea. I’ll do that.” says Kit. Kit sends the new schedule again. Zoe opens it and '
                       'nods. She writes “Got it, thanks” in the chat. Kit smiles and goes to the next desk. Phones buzz around the room. Clear messages avoid hard '
@@ -167,7 +167,7 @@ SUPP = {'badge': {'desc': 'Tell about a work message', 'icon': '💬', 'name': '
              'tf': [{'ans': False, 's': 'Zoe answered the text last night.', 'why': 'She didn’t answer.'},
                     {'ans': True, 's': 'Kit sent a new schedule.', 'why': 'He says it.'},
                     {'ans': False, 's': 'Tuesday’s meeting was at ten.', 'why': 'It was at nine.'},
-                    {'ans': True, 's': 'Kit fixed the mistake.', 'why': 'He says it.'}],
+                    {'ans': True, 's': 'Kit changed the mistake.', 'why': 'He says it.'}],
              'think': 'Do you answer work messages at night?',
              'title': 'A bright office'},
  'reg': 43}

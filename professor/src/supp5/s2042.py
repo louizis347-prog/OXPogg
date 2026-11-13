@@ -7,7 +7,7 @@ SUPP = {'badge': {'desc': 'Tell a lost-and-found dog story', 'icon': '🐶', 'na
                                {'en': 'near found lake. I him the Yes!', 'fb': 'A ordem das palavras está errada.', 'ok': False, 'pt': 'Sim! Achei ele perto do lago.'},
                                {'en': 'Yes! I found near the lake.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Sim! Achei ele perto do lago.'}],
                       'pt': 'Max! Você viu meu cachorro, o Biscuit?'},
-                     {'npc': 'Thank goodness! How did he get there?',
+                     {'npc': 'Oh, great! How did he get there?',
                       'opts': [{'en': 'He ran out of your yard when the gate opened.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -20,7 +20,7 @@ SUPP = {'badge': {'desc': 'Tell a lost-and-found dog story', 'icon': '🐶', 'na
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Ele saiu correndo do seu quintal quando o portão abriu.'}],
-                      'pt': 'Graças a Deus! Como ele foi parar lá?'},
+                      'pt': 'Que bom! Como ele foi parar lá?'},
                      {'npc': 'Oh dear. Did he hurt himself?',
                       'opts': [{'en': 'No, he was fine. He was only very wet.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Não, estava bem. Só estava muito molhado.'},
                                {'en': 'fine. was No, wet. he very He was only',
@@ -91,7 +91,7 @@ SUPP = {'badge': {'desc': 'Tell a lost-and-found dog story', 'icon': '🐶', 'na
          'face': '👵🏻',
          'lines': [('Mrs. Park', 'Max! Did you see my dog, Biscuit?', 'Max! Você viu meu cachorro, o Biscuit?'),
                    ('You', 'Yes! I found him near the lake.', 'Sim! Achei ele perto do lago.'),
-                   ('Mrs. Park', 'Thank goodness! How did he get there?', 'Graças a Deus! Como ele foi parar lá?'),
+                   ('Mrs. Park', 'Oh, great! How did he get there?', 'Que bom! Como ele foi parar lá?'),
                    ('You', 'He ran out of your yard when the gate opened.', 'Ele saiu correndo do seu quintal quando o portão abriu.'),
                    ('Mrs. Park', 'Oh dear. Did he hurt himself?', 'Ai, meu Deus. Ele se machucou?'),
                    ('You', 'No, he was fine. He was only very wet.', 'Não, estava bem. Só estava muito molhado.'),
@@ -138,7 +138,7 @@ SUPP = {'badge': {'desc': 'Tell a lost-and-found dog story', 'icon': '🐶', 'na
                       {'alt': ['tag'], 'ans': 'the tag', 'q': 'What did Max read?'}],
              'text': ['It is a sunny afternoon in a quiet park in Houston. Children play near the swings. Mrs. Park runs across the grass with a leash. Her face is red '
                       'and worried. She sees her neighbor Max near the path. She asks about her dog.',
-                      '“Max! Did you see my dog, Biscuit?” says Mrs. Park. “Yes! I found him near the lake.” says Max. “Thank goodness! How did he get there?” says Mrs. '
+                      '“Max! Did you see my dog, Biscuit?” says Mrs. Park. “Yes! I found him near the lake.” says Max. “Oh, great! How did he get there?” says Mrs. '
                       'Park.',
                       '“He ran out of your yard when the gate opened.” says Max. “Oh dear. Did he hurt himself?” says Mrs. Park. “No, he was fine. He was only very '
                       'wet.” says Max.',

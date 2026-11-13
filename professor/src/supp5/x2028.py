@@ -66,7 +66,7 @@ X = {'convo': {'npc': {'name': 'Ms. Cole'},
           'pt': 'O público adorou a {cena final|primeira cena|cena engraçada}.',
           'who': 'Ms. Cole'},
          {'en': 'They clapped for {a long time|two minutes|ten minutes}!', 'pt': 'Aplaudiram por {muito tempo|dois minutos|dez minutos}!', 'who': 'You'},
-         {'en': 'You earned it. Rest now, we have a party tonight.', 'pt': 'Você mereceu. Descanse, temos uma festa hoje.', 'who': 'Ms. Cole'}],
+         {'en': 'You earned it. Relax now, we have a party tonight.', 'pt': 'Você mereceu. Relaxe, temos uma festa hoje.', 'who': 'Ms. Cole'}],
  'key': {'big': 'practiced · forgot · remembered · clapped',
          'label': 'Passado: apresentação',
          'sub': 'Use practiced, felt, forgot, remembered e clapped para contar a peça. Use for com duração e pergunte Did you feel nervous? Responda Yes, I felt very '

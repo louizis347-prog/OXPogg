@@ -27,6 +27,24 @@ def A2(k,d):
         if g[0].lower() not in (' '.join(e for e,_ in sum([list(x) for x in [d['O'],d['C']]],[]))+' '.join(l[1] for l in L)).lower(): print('GLOSS?',k,g[0])
     for g in gl[:6]:
         if g[0].lower() not in g[4].lower(): print('VOCABEX?',k,g[0])
+    sys.path.insert(0,'/home/user/OXPogg/professor/tools')
+    import cefr_audit as CA, re as _re
+    taught=set(w for g in gl for w in _re.findall(r"[a-z']+",g[0].lower()))|set(w for e in d['ex'] for w in _re.findall(r"[a-z']+",e[0].lower().replace('’',"'")))|set(v.split('|')[0] for v in d['vb'] if isinstance(v,str))|set(v.split('|')[3] for v in d['vb'] if isinstance(v,str))
+    nm={npc.lower(),you.lower(),city.lower()}
+    cef=[]
+    for _,en,_ in L:
+        txt=en.replace('’',"'")
+        for mt in _re.finditer(r"[A-Za-z]+(?:'[a-z]+)?",txt):
+            w=mt.group(0);w2=w.lower();bf=txt[:mt.start()].rstrip()
+            if w[0].isupper() and bf and bf[-1] not in '.?!“"': continue
+            if w2 in nm or w2 in CA.SKIP: continue
+            lv=CA.level(w2)
+            if lv is None or CA.RANK[lv]<=2: 
+                if lv is None and len(w2)>2 and not any(b in taught for b in CA.base_forms(w2)) and w2 not in taught: cef.append(w2+':??')
+                continue
+            if w2 in taught or any(b in taught for b in CA.base_forms(w2)): continue
+            cef.append(w2+':'+lv)
+    if cef: print('CEFR?',k,sorted(set(cef)))
     for mo in d['mo']:
         f=mo[1]
         for key,opts in mo[2]: f=f.replace('{'+key+'}',opts[0])

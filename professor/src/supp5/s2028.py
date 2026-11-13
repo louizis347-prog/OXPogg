@@ -111,7 +111,7 @@ SUPP = {'badge': {'desc': 'Tell about a school play', 'icon': '🎭', 'name': 'S
                    ('You', 'My mother filmed everything on her phone.', 'Minha mãe filmou tudo no celular.'),
                    ('Ms. Cole', 'The audience loved the final scene.', 'O público adorou a cena final.'),
                    ('You', 'They clapped for a long time!', 'Aplaudiram por muito tempo!'),
-                   ('Ms. Cole', 'You earned it. Rest now, we have a party tonight.', 'Você mereceu. Descanse, temos uma festa hoje.')],
+                   ('Ms. Cole', 'You earned it. Relax now, we have a party tonight.', 'Você mereceu. Relaxe, temos uma festa hoje.')],
          'mission': 'Contar uma apresentação da escola no passado.',
          'npc': 'Ms. Cole',
          'p': 'Conte uma peça de teatro da escola: ensaio, esquecimento e aplausos, no passado.',
@@ -156,7 +156,7 @@ SUPP = {'badge': {'desc': 'Tell about a school play', 'icon': '🎭', 'name': 'S
                       'says Rui.',
                       '“Nobody noticed. You smiled and continued.” says Ms. Cole. “My mother filmed everything on her phone.” says Rui. “The audience loved the final '
                       'scene.” says Ms. Cole.',
-                      '“They clapped for a long time!” says Rui. “You earned it. Rest now, we have a party tonight.” says Ms. Cole. Ms. Cole gives Rui a small flower. '
+                      '“They clapped for a long time!” says Rui. “You earned it. Relax now, we have a party tonight.” says Ms. Cole. Ms. Cole gives Rui a small flower. '
                       'He puts it in his pocket. His classmates run to hug him. They take a photo together. The lights go down one by one. A first night on stage stays '
                       'in memory.'],
              'tf': [{'ans': True, 's': 'Rui practiced for weeks.', 'why': 'He says it.'},

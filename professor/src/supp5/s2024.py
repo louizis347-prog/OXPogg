@@ -44,7 +44,7 @@ SUPP = {'badge': {'desc': 'Report a missing package', 'icon': '📦', 'name': 'P
                                 'ok': False,
                                 'pt': 'Na segunda. O entregador não deixou bilhete.'}],
                       'pt': 'Deixe-me ver. Quando a entrega começou?'},
-                     {'npc': 'I see. It says “delivered” on Tuesday.',
+                     {'npc': 'I see. It says “arrived” on Tuesday.',
                       'opts': [{'en': 'But I didn’t receive it. I didn’t see it at the door.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -57,7 +57,7 @@ SUPP = {'badge': {'desc': 'Report a missing package', 'icon': '📦', 'name': 'P
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Mas eu não recebi. Não vi na porta.'}],
-                      'pt': 'Entendi. Consta “entregue” na terça.'},
+                      'pt': 'Entendi. Consta “chegou” na terça.'},
                      {'npc': 'Maybe a neighbor took it. Did you ask?',
                       'opts': [{'en': 'No, I didn’t. I’ll ask them today.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Não. Vou perguntar hoje.'},
                                {'en': 'No, today. them I’ll didn’t. I ask', 'fb': 'A ordem das palavras está errada.', 'ok': False, 'pt': 'Não. Vou perguntar hoje.'},
@@ -113,7 +113,7 @@ SUPP = {'badge': {'desc': 'Report a missing package', 'icon': '📦', 'name': 'P
                    ('You', 'Yes, but the website didn’t show any update.', 'Sim, mas o site não mostrou nenhuma atualização.'),
                    ('Gina', 'Let me check. When did the delivery start?', 'Deixe-me ver. Quando a entrega começou?'),
                    ('You', 'On Monday. The driver didn’t leave a note.', 'Na segunda. O entregador não deixou bilhete.'),
-                   ('Gina', 'I see. It says “delivered” on Tuesday.', 'Entendi. Consta “entregue” na terça.'),
+                   ('Gina', 'I see. It says “arrived” on Tuesday.', 'Entendi. Consta “chegou” na terça.'),
                    ('You', 'But I didn’t receive it. I didn’t see it at the door.', 'Mas eu não recebi. Não vi na porta.'),
                    ('Gina', 'Maybe a neighbor took it. Did you ask?', 'Talvez um vizinho tenha pegado. Você perguntou?'),
                    ('You', 'No, I didn’t. I’ll ask them today.', 'Não. Vou perguntar hoje.'),
@@ -149,10 +149,10 @@ SUPP = {'badge': {'desc': 'Report a missing package', 'icon': '📦', 'name': 'P
              'order': ['Gina offers help.',
                        'Tom says the package didn’t arrive.',
                        'Gina asks about tracking.',
-                       'Gina says delivered on Tuesday.',
+                       'Gina says arrived on Tuesday.',
                        'Tom says he’ll ask the neighbors.'],
              'scan': [{'alt': ['package'], 'ans': 'Tom’s package', 'q': 'What didn’t arrive?'},
-                      {'alt': ['delivered'], 'ans': 'delivered on Tuesday', 'q': 'What does the system say?'},
+                      {'alt': ['arrived'], 'ans': 'arrived on Tuesday', 'q': 'What does the system say?'},
                       {'alt': ['neighbor'], 'ans': 'a neighbor', 'q': 'Who maybe took it?'}],
              'text': ['It is Wednesday afternoon in a small post office in Portland. A line of people waits with boxes and letters. Tom stands at the counter with his '
                       'phone. A clerk named Gina smiles at him. He looks a little worried. He explains his problem.',
@@ -160,14 +160,14 @@ SUPP = {'badge': {'desc': 'Report a missing package', 'icon': '📦', 'name': 'P
                       'says Gina.',
                       '“Yes, but the website didn’t show any update.” says Tom. “Let me check. When did the delivery start?” says Gina. “On Monday. The driver didn’t '
                       'leave a note.” says Tom.',
-                      '“I see. It says “delivered” on Tuesday.” says Gina. “But I didn’t receive it. I didn’t see it at the door.” says Tom. “Maybe a neighbor took it. '
+                      '“I see. It says “arrived” on Tuesday.” says Gina. “But I didn’t receive it. I didn’t see it at the door.” says Tom. “Maybe a neighbor took it. '
                       'Did you ask?” says Gina.',
                       '“No, I didn’t. I’ll ask them today.” says Tom. “Good. Come back tomorrow if you don’t find it.” says Gina. Gina writes the tracking number on a '
                       'note. She gives Tom a phone number to call. He thanks her and leaves. On his way home, he checks the neighbors’ doors. He finds the box next to a '
                       'plant. A calm question can find a lost box.'],
              'tf': [{'ans': True, 's': 'The package didn’t arrive.', 'why': 'Tom says it.'},
                     {'ans': False, 's': 'The driver left a note.', 'why': 'The driver didn’t leave a note.'},
-                    {'ans': True, 's': 'The system says delivered.', 'why': 'Gina says it.'},
+                    {'ans': True, 's': 'The system says arrived.', 'why': 'Gina says it.'},
                     {'ans': False, 's': 'Tom asked his neighbors.', 'why': 'He didn’t ask yet.'}],
              'think': 'Did you ever lose a package?',
              'title': 'A small post office'},

@@ -24,11 +24,11 @@ SUPP = {'badge': {'desc': 'Talk about a movie in the past', 'icon': '🎬', 'nam
                                 'pt': 'E o final foi triste. Chorei um pouco.'},
                                {'en': 'And the end was I cried a little.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'E o final foi triste. Chorei um pouco.'}],
                       'pt': 'Eu também. A cena do cachorro foi muito engraçada.'},
-                     {'npc': 'Really? I didn’t cry, but I felt emotional.',
+                     {'npc': 'Really? I didn’t cry, but I felt sad.',
                       'opts': [{'en': 'Who played the main character?', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Quem fez o personagem principal?'},
                                {'en': 'character? Who the main played', 'fb': 'A ordem das palavras está errada.', 'ok': False, 'pt': 'Quem fez o personagem principal?'},
                                {'en': 'Who played main character?', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Quem fez o personagem principal?'}],
-                      'pt': 'Sério? Eu não chorei, mas fiquei emocionado.'},
+                      'pt': 'Sério? Eu não chorei, mas fiquei triste.'},
                      {'npc': 'A famous actor. He also won a prize last year.',
                       'opts': [{'en': 'Did you eat popcorn?', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Você comeu pipoca?'},
                                {'en': 'eat Did popcorn? you', 'fb': 'A ordem das palavras está errada.', 'ok': False, 'pt': 'Você comeu pipoca?'},
@@ -90,7 +90,7 @@ SUPP = {'badge': {'desc': 'Talk about a movie in the past', 'icon': '🎬', 'nam
                    ('You', 'I loved it! I laughed a lot in the first half.', 'Adorei! Ri muito na primeira metade.'),
                    ('Cal', 'Me too. The dog scene was so funny.', 'Eu também. A cena do cachorro foi muito engraçada.'),
                    ('You', 'And the end was sad. I cried a little.', 'E o final foi triste. Chorei um pouco.'),
-                   ('Cal', 'Really? I didn’t cry, but I felt emotional.', 'Sério? Eu não chorei, mas fiquei emocionado.'),
+                   ('Cal', 'Really? I didn’t cry, but I felt sad.', 'Sério? Eu não chorei, mas fiquei triste.'),
                    ('You', 'Who played the main character?', 'Quem fez o personagem principal?'),
                    ('Cal', 'A famous actor. He also won a prize last year.', 'Um ator famoso. Ele também ganhou um prêmio no ano passado.'),
                    ('You', 'Did you eat popcorn?', 'Você comeu pipoca?'),
@@ -137,8 +137,7 @@ SUPP = {'badge': {'desc': 'Talk about a movie in the past', 'icon': '🎬', 'nam
                       'holds an empty popcorn box. Her friend Cal stands next to her. They talk about the movie.',
                       '“So, Mia, did you like the movie?” says Cal. “I loved it! I laughed a lot in the first half.” says Mia. “Me too. The dog scene was so funny.” '
                       'says Cal.',
-                      '“And the end was sad. I cried a little.” says Mia. “Really? I didn’t cry, but I felt emotional.” says Cal. “Who played the main character?” says '
-                      'Mia.',
+                      '“And the end was sad. I cried a little.” says Mia. “Really? I didn’t cry, but I felt sad.” says Cal. “Who played the main character?” says Mia.',
                       '“A famous actor. He also won a prize last year.” says Cal. “Did you eat popcorn?” says Mia. “Yes, I bought a big one, but I finished it fast.” '
                       'says Cal.',
                       '“Same here. Should we watch another movie next week?” says Mia. “Sure! You choose, I’ll buy the tickets.” says Cal. Cal and Mia walk toward the '
