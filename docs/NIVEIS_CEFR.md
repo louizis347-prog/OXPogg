@@ -30,11 +30,8 @@
 | segundo condicional | B1.2 | fora do A2 |
 | which relativo, discurso indireto com tell | B1–B2 | fora do A2 |
 
-## Resultado da auditoria (depois da correção)
+## Resultado da auditoria (depois da correção completa)
 
-- **A2 (2001–2050):** 0 palavras fora da regra.
-- **A1 (500 aulas):** **0 palavras B1/B2** que a aula não ensina (eram 141, em 112 aulas). Restam 274 aulas com palavras de nível A2 (438 palavras): são esperadas, porque 500 aulas de A1 não cabem nas ≈1000 palavras do A1 do CEFR-J.
-
-## Palavras de apoio
-
-As 141 palavras B1/B2 do A1 (por exemplo *passport, refund, parking, press, terminal, miles*) são de situações reais e foram mantidas nos diálogos. Cada uma agora é **ensinada na própria aula**, numa tela extra "Palavras de apoio" (1 a 2 telas por aula, até 3 palavras cada), listada em `professor/src/support_words.json`. O `build_v5.py` insere essas telas automaticamente.
+- **Vocabulário:** 0 palavras fora da regra nas 550 aulas (A1 e A2). Toda palavra do diálogo acima do nível da aula é ensinada na própria aula, na tela extra "Palavras de apoio" (`professor/src/support_words.json`, 579 palavras em 315 aulas).
+- **Gramática:** 0 ocorrências de *could, must/mustn't, may, might, used to, present perfect negativo* e *I've never* nos diálogos. Os pedidos educados viraram *Can I / Can you*, e *must* virou *have to* ou *Don't*. As trocas estão em `professor/src/overrides_a1.json` e são aplicadas em toda reconstrução.
+- **Limite da checagem:** o vocabulário é conferido automaticamente (`tools/cefr_audit.py`); a gramática foi conferida por busca de padrões, e não por um analisador sintático.
