@@ -19,6 +19,24 @@ def plan90(L):
 def _ans_idx(it):
     o=it.get('opts') or []; a=it.get('ans')
     return o[a] if isinstance(a,int) and 0<=a<len(o) else ''
+def _page(L,kind):
+    return next((x for x in L.get('pages',[]) if x.get('kind')==kind),None)
+def _errors(L):
+    out=[]
+    for x in L.get('pages',[]):
+        if x.get('kind')=='bridge2':
+            for it in x.get('items') or []:
+                if isinstance(it,dict) and it.get('wrong') and it.get('fix'): out.append({'w':_s(it['wrong'],70),'r':_s(it['fix'],70)})
+        elif x.get('kind')=='quiz':
+            for it in x.get('items') or []:
+                o=it.get('opts') or []; a=it.get('ans')
+                if isinstance(a,int) and len(o)>1 and 0<=a<len(o) and re.search(r'natural|mais natural|certa|correct',str(it.get('q','')),re.I):
+                    bad=[y for i,y in enumerate(o) if i!=a][:1]
+                    if bad: out.append({'w':_s(bad[0],70),'r':_s(o[a],70)})
+    seen=set();res=[]
+    for e in out:
+        if e['w'] not in seen: seen.add(e['w']); res.append(e)
+    return res[:5]
 def teach(p,L):
     k=p.get('kind'); sp=(L.get('dialog') or {}).get('speakers',{}); npc=next((v.get('name') for w,v in sp.items() if w!='You'),'o personagem')
     t=dict(); g=[];s=[];e90=[];ans=[];err=[]
@@ -26,7 +44,8 @@ def teach(p,L):
         t['goal']='Abrir a aula: objetivo e primeira hipótese.'
         g=['Leia o objetivo em voz alta: “'+_s(p.get('goal'),110)+'”.','Peça que cada aluno diga, em português, quando precisaria disso na vida real.']
         s=['Leia o objetivo e pergunte: “Quando você precisa disso?”. Anote a resposta para retomar no fim.']
-        e90=['Faça a rodada de acolhida (3 min): cada aluno diz o nome e uma palavra sobre o dia.','Peça um palpite sobre o que acontece na cena antes de abrir o diálogo.']
+        cp=_page(L,'compare'); ask=_s(((cp or {}).get('compare') or {}).get('ask'),150)
+        e90=['Aquecimento (4 min): cada aluno diz o nome e responde à pergunta do tema'+(': “'+ask+'”.' if ask else '.'),'Peça um palpite sobre o que acontece na cena antes de abrir o diálogo.']
     elif k=='me':
         t['goal']='Primeira produção do aluno com o modelo da aula.'
         g=['Mostre o modelo: “'+_s(p.get('model'))+'”.','Cada aluno diz a sua versão trocando um item do quadro de opções.']
@@ -119,8 +138,8 @@ def teach(p,L):
         e90=['Peça que digam a resposta em voz alta com a frase inteira.']
     elif k=='exprs':
         t['goal']='Expressões úteis.'
-        es=[x.get('en') for x in (p.get('items') or []) if isinstance(x,dict)][:6]
-        g=['Expressões: '+'; '.join(filter(None,es))+'.','Escolha 3 prioritárias para usar o resto da aula.']
+        its=[x for x in (p.get('items') or []) if isinstance(x,dict)][:6]
+        g=['Expressões-chave: '+'; '.join(_s(x.get('en'),50)+' = '+_s(x.get('pt'),50) for x in its)+'.','Escolha 3 prioritárias para usar o resto da aula.']
         s=['Aluno diz quando usaria cada uma.']
         e90=['Cada aluno usa 2 expressões em uma mini-cena de 20 segundos.']
     elif k=='pattern':
@@ -138,7 +157,8 @@ def teach(p,L):
         t['goal']='Missão ao vivo.'
         g=[_s(p.get('group'),160),'Complicações para introduzir: '+' / '.join(_s(x,70) for x in (p.get('change') or [])[:3])]
         s=[_s(p.get('solo'),160),'Repita 3 vezes com menos apoio.']
-        e90=['Em duplas: 3 rodadas de 3 minutos com a complicação trocada a cada rodada. Troque de parceiro.','Observador anota 2 acertos e 2 erros.']
+        ch=[_s(x,80).rstrip('.') for x in (p.get('change') or [])[:2]]; rn=p.get('npcname') or npc
+        e90=['Trios, 3 rodadas de 3 minutos, trocando os papéis a cada rodada: '+rn+' (conduz a cena), “You” (resolve a situação) e observador.','Rodada 1: cena normal. Rodada 2: '+(ch[0] if ch else 'o professor muda um detalhe')+'. Rodada 3: '+(ch[1] if len(ch)>1 else 'sem olhar a tela')+'.','Observador anota 2 acertos e 2 erros e lê no fim.']
     elif k=='writing':
         t['goal']='Escrever a versão do aluno.'
         g=['Tarefa: '+_s(p.get('task'),110),'Modelo: “'+_s(p.get('model'),120)+'”.','Troquem textos e corrijam em duplas.']
@@ -149,7 +169,8 @@ def teach(p,L):
         t['goal']='Fechar e passar a tarefa.'
         g=['Recapitule 3 coisas aprendidas.','Tarefa: '+_s(p.get('homework'),130),'Pergunta de adaptação: '+_s(p.get('next'),120)]
         s=['Aluno diz o que aprendeu e lê a tarefa.']
-        e90=['Correção coletiva (3 min): mostre 3 frases anotadas na pausa e no jogo de papéis, sem expor o autor.']
+        e90=['Correção coletiva (3 min): mostre 3 a 5 frases anotadas na pausa e nos trios, sem expor o autor; o grupo corrige antes de você.','Use a lista “Correções frequentes” abaixo para os erros típicos desta aula.']
+        err=_errors(L)
     elif k=='reviewwords':
         t['goal']='Retomar palavras da aula anterior.'
         ws=[x.get('w') for x in (p.get('words') or []) if isinstance(x,dict)][:8]
