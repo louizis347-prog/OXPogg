@@ -14,7 +14,7 @@ def words(d):
         elif k == 'reading':
             for g in p.get('glossary', []): w.add(g['w'].lower())
     return {x for x in w if x}
-def order(n): return (n % 1000) * 2 + (1 if n >= 1000 else 0)
+def order(n): return (n // 2000) * 100000 + (n % 1000) * 2 + (1 if 1000 <= n < 2000 else 0)
 def load():
     out = {}
     for f in glob.glob(os.path.join(D, '[0-9]*.json')):

@@ -66,5 +66,5 @@ for f in sorted(glob.glob(os.path.join(D, '[0-9]*.json'))):
     d = json.load(open(f, encoding='utf-8'))
     if d['n'] in have: continue
     cur.append({'n': d['n'], 'unit': d['unit'], 'level': d['level'], 'title': d['title'], 'pt': d['pt'], 'scene': d['scene'], 'cast': d['cast']}); add += 1
-cur.sort(key=lambda x: (x['n'] % 1000, x['n'] >= 1000)); json.dump(cur, open(cp, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+cur.sort(key=lambda x: (x['n'] >= 2000, x['n'] % 1000, x['n'] >= 1000 and x['n'] < 2000)); json.dump(cur, open(cp, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('aulas alteradas', changed, '| indexadas', add, '| total no índice', len(cur))

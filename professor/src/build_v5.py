@@ -11,6 +11,8 @@ def load(p):
     for f in sorted(glob.glob(os.path.join(ROOT, 'data', p + '_*.json'))): o += json.load(open(f, encoding='utf-8'))
     return o
 EN = [e for e in load('en-a1') if e['n'] < 7000000]
+EN2 = [e for e in load('en-a2') if e['n'] < 7000000]
+level_of = lambda n: 'A2' if n >= 2000 else 'A1'
 FILLER = {'That sounds good. What should we do next?', 'Let me check the details before we decide.', 'Could you say that one more time?', 'Sure, I will explain it clearly.', 'Thanks, now I know how to continue.'}
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
@@ -102,7 +104,7 @@ def own_nb(o, n):
         en_k, pt_k = ex[k][0], ex[k][1]; others = [e[0] for e in ex if e[0] != en_k][:2]; ch = [others[0], en_k] + others[1:]
         ctx.append(dict(ic='💬', sit='Complete a fala: “____.” (' + pt_k + ')', opts=ch, a=1, why='“' + en_k + '” = ' + pt_k))
     you = [(l[1], l[2]) for l in L if l[0] == 'You'][:4]
-    fr_ = [dict(k='nbhero', g=g, num=n, lvl='A1', face=o.get('face', '🙂'), name=npc, city=o['city'], sub=o['title'], emo=o.get('emo', ['💬']), mission=o['mission'], hook=[L[0][1], L[0][2]]),
+    fr_ = [dict(k='nbhero', g=g, num=n, lvl='A1' if n < 2000 else 'A2', face=o.get('face', '🙂'), name=npc, city=o['city'], sub=o['title'], emo=o.get('emo', ['💬']), mission=o['mission'], hook=[L[0][1], L[0][2]]),
            dict(k='nbchat', g=g, title='O diálogo-padrão', intro='Toque em “Próxima fala” para abrir cada mensagem.', cast={npc: [o.get('face', '🙂'), '#2159C9'], 'You': ['🙂', '#e85d75']}, lines=L),
            dict(k='nbtap', g=g, title='Ouça e toque', items=tap), dict(k='nbctx', g=g, title='Em que contexto?', items=ctx),
            dict(k='nbshadow', g=g, title='Fale como ' + npc, items=[list(x) for x in you], real=o.get('real', [L[1][1], L[1][1], 'fale em blocos'])),
@@ -134,7 +136,7 @@ def apply_overrides(L, n):
 
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
-    S = supp(n); en, nb = EN[S.get('reg', n0) - 1], nb_for(n, S)
+    S = supp(n); en, nb = (EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]
@@ -159,7 +161,7 @@ def build(n):
         st = en.get('stage') or {}
         return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
     P = {}
-    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level='A1', unit=dict(n=math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
+    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level=level_of(n), unit=dict(n=(100 if n >= 2000 else 0) + math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
         canDo=['Say: ' + strip(i['en']) for i in exps[:4]], success=['I understand the conversation.', 'I use the key expression.', 'I answer a real question.', 'I close politely.'],
         think=strip(nhero.get('mission', '')))
@@ -220,7 +222,7 @@ def build(n):
     for t in ORDER:
         p = dict(P[t]); p['stage'] = CHAP[t]; pages.append(p)
     plan = {m: [dict(id=k, name=CH[k][1], ic=CH[k][0], c=CH[k][2], min=MIN[m][k], desc=DESC[k]) for k in CH if k != 'lab' or True] for m in MIN}
-    L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
+    L = dict(n=n, topic=nb['t'], level=level_of(n), title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
         pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
         src=dict(regular=en['n'], neighbors=nb['n'], reg_idx=S.get('reg', n)))
     os.makedirs(os.path.join(ROOT, 'professor', 'data', 'v4'), exist_ok=True)

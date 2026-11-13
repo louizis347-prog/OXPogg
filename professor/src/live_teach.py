@@ -33,6 +33,12 @@ def _errors(L):
                 if isinstance(a,int) and len(o)>1 and 0<=a<len(o) and re.search(r'natural|mais natural|certa|correct',str(it.get('q','')),re.I):
                     bad=[y for i,y in enumerate(o) if i!=a][:1]
                     if bad: out.append({'w':_s(bad[0],70),'r':_s(o[a],70)})
+    if len(out)<3:
+        for x in L.get('pages',[]):
+            if x.get('kind')=='choice':
+                o=(x.get('turn') or {}).get('opts') or []
+                good=[y for y in o if y.get('ok')]; bad=[y for y in o if not y.get('ok')]
+                if good and bad: out.append({'w':_s(bad[0].get('en'),70),'r':_s(good[0].get('en'),70)})
     seen=set();res=[]
     for e in out:
         if e['w'] not in seen: seen.add(e['w']); res.append(e)
