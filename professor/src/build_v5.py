@@ -134,6 +134,24 @@ def apply_overrides(L, n):
         return o
     return fx(L)
 
+def add_support_words(L, n):
+    """Palavras de apoio (src/support_words.json): palavras do diálogo acima do nível que a aula passa a ensinar
+    explicitamente, numa tela extra de vocabulário (regra de níveis: docs/NIVEIS_CEFR.md)."""
+    try: S = json.load(open(os.path.join(ROOT, 'professor', 'src', 'support_words.json'), encoding='utf-8')).get(str(n))
+    except OSError: S = None
+    if not S: return L
+    import copy
+    idx = [i for i, p in enumerate(L['pages']) if p.get('kind') == 'vocab']
+    if not idx: return L
+    base = L['pages'][idx[-1]]; k = (len(S) + 2) // 3; new = []
+    for j in range(k):
+        pg = copy.deepcopy(base); pg['title'] = 'Palavras de apoio · %d/%d' % (j + 1, k)
+        pg['words'] = [[w[0], w[1], w[2], w[3], 'prop:cup', '📌'] for w in S[j * 3:(j + 1) * 3]]
+        pg['prompt'] = 'Estas palavras aparecem na conversa. Toque, ouça e leia a frase.'
+        pg.pop('teach', None); new.append(pg)
+    L['pages'][idx[-1] + 1:idx[-1] + 1] = new
+    return L
+
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
     S = supp(n); en, nb = (EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
@@ -236,6 +254,7 @@ def build(n):
     X_ = extras(n); ems = [v.get('e', '') for v in (X_.get('vocab') or [])] or (['☕', '🥐', '🥛', '🧁', '🍵'] if n == 1 else [])
     post(L, n, ylayer(n), S, X_, prev_ctx(n), ems, zlayer(n))
     L = apply_overrides(L, n)
+    L = add_support_words(L, n)
     import live_teach; L = live_teach.apply(L)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
