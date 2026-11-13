@@ -1,6 +1,26 @@
 import sys;sys.path.insert(0,'/tmp/gen');sys.path.insert(0,'/tmp/a2')
 from compact import *
 from plan import P as PLAN
+
+import re as _g
+BAN=[(r"\bcould(n't)?\b","could"),(r"\bwould(n't)?\b(?! (you |i |we |he |she |they )?like)","would (só 'would like')"),(r"\bmight\b","might"),(r"\bmay\b","may"),(r"\bmust(n't)?\b","must"),
+ (r"\bused to\b","used to"),(r"\b(haven't|hasn't|hadn't)\b","present/past perfect negativo"),(r"\b(have|has) (you |he |she |they |we |I )?(ever|never|already|just|yet|been|seen|done|eaten|gone|tried|finished)\b","present perfect"),
+ (r"\b(i|you|we|they|he|she|it|that|there)'ve\b|\b(he|she|it|that)'s (been|gone|seen|done|eaten|just|already)\b","present perfect (contração)"),(r"\bshouldn't\b","shouldn't"),(r"\bShould (I|we|you|he|she|it|they)\b|\bshould (I|we|you|he|she|it|they) \w+\?","Should + sujeito (pergunta)"),
+ (r"\bwon't\b|\bwill not\b","will negativo"),(r"(^|[.!?]\s*)Will (you|it|we|they|he|she|there|the)\b","pergunta com will"),(r"\b(don't|doesn't|didn't) have to\b|\bhad to\b|\b(Do|Does|Did) (you|I|we|they|he|she) have to\b","have to fora do afirmativo no presente"),
+ (r"\b(was|were) (made|built|written|painted|sold|born|found|invented|designed|used|cooked|baked|taken|called)\b","passivo no passado"),
+ (r"\b\w+ (who|which|whom|whose|that) (is|are|was|were|has|have|had|lives|works|makes|sells|helps|likes|wants|knows|comes|goes|speaks|did|does|do)\b|, which\b","oração relativa"),
+ (r"\b(myself|yourself|himself|herself|itself|ourselves|themselves)\b","pronome reflexivo"),(r"\bas \w+ as\b","as…as"),(r"\benough\b","enough"),
+ (r"\b(do you know|can you tell me|could you tell me|i wonder|do you remember|i don't know|i'm not sure|do you think) (where|what|when|how|why|if|who|which)\b","pergunta indireta"),
+ (r"\btold (me|you|him|her|us|them)\b|\basked (me|you|him|her|us) (if|to)\b|\bsaid (that )?(i|he|she|we|they|you|it) \b","discurso indireto"),
+ (r"(^|[.!?]\s*)(Please )?Don't (?!worry)\w+","imperativo negativo (só 'Don't worry')"),(r"\bhad (been|gone|seen|done|eaten|finished|already)\b","past perfect"),(r"\bif I (were|was|had|could|didn't|knew)\b","segundo condicional")]
+def grammar_check(k,texts):
+    bad=[]
+    for t in texts:
+        s=t.replace('’',"'")
+        for pat,name in BAN:
+            if _g.search(pat,s,_g.I if name!="may" else 0): bad.append((name,t[:60]))
+    return bad
+
 def A2(k,d):
     row=PLAN[k-1];title,city,npc,you,struct,sc=row
     nxt=PLAN[k][0] if k<len(PLAN) else 'Próxima etapa'
@@ -45,6 +65,8 @@ def A2(k,d):
             if w2 in taught or any(b in taught for b in CA.base_forms(w2)): continue
             cef.append(w2+':'+lv)
     if cef: print('CEFR?',k,sorted(set(cef)))
+    gb=grammar_check(k,[e for _,e,_ in L]+[e[0] for e in d['ex']]+[e[0] for e in d['ex']][:0])
+    if gb: print('GRAMMAR?',k,gb)
     for mo in d['mo']:
         f=mo[1]
         for key,opts in mo[2]: f=f.replace('{'+key+'}',opts[0])
