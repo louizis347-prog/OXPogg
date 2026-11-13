@@ -35,3 +35,9 @@
 - **Vocabulário:** 0 palavras fora da regra nas 550 aulas (A1 e A2). Toda palavra do diálogo acima do nível da aula é ensinada na própria aula, na tela extra "Palavras de apoio" (`professor/src/support_words.json`, 579 palavras em 315 aulas).
 - **Gramática:** 0 ocorrências de *could, must/mustn't, may, might, used to, present perfect negativo* e *I've never* nos diálogos. Os pedidos educados viraram *Can I / Can you*, e *must* virou *have to* ou *Don't*. As trocas estão em `professor/src/overrides_a1.json` e são aplicadas em toda reconstrução.
 - **Limite da checagem:** o vocabulário é conferido automaticamente (`tools/cefr_audit.py`); a gramática foi conferida por busca de padrões, e não por um analisador sintático.
+
+## A2 (2001–2150) — conferência final
+
+- Vocabulário: 0 palavras fora da regra nas 150 aulas (`tools/cefr_audit.py`).
+- Gramática: 0 estruturas proibidas nos diálogos (`BAN` em `tools/gen/mk.py`, a mesma lista do guia dos agentes).
+- Teste no navegador: as 150 aulas têm 44 quadros e nenhum erro.

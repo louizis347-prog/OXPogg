@@ -1,12 +1,12 @@
-# Plano A2 · primeiras 150 aulas (2001–2150)
+# Plano A2 · 150 aulas (2001–2150)
 
-Numeração: A2 usa 2000 + n (aula 2001 = A2 · 001). Cada aula tem diálogo próprio, 44 quadros, roteiro do professor e versões de 1h30 e 1h.
+Numeração: A2 usa 2000 + n (aula 2001 = A2 · 001). Cada aula tem diálogo próprio, 44 quadros, roteiro do professor e versões de 1h30 e 1h. Gramática conferida contra o CEFR-J (veja `docs/NIVEIS_CEFR.md`): não entram *could, may, might, must, used to, present perfect*, orações relativas, passivo no passado nem perguntas indiretas.
 
-## Blocos gramaticais
+## Blocos
 
 - **A2.1 · aulas 1–50:** Passado simples e tempo: was/were, regulares e irregulares, did/didn’t, there was/were, quantidade, ago/last/yesterday.
-- **A2.2 · aulas 51–100:** Futuro, planos, modais e present perfect básico: going to, will, should/must/have to, might, ever/never/already/yet, for/since, comparativos.
-- **A2.3 · aulas 101–150:** Condicional, used to, relativas, passiva simples e comunicação: if (1.º condicional), used to, who/that, is made, opinião, telefone e serviços.
+- **A2.2 · aulas 51–100:** Planos, ofertas, conselhos e comparações: going to, will afirmativo, should, have to afirmativo, past progressive, comparativos e superlativos, how + adjetivo, pedidos com can.
+- **A2.3 · aulas 101–150:** if e when (1.º condicional), hábitos no passado (always/often), descrições, passivo presente e comunicação do dia a dia.
 
 ## Mapa
 
@@ -67,37 +67,37 @@ Numeração: A2 usa 2000 + n (aula 2001 = A2 · 001). Cada aula tem diálogo pr�
 | 2053 | It’s going to rain | Seattle | Jen | going to para previsões |
 | 2054 | I’ll help you | Atlanta | Sal | will para ofertas |
 | 2055 | I’ll call you later | Houston | Una | will para decisões e promessas |
-| 2056 | Will it be OK? | Phoenix | Vic | will em perguntas |
+| 2056 | Will you like it? | Phoenix | Vic | will afirmativo para previsões: I think you’ll like it |
 | 2057 | Plans or promises? | Chicago | Pia | going to vs will |
 | 2058 | A trip to the mountains | Denver | Lars | present continuous para planos |
 | 2059 | Booking a hotel | Boston | Nia | will/going to em reservas |
 | 2060 | At the travel agency | New York | Otto | planos de viagem |
-| 2061 | You should rest | Austin | Dr. Ames | should/shouldn’t |
-| 2062 | I have to work | Dallas | Kim | have to / don’t have to |
-| 2063 | You must wear a helmet | Nashville | Cody | must/mustn’t |
-| 2064 | Can I borrow your pen? | Minneapolis | Tia | can/could para pedir |
-| 2065 | May I come in? | Los Angeles | Mr. Hart | may/could, formalidade |
-| 2066 | It might snow | Seattle | Dana | might/may |
-| 2067 | I’m not sure yet | Atlanta | Kyle | might + talvez |
-| 2068 | Have you ever been to New York? | Boston | Rita | present perfect: ever |
-| 2069 | I’ve never tried sushi | Portland | Sora | present perfect: never |
-| 2070 | I’ve already eaten | Phoenix | Zara | already/just |
-| 2071 | Not yet | Miami | Jude | yet em negativas e perguntas |
-| 2072 | How long have you lived here? | Chicago | Mae | for/since |
-| 2073 | Have you seen my wallet? | Houston | Gil | present perfect de procura |
-| 2074 | What have you done today? | Denver | Pru | present perfect: today/this week |
-| 2075 | A new hobby | Austin | Lou | present perfect: start, learn |
-| 2076 | Job application | Dallas | Ms. Ford | present perfect: experience |
-| 2077 | Have you finished? | Nashville | Tex | finish, do, make no present perfect |
-| 2078 | Ask for directions | Minneapolis | Opal | Could you tell me where…? |
-| 2079 | Do you know where…? | Los Angeles | Ray | perguntas indiretas simples |
+| 2061 | You should rest | Austin | Dr. Ames | should (só afirmativo) |
+| 2062 | I have to work | Dallas | Kim | have to (só afirmativo) |
+| 2063 | Can I park here? | Nashville | Cody | can/can’t para regras e permissão |
+| 2064 | Can I borrow your pen? | Minneapolis | Tia | can para pedir |
+| 2065 | Can I come in? | Los Angeles | Mr. Hart | can/can’t para pedir; please |
+| 2066 | It looks like rain | Seattle | Dana | look like; adjetivos do tempo |
+| 2067 | Maybe, maybe not | Atlanta | Kyle | maybe/probably; I think so |
+| 2068 | What were you doing? | Boston | Rita | past progressive: was/were + -ing |
+| 2069 | I was cooking when… | Portland | Sora | past progressive + when |
+| 2070 | It was raining when I left | Phoenix | Zara | past progressive + when (clima) |
+| 2071 | Bigger or smaller? | Miami | Jude | comparativos com -er |
+| 2072 | More comfortable | Chicago | Mae | comparativos com more + adjetivo |
+| 2073 | The tallest building | Houston | Gil | superlativos com -est |
+| 2074 | The most popular dish | Denver | Pru | superlativos com most + adjetivo |
+| 2075 | Good, better, best | Austin | Lou | comparativos e superlativos irregulares: good/better/best, bad/worse/worst |
+| 2076 | How tall? How far? | Dallas | Ms. Ford | how + adjetivo: tall, far, old, long |
+| 2077 | Which one do you prefer? | Nashville | Tex | prefer + comparativos |
+| 2078 | Ask for directions | Minneapolis | Opal | Can you tell me where…? |
+| 2079 | Turn left at the corner | Los Angeles | Ray | imperativo afirmativo para direções |
 | 2080 | Excuse me, is there…? | Seattle | Elsa | There is/are + quantifiers |
 | 2081 | How much is it? | Atlanta | Bill | much/many/a lot of |
 | 2082 | A little or a few? | Boston | Neil | a little/a few |
-| 2083 | Too much, too many | Portland | Ona | too/enough |
+| 2083 | It’s too expensive | Portland | Ona | too + adjetivo |
 | 2084 | The bigger one | Phoenix | Lev | comparativos |
 | 2085 | The best choice | Miami | Mira | superlativos |
-| 2086 | As good as new | Chicago | Cash | as…as |
+| 2086 | It looks new | Chicago | Cash | look/seem + adjetivo |
 | 2087 | Which one is cheaper? | Houston | Pat | comparativos de preço |
 | 2088 | Slow down, please | Denver | Rhea | advérbios de modo |
 | 2089 | He speaks very well | Austin | Ugo | adverbs vs adjectives |
@@ -112,27 +112,27 @@ Numeração: A2 usa 2000 + n (aula 2001 = A2 · 001). Cada aula tem diálogo pr�
 | 2098 | Apologizing | Miami | Hazel | sorry/excuse me; because |
 | 2099 | At the post office | Chicago | Ian | will/can em serviços |
 | 2100 | Review: plans and promises | Houston | Jo | revisão: going to/will |
-| 2101 | Review: advice and rules | Denver | Kay | revisão: should/must/have to |
-| 2102 | Review: present perfect | Austin | Luke | revisão: ever/never/already |
+| 2101 | Review: advice and rules | Denver | Kay | revisão: should/have to/can’t |
+| 2102 | Review: comparing things | Austin | Luke | revisão: comparativos e superlativos |
 | 2103 | If it rains… | Dallas | Mel | primeiro condicional |
 | 2104 | If you need help… | Nashville | Nick | if + imperative |
 | 2105 | What will you do if…? | Minneapolis | Olga | perguntas com if |
 | 2106 | Unless and when | Los Angeles | Paul | when/as soon as |
-| 2107 | I used to live in… | Seattle | Quin | used to |
-| 2108 | We used to play | Atlanta | Ruth | used to: infância |
-| 2109 | Did you use to…? | Boston | Seth | used to em perguntas |
-| 2110 | The man who lives next door | Portland | Tina | who/that |
-| 2111 | The book that I read | Phoenix | Umar | that/which |
-| 2112 | The place where we met | Miami | Vera | where relativo |
+| 2107 | When I was young | Seattle | Quin | hábitos no passado: always, often, every day |
+| 2108 | We always played outside | Atlanta | Ruth | hábito no passado com always/often |
+| 2109 | Did you often…? | Boston | Seth | perguntas sobre hábito no passado |
+| 2110 | My neighbor is friendly | Portland | Tina | is/has para descrever pessoas |
+| 2111 | What does she look like? | Phoenix | Umar | descrever aparência: tall, short, has brown hair |
+| 2112 | Describing my city | Miami | Vera | there is/are para descrever lugares |
 | 2113 | Something to drink | Chicago | Will | something/anything/nothing |
 | 2114 | Somebody called | Houston | Xena | somebody/anybody |
 | 2115 | It’s made of wood | Austin | Zane | passivo: is made of |
 | 2116 | It’s sold here | Dallas | Anya | passivo presente |
-| 2117 | It was built in 1900 | Nashville | Boris | passivo passado |
+| 2117 | It’s made in Italy | Austin | Zane | passivo presente: is made in/of |
 | 2118 | Who painted it? | Minneapolis | Cleo | passivo em perguntas |
-| 2119 | At the museum | Los Angeles | Dirk | passivo: is called, was found |
+| 2119 | It’s called… | Los Angeles | Dirk | passivo presente: is called, is used for |
 | 2120 | Spell it, please | Seattle | Esme | soletrar e confirmar |
-| 2121 | Could you repeat that? | Atlanta | Finn | clarificação |
+| 2121 | Can you repeat that? | Atlanta | Finn | clarificação com can you |
 | 2122 | What does it mean? | Boston | Gwen | perguntar significado |
 | 2123 | I don’t understand | Portland | Hugh | pedir ajuda |
 | 2124 | Making small talk | Phoenix | Isla | conversa leve |
@@ -158,7 +158,7 @@ Numeração: A2 usa 2000 + n (aula 2001 = A2 · 001). Cada aula tem diálogo pr�
 | 2144 | Cooking together | Dallas | Cruz | receitas, sequência |
 | 2145 | A new job | Nashville | Dawn | trabalho novo |
 | 2146 | Meeting colleagues | Minneapolis | Eli | apresentar colegas |
-| 2147 | Review: conditions and relatives | Los Angeles | Fern | revisão: if / who / that |
-| 2148 | Review: passive and used to | Seattle | Gabe | revisão: passivo e used to |
+| 2147 | Review: if and when | Los Angeles | Fern | revisão: if e when |
+| 2148 | Review: passive and past habits | Seattle | Gabe | revisão: passivo presente e hábitos no passado |
 | 2149 | Review: opinions and talk | Atlanta | Hope | revisão: opinião e conversa |
 | 2150 | Final review: A2 tour | Boston | Ian | revisão geral das 150 |
