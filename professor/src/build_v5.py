@@ -114,6 +114,24 @@ def nb_for(n, S=None):
     S = S or supp(n); n0 = n % 1000 if n >= 1000 else n
     if S.get('own'): return own_nb(S['own'], n)
     return NB[S.get('nb', nb_index(n0)) - 1]
+def apply_overrides(L, n):
+    """Ajustes de nível A1 por aula (src/overrides_a1.json): corrige o texto da aula sem alterar o Neighbors."""
+    try: O = json.load(open(os.path.join(ROOT, 'professor', 'src', 'overrides_a1.json'), encoding='utf-8')).get(str(n))
+    except OSError: O = None
+    if not O: return L
+    def rs(s):
+        if s == 'bought' and n == 188: return 'have'
+        for a, b in O:
+            for v in dict.fromkeys((a, a.replace("'", "’"), a.replace("’", "'"))):
+                if v in s: s = s.replace(v, b)
+        return s
+    def fx(o):
+        if isinstance(o, str): return rs(o)
+        if isinstance(o, (list, tuple)): return [fx(x) for x in o]
+        if isinstance(o, dict): return {k: fx(x) for k, x in o.items()}
+        return o
+    return fx(L)
+
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
     S = supp(n); en, nb = EN[S.get('reg', n0) - 1], nb_for(n, S)
@@ -215,6 +233,7 @@ def build(n):
     from lesson_post import post
     X_ = extras(n); ems = [v.get('e', '') for v in (X_.get('vocab') or [])] or (['☕', '🥐', '🥛', '🧁', '🍵'] if n == 1 else [])
     post(L, n, ylayer(n), S, X_, prev_ctx(n), ems, zlayer(n))
+    L = apply_overrides(L, n)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]
