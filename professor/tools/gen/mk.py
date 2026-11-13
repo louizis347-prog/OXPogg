@@ -25,6 +25,8 @@ def A2(k,d):
         if s[0] not in L[i][1] or s[2] not in L[i][2]: print('SWAP?',k,i,s[0] in L[i][1],s[2] in L[i][2])
     for g in gl:
         if g[0].lower() not in (' '.join(e for e,_ in sum([list(x) for x in [d['O'],d['C']]],[]))+' '.join(l[1] for l in L)).lower(): print('GLOSS?',k,g[0])
+    for g in gl[:6]:
+        if g[0].lower() not in g[4].lower(): print('VOCABEX?',k,g[0])
     for mo in d['mo']:
         f=mo[1]
         for key,opts in mo[2]: f=f.replace('{'+key+'}',opts[0])
