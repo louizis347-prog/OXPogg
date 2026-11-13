@@ -28,7 +28,7 @@ SUPP = {'badge': {'desc': 'Ask for advice about what to wear', 'icon': '👗', '
                                 'pt': 'Sapatilhas. São confortáveis e formais.'},
                                {'en': 'Flats. They are and formal.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Sapatilhas. São confortáveis e formais.'}],
                       'pt': 'E sapatos? Tênis ou sapatilhas?'},
-                     {'npc': 'It might rain tomorrow. Should I take an umbrella?',
+                     {'npc': 'It is going to rain tomorrow. Should I take an umbrella?',
                       'opts': [{'en': 'Yes, and a small bag. Don’t forget your resume.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -41,7 +41,7 @@ SUPP = {'badge': {'desc': 'Ask for advice about what to wear', 'icon': '👗', '
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Sim, e uma bolsa pequena. Não esqueça o currículo.'}],
-                      'pt': 'Pode chover amanhã. Devo levar um guarda-chuva?'}]},
+                      'pt': 'Vai chover amanhã. Devo levar um guarda-chuva?'}]},
  'culture': {'compare': {'ask': 'What should I wear?',
                          'br': 'No Brasil, entrevistas de emprego também pedem roupa formal.',
                          'tip': 'Diga: “What should I wear?”',
@@ -97,7 +97,7 @@ SUPP = {'badge': {'desc': 'Ask for advice about what to wear', 'icon': '👗', '
                    ('Mom', 'Good idea. And your gray jacket.', 'Boa ideia. E sua jaqueta cinza.'),
                    ('You', 'What about shoes? Sneakers or flats?', 'E sapatos? Tênis ou sapatilhas?'),
                    ('Mom', 'Flats. They are comfortable and formal.', 'Sapatilhas. São confortáveis e formais.'),
-                   ('You', 'It might rain tomorrow. Should I take an umbrella?', 'Pode chover amanhã. Devo levar um guarda-chuva?'),
+                   ('You', 'It is going to rain tomorrow. Should I take an umbrella?', 'Vai chover amanhã. Devo levar um guarda-chuva?'),
                    ('Mom', 'Yes, and a small bag. Don’t forget your resume.', 'Sim, e uma bolsa pequena. Não esqueça o currículo.'),
                    ('You', 'Thanks, Mom. You always help me.', 'Obrigada, mãe. Você sempre me ajuda.')],
          'mission': 'Pedir conselho sobre o que vestir em uma ocasião.',
@@ -153,14 +153,14 @@ SUPP = {'badge': {'desc': 'Ask for advice about what to wear', 'icon': '👗', '
                       '“Mom, what should I wear to my interview?” says Lia. “Where is the interview?” says Mom. “At a bank, downtown. It is tomorrow morning.” says Lia.',
                       '“You should wear something formal.” says Mom. “How about my black skirt and a white shirt?” says Lia. “Good idea. And your gray jacket.” says '
                       'Mom.',
-                      '“What about shoes? Sneakers or flats?” says Lia. “Flats. They are comfortable and formal.” says Mom. “It might rain tomorrow. Should I take an '
-                      'umbrella?” says Lia.',
+                      '“What about shoes? Sneakers or flats?” says Lia. “Flats. They are comfortable and formal.” says Mom. “It is going to rain tomorrow. Should I take '
+                      'an umbrella?” says Lia.',
                       '“Yes, and a small bag. Don’t forget your resume.” says Mom. “Thanks, Mom. You always help me.” says Lia. Lia puts on the black skirt and the '
                       'white shirt. She looks in the mirror and smiles. She puts the resume in a small bag. The next day, it rains lightly. Lia takes her umbrella and '
                       'walks downtown. The right clothes give courage.'],
              'tf': [{'ans': True, 's': 'The interview is tomorrow.', 'why': 'She says it.'},
                     {'ans': False, 's': 'Mom says wear sneakers.', 'why': 'She says wear flats.'},
-                    {'ans': True, 's': 'It might rain.', 'why': 'Lia says it.'},
+                    {'ans': True, 's': 'It is going to rain.', 'why': 'Lia says it.'},
                     {'ans': False, 's': 'Lia has no resume.', 'why': 'Mom reminds her.'}],
              'think': 'What do you wear to important events?',
              'title': 'A closet full'},

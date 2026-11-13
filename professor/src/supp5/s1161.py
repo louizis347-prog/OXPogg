@@ -18,7 +18,7 @@ SUPP = {'badge': {'desc': 'Talk about baby gifts and the due date', 'icon': '�
                                 'pt': 'Já é logo! Você sabe o nome?'},
                                {'en': 'That is so soon! you know the name?', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Já é logo! Você sabe o nome?'}],
                       'pt': 'O bebê nasce em outubro.'},
-                     {'npc': 'Yes. If it is a girl, her name is Rose.',
+                     {'npc': 'Yes. It is a girl. Her name is Rose.',
                       'opts': [{'en': 'What a beautiful name. Here is a gift for the baby.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -31,7 +31,7 @@ SUPP = {'badge': {'desc': 'Talk about baby gifts and the due date', 'icon': '�
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Que nome lindo. Aqui está um presente para o bebê.'}],
-                      'pt': 'Sim. Se for menina, o nome é Rose.'},
+                      'pt': 'Sim. É menina. O nome é Rose.'},
                      {'npc': 'Oh, how sweet! May I open it now?',
                       'opts': [{'en': 'Of course. It is a soft blanket.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Claro. É um cobertor macio.'},
                                {'en': 'blanket. is a It Of course. soft', 'fb': 'A ordem das palavras está errada.', 'ok': False, 'pt': 'Claro. É um cobertor macio.'},
@@ -93,7 +93,7 @@ SUPP = {'badge': {'desc': 'Talk about baby gifts and the due date', 'icon': '�
                    ('You', 'Congratulations! When is the baby due?', 'Parabéns! Para quando é o bebê?'),
                    ('Dee', 'The baby is due in October.', 'O bebê nasce em outubro.'),
                    ('You', 'That is so soon! Do you know the name?', 'Já é logo! Você sabe o nome?'),
-                   ('Dee', 'Yes. If it is a girl, her name is Rose.', 'Sim. Se for menina, o nome é Rose.'),
+                   ('Dee', 'Yes. It is a girl. Her name is Rose.', 'Sim. É menina. O nome é Rose.'),
                    ('You', 'What a beautiful name. Here is a gift for the baby.', 'Que nome lindo. Aqui está um presente para o bebê.'),
                    ('Dee', 'Oh, how sweet! May I open it now?', 'Ah, que doce! Posso abrir agora?'),
                    ('You', 'Of course. It is a soft blanket.', 'Claro. É um cobertor macio.'),
@@ -144,7 +144,7 @@ SUPP = {'badge': {'desc': 'Talk about baby gifts and the due date', 'icon': '�
                       'a ribbon. Women laugh, eat cupcakes and drink lemonade. Her friend Dee sits in a big chair. She smiles and puts a hand on her belly.',
                       '“Lia! Thank you for coming to my baby shower.” says Dee. “Congratulations! When is the baby due?” says Lia. “The baby is due in October.” says '
                       'Dee.',
-                      '“That is so soon! Do you know the name?” says Lia. “Yes. If it is a girl, her name is Rose.” says Dee. “What a beautiful name. Here is a gift for '
+                      '“That is so soon! Do you know the name?” says Lia. “Yes. It is a girl. Her name is Rose.” says Dee. “What a beautiful name. Here is a gift for '
                       'the baby.” says Lia.',
                       '“Oh, how sweet! May I open it now?” says Dee. “Of course. It is a soft blanket.” says Lia. “It is perfect. The baby will love it.” says Dee.',
                       '“Is the baby room ready?” says Lia. “Almost. We need a crib and a small lamp.” says Dee. Dee opens every gift and says thank you. She holds tiny '

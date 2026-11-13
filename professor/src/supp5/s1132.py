@@ -31,14 +31,14 @@ SUPP = {'badge': {'desc': 'Open a bank account and understand the documents', 'i
                                {'en': 'fee? there monthly a Is', 'fb': 'A ordem das palavras está errada.', 'ok': False, 'pt': 'Há uma taxa mensal?'},
                                {'en': 'Is there monthly fee?', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Há uma taxa mensal?'}],
                       'pt': 'Ok. Você tem alguma pergunta?'},
-                     {'npc': 'No fee if you keep one hundred dollars in the account.',
+                     {'npc': 'No fee. Keep one hundred dollars in the account.',
                       'opts': [{'en': 'Good. Can I have a debit card?', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Bom. Posso ter um cartão de débito?'},
                                {'en': 'card? I Good. debit have Can a',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
                                 'pt': 'Bom. Posso ter um cartão de débito?'},
                                {'en': 'Good. Can I a debit card?', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Bom. Posso ter um cartão de débito?'}],
-                      'pt': 'Sem taxa se você mantiver cem dólares na conta.'}]},
+                      'pt': 'Sem taxa. Mantenha cem dólares na conta.'}]},
  'culture': {'compare': {'ask': 'I want to open an account.',
                          'br': 'No Brasil, você abre conta com documento e comprovante de residência, e muitos bancos cobram tarifa.',
                          'tip': 'Diga: “I want to open an account.”',
@@ -94,7 +94,7 @@ SUPP = {'badge': {'desc': 'Open a bank account and understand the documents', 'i
                    ('You', 'I would like to deposit two hundred dollars.', 'Quero depositar duzentos dólares.'),
                    ('Beth', 'Okay. Do you have any questions?', 'Ok. Você tem alguma pergunta?'),
                    ('You', 'Is there a monthly fee?', 'Há uma taxa mensal?'),
-                   ('Beth', 'No fee if you keep one hundred dollars in the account.', 'Sem taxa se você mantiver cem dólares na conta.'),
+                   ('Beth', 'No fee. Keep one hundred dollars in the account.', 'Sem taxa. Mantenha cem dólares na conta.'),
                    ('You', 'Good. Can I have a debit card?', 'Bom. Posso ter um cartão de débito?'),
                    ('Beth', 'Yes. It comes in the mail in a week.', 'Sim. Ele chega pelo correio em uma semana.')],
          'mission': 'Abrir uma conta no banco e entender os documentos e o cartão.',
@@ -155,8 +155,7 @@ SUPP = {'badge': {'desc': 'Open a bank account and understand the documents', 'i
                       'address?” says Beth.',
                       '“Yes. Here is my passport and a bill.” says Caio. “Thank you. How much money do you want to deposit?” says Beth. “I would like to deposit two '
                       'hundred dollars.” says Caio.',
-                      '“Okay. Do you have any questions?” says Beth. “Is there a monthly fee?” says Caio. “No fee if you keep one hundred dollars in the account.” says '
-                      'Beth.',
+                      '“Okay. Do you have any questions?” says Beth. “Is there a monthly fee?” says Caio. “No fee. Keep one hundred dollars in the account.” says Beth.',
                       '“Good. Can I have a debit card?” says Caio. “Yes. It comes in the mail in a week.” says Beth. Beth types his name and address in the computer. '
                       'Caio signs two papers and gives her the money. She gives him a receipt and a small booklet. He thanks her and puts the papers in the folder. A '
                       'week later, his card comes in the mail. A bank account is the first step to a new life.'],

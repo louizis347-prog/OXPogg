@@ -72,7 +72,7 @@ X = {'convo': {'npc': {'name': 'Mel'},
          {'en': 'Yes. Touch it to the screen. Don’t forget {the receipt|your bags|your card}.',
           'pt': 'Sim. Encoste na tela. Não esqueça {o recibo|as sacolas|o cartão}.',
           'who': 'Mel'},
-         {'en': 'Thank you so much. That was easy.', 'pt': 'Muito obrigada. Foi fácil.', 'who': 'Duda'}],
+         {'en': 'Thank you so much. That is easy.', 'pt': 'Muito obrigada. É fácil.', 'who': 'Duda'}],
  'key': {'big': 'How does…work? · It doesn’t…',
          'label': 'Autoatendimento',
          'sub': 'Pergunte How does this machine work? Diga It doesn’t beep. Pergunte What about the apples? e Where do I put my bags? Pergunte Can I use my card? e '

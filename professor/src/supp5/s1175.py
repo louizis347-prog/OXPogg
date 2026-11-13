@@ -114,7 +114,7 @@ SUPP = {'badge': {'desc': 'Use a self-checkout machine and ask for help', 'icon'
                    ('Mel', 'In the bagging area, at the end.', 'Na área de embalagem, no final.'),
                    ('Duda', 'Now I pay. Can I use my card?', 'Agora pago. Posso usar o cartão?'),
                    ('Mel', 'Yes. Touch it to the screen. Don’t forget the receipt.', 'Sim. Encoste na tela. Não esqueça o recibo.'),
-                   ('Duda', 'Thank you so much. That was easy.', 'Muito obrigada. Foi fácil.')],
+                   ('Duda', 'Thank you so much. That is easy.', 'Muito obrigada. É fácil.')],
          'mission': 'Usar o caixa de autoatendimento e pedir ajuda quando precisar.',
          'npc': 'Mel',
          'p': 'Hoje você conhece Mel, de Portland. Caixa de autoatendimento: escanear, pesar, pagar e pegar o recibo.',
@@ -161,7 +161,7 @@ SUPP = {'badge': {'desc': 'Use a self-checkout machine and ask for help', 'icon'
                       '“Hold the barcode closer to the light.” says Mel. “Oh, it works now. What about the apples?” says Mel. “Press “fruit and vegetables”. Then put '
                       'them on the scale.” says Mel.',
                       '“Okay. Where do I put my bags?” says Mel. “In the bagging area, at the end.” says Mel. “Now I pay. Can I use my card?” says Mel.',
-                      '“Yes. Touch it to the screen. Don’t forget the receipt.” says Mel. “Thank you so much. That was easy.” says Mel. Duda scans the milk, the bread '
+                      '“Yes. Touch it to the screen. Don’t forget the receipt.” says Mel. “Thank you so much. That is easy.” says Mel. Duda scans the milk, the bread '
                       'and the cheese. She weighs the apples on the scale. The screen says “Total: eleven dollars”. She touches her card and the machine beeps. She '
                       'takes the receipt and puts her bags on her arm. New machines are easy with a little help.'],
              'tf': [{'ans': True, 's': 'The machine is easy to use.', 'why': 'Mel says it.'},
