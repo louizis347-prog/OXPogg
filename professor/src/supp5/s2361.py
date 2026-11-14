@@ -50,12 +50,12 @@ SUPP = {'badge': {'desc': 'Past simple and going to', 'icon': '📱', 'name': 'A
                                {'en': 'answer? he Did', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Ele atendeu?'}],
                       'pt': 'Não, vou a pé. Liguei para o Tom ontem.'},
                      {'npc': 'Yes. He’s going to bring the music.',
-                      'opts': [{'en': 'Great. I’m going to charge my phone now.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Ótimo. Vou carregar meu celular agora.'},
-                               {'en': 'now. to going phone I’m Great. my charge',
+                      'opts': [{'en': 'Great. I’m going to clean my phone now.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Ótimo. Vou limpar meu celular agora.'},
+                               {'en': 'now. to going phone I’m Great. my clean',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
-                                'pt': 'Ótimo. Vou carregar meu celular agora.'},
-                               {'en': 'Great. I’m going to my phone now.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Ótimo. Vou carregar meu celular agora.'}],
+                                'pt': 'Ótimo. Vou limpar meu celular agora.'},
+                               {'en': 'Great. I’m going to my phone now.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Ótimo. Vou limpar meu celular agora.'}],
                       'pt': 'Atendeu. Ele vai trazer a música.'}]},
  'culture': {'compare': {'ask': 'Did you get my message?',
                          'br': 'No Brasil, perguntamos “Você viu minha mensagem?”. É muito comum.',
@@ -113,7 +113,7 @@ SUPP = {'badge': {'desc': 'Past simple and going to', 'icon': '📱', 'name': 'A
                    ('Blake', 'No, I’m going to walk. I called Tom yesterday.', 'Não, vou a pé. Liguei para o Tom ontem.'),
                    ('You', 'Did he answer?', 'Ele atendeu?'),
                    ('Blake', 'Yes. He’s going to bring the music.', 'Atendeu. Ele vai trazer a música.'),
-                   ('You', 'Great. I’m going to charge my phone now.', 'Ótimo. Vou carregar meu celular agora.'),
+                   ('You', 'Great. I’m going to clean my phone now.', 'Ótimo. Vou limpar meu celular agora.'),
                    ('Blake', 'Me too. I’m going to send you a text later.', 'Eu também. Vou te mandar uma mensagem mais tarde.')],
          'mission': 'Contar o passado e os planos com did e going to.',
          'npc': 'Blake',
@@ -158,7 +158,7 @@ SUPP = {'badge': {'desc': 'Past simple and going to', 'icon': '📱', 'name': 'A
                       '“No problem. I sent a photo of the cake. We’re going to buy it today.” says Nina. “Nice! What time are we going to meet?” says Blake. “At six, at '
                       'the station. Are you going to come by bus?” says Nina.',
                       '“No, I’m going to walk. I called Tom yesterday.” says Blake. “Did he answer?” says Nina. “Yes. He’s going to bring the music.” says Blake.',
-                      '“Great. I’m going to charge my phone now.” says Nina. “Me too. I’m going to send you a text later.” says Blake. Nina puts her phone on the table. '
+                      '“Great. I’m going to clean my phone now.” says Nina. “Me too. I’m going to send you a text later.” says Blake. Nina puts her phone on the table. '
                       'Blake orders two cups of coffee. They look at the photo of the cake. The rain stops outside. Nina laughs and finishes her coffee. A short message '
                       'makes a long day easy.'],
              'tf': [{'ans': True, 's': 'Nina replied at nine.', 'why': 'She says it.'},
