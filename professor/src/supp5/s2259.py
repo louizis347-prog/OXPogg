@@ -65,7 +65,7 @@ SUPP = {'badge': {'desc': 'Present simple and should', 'icon': '🏊', 'name': '
              'wild': [{'decode': {'ans': 0, 'opts': ['Thursday', 'Sunday', 'Monday'], 'q': 'When is the class?', 'why': 'The sign says Thursday.'},
                        'kind': 'Pool sign',
                        'lines': ['**Class**', 'Thursday · 6 PM']},
-                      {'decode': {'ans': 0, 'opts': ['Take a shower', 'Run', 'Eat'], 'q': 'What should you do first?', 'why': 'The board says shower first.'},
+                      {'decode': {'ans': 0, 'opts': ['Take a shower', 'Run', 'Eat'], 'q': 'What do you do first?', 'why': 'The board says shower first.'},
                        'kind': 'Rule board',
                        'lines': ['**Pool rules**', 'Shower first · Wear a cap']}]},
  'errors': [{'alt': 'You should wearing a cap.', 'fix': 'You should wear a cap.', 'why': 'After should, use the base verb.', 'wrong': 'You should to wear a cap.'},
@@ -151,6 +151,6 @@ SUPP = {'badge': {'desc': 'Present simple and should', 'icon': '🏊', 'name': '
                     {'ans': False, 's': 'The class lasts one hour.', 'why': 'It lasts forty-five minutes.'},
                     {'ans': True, 's': 'Eva should wear a cap.', 'why': 'Yuki says it.'},
                     {'ans': False, 's': 'They start in the deep end.', 'why': 'They start in the shallow end.'}],
-             'think': 'What do people do at a pool? What should they do first?',
+             'think': 'What do people do at a pool? What do they do first?',
              'title': 'A swimming pool'},
- 'reg': 259}
+ 'reg': 26}

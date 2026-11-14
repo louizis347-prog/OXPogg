@@ -161,4 +161,4 @@ SUPP = {'badge': {'desc': 'Imperatives and how often', 'icon': '💊', 'name': '
                     {'ans': False, 's': 'The medicine is free.', 'why': 'It is twelve dollars.'}],
              'think': 'How often do you take medicine? Where do you buy it?',
              'title': 'A pharmacy'},
- 'reg': 255}
+ 'reg': 22}

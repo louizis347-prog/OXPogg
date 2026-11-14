@@ -73,7 +73,7 @@ SUPP = {'badge': {'desc': 'Should and frequency words', 'icon': '😴', 'name': 
                        'lines': ['**Weekdays**', '7:00 AM']},
                       {'decode': {'ans': 0,
                                   'opts': ['Put the phone away', 'Drink coffee', 'Watch TV'],
-                                  'q': 'What should you do?',
+                                  'q': 'What do you do?',
                                   'why': 'The poster says put the phone away.'},
                        'kind': 'Sleep poster',
                        'lines': ['**Sleep tips**', 'Phone away · No coffee at night']}]},
@@ -163,6 +163,6 @@ SUPP = {'badge': {'desc': 'Should and frequency words', 'icon': '😴', 'name': 
                     {'ans': False, 's': 'Sara goes to bed at nine.', 'why': 'She goes to bed at midnight.'},
                     {'ans': True, 's': 'Hal says she should drink tea or milk.', 'why': 'He says it.'},
                     {'ans': False, 's': 'Hal never reads before bed.', 'why': 'He always reads a book.'}],
-             'think': 'What time do you usually go to bed? What should you do before bed?',
+             'think': 'What time do you usually go to bed? What do you do before bed?',
              'title': 'A shared flat'},
  'reg': 35}

@@ -159,4 +159,4 @@ SUPP = {'badge': {'desc': 'How much and would like', 'icon': '🏋️', 'name': 
                     {'ans': False, 's': 'A locker is ten dollars.', 'why': 'It is five dollars a month.'}],
              'think': 'How much is a gym near you? Would you like to join one?',
              'title': 'A gym'},
- 'reg': 257}
+ 'reg': 24}

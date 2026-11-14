@@ -148,4 +148,4 @@ SUPP = {'badge': {'desc': 'Past simple and how long', 'icon': '🦷', 'name': 'A
                     {'ans': False, 's': 'The work takes an hour.', 'why': 'It takes twenty minutes.'}],
              'think': 'When did you visit a dentist last?',
              'title': 'A dental office'},
- 'reg': 253}
+ 'reg': 20}

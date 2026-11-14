@@ -174,4 +174,4 @@ SUPP = {'badge': {'desc': 'Past simple and comparatives', 'icon': '🎳', 'name'
                     {'ans': False, 's': 'The pizza here is more expensive.', 'why': 'It is cheaper.'}],
              'think': 'Who played better last time? Who is faster, you or your friend?',
              'title': 'A bowling alley'},
- 'reg': 262}
+ 'reg': 29}

@@ -62,7 +62,7 @@ SUPP = {'badge': {'desc': 'Talk about health and give advice with should', 'icon
                                   'why': 'The label says every morning.'},
                        'kind': 'Medicine label',
                        'lines': ['**Cough medicine**', 'Every morning']},
-                      {'decode': {'ans': 0, 'opts': ['Rest', 'Run', 'Swim'], 'q': 'What should you do?', 'why': 'The note says rest.'},
+                      {'decode': {'ans': 0, 'opts': ['Rest', 'Run', 'Swim'], 'q': 'What do you do?', 'why': 'The note says rest.'},
                        'kind': 'Note',
                        'lines': ['**Dr. Opal**', 'Rest for 3 days']}]},
  'errors': [{'alt': 'You should resting.', 'fix': 'You should rest.', 'why': 'After should, use the base verb.', 'wrong': 'You should to rest.'},
@@ -138,6 +138,6 @@ SUPP = {'badge': {'desc': 'Talk about health and give advice with should', 'icon
                     {'ans': False, 's': 'Ana does not have a fever.', 'why': 'She has a little fever.'},
                     {'ans': True, 's': 'Ana should rest at home.', 'why': 'The doctor says it.'},
                     {'ans': False, 's': 'Ana should work today.', 'why': 'She should rest.'}],
-             'think': 'What do you do when you feel sick? What should people do?',
+             'think': 'What do you do when you feel sick? What do people do?',
              'title': 'A clinic'},
- 'reg': 251}
+ 'reg': 18}

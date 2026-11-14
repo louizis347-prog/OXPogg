@@ -79,7 +79,7 @@ SUPP = {'badge': {'desc': 'Should and frequency words', 'icon': '🥗', 'name': 
                        'lines': ['**Week**', 'Carrots · Beans · Apples']},
                       {'decode': {'ans': 0,
                                   'opts': ['Fruit and vegetables', 'Only bread', 'Only candy'],
-                                  'q': 'What should you eat?',
+                                  'q': 'What do you eat?',
                                   'why': 'The poster says fruit and vegetables.'},
                        'kind': 'Poster',
                        'lines': ['**Eat well**', '5 fruit and vegetables a day']}]},
@@ -153,7 +153,7 @@ SUPP = {'badge': {'desc': 'Should and frequency words', 'icon': '🥗', 'name': 
                        'Clara says she never eats them.',
                        'Ugo asks to cook together.'],
              'scan': [{'alt': ['vegetables'], 'ans': 'vegetables', 'q': 'What does Clara never eat?'},
-                      {'alt': ['carrots'], 'ans': 'carrots and beans', 'q': 'What should she try?'},
+                      {'alt': ['carrots'], 'ans': 'carrots and beans', 'q': 'What does she try?'},
                       {'alt': ['sunday'], 'ans': 'on Sunday', 'q': 'When do they cook together?'}],
              'text': ['It is Sunday evening in a flat in Edinburgh. The kitchen smells of fresh bread. Clara cuts some tomatoes. Her neighbor Ugo knocks on the door. He '
                       'comes in with a bag of apples. They talk about food.',
@@ -169,6 +169,6 @@ SUPP = {'badge': {'desc': 'Should and frequency words', 'icon': '🥗', 'name': 
                     {'ans': False, 's': 'Clara always eats vegetables.', 'why': 'She never eats them.'},
                     {'ans': True, 's': 'Ugo usually walks to work.', 'why': 'He says it.'},
                     {'ans': False, 's': 'They cook together on Monday.', 'why': 'On Sunday.'}],
-             'think': 'What should you eat more? What do you never eat?',
+             'think': 'What do you eat more? What do you never eat?',
              'title': 'A flat kitchen'},
- 'reg': 256}
+ 'reg': 23}

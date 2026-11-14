@@ -166,4 +166,4 @@ SUPP = {'badge': {'desc': 'Comparatives and would like', 'icon': '👓', 'name':
                     {'ans': False, 's': 'Zoe likes the black ones more.', 'why': 'She likes the red ones more.'}],
              'think': 'What would you like for your birthday? Which is better, A or B?',
              'title': 'An eye shop'},
- 'reg': 254}
+ 'reg': 21}

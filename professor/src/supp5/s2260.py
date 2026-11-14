@@ -168,4 +168,4 @@ SUPP = {'badge': {'desc': 'Past simple and superlatives', 'icon': '⚽', 'name':
                     {'ans': False, 's': 'The weather was the best part.', 'why': 'The rain was the worst part.'}],
              'think': 'What was the best game you saw? Who was the best player?',
              'title': 'A soccer field'},
- 'reg': 260}
+ 'reg': 27}

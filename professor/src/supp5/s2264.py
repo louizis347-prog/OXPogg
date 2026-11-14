@@ -131,7 +131,7 @@ SUPP = {'badge': {'desc': 'Going to and should', 'icon': '🥾', 'name': 'Hiking
                        'Dale says what she should take.',
                        'Dale says she should stay on the path.'],
              'scan': [{'alt': ['hill'], 'ans': 'the hill', 'q': 'What is Bia going to climb?'},
-                      {'alt': ['water'], 'ans': 'water, a hat and a snack', 'q': 'What should she take?'},
+                      {'alt': ['water'], 'ans': 'water, a hat and a snack', 'q': 'What does she take?'},
                       {'alt': ['sheep'], 'ans': 'sheep and birds', 'q': 'What are they going to see?'}],
              'text': ['It is Saturday morning at the start of a trail near Glasgow. Green hills rise behind a wooden gate. A cool wind blows over the grass. Bia wears a '
                       'red jacket and a big backpack. Dale, the guide, reads a map. He looks up and says hello.',
