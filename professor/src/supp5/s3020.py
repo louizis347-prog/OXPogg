@@ -178,7 +178,7 @@ SUPP = {'badge': {'desc': 'Past habits with used to', 'icon': '🛝', 'name': 'W
                        'Dan says there didn’t use to be a fence.',
                        'Grace says she used to swing very high.'],
              'scan': [{'alt': ['slide'], 'ans': 'the slide', 'q': 'What did Dan use to be afraid of?'},
-                      {'alt': ['shout'], 'ans': 'shout', 'q': 'What used the mothers to do from the window?'},
+                      {'alt': ['shout'], 'ans': 'shout', 'q': 'What did the mothers use to do from the window?'},
                       {'alt': ['fence'], 'ans': 'a fence', 'q': 'What is around the park now?'}],
              'text': ['It is a quiet Saturday afternoon in Cardiff. Grace and Dan walk past their old school. Behind it there is a small playground with a red slide. '
                       'They stop at the gate and look inside. The grass is a little longer now. Many memories come back at once.',

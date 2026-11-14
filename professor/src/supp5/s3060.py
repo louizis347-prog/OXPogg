@@ -164,7 +164,7 @@ SUPP = {'badge': {'desc': 'Choose will, going to or present continuous', 'icon':
                           {'pt': 'primo', 'w': 'cousin'},
                           {'pt': 'lotado', 'w': 'crowded'},
                           {'pt': 'emprestar', 'w': 'lend'},
-                          {'pt': 'barato', 'w': 'cheap'}],
+                          {'pt': 'caro', 'w': 'expensive'}],
              'order': ['Yan asks about the weekend.',
                        'Luisa says maybe she will go to the lake.',
                        'Yan talks about the concert.',
