@@ -12,6 +12,8 @@ def load(p):
     return o
 EN = [e for e in load('en-a1') if e['n'] < 7000000]
 EN2 = [e for e in load('en-a2') if e['n'] < 7000000]
+try: OBRAS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras.json'), encoding='utf-8'))
+except OSError: OBRAS = {}
 level_of = lambda n: 'A2' if n >= 2000 else 'A1'
 FILLER = {'That sounds good. What should we do next?', 'Let me check the details before we decide.', 'Could you say that one more time?', 'Sure, I will explain it clearly.', 'Thanks, now I know how to continue.'}
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
@@ -155,6 +157,8 @@ def add_support_words(L, n):
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
     S = supp(n); en, nb = (EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
+    if str(n) in OBRAS:  # referência cultural própria da aula (src/obras.json): não repete a obra do episódio regular
+        ob = OBRAS[str(n)]; en = dict(en); en['a'] = dict(en.get('a', {}), w=ob['w'], y=ob.get('y', ''), d=ob['d'])
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]

@@ -86,6 +86,10 @@ def A2(k,d):
         f=mo[1]
         for key,opts in mo[2]: f=f.replace('{'+key+'}',opts[0])
         if f!=mo[3]: print('MOLD?',k,f,'|',mo[3])
+    if 'obra' in d:
+        sys.path.insert(0,'/tmp/gen'); import obra as _ob
+        w,y,nt=d['obra']; _ob.register(2000+k,w,y,nt)
+    elif k>=351: print('OBRA? falta d["obra"]=(título, ano, nota em português) na ficha',k)
     compact(2000+k,m)
 def vb_(s):
     v,ic,pt,past,p1,p3,pp,pg=s.split('|')
