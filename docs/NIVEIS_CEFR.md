@@ -41,3 +41,10 @@
 - Vocabulário: 0 palavras fora da regra nas 150 aulas (`tools/cefr_audit.py`).
 - Gramática: 0 estruturas proibidas nos diálogos (`BAN` em `tools/gen/mk.py`, a mesma lista do guia dos agentes).
 - Teste no navegador: as 150 aulas têm 44 quadros e nenhum erro.
+
+## A2 extras (2151–2350) — conferência final
+
+- Vocabulário: 0 palavras fora da regra nas 350 aulas A2 (`tools/cefr_audit.py`).
+- Gramática: 0 estruturas proibidas nos diálogos (lista `BAN` em `tools/gen/mk.py`).
+- Teste no navegador: as 350 aulas têm 44 quadros e nenhum erro.
+- Aulas acima da 233 reaproveitam os episódios do curso regular de A2 a partir do 1 (o curso tem 237 episódios); a "Cena da obra" delas repete a de aulas anteriores.
