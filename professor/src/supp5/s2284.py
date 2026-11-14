@@ -130,4 +130,4 @@ SUPP = {'badge': {'desc': 'Use how much and is included', 'icon': '🧾', 'name'
                     {'ans': False, 's': 'The total is thirty pounds at the end.', 'why': 'It is thirty-two pounds.'}],
              'think': 'What is included in the price when you buy something? What is sold near the counter?',
              'title': 'A busy shop'},
- 'reg': 284}
+ 'reg': 51}

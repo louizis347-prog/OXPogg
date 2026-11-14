@@ -84,7 +84,7 @@ SUPP = {'badge': {'desc': 'Use past simple and would like', 'icon': '🎁', 'nam
                           {'ans': False, 's': 'We say “Did you painted it?”', 'why': 'We say Did you paint it?'},
                           {'ans': True, 's': 'Gift shops can wrap gifts.', 'why': 'Yes.'}],
              'quiz': [{'ans': 0,
-                       'opts': ['I’d like a gift, please.', 'I like a gift, please.', 'I would to a gift, please.'],
+                       'opts': ['I’d like a gift, please.', 'I like a gift, please.', 'I want a gift, please.'],
                        'q': 'You ask politely. You say…',
                        'why': 'I’d like'},
                       {'ans': 0,
@@ -104,7 +104,7 @@ SUPP = {'badge': {'desc': 'Use past simple and would like', 'icon': '🎁', 'nam
  'errors': [{'alt': 'I buy flowers last year.', 'fix': 'I bought flowers.', 'why': 'Buy is irregular: bought.', 'wrong': 'I buyed flowers.'},
             {'alt': 'Did you painting it?', 'fix': 'Did you paint it?', 'why': 'After did, use the base verb.', 'wrong': 'Did you painted it?'},
             {'alt': 'I am like a gift, please.', 'fix': 'I’d like a gift, please.', 'why': 'Use I’d like to ask politely.', 'wrong': 'I like a gift, please.'},
-            {'alt': 'Her birthday is yesterday.', 'fix': 'Her birthday was yesterday.', 'why': 'Use was for the past.', 'wrong': 'Her birthday was last night.'}],
+            {'alt': 'Her birthday were yesterday.', 'fix': 'Her birthday was yesterday.', 'why': 'Use was for the past.', 'wrong': 'Her birthday is yesterday.'}],
  'homework': 'Write 5 sentences about a gift. Use past simple and would like.',
  'homework_items': ['Write: Last year I ___. I’d like ___.',
                     'Say aloud: What would you like to buy today? Did you forget it?',
@@ -182,4 +182,4 @@ SUPP = {'badge': {'desc': 'Use past simple and would like', 'icon': '🎁', 'nam
                     {'ans': False, 's': 'Ben would like a red mug.', 'why': 'He would like the blue mug.'}],
              'think': 'What gift did you buy last time? What would you like to buy next?',
              'title': 'A small gift shop'},
- 'reg': 281}
+ 'reg': 48}

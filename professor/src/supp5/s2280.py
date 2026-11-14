@@ -177,4 +177,4 @@ SUPP = {'badge': {'desc': 'Use can I…? and too big/small', 'icon': '👖', 'na
                     {'ans': False, 's': 'Noah pays with cash.', 'why': 'He asks to pay by card.'}],
              'think': 'What can you try on in a shop? Is it too big or too small?',
              'title': 'A big clothes shop'},
- 'reg': 280}
+ 'reg': 47}

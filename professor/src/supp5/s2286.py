@@ -163,4 +163,4 @@ SUPP = {'badge': {'desc': 'Use past simple and can I…?', 'icon': '👕', 'name
                     {'ans': False, 's': 'Rui wants a smaller size.', 'why': 'He wants a bigger size.'}],
              'think': 'What did you buy last time? Can you return it?',
              'title': 'A clothes shop'},
- 'reg': 286}
+ 'reg': 53}

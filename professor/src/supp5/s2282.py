@@ -164,4 +164,4 @@ SUPP = {'badge': {'desc': 'Use there is/are and can you…?', 'icon': '📚', 'n
                     {'ans': False, 's': 'There are no cards in the shop.', 'why': 'Liam says there are cards.'}],
              'think': 'What is in your favorite bookshop? Can you ask for help there?',
              'title': 'A quiet bookshop'},
- 'reg': 282}
+ 'reg': 49}

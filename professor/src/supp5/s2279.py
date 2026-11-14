@@ -159,4 +159,4 @@ SUPP = {'badge': {'desc': 'Use how many and comparatives', 'icon': '👕', 'name
                     {'ans': False, 's': 'Eva wants five shirts.', 'why': 'She wants two shirts.'}],
              'think': 'How many colors do you like? Which color is brighter?',
              'title': 'A busy clothes store'},
- 'reg': 279}
+ 'reg': 46}

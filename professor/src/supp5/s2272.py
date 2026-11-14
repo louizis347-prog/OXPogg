@@ -161,4 +161,4 @@ SUPP = {'badge': {'desc': 'Use how often and going to', 'icon': '🏋️', 'name
                     {'ans': True, 's': 'Bruno is going to show Tom the machines.', 'why': 'He says it.'}],
              'think': 'How often do you exercise? How often are you going to exercise?',
              'title': 'A big gym'},
- 'reg': 272}
+ 'reg': 39}

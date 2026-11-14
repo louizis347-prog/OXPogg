@@ -144,4 +144,4 @@ SUPP = {'badge': {'desc': 'Use commands and present continuous', 'icon': '🧘',
                     {'ans': False, 's': 'Zoe says it is easy.', 'why': 'She says it is hard.'}],
              'think': 'What are you doing right now? Tell a friend what to do.',
              'title': 'A quiet yoga studio'},
- 'reg': 274}
+ 'reg': 41}

@@ -152,4 +152,4 @@ SUPP = {'badge': {'desc': 'Use how much and would like', 'icon': '🧥', 'name':
                     {'ans': False, 's': 'The hat is fifty euros.', 'why': 'It is fifteen euros.'}],
              'think': 'What would you like to buy? How much is it?',
              'title': 'A clothes shop'},
- 'reg': 278}
+ 'reg': 45}

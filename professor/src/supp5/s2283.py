@@ -144,4 +144,4 @@ SUPP = {'badge': {'desc': 'Use comparatives and how much', 'icon': '📱', 'name
                     {'ans': False, 's': 'The case costs sixty dollars.', 'why': 'It costs twenty.'}],
              'think': 'Which is better for you: a cheaper phone or a faster phone?',
              'title': 'A phone store'},
- 'reg': 283}
+ 'reg': 50}

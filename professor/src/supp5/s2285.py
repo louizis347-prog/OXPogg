@@ -186,4 +186,4 @@ SUPP = {'badge': {'desc': 'Use price comparatives and if', 'icon': '🏷️', 'n
                     {'ans': False, 's': 'The dress and the shirt are twenty dollars.', 'why': 'They are fifty dollars.'}],
              'think': 'If you find a big discount, what will you buy?',
              'title': 'A big clothes shop'},
- 'reg': 285}
+ 'reg': 52}

@@ -99,7 +99,7 @@ SUPP = {'badge': {'desc': 'Going to and how far', 'icon': '🚴', 'name': 'A bik
                    ('You', 'I have one. Is the tire OK?', 'Eu tenho um. O pneu está bom?'),
                    ('Cora', 'Let me check. It needs some air.', 'Deixe-me ver. Ele precisa de ar.'),
                    ('You', 'Thanks! Are you going to ride with me?', 'Obrigado! Você vai pedalar comigo?'),
-                   ('Cora', 'I can’t today. I’m going to work at the shop.', 'Hoje não posso. Vou trabalhar na loja.')],
+                   ('Cora', 'Sorry, no. I’m going to work at the shop.', 'Hoje não. Vou trabalhar na loja.')],
          'mission': 'Planejar um passeio e perguntar distâncias.',
          'npc': 'Cora',
          'p': 'Fale de planos com going to e pergunte distâncias com how far.',
@@ -147,9 +147,9 @@ SUPP = {'badge': {'desc': 'Going to and how far', 'icon': '🚴', 'name': 'A bik
                       '“How far is the old bridge from here?” says Theo. “It’s about ten kilometers. It’s a long ride.” says Cora. “OK. I’m going to take water and a '
                       'map.” says Theo.',
                       '“You’re going to need a helmet, too.” says Cora. “I have one. Is the tire OK?” says Theo. “Let me check. It needs some air.” says Cora.',
-                      '“Thanks! Are you going to ride with me?” says Theo. “I can’t today. I’m going to work at the shop.” says Cora. Cora puts air in the tire. Theo '
-                      'puts on his helmet. He puts his water in a small bag. Cora shows him the map once more. Theo waves and rides away. A long road starts with one '
-                      'turn of the wheel.'],
+                      '“Thanks! Are you going to ride with me?” says Theo. “Sorry, no. I’m going to work at the shop.” says Cora. Cora puts air in the tire. Theo puts '
+                      'on his helmet. He puts his water in a small bag. Cora shows him the map once more. Theo waves and rides away. A long road starts with one turn of '
+                      'the wheel.'],
              'tf': [{'ans': True, 's': 'Theo is going to ride along the river.', 'why': 'He says it.'},
                     {'ans': False, 's': 'The bridge is one kilometer away.', 'why': 'It is ten kilometers away.'},
                     {'ans': True, 's': 'Theo is going to take a map.', 'why': 'He says it.'},

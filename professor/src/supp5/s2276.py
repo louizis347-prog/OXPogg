@@ -191,4 +191,4 @@ SUPP = {'badge': {'desc': 'Use comparatives and superlatives', 'icon': '🏬', '
                     {'ans': False, 's': 'The burger bar is more popular than Pasta Place.', 'why': 'Pasta Place is more popular.'}],
              'think': 'Which shop is the best in your city? Why?',
              'title': 'A huge mall'},
- 'reg': 276}
+ 'reg': 43}

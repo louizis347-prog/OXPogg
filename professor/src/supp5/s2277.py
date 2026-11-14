@@ -170,4 +170,4 @@ SUPP = {'badge': {'desc': 'Use too + adjective and comparatives', 'icon': '👟'
                     {'ans': False, 's': 'The last shoes are too small.', 'why': 'They are not too small.'}],
              'think': 'What shoes do you like? Are they too big, too small or perfect?',
              'title': 'A shoe store'},
- 'reg': 277}
+ 'reg': 44}

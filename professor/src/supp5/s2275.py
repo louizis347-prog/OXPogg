@@ -193,4 +193,4 @@ SUPP = {'badge': {'desc': 'Use past simple and comparatives', 'icon': '🩺', 'n
                     {'ans': False, 's': 'The waiting room was noisier.', 'why': 'It was quieter.'}],
              'think': 'Who was your best doctor? Why was he or she better?',
              'title': 'A busy street'},
- 'reg': 275}
+ 'reg': 42}

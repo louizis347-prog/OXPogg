@@ -146,4 +146,4 @@ SUPP = {'badge': {'desc': 'Use there is/are and should', 'icon': '🩹', 'name':
                     {'ans': False, 's': 'There are twenty bandages.', 'why': 'There are ten.'}],
              'think': 'What is in your first aid kit at home?',
              'title': 'A small clinic'},
- 'reg': 271}
+ 'reg': 38}

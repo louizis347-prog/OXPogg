@@ -182,4 +182,4 @@ SUPP = {'badge': {'desc': 'Use would like and how much', 'icon': '🏦', 'name':
                     {'ans': False, 's': 'The card is ten dollars.', 'why': 'The card is free.'}],
              'think': 'What would you like to do at a bank? How much money do you need?',
              'title': 'A quiet bank'},
- 'reg': 287}
+ 'reg': 54}
