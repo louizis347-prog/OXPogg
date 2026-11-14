@@ -32,7 +32,7 @@ SUPP = {'badge': {'desc': 'Ask for permission politely', 'icon': '📱', 'name':
                                 'pt': 'Pode falar. O que você quer saber?'},
                                {'en': 'Yes, go ahead. What you want to know?', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Pode falar. O que você quer saber?'}],
                       'pt': 'Claro. Eu poderia perguntar outra coisa? É sobre a reunião.'},
-                     {'npc': 'Could you tell me where the printer is? I can’t find it.',
+                     {'npc': 'Could you tell me where the printer is? I don’t see it.',
                       'opts': [{'en': 'It’s next to the kitchen. May I help you with the files?',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -45,7 +45,7 @@ SUPP = {'badge': {'desc': 'Ask for permission politely', 'icon': '📱', 'name':
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Fica ao lado da cozinha. Posso ajudar com os arquivos?'}],
-                      'pt': 'Você poderia me dizer onde fica a impressora? Não a encontro.'},
+                      'pt': 'Você poderia me dizer onde fica a impressora? Não a vejo.'},
                      {'npc': 'Thank you! Could I borrow a pen too, please?',
                       'opts': [{'en': 'Sure. Could you close the window, please? It’s cold.',
                                 'fb': 'Natural e claro.',
@@ -125,7 +125,7 @@ SUPP = {'badge': {'desc': 'Ask for permission politely', 'icon': '📱', 'name':
                    ('You', 'Sure, it’s on my desk. Could you bring it back later?', 'Claro, está na minha mesa. Você poderia devolvê-lo depois?'),
                    ('Drew', 'Of course. Could I ask you something else? It’s about the meeting.', 'Claro. Eu poderia perguntar outra coisa? É sobre a reunião.'),
                    ('You', 'Yes, go ahead. What do you want to know?', 'Pode falar. O que você quer saber?'),
-                   ('Drew', 'Could you tell me where the printer is? I can’t find it.', 'Você poderia me dizer onde fica a impressora? Não a encontro.'),
+                   ('Drew', 'Could you tell me where the printer is? I don’t see it.', 'Você poderia me dizer onde fica a impressora? Não a vejo.'),
                    ('You', 'It’s next to the kitchen. May I help you with the files?', 'Fica ao lado da cozinha. Posso ajudar com os arquivos?'),
                    ('Drew', 'Thank you! Could I borrow a pen too, please?', 'Obrigado! Eu poderia pegar uma caneta emprestada também?'),
                    ('You', 'Sure. Could you close the window, please? It’s cold.', 'Claro. Você poderia fechar a janela, por favor? Está frio.'),
@@ -180,7 +180,7 @@ SUPP = {'badge': {'desc': 'Ask for permission politely', 'icon': '📱', 'name':
                       'May I also use your charger?” says Drew.',
                       '“Sure, it’s on my desk. Could you bring it back later?” says Eva. “Of course. Could I ask you something else? It’s about the meeting.” says Drew. '
                       '“Yes, go ahead. What do you want to know?” says Eva.',
-                      '“Could you tell me where the printer is? I can’t find it.” says Drew. “It’s next to the kitchen. May I help you with the files?” says Eva. “Thank '
+                      '“Could you tell me where the printer is? I don’t see it.” says Drew. “It’s next to the kitchen. May I help you with the files?” says Eva. “Thank '
                       'you! Could I borrow a pen too, please?” says Drew.',
                       '“Sure. Could you close the window, please? It’s cold.” says Eva. “No problem. May I sit here until the meeting starts?” says Drew. Eva gives Drew '
                       'the phone and the charger. He makes his call from a quiet corner. Then he goes to the printer next to the kitchen. Their manager says good '
