@@ -13,7 +13,18 @@ BAN=[(r"\bcould(n't)?\b","could"),(r"\bwould(n't)?\b(?! (you |i |we |he |she |th
  (r"\b(do you know|can you tell me|could you tell me|i wonder|do you remember|i don't know|i'm not sure|do you think) (where|what|when|how|why|if|who|which)\b","pergunta indireta"),
  (r"\btold (me|you|him|her|us|them)\b|\basked (me|you|him|her|us) (if|to)\b|\bsaid (that )?(i|he|she|we|they|you|it) \b","discurso indireto"),
  (r"(^|[.!?]\s*)(Please )?Don't (?!worry)\w+","imperativo negativo (só 'Don't worry')"),(r"\bhad (been|gone|seen|done|eaten|finished|already)\b","past perfect"),(r"\bif I (were|was|had|could|didn't|knew)\b","segundo condicional")]
-def grammar_check(k,texts):
+BAN_B1=[(r"\b(had) (been|gone|seen|done|eaten|finished|already|never|just)\b","past perfect (B2)"),
+ (r"\b(have|has) been \w+ing\b","present perfect contínuo (B2)"),(r"\bwish(ed)?\b","wish (B2)"),
+ (r"\b(should|could|must|might|may|would) have\b","modal perfeito (B2)"),(r"\bif I had (been|known|seen|done|gone)\b|\bwould have\b","terceiro condicional (B2)"),
+ (r"\bhad better\b|\bwould rather\b|\bbe used to\b|\bget used to\b|\bunless\b|\bprovided that\b","estrutura B2"),
+ (r"\bwill be \w+ing\b|\bwill have\b","futuro contínuo/perfeito (B2)"),
+ (r"\b(asked|wondered|wanted to know) (me |him |her |us |them )?(if|whether|what|where|when|how|why|who)\b","pergunta reportada (B2)"),
+ (r"\bnot only\b|\bhardly\b|\bno sooner\b|\bneither (do|am|have)\b","inversão/correlativa (B2)"),
+ (r"\b(is|are|was|were) (being|been) \w+\b","passivo contínuo/perfeito (B2)"),(r"\b(have|has) been (made|built|done|sold|used|written|painted|taken|opened|closed)\b","passivo perfeito (B2)"),
+ (r"\bwho(m|se)\b|\bwhere (I|we|you) (live|work|grew)\b","relativo avançado (B2)"),(r"\bso that\b|\bin order to\b","finalidade formal (B2)")]
+def grammar_check(k,texts,b1=False):
+    return _gc(k,texts,BAN_B1 if b1 else BAN)
+def _gc(k,texts,BAN):
     bad=[]
     for t in texts:
         s=t.replace('’',"'")
@@ -22,19 +33,22 @@ def grammar_check(k,texts):
     return bad
 
 _PV={}
-def _prev_vocab(k):
+def _prev_vocab(k,base=2000):
     import glob,os
     out=set()
-    for f in glob.glob('/home/user/OXPogg/professor/data/v4/20*.json'):
+    for f in glob.glob('/home/user/OXPogg/professor/data/v4/%d*.json'%(base//1000)):
         n=int(os.path.basename(f)[:-5])
-        if n>=2000 and n<2000+k and n not in _PV:
+        if n>=base and n<base+k and n not in _PV:
             try:
                 d=json.load(open(f)); _PV[n]={x[0].lower() for p in d['pages'] if p.get('kind')=='vocab' for x in p.get('words',[])}
             except Exception: _PV[n]=set()
     for n,s in _PV.items():
-        if n<2000+k: out|=s
+        if base<=n<base+k: out|=s
     return out
-def A2(k,d):
+def A2(k,d): return _mk(k,d,2000,PLAN,2)
+def B1(k,d):
+    sys.path.insert(0,'/tmp/b1'); import importlib,planb1; importlib.reload(planb1); return _mk(k,d,3000,planb1.P,3)
+def _mk(k,d,base,PLAN,cap):
     row=PLAN[k-1];title,city,npc,you,struct,sc=row
     nxt=PLAN[k][0] if k<len(PLAN) else 'Próxima etapa'
     L=[(('You' if w=='Y' else npc),e,p) for w,e,p in d['L']]
@@ -49,7 +63,7 @@ def A2(k,d):
     for i in (0,2,4,6):
         n_=L[i]; y=L[i+1]
         role.append([(n_[1],n_[2],y[1]),('Really?','Mesmo?','Yes, really.'),('I see.','Entendi.','Okay.')])
-    m=dict(reg=((k-1)%233)+1,title=title,city=city,npc=npc,you=you,face=d['face'],g=d['g'],yg=d['yg'],crole=d['crole'],sc=sc,pool=d.get('pool') or [sc,'street','cafe2','park'],
+    m=dict(reg=((k-1)%233)+1 if base==2000 else k,title=title,city=city,npc=npc,you=you,face=d['face'],g=d['g'],yg=d['yg'],crole=d['crole'],sc=sc,pool=d.get('pool') or [sc,'street','cafe2','park'],
      story=d['story'],p=d['p'],mission=d['mission'],emo=d['emo'],teaser=nxt,teaser_d=d.get('td','Próxima situação'),badge=d['badge'],
      lines=L,open=d['O'],close=d['C'],rtitle=d['rt'],gloss=gloss,fast=d['fast'],scan=d['scan'],tf=d['tf'],order=d['order'],ctx=ctx,chunks=chunks,think=d['think'],
      cu=d['cu'],errors=d['err'],homework=d['hw'],hw=d['hwf'],lab=d['lab'],cards=d['cards'],key=d['key'],vocab=vocab,molds=d['mo'],sounds=d['so'],role=role,change=d['chg'],
@@ -72,15 +86,15 @@ def A2(k,d):
             if w[0].isupper() and bf and bf[-1] not in '.?!“"': continue
             if w2 in nm or w2 in CA.SKIP: continue
             lv=CA.level(w2)
-            if lv is None or CA.RANK[lv]<=2: 
+            if lv is None or CA.RANK[lv]<=cap: 
                 if lv is None and len(w2)>2 and not any(b in taught for b in CA.base_forms(w2)) and w2 not in taught: cef.append(w2+':??')
                 continue
             if w2 in taught or any(b in taught for b in CA.base_forms(w2)): continue
             cef.append(w2+':'+lv)
-    pv=_prev_vocab(k); rep=[g[0] for g in gl[:6] if g[0].lower() in pv]
+    pv=_prev_vocab(k,base); rep=[g[0] for g in gl[:6] if g[0].lower() in pv]
     if len(rep)>=3: print('REPEAT?',k,'palavras já ensinadas em aulas A2 anteriores:',rep)
     if cef: print('CEFR?',k,sorted(set(cef)))
-    gb=grammar_check(k,[e for _,e,_ in L]+[e[0] for e in d['ex']]+[e[0] for e in d['ex']][:0])
+    gb=grammar_check(k,[e for _,e,_ in L]+[e[0] for e in d['ex']]+[e[0] for e in d['ex']][:0],base==3000)
     if gb: print('GRAMMAR?',k,gb)
     for mo in d['mo']:
         f=mo[1]
@@ -88,9 +102,9 @@ def A2(k,d):
         if f!=mo[3]: print('MOLD?',k,f,'|',mo[3])
     if 'obra' in d:
         sys.path.insert(0,'/tmp/gen'); import obra as _ob
-        w,y,nt=d['obra']; _ob.register(2000+k,w,y,nt)
-    elif k>=351: print('OBRA? falta d["obra"]=(título, ano, nota em português) na ficha',k)
-    compact(2000+k,m)
+        w,y,nt=d['obra']; _ob.register(base+k,w,y,nt)
+    elif k>=351 or base==3000: print('OBRA? falta d["obra"]=(título, ano, nota em português) na ficha',k)
+    compact(base+k,m)
 def vb_(s):
     v,ic,pt,past,p1,p3,pp,pg=s.split('|')
     third=v+'es' if v.endswith(('s','sh','ch','x','o')) else (v[:-1]+'ies' if v.endswith('y') and v[-2] not in 'aeiou' else v+'s')

@@ -12,9 +12,10 @@ def load(p):
     return o
 EN = [e for e in load('en-a1') if e['n'] < 7000000]
 EN2 = [e for e in load('en-a2') if e['n'] < 7000000]
+EN3 = [e for e in load('en-b1') if e['n'] < 7000000]
 try: OBRAS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras.json'), encoding='utf-8'))
 except OSError: OBRAS = {}
-level_of = lambda n: 'A2' if n >= 2000 else 'A1'
+level_of = lambda n: 'B1' if n >= 3000 else 'A2' if n >= 2000 else 'A1'
 FILLER = {'That sounds good. What should we do next?', 'Let me check the details before we decide.', 'Could you say that one more time?', 'Sure, I will explain it clearly.', 'Thanks, now I know how to continue.'}
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
@@ -106,7 +107,7 @@ def own_nb(o, n):
         en_k, pt_k = ex[k][0], ex[k][1]; others = [e[0] for e in ex if e[0] != en_k][:2]; ch = [others[0], en_k] + others[1:]
         ctx.append(dict(ic='💬', sit='Complete a fala: “____.” (' + pt_k + ')', opts=ch, a=1, why='“' + en_k + '” = ' + pt_k))
     you = [(l[1], l[2]) for l in L if l[0] == 'You'][:4]
-    fr_ = [dict(k='nbhero', g=g, num=n, lvl='A1' if n < 2000 else 'A2', face=o.get('face', '🙂'), name=npc, city=o['city'], sub=o['title'], emo=o.get('emo', ['💬']), mission=o['mission'], hook=[L[0][1], L[0][2]]),
+    fr_ = [dict(k='nbhero', g=g, num=n, lvl=level_of(n), face=o.get('face', '🙂'), name=npc, city=o['city'], sub=o['title'], emo=o.get('emo', ['💬']), mission=o['mission'], hook=[L[0][1], L[0][2]]),
            dict(k='nbchat', g=g, title='O diálogo-padrão', intro='Toque em “Próxima fala” para abrir cada mensagem.', cast={npc: [o.get('face', '🙂'), '#2159C9'], 'You': ['🙂', '#e85d75']}, lines=L),
            dict(k='nbtap', g=g, title='Ouça e toque', items=tap), dict(k='nbctx', g=g, title='Em que contexto?', items=ctx),
            dict(k='nbshadow', g=g, title='Fale como ' + npc, items=[list(x) for x in you], real=o.get('real', [L[1][1], L[1][1], 'fale em blocos'])),
@@ -156,7 +157,7 @@ def add_support_words(L, n):
 
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
-    S = supp(n); en, nb = (EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
+    S = supp(n); en, nb = (EN3 if n >= 3000 else EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
     if str(n) in OBRAS:  # referência cultural própria da aula (src/obras.json): não repete a obra do episódio regular
         ob = OBRAS[str(n)]; en = dict(en); en['a'] = dict(en.get('a', {}), w=ob['w'], y=ob.get('y', ''), d=ob['d'])
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
@@ -183,7 +184,7 @@ def build(n):
         st = en.get('stage') or {}
         return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
     P = {}
-    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level=level_of(n), unit=dict(n=(100 if n >= 2000 else 0) + math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
+    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level=level_of(n), unit=dict(n=(200 if n >= 3000 else 100 if n >= 2000 else 0) + math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
         canDo=['Say: ' + strip(i['en']) for i in exps[:4]], success=['I understand the conversation.', 'I use the key expression.', 'I answer a real question.', 'I close politely.'],
         think=strip(nhero.get('mission', '')))
