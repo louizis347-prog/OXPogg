@@ -187,6 +187,6 @@ SUPP = {'badge': {'desc': 'Should and have to at school', 'icon': 'üë®\u200düè
                     {'ans': False, 's': 'Rui has to give the project on Monday.', 'why': 'He has to give it on Friday.'},
                     {'ans': True, 's': 'Jack says Rui should write a list.', 'why': 'He says it.'},
                     {'ans': False, 's': 'The shop closes at six.', 'why': 'It closes at five.'}],
-             'think': 'What do you have to do this week? What should you do first?',
+             'think': 'What is your plan for this week? What is your advice for a friend?',
              'title': 'A quiet school'},
  'reg': 13}

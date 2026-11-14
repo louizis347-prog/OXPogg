@@ -195,4 +195,4 @@ SUPP = {'badge': {'desc': 'Past simple and comparatives', 'icon': '🎉', 'name'
                     {'ans': False, 's': 'The old songs were better.', 'why': 'They were worse.'}],
              'think': 'What is better this year than last year? Why?',
              'title': 'A busy office'},
- 'reg': 240}
+ 'reg': 7}

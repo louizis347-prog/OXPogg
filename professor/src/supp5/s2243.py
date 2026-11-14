@@ -181,4 +181,4 @@ SUPP = {'badge': {'desc': 'Going to with first, then, finally', 'icon': '🎤', 
                     {'ans': False, 's': 'Grace is going to sit in the back row.', 'why': 'She is going to sit in the front row.'}],
              'think': 'What are you going to say first? Then? Finally?',
              'title': 'A quiet office'},
- 'reg': 243}
+ 'reg': 10}

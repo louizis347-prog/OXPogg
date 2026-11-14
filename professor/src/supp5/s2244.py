@@ -77,7 +77,7 @@ SUPP = {'badge': {'desc': 'Frequency words and should', 'icon': '🎹', 'name': 
                        'opts': ['I never count the beat.', 'I don’t never count the beat.', 'I count never the beat.'],
                        'q': 'You say not at any time. You say…',
                        'why': 'never + verb'}],
-             'wild': [{'decode': {'ans': 0, 'opts': ['Slowly', 'Fast', 'Loudly'], 'q': 'How should you play it?', 'why': 'The book says slow.'},
+             'wild': [{'decode': {'ans': 0, 'opts': ['Play slow', 'Play fast', 'Play loud'], 'q': 'What does the book say?', 'why': 'The book says slow.'},
                        'kind': 'Music book',
                        'lines': ['**Easy Songs**', 'Page 12 · slow']},
                       {'decode': {'ans': 0, 'opts': ['Mondays', 'Fridays', 'Sundays'], 'q': 'When is the lesson?', 'why': 'The card says Mondays.'},
@@ -150,7 +150,7 @@ SUPP = {'badge': {'desc': 'Frequency words and should', 'icon': '🎹', 'name': 
                        'Bia says she sometimes plays too fast.',
                        'Henry says she should play slowly.'],
              'scan': [{'alt': ['three'], 'ans': 'three times a week', 'q': 'How often does Bia practice?'},
-                      {'alt': ['ten'], 'ans': 'ten minutes', 'q': 'How long should she play in the morning?'},
+                      {'alt': ['ten'], 'ans': 'ten minutes', 'q': 'How long is the morning practice?'},
                       {'alt': ['dinner'], 'ans': 'after dinner', 'q': 'When does Henry always play?'}],
              'text': ['It is Monday evening in a small music school in Bristol. A black piano stands near the window. Bia sits on the bench. Her teacher Henry stands '
                       'next to her. It is time for the weekly lesson. Henry asks about her practice.',
@@ -167,6 +167,6 @@ SUPP = {'badge': {'desc': 'Frequency words and should', 'icon': '🎹', 'name': 
                     {'ans': False, 's': 'Henry says Bia should practice once a week.', 'why': 'He says every day.'},
                     {'ans': True, 's': 'Bia sometimes plays too fast.', 'why': 'She says it.'},
                     {'ans': False, 's': 'Bia always counts the beat.', 'why': 'She never counts the beat.'}],
-             'think': 'What do you practice often? What should you do more?',
+             'think': 'What do you practice often? What is your advice for a friend?',
              'title': 'A small music school'},
  'reg': 11}

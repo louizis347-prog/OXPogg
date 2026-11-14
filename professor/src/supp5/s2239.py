@@ -180,4 +180,4 @@ SUPP = {'badge': {'desc': 'Past simple and going to', 'icon': '🏞️', 'name':
                     {'ans': False, 's': 'Eva is going to take the bus.', 'why': 'She is going to walk.'}],
              'think': 'What did you do on your last day off? What are you going to do on the next one?',
              'title': 'A green park'},
- 'reg': 239}
+ 'reg': 6}

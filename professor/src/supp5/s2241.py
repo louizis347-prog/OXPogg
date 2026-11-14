@@ -162,4 +162,4 @@ SUPP = {'badge': {'desc': 'Can you and would like', 'icon': '🆘', 'name': 'Ask
                     {'ans': False, 's': 'Ben would like tea.', 'why': 'He would like a black coffee.'}],
              'think': 'Who can you ask for help at work? What would you like to ask?',
              'title': 'A big office'},
- 'reg': 241}
+ 'reg': 8}

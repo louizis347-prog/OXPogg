@@ -141,8 +141,8 @@ SUPP = {'badge': {'desc': 'Imperatives and would like', 'icon': '🎨', 'name': 
                        'Ines says to paint the waves.',
                        'Ines says to add the clouds.'],
              'scan': [{'alt': ['sea'], 'ans': 'a big blue sea', 'q': 'What would Mia like to paint?'},
-                      {'alt': ['blue'], 'ans': 'blue and white', 'q': 'What should she mix?'},
-                      {'alt': ['yellow'], 'ans': 'yellow', 'q': 'What should she paint for the sun?'}],
+                      {'alt': ['blue'], 'ans': 'blue and white', 'q': 'What does Ines say to mix?'},
+                      {'alt': ['yellow'], 'ans': 'yellow', 'q': 'What color does Ines say for the sun?'}],
              'text': ['It is Saturday morning in a bright art room in Wellington. Colors cover the long table. Mia stands in front of a big white paper. Her teacher '
                       'Ines walks over. The class is fun and quiet. Ines asks about her idea.',
                       '“Hi, Mia! Welcome to art class. What would you like to paint today?” says Ines. “I’d like to paint a big blue sea.” says Mia. “Nice! Take a brush '
@@ -160,4 +160,4 @@ SUPP = {'badge': {'desc': 'Imperatives and would like', 'icon': '🎨', 'name': 
                     {'ans': False, 's': 'Mia has to sit and wait all day.', 'why': 'Ines says to wait a minute.'}],
              'think': 'What would you like to paint? What colors do you mix?',
              'title': 'A bright art room'},
- 'reg': 245}
+ 'reg': 12}

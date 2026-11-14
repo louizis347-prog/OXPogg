@@ -182,4 +182,4 @@ SUPP = {'badge': {'desc': 'Can I and will on the phone', 'icon': '📞', 'name':
                     {'ans': False, 's': 'Anna is in the office today.', 'why': 'She isn’t here today.'}],
              'think': 'Who do you call at work? What do you ask? What will you say?',
              'title': 'A busy office'},
- 'reg': 242}
+ 'reg': 9}
