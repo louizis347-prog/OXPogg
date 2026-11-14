@@ -97,7 +97,7 @@ SUPP = {'badge': {'desc': 'Going to and will', 'icon': '👥', 'name': 'Study gr
                        'lines': ['**Study Group**', 'Room 3 · 3 PM']},
                       {'decode': {'ans': 0,
                                   'opts': ['Notes and a calculator', 'A ball', 'A tent'],
-                                  'q': 'What should you bring?',
+                                  'q': 'What does the note say to bring?',
                                   'why': 'The note says notes and a calculator.'},
                        'kind': 'Note',
                        'lines': ['**Bring**', 'Notes · Calculator']}]},
