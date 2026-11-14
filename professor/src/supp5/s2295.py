@@ -177,4 +177,4 @@ SUPP = {'badge': {'desc': 'Use how many and there is/are', 'icon': '🔨', 'name
                     {'ans': False, 's': 'Dan is going to paint a wall.', 'why': 'He is going to paint the fence.'}],
              'think': 'How many tools are there in your house? Is there a hammer?',
              'title': 'A busy hardware store'},
- 'reg': 295}
+ 'reg': 62}

@@ -172,4 +172,4 @@ SUPP = {'badge': {'desc': 'Use past simple and there was/were', 'icon': '🦁', 
                     {'ans': False, 's': 'Ben did not see the elephants.', 'why': 'He saw them.'}],
              'think': 'Where did you go last weekend? What was there?',
              'title': 'A bright office'},
- 'reg': 301}
+ 'reg': 68}

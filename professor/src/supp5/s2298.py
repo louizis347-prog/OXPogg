@@ -138,4 +138,4 @@ SUPP = {'badge': {'desc': 'Use is made of and is made in', 'icon': '👜', 'name
                     {'ans': False, 's': 'The shirts are made here.', 'why': 'They are made in Portugal.'}],
              'think': 'What is your bag made of? Where is your phone made?',
              'title': 'A gift shop'},
- 'reg': 298}
+ 'reg': 65}

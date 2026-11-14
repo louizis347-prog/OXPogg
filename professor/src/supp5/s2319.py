@@ -186,4 +186,4 @@ SUPP = {'badge': {'desc': 'Present continuous and going to', 'icon': '🏖️', 
                     {'ans': False, 's': 'Her mom is building a sandcastle.', 'why': 'Her mom is reading.'}],
              'think': 'What are you doing now? What are you going to do later?',
              'title': 'A sunny beach'},
- 'reg': 319}
+ 'reg': 86}

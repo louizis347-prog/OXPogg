@@ -146,4 +146,4 @@ SUPP = {'badge': {'desc': 'Use past simple: who painted it', 'icon': '🎨', 'na
                     {'ans': False, 's': 'She sold most of her pictures.', 'why': 'She gave most to friends.'}],
              'think': 'Who painted a famous picture? When did they paint it?',
              'title': 'A big museum'},
- 'reg': 309}
+ 'reg': 76}

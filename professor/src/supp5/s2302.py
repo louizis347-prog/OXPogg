@@ -138,4 +138,4 @@ SUPP = {'badge': {'desc': 'Use present simple and there is/are', 'icon': '🐄',
                     {'ans': False, 's': 'Frank gets up at seven.', 'why': 'He gets up at five.'}],
              'think': 'What animals are there near your home? What do they eat?',
              'title': 'A small farm'},
- 'reg': 302}
+ 'reg': 69}

@@ -171,4 +171,4 @@ SUPP = {'badge': {'desc': 'Use should and going to', 'icon': '💰', 'name': 'Sa
                     {'ans': False, 's': 'Abby says saving is very hard.', 'why': 'She says it is easy.'}],
              'think': 'What should you do to save money? What are you going to do this week?',
              'title': 'A small kitchen'},
- 'reg': 297}
+ 'reg': 64}

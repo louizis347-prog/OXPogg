@@ -168,4 +168,4 @@ SUPP = {'badge': {'desc': 'Going to and how long', 'icon': '🌲', 'name': 'Fore
                     {'ans': False, 's': 'Marco is going to take a tent.', 'why': 'He is going to take water, a map and a jacket.'}],
              'think': 'How long is your walk to school or to work?',
              'title': 'A forest edge'},
- 'reg': 317}
+ 'reg': 84}

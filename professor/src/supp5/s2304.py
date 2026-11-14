@@ -182,4 +182,4 @@ SUPP = {'badge': {'desc': 'Use past simple and past progressive', 'icon': '🎸'
                     {'ans': False, 's': 'The drink fell on Bia.', 'why': 'It did not fall on her.'}],
              'think': 'What were you doing yesterday at 8 PM? What happened then?',
              'title': 'A sunny cafe'},
- 'reg': 304}
+ 'reg': 71}

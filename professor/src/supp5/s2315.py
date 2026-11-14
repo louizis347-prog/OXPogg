@@ -186,4 +186,4 @@ SUPP = {'badge': {'desc': 'Past simple and superlatives', 'icon': '😂', 'name'
                     {'ans': False, 's': 'Tina saw the whole movie.', 'why': 'She saw only the trailer.'}],
              'think': 'What was the funniest movie you saw? What happened?',
              'title': 'A coffee shop'},
- 'reg': 315}
+ 'reg': 82}

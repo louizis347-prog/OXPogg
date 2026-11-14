@@ -193,4 +193,4 @@ SUPP = {'badge': {'desc': 'There is/are and present continuous', 'icon': '🎄',
                     {'ans': False, 's': 'The market is in front of the library.', 'why': 'It is behind the library.'}],
              'think': 'What is there on your street now? What are people doing?',
              'title': 'Main street'},
- 'reg': 312}
+ 'reg': 79}

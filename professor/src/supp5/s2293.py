@@ -160,4 +160,4 @@ SUPP = {'badge': {'desc': 'Use past simple and when', 'icon': '🧥', 'name': 'D
                     {'ans': False, 's': 'Lia did not bring a ticket.', 'why': 'She brought it.'}],
              'think': 'What did you drop or break last week? When did it happen?',
              'title': 'A small shop'},
- 'reg': 293}
+ 'reg': 60}

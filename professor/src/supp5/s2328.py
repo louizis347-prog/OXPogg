@@ -151,4 +151,4 @@ SUPP = {'badge': {'desc': 'Past simple and where', 'icon': '👛', 'name': 'Lost
                     {'ans': False, 's': 'Hal lost the wallet.', 'why': 'Sara lost it.'}],
              'think': 'Where did you last see your phone or keys?',
              'title': 'A hotel lobby'},
- 'reg': 328}
+ 'reg': 95}

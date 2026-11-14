@@ -171,4 +171,4 @@ SUPP = {'badge': {'desc': 'Going to and will', 'icon': '🎂', 'name': 'Birthday
                     {'ans': False, 's': 'Lia’s sister will bring speakers.', 'why': 'Her brother will.'}],
              'think': 'What are you going to do for your next birthday?',
              'title': 'A balcony'},
- 'reg': 313}
+ 'reg': 80}

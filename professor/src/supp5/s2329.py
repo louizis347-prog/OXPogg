@@ -154,4 +154,4 @@ SUPP = {'badge': {'desc': 'Past simple and how many', 'icon': '🚲', 'name': 'P
                     {'ans': False, 's': 'The bike was red.', 'why': 'It was green.'}],
              'think': 'How many things did you do today? When did you do them?',
              'title': 'A police desk'},
- 'reg': 329}
+ 'reg': 96}

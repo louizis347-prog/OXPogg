@@ -156,4 +156,4 @@ SUPP = {'badge': {'desc': 'Use too + adjective and comparatives', 'icon': '⌚',
                     {'ans': False, 's': 'Noah buys the silver watch.', 'why': 'He buys the green watch.'}],
              'think': 'What is too expensive for you? What is just right?',
              'title': 'A big mall'},
- 'reg': 300}
+ 'reg': 67}

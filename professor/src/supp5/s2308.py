@@ -165,4 +165,4 @@ SUPP = {'badge': {'desc': 'Use is called and is used for', 'icon': '🧭', 'name
                     {'ans': False, 's': 'Sara does not like old things.', 'why': 'She loves them.'}],
              'think': 'What is an old thing in your house called? What is it used for?',
              'title': 'A quiet museum'},
- 'reg': 308}
+ 'reg': 75}

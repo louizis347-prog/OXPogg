@@ -158,4 +158,4 @@ SUPP = {'badge': {'desc': 'Use should and how often', 'icon': '🎹', 'name': 'P
                     {'ans': False, 's': 'Jack says Rui should play fast first.', 'why': 'He says slowly first.'}],
              'think': 'How often do you practice something? What should you do to get better?',
              'title': 'A small music room'},
- 'reg': 306}
+ 'reg': 73}

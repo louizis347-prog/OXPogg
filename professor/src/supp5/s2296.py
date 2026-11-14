@@ -158,4 +158,4 @@ SUPP = {'badge': {'desc': 'Use past simple and how long', 'icon': '🚲', 'name'
                     {'ans': False, 's': 'Zack learned from his mother.', 'why': 'He learned from his father.'}],
              'think': 'Did you fix something last week? How long did it take?',
              'title': 'A small bike shop'},
- 'reg': 296}
+ 'reg': 63}

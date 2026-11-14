@@ -143,4 +143,4 @@ SUPP = {'badge': {'desc': 'Use there was/were and there is/are', 'icon': '🏰',
                     {'ans': False, 's': 'There is no tower today.', 'why': 'There is a tower today.'}],
              'think': 'Is there an old building in your city? What was there long ago?',
              'title': 'An old castle'},
- 'reg': 310}
+ 'reg': 77}

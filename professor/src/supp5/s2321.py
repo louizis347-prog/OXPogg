@@ -165,4 +165,4 @@ SUPP = {'badge': {'desc': 'Comparatives and should', 'icon': '✏️', 'name': '
                     {'ans': False, 's': 'Ben’s house is more beautiful than his tree.', 'why': 'The tree is more beautiful.'}],
              'think': 'What should you do to get better at drawing or at any hobby?',
              'title': 'A drawing class'},
- 'reg': 321}
+ 'reg': 88}

@@ -156,4 +156,4 @@ SUPP = {'badge': {'desc': 'Use cheapest, best and most', 'icon': '🧀', 'name':
                     {'ans': True, 's': 'The cheese is from the farm.', 'why': 'Vince says it.'}],
              'think': 'What is the best place to buy food in your city? What is the cheapest?',
              'title': 'A busy market'},
- 'reg': 292}
+ 'reg': 59}

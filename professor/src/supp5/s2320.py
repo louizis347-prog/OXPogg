@@ -151,4 +151,4 @@ SUPP = {'badge': {'desc': 'Imperatives and would like', 'icon': '🎨', 'name': 
                     {'ans': False, 's': 'Zoe does not want to see the picture.', 'why': 'She says yes.'}],
              'think': 'What would you like to make in an art class?',
              'title': 'A bright art room'},
- 'reg': 320}
+ 'reg': 87}

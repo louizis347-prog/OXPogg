@@ -138,4 +138,4 @@ SUPP = {'badge': {'desc': 'Use is sold and are sold', 'icon': '💐', 'name': 'S
                     {'ans': False, 's': 'Bread is not sold at the market.', 'why': 'It is sold at the red shop.'}],
              'think': 'What is sold near your house? Where is bread sold?',
              'title': 'A market by the sea'},
- 'reg': 299}
+ 'reg': 66}

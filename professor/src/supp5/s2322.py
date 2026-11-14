@@ -162,4 +162,4 @@ SUPP = {'badge': {'desc': 'Past simple and how many', 'icon': '📸', 'name': 'T
                     {'ans': False, 's': 'She deleted ten photos.', 'why': 'She deleted twelve.'}],
              'think': 'How many photos did you take last week?',
              'title': 'A quiet park'},
- 'reg': 322}
+ 'reg': 89}

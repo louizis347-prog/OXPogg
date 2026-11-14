@@ -181,4 +181,4 @@ SUPP = {'badge': {'desc': 'Past simple and comparatives', 'icon': '🏞️', 'na
                     {'ans': False, 's': 'Walt went to the lake.', 'why': 'He stayed home.'}],
              'think': 'Was last weekend better or worse than the weekend before?',
              'title': 'A cafe'},
- 'reg': 318}
+ 'reg': 85}

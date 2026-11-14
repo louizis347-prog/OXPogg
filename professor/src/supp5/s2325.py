@@ -170,4 +170,4 @@ SUPP = {'badge': {'desc': 'Past simple and past progressive', 'icon': '🧺', 'n
                     {'ans': False, 's': 'Her sister called on Sunday.', 'why': 'Her brother called.'}],
              'think': 'What did you do last weekend? What were you doing when something happened?',
              'title': 'A bright office'},
- 'reg': 325}
+ 'reg': 92}

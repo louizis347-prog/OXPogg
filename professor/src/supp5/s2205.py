@@ -35,7 +35,7 @@ SUPP = {'badge': {'desc': 'Say what is happening and give instructions', 'icon':
                                 'ok': False,
                                 'pt': 'Ah, não! Me ajude, por favor. Estou abrindo a porta agora.'}],
                       'pt': 'Pare a máquina! A camisa vermelha está deixando tudo rosa.'},
-                     {'npc': 'Give me the socks. They’re turning pink!',
+                     {'npc': 'Give me the socks. They’re getting pink!',
                       'opts': [{'en': 'Look, they’re not very pink. Good!', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Olhe, elas não estão muito rosa. Que bom!'},
                                {'en': 'pink. very not Good! they’re Look,',
                                 'fb': 'A ordem das palavras está errada.',
@@ -44,12 +44,12 @@ SUPP = {'badge': {'desc': 'Say what is happening and give instructions', 'icon':
                                {'en': 'Look, they’re not pink. Good!', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Olhe, elas não estão muito rosa. Que bom!'}],
                       'pt': 'Me dê as meias. Elas estão ficando rosa!'},
                      {'npc': 'Next time, wash the red clothes alone.',
-                      'opts': [{'en': 'Good idea. I’m learning today.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Boa ideia. Estou aprendendo hoje.'},
-                               {'en': 'today. Good learning I’m idea.',
+                      'opts': [{'en': 'Good idea. I want to learn today.', 'fb': 'Natural e claro.', 'ok': True, 'pt': 'Boa ideia. Estou aprendendo hoje.'},
+                               {'en': 'learn want Good today. to I idea.',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
                                 'pt': 'Boa ideia. Estou aprendendo hoje.'},
-                               {'en': 'Good idea. learning today.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Boa ideia. Estou aprendendo hoje.'}],
+                               {'en': 'Good idea. I to learn today.', 'fb': 'Falta uma palavra.', 'ok': False, 'pt': 'Boa ideia. Estou aprendendo hoje.'}],
                       'pt': 'Da próxima vez, lave as roupas vermelhas sozinhas.'}]},
  'culture': {'compare': {'ask': 'Stop the machine!',
                          'br': 'No Brasil, dizemos “estou lavando” e “pare a máquina”.',
@@ -107,10 +107,10 @@ SUPP = {'badge': {'desc': 'Say what is happening and give instructions', 'icon':
                    ('You', 'Yes, I am. Why?', 'Estou, sim. Por quê?'),
                    ('Edith', 'Stop the machine! The red shirt is making everything pink.', 'Pare a máquina! A camisa vermelha está deixando tudo rosa.'),
                    ('You', 'Oh no! Help me, please. I’m opening the door now.', 'Ah, não! Me ajude, por favor. Estou abrindo a porta agora.'),
-                   ('Edith', 'Give me the socks. They’re turning pink!', 'Me dê as meias. Elas estão ficando rosa!'),
+                   ('Edith', 'Give me the socks. They’re getting pink!', 'Me dê as meias. Elas estão ficando rosa!'),
                    ('You', 'Look, they’re not very pink. Good!', 'Olhe, elas não estão muito rosa. Que bom!'),
                    ('Edith', 'Next time, wash the red clothes alone.', 'Da próxima vez, lave as roupas vermelhas sozinhas.'),
-                   ('You', 'Good idea. I’m learning today.', 'Boa ideia. Estou aprendendo hoje.'),
+                   ('You', 'Good idea. I want to learn today.', 'Boa ideia. Estou aprendendo hoje.'),
                    ('Edith', 'Now put the clothes in the dryer. I’m making tea.', 'Agora ponha as roupas na secadora. Estou fazendo chá.')],
          'mission': 'Usar present continuous e imperativo.',
          'npc': 'Edith',
@@ -158,14 +158,14 @@ SUPP = {'badge': {'desc': 'Say what is happening and give instructions', 'icon':
                       'white socks?” says Edith.',
                       '“Yes, I am. Why?” says Mia. “Stop the machine! The red shirt is making everything pink.” says Edith. “Oh no! Help me, please. I’m opening the '
                       'door now.” says Mia.',
-                      '“Give me the socks. They’re turning pink!” says Edith. “Look, they’re not very pink. Good!” says Mia. “Next time, wash the red clothes alone.” '
+                      '“Give me the socks. They’re getting pink!” says Edith. “Look, they’re not very pink. Good!” says Mia. “Next time, wash the red clothes alone.” '
                       'says Edith.',
-                      '“Good idea. I’m learning today.” says Mia. “Now put the clothes in the dryer. I’m making tea.” says Edith. Edith helps Mia take out the clothes. '
-                      'The socks are a light pink. They both laugh. Mia puts the clothes in the dryer. The room smells warm and clean. A small mistake teaches a good '
-                      'lesson.'],
+                      '“Good idea. I want to learn today.” says Mia. “Now put the clothes in the dryer. I’m making tea.” says Edith. Edith helps Mia take out the '
+                      'clothes. The socks are a light pink. They both laugh. Mia puts the clothes in the dryer. The room smells warm and clean. A small mistake teaches '
+                      'a good lesson.'],
              'tf': [{'ans': True, 's': 'Mia is doing the laundry.', 'why': 'She says it.'},
                     {'ans': False, 's': 'Mia is washing only white socks.', 'why': 'She is also washing a red shirt.'},
-                    {'ans': True, 's': 'The socks are turning pink.', 'why': 'Edith says it.'},
+                    {'ans': True, 's': 'The socks are getting pink.', 'why': 'Edith says it.'},
                     {'ans': False, 's': 'Edith says to wash the red clothes with the white ones.', 'why': 'She says wash them alone.'}],
              'think': 'What are you washing today?',
              'title': 'A laundry room'},

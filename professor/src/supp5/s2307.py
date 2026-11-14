@@ -187,4 +187,4 @@ SUPP = {'badge': {'desc': 'Use past simple and comparatives', 'icon': '🌃', 'n
                     {'ans': True, 's': 'The streets were quieter at midnight.', 'why': 'Max says it.'}],
              'think': 'What did you do last night? Was it better or worse than last week?',
              'title': 'A bright kitchen'},
- 'reg': 307}
+ 'reg': 74}

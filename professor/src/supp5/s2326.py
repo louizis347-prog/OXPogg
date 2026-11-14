@@ -156,4 +156,4 @@ SUPP = {'badge': {'desc': 'Imperatives, where and there is/are', 'icon': '🧭',
                     {'ans': False, 's': 'There is a machine at the park.', 'why': 'It is at the entrance.'}],
              'think': 'How do you go from your home to a shop or a station? Give directions.',
              'title': 'A busy corner'},
- 'reg': 326}
+ 'reg': 93}

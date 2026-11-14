@@ -143,4 +143,4 @@ SUPP = {'badge': {'desc': 'Use imperatives and how much', 'icon': '🚗', 'name'
                     {'ans': False, 's': 'The wash takes two hours.', 'why': 'About fifteen minutes.'}],
              'think': 'How much is a car wash in your city? What do you do while you wait?',
              'title': 'A quiet street'},
- 'reg': 294}
+ 'reg': 61}

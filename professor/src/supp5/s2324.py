@@ -172,4 +172,4 @@ SUPP = {'badge': {'desc': 'Going to and will', 'icon': '🧺', 'name': 'Weekend 
                     {'ans': False, 's': 'Dale will cook lunch on Sunday.', 'why': 'Bia will cook lunch.'}],
              'think': 'What are you going to do this weekend? What will you do to help a friend?',
              'title': 'A small cafe'},
- 'reg': 324}
+ 'reg': 91}

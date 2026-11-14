@@ -176,4 +176,4 @@ SUPP = {'badge': {'desc': 'Use comparatives and superlatives', 'icon': '🎡', '
                     {'ans': False, 's': 'The popcorn is the most expensive.', 'why': 'It is the cheapest.'}],
              'think': 'What is the best place to go for fun in your city? What is the tallest or fastest thing there?',
              'title': 'A big fair'},
- 'reg': 303}
+ 'reg': 70}
