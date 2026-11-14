@@ -46,15 +46,15 @@ SUPP = {'badge': {'desc': 'Past simple with last and ago, present perfect with t
                                 'pt': 'Comecei há duas semanas. Já conheci a maior parte da equipe.'}],
                       'pt': 'Legal! Quando você começou neste emprego?'},
                      {'npc': 'Good. I have worked here since 2022. Last week I finished a big project.',
-                      'opts': [{'en': 'Congratulations! Have you taken a day off since then?',
+                      'opts': [{'en': 'Well done! Have you taken a day off since then?',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
                                 'pt': 'Parabéns! Você tirou um dia de folga desde então?'},
-                               {'en': 'you day Congratulations! a since Have taken off then?',
+                               {'en': 'Have a Well taken you done! off then? day since',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
                                 'pt': 'Parabéns! Você tirou um dia de folga desde então?'},
-                               {'en': 'Congratulations! Have you taken day off since then?',
+                               {'en': 'Well done! Have you taken day off since then?',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Parabéns! Você tirou um dia de folga desde então?'}],
@@ -141,7 +141,7 @@ SUPP = {'badge': {'desc': 'Past simple with last and ago, present perfect with t
                    ('Walt',
                     'Good. I have worked here since 2022. Last week I finished a big project.',
                     'Bom. Trabalho aqui desde 2022. Na semana passada terminei um grande projeto.'),
-                   ('You', 'Congratulations! Have you taken a day off since then?', 'Parabéns! Você tirou um dia de folga desde então?'),
+                   ('You', 'Well done! Have you taken a day off since then?', 'Parabéns! Você tirou um dia de folga desde então?'),
                    ('Walt',
                     'Not yet. I took a long weekend last summer, but I haven’t had a break this year.',
                     'Ainda não. Tirei um fim de semana longo no verão passado, mas não tive pausa este ano.'),
@@ -207,8 +207,8 @@ SUPP = {'badge': {'desc': 'Past simple with last and ago, present perfect with t
                       'Zoe. “Interesting! I moved here three years ago. Have you seen much of the city?” says Walt.',
                       '“A little. I went to a baseball game last month, and I have visited the big park twice this week.” says Zoe. “Nice! When did you start this job?” '
                       'says Walt. “I started two weeks ago. I have already met most of the team.” says Zoe.',
-                      '“Good. I have worked here since 2022. Last week I finished a big project.” says Walt. “Congratulations! Have you taken a day off since then?” '
-                      'says Zoe. “Not yet. I took a long weekend last summer, but I haven’t had a break this year.” says Walt.',
+                      '“Good. I have worked here since 2022. Last week I finished a big project.” says Walt. “Well done! Have you taken a day off since then?” says Zoe. '
+                      '“Not yet. I took a long weekend last summer, but I haven’t had a break this year.” says Walt.',
                       '“You should rest. I have worked hard this week too, and I am tired.” says Zoe. “Let’s have lunch together today. I have found a great place near '
                       'the office.” says Walt. They walk to the kitchen for a quick break. Zoe shows Walt a photo of her old home in Ohio. Walt tells her about the best '
                       'restaurants in town. The project board shows many green lights. At noon, they go downstairs together. Atlanta feels a little more like home to '
