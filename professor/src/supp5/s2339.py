@@ -184,4 +184,4 @@ SUPP = {'badge': {'desc': 'Past simple and past progressive', 'icon': '👛', 'n
                     {'ans': False, 's': 'Iris is going to pay for the coffee.', 'why': 'Eva will buy the coffee.'}],
              'think': 'What were you doing when you lost something? Who helped you?',
              'title': 'A busy street'},
- 'reg': 339}
+ 'reg': 106}

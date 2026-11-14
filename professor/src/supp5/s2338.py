@@ -149,4 +149,4 @@ SUPP = {'badge': {'desc': 'Will and Can you…?', 'icon': '🪜', 'name': 'Helpi
                     {'ans': False, 's': 'Hugo will make dinner.', 'why': 'He will make lunch.'}],
              'think': 'Who helps you at home? What can you do for a neighbor?',
              'title': 'A green yard'},
- 'reg': 338}
+ 'reg': 105}

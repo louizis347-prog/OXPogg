@@ -168,4 +168,4 @@ SUPP = {'badge': {'desc': 'Past progressive with when', 'icon': '📊', 'name': 
                     {'ans': False, 's': 'Xavier was sleeping when the screen worked.', 'why': 'He was writing notes.'}],
              'think': 'What were you doing when the phone rang today?',
              'title': 'A busy office'},
- 'reg': 234}
+ 'reg': 1}

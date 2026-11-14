@@ -171,4 +171,4 @@ SUPP = {'badge': {'desc': 'Will and how long', 'icon': '🗓️', 'name': 'A new
                     {'ans': False, 's': 'The training lasts one week.', 'why': 'It lasts two weeks.'}],
              'think': 'How long is your workday? What will you do tomorrow?',
              'title': 'A big office'},
- 'reg': 237}
+ 'reg': 4}

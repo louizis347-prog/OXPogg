@@ -151,4 +151,4 @@ SUPP = {'badge': {'desc': 'Present continuous and will', 'icon': '📞', 'name':
                     {'ans': False, 's': 'Tom will send his number.', 'why': 'Bruno will send his number.'}],
              'think': 'What are you doing right now? What will you do later?',
              'title': 'A flat in Melbourne'},
- 'reg': 332}
+ 'reg': 99}

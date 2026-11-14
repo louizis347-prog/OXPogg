@@ -149,4 +149,4 @@ SUPP = {'badge': {'desc': 'Going to and will', 'icon': '👶', 'name': 'A new ba
                     {'ans': False, 's': 'Clara will make tea.', 'why': 'Felix will make tea.'}],
              'think': 'What are you going to do this weekend? How will you help a friend?',
              'title': 'A small house'},
- 'reg': 336}
+ 'reg': 103}

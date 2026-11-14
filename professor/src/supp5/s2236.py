@@ -179,6 +179,6 @@ SUPP = {'badge': {'desc': 'Have to and past simple', 'icon': '🌙', 'name': 'Wo
                     {'ans': False, 's': 'Zack stayed until eight yesterday.', 'why': 'He stayed until ten.'},
                     {'ans': True, 's': 'Clara took a bus home.', 'why': 'She says it.'},
                     {'ans': False, 's': 'Clara has to pick up her brother.', 'why': 'She has to pick up her sister.'}],
-             'think': 'What do you have to do tonight? What did you do last night?',
+             'think': 'What is your plan for tonight? What did you do last night?',
              'title': 'A quiet office'},
- 'reg': 236}
+ 'reg': 3}

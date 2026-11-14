@@ -44,7 +44,7 @@ SUPP = {'badge': {'desc': 'Past simple and superlatives', 'icon': '🏆', 'name'
                                 'ok': False,
                                 'pt': 'A última pergunta foi a pior. Era sobre o castelo mais antigo da cidade.'}],
                       'pt': 'Muito bem! Qual pergunta foi a mais difícil?'},
-                     {'npc': 'I know that castle. It’s the biggest one in Liverpool, I think.',
+                     {'npc': 'I know that castle. It’s very big, I think.',
                       'opts': [{'en': 'Yes, and the most famous. I wrote two pages about it.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -57,7 +57,7 @@ SUPP = {'badge': {'desc': 'Past simple and superlatives', 'icon': '🏆', 'name'
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'É, e o mais famoso. Escrevi duas páginas sobre ele.'}],
-                      'pt': 'Eu conheço esse castelo. Acho que é o maior de Liverpool.'},
+                      'pt': 'Eu conheço esse castelo. Acho que é muito grande.'},
                      {'npc': 'You worked a lot. What was the best part of the test?',
                       'opts': [{'en': 'The best part was the essay. I wrote the longest essay in the class.',
                                 'fb': 'Natural e claro.',
@@ -127,7 +127,7 @@ SUPP = {'badge': {'desc': 'Past simple and superlatives', 'icon': '🏆', 'name'
                    ('You',
                     'The last question was the worst. It was about the oldest castle in the city.',
                     'A última pergunta foi a pior. Era sobre o castelo mais antigo da cidade.'),
-                   ('Noel', 'I know that castle. It’s the biggest one in Liverpool, I think.', 'Eu conheço esse castelo. Acho que é o maior de Liverpool.'),
+                   ('Noel', 'I know that castle. It’s very big, I think.', 'Eu conheço esse castelo. Acho que é muito grande.'),
                    ('You', 'Yes, and the most famous. I wrote two pages about it.', 'É, e o mais famoso. Escrevi duas páginas sobre ele.'),
                    ('Noel', 'You worked a lot. What was the best part of the test?', 'Você trabalhou muito. Qual foi a melhor parte da prova?'),
                    ('You',
@@ -180,8 +180,8 @@ SUPP = {'badge': {'desc': 'Past simple and superlatives', 'icon': '🏆', 'name'
                       'it the hardest test?” says Noel.',
                       '“Yes, it was the hardest test of the year. I studied for a week.” says Luisa. “Well done! Which question was the most difficult?” says Noel. “The '
                       'last question was the worst. It was about the oldest castle in the city.” says Luisa.',
-                      '“I know that castle. It’s the biggest one in Liverpool, I think.” says Noel. “Yes, and the most famous. I wrote two pages about it.” says Luisa. '
-                      '“You worked a lot. What was the best part of the test?” says Noel.',
+                      '“I know that castle. It’s very big, I think.” says Noel. “Yes, and the most famous. I wrote two pages about it.” says Luisa. “You worked a lot. '
+                      'What was the best part of the test?” says Noel.',
                       '“The best part was the essay. I wrote the longest essay in the class.” says Luisa. “That’s great! Let’s have lunch together. I’ll pay!” says '
                       'Noel. Luisa shows Noel the paper. He reads the big red A. They walk to the lunch room together. Noel buys two sandwiches. Rain falls outside the '
                       'window. Hard work gives the best days.'],

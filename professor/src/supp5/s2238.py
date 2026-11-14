@@ -174,4 +174,4 @@ SUPP = {'badge': {'desc': 'Would like and can we', 'icon': '🍽️', 'name': 'L
                     {'ans': False, 's': 'Leo wants to pay with two cards.', 'why': 'He asks to pay with one card.'}],
              'think': 'What would you like for lunch? Can we eat together?',
              'title': 'A small café'},
- 'reg': 238}
+ 'reg': 5}

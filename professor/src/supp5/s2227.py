@@ -76,8 +76,8 @@ SUPP = {'badge': {'desc': 'Use have to and should', 'icon': '📓', 'name': 'Hom
                          'br': 'No Brasil, dizemos “Tenho que terminar” e “Você deve descansar”.',
                          'tip': 'Diga: “I have to finish my homework.”',
                          'us': 'Em inglês: have to + verbo para obrigação e should + verbo para conselho.'},
-             'hook': 'In the UK, students often have homework every day. Friends help each other with advice: “You should take a break.” They also say what they must do '
-                     'with have to: “I have to finish my homework.”',
+             'hook': 'In the UK, students often have homework every day. Friends help each other with advice: “You should take a break.” They also say their duties with '
+                     'have to: “I have to finish my homework.”',
              'mythfact': [{'ans': True, 's': 'I have to work is an obligation.', 'why': 'Yes.'},
                           {'ans': False, 's': 'We say He have to work.', 'why': 'We say He has to work.'},
                           {'ans': True, 's': 'You should rest is advice.', 'why': 'Yes.'},

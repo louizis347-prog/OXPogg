@@ -167,4 +167,4 @@ SUPP = {'badge': {'desc': 'Past simple and if/when', 'icon': '🚲', 'name': 'Fi
                     {'ans': False, 's': 'The bike will be ready at six.', 'why': 'At five.'}],
              'think': 'What happened to something you have? What did you do?',
              'title': 'A small bike shop'},
- 'reg': 331}
+ 'reg': 98}

@@ -176,4 +176,4 @@ SUPP = {'badge': {'desc': 'If and when with will', 'icon': '⛈️', 'name': 'Ba
                     {'ans': False, 's': 'They will go for a walk now.', 'why': 'They will go when the storm ends.'}],
              'think': 'What will you do if it rains tomorrow? What will you do when the rain stops?',
              'title': 'A windy street'},
- 'reg': 343}
+ 'reg': 110}

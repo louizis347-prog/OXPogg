@@ -157,4 +157,4 @@ SUPP = {'badge': {'desc': 'Past simple and going to', 'icon': '💬', 'name': 'A
                     {'ans': False, 's': 'Lia is going to make coffee.', 'why': 'Cleo is going to make coffee.'}],
              'think': 'What message did you send today? What are you going to send later?',
              'title': 'A small cafe'},
- 'reg': 333}
+ 'reg': 100}

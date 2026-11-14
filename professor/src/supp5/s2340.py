@@ -186,4 +186,4 @@ SUPP = {'badge': {'desc': 'Past simple and would like', 'icon': '🎁', 'name': 
                     {'ans': False, 's': 'Noah wants tea and cake.', 'why': 'Jonas wants cake and coffee.'}],
              'think': 'Who did you thank last week? What would you like to give them?',
              'title': 'A small cafe'},
- 'reg': 340}
+ 'reg': 107}
