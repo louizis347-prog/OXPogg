@@ -112,7 +112,7 @@ SUPP = {'badge': {'desc': 'Use the present passive: is grown, is made', 'icon': 
          'real': ['It is grown in Brazil.', 'It grows in Brazil.', 'is grown → “iz-grôun”'],
          'sc': 'cafe3',
          'story': 'Abe mostra a Eva de onde vêm o café e os doces da cafeteria, usando o passivo no presente.',
-         'teaser': 'The shop is being fixed',
+         'teaser': 'The shop was fixed',
          'teaser_d': 'Próxima situação',
          'title': 'This coffee is grown in Brazil',
          'vocab': [('bean', '🫘', 'grão'), ('farm', '🚜', 'fazenda'), ('recycle', '♻️', 'reciclar'), ('plastic', '🧴', 'plástico'), ('roast', '🔥', 'torrar')]},
