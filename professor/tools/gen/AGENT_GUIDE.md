@@ -43,3 +43,8 @@ O usuário NÃO aceita "Cena da obra" repetida: cada aula precisa de uma referê
 - Escolha obras REAIS e conhecidas que você conhece bem (filme, livro infantil ou clássico, música, série, pintura, obra de arquitetura, festival, tradição, evento esportivo, invenção, lugar famoso), em inglês ou do mundo, coerentes com o tema da aula. Varie os tipos e as épocas. **Só afirme o que você sabe com certeza**: resuma em termos gerais (do que trata), cite o ano só se tiver certeza (senão deixe `''`), não invente detalhes, números, falas nem prêmios.
 - A nota (PT-BR, 150 a ~330 caracteres) diz o que é a obra e liga à situação da aula; pode incluir UMA frase curta em inglês tirada do próprio diálogo da aula (gramática A2). Não escreva "reproduz a obra": o registro acrescenta sozinho a frase final "A cena desta aula é original; não reproduz a obra.".
 - Padrão de excelência: diálogos naturais e específicos (nada de falas genéricas repetidas entre aulas), conteúdo cultural em `cu` com informação correta e verificável (nada de estatísticas inventadas), vocabulário novo e útil, exemplos concretos.
+
+## ADENDO 3 (aulas 2451–2700)
+- O plano agora tem 700 linhas; as aulas 2451–2700 usam as linhas 451–700 (`A2(NN-2000, d)`, NN de 2451 a 2700). Siga ADENDO e ADENDO 2 (obra nova em `d['obra']`, nível A2 rigoroso, vocabulário novo e variado).
+- A coluna "estrutura" do plano é o foco gramatical; use sempre uma estrutura PERMITIDA. A aula deve girar em torno da situação do título (diálogo específico, com detalhes concretos do tema), e não reciclar falas de outras aulas.
+- Trabalhe em eficiência: escreva e valide as fichas em lotes pequenos (3–4 por comando) e não releia arquivos grandes sem necessidade.
