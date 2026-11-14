@@ -30,3 +30,9 @@ Na dúvida, use a frase mais simples, com a estrutura permitida.
 
 ## Entrega
 Quando as suas aulas estiverem todas `ok` sem avisos, responda com UMA linha: `lote 20XX–20YY ok` (e, se algo ficou com ressalva, diga qual aula e por quê). Não faça mais nada.
+
+## ADENDO (lote de 200 aulas extras, 2151–2350)
+- As aulas 2151–2350 usam `A2(k, d)` com k = NN − 2000 (151…350); o plano está em `/tmp/a2/plan.py` (350 linhas). Modelos: g2051.py, g2036.py e qualquer g2053–g2150 já validada (veja a variedade de temas).
+- **NÍVEL, com rigor máximo:** TODO texto em inglês da ficha (diálogo, abertura/fecho, exemplos de vocabulário, expressões, cartões, erros, quiz, tarefas) só pode usar a gramática PERMITIDA acima. Os avisos do mk.py cobrem só diálogo e expressões; o resto você precisa vigiar sozinho. Exemplos de coisas que NÃO podem aparecer em nenhum campo: could, would (exceto would like), may, might, must, used to, present perfect, orações relativas, passivo no passado, perguntas indiretas, discurso indireto, as…as, enough, Don't + verbo, if I were. Em cartões em português que citam exemplos em inglês, os exemplos também seguem a regra.
+- O `mk.py` também imprime `REPEAT?` quando 3 ou mais das 6 palavras do vocabulário já foram ensinadas em aulas A2 anteriores: escolha outras palavras (temas e substantivos novos). Varie cenários, verbos e personagens.
+- Se uma aula do plano pedir uma estrutura proibida, use a permitida mais próxima e registre na sua resposta final em uma frase.

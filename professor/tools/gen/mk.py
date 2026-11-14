@@ -21,6 +21,19 @@ def grammar_check(k,texts):
             if _g.search(pat,s,_g.I if name!="may" else 0): bad.append((name,t[:60]))
     return bad
 
+_PV={}
+def _prev_vocab(k):
+    import glob,os
+    out=set()
+    for f in glob.glob('/home/user/OXPogg/professor/data/v4/20*.json'):
+        n=int(os.path.basename(f)[:-5])
+        if n>=2000 and n<2000+k and n not in _PV:
+            try:
+                d=json.load(open(f)); _PV[n]={x[0].lower() for p in d['pages'] if p.get('kind')=='vocab' for x in p.get('words',[])}
+            except Exception: _PV[n]=set()
+    for n,s in _PV.items():
+        if n<2000+k: out|=s
+    return out
 def A2(k,d):
     row=PLAN[k-1];title,city,npc,you,struct,sc=row
     nxt=PLAN[k][0] if k<len(PLAN) else 'Próxima etapa'
@@ -64,6 +77,8 @@ def A2(k,d):
                 continue
             if w2 in taught or any(b in taught for b in CA.base_forms(w2)): continue
             cef.append(w2+':'+lv)
+    pv=_prev_vocab(k); rep=[g[0] for g in gl[:6] if g[0].lower() in pv]
+    if len(rep)>=3: print('REPEAT?',k,'palavras já ensinadas em aulas A2 anteriores:',rep)
     if cef: print('CEFR?',k,sorted(set(cef)))
     gb=grammar_check(k,[e for _,e,_ in L]+[e[0] for e in d['ex']]+[e[0] for e in d['ex']][:0])
     if gb: print('GRAMMAR?',k,gb)
