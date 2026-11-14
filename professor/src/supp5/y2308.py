@@ -7,12 +7,12 @@ Y = {'cards': [{'big': 'Is called',
            {'big': 'Used for',
             'icon': '🎯',
             'label': 'Serve para',
-            'sub': 'Para dizer o uso, use is used for + -ing: It is used for finding directions. It is used for taking photos. Pergunte What is it used for? para saber '
+            'sub': 'Para dizer o uso, use is used for + -ing: It is used for showing directions. It is used for taking photos. Pergunte What is it used for? para saber '
                    'a função.'},
            {'big': 'Passive',
             'icon': '🔁',
             'label': 'Passivo',
-            'sub': 'O passivo no presente usa am/is/are + particípio. Aqui basta saber called e used. Isso fala da coisa, não de quem faz: A compass is used for finding '
+            'sub': 'O passivo no presente usa am/is/are + particípio. Aqui basta saber called e used. Isso fala da coisa, não de quem faz: A compass is used for showing '
                    'directions.'},
            {'big': 'Museum',
             'icon': '🏛️',
@@ -27,7 +27,7 @@ Y = {'cards': [{'big': 'Is called',
                 {'en': 'He comes over with a smile.', 'pt': 'Ele vem até ela com um sorriso.'}],
                [{'en': '“Hi, Sara! Do you like this room?” says Luca.', 'pt': '“Oi, Sara! Você gosta desta sala?”, diz Luca.'},
                 {'en': '“Yes! What is this tool called?” says Sara.', 'pt': '“Gosto! Como se chama esta ferramenta?”, diz Sara.'},
-                {'en': '“It is called a compass. It is used for finding directions.” says Luca.', 'pt': '“Chama-se bússola. É usada para achar direções.”, diz Luca.'}],
+                {'en': '“It is called a compass. It is used for showing directions.” says Luca.', 'pt': '“Chama-se bússola. É usada para mostrar direções.”, diz Luca.'}],
                [{'en': '“Interesting. And what is that old box used for?” says Sara.', 'pt': '“Interessante. E para que serve aquela caixa velha?”, diz Sara.'},
                 {'en': '“It is used for keeping letters. It’s called a letter box.” says Luca.',
                  'pt': '“É usada para guardar cartas. Chama-se caixa de cartas.”, diz Luca.'},
