@@ -49,7 +49,7 @@ def A2(k,d):
     for i in (0,2,4,6):
         n_=L[i]; y=L[i+1]
         role.append([(n_[1],n_[2],y[1]),('Really?','Mesmo?','Yes, really.'),('I see.','Entendi.','Okay.')])
-    m=dict(reg=k,title=title,city=city,npc=npc,you=you,face=d['face'],g=d['g'],yg=d['yg'],crole=d['crole'],sc=sc,pool=d.get('pool') or [sc,'street','cafe2','park'],
+    m=dict(reg=(k if k<=233 else k-233),title=title,city=city,npc=npc,you=you,face=d['face'],g=d['g'],yg=d['yg'],crole=d['crole'],sc=sc,pool=d.get('pool') or [sc,'street','cafe2','park'],
      story=d['story'],p=d['p'],mission=d['mission'],emo=d['emo'],teaser=nxt,teaser_d=d.get('td','Próxima situação'),badge=d['badge'],
      lines=L,open=d['O'],close=d['C'],rtitle=d['rt'],gloss=gloss,fast=d['fast'],scan=d['scan'],tf=d['tf'],order=d['order'],ctx=ctx,chunks=chunks,think=d['think'],
      cu=d['cu'],errors=d['err'],homework=d['hw'],hw=d['hwf'],lab=d['lab'],cards=d['cards'],key=d['key'],vocab=vocab,molds=d['mo'],sounds=d['so'],role=role,change=d['chg'],

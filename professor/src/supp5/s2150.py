@@ -133,7 +133,7 @@ SUPP = {'badge': {'desc': 'Review the whole A2 level', 'icon': '🎓', 'name': '
          'real': ['What are you going to do?', 'What are you gonna do?', 'going to → “gonna”'],
          'sc': 'cafe2',
          'story': 'Max e o professor Ian fazem a revisão final do A2: passado, presente, planos e comparações.',
-         'teaser': 'Próxima etapa',
+         'teaser': 'A taxi to the airport',
          'teaser_d': 'Próxima situação',
          'title': 'Final review: A2 tour',
          'vocab': [('class', '🏫', 'aula'), ('summer', '☀️', 'verão'), ('shop', '🏪', 'loja'), ('money', '💰', 'dinheiro'), ('year', '📅', 'ano')]},
