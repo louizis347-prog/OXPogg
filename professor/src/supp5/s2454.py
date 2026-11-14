@@ -85,7 +85,7 @@ SUPP = {'badge': {'desc': 'Use commands and how much/many', 'icon': '🏭', 'nam
                        'why': 'how much'}],
              'wild': [{'decode': {'ans': 0,
                                   'opts': ['A helmet', 'A hat for the sun', 'Sunglasses'],
-                                  'q': 'What must you wear? Choose the sign.',
+                                  'q': 'What do you wear? Choose the sign.',
                                   'why': 'The sign says a helmet.'},
                        'kind': 'Safety sign',
                        'lines': ['**Wear a helmet**', 'Stay behind the line']},

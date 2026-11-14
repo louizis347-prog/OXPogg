@@ -69,7 +69,7 @@ SUPP = {'badge': {'desc': 'Use have to and should', 'icon': '🚒', 'name': 'Fir
                           {'ans': False, 's': 'After should, we say to + verb.', 'why': 'We say should + base verb.'},
                           {'ans': True, 's': 'The UK emergency number is 999.', 'why': 'Yes.'}],
              'quiz': [{'ans': 0,
-                       'opts': ['I have to check the truck.', 'I have check the truck.', 'I must to check the truck.'],
+                       'opts': ['I have to check the truck.', 'I have check the truck.', 'I has to check the truck.'],
                        'q': 'You say an obligation. You say…',
                        'why': 'have to'},
                       {'ans': 0,

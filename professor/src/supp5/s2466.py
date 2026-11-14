@@ -73,7 +73,7 @@ SUPP = {'badge': {'desc': 'Use should and have to', 'icon': '💇', 'name': 'Hai
                        'q': 'You give advice. You say…',
                        'why': 'should + verbo'},
                       {'ans': 0,
-                       'opts': ['I have to wash my hair.', 'I have wash my hair.', 'I must to wash my hair.'],
+                       'opts': ['I have to wash my hair.', 'I have wash my hair.', 'I has to wash my hair.'],
                        'q': 'You say an obligation. You say…',
                        'why': 'have to'},
                       {'ans': 0, 'opts': ['She has to wait.', 'She have to wait.', 'She has wait.'], 'q': 'You talk about she. You say…', 'why': 'has to'}],
