@@ -213,4 +213,4 @@ SUPP = {'badge': {'desc': 'Report what someone said', 'icon': '🗣️', 'name':
                     {'ans': False, 's': 'Gil studies with Ana in the gym.', 'why': 'They study in the library.'}],
              'think': 'What did your teacher or boss say last week? Tell it with said or told me.',
              'title': 'A classroom in Chicago'},
- 'reg': 272}
+ 'reg': 39}

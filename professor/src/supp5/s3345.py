@@ -205,4 +205,4 @@ SUPP = {'badge': {'desc': 'Review: used to, told me and plans', 'icon': '🎂', 
                     {'ans': False, 's': 'Mia is going to invite two friends.', 'why': 'She will invite twenty.'}],
              'think': 'How did you use to celebrate your birthday? What are you going to do this year?',
              'title': 'A party room in Dublin'},
- 'reg': 345}
+ 'reg': 112}

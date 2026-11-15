@@ -195,4 +195,4 @@ SUPP = {'badge': {'desc': 'Talk about money you have spent', 'icon': '🧮', 'na
                     {'ans': False, 's': 'Theo will pay for lunch.', 'why': 'Emma will treat him.'}],
              'think': 'How much have you spent this week? How do you check your budget?',
              'title': 'A big mall in Seattle'},
- 'reg': 243}
+ 'reg': 10}

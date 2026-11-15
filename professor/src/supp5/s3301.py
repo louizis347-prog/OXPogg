@@ -206,4 +206,4 @@ SUPP = {'badge': {'desc': 'Use since and for with friends', 'icon': '👭', 'nam
                     {'ans': False, 's': 'Lena has lived in Boston for one year.', 'why': 'She has lived there for six years.'}],
              'think': 'Who is your oldest friend? How long have you known this person?',
              'title': 'Old friends in Boston'},
- 'reg': 301}
+ 'reg': 68}

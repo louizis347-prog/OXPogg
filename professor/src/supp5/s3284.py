@@ -198,4 +198,4 @@ SUPP = {'badge': {'desc': 'Talk about shop rules', 'icon': '🛍️', 'name': 'a
                     {'ans': True, 's': 'The money is given to charity.', 'why': 'Yes.'}],
              'think': 'Which things are not sold or not allowed in your city? Why?',
              'title': 'A shop in London'},
- 'reg': 284}
+ 'reg': 51}

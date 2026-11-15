@@ -177,4 +177,4 @@ SUPP = {'badge': {'desc': 'Give steps in order', 'icon': '🧅', 'name': 'First,
                     {'ans': True, 's': 'Noah closes the lid.', 'why': 'He says it in the dialogue.'}],
              'think': 'Can you explain a simple recipe in steps? What do you do first?',
              'title': 'A small kitchen in Boston'},
- 'reg': 251}
+ 'reg': 18}

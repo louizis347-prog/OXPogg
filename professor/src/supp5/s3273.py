@@ -207,4 +207,4 @@ SUPP = {'badge': {'desc': 'Say what is not necessary', 'icon': '📖', 'name': '
                     {'ans': True, 's': 'Nell says breaks are important.', 'why': 'A tired brain does not remember much.'}],
              'think': 'What don’t you have to do when you study? What do you have to do?',
              'title': 'A library in Seattle'},
- 'reg': 273}
+ 'reg': 40}

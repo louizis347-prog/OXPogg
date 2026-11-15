@@ -208,4 +208,4 @@ SUPP = {'badge': {'desc': 'Talk about the best things you have found', 'icon': '
                     {'ans': False, 's': 'Cleo has found a good handmade bag before.', 'why': 'She has never found one for a good price.'}],
              'think': 'What is the best bargain you have ever found?',
              'title': 'A flea market in Dallas'},
- 'reg': 247}
+ 'reg': 14}

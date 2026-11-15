@@ -207,4 +207,4 @@ SUPP = {'badge': {'desc': 'Report opinions about a film', 'icon': '🎬', 'name'
                     {'ans': False, 's': 'Dora and Lia plan to go on Monday.', 'why': 'They plan to go on Friday.'}],
              'think': 'What did a friend say about a film or a book? Can you report it?',
              'title': 'A cinema in Seattle'},
- 'reg': 293}
+ 'reg': 60}

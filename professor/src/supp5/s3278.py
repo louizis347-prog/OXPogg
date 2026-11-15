@@ -220,4 +220,4 @@ SUPP = {'badge': {'desc': 'Ask polite indirect questions', 'icon': '🏫', 'name
                     {'ans': True, 's': 'The office closes at four.', 'why': 'Gwen says so.'}],
              'think': 'What do you ask when you are new at a school or a job? Use Do you know…?',
              'title': 'A school hall in Atlanta'},
- 'reg': 278}
+ 'reg': 45}

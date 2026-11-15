@@ -204,4 +204,4 @@ SUPP = {'badge': {'desc': 'Use because, so and but in the past', 'icon': '💐',
                     {'ans': True, 's': 'Bruno stayed home because it rained.', 'why': 'He says it.'}],
              'think': 'When were you upset last time? Why? What did you do?',
              'title': 'A rainy day and a hard feeling'},
- 'reg': 303}
+ 'reg': 70}

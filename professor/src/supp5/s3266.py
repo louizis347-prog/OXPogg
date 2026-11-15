@@ -216,4 +216,4 @@ SUPP = {'badge': {'desc': 'Talk about the past', 'icon': '🏘️', 'name': 'The
                     {'ans': True, 's': 'Tom used to knock on their door.', 'why': 'He says so.'}],
              'think': 'What did you use to do when you were a child? Say three things with used to.',
              'title': 'An apartment building in Dublin'},
- 'reg': 266}
+ 'reg': 33}

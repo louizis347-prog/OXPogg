@@ -187,4 +187,4 @@ SUPP = {'badge': {'desc': 'Say what the food needs', 'icon': '🧂', 'name': 'Ne
                     {'ans': True, 's': 'They add lemon.', 'why': 'A bit of lemon.'}],
              'think': 'What do you add when your food has no flavor? Salt, lemon or something else?',
              'title': 'A small kitchen in Denver'},
- 'reg': 255}
+ 'reg': 22}

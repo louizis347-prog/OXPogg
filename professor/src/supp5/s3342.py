@@ -207,4 +207,4 @@ SUPP = {'badge': {'desc': 'Review: have to, used to and advice', 'icon': '💼',
                     {'ans': True, 's': 'Bill gives Max some advice.', 'why': 'He says If I were you, I would…'}],
              'think': 'What do you have to do at work or at school? What did you use to do before?',
              'title': 'An office in Vancouver'},
- 'reg': 342}
+ 'reg': 109}

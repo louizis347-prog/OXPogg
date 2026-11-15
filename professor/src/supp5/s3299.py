@@ -204,4 +204,4 @@ SUPP = {'badge': {'desc': 'Use the passive in the present', 'icon': '🎟️', '
                     {'ans': True, 's': 'Tickets are checked at the door.', 'why': 'Ela says so.'}],
              'think': 'How are tickets sold in your city? What is allowed or not allowed at concerts?',
              'title': 'A concert near the beach in Miami'},
- 'reg': 299}
+ 'reg': 66}

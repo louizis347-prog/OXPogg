@@ -213,4 +213,4 @@ SUPP = {'badge': {'desc': 'Relative clauses without that', 'icon': '🎵', 'name
                     {'ans': False, 's': 'Bia wants to learn the song on the guitar.', 'why': 'She wants to learn it on the piano.'}],
              'think': 'What is a song everybody knows in your country? Who is the singer you like?',
              'title': 'A park in Atlanta'},
- 'reg': 298}
+ 'reg': 65}

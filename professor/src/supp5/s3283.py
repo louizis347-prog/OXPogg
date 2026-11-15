@@ -200,4 +200,4 @@ SUPP = {'badge': {'desc': 'Tell a clean-up story', 'icon': '🗑️', 'name': 'I
                     {'ans': False, 's': 'The glass was thrown into the water.', 'why': 'It was taken to a recycling centre.'}],
              'think': 'Was there a clean-up in your city? What was collected?',
              'title': 'A river in Edinburgh'},
- 'reg': 283}
+ 'reg': 50}

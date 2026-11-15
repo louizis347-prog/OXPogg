@@ -194,4 +194,4 @@ SUPP = {'badge': {'desc': 'Use yet and already', 'icon': '📚', 'name': 'Have y
                     {'ans': False, 's': 'Luisa has seen the series.', 'why': 'She has not watched it yet.'}],
              'think': 'What book or series have you finished? What haven’t you read or watched yet?',
              'title': 'A library in Dallas'},
- 'reg': 296}
+ 'reg': 63}

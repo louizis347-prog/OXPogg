@@ -186,4 +186,4 @@ SUPP = {'badge': {'desc': 'Talk about old habits and tastes', 'icon': '🥗', 'n
                     {'ans': False, 's': 'Al walks less now.', 'why': 'He walks more now.'}],
              'think': 'What food did you use to hate? Do you like it now?',
              'title': 'A green restaurant in Portland'},
- 'reg': 257}
+ 'reg': 24}

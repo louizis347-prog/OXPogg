@@ -197,4 +197,4 @@ SUPP = {'badge': {'desc': 'Return or exchange things politely', 'icon': '🧾', 
                     {'ans': False, 's': 'Clara has to pay more.', 'why': 'The price is the same.'}],
              'think': 'Do you return things to stores? How do you ask politely?',
              'title': 'A clothing store in Boston'},
- 'reg': 241}
+ 'reg': 8}

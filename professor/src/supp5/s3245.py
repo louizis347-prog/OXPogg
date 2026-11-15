@@ -220,4 +220,4 @@ SUPP = {'badge': {'desc': 'Report what people said about bills', 'icon': '🧾',
                     {'ans': True, 's': 'Her friend got her money back in two days.', 'why': 'Mia says so.'}],
              'think': 'Do you check your receipts? What do you do if there is a mistake?',
              'title': 'A store in Denver'},
- 'reg': 245}
+ 'reg': 12}

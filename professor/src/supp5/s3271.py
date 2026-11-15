@@ -200,4 +200,4 @@ SUPP = {'badge': {'desc': 'Say how long you have done something', 'icon': '📚'
                     {'ans': True, 's': 'Eli has booked a room.', 'why': 'It is in the library.'}],
              'think': 'How long have you studied English? What have you learned since you started?',
              'title': 'A classroom in Boston'},
- 'reg': 271}
+ 'reg': 38}

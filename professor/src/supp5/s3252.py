@@ -196,4 +196,4 @@ SUPP = {'badge': {'desc': 'Explain how food is made', 'icon': '🥘', 'name': 'I
                     {'ans': False, 's': 'The glasses are washed by a machine.', 'why': 'They are washed by hand.'}],
              'think': 'How is your favorite dish made? Can you explain it?',
              'title': 'A restaurant kitchen in Seattle'},
- 'reg': 252}
+ 'reg': 19}

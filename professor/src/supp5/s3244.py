@@ -205,4 +205,4 @@ SUPP = {'badge': {'desc': 'Compare prices and quality', 'icon': '⚖️', 'name'
                     {'ans': False, 's': 'The bigger backpack is cheaper.', 'why': 'It is heavier and more expensive.'}],
              'think': 'What do you compare when you shop: price, quality or brand?',
              'title': 'A store in Austin'},
- 'reg': 244}
+ 'reg': 11}

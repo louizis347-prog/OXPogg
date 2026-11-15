@@ -209,4 +209,4 @@ SUPP = {'badge': {'desc': 'Talk about past sales and prices', 'icon': '🏷️',
                     {'ans': False, 's': 'The price was seventy dollars during the sale.', 'why': 'It was fifty dollars.'}],
              'think': 'Do you wait for a sale before you buy? What did you buy last time on sale?',
              'title': 'A clothing store in Chicago'},
- 'reg': 242}
+ 'reg': 9}

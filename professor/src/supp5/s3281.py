@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Talk about the forecast', 'icon': '🌧️', 'name': 
                     {'ans': True, 's': 'The friends are going to meet on Saturday.', 'why': 'At the market.'}],
              'think': 'What is the weather going to be like this week where you live? What are you going to wear?',
              'title': 'A street in Seattle'},
- 'reg': 281}
+ 'reg': 48}

@@ -209,4 +209,4 @@ SUPP = {'badge': {'desc': 'Review: present perfect, going to and should', 'icon'
                     {'ans': True, 's': 'Kai thinks Tom should hurry.', 'why': 'The shop has sold many copies.'}],
              'think': 'What have you already done this week? What are you going to do next?',
              'title': 'A classroom in Cardiff'},
- 'reg': 346}
+ 'reg': 113}

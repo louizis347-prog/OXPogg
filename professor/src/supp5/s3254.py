@@ -195,4 +195,4 @@ SUPP = {'badge': {'desc': 'Describe food with that and who', 'icon': '📝', 'na
                     {'ans': False, 's': 'Paulo cannot take a photo.', 'why': 'Elena says of course.'}],
              'think': 'Is there a recipe that your family always makes? Who made it first?',
              'title': 'A warm kitchen in Chicago'},
- 'reg': 254}
+ 'reg': 21}

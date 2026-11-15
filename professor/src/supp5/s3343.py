@@ -204,4 +204,4 @@ SUPP = {'badge': {'desc': 'Review: relatives, passive and could', 'icon': '🏢'
                     {'ans': True, 's': 'Pets are allowed.', 'why': 'Cora says so.'}],
              'think': 'What kind of flat do you like? What questions would you ask the agent?',
              'title': 'The hall of a block of flats in Sydney'},
- 'reg': 343}
+ 'reg': 110}

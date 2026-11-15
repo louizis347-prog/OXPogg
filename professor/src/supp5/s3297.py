@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Tell a story with told', 'icon': '🗣️', 'name': '
                     {'ans': False, 's': 'Rui’s grandfather told him a story.', 'why': 'His grandmother told him.'}],
              'think': 'Which story did a family member tell you? Who told it to you?',
              'title': 'A living room in Portland'},
- 'reg': 297}
+ 'reg': 64}

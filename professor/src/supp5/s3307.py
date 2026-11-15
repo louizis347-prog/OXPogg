@@ -192,4 +192,4 @@ SUPP = {'badge': {'desc': 'Catch up with the present perfect', 'icon': '☔', 'n
                     {'ans': True, 's': 'Pam has started a new job.', 'why': 'She says it.'}],
              'think': 'How have you been this month? Where have you been? What have you done?',
              'title': 'A happy meeting in the rain'},
- 'reg': 307}
+ 'reg': 74}

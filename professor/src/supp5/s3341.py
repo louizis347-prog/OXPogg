@@ -209,4 +209,4 @@ SUPP = {'badge': {'desc': 'Review: present perfect and indirect questions', 'ico
                     {'ans': True, 's': 'Ruth has never waited long in the queue.', 'why': 'Never more than twenty minutes.'}],
              'think': 'What have you done on a trip? What would you ask a friend who lives in the city?',
              'title': 'A busy street in Toronto'},
- 'reg': 341}
+ 'reg': 108}

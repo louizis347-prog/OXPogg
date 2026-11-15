@@ -197,4 +197,4 @@ SUPP = {'badge': {'desc': 'Say what was done to a project', 'icon': '📋', 'nam
                     {'ans': False, 's': 'Fay’s report was not accepted.', 'why': 'It was accepted.'}],
              'think': 'What was finished, lost, sent or picked at school or work this week?',
              'title': 'A classroom in Portland'},
- 'reg': 277}
+ 'reg': 44}

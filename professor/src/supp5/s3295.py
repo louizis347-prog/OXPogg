@@ -195,4 +195,4 @@ SUPP = {'badge': {'desc': 'Use was written by', 'icon': '📚', 'name': 'The boo
                     {'ans': False, 's': 'Ben does not buy the book.', 'why': 'He says he will take it.'}],
              'think': 'Do you know who wrote your favorite book? Who directed your favorite film?',
              'title': 'A bookshop in Denver'},
- 'reg': 295}
+ 'reg': 62}

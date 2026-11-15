@@ -215,4 +215,4 @@ SUPP = {'badge': {'desc': 'Make small polite requests', 'icon': '🧳', 'name': 
                     {'ans': True, 's': 'Tess is helpful.', 'why': 'She says yes to every request.'}],
              'think': 'What small favors do you ask in a hotel or a shop? Do you say could?',
              'title': 'A hotel lobby in Auckland'},
- 'reg': 234}
+ 'reg': 1}

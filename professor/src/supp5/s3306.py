@@ -199,4 +199,4 @@ SUPP = {'badge': {'desc': 'Use used to and each other', 'icon': '🌳', 'name': 
                     {'ans': False, 's': 'Grace used to love coffee.', 'why': 'She used to hate coffee.'}],
              'think': 'What did you use to do with your friends? What do you do now?',
              'title': 'Friends who changed'},
- 'reg': 306}
+ 'reg': 73}

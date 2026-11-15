@@ -203,4 +203,4 @@ SUPP = {'badge': {'desc': 'Ask about distance, time and price', 'icon': '🗺️
                     {'ans': False, 's': 'Rui is staying for a week.', 'why': 'He is staying four days.'}],
              'think': 'How far is your school or work from home? How long does it take, and how much does it cost?',
              'title': 'A street in Melbourne'},
- 'reg': 237}
+ 'reg': 4}

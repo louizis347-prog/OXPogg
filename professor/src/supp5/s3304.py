@@ -196,4 +196,4 @@ SUPP = {'badge': {'desc': 'Give advice with If I were you', 'icon': '🗣️', '
                     {'ans': True, 's': 'Dan says Dean shouldn’t clean the mess.', 'why': 'He says I wouldn’t clean his mess.'}],
              'think': 'What advice would you give to a friend? Begin with: If I were you…',
              'title': 'Advice from a good friend'},
- 'reg': 304}
+ 'reg': 71}

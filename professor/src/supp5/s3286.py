@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Say what it looks like now', 'icon': '🌳', 'name': 
                     {'ans': True, 's': 'The bins were emptied this morning.', 'why': 'Yes.'}],
              'think': 'Is there a park near you? Is it clean? What was done to keep it clean?',
              'title': 'A park in Dublin'},
- 'reg': 286}
+ 'reg': 53}

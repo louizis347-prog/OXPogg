@@ -193,4 +193,4 @@ SUPP = {'badge': {'desc': 'Talk about food you tried', 'icon': '🍣', 'name': '
                     {'ans': False, 's': 'Dana likes very hot food.', 'why': 'She has never liked very hot food.'}],
              'think': 'What is the strangest food you have ever tried? Did you like it?',
              'title': 'A small restaurant in Los Angeles'},
- 'reg': 253}
+ 'reg': 20}

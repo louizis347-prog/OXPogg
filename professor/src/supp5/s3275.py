@@ -211,4 +211,4 @@ SUPP = {'badge': {'desc': 'Ask for an explanation politely', 'icon': '🙋', 'na
                     {'ans': True, 's': 'Ben writes his own sentence.', 'why': 'Yesterday I walked to the park.'}],
              'think': 'What can you say in class when you do not understand? Use Could you…?',
              'title': 'A classroom in Denver'},
- 'reg': 275}
+ 'reg': 42}

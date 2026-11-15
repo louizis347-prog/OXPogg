@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Adjust a recipe with if', 'icon': '🥄', 'name': 'If
                     {'ans': False, 's': 'Luisa will cook it for ten minutes.', 'why': 'For one more hour.'}],
              'think': 'If you change a recipe, what can happen? Is it a good or a bad idea?',
              'title': 'A kitchen in Austin'},
- 'reg': 256}
+ 'reg': 23}

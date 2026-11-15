@@ -208,4 +208,4 @@ SUPP = {'badge': {'desc': 'Explain how things work', 'icon': '🎫', 'name': 'Ar
                     {'ans': True, 's': 'Tickets are printed at the counter.', 'why': 'Dale says it.'}],
              'think': 'How are tickets sold and checked in your city? Is it the same on trains and buses?',
              'title': 'A busy station in Edinburgh'},
- 'reg': 236}
+ 'reg': 3}

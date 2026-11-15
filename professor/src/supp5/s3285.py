@@ -200,4 +200,4 @@ SUPP = {'badge': {'desc': 'Give everyday advice', 'icon': '🚰', 'name': 'We sh
                     {'ans': False, 's': 'They should water the garden at noon.', 'why': 'They shouldn’t.'}],
              'think': 'What should you do at home to use less water?',
              'title': 'A kitchen in Cardiff'},
- 'reg': 285}
+ 'reg': 52}

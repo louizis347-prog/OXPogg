@@ -196,4 +196,4 @@ SUPP = {'badge': {'desc': 'Use the passive in the past', 'icon': '🏟️', 'nam
                     {'ans': True, 's': 'The game was moved to next Saturday.', 'why': 'The club said so.'}],
              'think': 'Was a game or an event ever cancelled in your city? What was it and why?',
              'title': 'A stadium in Chicago'},
- 'reg': 292}
+ 'reg': 59}

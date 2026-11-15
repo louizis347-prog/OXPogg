@@ -209,4 +209,4 @@ SUPP = {'badge': {'desc': 'Report what a friend said', 'icon': '🗣️', 'name'
                     {'ans': False, 's': 'The company would call on Monday.', 'why': 'They would call on Friday.'}],
              'think': 'What did a friend tell you this week? Say: She told me that…',
              'title': 'News about a friend'},
- 'reg': 305}
+ 'reg': 72}

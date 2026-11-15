@@ -211,4 +211,4 @@ SUPP = {'badge': {'desc': 'Review: passive, comparatives and present perfect', '
                     {'ans': True, 's': 'The crowd is very loud.', 'why': 'It is the loudest she has heard.'}],
              'think': 'Have you ever been to a match? Which sport is more exciting for you?',
              'title': 'A stadium in Edinburgh'},
- 'reg': 347}
+ 'reg': 114}

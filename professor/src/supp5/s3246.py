@@ -210,4 +210,4 @@ SUPP = {'badge': {'desc': 'Talk about dream purchases', 'icon': '💭', 'name': 
                     {'ans': False, 's': 'Bea has no free time.', 'why': 'She would ride along the river if she had a free day.'}],
              'think': 'What would you buy if you had more money?',
              'title': 'A bike shop in Portland'},
- 'reg': 246}
+ 'reg': 13}

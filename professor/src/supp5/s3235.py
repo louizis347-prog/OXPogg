@@ -202,4 +202,4 @@ SUPP = {'badge': {'desc': 'Talk about old travel habits', 'icon': '🚂', 'name'
                     {'ans': False, 's': 'People can smoke on trains today.', 'why': 'It is not allowed now.'}],
              'think': 'What did you use to do on trips when you were a child? Is it different now?',
              'title': 'A train near the Irish coast'},
- 'reg': 235}
+ 'reg': 2}

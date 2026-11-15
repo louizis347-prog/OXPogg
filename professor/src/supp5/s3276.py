@@ -209,4 +209,4 @@ SUPP = {'badge': {'desc': 'Talk about study plans', 'icon': '🎓', 'name': 'Wan
                     {'ans': True, 's': 'Dirk wants to visit her one day.', 'why': 'He says so.'}],
              'think': 'Do you want to study or work in another place? What do you hope to do?',
              'title': 'A school yard in Dallas'},
- 'reg': 276}
+ 'reg': 43}

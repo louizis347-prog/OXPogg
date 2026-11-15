@@ -198,4 +198,4 @@ SUPP = {'badge': {'desc': 'Review: requests, offers and indirect questions', 'ic
                     {'ans': False, 's': 'Nina wants the bill before the dessert.', 'why': 'After the dessert.'}],
              'think': 'What do you say to a waiter? How do you ask politely about the menu?',
              'title': 'A restaurant in Glasgow'},
- 'reg': 348}
+ 'reg': 115}

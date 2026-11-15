@@ -204,4 +204,4 @@ SUPP = {'badge': {'desc': 'Use don’t have to with friends', 'icon': '🤝', 'n
                     {'ans': False, 's': 'Ada has to work on Sunday.', 'why': 'She doesn’t have to work on Sunday.'}],
              'think': 'What don’t you have to do on weekends? What do good friends not have to say?',
              'title': 'Friends who forgive fast'},
- 'reg': 302}
+ 'reg': 69}

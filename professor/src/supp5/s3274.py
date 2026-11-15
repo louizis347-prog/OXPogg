@@ -206,4 +206,4 @@ SUPP = {'badge': {'desc': 'Imagine a better study routine', 'icon': '⏰', 'name
                     {'ans': True, 's': 'Alma wants to be his partner.', 'why': 'She says I’ll be your partner.'}],
              'think': 'If you had one free hour every day, what would you do to study?',
              'title': 'A café patio in Austin'},
- 'reg': 274}
+ 'reg': 41}
