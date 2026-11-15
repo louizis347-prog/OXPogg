@@ -204,4 +204,4 @@ SUPP = {'badge': {'desc': 'Plan who does what', 'icon': '🪛', 'name': 'I’m g
                     {'ans': False, 's': 'Beth is going to cook dinner tomorrow.', 'why': 'Theo is going to cook.'}],
              'think': 'What are you going to do this weekend at home? Who is going to help you?',
              'title': 'A shared flat in Sydney'},
- 'reg': 263}
+ 'reg': 30}

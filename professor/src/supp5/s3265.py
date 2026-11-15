@@ -202,4 +202,4 @@ SUPP = {'badge': {'desc': 'Describe with that', 'icon': '🏠', 'name': 'A flat 
                     {'ans': False, 's': 'Mia wants a furnished flat.', 'why': 'She prefers an empty flat.'}],
              'think': 'What kind of home do you want? Use a place that…',
              'title': 'A flat in Brisbane'},
- 'reg': 265}
+ 'reg': 32}

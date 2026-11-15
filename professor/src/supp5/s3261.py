@@ -198,4 +198,4 @@ SUPP = {'badge': {'desc': 'Say what has just happened', 'icon': '📦', 'name': 
                     {'ans': False, 's': 'Gus does not want to help.', 'why': 'He carries the carpet.'}],
              'think': 'What have you just done today? Say three things with just.',
              'title': 'A new flat in Toronto'},
- 'reg': 261}
+ 'reg': 28}

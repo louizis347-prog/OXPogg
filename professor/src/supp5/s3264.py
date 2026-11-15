@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Say what was done', 'icon': '🎨', 'name': 'It was p
                     {'ans': True, 's': 'The wallpaper was chosen by the owner.', 'why': 'Cody says so.'}],
              'think': 'What was done in your home last year? Say it with was or were.',
              'title': 'A flat in Melbourne'},
- 'reg': 264}
+ 'reg': 31}

@@ -205,4 +205,4 @@ SUPP = {'badge': {'desc': 'Say how long a problem lasts', 'icon': '🚰', 'name'
                     {'ans': False, 's': 'Max has lived there for ten years.', 'why': 'He has lived there for a month.'}],
              'think': 'What problem in your home has lasted a long time? Say it with for.',
              'title': 'A flat in Vancouver'},
- 'reg': 262}
+ 'reg': 29}
