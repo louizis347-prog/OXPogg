@@ -59,15 +59,15 @@ SUPP = {'badge': {'desc': 'Used to and the present', 'icon': '🏙️', 'name': 
                                 'pt': 'Hoje todo mundo pede pela internet e fica em casa. Isso é melhor?'}],
                       'pt': 'Mais calma, sim, mas sinto falta do barulho. A gente encontrava os amigos aqui todo sábado.'},
                      {'npc': 'Maybe not. There didn’t use to be so many empty buildings, you know.',
-                      'opts': [{'en': 'True. But they’re planning a market in the old cinema next year.',
+                      'opts': [{'en': 'True. But they want to open a market in the old cinema next year.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
                                 'pt': 'Verdade. Mas vão fazer um mercado no cinema antigo no ano que vem.'},
-                               {'en': 'But they’re a the planning market old next in year. True. cinema',
+                               {'en': 'they want But open to market in cinema next a year. old True. the',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
                                 'pt': 'Verdade. Mas vão fazer um mercado no cinema antigo no ano que vem.'},
-                               {'en': 'True. But they’re planning a market the old cinema next year.',
+                               {'en': 'True. But they want to open a in the old cinema next year.',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Verdade. Mas vão fazer um mercado no cinema antigo no ano que vem.'}],
@@ -131,7 +131,7 @@ SUPP = {'badge': {'desc': 'Used to and the present', 'icon': '🏙️', 'name': 
                     'Mais calma, sim, mas sinto falta do barulho. A gente encontrava os amigos aqui todo sábado.'),
                    ('You', 'Today everyone orders online and stays at home. Is that better?', 'Hoje todo mundo pede pela internet e fica em casa. Isso é melhor?'),
                    ('Esme', 'Maybe not. There didn’t use to be so many empty buildings, you know.', 'Talvez não. Antes não havia tantos prédios vazios, sabe.'),
-                   ('You', 'True. But they’re planning a market in the old cinema next year.', 'Verdade. Mas vão fazer um mercado no cinema antigo no ano que vem.'),
+                   ('You', 'True. But they want to open a market in the old cinema next year.', 'Verdade. Mas vão fazer um mercado no cinema antigo no ano que vem.'),
                    ('Esme',
                     'Wonderful! Maybe the street will be busy again, just like it used to be.',
                     'Maravilhoso! Talvez a rua fique movimentada de novo, como era antes.')],
@@ -183,7 +183,7 @@ SUPP = {'badge': {'desc': 'Used to and the present', 'icon': '🏙️', 'name': 
                       'it’s empty.” says Esme. “Do you think the town is worse now? I find it calmer.” says Bia.',
                       '“Calmer, yes, but I miss the noise. We used to meet our friends here every Saturday.” says Esme. “Today everyone orders online and stays at home. '
                       'Is that better?” says Bia. “Maybe not. There didn’t use to be so many empty buildings, you know.” says Esme.',
-                      '“True. But they’re planning a market in the old cinema next year.” says Bia. “Wonderful! Maybe the street will be busy again, just like it used '
+                      '“True. But they want to open a market in the old cinema next year.” says Bia. “Wonderful! Maybe the street will be busy again, just like it used '
                       'to be.” says Esme. Esme takes a photo of the old cinema. Bia buys two coffees from a small stand. A bus passes with few people. They walk to the '
                       'old bakery. The rain stops, and the sky opens. Places change, but memories stay.'],
              'tf': [{'ans': True, 's': 'The street used to be full of shops.', 'why': 'Esme says it.'},
