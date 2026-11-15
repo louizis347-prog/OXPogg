@@ -69,7 +69,7 @@ P=[('Have you ever been here?', 'Boston', 'Sam', 'Ana', 'present perfect: ever/n
 ('Complaint at the hotel', 'Vancouver', 'Hana', 'Theo', 'reclamar com educação: present perfect + passado + could', 'lobby'),
 ('A lost wallet', 'London', 'Ivan', 'Ana', 'relato: passado, present perfect e reported speech simples', 'street'),
 ('Review: my life so far', 'Boston', 'Juno', 'Rui', 'revisão B1: present perfect, used to, relativas', 'living'),
-('I’ve just been promoted', 'Chicago', 'Al', 'Eva', 'present perfect: just / already (notícia de trabalho)', 'office'),
+('I’ve just got a promotion', 'Chicago', 'Al', 'Eva', 'present perfect: just / already (notícia de trabalho)', 'office'),
 ('Have you tried it yet?', 'Portland', 'Bo', 'Luisa', 'present perfect: yet / already (comida nova)', 'diner'),
 ('We haven’t met before', 'Boston', 'Cleo', 'Mia', 'present perfect negativo: haven’t / hasn’t + particípio', 'lobby'),
 ('She has lived here for ten years', 'Dublin', 'Dean', 'Paulo', 'present perfect: for / since com has', 'street'),

@@ -141,7 +141,7 @@ SUPP = {'badge': {'desc': 'Use just, already and yet', 'icon': '💼', 'name': '
          'story': 'Al e Eva estão num escritório em Chicago e falam de uma notícia de trabalho, usando o present perfect com just e already.',
          'teaser': 'Have you tried it yet?',
          'teaser_d': 'Próxima situação',
-         'title': 'I’ve just been promoted',
+         'title': 'I’ve just got a promotion',
          'vocab': [('contract', '🖊️', 'contrato'), ('salary', '💵', 'salário'), ('raise', '📈', 'aumento'), ('desk', '🪑', 'mesa de trabalho'), ('boss', '👔', 'chefe')]},
  'reading': {'chunkHunt': ['My boss has just offered me a new job.',
                            'Have you already told your family?',
