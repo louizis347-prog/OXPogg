@@ -207,4 +207,4 @@ SUPP = {'badge': {'desc': 'Talk about hobbies with that', 'icon': '🌱', 'name'
                     {'ans': True, 's': 'Earl will bring seeds.', 'why': 'He says so.'}],
              'think': 'What hobby do you enjoy? Describe it with that.',
              'title': 'A small garden in Portland'},
- 'reg': 327}
+ 'reg': 94}

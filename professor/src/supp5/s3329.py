@@ -207,4 +207,4 @@ SUPP = {'badge': {'desc': 'Tell sports events in the passive past', 'icon': 'ðŸ“
                     {'ans': False, 's': 'The referee did not smile.', 'why': 'He smiled at them.'}],
              'think': 'What big event was watched by many people? Tell the story with was/were.',
              'title': 'A stadium in Miami'},
- 'reg': 329}
+ 'reg': 96}

@@ -203,4 +203,4 @@ SUPP = {'badge': {'desc': 'Talk about game results', 'icon': '🏟️', 'name': 
                     {'ans': True, 's': 'Max has made a sign.', 'why': 'He has already made it.'}],
              'think': 'What is your favorite team? How many games has it won this season?',
              'title': 'A stadium in Chicago'},
- 'reg': 322}
+ 'reg': 89}

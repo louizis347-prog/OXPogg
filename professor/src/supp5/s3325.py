@@ -198,4 +198,4 @@ SUPP = {'badge': {'desc': 'Give training advice with should', 'icon': '🏋️',
                     {'ans': True, 's': 'Mia should take a rest day.', 'why': 'Beth says so.'}],
              'think': 'What advice would you give to a beginner at the gym?',
              'title': 'A gym in Denver'},
- 'reg': 325}
+ 'reg': 92}

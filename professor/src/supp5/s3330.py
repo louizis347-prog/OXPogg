@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Talk about music with used to', 'icon': '🎸', 'name
                     {'ans': True, 's': 'Leo’s grandfather used to play the guitar.', 'why': 'Leo says so.'}],
              'think': 'What did you use to do as a child? What have you learned recently?',
              'title': 'A music room in Houston'},
- 'reg': 330}
+ 'reg': 97}

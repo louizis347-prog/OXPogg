@@ -201,4 +201,4 @@ SUPP = {'badge': {'desc': 'Compare how people do things', 'icon': '🏃', 'name'
                     {'ans': False, 's': 'Gus can run as fast as Lena for a lap.', 'why': 'He says no way.'}],
              'think': 'Who do you know that runs faster than you? Who does things more slowly?',
              'title': 'A running track in Seattle'},
- 'reg': 323}
+ 'reg': 90}

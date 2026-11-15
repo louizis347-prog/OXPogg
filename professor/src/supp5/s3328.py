@@ -190,4 +190,4 @@ SUPP = {'badge': {'desc': 'Talk about goals with if + would', 'icon': '🎯', 'n
                     {'ans': True, 's': 'Nina invites Finn to join her group.', 'why': 'She does.'}],
              'think': 'What would you do if you had more time? What goal do you have?',
              'title': 'A running field in Atlanta'},
- 'reg': 328}
+ 'reg': 95}

@@ -206,4 +206,4 @@ SUPP = {'badge': {'desc': 'Talk about sports with -ing subjects', 'icon': '🏊'
                     {'ans': True, 's': 'Doing a little every day is a good idea.', 'why': 'Cody says so.'}],
              'think': 'Which sport is good for you? Why?',
              'title': 'A public pool in Dallas'},
- 'reg': 326}
+ 'reg': 93}

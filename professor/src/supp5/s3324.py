@@ -204,4 +204,4 @@ SUPP = {'badge': {'desc': 'Give opinions with superlatives', 'icon': '🥇', 'na
                     {'ans': False, 's': 'Rosa wants the most expensive seats.', 'why': 'She takes the cheapest.'}],
              'think': 'What is the best game or match you have ever seen? Why?',
              'title': 'A stadium in Austin'},
- 'reg': 324}
+ 'reg': 91}
