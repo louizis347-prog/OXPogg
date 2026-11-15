@@ -145,7 +145,7 @@ SUPP = {'badge': {'desc': 'Ask second conditional questions', 'icon': '❓', 'na
          'story': 'Dean e Dan, amigos em Liverpool, conversam num café e se perguntam o que fariam em situações difíceis, com What would you do if…?',
          'teaser': 'I’d travel if I had time',
          'teaser_d': 'Próxima situação',
-         'title': 'What would you do?',
+         'title': 'What would you choose?',
          'vocab': [('wallet', '👛', 'carteira'), ('owner', '🙋', 'dono'), ('police', '👮', 'polícia'), ('reward', '🎁', 'recompensa'), ('stranger', '🧍', 'desconhecido')]},
  'reading': {'chunkHunt': ['What would you do if you found a wallet?',
                            'I would take it to the police.',

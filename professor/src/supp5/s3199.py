@@ -30,7 +30,7 @@ SUPP = {'badge': {'desc': 'Review past progressive and simple past', 'icon': '�
                                 'ok': False,
                                 'pt': 'O que você fez então? Eu estava lendo, então usei meu celular.'}],
                       'pt': 'Nossa. Eu estava fazendo o jantar quando as luzes se apagaram.'},
-                     {'npc': 'I found a flashlight while my wife was lighting some candles.',
+                     {'npc': 'I found a flashlight while my wife was putting some candles on the table.',
                       'opts': [{'en': 'Smart. While the wind was blowing, a branch fell on my car.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -43,7 +43,7 @@ SUPP = {'badge': {'desc': 'Review past progressive and simple past', 'icon': '�
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Esperto. Enquanto o vento soprava, um galho caiu no meu carro.'}],
-                      'pt': 'Achei uma lanterna enquanto minha esposa acendia algumas velas.'},
+                      'pt': 'Achei uma lanterna enquanto minha esposa colocava algumas velas na mesa.'},
                      {'npc': 'Oh no! Was the thunder loud when it happened?',
                       'opts': [{'en': 'Very loud. I heard thunder and saw lightning, but nobody got hurt.',
                                 'fb': 'Natural e claro.',
@@ -132,7 +132,9 @@ SUPP = {'badge': {'desc': 'Review past progressive and simple past', 'icon': '�
                    ('You', 'I was walking home from work when the rain began.', 'Eu estava voltando do trabalho a pé quando a chuva começou.'),
                    ('Hal', 'Wow. I was cooking dinner when the lights went out.', 'Nossa. Eu estava fazendo o jantar quando as luzes se apagaram.'),
                    ('You', 'What did you do then? I was reading, so I used my phone.', 'O que você fez então? Eu estava lendo, então usei meu celular.'),
-                   ('Hal', 'I found a flashlight while my wife was lighting some candles.', 'Achei uma lanterna enquanto minha esposa acendia algumas velas.'),
+                   ('Hal',
+                    'I found a flashlight while my wife was putting some candles on the table.',
+                    'Achei uma lanterna enquanto minha esposa colocava algumas velas na mesa.'),
                    ('You', 'Smart. While the wind was blowing, a branch fell on my car.', 'Esperto. Enquanto o vento soprava, um galho caiu no meu carro.'),
                    ('Hal', 'Oh no! Was the thunder loud when it happened?', 'Ai, não! O trovão estava alto quando isso aconteceu?'),
                    ('You', 'Very loud. I heard thunder and saw lightning, but nobody got hurt.', 'Muito alto. Ouvi trovão e vi um raio, mas ninguém se machucou.'),
@@ -183,8 +185,8 @@ SUPP = {'badge': {'desc': 'Review past progressive and simple past', 'icon': '�
                       'all over the grass. His friend Marco arrives with two cups of coffee. Last night a big storm hit the city. Both men want to tell their stories.',
                       '“Marco, where were you when the storm started last night?” says Hal. “I was walking home from work when the rain began.” says Marco. “Wow. I was '
                       'cooking dinner when the lights went out.” says Hal.',
-                      '“What did you do then? I was reading, so I used my phone.” says Marco. “I found a flashlight while my wife was lighting some candles.” says Hal. '
-                      '“Smart. While the wind was blowing, a branch fell on my car.” says Marco.',
+                      '“What did you do then? I was reading, so I used my phone.” says Marco. “I found a flashlight while my wife was putting some candles on the '
+                      'table.” says Hal. “Smart. While the wind was blowing, a branch fell on my car.” says Marco.',
                       '“Oh no! Was the thunder loud when it happened?” says Hal. “Very loud. I heard thunder and saw lightning, but nobody got hurt.” says Marco. “Thank '
                       'goodness. When did the power come back?” says Hal.',
                       '“It came back at six, while I was making coffee.” says Marco. “We were lucky. The streets are still wet, but the sun is out now.” says Hal. Hal '

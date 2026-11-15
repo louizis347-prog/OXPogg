@@ -149,7 +149,7 @@ SUPP = {'badge': {'desc': 'Use who for neighbors', 'icon': '🏘️', 'name': 'P
          'story': 'Fern e Marco conversam sobre os vizinhos em uma rua de Cardiff, usando who em orações relativas para falar de pessoas da comunidade.',
          'teaser': 'The things we keep',
          'teaser_d': 'Próxima situação',
-         'title': 'People who live nearby',
+         'title': 'Neighbors who share a garden',
          'vocab': [('neighbor', '🏡', 'vizinho'),
                    ('upstairs', '🪜', 'andar de cima'),
                    ('community', '🏘️', 'comunidade'),
