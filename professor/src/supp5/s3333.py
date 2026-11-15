@@ -191,4 +191,4 @@ SUPP = {'badge': {'desc': 'Make polite requests at a bank', 'icon': '💳', 'nam
                     {'ans': False, 's': 'Eli would like to see her driver’s license.', 'why': 'He would like to see her passport.'}],
              'think': 'What would you like to ask at a bank? How can you make a request polite?',
              'title': 'A bank in Seattle'},
- 'reg': 333}
+ 'reg': 100}

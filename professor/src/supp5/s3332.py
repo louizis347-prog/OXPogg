@@ -209,4 +209,4 @@ SUPP = {'badge': {'desc': 'Talk about opening hours', 'icon': '🏦', 'name': 'O
                     {'ans': False, 's': 'New cards are sent in one day.', 'why': 'They are sent in a week.'}],
              'think': 'What time do banks open and close in your city? Is the ATM always open?',
              'title': 'A bank in Chicago'},
- 'reg': 332}
+ 'reg': 99}
