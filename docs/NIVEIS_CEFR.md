@@ -48,3 +48,15 @@
 - Gramática: 0 estruturas proibidas nos diálogos (lista `BAN` em `tools/gen/mk.py`).
 - Teste no navegador: as 350 aulas têm 44 quadros e nenhum erro.
 - Aulas acima da 233 reaproveitam os episódios do curso regular de A2 a partir do 1 (o curso tem 237 episódios); a "Cena da obra" delas repete a de aulas anteriores.
+
+## B1 (3001–3200) — conferência final
+
+- **Numeração:** o B1 usa os ids 3001–3200 e aparece no painel como "B1 · 001" a "B1 · 200". Plano em `professor/tools/plan_b1.py`; gerador `professor/tools/gen/mk.py` (função `B1`) e guia `professor/tools/gen/AGENT_GUIDE_B1.md`.
+- **Vocabulário:** 0 palavras fora da regra nos diálogos das 200 aulas (`tools/cefr_audit.py`, teto B1). Palavra B2 só entra se a própria aula a ensina.
+- **Gramática permitida (CEFR-J, leitura conservadora):** tudo do A2 mais present perfect, could, must/mustn't, have to em todas as formas, may/might, used to, passivo presente e passado, relativas definidas (who/that/which, sem pronome), 2º condicional simples, will/won't, discurso indireto simples (said/told + passado), perguntas indiretas simples, gerúndio/infinitivo, too/enough, as…as, reflexivos.
+- **Proibido (B2):** past perfect, present perfect contínuo, wish, modais perfeitos, 3º condicional, would rather, had better, be/get used to, unless, futuro contínuo/perfeito, perguntas reportadas, inversões, passivo contínuo/perfeito, whom/whose, so that, in order to (lista `BAN_B1` em `mk.py`).
+- **Títulos:** três títulos do plano foram trocados por conterem estrutura B2 (passivo contínuo, past perfect, "whose").
+- **Subtítulo da aula:** nas aulas do B1 o subtítulo é "Foco da aula" (vem do plano). Antes ele mostrava o resumo de gramática de outro episódio. O mesmo defeito existe nas aulas do A2 e ainda não foi corrigido.
+- **Teste no navegador:** as 200 aulas têm 44 quadros e nenhum erro.
+- **Obras culturais:** 200 títulos distintos, sem repetir nenhuma outra aula do projeto. Os fatos foram escritos pelo modelo e só uma amostra foi conferida; vários anos ficaram em branco por falta de certeza.
+- **Limites:** a checagem de gramática é por padrões de texto e cobre diálogo e expressões; cartões, quiz e cultura dependem da revisão dos autores das fichas. Nenhum professor revisou o conteúdo.
