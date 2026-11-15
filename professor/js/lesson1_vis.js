@@ -35,11 +35,20 @@ function person(c){var F=window.PogFace;if(!F||!F.bust)return '';var name=c.n||'
      else{torso='<path d="'+torsoPath+'" fill="'+top+'"/><path d="M-2.2 -33.6 Q0 -31.4 2.2 -33.6" stroke="'+dk+'" stroke-width=".8" fill="none"/><path d="M-5.6 -27 Q-5 -23 -4.6 -20 M5.6 -27 Q5 -23 4.6 -20" stroke="'+dk+'" stroke-width=".4" fill="none" opacity=".6"/>'}
      if(R.apron){var ap=R.apron;extra='<path d="M-4.4 -30.4 L4.4 -30.4 L5.4 -11.2 L-5.4 -11.2Z" fill="'+ap+'"/><path d="M-3.8 -30.4 L-2 -34 M3.8 -30.4 L2 -34" stroke="'+shade(ap,-.3)+'" stroke-width=".7"/><rect x="-2.5" y="-24" width="5" height="3.4" rx=".5" fill="'+shade(ap,-.2)+'"/><path d="M-5.4 -11.2 L5.4 -11.2" stroke="'+shade(ap,-.35)+'" stroke-width=".5"/>'}}
   var sl=style==='dress'||style==='jacket'||style==='shirt'?top:top,short=style==='tee'||dress||R.apron;
-  var armOf=function(sx){var sc=sx<0?top:shade(top,-.1),ey=short?-26.6:-24.2;
-    var up='<path d="M'+(sx*5.9)+' -31.4 Q'+(sx*8.9)+' -29.6 '+(sx*8.7)+' '+ey+'" stroke="'+sc+'" stroke-width="3" fill="none" stroke-linecap="round"/>';
-    var low='<path d="M'+(sx*8.7)+' '+ey+' Q'+(sx*8.9)+' -21.6 '+(sx*7.6)+' -19.8" stroke="'+(short?skin:sc)+'" stroke-width="'+(short?2.2:2.9)+'" fill="none" stroke-linecap="round"/>';
-    var pit='<path d="M'+(sx*6.3)+' -29.2 Q'+(sx*7)+' -26 '+(sx*6.3)+' -22.4" stroke="'+shade(top,-.3)+'" stroke-width=".45" fill="none" opacity=".55"/>';
-    var hand='<circle cx="'+(sx*7.6)+'" cy="-18.7" r="1.45" fill="'+skin+'"/>';return up+low+pit+hand};
+  var pose=c.pose||['rest','talk','hold','pocket','rest','talk'][(h>>6)%6];
+  var armOf=function(sx){var sc=sx<0?top:shade(top,-.1),side=sx>0,ex,ey,hx,hy,hid=false,sh=sx*6.1;
+    if(pose==='talk'&&side){ex=10.6;ey=-26.4;hx=11.2;hy=-32.6}
+    else if(pose==='wave'&&side){ex=11;ey=-30;hx=12.2;hy=-38.4}
+    else if(pose==='hold'){ex=sx*8;ey=-24.6;hx=sx*1.5;hy=-23.4}
+    else if(pose==='pocket'&&!side){ex=-9.1;ey=-25.6;hx=-5.6;hy=-20.4;hid=true}
+    else{ex=sx*8.7;ey=-25;hx=sx*7.5;hy=-19.4}
+    var tw=short?2.3:3;
+    var up='<path d="M'+sh+' -31.3 Q'+((sh+ex)/2+sx*.7)+' '+((-31.3+ey)/2-.4)+' '+ex+' '+ey+'" stroke="'+sc+'" stroke-width="3.1" fill="none" stroke-linecap="round"/>';
+    var low='<path d="M'+ex+' '+ey+' L'+hx+' '+hy+'" stroke="'+(short?skin:sc)+'" stroke-width="'+tw+'" fill="none" stroke-linecap="round"/>';
+    var cuff=short?'':'<circle cx="'+(hx*.94+ex*.06)+'" cy="'+(hy*.94+ey*.06)+'" r="1.3" fill="'+shade(sc,-.18)+'"/>';
+    var hand=hid?'':'<ellipse cx="'+hx+'" cy="'+(hy+(hy<-28?-.7:.5))+'" rx="1.25" ry="1.6" fill="'+skin+'"/><path d="M'+(hx-sx*.6)+' '+(hy-.3)+' q'+(sx*-.5)+' .9 '+(sx*-.2)+' 1.5" stroke="'+sdk+'" stroke-width=".25" fill="none" opacity=".7"/>';
+    var pit='<path d="M'+(sx*6.3)+' -29.2 Q'+(sx*7)+' -26.5 '+(sx*6.4)+' -23.6" stroke="'+shade(top,-.3)+'" stroke-width=".45" fill="none" opacity=".5"/>';
+    return up+low+cuff+pit+hand};
   arms=armOf(-1)+armOf(1);
   var neck='<rect x="-1.7" y="-36.2" width="3.4" height="3.6" fill="'+sdk+'"/>';
   var pr=c.prop||R.prop,prop=pr==='cup'?'<g transform="translate(10.2 -19.4)"><path d="M-1.9 -2 L1.9 -2 L1.4 2.6 L-1.4 2.6Z" fill="#f6f1e6" stroke="#bda98a" stroke-width=".25"/><rect x="-2.1" y="-2.6" width="4.2" height="1" rx=".4" fill="#7a4a2b"/><rect x="-1.6" y="-.8" width="3.2" height="1.1" fill="#c58a2f" opacity=".85"/></g>':pr==='phone'?'<g transform="translate(9.8 -20)"><rect x="-1.6" y="-2.6" width="3.2" height="5.2" rx=".6" fill="#2b3550"/><rect x="-1.3" y="-2.2" width="2.6" height="4.2" fill="#9cd3f0"/></g>':pr==='bag'?'<g transform="translate(10 -17)"><rect x="-2.6" y="-2.2" width="5.2" height="5.4" rx=".7" fill="#c58a2f"/><path d="M-1.5 -2.2 Q0 -4.6 1.5 -2.2" stroke="#8a5f1e" fill="none" stroke-width=".45"/></g>':'';

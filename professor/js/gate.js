@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 var KEY='pg_prof_ok',TTL=12*3600e3,SALT='pogglot-prof:';
-var H_SHA='ebaa74a1090afa77cee9bff4b8dc1b2e79b46cb9b81442c5299c15040a058c86',H_FNV='76923dbc';
+var H_SHA='09854a25d6487391f288c3b052ee1a7b0ac8e4935833ba412beafc232e463efe',H_FNV='42250072';
 function fnv(s){var h=0x811c9dc5;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0}return h.toString(16)}
 function sha(s){if(!(window.crypto&&crypto.subtle))return Promise.resolve(null);return crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return('0'+x.toString(16)).slice(-2)}).join('')})}
 function ok(){try{var t=+localStorage.getItem(KEY);return t&&Date.now()-t<TTL}catch(e){return false}}

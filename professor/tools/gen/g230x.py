@@ -1,0 +1,68 @@
+import pprint
+def O(en,pt,reply): return {'en':en,'pt':pt,'reply':reply}
+def C(en,pt,ok,fb): return {'en':en,'pt':pt,'ok':ok,'fb':fb}
+def w(f,s): open('supp5/'+f,'w',encoding='utf-8').write(s)
+X={'key':{'big':'How long does it take?','label':'Tempo e distância','sub':'Pergunte o tempo com How long does it take? e responda com It takes + tempo. Para distância, use How far is it? e It is + milhas.'},
+ 'mini':[{'who':'Bethany','en':'Can I leave {early|at three} today?','pt':'Posso sair {mais cedo|às três} hoje?'},
+         {'who':'You','en':'How long does it take to get to the {clinic?|bank?|airport?}','pt':'Quanto tempo leva para chegar {à clínica?|ao banco?|ao aeroporto?}'},
+         {'who':'Bethany','en':'It takes {twenty|ten|thirty} minutes.','pt':'Leva {vinte|dez|trinta} minutos.'},
+         {'who':'You','en':'How far is it? Is it {five|two|ten} miles?','pt':'Que distância? São {cinco|duas|dez} milhas?'}],
+ 'dlg':[{'who':'Bethany','en':'Excuse me, do you have a {minute?|moment?}','pt':'Com licença, tem um {minuto?|momento?}'},
+        {'who':'You','en':'Sure. What’s {up?|wrong?}','pt':'Claro. O que {houve?|aconteceu?}'},
+        {'who':'Bethany','en':'Can I leave {early|soon} today?','pt':'Posso sair {mais cedo|logo} hoje?'},
+        {'who':'You','en':'Is everything {okay?|fine?}','pt':'Está tudo {bem?|certo?}'},
+        {'who':'Bethany','en':'Yes, I have a {doctor’s|dentist’s} appointment.','pt':'Sim, tenho consulta com {o médico.|o dentista.}'},
+        {'who':'You','en':'What time do you need to {leave?|go?}','pt':'A que horas você precisa {sair?|ir?}'},
+        {'who':'Bethany','en':'At {three|four} o’clock.','pt':'Às {três|quatro} horas.'},
+        {'who':'You','en':'How long does it {take?|take to get there?}','pt':'Quanto tempo {leva?|leva para chegar lá?}'},
+        {'who':'Bethany','en':'It takes {twenty|thirty} minutes by car.','pt':'Leva {vinte|trinta} minutos de carro.'},
+        {'who':'You','en':'That’s fine. Finish your {report|work} first.','pt':'Tudo bem. Termine {o relatório|o trabalho} primeiro.'},
+        {'who':'Bethany','en':'I’ll finish it by two {thirty.|o’clock.}','pt':'Termino até as {duas e meia.|duas.}'}],
+ 'vocab':[{'w':'appointment','pt':'consulta, hora marcada','e':'📅','ex':['I have an appointment at three.','The appointment is on Tuesday.']},
+          {'w':'check-up','pt':'exame de rotina','e':'🩺','ex':['It is just a check-up.','I have a check-up every year.']},
+          {'w':'clinic','pt':'clínica','e':'🏥','ex':['The clinic is near my house.','She arrives at the clinic early.']},
+          {'w':'report','pt':'relatório','e':'📄','ex':['I finish the report today.','Send me the report, please.']},
+          {'w':'mile','pt':'milha','e':'🛣️','ex':['It is five miles from here.','The airport is ten miles away.']},
+          {'w':'early','pt':'cedo','e':'🌅','ex':['I leave early today.','She arrives five minutes early.']}],
+ 'molds':[{'title':'Perguntar o tempo','frame':'How long does it take to get to the {place}?','slots':[{'key':'place','opts':['clinic','office','airport']}],'model':'How long does it take to get to the clinic?','note':'How long does it take + to + verbo.'},
+          {'title':'Responder o tempo','frame':'It takes {number} minutes by {transport}.','slots':[{'key':'number','opts':['ten','twenty','thirty']},{'key':'transport','opts':['car','bus','train']}],'model':'It takes ten minutes by car.','note':'It takes + tempo + by + transporte.'},
+          {'title':'Pedir para sair','frame':'Can I leave {when}? I have a {thing}.','slots':[{'key':'when','opts':['early today','at three','tomorrow']},{'key':'thing','opts':['doctor’s appointment','meeting','class']}],'model':'Can I leave early today? I have a doctor’s appointment.','note':'Can I + verbo base, sem to.'}],
+ 'sounds':[{'say':'How long does it take?','tag':'ligação: does it','tip':'Una does e it: “dazit”. Acentue LONG e TAKE.'},
+           {'say':'It takes twenty minutes.','tag':'S final de takes','tip':'Takes termina em um S curto, sem vogal: “teiks”. Acentue TWEN-ty MIN-utes.'},
+           {'say':'Can I leave early today?','tag':'ligação: can I','tip':'Can I soa “kenai”. Acentue LEAVE e EAR-ly.'}],
+ 'role':{'turns':[{'npc':'Excuse me, do you have a minute?','opts':[O('Sure. What’s up?','Claro. O que houve?','Can I leave early today?'),O('Of course. Come in.','Claro. Entre.','Thanks. Can I leave early?'),O('Yes, I do. What do you need?','Sim, tenho. Do que precisa?','I have an appointment today.')]},
+                   {'npc':'Can I leave early today? I have a doctor’s appointment.','opts':[O('Is everything okay?','Está tudo bem?','Yes, it’s just a check-up.'),O('Sure. What time?','Claro. A que horas?','At three o’clock.'),O('Of course. Is it far?','Claro. É longe?','No, it takes twenty minutes.')]},
+                   {'npc':'It takes twenty minutes by car.','opts':[O('That’s fine. Finish your report first.','Tudo bem. Termine o relatório primeiro.','I’ll finish it by two thirty.'),O('Okay. How far is it?','Ok. Que distância é?','It’s only five miles.'),O('Great. See you tomorrow.','Ótimo. Até amanhã.','Thank you! Take care.')]},
+                   {'npc':'Thank you! See you tomorrow.','opts':[O('Take care, and tell me about it.','Se cuide, e depois me conte.','I will. Thanks!'),O('Good luck at the doctor.','Boa sorte no médico.','Thanks! See you.'),O('Okay. Drive safely.','Ok. Dirija com cuidado.','I will. Bye!')]}],
+       'change':['Você precisa sair às cinco. Peça com educação.','O trânsito está ruim. Diga quanto tempo leva agora.','Seu gerente pergunta a distância. Responda em milhas.']},
+ 'writing':{'task':'Escreva 2 ou 3 frases: quanto tempo leva e que distância é da sua casa até o trabalho ou a escola.','model':'It takes thirty minutes by bus. It is eight miles from my house. I leave at seven.','kw':['It takes','miles','minutes','leave'],'checks':['Usou It takes com um tempo.','Falou a distância em milhas.','Usou at com uma hora.']},
+ 'scenes':{'pool':['office','lobby1','hall','street'],'npc':{'g':'f','role':'colleague'},'you':{'g':'m'}},
+ 'convo':{'npc':{'name':'Bethany'},'story':'Você é o gerente. A Bethany quer sair mais cedo do trabalho.','turns':[
+   {'npc':'Excuse me, do you have a minute?','pt':'Com licença, tem um minuto?','opts':[C('Sure. What’s up?','Claro. O que houve?',True,'Aberto e simpático.'),C('I have a minute on Tuesday.','Tenho um minuto na terça.',False,'Não responde ao pedido.'),C('No minute, thanks.','Sem minuto, obrigado.',False,'Grosseiro e errado.')]},
+   {'npc':'Can I leave early today?','pt':'Posso sair mais cedo hoje?','opts':[C('Is everything okay?','Está tudo bem?',True,'Mostra cuidado.'),C('Yes, you can to leave.','Sim, você pode para sair.',False,'Depois de can não vai to.'),C('I leave early too.','Eu saio cedo também.',False,'Não combina.')]},
+   {'npc':'Yes, I have a doctor’s appointment.','pt':'Sim, tenho consulta médica.','opts':[C('What time do you need to leave?','A que horas você precisa sair?',True,'Pergunta natural.'),C('What time is the doctor of you?','Que horas é o médico de você?',False,'Forma errada.'),C('I am leaving in three.','Estou saindo em três.',False,'Não combina.')]},
+   {'npc':'At three o’clock.','pt':'Às três horas.','opts':[C('How long does it take to get there?','Quanto tempo leva para chegar lá?',True,'Usa a pergunta-chave.'),C('How much time takes there?','Quanto tempo leva lá?',False,'Use How long does it take?'),C('It is three miles of time.','São três milhas de tempo.',False,'Não faz sentido.')]},
+   {'npc':'It takes twenty minutes by car.','pt':'Leva vinte minutos de carro.','opts':[C('That’s fine. Finish your report first.','Tudo bem. Termine o relatório primeiro.',True,'Resposta clara de gerente.'),C('It take twenty minutes.','Ele leva vinte minutos.',False,'It takes leva -s.'),C('I drive a car in Tuesday.','Eu dirijo um carro na terça.',False,'Não combina.')]}]}}
+def V(v,ic,pt,note,a,b,c,d):
+    return {'v':v,'ic':ic,'pt':pt,'note':note,'forms':[{'k':'eu · você · nós · eles','en':a[0],'ex':a[1],'pt':a[2]},{'k':'ele · ela','en':b[0],'ex':b[1],'pt':b[2]},{'k':'passado','en':c[0],'ex':c[1],'pt':c[2]},{'k':'-ing','en':d[0],'ex':d[1],'pt':d[2]}]}
+Z={'verbs':[
+ V('leave','🚪','sair, deixar','Leave = sair ou deixar. Passado: left.',('leave','We leave at three.','Nós saímos às três.'),('leaves','She leaves early today.','Ela sai cedo hoje.'),('left','He left at noon.','Ele saiu ao meio-dia.'),('leaving','I am leaving now.','Eu estou saindo agora.')),
+ V('take','⏱️','levar (tempo)','Take = levar, também para tempo: It takes ten minutes. Passado: took.',('take','We take the bus.','Nós pegamos o ônibus.'),('takes','It takes twenty minutes.','Leva vinte minutos.'),('took','The trip took an hour.','A viagem levou uma hora.'),('taking','She is taking her coat.','Ela está pegando o casaco.')),
+ V('finish','🏁','terminar','Finish = terminar. Regular: finished.',('finish','We finish at five.','Nós terminamos às cinco.'),('finishes','He finishes the report.','Ele termina o relatório.'),('finished','I finished it by two.','Eu terminei até as duas.'),('finishing','She is finishing now.','Ela está terminando agora.')),
+ V('need','📌','precisar','Need = precisar. Com verbo: need to + verbo.',('need','I need a break.','Eu preciso de uma pausa.'),('needs','She needs a minute.','Ela precisa de um minuto.'),('needed','He needed help.','Ele precisou de ajuda.'),('needing','They are needing time.','Eles estão precisando de tempo.')),
+ V('arrive','🛬','chegar','Arrive = chegar a um lugar: arrive at the clinic.',('arrive','We arrive at nine.','Nós chegamos às nove.'),('arrives','She arrives early.','Ela chega cedo.'),('arrived','He arrived at three.','Ele chegou às três.'),('arriving','They are arriving now.','Eles estão chegando agora.'))],
+ 'verb_game':[{'scene':'Ontem ela saiu mais cedo.','en':'Yesterday she ___ early.','opts':['leave','left','leaving'],'ans':1,'pt':'Ontem ela saiu mais cedo.','why':'O passado de leave é left.'},
+  {'scene':'A viagem leva vinte minutos.','en':'The trip ___ twenty minutes.','opts':['take','takes','taking'],'ans':1,'pt':'A viagem leva vinte minutos.','why':'Com the trip (it), o verbo leva -s.'},
+  {'scene':'Eu terminei o relatório às duas.','en':'I ___ the report at two.','opts':['finish','finishing','finished'],'ans':2,'pt':'Eu terminei o relatório às duas.','why':'Passado regular: finished.'},
+  {'scene':'Eles estão chegando agora.','en':'They are ___ now.','opts':['arrive','arrived','arriving'],'ans':2,'pt':'Eles estão chegando agora.','why':'are + -ing: arriving.'}],
+ 'expressions':[{'en':'Do you have a minute?','pt':'Você tem um minuto?','ex':'Excuse me, do you have a minute?','exp':'Para pedir a atenção de alguém.','c':'a'},
+  {'en':'Can I leave early today?','pt':'Posso sair mais cedo hoje?','ex':'Can I leave early today? I have an appointment.','exp':'Para pedir para sair antes.','c':'b'},
+  {'en':'How long does it take?','pt':'Quanto tempo leva?','ex':'How long does it take to get there?','exp':'Para perguntar a duração.','c':'c'},
+  {'en':'It takes twenty minutes.','pt':'Leva vinte minutos.','ex':'It takes twenty minutes by car.','exp':'Para dizer a duração de um trajeto.','c':'d'},
+  {'en':'How far is it?','pt':'Que distância é?','ex':'How far is it? Only five miles.','exp':'Para perguntar a distância.','c':'a'},
+  {'en':'I’ll finish it by two thirty.','pt':'Termino até as duas e meia.','ex':'Okay. I’ll finish it by two thirty.','exp':'Para prometer um prazo.','c':'b'}],
+ 'expr_game':[{'cue':'Você quer saber a duração do trajeto.','opts':['How long does it take?','Can I leave early today?','Do you have a minute?'],'ans':0,'why':'How long does it take? pergunta a duração.'},
+  {'cue':'Você precisa sair antes do fim do dia.','opts':['How far is it?','Can I leave early today?','It takes twenty minutes.'],'ans':1,'why':'Can I leave early today? pede para sair antes.'},
+  {'cue':'Alguém pergunta a distância e são cinco milhas.','opts':['It is five miles.','I’ll finish it by two.','Do you have a minute?'],'ans':0,'why':'It is + milhas responde a distância.'}]}
+w('x230.py','"""Quest v5 aula 230 (x)."""\nX = '+pprint.pformat(X,width=170)+'\n')
+w('z230.py','"""Quest v5 aula 230 (z)."""\nZ = '+pprint.pformat(Z,width=170)+'\n')

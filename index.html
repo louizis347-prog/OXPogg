@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500..800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500..800&display=swap"></noscript>
 <link rel="stylesheet" href="css/landing.bundle.css?v=2">
 <link rel="preload" as="image" href="img/landing/episode-m.webp" fetchpriority="high">
-<link rel="stylesheet" href="css/landing-five.css?v=1"><link rel="stylesheet" href="css/landing-ld.css?v=1"><link rel="stylesheet" href="css/landing-pop.css?v=1">
+<link rel="stylesheet" href="css/landing-play.css?v=1"><link rel="stylesheet" href="css/landing-five.css?v=1"><link rel="stylesheet" href="css/landing-ld.css?v=1"><link rel="stylesheet" href="css/landing-pop.css?v=1">
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -29,7 +29,7 @@
 <header class="top">
   <div class="wrap">
     <a class="logo" href="./" aria-label="Pogglot, início"><span class="logo-fb"><span class="logo-pog" aria-hidden="true"></span><span>Pogg<b>lot</b></span></span></a>
-    <nav class="nav" id="mainNav" aria-label="Seções"><a href="#experiencias">Cinco jeitos</a><a href="#ao-vivo" class="live">Aula ao vivo</a><a href="#conexao">Jornada</a><a href="#tutorial">Por dentro</a><a href="#idiomas">Idiomas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a></nav>
+    <nav class="nav" id="mainNav" aria-label="Seções"><a href="#experiencias">Cinco jeitos</a><a href="#ao-vivo" class="live">Aula ao vivo</a><a href="#painel-professor" class="live">Painel do Professor</a><a href="#jogar">Jogue agora</a><a href="#conexao">Jornada</a><a href="#tutorial">Por dentro</a><a href="#idiomas">Idiomas</a><a href="#planos">Planos</a><a href="#perguntas">Perguntas</a></nav>
     <div class="right"><a class="btn primary" href="app.html">Começar grátis</a></div>
   </div>
 </header>
@@ -144,6 +144,14 @@
     <div class="acts" style="justify-content:center;margin-top:22px"><a class="btn primary lg sun" href="aula-ao-vivo.html">Ver todos os horários</a></div>
   </div>
 </section>
+<section class="sec" id="painel-professor" aria-labelledby="pp-h">
+  <div class="wrap">
+    <div class="sh c"><span class="eyebrow">Para quem ensina</span><h2 id="pp-h">Painel do <em>Professor</em></h2>
+    <p>As aulas ao vivo já prontas para conduzir: roteiro do professor, plano de 1h30 e de 1h, tabela de erros comuns, vocabulário e referência cultural em cada aula.</p></div>
+    <ul class="av-info"><li>📘 A1 · 500 aulas</li><li>📗 A2 · 500 aulas</li><li>📙 B1 · em construção</li><li>⏱ Versões de 1h30 e 1h</li></ul>
+    <div class="acts" style="justify-content:center;margin-top:22px"><a class="btn primary lg sun" href="professor/">Abrir o Painel do Professor</a></div>
+  </div>
+</section>
 
 <!-- TUTORIAL -->
 <section class="sec tut" id="tutorial" aria-labelledby="tut-h">
@@ -167,6 +175,13 @@
   </div>
 </section>
 
+<section class="sec" id="jogar" aria-labelledby="jg-h">
+  <div class="wrap">
+    <div class="sh c"><span class="eyebrow">Jogue agora · sem cadastro</span><h2 id="jg-h">Aprender aqui é <em>jogar</em></h2>
+    <p>Ganhe moedas, monte sequências e conquiste a figurinha. Este é um mini episódio de verdade: toque e jogue em 1 minuto.</p></div>
+    <div id="pgRoot"></div>
+  </div>
+</section>
 <!-- NIVEIS COM A PROFESSORA -->
 <section class="sec prof" id="niveis" aria-labelledby="prof-h">
   <div class="wrap">
@@ -316,7 +331,7 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
   try{var lg=q('.logo-fb');if(lg)lg.outerHTML=HomeArt.logo({size:42})}catch(e){}
 })();
 </script>
-<script src="js/landing-pro.js?v=2"></script><script src="js/landing-wow.js?v=1"></script>
+<script src="js/landing-play.js?v=1"></script><script src="js/landing-pro.js?v=2"></script><script src="js/landing-wow.js?v=1"></script>
 <script>
 (function(){
   var links=[].slice.call(document.querySelectorAll('#mainNav a')),map={};
@@ -330,5 +345,5 @@ D.forEach(function(d,i){var b=document.createElement('button');b.type='button';b
       return '<a class="av-card" style="--c:'+g.accent+'" href="aula-ao-vivo.html#'+g.id+'"><span class="fl">'+g.icon+'</span><small>'+g.teaches+' · '+g.audience+'</small><h3>'+g.title+'</h3><p>'+g.blurb+'</p><div class="av-next">Toda '+days+' <em style="font-style:normal;opacity:.8">(Brasília)</em>'+(n?'<br>Próxima: <b>'+f(n,{weekday:'short',day:'2-digit',month:'short'})+' · '+f(n,{hour:'2-digit',minute:'2-digit'})+'</b>':'')+'</div><span class="av-go">Reservar horário →</span></a>'}).join('')}).catch(function(){document.getElementById('avGrid').innerHTML='<p class="lead" style="grid-column:1/-1;text-align:center"><a href="aula-ao-vivo.html">Ver a agenda de aulas ao vivo</a></p>'});
 })();
 </script>
-<script src="js/poggie-chat.js?v=1"></script></body>
+<script src="js/poggie-chat.js?v=2"></script></body>
 </html>
