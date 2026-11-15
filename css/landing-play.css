@@ -56,3 +56,8 @@
 @keyframes pgconf{to{transform:translateY(520px) rotate(540deg);opacity:.2}}
 @media(prefers-reduced-motion:reduce){#jogar .pg *{animation:none!important;transition:none!important}}
 [data-theme="dark"] #jogar .pg{background:#fff;color:#0E2F3A}
+
+/* Sem rolagem lateral na landing */
+html,body{overflow-x:clip;max-width:100%}
+.hero2{overflow:clip}
+.top .wrap{flex-wrap:nowrap;min-width:0}.top .nav{min-width:0}.top .right{flex:none}
