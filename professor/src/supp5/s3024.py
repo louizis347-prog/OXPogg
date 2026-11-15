@@ -143,7 +143,7 @@ SUPP = {'badge': {'desc': 'Use the passive for routines and notices', 'icon': '�
          'story': 'Ruth e Marco conversam sobre a rotina e os avisos da loja usando o passivo.',
          'teaser': 'Who painted this?',
          'teaser_d': 'Próxima situação',
-         'title': 'The shop is being fixed',
+         'title': 'The shop was fixed',
          'vocab': [('shelf', '🗄️', 'prateleira'), ('customer', '🛍️', 'cliente'), ('sign', '🪧', 'aviso'), ('sale', '🏷️', 'liquidação'), ('notice', '📄', 'aviso escrito')]},
  'reading': {'chunkHunt': ['The windows were cleaned this morning.',
                            'Is the floor cleaned every day?',

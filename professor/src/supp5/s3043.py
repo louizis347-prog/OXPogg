@@ -147,7 +147,7 @@ SUPP = {'badge': {'desc': 'Report finished things with said and told', 'icon': '
          'story': 'A Zoe chega à escola em Perth e o Roy conta o que a professora disse sobre as provas, usando said e told com o passado simples.',
          'teaser': 'Do you know where it is?',
          'teaser_d': 'Próxima situação',
-         'title': 'She said she had finished',
+         'title': 'She said she finished',
          'vocab': [('project', '📁', 'projeto'),
                    ('test', '📝', 'prova'),
                    ('essay', '✍️', 'redação'),
