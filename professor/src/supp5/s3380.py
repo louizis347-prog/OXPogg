@@ -18,15 +18,15 @@ SUPP = {'badge': {'desc': 'Superlative + relative clause', 'icon': '👜', 'name
                                 'pt': 'É bonita, mas não é a melhor que eu já vi.'}],
                       'pt': 'Olha, Clara! Esta é a bolsa mais barata que encontrei no shopping inteiro.'},
                      {'npc': 'Really? Which is the best bag that you have seen today?',
-                      'opts': [{'en': 'The red one in the window. It is the prettiest thing that I have seen all week.',
+                      'opts': [{'en': 'The red one in the window. It is the nicest thing that I have seen all week.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
                                 'pt': 'A vermelha da vitrine. É a coisa mais bonita que vi a semana toda.'},
-                               {'en': 'in the thing red all have I week. one window. seen is It the prettiest that The',
+                               {'en': 'in the thing red all have I week. one window. seen is It the nicest that The',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
                                 'pt': 'A vermelha da vitrine. É a coisa mais bonita que vi a semana toda.'},
-                               {'en': 'The red one in the window. It is prettiest thing that I have seen all week.',
+                               {'en': 'The red one in the window. It is nicest thing that I have seen all week.',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'A vermelha da vitrine. É a coisa mais bonita que vi a semana toda.'}],
@@ -144,7 +144,7 @@ SUPP = {'badge': {'desc': 'Superlative + relative clause', 'icon': '👜', 'name
                    ('You', 'It is nice, but it is not the best one that I have seen.', 'É bonita, mas não é a melhor que eu já vi.'),
                    ('Bo', 'Really? Which is the best bag that you have seen today?', 'Sério? Qual é a melhor bolsa que você viu hoje?'),
                    ('You',
-                    'The red one in the window. It is the prettiest thing that I have seen all week.',
+                    'The red one in the window. It is the nicest thing that I have seen all week.',
                     'A vermelha da vitrine. É a coisa mais bonita que vi a semana toda.'),
                    ('Bo',
                     'But it is the most expensive one that this shop sells. It costs ninety dollars.',
@@ -206,7 +206,7 @@ SUPP = {'badge': {'desc': 'Superlative + relative clause', 'icon': '👜', 'name
                       'good price. They have all afternoon.',
                       '“Look, Clara! This is the cheapest bag that I found in the whole mall.” says Bo. “It is nice, but it is not the best one that I have seen.” says '
                       'Clara. “Really? Which is the best bag that you have seen today?” says Bo.',
-                      '“The red one in the window. It is the prettiest thing that I have seen all week.” says Clara. “But it is the most expensive one that this shop '
+                      '“The red one in the window. It is the nicest thing that I have seen all week.” says Clara. “But it is the most expensive one that this shop '
                       'sells. It costs ninety dollars.” says Bo. “True. It is the most beautiful bag that I have ever looked at, but too expensive for me.” says Clara.',
                       '“Then take the cheap one. It is the lightest bag that they have, and the strongest.” says Bo. “Is it the strongest? That is the most useful thing '
                       'that you have said today.” says Clara. “Ha! It is also the one that most people buy in this mall.” says Bo.',
