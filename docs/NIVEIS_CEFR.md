@@ -60,3 +60,11 @@
 - **Teste no navegador:** as 200 aulas têm 44 quadros e nenhum erro.
 - **Obras culturais:** 200 títulos distintos, sem repetir nenhuma outra aula do projeto. Os fatos foram escritos pelo modelo e só uma amostra foi conferida; vários anos ficaram em branco por falta de certeza.
 - **Limites:** a checagem de gramática é por padrões de texto e cobre diálogo e expressões; cartões, quiz e cultura dependem da revisão dos autores das fichas. Nenhum professor revisou o conteúdo.
+
+## B1 (3201–3350) e correção do subtítulo do A2 — conferência final
+
+- **B1 3201–3350 (150 aulas, blocos temáticos):** diálogos com 0 palavras fora da regra B1 (`tools/cefr_audit.py`) e sem estruturas B2. Duas aulas tiveram uma palavra B2 trocada (3285 "saving", 3312 "dyed"). 350 títulos de aula distintos no B1 e 350 obras distintas, sem coincidir com A1 nem A2.
+- **Índice do episódio de apoio:** a partir da aula 3234 o índice recomeça do início (o conjunto de apoio tem 233 entradas válidas); isso só afeta a cena de apoio, a obra e o título de cada aula são próprios.
+- **Subtítulo das aulas do A2 (2001–2500):** passou a ser "Foco da aula" (vem de `tools/plan_a2.py`). Antes mostrava o resumo de gramática de outro episódio. A mudança expôs 3 aulas A2 cujos diálogos tinham uma palavra B1 que só "passava" na auditoria por constar nesse subtítulo errado (2001 "sports", 2061 "charge", 2081 "pounds"). As três palavras agora são ensinadas na tela de apoio da própria aula (`src/support_words.json`).
+- **Teste no navegador:** 500 aulas do A2 e 350 do B1, todas com 44 quadros e nenhum erro.
+- **Limites:** checagem de gramática por padrões de texto (diálogo e expressões); cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco por falta de certeza. Nenhum professor revisou o conteúdo.
