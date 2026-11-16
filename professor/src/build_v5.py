@@ -19,6 +19,7 @@ def _focus(f, base):
         return {base + i + 1: r[4] for i, r in enumerate(m.P)}
     except Exception: return {}
 FOCUS_B1 = _focus('plan_b1.py', 3000)
+FOCUS_A2 = {n: f for n, f in _focus('plan_a2.py', 2000).items() if n <= 2500}
 try: OBRAS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras.json'), encoding='utf-8'))
 except OSError: OBRAS = {}
 level_of = lambda n: 'B1' if n >= 3000 else 'A2' if n >= 2000 else 'A1'
@@ -165,6 +166,7 @@ def build(n):
     n0 = n % 1000 if n >= 1000 else n
     S = supp(n); en, nb = (EN3 if n >= 3000 else EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
     if n in FOCUS_B1: en = dict(en, s='Foco da aula: ' + FOCUS_B1[n])
+    elif n in FOCUS_A2: en = dict(en, s='Foco da aula: ' + FOCUS_A2[n])
     if str(n) in OBRAS:  # referência cultural própria da aula (src/obras.json): não repete a obra do episódio regular
         ob = OBRAS[str(n)]; en = dict(en); en['a'] = dict(en.get('a', {}), w=ob['w'], y=ob.get('y', ''), d=ob['d'])
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]

@@ -149,7 +149,7 @@ SUPP = {'badge': {'desc': 'Review the whole B1 block', 'icon': '🎓', 'name': '
          'sc': 'classroom',
          'story': 'Bea e Nina olham para trás no fim do curso B1 em Chicago e revisam tudo o que aprenderam: present perfect, used to, 2º condicional, passivo, discurso '
                   'indireto e perguntas indiretas.',
-         'teaser': 'Próxima etapa',
+         'teaser': 'My first week as a nurse',
          'teaser_d': 'Próxima situação',
          'title': 'Looking back at B1',
          'vocab': [('progress', '📈', 'progresso'),
