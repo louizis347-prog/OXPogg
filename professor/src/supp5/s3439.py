@@ -209,8 +209,8 @@ SUPP = {'badge': {'desc': 'Reported speech with said + would', 'icon': '📞', '
              'scan': [{'alt': ['air conditioner'], 'ans': 'the air conditioner', 'q': 'What broke last week?'},
                       {'alt': ['Monday'], 'ans': 'on Monday', 'q': 'When did the technician say the parts would arrive?'},
                       {'alt': ['fan'], 'ans': 'a fan', 'q': 'What does Paulo buy?'}],
-             'text': ['It is a very hot afternoon in Miami. Paulo walks into a big hardware store. His air conditioner has been broken for a week. He meets his friend '
-                      'Eli near the fans. Eli is buying a box of light bulbs. Paulo tells him the whole story.',
+             'text': ['It is a very hot afternoon in Miami. Paulo walks into a big hardware store. His air conditioner broke a week ago. He meets his friend Eli near '
+                      'the fans. Eli is buying a box of light bulbs. Paulo tells him the whole story.',
                       '“Paulo, what are you doing at the hardware store? You look worried.” says Eli. “My air conditioner broke last week. The technician said he would '
                       'come on Tuesday.” says Paulo. “And did he come? The weather is terrible these days.” says Eli.',
                       '“No. He called and said the parts would arrive on Monday. Then he said Friday.” says Paulo. “That is annoying. Did he tell you that the repair '
