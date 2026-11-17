@@ -99,3 +99,11 @@
 - **Checagem de estruturas acima do nível fora do diálogo:** os achados restantes são exemplos errados propositais dos exercícios ("It is say that…") e frases embaralhadas.
 - **Regras do validador corrigidas durante o B2:** "suggested that we could…" e "It is said/announced that…" (passivo de relato) são B2; só o subjuntivo formal e as clivadas verdadeiras ("It was Anna that…") são C1.
 - **Limites:** checagem de gramática por padrões de texto; cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco. Nenhum professor revisou o conteúdo. Ver também a avaliação de qualidade (diálogos "de manual", A2 raso) no relatório da sessão.
+
+## B2 (4171–4200) — mais 30 aulas: B2 com 200 aulas
+
+- **Aulas 4171–4200:** estudos e aprendizagem, meio ambiente e hábitos, consumo e mídia, com revisão final do bloco. Total do B2: 200 aulas (4001–4200), mostradas como "B2 · 001" a "B2 · 200".
+- **Melhorias de qualidade aplicadas a este lote** (a partir da avaliação da sessão): a estrutura-alvo aparece em 5–7 falas, o restante é conversa natural; mais variação de registro; obras com ligação real ao tema; títulos de obra normalizados ("The/A", apóstrofos) antes de checar repetição.
+- **Vocabulário:** 0 palavras fora da regra B2 nos diálogos. Sem estruturas acima do nível (C1) em nenhum campo das 30 aulas.
+- **Teste no navegador:** as 30 aulas têm 44 quadros e nenhum erro. 200 títulos de aula distintos no B2; as 30 obras novas não repetem nenhuma outra do projeto.
+- **Limites:** checagem de gramática por padrões de texto; fatos das obras e traduções em português não verificados; nenhum professor revisou o conteúdo.
