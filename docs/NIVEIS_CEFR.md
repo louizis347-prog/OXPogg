@@ -68,3 +68,13 @@
 - **Subtítulo das aulas do A2 (2001–2500):** passou a ser "Foco da aula" (vem de `tools/plan_a2.py`). Antes mostrava o resumo de gramática de outro episódio. A mudança expôs 3 aulas A2 cujos diálogos tinham uma palavra B1 que só "passava" na auditoria por constar nesse subtítulo errado (2001 "sports", 2061 "charge", 2081 "pounds"). As três palavras agora são ensinadas na tela de apoio da própria aula (`src/support_words.json`).
 - **Teste no navegador:** 500 aulas do A2 e 350 do B1, todas com 44 quadros e nenhum erro.
 - **Limites:** checagem de gramática por padrões de texto (diálogo e expressões); cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco por falta de certeza. Nenhum professor revisou o conteúdo.
+
+## B1 (3351–3500) — conferência final: B1 completo com 500 aulas
+
+- **Aulas 3351–3500 (150 aulas, blocos temáticos):** redes sociais, festas, compras online, banco, transporte, hotel, restaurante, saúde, casa, hobbies, natureza, cidades, história, pessoas e revisões. Total do B1: 500 aulas (3001–3500), mostradas como "B1 · 001" a "B1 · 500".
+- **Vocabulário:** 0 palavras fora da regra B1 nos diálogos das 150 aulas (`tools/cefr_audit.py`). Sem estruturas B2 nos diálogos (`BAN_B1`).
+- **Teste no navegador:** as 150 aulas têm 44 quadros e nenhum erro.
+- **Títulos e obras:** 500 títulos de aula e 500 obras distintos no B1, sem coincidir com A1 ou A2.
+- **Índice do episódio de apoio:** `reg` recomeça a cada 233 (módulo), só para a cena de apoio; título e obra de cada aula são próprios.
+- **Varredura de B2 fora do diálogo (cartões, quiz, cultura):** os achados restantes são exemplos ERRADOS propositais dos exercícios ("If I would have money…", "She said she was being hungry"), pergunta com *whose* (não é relativa) e frases em ordem embaralhada. "Wish you were here" (3367) e algumas notas culturais com *wish* como substantivo ficaram como informação cultural.
+- **Limites:** checagem de gramática por padrões de texto; cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco por falta de certeza. Nenhum professor revisou o conteúdo.
