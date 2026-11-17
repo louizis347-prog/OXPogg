@@ -26,9 +26,9 @@ window.RL_REGISTER=function(R,A){
   '<path d="M0 0h800v450H0z" fill="none" stroke="#2b1d3a" stroke-width="12"/></svg></div>'}
  function intro(text){return '<p class="q1-intro">'+H(text||'')+'</p>'}
  function card(inner,extra){return '<div class="q1-card '+(extra||'')+'">'+inner+'</div>'}
- var QX=null;try{fetch('../data/v4/vocabx.json').then(function(r){return r.json()}).then(function(j){QX=j}).catch(function(){})}catch(e){}
+ var QX=null;try{fetch('data/v4/vocabx.json').then(function(r){return r.json()}).then(function(j){QX=j}).catch(function(){})}catch(e){}
  function slug1(w){return String(w).toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
- function vphoto(w){return '<span class="q1-vocab-icon q1-vph" data-i="'+H(String(w).charAt(0).toUpperCase())+'"><img class="q1-vphoto" src="../img/livro/palavras/'+slug1(w)+'.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add(\'nophoto\');this.remove()"></span>'}
+ function vphoto(w){return '<span class="q1-vocab-icon q1-vph" data-i="'+H(String(w).charAt(0).toUpperCase())+'"><img class="q1-vphoto" src="img/livro/palavras/'+slug1(w)+'.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add(\'nophoto\');this.remove()"></span>'}
  function vmeta(w){var e=QX&&QX[String(w).toLowerCase()];if(!e)return '';var bits=[];if(e.p)bits.push('<i>'+H(e.p)+'</i>');if(e.i)bits.push('<span class="q1-ipa">'+H(e.i)+'</span>');return bits.length?'<small class="q1-meta">'+bits.join(' · ')+'</small>':''}
  function vocabIcon(word){var shapes={
   coffee:'<path d="M10 24h23l-3 18H13z" fill="#b7775e"/><path d="M10 24h23"/><path d="M18 18c-5-6 5-7 0-13m9 13c-5-6 5-7 0-13"/>',
@@ -40,7 +40,7 @@ window.RL_REGISTER=function(R,A){
   return '<svg viewBox="0 0 48 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g stroke="#2b1d3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">'+(shapes[word]||shapes.cup)+'</g></svg>'}
  function quiz(root,items){var index=0,correct=0;
   function draw(){if(index>=items.length){root.innerHTML=card('<b class="q1-complete">'+correct+' / '+items.length+' · concluído</b><p>Explique uma resposta com suas próprias palavras.</p>');A.mark();return}
-   var q=items[index];root.innerHTML='<div class="q1-progress">Pergunta '+(index+1)+' de '+items.length+'</div>'+card((q.img?'<img class="q1-qimg" src="../img/livro/'+H(q.img)+'" alt="">':'')+'<h3>'+H(q.q||q.s)+'</h3><div class="q1-options">'+
+   var q=items[index];root.innerHTML='<div class="q1-progress">Pergunta '+(index+1)+' de '+items.length+'</div>'+card((q.img?'<img class="q1-qimg" src="img/livro/'+H(q.img)+'" alt="">':'')+'<h3>'+H(q.q||q.s)+'</h3><div class="q1-options">'+
     q.opts.map(function(o,i){return '<button type="button" data-answer="'+i+'">'+H(o)+'</button>'}).join('')+'</div><p class="q1-feedback" role="status"></p><button type="button" class="q1-next-item" hidden>Próxima pergunta →</button>');
    all(root,'[data-answer]').forEach(function(btn){btn.onclick=function(e){var ok=+btn.dataset.answer===q.ans;if(ok)correct++;A.gain(ok?8:0,ok,e);
     all(root,'[data-answer]').forEach(function(x){x.disabled=true;x.classList.toggle('right',+x.dataset.answer===q.ans)});
