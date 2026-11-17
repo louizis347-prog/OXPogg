@@ -31,6 +31,6 @@ Resumo dos avisos:
 - obra repetida em N aulas: 400 aulas
 - obra com ligação fraca com o tema (heurística): 238 aulas
 - obra sem ano: 225 aulas
-- estrutura “…” em N de N falas: 202 aulas
+- estrutura “…” em N de N falas: 117 aulas
 - falas curtas (média < N palavras): 112 aulas
 - muitas falas com até N palavras: 21 aulas
