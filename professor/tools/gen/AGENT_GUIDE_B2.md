@@ -31,3 +31,10 @@ Acrescente em `d` a chave `obra=('Título','ANO','Nota em português')`. Nunca r
 
 ## Entrega
 Quando todas as suas aulas estiverem `ok` sem avisos (rode de novo todas no fim), responda com UMA linha: `lote 40XX–40YY ok` (e, se algo ficou com ressalva — estrutura adaptada, palavra trocada —, diga qual aula e por quê). Escreva e valide em lotes pequenos (3–4 fichas por comando) e não releia arquivos grandes sem necessidade.
+
+## ADENDO (aulas 4101–4170)
+- O plano agora tem 170 linhas (`/tmp/b2/planb2.py`); `B2(k,d)` com k = NN − 4000 (101…170). Modelos B2 já validados: `/tmp/gen/g4003.py`, `/tmp/gen/g4045.py`, `/tmp/gen/g4086.py` (leia um inteiro). Siga tudo do guia.
+- O validador agora reconhece formas irregulares de verbos conhecidos (chosen, spoke, flown, forgotten, rang…) e aceita "It is said/believed/thought that…" e "suggested that we could…". NÃO troque essas palavras por equivalentes artificiais só para agradar o validador: prefira a forma natural e rode ./chk.sh.
+- "can’t", "won’t", "cannot" e nomes comuns não reconhecidos (Sofia, Helen, Sam…) ainda podem ser acusados como CEFR?: use "can not/will not" em forma por extenso só se não houver outra frase natural, ou ensine a palavra em `gl`/`ex`; para nomes, use os do plano.
+- Mantenha o texto de leitura/cultura B2: nada de estruturas C1 (inversões, clivadas, subjuntivo formal, particípio perfeito, futuro perfeito contínuo).
+- Abertura (O) e fecho (C): 6 pares sempre que o texto de leitura permitir; não reduza para 5 sem necessidade.
