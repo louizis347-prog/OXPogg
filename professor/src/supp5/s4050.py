@@ -157,7 +157,7 @@ SUPP = {'badge': {'desc': 'Combine must / can’t / might have', 'icon': '🔎',
                     'The seagull! A seagull might have stolen it. They love shiny things, and the door was open all afternoon.',
                     'A gaivota! Uma gaivota pode ter roubado. Elas adoram coisas brilhantes, e a porta ficou aberta a tarde toda.'),
                    ('Esme',
-                    'That’s it. It can’t have flown far. Let’s check the roof and the garden below.',
+                    'That’s it. It can’t have gone far. Let’s check the roof and the garden below.',
                     'É isso. Ela não pode ter ido longe. Vamos olhar o telhado e o jardim lá embaixo.')],
          'mission': 'Combinar must have, can’t have e might have para deduzir.',
          'npc': 'Esme',
@@ -204,9 +204,8 @@ SUPP = {'badge': {'desc': 'Combine must / can’t / might have', 'icon': '🔎',
              'scan': [{'alt': ['bracelet'], 'ans': 'the bracelet', 'q': 'What has disappeared?'},
                       {'alt': ['glitter'], 'ans': 'glitter', 'q': 'What is on the carpet?'},
                       {'alt': ['seagull'], 'ans': 'a seagull', 'q': 'Who might have stolen it?'}],
-             'text': ['It is a windy afternoon in Brighton, and the sea is grey. Clara lives in a small flat near the beach. Today she is on her knees looking for '
-                      'something precious. Her friend Esme arrives with a bag of pastries. She sees the mess and starts to ask questions. Together they try to solve the '
-                      'mystery.',
+             'text': ['It is a windy afternoon in Brighton. Clara lives in a small flat near the beach. Today she looks for something precious. Her friend Esme arrives '
+                      'with pastries. She sees the mess and starts to ask questions. Together they try to solve the mystery.',
                       '“Clara, why are you searching under the sofa? You look like a detective with a difficult case.” says Esme. “My grandmother’s bracelet has '
                       'disappeared. I left it on the shelf, so someone must have moved it.” says Clara. “It can’t have been the cat. She never goes near that shelf, and '
                       'the bracelet is quite heavy.” says Esme.',
@@ -217,9 +216,9 @@ SUPP = {'badge': {'desc': 'Combine must / can’t / might have', 'icon': '🔎',
                       'glitter on the carpet. It must have come off the bracelet.” says Clara. “And a trail of glitter leads to the balcony. Something must have carried '
                       'it outside.” says Esme.',
                       '“The seagull! A seagull might have stolen it. They love shiny things, and the door was open all afternoon.” says Clara. “That’s it. It can’t have '
-                      'flown far. Let’s check the roof and the garden below.” says Esme. On the roof next door, they find the bracelet near a nest. It is a little '
-                      'dirty, but it is not broken. Clara thanks the seagull, who is watching from a chimney. Esme laughs and takes a photo. The friends sit on the '
-                      'balcony and eat the pastries. A small mystery makes a good afternoon.'],
+                      'gone far. Let’s check the roof and the garden below.” says Esme. On the roof next door, they find the bracelet near a nest. It is dirty, but not '
+                      'broken. Clara thanks the seagull. Esme laughs and takes a photo. The friends sit on the balcony and eat the pastries. A small mystery makes a '
+                      'good afternoon.'],
              'tf': [{'ans': True, 's': 'The cat can’t have taken the bracelet.', 'why': 'Esme says it.'},
                     {'ans': False, 's': 'The cleaner touched the bracelet.', 'why': 'She can’t have touched it.'},
                     {'ans': True, 's': 'A trail of glitter leads to the balcony.', 'why': 'Esme sees it.'},

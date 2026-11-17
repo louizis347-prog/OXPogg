@@ -28,7 +28,7 @@ BAN_B2=[(r"\b(hardly|scarcely|barely) (had|have|did|does|do)\b","inversão (C1)"
  (r"(^|[.!?]\s*)(Had|Should) (I|you|he|she|it|we|they) \w+[^?]*,","condicional invertido (C1)"),(r"\bif (i|you|he|she|it|we|they) were to\b","were to (C1)"),
  (r"\b(suggest|insist|recommend|demand|propose|request)(ed|s)? that (i|you|he|she|we|they|it) (be|go|do|come|take|have|make|stay|leave|wait|see|get|pay|sign|attend)\b","subjuntivo formal (C1)"),(r"\bhaving (been|finished|done|seen|made|taken|read|left|gone|eaten|written|spent|lost|decided)\b","particípio perfeito (C1)"),
  (r"\bwill have been \w+ing\b","futuro perfeito contínuo (C1)"),(r"\b(what|all) (i|we|you|he|she|they) (need|want|mean|meant|did|do|wanted|needed)(s)? (is|was)\b","oração clivada (C1)"),
- (r"\bit (is|was) (not )?\w+ (that|who) ","oração clivada (C1)"),(r"\b(be|get|become|grow) accustomed to\b|\bhad it not been\b|\bbut for\b","estrutura C1")]
+ (r"\bit (is|was) (not )?(?!said|believed|thought|known|reported|expected|claimed|rumou?red|estimated|understood|assumed|likely|clear|true|possible|important|obvious|certain|surprising|strange|a pity|a shame)\w+ (that|who) ","oração clivada (C1)"),(r"\b(be|get|become|grow) accustomed to\b|\bhad it not been\b|\bbut for\b","estrutura C1")]
 def grammar_check(k,texts,b1=False):
     return _gc(k,texts,BAN_B2 if b1=='b2' else BAN_B1 if b1 else BAN)
 def _gc(k,texts,BAN):
