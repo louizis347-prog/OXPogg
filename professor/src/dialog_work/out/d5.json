@@ -2464,5 +2464,690 @@
    "What about flashcards? Do I have to write one for every single date?",
    "You're right. I'll stretch, grab some water, and review my notes again tomorrow morning when my head is clear."
   ]
+ },
+ "3302": {
+  "lines": [
+   {
+    "en": "Honestly, you don't have to apologize for missing my party.",
+    "pt": "Sinceramente, você não precisa se desculpar por ter perdido minha festa.",
+    "sw_en": "Honestly, you don't have to apologize for missing my {party|dinner|wedding}.",
+    "sw_pt": "Sinceramente, você não precisa se desculpar por ter perdido {minha festa|meu jantar|meu casamento}."
+   },
+   {
+    "en": "I feel terrible. I had to work late, and my phone died, so I couldn't even text you.",
+    "pt": "Me sinto péssima. Tive que trabalhar até tarde e meu celular morreu, então nem consegui te mandar mensagem.",
+    "sw_en": "I feel terrible. I had to work late, and my {phone|battery|laptop} died, so I couldn't even text you.",
+    "sw_pt": "Me sinto péssima. Tive que trabalhar até tarde e meu {celular|bateria|notebook} morreu, então nem consegui te mandar mensagem."
+   },
+   {
+    "en": "Half the guests showed up late anyway, and the pizza took two hours to arrive.",
+    "pt": "Metade dos convidados chegou atrasada de qualquer jeito, e a pizza levou duas horas para chegar.",
+    "sw_en": "Half the guests showed up late anyway, and the {pizza|cake|band} took two hours to arrive.",
+    "sw_pt": "Metade dos convidados chegou atrasada de qualquer jeito, e {a pizza|o bolo|a banda} levou duas horas para chegar."
+   },
+   {
+    "en": "Ha! Did I miss anything big? Please tell me there were no embarrassing photos.",
+    "pt": "Ha! Perdi algo importante? Diga que não rolaram fotos constrangedores.",
+    "sw_en": "Ha! Did I miss anything big? Please tell me there were no embarrassing {photos|videos|speeches}.",
+    "sw_pt": "Ha! Perdi algo importante? Diga que não rolaram {fotos|vídeos|discursos} constrangedores."
+   },
+   {
+    "en": "Well, Dan and Sara had an argument about politics.",
+    "pt": "Bem, o Dan e a Sara tiveram uma discussão sobre política.",
+    "sw_en": "Well, Dan and Sara had an {argument|disagreement|debate} about politics.",
+    "sw_pt": "Bem, o Dan e a Sara tiveram {uma discussão|uma divergência|um debate} sobre política."
+   },
+   {
+    "en": "No way! I owe you a favor. Do I have to bring anything to your next dinner?",
+    "pt": "Não acredito! Te devo um favor. Eu preciso levar alguma coisa no seu próximo jantar?",
+    "sw_en": "No way! I owe you a {favor|dinner|coffee}. Do I have to bring anything to your next dinner?",
+    "sw_pt": "Não acredito! Te devo {um favor|um jantar|um café}. Eu preciso levar alguma coisa no seu próximo jantar?"
+   },
+   {
+    "en": "You don't have to bring a thing. Just come hungry. And don't tell Dan; it's a surprise for his birthday.",
+    "pt": "Não precisa levar nada. Só venha com fome. E não conte ao Dan; é uma surpresa para o aniversário dele.",
+    "sw_en": "You don't have to bring a thing. Just come hungry. And don't tell Dan; it's a surprise for his {birthday|promotion|graduation}.",
+    "sw_pt": "Não precisa levar nada. Só venha com fome. E não conte ao Dan; é uma surpresa para {o aniversário|a promoção|a formatura} dele."
+   },
+   {
+    "en": "I never tell secrets, and I can't wait to see his face.",
+    "pt": "Eu nunca conto segredos e mal posso esperar para ver o rosto dele.",
+    "sw_en": "I never tell secrets, and I can't wait to see his {face|reaction|expression}.",
+    "sw_pt": "Eu nunca conto segredos e mal posso esperar para ver {o rosto|a reação|a expressão} dele."
+   },
+   {
+    "en": "Great. Also, I sent the invitation by email, so check your spam folder in case it didn't arrive.",
+    "pt": "Ótimo. Aliás, mandei o convite por e-mail, então confira a pasta de spam caso não tenha chegado.",
+    "sw_en": "Great. Also, I sent the invitation by email, so check your {spam folder|inbox|calendar} in case it didn't arrive.",
+    "sw_pt": "Ótimo. Aliás, mandei o convite por e-mail, então confira {a pasta de spam|a caixa de entrada|a agenda} caso não tenha chegado."
+   },
+   {
+    "en": "Will do. By the way, I've been thinking about my job. Sometimes I worry that I'm working too much.",
+    "pt": "Pode deixar. Aliás, tenho pensado no meu trabalho. Às vezes eu me preocupo que estou trabalhando demais.",
+    "sw_en": "Will do. By the way, I've been thinking about my job. Sometimes I {worry|think|feel} that I'm working too much.",
+    "sw_pt": "Pode deixar. Aliás, tenho pensado no meu trabalho. Às vezes eu {me preocupo|acho|sinto} que estou trabalhando demais."
+   },
+   {
+    "en": "Let's talk about it over coffee on Sunday. My treat!",
+    "pt": "Vamos conversar sobre isso num café no domingo. Eu pago!",
+    "sw_en": "Let's talk about it over {coffee|lunch|brunch} on Sunday. My treat!",
+    "sw_pt": "Vamos conversar sobre isso num {café|almoço|brunch} no domingo. Eu pago!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Thank you. I was at your party, and I danced all night.",
+     "pt": "Obrigada. Eu estava na sua festa e dancei a noite toda.",
+     "fb": "Contradiz o contexto: Mia faltou à festa."
+    },
+    {
+     "en": "Don't worry. I forgave you yesterday.",
+     "pt": "Não se preocupe. Eu te perdoei ontem.",
+     "fb": "Inverte os papéis: quem faltou foi a Mia, e o Jin é quem a tranquiliza."
+    }
+   ],
+   [
+    {
+     "en": "Good. I'll go to the party tomorrow, then.",
+     "pt": "Ótimo. Então vou à festa amanhã.",
+     "fb": "A festa já passou."
+    },
+    {
+     "en": "That's a lot of pizza. I'm full, thank you.",
+     "pt": "É muita pizza. Estou satisfeita, obrigada.",
+     "fb": "Ninguém ofereceu pizza; o Jin só contou sobre a festa."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I did. I took all the photos last night.",
+     "pt": "Sim, tirei todas as fotos ontem à noite.",
+     "fb": "Contradiz o contexto: ela não estava na festa."
+    },
+    {
+     "en": "I don't care about Dan and Sara. Please never tell me again.",
+     "pt": "Não ligo para o Dan e a Sara. Nunca mais me conte nada.",
+     "fb": "Resposta fria que contradiz o interesse que Mia demonstrou."
+    }
+   ],
+   [
+    {
+     "en": "Okay, I'll bring a big cake and tell everybody.",
+     "pt": "Certo, vou levar um bolo grande e contar para todo mundo.",
+     "fb": "Contradiz o pedido de segredo e a instrução de não levar nada."
+    },
+    {
+     "en": "I told Dan yesterday, so he's already excited.",
+     "pt": "Contei ao Dan ontem, então ele já está animado.",
+     "fb": "Mia acabou de saber da surpresa; não faz sentido ter contado ontem."
+    }
+   ],
+   [
+    {
+     "en": "I already read it. I opened the invitation tomorrow.",
+     "pt": "Já li. Abri o convite amanhã.",
+     "fb": "Tempo verbal errado: mistura já com amanhã."
+    },
+    {
+     "en": "No, thanks. I don't use email because I hate computers.",
+     "pt": "Não, obrigada. Não uso e-mail porque odeio computadores.",
+     "fb": "Exagero que contradiz o que ela disse (que vai conferir)."
+    }
+   ]
+  ],
+  "can": [
+   "I feel terrible. I had to work late, and my phone died, so I couldn't even text you.",
+   "No way! I owe you a favor. Do I have to bring anything to your next dinner?",
+   "Will do. By the way, I've been thinking about my job. Sometimes I worry that I'm working too much."
+  ]
+ },
+ "3319": {
+  "lines": [
+   {
+    "en": "Mia, you missed a great night! I danced salsa until midnight.",
+    "pt": "Mia, você perdeu uma noite ótima! Dancei salsa até meia-noite.",
+    "sw_en": "Mia, you missed a great night! I danced {salsa|merengue|bachata} until midnight.",
+    "sw_pt": "Mia, você perdeu uma noite ótima! Dancei {salsa|merengue|bachata} até meia-noite."
+   },
+   {
+    "en": "No way! Was it at the festival downtown, or at someone's house?",
+    "pt": "Não acredito! Foi no festival do centro, ou na casa de alguém?",
+    "sw_en": "No way! Was it at the {festival|club|park} downtown, or at someone's house?",
+    "sw_pt": "Não acredito! Foi {no festival|na boate|no parque} do centro, ou na casa de alguém?"
+   },
+   {
+    "en": "The host is a salsa teacher, and her whole family came.",
+    "pt": "A anfitriã é professora de salsa, e a família inteira dela veio.",
+    "sw_en": "The host is a salsa {teacher|singer|DJ}, and her whole family came.",
+    "sw_pt": "A anfitriã é {professora|cantora|DJ} de salsa, e a família inteira dela veio."
+   },
+   {
+    "en": "Sounds amazing. Did you know the steps, or did you just follow your partner? I always get confused.",
+    "pt": "Parece incrível. Você sabia os passos ou só seguiu seu par? Eu sempre me confundo.",
+    "sw_en": "Sounds amazing. Did you know the {steps|moves|rules}, or did you just follow your partner? I always get confused.",
+    "sw_pt": "Parece incrível. Você sabia {os passos|os movimentos|as regras} ou só seguiu seu par? Eu sempre me confundo."
+   },
+   {
+    "en": "My teacher told me to follow the rhythm, so I stopped thinking and just listened.",
+    "pt": "Meu professor me disse para seguir o ritmo, então parei de pensar e só ouvi.",
+    "sw_en": "My teacher told me to follow the {rhythm|beat|music}, so I stopped thinking and just listened.",
+    "sw_pt": "Meu professor me disse para seguir {o ritmo|a batida|a música}, então parei de pensar e só ouvi."
+   },
+   {
+    "en": "Smart. My instructor told us to count the beats out loud, which feels silly but really works.",
+    "pt": "Esperto. Minha instrutora nos disse para contar as batidas em voz alta, o que parece bobo mas funciona.",
+    "sw_en": "Smart. My instructor told us to count the {beats|steps|numbers} out loud, which feels silly but really works.",
+    "sw_pt": "Esperto. Minha instrutora nos disse para contar {as batidas|os passos|os números} em voz alta, o que parece bobo mas funciona."
+   },
+   {
+    "en": "Ha! I might try that. Anyway, the DJ was great.",
+    "pt": "Ha! Talvez eu tente. Enfim, o DJ foi ótimo.",
+    "sw_en": "Ha! I might try that. Anyway, the {DJ|singer|drummer} was great.",
+    "sw_pt": "Ha! Talvez eu tente. Enfim, {o DJ|o cantor|o baterista} foi ótimo."
+   },
+   {
+    "en": "I'd have asked for a Celia Cruz song. Did the guests sing along, or did everybody just dance?",
+    "pt": "Eu teria pedido uma música da Celia Cruz. Os convidados cantaram junto ou todo mundo só dançou?",
+    "sw_en": "I'd have asked for a {Celia Cruz song|merengue|slow dance}. Did the guests sing along, or did everybody just dance?",
+    "sw_pt": "Eu teria pedido {uma música da Celia Cruz|um merengue|uma dança lenta}. Os convidados cantaram junto ou todo mundo só dançou?"
+   },
+   {
+    "en": "Everybody sang, even my shy cousin. The host gave a speech and thanked each guest by name.",
+    "pt": "Todo mundo cantou, até meu primo tímido. A anfitriã fez um discurso e agradeceu cada convidado pelo nome.",
+    "sw_en": "Everybody sang, even my {shy cousin|boss|grandmother}. The host gave a speech and thanked each guest by name.",
+    "sw_pt": "Todo mundo cantou, até {meu primo tímido|meu chefe|minha avó}. A anfitriã fez um discurso e agradeceu cada convidado pelo nome."
+   },
+   {
+    "en": "I wish I'd been there. Next time, please send me the invitation as early as possible.",
+    "pt": "Queria ter estado lá. Da próxima vez, me mande o convite o mais cedo possível.",
+    "sw_en": "I wish I'd been there. Next time, please send me the {invitation|address|schedule} as early as possible.",
+    "sw_pt": "Queria ter estado lá. Da próxima vez, me mande {o convite|o endereço|a programação} o mais cedo possível."
+   },
+   {
+    "en": "I promise. There's another party in two weeks, and I'll make sure you get a spot on the dance floor.",
+    "pt": "Prometo. Tem outra festa em duas semanas e vou garantir um lugar para você na pista de dança.",
+    "sw_en": "I promise. There's another party in {two|three|four} weeks, and I'll make sure you get a spot on the dance floor.",
+    "sw_pt": "Prometo. Tem outra festa em {duas|três|quatro} semanas e vou garantir um lugar para você na pista de dança."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I dance every day. My teacher is very tall.",
+     "pt": "Eu danço todo dia. Meu professor é muito alto.",
+     "fb": "Não reage ao que a Suri contou sobre a noite."
+    },
+    {
+     "en": "Thanks, I danced salsa with a woman yesterday.",
+     "pt": "Obrigada, dancei salsa com uma mulher ontem.",
+     "fb": "Quem dançou foi a Suri; Mia atribui a si mesma e não estava lá."
+    }
+   ],
+   [
+    {
+     "en": "The music was loud, so I went to the library.",
+     "pt": "A música estava alta, então fui à biblioteca.",
+     "fb": "Mia não estava na festa; a resposta não faz sentido."
+    },
+    {
+     "en": "Yes, it was at a bank. I was there too.",
+     "pt": "Sim, foi num banco. Eu também estava lá.",
+     "fb": "Contradiz a conversa: Mia não foi e não era num banco."
+    }
+   ],
+   [
+    {
+     "en": "I followed the rhythm yesterday, and I won a prize.",
+     "pt": "Segui o ritmo ontem e ganhei um prêmio.",
+     "fb": "Mia não estava lá, e a Suri falou de si mesma."
+    },
+    {
+     "en": "Stop thinking! You are going to be a terrible dancer.",
+     "pt": "Pare de pensar! Você vai ser péssima dançando.",
+     "fb": "Rude e não responde de forma natural a uma amiga."
+    }
+   ],
+   [
+    {
+     "en": "No, I never count anything. I hate music.",
+     "pt": "Não, eu nunca conto nada. Odeio música.",
+     "fb": "Contradiz o que Mia acabou de dizer: ela gosta de dança e conta as batidas."
+    },
+    {
+     "en": "Please play another song. I want to hear it again.",
+     "pt": "Toque outra música, por favor. Quero ouvir de novo.",
+     "fb": "Pede música como se estivesse na festa, mas conversam depois."
+    }
+   ],
+   [
+    {
+     "en": "Everybody was sad. Nobody sang at all.",
+     "pt": "Todo mundo estava triste. Ninguém cantou.",
+     "fb": "Contradiz o que a Suri disse: todos cantaram."
+    },
+    {
+     "en": "I will go to the party last week.",
+     "pt": "Vou à festa semana passada.",
+     "fb": "Tempo verbal errado e a festa já passou."
+    }
+   ]
+  ],
+  "can": [
+   "Smart. My instructor told us to count the beats out loud, which feels silly but really works.",
+   "I'd have asked for a Celia Cruz song. Did the guests sing along, or did everybody just dance?",
+   "I wish I'd been there. Next time, please send me the invitation as early as possible."
+  ]
+ },
+ "3333": {
+  "lines": [
+   {
+    "en": "Good morning! Welcome to First Federal. How can I help you today?",
+    "pt": "Bom dia! Bem-vinda ao First Federal. Como posso ajudar hoje?",
+    "sw_en": "Good morning! Welcome to First {Federal|National|Community}. How can I help you today?",
+    "sw_pt": "Bom dia! Bem-vinda ao First {Federal|National|Community}. Como posso ajudar hoje?"
+   },
+   {
+    "en": "Hi. I'd like to open an account, please. I just moved here for college, and I need a place for my money.",
+    "pt": "Oi. Eu gostaria de abrir uma conta, por favor. Acabei de me mudar para cá por causa da faculdade e preciso de um lugar para meu dinheiro.",
+    "sw_en": "Hi. I'd like to open an account, please. I just moved here for {college|work|a job}, and I need a place for my money.",
+    "sw_pt": "Oi. Eu gostaria de abrir uma conta, por favor. Acabei de me mudar para cá por causa {da faculdade|do trabalho|de um emprego} e preciso de um lugar para meu dinheiro."
+   },
+   {
+    "en": "Would you like a savings account? The fees are different.",
+    "pt": "Você quer uma conta poupança? As taxas são diferentes.",
+    "sw_en": "Would you like a {savings|checking|student} account? The fees are different.",
+    "sw_pt": "Você quer uma conta {poupança|corrente|estudantil}? As taxas são diferentes."
+   },
+   {
+    "en": "I think savings. Is there a monthly fee? I'm a student, so I'm on a very small budget.",
+    "pt": "Acho que poupança. Tem taxa mensal? Sou estudante, então estou com um orçamento bem pequeno.",
+    "sw_en": "I think savings. Is there a monthly fee? I'm a student, so I'm on a very {small|tight|strict} budget.",
+    "sw_pt": "Acho que poupança. Tem taxa mensal? Sou estudante, então estou com um orçamento bem {pequeno|apertado|rígido}."
+   },
+   {
+    "en": "I just need your passport and a proof of address.",
+    "pt": "Só preciso do seu passaporte e de um comprovante de endereço.",
+    "sw_en": "I just need your {passport|ID|visa} and a proof of address.",
+    "sw_pt": "Só preciso {do seu passaporte|do seu documento|do seu visto} e de um comprovante de endereço."
+   },
+   {
+    "en": "Here you go. I'd also like a debit card, if possible. Do I get it today?",
+    "pt": "Aqui está. Também gostaria de um cartão de débito, se possível. Recebo hoje?",
+    "sw_en": "Here you go. I'd also like a {debit card|checkbook|mobile app}, if possible. Do I get it today?",
+    "sw_pt": "Aqui está. Também gostaria de {um cartão de débito|um talão de cheques|um aplicativo}, se possível. Recebo hoje?"
+   },
+   {
+    "en": "Not today. It arrives by mail in about a week.",
+    "pt": "Hoje não. Chega pelo correio em cerca de uma semana.",
+    "sw_en": "Not today. It arrives by mail in about {a week|ten days|two weeks}.",
+    "sw_pt": "Hoje não. Chega pelo correio em cerca de {uma semana|dez dias|duas semanas}."
+   },
+   {
+    "en": "Sure. Hmm, which address should I write? I'm staying at a friend's place until I find a room.",
+    "pt": "Claro. Hum, qual endereço devo escrever? Estou na casa de uma amiga até achar um quarto.",
+    "sw_en": "Sure. Hmm, which address should I write? I'm staying at a friend's place until I find a {room|place|roommate}.",
+    "sw_pt": "Claro. Hum, qual endereço devo escrever? Estou na casa de uma amiga até achar {um quarto|um lugar|uma colega de apartamento}."
+   },
+   {
+    "en": "You can change it online later, no problem.",
+    "pt": "Você pode mudar online depois, sem problema.",
+    "sw_en": "You can change it {online|by phone|in person} later, no problem.",
+    "sw_pt": "Você pode mudar {online|por telefone|pessoalmente} depois, sem problema."
+   },
+   {
+    "en": "Great. I want to put in two hundred dollars today. Can I deposit it right now, or only at the counter?",
+    "pt": "Ótimo. Quero depositar duzentos dólares hoje. Posso depositar agora ou só no balcão?",
+    "sw_en": "Great. I want to put in {two hundred|one hundred|five hundred} dollars today. Can I deposit it right now, or only at the counter?",
+    "sw_pt": "Ótimo. Quero depositar {duzentos|cem|quinhentos} dólares hoje. Posso depositar agora ou só no balcão?"
+   },
+   {
+    "en": "Of course. Hand me the cash, and I'll print your receipt. Your balance will show up online tonight.",
+    "pt": "Claro. Me dê o dinheiro e imprimo seu recibo. Seu saldo vai aparecer online hoje à noite.",
+    "sw_en": "Of course. Hand me the cash, and I'll print your receipt. Your balance will show up {online|in the app|by text} tonight.",
+    "sw_pt": "Claro. Me dê o dinheiro e imprimo seu recibo. Seu saldo vai aparecer {online|no aplicativo|por mensagem} hoje à noite."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Yes, I opened an account yesterday, and I love it.",
+     "pt": "Sim, abri uma conta ontem e adoro.",
+     "fb": "Fala no passado, mas ela quer abrir a conta agora."
+    },
+    {
+     "en": "I'd like a hamburger and a large soda, please.",
+     "pt": "Eu queria um hambúrguer e um refrigerante grande, por favor.",
+     "fb": "Pedido de lanchonete, num banco."
+    }
+   ],
+   [
+    {
+     "en": "I opened a savings account last year in Brazil, but I closed it.",
+     "pt": "Abri uma poupança ano passado no Brasil, mas fechei.",
+     "fb": "Fala do passado e não responde qual conta quer agora."
+    },
+    {
+     "en": "I don't know. I never save money, so please close it.",
+     "pt": "Não sei. Nunca guardo dinheiro, então feche, por favor.",
+     "fb": "Contradiz o pedido: ela veio abrir uma conta, não fechar."
+    }
+   ],
+   [
+    {
+     "en": "I don't have a passport. I don't have any documents.",
+     "pt": "Não tenho passaporte. Não tenho documento nenhum.",
+     "fb": "Contradiz a fala seguinte, em que ela entrega o que foi pedido."
+    },
+    {
+     "en": "Five dollars is too cheap. Please charge me fifty.",
+     "pt": "Cinco dólares é barato demais. Cobre cinquenta de mim.",
+     "fb": "Pedido absurdo; ninguém quer pagar mais."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I got the card yesterday in the mail.",
+     "pt": "Sim, recebi o cartão ontem pelo correio.",
+     "fb": "Ainda não chegou; fala do passado sem sentido."
+    },
+    {
+     "en": "Fine. I'll wait a week at the counter, standing here.",
+     "pt": "Tudo bem. Vou esperar uma semana no balcão, em pé aqui.",
+     "fb": "Pouco natural e contradiz a ideia de receber o cartão em casa."
+    }
+   ],
+   [
+    {
+     "en": "No, I'll use my bank's address in Brazil forever.",
+     "pt": "Não, vou usar o endereço do meu banco no Brasil para sempre.",
+     "fb": "Ignora a orientação de usar o endereço da amiga por enquanto."
+    },
+    {
+     "en": "Yes, I signed it already, so please go.",
+     "pt": "Sim, já assinei, então pode ir.",
+     "fb": "Contradiz a conversa: ela ainda está preenchendo o formulário."
+    }
+   ]
+  ],
+  "can": [
+   "Hi. I'd like to open an account, please. I just moved here for college, and I need a place for my money.",
+   "Here you go. I'd also like a debit card, if possible. Do I get it today?",
+   "Great. I want to put in two hundred dollars today. Can I deposit it right now, or only at the counter?"
+  ]
+ },
+ "3367": {
+  "lines": [
+   {
+    "en": "That's us in front of the fireplace, with my grandfather and all the cousins.",
+    "pt": "Somos nós na frente da lareira, com meu avô e todos os primos.",
+    "sw_en": "That's us in front of the fireplace, with my {grandfather|grandmother|uncle} and all the cousins.",
+    "sw_pt": "Somos nós na frente da lareira, com {meu avô|minha avó|meu tio} e todos os primos."
+   },
+   {
+    "en": "When I was a child, we used to sing carols every December on the porch.",
+    "pt": "Quando eu era criança, a gente costumava cantar cantigas de Natal todo dezembro na varanda.",
+    "sw_en": "When I was a child, we used to sing carols every December on the {porch|street|stairs}.",
+    "sw_pt": "Quando eu era criança, a gente costumava cantar cantigas de Natal todo dezembro {na varanda|na rua|na escada}."
+   },
+   {
+    "en": "Really? We sang too, but only after dinner. My dad played the guitar, badly.",
+    "pt": "Sério? A gente cantava também, mas só depois do jantar. Meu pai tocava violão, mal.",
+    "sw_en": "Really? We sang too, but only after dinner. My dad played the {guitar|piano|drums}, badly.",
+    "sw_pt": "Sério? A gente cantava também, mas só depois do jantar. Meu pai tocava {violão|piano|bateria}, mal."
+   },
+   {
+    "en": "That sounds lovely. Did you use to stay up late on Christmas Eve? I never could, because my parents checked on me every hour.",
+    "pt": "Que lindo. Você costumava ficar acordada até tarde na véspera de Natal? Eu nunca conseguia, porque meus pais me vigiavam toda hora.",
+    "sw_en": "That sounds lovely. Did you use to stay up late on Christmas Eve? I never could, because my {parents|brothers|aunts} checked on me every hour.",
+    "sw_pt": "Que lindo. Você costumava ficar acordada até tarde na véspera de Natal? Eu nunca conseguia, porque {meus pais|meus irmãos|minhas tias} me vigiavam toda hora."
+   },
+   {
+    "en": "Never! Mom didn't use to let us open anything before breakfast, not even a small gift.",
+    "pt": "Nunca! A mamãe não deixava a gente abrir nada antes do café da manhã, nem um presente pequeno.",
+    "sw_en": "Never! Mom didn't use to let us open anything before breakfast, not even a small {gift|card|toy}.",
+    "sw_pt": "Nunca! A mamãe não deixava a gente abrir nada antes do café da manhã, nem {um presente|um cartão|um brinquedo} pequeno."
+   },
+   {
+    "en": "Poor you! We always picked the biggest box, of course.",
+    "pt": "Coitada! Claro que sempre escolhíamos a caixa maior.",
+    "sw_en": "Poor you! We always picked the {biggest|smallest|heaviest} box, of course.",
+    "sw_pt": "Coitada! Claro que sempre escolhíamos a caixa {maior|menor|mais pesada}."
+   },
+   {
+    "en": "Ha! My grandfather read us a story every night instead.",
+    "pt": "Ha! Meu avô lia uma história para nós toda noite.",
+    "sw_en": "Ha! My grandfather read us a {story|poem|comic} every night instead.",
+    "sw_pt": "Ha! Meu avô lia {uma história|um poema|uma revistinha} para nós toda noite."
+   },
+   {
+    "en": "That's sweet. We left milk and cookies for Santa, and my brother ate them himself before sunrise.",
+    "pt": "Que fofo. A gente deixava leite e biscoitos para o Papai Noel, e meu irmão comia tudo antes do nascer do sol.",
+    "sw_en": "That's sweet. We left {milk and cookies|a sandwich|lemonade} for Santa, and my brother ate them himself before sunrise.",
+    "sw_pt": "Que fofo. A gente deixava {leite e biscoitos|um sanduíche|limonada} para o Papai Noel, e meu irmão comia tudo antes do nascer do sol."
+   },
+   {
+    "en": "No way! Did your parents ever catch him? I'd have loved to see their faces when they found the empty plate.",
+    "pt": "Não acredito! Seus pais nunca o pegaram? Eu adoraria ter visto a cara deles ao achar o prato vazio.",
+    "sw_en": "No way! Did your parents ever catch him? I'd have loved to see their {faces|expressions|reactions} when they found the empty plate.",
+    "sw_pt": "Não acredito! Seus pais nunca o pegaram? Eu adoraria ter visto {a cara|a expressão|a reação} deles ao achar o prato vazio."
+   },
+   {
+    "en": "Never. He blamed the dog every year, and nobody ever doubted him.",
+    "pt": "Nunca. Ele botava a culpa no cachorro todo ano e ninguém nunca duvidou.",
+    "sw_en": "Never. He blamed the {dog|cat|mouse} every year, and nobody ever doubted him.",
+    "sw_pt": "Nunca. Ele botava a culpa {no cachorro|no gato|no rato} todo ano e ninguém nunca duvidou."
+   },
+   {
+    "en": "Classic! Hold on, let me get my camera.",
+    "pt": "Clássico! Espere, vou pegar minha câmera.",
+    "sw_en": "Classic! Hold on, let me get my {camera|phone|tripod}.",
+    "sw_pt": "Clássico! Espere, vou pegar {minha câmera|meu celular|meu tripé}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "No, I don't have a photo. I have never had a camera.",
+     "pt": "Não, não tenho foto. Nunca tive câmera.",
+     "fb": "Contradiz o contexto: a Lara está mostrando uma foto."
+    },
+    {
+     "en": "Thank you. I love my grandfather very much yesterday.",
+     "pt": "Obrigada. Amo muito meu avô ontem.",
+     "fb": "Tempo verbal estranho e não reage à foto."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I sing carols at the beach tomorrow.",
+     "pt": "Sim, canto cantigas de Natal na praia amanhã.",
+     "fb": "Fala do futuro, mas a conversa é sobre a infância."
+    },
+    {
+     "en": "That's terrible. Your dad should stop playing forever.",
+     "pt": "Que horror. Seu pai deveria parar de tocar para sempre.",
+     "fb": "Rude com o pai da amiga."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I will stay up late tomorrow night.",
+     "pt": "Sim, vou ficar acordada até tarde amanhã à noite.",
+     "fb": "Futuro, mas a pergunta é sobre a infância."
+    },
+    {
+     "en": "No, I don't have any parents. I live alone.",
+     "pt": "Não, não tenho pais. Moro sozinha.",
+     "fb": "Contradiz o que Mia disse na fala anterior sobre os pais dela."
+    }
+   ],
+   [
+    {
+     "en": "I'm going to read a story to my grandfather tomorrow.",
+     "pt": "Vou ler uma história para meu avô amanhã.",
+     "fb": "Fala do futuro e não reage ao que a Lara contou."
+    },
+    {
+     "en": "Poor you! Your voices are terrible.",
+     "pt": "Coitada! Suas vozes são horríveis.",
+     "fb": "A Mia não ouviu as vozes; comentário rude e sem sentido."
+    }
+   ],
+   [
+    {
+     "en": "Yes, they caught him, and he is in prison now.",
+     "pt": "Sim, pegaram, e ele está preso agora.",
+     "fb": "Exagero que contradiz a fala seguinte, em que ninguém o pegou."
+    },
+    {
+     "en": "I'm going to eat cookies for dinner tonight.",
+     "pt": "Vou comer biscoitos no jantar hoje à noite.",
+     "fb": "Não responde à pergunta sobre os pais."
+    }
+   ]
+  ],
+  "can": [
+   "When I was a child, we used to sing carols every December on the porch.",
+   "That sounds lovely. Did you use to stay up late on Christmas Eve? I never could, because my parents checked on me every hour.",
+   "Poor you! We always picked the biggest box, of course."
+  ]
+ },
+ "3376": {
+  "lines": [
+   {
+    "en": "Hi there! Welcome back. Is everything okay with the jacket you bought on Friday?",
+    "pt": "Oi! Bem-vinda de volta. Está tudo bem com a jaqueta que você comprou na sexta?",
+    "sw_en": "Hi there! Welcome back. Is everything okay with the {jacket|scarf|sweater} you bought on Friday?",
+    "sw_pt": "Oi! Bem-vinda de volta. Está tudo bem com {a jaqueta|o cachecol|o suéter} que você comprou na sexta?"
+   },
+   {
+    "en": "Not really. The zip is broken, and I only wore it once. I'd like my money back, please.",
+    "pt": "Na verdade não. O zíper quebrou e usei só uma vez. Eu gostaria do meu dinheiro de volta, por favor.",
+    "sw_en": "Not really. The {zip|button|pocket} is broken, and I only wore it once. I'd like my money back, please.",
+    "sw_pt": "Na verdade não. {O zíper|O botão|O bolso} quebrou e usei só uma vez. Eu gostaria do meu dinheiro de volta, por favor."
+   },
+   {
+    "en": "Do you have your receipt with you? I'll also need to check the date.",
+    "pt": "Você está com o recibo? Também preciso conferir a data.",
+    "sw_en": "Do you have your receipt with you? I'll also need to check the {date|size|tag}.",
+    "sw_pt": "Você está com o recibo? Também preciso conferir {a data|o tamanho|a etiqueta}."
+   },
+   {
+    "en": "Here it is. I bought it five days ago, so I'm still within the thirty-day return period.",
+    "pt": "Aqui está. Comprei há cinco dias, então ainda estou dentro do prazo de trinta dias para devolução.",
+    "sw_en": "Here it is. I bought it {five|four|six} days ago, so I'm still within the thirty-day return period.",
+    "sw_pt": "Aqui está. Comprei há {cinco|quatro|seis} dias, então ainda estou dentro do prazo de trinta dias para devolução."
+   },
+   {
+    "en": "You are. Would you like a full refund, or would you like to try another one in the same size?",
+    "pt": "Está sim. Você quer reembolso total ou gostaria de tentar outra do mesmo tamanho?",
+    "sw_en": "You are. Would you like a full refund, or would you like to try another one in the same {size|color|style}?",
+    "sw_pt": "Está sim. Você quer reembolso total ou gostaria de tentar outra do mesmo {tamanho|cor|estilo}?"
+   },
+   {
+    "en": "Hmm. I'd like to exchange it, but only if the zip works properly.",
+    "pt": "Hum. Eu gostaria de trocar, mas só se o zíper funcionar direito.",
+    "sw_en": "Hmm. I'd like to exchange it, but only if the {zip|button|lining} works properly.",
+    "sw_pt": "Hum. Eu gostaria de trocar, mas só se {o zíper|o botão|o forro} funcionar direito."
+   },
+   {
+    "en": "Fair enough. See? The zip slides smoothly, and nothing's loose.",
+    "pt": "Justo. Viu? O zíper desliza suavemente e nada está solto.",
+    "sw_en": "Fair enough. See? The zip slides {smoothly|easily|perfectly}, and nothing's loose.",
+    "sw_pt": "Justo. Viu? O zíper desliza {suavemente|com facilidade|perfeitamente} e nada está solto."
+   },
+   {
+    "en": "Perfect. Oh, I also have a coupon for twenty percent off. Can I use it on this exchange?",
+    "pt": "Perfeito. Ah, também tenho um cupom de vinte por cento de desconto. Posso usar nesta troca?",
+    "sw_en": "Perfect. Oh, I also have a coupon for {twenty|ten|thirty} percent off. Can I use it on this exchange?",
+    "sw_pt": "Perfeito. Ah, também tenho um cupom de {vinte|dez|trinta} por cento de desconto. Posso usar nesta troca?"
+   },
+   {
+    "en": "I can give you a small discount on your next visit, though.",
+    "pt": "Mas posso te dar um pequeno desconto na sua próxima visita.",
+    "sw_en": "I can give you a small {discount|gift|bonus} on your next visit, though.",
+    "sw_pt": "Mas posso te dar {um pequeno desconto|um brinde|um bônus} na sua próxima visita."
+   },
+   {
+    "en": "That's fair. I know Fridays are busy, and you've helped three people already.",
+    "pt": "Justo. Sei que as sextas são cheias e você já ajudou três pessoas.",
+    "sw_en": "That's fair. I know {Fridays|weekends|mornings} are busy, and you've helped three people already.",
+    "sw_pt": "Justo. Sei que {as sextas|os fins de semana|as manhãs} são cheias e você já ajudou três pessoas."
+   },
+   {
+    "en": "Enjoy your jacket, and come back if you need anything else. Have a great weekend!",
+    "pt": "Aproveite sua jaqueta e volte se precisar de mais alguma coisa. Ótimo fim de semana!",
+    "sw_en": "Enjoy your {jacket|new coat|purchase}, and come back if you need anything else. Have a great weekend!",
+    "sw_pt": "Aproveite {sua jaqueta|seu casaco novo|sua compra} e volte se precisar de mais alguma coisa. Ótimo fim de semana!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Everything is perfect. I'd like my money back.",
+     "pt": "Está tudo perfeito. Eu queria meu dinheiro de volta.",
+     "fb": "Contradiz-se: diz que está perfeito e pede o dinheiro de volta."
+    },
+    {
+     "en": "No, thank you. I'm just looking for shoes.",
+     "pt": "Não, obrigada. Estou só procurando sapatos.",
+     "fb": "Pablo perguntou da jaqueta que ela comprou; a resposta muda de assunto."
+    }
+   ],
+   [
+    {
+     "en": "I lost it yesterday, but it's right here in my bag.",
+     "pt": "Perdi ontem, mas está aqui na minha bolsa.",
+     "fb": "Contradição interna: perdeu, mas está na bolsa."
+    },
+    {
+     "en": "No, I don't. I'll bring it next year.",
+     "pt": "Não tenho. Vou trazer ano que vem.",
+     "fb": "Fora de prazo: a devolução é agora, não no ano que vem."
+    }
+   ],
+   [
+    {
+     "en": "No, I want a refund and a new jacket both.",
+     "pt": "Não, quero reembolso e uma jaqueta nova, as duas coisas.",
+     "fb": "Pede as duas coisas, o que não é possível numa troca."
+    },
+    {
+     "en": "A full refund yesterday, please.",
+     "pt": "Um reembolso total ontem, por favor.",
+     "fb": "Tempo errado: o pedido é para agora."
+    }
+   ],
+   [
+    {
+     "en": "I don't care if the zip works. Give me a new house.",
+     "pt": "Não importa se o zíper funciona. Me dê uma casa nova.",
+     "fb": "Pedido absurdo, sem relação com a troca."
+    },
+    {
+     "en": "It slides smoothly because I broke it yesterday.",
+     "pt": "Desliza suavemente porque quebrei ontem.",
+     "fb": "Contradiz o fato: o zíper novo funciona, quem quebrou foi o antigo."
+    }
+   ],
+   [
+    {
+     "en": "Thank you, I'll use the coupon yesterday.",
+     "pt": "Obrigada, vou usar o cupom ontem.",
+     "fb": "Tempo errado e o Pablo acabou de dizer que não pode usar o cupom."
+    },
+    {
+     "en": "That's unfair! I'm going to call the president.",
+     "pt": "Que injustiça! Vou ligar para o presidente.",
+     "fb": "Exagero inadequado diante de uma regra simples da loja."
+    }
+   ]
+  ],
+  "can": [
+   "Not really. The zip is broken, and I only wore it once. I'd like my money back, please.",
+   "Hmm. I'd like to exchange it, but only if the zip works properly.",
+   "Perfect. Oh, I also have a coupon for twenty percent off. Can I use it on this exchange?"
+  ]
  }
 }
