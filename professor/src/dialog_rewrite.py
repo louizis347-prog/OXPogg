@@ -187,7 +187,10 @@ def validate(pk, o):
     if avg < FLOOR.get(pk['level'], 6): err.append('média %.1f palavras/fala abaixo de %s' % (avg, FLOOR[pk['level']]))
     if avg > CEIL.get(pk['level'], 30): err.append('média %.1f palavras/fala acima de %s (nível %s)' % (avg, CEIL[pk['level']], pk['level']))
     txt = ' '.join(l['en'] + ' ' + l['sw_en'] for l in L) + ' ' + ' '.join(x['en'] for w in W for x in w)
+    txt = re.sub(r'\bthe (?:\{)?holidays\b|\blift(?:ing|ed|s)? (?:the )?weights?\b', ' ', txt, flags=re.I)
     br = sorted(set(m.group(0).lower() for m in re.finditer(r"\b(flatmates?|flat|takeaway|lift|queue[sd]?|queuing|rubbish|mum|petrol|whilst|trousers|biscuits?|boot|lorry|motorway|pavement|fortnight|cheers|brilliant|mobile phone|holiday|holidays|colour\w*|neighbour\w*|favourite\w*|centre|programme)\b", txt, re.I)))
+    ens = ' '.join(pk.get('vocabulario', []) + pk.get('expressoes', []) + pk.get('estruturas', [])).lower()
+    br = [b for b in br if b not in ens and not any(b.rstrip('s') in w for w in ens.split())]
     if br: err.append('vocabulário/grafia britânica: ' + ', '.join(br))
     for nm in re.findall(r'\b[A-Z][a-z]{2,}\b', txt):
         pass
