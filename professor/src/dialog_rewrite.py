@@ -8,6 +8,7 @@ import collections, glob, json, os, re, statistics, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); R = os.path.join(HERE, '..')
 WORK = os.path.join(HERE, 'dialog_work'); os.makedirs(os.path.join(WORK, 'in'), exist_ok=True); os.makedirs(os.path.join(WORK, 'out'), exist_ok=True)
 FLOOR = {'A1': 5.5, 'A2': 8.5, 'B1': 11, 'B2': 15}
+CEIL = {'A1': 8, 'A2': 12.5, 'B1': 16.5, 'B2': 22.5}
 def words(s): return re.findall(r"[A-Za-z’']+", re.sub(r'\*\*', '', s or ''))
 def norm(s): return re.sub(r'\s+', ' ', (s or '').replace('’', "'")).strip().lower()
 def load(n): return json.load(open(os.path.join(R, 'data/v4/%03d.json' % n)))
@@ -184,7 +185,10 @@ def validate(pk, o):
     if top[1] > max(3, .35 * N): err.append('estrutura “%s” em %d falas (máx %d)' % (top[0], top[1], max(3, int(.35 * N))))
     avg = statistics.mean(len(words(l['en'])) for l in L)
     if avg < FLOOR.get(pk['level'], 6): err.append('média %.1f palavras/fala abaixo de %s' % (avg, FLOOR[pk['level']]))
-    txt = ' '.join(l['en'] for l in L)
+    if avg > CEIL.get(pk['level'], 30): err.append('média %.1f palavras/fala acima de %s (nível %s)' % (avg, CEIL[pk['level']], pk['level']))
+    txt = ' '.join(l['en'] + ' ' + l['sw_en'] for l in L) + ' ' + ' '.join(x['en'] for w in W for x in w)
+    br = sorted(set(m.group(0).lower() for m in re.finditer(r"\b(flatmates?|flat|takeaway|lift|queue[sd]?|queuing|rubbish|mum|petrol|whilst|trousers|biscuits?|boot|lorry|motorway|pavement|fortnight|cheers|brilliant|mobile phone|holiday|holidays|colour\w*|neighbour\w*|favourite\w*|centre|programme)\b", txt, re.I)))
+    if br: err.append('vocabulário/grafia britânica: ' + ', '.join(br))
     for nm in re.findall(r'\b[A-Z][a-z]{2,}\b', txt):
         pass
     return err
