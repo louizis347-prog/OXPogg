@@ -89,3 +89,13 @@
 - **Títulos e obras:** 100 títulos distintos; as obras não repetem nenhuma de A2/B1 (conferido também com títulos normalizados, sem "The" e com variações). Três obras repetidas foram trocadas (4010, 4036, 4046).
 - **Varredura de C1 fora do diálogo:** os achados restantes são exemplos errados propositais, frases embaralhadas dos exercícios e definições ("get used to means to become accustomed to…").
 - **Limites:** checagem de gramática por padrões de texto; cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco. Nenhum professor revisou o conteúdo.
+
+## B2 (4101–4170) — mais 70 aulas: B2 com 170 aulas
+
+- **Aulas 4101–4170 (blocos temáticos):** trabalho e carreira, saúde, tecnologia e sociedade, viagem e cultura, notícias e sociedade, relacionamentos e emoções, cultura e história e revisões. Total do B2: 170 aulas (4001–4170), mostradas como "B2 · 001" a "B2 · 170".
+- **Vocabulário:** 0 palavras fora da regra B2 nos diálogos (`tools/cefr_audit.py`). Sem estruturas C1 nos diálogos (`BAN_B2`).
+- **Teste no navegador:** as 70 aulas têm 44 quadros e nenhum erro.
+- **Títulos e obras:** 170 títulos distintos no B2. Cinco obras repetidas de outras aulas foram trocadas (4117, 4119, 4150, 4164 e as de lotes anteriores), inclusive repetições com título escrito de outra forma ("Hippocratic Oath"/"The Hippocratic Oath").
+- **Checagem de estruturas acima do nível fora do diálogo:** os achados restantes são exemplos errados propositais dos exercícios ("It is say that…") e frases embaralhadas.
+- **Regras do validador corrigidas durante o B2:** "suggested that we could…" e "It is said/announced that…" (passivo de relato) são B2; só o subjuntivo formal e as clivadas verdadeiras ("It was Anna that…") são C1.
+- **Limites:** checagem de gramática por padrões de texto; cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco. Nenhum professor revisou o conteúdo. Ver também a avaliação de qualidade (diálogos "de manual", A2 raso) no relatório da sessão.
