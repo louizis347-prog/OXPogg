@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Auditoria de vocabulário por nível CEFR (CEFR-J Vocabulary Profile, Tono Lab / openlanguageprofiles/olp-en-cefrj).
 Uso: cefr_audit.py [de ate]  — lista, por aula, as palavras do diálogo e do vocabulário acima do nível da aula.
-Nível da aula: A1 (n<2000), A2 (2000–2999) ou B1 (n>=3000). Nomes próprios (elenco, cidades) e números são ignorados."""
+Nível da aula: A1 (n<2000), A2 (2000–2999), B1 (3000–3999) ou B2 (n>=4000). Nomes próprios (elenco, cidades) e números são ignorados."""
 import glob, json, os, re, sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')); D = os.path.join(ROOT, 'data')
 W = json.load(open(os.path.join(D, 'cefrj-vocab.json'), encoding='utf-8')); RANK = {'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4}
@@ -56,7 +56,7 @@ def words_of(d):
     return out
 def audit(n, d=None):
     d = d or json.load(open(os.path.join(D, 'v4', '%03d.json' % n if n < 1000 else '%d.json' % n), encoding='utf-8'))
-    cap = 3 if n >= 3000 else 2 if n >= 2000 else 1; bad = []
+    cap = 4 if n >= 4000 else 3 if n >= 3000 else 2 if n >= 2000 else 1; bad = []
     for w, src in words_of(d).items():
         lv = level(w)
         if lv is None:
@@ -97,7 +97,7 @@ def taught_words(d):
 def violations(n, d=None):
     """Palavras do diálogo acima do nível da aula e que a aula não ensina (regra do projeto)."""
     d = d or json.load(open(os.path.join(D, 'v4', '%03d.json' % n if n < 1000 else '%d.json' % n), encoding='utf-8'))
-    cap = 3 if n >= 3000 else 2 if n >= 2000 else 1; t = taught_words(d); out = []
+    cap = 4 if n >= 4000 else 3 if n >= 3000 else 2 if n >= 2000 else 1; t = taught_words(d); out = []
     for w, src in words_of(d).items():
         if src != 'dialog': continue
         lv = level(w)
