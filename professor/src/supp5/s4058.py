@@ -210,9 +210,8 @@ SUPP = {'badge': {'desc': 'Use have something done', 'icon': '🚗', 'name': 'Ha
              'scan': [{'alt': ['car'], 'ans': 'the car', 'q': 'What did Mia have repaired?'},
                       {'alt': ['roof'], 'ans': 'the roof', 'q': 'What are Gwen and her husband having inspected?'},
                       {'alt': ['accountant'], 'ans': 'an accountant', 'q': 'Who does Mia’s taxes?'}],
-             'text': ['It is a rainy Thursday in Vancouver, and the mountains are hidden. Gwen waits in a café near the harbour. Her friend Mia arrives with wet hair '
-                      'and a lot of bags. She has spent the whole morning running errands. Their cars, their houses and their phones all need work. They compare what '
-                      'has been done and what has not.',
+             'text': ['It is a rainy Thursday in Vancouver. Gwen waits in a café near the harbour. Her friend Mia arrives with many bags. She has spent the whole '
+                      'morning running errands. Their cars, their houses and their phones all need work. They compare what has been done and what has not.',
                       '“Mia, you look tired. Did you have the car repaired yesterday, or did you fix it yourself?” says Gwen. “We had it repaired at the garage. The '
                       'mechanic said the brakes needed attention, and we had them checked too.” says Mia. “Smart. We’re having our roof inspected next week, and we are '
                       'going to have the gutters cleaned as well.” says Gwen.',
@@ -223,9 +222,9 @@ SUPP = {'badge': {'desc': 'Use have something done', 'icon': '🚗', 'name': 'Ha
                       'the shop give him a guarantee, or did he have to pay again?” says Mia. “They gave him a guarantee, so he had the screen replaced for free. It '
                       'took only two days.” says Gwen.',
                       '“Good. Next week I’m having the kitchen painted, and I need to have my passport photo taken as well.” says Mia. “We should plan a day together '
-                      'and have everything done. Then we can relax and have lunch.” says Gwen. The waiter brings two hot chocolates. Mia takes out a long list from her '
-                      'bag. Gwen laughs and adds three more items. Outside, the rain finally stops. A ferry crosses the grey water slowly. They decide to have a day of '
-                      'errands together.'],
+                      'and have everything done. Then we can relax and have lunch.” says Gwen. The waiter brings two hot chocolates. Mia takes out a long list. Gwen '
+                      'laughs and adds three more items. Outside, the rain finally stops. A ferry crosses the grey water. They decide to have a day of errands '
+                      'together.'],
              'tf': [{'ans': False, 's': 'Mia fixed the car herself.', 'why': 'She had it repaired at the garage.'},
                     {'ans': True, 's': 'Gwen is having the roof inspected.', 'why': 'Next week.'},
                     {'ans': True, 's': 'Gwen’s husband had his screen replaced for free.', 'why': 'It had a guarantee.'},

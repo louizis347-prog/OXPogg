@@ -26,7 +26,7 @@ BAN_B2=[(r"\b(hardly|scarcely|barely) (had|have|did|does|do)\b","inversão (C1)"
  (r"\bnot only (did|do|does|have|has|had|was|were|is|are|can|will)\b","not only + inversão (C1)"),(r"\bnever (have|had|did|do|does|has|will|would|was|were) (i|we|you|he|she|they|it)\b","inversão com never (C1)"),
  (r"\bnor (do|did|does|have|has|had|am|is|are|was|were|can|will) \w+","nor + inversão (C1)"),(r"\bonly (when|after|if|then|by|once) (did|do|does|had|have|has|can|will|would|was|were|is|are) ","only + inversão (C1)"),
  (r"(^|[.!?]\s*)(Had|Should) (I|you|he|she|it|we|they) \w+[^?]*,","condicional invertido (C1)"),(r"\bif (i|you|he|she|it|we|they) were to\b","were to (C1)"),
- (r"\b(suggest|insist|recommend|demand|propose|request)(ed|s)? that\b","subjuntivo formal (C1)"),(r"\bhaving (been|finished|done|seen|made|taken|read|left|gone|eaten|written|spent|lost|decided)\b","particípio perfeito (C1)"),
+ (r"\b(suggest|insist|recommend|demand|propose|request)(ed|s)? that (i|you|he|she|we|they|it) (be|go|do|come|take|have|make|stay|leave|wait|see|get|pay|sign|attend)\b","subjuntivo formal (C1)"),(r"\bhaving (been|finished|done|seen|made|taken|read|left|gone|eaten|written|spent|lost|decided)\b","particípio perfeito (C1)"),
  (r"\bwill have been \w+ing\b","futuro perfeito contínuo (C1)"),(r"\b(what|all) (i|we|you|he|she|they) (need|want|mean|meant|did|do|wanted|needed)(s)? (is|was)\b","oração clivada (C1)"),
  (r"\bit (is|was) (not )?\w+ (that|who) ","oração clivada (C1)"),(r"\b(be|get|become|grow) accustomed to\b|\bhad it not been\b|\bbut for\b","estrutura C1")]
 def grammar_check(k,texts,b1=False):
