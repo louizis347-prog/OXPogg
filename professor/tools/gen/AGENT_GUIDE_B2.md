@@ -38,3 +38,8 @@ Quando todas as suas aulas estiverem `ok` sem avisos (rode de novo todas no fim)
 - "can’t", "won’t", "cannot" e nomes comuns não reconhecidos (Sofia, Helen, Sam…) ainda podem ser acusados como CEFR?: use "can not/will not" em forma por extenso só se não houver outra frase natural, ou ensine a palavra em `gl`/`ex`; para nomes, use os do plano.
 - Mantenha o texto de leitura/cultura B2: nada de estruturas C1 (inversões, clivadas, subjuntivo formal, particípio perfeito, futuro perfeito contínuo).
 - Abertura (O) e fecho (C): 6 pares sempre que o texto de leitura permitir; não reduza para 5 sem necessidade.
+
+## ADENDO 2 (aulas 4171–4200)
+- O plano agora tem 200 linhas (`/tmp/b2/planb2.py`); `B2(k,d)` com k = NN − 4000 (171…200). Modelos B2 validados: `/tmp/gen/g4045.py`, `/tmp/gen/g4086.py`, `/tmp/gen/g4120.py`. Vale tudo do guia e do ADENDO anterior.
+- QUALIDADE (melhorias pedidas após a avaliação): (1) NÃO repita a estrutura-alvo em quase toda fala; apareça em 5–7 falas, e o resto do diálogo deve ser conversa natural com outras estruturas B2 já vistas; (2) varie o registro (informal/formal), com situação concreta, conflito pequeno e desfecho; (3) diálogos de 8–20 palavras por fala, sem frases de manual; (4) prefira a palavra natural do tema e ENSINE-A em `gl`/`ex` em vez de trocá-la por uma artificial; (5) a obra cultural deve ter ligação real com o tema (nada de apelidos de cidade); (6) checagem de obra repetida: normalize "The/A" e apóstrofos antes de escolher (o registro só compara texto idêntico).
+- Abertura (O) e fecho (C): 6 pares sempre que o texto de leitura permitir.
