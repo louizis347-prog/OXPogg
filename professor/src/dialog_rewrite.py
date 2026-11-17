@@ -258,6 +258,19 @@ def apply(folder=None):
     for n, e in rej[:12]: print(' ', n, e)
     json.dump(rej, open(os.path.join(WORK, 'rejeitadas.json'), 'w'), ensure_ascii=False)
 
+def validate_pack(k):
+    packs = {str(pk['n']): pk for pk in json.load(open(os.path.join(WORK, 'in/d%s.json' % k)))}
+    try: data = json.load(open(os.path.join(WORK, 'out/d%s.json' % k)))
+    except Exception as e: print('JSON inválido:', e); return
+    ok = 0
+    for n, pk in packs.items():
+        o = data.get(n)
+        if not o: print(n, 'AUSENTE'); continue
+        err = validate(pk, o)
+        if err: print(n, err)
+        else: ok += 1
+    print('%d de %d aulas passam no validador' % (ok, len(packs)))
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'check'
-    {'select': select, 'check': check, 'fixnames': fixnames, 'dryfix': lambda: fixnames(True)}.get(cmd, lambda: apply(sys.argv[2] if len(sys.argv) > 2 else None))()
+    {'validate': lambda: validate_pack(sys.argv[2]), 'select': select, 'check': check, 'fixnames': fixnames, 'dryfix': lambda: fixnames(True)}.get(cmd, lambda: apply(sys.argv[2] if len(sys.argv) > 2 else None))()
