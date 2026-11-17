@@ -44,7 +44,7 @@ SUPP = {'badge': {'desc': 'Review wish, third conditional and reported speech', 
                                 'ok': False,
                                 'pt': 'Eu li. Uma delas dizia que eu nunca ouvia. Queria ter provado que você estava errada.'}],
                       'pt': 'Então foi por isso que você ignorou minhas ligações! Achei que você vinha me evitando, e queria não ter mandado aquelas mensagens.'},
-                     {'npc': 'You didn’t have to prove anything. My sister told me not to push you, but I wouldn’t have listened to anyone.',
+                     {'npc': 'You didn’t have to prove it. My sister told me not to push you, but I wouldn’t have listened to anyone.',
                       'opts': [{'en': 'Your sister is wise. She called me and asked me to give you a chance to explain, and I agreed.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -57,7 +57,7 @@ SUPP = {'badge': {'desc': 'Review wish, third conditional and reported speech', 
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Sua irmã é sábia. Ela me ligou e pediu que eu desse a você uma chance de explicar, e eu concordei.'}],
-                      'pt': 'Você não precisava provar nada. Minha irmã me disse para não pressionar você, mas eu não teria ouvido ninguém.'},
+                      'pt': 'Você não precisava provar. Minha irmã me disse para não pressionar você, mas eu não teria ouvido ninguém.'},
                      {'npc': 'If she hadn’t called, would you have come tonight? I wish I knew what you thought.',
                       'opts': [{'en': 'Probably. I had already decided to call you, and I would have apologised before the weekend ended.',
                                 'fb': 'Natural e claro.',
@@ -156,8 +156,8 @@ SUPP = {'badge': {'desc': 'Review wish, third conditional and reported speech', 
                     'I read them. One of them said that I never listened. I wish I had proved you wrong.',
                     'Eu li. Uma delas dizia que eu nunca ouvia. Queria ter provado que você estava errada.'),
                    ('Carla',
-                    'You didn’t have to prove anything. My sister told me not to push you, but I wouldn’t have listened to anyone.',
-                    'Você não precisava provar nada. Minha irmã me disse para não pressionar você, mas eu não teria ouvido ninguém.'),
+                    'You didn’t have to prove it. My sister told me not to push you, but I wouldn’t have listened to anyone.',
+                    'Você não precisava provar. Minha irmã me disse para não pressionar você, mas eu não teria ouvido ninguém.'),
                    ('You',
                     'Your sister is wise. She called me and asked me to give you a chance to explain, and I agreed.',
                     'Sua irmã é sábia. Ela me ligou e pediu que eu desse a você uma chance de explicar, e eu concordei.'),
@@ -168,8 +168,8 @@ SUPP = {'badge': {'desc': 'Review wish, third conditional and reported speech', 
                     'Probably. I had already decided to call you, and I would have apologised before the weekend ended.',
                     'Provavelmente. Eu já tinha decidido ligar para você e teria pedido desculpas antes de o fim de semana acabar.'),
                    ('Carla',
-                    'Then let’s make up. I promise that I will listen more, and I wish we had done this on Tuesday.',
-                    'Então vamos fazer as pazes. Prometo que vou ouvir mais, e queria que tivéssemos feito isso na terça.')],
+                    'Then let’s make up. I promise I will listen more, and I wish we had done this on Tuesday.',
+                    'Então vamos fazer as pazes. Prometo ouvir mais, e queria que tivéssemos feito isso na terça.')],
          'mission': 'Revisar wish, 3º condicional e discurso indireto em conflitos',
          'npc': 'Carla',
          'p': 'Revise wish, 3º condicional e discurso indireto ao fazer as pazes.',
@@ -218,13 +218,13 @@ SUPP = {'badge': {'desc': 'Review wish, third conditional and reported speech', 
                       '“And if I had told you about my boss, we wouldn’t have argued. He asked me to finish the report by Friday.” says Paulo. “So that’s why you '
                       'ignored my calls! I thought you had been avoiding me, and I wish I hadn’t sent those messages.” says Carla. “I read them. One of them said that I '
                       'never listened. I wish I had proved you wrong.” says Paulo.',
-                      '“You didn’t have to prove anything. My sister told me not to push you, but I wouldn’t have listened to anyone.” says Carla. “Your sister is wise. '
-                      'She called me and asked me to give you a chance to explain, and I agreed.” says Paulo. “If she hadn’t called, would you have come tonight? I wish '
-                      'I knew what you thought.” says Carla.',
-                      '“Probably. I had already decided to call you, and I would have apologised before the weekend ended.” says Paulo. “Then let’s make up. I promise '
-                      'that I will listen more, and I wish we had done this on Tuesday.” says Carla. Carla orders two cups of tea. Paulo takes her hand across the '
-                      'table. They laugh about the silly messages. Her sister texts a smiling emoji. The café closes, but they stay outside. The friendship feels '
-                      'stronger than before.'],
+                      '“You didn’t have to prove it. My sister told me not to push you, but I wouldn’t have listened to anyone.” says Carla. “Your sister is wise. She '
+                      'called me and asked me to give you a chance to explain, and I agreed.” says Paulo. “If she hadn’t called, would you have come tonight? I wish I '
+                      'knew what you thought.” says Carla.',
+                      '“Probably. I had already decided to call you, and I would have apologised before the weekend ended.” says Paulo. “Then let’s make up. I promise I '
+                      'will listen more, and I wish we had done this on Tuesday.” says Carla. Carla orders two cups of tea. Paulo takes her hand across the table. They '
+                      'laugh about the silly messages. Her sister texts a smiling emoji. The café closes, but they stay outside. The friendship feels stronger than '
+                      'before.'],
              'tf': [{'ans': True, 's': 'Paulo asked for space.', 'why': 'He told Carla he needed it.'},
                     {'ans': False, 's': 'Paulo did not have a report to finish.', 'why': 'His boss asked him to finish one.'},
                     {'ans': True, 's': 'Carla’s sister called Paulo.', 'why': 'Yes.'},
