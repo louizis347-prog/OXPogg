@@ -17,18 +17,18 @@ SUPP = {'badge': {'desc': 'Use narrativa e wish', 'icon': '⛰️', 'name': 'A t
                                 'pt': 'Lembro. Você nunca tinha tirado férias de verdade, e vinha reclamando do estresse havia meses.'}],
                       'pt': 'Paulo, uma viagem mudou minha visão da vida. Antes de sair de Houston, eu vinha trabalhando catorze horas por dia havia anos.'},
                      {'npc': 'Exactly. When I reached the mountain village, I had been travelling for two days and I had not slept properly.',
-                      'opts': [{'en': 'And then you started hiking? You had never climbed anything bigger than a hill, had you?',
+                      'opts': [{'en': 'And then you started hiking? You had never climbed anything higher than a hill, had you?',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
-                                'pt': 'E então você começou a caminhar? Nunca tinha escalado nada maior que uma colina, tinha?'},
-                               {'en': 'then never hill, hiking? started bigger you anything climbed you? had And had than a You',
+                                'pt': 'E então você começou a caminhar? Nunca tinha escalado nada mais alto que uma colina, tinha?'},
+                               {'en': 'then never hill, hiking? started higher you anything climbed you? had And had than a You',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
-                                'pt': 'E então você começou a caminhar? Nunca tinha escalado nada maior que uma colina, tinha?'},
-                               {'en': 'And then you started hiking? You had never anything bigger than a hill, had you?',
+                                'pt': 'E então você começou a caminhar? Nunca tinha escalado nada mais alto que uma colina, tinha?'},
+                               {'en': 'And then you started hiking? You had never anything higher than a hill, had you?',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
-                                'pt': 'E então você começou a caminhar? Nunca tinha escalado nada maior que uma colina, tinha?'}],
+                                'pt': 'E então você começou a caminhar? Nunca tinha escalado nada mais alto que uma colina, tinha?'}],
                       'pt': 'Exatamente. Quando cheguei ao vilarejo na montanha, eu estava viajando havia dois dias e não tinha dormido direito.'},
                      {'npc': 'Never. By the third morning I had walked twenty kilometres, and my legs had stopped hurting. I felt strong.',
                       'opts': [{'en': 'So what changed your view? Was it the landscape, or had you simply been needing silence?',
@@ -143,8 +143,8 @@ SUPP = {'badge': {'desc': 'Use narrativa e wish', 'icon': '⛰️', 'name': 'A t
                     'Exactly. When I reached the mountain village, I had been travelling for two days and I had not slept properly.',
                     'Exatamente. Quando cheguei ao vilarejo na montanha, eu estava viajando havia dois dias e não tinha dormido direito.'),
                    ('You',
-                    'And then you started hiking? You had never climbed anything bigger than a hill, had you?',
-                    'E então você começou a caminhar? Nunca tinha escalado nada maior que uma colina, tinha?'),
+                    'And then you started hiking? You had never climbed anything higher than a hill, had you?',
+                    'E então você começou a caminhar? Nunca tinha escalado nada mais alto que uma colina, tinha?'),
                    ('Bill',
                     'Never. By the third morning I had walked twenty kilometres, and my legs had stopped hurting. I felt strong.',
                     'Nunca. Na terceira manhã eu tinha caminhado vinte quilômetros e minhas pernas tinham parado de doer. Eu me sentia forte.'),
@@ -215,7 +215,7 @@ SUPP = {'badge': {'desc': 'Use narrativa e wish', 'icon': '⛰️', 'name': 'A t
                       '“Paulo, a trip changed my view of life. Before I left Houston, I had been working fourteen hours a day for years.” says Bill. “I remember. You '
                       'had never taken a real vacation, and you had been complaining about stress for months.” says Paulo. “Exactly. When I reached the mountain '
                       'village, I had been travelling for two days and I had not slept properly.” says Bill.',
-                      '“And then you started hiking? You had never climbed anything bigger than a hill, had you?” says Paulo. “Never. By the third morning I had walked '
+                      '“And then you started hiking? You had never climbed anything higher than a hill, had you?” says Paulo. “Never. By the third morning I had walked '
                       'twenty kilometres, and my legs had stopped hurting. I felt strong.” says Bill. “So what changed your view? Was it the landscape, or had you '
                       'simply been needing silence?” says Paulo.',
                       '“Both. Our guide had been climbing there for thirty years, and he had never rushed once. He taught me patience.” says Bill. “Wow. I wish I had '
