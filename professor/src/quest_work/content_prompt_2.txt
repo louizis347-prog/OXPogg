@@ -1,0 +1,20 @@
+Tarefa: criar conteúdo extra para as aulas QUEST de inglês americano (nível A1, alunos brasileiros adultos e adolescentes, aulas de professor particular/grupo ao vivo). Aproveita ideias do curso "Inglês do zero ao C2": vocabulário com exercícios, armadilha de tradução, prática de correção e registro das expressões.
+
+Entrada: /home/user/OXPogg/professor/src/quest_work/in/c2.json = {"N": {"title","topic","words":[[palavra,tradução,frase de exemplo],...],"exprs":[expressões],"verbs":[verbos],"neighbors":[palavras de aulas vizinhas]}}
+Saída: /home/user/OXPogg/professor/src/quest_work/out/c2.json (Write, um único JSON válido; grave DIRETO nesse caminho — o diretório temporário da sessão pode ser apagado, então NÃO deixe o resultado só em /tmp). Não toque em nenhum outro arquivo do repositório. Formato:
+{"N": {
+ "trap": {"label":"título curto em PT do erro","wrong":"frase em inglês com o erro típico de brasileiro","right":"frase corrigida","why":"explicação em PT (1–2 frases): por que o erro acontece (interferência do português) e a regra"},
+ "fix": [{"q":"Which sentence is correct?","opts":["frase A","frase B","frase C"],"ans":0,"why":"explicação curta em PT"}, ... 3 itens],
+ "syn": [["palavra da aula","sinônimo ou oposto real","syn|ant"], ... 3 a 4 pares],
+ "classify": {"title":"tema em PT","A":["3+ palavras"],"B":["3+ palavras de outro tema"]},
+ "reg": {"<expressão exatamente como em exprs>": "formal|neutro|informal", ...}   // todas as expressões da aula
+}}
+
+REGRAS (importantes):
+1. Nível A1: frases curtas e simples, vocabulário básico, inglês AMERICANO (apartment, elevator, truck, cookie, color, neighbor). Nada de ortografia britânica.
+2. TRAP: o erro deve ser real e frequente em brasileiros ligado ao tema da aula (falso cognato, ordem de palavras, falta do sujeito, preposição, artigo, plural). A frase "wrong" deve parecer algo que o aluno diria. Explicação clara e curta em PT. Prefira armadilhas ligadas ao tema; varie o tipo de erro entre aulas vizinhas.
+3. FIX: 3 perguntas "Which sentence is correct?"; só UMA opção correta; as erradas têm erros típicos (não absurdos) e tamanho parecido; espalhe a posição da resposta certa (ans 0, 1 e 2); use vocabulário da aula quando possível; why em PT. Varie o tipo de erro (não repita só "falta de -s").
+4. SYN: pares reais que um dicionário aceitaria. "palavra da aula" deve estar em words (ou neighbors). Prefira antônimos reais quando não houver sinônimo (hot/cold, buy/sell, open/close). Nunca invente par duvidoso.
+5. CLASSIFY: A e B só com palavras de "words" e "neighbors" (copie exatamente), 3+ em cada, temas distintos e coerentes. Se não houver tema coerente, escolha o melhor par possível e diga na resposta final.
+6. REG: formal (educado/profissional), neutro (uso geral) ou informal (entre amigos). A maioria em A1 é neutro; informal para "Hey", "What's up?", "Have a good one!"; formal para "Excuse me, could you…", "I'd like…".
+7. Confira por script: JSON válido, todas as aulas de N presentes, ans dentro do intervalo, palavras de syn/classify existem em words+neighbors, reg cobre todos os exprs. Trabalhe em pasta de rascunho PRIVADA (ex.: /tmp/qw_K/). Resposta final: resumo curto e limitações honestas.

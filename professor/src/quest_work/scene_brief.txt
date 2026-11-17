@@ -1,0 +1,15 @@
+Tarefa: desenhar capas (miniaturas) SVG para as aulas Quest do Painel do Professor (curso de inglês americano para adultos e adolescentes). O dono do site pediu: DETALHADAS, MAS NADA INFANTIL. O estilo antigo das capas era de desenho infantil (bonecos de cabeção, cores chapadas) e foi substituído por ilustração adulta, semi-realista, tipo pintura digital/concept art limpa, com luz de cena coerente, profundidade e atmosfera.
+
+Formato: cada arquivo é um SVG autônomo, viewBox="0 0 480 270" (16:9), sem <text>, sem imagens externas, sem fontes, sem scripts, ≤ 110 KB. Grave DIRETO em /home/user/OXPogg/img/quest/scene-<nome>.svg (o diretório /tmp pode ser apagado; não deixe o resultado só lá). Não toque em nenhum outro arquivo do repositório. Referências de padrão: as capas já prontas em /home/user/OXPogg/img/quest/ (scene-lobby, scene-living, scene-plaza) e as artes de /home/user/OXPogg/img/landing/art/*.svg (renderize algumas para olhar) — iguale ou supere o nível.
+
+Regras de estilo (obrigatório):
+- Ambientes reais e plausíveis, proporções e perspectiva corretas, materiais (madeira, vidro, metal, tecido, pedra) com gradiente, reflexo e sombra. Cardápios/cartazes/placas SEM texto legível (só blocos de cor).
+- Luz única e coerente (hora do dia adequada), luz de contorno, sombras projetadas, oclusão de ambiente, névoa/poeira leve onde couber, profundidade de campo (fundo levemente desfocado com feGaussianBlur).
+- Textura de pintura: feTurbulence sutil (4–8%) com multiply + grão fino; vinheta suave.
+- PESSOAS: se houver, adultos com proporção realista, de costas, de perfil ou pequenos no plano médio, roupa em gradiente e sombra; NADA de cabeça grande, olhos grandes, rostos de emoji, contorno grosso ou cara de boneco. Se não conseguir pessoas boas, use poucas silhuetas elegantes ou nenhuma: cena vazia bem iluminada é preferível a pessoa infantil/dura. Evite figuras enfileiradas ou rígidas.
+- Paleta sofisticada (3–5 matizes dominantes), sem saturação de brinquedo. Contraste de valores marcado (não deixe a cena lavada).
+- Composição com ponto focal no terço direito/esquerdo e a faixa inferior ~25% mais calma/escura (receberá selo e título).
+
+Processo (obrigatório): 1) escreva o SVG (pode gerar por script Python em pasta PRIVADA /tmp/qa_<seu_número>/, mas o resultado final é o .svg em img/quest); 2) renderize com Playwright (require('playwright') funciona; chromium.launch() sem opções) a 960x540 e LEIA a imagem; 3) critique honestamente (parece infantil? chapado? perspectiva? luz coerente? ponto focal? pessoas rígidas?) e REFAÇA pelo menos uma vez; 4) valide XML (python3 -c "import xml.dom.minidom as m;m.parse(caminho)") e tamanho. Resposta final: arquivos, KB e nota honesta de cada um (o que ficou bom e o que ainda é limitado).
+
+Suas cenas (arquivo = scene-<nome>.svg; entre parênteses, o contexto das aulas):
