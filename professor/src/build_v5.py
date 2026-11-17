@@ -13,16 +13,18 @@ def load(p):
 EN = [e for e in load('en-a1') if e['n'] < 7000000]
 EN2 = [e for e in load('en-a2') if e['n'] < 7000000]
 EN3 = [e for e in load('en-b1') if e['n'] < 7000000]
+EN4 = [e for e in load('en-b2') if e['n'] < 7000000]
 def _focus(f, base):
     try:
         sp = importlib.util.spec_from_file_location('plan_x', os.path.join(HERE, '..', 'tools', f)); m = importlib.util.module_from_spec(sp); sp.loader.exec_module(m)
         return {base + i + 1: r[4] for i, r in enumerate(m.P)}
     except Exception: return {}
 FOCUS_B1 = _focus('plan_b1.py', 3000)
+FOCUS_B2 = _focus('plan_b2.py', 4000)
 FOCUS_A2 = {n: f for n, f in _focus('plan_a2.py', 2000).items() if n <= 2500}
 try: OBRAS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras.json'), encoding='utf-8'))
 except OSError: OBRAS = {}
-level_of = lambda n: 'B1' if n >= 3000 else 'A2' if n >= 2000 else 'A1'
+level_of = lambda n: 'B2' if n >= 4000 else 'B1' if n >= 3000 else 'A2' if n >= 2000 else 'A1'
 FILLER = {'That sounds good. What should we do next?', 'Let me check the details before we decide.', 'Could you say that one more time?', 'Sure, I will explain it clearly.', 'Thanks, now I know how to continue.'}
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
@@ -164,8 +166,9 @@ def add_support_words(L, n):
 
 def build(n):
     n0 = n % 1000 if n >= 1000 else n
-    S = supp(n); en, nb = (EN3 if n >= 3000 else EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
-    if n in FOCUS_B1: en = dict(en, s='Foco da aula: ' + FOCUS_B1[n])
+    S = supp(n); en, nb = (EN4 if n >= 4000 else EN3 if n >= 3000 else EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
+    if n in FOCUS_B2: en = dict(en, s='Foco da aula: ' + FOCUS_B2[n])
+    elif n in FOCUS_B1: en = dict(en, s='Foco da aula: ' + FOCUS_B1[n])
     elif n in FOCUS_A2: en = dict(en, s='Foco da aula: ' + FOCUS_A2[n])
     if str(n) in OBRAS:  # referência cultural própria da aula (src/obras.json): não repete a obra do episódio regular
         ob = OBRAS[str(n)]; en = dict(en); en['a'] = dict(en.get('a', {}), w=ob['w'], y=ob.get('y', ''), d=ob['d'])
@@ -193,7 +196,7 @@ def build(n):
         st = en.get('stage') or {}
         return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
     P = {}
-    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level=level_of(n), unit=dict(n=(200 if n >= 3000 else 100 if n >= 2000 else 0) + math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
+    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level=level_of(n), unit=dict(n=(300 if n >= 4000 else 200 if n >= 3000 else 100 if n >= 2000 else 0) + math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
         canDo=['Say: ' + strip(i['en']) for i in exps[:4]], success=['I understand the conversation.', 'I use the key expression.', 'I answer a real question.', 'I close politely.'],
         think=strip(nhero.get('mission', '')))

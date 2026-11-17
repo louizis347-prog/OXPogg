@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Auditoria de vocabulário por nível CEFR (CEFR-J Vocabulary Profile, Tono Lab / openlanguageprofiles/olp-en-cefrj).
 Uso: cefr_audit.py [de ate]  — lista, por aula, as palavras do diálogo e do vocabulário acima do nível da aula.
-Nível da aula: A1 (n<2000), A2 (2000–2999) ou B1 (n>=3000). Nomes próprios (elenco, cidades) e números são ignorados."""
+Nível da aula: A1 (n<2000), A2 (2000–2999), B1 (3000–3999) ou B2 (n>=4000). Nomes próprios (elenco, cidades) e números são ignorados."""
 import glob, json, os, re, sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')); D = os.path.join(ROOT, 'data')
 W = json.load(open(os.path.join(D, 'cefrj-vocab.json'), encoding='utf-8')); RANK = {'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4}
-IRR = {'went':'go','gone':'go','saw':'see','seen':'see','took':'take','taken':'take','ate':'eat','eaten':'eat','bought':'buy','made':'make','came':'come','said':'say','got':'get','gave':'give','given':'give','found':'find','left':'leave','lost':'lose','met':'meet','wrote':'write','written':'write','sent':'send','paid':'pay','slept':'sleep','swam':'swim','drove':'drive','ran':'run','won':'win','brought':'bring','caught':'catch','broke':'break','broken':'break','forgot':'forget','felt':'feel','heard':'hear','told':'tell','knew':'know','thought':'think','stood':'stand','sang':'sing','wore':'wear','had':'have','did':'do','was':'be','were':'be','been':'be','am':'be','is':'be','are':'be','children':'child','men':'man','women':'woman','people':'person','feet':'foot','teeth':'tooth','spent':'spend','read':'read','sat':'sit','flew':'fly','woke':'wake','hid':'hide','built':'build','kept':'keep','held':'hold','let':'let','put':'put','cut':'cut','hit':'hit','set':'set','shut':'shut','became':'become','began':'begin','grew':'grow','threw':'throw','drank':'drink','fell':'fall','understood':'understand','lent':'lend','dug':'dig'}
+IRR = {'went':'go','gone':'go','saw':'see','seen':'see','took':'take','taken':'take','ate':'eat','eaten':'eat','bought':'buy','made':'make','came':'come','said':'say','got':'get','gave':'give','given':'give','found':'find','left':'leave','lost':'lose','met':'meet','wrote':'write','written':'write','sent':'send','paid':'pay','slept':'sleep','swam':'swim','drove':'drive','ran':'run','won':'win','brought':'bring','caught':'catch','broke':'break','broken':'break','forgot':'forget','felt':'feel','heard':'hear','told':'tell','knew':'know','thought':'think','stood':'stand','sang':'sing','wore':'wear','had':'have','did':'do','was':'be','were':'be','been':'be','am':'be','is':'be','are':'be','children':'child','men':'man','women':'woman','people':'person','feet':'foot','teeth':'tooth','spent':'spend','read':'read','sat':'sit','flew':'fly','woke':'wake','hid':'hide','built':'build','kept':'keep','held':'hold','let':'let','put':'put','cut':'cut','hit':'hit','set':'set','shut':'shut','became':'become','began':'begin','grew':'grow','threw':'throw','drank':'drink','fell':'fall','understood':'understand','lent':'lend','dug':'dig','chosen':'choose','chose':'choose','forgotten':'forget','forgot':'forget','ridden':'ride','rode':'ride','driven':'drive','drove':'drive','flown':'fly','flew':'fly','spoke':'speak','spoken':'speak','rang':'ring','rung':'ring','stolen':'steal','stole':'steal','grown':'grow','grew':'grow','known':'know','knew':'know','written':'write','wrote':'write','broken':'break','broke':'break','woken':'wake','woke':'wake','worn':'wear','wore':'wear','torn':'tear','tore':'tear','shown':'show','thrown':'throw','threw':'throw','drawn':'draw','drew':'draw','begun':'begin','began':'begin','sung':'sing','sang':'sing','swum':'swim','swam':'swim','drunk':'drink','drank':'drink','hidden':'hide','hid':'hide','fallen':'fall','fell':'fall','bitten':'bite','bit':'bite','blown':'blow','blew':'blow','frozen':'freeze','froze':'freeze','lain':'lie','lay':'lie','risen':'rise','rose':'rise','shaken':'shake','shook':'shake','sworn':'swear','swore':'swear','dealt':'deal','held':'hold','kept':'keep','lent':'lend','lit':'light','meant':'mean','paid':'pay','sold':'sell','sent':'send','spent':'spend','stood':'stand','taught':'teach','told':'tell','understood':'understand','won':'win','caught':'catch','built':'build','dug':'dig','fed':'feed','felt':'feel','fought':'fight','found':'find','hung':'hang','heard':'hear','led':'lead','left':'leave','lost':'lose','met':'meet','read':'read','sat':'sit','slept':'sleep','swept':'sweep','thought':'think','bought':'buy','brought':'bring','became':'become','overcame':'overcome','forgave':'forgive','forgiven':'forgive'
+}
 SKIP = set("christmas café cafe tv ok".split()) | set('monday tuesday wednesday thursday friday saturday sunday january february march april may june july august september october november december usa america american english spanish french brazil brazilian mr mrs ms dr ok okay oh hey hi wow yeah yes no'.split())
 def base_forms(w):
     yield w
@@ -56,7 +57,7 @@ def words_of(d):
     return out
 def audit(n, d=None):
     d = d or json.load(open(os.path.join(D, 'v4', '%03d.json' % n if n < 1000 else '%d.json' % n), encoding='utf-8'))
-    cap = 3 if n >= 3000 else 2 if n >= 2000 else 1; bad = []
+    cap = 4 if n >= 4000 else 3 if n >= 3000 else 2 if n >= 2000 else 1; bad = []
     for w, src in words_of(d).items():
         lv = level(w)
         if lv is None:
@@ -97,7 +98,7 @@ def taught_words(d):
 def violations(n, d=None):
     """Palavras do diálogo acima do nível da aula e que a aula não ensina (regra do projeto)."""
     d = d or json.load(open(os.path.join(D, 'v4', '%03d.json' % n if n < 1000 else '%d.json' % n), encoding='utf-8'))
-    cap = 3 if n >= 3000 else 2 if n >= 2000 else 1; t = taught_words(d); out = []
+    cap = 4 if n >= 4000 else 3 if n >= 3000 else 2 if n >= 2000 else 1; t = taught_words(d); out = []
     for w, src in words_of(d).items():
         if src != 'dialog': continue
         lv = level(w)

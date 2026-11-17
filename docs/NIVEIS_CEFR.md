@@ -78,3 +78,14 @@
 - **Índice do episódio de apoio:** `reg` recomeça a cada 233 (módulo), só para a cena de apoio; título e obra de cada aula são próprios.
 - **Varredura de B2 fora do diálogo (cartões, quiz, cultura):** os achados restantes são exemplos ERRADOS propositais dos exercícios ("If I would have money…", "She said she was being hungry"), pergunta com *whose* (não é relativa) e frases em ordem embaralhada. "Wish you were here" (3367) e algumas notas culturais com *wish* como substantivo ficaram como informação cultural.
 - **Limites:** checagem de gramática por padrões de texto; cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco por falta de certeza. Nenhum professor revisou o conteúdo.
+
+## B2 (4001–4100) — primeiras 100 aulas
+
+- **Numeração:** o B2 usa os ids 4001+ e aparece no painel como "B2 · 001"; plano em `professor/tools/plan_b2.py`, gerador `tools/gen/mk.py` (função `B2`) e guia `tools/gen/AGENT_GUIDE_B2.md`. O subtítulo da aula é "Foco da aula" (vem do plano).
+- **Conteúdo (100 aulas):** present perfect contínuo, past perfect (simples e contínuo), 3º condicional e *wish*/*if only*, modais perfeitos (dedução e crítica), passivos avançados (contínuo, perfeito, futuro, modal, de relato), causativo, discurso indireto completo, relativas não definidoras, *whose*/*whom*, futuro contínuo e perfeito, *be/get used to*, *would rather*, *had better*, *unless*, *so that*, *despite* e revisões.
+- **Gramática proibida (C1):** inversões (hardly/no sooner/not only/never have I), condicional invertido (Had I known…), *were to*, subjuntivo formal (suggest that he go), particípio perfeito (Having finished…), futuro perfeito contínuo, orações clivadas (What I need is… / It was X that…) — lista `BAN_B2` em `mk.py`.
+- **Vocabulário:** 0 palavras fora da regra B2 nos diálogos (`tools/cefr_audit.py`, teto B2). Palavras fora da lista do CEFR-J só entram se a aula as ensina. A tabela de formas irregulares (`chosen`, `spoke`, `flown`…) passou a valer pelo verbo-base.
+- **Teste no navegador:** as 100 aulas têm 44 quadros e nenhum erro.
+- **Títulos e obras:** 100 títulos distintos; as obras não repetem nenhuma de A2/B1 (conferido também com títulos normalizados, sem "The" e com variações). Três obras repetidas foram trocadas (4010, 4036, 4046).
+- **Varredura de C1 fora do diálogo:** os achados restantes são exemplos errados propositais, frases embaralhadas dos exercícios e definições ("get used to means to become accustomed to…").
+- **Limites:** checagem de gramática por padrões de texto; cartões, quiz e cultura dependem da revisão dos autores das fichas. Fatos das obras só amostrados; vários anos em branco. Nenhum professor revisou o conteúdo.

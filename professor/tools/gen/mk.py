@@ -22,8 +22,15 @@ BAN_B1=[(r"\b(had) (been|gone|seen|done|eaten|finished|already|never|just)\b","p
  (r"\bnot only\b|\bhardly\b|\bno sooner\b|\bneither (do|am|have)\b","inversão/correlativa (B2)"),
  (r"\b(is|are|was|were) (being|been) \w+\b","passivo contínuo/perfeito (B2)"),(r"\b(have|has) been (made|built|done|sold|used|written|painted|taken|opened|closed)\b","passivo perfeito (B2)"),
  (r"\bwho(m|se)\b|\bwhere (I|we|you) (live|work|grew)\b","relativo avançado (B2)"),(r"\bso that\b|\bin order to\b","finalidade formal (B2)")]
+BAN_B2=[(r"\b(hardly|scarcely|barely) (had|have|did|does|do)\b","inversão (C1)"),(r"\bno sooner\b","no sooner (C1)"),
+ (r"\bnot only (did|do|does|have|has|had|was|were|is|are|can|will)\b","not only + inversão (C1)"),(r"\bnever (have|had|did|do|does|has|will|would|was|were) (i|we|you|he|she|they|it)\b","inversão com never (C1)"),
+ (r"\bnor (do|did|does|have|has|had|am|is|are|was|were|can|will) \w+","nor + inversão (C1)"),(r"\bonly (when|after|if|then|by|once) (did|do|does|had|have|has|can|will|would|was|were|is|are) ","only + inversão (C1)"),
+ (r"(^|[.!?]\s*)(Had|Should) (I|you|he|she|it|we|they) \w+[^?]*,","condicional invertido (C1)"),(r"\bif (i|you|he|she|it|we|they) were to\b","were to (C1)"),
+ (r"\b(suggest|insist|recommend|demand|propose|request)(ed|s)? that (i|you|he|she|we|they|it) (be|go|do|come|take|have|make|stay|leave|wait|see|get|pay|sign|attend)\b","subjuntivo formal (C1)"),(r"\bhaving (been|finished|done|seen|made|taken|read|left|gone|eaten|written|spent|lost|decided)\b","particípio perfeito (C1)"),
+ (r"\bwill have been \w+ing\b","futuro perfeito contínuo (C1)"),(r"\b(what|all) (i|we|you|he|she|they) (need|want|mean|meant|did|do|wanted|needed)(s)? (is|was)\b","oração clivada (C1)"),
+ (r"\bit (is|was) (not )?(?!said|believed|thought|known|reported|expected|claimed|rumou?red|estimated|understood|assumed|likely|clear|true|possible|important|obvious|certain|surprising|strange|a pity|a shame)\w+ (that|who) ","oração clivada (C1)"),(r"\b(be|get|become|grow) accustomed to\b|\bhad it not been\b|\bbut for\b","estrutura C1")]
 def grammar_check(k,texts,b1=False):
-    return _gc(k,texts,BAN_B1 if b1 else BAN)
+    return _gc(k,texts,BAN_B2 if b1=='b2' else BAN_B1 if b1 else BAN)
 def _gc(k,texts,BAN):
     bad=[]
     for t in texts:
@@ -46,6 +53,8 @@ def _prev_vocab(k,base=2000):
         if base<=n<base+k: out|=s
     return out
 def A2(k,d): return _mk(k,d,2000,PLAN,2)
+def B2(k,d):
+    sys.path.insert(0,'/tmp/b2'); import importlib,planb2; importlib.reload(planb2); return _mk(k,d,4000,planb2.P,4)
 def B1(k,d):
     sys.path.insert(0,'/tmp/b1'); import importlib,planb1; importlib.reload(planb1); return _mk(k,d,3000,planb1.P,3)
 def _mk(k,d,base,PLAN,cap):
@@ -94,7 +103,7 @@ def _mk(k,d,base,PLAN,cap):
     pv=_prev_vocab(k,base); rep=[g[0] for g in gl[:6] if g[0].lower() in pv]
     if len(rep)>=3: print('REPEAT?',k,'palavras já ensinadas em aulas A2 anteriores:',rep)
     if cef: print('CEFR?',k,sorted(set(cef)))
-    gb=grammar_check(k,[e for _,e,_ in L]+[e[0] for e in d['ex']]+[e[0] for e in d['ex']][:0],base==3000)
+    gb=grammar_check(k,[e for _,e,_ in L]+[e[0] for e in d['ex']]+[e[0] for e in d['ex']][:0],{3000:True,4000:'b2'}.get(base,False))
     if gb: print('GRAMMAR?',k,gb)
     for mo in d['mo']:
         f=mo[1]
@@ -103,7 +112,7 @@ def _mk(k,d,base,PLAN,cap):
     if 'obra' in d:
         sys.path.insert(0,'/tmp/gen'); import obra as _ob
         w,y,nt=d['obra']; _ob.register(base+k,w,y,nt)
-    elif k>=351 or base==3000: print('OBRA? falta d["obra"]=(título, ano, nota em português) na ficha',k)
+    elif k>=351 or base>=3000: print('OBRA? falta d["obra"]=(título, ano, nota em português) na ficha',k)
     compact(base+k,m)
 def vb_(s):
     v,ic,pt,past,p1,p3,pp,pg=s.split('|')
