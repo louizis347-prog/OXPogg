@@ -67,7 +67,7 @@ X = dict(
   dict(npc="Let's read it together. What is seven plus eight?", pt="Vamos ler juntos. Quanto é sete mais oito?", opts=[
    dict(en="I don't understand.", pt="Não entendo.", ok=False, fb="É uma conta fácil: responda."),
    dict(en="It's fifteen.", pt="São quinze.", ok=True, fb="Responde a conta."),
-   dict(en="Let's read it together.", pt="Vamos ler juntos.", ok=False, fb="Ela já disse isso.")]),
+   dict(en="Can I use a calculator?", pt="Posso usar uma calculadora?", ok=False, fb="Ela fez uma pergunta de matemática; responda.")]),
   dict(npc="Right! Now write the answer.", pt="Certo! Agora escreva a resposta.", opts=[
    dict(en="What is seven plus eight?", pt="Quanto é sete mais oito?", ok=False, fb="Já foi respondido."),
    dict(en="Yes, great job!", pt="Sim, ótimo trabalho!", ok=False, fb="Esse elogio vem dela, não de você."),

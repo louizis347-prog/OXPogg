@@ -70,9 +70,9 @@ SUPP = {
      {'en': 'Bye! Have a good one.', 'pt': 'Tchau! Boa continuação.', 'ok': True, 'fb': 'A casual goodbye.'},
      {'en': 'Hello again!', 'pt': 'Olá de novo!', 'ok': False, 'fb': 'It is a goodbye.'}]},
    {'npc': 'See you tomorrow!', 'pt': 'Até amanhã!', 'opts': [
-     {'en': 'Good night, Ben!', 'pt': 'Boa noite, Ben!', 'ok': False, 'fb': 'Too early for night in this scene. Say See you tomorrow!'},
+     {'en': 'Good night, Ben!', 'pt': 'Boa noite, Ben!', 'ok': False, 'fb': 'Too early for night in this scene. Say Bye! Have a good day.'},
      {'en': 'Yes, tomorrow is good.', 'pt': 'Sim, amanhã é bom.', 'ok': False, 'fb': 'Do not answer like a question.'},
-     {'en': 'See you tomorrow!', 'pt': 'Até amanhã!', 'ok': True, 'fb': 'Repeat the idea. Easy and natural.'}]},
+     {'en': 'Bye! Have a good day.', 'pt': 'Tchau! Tenha um bom dia.', 'ok': True, 'fb': 'A friendly goodbye. Easy and natural.'}]},
   ]},
  'errors': [
   {'wrong': 'I am fine, and you are?', 'fix': 'I’m fine, and you?', 'alt': 'I am fine, how you?', 'why': 'Use And you? as a short question.'},

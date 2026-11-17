@@ -70,5 +70,5 @@ X = dict(
    dict(en='Thanks, Jordan! See you Friday.', pt='Valeu, Jordan! Até sexta.', ok=True, fb='Agradece e confirma o dia.')]),
   dict(npc='Thanks for coming!', pt='Obrigado por vir!', opts=[
    dict(en='Thanks for having me over!', pt='Obrigado por me receber!', ok=True, fb='Frase clássica do convidado.'),
-   dict(en='Thanks for coming too!', pt='Obrigado por vir também!', ok=False, fb='Você é o convidado; quem recebeu foi ele.'),
+   dict(en='Welcome to my home!', pt='Bem-vindo à minha casa!', ok=False, fb='Você é o convidado; quem recebe é ele.'),
    dict(en='Come to my place next time.', pt='Venha à minha casa na próxima.', ok=False, fb='Bom convite, mas agradeça primeiro.')])]))

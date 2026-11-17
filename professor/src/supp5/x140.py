@@ -87,6 +87,6 @@ X = {'key': {'big': 'Is this the right train?',
                                {'en': 'Tap your card, please.', 'pt': 'Encoste o cartão, por favor.', 'ok': False, 'fb': 'Quem diz isso é ela.'}]},
                      {'npc': 'Follow the signs. Here comes a train.',
                       'pt': 'Siga as placas. Lá vem um trem.',
-                      'opts': [{'en': 'Follow the signs.', 'pt': 'Siga as placas.', 'ok': False, 'fb': 'Foi ela quem disse.'},
+                      'opts': [{'en': 'Yes, I have a ticket.', 'pt': 'Sim, eu tenho passagem.', 'ok': False, 'fb': 'Ela não perguntou isso; confirme o trem.'},
                                {'en': 'It’s the number one train.', 'pt': 'É o trem número um.', 'ok': False, 'fb': 'Quem pergunta é você.'},
                                {'en': 'Excuse me, is this the right train?', 'pt': 'Com licença, este é o trem certo?', 'ok': True, 'fb': 'Confirma antes de entrar.'}]}]}}

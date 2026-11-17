@@ -89,7 +89,7 @@ X = dict(
             {"npc": "Nice to meet you too! Where are you from?", "pt": "Prazer também! De onde você é?", "opts": [
                 {"en": "I'm from Brazil. And you?", "pt": "Sou do Brasil. E você?", "ok": True, "fb": "Responde e devolve a pergunta."},
                 {"en": "I live in 4B.", "pt": "Eu moro no 4B.", "ok": False, "fb": "Ela perguntou de onde você é, não onde mora."},
-                {"en": "Nice to meet you too!", "pt": "Prazer também!", "ok": False, "fb": "Você acabou de ouvir essa frase; agora responda à pergunta."}]},
+                {"en": "I'm thirty years old.", "pt": "Tenho trinta anos.", "ok": False, "fb": "Ela perguntou de onde você é, não a sua idade."}]},
             {"npc": "I'm from Austin. Welcome to the building!", "pt": "Sou de Austin. Boas-vindas ao prédio!", "opts": [
                 {"en": "I'm from Austin too.", "pt": "Eu também sou de Austin.", "ok": False, "fb": "Você disse que é do Brasil; a frase não combina com a conversa."},
                 {"en": "Yes, please.", "pt": "Sim, por favor.", "ok": False, "fb": "Não foi uma pergunta de sim ou não; agradeça."},

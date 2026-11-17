@@ -66,7 +66,7 @@ X = dict(
    dict(en='The post office is closed.', pt='O correio está fechado.', ok=False, fb='Pode até ser verdade, mas não responde.')]),
   dict(npc='Thank you so much!', pt='Muito obrigado!', opts=[
    dict(en='You’re welcome. Have a nice day!', pt='De nada. Tenha um bom dia!', ok=True, fb='Resposta natural a um agradecimento.'),
-   dict(en='Thank you so much too!', pt='Muito obrigado também!', ok=False, fb='Você não recebeu ajuda; ele sim.'),
+   dict(en='Nice to meet you!', pt='Prazer em conhecer!', ok=False, fb='Ele agradeceu; responda ao agradecimento.'),
    dict(en='Excuse me, where is the bank?', pt='Com licença, onde fica o banco?', ok=False, fb='Ele já perguntou isso; agora ele agradeceu.')]),
   dict(npc='Good luck! It’s easy to find.', pt='Boa sorte! É fácil de achar.', opts=[
    dict(en='Good luck with the bank!', pt='Boa sorte com o banco!', ok=False, fb='Estranho: ele que vai procurar, e a frase fica sem sentido.'),

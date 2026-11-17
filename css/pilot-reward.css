@@ -51,3 +51,7 @@
 #player .pr-line{top:8px;height:8px;background:rgba(40,60,100,.1);box-shadow:inset 0 1px 2px rgba(20,30,60,.12)}
 #player .pr-fill{background:linear-gradient(90deg,#34c7a0,#5b8def);box-shadow:0 1px 4px rgba(60,120,220,.35)}
 #player .pr-pog{top:-3px;width:24px;height:24px}
+
+.pr-coin{position:fixed;z-index:9999;transform:translate(-50%,-50%);padding:3px 10px;border-radius:99px;background:#FFC93C;border:2px solid #14183a;color:#14183a;font:800 14px system-ui;pointer-events:none;animation:prcoin 1.05s ease forwards}
+@keyframes prcoin{0%{opacity:0;transform:translate(-50%,-30%) scale(.6)}20%{opacity:1;transform:translate(-50%,-60%) scale(1.05)}100%{opacity:0;transform:translate(-50%,-190%)}}
+@media(prefers-reduced-motion:reduce){.pr-coin{display:none}}

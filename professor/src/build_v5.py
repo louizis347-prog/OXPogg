@@ -11,12 +11,26 @@ def load(p):
     for f in sorted(glob.glob(os.path.join(ROOT, 'data', p + '_*.json'))): o += json.load(open(f, encoding='utf-8'))
     return o
 EN = [e for e in load('en-a1') if e['n'] < 7000000]
+EN2 = [e for e in load('en-a2') if e['n'] < 7000000]
+EN3 = [e for e in load('en-b1') if e['n'] < 7000000]
+EN4 = [e for e in load('en-b2') if e['n'] < 7000000]
+def _focus(f, base):
+    try:
+        sp = importlib.util.spec_from_file_location('plan_x', os.path.join(HERE, '..', 'tools', f)); m = importlib.util.module_from_spec(sp); sp.loader.exec_module(m)
+        return {base + i + 1: r[4] for i, r in enumerate(m.P)}
+    except Exception: return {}
+FOCUS_B1 = _focus('plan_b1.py', 3000)
+FOCUS_B2 = _focus('plan_b2.py', 4000)
+FOCUS_A2 = {n: f for n, f in _focus('plan_a2.py', 2000).items() if n <= 2500}
+try: OBRAS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'obras.json'), encoding='utf-8'))
+except OSError: OBRAS = {}
+level_of = lambda n: 'B2' if n >= 4000 else 'B1' if n >= 3000 else 'A2' if n >= 2000 else 'A1'
 FILLER = {'That sounds good. What should we do next?', 'Let me check the details before we decide.', 'Could you say that one more time?', 'Sure, I will explain it clearly.', 'Thanks, now I know how to continue.'}
 NB = [e for e in load('nb-a1') if not str(e['t']).lower().startswith(('arc ', 'review'))]
 strip = lambda s: re.sub(r'\*\*|\{\{|\}\}', '', s or '')
 bold = lambda s: re.sub(r'\{\{(.+?)\}\}', r'**\1**', s or '')
 # Neighbors da aula n: 1-50 sequencial; 51-200 pula situações que já apareceram antes (sem repetir situação)
-SKIP_NB = {194, 203, 205, 216, 124, 130, 137, 150, 151, 154, 159, 160, 161, 162, 164, 167, 168, 170, 171, 179, 180, 206}
+SKIP_NB = {194, 203, 205, 216, 124, 130, 137, 150, 151, 154, 159, 160, 161, 162, 164, 167, 168, 170, 171, 179, 180, 206, 223, 225, 228, 232, 233, 234, 244, 249, 251, 254, 260, 265}
 def nb_index(n):
     if n <= 50: return n
     k, c = 50, 50
@@ -71,7 +85,7 @@ def natural(Z):
     Z['verbs'] = vs
     return Z
 def prev_ctx(n):
-    if n < 2: return None
+    if n < 2 or n >= 1000: return None
     items, words, quiz, say = [], [], [], []
     for k, back in enumerate((1, 2)):
         m = n - back
@@ -89,8 +103,75 @@ def prev_ctx(n):
         if k == 0: say = [(o['en'], o['pt']) for o in oks[:3]]
     if not items: return None
     return dict(items=items[:6], words=words[:6], quiz=quiz[:4], say=say)
+def own_nb(o, n):
+    """Episódio de situação próprio (sem Neighbors): monta os quadros nb a partir do diálogo e do vocabulário escritos para a aula."""
+    npc = o['npc']; L = [list(x) for x in o['lines']]; g = o.get('g', ['#E17055', '#6C5CE7'])
+    npc_i = [i for i, l in enumerate(L) if l[0] != 'You']; opts_pt = [l[2] for l in L]
+    tap = []
+    for i in npc_i[:4]:
+        d = [t for t in opts_pt if t != L[i][2]][:2]; ch = [L[i][2]] + d; ch = ch[1:2] + ch[:1] + ch[2:] if len(ch) > 2 else ch
+        tap.append(dict(pt='O que ' + npc + ' disse?', opts=[['💬', t] for t in ch], a=ch.index(L[i][2]), line=i))
+    ex = o['exprs']; ctx = []
+    for k in range(min(3, len(ex))):
+        en_k, pt_k = ex[k][0], ex[k][1]; others = [e[0] for e in ex if e[0] != en_k][:2]; ch = [others[0], en_k] + others[1:]
+        ctx.append(dict(ic='💬', sit='Complete a fala: “____.” (' + pt_k + ')', opts=ch, a=1, why='“' + en_k + '” = ' + pt_k))
+    you = [(l[1], l[2]) for l in L if l[0] == 'You'][:4]
+    fr_ = [dict(k='nbhero', g=g, num=n, lvl=level_of(n), face=o.get('face', '🙂'), name=npc, city=o['city'], sub=o['title'], emo=o.get('emo', ['💬']), mission=o['mission'], hook=[L[0][1], L[0][2]]),
+           dict(k='nbchat', g=g, title='O diálogo-padrão', intro='Toque em “Próxima fala” para abrir cada mensagem.', cast={npc: [o.get('face', '🙂'), '#2159C9'], 'You': ['🙂', '#e85d75']}, lines=L),
+           dict(k='nbtap', g=g, title='Ouça e toque', items=tap), dict(k='nbctx', g=g, title='Em que contexto?', items=ctx),
+           dict(k='nbshadow', g=g, title='Fale como ' + npc, items=[list(x) for x in you], real=o.get('real', [L[1][1], L[1][1], 'fale em blocos'])),
+           dict(k='nbvocab', g=g, title='Soletrando', items=[list(v) for v in o['vocab'][:5]]),
+           dict(k='nbdict', g=g, title='Ditado', items=[dict(t=L[i][1], pt=L[i][2]) for i in (0, 2, 4)]),
+           dict(k='wrap', title='Para levar na mochila', recap=[[e[0], e[1]] for e in ex[:4]], teaser=dict(t=o.get('teaser', 'Próxima aula'), d=o.get('teaser_d', 'Novas situações do dia a dia')))]
+    return dict(n=0, t=o['title'], s='', sc=o.get('sc'), a=dict(k='Cidade', w=o['city'], y='', d=o.get('desc', '')), p=o['p'], fr=fr_)
+def nb_for(n, S=None):
+    S = S or supp(n); n0 = n % 1000 if n >= 1000 else n
+    if S.get('own'): return own_nb(S['own'], n)
+    return NB[S.get('nb', nb_index(n0)) - 1]
+def apply_overrides(L, n):
+    """Ajustes de nível A1 por aula (src/overrides_a1.json): corrige o texto da aula sem alterar o Neighbors."""
+    try: O = json.load(open(os.path.join(ROOT, 'professor', 'src', 'overrides_a1.json'), encoding='utf-8')).get(str(n))
+    except OSError: O = None
+    if not O: return L
+    def rs(s):
+        if s == 'bought' and n == 188: return 'have'
+        for a, b in O:
+            for v in dict.fromkeys((a, a.replace("'", "’"), a.replace("’", "'"))):
+                if v in s: s = s.replace(v, b)
+        return s
+    def fx(o):
+        if isinstance(o, str): return rs(o)
+        if isinstance(o, (list, tuple)): return [fx(x) for x in o]
+        if isinstance(o, dict): return {k: fx(x) for k, x in o.items()}
+        return o
+    return fx(L)
+
+def add_support_words(L, n):
+    """Palavras de apoio (src/support_words.json): palavras do diálogo acima do nível que a aula passa a ensinar
+    explicitamente, numa tela extra de vocabulário (regra de níveis: docs/NIVEIS_CEFR.md)."""
+    try: S = json.load(open(os.path.join(ROOT, 'professor', 'src', 'support_words.json'), encoding='utf-8')).get(str(n))
+    except OSError: S = None
+    if not S: return L
+    import copy
+    idx = [i for i, p in enumerate(L['pages']) if p.get('kind') == 'vocab']
+    if not idx: return L
+    base = L['pages'][idx[-1]]; k = (len(S) + 2) // 3; new = []
+    for j in range(k):
+        pg = copy.deepcopy(base); pg['title'] = 'Palavras de apoio · %d/%d' % (j + 1, k)
+        pg['words'] = [[w[0], w[1], w[2], w[3], 'prop:cup', '📌'] for w in S[j * 3:(j + 1) * 3]]
+        pg['prompt'] = 'Estas palavras aparecem na conversa. Toque, ouça e leia a frase.'
+        pg.pop('teach', None); new.append(pg)
+    L['pages'][idx[-1] + 1:idx[-1] + 1] = new
+    return L
+
 def build(n):
-    S = supp(n); en, nb = EN[S.get('reg', n) - 1], NB[nb_index(n) - 1]
+    n0 = n % 1000 if n >= 1000 else n
+    S = supp(n); en, nb = (EN4 if n >= 4000 else EN3 if n >= 3000 else EN2 if n >= 2000 else EN)[S.get('reg', n0) - 1], nb_for(n, S)
+    if n in FOCUS_B2: en = dict(en, s='Foco da aula: ' + FOCUS_B2[n])
+    elif n in FOCUS_B1: en = dict(en, s='Foco da aula: ' + FOCUS_B1[n])
+    elif n in FOCUS_A2: en = dict(en, s='Foco da aula: ' + FOCUS_A2[n])
+    if str(n) in OBRAS:  # referência cultural própria da aula (src/obras.json): não repete a obra do episódio regular
+        ob = OBRAS[str(n)]; en = dict(en); en['a'] = dict(en.get('a', {}), w=ob['w'], y=ob.get('y', ''), d=ob['d'])
     nhero = fr(nb, 'nbhero')[0]; chats = fr(nb, 'nbchat'); base = dict(chats[0]); base['lines'] = [l for l in base['lines'] if l[1] not in FILLER]
     npc = [k for k in base['cast'] if k != 'You'][0]; npcface = face_of(npc)
     lines = [dict(who=w, en=bold(e), pt=p) for w, e, p in base['lines']]
@@ -115,7 +196,7 @@ def build(n):
         st = en.get('stage') or {}
         return dict(rs=st.get('rs') or en['sc'], chars=st.get('chars')) if (st.get('rs') or en.get('sc')) else None
     P = {}
-    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level='A1', unit=dict(n=math.ceil(n / 8), k=(n - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
+    P['q_cover'] = dict(t='q_cover', title=nb['t'] + ' · ' + title, pt=en['s'], level=level_of(n), unit=dict(n=(300 if n >= 4000 else 200 if n >= 3000 else 100 if n >= 2000 else 0) + math.ceil(n0 / 8), k=(n0 - 1) % 8 + 1, of=8, name=en['a']['w'] + ' × ' + nb['a'].get('w', '')),
         situation=dict(text=strip(nb['p']), scene=en['sc'], tod='day', cast=[npc, 'You']), goal=strip(en['p']),
         canDo=['Say: ' + strip(i['en']) for i in exps[:4]], success=['I understand the conversation.', 'I use the key expression.', 'I answer a real question.', 'I close politely.'],
         think=strip(nhero.get('mission', '')))
@@ -176,7 +257,7 @@ def build(n):
     for t in ORDER:
         p = dict(P[t]); p['stage'] = CHAP[t]; pages.append(p)
     plan = {m: [dict(id=k, name=CH[k][1], ic=CH[k][0], c=CH[k][2], min=MIN[m][k], desc=DESC[k]) for k in CH if k != 'lab' or True] for m in MIN}
-    L = dict(n=n, topic=nb['t'], level='A1', title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
+    L = dict(n=n, topic=nb['t'], level=level_of(n), title=title, pt=en['s'], unit=P['q_cover']['unit'], minutes=60, cast=[npc, 'You'], scene=en['sc'], tod='day', plan=plan, dialog=dict(speakers={npc: dict(name=npcface), 'You': dict(name='Mia')}, lines=lines),
         pages=pages, badge=S.get('badge', dict(icon='🏅', name=nb['t'], desc=strip(en['p']))), sticker=S.get('sticker', dict(cat=en['a']['w'], title=en['a']['w'], sub=nb['t'], art=dict(rs=(wrap.get('sticker') or {}).get('rs') or en['sc'], chars=(wrap.get('sticker') or {}).get('chars')))), fmt='quest',
         src=dict(regular=en['n'], neighbors=nb['n'], reg_idx=S.get('reg', n)))
     os.makedirs(os.path.join(ROOT, 'professor', 'data', 'v4'), exist_ok=True)
@@ -189,6 +270,9 @@ def build(n):
     from lesson_post import post
     X_ = extras(n); ems = [v.get('e', '') for v in (X_.get('vocab') or [])] or (['☕', '🥐', '🥛', '🧁', '🍵'] if n == 1 else [])
     post(L, n, ylayer(n), S, X_, prev_ctx(n), ems, zlayer(n))
+    L = apply_overrides(L, n)
+    L = add_support_words(L, n)
+    import live_teach; L = live_teach.apply(L)
     f = os.path.join(ROOT, 'professor', 'data', 'v4', '%03d.json' % n); json.dump(L, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':')); return f
 if __name__ == '__main__':
     a = sys.argv[1:]

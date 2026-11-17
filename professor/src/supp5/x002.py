@@ -99,7 +99,7 @@ X = dict(
                 {"en": "I'm from Brazil.", "pt": "Sou do Brasil.", "ok": False, "fb": "Uma informação simpática, mas não responde ao preço."}]},
             {"npc": "That's ten dollars. Thank you!", "pt": "Dá dez dólares. Obrigado!", "opts": [
                 {"en": "Here you go. Thank you!", "pt": "Aqui está. Obrigado!", "ok": True, "fb": "Entrega o dinheiro e agradece."},
-                {"en": "That's ten dollars, thank you.", "pt": "Dá dez dólares, obrigado.", "ok": False, "fb": "Quem disse o total foi ele; você repetiria a fala dele."},
+                {"en": "How much is it?", "pt": "Quanto custa?", "ok": False, "fb": "Ele acabou de dizer o preço; você já sabe quanto é."},
                 {"en": "Good morning! Can I help you?", "pt": "Bom dia! Posso ajudar?", "ok": False, "fb": "Essa é a fala de abertura do vendedor, não de quem paga."}]},
         ]},
 )

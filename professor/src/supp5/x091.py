@@ -82,7 +82,7 @@ X = {'key': {'big': 'Where are our seats?', 'label': 'Entrar no show', 'sub': 'M
                                {'en': 'Do you have your ticket?', 'pt': 'Você tem seu ingresso?', 'ok': False, 'fb': 'Ele já perguntou isso.'}]},
                      {'npc': 'Section B, row five.',
                       'pt': 'Setor B, fila cinco.',
-                      'opts': [{'en': 'Section B, row five.', 'pt': 'Setor B, fila cinco.', 'ok': False, 'fb': 'Repetir a fala dele não ajuda.'},
+                      'opts': [{'en': 'Can I have a ticket?', 'pt': 'Posso ter um ingresso?', 'ok': False, 'fb': 'Vocês já têm ingressos; o assunto é o lugar.'},
                                {'en': "It's loud in here!", 'pt': 'Está barulhento aqui!', 'ok': True, 'fb': 'Comentário natural ao entrar.'},
                                {'en': "Yes, it's on my phone.", 'pt': 'Tenho, está no celular.', 'ok': False, 'fb': 'Essa resposta era do ingresso.'}]},
                      {'npc': 'I know! The band starts at eight.',

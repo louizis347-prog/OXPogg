@@ -82,7 +82,7 @@ X = {'key': {'big': 'Make yourself at home', 'label': 'Sinta-se à vontade', 'su
                       'pt': 'Obrigada. Deixe-me mostrar tudo.',
                       'opts': [{'en': 'No, thanks. I know the house.', 'pt': 'Não, obrigado. Conheço a casa.', 'ok': False, 'fb': 'É a primeira vez, e soa mal-educado.'},
                                {'en': 'Great! Is this the kitchen?', 'pt': 'Ótimo! Esta é a cozinha?', 'ok': True, 'fb': 'Mostra interesse no tour.'},
-                               {'en': 'Let me show you around.', 'pt': 'Deixe-me mostrar tudo.', 'ok': False, 'fb': 'Essa fala é da anfitriã.'}]},
+                               {'en': 'Can I help you?', 'pt': 'Posso ajudar você?', 'ok': False, 'fb': 'Você é o convidado; ela é a anfitriã.'}]},
                      {'npc': 'It’s so bright and big!',
                       'pt': 'É tão clara e grande!',
                       'opts': [{'en': 'Yes! I love it.', 'pt': 'Sim! Adorei.', 'ok': True, 'fb': 'Concorda de forma natural.'},

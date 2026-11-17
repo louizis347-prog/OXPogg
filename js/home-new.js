@@ -31,8 +31,12 @@ function enhance(){
   else if(cover){const s=cover.querySelector('svg');art=s?s.outerHTML:cover.innerHTML}
   const pr=ep?progress(ep.cid):null;
   const hi=ref?{h:'Que bom te ver de volta',s:'Seu próximo passo está pronto. Vamos continuar a história?'}:{h:'Aprenda idiomas <em>pela cultura</em>',s:sub};
+  const LA={en:'en',es:'es',fr:'fr',de:'de',it:'it',pt:'pt',ja:'ja',ko:'ko'};
+  const cidL=(ep&&ep.cid)||(typeof ST!=='undefined'&&ST.lastCourse)||'en-a1';
+  const lang=LA[(String(cidL).match(/^(?:nb)?(en|es|fr|de|it|pt|ja|ko)/)||[])[1]]||'en';
   const html=`<section class="hn-hero hn-in${ref?' rs':''}" aria-label="Boas-vindas">
-    <div class="hn-bg">${HomeArt.scene()}</div>
+    <div class="hn-bg hn-mesh"><span class="fc f2">🎬</span><span class="fc f3">📖</span><span class="fc f4">🎵</span></div>
+    <figure class="hn-frame" aria-hidden="true"><img src="img/landing/art/lang-${lang}.svg" width="480" height="360" alt="" decoding="async"><i class="hn-glow"></i></figure>
     <div class="hn-copy">
       <span class="hn-chip">${esc(eyebrow||'Episódios de 10 minutos')}</span>
       <h1 class="hn-h1">${ref?esc(hi.h):hi.h}</h1>

@@ -37,3 +37,20 @@
 .cg-card .mt{display:flex;justify-content:space-between;font-size:.78rem;font-weight:700;color:var(--cg-mute);margin-top:auto;padding-top:6px}
 .cg-card .br{height:7px;border-radius:5px;background:var(--cg-line);overflow:hidden}.cg-card .br i{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--b));border-radius:5px}
 @media(prefers-reduced-motion:reduce){.cg-fam .em,.cg-page .cg-hero .em,.cg-card{animation:none}}
+
+/* Cartões das trilhas com cenário (mesma arte da landing) */
+.cg-fam{padding:0 0 18px;min-height:0;gap:0}
+.cg-fam::before,.cg-fam::after{display:none}
+.cg-fam .cg-art{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;border-radius:24px 24px 0 0}
+.cg-fam .cg-art img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.cg-fam:hover .cg-art img{transform:scale(1.05)}
+.cg-fam .cg-art::after{content:"";position:absolute;inset:auto 0 0 0;height:46%;background:linear-gradient(180deg,transparent,var(--a));opacity:.85}
+.cg-fam .cg-art .em{position:absolute;left:14px;bottom:10px;z-index:1;font-size:30px;animation:none}
+.cg-fam b,.cg-fam span.d{margin-left:20px;margin-right:20px}
+.cg-fam b{margin-top:10px}.cg-fam span.d{margin-top:4px}
+.cg-fam .go{margin:14px 20px 0}
+
+.sc-art,.lang-art{display:block;width:100%;height:100%;object-fit:cover}
+.p5c .ban .lang-art{position:absolute;inset:0}
+.hn-h1{margin-bottom:18px}
+.lang-art[src*="course-pocket"]{object-position:72% 20%}

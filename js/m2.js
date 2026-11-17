@@ -686,7 +686,7 @@ FXR.wrap=function(f,st,n){
     const sc=Math.max(0,P.score||0);
     h.insertAdjacentHTML('beforebegin',`<div class="m2-fin"><div class="m2-fin-sky"><span class="m2-fs s0">✨</span><span class="m2-fs s1">⭐</span><span class="m2-fs s2">🎉</span><span class="m2-fs s3">✨</span><span class="m2-fs s4">🎊</span></div>
       <div class="m2-fin-pg">${pg}</div>
-      <div class="m2-fin-t"><div class="m2-medal">🏅</div><small>EPISÓDIO CONCLUÍDO</small><h2>${esc(P.e.t)}</h2><p>⭐ ${sc} acertos de primeira · 🎒 mochila cheia</p></div>
+      <div class="m2-fin-t"><div class="m2-medal">🏅</div><small>EPISÓDIO CONCLUÍDO</small><h2>${esc(P.e.t)}</h2><p>${sc>0?`⭐ ${sc} acertos de primeira · 🎒 mochila cheia`:'🎒 Mochila cheia: você deu mais um passo!'}</p>${(()=>{try{const t=JSON.parse(localStorage.getItem('pg_tag')||'{}');return t.name?`<p class="m2-fin-tag">🏷️ Sua etiqueta: <b>I’m ${esc(t.name)}</b>${t.from?` · I’m from ${esc(t.from)}`:''}</p>`:''}catch(e){return ''}})()}</div>
       <div class="m2-fin-g">${rows.map((r,i)=>`<button type="button" class="m2-fg c${i}" style="--i:${i}" data-i="${i}"><span class="m2-fgi">${r[0]}</span><b>${r[1]}</b><span class="m2-fge">${r[2].slice(0,6).map(e=>fxIcon(e,22)).join('')}</span></button>`).join('')}</div></div>
       <div class="m2-bagh2">Frases para levar</div>`);
     step.querySelectorAll('.m2-fg').forEach(b=>b.onclick=()=>{sfx('pop');burst(b,['⭐','✨'])});

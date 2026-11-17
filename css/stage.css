@@ -6,13 +6,13 @@
 .ps-stage.sticker{--pgh:17dvh;border-radius:16px}
 .ps-stage-bk,.ps-stage-bk svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .ps-chars{position:absolute;inset:0;pointer-events:none}
-.ps-c{position:absolute;bottom:-3%;height:80%;aspect-ratio:100/150;transform:translateX(-50%) scale(var(--s,1));transform-origin:50% 100%;filter:drop-shadow(0 5px 5px rgba(0,0,0,.28));animation:pgbob 3.4s ease-in-out infinite}
+.ps-c{position:absolute;bottom:3%;height:78%;aspect-ratio:100/150;transform:translateX(-50%) scale(var(--s,1));transform-origin:50% 100%;filter:drop-shadow(0 5px 5px rgba(0,0,0,.28));animation:pgbob 3.4s ease-in-out infinite}
 .ps-c:nth-child(2){animation-delay:-1.2s}.ps-c:nth-child(3){animation-delay:-2.1s}
 .ps-c svg{width:100%;height:100%;display:block;overflow:visible}
 .ps-c.fl svg{transform:scaleX(-1)}
-.ps-stage.strip .ps-c{height:74%}
-.ps-stage.cover .ps-c{height:88%}
-.ps-stage.sticker .ps-c{height:84%}
+.ps-stage.strip .ps-c{height:72%}
+.ps-stage.cover .ps-c{height:84%}
+.ps-stage.sticker .ps-c{height:80%}
 @keyframes pgbob{50%{translate:0 -4px}}
 .ps-obra{position:absolute;left:10px;top:10px;z-index:4;max-width:calc(100% - 20px);padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.94);color:#1b2a4a;font:800 12px/1.2 system-ui;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 8px 16px -8px rgba(0,0,0,.5)}
 #player.az .az-hero .az-scene.ps-cover{aspect-ratio:auto;height:auto;border-radius:0;background:none;box-shadow:none;overflow:visible}
@@ -551,3 +551,9 @@
 .rw-in{width:100%;box-sizing:border-box;border:2px solid #cfdcf6;border-radius:14px;padding:10px 12px;font:600 18px/1.4 system-ui;resize:vertical}
 .rw-act{margin-top:8px;display:flex;justify-content:flex-end}
 .sm-lines{display:flex;flex-direction:column;gap:6px;margin:8px 0 12px}.sm-lines p{margin:0;font:600 17px/1.4 system-ui}.sm-lines small{color:#5b6f8f}
+
+.ps-stage-bk .ps-paint,.az-ill-bk .ps-paint,.wr-nx-bk .ps-paint{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ps-props{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+.ps-rain line{animation:psrain 1.1s linear infinite}@keyframes psrain{to{transform:translate(-18px,60px);opacity:0}}
+.ps-snow circle{animation:pssnow 6s linear infinite}@keyframes pssnow{to{transform:translate(-14px,120px)}}
+@media(prefers-reduced-motion:reduce){.ps-rain line,.ps-snow circle{animation:none}}

@@ -67,7 +67,7 @@ X = dict(
   dict(npc="Belt number four.", pt="Esteira número quatro.", opts=[
    dict(en="Follow the signs.", pt="Siga as placas.", ok=False, fb="Essa fala é dela."),
    dict(en="Thank you. I can't find my suitcase.", pt="Obrigada. Não encontro minha mala.", ok=True, fb="Explica o problema."),
-   dict(en="Belt number four.", pt="Esteira número quatro.", ok=False, fb="Repete a fala dela.")]),
+   dict(en="Where is the exit?", pt="Onde fica a saída?", ok=False, fb="Ela já respondeu; diga qual é o seu problema.")]),
   dict(npc="What does it look like?", pt="Como ela é?", opts=[
    dict(en="It's not here.", pt="Não está aqui.", ok=False, fb="Não descreve a mala."),
    dict(en="Which belt is it?", pt="Qual esteira é?", ok=False, fb="Ela já disse: quatro."),

@@ -95,5 +95,16 @@ def post(L, n, Y, S, X, prev, vocab_emojis, Z=None):
                dict(t='q1', stage='lab', kind='exprs', title='Expressões comuns', art=art, items=Z['expressions']),
                dict(t='q1', stage='lab', kind='exprplay', title='Qual expressão usar?', art=art, items=Z['expr_game'])]
         pages[vi:vi] = add
+    # ---- ponte português → inglês: apresenta o vocabulário novo ANTES de ele aparecer nos textos
+    vv = [v for v in (X.get('vocab') or []) if v.get('w') and v.get('pt')]
+    if len(vv) >= 4:
+        wi = next((i for i, p in enumerate(pages) if p.get('kind') == 'work'), 0) + 1
+        art_b = pages[wi - 1].get('art') or art0
+        bw = [dict(e=v.get('e') or '💬', w=v['w'], pt=v['pt'], ex=(v.get('ex') or [''])[0]) for v in vv[:6]]
+        add_b = [dict(t='q1', stage='mission', kind='bridge', title='Ponte · português → inglês', art=art_b, words=bw)]
+        er = [e for e in (S.get('errors') or []) if e.get('wrong') and e.get('fix')][:3]
+        if len(er) >= 2:
+            add_b.append(dict(t='q1', stage='mission', kind='bridge2', title='Ponte · como não traduzir', art=art_b, items=[dict(wrong=e['wrong'], fix=e['fix'], why=e.get('why', '')) for e in er]))
+        pages[wi:wi] = add_b
     L['pages'] = pages
     L['fmt'] = 'quest-focus-v1'

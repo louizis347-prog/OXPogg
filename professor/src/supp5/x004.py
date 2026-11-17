@@ -82,7 +82,7 @@ X = dict(
             {"npc": "Hello! Can I have your name, please?", "pt": "Olá! Pode me dar seu nome, por favor?", "opts": [
                 {"en": "Hello! I'm fine, thanks.", "pt": "Olá! Estou bem, obrigado.", "ok": False, "fb": "Ela pediu o seu nome, não perguntou como você está."},
                 {"en": "Sure. It's Daniel.", "pt": "Claro. É Daniel.", "ok": True, "fb": "Resposta direta ao pedido."},
-                {"en": "Can I have your name, please?", "pt": "Pode me dar seu nome, por favor?", "ok": False, "fb": "Quem pede o nome é ela; você apenas responderia."}]},
+                {"en": "Yes, please. Thank you.", "pt": "Sim, por favor. Obrigado.", "ok": False, "fb": "Ela pediu o seu nome; você precisa dizê-lo."}]},
             {"npc": "How do you spell that?", "pt": "Como se escreve isso?", "opts": [
                 {"en": "It's Daniel, thank you.", "pt": "É Daniel, obrigado.", "ok": False, "fb": "Você repete o nome; ela quer as letras."},
                 {"en": "Sorry, what's your name?", "pt": "Desculpe, qual é o seu nome?", "ok": False, "fb": "Quem pergunta é ela; você deve soletrar o seu nome."},

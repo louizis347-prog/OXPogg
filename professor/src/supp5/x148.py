@@ -66,7 +66,7 @@ X = {'key': {'big': 'Stay on the trail', 'label': 'Regras do parque', 'sub': 'No
            'turns': [{'npc': 'Welcome to the park! Here’s a map.',
                       'pt': 'Bem-vindo ao parque! Aqui está um mapa.',
                       'opts': [{'en': 'Thank you. What can we see?', 'pt': 'Obrigado. O que podemos ver?', 'ok': True, 'fb': 'Agradeça e faça uma pergunta útil.'},
-                               {'en': 'Welcome to the park!', 'pt': 'Bem-vindo ao parque!', 'ok': False, 'fb': 'Foi o que o Eli acabou de dizer.'},
+                               {'en': 'Where is the exit?', 'pt': 'Onde fica a saída?', 'ok': False, 'fb': 'Você acabou de chegar; agradeça primeiro.'},
                                {'en': 'Yes, I have a park.', 'pt': 'Sim, eu tenho um parque.', 'ok': False, 'fb': 'Não combina com a situação.'}]},
                      {'npc': 'Geysers, lakes, and wild animals.',
                       'pt': 'Gêiseres, lagos e animais selvagens.',

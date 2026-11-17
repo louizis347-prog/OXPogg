@@ -8,7 +8,7 @@ const q=(s,r)=>(r||document).querySelector(s);
 let UID=0;
 const tts=(t,slow)=>{try{fxSay(String(t),null,slow)}catch(e){}};
 const frag=h=>{const t=document.createElement('template');t.innerHTML=h;return t.content};
-const bg=k=>{try{return window.RS&&RS[k]?RS[k]('pg'+(++UID)):''}catch(e){return ''}};
+const bg=k=>{try{const pt=window.PogPaint&&PogPaint.bg(k);if(pt)return pt;return window.RS&&RS[k]?RS[k]('pg'+(++UID)):''}catch(e){return ''}};
 const chars=list=>(list||[]).map(c=>{
   const id=c[0],x=c[1]==null?50:c[1],fl=c[2]?' fl':'',sc=c[3]||1;
   return `<span class="ps-c${fl}" data-c="${id}" style="left:${x}%;--s:${sc}">${window.PogChars?PogChars.svg(id):''}</span>`}).join('');

@@ -1,0 +1,68 @@
+import pprint
+def O(en,pt,reply): return {'en':en,'pt':pt,'reply':reply}
+def C(en,pt,ok,fb): return {'en':en,'pt':pt,'ok':ok,'fb':fb}
+def w(f,s): open('supp5/'+f,'w',encoding='utf-8').write(s)
+def V(v,ic,pt,note,a,b,c,d):
+    return {'v':v,'ic':ic,'pt':pt,'note':note,'forms':[{'k':'eu · você · nós · eles','en':a[0],'ex':a[1],'pt':a[2]},{'k':'ele · ela','en':b[0],'ex':b[1],'pt':b[2]},{'k':'passado','en':c[0],'ex':c[1],'pt':c[2]},{'k':'-ing','en':d[0],'ex':d[1],'pt':d[2]}]}
+X={'key':{'big':'faster · the fastest','label':'Comparar jogadores','sub':'Adjetivo curto + -er para comparar dois (faster than me) e the + -est para o maior de todos (the fastest player). Adjetivos longos usam more e the most.'},
+ 'mini':[{'who':'You','en':'Which one is your {son?|daughter?}','pt':'Qual é {o seu filho?|a sua filha?}'},
+         {'who':'Andre','en':'Number {seven|ten|four}. He is {fast|tall|strong}.','pt':'Número {sete|dez|quatro}. Ele é {rápido|alto|forte}.'},
+         {'who':'You','en':'He is {faster|taller|stronger} than the others.','pt':'Ele é {mais rápido|mais alto|mais forte} que os outros.'},
+         {'who':'Andre','en':'Yes, he is the {fastest|tallest|strongest} player.','pt':'Sim, ele é o jogador {mais rápido.|mais alto.|mais forte.}'}],
+ 'dlg':[{'who':'Andre','en':'Go, Max! {Run!|Pass!}','pt':'Vai, Max! {Corre!|Passa!}'},
+        {'who':'You','en':'Which one is your {son?|boy?}','pt':'Qual é o seu {filho?|menino?}'},
+        {'who':'Andre','en':'Number seven, in the {blue|red} shirt.','pt':'Número sete, de camisa {azul.|vermelha.}'},
+        {'who':'You','en':'He’s {fast!|quick!}','pt':'Ele é {rápido!|veloz!}'},
+        {'who':'Andre','en':'Thanks. He loves {soccer.|sports.}','pt':'Obrigado. Ele adora {futebol.|esportes.}'},
+        {'who':'You','en':'Who’s {winning?|losing?}','pt':'Quem está {ganhando?|perdendo?}'},
+        {'who':'Andre','en':'We’re winning two to {one.|zero.}','pt':'Estamos ganhando de dois a {um.|zero.}'},
+        {'who':'You','en':'He is faster than the {others.|other kids.}','pt':'Ele é mais rápido que {os outros.|as outras crianças.}'},
+        {'who':'Andre','en':'He is the fastest on the {team.|field.}','pt':'Ele é o mais rápido do {time.|campo.}'},
+        {'who':'You','en':'Pass the {ball,|ball to him,} Max!','pt':'Passe a {bola,|bola para ele,} Max!'},
+        {'who':'Andre','en':'Shoot! {Goal!|What a goal!}','pt':'Chuta! {Gol!|Que golaço!}'}],
+ 'vocab':[{'w':'referee','pt':'árbitro','e':'🧑‍⚖️','ex':['The referee blows the whistle.','The referee is fair.']},
+          {'w':'whistle','pt':'apito','e':'📯','ex':['I hear a whistle.','The whistle means halftime.']},
+          {'w':'uniform','pt':'uniforme','e':'👕','ex':['The team wears a blue uniform.','My uniform is red.']},
+          {'w':'halftime','pt':'intervalo','e':'⏸️','ex':['It is halftime.','The kids drink water at halftime.']},
+          {'w':'goal','pt':'gol','e':'🥅','ex':['What a goal!','He scores a goal.']},
+          {'w':'cheer','pt':'torcer, comemorar','e':'📣','ex':['Parents cheer for the kids.','We cheer after the goal.']}],
+ 'molds':[{'title':'Comparar duas pessoas','frame':'{name} is {adj} than {other}.','slots':[{'key':'name','opts':['Max','Lia','Tom']},{'key':'adj','opts':['faster','taller','stronger']},{'key':'other','opts':['me','his sister','the others']}],'model':'Max is faster than me.','note':'Adjetivo curto + -er + than.'},
+          {'title':'O maior de todos','frame':'{name} is the {adj} player on the team.','slots':[{'key':'name','opts':['Max','Lia','Tom']},{'key':'adj','opts':['fastest','tallest','best']}],'model':'Max is the fastest player on the team.','note':'the + adjetivo + -est.'},
+          {'title':'Perguntar o placar','frame':'Who’s winning? We’re {state} {score}.','slots':[{'key':'state','opts':['winning','losing','playing']},{'key':'score','opts':['two to one','three to zero','one to one']}],'model':'Who’s winning? We’re winning two to one.','note':'Who’s + -ing: o placar agora.'}],
+ 'sounds':[{'say':'He is the fastest player.','tag':'-est curto','tip':'Fastest soa “FÉS-tist”. O final -est é fraco e curto. Acentue FAST e PLAY-er.'},
+           {'say':'Which one is your son?','tag':'ligação: which one','tip':'Which one soa “uítchuan”. Una as duas palavras e acentue SON.'},
+           {'say':'Who’s winning?','tag':'Who’s','tip':'Who’s soa “húz”. Acentue WIN-ning, com o N final leve.'}],
+ 'role':{'turns':[{'npc':'Go, Max! Run!','opts':[O('Which one is your son?','Qual é o seu filho?','Number seven, in the blue shirt.'),O('Nice game! Who’s winning?','Bom jogo! Quem está ganhando?','We’re winning two to one.'),O('Hi! Is this your first game?','Oi! É o seu primeiro jogo?','No, we play every Saturday.')]},
+                   {'npc':'Number seven, in the blue shirt.','opts':[O('He’s fast!','Ele é rápido!','Thanks. He loves soccer.'),O('He is faster than the others!','Ele é mais rápido que os outros!','Yes, he is the fastest on the team.'),O('Nice shirt! Go, Max!','Camisa legal! Vai, Max!','Thanks! He likes it.')]},
+                   {'npc':'Thanks. He loves soccer.','opts':[O('Who’s winning?','Quem está ganhando?','We’re winning two to one.'),O('Is he the best player?','Ele é o melhor jogador?','He is the fastest, not the best.'),O('Is it halftime?','É o intervalo?','Almost. The referee blows the whistle soon.')]},
+                   {'npc':'Shoot! Goal!','opts':[O('Great goal! He is the fastest player.','Ótimo gol! Ele é o jogador mais rápido.','Thank you! He is happy.'),O('Pass the ball, Max!','Passe a bola, Max!','He did. It’s a goal!'),O('Good game!','Bom jogo!','Good game to you too!')]}],
+       'change':['Você não vê o seu filho no campo. Pergunte qual é.','O jogo está empatado. Pergunte quem está ganhando.','O time do seu filho perdeu. Diga uma frase gentil.']},
+ 'writing':{'task':'Escreva 2 ou 3 frases comparando pessoas, times ou jogadores: quem é mais rápido (faster) e quem é o melhor (the best).','model':'Max is faster than me. Lia is the tallest player. Our team is the best.','kw':['faster','than','the best','tallest'],'checks':['Usou -er + than para comparar duas pessoas.','Usou the + -est para o maior de todos.','Falou de pessoas, times ou jogadores.']},
+ 'scenes':{'pool':['yard','park','park2','lake'],'npc':{'g':'m','role':'parent'},'you':{'g':'f'}},
+ 'convo':{'npc':{'name':'Andre'},'story':'Você está em um jogo de futebol de crianças. O Andre é um pai ao seu lado.','turns':[
+   {'npc':'Go, Max! Run!','pt':'Vai, Max! Corre!','opts':[C('Which one is your son?','Qual é o seu filho?',True,'Pergunta sobre a pessoa que ele anima.'),C('Yes, I am Max.','Sim, eu sou o Max.',False,'Você não é o Max.'),C('I am run too.','Eu estou correr também.',False,'Forma errada.')]},
+   {'npc':'Number seven, in the blue shirt.','pt':'Número sete, de camisa azul.','opts':[C('He’s fast!','Ele é rápido!',True,'Elogio simpático.'),C('He are fast!','Ele são rápido!',False,'He is fast.'),C('I am blue.','Eu sou azul.',False,'Não responde a ele.')]},
+   {'npc':'Thanks. He loves soccer.','pt':'Obrigado. Ele adora futebol.','opts':[C('Who’s winning?','Quem está ganhando?',True,'Pergunta natural no jogo.'),C('Who win yesterday?','Quem ganhar ontem?',False,'Forma errada e o jogo é agora.'),C('He love me.','Ele ama eu.',False,'Não combina.')]},
+   {'npc':'We’re winning two to one.','pt':'Estamos ganhando de dois a um.','opts':[C('Is he faster than the others?','Ele é mais rápido que os outros?',True,'Compara com -er + than.'),C('Is he more fast than others?','Ele é mais rápido que outros?',False,'Use faster than.'),C('I win too.','Eu ganho também.',False,'Você não joga.')]},
+   {'npc':'Yes, he is the fastest on the team.','pt':'Sim, ele é o mais rápido do time.','opts':[C('Great! Pass the ball, Max!','Ótimo! Passe a bola, Max!',True,'Grita para o jogador.'),C('He is the most fast.','Ele é o mais rápido.',False,'Diga the fastest.'),C('Goal is a sport.','Gol é um esporte.',False,'Não combina.')]}]}}
+Z={'verbs':[
+ V('kick','🦵','chutar','Kick = chutar. Regular: kicked.',('kick','We kick the ball.','Nós chutamos a bola.'),('kicks','He kicks it hard.','Ele chuta forte.'),('kicked','She kicked the ball far.','Ela chutou a bola longe.'),('kicking','They are kicking now.','Eles estão chutando agora.')),
+ V('pass','↗️','passar (a bola)','Pass = passar. Pass the ball = passar a bola.',('pass','We pass the ball.','Nós passamos a bola.'),('passes','He passes to Lia.','Ele passa para a Lia.'),('passed','I passed it to Tom.','Eu passei para o Tom.'),('passing','She is passing now.','Ela está passando agora.')),
+ V('win','🏆','ganhar','Win = ganhar. Passado: won.',('win','We win on Saturday.','Nós ganhamos no sábado.'),('wins','The blue team wins.','O time azul ganha.'),('won','They won three to one.','Eles ganharam de três a um.'),('winning','We are winning now.','Nós estamos ganhando agora.')),
+ V('shoot','🥅','chutar a gol','Shoot = chutar a gol. Passado: shot.',('shoot','We shoot a lot.','Nós chutamos muito a gol.'),('shoots','He shoots fast.','Ele chuta rápido a gol.'),('shot','She shot and scored.','Ela chutou a gol e marcou.'),('shooting','He is shooting now.','Ele está chutando agora.')),
+ V('cheer','📣','torcer','Cheer = torcer, comemorar. Regular: cheered.',('cheer','We cheer for the team.','Nós torcemos pelo time.'),('cheers','She cheers loudly.','Ela torce alto.'),('cheered','Everyone cheered.','Todos comemoraram.'),('cheering','The parents are cheering.','Os pais estão torcendo.'))],
+ 'verb_game':[{'scene':'Ontem o nosso time ganhou.','en':'Yesterday our team ___.','opts':['win','won','winning'],'ans':1,'pt':'Ontem o nosso time ganhou.','why':'O passado de win é won.'},
+  {'scene':'Ele chuta a gol rápido.','en':'He ___ fast.','opts':['shoot','shoots','shooting'],'ans':1,'pt':'Ele chuta a gol rápido.','why':'Com he, o verbo leva -s.'},
+  {'scene':'Eles estão torcendo agora.','en':'They are ___ now.','opts':['cheer','cheered','cheering'],'ans':2,'pt':'Eles estão torcendo agora.','why':'are + -ing: cheering.'},
+  {'scene':'Eu passei a bola para o Tom.','en':'I ___ the ball to Tom.','opts':['pass','passed','passing'],'ans':1,'pt':'Eu passei a bola para o Tom.','why':'Passado regular: passed.'}],
+ 'expressions':[{'en':'Which one is your son?','pt':'Qual é o seu filho?','ex':'Which one is your son? The tall boy?','exp':'Para perguntar qual pessoa de um grupo.','c':'a'},
+  {'en':'He’s fast!','pt':'Ele é rápido!','ex':'Wow, he’s fast!','exp':'Para elogiar a velocidade.','c':'b'},
+  {'en':'Who’s winning?','pt':'Quem está ganhando?','ex':'Who’s winning? It’s two to one.','exp':'Para perguntar o placar.','c':'c'},
+  {'en':'Pass the ball!','pt':'Passe a bola!','ex':'Pass the ball, Max!','exp':'Para gritar durante o jogo.','c':'d'},
+  {'en':'Good game!','pt':'Bom jogo!','ex':'Good game! See you next week.','exp':'Para cumprimentar no fim do jogo.','c':'a'},
+  {'en':'Go, team!','pt':'Vai, time!','ex':'Go, team! You can do it!','exp':'Para torcer pelo time.','c':'b'}],
+ 'expr_game':[{'cue':'Você quer saber o placar.','opts':['Who’s winning?','Good game!','Pass the ball!'],'ans':0,'why':'Who’s winning? pergunta o placar.'},
+  {'cue':'O jogo termina e você cumprimenta.','opts':['Which one is your son?','Good game!','He’s fast!'],'ans':1,'why':'Good game! é o cumprimento comum.'},
+  {'cue':'Você quer saber qual é o filho dele.','opts':['Go, team!','Who’s winning?','Which one is your son?'],'ans':2,'why':'Which one…? pergunta qual pessoa.'}]}
+w('x234.py','"""Quest v5 aula 234 (x)."""\nX = '+pprint.pformat(X,width=170)+'\n')
+w('z234.py','"""Quest v5 aula 234 (z)."""\nZ = '+pprint.pformat(Z,width=170)+'\n')

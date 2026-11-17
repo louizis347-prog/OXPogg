@@ -94,9 +94,9 @@ X = dict(
                 {"en": "Bye! Have a good one.", "pt": "Tchau! Boa continuação.", "ok": True, "fb": "Despedida informal e natural."},
                 {"en": "How are you?", "pt": "Como vai?", "ok": False, "fb": "Isso já foi perguntado no início."}]},
             {"npc": "See you tomorrow!", "pt": "Até amanhã!", "opts": [
-                {"en": "Hello! See you tomorrow.", "pt": "Olá! Até amanhã.", "ok": False, "fb": "Hello é para chegar, não para sair."},
-                {"en": "Good morning! See you tomorrow.", "pt": "Bom dia! Até amanhã.", "ok": False, "fb": "Good morning é um cumprimento de chegada, não de despedida."},
-                {"en": "See you tomorrow! Take care.", "pt": "Até amanhã! Se cuide.", "ok": True, "fb": "Repete a despedida e acrescenta um gesto simpático."}]},
+                {"en": "Hello! Nice to meet you.", "pt": "Olá! Prazer em conhecer.", "ok": False, "fb": "Hello e nice to meet you são para chegar, não para sair."},
+                {"en": "Good morning! How are you?", "pt": "Bom dia! Como vai?", "ok": False, "fb": "Good morning é um cumprimento de chegada, não de despedida."},
+                {"en": "Bye! Have a good day.", "pt": "Tchau! Tenha um bom dia.", "ok": True, "fb": "Despedida simpática e natural, sem repetir a fala dele."}]},
             {"npc": "Take care!", "pt": "Se cuide!", "opts": [
                 {"en": "Thanks, you too!", "pt": "Obrigado, você também!", "ok": True, "fb": "Agradece e retribui."},
                 {"en": "Nice to meet you!", "pt": "Prazer em conhecer!", "ok": False, "fb": "Essa frase é para a primeira vez que se vê alguém."},

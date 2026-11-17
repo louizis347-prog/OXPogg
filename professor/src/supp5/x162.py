@@ -77,7 +77,7 @@ X = {'key': {'big': 'Look how high!', 'label': 'Soltar pipa no parque', 'sub': '
                       'pt': 'Segure a linha, por favor.',
                       'opts': [{'en': 'Sorry, I can’t.', 'pt': 'Desculpe, não posso.', 'ok': False, 'fb': 'Possível, mas não combina com a brincadeira: ele pediu ajuda.'},
                                {'en': 'I have it. Run!', 'pt': 'Estou com ela. Corra!', 'ok': True, 'fb': 'Você segura e avisa para ele correr.'},
-                               {'en': 'Hold the string, please.', 'pt': 'Segure a linha, por favor.', 'ok': False, 'fb': 'Foi o Evan quem pediu.'}]},
+                               {'en': 'It is a nice kite.', 'pt': 'É uma pipa bonita.', 'ok': False, 'fb': 'Ele pediu ajuda; responda ao pedido.'}]},
                      {'npc': 'It is going up!',
                       'pt': 'Ela está subindo!',
                       'opts': [{'en': 'Where is the bus?', 'pt': 'Onde está o ônibus?', 'ok': False, 'fb': 'Foge do assunto.'},

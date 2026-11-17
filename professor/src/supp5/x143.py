@@ -71,7 +71,7 @@ X = dict(
   dict(npc="Take my jacket.", pt="Pegue meu casaco.", opts=[
    dict(en="It's so foggy today.", pt="Está tão nublado hoje.", ok=False, fb="Não responde à oferta."),
    dict(en="Thanks. You're kind.", pt="Obrigado. Você é gentil.", ok=True, fb="Agradece com educação."),
-   dict(en="Take my jacket.", pt="Pegue meu casaco.", ok=False, fb="A oferta é dela.")]),
+   dict(en="Do you want my jacket?", pt="Você quer meu casaco?", ok=False, fb="A oferta é dela; você é quem recebe.")]),
   dict(npc="Do you want to ride the cable car?", pt="Quer andar no bondinho?", opts=[
    dict(en="Yes! Where do we catch it?", pt="Sim! Onde pegamos?", ok=True, fb="Aceita e pergunta onde."),
    dict(en="Not right now. Maybe at noon.", pt="Agora não. Talvez ao meio-dia.", ok=False, fb="Isso era sobre a ponte."),

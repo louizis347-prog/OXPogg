@@ -66,7 +66,7 @@ X = dict(
    dict(en="Welcome to Philadelphia!", pt="Bem-vindo à Filadélfia!", ok=False, fb="Quem dá boas-vindas é o atendente.")]),
   dict(npc="Yes, it's free.", pt="Sim, é grátis.", opts=[
    dict(en="Where can I eat?", pt="Onde posso comer?", ok=True, fb="Pede uma dica de comida."),
-   dict(en="Yes, it's free.", pt="Sim, é grátis.", ok=False, fb="Você repetiria a resposta dele."),
+   dict(en="No, thank you.", pt="Não, obrigado.", ok=False, fb="Ele respondeu à sua pergunta; faça a próxima."),
    dict(en="Have a safe trip!", pt="Boa viagem!", ok=False, fb="Não combina com o momento.")]),
   dict(npc="Try a cheesesteak. It's a local favorite.", pt="Experimente um cheesesteak. É o preferido daqui.", opts=[
    dict(en="Can I help you?", pt="Posso ajudar?", ok=False, fb="Quem pergunta isso é o atendente."),

@@ -58,7 +58,7 @@ X = dict(
    dict(en='Go straight for two blocks.', pt='Siga em frente por dois quarteirões.', ok=True, fb='Primeiro passo claro do caminho.')]),
   dict(npc='Then?', pt='Depois?', opts=[
    dict(en='Turn left at the traffic light.', pt='Vire à esquerda no semáforo.', ok=True, fb='Segundo passo: virar num ponto de referência.'),
-   dict(en='Then, thank you.', pt='Depois, obrigado.', ok=False, fb='Ela ainda precisa do próximo passo.'),
+   dict(en='Where are you from?', pt='De onde você é?', ok=False, fb='Ela quer o próximo passo do caminho.'),
    dict(en='You are welcome.', pt='De nada.', ok=False, fb='Ela ainda não agradeceu.')]),
   dict(npc='And then?', pt='E depois?', opts=[
    dict(en='Turn the right door.', pt='Vire a porta direita.', ok=False, fb='Frase confusa; use “It’s on your right.”'),

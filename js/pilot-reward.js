@@ -61,6 +61,9 @@ function answer(ok,el){
   if(ok){
     P.prHits=(P.prHits||0)+1;P.prCombo=(P.prCombo||0)+1;
     if(pilot&&!calm())sparks(x,y,P.prCombo>=3?12:7);
+    if(pilot){let seen=false;try{seen=!!JSON.parse(localStorage.getItem(K_MEDALS)||'{}')[P.cid+'-'+P.e.n]}catch(e){}
+      if(!seen&&window.PogCoins){try{PogCoins.add(1);P.prCoins=(P.prCoins||0)+1}catch(e){}
+        if(!calm()){const c=document.createElement('b');c.className='pr-coin';c.textContent='+1 🪙';c.style.left=x+'px';c.style.top=y+'px';layer().appendChild(c);setTimeout(()=>c.remove(),1100)}}}
   }else{
     P.prCombo=0;
     if(!pilot)return;
@@ -85,7 +88,7 @@ function saveMedal(res){
 function medalHTML(){
   if(!active())return '';
   const res=tier(),T=TIERS[res.key],a=P.e.a||{};saveMedal(res);
-  const sub=res.tries?`${res.hits} de ${res.tries} respostas de primeira`:'Episódio concluído';
+  const sub=(res.tries?`${res.hits} de ${res.tries} respostas de primeira`:'Episódio concluído')+(P.prCoins?` · +${P.prCoins} 🪙 nas respostas`:'');
   return `<div class="pr-medal ${res.key}"><div class="pr-disc" aria-hidden="true">${T.ico}</div><div class="pr-mt"><b>${T.name}</b><small>${esc(sub)}</small></div></div>
   <div class="pr-sticker ${res.key}"><div class="pr-st-face"><small>FIGURINHA ${esc(T.rar.toUpperCase())}</small><b>${esc(a.w||P.e.t)}</b><span>${esc(a.k||'')}${a.y?' · '+esc(a.y):''}</span></div></div>`;
 }

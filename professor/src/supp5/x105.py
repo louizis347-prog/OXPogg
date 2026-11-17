@@ -89,7 +89,7 @@ X = {'key': {'big': 'Do you have a pen?', 'label': 'Pedir um material', 'sub': '
                                {'en': 'Thanks! Do you have paper?', 'pt': 'Valeu! Você tem papel?', 'ok': True, 'fb': 'Agradeça e peça o próximo item.'}]},
                      {'npc': 'Yes, in the drawer. What else?',
                       'pt': 'Tenho, na gaveta. Mais o quê?',
-                      'opts': [{'en': 'Yes, in the drawer.', 'pt': 'Sim, na gaveta.', 'ok': False, 'fb': 'Essa é a fala da Mei.'},
+                      'opts': [{'en': 'Yes, I do. Thank you.', 'pt': 'Sim, eu tenho. Obrigado.', 'ok': False, 'fb': 'Não pede nada; pergunte onde algo está.'},
                                {'en': 'I find tape in you.', 'pt': 'Eu acho fita em você.', 'ok': False, 'fb': 'Não é inglês natural.'},
                                {'en': 'Where can I find tape?', 'pt': 'Onde acho fita adesiva?', 'ok': True, 'fb': 'Pergunte onde algo fica.'}]},
                      {'npc': 'In the supply room, on the shelf.',

@@ -60,7 +60,7 @@ X = dict(
    {'en': 'Yes, I have a party too.', 'pt': 'Sim, eu também tenho uma festa.', 'ok': False, 'fb': 'Não responde ao convite dela.'}]},
   {'npc': 'It’s on Saturday at eight.', 'pt': 'É no sábado às oito.', 'opts': [
    {'en': 'Where is it?', 'pt': 'Onde é?', 'ok': True, 'fb': 'A próxima pergunta natural: o lugar.'},
-   {'en': 'It’s on Saturday at eight.', 'pt': 'É no sábado às oito.', 'ok': False, 'fb': 'Você só repete o que Lina disse.'},
+   {'en': 'I’m free on Saturday.', 'pt': 'Estou livre no sábado.', 'ok': False, 'fb': 'Não pergunta o local; falta saber onde é.'},
    {'en': 'See you Saturday!', 'pt': 'Até sábado!', 'ok': False, 'fb': 'Despedida cedo demais; ainda falta o endereço.'}]},
   {'npc': 'At my house. Here’s the address.', 'pt': 'Na minha casa. Aqui está o endereço.', 'opts': [
    {'en': 'Thanks! When is it?', 'pt': 'Obrigado! Quando é?', 'ok': False, 'fb': 'Ela já disse o horário.'},

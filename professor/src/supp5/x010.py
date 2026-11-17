@@ -91,7 +91,7 @@ X = dict(
             {"npc": "Oh no! I have class on Mondays.", "pt": "Ah, não! Tenho aula às segundas.", "opts": [
                 {"en": "When do you have class?", "pt": "Quando você tem aula?", "ok": True, "fb": "Pergunta natural sobre os dias da aula."},
                 {"en": "What time is it?", "pt": "Que horas são?", "ok": False, "fb": "Pergunta a hora, mas o assunto são os dias."},
-                {"en": "I have class on Mondays.", "pt": "Eu tenho aula às segundas.", "ok": False, "fb": "Repete o que ela disse, sem continuar a conversa."}]},
+                {"en": "I like Mondays.", "pt": "Eu gosto de segundas.", "ok": False, "fb": "Não continua a conversa; pergunte os dias da aula."}]},
             {"npc": "On Monday and Wednesday.", "pt": "Na segunda e na quarta.", "opts": [
                 {"en": "In Monday and Wednesday? OK.", "pt": "Em segunda e quarta? Certo.", "ok": False, "fb": "Com dias use on, não in."},
                 {"en": "Yes, I like class.", "pt": "Sim, eu gosto de aula.", "ok": False, "fb": "Ela não fez uma pergunta de sim ou não."},
@@ -102,7 +102,7 @@ X = dict(
                 {"en": "On Friday.", "pt": "Na sexta.", "ok": False, "fb": "Ela pergunta a hora, e você já disse o dia."}]},
             {"npc": "See you on Friday!", "pt": "Até sexta!", "opts": [
                 {"en": "Nice to meet you!", "pt": "Prazer em conhecer!", "ok": False, "fb": "Esta frase serve para uma primeira apresentação."},
-                {"en": "See you on Friday!", "pt": "Até sexta!", "ok": True, "fb": "Despedida natural com o dia combinado."},
+                {"en": "Great, see you then!", "pt": "Ótimo, até lá!", "ok": True, "fb": "Despedida natural com o combinado."},
                 {"en": "What day is it today?", "pt": "Que dia é hoje?", "ok": False, "fb": "Vocês já falaram disso, e a conversa está acabando."}]},
         ]},
 )

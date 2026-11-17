@@ -65,7 +65,7 @@ X = dict(
    dict(en="Could you speak more slowly?", pt="Pode falar mais devagar?", ok=True, fb="Boa pergunta se ela fala rápido."),
    dict(en="Eight dollars, yes.", pt="Oito dólares, sim.", ok=False, fb="Não pede ajuda; soa estranho.")]),
   dict(npc="Sure. Eight. Fifty.", pt="Claro. Oito. Cinquenta.", opts=[
-   dict(en="Sure. Eight. Fifty.", pt="Claro. Oito. Cinquenta.", ok=False, fb="Você repetiria a fala dela."),
+   dict(en="Here is nine dollars.", pt="Aqui estão nove dólares.", ok=False, fb="Ela disse oito e cinquenta; o valor não bate."),
    dict(en="Could you speak more slowly?", pt="Pode falar mais devagar?", ok=False, fb="Ela já falou devagar."),
    dict(en="Okay, I got it. Thank you.", pt="Ok, entendi. Obrigado.", ok=True, fb="Mostra que agora você entendeu.")]),
   dict(npc="Do you want a receipt?", pt="Quer o recibo?", opts=[

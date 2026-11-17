@@ -64,7 +64,7 @@ X = {'key': {'big': 'Nice weather, isn’t it?', 'label': 'Conversa de elevador'
                       'pt': 'Bom dia! Qual andar?',
                       'opts': [{'en': 'Seven, please. Thanks.', 'pt': 'Sétimo, por favor. Obrigado.', 'ok': True, 'fb': 'Diga o andar com educação.'},
                                {'en': 'I am seven.', 'pt': 'Eu sou sete.', 'ok': False, 'fb': 'Diga só o andar.'},
-                               {'en': 'Good morning! Which floor?', 'pt': 'Bom dia! Qual andar?', 'ok': False, 'fb': 'Quem perguntou foi o Ted.'}]},
+                               {'en': 'Thanks, I’m fine.', 'pt': 'Estou bem, obrigado.', 'ok': False, 'fb': 'Ele pergunta o andar, não como você está.'}]},
                      {'npc': 'Nice weather today, isn’t it?',
                       'pt': 'Tempo bom hoje, né?',
                       'opts': [{'en': 'Yes, finally some sun.', 'pt': 'Sim, finalmente um pouco de sol.', 'ok': True, 'fb': 'Concorde com um comentário curto.'},
