@@ -44,16 +44,15 @@ for n, d in sorted(lessons.items()):
     score += 1 if short >= 3 else 0
     score += 2 if rep >= 3 else 0
     score += 2 if dens >= 0.85 else 0
-    score += 1 if link < 0.05 else 0
     rows.append(dict(n=n, nivel=level(n), titulo=d['title'], falas=len(L), media_palavras=round(sum(nw) / max(1, len(nw)), 1),
-                     falas_curtas=short, falas_repetidas=rep, densidade_alvo=round(dens, 2), ligacao_obra=round(link, 2), pontos=score))
+                     falas_curtas=short, falas_repetidas=rep, densidade_alvo=round(dens, 2), pontos=score))
 os.makedirs(DOCS, exist_ok=True)
 with open(os.path.join(DOCS, 'qualidade_aulas.csv'), 'w', newline='', encoding='utf-8') as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 out = ['# Qualidade automática das aulas (fila de revisão)', '',
        'Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais pontos = aula que merece reescrita ou revisão primeiro): '
        'média de palavras por fala abaixo do esperado do nível (2), 3+ falas curtas (1), 3+ falas repetidas de outras aulas (2), '
-       'estrutura-alvo em ≥85% das falas (2), obra com pouca ligação ao tema (1). **É um filtro automático; não substitui revisão humana.**', '']
+       'estrutura-alvo em ≥85% das falas (2; só mede A2 em diante, onde o foco vem do plano). A ligação da obra cultural com o tema NÃO é medida (a nota está em português e o diálogo em inglês; qualquer comparação automática seria enganosa): esse ponto precisa de leitura humana. **É um filtro automático; não substitui revisão humana.**', '']
 by = collections.defaultdict(list)
 for r in rows: by[r['nivel']].append(r)
 out.append('## Resumo por nível'); out.append('')
@@ -65,7 +64,7 @@ for lv in ('A1', 'A2', 'B1', 'B2'):
 for lv in ('A1', 'A2', 'B1', 'B2'):
     R = sorted(by.get(lv, []), key=lambda r: (-r['pontos'], r['media_palavras']))[:15]
     if not R: continue
-    out += ['', '## %s — 15 aulas para rever primeiro' % lv, '', '| Aula | Título | Pontos | Palavras/fala | Curtas | Repetidas | Densidade alvo | Ligação obra |', '|---|---|---|---|---|---|---|---|']
-    for r in R: out.append('| %d | %s | %d | %s | %d | %d | %s | %s |' % (r['n'], r['titulo'].replace('|', '/'), r['pontos'], r['media_palavras'], r['falas_curtas'], r['falas_repetidas'], r['densidade_alvo'], r['ligacao_obra']))
+    out += ['', '## %s — 15 aulas para rever primeiro' % lv, '', '| Aula | Título | Pontos | Palavras/fala | Curtas | Repetidas | Densidade alvo |', '|---|---|---|---|---|---|---|']
+    for r in R: out.append('| %d | %s | %d | %s | %d | %d | %s |' % (r['n'], r['titulo'].replace('|', '/'), r['pontos'], r['media_palavras'], r['falas_curtas'], r['falas_repetidas'], r['densidade_alvo']))
 open(os.path.join(DOCS, 'QUALIDADE_AULAS.md'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 print(len(rows), 'aulas medidas')
