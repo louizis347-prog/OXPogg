@@ -80,7 +80,7 @@ for n, (f, d) in sorted(LES.items()):
     rows = [(w[0], VX[w[0].lower()]) for w in words if w[0].lower() in VX and ('f' in VX[w[0].lower()] or 'c' in VX[w[0].lower()])]
     if len(rows) >= 2:
         pg = base('Famílias e colocações', 'famcol'); pg['rows'] = [{'w': w, 'f': e.get('f'), 'c': e.get('c')} for w, e in rows[:4]]
-        new_after_vocab.append(pg)
+        pg['blk']='V'; new_after_vocab.append(pg)
     # foto -> palavra
     ph = [w for w in words if slug(w[0]) in PHOTOS]
     if len(ph) >= 3 and len(names) >= 4:
@@ -90,7 +90,7 @@ for n, (f, d) in sorted(LES.items()):
             opts, ans = shuffle([w[0]] + others, w[0], (n, 'img', i))
             items.append({'q': 'Qual palavra combina com a foto?', 'img': 'palavras/' + slug(w[0]) + '.jpg', 'opts': opts, 'ans': ans, 'why': w[0] + ' = ' + w[1] + '.'})
         pg = base('Associe a foto à palavra'); pg['instruction'] = 'Olhe a foto e escolha a palavra certa.'; pg['items'] = items
-        new_after_vocab.append(pg)
+        pg['blk']='V'; new_after_vocab.append(pg)
     # complete a frase
     items = []
     for i, w in enumerate(words):
@@ -104,7 +104,7 @@ for n, (f, d) in sorted(LES.items()):
         if len(items) == 5: break
     if len(items) >= 3:
         pg = base('Complete a frase'); pg['instruction'] = 'Escolha a palavra que completa cada frase.'; pg['items'] = items
-        new_after_vocab.append(pg)
+        pg['blk']='V'; new_after_vocab.append(pg)
     # sinônimo / oposto
     syn = [s for s in ext.get('syn', []) if isinstance(s, list) and len(s) >= 3]
     if len(syn) >= 2:
@@ -117,7 +117,7 @@ for n, (f, d) in sorted(LES.items()):
             q = ('Which word is the opposite of “%s”?' if kind == 'ant' else 'Which word means almost the same as “%s”?') % a
             items.append({'q': q, 'opts': opts, 'ans': ans, 'why': '“%s” e “%s” são %s.' % (a, b, 'opostas' if kind == 'ant' else 'parecidas')})
         pg = base('Palavra parecida ou oposta?'); pg['instruction'] = 'Pense no significado.'; pg['items'] = items
-        new_after_vocab.append(pg)
+        pg['blk']='V'; new_after_vocab.append(pg)
     # palavra que não combina
     cl = ext.get('classify') or {}
     A, B = cl.get('A') or [], cl.get('B') or []
@@ -129,12 +129,12 @@ for n, (f, d) in sorted(LES.items()):
             opts, ans = shuffle(trio + [odd], odd, (n, 'odd', i))
             items.append({'q': 'Which word does not belong with the others?', 'opts': opts, 'ans': ans, 'why': 'As outras três são do tema: %s.' % cl.get('title', 'a aula')})
         pg = base('Qual palavra não combina?'); pg['instruction'] = 'Três palavras são do mesmo tema. Ache a diferente.'; pg['items'] = items
-        new_after_vocab.append(pg)
+        pg['blk']='V'; new_after_vocab.append(pg)
     # armadilha de tradução
     tr = ext.get('trap')
     if isinstance(tr, dict) and tr.get('wrong') and tr.get('right') and tr.get('why'):
         pg = base('Armadilha de tradução', 'trap'); pg['trap'] = {k: tr.get(k, '') for k in ('label', 'wrong', 'right', 'why')}
-        new_trap.append(pg)
+        pg['blk']='E'; new_trap.append(pg)
     # qual frase está correta
     fx = [q for q in ext.get('fix', []) if isinstance(q, dict) and isinstance(q.get('opts'), list) and len(q['opts']) == 3 and isinstance(q.get('ans'), int) and 0 <= q['ans'] < 3]
     if len(fx) >= 2:
@@ -158,6 +158,17 @@ for n, (f, d) in sorted(LES.items()):
         if i == last_exprplay: out += new_trap
         if i == last_arcade: out += new_fix
     if last_vocab < 0: out = pages
+    # variedade: títulos da obra e ordem dos blocos do laboratório (o laboratório de sons continua por último e intacto)
+    for p in out:
+        if p['kind'] == 'work' and p.get('work', {}).get('title'):
+            p.setdefault('otitle', p['title']); p['title'] = 'Obra · ' + p['work']['title']
+    BLK = {'vocab': 'V', 'verbs': 'B', 'verbplay': 'B', 'exprs': 'E', 'exprplay': 'E', 'pattern': 'P'}
+    lab = [p for p in out if p.get('stage') == 'lab' and p['kind'] != 'soundlab']
+    if lab and all((p.get('blk') or BLK.get(p['kind'])) for p in lab):
+        order = [('V', 'B', 'E', 'P'), ('E', 'V', 'B', 'P'), ('V', 'E', 'P', 'B'), ('B', 'V', 'E', 'P')][n % 4]
+        sorted_lab = [p for b in order for p in lab if (p.get('blk') or BLK[p['kind']]) == b]
+        it = iter(sorted_lab)
+        out = [next(it) if (p.get('stage') == 'lab' and p['kind'] != 'soundlab') else p for p in out]
     added = len(out) - len(pages)
     d['pages'] = out
     json.dump(d, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
