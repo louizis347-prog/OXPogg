@@ -38,7 +38,7 @@ function ensureCoach(){if(coach&&coach.isConnected)return coach;coach=document.c
 /* posiciona o Poggie onde não cobre texto, botões nem figuras; se não houver espaço, fica quieto */
 function coachFree(c){var cr=c.getBoundingClientRect(),m=6;if(cr.width<4)return false;
   var els=document.querySelectorAll('#stage *');
-  for(var i=0;i<els.length;i++){var e=els[i],tag=e.tagName;if(e.closest('.q1v-coach'))continue;var own='';for(var k=0;k<e.childNodes.length;k++)if(e.childNodes[k].nodeType===3)own+=e.childNodes[k].textContent;
+  for(var i=0;i<els.length;i++){var e=els[i],tag=e.tagName;if(e.closest('.q1v-coach')||e.closest('.qp-bg'))continue;var own='';for(var k=0;k<e.childNodes.length;k++)if(e.childNodes[k].nodeType===3)own+=e.childNodes[k].textContent;
     var vis=own.trim().length>1||tag==='BUTTON'||tag==='INPUT'||tag==='SELECT'||tag==='TEXTAREA'||tag==='IMG'||tag==='svg'||tag==='CANVAS';if(!vis)continue;
     var r=e.getBoundingClientRect();if(r.width<4||r.height<4)continue;if(r.right<cr.left+m||r.left>cr.right-m||r.bottom<cr.top+m||r.top>cr.bottom-m)continue;return false}
   return true}
