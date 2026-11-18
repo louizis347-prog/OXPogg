@@ -200,7 +200,7 @@ P=[('I’ve been waiting for an hour', 'Boston', 'Blake', 'Dan', 'present perfec
 ('Reviewing a product honestly', 'Miami', 'Fay', 'Eva', 'revisão: opinião, condicionais e linguagem de avaliação', 'shop'),
 ('What I’ve learned: B2, third block', 'Houston', 'Tess', 'Bia', 'revisão final do terceiro bloco de B2: o que você já sabe fazer', 'classroom'),
 ('If I had saved more, I’d be rich now', 'Boston', 'Blake', 'Dan', 'condicional misto: if + past perfect, would + infinitivo (passado → presente)', 'office'),
-('If I were you, I’d have left earlier', 'Chicago', 'Dirk', 'Rui', 'condicional misto: if + past simples, would have + particípio', 'station'),
+('If I were you, I’d have left earlier', 'Chicago', 'Dirk', 'Rui', 'conselho sobre o passado: if + past simples, would have + particípio', 'station'),
 ('If she hadn’t moved, we’d still be neighbours', 'Seattle', 'Gabe', 'Leo', 'condicional misto: mudanças de vida e consequências de hoje', 'apartmenthall'),
 ('We used to play outside all day', 'Austin', 'Tess', 'Theo', 'used to: hábitos e estados do passado', 'park'),
 ('We would visit my grandmother every summer', 'Denver', 'Carl', 'Luisa', 'would para hábitos do passado vs used to', 'kitchen'),
