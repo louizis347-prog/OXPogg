@@ -45,7 +45,7 @@ SUPP = {'badge': {'desc': 'Adjetivo + preposição + -ing', 'icon': '✈️', 'n
                                 'ok': False,
                                 'pt': 'Então vamos fazer um plano. Um amigo, que é piloto, diz que a maioria dos atrasos e sacudidas é totalmente inofensiva.'}],
                       'pt': 'Verdade. Ela não para de me mandar fotos da praia, e me sinto culpada por ter perdido o aniversário de casamento dela na primavera.'},
-                     {'npc': 'That helps a little. Should I sit near the window, or should I choose the aisle?',
+                     {'npc': 'That helps a little. Is it better to sit near the window, or to choose the aisle?',
                       'opts': [{'en': 'Take the aisle, so you can walk around. I am responsible for carrying your small bag, so you can relax at the gate.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -58,7 +58,7 @@ SUPP = {'badge': {'desc': 'Adjetivo + preposição + -ing', 'icon': '✈️', 'n
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Pegue o corredor, assim você pode andar. Eu fico responsável por levar sua bolsa pequena, então você relaxa no portão.'}],
-                      'pt': 'Isso ajuda um pouco. Devo sentar perto da janela ou escolher o corredor?'},
+                      'pt': 'Isso ajuda um pouco. É melhor sentar perto da janela ou escolher o corredor?'},
                      {'npc': 'Thank you. They are calling our flight now, and my hands are shaking, but I am proud of coming this far.',
                       'opts': [{'en': 'You should be. Take a deep breath and think about the beach. I will be next to you the whole time.',
                                 'fb': 'Natural e claro.',
@@ -142,8 +142,8 @@ SUPP = {'badge': {'desc': 'Adjetivo + preposição + -ing', 'icon': '✈️', 'n
                     'Then let us make a plan. A friend, who is a pilot, says that most delays and bumps are completely harmless.',
                     'Então vamos fazer um plano. Um amigo, que é piloto, diz que a maioria dos atrasos e sacudidas é totalmente inofensiva.'),
                    ('Nell',
-                    'That helps a little. Should I sit near the window, or should I choose the aisle?',
-                    'Isso ajuda um pouco. Devo sentar perto da janela ou escolher o corredor?'),
+                    'That helps a little. Is it better to sit near the window, or to choose the aisle?',
+                    'Isso ajuda um pouco. É melhor sentar perto da janela ou escolher o corredor?'),
                    ('You',
                     'Take the aisle, so you can walk around. I am responsible for carrying your small bag, so you can relax at the gate.',
                     'Pegue o corredor, assim você pode andar. Eu fico responsável por levar sua bolsa pequena, então você relaxa no portão.'),
@@ -209,7 +209,7 @@ SUPP = {'badge': {'desc': 'Adjetivo + preposição + -ing', 'icon': '✈️', 'n
                       '“I understand, but your sister lives in Madrid, and you are keen on visiting her. That is a good reason to overcome it.” says Paulo. “True. She '
                       'keeps sending me photos of the beach, and I feel guilty about missing her wedding anniversary last spring.” says Nell. “Then let us make a plan. '
                       'A friend, who is a pilot, says that most delays and bumps are completely harmless.” says Paulo.',
-                      '“That helps a little. Should I sit near the window, or should I choose the aisle?” says Nell. “Take the aisle, so you can walk around. I am '
+                      '“That helps a little. Is it better to sit near the window, or to choose the aisle?” says Nell. “Take the aisle, so you can walk around. I am '
                       'responsible for carrying your small bag, so you can relax at the gate.” says Paulo. “Thank you. They are calling our flight now, and my hands are '
                       'shaking, but I am proud of coming this far.” says Nell.',
                       '“You should be. Take a deep breath and think about the beach. I will be next to you the whole time.” says Paulo. “Okay, let us go. If I survive '
