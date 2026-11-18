@@ -6,7 +6,7 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 
 | Nível | Aulas | Média de palavras/fala | Aulas com ≥3 pontos | Aulas com ≥5 pontos |
 |---|---|---|---|---|
-| A1 | 500 | 6.2 | 117 (23%) | 11 |
+| A1 | 500 | 6.2 | 105 (21%) | 0 |
 | A2 | 500 | 8.9 | 3 (1%) | 0 |
 | B1 | 500 | 12.0 | 0 (0%) | 0 |
 | B2 | 272 | 18.5 | 0 (0%) | 0 |
@@ -15,21 +15,21 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 
 | Aula | Título | Pontos | Palavras/fala | Curtas | Repetidas | Densidade alvo |
 |---|---|---|---|---|---|---|
-| 48 | Taking a taxi | 5 | 3.2 | 8 | 4 | 0.0 |
-| 205 | At the vet | 5 | 3.7 | 8 | 3 | 0.0 |
-| 25 | Pizza by the slice | 5 | 3.9 | 6 | 4 | 0.11 |
-| 53 | Airport check-in | 5 | 3.9 | 6 | 3 | 0.11 |
-| 173 | At the drive-thru | 5 | 3.9 | 5 | 3 | 0.0 |
-| 33 | At the bakery | 5 | 4.3 | 6 | 3 | 0.0 |
-| 90 | At the museum | 5 | 4.4 | 6 | 3 | 0.0 |
-| 46 | The bus stop | 5 | 4.7 | 3 | 4 | 0.0 |
-| 47 | Buy a transit card | 5 | 4.9 | 4 | 3 | 0.0 |
-| 68 | At the laundry room | 5 | 4.9 | 3 | 3 | 0.0 |
-| 77 | Returning an item | 5 | 4.9 | 4 | 3 | 0.0 |
 | 1001 | A sandwich at the deli | 3 | 3.4 | 8 | 1 | 0.0 |
 | 82 | Garage sale | 3 | 3.7 | 6 | 0 | 0.11 |
 | 159 | Surprise party | 3 | 3.7 | 7 | 0 | 0.0 |
 | 204 | Packing a lunch | 3 | 3.7 | 6 | 1 | 0.0 |
+| 81 | At the checkout | 3 | 3.8 | 5 | 2 | 0.0 |
+| 139 | Wash my car | 3 | 3.8 | 7 | 0 | 0.0 |
+| 215 | At the butcher | 3 | 3.8 | 6 | 2 | 0.0 |
+| 23 | Breakfast at the diner | 3 | 4.0 | 5 | 2 | 0.11 |
+| 30 | Build your bowl | 3 | 4.0 | 5 | 1 | 0.0 |
+| 31 | Coffee, your way | 3 | 4.0 | 7 | 2 | 0.0 |
+| 37 | Ice cream flavors | 3 | 4.0 | 7 | 1 | 0.0 |
+| 39 | Tip and thank you | 3 | 4.0 | 7 | 1 | 0.33 |
+| 41 | Cooking at home | 3 | 4.0 | 6 | 0 | 0.0 |
+| 50 | At the gas station | 3 | 4.0 | 5 | 1 | 0.0 |
+| 52 | At the train station | 3 | 4.0 | 6 | 2 | 0.33 |
 
 ## A2 — 15 aulas para rever primeiro
 

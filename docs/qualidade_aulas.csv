@@ -1,10 +1,10 @@
 n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,pontos
-1,A1,A coffee to go in Chicago,12,6.1,2,1,0.0,0
+1,A1,A coffee to go in Chicago,12,6.1,2,2,0.0,0
 2,A1,"Four mangoes, please",9,5.0,3,1,0.0,1
 3,A1,Nice to meet you,9,6.3,1,1,0.33,0
 4,A1,Spell your name,9,5.2,2,1,0.11,0
 5,A1,Where are you from?,9,5.3,1,1,0.22,0
-6,A1,"Hello, goodbye",9,4.3,5,1,0.0,3
+6,A1,"Hello, goodbye",9,4.3,5,0,0.0,3
 7,A1,How old are you?,9,4.8,4,0,0.22,3
 8,A1,My family,9,5.8,4,0,0.0,1
 9,A1,What do you do?,9,5.4,3,0,0.11,1
@@ -14,7 +14,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 13,A1,Colors and things,9,4.9,3,1,0.0,3
 14,A1,"Hello, who is this?",9,4.7,5,1,0.0,3
 15,A1,Texting a friend,9,4.4,4,0,0.0,3
-16,A1,My pet,9,5.4,3,2,0.0,1
+16,A1,My pet,9,5.4,3,1,0.0,1
 17,A1,"I like, I don't like",9,5.1,4,0,0.0,1
 18,A1,My hobbies,9,5.8,3,0,0.0,1
 19,A1,My favorite music,9,5.1,3,0,0.0,1
@@ -22,8 +22,8 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 21,A1,What's the weather?,9,4.2,6,0,0.22,3
 22,A1,Party invitation,9,4.7,5,1,0.0,3
 23,A1,Breakfast at the diner,9,4.0,5,2,0.11,3
-24,A1,Ordering lunch,9,4.4,5,1,0.0,3
-25,A1,Pizza by the slice,9,3.9,6,4,0.11,5
+24,A1,Ordering lunch,9,4.4,5,0,0.0,3
+25,A1,Pizza by the slice,9,6.7,0,1,0.11,0
 26,A1,What's in this?,9,4.1,7,1,0.0,3
 27,A1,Sharing food,9,4.1,7,1,0.0,3
 28,A1,I'm hungry!,9,4.3,4,0,0.11,3
@@ -31,11 +31,11 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 30,A1,Build your bowl,9,4.0,5,1,0.0,3
 31,A1,"Coffee, your way",9,4.0,7,2,0.0,3
 32,A1,"Water, please",9,4.1,5,2,0.22,3
-33,A1,At the bakery,9,4.3,6,3,0.0,5
+33,A1,At the bakery,9,7.3,0,0,0.11,0
 34,A1,Where is the milk?,9,4.3,4,1,0.0,3
 35,A1,Fruit by the pound,9,4.1,6,0,0.0,3
-36,A1,Burger combo,9,4.1,6,2,0.22,3
-37,A1,Ice cream flavors,9,4.0,7,2,0.0,3
+36,A1,Burger combo,9,4.1,6,1,0.22,3
+37,A1,Ice cream flavors,9,4.0,7,1,0.0,3
 38,A1,"The check, please",9,4.2,5,2,0.0,3
 39,A1,Tip and thank you,9,4.0,7,1,0.33,3
 40,A1,Takeout by phone,9,5.0,4,1,0.33,1
@@ -44,14 +44,14 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 43,A1,Where is the bank?,9,5.4,2,2,0.0,0
 44,A1,"Turn left, turn right",9,5.2,2,2,0.0,0
 45,A1,Taking the subway,9,5.1,4,0,0.0,1
-46,A1,The bus stop,9,4.7,3,4,0.0,5
-47,A1,Buy a transit card,9,4.9,4,3,0.0,5
-48,A1,Taking a taxi,9,3.2,8,4,0.0,5
+46,A1,The bus stop,9,7.4,0,0,0.0,0
+47,A1,Buy a transit card,9,7.3,0,1,0.0,0
+48,A1,Taking a taxi,9,6.8,0,1,0.0,0
 49,A1,Parking,9,4.6,5,2,0.0,3
-50,A1,At the gas station,9,4.0,5,2,0.0,3
+50,A1,At the gas station,9,4.0,5,1,0.0,3
 51,A1,Renting a bike,9,4.9,4,0,0.0,3
 52,A1,At the train station,9,4.0,6,2,0.33,3
-53,A1,Airport check-in,9,3.9,6,3,0.11,5
+53,A1,Airport check-in,9,7.0,0,0,0.33,0
 54,A1,Security and the gate,9,4.4,5,1,0.11,3
 55,A1,Hotel check-in,9,4.6,5,1,0.11,3
 56,A1,A small problem,9,4.9,4,0,0.11,3
@@ -66,16 +66,16 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 65,A1,Meet the landlord,9,5.3,3,0,0.11,1
 66,A1,Furniture shopping,9,5.4,2,0,0.11,0
 67,A1,In my kitchen,9,5.4,2,0,0.0,0
-68,A1,At the laundry room,9,4.9,3,3,0.0,5
+68,A1,At the laundry room,9,7.3,0,0,0.0,0
 69,A1,Borrowing sugar,9,5.6,1,0,0.11,0
 70,A1,Chores at home,9,5.7,2,0,0.11,0
 71,A1,Wi-Fi and internet,9,4.6,5,0,0.11,3
 72,A1,Trash and recycling,9,5.2,3,0,0.11,1
 73,A1,Clothes and sizes,9,4.9,3,2,0.0,3
 74,A1,Shoe shopping,9,4.3,3,1,0.0,3
-75,A1,At the mall,9,4.0,8,2,0.0,3
+75,A1,At the mall,9,4.0,8,1,0.0,3
 76,A1,The fitting room,9,5.4,3,0,0.0,1
-77,A1,Returning an item,9,4.9,4,3,0.0,5
+77,A1,Returning an item,9,7.4,0,1,0.0,0
 78,A1,At the phone store,9,5.0,3,0,0.0,1
 79,A1,At the drugstore,9,5.0,5,0,0.0,1
 80,A1,At the barbershop,9,5.1,3,1,0.11,1
@@ -88,7 +88,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 87,A1,A picnic in the park,9,5.1,4,0,0.0,1
 88,A1,At the beach,9,4.2,5,1,0.0,3
 89,A1,Camping,9,4.9,3,0,0.0,3
-90,A1,At the museum,9,4.4,6,3,0.0,5
+90,A1,At the museum,9,7.4,0,1,0.22,0
 91,A1,A concert night,9,4.6,5,1,0.0,3
 92,A1,A baseball game,9,5.3,3,1,0.11,1
 93,A1,A street festival,9,4.7,3,1,0.11,3
@@ -106,7 +106,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 105,A1,Office supplies,9,5.2,3,1,0.0,1
 106,A1,Printing documents,9,5.7,1,0,0.0,0
 107,A1,Lunch with coworkers,9,5.8,2,0,0.0,0
-108,A1,What time is the meeting?,9,5.0,4,2,0.0,1
+108,A1,What time is the meeting?,9,5.0,4,1,0.0,1
 109,A1,Can you help me?,9,4.9,3,1,0.11,3
 110,A1,Send an email,9,5.4,2,0,0.0,0
 111,A1,A call at work,9,5.4,2,1,0.11,0
@@ -123,7 +123,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 122,A1,End of the work week,9,5.0,3,1,0.0,1
 123,A1,I don't feel well,9,5.9,1,0,0.22,0
 124,A1,Make an appointment,9,4.9,4,0,0.11,3
-125,A1,At the doctor's office,9,4.7,5,1,0.11,3
+125,A1,At the doctor's office,9,4.7,5,0,0.11,3
 126,A1,Parts of the body,9,5.7,2,1,0.0,0
 127,A1,Healthy food,9,5.6,2,0,0.0,0
 128,A1,Sleep and tired,9,6.0,2,0,0.0,0
@@ -132,7 +132,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 131,A1,I need help!,9,4.6,5,2,0.0,3
 132,A1,I want to open an account,9,4.6,4,0,0.0,3
 133,A1,Where is the ATM?,9,4.8,4,1,0.11,3
-134,A1,At the post office,9,4.8,5,2,0.0,3
+134,A1,At the post office,9,4.8,5,1,0.0,3
 135,A1,Where is the form?,9,5.0,2,0,0.0,0
 136,A1,My driver's license,9,5.1,3,0,0.0,1
 137,A1,At the dry cleaner,9,4.7,2,0,0.0,2
@@ -142,7 +142,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 141,A1,Deep dish and windy days,9,5.2,4,0,0.0,1
 142,A1,Traffic in L.A.,9,5.0,3,0,0.0,1
 143,A1,Foggy city,9,5.0,3,0,0.0,1
-144,A1,Museums in D.C.,9,4.1,7,2,0.0,3
+144,A1,Museums in D.C.,9,4.1,7,1,0.0,3
 145,A1,History walk,9,5.4,1,3,0.0,2
 146,A1,Jazz and gumbo,9,4.7,5,1,0.0,3
 147,A1,Show night,9,5.3,2,1,0.0,0
@@ -168,17 +168,17 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 167,A1,I like your jacket,9,4.8,4,0,0.11,3
 168,A1,Passport control,9,4.3,4,2,0.0,3
 169,A1,Baggage claim,9,5.6,1,1,0.0,0
-170,A1,Calling a ride,9,5.0,4,3,0.0,3
+170,A1,Calling a ride,9,5.0,4,2,0.0,1
 171,A1,Booking a table,9,4.8,5,0,0.0,3
 172,A1,The wrong order,9,5.4,1,0,0.0,0
-173,A1,At the drive-thru,9,3.9,5,3,0.0,5
+173,A1,At the drive-thru,9,7.2,0,0,0.0,0
 174,A1,Movie tickets,9,5.0,4,1,0.0,1
 175,A1,Self-checkout,9,5.2,2,0,0.0,0
 176,A1,Order online,9,4.8,3,0,0.0,3
 177,A1,Can I get your number?,9,5.0,5,1,0.0,1
 178,A1,I can't make it,9,5.2,2,1,0.0,0
 179,A1,Locked out,9,4.7,3,1,0.0,3
-180,A1,The heater is broken,9,4.8,4,1,0.0,3
+180,A1,The heater is broken,9,4.8,4,0,0.0,3
 181,A1,Too much noise,9,4.9,5,1,0.0,3
 182,A1,The power is out,9,5.4,1,0,0.0,0
 183,A1,I lost my phone,9,5.7,2,4,0.0,2
@@ -203,7 +203,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 202,A1,Our grocery list,9,4.8,3,0,0.0,3
 203,A1,What should we watch?,9,4.7,4,0,0.0,3
 204,A1,Packing a lunch,9,3.7,6,1,0.0,3
-205,A1,At the vet,9,3.7,8,3,0.0,5
+205,A1,At the vet,9,7.1,0,1,0.0,0
 206,A1,Watering the plants,9,4.8,4,0,0.33,3
 207,A1,Not interested,9,5.4,2,1,0.0,0
 208,A1,The smoke alarm,9,4.0,6,0,0.0,3
@@ -233,7 +233,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 232,A1,Business cards,11,6.0,3,0,0.0,1
 233,A1,I lost my badge,11,5.3,6,3,0.0,3
 234,A1,Soccer game,11,5.4,6,0,0.27,1
-235,A1,At the swimming pool,11,6.5,2,1,0.0,0
+235,A1,At the swimming pool,11,6.5,2,0,0.0,0
 236,A1,Hiking trail,11,6.2,3,1,0.09,1
 237,A1,Fishing at the lake,11,6.6,3,1,0.0,1
 238,A1,At the skate park,11,6.2,3,0,0.18,1
@@ -261,7 +261,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1012,A1,Holidays and months,11,5.3,6,0,0.0,1
 1013,A1,A phone case,11,5.8,3,3,0.0,3
 1014,A1,A message for Ana,11,5.7,2,1,0.0,0
-1015,A1,Plans by text,11,5.1,5,1,0.0,1
+1015,A1,Plans by text,11,5.1,5,0,0.0,1
 1016,A1,At the pet store,11,6.0,3,2,0.0,1
 1017,A1,Food at the party,11,5.1,7,0,0.0,1
 1018,A1,Join a club,11,5.9,3,0,0.0,1
@@ -282,7 +282,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1033,A1,Fresh bread,11,5.9,3,1,0.0,1
 1034,A1,The corner store,11,6.8,1,1,0.0,0
 1035,A1,At the farmers market,11,6.6,2,0,0.0,0
-1036,A1,"Small, medium or large?",11,6.3,4,1,0.0,1
+1036,A1,"Small, medium or large?",11,6.3,4,0,0.0,1
 1037,A1,Cup or cone?,11,6.5,2,0,0.09,0
 1038,A1,Split the check,11,6.5,2,0,0.0,0
 1039,A1,Leave a tip,11,7.4,0,0,0.0,0
@@ -292,14 +292,14 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1043,A1,Near the park,11,6.5,2,1,0.0,0
 1044,A1,Directions by phone,11,6.8,4,1,0.0,1
 1045,A1,The subway map,11,6.0,3,1,0.0,1
-1046,A1,The next bus,11,5.7,3,2,0.0,1
+1046,A1,The next bus,11,5.7,3,0,0.0,1
 1047,A1,Add money to my card,11,6.6,1,0,0.0,0
-1048,A1,A taxi to the airport,11,5.2,5,4,0.0,3
+1048,A1,A taxi to the airport,11,5.2,5,3,0.0,3
 1049,A1,The parking meter,11,6.8,3,0,0.0,1
 1050,A1,Fill the tank,11,6.7,1,0,0.0,0
 1051,A1,Helmet and lock,11,6.9,1,0,0.09,0
 1052,A1,Which platform?,11,7.1,2,0,0.0,0
-1053,A1,Check my suitcase,11,5.8,4,2,0.0,1
+1053,A1,Check my suitcase,11,5.8,4,1,0.0,1
 1054,A1,Through security,11,7.1,1,1,0.0,0
 1055,A1,Hotel services,11,6.8,1,0,0.18,0
 1056,A1,A broken charger,11,8.2,0,1,0.0,0
@@ -380,7 +380,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1131,A1,Call for help,11,6.5,2,0,0.0,0
 1132,A1,Open an account,11,8.0,0,1,0.0,0
 1133,A1,Looking for the ATM,11,6.2,1,2,0.0,0
-1134,A1,Stamps and boxes,11,6.6,1,2,0.0,0
+1134,A1,Stamps and boxes,11,6.6,1,1,0.0,0
 1135,A1,Which form is it?,11,8.0,0,0,0.0,0
 1136,A1,Renew my license,11,7.8,1,0,0.0,0
 1137,A1,Dry cleaning,11,7.4,2,0,0.0,0
@@ -390,7 +390,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1141,A1,Deep dish pizza,11,6.2,2,0,0.09,0
 1142,A1,Stuck in traffic,11,7.8,0,0,0.0,0
 1143,A1,A foggy morning,11,7.3,2,0,0.0,0
-1144,A1,Museum tickets,11,6.8,1,1,0.0,0
+1144,A1,Museum tickets,11,6.8,1,2,0.0,0
 1145,A1,History walk,11,7.1,1,2,0.18,0
 1146,A1,Jazz on the street,11,6.7,1,0,0.0,0
 1147,A1,Show tickets,11,6.5,1,1,0.0,0
@@ -421,7 +421,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1172,A1,The wrong order,11,7.8,0,0,0.0,0
 1173,A1,At the drive-thru,11,6.2,2,1,0.09,0
 1174,A1,Movie tickets,11,7.9,0,0,0.0,0
-1175,A1,Self-checkout,11,7.5,0,1,0.0,0
+1175,A1,Self-checkout,11,7.5,0,0,0.0,0
 1176,A1,Order online,11,6.6,1,0,0.0,0
 1177,A1,Can I get your number?,11,7.7,0,0,0.0,0
 1178,A1,I can’t make it,11,6.6,1,1,0.0,0
@@ -451,7 +451,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1202,A1,Our grocery list,11,6.5,0,0,0.0,0
 1203,A1,What should we watch?,11,5.7,1,0,0.0,0
 1204,A1,Packing a lunch,11,6.7,0,0,0.0,0
-1205,A1,At the vet,11,6.7,3,1,0.0,1
+1205,A1,At the vet,11,6.7,3,2,0.0,1
 1206,A1,Watering the plants,11,8.9,0,0,0.0,0
 1207,A1,Not interested,11,7.5,0,1,0.0,0
 1208,A1,The smoke alarm,11,7.7,0,0,0.0,0
@@ -482,7 +482,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 1233,A1,I lost my badge,11,8.0,0,0,0.0,0
 1234,A1,Soccer game,11,7.5,0,0,0.0,0
 1235,A1,At the swimming pool,11,7.8,1,0,0.0,0
-1236,A1,Hiking trail,11,7.7,2,0,0.0,0
+1236,A1,Hiking trail,11,7.7,2,1,0.0,0
 1237,A1,Fishing at the lake,11,7.9,0,0,0.0,0
 1238,A1,At the skate park,11,7.9,0,0,0.0,0
 1239,A1,Ice skating,11,7.1,2,0,0.0,0
@@ -784,7 +784,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 2283,A2,A phone store,11,11.9,0,0,0.18,0
 2284,A2,Paying at the counter,11,11.6,0,0,0.18,0
 2285,A2,A discount,11,9.9,0,0,0.0,0
-2286,A2,Returning a shirt,11,8.9,0,2,0,0
+2286,A2,Returning a shirt,11,8.9,0,1,0,0
 2287,A2,At the bank,11,8.3,1,1,0.64,0
 2288,A2,Changing money,11,8.2,0,0,0.27,0
 2289,A2,A birthday card,11,9.2,0,0,0.45,0
@@ -1420,7 +1420,7 @@ n,nivel,titulo,falas,media_palavras,falas_curtas,falas_repetidas,densidade_alvo,
 3419,B1,I wonder what is in this sauce,11,12.3,0,0,0.73,0
 3420,B1,Dessert is on the house,11,10.5,0,0,0.36,0
 3421,B1,I’ve felt dizzy all day,11,10.2,0,0,0.45,0
-3422,B1,Take it twice a day,11,10.1,0,0,0.0,0
+3422,B1,Take it twice a day,11,10.1,0,1,0.0,0
 3423,B1,You mustn’t drive after this tablet,11,10.6,0,0,0.82,0
 3424,B1,The doctor told me to rest,11,10.8,0,0,0.45,0
 3425,B1,Is it safe to take with milk?,11,10.8,0,0,0.91,2

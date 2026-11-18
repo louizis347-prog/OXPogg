@@ -212,7 +212,9 @@ def apply_one(pk, o):
     # telas 'Sua resposta'
     ch = [p for p in d['pages'] if p['kind'] == 'choice']
     for i, p in enumerate(ch):
-        npcl, you = newl[2 * i], newl[2 * i + 1]; w = o['wrong'][i]
+        if 2 * i + 1 < len(newl): npcl, you = newl[2 * i], newl[2 * i + 1]; w = o['wrong'][i]
+        else:  # A1: a última tela responde à fala final do professor
+            fin = o['final']; npcl = newl[-1]; you = fin['you']; w = fin['wrong']
         t = p['turn']; t['npc'] = npcl['en']; t['pt'] = npcl['pt']
         t['opts'] = [{'en': you['en'], 'fb': 'Natural e claro.', 'ok': True, 'pt': you['pt']}] + [{'en': x['en'].strip(), 'fb': x['fb'].strip(), 'ok': False, 'pt': x['pt'].strip()} for x in w]
         tc = p.get('teach') or {}
