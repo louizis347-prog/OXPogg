@@ -113,3 +113,8 @@
 - Só mudaram as páginas derivadas da obra (sticker, work, story, unit). Diálogos, pintura, "me" e "finish" foram mantidos como antes.
 - As obras novas foram escritas pelo modelo: fatos e anos não foram verificados por professor.
 - Relatório automático: `docs/QUALIDADE_AULAS.md`.
+
+## B2 — 4º bloco (4201–4272)
+- 72 aulas novas: condicional misto, used to/would, manage to, obrigação e permissão no passado, gerúndio × infinitivo, objeto + infinitivo, as if, so/such, too/enough, conectores, tag questions, was going to, quantificadores, get passivo, in case. A 4272 fecha o bloco.
+- Auditoria de nível sem violações; 44 quadros por aula no navegador, sem erro; diálogos com média acima de 15 palavras por fala; nomes dos falantes conferidos.
+- Ressalvas: obras escolhidas pelo modelo (algumas com ligação fraca ao tema: 4210, 4217, 4225, 4232, 4239, 4263, 4265); 4202 ensina "If I were you, I would have left" como conselho, não como condicional misto verdadeiro.

@@ -9,7 +9,7 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 | A1 | 500 | 6.2 | 117 (23%) | 11 |
 | A2 | 500 | 8.9 | 3 (1%) | 0 |
 | B1 | 500 | 12.0 | 0 (0%) | 0 |
-| B2 | 200 | 18.1 | 0 (0%) | 0 |
+| B2 | 272 | 18.5 | 0 (0%) | 0 |
 
 ## A1 — 15 aulas para rever primeiro
 
@@ -82,11 +82,11 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 | 4059 | I’m getting my hair cut tomorrow | 2 | 18.0 | 0 | 0 | 0.91 |
 | 4122 | I wish phones weren’t so addictive | 2 | 18.0 | 0 | 0 | 1.0 |
 | 4081 | This time next week I’ll be flying | 2 | 18.1 | 0 | 0 | 1.0 |
+| 4239 | I’d rather you didn’t smoke here | 2 | 18.1 | 0 | 0 | 1.0 |
 | 4179 | I’m not used to writing so much | 2 | 18.5 | 0 | 0 | 1.0 |
+| 4224 | She enjoys cooking but hates washing up | 2 | 18.5 | 0 | 0 | 1.0 |
 | 4119 | I’d rather not take painkillers | 2 | 18.6 | 0 | 0 | 1.0 |
 | 4149 | Whoever wins, nothing will change | 2 | 18.6 | 0 | 0 | 0.91 |
+| 4223 | I regret telling him the secret | 2 | 18.6 | 0 | 0 | 0.91 |
 | 4085 | I’d rather stay home tonight | 2 | 18.7 | 0 | 0 | 1.0 |
-| 4090 | Whether or not you agree | 2 | 18.9 | 0 | 0 | 1.0 |
-| 4138 | Despite the delay, we enjoyed the trip | 2 | 19.7 | 0 | 0 | 1.0 |
-| 4184 | I wish people would use bikes more | 2 | 19.7 | 0 | 0 | 0.91 |
-| 4137 | She suggested we take the night train | 2 | 19.8 | 0 | 0 | 0.91 |
+| 4270 | Fewer people, less noise, more room | 2 | 18.7 | 0 | 0 | 1.0 |
