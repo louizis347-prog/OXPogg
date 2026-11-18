@@ -107,3 +107,9 @@
 - **Vocabulário:** 0 palavras fora da regra B2 nos diálogos. Sem estruturas acima do nível (C1) em nenhum campo das 30 aulas.
 - **Teste no navegador:** as 30 aulas têm 44 quadros e nenhum erro. 200 títulos de aula distintos no B2; as 30 obras novas não repetem nenhuma outra do projeto.
 - **Limites:** checagem de gramática por padrões de texto; fatos das obras e traduções em português não verificados; nenhum professor revisou o conteúdo.
+
+## A1 — "Cena da obra" sem repetição
+- 275 aulas do A1 tiveram a obra (livro/filme/música/pintura) re-registrada para não repetir "Cena da obra".
+- Só mudaram as páginas derivadas da obra (sticker, work, story, unit). Diálogos, pintura, "me" e "finish" foram mantidos como antes.
+- As obras novas foram escritas pelo modelo: fatos e anos não foram verificados por professor.
+- Relatório automático: `docs/QUALIDADE_AULAS.md`.
