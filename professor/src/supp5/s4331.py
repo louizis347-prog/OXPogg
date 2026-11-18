@@ -46,18 +46,18 @@ SUPP = {'badge': {'desc': 'Can’t help / can’t stand / can’t bear', 'icon':
                                 'pt': 'Verdade. Vamos andar pelo saguão enquanto esperamos. Li que o arquiteto projetou o prédio nos anos cinquenta.'}],
                       'pt': 'Coitados. Não aguento ouvir pessoas gritando em público, principalmente quando estão de férias e deveriam estar relaxando.'},
                      {'npc': 'Yes, it is famous for the curved staircase. Honestly, I can’t help feeling that we are inside an old film set.',
-                      'opts': [{'en': 'Exactly. Look at the pool outside through those windows. I would love to spend the whole day there, with a cold drink.',
+                      'opts': [{'en': 'Exactly. Look at the pool outside. I would love to spend the whole day there, with a cold drink.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
-                                'pt': 'Exato. Olhe a piscina lá fora por aquelas janelas. Eu adoraria passar o dia todo lá, com uma bebida gelada.'},
-                               {'en': 'to love would spend cold outside whole the with Look there, at windows. a pool I those day the drink. Exactly. through',
+                                'pt': 'Exato. Olhe a piscina lá fora. Eu adoraria passar o dia todo lá, com uma bebida gelada.'},
+                               {'en': 'would to day Look cold outside. the at a there, pool with love whole spend the drink. Exactly. I',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
-                                'pt': 'Exato. Olhe a piscina lá fora por aquelas janelas. Eu adoraria passar o dia todo lá, com uma bebida gelada.'},
-                               {'en': 'Exactly. Look at the pool outside through those windows. I would to spend the whole day there, with a cold drink.',
+                                'pt': 'Exato. Olhe a piscina lá fora. Eu adoraria passar o dia todo lá, com uma bebida gelada.'},
+                               {'en': 'Exactly. Look at the pool outside. I would love spend the whole day there, with a cold drink.',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
-                                'pt': 'Exato. Olhe a piscina lá fora por aquelas janelas. Eu adoraria passar o dia todo lá, com uma bebida gelada.'}],
+                                'pt': 'Exato. Olhe a piscina lá fora. Eu adoraria passar o dia todo lá, com uma bebida gelada.'}],
                       'pt': 'Sim, é famoso pela escada curva. Sinceramente, não consigo deixar de sentir que estamos num cenário de filme antigo.'},
                      {'npc': 'Me too, but my boss expects me online by noon, so I will only have time for a short swim.',
                       'opts': [{'en': 'At least you will have the evening free. Let us have dinner on the terrace and watch the sunset over the ocean.',
@@ -136,8 +136,8 @@ SUPP = {'badge': {'desc': 'Can’t help / can’t stand / can’t bear', 'icon':
                     'Yes, it is famous for the curved staircase. Honestly, I can’t help feeling that we are inside an old film set.',
                     'Sim, é famoso pela escada curva. Sinceramente, não consigo deixar de sentir que estamos num cenário de filme antigo.'),
                    ('You',
-                    'Exactly. Look at the pool outside through those windows. I would love to spend the whole day there, with a cold drink.',
-                    'Exato. Olhe a piscina lá fora por aquelas janelas. Eu adoraria passar o dia todo lá, com uma bebida gelada.'),
+                    'Exactly. Look at the pool outside. I would love to spend the whole day there, with a cold drink.',
+                    'Exato. Olhe a piscina lá fora. Eu adoraria passar o dia todo lá, com uma bebida gelada.'),
                    ('Felix',
                     'Me too, but my boss expects me online by noon, so I will only have time for a short swim.',
                     'Eu também, mas meu chefe espera que eu esteja on-line ao meio-dia, então só terei tempo para um mergulho rápido.'),
@@ -188,8 +188,8 @@ SUPP = {'badge': {'desc': 'Can’t help / can’t stand / can’t bear', 'icon':
              'scan': [{'alt': ['staircase'], 'ans': 'the curved staircase', 'q': 'What is famous in the lobby?'},
                       {'alt': ['down'], 'ans': 'it was down for twenty minutes', 'q': 'Why is the system slow?'},
                       {'alt': ['terrace'], 'ans': 'on the terrace', 'q': 'Where will they have dinner?'}],
-             'text': ['Felix and Clara arrive at a hotel in Miami. The lobby is huge and bright. Guests stand in a long line. A band plays softly nearby. Felix looks up '
-                      'at the ceiling. Clara checks her phone.',
+             'text': ['Felix and Clara arrive at a hotel in Miami. The lobby is huge and bright. Guests stand in a long line. A band plays nearby. Felix looks up at the '
+                      'ceiling. Clara checks her phone.',
                       '“I can’t help laughing every time I see this lobby. The chandelier looks like something from an old movie about the fifties.” says Felix. “It is '
                       'amazing, is it not? I can’t stand waiting in hotel lobbies, but this one is so beautiful that I do not mind.” says Clara. “Same here. By the way, '
                       'did you manage to check in? The receptionist told me the system was down for twenty minutes.” says Felix.',
@@ -197,11 +197,11 @@ SUPP = {'badge': {'desc': 'Can’t help / can’t stand / can’t bear', 'icon':
                       'things. I can’t bear hearing people shout in public, especially when they are on vacation and should be relaxing.” says Felix. “True. Let us walk '
                       'around the lobby while we wait. I have read that the architect designed the building in the fifties.” says Clara.',
                       '“Yes, it is famous for the curved staircase. Honestly, I can’t help feeling that we are inside an old film set.” says Felix. “Exactly. Look at '
-                      'the pool outside through those windows. I would love to spend the whole day there, with a cold drink.” says Clara. “Me too, but my boss expects '
-                      'me online by noon, so I will only have time for a short swim.” says Felix.',
+                      'the pool outside. I would love to spend the whole day there, with a cold drink.” says Clara. “Me too, but my boss expects me online by noon, so I '
+                      'will only have time for a short swim.” says Felix.',
                       '“At least you will have the evening free. Let us have dinner on the terrace and watch the sunset over the ocean.” says Clara. “Great idea. I hope '
                       'the restaurant is not too crowded, because I really dislike eating in a hurry.” says Felix. They finally reach the desk. The room is ready. Felix '
-                      'takes the bags upstairs. Clara opens the balcony door. The ocean is blue and calm. Some places make you smile without trying.'],
+                      'takes the bags. Clara opens the balcony door. The ocean is blue and calm. Some places make you smile without trying.'],
              'tf': [{'ans': True, 's': 'Felix can’t help laughing at the lobby.', 'why': 'He says so.'},
                     {'ans': False, 's': 'Clara likes waiting in lobbies.', 'why': 'She can’t stand it.'},
                     {'ans': True, 's': 'The couple in front of them is arguing.', 'why': 'It gets on Clara’s nerves.'},

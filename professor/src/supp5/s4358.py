@@ -218,8 +218,7 @@ SUPP = {'badge': {'desc': 'Há quanto tempo e desde quando', 'icon': '📅', 'na
              'scan': [{'alt': ['2015'], 'ans': 'since 2015', 'q': 'Since when does Dana live in Seattle?'},
                       {'alt': ['three'], 'ans': 'three weeks ago', 'q': 'How long ago did Nina arrive?'},
                       {'alt': ['Thursday'], 'ans': 'on Thursday evening', 'q': 'When does the group meet?'}],
-             'text': ['Dana lives in Seattle. She has a house on a quiet street. Nina is a new neighbor. She moved in three weeks ago. They meet at the garden gate. '
-                      'Dana has a lot to tell.',
+             'text': ['Dana lives in Seattle. She has a house. Nina is a new neighbor. She moved in three weeks ago. They meet at the garden gate. Dana has stories.',
                       '“Welcome to the street, Nina! I have lived here for about ten years, since 2015, so ask me anything about the neighborhood.” says Dana. “Thank '
                       'you, Dana. We arrived only three weeks ago, and we have not met anybody except you and the mailman.” says Nina. “Give it time. I moved here from '
                       'Texas, and for the first year I did not know a single neighbor either.” says Dana.',
