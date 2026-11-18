@@ -4,18 +4,18 @@ SUPP = {'badge': {'desc': 'The + adjective for groups of people', 'icon': '🏙�
            'story': 'Nell e Paulo caminham por uma rua de Denver e conversam sobre aluguel, emprego e saúde. Eles falam de grupos de pessoas com the + adjetivo: the '
                     'young, the elderly, the unemployed.',
            'turns': [{'npc': 'Paulo, did you see the news? They say rents are rising so fast that the young can hardly afford a room.',
-                      'opts': [{'en': 'I did. My uncle says it is worse for the elderly, because many live on small pensions and cannot move away.',
+                      'opts': [{'en': 'I did. My uncle says it is worse for the elderly, because many live on small pensions and have to stay where they are.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
-                                'pt': 'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e não podem se mudar para longe.'},
-                               {'en': 'is says did. live uncle I away. worse pensions on because elderly, the many and My small move for it cannot',
+                                'pt': 'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e precisam ficar onde estão.'},
+                               {'en': 'many where the live uncle on pensions are. to I elderly, is did. stay worse says and because My small they for it have',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
-                                'pt': 'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e não podem se mudar para longe.'},
-                               {'en': 'I did. My uncle says it is worse for the because many live on small pensions and cannot move away.',
+                                'pt': 'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e precisam ficar onde estão.'},
+                               {'en': 'I did. My uncle says it is worse for the elderly, because live on small pensions and have to stay where they are.',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
-                                'pt': 'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e não podem se mudar para longe.'}],
+                                'pt': 'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e precisam ficar onde estão.'}],
                       'pt': 'Paulo, você viu as notícias? Dizem que os aluguéis estão subindo tão rápido que os jovens mal conseguem pagar um quarto.'},
                      {'npc': 'That is true. The rich can always find a way, but the unemployed and the homeless are the ones who suffer most.',
                       'opts': [{'en': 'Still, there is a program downtown that trains young people for free. Several neighbors from my building joined it last month.',
@@ -143,8 +143,8 @@ SUPP = {'badge': {'desc': 'The + adjective for groups of people', 'icon': '🏙�
                     'Paulo, did you see the news? They say rents are rising so fast that the young can hardly afford a room.',
                     'Paulo, você viu as notícias? Dizem que os aluguéis estão subindo tão rápido que os jovens mal conseguem pagar um quarto.'),
                    ('You',
-                    'I did. My uncle says it is worse for the elderly, because many live on small pensions and cannot move away.',
-                    'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e não podem se mudar para longe.'),
+                    'I did. My uncle says it is worse for the elderly, because many live on small pensions and have to stay where they are.',
+                    'Vi. Meu tio diz que é pior para os idosos, porque muitos vivem de pensões pequenas e precisam ficar onde estão.'),
                    ('Nell',
                     'That is true. The rich can always find a way, but the unemployed and the homeless are the ones who suffer most.',
                     'É verdade. Os ricos sempre dão um jeito, mas os desempregados e os sem-teto são os que mais sofrem.'),
@@ -229,11 +229,11 @@ SUPP = {'badge': {'desc': 'The + adjective for groups of people', 'icon': '🏙�
              'scan': [{'alt': ['rents'], 'ans': 'the rents', 'q': 'What is rising fast?'},
                       {'alt': ['grandmother'], 'ans': 'Paulo’s grandmother', 'q': 'Who waited three weeks for a nurse?'},
                       {'alt': ['Saturdays'], 'ans': 'on Saturdays', 'q': 'When does Paulo volunteer?'}],
-             'text': ['It is a busy afternoon in Denver. Nell and Paulo walk along a wide street. There are offices, cafes and small shops. A newspaper on a bench talks '
-                      'about rents. Nell stops to read the headline. Paulo reads it over her shoulder.',
+             'text': ['A busy afternoon in Denver. Nell and Paulo walk downtown. Shops and offices are open. A newspaper talks about rents. Nell stops to read it. Paulo '
+                      'reads over her shoulder.',
                       '“Paulo, did you see the news? They say rents are rising so fast that the young can hardly afford a room.” says Nell. “I did. My uncle says it is '
-                      'worse for the elderly, because many live on small pensions and cannot move away.” says Paulo. “That is true. The rich can always find a way, but '
-                      'the unemployed and the homeless are the ones who suffer most.” says Nell.',
+                      'worse for the elderly, because many live on small pensions and have to stay where they are.” says Paulo. “That is true. The rich can always find '
+                      'a way, but the unemployed and the homeless are the ones who suffer most.” says Nell.',
                       '“Still, there is a program downtown that trains young people for free. Several neighbors from my building joined it last month.” says Paulo. '
                       '“That sounds helpful. I wonder whether the city offers anything for older people too, like transport or help with the heating bills.” says Nell. '
                       '“When my grandmother got sick last winter, she waited three weeks for a nurse, and the sick should never wait that long.” says Paulo.',
@@ -241,9 +241,8 @@ SUPP = {'badge': {'desc': 'The + adjective for groups of people', 'icon': '🏙�
                       'I volunteer on Saturdays at a center where the old and the young learn computer skills together.” says Paulo. “I would love to see that. Maybe I '
                       'could bring some friends, because we have been looking for a way to help out.” says Nell.',
                       '“Please do. We are short of volunteers, and poor people are not the only ones who need support; many families struggle.” says Paulo. “You are '
-                      'right. Let us go together on Saturday, and then I will write to the city council about the rents.” says Nell. On Saturday, Nell and Paulo go to '
-                      'the center. Old and young people sit at the same tables. Nell helps a man with his first email. Paulo shows a girl how to write a resume. The '
-                      'afternoon passes quickly. A city is only as strong as its weakest neighbors.'],
+                      'right. Let us go together on Saturday, and then I will write to the city council about the rents.” says Nell. On Saturday, they go there. Old and '
+                      'young share tables. Nell helps a man. Paulo helps a girl. The afternoon passes quickly. A good city cares for everyone.'],
              'tf': [{'ans': False, 's': 'The rich suffer most in this city, says Nell.', 'why': 'She says the unemployed and the homeless suffer most.'},
                     {'ans': True, 's': 'Paulo’s uncle talks about the elderly.', 'why': 'He says it is worse for them.'},
                     {'ans': True, 's': 'The program downtown is for young people.', 'why': 'It trains the young for free.'},

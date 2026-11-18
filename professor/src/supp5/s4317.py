@@ -212,8 +212,8 @@ SUPP = {'badge': {'desc': 'Reclamação educada: present perfect e pedidos', 'ic
              'scan': [{'alt': ['three weeks'], 'ans': 'three weeks', 'q': 'How long has Theo been waiting?'},
                       {'alt': ['express'], 'ans': 'express service', 'q': 'What did he pay extra for?'},
                       {'alt': ['six'], 'ans': 'by six this evening', 'q': 'When will the sofa arrive?'}],
-             'text': ['It is a busy afternoon in Boston. Tess works at the service desk of a big store. Theo walks in with a folder in his hand. He looks tired and a '
-                      'little angry. His new sofa has not arrived. He wants a clear answer today.',
+             'text': ['It is a busy afternoon in Boston. Tess works at a store service desk. Theo walks in with a folder. He looks tired and a little angry. His new '
+                      'sofa has not arrived. He wants a clear answer.',
                       '“Good afternoon, and welcome to the service desk. What can I do for you today? You look a little worried.” says Tess. “Hello, Tess. I have been '
                       'waiting for a sofa for three weeks, and nobody has called me back.” says Theo. “I am sorry to hear that. Could you give me your order number? I '
                       'will check where the delivery is now.” says Tess.',
@@ -225,8 +225,7 @@ SUPP = {'badge': {'desc': 'Reclamação educada: present perfect e pedidos', 'ic
                       'left, so the sofa will be at your door by six this evening.” says Tess.',
                       '“That is a relief. If it does not arrive tonight, I will ask for a full refund, so please note that.” says Theo. “Noted. We have also added a '
                       'discount code to your account, and I really hope you enjoy the sofa once it arrives.” says Tess. Tess writes a note on his file. Theo thanks her '
-                      'for her help. The sofa arrives at six that evening. Two men carry it up the stairs. Theo sits down and relaxes at last. A polite complaint solves '
-                      'the problem.'],
+                      'for her help. The sofa arrives at six. Two men carry it upstairs. Theo finally relaxes. A polite complaint works.'],
              'tf': [{'ans': True, 's': 'Theo took a day off work yesterday.', 'why': 'He did, but nobody came.'},
                     {'ans': False, 's': 'The driver has already reached Theo’s street.', 'why': 'He has not reached it yet.'},
                     {'ans': True, 's': 'Tess promises a possible refund.', 'why': 'A refund is discussed if it does not arrive.'},
