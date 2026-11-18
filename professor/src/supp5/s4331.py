@@ -188,8 +188,8 @@ SUPP = {'badge': {'desc': 'Can’t help / can’t stand / can’t bear', 'icon':
              'scan': [{'alt': ['staircase'], 'ans': 'the curved staircase', 'q': 'What is famous in the lobby?'},
                       {'alt': ['down'], 'ans': 'it was down for twenty minutes', 'q': 'Why is the system slow?'},
                       {'alt': ['terrace'], 'ans': 'on the terrace', 'q': 'Where will they have dinner?'}],
-             'text': ['Felix and Clara arrive at a hotel in Miami. The lobby is huge and bright. Guests stand in a long line. A band plays nearby. Felix looks up at the '
-                      'ceiling. Clara checks her phone.',
+             'text': ['Felix and Clara arrive at a hotel in Miami. The lobby is huge. Guests stand in a long line. A band plays nearby. Felix looks up at the ceiling. '
+                      'Clara checks her phone.',
                       '“I can’t help laughing every time I see this lobby. The chandelier looks like something from an old movie about the fifties.” says Felix. “It is '
                       'amazing, is it not? I can’t stand waiting in hotel lobbies, but this one is so beautiful that I do not mind.” says Clara. “Same here. By the way, '
                       'did you manage to check in? The receptionist told me the system was down for twenty minutes.” says Felix.',
@@ -201,7 +201,7 @@ SUPP = {'badge': {'desc': 'Can’t help / can’t stand / can’t bear', 'icon':
                       'will only have time for a short swim.” says Felix.',
                       '“At least you will have the evening free. Let us have dinner on the terrace and watch the sunset over the ocean.” says Clara. “Great idea. I hope '
                       'the restaurant is not too crowded, because I really dislike eating in a hurry.” says Felix. They finally reach the desk. The room is ready. Felix '
-                      'takes the bags. Clara opens the balcony door. The ocean is blue and calm. Some places make you smile without trying.'],
+                      'takes the bags. Clara opens the door. The ocean is blue and calm. Some places make you smile without trying.'],
              'tf': [{'ans': True, 's': 'Felix can’t help laughing at the lobby.', 'why': 'He says so.'},
                     {'ans': False, 's': 'Clara likes waiting in lobbies.', 'why': 'She can’t stand it.'},
                     {'ans': True, 's': 'The couple in front of them is arguing.', 'why': 'It gets on Clara’s nerves.'},
