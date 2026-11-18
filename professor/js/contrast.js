@@ -21,7 +21,7 @@
    var fs=parseFloat(cs.fontSize),big=fs>=24||(fs>=18.66&&parseInt(cs.fontWeight)>=700),need=big?3.2:4.7;
    var f0=mix(fg,bg);if(cr(f0,bg)>=need)continue;
    var h=toHsl(fg),n=0;while(n++<40){h.l-=.02;if(h.l<.06)h.l=.06;var c2=fromHsl(h);if(cr(c2,bg)>=need||h.l<=.06){el.style.setProperty('color','rgb('+c2.r+','+c2.g+','+c2.b+')','important');break}}}}
- var tm=0;function run(){clearTimeout(tm);tm=setTimeout(function(){var s=document.getElementById('stage');if(s)fix(s);var d=document.querySelector('.dock .dl');if(d)fix(d.parentNode)},70)}
+ var tm=0;function run(){clearTimeout(tm);tm=setTimeout(function(){var s=document.getElementById('stage');if(s)fix(s);var d=document.querySelector('.dock .dl');if(d)fix(d.parentNode)},16)}
  function init(){var s=document.getElementById('stage');if(!s){setTimeout(init,300);return}
   new MutationObserver(run).observe(s,{childList:true,subtree:true});run()}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
