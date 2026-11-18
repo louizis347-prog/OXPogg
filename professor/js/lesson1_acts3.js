@@ -35,7 +35,16 @@ var coach,coachTimer,coachRun=0;
 function ensureCoach(){if(coach&&coach.isConnected)return coach;coach=document.createElement('div');coach.className='q1v-coach';coach.setAttribute('aria-live','polite');
   var m='';try{if(window.HomeArt&&HomeArt.mascot)m=HomeArt.mascot({scarf:'#2b6fe6'})}catch(e){}
   coach.innerHTML='<div class="q1v-cm">'+(m||'🦦')+'</div><div class="q1v-cb"><span class="q1v-ct"></span></div>';document.body.appendChild(coach);return coach}
+/* posiciona o Poggie onde não cobre texto, botões nem figuras; se não houver espaço, fica quieto */
+function coachFree(c){var cr=c.getBoundingClientRect(),m=6;if(cr.width<4)return false;
+  var els=document.querySelectorAll('#stage *');
+  for(var i=0;i<els.length;i++){var e=els[i],tag=e.tagName;if(e.closest('.q1v-coach'))continue;var own='';for(var k=0;k<e.childNodes.length;k++)if(e.childNodes[k].nodeType===3)own+=e.childNodes[k].textContent;
+    var vis=own.trim().length>1||tag==='BUTTON'||tag==='INPUT'||tag==='SELECT'||tag==='TEXTAREA'||tag==='IMG'||tag==='svg'||tag==='CANVAS';if(!vis)continue;
+    var r=e.getBoundingClientRect();if(r.width<4||r.height<4)continue;if(r.right<cr.left+m||r.left>cr.right-m||r.bottom<cr.top+m||r.top>cr.bottom-m)continue;return false}
+  return true}
+function placeCoach(c){var spots=['','pr','pm'];for(var i=0;i<spots.length;i++){c.classList.remove('pr','pm');if(spots[i])c.classList.add(spots[i]);if(coachFree(c))return true}c.classList.remove('pr','pm');return false}
 function say(msg,ms,tone){var c=ensureCoach();clearTimeout(coachTimer);$('.q1v-ct',c).textContent=msg;c.classList.remove('ok','no');if(tone)c.classList.add(tone);c.classList.add('on');
+  if(!placeCoach(c)){c.classList.remove('on');return}
   coachTimer=setTimeout(function(){c.classList.remove('on')},ms||5200)}
 function hideCoach(){clearTimeout(coachTimer);if(coach)coach.classList.remove('on','ok','no')}
 var KIND_MSG={
@@ -67,7 +76,7 @@ function frameCoach(p,b){if(!p)return;var arr=KIND_MSG[p.kind];if(!arr)return;va
   var L=window.__LESSON||{};msg=msg.replace('{t}',(L.topic||L.title||'esta situação'));var run=++coachRun;
   setTimeout(function(){if(run===coachRun)say(msg,5600)},650)}
 /* ================= limpeza ao trocar de quadro ================= */
-function clearTransient(){$$(document,'.q1v-toast,.xpop').forEach(function(e){e.remove()});hideCoach();stop()}
+function clearTransient(){$$(document,'.q1v-toast,.xpop').forEach(function(e){e.remove()});hideCoach();stop();try{if(window.PGCONF)PGCONF.cancel()}catch(e){}}
 /* reação às respostas: Poggie fala uma frase diferente a cada acerto; some no próximo quadro */
 (function(){var prev=window.RL_ONGAIN;window.RL_ONGAIN=function(n,ok,xp,streak){if(prev){try{prev.apply(this,arguments)}catch(e){}}
   if(n>0&&ok){say(nextPraise(),2600,'ok');var hero=$('.pb .q1v-react');if(hero)hero.textContent='✨ '+nextPraise()}

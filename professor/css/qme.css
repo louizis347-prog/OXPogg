@@ -44,3 +44,8 @@ body.quest-l1 .dock .dl{color:#17323f;font-weight:800}
 .q1v-vpt,.q1v-vpt2,.q1v-scene{color:#3f6172}
 .q1v-mic{background:linear-gradient(135deg,#c2303a,#c42a73)}
 .q1v-sltip{color:#0f3b45}
+
+/* Poggie: posições alternativas para não cobrir o conteúdo */
+.q1v-coach.pr{left:auto;right:clamp(84px,8vw,104px);flex-direction:row-reverse}
+.q1v-coach.pr .q1v-cb{border-radius:18px 18px 5px 18px;transform-origin:100% 100%}
+.q1v-coach.pm{left:50%;transform:translateX(-50%)}
