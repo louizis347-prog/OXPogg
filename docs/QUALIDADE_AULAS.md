@@ -9,7 +9,7 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 | A1 | 500 | 6.2 | 105 (21%) | 0 |
 | A2 | 500 | 8.9 | 3 (1%) | 0 |
 | B1 | 500 | 12.0 | 0 (0%) | 0 |
-| B2 | 322 | 18.8 | 0 (0%) | 0 |
+| B2 | 372 | 19.1 | 0 (0%) | 0 |
 
 ## A1 — 15 aulas para rever primeiro
 
