@@ -64,7 +64,7 @@ SUPP = {'badge': {'desc': 'Phrasal verbs no passivo', 'icon': '📅', 'name': 'C
                                 'ok': False,
                                 'pt': 'Não se preocupe. A gerente disse que os resultados seriam analisados assim que as ruas fossem liberadas.'}],
                       'pt': 'Espero que nada mais seja adiado. Meu relatório foi entregue no prazo, e eu odiaria esperar por uma decisão.'},
-                     {'npc': 'I wish the news had been announced earlier. I rearranged my whole morning, and a call with a supplier was pushed back for nothing.',
+                     {'npc': 'I wish the news had been announced before. I rearranged my whole morning, and a call with a supplier was pushed back.',
                       'opts': [{'en': 'Same here. Next time, let us ask that all changes be sent out by email at least the evening before.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -77,7 +77,7 @@ SUPP = {'badge': {'desc': 'Phrasal verbs no passivo', 'icon': '📅', 'name': 'C
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Comigo também. Da próxima vez, vamos pedir que todas as mudanças sejam enviadas por e-mail pelo menos na noite anterior.'}],
-                      'pt': 'Queria que a notícia tivesse sido anunciada antes. Reorganizei minha manhã inteira, e uma ligação com um fornecedor foi adiada à toa.'}]},
+                      'pt': 'Queria que a notícia tivesse sido anunciada antes. Reorganizei minha manhã inteira, e uma ligação com um fornecedor foi adiada.'}]},
  'culture': {'compare': {'ask': 'The meeting was called off.',
                          'br': 'No Brasil, dizemos “a reunião foi cancelada” e “a revisão foi adiada”.',
                          'tip': 'Diga: “The meeting was called off.”',
@@ -153,8 +153,8 @@ SUPP = {'badge': {'desc': 'Phrasal verbs no passivo', 'icon': '📅', 'name': 'C
                     'Do not worry. The manager said that the results would be looked at as soon as the roads were cleared.',
                     'Não se preocupe. A gerente disse que os resultados seriam analisados assim que as ruas fossem liberadas.'),
                    ('Fay',
-                    'I wish the news had been announced earlier. I rearranged my whole morning, and a call with a supplier was pushed back for nothing.',
-                    'Queria que a notícia tivesse sido anunciada antes. Reorganizei minha manhã inteira, e uma ligação com um fornecedor foi adiada à toa.'),
+                    'I wish the news had been announced before. I rearranged my whole morning, and a call with a supplier was pushed back.',
+                    'Queria que a notícia tivesse sido anunciada antes. Reorganizei minha manhã inteira, e uma ligação com um fornecedor foi adiada.'),
                    ('You',
                     'Same here. Next time, let us ask that all changes be sent out by email at least the evening before.',
                     'Comigo também. Da próxima vez, vamos pedir que todas as mudanças sejam enviadas por e-mail pelo menos na noite anterior.'),
@@ -202,8 +202,7 @@ SUPP = {'badge': {'desc': 'Phrasal verbs no passivo', 'icon': '📅', 'name': 'C
              'scan': [{'alt': ['snow'], 'ans': 'because of the snow', 'q': 'Why was the meeting called off?'},
                       {'alt': ['Friday'], 'ans': 'on Friday', 'q': 'When will the system be tested?'},
                       {'alt': ['write'], 'ans': 'a request', 'q': 'What will Fay write up?'}],
-             'text': ['It is a snowy Wednesday in Denver. Fay arrives at the office late. The roads are slippery. Her phone shows a new email. Bia is at her desk. They '
-                      'talk about the news.',
+             'text': ['It is a snowy Wednesday in Denver. Fay arrives at the office late. The roads are slippery. Bia is at her desk. They talk about the news.',
                       '“Bia, did you see the email? The meeting was called off at the last minute, and nobody told the team until noon.” says Fay. “I did. They said it '
                       'was called off because of the snow, and the new date will be worked out next week.” says Bia. “That is the third time this month. The budget '
                       'review was put off twice already, and the client is losing patience.” says Fay.',
@@ -211,8 +210,8 @@ SUPP = {'badge': {'desc': 'Phrasal verbs no passivo', 'icon': '📅', 'name': 'C
                       'Bia. “Fair enough. Meanwhile, the safety checks were carried out yesterday, and the building was found to be in good condition.” says Fay. “Good. '
                       'Our new software is being set up this week too, so the whole system will be tested on Friday.” says Bia.',
                       '“I hope nothing else is put off. My report was handed in on time, and I would hate to wait for a decision.” says Fay. “Do not worry. The manager '
-                      'said that the results would be looked at as soon as the roads were cleared.” says Bia. “I wish the news had been announced earlier. I rearranged '
-                      'my whole morning, and a call with a supplier was pushed back for nothing.” says Fay.',
+                      'said that the results would be looked at as soon as the roads were cleared.” says Bia. “I wish the news had been announced before. I rearranged '
+                      'my whole morning, and a call with a supplier was pushed back.” says Fay.',
                       '“Same here. Next time, let us ask that all changes be sent out by email at least the evening before.” says Bia. “Agreed. I will write it up and '
                       'send it to the manager, and we will see whether it gets taken seriously.” says Fay. Fay writes an email to the manager. Bia checks the new date. '
                       'The roads are cleared by noon. The team has lunch together. The meeting is set for Monday. Bad weather changes good plans.'],
