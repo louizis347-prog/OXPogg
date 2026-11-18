@@ -35,3 +35,12 @@ body.quest-l1 .stage{background:#b9c9dc}
 .qs-f{flex:0 0 44px;height:44px;border-radius:50%;overflow:hidden;background:#fff}.qs-f svg{width:100%;height:100%}
 .qs-b p{margin:2px 0;font-weight:700;color:#14263a}.qs-b small{color:#5d7188}
 @media(max-width:820px){.qs{grid-template-columns:1fr}}
+
+/* ===== Contraste: texto sobre o fundo pintado (legibilidade) ===== */
+.qp-bg::after{background:linear-gradient(180deg,rgba(250,252,254,.74),rgba(240,246,252,.70))}
+body.quest-l1 .dock .dl{color:#17323f;font-weight:800}
+.q1-intro{color:#24465a}.q1-note{color:#2f5366}.q1-eyebrow{color:#0d566c}
+.q1v-sth{color:#2b4a60}.q1v-prog{color:#33566a}.q1v-ct{color:#17324a;font-weight:700}
+.q1v-vpt,.q1v-vpt2,.q1v-scene{color:#3f6172}
+.q1v-mic{background:linear-gradient(135deg,#c2303a,#c42a73)}
+.q1v-sltip{color:#0f3b45}
