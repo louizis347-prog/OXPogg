@@ -123,3 +123,9 @@
 - Aulas 48, 205, 25, 53, 173, 33, 90, 46, 47, 68 e 77 tinham falas de 3–4 palavras e frases repetidas. Reescritas em conversas de 9 falas (6–8 palavras por fala), só com gramática de A1; telas "Sua resposta" e roteiro ao vivo atualizados.
 - Cuidado de processo: os validadores `validate_x/y/z` reconstroem a aula a partir da fonte e desfazem reescritas. Rode-os ANTES de aplicar `dialog_rewrite.py apply` e `apply_live.py`, nunca depois.
 - Ressalva: texto escrito pelo modelo, sem revisão de professor; a 77 é a mais mecânica.
+
+## B2 — 5º bloco (4273–4322)
+- 50 aulas novas: perguntas indiretas e pedidos educados, preposições dependentes + -ing, advérbios de grau e do enfático, phrasal verbs, orações de tempo no futuro e probabilidade, pronomes, adjetivos e conectores, situações integradas. A 4322 fecha o bloco.
+- Pipeline na ordem: obras no `obras.json` → build → auditoria CEFR → `validate_x/y/z` → `apply_live.py` → correção de nomes. Auditoria sem violações; 44 quadros por aula no navegador, sem erro; repetição de sequências abaixo do limite; nomes dos falantes conferidos.
+- Aula 4202: rótulo corrigido para "conselho sobre o passado" (não é condicional misto).
+- Ressalvas: obras escolhidas pelo modelo; ligação fraca com o tema em várias (4273, 4274, 4275, 4277, 4278, 4280, 4284, 4286, 4287, 4290, 4292, 4293, 4298, 4300–4304, 4307–4309, 4311, 4312, 4314, 4318–4320, 4322); anos em branco em 4291, 4292, 4295, 4297, 4298 e onde havia dúvida; palavras trocadas para passar no validador de vocabulário; abertura/fecho encurtados em 4283, 4287, 4289, 4290, 4291, 4295 e 4310.
