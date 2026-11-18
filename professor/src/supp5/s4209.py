@@ -212,8 +212,8 @@ SUPP = {'badge': {'desc': 'Revisão: used to, would, condicional misto e capacid
              'scan': [{'alt': ['medal'], 'ans': 'a medal', 'q': 'What did Nina win at sixteen?'},
                       {'alt': ['bakery'], 'ans': 'a bakery', 'q': 'What did Dana dream about opening?'},
                       {'alt': ['uncle'], 'ans': 'her uncle', 'q': 'Who helped Dana with the loan?'}],
-             'text': ['It is a sunny afternoon in Miami. Dana opens a photo album. Old pictures of the beach appear. The living room smells of coffee. Nina sits next to '
-                      'her. They begin to remember.',
+             'text': ['It is a sunny afternoon in Miami. Dana opens a photo album. Old pictures appear. The room smells of coffee. Nina sits next to her. They begin to '
+                      'remember.',
                       '“Nina, look at this old photo album! We used to spend every summer at the beach, and we would stay until dark.” says Dana. “I remember. I used to '
                       'be so shy, but you would drag me into the water, and I never wanted to leave.” says Nina. “If I had not pushed you, you would not be a swimming '
                       'teacher today. You managed to win a medal at sixteen!” says Dana.',
@@ -224,8 +224,8 @@ SUPP = {'badge': {'desc': 'Revisão: used to, would, condicional misto e capacid
                       'Miami, we would not be sitting here, and I would miss our Sunday coffee.” says Nina. “I know. In Boston I was not used to the cold, and I never '
                       'got used to working at night.” says Dana.',
                       '“You used to say that you would never leave, and then you went. Life is funny, right?” says Nina. “It is. Let us take a new photo today, so that '
-                      'in ten years we can look at it and say we used to be young.” says Dana. Dana takes a new photo. Nina laughs at her old hat. They drink a second '
-                      'coffee. The sun goes down over the palms. They plan a trip to the beach. Memories keep a friendship alive.'],
+                      'in ten years we can look at it and say we used to be young.” says Dana. Dana takes a new photo. Nina laughs. They drink coffee. The sun goes down '
+                      'over the palms. They plan a trip to the beach. Memories keep a friendship alive.'],
              'tf': [{'ans': True, 's': 'Dana and Nina used to go to the beach every summer.', 'why': 'Dana says so.'},
                     {'ans': False, 's': 'Nina qualified for the national team.', 'why': 'She was not able to qualify.'},
                     {'ans': False, 's': 'Dana got a loan at first.', 'why': 'She could not at first.'},
