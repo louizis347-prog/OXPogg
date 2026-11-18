@@ -1,0 +1,3153 @@
+{
+ "2051": {
+  "lines": [
+   {
+    "en": "Hey, Mia! You look happy. Any plans for tomorrow?",
+    "pt": "Oi, Mia! Você parece feliz. Tem planos para amanhã?",
+    "sw_en": "Hey, Mia! You look {happy|tired|busy}. Any plans for tomorrow?",
+    "sw_pt": "Oi, Mia! Você parece {feliz|cansada|ocupada}. Tem planos para amanhã?"
+   },
+   {
+    "en": "Yes! I’m going to visit my grandmother near the lake.",
+    "pt": "Tenho! Vou visitar minha avó, que mora perto do lago.",
+    "sw_en": "Yes! I’m going to visit my grandmother near the {lake|park|river}.",
+    "sw_pt": "Tenho! Vou visitar minha avó, que mora perto {do lago|do parque|do rio}."
+   },
+   {
+    "en": "Nice! Are you going to cook lunch for her?",
+    "pt": "Legal! Você vai cozinhar o almoço para ela?",
+    "sw_en": "Nice! Are you going to cook {lunch|dinner|breakfast} for her?",
+    "sw_pt": "Legal! Você vai cozinhar {o almoço|o jantar|o café da manhã} para ela?"
+   },
+   {
+    "en": "Yes, I’ll make her favorite soup. We’ll eat outside.",
+    "pt": "Sim, vou fazer a sopa favorita dela. A gente come lá fora.",
+    "sw_en": "Yes, I’ll make her favorite {soup|salad|pie}. We’ll eat outside.",
+    "sw_pt": "Sim, vou fazer {a sopa|a salada|a torta} favorita dela. A gente come lá fora."
+   },
+   {
+    "en": "Sounds lovely. And in the afternoon? Do you want to relax?",
+    "pt": "Que gostoso. E à tarde? Você quer relaxar?",
+    "sw_en": "Sounds lovely. And in the afternoon? Do you want to {relax|nap|read}?",
+    "sw_pt": "Que gostoso. E à tarde? Você quer {relaxar|tirar uma soneca|ler}?"
+   },
+   {
+    "en": "No. Sam and I will ride bikes by the lake.",
+    "pt": "Não. O Sam e eu vamos pedalar perto do lago.",
+    "sw_en": "No. Sam and I will ride bikes by the {lake|park|river}.",
+    "sw_pt": "Não. O Sam e eu vamos pedalar perto {do lago|do parque|do rio}."
+   },
+   {
+    "en": "That’s far! Check the weather. It might rain this morning.",
+    "pt": "É longe! Veja a previsão. Pode chover de manhã.",
+    "sw_en": "That’s far! Check the weather. It might rain this {morning|afternoon|evening}.",
+    "sw_pt": "É longe! Veja a previsão. Pode chover {de manhã|à tarde|à noite}."
+   },
+   {
+    "en": "Don’t worry, it’s going to be sunny all day.",
+    "pt": "Fique tranquila, vai fazer sol o dia todo.",
+    "sw_en": "Don’t worry, it’s going to be sunny all {day|afternoon|weekend}.",
+    "sw_pt": "Fique tranquila, vai fazer sol {o dia todo|a tarde toda|o fim de semana todo}."
+   },
+   {
+    "en": "Lucky you! I have to study for an exam. How boring!",
+    "pt": "Que sorte! Preciso estudar para uma prova. Que chato!",
+    "sw_en": "Lucky you! I have to study for an {exam|test|quiz}. How boring!",
+    "sw_pt": "Que sorte! Preciso estudar para {uma prova|um teste|uma prova rápida}. Que chato!"
+   },
+   {
+    "en": "Poor you! Take a break at noon and eat something good.",
+    "pt": "Coitada! Faça uma pausa ao meio-dia e coma algo gostoso.",
+    "sw_en": "Poor you! Take a break at noon and eat {something good|a big sandwich|some fruit}.",
+    "sw_pt": "Coitada! Faça uma pausa ao meio-dia e coma {algo gostoso|um sanduíche grande|alguma fruta}."
+   },
+   {
+    "en": "Good idea! Send me a picture of the lake.",
+    "pt": "Boa ideia! Mande uma foto do lago para mim.",
+    "sw_en": "Good idea! Send me a {picture|video|message} of the lake.",
+    "sw_pt": "Boa ideia! Mande uma {foto|vídeo|mensagem} do lago para mim."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I visited my grandmother last Sunday.",
+     "pt": "Visitei minha avó no domingo passado.",
+     "fb": "Responde no passado, mas a pergunta é sobre amanhã."
+    },
+    {
+     "en": "Yes, my phone is new and it is blue.",
+     "pt": "Sim, meu celular é novo e é azul.",
+     "fb": "Não tem relação com a pergunta sobre planos."
+    }
+   ],
+   [
+    {
+     "en": "She cooked for me yesterday.",
+     "pt": "Ela cozinhou para mim ontem.",
+     "fb": "Fala de ontem; a pergunta é sobre o que vai acontecer amanhã."
+    },
+    {
+     "en": "No, I’m a grandmother.",
+     "pt": "Não, eu sou uma avó.",
+     "fb": "Não faz sentido: a avó é outra pessoa."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I do. It’s a nice afternoon.",
+     "pt": "Sim, eu faço. É uma bela tarde.",
+     "fb": "Responde com sim/não e não diz o que fará à tarde."
+    },
+    {
+     "en": "My bike was broken last week.",
+     "pt": "Minha bicicleta quebrou semana passada.",
+     "fb": "Tempo passado e não responde sobre a tarde de amanhã."
+    }
+   ],
+   [
+    {
+     "en": "It rained a lot yesterday.",
+     "pt": "Choveu muito ontem.",
+     "fb": "Fala de ontem, mas a questão é a previsão para amanhã."
+    },
+    {
+     "en": "I don’t care. Rain is my friend, goodbye.",
+     "pt": "Não me importo. A chuva é minha amiga, tchau.",
+     "fb": "Resposta estranha e rude, sem reagir ao aviso."
+    }
+   ],
+   [
+    {
+     "en": "I’m happy for you, but I don’t study.",
+     "pt": "Fico feliz por você, mas eu não estudo.",
+     "fb": "Contradiz o contexto: Mia só falou de lazer e a colega estuda."
+    },
+    {
+     "en": "Yes, I’m going to study all day too.",
+     "pt": "Sim, eu também vou estudar o dia todo.",
+     "fb": "Contradiz o que Mia disse sobre passear."
+    }
+   ]
+  ],
+  "can": [
+   "Yes! I’m going to visit my grandmother near the lake.",
+   "No. Sam and I will ride bikes by the lake.",
+   "Don’t worry, it’s going to be sunny all day."
+  ]
+ },
+ "2052": {
+  "lines": [
+   {
+    "en": "Summer is almost here! Do you have any vacation plans?",
+    "pt": "O verão está quase aí! Você tem algum plano de férias?",
+    "sw_en": "Summer is almost here! Do you have any {vacation|weekend|travel} plans?",
+    "sw_pt": "O verão está quase aí! Você tem algum plano de {férias|fim de semana|viagem}?"
+   },
+   {
+    "en": "Yes! I’m going to the beach with my cousin.",
+    "pt": "Tenho! Vou à praia com meu primo.",
+    "sw_en": "Yes! I’m going to the beach with my {cousin|brother|dad}.",
+    "sw_pt": "Tenho! Vou à praia com {meu primo|meu irmão|meu pai}."
+   },
+   {
+    "en": "Nice! How long will you stay? I hope more than a weekend.",
+    "pt": "Legal! Quanto tempo vão ficar? Espero que mais de um fim de semana.",
+    "sw_en": "Nice! How long will you stay? I hope more than {a weekend|a week|a day}.",
+    "sw_pt": "Legal! Quanto tempo vão ficar? Espero que mais de {um fim de semana|uma semana|um dia}."
+   },
+   {
+    "en": "We’re staying two weeks in July, in a small house.",
+    "pt": "Vamos ficar duas semanas em julho, numa casinha.",
+    "sw_en": "We’re staying two weeks in {July|August|June}, in a small house.",
+    "sw_pt": "Vamos ficar duas semanas em {julho|agosto|junho}, numa casinha."
+   },
+   {
+    "en": "Wow, perfect. Are you going to drive, or take a bus?",
+    "pt": "Uau, perfeito. Vocês vão de carro ou pegar um ônibus?",
+    "sw_en": "Wow, perfect. Are you going to drive, or take a {bus|train|plane}?",
+    "sw_pt": "Uau, perfeito. Vocês vão de carro ou pegar {um ônibus|um trem|um avião}?"
+   },
+   {
+    "en": "We’re going to drive. My cousin’s truck is huge.",
+    "pt": "Vamos de carro. A caminhonete do meu primo é enorme.",
+    "sw_en": "We’re going to drive. My cousin’s {truck|car|van} is huge.",
+    "sw_pt": "Vamos de carro. {A caminhonete|O carro|A van} do meu primo é enorme."
+   },
+   {
+    "en": "What will you do there? I’d read all day.",
+    "pt": "O que vocês vão fazer lá? Eu leria o dia toda.",
+    "sw_en": "What will you do there? I’d read all {day|afternoon|morning}.",
+    "sw_pt": "O que vocês vão fazer lá? Eu leria {o dia|a tarde|a manhã} toda."
+   },
+   {
+    "en": "Swim, mostly! My cousin fishes, and he’ll teach me.",
+    "pt": "Nadar, principalmente! Meu primo pesca, e ele vai me ensinar.",
+    "sw_en": "Swim, mostly! My cousin fishes, and he’ll {teach|help|invite} me.",
+    "sw_pt": "Nadar, principalmente! Meu primo pesca, e ele vai {me ensinar|me ajudar|me convidar}."
+   },
+   {
+    "en": "I’m so jealous! My summer is just work and hot days.",
+    "pt": "Que inveja! Meu verão é só trabalho e dias quentes.",
+    "sw_en": "I’m so jealous! My summer is just work and {hot|boring|rainy} days.",
+    "sw_pt": "Que inveja! Meu verão é só trabalho e dias {quentes|chatos|chuvosos}."
+   },
+   {
+    "en": "Come with us! There’s a spare bed in the house.",
+    "pt": "Venha com a gente! Tem uma cama sobrando na casa.",
+    "sw_en": "Come with us! There’s a spare {bed|room|couch} in the house.",
+    "sw_pt": "Venha com a gente! Tem {uma cama|um quarto|um sofá} sobrando na casa."
+   },
+   {
+    "en": "Really? I want to go too! I’ll tell you tomorrow.",
+    "pt": "Sério? Eu quero ir também! Aviso você amanhã.",
+    "sw_en": "Really? I want to go too! I’ll tell you {tomorrow|tonight|Monday}.",
+    "sw_pt": "Sério? Eu quero ir também! Aviso você {amanhã|hoje à noite|na segunda}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I was at the beach last summer.",
+     "pt": "Eu estive na praia no verão passado.",
+     "fb": "Fala do passado, mas a pergunta é sobre planos futuros."
+    },
+    {
+     "en": "Yes, it is very hot today.",
+     "pt": "Sim, está muito quente hoje.",
+     "fb": "Não responde: a pergunta é sobre planos de férias."
+    }
+   ],
+   [
+    {
+     "en": "I like the beach very much.",
+     "pt": "Eu gosto muito de praia.",
+     "fb": "Não diz quando vão nem por quanto tempo."
+    },
+    {
+     "en": "I stayed there yesterday.",
+     "pt": "Fiquei lá ontem.",
+     "fb": "Tempo passado; a pergunta é sobre o futuro."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I am.",
+     "pt": "Sim, vou.",
+     "fb": "A pergunta com “or” pede uma escolha, não sim ou não."
+    },
+    {
+     "en": "I drove there last year.",
+     "pt": "Dirigi até lá no ano passado.",
+     "fb": "Fala do passado e não escolhe entre carro e ônibus."
+    }
+   ],
+   [
+    {
+     "en": "I will arrive at four o’clock.",
+     "pt": "Vou chegar às quatro horas.",
+     "fb": "Fala de horário, mas a pergunta é sobre atividades."
+    },
+    {
+     "en": "My cousin has a small house.",
+     "pt": "Meu primo tem uma casinha.",
+     "fb": "Descreve a casa e não diz o que vai fazer."
+    }
+   ],
+   [
+    {
+     "en": "Thank you, I’m jealous too.",
+     "pt": "Obrigado, eu também estou com inveja.",
+     "fb": "Não faz sentido: quem tem inveja é a outra pessoa."
+    },
+    {
+     "en": "I don’t know your cousin.",
+     "pt": "Eu não conheço o seu primo.",
+     "fb": "Ignora o que foi dito e muda de assunto."
+    }
+   ]
+  ],
+  "can": [
+   "Yes! I’m going to the beach with my cousin.",
+   "We’re staying two weeks in July, in a small house.",
+   "Swim, mostly! My cousin fishes, and he’ll teach me."
+  ]
+ },
+ "2062": {
+  "lines": [
+   {
+    "en": "Hi, Mia! We’re having lunch at twelve. Want to come?",
+    "pt": "Oi, Mia! Vamos almoçar às doze. Quer vir?",
+    "sw_en": "Hi, Mia! We’re having lunch at {twelve|twelve-thirty|one}. Want to come?",
+    "sw_pt": "Oi, Mia! Vamos almoçar às {doze|doze e meia|uma}. Quer vir?"
+   },
+   {
+    "en": "Sorry, I can’t. I have to finish a project.",
+    "pt": "Desculpe, não posso. Preciso terminar um projeto.",
+    "sw_en": "Sorry, I can’t. I have to finish a {project|report|proposal}.",
+    "sw_pt": "Desculpe, não posso. Preciso terminar {um projeto|um relatório|uma proposta}."
+   },
+   {
+    "en": "Oh no. Is it for your boss, or for a client?",
+    "pt": "Ah, não. É para o seu chefe ou para um cliente?",
+    "sw_en": "Oh no. Is it for your boss, or for a {client|customer|team}?",
+    "sw_pt": "Ah, não. É para o seu chefe ou para {um cliente|um consumidor|um time}?"
+   },
+   {
+    "en": "For a client. My boss has to read it first.",
+    "pt": "Para um cliente. Meu chefe precisa ler primeiro.",
+    "sw_en": "For a {client|customer|partner}. My boss has to read it first.",
+    "sw_pt": "Para {um cliente|um consumidor|um parceiro}. Meu chefe precisa ler primeiro."
+   },
+   {
+    "en": "Tight! Do you need a hand? I could call the clients.",
+    "pt": "Apertado! Precisa de ajuda? Eu poderia ligar para os clientes.",
+    "sw_en": "Tight! Do you need a hand? I could call the {clients|people|vendors}.",
+    "sw_pt": "Apertado! Precisa de ajuda? Eu poderia ligar para {os clientes|as pessoas|os fornecedores}."
+   },
+   {
+    "en": "Thanks, I’ll manage. I’m free after the meeting.",
+    "pt": "Obrigada, eu me viro. Fico livre depois da reunião.",
+    "sw_en": "Thanks, I’ll manage. I’m free {after the meeting|after the call|after lunch}.",
+    "sw_pt": "Obrigada, eu me viro. Fico livre {depois da reunião|depois da ligação|depois do almoço}."
+   },
+   {
+    "en": "Good. Let me bring you a sandwich. Turkey or cheese?",
+    "pt": "Ótimo. Deixe eu trazer um sanduíche. Peru ou queijo?",
+    "sw_en": "Good. Let me bring you a sandwich. Turkey or {cheese|tuna|chicken}?",
+    "sw_pt": "Ótimo. Deixe eu trazer um sanduíche. Peru ou {queijo|atum|frango}?"
+   },
+   {
+    "en": "You’re a lifesaver! Turkey, please, with no mayo.",
+    "pt": "Você me salvou! Peru, por favor, sem maionese.",
+    "sw_en": "You’re a lifesaver! Turkey, please, with no {mayo|onions|tomato}.",
+    "sw_pt": "Você me salvou! Peru, por favor, sem {maionese|cebola|tomate}."
+   },
+   {
+    "en": "No problem. Let’s have lunch together on Friday instead.",
+    "pt": "Sem problema. Vamos almoçar juntas na sexta.",
+    "sw_en": "No problem. Let’s have lunch together on {Friday|Thursday|Monday} instead.",
+    "sw_pt": "Sem problema. Vamos almoçar juntas {na sexta|na quinta|na segunda}."
+   },
+   {
+    "en": "I’d love that! Things should calm down after the meeting.",
+    "pt": "Eu adoraria! As coisas devem se acalmar depois da reunião.",
+    "sw_en": "I’d love that! Things should {calm|slow|settle} down after the meeting.",
+    "sw_pt": "Eu adoraria! As coisas devem {se acalmar|desacelerar|se ajeitar} depois da reunião."
+   },
+   {
+    "en": "Perfect, it’s a date. Good luck with the project!",
+    "pt": "Perfeito, combinado. Boa sorte com o projeto!",
+    "sw_en": "Perfect, it’s a date. Good luck with the {project|report|call}!",
+    "sw_pt": "Perfeito, combinado. Boa sorte com {o projeto|o relatório|a ligação}!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I’m sorry, I worked yesterday.",
+     "pt": "Sinto muito, trabalhei ontem.",
+     "fb": "Tempo errado: o convite é para hoje."
+    },
+    {
+     "en": "Lunch was very good yesterday.",
+     "pt": "O almoço estava muito bom ontem.",
+     "fb": "Fala do passado e não aceita nem recusa o convite."
+    }
+   ],
+   [
+    {
+     "en": "Yes, it is.",
+     "pt": "Sim, é.",
+     "fb": "A pergunta com “or” pede escolha entre chefe e cliente."
+    },
+    {
+     "en": "I finished my lunch at one.",
+     "pt": "Terminei meu almoço à uma.",
+     "fb": "Não responde à pergunta sobre o projeto."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t like phones. Goodbye.",
+     "pt": "Não, eu não gosto de telefones. Tchau.",
+     "fb": "Resposta seca e descortês para uma oferta de ajuda."
+    },
+    {
+     "en": "Yes, I have two hands.",
+     "pt": "Sim, eu tenho duas mãos.",
+     "fb": "Entende “need a hand” ao pé da letra; a expressão significa ajuda."
+    }
+   ],
+   [
+    {
+     "en": "I’ll send it by five.",
+     "pt": "Vou enviar até às cinco.",
+     "fb": "Fala de entrega de trabalho, mas a pergunta é sobre o tipo de sanduíche."
+    },
+    {
+     "en": "Yes, please.",
+     "pt": "Sim, por favor.",
+     "fb": "A pergunta pede uma escolha (peru ou queijo)."
+    }
+   ],
+   [
+    {
+     "en": "Thanks, I’ll pay you yesterday for the lunch on Friday.",
+     "pt": "Obrigada, eu pago você ontem pelo almoço de sexta.",
+     "fb": "Mistura o passado com o futuro e não responde ao convite."
+    },
+    {
+     "en": "No, I never eat lunch with my boss.",
+     "pt": "Não, eu nunca almoço com o meu chefe.",
+     "fb": "Contradiz o contexto: o convite é da colega, não do chefe."
+    }
+   ]
+  ],
+  "can": [
+   "Sorry, I can’t. I have to finish a project.",
+   "Thanks, I’ll manage. I’m free after the meeting.",
+   "I’d love that! Things should calm down after the meeting."
+  ]
+ },
+ "2067": {
+  "lines": [
+   {
+    "en": "Are you coming to my sister’s birthday party on Saturday?",
+    "pt": "Você vem à festa de aniversário da minha irmã no sábado?",
+    "sw_en": "Are you coming to my {sister’s|brother’s|cousin’s} birthday party on Saturday?",
+    "sw_pt": "Você vem à festa de aniversário {da minha irmã|do meu irmão|da minha prima} no sábado?"
+   },
+   {
+    "en": "Maybe. Dinner with my family first. What time does it start?",
+    "pt": "Talvez. Antes tenho jantar com a família. Que horas começa?",
+    "sw_en": "Maybe. Dinner with my family first. What time does it {start|begin|finish}?",
+    "sw_pt": "Talvez. Antes tenho jantar com a família. Que horas {começa|inicia|termina}?"
+   },
+   {
+    "en": "Around eight. There’ll be lots of food and a DJ.",
+    "pt": "Por volta das oito. Vai ter muita comida e um DJ.",
+    "sw_en": "Around {eight|seven|nine}. There’ll be lots of food and a DJ.",
+    "sw_pt": "Por volta das {oito|sete|nove}. Vai ter muita comida e um DJ."
+   },
+   {
+    "en": "A DJ? Wow! I love to dance. Is your sister excited?",
+    "pt": "Um DJ? Uau! Adoro dançar. Sua irmã está animada?",
+    "sw_en": "A DJ? Wow! I love to dance. Is your sister {excited|nervous|surprised}?",
+    "sw_pt": "Um DJ? Uau! Adoro dançar. Sua irmã está {animada|nervosa|surpresa}?"
+   },
+   {
+    "en": "She’s probably nervous. She’s turning thirty, and she hates surprises.",
+    "pt": "Ela deve estar nervosa. Vai fazer trinta anos e odeia surpresas.",
+    "sw_en": "She’s probably nervous. She’s turning {thirty|twenty|forty}, and she hates surprises.",
+    "sw_pt": "Ela deve estar nervosa. Vai fazer {trinta|vinte|quarenta} anos e odeia surpresas."
+   },
+   {
+    "en": "Ha! She’ll love it. Should I bring a dessert?",
+    "pt": "Ha! Ela vai adorar. Devo levar uma sobremesa?",
+    "sw_en": "Ha! She’ll love it. Should I bring {a dessert|a salad|a snack}?",
+    "sw_pt": "Ha! Ela vai adorar. Devo levar {uma sobremesa|uma salada|um petisco}?"
+   },
+   {
+    "en": "Just yourself! But a bag of ice would be great.",
+    "pt": "Só você! Mas um saco de gelo seria ótimo.",
+    "sw_en": "Just yourself! But a bag of {ice|chips|lemons} would be great.",
+    "sw_pt": "Só você! Mas um saco de {gelo|batata frita|limões} seria ótimo."
+   },
+   {
+    "en": "Will Tom be there? I haven’t seen him in weeks.",
+    "pt": "O Tom vai estar lá? Faz semanas que não o vejo.",
+    "sw_en": "Will Tom be there? I haven’t seen him in {weeks|days|months}.",
+    "sw_pt": "O Tom vai estar lá? Faz {semanas|dias|meses} que não o vejo."
+   },
+   {
+    "en": "I think so. He said yes last week.",
+    "pt": "Acho que sim. Ele disse que sim na semana passada.",
+    "sw_en": "I think so. He said yes {last week|last month|on Friday}.",
+    "sw_pt": "Acho que sim. Ele disse que sim {na semana passada|no mês passado|na sexta}."
+   },
+   {
+    "en": "No problem! I’ll text him tonight and remind him.",
+    "pt": "Sem problema! Vou mandar mensagem para ele hoje à noite para lembrá-lo.",
+    "sw_en": "No problem! I’ll {text|call|email} him tonight and remind him.",
+    "sw_pt": "Sem problema! Vou {mandar mensagem para ele|ligar para ele|mandar e-mail para ele} hoje à noite para lembrá-lo."
+   },
+   {
+    "en": "Perfect! Saturday at eight. Bring a jacket, it gets cold.",
+    "pt": "Perfeito! Sábado às oito. Leve uma jaqueta, fica frio.",
+    "sw_en": "Perfect! Saturday at eight. Bring a {jacket|coat|sweater}, it gets cold.",
+    "sw_pt": "Perfeito! Sábado às oito. Leve {uma jaqueta|um casaco|um suéter}, fica frio."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I came to your party last Saturday.",
+     "pt": "Fui à sua festa no sábado passado.",
+     "fb": "Fala do passado, mas a pergunta é sobre o próximo sábado."
+    },
+    {
+     "en": "She is thirty, I think.",
+     "pt": "Ela tem trinta anos, acho.",
+     "fb": "Não responde se Mia vai ou não à festa."
+    }
+   ],
+   [
+    {
+     "en": "I don’t like parties. Goodbye.",
+     "pt": "Não gosto de festas. Tchau.",
+     "fb": "Rude e não reage ao que foi dito."
+    },
+    {
+     "en": "I danced yesterday with the DJ.",
+     "pt": "Dancei ontem com o DJ.",
+     "fb": "Fala do passado; o assunto é a festa de sábado."
+    }
+   ],
+   [
+    {
+     "en": "Happy birthday to me!",
+     "pt": "Feliz aniversário para mim!",
+     "fb": "O aniversário é da irmã dela, não da Mia."
+    },
+    {
+     "en": "She is thirty, so she goes to school.",
+     "pt": "Ela tem trinta anos, então vai à escola.",
+     "fb": "Conclusão sem lógica e ignora o comentário."
+    }
+   ],
+   [
+    {
+     "en": "I don’t bring nothing. I have a bag.",
+     "pt": "Eu não trago nada. Eu tenho uma bolsa.",
+     "fb": "Dupla negação e resposta sem sentido para o pedido do gelo."
+    },
+    {
+     "en": "Yes, I know Tom. Goodbye.",
+     "pt": "Sim, eu conheço o Tom. Tchau.",
+     "fb": "Encerra a conversa e não reage ao pedido do gelo."
+    }
+   ],
+   [
+    {
+     "en": "Great, I’ll count to ten tonight.",
+     "pt": "Ótimo, vou contar até dez hoje à noite.",
+     "fb": "Entende “count on it” ao pé da letra."
+    },
+    {
+     "en": "Tom is my sister’s brother.",
+     "pt": "Tom é o irmão da minha irmã.",
+     "fb": "Contradiz o contexto: o Tom é colega de trabalho."
+    }
+   ]
+  ],
+  "can": [
+   "Maybe. Dinner with my family first. What time does it start?",
+   "A DJ? Wow! I love to dance. Is your sister excited?",
+   "No problem! I’ll text him tonight and remind him."
+  ]
+ },
+ "2068": {
+  "lines": [
+   {
+    "en": "I called you around nine last night. What were you doing?",
+    "pt": "Liguei para você por volta das nove ontem à noite. O que você estava fazendo?",
+    "sw_en": "I called you around {nine|ten|eight} last night. What were you doing?",
+    "sw_pt": "Liguei para você por volta das {nove|dez|oito} ontem à noite. O que você estava fazendo?"
+   },
+   {
+    "en": "Sorry! I was cooking dinner, and my phone was away.",
+    "pt": "Desculpe! Eu estava preparando o jantar, e meu celular estava longe.",
+    "sw_en": "Sorry! I was cooking {dinner|lunch|dessert}, and my phone was away.",
+    "sw_pt": "Desculpe! Eu estava preparando {o jantar|o almoço|a sobremesa}, e meu celular estava longe."
+   },
+   {
+    "en": "No worries. Were your parents sleeping then?",
+    "pt": "Sem problema. Seus pais estavam dormindo nessa hora?",
+    "sw_en": "No worries. Were your parents {sleeping|watching TV|reading} then?",
+    "sw_pt": "Sem problema. Seus pais estavam {dormindo|assistindo TV|lendo} nessa hora?"
+   },
+   {
+    "en": "No, they weren’t. They were watching a movie in the living room.",
+    "pt": "Não. Eles estavam assistindo a um filme na sala.",
+    "sw_en": "No, they weren’t. They were watching a {movie|show|game} in the living room.",
+    "sw_pt": "Não. Eles estavam assistindo a {um filme|um programa|um jogo} na sala."
+   },
+   {
+    "en": "Nice! What was it? I need something good to watch this weekend.",
+    "pt": "Legal! O que era? Preciso de algo bom para assistir neste fim de semana.",
+    "sw_en": "Nice! What was it? I need something good to {watch|read|play} this weekend.",
+    "sw_pt": "Legal! O que era? Preciso de algo bom para {assistir|ler|jogar} neste fim de semana."
+   },
+   {
+    "en": "An old comedy with a funny dog. My dad almost dropped his popcorn!",
+    "pt": "Uma comédia antiga com um cachorro engraçado. Meu pai quase derrubou a pipoca!",
+    "sw_en": "An old comedy with a funny {dog|cat|parrot}. My dad almost dropped his popcorn!",
+    "sw_pt": "Uma comédia antiga com {um cachorro|um gato|um papagaio} engraçado. Meu pai quase derrubou a pipoca!"
+   },
+   {
+    "en": "Ha! I looked for you at the park on Sunday.",
+    "pt": "Ha! Procurei você no parque no domingo.",
+    "sw_en": "Ha! I looked for you at the park on {Sunday|Saturday|Friday}.",
+    "sw_pt": "Ha! Procurei você no parque {no domingo|no sábado|na sexta}."
+   },
+   {
+    "en": "I was walking my dog on the other side.",
+    "pt": "Eu estava passeando com meu cachorro do outro lado.",
+    "sw_en": "I was walking my dog on the other {side|path|street}.",
+    "sw_pt": "Eu estava passeando com meu cachorro do outro {lado|caminho|rua}."
+   },
+   {
+    "en": "That explains it. I was reading by the lake and drinking coffee.",
+    "pt": "Isso explica. Eu estava lendo perto do lago e tomando café.",
+    "sw_en": "That explains it. I was reading by the lake and drinking {coffee|tea|juice}.",
+    "sw_pt": "Isso explica. Eu estava lendo perto do lago e tomando {café|chá|suco}."
+   },
+   {
+    "en": "So close! Next time, let’s send each other a message first.",
+    "pt": "Tão perto! Da próxima vez, vamos mandar uma mensagem antes.",
+    "sw_en": "So close! Next time, let’s send each other a {message|photo|text} first.",
+    "sw_pt": "Tão perto! Da próxima vez, vamos mandar {uma mensagem|uma foto|um texto} antes."
+   },
+   {
+    "en": "Deal. And answer your phone this time, okay?",
+    "pt": "Combinado. E atenda o celular desta vez, certo?",
+    "sw_en": "Deal. And answer your {phone|calls|messages} this time, okay?",
+    "sw_pt": "Combinado. E atenda {o celular|as ligações|as mensagens} desta vez, certo?"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I’m going to cook dinner tomorrow.",
+     "pt": "Vou cozinhar amanhã à noite.",
+     "fb": "Fala do futuro, mas a pergunta é sobre ontem à noite."
+    },
+    {
+     "en": "I like my phone. It’s new.",
+     "pt": "Eu gosto do meu celular. Ele é novo.",
+     "fb": "Não responde o que Mia estava fazendo."
+    }
+   ],
+   [
+    {
+     "en": "Yes, they are.",
+     "pt": "Sim, eles estão.",
+     "fb": "Tempo errado (presente) para uma pergunta sobre ontem."
+    },
+    {
+     "en": "My parents sleep in the kitchen.",
+     "pt": "Meus pais dormem na cozinha.",
+     "fb": "Presente do hábito, não o que acontecia ontem; também não faz sentido."
+    }
+   ],
+   [
+    {
+     "en": "It was Sunday, I think.",
+     "pt": "Era domingo, acho.",
+     "fb": "Responde o dia, mas a pergunta é o nome do filme."
+    },
+    {
+     "en": "I’m watching it right now.",
+     "pt": "Estou assistindo agora mesmo.",
+     "fb": "Presente; a pergunta é sobre o filme de ontem."
+    }
+   ],
+   [
+    {
+     "en": "My dog is brown and very big.",
+     "pt": "Meu cachorro é marrom e muito grande.",
+     "fb": "Descreve o cachorro, mas o assunto é o que fez no domingo."
+    },
+    {
+     "en": "I went to the park tomorrow.",
+     "pt": "Fui ao parque amanhã.",
+     "fb": "Mistura passado com “tomorrow”, o que é impossível."
+    }
+   ],
+   [
+    {
+     "en": "I’m going to sit by the lake tomorrow too.",
+     "pt": "Também vou sentar perto do lago amanhã.",
+     "fb": "Fala do futuro; o assunto é o que aconteceu no domingo."
+    },
+    {
+     "en": "My dog was reading a book at home.",
+     "pt": "Meu cachorro estava lendo um livro em casa.",
+     "fb": "Contradiz o que foi dito: o cachorro estava com ela no parque."
+    }
+   ]
+  ],
+  "can": [
+   "Sorry! I was cooking dinner, and my phone was away.",
+   "No, they weren’t. They were watching a movie in the living room.",
+   "I was walking my dog on the other side."
+  ]
+ },
+ "2071": {
+  "lines": [
+   {
+    "en": "Hi! Welcome in. Are you looking for something, or just browsing?",
+    "pt": "Oi! Seja bem-vinda. Está procurando algo ou só dando uma olhada?",
+    "sw_en": "Hi! Welcome in. Are you looking for something, or just {browsing|looking|shopping}?",
+    "sw_pt": "Oi! Seja bem-vinda. Está procurando algo ou só {dando uma olhada|olhando|passeando}?"
+   },
+   {
+    "en": "I need new headphones. How much are these?",
+    "pt": "Preciso de fones novos. Quanto custam estes?",
+    "sw_en": "I need new headphones. How much are {these|those|the black ones}?",
+    "sw_pt": "Preciso de fones novos. Quanto custam {estes|aqueles|os pretos}?"
+   },
+   {
+    "en": "They’re one hundred sixty dollars. The battery lasts all day.",
+    "pt": "Custam cento e sessenta dólares. A bateria dura o dia todo.",
+    "sw_en": "They’re one hundred sixty dollars. The battery lasts all {day|week|weekend}.",
+    "sw_pt": "Custam cento e sessenta dólares. A bateria dura {o dia todo|a semana toda|o fim de semana todo}."
+   },
+   {
+    "en": "That’s too expensive for me. Do you have cheaper wireless ones?",
+    "pt": "Isso é caro demais para mim. Você tem modelos mais baratos sem fio?",
+    "sw_en": "That’s too expensive for me. Do you have cheaper {wireless|wired|basic} ones?",
+    "sw_pt": "Isso é caro demais para mim. Você tem modelos mais baratos {sem fio|com fio|simples}?"
+   },
+   {
+    "en": "Sure. These are sixty dollars. The sound is clear.",
+    "pt": "Claro. Estes custam sessenta dólares. O som é nítido.",
+    "sw_en": "Sure. These are sixty dollars. The sound is {clear|good|fine}.",
+    "sw_pt": "Claro. Estes custam sessenta dólares. O som é {nítido|bom|aceitável}."
+   },
+   {
+    "en": "Sixty is better. Can I try them with a song?",
+    "pt": "Sessenta é melhor. Posso experimentar com uma música?",
+    "sw_en": "Sixty is better. Can I try them with {a song|my phone|your player}?",
+    "sw_pt": "Sessenta é melhor. Posso experimentar com {uma música|o meu celular|o seu aparelho}?"
+   },
+   {
+    "en": "Of course! Plug them into this phone. Careful, the volume is high.",
+    "pt": "Claro! Conecte neste celular. Cuidado, o volume está alto.",
+    "sw_en": "Of course! Plug them into this {phone|player|tablet}. Careful, the volume is high.",
+    "sw_pt": "Claro! Conecte neste {celular|aparelho|tablet}. Cuidado, o volume está alto."
+   },
+   {
+    "en": "Wow, it’s too loud! Can you turn the volume down?",
+    "pt": "Nossa, está alto demais! Você pode abaixar o volume?",
+    "sw_en": "Wow, it’s too loud! Can you turn the {volume|music|sound} down?",
+    "sw_pt": "Nossa, está alto demais! Você pode abaixar {o volume|a música|o som}?"
+   },
+   {
+    "en": "Sorry! So, what do you think? They’re light, and come in black.",
+    "pt": "Desculpe! E aí, o que achou? São leves e vêm em preto.",
+    "sw_en": "Sorry! So, what do you think? They’re light, and come in {black|white|red}.",
+    "sw_pt": "Desculpe! E aí, o que achou? São leves e vêm em {preto|branco|vermelho}."
+   },
+   {
+    "en": "The sound is good, but the cable is too short.",
+    "pt": "O som é bom, mas o cabo é curto demais.",
+    "sw_en": "The sound is good, but the cable is too {short|thin|stiff}.",
+    "sw_pt": "O som é bom, mas o cabo é {curto|fino|duro} demais."
+   },
+   {
+    "en": "Yes, an extension cable is ten dollars, with a two-year warranty.",
+    "pt": "Sim, um cabo de extensão custa dez dólares, com garantia de dois anos.",
+    "sw_en": "Yes, an extension cable is ten dollars, with a {two-year|one-year|six-month} warranty.",
+    "sw_pt": "Sim, um cabo de extensão custa dez dólares, com garantia de {dois anos|um ano|seis meses}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Yes, I am a student.",
+     "pt": "Sim, eu sou estudante.",
+     "fb": "Não responde se Mia procura algo especial."
+    },
+    {
+     "en": "I bought it yesterday.",
+     "pt": "Comprei ontem.",
+     "fb": "Passado e sem sentido: ela ainda nem comprou nada."
+    }
+   ],
+   [
+    {
+     "en": "Thanks! It’s cheap, I’ll take them right now.",
+     "pt": "Obrigada! É barato, levo agora mesmo.",
+     "fb": "Cento e sessenta dólares não é barato, e ela reclama do preço logo depois."
+    },
+    {
+     "en": "Yes, I am a student.",
+     "pt": "Sim, eu sou estudante.",
+     "fb": "Não reage ao preço informado."
+    }
+   ],
+   [
+    {
+     "en": "That’s perfect. I’ll pay one hundred sixty.",
+     "pt": "Perfeito. Pago cento e sessenta.",
+     "fb": "Confunde o preço: esses custam sessenta dólares."
+    },
+    {
+     "en": "No, I like my old phone.",
+     "pt": "Não, gosto do meu celular antigo.",
+     "fb": "Ignora a oferta da vendedora."
+    }
+   ],
+   [
+    {
+     "en": "Of course, thank you. I’m too happy.",
+     "pt": "Claro, obrigada. Estou feliz demais.",
+     "fb": "Não reage ao aviso sobre o volume alto."
+    },
+    {
+     "en": "Yes, sixty dollars is very high.",
+     "pt": "Sim, sessenta dólares é muito alto.",
+     "fb": "Contradiz Mia, que preferiu o preço de sessenta."
+    }
+   ],
+   [
+    {
+     "en": "Yes, black is too expensive.",
+     "pt": "Sim, preto é caro demais.",
+     "fb": "A cor não tem relação com o preço; não responde sobre o som."
+    },
+    {
+     "en": "I want to buy the cable, goodbye.",
+     "pt": "Quero comprar o cabo, tchau.",
+     "fb": "Encerra a conversa sem dizer o que achou."
+    }
+   ]
+  ],
+  "can": [
+   "I need new headphones. How much are these?",
+   "Sixty is better. Can I try them with a song?",
+   "Wow, it’s too loud! Can you turn the volume down?"
+  ]
+ },
+ "2074": {
+  "lines": [
+   {
+    "en": "Good evening! Welcome. Can I bring you a lemonade to start?",
+    "pt": "Boa noite! Bem-vinda. Posso trazer uma limonada para começar?",
+    "sw_en": "Good evening! Welcome. Can I bring you {a lemonade|some water|a soda} to start?",
+    "sw_pt": "Boa noite! Bem-vinda. Posso trazer {uma limonada|água|um refrigerante} para começar?"
+   },
+   {
+    "en": "A lemonade, please. What’s the most popular dish?",
+    "pt": "Uma limonada, por favor. Qual é o prato mais popular?",
+    "sw_en": "A lemonade, please. What’s the most popular {dish|drink|dessert}?",
+    "sw_pt": "Uma limonada, por favor. Qual é {o prato|a bebida|a sobremesa} mais popular?"
+   },
+   {
+    "en": "Easy: the burger. People drive in from other towns for it.",
+    "pt": "Fácil: o hambúrguer. As pessoas vêm de outras cidades por ele.",
+    "sw_en": "Easy: the {burger|steak|pasta}. People drive in from other towns for it.",
+    "sw_pt": "Fácil: {o hambúrguer|o bife|o macarrão}. As pessoas vêm de outras cidades por ele."
+   },
+   {
+    "en": "Is it the most expensive one? I don’t have much money.",
+    "pt": "É o mais caro? Não tenho muito dinheiro.",
+    "sw_en": "Is it the most expensive one? I don’t have much {money|cash|time}.",
+    "sw_pt": "É o mais caro? Não tenho muito {dinheiro|dinheiro vivo|tempo}."
+   },
+   {
+    "en": "No. The burger is twelve dollars, with fries and a salad.",
+    "pt": "Não. O hambúrguer custa doze dólares, com batata frita e salada.",
+    "sw_en": "No. The burger is twelve dollars, with fries and a {salad|soup|drink}.",
+    "sw_pt": "Não. O hambúrguer custa doze dólares, com batata frita e {salada|sopa|bebida}."
+   },
+   {
+    "en": "Perfect. I’d like the burger, please, with no onions.",
+    "pt": "Perfeito. Quero o hambúrguer, por favor, sem cebola.",
+    "sw_en": "Perfect. I’d like the burger, please, with no {onions|cheese|pickles}.",
+    "sw_pt": "Perfeito. Quero o hambúrguer, por favor, sem {cebola|queijo|picles}."
+   },
+   {
+    "en": "Great. Is this your first time here?",
+    "pt": "Ótimo. É a sua primeira vez aqui?",
+    "sw_en": "Great. Is this your {first|second|third} time here?",
+    "sw_pt": "Ótimo. É a sua {primeira|segunda|terceira} vez aqui?"
+   },
+   {
+    "en": "Yes! A friend says it has the most interesting menu in town.",
+    "pt": "Sim! Um amigo disse que tem o cardápio mais interessante da cidade.",
+    "sw_en": "Yes! A {friend|coworker|neighbor} says it has the most interesting menu in town.",
+    "sw_pt": "Sim! {Um amigo|Um colega|Um vizinho} disse que tem o cardápio mais interessante da cidade."
+   },
+   {
+    "en": "Would you like dessert later? We make our own ice cream.",
+    "pt": "Quer sobremesa depois? Fazemos nosso próprio sorvete.",
+    "sw_en": "Would you like dessert later? We make our own {ice cream|pies|cookies}.",
+    "sw_pt": "Quer sobremesa depois? Fazemos nosso próprio {sorvete|tortas|cookies}."
+   },
+   {
+    "en": "Maybe! I’m starving, so I might even order two burgers.",
+    "pt": "Talvez! Estou morrendo de fome, então posso até pedir dois hambúrgueres.",
+    "sw_en": "Maybe! I’m starving, so I might even {order|try|eat} two burgers.",
+    "sw_pt": "Talvez! Estou morrendo de fome, então posso até {pedir|experimentar|comer} dois hambúrgueres."
+   },
+   {
+    "en": "Ha! I’ll bring extra napkins. Your lemonade is coming right up.",
+    "pt": "Ha! Vou trazer guardanapos extra. Sua limonada já está saindo.",
+    "sw_en": "Ha! I’ll bring extra {napkins|ketchup|water}. Your lemonade is coming right up.",
+    "sw_pt": "Ha! Vou trazer {guardanapos|ketchup|água} extra. Sua limonada já está saindo."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Yes, I’m very hungry.",
+     "pt": "Sim, estou com muita fome.",
+     "fb": "A pergunta é sobre bebida, não sobre fome."
+    },
+    {
+     "en": "I’ll have the burger yesterday.",
+     "pt": "Vou querer o hambúrguer ontem.",
+     "fb": "Mistura pedido com “ontem”; a pergunta é só sobre a bebida."
+    }
+   ],
+   [
+    {
+     "en": "I ate it last year, and it was awful.",
+     "pt": "Comi no ano passado e foi horrível.",
+     "fb": "Contradiz a continuação: ela diz que é a primeira vez."
+    },
+    {
+     "en": "Please bring the bill now.",
+     "pt": "Traga a conta agora, por favor.",
+     "fb": "Pede a conta antes de pedir o prato."
+    }
+   ],
+   [
+    {
+     "en": "Then I’ll take the steak, it’s cheaper.",
+     "pt": "Então vou querer o bife, é mais barato.",
+     "fb": "Contradiz a informação: o bife custa mais."
+    },
+    {
+     "en": "I am twelve years old.",
+     "pt": "Tenho doze anos.",
+     "fb": "Confunde o preço com a idade."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I’ll take the burger.",
+     "pt": "Sim, vou querer o hambúrguer.",
+     "fb": "Ela já pediu; a pergunta é se já comeu ali antes."
+    },
+    {
+     "en": "I ate here yesterday, and it’s my first time.",
+     "pt": "Comi aqui ontem, e é a minha primeira vez.",
+     "fb": "Contradição: ontem x primeira vez."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t drink lemonade.",
+     "pt": "Não, eu não bebo limonada.",
+     "fb": "Fala de bebida, mas a pergunta é sobre sobremesa."
+    },
+    {
+     "en": "The burger is twelve dollars.",
+     "pt": "O hambúrguer custa doze dólares.",
+     "fb": "Repete uma informação sem responder."
+    }
+   ]
+  ],
+  "can": [
+   "A lemonade, please. What’s the most popular dish?",
+   "Perfect. I’d like the burger, please, with no onions.",
+   "Yes! A friend says it has the most interesting menu in town."
+  ]
+ },
+ "2078": {
+  "lines": [
+   {
+    "en": "Hi there! You look a little lost. Can I help?",
+    "pt": "Oi! Você parece um pouco perdida. Posso ajudar?",
+    "sw_en": "Hi there! You look a little {lost|confused|worried}. Can I help?",
+    "sw_pt": "Oi! Você parece um pouco {perdida|confusa|preocupada}. Posso ajudar?"
+   },
+   {
+    "en": "Yes! Where is the museum? I thought it was near the park.",
+    "pt": "Sim! Onde fica o museu? Achei que fosse perto do parque.",
+    "sw_en": "Yes! Where is the museum? I thought it was near the {park|library|bank}.",
+    "sw_pt": "Sim! Onde fica o museu? Achei que fosse perto {do parque|da biblioteca|do banco}."
+   },
+   {
+    "en": "You’re going the wrong way. It’s behind you, near the bank.",
+    "pt": "Você está indo pelo lado errado. Fica atrás de você, perto do banco.",
+    "sw_en": "You’re going the wrong way. It’s behind you, near the {bank|library|bridge}.",
+    "sw_pt": "Você está indo pelo lado errado. Fica atrás de você, perto {do banco|da biblioteca|da ponte}."
+   },
+   {
+    "en": "How do I get to Main Street? I turned too early.",
+    "pt": "Como chego à Main Street? Virei cedo demais.",
+    "sw_en": "How do I get to Main Street? I turned too {early|late|soon}.",
+    "sw_pt": "Como chego à Main Street? Virei {cedo|tarde|rápido} demais."
+   },
+   {
+    "en": "Go straight for two blocks and turn right at the light.",
+    "pt": "Siga em frente por dois quarteirões e vire à direita no semáforo.",
+    "sw_en": "Go straight for {two|three|four} blocks and turn right at the light.",
+    "sw_pt": "Siga em frente por {dois|três|quatro} quarteirões e vire à direita no semáforo."
+   },
+   {
+    "en": "Got it. Is it far? I only have twenty minutes.",
+    "pt": "Entendi. É longe? Só tenho vinte minutos.",
+    "sw_en": "Got it. Is it far? I only have {twenty|thirty|ten} minutes.",
+    "sw_pt": "Entendi. É longe? Só tenho {vinte|trinta|dez} minutos."
+   },
+   {
+    "en": "Not really, about ten minutes. Watch out for cars at the crossing.",
+    "pt": "Nem tanto, uns dez minutos. Cuidado com carros na travessia.",
+    "sw_en": "Not really, about ten minutes. Watch out for {cars|bikes|buses} at the crossing.",
+    "sw_pt": "Nem tanto, uns dez minutos. Cuidado com {carros|bicicletas|ônibus} na travessia."
+   },
+   {
+    "en": "Thanks. Does the museum close early on Sundays?",
+    "pt": "Obrigada. O museu fecha cedo aos domingos?",
+    "sw_en": "Thanks. Does the museum close early on {Sundays|Fridays|weekends}?",
+    "sw_pt": "Obrigada. O museu fecha cedo {aos domingos|às sextas|nos fins de semana}?"
+   },
+   {
+    "en": "I think it closes at five. The cafe next door has great pie.",
+    "pt": "Acho que fecha às cinco. A cafeteria ao lado tem uma torta ótima.",
+    "sw_en": "I think it closes at {five|four|six}. The cafe next door has great pie.",
+    "sw_pt": "Acho que fecha às {cinco|quatro|seis}. A cafeteria ao lado tem uma torta ótima."
+   },
+   {
+    "en": "Nice! I’m starving. Maybe I’ll grab a slice afterward.",
+    "pt": "Legal! Estou morrendo de fome. Talvez eu pegue uma fatia depois.",
+    "sw_en": "Nice! I’m starving. Maybe I’ll grab {a slice|a coffee|a sandwich} afterward.",
+    "sw_pt": "Legal! Estou morrendo de fome. Talvez eu pegue {uma fatia|um café|um sanduíche} depois."
+   },
+   {
+    "en": "Great plan! Enjoy the museum. Come back if you get lost.",
+    "pt": "Ótimo plano! Aproveite o museu. Volte se ficar perdida.",
+    "sw_en": "Great plan! Enjoy the museum. Come back if you get {lost|stuck|confused}.",
+    "sw_pt": "Ótimo plano! Aproveite o museu. Volte se ficar {perdida|travada|confusa}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I found it yesterday.",
+     "pt": "Encontrei ontem.",
+     "fb": "Passado; a pergunta é se ele pode ajudar agora."
+    },
+    {
+     "en": "Thank you, I’m fine. Goodbye.",
+     "pt": "Obrigada, estou bem. Tchau.",
+     "fb": "Recusa a ajuda, mas ela está perdida; contradiz a situação."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I like the museum. It’s big.",
+     "pt": "Sim, gosto do museu. É grande.",
+     "fb": "Não reage à correção de direção."
+    },
+    {
+     "en": "Go straight and turn right.",
+     "pt": "Siga em frente e vire à direita.",
+     "fb": "Dá direções em vez de recebê-las; inverte os papéis."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I have two blocks.",
+     "pt": "Sim, eu tenho dois quarteirões.",
+     "fb": "Ignora a explicação das direções."
+    },
+    {
+     "en": "I’m turning right at the light yesterday.",
+     "pt": "Estou virando à direita no semáforo ontem.",
+     "fb": "Tempo verbal errado e não responde."
+    }
+   ],
+   [
+    {
+     "en": "It’s very far. I need a taxi.",
+     "pt": "É muito longe. Preciso de um táxi.",
+     "fb": "Contradiz a informação: são só dez minutos."
+    },
+    {
+     "en": "Yes, I’m a little cars.",
+     "pt": "Sim, eu sou um pouco carros.",
+     "fb": "Frase sem sentido; deveria agradecer o aviso."
+    }
+   ],
+   [
+    {
+     "en": "The museum is closed. Goodbye.",
+     "pt": "O museu está fechado. Tchau.",
+     "fb": "Contradiz a informação e ignora a pergunta sobre a torta."
+    },
+    {
+     "en": "I turn right at the bank.",
+     "pt": "Eu viro à direita no banco.",
+     "fb": "Não responde sobre o café."
+    }
+   ]
+  ],
+  "can": [
+   "Yes! Where is the museum? I thought it was near the park.",
+   "How do I get to Main Street? I turned too early.",
+   "Got it. Is it far? I only have twenty minutes."
+  ]
+ },
+ "2079": {
+  "lines": [
+   {
+    "en": "Hi, Mia! Are you driving to my cafe, or taking the bus?",
+    "pt": "Oi, Mia! Você vem de carro ao meu café ou pegando o ônibus?",
+    "sw_en": "Hi, Mia! Are you driving to my cafe, or taking the {bus|train|subway}?",
+    "sw_pt": "Oi, Mia! Você vem de carro ao meu café ou pegando {o ônibus|o trem|o metrô}?"
+   },
+   {
+    "en": "The bus! I don’t know that neighborhood. Can you explain?",
+    "pt": "De ônibus! Não conheço esse bairro. Você pode explicar?",
+    "sw_en": "The bus! I don’t know that {neighborhood|street|area}. Can you explain?",
+    "sw_pt": "De ônibus! Não conheço {esse bairro|essa rua|essa região}. Você pode explicar?"
+   },
+   {
+    "en": "Sure! Turn left at the corner. You’ll pass a small bookstore.",
+    "pt": "Claro! Vire à esquerda na esquina. Você vai passar por uma livraria pequena.",
+    "sw_en": "Sure! Turn left at the corner. You’ll pass a small {bookstore|bakery|bank}.",
+    "sw_pt": "Claro! Vire à esquerda na esquina. Você vai passar por {uma livraria pequena|uma padaria pequena|um banco pequeno}."
+   },
+   {
+    "en": "Okay, left at the corner. Let me write it down.",
+    "pt": "Certo, esquerda na esquina. Deixe eu anotar.",
+    "sw_en": "Okay, left at the corner. Let me {write it down|use my phone|take notes}.",
+    "sw_pt": "Certo, esquerda na esquina. Deixe eu {anotar|usar o celular|fazer anotações}."
+   },
+   {
+    "en": "Go straight two blocks to the bridge. It has lights.",
+    "pt": "Siga em frente dois quarteirões até a ponte. Ela tem luzes.",
+    "sw_en": "Go straight two blocks to the bridge. It has {lights|flowers|benches}.",
+    "sw_pt": "Siga em frente dois quarteirões até a ponte. Ela tem {luzes|flores|bancos}."
+   },
+   {
+    "en": "Two blocks. And then? I always get lost, even with a map.",
+    "pt": "Dois quarteirões. E depois? Sempre me perco, até com um mapa.",
+    "sw_en": "Two blocks. And then? I always get lost, even with a {map|phone|guide}.",
+    "sw_pt": "Dois quarteirões. E depois? Sempre me perco, até com {um mapa|o celular|um guia}."
+   },
+   {
+    "en": "Cross the bridge. Stop at the blue door with the sign.",
+    "pt": "Atravesse a ponte. Pare na porta azul com a placa.",
+    "sw_en": "Cross the bridge. Stop at the blue door with the {sign|flag|window}.",
+    "sw_pt": "Atravesse a ponte. Pare na porta azul com {a placa|a bandeira|a janela}."
+   },
+   {
+    "en": "Easy! How long is the walk from the bus stop?",
+    "pt": "Fácil! Quanto tempo leva a caminhada desde o ponto de ônibus?",
+    "sw_en": "Easy! How long is the walk from the {bus stop|station|corner}?",
+    "sw_pt": "Fácil! Quanto tempo leva a caminhada desde {o ponto de ônibus|a estação|a esquina}?"
+   },
+   {
+    "en": "About ten minutes. If you’re lost, I’ll meet you at the corner.",
+    "pt": "Uns dez minutos. Se você se perder, encontro você na esquina.",
+    "sw_en": "About ten minutes. If you’re lost, I’ll meet you at the {corner|bridge|stop}.",
+    "sw_pt": "Uns dez minutos. Se você se perder, encontro você {na esquina|na ponte|no ponto}."
+   },
+   {
+    "en": "You’re kind. What’s good at your cafe? I skipped breakfast.",
+    "pt": "Você é gentil. O que é bom no seu café? Pulei o café da manhã.",
+    "sw_en": "You’re kind. What’s good at your cafe? I skipped {breakfast|lunch|dinner}.",
+    "sw_pt": "Você é gentil. O que é bom no seu café? Pulei {o café da manhã|o almoço|o jantar}."
+   },
+   {
+    "en": "Everything! My cinnamon rolls are famous. I’ll save one for you.",
+    "pt": "Tudo! Meus rolinhos de canela são famosos. Vou guardar um para você.",
+    "sw_en": "Everything! My cinnamon rolls are famous. I’ll save {one|two|a big one} for you.",
+    "sw_pt": "Tudo! Meus rolinhos de canela são famosos. Vou guardar {um|dois|um bem grande} para você."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Yes, I’m very happy.",
+     "pt": "Sim, estou muito feliz.",
+     "fb": "Não responde se vem de carro ou de ônibus."
+    },
+    {
+     "en": "I went by bus yesterday.",
+     "pt": "Fui de ônibus ontem.",
+     "fb": "Passado; a pergunta é sobre como ela vai hoje."
+    }
+   ],
+   [
+    {
+     "en": "Turn right, and take the bus.",
+     "pt": "Vire à direita e pegue o ônibus.",
+     "fb": "Inverte os papéis: quem dá direções é o Andre."
+    },
+    {
+     "en": "I don’t have a bookstore. I have a cafe.",
+     "pt": "Eu não tenho uma livraria. Eu tenho um café.",
+     "fb": "Confunde quem é o dono do café."
+    }
+   ],
+   [
+    {
+     "en": "Thank you, I’m already at the cafe.",
+     "pt": "Obrigada, já estou no café.",
+     "fb": "Contradiz o contexto: ela ainda está a caminho."
+    },
+    {
+     "en": "The bridge was old yesterday.",
+     "pt": "A ponte era velha ontem.",
+     "fb": "Passado sem sentido e não reage às instruções."
+    }
+   ],
+   [
+    {
+     "en": "I never cross bridges. Goodbye.",
+     "pt": "Eu nunca atravesso pontes. Tchau.",
+     "fb": "Recusa rude sem motivo."
+    },
+    {
+     "en": "A red door with a small sign.",
+     "pt": "Uma porta vermelha com uma placa pequena.",
+     "fb": "Repete errado: era porta azul com placa grande."
+    }
+   ],
+   [
+    {
+     "en": "It takes ten years.",
+     "pt": "Leva dez anos.",
+     "fb": "Exagero sem sentido; contradiz “about ten minutes”."
+    },
+    {
+     "en": "No, thank you. I never drink coffee.",
+     "pt": "Não, obrigada. Eu nunca tomo café.",
+     "fb": "Responde a algo que ninguém perguntou."
+    }
+   ]
+  ],
+  "can": [
+   "The bus! I don’t know that neighborhood. Can you explain?",
+   "Okay, left at the corner. Let me write it down.",
+   "Two blocks. And then? I always get lost, even with a map."
+  ]
+ },
+ "2084": {
+  "lines": [
+   {
+    "en": "Welcome! Are you shopping for school? We have new backpacks.",
+    "pt": "Bem-vinda! Está comprando coisas para a escola? Temos mochilas novas.",
+    "sw_en": "Welcome! Are you shopping for school? We have {new|colorful|waterproof} backpacks.",
+    "sw_pt": "Bem-vinda! Está comprando coisas para a escola? Temos mochilas {novas|coloridas|impermeáveis}."
+   },
+   {
+    "en": "Yes, I need a bigger one. The straps on mine broke.",
+    "pt": "Sim, preciso de uma maior. As alças da minha quebraram.",
+    "sw_en": "Yes, I need a bigger one. The {straps|zippers|buckles} on mine broke.",
+    "sw_pt": "Sim, preciso de uma maior. {As alças|Os zíperes|As fivelas} da minha quebraram."
+   },
+   {
+    "en": "This blue one is bigger than the red one.",
+    "pt": "Esta azul é maior que a vermelha.",
+    "sw_en": "This {blue|green|black} one is bigger than the red one.",
+    "sw_pt": "Esta {azul|verde|preta} é maior que a vermelha."
+   },
+   {
+    "en": "I like it. Is it more expensive? I want to pay under fifty dollars.",
+    "pt": "Gostei. É mais cara? Quero pagar menos de cinquenta dólares.",
+    "sw_en": "I like it. Is it more expensive? I want to pay under {fifty|forty|sixty} dollars.",
+    "sw_pt": "Gostei. É mais cara? Quero pagar menos de {cinquenta|quarenta|sessenta} dólares."
+   },
+   {
+    "en": "It’s fifty-five, but it’s on sale. You’ll pay forty-eight today.",
+    "pt": "Custa cinquenta e cinco, mas está em promoção. Hoje você paga quarenta e oito.",
+    "sw_en": "It’s fifty-five, but it’s on sale. You’ll pay {forty-eight|forty-five|fifty} today.",
+    "sw_pt": "Custa cinquenta e cinco, mas está em promoção. Hoje você paga {quarenta e oito|quarenta e cinco|cinquenta}."
+   },
+   {
+    "en": "Perfect! Let me try it on. It has plenty of room.",
+    "pt": "Perfeito! Deixe eu experimentar. Tem bastante espaço.",
+    "sw_en": "Perfect! Let me try it on. It has plenty of {room|space|pockets}.",
+    "sw_pt": "Perfeito! Deixe eu experimentar. Tem bastante {espaço|lugar|bolsos}."
+   },
+   {
+    "en": "How does it feel? Or try the green one on the counter.",
+    "pt": "Como ficou? Ou experimente a verde que está no balcão.",
+    "sw_en": "How does it feel? Or try the {green|gray|black} one on the counter.",
+    "sw_pt": "Como ficou? Ou experimente a {verde|cinza|preta} que está no balcão."
+   },
+   {
+    "en": "The green one is nice, but I’ll take the blue one.",
+    "pt": "A verde é bonita, mas vou levar a azul.",
+    "sw_en": "The green one is nice, but I’ll take the {blue|red|black} one.",
+    "sw_pt": "A verde é bonita, mas vou levar a {azul|vermelha|preta}."
+   },
+   {
+    "en": "Great choice. Do you want a bag, or will you wear it?",
+    "pt": "Ótima escolha. Quer uma sacola, ou vai usar a mochila?",
+    "sw_en": "Great choice. Do you want a bag, or will you {wear|carry|use} it?",
+    "sw_pt": "Ótima escolha. Quer uma sacola, ou vai {usar|levar na mão|usar} a mochila?"
+   },
+   {
+    "en": "I’ll wear it. My arms hurt from carrying all these books.",
+    "pt": "Vou usar. Meus braços doem de carregar todos estes livros.",
+    "sw_en": "I’ll wear it. My arms hurt from carrying all these {books|notebooks|folders}.",
+    "sw_pt": "Vou usar. Meus braços doem de carregar {todos estes livros|todos estes cadernos|todos estes fichários}."
+   },
+   {
+    "en": "Ha! Good timing. Here’s your receipt. Good luck at school!",
+    "pt": "Ha! Boa hora. Aqui está o recibo. Boa sorte na escola!",
+    "sw_en": "Ha! Good timing. Here’s your receipt. Good luck at {school|work|class}!",
+    "sw_pt": "Ha! Boa hora. Aqui está o recibo. Boa sorte {na escola|no trabalho|na aula}!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I went to school yesterday.",
+     "pt": "Fui à escola ontem.",
+     "fb": "Passado; a pergunta é sobre a compra de agora."
+    },
+    {
+     "en": "Yes, I like the sky. It’s blue.",
+     "pt": "Sim, eu gosto do céu. É azul.",
+     "fb": "Fora de contexto: ninguém falou do céu."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I have two backpacks.",
+     "pt": "Sim, eu tenho duas mochilas.",
+     "fb": "Ignora a sugestão da vendedora."
+    },
+    {
+     "en": "I like the wall. It’s very big.",
+     "pt": "Gosto da parede. Ela é bem grande.",
+     "fb": "Fala de outra coisa, sem relação com as mochilas."
+    }
+   ],
+   [
+    {
+     "en": "It’s too expensive. I’ll take it for a hundred.",
+     "pt": "É caro demais. Levo por cem.",
+     "fb": "Contradiz a informação: o preço é menor que cinquenta com desconto."
+    },
+    {
+     "en": "Yes, the red one is better. Goodbye.",
+     "pt": "Sim, a vermelha é melhor. Tchau.",
+     "fb": "Contradiz Mia, que escolheu a azul."
+    }
+   ],
+   [
+    {
+     "en": "It’s the same price, yesterday.",
+     "pt": "É o mesmo preço, ontem.",
+     "fb": "Sem sentido e tempo errado."
+    },
+    {
+     "en": "No, I want to try the small one.",
+     "pt": "Não, quero experimentar a pequena.",
+     "fb": "Contradiz: ela precisa de uma mochila maior."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I do. Thank you very much.",
+     "pt": "Sim, quero. Muito obrigada.",
+     "fb": "A pergunta com “or” pede escolha."
+    },
+    {
+     "en": "I wore it yesterday at school.",
+     "pt": "Usei ontem na escola.",
+     "fb": "Passado; ela acabou de comprar."
+    }
+   ]
+  ],
+  "can": [
+   "Yes, I need a bigger one. The straps on mine broke.",
+   "I like it. Is it more expensive? I want to pay under fifty dollars.",
+   "I’ll wear it. My arms hurt from carrying all these books."
+  ]
+ },
+ "2086": {
+  "lines": [
+   {
+    "en": "You look excited! Are you here to buy a phone?",
+    "pt": "Você parece animada! Veio comprar um celular?",
+    "sw_en": "You look excited! Are you here to {buy|sell|fix} a phone?",
+    "sw_pt": "Você parece animada! Veio {comprar|vender|consertar} um celular?"
+   },
+   {
+    "en": "Yes! My old one died last week. This one looks new.",
+    "pt": "Sim! O meu velho morreu na semana passada. Este parece novo.",
+    "sw_en": "Yes! My old one died last {week|month|night}. This one looks new.",
+    "sw_pt": "Sim! O meu velho morreu {na semana passada|no mês passado|ontem à noite}. Este parece novo."
+   },
+   {
+    "en": "It is new, only a few months old. The battery is excellent.",
+    "pt": "É novo, só alguns meses de uso. A bateria é excelente.",
+    "sw_en": "It is new, only a few months old. The {battery|screen|camera} is excellent.",
+    "sw_pt": "É novo, só alguns meses de uso. {A bateria|A tela|A câmera} é excelente."
+   },
+   {
+    "en": "It seems expensive, though. Does the screen look okay? No scratches?",
+    "pt": "Parece caro, porém. A tela está boa? Sem arranhões?",
+    "sw_en": "It seems expensive, though. Does the screen look okay? No {scratches|cracks|marks}?",
+    "sw_pt": "Parece caro, porém. A tela está boa? Sem {arranhões|rachaduras|marcas}?"
+   },
+   {
+    "en": "It’s perfect. The last owner used a case. Want to hold it?",
+    "pt": "Está perfeito. O dono anterior usava uma capinha. Quer segurar?",
+    "sw_en": "It’s perfect. The last owner used a {case|box|drawer}. Want to hold it?",
+    "sw_pt": "Está perfeito. O dono anterior usava {uma capinha|uma caixa|uma gaveta}. Quer segurar?"
+   },
+   {
+    "en": "Sure. It’s light! How long does the battery last when I play games?",
+    "pt": "Claro. É leve! Quanto dura a bateria quando jogo jogos?",
+    "sw_en": "Sure. It’s light! How long does the battery last when I play {games|videos|music}?",
+    "sw_pt": "Claro. É leve! Quanto dura a bateria quando jogo {jogos|vídeos|música}?"
+   },
+   {
+    "en": "About a full day. You also get the charger and the original box.",
+    "pt": "Quase um dia inteiro. Você também leva o carregador e a caixa originais.",
+    "sw_en": "About a full day. You also get the charger and the original {box|case|cable}.",
+    "sw_pt": "Quase um dia inteiro. Você também leva o carregador e {a caixa|a capa|o cabo} originais."
+   },
+   {
+    "en": "Cool! The speaker is loud. Can I take a quick picture?",
+    "pt": "Legal! O alto-falante é alto. Posso tirar uma foto rápida?",
+    "sw_en": "Cool! The speaker is loud. Can I take a quick {picture|video|selfie}?",
+    "sw_pt": "Legal! O alto-falante é alto. Posso tirar {uma foto|um vídeo|uma selfie} rápida?"
+   },
+   {
+    "en": "Of course! The photos come out sharp, even in dim light.",
+    "pt": "Claro! As fotos saem nítidas, mesmo com luz fraca.",
+    "sw_en": "Of course! The photos come out sharp, even in {dim|low|bad} light.",
+    "sw_pt": "Claro! As fotos saem nítidas, mesmo com luz {fraca|baixa|ruim}."
+   },
+   {
+    "en": "I’m convinced! Can I get a discount if I pay in cash?",
+    "pt": "Estou convencida! Posso ter desconto se pagar em dinheiro?",
+    "sw_en": "I’m convinced! Can I get a discount if I pay {in cash|in full|today}?",
+    "sw_pt": "Estou convencida! Posso ter desconto se pagar {em dinheiro|à vista|hoje}?"
+   },
+   {
+    "en": "Let me ask my manager. I think we can do ten percent.",
+    "pt": "Deixe eu perguntar ao gerente. Acho que dá para fazer dez por cento.",
+    "sw_en": "Let me ask my manager. I think we can do {ten|five|fifteen} percent.",
+    "sw_pt": "Deixe eu perguntar ao gerente. Acho que dá para fazer {dez|cinco|quinze} por cento."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I bought one yesterday. It’s new.",
+     "pt": "Comprei um ontem. É novo.",
+     "fb": "Contradiz o contexto: ela veio ao balcão agora."
+    },
+    {
+     "en": "No, I like the weather.",
+     "pt": "Não, eu gosto do tempo.",
+     "fb": "Não responde ao motivo da visita."
+    }
+   ],
+   [
+    {
+     "en": "That’s too cheap. I don’t want it.",
+     "pt": "É barato demais. Não quero.",
+     "fb": "Rejeita sem lógica; ela reclama do preço, não de ser barato."
+    },
+    {
+     "en": "My old phone is red.",
+     "pt": "Meu celular velho é vermelho.",
+     "fb": "Não reage ao que o vendedor disse."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I held it yesterday.",
+     "pt": "Sim, segurei ontem.",
+     "fb": "Passado; a oferta é para agora."
+    },
+    {
+     "en": "The owner is a month.",
+     "pt": "O dono é um mês.",
+     "fb": "Frase sem sentido, confunde dono e tempo."
+    }
+   ],
+   [
+    {
+     "en": "It lasts a month in the box.",
+     "pt": "Dura um mês na caixa.",
+     "fb": "Contradiz a informação de que dura quase um dia."
+    },
+    {
+     "en": "I need a new charger tomorrow, goodbye.",
+     "pt": "Preciso de um carregador novo amanhã, tchau.",
+     "fb": "Ignora o que foi dito; o carregador já está incluído."
+    }
+   ],
+   [
+    {
+     "en": "I don’t take photos. Goodbye.",
+     "pt": "Não tiro fotos. Tchau.",
+     "fb": "Contradiz o pedido dela, que quer testar a câmera."
+    },
+    {
+     "en": "I paid cash yesterday.",
+     "pt": "Paguei em dinheiro ontem.",
+     "fb": "Passado; ela ainda não pagou."
+    }
+   ]
+  ],
+  "can": [
+   "Yes! My old one died last week. This one looks new.",
+   "It seems expensive, though. Does the screen look okay? No scratches?",
+   "I’m convinced! Can I get a discount if I pay in cash?"
+  ]
+ },
+ "2088": {
+  "lines": [
+   {
+    "en": "Excuse me! Could you slow down, please? There are kids near the gate.",
+    "pt": "Com licença! Pode ir mais devagar, por favor? Tem crianças perto do portão.",
+    "sw_en": "Excuse me! Could you slow down, please? There are kids near the {gate|fountain|playground}.",
+    "sw_pt": "Com licença! Pode ir mais devagar, por favor? Tem crianças perto {do portão|da fonte|do parquinho}."
+   },
+   {
+    "en": "Oh, sorry! I ride too quickly when I’m late for work.",
+    "pt": "Ah, desculpe! Eu pedalo rápido demais quando estou atrasada para o trabalho.",
+    "sw_en": "Oh, sorry! I ride too quickly when I’m late for {work|class|practice}.",
+    "sw_pt": "Ah, desculpe! Eu pedalo rápido demais quando estou atrasada para {o trabalho|a aula|o treino}."
+   },
+   {
+    "en": "No problem. Last week a boy fell off his bike right here.",
+    "pt": "Sem problema. Semana passada um menino caiu da bicicleta bem aqui.",
+    "sw_en": "No problem. Last week a boy fell off his {bike|skateboard|scooter} right here.",
+    "sw_pt": "Sem problema. Semana passada um menino caiu {da bicicleta|do skate|da scooter} bem aqui."
+   },
+   {
+    "en": "Oh no! Was he badly hurt? I hope somebody called his parents.",
+    "pt": "Ai, não! Ele se machucou muito? Espero que alguém tenha ligado para os pais dele.",
+    "sw_en": "Oh no! Was he badly hurt? I hope somebody {called|helped|found} his parents.",
+    "sw_pt": "Ai, não! Ele se machucou muito? Espero que alguém {tenha ligado para|tenha ajudado|tenha encontrado} os pais dele."
+   },
+   {
+    "en": "He only scraped his knee. But his mom was really upset.",
+    "pt": "Ele só ralou o joelho. Mas a mãe dele ficou muito chateada.",
+    "sw_en": "He only scraped {his knee|his elbow|his hand}. But his mom was really upset.",
+    "sw_pt": "Ele só ralou {o joelho|o cotovelo|a mão}. Mas a mãe dele ficou muito chateada."
+   },
+   {
+    "en": "I’ll ride carefully from now on. Should I walk my bike here?",
+    "pt": "Vou pedalar com cuidado daqui para frente. Devo empurrar a bicicleta aqui?",
+    "sw_en": "I’ll ride carefully from now on. Should I walk my {bike|scooter|skateboard} here?",
+    "sw_pt": "Vou pedalar com cuidado daqui para frente. Devo empurrar {a bicicleta|a scooter|o skate} aqui?"
+   },
+   {
+    "en": "That would be great. After the gate, you can ride again.",
+    "pt": "Seria ótimo. Depois do portão, você pode pedalar de novo.",
+    "sw_en": "That would be great. After the {gate|bridge|fountain}, you can ride again.",
+    "sw_pt": "Seria ótimo. Depois {do portão|da ponte|da fonte}, você pode pedalar de novo."
+   },
+   {
+    "en": "Okay. The baby looks asleep, so I’ll keep my bell off.",
+    "pt": "Certo. O bebê parece dormir, então vou manter a campainha desligada.",
+    "sw_en": "Okay. The baby looks asleep, so I’ll keep my {bell|music|phone} off.",
+    "sw_pt": "Certo. O bebê parece dormir, então vou manter {a campainha desligada|a música desligada|o celular desligado}."
+   },
+   {
+    "en": "Thanks, that’s thoughtful. Her father works nights, so she sleeps now.",
+    "pt": "Obrigado, é atencioso. O pai dela trabalha à noite, então ela dorme agora.",
+    "sw_en": "Thanks, that’s thoughtful. Her father works {nights|weekends|long hours}, so she sleeps now.",
+    "sw_pt": "Obrigado, é atencioso. O pai dela trabalha {à noite|nos fins de semana|muitas horas}, então ela dorme agora."
+   },
+   {
+    "en": "My wheel is noisy. Do you know a good bike shop?",
+    "pt": "Minha roda está fazendo barulho. Você conhece uma boa oficina de bicicleta?",
+    "sw_en": "My wheel is noisy. Do you know a good {bike shop|mechanic|repair shop}?",
+    "sw_pt": "Minha roda está fazendo barulho. Você conhece {uma boa oficina de bicicleta|um bom mecânico|uma boa oficina}?"
+   },
+   {
+    "en": "Yes! There’s one two streets away. They’ll fix it today.",
+    "pt": "Sim! Tem uma a duas ruas daqui. Eles consertam hoje.",
+    "sw_en": "Yes! There’s one two streets away. They’ll fix it {today|tomorrow|this week}.",
+    "sw_pt": "Sim! Tem uma a duas ruas daqui. Eles consertam {hoje|amanhã|ainda esta semana}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Yes, I’m very fast, thank you.",
+     "pt": "Sim, sou muito rápida, obrigada.",
+     "fb": "Responde de modo estranho; deveria pedir desculpa e concordar."
+    },
+    {
+     "en": "I rode a bike yesterday.",
+     "pt": "Andei de bicicleta ontem.",
+     "fb": "Passado e sem relação com o pedido atual."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I ride my bike on the road.",
+     "pt": "Sim, eu ando de bicicleta na estrada.",
+     "fb": "Ignora o relato sobre o menino."
+    },
+    {
+     "en": "He fell off tomorrow.",
+     "pt": "Ele caiu amanhã.",
+     "fb": "“Tomorrow” não combina com passado."
+    }
+   ],
+   [
+    {
+     "en": "Great, I love knees.",
+     "pt": "Ótimo, eu adoro joelhos.",
+     "fb": "Resposta sem sentido para uma situação séria."
+    },
+    {
+     "en": "I don’t care. It’s not my problem.",
+     "pt": "Não me importo. Não é problema meu.",
+     "fb": "Registro frio e sem empatia, inadequado aqui."
+    }
+   ],
+   [
+    {
+     "en": "No, I’ll ride through the gate quickly.",
+     "pt": "Não, vou passar pelo portão rapidamente.",
+     "fb": "Contradiz a promessa de andar com cuidado."
+    },
+    {
+     "en": "I opened my eyes yesterday.",
+     "pt": "Abri os olhos ontem.",
+     "fb": "Entende ao pé da letra e usa tempo errado."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I sleep well at night, too.",
+     "pt": "Sim, eu também durmo bem à noite.",
+     "fb": "Foca em si mesma e não reage ao comentário sobre a família do bebê."
+    },
+    {
+     "en": "Sorry, I’ll ride loudly past the baby.",
+     "pt": "Desculpe, vou passar pedalando alto pelo bebê.",
+     "fb": "Contradiz o que ela acabou de combinar."
+    }
+   ]
+  ],
+  "can": [
+   "Oh, sorry! I ride too quickly when I’m late for work.",
+   "I’ll ride carefully from now on. Should I walk my bike here?",
+   "Okay. The baby looks asleep, so I’ll keep my bell off."
+  ]
+ },
+ "2091": {
+  "lines": [
+   {
+    "en": "Something smells amazing! What are you doing in the kitchen?",
+    "pt": "Tem um cheiro incrível! O que você está fazendo na cozinha?",
+    "sw_en": "Something smells {amazing|delicious|sweet}! What are you doing in the kitchen?",
+    "sw_pt": "Tem um cheiro {incrível|delicioso|doce}! O que você está fazendo na cozinha?"
+   },
+   {
+    "en": "I’m baking cookies for my brother. I usually bake on Sundays.",
+    "pt": "Estou fazendo cookies para o meu irmão. Normalmente assei aos domingos.",
+    "sw_en": "I’m baking cookies for my brother. I usually bake on {Sundays|weekends|Saturdays}.",
+    "sw_pt": "Estou fazendo cookies para o meu irmão. Normalmente assei {aos domingos|nos fins de semana|aos sábados}."
+   },
+   {
+    "en": "Nice! Does anyone help you, or do you bake alone?",
+    "pt": "Legal! Alguém ajuda você, ou você assa sozinha?",
+    "sw_en": "Nice! Does anyone help you, or do you bake {alone|with music|with friends}?",
+    "sw_pt": "Legal! Alguém ajuda você, ou você assa {sozinha|com música|com amigos}?"
+   },
+   {
+    "en": "My brother, believe it or not. He’s washing the dishes.",
+    "pt": "Meu irmão, acredite ou não. Ele está lavando a louça.",
+    "sw_en": "My brother, believe it or not. He’s washing the {dishes|pots|bowls}.",
+    "sw_pt": "Meu irmão, acredite ou não. Ele está lavando {a louça|as panelas|as tigelas}."
+   },
+   {
+    "en": "What did he do this time? Break your favorite mug again?",
+    "pt": "O que ele fez desta vez? Quebrou sua caneca favorita de novo?",
+    "sw_en": "What did he do this time? Break your favorite {mug|plate|bowl} again?",
+    "sw_pt": "O que ele fez desta vez? Quebrou {sua caneca favorita|seu prato favorito|sua tigela favorita} de novo?"
+   },
+   {
+    "en": "Worse. He ate half of the dough yesterday.",
+    "pt": "Pior. Ele comeu metade da massa ontem.",
+    "sw_en": "Worse. He ate half of the {dough|frosting|chocolate chips} yesterday.",
+    "sw_pt": "Pior. Ele comeu metade {da massa|da cobertura|das gotas de chocolate} ontem."
+   },
+   {
+    "en": "No way! At least you have good music. Is that country?",
+    "pt": "Não acredito! Pelo menos você tem boa música. É country?",
+    "sw_en": "No way! At least you have good music. Is that {country|jazz|rock}?",
+    "sw_pt": "Não acredito! Pelo menos você tem boa música. É {country|jazz|rock}?"
+   },
+   {
+    "en": "Yes, it’s my dad’s old playlist. It helps when the kitchen gets hot.",
+    "pt": "Sim, é a velha playlist do meu pai. Ajuda quando a cozinha fica quente.",
+    "sw_en": "Yes, it’s my dad’s old playlist. It helps when the kitchen gets {hot|messy|crowded}.",
+    "sw_pt": "Sim, é a velha playlist do meu pai. Ajuda quando a cozinha fica {quente|bagunçada|cheia}."
+   },
+   {
+    "en": "Smart. Could you save me a few cookies?",
+    "pt": "Esperta. Você pode guardar alguns cookies para mim?",
+    "sw_en": "Smart. Could you save me {a few cookies|two cookies|a dozen cookies}?",
+    "sw_pt": "Esperta. Você pode guardar {alguns cookies|dois cookies|uma dúzia de cookies} para mim?"
+   },
+   {
+    "en": "Of course! Come over around six. They’ll still be warm.",
+    "pt": "Claro! Venha por volta das seis. Ainda estarão quentinhos.",
+    "sw_en": "Of course! Come over around {six|five|seven}. They’ll still be warm.",
+    "sw_pt": "Claro! Venha por volta das {seis|cinco|sete}. Ainda estarão quentinhos."
+   },
+   {
+    "en": "Deal! I’ll bring ice cream. See you soon, and don’t burn them!",
+    "pt": "Combinado! Levo sorvete. Até já, e não deixe queimar!",
+    "sw_en": "Deal! I’ll bring {ice cream|milk|fruit}. See you soon, and don’t burn them!",
+    "sw_pt": "Combinado! Levo {sorvete|leite|frutas}. Até já, e não deixe queimar!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I usually bake on Sundays.",
+     "pt": "Normalmente eu asso aos domingos.",
+     "fb": "Fala de rotina, mas a pergunta é sobre o que ela faz agora."
+    },
+    {
+     "en": "I baked cookies last year.",
+     "pt": "Fiz cookies no ano passado.",
+     "fb": "Passado distante; a pergunta é sobre agora."
+    }
+   ],
+   [
+    {
+     "en": "I’m washing the dishes yesterday.",
+     "pt": "Estou lavando a louça ontem.",
+     "fb": "Mistura presente contínuo com “ontem”."
+    },
+    {
+     "en": "Cookies are sweet.",
+     "pt": "Cookies são doces.",
+     "fb": "Não responde quem está ajudando."
+    }
+   ],
+   [
+    {
+     "en": "He’s very tall, and he’s my brother.",
+     "pt": "Ele é muito alto e é meu irmão.",
+     "fb": "Descreve o irmão, mas não explica o que ele fez."
+    },
+    {
+     "en": "I’m sorry, I have no brothers.",
+     "pt": "Desculpe, não tenho irmãos.",
+     "fb": "Contradiz o que Mia acabou de dizer."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t hear anything. I’m not baking.",
+     "pt": "Não, não ouço nada. Não estou assando.",
+     "fb": "Contradiz o contexto: ela está assando."
+    },
+    {
+     "en": "I put the cookies in the oven.",
+     "pt": "Coloquei os cookies no forno.",
+     "fb": "Não responde sobre a música."
+    }
+   ],
+   [
+    {
+     "en": "No, I eat them all now.",
+     "pt": "Não, eu como todos agora.",
+     "fb": "Recusa de modo rude e sem simpatia."
+    },
+    {
+     "en": "Yes, I saved cookies last Friday.",
+     "pt": "Sim, guardei cookies na sexta passada.",
+     "fb": "Passado; o pedido é para hoje."
+    }
+   ]
+  ],
+  "can": [
+   "I’m baking cookies for my brother. I usually bake on Sundays.",
+   "My brother, believe it or not. He’s washing the dishes.",
+   "Of course! Come over around six. They’ll still be warm."
+  ]
+ },
+ "2095": {
+  "lines": [
+   {
+    "en": "I’m having dinner at my place next Saturday. Would you like to come?",
+    "pt": "Vou fazer um jantar na minha casa no próximo sábado. Você gostaria de vir?",
+    "sw_en": "I’m having dinner at my place next {Saturday|Friday|Sunday}. Would you like to come?",
+    "sw_pt": "Vou fazer um jantar na minha casa no próximo {sábado|sexta|domingo}. Você gostaria de vir?"
+   },
+   {
+    "en": "That sounds lovely! I’d like to come. Is it formal?",
+    "pt": "Que lindo! Eu gostaria de ir. É formal?",
+    "sw_en": "That sounds lovely! I’d like to come. Is it {formal|casual|dressy}?",
+    "sw_pt": "Que lindo! Eu gostaria de ir. É {formal|informal|elegante}?"
+   },
+   {
+    "en": "It’s casual, around seven. I’ll cook pasta, and my brother makes dessert.",
+    "pt": "É informal, por volta das sete. Vou cozinhar macarrão, e meu irmão faz a sobremesa.",
+    "sw_en": "It’s casual, around seven. I’ll cook {pasta|fish|tacos}, and my brother makes dessert.",
+    "sw_pt": "É informal, por volta das sete. Vou cozinhar {macarrão|peixe|tacos}, e meu irmão faz a sobremesa."
+   },
+   {
+    "en": "Perfect. Can I bring something? I could bake a cake.",
+    "pt": "Perfeito. Posso levar algo? Posso assar um bolo.",
+    "sw_en": "Perfect. Can I bring something? I could bake {a cake|a pie|some cookies}.",
+    "sw_pt": "Perfeito. Posso levar algo? Posso assar {um bolo|uma torta|uns cookies}."
+   },
+   {
+    "en": "A cake would be wonderful! Would you like some coffee now?",
+    "pt": "Um bolo seria maravilhoso! Aceita um café agora?",
+    "sw_en": "A cake would be wonderful! Would you like some {coffee|tea|juice} now?",
+    "sw_pt": "Um bolo seria maravilhoso! Aceita {um café|um chá|um suco} agora?"
+   },
+   {
+    "en": "Yes, thanks. A little milk, please. Who else is coming?",
+    "pt": "Sim, obrigada. Um pouco de leite, por favor. Quem mais vem?",
+    "sw_en": "Yes, thanks. A little {milk|sugar|cream}, please. Who else is coming?",
+    "sw_pt": "Sim, obrigada. Um pouco de {leite|açúcar|creme}, por favor. Quem mais vem?"
+   },
+   {
+    "en": "My brother, two friends from college, and Josh. Remember him?",
+    "pt": "Meu irmão, dois amigos da faculdade e o Josh. Lembra dele?",
+    "sw_en": "My brother, two friends from {college|work|my gym}, and Josh. Remember him?",
+    "sw_pt": "Meu irmão, dois amigos {da faculdade|do trabalho|da academia} e o Josh. Lembra dele?"
+   },
+   {
+    "en": "Josh, the tall guy who told jokes all night? He was hilarious!",
+    "pt": "O Josh, aquele alto que contou piadas a noite toda? Ele era hilário!",
+    "sw_en": "Josh, the tall guy who told {jokes|stories|riddles} all night? He was hilarious!",
+    "sw_pt": "O Josh, aquele alto que contou {piadas|histórias|charadas} a noite toda? Ele era hilário!"
+   },
+   {
+    "en": "That’s him! When the weather gets nice, I want a picnic.",
+    "pt": "É ele! Quando o tempo melhorar, quero fazer um piquenique.",
+    "sw_en": "That’s him! When the weather gets nice, I want {a picnic|a barbecue|a brunch}.",
+    "sw_pt": "É ele! Quando o tempo melhorar, quero fazer {um piquenique|um churrasco|um brunch}."
+   },
+   {
+    "en": "A picnic by the river sounds great. We could invite my cousins.",
+    "pt": "Um piquenique perto do rio parece ótimo. Poderíamos convidar meus primos.",
+    "sw_en": "A picnic by the river sounds great. We could invite my {cousins|neighbors|coworkers}.",
+    "sw_pt": "Um piquenique perto do rio parece ótimo. Poderíamos convidar {meus primos|meus vizinhos|meus colegas}."
+   },
+   {
+    "en": "Absolutely! I’ll send you the address tonight. Check your phone.",
+    "pt": "Claro! Mando o endereço hoje à noite. Olhe o celular.",
+    "sw_en": "Absolutely! I’ll send you the {address|map|directions} tonight. Check your phone.",
+    "sw_pt": "Claro! Mando {o endereço|o mapa|as instruções} hoje à noite. Olhe o celular."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I came to your dinner last Saturday.",
+     "pt": "Fui ao seu jantar no sábado passado.",
+     "fb": "Fala do passado; o convite é para o próximo sábado."
+    },
+    {
+     "en": "Yes, I invited a few friends too.",
+     "pt": "Sim, eu também convidei alguns amigos.",
+     "fb": "Inverte os papéis: quem convida é a Emma."
+    }
+   ],
+   [
+    {
+     "en": "Great, I’ll arrive at seven yesterday.",
+     "pt": "Ótimo, vou chegar às sete ontem.",
+     "fb": "Mistura futuro com “ontem”."
+    },
+    {
+     "en": "No, I don’t like pasta. Goodbye.",
+     "pt": "Não, não gosto de macarrão. Tchau.",
+     "fb": "Rude e sem agradecer; além disso, ela já tinha aceitado ir."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I made coffee last week.",
+     "pt": "Sim, fiz café semana passada.",
+     "fb": "Passado; a oferta é para agora."
+    },
+    {
+     "en": "I’ll bake a cake for coffee.",
+     "pt": "Vou assar um bolo para o café.",
+     "fb": "Não responde se aceita o café agora."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t know my brother.",
+     "pt": "Não, não conheço o meu irmão.",
+     "fb": "O irmão é da Emma, e a pergunta é sobre o Josh."
+    },
+    {
+     "en": "I remember my coworker. He is my dad.",
+     "pt": "Lembro do meu colega. Ele é meu pai.",
+     "fb": "Sem sentido e contradiz a pergunta sobre o Josh."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I had a picnic yesterday.",
+     "pt": "Sim, fiz um piquenique ontem.",
+     "fb": "Passado; o assunto é um plano futuro."
+    },
+    {
+     "en": "No, I never bake cookies.",
+     "pt": "Não, eu nunca asso cookies.",
+     "fb": "Fora de contexto: o assunto é o piquenique."
+    }
+   ]
+  ],
+  "can": [
+   "That sounds lovely! I’d like to come. Is it formal?",
+   "Perfect. Can I bring something? I could bake a cake.",
+   "A picnic by the river sounds great. We could invite my cousins."
+  ]
+ },
+ "2097": {
+  "lines": [
+   {
+    "en": "I finally have a free weekend. Let’s meet! When are you free?",
+    "pt": "Finalmente tenho um fim de semana livre. Vamos nos encontrar! Quando você está livre?",
+    "sw_en": "I finally have a free {weekend|evening|afternoon}. Let’s meet! When are you free?",
+    "sw_pt": "Finalmente tenho {um fim de semana livre|uma noite livre|uma tarde livre}. Vamos nos encontrar! Quando você está livre?"
+   },
+   {
+    "en": "How about Saturday, at the bookstore? I need a new novel.",
+    "pt": "Que tal sábado, na livraria? Preciso de um romance novo.",
+    "sw_en": "How about Saturday, at the bookstore? I need a new {novel|notebook|dictionary}.",
+    "sw_pt": "Que tal sábado, na livraria? Preciso de {um romance novo|um caderno novo|um dicionário novo}."
+   },
+   {
+    "en": "Good idea! Is four in the afternoon okay for you?",
+    "pt": "Boa ideia! Pode ser às quatro da tarde?",
+    "sw_en": "Good idea! Is {four|three|five} in the afternoon okay for you?",
+    "sw_pt": "Boa ideia! Pode ser às {quatro|três|cinco} da tarde?"
+   },
+   {
+    "en": "Four works. I haven’t walked by the river in ages.",
+    "pt": "Quatro está ótimo. Faz séculos que não caminho pelo rio.",
+    "sw_en": "Four works. I haven’t walked by the river in {ages|months|years}.",
+    "sw_pt": "Quatro está ótimo. Faz {séculos|meses|anos} que não caminho pelo rio."
+   },
+   {
+    "en": "Sounds nice. Where do we meet? I always use the wrong entrance.",
+    "pt": "Parece ótimo. Onde nos encontramos? Eu sempre uso a entrada errada.",
+    "sw_en": "Sounds nice. Where do we meet? I always use the {wrong|back|side} entrance.",
+    "sw_pt": "Parece ótimo. Onde nos encontramos? Eu sempre uso a entrada {errada|dos fundos|lateral}."
+   },
+   {
+    "en": "Let’s meet at the front, under the big clock.",
+    "pt": "Vamos nos encontrar na frente, embaixo do relógio grande.",
+    "sw_en": "Let’s meet at the front, under the big {clock|sign|window}.",
+    "sw_pt": "Vamos nos encontrar na frente, embaixo {do relógio grande|da placa grande|da janela grande}."
+   },
+   {
+    "en": "Perfect. What do you feel like eating for dinner? I want something different.",
+    "pt": "Perfeito. O que você quer comer no jantar? Quero algo diferente.",
+    "sw_en": "Perfect. What do you feel like eating for dinner? I want something {different|spicy|light}.",
+    "sw_pt": "Perfeito. O que você quer comer no jantar? Quero algo {diferente|picante|leve}."
+   },
+   {
+    "en": "There’s a new pizza place near the bridge. My coworker loves it.",
+    "pt": "Tem uma pizzaria nova perto da ponte. Minha colega adora.",
+    "sw_en": "There’s a new pizza {place|restaurant|spot} near the bridge. My coworker loves it.",
+    "sw_pt": "Tem {uma pizzaria nova|um restaurante de pizza novo|um lugar de pizza novo} perto da ponte. Minha colega adora."
+   },
+   {
+    "en": "Pizza sounds good! Should we book a table ahead?",
+    "pt": "Pizza parece ótimo! Devemos reservar uma mesa antes?",
+    "sw_en": "Pizza sounds good! Should we book a {table|seat|spot} ahead?",
+    "sw_pt": "Pizza parece ótimo! Devemos reservar {uma mesa|um lugar|uma vaga} antes?"
+   },
+   {
+    "en": "I’d book a table for Saturday night. Six-thirty gives us time.",
+    "pt": "Eu reservaria uma mesa para sábado à noite. Seis e meia nos dá tempo.",
+    "sw_en": "I’d book a table for Saturday night. Six-{thirty|fifteen|forty-five} gives us time.",
+    "sw_pt": "Eu reservaria uma mesa para sábado à noite. Seis e {meia|quinze|quarenta e cinco} nos dá tempo."
+   },
+   {
+    "en": "Great plan! I’ll call them now. See you Saturday, and don’t be late!",
+    "pt": "Ótimo plano! Vou ligar agora. Até sábado, e não se atrase!",
+    "sw_en": "Great plan! I’ll call them now. See you Saturday, and don’t be {late|lost|shy}!",
+    "sw_pt": "Ótimo plano! Vou ligar agora. Até sábado, e não {se atrase|se perca|fique tímida}!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I was free last weekend.",
+     "pt": "Eu estava livre no fim de semana passado.",
+     "fb": "Passado; a pergunta é sobre quando ela está livre agora."
+    },
+    {
+     "en": "Yes, I’m free, thank you. Goodbye.",
+     "pt": "Sim, estou livre, obrigada. Tchau.",
+     "fb": "Não diz quando; a pergunta é “quando”."
+    }
+   ],
+   [
+    {
+     "en": "No, four is Saturday.",
+     "pt": "Não, quatro é sábado.",
+     "fb": "Frase sem sentido: mistura hora e dia."
+    },
+    {
+     "en": "I met you at four yesterday.",
+     "pt": "Encontrei você às quatro ontem.",
+     "fb": "Passado; a pergunta é sobre o próximo encontro."
+    }
+   ],
+   [
+    {
+     "en": "At the bookstore, yesterday.",
+     "pt": "Na livraria, ontem.",
+     "fb": "Tempo errado e não responde onde se encontrar."
+    },
+    {
+     "en": "I don’t know. I never go to bookstores.",
+     "pt": "Não sei. Eu nunca vou a livrarias.",
+     "fb": "Contradiz: foi ela quem sugeriu a livraria."
+    }
+   ],
+   [
+    {
+     "en": "I ate pizza yesterday, and it was good.",
+     "pt": "Comi pizza ontem e estava boa.",
+     "fb": "Passado e não responde o que quer comer hoje."
+    },
+    {
+     "en": "I feel like sleeping on the bridge.",
+     "pt": "Tenho vontade de dormir na ponte.",
+     "fb": "Resposta absurda para o contexto."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I like the clock.",
+     "pt": "Sim, eu gosto do relógio.",
+     "fb": "Fora de contexto: a pergunta é sobre reserva."
+    },
+    {
+     "en": "No, don’t call. We’ll never eat.",
+     "pt": "Não, não ligue. Nunca vamos comer.",
+     "fb": "Pessimismo sem sentido; não responde a pergunta com clareza."
+    }
+   ]
+  ],
+  "can": [
+   "How about Saturday, at the bookstore? I need a new novel.",
+   "Four works. I haven’t walked by the river in ages.",
+   "Let’s meet at the front, under the big clock."
+  ]
+ },
+ "2105": {
+  "lines": [
+   {
+    "en": "The prize is a free trip! What will you do if you win?",
+    "pt": "O prêmio é uma viagem grátis! O que você vai fazer se ganhar?",
+    "sw_en": "The prize is a free {trip|ticket|vacation}! What will you do if you win?",
+    "sw_pt": "O prêmio é {uma viagem|uma passagem|umas férias} grátis! O que você vai fazer se ganhar?"
+   },
+   {
+    "en": "If I win a trip, I’ll go to Italy.",
+    "pt": "Se eu ganhar a viagem, vou para a Itália.",
+    "sw_en": "If I win a trip, I’ll go to {Italy|Japan|Spain}.",
+    "sw_pt": "Se eu ganhar a viagem, vou para {a Itália|o Japão|a Espanha}."
+   },
+   {
+    "en": "Lucky you! I heard it snows in the north in winter.",
+    "pt": "Que sorte! Ouvi dizer que neva no norte no inverno.",
+    "sw_en": "Lucky you! I heard it snows in the {north|mountains|hills} in winter.",
+    "sw_pt": "Que sorte! Ouvi dizer que neva {no norte|nas montanhas|nas colinas} no inverno."
+   },
+   {
+    "en": "I’ll pack a warm coat. I only hate long flights.",
+    "pt": "Vou levar um casaco quente. Só odeio voos longos.",
+    "sw_en": "I’ll pack a warm {coat|scarf|jacket}. I only hate long flights.",
+    "sw_pt": "Vou levar {um casaco quente|um cachecol quente|uma jaqueta quente}. Só odeio voos longos."
+   },
+   {
+    "en": "Really? Are you afraid of flying, or is it the airport?",
+    "pt": "Sério? Você tem medo de voar, ou é o aeroporto?",
+    "sw_en": "Really? Are you afraid of flying, or is it the {airport|noise|wait}?",
+    "sw_pt": "Sério? Você tem medo de voar, ou é {o aeroporto|o barulho|a espera}?"
+   },
+   {
+    "en": "A bit. I once missed a flight, so I arrive three hours early.",
+    "pt": "Um pouco. Uma vez perdi um voo, então chego três horas antes.",
+    "sw_en": "A bit. I once missed a flight, so I arrive {three|two|four} hours early.",
+    "sw_pt": "Um pouco. Uma vez perdi um voo, então chego {três|duas|quatro} horas antes."
+   },
+   {
+    "en": "Smart! I once spent two hours looking for my hotel in Rome.",
+    "pt": "Esperta! Uma vez passei duas horas procurando meu hotel em Roma.",
+    "sw_en": "Smart! I once spent {two|three|four} hours looking for my hotel in Rome.",
+    "sw_pt": "Esperta! Uma vez passei {duas|três|quatro} horas procurando meu hotel em Roma."
+   },
+   {
+    "en": "Ha! I’d buy a paper map first. People are usually friendly, too.",
+    "pt": "Ha! Eu compraria um mapa de papel primeiro. As pessoas costumam ser simpáticas, também.",
+    "sw_en": "Ha! I’d buy a paper map first. People are usually {friendly|helpful|patient}, too.",
+    "sw_pt": "Ha! Eu compraria um mapa de papel primeiro. As pessoas costumam ser {simpáticas|prestativas|pacientes}, também."
+   },
+   {
+    "en": "Good idea. Who would you take with you? Your sister?",
+    "pt": "Boa ideia. Quem você levaria? Sua irmã?",
+    "sw_en": "Good idea. Who would you take with you? Your {sister|friend|mom}?",
+    "sw_pt": "Boa ideia. Quem você levaria? Sua {irmã|amiga|mãe}?"
+   },
+   {
+    "en": "My sister. She speaks a little Italian, and she loves museums.",
+    "pt": "Minha irmã. Ela fala um pouco de italiano e adora museus.",
+    "sw_en": "My sister. She speaks a little {Italian|French|Spanish}, and she loves museums.",
+    "sw_pt": "Minha irmã. Ela fala um pouco de {italiano|francês|espanhol} e adora museus."
+   },
+   {
+    "en": "Perfect team! The contest closes Friday, so send your entry tonight.",
+    "pt": "Time perfeito! O concurso termina na sexta, então mande a inscrição hoje à noite.",
+    "sw_en": "Perfect team! The contest closes {Friday|Sunday|Monday}, so send your entry tonight.",
+    "sw_pt": "Time perfeito! O concurso termina {na sexta|no domingo|na segunda}, então mande a inscrição hoje à noite."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I won a trip last year.",
+     "pt": "Ganhei uma viagem no ano passado.",
+     "fb": "Passado; a pergunta é hipotética sobre o futuro."
+    },
+    {
+     "en": "Yes, I will win, thank you.",
+     "pt": "Sim, eu vou ganhar, obrigada.",
+     "fb": "Responde sim a uma pergunta aberta e ignora “o que”."
+    }
+   ],
+   [
+    {
+     "en": "I’m going to Italy yesterday.",
+     "pt": "Estou indo à Itália ontem.",
+     "fb": "Mistura tempos verbais e não fala do clima."
+    },
+    {
+     "en": "No, Italy is a trip.",
+     "pt": "Não, a Itália é uma viagem.",
+     "fb": "Frase sem sentido e não responde sobre o clima."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I am.",
+     "pt": "Sim, eu sou.",
+     "fb": "A pergunta com “or” pede uma escolha."
+    },
+    {
+     "en": "I’ll buy a map.",
+     "pt": "Vou comprar um mapa.",
+     "fb": "Não responde ao medo de voar."
+    }
+   ],
+   [
+    {
+     "en": "I’m going to Rome yesterday.",
+     "pt": "Vou a Roma ontem.",
+     "fb": "Mistura futuro com “ontem”."
+    },
+    {
+     "en": "I don’t care about your hotel.",
+     "pt": "Não ligo para o seu hotel.",
+     "fb": "Resposta rude, sem reagir à história."
+    }
+   ],
+   [
+    {
+     "en": "I will go on Friday.",
+     "pt": "Vou na sexta.",
+     "fb": "Responde “quando”, mas a pergunta é “quem”."
+    },
+    {
+     "en": "Yes, with my sister.",
+     "pt": "Sim, com minha irmã.",
+     "fb": "A pergunta com “who” não se responde com sim."
+    }
+   ]
+  ],
+  "can": [
+   "If I win a trip, I’ll go to Italy.",
+   "I’ll pack a warm coat. I only hate long flights.",
+   "Ha! I’d buy a paper map first. People are usually friendly, too."
+  ]
+ },
+ "2116": {
+  "lines": [
+   {
+    "en": "Good morning! Welcome to the corner store. Can I help you?",
+    "pt": "Bom dia! Bem-vinda à loja da esquina. Posso ajudar?",
+    "sw_en": "Good morning! Welcome to the {corner|neighborhood|family} store. Can I help you?",
+    "sw_pt": "Bom dia! Bem-vinda à loja {da esquina|do bairro|da família}. Posso ajudar?"
+   },
+   {
+    "en": "Yes! I need batteries for my camera. Are batteries sold here?",
+    "pt": "Sim! Preciso de pilhas para a minha câmera. Vendem pilhas aqui?",
+    "sw_en": "Yes! I need batteries for my {camera|remote|flashlight}. Are batteries sold here?",
+    "sw_pt": "Sim! Preciso de pilhas para {a minha câmera|o meu controle|a minha lanterna}. Vendem pilhas aqui?"
+   },
+   {
+    "en": "Sure, they’re sold near the door, next to the candy.",
+    "pt": "Claro, são vendidas perto da porta, ao lado dos doces.",
+    "sw_en": "Sure, they’re sold near the door, next to the {candy|magazines|gum}.",
+    "sw_pt": "Claro, são vendidas perto da porta, ao lado {dos doces|das revistas|dos chicletes}."
+   },
+   {
+    "en": "Great! Do you have a city map? My phone is almost dead.",
+    "pt": "Ótimo! Vocês têm um mapa da cidade? Meu celular está quase sem bateria.",
+    "sw_en": "Great! Do you have a city map? My phone is almost {dead|empty|broken}.",
+    "sw_pt": "Ótimo! Vocês têm um mapa da cidade? Meu celular está quase {sem bateria|descarregado|quebrado}."
+   },
+   {
+    "en": "Sorry, maps are not sold here anymore. Ask at the bookstore.",
+    "pt": "Sinto muito, mapas não são mais vendidos aqui. Pergunte na livraria.",
+    "sw_en": "Sorry, maps are not sold here anymore. Ask at the {bookstore|bank|post office}.",
+    "sw_pt": "Sinto muito, mapas não são mais vendidos aqui. Pergunte {na livraria|no banco|no correio}."
+   },
+   {
+    "en": "Where is it? I walked around this block twice.",
+    "pt": "Onde fica? Já andei duas vezes em volta deste quarteirão.",
+    "sw_en": "Where is it? I walked around this {block|street|square} twice.",
+    "sw_pt": "Onde fica? Já andei duas vezes em volta {deste quarteirão|desta rua|desta praça}."
+   },
+   {
+    "en": "It’s across the street, behind the blue door. It’s small.",
+    "pt": "Fica do outro lado da rua, atrás da porta azul. É pequena.",
+    "sw_en": "It’s across the street, behind the {blue|green|red} door. It’s small.",
+    "sw_pt": "Fica do outro lado da rua, atrás da porta {azul|verde|vermelha}. É pequena."
+   },
+   {
+    "en": "Thanks! I’d like a stamp, too. It’s my mother’s birthday.",
+    "pt": "Obrigada! Quero um selo também. É o aniversário da minha mãe.",
+    "sw_en": "Thanks! I’d like a stamp, too. It’s {my mother’s|my sister’s|my grandmother’s} birthday.",
+    "sw_pt": "Obrigada! Quero um selo também. É o aniversário {da minha mãe|da minha irmã|da minha avó}."
+   },
+   {
+    "en": "That’s six dollars total. Do you need a bag?",
+    "pt": "São seis dólares no total. Precisa de uma sacola?",
+    "sw_en": "That’s six dollars total. Do you need {a bag|a receipt|a pen}?",
+    "sw_pt": "São seis dólares no total. Precisa de {uma sacola|um recibo|uma caneta}?"
+   },
+   {
+    "en": "No bag, thanks. I’ll put everything in my backpack.",
+    "pt": "Sem sacola, obrigada. Vou colocar tudo na mochila.",
+    "sw_en": "No bag, thanks. I’ll put everything in my {backpack|purse|pocket}.",
+    "sw_pt": "Sem sacola, obrigada. Vou colocar tudo {na mochila|na bolsa|no bolso}."
+   },
+   {
+    "en": "Thank you! Enjoy your visit. Come back anytime!",
+    "pt": "Obrigada! Aproveite a visita. Volte sempre!",
+    "sw_en": "Thank you! Enjoy your {visit|trip|day}. Come back anytime!",
+    "sw_pt": "Obrigada! Aproveite {a visita|a viagem|o dia}. Volte sempre!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I found it yesterday.",
+     "pt": "Encontrei ontem.",
+     "fb": "Passado; a pergunta é sobre agora."
+    },
+    {
+     "en": "Yes, I am sold here.",
+     "pt": "Sim, eu sou vendida aqui.",
+     "fb": "Uso errado da voz passiva: pessoas não são vendidas."
+    }
+   ],
+   [
+    {
+     "en": "I sold my camera yesterday.",
+     "pt": "Vendi minha câmera ontem.",
+     "fb": "Passado e não reage à informação sobre as pilhas."
+    },
+    {
+     "en": "No, thank you. They’re too small.",
+     "pt": "Não, obrigada. São pequenas demais.",
+     "fb": "Contradiz: a loja tem todos os tamanhos."
+    }
+   ],
+   [
+    {
+     "en": "Yes, maps are sold here.",
+     "pt": "Sim, mapas são vendidos aqui.",
+     "fb": "Contradiz o que o vendedor disse."
+    },
+    {
+     "en": "I don’t like phones.",
+     "pt": "Não gosto de celulares.",
+     "fb": "Não reage à informação e muda de assunto."
+    }
+   ],
+   [
+    {
+     "en": "I walked there tomorrow.",
+     "pt": "Fui andando lá amanhã.",
+     "fb": "Tempo verbal impossível."
+    },
+    {
+     "en": "The bank is sold near the door.",
+     "pt": "O banco é vendido perto da porta.",
+     "fb": "Passiva sem sentido: banco não se vende."
+    }
+   ],
+   [
+    {
+     "en": "Yes, the stamp is six hours.",
+     "pt": "Sim, o selo é seis horas.",
+     "fb": "Confunde preço com tempo."
+    },
+    {
+     "en": "I’d like a map, please.",
+     "pt": "Quero um mapa, por favor.",
+     "fb": "Já foi dito que não vendem mapas."
+    }
+   ]
+  ],
+  "can": [
+   "Yes! I need batteries for my camera. Are batteries sold here?",
+   "Great! Do you have a city map? My phone is almost dead.",
+   "No bag, thanks. I’ll put everything in my backpack."
+  ]
+ },
+ "2132": {
+  "lines": [
+   {
+    "en": "Good afternoon, front desk. This is Amy. How can I help?",
+    "pt": "Boa tarde, recepção. Aqui é a Amy. Como posso ajudar?",
+    "sw_en": "Good {afternoon|morning|evening}, front desk. This is Amy. How can I help?",
+    "sw_pt": "{Boa tarde|Bom dia|Boa noite}, recepção. Aqui é a Amy. Como posso ajudar?"
+   },
+   {
+    "en": "Hi, this is Mia. Is Sara there? I’ve called since this morning.",
+    "pt": "Oi, aqui é a Mia. A Sara está? Ligo desde esta manhã.",
+    "sw_en": "Hi, this is Mia. Is Sara there? I’ve called since {this morning|yesterday|Monday}.",
+    "sw_pt": "Oi, aqui é a Mia. A Sara está? Ligo desde {esta manhã|ontem|segunda}."
+   },
+   {
+    "en": "She’s in a meeting until three. Can I take a message?",
+    "pt": "Ela está em reunião até as três. Posso anotar um recado?",
+    "sw_en": "She’s in a meeting until {three|four|five}. Can I take a message?",
+    "sw_pt": "Ela está em reunião até {as três|as quatro|as cinco}. Posso anotar um recado?"
+   },
+   {
+    "en": "Yes. Can I leave a message? It’s about the sales report.",
+    "pt": "Sim. Posso deixar um recado? É sobre o relatório de vendas.",
+    "sw_en": "Yes. Can I leave a message? It’s about the {sales|budget|travel} report.",
+    "sw_pt": "Sim. Posso deixar um recado? É sobre o relatório de {vendas|orçamento|viagem}."
+   },
+   {
+    "en": "Sure. What’s your phone number, and where are you calling from?",
+    "pt": "Claro. Qual é o seu telefone, e de onde você liga?",
+    "sw_en": "Sure. What’s your {phone number|cell number|office number}, and where are you calling from?",
+    "sw_pt": "Claro. Qual é o seu {telefone|celular|número do escritório}, e de onde você liga?"
+   },
+   {
+    "en": "It’s 555-0142. Please ask her to call me back before five.",
+    "pt": "É 555-0142. Peça a ela que me ligue de volta antes das cinco.",
+    "sw_en": "It’s 555-0142. Please ask her to call me back before {five|four|noon}.",
+    "sw_pt": "É 555-0142. Peça a ela que me ligue de volta antes {das cinco|das quatro|do meio-dia}."
+   },
+   {
+    "en": "Got it. Is it urgent? I can send her a text.",
+    "pt": "Entendi. É urgente? Posso mandar uma mensagem para ela.",
+    "sw_en": "Got it. Is it urgent? I can send her a {text|note|message}.",
+    "sw_pt": "Entendi. É urgente? Posso mandar {uma mensagem|um bilhete|um recado} para ela."
+   },
+   {
+    "en": "Not an emergency. She just needs to check one number.",
+    "pt": "Não é emergência. Ela só precisa conferir um número.",
+    "sw_en": "Not an emergency. She just needs to check one {number|page|chart}.",
+    "sw_pt": "Não é emergência. Ela só precisa conferir {um número|uma página|um gráfico}."
+   },
+   {
+    "en": "Understood. I’ll give her the message as soon as she comes out.",
+    "pt": "Entendido. Passo o recado assim que ela sair.",
+    "sw_en": "Understood. I’ll give her the message as soon as she {comes out|is free|gets back}.",
+    "sw_pt": "Entendido. Passo o recado assim que ela {sair|estiver livre|voltar}."
+   },
+   {
+    "en": "Thanks so much for your help. Have a good afternoon!",
+    "pt": "Muito obrigada pela sua ajuda. Tenha uma boa tarde!",
+    "sw_en": "Thanks so much for your {help|time|patience}. Have a good afternoon!",
+    "sw_pt": "Muito obrigada pela sua {ajuda|atenção|paciência}. Tenha uma boa tarde!"
+   },
+   {
+    "en": "You’re welcome! I’ll make sure she gets the message.",
+    "pt": "De nada! Vou garantir que ela receba o recado.",
+    "sw_en": "You’re welcome! I’ll make sure she gets the {message|note|report}.",
+    "sw_pt": "De nada! Vou garantir que ela receba {o recado|o bilhete|o relatório}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I’m fine, thank you. And you?",
+     "pt": "Estou bem, obrigada. E você?",
+     "fb": "Responde como num cumprimento social, mas a Amy perguntou como ajudar."
+    },
+    {
+     "en": "I called her yesterday.",
+     "pt": "Liguei para ela ontem.",
+     "fb": "Não pede a Sara nem diz o motivo da ligação."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I’m in a meeting too.",
+     "pt": "Sim, também estou em reunião.",
+     "fb": "Não faz sentido: ela está ligando, não está em reunião."
+    },
+    {
+     "en": "No, she isn’t there. Goodbye.",
+     "pt": "Não, ela não está aí. Tchau.",
+     "fb": "Repete a informação e encerra sem deixar recado."
+    }
+   ],
+   [
+    {
+     "en": "It’s a report about sales.",
+     "pt": "É um relatório sobre vendas.",
+     "fb": "Repete o assunto; a pergunta é sobre telefone e origem da ligação."
+    },
+    {
+     "en": "I’m calling from yesterday.",
+     "pt": "Estou ligando de ontem.",
+     "fb": "Resposta sem sentido para “de onde”."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t have a phone.",
+     "pt": "Não, não tenho telefone.",
+     "fb": "Contradiz o fato de que ela acabou de dar o número."
+    },
+    {
+     "en": "I will call her last week.",
+     "pt": "Vou ligar para ela semana passada.",
+     "fb": "Mistura futuro com passado."
+    }
+   ],
+   [
+    {
+     "en": "Please call me last week.",
+     "pt": "Por favor, ligue para mim semana passada.",
+     "fb": "Pede uma ligação no passado."
+    },
+    {
+     "en": "I will write it down on the phone.",
+     "pt": "Vou anotar no telefone.",
+     "fb": "É a Amy que anota o recado, não a Mia."
+    }
+   ]
+  ],
+  "can": [
+   "Hi, this is Mia. Is Sara there? I’ve called since this morning.",
+   "Yes. Can I leave a message? It’s about the sales report.",
+   "It’s 555-0142. Please ask her to call me back before five."
+  ]
+ },
+ "2134": {
+  "lines": [
+   {
+    "en": "What are you looking at, Mia? You’re glued to your phone.",
+    "pt": "O que você está olhando, Mia? Você está grudada no celular.",
+    "sw_en": "What are you looking at, Mia? You’re glued to your {phone|screen|tablet}.",
+    "sw_pt": "O que você está olhando, Mia? Você está grudada no {celular|na tela|no tablet}."
+   },
+   {
+    "en": "Sorry! I posted a photo today, and people love the sunset.",
+    "pt": "Desculpe! Postei uma foto hoje, e as pessoas adoram o pôr do sol.",
+    "sw_en": "Sorry! I posted a photo today, and people love the {sunset|beach|dog}.",
+    "sw_pt": "Desculpe! Postei uma foto hoje, e as pessoas adoram {o pôr do sol|a praia|o cachorro}."
+   },
+   {
+    "en": "Wow, gorgeous! How many likes did you get? Mine never pass twenty.",
+    "pt": "Nossa, lindo! Quantas curtidas você teve? As minhas nunca passam de vinte.",
+    "sw_en": "Wow, gorgeous! How many likes did you get? Mine never pass {twenty|ten|thirty}.",
+    "sw_pt": "Nossa, lindo! Quantas curtidas você teve? As minhas nunca passam de {vinte|dez|trinta}."
+   },
+   {
+    "en": "Almost two hundred! A famous travel account shared it on its profile.",
+    "pt": "Quase duzentas! Uma conta de viagens famosa compartilhou no perfil deles.",
+    "sw_en": "Almost two hundred! A famous travel account shared it on its {profile|story|feed}.",
+    "sw_pt": "Quase duzentas! Uma conta de viagens famosa compartilhou no {perfil|story|feed} deles."
+   },
+   {
+    "en": "No way! Do you follow them, or did they find you by accident?",
+    "pt": "Não acredito! Você segue eles, ou eles acharam você por acaso?",
+    "sw_en": "No way! Do you follow them, or did they find you by {accident|chance|luck}?",
+    "sw_pt": "Não acredito! Você segue eles, ou eles acharam você por {acaso|sorte|coincidência}?"
+   },
+   {
+    "en": "I follow them. Now I have fifty new followers!",
+    "pt": "Eu sigo eles. Agora tenho cinquenta novos seguidores!",
+    "sw_en": "I follow them. Now I have fifty new {followers|messages|requests}!",
+    "sw_pt": "Eu sigo eles. Agora tenho cinquenta {novos seguidores|mensagens novas|solicitações novas}!"
+   },
+   {
+    "en": "Congrats! I shared your video last week, the one with your dog.",
+    "pt": "Parabéns! Compartilhei seu vídeo semana passada, aquele com o seu cachorro.",
+    "sw_en": "Congrats! I shared your video last week, the one with {your dog|your brother|your cat}.",
+    "sw_pt": "Parabéns! Compartilhei seu vídeo semana passada, aquele com {o seu cachorro|o seu irmão|o seu gato}."
+   },
+   {
+    "en": "Thanks, that’s sweet! I’m going to post another photo tonight.",
+    "pt": "Obrigada, que fofo! Vou postar outra foto hoje à noite.",
+    "sw_en": "Thanks, that’s sweet! I’m going to post another {photo|video|story} tonight.",
+    "sw_pt": "Obrigada, que fofo! Vou postar {outra foto|outro vídeo|outro story} hoje à noite."
+   },
+   {
+    "en": "I spend too much time online. Last night I scrolled for two hours.",
+    "pt": "Passo tempo demais on-line. Ontem à noite rolei o feed por duas horas.",
+    "sw_en": "I spend too much time online. Last night I scrolled for {two|three|four} hours.",
+    "sw_pt": "Passo tempo demais on-line. Ontem à noite rolei o feed por {duas|três|quatro} horas."
+   },
+   {
+    "en": "Same! My mom says I should put my phone down at dinner.",
+    "pt": "Eu também! Minha mãe diz que eu deveria deixar o celular de lado no jantar.",
+    "sw_en": "Same! My mom says I should put my {phone|laptop|tablet} down at dinner.",
+    "sw_pt": "Eu também! Minha mãe diz que eu deveria deixar {o celular|o notebook|o tablet} de lado no jantar."
+   },
+   {
+    "en": "Phones away, then. But first, tag me so I get a like!",
+    "pt": "Celulares guardados, então. Mas antes, me marque para eu ganhar uma curtida!",
+    "sw_en": "Phones away, then. But first, tag me so I get a {like|comment|follower}!",
+    "sw_pt": "Celulares guardados, então. Mas antes, me marque para eu ganhar {uma curtida|um comentário|um seguidor}!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I’m going to post it yesterday.",
+     "pt": "Vou postar ontem.",
+     "fb": "Mistura futuro com “ontem”."
+    },
+    {
+     "en": "Yes, I have a phone.",
+     "pt": "Sim, eu tenho um celular.",
+     "fb": "Óbvio e não explica o que ela está olhando."
+    }
+   ],
+   [
+    {
+     "en": "I posted it today.",
+     "pt": "Postei hoje.",
+     "fb": "Repete a informação sem dizer quantas curtidas."
+    },
+    {
+     "en": "Yes, I did. It’s a sunset.",
+     "pt": "Sim, eu fiz. É um pôr do sol.",
+     "fb": "“Quantas” não se responde com sim."
+    }
+   ],
+   [
+    {
+     "en": "Yes, they follow me yesterday.",
+     "pt": "Sim, eles me seguem ontem.",
+     "fb": "Tempo errado e não responde se ela os segue."
+    },
+    {
+     "en": "I like sunsets.",
+     "pt": "Eu gosto de pôres do sol.",
+     "fb": "Não responde à pergunta."
+    }
+   ],
+   [
+    {
+     "en": "I don’t post videos. I have no dog.",
+     "pt": "Eu não posto vídeos. Não tenho cachorro.",
+     "fb": "Contradiz o que a amiga disse e a própria Mia sobre o cachorro."
+    },
+    {
+     "en": "Please unshare it now. Goodbye.",
+     "pt": "Desfaça o compartilhamento agora. Tchau.",
+     "fb": "Reação exagerada e rude a um elogio."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I like fifty followers.",
+     "pt": "Sim, gosto de cinquenta seguidores.",
+     "fb": "Resposta sem sentido para o comentário sobre tempo online."
+    },
+    {
+     "en": "I scroll tomorrow for two hours.",
+     "pt": "Rolo o feed amanhã por duas horas.",
+     "fb": "Tempo verbal errado para o contexto."
+    }
+   ]
+  ],
+  "can": [
+   "Sorry! I posted a photo today, and people love the sunset.",
+   "Almost two hundred! A famous travel account shared it on its profile.",
+   "Thanks, that’s sweet! I’m going to post another photo tonight."
+  ]
+ },
+ "2135": {
+  "lines": [
+   {
+    "en": "What are you buying on this website? That’s a lot of tabs!",
+    "pt": "O que você está comprando neste site? São abas demais!",
+    "sw_en": "What are you buying on this website? That’s a lot of {tabs|windows|photos}!",
+    "sw_pt": "O que você está comprando neste site? São {abas|janelas|fotos} demais!"
+   },
+   {
+    "en": "I’m buying a red coat. My old one is falling apart.",
+    "pt": "Estou comprando um casaco vermelho. O meu velho está se desfazendo.",
+    "sw_en": "I’m buying a {red|black|green} coat. My old one is falling apart.",
+    "sw_pt": "Estou comprando um casaco {vermelho|preto|verde}. O meu velho está se desfazendo."
+   },
+   {
+    "en": "Bold choice! Did you check the reviews? Pictures can be misleading.",
+    "pt": "Escolha ousada! Você viu as avaliações? As imagens podem enganar.",
+    "sw_en": "Bold choice! Did you check the {reviews|ratings|photos}? Pictures can be misleading.",
+    "sw_pt": "Escolha ousada! Você viu {as avaliações|as notas|as fotos}? As imagens podem enganar."
+   },
+   {
+    "en": "Yes, fifty reviews. It runs small, so I’ll size up.",
+    "pt": "Vi, cinquenta avaliações. Ele veste pequeno, então vou subir um tamanho.",
+    "sw_en": "Yes, {fifty|forty|sixty} reviews. It runs small, so I’ll size up.",
+    "sw_pt": "Vi, {cinquenta|quarenta|sessenta} avaliações. Ele veste pequeno, então vou subir um tamanho."
+   },
+   {
+    "en": "What size do you need? I’m always between M and L.",
+    "pt": "Que tamanho você precisa? Eu sempre fico entre M e G.",
+    "sw_en": "What size do you need? I’m always between {M and L|S and M|L and XL}.",
+    "sw_pt": "Que tamanho você precisa? Eu sempre fico entre {M e G|P e M|G e GG}."
+   },
+   {
+    "en": "I click add to cart. Now it asks for my address.",
+    "pt": "Clico em adicionar ao carrinho. Agora pede meu endereço.",
+    "sw_en": "I click add to cart. Now it asks for my {address|phone number|zip code}.",
+    "sw_pt": "Clico em adicionar ao carrinho. Agora pede {meu endereço|meu telefone|meu CEP}."
+   },
+   {
+    "en": "Before you pay, is delivery free? Some stores charge ten dollars.",
+    "pt": "Antes de pagar, a entrega é grátis? Algumas lojas cobram dez dólares.",
+    "sw_en": "Before you pay, is delivery free? Some stores charge {ten|twelve|fifteen} dollars.",
+    "sw_pt": "Antes de pagar, a entrega é grátis? Algumas lojas cobram {dez|doze|quinze} dólares."
+   },
+   {
+    "en": "Yes, free over fifty dollars. It says it takes five business days.",
+    "pt": "Sim, grátis acima de cinquenta dólares. Diz que leva cinco dias úteis.",
+    "sw_en": "Yes, free over fifty dollars. It says it takes {five|seven|ten} business days.",
+    "sw_pt": "Sim, grátis acima de cinquenta dólares. Diz que leva {cinco|sete|dez} dias úteis."
+   },
+   {
+    "en": "Good. Use a credit card, it’s safer if the order goes wrong.",
+    "pt": "Bom. Use cartão de crédito, é mais seguro se o pedido der errado.",
+    "sw_en": "Good. Use a credit card, it’s safer if the {order|payment|delivery} goes wrong.",
+    "sw_pt": "Bom. Use cartão de crédito, é mais seguro se {o pedido|o pagamento|a entrega} der errado."
+   },
+   {
+    "en": "Good tip. I’m going to pay now. Wow, the page loaded slowly!",
+    "pt": "Boa dica. Vou pagar agora. Nossa, a página demorou para carregar!",
+    "sw_en": "Good tip. I’m going to pay now. Wow, the page {loaded slowly|froze|crashed}!",
+    "sw_pt": "Boa dica. Vou pagar agora. Nossa, a página {demorou para carregar|travou|caiu}!"
+   },
+   {
+    "en": "Congrats! Send me a picture when it arrives.",
+    "pt": "Parabéns! Me mande uma foto quando chegar.",
+    "sw_en": "Congrats! Send me {a picture|a message|a video} when it arrives.",
+    "sw_pt": "Parabéns! Me mande {uma foto|uma mensagem|um vídeo} quando chegar."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I bought it last year.",
+     "pt": "Comprei no ano passado.",
+     "fb": "Passado; a pergunta é sobre o que ela está comprando agora."
+    },
+    {
+     "en": "Yes, I am a coat.",
+     "pt": "Sim, eu sou um casaco.",
+     "fb": "Frase sem sentido."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t like red.",
+     "pt": "Não, eu não gosto de vermelho.",
+     "fb": "Contradiz a escolha dela e não responde sobre avaliações."
+    },
+    {
+     "en": "I will check them yesterday.",
+     "pt": "Vou conferir ontem.",
+     "fb": "Mistura futuro com “ontem”."
+    }
+   ],
+   [
+    {
+     "en": "I need red, please.",
+     "pt": "Preciso de vermelho, por favor.",
+     "fb": "A pergunta é o tamanho, não a cor."
+    },
+    {
+     "en": "It costs sixty-eight dollars.",
+     "pt": "Custa sessenta e oito dólares.",
+     "fb": "Fala de preço, mas a pergunta é o tamanho."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I’m paying in July.",
+     "pt": "Sim, estou pagando em julho.",
+     "fb": "Não responde se a entrega é grátis."
+    },
+    {
+     "en": "I don’t know. I never pay.",
+     "pt": "Não sei. Eu nunca pago.",
+     "fb": "Contradiz o fato de que ela está comprando."
+    }
+   ],
+   [
+    {
+     "en": "No, I hate cards. I’ll send cash by mail.",
+     "pt": "Não, odeio cartões. Vou mandar dinheiro pelo correio.",
+     "fb": "Absurdo para uma compra on-line."
+    },
+    {
+     "en": "The order is confirmed yesterday.",
+     "pt": "O pedido está confirmado ontem.",
+     "fb": "Mistura tempos e ignora o conselho."
+    }
+   ]
+  ],
+  "can": [
+   "I’m buying a red coat. My old one is falling apart.",
+   "Yes, fifty reviews. It runs small, so I’ll size up.",
+   "Good tip. I’m going to pay now. Wow, the page loaded slowly!"
+  ]
+ },
+ "2139": {
+  "lines": [
+   {
+    "en": "Good afternoon! Welcome back to the store. Can I help you?",
+    "pt": "Boa tarde! Bem-vinda de volta à loja. Posso ajudar?",
+    "sw_en": "Good afternoon! Welcome back to the {store|shop|mall}. Can I help you?",
+    "sw_pt": "Boa tarde! Bem-vinda de volta à {loja|lojinha|galeria}. Posso ajudar?"
+   },
+   {
+    "en": "I bought these headphones yesterday, and the left side is broken.",
+    "pt": "Comprei estes fones ontem, e o lado esquerdo está quebrado.",
+    "sw_en": "I bought these headphones yesterday, and the {left|right|back} side is broken.",
+    "sw_pt": "Comprei estes fones ontem, e o lado {esquerdo|direito|de trás} está quebrado."
+   },
+   {
+    "en": "I’m sorry! Did they ever work? Sometimes it’s just the cable.",
+    "pt": "Sinto muito! Eles chegaram a funcionar? Às vezes é só o cabo.",
+    "sw_en": "I’m sorry! Did they ever work? Sometimes it’s just the {cable|battery|charger}.",
+    "sw_pt": "Sinto muito! Eles chegaram a funcionar? Às vezes é só {o cabo|a bateria|o carregador}."
+   },
+   {
+    "en": "For ten minutes, then the sound stopped. I tried a different cable.",
+    "pt": "Por dez minutos, depois o som parou. Tentei outro cabo.",
+    "sw_en": "For ten minutes, then the sound stopped. I tried a different {cable|phone|app}.",
+    "sw_pt": "Por dez minutos, depois o som parou. Tentei {outro cabo|outro celular|outro aplicativo}."
+   },
+   {
+    "en": "That sounds like a defect. Do you have your receipt?",
+    "pt": "Parece um defeito. Você tem o recibo?",
+    "sw_en": "That sounds like a defect. Do you have {your receipt|your order number|proof of purchase}?",
+    "sw_pt": "Parece um defeito. Você tem {o recibo|o número do pedido|o comprovante de compra}?"
+   },
+   {
+    "en": "Yes, here it is. I paid forty dollars. I’d like a refund, please.",
+    "pt": "Sim, aqui está. Paguei quarenta dólares. Gostaria de um reembolso, por favor.",
+    "sw_en": "Yes, here it is. I paid {forty|thirty|fifty} dollars. I’d like a refund, please.",
+    "sw_pt": "Sim, aqui está. Paguei {quarenta|trinta|cinquenta} dólares. Gostaria de um reembolso, por favor."
+   },
+   {
+    "en": "Sure. Refund or exchange? We have the same model in stock.",
+    "pt": "Claro. Reembolso ou troca? Temos o mesmo modelo em estoque.",
+    "sw_en": "Sure. Refund or exchange? We have the same model {in stock|in black|in white}.",
+    "sw_pt": "Claro. Reembolso ou troca? Temos o mesmo modelo {em estoque|em preto|em branco}."
+   },
+   {
+    "en": "A refund. I’d rather try a different brand. How long will it take?",
+    "pt": "Reembolso. Prefiro experimentar outra marca. Quanto tempo leva?",
+    "sw_en": "A refund. I’d rather try a different {brand|model|store}. How long will it take?",
+    "sw_pt": "Reembolso. Prefiro experimentar {outra marca|outro modelo|outra loja}. Quanto tempo leva?"
+   },
+   {
+    "en": "Usually three to five business days for cards.",
+    "pt": "Normalmente de três a cinco dias úteis para cartões.",
+    "sw_en": "Usually three to {five|seven|ten} business days for cards.",
+    "sw_pt": "Normalmente de três a {cinco|sete|dez} dias úteis para cartões."
+   },
+   {
+    "en": "Card is fine. Could you email me the confirmation?",
+    "pt": "Cartão está bom. Você pode me enviar a confirmação por e-mail?",
+    "sw_en": "Card is fine. Could you email me the {confirmation|receipt|details}?",
+    "sw_pt": "Cartão está bom. Você pode me enviar {a confirmação|o recibo|os detalhes} por e-mail?"
+   },
+   {
+    "en": "Absolutely. Thanks for your patience, and sorry for the trouble.",
+    "pt": "Com certeza. Obrigada pela paciência, e desculpe pelo transtorno.",
+    "sw_en": "Absolutely. Thanks for your patience, and sorry for the {trouble|problem|inconvenience}.",
+    "sw_pt": "Com certeza. Obrigada pela paciência, e desculpe pelo {transtorno|problema|incômodo}."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I’m going to buy a refund tomorrow.",
+     "pt": "Vou comprar um reembolso amanhã.",
+     "fb": "Reembolso não se compra, e “amanhã” não combina."
+    },
+    {
+     "en": "Yes, I’m very happy with them.",
+     "pt": "Sim, estou muito feliz com eles.",
+     "fb": "Contradiz o problema que ela veio resolver."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I bought them yesterday.",
+     "pt": "Sim, comprei ontem.",
+     "fb": "Repete a compra; a pergunta é se chegaram a funcionar."
+    },
+    {
+     "en": "They are blue and very big.",
+     "pt": "Eles são azuis e muito grandes.",
+     "fb": "Descreve os fones, mas não responde."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t like receipts.",
+     "pt": "Não, eu não gosto de recibos.",
+     "fb": "Não colabora; o recibo é necessário."
+    },
+    {
+     "en": "Yes, I paid with my receipt tomorrow.",
+     "pt": "Sim, paguei com meu recibo amanhã.",
+     "fb": "Frase sem sentido e tempo errado."
+    }
+   ],
+   [
+    {
+     "en": "Yes, please.",
+     "pt": "Sim, por favor.",
+     "fb": "A pergunta com “or” pede escolha."
+    },
+    {
+     "en": "I want the same headphones again, broken.",
+     "pt": "Quero os mesmos fones de novo, quebrados.",
+     "fb": "Contradiz o pedido de reembolso."
+    }
+   ],
+   [
+    {
+     "en": "I’ll wait here five days. No problem.",
+     "pt": "Vou esperar aqui cinco dias. Sem problema.",
+     "fb": "Absurdo: o prazo é para o reembolso no cartão."
+    },
+    {
+     "en": "Yes, I paid forty dollars.",
+     "pt": "Sim, paguei quarenta dólares.",
+     "fb": "Já disse isso; não reage ao prazo do reembolso."
+    }
+   ]
+  ],
+  "can": [
+   "I bought these headphones yesterday, and the left side is broken.",
+   "Yes, here it is. I paid forty dollars. I’d like a refund, please.",
+   "A refund. I’d rather try a different brand. How long will it take?"
+  ]
+ },
+ "2142": {
+  "lines": [
+   {
+    "en": "I haven’t seen you here before. Are you new at the gym?",
+    "pt": "Nunca vi você aqui. É nova na academia?",
+    "sw_en": "I haven’t seen you here before. Are you new at the {gym|club|class}?",
+    "sw_pt": "Nunca vi você aqui. É nova {na academia|no clube|na aula}?"
+   },
+   {
+    "en": "Yes, I joined last month. How often do you come here?",
+    "pt": "Sim, entrei no mês passado. Com que frequência você vem aqui?",
+    "sw_en": "Yes, I joined {last month|last week|in May}. How often do you come here?",
+    "sw_pt": "Sim, entrei {no mês passado|na semana passada|em maio}. Com que frequência você vem aqui?"
+   },
+   {
+    "en": "Almost every day. I come six days a week. It’s my routine.",
+    "pt": "Quase todo dia. Venho seis dias por semana. É minha rotina.",
+    "sw_en": "Almost every day. I come {six|five|four} days a week. It’s my routine.",
+    "sw_pt": "Quase todo dia. Venho {seis|cinco|quatro} dias por semana. É minha rotina."
+   },
+   {
+    "en": "Wow, impressive! I usually come three times a week.",
+    "pt": "Uau, impressionante! Eu costumo vir três vezes por semana.",
+    "sw_en": "Wow, impressive! I usually come {three|two|four} times a week.",
+    "sw_pt": "Uau, impressionante! Eu costumo vir {três|duas|quatro} vezes por semana."
+   },
+   {
+    "en": "Do you use weights, or just cardio? Beginners often skip them.",
+    "pt": "Você usa pesos, ou só cardio? Iniciantes costumam pular.",
+    "sw_en": "Do you use weights, or just {cardio|stretching|yoga}? Beginners often skip them.",
+    "sw_pt": "Você usa pesos, ou só {cardio|alongamento|ioga}? Iniciantes costumam pular."
+   },
+   {
+    "en": "I’m starting with weights. I do twenty minutes after cardio.",
+    "pt": "Estou começando com pesos. Faço vinte minutos depois do cardio.",
+    "sw_en": "I’m starting with weights. I do {twenty|fifteen|thirty} minutes after cardio.",
+    "sw_pt": "Estou começando com pesos. Faço {vinte|quinze|trinta} minutos depois do cardio."
+   },
+   {
+    "en": "Good pace. Stretch afterward, or your legs will hurt.",
+    "pt": "Bom ritmo. Alongue depois, senão suas pernas vão doer.",
+    "sw_en": "Good pace. Stretch afterward, or {your legs|your back|your shoulders} will hurt.",
+    "sw_pt": "Bom ritmo. Alongue depois, senão {suas pernas vão|suas costas vão|seus ombros vão} doer."
+   },
+   {
+    "en": "Last week I was so sore I couldn’t climb the stairs.",
+    "pt": "Semana passada fiquei tão dolorida que não conseguia subir a escada.",
+    "sw_en": "Last week I was so sore I couldn’t {climb the stairs|sit down|walk}.",
+    "sw_pt": "Semana passada fiquei tão dolorida que não conseguia {subir a escada|sentar|andar}."
+   },
+   {
+    "en": "Bring a big water bottle, or you’ll get dizzy.",
+    "pt": "Traga uma garrafa grande de água, senão você vai ficar tonta.",
+    "sw_en": "Bring a big water bottle, or you’ll get {dizzy|tired|cranky}.",
+    "sw_pt": "Traga uma garrafa grande de água, senão você vai ficar {tonta|cansada|irritada}."
+   },
+   {
+    "en": "I always bring one, but I left it in the car.",
+    "pt": "Eu sempre trago uma, mas deixei no carro.",
+    "sw_en": "I always bring one, but I left it {in the car|at home|in my bag}.",
+    "sw_pt": "Eu sempre trago uma, mas deixei {no carro|em casa|na bolsa}."
+   },
+   {
+    "en": "There’s a fountain behind the lockers. Come on, I’ll show you around.",
+    "pt": "Tem um bebedouro atrás dos armários. Vamos, mostro tudo por aqui para você.",
+    "sw_en": "There’s a fountain behind the lockers. Come on, I’ll show you {around|the machines|the studio}.",
+    "sw_pt": "Tem um bebedouro atrás dos armários. Vamos, mostro {tudo por aqui|as máquinas|o estúdio} para você."
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "I was new last year.",
+     "pt": "Eu era nova no ano passado.",
+     "fb": "Passado; a pergunta é sobre agora."
+    },
+    {
+     "en": "I’m a gym, thank you.",
+     "pt": "Eu sou uma academia, obrigada.",
+     "fb": "Frase sem sentido."
+    }
+   ],
+   [
+    {
+     "en": "I never come. I’m lazy.",
+     "pt": "Eu nunca venho. Sou preguiçosa.",
+     "fb": "Contradiz o que ela mesma disse (vem três vezes por semana)."
+    },
+    {
+     "en": "Yes, I am very impressive.",
+     "pt": "Sim, eu sou muito impressionante.",
+     "fb": "Ela se elogia em vez de reagir ao comentário do outro."
+    }
+   ],
+   [
+    {
+     "en": "I never run on the treadmill.",
+     "pt": "Eu nunca corro na esteira.",
+     "fb": "Contradiz a fala anterior, em que disse que começa na esteira."
+    },
+    {
+     "en": "Yes, I do. Yesterday I will use weights.",
+     "pt": "Sim. Ontem vou levantar pesos.",
+     "fb": "Tempo verbal impossível."
+    }
+   ],
+   [
+    {
+     "en": "No, I don’t stretch. My legs are strong.",
+     "pt": "Não, eu não alongo. Minhas pernas são fortes.",
+     "fb": "Ignora o conselho do colega."
+    },
+    {
+     "en": "I stretched tomorrow.",
+     "pt": "Eu alonguei amanhã.",
+     "fb": "Mistura passado com “amanhã”."
+    }
+   ],
+   [
+    {
+     "en": "No, I drank water yesterday.",
+     "pt": "Não, bebi água ontem.",
+     "fb": "Passado; a conversa é sobre hoje."
+    },
+    {
+     "en": "The bench press is behind the lockers.",
+     "pt": "O supino fica atrás dos armários.",
+     "fb": "Não reage ao comentário sobre a garrafa."
+    }
+   ]
+  ],
+  "can": [
+   "Yes, I joined last month. How often do you come here?",
+   "Wow, impressive! I usually come three times a week.",
+   "I always bring one, but I left it in the car."
+  ]
+ },
+ "2155": {
+  "lines": [
+   {
+    "en": "Passport, please. Where are you from, and what’s the purpose of your visit?",
+    "pt": "Passaporte, por favor. De onde você é e qual é o motivo da sua visita?",
+    "sw_en": "Passport, please. Where are you from, and what’s the purpose of your {visit|trip|stay}?",
+    "sw_pt": "Passaporte, por favor. De onde você é e qual é o motivo da sua {visita|viagem|estadia}?"
+   },
+   {
+    "en": "I’m from Brazil. I’m here to visit friends.",
+    "pt": "Sou do Brasil. Estou aqui para visitar amigos.",
+    "sw_en": "I’m from Brazil. I’m here to visit {friends|family|a cousin}.",
+    "sw_pt": "Sou do Brasil. Estou aqui para visitar {amigos|a família|um primo}."
+   },
+   {
+    "en": "How long are you staying? I need an address.",
+    "pt": "Quanto tempo vai ficar? Preciso de um endereço.",
+    "sw_en": "How long are you staying? I need {an address|a hotel name|a phone number}.",
+    "sw_pt": "Quanto tempo vai ficar? Preciso de {um endereço|o nome do hotel|um telefone}."
+   },
+   {
+    "en": "I’ll stay for two weeks, with my cousin. Here’s the address.",
+    "pt": "Vou ficar duas semanas, com meu primo. Aqui está o endereço.",
+    "sw_en": "I’ll stay for {two|three|four} weeks, with my cousin. Here’s the address.",
+    "sw_pt": "Vou ficar {duas|três|quatro} semanas, com meu primo. Aqui está o endereço."
+   },
+   {
+    "en": "Do you have a return ticket? It must be before your visa expires.",
+    "pt": "Tem passagem de volta? Ela deve ser antes de seu visto vencer.",
+    "sw_en": "Do you have a return ticket? It must be before your {visa|permit|passport} expires.",
+    "sw_pt": "Tem passagem de volta? Ela deve ser antes de {seu visto|sua autorização|seu passaporte} vencer."
+   },
+   {
+    "en": "Yes, I booked a flight for the twentieth. Here’s the confirmation.",
+    "pt": "Sim, reservei um voo para o dia vinte. Aqui está a confirmação.",
+    "sw_en": "Yes, I booked a flight for the {twentieth|fifteenth|thirtieth}. Here’s the confirmation.",
+    "sw_pt": "Sim, reservei um voo para o dia {vinte|quinze|trinta}. Aqui está a confirmação."
+   },
+   {
+    "en": "Are you carrying any food, or over ten thousand dollars in cash?",
+    "pt": "Está trazendo comida, ou mais de dez mil dólares em dinheiro?",
+    "sw_en": "Are you carrying any {food|fruit|meat}, or over ten thousand dollars in cash?",
+    "sw_pt": "Está trazendo {comida|frutas|carne}, ou mais de dez mil dólares em dinheiro?"
+   },
+   {
+    "en": "No, only clothes, a camera, and some chocolate for my cousin’s kids.",
+    "pt": "Não, só roupas, uma câmera e chocolate para os filhos do meu primo.",
+    "sw_en": "No, only clothes, a camera, and some {chocolate|coffee|candy} for my cousin’s kids.",
+    "sw_pt": "Não, só roupas, uma câmera e {chocolate|café|doces} para os filhos do meu primo."
+   },
+   {
+    "en": "Fine. Why are you visiting now? Most tourists come in the summer.",
+    "pt": "Tudo bem. Por que visita agora? A maioria dos turistas vem no verão.",
+    "sw_en": "Fine. Why are you visiting now? Most tourists come in the {summer|spring|fall}.",
+    "sw_pt": "Tudo bem. Por que visita agora? A maioria dos turistas vem no {verão|primavera|outono}."
+   },
+   {
+    "en": "My cousin’s getting married, and I’ll stay a few extra days.",
+    "pt": "Meu primo vai se casar, e vou ficar alguns dias a mais.",
+    "sw_en": "My cousin’s getting {married|engaged|promoted}, and I’ll stay a few extra days.",
+    "sw_pt": "Meu primo vai {se casar|ficar noivo|ser promovido}, e vou ficar alguns dias a mais."
+   },
+   {
+    "en": "Congratulations to him! Here’s your passport. Enjoy your trip!",
+    "pt": "Parabéns a ele! Aqui está o seu passaporte. Aproveite a viagem!",
+    "sw_en": "Congratulations to him! Here’s your passport. Enjoy your {trip|stay|visit}!",
+    "sw_pt": "Parabéns a ele! Aqui está o seu passaporte. Aproveite {a viagem|a estadia|a visita}!"
+   }
+  ],
+  "wrong": [
+   [
+    {
+     "en": "Yes, I have a passport. Thank you.",
+     "pt": "Sim, tenho passaporte. Obrigada.",
+     "fb": "Não responde de onde vem nem o motivo."
+    },
+    {
+     "en": "I’m here because it was cold.",
+     "pt": "Estou aqui porque estava frio.",
+     "fb": "Resposta sem sentido e em tempo passado."
+    }
+   ],
+   [
+    {
+     "en": "I stayed for two weeks last year.",
+     "pt": "Fiquei duas semanas no ano passado.",
+     "fb": "Contradiz: é a primeira vez dela no país."
+    },
+    {
+     "en": "Yes, I have an apartment.",
+     "pt": "Sim, tenho um apartamento.",
+     "fb": "Não responde por quanto tempo e onde vai ficar."
+    }
+   ],
+   [
+    {
+     "en": "No, I’ll stay forever.",
+     "pt": "Não, vou ficar para sempre.",
+     "fb": "Contradiz: é uma visita de poucas semanas."
+    },
+    {
+     "en": "I’m from Brazil.",
+     "pt": "Sou do Brasil.",
+     "fb": "Repete algo já dito; a pergunta é sobre a passagem de volta."
+    }
+   ],
+   [
+    {
+     "en": "Yes, I have a big cousin.",
+     "pt": "Sim, tenho um primo grande.",
+     "fb": "Não responde sobre comida nem dinheiro."
+    },
+    {
+     "en": "No, I never visit friends.",
+     "pt": "Não, eu nunca visito amigos.",
+     "fb": "Contradiz o motivo da viagem."
+    }
+   ],
+   [
+    {
+     "en": "I don’t like the summer.",
+     "pt": "Não gosto do verão.",
+     "fb": "Não explica o motivo da visita."
+    },
+    {
+     "en": "I came by plane yesterday.",
+     "pt": "Vim de avião ontem.",
+     "fb": "Passado; a pergunta é sobre o motivo da época."
+    }
+   ]
+  ],
+  "can": [
+   "I’m from Brazil. I’m here to visit friends.",
+   "I’ll stay for two weeks, with my cousin. Here’s the address.",
+   "Yes, I booked a flight for the twentieth. Here’s the confirmation."
+  ]
+ }
+}
