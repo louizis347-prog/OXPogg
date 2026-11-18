@@ -118,3 +118,8 @@
 - 72 aulas novas: condicional misto, used to/would, manage to, obrigação e permissão no passado, gerúndio × infinitivo, objeto + infinitivo, as if, so/such, too/enough, conectores, tag questions, was going to, quantificadores, get passivo, in case. A 4272 fecha o bloco.
 - Auditoria de nível sem violações; 44 quadros por aula no navegador, sem erro; diálogos com média acima de 15 palavras por fala; nomes dos falantes conferidos.
 - Ressalvas: obras escolhidas pelo modelo (algumas com ligação fraca ao tema: 4210, 4217, 4225, 4232, 4239, 4263, 4265); 4202 ensina "If I were you, I would have left" como conselho, não como condicional misto verdadeiro.
+
+## A1 — 11 diálogos reescritos
+- Aulas 48, 205, 25, 53, 173, 33, 90, 46, 47, 68 e 77 tinham falas de 3–4 palavras e frases repetidas. Reescritas em conversas de 9 falas (6–8 palavras por fala), só com gramática de A1; telas "Sua resposta" e roteiro ao vivo atualizados.
+- Cuidado de processo: os validadores `validate_x/y/z` reconstroem a aula a partir da fonte e desfazem reescritas. Rode-os ANTES de aplicar `dialog_rewrite.py apply` e `apply_live.py`, nunca depois.
+- Ressalva: texto escrito pelo modelo, sem revisão de professor; a 77 é a mais mecânica.
