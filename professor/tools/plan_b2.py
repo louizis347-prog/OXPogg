@@ -497,4 +497,5 @@ P=[('I’ve been waiting for an hour', 'Boston', 'Blake', 'Dan', 'present perfec
 ('In ten years I’ll have been working here for a decade', 'London', 'Blake', 'Dan', 'futuro perfeito e futuro perfeito contínuo: by then / by the time', 'office'),
 ('A weekend away with friends', 'Boston', 'Dirk', 'Theo', 'planejar uma viagem em grupo: arrangements, suggestions, bookings', 'hiketrail'),
 ('Everything I’ve learned about learning', 'Chicago', 'Gabe', 'Max', 'estratégias de estudo e reflexão: what works / I find it easier to', 'library'),
+('Is it okay if I borrow your charger?', 'Dallas', 'Gabe', 'Ben', 'pedir permissão e favores: is it okay if / do you mind if / could I possibly', 'home1'),
 ('What I’ve learned: B2, the final block', 'Seattle', 'Tess', 'Clara', 'revisão final do B2: o que você já sabe fazer', 'classroom')]
