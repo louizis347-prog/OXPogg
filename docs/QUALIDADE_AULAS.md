@@ -9,7 +9,7 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 | A1 | 500 | 6.2 | 105 (21%) | 0 |
 | A2 | 500 | 8.9 | 3 (1%) | 0 |
 | B1 | 500 | 12.0 | 0 (0%) | 0 |
-| B2 | 372 | 19.1 | 0 (0%) | 0 |
+| B2 | 422 | 19.1 | 0 (0%) | 0 |
 
 ## A1 — 15 aulas para rever primeiro
 
@@ -41,13 +41,13 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 | 2113 | Something to drink | 2 | 7.6 | 0 | 0 | 0.91 |
 | 2317 | A walk in the forest | 2 | 8.2 | 1 | 0 | 1.0 |
 | 2073 | The tallest building | 2 | 8.4 | 0 | 0 | 1.0 |
-| 2021 | There was a problem | 2 | 8.7 | 0 | 11 | 0 |
-| 2421 | A clean beach | 2 | 8.7 | 0 | 11 | 0.0 |
+| 2021 | There was a problem | 2 | 8.7 | 0 | 10 | 0 |
+| 2421 | A clean beach | 2 | 8.7 | 0 | 10 | 0.0 |
 | 2053 | It’s going to rain | 2 | 8.9 | 0 | 0 | 0.91 |
-| 2061 | You should rest | 2 | 9.1 | 1 | 10 | 0 |
-| 2361 | A text from a friend | 2 | 9.1 | 1 | 10 | 0.64 |
-| 2381 | Halloween costumes | 2 | 9.1 | 0 | 6 | 0.64 |
-| 2081 | How much is it? | 2 | 9.2 | 0 | 6 | 0.09 |
+| 2061 | You should rest | 2 | 9.1 | 1 | 9 | 0 |
+| 2361 | A text from a friend | 2 | 9.1 | 1 | 9 | 0.64 |
+| 2381 | Halloween costumes | 2 | 9.1 | 0 | 5 | 0.64 |
+| 2081 | How much is it? | 2 | 9.2 | 0 | 5 | 0.09 |
 | 2410 | A bike path | 2 | 9.4 | 0 | 0 | 0.91 |
 | 2346 | A short story | 1 | 7.8 | 3 | 1 | 0.27 |
 
@@ -56,10 +56,10 @@ Gerado por `professor/tools/quality_report.py`. Os pontos somam alertas (mais po
 | Aula | Título | Pontos | Palavras/fala | Curtas | Repetidas | Densidade alvo |
 |---|---|---|---|---|---|---|
 | 3051 | Stop talking, start working | 2 | 9.1 | 0 | 0 | 0.91 |
-| 3001 | Have you ever been here? | 2 | 9.5 | 0 | 11 | 0.09 |
+| 3001 | Have you ever been here? | 2 | 9.5 | 0 | 10 | 0.09 |
 | 3052 | It’s too cold to swim | 2 | 9.5 | 0 | 0 | 0.91 |
 | 3053 | He’s old enough to drive | 2 | 9.5 | 0 | 0 | 1.0 |
-| 3101 | Where is this made? | 2 | 9.5 | 0 | 11 | 0.82 |
+| 3101 | Where is this made? | 2 | 9.5 | 0 | 10 | 0.82 |
 | 3003 | Already done, not yet | 2 | 10.1 | 0 | 0 | 0.91 |
 | 3140 | What did the doctor say? | 2 | 10.1 | 0 | 0 | 1.0 |
 | 3425 | Is it safe to take with milk? | 2 | 10.8 | 0 | 0 | 0.91 |
