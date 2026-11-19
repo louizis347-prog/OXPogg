@@ -140,3 +140,4 @@
 - Aulas em que o texto trata a aprendiz por "ela"/"she" (178) só recebem nomes femininos. "Mamma Mia" e nomes já usados na mesma aula são evitados.
 - **Ordem do processo para aulas novas:** obras → build → auditoria → `validate_x/y/z` → `apply_live.py` → correção de nomes → `diversify_learner.py` (os validadores reconstroem a aula e devolvem "Mia"; rodar a ferramenta de novo é seguro).
 - O desenho da pessoa na cena e o avatar do diálogo usam os mesmos traços (pele, cabelo, penteado, óculos, barba, idade); a roupa muda por aula.
+- O parceiro de conversa também varia: `professor/tools/diversify_partner.py` troca o nome do parceiro (ex.: Kofi, em 75 aulas) por outro personagem do elenco do mesmo gênero (registro em `professor/data/partner_names.json`). Mantém o parceiro em 35 aulas cujo nome também é palavra comum (Grace, Hope, Will, May…) e em 13 aulas com mais de um parceiro. Rodar DEPOIS de `diversify_learner.py`; também é idempotente.
