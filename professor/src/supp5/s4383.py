@@ -3,18 +3,18 @@ SUPP = {'badge': {'desc': 'Relativas com when', 'icon': '🕰️', 'name': 'The 
  'convo': {'npc': {'name': 'Lena'},
            'story': 'Mia encontra Lena numa rua de Londres, e as duas lembram o dia em que tudo mudou, o ano e o momento (the day when, the year when, the moment when).',
            'turns': [{'npc': 'Mia! Is that really you? I have not seen you since we left school, and you look different.',
-                      'opts': [{'en': 'Lena! What a surprise. Do you remember the day when everything changed, the day we got our exam results?',
+                      'opts': [{'en': 'Lena! Do you remember the day when everything changed, the day we got our exam results?',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
-                                'pt': 'Lena! Que surpresa. Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'},
-                               {'en': 'the got day you day What Lena! a when changed, the results? exam everything remember surprise. we our Do',
+                                'pt': 'Lena! Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'},
+                               {'en': 'results? Lena! the our remember day you exam when Do everything got day we changed, the',
                                 'fb': 'A ordem das palavras está errada.',
                                 'ok': False,
-                                'pt': 'Lena! Que surpresa. Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'},
-                               {'en': 'Lena! What a surprise. Do you remember the day everything changed, the day we got our exam results?',
+                                'pt': 'Lena! Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'},
+                               {'en': 'Lena! Do you remember the day when everything the day we got our exam results?',
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
-                                'pt': 'Lena! Que surpresa. Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'}],
+                                'pt': 'Lena! Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'}],
                       'pt': 'Mia! É você mesmo? Não te vejo desde que saímos da escola, e você está diferente.'},
                      {'npc': 'Of course. It was the moment when I realized I did not want to study law, although my parents had planned it.',
                       'opts': [{'en': 'Really? I never knew that. I thought you were happy and looking forward to university.',
@@ -58,7 +58,7 @@ SUPP = {'badge': {'desc': 'Relativas com when', 'icon': '🕰️', 'name': 'The 
                                 'ok': False,
                                 'pt': 'Que maravilha! Queria ter sido corajosa para mudar de rumo, mas fiquei no banco e agora me sinto presa.'}],
                       'pt': 'Exatamente. Me inscrevi num curso de arte aqui em Londres, e trabalho como ilustradora há seis anos.'},
-                     {'npc': 'It is not too late. Look, I am meeting a friend at six, so why not come along and talk about it?',
+                     {'npc': 'It is not too late. I am meeting a friend at six, so why not come along and talk?',
                       'opts': [{'en': 'I would love to, unless it is a formal dinner. I am wearing my work clothes, and I have had a long day.',
                                 'fb': 'Natural e claro.',
                                 'ok': True,
@@ -71,7 +71,7 @@ SUPP = {'badge': {'desc': 'Relativas com when', 'icon': '🕰️', 'name': 'The 
                                 'fb': 'Falta uma palavra.',
                                 'ok': False,
                                 'pt': 'Eu adoraria, a menos que seja um jantar formal. Estou de roupa de trabalho e tive um dia longo.'}],
-                      'pt': 'Não é tarde demais. Olha, vou encontrar uma amiga às seis, então por que não vem junto e conversamos?'}]},
+                      'pt': 'Não é tarde demais. Vou encontrar uma amiga às seis, então por que não vem junto e conversamos?'}]},
  'culture': {'compare': {'ask': 'Do you remember the day when everything changed?',
                          'br': 'No Brasil, dizemos “o dia em que”, “o ano em que”.',
                          'tip': 'Diga: “Do you remember the day when everything changed?”',
@@ -132,8 +132,8 @@ SUPP = {'badge': {'desc': 'Relativas com when', 'icon': '🕰️', 'name': 'The 
                     'Mia! Is that really you? I have not seen you since we left school, and you look different.',
                     'Mia! É você mesmo? Não te vejo desde que saímos da escola, e você está diferente.'),
                    ('You',
-                    'Lena! What a surprise. Do you remember the day when everything changed, the day we got our exam results?',
-                    'Lena! Que surpresa. Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'),
+                    'Lena! Do you remember the day when everything changed, the day we got our exam results?',
+                    'Lena! Você lembra o dia em que tudo mudou, o dia em que recebemos o resultado dos exames?'),
                    ('Lena',
                     'Of course. It was the moment when I realized I did not want to study law, although my parents had planned it.',
                     'Claro. Foi o momento em que percebi que não queria estudar direito, embora meus pais tivessem planejado.'),
@@ -153,8 +153,8 @@ SUPP = {'badge': {'desc': 'Relativas com when', 'icon': '🕰️', 'name': 'The 
                     'That is wonderful! I wish I had been brave enough to change direction, but I stayed in banking and now I feel stuck.',
                     'Que maravilha! Queria ter sido corajosa para mudar de rumo, mas fiquei no banco e agora me sinto presa.'),
                    ('Lena',
-                    'It is not too late. Look, I am meeting a friend at six, so why not come along and talk about it?',
-                    'Não é tarde demais. Olha, vou encontrar uma amiga às seis, então por que não vem junto e conversamos?'),
+                    'It is not too late. I am meeting a friend at six, so why not come along and talk?',
+                    'Não é tarde demais. Vou encontrar uma amiga às seis, então por que não vem junto e conversamos?'),
                    ('You',
                     'I would love to, unless it is a formal dinner. I am wearing my work clothes, and I have had a long day.',
                     'Eu adoraria, a menos que seja um jantar formal. Estou de roupa de trabalho e tive um dia longo.'),
@@ -207,18 +207,18 @@ SUPP = {'badge': {'desc': 'Relativas com when', 'icon': '🕰️', 'name': 'The 
                       {'alt': ['river'], 'ans': 'near the river', 'q': 'Where is the coffee shop?'}],
              'text': ['It is a cold evening in London. Mia walks home from the bank. People hurry along a busy street. Suddenly she hears her name. An old friend, Lena, '
                       'is waving. They have not met for years.',
-                      '“Mia! Is that really you? I have not seen you since we left school, and you look different.” says Lena. “Lena! What a surprise. Do you remember '
-                      'the day when everything changed, the day we got our exam results?” says Mia. “Of course. It was the moment when I realized I did not want to '
-                      'study law, although my parents had planned it.” says Lena.',
+                      '“Mia! Is that really you? I have not seen you since we left school, and you look different.” says Lena. “Lena! Do you remember the day when '
+                      'everything changed, the day we got our exam results?” says Mia. “Of course. It was the moment when I realized I did not want to study law, '
+                      'although my parents had planned it.” says Lena.',
                       '“Really? I never knew that. I thought you were happy and looking forward to university.” says Mia. “I was pretending. The year when I finally '
                       'told them the truth was the hardest of my life, but I do not regret it.” says Lena. “What did you do instead? I remember you were always drawing '
                       'in the back of your notebooks.” says Mia.',
                       '“Exactly. I applied for an art course here in London, and I have been working as an illustrator for six years now.” says Lena. “That is '
-                      'wonderful! I wish I had been brave enough to change direction, but I stayed in banking and now I feel stuck.” says Mia. “It is not too late. '
-                      'Look, I am meeting a friend at six, so why not come along and talk about it?” says Lena.',
+                      'wonderful! I wish I had been brave enough to change direction, but I stayed in banking and now I feel stuck.” says Mia. “It is not too late. I am '
+                      'meeting a friend at six, so why not come along and talk?” says Lena.',
                       '“I would love to, unless it is a formal dinner. I am wearing my work clothes, and I have had a long day.” says Mia. “Do not worry, it is only a '
                       'small coffee shop near the river. Give me your number, and I will send the address.” says Lena. They walk to a coffee shop by the river. Lena '
-                      'shows Mia her drawings. They talk until the coffee shop closes. Old friends remind us who we are.'],
+                      'shows Mia her drawings. They talk until the coffee shop closes. Mia laughs a lot. She writes a new plan. Old friends remind us who we are.'],
              'tf': [{'ans': True, 's': 'Lena changed her plans after the exam results.', 'why': 'She did not want to study law.'},
                     {'ans': False, 's': 'Lena regrets her decision.', 'why': 'She says she does not regret it.'},
                     {'ans': True, 's': 'Mia feels stuck at work.', 'why': 'She says it.'},
