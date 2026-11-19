@@ -45,6 +45,7 @@ function coachFree(c){var cr=c.getBoundingClientRect(),m=6;if(cr.width<4)return 
 function placeCoach(c){var spots=['','pr','pm'];for(var i=0;i<spots.length;i++){c.classList.remove('pr','pm');if(spots[i])c.classList.add(spots[i]);if(coachFree(c))return true}c.classList.remove('pr','pm');return false}
 function say(msg,ms,tone){var c=ensureCoach();clearTimeout(coachTimer);$('.q1v-ct',c).textContent=msg;c.classList.remove('ok','no');if(tone)c.classList.add(tone);c.classList.add('on');
   if(!placeCoach(c)){c.classList.remove('on');return}
+  setTimeout(function(){if(c.classList.contains('on')&&!coachFree(c)&&!placeCoach(c))c.classList.remove('on')},900);
   coachTimer=setTimeout(function(){c.classList.remove('on')},ms||5200)}
 function hideCoach(){clearTimeout(coachTimer);if(coach)coach.classList.remove('on','ok','no')}
 var KIND_MSG={
