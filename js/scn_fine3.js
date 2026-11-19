@@ -120,7 +120,7 @@ reg('street',function(u){
   /* pessoas */
   b+=walker(130,200,.95,'#c4513a','#2f4a6a','#2a1c14','#e0ac84')+walker(150,200,.85,'#4f8a5b','#3a3a4a','#7a3a1a','#f0c8a4')+walker(398,202,1,'#e0b24a','#3a3a4a','#1a1208','#b87a54',true)+walker(318,200,.9,'#2f6f8f','#5a3a2a','#c98a58','#e8b890');
   /* táxi */
-  b+=taxi(u,262,254,.95);
+  b+=((document.body&&document.body.classList.contains('quest-l1'))?taxi(u,312,246,1.45):taxi(u,262,254,.95));
   b+=SF.motes(r,14,0,20,480,170);
   return WRAP(u,d,b);
 });

@@ -1,0 +1,63 @@
+/* Aula Quest · visual vivo: cor por etapa, palco com luz e profundidade, personagens com vida. */
+
+/* ---- cor de destaque por etapa da aula ---- */
+.pg{--acc:#2f6fe0;--acc2:#7a3fe0}
+.pg[data-stage=mission]{--acc:#2f6fe0;--acc2:#7a3fe0}
+.pg[data-stage=culture]{--acc:#e8438f;--acc2:#f08a2b}
+.pg[data-stage=read]{--acc:#7a3fe0;--acc2:#2f6fe0}
+.pg[data-stage=talk]{--acc:#0aa5a8;--acc2:#2da44e}
+.pg[data-stage=lab]{--acc:#f08a2b;--acc2:#e8438f}
+.pg[data-stage=arcade]{--acc:#e0a010;--acc2:#f08a2b}
+.pg[data-stage=boss]{--acc:#e5484d;--acc2:#7a3fe0}
+.pg[data-stage=write]{--acc:#2da44e;--acc2:#0aa5a8}
+.pg[data-stage=wrap]{--acc:#4a5be0;--acc2:#e8438f}
+
+body.quest-l1 .stage:has(.pg) .qp-bg{background:radial-gradient(900px 520px at 6% -10%,color-mix(in srgb,var(--acc,#2f6fe0) 46%,transparent),transparent 62%),radial-gradient(820px 520px at 100% -4%,color-mix(in srgb,var(--acc2,#e8438f) 40%,transparent),transparent 58%),radial-gradient(900px 620px at 72% 118%,color-mix(in srgb,var(--acc,#2f6fe0) 32%,transparent),transparent 62%),#f3f7ff}
+.pg .q1-eyebrow{background:color-mix(in srgb,var(--acc) 13%,#fff);color:color-mix(in srgb,var(--acc) 62%,#0b1d33);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--acc) 28%,transparent)}
+.pg .q1v-hero{box-shadow:0 0 0 3px #fff,0 24px 54px color-mix(in srgb,var(--acc) 36%,transparent),0 3px 10px rgba(20,40,90,.14)}
+.pg .pb h1{background:linear-gradient(95deg,#0f2740 52%,color-mix(in srgb,var(--acc) 64%,#0f2740));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.pg .pb h1::after{content:"";display:block;width:64px;height:5px;border-radius:5px;margin-top:10px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.pg .q1v-b,.pg .q1v-nbtn{box-shadow:0 6px 16px color-mix(in srgb,var(--acc) 30%,transparent)}
+
+/* ---- palco: luz, poeira, acabamento e primeiro plano ---- */
+.ps-stage{overflow:hidden}
+.ps-stage .ps-fx{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.ps-stage .fx-ray{position:absolute;top:-14%;width:30%;height:140%;background:linear-gradient(180deg,rgba(255,244,214,.44),rgba(255,244,214,0) 82%);transform:rotate(17deg);transform-origin:50% 0;mix-blend-mode:screen;filter:blur(7px);animation:fxRay 9s ease-in-out infinite alternate}
+.ps-stage .fx-ray.r1{left:8%}.ps-stage .fx-ray.r2{left:46%;opacity:.7;transform:rotate(22deg);animation-delay:-4s;width:22%}
+.ps-stage .fx-grade{position:absolute;inset:0;background:radial-gradient(120% 92% at 50% 42%,transparent 52%,rgba(24,16,52,.34)),linear-gradient(180deg,rgba(255,196,120,.12),rgba(90,120,255,.08))}
+.ps-stage .fx-m{position:absolute;width:var(--z,3px);height:var(--z,3px);border-radius:50%;background:#fff;opacity:.0;box-shadow:0 0 6px 2px rgba(255,255,255,.7);animation:fxMote var(--d,9s) ease-in-out infinite}
+.ps-stage .ps-fg{position:absolute;inset:0;pointer-events:none;z-index:4}
+.ps-stage .ps-fg span{position:absolute;bottom:-3%;width:23%;filter:blur(1.4px) drop-shadow(0 6px 8px rgba(10,30,20,.35));transform:translate(calc(var(--px,0)*14px),calc(var(--py,0)*8px));transition:transform .25s ease-out}
+.ps-stage .ps-fg .fgl{left:-3%}.ps-stage .ps-fg .fgr{right:-3%;transform:scaleX(-1) translate(calc(var(--px,0)*-14px),calc(var(--py,0)*8px))}
+.ps-stage .ps-fg svg{display:block;width:100%;height:auto}
+.ps-stage .ps-fg.in span{opacity:.78;filter:blur(2.2px) saturate(.8) drop-shadow(0 6px 8px rgba(40,20,10,.3))}
+body.quest-l1 .ps-stage-bk{transform:translate(calc(var(--px,0)*-8px),calc(var(--py,0)*-5px)) scale(1.05);transition:transform .25s ease-out}
+body.quest-l1 .ps-chars{z-index:2;transform:translate(calc(var(--px,0)*5px),calc(var(--py,0)*3px));transition:transform .25s ease-out}
+@keyframes fxRay{from{opacity:.55;transform:rotate(15deg) translateX(-2%)}to{opacity:1;transform:rotate(20deg) translateX(3%)}}
+@keyframes fxMote{0%,100%{opacity:0;transform:translateY(8px)}30%{opacity:.8}60%{opacity:.5;transform:translateY(-22px) translateX(6px)}}
+
+/* ---- personagens com vida: respiram e mudam o peso ---- */
+.qp>svg{transform-origin:50% 100%;animation:qaBob 4.6s ease-in-out infinite}
+.qp:nth-child(2n)>svg{animation-duration:5.4s;animation-delay:-1.7s}
+@keyframes qaBob{0%,100%{transform:scale(1,1)}50%{transform:scale(1.006,1.014)}}
+.qp{filter:drop-shadow(0 6px 6px rgba(15,10,30,.30)) drop-shadow(0 0 1px rgba(255,255,255,.35))}
+
+@media (prefers-reduced-motion:reduce){
+  .ps-stage .fx-ray,.ps-stage .fx-m,.qp>svg{animation:none}
+  body.quest-l1 .ps-stage-bk,body.quest-l1 .ps-chars,.ps-stage .ps-fg span{transition:none;transform:none}
+  .ps-stage .ps-fg .fgr{transform:scaleX(-1)}
+}
+
+/* ---- mais cor e energia: faixa, manchas de luz e títulos maiores ---- */
+.pg{position:relative}
+.pg::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;z-index:3;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:5px 5px 0 0;pointer-events:none}
+.pg::after{content:"";position:absolute;right:-9vmin;top:-12vmin;width:52vmin;height:52vmin;border-radius:50%;z-index:-1;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--acc2) 34%,transparent),transparent 66%);filter:blur(6px);animation:blobDrift 14s ease-in-out infinite alternate}
+@keyframes blobDrift{from{transform:translate(0,0) scale(1)}to{transform:translate(-3vmin,4vmin) scale(1.08)}}
+body.quest-l1 .pg .pb h1{font-size:clamp(30px,3.6vw,52px);line-height:1.08}
+.pg .q1v-hero{border-color:#fff;transition:transform .3s ease}
+.pg .q1v-hero:hover{transform:translateY(-3px) scale(1.01)}
+.pg .q1v-opt:hover{box-shadow:0 12px 24px color-mix(in srgb,var(--acc) 30%,transparent)}
+@media (prefers-reduced-motion:reduce){.pg::after{animation:none}.pg .q1v-hero{transition:none}}
+
+/* ---- proporção: personagens menores e firmes no chão, para casar com o tamanho dos objetos do cenário ---- */
+body.quest-l1 .ps-chars .qp{height:60%;bottom:1%}
