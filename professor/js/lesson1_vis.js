@@ -20,12 +20,20 @@ var TOPS2=['#3b6ea5','#b5543c','#4d8f6b','#7a5fa8','#c58a2f','#2f7f86','#d9708f'
 var PANTS2=['#2f3550','#4a3b32','#3b4a63','#6b5d49','#35384a','#27496d','#5a4a63','#46604a','#7a6a52','#2a2f38'];
 var SKIN_MAP={pale:0,light:1,tan:2,brown:3,dark:4,deep:4},HAIR_MAP={blond:'#c9a25b',black:'#1b1410',brown:'#4a2e1b',blue:'#3b5bdb'};
 var STYLE_MAP={pigtails:'long',braids:'wavy',ponytail:'long',long:'long',bun:'bun',bob:'bob',afro:'curly',curly:'curly',side:'side',spiky:'short'};
-function person(c){var F=window.PogFace;if(!F||!F.bust)return '';var name=c.n||'x',LN=(window.__LESSON&&window.__LESSON.n)||0;
-  var hn=hsh(name),h=hsh(name+'#'+LN+'#'+(c.x==null?50:c.x)),learner=name==='Mia';
+function faceOpts(name){var hn=hsh(name),E=(window.PGPEOPLE||{})[name],look=(E&&E.look)||{};
+  var g=(E&&E.g)?E.g:FEMSET.test(name)?'f':MALESET.test(name)?'m':((look.outfit==='dress'||/^(pigtails|braids|ponytail|long|bun|bob)$/.test(look.hs||''))?'f':(hn%2?'f':'m'));
+  var tone=(look.skin&&SKIN_MAP[look.skin]!=null)?SKIN_MAP[look.skin]:[0,1,1,2,2,3,4][hn%7];
+  var hair=(look.hair&&HAIR_MAP[look.hair])||(tone>=3?HAIRS[(hn>>>3)%3]:HAIRS[(hn>>>3)%HAIRS.length]);
+  var fs=['long','wavy','bob','bun','curly','side'],ms=['short','side','short','curly','short','side'];
+  var style=STYLE_MAP[look.hs]||(g==='f'?fs[(hn>>>3)%fs.length]:ms[(hn>>>3)%ms.length]);
+  var o={g:g,tone:tone,style:style,hair:hair,shirt:look.top||TOPS2[hn%TOPS2.length],seed:hn,refined:true,natural:true,rich:2,mood:'soft',glasses:hn%100<20,beard:g==='m'&&hn%100>=70&&hn%100<92};
+  if(hn%100<9){o.age='old';o.hair='#c9c9d0'}return o}
+function person(c){var F=window.PogFace;if(!F||!F.bust)return '';var name=c.n||'x',SPK=(window.__LESSON&&window.__LESSON.dialog&&window.__LESSON.dialog.speakers)||{};if(SPK[name]&&SPK[name].name)name=SPK[name].name;var LN=(window.__LESSON&&window.__LESSON.n)||0;
+  var hn=hsh(name),h=hsh(name+'#'+LN+'#'+(c.x==null?50:c.x)),learner=false,isL=c.role==='customer';
   var E=(window.PGPEOPLE||{})[name],look=(E&&E.look)||{},R=ROLE[c.role]||{};
-  var g=FEMSET.test(name)?'f':MALESET.test(name)?'m':((look.outfit==='dress'||/^(pigtails|braids|ponytail|long|bun|bob)$/.test(look.hs||''))?'f':(c.g==='f'?'f':(c.g==='m'?'m':(hn%2?'f':'m'))));
+  var g=(E&&E.g)?E.g:FEMSET.test(name)?'f':MALESET.test(name)?'m':((look.outfit==='dress'||/^(pigtails|braids|ponytail|long|bun|bob)$/.test(look.hs||''))?'f':(c.g==='f'?'f':(c.g==='m'?'m':(hn%2?'f':'m'))));
   var tone=c.tone!=null?c.tone:(look.skin&&SKIN_MAP[look.skin]!=null?SKIN_MAP[look.skin]:[0,1,1,2,2,3,4][hn%7]),skin=SKINS[Math.max(0,Math.min(SKINS.length-1,tone|0))];
-  var old=!learner&&hn%100<9;
+  var old=hn%100<9;
   var hair=c.hair||(look.hair&&HAIR_MAP[look.hair])||(tone>=3?HAIRS[(hn>>>3)%3]:HAIRS[(hn>>>3)%HAIRS.length]);
   var seedH=learner?h:hn,fs=['long','wavy','bob','bun','curly','side'],ms=['short','side','short','curly','short','side'];
   var hstyle=(learner?null:STYLE_MAP[look.hs])||(g==='f'?fs[(seedH>>>3)%fs.length]:ms[(seedH>>>3)%ms.length]);
@@ -123,7 +131,7 @@ var ART=[
  {rs:'home1',cast:[ANA(50,0,{prop:'phone'})]},{rs:'home1',cast:[ANA(50,0,{prop:'phone'})]},
  {rs:'park',cast:[ANA(38,0,{prop:'cup'}),FR('Sam','m',66,1)]},{rs:'cafe',cast:[ANA(32),EV(68,1,{prop:'cup'})]}];
 var plx=0;if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches))document.addEventListener('pointermove',function(e){if(plx)return;plx=requestAnimationFrame(function(){plx=0;var x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;$$(document,'.ps-stage').forEach(function(st){st.style.setProperty('--px',x.toFixed(3));st.style.setProperty('--py',y.toFixed(3))})})},{passive:true});
-window.L1VIS={person:person,stage:stage,art:ART,H:H,$:$,$$:$$,ANA:ANA,EV:EV,FR:FR,toast:function(t){var el=document.createElement('div');el.className='q1v-toast';el.textContent=t;document.body.appendChild(el);setTimeout(function(){el.classList.add('out')},1800);setTimeout(function(){el.remove()},2300)}};
+window.L1VIS={faceOpts:faceOpts,person:person,stage:stage,art:ART,H:H,$:$,$$:$$,ANA:ANA,EV:EV,FR:FR,toast:function(t){var el=document.createElement('div');el.className='q1v-toast';el.textContent=t;document.body.appendChild(el);setTimeout(function(){el.classList.add('out')},1800);setTimeout(function(){el.remove()},2300)}};
 /* ---------- decoração por quadro: painel de cena nítido ao lado do conteúdo ---------- */
 var W=[50,46,42,38,34,30],HH=[30,27,24,21,18,15];
 function fit(b){if(!b||!b.isConnected)return;b.classList.remove('q1v-tight','q1v-nohero');if(window.matchMedia&&matchMedia('(max-width:820px)').matches){b.scrollTop=0;return}

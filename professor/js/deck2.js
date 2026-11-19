@@ -21,11 +21,11 @@ function person(name,pose){var p=PEOPLE[name];if(!p)return null;return {p:Object
 function scene(sc,tod,cast,key){return ficSvg({scene:sc,tod:tod||'day',decor:[],cast:(cast||[]).map(function(c){return typeof c==='string'?person(c,'wave'):person(c.n,c.pose)}).filter(Boolean)},key||'cover')}
 var FACEN=0;function hh(s){var h=2166136261;s=String(s);for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
 function face(name){var p=PEOPLE[name];if(!p)return '';
- try{if(window.PogFace&&PogFace.bust){var l=p.look||{},FEM=/^(pigtails|braids|ponytail|long|bun|bob)$/.test(l.hs||'')||l.outfit==='dress'||(/a$/.test(name)&&!/^(Luca|Costa|Sasha)$/.test(name));
+ try{if(window.PogFace&&PogFace.bust){var l=p.look||{},FEM=p.g?p.g==='f':(/^(pigtails|braids|ponytail|long|bun|bob)$/.test(l.hs||'')||l.outfit==='dress'||(/a$/.test(name)&&!/^(Luca|Costa|Sasha)$/.test(name)));
   var tone={pale:0,light:0,tan:2,brown:3,dark:4,deep:4}[l.skin];if(tone==null)tone=1;
   var hair={blond:'#c9a25b',black:'#1b1410',brown:'#4a2e1b',blue:'#3b5bdb'}[l.hair]||'#3d2616';
   var style={pigtails:'long',braids:'wavy',ponytail:'long',long:'long',bun:'bun',bob:'bob',afro:'curly',curly:'curly',side:'side',spiky:'short'}[l.hs]||'short';
-  var o={seed:hh(name),g:FEM?'f':'m',tone:tone,hair:hair,style:style,refined:true,rich:2,mood:'soft',glasses:false,beard:false};if(l.top)o.shirt=l.top;
+  var o=(window.L1VIS&&L1VIS.faceOpts)?L1VIS.faceOpts(name):{seed:hh(name),g:FEM?'f':'m',tone:tone,hair:hair,style:style,refined:true,rich:2,mood:'soft',glasses:false,beard:false};if(!o.shirt&&l.top)o.shirt=l.top;
   var hue=hh(name+'bg')%360,id='fa'+(++FACEN);
   return '<svg viewBox="16 8 68 68" width="100%" height="100%" aria-hidden="true"><defs><linearGradient id="'+id+'g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl('+hue+',70%,90%)"/><stop offset="1" stop-color="hsl('+((hue+40)%360)+',65%,80%)"/></linearGradient><clipPath id="'+id+'c"><circle cx="50" cy="42" r="34"/></clipPath></defs><circle cx="50" cy="42" r="34" fill="url(#'+id+'g)"/><g clip-path="url(#'+id+'c)">'+PogFace.bust(o)+'</g></svg>'}}catch(e){}
  return ficSvg({scene:'park',cast:[{p:p.look}]},'face')}
