@@ -199,7 +199,7 @@ RS.parking=function(u){var d='',b='',i;
   b+=R(0,172,480,3,'#f4f0e0',' opacity=".7"');
   /* carros de fundo nas vagas das laterais (traseira) */
   function car(x,y,col){return E(x+30,y+34,34,4,'#000',' opacity=".3"')+RR(x,y,60,32,8,col,INK)+RR(x+8,y-12,44,16,6,col,INK)+R(x+12,y-9,36,11,'#2a3a52')+RR(x+3,y+18,10,6,2,'#c0392b')+RR(x+47,y+18,10,6,2,'#c0392b')+R(x+22,y+22,16,6,'#f4efe4')+R(x+4,y+30,10,5,'#222')+R(x+46,y+30,10,5,'#222')}
-  b+=car(14,130,'#2f8fb8')+car(90,132,'#b8bcc4')+car(344,130,'#8a2f2f');
+  b+='<g transform="translate(44 166) scale(1.35) translate(-44 -166)">'+car(14,130,'#2f8fb8')+'</g><g transform="translate(120 166) scale(1.35) translate(-120 -166)">'+car(90,132,'#b8bcc4')+'</g><g transform="translate(374 166) scale(1.35) translate(-374 -166)">'+car(344,130,'#8a2f2f')+'</g>';
   b+=R(0,118,0,0,0,'none');
   /* máquina de pagamento */
   b+=R(448,150,10,44,'#555',INK)+RR(426,100,54,64,4,'#f4c430',INK)+tx(453,112,'PAY',9,'#222')+RR(432,116,42,18,2,'#10161c',INK)+tx(453,129,'$4.00',9,'#7fe0a0')+RR(432,138,18,10,1,'#555')+RR(454,138,18,10,1,'#555')+R(434,152,38,3,'#222')+tx(453,176,'TICKET',6,'#222');
