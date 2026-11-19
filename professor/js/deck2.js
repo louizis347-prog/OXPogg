@@ -172,7 +172,7 @@ R.teamquiz=function(p,b){var k=0,sc={A:0,B:0},rev=false;
   if(q.say){b.querySelector('#pl').onclick=function(){say(q.say)};setTimeout(function(){say(q.say)},200)}
   b.querySelector('#rv').onclick=function(){rev=true;draw()};b.querySelector('#a1').onclick=function(e){sc.A++;gain(10,true,e);rev=false;k++;draw()};b.querySelector('#b1').onclick=function(e){sc.B++;gain(10,true,e);rev=false;k++;draw()};b.querySelector('#nx').onclick=function(){rev=false;k++;draw()}};draw()};
 /* ---------- navegação ---------- */
-function build(p,i){var s=SEC[p.t]||['vocab',p.t],sec=document.createElement('section');sec.className='pg';sec.dataset.sec=s[0];var title=p.title||s[1];
+function build(p,i){var s=SEC[p.t]||['vocab',p.t],sec=document.createElement('section');sec.className='pg';sec.dataset.sec=s[0];sec.dataset.stage=p.stage||'';var title=p.title||s[1];
  if(p.t==='q1'){s=[{mission:'open',culture:'read',read:'listen',talk:'photo',lab:'gram',arcade:'game',boss:'speak',write:'write',wrap:'review'}[p.stage]||'open',p.label||'Aula em ação'];sec.dataset.sec=s[0]}
  var badge=p.for==='group'?'<span class="mb">👥 Group</span>':p.for==='solo'?'<span class="mb">1-to-1</span>':'';
  sec.innerHTML='<div class="ph"><span class="tag">'+esc(s[1])+'</span><h2>'+esc(title)+'</h2>'+badge+'<span class="xpc">XP <b class="xpv">'+xp+'</b></span><span class="pn">'+(i+1)+' / '+PG.length+'</span><button class="hb" id="hb" aria-label="Menu">⋯</button></div><div class="pb"></div>';var body=sec.querySelector('.pb');try{(R[p.t]||function(){})(p,body)}catch(e){console.error(p.t,e);body.textContent='(erro de renderização)'}

@@ -41,7 +41,7 @@ RS.nyc=function(u){
   for(var q=0;q<50;q++){var y2=152+Math.pow(r(),1.6)*46;wat+='<path d="M'+f(r()*480)+' '+f(y2)+'h'+f(4+r()*10)+'" stroke-width="'+f(.4+(y2-150)/120)+'"/>';}
   /* grade e calçada */
   var posts='';for(var p=0;p<9;p++){var px=20+p*58;posts+='<rect x="'+px+'" y="186" width="3.2" height="22" fill="#2b2430"/>';}
-  var taxi='<g transform="translate(232 232)"><ellipse cx="0" cy="22" rx="62" ry="6" fill="#2a1a10" opacity=".32" filter="url(#@b)"/>'
+  var taxi='<g transform="'+((document.body&&document.body.classList.contains('quest-l1'))?'translate(312 254) scale(1.4) translate(0 -22)':'translate(232 232)')+'"><ellipse cx="0" cy="22" rx="62" ry="6" fill="#2a1a10" opacity=".32" filter="url(#@b)"/>'
    +'<path d="M-58 14V0Q-58 -6-50 -8L-30 -10L-20 -26Q-17 -30-10 -30H22Q30 -30 34 -24L44 -10L54 -7Q60 -5 60 2V14Q60 18 56 18H-54Q-58 18-58 14Z" fill="#ffc21a"/>'
    +'<path d="M-18 -9L-10 -24H22L32 -9Z" fill="#9fc2d8"/><path d="M-18 -9L-10 -24H0L-4 -9Z" fill="#fff" opacity=".35"/><rect x="-6" y="-35" width="22" height="6" rx="2" fill="#2b2430"/><text x="5" y="-30.4" font-size="5" font-family="Arial" font-weight="800" fill="#ffd34a" text-anchor="middle">TAXI</text>'
    +'<path d="M-58 4H60" stroke="#d99a00" stroke-width="1.6"/><rect x="-6" y="2" width="12" height="4" fill="#2b2430" opacity=".25"/>'
