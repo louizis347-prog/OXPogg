@@ -29,6 +29,7 @@ def rename_pages(cur, n):
     return cur
 
 def main(ns):
+    if not ns: sys.exit('informe os números das aulas')
     done = []; saved = {}
     for n in ns:
         p = path(n); keep = open(p, encoding='utf-8').read()
