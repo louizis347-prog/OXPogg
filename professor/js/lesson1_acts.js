@@ -38,7 +38,7 @@ DECOR.facts=function(p,b,art,A){var first=p.facts&&p.facts[0];FACES=p.faces||FAC
   if(mini){var cards=$$(b,'.q1-facts .q1-card'),sit=document.createElement('div');sit.className='q1-card q1v-sit';
     sit.innerHTML='<span class="q1-eyebrow">Situação no balcão</span><h3>'+H(first.big)+' <small>· '+H(first.label)+'</small></h3><p>'+H(first.sub)+'</p><div class="q1v-sitgrid"><div class="q1v-sitst">'+stage(p.miniart||{rs:'cafe',cast:[ANA(28),EV(72,1,{prop:'cup'})]},'scene')+'</div><div class="q1v-sitdlg"></div></div>'+bar([['play','▶ Ouvir'],['shuf','🔀 Trocar palavras'],['pt','PT']]);
     cards[0].replaceWith(sit);var grid=$('.q1-facts',b);grid.classList.add('q1v-facts2');
-    var box=swapBox($('.q1v-sitdlg',sit),mini,A,{me:p.me||'Ana',onProgress:function(n,t){$('.q1v-prog',sit).textContent='🎨 '+n+'/'+t+' palavras exploradas';if(n>=t){A.confetti();toast('✨ Você explorou todas as palavras!')}}});
+    var box=swapBox($('.q1v-sitdlg',sit),mini,A,{me:p.me||'Ana',onProgress:function(n,t){$('.q1v-prog',sit).textContent='🎨 '+n+'/'+t+' palavras exploradas';if(n>=t){toast('✨ Você explorou todas as palavras!')}}});
     $('.q1v-prog',sit).textContent='🎨 0/'+box.total+' palavras exploradas';var on=false;
     $('[data-a=play]',sit).onclick=function(){box.play()};$('[data-a=shuf]',sit).onclick=function(){box.shuffle()};$('[data-a=pt]',sit).onclick=function(){on=!on;box.pt(on)};return}
   split(b,art)};

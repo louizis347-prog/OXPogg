@@ -1,6 +1,6 @@
 /* Garante contraste mínimo (WCAG AA) para texto escuro sobre fundo claro/pintado: escurece só o necessário. */
 (function(){
- var BASE={r:200,g:200,b:200,a:1}; // pior caso estimado do fundo pintado já com o véu claro
+ var BASE={r:230,g:236,b:246,a:1}; // pior caso estimado do fundo pintado já com o véu claro
  function P(c){var m=c&&c.match(/rgba?\(([^)]+)\)/);if(!m)return null;var a=m[1].split(',').map(parseFloat);return{r:a[0],g:a[1],b:a[2],a:a.length>3?a[3]:1}}
  function lum(c){var f=function(v){v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(c.r)+.7152*f(c.g)+.0722*f(c.b)}
  function cr(a,b){var x=lum(a),y=lum(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
