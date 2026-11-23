@@ -10,6 +10,12 @@ for f, d in blocks.items():
     for k, v in d.items(): by[int(k)] = (f, v)
 st = lambda w: re.sub(r'(ing|ed|es|s)$', '', w.lower())
 seen = {}; fix = []
+fixadd = {}
+for ff in glob.glob(H + '/out/fix*.json'):
+    for k, v in json.load(open(ff)).items():
+        fixadd.setdefault(int(k), []).extend(v['add'])
+for k, ws in fixadd.items():
+    for t, _ in ws: seen.setdefault(st(t) if len(t.split()) == 1 else t.lower(), k)
 allbase = set()
 for n in range(1, 181):
     b = old['plan'][ORDER[n - 1] - 1]['words'] if n <= 50 else cur[n]['base_words']
@@ -22,12 +28,13 @@ for n in range(1, 181):
     for t, pt in d['words']:
         k = st(t) if len(t.split()) == 1 else t.lower()
         isbase = t.lower() in base
-        if isbase or (k not in seen and k not in allbase):
+        if isbase or ((k not in seen or seen[k] == n) and k not in allbase):
             keep.append([t, pt]); seen.setdefault(k, n)
         else: continue
     for t, pt in keep: seen.setdefault(st(t) if len(t.split()) == 1 else t.lower(), n)
     d['words'] = keep
-    if len(keep) < 8: fix.append(dict(n=n, title=(old['plan'][ORDER[n - 1] - 1]['title'] if n <= 50 else cur[n]['title']), grammar=(old['plan'][ORDER[n - 1] - 1]['grammar'] if n <= 50 else cur[n]['grammar']), need=8 - len(keep), have=[w[0] for w in keep], reading=[x[0] for x in d['reading']], dialogue=[x[0] for x in d['dialogue']]))
+    extra = len(fixadd.get(n, []))
+    if len(keep) + extra < 8: fix.append(dict(n=n, title=(old['plan'][ORDER[n - 1] - 1]['title'] if n <= 50 else cur[n]['title']), grammar=(old['plan'][ORDER[n - 1] - 1]['grammar'] if n <= 50 else cur[n]['grammar']), need=8 - len(keep) - extra, have=[w[0] for w in keep], reading=[x[0] for x in d['reading']], dialogue=[x[0] for x in d['dialogue']]))
 for f, d in blocks.items(): json.dump(d, open(f, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 json.dump(fix, open(H + '/in/fix.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print('lições a repor:', len(fix), 'itens:', sum(x['need'] for x in fix))
