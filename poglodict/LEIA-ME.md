@@ -20,3 +20,6 @@ Alguns verbetes de corpus têm exemplos em revisão. Traduções e pinyin produz
 - [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict), dicionário chinês-inglês da comunidade publicado por MDBG. Dados adaptados sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - [Tatoeba](https://tatoeba.org/), exemplos de corpus com links para as frases. Consulte os [termos de uso](https://tatoeba.org/en/terms_of_use).
 - [Wikipédia](https://www.wikipedia.org/), exemplos creditados aos artigos correspondentes, sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## Inglês A1 · lições 181–300 (autorais)
+As lições 181 a 300 do A1 de inglês (curso para brasileiros) agora seguem o padrão das 50 primeiras: título e gramática próprios, vocabulário do dicionário, leitura com 5 frases, diálogo de 8 falas, pronúncia, exercício de gramática e, nas lições múltiplas de 10, mini-história. Os dados ficam em `fontes/a1-181-300/*.json` (um arquivo por lição) e `english-a1-extra.js` é gerado por `tools/poglodict_build_a1.py`. A planilha do lote é `plano-ingles-a1-181-300.csv`. Ainda sem fotos próprias: cada lição usa uma foto provisória já existente (coluna “Descrição da imagem” da planilha). As lições 51–180 continuam como estavam. Sem áudio gravado nem animação de pronúncia para este lote.
