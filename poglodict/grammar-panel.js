@@ -52,7 +52,7 @@ function handleGrammarChoice(event){
   const status=button.closest('.grammar-choice-case').querySelector('[role="status"]');
   const right=button.dataset.grammarChoice===status.dataset.correct;
   status.textContent=right?'Certo. '+status.dataset.reason:
-    'Ouça o primeiro som da palavra após a lacuna e tente de novo.';
+    (status.dataset.wrong||'Ouça o primeiro som da palavra após a lacuna e tente de novo.');
   status.dataset.feedback=right?'correct':'retry';
   return true;
 }

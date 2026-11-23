@@ -392,7 +392,7 @@ $('lesson').addEventListener('input',event=>{
   if(event.target.id==='roleplayDraft')storeRoleplayDraft(event.target.value);
 });
 $('lesson').addEventListener('click',e=>{
-  if(handleA1PronunciationClick(e)||handleWordUseClick(e)||handleSceneRoleplay(e)||handleGrammarChoice(e))return;
+  if(handleA1PronunciationClick(e)||handleWordUseClick(e)||handleSceneRoleplay(e)||handleGrammarChoice(e)||handleA1Quiz(e))return;
   handleSceneResponse(e);
   if(handleLessonTools(e))return;
   const b=e.target.closest('button');

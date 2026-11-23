@@ -55,7 +55,7 @@ function plannedEnglishContent(){
   const row=englishLessonPlan()?englishA1Content[unit]:null;
   if(!row)return null;
   const lines=pairs=>pairs.map(([text,pt])=>({text,pt}));
-  return {reading:lines(row[0]),dialogue:lines(row[1]),pronunciation:row[2],grammar:row[3]};
+  return {reading:lines(row[0]),dialogue:lines(row[1]),pronunciation:row[2],grammar:row[3],examples:row[4]?lines(row[4]):null,quiz:row[5]||null};
 }
 const englishA1GrammarPatterns=[
   /Can I have/i,/\ban\b/i,/^(?:go straight|yes\. cross|cross)/i,/\b(?:my|your)\b/i,/\bthere is\b/i,
@@ -70,10 +70,64 @@ const englishA1GrammarPatterns=[
   /please (?:ask|write)/i,/\b(?:am|are|is) (?:early|late|on time)\b/i,/\bcannot\b|\bcan i\b/i,/would you like to/i,/\b(?:and|but)\b/i
 ];
 function plannedEnglishExamples(content){
+  if(content.examples)return content.examples;
   const all=[...content.dialogue,...content.reading];
   const pattern=englishA1GrammarPatterns[unit];
   const matching=all.filter(line=>pattern.test(line.text));
   return [...new Map([...matching,...all].map(line=>[line.text,line])).values()].slice(0,2);
+}
+
+// Mini-quiz da lição (4 itens: lacuna, escuta, duas montagens) + revisão dos erros de lições anteriores.
+function a1Missed(){try{return JSON.parse(localStorage.getItem('lpd-a1-missed')||'{}');}catch{return {};}}
+function a1SaveMissed(m){try{localStorage.setItem('lpd-a1-missed',JSON.stringify(m));}catch{/* Sem armazenamento. */}}
+function a1Shuffle(list,seed){const a=[...list];let x=seed*9301+49297;for(let i=a.length-1;i>0;i--){x=(x*9301+49297)%233280;const j=Math.floor(x/233280*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  if(a.join(' ')===list.join(' ')&&a.length>1)a.push(a.shift());return a;}
+function a1QuizItem(item,u,i,label){
+  const id=u+':'+i, head='<div class="a1-q" data-a1q="'+id+'" data-t="'+item.t+'">'+(label?'<p class="meta">'+clean(label)+'</p>':'');
+  const status='<p class="a1-status" role="status"></p></div>';
+  if(item.t==='b'){
+    const answer=item.w.join(' ');
+    return head+'<p>Monte em inglês: <strong lang="pt-BR">'+clean(item.pt)+'</strong></p><p class="a1-built" lang="en" aria-live="polite"></p>'+
+      '<div class="controls">'+a1Shuffle(item.w,u*7+i).map(w=>'<button type="button" data-a1-word="'+clean(w)+'">'+clean(w)+'</button>').join('')+'</div>'+
+      '<div class="controls"><button type="button" data-a1-check="'+clean(answer)+'">Verificar</button><button type="button" data-a1-clear>Limpar</button></div>'+status;
+  }
+  const correct=item.t==='c'?item.o[0]:item.o[0];
+  const opts=a1Shuffle(item.o,u*5+i);
+  const body=item.t==='c'?'<p>Complete: '+nativeText(item.q)+'</p><p class="meta" lang="pt-BR">'+clean(item.pt)+'</p>':
+    '<p>Ouça e escolha o que você ouviu.</p>'+lessonPlayButton(item.say);
+  return head+body+'<div class="controls">'+opts.map(o=>'<button type="button" data-a1-opt="'+clean(o)+'" data-correct="'+clean(correct)+'" data-why="'+clean(item.why||'')+'">'+nativeText(o)+'</button>').join('')+'</div>'+status;
+}
+function renderA1Quiz(content){
+  if(!content.quiz)return '';
+  const missed=a1Missed(), review=Object.keys(missed).filter(k=>Number(k.split(':')[0])<unit).slice(0,2);
+  const items=review.map(k=>{const [u,i]=k.split(':').map(Number);const row=englishA1Content[u]?.[5]?.[i];return row?a1QuizItem(row,u,i,'Revisão da lição '+(u+1)):'';}).join('')+
+    content.quiz.map((item,i)=>a1QuizItem(item,unit,i)).join('');
+  return '<section class="grammar-choice a1-quiz"><h4>Mini-quiz da lição</h4><p class="meta">Quatro itens: lacuna, escuta e duas frases para montar. O que você errar volta como revisão nas próximas lições.</p>'+items+'</section>';
+}
+function handleA1Quiz(event){
+  const t=event.target;
+  const opt=t.closest('[data-a1-opt]'),word=t.closest('[data-a1-word]'),check=t.closest('[data-a1-check]'),clear=t.closest('[data-a1-clear]');
+  if(!(opt||word||check||clear))return false;
+  const box=t.closest('.a1-q'),status=box.querySelector('.a1-status'),id=box.dataset.a1q;
+  const finish=right=>{
+    const m=a1Missed();
+    if(right){delete m[id];status.dataset.feedback='correct';}else{m[id]=1;status.dataset.feedback='retry';}
+    a1SaveMissed(m);
+  };
+  if(opt){
+    const right=opt.dataset.a1Opt===opt.dataset.correct;
+    status.textContent=right?'Certo. '+opt.dataset.why:'Ainda não. Ouça ou leia de novo e tente outra opção.';
+    finish(right);
+  }else if(word){
+    const built=box.querySelector('.a1-built');built.textContent=(built.textContent?built.textContent+' ':'')+word.dataset.a1Word;word.disabled=true;
+  }else if(clear){
+    box.querySelector('.a1-built').textContent='';box.querySelectorAll('[data-a1-word]').forEach(b=>{b.disabled=false;});status.textContent='';
+  }else{
+    const right=box.querySelector('.a1-built').textContent.trim().toLowerCase()===check.dataset.a1Check.toLowerCase();
+    status.textContent=right?'Certo. '+check.dataset.a1Check:'Ainda não. Confira a ordem das palavras e tente de novo.';
+    finish(right);
+  }
+  return true;
 }
 function renderCompletedEnglishGrammar(plan,content,photo,used){
   const [question,correct,wrong,translation,reason]=content.grammar;
@@ -81,7 +135,7 @@ function renderCompletedEnglishGrammar(plan,content,photo,used){
   const choices='<section class="grammar-choice"><h4>Complete a frase</h4><div class="grammar-choice-case">'+nativeText(question,'p')+
     '<p class="meta" lang="pt-BR">'+clean(translation)+'</p><div class="controls">'+
     options.map(option=>'<button type="button" data-grammar-choice="'+clean(option)+'">'+nativeText(option)+'</button>').join('')+
-    '</div><p class="grammar-choice-status" role="status" data-correct="'+clean(correct)+'" data-reason="'+clean(reason)+'"></p></div></section>';
+    '</div><p class="grammar-choice-status" role="status" data-correct="'+clean(correct)+'" data-reason="'+clean(reason)+'" data-wrong="Ainda não. Releia os exemplos da regra e tente de novo."></p></div></section>'+renderA1Quiz(content);
   const examples=plannedEnglishExamples(content).map(({text,pt})=>[text,pt]);
   return '<article class="lesson-card">'+lessonPhotoFrame(photo,'a1-block-photo')+
     renderGrammarRule(plan.grammar,plan.goal,
@@ -117,8 +171,8 @@ function renderCompletedEnglishVocabulary(plan,content,photo){
     }).join('')+'</dl></section>';
 }
 function renderCompletedEnglishScene(plan,content){
-  const phrase=content.dialogue[6];
-  const reply=content.dialogue[7];
+  const phrase=content.dialogue[content.dialogue.length-2];
+  const reply=content.dialogue[content.dialogue.length-1];
   return '<section class="lesson-card" data-playback-block><h3>'+clean(plan.title)+'</h3><p>Ouça o último par de falas. Perceba qual informação a resposta confirma e diga que pergunta você faria em seguida.</p>'+
     sectionPlayButton('closing-exchange','Ouvir o final da conversa')+
     lessonLinesMarkup([phrase,reply],'dialogue')+'</section>';
