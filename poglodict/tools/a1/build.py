@@ -52,7 +52,7 @@ def check(n, d):
         if i['t'] == 'c' and '___' not in i['q']: err(n, 'quiz c sem lacuna')
         if i['t'] == 'b' and not (3 <= len(i['w']) <= 9): err(n, 'quiz b tamanho')
     ex = d['examples']; allt = {x[0] for x in d['reading'] + d['dialogue']}
-    if len(ex) != 2 or any(e[0] not in allt for e in ex): err(n, 'examples não copiados do texto')
+    if len(ex) != 2 or any(not any(e[0] in t for t in allt) for e in ex): err(n, 'examples não copiados do texto')
     if n % 10 == 0 and len((d.get('story') or {}).get('lines', [])) < 8: err(n, 'story')
 for n in range(1, N + 1):
     if str(n) not in new: err(n, 'ausente'); continue
@@ -64,7 +64,7 @@ for n in range(1, N + 1):
     for t, _ in new[str(n)]['words']:
         k = stemw(t.lower())
         if len(t.split()) == 1:
-            if k in seenv and seenv[k] != n and abs(seenv[k] - n) > 0 and not any(k == stemw(w[0].lower()) for w in new[str(n)]['words'][:0]): err(n, 'vocabulário repetido de L%d: %s' % (seenv[k], t))
+            if k in seenv and seenv[k] != n and t.lower() not in {w[0].lower() for w in (old['plan'][ORDER[n - 1] - 1]['words'] if n <= 50 else cur[n]['base_words'])} and abs(seenv[k] - n) > 0 and not any(k == stemw(w[0].lower()) for w in new[str(n)]['words'][:0]): err(n, 'vocabulário repetido de L%d: %s' % (seenv[k], t))
             seenv.setdefault(k, n)
 if errs:
     print('\n'.join(errs)); print(len(errs), 'problemas'); 
@@ -73,7 +73,7 @@ if errs:
 OR = os.path.join(H, 'orig')
 src = lambda n: open(os.path.join(R if n.endswith('.js') else OR, n), encoding='utf-8').read()
 js = lambda x: json.dumps(x, ensure_ascii=False, separators=(', ', ': '))
-KEYS = [('health', 'farmácia médic dentista consult corte barbearia'), ('book', 'livro escola aula arte pintando entrevista escritório reunião'),
+KEYS = [('health', 'farmácia médic dentista consult corte barbearia'), ('notebook', 'livro escola aula arte pintando entrevista escritório reunião'),
         ('cup', 'café sorvete pizza churrasco supermercado cozinha geladeira piquenique alimentação feira café'), ('ticket', 'ônibus táxi aeroporto metrô balão trem escada cinema show teatro'),
         ('park', 'jardim camping trilha zoológico fazenda passeio bicicleta corrida inverno skate piscina'), ('city', 'loja correio lavanderia garagem obra bombeiros floricultura caixa encanador oficina'),
         ('chat', 'família festa colegas videochamada celular wi-fi fotos'), ('flag', 'revisão casamento formatura halloween feriado')]

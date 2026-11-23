@@ -228,7 +228,7 @@ function lessonPanel(key,preview,content,{extraClass='',id='lesson-panel-'+key,u
   const index=Object.keys(lessonPanels).indexOf(key);
   const topicPreview=['lexicon','grammar'].includes(key);
   const photo=topicPreview?null:photoForMoment(lessonVisualTheme(),index,'preview','',used);
-  const image=topicPreview?lessonStudyBadge(key):'<img class="lesson-preview-photo" src="'+clean(photo.file)+'" alt="" width="'+photo.width+'" height="'+photo.height+'" loading="lazy" decoding="async">';
+  const image=(topicPreview||!photo)?lessonStudyBadge(key):'<img class="lesson-preview-photo" src="'+clean(photo.file)+'" alt="" width="'+photo.width+'" height="'+photo.height+'" loading="lazy" decoding="async">';
   return '<details id="'+id+'" class="lesson-disclosure '+extraClass+'" data-lesson-panel="'+key+'"><summary>'+
     image+'<span class="lesson-preview-text"><strong>'+(topicPreview?'':routeIcon(mark))+clean(routeLabel(...label))+'</strong>'+
     '<span>'+preview+'</span></span>'+lessonPreviewActions(routeLabel(...label))+'</summary>'+
