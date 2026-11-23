@@ -153,7 +153,7 @@ function lessonHeader(){
   document.title=$('lessonHeading').textContent+' · '+ui('Lição')+' '+(unit+1)+' · Pogolo Dict';
   $('lessonPosition').textContent=ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonsPerLevel;
   const plan=englishLessonPlan();
-  $('lessonArtwork').innerHTML=lessonPhotoFrame((plan&&englishPlanPhoto(plan))||photoForMoment(art,0,'reading'),'lesson-hero-photo',true);
+  $('lessonArtwork').innerHTML=plan&&!plan.file?routeIllustration(art):lessonPhotoFrame((plan&&englishPlanPhoto(plan))||photoForMoment(art,0,'reading'),'lesson-hero-photo',true);
   const visible=Object.entries(lessonPanels).filter(([key])=>key!=='story'||(unit+1)%lessonsPerBlock===0);
   $('lessonSections').innerHTML=visible.map(([key,[mark,...label]])=>
     '<button type="button" aria-controls="'+(key==='story'?'lessonStory':'lesson-panel-'+key)+'" data-lesson-section="'+key+'">'+routeIcon(mark)+clean(routeLabel(...label))+'</button>').join('');

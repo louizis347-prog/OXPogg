@@ -51,14 +51,14 @@ Mandando uma mensagem rápida|message-1|Present continuous para uma ação em an
 Ligando para uma amiga|phone-1|Who para perguntar pela identidade|Use Who is para identificar a pessoa na ligação e responda com This is + nome.|call=ligar;phone=telefone;friend=amigo ou amiga;This is Ana.=Aqui é a Ana.;answer=atender;ring=tocar;voice=voz;school=escola;moment=momento
 Um café antes de voltar para casa|coffeeTable-1|And e but para juntar duas ideias simples|Use and para acrescentar e but para indicar uma diferença entre as duas ideias.|cup of coffee=xícara de café;coffee shop=cafeteria;go home=ir para casa;stay a little longer=ficar mais um pouco;sleep=dormir;read=ler;cookie=biscoito;table=mesa;book=livro`.split('\n').map(line=>{
   const [title,file,grammar,goal,terms]=line.split('|');
-  return {title,file:'photo-'+file+'.webp',grammar,goal,words:terms.split(';').map(term=>term.split('='))};
+  return {title,file:file?'photo-'+file+'.webp':'',grammar,goal,words:terms.split(';').map(term=>term.split('='))};
 });
 
 function englishLessonPlan(index=unit){
   return lang==='eng'&&level===0?englishA1Plans[index]:null;
 }
 function englishPlanPhoto(plan){
-  return Object.values(lessonPhotoPool).flat().find(photo=>photo.file===plan.file);
+  return plan.file?Object.values(lessonPhotoPool).flat().find(photo=>photo.file===plan.file):null;
 }
 
 // Each pair illustrates the vocabulary and the grammar in that order.
@@ -113,7 +113,7 @@ photo-phone-1.webp photo-deskStudy-1.webp
 photo-message-1.webp photo-friends-1.webp
 lesson-cup.webp photo-counter-1.webp`.split("\n").map(row=>row.split(" "));
 function englishA1BlockPhotos(){
-  const files=englishA1BlockPhotoFiles[unit];
+  const files=englishA1BlockPhotoFiles[unit]||[];
   const collection=[...Object.values(lessonPhotos),...Object.values(lessonPhotoPool).flat()];
   return files.map(file=>collection.find(photo=>photo.file===file));
 }

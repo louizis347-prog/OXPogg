@@ -152,7 +152,7 @@ function buildCompletedEnglishLesson(plan,content){
   };
   const focus=plannedEnglishExamples(content)[0];
   const sample=vocabulary.wordExample||focus;
-  return {vocabulary,practiceContent:content,cardPhotos:new Set([plan.file]),grammarTitle:plan.grammar,
+  return {vocabulary,practiceContent:content,cardPhotos:new Set(plan.file?[plan.file]:[]),grammarTitle:plan.grammar,
     tasks:{word:vocabulary.word,phrase:vocabulary.expression,sentence:sample.text,translation:sample.pt}};
 }
 function plannedEnglishWordExample(term,content){
