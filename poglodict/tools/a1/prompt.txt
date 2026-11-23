@@ -1,0 +1,31 @@
+Tarefa: REESCREVER lições do PoggloDict (curso de inglês americano A1 para brasileiros, estudo autodidata, lições curtas de 5–8 minutos). Cada lição terá: vocabulário de 8–10 itens, uma leitura curta, um diálogo, um exercício principal de lacuna, um mini-quiz de 4 itens e exemplos da gramática. Hoje as lições têm só 4 palavras, falas de 5 palavras e um único exercício; o objetivo é melhorar isso, mantendo a cena e a foto de cada lição.
+
+Entrada: /home/user/OXPogg/poglodict/tools/a1/in/blockK.json (K = o número do seu bloco) = lista de 10 lições com: n (posição na nova ordem), title (cena, mantenha), grammar e goal (estrutura-alvo, em PT), base_words (as 4 palavras originais [en, pt]; TÊM de ser mantidas), core_candidates (2 palavras do dia a dia; use-as só se couberem na cena, senão escolha outras de alta frequência), grammar_taught_before (estruturas já ensinadas), recycle_from_previous (palavras de lições anteriores a reutilizar), pron_words (palavras do som da lição: devem aparecer na leitura ou no diálogo), mini_story (true: escreva também uma mini-história), old_reading e old_dialogue (a versão atual da cena, só como referência).
+
+Saída: grave DIRETO em /home/user/OXPogg/poglodict/tools/a1/out/blockK.json (Write, um único JSON válido; nada fica só em /tmp). Não toque em nenhum outro arquivo. Formato (chave = n como string):
+{"<n>": {
+ "words": [["term","tradução PT curta"], ... 8 a 10 itens; os 4 base_words primeiro, depois 4–6 novos],
+ "reading": [["frase EN","PT"], ... exatamente 6 frases curtas contando uma mini-cena (A1)],
+ "dialogue": [["fala EN","PT"], ... 8 ou 10 falas alternadas A/B, terminando numa resposta que confirme algo],
+ "grammar": ["frase com ___","resposta certa","resposta errada","tradução PT da frase completa","motivo em PT, uma frase"],
+ "examples": [["frase EN","PT"],["frase EN","PT"]],   // 2 frases que mostram a estrutura-alvo, copiadas exatamente da reading ou do dialogue
+ "quiz": [
+   {"t":"c","q":"frase com ___","o":["certa","errada1","errada2"],"pt":"tradução da frase completa","why":"por que a certa serve, em PT"},
+   {"t":"l","say":"frase EN a ser ouvida","o":["a frase certa","frase parecida errada 1","frase parecida errada 2"],"why":"PT"},
+   {"t":"b","pt":"frase em PT","w":["palavras","da","resposta","EN","em","ordem"]},
+   {"t":"b","pt":"outra frase em PT","w":["..."]}
+ ],
+ "extras": {"termo": ["frase EN com o termo","PT"]},   // só para termos de "words" que NÃO aparecem em reading/dialogue
+ "story": {"title":"título curto em PT","lines":[["frase EN","PT"], ... 10 frases]}   // só quando mini_story é true
+}}
+
+REGRAS
+1. NÍVEL A1 de verdade. Só use estruturas de "grammar_taught_before" + a estrutura-alvo desta lição + frases-feitas permitidas: Can I have…? / I'd like… (só a partir da lição 7) / Please / Thank you / Nice to meet you / How much is…? / Here you are / Excuse me / Sorry / Yes, it is / No, it isn't. Nada de passado (did, was, went, -ed), futuro (will, going to), present continuous (am/is/are + -ing) antes da lição 48, "does/doesn't" antes da 36, "must" antes da 46, "would like" antes da 7, "don't/do not" antes da 19, "he/she + verbo com -s" antes da 32. Vocabulário: palavras de alta frequência. Inglês AMERICANO (apartment, elevator, cookie, color, neighbor).
+2. Diálogo de verdade: 8 ou 10 falas, média ≥ 6 palavras, com reações curtas ("Really?", "Sure.", "No problem.") e detalhes concretos; a estrutura-alvo aparece em NO MÁXIMO 3 falas; as outras usam estruturas já ensinadas. Nenhuma sequência de 3 palavras em mais de 3 falas de toda a lição.
+3. Reutilização: o diálogo e a leitura devem usar pelo menos 3 palavras de recycle_from_previous. Os pron_words devem aparecer. Cada palavra de "words" deve aparecer na leitura ou no diálogo (ou em "extras").
+4. Vocabulário novo: 4–6 palavras úteis e visíveis na cena (substantivos concretos, verbos básicos, adjetivos simples); inclua core_candidates se couberem. Nada de palavras raras. Não repita como "novas" palavras de recycle_from_previous.
+5. Quiz: itens "c" e "l" com 3 opções (a certa em qualquer posição não importa, o app embaralha); as erradas devem ser plausíveis mas inequivocamente erradas (não existem duas certas). Itens "b": 4 a 8 palavras, sem pontuação final dentro de "w"; a ordem de "w" é a resposta certa; use a pontuação na própria palavra se necessário (ex.: "please." não — deixe sem). O quiz exercita a estrutura-alvo e o vocabulário da lição.
+6. "grammar" é o exercício principal: lacuna de UMA palavra ou expressão curta, com a certa e uma errada plausível.
+7. Tradução PT natural, do Brasil. Nomes próprios simples e variados (Ana, Ben, Lia, Noah, Rosa, Tom, Mia…), sem repetir a mesma dupla em todas as lições.
+8. mini_story true: 10 frases curtas com começo, meio e fim (uma pequena surpresa ou problema resolvido), vocabulário A1 e as estruturas já ensinadas.
+9. Confira por script antes de finalizar: JSON válido; 6 frases na reading; 8/10 falas; 8–10 words incluindo os base_words; quiz com 4 itens (c, l, b, b); examples copiados do texto; sem os tempos proibidos. Trabalhe num rascunho privado (ex.: /tmp/a1_K/). Resposta final: resumo curto e limitações honestas (aulas em que ficou insatisfeito).
