@@ -1,0 +1,11 @@
+Tarefa: repor vocabulário nas lições do PoggloDict (inglês americano A1 para brasileiros). Cada lição abaixo perdeu palavras repetidas e precisa de "need" palavras NOVAS.
+
+Entrada: /home/user/OXPogg/poglodict/tools/a1/in/fixK.json (K = seu número): lista de lições com n, title (cena), grammar (estrutura-alvo), need (quantas palavras repor), have (palavras de vocabulário já presentes), reading e dialogue (texto da lição, só para você ver a cena). Leia também /home/user/OXPogg/poglodict/tools/a1/used_all.json: TODAS as palavras já usadas como vocabulário em qualquer lição.
+
+Saída: grave DIRETO em /home/user/OXPogg/poglodict/tools/a1/out/fixK.json (Write, JSON válido): {"<n>": {"add": [["term","tradução PT curta"], ... exatamente "need" itens], "extras": {"term": ["frase EN com o termo","PT"], ...}}} — um "extras" para CADA termo de "add" (a frase é o exemplo exibido na lição).
+
+REGRAS
+1. Cada palavra nova: visível ou natural na cena do title; palavra de alta frequência A1 (substantivo concreto, verbo básico, adjetivo simples ou expressão curta de 2 palavras); NÃO pode estar em used_all.json nem em "have", nem repetir o radical (shop/shops), nem repetir entre as lições do seu arquivo.
+2. A frase de exemplo: curta (4–10 palavras), nível A1, contém exatamente o termo, usa só estruturas já ensinadas até a lição n (a lista das estruturas é a progressão do curso: lição 1 be/my/your; Can I have; a/an; plural; this/that; there is/are; imperativo; present simple só a partir da 31; he/she -s a partir da 32; present continuous só a partir da 48; passado só a partir da 117). Em lições antigas (n ≤ 30) use frases simples com be, have, can, there is, imperativo. Inglês americano.
+3. Tradução PT natural do Brasil.
+4. Confira por script (JSON válido, número de itens = need, termo dentro da frase, nenhuma palavra repetida entre lições). Rascunho em pasta privada. Resposta final: resumo curto e limitações.
