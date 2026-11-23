@@ -20,3 +20,4 @@ JS
 curl -s -o /dev/null localhost:8765/ || { echo "inicie o servidor: python3 -m http.server 8765"; exit 1; }
 NODE_PATH=$(npm root -g) node /tmp/_pick.js 2>&1 | tail -2
 python3 tools/enrich_v6.py
+python3 tools/vary_skeleton.py   # varia o esqueleto de telas (sempre por último)
