@@ -2,7 +2,7 @@
 """Remove vocabulário-alvo repetido (mantém a 1ª ocorrência e sempre as base_words) e lista o que falta repor em in/fix.json."""
 import glob, json, os, re
 H = os.path.dirname(os.path.abspath(__file__))
-old = json.load(open(H + '/old.json')); ORDER = json.load(open(H + '/order.json')); cur = {c['n']: c for c in json.load(open(H + '/curriculum_51_130.json'))}
+old = json.load(open(H + '/old.json')); ORDER = json.load(open(H + '/order.json')); cur = {c['n']: c for c in json.load(open(H + '/curriculum_51_130.json')) + json.load(open(H + '/curriculum_131_180.json'))}
 files = sorted(glob.glob(H + '/out/block[0-9]*.json'), key=lambda f: int(re.findall(r'\d+', os.path.basename(f))[0]))
 blocks = {f: json.load(open(f)) for f in files if 'fix' not in f}
 by = {}
@@ -11,10 +11,10 @@ for f, d in blocks.items():
 st = lambda w: re.sub(r'(ing|ed|es|s)$', '', w.lower())
 seen = {}; fix = []
 allbase = set()
-for n in range(1, 131):
+for n in range(1, 181):
     b = old['plan'][ORDER[n - 1] - 1]['words'] if n <= 50 else cur[n]['base_words']
     for w in b: allbase.add(st(w[0]) if len(w[0].split()) == 1 else w[0].lower())
-for n in range(1, 131):
+for n in range(1, 181):
     if n not in by: continue
     f, d = by[n]
     base = {w[0].lower() for w in (old['plan'][ORDER[n - 1] - 1]['words'] if n <= 50 else cur[n]['base_words'])}

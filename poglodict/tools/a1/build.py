@@ -3,8 +3,9 @@
 import csv, glob, json, os, re, sys
 H = os.path.dirname(os.path.abspath(__file__)); R = os.path.join(H, '..', '..')
 old = json.load(open(H + '/old.json')); ORDER = json.load(open(H + '/order.json'))
-cur = {c['n']: c for c in json.load(open(H + '/curriculum_51_130.json'))}
-N = 130 if all(os.path.exists(H + '/out/block%d.json' % k) for k in range(6, 14)) else 50
+cur = {c['n']: c for c in json.load(open(H + '/curriculum_51_130.json')) + json.load(open(H + '/curriculum_131_180.json'))}
+N = 180 if all(os.path.exists(H + '/out/block%d.json' % k) for k in range(14, 19)) else 130
+FIRSTNEW = {'could': 131, 'should': 135, "shouldn't": 136, 'there was': 139, 'there were': 139, 'than': 150, "mustn't": 159, 'myself': 161, 'while': 166, 'had to': 176}
 FIRST2 = {"doesn't": 55, "let's": 70, 'have to': 69, 'has to': 69, 'how much': 61, 'how many': 63, 'how often': 73, 'because': 74, 'whose': 95, 'enough': 101, 'going to': 115, 'was': 117, 'were': 117, "didn't": 121, 'did': 122, 'yesterday': 127, 'ago': 127, 'went': 123, 'bought': 124}
 new = {}
 for f in sorted(glob.glob(H + '/out/block*.json')): new.update(json.load(open(f)))
@@ -16,7 +17,7 @@ for f in sorted(glob.glob(H + '/out/fix*.json')):
             new[k].setdefault('extras', {}).update(v.get('extras', {}))
 def W(s): return re.findall(r"[a-z’']+", s.lower().replace('’', "'"))
 FIRSTTOK0 = {'would': 7, 'must': 46, 'does': 36, "doesn't": 99, "don't": 19, 'cannot': 28}
-FIRSTTOK = dict(FIRSTTOK0); FIRSTTOK.update(FIRST2)
+FIRSTTOK = dict(FIRSTTOK0); FIRSTTOK.update(FIRST2); FIRSTTOK.update({k: v for k, v in FIRSTNEW.items()})
 errs = []
 def err(n, m): errs.append('L%d: %s' % (n, m))
 def check(n, d):
@@ -34,7 +35,7 @@ def check(n, d):
     txt = ' '.join(x[0] for x in d['reading'] + d['dialogue'] + (d.get('story', {}).get('lines') or []))
     low = txt.lower().replace('’', "'")
     for t, first in FIRSTTOK.items():
-        if n < first and (n > 50 or t in FIRSTTOK0) and re.search(r"\b%s\b" % re.escape(t), low): err(n, 'estrutura antes da hora: ' + t)
+        if n < first and (n > 50 or t in FIRSTTOK0) and (t not in FIRSTNEW or n > 130) and re.search(r"\b%s\b" % re.escape(t), low): err(n, 'estrutura antes da hora: ' + t)
     if n < 48 and re.search(r"\b(am|is|are|i'm|you're|we're|they're|he's|she's|it's)\s+(\w+ing)\b", low) and not re.search(r"\b(am|is|are|i'm|you're|we're|they're|he's|she's)\s+(morning|evening|building|boring|interesting|amazing|exciting|waiting\b)", low): err(n, 'present continuous antes da hora')
     if re.search(r"\b(did|was|were|went|will|gonna|yesterday)\b" if n < 117 else r"\b(will|gonna)\b", low): err(n, 'passado/futuro')
     for t in d['words']:
