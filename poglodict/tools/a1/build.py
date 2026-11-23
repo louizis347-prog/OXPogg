@@ -3,14 +3,19 @@
 import csv, glob, json, os, re, sys
 H = os.path.dirname(os.path.abspath(__file__)); R = os.path.join(H, '..', '..')
 old = json.load(open(H + '/old.json')); ORDER = json.load(open(H + '/order.json'))
+cur = {c['n']: c for c in json.load(open(H + '/curriculum_51_130.json'))}
+N = 130 if all(os.path.exists(H + '/out/block%d.json' % k) for k in range(6, 14)) else 50
+FIRST2 = {"let's": 70, 'have to': 69, 'has to': 69, 'how much': 61, 'how many': 63, 'how often': 73, 'because': 74, 'whose': 95, 'enough': 101, 'going to': 115, 'was': 117, 'were': 117, "didn't": 121, 'did': 122, 'yesterday': 127, 'ago': 127, 'went': 123, 'bought': 124}
 new = {}
 for f in sorted(glob.glob(H + '/out/block*.json')): new.update(json.load(open(f)))
 def W(s): return re.findall(r"[a-z’']+", s.lower().replace('’', "'"))
-FIRSTTOK = {'would': 7, 'must': 46, 'does': 36, "doesn't": 99, "don't": 19, 'cannot': 28}
+FIRSTTOK0 = {'would': 7, 'must': 46, 'does': 36, "doesn't": 99, "don't": 19, 'cannot': 28}
+FIRSTTOK = dict(FIRSTTOK0); FIRSTTOK.update(FIRST2)
 errs = []
 def err(n, m): errs.append('L%d: %s' % (n, m))
 def check(n, d):
-    o = old['plan'][ORDER[n - 1] - 1]
+    if n > 50: o = dict(words=cur[n]['base_words'])
+    else: o = old['plan'][ORDER[n - 1] - 1]
     if not (8 <= len(d['words']) <= 10): err(n, 'words %d' % len(d['words']))
     terms = [w[0].lower() for w in d['words']]
     for b in o['words']:
@@ -23,13 +28,13 @@ def check(n, d):
     txt = ' '.join(x[0] for x in d['reading'] + d['dialogue'] + (d.get('story', {}).get('lines') or []))
     low = txt.lower().replace('’', "'")
     for t, first in FIRSTTOK.items():
-        if n < first and re.search(r"\b%s\b" % re.escape(t), low): err(n, 'estrutura antes da hora: ' + t)
+        if n < first and (n > 50 or t in FIRSTTOK0) and re.search(r"\b%s\b" % re.escape(t), low): err(n, 'estrutura antes da hora: ' + t)
     if n < 48 and re.search(r"\b(am|is|are|i'm|you're|we're|they're|he's|she's|it's)\s+(\w+ing)\b", low) and not re.search(r"\b(am|is|are|i'm|you're|we're|they're|he's|she's)\s+(morning|evening|building|boring|interesting|amazing|exciting|waiting\b)", low): err(n, 'present continuous antes da hora')
     if re.search(r"\b(did|was|were|went|will|gonna|yesterday)\b", low): err(n, 'passado/futuro')
     for t in d['words']:
         tm = re.sub(r"[.…?!]+$", '', t[0].lower())
         if tm.replace('…', '') and tm not in low.replace('’', "'") and t[0].lower() not in {k.lower() for k in d.get('extras', {})}: err(n, 'palavra sem exemplo: ' + t[0])
-    for p in old['content'][ORDER[n - 1] - 1][2][2]:
+    for p in (old['content'][ORDER[n - 1] - 1][2][2] if n <= 50 else cur[n]['pron_words']):
         for w in W(p):
             if w not in W(txt): err(n, 'pron_word ausente: ' + w)
     g = d['grammar']
@@ -43,9 +48,18 @@ def check(n, d):
     ex = d['examples']; allt = {x[0] for x in d['reading'] + d['dialogue']}
     if len(ex) != 2 or any(e[0] not in allt for e in ex): err(n, 'examples não copiados do texto')
     if n % 10 == 0 and len((d.get('story') or {}).get('lines', [])) < 8: err(n, 'story')
-for n in range(1, 51):
+for n in range(1, N + 1):
     if str(n) not in new: err(n, 'ausente'); continue
     check(n, new[str(n)])
+stemw = lambda w: re.sub(r'(ing|ed|es|s)$', '', w)
+seenv = {}
+for n in range(1, N + 1):
+    if str(n) not in new: continue
+    for t, _ in new[str(n)]['words']:
+        k = stemw(t.lower())
+        if len(t.split()) == 1:
+            if k in seenv and seenv[k] != n and abs(seenv[k] - n) > 0 and not any(k == stemw(w[0].lower()) for w in new[str(n)]['words'][:0]): err(n, 'vocabulário repetido de L%d: %s' % (seenv[k], t))
+            seenv.setdefault(k, n)
 if errs:
     print('\n'.join(errs)); print(len(errs), 'problemas'); 
     if '--force' not in sys.argv: sys.exit(1)
