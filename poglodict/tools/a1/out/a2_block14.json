@@ -61,50 +61,50 @@
     "\"Eu poderia falar com a Dra. Lopez, por favor?\", pergunta Ben."
    ],
    [
-    "\"Hold on, I'll connect you to reception,\" she says.",
-    "\"Um momento, vou ligar você para a recepção\", ela diz."
+    "\"Hold on, I'll find out if she's free,\" the woman says.",
+    "\"Um momento, vou ver se ela está livre\", diz a mulher."
    ],
    [
     "Ben is on hold for two minutes and listens to piano music.",
     "Ben fica em espera por dois minutos e ouve música de piano."
    ],
    [
-    "Then Dr. Lopez comes on the line and says, \"Hello, Ben. How is Max?\"",
-    "Então a Dra. Lopez entra na linha e diz: \"Olá, Ben. Como está o Max?\""
+    "Then Dr. Lopez says, \"Hello, Ben. May I ask what's wrong with Max?\"",
+    "Então a Dra. Lopez diz: \"Olá, Ben. Posso perguntar o que o Max tem?\""
    ]
   ],
   "dialogue": [
    [
-    "Good morning, Happy Paws Clinic. How can I help you?",
-    "Bom dia, Clínica Happy Paws. Como posso ajudar?"
+    "Happy Paws Clinic, reception. How can I help you?",
+    "Clínica Happy Paws, recepção. Como posso ajudar?"
    ],
    [
-    "Hi, this is Ben Ward. Could I speak to Dr. Lopez, please?",
-    "Oi, aqui é o Ben Ward. Eu poderia falar com a Dra. Lopez, por favor?"
+    "Hello, could I speak to Dr. Lopez, please?",
+    "Olá, eu poderia falar com a Dra. Lopez, por favor?"
    ],
    [
-    "Sorry, she's with a patient right now. May I ask what it's about?",
-    "Desculpe, ela está com um paciente agora. Posso perguntar do que se trata?"
+    "I'm sorry, she's with a patient. May I ask who's calling?",
+    "Sinto muito, ela está com um paciente. Posso perguntar quem fala?"
    ],
    [
-    "It's about my dog, Max. He stopped eating yesterday.",
-    "É sobre o meu cachorro, o Max. Ele parou de comer ontem."
+    "It's Ben Ward. My dog Max stopped eating yesterday.",
+    "É o Ben Ward. Meu cachorro, o Max, parou de comer ontem."
    ],
    [
     "Oh no. Let me see if she's available. Please hold the line.",
     "Ai, não. Vou ver se ela está disponível. Por favor, espere na linha."
    ],
    [
-    "Thank you. Can I call her directly next time?",
-    "Obrigado. Posso ligar direto para ela da próxima vez?"
+    "Sure. Could I also have her extension number for next time?",
+    "Claro. Posso ter também o ramal dela para a próxima vez?"
    ],
    [
-    "Yes, her extension number is 214, and she answers until six.",
-    "Sim, o ramal dela é 214, e ela atende até as seis."
+    "It's 214. She's free now, so I'll put through your call.",
+    "É 214. Ela está livre agora, então vou transferir a sua ligação."
    ],
    [
-    "Perfect, 214. Thanks for your help.",
-    "Perfeito, 214. Obrigado pela ajuda."
+    "Great, 214. Thank you so much!",
+    "Ótimo, 214. Muito obrigado!"
    ]
   ],
   "grammar": [
@@ -120,31 +120,31 @@
     "\"Eu poderia falar com a Dra. Lopez, por favor?\", pergunta Ben."
    ],
    [
-    "Hi, this is Ben Ward. Could I speak to Dr. Lopez, please?",
-    "Oi, aqui é o Ben Ward. Eu poderia falar com a Dra. Lopez, por favor?"
+    "Hello, could I speak to Dr. Lopez, please?",
+    "Olá, eu poderia falar com a Dra. Lopez, por favor?"
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "___ I speak to the manager, please?",
+    "q": "Could I ___ to the manager, please?",
     "o": [
-     "Could",
-     "Do",
-     "Am"
+     "speak",
+     "to speak",
+     "speaking"
     ],
     "pt": "Eu poderia falar com o gerente, por favor?",
-    "why": "Could I speak to…? é o pedido educado para falar com alguém."
+    "why": "Depois de Could I vem o verbo simples, sem to e sem -ing."
    },
    {
     "t": "l",
-    "say": "May I speak to Dr. Lopez?",
+    "say": "Could I speak to the doctor?",
     "o": [
-     "May I speak to Dr. Lopez?",
-     "Did I speak to Dr. Lopez?",
-     "May I see Dr. Lopez?"
+     "Could I speak to the doctor?",
+     "Could I speak to the doctors?",
+     "Could she speak to the doctor?"
     ],
-    "why": "Você ouviu o pedido May I speak to…?, com speak, não see."
+    "why": "Você ouviu I (eu) e doctor no singular: Could I speak to the doctor?"
    },
    {
     "t": "b",
@@ -161,28 +161,22 @@
    },
    {
     "t": "b",
-    "pt": "Eu poderia falar com a Dra. Lopez?",
+    "pt": "Posso perguntar quem está falando?",
     "w": [
      "May",
      "I",
-     "speak",
-     "to",
-     "Dr.",
-     "Lopez"
+     "ask",
+     "who's",
+     "calling"
     ]
    }
   ],
-  "extras": {
-   "put through": [
-    "The receptionist can put through your call to the lab.",
-    "A recepcionista pode transferir a sua ligação para o laboratório."
-   ]
-  }
+  "extras": {}
  },
  "562": {
   "title": "Recado para o contador que está fora",
   "grammar_label": "Deixar e anotar recados: Can I take a message? / Tell him that…",
-  "goal": "Deixe um recado com Tell him that… e ofereça anotar um com Can I take a message?",
+  "goal": "Deixe e anote recados usando Can I take a message? e Tell him that…",
   "sound": "/θ/ em three e thanks",
   "pron_words": [
    "three",
@@ -207,6 +201,10 @@
     "anotar"
    ],
    [
+    "take a message",
+    "anotar um recado"
+   ],
+   [
     "missed call",
     "chamada perdida"
    ],
@@ -215,72 +213,76 @@
     "sinal de ocupado"
    ],
    [
-    "fax",
-    "fax"
-   ],
-   [
     "cut off",
-    "cortar, cair a ligação"
+    "cair, ser cortado"
    ]
   ],
   "reading": [
    [
-    "Omar calls the accounting office, but he hears a busy signal.",
-    "Omar liga para o escritório de contabilidade, mas ouve o sinal de ocupado."
+    "Omar needs to talk to his accountant, but the line gives a busy signal.",
+    "Omar precisa falar com o contador, mas a linha dá sinal de ocupado."
    ],
    [
-    "He tries three times, and finally he gets through.",
-    "Ele tenta três vezes e, por fim, consegue completar a ligação."
+    "He tries three times, and then he gets the voice mail.",
+    "Ele tenta três vezes e depois cai na caixa postal."
    ],
    [
-    "\"Mr. Hill is out,\" says the assistant. \"Can I take a message?\"",
-    "\"O Sr. Hill saiu\", diz a assistente. \"Posso anotar um recado?\""
+    "An hour later, he sees a missed call from the same office.",
+    "Uma hora depois, ele vê uma chamada perdida do mesmo escritório."
    ],
    [
-    "\"Tell him that I sent the papers by fax,\" Omar says.",
-    "\"Diga a ele que eu mandei os papéis por fax\", diz Omar."
+    "He calls again, and the receptionist asks, \"Can I take a message?\"",
+    "Ele liga de novo, e a recepcionista pergunta: \"Posso anotar um recado?\""
    ],
    [
-    "She says she will take down the message and give it to him.",
-    "Ela diz que vai anotar o recado e entregá-lo a ele."
+    "\"Yes,\" says Omar. \"Tell him that I'm free after four.\"",
+    "\"Sim\", diz Omar. \"Diga a ele que estou livre depois das quatro.\""
    ],
    [
-    "At two o'clock, Mr. Hill reads the note and calls Omar.",
-    "Às duas horas, o Sr. Hill lê o bilhete e liga para o Omar."
+    "The receptionist writes it down, and Omar finally relaxes.",
+    "A recepcionista anota, e Omar finalmente relaxa."
    ]
   ],
   "dialogue": [
    [
-    "Hi Omar, I saw your missed call. Sorry I couldn't answer.",
-    "Oi, Omar, vi a sua chamada perdida. Desculpe por não ter atendido."
+    "Brown Accounting, this is Lia speaking.",
+    "Contabilidade Brown, Lia falando."
    ],
    [
-    "Hi, Mr. Hill. I left a voice mail, but it cut off after ten seconds.",
-    "Oi, Sr. Hill. Deixei uma mensagem de voz, mas ela cortou depois de dez segundos."
+    "Hi, this is Omar Reyes. I called twice, but I couldn't get through.",
+    "Oi, aqui é o Omar Reyes. Liguei duas vezes, mas não consegui completar a ligação."
    ],
    [
-    "Then I missed half of it. What did you say?",
-    "Então perdi metade. O que você disse?"
+    "Mr. Brown is out until three. Can I take a message?",
+    "O Sr. Brown está fora até as três. Posso anotar um recado?"
    ],
    [
-    "I said the contract is ready. Please tell Sara that I need her signature by Friday.",
-    "Eu disse que o contrato está pronto. Por favor, diga à Sara que preciso da assinatura dela até sexta."
+    "Yes, please. Tell him that my tax papers are ready.",
+    "Sim, por favor. Diga a ele que meus papéis do imposto estão prontos."
    ],
    [
-    "Got it. Sara is at lunch, so I'll tell her at one o'clock.",
-    "Entendi. A Sara está almoçando, então vou avisá-la à uma hora."
+    "Okay, I'll take down the message. Anything else?",
+    "Certo, vou anotar o recado. Mais alguma coisa?"
    ],
    [
-    "Perfect. Could you ring back if she has any questions? I'm in the office until six.",
-    "Perfeito. Você poderia ligar de volta se ela tiver dúvidas? Fico no escritório até as seis."
+    "Yes. Tell him that I'm free after four, so he can ring back.",
+    "Sim. Diga a ele que estou livre depois das quatro, para ele poder retornar."
    ],
    [
-    "Sure. I'll ring back around four, after my meeting.",
-    "Claro. Ligo de volta por volta das quatro, depois da minha reunião."
+    "After four, got it. Is your number 555-0142?",
+    "Depois das quatro, entendi. O seu número é 555-0142?"
    ],
    [
-    "Great. Four o'clock is fine. Thanks, Mr. Hill.",
-    "Ótimo. Quatro horas está bom. Obrigado, Sr. Hill."
+    "That's right. And thanks! My call got cut off this morning, too.",
+    "Isso mesmo. E obrigado! Minha ligação também caiu hoje de manhã."
+   ],
+   [
+    "Sorry about that. I'll give him the message right now.",
+    "Desculpe por isso. Vou dar o recado a ele agora mesmo."
+   ],
+   [
+    "Perfect, he'll ring back after four. Thanks, Lia.",
+    "Perfeito, ele retorna depois das quatro. Obrigado, Lia."
    ]
   ],
   "grammar": [
@@ -288,51 +290,52 @@
    "take",
    "make",
    "Posso anotar um recado?",
-   "Em inglês, a gente 'toma' (take) um recado, não 'faz' (make) um recado."
+   "Em inglês, recados são anotados com take (take a message), não com make."
   ],
   "examples": [
    [
-    "\"Mr. Hill is out,\" says the assistant. \"Can I take a message?\"",
-    "\"O Sr. Hill saiu\", diz a assistente. \"Posso anotar um recado?\""
+    "\"Yes,\" says Omar. \"Tell him that I'm free after four.\"",
+    "\"Sim\", diz Omar. \"Diga a ele que estou livre depois das quatro.\""
    ],
    [
-    "\"Tell him that I sent the papers by fax,\" Omar says.",
-    "\"Diga a ele que eu mandei os papéis por fax\", diz Omar."
+    "Yes, please. Tell him that my tax papers are ready.",
+    "Sim, por favor. Diga a ele que meus papéis do imposto estão prontos."
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "Tell Sara ___ I need her signature.",
+    "q": "Tell her ___ the meeting is at noon.",
     "o": [
      "that",
      "to",
-     "for"
+     "what"
     ],
-    "pt": "Diga à Sara que eu preciso da assinatura dela.",
-    "why": "Depois de tell + pessoa, o recado vem introduzido por that."
+    "pt": "Diga a ela que a reunião é ao meio-dia.",
+    "why": "Para passar uma informação usamos Tell her that + frase."
    },
    {
     "t": "l",
     "say": "Can I take a message?",
     "o": [
      "Can I take a message?",
-     "Can I make a message?",
-     "Can I take a massage?"
+     "Can I take a massage?",
+     "Can I make a message?"
     ],
-    "why": "A expressão certa é take a message, e message não é massage."
+    "why": "Message (recado) é diferente de massage (massagem), e usamos take, não make."
    },
    {
     "t": "b",
-    "pt": "Diga a ele que eu mandei um fax.",
+    "pt": "Diga a ele que eu volto às quatro.",
     "w": [
      "Tell",
      "him",
      "that",
-     "I",
-     "sent",
-     "a",
-     "fax"
+     "I'll",
+     "be",
+     "back",
+     "at",
+     "four"
     ]
    },
    {
@@ -347,17 +350,12 @@
     ]
    }
   ],
-  "extras": {
-   "get through": [
-    "I called ten times, but I couldn't get through.",
-    "Liguei dez vezes, mas não consegui completar a ligação."
-   ]
-  }
+  "extras": {}
  },
  "563": {
   "title": "Comprando ingressos de show e soletrando o nome",
   "grammar_label": "Soletrar nomes e repetir números: Could you spell…? / Do you mean…?",
-  "goal": "Peça e dê o soletrado de nomes e números com Could you spell…? e Do you mean…?",
+  "goal": "Soletre nomes e confirme números usando Could you spell…? e Do you mean…?",
   "sound": "/ɪ/ curto em digit e initial",
   "pron_words": [
    "digit",
@@ -395,111 +393,115 @@
    ],
    [
     "mix up",
-    "confundir, trocar"
-   ],
-   [
-    "dialled",
-    "discou"
+    "confundir"
    ]
   ],
   "reading": [
    [
-    "Mia dialled the number of a theater to buy two tickets.",
-    "Mia discou o número de um teatro para comprar dois ingressos."
+    "Katya calls the box office to buy two concert tickets.",
+    "Katya liga para a bilheteria para comprar dois ingressos de show."
    ],
    [
-    "The agent asks, \"Could you spell your last name, please?\"",
-    "A atendente pergunta: \"Você poderia soletrar o seu sobrenome, por favor?\""
+    "The man asks, \"Could you spell your last name, please?\"",
+    "O homem pergunta: \"Você poderia soletrar o seu sobrenome, por favor?\""
    ],
    [
-    "\"It's Moreira, M-O-R-E-I-R-A, with a capital letter at the start,\" Mia says.",
-    "\"É Moreira, M-O-R-E-I-R-A, com letra maiúscula no começo\", diz Mia."
+    "\"Sure. It's Nowak, with a capital letter N,\" she says.",
+    "\"Claro. É Nowak, com N maiúsculo\", ela diz."
    ],
    [
-    "Then she gives her zip code, and the agent asks, \"Do you mean 90210?\"",
-    "Depois ela dá o CEP, e a atendente pergunta: \"Você quer dizer 90210?\""
+    "Then she gives her phone number: first the area code, then each digit slowly.",
+    "Depois ela diz o telefone: primeiro o código de área, depois cada dígito devagar."
    ],
    [
-    "Her email has a hyphen and an at sign, so she says each one slowly.",
-    "O e-mail dela tem um hífen e uma arroba, então ela fala cada um devagar."
+    "He doesn't want to mix up any numbers, so he says them back.",
+    "Ele não quer confundir nenhum número, então repete tudo."
    ],
    [
-    "At the end, the agent reads everything back, and it's all correct.",
-    "No fim, a atendente lê tudo de volta, e está tudo certo."
+    "\"Do you mean 0198, not 0189?\" he asks. \"Yes, 0198,\" says Katya.",
+    "\"Você quer dizer 0198, e não 0189?\", ele pergunta. \"Sim, 0198\", diz Katya."
    ]
   ],
   "dialogue": [
    [
-    "Box office, good evening. How can I help you?",
-    "Bilheteria, boa noite. Como posso ajudar?"
+    "Rock Hall box office. How can I help?",
+    "Bilheteria do Rock Hall. Como posso ajudar?"
    ],
    [
-    "Hi, I'd like two tickets for Saturday night, please.",
-    "Oi, eu gostaria de dois ingressos para sábado à noite, por favor."
+    "I'd like two tickets for Saturday, please.",
+    "Eu queria dois ingressos para sábado, por favor."
    ],
    [
-    "Sure. Could you spell your first name and give me your middle initial?",
-    "Claro. Você poderia soletrar o seu primeiro nome e me dar a inicial do nome do meio?"
+    "Sure. Could you spell your last name for me?",
+    "Claro. Você poderia soletrar o seu sobrenome para mim?"
    ],
    [
-    "It's Mia, M-I-A, and my middle initial is L.",
-    "É Mia, M-I-A, e a inicial do meio é L."
+    "It's Nowak, N-O-W-A-K, and my first initial is K.",
+    "É Nowak, N-O-W-A-K, e a minha primeira inicial é K."
    ],
    [
-    "Thanks. And your phone number? Do you mean 415 or 450 for the area code?",
-    "Obrigada. E o seu telefone? Você quer dizer 415 ou 450 para o código de área?"
+    "Thanks. And what's your zip code, please?",
+    "Obrigado. E qual é o seu CEP, por favor?"
    ],
    [
-    "It's 415, like San Francisco. The number is 555-0187.",
-    "É 415, como San Francisco. O número é 555-0187."
+    "It's 94110. My email is k, hyphen, nowak, then the at sign, then gmail dot com.",
+    "É 94110. Meu e-mail é k, hífen, nowak, depois a arroba, depois gmail ponto com."
    ],
    [
-    "So that's 555-0817. Or did I mix up two digits?",
-    "Então é 555-0817. Ou será que eu troquei dois dígitos?"
+    "Let me read that back. Do you mean k-nowak at gmail dot com?",
+    "Deixe-me reler. Você quer dizer k-nowak arroba gmail ponto com?"
    ],
    [
-    "You did mix up two digits. It's 0187: zero, one, eight, seven.",
-    "Você trocou dois dígitos, sim. É 0187: zero, um, oito, sete."
+    "Yes, that's it. I always mix up my old zip code and my new one!",
+    "Sim, é isso. Eu sempre confundo o meu CEP antigo com o novo!"
+   ],
+   [
+    "No problem. Your tickets will be waiting under Nowak.",
+    "Sem problema. Seus ingressos ficarão esperando no nome Nowak."
+   ],
+   [
+    "Perfect, under Nowak. Thanks a lot!",
+    "Perfeito, no nome Nowak. Muito obrigada!"
    ]
   ],
   "grammar": [
-   "Could you ___ your last name?",
-   "spell",
-   "speak",
-   "Você poderia soletrar o seu sobrenome?",
-   "Soletrar é spell; speak significa falar, e isso muda o pedido."
+   "___ you mean 0198 or 0189?",
+   "Do",
+   "Are",
+   "Você quer dizer 0198 ou 0189?",
+   "Com mean (querer dizer), a pergunta usa Do you mean…?, não Are you mean."
   ],
   "examples": [
    [
-    "The agent asks, \"Could you spell your last name, please?\"",
-    "A atendente pergunta: \"Você poderia soletrar o seu sobrenome, por favor?\""
+    "The man asks, \"Could you spell your last name, please?\"",
+    "O homem pergunta: \"Você poderia soletrar o seu sobrenome, por favor?\""
    ],
    [
-    "Thanks. And your phone number? Do you mean 415 or 450 for the area code?",
-    "Obrigada. E o seu telefone? Você quer dizer 415 ou 450 para o código de área?"
+    "Let me read that back. Do you mean k-nowak at gmail dot com?",
+    "Deixe-me reler. Você quer dizer k-nowak arroba gmail ponto com?"
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "Do you ___ 415 or 450?",
+    "q": "Could you ___ your name, please?",
     "o": [
-     "mean",
-     "means",
-     "meaning"
+     "spell",
+     "to spell",
+     "spelling"
     ],
-    "pt": "Você quer dizer 415 ou 450?",
-    "why": "Depois de Do you, o verbo fica na forma simples: mean."
+    "pt": "Você poderia soletrar o seu nome, por favor?",
+    "why": "Depois de Could you vem o verbo simples: spell."
    },
    {
     "t": "l",
-    "say": "Could you spell your last name?",
+    "say": "Do you mean 0198?",
     "o": [
-     "Could you spell your last name?",
-     "Could you sell your last name?",
-     "Could you tell your last name?"
+     "Do you mean 0198?",
+     "Do you mean 0189?",
+     "Did you mean 0198?"
     ],
-    "why": "Você ouviu spell (soletrar), não sell nem tell."
+    "why": "Você ouviu o número 0198 e a pergunta no presente: Do you mean…?"
    },
    {
     "t": "b",
@@ -515,14 +517,15 @@
    },
    {
     "t": "b",
-    "pt": "Você quer dizer o código de área?",
+    "pt": "Você quer dizer zero um nove oito?",
     "w": [
      "Do",
      "you",
      "mean",
-     "the",
-     "area",
-     "code"
+     "zero",
+     "one",
+     "nine",
+     "eight"
     ]
    }
   ],
@@ -531,7 +534,7 @@
  "564": {
   "title": "Ligação ruim do metrô para o achados e perdidos",
   "grammar_label": "Pedir para repetir ou falar mais devagar com perguntas indiretas",
-  "goal": "Peça para repetir ou falar mais devagar usando Could you tell me…? e Do you know…?",
+  "goal": "Peça para repetir e pergunte com educação usando Could you tell me where…? e Do you know what time…?",
   "sound": "/ʌ/ em mumble e come",
   "pron_words": [
    "mumble",
@@ -549,7 +552,7 @@
    ],
    [
     "say again",
-    "repetir"
+    "repetir (Say again?)"
    ],
    [
     "come again",
@@ -561,131 +564,131 @@
    ],
    [
     "static",
-    "chiado"
-   ],
-   [
-    "echo",
-    "eco"
-   ],
-   [
-    "mumble",
-    "murmurar"
+    "chiado na linha"
    ],
    [
     "break up",
-    "falhar, picotar (sinal)"
+    "falhar, cortar (sinal)"
+   ],
+   [
+    "cut out",
+    "ficar mudo, cair por um instante"
+   ],
+   [
+    "loud and clear",
+    "alto e claro"
    ]
   ],
   "reading": [
    [
-    "Kenji calls the airport from the subway, but it's a bad connection.",
-    "Kenji liga para o aeroporto do metrô, mas a ligação está ruim."
+    "Mia is on the train, and she can't find her blue backpack.",
+    "Mia está no trem e não acha a mochila azul dela."
    ],
    [
-    "There is static on the line, and he hears an echo of his own voice.",
-    "Há chiado na linha, e ele ouve o eco da própria voz."
+    "She calls the lost and found, but the signal is going to break up in the tunnel.",
+    "Ela liga para o achados e perdidos, mas o sinal vai falhar no túnel."
    ],
    [
-    "\"Could you speak up, please?\" he says. \"I can't hear you.\"",
-    "\"Você poderia falar mais alto, por favor?\", ele diz. \"Não consigo ouvir você.\""
+    "There is a lot of static, and the man mumbles a little.",
+    "Há muito chiado, e o homem murmura um pouco."
    ],
    [
-    "The agent asks, \"Can you tell me what color your suitcase is?\"",
-    "O atendente pergunta: \"Você pode me dizer de que cor é a sua mala?\""
+    "Mia asks, \"Could you tell me where I can pick up my bag?\"",
+    "Mia pergunta: \"Você poderia me dizer onde posso pegar minha bolsa?\""
    ],
    [
-    "The voice starts to break up, so Kenji walks up to the street.",
-    "A voz começa a falhar, então Kenji sobe até a rua."
+    "He says, \"Do you know which train it was?\"",
+    "Ele diz: \"Você sabe qual trem era?\""
    ],
    [
-    "Outside, the line is clear, and he can finally talk.",
-    "Do lado de fora, a linha está limpa, e ele finalmente consegue falar."
+    "\"Yes, the 8:15,\" she says, and he tells her to come to Central Station.",
+    "\"Sim, o das 8:15\", ela diz, e ele a manda ir à Estação Central."
    ]
   ],
   "dialogue": [
    [
-    "Lost Luggage Office. Can you hear me now?",
-    "Achados e Perdidos de Bagagem. Está me ouvindo agora?"
+    "Metro Lost and Found. Can I help you?",
+    "Achados e Perdidos do Metrô. Posso ajudar?"
    ],
    [
-    "Yes, much better. I was in the subway a minute ago.",
-    "Sim, muito melhor. Eu estava no metrô há um minuto."
+    "Hi, I'm in a tunnel, so I have a bad connection. Can you hear me?",
+    "Oi, estou em um túnel, então a ligação está ruim. Você me ouve?"
    ],
    [
-    "No problem. Could you tell me where you last saw your suitcase?",
-    "Sem problema. Você poderia me dizer onde viu a sua mala pela última vez?"
+    "There's a lot of static. Could you speak up, please?",
+    "Há muito chiado. Você pode falar mais alto, por favor?"
    ],
    [
-    "At gate 12. It's a big blue bag with a yellow tag.",
-    "No portão 12. É uma mala azul grande com uma etiqueta amarela."
+    "Sure. I left a blue backpack on the 8:15 train. Do you know where I can pick it up?",
+    "Claro. Esqueci uma mochila azul no trem das 8:15. Você sabe onde posso buscá-la?"
    ],
    [
-    "Come again? I didn't catch the gate number.",
-    "Como? Não entendi o número do portão."
+    "Come again? You cut out for a second.",
+    "Como? Você ficou mudo por um segundo."
    ],
    [
-    "Gate twelve. Sorry, I tend to mumble when I'm tired.",
-    "Portão doze. Desculpe, eu costumo murmurar quando estou cansado."
+    "A blue backpack on the 8:15 train. Can you tell me where I can find it?",
+    "Uma mochila azul no trem das 8:15. Você pode me dizer onde posso encontrá-la?"
    ],
    [
-    "That's fine. Could you slow down and tell me the flight number?",
-    "Tudo bem. Você poderia falar mais devagar e me dizer o número do voo?"
+    "Sorry, say again? And could you slow down a little?",
+    "Desculpe, pode repetir? E poderia falar um pouco mais devagar?"
    ],
    [
-    "Sure. It's flight UA 482. Do you know if the bag is there?",
-    "Claro. É o voo UA 482. Você sabe se a mala está aí?"
+    "Okay. The train just left the tunnel. Do you know what time the office opens?",
+    "Certo. O trem acabou de sair do túnel. Você sabe a que horas o escritório abre?"
    ],
    [
-    "Got it, UA 482. Yes, we found it, and you can pick it up today.",
-    "Entendi, UA 482. Sim, nós a encontramos, e você pode buscá-la hoje."
+    "Loud and clear now! It opens at nine, and your bag is at Central Station.",
+    "Agora ouvi bem! Abre às nove, e a sua mochila está na Estação Central."
    ],
    [
-    "Great news! I'll be there in an hour.",
-    "Ótima notícia! Chego aí em uma hora."
+    "Great, Central Station at nine. Thanks so much!",
+    "Ótimo, Estação Central às nove. Muito obrigada!"
    ]
   ],
   "grammar": [
-   "Can you tell me where ___?",
-   "it is",
-   "is it",
-   "Você pode me dizer onde está?",
-   "Em pergunta indireta a ordem volta a ser a da afirmação: where it is, não where is it."
+   "Do you know what time the office ___?",
+   "opens",
+   "does open",
+   "Você sabe a que horas o escritório abre?",
+   "Na pergunta indireta o verbo vem depois do sujeito, sem do: the office opens."
   ],
   "examples": [
    [
-    "The agent asks, \"Can you tell me what color your suitcase is?\"",
-    "O atendente pergunta: \"Você pode me dizer de que cor é a sua mala?\""
+    "Mia asks, \"Could you tell me where I can pick up my bag?\"",
+    "Mia pergunta: \"Você poderia me dizer onde posso pegar minha bolsa?\""
    ],
    [
-    "That's fine. Could you slow down and tell me the flight number?",
-    "Tudo bem. Você poderia falar mais devagar e me dizer o número do voo?"
+    "He says, \"Do you know which train it was?\"",
+    "Ele diz: \"Você sabe qual trem era?\""
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "Do you know what time the office ___?",
+    "q": "Could you tell me where the station ___?",
     "o": [
-     "opens",
-     "does it open",
-     "is open"
+     "is",
+     "is it",
+     "does"
     ],
-    "pt": "Você sabe a que horas o escritório abre?",
-    "why": "Na pergunta indireta, o verbo vem depois do sujeito, sem do: the office opens."
+    "pt": "Você poderia me dizer onde fica a estação?",
+    "why": "Na pergunta indireta mantemos a ordem da afirmação: where the station is."
    },
    {
     "t": "l",
-    "say": "Could you tell me where the bag is?",
+    "say": "Could you tell me where it is?",
     "o": [
-     "Could you tell me where the bag is?",
-     "Could you tell me where is the bag?",
-     "Could you tell me where the bag was?"
+     "Could you tell me where it is?",
+     "Could you tell me where is it?",
+     "Could you tell me were it is?"
     ],
-    "why": "A pergunta indireta mantém a ordem normal: where the bag is."
+    "why": "A pergunta indireta mantém a ordem normal (where it is), e a palavra é where, não were."
    },
    {
     "t": "b",
-    "pt": "Você pode falar mais devagar, por favor?",
+    "pt": "Você poderia falar mais devagar, por favor?",
     "w": [
      "Could",
      "you",
@@ -696,24 +699,19 @@
    },
    {
     "t": "b",
-    "pt": "Você sabe onde fica o portão?",
+    "pt": "Você sabe a que horas eles fecham?",
     "w": [
      "Do",
      "you",
      "know",
-     "where",
-     "the",
-     "gate",
-     "is"
+     "what",
+     "time",
+     "they",
+     "close"
     ]
    }
   ],
-  "extras": {
-   "say again": [
-    "Please say again the flight number.",
-    "Por favor, repita o número do voo."
-   ]
-  }
+  "extras": {}
  },
  "565": {
   "title": "Remarcando o corte de cabelo no salão",
@@ -743,118 +741,126 @@
     "horário disponível"
    ],
    [
-    "cancelled",
-    "cancelado"
-   ],
-   [
     "inconvenient",
-    "inconveniente, incômodo"
-   ],
-   [
-    "convenience",
-    "comodidade"
+    "inconveniente, ruim para mim"
    ],
    [
     "I'm afraid",
-    "infelizmente, receio que"
+    "infelizmente"
+   ],
+   [
+    "pencil in",
+    "reservar provisoriamente"
+   ],
+   [
+    "first available",
+    "primeiro livre"
+   ],
+   [
+    "move to",
+    "passar para"
+   ],
+   [
+    "free up",
+    "liberar"
    ]
   ],
   "reading": [
    [
-    "Lia has a haircut on Friday at three, but her train is cancelled.",
-    "Lia tem um corte de cabelo na sexta às três, mas o trem dela foi cancelado."
+    "Rosa has a haircut tomorrow at ten, but ten is inconvenient because she has to work.",
+    "Rosa tem um corte de cabelo amanhã às dez, mas dez é ruim porque ela precisa trabalhar."
    ],
    [
-    "She calls the salon to reschedule.",
-    "Ela liga para o salão para remarcar."
+    "She calls the salon, and the stylist says, \"How about Thursday?\"",
+    "Ela liga para o salão, e a cabeleireira diz: \"Que tal quinta?\""
    ],
    [
-    "\"I'm afraid Friday is fully booked,\" says the receptionist.",
-    "\"Infelizmente a sexta está totalmente reservada\", diz a recepcionista."
+    "\"I'm afraid I can't,\" Rosa says. \"Could we move to Friday?\"",
+    "\"Infelizmente não posso\", diz Rosa. \"Podemos passar para sexta?\""
    ],
    [
-    "\"How about Saturday morning? There's a slot at ten.\"",
-    "\"Que tal sábado de manhã? Tem um horário às dez.\""
+    "\"Friday is booked up,\" says the stylist.",
+    "\"Sexta está lotada\", diz a cabeleireira."
    ],
    [
-    "Lia says, \"I'm afraid I can't. I work until noon on Saturday.\"",
-    "Lia diz: \"Infelizmente não posso. Trabalho até o meio-dia no sábado.\""
+    "Then she remembers that a client canceled, so she can free up a slot on Saturday.",
+    "Então ela lembra que uma cliente cancelou, então pode liberar um horário no sábado."
    ],
    [
-    "In the end, they choose Monday at six, and Lia thanks her.",
-    "No fim, elas escolhem segunda às seis, e Lia agradece."
+    "\"How about two o'clock?\" she asks, and Rosa says, \"Perfect!\"",
+    "\"Que tal às duas?\", ela pergunta, e Rosa diz: \"Perfeito!\""
    ]
   ],
   "dialogue": [
    [
-    "Bella Salon, good morning. How can I help you?",
-    "Bella Salon, bom dia. Como posso ajudar?"
+    "Style Salon, this is Dana.",
+    "Salão Style, Dana falando."
    ],
    [
-    "Hi, I have an appointment on Friday at three, but I need to reschedule.",
-    "Oi, tenho um horário na sexta às três, mas preciso remarcar."
+    "Hi, Dana. It's Rosa Silva. I have a haircut tomorrow, but I need to reschedule.",
+    "Oi, Dana. É a Rosa Silva. Tenho um corte amanhã, mas preciso remarcar."
    ],
    [
-    "I see. I'm afraid the rest of the week is booked up.",
-    "Entendo. Receio que o resto da semana esteja lotado."
+    "No problem. How about Thursday at ten?",
+    "Sem problema. Que tal quinta às dez?"
    ],
    [
-    "Oh no. Do you have anything on Monday?",
-    "Ah, não. Vocês têm algo na segunda?"
+    "I'm afraid I can't. I work until six on Thursday.",
+    "Infelizmente não posso. Trabalho até as seis na quinta."
    ],
    [
-    "How about Monday at 4:30?",
-    "Que tal segunda às 16h30?"
+    "Let me look. We're fully booked on Friday, but I have a slot on Saturday at nine.",
+    "Deixe-me ver. Estamos totalmente reservados na sexta, mas tenho um horário no sábado às nove."
    ],
    [
-    "I'm afraid I can't. I don't finish work until six.",
-    "Infelizmente não posso. Só saio do trabalho às seis."
+    "Nine is a little early for me. Is there anything later?",
+    "Nove é um pouco cedo para mim. Tem algo mais tarde?"
    ],
    [
-    "No problem. Our last slot is at 6:30. Would that work?",
-    "Sem problema. Nosso último horário é às 18h30. Serve?"
+    "How about two o'clock? That's the first available time after lunch.",
+    "Que tal às duas? É o primeiro horário livre depois do almoço."
    ],
    [
-    "Yes, that's perfect. I hope it's not inconvenient to change it so late.",
-    "Sim, perfeito. Espero que não seja incômodo mudar tão em cima da hora."
+    "Two works. Could you pencil in Saturday at two? I'll confirm tomorrow.",
+    "Duas serve. Pode reservar sábado às duas provisoriamente? Eu confirmo amanhã."
    ],
    [
-    "Not at all. For your convenience, we'll send you a text reminder on Sunday.",
-    "De jeito nenhum. Para sua comodidade, vamos mandar um lembrete por mensagem no domingo."
+    "Sure. I'll pencil in Saturday at two for Rosa Silva.",
+    "Claro. Vou reservar sábado às duas para Rosa Silva."
    ],
    [
-    "Great. So it's Monday at 6:30. Thanks a lot!",
-    "Ótimo. Então é segunda às 18h30. Muito obrigada!"
+    "Great, Saturday at two. Thanks, Dana!",
+    "Ótimo, sábado às duas. Obrigada, Dana!"
    ]
   ],
   "grammar": [
-   "I'm afraid I ___ come on Friday.",
+   "I'm afraid I ___ come on Thursday.",
    "can't",
-   "don't can",
-   "Infelizmente não posso ir na sexta.",
-   "Can é um verbo modal e não usa don't: a forma negativa é can't."
+   "don't",
+   "Infelizmente não posso ir na quinta.",
+   "Para dizer que não é possível, usamos can't depois de I'm afraid I, não don't."
   ],
   "examples": [
    [
-    "Lia says, \"I'm afraid I can't. I work until noon on Saturday.\"",
-    "Lia diz: \"Infelizmente não posso. Trabalho até o meio-dia no sábado.\""
+    "She calls the salon, and the stylist says, \"How about Thursday?\"",
+    "Ela liga para o salão, e a cabeleireira diz: \"Que tal quinta?\""
    ],
    [
-    "I'm afraid I can't. I don't finish work until six.",
-    "Infelizmente não posso. Só saio do trabalho às seis."
+    "I'm afraid I can't. I work until six on Thursday.",
+    "Infelizmente não posso. Trabalho até as seis na quinta."
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "How ___ Monday at six?",
+    "q": "How ___ Saturday at two?",
     "o": [
      "about",
-     "for",
-     "like"
+     "if",
+     "to"
     ],
-    "pt": "Que tal segunda às seis?",
-    "why": "A sugestão se faz com How about + horário ou dia."
+    "pt": "Que tal sábado às duas?",
+    "why": "A sugestão em inglês é How about + horário ou dia."
    },
    {
     "t": "l",
@@ -868,25 +874,26 @@
    },
    {
     "t": "b",
-    "pt": "Infelizmente não posso na sexta.",
+    "pt": "Que tal sábado às duas?",
+    "w": [
+     "How",
+     "about",
+     "Saturday",
+     "at",
+     "two"
+    ]
+   },
+   {
+    "t": "b",
+    "pt": "Infelizmente não posso ir na quinta.",
     "w": [
      "I'm",
      "afraid",
      "I",
      "can't",
+     "come",
      "on",
-     "Friday"
-    ]
-   },
-   {
-    "t": "b",
-    "pt": "Que tal segunda às seis?",
-    "w": [
-     "How",
-     "about",
-     "Monday",
-     "at",
-     "six"
+     "Thursday"
     ]
    }
   ],
@@ -895,7 +902,7 @@
  "566": {
   "title": "Reclamando de uma cobrança na conta do celular",
   "grammar_label": "Reclamar de uma cobrança: I'm calling about… / There's a problem with…",
-  "goal": "Explique o motivo da ligação com I'm calling about… e aponte o erro com There's a problem with…",
+  "goal": "Reclame de uma cobrança usando I'm calling about… e There's a problem with…",
   "sound": "/tʃ/ em March e charge",
   "pron_words": [
    "March",
@@ -904,12 +911,12 @@
   "pron_tip": "O 'ch' inglês é como o 'tch' de 'tchau', mas com os lábios um pouco projetados. March termina com esse som: não diga 'Márqui'.",
   "words": [
    [
-    "double-charged",
-    "cobrado em dobro"
+    "phone bill",
+    "conta de celular"
    ],
    [
-    "overcharge",
-    "cobrança a mais"
+    "double-charged",
+    "cobrado em dobro"
    ],
    [
     "dispute",
@@ -920,154 +927,159 @@
     "número de referência"
    ],
    [
-    "case number",
-    "número do protocolo"
-   ],
-   [
-    "apologies",
-    "pedido de desculpas"
+    "overcharge",
+    "cobrar a mais"
    ],
    [
     "look into",
     "investigar"
    ],
    [
-    "phone bill",
-    "conta de telefone"
+    "adding up",
+    "fazer sentido (contas)"
    ],
    [
-    "adding up",
-    "fazendo sentido (contas)"
+    "on my account",
+    "na minha conta"
+   ],
+   [
+    "sort out",
+    "resolver"
+   ],
+   [
+    "that's not right",
+    "isso não está certo"
    ]
   ],
   "reading": [
    [
-    "Rosa opens her phone bill and sees a problem.",
-    "Rosa abre a conta de telefone e vê um problema."
+    "Ana opens her phone bill and sees the same charge twice.",
+    "Ana abre a conta do celular e vê a mesma cobrança duas vezes."
    ],
    [
-    "She was double-charged for the same plan in March.",
-    "Ela foi cobrada em dobro pelo mesmo plano em março."
+    "The numbers aren't adding up.",
+    "Os números não batem."
    ],
    [
-    "She calls the company and says, \"I'm calling about my bill.\"",
-    "Ela liga para a empresa e diz: \"Estou ligando sobre a minha conta.\""
+    "She thinks she was double-charged $40, so she wants to dispute it.",
+    "Ela acha que foi cobrada $40 em dobro, então quer contestar."
    ],
    [
-    "\"There's a problem with the amount,\" she says. \"It's not adding up.\"",
-    "\"Há um problema com o valor\", ela diz. \"A conta não bate.\""
+    "She calls the company and says, \"I'm calling about my phone bill. There's a problem with the total.\"",
+    "Ela liga para a empresa e diz: \"Estou ligando sobre a minha conta de celular. Há um problema com o total.\""
    ],
    [
-    "The agent says, \"Apologies for the mistake. I'll look into it.\"",
-    "O atendente diz: \"Desculpe pelo erro. Vou investigar.\""
+    "The agent says, \"I'll look into it, Ms. Silva.\"",
+    "O atendente diz: \"Vou investigar, Sra. Silva.\""
    ],
    [
-    "She gets a case number and waits for an answer.",
-    "Ela recebe um número de protocolo e espera uma resposta."
+    "Ana feels better and writes down the reference number.",
+    "Ana se sente melhor e anota o número de referência."
    ]
   ],
   "dialogue": [
    [
-    "Thank you for calling Nova Mobile. This is Dan. How can I help?",
-    "Obrigado por ligar para a Nova Mobile. Aqui é o Dan. Como posso ajudar?"
+    "Thank you for calling Blue Mobile. How can I help?",
+    "Obrigado por ligar para a Blue Mobile. Como posso ajudar?"
    ],
    [
-    "Hi, I'm calling about my bill. There's a problem with the charge for March.",
-    "Oi, estou ligando sobre a minha conta. Há um problema com a cobrança de março."
+    "Hi, I'm calling about my March bill. There's a problem with the total.",
+    "Oi, estou ligando sobre a minha conta de março. Há um problema com o total."
    ],
    [
-    "I'm sorry to hear that. Could I have your reference number, please?",
-    "Sinto muito. Pode me dar o seu número de referência, por favor?"
+    "Let me pull up your account. What's wrong exactly?",
+    "Deixe-me abrir a sua conta. O que há de errado exatamente?"
    ],
    [
-    "Sure. It's 48-2291. I think it's an overcharge of thirty dollars.",
-    "Claro. É 48-2291. Acho que é uma cobrança a mais de trinta dólares."
+    "I paid $40 twice for the same plan. That's not right!",
+    "Paguei $40 duas vezes pelo mesmo plano. Isso não está certo!"
    ],
    [
-    "Let me take a look. You're right, the plan appears twice. I apologize.",
-    "Deixe-me dar uma olhada. Você tem razão, o plano aparece duas vezes. Peço desculpas."
+    "I see it. It looks like we overcharged you when your plan changed.",
+    "Estou vendo. Parece que cobramos a mais quando o seu plano mudou."
    ],
    [
-    "So can I dispute the extra charge? I don't want to pay it.",
-    "Então posso contestar a cobrança extra? Não quero pagá-la."
+    "So will the extra $40 go back on my account?",
+    "Então os $40 a mais voltam para a minha conta?"
    ],
    [
-    "Of course. I've opened a case, and your case number is 7714.",
-    "Claro. Abri um chamado, e o seu número de protocolo é 7714."
+    "Yes, within three days. I'm sorry about that.",
+    "Sim, em até três dias. Sinto muito por isso."
    ],
    [
-    "Great. Will the thirty dollars come off my next bill?",
-    "Ótimo. Os trinta dólares vão sair da minha próxima conta?"
+    "Thanks. Is there anything else I need to do?",
+    "Obrigada. Preciso fazer mais alguma coisa?"
    ],
    [
-    "Yes. You'll see the new total on the fifth of April.",
-    "Sim. Você verá o novo total no dia cinco de abril."
+    "No, I'll sort out the problem today. Your reference number is 7741.",
+    "Não, eu resolvo o problema hoje. O seu número de referência é 7741."
    ],
    [
-    "Perfect. I'll keep the number 7714. Thanks, Dan.",
-    "Perfeito. Vou guardar o número 7714. Obrigada, Dan."
+    "Okay, 7741. Thanks for your help.",
+    "Certo, 7741. Obrigada pela ajuda."
    ]
   ],
   "grammar": [
-   "I'm calling ___ my bill.",
+   "I'm calling ___ my phone bill.",
    "about",
    "for",
-   "Estou ligando sobre a minha conta.",
-   "Para dizer o assunto da ligação usamos about, não for."
+   "Estou ligando sobre a minha conta de celular.",
+   "Para dizer o assunto da ligação usamos calling about, não calling for."
   ],
   "examples": [
    [
-    "She calls the company and says, \"I'm calling about my bill.\"",
-    "Ela liga para a empresa e diz: \"Estou ligando sobre a minha conta.\""
+    "She calls the company and says, \"I'm calling about my phone bill. There's a problem with the total.\"",
+    "Ela liga para a empresa e diz: \"Estou ligando sobre a minha conta de celular. Há um problema com o total.\""
    ],
    [
-    "Hi, I'm calling about my bill. There's a problem with the charge for March.",
-    "Oi, estou ligando sobre a minha conta. Há um problema com a cobrança de março."
+    "Hi, I'm calling about my March bill. There's a problem with the total.",
+    "Oi, estou ligando sobre a minha conta de março. Há um problema com o total."
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "There's a problem ___ the bill.",
+    "q": "There's a problem ___ my bill.",
     "o": [
      "with",
-     "of",
-     "in"
+     "in",
+     "on"
     ],
-    "pt": "Há um problema com a conta.",
-    "why": "A expressão fixa é a problem with something."
+    "pt": "Há um problema com a minha conta.",
+    "why": "Com problem usamos with: a problem with something."
    },
    {
     "t": "l",
-    "say": "I'm calling about my phone bill.",
+    "say": "I'm calling about my bill.",
     "o": [
-     "I'm calling about my phone bill.",
-     "I'm calling about my phone bell.",
-     "I'm calling about my phone ball."
+     "I'm calling about my bill.",
+     "I'm falling about my bill.",
+     "I'm calling about my ball."
     ],
-    "why": "Você ouviu bill (conta), não bell nem ball."
+    "why": "Você ouviu calling (ligando) e bill (conta), não falling nem ball."
    },
    {
     "t": "b",
-    "pt": "Estou ligando sobre a minha conta.",
+    "pt": "Estou ligando sobre a minha conta de celular.",
     "w": [
      "I'm",
      "calling",
      "about",
      "my",
+     "phone",
      "bill"
     ]
    },
    {
     "t": "b",
-    "pt": "Há um problema com a cobrança.",
+    "pt": "Há um problema com o total.",
     "w": [
      "There's",
      "a",
      "problem",
      "with",
      "the",
-     "charge"
+     "total"
     ]
    }
   ],
@@ -1076,13 +1088,13 @@
  "567": {
   "title": "Confirmando a entrega de um sofá",
   "grammar_label": "Confirmar dados: Let me check / So that's… / Let me read back",
-  "goal": "Confirme dados ao telefone com Let me check, So that's… e Let me read back…",
+  "goal": "Confirme dados por telefone usando Let me check, So that's… e Let me read back.",
   "sound": "/r/ em correct e read",
   "pron_words": [
    "correct",
    "read"
   ],
-  "pron_tip": "Para o 'r' inglês, a língua fica puxada para trás sem encostar em nada. Não use o 'h' do 'r' de 'rato' em read.",
+  "pron_tip": "Para o 'r' inglês, a língua fica puxada para trás, sem encostar em nada, e os lábios arredondam um pouco. Não use o som de 'h' do 'r' de 'rato' em read.",
   "words": [
    [
     "read back",
@@ -1101,146 +1113,157 @@
     "correto"
    ],
    [
-    "exactly",
-    "exatamente"
-   ],
-   [
     "jot down",
     "anotar rápido"
    ],
    [
     "ID number",
-    "número de documento"
+    "número do documento"
    ],
    [
     "gate code",
     "código do portão"
    ],
    [
-    "contact",
-    "contato"
+    "confirm",
+    "confirmar"
+   ],
+   [
+    "all set",
+    "tudo pronto"
+   ],
+   [
+    "sorry to keep you waiting",
+    "desculpe a demora"
    ]
   ],
   "reading": [
    [
-    "Priya buys a sofa online, and the store calls to confirm the delivery.",
-    "Priya compra um sofá on-line, e a loja liga para confirmar a entrega."
+    "Elena calls the store to confirm her sofa delivery.",
+    "Elena liga para a loja para confirmar a entrega do sofá."
    ],
    [
-    "\"Let me check the address,\" says the agent.",
-    "\"Deixe-me conferir o endereço\", diz o atendente."
+    "The clerk says, \"Let me check,\" and finds her order.",
+    "O atendente diz: \"Deixe-me conferir\" e acha o pedido dela."
    ],
    [
-    "He asks for her ID number and a contact phone.",
-    "Ele pede o número do documento dela e um telefone de contato."
+    "\"So that's 21 Pine Street, apartment 6B?\" he asks. \"Yes, that's correct,\" says Elena.",
+    "\"Então é Pine Street 21, apartamento 6B?\", ele pergunta. \"Sim, está correto\", diz Elena."
    ],
    [
-    "\"Let me read back your address,\" he says. \"Sixteen Oak Street, apartment 5.\"",
-    "\"Deixe-me reler o seu endereço\", ele diz. \"Oak Street, 16, apartamento 5.\""
+    "The driver will need her ID number, so she gets her license.",
+    "O motorista vai precisar do número do documento dela, então ela pega a carteira."
    ],
    [
-    "Priya says, \"That's correct, but the building has a gate code.\"",
-    "Priya diz: \"Está correto, mas o prédio tem um código no portão.\""
+    "Before they hang up, the clerk says, \"Let me read back the details.\"",
+    "Antes de desligarem, o atendente diz: \"Deixe-me reler os detalhes.\""
    ],
    [
-    "She asks him to jot down the code: 4-4-1-9.",
-    "Ela pede que ele anote o código: 4-4-1-9."
+    "Everything is right, and Elena is all set.",
+    "Está tudo certo, e Elena está pronta."
    ]
   ],
   "dialogue": [
    [
-    "Hi, this is Sam from Home Mart. I'm calling to confirm your delivery.",
-    "Oi, aqui é o Sam, da Home Mart. Estou ligando para confirmar a sua entrega."
+    "Home Comfort deliveries, this is Sam.",
+    "Entregas Home Comfort, Sam falando."
    ],
    [
-    "Oh, good. It's for Thursday, right?",
-    "Ah, que bom. É para quinta, certo?"
+    "Hi, Sam. This is Elena Park. I'm calling about my sofa for Friday.",
+    "Oi, Sam. Aqui é a Elena Park. Estou ligando sobre o meu sofá de sexta."
    ],
    [
-    "Let me check. Yes, Thursday between two and four. So that's 16 Oak Street, apartment 5?",
-    "Deixe-me ver. Sim, quinta entre duas e quatro. Então é Oak Street, 16, apartamento 5?"
+    "Let me check. Sorry to keep you waiting. Yes, it's on the truck for one to four.",
+    "Deixe-me conferir. Desculpe a demora. Sim, está no caminhão, entre uma e quatro."
    ],
    [
-    "Exactly. But I'll be at work, so my brother will receive it.",
-    "Exatamente. Mas estarei no trabalho, então meu irmão vai receber."
+    "Perfect. My building has a gate, so the driver will need the gate code.",
+    "Perfeito. Meu prédio tem portão, então o motorista vai precisar do código do portão."
    ],
    [
-    "No problem. Could you give me his phone number, please?",
-    "Sem problema. Pode me dar o telefone dele, por favor?"
+    "Go ahead. I'll jot down the number.",
+    "Pode falar. Vou anotar o número."
    ],
    [
-    "It's 555-0142. His name is Leo, and he'll show his ID.",
-    "É 555-0142. O nome dele é Leo, e ele vai mostrar o documento."
+    "It's 4291. And I'm in apartment 6B, 21 Pine Street.",
+    "É 4291. E eu estou no apartamento 6B, Pine Street 21."
    ],
    [
-    "Thanks. Let me double-check: Leo, 555-0142, gate code 4419. Is that right?",
-    "Obrigado. Deixe-me conferir de novo: Leo, 555-0142, código do portão 4419. Está certo?"
+    "So that's 4291, apartment 6B, 12 Pine Street?",
+    "Então é 4291, apartamento 6B, Pine Street 12?"
    ],
    [
-    "Yes, all correct. Thank you for calling, Sam.",
-    "Sim, tudo correto. Obrigada por ligar, Sam."
+    "No, 21, not 12. Twenty-one Pine Street.",
+    "Não, 21, e não 12. Pine Street vinte e um."
+   ],
+   [
+    "Oh, sorry. I'll double-check the address on the label. Okay, you're all set.",
+    "Ah, desculpe. Vou conferir o endereço de novo na etiqueta. Pronto, está tudo certo."
+   ],
+   [
+    "Great. So Friday, between one and four, 21 Pine Street. Thanks!",
+    "Ótimo. Então sexta, entre uma e quatro, Pine Street 21. Obrigada!"
    ]
   ],
   "grammar": [
-   "Let me ___ the date.",
+   "Let me ___ your order.",
    "check",
    "to check",
-   "Deixe-me conferir a data.",
-   "Depois de let me usamos o verbo simples, sem to."
+   "Deixe-me conferir o seu pedido.",
+   "Depois de Let me vem o verbo simples, sem to."
   ],
   "examples": [
    [
-    "\"Let me check the address,\" says the agent.",
-    "\"Deixe-me conferir o endereço\", diz o atendente."
+    "The clerk says, \"Let me check,\" and finds her order.",
+    "O atendente diz: \"Deixe-me conferir\" e acha o pedido dela."
    ],
    [
-    "\"Let me read back your address,\" he says. \"Sixteen Oak Street, apartment 5.\"",
-    "\"Deixe-me reler o seu endereço\", ele diz. \"Oak Street, 16, apartamento 5.\""
+    "So that's 4291, apartment 6B, 12 Pine Street?",
+    "Então é 4291, apartamento 6B, Pine Street 12?"
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "Let me ___ the time.",
+    "q": "So ___ 4291, apartment 6B?",
     "o": [
-     "check",
-     "to check",
-     "checking"
+     "that's",
+     "that",
+     "those"
     ],
-    "pt": "Deixe-me conferir a hora.",
-    "why": "Let me é seguido do verbo simples: check."
+    "pt": "Então é 4291, apartamento 6B?",
+    "why": "Para confirmar um dado usamos So that's… (that is)."
    },
    {
     "t": "l",
-    "say": "Let me read it back.",
+    "say": "Let me read back the address.",
     "o": [
-     "Let me read it back.",
-     "Let me read it black.",
-     "Let me lead it back."
+     "Let me read back the address.",
+     "Let me lead back the address.",
+     "Let me read back the addresses."
     ],
-    "why": "Você ouviu read it back (reler para confirmar)."
+    "why": "Você ouviu read (com r) e address no singular."
    },
    {
     "t": "b",
-    "pt": "Deixe-me conferir o endereço.",
+    "pt": "Deixe-me conferir o pedido.",
     "w": [
      "Let",
      "me",
      "check",
      "the",
-     "address"
+     "order"
     ]
    },
    {
     "t": "b",
-    "pt": "Então são duas da tarde?",
+    "pt": "Então é 4291, apartamento 6B.",
     "w": [
      "So",
      "that's",
-     "two",
-     "in",
-     "the",
-     "afternoon"
+     "4291",
+     "apartment",
+     "6B"
     ]
    }
   ],
@@ -1249,7 +1272,7 @@
  "568": {
   "title": "Pedindo ajuda para um vizinho que passou mal",
   "grammar_label": "Descrever um problema de saúde e o lugar numa ligação de emergência",
-  "goal": "Descreva o problema e o endereço numa ligação de emergência com He has… e We're at…",
+  "goal": "Descreva o problema e o endereço numa ligação de emergência com He has… e I'm on the corner of…",
   "sound": "/eɪ/ em stay e Main",
   "pron_words": [
    "stay",
@@ -1286,38 +1309,38 @@
     "a caminho"
    ],
    [
-    "unconscious",
-    "inconsciente"
+    "stay on the line",
+    "ficar na linha"
    ],
    [
-    "speaker phone",
-    "viva-voz"
+    "right away",
+    "agora mesmo"
    ]
   ],
   "reading": [
    [
-    "Elena finds her neighbor, Mr. Reed, on the floor of the laundry room.",
-    "Elena encontra o vizinho, o Sr. Reed, no chão da lavanderia."
+    "Tom finds his neighbor on the floor, holding his chest.",
+    "Tom encontra o vizinho no chão, segurando o peito."
    ],
    [
-    "She calls 911, and a dispatcher answers.",
-    "Ela liga para o 911, e uma atendente responde."
+    "He calls 911, and the dispatcher asks, \"What's your emergency?\"",
+    "Ele liga para o 911, e a atendente pergunta: \"Qual é a emergência?\""
    ],
    [
-    "\"My neighbor has chest pain, and he's very pale,\" she says.",
-    "\"Meu vizinho está com dor no peito e está muito pálido\", ela diz."
+    "\"My neighbor has chest pain, and he can't stand up,\" Tom says.",
+    "\"Meu vizinho está com dor no peito e não consegue ficar de pé\", diz Tom."
    ],
    [
-    "\"Stay calm and tell me your location,\" says the dispatcher.",
-    "\"Mantenha a calma e me diga onde vocês estão\", diz a atendente."
+    "The dispatcher says, \"Stay calm, and tell me where you are.\"",
+    "A atendente diz: \"Mantenha a calma e diga onde você está.\""
    ],
    [
-    "Elena says, \"We're at 20 Pine Street. The nearest cross street is Main.\"",
-    "Elena diz: \"Estamos na Pine Street, 20. A transversal mais próxima é a Main.\""
+    "\"I'm at 48 Main Street, near Oak,\" Tom says.",
+    "\"Estou na Main Street 48, perto da Oak\", diz Tom."
    ],
    [
-    "Soon she hears a siren, and a paramedic runs in.",
-    "Logo ela ouve uma sirene, e um paramédico entra correndo."
+    "Soon he hears a siren, and the paramedics come in.",
+    "Logo ele ouve uma sirene, e os paramédicos entram."
    ]
   ],
   "dialogue": [
@@ -1326,78 +1349,87 @@
     "911, qual é a sua emergência?"
    ],
    [
-    "My neighbor fell, and he isn't answering. I think he's unconscious.",
-    "Meu vizinho caiu e não responde. Acho que está inconsciente."
+    "My neighbor is on the floor, and he says he has chest pain.",
+    "Meu vizinho está no chão, e ele diz que está com dor no peito."
    ],
    [
-    "Is he breathing? Is he conscious? Can he talk to you?",
-    "Ele está respirando? Está consciente? Consegue falar com você?"
+    "Is he conscious? Is he breathing normally?",
+    "Ele está consciente? Está respirando normalmente?"
    ],
    [
-    "His eyes are open, but he can't talk. He has pain in his chest.",
-    "Os olhos dele estão abertos, mas ele não consegue falar. Ele está com dor no peito."
+    "Yes, he's conscious, but he looks very pale and he's sweating.",
+    "Sim, está consciente, mas parece muito pálido e está suando."
    ],
    [
-    "Okay, help is on the way. What's your address and the nearest cross street?",
-    "Certo, a ajuda está a caminho. Qual é o seu endereço e a transversal mais próxima?"
+    "Okay. What's your address, and what's the cross street?",
+    "Certo. Qual é o seu endereço e qual é a rua transversal?"
    ],
    [
-    "It's 20 Pine Street, apartment 1. The cross street is Main Avenue.",
-    "É Pine Street, 20, apartamento 1. A transversal é a Main Avenue."
+    "It's 48 Main Street, on the corner of Main and Oak. Apartment 3.",
+    "É Main Street 48, na esquina da Main com a Oak. Apartamento 3."
    ],
    [
-    "Good. Please stay calm and put me on speaker phone, so you can help him.",
-    "Bom. Por favor, mantenha a calma e me ponha no viva-voz, para poder ajudá-lo."
+    "Thanks. I'm sending an ambulance right away. Help is on the way, so please stay on the line.",
+    "Obrigada. Estou enviando uma ambulância agora mesmo. A ajuda está a caminho, então fique na linha."
    ],
    [
-    "You're on speaker phone now. I can see the ambulance outside!",
-    "Você está no viva-voz agora. Estou vendo a ambulância lá fora!"
+    "Okay, I'm staying on the line. Should I unlock the front door?",
+    "Certo, estou na linha. Devo destrancar a porta da frente?"
+   ],
+   [
+    "Yes, please. And keep him sitting down until the paramedics arrive.",
+    "Sim, por favor. E mantenha-o sentado até os paramédicos chegarem."
+   ],
+   [
+    "The door is open, and he's sitting down. Please hurry!",
+    "A porta está aberta, e ele está sentado. Por favor, venham rápido!"
    ]
   ],
   "grammar": [
-   "He ___ chest pain.",
+   "My neighbor ___ chest pain.",
    "has",
    "is",
-   "Ele está com dor no peito.",
-   "Para dizer que alguém sente uma dor, usamos have/has, não be."
+   "Meu vizinho está com dor no peito.",
+   "Para dizer que alguém sente dor, usamos have/has (has chest pain), não is."
   ],
   "examples": [
    [
-    "\"My neighbor has chest pain, and he's very pale,\" she says.",
-    "\"Meu vizinho está com dor no peito e está muito pálido\", ela diz."
+    "\"My neighbor has chest pain, and he can't stand up,\" Tom says.",
+    "\"Meu vizinho está com dor no peito e não consegue ficar de pé\", diz Tom."
    ],
    [
-    "It's 20 Pine Street, apartment 1. The cross street is Main Avenue.",
-    "É Pine Street, 20, apartamento 1. A transversal é a Main Avenue."
+    "It's 48 Main Street, on the corner of Main and Oak. Apartment 3.",
+    "É Main Street 48, na esquina da Main com a Oak. Apartamento 3."
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "My mother ___ a bad headache.",
+    "q": "I'm ___ 48 Main Street.",
     "o": [
-     "has",
-     "is",
-     "have"
+     "at",
+     "in",
+     "on"
     ],
-    "pt": "Minha mãe está com uma forte dor de cabeça.",
-    "why": "Com dor se diz has + dor; com she/he/mother usamos has."
+    "pt": "Estou na Main Street 48.",
+    "why": "Com número de endereço usamos at: at 48 Main Street."
    },
    {
     "t": "l",
-    "say": "Help is on the way.",
+    "say": "He has chest pain.",
     "o": [
-     "Help is on the way.",
-     "Hope is on the way.",
-     "Help is on the bay."
+     "He has chest pain.",
+     "He has chest paint.",
+     "She has chest pain."
     ],
-    "why": "Você ouviu Help is on the way (a ajuda está a caminho)."
+    "why": "Você ouviu He (ele) e pain (dor), não paint nem She."
    },
    {
     "t": "b",
-    "pt": "Ele está com dor no peito.",
+    "pt": "Meu vizinho está com dor no peito.",
     "w": [
-     "He",
+     "My",
+     "neighbor",
      "has",
      "chest",
      "pain"
@@ -1405,24 +1437,25 @@
    },
    {
     "t": "b",
-    "pt": "Fique calmo e me diga o endereço.",
+    "pt": "Estou na esquina da Main com a Oak.",
     "w": [
-     "Stay",
-     "calm",
-     "and",
-     "tell",
-     "me",
+     "I'm",
+     "on",
      "the",
-     "address"
+     "corner",
+     "of",
+     "Main",
+     "and",
+     "Oak"
     ]
    }
   ],
   "extras": {}
  },
  "569": {
-  "title": "Encerrando a ligação com uma amiga depois de um favor",
+  "title": "Encerrando uma ligação com o suporte de internet",
   "grammar_label": "Encerrar a ligação com educação: Is there anything else? / Thanks for calling",
-  "goal": "Encerre ligações com educação usando Is there anything else…? e Thanks for calling.",
+  "goal": "Encerre uma ligação com educação usando Is there anything else? e Thanks for calling.",
   "sound": "/ŋ/ em calling e anything",
   "pron_words": [
    "calling",
@@ -1447,84 +1480,92 @@
     "se cuide"
    ],
    [
-    "you're welcome",
-    "de nada"
+    "that's all",
+    "é só isso"
    ],
    [
-    "no worries",
-    "sem problema"
+    "pleasure",
+    "prazer (My pleasure = por nada)"
    ],
    [
-    "talk soon",
-    "falamos em breve"
+    "likewise",
+    "igualmente"
    ],
    [
-    "have a good one",
-    "tudo de bom"
+    "bye for now",
+    "tchau por enquanto"
    ],
    [
-    "catch you later",
-    "até mais"
+    "get back",
+    "retornar (get back to you)"
    ]
   ],
   "reading": [
    [
-    "Noah calls the city library to renew two books.",
-    "Noah liga para a biblioteca da cidade para renovar dois livros."
+    "Priya calls her internet company because her Wi-Fi keeps dropping.",
+    "Priya liga para a empresa de internet porque o Wi-Fi dela vive caindo."
    ],
    [
-    "The librarian renews them for three more weeks.",
-    "A bibliotecária renova os livros por mais três semanas."
+    "The agent fixes it in a minute, and Priya says, \"Thank you so much!\"",
+    "O atendente resolve em um minuto, e Priya diz: \"Muito obrigada!\""
    ],
    [
-    "\"Is there anything else I can help you with?\" she asks.",
-    "\"Posso ajudar com mais alguma coisa?\", ela pergunta."
+    "\"Is there anything else I can help you with?\" he asks.",
+    "\"Posso ajudar com mais alguma coisa?\", ele pergunta."
    ],
    [
-    "\"No, that's all. Thank you!\" Noah answers.",
-    "\"Não, é só isso. Obrigado!\", responde Noah."
+    "\"No, that's all,\" says Priya.",
+    "\"Não, é só isso\", diz Priya."
    ],
    [
-    "She says, \"Thanks for calling, and have a nice day.\"",
-    "Ela diz: \"Obrigada por ligar, e tenha um bom dia.\""
+    "\"Thanks for calling, and take care,\" says the agent.",
+    "\"Obrigado por ligar, e se cuide\", diz o atendente."
    ],
    [
-    "Noah says goodbye and puts his phone in his pocket.",
-    "Noah se despede e guarda o celular no bolso."
+    "Priya smiles and says, \"Thanks, Ravi. Bye for now!\"",
+    "Priya sorri e diz: \"Obrigada, Ravi. Tchau por enquanto!\""
    ]
   ],
   "dialogue": [
    [
-    "Mia, thanks for lending me your library card yesterday.",
-    "Mia, obrigado por me emprestar a sua carteirinha da biblioteca ontem."
+    "Net Plus, this is Ravi. How can I help?",
+    "Net Plus, Ravi falando. Como posso ajudar?"
    ],
    [
-    "You're welcome! Did you find all the books?",
-    "De nada! Você achou todos os livros?"
+    "Hi, Ravi. My Wi-Fi keeps dropping every evening.",
+    "Oi, Ravi. Meu Wi-Fi fica caindo toda noite."
    ],
    [
-    "Yes, all three. Sorry I called so late last night.",
-    "Sim, os três. Desculpe ter ligado tão tarde ontem à noite."
+    "Let me reset your router from here. It will take a minute.",
+    "Vou reiniciar o seu roteador daqui. Leva um minuto."
    ],
    [
-    "No worries. I was still awake. Is there anything else you need?",
-    "Sem problema. Eu ainda estava acordada. Precisa de mais alguma coisa?"
+    "Okay... Yes, it's working now. Thank you so much!",
+    "Certo... Sim, está funcionando agora. Muito obrigada!"
    ],
    [
-    "Just one thing. Are you free on Sunday for lunch?",
-    "Só uma coisa. Você está livre no domingo para almoçar?"
+    "My pleasure. Is there anything else I can help you with?",
+    "Por nada. Posso ajudar com mais alguma coisa?"
    ],
    [
-    "Sunday works. Let's meet at noon at the Green Café.",
-    "Domingo dá certo. Vamos nos encontrar ao meio-dia no Green Café."
+    "Yes, one more thing. Could someone check the line this week?",
+    "Sim, mais uma coisa. Alguém poderia verificar a linha esta semana?"
    ],
    [
-    "Perfect. I have to go now, my bus is here. Take care, and have a good one!",
-    "Perfeito. Tenho que ir agora, meu ônibus chegou. Se cuide, e tudo de bom!"
+    "Sure. A technician will get back to you tomorrow morning. Is there anything else?",
+    "Claro. Um técnico entra em contato com você amanhã de manhã. Mais alguma coisa?"
    ],
    [
-    "You too! See you Sunday at noon. Talk soon, and catch you later!",
-    "Você também! Até domingo ao meio-dia. Falamos em breve, e até mais!"
+    "No, that's all. Thank you, Ravi.",
+    "Não, é só isso. Obrigada, Ravi."
+   ],
+   [
+    "Thanks for calling Net Plus, and have a nice day!",
+    "Obrigado por ligar para a Net Plus, e tenha um bom dia!"
+   ],
+   [
+    "Likewise, Ravi. I'll wait for the call. Bye for now!",
+    "Igualmente, Ravi. Vou esperar a ligação. Tchau por enquanto!"
    ]
   ],
   "grammar": [
@@ -1532,59 +1573,59 @@
    "anything",
    "something",
    "Posso ajudar com mais alguma coisa?",
-   "Em perguntas usamos anything; something é mais comum em frases afirmativas."
+   "Em perguntas usamos anything (Is there anything else?), não something."
   ],
   "examples": [
    [
-    "\"Is there anything else I can help you with?\" she asks.",
-    "\"Posso ajudar com mais alguma coisa?\", ela pergunta."
+    "\"Is there anything else I can help you with?\" he asks.",
+    "\"Posso ajudar com mais alguma coisa?\", ele pergunta."
    ],
    [
-    "She says, \"Thanks for calling, and have a nice day.\"",
-    "Ela diz: \"Obrigada por ligar, e tenha um bom dia.\""
+    "My pleasure. Is there anything else I can help you with?",
+    "Por nada. Posso ajudar com mais alguma coisa?"
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "Thanks for ___.",
+    "q": "Thanks ___ calling.",
     "o": [
-     "calling",
-     "call",
-     "to call"
+     "for",
+     "to",
+     "at"
     ],
     "pt": "Obrigado por ligar.",
-    "why": "Depois de thanks for usamos o verbo com -ing."
+    "why": "Agradecemos por algo com thanks for + -ing."
    },
    {
     "t": "l",
-    "say": "Is there anything else?",
+    "say": "Thanks for calling.",
     "o": [
-     "Is there anything else?",
-     "Is there anyone else?",
-     "Is there anywhere else?"
+     "Thanks for calling.",
+     "Thanks for falling.",
+     "Thanks for coming."
     ],
-    "why": "Você ouviu anything (alguma coisa), não anyone nem anywhere."
+    "why": "Você ouviu calling (ligando), com o som /k/, e não falling nem coming."
    },
    {
     "t": "b",
-    "pt": "Obrigado por ligar para a biblioteca.",
+    "pt": "Mais alguma coisa?",
     "w": [
-     "Thanks",
-     "for",
-     "calling",
-     "the",
-     "library"
+     "Is",
+     "there",
+     "anything",
+     "else"
     ]
    },
    {
     "t": "b",
-    "pt": "Tenha um bom dia.",
+    "pt": "Obrigado por ligar para a Net Plus.",
     "w": [
-     "Have",
-     "a",
-     "nice",
-     "day"
+     "Thanks",
+     "for",
+     "calling",
+     "Net",
+     "Plus"
     ]
    }
   ],
@@ -1593,7 +1634,7 @@
  "570": {
   "title": "Revisão: um dia de ligações na loja de bicicletas",
   "grammar_label": "Revisão: um dia de ligações (mini-história)",
-  "goal": "Revise pedidos, recados, confirmações e despedidas ao telefone num dia de trabalho.",
+  "goal": "Revise pedidos, recados, números, remarcações, confirmações e despedidas em ligações.",
   "sound": "/ɛ/ em dead e heads",
   "pron_words": [
    "dead",
@@ -1626,182 +1667,200 @@
     "bateria descarregada"
    ],
    [
-    "directory",
-    "lista telefônica"
-   ],
-   [
     "speak soon",
-    "falamos em breve"
+    "até logo"
    ],
    [
-    "sign off",
-    "encerrar a ligação"
+    "call it a day",
+    "encerrar por hoje"
+   ],
+   [
+    "phone tag",
+    "pega-pega do telefone"
    ]
   ],
   "reading": [
    [
-    "Tom wants to wrap up his phone calls before lunch.",
-    "Tom quer terminar as ligações antes do almoço."
+    "It's almost six at Noah's bike shop, and he wants to wrap up.",
+    "Quase seis horas na loja de bicicletas do Noah, e ele quer encerrar o dia."
    ],
    [
-    "First, he looks for a number in the directory.",
-    "Primeiro, ele procura um número na lista telefônica."
+    "He still has one call to make, but he hates playing phone tag.",
+    "Ele ainda tem uma ligação para fazer, mas odeia ficar no pega-pega do telefone."
    ],
    [
-    "Then he calls a supplier to touch base about a late order.",
-    "Depois liga para um fornecedor para falar sobre um pedido atrasado."
+    "\"Could I speak to Ms. Cruz?\" he asks. \"She's out,\" says her husband. \"Can I take a message?\"",
+    "\"Eu poderia falar com a Sra. Cruz?\", ele pergunta. \"Ela saiu\", diz o marido. \"Posso anotar um recado?\""
    ],
    [
-    "\"Just a heads up,\" the supplier says, \"the tires will arrive on Friday.\"",
-    "\"Só um aviso\", diz o fornecedor, \"os pneus chegam na sexta.\""
+    "\"Yes. Tell her that her bike is ready, and I'll follow up tomorrow.\"",
+    "\"Sim. Diga a ela que a bicicleta está pronta, e eu retorno amanhã.\""
    ],
    [
-    "At noon, Tom's phone has a dead battery, so he plugs it in.",
-    "Ao meio-dia, o celular do Tom está com a bateria descarregada, então ele o carrega."
+    "\"I'm afraid she's busy tomorrow,\" he says. \"How about Saturday?\"",
+    "\"Infelizmente ela está ocupada amanhã\", ele diz. \"Que tal sábado?\""
    ],
    [
-    "After lunch, he finishes the last call and feels happy.",
-    "Depois do almoço, ele termina a última ligação e fica feliz."
+    "\"Perfect,\" says Noah, and he decides to call it a day.",
+    "\"Perfeito\", diz Noah, e ele decide encerrar por hoje."
    ]
   ],
   "dialogue": [
    [
-    "Good afternoon, this is Tom from Speedy Bikes. Could I speak to Rosa Diaz?",
-    "Boa tarde, aqui é o Tom, da Speedy Bikes. Eu poderia falar com a Rosa Diaz?"
+    "Noah's Bikes, thanks for calling. How can I help?",
+    "Noah's Bikes, obrigado por ligar. Como posso ajudar?"
    ],
    [
-    "Speaking. Hi, Tom. Is my bike ready?",
-    "Sou eu. Oi, Tom. A minha bicicleta está pronta?"
+    "Hi, could I speak to the repair guy? My e-bike has a dead battery.",
+    "Oi, eu poderia falar com o mecânico? Minha bicicleta elétrica está com a bateria descarregada."
    ],
    [
-    "Almost. I'm calling to follow up on the new brakes. They arrive Friday.",
-    "Quase. Estou ligando para dar seguimento aos freios novos. Eles chegam na sexta."
+    "That's me. I'm afraid we're booked up this week, but how about Monday at ten?",
+    "Sou eu. Infelizmente estamos lotados esta semana, mas que tal segunda às dez?"
    ],
    [
-    "Friday is fine. Can I pick it up at five?",
-    "Sexta está bom. Posso buscar às cinco?"
+    "Monday works. Sorry, I have a bad connection. Could you speak up a little?",
+    "Segunda serve. Desculpe, a ligação está ruim. Você poderia falar um pouco mais alto?"
    ],
    [
-    "I'm afraid we close at five. How about four thirty?",
-    "Infelizmente fechamos às cinco. Que tal às quatro e meia?"
+    "Sure. Could you spell your last name, and what's your area code?",
+    "Claro. Você poderia soletrar o seu sobrenome e qual é o seu código de área?"
    ],
    [
-    "Four thirty is perfect. Sorry, my phone died earlier, so I missed your call.",
-    "Quatro e meia é perfeito. Desculpe, meu celular descarregou antes e perdi a sua ligação."
+    "It's Ito, I-T-O, and the area code is 415. My number is 555-0133.",
+    "É Ito, I-T-O, e o código de área é 415. Meu número é 555-0133."
    ],
    [
-    "No problem. Let's keep in touch, and I have to sign off now. Another customer is calling.",
-    "Sem problema. Vamos manter contato, e preciso encerrar agora. Outro cliente está ligando."
+    "Let me read back the number to double-check it. Okay, 555-0133.",
+    "Deixe-me reler o número para conferir de novo. Certo, 555-0133."
    ],
    [
-    "Sure. See you Friday at four thirty. Speak soon!",
-    "Claro. Até sexta às quatro e meia. Falamos em breve!"
+    "That's correct. Also, I think I was double-charged for my last repair.",
+    "Está correto. Além disso, acho que fui cobrado em dobro no último conserto."
+   ],
+   [
+    "I'll look into it right away and ring back this afternoon. Just a heads up, I might call after six.",
+    "Vou investigar agora mesmo e ligo de volta à tarde. Só um aviso: posso ligar depois das seis."
+   ],
+   [
+    "Okay, Monday at ten. That's all. Speak soon!",
+    "Certo, segunda às dez. É só isso. Até logo!"
    ]
   ],
   "grammar": [
-   "Could I ___ to Rosa, please?",
-   "speak",
-   "say",
-   "Eu poderia falar com a Rosa, por favor?",
-   "Com Could I ... to, o verbo certo para falar com alguém é speak."
+   "I'm afraid we ___ booked up this week.",
+   "are",
+   "do",
+   "Infelizmente estamos lotados esta semana.",
+   "Com booked up (estar lotado) usamos o verbo be: we are booked up."
   ],
   "examples": [
    [
-    "Good afternoon, this is Tom from Speedy Bikes. Could I speak to Rosa Diaz?",
-    "Boa tarde, aqui é o Tom, da Speedy Bikes. Eu poderia falar com a Rosa Diaz?"
+    "\"Could I speak to Ms. Cruz?\" he asks. \"She's out,\" says her husband. \"Can I take a message?\"",
+    "\"Eu poderia falar com a Sra. Cruz?\", ele pergunta. \"Ela saiu\", diz o marido. \"Posso anotar um recado?\""
    ],
    [
-    "I'm afraid we close at five. How about four thirty?",
-    "Infelizmente fechamos às cinco. Que tal às quatro e meia?"
+    "That's me. I'm afraid we're booked up this week, but how about Monday at ten?",
+    "Sou eu. Infelizmente estamos lotados esta semana, mas que tal segunda às dez?"
    ]
   ],
   "quiz": [
    {
     "t": "c",
-    "q": "Could I ___ to Dr. Lopez?",
+    "q": "Do you know what time the shop ___?",
     "o": [
-     "speak",
-     "say",
-     "tell"
+     "closes",
+     "does close",
+     "closing"
     ],
-    "pt": "Eu poderia falar com a Dra. Lopez?",
-    "why": "Para falar com alguém ao telefone usamos speak to."
+    "pt": "Você sabe a que horas a loja fecha?",
+    "why": "Na pergunta indireta o verbo vem depois do sujeito, sem do: the shop closes."
    },
    {
     "t": "l",
-    "say": "I'm afraid we close at five.",
+    "say": "Tell her that the bike is ready.",
     "o": [
-     "I'm afraid we close at five.",
-     "I'm afraid we close at nine.",
-     "I'm afraid we closed at five."
+     "Tell her that the bike is ready.",
+     "Tell her that the bike is red.",
+     "Tell her that the bike was ready."
     ],
-    "why": "Você ouviu close at five (fechamos às cinco), no presente."
+    "why": "Você ouviu ready (pronta), não red, e o verbo no presente."
    },
    {
     "t": "b",
-    "pt": "Posso falar com a Rosa?",
-    "w": [
-     "Could",
-     "I",
-     "speak",
-     "to",
-     "Rosa"
-    ]
-   },
-   {
-    "t": "b",
-    "pt": "Que tal às quatro e meia?",
+    "pt": "Que tal segunda às dez?",
     "w": [
      "How",
      "about",
-     "four",
-     "thirty"
+     "Monday",
+     "at",
+     "ten"
+    ]
+   },
+   {
+    "t": "b",
+    "pt": "Você poderia falar mais alto, por favor?",
+    "w": [
+     "Could",
+     "you",
+     "speak",
+     "up",
+     "please"
     ]
    }
   ],
-  "extras": {},
+  "extras": {
+   "touch base": [
+    "Let's touch base on Friday about the new order.",
+    "Vamos nos falar rapidinho na sexta sobre o novo pedido."
+   ],
+   "keep in touch": [
+    "Thanks for your help. Let's keep in touch.",
+    "Obrigado pela ajuda. Vamos manter contato."
+   ]
+  },
   "story": {
-   "title": "Um dia de ligações do Sam",
+   "title": "Um dia de ligações do Noah",
    "lines": [
     [
-     "Sam has a busy Monday and many calls to make.",
-     "Sam tem uma segunda-feira cheia e muitas ligações para fazer."
+     "Noah's bike shop is busy, and the phone rings all day.",
+     "A loja de bicicletas do Noah está cheia, e o telefone toca o dia todo."
     ],
     [
-     "First, he calls the clinic, and the switchboard puts him on hold.",
-     "Primeiro, ele liga para a clínica, e a central o deixa em espera."
+     "First, he calls a supplier, but reception puts him on hold, and he ends up with a voice mail.",
+     "Primeiro, ele liga para um fornecedor, mas a recepção o deixa em espera, e ele cai na caixa postal."
     ],
     [
-     "Nobody answers at the next number, so he leaves a voice mail.",
-     "Ninguém atende no número seguinte, então ele deixa uma mensagem de voz."
+     "A customer rings back, but there is a bad connection, so Noah asks her to speak up and slow down.",
+     "Uma cliente liga de volta, mas a ligação está ruim, então Noah pede que ela fale mais alto e mais devagar."
     ],
     [
-     "On the third call, the connection is bad, and he asks the man to speak up.",
-     "Na terceira ligação, a conexão está ruim, e ele pede que o homem fale mais alto."
+     "She spells her last name, says each digit of her number, and Noah jots it down.",
+     "Ela soletra o sobrenome, diz cada dígito do número, e Noah anota."
     ],
     [
-     "The man can't hear the name, so Sam spells it letter by letter.",
-     "O homem não ouve o nome, então Sam o soletra letra por letra."
+     "She wants to reschedule her repair, but the only slot is on Friday.",
+     "Ela quer remarcar o conserto, mas o único horário é na sexta."
     ],
     [
-     "At noon, he sees a double-charged bill and calls his phone company.",
-     "Ao meio-dia, ele vê uma conta cobrada em dobro e liga para a operadora."
+     "Another customer was double-charged, so Noah says he will look into it and reads back the receipt.",
+     "Outro cliente foi cobrado em dobro, então Noah diz que vai investigar e relê o recibo."
     ],
     [
-     "The agent says, \"I'll look into it. Let me read back your account number.\"",
-     "O atendente diz: \"Vou investigar. Deixe-me reler o número da sua conta.\""
+     "Then a boy calls about his grandpa, who fell off a bike, and Noah tells him to stay calm because the paramedics are on the way.",
+     "Então um menino liga por causa do avô, que caiu de uma bicicleta, e Noah diz para manter a calma porque os paramédicos estão a caminho."
     ],
     [
-     "In the afternoon, Sam needs to reschedule his dentist appointment.",
-     "À tarde, Sam precisa remarcar a consulta no dentista."
+     "Luckily, the grandpa is fine, and the family says, \"Thanks for calling!\"",
+     "Por sorte, o avô está bem, e a família diz: \"Obrigado por ligar!\""
     ],
     [
-     "The receptionist says, \"I'm afraid we're booked up, but how about Friday?\"",
-     "A recepcionista diz: \"Infelizmente estamos lotados, mas que tal sexta?\""
+     "At six, Noah asks himself, \"Is there anything else?\" and decides to call it a day.",
+     "Às seis, Noah se pergunta: \"Mais alguma coisa?\" e decide encerrar por hoje."
     ],
     [
-     "Sam says, \"Friday is perfect. Thank you, and have a nice day!\"",
-     "Sam diz: \"Sexta é perfeito. Obrigado, e tenha um bom dia!\""
+     "He checks the gate code, locks up, and says, \"Bye for now, phone!\"",
+     "Ele confere o código do portão, tranca tudo e diz: \"Tchau por enquanto, telefone!\""
     ]
    ]
   }
