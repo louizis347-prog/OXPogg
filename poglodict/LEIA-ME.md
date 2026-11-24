@@ -28,3 +28,6 @@ Alguns verbetes de corpus têm exemplos em revisão. Traduções e pinyin produz
 - Lições 51–180 não têm foto licenciada (usam a ilustração do tema) nem o laboratório animado de pronúncia (só texto).
 - Fonte e ferramentas: `tools/a1/` (`build.py` valida e gera os arquivos do app; `curriculum_51_130.json` é o currículo).
 - Não houve revisão humana de naturalidade nem de traduções.
+
+## Inglês A1 · lições 181–300 (autorais)
+As lições 181 a 300 do A1 de inglês (curso para brasileiros) agora seguem o padrão das 50 primeiras: título e gramática próprios, vocabulário do dicionário, leitura com 5 frases, diálogo de 8 falas, pronúncia, exercício de gramática e, nas lições múltiplas de 10, mini-história. Os dados ficam em `fontes/a1-181-300/*.json` (um arquivo por lição) e `english-a1-extra.js` é gerado por `tools/poglodict_build_a1.py`. A planilha do lote é `plano-ingles-a1-181-300.csv`. Ainda sem fotos próprias: cada lição usa uma foto provisória já existente (coluna “Descrição da imagem” da planilha). As lições 51–180 continuam como estavam. Sem áudio gravado nem animação de pronúncia para este lote.

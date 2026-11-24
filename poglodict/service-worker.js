@@ -1,4 +1,4 @@
-const cacheName='pogolo-dict-2026-11-24-v25';
+const cacheName='pogolo-dict-2026-11-24-v26';
 const allowed=['eng','spa','ita','deu','ara','jpn','por','cmn'];
 const shell=[
  './','index.html','style.css','platypus.svg','icon-192.png','icon-512.png','manifest.webmanifest',
@@ -6,7 +6,7 @@ const shell=[
  'grammar-examples.js','grammar-panel.js','lesson-vocabulary.js','stories.js','lexicon-review.js',
  'portuguese-course.js','sense-notes.js','study-tools.js','practice-ui.js','mandarin-course.js',
  'mandarin-pinyin.js','more-opening.js','more-grammar.js','extra-reviewed.js','writing.js','data-loader.js',
- 'theme-scenes.js','theme-lesson.js','professional.js','lesson-screens.js','lesson-photos.js','placement-data.js','placement.js','lesson-audio.js','lesson-media.js','scene-photo-pool.js','scene-photography.js','pronunciation.js','scene-extension.js','scene-dialogue-practice.js','roleplay-writing.js','lesson-progression.js','lesson-focus.js','word-use.js','distinct-lesson.js','english-a1-plan.js','english-a1-content.js','a1-pronunciation-data.js','a1-pronunciation-lab.js','plano-ingles-a1-01-50.csv','app.js',
+ 'theme-scenes.js','theme-lesson.js','professional.js','lesson-screens.js','lesson-photos.js','placement-data.js','placement.js','lesson-audio.js','lesson-media.js','scene-photo-pool.js','scene-photography.js','pronunciation.js','scene-extension.js','scene-dialogue-practice.js','roleplay-writing.js','lesson-progression.js','lesson-focus.js','word-use.js','distinct-lesson.js','english-a1-plan.js','english-a1-content.js','english-a1-extra.js','a1-pronunciation-data.js','a1-pronunciation-lab.js','plano-ingles-a1-01-50.csv','app.js',
  'lesson-cup.webp','lesson-ticket.webp','lesson-city.webp','lesson-chat.webp','lesson-notebook.webp','lesson-park.webp','lesson-health.webp','lesson-map.webp',
  'photo-bakery-1.webp','photo-bakery-2.webp','photo-bread-1.webp','photo-takeout-1.webp','photo-takeout-2.webp',
  'photo-counter-1.webp','photo-counter-2.webp','photo-payment-1.webp','photo-train-1.webp','photo-train-2.webp',
