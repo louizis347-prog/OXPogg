@@ -1,6 +1,6 @@
 {
  "n": 242,
- "title": "Resfriado antes da prova",
+ "title": "Gripe antes da prova",
  "photo": "clinic-1",
  "art": "health",
  "photos": [
@@ -11,20 +11,20 @@
  "goal": "Use have/has + a headache, a cold ou a fever para dizer o que você sente.",
  "words": [
   [
-   "headache",
-   "dor de cabeça"
+   "flu",
+   "gripe"
   ],
   [
-   "fever",
-   "febre"
-  ],
-  [
-   "temperature",
-   "temperatura"
+   "backache",
+   "dor nas costas"
   ],
   [
    "throat",
    "garganta"
+  ],
+  [
+   "ear",
+   "ouvido"
   ]
  ],
  "reading": [
@@ -33,38 +33,38 @@
    "Ava está com dor de cabeça esta manhã."
   ],
   [
-   "Her brother has a cold.",
-   "O irmão dela está resfriado."
+   "Her brother has the flu.",
+   "O irmão dela está com gripe."
   ],
   [
-   "He has a fever and a sore throat.",
-   "Ele tem febre e dor de garganta."
+   "He has a cough and a sore throat.",
+   "Ele tem tosse e dor de garganta."
   ],
   [
    "Their mother takes his temperature.",
    "A mãe deles mede a temperatura dele."
   ],
   [
-   "It is thirty-eight degrees.",
-   "São trinta e oito graus."
+   "His ear hurts, so he stays in bed.",
+   "O ouvido dele dói, então ele fica na cama."
   ]
  ],
  "dialogue": [
   [
-   "Do you have a fever, Noah?",
-   "Você está com febre, Noah?"
+   "Do you have the flu, Noah?",
+   "Você está com gripe, Noah?"
   ],
   [
-   "Yes, I have a fever.",
-   "Sim, estou com febre."
+   "Yes, I have the flu.",
+   "Sim, estou com gripe."
   ],
   [
    "Do you have a headache too?",
    "Você também está com dor de cabeça?"
   ],
   [
-   "No, but I have a cold.",
-   "Não, mas estou resfriado."
+   "No, but I have a backache.",
+   "Não, mas estou com dor nas costas."
   ],
   [
    "Does your throat hurt?",
@@ -75,8 +75,8 @@
    "Sim, dói quando eu falo."
   ],
   [
-   "So you have a cold and a fever?",
-   "Então você tem um resfriado e febre?"
+   "So you have the flu and a backache?",
+   "Então você tem gripe e dor nas costas?"
   ],
   [
    "Yes, and I stay home today.",
@@ -98,5 +98,5 @@
   "Ava está com dor de cabeça.",
   "Com she/he/Ava, usamos has, não have."
  ],
- "pattern": "\\bhas? a (?:headache|cold|fever)\\b|\\bhave a (?:headache|cold|fever)\\b"
+ "pattern": "\\bhas? (?:a|the) (?:headache|flu|backache|cough)\\b|\\bhave (?:a|the) (?:headache|flu|backache)\\b"
 }

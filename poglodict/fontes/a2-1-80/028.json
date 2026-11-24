@@ -19,12 +19,12 @@
    "mais barulhento"
   ],
   [
-   "bus",
-   "ônibus"
+   "district",
+   "bairro"
   ],
   [
-   "crossing",
-   "faixa de pedestres"
+   "runners",
+   "corredores"
   ]
  ],
  "reading": [
@@ -63,8 +63,8 @@
    "Como é o estacionamento de manhã?"
   ],
   [
-   "Terrible. The buses are the most crowded.",
-   "Terrível. Os ônibus são os mais lotados."
+   "Terrible. The avenues are the most crowded.",
+   "Terrível. As avenidas são as mais lotadas."
   ],
   [
    "Here it is quieter, but there is less to do.",
@@ -98,5 +98,15 @@
   "A cidade é mais lotada que o vilarejo.",
   "Crowded é um adjetivo longo para comparar: more crowded."
  ],
- "pattern": "\\b(?:noisier|quieter|more crowded|most crowded|less)\\b"
+ "pattern": "\\b(?:noisier|quieter|more crowded|most crowded|less)\\b",
+ "extra": {
+  "district": [
+   "Ben’s district is quieter than Ravi’s.",
+   "O bairro de Ben é mais silencioso que o de Ravi."
+  ],
+  "runners": [
+   "Runners like the quiet village more than the city.",
+   "Os corredores gostam mais do vilarejo silencioso que da cidade."
+  ]
+ }
 }

@@ -11,20 +11,20 @@
  "goal": "Use looks + adjetivo para dizer como uma pessoa parece estar.",
  "words": [
   [
-   "sleepy",
-   "com sono"
-  ],
-  [
    "serious",
    "sério"
   ],
   [
-   "smile",
-   "sorrir"
+   "bored",
+   "entediado"
   ],
   [
-   "sad",
-   "triste"
+   "lonely",
+   "sozinho"
+  ],
+  [
+   "afraid",
+   "com medo"
   ]
  ],
  "reading": [
@@ -33,8 +33,8 @@
    "O Noah está sentado à mesa com o café."
   ],
   [
-   "He looks sleepy and a little sad.",
-   "Ele parece cansado e um pouco triste."
+   "He looks bored and a little lonely.",
+   "Ele parece entediado e um pouco sozinho."
   ],
   [
    "Tina comes and says, “You look serious.”",
@@ -51,16 +51,16 @@
  ],
  "dialogue": [
   [
-   "Noah looks sleepy today.",
-   "O Noah parece cansado hoje."
+   "Noah looks bored today.",
+   "O Noah parece entediado hoje."
   ],
   [
    "Yes, he works late at night.",
    "É, ele trabalha até tarde da noite."
   ],
   [
-   "Does he look sad too?",
-   "Ele parece triste também?"
+   "Does he look lonely too?",
+   "Ele parece sozinho também?"
   ],
   [
    "No, he looks happy now.",
@@ -84,11 +84,11 @@
   ]
  ],
  "pron": [
-  "Acento em serious e sleepy",
-  "Em serious a força vai em SE-ri-ous. Em sleepy, a vogal longa: SLEE-py.",
+  "Acento em serious e bored",
+  "Em serious a força vai na primeira sílaba: SE-ri-ous. Em bored, o r é inglês e o d final é leve: BORD.",
   [
-   "sleepy",
-   "You look sleepy."
+   "bored",
+   "You look bored."
   ]
  ],
  "gram": [
@@ -98,5 +98,11 @@
   "Ela parece feliz hoje.",
   "Antes de adjetivo, use só looks, sem like."
  ],
- "pattern": "\\blooks? (sleepy|sad|serious|happy|better)"
+ "pattern": "\\blooks? (bored|lonely|serious|happy|better)",
+ "extra": {
+  "afraid": [
+   "I am afraid of the dark.",
+   "Eu tenho medo do escuro."
+  ]
+ }
 }

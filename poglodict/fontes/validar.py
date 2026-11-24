@@ -52,6 +52,13 @@ def check(n,d,allwords,alllines,a2=False):
         if re.fullmatch(r'[a-z]+',t.lower()) and t.lower() not in dictwords(): nod.append(t)
         k=t.lower()
         req(k not in allwords or allwords[k]==n,'vocabulário já usado em outra lição: '+t)
+    rare=[]
+    for t,_ in W:
+        for w in words(t.lower()):
+            lv=A.level(w)
+            if lv is None or A.RANK.get(lv,9)>3:
+                if w not in ('up','down','out','off','on','in','to','of','at','a','an','the','my','your','is','are','do','it','for','with','by','from','over','back','away','around','about','into','through') and w not in A.SKIP: rare.append(w)
+    req(len(rare)<=1,'palavras ensinadas acima de B1 ou fora da lista CEFR-J (máx. 1): %s'%rare)
     req(len(nod)<=1,'palavras fora do dicionário (máx. 1): %s'%nod)
     # CEFR
     names=set(NAMES)
@@ -109,15 +116,20 @@ if __name__=='__main__':
     for tag,dd in (('a1',data),('a2',data2)):
         for n,d in dd.items():
             key=n if tag=='a1' else 1000+n
-            for t,_ in d.get('words',[])[:2]: allwords.setdefault(t.lower(),key)
+            for t,_ in d.get('words',[]): allwords.setdefault(t.lower(),key)
             for x in d.get('reading',[])+d.get('dialogue',[]):
                 if len(x)==2: alllines.setdefault(x[0],key)
+    TW=set(json.load(open('/tmp/pd/theirs_words.json'))); TL=set(json.load(open('/tmp/pd/theirs_lines.json')))
     work=data2 if a2 else data; bad=0
     for n in (args and [int(x) for x in args] or sorted(work)):
         if n not in work: print(n,'FALTA');bad+=1;continue
         key=1000+n if a2 else n
         al={k:(n if v==key else v) for k,v in allwords.items()}; ll={k:(n if v==key else v) for k,v in alllines.items()}
         e=check(n,work[n],al,ll,a2)
+        for t,_ in work[n].get('words',[]):
+            if re.sub(r'[….?!]+$','',t.lower()).strip() in TW: e.append('vocabulário já ensinado nas lições A1 1–180 / A2 81–210 (outra sessão): '+t)
+        for x in work[n].get('reading',[])+work[n].get('dialogue',[])+(work[n].get('story') or ['',[]])[1]:
+            if x[0] in TL: e.append('frase idêntica a uma das lições A1 1–180 / A2 81–210: '+x[0])
         if e: bad+=1; print(n,'FAIL'); [print('   -',x) for x in e]
         else: print(n,'ok')
     print('com problema:',bad)

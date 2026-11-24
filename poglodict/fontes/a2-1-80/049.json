@@ -11,20 +11,20 @@
  "goal": "Use What are you going to do…?, Where…? e Who…? com be going to para perguntar sobre os planos de alguém.",
  "words": [
   [
-   "visitor",
-   "visitante"
-  ],
-  [
    "relax",
    "relaxar"
   ],
   [
    "guess",
-   "adivinhar"
+   "acho que"
   ],
   [
-   "nap",
-   "cochilo"
+   "mosque",
+   "mesquita"
+  ],
+  [
+   "easter",
+   "Páscoa"
   ]
  ],
  "reading": [
@@ -79,8 +79,8 @@
    "Você vai dormir até tarde no domingo?"
   ],
   [
-   "I wish! I have a lot of plans.",
-   "Quem dera! Tenho muitos planos."
+   "I guess not. I have a lot of plans.",
+   "Acho que não. Tenho muitos planos."
   ]
  ],
  "pron": [
@@ -98,5 +98,15 @@
   "O que você vai fazer no domingo?",
   "A pergunta com be going to começa com am/is/are antes do sujeito."
  ],
- "pattern": "\\b(?:what|where|who|when) (?:is|are) [a-z]+ going to\\b|\\b(?:is|are) [a-z]+ going to\\b"
+ "pattern": "\\b(?:what|where|who|when) (?:is|are) [a-z]+ going to\\b|\\b(?:is|are) [a-z]+ going to\\b",
+ "extra": {
+  "mosque": [
+   "They are going to see the old mosque on Saturday.",
+   "Eles vão ver a velha mesquita no sábado."
+  ],
+  "easter": [
+   "They are going to enjoy the Easter market in the old square.",
+   "Eles vão curtir a feira de Páscoa na velha praça."
+  ]
+ }
 }

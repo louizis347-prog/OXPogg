@@ -11,76 +11,76 @@
  "goal": "Use been to para dizer que alguém foi e voltou, e gone to para dizer que a pessoa foi e ainda está lá.",
  "words": [
   [
-   "valley",
-   "vale"
+   "canal",
+   "canal"
   ],
   [
-   "desert",
-   "deserto"
+   "cruise",
+   "cruzeiro"
   ],
   [
    "temple",
    "templo"
   ],
   [
-   "cave",
-   "caverna"
+   "jungle",
+   "selva"
   ]
  ],
  "reading": [
   [
-   "Nico has been to a big valley in Brazil.",
-   "O Nico já esteve em uma grande vale no Brasil."
+   "Tina is not here. She has gone to the canal.",
+   "A Tina não está aqui. Ela foi até o canal."
   ],
   [
-   "He has never been to a desert.",
-   "Ele nunca esteve em um deserto."
+   "Ben has been on a cruise twice with his family.",
+   "O Ben já fez dois cruzeiros com a família."
   ],
   [
-   "Tina is not home. She has gone to the old temple.",
-   "A Tina não está em casa. Ela foi ao templo velho."
+   "He has never been to the old temple in town.",
+   "Ele nunca foi ao templo antigo da cidade."
   ],
   [
-   "Her brother has gone to a cave with friends.",
-   "O irmão dela foi a uma caverna com amigos."
+   "Ava has gone to the temple to take photos.",
+   "A Ava foi ao templo tirar fotos."
   ],
   [
-   "They have not come back yet.",
-   "Eles ainda não voltaram."
+   "She will be back soon, so please wait for her.",
+   "Ela volta logo, então espere por ela, por favor."
   ]
  ],
  "dialogue": [
   [
-   "Have you ever been to a valley?",
-   "Você já foi a uma vale?"
+   "Have you ever been on a cruise?",
+   "Você já fez um cruzeiro?"
   ],
   [
-   "Yes, I have been to one in Brazil.",
-   "Sim, já fui a uma no Brasil."
+   "Yes, I have been on one with my parents.",
+   "Sim, fiz um com meus pais."
   ],
   [
-   "Have you been to a desert too?",
-   "Você também já foi a um deserto?"
+   "Where has your sister gone today?",
+   "Aonde sua irmã foi hoje?"
   ],
   [
-   "No, I have never been to one.",
-   "Não, nunca fui a um."
+   "She has gone to the canal with Ben.",
+   "Ela foi ao canal com o Ben."
   ],
   [
-   "Where is Tina? Her phone is here.",
-   "Cadê a Tina? O celular dela está aqui."
+   "Have you ever been to the temple?",
+   "Você já esteve no templo?"
   ],
   [
-   "She has gone to the old temple.",
-   "Ela foi até o templo velho."
+   "No, I have never been there.",
+   "Não, nunca estive lá."
   ],
   [
-   "And her brother? Is he with her?",
-   "E o irmão dela? Está com ela?"
+   "Would you like to go with us?",
+   "Quer ir com a gente?"
   ],
   [
-   "No, he has gone to a cave with friends.",
-   "Não, ele foi a uma caverna com amigos."
+   "Yes, I would love to. Let us go now.",
+   "Quero sim. Vamos agora."
   ]
  ],
  "pron": [
@@ -95,8 +95,14 @@
   "Tina is not here. She has ___ to the temple.",
   "gone",
   "been",
-  "Tina não está aqui. Ela foi até o templo.",
-  "Gone to quer dizer que a pessoa ainda não voltou; been to quer dizer que já voltou."
+  "A Tina não está aqui. Ela foi ao templo.",
+  "Gone to significa que a pessoa foi e ainda não voltou; been to é para quem já voltou."
  ],
- "pattern": "\\b(?:been|gone) to\\b"
+ "pattern": "\\b(?:been|gone) to\\b",
+ "extra": {
+  "jungle": [
+   "The jungle tour was hot, but fun.",
+   "O passeio pela selva foi quente, mas divertido."
+  ]
+ }
 }

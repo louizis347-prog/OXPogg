@@ -11,20 +11,20 @@
  "goal": "Use will probably e will definitely para mostrar o quanto você tem certeza sobre o futuro.",
  "words": [
   [
-   "forecast",
-   "previsão do tempo"
-  ],
-  [
-   "probably",
-   "provavelmente"
-  ],
-  [
    "definitely",
    "com certeza"
   ],
   [
    "degrees",
    "graus"
+  ],
+  [
+   "swimmers",
+   "nadadores"
+  ],
+  [
+   "surfing",
+   "surfe"
   ]
  ],
  "reading": [
@@ -33,8 +33,8 @@
    "O Ben olha a previsão do tempo no celular."
   ],
   [
-   "It will probably be sunny all afternoon.",
-   "Provavelmente vai ficar ensolarado a tarde toda."
+   "It will probably be eighty degrees all afternoon.",
+   "Provavelmente vai fazer uns trinta graus a tarde toda."
   ],
   [
    "He will definitely wear his new sunglasses.",
@@ -98,5 +98,15 @@
   "Provavelmente vai ficar ensolarado amanhã.",
   "Probably vem depois de will e antes do verbo base."
  ],
- "pattern": "\\bwill (?:probably|definitely)\\b|\\bprobably won’t\\b"
+ "pattern": "\\bwill (?:probably|definitely)\\b|\\bprobably won’t\\b",
+ "extra": {
+  "swimmers": [
+   "There will definitely be many swimmers in the water.",
+   "Com certeza vai ter muitos nadadores na água."
+  ],
+  "surfing": [
+   "His friends will probably try surfing in the afternoon.",
+   "Os amigos dele provavelmente vão tentar surfar à tarde."
+  ]
+ }
 }

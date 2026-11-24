@@ -1,6 +1,6 @@
 {
  "n": 204,
- "title": "De quem é esta chave?",
+ "title": "De quem é este telefone?",
  "photo": "desk-1",
  "art": "chat",
  "photos": [
@@ -11,12 +11,8 @@
  "goal": "Pergunte de quem é algo com Whose e responda com mine, yours ou hers sem repetir o substantivo.",
  "words": [
   [
-   "key",
-   "chave"
-  ],
-  [
-   "lamp",
-   "abajur"
+   "telephone",
+   "telefone"
   ],
   [
    "mine",
@@ -25,34 +21,38 @@
   [
    "yours",
    "seu"
+  ],
+  [
+   "hers",
+   "dela"
   ]
  ],
  "reading": [
   [
-   "Peg finds a key on the table.",
-   "Peg acha uma chave na mesa."
+   "Peg finds a telephone on the table.",
+   "Peg encontra um telefone na mesa."
   ],
   [
-   "Whose key is this?",
-   "De quem é esta chave?"
+   "“Whose telephone is this?” she asks.",
+   "“De quem é este telefone?”, ela pergunta."
   ],
   [
-   "It is Tina’s key.",
-   "É a chave da Tina."
+   "Tina says, “It is mine.”",
+   "Tina diz: “É meu.”"
   ],
   [
-   "Tina says the key is hers.",
-   "Tina diz que a chave é dela."
+   "“And this bag is hers,” Peg says.",
+   "“E esta bolsa é dela”, diz Peg."
   ],
   [
-   "Peg says the lamp is mine.",
-   "Peg diz que o abajur é meu."
+   "“Those keys are yours, Ravi.”",
+   "“Aquelas chaves são suas, Ravi.”"
   ]
  ],
  "dialogue": [
   [
-   "Whose lamp is this?",
-   "De quem é este abajur?"
+   "Whose umbrella is this?",
+   "De quem é este guarda-chuva?"
   ],
   [
    "It is mine.",
@@ -98,11 +98,5 @@
   "Este abajur não é seu. É meu.",
   "Mine substitui my + substantivo; me não serve."
  ],
- "pattern": "\\b(?:whose|mine|yours|hers)\\b",
- "extra": {
-  "lamp": [
-   "Whose lamp is this?",
-   "De quem é este abajur?"
-  ]
- }
+ "pattern": "\\b(?:whose|mine|yours|hers)\\b"
 }

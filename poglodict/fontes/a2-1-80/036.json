@@ -11,20 +11,20 @@
  "goal": "Use might ou may + verbo para falar de algo possível, mas não certo.",
  "words": [
   [
-   "cloudy",
-   "nublado"
-  ],
-  [
-   "sky",
-   "céu"
+   "mist",
+   "névoa"
   ],
   [
    "north",
    "norte"
   ],
   [
-   "fog",
-   "neblina"
+   "rumour",
+   "boato"
+  ],
+  [
+   "lily",
+   "lírio"
   ]
  ],
  "reading": [
@@ -33,8 +33,8 @@
    "Ava e Ravi planejam um piquenique para sábado."
   ],
   [
-   "The sky is cloudy this morning.",
-   "O céu está nublado esta manhã."
+   "There is mist over the lake this morning.",
+   "Há névoa sobre o lago nesta manhã."
   ],
   [
    "It might rain in the afternoon, says Ravi.",
@@ -59,8 +59,8 @@
    "Não sei. Pode chover."
   ],
   [
-   "The sky is cloudy now, but it may clear up.",
-   "O céu está nublado agora, mas pode abrir."
+   "There is mist now, but it may clear up.",
+   "Há névoa agora, mas pode abrir o tempo."
   ],
   [
    "What about the storm on the news?",
@@ -98,5 +98,15 @@
   "Pode chover esta tarde.",
   "Might vem direto antes do verbo, sem to."
  ],
- "pattern": "\\b(?:might|may)\\b"
+ "pattern": "\\b(?:might|may)\\b",
+ "extra": {
+  "rumour": [
+   "There is a rumour about a storm on Saturday.",
+   "Há um boato sobre uma tempestade no sábado."
+  ],
+  "lily": [
+   "Ava might bring a lily for the table.",
+   "Ava talvez leve um lírio para a mesa."
+  ]
+ }
 }

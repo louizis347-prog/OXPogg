@@ -19,12 +19,12 @@
    "embaixo de"
   ],
   [
-   "drawer",
-   "gaveta"
+   "container",
+   "pote"
   ],
   [
-   "road",
-   "estrada"
+   "junk",
+   "bagulho"
   ]
  ],
  "reading": [
@@ -42,25 +42,25 @@
   ],
   [
    "Her keys are behind the lamp.",
-   "As chaves dela estão atrás do abajur."
+   "As chaves dela estão atrás da lâmpada."
   ],
   [
-   "There is also a spoon in the drawer.",
-   "Também há uma colher na gaveta."
+   "There is also a spoon in the container.",
+   "Também há uma colher no pote."
   ]
  ],
  "dialogue": [
   [
    "Where are my keys?",
-   "Onde estão as minhas chaves?"
+   "Onde estão minhas chaves?"
   ],
   [
    "Are they behind the lamp?",
-   "Estão atrás do abajur?"
+   "Elas estão atrás da lâmpada?"
   ],
   [
    "Yes, they are behind the lamp.",
-   "Sim, estão atrás do abajur."
+   "Sim, estão atrás da lâmpada."
   ],
   [
    "Is there a bag on the chair?",
@@ -68,19 +68,19 @@
   ],
   [
    "Yes, there is a red one.",
-   "Tem, uma vermelha."
+   "Sim, tem uma vermelha."
   ],
   [
    "Are there books under the table?",
    "Tem livros embaixo da mesa?"
   ],
   [
-   "Yes, there are two of them.",
-   "Sim, tem dois."
+   "Yes, there are two. What is in the container?",
+   "Sim, tem dois. O que tem no pote?"
   ],
   [
-   "What is in the drawer?",
-   "O que tem na gaveta?"
+   "There is a clock and some junk.",
+   "Tem um relógio e uns bagulhos."
   ]
  ],
  "pron": [
@@ -100,13 +100,13 @@
  ],
  "pattern": "\\bthere (?:is|are)\\b|\\bbehind\\b|\\bunder\\b",
  "extra": {
-  "drawer": [
-   "The drawer is small.",
-   "A gaveta é pequena."
+  "container": [
+   "The container is empty.",
+   "O pote está vazio."
   ],
-  "road": [
-   "The road is wet.",
-   "A estrada está molhada."
+  "junk": [
+   "I have too much junk.",
+   "Eu tenho bagulho demais."
   ]
  }
 }

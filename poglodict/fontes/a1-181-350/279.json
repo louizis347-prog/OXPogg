@@ -11,20 +11,20 @@
  "goal": "Use o verbo na forma base para dar instruções: show, go, wait.",
  "words": [
   [
-   "gate",
-   "portão"
-  ],
-  [
-   "passport",
-   "passaporte"
-  ],
-  [
-   "flight",
-   "voo"
-  ],
-  [
    "straight",
    "em frente"
+  ],
+  [
+   "gift shop",
+   "loja de presentes"
+  ],
+  [
+   "get lost",
+   "se perder"
+  ],
+  [
+   "safe trip",
+   "boa viagem"
   ]
  ],
  "reading": [
@@ -45,8 +45,8 @@
    "Depois eles caminham até o portão doze."
   ],
   [
-   "They sit near the gate and wait.",
-   "Eles se sentam perto do portão e esperam."
+   "They wait near the gift shop.",
+   "Eles esperam perto da loja de presentes."
   ]
  ],
  "dialogue": [
@@ -55,8 +55,8 @@
    "Com licença, onde fica o portão doze?"
   ],
   [
-   "Go straight and turn left.",
-   "Siga em frente e vire à esquerda."
+   "Go straight and turn left. Do not get lost.",
+   "Siga em frente e vire à esquerda. Não se perca."
   ],
   [
    "Is my flight on time?",
@@ -98,5 +98,11 @@
   "Mostre seu passaporte, por favor.",
   "O imperativo usa o verbo na forma base."
  ],
- "pattern": "\\b(?:Go|Turn|Wait|Show|Sit|Walk|Please wait)\\b|do not be"
+ "pattern": "\\b(?:Go|Turn|Wait|Show|Sit|Walk|Please wait)\\b|do not be",
+ "extra": {
+  "safe trip": [
+   "Have a safe trip!",
+   "Tenha uma boa viagem!"
+  ]
+ }
 }

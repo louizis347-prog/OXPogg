@@ -15,16 +15,16 @@
    "esquecer"
   ],
   [
-   "shoe",
-   "sapato"
-  ],
-  [
    "find",
    "achar"
   ],
   [
-   "look",
-   "olhar"
+   "girlfriend",
+   "namorada"
+  ],
+  [
+   "pc",
+   "computador"
   ]
  ],
  "reading": [
@@ -37,12 +37,12 @@
    "Ele não a esqueceu em casa."
   ],
   [
-   "He looked in his bag and in his coat.",
-   "Ele olhou na bolsa e no casaco."
+   "He looked in his bag and near the PC.",
+   "Ele olhou na bolsa e perto do computador."
   ],
   [
-   "Peg did not see it on the table.",
-   "A Peg não viu a chave na mesa."
+   "His girlfriend did not see it on the table.",
+   "A namorada dele não viu a chave na mesa."
   ],
   [
    "Then Noah found it in his shoe.",
@@ -98,5 +98,15 @@
   "Noah não achou a chave dele.",
   "Depois de did not o verbo fica na forma base."
  ],
- "pattern": "\\bdid not [a-z]+"
+ "pattern": "\\bdid not [a-z]+",
+ "extra": {
+  "girlfriend": [
+   "Noah has a girlfriend named Peg.",
+   "O Noah tem uma namorada chamada Peg."
+  ],
+  "pc": [
+   "The PC is on the desk.",
+   "O computador está na mesa."
+  ]
+ }
 }

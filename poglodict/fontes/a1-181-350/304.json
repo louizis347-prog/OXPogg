@@ -11,20 +11,20 @@
  "goal": "Use Can I + verbo para oferecer ajuda e responda com Yes, please ou No, thank you.",
  "words": [
   [
-   "help",
-   "ajudar"
-  ],
-  [
    "carry",
    "carregar"
   ],
   [
-   "smile",
-   "sorriso"
+   "glad",
+   "contente"
   ],
   [
-   "kind",
-   "gentil"
+   "thanks",
+   "obrigado"
+  ],
+  [
+   "difficult",
+   "difícil"
   ]
  ],
  "reading": [
@@ -45,8 +45,8 @@
    "Ele carrega a caixa escada acima."
   ],
   [
-   "Tina says thank you with a smile.",
-   "A Tina agradece com um sorriso."
+   "Tina is glad and says thanks.",
+   "A Tina fica contente e diz obrigada."
   ]
  ],
  "dialogue": [
@@ -98,5 +98,11 @@
   "Posso levar a caixa?",
   "Para oferecer ajuda, use Can I + verbo."
  ],
- "pattern": "\\bcan i\\b"
+ "pattern": "\\bcan i\\b",
+ "extra": {
+  "difficult": [
+   "This box is difficult to open.",
+   "Esta caixa é difícil de abrir."
+  ]
+ }
 }

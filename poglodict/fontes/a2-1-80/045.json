@@ -11,20 +11,20 @@
  "goal": "Use Will you…? para pedir ajuda e Shall I…? para oferecer ajuda.",
  "words": [
   [
-   "lift",
-   "levantar"
+   "building",
+   "prédio"
   ],
   [
-   "borrow",
-   "pegar emprestado"
+   "danger",
+   "perigo"
   ],
   [
-   "cart",
-   "carrinho"
+   "bits",
+   "pedacinhos"
   ],
   [
-   "truck",
-   "caminhonete"
+   "guards",
+   "seguranças"
   ]
  ],
  "reading": [
@@ -45,8 +45,8 @@
    "Lou diz: “Você me faz um favor também?”"
   ],
   [
-   "“Will you borrow your uncle’s truck for me?”",
-   "“Você pode pegar emprestada a caminhonete do seu tio para mim?”"
+   "“Will you find a cart for the other boxes?”",
+   "“Você pode achar um carrinho para as outras caixas?”"
   ]
  ],
  "dialogue": [
@@ -79,8 +79,8 @@
    "Sim, por favor. E você espera por mim lá fora?"
   ],
   [
-   "Sure. I can borrow a cart from the store.",
-   "Claro. Posso pegar um carrinho emprestado na loja."
+   "Sure. I can take it to the building door.",
+   "Claro. Posso levá-la até a porta do prédio."
   ]
  ],
  "pron": [
@@ -98,5 +98,19 @@
   "Você pode levantar esta bolsa, por favor?",
   "Para pedir algo a outra pessoa use Will you…?; Shall I…? serve para oferecer ajuda."
  ],
- "pattern": "\\b(?:will you|shall I)\\b"
+ "pattern": "\\b(?:will you|shall I)\\b",
+ "extra": {
+  "danger": [
+   "Be careful on the stairs, because there is danger.",
+   "Cuidado na escada, porque há perigo."
+  ],
+  "bits": [
+   "Small bits of paper fall out of the box.",
+   "Pedacinhos de papel caem da caixa."
+  ],
+  "guards": [
+   "The guards at the door help with the boxes.",
+   "Os seguranças da porta ajudam com as caixas."
+  ]
+ }
 }

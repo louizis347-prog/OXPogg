@@ -1,6 +1,6 @@
 {
  "n": 61,
- "title": "O vizinho do piano",
+ "title": "O vizinho cirurgião",
  "photo": "street-1",
  "art": "chat",
  "photos": [
@@ -11,48 +11,48 @@
  "goal": "Use who depois de man, woman, people e girl para dizer de qual pessoa você fala.",
  "words": [
   [
-   "piano",
-   "piano"
+   "surgeon",
+   "cirurgião"
   ],
   [
-   "concert",
-   "concerto"
+   "hairdresser",
+   "cabeleireira"
   ],
   [
-   "balcony",
-   "varanda"
+   "hunter",
+   "caçador"
   ],
   [
-   "lady",
-   "senhora"
+   "policeman",
+   "policial"
   ]
  ],
  "reading": [
   [
-   "Ben has a neighbor who plays the piano.",
-   "Ben tem um vizinho que toca piano."
+   "Ben has a neighbor who is a surgeon.",
+   "O Ben tem um vizinho que é cirurgião."
   ],
   [
    "He is the man who lives next to the park.",
    "Ele é o homem que mora ao lado do parque."
   ],
   [
-   "Every evening, the man who plays the piano sits outside.",
-   "Toda noite, o homem que toca piano senta lá fora."
+   "His sister is a hairdresser who works near the station.",
+   "A irmã dele é cabeleireira e trabalha perto da estação."
   ],
   [
-   "Ben likes people who play music at night.",
-   "Ben gosta de gente que toca música à noite."
+   "The hunter who lives upstairs knows everyone here.",
+   "O caçador que mora no andar de cima conhece todo mundo aqui."
   ],
   [
-   "Tonight a girl who sings comes to the concert.",
-   "Hoje à noite uma garota que canta vem ao concerto."
+   "Tonight a policeman who plays drums joins the band.",
+   "Hoje à noite um policial que toca bateria entra na banda."
   ]
  ],
  "dialogue": [
   [
-   "Do you know the man who plays the piano?",
-   "Você conhece o homem que toca piano?"
+   "Do you know the man who works at the hospital?",
+   "Você conhece o homem que trabalha no hospital?"
   ],
   [
    "Yes, he is the neighbor who lives in number five.",
@@ -60,7 +60,7 @@
   ],
   [
    "Is he the one who has a red car?",
-   "Ele é aquele que tem um carro vermelho?"
+   "Ele é o que tem um carro vermelho?"
   ],
   [
    "No, that is the woman who works at the bank.",
@@ -68,19 +68,19 @@
   ],
   [
    "Who is the girl who sings with him?",
-   "Quem é a garota que canta com ele?"
+   "Quem é a moça que canta com ele?"
   ],
   [
-   "She is his sister, who visits every weekend.",
-   "Ela é a irmã dele, que visita todo fim de semana."
+   "She is his sister, who is a hairdresser.",
+   "É a irmã dele, que é cabeleireira."
   ],
   [
-   "Do you like neighbors who make music?",
-   "Você gosta de vizinhos que fazem música?"
+   "Do you know the hunter who lives here?",
+   "Você conhece o caçador que mora aqui?"
   ],
   [
-   "I do, but I like people who stop at ten.",
-   "Gosto, mas prefiro quem para às dez."
+   "Yes, she is the girl who says hello every day.",
+   "Sim, ela é a moça que diz oi todos os dias."
   ]
  ],
  "pron": [
@@ -98,5 +98,5 @@
   "Ben gosta do vizinho que toca piano.",
   "Para pessoas, use who depois do substantivo."
  ],
- "pattern": "(man|woman|neighbor|girl|people|neighbors|one|sister),? who\\b"
+ "pattern": "\\b\\w+,? who\\b"
 }

@@ -1,6 +1,6 @@
 {
  "n": 181,
- "title": "Acordando às seis",
+ "title": "Dormir e acordar",
  "photo": "clock-1",
  "art": "chat",
  "photos": [
@@ -11,20 +11,20 @@
  "goal": "Use a forma base do verbo depois de I, you, we e they para descrever o que você faz.",
  "words": [
   [
-   "wake up",
+   "wake",
    "acordar"
   ],
   [
-   "get up",
-   "levantar-se"
+   "doze",
+   "cochilar"
   ],
   [
-   "alarm",
-   "despertador"
+   "asleep",
+   "dormindo"
   ],
   [
-   "together",
-   "juntos"
+   "awake",
+   "acordado"
   ]
  ],
  "reading": [
@@ -33,20 +33,20 @@
    "Lia e Ravi moram numa casa pequena."
   ],
   [
-   "They wake up at six.",
-   "Eles acordam às seis."
+   "They wake up at six on weekdays.",
+   "Eles acordam às seis nos dias úteis."
   ],
   [
-   "The alarm is very loud.",
-   "O despertador é muito alto."
+   "Their dog is awake before them.",
+   "O cachorro deles já está acordado antes deles."
   ],
   [
-   "They get up and make tea.",
-   "Eles se levantam e fazem chá."
+   "After lunch they doze on the sofa.",
+   "Depois do almoço eles cochilam no sofá."
   ],
   [
-   "Then they have breakfast together.",
-   "Depois tomam café da manhã juntos."
+   "By ten at night they are asleep.",
+   "Às dez da noite eles já estão dormindo."
   ]
  ],
  "dialogue": [
@@ -55,32 +55,32 @@
    "A que horas você acorda?"
   ],
   [
-   "I wake up at six.",
-   "Eu acordo às seis."
+   "I wake up at six thirty.",
+   "Eu acordo às seis e meia."
   ],
   [
-   "Do you get up right away?",
-   "Você se levanta na hora?"
+   "Do you doze after lunch?",
+   "Você cochila depois do almoço?"
   ],
   [
-   "No, I read in bed first.",
-   "Não, primeiro leio na cama."
+   "Yes, we doze for ten minutes.",
+   "Sim, nós cochilamos por dez minutos."
   ],
   [
-   "Is your alarm loud?",
-   "Seu despertador é alto?"
+   "Are you awake late at night?",
+   "Você fica acordado até tarde à noite?"
   ],
   [
-   "Yes, we have a big old alarm.",
-   "Sim, temos um despertador grande e velho."
+   "No, I am asleep by ten.",
+   "Não, eu já estou dormindo às dez."
   ],
   [
-   "So you get up early?",
-   "Então você se levanta cedo?"
+   "So you wake up before Ravi?",
+   "Então você acorda antes do Ravi?"
   ],
   [
-   "Yes, I get up at six thirty.",
-   "Sim, eu me levanto às seis e meia."
+   "Yes, I wake up first every day.",
+   "Sim, eu acordo primeiro todo dia."
   ]
  ],
  "pron": [
@@ -98,11 +98,5 @@
   "Eles acordam às seis.",
   "Com they o verbo fica na forma base, sem -s."
  ],
- "pattern": "\\b(?:I|You|you|We|we|They|they) (?:wake up|get up)\\b",
- "extra": {
-  "early": [
-   "We get up early on Monday.",
-   "Nós nos levantamos cedo na segunda."
-  ]
- }
+ "pattern": "\\b(?:I|you|we|they) (?:wake|doze)\\b"
 }

@@ -11,34 +11,34 @@
  "goal": "Use give, buy e send com uma pessoa e uma coisa: give a gift to Ben, buy a gift for Ben.",
  "words": [
   [
-   "ribbon",
-   "fita, laço"
+   "jewelry",
+   "joias"
   ],
   [
-   "wrap",
-   "embrulhar"
-  ],
-  [
-   "blue",
-   "azul"
-  ],
-  [
-   "gold",
+   "golden",
    "dourado"
+  ],
+  [
+   "diamond",
+   "diamante"
+  ],
+  [
+   "pretty",
+   "bonito"
   ]
  ],
  "reading": [
   [
-   "Nico buys a gift for his sister.",
-   "O Nico compra um presente para a irmã."
+   "Nico buys jewelry for his sister.",
+   "O Nico compra joias para a irmã dele."
   ],
   [
-   "He wraps the box in blue paper.",
-   "Ele embrulha a caixa com papel azul."
+   "He wraps the box in white paper.",
+   "Ele embrulha a caixa em papel branco."
   ],
   [
-   "Then he puts a red ribbon on top.",
-   "Depois ele põe um laço vermelho em cima."
+   "Then he puts a golden ribbon on top.",
+   "Depois ele põe um laço dourado em cima."
   ],
   [
    "He cannot go to her house today.",
@@ -67,12 +67,12 @@
    "Claro. Eu entrego a você às seis."
   ],
   [
-   "Do you want a ribbon too?",
-   "Você quer um laço também?"
+   "Do you want a red ribbon too?",
+   "Você quer um laço vermelho também?"
   ],
   [
-   "Yes, a gold ribbon, please.",
-   "Sim, um laço dourado, por favor."
+   "Yes, a golden ribbon, please.",
+   "Quero, sim, um laço dourado, por favor."
   ],
   [
    "Do you send a card to her?",
@@ -100,9 +100,13 @@
  ],
  "pattern": "\\b(give|gives|buy|buys|send|sends)\\b.* (to|for) ",
  "extra": {
-  "wrap": [
-   "Please wrap the box.",
-   "Por favor, embrulhe a caixa."
+  "diamond": [
+   "The ring has a diamond.",
+   "O anel tem um diamante."
+  ],
+  "pretty": [
+   "The box is very pretty.",
+   "A caixa é muito bonita."
   ]
  }
 }

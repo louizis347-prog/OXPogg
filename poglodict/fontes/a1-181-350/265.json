@@ -15,16 +15,16 @@
    "estudar"
   ],
   [
-   "stop",
-   "parar"
-  ],
-  [
    "test",
    "prova"
   ],
   [
-   "cafe",
-   "café"
+   "papers",
+   "papéis"
+  ],
+  [
+   "letters",
+   "cartas"
   ]
  ],
  "reading": [
@@ -41,12 +41,12 @@
    "Depois ela parou e ligou para o Lou."
   ],
   [
-   "Lou carried two cups of tea.",
-   "Lou levou duas xícaras de chá."
+   "Lou carried the papers to the library.",
+   "O Lou levou os papéis para a biblioteca."
   ],
   [
-   "They want to stop and rest.",
-   "Eles querem parar e descansar."
+   "They wanted to stop and write letters.",
+   "Eles queriam parar e escrever cartas."
   ]
  ],
  "dialogue": [
@@ -67,12 +67,12 @@
    "Não, é tranquilo."
   ],
   [
-   "Who stopped at the cafe?",
-   "Quem parou no café?"
+   "Who stopped at the library?",
+   "Quem parou na biblioteca?"
   ],
   [
-   "Lou stopped there and carried tea.",
-   "O Lou parou lá e levou chá."
+   "Lou stopped there and carried papers.",
+   "O Lou parou lá e levou papéis."
   ],
   [
    "Who tried the new tea?",
@@ -98,5 +98,11 @@
   "Ela estudou na biblioteca.",
   "Verbo terminado em consoante + y troca o y por ied."
  ],
- "pattern": "\\b[a-z]+(?:ied|ped)\\b"
+ "pattern": "\\b[a-z]+(?:ied|ped)\\b",
+ "extra": {
+  "letters": [
+   "I write letters to my aunt.",
+   "Escrevo cartas para minha tia."
+  ]
+ }
 }

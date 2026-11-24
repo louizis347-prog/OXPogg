@@ -11,10 +11,6 @@
  "goal": "Use will not ou won’t para recusar algo e para prometer que você não vai fazer algo.",
  "words": [
   [
-   "promise",
-   "promessa"
-  ],
-  [
    "secret",
    "segredo"
   ],
@@ -23,8 +19,12 @@
    "mentir"
   ],
   [
-   "truth",
-   "verdade"
+   "swear",
+   "jurar"
+  ],
+  [
+   "spy",
+   "espião"
   ]
  ],
  "reading": [
@@ -55,8 +55,8 @@
    "Você pode guardar um segredo para mim?"
   ],
   [
-   "Yes, I promise I won’t tell anyone.",
-   "Sim, prometo que não vou contar a ninguém."
+   "Yes, I swear I won’t tell anyone.",
+   "Sim, eu juro que não conto a ninguém."
   ],
   [
    "Not even Ben? He asks a lot of questions.",
@@ -98,5 +98,11 @@
   "Prometo que não vou contar a ninguém.",
   "Para prometer ou recusar, use will not ou won’t + verbo base."
  ],
- "pattern": "\\b(?:won’t|will not)\\b"
+ "pattern": "\\b(?:won’t|will not)\\b",
+ "extra": {
+  "spy": [
+   "Ben acts like a spy and asks many questions.",
+   "Ben age como um espião e faz muitas perguntas."
+  ]
+ }
 }
