@@ -2,7 +2,7 @@
 """Lições A2 (431–560): prep | dedupe | build.   uso: python3 a2.py prep|dedupe|build"""
 import csv, glob, json, os, re, sys
 H = os.path.dirname(os.path.abspath(__file__)); R = os.path.join(H, '..', '..')
-cur = {c['n']: c for c in json.load(open(H + '/curriculum_a2_431_560.json'))}
+cur = {c['n']: c for f in sorted(glob.glob(H + '/curriculum_a2_*.json')) for c in json.load(open(f))}
 ctx = json.load(open(H + '/context_a2.json'))
 LOCAL = lambda n: n - 351          # índice dentro do nível A2
 st = lambda w: re.sub(r'(ing|ed|es|s)$', '', w.lower())
@@ -148,7 +148,7 @@ def build(force=False):
         if d.get('extras'): out.append('englishA2ExtraWordExamples[%d]=%s;' % (u, js(d['extras'])))
         rows.append([n, 'A2', c0['title'], ' / '.join(a + ' — ' + b for a, b in d['words']), c0['grammar'], c0['goal'], '', 'Sem foto (ilustração do tema)', '', '', '', ''])
     open(R + '/english-a2.js', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
-    with open(R + '/plano-ingles-a2-431-560.csv', 'w', encoding='utf-8-sig', newline='') as f:
+    with open(R + '/plano-ingles-a2-431-680.csv', 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.writer(f, delimiter=';', quoting=csv.QUOTE_ALL)
         w.writerow(['Lição', 'Nível', 'Título', 'Vocabulário inglês — português', 'Gramática', 'Objetivo', 'Imagem', 'Descrição da imagem', 'Autoria', 'Fonte', 'Licença', 'URL da licença']); w.writerows(rows)
     print('gerado', len(rows), 'lições; problemas:', len(errs))
