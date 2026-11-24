@@ -41,6 +41,10 @@
    [
     "expert",
     "especialista"
+   ],
+   [
+    "on duty",
+    "de plantão"
    ]
   ],
   "reading": [
@@ -91,8 +95,8 @@
     "Quarenta? Você é funcionário de período integral?"
    ],
    [
-    "Yes, I am. My sister works part-time in the same office, and she's still junior.",
-    "Sou, sim. Minha irmã trabalha meio período no mesmo escritório e ainda é júnior."
+    "Yes, I am. I'm on duty until six. My sister works part-time in the same office, and she's still junior.",
+    "Sim. Fico de plantão até as seis. Minha irmã trabalha meio período no mesmo escritório e ainda é júnior."
    ],
    [
     "Who is in charge of your team?",
@@ -185,11 +189,11 @@
    ],
    [
     "paper jam",
-    "papel preso"
+    "papel atolado"
    ],
    [
     "photocopy",
-    "fotocópia, copiar"
+    "fotocópia"
    ],
    [
     "out of order",
@@ -201,33 +205,29 @@
    ],
    [
     "figure out",
-    "descobrir, entender"
+    "descobrir"
    ],
    [
-    "equipment",
-    "equipamento"
+    "toner",
+    "toner"
    ],
    [
-    "assist",
-    "ajudar, auxiliar"
+    "cartridge",
+    "cartucho"
    ],
    [
-    "lend a hand",
-    "dar uma mãozinha"
+    "staple",
+    "grampear"
    ]
   ],
   "reading": [
    [
     "The photocopy machine in our office has a paper jam again.",
-    "A copiadora do nosso escritório está com papel preso de novo."
+    "A copiadora do nosso escritório está com papel atolado de novo."
    ],
    [
-    "Ben needs fifty copies before the meeting at ten.",
-    "Ben precisa de cinquenta cópias antes da reunião das dez."
-   ],
-   [
-    "He can't figure out how to open the back door of the machine.",
-    "Ele não consegue descobrir como abrir a porta de trás da máquina."
+    "Ben needs fifty copies before ten, but he can't figure out how to open it.",
+    "Ben precisa de cinquenta cópias antes das dez, mas não consegue descobrir como abri-la."
    ],
    [
     "He asks Lia, \"Could you give me a hand with this machine?\"",
@@ -238,8 +238,12 @@
     "Ela mostra o botão verde, e juntos eles puxam o papel."
    ],
    [
-    "Then the machine stops again, so Ben runs to the second floor.",
-    "Aí a máquina para de novo, e Ben corre para o segundo andar."
+    "Then the toner runs out, and Ben asks, \"Could you give me a hand with the cartridge?\"",
+    "Depois o toner acaba, e Ben pergunta: \"Você poderia me dar uma mão com o cartucho?\""
+   ],
+   [
+    "The machine on the second floor is out of order, so he is glad Lia is there.",
+    "A máquina do segundo andar está fora de serviço, então ele fica feliz por Lia estar ali."
    ]
   ],
   "dialogue": [
@@ -253,11 +257,11 @@
    ],
    [
     "There's a paper jam, and I can't figure out how to open the back.",
-    "Tem papel preso, e não consigo descobrir como abrir a parte de trás."
+    "Tem um papel atolado, e não consigo descobrir como abrir a parte de trás."
    ],
    [
-    "Press the green button first, then pull the paper out slowly.",
-    "Aperte o botão verde primeiro, depois puxe o papel devagar."
+    "Press the green button, then pull the paper out slowly.",
+    "Aperte o botão verde e puxe o papel devagar."
    ],
    [
     "Could you show me how? I need fifty copies before the meeting at ten.",
@@ -265,15 +269,23 @@
    ],
    [
     "Okay, watch my hands. There. Now you try.",
-    "Certo, olhe minhas mãos. Pronto. Agora tente você."
+    "Ok, olhe minhas mãos. Pronto. Agora tente você."
    ],
    [
-    "It works! Wait, the screen says out of order now.",
-    "Funcionou! Espere, a tela diz fora de serviço agora."
+    "It works! But now the toner is low. Could you give me a hand with the cartridge, too?",
+    "Funcionou! Mas agora o toner está acabando. Você poderia me dar uma mão com o cartucho também?"
    ],
    [
-    "Use the equipment on the second floor. I can lend a hand with the boxes, too.",
-    "Use o equipamento do segundo andar. Posso dar uma mãozinha com as caixas também."
+    "Sure. First, could you give me a hand with this box? The new cartridge is heavy.",
+    "Claro. Primeiro, você poderia me dar uma mão com esta caixa? O cartucho novo é pesado."
+   ],
+   [
+    "Of course. Okay, it's in. Where can I staple the copies?",
+    "Claro. Pronto, já está dentro. Onde posso grampear as cópias?"
+   ],
+   [
+    "Use the one on my desk. The machine upstairs is out of order, too.",
+    "Use o grampeador da minha mesa. A máquina lá de cima também está fora de serviço."
    ]
   ],
   "grammar": [
@@ -281,16 +293,16 @@
    "with",
    "for",
    "Você poderia me dar uma mão com estas caixas?",
-   "Depois de a hand, a ajuda com algo usa with."
+   "Depois de give me a hand, a ajuda com algo usa with."
   ],
   "examples": [
    [
-    "He asks Lia, \"Could you give me a hand with this machine?\"",
-    "Ele pergunta à Lia: \"Você poderia me dar uma mão com esta máquina?\""
-   ],
-   [
     "Lia, could you give me a hand with the photocopy machine?",
     "Lia, você poderia me dar uma mão com a copiadora?"
+   ],
+   [
+    "It works! But now the toner is low. Could you give me a hand with the cartridge, too?",
+    "Funcionou! Mas agora o toner está acabando. Você poderia me dar uma mão com o cartucho também?"
    ]
   ],
   "quiz": [
@@ -303,7 +315,7 @@
      "do"
     ],
     "pt": "Você poderia me dar uma mão com este relatório?",
-    "why": "A expressão fixa é give me a hand."
+    "why": "A expressão fixa é give me a hand; em português dizemos 'dar', não 'fazer'."
    },
    {
     "t": "l",
@@ -329,23 +341,17 @@
    },
    {
     "t": "b",
-    "pt": "A máquina está fora de serviço.",
+    "pt": "Você pode me mostrar como?",
     "w": [
-     "The",
-     "machine",
-     "is",
-     "out",
-     "of",
-     "order"
+     "Could",
+     "you",
+     "show",
+     "me",
+     "how"
     ]
    }
   ],
-  "extras": {
-   "assist": [
-    "The technician will assist us this afternoon.",
-    "O técnico vai nos ajudar esta tarde."
-   ]
-  }
+  "extras": {}
  },
  "573": {
   "title": "Ensinando a enviar uma encomenda",
@@ -356,7 +362,7 @@
    "sure",
    "she"
   ],
-  "pron_tip": "Arredonde os lábios e solte um 'ch' suave, como quando pedimos silêncio. Em sure o som vem no começo; não diga 'sur' com s.",
+  "pron_tip": "Arredonde os lábios e deixe o ar sair contínuo, como quem pede 'shhh'. Em sure o som vem no começo; não diga 'sur' com s.",
   "words": [
    [
     "instruction",
@@ -380,47 +386,51 @@
    ],
    [
     "go over",
-    "revisar, repassar"
+    "revisar"
    ],
    [
-    "efficient",
-    "eficiente"
+    "check twice",
+    "conferir duas vezes"
    ],
    [
-    "assign",
-    "designar, atribuir"
+    "scan",
+    "escanear"
+   ],
+   [
+    "barcode",
+    "código de barras"
    ]
   ],
   "reading": [
    [
     "Rosa has a new job: she trains Tom to send packages.",
-    "Rosa tem uma tarefa nova: ela treina o Tom para enviar encomendas."
+    "Rosa tem uma nova função: ela treina o Tom para enviar encomendas."
    ],
    [
     "First, she gives him the written instructions.",
-    "Primeiro, ela entrega a ele as instruções escritas."
+    "Primeiro, ela dá a ele as instruções escritas."
    ],
    [
     "Next, they go over the procedure step by step.",
-    "Depois, eles repassam o procedimento passo a passo."
+    "Depois, eles revisam o procedimento passo a passo."
    ],
    [
-    "Make sure you check the address twice, she says.",
-    "Certifique-se de conferir o endereço duas vezes, ela diz."
+    "\"Make sure you check twice,\" she says. \"One wrong address costs money.\"",
+    "\"Certifique-se de conferir duas vezes\", ela diz. \"Um endereço errado custa dinheiro.\""
    ],
    [
     "The boss gives Tom ten boxes, and he has to carry on alone.",
-    "O chefe dá dez caixas ao Tom, e ele tem de continuar sozinho."
+    "O chefe dá dez caixas ao Tom, e ele tem que continuar sozinho."
    ],
    [
-    "He is slow at first, but by noon he's very efficient.",
-    "Ele é lento no começo, mas ao meio-dia já é muito eficiente."
+    "He is slow at first, but by noon he scans each barcode in two seconds.",
+    "Ele é lento no começo, mas ao meio-dia escaneia cada código de barras em dois segundos."
    ]
   ],
   "dialogue": [
    [
-    "Tom, first, scan the label on the box.",
-    "Tom, primeiro, escaneie a etiqueta da caixa."
+    "Tom, first, scan the barcode on the box.",
+    "Tom, primeiro, escaneie o código de barras da caixa."
    ],
    [
     "Like this? The light is red.",
@@ -428,27 +438,27 @@
    ],
    [
     "Hold it closer. Good. Next, type the weight, and make sure it's correct.",
-    "Segure mais perto. Bom. Depois, digite o peso e certifique-se de que está certo."
+    "Chegue mais perto. Bom. Depois, digite o peso e certifique-se de que está certo."
    ],
    [
     "It's four kilos. What do I do after that?",
-    "São quatro quilos. O que eu faço depois disso?"
+    "São quatro quilos. O que faço depois?"
    ],
    [
     "Then print the receipt and put it in the plastic bag. Don't forget the tape.",
-    "Aí imprima o recibo e ponha na sacola plástica. Não esqueça a fita."
+    "Depois imprima o recibo e coloque na sacola plástica. Não esqueça a fita."
    ],
    [
     "Got it. Could you go over the steps once more? I'm a little nervous.",
-    "Entendi. Você pode repassar os passos mais uma vez? Estou um pouco nervoso."
+    "Entendi. Você pode revisar os passos mais uma vez? Estou um pouco nervoso."
    ],
    [
-    "Of course. Scan, type the weight, print, and then carry on with the next box.",
-    "Claro. Escaneie, digite o peso, imprima e continue com a próxima caixa."
+    "Of course. Scan, type the weight, print, and then carry on with the next box. Make sure you check twice.",
+    "Claro. Escaneie, digite o peso, imprima e continue com a próxima caixa. Confira duas vezes."
    ],
    [
-    "Okay. The boss assigns me ten boxes today, so I'll call you if there's a problem.",
-    "Certo. O chefe me atribui dez caixas hoje, então vou te chamar se houver problema."
+    "Okay. I'll call you if there's a problem. Thanks, Rosa!",
+    "Ok. Ligo para você se houver problema. Obrigado, Rosa!"
    ]
   ],
   "grammar": [
@@ -461,11 +471,11 @@
   "examples": [
    [
     "Next, they go over the procedure step by step.",
-    "Depois, eles repassam o procedimento passo a passo."
+    "Depois, eles revisam o procedimento passo a passo."
    ],
    [
     "Hold it closer. Good. Next, type the weight, and make sure it's correct.",
-    "Segure mais perto. Bom. Depois, digite o peso e certifique-se de que está certo."
+    "Chegue mais perto. Bom. Depois, digite o peso e certifique-se de que está certo."
    ]
   ],
   "quiz": [
@@ -526,10 +536,6 @@
   "pron_tip": "Faça um 'i' curto e relaxado, bem diferente do 'i' longo de feet. Em think e picnic a boca quase não se mexe.",
   "words": [
    [
-    "point of view",
-    "ponto de vista"
-   ],
-   [
     "proposal",
     "proposta"
    ],
@@ -538,24 +544,28 @@
     "comitê"
    ],
    [
-    "conclude",
-    "concluir"
-   ],
-   [
-    "negotiate",
-    "negociar"
+    "point of view",
+    "ponto de vista"
    ],
    [
     "come up with",
     "ter uma ideia, bolar"
    ],
    [
-    "option",
-    "opção"
-   ],
-   [
     "disagree",
     "discordar"
+   ],
+   [
+    "take a vote",
+    "votar"
+   ],
+   [
+    "good point",
+    "boa observação"
+   ],
+   [
+    "on the other hand",
+    "por outro lado"
    ]
   ],
   "reading": [
@@ -568,20 +578,20 @@
     "Elena tem uma proposta: um piquenique no parque em vez de um jantar."
    ],
    [
-    "Kenji disagrees because the weather in December is cold.",
-    "Kenji discorda porque o clima em dezembro é frio."
+    "Kenji disagrees because December is cold, and he's not sure about the park.",
+    "Kenji discorda porque dezembro é frio, e ele não tem certeza sobre o parque."
    ],
    [
-    "\"I think we should ask everyone,\" Priya says.",
-    "\"Acho que devemos perguntar a todos\", diz Priya."
+    "\"I think we should ask everyone,\" Priya says, and Elena says, \"I agree.\"",
+    "\"Acho que devemos perguntar a todos\", diz Priya, e Elena diz: \"Concordo\"."
    ],
    [
-    "From her point of view, the second option is cheaper, and nobody can come up with a better idea.",
-    "Do ponto de vista dela, a segunda opção é mais barata, e ninguém consegue bolar uma ideia melhor."
+    "From Kenji's point of view, an office lunch is simpler, and Priya can't come up with a better idea.",
+    "Do ponto de vista de Kenji, um almoço no escritório é mais simples, e Priya não consegue pensar em nada melhor."
    ],
    [
-    "In the end, they conclude the picnic is best, and Elena will negotiate the price with the park.",
-    "No fim, eles concluem que o piquenique é o melhor, e Elena vai negociar o preço com o parque."
+    "In the end, they take a vote, and the lunch wins.",
+    "No fim, eles votam, e o almoço ganha."
    ]
   ],
   "dialogue": [
@@ -594,28 +604,28 @@
     "Sinceramente, não tenho certeza. Um piquenique em dezembro pode ser muito frio."
    ],
    [
-    "True, but the restaurant option costs forty dollars per person.",
-    "Verdade, mas a opção do restaurante custa quarenta dólares por pessoa."
+    "True. On the other hand, a restaurant costs forty dollars per person.",
+    "Verdade. Por outro lado, um restaurante custa quarenta dólares por pessoa."
    ],
    [
-    "Really? That's expensive. I think we should check the budget first.",
-    "Sério? É caro. Acho que devemos conferir o orçamento primeiro."
+    "Really? That's expensive. I think we should ask everyone first.",
+    "Sério? Isso é caro. Acho que devemos perguntar a todos primeiro."
    ],
    [
-    "Good idea. Can you come up with a third option by Friday?",
-    "Boa ideia. Você consegue bolar uma terceira opção até sexta?"
+    "Good point. Can you come up with a cheaper idea by Friday?",
+    "Boa observação. Você pode bolar uma ideia mais barata até sexta?"
    ],
    [
-    "Maybe an office lunch. From my point of view, it's simple and cheap.",
-    "Talvez um almoço no escritório. Na minha opinião, é simples e barato."
+    "Maybe an office lunch. From my point of view, it's easy and cheap.",
+    "Talvez um almoço no escritório. Do meu ponto de vista, é fácil e barato."
    ],
    [
-    "I agree! Let's conclude the meeting now, and I'll negotiate with the caterer tomorrow.",
-    "Concordo! Vamos encerrar a reunião agora, e amanhã eu negocio com o buffet."
+    "I agree! Let's take a vote, and I'll write the notes for the committee.",
+    "Concordo! Vamos votar, e eu escrevo as anotações para o comitê."
    ],
    [
-    "Perfect. I'll write the notes and send them to the committee.",
-    "Perfeito. Vou escrever as anotações e enviar ao comitê."
+    "Perfect. I count ten hands, so the lunch wins.",
+    "Ótimo. Conto dez mãos, então o almoço ganha."
    ]
   ],
   "grammar": [
@@ -623,7 +633,7 @@
    "should",
    "should to",
    "Acho que devemos perguntar ao gerente.",
-   "Depois de should vem o verbo direto, sem to."
+   "Depois de should vem o verbo sem to."
   ],
   "examples": [
    [
@@ -631,8 +641,8 @@
     "Sinceramente, não tenho certeza. Um piquenique em dezembro pode ser muito frio."
    ],
    [
-    "Really? That's expensive. I think we should check the budget first.",
-    "Sério? É caro. Acho que devemos conferir o orçamento primeiro."
+    "Really? That's expensive. I think we should ask everyone first.",
+    "Sério? Isso é caro. Acho que devemos perguntar a todos primeiro."
    ]
   ],
   "quiz": [
@@ -641,11 +651,11 @@
     "q": "I think we ___ start earlier.",
     "o": [
      "should",
-     "must to",
-     "can to"
+     "should to",
+     "have"
     ],
     "pt": "Acho que devemos começar mais cedo.",
-    "why": "Should é seguido do verbo sem to."
+    "why": "Should é seguido do verbo sem to: we should start."
    },
    {
     "t": "l",
@@ -717,12 +727,12 @@
     "entregar"
    ],
    [
-    "submit",
-    "enviar, submeter"
-   ],
-   [
     "get back to",
     "retornar para alguém"
+   ],
+   [
+    "rush job",
+    "serviço urgente"
    ]
   ],
   "reading": [
@@ -747,8 +757,8 @@
     "Na quinta de manhã ela pede ao chefe para prorrogar o prazo até sexta."
    ],
    [
-    "He says yes, so she can submit the report on Friday.",
-    "Ele diz sim, então ela pode enviar o relatório na sexta."
+    "He says yes, so she can turn in the report on Friday.",
+    "Ele diz que sim, então ela pode entregar o relatório na sexta."
    ]
   ],
   "dialogue": [
@@ -761,20 +771,20 @@
     "Ainda não. Desculpe, estou atrasada com ele de novo."
    ],
    [
-    "The boss needs it ASAP. The client calls at four.",
-    "O chefe precisa dele o mais rápido possível. O cliente liga às quatro."
+    "It's a rush job. The boss needs it ASAP, and the client calls at four.",
+    "É um serviço urgente. O chefe precisa disso o mais rápido possível, e o cliente liga às quatro."
    ],
    [
     "I know. I haven't finished the last page yet because my computer froze.",
     "Eu sei. Ainda não terminei a última página porque meu computador travou."
    ],
    [
-    "Can you turn in the first part now? Then you can send the rest later.",
-    "Você pode entregar a primeira parte agora? Aí manda o resto depois."
+    "Can you send the first part now? Then you can finish the rest later.",
+    "Você pode enviar a primeira parte agora? Depois termina o resto."
    ],
    [
-    "Good idea. I'll submit the charts in twenty minutes.",
-    "Boa ideia. Vou enviar os gráficos em vinte minutos."
+    "Good idea. I'll turn in the charts in twenty minutes.",
+    "Boa ideia. Entrego os gráficos em vinte minutos."
    ],
    [
     "And ask the boss to extend the deadline if you need more time.",
@@ -782,7 +792,7 @@
    ],
    [
     "I will. I'll get back to you before four, I promise.",
-    "Vou pedir. Eu retorno para você antes das quatro, prometo."
+    "Vou pedir. Falo com você antes das quatro, prometo."
    ]
   ],
   "grammar": [
@@ -848,12 +858,7 @@
     ]
    }
   ],
-  "extras": {
-   "be late with": [
-    "I am late with the report again.",
-    "Estou atrasado com o relatório de novo."
-   ]
-  }
+  "extras": {}
  },
  "576": {
   "title": "Um e-mail para um cliente novo",
@@ -879,10 +884,6 @@
     "atenciosamente"
    ],
    [
-    "dear sir",
-    "prezado senhor"
-   ],
-   [
     "best wishes",
     "os melhores votos"
    ],
@@ -891,30 +892,34 @@
     "aguardar com expectativa"
    ],
    [
-    "subject",
-    "assunto"
+    "get in touch",
+    "entrar em contato"
    ],
    [
-    "enclose",
-    "incluir, enviar junto"
+    "feel free to",
+    "sinta-se à vontade para"
    ],
    [
-    "formal",
-    "formal"
+    "business e-mail",
+    "e-mail profissional"
+   ],
+   [
+    "subject line",
+    "assunto do e-mail"
    ]
   ],
   "reading": [
    [
-    "Priya writes an e-mail to a new client named Mr. Brown.",
-    "Priya escreve um e-mail para um cliente novo, o Sr. Brown."
+    "Priya writes a business e-mail to a new client, Mr. Brown.",
+    "Priya escreve um e-mail profissional para um cliente novo, o Sr. Brown."
    ],
    [
-    "The subject is short: Price list for March.",
+    "The subject line is short: Price list for March.",
     "O assunto é curto: Lista de preços de março."
    ],
    [
-    "She starts with a formal line: Dear Sir, I'm writing to ask about your order.",
-    "Ela começa com uma linha formal: Prezado senhor, escrevo para perguntar sobre o seu pedido."
+    "She starts: Dear Mr. Brown, I'm writing to ask about your order.",
+    "Ela começa: Prezado Sr. Brown, escrevo para perguntar sobre o seu pedido."
    ],
    [
     "Then she writes: I attach the price list, and I look forward to your answer.",
@@ -922,45 +927,45 @@
    ],
    [
     "She ends with Sincerely, and Kind regards would be okay, too.",
-    "Ela termina com Atenciosamente, e Cordialmente também seria bom."
+    "Ela termina com Sincerely, e Kind regards também serviria."
    ],
    [
-    "To her friend Lia, she writes a short note: Best wishes for the trip!",
-    "Para a amiga Lia, ela escreve um bilhete curto: Os melhores votos para a viagem!"
+    "At the end she adds: Feel free to get in touch if you have questions.",
+    "No fim ela acrescenta: Sinta-se à vontade para entrar em contato se tiver dúvidas."
    ]
   ],
   "dialogue": [
    [
-    "Priya, are you still writing that e-mail to Mr. Brown?",
-    "Priya, você ainda está escrevendo aquele e-mail para o Sr. Brown?"
+    "Priya, are you still writing that business e-mail to Mr. Brown?",
+    "Priya, você ainda está escrevendo aquele e-mail profissional para o Sr. Brown?"
    ],
    [
     "Yes. I'm writing to ask about his order, but I don't know how to start.",
     "Sim. Estou escrevendo para perguntar sobre o pedido dele, mas não sei como começar."
    ],
    [
-    "Use a formal opening. Write Dear Mr. Brown, not Hi.",
-    "Use uma abertura formal. Escreva Prezado Sr. Brown, e não Oi."
+    "Write Dear Mr. Brown, not Hi. And keep the subject line short.",
+    "Escreva Dear Mr. Brown, não Hi. E deixe o assunto curto."
    ],
    [
-    "Okay. Should I enclose the price list in the e-mail?",
-    "Certo. Devo enviar a lista de preços junto no e-mail?"
+    "Okay. Should I put the price list inside the e-mail?",
+    "Ok. Devo colocar a lista de preços dentro do e-mail?"
    ],
    [
-    "In an e-mail you attach it. You enclose papers in a letter.",
-    "No e-mail você anexa. Papéis você inclui numa carta."
+    "No, you attach it. Then write: I attach the price list.",
+    "Não, você anexa. Depois escreva: I attach the price list."
    ],
    [
     "Good to know. How do I end it? With Sincerely or Best wishes?",
-    "Bom saber. Como termino? Com Atenciosamente ou Os melhores votos?"
+    "Bom saber. Como termino? Com Sincerely ou Best wishes?"
    ],
    [
     "Use Sincerely for Mr. Brown. Best wishes is for friends.",
-    "Use Atenciosamente para o Sr. Brown. Os melhores votos é para amigos."
+    "Use Sincerely para o Sr. Brown. Best wishes é para amigos."
    ],
    [
-    "Perfect. Now I attach the list, and I'll write: I look forward to hearing from you.",
-    "Perfeito. Agora anexo a lista e vou escrever: Aguardo seu retorno."
+    "Perfect. I'll also write: Feel free to get in touch. I look forward to hearing from you.",
+    "Perfeito. Também vou escrever: Sinta-se à vontade para entrar em contato. Aguardo seu retorno."
    ]
   ],
   "grammar": [
@@ -972,12 +977,12 @@
   ],
   "examples": [
    [
-    "She starts with a formal line: Dear Sir, I'm writing to ask about your order.",
-    "Ela começa com uma linha formal: Prezado senhor, escrevo para perguntar sobre o seu pedido."
-   ],
-   [
     "Yes. I'm writing to ask about his order, but I don't know how to start.",
     "Sim. Estou escrevendo para perguntar sobre o pedido dele, mas não sei como começar."
+   ],
+   [
+    "No, you attach it. Then write: I attach the price list.",
+    "Não, você anexa. Depois escreva: I attach the price list."
    ]
   ],
   "quiz": [
@@ -1070,6 +1075,10 @@
    [
     "trainee",
     "estagiário, aprendiz"
+   ],
+   [
+    "day shift",
+    "turno do dia"
    ]
   ],
   "reading": [
@@ -1120,8 +1129,8 @@
     "Quais são seus pontos fortes?"
    ],
    [
-    "I'm fast, and I'm a team player. I've never missed a shift.",
-    "Sou rápido e trabalho bem em equipe. Nunca faltei a um turno."
+    "I'm fast, and I'm a team player.",
+    "Sou rápido e sou um bom jogador de equipe."
    ],
    [
     "And what's your biggest weakness?",
@@ -1132,8 +1141,8 @@
     "Às vezes falo demais com os clientes, mas eles geralmente gostam."
    ],
    [
-    "Good. We're hiring one trainee, and the job starts Monday. Can you come at seven?",
-    "Bom. Vamos contratar um aprendiz, e o trabalho começa na segunda. Você pode vir às sete?"
+    "Good. We're hiring one trainee for the day shift, and the job starts Monday. Can you come at seven?",
+    "Bom. Vamos contratar um trainee para o turno do dia, e o trabalho começa na segunda. Você pode vir às sete?"
    ],
    [
     "Yes, I can. Thank you so much!",
@@ -1210,12 +1219,12 @@
   "title": "Pedindo folga para o casamento da irmã",
   "grammar_label": "Pedir folga: Can I take… off? / I'd like to…",
   "goal": "Peça uma folga com Can I take… off? e I'd like to…",
-  "sound": "/ʌ/ em substitute e just",
+  "sound": "/ʌ/ em cover e just",
   "pron_words": [
-   "substitute",
+   "cover",
    "just"
   ],
-  "pron_tip": "Faça um 'a' curto e relaxado, com a boca quase parada e sem arredondar os lábios. Em just e substitute é o mesmo som.",
+  "pron_tip": "Faça um 'a' curto e relaxado, com a boca quase parada e sem arredondar os lábios. Em cover e just é o mesmo som.",
   "words": [
    [
     "day off",
@@ -1230,20 +1239,24 @@
     "tirar folga"
    ],
    [
-    "request",
-    "pedido, solicitação"
-   ],
-   [
-    "approve",
-    "aprovar"
-   ],
-   [
-    "substitute",
-    "substituto"
-   ],
-   [
     "swap shifts",
     "trocar de turno"
+   ],
+   [
+    "cover for",
+    "cobrir alguém"
+   ],
+   [
+    "fill in for",
+    "substituir"
+   ],
+   [
+    "short notice",
+    "aviso de última hora"
+   ],
+   [
+    "time off",
+    "tempo de folga"
    ],
    [
     "ask for",
@@ -1256,58 +1269,58 @@
     "A irmã do Omar vai se casar na sexta, 9 de maio."
    ],
    [
-    "He wants a day off, so he writes a request for his boss.",
-    "Ele quer um dia de folga, então escreve um pedido para a chefe."
+    "He wants to take Friday off, but it's short notice.",
+    "Ele quer tirar a sexta de folga, mas é de última hora."
    ],
    [
-    "It's hard because Rosa is on sick leave this month.",
-    "É difícil porque a Rosa está de licença médica este mês."
+    "Rosa is on sick leave this month, so the shop is very busy.",
+    "A Rosa está de licença médica este mês, então a loja está muito cheia."
    ],
    [
-    "Who will cover his work? Omar asks his friend Ben to be his substitute.",
-    "Quem vai cobrir o trabalho dele? Omar pede ao amigo Ben para ser seu substituto."
+    "Omar asks his friend Ben to cover for him, and Ben says yes if they swap shifts.",
+    "Omar pede ao amigo Ben para cobri-lo, e Ben aceita se eles trocarem de turno."
    ],
    [
-    "Ben agrees if they swap shifts: Omar works Saturday instead.",
-    "Ben aceita se trocarem de turno: Omar trabalha no sábado."
+    "\"I'd like to ask for a day off,\" Omar tells his boss.",
+    "\"Eu gostaria de pedir um dia de folga\", Omar diz à chefe."
    ],
    [
-    "The boss approves the request, and Omar says thank you three times.",
-    "A chefe aprova o pedido, e Omar agradece três vezes."
+    "She thinks for a minute, and then she says yes.",
+    "Ela pensa por um minuto e então diz que sim."
    ]
   ],
   "dialogue": [
    [
     "Ms. Park, can I take Friday off? My sister's wedding is that day.",
-    "Sra. Park, posso tirar sexta de folga? O casamento da minha irmã é nesse dia."
+    "Sra. Park, posso tirar a sexta de folga? O casamento da minha irmã é nesse dia."
    ],
    [
     "Friday the ninth? We're busy, and Rosa is on sick leave.",
-    "Sexta, dia nove? Estamos ocupados, e a Rosa está de licença médica."
+    "Sexta, dia nove? Estamos cheios, e a Rosa está de licença médica."
    ],
    [
-    "I know. I'd like to ask for just one day, and I'll find a substitute.",
-    "Eu sei. Gostaria de pedir só um dia, e vou arrumar um substituto."
+    "I know it's short notice, but I'd like to ask for just one day.",
+    "Sei que é de última hora, mas eu gostaria de pedir só um dia."
    ],
    [
     "Do you have someone in mind?",
-    "Você já tem alguém em mente?"
+    "Você tem alguém em mente?"
    ],
    [
-    "Yes, Ben. We can swap shifts: I'll work next Saturday for him.",
-    "Tenho, o Ben. Podemos trocar de turno: eu trabalho no próximo sábado por ele."
+    "Yes, Ben can fill in for me. We can swap shifts: I'll work next Saturday for him.",
+    "Sim, o Ben pode me substituir. Podemos trocar de turno: trabalho no próximo sábado por ele."
    ],
    [
-    "That sounds fair. Please send me a written request today.",
-    "Parece justo. Por favor, me envie um pedido por escrito hoje."
+    "That sounds fair. But next time, ask for time off earlier.",
+    "Parece justo. Mas da próxima vez, peça folga mais cedo."
    ],
    [
-    "Of course. I'll write it right now.",
-    "Claro. Vou escrever agora mesmo."
+    "I will, I promise. Thank you so much!",
+    "Vou pedir, prometo. Muito obrigado!"
    ],
    [
-    "Okay, I approve it. Congratulations to your sister!",
-    "Certo, eu aprovo. Parabéns à sua irmã!"
+    "Okay, take Friday off. Congratulations to your sister!",
+    "Ok, pode tirar a sexta. Parabéns à sua irmã!"
    ]
   ],
   "grammar": [
@@ -1320,11 +1333,11 @@
   "examples": [
    [
     "Ms. Park, can I take Friday off? My sister's wedding is that day.",
-    "Sra. Park, posso tirar sexta de folga? O casamento da minha irmã é nesse dia."
+    "Sra. Park, posso tirar a sexta de folga? O casamento da minha irmã é nesse dia."
    ],
    [
-    "I know. I'd like to ask for just one day, and I'll find a substitute.",
-    "Eu sei. Gostaria de pedir só um dia, e vou arrumar um substituto."
+    "I know it's short notice, but I'd like to ask for just one day.",
+    "Sei que é de última hora, mas eu gostaria de pedir só um dia."
    ]
   ],
   "quiz": [
@@ -1394,14 +1407,6 @@
   "pron_tip": "Ponha a língua entre os dentes e faça vibrar, com som de voz. Não troque por 'd' ou 'z'.",
   "words": [
    [
-    "solution",
-    "solução"
-   ],
-   [
-    "alternative",
-    "alternativa"
-   ],
-   [
     "brainstorm",
     "chuva de ideias"
    ],
@@ -1411,23 +1416,31 @@
    ],
    [
     "compromise",
-    "acordo, meio-termo"
-   ],
-   [
-    "conflict",
-    "conflito"
-   ],
-   [
-    "cooperate",
-    "cooperar"
-   ],
-   [
-    "work together",
-    "trabalhar juntos"
+    "acordo"
    ],
    [
     "split up",
     "dividir"
+   ],
+   [
+    "short-staffed",
+    "com falta de pessoal"
+   ],
+   [
+    "chip in",
+    "ajudar, contribuir"
+   ],
+   [
+    "take over",
+    "assumir"
+   ],
+   [
+    "in a rush",
+    "com pressa"
+   ],
+   [
+    "one at a time",
+    "um de cada vez"
    ]
   ],
   "reading": [
@@ -1436,24 +1449,24 @@
     "Na Rosa's Pizza, dois entregadores estão doentes, e vinte pedidos estão esperando."
    ],
    [
-    "The team needs a solution fast, so Rosa calls a short brainstorm.",
-    "A equipe precisa de uma solução rápida, então a Rosa chama uma breve chuva de ideias."
+    "The shop is short-staffed, so Rosa calls a quick brainstorm.",
+    "A loja está com falta de pessoal, então a Rosa chama uma rápida chuva de ideias."
    ],
    [
-    "Tom says: \"Why don't we split up the orders by neighborhood?\"",
+    "Tom says, \"Why don't we split up the orders by neighborhood?\"",
     "Tom diz: \"Por que não dividimos os pedidos por bairro?\""
    ],
    [
-    "Mia has a conflict: she can't deliver before six, so they find a compromise.",
-    "Mia tem um conflito: não pode entregar antes das seis, então eles chegam a um acordo."
+    "Mia can't deliver before six, so they find a compromise: she takes the near orders.",
+    "A Mia não pode entregar antes das seis, então eles chegam a um acordo: ela fica com os pedidos próximos."
    ],
    [
-    "Everybody agrees to cooperate, and the whole team can work together until nine.",
-    "Todos concordam em cooperar, e a equipe toda pode trabalhar junta até as nove."
+    "Rosa says, \"Why don't we all chip in? Let's answer the phones one at a time.\"",
+    "Rosa diz: \"Por que não ajudamos todos? Vamos atender os telefones um de cada vez.\""
    ],
    [
-    "The alternative is to close the kitchen, but now every pizza arrives hot.",
-    "A alternativa seria fechar a cozinha, mas agora toda pizza chega quente."
+    "They work together until nine, and every pizza arrives hot.",
+    "Eles trabalham juntos até as nove, e todas as pizzas chegam quentes."
    ]
   ],
   "dialogue": [
@@ -1462,28 +1475,28 @@
     "Tom, temos vinte pedidos e só dois entregadores. O que podemos fazer?"
    ],
    [
-    "Why don't we ask the kitchen staff to help with the nearby orders?",
+    "Why don't we ask the kitchen staff to chip in with the nearby orders?",
     "Por que não pedimos à equipe da cozinha para ajudar com os pedidos próximos?"
    ],
    [
-    "Good idea. I'll call everybody here and make a plan.",
-    "Boa ideia. Vou chamar todo mundo aqui e fazer um plano."
+    "Good idea. Everybody is in a rush tonight, so I'll call the team.",
+    "Boa ideia. Todo mundo está com pressa esta noite, então vou chamar a equipe."
    ],
    [
-    "Let us start with the orders for the north side. They're the farthest.",
-    "Vamos começar pelos pedidos da zona norte. São os mais distantes."
+    "Let us start with the north side. It's the farthest.",
+    "Vamos começar pelo lado norte. É o mais distante."
    ],
    [
     "Okay. Who can deal with the phone calls while we're out?",
-    "Certo. Quem pode lidar com as ligações enquanto estamos fora?"
+    "Ok. Quem pode lidar com as ligações enquanto estamos fora?"
    ],
    [
-    "Mia can. Why don't we give her the new tablet?",
-    "A Mia pode. Por que não damos a ela o tablet novo?"
+    "Why don't we ask Mia to take over the phones? She's quick.",
+    "Por que não pedimos à Mia para assumir os telefones? Ela é rápida."
    ],
    [
     "Perfect. We'll meet at nine to count the money.",
-    "Perfeito. Nos encontramos às nove para contar o dinheiro."
+    "Perfeito. Vamos nos encontrar às nove para contar o dinheiro."
    ],
    [
     "Sounds good. The customers won't wait long, so I'm leaving now.",
@@ -1499,12 +1512,12 @@
   ],
   "examples": [
    [
-    "Tom says: \"Why don't we split up the orders by neighborhood?\"",
-    "Tom diz: \"Por que não dividimos os pedidos por bairro?\""
+    "Why don't we ask the kitchen staff to chip in with the nearby orders?",
+    "Por que não pedimos à equipe da cozinha para ajudar com os pedidos próximos?"
    ],
    [
-    "Let us start with the orders for the north side. They're the farthest.",
-    "Vamos começar pelos pedidos da zona norte. São os mais distantes."
+    "Let us start with the north side. It's the farthest.",
+    "Vamos começar pelo lado norte. É o mais distante."
    ]
   ],
   "quiz": [
@@ -1544,12 +1557,15 @@
    },
    {
     "t": "b",
-    "pt": "Vamos trabalhar juntos hoje.",
+    "pt": "Por que não pedimos ajuda à Mia?",
     "w": [
-     "Let's",
-     "work",
-     "together",
-     "today"
+     "Why",
+     "don't",
+     "we",
+     "ask",
+     "Mia",
+     "for",
+     "help"
     ]
    }
   ]
@@ -1558,12 +1574,12 @@
   "title": "Primeira semana na loja de bicicletas",
   "grammar_label": "Revisão: primeira semana no novo emprego (mini-história)",
   "goal": "Revise o vocabulário do trabalho contando como você se adapta a um emprego novo.",
-  "sound": "/æ/ em tag e flat",
+  "sound": "/tʃ/ em lunch e teach",
   "pron_words": [
-   "tag",
-   "flat"
+   "lunch",
+   "teach"
   ],
-  "pron_tip": "Abra a boca como para dizer 'a' e leve a língua um pouco para a frente, entre 'é' e 'a'. Em tag e flat o som é o mesmo.",
+  "pron_tip": "Comece com um 't' rápido e solte o ar no 'ch' de 'tchau', sem vogal no final. Em lunch e teach o som fecha a palavra.",
   "words": [
    [
     "break room",
@@ -1575,7 +1591,7 @@
    ],
    [
     "lunch break",
-    "intervalo de almoço"
+    "pausa para o almoço"
    ],
    [
     "settle in",
@@ -1591,75 +1607,83 @@
    ],
    [
     "mentor",
-    "mentor, mentora"
+    "mentor"
    ],
    [
-    "probation",
+    "trial period",
     "período de experiência"
    ],
    [
-    "benefit",
-    "benefício"
+    "pay day",
+    "dia do pagamento"
    ]
   ],
   "reading": [
    [
-    "On Monday, Kenji gets a name tag at the bike shop.",
-    "Na segunda, Kenji recebe um crachá na loja de bicicletas."
+    "On Monday, Kenji gets a name tag, and he's responsible for the front desk.",
+    "Na segunda, Kenji recebe um crachá e fica responsável pela recepção."
    ],
    [
-    "The break room is small, but the coffee is good.",
-    "A sala de descanso é pequena, mas o café é bom."
+    "His mentor, Elena, says, \"First, make sure you smile at every customer.\"",
+    "A mentora dele, Elena, diz: \"Primeiro, certifique-se de sorrir para todo cliente.\""
    ],
    [
-    "His mentor, Elena, shows him how to repair a flat tire.",
-    "A mentora dele, Elena, mostra como consertar um pneu furado."
+    "At the lunch break, the others teach him the shop jokes, and he starts to fit in.",
+    "Na pausa para o almoço, os outros ensinam as piadas da loja a ele, e ele começa a se enturmar."
    ],
    [
-    "He needs time to get used to the noise.",
-    "Ele precisa de tempo para se acostumar com o barulho."
+    "He hasn't learned all the names yet, so Elena says, \"Why don't we practice in the break room?\"",
+    "Ele ainda não aprendeu todos os nomes, então Elena diz: \"Por que não praticamos na sala de descanso?\""
    ],
    [
-    "At the lunch break, the other workers invite him to their table, and he starts to fit in.",
-    "No intervalo de almoço, os outros funcionários o convidam para a mesa, e ele começa a se enturmar."
+    "He's still getting used to the noise, but the trial period is going well.",
+    "Ele ainda está se acostumando com o barulho, mas o período de experiência vai bem."
    ],
    [
-    "By Friday, he can settle in, and the boss says the probation period is going well.",
-    "Na sexta, ele já se adapta, e o chefe diz que o período de experiência vai bem."
+    "By Friday he can settle in, and he's already looking forward to his first pay day.",
+    "Na sexta ele já consegue se adaptar e está ansioso pelo primeiro pagamento."
    ]
   ],
   "dialogue": [
    [
-    "Kenji, how is your first week going?",
-    "Kenji, como está indo sua primeira semana?"
+    "Kenji, how was your first week?",
+    "Kenji, como foi sua primeira semana?"
    ],
    [
-    "Pretty good. I'm still getting used to the noise, but everybody is nice.",
-    "Bem. Ainda estou me acostumando com o barulho, mas todo mundo é legal."
+    "Pretty good. I'm still getting used to the noise, but everybody's nice.",
+    "Muito boa. Ainda estou me acostumando com o barulho, mas todos são legais."
    ],
    [
-    "Great. Have you talked to the boss about the probation period?",
-    "Ótimo. Você já falou com o chefe sobre o período de experiência?"
+    "Good. Could you give me a hand with these tires before lunch?",
+    "Bom. Você poderia me dar uma mão com estes pneus antes do almoço?"
    ],
    [
-    "Yes. He said it's three months, and then I'll get health benefits.",
-    "Já. Ele disse que são três meses, e depois eu tenho benefícios de saúde."
+    "Sure. First I'll move the boxes, and next I'll make sure the pumps work.",
+    "Claro. Primeiro tiro as caixas, depois vou me certificar de que as bombas funcionam."
    ],
    [
-    "That's right. And if you have a problem, you can always ask me. I'm your mentor, remember?",
-    "Isso mesmo. E se tiver um problema, pode sempre me perguntar. Sou sua mentora, lembra?"
+    "Thanks. I think we should talk about your trial period next week.",
+    "Obrigada. Acho que devemos conversar sobre seu período de experiência na semana que vem."
    ],
    [
-    "I will. Actually, I broke a tool on Wednesday, and I was afraid to tell you.",
-    "Vou perguntar. Na verdade, quebrei uma ferramenta na quarta e tive medo de contar."
+    "Okay. I'm not sure I'm ready. I've worked with bikes before, but only at my uncle's garage.",
+    "Ok. Não tenho certeza se estou pronto. Já trabalhei com bicicletas, mas só na oficina do meu tio."
    ],
    [
-    "Don't worry. Everybody breaks something in the first week. Last year I broke three!",
-    "Não se preocupe. Todo mundo quebra algo na primeira semana. Ano passado eu quebrei três!"
+    "Relax, you learn fast. I'm writing to the boss today, and I attach your first report.",
+    "Relaxe, você aprende rápido. Estou escrevendo para o chefe hoje e anexo seu primeiro relatório."
    ],
    [
-    "Really? Thanks, Elena. I feel better now, and I think I'm going to like this job.",
-    "Sério? Obrigado, Elena. Me sinto melhor agora, e acho que vou gostar deste trabalho."
+    "Thanks! One more thing. Can I take Monday off? I'd like to visit my sister.",
+    "Obrigado! Mais uma coisa. Posso tirar a segunda de folga? Gostaria de visitar minha irmã."
+   ],
+   [
+    "We're busy, but okay. Let us finish the orders today, and I'll tell the boss.",
+    "Estamos ocupados, mas tudo bem. Vamos terminar os pedidos hoje, e eu aviso o chefe."
+   ],
+   [
+    "Deal. Thanks, Elena, and see you Tuesday!",
+    "Combinado. Obrigado, Elena, e até terça!"
    ]
   ],
   "grammar": [
@@ -1671,12 +1695,12 @@
   ],
   "examples": [
    [
-    "He needs time to get used to the noise.",
-    "Ele precisa de tempo para se acostumar com o barulho."
+    "He hasn't learned all the names yet, so Elena says, \"Why don't we practice in the break room?\"",
+    "Ele ainda não aprendeu todos os nomes, então Elena diz: \"Por que não praticamos na sala de descanso?\""
    ],
    [
-    "Pretty good. I'm still getting used to the noise, but everybody is nice.",
-    "Bem. Ainda estou me acostumando com o barulho, mas todo mundo é legal."
+    "Pretty good. I'm still getting used to the noise, but everybody's nice.",
+    "Muito boa. Ainda estou me acostumando com o barulho, mas todos são legais."
    ]
   ],
   "quiz": [
@@ -1703,28 +1727,25 @@
    },
    {
     "t": "b",
-    "pt": "Ele precisa de tempo para se acostumar.",
+    "pt": "Ele ainda não aprendeu os nomes.",
     "w": [
      "He",
-     "needs",
-     "time",
-     "to",
-     "get",
-     "used",
-     "to",
-     "it"
+     "hasn't",
+     "learned",
+     "the",
+     "names",
+     "yet"
     ]
    },
    {
     "t": "b",
-    "pt": "Minha mentora me ajuda todo dia.",
+    "pt": "Posso tirar segunda de folga?",
     "w": [
-     "My",
-     "mentor",
-     "helps",
-     "me",
-     "every",
-     "day"
+     "Can",
+     "I",
+     "take",
+     "Monday",
+     "off"
     ]
    }
   ],
@@ -1732,46 +1753,47 @@
    "title": "A primeira semana da Lia",
    "lines": [
     [
-     "Lia starts a full-time job at a small bike shop.",
-     "Lia começa um emprego de período integral numa pequena loja de bicicletas."
+     "Lia starts a full-time job at a bike shop, and she's responsible for the customers.",
+     "Lia começa um emprego de período integral numa loja de bicicletas e fica responsável pelos clientes."
     ],
     [
-     "She is responsible for the customers, and her mentor is Tom.",
-     "Ela é responsável pelos clientes, e o mentor dela é o Tom."
+     "On Monday her mentor Tom says, \"First, take off the wheel. Next, check the tire, and make sure you clean the chain.\"",
+     "Na segunda, o mentor Tom diz: \"Primeiro, tire a roda. Depois, confira o pneu e certifique-se de limpar a corrente.\""
     ],
     [
-     "On Monday the photocopy machine has a paper jam, so she asks, \"Could you give me a hand?\"",
-     "Na segunda a copiadora está com papel preso, então ela pergunta: \"Você poderia me dar uma mão?\""
-    ],
-    [
-     "Tom explains step by step: first open the door, next pull the paper, and make sure the page is clean.",
-     "Tom explica passo a passo: primeiro abra a porta, depois puxe o papel e certifique-se de que a página está limpa."
+     "The pump is stuck, so she asks, \"Could you give me a hand with this?\"",
+     "A bomba está emperrada, então ela pergunta: \"Você poderia me dar uma mão com isso?\""
     ],
     [
      "On Wednesday she is late with the weekly report because she hasn't finished the numbers yet.",
      "Na quarta ela está atrasada com o relatório semanal porque ainda não terminou os números."
     ],
     [
-     "She writes to the boss: \"I'm writing to ask for more time, and I attach the first part.\"",
-     "Ela escreve ao chefe: \"Escrevo para pedir mais tempo e anexo a primeira parte.\""
+     "She writes to the boss, \"I'm writing to ask for more time, and I attach the first part.\"",
+     "Ela escreve ao chefe: \"Escrevo para pedir mais tempo, e anexo a primeira parte.\""
     ],
     [
-     "At the meeting, she says, \"I think we should hire a second person,\" and everyone agrees.",
-     "Na reunião, ela diz: \"Acho que devemos contratar mais uma pessoa\", e todos concordam."
+     "At Thursday's meeting she says, \"I think we should open on Sundays,\" and Tom says, \"I agree.\"",
+     "Na reunião de quinta, ela diz: \"Acho que devemos abrir aos domingos\", e Tom diz: \"Concordo\"."
     ],
     [
-     "On Thursday she asks for Friday off to visit her family, and the boss approves it.",
-     "Na quinta ela pede folga na sexta para visitar a família, e o chefe aprova."
+     "Lia has never worked with bikes, but she has worked with customers for years.",
+     "Lia nunca trabalhou com bicicletas, mas já trabalhou com clientes por anos."
     ],
     [
-     "On Friday morning the shop is full, so the team works together and finds a compromise.",
-     "Na sexta de manhã a loja está cheia, então a equipe trabalha junta e chega a um acordo."
+     "On Friday the shop is full, so she asks the boss, \"Can I take Monday off? I'd like to visit my family.\"",
+     "Na sexta a loja está cheia, então ela pergunta ao chefe: \"Posso tirar a segunda de folga? Gostaria de visitar minha família.\""
     ],
     [
-     "By the end of the week, Lia has settled in, and Tom says she fits in well.",
-     "No fim da semana, Lia já se adaptou, e o Tom diz que ela se enturmou bem."
+     "The boss says, \"Why don't we all work together today? Let us finish the orders, and then you can go.\"",
+     "O chefe diz: \"Por que não trabalhamos todos juntos hoje? Vamos terminar os pedidos, e então você pode ir.\""
+    ],
+    [
+     "By closing time, Lia has settled in, and Tom says she fits in well.",
+     "Na hora de fechar, Lia já se adaptou, e Tom diz que ela se enturmou bem."
     ]
    ]
-  }
+  },
+  "extras": {}
  }
 }
