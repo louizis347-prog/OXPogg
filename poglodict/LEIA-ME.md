@@ -22,9 +22,9 @@ Alguns verbetes de corpus têm exemplos em revisão. Traduções e pinyin produz
 - [Wikipédia](https://www.wikipedia.org/), exemplos creditados aos artigos correspondentes, sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 
-## Inglês americano A1 · lições 1–130 (piloto reescrito)
-- Lições 1–50 reescritas e 51–130 novas: gramática em ordem cumulativa, 8–10 palavras por lição, leitura de 6 frases, diálogo de 8–10 falas, exercício de lacuna e mini-quiz de 4 itens (lacuna, escuta, duas montagens). Os erros do quiz voltam como revisão nas lições seguintes.
+## Inglês americano A1 · lições 1–180 (piloto reescrito)
+- Lições 1–50 reescritas e 51–180 novas: gramática em ordem cumulativa, 8–10 palavras por lição, leitura de 6 frases, diálogo de 8–10 falas, exercício de lacuna e mini-quiz de 4 itens (lacuna, escuta, duas montagens). Os erros do quiz voltam como revisão nas lições seguintes.
 - Cada tema aparece uma vez e o vocabulário-alvo não se repete entre as lições (conferido por script).
-- Lições 51–130 não têm foto licenciada (usam a ilustração do tema) nem o laboratório animado de pronúncia (só texto).
+- Lições 51–180 não têm foto licenciada (usam a ilustração do tema) nem o laboratório animado de pronúncia (só texto).
 - Fonte e ferramentas: `tools/a1/` (`build.py` valida e gera os arquivos do app; `curriculum_51_130.json` é o currículo).
 - Não houve revisão humana de naturalidade nem de traduções.
