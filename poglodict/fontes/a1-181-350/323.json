@@ -1,6 +1,6 @@
 {
  "n": 323,
- "title": "Livros na biblioteca",
+ "title": "Romances na biblioteca",
  "photo": "book-1",
  "art": "notebook",
  "photos": [
@@ -11,20 +11,20 @@
  "goal": "Use Can I borrow…? para pedir um livro emprestado e return para devolver até a data certa.",
  "words": [
   [
-   "magazine",
-   "revista"
+   "reading",
+   "lendo"
   ],
   [
-   "read",
-   "ler"
+   "articles",
+   "artigos"
   ],
   [
-   "newspaper",
-   "jornal"
+   "novels",
+   "romances"
   ],
   [
-   "day",
-   "dia"
+   "section",
+   "seção"
   ]
  ],
  "reading": [
@@ -34,53 +34,53 @@
   ],
   [
    "It is quiet, and many people are reading.",
-   "Está silencioso, e muita gente está lendo."
+   "Está tranquilo, e muita gente está lendo."
   ],
   [
-   "Can I borrow this magazine?",
-   "Posso pegar esta revista emprestada?"
+   "Can I borrow these novels?",
+   "Posso pegar estes romances emprestados?"
   ],
   [
-   "Yes, but return it by Friday.",
-   "Sim, mas devolva até sexta."
+   "Yes, but they are due on Mondays.",
+   "Sim, mas vencem às segundas-feiras."
   ],
   [
-   "He wants to read it at home.",
-   "Ele quer lê-la em casa."
+   "He wants to read them at home.",
+   "Ele quer lê-los em casa."
   ]
  ],
  "dialogue": [
   [
-   "Can I borrow this magazine?",
-   "Posso pegar esta revista emprestada?"
+   "Can I borrow this novel?",
+   "Posso pegar este romance emprestado?"
   ],
   [
    "Yes. Please show me your card.",
-   "Sim. Mostre seu cartão, por favor."
+   "Sim. Mostre-me seu cartão, por favor."
   ],
   [
    "Here it is. When is it due?",
    "Aqui está. Quando vence?"
   ],
   [
-   "The due date is next Friday.",
-   "A data de devolução é sexta que vem."
+   "It is due on Mondays.",
+   "Vence às segundas-feiras."
   ],
   [
    "Can I return it at the desk?",
-   "Posso devolver no balcão?"
+   "Posso devolvê-lo no balcão?"
   ],
   [
-   "Yes, put it on the desk.",
-   "Sim, deixe no balcão."
+   "Yes, put it in the children section.",
+   "Sim, ponha na seção infantil."
   ],
   [
-   "Can I borrow two magazines?",
-   "Posso pegar duas revistas?"
+   "Can I borrow two articles?",
+   "Posso pegar dois artigos emprestados?"
   ],
   [
-   "Yes, you can borrow three.",
-   "Sim, você pode pegar três."
+   "Yes, you can copy three articles.",
+   "Sim, você pode copiar três artigos."
   ]
  ],
  "pron": [
@@ -92,17 +92,11 @@
   ]
  ],
  "gram": [
-  "Can I ___ this magazine?",
+  "Can I ___ this book?",
   "borrow",
   "lend",
-  "Posso pegar esta revista emprestada?",
+  "Posso pegar este livro emprestado?",
   "Quem pede emprestado usa borrow; lend é quem empresta."
  ],
- "pattern": "\\bcan i\\b|\\bborrow\\b|\\breturn\\b",
- "extra": {
-  "read": [
-   "I read a page every night.",
-   "Eu leio uma página toda noite."
-  ]
- }
+ "pattern": "\\bcan i\\b|\\bborrow\\b|\\breturn\\b"
 }

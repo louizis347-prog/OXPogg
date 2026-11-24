@@ -202,8 +202,8 @@ function drawLesson(){
   const theme=lessonVisualTheme();
   const used=new Set(currentLesson.cardPhotos);
   const [vocabularyPhoto,grammarPhoto]=authored?englishA1BlockPhotos():[];
-  if(authored){used.add(vocabularyPhoto.file);used.add(grammarPhoto.file);}
-  const status=plan?'<div class="lesson-plan-status"><strong>Inglês americano '+levels[level]+' · Lote '+(level===1?'01–80':unit>=180?'181–350':'01–50')+'</strong><p>Estude o vocabulário em contexto, ouça a cena e aplique a gramática na prática.</p><a href="'+(level===1?'plano-ingles-a2-01-80.csv':unit>=180?'plano-ingles-a1-181-350.csv':'plano-ingles-a1-01-50.csv')+'" download>Baixar a planilha deste lote</a></div>':'';
+  if(authored){if(vocabularyPhoto)used.add(vocabularyPhoto.file);if(grammarPhoto)used.add(grammarPhoto.file);}
+  const status=plan?'<div class="lesson-plan-status"><strong>Inglês americano '+levels[level]+' · Lote '+(level===1?(unit<80?'01–80':'81–210'):unit>=180?'181–350':'01–180')+'</strong><p>Estude o vocabulário em contexto, ouça a cena e aplique a gramática na prática.</p><a href="'+(level===1?(unit<80?'plano-ingles-a2-01-80.csv':'plano-ingles-a2-431-560.csv'):unit>=180?'plano-ingles-a1-181-350.csv':'plano-ingles-a1-01-50.csv')+'" download>Baixar a planilha deste lote</a></div>':'';
   $('lesson').innerHTML=navigation+status+lessonAudioBar()+'<div class="lesson-panels">'+
     lessonPanel('lexicon',plan?plan.words.slice(0,2).map(([term])=>nativeText(term)).join(' · '):nativeText(currentLesson.focus?.word||vocabulary.word)+' · '+nativeText(vocabulary.expression),
       (authored?renderCompletedEnglishVocabulary(plan,content,vocabularyPhoto):cards[0])+renderWordUse(currentLesson),{used})+
@@ -392,7 +392,7 @@ $('lesson').addEventListener('input',event=>{
   if(event.target.id==='roleplayDraft')storeRoleplayDraft(event.target.value);
 });
 $('lesson').addEventListener('click',e=>{
-  if(handleA1PronunciationClick(e)||handleWordUseClick(e)||handleSceneRoleplay(e)||handleGrammarChoice(e))return;
+  if(handleA1PronunciationClick(e)||handleWordUseClick(e)||handleSceneRoleplay(e)||handleGrammarChoice(e)||handleA1Quiz(e))return;
   handleSceneResponse(e);
   if(handleLessonTools(e))return;
   const b=e.target.closest('button');

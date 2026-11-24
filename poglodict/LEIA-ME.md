@@ -21,5 +21,19 @@ Alguns verbetes de corpus têm exemplos em revisão. Traduções e pinyin produz
 - [Tatoeba](https://tatoeba.org/), exemplos de corpus com links para as frases. Consulte os [termos de uso](https://tatoeba.org/en/terms_of_use).
 - [Wikipédia](https://www.wikipedia.org/), exemplos creditados aos artigos correspondentes, sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-## Inglês A1 181–350 e A2 1–80 (lições autorais)
-As lições 181–350 do A1 e 1–80 do A2 do curso de inglês para brasileiros seguem o padrão das 50 primeiras: título e gramática próprios, vocabulário do dicionário, leitura de 5 frases, diálogo de 8 falas, pronúncia, exercício de gramática e, nas lições múltiplas de 10, mini-história. Os dados ficam em `fontes/a1-181-350/*.json` e `fontes/a2-1-80/*.json` (um arquivo por lição; formato em cada LEIA-ME.md); `tools/poglodict_build_a1.py` gera `english-a1-extra.js`, `english-a2-extra.js` e as planilhas `plano-ingles-a1-181-350.csv` e `plano-ingles-a2-01-80.csv`. `fontes/validar.py` confere formato, vocabulário repetido e nível CEFR (os caminhos dentro dele apontam para /tmp/pd: ajuste antes de reutilizar). As lições A1 51–180 e A2 81+ continuam como estavam. Ainda sem fotos próprias (cada lição usa uma foto provisória já existente, indicada na planilha), sem áudio gravado e sem a animação de pronúncia das 50 primeiras.
+
+## Inglês americano A1 · lições 1–180 (piloto reescrito)
+- Lições 1–50 reescritas e 51–180 novas: gramática em ordem cumulativa, 8–10 palavras por lição, leitura de 6 frases, diálogo de 8–10 falas, exercício de lacuna e mini-quiz de 4 itens (lacuna, escuta, duas montagens). Os erros do quiz voltam como revisão nas lições seguintes.
+- Cada tema aparece uma vez e o vocabulário-alvo não se repete entre as lições (conferido por script).
+- Lições 51–180 não têm foto licenciada (usam a ilustração do tema) nem o laboratório animado de pronúncia (só texto).
+- Fonte e ferramentas: `tools/a1/` (`build.py` valida e gera os arquivos do app; `curriculum_51_130.json` é o currículo).
+- Não houve revisão humana de naturalidade nem de traduções.
+
+## Inglês A1 181–350 e A2 1–80 (autorais)
+As lições A1 181–350 e A2 1–80 (nº 351–430 em sequência A1+A2) seguem o padrão das 50 primeiras e **não repetem nenhum termo de vocabulário nem frase** das lições A1 1–180 e A2 81–210 (431–560). Dados: `fontes/a1-181-350/*.json` e `fontes/a2-1-80/*.json` (um arquivo por lição). `tools/poglodict_build_a1.py` gera `english-a1-extra.js`, `english-a2-extra.js` e as planilhas `plano-ingles-a1-181-350.csv` e `plano-ingles-a2-01-80.csv`. `fontes/validar.py` confere formato, nível CEFR-J e repetições (usa listas em `fontes/*.json`; os caminhos de trabalho apontam para /tmp/pd). Para corrigir uma lição, edite o JSON e rode o script. Limites: sem foto própria (foto provisória), sem áudio gravado nem laboratório de pronúncia animado, sem revisão humana; o vocabulário livre do dicionário era escasso, então algumas lições ensinam palavras menos comuns ou cenas improvisadas.
+
+## Inglês americano A2 · lições 431–560 (autorais)
+- As lições 431–560 (A2 nº 81–210, com A1 = 1–350 e A2 = 351–700) têm conteúdo próprio no mesmo formato das lições 1–180 do A1: 8–10 palavras, leitura de 6 frases, diálogo de 8–10 falas, exercício de lacuna e mini-quiz de 4 itens (erros voltam como revisão). Mini-história nas lições 440, 450 … 560.
+- Gramática A2 em ordem: present perfect, past continuous, used to, will, condicionais, modais, comparativos, quantificadores, orações relativas, passiva, verbos frasais, perguntas indiretas, tags, discurso indireto e wish; 13 revisões.
+- Sem foto licenciada (ilustração do tema) e sem laboratório de pronúncia animado. Fonte e ferramentas: `tools/a1/a2.py` e `tools/a1/curriculum_a2_431_560.json`; saída em `english-a2.js`.
+- Não conferido: o que as lições 351–430 (outra sessão) já ensinam; a ponte pode repetir estruturas. Sem revisão humana de naturalidade e traduções.

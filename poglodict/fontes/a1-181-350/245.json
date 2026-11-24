@@ -11,30 +11,30 @@
  "goal": "Comece com o verbo, como Take one pill, para dar uma instrução de remédio.",
  "words": [
   [
-   "pill",
-   "comprimido"
+   "aspirin",
+   "aspirina"
   ],
   [
-   "medicine",
-   "remédio"
+   "lozenge",
+   "pastilha"
   ],
   [
-   "take",
-   "tomar"
+   "swallow",
+   "engolir"
   ],
   [
-   "times",
-   "vezes"
+   "ache",
+   "dor"
   ]
  ],
  "reading": [
   [
-   "Nico has a bottle of medicine.",
-   "Nico tem um frasco de remédio."
+   "Nico has a bottle of aspirin.",
+   "O Nico tem um frasco de aspirina."
   ],
   [
-   "The nurse says, Take one pill.",
-   "A enfermeira diz: Tome um comprimido."
+   "The nurse says, Take one pill for the ache.",
+   "A enfermeira diz: Tome um comprimido para a dor."
   ],
   [
    "Take it in the morning.",
@@ -45,8 +45,8 @@
    "Não tome dois comprimidos."
   ],
   [
-   "Nico puts the bottle on the table.",
-   "Nico coloca o frasco na mesa."
+   "Nico puts a lozenge in his pocket.",
+   "O Nico põe uma pastilha no bolso."
   ]
  ],
  "dialogue": [
@@ -63,8 +63,8 @@
    "Eu tomo com água?"
   ],
   [
-   "Yes, take it with water.",
-   "Sim, tome com água."
+   "Yes, swallow it with water.",
+   "Sim, engula com água."
   ],
   [
    "And in the morning?",
@@ -98,11 +98,5 @@
   "Tome um comprimido depois do almoço.",
   "Na instrução, começamos direto com o verbo."
  ],
- "pattern": "\\btake (?:one|it|the|two)\\b",
- "extra": {
-  "spoon": [
-   "Take a spoon of medicine.",
-   "Tome uma colher de remédio."
-  ]
- }
+ "pattern": "\\btake (?:one|it|the|two)\\b"
 }

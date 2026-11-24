@@ -15,38 +15,38 @@
    "tarde"
   ],
   [
-   "hungry",
-   "com fome"
-  ],
-  [
-   "people",
-   "pessoas"
-  ],
-  [
-   "dinner",
+   "supper",
    "jantar"
+  ],
+  [
+   "evenings",
+   "noites"
+  ],
+  [
+   "mornings",
+   "manhãs"
   ]
  ],
  "reading": [
   [
    "Tina works in a small shop.",
-   "Tina trabalha numa loja pequena."
+   "Tina trabalha numa lojinha."
   ],
   [
-   "She opens the door in the morning.",
-   "Ela abre a porta de manhã."
+   "In the mornings she opens the door.",
+   "De manhã ela abre a porta."
   ],
   [
    "At noon she has lunch.",
    "Ao meio-dia ela almoça."
   ],
   [
-   "In the afternoon many people come.",
-   "À tarde vêm muitas pessoas."
+   "In the afternoon children buy candy.",
+   "À tarde as crianças compram doce."
   ],
   [
-   "At night she is tired.",
-   "À noite ela está cansada."
+   "In the evenings she eats supper at home.",
+   "À noite ela janta em casa."
   ]
  ],
  "dialogue": [
@@ -71,16 +71,16 @@
    "O que você faz à noite?"
   ],
   [
-   "I cook dinner and watch TV.",
-   "Faço o jantar e vejo TV."
+   "I cook supper and watch TV.",
+   "Eu faço o jantar e vejo TV."
   ],
   [
-   "Do you sleep well at night?",
-   "Você dorme bem à noite?"
+   "Do you buy candy at night?",
+   "Você compra doce à noite?"
   ],
   [
-   "Yes, I sleep very well.",
-   "Sim, durmo muito bem."
+   "No, I do not. I sleep very well.",
+   "Não. Eu durmo muito bem."
   ]
  ],
  "pron": [
@@ -98,5 +98,5 @@
   "Eu estudo de manhã.",
   "Com morning, afternoon e evening use in the."
  ],
- "pattern": "\\b(?:in the (?:morning|afternoon|evening)|at (?:noon|night))\\b"
+ "pattern": "\\b(?:in the (?:mornings?|afternoon|evenings?)|at (?:noon|night))\\b"
 }

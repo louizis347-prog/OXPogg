@@ -77,6 +77,7 @@ function photoForMoment(theme,index,kind,text='',used){
   const sequence=scenes[kind]||scenes.reading;
   const keyword=photoKeywords.find(([,pattern])=>pattern.test(text))?.[0];
   const plan=englishLessonPlan();
+  if(plan&&!plan.file)return null;
   if(plan){
     const cover=englishPlanPhoto(plan);
     const related=[...new Set(Object.values(scenes).flat())].filter(key=>!['coast','walk','lake','parkPath','stationPark','dusk','street','bakery','cup','coffeeTable','square'].includes(key)||['city','park','cup'].includes(theme));
@@ -109,6 +110,7 @@ function photoForMoment(theme,index,kind,text='',used){
   return available;
 }
 function lessonPhotoFrame(photo,className,priority=false){
+  if(!photo)return '';
   const alt=routeLabel(...photo.alt);
   return '<figure class="'+className+'"><img src="'+clean(photo.file)+'" alt="'+clean(alt)+'" width="'+photo.width+
     '" height="'+photo.height+'" decoding="async"'+(priority?' fetchpriority="high"':' loading="lazy"')+'></figure>';

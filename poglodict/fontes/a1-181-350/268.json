@@ -11,20 +11,20 @@
  "goal": "Pergunte com Did + sujeito + verbo base e responda com Yes, I did ou No, I did not.",
  "words": [
   [
-   "visit",
-   "visitar"
-  ],
-  [
    "know",
    "saber"
   ],
   [
-   "dinner",
-   "jantar"
+   "horses",
+   "cavalos"
   ],
   [
-   "hour",
-   "hora"
+   "roads",
+   "estradas"
+  ],
+  [
+   "summers",
+   "verões"
   ]
  ],
  "reading": [
@@ -41,8 +41,8 @@
    "Ele queria saber da visita."
   ],
   [
-   "Lia told him about the dinner.",
-   "A Lia contou a ele sobre o jantar."
+   "Lia told him about the horses and the roads.",
+   "A Lia contou a ele sobre os cavalos e as estradas."
   ],
   [
    "They talked for an hour.",
@@ -98,5 +98,11 @@
   "Você visitou sua tia?",
   "Pergunta sobre o passado começa com Did."
  ],
- "pattern": "\\bDid (?:you|she|he|they|I)\\b|, (?:I|she|he) did\\b"
+ "pattern": "\\bDid (?:you|she|he|they|I)\\b|, (?:I|she|he) did\\b",
+ "extra": {
+  "summers": [
+   "Her aunt rides in summers.",
+   "A tia dela anda a cavalo nos verões."
+  ]
+ }
 }

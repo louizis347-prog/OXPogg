@@ -11,20 +11,20 @@
  "goal": "Pergunte sobre o passado com What did you…?, Where did you go? e How much did it cost?",
  "words": [
   [
-   "market",
-   "mercado"
+   "currency",
+   "moeda"
   ],
   [
-   "luggage",
-   "bagagem"
+   "euro",
+   "euro"
   ],
   [
-   "souvenir",
-   "lembrança"
+   "voyage",
+   "viagem longa"
   ],
   [
-   "tourist",
-   "turista"
+   "jewels",
+   "joias"
   ]
  ],
  "reading": [
@@ -33,20 +33,20 @@
    "Peg voltou de Lisboa na sexta à noite."
   ],
   [
-   "She bought a small gift for Ava at the market.",
-   "Ela comprou um presentinho para a Ava no mercado."
+   "She bought some pretty jewels for Ava at the market.",
+   "Ela comprou umas joias bonitas para a Ava no mercado."
   ],
   [
-   "Ava asked where she found it and how much it cost.",
-   "Ava perguntou onde ela achou e quanto custou."
+   "Ava asked where she found them and how much they cost.",
+   "Ava perguntou onde ela as achou e quanto custaram."
   ],
   [
-   "Peg paid five euros for it at a street stand.",
-   "Peg pagou cinco euros por ele numa barraca de rua."
+   "Peg paid one euro for each, in the local currency.",
+   "Peg pagou um euro por cada uma, na moeda local."
   ],
   [
-   "Her luggage was heavy, so she took a taxi from the airport.",
-   "A bagagem estava pesada, então ela pegou um táxi no aeroporto."
+   "The long voyage made her tired, so she took a taxi.",
+   "A viagem longa a deixou cansada, então ela pegou um táxi."
   ]
  ],
  "dialogue": [
@@ -63,8 +63,8 @@
    "O que você comprou no mercado?"
   ],
   [
-   "I bought a small bag and some fruit.",
-   "Comprei uma bolsa pequena e algumas frutas."
+   "I bought some jewels and some fruit.",
+   "Comprei umas joias e algumas frutas."
   ],
   [
    "How did you get home from the airport?",
@@ -98,11 +98,5 @@
   "Onde você comprou isso?",
   "Pergunta no passado: Wh- + did + sujeito + verbo base."
  ],
- "pattern": "\\b(What|Where|Who|How much|When) did \\w+",
- "extra": {
-  "airport": [
-   "The airport was far away.",
-   "O aeroporto era longe."
-  ]
- }
+ "pattern": "\\b(What|Where|Who|How much|When) did \\w+"
 }

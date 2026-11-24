@@ -19,12 +19,12 @@
    "pausa"
   ],
   [
-   "hour",
-   "hora"
+   "belly",
+   "barriga"
   ],
   [
-   "work",
-   "trabalho"
+   "temper",
+   "humor"
   ]
  ],
  "reading": [
@@ -98,5 +98,15 @@
   "Você deve descansar depois do trabalho.",
   "Should vem direto antes do verbo, sem to."
  ],
- "pattern": "\\bshould(?:n’t)?\\b"
+ "pattern": "\\bshould(?:n’t)?\\b",
+ "extra": {
+  "belly": [
+   "Her belly is empty, so she eats some bread.",
+   "A barriga dela está vazia, então ela come um pouco de pão."
+  ],
+  "temper": [
+   "She has a short temper when she is tired.",
+   "Ela fica de mau humor quando está cansada."
+  ]
+ }
 }

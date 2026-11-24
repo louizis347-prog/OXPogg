@@ -51,13 +51,13 @@ def gen(srcdir, level, jsname, csvname):
             'Object.assign(englishA1ExtraWordExamples,extras);']
     else:
         out += [
-            'for(const [u,v] of plans.entries())if(v)englishA2Data.plans[u]=v;',
-            'for(const [u,v] of content.entries())if(v)englishA2Data.content[u]=v;',
-            'for(const [u,v] of patterns.entries())if(v)englishA2Data.patterns[u]=v;',
-            'for(const [u,v] of themes.entries())if(v)englishA2Data.themes[u]=v;',
-            'for(const [u,v] of photos.entries())if(v)englishA2Data.photos[u]=v;',
-            'Object.assign(englishA2Data.stories,stories);',
-            'Object.assign(englishA2Data.extras,extras);']
+            'for(const [u,v] of plans.entries())if(v)englishA2Plans[u]=v;',
+            'for(const [u,v] of content.entries())if(v)englishA2Content[u]=v;',
+            'for(const [u,v] of patterns.entries())if(v)englishA2Patterns[u]=v;',
+            'for(const [u,v] of themes.entries())if(v)englishA2PhotoThemes[u]=v;',
+            'Object.assign(englishA2MiniStories,stories);',
+            'Object.assign(englishA2ExtraWordExamples,extras);']
+    if level == 'a2': out.insert(2, 'var englishA2Patterns=typeof englishA2Patterns==="undefined"?[]:englishA2Patterns;')
     out += ['})();', '']
     open(os.path.join(P, jsname), 'w', encoding='utf-8').write('\n'.join(out))
     with open(os.path.join(P, csvname), 'w', encoding='utf-8-sig', newline='') as fh:

@@ -1,6 +1,6 @@
 {
  "n": 247,
- "title": "Quantos dias dura a tosse?",
+ "title": "Quantos dias dura a irritação?",
  "photo": "hospital-1",
  "art": "health",
  "photos": [
@@ -10,10 +10,6 @@
  "grammar": "How long...? e for + dias",
  "goal": "Pergunte How long...? e responda com for + período de tempo.",
  "words": [
-  [
-   "cough",
-   "tosse"
-  ],
   [
    "week",
    "semana"
@@ -25,12 +21,16 @@
   [
    "last",
    "durar"
+  ],
+  [
+   "rash",
+   "erupção na pele"
   ]
  ],
  "reading": [
   [
-   "Tina has a cough.",
-   "Tina está com tosse."
+   "Tina has a rash on her arm.",
+   "A Tina tem uma irritação no braço."
   ],
   [
    "She goes to see a nurse.",
@@ -45,38 +45,38 @@
    "Dura uma semana."
   ],
   [
-   "The nurse gives her some medicine.",
-   "A enfermeira dá a ela um remédio."
+   "The nurse gives her some cream.",
+   "A enfermeira dá a ela uma pomada."
   ]
  ],
  "dialogue": [
   [
-   "How long does your cough last?",
-   "Quanto tempo sua tosse dura?"
+   "How long does your rash last?",
+   "Quanto tempo sua irritação dura?"
   ],
   [
    "It lasts for three days.",
-   "Dura três dias."
+   "Dura por três dias."
   ],
   [
-   "How long does the fever last?",
-   "Quanto tempo a febre dura?"
+   "How long does the headache last?",
+   "Quanto tempo a dor de cabeça dura?"
   ],
   [
    "Only for one day.",
    "Só por um dia."
   ],
   [
-   "Do you cough at night?",
-   "Você tosse à noite?"
+   "Does it itch at night?",
+   "Coça à noite?"
   ],
   [
    "Yes, for two nights now.",
-   "Sim, por duas noites já."
+   "Sim, faz duas noites."
   ],
   [
-   "So the cough lasts three days?",
-   "Então a tosse dura três dias?"
+   "So the rash lasts three days?",
+   "Então a irritação dura três dias?"
   ],
   [
    "Yes, for three days.",
@@ -84,11 +84,11 @@
   ]
  ],
  "pron": [
-  "O ou em cough",
-  "Em cough, ough soa como off: diga cóf.",
+  "O ee em week",
+  "Alongue o i e termine com k: wiiik, bem diferente do i curto de sick.",
   [
-   "cough",
-   "I cough at night."
+   "week",
+   "I wait a week."
   ]
  ],
  "gram": [
@@ -98,11 +98,5 @@
   "Quanto tempo a tosse dura?",
   "How long pergunta a duração, e a resposta usa for."
  ],
- "pattern": "\\bhow long\\b|\\bfor (?:three|one|two|a) (?:days?|nights?|weeks?)\\b",
- "extra": {
-  "week": [
-   "I wait for a week.",
-   "Eu espero por uma semana."
-  ]
- }
+ "pattern": "\\bhow long\\b|\\bfor (?:three|one|two|a) (?:days?|nights?|weeks?)\\b"
 }

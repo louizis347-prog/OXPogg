@@ -11,30 +11,30 @@
  "goal": "Use must para regras que precisam ser seguidas e mustn’t para proibições.",
  "words": [
   [
-   "rule",
-   "regra"
-  ],
-  [
-   "helmet",
-   "capacete"
-  ],
-  [
    "red light",
    "sinal vermelho"
   ],
   [
-   "sidewalk",
-   "calçada"
+   "chin",
+   "queixo"
+  ],
+  [
+   "load",
+   "carga"
+  ],
+  [
+   "hedge",
+   "cerca viva"
   ]
  ],
  "reading": [
   [
    "Nico gets a new bike for his birthday.",
-   "Nico ganha uma bicicleta nova no aniversário."
+   "Nico ganha uma bicicleta nova de aniversário."
   ],
   [
    "His father explains the rules of the road to him.",
-   "O pai explica a ele as regras de trânsito."
+   "O pai dele explica a ele as regras da rua."
   ],
   [
    "Nico must wear a helmet every time he rides.",
@@ -80,7 +80,7 @@
   ],
   [
    "No, you mustn’t. It is dangerous for people.",
-   "Não, não pode. É perigoso para as pessoas."
+   "Não, você não pode. É perigoso para as pessoas."
   ]
  ],
  "pron": [
@@ -96,7 +96,21 @@
   "mustn’t",
   "must",
   "Você não pode andar na calçada.",
-  "Mustn’t indica proibição; must sozinho obriga."
+  "Mustn’t expressa proibição: não pode."
  ],
- "pattern": "\\bmust(?:n’t)?\\b"
+ "pattern": "\\bmust(?:n’t)?\\b",
+ "extra": {
+  "chin": [
+   "The helmet strap goes under his chin.",
+   "A tira do capacete passa embaixo do queixo."
+  ],
+  "load": [
+   "He must not carry a heavy load on the bike.",
+   "Ele não pode levar uma carga pesada na bicicleta."
+  ],
+  "hedge": [
+   "A hedge hides the road, so he must slow down.",
+   "Uma cerca viva esconde a rua, então ele deve diminuir."
+  ]
+ }
 }

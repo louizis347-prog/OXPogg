@@ -75,7 +75,7 @@ function lessonStatusAt(index){
 function studyTitleAt(index){
   const plan=englishLessonPlan(index);
   if(plan){
-    return {title:plan.title,art:(level===1?englishA2Data.themes:englishA1PhotoThemes)[index],word:plan.words[0][0]};
+    return {title:plan.title,art:englishStore().themes[index]||'map',word:plan.words[0][0]};
   }
   if(index===0){
     const theme=study[lang][level][0];
@@ -153,7 +153,7 @@ function lessonHeader(){
   document.title=$('lessonHeading').textContent+' · '+ui('Lição')+' '+(unit+1)+' · Pogolo Dict';
   $('lessonPosition').textContent=ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonsPerLevel;
   const plan=englishLessonPlan();
-  $('lessonArtwork').innerHTML=lessonPhotoFrame((plan&&englishPlanPhoto(plan))||photoForMoment(art,0,'reading'),'lesson-hero-photo',true);
+  $('lessonArtwork').innerHTML=plan&&!plan.file?routeIllustration(art):lessonPhotoFrame((plan&&englishPlanPhoto(plan))||photoForMoment(art,0,'reading'),'lesson-hero-photo',true);
   const visible=Object.entries(lessonPanels).filter(([key])=>key!=='story'||(unit+1)%lessonsPerBlock===0);
   $('lessonSections').innerHTML=visible.map(([key,[mark,...label]])=>
     '<button type="button" aria-controls="'+(key==='story'?'lessonStory':'lesson-panel-'+key)+'" data-lesson-section="'+key+'">'+routeIcon(mark)+clean(routeLabel(...label))+'</button>').join('');
@@ -228,7 +228,7 @@ function lessonPanel(key,preview,content,{extraClass='',id='lesson-panel-'+key,u
   const index=Object.keys(lessonPanels).indexOf(key);
   const topicPreview=['lexicon','grammar'].includes(key);
   const photo=topicPreview?null:photoForMoment(lessonVisualTheme(),index,'preview','',used);
-  const image=topicPreview?lessonStudyBadge(key):'<img class="lesson-preview-photo" src="'+clean(photo.file)+'" alt="" width="'+photo.width+'" height="'+photo.height+'" loading="lazy" decoding="async">';
+  const image=(topicPreview||!photo)?lessonStudyBadge(key):'<img class="lesson-preview-photo" src="'+clean(photo.file)+'" alt="" width="'+photo.width+'" height="'+photo.height+'" loading="lazy" decoding="async">';
   return '<details id="'+id+'" class="lesson-disclosure '+extraClass+'" data-lesson-panel="'+key+'"><summary>'+
     image+'<span class="lesson-preview-text"><strong>'+(topicPreview?'':routeIcon(mark))+clean(routeLabel(...label))+'</strong>'+
     '<span>'+preview+'</span></span>'+lessonPreviewActions(routeLabel(...label))+'</summary>'+
