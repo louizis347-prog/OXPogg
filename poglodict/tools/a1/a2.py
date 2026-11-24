@@ -8,7 +8,9 @@ LOCAL = lambda n: n - 351          # índice dentro do nível A2
 st = lambda w: re.sub(r'(ing|ed|es|s)$', '', w.lower())
 key = lambda t: st(t) if len(t.split()) == 1 else t.lower()
 # primeira lição em que cada estrutura pode aparecer (preenchido a partir do currículo)
-FIRST = json.load(open(H + '/a2_first.json')) if os.path.exists(H + '/a2_first.json') else {}
+FIRSTL = json.load(open(H + '/a2_first.json'))
+FIRST = {r: n for r, n, _ in FIRSTL}
+LABEL = {r: l for r, _, l in FIRSTL}
 def blocks():
     d = {}
     for f in sorted(glob.glob(H + '/out/a2_block*.json')): d.update(json.load(open(f)))
@@ -35,7 +37,7 @@ def prep():
         prev = [w for k in ns[max(0, i - 5):i] for w in basew[k]]
         pk.append(dict(n=n, level='A2', title=cur[n]['title'], grammar=cur[n]['grammar'], goal=cur[n]['goal'], base_words=cur[n]['base_words'],
             grammar_taught_before=gram[:180 + i], recycle_from_previous=prev, pron_sound=cur[n]['sound'], pron_words=cur[n]['pron_words'],
-            mini_story=(n % 10 == 0), not_yet_taught=sorted(k for k, v in FIRST.items() if v > n)))
+            mini_story=(n % 10 == 0), not_yet_taught=sorted(LABEL[k] for k, v in FIRST.items() if v > n)))
     for k in range(13): json.dump(pk[k * 10:(k + 1) * 10], open(H + '/in/a2_block%d.json' % (k + 1), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print('pacotes', len(pk), 'palavras usadas', len(used))
 
