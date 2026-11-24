@@ -182,7 +182,7 @@ const englishA1Content=[
 ];
 
 function plannedEnglishContent(){
-  const row=englishLessonPlan()?englishA1Content[unit]:null;
+  const row=englishLessonPlan()?englishStore().content[unit]:null;
   if(!row)return null;
   const lines=pairs=>pairs.map(([text,pt])=>({text,pt}));
   return {reading:lines(row[0]),dialogue:lines(row[1]),pronunciation:row[2],grammar:row[3],examples:row[4]?lines(row[4]):null,quiz:row[5]||null};
@@ -202,7 +202,7 @@ const englishA1GrammarPatterns=[
 function plannedEnglishExamples(content){
   if(content.examples)return content.examples;
   const all=[...content.dialogue,...content.reading];
-  const pattern=englishA1GrammarPatterns[unit];
+  const pattern=englishA1GrammarPatterns[unit]||/$^/;
   const matching=all.filter(line=>pattern.test(line.text));
   return [...new Map([...matching,...all].map(line=>[line.text,line])).values()].slice(0,2);
 }
@@ -230,7 +230,7 @@ function a1QuizItem(item,u,i,label){
 function renderA1Quiz(content){
   if(!content.quiz)return '';
   const missed=a1Missed(), review=Object.keys(missed).filter(k=>Number(k.split(':')[0])<unit).slice(0,2);
-  const items=review.map(k=>{const [u,i]=k.split(':').map(Number);const row=englishA1Content[u]?.[5]?.[i];return row?a1QuizItem(row,u,i,'Revisão da lição '+(u+1)):'';}).join('')+
+  const items=review.map(k=>{const [u,i]=k.split(':').map(Number);const row=englishStore().content[u]?.[5]?.[i];return row?a1QuizItem(row,u,i,'Revisão da lição '+(u+1)):'';}).join('')+
     content.quiz.map((item,i)=>a1QuizItem(item,unit,i)).join('');
   return '<section class="grammar-choice a1-quiz"><h4>Mini-quiz da lição</h4><p class="meta">Quatro itens: lacuna, escuta e duas frases para montar. O que você errar volta como revisão nas próximas lições.</p>'+items+'</section>';
 }
@@ -288,7 +288,7 @@ function buildCompletedEnglishLesson(plan,content){
 function plannedEnglishWordExample(term,content){
   const needle=term.replace(/[.…?!]+$/u,'');
   const example=[...content.reading,...content.dialogue].find(line=>Boolean(wordUseGap(line.text,needle)));
-  const supplement=englishA1ExtraWordExamples[unit]?.[term];
+  const supplement=englishStore().extras[unit]?.[term];
   return example||(supplement?{text:supplement[0],pt:supplement[1]}:null);
 }
 function renderCompletedEnglishVocabulary(plan,content,photo){
@@ -346,7 +346,7 @@ const englishA1MiniStories={
   179:["A caixa na praia",`Lia found a small box at the beach.~Lia achou uma caixa pequena na praia.|Inside, there was a map and a key.~Dentro, havia um mapa e uma chave.|The map showed a big tree near a cave.~O mapa mostrava uma árvore grande perto de uma caverna.|Lia called her brother Noah, and they went there.~Lia chamou o irmão Noah, e eles foram até lá.|At the tree, they dug a hole, but there was nothing.~Na árvore, eles cavaram um buraco, mas não havia nada.|Noah was sad, but Lia looked at the map again.~Noah ficou triste, mas Lia olhou o mapa de novo.|She saw a small note: "Look up, not down."~Ela viu um bilhete pequeno: "Olhe para cima, não para baixo."|They looked up and saw a metal box in the tree.~Eles olharam para cima e viram uma caixa de metal na árvore.|The key opened it, and inside there were old coins.~A chave abriu a caixa, e dentro havia moedas velhas.|They shared the coins and laughed all day.~Eles dividiram as moedas e riram o dia todo.`]
 };
 function renderCompletedEnglishStory(){
-  const story=englishLessonPlan()?englishA1MiniStories[unit]:null;
+  const story=englishLessonPlan()?englishStore().stories[unit]:null;
   if(!story)return '';
   const [title,raw]=story;
   const lines=raw.split('|').map(line=>{const [text,pt]=line.split('~');return {text,pt};});

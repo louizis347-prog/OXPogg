@@ -184,8 +184,15 @@ Revisão final: Mapa do tesouro||Revisão final: pedidos, conselhos, there was, 
   return {title,file:file?'photo-'+file+'.webp':'',grammar,goal,words:terms.split(';').map(term=>term.split('='))};
 });
 
+// Lições autorais por nível: A1 (englishA1*) e A2 (englishA2*, em english-a2.js). Índice = lição do nível − 1.
+function englishStore(){
+  if(lang!=='eng')return null;
+  if(level===0)return {plans:englishA1Plans,content:englishA1Content,stories:englishA1MiniStories,extras:englishA1ExtraWordExamples,themes:englishA1PhotoThemes,blocks:englishA1BlockPhotoFiles};
+  if(level===1&&typeof englishA2Plans!=='undefined')return {plans:englishA2Plans,content:englishA2Content,stories:englishA2MiniStories,extras:englishA2ExtraWordExamples,themes:englishA2PhotoThemes,blocks:[]};
+  return null;
+}
 function englishLessonPlan(index=unit){
-  return lang==='eng'&&level===0?englishA1Plans[index]:null;
+  return englishStore()?.plans[index]||null;
 }
 function englishPlanPhoto(plan){
   return plan.file?Object.values(lessonPhotoPool).flat().find(photo=>photo.file===plan.file):null;
@@ -243,7 +250,7 @@ photo-phone-1.webp photo-deskStudy-1.webp
 photo-message-1.webp photo-friends-1.webp
 lesson-cup.webp photo-counter-1.webp`.split("\n").map(row=>row.split(" "));
 function englishA1BlockPhotos(){
-  const files=englishA1BlockPhotoFiles[unit]||[];
+  const files=englishStore()?.blocks[unit]||[];
   const collection=[...Object.values(lessonPhotos),...Object.values(lessonPhotoPool).flat()];
   return files.map(file=>collection.find(photo=>photo.file===file));
 }
