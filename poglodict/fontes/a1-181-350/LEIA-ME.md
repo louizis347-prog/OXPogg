@@ -1,8 +1,8 @@
 # Guia — lições A1 181–300 do PoggloDict (inglês americano para brasileiros)
 
 ## O que você vai fazer
-Escrever, para cada lição do seu lote, UM arquivo JSON em `poglodict/fontes/a1-181-300/NNN.json` (NNN = número da lição, 181…300), no MESMO padrão e na MESMA densidade das 50 primeiras lições do curso. Exemplos reais já convertidos para o formato: `/tmp/pd/exemplos/001.json`, `011.json`, `031.json`, `049.json` (leia os quatro antes de começar; o 049 mostra `story`). As 50 lições originais estão em `/home/user/OXPogg/poglodict/english-a1-plan.js` (título | foto | gramática | escopo | vocabulário) e `english-a1-content.js` (leitura, diálogo, pronúncia, exercício). Leia pelo menos 15 delas para absorver o tom.
-Tema e objetivo gramatical de cada lição estão em `poglodict/fontes/a1-181-300/plano-gramatical.txt` (`NNN|tema do bloco|objetivo gramatical`): você escolhe o título concreto (PT-BR, uma cena específica), mas o objetivo gramatical é o da linha (pode refinar o texto, nunca trocar o tópico). Não existem imagens a produzir: só escolha arquivos de foto já existentes.
+Escrever, para cada lição do seu lote, UM arquivo JSON em `poglodict/fontes/a1-181-350/NNN.json` (NNN = número da lição, 181…300), no MESMO padrão e na MESMA densidade das 50 primeiras lições do curso. Exemplos reais já convertidos para o formato: `/tmp/pd/exemplos/001.json`, `011.json`, `031.json`, `049.json` (leia os quatro antes de começar; o 049 mostra `story`). As 50 lições originais estão em `/home/user/OXPogg/poglodict/english-a1-plan.js` (título | foto | gramática | escopo | vocabulário) e `english-a1-content.js` (leitura, diálogo, pronúncia, exercício). Leia pelo menos 15 delas para absorver o tom.
+Tema e objetivo gramatical de cada lição estão em `poglodict/fontes/a1-181-350/plano-gramatical.txt` (`NNN|tema do bloco|objetivo gramatical`): você escolhe o título concreto (PT-BR, uma cena específica), mas o objetivo gramatical é o da linha (pode refinar o texto, nunca trocar o tópico). Não existem imagens a produzir: só escolha arquivos de foto já existentes.
 
 ## Formato do JSON
 ```json
@@ -41,7 +41,7 @@ Tema e objetivo gramatical de cada lição estão em `poglodict/fontes/a1-181-30
 - Se o validador apontar palavra fora da lista: troque por palavra A1 equivalente ou, se for a palavra natural do tema, ENSINE-A em `words`.
 
 ## Validar
-`python3 poglodict/fontes/a1-181-300/validar.py 181 182 …` (só as suas). Deve imprimir `NNN ok` para cada. Ajuste até passar. No fim, rode de novo todas as suas. Os outros agentes escrevem em paralelo nos arquivos deles; não toque em arquivos de outros números, no validador ou em qualquer outro lugar. NÃO rode git, não edite o repositório: só crie `poglodict/fontes/a1-181-300/NNN.json`.
+`python3 poglodict/fontes/validar.py 181 182 …` (só as suas). Deve imprimir `NNN ok` para cada. Ajuste até passar. No fim, rode de novo todas as suas. Os outros agentes escrevem em paralelo nos arquivos deles; não toque em arquivos de outros números, no validador ou em qualquer outro lugar. NÃO rode git, não edite o repositório: só crie `poglodict/fontes/a1-181-350/NNN.json`.
 Se o validador acusar "vocabulário já usado em outra lição", troque o termo-foco da SUA lição.
 
 ## Entrega
