@@ -1,4 +1,4 @@
-// A1 · lições 181–300 · conteúdo próprio no padrão das 50 primeiras (gerado por tools/poglodict_build_a1.py; edite fontes/a1-181-300/*.json).
+// A1 · lições 181–300 · conteúdo próprio no padrão das 50 primeiras (gerado por tools/poglodict_build_a1.py; edite fontes/a1-181-350/*.json).
 // Cada índice = número da lição − 1. Plano, conteúdo, padrão gramatical, mini-história, tema visual e par de fotos.
 (function(){
 const plans=[],content=[],patterns=[],themes=[],photos=[],stories={},extras={};

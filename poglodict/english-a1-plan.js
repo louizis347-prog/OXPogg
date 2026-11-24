@@ -54,8 +54,10 @@ Um café antes de voltar para casa|coffeeTable-1|And e but para juntar duas idei
   return {title,file:'photo-'+file+'.webp',grammar,goal,words:terms.split(';').map(term=>term.split('='))};
 });
 
+// A2 authored lessons (see english-a2-extra.js): same shape as the A1 arrays, indexed by lesson − 1.
+const englishA2Data={plans:[],content:[],patterns:[],themes:[],photos:[],stories:{},extras:{}};
 function englishLessonPlan(index=unit){
-  return lang==='eng'&&level===0?englishA1Plans[index]:null;
+  return lang==='eng'&&level<=1?(level===1?englishA2Data.plans:englishA1Plans)[index]:null;
 }
 function englishPlanPhoto(plan){
   return Object.values(lessonPhotoPool).flat().find(photo=>photo.file===plan.file);
@@ -113,7 +115,7 @@ lesson-health.webp photo-hospital-2.webp
 photo-parkPath-1.webp lesson-park.webp
 lesson-cup.webp photo-counter-1.webp`.split("\n").map(row=>row.split(" "));
 function englishA1BlockPhotos(){
-  const files=englishA1BlockPhotoFiles[unit];
+  const files=(level===1?englishA2Data.photos:englishA1BlockPhotoFiles)[unit];
   const collection=[...Object.values(lessonPhotos),...Object.values(lessonPhotoPool).flat()];
   return files.map(file=>collection.find(photo=>photo.file===file));
 }

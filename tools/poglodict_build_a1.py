@@ -5,19 +5,21 @@ Uso: python3 tools/poglodict_build_a1.py   (de qualquer pasta)
 O JS gerado só ACRESCENTA entradas aos arranjos de english-a1-plan.js / english-a1-content.js (índice = lição − 1)."""
 import csv, glob, json, os, re
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-P = os.path.join(ROOT, 'poglodict'); SRC = os.path.join(P, 'fontes', 'a1-181-300')
+P = os.path.join(ROOT, 'poglodict'); 
 
 def photo_file(key):
     for f in ('photo-%s.webp' % key, '%s.webp' % key, key):
         if os.path.exists(os.path.join(P, f)): return f
     raise SystemExit('foto inexistente: %s' % key)
 
-def main():
+def gen(srcdir, level, jsname, csvname):
+    """level 'a1' acrescenta aos arranjos englishA1*; 'a2' preenche englishA2Data (índice = lição − 1)."""
+    SRC = os.path.join(P, 'fontes', srcdir)
     lessons = {}
     for f in sorted(glob.glob(os.path.join(SRC, '[0-9]*.json'))):
         d = json.load(open(f, encoding='utf-8')); lessons[d['n']] = d
     ns = sorted(lessons)
-    out = ['// A1 · lições %d–%d · conteúdo próprio no padrão das 50 primeiras (gerado por tools/poglodict_build_a1.py; edite fontes/a1-181-300/*.json).' % (ns[0], ns[-1]),
+    out = ['// %s · lições %d–%d · conteúdo próprio no padrão das 50 primeiras (gerado por tools/poglodict_build_a1.py; edite fontes/%s/*.json).' % (level.upper(), ns[0], ns[-1], srcdir),
            '// Cada índice = número da lição − 1. Plano, conteúdo, padrão gramatical, mini-história, tema visual e par de fotos.',
            '(function(){',
            'const plans=[],content=[],patterns=[],themes=[],photos=[],stories={},extras={};']
@@ -37,22 +39,39 @@ def main():
             out.append('stories[%d]=%s;' % (u, json.dumps([t, '|'.join('%s~%s' % (en, pt) for en, pt in body)], ensure_ascii=False)))
         if d.get('extra'): out.append('extras[%d]=%s;' % (u, json.dumps(d['extra'], ensure_ascii=False)))
         words = ' / '.join('%s — %s' % (a, b) for a, b in d['words'])
-        rows.append([n, 'A1', d['title'], words, d['grammar'], d['goal'], '', 'Imagem a definir (provisória: %s)' % plan['file'], '', '', '', ''])
-    out += [
-        'for(const [u,v] of plans.entries())if(v)englishA1Plans[u]=v;',
-        'for(const [u,v] of content.entries())if(v)englishA1Content[u]=v;',
-        'for(const [u,v] of patterns.entries())if(v)englishA1GrammarPatterns[u]=v;',
-        'for(const [u,v] of themes.entries())if(v)englishA1PhotoThemes[u]=v;',
-        'for(const [u,v] of photos.entries())if(v)englishA1BlockPhotoFiles[u]=v;',
-        'Object.assign(englishA1MiniStories,stories);',
-        'Object.assign(englishA1ExtraWordExamples,extras);',
-        '})();', '']
-    open(os.path.join(P, 'english-a1-extra.js'), 'w', encoding='utf-8').write('\n'.join(out))
-    with open(os.path.join(P, 'plano-ingles-a1-181-300.csv'), 'w', encoding='utf-8-sig', newline='') as fh:
+        rows.append([n, level.upper(), d['title'], words, d['grammar'], d['goal'], '', 'Imagem a definir (provisória: %s)' % plan['file'], '', '', '', ''])
+    if level == 'a1':
+        out += [
+            'for(const [u,v] of plans.entries())if(v)englishA1Plans[u]=v;',
+            'for(const [u,v] of content.entries())if(v)englishA1Content[u]=v;',
+            'for(const [u,v] of patterns.entries())if(v)englishA1GrammarPatterns[u]=v;',
+            'for(const [u,v] of themes.entries())if(v)englishA1PhotoThemes[u]=v;',
+            'for(const [u,v] of photos.entries())if(v)englishA1BlockPhotoFiles[u]=v;',
+            'Object.assign(englishA1MiniStories,stories);',
+            'Object.assign(englishA1ExtraWordExamples,extras);']
+    else:
+        out += [
+            'for(const [u,v] of plans.entries())if(v)englishA2Data.plans[u]=v;',
+            'for(const [u,v] of content.entries())if(v)englishA2Data.content[u]=v;',
+            'for(const [u,v] of patterns.entries())if(v)englishA2Data.patterns[u]=v;',
+            'for(const [u,v] of themes.entries())if(v)englishA2Data.themes[u]=v;',
+            'for(const [u,v] of photos.entries())if(v)englishA2Data.photos[u]=v;',
+            'Object.assign(englishA2Data.stories,stories);',
+            'Object.assign(englishA2Data.extras,extras);']
+    out += ['})();', '']
+    open(os.path.join(P, jsname), 'w', encoding='utf-8').write('\n'.join(out))
+    with open(os.path.join(P, csvname), 'w', encoding='utf-8-sig', newline='') as fh:
         w = csv.writer(fh, delimiter=';', quoting=csv.QUOTE_ALL)
         w.writerow(['Lição', 'Nível', 'Título', 'Vocabulário inglês — português', 'Gramática', 'Objetivo', 'Imagem', 'Descrição da imagem', 'Autoria', 'Fonte', 'Licença', 'URL da licença'])
         w.writerows(rows)
-    print('lições:', len(ns), '| js:', os.path.getsize(os.path.join(P, 'english-a1-extra.js')), 'bytes')
+    print('lições:', len(ns), '| js:', os.path.getsize(os.path.join(P, jsname)), 'bytes')
+
+def main():
+    gen('a1-181-350', 'a1', 'english-a1-extra.js', 'plano-ingles-a1-181-350.csv')
+    if glob.glob(os.path.join(P, 'fontes', 'a2-1-80', '[0-9]*.json')):
+        gen('a2-1-80', 'a2', 'english-a2-extra.js', 'plano-ingles-a2-01-80.csv')
+    else:
+        open(os.path.join(P, 'english-a2-extra.js'), 'w').write('// A2: sem lições autorais ainda\n')
 
 if __name__ == '__main__':
     main()

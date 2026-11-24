@@ -75,7 +75,7 @@ function lessonStatusAt(index){
 function studyTitleAt(index){
   const plan=englishLessonPlan(index);
   if(plan){
-    return {title:plan.title,art:englishA1PhotoThemes[index],word:plan.words[0][0]};
+    return {title:plan.title,art:(level===1?englishA2Data.themes:englishA1PhotoThemes)[index],word:plan.words[0][0]};
   }
   if(index===0){
     const theme=study[lang][level][0];

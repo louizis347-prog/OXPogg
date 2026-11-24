@@ -52,7 +52,7 @@ const englishA1Content=[
 ];
 
 function plannedEnglishContent(){
-  const row=englishLessonPlan()?englishA1Content[unit]:null;
+  const row=englishLessonPlan()?(level===1?englishA2Data.content:englishA1Content)[unit]:null;
   if(!row)return null;
   const lines=pairs=>pairs.map(([text,pt])=>({text,pt}));
   return {reading:lines(row[0]),dialogue:lines(row[1]),pronunciation:row[2],grammar:row[3]};
@@ -71,7 +71,7 @@ const englishA1GrammarPatterns=[
 ];
 function plannedEnglishExamples(content){
   const all=[...content.dialogue,...content.reading];
-  const pattern=englishA1GrammarPatterns[unit];
+  const pattern=(level===1?englishA2Data.patterns:englishA1GrammarPatterns)[unit];
   const matching=all.filter(line=>pattern.test(line.text));
   return [...new Map([...matching,...all].map(line=>[line.text,line])).values()].slice(0,2);
 }
@@ -104,7 +104,7 @@ function buildCompletedEnglishLesson(plan,content){
 function plannedEnglishWordExample(term,content){
   const needle=term.replace(/[.…?!]+$/u,'');
   const example=[...content.reading,...content.dialogue].find(line=>Boolean(wordUseGap(line.text,needle)));
-  const supplement=englishA1ExtraWordExamples[unit]?.[term];
+  const supplement=(level===1?englishA2Data.extras:englishA1ExtraWordExamples)[unit]?.[term];
   return example||(supplement?{text:supplement[0],pt:supplement[1]}:null);
 }
 function renderCompletedEnglishVocabulary(plan,content,photo){
@@ -149,7 +149,7 @@ const englishA1MiniStories={
   49:['Cinco minutos de café',`Tina meets Lou after work.~Tina encontra Lou depois do trabalho.|They stop at a coffee shop.~Eles param numa cafeteria.|Tina wants coffee and a cookie.~Tina quer café e um biscoito.|Lou wants coffee, but he needs to go home soon.~Lou quer café, mas precisa ir para casa logo.|The barista brings their orders.~O atendente traz os pedidos.|Tina looks at the clock.~Tina olha para o relógio.|Lou has only five minutes.~Lou só tem cinco minutos.|They take the coffee with them.~Eles levam o café com eles.|They walk to the corner and say goodbye.~Eles caminham até a esquina e se despedem.|They plan to come back on Saturday.~Eles planejam voltar no sábado.`]
 };
 function renderCompletedEnglishStory(){
-  const story=englishLessonPlan()?englishA1MiniStories[unit]:null;
+  const story=englishLessonPlan()?(level===1?englishA2Data.stories:englishA1MiniStories)[unit]:null;
   if(!story)return '';
   const [title,raw]=story;
   const lines=raw.split('|').map(line=>{const [text,pt]=line.split('~');return {text,pt};});
