@@ -13,7 +13,7 @@ const a1PoseLabels={
 function a1MouthPath([width,upper,lower]){
   return 'M'+(110-width)+' 122 Q110 '+(122-upper*2)+' '+(110+width)+' 122 Q110 '+(122+lower*2)+' '+(110-width)+' 122Z';
 }
-function a1PronunciationLabRow(){return englishLessonPlan()?a1PronunciationLab[unit]:null;}
+function a1PronunciationLabRow(){return englishLessonPlan()&&level===0?a1PronunciationLab[unit]:null;}
 function a1Speaker(){
   return '<svg class="a1-speaker" viewBox="0 0 220 180" aria-hidden="true">'+
     '<circle cx="110" cy="89" r="78" fill="#dcece0"/><path d="M42 180c9-31 36-44 68-44s59 13 68 44" fill="#2e6856"/>'+

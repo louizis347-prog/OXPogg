@@ -1,0 +1,112 @@
+{
+ "n": 329,
+ "title": "Preço no mercado",
+ "photo": "payment-1",
+ "art": "ticket",
+ "photos": [
+  "photo-payment-1.webp",
+  "photo-counter-1.webp"
+ ],
+ "grammar": "Números, preços e datas ditos em voz alta",
+ "goal": "Leia e diga preços como twelve dollars e datas como May fifth em voz alta.",
+ "words": [
+  [
+   "hundred",
+   "cem"
+  ],
+  [
+   "change",
+   "troco"
+  ],
+  [
+   "dollar",
+   "dólar"
+  ],
+  [
+   "coin",
+   "moeda"
+  ]
+ ],
+ "reading": [
+  [
+   "Peg buys a clock at a small shop.",
+   "Peg compra um relógio numa lojinha."
+  ],
+  [
+   "It costs one hundred dollars.",
+   "Custa cem dólares."
+  ],
+  [
+   "She pays and waits for her change.",
+   "Ela paga em dinheiro e espera o troco."
+  ],
+  [
+   "The man gives her twelve dollars back.",
+   "O homem devolve doze dólares a ela."
+  ],
+  [
+   "The sale ends on June third.",
+   "A promoção termina em três de junho."
+  ]
+ ],
+ "dialogue": [
+  [
+   "How much is this clock?",
+   "Quanto custa este relógio?"
+  ],
+  [
+   "It is one hundred dollars.",
+   "Custa cem dólares."
+  ],
+  [
+   "I have one hundred and twelve dollars.",
+   "Tenho cento e doze dólares."
+  ],
+  [
+   "Then here is your change.",
+   "Então aqui está o seu troco."
+  ],
+  [
+   "Can I pay with a coin?",
+   "Posso pagar com uma moeda?"
+  ],
+  [
+   "Yes, a coin is fine.",
+   "Sim, uma moeda serve."
+  ],
+  [
+   "When is the sale over?",
+   "Quando acaba a promoção?"
+  ],
+  [
+   "It ends on June third.",
+   "Acaba em três de junho."
+  ]
+ ],
+ "pron": [
+  "Treze ou trinta",
+  "Em thirteen o acento está no fim, em thirty está no começo.",
+  [
+   "thirteen",
+   "Thirteen dollars, please."
+  ]
+ ],
+ "gram": [
+  "The clock is one ___ dollars.",
+  "hundred",
+  "hundreds",
+  "O relógio custa cem dólares.",
+  "Depois de um número, hundred não vai para o plural."
+ ],
+ "pattern": "\\bhundred\\b|\\bdollars?\\b",
+ "extra": {
+  "change": [
+   "Keep the change.",
+   "Fique com o troco."
+  ],
+  "coin": [
+   "I have one coin.",
+   "Eu tenho uma moeda."
+  ]
+ }
+}
