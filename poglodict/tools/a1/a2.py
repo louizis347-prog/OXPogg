@@ -44,6 +44,7 @@ def prep():
 
 def dedupe():
     new = blocks(); fix = fixes(); seen = {}; allbase = set()
+    ctxw = {st(w) for w in ctx['words'] if len(w.split()) == 1}
     for n, c in cur.items():
         for w in c['base_words']: allbase.add(key(w[0]))
     for k, v in fix.items():
@@ -59,7 +60,7 @@ def dedupe():
         d = cache[byfile[k]][k]; base = {w[0].lower() for w in cur[n]['base_words']}; keep = []
         for t, pt in d['words']:
             kk = key(t)
-            if t.lower() in base or ((kk not in seen or seen[kk] == n) and kk not in allbase): keep.append([t, pt]); seen.setdefault(kk, n)
+            if t.lower() in base or ((kk not in seen or seen[kk] == n) and kk not in allbase and not (len(t.split()) == 1 and kk in ctxw)): keep.append([t, pt]); seen.setdefault(kk, n)
         d['words'] = keep
         extra = len(fix.get(k, {}).get('add', []))
         if len(keep) + extra < 8: need.append(dict(n=n, title=cur[n]['title'], grammar=cur[n]['grammar'], need=8 - len(keep) - extra, have=[w[0] for w in keep], reading=[x[0] for x in d['reading']], dialogue=[x[0] for x in d['dialogue']]))
@@ -107,7 +108,7 @@ def build(force=False):
             if tm.replace('…', '') and tm not in low and t[0].lower() not in extras and key(tm) not in {key(x) for x in W(low)}: err(n, 'palavra sem exemplo: ' + t[0])
         for p in cur[n]['pron_words']:
             for w in W(p):
-                if w not in W(txt): err(n, 'pron_word ausente: ' + w)
+                if not any(x.startswith(w) for x in W(txt)): err(n, 'pron_word ausente: ' + w)
         g = d['grammar']
         if len(g) != 5 or '___' not in g[0]: err(n, 'grammar')
         q = d['quiz']
