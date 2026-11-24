@@ -33,8 +33,9 @@ def prep():
     json.dump(used, open(H + '/used_words_a2.json', 'w'), ensure_ascii=False)
     pk = []
     ns = sorted(cur)
+    a1tail = [w for c in json.load(open(H + '/curriculum_131_180.json'))[-5:] for w in c['base_words']]
     for i, n in enumerate(ns):
-        prev = [w for k in ns[max(0, i - 5):i] for w in basew[k]]
+        prev = [w for k in ns[max(0, i - 5):i] for w in basew[k]] or a1tail
         pk.append(dict(n=n, level='A2', title=cur[n]['title'], grammar=cur[n]['grammar'], goal=cur[n]['goal'], base_words=cur[n]['base_words'],
             grammar_taught_before=gram[:180 + i], recycle_from_previous=prev, pron_sound=cur[n]['sound'], pron_words=cur[n]['pron_words'],
             mini_story=(n % 10 == 0), not_yet_taught=sorted(LABEL[k] for k, v in FIRST.items() if v > n)))
