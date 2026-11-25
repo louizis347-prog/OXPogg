@@ -73,6 +73,7 @@ const relatedPhotoThemes={
   notebook:['map','chat'],park:['city','chat'],health:['notebook','map'],map:['ticket','notebook']
 };
 function photoForMoment(theme,index,kind,text='',used){
+  if(mangaPilot())return mangaMoment(index,kind);
   const scenes=photoSceneTargets[theme]||photoSceneTargets.map;
   const sequence=scenes[kind]||scenes.reading;
   const keyword=photoKeywords.find(([,pattern])=>pattern.test(text))?.[0];
@@ -110,6 +111,7 @@ function photoForMoment(theme,index,kind,text='',used){
   return available;
 }
 function lessonPhotoFrame(photo,className,priority=false){
+  if(mangaPilot())return mangaFigure(photo?.manga?photo:mangaMoment(0,className==='lesson-hero-photo'?'scene':'thumb'),className,priority);
   if(!photo)return '';
   const alt=routeLabel(...photo.alt);
   return '<figure class="'+className+'"><img src="'+clean(photo.file)+'" alt="'+clean(alt)+'" width="'+photo.width+

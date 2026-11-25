@@ -120,7 +120,7 @@ function drawCatalog(){
     const milestone=(i+1)%lessonsPerBlock===0;
     const label=ui('Lição')+' '+(i+1);
     return '<li><a class="lesson-link'+(i===unit?' is-resume':'')+'" href="'+lessonHash(i)+'">'+
-      '<span class="lesson-link-icon theme-'+art+'">'+routeIcon(art)+'</span><span class="lesson-link-copy">'+
+      '<span class="lesson-link-icon theme-'+art+'">'+(lang==='eng'&&level===0&&i<20?mangaArtwork(i+1,'icon'):routeIcon(art))+'</span><span class="lesson-link-copy">'+
       '<strong>'+clean(label+(title?' · '+title:''))+'</strong>'+
       (word?'<span>'+nativeText(word)+'</span>':'')+'</span><span class="lesson-link-indicators">'+
       (milestone?'<span class="lesson-indicator story-indicator" aria-label="'+routeLabel('Inclui mini-história','Includes short story','Incluye minicuento')+'">'+routeIcon('story')+'</span>':'')+
@@ -227,8 +227,8 @@ function lessonPanel(key,preview,content,{extraClass='',id='lesson-panel-'+key,u
   const [mark,...label]=lessonPanels[key];
   const index=Object.keys(lessonPanels).indexOf(key);
   const topicPreview=['lexicon','grammar'].includes(key);
-  const photo=topicPreview?null:photoForMoment(lessonVisualTheme(),index,'preview','',used);
-  const image=(topicPreview||!photo)?lessonStudyBadge(key):'<img class="lesson-preview-photo" src="'+clean(photo.file)+'" alt="" width="'+photo.width+'" height="'+photo.height+'" loading="lazy" decoding="async">';
+  const photo=topicPreview&&!mangaPilot()?null:photoForMoment(lessonVisualTheme(),index,'preview','',used);
+  const image=photo?.manga?mangaArtwork(photo.n,'thumb',index):(topicPreview||!photo)?lessonStudyBadge(key):'<img class="lesson-preview-photo" src="'+clean(photo.file)+'" alt="" width="'+photo.width+'" height="'+photo.height+'" loading="lazy" decoding="async">';
   return '<details id="'+id+'" class="lesson-disclosure '+extraClass+'" data-lesson-panel="'+key+'"><summary>'+
     image+'<span class="lesson-preview-text"><strong>'+(topicPreview?'':routeIcon(mark))+clean(routeLabel(...label))+'</strong>'+
     '<span>'+preview+'</span></span>'+lessonPreviewActions(routeLabel(...label))+'</summary>'+

@@ -149,6 +149,7 @@ function buildCore(){
 }
 let paintedLesson='';
 function drawLesson(){
+  document.body.classList.toggle('manga-pilot',screen==='licao'&&mangaPilot());
   stopA1Pronunciation();
   closeLessonFocus(false);
   const route=screen==='licao'?lessonHash(unit):'';

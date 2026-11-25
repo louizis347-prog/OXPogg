@@ -490,6 +490,27 @@ svg.a1-speaker{display:block;width:100%!important;height:auto!important;stroke:n
 .lesson-study-heading .lesson-study-icon{width:2.65rem;height:2.65rem;flex:none}
 .lesson-study-heading .lesson-study-icon svg{width:1.65rem!important;height:1.65rem!important}
 @media(max-width:540px){.lesson-disclosure>summary .lesson-study-icon{height:3.4rem}}
+
+/* PoggloDict A1 01–20: inked, scene-specific editorial artwork. */
+.manga-art{display:block;width:100%!important;height:auto!important;max-width:none;aspect-ratio:8/5;object-fit:cover;background:#eee9dc}
+.manga-art--icon{aspect-ratio:1;min-width:42px;width:100%!important;height:100%!important;object-fit:cover}
+.manga-figure{margin:0;overflow:hidden;border:2px solid #302d3a;border-radius:13px;background:#eee9dc;box-shadow:3px 4px 0 #302d3a20}
+.manga-figure .manga-art{border:0}
+.manga-pilot .lesson-hero{background:#f6f0e7;border-color:#c9bdb3}
+.manga-pilot .lesson-hero-photo{border-radius:18px;box-shadow:7px 8px 0 #b7a4a0}
+.manga-pilot .lesson-disclosure>summary{background:linear-gradient(112deg,#fffdf7,#f7f1e9)}
+.manga-pilot .lesson-disclosure>summary .manga-art--thumb{width:5.1rem!important;height:4rem!important;object-fit:cover;border:2px solid #302d3a;border-radius:9px;flex:none}
+.manga-pilot .lesson-line-photo{box-shadow:2px 3px 0 #302d3a19}
+.manga-pilot .lesson-line-photo .manga-art,.manga-pilot .lesson-example-photo .manga-art,.manga-pilot .lesson-section-photo .manga-art,.manga-pilot .lesson-pronunciation-photo .manga-art,.manga-pilot .lesson-workshop-photo .manga-art{aspect-ratio:4/3}
+.manga-pilot .lesson-line-photo .manga-art--focus-0{object-position:20% 50%;transform:scale(1.18)}
+.manga-pilot .lesson-line-photo .manga-art--focus-1{object-position:80% 50%;transform:scale(1.18)}
+.manga-pilot .lesson-line-photo .manga-art--focus-2{object-position:50% 50%;transform:scale(1.28)}
+.manga-pilot .a1-block-photo{padding:0;border:2px solid #302d3a;background:#f5eee3;max-width:700px;margin-inline:auto}
+.manga-pilot .a1-block-photo .manga-art{aspect-ratio:8/5;max-height:none}
+.lesson-link-icon:has(.manga-art--icon){padding:0;overflow:hidden;border:0;background:transparent}
+.lesson-link-icon .manga-art--icon{min-width:0}
+.manga-pilot .lesson-sections button .route-icon{color:#35303a;filter:drop-shadow(1px 1px 0 #b99e8c)}
+@media(max-width:540px){.manga-pilot .lesson-disclosure>summary .manga-art--thumb{width:3.55rem!important;height:3.3rem!important}.manga-pilot .lesson-hero-photo{box-shadow:4px 5px 0 #b7a4a0}}
 .a1-speaker-frame{display:grid;gap:.45rem;justify-items:center;max-width:15rem}
 svg.a1-mouth-closeup{display:block;width:73%!important;height:auto!important;border:2px solid var(--line);border-radius:12px}
 [data-mouth-pose=alveolar] .a1-speaker-tongue{opacity:.85;transform:translateY(-3px)}

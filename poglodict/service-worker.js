@@ -23,8 +23,11 @@ const shell=[
 ];
 const a1AudioFiles=Array.from({length:126},(_,i)=>'a1-audio/'+String(i+1).padStart(3,'0')+'.mp3');
 shell.push(...a1AudioFiles);
+shell.push('manga-art.js');
+const mangaFiles=Array.from({length:20},(_,i)=>'manga/a1-'+String(i+1).padStart(2,'0')+'.webp');
+const mangaThumbs=Array.from({length:20},(_,i)=>'manga/thumbs/a1-'+String(i+1).padStart(2,'0')+'.webp');
 const a1AudioPaths=new Set(a1AudioFiles.map(file=>new URL(file,self.registration.scope).pathname));
-const urls=new Set(shell.map(file=>new URL(file,self.registration.scope).pathname));
+const urls=new Set([...shell,...mangaFiles,...mangaThumbs].map(file=>new URL(file,self.registration.scope).pathname));
 function isData(path){
   return /^\/(eng|spa|ita|deu|ara|jpn|por|cmn)(-(examples|third|audit|support|forms))?\.json$/.test(path)||
     /^\/stories-(pt|eng|spa|ita|deu|ara|jpn|cmn)\.json$/.test(path);
