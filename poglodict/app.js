@@ -112,10 +112,10 @@ function changeCourse(next){
 let unit=0, currentLesson, exactWord='';
 function selectedUnit(){
   const stored=positions[lang+'-'+level];
-  return Number.isInteger(stored)&&stored>=0&&stored<lessonsPerLevel?stored:0;
+  return Number.isInteger(stored)&&stored>=0&&stored<lessonCount()?stored:0;
 }
 function setUnit(next){
-  unit=Math.max(0,Math.min(lessonsPerLevel-1,next));
+  unit=Math.max(0,Math.min(lessonCount()-1,next));
   positions[lang+'-'+level]=unit;
   write('lesson-position',positions);
 }
@@ -162,8 +162,8 @@ function drawLesson(){
   drawStatistics();
   $('levels').innerHTML=levels.map((l,i)=>'<button data-level="'+i+'" aria-pressed="'+(i===level)+'">'+l+'</button>').join('');
   const key=starterKey(level,unit);
-  const count=Array.from({length:lessonsPerLevel},(_,i)=>done[starterKey(level,i)]).filter(Boolean).length;
-  $('progress').textContent=ui(languages[lang][1])+' · '+levels[level]+' · '+count+' '+ui('de')+' '+lessonsPerLevel+' '+ui('lições concluídas');
+  const count=Array.from({length:lessonCount()},(_,i)=>done[starterKey(level,i)]).filter(Boolean).length;
+  $('progress').textContent=ui(languages[lang][1])+' · '+levels[level]+' · '+count+' '+ui('de')+' '+lessonCount()+' '+ui('lições concluídas');
   $('levelProgress').value=count;
   $('levelDescription').textContent=[
     'A1 · Entender e usar frases simples no dia a dia.',
@@ -186,11 +186,11 @@ function drawLesson(){
   const authored=plannedEnglishContent();
   currentLesson=authored?buildCompletedEnglishLesson(plan,authored):unit===0?buildCore():lesson?buildThematicLesson(unit,lesson):null;
   displayDailyWord();
-  const navigation='<div class="lesson-nav"><div><strong>'+ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonsPerLevel+'</strong><p class="meta">'+
+  const navigation='<div class="lesson-nav"><div><strong>'+ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonCount()+'</strong><p class="meta">'+
     ui(unit===0?'Lição de abertura':'Prática guiada')+'</p></div><div class="controls">'+
     '<button id="previousLesson" '+(unit===0?'disabled':'')+'>'+ui('Anterior')+'</button>'+
-    '<button id="nextLesson" '+(unit===lessonsPerLevel-1?'disabled':'')+'>'+ui('Próxima')+'</button>'+
-    '<form id="goLesson"><label for="lessonNumber">'+ui('Ir à lição')+'</label><input type="number" id="lessonNumber" min="1" max="'+lessonsPerLevel+'" value="'+(unit+1)+'" required><button>'+ui('Ir')+'</button></form></div></div>';
+    '<button id="nextLesson" '+(unit===lessonCount()-1?'disabled':'')+'>'+ui('Próxima')+'</button>'+
+    '<form id="goLesson"><label for="lessonNumber">'+ui('Ir à lição')+'</label><input type="number" id="lessonNumber" min="1" max="'+lessonCount()+'" value="'+(unit+1)+'" required><button>'+ui('Ir')+'</button></form></div></div>';
   if(!currentLesson){
     $('lesson').innerHTML=navigation+'<p role="status">'+(loadingError?'O conteúdo da lição não carregou. <button type="button" id="lessonRetry">Tentar novamente</button>':'Carregando a prática guiada…')+'</p>';
     return;
@@ -203,7 +203,7 @@ function drawLesson(){
   const used=new Set(currentLesson.cardPhotos);
   const [vocabularyPhoto,grammarPhoto]=authored?englishA1BlockPhotos():[];
   if(authored){if(vocabularyPhoto)used.add(vocabularyPhoto.file);if(grammarPhoto)used.add(grammarPhoto.file);}
-  const status=plan?'<div class="lesson-plan-status"><strong>Inglês americano '+levels[level]+' · Lote '+(level===2?'01–80':level===1?(unit<80?'01–80':'81–350'):unit>=180?'181–350':'01–180')+'</strong><p>Estude o vocabulário em contexto, ouça a cena e aplique a gramática na prática.</p><a href="'+(level===2?'plano-ingles-b1-01-80.csv':level===1?(unit<80?'plano-ingles-a2-01-80.csv':'plano-ingles-a2-431-700.csv'):unit>=180?'plano-ingles-a1-181-350.csv':'plano-ingles-a1-01-50.csv')+'" download>Baixar a planilha deste lote</a></div>':'';
+  const status=plan?'<div class="lesson-plan-status"><strong>Inglês americano '+levels[level]+' · Lote '+(level===2?'01–80':level===1?(unit<80?'01–80':'81–350'):unit>=180?'181–360':'01–180')+'</strong><p>Estude o vocabulário em contexto, ouça a cena e aplique a gramática na prática.</p><a href="'+(level===2?'plano-ingles-b1-01-80.csv':level===1?(unit<80?'plano-ingles-a2-01-80.csv':'plano-ingles-a2-431-700.csv'):unit>=180?'plano-ingles-a1-181-360.csv':'plano-ingles-a1-01-50.csv')+'" download>Baixar a planilha deste lote</a></div>':'';
   $('lesson').innerHTML=navigation+status+lessonAudioBar()+'<div class="lesson-panels">'+
     lessonPanel('lexicon',plan?plan.words.slice(0,2).map(([term])=>nativeText(term)).join(' · '):nativeText(currentLesson.focus?.word||vocabulary.word)+' · '+nativeText(vocabulary.expression),
       (authored?renderCompletedEnglishVocabulary(plan,content,vocabularyPhoto):cards[0])+renderWordUse(currentLesson),{used})+
@@ -383,7 +383,7 @@ $('lesson').addEventListener('submit',e=>{
   if(e.target.id!=='goLesson')return;
   e.preventDefault();
   const value=Number($('lessonNumber').value);
-  if(!Number.isInteger(value)||value<1||value>lessonsPerLevel)return;
+  if(!Number.isInteger(value)||value<1||value>lessonCount())return;
   goToLesson(value-1);
 });
 $('lesson').addEventListener('change',changeSceneRole);
@@ -408,8 +408,8 @@ $('lesson').addEventListener('click',e=>{
     if(done[key])delete done[key];else done[key]=dateKey();
     write('done',done);
   } else if(b.id==='daily'){
-    const next=Array.from({length:lessonsPerLevel},(_,i)=>i).find(i=>!done[starterKey(level,i)]);
-    goToLesson(next??dailyIndex()%lessonsPerLevel);return;
+    const next=Array.from({length:lessonCount()},(_,i)=>i).find(i=>!done[starterKey(level,i)]);
+    goToLesson(next??dailyIndex()%lessonCount());return;
   } else if(b.id==='previousLesson'){goToLesson(unit-1);return;}
   else if(b.id==='nextLesson'){goToLesson(unit+1);return;}
   else return;

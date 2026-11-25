@@ -103,7 +103,7 @@ function dueReviews(){
 }
 function drawStudyHome(){
   const count=dueReviews().length;
-  $('homeProgress').textContent=ui(languages[lang][1])+' · '+levels[level]+' · '+ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonsPerLevel;
+  $('homeProgress').textContent=ui(languages[lang][1])+' · '+levels[level]+' · '+ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonCount();
   $('reviewCount').textContent=count?num(count)+' · '+ui('Palavras para revisar agora'):ui('Nenhuma palavra vence agora.');
 }
 function clozeExample(item){

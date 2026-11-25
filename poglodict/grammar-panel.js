@@ -3,7 +3,7 @@ function lessonCoach(title,instruction,answer=''){
     (answer?'<details><summary>'+routeLabel('Conferir','Check','Comprobar')+'</summary>'+answer+'</details>':'')+'</aside>';
 }
 function grammarArcPrompt(){
-  const arc=Math.floor(unit/lessonsPerArc);
+  const arc=Math.min(6,Math.floor(unit/lessonsPerArc));
   const supportIndex=lang==='por'?(support==='spa'?2:1):0;
   const goals=[
     ['Leia o primeiro exemplo. Aponte onde a regra aparece antes de consultar o modelo.','Read the first example and point out the pattern before checking.','Lee el primer ejemplo y señala el patrón antes de comprobar.'],

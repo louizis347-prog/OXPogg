@@ -185,6 +185,11 @@ Revisão final: Mapa do tesouro||Revisão final: pedidos, conselhos, there was, 
 });
 
 // Lições autorais por nível: A1 (englishA1*) e A2 (englishA2*, em english-a2.js). Índice = lição do nível − 1.
+// Quantidade de lições do nível: 350 para todos; o inglês A1 pode passar disso com as lições acrescentadas depois da 350 (trilha da aula ao vivo).
+function lessonCount(language,cefr){
+  language=language===undefined?lang:language;cefr=cefr===undefined?level:cefr;
+  return language==='eng'&&cefr===0&&typeof englishA1Plans!=='undefined'?Math.max(lessonsPerLevel,englishA1Plans.length):lessonsPerLevel;
+}
 function englishStore(){
   if(lang!=='eng')return null;
   if(level===0)return {plans:englishA1Plans,content:englishA1Content,stories:englishA1MiniStories,extras:englishA1ExtraWordExamples,themes:englishA1PhotoThemes,blocks:englishA1BlockPhotoFiles};

@@ -46,11 +46,11 @@ function parseLessonRoute(hash=location.hash){
   const companion=fields[baseLength];
   if(fields.length>baseLength+1||(companion!==undefined&&(language!=='por'||!['eng','spa'].includes(companion))))return null;
   const number=isLesson&&/^[1-9][0-9]{0,2}$/.test(fields[3])?Number(fields[3]):0;
-  if(isLesson&&(number<1||number>lessonsPerLevel))return null;
+  if(isLesson&&(number<1||number>lessonCount(language,levelIndex)))return null;
   return {screen:isLesson?'licao':'estudo',language,level:levelIndex,unit:isLesson?number-1:null,companion};
 }
 function goToLesson(index){
-  if(!Number.isInteger(index)||index<0||index>=lessonsPerLevel)return;
+  if(!Number.isInteger(index)||index<0||index>=lessonCount())return;
   const hash=lessonHash(index);
   if(location.hash===hash)$('lessonHeading')?.focus();
   else location.hash=hash;
@@ -101,7 +101,7 @@ function drawCatalog(){
   if(screen!=='estudo')return;
   document.title=ui(languages[lang][1])+' '+levels[level]+' · Pogolo Dict';
   const container=$('arcCatalog'),track=lang+'-'+level+'-'+(lang==='por'?support:'');
-  const complete=Array.from({length:lessonsPerLevel},(_,i)=>lessonStatusAt(i));
+  const complete=Array.from({length:lessonCount()},(_,i)=>lessonStatusAt(i));
   $('catalogContinue').href=lessonHash(unit);
   $('catalogPosition').textContent=routeLabel('Continuar na lição ','Continue at lesson ','Continuar en la lección ')+(unit+1);
   const signature=track+'|'+unit+'|'+Boolean(curriculum[lang])+'|'+complete.map(Number).join('');
@@ -127,8 +127,8 @@ function drawCatalog(){
       (complete[i]?'<span class="lesson-indicator done-indicator" aria-label="'+routeLabel('Concluída','Completed','Completada')+'">'+routeIcon('check')+'</span>':'')+
       '</span></a></li>';
   }).join('');
-  container.innerHTML=Array.from({length:Math.ceil(lessonsPerLevel/lessonsPerArc)},(_,arc)=>{
-    const start=arc*lessonsPerArc,end=Math.min(start+lessonsPerArc,lessonsPerLevel);
+  container.innerHTML=Array.from({length:Math.ceil(lessonCount()/lessonsPerArc)},(_,arc)=>{
+    const start=arc*lessonsPerArc,end=Math.min(start+lessonsPerArc,lessonCount());
     const total=complete.slice(start,end).filter(Boolean).length;
     const blocks=Array.from({length:Math.ceil((end-start)/lessonsPerBlock)},(_,block)=>{
       const from=start+block*lessonsPerBlock,to=Math.min(from+lessonsPerBlock,end);
@@ -137,7 +137,7 @@ function drawCatalog(){
         '<ol class="lesson-links" start="'+(from+1)+'">'+rows(from,to)+'</ol></details>';
     }).join('');
     return '<details class="arc-card" data-arc="'+arc+'"'+(arcOpen(arc)?' open':'')+'><summary>'+
-      routeIllustration(arcArt[arc])+'<span class="arc-title"><strong>'+routeLabel('Arco ','Arc ','Arco ')+(arc+1)+'</strong><span>'+clean(range(start+1,end))+'</span></span>'+
+      routeIllustration(arcArt[Math.min(arc,arcArt.length-1)])+'<span class="arc-title"><strong>'+routeLabel('Arco ','Arc ','Arco ')+(arc+1)+'</strong><span>'+clean(range(start+1,end))+'</span></span>'+
       '<span class="arc-progress"><span>'+total+'/'+(end-start)+' '+routeLabel('concluídas','completed','completadas')+'</span>'+
       '<progress max="'+(end-start)+'" value="'+total+'" aria-label="'+routeLabel('Progresso do arco','Arc progress','Progreso del arco')+'"></progress></span></summary>'+
       '<div class="arc-blocks">'+blocks+'</div></details>';
@@ -151,7 +151,7 @@ function lessonHeader(){
   $('lessonContext').textContent=ui(languages[lang][1])+' · '+levels[level]+' · '+routeLabel('Arco ','Arc ','Arco ')+arc;
   $('lessonHeading').textContent=title||ui('Lição')+' '+(unit+1);
   document.title=$('lessonHeading').textContent+' · '+ui('Lição')+' '+(unit+1)+' · Pogolo Dict';
-  $('lessonPosition').textContent=ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonsPerLevel;
+  $('lessonPosition').textContent=ui('Lição')+' '+(unit+1)+' '+ui('de')+' '+lessonCount();
   const plan=englishLessonPlan();
   $('lessonArtwork').innerHTML=plan&&!plan.file?routeIllustration(art):lessonPhotoFrame((plan&&englishPlanPhoto(plan))||photoForMoment(art,0,'reading'),'lesson-hero-photo',true);
   const visible=Object.entries(lessonPanels).filter(([key])=>key!=='story'||(unit+1)%lessonsPerBlock===0);

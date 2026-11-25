@@ -67,7 +67,7 @@ def gen(srcdir, level, jsname, csvname):
     print('lições:', len(ns), '| js:', os.path.getsize(os.path.join(P, jsname)), 'bytes')
 
 def main():
-    gen('a1-181-350', 'a1', 'english-a1-extra.js', 'plano-ingles-a1-181-350.csv')
+    gen('a1-181-360', 'a1', 'english-a1-extra.js', 'plano-ingles-a1-181-360.csv')
     if glob.glob(os.path.join(P, 'fontes', 'a2-1-80', '[0-9]*.json')):
         gen('a2-1-80', 'a2', 'english-a2-extra.js', 'plano-ingles-a2-01-80.csv')
     else:
