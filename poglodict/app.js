@@ -203,7 +203,7 @@ function drawLesson(){
   const used=new Set(currentLesson.cardPhotos);
   const [vocabularyPhoto,grammarPhoto]=authored?englishA1BlockPhotos():[];
   if(authored){if(vocabularyPhoto)used.add(vocabularyPhoto.file);if(grammarPhoto)used.add(grammarPhoto.file);}
-  const status=plan?'<div class="lesson-plan-status"><strong>Inglês americano '+levels[level]+' · Lote '+(level===1?(unit<80?'01–80':'81–330'):unit>=180?'181–350':'01–180')+'</strong><p>Estude o vocabulário em contexto, ouça a cena e aplique a gramática na prática.</p><a href="'+(level===1?(unit<80?'plano-ingles-a2-01-80.csv':'plano-ingles-a2-431-680.csv'):unit>=180?'plano-ingles-a1-181-350.csv':'plano-ingles-a1-01-50.csv')+'" download>Baixar a planilha deste lote</a></div>':'';
+  const status=plan?'<div class="lesson-plan-status"><strong>Inglês americano '+levels[level]+' · Lote '+(level===2?'01–80':level===1?(unit<80?'01–80':'81–350'):unit>=180?'181–350':'01–180')+'</strong><p>Estude o vocabulário em contexto, ouça a cena e aplique a gramática na prática.</p><a href="'+(level===2?'plano-ingles-b1-01-80.csv':level===1?(unit<80?'plano-ingles-a2-01-80.csv':'plano-ingles-a2-431-700.csv'):unit>=180?'plano-ingles-a1-181-350.csv':'plano-ingles-a1-01-50.csv')+'" download>Baixar a planilha deste lote</a></div>':'';
   $('lesson').innerHTML=navigation+status+lessonAudioBar()+'<div class="lesson-panels">'+
     lessonPanel('lexicon',plan?plan.words.slice(0,2).map(([term])=>nativeText(term)).join(' · '):nativeText(currentLesson.focus?.word||vocabulary.word)+' · '+nativeText(vocabulary.expression),
       (authored?renderCompletedEnglishVocabulary(plan,content,vocabularyPhoto):cards[0])+renderWordUse(currentLesson),{used})+

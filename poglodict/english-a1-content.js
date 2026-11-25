@@ -202,7 +202,7 @@ const englishA1GrammarPatterns=[
 function plannedEnglishExamples(content){
   if(content.examples)return content.examples;
   const all=[...content.dialogue,...content.reading];
-  const pattern=(level===1?(typeof englishA2Patterns!=='undefined'?englishA2Patterns:[])[unit]:englishA1GrammarPatterns[unit])||/$^/;
+  const pattern=((level===0?englishA1GrammarPatterns:level===1&&typeof englishA2Patterns!=='undefined'?englishA2Patterns:[])[unit])||/$^/;
   const matching=all.filter(line=>pattern.test(line.text));
   return [...new Map([...matching,...all].map(line=>[line.text,line])).values()].slice(0,2);
 }
