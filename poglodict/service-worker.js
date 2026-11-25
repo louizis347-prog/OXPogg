@@ -1,7 +1,7 @@
-const cacheName='pogolo-dict-2026-11-25-v32';
+const cacheName='pogolo-dict-2026-11-25-v33';
 const allowed=['eng','spa','ita','deu','ara','jpn','por','cmn'];
 const shell=[
- './','index.html','style.css','platypus.svg','icon-192.png','icon-512.png','manifest.webmanifest',
+ './','index.html','style.css','design-v2.css','platypus.svg','icon-192.png','icon-512.png','manifest.webmanifest',
  'lessons.js','practice-data.js','curriculum.js','reading-data.js','lesson-reading.js',
  'grammar-examples.js','grammar-panel.js','lesson-vocabulary.js','stories.js','lexicon-review.js',
  'portuguese-course.js','sense-notes.js','study-tools.js','practice-ui.js','mandarin-course.js',
