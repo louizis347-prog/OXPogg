@@ -1,108 +1,102 @@
 {
  "n": 304,
- "title": "Posso ajudar com a mesa?",
- "photo": "dinner-1",
+ "title": "Quantos anos você tem?",
+ "photo": "friends-1",
  "art": "chat",
  "photos": [
-  "photo-dinner-2.webp",
-  "photo-restaurant-1.webp"
+  "photo-friends-1.webp",
+  "photo-square-1.webp"
  ],
- "grammar": "Can I help you…? e ofertas de ajuda",
- "goal": "Use Can I + verbo para oferecer ajuda e responda com Yes, please ou No, thank you.",
+ "grammar": "How old are you? e os números até 100",
+ "goal": "Pergunte e diga a idade com I’m + número, usando as dezenas até cem.",
  "words": [
   [
-   "carry",
-   "carregar"
+   "old",
+   "velho; de idade"
   ],
   [
-   "glad",
-   "contente"
+   "hundred",
+   "cem"
   ],
   [
-   "thanks",
-   "obrigado"
+   "thirty",
+   "trinta"
   ],
   [
-   "difficult",
-   "difícil"
+   "fifty",
+   "cinquenta"
   ]
  ],
  "reading": [
   [
-   "Tina is moving a heavy box.",
-   "A Tina está carregando uma caixa pesada."
+   "Ava is in an English class.",
+   "A Ava está numa aula de inglês."
   ],
   [
-   "Lou sees her at the door.",
-   "O Lou a vê na porta."
+   "Her friend June is thirty years old.",
+   "A amiga June tem trinta anos."
   ],
   [
-   "Can I help you, Tina?",
-   "Posso ajudar você, Tina?"
+   "Ava asks, “How old is your dad?”",
+   "Ava pergunta: “Quantos anos seu pai tem?”"
   ],
   [
-   "He carries the box upstairs.",
-   "Ele carrega a caixa escada acima."
+   "June says he is fifty.",
+   "A June diz que ele tem cinquenta."
   ],
   [
-   "Tina is glad and says thanks.",
-   "A Tina fica contente e diz obrigada."
+   "Their teacher says, “Count to one hundred!”",
+   "A professora diz: “Contem até cem!”"
   ]
  ],
  "dialogue": [
   [
-   "Can I help you with the box?",
-   "Posso ajudar você com a caixa?"
+   "How old are you, Ava?",
+   "Quantos anos você tem, Ava?"
   ],
   [
-   "Yes, please. It is very heavy.",
-   "Sim, por favor. Ela é muito pesada."
+   "I’m twenty-five. And you?",
+   "Tenho vinte e cinco. E você?"
   ],
   [
-   "Can I carry it to the kitchen?",
-   "Posso levar para a cozinha?"
+   "I’m thirty. My brother is forty.",
+   "Tenho trinta. Meu irmão tem quarenta."
   ],
   [
-   "No, to the bedroom, please.",
-   "Não, para o quarto, por favor."
+   "Is your mom old?",
+   "Sua mãe é idosa?"
   ],
   [
-   "Can I open the door for you?",
-   "Posso abrir a porta para você?"
+   "No, she’s fifty. Not very old.",
+   "Não, ela tem cinquenta. Não é muito idosa."
   ],
   [
-   "Thanks, Lou. You are very kind.",
-   "Obrigada, Lou. Você é muito gentil."
+   "My grandpa is ninety years old.",
+   "Meu avô tem noventa anos."
   ],
   [
-   "Can I help you with another box?",
-   "Posso ajudar com outra caixa?"
+   "Wow! Is he one hundred soon?",
+   "Uau! Ele faz cem logo?"
   ],
   [
-   "Yes, there is one in the car.",
-   "Sim, tem uma no carro."
+   "No, he’s ninety. Ten more years!",
+   "Não, ele tem noventa. Mais dez anos!"
   ]
  ],
  "pron": [
-  "Acento em heavy",
-  "Force a primeira sílaba: HE-vy. O ea soa como o e de “pé”.",
+  "Acento em thirty e forty",
+  "Nas dezenas -ty, a força fica na primeira sílaba: THIR-ty, FOR-ty, FIF-ty.",
   [
-   "heavy",
-   "The box is heavy."
+   "thirty",
+   "I’m thirty years old."
   ]
  ],
  "gram": [
-  "___ I carry the box?",
-  "Can",
-  "Do",
-  "Posso levar a caixa?",
-  "Para oferecer ajuda, use Can I + verbo."
+  "I ___ twenty-five.",
+  "am",
+  "have",
+  "Eu tenho vinte e cinco anos.",
+  "Em inglês a idade usa be (I am), não have."
  ],
- "pattern": "\\bcan i\\b",
- "extra": {
-  "difficult": [
-   "This box is difficult to open.",
-   "Esta caixa é difícil de abrir."
-  ]
- }
+ "pattern": "\\b(?:I’m|she’s|he’s|am|is|are) (?:twenty|thirty|forty|fifty|ninety)"
 }

@@ -656,6 +656,18 @@
  "1003": {
   "antes": [
    {
+    "n": 308,
+    "t": "O que você faz?",
+    "g": "What do you do? / I’m a… e Where do you work?",
+    "w": [
+     "nurse",
+     "work",
+     "driver",
+     "office"
+    ],
+    "why": "Profissões e locais de trabalho: What do you do?"
+   },
+   {
     "n": 1,
     "t": "Apresentações à mesa",
     "g": "Am, is e are em apresentações",
@@ -694,14 +706,14 @@
   ],
   "depois": [
    {
-    "n": 1,
-    "t": "Apresentações à mesa",
-    "g": "Am, is e are em apresentações",
+    "n": 310,
+    "t": "Revisão: conhecendo a turma",
+    "g": "Revisão: apresentar-se (nome, país, idiomas, profissão, idade)",
     "w": [
-     "name",
-     "friend from school",
-     "nice to meet you.",
-     "this is…"
+     "classmate",
+     "country",
+     "teacher",
+     "first"
     ],
     "why": "Revise antes da próxima aula"
    },
@@ -720,36 +732,49 @@
   ],
   "quiz": [
    {
+    "q": "She ___ at a hospital.",
+    "opts": [
+     "work",
+     "works"
+    ],
+    "ans": 1,
+    "why": "Com she, o verbo work ganha -s. · Ela trabalha em um hospital."
+   },
+   {
     "q": "My mother and my father ___ here.",
     "opts": [
      "is",
-     "are",
-     "am"
+     "am",
+     "are"
     ],
-    "ans": 1,
+    "ans": 2,
     "why": "Mãe e pai são duas pessoas, então usamos are. · Minha mãe e meu pai estão aqui."
    },
    {
     "q": "___ is Ana? She is my friend.",
     "opts": [
-     "When",
      "What time",
-     "Who"
+     "Who",
+     "When"
     ],
-    "ans": 2,
+    "ans": 1,
     "why": "Para perguntar quem é uma pessoa, usamos Who. · Quem é a Ana? Ela é minha amiga."
    },
    {
     "q": "Thank you ___ your help.",
     "opts": [
-     "for",
-     "to"
+     "to",
+     "for"
     ],
-    "ans": 0,
+    "ans": 1,
     "why": "Em inglês, agradecemos por algo com for. · Obrigado pela sua ajuda."
    }
   ],
   "words": [
+   "nurse",
+   "work",
+   "driver",
+   "office",
    "name",
    "friend from school",
    "nice to meet you.",
@@ -757,17 +782,37 @@
    "call",
    "phone",
    "friend",
-   "this is ana.",
-   "excuse me",
-   "welcome",
-   "pardon",
-   "sir"
+   "this is ana."
   ],
-  "lacuna": "Profissões e cargos (designer, team member): o PoggloDict ainda não tem lição só sobre isso.",
-  "prof": "Para “What’s your role?”, apresente o vocabulário de trabalho na própria aula."
+  "lacuna": "",
+  "prof": "Quem fez a 308 já sabe dizer a profissão; use a aula para “What’s your role?” e para boas-vindas à equipe."
  },
  "4": {
   "antes": [
+   {
+    "n": 302,
+    "t": "Como se soletra seu nome?",
+    "g": "How do you spell…? e o alfabeto: It’s D-A-N-I-E-L",
+    "w": [
+     "spell",
+     "letter",
+     "first name",
+     "last name"
+    ],
+    "why": "O alfabeto e como soletrar um nome"
+   },
+   {
+    "n": 303,
+    "t": "Qual é o seu telefone?",
+    "g": "What’s your phone number? e os números de 0 a 20",
+    "w": [
+     "phone number",
+     "twelve",
+     "zero",
+     "number"
+    ],
+    "why": "Números de 0 a 20 e o telefone"
+   },
    {
     "n": 18,
     "t": "Escrevendo o nome no papel",
@@ -779,30 +824,6 @@
      "top of the page"
     ],
     "why": "Escrever o nome com please"
-   },
-   {
-    "n": 44,
-    "t": "Deixando um recado no papel",
-    "g": "Please + verbo em recados",
-    "w": [
-     "note",
-     "leave a message",
-     "call back",
-     "phone number"
-    ],
-    "why": "Recados e número de telefone"
-   },
-   {
-    "n": 49,
-    "t": "Ligando para uma amiga",
-    "g": "Who para perguntar pela identidade",
-    "w": [
-     "call",
-     "phone",
-     "friend",
-     "this is ana."
-    ],
-    "why": "Ligar e confirmar quem é"
    },
    {
     "n": 328,
@@ -845,34 +866,32 @@
   ],
   "quiz": [
    {
+    "q": "How ___ you spell it?",
+    "opts": [
+     "does",
+     "do"
+    ],
+    "ans": 1,
+    "why": "Com you, a pergunta usa do. · Como você soletra isso?"
+   },
+   {
+    "q": "What ___ your phone number?",
+    "opts": [
+     "are",
+     "is"
+    ],
+    "ans": 1,
+    "why": "Number é singular, então use is. · Qual é seu número de telefone?"
+   },
+   {
     "q": "___ the paper on my desk, please.",
     "opts": [
-     "To put",
+     "Put",
      "Is put",
-     "Put"
+     "To put"
     ],
-    "ans": 2,
+    "ans": 0,
     "why": "A instrução começa com o verbo na forma base: Put. · Ponha o papel na minha mesa, por favor."
-   },
-   {
-    "q": "Please ___ your name on the note.",
-    "opts": [
-     "writes",
-     "write",
-     "writing"
-    ],
-    "ans": 1,
-    "why": "Depois de please usamos o verbo na forma base: write. · Por favor, escreva seu nome no recado."
-   },
-   {
-    "q": "___ is Ana? She is my friend.",
-    "opts": [
-     "When",
-     "Who",
-     "What time"
-    ],
-    "ans": 1,
-    "why": "Para perguntar quem é uma pessoa, usamos Who. · Quem é a Ana? Ela é minha amiga."
    },
    {
     "q": "What ___ your surname?",
@@ -885,24 +904,48 @@
    }
   ],
   "words": [
+   "spell",
+   "letter",
+   "first name",
+   "last name",
+   "phone number",
+   "twelve",
+   "zero",
+   "number",
    "paper",
    "name tag",
    "write your name",
-   "top of the page",
-   "note",
-   "leave a message",
-   "call back",
-   "phone number",
-   "call",
-   "phone",
-   "friend",
-   "this is ana."
+   "top of the page"
   ],
-  "lacuna": "Soletrar com o alfabeto (d-a-n-i-e-l): o PoggloDict ainda não tem lição sobre as letras.",
-  "prof": "Dedique os primeiros 10 min ao alfabeto, porque a prévia do PoggloDict não cobre as letras."
+  "lacuna": "",
+  "prof": "Quem fez a 302 já conhece as letras; use a aula para praticar a fala “Can you repeat that?” e passar o telefone."
  },
  "1004": {
   "antes": [
+   {
+    "n": 307,
+    "t": "Soletrando o endereço",
+    "g": "Can you spell that, please? e pedidos educados",
+    "w": [
+     "address",
+     "street",
+     "apartment",
+     "spell"
+    ],
+    "why": "Soletrar o endereço e o apartamento"
+   },
+   {
+    "n": 303,
+    "t": "Qual é o seu telefone?",
+    "g": "What’s your phone number? e os números de 0 a 20",
+    "w": [
+     "phone number",
+     "twelve",
+     "zero",
+     "number"
+    ],
+    "why": "Números e telefone"
+   },
    {
     "n": 11,
     "t": "A espera na biblioteca",
@@ -914,30 +957,6 @@
      "quiet"
     ],
     "why": "Biblioteca: pedir um cartão"
-   },
-   {
-    "n": 14,
-    "t": "Onde eu moro",
-    "g": "In, near e on para situar a moradia",
-    "w": [
-     "neighborhood",
-     "street",
-     "small town",
-     "i live near…"
-    ],
-    "why": "Onde eu moro: endereço e bairro"
-   },
-   {
-    "n": 40,
-    "t": "Informando o nome na recepção",
-    "g": "Under + nome em uma reserva",
-    "w": [
-     "front desk",
-     "hotel clerk",
-     "check in",
-     "under my name"
-    ],
-    "why": "Dar o nome numa reserva"
    },
    {
     "n": 328,
@@ -966,78 +985,100 @@
     "why": "Revise antes da próxima aula"
    },
    {
-    "n": 328,
-    "t": "Preenchendo o formulário",
-    "g": "Perguntas com What is your… para preencher formulário",
+    "n": 14,
+    "t": "Onde eu moro",
+    "g": "In, near e on para situar a moradia",
     "w": [
-     "surname",
-     "spell",
-     "birth",
-     "nineteen"
+     "neighborhood",
+     "street",
+     "small town",
+     "i live near…"
     ],
     "why": "Revise antes da próxima aula"
    }
   ],
   "quiz": [
    {
-    "q": "There ___ a book on the table.",
+    "q": "___ you spell that, please?",
     "opts": [
-     "is",
-     "are",
-     "am"
+     "Can",
+     "Are"
     ],
     "ans": 0,
-    "why": "Um livro é um item no singular, então usamos There is. · Há um livro na mesa."
+    "why": "Para pedir ajuda, use Can you + verbo. · Você pode soletrar isso, por favor?"
    },
    {
-    "q": "My house is ___ Pine Street.",
-    "opts": [
-     "on",
-     "an",
-     "in"
-    ],
-    "ans": 0,
-    "why": "Com o nome de uma rua, usamos on. · Minha casa fica na Pine Street."
-   },
-   {
-    "q": "The reservation is ___ my father's name.",
-    "opts": [
-     "under",
-     "near",
-     "across"
-    ],
-    "ans": 0,
-    "why": "Para dizer em que nome está uma reserva, usamos under. · A reserva está no nome do meu pai."
-   },
-   {
-    "q": "What ___ your surname?",
+    "q": "What ___ your phone number?",
     "opts": [
      "is",
      "are"
     ],
     "ans": 0,
+    "why": "Number é singular, então use is. · Qual é seu número de telefone?"
+   },
+   {
+    "q": "There ___ a book on the table.",
+    "opts": [
+     "is",
+     "am",
+     "are"
+    ],
+    "ans": 0,
+    "why": "Um livro é um item no singular, então usamos There is. · Há um livro na mesa."
+   },
+   {
+    "q": "What ___ your surname?",
+    "opts": [
+     "are",
+     "is"
+    ],
+    "ans": 1,
     "why": "Surname é singular, então usamos is. · Qual é o seu sobrenome?"
    }
   ],
   "words": [
+   "address",
+   "street",
+   "apartment",
+   "spell",
+   "phone number",
+   "twelve",
+   "zero",
+   "number",
    "library",
    "reading room",
    "seat",
-   "quiet",
-   "neighborhood",
-   "street",
-   "small town",
-   "i live near…",
-   "front desk",
-   "hotel clerk",
-   "check in",
-   "under my name"
+   "quiet"
   ],
-  "lacuna": "Soletrar endereço e dizer números de apartamento.",
-  "prof": "Reforce números e a fala “Can you spell that, please?”."
+  "lacuna": "",
+  "prof": "Reforce “Can you spell that, please?” e “Go slowly, please.” com a prévia da 307."
  },
  "5": {
   "antes": [
+   {
+    "n": 305,
+    "t": "De que país você é?",
+    "g": "Where are you from? I’m from Brazil. I’m Brazilian.",
+    "w": [
+     "brazilian",
+     "japan",
+     "country",
+     "from"
+    ],
+    "why": "Países e nacionalidades: Where are you from?"
+   },
+   {
+    "n": 306,
+    "t": "Falando idiomas na turma",
+    "g": "Do you speak…? e speak/speaks com idiomas",
+    "w": [
+     "speak",
+     "language",
+     "spanish",
+     "a little"
+    ],
+    "why": "Do you speak…? Falando idiomas"
+   },
    {
     "n": 1,
     "t": "Apresentações à mesa",
@@ -1049,18 +1090,6 @@
      "this is…"
     ],
     "why": "I’m from… e apresentações"
-   },
-   {
-    "n": 12,
-    "t": "Apresentando a vizinhança",
-    "g": "There are para apresentar lugares no plural",
-    "w": [
-     "town square",
-     "store",
-     "corner",
-     "two stores"
-    ],
-    "why": "Apresentar um lugar: There are"
    },
    {
     "n": 14,
@@ -1077,14 +1106,14 @@
   ],
   "depois": [
    {
-    "n": 14,
-    "t": "Onde eu moro",
-    "g": "In, near e on para situar a moradia",
+    "n": 12,
+    "t": "Apresentando a vizinhança",
+    "g": "There are para apresentar lugares no plural",
     "w": [
-     "neighborhood",
-     "street",
-     "small town",
-     "i live near…"
+     "town square",
+     "store",
+     "corner",
+     "two stores"
     ],
     "why": "Revise antes da próxima aula"
    },
@@ -1103,52 +1132,60 @@
   ],
   "quiz": [
    {
+    "q": "I’m ___ Brazil.",
+    "opts": [
+     "of",
+     "from"
+    ],
+    "ans": 1,
+    "why": "Para dizer a origem, use from, não of. · Sou do Brasil."
+   },
+   {
+    "q": "She ___ Spanish and English.",
+    "opts": [
+     "speak",
+     "speaks"
+    ],
+    "ans": 1,
+    "why": "Com he, she e it, o verbo ganha -s. · Ela fala espanhol e inglês."
+   },
+   {
     "q": "My mother and my father ___ here.",
     "opts": [
      "am",
-     "are",
-     "is"
-    ],
-    "ans": 1,
-    "why": "Mãe e pai são duas pessoas, então usamos are. · Minha mãe e meu pai estão aqui."
-   },
-   {
-    "q": "There ___ three trees in the square.",
-    "opts": [
      "is",
-     "am",
      "are"
     ],
     "ans": 2,
-    "why": "Três árvores é plural, então usamos There are. · Há três árvores na praça."
+    "why": "Mãe e pai são duas pessoas, então usamos are. · Minha mãe e meu pai estão aqui."
    },
    {
     "q": "My house is ___ Pine Street.",
     "opts": [
-     "an",
+     "on",
      "in",
-     "on"
+     "an"
     ],
-    "ans": 2,
+    "ans": 0,
     "why": "Com o nome de uma rua, usamos on. · Minha casa fica na Pine Street."
    }
   ],
   "words": [
+   "brazilian",
+   "japan",
+   "country",
+   "from",
+   "speak",
+   "language",
+   "spanish",
+   "a little",
    "name",
    "friend from school",
    "nice to meet you.",
-   "this is…",
-   "town square",
-   "store",
-   "corner",
-   "two stores",
-   "neighborhood",
-   "street",
-   "small town",
-   "i live near…"
+   "this is…"
   ],
-  "lacuna": "Países e nacionalidades (American, Brazilian): sem lição própria ainda.",
-  "prof": "A lista de países e nacionalidades precisa ser dada na aula."
+  "lacuna": "",
+  "prof": "Quem fez a 305 e a 306 já sabe países, nacionalidades e idiomas; deixe a aula para a conversa."
  },
  "1005": {
   "antes": [
@@ -1232,8 +1269,8 @@
     "q": "My house is ___ Pine Street.",
     "opts": [
      "on",
-     "in",
-     "an"
+     "an",
+     "in"
     ],
     "ans": 0,
     "why": "Com o nome de uma rua, usamos on. · Minha casa fica na Pine Street."
@@ -1241,21 +1278,21 @@
    {
     "q": "I see a ___ house.",
     "opts": [
-     "white",
      "house",
+     "white",
      "is white"
     ],
-    "ans": 0,
+    "ans": 1,
     "why": "O adjetivo white vem antes do substantivo house. · Eu vejo uma casa branca."
    },
    {
     "q": "We want ___ go to the beach.",
     "opts": [
      "at",
-     "to",
-     "for"
+     "for",
+     "to"
     ],
-    "ans": 1,
+    "ans": 2,
     "why": "Depois de want vem to + verbo. · Nós queremos ir à praia."
    },
    {

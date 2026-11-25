@@ -1,108 +1,102 @@
 {
  "n": 303,
- "title": "Jantar com pedidos",
- "photo": "coffeeTable-1",
+ "title": "Qual é o seu telefone?",
+ "photo": "phone-1",
  "art": "chat",
  "photos": [
-  "photo-coffeeTable-1.webp",
-  "photo-dinner-1.webp"
+  "photo-phone-1.webp",
+  "photo-message-1.webp"
  ],
- "grammar": "Imperativo em pedidos: please + verbo",
- "goal": "Comece com o verbo e acrescente please para fazer um pedido simples e educado em casa.",
+ "grammar": "What’s your phone number? e os números de 0 a 20",
+ "goal": "Pergunte e diga um número de telefone usando os números de zero a vinte.",
  "words": [
   [
-   "please",
-   "por favor"
+   "phone number",
+   "número de telefone"
   ],
   [
-   "porridge",
-   "mingau"
+   "twelve",
+   "doze"
   ],
   [
-   "refrigerator",
-   "geladeira"
+   "zero",
+   "zero"
   ],
   [
-   "switch",
-   "interruptor"
+   "number",
+   "número"
   ]
  ],
  "reading": [
   [
-   "Ravi makes dinner in the kitchen.",
-   "O Ravi faz o jantar na cozinha."
+   "Tina meets Lou at the club.",
+   "A Tina encontra o Lou no clube."
   ],
   [
-   "Please bring the porridge, Ben.",
-   "Por favor, traga a mingau, Ben."
+   "She asks for his phone number.",
+   "Ela pede o número de telefone dele."
   ],
   [
-   "Ben brings it and closes the refrigerator.",
-   "O Ben a traz e fecha a geladeira."
+   "His number is five, five, zero, twelve.",
+   "O número dele é cinco, cinco, zero, doze."
   ],
   [
-   "Please put the milk on the table.",
-   "Por favor, ponha o leite na mesa."
+   "Tina writes the numbers on paper.",
+   "A Tina escreve os números no papel."
   ],
   [
-   "Now dinner is hot and ready.",
-   "Agora o jantar está quente e pronto."
+   "Then she calls him at twelve.",
+   "Depois ela liga para ele ao meio-dia."
   ]
  ],
  "dialogue": [
   [
-   "Please bring the porridge.",
-   "Por favor, traga a mingau."
+   "What’s your phone number, Lou?",
+   "Qual é seu telefone, Lou?"
   ],
   [
-   "Sure. Is it for dinner?",
-   "Claro. É para o jantar?"
+   "It’s five, five, zero, one, two.",
+   "É cinco, cinco, zero, um, dois."
   ],
   [
-   "Yes. Please open the refrigerator too.",
-   "É. Por favor, abra a geladeira também."
+   "Is that zero or the letter O?",
+   "É zero ou a letra O?"
   ],
   [
-   "Okay. Anything else?",
-   "Certo. Mais alguma coisa?"
+   "It’s zero. Then twelve at the end.",
+   "É zero. Depois doze no final."
   ],
   [
-   "Please give me the milk.",
-   "Por favor, me dê o leite."
+   "Is the number twelve or twenty?",
+   "O número é doze ou vinte?"
   ],
   [
-   "Here it is. Do you want sugar?",
-   "Aqui está. Você quer açúcar?"
+   "Twelve. T-W-E-L-V-E.",
+   "Doze. D-O-Z-E em inglês: T-W-E-L-V-E."
   ],
   [
-   "Yes, please. Just one spoon.",
-   "Quero, sim. Só uma colher."
+   "What’s your number, Tina?",
+   "Qual é o seu número, Tina?"
   ],
   [
-   "Of course. Enjoy your dinner!",
-   "Claro. Bom jantar!"
+   "It’s seven, nine, eight, fifteen.",
+   "É sete, nove, oito, quinze."
   ]
  ],
  "pron": [
-  "O som /z/ em please",
-  "Faça o s vibrar como um zumbido de abelha: pliiz.",
+  "/θ/ e /v/ em three e twelve",
+  "Em twelve, encoste os lábios nos dentes de cima no V. Em three, ponha a língua entre os dentes.",
   [
-   "please",
-   "Please sit here."
+   "twelve",
+   "My phone number has twelve."
   ]
  ],
  "gram": [
-  "___ bring the porridge.",
-  "Please",
-  "Please to",
-  "Por favor, traga a mingau.",
-  "No imperativo, use please + verbo, sem to."
+  "What ___ your phone number?",
+  "is",
+  "are",
+  "Qual é seu número de telefone?",
+  "Number é singular, então use is."
  ],
- "pattern": "\\bplease\\b",
- "extra": {
-  "switch": [
-   "Please turn on the switch.",
-   "Por favor, ligue o interruptor."
-  ]
- }
+ "pattern": "\\b(?:phone )?number\\b"
 }
