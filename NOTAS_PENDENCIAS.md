@@ -238,3 +238,9 @@ Pendências conhecidas:
 - Capas: A1 e as 5 do A2 trocadas estão com ficha desenhada à mão; o resto de A2 e B1–C2 ainda usa capa gerada (sem ficha) e a figura não representa a obra nova.
 - Expressões (pgexp) de C1/C2 e alguns B2 trazem frases-molde com resíduo da obra antiga ("… about Kore-eda"): reescrever.
 - Ponte: ~1.400 episódios ainda com a linha-molde "This scene carries an idea from…".
+
+
+## Limite de arquivos no Cloudflare (Workers Free)
+- O plano gratuito aceita no máximo **20.000 arquivos de ativos estáticos por versão** (erro 10304). Em 25/11/2026 o deploy tinha 21.486 e falhava desde a lição B2 4473.
+- `.assetsignore` agora também exclui `professor/src` (código-fonte de geração das aulas, 8,5 mil arquivos, que nenhuma página usa) e `professor/extras_nao_publicadas`. Contagem depois: ~12,9 mil.
+- Antes de subir muitos arquivos novos, rode `python3 tools/count_assets.py` (precisa de `pip install pathspec`). Se chegar perto de 20.000, exclua mais pastas só de geração em `.assetsignore` ou passe para o plano Workers Paid (limite 100.000).
