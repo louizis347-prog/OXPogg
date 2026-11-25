@@ -52,6 +52,12 @@ window.RL_REGISTER=function(R,A){
   else if(kind==='work'){
    b.innerHTML='<div class="q1-two">'+card('<span class="q1-eyebrow">Obra cultural · '+H(p.work.year)+'</span><h3>'+H(p.work.title)+'</h3><p>'+H(p.work.note)+'</p><div class="q1-prompt">'+H(p.question)+'</div>')+
     illustration(bg)+'</div>'}
+  else if(kind==='pdlink'){
+   var e=p.pd||{},pre=p.mode==='antes',list=pre?e.antes:e.depois,base='../poglodict/index.html#licao/eng/A1/';
+   b.innerHTML=intro(pre?'Estas mini lições do PoggloDict preparam a aula de hoje. Faça-as antes (cerca de 5 a 8 minutos cada).':'Depois da aula, revise estas mini lições do PoggloDict para fixar o que você usou.')+
+    '<div class="q1-facts">'+(list||[]).map(function(x){return card('<b>Lição '+x.n+'</b><strong>'+H(x.t)+'</strong><span>'+H(x.why||'')+'</span><a class="q1-pdbtn" target="_blank" rel="noopener" href="'+base+x.n+'">Abrir no PoggloDict →</a>')}).join('')+'</div>'+
+    (pre&&(e.words||[]).length?card('<span class="q1-eyebrow">Palavras que você já viu</span><p>'+e.words.map(H).join(' · ')+'</p>'):'')+
+    (pre&&(e.prof||e.lacuna)?'<details class="q1-details"><summary>Para o professor</summary>'+(e.prof?'<p>'+H(e.prof)+'</p>':'')+(e.lacuna?'<p><b>Ainda sem lição no PoggloDict:</b> '+H(e.lacuna)+'</p>':'')+'</details>':'')}
   else if(kind==='facts'){
    b.innerHTML='<div class="q1-facts">'+p.facts.map(function(f){return card('<b>'+H(f.big)+'</b><strong>'+H(f.label)+'</strong><span>'+H(f.sub)+'</span>')}).join('')+'</div>'+
     (p.compare?'<details class="q1-details"><summary>Compare Brasil e Estados Unidos</summary><p><b>Brasil:</b> '+H(p.compare.br)+'</p><p><b>EUA:</b> '+H(p.compare.us)+'</p><p>'+H(p.compare.tip)+'</p></details>':'')}
