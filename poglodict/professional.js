@@ -565,7 +565,7 @@ function importBackup(){
       if(!done[key]||done[key]<value)done[key]=value;
     }
     for(const key of data.saved)if(validWord(key))saved.add(key);
-    for(const [key,value] of Object.entries(data.positions||{}))if(/^(eng|spa|ita|deu|ara|jpn|por|cmn)-[0-5]$/.test(key)&&Number.isInteger(value)&&value>=0&&value<lessonsPerLevel){
+    for(const [key,value] of Object.entries(data.positions||{}))if(/^(eng|spa|ita|deu|ara|jpn|por|cmn)-[0-5]$/.test(key)&&Number.isInteger(value)&&value>=0&&value<(key==='eng-0'?lessonCount('eng',0):lessonsPerLevel)){
       if(!Object.hasOwn(positions,key))positions[key]=value;
     }
     for(const [key,value] of Object.entries(data.reviews||{}))if(validWord(key)&&saved.has(key)&&value&&Number.isFinite(value.due)&&Number.isInteger(value.days)&&value.days>=0&&value.days<36500){

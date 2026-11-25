@@ -1,4 +1,4 @@
-const cacheName='pogolo-dict-2026-11-25-v31';
+const cacheName='pogolo-dict-2026-11-25-v32';
 const allowed=['eng','spa','ita','deu','ara','jpn','por','cmn'];
 const shell=[
  './','index.html','style.css','platypus.svg','icon-192.png','icon-512.png','manifest.webmanifest',
