@@ -188,6 +188,7 @@ Revisão final: Mapa do tesouro||Revisão final: pedidos, conselhos, there was, 
 function englishStore(){
   if(lang!=='eng')return null;
   if(level===0)return {plans:englishA1Plans,content:englishA1Content,stories:englishA1MiniStories,extras:englishA1ExtraWordExamples,themes:englishA1PhotoThemes,blocks:englishA1BlockPhotoFiles};
+  if(level===2&&typeof englishB1Plans!=='undefined')return {plans:englishB1Plans,content:englishB1Content,stories:englishB1MiniStories,extras:englishB1ExtraWordExamples,themes:englishB1PhotoThemes,blocks:[]};
   if(level===1&&typeof englishA2Plans!=='undefined')return {plans:englishA2Plans,content:englishA2Content,stories:englishA2MiniStories,extras:englishA2ExtraWordExamples,themes:englishA2PhotoThemes,blocks:[]};
   return null;
 }
